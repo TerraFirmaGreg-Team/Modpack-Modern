@@ -39,6 +39,8 @@ function registerTFGPrimitiveItemTags(event) {
 	event.add('tfg:tools/ore_prospectors/black_steel', 'tfc:metal/propick/black_steel')
 	event.add('tfg:tools/ore_prospectors/blue_steel', 'tfc:metal/propick/blue_steel')
 	event.add('tfg:tools/ore_prospectors/red_steel', 'tfc:metal/propick/red_steel')
+	
+	event.add('tfg:tools/spindles', 'tfc:spindle')
 
 	// Paper from wood
 	event.add('tfg:hardwood_strips', 'tfg:hardwood_strip')
@@ -67,7 +69,7 @@ function registerTFGPrimitiveItemTags(event) {
 	event.add('forge:cloth', 'tfg:polycaprolactam_fabric')
 	event.add('tfc:high_quality_cloth', 'tfg:phantom_silk')
 	event.add('tfc:high_quality_cloth', 'tfg:polycaprolactam_fabric')
-	event.add('tfc:sewing_light_cloth', 'tfg:phantom_silk')
+	event.add('tfc:sewing_dark_cloth', 'tfg:phantom_silk')
 	event.add('tfc:sewing_dark_cloth', 'tfg:polycaprolactam_fabric')
 	event.add('forge:string', 'tfg:phantom_thread')
 	event.add('forge:string', 'tfg:polycaprolactam_string')
@@ -81,11 +83,19 @@ function registerTFGPrimitiveItemTags(event) {
 	event.add('tfg:artisan_table_inputs', 'gtceu:phenolic_circuit_board')
 	event.add('tfg:artisan_table_inputs', 'gtceu:silver_single_wire')
 	event.add('tfg:artisan_table_inputs', 'gtceu:silver_quadruple_wire')
+	event.add('tfg:artisan_table_inputs', 'tfg:optical_borosilicate_blank')
+	event.add('tfg:artisan_table_inputs', 'gtceu:treated_wood_plate')
+	event.add('tfg:artisan_table_inputs', 'tfc:powder/flux')
 	event.add('tfg:artisan_table_tools', '#forge:tools/hammers')
 	event.add('tfg:artisan_table_tools', '#forge:tools/mallets')
 	event.add('tfg:artisan_table_tools', '#forge:tools/files')
 	event.add('tfg:artisan_table_tools', '#forge:tools/wire_cutters')
 	event.add('tfg:artisan_table_tools', '#forge:tools/screwdrivers')
+	event.add('tfg:artisan_table_tools', '#forge:tools/knives')
+	event.add('tfg:artisan_table_tools', '#forge:tools/saws')
+	event.add('tfg:artisan_table_tools', '#forge:tools/buzzsaws')
+	event.add('tfg:artisan_table_tools', 'tfc:gem_saw')
+	event.add('tfg:artisan_table_tools', '#create:sandpaper')
 }
 
 function registerTFGPrimitiveBlockTags(event) {
@@ -96,9 +106,16 @@ function registerTFGPrimitiveBlockTags(event) {
 	event.add('tfg:harvester_harvestable', '#tfc:any_spreading_bush')
 	event.add('tfg:harvester_harvestable', '#firmalife:grape_strings')
 	event.add('tfg:harvester_harvestable', '#firmalife:grape_trellis_posts_plant')
+	event.add('tfg:harvester_harvestable', 'firmalife:trellis_planter')
+	event.add('tfg:harvester_harvestable', 'firmalife:bonsai_planter')
+	event.add('tfg:harvester_harvestable', 'firmalife:hanging_planter')
 	//added for QOL but doesnt harvest anything
 	event.add('tfg:harvester_harvestable', 'firmalife:grape_fluff_red')
 	event.add('tfg:harvester_harvestable', 'firmalife:grape_fluff_white')
+
+	global.MINECRAFT_DYE_NAMES.forEach(color => {
+		event.add('tfg:decorative_vases/generated', `tfg:decorative_vase/generated/${color}`)
+	})
 }
 
 function registerTFGPrimitiveFluidTags(event) {
@@ -117,5 +134,39 @@ function registerTFGPrimitiveFluidTags(event) {
 		if (!ChemicalHelper.get(TagPrefix.nugget, material, 1).isEmpty()) {
 			event.add('tfg:usable_in_nugget_mold', material.getFluid().getFluidType().toString())
 		}
+
+		if (!ChemicalHelper.get(TFGTagPrefix.lampUnfinished, material, 1).isEmpty()) {
+			event.add('tfg:usable_in_lamp_mold', material.getFluid().getFluidType().toString())
+		}
 	})
+	
+	event.add('tfg:usable_in_spindle_head_mold', 'gtceu:copper');
 }
+
+function registerTFGPrimitiveEntityTags(event) {
+
+	/**
+	 * @type {string[]} - List of entities that can be scooped by fishing nets.
+	 */
+	const entities = [
+		'tfc:salmon',
+		'tfc:rainbow_trout',
+		'tfc:lake_trout',
+		'tfc:bluegill',
+		'tfc:largemouth_bass',
+		'tfc:smallmouth_bass',
+		'tfc:tropical_fish',
+		'tfc:crappie',
+		'tfc:cod',
+		'tfc:pufferfish',
+		'tfc:jellyfish',
+		'tfc:lobster',
+		'tfc:isopod',
+		'tfc:crayfish',
+		'wan_ancient_beasts:toxlacanth'
+
+	];
+	entities.forEach(entity => {
+		event.add('tfg:fishing_net_scoopable', entity);
+	});
+};

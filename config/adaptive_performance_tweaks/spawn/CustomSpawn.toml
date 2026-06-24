@@ -26,5 +26,5 @@
 	#Range: 1 ~ 1024
 	MaxHostileMobsPerServer = 320
 	#List of hostile Mobs to optimize in the format ["minecraft:blaze", "minecraft:cave_spider", ..]
-	HostileMobsList = ["arthropocolypse:millipede_head", "minecraft:blaze", "minecraft:magma_cube", "primitive_creatures:golem_2", "ad_astra:sulfur_creeper", "species:cliff_hanger"]
+	HostileMobsList = ["arthropocolypse:millipede_head"]
 

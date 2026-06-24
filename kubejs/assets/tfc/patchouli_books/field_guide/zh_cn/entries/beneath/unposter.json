@@ -1,16 +1,28 @@
 {
-    "name": "蘑菇培育桶",
-    "category": "tfc:beneath",
-    "icon": "beneath:unposter",
-    "pages": [
-        {
-            "type": "patchouli:text",
-            "text": "$(thing)蘑菇培育桶$()用于培育蘑菇。可将蘑菇及下界作物放入其中。当其放置在蘑菇旁时，将消耗内部储存的物品，使周边的该种蘑菇每日增殖一次。"
-        },
-        {
-            "type": "patchouli:crafting",
-            "recipe": "beneath:crafting/unposter"
-        }
-    ],
-    "read_by_default": true
+	"name": "蘑菇培育桶",
+	"category": "tfc:beneath",
+	"icon": "beneath:unposter",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "$(thing)蘑菇培育桶$()用于培育蘑菇。$(br2)你可以存入与堆肥桶相同的物品，但不同的是，它不会制作堆肥，而是当蘑菇在其范围内时，会消耗内部储存的物品，使该蘑菇在周围区域中繁殖。"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "beneath:crafting/unposter"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "额外说明",
+			"text": "$(thing)蘑菇培育桶$()会在以自身为中心的11x11方形区域内搜索并繁育蘑菇。$(br2)请注意，一旦蘑菇被采集，就无法重新放置。你需要找到自然生成的蘑菇，蘑菇培育桶才能正常工作。"
+		},
+		{
+			"type": "patchouli:image",
+			"images": [
+				"tfg:textures/gui/field_guide/unposter_radius.png"
+			],
+			"border": true
+		}
+	],
+	"read_by_default": true
 }

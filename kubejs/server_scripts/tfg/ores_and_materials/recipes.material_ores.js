@@ -189,6 +189,7 @@ function processNormalRawOre(event, material) {
 	}
 
 	event.remove({ id: `greate:milling/integration/gtceu/macerator/macerate_raw_${materialName}_ore_to_crushed_ore` })
+	event.remove({ id: `greate:crushing/integration/gtceu/macerator/macerate_raw_${materialName}_ore_to_crushed_ore` })
 
 	// Macerator
 	event.recipes.gtceu.macerator(`macerate_raw_${materialName}_ore_to_crushed_ore`)
@@ -301,7 +302,7 @@ function processCrushedOre(event, material) {
 		// GT machines
 		event.recipes.gtceu.ore_washer(`wash_${materialName}_crushed_ore_to_purified_ore_distilled`)
 			.itemInputs(crushedOreItem)
-			.inputFluids("gtceu:distilled_water 10")
+			.inputFluids("gtceu:distilled_water 50")
 			.itemOutputs(pureOreItem, 'gtceu:stone_dust')
 			.chancedOutput(byproductItem, 3333, 0)
 			.duration(20)
@@ -336,7 +337,7 @@ function processCrushedOre(event, material) {
 
 		event.recipes.greate.splashing(
 			[pureOreItem, Item.of(byproductItem).withChance(0.333), 'gtceu:stone_dust'],
-			[crushedOreItem, Fluid.of('gtceu:distilled_water', 10)]
+			[crushedOreItem, Fluid.of('gtceu:distilled_water', 50)]
 		)
 		.recipeTier(1)
 		.circuitNumber(2)
@@ -466,7 +467,7 @@ function processImpureDust(event, material) {
 
 		event.recipes.greate.splashing(
 			[dustItem],
-			[impureDustItem, Fluid.of('gtceu:distilled_water', 10)]
+			[impureDustItem, Fluid.of('gtceu:distilled_water', 50)]
 		)
 		.recipeTier(1)
 		.circuitNumber(2)
@@ -531,7 +532,7 @@ function processPureDust(event, material) {
 
 		event.recipes.greate.splashing(
 			[dustItem],
-			[pureDustItem, Fluid.of('gtceu:distilled_water', 10)]
+			[pureDustItem, Fluid.of('gtceu:distilled_water', 50)]
 		)
 		.recipeTier(1)
 		.circuitNumber(2)

@@ -1,0 +1,27 @@
+{
+    "type": "block",
+    "target": {
+        "type": "gun",
+        "values": [
+            "tacz:m700",
+            "applied_armorer:moritz_sniper_semi_k30",
+            "create_armorer:sniper_semi_clockwork",
+            "create_armorer:cannon_40mm_salamander"
+        ]
+    },
+
+    "blocks": [
+        "gtceu:laminated_glass",
+        "gtceu:fusion_glass",
+        "gtceu:cleanroom_glass",
+        "tfg:casings/machine_casing_bioculture_glass",
+        "expatternprovider:assembler_matrix_glass"
+    ],
+
+    "block_break": {
+        "type": "count",
+        "count": 8
+    },
+
+    "priority": 1
+}

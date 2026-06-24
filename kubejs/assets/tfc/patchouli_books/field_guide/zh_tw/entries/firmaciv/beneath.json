@@ -1,0 +1,37 @@
+{
+    "name": "火星船",
+    "category": "tfc:firmaciv",
+    "icon": "beneath:wood/sapling/crimson",
+    "flag": "mod:beneath",
+    "read_by_default": true,
+    "sortnum": 100,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "在遙遠的火星上，找到緋紅木與詭異木來製作外觀相當酷炫的 $(l:firmaciv/watercraft)船$()。"
+        },
+        {
+            "type": "patchouli:empty"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "軟木",
+            "text": "$(thing)軟木$() 的質地與樹皮相當軟韌，非常適合用來製作 $(l:firmaciv/canoe)獨木舟$()。",
+            "item": "beneath:wood/stripped_log/crimson"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)緋紅木$()"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "硬木",
+            "text": "$(thing)硬木$() 以極堅固的結構著稱，非常適合用來建造 $(l:firmaciv/rowboat) 槳帆船$() 與 $(l:firmaciv/sloop)單桅縱帆船$() 等體積更大且更複雜的船隻。",
+            "item": "beneath:wood/planks/warped"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)詭異木$()"
+        }
+    ]
+}

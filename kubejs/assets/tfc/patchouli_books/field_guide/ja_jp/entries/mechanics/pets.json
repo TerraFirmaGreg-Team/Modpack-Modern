@@ -1,0 +1,156 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "ペット",
+  "category": "tfc:mechanics",
+  "icon": "minecraft:lead",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)ペット$()は、$(l:mechanics/animal_husbandry)家畜$()と似ているようですが、有用な生産物がありません。その代わり、命令に従ったり、拠点の周りをついて来たり、害獣を追い払ったり、狩猟を手伝ったりしてくれます。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "ペットは特定のプレイヤーを$(thing)飼い主$()として認識します。ペットの飼い主になるには、餌を与えて親密度を15％以上まで上げる必要があります。ペットは飼い主からの命令にのみ従います。$(br2)ペットを$(l:mechanics/dye)染料$()で右クリックすると、首輪の色を変更できます。"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "tfc:dog{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16,TFCWolfVariant:8}",
+      "scale": 0.7,
+      "text": "ワンコ"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "犬は、穀物・野菜・肉を食べるペットです。食べ物は腐っていても腐っていなくても構いません。犬は様々な動物の狩りをする際に手助けをしてくれます。"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "犬の品種",
+      "text": "犬には複数の種類があり、どの種類のオオカミを飼いならしたかによって見た目が変わります。$(br2)次のページでは、それぞれのオオカミの種類が出現する気候を表で確認できます。"
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "tfg:textures/gui/field_guide/dog_variants.png"
+      ],
+      "border": true
+    },
+    {
+      "type": "tfc:table",
+      "strings": [
+        {
+          "text": "品種",
+          "bold": true
+        },
+        {
+          "text": "気候",
+          "bold": true
+        },
+        {
+          "text": "Pale"
+        },
+        {
+          "text": "Cold Desert, Temperate, Humid Oceanic (Plains)"
+        },
+        {
+          "text": "Ashen"
+        },
+        {
+          "text": "Arctic, Subarctic (Forests)"
+        },
+        {
+          "text": "Black"
+        },
+        {
+          "text": "Tundra, Humid Subarctic (Forests)"
+        },
+        {
+          "text": "トチノキ"
+        },
+        {
+          "text": "Tundra, Humid Subarctic (Plains)"
+        },
+        {
+          "text": "Rusty"
+        },
+        {
+          "text": "Humid Subtropical, Tropical Rainforest (Plains)"
+        },
+        {
+          "text": "Snowy"
+        },
+        {
+          "text": "Arctic, Subarctic (Plains)"
+        },
+        {
+          "text": "Spotted"
+        },
+        {
+          "text": "Hot Desert, Subtropical, Tropical Savanna (Forests)"
+        },
+        {
+          "text": "Striped"
+        },
+        {
+          "text": "Hot Desert, Subtropical, Tropical Savanna (Plains)"
+        },
+        {
+          "text": "Woods"
+        },
+        {
+          "text": "Temperate (Forests)"
+        }
+      ],
+      "text": "",
+      "title": "Wolf Variant Locations",
+      "legend": [],
+      "columns": 1,
+      "first_column_width": 45,
+      "column_width": 195,
+      "row_height": 12,
+      "left_buffer": 2,
+      "top_buffer": 12,
+      "draw_background": false
+    },
+    {
+      "type": "patchouli:empty",
+      "draw_filler": false
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "tfc:cat{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
+      "scale": 0.7,
+      "text": "ニャンコ"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "猫は、穀物・調理済みの肉・乳製品を食べるペットです。陸上の小動物や小型の魚を狩るのを手伝ってくれます。家にいるときは、指示をしなくても害獣を退治してくれます。また、猫は「おすわり」に従わないことがあります。。$(br2)品種：ブラック、ブリティッシュショートヘア、キャリコ、ジェリー、ペルシャ、ラグドール、レッド、シャム、タビー、ホワイト"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "tfg:fox{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,FoxType:1}",
+      "scale": 0.7,
+      "text": "コンコ？"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "キツネは、ほとんどの食べ物を食べるペットです。陸上の獲物や小さな魚を狩るのを手伝ってくれます。家にいるときは、指示をしなくても害獣を退治してくれます。キツネは「おすわり」に従わないことがあります。$(br2)バリエーション：レッド、スノー"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "責任ある飼い主なら、ペットをきちんとしつけて管理する方法を学ばなければなりません。幸い、それはとても簡単です。空の手で$(item)$(k:key.sneak)$()を押しながら$(item)$(k:key.use)$()を押すと、$(thing)ペット画面$()を開くことができます。この画面には、ペットに行動を指示するためのさまざまな命令があります。$(thing)リラックス$()、$(thing)ハウス$()、$(thing)おすわり$()、$(thing)追従$()、そして$(thing)狩り$()です。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)リラックス$()はペットの基本状態であり、この命令を出すとペットは通常の状態に戻ります。家にいる場合は敷地内を自由に歩き回りますが、外へ出ることはなく、1日に1回眠ります。家から離れすぎている場合は、その場をあてもなく歩き回ります。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)ハウス$()は、ペットのホーム地点を設定します。これにより、ペットはリラックス中にその周辺エリアで過ごすようになります。この命令を出しても、現在行っている行動は中断されません。$(br2)$(thing)おすわり$()は、その場に座るようペットに指示します。ただし、動物にも自分の意思があるため、しばらくすると退屈して立ち上がってしまいます！"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)狩り$()を選ぶと、ペットはあなたについて来て、あなたが攻撃した相手や、あなたを攻撃した相手と戦ってくれます。ただし、ペットは自分で対処できる相手にしか攻撃しません（たとえば、猫やキツネはクマとの戦いを手伝うことはできません！）。$(br2)$(thing)追従$()は「狩り」とほぼ同じですが、ペットは戦闘に参加して自らを危険にさらすことはありません。"
+    }
+  ],
+  "read_by_default": true
+}

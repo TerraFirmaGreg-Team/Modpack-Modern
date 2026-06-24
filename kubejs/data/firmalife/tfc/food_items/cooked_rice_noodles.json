@@ -1,0 +1,11 @@
+{
+  "ingredient": {
+    "item": "firmalife:food/cooked_rice_noodles"
+  },
+  "category": "other",
+  "hunger": 4,
+  "saturation": 2,
+  "grain": 1,
+  "decay_modifier": 2.8,
+  "dairy": 0.5
+}

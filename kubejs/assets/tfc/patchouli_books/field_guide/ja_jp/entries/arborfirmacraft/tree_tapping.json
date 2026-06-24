@@ -1,0 +1,36 @@
+{
+	"name": "樹液採取の仕方",
+	"category": "tfc:arborfirmacraft",
+	"icon": "afc:tree_tap",
+	"pages": [
+        {
+            "type": "patchouli:text",
+            "text": "一部の樹木からは、有用な素材となる樹液を採取することができます。具体的には、豊富な糖分を含みシロップに濃縮して甘味料として使用できる樹液や、ゴムの素材となるラテックス、ワックスの代用品になる樹脂になる樹液などがあります。"
+        },
+        {
+            "type": "patchouli:image",
+            "title": "カエデのツリータップ",
+            "images": [
+            	"afc:textures/gui/book/maple_tapping.png"
+            ],
+            "border": true
+        },
+        {
+            "type": "patchouli:text",
+            "text": "木から樹液を採取するには、3つのものが必要です。まず樹液採取できる木、次に銅インゴットを鍛造して作るツリータップ、そして採取した樹液を受け止めるための樽です。ツリータップは高さ3ブロック以上の幹の中央部分に設置し、樽はその真下に上向きで設置する必要があります。条件が整っていれば、樽に少しずつ樹液が溜まり始めます。"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+            	"tfg:textures/gui/field_guide/tree_tapping/tapping_kapok.png"
+            ],
+            "text": "カポックからラテックスを採取するための樹液採取構成の例",
+            "border": true
+        }
+	],
+	"read_by_default": true,
+	"sortnum": 1,
+	"extra_recipe_mappings": {
+        "afc:tree_tap": 0
+	}
+}

@@ -51,8 +51,10 @@ function registerTFGClayRecipes(event) {
 		{ input: "firmalife:oven_bottom", output: "firmalife:cured_oven_bottom", name: "oven_bottom" },
 		{ input: "firmalife:oven_hopper", output: "firmalife:cured_oven_hopper", name: "oven_hopper" },
 		{ input: "tfg:unfired_rod_mold", output: "tfg:rod_mold", name: "rod_mold" },
+		{ input: "tfg:unfired_spindle_head_mold", output: "tfg:spindle_head_mold", name: "spindle_head_mold" },
 		{ input: "tfg:unfired_small_gear_mold", output: "tfg:small_gear_mold", name: "small_gear_mold" },
-		{ input: "tfg:unfired_nugget_mold", output: "tfg:nugget_mold", name: "nugget_mold" }
+		{ input: "tfg:unfired_nugget_mold", output: "tfg:nugget_mold", name: "nugget_mold" },
+		{ input: "tfg:unfired_lamp_mold", output: "tfg:lamp_mold", name: "lamp_mold" }
 	]);
 
 	TFC_FURNACE_MOLD_RECIPE_COMPONENTS.forEach(element => {
@@ -131,6 +133,13 @@ function registerTFGClayRecipes(event) {
 		.duration(100)
 		.EUt(16)
 
+	event.recipes.gtceu.alloy_smelter('tfg:kaolinite_from_blocks')
+		.itemInputs('#tfc:kaolin_blocks')
+		.notConsumable('gtceu:ball_casting_mold')
+		.chancedOutput('tfc:powder/kaolinite', 8000, 0)
+		.duration(400)
+		.EUt(16)
+
 	// Fire Clay
 	event.recipes.gtceu.alloy_smelter('tfg:cheaper_fire_clay')
 		.itemInputs('#forge:dusts/graphite', '4x tfc:kaolin_clay')
@@ -139,7 +148,7 @@ function registerTFGClayRecipes(event) {
 		.EUt(GTValues.VA[GTValues.ULV])
 
 	event.recipes.gtceu.alloy_smelter('tfg:cheaper_fire_clay2')
-		.itemInputs('tfc:powder/graphite', '4x tfc:kaolin_clay')
+		.itemInputs('4x tfc:powder/graphite', '4x tfc:kaolin_clay')
 		.itemOutputs('2x tfc:fire_clay')
 		.duration(600)
 		.EUt(GTValues.VA[GTValues.ULV])
@@ -181,7 +190,7 @@ function registerTFGClayRecipes(event) {
 		.EUt(2)
 
 	event.recipes.gtceu.macerator('tfg:ceramic_molds')
-		.itemInputs('#tfc:fired_molds')
+		.itemInputs(Ingredient.of('#tfc:fired_molds').subtract('tfc:ceramic/fire_ingot_mold').subtract('tfg:rod_mold').subtract('tfg:small_gear_mold'))
 		.itemOutputs('2x #forge:dusts/brick')
 		.category(GTRecipeCategories.MACERATOR_RECYCLING)
 		.duration(20)
@@ -212,12 +221,38 @@ function registerTFGClayRecipes(event) {
 		.adjacentFluids(["tfc:salt_water", "tfc:spring_water"])
 		.duration(50)
 		.EUt(GTValues.VA[GTValues.LV])
-	
+
+	// Forge hammer clay
+	event.remove({ id: "gtceu:extractor/clay_extraction" })
+
+	event.recipes.gtceu.forge_hammer("clay_unpack")
+		.itemInputs('minecraft:clay')
+		.itemOutputs('4x minecraft:clay_ball')
+		.duration(200)
+		.EUt(6)
+
+	//Hardened Clay
+	event.recipes.firmalife.drying(
+		"tfg:hardened_clay",
+		"minecraft:clay"
+)
+
+	event.recipes.gtceu.extractor(`tfg:gtceu/extractor/hardened_clay`)
+		.itemInputs('minecraft:clay')
+		.outputFluids(Fluid.of('minecraft:water', 250))
+		.itemOutputs('tfg:hardened_clay')
+		.duration(200)
+		.EUt(6)
+
 	// heating
 	event.recipes.tfc.heating('tfg:unfired_rod_mold', 1399)
         .resultItem('tfg:rod_mold')
+		event.recipes.tfc.heating('tfg:unfired_spindle_head_mold', 1399)
+        .resultItem('tfg:spindle_head_mold')
 	event.recipes.tfc.heating('tfg:unfired_small_gear_mold', 1399)
 		.resultItem('tfg:small_gear_mold')
 	event.recipes.tfc.heating('tfg:unfired_nugget_mold', 1399)
 		.resultItem('tfg:nugget_mold')
+	event.recipes.tfc.heating('tfg:unfired_lamp_mold', 1399)
+		.resultItem('tfg:lamp_mold')
 }

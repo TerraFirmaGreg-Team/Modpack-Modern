@@ -1,0 +1,30 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "Pizza",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:textures/item/food/cooked_pizza.png",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "To make $(thing)Pizza$(), mix Dough, Salt, Basil Leaves, and 100 mB of oil in a $(l:firmalife/mixing_bowl)Mixing Bowl$(). Oil can be olive oil, or soybean oil (the product of soybean paste sealed in a barrel of water)."
+    },
+    {
+      "type": "patchouli:crafting",
+      "anchor": "shredded_cheese",
+      "recipe": "firmalife:crafting/shredded_cheese",
+      "text": "You'll need some shredded cheese to start with."
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "tomato_sauce",
+      "text": "To make $(thing)Tomato Sauce$(), boil a tomato, salt, garlic, and water all together in a pot. Alternatively, using a $(l:firmalife/oven_appliances#vat)Vat$(), boil the crafted version of those ingredients, also known as $(thing)Tomato Sauce Mix$()."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfg:shapeless/raw_pizza_2",
+      "text": "Пицца изготавливается из 1-3 овощей, приготовленного мяса или фруктов, одного измельченного сыра и одного томатного соуса."
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 26
+}

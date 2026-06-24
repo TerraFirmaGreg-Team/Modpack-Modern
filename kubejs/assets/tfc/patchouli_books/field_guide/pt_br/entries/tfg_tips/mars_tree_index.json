@@ -1,0 +1,48 @@
+{
+	"name": "Mars Mushroom Index",
+	"category": "tfc:tfg_tips",
+	"icon": "tfg:saplings/aeronos",
+	"read_by_default": true,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "This is a list of every huge mushroom on Mars, and what climates they grow in.$(br2)Looking for particular type of mushroom stem to decorate your base? This should help you find it. The list is sorted alphabetically by stem type.$(br2)Also check out the $(l:tfc:arborfirmacraft/earth_tree_index)Earth Tree Index$()."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Aeronos",
+			"item": "ad_astra:aeronos_stem",
+			"text": "$(bold)Aeronos Mushroom$()$(br)$(thing)Temperature$(): -100°C and above$(br)Appears more often to the East."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Alphacene",
+			"item": "species:alphacene_mushroom_block",
+			"text": "$(bold)Alphacene Mushroom$()$(br)$(thing)Temperature$(): -85°C and above$(br)Appears both to the East and West."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Crimson",
+			"item": "beneath:wood/log/crimson",
+			"text": "$(bold)Crimson Mushroom$()$(br)$(thing)Temperature$(): -109 — -13°C$(br)Appears more often to the East."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Glacian",
+			"item": "ad_astra:glacian_log",
+			"text": "$(bold)Glacian Mushroom$()$(br)$(thing)Temperature$(): -107°C and below$(br)Appears both to the East and West."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Strophar",
+			"item": "ad_astra:strophar_stem",
+			"text": "$(bold)Strophar Mushroom$()$(br)$(thing)Temperature$(): -100°C and above$(br)Appears more often to the West."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Warped",
+			"item": "beneath:wood/log/warped",
+			"text": "$(bold)Warped Mushroom$()$(br)$(thing)Temperature$(): -109 — -13°C$(br)Appears more often to the West."
+		}
+	]
+}

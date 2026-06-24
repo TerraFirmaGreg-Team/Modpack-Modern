@@ -116,6 +116,11 @@ const registerTFCRecipes = (event) => {
 	//More accesible solar drier
 	event.replaceInput({ id: 'firmalife:crafting/solar_drier' }, 'gtceu:stainless_steel_rod', 'gtceu:silver_rod')
 
+	// Kaolinte blocks to powder
+	event.recipes.tfc.heating('#tfc:kaolin_blocks', 500)
+		.chance(0.8)
+		.resultItem('tfc:powder/kaolinite')
+		.id('tfg:tfc/heating/kaolinite_blocks')
 
 	//Lye
 	generateMixerRecipe(event, 'tfc:powder/wood_ash', "#tfg:clean_water 200",
@@ -171,9 +176,15 @@ const registerTFCRecipes = (event) => {
 
 	event.replaceInput({ mod: 'tfc' }, 'minecraft:sugar', '#tfg:sugars')
 
+	event.replaceInput(
+		{ type: 'tfc:pot_jam' },
+		'#tfg:sugars',
+		'#tfc:sweetener'
+	)
 
 	// jute net -> burlap net
 	event.replaceInput({ id: 'tfc:crafting/jute_net' }, 'tfc:jute_fiber', '#tfg:burlap_fiber')
+	event.replaceInput({ input: 'minecraft:slime_ball' }, 'minecraft:slime_ball', 'tfc:glue')
 
 	// horse armor to use burlap
 	global.TFC_EQUIPMENT_METALS.forEach(material => {
@@ -296,4 +307,31 @@ const registerTFCRecipes = (event) => {
 		}).id(`tfg:shaped/tfc/${type}_krummholz`);
 	});
 
+	event.shapeless('minecraft:stick', ['tfc:groundcover/driftwood', '#forge:tools/knives'])
+		.id('tfg:shapeless/driftwood_to_stick')
+
+	// Buff Lamp Glass for easier early game
+	event.remove({ id: 'tfc:glassworking/lamp_glass'})
+	event.recipes.tfc.glassworking(
+        '4x tfc:lamp_glass',
+        '#tfc:glass_batches',
+        [
+            'blow',
+            'flatten',
+			'blow',
+			'saw'
+        ]
+    ).id('tfg:glassworking/lamp_glass')
+
+	event.recipes.gtceu.macerator('tfg:candle')
+		.itemInputs("#minecraft:candles")
+		.itemOutputs("gtceu:small_wax_dust")
+		.duration(50)
+		.EUt(2)
+		.category(GTRecipeCategories.MACERATOR_RECYCLING);
+	
+	event.recipes.tfc.quern("gtceu:small_wax_dust", "#minecraft:candles")
+		.id("tfg:quern/candles")
+	event.recipes.tfc.quern("gtceu:tiny_wax_dust", "gtceu:wax_nugget")
+		.id("tfg:quern/wax_nugget")
 }

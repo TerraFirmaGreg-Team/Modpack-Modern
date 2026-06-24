@@ -22,7 +22,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:stick",
+					"name": "minecraft:arrow",
 					"functions": [
 						{
 							"function": "minecraft:set_count",
@@ -52,13 +52,28 @@
 				},
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:quartz",
+					"name": "tfc:powder/flux",
 					"functions": [
 						{
 							"function": "minecraft:set_count",
 							"count": {
 								"min": 6,
 								"max": 12,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 100
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:quartz",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 4,
+								"max": 6,
 								"type": "minecraft:uniform"
 							}
 						}
@@ -117,7 +132,17 @@
 				},
 				{
 					"type": "minecraft:item",
-					"name": "gtceu:cinnabar_gem",
+					"name": "minecraft:redstone",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 2,
+								"max": 4,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
 					"weight": 100
 				},
 				{
@@ -137,13 +162,13 @@
 				},
 				{
 					"type": "minecraft:item",
-					"name": "beneath:blackstone_brick",
+					"name": "gtceu:ruby_gem",
 					"functions": [
 						{
 							"function": "minecraft:set_count",
 							"count": {
-								"min": 8,
-								"max": 12,
+								"min": 2,
+								"max": 3,
 								"type": "minecraft:uniform"
 							}
 						}
@@ -152,13 +177,13 @@
 				},
 				{
 					"type": "minecraft:item",
-					"name": "tfg:brick/deepslate",
+					"name": "minecraft:emerald",
 					"functions": [
 						{
 							"function": "minecraft:set_count",
 							"count": {
-								"min": 8,
-								"max": 12,
+								"min": 2,
+								"max": 3,
 								"type": "minecraft:uniform"
 							}
 						}
@@ -167,13 +192,13 @@
 				},
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:arrow",
+					"name": "gtceu:sapphire_gem",
 					"functions": [
 						{
 							"function": "minecraft:set_count",
 							"count": {
-								"min": 6,
-								"max": 12,
+								"min": 2,
+								"max": 3,
 								"type": "minecraft:uniform"
 							}
 						}
@@ -182,13 +207,13 @@
 				},
 				{
 					"type": "minecraft:item",
-					"name": "tfc:powder/flux",
+					"name": "gtceu:green_sapphire_gem",
 					"functions": [
 						{
 							"function": "minecraft:set_count",
 							"count": {
-								"min": 6,
-								"max": 12,
+								"min": 2,
+								"max": 3,
 								"type": "minecraft:uniform"
 							}
 						}
@@ -197,47 +222,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"name": "tfc:powder/sulfur",
-					"functions": [
-						{
-							"function": "minecraft:set_count",
-							"count": {
-								"min": 4,
-								"max": 8,
-								"type": "minecraft:uniform"
-							}
-						}
-					],
-					"weight": 100
-				},
-				{
-					"type": "minecraft:item",
-					"name": "tfc:wood/lumber/mangrove",
-					"functions": [
-						{
-							"function": "minecraft:set_count",
-							"count": {
-								"min": 12,
-								"max": 18,
-								"type": "minecraft:uniform"
-							}
-						}
-					],
-					"weight": 100
-				},
-				{
-					"type": "minecraft:item",
-					"name": "tfc:wood/log/mangrove",
-					"functions": [
-						{
-							"function": "minecraft:set_count",
-							"count": {
-								"min": 6,
-								"max": 8,
-								"type": "minecraft:uniform"
-							}
-						}
-					],
+					"name": "ae2:ender_dust",
 					"weight": 100
 				},
 				{

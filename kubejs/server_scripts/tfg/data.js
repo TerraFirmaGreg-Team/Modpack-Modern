@@ -25,8 +25,6 @@ function registerTFGHeatData(event) {
 	});
 	event.itemHeat("tfg:decorative_vase/unfired", 1, null, null);
 
-	event.itemHeat("tfg:sunflower_product", 1, null, null);
-	event.itemHeat("tfg:roasted_sunflower_seeds", 1, null, null);
 	event.itemHeat("tfc:powder/native_copper", 1, null, null);
 	event.itemHeat("tfc:powder/native_silver", 1, null, null);
 	event.itemHeat("tfc:powder/native_gold", 1, null, null);
@@ -40,21 +38,11 @@ function registerTFGHeatData(event) {
 	event.itemHeat("tfc:powder/sphalerite", 1, null, null);
 	event.itemHeat("tfc:powder/tetrahedrite", 1, null, null);
 
-	event.itemHeat('betterend:cave_pumpkin_pie_raw', 1.0, null, null);
-    event.itemHeat('betterend:cave_pumpkin_pie', 1.0, null, null);
-
-	event.itemHeat('tfg:food/raw_beer_battered_cheese_curds', 1.0, null, null);
-	event.itemHeat('tfg:food/cooked_beer_battered_cheese_curds', 1.0, null, null);
-	event.itemHeat('tfg:food/raw_fries', 1.0, null, null);
-	event.itemHeat('tfg:food/cooked_fries', 1.0, null, null);
-	event.itemHeat('tfg:food/brioche_dough', 1.0, null, null);
-	event.itemHeat('tfg:food/brioche_bun', 1.0, null, null);
-	event.itemHeat('tfg:food/raw_burger_patty', 1.0, null, null);
-	event.itemHeat('tfg:food/cooked_burger_patty', 1.0, null, null);
-
 	event.itemHeat('tfg:unfired_rod_mold', 1.0, null, null);
+	event.itemHeat('tfg:unfired_spindle_head_mold', 1.0, null, null);
 	event.itemHeat('tfg:unfired_small_gear_mold', 1.0, null, null);
 	event.itemHeat('tfg:unfired_nugget_mold', 1.0, null, null);
+	event.itemHeat('tfg:unfired_lamp_mold', 1.0, null, null);
 
 	event.itemHeat('betterend:charnia_orange', 0.25, null, null)
 	event.itemHeat('betterend:charnia_cyan', 0.25, null, null)
@@ -62,6 +50,7 @@ function registerTFGHeatData(event) {
 	event.itemHeat('betterend:charnia_light_blue', 0.25, null, null)
 	event.itemHeat('betterend:charnia_purple', 0.25, null, null)
 	event.itemHeat('betterend:charnia_red', 0.25, null, null)
+
 }
 
 //#endregion
@@ -69,6 +58,8 @@ function registerTFGHeatData(event) {
 
 /** @param {Internal.TFCDataEventJS} event */
 function registerTFGItemSize(event) {
+
+	registerTFGFoodItemSize(event);
 	/**
 	 * Turns an array of items into an ingredient that is an alternative of items in the array.
 	 * @param {Internal.Ingredient_[]} items Items to to take.
@@ -88,6 +79,7 @@ function registerTFGItemSize(event) {
 	});
 	event.itemSize("tfg:decorative_vase", "normal", "medium", "decorative_vase");
 	event.itemSize("tfg:decorative_vase/unfired", "normal", "medium", "decorative_vase/unfired");
+	event.itemSize("#tfg:rope_ladders", "normal", "light", "rope_ladders");
 
 	event.itemSize("tfg:fishing_net/wood", "large", "medium", "wood_fishing_net");
 	event.itemSize("tfg:fishing_net/brass", "large", "medium", "brass_fishing_net");
@@ -99,19 +91,13 @@ function registerTFGItemSize(event) {
 	event.itemSize("tfg:fishing_net/magnalium", "large", "medium", "magnalium_fishing_net");
 
 	event.itemSize("tfg:trowel", "large", "medium", "trowel");
+	event.itemSize("tfg:rnr_plow", "very_large", "heavy", "rnr_plow");
 
 	event.itemSize("tfg:railgun_ammo_shell", "large", "light", "railgun_ammo_shell");
+	event.itemSize("tfg:quartz_crucible", "large", "very_heavy", "quartz_crucible");
 
 	event.itemSize("tfg:harvest_basket", "large", "medium", "harvest_basket");
 	event.itemSize("tfg:aluminium_harvest_basket", "large", "medium", "aluminium_harvest_basket");
-
-	event.itemSize("tfg:rapeseed_product", "small", "light", "rapeseed_product");
-	event.itemSize("tfg:sunflower_product", "small", "light", "sunflower_product");
-	event.itemSize("betterend:amber_root_product", "small", "light", "amber_roots");
-	event.itemSize("betterend:blossom_berry_product", "small", "light", "amber_roots");
-	event.itemSize("betterend:cave_pumpkin", "small", "light", "amber_roots");
-	event.itemSize("betterend:chorus_mushroom_product", "small", "light", "amber_roots");
-	event.itemSize("betterend:shadow_berry_product", "small", "light", "amber_roots");
 
 	event.itemSize(Ingredient.of("#minecraft:buttons"), "very_small", "very_light", "buttons");
 	event.itemSize(Ingredient.of("#forge:buzz_saw_heads"), "large", "heavy", "buzz_saw_blades");
@@ -318,9 +304,6 @@ function registerTFGItemSize(event) {
 	
 	event.itemSize('#tfc:ore_pieces', 'very_small', 'very_light', 'tfc_ores')
 
-	event.itemSize('#tfc:foods/sealed_preserves', 'tiny', 'medium', 'sealed_preserves')
-	event.itemSize('#tfc:foods/preserves', 'tiny', 'medium', 'preserves')
-
 	event.itemSize('#forge:tools/wrenches', 'very_large', 'very_heavy', 'wrenches')
 	event.itemSize('#forge:tools/mining_hammers', 'very_large', 'very_heavy', 'mining_hammers')
 	event.itemSize('#forge:tools/spades', 'very_large', 'very_heavy', 'spades')
@@ -328,20 +311,50 @@ function registerTFGItemSize(event) {
 	event.itemSize(
 		orArray([
 			"tfg:unfired_rod_mold",
+			"tfg:unfired_spindle_head_mold",
 			"tfg:unfired_small_gear_mold",
 			"tfg:unfired_nugget_mold",
+			"tfg:unfired_lamp_mold",
 			"tfg:rod_mold",
+			"tfg:spindle_head_mold",
 			"tfg:small_gear_mold",
-			"tfg:nugget_mold"
+			"tfg:nugget_mold",
+			"tfg:lamp_mold"
 		]),
 		"normal",
 		"medium",
-		"Molds"
+		"molds"
 	)
 
 	//Universal Compost Bags
 	event.itemSize("tfg:universal_compost_browns_bag", "tiny", "medium")
 	event.itemSize("tfg:universal_compost_greens_bag", "tiny", "medium")
+
+
+	//Crafting Station
+	global.TFG_NEW_WOOD_TYPES.forEach(wood => { 
+		event.itemSize(`tfg:wood/crafting_station/${wood.name}`, "large", "heavy", `${wood.name}_crafting_station`);
+	})
+
+	global.WAB_WOOD.forEach(wood => { 
+		event.itemSize(`tfg:wood/crafting_station/${wood.name}`, "large", "heavy", `${wood.name}_crafting_station`);
+	})
+
+	global.AD_ASTRA_WOOD.forEach(wood => { 
+		event.itemSize(`tfg:wood/crafting_station/${wood.name}`, "large", "heavy", `${wood.name}_crafting_station`);
+	})
+
+	global.BENEATH_WOOD_TYPES.forEach(wood => { 
+		event.itemSize(`tfg:wood/crafting_station/${wood.name}`, "large", "heavy", `${wood.name}_crafting_station`);
+	})
+
+	global.AFC_WOOD_TYPES.forEach(wood => { 
+		event.itemSize(`tfg:wood/crafting_station/${wood.name}`, "large", "heavy", `${wood.name}_crafting_station`);
+	})
+
+	global.TFC_WOOD_TYPES.forEach(wood => { 
+		event.itemSize(`tfg:wood/crafting_station/${wood.name}`, "large", "heavy", `${wood.name}_crafting_station`);
+	})
 }
 
 //#endregion
@@ -357,15 +370,22 @@ function registerTFGSupportData(event) {
 	event.support("tfg:rebar_support_horizontal", 4, 4, 8, "rebar_support");
 	event.support("tfg:steel_support_horizontal", 6, 6, 16, "steel_support");
 
-	const other_stone = ["pyroxenite", "migmatite", "travertine"];
-	const stone_types = global.TFC_STONE_TYPES.concat(other_stone);
-
-	stone_types.forEach((stone) => {
-		event.support(`tfg:${stone}_support_horizontal`, 2, 2, 4, `${stone}_support`);
-	});
+	for (let [rockId, rock] of Object.entries(global.BIG_ROCK_TABLE)) {
+		if (rock.support) {
+			if (rockId === "light_concrete" || rockId === "dark_concrete")
+				continue;
+			event.support(`${rock.support}_horizontal`, 2, 2, 4, `${rockId}_support`);
+		}
+	}
 
 	global.AD_ASTRA_WOOD.forEach((wood) => {
 		event.support(`tfg:${wood.name}_support_horizontal`, 2, 2, 4, `${wood.name}_support`);
+	});
+	global.WAB_WOOD.forEach((wood) => {
+		event.support(`tfg:wood/support/${wood.name}_horizontal`, 2, 2, 4, `${wood.name}_support`);
+	});
+	global.TFG_NEW_WOOD_TYPES.forEach((wood) => {
+		event.support(`tfg:wood/support/${wood.name}_horizontal`, 2, 2, 4, `${wood.name}_support`);
 	});
 }
 

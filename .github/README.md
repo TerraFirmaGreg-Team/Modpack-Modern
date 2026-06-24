@@ -14,7 +14,7 @@
   </a>
   <br/>
   <p align="center">
-    <a href="https://github.com/TerraFirmaGreg-Team/Modpack-Modern/wiki">Wiki</a>
+    <a href="https://wiki.terrafirmagreg.team/">Wiki</a>
     ·
     <a href="https://github.com/TerraFirmaGreg-Team/Modpack-Modern/issues">Report Bugs</a>
     ·
@@ -56,7 +56,7 @@ This modpack is still a work in progress, and is constantly being updated. In it
 
 Interested in contributing? For detailed setup instructions, coding standards, and guidelines, please read [this](CONTRIBUTING.md).
 
-Want to help translate? Please read [this](../kubejs/README_IF_TRANSLATING.md) instead.
+Want to help translate? Check out our [Crowdin](https://terrafirmagreg.crowdin.com/modern)!
 
 ---
 

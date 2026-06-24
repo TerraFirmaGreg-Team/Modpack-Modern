@@ -11,7 +11,10 @@
     "botania:falling_star"
   ],
   "entityWhitelist": [
-    "botania:mana_burst"
+    "botania:mana_burst",
+    "mts:builder_existing",
+    "mts:builder_rendering",
+    "mts:builder_seat"
   ],
   "tracingDistance": 128,
   "debugMode": false,

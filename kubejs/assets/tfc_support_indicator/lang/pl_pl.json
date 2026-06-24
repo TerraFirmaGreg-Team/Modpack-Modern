@@ -1,0 +1,7 @@
+{
+  "config.jade.plugin_tfc_support_indicator.support_indicator": "Wskaźnik podparcia TFC",
+  "tfc_support_indicator.might_trigger_collapse": "Grozi zawaleniem",
+  "tfc_support_indicator.self_supported": "Blok podparty",
+  "tfc_support_indicator.self_unsupported": "Brak podparcia",
+  "tfc_support_indicator.wont_trigger_collapse": "Nie grozi zawaleniem"
+}

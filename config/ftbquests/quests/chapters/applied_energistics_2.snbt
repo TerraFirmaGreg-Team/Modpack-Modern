@@ -730,6 +730,24 @@
 			icon_scale: 2.0d
 			id: "3C3C21482E31267B"
 			size: 1.0d
+			tasks: [
+				{
+					dimension: "minecraft:overworld"
+					icon: "gtceu:overworld_marker"
+					id: "7632E64D3F85FAB3"
+					optional_task: true
+					title: "{quests.stone_age.temperature.task}"
+					type: "dimension"
+				}
+				{
+					dimension: "ad_astra:moon"
+					icon: "tfg:marker/moon"
+					id: "41D7488FFB99889C"
+					optional_task: true
+					title: "{quests.stone_age.temperature.task}"
+					type: "dimension"
+				}
+			]
 			title: "{quests.ae2.hv.title}"
 			x: 0.5d
 			y: -2.5d
@@ -1327,6 +1345,19 @@
 			title: "{quests.ae2.books_again.title}"
 			x: -0.5d
 			y: -1.0d
+		}
+		{
+			dependencies: ["25007C5E43D28DB2"]
+			description: ["{quests.ae2.stock_bridge.desc}"]
+			id: "349620A86711E263"
+			tasks: [{
+				id: "2117A53364A22BA6"
+				item: "createstockbridge:ae_bridge"
+				type: "item"
+			}]
+			title: "{quests.ae2.stock_bridge.title}"
+			x: 5.0d
+			y: -8.0d
 		}
 	]
 	subtitle: ["{quests.ae2.subtitle}"]

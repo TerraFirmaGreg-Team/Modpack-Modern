@@ -1,0 +1,698 @@
+{
+	"type": "minecraft:chest",
+	"pools": [
+		{
+			"bonus_rolls": 0,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:crossbow",
+					"functions": [
+						{
+							"function": "minecraft:set_damage",
+							"damage": {
+								"type": "minecraft:uniform",
+								"min": 0.75,
+								"max": 1
+							}
+						}
+					],
+					"weight": 100
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:arrow",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 5,
+								"max": 17,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 100
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:glow_arrow",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 10,
+								"max": 28,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 100
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:string",
+					"weight": 50,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 3,
+								"min": 1
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:leather",
+					"weight": 50,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 2,
+								"min": 1
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:silk_cloth",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 1,
+								"max": 2,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 70
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:burlap_cloth",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 1,
+								"max": 2,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 70
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:phantom_membrane",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 1,
+								"max": 2,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 70
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:jute_net",
+					"weight": 100
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:ceramic/black_glazed_vessel",
+					"weight": 50
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:ceramic/yellow_glazed_vessel",
+					"weight": 50
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:piglin_banner_pattern",
+					"weight": 10
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:snout_armor_trim_smithing_template",
+					"weight": 10
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:dune_armor_trim_smithing_template",
+					"weight": 10
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:wayfinder_armor_trim_smithing_template",
+					"weight": 10
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:gunpowder",
+					"weight": 100,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 8,
+								"min": 4
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:glowstone_dust",
+					"weight": 100,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 8,
+								"min": 4
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:clay_ball",
+					"weight": 100,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 15,
+								"min": 9
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:mortar",
+					"weight": 100,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 15,
+								"min": 9
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:ore/lignite",
+					"weight": 100,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 5,
+								"min": 2
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:gold_ingot",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 1,
+								"max": 2,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 100
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:gold_nugget",
+					"weight": 100,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 10,
+								"min": 6
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:gold_dust",
+					"weight": 100,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 5,
+								"min": 2
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:gilded_blackstone",
+					"weight": 100,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 4,
+								"min": 2
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:powder/native_gold",
+					"weight": 100,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 10,
+								"min": 6
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:rose_gold_nugget",
+					"weight": 100,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 10,
+								"min": 6
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:metal/chain/black_bronze",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 2,
+								"max": 5,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 50
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:powder/saltpeter",
+					"weight": 100,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 6,
+								"min": 3
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:candle/yellow",
+					"weight": 100,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 4,
+								"min": 2
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:powder/flux",
+					"weight": 100,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 8,
+								"min": 4
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfg:combat_powder",
+					"weight": 100
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfg:recovery_powder",
+					"weight": 100
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfg:acrobat_powder",
+					"weight": 100
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfg:mining_powder",
+					"weight": 100
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:bowl",
+					"weight": 50,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 2,
+								"min": 1
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "firmalife:spoon",
+					"weight": 50
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfchotornot:tongs/wood",
+					"weight": 50
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:volcanic_glass_bottle",
+					"weight": 80,
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{fluid:{Amount:400,FluidName:\"minecraft:water\"}}"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:ceramic/jug",
+					"weight": 100,
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{fluid:{Amount:100,FluidName:\"minecraft:water\"}}"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:ceramic/ingot_mold",
+					"weight": 100,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 4,
+								"min": 2
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:matches",
+					"weight": 70,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 8,
+								"min": 4
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:plant/blood_lily",
+					"weight": 100,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 4,
+								"min": 2
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:tricalcium_phosphate_dust",
+					"weight": 50,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 5,
+								"min": 2
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:charcoal",
+					"weight": 100,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 5,
+								"min": 2
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "ae2:ender_dust",
+					"weight": 50
+				},
+				{
+					"type": "minecraft:item",
+					"name": "chalk:yellow_chalk",
+					"weight": 70
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:dynamite",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 5,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 30
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:powderbarrel",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 1,
+								"max": 3,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 30
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:spyglass",
+					"weight": 30
+				},
+				{
+					"type": "minecraft:item",
+					"name": "beneath:ghost_pepper",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 4,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 80
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfg:peanut_product",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 4,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 50
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfg:cassava_product",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 4,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 50
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfg:beans_product",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 4,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 50
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:food/cooked_venison",
+					"weight": 50,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 4,
+								"type": "minecraft:uniform"
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:glow_berries",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 12,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 50
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:metal/lamp/black_bronze",
+					"weight": 50
+				}
+			],
+			"rolls": {
+				"type": "minecraft:uniform",
+				"max": 7,
+				"min": 5
+			}
+		}
+	]
+}

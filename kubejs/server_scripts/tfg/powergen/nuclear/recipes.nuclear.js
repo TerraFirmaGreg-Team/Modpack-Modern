@@ -367,7 +367,7 @@ function registerTFGNuclearRecipes(event) {
 
     event.recipes.deafission.fission_reactor_coolant('tfg:tbu_coolant')
         .itemInputs(Ingredient.of([
-            'tfg:tbu_232_rod']))
+            'tfg:tbu_232_rod'/*, 'tfg:neptunium_237_rod', 'tfg:americium_241_rod', 'tfg:californium_252_rod'*/]))
 		.perTick(true)
 		.inputFluids(Fluid.of('tfg:heavy_water', 20))
 		.outputFluids(Fluid.of('gtceu:dense_steam', 1200))
@@ -806,7 +806,7 @@ function registerTFGNuclearRecipes(event) {
 		'CDC',
 		'EBE'
 	], {
-		A: 'gtceu:ostrum_normal_fluid_pipe',
+		A: 'gtceu:tungsten_steel_normal_fluid_pipe',
 		B: 'gtceu:platinum_single_cable',
 		C: '#gtceu:circuits/iv',
 		D: 'gtceu:iv_machine_hull',
@@ -882,6 +882,8 @@ function registerTFGNuclearRecipes(event) {
         .outputFluids(Fluid.of('tfg:boron_enriched_coolant', 3600))
         .blastFurnaceTemp(2000)
         .addData("hb_energy", 30)
+		.duration(5*20)
+		.hideDuration(true);
 /*
     event.recipes.deafission.hb_export('tfg:boron_coolant_to_dense_steam')
         .inputFluids(Fluid.of('gtceu:distilled_water', 7200))
@@ -895,13 +897,16 @@ function registerTFGNuclearRecipes(event) {
         .outputFluids(Fluid.of('gtceu:dense_steam', 115200))
         .blastFurnaceTemp(1000)
         .addData("hb_energy", 40)
-		//.circuit(2)
+		.duration(5*20)
+		.hideDuration(true);
 
     event.recipes.deafission.hb_import('tfg:dense_steam')
         .inputFluids(Fluid.of('gtceu:dense_steam', 20))
         .outputFluids(Fluid.of('minecraft:water', 20))
-        .blastFurnaceTemp(1000)
+        .blastFurnaceTemp(910)
         .addData("hb_energy", 20)
+		.duration(5*20)
+		.hideDuration(true);
 	
 	//#endregion
 
@@ -1287,6 +1292,12 @@ function registerTFGNuclearRecipes(event) {
 
 	event.recipes.gtceu.distillery('tfg:linolenic_from_seed')
 		.inputFluids(Fluid.of('gtceu:seed_oil', 1000))
+		.outputFluids(Fluid.of('tfg:linolenic_acid', 10))
+		.circuit(2)
+		.duration(100)
+		.EUt(GTValues.VA[GTValues.MV])
+	event.recipes.gtceu.distillery('tfg:linolenic_from_peanut')
+		.inputFluids(Fluid.of('tfg:peanut_oil', 1000))
 		.outputFluids(Fluid.of('tfg:linolenic_acid', 10))
 		.circuit(2)
 		.duration(100)

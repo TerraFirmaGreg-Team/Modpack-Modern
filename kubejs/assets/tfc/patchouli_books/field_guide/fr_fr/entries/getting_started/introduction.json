@@ -1,0 +1,168 @@
+{
+	"__comment__": "This file was automatically created by mcresources",
+	"name": "Introduction",
+	"category": "tfc:getting_started",
+	"icon": "tfc:rock/loose/granite",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Dans TerraFirmaCraft, les premières choses que vous pouvez obtenir sont les bâtons, brindilles et cailloux. Ils peuvent être trouvés sous presque tous les climats, éparpillés au sol. Utilisez $(item)$(k:key.use)$() ou cassez-les pour les ramasser."
+		},
+		{
+			"type": "patchouli:multiblock",
+			"multiblock": {
+				"pattern": [
+					[
+						"1    ",
+						" 2  4",
+						"  03 ",
+						" 4   ",
+						"    5"
+					],
+					[
+						"GGGGG",
+						"GGGGG",
+						"GGGGG",
+						"GGGGG",
+						"GGGGG"
+					]
+				],
+				"mapping": {
+					"G": "tfc:grass/sandy_loam",
+					"1": "tfc:rock/loose/granite[count=1]",
+					"2": "tfc:rock/loose/granite[count=2]",
+					"3": "tfc:rock/loose/granite[count=3]",
+					"4": "tfc:groundcover/stick",
+					"5": "tfc:wood/twig/ash"
+				}
+			},
+			"name": "Exemple",
+			"text": "A smattering of common sticks and stones.",
+			"enable_visualize": false
+		},
+		{
+			"type": "patchouli:text",
+			"text": "En plus de récolter des bâtons et des brindilles par terre, il est possible de trouver des bâtons en cassant des feuilles avec votre main. Une fois que vous aurez assez de cailloux et de bâtons, vous serez prêts à $(thing)Tailler$(). La taille est un procédé où deux cailloux sont frappés l'un contre l'autre pour créer une forme particulière. Afin de tailler, tenez au moins deux cailloux dans votre main, puis faites un clic-droit vers le ciel, et l'$(thing)Interface de taille$() s'ouvrira."
+		},
+		{
+			"type": "patchouli:image",
+			"images": [
+				"tfc:textures/gui/book/gui/rock_knapping.png"
+			],
+			"text": "L'Interface de taille.",
+			"border": false
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Afin de tailler un item en particulier, vous devrez retirer des carrés jusqu'à ce que vous arriviez à la forme souhaitée. Par exemple, créez une lame de couteau comme ci-contre.$(br2)L'emplacement de la forme souhaitée n'est pas importante, et certaines recettes ont plusieurs variantes valides."
+		},
+		{
+			"type": "tfc:rock_knapping_recipe",
+			"anchor": "knife",
+			"recipes": [
+				"tfg:rock_knapping/stone_knife_head",
+				"tfg:rock_knapping/stone_knife_head_1",
+				"tfg:rock_knapping/stone_knife_head_2",
+				"tfg:rock_knapping/stone_knife_head_3"
+			],
+			"text": "Une lame de couteau, fabriquées à partir de types de roches différents."
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "gtceu:shaped/knife_stone",
+			"text": "Toutes les têtes d'outil en pierre peuvent être ajoutée à un bâton ou une brindille pour en faire un outil complet.$(br2)Le couteau en pierre peut être utilisé pour récolter de la $(thing)Paille$() en cassant des plantes."
+		},
+		{
+			"type": "tfc:rock_knapping_recipe",
+			"recipes": [
+				"tfg:rock_knapping/stone_axe_head"
+			],
+			"text": "Les $(thing)Haches$() peuvent couper des arbres entiers d'un coup, bûches et feuilles y compris. Cependant, les pousses et les bâtons ne peuvent être obtenus qu'en cassant les feuilles individuellement."
+		},
+		{
+			"type": "tfc:rock_knapping_recipe",
+			"recipes": [
+				"tfg:rock_knapping/stone_shovel_head"
+			],
+			"text": "Les $(thing)Pelles$() peuvent creuser des blocs de sol. Elles servent aussi à créer des $(thing)Chemins$() en les $(item)utilisant$() sur de la $(thing)Terre$() ou de l'$(thing)Herbe$()."
+		},
+		{
+			"type": "tfc:rock_knapping_recipe",
+			"recipes": [
+				"tfg:rock_knapping/stone_hoe_head",
+				"tfg:rock_knapping/stone_hoe_head_1",
+				"tfg:rock_knapping/stone_hoe_head_2"
+			],
+			"text": "Les $(thing)Houes$() sont utiles pour l'$(l:mechanics/crops)Agriculture$(), mais servent aussi à casser des feuilles ou autre matière végétale."
+		},
+		{
+			"type": "tfc:rock_knapping_recipe",
+			"recipes": [
+				"tfg:rock_knapping/stone_hammer_head"
+			],
+			"text": "Les $(thing)Marteaux$() servent d'armes $(l:mechanics/damage_types)contondantes$(), mais servent surtout en tant qu'outils pour la $(l:getting_started/primitive_anvils)Forge$()."
+		},
+		{
+			"type": "tfc:rock_knapping_recipe",
+			"recipes": [
+				"tfc:rock_knapping/javelin_head_sedimentary",
+				"tfc:rock_knapping/javelin_head_metamorphic",
+				"tfc:rock_knapping/javelin_head_igneous_extrusive",
+				"tfc:rock_knapping/javelin_head_igneous_intrusive"
+			],
+			"text": "Enfin un $(thing)Javelot$() peut être utilisé en tant qu'arme primitive, pouvant être lancées sur une cible ou en tant qu'arme $(l:mechanics/damage_types)perçante$()."
+		}
+	],
+	"read_by_default": true,
+	"sortnum": 0,
+	"extra_recipe_mappings": {
+		"tfc:stone/knife_head/sedimentary": 5,
+		"tfc:stone/knife_head/metamorphic": 5,
+		"tfc:stone/knife_head/igneous_extrusive": 5,
+		"tfc:stone/knife_head/igneous_intrusive": 5,
+		"tfc:stone/knife/sedimentary": 5,
+		"tfc:stone/knife/metamorphic": 5,
+		"tfc:stone/knife/igneous_extrusive": 5,
+		"tfc:stone/knife/igneous_intrusive": 5,
+		"tfc:stone/axe_head/sedimentary": 7,
+		"tfc:stone/axe_head/metamorphic": 7,
+		"tfc:stone/axe_head/igneous_extrusive": 7,
+		"tfc:stone/axe_head/igneous_intrusive": 7,
+		"tfc:stone/axe/sedimentary": 7,
+		"tfc:stone/axe/metamorphic": 7,
+		"tfc:stone/axe/igneous_extrusive": 7,
+		"tfc:stone/axe/igneous_intrusive": 7,
+		"tfc:stone/shovel_head/sedimentary": 8,
+		"tfc:stone/shovel_head/metamorphic": 8,
+		"tfc:stone/shovel_head/igneous_extrusive": 8,
+		"tfc:stone/shovel_head/igneous_intrusive": 8,
+		"tfc:stone/shovel/sedimentary": 8,
+		"tfc:stone/shovel/metamorphic": 8,
+		"tfc:stone/shovel/igneous_extrusive": 8,
+		"tfc:stone/shovel/igneous_intrusive": 8,
+		"tfc:stone/hoe_head/sedimentary": 9,
+		"tfc:stone/hoe_head/metamorphic": 9,
+		"tfc:stone/hoe_head/igneous_extrusive": 9,
+		"tfc:stone/hoe_head/igneous_intrusive": 9,
+		"tfc:stone/hoe/sedimentary": 9,
+		"tfc:stone/hoe/metamorphic": 9,
+		"tfc:stone/hoe/igneous_extrusive": 9,
+		"tfc:stone/hoe/igneous_intrusive": 9,
+		"tfc:stone/hammer_head/sedimentary": 10,
+		"tfc:stone/hammer_head/metamorphic": 10,
+		"tfc:stone/hammer_head/igneous_extrusive": 10,
+		"tfc:stone/hammer_head/igneous_intrusive": 10,
+		"tfc:stone/hammer/sedimentary": 10,
+		"tfc:stone/hammer/metamorphic": 10,
+		"tfc:stone/hammer/igneous_extrusive": 10,
+		"tfc:stone/hammer/igneous_intrusive": 10,
+		"tfc:stone/javelin_head/sedimentary": 11,
+		"tfc:stone/javelin_head/metamorphic": 11,
+		"tfc:stone/javelin_head/igneous_extrusive": 11,
+		"tfc:stone/javelin_head/igneous_intrusive": 11,
+		"tfc:stone/javelin/sedimentary": 11,
+		"tfc:stone/javelin/metamorphic": 11,
+		"tfc:stone/javelin/igneous_extrusive": 11,
+		"tfc:stone/javelin/igneous_intrusive": 11
+	}
+}

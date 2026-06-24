@@ -181,7 +181,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:emerald",
-					"weight": 50,
+					"weight": 80,
 					"functions": [
 						{
 							"add": false,
@@ -371,8 +371,8 @@
 			],
 			"rolls": {
 				"type": "minecraft:uniform",
-				"max": 8,
-				"min": 6
+				"max": 7,
+				"min": 5
 			}
 		}
 	]

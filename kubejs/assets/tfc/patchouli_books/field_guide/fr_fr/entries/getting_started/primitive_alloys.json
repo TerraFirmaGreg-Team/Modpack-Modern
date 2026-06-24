@@ -1,0 +1,76 @@
+{
+	"__comment__": "This file was automatically created by mcresources",
+	"name": "Alliages Primitifs",
+	"category": "tfc:getting_started",
+	"icon": "tfc:ceramic/ingot_mold{tank:{\"Amount\":100,\"FluidName\":\"tfc:metal/bronze\"}}",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Les $(thing)Alliages$() sont une méthode pour mélanger deux métaux ou plus ensemble pour créer un nouveau métal plus fort. Au début de jeu, bien que le cuivre soit utile pour créer des outils, le niveau suivant de métal est l'un des trois types de $(thing)Bronze$(). Un alliage est composés de ses $(thing)métaux$() constituants qui doivent chacun s'élever à un certain pourcentage de l'alliage total."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Une des méthodes de créer un alliage en début de jeu est via l'utilisation d'un $(thing)Petit récipient$(). Le processus est très similaire au $(l:getting_started/finding_ores#casting)Moulage$(). Seulement, au lieu d'utiliser un seul métal, vous devez placer suffisamment de morceaux de métal avec un certain ratio pour former un alliage connu."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Par exmple, pour créer 1000 mb de $(thing)Bronze$() (comme ci-contre), vous auriez besoin d'entre 700 et 800 mB de $(thing)Cuivre$(), et entre 200 et 300 mB d'$(thing)Étain$().$(br2)Les trois prochaines pages montrent la recette des trois bronzes. Chaque type de bronze peut être utilisé pour créer des outils, des $(l:mechanics/armor)Armures$(), et d'autres objets en métal. Ils sont tous légèrement différents, donc les outils qui en résultent auront une durabilité, efficacité et des dégâts d'attaque différents."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "gtceu:bronze_ingot",
+			"title": "Bronze",
+			"link_recipes": false,
+			"text": "$(br)$(bold)Exigence :$()$(br)$(li)70 - 80 % : $(thing)Cuivre$()$(li)20 - 30 % : $(thing)Étain$()$(br2)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "gtceu:bismuth_bronze_ingot",
+			"title": "Bronze au bismuth",
+			"link_recipes": false,
+			"text": "$(br)$(bold)Exigence :$()$(br)$(li)20 - 30 % : $(thing)Zinc$()$(li)50 - 65 % : $(thing)Cuivre$()$(li)10 - 20 % : $(thing)Bismuth$()$(br2)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "gtceu:black_bronze_ingot",
+			"title": "Bronze noir",
+			"link_recipes": false,
+			"text": "$(br)$(bold)Exigence :$()$(br)$(li)50 - 70 % : $(thing)Cuivre$()$(li)10 - 25 % : $(thing)SArgent$()$(li)10 - 25 % : $(thing)Or$()$(br2)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "D'autres alliages ne peuvent pas créer d'outils. Ceux-ci sont le $(thing)Laiton$(), l'$(thing)Or rose$() et l'$(thing)Argent sterling$().$(br2)Le $(thing)Laiton$() est un alliage utile pour toutes sortes d'engins, y compris pour ce qui touche à la $(l:mechanics/mechanical_power)Puissance mécanique$().$(br2)L'$(thing)Or rose$() et l'$(thing)Argent sterling$() sont utilisés dans la fabrication d'acier $(l:mechanics/steel#red_steel)Rouge$() et $(l:mechanics/steel#blue_steel)Bleu$().",
+			"title": "Alliages utilitaies"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "brass",
+			"item": "create:brass_ingot",
+			"title": "Laiton",
+			"link_recipes": false,
+			"text": "$(br)$(bold)Exigence :$()$(br)$(li)70 - 80 % : $(thing)Cuivre$()$(li)20 - 30 % : $(thing)Zinc$()$(br2)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "gtceu:rose_gold_ingot",
+			"title": "Or rose",
+			"link_recipes": false,
+			"text": "$(br)$(bold)Exigence :$()$(br)$(li)15 - 30 % : $(thing)Cuivre$()$(li)70 - 85 % : $(thing)Or$()$(br2)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "gtceu:sterling_silver_ingot",
+			"title": "Argent sterling",
+			"link_recipes": false,
+			"text": "$(br)$(bold)Exigence :$()$(br)$(li)20 - 40 % : $(thing)Cuivre$()$(li)60 - 80 % : $(thing)Argent$()$(br2)"
+		}
+	],
+	"read_by_default": true,
+	"sortnum": 5,
+	"extra_recipe_mappings": {
+		"gtceu:bronze_ingot": 3,
+		"gtceu:bismuth_bronze_ingot": 4,
+		"gtceu:black_bronze_ingot": 5,
+		"create:brass_ingot": 7
+	}
+}

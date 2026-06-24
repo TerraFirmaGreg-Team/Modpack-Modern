@@ -1,0 +1,38 @@
+{
+    "type": "block",
+    "target": {
+        "type": "gun",
+        "values": [
+            "applied_armorer:niklas_pistol_semi_right",
+            "tacz:springfield1873",
+            "applied_armorer:moritz_rifle_ar77",
+            "applied_armorer:moritz_shotgun_sg914",
+            "applied_armorer:niklas_smg_freedom",
+            "applied_armorer:moritz_gernade_gl3",
+            "create_armorer:mg_platemag_flywheel"
+        ]
+    },
+
+    "blocks": [
+        "#tfg:copper_greenhouse_casings",
+        "#firmalife:all_copper_greenhouse",
+        "createdeco:andesite_window",
+        "createdeco:andesite_window_pane",
+        "createdeco:copper_window",
+        "createdeco:copper_window_pane",
+        "createdeco:brass_window",
+        "createdeco:brass_window_pane",
+        "createdeco:zinc_window",
+        "createdeco:zinc_window_pane",
+        "ae2:quartz_glass",
+        "ae2:quartz_vibrant_glass",
+        "gtceu:tempered_glass"
+    ],
+
+    "block_break": {
+        "type": "count",
+        "count": 2
+    },
+
+    "priority": 3
+}

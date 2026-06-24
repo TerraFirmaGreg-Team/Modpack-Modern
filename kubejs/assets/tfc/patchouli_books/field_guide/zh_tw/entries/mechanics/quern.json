@@ -1,0 +1,80 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "手推磨",
+  "category": "tfc:mechanics",
+  "icon": "tfc:quern",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)手推磨$()是用來研磨物品的裝置。可以粉碎原礦以用於$(l:tfg_ores/ore_basics#processing)加工$()，還能製作粉末、$(l:mechanics/dye)染料$() 以及其他物品。它由$(thing)底座$()和$(thing)磨盤$()組合而成。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/quern",
+      "text": "合成底座需要三個$(thing)平滑岩石$()以及任三個$(thing)岩石$()方塊。$(br2)石頭 $(l:getting_started/primitive_anvils#raw_rock)採集$()取得，而平滑岩石需要用 $(l:mechanics/chisel)鑿子$()加工。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/handstone",
+      "text": "手推磨還需要$(thing)磨盤$()才能使用。"
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "tfc:textures/gui/book/tutorial/quern_empty.png"
+      ],
+      "text": "對準手推磨底座的頂面按$(item)$(k:key.use)$()放上磨盤。",
+      "border": true
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "tfc:textures/gui/book/tutorial/quern_add_item.png"
+      ],
+      "text": "手持需要研磨的物品對準磨盤頂部的小孔按$(item)$(k:key.use)$()放入。",
+      "border": true
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "tfc:textures/gui/book/tutorial/quern_handle.png"
+      ],
+      "text": "對準磨盤的把手按$(item)$(k:key.use)$()旋轉。",
+      "border": true
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "tfc:textures/gui/book/tutorial/quern_result.png"
+      ],
+      "text": "處理完成後會在底座的周圍輸出。$(item)$(k:key.use)$()底座就能取出。",
+      "border": true
+    },
+    {
+      "type": "tfc:quern_recipe",
+      "title": "粉碎礦石",
+      "recipe": "tfg:quern/copper_crushed_ore_from_normal_raw_ore",
+      "text": "$(l:tfg_ores/ore_basics#processing)礦石$()透過粉碎以取得更多金屬。"
+    },
+    {
+      "type": "tfc:quern_recipe",
+      "title": "粉末",
+      "recipe": "tfg:quern/sulfur",
+      "text": "手推磨可以將礦粉磨製各式各樣的$(thing)粉末$()，如$(thing)硫磺$()。$(thing)寶石$()也可研磨成粉末。"
+    },
+    {
+      "type": "tfc:quern_recipe",
+      "title": "染料",
+      "recipe": "tfc:quern/red_dye",
+      "text": "$(l:mechanics/dye)染料$()從各式各樣的花取得。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "tag": "tfc:foods/flour"
+      },
+      "text": "$(thing)農作物$()可用刀具或手推磨加工成 $(thing)穀物$()，進一步研磨可得到 $(thing)麵粉$()。"
+    }
+  ],
+  "read_by_default": true
+}

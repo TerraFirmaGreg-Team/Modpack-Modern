@@ -5,10 +5,6 @@
  * @param {TagEvent.Item} event 
  */
 const registerAFCItemTags = (event) => {
-	global.AFC_DISABLED_ITEMS.forEach(item => {
-		event.removeAllTagsFrom(item)
-		event.add('c:hidden_from_recipe_viewers', item)
-	})
 
     global.AFC_WOOD_TYPES.forEach(woodType => {
         event.add('minecraft:logs_that_burn', `#afc:${woodType}_logs`)
@@ -23,6 +19,14 @@ const registerAFCItemTags = (event) => {
         event.add('firmalife:stomping_barrels', `afc:wood/stomping_barrel/${woodType}`)
         event.add('firmalife:barrel_presses', `afc:wood/barrel_press/${woodType}`)
 		event.add('tfc:sewing_tables', `afc:wood/sewing_table/${woodType}`)
+		event.add('tfc:scribing_tables', `afc:wood/scribing_table/${woodType}`)
+		event.add('tfc:jar_shelves', `afc:wood/jar_shelf/${woodType}`)
+		event.add('tfc:minecarts', `afc:wood/chest_minecart/${woodType}`)
+		event.add('minecraft:signs', `afc:wood/sign/${woodType}`)
+
+		global.TFC_EQUIPMENT_METALS.forEach(metalType => {
+			event.add('minecraft:hanging_signs', `afc:wood/hanging_sign/${metalType}/${woodType}`)
+		})
     })
 
 	//Hardwood Tags
@@ -107,9 +111,18 @@ const registerAFCItemTags = (event) => {
  * @param {TagEvent.Block} event 
  */
 const registerAFCBlockTags = (event) => {
-	global.AFC_DISABLED_ITEMS.forEach(block => {
-		event.removeAllTagsFrom(block)
+	global.AFC_WOOD_TYPES.forEach(wood => {
+		event.add('minecraft:mineable/axe', `afc:wood/food_shelf/${wood}`)
+		event.add('minecraft:mineable/axe', `afc:wood/hanger/${wood}`)
+		event.add('minecraft:mineable/axe', `afc:wood/jarbnet/${wood}`)
+		event.add('minecraft:mineable/axe', `afc:wood/big_barrel/${wood}`)
+		event.add('minecraft:mineable/axe', `afc:wood/stomping_barrel/${wood}`)
+		event.add('minecraft:mineable/axe', `afc:wood/barrel_press/${wood}`)
+		event.add('minecraft:mineable/axe', `afc:wood/wine_shelf/${wood}`)
 	})
+    global.AFC_SAPLINGS.forEach(tree => {
+        event.add('tfc:can_be_snow_piled', `afc:wood/twig/${tree.sapling}`)
+    })
 
 	event.add("afc:tappable_logs", "tfc:wood/log/ancient_kapok")
 	event.add("afc:tappable_logs", "tfc:wood/log/kapok")

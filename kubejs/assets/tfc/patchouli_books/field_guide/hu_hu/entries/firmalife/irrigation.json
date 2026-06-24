@@ -1,0 +1,28 @@
+{
+	"name": "Öntözés",
+	"category": "tfc:firmalife",
+	"icon": "firmalife:sprinkler",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "A $(thing)locsoló$() egy olyan eszköz mely vizet locsol egy 5x6x5 területen. Onnan tudod, hogy működik, hogy víz részecskék csöpögnek belőle. Locsolók melyek felfele néznek ugyan azt az 5x6x5 területet öntözik."
+		},
+		{
+			"type": "tfc:anvil_recipe",
+			"recipe": "firmalife:anvil/sprinkler",
+			"text": "A locsolót egy $(thing)Réz lemezzel$() készül."
+		},
+		{
+			"title": "Csövezés",
+			"item": "gtceu:copper_tiny_fluid_pipe",
+			"type": "patchouli:spotlight",
+			"text": "A locsolókat be kell kötni egy csőrendszerbe, ami el lássa őket vízzel, ez szükséges a működésükhöz. Ezt úgy érjük, hogy egy $(thing)folyadék cső$() rendszert csatlakoztatunk hozzájuk. A vizet szivattyúzhatod egy $(thing)mechanikus szivattyúval$()."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Rákattinthatsz jobb egérgombbal a csőre egy GregTech vázzal (mint pl.: $(thing)Réz Váz$()), hogy egy síkba kerüljenek a fallal, vagy használj Üvegház csatlakozót. Ezek után közvetlenül tudod csatlakoztatni a locsolóidat a csőrendszeredhez/csövedhez! Egy csavarkulcs segítségével jobb kattintással meg változtathatod a folyadék csöveidnek az irányát és $(thing)üres ellenkező kézzel$() shift+jobb kattintasz akkor egy irányúvá teheted."
+		}
+	],
+	"read_by_default": true,
+	"sortnum": 8
+}

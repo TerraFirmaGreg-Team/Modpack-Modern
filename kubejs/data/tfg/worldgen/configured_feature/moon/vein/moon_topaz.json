@@ -9,6 +9,9 @@
     "min_y": 0,
     "max_y": 120,
     "random_name": "moon_topaz",
+    "project": false,
+    "project_offset": false,
+    "near_lava": false,
     "blocks": [
       {
         "replace": [

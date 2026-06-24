@@ -402,11 +402,11 @@ function registerGTCEuMachineRecipes(event) {
 	], {
 		A: 'gtceu:steel_brick_casing',
 		B: ChemicalHelper.get(TagPrefix.pipeSmallFluid, GTMaterials.TinAlloy, 1),
-		C: '#forge:drill_heads',
+		C: 'tfg:steel_drill_head',
 		D: ChemicalHelper.get(TagPrefix.rod, GTMaterials.WroughtIron, 1),
 		E: ChemicalHelper.get(TagPrefix.screw, GTMaterials.WroughtIron, 1)
 	}).id('gtceu:shaped/steam_rock_breaker_steel')
-	TFGHelpers.registerMaterialInfo('gtceu:hp_steam_rock_crusher', [GTMaterials.WroughtIron, 6.5, GTMaterials.TinAlloy, 2])
+	TFGHelpers.registerMaterialInfo('gtceu:hp_steam_rock_crusher', [GTMaterials.WroughtIron, 10.5, GTMaterials.Steel, 4, GTMaterials.TinAlloy, 2])
 
 	removeMaceratorRecipe(event, 'macerate_hp_steam_miner')
 	event.recipes.gtceu.shaped('gtceu:hp_steam_miner', [
@@ -416,12 +416,12 @@ function registerGTCEuMachineRecipes(event) {
 	], {
 		A: 'gtceu:steel_brick_casing',
 		B: ChemicalHelper.get(TagPrefix.pipeSmallFluid, GTMaterials.TinAlloy, 1),
-		C: '#forge:drill_heads',
+		C: 'tfg:steel_drill_head',
 		D: ChemicalHelper.get(TagPrefix.rod, GTMaterials.Steel, 1),
 		E: ChemicalHelper.get(TagPrefix.plate, GTMaterials.WroughtIron, 1),
 		F: '#gtceu:circuits/ulv'
 	}).id('gtceu:shaped/steam_miner_steel')
-	TFGHelpers.registerMaterialInfo('gtceu:hp_steam_miner', [GTMaterials.WroughtIron, 7, GTMaterials.Steel, 1, GTMaterials.TinAlloy, 2])
+	TFGHelpers.registerMaterialInfo('gtceu:hp_steam_miner', [GTMaterials.WroughtIron, 11, GTMaterials.Steel, 5, GTMaterials.TinAlloy, 2])
 
 	//#endregion
 
@@ -648,7 +648,7 @@ function registerGTCEuMachineRecipes(event) {
 	//#region Long distance pipes
 
 	event.recipes.gtceu.assembler('long_distance_item_pipe')
-		.itemInputs('1x #forge:large_item_pipes/polyvinyl_chloride', '4x #forge:plates/vanadium_steel')
+		.itemInputs('1x #forge:large_item_pipes/polyvinyl_chloride', '4x #forge:plates/stainless_steel')
 		.inputFluids(Fluid.of('gtceu:soldering_alloy', 72))
 		.itemOutputs('32x gtceu:long_distance_item_pipeline')
 		.EUt(GTValues.VA[GTValues.HV])
@@ -656,7 +656,7 @@ function registerGTCEuMachineRecipes(event) {
 		.duration(300)
 
 	event.recipes.gtceu.assembler('long_distance_fluid_pipe')
-		.itemInputs('1x #forge:large_fluid_pipes/vanadium_steel', '4x #forge:plates/polyvinyl_chloride')
+		.itemInputs('1x #forge:large_fluid_pipes/stainless_steel', '4x #forge:plates/polyvinyl_chloride')
 		.inputFluids(Fluid.of('gtceu:soldering_alloy', 72))
 		.itemOutputs('32x gtceu:long_distance_fluid_pipeline')
 		.EUt(GTValues.VA[GTValues.HV])
@@ -664,7 +664,7 @@ function registerGTCEuMachineRecipes(event) {
 		.duration(300)
 
 	event.recipes.gtceu.assembler('long_distance_item_endpoint')
-		.itemInputs('2x #forge:large_item_pipes/polyvinyl_chloride', '8x #forge:plates/vanadium_steel', '2x #forge:gears/stainless_steel')
+		.itemInputs('2x #forge:large_item_pipes/polyvinyl_chloride', '8x #forge:plates/stainless_steel', '2x #forge:gears/stainless_steel')
 		.inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
 		.itemOutputs('2x gtceu:long_distance_item_pipeline_endpoint')
 		.EUt(GTValues.VA[GTValues.HV])
@@ -673,7 +673,7 @@ function registerGTCEuMachineRecipes(event) {
 		.addMaterialInfo(true, true)
 
 	event.recipes.gtceu.assembler('long_distance_fluid_endpoint')
-		.itemInputs('2x #forge:large_fluid_pipes/vanadium_steel', '8x #forge:plates/polyvinyl_chloride', '2x #forge:gears/stainless_steel')
+		.itemInputs('2x #forge:large_fluid_pipes/stainless_steel', '8x #forge:plates/polyvinyl_chloride', '2x #forge:gears/stainless_steel')
 		.inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
 		.itemOutputs('2x gtceu:long_distance_fluid_pipeline_endpoint')
 		.EUt(GTValues.VA[GTValues.HV])

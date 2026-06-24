@@ -1,0 +1,147 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "type": "tfc:fissure",
+  "config": {
+    "wall_state": "tfc:rock/raw/basalt",
+    "fluid_state": "minecraft:lava",
+    "count": 3,
+    "radius": 6,
+    "decoration": {
+      "blocks": [
+        {
+          "replace": [
+            "tfc:rock/raw/rhyolite"
+          ],
+          "with": [
+            {
+              "block": "gtceu:rhyolite_diamond_ore"
+            }
+          ]
+        },
+        {
+          "replace": [
+            "tfc:rock/raw/basalt"
+          ],
+          "with": [
+            {
+              "block": "gtceu:basalt_diamond_ore"
+            }
+          ]
+        },
+        {
+          "replace": [
+            "tfc:rock/raw/andesite"
+          ],
+          "with": [
+            {
+              "block": "gtceu:andesite_diamond_ore"
+            }
+          ]
+        },
+        {
+          "replace": [
+            "tfc:rock/raw/dacite"
+          ],
+          "with": [
+            {
+              "block": "gtceu:dacite_diamond_ore"
+            }
+          ]
+        },
+        {
+          "replace": [
+            "tfc:rock/raw/granite"
+          ],
+          "with": [
+            {
+              "block": "gtceu:granite_diamond_ore"
+            }
+          ]
+        },
+        {
+          "replace": [
+            "tfc:rock/raw/diorite"
+          ],
+          "with": [
+            {
+              "block": "gtceu:diorite_diamond_ore"
+            }
+          ]
+        },
+        {
+          "replace": [
+            "tfc:rock/raw/gabbro"
+          ],
+          "with": [
+            {
+              "block": "gtceu:gabbro_diamond_ore"
+            }
+          ]
+        },
+        {
+          "replace": [
+            "tfc:rock/raw/quartzite"
+          ],
+          "with": [
+            {
+              "block": "gtceu:quartzite_diamond_ore"
+            }
+          ]
+        },
+        {
+          "replace": [
+            "tfc:rock/raw/slate"
+          ],
+          "with": [
+            {
+              "block": "gtceu:slate_diamond_ore"
+            }
+          ]
+        },
+        {
+          "replace": [
+            "tfc:rock/raw/phyllite"
+          ],
+          "with": [
+            {
+              "block": "gtceu:phyllite_diamond_ore"
+            }
+          ]
+        },
+        {
+          "replace": [
+            "tfc:rock/raw/schist"
+          ],
+          "with": [
+            {
+              "block": "gtceu:schist_diamond_ore"
+            }
+          ]
+        },
+        {
+          "replace": [
+            "tfc:rock/raw/gneiss"
+          ],
+          "with": [
+            {
+              "block": "gtceu:gneiss_diamond_ore"
+            }
+          ]
+        },
+        {
+          "replace": [
+            "tfc:rock/raw/marble"
+          ],
+          "with": [
+            {
+              "block": "gtceu:marble_diamond_ore"
+            }
+          ]
+        }
+      ],
+      "radius": 3,
+      "count": 6,
+      "rarity": 3
+    }
+  }
+}

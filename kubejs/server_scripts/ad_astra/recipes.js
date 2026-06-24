@@ -196,14 +196,14 @@ const registerAdAstraRecipes = (event) => {
 		.inputFluids(Fluid.of('minecraft:water', 100))
 		.itemOutputs('#forge:ingots/desh')
 		.duration(400)
-		.EUt(120)
+		.EUt(GTValues.VA[GTValues.HV])
 
 	event.recipes.gtceu.chemical_bath('tfg:desh_cool_down_distilled_water')
 		.itemInputs('#forge:hot_ingots/desh')
 		.inputFluids(Fluid.of('gtceu:distilled_water', 100))
 		.itemOutputs('#forge:ingots/desh')
 		.duration(250)
-		.EUt(120)
+		.EUt(GTValues.VA[GTValues.HV])
 
 	// #endregion
 

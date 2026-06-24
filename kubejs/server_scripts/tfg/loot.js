@@ -62,7 +62,7 @@ function registerTFGLoots(event) {
 					LootEntry.of('tfc:burlap_cloth').when((c) => c.randomChance(0.1)),
 					LootEntry.of('tfc:wool_cloth').when((c) => c.randomChance(0.1)),
 					LootEntry.of('tfc:mortar').when((c) => c.randomChance(0.1)),
-					LootEntry.of('tfc:leather').when((c) => c.randomChance(0.1)),
+					LootEntry.of('minecraft:leather').when((c) => c.randomChance(0.1)),
 					LootEntry.of('chalk:black_chalk').when((c) => c.randomChance(0.1)),
 					LootEntry.of('chalk:red_chalk').when((c) => c.randomChance(0.1)),
 					LootEntry.of('chalk:white_chalk').when((c) => c.randomChance(0.1)),
@@ -87,6 +87,36 @@ function registerTFGLoots(event) {
 	event.addBlockLootModifier('minecraft:campfire')
 		.removeLoot(Ingredient.all)
 		.addLoot('minecraft:campfire')
+
+	const LARGE_NESTS = [
+		'tfg:large_nest_box',
+		'tfg:large_nest_box_warped'
+	]
+	LARGE_NESTS.forEach(nest => {
+		event.addBlockLootModifier(`${nest}`)
+			.removeLoot(`${nest}`)
+			.customCondition({
+				block: `${nest}`,
+				condition: "minecraft:block_state_property",
+				properties: {
+					nest_part: "0"
+				}
+			})
+			.addLoot(`${nest}`)
+	})
+	
+
+	const ASPHALT_ROAD_BLOCKS = [
+		'tfg:asphalt_road',
+		'tfg:asphalt_road_hot',
+		'tfg:asphalt_road_slab',
+		'tfg:asphalt_road_stairs'
+	]
+	ASPHALT_ROAD_BLOCKS.forEach(block => {
+		event.addBlockLootModifier(block)
+			.removeLoot(Ingredient.all)
+			.addLoot('tfg:asphalt_rubble')
+	})
 
 	//#endregion
 
@@ -145,12 +175,20 @@ function registerTFGLoots(event) {
 		event.addBlockLootModifier(id)
 			.addLoot(id)
 	})
-
 	global.AD_ASTRA_WOOD.forEach(wood => {
 		const id = `everycomp:c/ad_astra/${wood.name}_window_pane`
 		event.addBlockLootModifier(id)
 			.addLoot(id)
 	})
+	global.WAB_WOOD.forEach(wood => {
+		const id = `everycomp:c/wan_ancient_beasts/${wood.name}_window_pane`
+		event.addBlockLootModifier(id)
+			.addLoot(id)
+	})
+	event.addBlockLootModifier('everycomp:c/domum_ornamentum/cactus_window_pane')
+			.addLoot('everycomp:c/domum_ornamentum/cactus_window_pane')
+	event.addBlockLootModifier('everycomp:c/domum_ornamentum/cactus_extra_window_pane')
+			.addLoot('everycomp:c/domum_ornamentum/cactus_extra_window_pane')
 
 	// Bonus animal drops with butchery knives
 
@@ -165,8 +203,58 @@ function registerTFGLoots(event) {
 	event.addEntityLootModifier('tfg:sniffer')
 		.matchMainHand('#forge:tools/butchery_knives')
 		.addWeightedLoot([8, 10], ['tfg:food/raw_sniffer_beef'])
+		.addWeightedLoot([1, 2], ['tfc:blubber'])
 
 	event.addEntityLootModifier('tfg:wraptor')
 		.matchMainHand('#forge:tools/butchery_knives')
 		.addWeightedLoot([2, 3], ['tfg:food/raw_wraptor'])
+
+	// Leopard seal normal loot table
+	event.addEntityLootModifier('tfg:leopard_seal')
+		.addWeightedLoot([3, 6], ['tfc:blubber'])
+		.addWeightedLoot([1, 4], ['minecraft:bone'])
+		.addLoot(LootEntry.of('tfc:medium_raw_hide', 1))
+	
+	// Leopard seal extra with butchery knife
+	event.addEntityLootModifier('tfg:leopard_seal')
+		.matchMainHand('#forge:tools/butchery_knives')
+		.addWeightedLoot([1, 3], ['tfc:blubber'])
+
+	// Bison normal loot table
+	event.addEntityLootModifier('tfg:bison')
+		.addWeightedLoot([12, 20], ['tfg:food/raw_bison_meat'])
+		.addWeightedLoot([7, 10], ['minecraft:bone'])
+		.addLoot(LootEntry.of('tfc:large_raw_hide', 1))
+		.addWeightedLoot([1, 2], ['tfc:blubber'])
+		.addSequenceLoot(LootEntry.of('waterflasks:bladder').when(c => c.randomChance(0.5)))
+		.addLoot(LootEntry.of('firmalife:rennet', 4))
+	
+	// Bison drop extra with butchery knife
+	event.addEntityLootModifier('tfg:bison')
+		.matchMainHand('#forge:tools/butchery_knives')
+		.addWeightedLoot([4, 6], ['tfg:food/raw_bison_meat'])
+		.addWeightedLoot([0, 1], ['tfc:blubber'])
+
+	event.addEntityLootModifier('tfg:lemming')
+		.addWeightedLoot([0, 1], ['minecraft:bone'])
+		.addWeightedLoot([0, 1], ['tfc:small_raw_hide'])
+	
+	event.addEntityLootModifier('tfg:jerboa')
+		.addWeightedLoot([0, 1], ['minecraft:bone'])
+		.addWeightedLoot([0, 1], ['tfc:small_raw_hide'])
+	
+	event.addEntityLootModifier('tfg:mongoose')
+		.addWeightedLoot([1, 3], ['minecraft:bone'])
+		.addLoot(LootEntry.of('tfc:small_raw_hide', 1))
+
+	// Tamed Fox normal loot table
+	event.addEntityLootModifier('tfg:fox')
+		.addLoot(LootEntry.of('tfc:small_raw_hide', 1))
+		.addLoot(LootEntry.of('minecraft:bone', 1))
+		.addWeightedLoot([4, 7], ['tfc:food/fox'])
+
+	// Tamed Fox drop extra with butchery knife
+	event.addEntityLootModifier('tfg:fox')
+		.matchMainHand('#forge:tools/butchery_knives')
+		.addWeightedLoot([2, 4], ['tfc:food/fox'])
 };

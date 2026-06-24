@@ -16,8 +16,11 @@ function registerTFGRockBlocks(event) {
 				.soundType(rock.sound ?? 'stone')
 				.mapColor(rock.mapColor)
 				.tagBlock('minecraft:mineable/pickaxe')
+				.requiresTool(true)
 				.fullBlock(true)
 				.opaque(true)
+				.hardness(5)
+				.resistance(8)
 
 			if (rock.tfcTag != null) {
 				block.tagBoth(rock.tfcTag);
@@ -31,8 +34,11 @@ function registerTFGRockBlocks(event) {
 					.soundType(rock.sound ?? 'stone')
 					.mapColor(rock.mapColor)
 					.tagBlock('minecraft:mineable/pickaxe')
+					.requiresTool(true)
 					.fullBlock(true)
 					.opaque(true)
+					.hardness(5)
+					.resistance(8)
 
 				if (rock.tfcTag != null) {
 					block.tagBoth(rock.tfcTag);
@@ -54,9 +60,12 @@ function registerTFGRockBlocks(event) {
 					.soundType(rock.sound ?? 'stone')
 					.mapColor(rock.mapColor)
 					.tagBlock('minecraft:mineable/pickaxe')
+					.requiresTool(true)
 					.fullBlock(true)
 					.opaque(true)
 					.naturallySupported(false)
+					.hardness(5)
+					.resistance(8)
 
 				if (rock.tfcTag != null) {
 					block.tagBoth(rock.tfcTag);
@@ -71,8 +80,11 @@ function registerTFGRockBlocks(event) {
 						.mapColor(rock.mapColor)
 						.tagBoth(`tfg:rock_${shape}s`)
 						.tagBlock('minecraft:mineable/pickaxe')
+						.requiresTool(true)
 						.fullBlock(true)
 						.opaque(true)
+						.hardness(5)
+						.resistance(8)
 
 					if (rock.tfcTag != null) {
 						block.tagBoth(rock.tfcTag);
@@ -115,8 +127,11 @@ function registerTFGRockBlocks(event) {
 				.tagBoth('tfc:rock/hardened')
 				.mapColor(rock.mapColor)
 				.tagBlock('minecraft:mineable/pickaxe')
+				.requiresTool(true)
 				.fullBlock(true)
 				.opaque(true)
+				.hardness(5)
+				.resistance(8)
 
 			if (rock.tfcTag != null) {
 				hardened.tagBoth(rock.tfcTag);
@@ -134,7 +149,6 @@ function registerTFGRockBlocks(event) {
 				.tagBlock('tfc:loose_rocks')
 				.tagItem('tfc:any_knapping')
 				.tagItem('tfc:rock_knapping')
-				.tagBoth(rock.tfcTag)
 				.tagItem("rnr:loose_rock_items")
 
 			if (rock.tfcTag != null) {
@@ -155,6 +169,7 @@ function registerTFGRockBlocks(event) {
 				.soundType(rock.sound ?? 'stone')
 				.mapColor(rock.mapColor)
 				.tagBlock('minecraft:mineable/pickaxe')
+				.requiresTool(true)
 				.hardness(0.8)
 				.resistance(0.8)
 				.requiresTool(true)
@@ -190,7 +205,9 @@ function registerTFGRockBlocks(event) {
 				.soundType(rock.sound ?? 'stone')
 				.textureAll(rock.bricks.texture ?? rock.bricks.block.replace(/:/g, ":block/"))
 				.mapColor(rock.mapColor)
-				.tagBoth('tfg:rock/aqueducts')
+				.tagBoth('tfc:rock/aqueducts')
+				.tagBlock('minecraft:mineable/pickaxe')
+				.requiresTool(true)
 
 			if (rock.tfcTag != null) {
 				aqueduct.tagBoth(rock.tfcTag);
@@ -229,6 +246,7 @@ function registerTFGRockBlocks(event) {
 				.soundType(rock.sound ?? 'stone')
 				.mapColor(rock.mapColor)
 				.tagBlock('minecraft:mineable/pickaxe')
+				.requiresTool(true)
 				.fullBlock(true)
 				.opaque(true)
 
@@ -237,52 +255,4 @@ function registerTFGRockBlocks(event) {
 			}
 		}
 	}
-
-
-	// #region Sandstone
-	event.create('tfg:rock/smooth_red_sandstone_wall', 'wall')
-		.soundType('stone')
-		.textureAll('minecraft:block/red_sandstone_top')
-		.mapColor('teracotta_red')
-		.tagBlock('minecraft:mineable/pickaxe')
-		.fullBlock(true)
-		.opaque(true)
-
-	event.create('tfg:rock/cut_red_sandstone_stairs', 'stairs')
-		.soundType('stone')
-		.textureAll('minecraft:block/cut_red_sandstone')
-		.mapColor('teracotta_red')
-		.tagBlock('minecraft:mineable/pickaxe')
-		.fullBlock(true)
-		.opaque(true)
-		
-	event.create('tfg:rock/cut_red_sandstone_wall', 'wall')
-		.soundType('stone')
-		.textureAll('minecraft:block/cut_red_sandstone')
-		.mapColor('teracotta_red')
-		.tagBlock('minecraft:mineable/pickaxe')
-		.fullBlock(true)
-		.opaque(true)
-
-	event.create('tfg:rock/bricks_venus_sandstone_wall', 'wall')
-		.soundType('stone')
-		.textureAll('ad_astra:block/venus_sandstone_bricks')
-		.mapColor(global.BIG_ROCK_TABLE.venus_stone.mapColor)
-		.tagBlock('minecraft:mineable/pickaxe')
-		.fullBlock(true)
-		.opaque(true)
-
-	SHAPES.forEach(shape => {
-		event.create(`tfg:rock/cracked_bricks_venus_sandstone_${shape}`, shape.replace(/stair/g, 'stairs'))
-			.soundType(global.BIG_ROCK_TABLE.venus_stone.sound)
-			.textureAll('ad_astra:block/cracked_venus_sandstone_bricks')
-			.tagBoth(`tfg:brick_${shape}s`)
-			.mapColor(global.BIG_ROCK_TABLE.venus_stone.mapColor)
-			.tagBlock('minecraft:mineable/pickaxe')
-			.fullBlock(true)
-			.opaque(true)
-	})
-
-	// #endregion Sandstone
-
 }

@@ -5,42 +5,14 @@
  * @param {Internal.RecipesEventJS} event 
  */
 function registerTFGTemporaryRecipes(event) {
+
+	event.shapeless('tfc:ore/bituminous_coal', 'minecraft:coal')
+	event.shapeless('tfc:ore/bituminous_coal', 'gtceu:crushed_coal_ore')
+	event.shapeless('tfc:ore/bituminous_coal', 'gtceu:purified_coal_ore')
+	event.shapeless('tfc:ore/bituminous_coal', 'gtceu:refined_coal_ore')
+	event.shapeless('tfc:ore/bituminous_coal', 'gtceu:impure_coal_dust')
+	event.shapeless('tfc:ore/bituminous_coal', 'gtceu:pure_coal_dust')
 	
-	event.shapeless('vintageimprovements:belt_grinder', 'vintageimprovements:lathe')
-
-	event.shapeless('tfg:ostrum_linear_accelerator', 'gtceu:ostrum_linear_accelerator')
-	event.shapeless('tfg:steam_bloomery', 'gtceu:steam_bloomery')
-
-	event.shapeless('greate:rose_quartz_dust', 'gtceu:rose_quartz_dust')
-	event.shapeless('greate:tiny_rose_quartz_dust', 'gtceu:tiny_rose_quartz_dust')
-	event.shapeless('greate:small_rose_quartz_dust', 'gtceu:small_rose_quartz_dust')
-	event.shapeless('greate:poor_raw_rose_quartz', 'gtceu:poor_raw_rose_quartz')
-	event.shapeless('greate:raw_rose_quartz', 'gtceu:raw_rose_quartz')
-	event.shapeless('greate:rich_raw_rose_quartz', 'gtceu:rich_raw_rose_quartz')
-	event.shapeless('greate:chipped_rose_quartz_gem', 'gtceu:chipped_rose_quartz_gem')
-	event.shapeless('greate:flawed_rose_quartz_gem', 'gtceu:flawed_rose_quartz_gem')
-	event.shapeless('greate:flawless_rose_quartz_gem', 'gtceu:flawless_rose_quartz_gem')
-	event.shapeless('greate:exquisite_rose_quartz_gem', 'gtceu:exquisite_rose_quartz_gem')
-	event.shapeless('greate:pure_rose_quartz_dust', 'gtceu:pure_rose_quartz_dust')
-	event.shapeless('greate:impure_rose_quartz_dust', 'gtceu:impure_rose_quartz_dust')
-	event.shapeless('greate:purified_rose_quartz_ore', 'gtceu:purified_rose_quartz_ore')
-	event.shapeless('greate:crushed_rose_quartz_ore', 'gtceu:crushed_rose_quartz_ore')
-	event.shapeless('greate:refined_rose_quartz_ore', 'gtceu:refined_rose_quartz_ore')
-	event.shapeless('greate:rose_quartz_lens', 'gtceu:rose_quartz_lens')
-	event.shapeless('greate:rose_quartz_plate', 'gtceu:rose_quartz_plate')
-
-	event.shapeless('tfg:igneous_felsic_dust', 'gtceu:granite_dust')
-	event.shapeless('tfg:igneous_intermediate_dust', 'gtceu:diorite_dust')
-	event.shapeless('tfg:igneous_intermediate_dust', 'gtceu:andesite_dust')
-	event.shapeless('tfg:metamorphic_dust', 'gtceu:marble_dust')
-	event.shapeless('tfg:metamorphic_dust', 'gtceu:deepslate_dust')
-	event.shapeless('tfg:igneous_ultramafic_dust', 'gtceu:blackstone_dust')
-	event.shapeless('tfg:igneous_felsic_dust', 'gtceu:granite_red_dust')
-	event.shapeless('tfg:igneous_mafic_dust', 'gtceu:basalt_dust')
-
-	// TODO: remove nether/ender air in 0.12
-
-
 	// Temporary recipes until gregtech fixes its pipe problem with .setIgnored()
 	const broken_pipes = [
 		GTMaterials.Copper,

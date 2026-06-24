@@ -433,7 +433,7 @@
 			y: -3.5d
 		}
 	]
-	order_index: 2
+	order_index: 1
 	quest_links: [{
 		id: "704C995D4B6CE874"
 		linked_quest: "46C92B938921A0AC"
@@ -646,10 +646,7 @@
 			y: 5.0d
 		}
 		{
-			dependencies: [
-				"0A92F5C4BB6AF972"
-				"2B84F34BFA37C828"
-			]
+			dependencies: ["2B84F34BFA37C828"]
 			description: ["{quests.tfg_tips.rowboat_materials.desc}"]
 			guide_page: "tfc:field_guide tfc:firmaciv/rowboat"
 			id: "3DF4F4848B231980"
@@ -1090,7 +1087,11 @@
 			y: -1.5d
 		}
 		{
-			dependencies: ["60497014785301EB"]
+			dependencies: [
+				"60497014785301EB"
+				"3C173357029AB649"
+			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.glider.desc}"]
 			id: "7EE13BE102F323F3"
 			subtitle: "{quests.tfg_tips.glider.subtitle}"
@@ -1159,11 +1160,6 @@
 			subtitle: "{quests.tfg_tips.aircraft_upgrades.subtitle}"
 			tasks: [
 				{
-					id: "6DF2BE113934991F"
-					item: "immersive_aircraft:gyroscope"
-					type: "item"
-				}
-				{
 					id: "3825ED5E282B43EB"
 					item: "immersive_aircraft:sturdy_pipes"
 					type: "item"
@@ -1176,6 +1172,21 @@
 				{
 					id: "58C9E47E9F8301E6"
 					item: "immersive_aircraft:eco_engine"
+					type: "item"
+				}
+				{
+					id: "6DF2BE113934991F"
+					item: "immersive_aircraft:gyroscope"
+					type: "item"
+				}
+				{
+					id: "7C1F239C4E82212D"
+					item: "immersive_aircraft:gyroscope_dials"
+					type: "item"
+				}
+				{
+					id: "0AD1785F4FAFE3CB"
+					item: "immersive_aircraft:gyroscope_hud"
 					type: "item"
 				}
 			]
@@ -1274,7 +1285,10 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["62FD3E7A836D2E0A"]
+			dependencies: [
+				"62FD3E7A836D2E0A"
+				"174DA15847665CF8"
+			]
 			description: ["{quests.tfg_tips.airship.desc}"]
 			id: "598BD589D3C3057A"
 			subtitle: "{quests.tfg_tips.airship.subtitle}"
@@ -1288,7 +1302,10 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["62FD3E7A836D2E0A"]
+			dependencies: [
+				"62FD3E7A836D2E0A"
+				"04DE7C58F20B535A"
+			]
 			description: ["{quests.tfg_tips.quadrocopter.desc}"]
 			id: "5D7E9840A5A7AD7E"
 			subtitle: "{quests.tfg_tips.quadrocopter.subtitle}"
@@ -1489,6 +1506,7 @@
 			y: -2.6803571428571473d
 		}
 		{
+			dependencies: ["174DA15847665CF8"]
 			description: ["{quests.tfg_tips.hiking_boots.desc}"]
 			guide_page: "tfc:field_guide tfc:sns/safety_toe_hiking_boots"
 			id: "598CA763D195C84E"

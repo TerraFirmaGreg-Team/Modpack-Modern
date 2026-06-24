@@ -1,0 +1,29 @@
+{
+	"type": "tfg:custom_spring",
+	"config": {
+		"wall_state": "tfg:gilsonite",
+		"fluid_state": "tfg:fluid/muddy_water",
+		"radius": 7,
+		"decoration": {
+			"blocks": [
+				{
+					"replace": [
+						"tfg:gilsonite"
+					],
+					"with": [
+						{
+							"block": "gtceu:black_sand_oilsands_ore"
+						}
+					]
+				}
+			],
+			"radius": 3,
+			"count": 5,
+			"rarity": 3,
+			"wall_state": "tfg:gilsonite",
+			"fluid_state": "tfg:fluid/muddy_water",
+			"min_pieces": 2,
+			"max_pieces": 4
+		}
+	}
+}

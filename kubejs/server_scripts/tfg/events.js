@@ -22,13 +22,15 @@ global.MINECRAFT_DYE_NAMES.forEach(color => {
 	})
 });
 
-
 BlockEvents.rightClicked(event => {
 	const { block, server, player } = event
 	if (block.id !== 'tfg:decorative_vase') return
 	server.runCommandSilent(`playsound tfc:block.quern.drag block ${player.username} ${block.x} ${block.y} ${block.z} 0.3 2.0 0.1`)
 });
 //#endregion
+
+
+// Swap armor stand modes
 
 BlockEvents.rightClicked(event => {
 	let item = event.item
@@ -55,3 +57,42 @@ function getTFGPersistentDataRoot(player) {
 	return player.persistentData.getCompound("tfg:custom_data")
 }
 
+
+// Display messages in chat when GT miners are placed
+const TFGConfig = Java.loadClass("su.terrafirmagreg.core.config.TFGConfig");
+
+const miners = [
+	'gtceu:hp_steam_miner',
+	'gtceu:lv_miner',
+	'gtceu:mv_miner',
+	'gtceu:hv_miner'
+];
+
+miners.forEach(miner => {
+	BlockEvents.placed(miner, event => {
+		const { level, player } = event;
+		if (!player || !level)
+			return;
+
+		if (level.dimension === "minecraft:the_nether" && TFGConfig.SERVER.enableBeneathMiningRestrictions.get())
+		{
+			player.tell(Text.translate("tfg.clientmessage.nether_miner_placed", TFGConfig.SERVER.disabledBeneathMiningYLevel.get()));
+		}
+		else if ((level.dimension === "ad_astra:venus" || level.dimension === "ad_astra:mercury")
+			&& TFGConfig.SERVER.enableHotPlanetMiningRestrictions.get())
+		{
+			player.tell(Text.translate("tfg.clientmessage.hot_planet_miner_placed"));
+		}
+	})
+})
+
+// Spawn spiders when an egg sack breaks
+BlockEvents.broken("tfg:spider_sac", event => {
+	const { block, level } = event
+
+	for (let i = 0; i < 3; i++) {
+		let spider = level.createEntity("endermanoverhaul:scarab");
+		spider.setPosition(block.x + 0.4 + (i / 5), block.y + 0.4 + (i / 5), block.z + 0.4 + (i / 5))
+		spider.spawn();
+	}
+})

@@ -1,0 +1,58 @@
+{
+  "name": "鋪路車",
+  "category": "tfc:roadsandroofs",
+  "icon": "tfg:rnr_plow",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)鋪路車$()專門用來高效鋪設路面的推車。填入路面材料與$(thing)碎石基層$()來修築道路。推車也能為已有基層的方塊完成填料"
+    },
+    {
+      "type": "patchouli:image",
+      "title": "鋪路車",
+      "images": [
+        "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart.png"
+      ],
+      "border": true
+    },
+    {
+      "type": "patchouli:image",
+      "title": "寬度調整滑塊",
+      "images": [
+        "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_gui_width.png"
+      ],
+      "border": true,
+      "text": "允許調整鋪設的路徑寬度"
+    },
+    {
+      "type": "patchouli:image",
+      "title": "可變的路寬",
+      "images": [
+        "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_path_width.png"
+      ],
+      "border": true
+    },
+    {
+      "type": "patchouli:image",
+      "title": "隨機模式",
+      "images": [
+        "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_gui_random.png"
+      ],
+      "border": true,
+      "text": "推車有隨機舖設材料的模式。"
+    },
+    {
+      "type": "patchouli:image",
+      "title": "隨機材料路徑",
+      "images": [
+        "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_path_random.png"
+      ],
+      "border": true
+    }
+  ],
+  "read_by_default": true,
+  "extra_recipe_mappings": {
+    "tfg:rnr_plow": 0
+  },
+  "sortnum": 23
+}

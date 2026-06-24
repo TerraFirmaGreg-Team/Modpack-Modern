@@ -12,15 +12,15 @@
 			"type": "patchouli:text",
 			"text": "In addition to finding wild crops, seeds can also be produced from existing crops. When a fully mature crop dies - either by weather, or leaving it to rot - it will go to seed, dropping more seeds that can be used to grow even more crops next season."
 		},
-        {
-            "type": "patchouli:text",
+		{
+			"type": "patchouli:text",
 			"title": "Contents",
-            "text": "$(li)$(l:tfc:mechanics/crops#barley)Barley$()$(li)$(l:tfc:mechanics/crops#beet)Beet$()$(li)$(l:tfc:mechanics/crops#cabbage)Cabbage$()$(li)$(l:tfc:mechanics/crops#canola)Canola$()$(li)$(l:tfc:mechanics/crops#carrot)Carrot$()$(li)$(l:tfc:mechanics/crops#flax)Flax$()$(li)$(l:tfc:mechanics/crops#garlic)Garlic$()$(li)$(l:tfc:mechanics/crops#green_bean)Green Bean$()$(li)$(l:tfc:mechanics/crops#jute)Jute$()$(li)$(l:tfc:mechanics/crops#maize)Maize$()$(li)$(l:tfc:mechanics/crops#melon)Melon$()$(li)$(l:tfc:mechanics/crops#oat)Oat$()$(li)$(l:tfc:mechanics/crops#onion)Onion$()"
-        },
-        {
-            "type": "patchouli:text",
-            "text": "$(li)$(l:tfc:mechanics/crops#papyrus)Papyrus$()$(li)$(l:tfc:mechanics/crops#potato)Potato$()$(li)$(l:tfc:mechanics/crops#pumpkin)Pumpkin$()$(li)$(l:tfc:mechanics/crops#red_bell_pepper)Red Bell Pepper$()$(li)$(l:tfc:mechanics/crops#rice)Rice$()$(li)$(l:tfc:mechanics/crops#rye)Rye$()$(li)$(l:tfc:mechanics/crops#soybean)Soybean$()$(li)$(l:tfc:mechanics/crops#squash)Squash$()$(li)$(l:tfc:mechanics/crops#sugarcane)Sugarcane$()$(li)$(l:tfc:mechanics/crops#sunflower)Sunflower$()$(li)$(l:tfc:mechanics/crops#tomatoes)Tomato$()$(li)$(l:tfc:mechanics/crops#wheat)Wheat$()$(li)$(l:tfc:mechanics/crops#yellow_bell_pepper)Yellow Bell Pepper$()"
-        },
+			"text": "$(li)$(l:tfc:mechanics/crops#barley)Barley$()$(li)$(l:tfc:mechanics/crops#beet)Beet$()$(li)$(l:tfc:mechanics/crops#cabbage)Cabbage$()$(li)$(l:tfc:mechanics/crops#canola)Canola$()$(li)$(l:tfc:mechanics/crops#carrot)Carrot$()$(li)$(l:tfc:mechanics/crops#cucumber)Cucumber$()$(li)$(l:tfc:mechanics/crops#flax)Flax$()$(li)$(l:tfc:mechanics/crops#garlic)Garlic$()$(li)$(l:tfc:mechanics/crops#green_bean)Green Bean$()$(li)$(l:tfc:mechanics/crops#jute)Jute$()$(li)$(l:tfc:mechanics/crops#lentil)Lentil$()$(li)$(l:tfc:mechanics/crops#maize)Maize$()$(li)$(l:tfc:mechanics/crops#melon)Melon$()"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(li)$(l:tfc:mechanics/crops#oat)Oat$()$(li)$(l:tfc:mechanics/crops#onion)Onion$()$(li)$(l:tfc:mechanics/crops#papyrus)Papyrus$()$(li)$(l:tfc:mechanics/crops#potato)Potato$()$(li)$(l:tfc:mechanics/crops#pumpkin)Pumpkin$()$(li)$(l:tfc:mechanics/crops#radish)Radish$()$(li)$(l:tfc:mechanics/crops#red_bell_pepper)Red Bell Pepper$()$(li)$(l:tfc:mechanics/crops#rice)Rice$()$(li)$(l:tfc:mechanics/crops#rye)Rye$()$(li)$(l:tfc:mechanics/crops#soybean)Soybean$()$(li)$(l:tfc:mechanics/crops#squash)Squash$()$(li)$(l:tfc:mechanics/crops#sugarcane)Sugarcane$()$(li)$(l:tfc:mechanics/crops#sunflower)Sunflower$()$(li)$(l:tfc:mechanics/crops#tomatoes)Tomato$()$(li)$(l:tfc:mechanics/crops#wheat)Wheat$()$(li)$(l:tfc:mechanics/crops#yellow_bell_pepper)Yellow Bell Pepper$()"
+		},
 		{
 			"type": "tfc:rock_knapping_recipe",
 			"recipes": [
@@ -30,7 +30,7 @@
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "tfc:crafting/stone/hoe_sedimentary",
+			"recipe": "gtceu:shaped/hoe_stone",
 			"text": "Once the hoe head is knapped, it can be crafted into a Hoe.$(br2)Hoes function as in Vanilla, by right clicking dirt blocks to turn them into $(thing)Farmland$(). They can also be used to convert $(thing)Rooted Dirt$() into $(thing)Dirt$()."
 		},
 		{
@@ -3782,57 +3782,432 @@
 				}
 			],
 			"text": "$(thing)Wild Flax$() grows between -5 and 23C, and 175 to 475mm of rainfall."
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "cucumber",
+			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 5 - 40 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 70 - 100 %$(br)$(bold)Nutrient$(): Nitrogen$(br2)Cucumbers are a two block tall crop. Cucumber seeds can be planted on farmland, will grow two blocks tall, and will produce $(item)Cucumbers$() which give $(thing)Vegetable$() nutrition.$(br)$(bold)Cucumbers need a stick to fully mature.$()",
+			"title": "Cucumber"
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "minecraft:air",
+						"Y": "tfg:cucumber[age=0,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "minecraft:air",
+						"Y": "tfg:cucumber[age=1,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfg:cucumber[age=2,part=top]",
+						"Y": "tfg:cucumber[age=2,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfg:cucumber[age=3,part=top]",
+						"Y": "tfg:cucumber[age=3,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfg:cucumber[age=4,part=top]",
+						"Y": "tfg:cucumber[age=4,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfg:cucumber[age=5,part=top]",
+						"Y": "tfg:cucumber[age=5,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				}
+			],
+			"text": "$(thing)Wild Cucumber$() grows between 15 and 40C, and 350 to 500mm of rainfall.",
+			"enable_visualize": false
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "radish",
+			"title": "Radish",
+			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -20 - 20 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 15 - 65 %$(br)$(bold)Nutrient$(): Potassium$(br2)Radishes can be eaten for $(thing)Vegetable$() nutrition. If you need a plant that can survive in colder temperatures, radishes are a good choice."
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:radish[age=0]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:radish[age=1]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:radish[age=2]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:radish[age=3]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:radish[age=4]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:radish[age=5]",
+						"Z": "tfc:farmland/loam"
+					}
+				}
+			],
+			"text": "$(thing)Wild Radishes$() grow between -16 and 4C, and 75 to 325mm of rainfall.",
+			"enable_visualize": false
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "lentil",
+			"title": "Lentil",
+			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -20 - 18 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 50 - 100 %$(br)$(bold)Nutrient$(): Phosphorus$(br2)Lentils can be eaten for $(thing)Vegetable$() nutrition, although it is recommended to cook them first. Lentils are another good choice for farming in colder climates."
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:lentil[age=0]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:lentil[age=1]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:lentil[age=2]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:lentil[age=3]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:lentil[age=4]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:lentil[age=5]",
+						"Z": "tfc:farmland/loam"
+					}
+				}
+			],
+			"text": "$(thing)Wild Lentils$() grow between -18 and 2C, and 250 to 425mm of rainfall.",
+			"enable_visualize": false
 		}
 	],
 	"read_by_default": true,
 	"extra_recipe_mappings": {
-		"tfc:seeds/barley": 6,
-		"tfc:food/barley": 6,
-		"tfc:seeds/oat": 8,
-		"tfc:food/oat": 8,
-		"tfc:seeds/rye": 10,
-		"tfc:food/rye": 10,
-		"tfc:seeds/maize": 12,
-		"tfc:food/maize": 12,
-		"tfc:seeds/wheat": 14,
-		"tfc:food/wheat": 14,
-		"tfc:seeds/rice": 16,
-		"tfc:food/rice": 16,
-		"tfc:seeds/beet": 18,
-		"tfc:food/beet": 18,
-		"tfc:seeds/cabbage": 20,
-		"tfc:food/cabbage": 20,
-		"tfc:seeds/carrot": 22,
-		"tfc:food/carrot": 22,
-		"tfc:seeds/garlic": 24,
-		"tfc:food/garlic": 24,
-		"tfc:seeds/green_bean": 26,
-		"tfc:food/green_bean": 26,
-		"tfc:seeds/potato": 28,
-		"tfc:food/potato": 28,
-		"tfc:seeds/pumpkin": 30,
-		"tfc:seeds/melon": 32,
-		"tfc:seeds/red_bell_pepper": 34,
-		"tfc:seeds/yellow_bell_pepper": 36,
-		"tfc:seeds/onion": 38,
-		"tfc:food/onion": 38,
-		"tfc:seeds/soybean": 40,
-		"tfc:food/soybean": 40,
-		"tfc:seeds/squash": 42,
-		"tfc:food/squash": 42,
-		"tfc:seeds/sugarcane": 44,
-		"tfc:food/sugarcane": 44,
-		"tfc:seeds/tomato": 46,
-		"tfc:food/tomato": 46,
-		"tfc:seeds/jute": 48,
-		"tfc:jute": 48,
-		"tfc:seeds/papyrus": 50,
-		"tfc:papyrus": 50,
-		"tfg:sunflower_seeds": 52,
-		"tfg:sunflower_product": 52,
-		"tfg:rapeseed_seeds": 54,
-		"tfg:rapeseed_product": 54,
-		"tfg:flax_seeds": 56,
-		"tfg:flax_product": 56
+		"tfc:seeds/barley": 8,
+		"tfc:food/barley": 8,
+		"tfc:seeds/oat": 10,
+		"tfc:food/oat": 10,
+		"tfc:seeds/rye": 12,
+		"tfc:food/rye": 12,
+		"tfc:seeds/maize": 14,
+		"tfc:food/maize": 14,
+		"tfc:seeds/wheat": 16,
+		"tfc:food/wheat": 16,
+		"tfc:seeds/rice": 18,
+		"tfc:food/rice": 18,
+		"tfc:seeds/beet": 20,
+		"tfc:food/beet": 20,
+		"tfc:seeds/cabbage": 22,
+		"tfc:food/cabbage": 22,
+		"tfc:seeds/carrot": 24,
+		"tfc:food/carrot": 24,
+		"tfc:seeds/garlic": 26,
+		"tfc:food/garlic": 26,
+		"tfc:seeds/green_bean": 28,
+		"tfc:food/green_bean": 28,
+		"tfc:seeds/potato": 30,
+		"tfc:food/potato": 30,
+		"tfc:seeds/pumpkin": 32,
+		"tfc:seeds/melon": 34,
+		"tfc:seeds/red_bell_pepper": 36,
+		"tfc:seeds/yellow_bell_pepper": 38,
+		"tfc:seeds/onion": 40,
+		"tfc:food/onion": 40,
+		"tfc:seeds/soybean": 42,
+		"tfc:food/soybean": 42,
+		"tfc:seeds/squash": 44,
+		"tfc:food/squash": 44,
+		"tfc:seeds/sugarcane": 46,
+		"tfc:food/sugarcane": 46,
+		"tfc:seeds/tomato": 48,
+		"tfc:food/tomato": 48,
+		"tfc:seeds/jute": 50,
+		"tfc:jute": 50,
+		"tfc:seeds/papyrus": 52,
+		"tfc:papyrus": 52,
+		"tfg:sunflower_seeds": 54,
+		"tfg:sunflower_product": 54,
+		"tfg:rapeseed_seeds": 56,
+		"tfg:rapeseed_product": 56,
+		"tfg:flax_seeds": 58,
+		"tfg:flax_product": 58,
+		"tfg:cucumber_seeds": 60,
+		"tfg:cucumber_product": 60,
+		"tfg:radish_seeds": 62,
+		"tfg:radish_product": 62,
+		"tfg:lentil_seeds": 64,
+		"tfg:lentil_product": 64
 	}
 }

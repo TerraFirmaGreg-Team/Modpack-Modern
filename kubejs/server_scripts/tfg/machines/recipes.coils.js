@@ -18,9 +18,36 @@ function registerTFGCoilRecipes(event) {
 		.itemOutputs('#forge:dusts/magnesia')
 		.duration(20 * 20)
 
+	event.recipes.gtceu.coke_oven('tfg:magnesia_from_fullers_earth')
+		.itemInputs('13x #forge:dusts/fullers_earth')
+		.itemOutputs('#forge:dusts/magnesia')
+		.duration(20 * 40)
+
+	event.recipes.gtceu.coke_oven('tfg:magnesia_from_asbestos')
+		.itemInputs('6x #forge:dusts/asbestos')
+		.itemOutputs('#forge:dusts/magnesia')
+		.duration(20 * 40)
+
+	event.recipes.gtceu.coke_oven('tfg:magnesia_from_soapstone')
+		.itemInputs('7x #forge:dusts/soapstone')
+		.itemOutputs('#forge:dusts/magnesia')
+		.duration(20 * 40)
+
+	event.recipes.gtceu.coke_oven('tfg:magnesia_from_phlogopite')
+		.itemInputs('3x #forge:dusts/phlogopite')
+		.itemOutputs('#forge:dusts/magnesia')
+		.duration(20 * 40)
+
 	event.recipes.gtceu.pyrolyse_oven('tfg:magnesia')
 		.itemInputs('#forge:dusts/magnesium_hydroxide')
 		.itemOutputs('#forge:dusts/magnesia')
+		.duration(20 * 20)
+		.EUt(GTValues.VHA[GTValues.MV])
+
+	event.recipes.gtceu.pyrolyse_oven('tfg:magnesia_from_phlogopite')
+		.itemInputs('5x #forge:dusts/phlogopite')
+		.itemOutputs('3x #forge:dusts/magnesia', Item.of('gtceu:aluminium_dust'))
+		.outputFluids(Fluid.of('gtceu:carbon_dioxide', 1000))
 		.duration(20 * 20)
 		.EUt(GTValues.VHA[GTValues.MV])
 
@@ -75,11 +102,77 @@ function registerTFGCoilRecipes(event) {
 
 	// #endregion
 
+	// #region Kanthal Coil
+
+	event.remove({ id: 'gtceu:assembler/coil_kanthal' })
+	event.recipes.gtceu.assembler('tfg:coil_kanthal')
+		.itemInputs('8x #forge:double_wires/kanthal', '16x #forge:foils/rene_41', '1x #forge:ingots/silicon_carbide')
+		.inputFluids('gtceu:cobalt 144')
+		.itemOutputs('gtceu:kanthal_coil_block')
+		.duration(20 * 15)
+		.EUt(GTValues.VA[GTValues.MV])
+		.addMaterialInfo(true, true)
+
+	// #endregion
+
+	// #region Nichrome Coil
+
+	event.recipes.gtceu.gas_pressurizer('tfg:blue_alloy_desh_foil')
+		.itemInputs('2x #forge:foils/desh', '2x #forge:foils/blue_alloy', 'tfc:powder/flux')
+		.inputFluids('gtceu:regolith_vapor 1000')
+		.itemOutputs('tfg:blue_alloy_desh_foil')
+		.duration(10 * 20)
+		.EUt(GTValues.VA[GTValues.HV])
+
+	TFGHelpers.registerMaterialInfo('tfg:blue_alloy_desh_foil', [GTMaterials.BlueAlloy, 0.5, GTMaterials.get('gtceu:desh'), 0.25])
+
+	event.recipes.gtceu.implosion_compressor('tfg:chorus_ceramic_insulation_dynamite')
+		.itemInputs('ae2:sky_dust', '#forge:dusts/perlite', '#forge:dusts/kaolinite', 'minecraft:popped_chorus_fruit', 'ae2:fluix_crystal', '2x gtceu:dynamite')
+		.itemOutputs('tfg:chorus_ceramic_insulation')
+		.chancedOutput('#forge:dusts/dark_ash', 2500, 0)
+		.duration(20)
+		.EUt(GTValues.VA[GTValues.LV])
+
+	event.recipes.gtceu.implosion_compressor('tfg:chorus_ceramic_insulation_powderbarrel')
+		.itemInputs('ae2:sky_dust', '#forge:dusts/perlite', '#forge:dusts/kaolinite', 'minecraft:popped_chorus_fruit', 'ae2:fluix_crystal', '8x gtceu:powderbarrel')
+		.itemOutputs('tfg:chorus_ceramic_insulation')
+		.chancedOutput('#forge:dusts/dark_ash', 2500, 0)
+		.duration(20)
+		.EUt(GTValues.VA[GTValues.LV])
+
+	event.recipes.gtceu.implosion_compressor('tfg:chorus_ceramic_insulation_tnt')
+		.itemInputs('ae2:sky_dust', '#forge:dusts/perlite', '#forge:dusts/kaolinite', 'minecraft:popped_chorus_fruit', 'ae2:fluix_crystal', '4x minecraft:tnt')
+		.itemOutputs('tfg:chorus_ceramic_insulation')
+		.chancedOutput('#forge:dusts/dark_ash', 2500, 0)
+		.duration(20)
+		.EUt(GTValues.VA[GTValues.LV])
+
+	event.recipes.gtceu.implosion_compressor('tfg:chorus_ceramic_insulation_itnt')
+		.itemInputs('ae2:sky_dust', '#forge:dusts/perlite', '#forge:dusts/kaolinite', 'minecraft:popped_chorus_fruit', 'ae2:fluix_crystal', 'gtceu:industrial_tnt')
+		.itemOutputs('tfg:chorus_ceramic_insulation')
+		.chancedOutput('#forge:dusts/dark_ash', 2500, 0)
+		.duration(20)
+		.EUt(GTValues.VA[GTValues.LV])
+
+	event.smelting('tfg:fired_chorus_ceramic_insulation', 'tfg:chorus_ceramic_insulation')
+		.id('tfg:smelting/chorus_ceramic_insulation')
+	
+	event.remove({ id: 'gtceu:assembler/coil_nichrome' })
+	event.recipes.gtceu.assembler('tfg:coil_nichrome')
+		.itemInputs('8x #forge:double_wires/nichrome', '8x tfg:blue_alloy_desh_foil', '4x tfg:fired_chorus_ceramic_insulation')
+		.inputFluids(Fluid.of('gtceu:magnalium', 144 * 4))
+		.itemOutputs('gtceu:nichrome_coil_block')
+		.duration(20 * 15)
+		.EUt(GTValues.VA[GTValues.HV])
+		.addMaterialInfo(true, true)
+
+	// #endregion
+
 	// #region RTM Coil
 
 	event.remove({ id : 'gtceu:assembler/coil_rtm_alloy' })
 	event.recipes.gtceu.assembler('tfg:coil_rtm_alloy')
-		.itemInputs('8x #forge:double_wires/rtm_alloy', '8x #forge:foils/vanadium_steel', '4x #forge:insulation_t2/sheet')
+		.itemInputs('8x #forge:double_wires/rtm_alloy', '8x #forge:foils/palladium', '4x #forge:insulation_t2/sheet')
 		.inputFluids('tfg:nichromium_iodomethylate 244')
 		.itemOutputs('gtceu:rtm_alloy_coil_block')
 		.duration(20 * 25)
@@ -98,7 +191,9 @@ function registerTFGCoilRecipes(event) {
 
 	event.remove({ id : 'gtceu:assembler/coil_hssg' })
 	event.recipes.gtceu.assembler('tfg:coil_hssg')
-		.itemInputs('8x #forge:double_wires/hssg', '8x #forge:foils/tungsten_carbide', '2x #forge:insulation_t3/sheet')
+		// TODO: Replace the tungsten carbide foil with zirconium diboride
+		.itemInputs('8x #forge:double_wires/hssg', '8x #forge:foils/tungsten_carbide', '#forge:insulation_t3/sheet')
+		// TODO: Replace tungsten liquid with something else from venus
 		.inputFluids('gtceu:tungsten 144')
 		.itemOutputs('gtceu:hssg_coil_block')
 		.duration(20 * 30)

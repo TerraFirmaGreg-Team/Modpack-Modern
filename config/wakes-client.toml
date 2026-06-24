@@ -1,0 +1,74 @@
+#Disable the mod functionality
+disableMod = false
+pickBoat = true
+#Allowed Values: EIGHT, SIXTEEN, THIRTYTWO
+wakeResolution = "SIXTEEN"
+#Range: 0.0 ~ 1.0
+wakeOpacity = 1.0
+#Range: 0.0 ~ 1.0
+blendStrength = 0.5
+firstPersonSplashPlane = false
+spawnParticles = true
+#Range: 0.0 ~ 1.0
+shaderLightPassthrough = 0.5
+wakeColorIntervals = [0.05, 0.15, 0.2, 0.35, 0.52, 0.6, 0.7, 0.9]
+wakeColors = ["#00000000", "#289399a6", "#649ea5b0", "#b4c4cad1", "#00000000", "#b4c4cad1", "#ffffffff", "#b4c4cad1", "#649ea5b0"]
+debugColors = false
+drawDebugBoxes = false
+showDebugInfo = false
+#Range: 1 ~ 6
+floodFillDistance = 2
+#Range: 1 ~ 20
+floodFillTickDelay = 2
+#Allowed Values: AUTO, GENERAL, CUSTOM, SOLID, TRANSLUCENT, CUTOUT, ENTITY_SOLID, ENTITY_TRANSLUCENT, ENTITY_TRANSLUCENT_CULL, ENTITY_CUTOUT, ENTITY_CUTOUT_NO_CULL, ENTITY_CUTOUT_NO_CULL_Z_OFFSET
+renderType = "AUTO"
+
+#Spawning Rules
+[spawningRules]
+	#Allowed Values: SIMULATION_AND_PLANES, ONLY_SIMULATION, ONLY_PLANES, DISABLED
+	boatSpawning = "SIMULATION_AND_PLANES"
+	#Allowed Values: SIMULATION_AND_PLANES, ONLY_SIMULATION, ONLY_PLANES, DISABLED
+	playerSpawning = "ONLY_SIMULATION"
+	#Allowed Values: SIMULATION_AND_PLANES, ONLY_SIMULATION, ONLY_PLANES, DISABLED
+	otherPlayersSpawning = "ONLY_SIMULATION"
+	#Allowed Values: SIMULATION_AND_PLANES, ONLY_SIMULATION, ONLY_PLANES, DISABLED
+	mobSpawning = "ONLY_SIMULATION"
+	#Allowed Values: SIMULATION_AND_PLANES, ONLY_SIMULATION, ONLY_PLANES, DISABLED
+	itemSpawning = "ONLY_SIMULATION"
+	#List of entity type IDs that should not produce wakes (e.g., "minecraft:dolphin", "minecraft:squid")
+	blacklistedMobs = []
+	#List of fluid IDs that can produce wakes
+	fluidWhitelist = ["minecraft:water", "minecraft:flowing_water", "tfc:salt_water", "tfc:spring_water", "tfc:river_water"]
+
+#Wake Behavior
+[wakeBehavior]
+	#Range: 0.0 ~ 1.0
+	wavePropagationFactor = 0.95
+	#Range: 0.0 ~ 1.0
+	waveDecayFactor = 0.5
+	#Range: > 0
+	initialStrength = 20
+	#Range: > 0
+	paddleStrength = 100
+	#Range: > 0
+	splashStrength = 100
+
+#Splash Plane Settings
+[splashPlane]
+	#Range: -5.0 ~ 5.0
+	splashPlaneWidth = 2.0
+	#Range: -5.0 ~ 5.0
+	splashPlaneHeight = 1.5
+	#Range: -5.0 ~ 5.0
+	splashPlaneDepth = 3.0
+	#Range: -5.0 ~ 5.0
+	splashPlaneOffset = 0.0
+	#Range: -5.0 ~ 5.0
+	splashPlaneGap = 1.0
+	#Range: 0 ~ 10
+	splashPlaneResolution = 5
+	#Range: -5.0 ~ 5.0
+	maxSplashPlaneVelocity = 0.5
+	#Range: -5.0 ~ 5.0
+	splashPlaneScale = 0.8
+

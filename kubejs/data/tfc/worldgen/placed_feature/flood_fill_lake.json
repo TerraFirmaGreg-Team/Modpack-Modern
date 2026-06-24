@@ -1,5 +1,4 @@
 {
-	"__comment__": "This file was automatically created by mcresources",
 	"feature": "tfc:flood_fill_lake",
 	"placement": [
 		{
@@ -7,15 +6,16 @@
 			"chance": 5
 		},
 		{
-			"type": "tfc:climate",
-			"min_rainfall": 125
-		},
-		{
 			"type": "minecraft:in_square"
 		},
 		{
 			"type": "minecraft:heightmap",
 			"heightmap": "WORLD_SURFACE_WG"
+		},
+		{
+			"type": "tfc:climate",
+			"min_temperature": -17,
+			"min_rainfall": 125
 		}
 	]
 }

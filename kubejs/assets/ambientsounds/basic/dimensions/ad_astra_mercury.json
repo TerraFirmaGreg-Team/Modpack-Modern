@@ -10,10 +10,15 @@
     },
     "regions": [
         {
-            "name": "unknown",
-            "volume": 0.3,
-            "sound-collections": [
-                "suspense"
+            "name": "suspense",
+            "sounds": [
+                {
+                    "name": "nether",
+                    "files": [
+                        "ambientsounds:suspense.end"
+                    ],
+                    "volume": 0.1
+                }
             ]
         }
     ]

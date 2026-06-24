@@ -1,0 +1,688 @@
+{
+  "name": "Laukiniai pasėliai",
+  "category": "tfc:the_world",
+  "icon": "tfc:textures/gui/book/icons/wild_crops.png",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)Laukiniai pasėliai $() auga išsibarstyti po visą pasaulį, mažais lopinėliais. Jas galima nuimti maistui ir sėkloms, kurias vėliau galima auginti kaip kultivuotus pasėlius.$(br2)Laukinius pasėlius galima nuimti rankomis, $(thing)peiliu$() ar kitu aštriu įrankiu. Sunaikinus, jie išmes $(thing)sėklas$() ir keletą $(thing)produktų$()."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "0"
+          ]
+        ],
+        "mapping": {
+          "X": "tfc:wild_crop/wheat[mature=true]"
+        }
+      },
+      "name": "Laukiniai kviečiai",
+      "text": "Laukinių pasėlių pavyzdys, šiuo atveju: $(l:mechanics/crops#wheat)Kviečiai$().",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Kiekvienas $(l:mechanics/crops)pasėlis$(), kurį galima auginti, taip pat auga ir gamtoje. Laukiniai pasėliai atrodo panašiai kaip jų kultivuoti atitikmenys, tačiau yra labiau pasislėpę žolėje. Laukiniai pasėliai subręsta tik nuo birželio iki spalio. Kitais laikotarpiais jie atrodo nudžiūvę iki kitos vasaros."
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "Visos skirtingos laukinių pasėlių įvairovės",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:wild_crop/barley"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:wild_crop/oat"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:wild_crop/rye"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:wild_crop/maize[part=top]",
+            "Y": "tfc:wild_crop/maize[part=bottom]"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:wild_crop/barley"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:wild_crop/rice[fluid=water]"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:wild_crop/beet"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:wild_crop/cabbage"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:wild_crop/carrot"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:wild_crop/garlic"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:wild_crop/green_bean[part=top]",
+            "Y": "tfc:wild_crop/green_bean[part=bottom]"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:wild_crop/potato"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:wild_crop/onion"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:wild_crop/soybean"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:wild_crop/squash"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:wild_crop/sugarcane[part=top]",
+            "Y": "tfc:wild_crop/sugarcane[part=bottom]"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:wild_crop/tomato[part=top]",
+            "Y": "tfc:wild_crop/tomato[part=bottom]"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:wild_crop/jute[part=top]",
+            "Y": "tfc:wild_crop/jute[part=bottom]"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:wild_crop/pumpkin"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:wild_crop/melon"
+          }
+        }
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Laukinės pasėliai atsiras klimatuose, esančiuose netoli vietų, kur galima auginti pačią tą pasėlį, taigi, jei ieškote konkretaus pasėlio, ieškokite tame klimate, kur ją galima auginti. Tačiau, skirtingai nuo $(l:mechanics/crops)pasėlių$(), kuriuos pasodino žaidėjas, laukiniams pasėliams nereikia $(l:mechanics/hydration)drėkinimo$(). Vietoj to, jie randami vietovėse, priklausomai nuo vidutinės $()temperatūros$() ir $()kritulių kiekio$().",
+      "title": "Ieškant laukinių pasėlių"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Toliau pateiktoje lentelėje nurodytos aplinkos, kuriose galima rasti laukinius pasėlius."
+    },
+    {
+      "type": "tfc:table",
+      "strings": [
+        {
+          "text": "Pasėlis",
+          "bold": true
+        },
+        {
+          "text": "Temperatūra (°C)",
+          "bold": true
+        },
+        {
+          "text": "Kritulių kiekis (mm)",
+          "bold": true
+        },
+        {
+          "text": "Miežiai"
+        },
+        {
+          "text": "-8 - 26"
+        },
+        {
+          "text": "70 - 310"
+        },
+        {
+          "text": "Avižos"
+        },
+        {
+          "text": "3 - 40"
+        },
+        {
+          "text": "140 - 400"
+        },
+        {
+          "text": "Rugiai"
+        },
+        {
+          "text": "-11 - 30"
+        },
+        {
+          "text": "100 - 350"
+        },
+        {
+          "text": "Kukurūzai"
+        },
+        {
+          "text": "13 - 40"
+        },
+        {
+          "text": "300 - 500"
+        },
+        {
+          "text": "Kviečiai"
+        },
+        {
+          "text": "-4 - 35"
+        },
+        {
+          "text": "100 - 400"
+        },
+        {
+          "text": "Ryžiai"
+        },
+        {
+          "text": "15 - 30"
+        },
+        {
+          "text": "100 - 500"
+        },
+        {
+          "text": "Burokas"
+        },
+        {
+          "text": "-5 - 20"
+        },
+        {
+          "text": "70 - 300"
+        },
+        {
+          "text": "Kopūstas"
+        },
+        {
+          "text": "-10 - 27"
+        },
+        {
+          "text": "60 - 280"
+        },
+        {
+          "text": "Morka"
+        },
+        {
+          "text": "3 - 30"
+        },
+        {
+          "text": "100 - 400"
+        },
+        {
+          "text": "Česnakas"
+        },
+        {
+          "text": "-20 - 18"
+        },
+        {
+          "text": "60 - 310"
+        },
+        {
+          "text": "Žalia pupelė"
+        },
+        {
+          "text": "2 - 35"
+        },
+        {
+          "text": "150 - 410"
+        },
+        {
+          "text": "Arbūzas"
+        },
+        {
+          "text": "5 - 37"
+        },
+        {
+          "text": "200 - 500"
+        }
+      ],
+      "text": "",
+      "title": "Laukinių pasėlių reikalavimai",
+      "legend": [],
+      "columns": 2,
+      "first_column_width": 80,
+      "column_width": 70,
+      "row_height": 10,
+      "left_buffer": 2,
+      "top_buffer": 12,
+      "draw_background": false
+    },
+    {
+      "type": "patchouli:empty",
+      "draw_filler": false
+    },
+    {
+      "type": "tfc:table",
+      "strings": [
+        {
+          "text": "Pasėlis",
+          "bold": true
+        },
+        {
+          "text": "Temperatūra (°C)",
+          "bold": true
+        },
+        {
+          "text": "Kritulių kiekis (mm)",
+          "bold": true
+        },
+        {
+          "text": "Bulvė"
+        },
+        {
+          "text": "-1 - 37"
+        },
+        {
+          "text": "200 - 410"
+        },
+        {
+          "text": "Moliūgas"
+        },
+        {
+          "text": "0 - 30"
+        },
+        {
+          "text": "120 - 390"
+        },
+        {
+          "text": "Svogūnas"
+        },
+        {
+          "text": "0 - 30"
+        },
+        {
+          "text": "100 - 390"
+        },
+        {
+          "text": "Sojos pupelė"
+        },
+        {
+          "text": "8 - 30"
+        },
+        {
+          "text": "160 - 410"
+        },
+        {
+          "text": "Skvošas"
+        },
+        {
+          "text": "5 - 33"
+        },
+        {
+          "text": "90 - 390"
+        },
+        {
+          "text": "Cukranendrės"
+        },
+        {
+          "text": "12 - 38"
+        },
+        {
+          "text": "160 - 500"
+        },
+        {
+          "text": "Pomidoras"
+        },
+        {
+          "text": "0 - 36"
+        },
+        {
+          "text": "120 - 390"
+        },
+        {
+          "text": "Džiutas"
+        },
+        {
+          "text": "5 - 37"
+        },
+        {
+          "text": "100 - 410"
+        },
+        {
+          "text": "Papirusas"
+        },
+        {
+          "text": "19 - 37"
+        },
+        {
+          "text": "310 - 500"
+        },
+        {
+          "text": "Raudonoji paprika\n"
+        },
+        {
+          "text": "16 - 30"
+        },
+        {
+          "text": "190 - 400"
+        },
+        {
+          "text": "Geltonoji paprika"
+        },
+        {
+          "text": "16 - 30"
+        },
+        {
+          "text": "190 - 400"
+        },
+        {
+          "text": "Saulėgrąža"
+        },
+        {
+          "text": "5 - 40"
+        },
+        {
+          "text": "100 - 450"
+        }
+      ],
+      "text": "",
+      "title": "Laukinių pasėlių reikalavimai",
+      "legend": [],
+      "columns": 2,
+      "first_column_width": 80,
+      "column_width": 70,
+      "row_height": 10,
+      "left_buffer": 2,
+      "top_buffer": 12,
+      "draw_background": false
+    },
+    {
+      "type": "patchouli:empty",
+      "draw_filler": false
+    },
+    {
+      "type": "tfc:table",
+      "strings": [
+        {
+          "text": "Pasėlis",
+          "bold": true
+        },
+        {
+          "text": "Temperatūra (°C)",
+          "bold": true
+        },
+        {
+          "text": "Kritulių kiekis (mm)",
+          "bold": true
+        },
+        {
+          "text": "Rapsas"
+        },
+        {
+          "text": "-5 - 25"
+        },
+        {
+          "text": "50 - 350"
+        },
+        {
+          "text": "Linas"
+        },
+        {
+          "text": "-8 - 25"
+        },
+        {
+          "text": "175 - 475"
+        },
+        {
+          "text": "Agurkas"
+        },
+        {
+          "text": "15 - 40"
+        },
+        {
+          "text": "350 - 500"
+        },
+        {
+          "text": "Ridikas"
+        },
+        {
+          "text": "-16 - 4"
+        },
+        {
+          "text": "75 - 325"
+        },
+        {
+          "text": "Lęšiai"
+        },
+        {
+          "text": "-18 - 2"
+        },
+        {
+          "text": "250 - 425"
+        }
+      ],
+      "text": "",
+      "title": "Laukinių pasėlių reikalavimai",
+      "legend": [],
+      "columns": 2,
+      "first_column_width": 80,
+      "column_width": 70,
+      "row_height": 10,
+      "left_buffer": 2,
+      "top_buffer": 12,
+      "draw_background": false
+    },
+    {
+      "type": "patchouli:empty",
+      "draw_filler": false
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 4,
+  "extra_recipe_mappings": {
+    "tag:tfc:wild_crops": 0
+  }
+}

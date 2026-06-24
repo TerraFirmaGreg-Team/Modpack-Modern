@@ -1,0 +1,74 @@
+{
+    "name": "Ткацтво",
+    "category": "tfc:mechanics",
+    "icon": "tfc:spindle",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(thing)Ткацтво$() — це процес з'єднання різних видів ниток у $(thing)тканину$(). Хоча фінальний етап ткацтва відбувається на $(thing)ткацькому верстаті$(), деякі тканини, як-от $(thing)вовна$(), отримана від $(l:mechanics/animal_husbandry#wooly_animals)вовняних тварин$(), вимагають використання $(thing)веретена$() для отримання $(thing)вовняної пряжі$() перед самим ткацтвом."
+        },
+        {
+            "type": "tfc:knapping_recipe",
+            "recipe": "tfc:clay_knapping/spindle_head",
+            "text": "$(thing)Невипалена головка веретена$() ліпиться з глини. Потім її можна $(l:mechanics/heating)випалити$(), щоб отримати $(thing)насадку для веретена$(). Щоб повністю зібрати веретено, з'єднай його разом із $(thing)палицею$()."
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "tfc:kjs/damage/shapeless/wool_yarn",
+            "text": "Створення $(thing)вовни$() з веретеном дає $(thing)вовняну пряжу$()."
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "tfc:crafting/wood/acacia_loom",
+            "text": "Ткацький верстат створюється лише з $(thing)деревини$() та $(thing)палиць$()."
+        },
+        {
+            "type": "tfc:loom_recipe",
+            "anchor": "wool_cloth",
+            "recipe": "tfc:loom/wool_cloth",
+            "text": "Рецепт $(thing)вовняної тканини$() вимагає 16 одиниць $(thing)вовняної пряжі$(). Додавання матеріалу до ткацького верстата здійснюється за допомогою натискання $(item)$(k:key.use)$(). Потім утримуй $(item)$(k:key.use)$(), щоб запустити роботу верстата. Коли процес завершиться, натисни $(item)$(k:key.use)$(), щоб отримати готовий предмет."
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/loom_empty.png",
+                "tfc:textures/gui/book/tutorial/loom_full.png",
+                "tfc:textures/gui/book/tutorial/loom_working.png",
+                "tfc:textures/gui/book/tutorial/loom_done.png"
+            ],
+            "text": "Стадії роботи ткацького верстата.",
+            "border": true
+        },
+        {
+            "type": "tfc:loom_recipe",
+            "recipe": "tfc:loom/wool_block",
+            "text": "$(thing)Вовняну тканину$() можна повторно переплести у $(thing)блоки вовни$(). Блоки вовни можна $(l:mechanics/dye)пофарбувати$()."
+        },
+        {
+            "type": "tfc:loom_recipe",
+            "recipe": "tfc:loom/silk_cloth",
+            "text": "$(thing)Шовкову тканину$() можна зробити на ткацькому верстаті з $(thing)ниток$(). У деяких випадках її можна використовувати як замінник вовняної тканини."
+        },
+        {
+            "type": "tfc:loom_recipe",
+            "anchor": "burlap_cloth",
+            "recipe": "tfc:loom/burlap_cloth",
+            "text": "$(thing)Мішковина$() не має практичного застосування, але її можна зробити з $(l:mechanics/crops#jute)джутового волокна$()."
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "tfc:crafting/vanilla/color/light_blue_bed",
+            "recipe2": "tfc:crafting/vanilla/painting"
+        }
+    ],
+    "read_by_default": true,
+    "extra_recipe_mappings": {
+        "tfc:spindle": 1,
+        "tfc:wool": 2,
+        "tag:tfc:looms": 3,
+        "tfc:wool_cloth": 4,
+        "minecraft:white_wool": 6,
+        "tfc:silk_cloth": 7,
+        "tfc:burlap_cloth": 8
+    }
+}

@@ -1,0 +1,11 @@
+{
+  "id": "tfg:axes",
+  "name": "stackgroup.emixx.tfg_axes",
+  "type": "emixx:group",
+  "contents": [
+    "#tfc:axes"
+  ],
+  "exclusions": [
+    "#forge:tools/chainsaws"
+  ]
+}

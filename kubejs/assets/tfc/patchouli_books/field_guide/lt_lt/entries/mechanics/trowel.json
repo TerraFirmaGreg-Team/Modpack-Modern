@@ -1,0 +1,18 @@
+{
+	"name": "Trowel",
+	"icon": "tfg:trowel",
+	"category": "tfc:mechanics",
+	"read_by_default": true,
+	"pages": [
+		{
+			"type": "patchouli:crafting",
+			"title": "Trowel",
+			"recipe": "tfg:shaped/trowel",
+			"text": "A $(item)Trowel$() allows a builder to place random blocks from their hotbar when right-clicking a surface.$(br2)Trowels also have built-in functionality with the $(item)Roads and Roofs$() mod--Meaning that they can place filler items like bricks or flagstones randomly as well."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Inspired by the trowel tool from $(item)Quark$()--A mod by Vazkii"
+		}
+	]
+}

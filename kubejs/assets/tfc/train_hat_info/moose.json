@@ -1,0 +1,9 @@
+{
+  "model_part": "moose/body/neck/head",
+  "offset": [
+    0.0,
+    3.0,
+    2.0
+  ],
+  "scale": 0.6
+}

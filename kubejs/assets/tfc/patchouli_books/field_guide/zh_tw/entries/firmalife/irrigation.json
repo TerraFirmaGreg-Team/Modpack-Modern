@@ -1,0 +1,28 @@
+{
+	"name": "灌溉",
+	"category": "tfc:firmalife",
+	"icon": "firmalife:sprinkler",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "$(thing)灑水器$() 一種向下方 5×6×5 範圍均勻灑水的装置。出現水滴粒子時說明它正在工作。朝上的灑水器則會向上灌溉。"
+		},
+		{
+			"type": "tfc:anvil_recipe",
+			"recipe": "firmalife:anvil/sprinkler",
+			"text": "灑水器由一片 $(thing)銅板$() 製成。"
+		},
+		{
+			"title": "管道",
+			"item": "gtceu:copper_tiny_fluid_pipe",
+			"type": "patchouli:spotlight",
+			"text": "灑水器需要連接到供水管道才能工作。將一系列 $(thing)液體管道$() 連接到連接到灑水器即可。可以用 $(thing)動力泵$() 進行加水。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "手持格雷科技的框架右鍵管道（如 $(thing)铜框架$()）使其與牆面齊平，也可使用温室接口。之后將灑水器接在管道上！用扳手右鍵管道調整方向，按住 Shift 並 $(thing)空手$() 右鍵可設為單向流動。"
+		}
+	],
+	"read_by_default": true,
+	"sortnum": 8
+}

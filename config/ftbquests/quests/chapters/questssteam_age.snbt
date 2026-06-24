@@ -14,28 +14,13 @@
 		id: "gtceu:steel_gear"
 	}
 	id: "784A885090386609"
-	order_index: 2
+	order_index: 3
 	quest_links: [
 		{
 			id: "39027CF4DC307D33"
 			linked_quest: "5E186CD5E83BFDF0"
 			x: -27.0d
 			y: 2.0d
-		}
-		{
-			id: "0CE64B9914191C56"
-			linked_quest: "6FFD4990FF07078A"
-			shape: "diamond"
-			x: -9.0d
-			y: 11.5d
-		}
-		{
-			id: "23A27702FF816291"
-			linked_quest: "6903C72A254A7B08"
-			shape: "octagon"
-			size: 2.0d
-			x: -11.5d
-			y: 8.0d
 		}
 		{
 			id: "1F1E7097C015BE33"
@@ -49,7 +34,7 @@
 			id: "7C03FE015586C652"
 			linked_quest: "55213ACBF5F5D398"
 			shape: "heart"
-			x: -10.5d
+			x: -11.0d
 			y: 16.0d
 		}
 		{
@@ -63,7 +48,7 @@
 			id: "68F5E521F2DB0A86"
 			linked_quest: "0404FBCC34011053"
 			shape: "heart"
-			x: -11.5d
+			x: -12.0d
 			y: 16.0d
 		}
 		{
@@ -74,19 +59,25 @@
 			y: 12.5d
 		}
 		{
-			id: "61DCD50394B7FF0E"
-			linked_quest: "33263404ED38C6D2"
-			shape: "heart"
-			x: -16.5d
-			y: 4.5d
-		}
-		{
 			id: "6C8C3BBD2BA9853B"
 			linked_quest: "56CA2EB7812529C5"
 			shape: "gear"
 			size: 1.5d
 			x: -13.0d
 			y: 13.5d
+		}
+		{
+			id: "56FD630E00C6BF1A"
+			linked_quest: "031F9DC9BD21FA16"
+			shape: "diamond"
+			x: -8.5d
+			y: 11.5d
+		}
+		{
+			id: "0ED2F015B1ABE9E0"
+			linked_quest: "34055D52D947FD7A"
+			x: -11.5d
+			y: 8.0d
 		}
 	]
 	quests: [
@@ -295,7 +286,7 @@
 			}]
 			title: "{quests.steam_age.boilers.title}"
 			x: -19.5d
-			y: 6.75d
+			y: 7.75d
 		}
 		{
 			dependencies: ["32046292AA5B0E30"]
@@ -474,40 +465,6 @@
 			y: 12.5d
 		}
 		{
-			dependencies: ["7DB7AB5349218605"]
-			description: ["{quests.steam_age.treated_planks.desc}"]
-			id: "246D2C5989E3E907"
-			subtitle: "{quests.steam_age.treated_planks.subtitle}"
-			tasks: [
-				{
-					id: "7CF3C09E3907B1C0"
-					item: "gtceu:treated_wood_planks"
-					type: "item"
-				}
-				{
-					id: "72112F5EC062766C"
-					item: "gtceu:treated_wood_dust"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "0D95727196D033B5"
-					item: "gtceu:treated_wood_plate"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "1497E51C6C204557"
-					item: "gtceu:treated_wood_normal_fluid_pipe"
-					optional_task: true
-					type: "item"
-				}
-			]
-			title: "{quests.steam_age.treated_planks.title}"
-			x: -19.5d
-			y: 10.5d
-		}
-		{
 			dependencies: [
 				"233B414B4F189140"
 				"781C6AD30194CB45"
@@ -551,7 +508,7 @@
 				}
 			]
 			title: "{quests.steam_age.miner.title}"
-			x: -9.0d
+			x: -8.5d
 			y: 18.0d
 		}
 		{
@@ -680,7 +637,7 @@
 			]
 			title: "{quests.steam_age.steam_bloomery.title}"
 			x: -16.5d
-			y: 6.5d
+			y: 7.5d
 		}
 		{
 			dependencies: ["05CC8C5E63CD1DB8"]
@@ -718,8 +675,8 @@
 		}
 		{
 			dependencies: [
-				"6FFD4990FF07078A"
 				"05BE9FE74E4F1AE9"
+				"031F9DC9BD21FA16"
 			]
 			description: ["{quests.steam_age.circuit_boards.desc}"]
 			icon: "gtceu:resin_printed_circuit_board"
@@ -740,8 +697,8 @@
 				}
 			]
 			title: "{quests.steam_age.circuit_boards.title}"
-			x: -9.0d
-			y: 10.0d
+			x: -8.5d
+			y: 9.5d
 		}
 		{
 			dependencies: ["46FA9DD4755A5548"]
@@ -756,7 +713,7 @@
 			}]
 			title: "{quests.steam_age.compressor.title}"
 			x: -16.5d
-			y: 8.5d
+			y: 9.5d
 		}
 		{
 			dependencies: ["46FA9DD4755A5548"]
@@ -772,7 +729,7 @@
 			}]
 			title: "{quests.steam_age.alloy_smelter.title}"
 			x: -22.5d
-			y: 8.5d
+			y: 9.5d
 		}
 		{
 			dependencies: [
@@ -791,7 +748,7 @@
 			}]
 			title: "{quests.steam_age.forge_hammer.title}"
 			x: -22.5d
-			y: 6.5d
+			y: 7.5d
 		}
 		{
 			dependencies: [
@@ -828,8 +785,8 @@
 		}
 		{
 			dependencies: [
-				"6FFD4990FF07078A"
 				"16CF5A9012EF4B27"
+				"031F9DC9BD21FA16"
 			]
 			dependency_requirement: "one_completed"
 			description: ["{quests.steam_age.resistors.desc}"]
@@ -860,7 +817,7 @@
 			}]
 			title: "{quests.steam_age.coiling_machine.title}"
 			x: -4.0d
-			y: 17.0d
+			y: 16.0d
 		}
 		{
 			dependencies: ["2C35D4E01AEC02AA"]
@@ -876,13 +833,14 @@
 			}]
 			title: "{quests.steam_age.steel_mixer.title}"
 			x: -4.0d
-			y: 15.5d
+			y: 14.75d
 		}
 		{
 			dependencies: ["2C35D4E01AEC02AA"]
 			description: ["{quests.steam_age.lathe.desc}"]
 			id: "6A92E8396DE40577"
 			optional: true
+			size: 1.25d
 			subtitle: "{quests.steam_age.lathe.subtitle}"
 			tasks: [{
 				id: "23961EE69549B16E"
@@ -890,14 +848,13 @@
 				type: "item"
 			}]
 			title: "{quests.steam_age.lathe.title}"
-			x: -5.0d
-			y: 18.0d
+			x: -4.0d
+			y: 17.25d
 		}
 		{
 			dependencies: [
 				"5917B0D4708BF534"
 				"6100B3C732E379AA"
-				"246D2C5989E3E907"
 			]
 			description: ["{quests.steam_age.centrifuge.desc}"]
 			id: "19A1D52A7F550478"
@@ -928,7 +885,7 @@
 				type: "item"
 			}]
 			title: "{quests.steam_age.vibrating_table.title}"
-			x: -7.0d
+			x: -6.5d
 			y: 18.0d
 		}
 		{
@@ -949,7 +906,7 @@
 			}]
 			title: "{quests.steam_age.rolling_mill.title}"
 			x: -4.0d
-			y: 14.0d
+			y: 13.5d
 		}
 		{
 			dependencies: ["2C35D4E01AEC02AA"]
@@ -963,7 +920,7 @@
 				type: "item"
 			}]
 			title: "{quests.steam_age.steel_saw.title}"
-			x: -6.0d
+			x: -5.5d
 			y: 18.0d
 		}
 		{
@@ -978,7 +935,7 @@
 				type: "item"
 			}]
 			title: "{quests.steam_age.curving_press.title}"
-			x: -8.0d
+			x: -7.5d
 			y: 18.0d
 		}
 		{
@@ -996,7 +953,7 @@
 			}]
 			title: "{quests.steam_age.steam_furnace.title}"
 			x: -22.5d
-			y: 5.5d
+			y: 6.5d
 		}
 		{
 			dependencies: ["799288FB7A4DCA11"]
@@ -1052,7 +1009,7 @@
 			]
 			title: "{quests.steam_age.steam_oven.title}"
 			x: -24.5d
-			y: 5.5d
+			y: 6.5d
 		}
 		{
 			dependencies: ["46FA9DD4755A5548"]
@@ -1068,7 +1025,7 @@
 			}]
 			title: "{quests.steam_age.rock_crusher.title}"
 			x: -16.5d
-			y: 7.5d
+			y: 8.5d
 		}
 		{
 			dependencies: [
@@ -1197,7 +1154,7 @@
 			}]
 			title: "{quests.steam_age.potin.title}"
 			x: -2.5d
-			y: 15.5d
+			y: 14.0d
 		}
 		{
 			dependencies: ["6F1BC99BE641B671"]
@@ -1212,14 +1169,15 @@
 					type: "item"
 				}
 				{
-					id: "7721793B4C0AFD2C"
+					id: "2792584EC8F6BCF0"
 					item: {
 						Count: 1
 						id: "ftbfiltersystem:smart_filter"
 						tag: {
-							"ftbfiltersystem:filter": "or(item(gtceu:copper_wrench)item(gtceu:bronze_wrench)item(gtceu:black_bronze_wrench)item(gtceu:bismuth_bronze_wrench)item(gtceu:wrought_iron_wrench)item(gtceu:steel_wrench)item(gtceu:cobalt_brass_wrench))"
+							"ftbfiltersystem:filter": "item_tag(forge:tools/wrenches)"
 						}
 					}
+					title: "{quests.steam_age.create_tools.task}"
 					type: "item"
 				}
 			]
@@ -1295,7 +1253,7 @@
 			}]
 			title: "{quests.metal_age.black_steel_goodies.title}"
 			x: -19.5d
-			y: 3.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["1059288C22CB56BB"]
@@ -1458,8 +1416,8 @@
 			dependencies: [
 				"69BDD31A69062B6C"
 				"43D0B4F2ACB9931B"
-				"6903C72A254A7B08"
 				"2C35D4E01AEC02AA"
+				"34055D52D947FD7A"
 			]
 			description: ["{quests.steam_age.lv_circuit.desc}"]
 			icon: "gtceu:basic_electronic_circuit"
@@ -1579,7 +1537,7 @@
 			}]
 			title: "{quests.steam_age.steam_macerator.title}"
 			x: -22.5d
-			y: 7.5d
+			y: 8.5d
 		}
 		{
 			dependencies: [
@@ -1627,7 +1585,7 @@
 			]
 			title: "{quests.steam_age.steam_grinder.title}"
 			x: -24.5d
-			y: 7.5d
+			y: 8.5d
 		}
 		{
 			dependencies: ["32046292AA5B0E30"]
@@ -1645,8 +1603,8 @@
 		}
 		{
 			dependencies: [
-				"6FFD4990FF07078A"
 				"3E175E20C91F168B"
+				"031F9DC9BD21FA16"
 			]
 			description: ["{quests.steam_age.resin_boards.desc}"]
 			id: "05BE9FE74E4F1AE9"
@@ -1657,7 +1615,7 @@
 				type: "item"
 			}]
 			title: "{quests.steam_age.resin_boards.title}"
-			x: -10.5d
+			x: -10.0d
 			y: 11.5d
 		}
 		{
@@ -1892,7 +1850,7 @@
 			]
 			title: "{quests.steam_age.steam_presser.title}"
 			x: -24.5d
-			y: 6.5d
+			y: 7.5d
 		}
 		{
 			dependencies: ["1912758422EEB006"]
@@ -1943,7 +1901,7 @@
 			]
 			title: "{quests.steam_age.steam_fuser.title}"
 			x: -24.5d
-			y: 8.5d
+			y: 9.5d
 		}
 		{
 			dependencies: ["7DB7AB5349218605"]
@@ -2001,7 +1959,7 @@
 			]
 			title: "{quests.steam_age.steam_squasher.title}"
 			x: -14.5d
-			y: 8.5d
+			y: 9.5d
 		}
 		{
 			description: [
@@ -2028,6 +1986,105 @@
 			title: "{quests.steam_age.cobalt_brass.title}"
 			x: -15.5d
 			y: 13.5d
+		}
+		{
+			dependencies: [
+				"2C35D4E01AEC02AA"
+				"6E186F9C57155BFA"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"{quests.steam_age.large_bronze_boiler.desc.1}"
+				"{@pagebreak}"
+				"{quests.steam_age.large_bronze_boiler.desc.3}"
+			]
+			id: "1F7AAF65CC0A4ADF"
+			shape: "heart"
+			size: 1.25d
+			subtitle: "{quests.steam_age.large_bronze_boiler.subtitle}"
+			tasks: [{
+				id: "6D8BDDF41B0A5384"
+				item: "tfg:large_bronze_boiler"
+				type: "item"
+			}]
+			x: -9.0d
+			y: 16.0d
+		}
+		{
+			dependencies: ["2C35D4E01AEC02AA"]
+			description: [
+				"{quests.steam_age.gas_vent.desc.1}"
+				"{image:tfg:textures/quests/gas_vent.png width:256 height:136 align:center}"
+			]
+			icon: "gtceu:natural_gas_bucket"
+			id: "66E34DAA25149FC0"
+			shape: "heart"
+			size: 1.25d
+			tasks: [
+				{
+					id: "1AFCDD1CA8362669"
+					item: "tfg:gas_well"
+					type: "item"
+				}
+				{
+					id: "490FCD10027AF0D8"
+					item: "gtceu:natural_gas_bucket"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: -9.0d
+			y: 14.0d
+		}
+		{
+			dependencies: [
+				"49896161B31DB7B4"
+				"5B891BA4897FD73C"
+			]
+			dependency_requirement: "one_completed"
+			description: ["{quests.tfg_tips.tablets.desc}"]
+			id: "474B85F52F14AF52"
+			optional: true
+			shape: "heart"
+			subtitle: "{quests.tfg_tips.tablets.subtitle}"
+			tasks: [{
+				id: "52585907F4BD07B6"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(tfg:antipoison_tablet)item(tfg:haste_tablet)item(tfg:night_vision_tablet)item(tfg:poison_tablet)item(tfg:regeneration_tablet)item(tfg:slowness_tablet)item(tfg:speed_tablet)item(tfg:water_breathing_tablet)item(tfg:weakness_tablet))"
+					}
+				}
+				title: "{quests.tfg_tips.tablets.task}"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.tablets.title}"
+			x: -2.5d
+			y: 15.5d
+		}
+		{
+			dependencies: ["0D0D461AE3A3F7BF"]
+			description: ["{quests.tfg_tips.salvo.desc}"]
+			id: "1F1C8CD694E233E4"
+			optional: true
+			shape: "heart"
+			subtitle: "{quests.tfg_tips.salvo.subtitle}"
+			tasks: [{
+				id: "051F16E4D540ADE8"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(tfg:absorption_salvo)item(tfg:fire_resistance_salvo)item(tfg:invisibility_salvo)item(tfg:luck_salvo)item(tfg:resistance_salvo)item(tfg:instant_health_salvo))"
+					}
+				}
+				title: "{quests.tfg_tips.salvo.task}"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.salvo.title}"
+			x: -15.0d
+			y: -4.0d
 		}
 	]
 	subtitle: ["{quests.steam_age.subtitle}"]

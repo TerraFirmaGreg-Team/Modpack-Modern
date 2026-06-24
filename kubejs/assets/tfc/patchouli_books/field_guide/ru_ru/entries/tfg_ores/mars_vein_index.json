@@ -8,18 +8,18 @@
   "pages": [
     {
       "Type": "patchouli:text",
-      "text": "Это $(thing)Каталог жил$() для $(thing)Марс$(). Для каждой жилы имеется подробная информация о ее редкости, плотности, виде, высоте, размерах, типах камней, в которых она встречается, и многом другом.",
+      "text": "Это $(thing)Индекс жил$() для $(item)Марс$(). Каждая жила вмещает информацию про её редкость, плотность, глубину, размер и горных пород в которых её можно встретить.",
       "title": "Каталог жил Марса",
       "type": "patchouli:text"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/mars_vein_index#mars_almandine)Альмандин & Сапфир$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_apatite)Апатит и Пирохлор$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_neodynium)Бастнезит и Монацит$()$()$(li)$(l:tfg_ores/mars_vein_index#deep_mars_sheldonite)Борнит & Куперит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_bismuthinite)Висмут$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_nickel)Гарниерит и Кобальтит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_hematite)Гематит и Лимонит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_hematite)Гематит и Лимонит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_graphite)Графит и Алмаз$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_gold)Золото, Электротин & Боксит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_beryllium)Изумруд и Бериллий$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_cassiterite)Касситерит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_quartzite)Кварцит, Асбест & Барит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_lapis)Лазурит, Лазуритит и Содалит$()$()",
+      "text": "$(li)$(l:tfg_ores/mars_vein_index#mars_almandine)Альмандин, Пироп, Сапфир...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_apatite)Апатит, Трикальцийфосфат...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_neodynium)Бастнезит, Монацит, Неодим...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_beryllium)Бериллий, Изумруд, Реальгар$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_coal)Битумный уголь, Гематит$()$()$(li)$(l:tfg_ores/mars_vein_index#deep_mars_sheldonite)Борнит, Куперит, Никель...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_bismuthinite)Висмут, Гематит, Сера, Гипс$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_galena)Галена, Самородное серебро...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_nickel)Гарниерит, Никель, Кобальтит...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_hematite)Гематит, Лимонит, Гётит...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_hematite)Гематит, Лимонит...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_graphite)Графит, Битумный уголь, Алмаз...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_tantalite)Гроссуляр, Спасерит...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_gold)Зеленый сапфир, Боксит...$()$()",
       "type": "patchouli:text"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/mars_vein_index#mars_tantalite)Марганец и Тантал$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_copper)Медь и Халькопирит$()$()$(li)$(l:tfg_ores/mars_vein_index#deep_mars_chromite)Редстоун & Хром$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_galena)Серебро, Галена и Свинец$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_salt)Соли & Сподумен$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_nickel_galena)Сфалерит & Галена$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_sulfur)Сфалерит & Пирит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_stibnite)Тетраэдрит (обычный)$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_tetrahedrite)Тетраэдрит (Поверхностный)$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_lubricant)Трона, Тальк & Глаукониты$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_coal)Уголь & Гематит$()$()$(li)$(l:tfg_ores/mars_vein_index#deep_mars_pitchblende)Уранинит, Торианит, & Уранит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_pitchblende)Уранит, Торий & Гематит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_tungsten)Шеелит и Вольфрамат$()$()",
+      "text": "$(li)$(l:tfg_ores/mars_vein_index#mars_surface_cassiterite)Касситерит, Олово, Селитра$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_quartzite)Кварц, Барит, Асбест, Гематит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_lapis)Лазурит, Содалит, Лазуритит...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_lubricant)Мыльный камень, Тальк...$()$()$(li)$(l:tfg_ores/mars_vein_index#deep_mars_chromite)Редстоуновая пыль, Рубин...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_sulfur)Сера, Пирит, Сфалерит...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_salt)Сильвин, Галит, Лепидолит...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_nickel_galena)Сфалерит, Никель, Галена...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_stibnite)Тетраэдрит, Самородная медь...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_tetrahedrite)Тетраэдрит, Самородная медь...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_pitchblende)Уранит, Торианит, Гематит$()$()$(li)$(l:tfg_ores/mars_vein_index#deep_mars_pitchblende)Уранит, Торианит, Уранинит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_copper)Халькопирит, Самородная медь...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_tungsten)Шеелит, Вольфрамат, Литий...$()$()",
       "type": "patchouli:text"
     },
     {
@@ -29,8 +29,8 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/280 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 35%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Широкая и плоская)Дискообразная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): 0 — 70$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 65$(br)$(thing)Высота$(): 8$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 15$(br2)$(thing)Виды камней$(): Аргиллит, Аргиллит, Габбро, Диорит, Доломит, Известняк, Красный гранит, Кремнистый сланец, Сланец, Трахит",
-      "title": "Альмандин & Сапфир",
+      "text": "$(thing)$(t:Шанс появления жилы на чанк. Чем меньше значение, тем больше вероятность.)Редкость$(/t)$(): 1/280 чанки$(br)$(thing)$(t:Процент блоков в жиле, которые являются рудой, а не камнем. Больший шанс означает больше руд.)Плотность$(/t)$(): 35%$(br)$(thing)$(t:Форма жилы.)Тип$(/t)$(): $(t:Широкая и плоская жила)Жила Пластинкой$(/t)$(br)$(thing)$(t:Промежуток по Y, в котором может генерироваться жила.)Y$(/t)$(): 0 — 70$(br)$(thing)$(t:Средний диаметр жилы)Размер$(/t)$(): 65$(br)$(thing)Высота$(): 8$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше этого числа, руда не генерирует поверхностные индикаторы.) Максимальная глубина индикатора(/t)$(): 15$(br)$(thing)Биомы$(): когда угодно$(br2)$(thing)Виды камня$(): Аргиллит, Аргиллит, Габбро, Диорит, Доломит, Известняк, Красный гранит, Кремнистый сланец, Сланец, Трахит",
+      "title": "Альмандин, Пироп, Сапфир...",
       "type": "patchouli:text",
       "anchor": "mars_almandine"
     },
@@ -51,7 +51,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 36%$(br)$(thing)Используется для$(): Алюминий, Железо$(br)$(thing)Формула$(): Al₂Fe₃Si₃O₁₂",
+      "text": "$(thing)Процент нагрузки$(): 36%$(br)$(thing)Источник для$(): Алюминий, железо$(br)$(thing)Формула$(): Al₂Fe₃Si₃O₁₂",
       "type": "patchouli:multiblock"
     },
     {
@@ -71,7 +71,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 26%$(br)$(thing)Используется для$(): Алюминий, Магний$(br)$(thing)Формула$(): Al₂Mg₃Si₃O₁₂",
+      "text": "$(thing)Процент нагрузки$(): 26%$(br)$(thing)Источник для$(): Алюминий, Магнезия$(br)$(thing)Формула$(): Al₂Mg₃Si₃O₁₂",
       "type": "patchouli:multiblock"
     },
     {
@@ -91,12 +91,12 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 15%$(br)$(thing)Используется для$(): Алюминий$(br)$(thing)Формула$(): Al₂O₃",
+      "text": "$(thing)Процент нагрузки$(): 15%$(br)$(thing)Источник для$(): Алюминий$(br)$(thing)Формула$(): Al₂O₃",
       "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Зелёный сапфир",
+      "name": "Зеленый сапфир",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/green_sapphire"
@@ -111,7 +111,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 15%$(br)$(thing)Используется для$(): Алюминий$(br)$(thing)Формула$(): Al₂O₃",
+      "text": "$(thing)Процент нагрузки$(): 15%$(br)$(thing)Источник для$(): Алюминий$(br)$(thing)Формула$(): Al₂O₃",
       "type": "patchouli:multiblock"
     },
     {
@@ -131,13 +131,13 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 5%$(br)$(thing)Плавится в$(): Железо$(br)$(thing)Формула$(): Fe₂O₃",
+      "text": "$(thing)Процент нагрузки$(): 5%$(br)$(thing)Плавится в$(): Серый чугун$(br)$(thing)Формула$(): Fe₂O₃",
       "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/220 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 25%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): 0 — 70$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 45$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 15$(br2)$(thing)Виды камней$(): Аргиллит, Базальт, Дацит, Известняк, Конгломерат, Красный гранит, Кремнистый сланец, Мел, Сланец, Трахит",
-      "title": "Апатит и Пирохлор",
+      "text": "$(thing)$(t:Шанс появления жилы на чанк. Чем меньше значение, тем больше вероятность.)Редкость$(/t)$(): 1/220 чанки$(br)$(thing)$(t:Процент блоков в жиле, которые являются рудой, а не камнем. Больший шанс означает больше руд.)Плотность$(/t)$(): 25%$(br)$(thing)$(t:Форма жилы.)Тип$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Промежуток по Y, в котором может генерироваться жила.)Y$(/t)$(): 0 — 70$(br)$(thing)$(t:Средний диаметр жилы)Размер$(/t)$(): 45$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше этого числа, руда не генерирует поверхностные индикаторы.) Максимальная глубина индикатора(/t)$(): 15$(br)$(thing)Биомы$(): когда угодно$(br2)$(thing)Виды камня$(): Аргиллит, Базальт, Дацит, Известняк, Конгломерат, Красный гранит, Кремнистый сланец, Мел, Сланец, Трахит",
+      "title": "Апатит, Трикальцийфосфат...",
       "type": "patchouli:text",
       "anchor": "mars_apatite"
     },
@@ -158,7 +158,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 47%$(br)$(thing)Используется для$(): Кальций, Фосфор$(br)$(thing)Формула$(): Ca₅(PO₄)₃Cl",
+      "text": "$(thing)Процент нагрузки$(): 47%$(br)$(thing)Источник для$(): Кальций, Фосфор, Forestry PTSD$(br)$(thing)Формула$(): Ca₅(PO₄)₃Cl",
       "type": "patchouli:multiblock"
     },
     {
@@ -178,7 +178,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 33%$(br)$(thing)Используется для$(): Кальций, Фосфор$(br)$(thing)Формула$(): Ca₃(PO₄)₂",
+      "text": "$(thing)Процент нагрузки$(): 33%$(br)$(thing)Используется для$(): Медицина, Удобрение$(br)$(thing)Формула$(): Ca₃(PO₄)₂",
       "type": "patchouli:multiblock"
     },
     {
@@ -198,7 +198,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 14%$(br)$(thing)Используется для$(): Ниобий$(br)$(thing)Формула$(): Ca₂Nb₂O₇",
+      "text": "$(thing)Процент нагрузки$(): 14%$(br)$(thing)Источник для$(): Ниобий$(br)$(thing)Формула$(): Ca₂Nb₂O₇",
       "type": "patchouli:multiblock"
     },
     {
@@ -218,7 +218,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 4%$(br)$(thing)Плавится в$(): Железо$(br)$(thing)Формула$(): Fe₂O₃",
+      "text": "$(thing)Процент нагрузки$(): 4%$(br)$(thing)Плавится в$(): Серый чугун$(br)$(thing)Формула$(): Fe₂O₃",
       "type": "patchouli:multiblock"
     },
     {
@@ -228,8 +228,8 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/215 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 40%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): 0 — 70$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 45$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 15$(br2)$(thing)Виды камней$(): Аргиллит, Базальт, Габбро, Диорит, Доломит, Кварцит, Кремнистый сланец, Мел, Трахит",
-      "title": "Бастнезит и Монацит",
+      "text": "$(thing)$(t:Шанс появления жилы на чанк. Чем меньше значение, тем больше вероятность.)Редкость$(/t)$(): 1/215 чанки$(br)$(thing)$(t:Процент блоков в жиле, которые являются рудой, а не камнем. Больший шанс означает больше руд.)Плотность$(/t)$(): 40%$(br)$(thing)$(t:Форма жилы.)Тип$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Промежуток по Y, в котором может генерироваться жила.)Y$(/t)$(): 0 — 70$(br)$(thing)$(t:Средний диаметр жилы)Размер$(/t)$(): 45$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше этого числа, руда не генерирует поверхностные индикаторы.) Максимальная глубина индикатора(/t)$(): 15$(br)$(thing)Биомы$(): когда угодно$(br2)$(thing)Виды камня$(): Аргиллит, Базальт, Габбро, Диорит, Доломит, Кварцит, Кремнистый сланец, Мел, Трахит",
+      "title": "Бастнезит, Монацит, Неодим...",
       "type": "patchouli:text",
       "anchor": "mars_neodynium"
     },
@@ -250,7 +250,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 58%$(br)$(thing)Используется для$(): Церий, Фтор$(br)$(thing)Формула$(): CeCFO₃",
+      "text": "$(thing)Процент нагрузки$(): 58%$(br)$(thing)Источник для$(): Церий, Фтор$(br)$(thing)Формула$(): CeCFO₃",
       "type": "patchouli:multiblock"
     },
     {
@@ -270,7 +270,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 29%$(br)$(thing)Используется для$(): Фосфор, Редкая земля$(br)$(thing)Формула$(): ?(PO₄)",
+      "text": "$(thing)Процент нагрузки$(): 29%$(br)$(thing)Источник для$(): Фосфор, Редкоземельные элементы$(br)$(thing)Формула$(): ?(PO₄)",
       "type": "patchouli:multiblock"
     },
     {
@@ -290,7 +290,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 5%$(br)$(thing)Используется для$(): Неодим$(br)$(thing)Формула$(): Nd",
+      "text": "$(thing)Процент нагрузки$(): 5%$(br)$(thing)Источник для$(): Неодим$(br)$(thing)Формула$(): Nd",
       "type": "patchouli:multiblock"
     },
     {
@@ -310,7 +310,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 5%$(br)$(thing)Плавится в$(): Железо$(br)$(thing)Формула$(): Fe₂O₃",
+      "text": "$(thing)Процент нагрузки$(): 5%$(br)$(thing)Плавится в$(): Серый чугун$(br)$(thing)Формула$(): Fe₂O₃",
       "type": "patchouli:multiblock"
     },
     {
@@ -320,652 +320,8 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/370 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 30%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -30 — 0$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 60$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 20$(br2)$(thing)Виды камней$(): Габбро, Гранит, Диорит, Красный гранит",
-      "title": "Борнит & Куперит",
-      "type": "patchouli:text",
-      "anchor": "deep_mars_sheldonite"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Борнит",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/bornite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 35%$(br)$(thing)Используется для$(): Медь$(br)$(thing)Формула$(): Cu₅FeS₄",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Куперит",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/cooperite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 25%$(br)$(thing)Используется для$(): Платина, Никель, Палладий$(br)$(thing)Формула$(): Pt₃NiSPd",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Никель",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/nickel"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 25%$(br)$(thing)Плавится в$(): Никель$(br)$(thing)Формула$(): Ni",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Платина",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/platinum"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 15%$(br)$(thing)Плавится в$(): Платина$(br)$(thing)Формула$(): Pt",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:empty",
-      "draw_filler": true,
-      "type": "patchouli:empty"
-    },
-    {
-      "Type": "patchouli:text",
-      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/140 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 25%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): 80 — 180$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 45$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 40$(br2)$(thing)Виды камней$(): Аргиллит, Аргиллит, Базальт, Габбро, Гранит, Дацит, Диорит, Доломит, Известняк, Кварцит, Конгломерат, Красный гранит, Кремнистый сланец, Мел, Сланец, Трахит",
-      "title": "Висмут",
-      "type": "patchouli:text",
-      "anchor": "mars_surface_bismuthinite"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Висмут",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/bismuth"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 40%$(br)$(thing)Плавится в$(): Висмут$(br)$(thing)Формула$(): Bi",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Гематит",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/hematite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 20%$(br)$(thing)Плавится в$(): Железо$(br)$(thing)Формула$(): Fe₂O₃",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Сера",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/sulfur"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 20%$(br)$(thing)Используется для$(): Сера$(br)$(thing)Формула$(): S",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Гипс",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/gypsum"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 20%$(br)$(thing)Используется для$(): Алебастр (можно покрасить) и его кирпичи$(br)$(thing)Формула$(): CaS(H₂O)₂O₄",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:empty",
-      "draw_filler": true,
-      "type": "patchouli:empty"
-    },
-    {
-      "Type": "patchouli:text",
-      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/250 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 40%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): 0 — 70$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 55$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 40$(br2)$(thing)Виды камней$(): Аргиллит, Аргиллит, Базальт, Гранит, Дацит, Известняк, Кварцит, Красный гранит, Мел, Сланец",
-      "title": "Гарниерит и Кобальтит",
-      "type": "patchouli:text",
-      "anchor": "mars_nickel"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Гарниерит",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/garnierite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 35%$(br)$(thing)Плавится в$(): Никель$(br)$(thing)Формула$(): NiO",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Никель",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/nickel"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 28%$(br)$(thing)Плавится в$(): Никель$(br)$(thing)Формула$(): Ni",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Кобальтит",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/cobaltite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 28%$(br)$(thing)Используется для$(): Кобальт, Мышьяк$(br)$(thing)Формула$(): CoAsS$(br)$(thing)Ядовит$(): $(c)$(t:Требуется Медицинская маска)Отравление мышьяком (Вдыхание вредных веществ)$(/t)$()",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Гематит",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/hematite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 7%$(br)$(thing)Плавится в$(): Железо$(br)$(thing)Формула$(): Fe₂O₃",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:empty",
-      "draw_filler": true,
-      "type": "patchouli:empty"
-    },
-    {
-      "Type": "patchouli:text",
-      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/210 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 40%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): 0 — 70$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 40$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 30$(br2)$(thing)Виды камней$(): Аргиллит, Аргиллит, Базальт, Дацит, Доломит, Известняк, Кварцит, Конгломерат, Красный гранит",
-      "title": "Гематит и Лимонит",
-      "type": "patchouli:text",
-      "anchor": "mars_hematite"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Гематит",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/hematite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 50%$(br)$(thing)Плавится в$(): Железо$(br)$(thing)Формула$(): Fe₂O₃",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Жёлтый лимонит",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/yellow_limonite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 30%$(br)$(thing)Плавится в$(): Железо$(br)$(thing)Формула$(): FeHO₂",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Гётит",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/goethite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 15%$(br)$(thing)Плавится в$(): Железо$(br)$(thing)Формула$(): FeHO₂",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Самородная Золото",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/gold"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 5%$(br)$(thing)Плавится в$(): Золото$(br)$(thing)Формула$(): Au",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:empty",
-      "draw_filler": true,
-      "type": "patchouli:empty"
-    },
-    {
-      "Type": "patchouli:text",
-      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/140 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 25%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): 80 — 180$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 45$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 40$(br2)$(thing)Виды камней$(): Аргиллит, Аргиллит, Базальт, Габбро, Гранит, Дацит, Диорит, Доломит, Известняк, Кварцит, Конгломерат, Красный гранит, Кремнистый сланец, Мел, Сланец, Трахит",
-      "title": "Гематит и Лимонит",
-      "type": "patchouli:text",
-      "anchor": "mars_surface_hematite"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Гематит",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/hematite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 55%$(br)$(thing)Плавится в$(): Железо$(br)$(thing)Формула$(): Fe₂O₃",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Жёлтый лимонит",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/yellow_limonite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 33%$(br)$(thing)Плавится в$(): Железо$(br)$(thing)Формула$(): FeHO₂",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Самородная Золото",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/gold"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 5%$(br)$(thing)Плавится в$(): Золото$(br)$(thing)Формула$(): Au",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Кальцит",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/calcite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 5%$(br)$(thing)Используется для$(): Кальций$(br)$(thing)Формула$(): CaCO₃",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:empty",
-      "draw_filler": true,
-      "type": "patchouli:empty"
-    },
-    {
-      "Type": "patchouli:text",
-      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/220 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 40%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Высокая и узкая)Трубчатая жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): 0 — 120$(br)$(thing)Высота$(): 60$(br)$(thing)Радиус$(): 9$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 50$(br2)$(thing)Виды камней$(): Аргиллит, Габбро, Гранит, Дацит, Диорит, Красный гранит, Трахит",
-      "title": "Графит и Алмаз",
-      "type": "patchouli:text",
-      "anchor": "mars_graphite"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Графит",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/graphite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 45%$(br)$(thing)Используется для$(): $(l:mechanics/fire_clay)Огнеупорная глина$(), Графен$(br)$(thing)Формула$(): C",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Уголь",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/coal"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 25%$(br)$(thing)Используется для$(): Топливо, Ректификация$(br)$(thing)Формула$(): C",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Алмаз",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/diamond"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 20%$(br)$(thing)Используется для$(): Измельчители, AE2$(br)$(thing)Формула$(): C",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Гематит",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/hematite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 10%$(br)$(thing)Плавится в$(): Железо$(br)$(thing)Формула$(): Fe₂O₃",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:empty",
-      "draw_filler": true,
-      "type": "patchouli:empty"
-    },
-    {
-      "Type": "patchouli:text",
-      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/230 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 40%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): 0 — 70$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 40$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 15$(br2)$(thing)Виды камней$(): Аргиллит, Габбро, Гранит, Диорит, Кремнистый сланец, Мел, Сланец",
-      "title": "Золото, Электротин & Боксит",
-      "type": "patchouli:text",
-      "anchor": "mars_gold"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Самородная Золото",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/gold"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 55%$(br)$(thing)Плавится в$(): Золото$(br)$(thing)Формула$(): Au",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Боксит",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/bauxite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 20%$(br)$(thing)Используется для$(): Алюминий$(br)$(thing)Формула$(): Al₂O₃",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Электротин",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/electrotine"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 20%$(br)$(thing)Используется для$(): Золото, Серебро, Редстоун$(br)$(thing)Формула$(): (Si(FeS₂)₅(CrAl₂O₃)Hg₃)(AgAu)",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Зелёный сапфир",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/green_sapphire"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 5%$(br)$(thing)Используется для$(): Алюминий$(br)$(thing)Формула$(): Al₂O₃",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:empty",
-      "draw_filler": true,
-      "type": "patchouli:empty"
-    },
-    {
-      "Type": "patchouli:text",
-      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/350 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 35%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Высокая и узкая)Трубчатая жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -20 — 50$(br)$(thing)Высота$(): 40$(br)$(thing)Радиус$(): 8$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 15$(br2)$(thing)Виды камней$(): Андезит, Базальт, Дацит, Риолит",
-      "title": "Изумруд и Бериллий",
+      "text": "$(thing)$(t:Шанс появления жилы на чанк. Чем меньше значение, тем больше вероятность.)Редкость$(/t)$(): 1/350 чанки$(br)$(thing)$(t:Процент блоков в жиле, которые являются рудой, а не камнем. Больший шанс означает больше руд.)Плотность$(/t)$(): 35%$(br)$(thing)$(t:Форма жилы.)Тип$(/t)$(): $(t:Высокая и узкая жила)Жила Трубочкой$(/t)$(br)$(thing)$(t:Промежуток по Y, в котором может генерироваться жила.)Y$(/t)$(): -20 — 50$(br)$(thing)Высота$(): 40$(br)$(thing)Радиус$(): 8$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше этого числа, руда не генерирует поверхностные индикаторы.) Максимальная глубина индикатора(/t)$(): 15$(br)$(thing)Биомы$(): когда угодно$(br2)$(thing)Виды камня$(): Андезит, Базальт, Дацит, Риолит",
+      "title": "Бериллий, Изумруд, Реальгар",
       "type": "patchouli:text",
       "anchor": "mars_beryllium"
     },
@@ -986,7 +342,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 50%$(br)$(thing)Используется для$(): MV компоненты, Предметные фильтры (Тэг)$(br)$(thing)Формула$(): Be₃Al₂Si₆O₁₈",
+      "text": "$(thing)Процент нагрузки$(): 50%$(br)$(thing)Используется для$(): Бериллий, Компоненты MV, Предметный фильтр (Тэги)$(br)$(thing)Формула$(): Be₃Al₂Si₆O₁₈",
       "type": "patchouli:multiblock"
     },
     {
@@ -1006,7 +362,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 35%$(br)$(thing)Используется для$(): Эндер-жемчуг$(br)$(thing)Формула$(): Be$(br)$(thing)Ядовит$(): $(c)$(t:Требуется Резиновые перчатки)Беррилиоз (Контакт с кожей)$(/t)$()",
+      "text": "$(thing)Процент нагрузки$(): 35%$(br)$(thing)Источник для$(): Бериллий$(br)$(thing)Формула$(): Be$(br)$(thing)Опасность$(): $(c)$(t:Требуются резиновые перчатки)Бериллиоз (Контакт с кожей)$(/t)$()",
       "type": "patchouli:multiblock"
     },
     {
@@ -1026,22 +382,22 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 15%$(br)$(thing)Используется для$(): Мышьяк$(br)$(thing)Формула$(): As₄S₄$(br)$(thing)Ядовит$(): $(c)$(t:Требуется Медицинская маска)Отравление мышьяком (Вдыхание вредных веществ)$(/t)$()",
+      "text": "$(thing)Процент нагрузки$(): 15%$(br)$(thing)Источник для$(): Мышьяк$(br)$(thing)Формула$(): As₄S₄$(br)$(thing)Опасность$(): $(c)$(t:Требуется медицинская маска)Отправление мышьяком (Вдыхание вредных веществ)$(/t)$()",
       "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/135 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 25%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): 80 — 180$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 45$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 40$(br2)$(thing)Виды камней$(): Аргиллит, Аргиллит, Базальт, Габбро, Гранит, Дацит, Диорит, Доломит, Известняк, Кварцит, Конгломерат, Красный гранит, Кремнистый сланец, Мел, Сланец, Трахит",
-      "title": "Касситерит",
+      "text": "$(thing)$(t:Шанс появления жилы на чанк. Чем меньше значение, тем больше вероятность.)Редкость$(/t)$(): 1/215 чанки$(br)$(thing)$(t:Процент блоков в жиле, которые являются рудой, а не камнем. Больший шанс означает больше руд.)Плотность$(/t)$(): 60%$(br)$(thing)$(t:Форма жилы.)Тип$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Промежуток по Y, в котором может генерироваться жила.)Y$(/t)$(): 0 — 70$(br)$(thing)$(t:Средний диаметр жилы)Размер$(/t)$(): 55$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше этого числа, руда не генерирует поверхностные индикаторы.) Максимальная глубина индикатора(/t)$(): 10$(br)$(thing)Биомы$(): когда угодно$(br2)$(thing)Виды камня$(): Аргиллит, Аргиллит, Базальт, Гранит, Дацит, Диорит, Доломит, Конгломерат, Красный гранит, Мел, Трахит",
+      "title": "Битумный уголь, Гематит",
       "type": "patchouli:text",
-      "anchor": "mars_surface_cassiterite"
+      "anchor": "mars_coal"
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Касситерит",
+      "name": "Битумный уголь",
       "multiblock": {
         "mapping": {
-          "0": "#forge:ores/cassiterite"
+          "0": "#forge:ores/coal"
         },
         "pattern": [
           [
@@ -1053,114 +409,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 55%$(br)$(thing)Плавится в$(): Олово$(br)$(thing)Формула$(): SnO₂",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Олово",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/tin"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 35%$(br)$(thing)Плавится в$(): Олово$(br)$(thing)Формула$(): Sn",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Селитра",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/saltpeter"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 10%$(br)$(thing)Используется для$(): Калий, Азот$(br)$(thing)Формула$(): KNO₃",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:text",
-      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/210 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 30%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): 0 — 70$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 40$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 15$(br2)$(thing)Виды камней$(): Аргиллит, Аргиллит, Гранит, Известняк, Кварцит, Красный гранит, Кремнистый сланец, Мел, Сланец, Трахит",
-      "title": "Кварцит, Асбест & Барит",
-      "type": "patchouli:text",
-      "anchor": "mars_quartzite"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Кварцит",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/quartzite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 41%$(br)$(thing)Используется для$(): LV компоненты$(br)$(thing)Формула$(): SiO₂",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Барит",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/barite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 35%$(br)$(thing)Используется для$(): Барий$(br)$(thing)Формула$(): BaSO₂",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Асбест",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/asbestos"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 17%$(br)$(thing)Используется для$(): Магний$(br)$(thing)Формула$(): Mg₃Si₂H₄O₉$(br)$(thing)Ядовит$(): $(c)$(t:Требуется Медицинская маска)Асбестоз (Вдыхание вредных веществ)$(/t)$()",
+      "text": "$(thing)Процент нагрузки$(): 70%$(br)$(thing)Используется для$(): Топлива, Дистилляции$(br)$(thing)Формула$(): C",
       "type": "patchouli:multiblock"
     },
     {
@@ -1180,7 +429,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 5%$(br)$(thing)Плавится в$(): Железо$(br)$(thing)Формула$(): Fe₂O₃",
+      "text": "$(thing)Процент нагрузки$(): 30%$(br)$(thing)Плавится в$(): Серый чугун$(br)$(thing)Формула$(): Fe₂O₃",
       "type": "patchouli:multiblock"
     },
     {
@@ -1190,17 +439,17 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/200 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 25%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): 0 — 70$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 30$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 20$(br2)$(thing)Виды камней$(): Аргиллит, Доломит, Известняк, Кремнистый сланец, Мел, Сланец",
-      "title": "Лазурит, Лазуритит и Содалит",
+      "text": "$(thing)$(t:Шанс появления жилы на чанк. Чем меньше значение, тем больше вероятность.)Редкость$(/t)$(): 1/370 чанки$(br)$(thing)$(t:Процент блоков в жиле, которые являются рудой, а не камнем. Больший шанс означает больше руд.)Плотность$(/t)$(): 30%$(br)$(thing)$(t:Форма жилы.)Тип$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Промежуток по Y, в котором может генерироваться жила.)Y$(/t)$(): -30 — 0$(br)$(thing)$(t:Средний диаметр жилы)Размер$(/t)$(): 60$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше этого числа, руда не генерирует поверхностные индикаторы.) Максимальная глубина индикатора(/t)$(): 20$(br)$(thing)Биомы$(): когда угодно$(br2)$(thing)Виды камня$(): Габбро, Гранит, Диорит, Красный гранит",
+      "title": "Борнит, Куперит, Никель...",
       "type": "patchouli:text",
-      "anchor": "mars_lapis"
+      "anchor": "deep_mars_sheldonite"
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Лазурит",
+      "name": "Борнит",
       "multiblock": {
         "mapping": {
-          "0": "#forge:ores/lazurite"
+          "0": "#forge:ores/bornite"
         },
         "pattern": [
           [
@@ -1212,15 +461,15 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 35%$(br)$(thing)Используется для$(): Алюминий, Кальций, Натрий$(br)$(thing)Формула$(): Al₆Si₆Ca₈Na₈",
+      "text": "$(thing)Процент нагрузки$(): 35%$(br)$(thing)Плавится в$(): Медь$(br)$(thing)Формула$(): Cu₅FeS₄",
       "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Содалит",
+      "name": "Куперит",
       "multiblock": {
         "mapping": {
-          "0": "#forge:ores/sodalite"
+          "0": "#forge:ores/cooperite"
         },
         "pattern": [
           [
@@ -1232,15 +481,15 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 25%$(br)$(thing)Используется для$(): Алюминий, Натрий$(br)$(thing)Формула$(): Al₃Si₃Na₄Cl",
+      "text": "$(thing)Процент нагрузки$(): 25%$(br)$(thing)Источник для$(): Платина, Никель, Палладий$(br)$(thing)Формула$(): Pt₃NiSPd",
       "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Лазуритит",
+      "name": "Никель",
       "multiblock": {
         "mapping": {
-          "0": "#forge:ores/lapis"
+          "0": "#forge:ores/nickel"
         },
         "pattern": [
           [
@@ -1252,15 +501,15 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 25%$(br)$(thing)Используется для$(): Лазурит, Содалит, Пирит, Кальцит",
+      "text": "$(thing)Процент нагрузки$(): 25%$(br)$(thing)Плавится в$(): Никель$(br)$(thing)Формула$(): Ni",
       "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Кальцит",
+      "name": "Платина",
       "multiblock": {
         "mapping": {
-          "0": "#forge:ores/calcite"
+          "0": "#forge:ores/platinum"
         },
         "pattern": [
           [
@@ -1272,7 +521,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 15%$(br)$(thing)Используется для$(): Кальций$(br)$(thing)Формула$(): CaCO₃",
+      "text": "$(thing)Процент нагрузки$(): 15%$(br)$(thing)Плавится в$(): Платина$(br)$(thing)Формула$(): Pt",
       "type": "patchouli:multiblock"
     },
     {
@@ -1282,17 +531,17 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/230 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 30%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): 0 — 70$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 42$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 15$(br2)$(thing)Виды камней$(): Аргиллит, Аргиллит, Базальт, Габбро, Известняк, Красный гранит, Кремнистый сланец, Мел, Сланец, Трахит",
-      "title": "Марганец и Тантал",
+      "text": "$(thing)$(t:Шанс появления жилы на чанк. Чем меньше значение, тем больше вероятность.)Редкость$(/t)$(): 1/140 чанки$(br)$(thing)$(t:Процент блоков в жиле, которые являются рудой, а не камнем. Больший шанс означает больше руд.)Плотность$(/t)$(): 25%$(br)$(thing)$(t:Форма жилы.)Тип$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Промежуток по Y, в котором может генерироваться жила.)Y$(/t)$(): 80 — 180$(br)$(thing)$(t:Средний диаметр жилы)Размер$(/t)$(): 45$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше этого числа, руда не генерирует поверхностные индикаторы.) Максимальная глубина индикатора(/t)$(): 40$(br)$(thing)Биомы$(): когда угодно$(br2)$(thing)Виды камня$(): Аргиллит, Аргиллит, Базальт, Габбро, Гранит, Дацит, Диорит, Доломит, Известняк, Кварцит, Конгломерат, Красный гранит, Кремнистый сланец, Мел, Сланец, Трахит",
+      "title": "Висмут, Гематит, Сера, Гипс",
       "type": "patchouli:text",
-      "anchor": "mars_tantalite"
+      "anchor": "mars_surface_bismuthinite"
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Пиролюзит",
+      "name": "Висмут",
       "multiblock": {
         "mapping": {
-          "0": "#forge:ores/pyrolusite"
+          "0": "#forge:ores/bismuth"
         },
         "pattern": [
           [
@@ -1304,139 +553,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 42%$(br)$(thing)Используется для$(): Марганец$(br)$(thing)Формула$(): MnO₂",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Танталит",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/tantalite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 36%$(br)$(thing)Используется для$(): Марганец, Тантал$(br)$(thing)Формула$(): MnTa₂O₆",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Гроссуляр",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/grossular"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 10%$(br)$(thing)Используется для$(): Кальций, Алюминий$(br)$(thing)Формула$(): Ca₃Al₂Si₃O₁₂",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Спасерит",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/spessartine"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 10%$(br)$(thing)Используется для$(): Марганец, Алюминий$(br)$(thing)Формула$(): Al₂Mn₃Si₃O₁₂",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:empty",
-      "draw_filler": true,
-      "type": "patchouli:empty"
-    },
-    {
-      "Type": "patchouli:text",
-      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/220 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 40%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): 0 — 70$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 50$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 40$(br2)$(thing)Виды камней$(): Аргиллит, Аргиллит, Базальт, Дацит, Доломит, Известняк, Кварцит, Конгломерат, Сланец, Трахит",
-      "title": "Медь и Халькопирит",
-      "type": "patchouli:text",
-      "anchor": "mars_copper"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Халькопирит",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/chalcopyrite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 65%$(br)$(thing)Плавится в$(): Медь$(br)$(thing)Формула$(): CuFeS₂",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Самородная Медь",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/copper"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 20%$(br)$(thing)Плавится в$(): Медь$(br)$(thing)Формула$(): Cu",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Пирит",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/pyrite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 10%$(br)$(thing)Плавится в$(): Железо$(br)$(thing)Формула$(): FeS₂",
+      "text": "$(thing)Процент нагрузки$(): 40%$(br)$(thing)Плавится в$(): Висмут$(br)$(thing)Формула$(): Bi",
       "type": "patchouli:multiblock"
     },
     {
@@ -1456,7 +573,47 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 5%$(br)$(thing)Плавится в$(): Железо$(br)$(thing)Формула$(): Fe₂O₃",
+      "text": "$(thing)Процент нагрузки$(): 20%$(br)$(thing)Плавится в$(): Серый чугун$(br)$(thing)Формула$(): Fe₂O₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Сера",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/sulfur"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент нагрузки$(): 20%$(br)$(thing)Источник для$(): Сера$(br)$(thing)Формула$(): S",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Гипс",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/gypsum"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент нагрузки$(): 20%$(br)$(thing)Используется для$(): Алебастровые (окрашиваемые) кирпичи, Бетон$(br)$(thing)Формула$(): CaS(H₂O)₂O₄",
       "type": "patchouli:multiblock"
     },
     {
@@ -1466,75 +623,8 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/370 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 30%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -30 — 0$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 60$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 20$(br2)$(thing)Виды камней$(): Габбро, Гранит, Диорит, Красный гранит",
-      "title": "Редстоун & Хром",
-      "type": "patchouli:text",
-      "anchor": "deep_mars_chromite"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Редстоун",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/redstone"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 45%$(br)$(thing)Плавится в$(): Редстоун$(br)$(thing)Формула$(): Si(FeS₂)₅(CrAl₂O₃)Hg₃",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Рубин",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/ruby"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 35%$(br)$(thing)Используется для$(): Хром, Алюминий$(br)$(thing)Формула$(): CrAl₂O₃",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Хромит",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/chromite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 20%$(br)$(thing)Используется для$(): Хром$(br)$(thing)Формула$(): FeCr₂O₄$(br)$(thing)Ядовит$(): $(c)$(t:Требуется Резиновые перчатки)Раздражитель (Контакт с кожей)$(/t)$()",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:text",
-      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/215 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 40%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): 0 — 70$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 50$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 40$(br2)$(thing)Виды камней$(): Аргиллит, Аргиллит, Базальт, Габбро, Гранит, Дацит, Красный гранит, Кремнистый сланец, Мел, Сланец",
-      "title": "Серебро, Галена и Свинец",
+      "text": "$(thing)$(t:Шанс появления жилы на чанк. Чем меньше значение, тем больше вероятность.)Редкость$(/t)$(): 1/215 чанки$(br)$(thing)$(t:Процент блоков в жиле, которые являются рудой, а не камнем. Больший шанс означает больше руд.)Плотность$(/t)$(): 40%$(br)$(thing)$(t:Форма жилы.)Тип$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Промежуток по Y, в котором может генерироваться жила.)Y$(/t)$(): 0 — 70$(br)$(thing)$(t:Средний диаметр жилы)Размер$(/t)$(): 50$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше этого числа, руда не генерирует поверхностные индикаторы.) Максимальная глубина индикатора(/t)$(): 40$(br)$(thing)Биомы$(): когда угодно$(br2)$(thing)Виды камня$(): Аргиллит, Аргиллит, Базальт, Габбро, Гранит, Дацит, Красный гранит, Кремнистый сланец, Мел, Сланец",
+      "title": "Галена, Самородное серебро...",
       "type": "patchouli:text",
       "anchor": "mars_galena"
     },
@@ -1555,7 +645,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 40%$(br)$(thing)Плавится в$(): Свинец$(br)$(thing)Формула$(): PbS$(br)$(thing)Ядовит$(): $(c)$(t:Требуется Медицинская маска)Слабо ядовитый (Вдыхание вредных веществ)$(/t)$()",
+      "text": "$(thing)Процент нагрузки$(): 40%$(br)$(thing)Плавится в$(): Свинец$(br)$(thing)Формула$(): PbS$(br)$(thing)Опасность$(): $(c)$(t:Требуется медицинская маска)Слабое отравление (Вдыхание вредных веществ)$(/t)$()",
       "type": "patchouli:multiblock"
     },
     {
@@ -1575,12 +665,12 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 33%$(br)$(thing)Плавится в$(): Свинец$(br)$(thing)Формула$(): Pb$(br)$(thing)Ядовит$(): $(c)$(t:Требуется Медицинская маска)Слабо ядовитый (Вдыхание вредных веществ)$(/t)$()",
+      "text": "$(thing)Процент нагрузки$(): 33%$(br)$(thing)Плавится в$(): Свинец$(br)$(thing)Формула$(): Pb$(br)$(thing)Опасность$(): $(c)$(t:Требуется медицинская маска)Слабое отравление (Вдыхание вредных веществ)$(/t)$()",
       "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Самородная Серебро",
+      "name": "Самородное серебро",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/silver"
@@ -1595,7 +685,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 20%$(br)$(thing)Плавится в$(): Серебро$(br)$(thing)Формула$(): Ag",
+      "text": "$(thing)Процент нагрузки$(): 20%$(br)$(thing)Плавится в$(): Серебро$(br)$(thing)Формула$(): Ag",
       "type": "patchouli:multiblock"
     },
     {
@@ -1615,7 +705,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 6%$(br)$(thing)Плавится в$(): Железо$(br)$(thing)Формула$(): Fe₂O₃",
+      "text": "$(thing)Процент нагрузки$(): 6%$(br)$(thing)Плавится в$(): Серый чугун$(br)$(thing)Формула$(): Fe₂O₃",
       "type": "patchouli:multiblock"
     },
     {
@@ -1625,17 +715,17 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/210 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 40%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Широкая и плоская)Дискообразная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): 0 — 70$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 40$(br)$(thing)Высота$(): 6$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 15$(br2)$(thing)Виды камней$(): Аргиллит, Аргиллит, Гранит, Диорит, Известняк, Кварцит, Красный гранит, Кремнистый сланец, Мел, Трахит",
-      "title": "Соли & Сподумен",
+      "text": "$(thing)$(t:Шанс появления жилы на чанк. Чем меньше значение, тем больше вероятность.)Редкость$(/t)$(): 1/250 чанки$(br)$(thing)$(t:Процент блоков в жиле, которые являются рудой, а не камнем. Больший шанс означает больше руд.)Плотность$(/t)$(): 40%$(br)$(thing)$(t:Форма жилы.)Тип$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Промежуток по Y, в котором может генерироваться жила.)Y$(/t)$(): 0 — 70$(br)$(thing)$(t:Средний диаметр жилы)Размер$(/t)$(): 55$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше этого числа, руда не генерирует поверхностные индикаторы.) Максимальная глубина индикатора(/t)$(): 40$(br)$(thing)Биомы$(): когда угодно$(br2)$(thing)Виды камня$(): Аргиллит, Аргиллит, Базальт, Гранит, Дацит, Известняк, Кварцит, Красный гранит, Мел, Сланец",
+      "title": "Гарниерит, Никель, Кобальтит...",
       "type": "patchouli:text",
-      "anchor": "mars_salt"
+      "anchor": "mars_nickel"
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Сподумен",
+      "name": "Гарниерит",
       "multiblock": {
         "mapping": {
-          "0": "#forge:ores/spodumene"
+          "0": "#forge:ores/garnierite"
         },
         "pattern": [
           [
@@ -1647,99 +737,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 35%$(br)$(thing)Используется для$(): Литий, Алюминий$(br)$(thing)Формула$(): LiAlSi₂O₆",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Галит",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/salt"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 30%$(br)$(thing)Используется для$(): Натрий, Хлор$(br)$(thing)Формула$(): NaCl",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Сильвин",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/rock_salt"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 20%$(br)$(thing)Используется для$(): Калий, Хлор, Удобрения$(br)$(thing)Формула$(): KCl",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Лепидолит",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/lepidolite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 15%$(br)$(thing)Используется для$(): Калий, Литий, Алюминий, Фтор$(br)$(thing)Формула$(): KLi₃Al₄F₂O₁₀",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:empty",
-      "draw_filler": true,
-      "type": "patchouli:empty"
-    },
-    {
-      "Type": "patchouli:text",
-      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/150 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 25%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): 80 — 180$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 45$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 40$(br2)$(thing)Виды камней$(): Аргиллит, Аргиллит, Базальт, Габбро, Гранит, Дацит, Диорит, Доломит, Известняк, Кварцит, Конгломерат, Красный гранит, Кремнистый сланец, Мел, Сланец, Трахит",
-      "title": "Сфалерит & Галена",
-      "type": "patchouli:text",
-      "anchor": "mars_surface_nickel_galena"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Галена",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/galena"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 35%$(br)$(thing)Плавится в$(): Свинец$(br)$(thing)Формула$(): PbS$(br)$(thing)Ядовит$(): $(c)$(t:Требуется Медицинская маска)Слабо ядовитый (Вдыхание вредных веществ)$(/t)$()",
+      "text": "$(thing)Процент нагрузки$(): 35%$(br)$(thing)Плавится в$(): Никель$(br)$(thing)Формула$(): NiO",
       "type": "patchouli:multiblock"
     },
     {
@@ -1759,47 +757,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 23%$(br)$(thing)Плавится в$(): Никель$(br)$(thing)Формула$(): Ni",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Сфалерит",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/sphalerite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 17%$(br)$(thing)Плавится в$(): Цинк$(br)$(thing)Формула$(): ZnS",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Самородная Серебро",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/silver"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 11%$(br)$(thing)Плавится в$(): Серебро$(br)$(thing)Формула$(): Ag",
+      "text": "$(thing)Процент нагрузки$(): 28%$(br)$(thing)Плавится в$(): Никель$(br)$(thing)Формула$(): Ni",
       "type": "patchouli:multiblock"
     },
     {
@@ -1819,54 +777,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 11%$(br)$(thing)Используется для$(): Кобальт, Мышьяк$(br)$(thing)Формула$(): CoAsS$(br)$(thing)Ядовит$(): $(c)$(t:Требуется Медицинская маска)Отравление мышьяком (Вдыхание вредных веществ)$(/t)$()",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:text",
-      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/215 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 20%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): 0 — 70$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 45$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 30$(br2)$(thing)Виды камней$(): Аргиллит, Базальт, Габбро, Гранит, Дацит, Диорит, Кремнистый сланец, Мел, Трахит",
-      "title": "Сфалерит & Пирит",
-      "type": "patchouli:text",
-      "anchor": "mars_sulfur"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Пирит",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/pyrite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 42%$(br)$(thing)Плавится в$(): Железо$(br)$(thing)Формула$(): FeS₂",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Сфалерит",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/sphalerite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 23%$(br)$(thing)Плавится в$(): Цинк$(br)$(thing)Формула$(): ZnS",
+      "text": "$(thing)Процент нагрузки$(): 28%$(br)$(thing)Источник для$(): Кобальт, Мышьяк$(br)$(thing)Формула$(): CoAsS$(br)$(thing)Опасность$(): $(c)$(t:Требуется медицинская маска)Отправление мышьяком (Вдыхание вредных веществ)$(/t)$()",
       "type": "patchouli:multiblock"
     },
     {
@@ -1886,27 +797,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 19%$(br)$(thing)Плавится в$(): Железо$(br)$(thing)Формула$(): Fe₂O₃",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Сера",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/sulfur"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 14%$(br)$(thing)Используется для$(): Сера$(br)$(thing)Формула$(): S",
+      "text": "$(thing)Процент нагрузки$(): 7%$(br)$(thing)Плавится в$(): Серый чугун$(br)$(thing)Формула$(): Fe₂O₃",
       "type": "patchouli:multiblock"
     },
     {
@@ -1916,17 +807,17 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/210 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 40%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): 0 — 70$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 40$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 40$(br2)$(thing)Виды камней$(): Аргиллит, Базальт, Габбро, Дацит, Диорит, Доломит, Кварцит, Красный гранит, Кремнистый сланец, Мел, Сланец, Трахит",
-      "title": "Тетраэдрит (обычный)",
+      "text": "$(thing)$(t:Шанс появления жилы на чанк. Чем меньше значение, тем больше вероятность.)Редкость$(/t)$(): 1/210 чанки$(br)$(thing)$(t:Процент блоков в жиле, которые являются рудой, а не камнем. Больший шанс означает больше руд.)Плотность$(/t)$(): 40%$(br)$(thing)$(t:Форма жилы.)Тип$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Промежуток по Y, в котором может генерироваться жила.)Y$(/t)$(): 0 — 70$(br)$(thing)$(t:Средний диаметр жилы)Размер$(/t)$(): 40$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше этого числа, руда не генерирует поверхностные индикаторы.) Максимальная глубина индикатора(/t)$(): 30$(br)$(thing)Биомы$(): когда угодно$(br2)$(thing)Виды камня$(): Аргиллит, Аргиллит, Базальт, Дацит, Доломит, Известняк, Кварцит, Конгломерат, Красный гранит",
+      "title": "Гематит, Лимонит, Гётит...",
       "type": "patchouli:text",
-      "anchor": "mars_stibnite"
+      "anchor": "mars_hematite"
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Тетраэдрит",
+      "name": "Гематит",
       "multiblock": {
         "mapping": {
-          "0": "#forge:ores/tetrahedrite"
+          "0": "#forge:ores/hematite"
         },
         "pattern": [
           [
@@ -1938,15 +829,15 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 47%$(br)$(thing)Плавится в$(): Медь$(br)$(thing)Формула$(): Cu₃SbS₃Fe",
+      "text": "$(thing)Процент нагрузки$(): 50%$(br)$(thing)Плавится в$(): Серый чугун$(br)$(thing)Формула$(): Fe₂O₃",
       "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Самородная Медь",
+      "name": "Лимонит",
       "multiblock": {
         "mapping": {
-          "0": "#forge:ores/copper"
+          "0": "#forge:ores/yellow_limonite"
         },
         "pattern": [
           [
@@ -1958,15 +849,15 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 28%$(br)$(thing)Плавится в$(): Медь$(br)$(thing)Формула$(): Cu",
+      "text": "$(thing)Процент нагрузки$(): 30%$(br)$(thing)Плавится в$(): Серый чугун$(br)$(thing)Формула$(): FeHO₂",
       "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Стибнит",
+      "name": "Гётит",
       "multiblock": {
         "mapping": {
-          "0": "#forge:ores/stibnite"
+          "0": "#forge:ores/goethite"
         },
         "pattern": [
           [
@@ -1978,7 +869,191 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 19%$(br)$(thing)Плавится в$(): Сурьма$(br)$(thing)Формула$(): Sb₂S₃",
+      "text": "$(thing)Процент нагрузки$(): 15%$(br)$(thing)Плавится в$(): Серый чугун$(br)$(thing)Формула$(): FeHO₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Самородное золото",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/gold"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент нагрузки$(): 5%$(br)$(thing)Плавится в$(): Золото$(br)$(thing)Формула$(): Au",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)$(t:Шанс появления жилы на чанк. Чем меньше значение, тем больше вероятность.)Редкость$(/t)$(): 1/140 чанки$(br)$(thing)$(t:Процент блоков в жиле, которые являются рудой, а не камнем. Больший шанс означает больше руд.)Плотность$(/t)$(): 25%$(br)$(thing)$(t:Форма жилы.)Тип$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Промежуток по Y, в котором может генерироваться жила.)Y$(/t)$(): 80 — 180$(br)$(thing)$(t:Средний диаметр жилы)Размер$(/t)$(): 45$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше этого числа, руда не генерирует поверхностные индикаторы.) Максимальная глубина индикатора(/t)$(): 40$(br)$(thing)Биомы$(): когда угодно$(br2)$(thing)Виды камня$(): Аргиллит, Аргиллит, Базальт, Габбро, Гранит, Дацит, Диорит, Доломит, Известняк, Кварцит, Конгломерат, Красный гранит, Кремнистый сланец, Мел, Сланец, Трахит",
+      "title": "Гематит, Лимонит...",
+      "type": "patchouli:text",
+      "anchor": "mars_surface_hematite"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Гематит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/hematite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент нагрузки$(): 55%$(br)$(thing)Плавится в$(): Серый чугун$(br)$(thing)Формула$(): Fe₂O₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Лимонит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/yellow_limonite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент нагрузки$(): 33%$(br)$(thing)Плавится в$(): Серый чугун$(br)$(thing)Формула$(): FeHO₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Самородное золото",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/gold"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент нагрузки$(): 5%$(br)$(thing)Плавится в$(): Золото$(br)$(thing)Формула$(): Au",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Кальцит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/calcite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент нагрузки$(): 5%$(br)$(thing)Источник для$(): Кальций$(br)$(thing)Формула$(): CaCO₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)$(t:Шанс появления жилы на чанк. Чем меньше значение, тем больше вероятность.)Редкость$(/t)$(): 1/220 чанки$(br)$(thing)$(t:Процент блоков в жиле, которые являются рудой, а не камнем. Больший шанс означает больше руд.)Плотность$(/t)$(): 40%$(br)$(thing)$(t:Форма жилы.)Тип$(/t)$(): $(t:Высокая и узкая жила)Жила Трубочкой$(/t)$(br)$(thing)$(t:Промежуток по Y, в котором может генерироваться жила.)Y$(/t)$(): 0 — 120$(br)$(thing)Высота$(): 60$(br)$(thing)Радиус$(): 9$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше этого числа, руда не генерирует поверхностные индикаторы.) Максимальная глубина индикатора(/t)$(): 50$(br)$(thing)Биомы$(): когда угодно$(br2)$(thing)Виды камня$(): Аргиллит, Габбро, Гранит, Дацит, Диорит, Красный гранит, Трахит",
+      "title": "Графит, Битумный уголь, Алмаз...",
+      "type": "patchouli:text",
+      "anchor": "mars_graphite"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Графит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/graphite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент нагрузки$(): 45%$(br)$(thing)Используется для$(): $(l:mechanics/fire_clay)Огнеупорная глина$(), Карбид кремния, Графин$(br)$(thing)Формула$(): C",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Битумный уголь",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/coal"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент нагрузки$(): 25%$(br)$(thing)Используется для$(): Топлива, Дистилляции$(br)$(thing)Формула$(): C",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Алмаз",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/diamond"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент нагрузки$(): 20%$(br)$(thing)Используется для$(): Полировка, AE2$(br)$(thing)Формула$(): C",
       "type": "patchouli:multiblock"
     },
     {
@@ -1998,7 +1073,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 4%$(br)$(thing)Плавится в$(): Железо$(br)$(thing)Формула$(): Fe₂O₃",
+      "text": "$(thing)Процент нагрузки$(): 10%$(br)$(thing)Плавится в$(): Серый чугун$(br)$(thing)Формула$(): Fe₂O₃",
       "type": "patchouli:multiblock"
     },
     {
@@ -2008,17 +1083,17 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/140 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 25%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): 80 — 180$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 45$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 40$(br2)$(thing)Виды камней$(): Аргиллит, Аргиллит, Базальт, Габбро, Гранит, Дацит, Диорит, Доломит, Известняк, Кварцит, Конгломерат, Красный гранит, Кремнистый сланец, Мел, Сланец, Трахит",
-      "title": "Тетраэдрит (Поверхностный)",
+      "text": "$(thing)$(t:Шанс появления жилы на чанк. Чем меньше значение, тем больше вероятность.)Редкость$(/t)$(): 1/230 чанки$(br)$(thing)$(t:Процент блоков в жиле, которые являются рудой, а не камнем. Больший шанс означает больше руд.)Плотность$(/t)$(): 30%$(br)$(thing)$(t:Форма жилы.)Тип$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Промежуток по Y, в котором может генерироваться жила.)Y$(/t)$(): 0 — 70$(br)$(thing)$(t:Средний диаметр жилы)Размер$(/t)$(): 42$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше этого числа, руда не генерирует поверхностные индикаторы.) Максимальная глубина индикатора(/t)$(): 15$(br)$(thing)Биомы$(): когда угодно$(br2)$(thing)Виды камня$(): Аргиллит, Аргиллит, Базальт, Габбро, Известняк, Красный гранит, Кремнистый сланец, Мел, Сланец, Трахит",
+      "title": "Гроссуляр, Спасерит...",
       "type": "patchouli:text",
-      "anchor": "mars_surface_tetrahedrite"
+      "anchor": "mars_tantalite"
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Тетраэдрит",
+      "name": "Пиролюзит",
       "multiblock": {
         "mapping": {
-          "0": "#forge:ores/tetrahedrite"
+          "0": "#forge:ores/pyrolusite"
         },
         "pattern": [
           [
@@ -2030,15 +1105,15 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 57%$(br)$(thing)Плавится в$(): Медь$(br)$(thing)Формула$(): Cu₃SbS₃Fe",
+      "text": "$(thing)Процент нагрузки$(): 42%$(br)$(thing)Источник для$(): Марганец$(br)$(thing)Формула$(): MnO₂",
       "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Самородная Медь",
+      "name": "Танталит",
       "multiblock": {
         "mapping": {
-          "0": "#forge:ores/copper"
+          "0": "#forge:ores/tantalite"
         },
         "pattern": [
           [
@@ -2050,15 +1125,15 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 19%$(br)$(thing)Плавится в$(): Медь$(br)$(thing)Формула$(): Cu",
+      "text": "$(thing)Процент нагрузки$(): 36%$(br)$(thing)Источник для$(): Марганец, Тантал$(br)$(thing)Формула$(): MnTa₂O₆",
       "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Стибнит",
+      "name": "Гроссуляр",
       "multiblock": {
         "mapping": {
-          "0": "#forge:ores/stibnite"
+          "0": "#forge:ores/grossular"
         },
         "pattern": [
           [
@@ -2070,15 +1145,15 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 19%$(br)$(thing)Плавится в$(): Сурьма$(br)$(thing)Формула$(): Sb₂S₃",
+      "text": "$(thing)Процент нагрузки$(): 10%$(br)$(thing)Источник для$(): Кальций, Алюминий$(br)$(thing)Формула$(): Ca₃Al₂Si₃O₁₂",
       "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Редстоун",
+      "name": "Спасерит",
       "multiblock": {
         "mapping": {
-          "0": "#forge:ores/redstone"
+          "0": "#forge:ores/spessartine"
         },
         "pattern": [
           [
@@ -2090,7 +1165,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 4%$(br)$(thing)Плавится в$(): Редстоун$(br)$(thing)Формула$(): Si(FeS₂)₅(CrAl₂O₃)Hg₃",
+      "text": "$(thing)Процент нагрузки$(): 10%$(br)$(thing)Источник для$(): Магнезия, Алюминий$(br)$(thing)Формула$(): Al₂Mn₃Si₃O₁₂",
       "type": "patchouli:multiblock"
     },
     {
@@ -2100,8 +1175,351 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/220 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 25%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): 0 — 70$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 40$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 15$(br2)$(thing)Виды камней$(): Аргиллит, Аргиллит, Гранит, Дацит, Диорит, Доломит, Известняк, Кварцит, Конгломерат, Красный гранит, Сланец",
-      "title": "Трона, Тальк & Глаукониты",
+      "text": "$(thing)$(t:Шанс появления жилы на чанк. Чем меньше значение, тем больше вероятность.)Редкость$(/t)$(): 1/230 чанки$(br)$(thing)$(t:Процент блоков в жиле, которые являются рудой, а не камнем. Больший шанс означает больше руд.)Плотность$(/t)$(): 40%$(br)$(thing)$(t:Форма жилы.)Тип$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Промежуток по Y, в котором может генерироваться жила.)Y$(/t)$(): 0 — 70$(br)$(thing)$(t:Средний диаметр жилы)Размер$(/t)$(): 40$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше этого числа, руда не генерирует поверхностные индикаторы.) Максимальная глубина индикатора(/t)$(): 15$(br)$(thing)Биомы$(): когда угодно$(br2)$(thing)Виды камня$(): Аргиллит, Габбро, Гранит, Диорит, Кремнистый сланец, Мел, Сланец",
+      "title": "Зеленый сапфир, Боксит...",
+      "type": "patchouli:text",
+      "anchor": "mars_gold"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Самородное золото",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/gold"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент нагрузки$(): 55%$(br)$(thing)Плавится в$(): Золото$(br)$(thing)Формула$(): Au",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Боксит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/bauxite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент нагрузки$(): 20%$(br)$(thing)Источник для$(): Алюминий$(br)$(thing)Формула$(): Al₂O₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Электротин",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/electrotine"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент нагрузки$(): 20%$(br)$(thing)Источник для$(): Золото, Серебро, Редстоун$(br)$(thing)Формула$(): (Si(FeS₂)₅(CrAl₂O₃)Hg₃)(AgAu)",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Зеленый сапфир",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/green_sapphire"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент нагрузки$(): 5%$(br)$(thing)Источник для$(): Алюминий$(br)$(thing)Формула$(): Al₂O₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)$(t:Шанс появления жилы на чанк. Чем меньше значение, тем больше вероятность.)Редкость$(/t)$(): 1/135 чанки$(br)$(thing)$(t:Процент блоков в жиле, которые являются рудой, а не камнем. Больший шанс означает больше руд.)Плотность$(/t)$(): 25%$(br)$(thing)$(t:Форма жилы.)Тип$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Промежуток по Y, в котором может генерироваться жила.)Y$(/t)$(): 80 — 180$(br)$(thing)$(t:Средний диаметр жилы)Размер$(/t)$(): 45$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше этого числа, руда не генерирует поверхностные индикаторы.) Максимальная глубина индикатора(/t)$(): 40$(br)$(thing)Биомы$(): когда угодно$(br2)$(thing)Виды камня$(): Аргиллит, Аргиллит, Базальт, Габбро, Гранит, Дацит, Диорит, Доломит, Известняк, Кварцит, Конгломерат, Красный гранит, Кремнистый сланец, Мел, Сланец, Трахит",
+      "title": "Касситерит, Олово, Селитра",
+      "type": "patchouli:text",
+      "anchor": "mars_surface_cassiterite"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Касситерит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/cassiterite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент нагрузки$(): 55%$(br)$(thing)Плавится в$(): Олово$(br)$(thing)Формула$(): SnO₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Олово",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/tin"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент нагрузки$(): 35%$(br)$(thing)Плавится в$(): Олово$(br)$(thing)Формула$(): Sn",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Селитра",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/saltpeter"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент нагрузки$(): 10%$(br)$(thing)Источник для$(): Калий, Азот$(br)$(thing)Формула$(): KNO₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)$(t:Шанс появления жилы на чанк. Чем меньше значение, тем больше вероятность.)Редкость$(/t)$(): 1/210 чанки$(br)$(thing)$(t:Процент блоков в жиле, которые являются рудой, а не камнем. Больший шанс означает больше руд.)Плотность$(/t)$(): 30%$(br)$(thing)$(t:Форма жилы.)Тип$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Промежуток по Y, в котором может генерироваться жила.)Y$(/t)$(): 0 — 70$(br)$(thing)$(t:Средний диаметр жилы)Размер$(/t)$(): 40$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше этого числа, руда не генерирует поверхностные индикаторы.) Максимальная глубина индикатора(/t)$(): 15$(br)$(thing)Биомы$(): когда угодно$(br2)$(thing)Виды камня$(): Аргиллит, Аргиллит, Гранит, Известняк, Кварцит, Красный гранит, Кремнистый сланец, Мел, Сланец, Трахит",
+      "title": "Кварц, Барит, Асбест, Гематит",
+      "type": "patchouli:text",
+      "anchor": "mars_quartzite"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Кварц",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/quartzite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент нагрузки$(): 41%$(br)$(thing)Используется для$(): Компонентов LV$(br)$(thing)Формула$(): SiO₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Барит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/barite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент нагрузки$(): 35%$(br)$(thing)Источник для$(): Барий$(br)$(thing)Формула$(): BaSO₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Асбест",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/asbestos"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент нагрузки$(): 17%$(br)$(thing)Источник для$(): Магнезия, Рак лёгких$(br)$(thing)Формула$(): Mg₃Si₂H₄O₉$(br)$(thing)Опасность$(): $(c)$(t:Требуется медицинская маска)Асбестоз (Вдыхание вредных веществ)$(/t)$()",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Гематит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/hematite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент нагрузки$(): 5%$(br)$(thing)Плавится в$(): Серый чугун$(br)$(thing)Формула$(): Fe₂O₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)$(t:Шанс появления жилы на чанк. Чем меньше значение, тем больше вероятность.)Редкость$(/t)$(): 1/200 чанки$(br)$(thing)$(t:Процент блоков в жиле, которые являются рудой, а не камнем. Больший шанс означает больше руд.)Плотность$(/t)$(): 25%$(br)$(thing)$(t:Форма жилы.)Тип$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Промежуток по Y, в котором может генерироваться жила.)Y$(/t)$(): 0 — 70$(br)$(thing)$(t:Средний диаметр жилы)Размер$(/t)$(): 30$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше этого числа, руда не генерирует поверхностные индикаторы.) Максимальная глубина индикатора(/t)$(): 20$(br)$(thing)Биомы$(): когда угодно$(br2)$(thing)Виды камня$(): Аргиллит, Доломит, Известняк, Кремнистый сланец, Мел, Сланец",
+      "title": "Лазурит, Содалит, Лазуритит...",
+      "type": "patchouli:text",
+      "anchor": "mars_lapis"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Лазурит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/lazurite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент нагрузки$(): 35%$(br)$(thing)Источник для$(): Алюминий, Кальций, Натрий$(br)$(thing)Формула$(): Al₆Si₆Ca₈Na₈",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Содалит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/sodalite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент нагрузки$(): 25%$(br)$(thing)Источник для$(): Алюминий, Натрий$(br)$(thing)Формула$(): Al₃Si₃Na₄Cl",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Лазуритит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/lapis"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент нагрузки$(): 25%$(br)$(thing)Источник для$(): Лазурит, Содалит, Пирит, Кальцит",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Кальцит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/calcite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент нагрузки$(): 15%$(br)$(thing)Источник для$(): Кальций$(br)$(thing)Формула$(): CaCO₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)$(t:Шанс появления жилы на чанк. Чем меньше значение, тем больше вероятность.)Редкость$(/t)$(): 1/220 чанки$(br)$(thing)$(t:Процент блоков в жиле, которые являются рудой, а не камнем. Больший шанс означает больше руд.)Плотность$(/t)$(): 25%$(br)$(thing)$(t:Форма жилы.)Тип$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Промежуток по Y, в котором может генерироваться жила.)Y$(/t)$(): 0 — 70$(br)$(thing)$(t:Средний диаметр жилы)Размер$(/t)$(): 40$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше этого числа, руда не генерирует поверхностные индикаторы.) Максимальная глубина индикатора(/t)$(): 15$(br)$(thing)Биомы$(): когда угодно$(br2)$(thing)Виды камня$(): Аргиллит, Аргиллит, Гранит, Дацит, Диорит, Доломит, Известняк, Кварцит, Конгломерат, Красный гранит, Сланец",
+      "title": "Мыльный камень, Тальк...",
       "type": "patchouli:text",
       "anchor": "mars_lubricant"
     },
@@ -2122,7 +1540,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 35%$(br)$(thing)Используется для$(): Натрий$(br)$(thing)Формула$(): Na₃C₂H(H₂O)₂O₆",
+      "text": "$(thing)Процент нагрузки$(): 35%$(br)$(thing)Источник для$(): Натрий$(br)$(thing)Формула$(): Na₃C₂H(H₂O)₂O₆",
       "type": "patchouli:multiblock"
     },
     {
@@ -2142,7 +1560,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 21%$(br)$(thing)Используется для$(): Магний$(br)$(thing)Формула$(): Mg₃Si₄H₂O₁₂",
+      "text": "$(thing)Процент нагрузки$(): 21%$(br)$(thing)Источник для$(): Магнезия$(br)$(thing)Формула$(): Mg₃Si₄H₂O₁₂",
       "type": "patchouli:multiblock"
     },
     {
@@ -2162,7 +1580,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 21%$(br)$(thing)Используется для$(): Магний$(br)$(thing)Формула$(): Mg₃Si₄H₂O₁₂",
+      "text": "$(thing)Процент нагрузки$(): 21%$(br)$(thing)Источник для$(): Магнезия$(br)$(thing)Формула$(): Mg₃Si₄H₂O₁₂",
       "type": "patchouli:multiblock"
     },
     {
@@ -2182,7 +1600,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 7%$(br)$(thing)Используется для$(): Магний, Алюминий$(br)$(thing)Формула$(): KMg₂Al₄H₂O₁₂",
+      "text": "$(thing)Процент нагрузки$(): 7%$(br)$(thing)Источник для$(): Магнезия, Алюминий$(br)$(thing)Формула$(): KMg₂Al₄H₂O₁₂",
       "type": "patchouli:multiblock"
     },
     {
@@ -2202,7 +1620,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 7%$(br)$(thing)Плавится в$(): Никель$(br)$(thing)Формула$(): Ni₉S₈",
+      "text": "$(thing)Процент нагрузки$(): 7%$(br)$(thing)Плавится в$(): Никель$(br)$(thing)Формула$(): Ni₉S₈",
       "type": "patchouli:multiblock"
     },
     {
@@ -2222,7 +1640,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 7%$(br)$(thing)Плавится в$(): Железо$(br)$(thing)Формула$(): Fe₂O₃",
+      "text": "$(thing)Процент нагрузки$(): 7%$(br)$(thing)Плавится в$(): Серый чугун$(br)$(thing)Формула$(): Fe₂O₃",
       "type": "patchouli:multiblock"
     },
     {
@@ -2232,17 +1650,17 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/215 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 60%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): 0 — 70$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 55$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 10$(br2)$(thing)Виды камней$(): Аргиллит, Аргиллит, Базальт, Гранит, Дацит, Диорит, Доломит, Конгломерат, Красный гранит, Мел, Трахит",
-      "title": "Уголь & Гематит",
+      "text": "$(thing)$(t:Шанс появления жилы на чанк. Чем меньше значение, тем больше вероятность.)Редкость$(/t)$(): 1/370 чанки$(br)$(thing)$(t:Процент блоков в жиле, которые являются рудой, а не камнем. Больший шанс означает больше руд.)Плотность$(/t)$(): 30%$(br)$(thing)$(t:Форма жилы.)Тип$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Промежуток по Y, в котором может генерироваться жила.)Y$(/t)$(): -30 — 0$(br)$(thing)$(t:Средний диаметр жилы)Размер$(/t)$(): 60$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше этого числа, руда не генерирует поверхностные индикаторы.) Максимальная глубина индикатора(/t)$(): 20$(br)$(thing)Биомы$(): когда угодно$(br2)$(thing)Виды камня$(): Габбро, Гранит, Диорит, Красный гранит",
+      "title": "Редстоуновая пыль, Рубин...",
       "type": "patchouli:text",
-      "anchor": "mars_coal"
+      "anchor": "deep_mars_chromite"
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Уголь",
+      "name": "Редстоуновая пыль",
       "multiblock": {
         "mapping": {
-          "0": "#forge:ores/coal"
+          "0": "#forge:ores/redstone"
         },
         "pattern": [
           [
@@ -2254,7 +1672,94 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 70%$(br)$(thing)Используется для$(): Топливо, Ректификация$(br)$(thing)Формула$(): C",
+      "text": "$(thing)Процент нагрузки$(): 45%$(br)$(thing)Плавится в$(): Редстоун$(br)$(thing)Формула$(): Si(FeS₂)₅(CrAl₂O₃)Hg₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Рубин",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/ruby"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент нагрузки$(): 35%$(br)$(thing)Источник для$(): Хром, Алюминий$(br)$(thing)Формула$(): CrAl₂O₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Хромит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/chromite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент нагрузки$(): 20%$(br)$(thing)Источник для$(): Хром$(br)$(thing)Формула$(): FeCr₂O₄$(br)$(thing)Опасность$(): $(c)$(t:Требуются резиновые перчатки)Раздражитель (Контакт с кожей)$(/t)$()",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)$(t:Шанс появления жилы на чанк. Чем меньше значение, тем больше вероятность.)Редкость$(/t)$(): 1/215 чанки$(br)$(thing)$(t:Процент блоков в жиле, которые являются рудой, а не камнем. Больший шанс означает больше руд.)Плотность$(/t)$(): 20%$(br)$(thing)$(t:Форма жилы.)Тип$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Промежуток по Y, в котором может генерироваться жила.)Y$(/t)$(): 0 — 70$(br)$(thing)$(t:Средний диаметр жилы)Размер$(/t)$(): 45$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше этого числа, руда не генерирует поверхностные индикаторы.) Максимальная глубина индикатора(/t)$(): 30$(br)$(thing)Биомы$(): когда угодно$(br2)$(thing)Виды камня$(): Аргиллит, Базальт, Габбро, Гранит, Дацит, Диорит, Кремнистый сланец, Мел, Трахит",
+      "title": "Сера, Пирит, Сфалерит...",
+      "type": "patchouli:text",
+      "anchor": "mars_sulfur"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Пирит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/pyrite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент нагрузки$(): 42%$(br)$(thing)Плавится в$(): Серый чугун$(br)$(thing)Формула$(): FeS₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Сфалерит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/sphalerite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент нагрузки$(): 23%$(br)$(thing)Плавится в$(): Цинк$(br)$(thing)Формула$(): ZnS",
       "type": "patchouli:multiblock"
     },
     {
@@ -2274,7 +1779,27 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 30%$(br)$(thing)Плавится в$(): Железо$(br)$(thing)Формула$(): Fe₂O₃",
+      "text": "$(thing)Процент нагрузки$(): 19%$(br)$(thing)Плавится в$(): Серый чугун$(br)$(thing)Формула$(): Fe₂O₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Сера",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/sulfur"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент нагрузки$(): 14%$(br)$(thing)Источник для$(): Сера$(br)$(thing)Формула$(): S",
       "type": "patchouli:multiblock"
     },
     {
@@ -2284,17 +1809,17 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/370 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 30%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -30 — 0$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 60$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 20$(br2)$(thing)Виды камней$(): Габбро, Гранит, Диорит, Красный гранит",
-      "title": "Уранинит, Торианит, & Уранит",
+      "text": "$(thing)$(t:Шанс появления жилы на чанк. Чем меньше значение, тем больше вероятность.)Редкость$(/t)$(): 1/210 чанки$(br)$(thing)$(t:Процент блоков в жиле, которые являются рудой, а не камнем. Больший шанс означает больше руд.)Плотность$(/t)$(): 40%$(br)$(thing)$(t:Форма жилы.)Тип$(/t)$(): $(t:Широкая и плоская жила)Жила Пластинкой$(/t)$(br)$(thing)$(t:Промежуток по Y, в котором может генерироваться жила.)Y$(/t)$(): 0 — 70$(br)$(thing)$(t:Средний диаметр жилы)Размер$(/t)$(): 40$(br)$(thing)Высота$(): 6$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше этого числа, руда не генерирует поверхностные индикаторы.) Максимальная глубина индикатора(/t)$(): 15$(br)$(thing)Биомы$(): когда угодно$(br2)$(thing)Виды камня$(): Аргиллит, Аргиллит, Гранит, Диорит, Известняк, Кварцит, Красный гранит, Кремнистый сланец, Мел, Трахит",
+      "title": "Сильвин, Галит, Лепидолит...",
       "type": "patchouli:text",
-      "anchor": "deep_mars_pitchblende"
+      "anchor": "mars_salt"
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Уранит",
+      "name": "Сподумен",
       "multiblock": {
         "mapping": {
-          "0": "#forge:ores/pitchblende"
+          "0": "#forge:ores/spodumene"
         },
         "pattern": [
           [
@@ -2306,15 +1831,15 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 52%$(br)$(thing)Используется для$(): Уран, Торий, Свинец$(br)$(thing)Формула$(): (UO₂)₃ThPb$(br)$(thing)Ядовит$(): $(c)$(t:Требуется Полная защита)Радиоактивный (При любом контакте)$(/t)$()",
+      "text": "$(thing)Процент нагрузки$(): 35%$(br)$(thing)Источник для$(): Литий, Алюминий$(br)$(thing)Формула$(): LiAlSi₂O₆",
       "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Торианит",
+      "name": "Галит",
       "multiblock": {
         "mapping": {
-          "0": "#forge:ores/thorium"
+          "0": "#forge:ores/salt"
         },
         "pattern": [
           [
@@ -2326,15 +1851,15 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 26%$(br)$(thing)Используется для$(): Торий$(br)$(thing)Формула$(): ThO₂$(br)$(thing)Ядовит$(): $(c)$(t:Требуется Полная защита)Радиоактивный (При любом контакте)$(/t)$()",
+      "text": "$(thing)Процент нагрузки$(): 30%$(br)$(thing)Источник для$(): Натрий, Хлор$(br)$(thing)Формула$(): NaCl",
       "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Уранинит",
+      "name": "Сильвин",
       "multiblock": {
         "mapping": {
-          "0": "#forge:ores/uraninite"
+          "0": "#forge:ores/rock_salt"
         },
         "pattern": [
           [
@@ -2346,13 +1871,329 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 21%$(br)$(thing)Используется для$(): Уран$(br)$(thing)Формула$(): UO₂$(br)$(thing)Ядовит$(): $(c)$(t:Требуется Полная защита)Радиоактивный (При любом контакте)$(/t)$()",
+      "text": "$(thing)Процент нагрузки$(): 20%$(br)$(thing)Источник для$(): Калий, Хлор, Удобрение$(br)$(thing)Формула$(): KCl",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Лепидолит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/lepidolite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент нагрузки$(): 15%$(br)$(thing)Источник для$(): Азот, Литий, Алюминий, Фтор$(br)$(thing)Формула$(): KLi₃Al₄F₂O₁₀",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)$(t:Шанс появления жилы на чанк. Чем меньше значение, тем больше вероятность.)Редкость$(/t)$(): 1/150 чанки$(br)$(thing)$(t:Процент блоков в жиле, которые являются рудой, а не камнем. Больший шанс означает больше руд.)Плотность$(/t)$(): 25%$(br)$(thing)$(t:Форма жилы.)Тип$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Промежуток по Y, в котором может генерироваться жила.)Y$(/t)$(): 80 — 180$(br)$(thing)$(t:Средний диаметр жилы)Размер$(/t)$(): 45$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше этого числа, руда не генерирует поверхностные индикаторы.) Максимальная глубина индикатора(/t)$(): 40$(br)$(thing)Биомы$(): когда угодно$(br2)$(thing)Виды камня$(): Аргиллит, Аргиллит, Базальт, Габбро, Гранит, Дацит, Диорит, Доломит, Известняк, Кварцит, Конгломерат, Красный гранит, Кремнистый сланец, Мел, Сланец, Трахит",
+      "title": "Сфалерит, Никель, Галена...",
+      "type": "patchouli:text",
+      "anchor": "mars_surface_nickel_galena"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Галена",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/galena"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент нагрузки$(): 35%$(br)$(thing)Плавится в$(): Свинец$(br)$(thing)Формула$(): PbS$(br)$(thing)Опасность$(): $(c)$(t:Требуется медицинская маска)Слабое отравление (Вдыхание вредных веществ)$(/t)$()",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Никель",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/nickel"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент нагрузки$(): 23%$(br)$(thing)Плавится в$(): Никель$(br)$(thing)Формула$(): Ni",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Сфалерит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/sphalerite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент нагрузки$(): 17%$(br)$(thing)Плавится в$(): Цинк$(br)$(thing)Формула$(): ZnS",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Самородное серебро",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/silver"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент нагрузки$(): 11%$(br)$(thing)Плавится в$(): Серебро$(br)$(thing)Формула$(): Ag",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Кобальтит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/cobaltite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент нагрузки$(): 11%$(br)$(thing)Источник для$(): Кобальт, Мышьяк$(br)$(thing)Формула$(): CoAsS$(br)$(thing)Опасность$(): $(c)$(t:Требуется медицинская маска)Отправление мышьяком (Вдыхание вредных веществ)$(/t)$()",
       "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/220 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 55%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): 0 — 70$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 20$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 15$(br2)$(thing)Виды камней$(): Аргиллит, Габбро, Дацит, Диорит, Доломит, Кварцит, Конгломерат, Красный гранит, Сланец, Трахит",
-      "title": "Уранит, Торий & Гематит",
+      "text": "$(thing)$(t:Шанс появления жилы на чанк. Чем меньше значение, тем больше вероятность.)Редкость$(/t)$(): 1/210 чанки$(br)$(thing)$(t:Процент блоков в жиле, которые являются рудой, а не камнем. Больший шанс означает больше руд.)Плотность$(/t)$(): 40%$(br)$(thing)$(t:Форма жилы.)Тип$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Промежуток по Y, в котором может генерироваться жила.)Y$(/t)$(): 0 — 70$(br)$(thing)$(t:Средний диаметр жилы)Размер$(/t)$(): 40$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше этого числа, руда не генерирует поверхностные индикаторы.) Максимальная глубина индикатора(/t)$(): 40$(br)$(thing)Биомы$(): когда угодно$(br2)$(thing)Виды камня$(): Аргиллит, Базальт, Габбро, Дацит, Диорит, Доломит, Кварцит, Красный гранит, Кремнистый сланец, Мел, Сланец, Трахит",
+      "title": "Тетраэдрит, Самородная медь...",
+      "type": "patchouli:text",
+      "anchor": "mars_stibnite"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Тетраэдрит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/tetrahedrite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент нагрузки$(): 47%$(br)$(thing)Плавится в$(): Медь$(br)$(thing)Формула$(): Cu₃SbS₃Fe",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Самородная медь",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/copper"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент нагрузки$(): 28%$(br)$(thing)Плавится в$(): Медь$(br)$(thing)Формула$(): Cu",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Стибнит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/stibnite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент нагрузки$(): 19%$(br)$(thing)Плавится в$(): Сурьма$(br)$(thing)Формула$(): Sb₂S₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Гематит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/hematite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент нагрузки$(): 4%$(br)$(thing)Плавится в$(): Серый чугун$(br)$(thing)Формула$(): Fe₂O₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)$(t:Шанс появления жилы на чанк. Чем меньше значение, тем больше вероятность.)Редкость$(/t)$(): 1/140 чанки$(br)$(thing)$(t:Процент блоков в жиле, которые являются рудой, а не камнем. Больший шанс означает больше руд.)Плотность$(/t)$(): 25%$(br)$(thing)$(t:Форма жилы.)Тип$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Промежуток по Y, в котором может генерироваться жила.)Y$(/t)$(): 80 — 180$(br)$(thing)$(t:Средний диаметр жилы)Размер$(/t)$(): 45$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше этого числа, руда не генерирует поверхностные индикаторы.) Максимальная глубина индикатора(/t)$(): 40$(br)$(thing)Биомы$(): когда угодно$(br2)$(thing)Виды камня$(): Аргиллит, Аргиллит, Базальт, Габбро, Гранит, Дацит, Диорит, Доломит, Известняк, Кварцит, Конгломерат, Красный гранит, Кремнистый сланец, Мел, Сланец, Трахит",
+      "title": "Тетраэдрит, Самородная медь...",
+      "type": "patchouli:text",
+      "anchor": "mars_surface_tetrahedrite"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Тетраэдрит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/tetrahedrite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент нагрузки$(): 57%$(br)$(thing)Плавится в$(): Медь$(br)$(thing)Формула$(): Cu₃SbS₃Fe",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Самородная медь",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/copper"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент нагрузки$(): 19%$(br)$(thing)Плавится в$(): Медь$(br)$(thing)Формула$(): Cu",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Стибнит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/stibnite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент нагрузки$(): 19%$(br)$(thing)Плавится в$(): Сурьма$(br)$(thing)Формула$(): Sb₂S₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Редстоуновая пыль",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/redstone"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент нагрузки$(): 4%$(br)$(thing)Плавится в$(): Редстоун$(br)$(thing)Формула$(): Si(FeS₂)₅(CrAl₂O₃)Hg₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)$(t:Шанс появления жилы на чанк. Чем меньше значение, тем больше вероятность.)Редкость$(/t)$(): 1/220 чанки$(br)$(thing)$(t:Процент блоков в жиле, которые являются рудой, а не камнем. Больший шанс означает больше руд.)Плотность$(/t)$(): 55%$(br)$(thing)$(t:Форма жилы.)Тип$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Промежуток по Y, в котором может генерироваться жила.)Y$(/t)$(): 0 — 70$(br)$(thing)$(t:Средний диаметр жилы)Размер$(/t)$(): 20$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше этого числа, руда не генерирует поверхностные индикаторы.) Максимальная глубина индикатора(/t)$(): 15$(br)$(thing)Биомы$(): когда угодно$(br2)$(thing)Виды камня$(): Аргиллит, Габбро, Дацит, Диорит, Доломит, Кварцит, Конгломерат, Красный гранит, Сланец, Трахит",
+      "title": "Уранит, Торианит, Гематит",
       "type": "patchouli:text",
       "anchor": "mars_pitchblende"
     },
@@ -2373,7 +2214,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 41%$(br)$(thing)Используется для$(): Уран, Торий, Свинец$(br)$(thing)Формула$(): (UO₂)₃ThPb$(br)$(thing)Ядовит$(): $(c)$(t:Требуется Полная защита)Радиоактивный (При любом контакте)$(/t)$()",
+      "text": "$(thing)Процент нагрузки$(): 41%$(br)$(thing)Источник для$(): Уран, Торий, Свинец$(br)$(thing)Формула$(): (UO₂)₃ThPb$(br)$(thing)Опасность$(): $(c)$(t:Требуется полная защита)Радиация (Любой контакт)$(/t)$()",
       "type": "patchouli:multiblock"
     },
     {
@@ -2393,7 +2234,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 29%$(br)$(thing)Используется для$(): Торий$(br)$(thing)Формула$(): ThO₂$(br)$(thing)Ядовит$(): $(c)$(t:Требуется Полная защита)Радиоактивный (При любом контакте)$(/t)$()",
+      "text": "$(thing)Процент нагрузки$(): 29%$(br)$(thing)Источник для$(): Торий$(br)$(thing)Формула$(): ThO₂$(br)$(thing)Опасность$(): $(c)$(t:Требуется полная защита)Радиация (Любой контакт)$(/t)$()",
       "type": "patchouli:multiblock"
     },
     {
@@ -2413,13 +2254,172 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 29%$(br)$(thing)Плавится в$(): Железо$(br)$(thing)Формула$(): Fe₂O₃",
+      "text": "$(thing)Процент нагрузки$(): 29%$(br)$(thing)Плавится в$(): Серый чугун$(br)$(thing)Формула$(): Fe₂O₃",
       "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/280 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 45%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): 0 — 70$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 50$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 15$(br2)$(thing)Виды камней$(): Аргиллит, Базальт, Доломит, Известняк, Красный гранит, Кремнистый сланец, Мел, Сланец",
-      "title": "Шеелит и Вольфрамат",
+      "text": "$(thing)$(t:Шанс появления жилы на чанк. Чем меньше значение, тем больше вероятность.)Редкость$(/t)$(): 1/370 чанки$(br)$(thing)$(t:Процент блоков в жиле, которые являются рудой, а не камнем. Больший шанс означает больше руд.)Плотность$(/t)$(): 30%$(br)$(thing)$(t:Форма жилы.)Тип$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Промежуток по Y, в котором может генерироваться жила.)Y$(/t)$(): -30 — 0$(br)$(thing)$(t:Средний диаметр жилы)Размер$(/t)$(): 60$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше этого числа, руда не генерирует поверхностные индикаторы.) Максимальная глубина индикатора(/t)$(): 20$(br)$(thing)Биомы$(): когда угодно$(br2)$(thing)Виды камня$(): Габбро, Гранит, Диорит, Красный гранит",
+      "title": "Уранит, Торианит, Уранинит",
+      "type": "patchouli:text",
+      "anchor": "deep_mars_pitchblende"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Уранит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/pitchblende"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент нагрузки$(): 52%$(br)$(thing)Источник для$(): Уран, Торий, Свинец$(br)$(thing)Формула$(): (UO₂)₃ThPb$(br)$(thing)Опасность$(): $(c)$(t:Требуется полная защита)Радиация (Любой контакт)$(/t)$()",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Торианит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/thorium"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент нагрузки$(): 26%$(br)$(thing)Источник для$(): Торий$(br)$(thing)Формула$(): ThO₂$(br)$(thing)Опасность$(): $(c)$(t:Требуется полная защита)Радиация (Любой контакт)$(/t)$()",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Уранинит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/uraninite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент нагрузки$(): 21%$(br)$(thing)Источник для$(): Уран$(br)$(thing)Формула$(): UO₂$(br)$(thing)Опасность$(): $(c)$(t:Требуется полная защита)Радиация (Любой контакт)$(/t)$()",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)$(t:Шанс появления жилы на чанк. Чем меньше значение, тем больше вероятность.)Редкость$(/t)$(): 1/220 чанки$(br)$(thing)$(t:Процент блоков в жиле, которые являются рудой, а не камнем. Больший шанс означает больше руд.)Плотность$(/t)$(): 40%$(br)$(thing)$(t:Форма жилы.)Тип$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Промежуток по Y, в котором может генерироваться жила.)Y$(/t)$(): 0 — 70$(br)$(thing)$(t:Средний диаметр жилы)Размер$(/t)$(): 50$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше этого числа, руда не генерирует поверхностные индикаторы.) Максимальная глубина индикатора(/t)$(): 40$(br)$(thing)Биомы$(): когда угодно$(br2)$(thing)Виды камня$(): Аргиллит, Аргиллит, Базальт, Дацит, Доломит, Известняк, Кварцит, Конгломерат, Сланец, Трахит",
+      "title": "Халькопирит, Самородная медь...",
+      "type": "patchouli:text",
+      "anchor": "mars_copper"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Халькопирит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/chalcopyrite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент нагрузки$(): 65%$(br)$(thing)Плавится в$(): Медь$(br)$(thing)Формула$(): CuFeS₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Самородная медь",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/copper"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент нагрузки$(): 20%$(br)$(thing)Плавится в$(): Медь$(br)$(thing)Формула$(): Cu",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Пирит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/pyrite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент нагрузки$(): 10%$(br)$(thing)Плавится в$(): Серый чугун$(br)$(thing)Формула$(): FeS₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Гематит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/hematite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент нагрузки$(): 5%$(br)$(thing)Плавится в$(): Серый чугун$(br)$(thing)Формула$(): Fe₂O₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)$(t:Шанс появления жилы на чанк. Чем меньше значение, тем больше вероятность.)Редкость$(/t)$(): 1/280 чанки$(br)$(thing)$(t:Процент блоков в жиле, которые являются рудой, а не камнем. Больший шанс означает больше руд.)Плотность$(/t)$(): 45%$(br)$(thing)$(t:Форма жилы.)Тип$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Промежуток по Y, в котором может генерироваться жила.)Y$(/t)$(): 0 — 70$(br)$(thing)$(t:Средний диаметр жилы)Размер$(/t)$(): 50$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше этого числа, руда не генерирует поверхностные индикаторы.) Максимальная глубина индикатора(/t)$(): 15$(br)$(thing)Биомы$(): когда угодно$(br2)$(thing)Виды камня$(): Аргиллит, Базальт, Доломит, Известняк, Красный гранит, Кремнистый сланец, Мел, Сланец",
+      "title": "Шеелит, Вольфрамат, Литий...",
       "type": "patchouli:text",
       "anchor": "mars_tungsten"
     },
@@ -2440,7 +2440,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 42%$(br)$(thing)Используется для$(): Вольфрам$(br)$(thing)Формула$(): Ca(WO₃)O",
+      "text": "$(thing)Процент нагрузки$(): 42%$(br)$(thing)Источник для$(): Вольфрам$(br)$(thing)Формула$(): Ca(WO₃)O",
       "type": "patchouli:multiblock"
     },
     {
@@ -2460,7 +2460,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 33%$(br)$(thing)Используется для$(): Вольфрам, Литий$(br)$(thing)Формула$(): Li₂(WO₃)O",
+      "text": "$(thing)Процент нагрузки$(): 33%$(br)$(thing)Источник для$(): Вольфрам, Литий$(br)$(thing)Формула$(): Li₂(WO₃)O",
       "type": "patchouli:multiblock"
     },
     {
@@ -2480,7 +2480,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 19%$(br)$(thing)Используется для$(): Литий$(br)$(thing)Формула$(): Li",
+      "text": "$(thing)Процент нагрузки$(): 19%$(br)$(thing)Источник для$(): Литий$(br)$(thing)Формула$(): Li",
       "type": "patchouli:multiblock"
     },
     {
@@ -2500,7 +2500,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 4%$(br)$(thing)Плавится в$(): Железо$(br)$(thing)Формула$(): Fe₂O₃",
+      "text": "$(thing)Процент нагрузки$(): 4%$(br)$(thing)Плавится в$(): Серый чугун$(br)$(thing)Формула$(): Fe₂O₃",
       "type": "patchouli:multiblock"
     },
     {

@@ -1,0 +1,27 @@
+{
+  "version": "2.0",
+  "description": "GTCEu Terminal - Substation Hatch Configuration",
+  "hatches": [],
+  "patterns": [
+    {
+      "blockIdPattern": "gtceu:*_substation_input_hatch_64a",
+      "hatchType": "INPUT",
+      "amperage": "64A"
+    },
+    {
+      "blockIdPattern": "gtceu:*_substation_input_hatch_256a",
+      "hatchType": "INPUT",
+      "amperage": "256A"
+    },
+    {
+      "blockIdPattern": "gtceu:*_substation_output_hatch_64a",
+      "hatchType": "OUTPUT",
+      "amperage": "64A"
+    },
+    {
+      "blockIdPattern": "gtceu:*_substation_output_hatch_256a",
+      "hatchType": "OUTPUT",
+      "amperage": "256A"
+    }
+  ]
+}

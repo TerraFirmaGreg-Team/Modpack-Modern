@@ -8,14 +8,14 @@
 		"mood_sound": {
 			"block_search_extent": 8,
 			"offset": 2,
-			"sound": "tfg:ambient.upper_nether.mood",
+			"sound": "tfg:ambient.middle_nether.mood",
 			"tick_delay": 6000
 		},
 		"additions_sound": {
-			"sound": "tfg:ambient.upper_nether.additions",
+			"sound": "tfg:ambient.middle_nether.additions",
 			"tick_chance": 0.0015
 		},
-		"ambient_sound": "tfg:ambient.upper_nether_lush.loop",
+		"ambient_sound": "tfg:ambient.upper_nether.loop",
 		"music": {
 			"max_delay": 24000,
 			"min_delay": 12000,
@@ -25,8 +25,8 @@
 			}
 		},
 		"sky_color": 5799235,
-		"water_color": 7255466,
-		"water_fog_color": 3169873,
+		"water_color": 4159204,
+		"water_fog_color": 329011,
 		"grass_color": 12568641,
 		"foliage_color": 12568641,
 		"particle": {
@@ -37,56 +37,58 @@
 		}
 	},
 	"features": [
+		"#tfg:nether_lakes_and_geodes",
 		[],
-		[
-			"tfg:nether/terrain/lava_lake",
-			"tfg:nether/terrain/spring_water_lake"
-		],
-		[
-			"minecraft:basalt_pillar",
-			"tfg:earth/geode/amethyst"
-		],
 		[],
-		[
-			"tfg:nether/terrain/glowstone_ceiling"
-		],
-		[],
-		"#tfg:nether_veins",
 		"#tfg:nether_underground_decoration",
 		[
-			"tfg:nether/terrain/mossy_cobble"
+			"tfg:nether/terrain/lush_caves_clay"
 		],
 		[
-			"beneath:blackstone_boulders",
-			"tfg:nether/surface/loose_deepslate",
-			"tfg:nether/surface/philodendron",
-			"tfg:nether/surface/moss_patch_small",
-			"tfg:nether/surface/mangrove_tree",
+			"tfc:erosion"
+		],
+		"#tfg:nether_veins",
+		"#tfg:nether_crops",
+		[
+			"tfg:nether/tree/ginkgo",
+			"tfg:nether/tree/ginkgo_shrub",
+			"tfg:nether/tree/ginkgo_fallen_leaves",
+			"tfg:nether/tree/ginkgo_twig",
+			"tfg:nether/tree/beech",
+			"tfg:nether/tree/beech_shrub",
+			"tfg:nether/tree/beech_fallen_leaves",
+			"tfg:nether/tree/beech_twig",
 			"tfg:nether/terrain/lush_caves_ceiling",
-			"tfg:nether/terrain/lush_caves_clay",
 			"tfg:nether/terrain/lush_caves_vegetation",
 			"minecraft:spore_blossom",
-			"beneath:burpflower_patch",
 			"beneath:gleamflower_patch",
 			"beneath:sulfur_patch",
 			"tfg:nether/surface/pumice_patch",
 			"tfg:nether/surface/beneath_mushrooms",
 			"tfg:nether/surface/guano_patch",
 			"tfg:nether/surface/stick_patch",
-			"tfg:glow_lichen"
+			"tfg:nether/surface/philodendron",
+			"tfg:nether/surface/moss_patch_small"
 		],
+		"#tfg:nether_global_decoration",
 		[
-			"beneath:glowstone_spikes",
-			"tfg:nether/spikes/deepslate_spikes",
-			"tfg:nether/spikes/blackstone_spikes",
-			"tfg:nether/hardening"
+			"tfg:nether/entity/cold_frog",
+			"tfg:nether/entity/zombie_horse"
 		]
 	],
 	"has_precipitation": false,
 	"spawn_costs": {
-		"tfc:octopoteuthis": {
-			"energy_budget": 0.12,
-			"charge": 1.0
+		"species:spectre": {
+			"energy_budget": 0.1,
+			"charge": 0.7
+		},
+		"species:mammutilation": {
+			"energy_budget": 0.02,
+			"charge": 0.95
+		},
+		"species:cliff_hanger": {
+			"energy_budget": 0.05,
+			"charge": 0.9
 		}
 	},
 	"spawners": {
@@ -94,9 +96,15 @@
 		"ambient": [
 			{
 				"type": "minecraft:bat",
-				"maxCount": 8,
-				"minCount": 8,
-				"weight": 10
+				"maxCount": 4,
+				"minCount": 3,
+				"weight": 100
+			},
+			{
+				"type": "tfg:slime",
+				"maxCount": 4,
+				"minCount": 3,
+				"weight": 100
 			}
 		],
 		"axolotls": [
@@ -110,76 +118,51 @@
 		"creature": [
 			{
 				"type": "beneath:red_elk",
-				"maxCount": 3,
+				"maxCount": 4,
 				"minCount": 2,
 				"weight": 100
+			},
+			{
+				"type": "species:mammutilation",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 20
 			}
 		],
 		"misc": [],
 		"monster": [
 			{
-				"type": "minecraft:piglin",
+				"type": "primitive_creatures:tfc",
+				"maxCount": 4,
+				"minCount": 2,
+				"weight": 100
+			},
+			{
+				"type": "minecraft:creeper",
+				"maxCount": 2,
+				"minCount": 1,
+				"weight": 50
+			},
+			{
+				"type": "minecraft:slime",
 				"maxCount": 4,
 				"minCount": 3,
 				"weight": 50
 			},
 			{
-				"type": "minecraft:zombified_piglin",
-				"maxCount": 3,
-				"minCount": 2,
-				"weight": 50
-			},
-			{
-				"type": "primitive_creatures:tfc",
-				"maxCount": 4,
-				"minCount": 1,
-				"weight": 100
-			},
-			{
-				"type": "minecraft:zombie",
-				"maxCount": 4,
-				"minCount": 1,
-				"weight": 95
-			},
-			{
-				"type": "minecraft:creeper",
-				"maxCount": 4,
-				"minCount": 1,
-				"weight": 100
-			},
-			{
-				"type": "minecraft:slime",
-				"maxCount": 4,
-				"minCount": 1,
-				"weight": 100
-			},
-			{
-				"type": "minecraft:phantom",
-				"maxCount": 1,
-				"minCount": 1,
-				"weight": 10
-			},
-			{
-				"type": "minecraft:enderman",
-				"maxCount": 2,
-				"minCount": 1,
-				"weight": 10
-			},
-			{
 				"type": "endermanoverhaul:swamp_enderman",
 				"maxCount": 2,
 				"minCount": 1,
-				"weight": 100
-			}
-		],
-		"underground_water_creature": [
+				"weight": 50
+			},
 			{
-				"type": "tfc:octopoteuthis",
-				"maxCount": 3,
+				"type": "species:cliff_hanger",
+				"maxCount": 1,
 				"minCount": 1,
-				"weight": 10
+				"weight": 50
 			}
 		],
+		"underground_water_creature": [],
 		"water_creature": []
 	},
 	"temperature": 0.8

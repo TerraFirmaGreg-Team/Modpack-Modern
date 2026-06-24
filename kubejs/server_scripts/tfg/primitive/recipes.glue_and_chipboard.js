@@ -28,6 +28,40 @@ function registerTFGChipboardRecipes(event) {
 		.duration(100)
 		.EUt(5)
 
+	event.recipes.gtceu.compressor('tfg:glue_from_anemones')
+		.itemInputs('#tfg:anemones')
+		.itemOutputs('tfc:glue')
+		.duration(100)
+		.EUt(5)
+
+	event.recipes.firmalife.stomping('tfc:glue', '#tfg:anemones', 
+		'tfg:block/plant/anemone_purple/anemone_1', 'tfc:block/glue_block', 'minecraft:entity.slime.squish')
+		.id('tfg:stomping/anemones')
+
+	event.recipes.gtceu.compressor('tfg:glue_from_starfish')
+		.itemInputs("tfg:plant/starfish")
+		.itemOutputs('tfc:glue')
+		.duration(100)
+		.EUt(5)
+
+	event.recipes.firmalife.stomping('tfc:glue', 'tfg:plant/starfish', 
+		'tfc:block/powder/hematite', 'tfc:block/glue_block', 'minecraft:entity.slime.squish')
+		.id('tfg:stomping/starfish')
+		
+	event.smelting('tfc:glue', 'minecraft:slime_ball')
+		.id('tfg:smelting/slime_to_glue')
+
+	event.recipes.firmalife.stomping('tfc:glue', 'minecraft:slime_ball', 
+		'minecraft:block/slime_block', 'tfc:block/glue_block', 'minecraft:entity.slime.squish')
+		.id('tfg:stomping/slime_ball')
+
+	event.smelting('tfc:glue', 'minecraft:magma_cream')
+		.id('tfg:smelting/magma_cream_to_glue')
+		
+	event.recipes.firmalife.stomping('tfc:glue', 'minecraft:magma_cream', 
+		'minecraft:block/slime_block', 'tfc:block/glue_block', 'minecraft:entity.slime.squish')
+		.id('tfg:stomping/magma_cream')
+
 	// Chipboard
 	event.recipes.firmalife.mixing_bowl()
 		.itemIngredients(['#tfg:wood_dusts', '#tfg:wood_dusts', 'tfc:glue'])

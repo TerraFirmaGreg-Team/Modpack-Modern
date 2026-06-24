@@ -221,7 +221,7 @@ const registerGTCEuMachines = (event) => {
 			'gtceu:block/machines/fermenter')
 
 	// Nuclear Heat Exchanger
-
+/*
 	event.create('heat_exchanger', 'multiblock')
 		.rotationState(RotationState.NON_Y_AXIS)
 		.recipeType('heat_exchanger')
@@ -256,6 +256,7 @@ const registerGTCEuMachines = (event) => {
 		.workableCasingModel(
 			"gtceu:block/casings/gcym/high_temperature_smelting_casing",
 			"gtceu:block/machines/fluid_heater")
+*/
 
 	// Nuclear Fission Reactor - Just keeping it in case we got mod issues
 /*

@@ -1,0 +1,22 @@
+{
+	"name": "Filets de Pêche",
+	"icon": "tfg:fishing_net/brass",
+	"category": "tfc:mechanics",
+	"read_by_default": true,
+	"pages": [
+		{
+			"type": "patchouli:spotlight",
+			"title": "Filets de Pêche",
+			"item": {
+				"tag": "forge:tools/fishing_nets"
+			},
+			"text": "Lassé de chasser les poissons à la lance ? Ou de perdre un poisson agité en $(l:mechanics/fishing)pêchant$() ? Fabriquez un $(thing)Filet de pêche$() pour ramasser votre déjeuner.$(br)Pour utiliser un filet de pêche; faites un clic droit sur un poisson pour le capturer dans votre inventaire. Les différents niveaux de filets de pêches agissent de la même manière mais ont une durabilité différente."
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": "Filet de pêche en bois",
+			"recipe": "tfc:kjs/damage/shaped/fishing_net/wood",
+			"text": "Un $(item)Filet de pêche en bois$() basique."
+		}
+	]
+}

@@ -3,20 +3,7 @@
 
 const registerFirmaLifeItemTags = (event) => {
     
-    // Удаление тегов у отключенных предметов
-    global.FIRMALIFE_DISABLED_ITEMS.forEach(item => {
-        event.removeAllTagsFrom(item)
-        event.add('c:hidden_from_recipe_viewers', item)
-    })
-
-    // Просто предметы для скрытия
-    global.FIRMALIFE_HIDED_ITEMS.forEach(item => {
-        event.add('c:hidden_from_recipe_viewers', item)
-    })
-
-    // Удаление тегов у руд
-    event.removeAllTagsFrom("/tfc:ore/[^*]+/[^*]+/")
-
+   
     // Make our own "dried fruit" tag so we can display something in EMI - used for yeast starter
     global.FOOD_FRUIT
         .map(fruit => fruit.id)
@@ -27,27 +14,18 @@ const registerFirmaLifeItemTags = (event) => {
     event.add('tfc:fruit_tree_leaves', 'firmalife:plant/fig_leaves')
     event.add('minecraft:leaves', 'firmalife:plant/cocoa_leaves')
     event.add('minecraft:leaves', 'firmalife:plant/fig_leaves')
+    event.add('minecraft:saplings', 'firmalife:plant/cocoa_sapling')
+    event.add('minecraft:saplings', 'firmalife:plant/fig_sapling')
 
     event.add('tfc:clay_recycle_5', '#firmalife:clay_recycle_5')
+    event.add('tfg:oven_tops', 'firmalife:cured_oven_top')
+    event.add('tfg:oven_tops', 'firmalife:cured_rustic_oven_top')
+    event.add('tfg:oven_tops', 'firmalife:cured_tile_oven_top')
+    event.add('tfg:oven_tops', 'firmalife:cured_stone_oven_top')
+
 }
 
 const registerFirmaLifeBlockTags = (event) => {
-    
-    // Удаление тегов у отключенных предметов
-    global.FIRMALIFE_DISABLED_ITEMS.forEach(item => {
-        event.removeAllTagsFrom(item)
-    })
-
-    // Удаление тегов у руд
-    event.removeAllTagsFrom("/tfc:ore/[^*]+/[^*]+/")
-
-    // Удаление тегов у отключенных предметов
-    global.FIRMALIFE_DISABLED_ITEMS.forEach(item => {
-        event.removeAllTagsFrom(item)
-    })
-
-    // Удаление тегов у руд
-    event.removeAllTagsFrom("/tfc:ore/[^*]+/[^*]+/")
 	
 	//greenhouse wall fixes
 	event.remove('firmalife:always_valid_greenhouse_wall', '#minecraft:doors')
@@ -77,6 +55,22 @@ const registerFirmaLifeBlockTags = (event) => {
 
     event.add('firmalife:oven_insulation', 'firmalife:stovetop_pot');
     event.add('firmalife:oven_insulation', 'firmalife:vat');
+
+    // tfg and a few missed(?) tfc flowers for bee restoration
+    event.add('firmalife:bee_restoration_plants', 'tfg:plant/azalea')
+    event.add('firmalife:bee_restoration_plants', 'tfg:plant/buttercup')
+    event.add('firmalife:bee_restoration_plants', 'tfg:plant/cornflower')
+	event.add('firmalife:bee_restoration_plants', 'tfg:plant/edelweiss')
+    event.add('firmalife:bee_restoration_plants', 'tfg:plant/eyeblossom')
+    event.add('firmalife:bee_restoration_plants', 'tfc:plant/rose')
+    event.add('firmalife:bee_restoration_plants', 'tfc:plant/hibiscus')
+    event.add('firmalife:bee_restoration_plants', 'tfg:plant/mountain_hullwort')
+    event.add('firmalife:bee_restoration_plants', 'tfg:plant/palash')
+    event.add('firmalife:bee_restoration_plants', 'tfg:plant/penwortel')
+    event.add('firmalife:bee_restoration_plants', 'tfg:plant/qantu')
+    event.add('firmalife:bee_restoration_plants', 'tfg:plant/ramirezella')
+    event.add('firmalife:bee_restoration_plants', 'tfg:plant/ramunda')
+    event.add('firmalife:bee_restoration_plants', 'tfg:plant/yellow_saxifrage')
 }
 
 const registerFirmaLifeFluidTags = (event) => {
@@ -99,4 +93,5 @@ const registerFirmaLifeFluidTags = (event) => {
     event.add('firmalife:oils', 'gtceu:seed_oil')
     event.add('firmalife:oils', 'gtceu:fish_oil')
     event.add('firmalife:oils', 'tfg:triglyceride_oil')
+    event.add('firmalife:oils', 'tfg:peanut_oil')
 }

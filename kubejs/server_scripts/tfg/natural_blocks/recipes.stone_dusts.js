@@ -5,17 +5,19 @@
  * @param {Internal.RecipesEventJS} event 
  */
 function registerTFGStoneDustRecipes(event) {
-
+	
+	const $ChanceLogic = Java.loadClass('com.gregtechceu.gtceu.api.recipe.chance.logic.ChanceLogic')
 	// Same outputs as base GT, but with small dusts instead
 	event.recipes.gtceu.centrifuge('gtceu:stone_dust_separation')
 		.itemInputs('gtceu:stone_dust')
-		.chancedOutput('#forge:small_dusts/quartzite', 2500, 0)
-		.chancedOutput('#forge:small_dusts/potassium_feldspar', 2500, 0)
-		.chancedOutput('#forge:small_dusts/calcite', 2222, 0)
-		.chancedOutput('#forge:small_dusts/biotite', 1111, 0)
-		.chancedOutput('#forge:small_dusts/metal_mixture', 825, 80)
-		.chancedOutput('#forge:small_dusts/sodalite', 550, 55)
-		.duration(12 * 20)
+		.chancedItemOutputLogic($ChanceLogic.XOR)
+		.chancedOutput('#forge:dusts/igneous_mafic', 1666, 0)
+		.chancedOutput('#forge:dusts/igneous_intermediate', 1666, 0)
+		.chancedOutput('#forge:dusts/igneous_felsic', 1666, 0)
+		.chancedOutput('#forge:dusts/metamorphic', 1666, 0)
+		.chancedOutput('#forge:dusts/sedimentary_carbonate', 1666, 0)
+		.chancedOutput('#forge:dusts/sedimentary_clastic', 1666, 0)
+		.duration(1 * 20)
 		.EUt(GTValues.VA[GTValues.HV])
 
 
@@ -35,7 +37,7 @@ function registerTFGStoneDustRecipes(event) {
 		.duration(10 * 20)
 		.itemInputs(ChemicalHelper.get(TagPrefix.dust, TFGHelpers.getMaterial('asurine'), 1))
 		.chancedOutput('ae2:sky_dust', 6000, 0)
-		.chancedOutput(ChemicalHelper.get(TagPrefix.dustTiny, GTMaterials.CertusQuartz, 1), 5000, 0)
+		.chancedOutput(ChemicalHelper.get(TagPrefix.dustTiny, GTMaterials.get('tfg:igneous_intermediate'), 1), 5000, 0)
 		.chancedOutput(ChemicalHelper.get(TagPrefix.dustTiny, GTMaterials.Olivine, 1), 4500, 0)
 		.chancedOutput(ChemicalHelper.get(TagPrefix.dustTiny, GTMaterials.Zinc, 1), 3500, 0)
 		.outputFluids(Fluid.of('gtceu:helium_3', 500))

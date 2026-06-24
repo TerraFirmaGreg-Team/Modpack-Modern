@@ -71,8 +71,8 @@ function processIngot(event, material) {
 
 	if (material.hasProperty(TFGPropertyKey.TFC_PROPERTY)) {
 		addTFCMelting(event, ingotItem, material, 144, 'ingot');
-		addMaterialCasting(event, ingotItem, 'tfc:ceramic/ingot_mold', false, null, material, 'ingot', 144);
-		addMaterialCasting(event, ingotItem, 'tfc:ceramic/fire_ingot_mold', true, null, material, 'ingot', 144);
+		addMaterialCasting(event, ingotItem, 'tfc:ceramic/ingot_mold', false, null, material, 'ingot', 144, false);
+		addMaterialCasting(event, ingotItem, 'tfc:ceramic/fire_ingot_mold', true, null, material, 'ingot', 144, false);
 	}
 }
 
@@ -88,7 +88,7 @@ function processIngotDouble(event, material) {
 	const doubleIngotItem = ChemicalHelper.get(TFGTagPrefix.ingotDouble, material, 1);
 
 	addMaterialRecycling(event, doubleIngotItem, material, "double_ingot", TFGTagPrefix.ingotDouble);
-	addMaterialWelding(event, doubleIngotItem, ingotItem, ingotItem, material, 5, 1);
+	addMaterialWelding(event, doubleIngotItem, ingotItem, ingotItem, material, 5, 1, TFGTagPrefix.ingotDouble, 1);
 
 	event.recipes.gtceu.bender(`tfg:bend_${material.getName()}_double_ingot_electric_only`)
 		.itemInputs(ingotItem.withCount(2))
@@ -166,7 +166,9 @@ function processPlate(event, material) {
 		addTFCMelting(event, plateItem, material, 144, 'plate');
 
 		const doubleIngotItem = ChemicalHelper.get(TFGTagPrefix.ingotDouble, material, 1);
-		addAnvilRecipe(event, plateItem, doubleIngotItem, ['hit_last', 'hit_second_last', 'hit_third_last'], false, material, 'sheet');
+		if (!doubleIngotItem.isEmpty()) {
+			addAnvilRecipe(event, plateItem, doubleIngotItem, ['hit_last', 'hit_second_last', 'hit_third_last'], false, material, 'sheet');
+		}
 	}
 
 	
@@ -212,7 +214,7 @@ function processPlateDouble(event, material) {
 	if (material === GTMaterials.Aluminium)
 		tier = 1;
 
-	addMaterialWelding(event, doublePlateItem, plateItem, plateItem, material, 4, tier);
+	addMaterialWelding(event, doublePlateItem, plateItem, plateItem, material, 4, tier, TagPrefix.plateDouble, 0);
 }
 
 /**
@@ -223,8 +225,8 @@ function processFoil(event, material) {
 	const foilItem = ChemicalHelper.get(TagPrefix.foil, material, 4)
 	const plateItem = ChemicalHelper.get(TagPrefix.plate, material, 1)
 
-	if (plateItem.isEmpty() || foilItem.isEmpty() || plateItem.hasTag('c:hidden_from_recipe_viewers'))
-		return;
+	if (plateItem.isEmpty() || foilItem.isEmpty() || plateItem.hasTag('c:hidden_from_recipe_viewers') || plateItem.hasTag('tfg:no_vintage_gen'))
+    	return;
 
 	event.custom({
 		type: "createaddition:rolling",
@@ -250,14 +252,16 @@ function processRod(event, material) {
 
 	const materialName = material.getName();
 
-	addMaterialCasting(event, shortRodItem, 'tfg:rod_mold', true, null, material, 'rod', 144 / 2);
+	addMaterialCasting(event, shortRodItem, 'tfg:rod_mold', true, null, material, 'rod', 144 / 2, false);
 
 	const tfcProperty = material.getProperty(TFGPropertyKey.TFC_PROPERTY);
 	if (tfcProperty !== null) {
 		addTFCMelting(event, shortRodItem, material, 144 / 2, 'rod');
 
 		const ingotItem = ChemicalHelper.get(TagPrefix.ingot, material, 1)
-		addAnvilRecipe(event, shortRodItem.withCount(2), ingotItem, ['draw_last'], false, material, 'rod');
+		if (!ingotItem.isEmpty()) {
+			addAnvilRecipe(event, shortRodItem.withCount(2), ingotItem, ['draw_last'], false, material, 'rod');
+		}
 	}
 		
 	// Every material with a short rod also has a long rod
@@ -271,7 +275,7 @@ function processRod(event, material) {
 		addTFCMelting(event, longRodItem, material, 144, 'long_rod');
 	}
 
-	addMaterialWelding(event, longRodItem, shortRodItem, shortRodItem, material, 4, 1);
+	addMaterialWelding(event, longRodItem, shortRodItem, shortRodItem, material, 4, 1, TagPrefix.rodLong, 0);
 }
 
 
@@ -341,7 +345,7 @@ function processAnvil(event, material) {
 		return;
 
 	addMaterialRecycling(event, anvilItem, material, 'anvil', TFGTagPrefix.anvil);
-	addMaterialCasting(event, anvilItem, null, false, 'gtceu:anvil_casting_mold', material, 'anvil', getMaterialAmount(TFGTagPrefix.anvil, material) * 144);
+	addMaterialCasting(event, anvilItem, null, false, 'gtceu:anvil_casting_mold', material, 'anvil', getMaterialAmount(TFGTagPrefix.anvil, material) * 144, false);
 }
 
 /**
@@ -357,11 +361,11 @@ function processLamp(event, material) {
 	const materialName = material.getName();
 
 	// Unfinished lamp
-	TFGHelpers.registerMaterialInfo(finishedLampItem, [material, 1, GTMaterials.Glass, 1]);
+	TFGHelpers.registerMaterialInfo(finishedLampItem, [material, 1, GTMaterials.Glass, 0.25]);
 	addTFCMelting(event, finishedLampItem, material, 144, 'lamp');
 
 	addMaterialRecycling(event, unfinishedLampItem, material, 'unfinished_lamp', TFGTagPrefix.lampUnfinished);
-	addMaterialCasting(event, unfinishedLampItem, null, false, 'tfg:lamp_casting_mold', material, 'unfinished_lamp', getMaterialAmount(TFGTagPrefix.lampUnfinished, material) * 144);
+	addMaterialCasting(event, unfinishedLampItem, 'tfg:lamp_mold', false, 'tfg:lamp_casting_mold', material, 'unfinished_lamp', getMaterialAmount(TFGTagPrefix.lampUnfinished, material) * 144, true);
 
 	// Finished lamp
 	event.recipes.gtceu.packer(`tfg:${materialName}_lamp`)
@@ -372,7 +376,7 @@ function processLamp(event, material) {
 
 	event.recipes.gtceu.fluid_solidifier(`tfg:${materialName}_lamp_from_liquid`)
 		.itemInputs(unfinishedLampItem)
-		.inputFluids(Fluid.of(GTMaterials.Glass.getFluid(), 144))
+		.inputFluids(Fluid.of(GTMaterials.Glass.getFluid(), 36))
 		.itemOutputs(finishedLampItem)
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.LV])
@@ -388,7 +392,7 @@ function processTrapdoor(event, material) {
 		return;
 
 	addMaterialRecycling(event, trapdoorItem, material, 'trapdoor', TFGTagPrefix.trapdoor);
-	addMaterialCasting(event, trapdoorItem, null, false, 'tfg:trapdoor_casting_mold', material, 'trapdoor', getMaterialAmount(TFGTagPrefix.trapdoor, material) * 144);
+	addMaterialCasting(event, trapdoorItem, null, false, 'tfg:trapdoor_casting_mold', material, 'trapdoor', getMaterialAmount(TFGTagPrefix.trapdoor, material) * 144, true);
 
 	if (material.hasProperty(TFGPropertyKey.TFC_PROPERTY)) {
 		const plateItem = ChemicalHelper.get(TagPrefix.plate, material, 1);
@@ -410,7 +414,7 @@ function processBell(event, material) {
 	event.remove({ id: `tfc:heating/${materialName}_bell` })
 
 	addMaterialRecycling(event, bellItem, material, 'bell', TFGTagPrefix.bell);
-	addMaterialCasting(event, bellItem, 'tfc:ceramic/bell_mold', false, 'tfg:bell_casting_mold', material, 'bell', getMaterialAmount(TFGTagPrefix.bell, material) * 144);
+	addMaterialCasting(event, bellItem, 'tfc:ceramic/bell_mold', false, 'tfg:bell_casting_mold', material, 'bell', getMaterialAmount(TFGTagPrefix.bell, material) * 144, true);
 }
 
 function processChain(event, material) {
@@ -419,7 +423,7 @@ function processChain(event, material) {
 		return;
 
 	addMaterialRecycling(event, chainItem, material, 'chain', TFGTagPrefix.chain);
-	addMaterialCasting(event, chainItem.withCount(16), null, false, 'tfg:chain_casting_mold', material, 'chain', 144);
+	addMaterialCasting(event, chainItem.withCount(16), null, false, 'tfg:chain_casting_mold', material, 'chain', 144, true);
 }
 
 function processBars(event, material) {
@@ -468,6 +472,7 @@ function processBuzzsawBlade(event, material) {
 			.id(`tfg:vi/lathe/${materialName}_buzzsaw`)
 	}
 
+	TagPrefix.toolHeadBuzzSaw.modifyMaterialAmount(material, 2);
 	addMaterialRecycling(event, buzzsawBladeItem, material, 'buzz_saw_blade', TagPrefix.toolHeadBuzzSaw);
 
 	event.remove({ id: `gtceu:shaped/buzzsaw_blade_${materialName}` })
@@ -520,10 +525,12 @@ function processNugget(event, material) {
 	const tfcProperty = material.getProperty(TFGPropertyKey.TFC_PROPERTY)
 	if (tfcProperty !== null) {
 		addTFCMelting(event, nuggetItem, material, 144 / 9, 'nugget');
-		addMaterialCasting(event, nuggetItem.withCount(4), 'tfg:nugget_mold', false, null, material, 'nugget', 144 * (4/9));
+		addMaterialCasting(event, nuggetItem.withCount(4), 'tfg:nugget_mold', false, null, material, 'nugget', 144 * (4/9), true);
 		
 		const ingotItem = ChemicalHelper.get(TagPrefix.ingot, material, 1);
-		addAnvilRecipe(event, nuggetItem.withCount(9), ingotItem, ['punch_last', 'hit_second_last', 'punch_third_last'], false, material, 'nugget');
+		if (!ingotItem.isEmpty()) {
+			addAnvilRecipe(event, nuggetItem.withCount(9), ingotItem, ['punch_last', 'hit_second_last', 'punch_third_last'], false, material, 'nugget');
+		}
 	}
 }
 
@@ -539,7 +546,7 @@ function processSmallGear(event, material) {
 	const tfcProperty = material.getProperty(TFGPropertyKey.TFC_PROPERTY)
 	if (tfcProperty !== null) {
 		addTFCMelting(event, smallGearItem, material, 144, 'small_gear');
-		addMaterialCasting(event, smallGearItem, 'tfg:small_gear_mold', true, null, material, 'small_gear', 144);
+		addMaterialCasting(event, smallGearItem, 'tfg:small_gear_mold', true, null, material, 'small_gear', 144, true);
 
 		const ingotItem = ChemicalHelper.get(TagPrefix.ingot, material, 1);
 		addAnvilRecipe(event, smallGearItem, ingotItem, ['hit_last', 'shrink_second_last', 'draw_third_last'], false, material, 'small_gear');
@@ -560,6 +567,6 @@ function processLargeGear(event, material) {
 		addTFCMelting(event, gearItem, material, 144 * 4, 'gear');
 		
 		let doublePlateItem = ChemicalHelper.get(TagPrefix.plateDouble, material, 1)
-		addMaterialWelding(event, gearItem, doublePlateItem, doublePlateItem, material, 4, 1);
+		addMaterialWelding(event, gearItem, doublePlateItem, doublePlateItem, material, 4, 1, TagPrefix.gear, 1);
 	}
 }

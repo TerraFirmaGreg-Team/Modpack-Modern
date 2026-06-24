@@ -43,11 +43,11 @@
 	#Force-run the mod on the client-side only.
 	#Only enable this when there are problems, e. g. the same pick-up being logged multiple times. Partial item stack pick-ups (when the inventory is full) won't show, and backpack compat won't work.
 	#When playing on a server without this mod this option will be used automatically.
-	force_client_only = false
+	force_client_only = true
 	#Show item entities the player has collected in the pick-up notifications.
 	include_items = true
 	#Show experience orbs the player has collected in the pick-up notifications.
-	include_experience = true
+	include_experience = false
 	#Show shot arrows the player has collected in the pick-up notifications.
 	include_arrows = true
 

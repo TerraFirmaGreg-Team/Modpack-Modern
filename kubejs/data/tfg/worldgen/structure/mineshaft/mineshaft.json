@@ -1,0 +1,58 @@
+{
+	"type": "lithostitched:jigsaw",
+	"start_pool": "tfg:mineshaft/mineshaft_start_pool",
+	"size": 15,
+	"max_distance_from_center": 116,
+	"biomes": "#tfg:has_structure/illager_camp",
+	"step": "raw_generation",
+	"terrain_adaptation": "none",
+	"start_height": {
+		"absolute": 1
+	},
+	"project_start_to_heightmap": "WORLD_SURFACE_WG",
+	"use_expansion_hack": false,
+	"adapt_noise": true,
+	"spawn_overrides": {
+		"monster": {
+			"bounding_box": "piece",
+			"spawns": [
+				{
+					"weight": 100,
+					"minCount": 1,
+					"type": "minecraft:skeleton",
+					"maxCount": 1
+				},
+				{
+					"weight": 100,
+					"minCount": 1,
+					"type": "minecraft:spider",
+					"maxCount": 2
+				},
+				{
+					"weight": 100,
+					"minCount": 1,
+					"type": "minecraft:zombie",
+					"maxCount": 2
+				},
+				{
+					"weight": 100,
+					"minCount": 1,
+					"type": "minecraft:creeper",
+					"maxCount": 1
+				},
+				{
+					"weight": 100,
+					"minCount": 1,
+					"type": "minecraft:husk",
+					"maxCount": 1
+				},
+				{
+					"weight": 100,
+					"minCount": 1,
+					"type": "minecraft:drowned",
+					"maxCount": 1
+				}
+			]
+		}
+	}
+}

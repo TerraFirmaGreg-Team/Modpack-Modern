@@ -8,6 +8,9 @@
     "min_y": -30,
     "max_y": 0,
     "random_name": "deep_mars_sheldonite",
+    "project": false,
+    "project_offset": false,
+    "near_lava": false,
     "blocks": [
       {
         "replace": [

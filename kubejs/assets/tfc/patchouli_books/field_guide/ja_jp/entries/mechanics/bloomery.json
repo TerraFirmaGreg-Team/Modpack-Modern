@@ -1,0 +1,80 @@
+{
+	"__comment__": "This file was automatically created by mcresources",
+	"name": "塊鉄炉",
+	"category": "tfc:mechanics",
+	"icon": "tfc:bloomery",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "$(thing)塊鉄炉$()は、$(thing)鉄鉱石$()を製錬し$(thing)塊鉄$()を作成します。この$(thing)塊鉄$()を鍛造することで$(thing)錬鉄$()になります。代表的な鉄鉱石として、$(l:tfg_ores/earth_vein_index#normal_hematite)赤鉄鉱$()、$(l:tfg_ores/earth_vein_index#normal_limonite)褐鉄鉱$()、$(l:tfg_ores/earth_vein_index#normal_magnetite)磁鉄鉱$()などがありますが、これらはそのまま溶かそうとすると$(thing)鋳鉄$()になってしまいます。しかし、鋳鉄は実用的な強度を兼ね備えていません。実用的な強度の鉄である「錬鉄」を作成するために、塊鉄炉を利用する必要があります。ちなみに、鉄を含むものであれば、ツールや鋳鉄インゴットなども含めて、どんなものでも材料として利用できます！"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "tfc:crafting/bloomery",
+			"text": "塊鉄炉は$(thing)青銅系の二重プレート$()8枚で作ることができます。"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"multiblock_id": "tfc:bloomery",
+			"name": "塊鉄炉",
+			"text": "最小の塊鉄炉。塊鉄炉ブロックは$(item)$(k:key.use)$()で開閉します。",
+			"enable_visualize": true
+		},
+		{
+			"type": "patchouli:text",
+			"text": "塊鉄炉は最大サイズで構築した場合、48個まで$(thing)投入物$()を入れることができます。煙突1層につき16個の投入物に対応できるようになります。煙突を1層高くするには、石ブロックをさらに2段積み重ねてください。$(br2)素材と燃料を投入する際は、上まで登って中にアイテムをドロップします。すると灰色の鉱石が積み上がったような状態になります。$(br2)燃料には$(item)木炭$()が使用できます。"
+		},
+		{
+			"type": "patchouli:image",
+			"images": [
+				"tfc:textures/gui/book/tutorial/bloomery_hole.png"
+			],
+			"text": "塊鉄炉では、$(thing)木炭1つ$()と$(thing)鋳鉄144mB分$()を使って、$(thing)塊鉄$()を1つ作り出します。",
+			"border": true
+		},
+		{
+			"type": "patchouli:text",
+			"text": "細かい計算が面倒な場合は、$(item)鉄鉱石の粉25個$()と$(item)燃料22個$()を目安にするとよいでしょう。$(br2)$(thing)燃料$()と$(thing)鉱石$()を両方投入して塊鉄炉を満たしたら、閉じてある塊鉄炉本体に火を付けて15分ほど待ちます。処理が完了すると塊鉄炉は停止し、$(thing)塊鉄ブロック$()が残ります。ピッケルなどでこれを掘り出すと$(thing)塊鉄$()を取り出せます。"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"multiblock": {
+				"pattern": [
+					[
+						"X"
+					],
+					[
+						"0"
+					]
+				],
+				"mapping": {
+					"X": "tfc:bloom[layers=8]"
+				}
+			},
+			"name": "塊鉄ブロック",
+			"text": "塊鉄の塊",
+			"enable_visualize": false
+		},
+		{
+			"type": "tfc:anvil_recipe",
+			"recipe": "tfc:anvil/refined_iron_bloom",
+			"text": "$(thing)塊鉄$()はそのままでは使えないため、$(l:mechanics/anvils)金床$()で鍛造して$(thing)鍛造された塊鉄$()へと仕上げる必要があります。"
+		},
+		{
+			"type": "tfc:anvil_recipe",
+			"recipe": "tfc:anvil/wrought_iron_from_bloom",
+			"text": "さらに$(thing)鍛造された塊鉄$()を$(l:mechanics/anvils)金床$()で鍛造することで、ついに$(thing)錬鉄インゴット$()が完成します！"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(li)塊鉄炉の容量を超えてアイテムを入れると、余分なものは前面から排出されてしまう。$()$(li)火をつける前の塊鉄炉から材料を取り出す場合は、内部のブロックの塊ではなく、塊鉄炉本体を壊さなければならない。$()$(li)塊鉄をそのまま溶かしても鋳鉄になるだけだ。必ず金床で鍛造するように。$()",
+			"title": "とある鍛冶屋が残したメモ書き"
+		}
+	],
+	"read_by_default": true,
+	"extra_recipe_mappings": {
+		"tfc:bloom": 6,
+		"tfc:raw_iron_bloom": 7,
+		"tfc:refined_iron_bloom": 8
+	}
+}

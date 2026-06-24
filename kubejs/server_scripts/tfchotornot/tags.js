@@ -2,43 +2,25 @@
 "use strict";
 
 const registerHotOrNotItemTags = (event) => {
-    
-    // Удаление тегов у отключенных предметов
-    global.HOT_OR_NOT_DISABLED_ITEMS.forEach(item => {
-        event.removeAllTagsFrom(item)
-        event.add('c:hidden_from_recipe_viewers', item)
-    })
-
     event.add('tfchotornot:hot_whitelist', '#forge:hot_ingots')
     event.add('tfchotornot:hot_whitelist', 'minecraft:magma_block')
     event.add('tfchotornot:cold_whitelist', 'minecraft:blue_ice')
     event.add('tfchotornot:cold_whitelist', 'tfg:dry_ice')
+    event.add('tfchotornot:hot_whitelist', 'tfg:asphalt_road_hot')
 
     global.TFC_MAGMA_BLOCKS.forEach(magma => {
         event.add('tfchotornot:hot_whitelist', magma)
     })
     
-
+    global.TFC_METALS.forEach(metal => {
+        event.add('tfchotornot:tong_parts', `tfchotornot:tong_part/${metal}`)
+    })
+    
     event.add('firmalife:usable_on_oven', '#tfchotornot:insulating')
 
-    event.add('tfg:insulating_container', 'gtceu:ulv_super_tank')
-    event.add('tfg:insulating_container', 'gtceu:lv_super_tank')
-    event.add('tfg:insulating_container', 'gtceu:mv_super_tank')
-    event.add('tfg:insulating_container', 'gtceu:hv_super_tank')
-    event.add('tfg:insulating_container', 'gtceu:ev_super_tank')
-    event.add('tfg:insulating_container', 'gtceu:iv_quantum_tank')
-    event.add('tfg:insulating_container', 'gtceu:luv_quantum_tank')
-    event.add('tfg:insulating_container', 'gtceu:zpm_quantum_tank')
-    event.add('tfg:insulating_container', 'gtceu:uv_quantum_tank')
-    event.add('tfg:insulating_container', 'gtceu:uhv_quantum_tank')
-    event.add('tfg:insulating_container', 'gtceu:glass_vial')
-    event.add('tfg:insulating_container', 'gtceu:fluid_cell')
-    event.add('tfg:insulating_container', 'gtceu:universal_fluid_cell')
-    event.add('tfg:insulating_container', 'gtceu:steel_fluid_cell')
-    event.add('tfg:insulating_container', 'gtceu:aluminium_fluid_cell')
-    event.add('tfg:insulating_container', 'gtceu:stainless_steel_fluid_cell')
-    event.add('tfg:insulating_container', 'gtceu:titanium_fluid_cell')
-    event.add('tfg:insulating_container', 'gtceu:tungsten_steel_fluid_cell')
+    event.add('tfg:insulating_container', '#gtceu:super_tanks')
+    event.add('tfg:insulating_container', '#gtceu:fluid_cells')
+    event.add('tfg:insulating_container', 'tfc:metal/lamp/blue_steel')
 
     event.add('tfg:hot_protection_equipment', 'tfc:metal/chestplate/blue_steel')
     event.add('tfg:hot_protection_equipment', 'tfc:metal/boots/blue_steel')
@@ -81,12 +63,7 @@ const registerHotOrNotFluidTags = (event) => {
     event.add("tfchotornot:gaseous_whitelist", 'gtceu:hydrogen')
     event.add("tfchotornot:gaseous_whitelist", 'gtceu:coal_gas')
     event.add("tfchotornot:gaseous_whitelist", 'gtceu:methane')
-}
 
-const registerHotOrNotBlockTags = (event) => {
-    
-    // Удаление тегов у отключенных предметов
-    global.HOT_OR_NOT_DISABLED_ITEMS.forEach(item => {
-        event.removeAllTagsFrom(item)
-    })
+    event.add("tfchotornot:fluid_whitelist", '#firmalife:oils')
+    event.add("tfchotornot:fluid_whitelist", '#tfg:oil_fluids')
 }

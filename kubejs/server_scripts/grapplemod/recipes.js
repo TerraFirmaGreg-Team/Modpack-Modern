@@ -285,7 +285,7 @@ function registerGrapplingHookRecipes(event) {
     }).id('tfg:grapplemod/shapeless/grapplinghook');
 
     //Repair
-    event.recipes.kubejs.shapeless(Item.of('grapplemod:grapplinghook').withName(Text.translate("tfg.grapplemod.repair")), ['grapplemod:grapplinghook', 'gtceu:wrought_iron_dust'])
+    event.recipes.kubejs.shapeless(Item.of('grapplemod:grapplinghook').withName(Text.translate("tfg.grapplemod.repair")), ['grapplemod:grapplinghook', 'gtceu:repair_kit_wrought_iron'])
         .modifyResult((craftingGrid, result) => {
         try {
             let fallbackItem = Item.of("minecraft:air");

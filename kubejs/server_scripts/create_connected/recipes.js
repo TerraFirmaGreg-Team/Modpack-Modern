@@ -3,13 +3,7 @@
 
 const registerCreateConnectedRecipes = (event) => {
 
-	global.CREATE_CONNECTED_DISABLED_ITEMS.forEach(item => {
-		event.remove({ input: item })
-		event.remove({ output: item })
-	})
-
-	event.stonecutting('create_connected:copycat_box', '#forge:ingots/zinc')
-	event.stonecutting('2x create_connected:copycat_catwalk', '#forge:ingots/zinc')
+	event.remove({ input: "create_connected:copycat_vertical_step", output: "create:copycat_step" });
 
 	// Remove Fluid Vessel Crafting
 	event.remove({ id: 'create_connected:crafting/kinetics/fluid_vessel' })
@@ -73,14 +67,43 @@ const registerCreateConnectedRecipes = (event) => {
 	event.replaceInput({ id: 'create_connected:crafting/kinetics/redstone_link_wildcard' }, 'create:transmitter', 'minecraft:redstone_torch')
 
 	event.shaped('create_connected:kinetic_bridge', [
-		'BCB',
+		'BCF',
 		'AEA',
 		'DCD'
 	], {
 		A: 'create:brass_casing',
-		B: '#forge:plates/magnetic_iron',
-		C: '#forge:rods/magnetic_iron',
+		B: '#forge:tools/hammers',
+		C: '#forge:plates/magnetic_iron',
 		D: '#forge:small_gears/red_alloy',
-		E: '#forge:shafts'
+		E: '#forge:shafts',
+		F: '#forge:tools/wrenches'
 	}).id('create_connected:crafting/kinetics/kinetic_bridge')
+
+	event.recipes.gtceu.assembler('tfg:create_connected/kinetic_bridge')
+		.itemInputs('2x create:brass_casing', '2x #forge:plates/magnetic_iron', '2x #forge:small_gears/red_alloy', '#forge:shafts')
+		.itemOutputs('create_connected:kinetic_bridge')
+		.duration(200)
+		.EUt(20)
+
+	TFGHelpers.registerMaterialInfo('create_connected:kinetic_bridge', [GTMaterials.Brass, 2, GTMaterials.Wood, 2, GTMaterials.RedAlloy, 2, GTMaterials.IronMagnetic, 2])
+
+	// Brass chute
+
+	event.shaped('create_connected:brass_chute', [
+		'A',
+		'B'
+	], {
+		A: '#forge:plates/brass',
+		B: 'create:chute'
+	}).id('create_connected:crafting/kinetics/brass_chute')
+
+	TFGHelpers.registerMaterialInfo('create_connected:brass_chute', [GTMaterials.WroughtIron, 3, GTMaterials.Brass, 1]);
+
+	event.shaped('create:smart_chute', [
+		'A',
+		'B'
+	], {
+		A: 'create_connected:brass_chute',
+		B: 'create:electron_tube'
+	}).id('tfg:shaped/smart_chute_from_brass_chute')
 }

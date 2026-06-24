@@ -41,7 +41,7 @@ function registerTFGMarsIodineRecipes(event) {
 		.EUt(GTValues.VA[GTValues.LV])
 
 	event.recipes.firmalife.vat()
-		.inputs('10x tfg:dry_ice', Fluid.of('tfg:crimsene', 200))
+		.inputs('tfg:dry_ice', Fluid.of('tfg:crimsene', 200))
 		.outputItem('tfg:crimsene_gem')
 		.length(300)
 		.temperature(100)
@@ -55,7 +55,7 @@ function registerTFGMarsIodineRecipes(event) {
 		.EUt(GTValues.VA[GTValues.LV])
 
 	event.recipes.firmalife.vat()
-		.inputs('10x tfg:dry_ice', Fluid.of('tfg:warpane', 200))
+		.inputs('tfg:dry_ice', Fluid.of('tfg:warpane', 200))
 		.outputItem('tfg:warpane_gem')
 		.length(300)
 		.temperature(100)

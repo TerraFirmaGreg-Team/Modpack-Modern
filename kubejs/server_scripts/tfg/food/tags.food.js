@@ -16,6 +16,9 @@ function registerTFGFoodItemTags(event) {
 	event.add("tfg:sugars", "afc:birch_sugar");
 	event.add("tfg:sugars", "afc:maple_sugar");
 
+	event.add('tfc:foods/vegetables', 'tfg:food/lavacado')
+	event.add('tfc:foods/fruits', 'tfg:food/magmango')
+
 	const RAW_MEATS = [
 		'tfg:food/raw_birt',
 		'tfg:food/raw_crawlermari',
@@ -45,15 +48,11 @@ function registerTFGFoodItemTags(event) {
 
 	global.WARMING_FOODS.forEach(food => { event.add('tfg:warming_foods', food) })
 
-	//jam sandwhich stuff
-	const usable_in_jam_sandwich = Ingredient.of('#tfc:foods/usable_in_jam_sandwich').itemIds.toArray().map(String);
-	const preserves = Ingredient.of('#tfc:foods/preserves').itemIds.toArray().map(String);
+	// Alias of tfc:foods/preserves, used to give the 2-jam sandwich recipe a distinct tree key in GT's RecipeDB.
+	event.add('tfc:foods/preserves_2', '#tfc:foods/preserves')
 
-	const usable_in_jam_sandwich_2 = usable_in_jam_sandwich.filter(item => !preserves.includes(item));
-
-	usable_in_jam_sandwich_2.forEach(item => {
-		event.add('tfc:foods/usable_in_jam_sandwich_2', item);
-	});
+    event.add('tfg:foods/all_jams', '#tfc:sealed_jars');
+    event.add('tfg:foods/all_jams', '#tfc:foods/preserves');
 
 	event.add('tfg:raw_dinosaur_meat', 'tfg:food/raw_sniffer_beef')
 	event.add('tfg:raw_dinosaur_meat', 'tfg:food/raw_wraptor')
@@ -135,6 +134,8 @@ function registerTFGFoodItemTags(event) {
 		'tfg:food/cooked_walker_steak',
 		'tfg:food/raw_crusher_meat',
 		'tfg:food/cooked_crusher_meat',
+		'tfg:food/raw_bison_meat',
+		'tfg:food/cooked_bison_meat',
 		'wan_ancient_beasts:raw_ancient_meat',
 		'wan_ancient_beasts:cooked_ancient_meat'
 	];
@@ -192,6 +193,7 @@ function registerTFGFoodItemTags(event) {
 		'tfc:food/venison',
 		'tfg:food/raw_sniffer_beef',
 		'tfg:food/raw_crusher_meat',
+		'tfg:food/raw_bison_meat',
 		'wan_ancient_beasts:raw_ancient_meat'
 	];
 	burgerMeats.forEach(item => {
@@ -222,12 +224,9 @@ function registerTFGFoodItemTags(event) {
 	const citrus_fruits = [
 		'tfc:food/orange',
 		'tfc:jar/orange_unsealed',
-		'tfg:food/freeze_dried/orange',
 		'tfc:food/lemon',
 		'tfc:jar/lemon_unsealed',
-		'tfg:food/freeze_dried/lemon',
-		'minecraft:glow_berries',
-		'tfg:food/freeze_dried/glow_berries'
+		'minecraft:glow_berries'
 	];
 	citrus_fruits.forEach(item => {
 		event.add('tfg:foods/citrus_fruits', item);
@@ -274,11 +273,22 @@ function registerTFGFoodItemTags(event) {
 		'tfc_gourmet:falafel',
 		'tfc_gourmet:hummus',
 		'tfc_gourmet:sauerkraut',
-		'tfc_gourmet:bratwurst'
+		'tfc_gourmet:bratwurst',
+		'tfg:buttered_popcorn'
 	];
 	usable_in_meal_bag.forEach(item => {
 		event.add('tfg:foods/usable_in_meal_bag', item);
 	});
+
+	/** @type {{String[]}} List of items that can go in a savory pie */
+	const usable_in_savory_pie = [
+		'#tfc:foods/meats',
+		'#tfc:foods/vegetables',
+	];
+	usable_in_savory_pie.forEach(item => {
+		event.add('tfg:foods/usable_in_savory_pie', item);
+	});
+
 	event.add('tfg:foil_packs', 'tfg:foil_pack');
 	event.add('tfg:foil_packs', 'tfg:clean_foil_pack')
 
@@ -286,25 +296,26 @@ function registerTFGFoodItemTags(event) {
 	event.add('tfg:solid_fats', 'tfc:blubber')
 
 	// Space foods
-	event.add('tfc:foods', 'minecraft:red_mushroom')
-	event.add('tfc:foods', 'minecraft:brown_mushroom')
 	event.add('tfc:foods', 'minecraft:glow_berries')
 	event.add('tfc:foods', 'minecraft:chorus_fruit')
 	event.add('tfc:foods', 'minecraft:popped_chorus_fruit')
 
-	event.add('tfc:foods/vegetables', 'minecraft:red_mushroom')
-	event.add('tfc:foods/vegetables', 'minecraft:brown_mushroom')
+	event.add('tfc:foods/vegetables', 'tfg:food/fly_agaric')
 	event.add('tfc:foods/fruits', 'minecraft:glow_berries')
 	event.add('tfc:foods/fruits', 'minecraft:chorus_fruit')
 	event.add('tfc:foods/fruits', 'minecraft:popped_chorus_fruit')
 
 	event.add('beneath:usable_in_juicer', 'minecraft:glow_berries')
 	event.add('beneath:usable_in_juicer', 'minecraft:chorus_fruit')
-	event.add('beneath:usable_in_juicer', 'minecraft:red_mushroom')
-	event.add('beneath:usable_in_juicer', 'minecraft:brown_mushroom')
+	event.add('beneath:usable_in_juicer', 'tfg:food/fly_agaric')
+	event.add('beneath:usable_in_juicer', 'tfc:plant/saguaro_fruit')
+	event.add('beneath:usable_in_juicer', 'tfc:plant/barrel_cactus')
+	event.add('beneath:usable_in_juicer', 'tfc:plant/silken_pincushion_cactus')
+	event.add('beneath:usable_in_juicer', 'tfc:plant/saguaro_fruit')
+	event.add('beneath:usable_in_juicer', 'tfg:plant/prickly_pear')
+	event.add('beneath:usable_in_juicer', 'tfg:plant/prickly_pear_purple')
 
-	event.add('tfc:foods/usable_in_soup', 'minecraft:red_mushroom')
-	event.add('tfc:foods/usable_in_soup', 'minecraft:brown_mushroom')
+	event.add('tfc:foods/usable_in_soup', 'tfg:food/fly_agaric')
 	event.add('tfc:foods/usable_in_soup', 'minecraft:glow_berries')
 	event.add('tfc:foods/usable_in_soup', 'minecraft:chorus_fruit')
 	event.add('tfc:foods/usable_in_soup', 'minecraft:popped_chorus_fruit')
@@ -319,8 +330,7 @@ function registerTFGFoodItemTags(event) {
     event.add("tfc:foods/usable_in_sandwich", "tfc:food/boiled_egg");
     event.add("tfc:foods/usable_in_sandwich", "firmalife:food/pickled_egg");
 	
-	event.add('tfc:foods/usable_in_salad', 'minecraft:red_mushroom')
-	event.add('tfc:foods/usable_in_salad', 'minecraft:brown_mushroom')
+	event.add('tfc:foods/usable_in_salad', 'tfg:food/fly_agaric')
 	event.add('tfc:foods/usable_in_salad', 'minecraft:glow_berries')
 	event.add('tfc:foods/usable_in_salad', 'minecraft:chorus_fruit')
 	event.add('tfc:foods/usable_in_salad', 'minecraft:popped_chorus_fruit')
@@ -332,7 +342,6 @@ function registerTFGFoodItemTags(event) {
 	event.add('tfc:foods/dairy', 'ad_astra:cheese')
 	event.add('tfc:foods/usable_in_sandwich', 'ad_astra:cheese')
 	event.add('tfc:foods/usable_in_jam_sandwich', 'ad_astra:cheese')
-	event.add('tfc:foods/usable_in_jam_sandwich_2', 'ad_astra:cheese')
 	event.add('firmalife:foods/cheeses', 'ad_astra:cheese')
 
 	// Auto-eat blacklist for backpack feeding upgrade and quarktech helmet

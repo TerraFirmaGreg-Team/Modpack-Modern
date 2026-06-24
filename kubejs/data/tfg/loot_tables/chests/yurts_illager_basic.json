@@ -329,7 +329,23 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:emerald",
-					"weight": 80,
+					"weight": 100,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 4,
+								"min": 2
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:emerald",
+					"weight": 50,
 					"functions": [
 						{
 							"add": false,
@@ -551,8 +567,8 @@
 			],
 			"rolls": {
 				"type": "minecraft:uniform",
-				"max": 8,
-				"min": 6
+				"max": 7,
+				"min": 5
 			}
 		}
 	]

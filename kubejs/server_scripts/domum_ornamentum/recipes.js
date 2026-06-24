@@ -94,10 +94,17 @@ const registerDomumOrnamentumRecipes = (event) => {
 			E: '#forge:buzz_saw_heads'
 		}).id('domum_ornamentum:architectscutter');
 
-	event.recipes.tfc.damage_inputs_shapeless_crafting(event.recipes.minecraft.crafting_shapeless(
-		'4x domum_ornamentum:cactus_extra',
-		['tfc:plant/barrel_cactus', '#tfc:saws']))
-		.id('domum_ornamentum:cactus_extra');
+	event.shapeless('4x domum_ornamentum:cactus_extra', ['tfc:plant/barrel_cactus', '#tfc:saws'])
+		.id('domum_ornamentum:cactus_extra_barrel_cactus');
+
+	event.shapeless('2x domum_ornamentum:cactus_extra', ['tfg:plant/prickly_pear', '#tfc:saws'])
+		.id('domum_ornamentum:cactus_extra_prickly_pear');
+
+	event.shapeless('2x domum_ornamentum:cactus_extra', ['tfg:plant/prickly_pear_purple', '#tfc:saws'])
+		.id('domum_ornamentum:cactus_extra_prickly_pear_purple');
+			
+	event.shapeless('domum_ornamentum:cactus_extra', ['tfg:plant/silken_pincushion_cactus', '#tfc:saws'])
+		.id('domum_ornamentum:cactus_extra_silken_pincushion_cactus');
 
 	event.shaped(Item.of('domum_ornamentum:green_cactus_extra', 8),
 		[

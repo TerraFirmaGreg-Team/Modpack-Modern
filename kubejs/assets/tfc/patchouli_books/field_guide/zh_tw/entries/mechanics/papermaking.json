@@ -1,0 +1,161 @@
+{
+    "name": "造紙術",
+    "category": "tfc:mechanics",
+    "icon": "tfc:unrefined_paper",
+    "pages": [
+      {
+        "type": "patchouli:text",
+        "text": "$(thing)紙張$()由加工過的$(l:mechanics/crops#papyrus)紙莎草$()莖部製作、由$(l:mechanics/papermaking#parchment)動物生皮$()製成，或經由$(l:mechanics/papermaking#paperfromwood)特定木材的繁瑣加工程序$()取得。紙張用於製作$(thing)書本$()與$(thing)地圖$()等書寫材料。"
+      },
+      {
+        "type": "patchouli:crafting",
+        "recipe": "tfc:crafting/papyrus_strips",
+        "text": "紙莎草必須先用$(thing)小刀$()切成條狀。"
+      },
+      {
+        "type": "tfc:sealed_barrel_recipe",
+        "recipe": "tfc:barrel/soaked_papyrus_strip",
+        "text": "接著將紙莎草條浸泡在裝滿$(thing)水$()的$(l:mechanics/barrels)大桶$()裡。"
+      },
+      {
+        "type": "tfc:loom_recipe",
+        "recipe": "tfc:loom/unrefined_paper",
+        "text": "接著將浸泡後的紙莎草條用織布機編織製作$(thing)粗紙$()。最後放置在原木上進行$(l:mechanics/leather_making#scraping)刮除$()來製作$(thing)紙張$()。"
+      },
+      {
+        "type": "patchouli:crafting",
+        "recipe": "tfc:crafting/vanilla/map",
+        "recipe2": "tfc:crafting/vanilla/name_tag"
+      },
+      {
+        "type": "patchouli:crafting",
+        "recipe": "minecraft:writable_book",
+        "recipe2": "minecraft:book_from_glue"
+      },
+      {
+        "type": "patchouli:crafting",
+        "recipe": "tfc:crafting/wood/pine_lectern",
+        "recipe2": "tfc:crafting/wood/kapok_bookshelf"
+      },
+      {
+        "type": "patchouli:text",
+        "text": "下一頁講述有關羊皮紙的造紙程序。\n"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "parchment",
+        "text": "$(thing)羊皮紙$()由$(l:mechanics/leather_making)刮製獸皮$()製作。過程需要幾種不同物品。首先是$(thing)浮石$()。浮石能在$(l:the_world/geology)火山$()附近的地面拾取或用$(l:mechanics/sluices)洗礦槽$()與$(l:mechanics/panning)淘金盤$()淘洗含有安山岩、流紋岩或英安岩的沉積礦物取得。",
+        "title": "羊皮紙"
+      },
+      {
+        "type": "patchouli:multiblock",
+        "multiblock": {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:groundcover/pumice"
+          }
+        },
+        "name": "浮石",
+        "text": "地上的浮石",
+        "enable_visualize": false
+      },
+      {
+        "type": "patchouli:crafting",
+        "recipe": "tfc:crafting/large_treated_hide",
+        "text": "將浮石、鍛造錘與刮製獸皮合成，就能得到$(thing)預製獸皮$()。\n"
+      },
+      {
+        "type": "patchouli:crafting",
+        "recipe": "tfc:crafting/parchment",
+        "text": "將預製獸皮、$(l:mechanics/glassworking#lime)石灰粉$()、麵粉與新鮮雞蛋混合，便能完成處理程序並產出可用的紙張。"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "paperfromwood",
+        "text": "$(thing)木材造紙$()是古老工藝，將堅硬的木頭碎成木漿，再經由壓製、烘乾與刮除來製作紙張。$(br2)注意：較軟的木頭不適合用來造紙。\n",
+        "title": "木頭造紙"
+      },
+      {
+        "type": "patchouli:text",
+        "text": "首先要找到硬木：$(br2)金合歡$(br)梣木$(br)山楊木$(br)樺木$(br)黑檀木$(br)栗木$(br)山核桃木$(br)楓木$(br)橡木$(br)紅木$(br)懸鈴木\n"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "title": "剝皮硬木",
+        "item": {
+          "tag": "tfg:stripped_hardwood"
+        },
+        "text": "The process begins by stripping the $(thing)Hardwood$()'s bark off to expose the internal fibers of the log, You can strip the log by placing it down and right clicking it with an axe"
+      },
+      {
+        "type": "patchouli:crafting",
+        "title": "Hardwood Strip",
+        "recipe": "tfg:crafting/strip_hardwood",
+        "text": "Next, the stripped wood is shaven with an axe to obtain $(item)Hardwood Strips$(). This can be done using an Axe or more sophisticated methods"
+      },
+      {
+        "type": "tfc:sealed_barrel_recipe",
+        "title": "Soaked Hardwood Strip",
+        "recipe": "tfg:barrel/soak_hardwood_strip",
+        "text": "Then, the individual strips are soaked in a $(l:mechanics/barrels)Barrel$() of $(thing)Water$(). This $(thing)debilitates the structural integrity$() of the $(thing)wood$() so it can be $(thing)broken down further$()"
+      },
+      {
+        "type": "tfc:quern_recipe",
+        "recipe": "tfg:quern/soaked_hardwood_strip",
+        "title": "Hardwood Pulp",
+        "text": "Afterwards, utilize the $(l:mechanics/quern)Quern$() to break down the soaked strips into $(item)Hardwood Pulp$()"
+      },
+      {
+        "type": "patchouli:crafting",
+        "recipe": "gtceu:shaped/small_dust_assembling_hardwood",
+        "title": "Piling up the Pulp",
+        "text": "While the quern gives you small piles of pulp, you'll want to combine them together in a $(thing)Workbench$(). More sophisticated methods of crushing the strips yield higher amounts of pulp"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "item": "gtceu:thermochemically_treated_hardwood_dust",
+        "title": "Breaking down the Pulp",
+        "text": "Before the pulp can be processed further into paper, it needs to be broken down further by $(thing)Boiling it with Lye$() in a $(l:firmalife/oven_appliances#vat)Vat$() or a $(l:mechanics/pot)Pot$()."
+      },
+      {
+        "type": "patchouli:empty"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "item": "tfg:soaked_unrefined_paper",
+        "title": "Pressing the Pulp",
+        "text": "After broken down by boiling it with Lye, the $(item)Thermochemically Treated Hardwood Pulp$() can be pressed down into a sheet of $(item)Soaked Unrefined Paper$()"
+      },
+      {
+        "type": "tfc:anvil_recipe",
+        "recipe": "tfg:anvil/soaked_unrefined_paper",
+        "text": "You can utilize an $(l:mechanics/anvils)Anvil$() to beat down the pulp into a sheet"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "title": "Stomping in Barrel",
+        "item": {
+          "tag": "firmalife:stomping_barrels"
+        },
+        "text": "Alternatively, you can stomp the Thermochemically Treated Hardwood Pulp in a $(l:firmalife/wine)Stomping Barrel$()"
+      },
+      {
+        "type": "tfc:drying_recipe",
+        "recipe": "tfg:drying/unrefined_paper",
+        "text": "The final step is $(l:firmalife/drying)Drying$() the $(item)Soaked Unrefined Paper$() into $(item)Unrefined Paper$(), Which then can be Scraped into $(item)Paper$() as shown before."
+      },
+      {
+        "type": "patchouli:text",
+        "title": "Cutting Steps...?",
+        "text": "Advancing in the Tech-Tree will allow you to create paper from wood with less overall steps, check $(thing)EMI$() for the different approaches you can take for making paper with wood."
+      }
+    ],
+    "read_by_default": true
+}

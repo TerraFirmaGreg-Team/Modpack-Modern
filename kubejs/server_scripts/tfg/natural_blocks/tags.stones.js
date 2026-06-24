@@ -19,6 +19,21 @@ function registerTFGStoneItemTags(event) {
 		}
 	}
 
+	function addToStonecutterTag(tag, entry) {
+		if (tag != null) {
+			event.add(tag, entry.block);
+			if (entry.stair != null) {
+				event.add(tag, entry.stair);
+			}
+			if (entry.wall != null) {
+				event.add(tag, entry.wall);
+			}
+			if (entry.slab != null) {
+				event.add(`${tag}_half`, entry.slab);
+			}
+		}
+	}
+
 	const SHAPES = ['stair', 'slab', 'wall'];
 
 	for (let [rockId, rock] of Object.entries(global.BIG_ROCK_TABLE)) {
@@ -28,16 +43,21 @@ function registerTFGStoneItemTags(event) {
 			material = rock.material.replace(/tfg:/g, '');
 
 		if (rock.raw != null) {
-			if (rock.collapsible) {
+			if (rock.collapsible && rock.cobble != null) {
 				event.add('tfc:rock/raw', rock.raw.block);
 				event.add('forge:stone', rock.raw.block);
 			}
 			addToTfcTag(rock.raw.block);
 			addToMaterialTag(material, rock.raw.block);
+			if (rock.brick == null) {
+				addToStonecutterTag(rock.stonecutterTag, rock.raw);
+			}
 
 			SHAPES.forEach(shape => {
 				if (rock.raw[shape] != null) {
-					event.add(`tfg:rock_${shape}s`, rock.raw[shape]);
+					if (rock.collapsible && rock.cobble != null) {
+						event.add(`tfg:rock_${shape}s`, rock.raw[shape]);
+					}
 					addToTfcTag(rock.raw[shape]);
 					addToMaterialTag(material, rock.raw[shape]);
 				}
@@ -62,7 +82,8 @@ function registerTFGStoneItemTags(event) {
 
 			if (rock.cobble.mossy != null) {
 				event.add('tfg:interaction/mossy_cobble', rock.cobble.mossy.block);
-				event.add('forge:cobblestone/mossy', rock.cobble.block);
+				event.remove('forge:cobblestone/normal', rock.cobble.mossy.block);
+				event.add('forge:cobblestone/mossy', rock.cobble.mossy.block);
 				addToTfcTag(rock.cobble.mossy.block);
 				addToMaterialTag(material, rock.cobble.mossy.block);
 
@@ -85,6 +106,7 @@ function registerTFGStoneItemTags(event) {
 			event.add('tfc:rock/bricks', rock.bricks.block);
 			addToTfcTag(rock.bricks.block);
 			addToMaterialTag(material, rock.bricks.block);
+			addToStonecutterTag(rock.stonecutterTag, rock.bricks);
 
 			SHAPES.forEach(shape => {
 				if (rock.bricks[shape] != null) {
@@ -99,8 +121,8 @@ function registerTFGStoneItemTags(event) {
 			if (rock.bricks.mossy != null) {
 				event.add('tfg:brick_index', rock.bricks.mossy.block);
 				event.add('tfg:interaction/mossy_brick', rock.bricks.mossy.block);
-				event.add('tfc:rock/bricks', rock.bricks.block);
-				event.add('tfc:rock/mossy_bricks', rock.bricks.block);
+				event.remove('tfc:rock/bricks', rock.bricks.mossy.block);
+				event.add('tfc:rock/mossy_bricks', rock.bricks.mossy.block);
 				addToTfcTag(rock.bricks.mossy.block);
 				addToMaterialTag(material, rock.bricks.mossy.block);
 
@@ -118,8 +140,8 @@ function registerTFGStoneItemTags(event) {
 			if (rock.bricks.cracked != null) {
 				event.add('tfg:brick_index', rock.bricks.cracked.block);
 				event.add('tfg:interaction/cracked_brick', rock.bricks.cracked.block);
-				event.add('tfc:rock/bricks', rock.bricks.block);
-				event.add('tfc:rock/cracked_bricks', rock.bricks.block);
+				event.remove('tfc:rock/bricks', rock.bricks.cracked.block);
+				event.add('tfc:rock/cracked_bricks', rock.bricks.cracked.block);
 				addToTfcTag(rock.bricks.cracked.block);
 				addToMaterialTag(material, rock.bricks.cracked.block);
 
@@ -138,18 +160,19 @@ function registerTFGStoneItemTags(event) {
 		if (rock.polished != null) {
 			event.add('tfg:brick_index', rock.polished.block);
 			event.add('tfg:interaction/smooth_brick', rock.polished.block);
+			event.remove('tfc:rock/bricks', rock.polished.block);
 			event.add('tfc:rock/smooth', rock.polished.block);
 			event.add('forge:smooth_stone', rock.polished.block);
 			addToTfcTag(rock.polished.block);
 			addToMaterialTag(material, rock.polished.block);
-			if (rock.stonecutterTag != null) {
-				event.add(rock.stonecutterTag, rock.polished.block);
-			}
+			addToStonecutterTag(rock.stonecutterTag, rock.polished);
 
 			SHAPES.forEach(shape => {
 				if (rock.polished[shape] != null) {
 					event.add('tfg:brick_index', rock.polished[shape]);
-					event.add(`tfg:rock_${shape}s`, rock.polished[shape]);
+					if (rock.collapsible && rock.cobble != null) {
+						event.add(`tfg:rock_${shape}s`, rock.polished[shape]);
+					}
 					addToTfcTag(rock.polished[shape]);
 					addToMaterialTag(material, rock.polished[shape]);
 
@@ -161,19 +184,17 @@ function registerTFGStoneItemTags(event) {
 		}
 
 		if (rock.chiseled != null) {
-			event.add('tfc:rock/bricks', rock.chiseled.block);
+			event.remove('tfc:rock/bricks', rock.chiseled.block);
 			event.add('tfc:rock/chiseled_bricks', rock.chiseled.block);
 			addToTfcTag(rock.chiseled.block);
 			addToMaterialTag(material, rock.chiseled.block);
-			if (rock.stonecutterTag != null) {
-				event.add(rock.stonecutterTag, rock.chiseled.block);
-				addToMaterialTag(material, rock.chiseled.block);
-			}
+			addToStonecutterTag(rock.stonecutterTag, rock.chiseled);
 		}
 
 		if (rock.gravel != null) {
 			addToTfcTag(rock.gravel);
 			addToMaterialTag(material, rock.gravel);
+			event.add('tfc:rock/gravel', rock.gravel);
 			if (rock.gravelTag != null) {
 				event.add(rock.gravelTag, rock.gravel);
 			}
@@ -206,6 +227,7 @@ function registerTFGStoneItemTags(event) {
 
 		if (rock.spike != null) {
 			addToTfcTag(rock.spike);
+			event.add('tfg:rock_spikes', rock.spike);
 		}
 
 		if (rock.pillar != null) {
@@ -230,17 +252,12 @@ function registerTFGStoneItemTags(event) {
 				event.add('tfc:rock/chiseled_bricks', blockForms.block);
 				addToTfcTag(blockForms.block);
 				addToMaterialTag(material, blockForms.block);
-				if (rock.stonecutterTag != null) {
-					event.add(rock.stonecutterTag, blockForms.block);
-				}
+				addToStonecutterTag(rock.stonecutterTag, blockForms);
 
 				SHAPES.forEach(shape => {
 					if (blockForms[shape] != null) {
 						addToTfcTag(blockForms[shape]);
 						addToMaterialTag(material, blockForms[shape]);
-						if (rock.stonecutterTag != null) {
-							event.add(rock.stonecutterTag, blockForms[shape]);
-						}
 					}
 				})
 			})
@@ -325,10 +342,12 @@ function registerTFGStoneBlockTags(event) {
 		if (rock.cobble != null) {
 			event.add('tfc:can_landslide', rock.cobble.block)
 			event.add('forge:cobblestone', rock.cobble.block)
+			event.add('tfc:toughness_2', rock.cobble.block)
 
 			if (rock.cobble.mossy != null) {
 				event.add('tfc:can_landslide', rock.cobble.mossy.block)
 				event.add('forge:cobblestone', rock.cobble.mossy.block)
+				event.add('tfc:toughness_2', rock.cobble.mossy.block)
 			}
 		}
 		

@@ -5,11 +5,12 @@
  * 
  * @param {TagEvent.Item} event 
  */
-const registerMinecraftItemTags = (event) => {
-	global.MINECRAFT_DISABLED_ITEMS.forEach(item => {
-		event.removeAllTagsFrom(item)
-		event.add('c:hidden_from_recipe_viewers', item)
-	})
+const registerMinecraftItemTags = (event) => {	
+	event.removeAllTagsFrom("minecraft:lantern");
+	event.removeAllTagsFrom("minecraft:raw_iron_block");
+	event.removeAllTagsFrom("minecraft:grass_block");
+	event.removeAllTagsFrom("minecraft:infested_deepslate");
+	event.removeAllTagsFrom("minecraft:furnace");
 
 	global.MINECRAFT_HIDED_ITEMS.forEach(item => {
 		event.add('c:hidden_from_recipe_viewers', item)
@@ -27,8 +28,10 @@ const registerMinecraftItemTags = (event) => {
 
 	event.remove('minecraft:creeper_drop_music_discs', ['minecraft:music_disc_11'])
 
+	event.remove('forge:gems', 'tfc:ore/lignite')
+	event.remove('forge:gems', 'tfc:ore/bituminous_coal')
+	event.remove('forge:gems', 'beneath:cursecoal')
 	event.remove('forge:gems', 'minecraft:charcoal')
-	event.remove('forge:gems', 'minecraft:coal')
 	event.remove('forge:gems', 'minecraft:flint')
 
 	event.add('tfc:colored_terracotta', 'minecraft:white_terracotta')
@@ -38,7 +41,8 @@ const registerMinecraftItemTags = (event) => {
 	event.add('tfc:makes_black_dye', 'minecraft:ink_sac')
 	event.add('tfc:makes_white_dye', 'minecraft:bone_meal')
 
-	event.add('create:blaze_burner_fuel/regular', 'minecraft:coal')
+	event.add('create:blaze_burner_fuel/regular', 'tfc:ore/lignite')
+	event.add('create:blaze_burner_fuel/regular', 'tfc:ore/bituminous_coal')
 	event.add('create:blaze_burner_fuel/regular', 'minecraft:charcoal')
 
 	event.add("tfg:rubber_plants", "minecraft:spore_blossom")
@@ -47,9 +51,14 @@ const registerMinecraftItemTags = (event) => {
 }
 
 const registerMinecraftBlockTags = (event) => {
-	global.MINECRAFT_DISABLED_ITEMS.forEach(item => {
-		event.removeAllTagsFrom(item)
+	global.MINECRAFT_HIDED_ITEMS.forEach(item => {
+		event.add('c:hidden_from_recipe_viewers', item)
 	})
+	event.removeAllTagsFrom("minecraft:lantern");
+	event.removeAllTagsFrom("minecraft:raw_iron_block");
+	event.removeAllTagsFrom("minecraft:grass_block");
+	event.removeAllTagsFrom("minecraft:infested_deepslate");
+	event.removeAllTagsFrom("minecraft:furnace");
 
 	// Stops saws from being able to pick up ice
 	event.remove('minecraft:ice', 'minecraft:ice')
@@ -57,6 +66,7 @@ const registerMinecraftBlockTags = (event) => {
 
 	// Теперь обсидиан сторадж блок
 	event.add('forge:storage_blocks/obsidian', 'minecraft:obsidian')
+	event.remove('minecraft:needs_diamond_tool', 'minecraft:obsidian')
 
 	event.add('minecraft:mineable/pickaxe', 'minecraft:glowstone')
 

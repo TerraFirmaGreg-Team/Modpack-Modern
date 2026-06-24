@@ -8,6 +8,9 @@
     "min_y": 80,
     "max_y": 180,
     "random_name": "mars_surface_bismuthinite",
+    "project": false,
+    "project_offset": false,
+    "near_lava": false,
     "blocks": [
       {
         "replace": [

@@ -23,7 +23,7 @@ global.AIRCRAFT_UPGRADES = [
 	"aluminium_hull_reinforcement",
 	"stainless_steel_hull_reinforcement",
 	"titanium_hull_reinforcement"
-]
+];
 
 
 /**
@@ -39,7 +39,7 @@ global.MOON_STONE_TYPES = [
 	"moon_deepslate",
 	"moon_stone",
 	"rhyolite"
-]
+];
 
 /**
  * @type {string[]} - Biome IDs
@@ -55,7 +55,7 @@ global.MOON_BIOMES = [
 	'tfg:moon/lunar_corals_sparse',
 	'tfg:moon/lunar_lights_dense',
 	'tfg:moon/lunar_lights_sparse'
-]
+];
 
 /**
  * @type {string[]} - Biome IDs
@@ -75,7 +75,7 @@ global.MARS_BIOMES = [
 	'tfg:mars/sangnum_plains',
 	'tfg:mars/sangnum_hills',
 	'tfg:mars/martian_mountains'
-]
+];
 
 /**
  * @type {string[]} - Biome IDs
@@ -90,74 +90,12 @@ global.VENUS_BIOMES = [
 	'tfg:venus/stromatolite_beach',
 	'tfg:venus/sulfuric_ravine',
 	'tfg:venus/scorching_volcanoes'
-]
-
-/**
- * @type {string[]} - Block Names
- */
-global.TFG_MACHINE_CASINGS = [
-	'machine_casing_clean_stainless_steel_desh',
-	'machine_casing_desh_ptfe',
-	'machine_casing_iron_desh',
-	'machine_casing_ptfe_desh',
-	'machine_casing_stainless_steel_desh',
-	'machine_casing_blue_solar_panel',
-	'machine_casing_green_solar_panel',
-	'machine_casing_red_solar_panel',
-	'machine_casing_mars',
-	'machine_casing_ostrum_carbon'
 ];
 
 /**
  * @type {string[]} - Circuit Tiers
  */
 global.UNIVERSAL_CIRCUIT_TIERS = ["ulv", "lv", "mv", "hv", "ev", "iv", "luv", "zpm", "uv", "uhv"];
-
-/**
- * @typedef {Object} Fruit
- * @property {string} name - Fruit Name
- * @property {string} id - Fruit ID
- * @property {number} saturation - Saturation Value
- * @property {number} water - Water Value
- * @property {number} fruit - Fruit Value
- * @property {number} decay - Decay Modifier
- */
-
-/** @type {Fruit[]} */
-global.FOOD_FRUIT = [
-	{name: 'red_grapes', id: 'firmalife:food/red_grapes', saturation: 0.4, water: 2, fruit: 0.5, decay: 2.25},
-	{name: 'white_grapes', id: 'firmalife:food/white_grapes', saturation: 0.4, water: 2, fruit: 0.5, decay: 2.25},
-	{name: 'glow_berries', id: 'minecraft:glow_berries', saturation: 0, water: 5, fruit: 0.5, decay: 2.25},
-	{name: 'chorus_fruit', id: 'minecraft:chorus_fruit', saturation: 0, water: 5, fruit: 2, decay: 1.2},
-	{name: 'popped_chorus_fruit', id: 'minecraft:popped_chorus_fruit', saturation: 1, water: 0, fruit: 3, decay: 0.8},
-	{name: 'blackberry', id: 'tfc:food/blackberry', saturation: 0.2, water: 5, fruit: 0.8, decay: 4.5},
-	{name: 'blueberry', id: 'tfc:food/blueberry', saturation: 0.2, water: 5, fruit: 0.8, decay: 4.5},
-	{name: 'bunchberry', id: 'tfc:food/bunchberry', saturation: 0.4, water: 5, fruit: 0.8, decay: 4.5},
-	{name: 'cloudberry', id: 'tfc:food/cloudberry', saturation: 0.4, water: 5, fruit: 0.8, decay: 4.5},
-	{name: 'cranberry', id: 'tfc:food/cranberry', saturation: 0.2, water: 5, fruit: 1, decay: 2.25},
-	{name: 'elderberry', id: 'tfc:food/elderberry', saturation: 0.2, water: 5, fruit: 1, decay: 4.5},
-	{name: 'gooseberry', id: 'tfc:food/gooseberry', saturation: 0.4, water: 5, fruit: 0.8, decay: 4.5},
-	{name: 'raspberry', id: 'tfc:food/raspberry', saturation: 0.4, water: 5, fruit: 0.8, decay: 4.5},
-	{name: 'snowberry', id: 'tfc:food/snowberry', saturation: 0.2, water: 5, fruit: 1, decay: 4.5},
-	{name: 'strawberry', id: 'tfc:food/strawberry', saturation: 0.4, water: 10, fruit: 0.5, decay: 4.5},
-	{name: 'wintergreen_berry', id: 'tfc:food/wintergreen_berry', saturation: 0.2, water: 5, fruit: 1, decay: 2.1},
-	{name: 'banana', id: 'tfc:food/banana', saturation: 0.2, water: 0, fruit: 1, decay: 2.25},
-	{name: 'cherry', id: 'tfc:food/cherry', saturation: 0.2, water: 5, fruit: 1, decay: 3.5},
-	{name: 'green_apple', id: 'tfc:food/green_apple', saturation: 0.4, water: 0, fruit: 1, decay: 2.5},
-	{name: 'lemon', id: 'tfc:food/lemon', saturation: 0.2, water: 5, fruit: 0.08, decay: 2.25},
-	{name: 'olive', id: 'tfc:food/olive', saturation: 0.2, water: 0, fruit: 1, decay: 2.25},
-	{name: 'orange', id: 'tfc:food/orange', saturation: 0.4, water: 10, fruit: 0.5, decay: 2.25},
-	{name: 'peach', id: 'tfc:food/peach', saturation: 0.4, water: 10, fruit: 0.5, decay: 2.5},
-	{name: 'plum', id: 'tfc:food/plum', saturation: 0.4, water: 5, fruit: 0.8, decay: 2.25},
-	{name: 'red_apple', id: 'tfc:food/red_apple', saturation: 0.4, water: 0, fruit: 1, decay: 2.25},
-	{name: 'pumpkin_chunks', id: 'tfc:food/pumpkin_chunks', saturation: 1, water: 5, fruit: 0.8, decay: 2.25},
-	{name: 'melon_slice', id: 'tfc:food/melon_slice', saturation: 0.2, water: 5, fruit: 0.8, decay: 2.25},
-	{name: 'fig', id: 'firmalife:food/fig', saturation: 1, water: 5, fruit: 0.9, decay: 1},
-	{name: 'pineapple', id: 'firmalife:food/pineapple', saturation: 1, water: 1, fruit: 0.8, decay: 4.5},
-	{name: 'cave_pumpkin', id: 'betterend:cave_pumpkin_chunks', saturation: 1, water: 5, fruit: 0.8, decay: 2.25 },
-	{name: 'blossom_berry', id: 'betterend:blossom_berry_product', saturation: 1, water: 7.5, fruit: 1.5, decay: 2 },
-	{name: 'shadow_berry', id: 'betterend:shadow_berry_cooked', saturation: 1, water: 5, fruit: 1.5, decay: 2 }
-];
 
 /** @type {Hammering[]} */
 global.HAMMERING = [ // Crushing relationships for manual block hammering, create press hammering and gtceu forge hammer crushing.
@@ -178,27 +116,6 @@ global.HAMMERING = [ // Crushing relationships for manual block hammering, creat
 	{ raw: '#tfg:hematitic_gravel',                 hammered: 'minecraft:red_sand',              duration: 70, eu: 16 },
 ]
 
-global.COOLING_FOODS = [
-	'firmalife:food/vanilla_ice_cream',
-	'firmalife:food/chocolate_ice_cream',
-	'firmalife:food/strawberry_ice_cream',
-	'firmalife:food/cookie_dough_ice_cream',
-	'firmalife:food/banana_split'
-];
-
-global.COOLING_FOODS_STRONG = [
-	'tfg:ice_soup'
-];
-
-global.WARMING_FOODS = [
-	'tfc:food/grain_soup',
-	'tfc:food/fruit_soup',
-	'tfc:food/vegetables_soup',
-	'tfc:food/protein_soup',
-	'tfc:food/dairy_soup',
-	'tfg:food/poutine'
-];
-
 /**
  * @typedef {Object} LabEqupmentContainers
  * @property {string} type - Container Type
@@ -210,25 +127,6 @@ global.LAB_EQUIPMENT_CONTAINERS = [
 	{type: 'beaker', capacity: 1296},
 	{type: 'flask', capacity: 144},
 	{type: 'vial', capacity: 16}
-];
-
-/**
- * @typedef {Object} spices
- * @property {string} plant - Spice Plant
- * @property {string} product - Spice Product
- */
-/** @type {spices[]} - Item IDs */
-global.SPICES = [
-	// Cinnamon is not obtainable so im not including it yet.
-	{ plant: 'firmalife:plant/basil', product: 'firmalife:spice/basil_leaves' },
-	{ plant: 'firmalife:plant/vanilla', product: 'firmalife:spice/vanilla' },
-	// New spices V
-	{ plant: 'firmalife:plant/bay_laurel', product: 'tfg:spice/bay_leaf' },
-	{ plant: 'firmalife:plant/cardamom', product: 'tfg:spice/cardamom_pods' },
-	{ plant: 'firmalife:plant/cilantro', product: 'tfg:spice/cilantro_leaves' },
-	{ plant: 'firmalife:plant/cumin', product: 'tfg:spice/cumin_seeds' },
-	{ plant: 'firmalife:plant/oregano', product: 'tfg:spice/oregano_leaves' },
-	{ plant: 'firmalife:plant/pimento', product: 'tfg:spice/allspice' }
 ];
 
 /**
@@ -257,14 +155,93 @@ global.FISH_INDEX = [
  * @type {string[]} - Saws unable to silk harvest ice
  */
 global.ICE_SAW_BLACKLIST = [
-	"gtceu:damascus_steel_saw",
-	"gtceu:steel_saw",
+	"gtceu:copper_saw",
 	"gtceu:bronze_saw",
 	"gtceu:bismuth_bronze_saw",
-	"gtceu:copper_saw",
-	"gtceu:cobalt_brass_saw",
-	"gtceu:black_steel_saw",
 	"gtceu:black_bronze_saw",
 	"gtceu:wrought_iron_saw",
-	"gtceu:invar_saw"
-]
+	"gtceu:steel_saw",
+	"gtceu:black_steel_saw",
+	"gtceu:arsenic_bronze_saw",
+	"gtceu:damascus_steel_saw"
+];
+
+/**
+ * @type {string[]}
+ */
+global.NEW_OVERWORLD_PLANTS = [
+	"tfg:plant/red_oat_grass",
+	"tfg:plant/azalea",
+	"tfg:plant/bear_grass",
+	"tfg:plant/bird_nest_fern",
+	"tfg:plant/buttercup",
+	"tfg:plant/cornflower",
+	"tfg:plant/dry_grass",
+	"tfg:plant/edelweiss",
+	"tfg:plant/elegant_sunburst_lichen",
+	"tfg:plant/fan_palm",
+	"tfg:plant/kinnikinnick",
+	"tfg:plant/mountain_hullwort",
+	"tfg:plant/moss_campion",
+	"tfg:plant/palash",
+	"tfg:plant/penwortel",
+	"tfg:plant/prickly_pear",
+	"tfg:plant/prickly_pear_purple",
+	"tfg:plant/qantu",
+	"tfg:plant/ramirezella",
+	"tfg:plant/ramunda",
+	"tfg:plant/silken_pincushion_cactus",
+	"tfg:plant/silver_bromeliad",
+	"tfg:plant/shawiash",
+	"tfg:plant/tank_bromeliad",
+	"tfg:plant/yellow_saxifrage",
+	"tfg:plant/flame_vine",
+	"tfg:plant/cycad"
+];
+
+/**
+ * @typedef {Object} NewWoodType.
+ * @property {string} name - Wood Type Name.
+ * @property {string} barkColor - Bark Color (Minecraft Color).
+ * @property {string} woodColor - Wood Color (Minecraft Color).
+ * @property {string} leafColor - Leaf Color (Minecraft Color).
+ * @property {string} woodSound - Wood Sound Type.
+ * @property {string} leafSound - Leaf Sound Type.
+ * @property {number} daysToGrow - Days to Grow.
+ * @property {string} location - Location.
+ */
+/**
+ * @type {NewWoodType[]}
+ */
+global.TFG_NEW_WOOD_TYPES = [
+	{
+		name: "araucaria",
+		barkColor: "brown",
+		woodColor: "white",
+		leafColor: "green",
+		woodSound: "wood",
+		leafSound: "azalea_leaves",
+		daysToGrow: 5,
+		location: "nether"
+	},
+	{
+		name: "mahoe",
+		barkColor: "brown",
+		woodColor: "blue",
+		leafColor: "green",
+		woodSound: "wood",
+		leafSound: "azalea_leaves",
+		daysToGrow: 5,
+		location: "nether"
+	},
+	{
+		name: "beech",
+		barkColor: "brown",
+		woodColor: "lime",
+		leafColor: "green",
+		woodSound: "wood",
+		leafSound: "azalea_leaves",
+		daysToGrow: 6,
+		location: "nether"
+	}
+];

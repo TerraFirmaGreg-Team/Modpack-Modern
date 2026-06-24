@@ -58,7 +58,7 @@ function registerTFGSpaceSuitRecipes(event) {
 			'#forge:foils/silicone_rubber',
 			'tfg:polycaprolactam_fabric'
 		)
-		.itemOutputs('2x tfg:space_suit_fabric')
+		.itemOutputs('4x tfg:space_suit_fabric')
 		.duration(20 * 10)
 		.EUt(GTValues.VA[GTValues.HV])
 		.addMaterialInfo(true)

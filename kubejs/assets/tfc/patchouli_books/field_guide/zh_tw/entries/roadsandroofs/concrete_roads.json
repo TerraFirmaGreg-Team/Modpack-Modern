@@ -1,0 +1,71 @@
+{
+  "name": "混凝土道路",
+  "category": "tfc:roadsandroofs",
+  "icon": "rnr:concrete_road_panel",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "正確施作的混凝土路可提供30%移动速度加成。 施工時應確保混泥土凝固前不被踩踏或開裂，否則將失去速度增益。"
+    },
+    {
+      "type": "patchouli:image",
+      "title": "混凝土道路",
+      "images": [
+        "rnr:textures/gui/book/concrete_road.png"
+      ],
+      "border": true
+    },
+    {
+      "type": "patchouli:spotlight",
+      "anchor": "liquid_concrete",
+      "item": "gtceu:concrete_bucket",
+      "title": "製作混凝土",
+      "text": "建造混凝土道路的第一步混合濕混凝土。用$(thing)攪拌機$()將水與任兩種石粉方解/大理石粉以及石膏粉混合；或用三種石粉加黏土粉，來製作$(thing)液態混凝土$()。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "anchor": "wet_concrete",
+      "item": "rnr:bucket/concrete",
+      "title": "製作混凝土",
+      "text": "把$(thing)攪拌機$()設為$(thing)程式電路 #7$()，加入更多水稀釋液態混凝土，得到$(thing)濕混凝土混合物$()。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "取得已混合的$(thing)濕混凝土$()就可以用桶舀取並倒在$(thing)基層方塊$()上，它會自動向相鄰方塊蔓延。混凝土需要一天時間硬化，此期间要防止生物踩踏尚未凝固的混凝土，否則會形成不平整的表面導致速度加成失效。$(thing)鶴嘴鋤$()可以抹平腳印。"
+    },
+    {
+      "type": "patchouli:image",
+      "title": "澆築混凝土路",
+      "images": [
+        "rnr:textures/gui/book/wet_concrete.png"
+      ],
+      "border": true
+    },
+    {
+      "type": "patchouli:text",
+      "text": "混凝土乾燥過程還會發生收縮開裂問題。當澆築區域任意方向寬度超過4格時，距离混凝土$(thing)邊緣$()、$(thing)控制縫$()或$(thing)紋理飾面$()超出2格的方塊會產生裂縫。通過分區澆築、每隔5格用$(thing)鶴嘴鋤$()添加$(thing)控制縫$()或$(thing)紋理飾面$()預防開裂。"
+    },
+    {
+      "type": "patchouli:image",
+      "title": "控制縫",
+      "images": [
+        "rnr:textures/gui/book/control_joints.png"
+      ],
+      "border": true
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)紋理飾面$()藉由將$(thing)磚頭$()、$(thing)鋪路磚$()或$(thing)平滑石方塊$()壓進凝固中的混凝土形成裝飾表面，這些方塊兼具防開裂的$(thing)控制縫$()功能。混凝土完全乾燥後可用$(thing)鑿子$()製作半磚與階梯。"
+    },
+    {
+      "type": "patchouli:image",
+      "title": "仿石磚路",
+      "images": [
+        "rnr:textures/gui/book/faux_sett.png"
+      ],
+      "border": true
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 20
+}

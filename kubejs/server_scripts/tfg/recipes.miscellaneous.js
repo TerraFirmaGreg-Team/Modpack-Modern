@@ -10,17 +10,6 @@ function registerTFGMiscellaneousRecipes(event) {
 	//Moss
 	event.replaceInput({ input: 'minecraft:vine' }, 'minecraft:vine', '#tfc:moss')
 
-	event.shapeless('1x minecraft:moss_block', [
-		'#tfc:dirt',
-		'#tfc:moss'
-	]).id(`tfg:shapeless/moss_block`)
-
-	event.shaped('6x minecraft:moss_carpet', [
-		'AA'
-	], {
-		A: 'minecraft:moss_block'
-	}).id(`tfg:shaped/moss_carpet`)
-
 	// Universal Circuit
 	global.UNIVERSAL_CIRCUIT_TIERS.forEach(tier => {
 		event.shapeless(Item.of(`tfg:${tier}_universal_circuit`, 1), [Ingredient.of([`#gtceu:circuits/${tier}`]).subtract([`tfg:${tier}_universal_circuit`])]
@@ -52,6 +41,39 @@ function registerTFGMiscellaneousRecipes(event) {
 		1, -1, 0, 0, 0, 0, -1, 1
 	]
 	).id('tfg:sewing/piglin_disguise')
+    
+	event.recipes.gtceu.assembler('tfg:piglin_disguise')
+		.itemInputs('2x #tfc:sewing_light_cloth', '2x #tfc:sewing_dark_cloth', '3x #forge:string')
+		.itemOutputs('tfg:piglin_disguise')
+		.EUt(GTValues.VA[GTValues.ULV])
+		.duration(200)
+        .circuit(2)
+
+    // Player Head
+    event.recipes.tfc.sewing(
+        '1x minecraft:player_head',
+        [
+            0,0,0,0,0,0,0,0,0,
+            0,0,0,1,0,1,0,0,0,
+            0,0,0,1,0,1,0,0,0,
+            0,0,1,1,0,1,1,0,0,
+            0,0,0,0,0,0,0,0,0
+        ],
+        [
+            1, 1, 1,-1,-1, 1, 1, 1,
+            1,-1, 1, 0, 0, 1,-1, 1,
+            1, 1, 1, 0, 0, 1, 1, 1,
+           -1,-1, 0, 0, 0, 0,-1,-1
+        ]
+    ).id('tfg:sewing/player_head');
+
+	event.recipes.gtceu.assembler('tfg:player_head')
+		.itemInputs('2x #tfc:sewing_light_cloth', '1x #tfc:sewing_dark_cloth', '2x #forge:string')
+		.itemOutputs('minecraft:player_head')
+		.EUt(GTValues.VA[GTValues.ULV])
+		.duration(200)
+        .circuit(3)
+
 
 	//Trowel
 	event.shaped('tfg:trowel', [
@@ -177,5 +199,86 @@ function registerTFGMiscellaneousRecipes(event) {
 		.duration(5*20)
 		.EUt(GTValues.VA[GTValues.LV])
 		.addMaterialInfo(true);
+
+	//#region Struts and Girders
+
+	const STRUT_AND_GIRDER_METALS = [
+		{ metal: 'copper', amount: 4, recycle: GTMaterials.Copper, yield: 0.25 },
+		{ metal: 'zinc', amount: 4, recycle: GTMaterials.Zinc, yield: 0.25 },
+		{ metal: 'brass', amount: 4, recycle: GTMaterials.Brass, yield: 0.25 },
+		{ metal: 'tin_alloy', amount: 4, recycle: GTMaterials.TinAlloy, yield: 0.25 },
+		{ metal: 'wrought_iron', amount: 8, recycle: GTMaterials.WroughtIron, yield: 0.125 },
+		{ metal: 'steel', amount: 8, recycle: GTMaterials.Steel, yield: 0.125 }
+	]
+
+	STRUT_AND_GIRDER_METALS.forEach(material => {
+		// Girder
+		if(material.metal != 'steel') {
+			event.stonecutting(`${material.amount}x tfg:girder/beam/${material.metal}`, `#forge:ingots/${material.metal}`)
+			TFGHelpers.registerMaterialInfo(`tfg:girder/beam/${material.metal}`, [material.recycle, material.yield])
+		}
+		
+		// Truss
+		event.stonecutting(`${material.amount}x tfg:girder/truss/${material.metal}`, `#forge:ingots/${material.metal}`)
+		TFGHelpers.registerMaterialInfo(`tfg:girder/truss/${material.metal}`, [material.recycle, material.yield])
+
+		// Girder Strut
+		event.stonecutting(`${material.amount}x tfg:strut/beam/${material.metal}`, `#forge:ingots/${material.metal}`)
+		TFGHelpers.registerMaterialInfo(`tfg:strut/beam/${material.metal}`, [material.recycle, material.yield])
+
+		// Truss Strut
+		event.stonecutting(`${material.amount}x tfg:strut/truss/${material.metal}`, `#forge:ingots/${material.metal}`)
+		TFGHelpers.registerMaterialInfo(`tfg:strut/truss/${material.metal}`, [material.recycle, material.yield])
+	})
+
+	//#endregion
+		
+	// Silk thread
+	event.recipes.tfc.damage_inputs_shapeless_crafting(
+		event.shapeless('minecraft:string', [			
+			'4x tfg:silk_fibers',
+			'#tfg:tools/spindles'
+		]).id('tfg:shapeless/silk_fibers_to_thread'))
+
+	event.recipes.gtceu.wiremill('tfg:silk_fiber_thread')
+		.itemInputs('4x tfg:silk_fibers')
+		.itemOutputs('minecraft:string')
+		.duration(80)
+		.EUt(4)
+
+	// Prismatic Spray Can
+
+	event.recipes.gtceu.assembler('tfg:chemical_prismatic_die')
+		.itemInputs(
+			Item.of('gtceu:chemical_red_dye',16),
+			Item.of('gtceu:chemical_yellow_dye',16),
+			Item.of('gtceu:chemical_green_dye',16),
+			Item.of('gtceu:chemical_blue_dye',16),
+			Item.of('gtceu:chemical_brown_dye', 16),
+			Item.of('gtceu:chemical_white_dye', 16),
+			Item.of('gtceu:chemical_black_dye', 16),
+			Item.of('glow_ink_sac',16)
+			)
+		.itemOutputs('tfg:chemical_prismatic_dye')
+		.duration(20*15)
+		.EUt(GTValues.VA[GTValues.MV])
+
+	event.recipes.gtceu.extractor('tfg:chemical_prismatic_fluid')
+		.itemInputs(Item.of('tfg:chemical_prismatic_dye', 1))
+		.outputFluids(Fluid.of('tfg:prismatic_paint', 1000))
+		.duration(20*30)
+		.EUt(GTValues.VA[GTValues.MV])
+
+	event.recipes.gtceu.assembler('tfg:chemical_prismatic_spraycan')
+    .itemInputs(
+        Item.of('gtceu:empty_spray_can', 1),
+        Item.of('gtceu:solvent_spray_can', 1),
+        Item.of('gtceu:double_vanadium_steel_plate', 1)
+    )
+    .itemOutputs(
+        Item.of('tfg:chameleon_spray_can', 1, '{Fluid:{Amount:0,FluidName:"tfg:prismatic_paint"},color:-1}')
+    )
+    .duration(20 * 30)
+    .EUt(GTValues.VA[GTValues.MV])
 	
 }

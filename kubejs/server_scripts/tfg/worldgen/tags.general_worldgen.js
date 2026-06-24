@@ -20,13 +20,29 @@ function registerTFGGeneralWorldgenItemTags(event) {
 	event.add('c:hidden_from_recipe_viewers', 'tfg:pile/mars_sand_covering')
 	event.add('c:hidden_from_recipe_viewers', 'tfg:pile/venus_sand_covering')
 	event.add('c:hidden_from_recipe_viewers', 'tfg:pile/hematitic_sand_covering')
-	event.add('c:hidden_from_recipe_viewers', 'tfg:pile/mars_snow_covering')
 
 	event.add('minecraft:wart_blocks', 'ad_astra:aeronos_cap')
 	event.add('minecraft:wart_blocks', 'ad_astra:strophar_cap')
 	event.add('minecraft:wart_blocks', 'minecraft:mushroom_stem')
 	event.add('tfc:compost_greens', 'minecraft:nether_wart_block')
 	event.add('tfc:compost_greens', 'minecraft:warped_wart_block')
+
+	event.add("tfg:softwood", `#tfg:araucaria_logs`);
+	event.add("tfg:stripped_softwood", `tfg:wood/stripped_log/araucaria`);
+	event.add("tfg:stripped_softwood", `tfg:wood/stripped_wood/araucaria`);
+	event.add("tfg:softwood_supports", `tfg:wood/support/araucaria`);
+	event.add('tfc:makes_tannin', '#tfg:araucaria_logs')
+
+	event.add("tfg:hardwood", `#tfg:mahoe_logs`);
+	event.add("tfg:stripped_hardwood", `tfg:wood/stripped_log/mahoe`);
+	event.add("tfg:stripped_hardwood", `tfg:wood/stripped_wood/mahoe`);
+	event.add("tfg:hardwood_supports", `tfg:wood/support/mahoe`);
+	event.add('tfc:makes_tannin', '#tfg:mahoe_logs')
+
+	event.add("tfg:hardwood", `#tfg:beech_logs`);
+	event.add("tfg:stripped_hardwood", `tfg:wood/stripped_log/beech`);
+	event.add("tfg:stripped_hardwood", `tfg:wood/stripped_wood/beech`);
+	event.add("tfg:hardwood_supports", `tfg:wood/support/beech`);
 }
 
 function registerTFGGeneralWorldgenBlockTags(event) {
@@ -36,12 +52,19 @@ function registerTFGGeneralWorldgenBlockTags(event) {
 	event.add('tfc:forge_insulation', 'minecraft:gilded_blackstone');
 
 	// Ores
-	event.add("minecraft:mineable/pickaxe", "#forge:ores");
-	event.add("minecraft:needs_iron_tool", "#forge:ores");
+	global.ORE_BEARING_STONES.forEach(stone => {
+		event.add("minecraft:mineable/pickaxe", `#forge:ores_in_ground/${stone}`);
+		event.add("tfc:can_collapse", `#forge:ores_in_ground/${stone}`);
+		event.add("tfc:can_start_collapse", `#forge:ores_in_ground/${stone}`);
+		event.add("tfc:can_trigger_collapse", `#forge:ores_in_ground/${stone}`);
+	})
 
-	event.add("tfc:can_collapse", "#forge:ores");
-	event.add("tfc:can_start_collapse", "#forge:ores");
-	event.add("tfc:can_trigger_collapse", "#forge:ores");
+	global.SAND_COLORS.forEach(color => {
+		event.add("minecraft:mineable/shovel", `#forge:ores_in_ground/${color}_sand`);
+		event.add("minecraft:needs_stone_tool", `#forge:ores_in_ground/${color}_sand`);
+		event.add("tfc:can_landslide", `#forge:ores_in_ground/${color}_sand`);
+	})
+
 	event.add("c:hidden_from_recipe_viewers", "#forge:ores");
     event.add("tfc:monster_spawns_on", "#forge:ores");
     event.add("tfc:prospectable", "#forge:ores");
@@ -96,6 +119,9 @@ function registerTFGGeneralWorldgenBlockTags(event) {
 	event.add('minecraft:mineable/shovel', 'tfg:pile/mars_sand_covering')
 	event.add('minecraft:mineable/shovel', 'tfg:pile/venus_sand_covering')
 	event.add('minecraft:mineable/shovel', 'tfg:pile/hematitic_sand_covering')
+	event.add('minecraft:mineable/shovel', 'tfg:pile/volcanic_ash')
+
+	event.add('minecraft:mineable/pickaxe', 'tfg:halite')
 
 	event.add('minecraft:replaceable', 'tfg:ash_pile')
 	event.add('minecraft:replaceable', 'tfg:pile/black_sand')
@@ -112,6 +138,7 @@ function registerTFGGeneralWorldgenBlockTags(event) {
 	event.add('minecraft:replaceable', 'tfg:pile/mars_sand_covering')
 	event.add('minecraft:replaceable', 'tfg:pile/venus_sand_covering')
 	event.add('minecraft:replaceable', 'tfg:pile/hematitic_sand_covering')
+	event.add('minecraft:replaceable', 'tfg:pile/volcanic_ash')
 
 	event.add('minecraft:replaceable', '#tfc:loose_rocks')
 }

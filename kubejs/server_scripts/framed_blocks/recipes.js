@@ -391,7 +391,7 @@ const registerFramedBlocksRecipes = (event) => {
 	event.recipes.gtceu.assembler('tfg:assembler/framedblocks/framed_cube')
 		.itemInputs('4x #minecraft:planks', '4x #forge:rods/wooden')
 		.circuit(8)
-		.itemOutputs('framedblocks:framed_cube')
+		.itemOutputs('4x framedblocks:framed_cube')
 		.duration(40)
 		.EUt(GTValues.VA[GTValues.ULV])
 

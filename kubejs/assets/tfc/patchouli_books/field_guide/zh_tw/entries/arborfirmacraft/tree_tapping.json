@@ -1,0 +1,36 @@
+{
+	"name": "採集樹液",
+	"category": "tfc:arborfirmacraft",
+	"icon": "afc:tree_tap",
+	"pages": [
+        {
+            "type": "patchouli:text",
+            "text": "某些樹木可以採集有用的汁液。這些樹木可以產出含糖的樹液，濃縮後可製成糖漿用作甜味劑；產出乳膠，可加工成橡膠；或產出松脂，可加工成松香，蠟的替代品。"
+        },
+        {
+            "type": "patchouli:image",
+            "title": "採集楓樹樹液",
+            "images": [
+            	"afc:textures/gui/book/maple_tapping.png"
+            ],
+            "border": true
+        },
+        {
+            "type": "patchouli:text",
+            "text": "採集樹液需要三樣東西：樹、樹液採集器、以及木桶。採集器由銅錠鍛造並放置在至少三格高的樹幹，而木桶須放在採集器正下方，桶口朝上。如果條件合適，木桶會立即開始收集樹液。"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+            	"tfg:textures/gui/field_guide/tree_tapping/tapping_kapok.png"
+            ],
+            "text": "一個有效的採集配置，用於從木棉樹中提取乳膠",
+            "border": true
+        }
+	],
+	"read_by_default": true,
+	"sortnum": 1,
+	"extra_recipe_mappings": {
+        "afc:tree_tap": 0
+	}
+}

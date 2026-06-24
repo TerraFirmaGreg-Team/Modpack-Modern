@@ -146,9 +146,9 @@ function registerTFGMarsRecipes(event) {
 		.EUt(4)
 
 	event.recipes.tfc.damage_inputs_shapeless_crafting(
-		event.shapeless('8x tfc:wool_yarn', [
-			'tfc:spindle',
-			'tfg:glacian_wool'
+		event.shapeless('8x tfc:wool_yarn', [			
+			'tfg:glacian_wool',
+			'#tfg:tools/spindles'
 		]).id('tfg:shapeless/glacian_wool_to_yarn'))
 
 	event.recipes.gtceu.wiremill('tfg:glacian_wool_yarn')
@@ -183,4 +183,24 @@ function registerTFGMarsRecipes(event) {
 		.id('tfg:heating/charnia_to_soda')
 
 	event.smelting('3x tfc:powder/soda_ash', '#tfg:charnia').id('tfg:smelting/charnia_to_soda')
+
+	event.recipes.tfc.barrel_instant()
+		.inputs('#forge:dusts/zeolite', Fluid.of('tfg:semiheavy_ammoniacal_water', 1000))
+		.outputFluid(Fluid.of('minecraft:water', 1000))
+		.id('tfg:barrel_instant/zeolite_water_purification')
+	
+	event.recipes.tfc.barrel_instant()
+		.inputs('#forge:dusts/clay', Fluid.of('tfg:semiheavy_ammoniacal_water', 1000))
+		.outputFluid(Fluid.of('minecraft:water', 1000))
+		.id('tfg:barrel_instant/clay_water_purification')
+	
+	event.recipes.tfc.barrel_instant()
+		.inputs('#forge:dusts/kaolinite', Fluid.of('tfg:semiheavy_ammoniacal_water', 1000))
+		.outputFluid(Fluid.of('minecraft:water', 1000))
+		.id('tfg:barrel_instant/kaolin_water_purification')
+		
+	event.recipes.tfc.barrel_instant()
+		.inputs('#forge:dusts/perlite', Fluid.of('tfg:semiheavy_ammoniacal_water', 1000))
+		.outputFluid(Fluid.of('minecraft:water', 1000))
+		.id('tfg:barrel_instant/perlite_water_purification')
 }

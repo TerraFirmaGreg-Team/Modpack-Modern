@@ -1,0 +1,22 @@
+{
+	"type": "entity",
+	"target": {
+		"type": "regex",
+		"match": "gun",
+		"regex": ".*"
+	},
+	"entities": [
+		"species:limpet"
+	],
+	"damage": {
+		"multiplier": 0.0
+	},
+	"pierce": {
+		"type": "never"
+	},
+	"gun_pierce": {
+		"required": false,
+		"consume": false
+	},
+	"priority": 0
+}

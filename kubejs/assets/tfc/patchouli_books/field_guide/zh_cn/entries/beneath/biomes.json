@@ -1,75 +1,111 @@
 {
-    "name": "生物群系",
-    "category": "tfc:beneath",
-    "icon": "minecraft:spyglass",
-    "pages": [
-        {
-            "type": "patchouli:text",
-            "text": "幽冥之地有全新的生物群系等待探索！大多数分为两类：$(thing)上层$() 和 $(thing)下层$()。上层地形只出现在较高处，而下层则靠近岩浆区域。"
-        },
-        {
-            "type": "patchouli:image",
-            "title": "繁茂空谷",
-            "images": [
-                "tfg:textures/gui/field_guide/nether/lush_hollow.png"
-            ],
-            "border": true,
-            "text": "湿润且植被茂盛！是地下基地最宜居的区域。"
-        },
-        {
-            "type": "patchouli:image",
-            "title": "腐化洞窟",
-            "images": [
-                "tfg:textures/gui/field_guide/nether/decaying_caverns.png"
-            ],
-            "border": true,
-            "text": "大自然在此努力分解腐烂物质——这里是潮湿且充满腐殖质的地方。"
-        },
-        {
-            "type": "patchouli:image",
-            "title": "蛛网巢穴",
-            "images": [
-                "tfg:textures/gui/field_guide/nether/webbed_lair.png"
-            ],
-            "border": true,
-            "text": "不用猜也知道住在这里的是什么生物！也包含巨大的 $(thing)石灰华$() 柱。"
-        },
-        {
-            "type": "patchouli:image",
-            "title": "灰烬森林",
-            "images": [
-                "tfg:textures/gui/field_guide/nether/ash_forest.png"
-            ],
-            "border": true,
-            "text": "因高温引发频繁火灾后，茂密深渊残留下来的地貌。"
-        },
-        {
-            "type": "patchouli:image",
-            "title": "熔岩浮岛",
-            "images": [
-                "tfg:textures/gui/field_guide/nether/lava_floes.png"
-            ],
-            "border": true,
-            "text": "富含矿产的 $(thing)辉长岩$() 地区，被岩浆河流分割。"
-        },
-        {
-            "type": "patchouli:image",
-            "title": "玄武岩三角洲",
-            "images": [
-                "tfg:textures/gui/field_guide/nether/basalt_deltas.png"
-            ],
-            "border": true,
-            "text": "大家熟悉的下界地形回归了，仍然和以前一样危险。"
-        },
-        {
-            "type": "patchouli:image",
-            "title": "深层岩窟",
-            "images": [
-                "tfg:textures/gui/field_guide/nether/deep_caves.png"
-            ],
-            "border": true,
-            "text": "在其他地形之间，是更多平淡的区域，包括辉长岩、片岩、花岗岩、闪长岩和片麻岩。$(br)"
-        }
-    ],
-    "read_by_default": true
+	"name": "生物群系",
+	"category": "tfc:beneath",
+	"icon": "minecraft:spyglass",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "幽冥之地有一套全新的生物群系等待探索！幽冥之地可分为三个垂直层，每层都有自己的生物群系。越往下越热、越危险！"
+		},
+		{
+			"type": "patchouli:image",
+			"title": "盐窟",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/salt_caves.png"
+			],
+			"border": true,
+			"text": "像温暖的海风，这个生物群系充满了$(item)岩盐$()。是建立基地的好地方！"
+		},
+		{
+			"type": "patchouli:image",
+			"title": "闷热泥沼",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/muggy_bog.png"
+			],
+			"border": true,
+			"text": "潮湿且类似沼泽。如果能避开$(thing)鳄鱼$()，这里是一个安全的木材来源。"
+		},
+		{
+			"type": "patchouli:image",
+			"title": "蛛网巢穴",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/decaying_caverns.png"
+			],
+			"border": true,
+			"text": "大自然的分解者在这个充满腐烂的潮湿区域辛勤工作。"
+		},
+		{
+			"type": "patchouli:image",
+			"title": "灰烬森林",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/webbed_lair.png"
+			],
+			"border": true,
+			"text": "因高温引发频繁火灾后，茂密深渊残留下来的地貌。"
+		},
+		{
+			"type": "patchouli:image",
+			"title": "熔岩浮岛",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/tar_pools.png"
+			],
+			"border": true,
+			"text": "沙质地面宛如小型沙漠，遍布富含石油的黏稠$(thing)焦油坑$()。"
+		},
+		{
+			"type": "patchouli:image",
+			"title": "地热泉",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/geothermal_springs.png"
+			],
+			"border": true,
+			"text": "这里没有硫磺块，但这个热气腾腾的生物群系是寻找$(thing)温泉$()的好地方，可用于治疗。"
+		},
+		{
+			"type": "patchouli:image",
+			"title": "荆棘林地",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/thorny_brambles.png"
+			],
+			"border": true,
+			"text": "难以穿越的生物群系，踩到植物会受其影响。小心！"
+		},
+		{
+			"type": "patchouli:image",
+			"title": "繁茂空谷",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/lush_hollow.png"
+			],
+			"border": true,
+			"text": "炎热且充满绿植！茂密的蕨类植物下隐藏着$(thing)高岭土$()。"
+		},
+		{
+			"type": "patchouli:image",
+			"title": "灰烬森林",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/ash_forest.png"
+			],
+			"border": true,
+			"text": "因高温引发频繁火灾后，繁茂空谷残留下来的地貌。"
+		},
+		{
+			"type": "patchouli:image",
+			"title": "熔岩浮岛",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/lava_floes.png"
+			],
+			"border": true,
+			"text": "富含矿产的$(thing)辉石岩$()地区，被岩浆河流纵横切割。"
+		},
+		{
+			"type": "patchouli:image",
+			"title": "玄武岩三角洲",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/basalt_deltas.png"
+			],
+			"border": true,
+			"text": "大家熟悉的下界地形回归了，其危险性一如既往。"
+		}
+	],
+	"read_by_default": true
 }

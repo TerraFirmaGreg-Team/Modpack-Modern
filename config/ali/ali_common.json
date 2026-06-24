@@ -1,0 +1,123 @@
+{
+    "configVersion": 2,
+    "blockCategories": [
+        {
+            "key": "ali:block_loot",
+            "type": "BLOCK",
+            "icon": "gtceu:copper_pickaxe",
+            "hide": false,
+            "blocks": [
+                "#forge:ores",
+                "#forge:raw_ore_blocks",
+                "#tfc:clay_grass",
+                "#tfc:clay",
+                "#tfc:kaolin_clay",
+                "#tfc:crops",
+                "#tfc:wild_crops",
+                "#tfg:dead_crops",
+                "#minecraft:leaves",
+                "#forge:surface_rocks",
+                "#tfc:rock/raw",
+                "#forge:cobblestone",
+                "#tfc:rock/gravel",
+                "#tfg:bud_ore_indicators",
+                "#tfg:decorative_vases/generated",
+                "ad_astra:sky_stone",
+                "ad_astra:cheese_block",
+                "ad_astra:moon_cheese_ore",
+                "tfg:huge_quartz",
+                "tfg:halite",
+                "minecraft:basalt"
+            ]
+        }
+    ],
+    "entityCategories": [
+        {
+            "key": "ali:entity_loot",
+            "type": "ENTITY",
+            "icon": "minecraft:skeleton_skull",
+            "hide": false,
+            "entityTypes": []
+        }
+    ],
+    "gameplayCategories": [
+        {
+            "key": "ali:chest_loot",
+            "type": "GAMEPLAY",
+            "icon": "lootr:lootr_chest",
+            "hide": false,
+            "pattern": [
+                "^.*:chests/.*$"
+            ]
+        },
+        {
+            "key": "ali:fishing_loot",
+            "type": "GAMEPLAY",
+            "icon": "tfc:metal/fishing_rod/copper",
+            "hide": false,
+            "catalysts": [
+                {
+                    "tag": "forge:fishing_rods"
+                }
+            ],
+            "pattern": [
+                "^.*:gameplay/fishing.*$"
+            ]
+        },
+        {
+            "key": "tfg:bartering_loot",
+            "type": "GAMEPLAY",
+            "icon": "minecraft:gold_ingot",
+            "hide": false,
+            "catalysts": [
+                {
+                    "item": "minecraft:gold_ingot"
+                },
+                {
+                    "item": "tfg:piglin_disguise"
+                }
+            ],
+            "pattern": [
+                "^minecraft:gameplay/piglin_bartering$"
+            ]
+        },
+        {
+            "key": "tfg:panning_loot",
+            "type": "GAMEPLAY",
+            "icon": "tfc:pan/empty",
+            "hide": false,
+            "catalysts": [
+                {
+                    "item": "tfc:pan/empty"
+                },
+                {
+                    "tag": "tfc:ore_deposits"
+                }
+            ],
+            "pattern": [
+                "^tfc:panning.*$"
+            ]
+        },
+        {
+            "key": "tfg:sluicing_loot",
+            "type": "GAMEPLAY",
+            "icon": "tfc:wood/sluice/oak",
+            "hide": false,
+            "catalysts": [
+                {
+                    "tag": "tfc:sluices"
+                },
+                {
+                    "tag": "tfc:ore_deposits"
+                }
+            ],
+            "pattern": [
+                "^tfc:sluicing.*$"
+            ]
+        }
+    ],
+    "tradeCategories": [],
+    "disabledEntities": [],
+    "logMoreStatistics": false,
+    "showInGameNames": true
+}

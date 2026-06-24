@@ -1,0 +1,109 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "Minérios, Metal e Fundição",
+  "category": "tfc:getting_started",
+  "icon": "tfc:ore/normal_native_copper",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "In addition to sticks, twigs, and stones on the ground, in your travels you may encounter small pieces of ores scattered around the ground. These are important, as they are one of the only sources of ore and metal before obtaining a pickaxe."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "    ",
+            "  0 ",
+            "    "
+          ],
+          [
+            "ABCD",
+            "EFGH",
+            "IJKL"
+          ],
+          [
+            "XXXX",
+            "XXXX",
+            "XXXX"
+          ]
+        ],
+        "mapping": {
+          "X": "tfc:grass/loam",
+          "A": "tfc:ore/small_native_copper",
+          "B": "tfc:ore/small_native_gold",
+          "C": "tfc:ore/small_hematite",
+          "D": "tfc:ore/small_native_silver",
+          "E": "tfc:ore/small_cassiterite",
+          "F": "tfc:ore/small_bismuthinite",
+          "G": "tfc:ore/small_garnierite",
+          "H": "tfc:ore/small_malachite",
+          "I": "tfc:ore/small_magnetite",
+          "J": "tfc:ore/small_limonite",
+          "K": "tfc:ore/small_sphalerite",
+          "L": "tfc:ore/small_tetrahedrite"
+        }
+      },
+      "name": "",
+      "text": "Todos os pedaços de minérios pequenos",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Estes pedaços de minério pequenos podem servir a dois propósitos: podem fornecer uma fonte de metal e, mais importante ainda, indicam a presença de um veio de minério maior nas proximidades, provavelmente no subsolo e perto da superfície. Certifique-se de anotar onde você encontra minérios pequenos, já que a localização dos veios de minério será útil mais tarde durante a $(l:mechanics/prospecting)Prospecção$().$(br2)Os doze tipos de minérios pequenos e o metal em que podem ser derretidos estão listados na próxima página."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(li)Cobre Nativo ($(thing)Cobre$())$(li)Ouro Nativo ($(thing)Ouro$())$(li)Hematita ($(thing)Ferro Fundido$())$(li)Prata Nativa ($(thing)Prata$())$(li)Cassiterita ($(thing)Estanho$())$(li)Bismutinita ($(thing)Bismuto$())$(li)Garnierita ($(thing)Níquel$())$(li)Malaquita ($(thing)Cobre$())$(li)Magnetita ($(thing)Ferro Fundido$())$(li)Limonita ($(thing)Ferro Fundido$())$(li)Esfalerita ($(thing)Zinco$())$(li)Tetraedrita ($(thing)Cobre$())",
+      "title": "Minérios Pequenos"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "casting",
+      "text": "No TerraFirmaCraft, cada minério contém um certo número de $(thing)unidades$(), ou $(thing)mB (milibaldes)$() do metal real que pode ser extraído. Minérios pequenos como este encontrados na superfície são a qualidade mais baixa e fornecem apenas $(thing)16 mB$() de metal. Para extrair esse metal, ele precisa ser $(thing)derretido$() e colocado em ferramentas utilizando um processo chamado de $(thing)fundição$().",
+      "title": "Fundição"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "You will need:$(br)$(li)A $(l:getting_started/pottery#vessel)Small Vessel$()$(li)Enough materials for a $(l:getting_started/pit_kiln)Pit Kiln$().$(li)One or more $(l:getting_started/pottery#mold)Mold(s)$() to cast the molten metal.$(li)And finally, at least 144 mB total of a metal which is suitable for casting: $(thing)Copper$(), in one or more of its three ore forms.$(br2)$(br)$(italic)Note: Casting can also be done with some $(l:getting_started/primitive_alloys)Alloys$()"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "First, open the $(thing)Small Vessel$() and put the ores inside. Count up the total amount of metal in the ores carefully! The vessel can only hold up to 3024mB of molten metal, excess will be lost. Then, you need to build a $(l:getting_started/pit_kiln)Pit Kiln$() with the filled small vessel inside. As the vessel heats, the ores inside it will melt, and you'll be left with a vessel of molten metal."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfchotornot:crafting/tongs/wood",
+      "text": "Cuidado, o vaso estará quente! Fabrique um $(thing)Tenaz de Madeira$() com dois gravetos e uma faca e coloque-o na sua mão secundária para segurar o vaso quente com segurança."
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "tfc:textures/gui/book/gui/casting.png"
+      ],
+      "text": "Hold the vessel and $(item)$(k:key.use)$() to open the $(thing)Casting$() interface.",
+      "border": false
+    },
+    {
+      "type": "patchouli:text",
+      "text": "With the casting interface open, place your empty fired mold in the center slot. It will fill up as long as the vessel remains liquid. (If the vessel solidifies, it can be reheated in another pit kiln.) Once the mold is full, it can be removed and left to cool. Once cool, the mold and its contents can be extracted by using the mold, or putting it in the crafting grid."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "gtceu:shaped/pickaxe_copper",
+      "text": "You are now able to craft your first pickaxe! Find enough copper to make a pickaxe head, fire a pickaxe mold and melt the ore using a pit kiln, then cast a head. Slap it on a stick, and voila! You can now dig for $(l:tfg_ores/index)ore$()."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "tfc:metal/chisel/copper",
+      "text": "A couple other important metal tools are available for progression as well. The $(l:mechanics/chisel)Chisel$() is useful for working with stone blocks for building and other recipes."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "gtceu:copper_saw",
+      "text": "The saw allows you turn wood logs into $(l:mechanics/support_beams)support beams$() and $(thing)lumber$(), which can further be crafted into planks, the crafting bench, barrels, and chests, among other things. It is also useful to make a $(l:firmaciv/canoe)canoe$()."
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 4
+}

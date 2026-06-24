@@ -578,7 +578,7 @@ function registerGreateRecipes(event) {
 		'CDE',
 		' AB'
 	], {
-		A: '#forge:rings/rubber',
+		A: '#tfg:rubber_rings',
 		B: '#forge:screws/aluminium',
 		C: '#forge:tools/wrenches',
 		D: 'create:fluid_pipe',
@@ -586,7 +586,7 @@ function registerGreateRecipes(event) {
 	}).id('greate:shaped/aluminium_mechanical_pump')
 
 	event.recipes.gtceu.assembler('greate:aluminium_mechanical_pump')
-		.itemInputs('2x #forge:rings/rubber', '2x #forge:screws/aluminium', 'create:fluid_pipe', 'greate:aluminium_cogwheel')
+		.itemInputs('2x #tfg:rubber_rings', '2x #forge:screws/aluminium', 'create:fluid_pipe', 'greate:aluminium_cogwheel')
 		.itemOutputs('greate:aluminium_mechanical_pump')
 		.duration(200)
 		.EUt(GTValues.VA[GTValues.ULV])
@@ -861,6 +861,7 @@ function registerGreateRecipes(event) {
 		.removePreviousMaterialInfo()
 		.addMaterialInfo(true)
 
+	TFGHelpers.registerMaterialInfo('gtceu:steel_whisk', [GTMaterials.Steel, 4]);
 	event.remove({ id: 'gtceu:extractor/extract_steel_whisk' })
 	
 	event.shaped('gtceu:aluminium_whisk', [
@@ -883,6 +884,7 @@ function registerGreateRecipes(event) {
 		.removePreviousMaterialInfo()
 		.addMaterialInfo(true)
 
+	TFGHelpers.registerMaterialInfo('gtceu:aluminium_whisk', [GTMaterials.Aluminium, 4]);
 	event.remove({ id: 'gtceu:extractor/extract_aluminium_whisk' })
 	
 	event.shaped('gtceu:stainless_steel_whisk', [
@@ -905,6 +907,7 @@ function registerGreateRecipes(event) {
 		.removePreviousMaterialInfo()
 		.addMaterialInfo(true)
 
+	TFGHelpers.registerMaterialInfo('gtceu:stainless_steel_whisk', [GTMaterials.StainlessSteel, 4]);
 	event.remove({ id: 'gtceu:extractor/extract_stainless_steel_whisk' })
 	
 	event.shaped('gtceu:titanium_whisk', [
@@ -927,6 +930,7 @@ function registerGreateRecipes(event) {
 		.removePreviousMaterialInfo()
 		.addMaterialInfo(true)
 
+	TFGHelpers.registerMaterialInfo('gtceu:titanium_whisk', [GTMaterials.Titanium, 4]);
 	event.remove({ id: 'gtceu:extractor/extract_titanium_whisk' })
 		
 	event.shaped('gtceu:tungsten_steel_whisk', [
@@ -949,6 +953,7 @@ function registerGreateRecipes(event) {
 		.removePreviousMaterialInfo()
 		.addMaterialInfo(true)
 
+	TFGHelpers.registerMaterialInfo('gtceu:tungsten_steel_whisk', [GTMaterials.TungstenSteel, 4]);
 	event.remove({ id: 'gtceu:extractor/extract_tungsten_steel_whisk' })
 		
 	event.shaped('gtceu:rhodium_plated_palladium_whisk', [
@@ -971,6 +976,7 @@ function registerGreateRecipes(event) {
 		.removePreviousMaterialInfo()
 		.addMaterialInfo(true)
 
+	TFGHelpers.registerMaterialInfo('gtceu:rhodium_plated_palladium_whisk', [GTMaterials.RhodiumPlatedPalladium, 4]);
 	event.remove({ id: 'gtceu:extractor/extract_rhodium_plated_palladium_whisk' })
 		
 	event.shaped('gtceu:naquadah_alloy_whisk', [
@@ -993,6 +999,7 @@ function registerGreateRecipes(event) {
 		.removePreviousMaterialInfo()
 		.addMaterialInfo(true)
 
+	TFGHelpers.registerMaterialInfo('gtceu:naquadah_alloy_whisk', [GTMaterials.NaquadahAlloy, 4]);
 	event.remove({ id: 'gtceu:extractor/extract_naquadah_alloy_whisk' })
 		
 	event.shaped('gtceu:darmstadtium_whisk', [
@@ -1015,6 +1022,7 @@ function registerGreateRecipes(event) {
 		.removePreviousMaterialInfo()
 		.addMaterialInfo(true)
 
+	TFGHelpers.registerMaterialInfo('gtceu:darmstadtium_whisk', [GTMaterials.Darmstadtium, 4]);
 	event.remove({ id: 'gtceu:extractor/extract_darmstadtium_whisk' })
 
 	// #endregion
@@ -1145,7 +1153,7 @@ function registerGreateRecipes(event) {
 		'#forge:tools/saws'
 	]).id('tfg:greate/shapeless/treated_wood_window_pane')
 
-	event.recipes.gtceu.cutter(`tfg:greate/greate:treated_wood_window_pane`)
+	event.recipes.gtceu.cutter(`tfg:treated_wood_window_pane`)
 		.itemInputs(`3x greate:treated_wood_window`)
 		.itemOutputs(`8x greate:treated_wood_window_pane`)
 		.duration(40)

@@ -1,0 +1,28 @@
+{
+	"name": "Irrigation",
+	"category": "tfc:firmalife",
+	"icon": "firmalife:sprinkler",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "The $(thing)Sprinkler$() is a device that sprinkles water in a 5x6x5 area centered on the block below the sprinkler block. You know it is working when it drips out water particles. Sprinklers placed facing up irrigate the same 5x6x5 area above."
+		},
+		{
+			"type": "tfc:anvil_recipe",
+			"recipe": "firmalife:anvil/sprinkler",
+			"text": "The sprinkler is made with a $(thing)Copper Plate$()."
+		},
+		{
+			"title": "Piping",
+			"item": "gtceu:copper_tiny_fluid_pipe",
+			"type": "patchouli:spotlight",
+			"text": "Sprinklers must be connected to a system of pipes that feed it water in order to work. This is done by connecting a series of $(thing)Fluid Pipes$() to them. You can pump water into them with a $(thing)Mechanical Pump$()."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "You can right-click a pipe with a GregTech Frame (such as a $(thing)Copper Frame$()) to make them flush with the wall, or use a Greenhouse Port. You can then attach your sprinkler directly to the pipe! Right-click fluid pipes with a wrench to change their direction, and sneak-right-click them with an $(thing)empty offhand$() to make them one-way."
+		}
+	],
+	"read_by_default": true,
+	"sortnum": 8
+}

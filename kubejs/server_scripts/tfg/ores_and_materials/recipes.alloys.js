@@ -180,7 +180,7 @@ function registerTFGAlloyingRecipes(event) {
 
 	copper_types.forEach(copper_types_array => {
 		gold_types.forEach(gold_types_array => {
-			const id = linuxUnfucker(`${copper_types_array}_and_${gold_types_array}`.replace(/#/g, ""));
+			const id = global.linuxUnfucker(`${copper_types_array}_and_${gold_types_array}`.replace(/#/g, ""));
 			event.recipes.gtceu.alloy_smelter(`tfg:rose_gold_from_${id}`)
 				.itemInputs(Ingredient.of(copper_types_array).withCount(1), Ingredient.of(gold_types_array).withCount(4))
 				.itemOutputs(ChemicalHelper.get(TagPrefix.ingot, GTMaterials.RoseGold, 5))
@@ -188,7 +188,7 @@ function registerTFGAlloyingRecipes(event) {
 				.EUt(GTValues.VA[GTValues.LV])
 		});
 		silver_types.forEach(silver_types_array => {
-			const id = linuxUnfucker(`${copper_types_array}_and_${silver_types_array}`.replace(/#/g, ""));
+			const id = global.linuxUnfucker(`${copper_types_array}_and_${silver_types_array}`.replace(/#/g, ""));
 			event.recipes.gtceu.alloy_smelter(`tfg:sterling_silver_from_${id}`)
 				.itemInputs(Ingredient.of(copper_types_array).withCount(1), Ingredient.of(silver_types_array).withCount(4))
 				.itemOutputs(ChemicalHelper.get(TagPrefix.ingot, GTMaterials.SterlingSilver, 5))
@@ -267,6 +267,13 @@ function registerTFGAlloyingRecipes(event) {
         .duration(20)
         .EUt(GTValues.VA[GTValues.LV])
 
+	event.recipes.gtceu.implosion_compressor('tfg:glowstone_block_powderbarrel')
+        .itemInputs('5x #forge:dusts/glowstone', '8x gtceu:powderbarrel')
+        .itemOutputs('1x minecraft:glowstone')
+        .chancedOutput('#forge:dusts/ash', 2500, 0)
+        .duration(20)
+        .EUt(GTValues.VA[GTValues.LV])
+
     event.recipes.gtceu.implosion_compressor('tfg:glowstone_block_tnt')
         .itemInputs('5x #forge:dusts/glowstone', '4x minecraft:tnt')
         .itemOutputs('1x minecraft:glowstone')
@@ -280,6 +287,16 @@ function registerTFGAlloyingRecipes(event) {
         .chancedOutput('#forge:dusts/ash', 2500, 0)
         .duration(20)
         .EUt(GTValues.VA[GTValues.LV])
+
+	// Cobalt brass dust from aluminium silicate
+	
+	event.recipes.greate.mixing('9x #forge:dusts/cobalt_brass', [
+		'#forge:dusts/brass','#forge:dusts/brass', '#forge:dusts/brass', '#forge:dusts/brass', '#forge:dusts/brass', '#forge:dusts/brass', '#forge:dusts/brass',
+		'#forge:dusts/aluminium_silicate', 
+		'#forge:dusts/cobalt'])
+		.recipeTier(0)
+		.circuitNumber(1)
+		.id('tfg:cobalt_brass_mixing')
 
 	// New Alloys
 

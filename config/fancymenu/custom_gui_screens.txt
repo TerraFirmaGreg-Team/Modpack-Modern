@@ -3,3 +3,14 @@ type = custom_gui_screens
 overridden_screens {
 }
 
+custom_gui {
+  identifier = tfg.information.screen
+  title = 
+  allow_esc = true
+  transparent_world_background = false
+  transparent_world_background_overlay = true
+  pause_game = true
+  popup_mode = false
+  popup_mode_background_overlay = true
+}
+

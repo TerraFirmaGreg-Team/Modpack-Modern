@@ -1,0 +1,8 @@
+acceleration.enabled=true
+cache.enabled=true
+cache.auto_clear_on_mod_change=true
+cache.max_file_size_mb=50
+diagnostics.enabled=true
+search.deferred=true
+chat.hide_messages=true
+debug.enabled=false

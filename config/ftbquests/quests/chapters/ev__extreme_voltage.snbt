@@ -33,12 +33,12 @@
 			linked_quest: "0CA5B715B76E4A5B"
 			shape: "diamond"
 			x: 13.0d
-			y: 1.5d
+			y: 0.0d
 		}
 		{
 			id: "6058CD9466BE0852"
 			linked_quest: "00202200344F3456"
-			x: 12.5d
+			x: 13.0d
 			y: 3.0d
 		}
 		{
@@ -46,7 +46,7 @@
 			linked_quest: "155F421FC2F39C3C"
 			shape: "diamond"
 			x: 11.5d
-			y: 1.5d
+			y: 3.0d
 		}
 		{
 			id: "7FDAA0AA0D463A49"
@@ -372,7 +372,7 @@
 				type: "item"
 			}]
 			x: 14.5d
-			y: 0.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["4EA8888B12D75BF1"]
@@ -433,7 +433,7 @@
 				item: "gtceu:rtm_alloy_coil_block"
 				type: "item"
 			}]
-			x: 10.0d
+			x: 8.5d
 			y: 3.0d
 		}
 		{
@@ -488,8 +488,8 @@
 				}
 			]
 			title: "{quests.extreme_voltage.gcym_alloys.title}"
-			x: 10.0d
-			y: 0.0d
+			x: 8.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["7B2EE67E37809269"]
@@ -537,7 +537,7 @@
 				type: "item"
 			}]
 			x: 17.5d
-			y: 0.0d
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -830,7 +830,7 @@
 			subtitle: "{quests.extreme_voltage.heat_exchanger.subtitle}"
 			tasks: [{
 				id: "67CB661D4F20EC3A"
-				item: "gtceu:heat_exchanger"
+				item: "tfg:heat_exchanger"
 				type: "item"
 			}]
 			title: "{quests.extreme_voltage.heat_exchanger.title}"
@@ -1218,7 +1218,7 @@
 			]
 			title: "{quests.extreme_voltage.ostrum_harvester.title}"
 			x: 14.5d
-			y: 1.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["017019EB38F7A18C"]
@@ -1326,7 +1326,7 @@
 			tasks: [
 				{
 					id: "11674DA6586D3428"
-					item: "gtceu:brown_glass_lens"
+					item: "gtceu:grossular_lens"
 					type: "item"
 				}
 				{
@@ -1611,6 +1611,7 @@
 			description: ["{quests.extreme_voltage.new_qol.desc}"]
 			icon: "gtceu:ev_sensor"
 			id: "70ABD1E3FC1CA672"
+			shape: "circle"
 			tasks: [{
 				id: "73ABA113A9069875"
 				title: "{quests.extreme_voltage.new_qol.title}"
@@ -1767,9 +1768,11 @@
 		}
 		{
 			dependencies: ["4F647D6A4949EDF7"]
+			description: ["{quests.extreme_voltage.mars_infinites.desc}"]
 			id: "6ABD72F1C1971EE3"
 			optional: true
 			shape: "heart"
+			subtitle: "{quests.extreme_voltage.mars_infinites.subtitle}"
 			tasks: [
 				{
 					id: "500E6AD918D6F37A"
@@ -1820,6 +1823,7 @@
 					type: "item"
 				}
 			]
+			title: "{quests.extreme_voltage.mars_infinites.title}"
 			x: 22.0d
 			y: 9.0d
 		}
@@ -1952,6 +1956,7 @@
 				"{@pagebreak}"
 				"{quests.extreme_voltage.reactor_components.desc.2}"
 			]
+			icon: "deafission:material_holder"
 			id: "63A8FE8F9C8EB5B3"
 			subtitle: "{quests.extreme_voltage.reactor_components.subtitle}"
 			tasks: [
@@ -1996,6 +2001,7 @@
 				{
 					id: "473E7CBA4AEEEE6E"
 					item: "tfg:impure_moderate_core_frame"
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -2015,8 +2021,8 @@
 				type: "item"
 			}]
 			title: "{quests.extreme_voltage.large_miner.title}"
-			x: 9.5d
-			y: -4.5d
+			x: 7.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["2979AFD231E5B37B"]
@@ -2221,8 +2227,8 @@
 				item: "tfg:rad_away_pill"
 				type: "item"
 			}]
-			shape: "diamond"
-			size: 2.0d
+			shape: "circle"
+			size: 1.5d
 			subtitle: "{quests.extreme_voltage.radiation.subtitle}"
 			tasks: [{
 				id: "4122324E4B17FA99"
@@ -2250,8 +2256,8 @@
 				type: "item"
 			}]
 			title: "{quests.extreme_voltage.advanced_fluid_rig.title}"
-			x: 7.0d
-			y: -6.0d
+			x: 9.75d
+			y: -4.5d
 		}
 		{
 			dependencies: ["5CF58F7CBE255585"]
@@ -2278,7 +2284,7 @@
 				type: "item"
 			}]
 			title: "{quests.extreme_voltage.large_generators.title}"
-			x: 2.0d
+			x: 3.0d
 			y: 4.5d
 		}
 		{
@@ -2333,13 +2339,16 @@
 				"{@pagebreak}"
 				"{quests.extreme_voltage.btx_loop.desc.2}"
 			]
+			icon: "gtceu:rhenium_dust"
 			id: "38184C7BA01A9B5B"
 			optional: true
+			shape: "circle"
+			subtitle: "{quests.extreme_voltage.btx_loop.subtitle}"
 			tasks: [{
-				id: "39568ED5E30CDC88"
-				item: "gtceu:rhenium_dust"
-				type: "item"
+				id: "2515CD0C40ED29E6"
+				type: "checkmark"
 			}]
+			title: "{quests.extreme_voltage.btx_loop.title}"
 			x: -5.5d
 			y: -7.0d
 		}
@@ -2400,7 +2409,7 @@
 				}
 			]
 			title: "{quests.extreme_voltage.nichromium_iode.title}"
-			x: 11.5d
+			x: 10.0d
 			y: 3.0d
 		}
 		{
@@ -2417,6 +2426,199 @@
 			}]
 			x: 1.5d
 			y: 8.5d
+		}
+		{
+			dependencies: ["5EC5566546591DEE"]
+			description: ["{quests.extreme_voltage.tungsten_carbide_tools.desc}"]
+			icon: {
+				Count: 1
+				id: "gtceu:ev_tungsten_carbide_drill"
+				tag: {
+					Charge: 2147483647L
+					Damage: 0
+					DisallowContainerItem: 0b
+					GT.Behaviours: {
+						AoEColumn: 3
+						AoELayer: 6
+						AoERow: 3
+						MaxAoEColumn: 3
+						MaxAoELayer: 6
+						MaxAoERow: 3
+						TorchPlacing: 1b
+					}
+					GT.Tool: {
+						DefaultEnchantments: [ ]
+						HarvestLevel: 4
+						MaxDamage: 6143
+						ToolSpeed: 36.0f
+					}
+					HideFlags: 2
+					MaxCharge: 2147483647L
+				}
+			}
+			id: "77126BE617215A17"
+			optional: true
+			shape: "heart"
+			subtitle: "{quests.extreme_voltage.tungsten_carbide_tools.subtitle}"
+			tasks: [
+				{
+					id: "639039222D6F4B30"
+					item: "gtceu:tungsten_carbide_ingot"
+					type: "item"
+				}
+				{
+					id: "3B578E54D11D2CA5"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(gtceu:ev_tungsten_carbide_drill)item(gtceu:ev_tungsten_carbide_screwdriver)item(gtceu:ev_tungsten_carbide_wrench)item(gtceu:ev_tungsten_carbide_chainsaw)item(gtceu:ev_tungsten_carbide_buzzsaw)item(gtceu:ev_tungsten_carbide_wire_cutter))"
+						}
+					}
+					optional_task: true
+					title: "{quests.extreme_voltage.tungsten_carbide_tools.task}"
+					type: "item"
+				}
+			]
+			title: "{quests.extreme_voltage.tungsten_carbide_tools.title}"
+			x: 5.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["7F4E529627AD9148"]
+			description: ["{quests.extreme_voltage.tungsten_rotor.desc}"]
+			icon: {
+				Count: 1
+				id: "gtceu:turbine_rotor"
+				tag: {
+					GT.PartStats: {
+						Material: "tfg:tungsten_bismuth_oxide_composite"
+					}
+				}
+			}
+			id: "4C5311FA9B46D115"
+			optional: true
+			shape: "heart"
+			subtitle: "{quests.extreme_voltage.tungsten_rotor.subtitle}"
+			tasks: [
+				{
+					id: "4D980D7F2A4B5731"
+					item: "tfg:tungsten_bismuth_oxide_composite_ingot"
+					type: "item"
+				}
+				{
+					id: "23C3B067A4087DA2"
+					item: {
+						Count: 1
+						id: "gtceu:turbine_rotor"
+						tag: {
+							GT.PartStats: {
+								Material: "tfg:tungsten_bismuth_oxide_composite"
+							}
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 8.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["5FA09DA68D309548"]
+			description: ["{quests.extreme_voltage.ostrum_tools.desc}"]
+			icon: {
+				Count: 1
+				id: "gtceu:ev_ostrum_iodide_wrench"
+				tag: {
+					Charge: 2147483647L
+					Damage: 0
+					DisallowContainerItem: 0b
+					GT.Behaviours: {
+						Mode: 2b
+					}
+					GT.Tool: {
+						DefaultEnchantments: [ ]
+						HarvestLevel: 4
+						MaxDamage: 3095
+						ToolSpeed: 94.0f
+					}
+					HideFlags: 2
+					MaxCharge: 2147483647L
+				}
+			}
+			id: "21A1AB93A5B6F729"
+			optional: true
+			shape: "heart"
+			subtitle: "{quests.extreme_voltage.ostrum_tools.subtitle}"
+			tasks: [
+				{
+					id: "5E09DBF8B5973CA6"
+					item: "gtceu:ostrum_iodide_ingot"
+					type: "item"
+				}
+				{
+					id: "318864D5687CE68B"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(gtceu:ev_ostrum_iodide_drill)item(gtceu:ev_ostrum_iodide_screwdriver)item(gtceu:ev_ostrum_iodide_wrench)item(gtceu:ev_ostrum_iodide_chainsaw)item(gtceu:ev_ostrum_iodide_buzzsaw)item(gtceu:ev_ostrum_iodide_wire_cutter))"
+						}
+					}
+					title: "{quests.extreme_voltage.ostrum_tools.task}"
+					type: "item"
+				}
+			]
+			title: "{quests.extreme_voltage.ostrum_tools.title}"
+			x: 13.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["52AB0BDC64293253"]
+			description: ["{quests.extreme_voltage.rocket_t2_rotor.desc}"]
+			id: "2DA61F29B0CB6141"
+			optional: true
+			shape: "heart"
+			subtitle: "{quests.extreme_voltage.rocket_t2_rotor.subtitle}"
+			tasks: [{
+				id: "62FB9023A96410C3"
+				item: {
+					Count: 1
+					id: "gtceu:turbine_rotor"
+					tag: {
+						GT.PartStats: {
+							Material: "gtceu:rocket_alloy_t2"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -5.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["691A36800DC755C1"]
+			description: ["{quests.extreme_voltage.mo_si_b.desc}"]
+			id: "65B835976B0AA1E9"
+			optional: true
+			shape: "heart"
+			subtitle: "{quests.extreme_voltage.mo_si_b.subtitle}"
+			tasks: [{
+				id: "3080CD336ACCEE9E"
+				item: {
+					Count: 1
+					id: "gtceu:turbine_rotor"
+					tag: {
+						GT.PartStats: {
+							Material: "tfg:mo_si_b"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 23.5d
+			y: 4.5d
 		}
 	]
 	subtitle: ["{quests.extreme_voltage.subtitle}"]

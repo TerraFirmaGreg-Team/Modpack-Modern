@@ -56,48 +56,32 @@ function registerTFGSpaceRecipes(event) {
 
 	// Aqueous accumulator -- use adjacentFluids (plural) to avoid rhino ambiguous method issues
 	
-	let aaCircuit = 1;
-
 	event.recipes.gtceu.aqueous_accumulator('water')
-		.circuit(aaCircuit++)
+		.circuit(1)
 		.duration(20)
 		.EUt(GTValues.VHA[GTValues.ULV])
 		.adjacentFluids(["minecraft:water"])
 		.outputFluids(Fluid.of("minecraft:water", 1000))
 		
 	event.recipes.gtceu.aqueous_accumulator('sea_water')
-		.circuit(aaCircuit++)
+		.circuit(2)
 		.duration(20)
 		.EUt(GTValues.VA[GTValues.ULV])
 		.adjacentFluids(["tfc:salt_water"])
 		.outputFluids(Fluid.of("tfc:salt_water", 1000))
 		
 	event.recipes.gtceu.aqueous_accumulator('semiheavy_water_mars')
-		.circuit(aaCircuit++)
+		.circuit(3)
 		.dimension('ad_astra:mars')
 		.duration(20)
 		.EUt(GTValues.VHA[GTValues.ULV])
 		.adjacentFluids(["tfg:semiheavy_ammoniacal_water"])
 		.outputFluids(Fluid.of("tfg:semiheavy_ammoniacal_water", 1000))
 
-	event.recipes.gtceu.aqueous_accumulator('lava_overworld')
-		.circuit(aaCircuit++)
-		.dimension('minecraft:overworld')
-		.duration(20*15)
-		.EUt(GTValues.VHA[GTValues.HV])
-		.adjacentFluids(["minecraft:lava"])
-		.outputFluids(Fluid.of("minecraft:lava", 1000))
-
-	event.recipes.gtceu.aqueous_accumulator('lava_nether')
-		.circuit(aaCircuit++)
-		.dimension('minecraft:the_nether')
-		.duration(20*15)
-		.EUt(GTValues.VHA[GTValues.HV])
-		.adjacentFluids(["minecraft:lava"])
-		.outputFluids(Fluid.of("minecraft:lava", 1000))
+	// 4 and 5 used to be lava, add something else here
 
 	event.recipes.gtceu.aqueous_accumulator('spring_water')
-		.circuit(aaCircuit++)
+		.circuit(6)
 		.dimension('minecraft:overworld')
 		.duration(20)
 		.EUt(GTValues.VA[GTValues.LV])
@@ -105,7 +89,7 @@ function registerTFGSpaceRecipes(event) {
 		.outputFluids(Fluid.of("tfc:spring_water", 1000))
 
 	event.recipes.gtceu.aqueous_accumulator('more_water')
-		.circuit(aaCircuit++)
+		.circuit(7)
 		.duration(10)
 		.EUt(GTValues.VHA[GTValues.HV])
 		.adjacentFluids(["minecraft:water"])

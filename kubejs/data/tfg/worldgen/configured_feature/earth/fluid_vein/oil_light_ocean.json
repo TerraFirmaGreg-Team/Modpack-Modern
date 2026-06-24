@@ -1,0 +1,11 @@
+{
+	"type": "lithostitched:composite",
+	"config": {
+		"features": [
+			"tfg:earth/fluid_vein/oil_slick_light_disks",
+			"tfg:earth/fluid_vein/oil_tar_light_disks",
+			"tfg:earth/fluid_vein/oilsands_disks"
+		],
+		"placement_type": "never_cancel"
+	}
+}
