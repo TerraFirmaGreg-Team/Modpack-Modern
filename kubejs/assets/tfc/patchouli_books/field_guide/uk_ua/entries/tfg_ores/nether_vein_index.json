@@ -14,12 +14,12 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/nether_vein_index#beneath_aluminium)Алуніт, Цеоліт, Барит$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_coal_anthracite)Антрацит, Графіт$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_bismuth)Бісмут, Сірка, Селітра$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_coal_lignite)Буре вугілля$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_coal_bituminous)Буре вугілля, Пірит$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_molydbenum)Вульфеніт, Молібденіт...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_lead_silver)Галеніт, Самородне срібло...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_salt)Галіт, Кам'яна сіль, Трона$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_iron_hematite)Гематит, Ґетит$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_iron_banded)Ґетит, Лимоніт, Малахіт$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_graphite)Графіт, Буре вугілля, Діамант$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_psg)Ірарсит, Руарсит, Феродсит$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_tin)Каситерит, Олово$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_iron_magnetite)Магнетит, Ванадієвий магнетит...$()$()",
+      "text": "$(li)$(l:tfg_ores/nether_vein_index#beneath_aluminium)Алуніт, Цеоліт, Барит$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_coal_anthracite)Антрацит, Графіт$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_bismuth)Бісмут, Сірка, Селітра$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_coal_lignite)Буре вугілля$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_coal_bituminous)Буре вугілля, Пірит$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_molydbenum)Вульфеніт, Молібденіт...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_lead_silver)Галеніт, Самородне срібло...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_salt)Галіт, Кам'яна сіль, Трона$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_iron_hematite)Гематит, Ґетит$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_iron_banded)Ґетит, Лимоніт, Малахіт$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_graphite)Графіт, Буре вугілля, Діамант$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_quartz)Димчастий кварц, Кварцит...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_psg)Ірарсит, Руарсит, Феродсит$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_tin)Каситерит, Олово$()$()",
       "type": "patchouli:text"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/nether_vein_index#beneath_quartz)Незерський кварц, Кварцит...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_phosphate)Ортофосфат кальцію, Апатит...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_nickel)Пентландит, Гранетит...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_manganese)Піролюзит, Гроссуляр...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_realgar)Реальгар, Антимоніт, Кіновар$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_redstone)Редстоун, Кіновар...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_copper_native)Самородна мідь, Малахіт$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_gold_rich)Самородне золото, Магнетит...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_gold)Самородне золото, Пірит...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_sulfur)Сірка, Пірит, Антимоніт$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_lithium)Сподумен, Літій, Кам'яна сіль$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_zinc)Сфалерит, Галеніт, Сірка$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_copper_tetrahedrite)Тетраедрит, Антимоніт...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_phlogopite)Флогопіт, Сірка, Апатит$()$()",
+      "text": "$(li)$(l:tfg_ores/nether_vein_index#beneath_iron_magnetite)Магнетит, Ванадієвий магнетит...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_phosphate)Ортофосфат кальцію, Апатит...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_nickel)Пентландит, Гранетит...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_manganese)Піролюзит, Гроссуляр...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_realgar)Реальгар, Антимоніт, Кіновар$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_redstone)Редстоун, Кіновар...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_copper_native)Самородна мідь, Малахіт$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_gold_rich)Самородне золото, Магнетит...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_gold)Самородне золото, Пірит...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_sulfur)Сірка, Пірит, Антимоніт$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_lithium)Сподумен, Літій, Кам'яна сіль$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_zinc)Сфалерит, Галеніт, Сірка$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_copper_tetrahedrite)Тетраедрит, Антимоніт...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_phlogopite)Флогопіт, Сірка, Апатит$()$()",
       "type": "patchouli:text"
     },
     {
@@ -681,6 +681,98 @@
     },
     {
       "Type": "patchouli:text",
+      "text": "$(thing)$(t:Ймовірність появи жили на чанк. Менші нижні числа означають більшу поширеність.)Рідкість$(/t)$(): 1/20 чинки$(br)$(thing)$(t:Відсоток блоків у жилі, які є рудами замість каменю. Більший відсоток означає більше руди.)Щільність$(/t)$(): 22%$(br)$(thing)$(t:Форма жили.)Тип$(/t)$(): $(t:Висока та вузька)Трубна жила$(/t)$(br)$(thing)$(t:Рівні Y, між якими може генеруватися жила.)Y$(/t)$(): 80 — 140$(br)$(thing)Висота$(): 60$(br)$(thing)Радіус$(): 15$(br)$(thing)Біоми$(): $(t:Терновий гай)Тернові хащі$(/t)$(br2)$(thing)Типи каменю$(): Аспідний сланець, Габро, Гнейс, Гранит, Діорит, Мігматит, Травертин, Туф",
+      "title": "Димчастий кварц, Кварцит...",
+      "type": "patchouli:text",
+      "anchor": "beneath_quartz"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Димчастий кварц",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/nether_quartz"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Відсоток$(): 44%$(br)$(thing)Використовується для$():$(br)$(thing)Формула$(): SiO₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Кварцит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/quartzite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Відсоток$(): 27%$(br)$(thing)Використовується для$(): Компонентів LV$(br)$(thing)Формула$(): SiO₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Барит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/barite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Відсоток$(): 16%$(br)$(thing)Джерело$(): Барію$(br)$(thing)Формула$(): BaSO₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Цеоліт",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/zeolite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Відсоток$(): 11%$(br)$(thing)Джерело$(): Алюмінію, Кисню$(br)$(thing)Формула$(): NaCa₄Si₂₇Al₉(H₂O)₂₈O₇₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
+    },
+    {
+      "Type": "patchouli:text",
       "text": "$(thing)$(t:Ймовірність появи жили на чанк. Менші нижні числа означають більшу поширеність.)Рідкість$(/t)$(): 1/30 чинки$(br)$(thing)$(t:Відсоток блоків у жилі, які є рудами замість каменю. Більший відсоток означає більше руди.)Щільність$(/t)$(): 18%$(br)$(thing)$(t:Форма жили.)Тип$(/t)$(): $(t:Широка та пласка)Дискова жила$(/t)$(br)$(thing)$(t:Рівні Y, між якими може генеруватися жила.)Y$(/t)$(): 0 — 80$(br)$(thing)$(t:Середній діаметр жили.)Розмір$(/t)$(): 50$(br)$(thing)Висота$(): 10$(br)$(thing)Біоми$(): $(t:Лавові потоки)Лавові пласти$(/t)$(br2)$(thing)Типи каменю$(): Базальт, Мігматит, Піроксеніт",
       "title": "Ірарсит, Руарсит, Феродсит",
       "type": "patchouli:text",
@@ -864,98 +956,6 @@
       "enable_visualize": false,
       "text": "$(thing)Відсоток$(): 8%$(br)$(thing)Переплавляється у$(): Золото$(br)$(thing)Формула$(): Au",
       "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:text",
-      "text": "$(thing)$(t:Ймовірність появи жили на чанк. Менші нижні числа означають більшу поширеність.)Рідкість$(/t)$(): 1/20 чинки$(br)$(thing)$(t:Відсоток блоків у жилі, які є рудами замість каменю. Більший відсоток означає більше руди.)Щільність$(/t)$(): 22%$(br)$(thing)$(t:Форма жили.)Тип$(/t)$(): $(t:Висока та вузька)Трубна жила$(/t)$(br)$(thing)$(t:Рівні Y, між якими може генеруватися жила.)Y$(/t)$(): 80 — 140$(br)$(thing)Висота$(): 60$(br)$(thing)Радіус$(): 15$(br)$(thing)Біоми$(): $(t:Терновий гай)Тернові хащі$(/t)$(br2)$(thing)Типи каменю$(): Аспідний сланець, Габро, Гнейс, Гранит, Діорит, Мігматит, Травертин, Туф",
-      "title": "Незерський кварц, Кварцит...",
-      "type": "patchouli:text",
-      "anchor": "beneath_quartz"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Незерський кварц",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/nether_quartz"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 44%$(br)$(thing)Використовується для$():$(br)$(thing)Формула$(): SiO₂",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Кварцит",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/quartzite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 27%$(br)$(thing)Використовується для$(): Компонентів LV$(br)$(thing)Формула$(): SiO₂",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Барит",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/barite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 16%$(br)$(thing)Джерело$(): Барію$(br)$(thing)Формула$(): BaSO₂",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Цеоліт",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/zeolite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 11%$(br)$(thing)Джерело$(): Алюмінію, Кисню$(br)$(thing)Формула$(): NaCa₄Si₂₇Al₉(H₂O)₂₈O₇₂",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:empty",
-      "draw_filler": true,
-      "type": "patchouli:empty"
     },
     {
       "Type": "patchouli:text",
@@ -1274,7 +1274,7 @@
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Незерський кварц",
+      "name": "Димчастий кварц",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/nether_quartz"

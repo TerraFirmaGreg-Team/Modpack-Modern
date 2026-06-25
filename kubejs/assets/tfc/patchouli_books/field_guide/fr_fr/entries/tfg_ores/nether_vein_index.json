@@ -19,7 +19,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/nether_vein_index#beneath_iron_magnetite)Magnetite...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_gold_rich)Or natif, Magnetite...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_gold)Or natif, Pyrite, Chalcocite$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_nickel)Pentlandite, Garnierite...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_phlogopite)Phlogopite, Sulfur, Apatite$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_phosphate)Phosphate tricalcique...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_manganese)Pyrolusite, Grossulaire...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_quartz)Quartz du Nether, Quartz...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_realgar)Réalgar, Stibnite, Cinnabar$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_redstone)Redstone, Cinnabar...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_zinc)Sphalerite, Galène, Sulfur$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_lithium)Spodumène, Lithium, Sylvite$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_sulfur)Sulfur, Pyrite, Stibnite$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_copper_tetrahedrite)Tetrahedrite, Stibnite...$()$()",
+      "text": "$(li)$(l:tfg_ores/nether_vein_index#beneath_iron_magnetite)Magnetite...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_gold_rich)Or natif, Magnetite...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_gold)Or natif, Pyrite, Chalcocite$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_nickel)Pentlandite, Garnierite...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_phlogopite)Phlogopite, Sulfur, Apatite$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_phosphate)Phosphate tricalcique...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_manganese)Pyrolusite, Grossulaire...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_realgar)Réalgar, Stibnite, Cinnabar$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_redstone)Redstone, Cinnabar...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_quartz)Smoky Quartz, Quartz, Barite...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_zinc)Sphalerite, Galène, Sulfur$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_lithium)Spodumène, Lithium, Sylvite$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_sulfur)Sulfur, Pyrite, Stibnite$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_copper_tetrahedrite)Tetrahedrite, Stibnite...$()$()",
       "type": "patchouli:text"
     },
     {
@@ -1053,7 +1053,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:La chance qu'une veine se génère par chunk. Les valeurs plancher basses sont plus communes.)Rareté$(/t)$(): 1/10 chunks$(br)$(thing)$(t:Le pourcentage de blocs dans une veine qui sont des minerais et pas de la pierre. Un plus gros pourcentage indique plus de minerais.)Densité$(/t)$(): 22%$(br)$(thing)$(t:La forme d'une veine.)Type$(/t)$(): $(t:Essentiellement ronde)Veine en grappe$(/t)$(br)$(thing)$(t:Les valeurs de Y entre lesquelles la veine peut se générer.)Y$(/t)$(): 80 — 140$(br)$(thing)$(t:Le diamètre moyen de la veine)Taille$(/t)$(): 25$(br)$(thing)Biomes$(): $(t:Brousse Epineuse)Thorny Brambles$(/t)$(br2)$(thing)Types de pierre$(): Diorite, Gabbro, Gneiss, Granite, Migmatite, Schiste, Travertin, Tuf",
+      "text": "$(thing)$(t:La chance qu'une veine se génère par chunk. Les valeurs plancher basses sont plus communes.)Rareté$(/t)$(): 1/10 chunks$(br)$(thing)$(t:Le pourcentage de blocs dans une veine qui sont des minerais et pas de la pierre. Un plus gros pourcentage indique plus de minerais.)Densité$(/t)$(): 22%$(br)$(thing)$(t:La forme d'une veine.)Type$(/t)$(): $(t:Essentiellement ronde)Veine en grappe$(/t)$(br)$(thing)$(t:Les valeurs de Y entre lesquelles la veine peut se générer.)Y$(/t)$(): 80 — 140$(br)$(thing)$(t:Le diamètre moyen de la veine)Taille$(/t)$(): 25$(br)$(thing)Biomes$(): $(t:Brousse Epineuse)Thorny Grove$(/t)$(br2)$(thing)Types de pierre$(): Diorite, Gabbro, Gneiss, Granite, Migmatite, Schiste, Travertin, Tuf",
       "title": "Pentlandite, Garnierite...",
       "type": "patchouli:text",
       "anchor": "beneath_nickel"
@@ -1254,7 +1254,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:La chance qu'une veine se génère par chunk. Les valeurs plancher basses sont plus communes.)Rareté$(/t)$(): 1/10 chunks$(br)$(thing)$(t:Le pourcentage de blocs dans une veine qui sont des minerais et pas de la pierre. Un plus gros pourcentage indique plus de minerais.)Densité$(/t)$(): 22%$(br)$(thing)$(t:La forme d'une veine.)Type$(/t)$(): $(t:Haute et étroite)Veine tuyau$(/t)$(br)$(thing)$(t:Les valeurs de Y entre lesquelles la veine peut se générer.)Y$(/t)$(): 80 — 140$(br)$(thing)Hauteur$(): 60$(br)$(thing)Rayon$(): 8$(br)$(thing)Biomes$(): $(t:Brousse Epineuse)Thorny Brambles$(/t)$(br2)$(thing)Types de pierre$(): Diorite, Gabbro, Gneiss, Granite, Migmatite, Schiste, Travertin, Tuf",
+      "text": "$(thing)$(t:La chance qu'une veine se génère par chunk. Les valeurs plancher basses sont plus communes.)Rareté$(/t)$(): 1/10 chunks$(br)$(thing)$(t:Le pourcentage de blocs dans une veine qui sont des minerais et pas de la pierre. Un plus gros pourcentage indique plus de minerais.)Densité$(/t)$(): 22%$(br)$(thing)$(t:La forme d'une veine.)Type$(/t)$(): $(t:Haute et étroite)Veine tuyau$(/t)$(br)$(thing)$(t:Les valeurs de Y entre lesquelles la veine peut se générer.)Y$(/t)$(): 80 — 140$(br)$(thing)Hauteur$(): 60$(br)$(thing)Rayon$(): 8$(br)$(thing)Biomes$(): $(t:Brousse Epineuse)Thorny Grove$(/t)$(br2)$(thing)Types de pierre$(): Diorite, Gabbro, Gneiss, Granite, Migmatite, Schiste, Travertin, Tuf",
       "title": "Pyrolusite, Grossulaire...",
       "type": "patchouli:text",
       "anchor": "beneath_manganese"
@@ -1318,98 +1318,6 @@
       "enable_visualize": false,
       "text": "$(thing)Pourcentage$(): 15%$(br)$(thing)Source de$() : Manganèse, Tantale$(br)$(thing)Formule$(): MnTa₂O₆",
       "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:text",
-      "text": "$(thing)$(t:La chance qu'une veine se génère par chunk. Les valeurs plancher basses sont plus communes.)Rareté$(/t)$(): 1/20 chunks$(br)$(thing)$(t:Le pourcentage de blocs dans une veine qui sont des minerais et pas de la pierre. Un plus gros pourcentage indique plus de minerais.)Densité$(/t)$(): 22%$(br)$(thing)$(t:La forme d'une veine.)Type$(/t)$(): $(t:Haute et étroite)Veine tuyau$(/t)$(br)$(thing)$(t:Les valeurs de Y entre lesquelles la veine peut se générer.)Y$(/t)$(): 80 — 140$(br)$(thing)Hauteur$(): 60$(br)$(thing)Rayon$(): 15$(br)$(thing)Biomes$(): $(t:Brousse Epineuse)Thorny Brambles$(/t)$(br2)$(thing)Types de pierre$(): Diorite, Gabbro, Gneiss, Granite, Migmatite, Schiste, Travertin, Tuf",
-      "title": "Quartz du Nether, Quartz...",
-      "type": "patchouli:text",
-      "anchor": "beneath_quartz"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Quartz du Nether",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/nether_quartz"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Pourcentage$(): 44%$(br)$(thing)Utilisé pour$() : Applied Energistics 2$(br)$(thing)Formule$(): SiO₂",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Quartz",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/quartzite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Pourcentage$(): 27%$(br)$(thing)Utilisé pour$() : Composants BV$(br)$(thing)Formule$(): SiO₂",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Barite",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/barite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Pourcentage$(): 16%$(br)$(thing)Source de$() : Baryum$(br)$(thing)Formule$(): BaSO₂",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Zéolithe",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/zeolite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Pourcentage$(): 11%$(br)$(thing)Source de$() : Aluminium, Oxygène$(br)$(thing)Formule$(): NaCa₄Si₂₇Al₉(H₂O)₂₈O₇₂",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:empty",
-      "draw_filler": true,
-      "type": "patchouli:empty"
     },
     {
       "Type": "patchouli:text",
@@ -1527,7 +1435,7 @@
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Quartz du Nether",
+      "name": "Smoky Quartz",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/nether_quartz"
@@ -1563,6 +1471,98 @@
       },
       "enable_visualize": false,
       "text": "$(thing)Pourcentage$(): 8%$(br)$(thing)Source de$() : Chrome, Aluminium$(br)$(thing)Formule$(): CrAl₂O₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)$(t:La chance qu'une veine se génère par chunk. Les valeurs plancher basses sont plus communes.)Rareté$(/t)$(): 1/20 chunks$(br)$(thing)$(t:Le pourcentage de blocs dans une veine qui sont des minerais et pas de la pierre. Un plus gros pourcentage indique plus de minerais.)Densité$(/t)$(): 22%$(br)$(thing)$(t:La forme d'une veine.)Type$(/t)$(): $(t:Haute et étroite)Veine tuyau$(/t)$(br)$(thing)$(t:Les valeurs de Y entre lesquelles la veine peut se générer.)Y$(/t)$(): 80 — 140$(br)$(thing)Hauteur$(): 60$(br)$(thing)Rayon$(): 15$(br)$(thing)Biomes$(): $(t:Brousse Epineuse)Thorny Grove$(/t)$(br2)$(thing)Types de pierre$(): Diorite, Gabbro, Gneiss, Granite, Migmatite, Schiste, Travertin, Tuf",
+      "title": "Smoky Quartz, Quartz, Barite...",
+      "type": "patchouli:text",
+      "anchor": "beneath_quartz"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Smoky Quartz",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/nether_quartz"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Pourcentage$(): 44%$(br)$(thing)Utilisé pour$() : Applied Energistics 2$(br)$(thing)Formule$(): SiO₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Quartz",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/quartzite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Pourcentage$(): 27%$(br)$(thing)Utilisé pour$() : Composants BV$(br)$(thing)Formule$(): SiO₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Barite",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/barite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Pourcentage$(): 16%$(br)$(thing)Source de$() : Baryum$(br)$(thing)Formule$(): BaSO₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Zéolithe",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/zeolite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Pourcentage$(): 11%$(br)$(thing)Source de$() : Aluminium, Oxygène$(br)$(thing)Formule$(): NaCa₄Si₂₇Al₉(H₂O)₂₈O₇₂",
       "type": "patchouli:multiblock"
     },
     {
