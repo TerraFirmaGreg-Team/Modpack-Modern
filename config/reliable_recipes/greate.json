@@ -81,37 +81,37 @@
 	{
 		"action": "remove_recipe",
 		"input": [
-			"#forge:andesite_alloy",
-			"#forge:dusts/andesite_alloy",
-			"#forge:alloys/andesite_alloy",
-			"#forge:alloys/wrought_iron",
-			"#forge:alloys/steel",
-			"#forge:alloys/aluminium",
-			"#forge:alloys/stainless_steel",
-			"#forge:alloys/titanium",
-			"#forge:alloys/tungsten_steel",
-			"#forge:alloys/rhodium_plated_palladium",
-			"#forge:alloys/naquadah_alloy",
-			"#forge:alloys/darmstadtium",
-			"#forge:alloys/neutronium"
+			"create:andesite_alloy",
+			"greate:andesite_alloy_dust",
+			"greate:andesite_alloy_alloy",
+			"greate:wrought_iron_alloy",
+			"greate:steel_alloy",
+			"greate:aluminium_alloy",
+			"greate:stainless_steel_alloy",
+			"greate:titanium_alloy",
+			"greate:tungsten_steel_alloy",
+			"greate:rhodium_plated_palladium_alloy",
+			"greate:naquadah_alloy_alloy",
+			"greate:darmstadtium_alloy",
+			"greate:neutroniu_alloy"
 		]
 	},
 	{
 		"action": "remove_recipe",
 		"output": [
-			"#forge:andesite_alloy",
-			"#forge:dusts/andesite_alloy",
-			"#forge:alloys/andesite_alloy",
-			"#forge:alloys/wrought_iron",
-			"#forge:alloys/steel",
-			"#forge:alloys/aluminium",
-			"#forge:alloys/stainless_steel",
-			"#forge:alloys/titanium",
-			"#forge:alloys/tungsten_steel",
-			"#forge:alloys/rhodium_plated_palladium",
-			"#forge:alloys/naquadah_alloy",
-			"#forge:alloys/darmstadtium",
-			"#forge:alloys/neutronium"
+			"create:andesite_alloy",
+			"greate:andesite_alloy_dust",
+			"greate:andesite_alloy_alloy",
+			"greate:wrought_iron_alloy",
+			"greate:steel_alloy",
+			"greate:aluminium_alloy",
+			"greate:stainless_steel_alloy",
+			"greate:titanium_alloy",
+			"greate:tungsten_steel_alloy",
+			"greate:rhodium_plated_palladium_alloy",
+			"greate:naquadah_alloy_alloy",
+			"greate:darmstadtium_alloy",
+			"greate:neutroniu_alloy"
 		]
 	}
 ]
