@@ -69,7 +69,7 @@ function registerTFGChromiumProcessing(event) {
                 .inputFluids(Fluid.of('minecraft:water', 2000), Fluid.of('gtceu:carbon_dioxide', 1000))
                 .itemOutputs(Item.of('gtceu:soda_ash_dust', 6), Item.of('tfg:aluminium_hydroxide_dust', 14))
                 .duration(18 * 20)
-                .EUt(GTValues.VA[GTValues.HV])
+                .EUt(GTValues.VA[GTValues.LV])
 
         //#region Garnet Processing Change
 
