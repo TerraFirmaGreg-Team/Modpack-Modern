@@ -2421,8 +2421,8 @@ const registerCreateRecipes = (event) => {
 	event.smelting('#forge:ingots/copper', 'create:crushed_raw_copper')
 	event.smelting('#forge:ingots/gold', 'create:crushed_raw_gold')
 	event.smelting('#forge:ingots/zinc', 'create:crushed_raw_zinc')
-	event.smelting('#forge:ingots/silver', 'create:crushed_raw_silver')
-	event.smelting('#forge:ingots/tin', 'create:crushed_raw_tin')
+	event.smelting('gtceu:silver_ingot', 'create:crushed_raw_silver')
+	event.smelting('gtceu:tin_ingot', 'create:crushed_raw_tin')
 	event.smelting('#forge:ingots/lead', 'create:crushed_raw_lead')
 
 }
