@@ -14,7 +14,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/nether_vein_index#beneath_aluminium)Алуніт, Цеоліт, Барит$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_coal_anthracite)Антрацит, Графіт$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_bismuth)Бісмут, Сірка, Селітра$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_coal_lignite)Буре вугілля$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_coal_bituminous)Буре вугілля, Пірит$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_molydbenum)Вульфеніт, Молібденіт...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_lead_silver)Галеніт, Самородне срібло...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_salt)Галіт, Кам'яна сіль, Трона$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_iron_hematite)Гематит, Ґетит$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_iron_banded)Ґетит, Лимоніт, Малахіт$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_graphite)Графіт, Буре вугілля, Діамант$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_quartz)Димчастий кварц, Кварцит...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_psg)Ірарсит, Руарсит, Феродсит$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_tin)Каситерит, Олово$()$()",
+      "text": "$(li)$(l:tfg_ores/nether_vein_index#beneath_aluminium)Алуніт, Цеоліт, Барит$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_coal_anthracite)Антрацит, Графіт$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_bismuth)Бісмут, Сірка, Селітра$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_coal_lignite)Буре вугілля$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_molydbenum)Вульфеніт, Молібденіт...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_lead_silver)Галеніт, Самородне срібло...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_salt)Галіт, Кам'яна сіль, Трона$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_iron_hematite)Гематит, Ґетит$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_iron_banded)Ґетит, Лимоніт, Малахіт$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_graphite)Графіт, Кам'яне вугілля...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_quartz)Димчастий кварц, Кварцит...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_psg)Ірарсит, Руарсит, Феродсит$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_coal_bituminous)Кам'яне вугілля, Пірит$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_tin)Каситерит, Олово$()$()",
       "type": "patchouli:text"
     },
     {
@@ -239,58 +239,6 @@
       "enable_visualize": false,
       "text": "$(thing)Відсоток$(): 100%$(br)$(thing)Використовується для$(): Палива$(br)$(thing)Формула$(): C",
       "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:text",
-      "text": "$(thing)$(t:Ймовірність появи жили на чанк. Менші нижні числа означають більшу поширеність.)Рідкість$(/t)$(): 1/10 чинки$(br)$(thing)$(t:Відсоток блоків у жилі, які є рудами замість каменю. Більший відсоток означає більше руди.)Щільність$(/t)$(): 28%$(br)$(thing)$(t:Форма жили.)Тип$(/t)$(): $(t:Переважно округлої форми) Скупчення жили$(/t)$(br)$(thing)$(t:Рівні Y, між якими може генеруватися жила.)Y$(/t)$(): 140 — 190$(br)$(thing)$(t:Середній діаметр жили.)Розмір$(/t)$(): 29$(br)$(thing)Біоми$(): $(t:Вогке болото)Вогке болото$(/t)$(br2)$(thing)Типи каменю$(): Аспідний сланець, Гнейс, Діорит, Мармур, Мігматит, Травертин, Туф, Філіт, Шиферний сланець",
-      "title": "Буре вугілля, Пірит",
-      "type": "patchouli:text",
-      "anchor": "beneath_coal_bituminous"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Буре вугілля",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/coal"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 66%$(br)$(thing)Використовується для$(): Паливо, Дистилят$(br)$(thing)Формула$(): C",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Пірит",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/pyrite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 33%$(br)$(thing)Переплавляється у$(): Чавун$(br)$(thing)Формула$(): FeS₂",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:empty",
-      "draw_filler": true,
-      "type": "patchouli:empty"
     },
     {
       "Type": "patchouli:text",
@@ -615,7 +563,7 @@
     {
       "Type": "patchouli:text",
       "text": "$(thing)$(t:Ймовірність появи жили на чанк. Менші нижні числа означають більшу поширеність.)Рідкість$(/t)$(): 1/10 чинки$(br)$(thing)$(t:Відсоток блоків у жилі, які є рудами замість каменю. Більший відсоток означає більше руди.)Щільність$(/t)$(): 22%$(br)$(thing)$(t:Форма жили.)Тип$(/t)$(): $(t:Широка та пласка)Дискова жила$(/t)$(br)$(thing)$(t:Рівні Y, між якими може генеруватися жила.)Y$(/t)$(): 0 — 80$(br)$(thing)$(t:Середній діаметр жили.)Розмір$(/t)$(): 50$(br)$(thing)Висота$(): 10$(br)$(thing)Біоми$(): $(t:Базальтові дельти)Базальтові дельти$(/t)$(br2)$(thing)Типи каменю$(): Базальт, Мігматит, Піроксеніт",
-      "title": "Графіт, Буре вугілля, Діамант",
+      "title": "Графіт, Кам'яне вугілля...",
       "type": "patchouli:text",
       "anchor": "beneath_graphite"
     },
@@ -641,7 +589,7 @@
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Буре вугілля",
+      "name": "Кам'яне вугілля",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/coal"
@@ -837,6 +785,58 @@
       "enable_visualize": false,
       "text": "$(thing)Відсоток$(): 27%$(br)$(thing)Джерело$(): Родій, Залізо, Нікель$(br)$(thing)Формула$(): Fe₂Rh₂Ir₁Ni₃Cu₁S₉",
       "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)$(t:Ймовірність появи жили на чанк. Менші нижні числа означають більшу поширеність.)Рідкість$(/t)$(): 1/10 чинки$(br)$(thing)$(t:Відсоток блоків у жилі, які є рудами замість каменю. Більший відсоток означає більше руди.)Щільність$(/t)$(): 28%$(br)$(thing)$(t:Форма жили.)Тип$(/t)$(): $(t:Переважно округлої форми) Скупчення жили$(/t)$(br)$(thing)$(t:Рівні Y, між якими може генеруватися жила.)Y$(/t)$(): 140 — 190$(br)$(thing)$(t:Середній діаметр жили.)Розмір$(/t)$(): 29$(br)$(thing)Біоми$(): $(t:Вогке болото)Вогке болото$(/t)$(br2)$(thing)Типи каменю$(): Аспідний сланець, Гнейс, Діорит, Мармур, Мігматит, Травертин, Туф, Філіт, Шиферний сланець",
+      "title": "Кам'яне вугілля, Пірит",
+      "type": "patchouli:text",
+      "anchor": "beneath_coal_bituminous"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Кам'яне вугілля",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/coal"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Відсоток$(): 66%$(br)$(thing)Використовується для$(): Паливо, Дистилят$(br)$(thing)Формула$(): C",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Пірит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/pyrite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Відсоток$(): 33%$(br)$(thing)Переплавляється у$(): Чавун$(br)$(thing)Формула$(): FeS₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
     },
     {
       "Type": "patchouli:text",
