@@ -2316,14 +2316,15 @@
 			id: "4425519187BF28FE"
 			subtitle: "{quests.tfg_tips.digger_helmet.subtitle}"
 			tasks: [{
-				id: "6010870D09DAD473"
+				id: "25D97237B649797B"
 				item: {
 					Count: 1
-					id: "diggerhelmet:digger_helmet"
+					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						Damage: 0
+						"ftbfiltersystem:filter": "or(item(diggerhelmet:digger_helmet)item(diggerhelmet:copper_digger_helmet)item(diggerhelmet:bismuth_bronze_digger_helmet)item(diggerhelmet:black_bronze_digger_helmet)item(diggerhelmet:bronze_digger_helmet)item(diggerhelmet:wrought_iron_digger_helmet)item(diggerhelmet:steel_digger_helmet)item(diggerhelmet:black_steel_digger_helmet)item(diggerhelmet:blue_steel_digger_helmet)item(diggerhelmet:red_steel_digger_helmet))"
 					}
 				}
+				title: "{quests.tfg_tips.digger_helmet.task}"
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.digger_helmet.title}"
