@@ -390,7 +390,7 @@
 						}
 					}
 					optional_task: true
-					title: "Any #tfchotornot:insulating"
+					title: "{quests.tasktype.item.any} #tfchotornot:insulating"
 					type: "item"
 				}
 			]
@@ -642,7 +642,7 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:small_ore_pieces)"
 					}
 				}
-				title: "Any #tfc:small_ore_pieces"
+				title: "{quests.tasktype.item.any} #tfc:small_ore_pieces"
 				type: "item"
 			}]
 			title: "{quests.stone_age.native_ores.title}"
@@ -2129,7 +2129,7 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:crushed_ores)"
 					}
 				}
-				title: "Any #forge:crushed_ores"
+				title: "{quests.tasktype.item.any} #forge:crushed_ores"
 				type: "item"
 				weak_nbt_match: true
 			}]
@@ -2162,7 +2162,7 @@
 							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:impure_dusts)"
 						}
 					}
-					title: "Any #forge:impure_dusts"
+					title: "{quests.tasktype.item.any} #forge:impure_dusts"
 					type: "item"
 					weak_nbt_match: true
 				}
@@ -2176,7 +2176,7 @@
 							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:tools/hammers)"
 						}
 					}
-					title: "Any #forge:tools/hammers"
+					title: "{quests.tasktype.item.any} #forge:tools/hammers"
 					type: "item"
 				}
 			]
@@ -2208,7 +2208,7 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:dusts)"
 					}
 				}
-				title: "Any #forge:dusts"
+				title: "{quests.tasktype.item.any} #forge:dusts"
 				type: "item"
 				weak_nbt_match: true
 			}]
@@ -2311,7 +2311,7 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc_textile:animal_furs)"
 					}
 				}
-				title: "Any #tfc_textile:animal_furs"
+				title: "{quests.tasktype.item.any} #tfc_textile:animal_furs"
 				type: "item"
 			}]
 			title: "{quests.stone_age.furs.title}"
@@ -2582,7 +2582,7 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:sluices)"
 					}
 				}
-				title: "Any #tfc:sluices"
+				title: "{quests.tasktype.item.any} #tfc:sluices"
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.sluice.title}"

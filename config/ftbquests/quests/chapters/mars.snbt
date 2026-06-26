@@ -381,7 +381,7 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfg:mineral_rich_wool)"
 					}
 				}
-				title: "Any #tfg:mineral_rich_wool"
+				title: "{quests.tasktype.item.any} #tfg:mineral_rich_wool"
 				type: "item"
 			}]
 			title: "{quests.space_survival.mineral_rich_wool.title}"
@@ -656,7 +656,7 @@
 						}
 					}
 					optional_task: true
-					title: "Any #wan_ancient_beasts:charger_armors"
+					title: "{quests.tasktype.item.any} #wan_ancient_beasts:charger_armors"
 					type: "item"
 				}
 			]
