@@ -336,27 +336,10 @@ const registerTFCRecipes = (event) => {
 		.id("tfg:quern/wax_nugget")
 
 	// Ice Slush cooling
-	event.custom({
-		"type": "tfc:barrel_instant",
-		"input_item": {
-			"ingredient": {
-			"type": "tfc:heatable",
-			"min_temp": 1
-			}
-		},
-		"input_fluid": {
-			"ingredient": "gtceu:ice",
-			"amount": 1
-		},
-		"output_item": {
-			"modifiers": [
-			"tfc:copy_input",
-			{
-				"type": "tfc:add_heat",
-				"temperature": -20
-			}
-			]
-		},
-		"sound": "minecraft:block.fire.extinguish"
-	}).id("tfg:barrel/ice_slush_cooling")
+	event.recipes.tfc.barrel_instant()
+		.inputItem(TFC.ingredient.heatable(1, null))
+		.inputFluid(Fluid.of('gtceu:ice', 1))
+		.outputItem(TFC.isp.copyInput().addHeat(-20))
+		.sound('minecraft:block.fire.extinguish')
+		.id('tfg:barrel/ice_slush_cooling')
 }
