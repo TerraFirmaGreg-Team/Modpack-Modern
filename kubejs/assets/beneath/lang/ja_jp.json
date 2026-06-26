@@ -1,4 +1,5 @@
 {
+	"beneath.block_entity.hellforge": "獄炎炉",
 	"beneath.screen.juicer": "ジューサー",
 	"beneath.screen.juicer.mushrooms": "キノコを食べさせて！",
 	"block.beneath.ancient_altar": "輝岩の台座",
@@ -9,6 +10,9 @@
 	"block.beneath.crop.ghost_pepper": "ゴーストペッパー",
 	"block.beneath.cursecoal_pile": "無煙炭の欠片",
 	"block.beneath.glowstone_spike": "グロウストーンのつらら石",
+	"block.beneath.hellbricks": "獄炎レンガ",
+	"block.beneath.hellforge": "獄炎炉",
+	"block.beneath.hellforge_side": "獄炎炉",
 	"block.beneath.loose_blackstone": "輝岩の小石",
 	"block.beneath.mushroom.button": "ツクリタケ",
 	"block.beneath.mushroom.chantrelle": "アンズタケ",
@@ -131,6 +135,7 @@
 	"block.beneath.wood.wood.warped": "歪んだ菌糸",
 	"block.minecraft.nether_quartz_ore.prospected": "Nether Quartz",
 	"entity.beneath.red_elk": "アカゲジカ",
+	"item.beneath.agonizing_fertilizer": "苦悩の肥料",
 	"item.beneath.blackstone_brick": "輝岩のレンガ",
 	"item.beneath.crackrack_rock": "角斑岩",
 	"item.beneath.crimson_straw": "真紅の藁",
