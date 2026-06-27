@@ -585,7 +585,8 @@ function registerTFCBlockTags(event) {
 			matches.push(id);
 		};
 	});
-	["tfc:bloomery_insulation", "tfc:forge_insulation"].forEach(tag => {
+	const insulationTags = ["tfc:bloomery_insulation", "tfc:forge_insulation"]
+	insulationTags.forEach(tag => {
 		matches.forEach(id => event.add(tag, id));
 	});
 
