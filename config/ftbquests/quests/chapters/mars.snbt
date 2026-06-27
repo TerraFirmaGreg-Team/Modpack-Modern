@@ -696,7 +696,7 @@
 				id: "4AC531B94CBA93CE"
 				observe_type: 5
 				timer: 0L
-				title: "{quests.space_survival.snatchertask}"
+				title: "{quests.space_survival.snatcher.task}"
 				to_observe: "wan_ancient_beasts:snatcher"
 				type: "observation"
 			}]
