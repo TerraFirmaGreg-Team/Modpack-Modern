@@ -666,7 +666,7 @@
 						"ftbfiltersystem:filter": "or(item_tag(forge:small_item_pipes)item_tag(forge:normal_item_pipes)item_tag(forge:large_item_pipes)item_tag(forge:huge_item_pipes))"
 					}
 				}
-				title: "{quests.tasktype.item.any} Item Pipes"
+				title: "{quests.steam_age.item_pipes.task}"
 				type: "item"
 			}]
 			title: "{quests.steam_age.item_pipes.title}"
