@@ -2,7 +2,29 @@
 
 ## Unreleased
 ### Changes
+- Blue steel lamps are now heatproof, so you don't get burnt on the safely-contained lava inside (#4353) @hollow-earth
+- Halite blocks (in the Salt Flats and Salt Caves biomes) now gives less salt when mined @Pyritie
+- Renamed Nether Quartz to Smoky Quartz because the netherlands isn't real @Pyritie
+- Breaking the large quartz crystals in the Geothermal Springs biome with a gem saw now gives you the full blocks to build with @Pyritie
+- Added a new texture for the Powderbarrel @Atraxia
+- Added purified irarsite, ruarsite, and ferhodsite ores to the `#tfg:platinum_ore_group` tag (#4367) @AzureCrafts
 ### Bug fixes
+- Selecting a custom spawn location when creating a new world via Preview World now actually sets your spawn location instead of getting ignored (#3865) @Thomasx0
+- Fixed the biomes in Preview World not matching the biomes after the world is actually created (#3950) @Thomasx0
+- Fixed friendly slimes not giving products to the player when fed (#4349) @SakuraKitsurugi
+- Fixed friendly slimes not being able to breed (#4349) @SakuraKitsurugi
+- Fixed purified tin and silver smelting into blacklisted TFC ingots (#4360) @CaptainGold1
+- Fixed not being able to make create deco's bricks in a crafting table (#4365) @Pyritie
+- Fixed not being able to craft locometal at better rates with wrought iron or steel blocks (#4331) @Pyritie
+- Fixed not being able to craft copycat panels and steps (#4375) @Pyritie
+- Fixed the digger helmet quest only accepting the base digger helmet (#4376) @hollow-earth
+- Fixed not being able to recycle unfired casting channel items (#4368) @TreyR9
+- Fixed beds in the Beneath not setting your spawn point or letting you sleep (#4383) @jmecn
+- Fixed a rare crash when trying to load a chunk containing a mineshaft (#4356) @BlueBoat29
+- Fixed halite blocks being transparent with some resource packs @Pyritie
+- Fixed a crash in orbit dimensions and the spatial storage dimension where the new skeleton decoration mod would ask TFC if it was hot enough to place a certain skeleton, then TFC would say there is no climate and explode @Pyritie
+### Mods
+- *Create Fluid Logistics*: Added phantom chains and fluid repackager
 
 ## [0.13.1] - 23-06-2026
 ### Changes

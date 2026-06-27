@@ -8,6 +8,8 @@ function registerCreateFluidLogisticsRecipes(event) {
 			{ id: 'fluidlogistics:horizontal_multi_fluid_tank_from_tank' },
 			{ id: 'fluidlogistics:multi_fluid_tank_from_horizontal' },
 			{ id: 'fluidlogistics:hand_pointer_clear' },
+			{ id: 'fluidlogistics:fluid_repackager' },
+			{ id: 'fluidlogistics:fluid_packager_switch' }
 		], mod: "fluidlogistics" })
 
     event.shapeless('fluidlogistics:waterproof_cardboard_block', ['create:cardboard_block', '#forge:wax'])
@@ -158,4 +160,7 @@ function registerCreateFluidLogisticsRecipes(event) {
 		C: 'minecraft:hopper',
 		D: '#forge:plates/copper'
 	}).id('tfg:shaped/smart_hopper')
+
+	event.shapeless('8x fluidlogistics:phantom_chain', [ '#forge:tiny_dusts/ender_pearl', '8x #tfg:metal_chains' ])
+		.id('tfg:shaped/phantom_chain')
 }
