@@ -1016,7 +1016,7 @@
 						"ftbfiltersystem:filter": "or(item_tag(gtceu:batteries/mv))"
 					}
 				}
-				title: "{quests.tasktype.item.any} MV Battery"
+				title: "{quests.tasktype.item.any} #gtceu:batteries/mv"
 				type: "item"
 			}]
 			title: "{quests.medium_voltage.mv_batteries.title}"
