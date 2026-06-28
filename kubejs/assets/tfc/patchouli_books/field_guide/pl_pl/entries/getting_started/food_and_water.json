@@ -56,8 +56,8 @@
                     "Y": "tfc:plant/cattail[part=lower,fluid=water]"
                 }
             },
-            "name": "Water Safety",
-            "text": "To avoid saltwater or muddy water, look for rivers, lakes, and freshwater plants like $(thing)Cattails$().",
+            "name": "Bezpieczna woda",
+            "text": "Unikaj słonej i błotnistej wody, szukaj rzek, jezior i słodkowodnych roślin, takich jak $(thing)Pałka wodna$().",
             "enable_visualize": false
         },
         {

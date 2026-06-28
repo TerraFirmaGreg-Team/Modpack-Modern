@@ -1,6 +1,6 @@
 {
 	"__comment__": "This file was automatically created by mcresources",
-	"name": "Bloomery",
+	"name": "Rudnelė",
 	"category": "tfc:mechanics",
 	"icon": "tfc:bloomery",
 	"pages": [
@@ -16,7 +16,7 @@
 		{
 			"type": "patchouli:multiblock",
 			"multiblock_id": "tfc:bloomery",
-			"name": "A Bloomery",
+			"name": "Rudnelė",
 			"text": "A minimum size bloomery. The bloomery block will open and close with $(item)$(k:key.use)$().",
 			"enable_visualize": true
 		},
@@ -51,8 +51,8 @@
 					"X": "tfc:bloom[layers=8]"
 				}
 			},
-			"name": "The Bloom Block",
-			"text": "A large $(thing)Bloom$().",
+			"name": "Kritės blokas",
+			"text": "Didelė $(thing)kritė$().",
 			"enable_visualize": false
 		},
 		{

@@ -1,31 +1,31 @@
 {
   "__comment__": "This file was automatically created by mcresources",
-  "name": "Pets",
+  "name": "Питомцы ",
   "category": "tfc:mechanics",
   "icon": "minecraft:lead",
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "$(thing)Pets$() are animals that function quite similar to $(l:mechanics/animal_husbandry)Livestock$(), but have no useful products. Instead, they can obey commands, follow you around your home, control pests, and help you hunt."
+      "text": "$(thing)Питомцы$() — это животные, которые функционируют почти так же, как домашний скот, но не дают полезных продуктов. Вместо этого они могут выполнять команды, следовать за вами по дому, бороться с вредителями и помогать на охоте."
     },
     {
       "type": "patchouli:text",
-      "text": "Pets recognize a certain player as their $(thing)Owner$(). To become a pet's owner, feed it to raise its familiarity above 15%%. Pets will only obey commands that come from their owner.$(br2)Clicking on a pet with $(l:mechanics/dye)dye$() changes its collar color."
+      "text": "Питомцы признают определённого игрока своим $(thing)хозяином$(). Чтобы стать хозяином питомца, покормите его, чтобы поднять показатель привязанности выше 15%. Питомцы выполняют команды только от своего хозяина.\n\n$(br2)Если нажать на питомца с $(l:mechanics/dye)красителем$() в руке, цвет его ошейника изменится."
     },
     {
       "type": "patchouli:entity",
       "entity": "tfc:dog{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16,TFCWolfVariant:8}",
       "scale": 0.7,
-      "text": "A dog."
+      "text": "Собака."
     },
     {
       "type": "patchouli:text",
-      "text": "Dogs are a pet that eats grains, vegetables, and meat, rotten or not rotten. They will help you hunt most any land predator or prey."
+      "text": "Собаки — это питомцы, которые едят злаки, овощи и мясо, испорченное или свежее. Они помогут вам охотиться почти на любых наземных хищников и добычу."
     },
     {
       "type": "patchouli:text",
-      "title": "Dog Variants",
-      "text": "Dogs come in multiple variants that depend on what type of wolf it was domesticated from.$(br2)The next pages show a table of the climates where specific wolf variants can be found."
+      "title": "Варианты собак",
+      "text": "Собаки бывают нескольких разновидностей, которые зависят от того, какой тип волка был приручён. $(br2)На следующих страницах показана таблица климатов, где можно найти определённые разновидности волков."
     },
     {
       "type": "patchouli:image",
@@ -38,7 +38,7 @@
       "type": "tfc:table",
       "strings": [
         {
-          "text": "Variant",
+          "text": "Разновидность",
           "bold": true
         },
         {
@@ -46,16 +46,16 @@
           "bold": true
         },
         {
-          "text": "Pale"
+          "text": "Бледный"
         },
         {
-          "text": "Cold Desert, Temperate, Humid Oceanic (Plains)"
+          "text": "Холодная пустыня, Умеренный, Влажный Океанический (Равнины)"
         },
         {
-          "text": "Ashen"
+          "text": "Пепельный"
         },
         {
-          "text": "Arctic, Subarctic (Forests)"
+          "text": "Арктический, субарктический (леса)"
         },
         {
           "text": "Чёрный"

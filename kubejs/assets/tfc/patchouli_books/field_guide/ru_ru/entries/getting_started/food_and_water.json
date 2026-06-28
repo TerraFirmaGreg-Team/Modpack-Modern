@@ -25,11 +25,11 @@
         },
         {
             "type": "patchouli:text",
-            "text": "All foods have a tooltip with this information. The tooltip includes the $(l:mechanics/decay)Decay Date$() of the food, which may be extended with preservation. When viewing this information, it's important to realize that not all foods have nutritional value. For example, $(l:mechanics/bread)Dough$() is a food, but it has no Nutrition, Saturation, or Water value. Eating it would not do much good."
+            "text": "У всей еды есть подсказка с этой информацией. Подсказка включает $(l:mechanics/decay)дату порчи$() еды, которую можно отложить с помощью консервации. При просмотре этой информации важно понимать, что не вся еда имеет питательную ценность. Например, $(l:mechanics/bread)тесто$() — это еда, но у него нет питательности, насыщения или значения воды. Его употребление не принесёт большой пользы."
         },
         {
             "type": "patchouli:text",
-            "text": "A food tooltip may look like:$(br2)$(bold)Orange$()$(br)  $(2)$(bold)Expires on: 11:59 July 6, 1004 (in 1 month(s) and 1 day(s))$()$(br)  $(8)Nutrition:$(br)  - Saturation: 2%$(br)  - Water: 10%$(br)$(a)  - Fruit: 0.5"
+            "text": "Подсказка еды может выглядеть так:$(br2)$(bold)Апельсин$()$(br)  $(2)$(bold)Испортится: 11:59, 6 июля 1004 г. (через 1 месяц(ев) и 1 день(дней))$()$(br)  $(8)Питание:$(br)  - Насыщение: 2%$(br)  - Вода: 10%$(br)$(a)  - Фрукты: 0.5"
         },
         {
             "type": "patchouli:text",
@@ -131,7 +131,7 @@
         {
             "type": "patchouli:text",
             "anchor": "contaminants",
-            "text": "In addition to nutrients $(bold)$(#ff0fb7)TerraFirma$()$()$(bold)$(#595959)Greg$()$() also adds contaminants. There are three contaminants, all obtainable from food: $(l)$(d)Toxins$()$(), $(l)$(4)Parasites$()$(), and $(l)$(3)Microplastics$()$(). Contaminants can be passed into meal items and build up within the player.",
+            "text": "Помимо питательных веществ, $(bold)$(#ff0fb7)TerraFirma$()$()$(bold)$(#595959)Greg$()$() также добавляет загрязнители. Существует три загрязнителя, все из которых можно получить из еды: $(l)$(d)токсины$()$(), $(l)$(4)паразиты$()$() и $(l)$(3)микропластик$()$(). Загрязнители могут передаваться в готовые блюда и накапливаться внутри игрока.",
             "title": "Загрязнители"
         },
         {
