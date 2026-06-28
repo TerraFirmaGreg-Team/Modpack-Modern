@@ -8,6 +8,11 @@
 - Breaking the large quartz crystals in the Geothermal Springs biome with a gem saw now gives you the full blocks to build with @Pyritie
 - Added a new texture for the Powderbarrel @Atraxia
 - Added purified irarsite, ruarsite, and ferhodsite ores to the `#tfg:platinum_ore_group` tag (#4367) @AzureCrafts
+- Removed matchboxes from mineshaft loot tables, replaced them with lighters @Pyritie
+- You can now use other kinds of water and oils to cool down hot things in barrels, as well as Ice Slush to cool them even faster (#4384) @theMegaTech
+- Added more mob icons to xaeros minimap (#4393) @Nezumi-Remis
+- Standing inside an active EBF (or other machine with coil bonuses) now actually cooks the player @ashleney
+- Heatstroke/frostbite damage now happens more often as the temperature gets more extreme, so you can't outheal it @ashleney
 ### Bug fixes
 - Selecting a custom spawn location when creating a new world via Preview World now actually sets your spawn location instead of getting ignored (#3865) @Thomasx0
 - Fixed the biomes in Preview World not matching the biomes after the world is actually created (#3950) @Thomasx0
@@ -18,11 +23,16 @@
 - Fixed not being able to craft locometal at better rates with wrought iron or steel blocks (#4331) @Pyritie
 - Fixed not being able to craft copycat panels and steps (#4375) @Pyritie
 - Fixed the digger helmet quest only accepting the base digger helmet (#4376) @hollow-earth
+- Fixed some quest tasks not being translated (#4385) @hollow-earth
 - Fixed not being able to recycle unfired casting channel items (#4368) @TreyR9
 - Fixed beds in the Beneath not setting your spawn point or letting you sleep (#4383) @jmecn
 - Fixed a rare crash when trying to load a chunk containing a mineshaft (#4356) @BlueBoat29
 - Fixed halite blocks being transparent with some resource packs @Pyritie
 - Fixed a crash in orbit dimensions and the spatial storage dimension where the new skeleton decoration mod would ask TFC if it was hot enough to place a certain skeleton, then TFC would say there is no climate and explode @Pyritie
+- Fixed being able to craft wool clothes with cloth used to make cooling clothes @Pyritie
+- Fixed sea water and lava not creating a stone block when they touch @Pyritie
+- Fixed custom field of view (FOV) settings not functioning (#4327) @Redeix
+- Fixed food processor recipes involving jam not outputting empty jam jars (#4341) @Redeix
 ### Mods
 - *Create Fluid Logistics*: Added phantom chains and fluid repackager
 
