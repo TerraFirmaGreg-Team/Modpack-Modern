@@ -265,7 +265,7 @@
 							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:stone_javelins)"
 						}
 					}
-					title: "A stone javelin"
+					title: "{quests.stone_age.stone_tools.task}"
 					type: "item"
 				}
 			]
