@@ -124,7 +124,12 @@
 				{
 					"type": "minecraft:item",
 					"name": "sns:leather_sack",
-					"weight": 20
+					"weight": 15
+				},
+				{
+					"type": "minecraft:item",
+					"name": "sns:burlap_sack",
+					"weight": 25
 				},
 				{
 					"type": "minecraft:item",
@@ -246,11 +251,22 @@
 				},
 				{
 					"type": "minecraft:item",
-					"name": "gtceu:matchbox",
-					"weight": 70,
+					"name": "gtceu:invar_lighter",
+					"weight": 50,
 					"functions": [
 						{
-							"tag": "{usesLeft:16}",
+							"tag": "{Fluid:{Amount:100,FluidName:\"gtceu:propane\"},lighterOpen:0b}",
+							"function": "minecraft:set_nbt"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:platinum_lighter",
+					"weight": 10,
+					"functions": [
+						{
+							"tag": "{Fluid:{Amount:1000,FluidName:\"gtceu:butane\"},lighterOpen:0b}",
 							"function": "minecraft:set_nbt"
 						}
 					]
