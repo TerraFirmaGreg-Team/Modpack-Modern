@@ -6,22 +6,22 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "Making $(thing)cheese$() in Firmalife is a little more involved than in vanilla TFC. There are two new kinds of milk: $(thing)Yak Milk$(), and $(thing)Goat Milk$(). These are obtained from milking the $(l:mechanics/animal_husbandry#yak)Yak$() and $(l:mechanics/animal_husbandry#goat)Goat$(), respectively. Milking the $(l:mechanics/animal_husbandry#cow)Cow$() still produces the old kind of milk."
+      "text": "Создание $(thing)сыра$() в Firmalife немного сложнее, чем в ванильном TFС, Появилось два новых вида молока: $(thing)Молоко яка$() и $(thing)Козье молоко$(). Их получают в результате доения $(l:mechanics/animal_husbandry#yak)Яка$() и $(l:mechanics/animal_husbandry#goat)Козы$() соответственно, Доение $(l:mechanics/animal_husbandry#cow)Коровы$() по-прежнему дает старый вид молока."
     },
     {
       "type": "patchouli:text",
-      "text": "Like usual, milk must be $(thing)curdled$() first. To curdle milk, you need $(thing)Rennet$(). Rennet comes from the stomach of $(thing)Ruminant$() animals. This includes $(l:mechanics/animal_husbandry#yak)Yaks$(), $(l:mechanics/animal_husbandry#cow)Cows$(), $(l:mechanics/animal_husbandry#sheep)Sheep$(), $(l:mechanics/animal_husbandry#goat)Goats$(), and $(l:mechanics/animal_husbandry#musk_ox)Musk Oxen$(). To curdle milk, seal it in a $(l:mechanics/barrels)Barrel$() with Rennet for 4 hours."
+      "text": "Как обычно, молоко сначала должно быть\n$(thing)свертывание$(), Чтобы свернуть молоко, вам\nпонадобится $(thing)сычуг$0. Сычуг выпадает из $(thing)жвачных$() животных. Таких как $(l:mechanics/animal_husbandry#yak)Як$(), $(l:mechanics/animal_husbandry#cow)Корова$(), $(l:mechanics/animal_husbandry#sheep)Овца$(), $(l:mechanics/animal_husbandry#goat)Коза$(), и $(l:mechanics/animal_husbandry#musk_ox)Овце-бык$(). Чтобы свернулось молоко, запечатайте его в $(l:mechanics/barrels)бочке$() с сычугом на 4 часа."
     },
     {
       "type": "patchouli:crafting",
       "anchor": "cheesecloth",
       "recipe": "firmalife:crafting/cheesecloth",
-      "text": "Curdled milk must be converted to $(thing)Curds$() by sealing it in a barrel with $(thing)Cheesecloth$(). Cheesecloth is not reusable."
+      "text": "Свернувшееся молоко нужно превратить в $(thing)сгустки$(), запечатав его в бочке с $(thing)марлей$(). Марлю нельзя использовать повторно."
     },
     {
       "type": "patchouli:crafting",
       "recipe": "tfg:crafting/cheddar_wheel",
-      "text": "You are ready to make $(thing)Dry Cheese$() if you wish. You can make $(thing)Rajya Metok$() from $(thing)Yak Curds$(), $(thing)Chevre$() from $(thing)Goat Curds$(), and $(thing)Cheddar$() from $(thing)Milk Curds$()."
+      "text": "Теперь вы готовы сделать $(thing)сухой сыр$(), если хотите. Вы можете сделать $(thing)Rajya Metok$() из $(thing)сгустков молока яка$(), $(thing)Шевр$() из $(thing)сгустков козьего молока$() и $(thing)Чеддер$() из $(thing)молочных сгустков$()."
     },
     {
       "type": "patchouli:crafting",
@@ -30,12 +30,12 @@
     },
     {
       "type": "patchouli:text",
-      "text": "Your other option is to make $(thing)Wet Cheeses$(). These are made by sealing the curds in a barrel of $(thing)Salt Water$(). You can make $(thing)Shosha$() from $(thing)Yak Curds$(), $(thing)Feta$() from $(thing)Goat Curds$(), and $(thing)Gouda$() from $(thing)Milk Curds$()."
+      "text": "Другой вариант — сделать $(thing)мокрые сыры$(). Они изготавливаются путём запечатывания сгустков в бочке с $(thing)солёной водой$(). Вы можете сделать $(thing)Шошу$() из $(thing)сгустков молока яка$(), $(thing)Фету$() из $(thing)сгустков козьего молока$() и $(thing)Гауду$() из $(thing)молочных сгустков$()."
     },
     {
       "type": "patchouli:text",
       "anchor": "aging",
-      "text": "Cheese wheels are blocks that should be placed in order to help them last. To improve their quality and shelf life, cheese wheels should be $(thing)Aged$() in a $(l:firmalife/cellar)Cellar$(). In order to obtain edible cheese from a cheese wheel, it should be sliced off the wheel by clicking $(item)$(k:key.use)$() with a $(thing)Knife$(). If the block is simply broken, the aging is lost!"
+      "text": "Сырные головки — это блоки, которые следует размещать, чтобы они дольше хранились. Чтобы улучшить их качество и срок хранения, сырные головки нужно $(thing)выдерживать$() в $(l:firmalife/cellar)погребе$(). Чтобы получить съедобный сыр из сырной головки, его нужно отрезать от головки, нажав $(item)$(k:key.use)$() с $(thing)ножом$(). Если просто сломать блок, выдержка будет потеряна!"
     },
     {
       "type": "tfc:multimultiblock",

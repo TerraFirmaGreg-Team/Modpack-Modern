@@ -61,25 +61,25 @@
           "text": "Чёрный"
         },
         {
-          "text": "Tundra, Humid Subarctic (Forests)"
+          "text": "Тундра, влажный субарктический (леса)"
         },
         {
           "text": "Каштан"
         },
         {
-          "text": "Tundra, Humid Subarctic (Plains)"
+          "text": "Тундра, влажный субарктический (равнины)"
         },
         {
-          "text": "Rusty"
+          "text": "Ржавый"
         },
         {
-          "text": "Humid Subtropical, Tropical Rainforest (Plains)"
+          "text": "Влажный субтропический, тропический лес (равнины)"
         },
         {
-          "text": "Snowy"
+          "text": "Снежный"
         },
         {
-          "text": "Arctic, Subarctic (Plains)"
+          "text": "Арктический, субарктический (равнины)"
         },
         {
           "text": "Spotted"
@@ -119,17 +119,17 @@
       "type": "patchouli:entity",
       "entity": "tfc:cat{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
       "scale": 0.7,
-      "text": "A cat."
+      "text": "Кошка."
     },
     {
       "type": "patchouli:text",
-      "text": "Cats are a pet that eats grains, cooked meats, and dairy products. They will help you hunt land prey and small fish. When at home, they will kill pests without being asked to. Cats do not always listen when being told to sit.$(br2)Variants: Black, British Shorthair, Calico, Jellie, Persian, Ragdoll, Red, Siamese, Tabby, White."
+      "text": "Кошки — это питомцы, которые едят злаки, приготовленное мясо и молочные продукты. Они помогут вам охотиться на наземную добычу и мелкую рыбу. Находясь дома, они будут сами убивать вредителей. Кошки не всегда слушаются команды сидеть.$(br2)Разновидности: чёрная, британская короткошёрстная, калико, Джелли, персидская, рэгдолл, рыжая, сиамская, табби, белая."
     },
     {
       "type": "patchouli:entity",
       "entity": "tfg:fox{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,FoxType:1}",
       "scale": 0.7,
-      "text": "A fox."
+      "text": "Лиса."
     },
     {
       "type": "patchouli:text",
