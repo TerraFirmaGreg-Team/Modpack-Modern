@@ -6,40 +6,40 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "$(thing)Ovens$() are a great way of cooking lots of food in a way that improves their shelf life. Oven-baked food decays at 90% of the rate of regular food. Ovens are a multiblock structure consisting of a $(thing)Bottom Oven$(), $(thing)Top Oven$(), and optionally $(thing)Chimneys$(). These blocks start off as clay, and must be $(thing)Cured$() by raising their temperature to a certain amount for long enough.$(br)$(l:firmalife/oven_appliances)Oven Appliances$() extend oven functionality."
+      "text": "$(thing)Печи$() — отличный способ готовить много еды так, чтобы увеличить срок её хранения. Запечённая в печи еда портится со скоростью 90% от скорости порчи обычной еды. Печи — это мультиблочная структура, состоящая из $(thing)нижней части печи$(), $(thing)верхней части печи$() и, при желании, $(thing)дымоходов$(). Сначала эти блоки сделаны из глины, и их нужно $(thing)обжечь$(), достаточно долго поддерживая их температуру на определённом уровне.$(br)$(l:firmalife/oven_appliances)Печные приспособления$() расширяют функциональность печи."
     },
     {
       "type": "tfc:knapping_recipe",
       "recipe": "firmalife:clay_knapping/oven_top",
-      "text": "The recipe for the top oven."
+      "text": "Рецепт верхней части печи."
     },
     {
       "type": "tfc:knapping_recipe",
       "recipe": "firmalife:clay_knapping/oven_bottom",
-      "text": "The recipe for the bottom oven."
+      "text": "Рецепт нижней части печи."
     },
     {
       "type": "tfc:knapping_recipe",
       "recipe": "firmalife:clay_knapping/oven_chimney",
-      "text": "The recipe for the oven chimney    ."
+      "text": "Рецепт дымохода печи."
     },
     {
       "type": "patchouli:crafting",
       "recipe": "tfc:crafting/bricks",
-      "text": "Ovens are insulated with $(thing)Bricks$(), other oven blocks, or anything that can insulate a Forge. This means you can use stone blocks, if you want!"
+      "text": "Печи изолируются с помощью $(thing)кирпичей$(), других блоков печи или любых блоков, которые могут изолировать горн. Это значит, что при желании можно использовать каменные блоки!"
     },
     {
       "type": "patchouli:crafting",
       "recipe": "tfchotornot:crafting/tongs/wood",
-      "text": "The $(thing)Tongs$() are a safe way to remove hot items from an Oven. Just $(item)$(k:key.use)$() on it while holding it to retrieve items. Otherwise, you may get burned!"
+      "text": "$(thing)Щипцы$() — безопасный способ доставать горячие предметы из печи. Просто используйте $(item)$(k:key.use)$() по печи, держа их в руках, чтобы забрать предметы. Иначе можно обжечься!"
     },
     {
       "type": "patchouli:text",
-      "text": "The Oven first consists of the Top Oven placed on top of the Bottom Oven. All sides of each oven part, besides the front face, should then be covered with Oven Insulation blocks, as covered two pages ago. You may choose to use $(thing)Oven Chimneys$() as insulation. Placing a stack of chimneys directly behind the oven causes the smoke from the oven to travel up and out of it. If you don't do this, smoke will quickly fill up your house, which is very distracting!"
+      "text": "Сначала печь состоит из верхней части печи, установленной поверх нижней части печи. Затем все стороны каждой части печи, кроме передней стороны, должны быть закрыты блоками изоляции печи, как было описано две страницы назад. В качестве изоляции можно использовать $(thing)дымоходы печи$(). Если разместить стопку дымоходов прямо за печью, дым из печи будет подниматься вверх и выходить наружу. Если этого не сделать, дым быстро заполнит ваш дом, что очень мешает!"
     },
     {
       "type": "tfc:multimultiblock",
-      "text": "An example oven structure, uncured and cured.",
+      "text": "Пример конструкции печи до обжига и после обжига.",
       "multiblocks": [
         {
           "pattern": [
@@ -99,29 +99,29 @@
     },
     {
       "type": "patchouli:text",
-      "text": "The Bottom Oven is used to hold fuel, which may only be logs. Press $(item)$(k:key.use)$() to add or remove them. The bottom oven is also the part of the oven which may be lit with a $(thing)Firestarter$() or other tool. It transfers heat contained in it to the top oven."
+      "text": "Нижняя часть печи используется для хранения топлива, которым могут быть только брёвна. Нажмите $(item)$(k:key.use)$(), чтобы добавить или убрать их. Нижняя часть печи также является той частью печи, которую можно разжечь с помощью $(thing)огнива$() или другого инструмента. Она передаёт содержащийся в ней жар верхней части печи."
     },
     {
       "type": "patchouli:text",
-      "text": "The Top Oven contains the items that are being cooked. It will draw heat from the Bottom Oven and slowly release it over time. This means that even if your fuel runs out, your Top Oven can continue to work for a little while. Adding items to it is as simple as pressing $(item)$(k:key.use)$(). Remember to use a $(thing)Peel$() to remove the items after."
+      "text": "Верхняя часть печи содержит предметы, которые готовятся. Она забирает жар из нижней части печи и постепенно отдаёт его со временем. Это значит, что даже если топливо закончится, верхняя часть печи сможет ещё некоторое время продолжать работать. Чтобы добавить в неё предметы, достаточно нажать $(item)$(k:key.use)$(). Не забудьте потом использовать $(thing)пекарскую лопату$(), чтобы достать предметы."
     },
     {
       "type": "patchouli:text",
-      "text": "Curing Oven blocks is easy, but requires patience. Simply start running your Bottom Oven as you would normally, and then wait. If an oven block is above 600 degrees for about 80 seconds, it will cure itself and any oven blocks around it. The curing effect will pass all the way up chimneys nearby."
+      "text": "Обжигать блоки печи легко, но для этого нужно терпение. Просто запустите нижнюю часть печи как обычно и подождите. Если блок печи будет нагрет выше 600 градусов примерно 80 секунд, он обожжёт сам себя и все блоки печи вокруг него. Эффект обжига будет передаваться вверх по ближайшим дымоходам."
     },
     {
       "type": "patchouli:crafting",
       "recipe": "firmalife:crafting/oven_insulation",
-      "text": "Crafting oven insulation for your Bottom Oven allows you to remove the need for insulating it on the sides and back. It does not remove the need for the chimney. Use $(item)$(k:key.use)$() to apply it."
+      "text": "Создание изоляции печи для нижней части печи позволяет убрать необходимость изолировать её по бокам и сзади. Но дымоход всё равно потребуется. Используйте $(item)$(k:key.use)$(), чтобы применить её."
     },
     {
       "type": "patchouli:crafting",
       "recipe": "firmalife:crafting/brick_countertop",
-      "text": "Countertops are aesthetic blocks that count as oven insulation, and have an appearance that matches that of oven blocks. They are a nice aesthetic choice for your kitchen."
+      "text": "Столешницы — это декоративные блоки, которые считаются изоляцией печи и внешне сочетаются с блоками печи. Это хороший декоративный вариант для вашей кухни."
     },
     {
       "type": "patchouli:text",
-      "text": "Ovens also have $(thing)Finishes$() that can be used to change their appearance. These finishes are applied to the basic brick stage of the oven (or brick blocks themselves), and are cosmetic. Finishes can be mixed and matched. They are applied with $(item)$(k:key.use)$()."
+      "text": "У печей также есть $(thing)отделки$(), которые можно использовать, чтобы изменить их внешний вид. Эти отделки наносятся на базовую стадию кирпичей печи или на сами кирпичи и являются косметическими. Отделки можно сочетать между собой. Они наносятся с помощью $(item)$(k:key.use)$()."
     },
     {
       "type": "patchouli:crafting",

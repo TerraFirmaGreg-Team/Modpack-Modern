@@ -6,34 +6,34 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "Firmalife adds some berry bushes. For information on wild grape bushes, see $(l:firmalife/wine)winemaking$()."
+      "text": "Firmalife добавляет ягодные кусты. Информацию о\nкустах дикого винограда см. в разделе $(l:firmalife/wine)виноделие$()."
     },
     {
       "type": "patchouli:spotlight",
       "item": "firmalife:food/nightshade_berry",
       "link_recipes": false,
-      "text": "First is nightshade. Nightshade is a poisonous berry. When put into soup, it makes poisonous $(thing)Stinky Soup$(). It is found between 200-400mm of rain and 7-24 C temperature in forests."
+      "text": "Во-первых, это паслен. Паслен — ядовитая ягода. Если добавить его в суп, он сделает его ядовитым $(thing)Вонючий суп$(). Она встречается в лесах, где выпадает от 200 до 400 мм осадков, а температура составляет от 7 до 24 °C."
     },
     {
       "type": "patchouli:spotlight",
       "item": "firmalife:food/pineapple",
       "link_recipes": false,
-      "text": "Pineapple bushes are found 250-500mm of rainfall and 20-32 C temperature in forests. Pineapples are like any other fruit, except that they can be made into $(thing)Pineapple Leather$()."
+      "text": "Кусты ананаса встречаются в лесах при 250—500 мм осадков и температуре 20—32. Ананасы похожи Ha любые другие фрукты, за исключением  того что из них можно сделать  $(thing)Ананасовую кожу$()."
     },
     {
       "type": "patchouli:crafting",
       "recipe": "firmalife:crafting/pineapple_fiber",
-      "text": "Pineapples that have been $(l:firmalife/drying)Dried$() can be crafted into pineapple fiber."
+      "text": "Ананасы, прошедшие $(l:firmalife/drying)Сушку$() можно превратить в ананасовое волокно."
     },
     {
       "type": "patchouli:crafting",
       "recipe": "tfc:kjs/damage/shapeless/pineapple_yarn",
-      "text": "Pineapple yarn is made by crafting a $(thing)Spindle$() with the fiber."
+      "text": "Пряжа из ананаса изготовляется путем создания $(thing)Веретена$() из волокна."
     },
     {
       "type": "tfc:loom_recipe",
       "recipe": "firmalife:loom/pineapple_leather",
-      "text": "Finally, pineapple leather can be me woven in a $(l:tfc:mechanics/weaving)Loom$(). It is a plant substitute for regular leather than can be used for knapping, crafting, and other uses!"
+      "text": "Наконец, кожу ананаса можно соткать на $(l:tfc:mechanics/weaving)Loom$(). Это растительный заменитель обычной кожи, которую можно использовать для выделывания, изготовления изделий и других целей!"
     }
   ],
   "read_by_default": true,

@@ -1,23 +1,23 @@
 {
   "__comment__": "This file was automatically created by mcresources",
-  "name": "Pizza",
+  "name": "Пицца",
   "category": "tfc:firmalife",
   "icon": "firmalife:textures/item/food/cooked_pizza.png",
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "To make $(thing)Pizza$(), mix Dough, Salt, Basil Leaves, and 100 mB of oil in a $(l:firmalife/mixing_bowl)Mixing Bowl$(). Oil can be olive oil, or soybean oil (the product of soybean paste sealed in a barrel of water)."
+      "text": "Чтобы сделать $(thing)пиццу$(), смешайте тесто, соль, листья базилика и 100 мБ масла в $(l:firmalife/mixing_bowl)миске для смешивания$(). Маслом может быть оливковое масло или соевое масло (продукт соевой пасты, запечатанной в бочке с водой)."
     },
     {
       "type": "patchouli:crafting",
       "anchor": "shredded_cheese",
       "recipe": "firmalife:crafting/shredded_cheese",
-      "text": "You'll need some shredded cheese to start with."
+      "text": "Для начала вам понадобится немного тёртого сыра."
     },
     {
       "type": "patchouli:text",
       "anchor": "tomato_sauce",
-      "text": "To make $(thing)Tomato Sauce$(), boil a tomato, salt, garlic, and water all together in a pot. Alternatively, using a $(l:firmalife/oven_appliances#vat)Vat$(), boil the crafted version of those ingredients, also known as $(thing)Tomato Sauce Mix$()."
+      "text": "Чтобы сделать $(thing)томатный соус$(), сварите вместе в котле помидор, соль, чеснок и воду. Либо, используя $(l:firmalife/oven_appliances#vat)чан$(), сварите созданную из этих ингредиентов смесь, также известную как $(thing)смесь для томатного соуса$()."
     },
     {
       "type": "patchouli:crafting",

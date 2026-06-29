@@ -1,12 +1,12 @@
 {
   "__comment__": "This file was automatically created by mcresources",
-  "name": "Flask Recipes",
+  "name": "Рецепты фляг",
   "category": "tfc:waterflasks",
   "icon": "waterflasks:leather_flask",
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "There are three tiers of water flasks.$(br)The leather flask holds 5 drinks and lasts for 100 uses.$(br)The iron flask holds 20 drinks, and lasts for 400 uses.$(br)The red steel flask holds 20 drinks, and lasts for ever.$(br)Both leather and iron flasks may be repaired."
+      "text": "Существует три уровня фляг для воды. $(br)Кожаная фляга вмещает 5 глотков и рассчитана на 100 использований. $(br)Железная фляга вмещает 20 глотков и рассчитана на 400 использований. $(br)Фляга из красной стали вмещает 20 глотков и служит вечно. $(br)Кожаную и железную фляги можно ремонтировать."
     },
     {
       "type": "patchouli:crafting",
@@ -17,14 +17,14 @@
       "type": "patchouli:crafting",
       "recipe": "waterflasks:crafting/repair_leather",
       "recipe2": "tfg:shaped/repair_iron_bladder",
-      "title": "Repair Recipes"
+      "title": "Рецепты ремонта"
     },
     {
       "type": "patchouli:crafting",
       "recipe": "waterflasks:crafting/repair_broken_leather",
       "recipe2": "tfg:shaped/repair_broken_iron",
-      "title": "Renew Recipes",
-      "text": "Flasks can also be repaired when completely broken."
+      "title": "Рецепты восстановления",
+      "text": "Фляги также можно восстановить, когда они полностью сломаны."
     },
     {
       "type": "patchouli:crafting",
