@@ -14,12 +14,12 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/mars_vein_index#mars_almandine)Альмандин, Піроп, Сапфір...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_apatite)Апатит, Ортофосфат кальцію...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_neodynium)Бастнезит, Монацит, Неодим...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_beryllium)Берилій, Смарагд, Реальгар$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_bismuthinite)Бісмут, Гематит, Сірка, Гіпс$()$()$(li)$(l:tfg_ores/mars_vein_index#deep_mars_sheldonite)Борніт, Шелдоніт, Нікель...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_coal)Буре вугілля, Гематит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_galena)Галеніт, Самородне срібло...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_hematite)Гематит, Лимоніт, Ґетит...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_hematite)Гематит, Лимоніт...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_nickel)Гранетит, Нікель, Кобальтит...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_graphite)Графіт, Буре вугілля, Діамант...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_tantalite)Гроссуляр, Спесартин...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_gold)Зелений сапфір, Боксит...$()$()",
+      "text": "$(li)$(l:tfg_ores/mars_vein_index#mars_almandine)Альмандин, Піроп, Сапфір...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_apatite)Апатит, Ортофосфат кальцію...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_neodynium)Бастнезит, Монацит, Неодим...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_beryllium)Берилій, Смарагд, Реальгар$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_bismuthinite)Бісмут, Гематит, Сірка, Гіпс$()$()$(li)$(l:tfg_ores/mars_vein_index#deep_mars_sheldonite)Борніт, Шелдоніт, Нікель...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_galena)Галеніт, Самородне срібло...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_hematite)Гематит, Лимоніт, Ґетит...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_hematite)Гематит, Лимоніт...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_nickel)Гранетит, Нікель, Кобальтит...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_graphite)Графіт, Кам'яне вугілля...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_tantalite)Гроссуляр, Спесартин...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_gold)Зелений сапфір, Боксит...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_salt)Кам'яна сіль, Галіт...$()$()",
       "type": "patchouli:text"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/mars_vein_index#mars_salt)Кам'яна сіль, Галіт...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_cassiterite)Каситерит, Олово, Селітра$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_quartzite)Кварцит, Барит, Азбест...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_lapis)Лазурит, Содаліт, Лазур...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_pitchblende)Настуран, Торій, Гематит$()$()$(li)$(l:tfg_ores/mars_vein_index#deep_mars_pitchblende)Настуран, Торій, Уранініт$()$()$(li)$(l:tfg_ores/mars_vein_index#deep_mars_chromite)Редстоун, Рубін, Хроміт$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_sulfur)Сірка, Пірит, Сфалерит...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_lubricant)Стеатит, Тальк...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_nickel_galena)Сфалерит, Нікель, Галеніт...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_stibnite)Тетраедрит, Самородна мідь...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_tetrahedrite)Тетраедрит, Самородна мідь...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_copper)Халькопірит, Самородна мідь...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_tungsten)Шеєліт, Вольфрамат, Літій...$()$()",
+      "text": "$(li)$(l:tfg_ores/mars_vein_index#mars_coal)Кам'яне вугілля, Гематит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_cassiterite)Каситерит, Олово, Селітра$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_quartzite)Кварцит, Барит, Азбест...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_lapis)Лазурит, Содаліт, Лазур...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_pitchblende)Настуран, Торій, Гематит$()$()$(li)$(l:tfg_ores/mars_vein_index#deep_mars_pitchblende)Настуран, Торій, Уранініт$()$()$(li)$(l:tfg_ores/mars_vein_index#deep_mars_chromite)Редстоун, Рубін, Хроміт$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_sulfur)Сірка, Пірит, Сфалерит...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_lubricant)Стеатит, Тальк...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_nickel_galena)Сфалерит, Нікель, Галеніт...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_stibnite)Тетраедрит, Самородна мідь...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_tetrahedrite)Тетраедрит, Самородна мідь...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_copper)Халькопірит, Самородна мідь...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_tungsten)Шеєліт, Вольфрамат, Літій...$()$()",
       "type": "patchouli:text"
     },
     {
@@ -571,58 +571,6 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Ймовірність появи жили на чанк. Менші нижні числа означають більшу поширеність.)Рідкість$(/t)$(): 1/215 чинки$(br)$(thing)$(t:Відсоток блоків у жилі, які є рудами замість каменю. Більший відсоток означає більше руди.)Щільність$(/t)$(): 60%$(br)$(thing)$(t:Форма жили.)Тип$(/t)$(): $(t:Переважно округлої форми) Скупчення жили$(/t)$(br)$(thing)$(t:Рівні Y, між якими може генеруватися жила.)Y$(/t)$(): 0 — 70$(br)$(thing)$(t:Середній діаметр жили.)Розмір$(/t)$(): 55$(br)$(thing)$(t:Якщо відстань між поверхнею та жильною рудою більша за це число, поверхневі індикатори не генеруються.)Максимальна глибина індикатора$(/t)$(): 10$(br)$(thing)Біоми$(): Будь-який$(br2)$(thing)Типи каменю$(): Аргіліт, Аргіліт, Базальт, Гранит, Дацит, Діорит, Доломіт, Конгломерат, Крейда, Трахіт, Червоний граніт",
-      "title": "Буре вугілля, Гематит",
-      "type": "patchouli:text",
-      "anchor": "mars_coal"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Буре вугілля",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/coal"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 70%$(br)$(thing)Використовується для$(): Паливо, Дистилят$(br)$(thing)Формула$(): C",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Гематит",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/hematite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 30%$(br)$(thing)Переплавляється у$(): Чавун$(br)$(thing)Формула$(): Fe₂O₃",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:empty",
-      "draw_filler": true,
-      "type": "patchouli:empty"
-    },
-    {
-      "Type": "patchouli:text",
       "text": "$(thing)$(t:Ймовірність появи жили на чанк. Менші нижні числа означають більшу поширеність.)Рідкість$(/t)$(): 1/215 чинки$(br)$(thing)$(t:Відсоток блоків у жилі, які є рудами замість каменю. Більший відсоток означає більше руди.)Щільність$(/t)$(): 40%$(br)$(thing)$(t:Форма жили.)Тип$(/t)$(): $(t:Переважно округлої форми) Скупчення жили$(/t)$(br)$(thing)$(t:Рівні Y, між якими може генеруватися жила.)Y$(/t)$(): 0 — 70$(br)$(thing)$(t:Середній діаметр жили.)Розмір$(/t)$(): 50$(br)$(thing)$(t:Якщо відстань між поверхнею та жильною рудою більша за це число, поверхневі індикатори не генеруються.)Максимальна глибина індикатора$(/t)$(): 40$(br)$(thing)Біоми$(): Будь-який$(br2)$(thing)Типи каменю$(): Аргіліт, Аргіліт, Базальт, Габро, Глинистий сланець, Гранит, Дацит, Крейда, Кременистий сланець, Червоний граніт",
       "title": "Галеніт, Самородне срібло...",
       "type": "patchouli:text",
@@ -992,7 +940,7 @@
     {
       "Type": "patchouli:text",
       "text": "$(thing)$(t:Ймовірність появи жили на чанк. Менші нижні числа означають більшу поширеність.)Рідкість$(/t)$(): 1/220 чинки$(br)$(thing)$(t:Відсоток блоків у жилі, які є рудами замість каменю. Більший відсоток означає більше руди.)Щільність$(/t)$(): 40%$(br)$(thing)$(t:Форма жили.)Тип$(/t)$(): $(t:Висока та вузька)Трубна жила$(/t)$(br)$(thing)$(t:Рівні Y, між якими може генеруватися жила.)Y$(/t)$(): 0 — 120$(br)$(thing)Висота$(): 60$(br)$(thing)Радіус$(): 9$(br)$(thing)$(t:Якщо відстань між поверхнею та жильною рудою більша за це число, поверхневі індикатори не генеруються.)Максимальна глибина індикатора$(/t)$(): 50$(br)$(thing)Біоми$(): Будь-який$(br2)$(thing)Типи каменю$(): Аргіліт, Габро, Гранит, Дацит, Діорит, Трахіт, Червоний граніт",
-      "title": "Графіт, Буре вугілля, Діамант...",
+      "title": "Графіт, Кам'яне вугілля...",
       "type": "patchouli:text",
       "anchor": "mars_graphite"
     },
@@ -1018,7 +966,7 @@
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Буре вугілля",
+      "name": "Кам'яне вугілля",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/coal"
@@ -1350,6 +1298,58 @@
       },
       "enable_visualize": false,
       "text": "$(thing)Відсоток$(): 15%$(br)$(thing)Джерело$(): Калію, Літію, Алюмінію, Фтору$(br)$(thing)Формула$(): KLi₃Al₄F₂O₁₀",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)$(t:Ймовірність появи жили на чанк. Менші нижні числа означають більшу поширеність.)Рідкість$(/t)$(): 1/215 чинки$(br)$(thing)$(t:Відсоток блоків у жилі, які є рудами замість каменю. Більший відсоток означає більше руди.)Щільність$(/t)$(): 60%$(br)$(thing)$(t:Форма жили.)Тип$(/t)$(): $(t:Переважно округлої форми) Скупчення жили$(/t)$(br)$(thing)$(t:Рівні Y, між якими може генеруватися жила.)Y$(/t)$(): 0 — 70$(br)$(thing)$(t:Середній діаметр жили.)Розмір$(/t)$(): 55$(br)$(thing)$(t:Якщо відстань між поверхнею та жильною рудою більша за це число, поверхневі індикатори не генеруються.)Максимальна глибина індикатора$(/t)$(): 10$(br)$(thing)Біоми$(): Будь-який$(br2)$(thing)Типи каменю$(): Аргіліт, Аргіліт, Базальт, Гранит, Дацит, Діорит, Доломіт, Конгломерат, Крейда, Трахіт, Червоний граніт",
+      "title": "Кам'яне вугілля, Гематит",
+      "type": "patchouli:text",
+      "anchor": "mars_coal"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Кам'яне вугілля",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/coal"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Відсоток$(): 70%$(br)$(thing)Використовується для$(): Паливо, Дистилят$(br)$(thing)Формула$(): C",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Гематит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/hematite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Відсоток$(): 30%$(br)$(thing)Переплавляється у$(): Чавун$(br)$(thing)Формула$(): Fe₂O₃",
       "type": "patchouli:multiblock"
     },
     {

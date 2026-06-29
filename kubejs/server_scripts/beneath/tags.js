@@ -40,6 +40,9 @@ const registerBeneathItemTags = (event) => {
 		event.add("minecraft:hanging_signs", `beneath:wood/hanging_sign/${metal}/crimson`)
 		event.add("minecraft:hanging_signs", `beneath:wood/hanging_sign/${metal}/warped`)
 	})
+
+	event.add("tfc:support_beams", "beneath:wood/support/crimson")
+	event.add("tfc:support_beams", "beneath:wood/support/warped")
 }
 
 const registerBeneathBlockTags = (event) => {

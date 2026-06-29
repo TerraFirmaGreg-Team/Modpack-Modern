@@ -1135,7 +1135,7 @@
 							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfg:unfinished_lamps)"
 						}
 					}
-					title: "Any #tfg:unfinished_lamps"
+					title: "{quests.tasktype.item.any} #tfg:unfinished_lamps"
 					type: "item"
 					weak_nbt_match: true
 				}
@@ -1148,7 +1148,7 @@
 							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:lamps)"
 						}
 					}
-					title: "Any #tfc:lamps"
+					title: "{quests.tasktype.item.any} #tfc:lamps"
 					type: "item"
 					weak_nbt_match: true
 				}
@@ -1371,7 +1371,7 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:glassworking_tools)"
 					}
 				}
-				title: "Any #tfc:glassworking_tools"
+				title: "{quests.tasktype.item.any} #tfc:glassworking_tools"
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.glassblowing_tools.title}"
@@ -1427,7 +1427,7 @@
 						}
 					}
 					optional_task: true
-					title: "Any #tfc:glass_basin_blocks"
+					title: "{quests.tasktype.item.any} #tfc:glass_basin_blocks"
 					type: "item"
 				}
 			]
@@ -2075,7 +2075,7 @@
 							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:tools/knives)"
 						}
 					}
-					title: "Any #forge:tools/knives"
+					title: "{quests.tasktype.item.any} #forge:tools/knives"
 					type: "item"
 				}
 				{
@@ -2102,7 +2102,7 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:electric_motors)"
 					}
 				}
-				title: "Any #gtceu:electric_motors"
+				title: "{quests.tasktype.item.any} #gtceu:electric_motors"
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.grapple_motor.title}"
@@ -2274,7 +2274,7 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:electric_pistons)"
 					}
 				}
-				title: "Any #gtceu:electric_pistons"
+				title: "{quests.tasktype.item.any} #gtceu:electric_pistons"
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.grapple_throw_speed.title}"
@@ -2316,14 +2316,15 @@
 			id: "4425519187BF28FE"
 			subtitle: "{quests.tfg_tips.digger_helmet.subtitle}"
 			tasks: [{
-				id: "6010870D09DAD473"
+				id: "25D97237B649797B"
 				item: {
 					Count: 1
-					id: "diggerhelmet:digger_helmet"
+					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						Damage: 0
+						"ftbfiltersystem:filter": "or(item(diggerhelmet:digger_helmet)item(diggerhelmet:copper_digger_helmet)item(diggerhelmet:bismuth_bronze_digger_helmet)item(diggerhelmet:black_bronze_digger_helmet)item(diggerhelmet:bronze_digger_helmet)item(diggerhelmet:wrought_iron_digger_helmet)item(diggerhelmet:steel_digger_helmet)item(diggerhelmet:black_steel_digger_helmet)item(diggerhelmet:blue_steel_digger_helmet)item(diggerhelmet:red_steel_digger_helmet))"
 					}
 				}
+				title: "{quests.tfg_tips.digger_helmet.task}"
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.digger_helmet.title}"
@@ -2345,7 +2346,7 @@
 							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(chalk:chalks)"
 						}
 					}
-					title: "Any #chalk:chalks"
+					title: "{quests.tasktype.item.any} #chalk:chalks"
 					type: "item"
 				}
 				{
