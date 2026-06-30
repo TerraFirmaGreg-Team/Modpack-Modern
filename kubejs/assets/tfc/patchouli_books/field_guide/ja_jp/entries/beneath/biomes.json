@@ -9,7 +9,7 @@
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Salt Caves",
+			"title": "塩の洞窟",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/salt_caves.png"
 			],
@@ -18,7 +18,7 @@
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Muggy Bog",
+			"title": "湿った沼地",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/muggy_bog.png"
 			],
@@ -54,7 +54,7 @@
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Geothermal Springs",
+			"title": "熱水泉",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/geothermal_springs.png"
 			],
@@ -63,7 +63,7 @@
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Thorny Grove",
+			"title": "茨の茂み",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/thorny_brambles.png"
 			],

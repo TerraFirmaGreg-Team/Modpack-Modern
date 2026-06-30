@@ -82,26 +82,26 @@
           "text": "Арктический, субарктический (равнины)"
         },
         {
-          "text": "Spotted"
+          "text": "Пятнистый"
         },
         {
-          "text": "Hot Desert, Subtropical, Tropical Savanna (Forests)"
+          "text": "Горячая пустыня, субтропики, тропическая саванна (леса)"
         },
         {
-          "text": "Striped"
+          "text": "Полосатый"
         },
         {
-          "text": "Hot Desert, Subtropical, Tropical Savanna (Plains)"
+          "text": "Горячая пустыня, субтропики, Тропическая Саванна (равнины)"
         },
         {
-          "text": "Woods"
+          "text": "Лесной"
         },
         {
-          "text": "Temperate (Forests)"
+          "text": "Умеренный (Леса)"
         }
       ],
       "text": "",
-      "title": "Wolf Variant Locations",
+      "title": "Окрас волков",
       "legend": [],
       "columns": 1,
       "first_column_width": 45,
@@ -133,23 +133,23 @@
     },
     {
       "type": "patchouli:text",
-      "text": "Foxes are a pet that eats any edible food. They will help you hunt land prey and small fish. When at home, they will kill pests without being asked to. Foxes do not always listen when being told to sit.$(br2)Variants: Red, Snow."
+      "text": "Лисы это питомцы которые едят любую съедобную еду. Они будут помогать в охоте на наземную добычу и мелкую рыбу. Когда лисы дома, они будут убивать всех вредителей. Лисы иногда не слушаются, когда им указывают сидеть.\n$(br2)Варианты: Оранжевый, снежный."
     },
     {
       "type": "patchouli:text",
-      "text": "Responsible pet owners must learn to control their pet. Luckily, this is easy. By pressing $(item)$(k:key.use)$() while holding $(item)$(k:key.sneak)$() with an empty hand, the $(thing)Pet Screen$() may be opened. This screen contains a number of commands that can be used to tell the pet what to do: $(thing)Relax$(), $(thing)We're Home$(), $(thing)Sit$(), $(thing)Follow Me$(), and $(thing)Hunt With Me$()."
+      "text": "Ответственные владельцы питомцев должны научится контролировать их.\nК счастью, это легко. Нажимая $(item)$(k:key.use)$() удерживая  $(item)$(k:key.sneak)$() откроется  $(thing)Меню питомца$(). Оно содержит набор команд которые можно указать питомцу:\n$(thing)Отдых$(), $(thing)Мы дома$(), $(thing)Сидеть$(), $(thing)Следуй за мной$(), и $(thing)Охота со мной$().\n"
     },
     {
       "type": "patchouli:text",
-      "text": "$(thing)Relax$() is the default state of pets, and commanding them returns them to this state. If a pet it at home, it will wander around the property, but not leave, and sleep once a day. If it is too far from home, it will walk aimlessly."
+      "text": "$(thing)Отдых$() Это стандартное состояние питомца, и эта команда вернёт его. Если питомец дома, то он будет ходить по территории по не будет покидать её, и будет спать раз в день. Если он далеко от дома, то питомец будет ходить бесцельно."
     },
     {
       "type": "patchouli:text",
-      "text": "$(thing)We're Home$() sets the home position of the pet. This tells the animal that it should, when relaxing, stay in that general area. Telling an animal that it is at home does not change the activity it is currently doing.$(br2)$(thing)Sit$() tells the pet to sit where it is. However, animals have minds of their own, and will eventually get bored and stand up!"
+      "text": "$(thing)Мы дома$() Команда устанавливает позицию дома для питомца. Это скажет питомцу не покидать территорию и отдыхать здесь.\nЭта команда не меняет нынешнюю активность. $(thing)Сидеть$() Указывает питомцу сесть. Но учти что со временем питомцу надоест и он может встать!"
     },
     {
       "type": "patchouli:text",
-      "text": "$(thing)Hunt With Me$() tells the pet to follow you, and engage in combat when you attack or are attacked. Pets will only attack animals that they are able to (for example, cats and foxes cannot help attack bears!).$(br2)$(thing)Follow Me$() is the same as Hunt With Me, but the pet will not risk itself in combat."
+      "text": "$(thing)Охота со мной$() Эта команда указывает питомцу следовать за тобой, и оборонять либо атаковать с владельцем. Питомцы могут атаковать только тех животных, которых они могут осилить (Например: коты и лисы не могут помочь с медведем!). $(br2)$(thing)Следуй за мной$() Животное будет следовать за тобой."
     }
   ],
   "read_by_default": true
