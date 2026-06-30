@@ -287,19 +287,19 @@ function registerTFGClothRecipes(event) {
 		'tfc:block/burlap'
 	)
 	
-	//light cloth to wool
+	// light cloth to wool
 	event.recipes.tfc.loom(
-		'4x minecraft:wool',
-		'2x tfg:linen_cloth',
-		2,
-		'minecraft:block/wool'
+		'8x minecraft:white_wool',
+		'4x tfg:linen_cloth',
+		4,
+		'minecraft:block/white_wool'
 	)
 	
 	event.recipes.tfc.loom(
-		'2x: minecraft:wool',
-		'1x tfc:silk_cloth',
-		1,
-		'minecraft:block/wool'
+		'8x minecraft:white_wool',
+		'4x tfc:silk_cloth',
+		4,
+		'minecraft:block/white_wool'
 	)
 
 	event.recipes.gtceu.assembler('tfg:assembler/linen_cloth')
