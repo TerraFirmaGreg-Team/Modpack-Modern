@@ -48,7 +48,7 @@
 			"predicate": {
 				"type": "minecraft:matching_block_tag",
 				"offset": [ 0, -1, 0 ],
-				"tag": "minecraft:nether_carver_replaceables"
+				"tag": "forge:sand"
 			}
 		}
 	]
