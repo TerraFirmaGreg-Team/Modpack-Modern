@@ -31,11 +31,11 @@
       "anchor": "asphalt_mix",
       "item": "tfg:asphalt_mix_bucket",
       "title": "Асфальтная смесь",
-      "text": "In a $(thing)Mixer$(), combine Tar Chunks and $(thing)Stone Dust$() to make $(thing)Asphalt Binder$(). Adding $(thing)Gilsonite Dust$() increases the binder yield.$(br)Then mix the binder with sand, stone dust, and $(thing)Crushed Base$() to create a fluid $(thing)Asphalt Mixture$().$(br)Store it in a fluid container for easy transport and pouring."
+      "text": "Смешай кусок смолы и $(thing)Каменную пыль$() в $(thing)Миксере$() для создания $(thing)Асфальтного наполнителя$(). Добавь $(thing)Пыль гильсонита$() для увеличения количества наполнителя. $(br)Затем смешай наполнитель с песком, каменной пылью и $(thing)Дроблённым основанием покрытия$() для получения жидкой $(thing)Асфальтной смеси$(). $(br)Храни её в резервуарах для быстрой транспортировки и заливки."
     },
     {
       "type": "patchouli:image",
-      "title": "Pouring Asphalt",
+      "title": "Заливаем асфальт",
       "images": [
         "tfg:textures/gui/field_guide/asphalt_roads/pouring.png"
       ],
@@ -43,7 +43,7 @@
     },
     {
       "type": "patchouli:text",
-      "text": "Right-click a placed $(thing)Base Course Block$() with a bucket of $(thing)Asphalt Mixture$() to pour it. The mixture spreads to adjacent base course blocks, converting up to 20 adjacent base course blocks into $(thing)Hot Asphalt$(). After a short time, hot asphalt cools into $(thing)Asphalt Road$().$(br2)Sneak+right-click on a $(thing)Base Course Block$() with the mixture to patch a small area, consuming less fluid."
+      "text": " Нажми ПКМ по блоку с $(thing)Основой покрытия$() держа резервуар с $(thing)Асфальтной смесью$() для заливки. Микстура заполнит ближайшие 20 блоков основы покрытия и превратит их в $(thing)Горячий асфальт$(). После небольшого ожидания, горячий асфальт остынет и затвердеет в $(thing)Асфальтную дорогу$(). \nШифт + ПКМ на основе покрытия, зальёт меньшую область и потратит меньше смеси."
     },
     {
       "type": "patchouli:spotlight",
