@@ -52,7 +52,6 @@ const registerTFGRecipes = (event) => {
 	registerTFGEquipmentRecipes(event)
 	registerTFGDyeRecipes(event)
 	registerTFGArtisanTableRecipes(event)
-	registerTFGFireRecipes(event)
 
 	registerTFGHVMaterialRecipes(event)
 	registerTFGMoSiBRecipes(event)
