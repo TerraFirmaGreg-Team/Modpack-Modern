@@ -38,6 +38,12 @@ function registerTFGPrimitiveItems(event) {
 	event.create('tfg:flint_arrow_head')
 	event.create('tfg:fletching')
 
+	event.create('tfg:tinderbox')
+		.tag('forge:tools/igniter')
+		.tag('tfc:starts_fires_with_durability')
+		.maxDamage(64)
+		.texture('tfg:item/tinderbox')
+	
 	event.create('tfg:armor_stand_arms')
 
 	event.create('tfg:copper_spindle')
