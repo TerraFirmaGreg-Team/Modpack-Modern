@@ -281,4 +281,16 @@ function registerTFGMiscellaneousRecipes(event) {
     .duration(20 * 30)
     .EUt(GTValues.VA[GTValues.MV])
 	
+	//Tinderbox
+	event.shaped('tfg:tinderbox', [
+		'ABC',
+		'DDD',
+		'   '
+	], {
+		A:'#forge:cloth',
+		B:'#forge:double_plates/wrought_iron',
+		C:'minecraft:flint',
+		D:'minecraft:charcoal'
+	}).id('tfg:shaped/tinderbox')
+	
 }
