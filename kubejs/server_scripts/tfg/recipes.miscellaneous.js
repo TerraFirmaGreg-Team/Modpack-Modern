@@ -288,7 +288,7 @@ function registerTFGMiscellaneousRecipes(event) {
 		'   '
 	], {
 		A:'#forge:cloth',
-		B:'#forge:double_plates/wrought_iron',
+		B:'gtceu:double_iron_plate',
 		C:'minecraft:flint',
 		D:'minecraft:charcoal'
 	}).id('tfg:shaped/tinderbox')
