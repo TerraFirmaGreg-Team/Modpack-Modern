@@ -56,6 +56,22 @@ function registerTFGPrimitiveItems(event) {
 	event.create('tfg:bronze_spindle_head')
 		.texture('tfg:item/bronze_spindle_head')
 
+	event.create('tfg:bismuth_bronze_spindle')
+		.tag('tfg:tools/spindles')
+		.tag('tfc:usable_on_tool_rack')
+		.maxDamage(160)
+		.texture('tfg:item/bismuth_bronze_spindle')
+	event.create('tfg:bismuth_bronze_spindle_head')
+		.texture('tfg:item/bismuth_bronze_spindle_head')
+
+	event.create('tfg:black_bronze_spindle')
+		.tag('tfg:tools/spindles')
+		.tag('tfc:usable_on_tool_rack')
+		.maxDamage(220)
+		.texture('tfg:item/black_bronze_spindle')
+	event.create('tfg:black_bronze_spindle_head')
+		.texture('tfg:item/black_bronze_spindle_head')
+
 	event.create('tfg:wrought_iron_spindle')
 		.tag('tfg:tools/spindles')
 		.tag('tfc:usable_on_tool_rack')

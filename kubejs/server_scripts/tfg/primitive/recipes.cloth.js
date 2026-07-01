@@ -180,6 +180,60 @@ function registerTFGClothRecipes(event) {
 		.tier(2)
 		.id('tfg:anvil/bronze_spindle_head')
 
+	event.shaped('tfg:bismuth_bronze_spindle', [
+		'A',
+		'B'
+	], {
+		A: 'tfg:bismuth_bronze_spindle_head',
+		B: '#forge:rods/wooden'
+	}).id('tfg:shaped/bismuth_bronze_spindle')
+
+	event.recipes.tfc.casting(
+		'tfg:bismuth_bronze_spindle_head',
+		'tfg:spindle_head_mold',
+		TFC.fluidStackIngredient('gtceu:bismuth_bronze', 72),
+		0.1
+	).id('tfg:casting/bismuth_bronze_spindle_head')
+
+	event.recipes.tfc.anvil(
+		'tfg:bismuth_bronze_spindle_head',
+		'gtceu:bismuth_bronze_rod',
+		[
+			'draw_last',
+			'upset_second_last',
+			'shrink_third_last'
+		]
+	).bonus(true)
+		.tier(2)
+		.id('tfg:anvil/bismuth_bronze_spindle_head')
+
+	event.shaped('tfg:black_bronze_spindle', [
+		'A',
+		'B'
+	], {
+		A: 'tfg:black_bronze_spindle_head',
+		B: '#forge:rods/wooden'
+	}).id('tfg:shaped/black_bronze_spindle')
+
+	event.recipes.tfc.casting(
+		'tfg:black_bronze_spindle_head',
+		'tfg:spindle_head_mold',
+		TFC.fluidStackIngredient('gtceu:black_bronze', 72),
+		0.1
+	).id('tfg:casting/black_bronze_spindle_head')
+
+	event.recipes.tfc.anvil(
+		'tfg:black_bronze_spindle_head',
+		'gtceu:black_bronze_rod',
+		[
+			'draw_last',
+			'upset_second_last',
+			'shrink_third_last'
+		]
+	).bonus(true)
+		.tier(2)
+		.id('tfg:anvil/black_bronze_spindle_head')
+	
 	event.shaped('tfg:wrought_iron_spindle', [
 		'A',
 		'B'
