@@ -153,6 +153,53 @@ function registerTFGClothRecipes(event) {
 	 .tier(1)
 	 .id('tfg:anvil/copper_spindle_head')
 
+	event.shaped('tfg:bronze_spindle', [
+		'A',
+		'B'
+	], {
+		A: 'tfg:bronze_spindle_head',
+		B: '#forge:rods/wooden'
+	}).id('tfg:shaped/bronze_spindle')
+
+	event.recipes.tfc.casting(
+		'tfg:bronze_spindle_head',
+		'tfg:spindle_head_mold',
+		TFC.fluidStackIngredient('gtceu:bronze', 72),
+		0.1
+	).id('tfg:casting/bronze_spindle_head')
+
+	event.recipes.tfc.anvil(
+		'tfg:bronze_spindle_head',
+		'gtceu:bronze_rod',
+		[
+			'draw_last',
+			'upset_second_last',
+			'shrink_third_last'
+		]
+	).bonus(true)
+		.tier(2)
+		.id('tfg:anvil/bronze_spindle_head')
+
+	event.shaped('tfg:wrought_iron_spindle', [
+		'A',
+		'B'
+	], {
+		A: 'tfg:wrought_iron_spindle_head',
+		B: '#forge:rods/wooden'
+	}).id('tfg:shaped/wrought_iron_spindle')
+
+	event.recipes.tfc.anvil(
+		'tfg:wrought_iron_spindle_head',
+		'gtceu:wrought_iron_rod',
+		[
+			'draw_last',
+			'upset_second_last',
+			'shrink_third_last'
+		]
+	).bonus(true)
+		.tier(3)
+		.id('tfg:anvil/wrought_iron_spindle_head')
+	
 	//#endregion
 
 

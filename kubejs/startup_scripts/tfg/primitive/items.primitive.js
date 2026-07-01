@@ -48,7 +48,22 @@ function registerTFGPrimitiveItems(event) {
 	event.create('tfg:copper_spindle_head')
 		.texture('tfg:item/copper_spindle_head')
 
+	event.create('tfg:bronze_spindle')
+		.tag('tfg:tools/spindles')
+		.tag('tfc:usable_on_tool_rack')
+		.maxDamage(192)
+		.texture('tfg:item/bronze_spindle')
+	event.create('tfg:bronze_spindle_head')
+		.texture('tfg:item/bronze_spindle_head')
 
+	event.create('tfg:wrought_iron_spindle')
+		.tag('tfg:tools/spindles')
+		.tag('tfc:usable_on_tool_rack')
+		.maxDamage(480)
+		.texture('tfg:item/wrought_iron_spindle')
+	event.create('tfg:wrought_iron_spindle_head')
+		.texture('tfg:item/wrought_iron_spindle_head')
+	
 	event.create('tfg:harvest_basket')
 		.parentModel('tfg:item/harvest_basket')
 		.maxDamage(256)
