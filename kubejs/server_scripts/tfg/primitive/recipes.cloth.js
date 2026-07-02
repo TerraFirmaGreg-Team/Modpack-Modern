@@ -134,9 +134,8 @@ function registerTFGClothRecipes(event) {
 	]
 	
 	const spindle_metals =[
-		spindle_metals_cast,
 		{metal: 'wrought_iron', tier:3}
-	]
+	].concat(spindle_metals_cast)
 	
 	spindle_metals.forEach(spindle => {
 		
