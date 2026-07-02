@@ -94,4 +94,14 @@ function registerTFGMiscAlloyMaterials(event) {
             GTMaterialFlags.GENERATE_ROD,
 			GTMaterialFlags.GENERATE_LONG_ROD,
             GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+	// Example Ingot - Hot High Carbon Tungstensteel
+	event.create('tfg:high_carbon_tungstensteel')
+		.ingot()
+		.color(0x717c98)
+		.secondaryColor(0x9aa4c7)
+		.iconSet('dull')
+		.blastTemp(3000, $BlastProperty.GasTier.MID, GTValues.VA[GTValues.EV], (20*50))
+		.components('1x iron', '1x tungsten')
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 }
