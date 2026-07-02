@@ -55,6 +55,7 @@
 		"#tfg:nether_veins",
 		"#tfg:nether_crops",
 		[
+			"tfg:nether/crop/palm",
 			"tfg:nether/surface/bone_patch",
 			"tfg:nether/surface/rotten_flesh_patch",
 			"tfg:nether/surface/dead_bush_patch",
