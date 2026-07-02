@@ -108,6 +108,7 @@ function registerTFGClothRecipes(event) {
 		.circuit(16)
 		.duration(100)
 		.EUt(4)
+	
 
 	// Wool Yarn
 	event.recipes.gtceu.macerator('macerate_wool')
@@ -278,12 +279,27 @@ function registerTFGClothRecipes(event) {
 		8,
 		'tfc:block/burlap'
 	)
-
+	
 	event.recipes.tfc.loom(
 		'1x tfc:burlap_cloth',
 		'16x tfg:flax_tow',
 		12,
 		'tfc:block/burlap'
+	)
+	
+	// light cloth to wool
+	event.recipes.tfc.loom(
+		'8x minecraft:white_wool',
+		'4x tfg:linen_cloth',
+		4,
+		'minecraft:block/white_wool'
+	)
+	
+	event.recipes.tfc.loom(
+		'8x minecraft:white_wool',
+		'4x tfc:silk_cloth',
+		4,
+		'minecraft:block/white_wool'
 	)
 
 	event.recipes.gtceu.assembler('tfg:assembler/linen_cloth')
