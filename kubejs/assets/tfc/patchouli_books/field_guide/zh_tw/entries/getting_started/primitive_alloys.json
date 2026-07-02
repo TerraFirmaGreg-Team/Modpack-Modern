@@ -39,7 +39,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "還有些不適合製作為工具的合金，像是 $(thing)黃銅$() 、 $(thing)玫瑰金$()和$(thing)純銀$()。$(br2)$(thing)黃銅$()主要用來製作各種小零件，如$(l:mechanics/mechanical_power)機械動力$()。$(br2)$(thing)玫瑰金$()和$(thing)純銀$()則是熔煉$(l:mechanics/steel#red_steel)紅鋼$()和$(l:mechanics/steel#blue_steel)藍鋼$()時的必要原料。",
+			"text": "還有些不適合製作為工具的合金，像是 $(thing)黃銅$() 、 $(thing)玫瑰金$()和$(thing)紋銀$()。$(br2)$(thing)黃銅$()主要用來製作各種小零件，如$(l:mechanics/mechanical_power)機械動力$()。$(br2)$(thing)玫瑰金$()和$(thing)紋銀$()則是熔煉$(l:mechanics/steel#red_steel)紅鋼$()和$(l:mechanics/steel#blue_steel)藍鋼$()時的必要原料。",
 			"title": "功能合金"
 		},
 		{

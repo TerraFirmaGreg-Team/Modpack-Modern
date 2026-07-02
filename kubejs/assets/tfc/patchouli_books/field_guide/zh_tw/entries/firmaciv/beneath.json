@@ -8,7 +8,7 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "在遙遠的火星上，找到緋紅木與詭異木來製作外觀相當酷炫的 $(l:firmaciv/watercraft)船$()。"
+            "text": "在遙遠的火星上，找到緋紅蕈柄與扭曲蕈柄來製作外觀相當酷炫的 $(l:firmaciv/watercraft)船$()。"
         },
         {
             "type": "patchouli:empty"
@@ -21,7 +21,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "$(li)緋紅木$()"
+            "text": "$(li)緋紅蕈柄$()"
         },
         {
             "type": "patchouli:spotlight",
@@ -31,7 +31,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "$(li)詭異木$()"
+            "text": "$(li)扭曲蕈柄$()"
         }
     ]
 }
