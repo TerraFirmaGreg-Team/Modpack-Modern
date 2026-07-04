@@ -18,13 +18,13 @@
 			"type": "patchouli:spotlight",
 			"title": "Alfacen",
 			"item": "species:alphacene_mushroom_block",
-			"text": "$(bold)Grzyby alfacenowe$()$(br)$(thing)Temperatura$(): -85°C i powyżej$(br)Pojawia się zarówno na wschodzie, jak i na zachodzie."
+			"text": "$(bold)Grzyby alfacenowe$()$(br)$(thing)Temperatura$(): -85°C i powyżej$(br)Pojawiają się zarówno na wschodzie, jak i na zachodzie."
 		},
 		{
 			"type": "patchouli:spotlight",
 			"title": "Szkarłat",
 			"item": "beneath:wood/log/crimson",
-			"text": "$(bold)Grzyby szkarłatne$()$(br)$(thing)Temperatura$(): -109 — -13°C$(br)Pojawia się częściej na wschodzie."
+			"text": "$(bold)Grzyby szkarłatne$()$(br)$(thing)Temperatura$(): -109 — -13°C$(br)Pojawiają się częściej na wschodzie."
 		},
 		{
 			"type": "patchouli:spotlight",
