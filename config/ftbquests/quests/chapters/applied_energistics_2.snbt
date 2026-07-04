@@ -555,7 +555,7 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:circuits/iv)"
 					}
 				}
-				title: "Any #gtceu:circuits/iv"
+				title: "{quests.tasktype.item.any} #gtceu:circuits/iv"
 				type: "item"
 			}]
 			title: "{quests.ae2.iv.title}"
@@ -663,7 +663,7 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:circuits/luv)"
 					}
 				}
-				title: "Any #gtceu:circuits/luv"
+				title: "{quests.tasktype.item.any} #gtceu:circuits/luv"
 				type: "item"
 			}]
 			title: "{quests.ae2.luv.title}"

@@ -2,6 +2,8 @@
 "use strict";
 
 function registerRealmRpgBiomeTags(event) {
+	event.add('realmrpg_skeletons:has_anywhere_skeletons', '#tfg:overworld_biomes');
+	event.add('realmrpg_skeletons:has_underwater_skeletons', '#tfg:overworld_biomes');
 	event.add('realmrpg_skeletons:has_webbed_skeletons', '#tfg:overworld_biomes');
 	event.add('realmrpg_skeletons:has_surface_skeletons', '#tfg:overworld_biomes');
 	event.add('realmrpg_skeletons:has_snow_skeletons', '#tfg:overworld_biomes');
@@ -9,19 +11,22 @@ function registerRealmRpgBiomeTags(event) {
 	event.add('realmrpg_skeletons:has_lava_overworld_skeletons', '#tfg:overworld_biomes');
 	event.add('realmrpg_skeletons:has_jumped_skeletons', '#tfg:overworld_biomes');
 	event.add('realmrpg_skeletons:has_desert_skeletons', '#tfg:overworld_biomes');
+	event.add('realmrpg_skeletons:has_sand_skeletons', '#tfg:overworld_biomes');
 	event.add('realmrpg_skeletons:has_deep_cave_skeletons', '#tfg:overworld_biomes');
 	event.add('realmrpg_skeletons:has_cave_skeletons', '#tfg:overworld_biomes');
 	event.add('realmrpg_skeletons:has_monument_skeletons', '#tfg:overworld_biomes'); // guardian one removed
-
+	
+	event.add('realmrpg_skeletons:has_anywhere_skeletons', '#tfg:nether_biomes');
 	event.add('realmrpg_skeletons:has_nether_skeletons', '#tfg:nether_biomes');
 	event.add('realmrpg_skeletons:has_mushroom_skeletons', '#tfg:nether_biomes');
 	event.add('realmrpg_skeletons:has_lava_nether_skeletons', '#tfg:nether_biomes');
 	event.add('realmrpg_skeletons:has_jumped_skeletons', '#tfg:nether_biomes');
 	event.add('realmrpg_skeletons:has_dripstone_skeletons', '#tfg:nether_biomes');
-	event.add('realmrpg_skeletons:has_desert_skeletons', '#tfg:nether_biomes');
 	event.add('realmrpg_skeletons:has_burnt_skeletons', '#tfg:nether_biomes');
 	event.add('realmrpg_skeletons:has_cave_skeletons', '#tfg:nether_biomes');
-
+	
+	event.add('realmrpg_skeletons:has_sand_skeletons', 'tfg:nether/tar_pools');
+	event.add('realmrpg_skeletons:has_webbed_skeletons', 'tfg:nether/webbed_lair');
 	event.add('realmrpg_skeletons:has_lush_cave_skeletons', 'tfg:nether/lush_hollow');
 
 	event.add('realmrpg_skeletons:has_end_skeletons', '#tfg:moon_biomes');
@@ -32,7 +37,8 @@ function registerRealmRpgBiomeTags(event) {
 	event.add('realmrpg_skeletons:has_crimson_skeletons', '#tfg:mars_biomes');
 	event.add('realmrpg_skeletons:has_snow_skeletons', '#tfg:mars_biomes');
 	event.add('realmrpg_skeletons:has_surface_skeletons', '#tfg:mars_biomes');
-
+	
+	event.add('realmrpg_skeletons:has_sand_skeletons', '#tfg:venus_biomes');
 	event.add('realmrpg_skeletons:has_burnt_skeletons', '#tfg:venus_biomes');
 
 	

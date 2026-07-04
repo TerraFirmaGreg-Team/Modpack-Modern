@@ -20,7 +20,7 @@
   "filter.ftbfiltersystem.mod.name": "模組",
   "filter.ftbfiltersystem.mod.tooltip": "根據物品所屬的模組進行匹配。\n原版物品位於 Minecraft 'Mod' 中。",
   "filter.ftbfiltersystem.nbt.name": "NBT",
-  "filter.ftbfiltersystem.nbt.tooltip": "根據物品上的 NBT 進行精確或模糊匹配。\n精確：NBT 必須完全匹配。\n模糊：僅檢查此處指定的 NBT 欄位以進行匹配。\n如果您有管理員權限，您可以點擊庫存中具有 NBT 的物品，將其當前的 NBT 標籤複製到文字編輯器中。",
+  "filter.ftbfiltersystem.nbt.tooltip": "根據物品上的 NBT 進行精確或模糊匹配。\n精確：NBT 必須完全匹配。\n模糊：僅檢查這裡指定的 NBT 欄位以進行匹配。\n如果您有管理員權限，您可以點擊庫存中具有 NBT 的物品，將其當前的 NBT 標籤複製到文字編輯器中。",
   "filter.ftbfiltersystem.not.name": "相反",
   "filter.ftbfiltersystem.not.tooltip": "複合篩選：在子篩選沒有匹配時生效。最多添加一個子篩選。",
   "filter.ftbfiltersystem.only_one.name": "唯一",

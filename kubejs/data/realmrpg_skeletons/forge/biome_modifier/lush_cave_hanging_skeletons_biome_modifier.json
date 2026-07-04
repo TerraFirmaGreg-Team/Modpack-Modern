@@ -1,0 +1,6 @@
+{
+	"type": "forge:add_features",
+	"biomes": "#realmrpg_skeletons:has_lush_cave_skeletons",
+	"features": "realmrpg_skeletons:lush_cave_hanging_skeletons",
+	"step": "top_layer_modification"
+}

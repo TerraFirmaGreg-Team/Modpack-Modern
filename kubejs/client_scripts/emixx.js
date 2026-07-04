@@ -174,6 +174,7 @@ const registerSingleGroups = (event) => {
         '#tfc:colored_raw_alabaster',
         '#tfc:colored_bricks_alabaster',
         '#tfc:colored_polished_alabaster',
+        "#tfc:support_beams",
 
         // Stone-related
         '#tfc:rock/hardened',
@@ -300,10 +301,6 @@ const registerMultiGroups = (event) => {
             '#forge:normal_restrictive_pipes',
             '#forge:large_restrictive_pipes',
             '#forge:huge_restrictive_pipes'
-        ]},
-        { group_name: 'support_beams', tags: [
-            "#tfc:support_beams",
-            "#beneath:support_beams"
         ]},
         { group_name: 'scribing_tables', tags: [
             '#tfc:scribing_tables',

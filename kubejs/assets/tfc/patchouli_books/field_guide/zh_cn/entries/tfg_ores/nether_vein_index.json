@@ -14,7 +14,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/nether_vein_index#beneath_quartz)下界石英, 石英, 重晶石, 沸石$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_gold_rich)原生金, 磁铁矿, 蓝石$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_gold)原生金, 黄铁矿, 辉铜矿$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_copper_native)原生铜, 孔雀石$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_salt)岩盐, 钾石盐, 天然碱$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_lead_silver)方铅矿, 原生银, 铅$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_coal_anthracite)无烟煤, 石墨$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_aluminium)明矾石, 沸石, 重晶石$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_coal_bituminous)烟煤, 黄铁矿$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_graphite)石墨, 烟煤, 钻石$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_sulfur)硫, 黄铁矿, 辉锑矿$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_iron_magnetite)磁铁矿, 钒磁铁矿, 原生金$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_phosphate)磷酸三钙, 磷灰石, 黄铁矿$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_redstone)红石, 朱砂, 下界石英, 红宝石$()$()",
+      "text": "$(li)$(l:tfg_ores/nether_vein_index#beneath_gold_rich)原生金, 磁铁矿, 蓝石$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_gold)原生金, 黄铁矿, 辉铜矿$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_copper_native)原生铜, 孔雀石$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_salt)岩盐, 钾石盐, 天然碱$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_lead_silver)方铅矿, 原生银, 铅$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_coal_anthracite)无烟煤, 石墨$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_aluminium)明矾石, 沸石, 重晶石$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_coal_bituminous)烟煤, 黄铁矿$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_quartz)烟熏石英, 石英, 重晶石, 沸石$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_graphite)石墨, 烟煤, 钻石$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_sulfur)硫, 黄铁矿, 辉锑矿$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_iron_magnetite)磁铁矿, 钒磁铁矿, 原生金$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_phosphate)磷酸三钙, 磷灰石, 黄铁矿$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_redstone)红石, 朱砂, 烟熏石英, 红宝石$()$()",
       "type": "patchouli:text"
     },
     {
@@ -26,98 +26,6 @@
       "Type": "patchouli:text",
       "text": "$(li)$(l:tfg_ores/nether_vein_index#beneath_copper_tetrahedrite)黝铜矿, 辉锑矿, 原生银$()$()",
       "type": "patchouli:text"
-    },
-    {
-      "Type": "patchouli:text",
-      "text": "$(thing)$(t:每个区块生成矿脉的几率。下面的数字越小就越常见。)稀有度$(/t)$(): 1/20 区块$(br)$(thing)$(t:矿脉中矿石方块所占的百分比。百分比越高，矿石越多。)密度$(/t)$(): 22%$(br)$(thing)$(t:矿脉的形状。)类型$(/t)$(): $(t:高而狭窄)管状矿脉$(/t)$(br)$(thing)$(t:矿脉可能生成的 Y 轴范围。)Y$(/t)$(): 80 — 140$(br)$(thing)高度$(): 60$(br)$(thing)半径$(): 15$(br)$(thing)生物群系$(): $(t:荆棘林地)荆棘灌丛$(/t)$(br2)$(thing)岩石类型$(): 凝灰岩, 混合岩, 片岩, 片麻岩, 石灰华, 花岗岩, 辉长岩, 闪长岩",
-      "title": "下界石英, 石英, 重晶石, 沸石",
-      "type": "patchouli:text",
-      "anchor": "beneath_quartz"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "下界石英",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/nether_quartz"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)百分比$(): 44%$(br)$(thing)用于$(): 应用能源2$(br)$(thing)化学式$(): SiO₂",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "石英",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/quartzite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)百分比$(): 27%$(br)$(thing)用于$(): LV组件$(br)$(thing)化学式$(): SiO₂",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "重晶石",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/barite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)百分比$(): 16%$(br)$(thing)来源$(): 钡$(br)$(thing)化学式$(): BaSO₂",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "沸石",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/zeolite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)百分比$(): 11%$(br)$(thing)来源$(): 铝, 氧$(br)$(thing)化学式$(): NaCa₄Si₂₇Al₉(H₂O)₂₈O₇₂",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:empty",
-      "draw_filler": true,
-      "type": "patchouli:empty"
     },
     {
       "Type": "patchouli:text",
@@ -612,6 +520,98 @@
     },
     {
       "Type": "patchouli:text",
+      "text": "$(thing)$(t:每个区块生成矿脉的几率。下面的数字越小就越常见。)稀有度$(/t)$(): 1/20 区块$(br)$(thing)$(t:矿脉中矿石方块所占的百分比。百分比越高，矿石越多。)密度$(/t)$(): 22%$(br)$(thing)$(t:矿脉的形状。)类型$(/t)$(): $(t:高而狭窄)管状矿脉$(/t)$(br)$(thing)$(t:矿脉可能生成的 Y 轴范围。)Y$(/t)$(): 80 — 140$(br)$(thing)高度$(): 60$(br)$(thing)半径$(): 15$(br)$(thing)生物群系$(): $(t:荆棘林地)荆棘灌丛$(/t)$(br2)$(thing)岩石类型$(): 凝灰岩, 混合岩, 片岩, 片麻岩, 石灰华, 花岗岩, 辉长岩, 闪长岩",
+      "title": "烟熏石英, 石英, 重晶石, 沸石",
+      "type": "patchouli:text",
+      "anchor": "beneath_quartz"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "烟熏石英",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/nether_quartz"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)百分比$(): 44%$(br)$(thing)用于$(): 应用能源2$(br)$(thing)化学式$(): SiO₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "石英",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/quartzite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)百分比$(): 27%$(br)$(thing)用于$(): LV组件$(br)$(thing)化学式$(): SiO₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "重晶石",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/barite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)百分比$(): 16%$(br)$(thing)来源$(): 钡$(br)$(thing)化学式$(): BaSO₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "沸石",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/zeolite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)百分比$(): 11%$(br)$(thing)来源$(): 铝, 氧$(br)$(thing)化学式$(): NaCa₄Si₂₇Al₉(H₂O)₂₈O₇₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
+    },
+    {
+      "Type": "patchouli:text",
       "text": "$(thing)$(t:每个区块生成矿脉的几率。下面的数字越小就越常见。)稀有度$(/t)$(): 1/10 区块$(br)$(thing)$(t:矿脉中矿石方块所占的百分比。百分比越高，矿石越多。)密度$(/t)$(): 22%$(br)$(thing)$(t:矿脉的形状。)类型$(/t)$(): $(t:宽而扁平)盘状矿脉$(/t)$(br)$(thing)$(t:矿脉可能生成的 Y 轴范围。)Y$(/t)$(): 0 — 80$(br)$(thing)$(t:矿脉的平均直径)尺寸$(/t)$(): 50$(br)$(thing)高度$(): 10$(br)$(thing)生物群系$(): $(t:玄武岩三角洲)玄武岩三角洲$(/t)$(br2)$(thing)岩石类型$(): 混合岩, 玄武岩, 辉石岩",
       "title": "石墨, 烟煤, 钻石",
       "type": "patchouli:text",
@@ -881,7 +881,7 @@
     {
       "Type": "patchouli:text",
       "text": "$(thing)$(t:每个区块生成矿脉的几率。下面的数字越小就越常见。)稀有度$(/t)$(): 1/10 区块$(br)$(thing)$(t:矿脉中矿石方块所占的百分比。百分比越高，矿石越多。)密度$(/t)$(): 20%$(br)$(thing)$(t:矿脉的形状。)类型$(/t)$(): $(t:高而狭窄)管状矿脉$(/t)$(br)$(thing)$(t:矿脉可能生成的 Y 轴范围。)Y$(/t)$(): 0 — 80$(br)$(thing)高度$(): 60$(br)$(thing)半径$(): 12$(br)$(thing)生物群系$(): $(t:玄武岩三角洲)玄武岩三角洲$(/t)$(br2)$(thing)岩石类型$(): 混合岩, 玄武岩, 辉石岩",
-      "title": "红石, 朱砂, 下界石英, 红宝石",
+      "title": "红石, 朱砂, 烟熏石英, 红宝石",
       "type": "patchouli:text",
       "anchor": "beneath_redstone"
     },
@@ -927,7 +927,7 @@
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "下界石英",
+      "name": "烟熏石英",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/nether_quartz"

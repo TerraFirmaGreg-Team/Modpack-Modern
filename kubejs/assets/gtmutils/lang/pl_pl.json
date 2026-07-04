@@ -54,6 +54,7 @@
   "config.gtmutils.option.tagStockingEnabled": "tagStockingEnabled",
   "config.jade.plugin_gtmutils.enlarged_me_stocking_bus_info": "Informacje o powiększonej magistrali ME",
   "gtceu.placeholder_info.watfrequency.1": "Użycie:",
+  "gtceu.placeholder_info.watfrequency.2": "  {watfrequency} -> Obecna częstotliwość: (wstaw tutaj częstotliwość)",
   "gtmutils.gui.pterb.wireless_configurator.title": "Częstotliwość",
   "gtmutils.pterb.current_frequency": "Aktualna częstotliwość: %s",
   "item.gtceu.tool.ev_buzzsaw": "Piła tarczowa EN (%s)",

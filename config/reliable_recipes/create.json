@@ -2,6 +2,7 @@
 	{
 		"action": "remove_recipe",
 		"type": "minecraft:stonecutting",
+		"mod": "create",
 		"input": [
 			"create:rose_quartz",
 			"minecraft:iron_ingot"
@@ -10,6 +11,7 @@
 	{
 		"action": "remove_recipe",
 		"type": "minecraft:stonecutting",
+		"mod": "create",
 		"output": [
 			"create:copycat_step",
 			"create:copycat_panel"

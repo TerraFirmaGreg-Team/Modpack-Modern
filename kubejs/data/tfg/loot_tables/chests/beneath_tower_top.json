@@ -686,6 +686,21 @@
 					"type": "minecraft:item",
 					"name": "tfc:metal/lamp/black_bronze",
 					"weight": 50
+				},
+				{
+					"type": "minecraft:item",
+					"name": "sns:straw_basket",
+					"weight": 20
+				},
+				{
+					"type": "minecraft:item",
+					"name": "sns:leather_sack",
+					"weight": 10
+				},
+				{
+					"type": "minecraft:item",
+					"name": "sns:burlap_sack",
+					"weight": 15
 				}
 			],
 			"rolls": {

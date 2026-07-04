@@ -1254,7 +1254,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/10 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 22%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 80 — 140$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 25$(br)$(thing)Biomes$(): $(t:Thorny Grove)Thorny Brambles$(/t)$(br2)$(thing)Stone Types$(): Diorito, Gabro, Gnaisse, Granito, Migmatite, Travertine, Tufo, Xisto",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/10 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 22%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 80 — 140$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 25$(br)$(thing)Biomes$(): $(t:Thorny Grove)Thorny Grove$(/t)$(br2)$(thing)Stone Types$(): Diorito, Gabro, Gnaisse, Granito, Migmatite, Travertine, Tufo, Xisto",
       "title": "Pentlandita, Garnierita...",
       "type": "patchouli:text",
       "anchor": "beneath_nickel"
@@ -1388,7 +1388,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/10 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 22%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Tall and narrow)Pipe Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 80 — 140$(br)$(thing)Altura$(): 60$(br)$(thing)Raio$(): 8$(br)$(thing)Biomes$(): $(t:Thorny Grove)Thorny Brambles$(/t)$(br2)$(thing)Stone Types$(): Diorito, Gabro, Gnaisse, Granito, Migmatite, Travertine, Tufo, Xisto",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/10 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 22%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Tall and narrow)Pipe Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 80 — 140$(br)$(thing)Altura$(): 60$(br)$(thing)Raio$(): 8$(br)$(thing)Biomes$(): $(t:Thorny Grove)Thorny Grove$(/t)$(br2)$(thing)Stone Types$(): Diorito, Gabro, Gnaisse, Granito, Migmatite, Travertine, Tufo, Xisto",
       "title": "Pirolusita, Grossulária...",
       "type": "patchouli:text",
       "anchor": "beneath_manganese"
@@ -1455,7 +1455,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/20 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 22%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Tall and narrow)Pipe Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 80 — 140$(br)$(thing)Altura$(): 60$(br)$(thing)Raio$(): 15$(br)$(thing)Biomes$(): $(t:Thorny Grove)Thorny Brambles$(/t)$(br2)$(thing)Stone Types$(): Diorito, Gabro, Gnaisse, Granito, Migmatite, Travertine, Tufo, Xisto",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/20 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 22%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Tall and narrow)Pipe Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 80 — 140$(br)$(thing)Altura$(): 60$(br)$(thing)Raio$(): 15$(br)$(thing)Biomes$(): $(t:Thorny Grove)Thorny Grove$(/t)$(br2)$(thing)Stone Types$(): Diorito, Gabro, Gnaisse, Granito, Migmatite, Travertine, Tufo, Xisto",
       "title": "Quartzo do Nether, Quartzito...",
       "type": "patchouli:text",
       "anchor": "beneath_quartz"

@@ -1,0 +1,6 @@
+{
+	"type": "forge:add_features",
+	"biomes": "#realmrpg_skeletons:has_lava_overworld_skeletons",
+	"features": "realmrpg_skeletons:lava_overworld_skeletons",
+	"step": "vegetal_decoration"
+}

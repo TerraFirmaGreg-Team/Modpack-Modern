@@ -324,7 +324,7 @@
 						}
 					}
 					optional_task: true
-					title: "Any #tfchotornot:insulating"
+					title: "{quests.tasktype.item.any} #tfchotornot:insulating"
 					type: "item"
 				}
 			]

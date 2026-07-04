@@ -86,7 +86,7 @@ const registerCreatedecoRecipes = (event) => {
 
 		// Create the shaped recipe
 
-		event.shaped(output, [
+		return event.shaped(output, [
 			'XN ',
 			'DTX',
 			'XP '
@@ -99,7 +99,8 @@ const registerCreatedecoRecipes = (event) => {
 	lampTypes.forEach(lampType => {
 		lampColors.forEach(lampColor => {
 			let output = `2x createdeco:${lampColor}_${lampType}_lamp`; // Define the output item ID
-			lampRecipe(output, lampType, lampColor); // Call the lampRecipe function for each combination
+			lampRecipe(output, lampType, lampColor) // Call the lampRecipe function for each combination
+				.id(`tfg:shaped/cdeco_${lampColor}_${lampType}_lamp`)
 		});
 	});
 	//#endregion
@@ -118,7 +119,7 @@ const registerCreatedecoRecipes = (event) => {
 				B: `minecraft:brick`,
 				D: dye,
 				M: `tfc:mortar`
-			});
+			}).id(`tfg:shaped/cdeco_${type}_bricks`);
 
 			event.recipes.gtceu.assembler(`createdeco:${type}_bricks`)
 				.itemInputs('5x minecraft:brick', dye)

@@ -14,17 +14,17 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#sand_basaltic)...$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sapphire)Альмандин, Піроп, Сапфір...$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_apatite)Апатит, Ортофосфат кальцію... (Глибокий)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_monazite)Бастнезит, Монацит, Неодим$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_magnetite_olivine)Бентоніт, Магнезит, Олівін...$()$()$(li)$(l:tfg_ores/earth_vein_index#high_bismuth_mountain)Бісмут$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_bismuth)Бісмут (Поверхневий)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_bismuth)Бісмут, Самородне срібло...$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_bauxite)Боксит, Ільменіт$()$()$(li)$(l:tfg_ores/earth_vein_index#high_coal)Буре вугілля (Високий)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_coal)Буре вугілля (Поверхневий)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_coal)Буре вугілля, Буре вугілля$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_molybdenum)Вульфеніт, Молібденіт...$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_galena)Галеніт, Самородне срібло$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#sand_basaltic)...$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sapphire)Альмандин, Піроп, Сапфір...$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_apatite)Апатит, Ортофосфат кальцію... (Глибокий)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_monazite)Бастнезит, Монацит, Неодим$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_magnetite_olivine)Бентоніт, Магнезит, Олівін...$()$()$(li)$(l:tfg_ores/earth_vein_index#high_bismuth_mountain)Бісмут$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_bismuth)Бісмут (Поверхневий)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_bismuth)Бісмут, Самородне срібло...$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_bauxite)Боксит, Ільменіт$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_coal)Буре вугілля (Поверхневий)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_coal)Буре вугілля, Кам'яне вугілля$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_molybdenum)Вульфеніт, Молібденіт...$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_galena)Галеніт, Самородне срібло$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_galena)Галеніт, Самородне срібло... (Глибокий)$()$()",
       "type": "patchouli:text"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#deep_galena)Галеніт, Самородне срібло... (Глибокий)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_sylvite_salt)Галіт, Кам'яна сіль (Поверхневий)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_salt)Галіт, Кам'яна сіль, Бура$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_hematite)Гематит (Поверхневий)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_iron)Гематит, Лимоніт$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_banded_iron)Ґетит, Лимоніт, Гематит$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_iron)Ґетит, Лимоніт, Гематит...$()$()$(li)$(l:tfg_ores/earth_vein_index#high_gypsum)Гіпс (Високий)$()$()$(li)$(l:tfg_ores/earth_vein_index#sand_garnet)Глауконітове скло...$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_nickel)Гранетит (Поверхневий)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_garnierite)Гранетит, Нікель, Кобальтит$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_nickel)Гранетит, Нікель, Кобальтит...$()$()$(li)$(l:tfg_ores/earth_vein_index#sand_granitic)Гранітний мінеральний пісок...$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_graphite_volcanic)Графіт, Буре вугілля, Діамант (Вулканічний)$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#surface_sylvite_salt)Галіт, Кам'яна сіль (Поверхневий)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_salt)Галіт, Кам'яна сіль, Бура$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_hematite)Гематит (Поверхневий)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_iron)Гематит, Лимоніт$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_banded_iron)Ґетит, Лимоніт, Гематит$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_iron)Ґетит, Лимоніт, Гематит...$()$()$(li)$(l:tfg_ores/earth_vein_index#high_gypsum)Гіпс (Високий)$()$()$(li)$(l:tfg_ores/earth_vein_index#sand_garnet)Глауконітове скло...$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_nickel)Гранетит (Поверхневий)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_garnierite)Гранетит, Нікель, Кобальтит$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_nickel)Гранетит, Нікель, Кобальтит...$()$()$(li)$(l:tfg_ores/earth_vein_index#sand_granitic)Гранітний мінеральний пісок...$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_graphite_volcanic)Графіт, Кам'яне вугілля... (Вулканічний)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_graphite)Графіт, Кам'яне вугілля... (Глибокий)$()$()",
       "type": "patchouli:text"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#deep_graphite)Графіт, Буре вугілля, Діамант (Глибокий)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_manganese)Гроссуляр, Піролюзит...$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_tantalite)Гроссуляр, Спесартин...$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_asbestos_dry)Каситерит, Азбест$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_asbestos)Каситерит, Азбест, Діатоміт$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_tin)Каситерит, Олово (Глибокий)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_quartz)Кварцит, Барит$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_quartz_borax)Кварцит, Бура$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_kyanite)Кіаніт, Слюда, Поллуцит$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_cobaltite)Кобальтит (Поверхневий)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_lazurite_calcite)Лазурит, Содаліт, Лазур...$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_limonite)Лимоніт (Поверхневий)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_magnetite)Магнетит (Поверхневий)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_magnetite)Магнетит, Ванадієвий магнетит...$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#deep_manganese)Гроссуляр, Піролюзит...$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_tantalite)Гроссуляр, Спесартин...$()$()$(li)$(l:tfg_ores/earth_vein_index#high_coal)Кам'яне вугілля (Високий)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_asbestos_dry)Каситерит, Азбест$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_asbestos)Каситерит, Азбест, Діатоміт$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_tin)Каситерит, Олово (Глибокий)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_quartz)Кварцит, Барит$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_quartz_borax)Кварцит, Бура$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_kyanite)Кіаніт, Слюда, Поллуцит$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_cobaltite)Кобальтит (Поверхневий)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_lazurite_calcite)Лазурит, Содаліт, Лазур...$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_limonite)Лимоніт (Поверхневий)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_magnetite)Магнетит (Поверхневий)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_magnetite)Магнетит, Ванадієвий магнетит...$()$()",
       "type": "patchouli:text"
     },
     {
@@ -632,33 +632,6 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Ймовірність появи жили на чанк. Менші нижні числа означають більшу поширеність.)Рідкість$(/t)$(): 1/30 чинки$(br)$(thing)$(t:Відсоток блоків у жилі, які є рудами замість каменю. Більший відсоток означає більше руди.)Щільність$(/t)$(): 40%$(br)$(thing)$(t:Форма жили.)Тип$(/t)$(): $(t:Переважно округлої форми) Скупчення жили$(/t)$(br)$(thing)$(t:Рівні Y, між якими може генеруватися жила.)Y$(/t)$(): 90 — 160$(br)$(thing)$(t:Середній діаметр жили.)Розмір$(/t)$(): 30$(br)$(thing)$(t:Якщо відстань між поверхнею та жильною рудою більша за це число, поверхневі індикатори не генеруються.)Максимальна глибина індикатора$(/t)$(): 60$(br)$(thing)Біоми$(): Будь-який$(br2)$(thing)Типи каменю$(): Андезит, Аргіліт, Аспідний сланець, Базальт, Вапняк, Габро, Глинистий сланець, Гнейс, Гранит, Дацит, Діорит, Доломіт, Кварцит, Конгломерат, Крейда, Кременистий сланець, Мармур, Ріоліт, Туф, Філіт, Шиферний сланець",
-      "title": "Буре вугілля (Високий)",
-      "type": "patchouli:text",
-      "anchor": "high_coal"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Буре вугілля",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/coal"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 100%$(br)$(thing)Використовується для$(): Паливо, Дистилят$(br)$(thing)Формула$(): C",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:text",
       "text": "$(thing)$(t:Ймовірність появи жили на чанк. Менші нижні числа означають більшу поширеність.)Рідкість$(/t)$(): 1/90 чинки$(br)$(thing)$(t:Відсоток блоків у жилі, які є рудами замість каменю. Більший відсоток означає більше руди.)Щільність$(/t)$(): 45%$(br)$(thing)$(t:Форма жили.)Тип$(/t)$(): $(t:Переважно округлої форми) Скупчення жили$(/t)$(br)$(thing)$(t:Глибина жили відносно рівня Y поверхні.)Глибина поверхні$(/t)$(): -20 — 1$(br)$(thing)$(t:Середній діаметр жили.)Розмір$(/t)$(): 15$(br)$(thing)$(t:Якщо відстань між поверхнею та жильною рудою більша за це число, поверхневі індикатори не генеруються.)Максимальна глибина індикатора$(/t)$(): 35$(br)$(thing)Біоми$(): $(t:Рівнини, Пагорби, Низини, Пагорбисті рівнини, Височини, Безплідні землі, Плато, Широке плато, Озерне плато, Скелясте плато, Баштові карстові рівнини, Каньйони вежового карсту, Баштові карстові гори, Високогір’я баштового карсту, Плато Буррену, Рівнини Буррену, Гори кам'яного лісу, Високогір'я кам'яного лісу, Плато кам'яного лісу, Карстові рівнини, Карстові пагорби, Хвилясті пагорби з долинами, Карстові височини, Долинне плато, Сенотні рівнини, Сенотні пагорби, Сенотні хвилясті пагорби, Сенотні височини, Сенотне плато, Екстремальне долинне плато)Рівнини, плато та пагорби$(/t)$(br2)$(thing)Типи каменю$(): Аргіліт, Вапняк, Глинистий сланець, Доломіт, Конгломерат, Крейда, Кременистий сланець",
       "title": "Буре вугілля (Поверхневий)",
       "type": "patchouli:text",
@@ -687,7 +660,7 @@
     {
       "Type": "patchouli:text",
       "text": "$(thing)$(t:Ймовірність появи жили на чанк. Менші нижні числа означають більшу поширеність.)Рідкість$(/t)$(): 1/230 чинки$(br)$(thing)$(t:Відсоток блоків у жилі, які є рудами замість каменю. Більший відсоток означає більше руди.)Щільність$(/t)$(): 28%$(br)$(thing)$(t:Форма жили.)Тип$(/t)$(): $(t:Широка та пласка)Дискова жила$(/t)$(br)$(thing)$(t:Рівні Y, між якими може генеруватися жила.)Y$(/t)$(): 10 — 70$(br)$(thing)$(t:Середній діаметр жили.)Розмір$(/t)$(): 34$(br)$(thing)Висота$(): 10$(br)$(thing)$(t:Якщо відстань між поверхнею та жильною рудою більша за це число, поверхневі індикатори не генеруються.)Максимальна глибина індикатора$(/t)$(): 70$(br)$(thing)Біоми$(): Будь-який$(br2)$(thing)Типи каменю$(): Аспідний сланець, Гнейс, Кварцит, Мармур, Туф, Філіт, Шиферний сланець",
-      "title": "Буре вугілля, Буре вугілля",
+      "title": "Буре вугілля, Кам'яне вугілля",
       "type": "patchouli:text",
       "anchor": "normal_coal"
     },
@@ -713,7 +686,7 @@
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Буре вугілля",
+      "name": "Кам'яне вугілля",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/coal"
@@ -1629,7 +1602,7 @@
     {
       "Type": "patchouli:text",
       "text": "$(thing)$(t:Ймовірність появи жили на чанк. Менші нижні числа означають більшу поширеність.)Рідкість$(/t)$(): 1/140 чинки$(br)$(thing)$(t:Відсоток блоків у жилі, які є рудами замість каменю. Більший відсоток означає більше руди.)Щільність$(/t)$(): 17%$(br)$(thing)$(t:Форма жили.)Тип$(/t)$(): $(t:Висока та вузька)Трубна жила$(/t)$(br)$(thing)$(t:Рівні Y, між якими може генеруватися жила.)Y$(/t)$(): -50 — 0$(br)$(thing)Висота$(): 150$(br)$(thing)Радіус$(): 18$(br)$(thing)Біоми$(): $(t:Каньйони, Вулканічні гори, Вулканічні океанічні гори, Активні щитові вулкани, Сплячі щитові вулкани, Згаслі щитові вулкани, Давні щитові вулкани, Затонулі щитові вулкани, Узбережжя щитових вулканів, Узбережжя давніх щитових вулканів, Льодовиковий щитовий вулкан, Льодовикові туї, Край льодовикових туй, Зледенілий щитовий вулкан, Туя)Вулканічний$(/t)$(br2)$(thing)Типи каменю$(): Габро, Гранит, Діорит",
-      "title": "Графіт, Буре вугілля, Діамант (Вулканічний)",
+      "title": "Графіт, Кам'яне вугілля... (Вулканічний)",
       "type": "patchouli:text",
       "anchor": "deep_graphite_volcanic"
     },
@@ -1655,7 +1628,7 @@
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Буре вугілля",
+      "name": "Кам'яне вугілля",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/coal"
@@ -1696,7 +1669,7 @@
     {
       "Type": "patchouli:text",
       "text": "$(thing)$(t:Ймовірність появи жили на чанк. Менші нижні числа означають більшу поширеність.)Рідкість$(/t)$(): 1/80 чинки$(br)$(thing)$(t:Відсоток блоків у жилі, які є рудами замість каменю. Більший відсоток означає більше руди.)Щільність$(/t)$(): 40%$(br)$(thing)$(t:Форма жили.)Тип$(/t)$(): $(t:Широка та пласка)Дискова жила$(/t)$(br)$(thing)$(t:Рівні Y, між якими може генеруватися жила.)Y$(/t)$(): -64 — -16$(br)$(thing)$(t:Середній діаметр жили.)Розмір$(/t)$(): 16$(br)$(thing)Висота$(): 6$(br)$(thing)$(t:Якщо відстань між поверхнею та жильною рудою більша за це число, поверхневі індикатори не генеруються.)Максимальна глибина індикатора$(/t)$(): 20$(br)$(thing)Біоми$(): Будь-який$(br2)$(thing)Типи каменю$(): Андезит, Аспідний сланець, Базальт, Габро, Гнейс, Гранит, Дацит, Діорит, Кварцит, Мармур, Ріоліт, Філіт, Шиферний сланець",
-      "title": "Графіт, Буре вугілля, Діамант (Глибокий)",
+      "title": "Графіт, Кам'яне вугілля... (Глибокий)",
       "type": "patchouli:text",
       "anchor": "deep_graphite"
     },
@@ -1722,7 +1695,7 @@
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Буре вугілля",
+      "name": "Кам'яне вугілля",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/coal"
@@ -1918,6 +1891,33 @@
       "Type": "patchouli:empty",
       "draw_filler": true,
       "type": "patchouli:empty"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)$(t:Ймовірність появи жили на чанк. Менші нижні числа означають більшу поширеність.)Рідкість$(/t)$(): 1/30 чинки$(br)$(thing)$(t:Відсоток блоків у жилі, які є рудами замість каменю. Більший відсоток означає більше руди.)Щільність$(/t)$(): 40%$(br)$(thing)$(t:Форма жили.)Тип$(/t)$(): $(t:Переважно округлої форми) Скупчення жили$(/t)$(br)$(thing)$(t:Рівні Y, між якими може генеруватися жила.)Y$(/t)$(): 90 — 160$(br)$(thing)$(t:Середній діаметр жили.)Розмір$(/t)$(): 30$(br)$(thing)$(t:Якщо відстань між поверхнею та жильною рудою більша за це число, поверхневі індикатори не генеруються.)Максимальна глибина індикатора$(/t)$(): 60$(br)$(thing)Біоми$(): Будь-який$(br2)$(thing)Типи каменю$(): Андезит, Аргіліт, Аспідний сланець, Базальт, Вапняк, Габро, Глинистий сланець, Гнейс, Гранит, Дацит, Діорит, Доломіт, Кварцит, Конгломерат, Крейда, Кременистий сланець, Мармур, Ріоліт, Туф, Філіт, Шиферний сланець",
+      "title": "Кам'яне вугілля (Високий)",
+      "type": "patchouli:text",
+      "anchor": "high_coal"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Кам'яне вугілля",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/coal"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Відсоток$(): 100%$(br)$(thing)Використовується для$(): Паливо, Дистилят$(br)$(thing)Формула$(): C",
+      "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:text",

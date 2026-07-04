@@ -138,7 +138,7 @@
             "title": "毒素",
             "type": "patchouli:text",
             "anchor": "toxins",
-            "text": "$(l)$(d)毒素$()$()は、特に有毒な作物や肉に含まれています。毒素は1日ごとに3%ずつ自然に減少します。$(item)デトックスカプセル$()を使用すると、$(l:tfg_tips/mob_effects_glossary#cure_toxins)毒素を除去$()できます。$(br2)毒素が蓄積すると、次のようなことが起こります。$()$(li)$(bold)0%以上 → $()$()$(italic)新たに毒素が蓄積するたびに、25%の確率でランダムな病気に10秒間罹る。$()$(li)$(bold)99%以上 → $()$()$(italic)$(l:tfg_tips/mob_effects_glossary#final_moments)死亡$()。$()"
+            "text": "$(l)$(d)毒素$()$()は、特に有毒な作物や肉に含まれています。毒素は1日ごとに3%ずつ自然に減少します。$(item)デトックスカプセル$()を使用すると、$(l:tfg_tips/mob_effects_glossary#cure_toxins)毒素を除去$()できます。$(br2)毒素が蓄積すると、次のようなことが起こります。$()$(li)$(bold)0%以上 → $()$()$(italic)新たに毒素が蓄積するたびに、25%の確率でランダムな病気に10秒間罹る。$()$(li)$(bold)99%以上 → $()$()$(italic)$(l:tfg_tips/mob_effects_glossary#final_moments)危篤状態$()。$()"
         },
         {
             "title": "寄生",

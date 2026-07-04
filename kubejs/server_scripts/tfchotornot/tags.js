@@ -2,7 +2,6 @@
 "use strict";
 
 const registerHotOrNotItemTags = (event) => {
-
     event.add('tfchotornot:hot_whitelist', '#forge:hot_ingots')
     event.add('tfchotornot:hot_whitelist', 'minecraft:magma_block')
     event.add('tfchotornot:cold_whitelist', 'minecraft:blue_ice')
@@ -21,6 +20,7 @@ const registerHotOrNotItemTags = (event) => {
 
     event.add('tfg:insulating_container', '#gtceu:super_tanks')
     event.add('tfg:insulating_container', '#gtceu:fluid_cells')
+    event.add('tfg:insulating_container', 'tfc:metal/lamp/blue_steel')
 
     event.add('tfg:hot_protection_equipment', 'tfc:metal/chestplate/blue_steel')
     event.add('tfg:hot_protection_equipment', 'tfc:metal/boots/blue_steel')

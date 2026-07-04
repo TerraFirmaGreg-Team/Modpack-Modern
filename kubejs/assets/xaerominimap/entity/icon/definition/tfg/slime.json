@@ -1,0 +1,11 @@
+{
+  "variants": {
+    "tfg:textures/entity/slime/glowberry.png": "outlined_sprite:tfg/slime_glowberry.png",
+    "tfg:textures/entity/slime/ice.png": "outlined_sprite:tfg/slime_ice.png",
+    "tfg:textures/entity/slime/latex.png": "outlined_sprite:tfg/slime_latex.png",
+    "tfg:textures/entity/slime/lava.png": "outlined_sprite:tfg/slime_lava.png",
+    "tfg:textures/entity/slime/plant.png": "outlined_sprite:tfg/slime_plant.png",
+    "tfg:textures/entity/slime/spring.png": "outlined_sprite:tfg/slime_spring.png",
+    "default": "outlined_sprite:tfg/slime_spring.png"
+  }
+}

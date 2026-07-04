@@ -476,7 +476,7 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfg:rope_ladders)"
 					}
 				}
-				title: "Any #tfg:rope_ladders"
+				title: "{quests.tasktype.item.any} #tfg:rope_ladders"
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.rope_ladders.title}"
@@ -546,7 +546,7 @@
 							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:rock/aqueducts)"
 						}
 					}
-					title: "Any #tfc:rock/aqueducts"
+					title: "{quests.tasktype.item.any} #tfc:rock/aqueducts"
 					type: "item"
 				}
 			]

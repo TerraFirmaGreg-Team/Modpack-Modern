@@ -43,6 +43,7 @@ ServerEvents.tags('item', event => {
 	registerSNSItemTags(event)
 	registerSpeciesItemTags(event)
 	registerTACZItemTags(event)
+	registerTFCChannelCastingItemTags(event)
 	registerTFCItemTags(event)
 	registerTFCScrapingKnivesItemTags(event)
 	registerTFGItemTags(event)

@@ -3462,7 +3462,7 @@
 					}
 				}
 			],
-			"text": "$(thing)Wild Sunflowers$() grow between 5 and 40C, and 100 to 450mm of rainfall. Their seeds can also be roasted and eaten!"
+			"text": "$(thing)Dziki słonecznik$() rośnie w temp. od 5 do 40 C oraz przy opadach między 100 do 450 mm. Jego nasiona mogą być prażone i zjedzone!"
 		},
 		{
 			"type": "patchouli:text",
@@ -3781,7 +3781,7 @@
 					}
 				}
 			],
-			"text": "$(thing)Wild Flax$() grows between -5 and 23C, and 175 to 475mm of rainfall."
+			"text": "$(thing)Dzikie len$() rośnie w temp. od -5 do 23 C oraz przy opadach między 175 do 475 mm."
 		},
 		{
 			"type": "patchouli:text",
@@ -3919,7 +3919,7 @@
 					}
 				}
 			],
-			"text": "$(thing)Wild Cucumber$() grows between 15 and 40C, and 350 to 500mm of rainfall.",
+			"text": "$(thing)Dziki ogórek$() rośnie w temp. od 15 do 40 C oraz przy opadach między 350 a 500 mm.",
 			"enable_visualize": false
 		},
 		{
@@ -4034,7 +4034,7 @@
 					}
 				}
 			],
-			"text": "$(thing)Wild Radishes$() grow between -16 and 4C, and 75 to 325mm of rainfall.",
+			"text": "$(thing)Dzika rzodkiewka$() rośnie w temp. od -16 do 4 C oraz przy opadach między 75 a 325 mm.",
 			"enable_visualize": false
 		},
 		{
@@ -4149,7 +4149,7 @@
 					}
 				}
 			],
-			"text": "$(thing)Wild Lentils$() grow between -18 and 2C, and 250 to 425mm of rainfall.",
+			"text": "$(thing)Dzika soczewica$() rośnie w temp. od -18 do 2 C oraz przy opadach między 250 a 425 mm.",
 			"enable_visualize": false
 		}
 	],

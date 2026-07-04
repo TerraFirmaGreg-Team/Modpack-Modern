@@ -84,14 +84,14 @@
 			"anchor": "sea_water"
 		},
 		{
-			"title": "Água Termal",
+			"title": "Água Lamacenta",
 			"text": "Drinking $(thing)Muddy Water$() is not recommended. Doing so will make you nauseous and give you parasites.",
 			"type": "patchouli:spotlight",
 			"item": "tfg:muddy_water_bucket",
 			"anchor": "muddy_water"
 		},
 		{
-			"title": "Água Salgada",
+			"title": "Suco de Fruta",
 			"text": "$(thing)Fruit Juice$() is a great way to condense your fruits into a longer lasting food item. Fruit juice provides the $(l:getting_started/food_and_water#quenching_transient_effect)Quenching Effect$(). Which helps stave off thirst.$(br2)Fruit Juice will expire over time.$()",
 			"type": "patchouli:spotlight",
 			"anchor": "juice",

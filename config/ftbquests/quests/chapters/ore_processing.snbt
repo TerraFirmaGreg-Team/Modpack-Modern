@@ -483,7 +483,7 @@
 						}
 					}
 					optional_task: true
-					title: "Any #tfg:platinum_ore_group"
+					title: "{quests.tasktype.item.any} #tfg:platinum_ore_group"
 					type: "item"
 				}
 			]
@@ -965,7 +965,7 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:circuits/lv)"
 					}
 				}
-				title: "Any #gtceu:circuits/lv"
+				title: "{quests.tasktype.item.any} #gtceu:circuits/lv"
 				type: "item"
 			}]
 			title: "{quests.ore_proc.lv_tier.title}"
@@ -1055,7 +1055,7 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:circuits/mv)"
 					}
 				}
-				title: "Any #gtceu:circuits/mv"
+				title: "{quests.tasktype.item.any} #gtceu:circuits/mv"
 				type: "item"
 			}]
 			title: "{quests.ore_proc.mv_tier.title}"
@@ -1079,7 +1079,7 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:circuits/hv)"
 					}
 				}
-				title: "Any #gtceu:circuits/hv"
+				title: "{quests.tasktype.item.any} #gtceu:circuits/hv"
 				type: "item"
 			}]
 			title: "{quests.ore_proc.hv_tier.title}"
@@ -1103,7 +1103,7 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:circuits/iv)"
 					}
 				}
-				title: "Any #gtceu:circuits/iv"
+				title: "{quests.tasktype.item.any} #gtceu:circuits/iv"
 				type: "item"
 			}]
 			title: "{quests.ore_proc.iv_tier.title}"
@@ -1127,7 +1127,7 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:circuits/ev)"
 					}
 				}
-				title: "Any #gtceu:circuits/ev"
+				title: "{quests.tasktype.item.any} #gtceu:circuits/ev"
 				type: "item"
 			}]
 			title: "{quests.ore_proc.ev_tier.title}"
@@ -1151,7 +1151,7 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:circuits/luv)"
 					}
 				}
-				title: "Any #gtceu:circuits/luv"
+				title: "{quests.tasktype.item.any} #gtceu:circuits/luv"
 				type: "item"
 			}]
 			title: "{quests.ore_proc.luv_tier.title}"
@@ -1235,7 +1235,7 @@
 					}
 				}
 				match_nbt: false
-				title: "Any #tfc:bronze_anvils"
+				title: "{quests.tasktype.item.any} #tfc:bronze_anvils"
 				type: "item"
 				weak_nbt_match: true
 			}]

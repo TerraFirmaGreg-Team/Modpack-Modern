@@ -85,7 +85,11 @@ function registerTFCItemTags(event) {
 		"primitive_creatures:reh",
 		"species:harpoon",
 		"species:crankbow",
-		"tfg:trowel"
+		"tfg:trowel",
+		"tfc:ceramic/pot",
+		"minecraft:lead",
+		"gtceu:brick_wooden_form",
+		"firmalife:watering_can"
 	];
 	usableOnToolRack.forEach((entry) => {
 		event.add("tfc:usable_on_tool_rack", entry);
@@ -490,8 +494,6 @@ function registerTFCItemTags(event) {
 
     event.add('tfc:starts_fires_with_items', 'gtceu:matches');
     event.add('tfc:starts_fires_with_durability', 'gtceu:matchbox');
-    event.add('tfc:starts_fires_with_durability', 'gtceu:invar_lighter');
-    event.add('tfc:starts_fires_with_durability', 'gtceu:platinum_lighter');
     event.add('forge:tools/igniter', 'tfc:firestarter');
 
     //TODO: properly allow GT fluid containers to work with TFC crafting recipes.

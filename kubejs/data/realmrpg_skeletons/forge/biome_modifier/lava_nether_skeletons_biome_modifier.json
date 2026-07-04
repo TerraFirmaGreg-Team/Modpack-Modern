@@ -1,0 +1,6 @@
+{
+	"type": "forge:add_features",
+	"biomes": "#realmrpg_skeletons:has_lava_nether_skeletons",
+	"features": "realmrpg_skeletons:lava_nether_skeletons",
+	"step": "vegetal_decoration"
+}

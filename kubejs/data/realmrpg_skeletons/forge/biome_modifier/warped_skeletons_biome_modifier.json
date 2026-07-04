@@ -1,0 +1,6 @@
+{
+	"type": "forge:add_features",
+	"biomes": "#realmrpg_skeletons:has_warped_skeletons",
+	"features": "realmrpg_skeletons:warped_skeletons",
+	"step": "vegetal_decoration"
+}

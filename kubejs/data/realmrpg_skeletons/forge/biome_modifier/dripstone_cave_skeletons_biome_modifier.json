@@ -1,0 +1,6 @@
+{
+    "type": "forge:add_features",
+    "biomes": "#realmrpg_skeletons:has_dripstone_skeletons",
+    "features": "realmrpg_skeletons:dripstone_cave_skeletons",
+    "step": "vegetal_decoration"
+}
