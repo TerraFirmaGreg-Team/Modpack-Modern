@@ -30,6 +30,8 @@ global.MINECRAFT_HIDED_ITEMS = [
 	"minecraft:dragon_head", 
 	"minecraft:creeper_head", 
 	"minecraft:wither_skeleton_skull", 
+    // quest reward
+    "minecraft:grass",
 ];
 
 global.MINECRAFT_DYE_NAMES = [
