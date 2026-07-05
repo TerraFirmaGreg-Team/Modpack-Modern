@@ -17,7 +17,7 @@
             "type": "patchouli:text",
             "title": "Основы",
             "anchor": "basics",
-            "text": "In TerraFirmaCraft, not only must you manage your hunger, but you must manage your thirst. Hunger works similar to vanilla. Most pieces of food restore about a fifth of your hunger bar. Some pieces of food may restore a bit less, such as $(thing)Cattail Roots$(). Eating food also restores $(thing)Saturation$(), which can be thought of as how full you are. Depleting food or water results in sluggish movement and taking damage. Dying does not reset your nutrients or contaminants."
+            "text": "В TerraFirmaCraft, помимо ванильного голода, существует механика жажды. Голод работает схоже с ванильным, большинство еды восстанавливает одну пятую части шкалы голода. А некоторые и меньше, например $(thing)Корень рогоза$(). Потребление еды также даёт $(thing)Насыщение$(), что можно сравнить с уровнем сытости. Если шкала голода или жажды опустится до нуля, то ты получишь негативные эффекты замедления и постепенного урона. Смерть не сбрасывает твой рацион и загрязнители."
         },
         {
             "type": "patchouli:text",
@@ -34,7 +34,7 @@
         {
             "type": "patchouli:text",
             "anchor": "thirst",
-            "text": "Thirst is the level of water in your body. It depletes at a similar rate to hunger. At high temperatures or levels of high hunger usage, your thirst will deplete faster. Luckily, drinking $(thing)Fresh Water$() replenishes thirst. This can be done by clicking $(item)$(k:key.use)$() on a water block. Drinking saltwater causes you to lose thirst, and even has a chance of giving you the $(thing)Thirst$() effect, which will drain you even more.",
+            "text": "Жажда — это уровень воды в организме. Она истощается с такой же скоростью, как и голод. При больших температурах или при сильном голоде, потребность в воде возрастёт. Благо, ты всегда можешь выпить $(thing)Свежую воду$() и восполнить жажду. Просто подойди к источнику воды и нажми $(item)$(k:key.use)$() на блок. Питьё морской воды не восполнит потребность, а наоборот, наложит $(thing)эффект жажды$().",
             "title": "Жажда"
         },
         {
@@ -57,7 +57,7 @@
                 }
             },
             "name": "Безопасность воды",
-            "text": "To avoid saltwater or muddy water, look for rivers, lakes, and freshwater plants like $(thing)Cattails$().",
+            "text": "Во избежание солёной или грязной воды, ищи реки, озёра и пресноводные растения, например $(thing)Болотный рогоз$().",
             "enable_visualize": false
         },
         {

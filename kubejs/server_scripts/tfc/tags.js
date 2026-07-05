@@ -85,7 +85,11 @@ function registerTFCItemTags(event) {
 		"primitive_creatures:reh",
 		"species:harpoon",
 		"species:crankbow",
-		"tfg:trowel"
+		"tfg:trowel",
+		"tfc:ceramic/pot",
+		"minecraft:lead",
+		"gtceu:brick_wooden_form",
+		"firmalife:watering_can"
 	];
 	usableOnToolRack.forEach((entry) => {
 		event.add("tfc:usable_on_tool_rack", entry);
