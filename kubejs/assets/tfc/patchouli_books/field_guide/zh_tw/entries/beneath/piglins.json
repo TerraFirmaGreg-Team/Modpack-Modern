@@ -1,23 +1,23 @@
 {
-	"name": "Piglins",
+	"name": "豬布林",
 	"category": "tfc:beneath",
 	"icon": "minecraft:gold_ingot",
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"title": "Piglin Bartering",
+			"title": "豬布林交易",
 			"text": "Like you'd expect, you can trade with $(thing)Piglins$() in the same way you trade with them in vanilla, with $(item)Gold Ingots$()."
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "minecraft:piglin",
 			"scale": 0.9,
-			"name": "Piglin",
+			"name": "豬布林",
 			"text": "You can find Piglins in almost every biome throughout the Beneath."
 		},
 		{
 			"type": "patchouli:text",
-			"title": "Trade Results",
+			"title": "交易結果",
 			"text": "$(li)1 Copper Ingot$(li)1 Tin Ingot$(li)1 Silver Ingot$(li)1 Bronze Ingot$(li)1 Bismuth Bronze Ingot$(li)1 Cast Iron Ingot$(li)1 Zinc Ingot$(li)1 Brass Ingot$(li)1 Bismuth Ingot$(li)1 Nickel Ingot$(li)2-4 Redstone Dust"
 		},
 		{

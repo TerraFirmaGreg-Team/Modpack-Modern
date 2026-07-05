@@ -54,18 +54,18 @@
     },
     {
       "type": "patchouli:text",
-      "text": "$(li)原生銅粒（$(thing)銅$()）$(li)原生金粒（$(thing)金$()）$(li)赤鐵礦粒（$(thing)鑄鐵$()）$(li)原生銀粒（$(thing)銀$()）$(li)錫石粒（$(thing)錫$()）$(li)輝鉍礦粒（$(thing)鉍$()）$(li)綠鎳礦粒（$(thing)鎳$()）$(li)孔雀石粒（$(thing)銅$()）$(li)磁鐵礦粒（$(thing)鑄鐵$()）$(li)褐鐵礦粒（$(thing)鑄鐵$()）$(li)閃鋅礦粒（$(thing)鋅$()）$(li)黝銅礦粒（$(thing)銅$()）",
+      "text": "$(li)原生銅粒($(thing)銅$())$(li)原生金粒($(thing)金$())$(li)赤鐵礦粒($(thing)鑄鐵$())$(li)原生銀粒($(thing)銀$())$(li)錫石粒($(thing)錫$())$(li)輝鉍礦粒($(thing)鉍$())$(li)綠鎳礦粒($(thing)鎳$())$(li)孔雀石粒($(thing)銅$())$(li)磁鐵礦粒($(thing)鑄鐵$())$(li)褐鐵礦粒($(thing)鑄鐵$())$(li)閃鋅礦粒($(thing)鋅$())$(li)黝銅礦粒($(thing)銅$())",
       "title": "小礦石"
     },
     {
       "type": "patchouli:text",
       "anchor": "casting",
-      "text": "群巒傳說每種礦石包含的實際金屬$(thing)單位$()（$(thing)mB「毫桶」 $()）並不相同。像在地表發現的礦粒品質最低，只提供 $(thing)16 mB$() 的金屬。為了提取這種金屬需要將其 $(thing)熔化$()，並使用$(thing)鑄造工藝$()製成工具。",
+      "text": "群巒傳說每種礦石包含的實際金屬$(thing)單位$()($(thing)mB「毫桶」 $())並不相同。像在地表發現的礦粒品質最低，只提供 $(thing)16 mB$() 的金屬。為了提取這種金屬需要將其 $(thing)熔化$()，並使用$(thing)鑄造工藝$()製成工具。",
       "title": "鑄造"
     },
     {
       "type": "patchouli:text",
-      "text": "你需要準備：$(br)$(li)一$(l:getting_started/pottery#vessel)小缸$()$(li)以及足夠搭建一$(l:getting_started/pit_kiln)窯坑$()的材料。$(li)一些用來澆鑄金屬的$(l:getting_started/pottery#mold)模具$()。$(li)最後還需要至少 144 mB 可用來鑄造來鑄造的礦石。初期的話只有$(thing)銅$()（三種銅礦中的任一種或混搭）。$(br2)$(br)$(italic)備註：材料充足也可以鑄造一些$(l:getting_started/primitive_alloys)合金$()"
+      "text": "你需要準備：$(br)$(li)一$(l:getting_started/pottery#vessel)小缸$()$(li)以及足夠搭建一$(l:getting_started/pit_kiln)窯坑$()的材料。$(li)一些用來澆鑄金屬的$(l:getting_started/pottery#mold)模具$()。$(li)最後還需要至少 144 mB 可用來鑄造來鑄造的礦石。初期的話只有$(thing)銅$()(三種銅礦中的任一種或混搭)。$(br2)$(br)$(italic)備註：材料充足也可以鑄造一些$(l:getting_started/primitive_alloys)合金$()"
     },
     {
       "type": "patchouli:text",
@@ -86,7 +86,7 @@
     },
     {
       "type": "patchouli:text",
-      "text": "接著將燒製好的模具放在介面中間的空格內就可以將液態金屬澆鑄進模具了。一定要趁金屬還沒凝固時澆鑄（否則就要再造窯坑重新熔化），模具注滿後就可以從小缸中拿出來冷卻。等待模具中的金属凝固後就能右鍵模具取出或將模具放入合成格取出。"
+      "text": "接著將燒製好的模具放在介面中間的空格內就可以將液態金屬澆鑄進模具了。一定要趁金屬還沒凝固時澆鑄(否則就要再造窯坑重新熔化)，模具注滿後就可以從小缸中拿出來冷卻。等待模具中的金属凝固後就能右鍵模具取出或將模具放入合成格取出。"
     },
     {
       "type": "patchouli:crafting",
