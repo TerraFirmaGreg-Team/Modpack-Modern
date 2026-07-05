@@ -120,7 +120,7 @@
   "sodium.extras.options.zoom.quadratics.title": "縮放百分比平方化",
   "sodium.extras.options.zoom.scrolling.desc": "啟動時滾動滑鼠滾輪來縮放畫面，也同時停用了縮放熱鍵。\n",
   "sodium.extras.options.zoom.scrolling.title": "滾動縮放",
-  "sodium.extras.options.zoom.sensitive.desc": "縮放時滑鼠最低靈敏度。\n設為 1.0 防止靈敏度改變。（不建議在“電影鏡頭縮放”未啟用時開啟）",
+  "sodium.extras.options.zoom.sensitive.desc": "縮放時滑鼠最低靈敏度。\n設為 1.0 防止靈敏度改變。(不建議在“電影鏡頭縮放”未啟用時開啟)",
   "sodium.extras.options.zoom.sensitive.title": "滑鼠靈敏度",
   "sodium.extras.options.zoom.smoothness.desc": "視野變化在毫秒內過渡。\n設為 0 來停用動畫。",
   "sodium.extras.options.zoom.smoothness.title": "縮放平滑度(毫秒)",

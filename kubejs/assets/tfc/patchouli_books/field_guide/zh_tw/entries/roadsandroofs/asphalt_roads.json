@@ -9,7 +9,7 @@
     },
     {
       "type": "patchouli:image",
-      "title": "Asphalt Road",
+      "title": "瀝青路",
       "images": [
         "tfg:textures/gui/field_guide/asphalt_roads/overview.png"
       ],
@@ -30,7 +30,7 @@
       "type": "patchouli:spotlight",
       "anchor": "asphalt_mix",
       "item": "tfg:asphalt_mix_bucket",
-      "title": "Asphalt Mixture",
+      "title": "瀝青混合物",
       "text": "In a $(thing)Mixer$(), combine Tar Chunks and $(thing)Stone Dust$() to make $(thing)Asphalt Binder$(). Adding $(thing)Gilsonite Dust$() increases the binder yield.$(br)Then mix the binder with sand, stone dust, and $(thing)Crushed Base$() to create a fluid $(thing)Asphalt Mixture$().$(br)Store it in a fluid container for easy transport and pouring."
     },
     {

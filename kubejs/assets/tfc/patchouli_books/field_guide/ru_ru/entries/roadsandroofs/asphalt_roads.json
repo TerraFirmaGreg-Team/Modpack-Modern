@@ -31,7 +31,7 @@
       "anchor": "asphalt_mix",
       "item": "tfg:asphalt_mix_bucket",
       "title": "Асфальтная смесь",
-      "text": "Смешай кусок смолы и $(thing)Каменную пыль$() в $(thing)Миксере$() для создания $(thing)Асфальтного наполнителя$(). Добавь $(thing)Пыль гильсонита$() для увеличения количества наполнителя. $(br)Затем смешай наполнитель с песком, каменной пылью и $(thing)Дроблённым основанием покрытия$() для получения жидкой $(thing)Асфальтной смеси$(). $(br)Храни её в резервуарах для быстрой транспортировки и заливки."
+      "text": "Смешай кусок смолы и $(thing)Каменную пыль$() в $(thing)Миксере$() для создания $(thing)Асфальтного наполнителя$(). Добавь $(thing)Пыль гильсонита$() для увеличения количества наполнителя.$(br)Затем смешай наполнитель с песком, каменной пылью и $(thing)Дроблённым основанием покрытия$() для получения жидкой $(thing)Асфальтной смеси$().$(br)Храни её в резервуарах для быстрой транспортировки и заливки."
     },
     {
       "type": "patchouli:image",
@@ -43,18 +43,18 @@
     },
     {
       "type": "patchouli:text",
-      "text": " Нажми ПКМ по блоку с $(thing)Основой покрытия$() держа резервуар с $(thing)Асфальтной смесью$() для заливки. Микстура заполнит ближайшие 20 блоков основы покрытия и превратит их в $(thing)Горячий асфальт$(). После небольшого ожидания, горячий асфальт остынет и затвердеет в $(thing)Асфальтную дорогу$(). \nШифт + ПКМ на основе покрытия, зальёт меньшую область и потратит меньше смеси."
+      "text": "Нажми ПКМ по блоку с $(thing)Основой покрытия$(), держа резервуар с $(thing)Асфальтной смесью$() для заливки. Микстура заполнит ближайшие 20 блоков основы покрытия и превратит их в $(thing)Горячий асфальт$(). После небольшого ожидания горячий асфальт остынет и затвердеет в $(thing)Асфальтную дорогу$().$(br2)Шифт + ПКМ на $(thing)Основе покрытия$() зальёт меньшую область и потратит меньше смеси."
     },
     {
       "type": "patchouli:spotlight",
       "item": "tfg:asphalt_road_hot",
-      "title": "Hot Asphalt",
-      "text": "$(thing)Hot Asphalt$() is very hot; touching it will cause ongoing burn damage. Wear heat-protective gear when working with it.$(br2)Once it cools to $(thing)Asphalt Road$(), the surface is no longer hot."
+      "title": "Горячий асфальт",
+      "text": "$(thing)Горячий асфальт$() жжётся! Прикосновение к нему нанесёт урон. Одевай термозащитное снаряжение при работе с ним.$(br2)Когда асфальт остынет, он превратится в $(thing)Асфальтную дорогу$() и больше не будет горячим."
     },
     {
       "type": "patchouli:spotlight",
       "item": "tfg:asphalt_road_stairs,tfg:asphalt_road_slab",
-      "text": "$(thing)Asphalt Roads$() can be turned into $(thing)Asphalt Road Slabs$() and $(thing)Asphalt Road Stairs$() using a $(thing)Mattock$() or a stonecutter."
+      "text": "$(thing)Асфальтная дорога$() может быть превращена в  $(thing)Плиту из асфальтной дороги$() и $(thing)Ступеньки из асфальтной дороги$(), для этого используй режимы обработки блоков$(thing)Кайлом$() или камнерез."
     },
     {
       "type": "patchouli:spotlight",
@@ -62,13 +62,13 @@
       "item": {
         "tag": "tfg:road_marking_stencils"
       },
-      "title": "Road Marking Stencils",
-      "text": "The most distinctive customization feature of asphalt roads is road marking: spray colours and patterns on the finished surface to plan lanes, intersections, and warning lines.$(br2)Various stencils can be crafted at an $(thing)Artisan Table$()."
+      "title": "Трафареты для разметки",
+      "text": "Отличительной чертой асфальтных дорог, помимо максимальной скорости, являются трафареты! Ты можешь красить асфальт, используя баллончики с краской и разнообразные трафареты.\nНаноси разметку, повороты, перекрёстки и многое другое!$(br2)Различные трафареты можно изготовить в $(thing)Ремесленном столе$()."
     },
     {
       "type": "patchouli:spotlight",
       "item": "gtceu:white_dye_spray_can,gtceu:yellow_dye_spray_can",
-      "text": "Hold a $(thing)Spray Can$() in one hand and either nothing or a $(thing)Road Marking Stencil$() in the other, then use it on an asphalt road or slab to paint."
+      "text": "Возьми $(thing)Баллончик с краской$() в одну руку, а во вторую $(thing)Трафарет$() или же ничего, затем взаимодействуй с асфальтной дорогой для окраски."
     },
     {
       "type": "patchouli:text",

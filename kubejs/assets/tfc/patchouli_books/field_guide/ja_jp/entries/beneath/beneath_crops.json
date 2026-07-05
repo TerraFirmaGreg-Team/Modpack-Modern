@@ -1,16 +1,16 @@
 {
-	"name": "Beneathの作物",
+	"name": "深界の作物",
 	"category": "tfc:beneath",
 	"icon": "tfg:textures/item/cassava_product.png",
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"title": "Beneathの作物",
-			"text": "$(thing)Beneath$()は過酷な環境かもしれませんが、それでもそこで作物を育てることは可能です。Beneathの作物は驚くほど生命力が強く、極度の暑さの中でも育つため、地中での生活にも地表での生活にも役立ちます。"
+			"title": "深界の作物",
+			"text": "$(thing)深界$()は過酷な環境かもしれませんが、それでもそこで作物を育てることは可能です。深界の作物は驚くほど生命力が強く、極度の暑さの中でも育つため、地中での生活にも地表での生活にも役立ちます。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Beneathの作物は地上の作物と同じように、水分、温度、栄養素の条件が必要です。$(thing)温室$()に植えることも可能です。$(br2)Beneathで作物を栽培する際の重要な注意点として、作物には光レベル12が必要ですが、地下の自然光ではこれを満たすことができません。この問題を解決するには、$(l:tfc:beneath/curious_blocks#blackstone_aqueduct)Lava Aqueducts$() や、その他の利用可能な光源を活用しましょう。"
+			"text": "深界の作物は地上の作物と同じように、水分、温度、栄養素の条件が必要です。$(thing)温室$()に植えることも可能です。$(br2)深界で作物を栽培する際の重要な注意点として、作物には光レベル12が必要ですが、深界の自然光ではこれを満たすことができません。この問題を解決するには、$(l:tfc:beneath/curious_blocks#blackstone_aqueduct)Lava Aqueducts$() や、その他の利用可能な光源を活用しましょう。"
 		},
 		{
 			"type": "patchouli:text",
@@ -370,7 +370,7 @@
 			"type": "patchouli:text",
 			"anchor": "ghost_pepper",
 			"title": "ゴーストペッパー",
-			"text": "$(bold)$(l:the_world/climate#temperature)気温$(): 10 - 80 °C$(br)$(bold)$(l:mechanics/hydration)水分量$(): 20 - 80 %$(br)$(bold)栄養素$(): 窒素$(br2)ゴーストペッパーは$(thing)野菜$()系の栄養を取ることができる食材です。また、Beneathの住人の間では一般的なおやつでもあります。"
+			"text": "$(bold)$(l:the_world/climate#temperature)気温$(): 10 - 80 °C$(br)$(bold)$(l:mechanics/hydration)水分量$(): 20 - 80 %$(br)$(bold)栄養素$(): 窒素$(br2)ゴーストペッパーは$(thing)野菜$()系の栄養を取ることができる食材です。また、深界の住人の間では一般的なおやつでもあります。"
 		},
 		{
 			"type": "tfc:multimultiblock",
