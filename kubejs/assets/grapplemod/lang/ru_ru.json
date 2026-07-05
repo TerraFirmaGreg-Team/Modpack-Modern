@@ -246,7 +246,7 @@
   "text.autoconfig.grapplemod.option.options.grapplinghook.blocks.grapplingBlocks": "блоки_для_крюка-кошки",
   "text.autoconfig.grapplemod.option.options.grapplinghook.blocks.grapplingBlocks.@Tooltip": "Список блоков (через запятую, ID-имена), к которым может прикрепляться крюк-кошка (белый список)",
   "text.autoconfig.grapplemod.option.options.grapplinghook.blocks.grapplingNonBlocks": "неблоки_для_крюка-кошки",
-  "text.autoconfig.grapplemod.option.options.grapplinghook.blocks.grapplingNonBlocks.@Tooltip": "Список блоков (разделенных запятыми, с указанием идентификатора), к которым крюк-кошка не может прикрепиться (так называемый черный список)",
+  "text.autoconfig.grapplemod.option.options.grapplinghook.blocks.grapplingNonBlocks.@Tooltip": "Список блоков (разделенных запятыми, с указанием идентификатора), к которым крюк-кошка не может прикрепиться (так называемый чёрный список)",
   "text.autoconfig.grapplemod.option.options.grapplinghook.custom": "пользовательский",
   "text.autoconfig.grapplemod.option.options.grapplinghook.custom.@Tooltip": "Настройки: типовое значение (при создании нового крюка) и доступные значения в модификаторе крюка",
   "text.autoconfig.grapplemod.option.options.grapplinghook.custom.doublehook": "двойной_крюк",
