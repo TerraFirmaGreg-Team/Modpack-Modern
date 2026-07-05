@@ -2,6 +2,8 @@
 
 ## Unreleased
 ### Changes
+- All the recipes for the chromium lines are unlocked at MV and some durations were reduced @TomPlop
+- The Geologic Vulcanizer outputs are more accurate and distilled water and natural gas cost were lowered @TomPlop
 - Blue steel lamps are now heatproof, so you don't get burnt on the safely-contained lava inside (#4353) @hollow-earth
 - Halite blocks (in the Salt Flats and Salt Caves biomes) now gives less salt when mined @Pyritie
 - Renamed Nether Quartz to Smoky Quartz because the netherlands isn't real @Pyritie
@@ -14,6 +16,7 @@
 - Standing inside an active EBF (or other machine with coil bonuses) now actually cooks the player @ashleney
 - Heatstroke/frostbite damage now happens more often as the temperature gets more extreme, so you can't outheal it @ashleney
 ### Bug fixes
+- Animals that use the Large Warped Nest know when it's full and stop trying to place eggs in it @TomPlop
 - Selecting a custom spawn location when creating a new world via Preview World now actually sets your spawn location instead of getting ignored (#3865) @Thomasx0
 - Fixed the biomes in Preview World not matching the biomes after the world is actually created (#3950) @Thomasx0
 - Fixed friendly slimes not giving products to the player when fed (#4349) @SakuraKitsurugi

@@ -82,7 +82,7 @@ function registerTFGChromiumProcessing(event) {
 
         event.recipes.gtceu.centrifuge('tfg:uvarovite_dust_from_garnet')
                 .itemInputs(Item.of('tfg:mixed_garnet_dust', 1))
-                .itemOutputs(Item.of('gtceu:uvarovite_dust', 3), Item.of('gtceu:grossular_dust', 2))
+                .itemOutputs(Item.of('gtceu:uvarovite_dust', 3), Item.of('gtceu:grossular_dust', 2), Item.of('gtceu:andradite_dust', 2), Item.of('gtceu:pyrope_dust', 2))
                 .duration(8 * 20)
                 .EUt(GTValues.VA[GTValues.LV])
 
