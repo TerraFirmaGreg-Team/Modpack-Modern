@@ -1,6 +1,6 @@
 {
   "__comment__": "This file was automatically created by mcresources",
-  "name": "Bread",
+  "name": "麵包",
   "category": "tfc:firmalife",
   "icon": "tfc:textures/item/food/barley_bread.png",
   "pages": [
@@ -16,8 +16,8 @@
     {
       "type": "patchouli:crafting",
       "recipe": "tfg:crafting/barley_slice",
-      "title": "Sliced Bread",
-      "text": "Once baked, you can use a $(thing)knife$() to cut bread into $(thing)slices$(). These can then either be used for $(l:tfc:mechanics/sandwiches)sandwich making$(), or cooked into $(thing)toast$() which can be spread with $(thing)butter$() or preserves."
+      "title": "麵包片",
+      "text": "烤好的麵包用$(thing)小刀$()$(thing)切片$()。麵包片用來$(l:tfc:mechanics/sandwiches)製作三明治$()或烤成$(thing)吐司$()在塗抹$(thing)奶油$()或果醬。"
     },
     {
       "type": "patchouli:crafting",

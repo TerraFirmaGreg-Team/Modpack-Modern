@@ -11,17 +11,17 @@
     {
       "type": "tfc:knapping_recipe",
       "recipe": "firmalife:clay_knapping/oven_top",
-      "text": "The recipe for the top oven."
+      "text": "烤爐頂的配方"
     },
     {
       "type": "tfc:knapping_recipe",
       "recipe": "firmalife:clay_knapping/oven_bottom",
-      "text": "The recipe for the bottom oven."
+      "text": "烤爐底的配方"
     },
     {
       "type": "tfc:knapping_recipe",
       "recipe": "firmalife:clay_knapping/oven_chimney",
-      "text": "The recipe for the oven chimney    ."
+      "text": "烤爐煙囪的配方"
     },
     {
       "type": "patchouli:crafting",
@@ -31,7 +31,7 @@
     {
       "type": "patchouli:crafting",
       "recipe": "tfchotornot:crafting/tongs/wood",
-      "text": "The $(thing)Tongs$() are a safe way to remove hot items from an Oven. Just $(item)$(k:key.use)$() on it while holding it to retrieve items. Otherwise, you may get burned!"
+      "text": "$(thing)木鉗$()能從烤爐安全地取出熱食。手持木鉗對烤爐$(item)$(k:key.use)$()就能拿取。否則會被燙傷！"
     },
     {
       "type": "patchouli:text",
@@ -39,7 +39,7 @@
     },
     {
       "type": "tfc:multimultiblock",
-      "text": "An example oven structure, uncured and cured.",
+      "text": "硬化與未硬化的烤爐結構範例",
       "multiblocks": [
         {
           "pattern": [
@@ -99,20 +99,20 @@
     },
     {
       "type": "patchouli:text",
-      "text": "The Bottom Oven is used to hold fuel, which may only be logs. Press $(item)$(k:key.use)$() to add or remove them. The bottom oven is also the part of the oven which may be lit with a $(thing)Firestarter$() or other tool. It transfers heat contained in it to the top oven."
+      "text": "烤爐底只能添加原木作為燃料。$(item)$(k:key.use)$()加入或取出原木。爐底也是烤爐的一部份，用$(thing)起火器$()或其他工具點燃。爐底會傳導熱量到上方的爐頂。"
     },
     {
       "type": "patchouli:text",
-      "text": "The Top Oven contains the items that are being cooked. It will draw heat from the Bottom Oven and slowly release it over time. This means that even if your fuel runs out, your Top Oven can continue to work for a little while. Adding items to it is as simple as pressing $(item)$(k:key.use)$(). Remember to use a $(thing)Peel$() to remove the items after."
+      "text": "烤爐頂放置要烹飪的食物，爐頂會吸收爐底的熱量並緩慢釋放，也就是說，當燃料耗盡時爐頂仍能繼續烹飪一段時間。$(item)$(k:key.use)$()放入物品。記得稍後要用$(thing)木鉗$()取出熱食。"
     },
     {
       "type": "patchouli:text",
-      "text": "Curing Oven blocks is easy, but requires patience. Simply start running your Bottom Oven as you would normally, and then wait. If an oven block is above 600 degrees for about 80 seconds, it will cure itself and any oven blocks around it. The curing effect will pass all the way up chimneys nearby."
+      "text": "硬化烤爐方塊很容易但需要耐心。只要點燃烤爐底，稍後一會就大功告成。烤爐方塊在600度以上的溫度維持80秒，自身連同周圍烤爐方塊都會硬化，效果會延伸到煙囪。"
     },
     {
       "type": "patchouli:crafting",
       "recipe": "firmalife:crafting/oven_insulation",
-      "text": "Crafting oven insulation for your Bottom Oven allows you to remove the need for insulating it on the sides and back. It does not remove the need for the chimney. Use $(item)$(k:key.use)$() to apply it."
+      "text": "為烤爐底製作隔熱層就能省去為側面與背面隔熱的麻煩。但這不代表不需要煙囪。$(item)$(k:key.use)$()套用隔熱層。"
     },
     {
       "type": "patchouli:crafting",
