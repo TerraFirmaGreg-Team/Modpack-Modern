@@ -16,7 +16,7 @@
             "type": "patchouli:text",
             "anchor": "thatch",
             "text": "With just a $(l:getting_started/introduction#knife)Stone Knife$(), you are able to obtain $(thing)Straw$() by breaking plant like blocks. This can be used to craft a very simple building material: $(thing)Thatch$(). Thatch is a lightweight block that isn't affected by gravity, however players and other entities can pass right through it! It can also be crafted back into $(thing)Straw$() if needed.",
-            "title": "Thatch"
+            "title": "Zsúpszalmaa"
         },
         {
             "type": "patchouli:crafting",

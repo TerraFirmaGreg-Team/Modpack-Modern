@@ -31,7 +31,7 @@
   "buildinggadgets2.messages.range_set": "尺寸：%d",
   "buildinggadgets2.messages.redprintgivefail": "给予%2$s红图%1$s失败",
   "buildinggadgets2.messages.redprintremovefail": "红图删除失败：%s",
-  "buildinggadgets2.messages.redprintremovesuccess": "红图删除成功：s",
+  "buildinggadgets2.messages.redprintremovesuccess": "红图删除成功：%s",
   "buildinggadgets2.messages.relativepaste": "放置位置调整为：[%s]",
   "buildinggadgets2.messages.render_set": "放置及撤销特效：%s",
   "buildinggadgets2.messages.undofailedunloaded": "撤销失败：区块未加载（距离过远）：%s",

@@ -6,22 +6,22 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "Making $(thing)cheese$() in Firmalife is a little more involved than in vanilla TFC. There are two new kinds of milk: $(thing)Yak Milk$(), and $(thing)Goat Milk$(). These are obtained from milking the $(l:mechanics/animal_husbandry#yak)Yak$() and $(l:mechanics/animal_husbandry#goat)Goat$(), respectively. Milking the $(l:mechanics/animal_husbandry#cow)Cow$() still produces the old kind of milk."
+      "text": "Firmalife 에서 $(thing)치즈$()를 만드는 과정은 일반 TFC 보다 조금 더 복잡합니다. 새로운 종류의 우유가 두가지 있는데, 바로 $(thing)야크 우유$()와 $(thing)염소 우유$()입니다.\n이 우유들은 각각 $(l:mechanics/animal_husbandry#yak)야크$()와 $(l:mechanics/animal_husbandry#goat)염소$()의 젖을 짜서 얻을 수 있습니다. $(l:mechanics/animal_husbandry#cow)소$()의 젖을 짜면 기존과 같은 종류의 우유를 얻을 수 있습니다."
     },
     {
       "type": "patchouli:text",
-      "text": "Like usual, milk must be $(thing)curdled$() first. To curdle milk, you need $(thing)Rennet$(). Rennet comes from the stomach of $(thing)Ruminant$() animals. This includes $(l:mechanics/animal_husbandry#yak)Yaks$(), $(l:mechanics/animal_husbandry#cow)Cows$(), $(l:mechanics/animal_husbandry#sheep)Sheep$(), $(l:mechanics/animal_husbandry#goat)Goats$(), and $(l:mechanics/animal_husbandry#musk_ox)Musk Oxen$(). To curdle milk, seal it in a $(l:mechanics/barrels)Barrel$() with Rennet for 4 hours."
+      "text": "언제나처럼, 우유는 먼저 $(thing)응고$()시켜야 합니다. 우유를 응고시키기 위해선 $(thing)레닛$()이 필요합니다. 레닛은 $(thing)반추$()동물의 복부에서 추출합니다. 반추동물에는 $(l:mechanics/animal_husbandry#yak)야크$(), $(l:mechanics/animal_husbandry#cow)소$(), $(l:mechanics/animal_husbandry#sheep)양$(), $(l:mechanics/animal_husbandry#goat)염소$(),$(l:mechanics/animal_husbandry#musk_ox)사향소$()가 포함됩니다. 이제 응고를 위해 레닛과 우유를 $(l:mechanics/barrels)통$()에 함께 넣어 4시간 동안 밀봉하면 됩니다."
     },
     {
       "type": "patchouli:crafting",
       "anchor": "cheesecloth",
       "recipe": "firmalife:crafting/cheesecloth",
-      "text": "Curdled milk must be converted to $(thing)Curds$() by sealing it in a barrel with $(thing)Cheesecloth$(). Cheesecloth is not reusable."
+      "text": "응고된 우유를 $(thing)우유 커드$()로 만들기 위해 $(thing)치즈천$()과 함께 통에 넣어야 합니다. 치즈천은 재사용할 수 없습니다."
     },
     {
       "type": "patchouli:crafting",
       "recipe": "tfg:crafting/cheddar_wheel",
-      "text": "You are ready to make $(thing)Dry Cheese$() if you wish. You can make $(thing)Rajya Metok$() from $(thing)Yak Curds$(), $(thing)Chevre$() from $(thing)Goat Curds$(), and $(thing)Cheddar$() from $(thing)Milk Curds$()."
+      "text": "이제 원하시면 소금을 이용해 $(thing)건조 치즈$()를 만들 준비가 되었습니다. $(thing)야크 커드$()로 $(thing)라자 메톡$()을, $(thing)염소 커드$()로 $(thing)셰브르$()를, $(thing)우유 커드$()로 $(thing)체다$()를 만들 수 있습니다."
     },
     {
       "type": "patchouli:crafting",
@@ -30,16 +30,16 @@
     },
     {
       "type": "patchouli:text",
-      "text": "Your other option is to make $(thing)Wet Cheeses$(). These are made by sealing the curds in a barrel of $(thing)Salt Water$(). You can make $(thing)Shosha$() from $(thing)Yak Curds$(), $(thing)Feta$() from $(thing)Goat Curds$(), and $(thing)Gouda$() from $(thing)Milk Curds$()."
+      "text": "아니면 $(thing)습식 치즈$()를 만들수도 있습니다. 습식 치즈는 커드를 $(thing)바닷물$()이 담긴 통에 밀봉하여 만듭니다. $(thing)야크 커드$()로 $(thing)소샤$()를, $(thing)염소 커드$()로 $(thing)페타$()를, $(thing)우유 커드$()로 $(thing)고다$()를 만들 수 있습니다."
     },
     {
       "type": "patchouli:text",
       "anchor": "aging",
-      "text": "Cheese wheels are blocks that should be placed in order to help them last. To improve their quality and shelf life, cheese wheels should be $(thing)Aged$() in a $(l:firmalife/cellar)Cellar$(). In order to obtain edible cheese from a cheese wheel, it should be sliced off the wheel by clicking $(item)$(k:key.use)$() with a $(thing)Knife$(). If the block is simply broken, the aging is lost!"
+      "text": "치즈휠은 보관 기간을 늘리기 위해 쌓아 두어야 합니다. 품질과 유통기한을 늘리려면 치즈휠을 $(l:firmalife/cellar)지하실$()에서 $(thing)숙성$()시켜야 합니다. 치즈휠에서 먹을 수 있는 치즈를 얻으려면 $(thing)칼$()을 들고 설치된 치즈휠에 $(item)$(k:key.use)$() 하여 덩어리를 잘라내야 합니다. 덩어리를 그냥 부수면 숙성 효과가 사라지니 주의하세요!"
     },
     {
       "type": "tfc:multimultiblock",
-      "text": "The aging stages of a wheel of Gouda: $(thing)Fresh$(), $(thing)Aged$(), and $(thing)Vintage$().",
+      "text": "고다 치즈 한 덩어리의 숙성 단계: $(thing)신선한(Fresh)$(), $(thing)숙성된(Aged)$(), 그리고 $(thing)빈티지(Vintage)$().",
       "multiblocks": [
         {
           "pattern": [

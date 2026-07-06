@@ -10,7 +10,7 @@
         {
             "type": "tfc:anvil_recipe",
             "recipe": "tfc:anvil/high_carbon_steel_ingot",
-            "text": "A $(thing)Pig Iron Ingot$() can then be worked in an anvil to create a $(thing)High Carbon Steel$() ingot, which can be worked again to create a $(thing)Steel Ingot$()"
+            "text": "$(thing)生鐵錠$()可在砧上錘煉成$(thing)高碳鋼錠$()，繼續錘煉就能做出$(thing)鋼錠$()"
         },
         {
             "type": "patchouli:text",

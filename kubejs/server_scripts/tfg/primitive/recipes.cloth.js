@@ -126,33 +126,47 @@ function registerTFGClothRecipes(event) {
 
 	//#region Spindle Recipes
 	
-	event.shaped('tfg:copper_spindle', [
-		'A',
-		'B'
-	], {
-		A: 'tfg:copper_spindle_head',
-		B: '#forge:rods/wooden'
-	}).id('tfg:shaped/copper_spindle')
+	const spindle_metals_cast = [
+		{metal: 'copper', tier:1},
+		{metal: 'bronze', tier:2},
+		{metal: 'black_bronze', tier:2},
+		{metal: 'bismuth_bronze', tier:2}
+	]
 	
-	event.recipes.tfc.casting(
-        'tfg:copper_spindle_head',
-        'tfg:spindle_head_mold',
-        TFC.fluidStackIngredient('gtceu:copper', 72),
-        0.1
-    ).id('tfg:casting/copper_spindle_head')
+	const spindle_metals =[
+		{metal: 'wrought_iron', tier:3}
+	].concat(spindle_metals_cast)
 	
-	event.recipes.tfc.anvil(
-		'tfg:copper_spindle_head',
-        'gtceu:copper_rod',
-        [
-            'draw_last',
-            'upset_second_last',
-			'shrink_third_last'
-        ]
-    ).bonus(true)
-	 .tier(1)
-	 .id('tfg:anvil/copper_spindle_head')
-
+	spindle_metals.forEach(spindle => {
+		
+		event.shaped(`tfg:${spindle.metal}_spindle`, [
+			'A',
+			'B'
+		], {
+			A: `tfg:${spindle.metal}_spindle_head`,
+			B: '#forge:rods/wooden'
+		}).id(`tfg:shaped/${spindle.metal}_spindle`)
+		
+		event.recipes.tfc.anvil(
+			`tfg:${spindle.metal}_spindle_head`,
+			`gtceu:${spindle.metal}_rod`,
+			[
+				'draw_last',
+				'upset_second_last',
+				'shrink_third_last'
+			]
+		).bonus(true).tier(spindle.tier).id(`tfg:anvil/${spindle.metal}_spindle_head`)
+	})
+	
+	spindle_metals_cast.forEach(spindle => {
+		event.recipes.tfc.casting(
+			`tfg:${spindle.metal}_spindle_head`,
+			'tfg:spindle_head_mold',
+			TFC.fluidStackIngredient(`gtceu:${spindle.metal}`, 72),
+			0.1
+		).id(`tfg:casting/${spindle.metal}_spindle_head`)
+	})
+	
 	//#endregion
 
 
