@@ -10,6 +10,7 @@ function registerTFGEnderPearlRecipes(event) {
 		.duration(20 * 10)
 		.EUt(GTValues.VA[GTValues.HV])
 
+	// Remove?
 	event.recipes.gtceu.chemical_reactor('kaolinite_ruby')
 		.itemInputs('6x #forge:dusts/ruby', '2x #forge:dusts/silicon')
 		.inputFluids(Fluid.of('gtceu:distilled_water', 6000), Fluid.of('gtceu:chlorine', 8000))
