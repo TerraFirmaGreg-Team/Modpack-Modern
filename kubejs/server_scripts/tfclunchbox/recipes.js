@@ -19,7 +19,9 @@ function registerTFCLunchBoxRecipes(event) {
 			if (orig.nbt == null || orig.nbt.Items == null || orig.nbt.Items.Items == null) {
 				return result;
 			} else {
-                delete orig.nbt.display;
+				if (orig.nbt.display != null) {
+					delete orig.nbt.display;
+				}
 				return result.withNBT({
                     Items: {
                         Items: orig.nbt.Items.Items
@@ -46,7 +48,9 @@ function registerTFCLunchBoxRecipes(event) {
 			if (orig.nbt == null || orig.nbt.Items == null || orig.nbt.Items.Items == null) {
 				return result;
 			} else {
-                delete orig.nbt.display;
+				if (orig.nbt.display != null) {
+					delete orig.nbt.display;
+				}
 				return result.withNBT({
                     Items: {
                         Items: orig.nbt.Items.Items
