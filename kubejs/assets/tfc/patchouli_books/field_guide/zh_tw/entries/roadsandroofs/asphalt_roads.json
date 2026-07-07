@@ -23,7 +23,7 @@
       "type": "patchouli:spotlight",
       "anchor": "tar_chunk",
       "item": "tfg:tar_chunk",
-      "title": "Tar Chunk",
+      "title": "焦油塊",
       "text": "The raw material for asphalt roads is oil. Solidify $(thing)Oil$(), $(thing)Raw Oil$(), $(thing)Heavy Oil$(), etc. in a $(thing)Fluid Solidifier$() to obtain corresponding $(thing)Tar$() blocks, then process them in an $(thing)Extractor$() to get $(thing)Tar Chunk$()."
     },
     {

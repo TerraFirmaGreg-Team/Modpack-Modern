@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "内容物",
-			"text": "$(li)\n$(l:tfc:beneath/beneath_crops#cassava)キャッサバ$()$(li)\n$(l:tfc:beneath/beneath_crops#peanut)ピーナッツ$()$(li)\n$(l:tfc:beneath/beneath_crops#beans)黒石豆$()$(li)\n$(l:tfc:beneath/beneath_crops#ghost_pepper)ゴーストペッパー$()"
+			"text": "$(li)$(l:tfc:beneath/beneath_crops#cassava)キャッサバ$()$(li)$(l:tfc:beneath/beneath_crops#peanut)ピーナッツ$()$(li)$(l:tfc:beneath/beneath_crops#beans)黒石豆$()$(li)$(l:tfc:beneath/beneath_crops#ghost_pepper)ゴーストペッパー$()"
 		},
 		{
 			"type": "patchouli:text",
@@ -25,7 +25,7 @@
 			"type": "patchouli:text",
 			"anchor": "cassava",
 			"title": "キャッサバ",
-			"text": "$(bold)\n$(l:the_world/climate#temperature)気温$(): 10 - 80 °C$(br)$(bold)$(l:mechanics/hydration)水分量$(): 70 - 100 %$(br)$(bold)栄養素$(): 窒素$(br2)キャッサバは$(thing)野菜$()系の栄養を取ることができる食材です。$(thing)加熱調理$()してから食べた方が良いでしょう。$(br)"
+			"text": "$(bold)$(l:the_world/climate#temperature)気温$(): 10 - 80 °C$(br)$(bold)$(l:mechanics/hydration)水分量$(): 70 - 100 %$(br)$(bold)栄養素$(): 窒素$(br2)キャッサバは$(thing)野菜$()系の栄養を取ることができる食材です。$(thing)加熱調理$()してから食べた方が良いでしょう。$(br)"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -248,7 +248,7 @@
 					}
 				}
 			],
-			"text": "$(thing)Wild Peanuts$() grow between Y=203 and Y=80.",
+			"text": "$(thing)野生のピーナッツ$()はY=203からY=80の間で生育しています。",
 			"enable_visualize": false
 		},
 		{
@@ -363,7 +363,7 @@
 					}
 				}
 			],
-			"text": "$(thing)Wild Blackstone Beans$() grow between Y=158 and Y=32.",
+			"text": "$(thing)野生の黒石豆$()はY=158からY=32の間で生育しています。",
 			"enable_visualize": false
 		},
 		{
@@ -478,7 +478,7 @@
 					}
 				}
 			],
-			"text": "$(thing)Wild Ghost Peppers$() grow between Y=158 and Y=32.",
+			"text": "$(thing)野生のゴーストペッパー$()はY=158からY=32の間で生育しています。",
 			"enable_visualize": false
 		}
 	],
