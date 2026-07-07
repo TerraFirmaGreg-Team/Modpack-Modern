@@ -8,12 +8,18 @@ const registerSoulboundRecipes = (event) => {
 			.modifyResult((craftingGrid, result) => {
 				let orig = craftingGrid.find(Ingredient.of(x.equipment))
 
-				result.nbt.put("Damage", orig.nbt.getInt("Damage"));
-				if (x.equipment === 'ad_astra:space_suit' || x.equipment === 'ad_astra:netherite_space_suit') {
-					try {
-						result.nbt.put('BotariumData', orig.nbt.get('BotariumData'))
-					} catch (exception) {
-						console.error(exception);
+				if (orig.nbt != null) {
+					if (orig.nbt.contains("Damage")) {
+						result.nbt.put("Damage", orig.nbt.getInt("Damage"));
+					}
+					if (x.equipment === 'ad_astra:space_suit' || x.equipment === 'ad_astra:netherite_space_suit') {
+						try {
+							if (orig.nbt.contains('BotariumData')) {
+								result.nbt.put('BotariumData', orig.nbt.get('BotariumData'))
+							}
+						} catch (exception) {
+							console.error(exception);
+						}
 					}
 				}
 				result.nbt.put('soulbindingSoulboundItems', true)
