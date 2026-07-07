@@ -1,4 +1,7 @@
 {
+  "item.tfchotornot.burlap_potholder": "麻布の鍋つかみ",
+  "item.tfchotornot.mittens": "ミトン",
+  "item.tfchotornot.silk_potholder": "絹布の鍋つかみ",
   "item.tfchotornot.tong_part.bismuth": "ビスマス製トングパーツ",
   "item.tfchotornot.tong_part.bismuth_bronze": "蒼鉛青銅製トングパーツ",
   "item.tfchotornot.tong_part.black_bronze": "黒青銅製トングパーツ",
@@ -35,5 +38,12 @@
   "item.tfchotornot.tongs.tin": "錫製トング",
   "item.tfchotornot.tongs.wood": "木製トング",
   "item.tfchotornot.tongs.wrought_iron": "錬鉄製トング",
-  "item.tfchotornot.tongs.zinc": "亜鉛製トング"
+  "item.tfchotornot.tongs.zinc": "亜鉛製トング",
+  "item.tfchotornot.wool_potholder": "羊毛の鍋つかみ",
+  "message.tfchotornot.item_getting_hot": "注意！オフハンドのアイテムが過熱中！",
+  "tfchotornot.creative_tab.tfchotornot": "TFC Hot or Not",
+  "tooltip.tfchotornot.insulating_items": "オフハンドに持っておくことで素手で持てないものを持てるようになります。",
+  "tooltip.tfchotornot.toocold": "冷たすぎて持てない！",
+  "tooltip.tfchotornot.toohot": "熱すぎて持てない！",
+  "tooltip.tfchotornot.toolight": "軽すぎて持てない！"
 }
