@@ -1219,8 +1219,8 @@ function registerTFGNuclearRecipes(event) {
 		.inputFluids(Fluid.of('gtceu:ethanol', 2000))
 		.inputFluids(Fluid.of('gtceu:toluene', 3000))
 		.itemOutputs('8x tfg:organic_stabilizer_dust')
-		.duration(20 * 5)
-		.EUt(GTValues.VA[GTValues.IV])
+		.duration(20 * 120)
+		.EUt(GTValues.VA[GTValues.MV])
 
 	event.recipes.gtceu.chemical_reactor('tfg:sodium_fluoride')
 		.itemInputs('#forge:dusts/sodium')
