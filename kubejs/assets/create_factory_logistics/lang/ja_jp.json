@@ -1,5 +1,8 @@
 {
   "block.create_factory_logistics.jar_packager": "Bottler",
+  "itemGroup.create_factory_logistics.create_factory_logistics_tab": "Create: Factory Logistics",
+  "itemGroup.create_factory_logistics.base": "Create Factory Logistics",
+  "create_factory_logistics.gui.ingredient_type_qualified_item": "内容物：",
   "create_factory_logistics.gui.ingredient_type.fluid": "液体",
   "create_factory_abstractions.gui.ingredient_type.item": "アイテム"
 }

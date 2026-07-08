@@ -113,7 +113,7 @@
 		},
 		{
 			"title": "氷泥（アイススラッシュ）",
-			"text": "$(thing)氷泥$()（アイススラッシュ）は飲むと体温を4℃下げてくれるため、暑い夏にぴったりです！Beneathの探索時にも役立ちます。",
+			"text": "$(thing)氷泥$()（アイススラッシュ）は飲むと体温を4℃下げてくれるため、暑い夏にぴったりです！深界の探索時にも役立ちます。",
 			"type": "patchouli:spotlight",
 			"item": "gtceu:ice_bucket",
 			"anchor": "ice_slush"

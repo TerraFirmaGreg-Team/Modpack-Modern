@@ -45,7 +45,7 @@
     {
       "type": "tfc:heat_recipe",
       "recipe": "tfc:heating/propick_head_mold",
-      "text": "Після того як шаблон було $(l:getting_started/pottery)виколото$(), його потрібно $(l:mechanics/heating)обпалити$(), щоб отримати $(item)шаблон головки геологічного молотка.$()$(br2)Щоб створити головку інструмента, потрібно $(l:getting_started/finding_ores#casting)залити$() рідкий метал у шаблон."
+      "text": "Після того як шаблон було $(l:getting_started/pottery)виколото$(), його потрібно $(l:mechanics/heating)обпалити$(), щоб отримати $(item)шаблон голівки геологічного молотка.$()$(br2)Щоб створити головку інструмента, потрібно $(l:getting_started/finding_ores#casting)залити$() рідкий метал у шаблон."
     },
     {
       "type": "tfc:anvil_recipe",

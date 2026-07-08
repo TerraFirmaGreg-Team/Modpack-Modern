@@ -92,13 +92,13 @@
         "item": {
           "tag": "tfg:stripped_hardwood"
         },
-        "text": "The process begins by stripping the $(thing)Hardwood$()'s bark off to expose the internal fibers of the log, You can strip the log by placing it down and right clicking it with an axe"
+        "text": "第一步剝去$(thing)硬木$()的樹皮使其露出內部纖維。放置原木手持斧頭右鍵削去樹皮"
       },
       {
         "type": "patchouli:crafting",
-        "title": "Hardwood Strip",
+        "title": "剝皮硬木",
         "recipe": "tfg:crafting/strip_hardwood",
-        "text": "Next, the stripped wood is shaven with an axe to obtain $(item)Hardwood Strips$(). This can be done using an Axe or more sophisticated methods"
+        "text": "接著用斧頭削去樹皮取得的$(item)剝皮硬木$()。用斧頭或其他複雜的方法都可以"
       },
       {
         "type": "tfc:sealed_barrel_recipe",
@@ -109,20 +109,20 @@
       {
         "type": "tfc:quern_recipe",
         "recipe": "tfg:quern/soaked_hardwood_strip",
-        "title": "Hardwood Pulp",
+        "title": "硬木漿",
         "text": "Afterwards, utilize the $(l:mechanics/quern)Quern$() to break down the soaked strips into $(item)Hardwood Pulp$()"
       },
       {
         "type": "patchouli:crafting",
         "recipe": "gtceu:shaped/small_dust_assembling_hardwood",
-        "title": "Piling up the Pulp",
-        "text": "While the quern gives you small piles of pulp, you'll want to combine them together in a $(thing)Workbench$(). More sophisticated methods of crushing the strips yield higher amounts of pulp"
+        "title": "堆積紙漿",
+        "text": "手推磨只產出小堆紙漿要在$(thing)工作台$()將其堆在一起。更精密的研磨工藝能提高紙漿產量。"
       },
       {
         "type": "patchouli:spotlight",
         "item": "gtceu:thermochemically_treated_hardwood_dust",
-        "title": "Breaking down the Pulp",
-        "text": "Before the pulp can be processed further into paper, it needs to be broken down further by $(thing)Boiling it with Lye$() in a $(l:firmalife/oven_appliances#vat)Vat$() or a $(l:mechanics/pot)Pot$()."
+        "title": "分解紙漿",
+        "text": "進一步加工成紙張前，在$(l:firmalife/oven_appliances#vat)鐵鍋$()或$(l:mechanics/pot)陶鍋$()內$(thing)用鹼液煮沸$()加以分解。"
       },
       {
         "type": "patchouli:empty"
@@ -130,8 +130,8 @@
       {
         "type": "patchouli:spotlight",
         "item": "tfg:soaked_unrefined_paper",
-        "title": "Pressing the Pulp",
-        "text": "After broken down by boiling it with Lye, the $(item)Thermochemically Treated Hardwood Pulp$() can be pressed down into a sheet of $(item)Soaked Unrefined Paper$()"
+        "title": "壓制紙漿",
+        "text": "用鹼液煮沸分解後得到的$(item)熱化學處理硬木漿$()，可壓制成$(item)浸泡粗紙$()"
       },
       {
         "type": "tfc:anvil_recipe",
@@ -140,7 +140,7 @@
       },
       {
         "type": "patchouli:spotlight",
-        "title": "Stomping in Barrel",
+        "title": "盆內踩踏",
         "item": {
           "tag": "firmalife:stomping_barrels"
         },

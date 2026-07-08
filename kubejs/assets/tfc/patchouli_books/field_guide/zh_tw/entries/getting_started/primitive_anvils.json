@@ -10,7 +10,7 @@
     },
     {
       "type": "patchouli:text",
-      "text": "首先，得找到$(thing)岩石()可以是$(thing)噴發岩$() （流紋岩、玄武岩、安山岩或英安岩）或$(thing)侵入岩$()（花崗岩、閃長岩或輝長岩）。直接使用或從岩壁上$(l:getting_started/primitive_anvils#raw_rock)開採$()下來都可以。"
+      "text": "首先，得找到$(thing)岩石()可以是$(thing)噴發岩$() (流紋岩、玄武岩、安山岩或英安岩)或$(thing)侵入岩$()(花崗岩、閃長岩或輝長岩)。直接使用或從岩壁上$(l:getting_started/primitive_anvils#raw_rock)開採$()下來都可以。"
     },
     {
       "type": "patchouli:text",

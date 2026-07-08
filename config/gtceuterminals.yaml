@@ -16,5 +16,16 @@ manager.highlight_duration_seconds: 10
 manager.highlight_color: 00AAFF
 # [Schematic] Preserve AE2/ME bus slot configurations when copying and pasting multiblocks (requires AE2)
 schematic.allow_ae2_config_copy: true
-# [Schematic] Allow the Placement Planner 'Build All' button to place real blocks in the world. Disabled by default — the planner is a planning tool, not a builder.
+# [Schematic] Allow the Placement Planner 'Build All' button to place real blocks in the world. Disabled by default â€” the planner is a planning tool, not a builder.
 schematic.planner_build_all_enabled: false
+#  Registry IDs of blocks the Schematic Interface will NEVER copy or paste.
+#  Use this to block unobtainable or modpack-internal blocks (e.g. barriers, custom casings).
+#  Example: - minecraft:bedrock, - kubejs:custom_block
+schematic.block_blacklist:
+- tfg:spice
+#  Registry IDs of blocks the Dismantler will NEVER refund or remove.
+#  Use this to protect blocks that cannot normally be obtained (e.g. bedrock, barriers, etc.)
+# - minecraft:bedrock, - minecraft; barriers, -kubejs:custom_block. 
+dismantler.block_blacklist:
+- tfg:spice
+

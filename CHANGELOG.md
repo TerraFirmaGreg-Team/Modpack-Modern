@@ -1,7 +1,26 @@
 # Changelog
-
 ## Unreleased
 ### Changes
+- 
+### Bug fixes
+- Pale Moss Carpet now acts like a carpet @strangelyng
+
+## [0.13.3] - 05-07-2026
+### Changes
+- Hotfix for 0.13.2 to fix some key progression issues caused by recent versions of the modernFix mod. Read more about 0.13.2 changes [here](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/releases/tag/0.13.2).
+### Bug fixes
+- Downgraded modernfix to version 5.27.51 to fix several issues including item stacking not working and wooden buckets not working.
+- Downgraded TooManyRecipeViewers to version 0.8.1 to fix lag when viewing recipes.
+- Temporarly downgraded TFG shaders to version 3.1.6 to fix some crashes until the issue can be resolved.
+
+## [0.13.2] - 05-07-2026
+### Known Issue
+- The TFG Shader may encounter issue on the Moon
+- If you are a Mac user and encounter a crash when loading the game, remove Supplemental Mod and don't use TFG Shader
+### Changes
+- If you throw your javelin while having a Firmaciv rope in off-hand, it will come back to you but with a limited range @Redeix
+- All the recipes for the chromium lines are unlocked at MV and some durations were reduced @TomPlop
+- The Geologic Vulcanizer outputs are more accurate and distilled water and natural gas cost were lowered @TomPlop
 - Blue steel lamps are now heatproof, so you don't get burnt on the safely-contained lava inside (#4353) @hollow-earth
 - Halite blocks (in the Salt Flats and Salt Caves biomes) now gives less salt when mined @Pyritie
 - Renamed Nether Quartz to Smoky Quartz because the netherlands isn't real @Pyritie
@@ -14,6 +33,7 @@
 - Standing inside an active EBF (or other machine with coil bonuses) now actually cooks the player @ashleney
 - Heatstroke/frostbite damage now happens more often as the temperature gets more extreme, so you can't outheal it @ashleney
 ### Bug fixes
+- Animals that use the Large Warped Nest know when it's full and stop trying to place eggs in it @TomPlop
 - Selecting a custom spawn location when creating a new world via Preview World now actually sets your spawn location instead of getting ignored (#3865) @Thomasx0
 - Fixed the biomes in Preview World not matching the biomes after the world is actually created (#3950) @Thomasx0
 - Fixed friendly slimes not giving products to the player when fed (#4349) @SakuraKitsurugi
@@ -35,6 +55,7 @@
 - Fixed food processor recipes involving jam not outputting empty jam jars (#4341) @Redeix
 ### Mods
 - *Create Fluid Logistics*: Added phantom chains and fluid repackager
+- *Firmalife*: New visual indications regarding the oven when you burn something and infos on temperature are better convey to the player
 
 ## [0.13.1] - 23-06-2026
 ### Changes

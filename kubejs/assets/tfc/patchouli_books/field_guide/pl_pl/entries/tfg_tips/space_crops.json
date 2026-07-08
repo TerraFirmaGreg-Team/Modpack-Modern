@@ -305,7 +305,7 @@
 			"type": "patchouli:text",
 			"anchor": "bulbkin",
 			"text": "$(bold)Location$(): Mars$(br)$(bold)$(l:the_world/climate#temperature)Temperature$(): -100 - 30 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 0 - 60 %$(br)$(bold)Nutrient$(): Nitrogen$(br2)Bulbkins are a spreading crop. Bulbkin Seeds can be planted on farmland and will place up to two $(item)Bulbkin Blocks$() on the ground next to it while it is mature. If the bulbkin blocks are harvested, and the plant matures again, it can grow more bulbkins. Bulbkins can be eaten for $(thing)Fruit$() or processed into $(thing)Glowstone Dust$().$(br)",
-			"title": "Bulbkin"
+			"title": "Dynia bulwiasta"
 		},
 		{
 			"type": "tfc:multimultiblock",

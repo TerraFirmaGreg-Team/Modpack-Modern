@@ -149,40 +149,40 @@
           "text": ""
         },
         {
-          "text": "Jan"
+          "text": "1月"
         },
         {
-          "text": "Feb"
+          "text": "2月"
         },
         {
-          "text": "Mar"
+          "text": "3月"
         },
         {
-          "text": "Apr"
+          "text": "4月"
         },
         {
-          "text": "May"
+          "text": "5月"
         },
         {
-          "text": "Jun"
+          "text": "6月"
         },
         {
-          "text": "Jul"
+          "text": "7月"
         },
         {
-          "text": "Aug"
+          "text": "8月"
         },
         {
-          "text": "Sep"
+          "text": "9月"
         },
         {
-          "text": "Oct"
+          "text": "10月"
         },
         {
-          "text": "Nov"
+          "text": "11月"
         },
         {
-          "text": "Dec"
+          "text": "12月"
         },
         {
           "text": "ラヴァボカド"
@@ -263,23 +263,23 @@
           "fill": "0x6ab553"
         }
       ],
-      "text": "The fruiting calendar for fruit trees.",
-      "title": "Fruit Trees",
+      "text": "果樹の結実カレンダー。",
+      "title": "果樹",
       "legend": [
         {
-          "text": "Dormant",
+          "text": "休眠期",
           "color": "0xa8986a"
         },
         {
-          "text": "Healthy",
+          "text": "成長期",
           "color": "0x6ab553"
         },
         {
-          "text": "Flowering",
+          "text": "開花期",
           "color": "0xcca0db"
         },
         {
-          "text": "Fruiting",
+          "text": "結実期",
           "color": "0xa217ff"
         }
       ],

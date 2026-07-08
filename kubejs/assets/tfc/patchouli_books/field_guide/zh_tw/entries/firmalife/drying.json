@@ -6,35 +6,35 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "The $(thing)Drying Mat$() is used to dry items. It is made with $(thing)Fruit Leaves$(), which are obtained from breaking the leaves of $(thing)Fruit Trees$()."
+      "text": "$(thing)乾燥墊$()用來乾燥物品。乾燥墊由$(thing)果樹葉子$()製作，折斷$(thing)果樹$()的樹葉可以得到果樹葉子。"
     },
     {
       "type": "patchouli:crafting",
       "recipe": "firmalife:crafting/drying_mat",
-      "text": "The recipe for the drying mat."
+      "text": "乾燥墊的合成配方"
     },
     {
       "type": "patchouli:text",
-      "text": "To use the drying mat, place it out on the sun and add an item to it with $(item)$(k:key.use)$(). After a half day, it will be dried. If it rains, the drying process must start over."
+      "text": "乾燥墊要放在陽光下，手持物品$(item)$(k:key.use)$()放上物品。經過半天時間物品就會曬乾。但中途下雨就會重新乾燥。"
     },
     {
       "type": "patchouli:crafting",
       "recipe": "firmalife:crafting/solar_drier",
-      "text": "The solar drier functions the same as the drying mat, but 12x as fast."
+      "text": "太陽能乾燥器的功能與乾燥墊相同，但快了12倍。"
     },
     {
       "type": "patchouli:text",
-      "text": "Drying mats can be automated. Pushing a piston head against a drying mat will pop the item off. Dropping an item onto a drying mat will place it on the mat."
+      "text": "乾燥墊能實現自動化。活塞推動使乾燥墊彈出物品，丟入物品則會放入物品。"
     },
     {
       "type": "tfc:drying_recipe",
       "recipe": "firmalife:drying/drying_fruit",
-      "text": "Drying fruit is a common use of the drying mat. Dried fruit is used in some recipes, and lasts longer."
+      "text": "乾燥墊多用來乾燥水果。乾燥的水果保鮮時間更長，並且有些配方會用到。"
     },
     {
       "type": "tfc:drying_recipe",
       "recipe": "firmalife:drying/tofu",
-      "text": "Tofu is made using a drying mat."
+      "text": "豆腐要用乾燥墊製作"
     }
   ],
   "read_by_default": true,
