@@ -63,16 +63,16 @@
         {
             "type": "tfc:knapping_recipe",
             "recipe": "tfc:clay_knapping/jug",
-            "text": "$(l:getting_started/pottery)Knapping$() and firing a $(l:getting_started/pottery#jug)jug$() is a way to carry water with you. Fill it like a bucket with $(item)$(k:key.use)$(). Holding $(item)$(k:key.use)$() drinks the water."
+            "text": "$(l:getting_started/pottery)Лепка из глины$() и обжиг $(l:getting_started/pottery#jug)Кувшина$() это способ носить воду с собой. Ты можешь наполнить кувшин прямо как ведро используя $(item)$(k:key.use)$().\nДержи $(item)$(k:key.use)$() для питья воды."
         },
         {
             "type": "patchouli:text",
-            "text": "You can also drink out of other containers such as $(l:waterflasks)Flasks$() or $(l:mechanics/glassworking)Glass Bottles$(). Read more about drinking containers and drink effects $(l:mechanics/drinks#containers)Here$()"
+            "text": "Ты также можешь пить из других контейнеров: $(l:waterflasks)Фляги$() или\n$(l:mechanics/glassworking)Пузырьки$(). Тебе стоит прочитать о хранении воды и эффектах алкоголя $(l:mechanics/drinks#containers)Здесь$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "nutrition_screen",
-            "text": "In $(bold)$(#ff0fb7)TerraFirma$()$()$(bold)$(#595959)Greg$()$() the nutrition screen displays vast information about your health. $(li)There is a main graph displaying your $(l:getting_started/food_and_water#nutrients)Nutrients$()$()$(li)A side graph showing your $(l:getting_started/food_and_water#contaminants)Contaminants$()$()$(li)A table displaying your health stats.$()$(li)And a toggleable view for checking on your teams nutrition.$()$(br)$(item)Hold-$(k:key.sneak)$() over an element on the screen to view more information.$()",
+            "text": "$(bold)$(#ff0fb7)TerraFirma$()$()$(bold)$(#595959)Greg$()$()\nЭкран питания показывает информацию о твоём здоровье.$(li)Существует основной график отображающий твои $(l:getting_started/food_and_water#nutrients)Нутриенты$()$()\n$(li)На боковом графике отображаются твои $(l:getting_started/food_and_water#contaminants)Загрязнители$()$()\n$(li)Таблица со статистикой здоровья. $(li)И переключаемое отображение статистики нутриентов участников твоей команды.\n$()$(br)$(item)Зажми-$(k:key.sneak)$() на любом из графиком для дополнительной информации.",
             "title": "Экран Рациона"
         },
         {
@@ -80,41 +80,41 @@
             "images": [
                 "tfg:textures/gui/field_guide/nutrition/tfg_nutrition_screen.png"
             ],
-            "text": "The nutrition screen, with graphs showing the levels of each nutrient.",
+            "text": "Экран нутриентов отображает график всех твоих нутриентов.",
             "border": false
         },
         {
             "type": "patchouli:text",
             "anchor": "nutrients",
-            "text": "There are five nutrients, all obtainable from food: $(l)$(a)Fruit$()$(), $(l)$(2)Vegetables$()$(), $(l)$(c)Protein$()$(), $(l)$(6)Grain$()$(), and $(l)$(5)Dairy$()$(). Eating food gives you its nutrients. Meals such as $(l:mechanics/pot#soup)Soup$() combine more nutrients into one meal. Often meals will borrow the nutrients from their ingredients directly. This is important, because meals you ate a while ago don't count towards your nutrition.",
+            "text": "Всего существует пять нутриентов, всех их можно получить из еды.\n$(l)$(a)Фрукты$()$(), $(l)$(2)Овощи$()$(), $(l)$(c)Белки$()$(), $(l)$(6)Зерно$()$(), и $(l)$(5)Молоко$()$(). Употребление еды даёт тебе нутриенты. Еда типо $(l:mechanics/pot#soup)Супа$() может давать несколько нутриентов за один приём пищи. ",
             "title": "Питательные вещества"
         },
         {
             "type": "patchouli:text",
             "anchor": "average_nutrients",
-            "text": "The total value of your nutrients determines your maximum HP. At max value you can achieve $(l)$(c)30 hearts$()$(). While the lowest is $(l)$(c)3 hearts$()$().$(br)Your average nutrients also effect the following:$()$(li)$(bold)Average >55% ↴$()$()$(italic)$(li2)Increase passive health regen by 50%.$()$()$(italic)$(li2)Decreases $(l:tfg_ores/hazards#medicine)Medical Condition$() progression rate by 25%.$()$()$(italic)$(li2)Increase medical condition passive healing rate by 50%.$()$()"
+            "text": "Общее количество нутриентов напрямую влияет на количество твоего здоровья. Максимальное значение - $(l)$(c)30 Сердец$()$().\nМинимальное значение - $(l)$(c)3 Сердца$()$().$(br)Среднее значение всех нутриентов также влияет на следующее:\n$()$(li)$(bold)Среднее >55% ↴$()$()$(italic)$(li2)Увеличивает пассивную регенерацию здоровья на 50%. $()$()$(italic)$(li2)Замедляет развитие $(l:tfg_ores/hazards#medicine)Заболеваний$() на 25%.$()$()$(italic)$(li2)Увеличивает скорость пассивного лечения заболеваний на 50%.$()$()"
         },
         {
             "type": "patchouli:text",
-            "text": "$(li)$(bold)Average >85% ↴$()$()$(italic)$(li2)Increase passive health regen by 100%.$()$()$(italic)$(li2)Decreases $(l:tfg_ores/hazards#medicine)Medical Condition$() progression rate by 50%.$()$()$(italic)$(li2)Increase medical condition passive healing rate by 100%.$()$()"
+            "text": "$()$(li)$(bold)Среднее >85% ↴$()$()$(italic)$(li2)Увеличивает пассивную регенерацию здоровья на 100%. $()$()$(italic)$(li2)Замедляет развитие $(l:tfg_ores/hazards#medicine)Заболеваний$() на 50%.$()$()$(italic)$(li2)Увеличивает скорость пассивного лечения заболеваний на 100%.$()$()"
         },
         {
             "title": "Фрукты",
             "type": "patchouli:text",
             "anchor": "fruit",
-            "text": "$(l)$(a)Fruit$()$() nutrients are mostly found from $(l:the_world/wild_fruits)Fruiting Plants$(), like berry bushes, and fruit trees. A notable exception to this is $(l:mechanics/crops#pumpkin)Pumpkins$() and $(l:mechanics/crops#pumpkin)Melons$(), which nutritionally are fruits.$(br2)Increasing your fruit value gives the following effects:$()$(li)$(bold)Average >55% → $()$()$(italic)Decreases thirst usage by 25%.$()$(li)$(bold)Average >85% → $()$()$(italic)Increases mining speed by 30%.$()"
+            "text": "$(l)$(l)Фрукты$()$() чаще всего можно получить употребляя $(l:the_world/wild_fruits)Фруктовые растения$(), ягодные кусты, фруктовые деревья. Но самым лучшим вариантом являются $(l:mechanics/crops#pumpkin)Тыквы$() и $(l:mechanics/crops#pumpkin)Арбузы$()\n\nЭффекты:$()$(li)$(bold)Среднее >55% → $()$()$(italic)Уменьшает жажду на 25%.$()$(li)$(bold)Среднее >85% → $()$()$(italic)Увеличивает скорость копания на 30%.$()"
         },
         {
             "title": "Овощи",
             "type": "patchouli:text",
             "anchor": "vegetables",
-            "text": "$(l)$(2)Vegetables$()$() are found in nearly every $(l:mechanics/crops)Crop$().$(br2)Increasing your vegetable value gives the following effects:$()$(li)$(bold)Value >55% → $()$()$(italic)Removes under-water mining penalty.$()$(li)$(bold)Value >85% → $()$()$(italic)Gives the respiration effect.$()"
+            "text": "$(l)$(2)Овощи$()$() встречаются почти в каждой $(l:mechanics/crops)Культуре$()\n\nЭффекты:$()$(li)$(bold)Среднее >55% → $()$()$(italic)Убирает замедление скорости копания под водой .$()$(li)$(bold)Среднее >85% → $()$()$(italic)Даёт эффект подводного дыхания.$()"
         },
         {
             "title": "Белки",
             "type": "patchouli:text",
             "anchor": "protein",
-            "text": "$(l)$(c)Protein$()$() can be sourced from the meat of $(l:the_world/wild_animals)Animals$(). It can also be obtained from some crops like $(thing)legumes$().$(br2)Increasing your protein value gives the following effects:$()$(li)$(bold)Value >55% → $()$()$(italic)Decrease exhaustion multiplier by 25%.$()$(li)$(bold)Value >85% → $()$()$(italic)Allows you to carry an additional huge & heavy item without being $(l:getting_started/size_and_weight#overburdening)Overburdened$() (like a sealed barrel).$()"
+            "text": "$(l)$(c)Белки$()$() можно получать потребляя мясо диких $(l:the_world/wild_animals)Животных$(). Их также можно получить съедая $(thing)Бобовые$()\n\nЭффекты:$()$(li)$(bold)Среднее >55% → $()$()$(italic)Уменьшает множитель истощения на 25%.$()$(li)$(bold)Среднее >85% → $()$()$(italic)Позволяет переносить дополнительный тяжёлый/большой предмет без $(l:getting_started/size_and_weight#overburdening)Перегрузки$()$()"
         },
         {
             "title": "Зерновые",

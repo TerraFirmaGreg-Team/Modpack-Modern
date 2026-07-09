@@ -94,111 +94,111 @@
 			"type": "patchouli:spotlight",
 			"title": "Caryer",
 			"item": "tag:tfc:hickory_logs",
-			"text": "$(bold)Bitternut Hickory$()$(br)$(thing)Rainfall$(): 210 — 400mm$(br)$(thing)Temperature$(): -6.6 — 11.6°C$(br2)$(bold)Scrub Hickory$()$(br)$(thing)Rainfall$(): 400 — 475mm$(br)$(thing)Temperature$(): 11.6 — 17.1°C"
+			"text": "$(bold)Caryer cordiforme$()$(br)$(thing)Précipitations$() : 210 — 400mm$(br)$(thing)Température$() : -6.6 — 11.6°C$(br2)$(bold)Caryer des broussailles$()$(br)$(thing)Précipitations$() : 400 — 475mm$(br)$(thing)Température$() : 11.6 — 17.1°C"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Ipe",
+			"title": "Ipé",
 			"item": "tag:afc:ipe_logs",
-			"text": "$(bold)Yellow Ipe$()$(br)$(thing)Rainfall$(): 340 — 500mm$(br)$(thing)Temperature$(): 11.6 — 20.7°C"
+			"text": "$(bold)Ipé jaune$()$(br)$(thing)Précipitations$() : 340 — 500mm$(br)$(thing)Température$() : 11.6 — 20.7°C"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Ironwood",
+			"title": "Bois de fer",
 			"item": "tag:afc:ironwood_logs",
-			"text": "$(bold)King Ironwood$()$(br)$(thing)Rainfall$(): 320 — 430mm$(br)$(thing)Temperature$(): 20.7 — 40.0°C$(br2)$(bold)Lebombo Ironwood$()$(br)$(thing)Rainfall$(): 150 — 230mm$(br)$(thing)Temperature$(): 20.7 — 40.0°C$(br2)$(bold)Horsetail Ironwood$()$(br)$(thing)Rainfall$(): 340 — 500mm$(br)$(thing)Temperature$(): 9.8 — 20.7°C"
+			"text": "$(bold)Bois de fer royal$()$(br)$(thing)Précipitations$() : 320 — 430mm$(br)$(thing)Température$() : 20.7 — 40.0°C$(br2)$(bold)Bois de fer de Lebombo$()$(br)$(thing)Précipitations$() : 150 — 230mm$(br)$(thing)Température$() : 20.7 — 40.0°C$(br2)$(bold)Filao$()$(br)$(thing)Précipitations$():  340 — 500mm$(br)$(thing)Température$() : 9.8 — 20.7°C"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Kapok",
+			"title": "Kapokier",
 			"item": "tag:tfc:kapok_logs",
-			"text": "$(bold)Kapok$()$(br)$(thing)Rainfall$(): 360 — 500mm$(br)$(thing)Temperature$(): 13.4 — 24.4°C$(br2)$(bold)Red Silk Cotton$()$(br)$(thing)Rainfall$(): 250 — 350mm$(br)$(thing)Temperature$(): 20.7 — 40.0°C"
+			"text": "$(bold)Kapokier$()$(br)$(thing)Précipitations$() : 360 — 500mm$(br)$(thing)Température$() : 13.4 — 24.4°C$(br2)$(bold)Kapokier rouge$()$(br)$(thing)Précipitations$() : 250 — 350mm$(br)$(thing)Température$() : 20.7 — 40.0°C"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Mahogany",
+			"title": "Acajou",
 			"item": "tag:afc:mahogany_logs",
-			"text": "$(bold)Mahogany$()$(br)$(thing)Rainfall$(): 300 — 430mm$(br)$(thing)Temperature$(): 15.3 — 26.2°C$(br2)$(bold)Small Leaf Mahogany$()$(br)$(thing)Rainfall$(): 320 — 500mm$(br)$(thing)Temperature$(): 11.6 — 18.9°C$(br2)$(bold)Sapele Mahogany$()$(br)$(thing)Rainfall$(): 330 — 500mm$(br)$(thing)Temperature$(): 13.4 — 26.2°C"
+			"text": "$(bold)Acajou$()$(br)$(thing)Précipitations$() : 300 — 430mm$(br)$(thing)Température$() : 15.3 — 26.2°C$(br2)$(bold)Acajou des Antilles$()$(br)$(thing)Précipitations$() : 320 — 500mm$(br)$(thing)Température$() : 11.6 — 18.9°C$(br2)$(bold)Sapelli$()$(br)$(thing)Précipitations$() : 330 — 500mm$(br)$(thing)Température$() : 13.4 — 26.2°C"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Mangrove",
+			"title": "Palétuvier",
 			"item": "tag:tfc:mangrove_logs",
-			"text": "$(bold)Mangrove$()$(br)$(thing)Rainfall$(): 220mm+$(br)$(thing)Temperature$(): 18.0°C+$(br)Note: only spawns in Salt Marsh biomes"
+			"text": "$(bold)Palétuvier$()$(br)$(thing)Précipitations$() : 220mm+$(br)$(thing)Température$() : 18.0°C+$(br)Note : Ne se trouve que dans les biomes de marais salants"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Maple",
+			"title": "Érable",
 			"item": "tag:tfc:maple_logs",
-			"text": "$(bold)Sugar Maple$()$(br)$(thing)Rainfall$(): 260 — 360mm$(br)$(thing)Temperature$(): -8.4 — 8.0°C$(br2)$(bold)Bigleaf Maple$()$(br)$(thing)Rainfall$(): 405 — 500mm$(br)$(thing)Temperature$(): -4.8 — 11.6°C$(br2)$(bold)Weeping Maple$()$(br)$(thing)Rainfall$(): 240 — 320mm$(br)$(thing)Temperature$(): 0.7 — 4.3°C"
+			"text": "$(bold)Érable à sucre$()$(br)$(thing)Précipitations$() : 260 — 360mm$(br)$(thing)Température$() : -8.4 — 8.0°C$(br2)$(bold)Érable à grandes feuilles$()$(br)$(thing)Précipitations$() : 405 — 500mm$(br)$(thing)Température$() : -4.8 — 11.6°C$(br2)$(bold)Érable palmé$()$(br)$(thing)précipitations$() : 240 — 320mm$(br)$(thing)Température$() : 0.7 — 4.3°C"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Oak, Black Oak",
+			"title": "Chêne, Chêne noit",
 			"item": "tag:tfc:oak_logs",
-			"text": "$(bold)Pin Oak$()$(br)$(thing)Rainfall$(): 210 — 320mm$(br)$(thing)Temperature$(): -8.4 — 6.1°C$(br2)$(bold)Live Oak$()$(br)$(thing)Rainfall$(): 390 — 500mm$(br)$(thing)Temperature$(): 0.7 — 13.4°C$(br2)$(bold)Black Oak$()$(br)$(thing)Rainfall$(): 150 — 330mm$(br)$(thing)Temperature$(): 11.6 — 20.7°C"
+			"text": "$(bold)Chêne des marais$()$(br)$(thing)Précipitations$() : 210 — 320mm$(br)$(thing)Température$() : -8.4 — 6.1°C$(br2)$(bold)Chêne sempervirent$()$(br)$(thing)Précipitations$() : 390 — 500mm$(br)$(thing)Température$() : 0.7 — 13.4°C$(br2)$(bold)Chêne noir$()$(br)$(thing)Précipitations$() : 150 — 330mm$(br)$(thing)Température$() : 11.6 — 20.7°C"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Palm",
+			"title": "Palmier",
 			"item": "tag:tfc:palm_logs",
-			"text": "$(bold)Palm$()$(br)$(thing)Rainfall$(): 0 — 250mm$(br)$(thing)Temperature$(): 17.1 — 40.0°C$(br2)$(bold)Jaggery Palm$()$(br)$(thing)Rainfall$(): 400 — 500mm$(br)$(thing)Temperature$(): 20.7 — 26.2°C"
+			"text": "$(bold)Palmier$()$(br)$(thing)Précipitations$() : 0 — 250mm$(br)$(thing)Température$() : 17.1 — 40.0°C$(br2)$(bold)Palmier à jaggery$()$(br)$(thing)Précipitations$() : 400 — 500mm$(br)$(thing)Température$() : 20.7 — 26.2°C"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Pine",
+			"title": "Pin",
 			"item": "tag:tfc:pine_logs",
-			"text": "$(bold)Boreal Pine$()$(br)$(thing)Rainfall$(): 60 — 270mm$(br)$(thing)Temperature$(): -19.4 — -3.0°C$(br2)$(bold)Stone Pine$()$(br)$(thing)Rainfall$(): 140 — 290mm$(br)$(thing)Temperature$(): 2.5 — 18.9°C$(br2)$(bold)Red Pine$()$(br)$(thing)Rainfall$(): 185 — 320mm$(br)$(thing)Temperature$(): -8.4 — 4.3°C"
+			"text": "$(bold)Pin boréal$()$(br)$(thing)Précipitations$() : 60 — 270mm$(br)$(thing)Température$() : -19.4 — -3.0°C$(br2)$(bold)Pin parasol$()$(br)$(thing)Précipitations$() : 140 — 290mm$(br)$(thing)Température$() : 2.5 — 18.9°C$(br2)$(bold)Pin rouge$()$(br)$(thing)Précipitations$() : 185 — 320mm$(br)$(thing)Température$() : -8.4 — 4.3°C"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(bold)Tamarack$()$(br)$(thing)Rainfall$(): 150 — 500mm$(br)$(thing)Temperature$(): -17.5 — -1.1°C"
+			"text": "$(bold)Mélèze laricin$()$(br)$(thing)Précipitations$(): 150 — 500mm$(br)$(thing)Température$() : -17.5 — -1.1°C"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Rosewood",
+			"title": "Palissandre",
 			"item": "tag:tfc:rosewood_logs",
-			"text": "$(bold)Shisham Rosewood$()$(br)$(thing)Rainfall$(): 245 — 360mm$(br)$(thing)Temperature$(): 15.3 — 24.4°C$(br2)$(bold)Giant Rosewood$()$(br)$(thing)Rainfall$(): 340 — 440mm$(br)$(thing)Temperature$(): 15.3 — 22.5°C"
+			"text": "$(bold)Shesham$()$(br)$(thing)Précipitations$() : 245 — 360mm$(br)$(thing)Température$() : 15.3 — 24.4°C$(br2)$(bold)Palissandre géant$()$(br)$(thing)Précipitations$() : 340 — 440mm$(br)$(thing)Température$() : 15.3 — 22.5°C"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"title": "Sequoia",
 			"item": "tag:tfc:sequoia_logs",
-			"text": "$(bold)Sequoia$()$(br)$(thing)Rainfall$(): 320 — 500mm$(br)$(thing)Temperature$(): 0.7 — 8.0°C$(br2)$(bold)Coast Redwood$()$(br)$(thing)Rainfall$(): 320 — 500mm$(br)$(thing)Temperature$(): 4.3 — 9.8°C"
+			"text": "$(bold)Sequoia$()$(br)$(thing)Précipitations$() : 320 — 500mm$(br)$(thing)Température$() : 0.7 — 8.0°C$(br2)$(bold)Sequoia à feuilles d'if$()$(br)$(thing)Précipitations$() : 320 — 500mm$(br)$(thing)Température$() : 4.3 — 9.8°C"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Spruce",
+			"title": "Épicéa",
 			"item": "tag:tfc:spruce_logs",
-			"text": "$(bold)Blue Spruce$()$(br)$(thing)Rainfall$(): 330 — 500mm$(br)$(thing)Temperature$(): -19.4 — 2.5°C$(br2)$(bold)Coast Spruce$()$(br)$(thing)Rainfall$(): 320 — 390mm$(br)$(thing)Temperature$(): -12.1 — 6.1°C$(br2)$(bold)Sitka Spruce$()$(br)$(thing)Rainfall$(): 370 — 500mm$(br)$(thing)Temperature$(): 2.5 — 8.0°C"
+			"text": "$(bold)Épicéa bleu$()$(br)$(thing)Précipitations$() : 330 — 500mm$(br)$(thing)Température$() : -19.4 — 2.5°C$(br2)$(bold)Épicéa côtier$()$(br)$(thing)Précipitations$() : 320 — 390mm$(br)$(thing)Température$() : -12.1 — 6.1°C$(br2)$(bold)Épicéa de Sitka$()$(br)$(thing)Précipitations$() : 370 — 500mm$(br)$(thing)Température$() : 2.5 — 8.0°C"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(bold)Black Spruce$()$(br)$(thing)Rainfall$(): 220 — 360mm$(br)$(thing)Temperature$(): -17.5 — -1.1°C"
+			"text": "$(bold)Épinette noire$()$(br)$(thing)Précipitations$() : 220 — 360mm$(br)$(thing)Température$() : -17.5 — -1.1°C"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Sycamore",
+			"title": "Sycomore",
 			"item": "tag:tfc:sycamore_logs",
-			"text": "$(bold)Sycamore$()$(br)$(thing)Rainfall$(): 330 — 480mm$(br)$(thing)Temperature$(): -6.6 — 11.6°C"
+			"text": "$(bold)Sycomore$()$(br)$(thing)Précipitations$() : 330 — 480mm$(br)$(thing)Température$() : -6.6 — 11.6°C"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Teak",
+			"title": "Teck",
 			"item": "tag:afc:teak_logs",
-			"text": "$(bold)True Teak$()$(br)$(thing)Rainfall$(): 215 — 330mm$(br)$(thing)Temperature$(): 13.4 — 26.2°C$(br2)$(bold)Iroko Teak$()$(br)$(thing)Rainfall$(): 210 — 320mm$(br)$(thing)Temperature$(): 17.1 — 40.0°C$(br2)$(bold)Flame of the Forest$()$(br)$(thing)Rainfall$(): 340 — 500mm$(br)$(thing)Temperature$(): 13.4 — 24.4°C"
+			"text": "$(bold)Teck véritable$()$(br)$(thing)Précipitations$() : 215 — 330mm$(br)$(thing)Température$() : 13.4 — 26.2°C$(br2)$(bold)Iroko$()$(br)$(thing)Précipitations$(): 210 — 320mm$(br)$(thing)Température$() : 17.1 — 40.0°C$(br2)$(bold)Flamme de la forêt$()$(br)$(thing)Précipitations$() : 340 — 500mm$(br)$(thing)Température$() : 13.4 — 24.4°C"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"title": "Tualang",
 			"item": "tag:afc:tualang_logs",
-			"text": "$(bold)Tualang$()$(br)$(thing)Rainfall$(): 360 — 500mm$(br)$(thing)Temperature$(): 20.7 — 40.0°C"
+			"text": "$(bold)Tualang$()$(br)$(thing)Précipitations$() : 360 — 500mm$(br)$(thing)Température$() : 20.7 — 40.0°C"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Willow",
+			"title": "Saule",
 			"item": "tag:tfc:willow_logs",
-			"text": "$(bold)Corkscrew Willow$()$(br)$(thing)Rainfall$(): 330 — 500mm$(br)$(thing)Temperature$(): -6.6 — 9.8°C$(br2)$(bold)Weeping Willow$()$(br)$(thing)Rainfall$(): 355 — 500mm$(br)$(thing)Temperature$(): 9.8 — 17.1°C"
+			"text": "$(bold)Saule tortueux$()$(br)$(thing)Précipitations$() : 330 — 500mm$(br)$(thing)Température$() : -6.6 — 9.8°C$(br2)$(bold)Saule pleureur$()$(br)$(thing)Précipitations$() : 355 — 500mm$(br)$(thing)Température$() : 9.8 — 17.1°C"
 		}
 	]
 }

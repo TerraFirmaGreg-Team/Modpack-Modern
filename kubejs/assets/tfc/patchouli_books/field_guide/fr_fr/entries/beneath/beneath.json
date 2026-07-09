@@ -1,26 +1,26 @@
 {
-	"name": "What is the Beneath?",
+	"name": "Qu'est-ce que le Beneath ?",
 	"category": "tfc:beneath",
 	"icon": "minecraft:deepslate",
 	"priority": true,
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "The $(thing)Beneath$() is a network of very deep caves, directly below the Overworld.$(br)This dimension is balanced around mid to late $(thing)Primitive Age$(). It's more dangerous than the surface, so we recommend a full set of bronze armor and a metal shield as a minimum, as well as plenty of food, water, and other tools."
+			"text": "Le $(thing)Beneath$() est un réseau de grottes très profondes, situées directement sous l'Overworld.$(br)Cette dimension est équilibrée autour du milieu et la fin de l'$(thing)Ère Primitive$(). Il est plus dangereux que la surface, c'est pourquoi nous vous recommandons d'avoir au moins un set d'armure complet en bronze et un bouclier en métal, en plus de beaucoup de provisions et autres outils."
 		},
 		{
 			"type": "patchouli:text",
-			"text": "It differs from the usual Nether experience in a few ways:$(li)You enter it $(l:beneath/beneath#entering)differently$()$(li)Water doesn't instantly evaporate$(li)A bed works like normal$(li)Traveling Beneath is no faster than in the Overworld$(br2)In return, you can find resources like $(thing)Kaolin Clay$(), $(thing)Graphite$(), richer and more exposed $(thing)ore veins$(), as well as other treasures."
+			"text": "Il diffère de l'expérience usuelle du Nether de plusieurs manières :$(li)Vous y entrez $(l:beneath/beneath#entering)différemment$()$(li)L'eau ne s'y évapore pas instantanément$(li)Un lit y fonctionne comme dans l'Overworld$(li)Voyager dans le Beneath n'est pas plus rapide que dans l'Overworld$(br2)En échange, vous pouvez y trouver des ressources comme de la $(thing)Kaolin$(), du $(thing)Graphite$(), des $(thing)veines de minerais$() plus riches et plus exposées, en plusd'autres trésors."
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "entering",
-			"title": "Entering the Beneath",
-			"text": "To travel Beneath, simply stand on overworld bedrock for a little while. To get down to the bedrock, you'll have to either break through the Hornfels layer with $(item)Explosives$() or $(item)Steel+ Tools$(), or find a cave with the more brittle $(thing)Keratophyre$()."
+			"title": "Entrer dans le Beneath",
+			"text": "Pour voyager vers le Beneath, tenez-vous simplement sur un bloc de Bedrock dans l'Overworld pendant un petit moment. Pour accéder à la Bedrock, vous devrez soit passer à travers la couche de cornéennes grâce à des $(item)explosifs$() ou des $(item)outils en acier+$(), soit trouver une grotte de $(thing)kératophyre$(), plus friable."
 		},
 		{
 			"type": "patchouli:text",
-			"text": "To return, stand directly below ceiling bedrock in the same fashion.$(br2)It's a good idea to $(thing)make a note$() of where you entered, so you can return to the same place in the overworld whenever you're ready to leave."
+			"text": "Pour vous en aller, tenez-vous directement sous le plafond de Bedrock de la même manière.$(br2)Il serait bon de $(thing)noter$() où vous êtes entré, afin de retourner d'où vous êtes venu dans l'Overworld dès que vous êtes prêt à partir."
 		}
 	],
 	"read_by_default": true
