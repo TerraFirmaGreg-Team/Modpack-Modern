@@ -75,4 +75,6 @@ function registerTFCStoneRecipes(event) {
 		event.remove({ id: `tfc:crafting/rock/${stone}_mossy_bricks_wall` })
 		// #endregion
 	})
+	
+	event.remove({ id: 'alekiroofs:brick_roofing_from_bricks_stonecutting' })
 }
