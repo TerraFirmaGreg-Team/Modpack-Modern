@@ -6,6 +6,7 @@
  * @param {Internal.RecipesEventJS_} event 
  */
 function registerTFGBeneathRecipes(event) {
+	
 	const nonCarpet_MossCarpets = [
 		'tfc:plant/moss','tfc:plant/spanish_moss',
 		'tfc:plant/reindeer_lichen','tfc:plant/cobblestone_lichen'
@@ -46,5 +47,4 @@ function registerTFGBeneathRecipes(event) {
 	], {
 		A: 'wan_ancient_beasts:olden_moss_block'
 	}).id(`tfg:shaped/olden_moss_carpet`)
-	
 }
