@@ -142,22 +142,9 @@ const registerWABRecipes = (event) => {
 		'wan_ancient_beasts:olden_moss_carpet'
 	]).id('wan_ancient_beasts:olden_moss_block')
 
-	
-	event.shaped('tfg:pale_moss_block', [
-		'AAA',
-		'ABA',
-		'AAA'
-	], {
-		A: 'tfg:plant/pale_hanging_moss_plant',
-		B: '#tfc:dirt'
-	}).id(`tfg:pale_moss_block_plant`)
-	
-	event.shaped('tfg:pale_moss_block', [
-		'AAA',
-		'ABA',
-		'AAA'
-	], {
-		A: 'tfg:plant/pale_hanging_moss',
-		B: '#tfc:dirt'
-	}).id(`tfg:pale_moss_block_hanging`)
+	event.shapeless('tfg:pale_moss_block',[
+		'tfg:pale_moss_carpet',
+		'tfg:pale_moss_carpet',
+		'tfg:pale_moss_carpet'
+	]).id('tfg:pale_moss_block')
 }
