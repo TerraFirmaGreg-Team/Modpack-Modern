@@ -7,28 +7,28 @@
  */
 function registerTFGBeneathRecipes(event) {
 	
-	const nonCarpet_MossCarpets = [
+	const mossLichens = [
 		'tfc:plant/moss','tfc:plant/spanish_moss',
 		'tfc:plant/reindeer_lichen','tfc:plant/cobblestone_lichen'
 	];
 
-	for (let i = 0; i < nonCarpet_MossCarpets.length; i++) {
+	mossLichens.forEach((mossLichen) => {
 		event.shapeless('1x minecraft:moss_block', [
 			'#tfc:dirt',
-			nonCarpet_MossCarpets[i]
-		]).id(`tfg:shapeless/moss_block/${nonCarpet_MossCarpets[i]}`)
-	}
+			`${mossLichen}`
+		]).id(`tfg:shapeless/moss_block/${global.linuxUnfucker(mossLichen)}`)
+	})
 
-	const realMossCarpets = [
-		'minecraft:moss_','tfg:pale_moss_','wan_ancient_beasts:olden_moss_'
+	const MossCarpets = [
+		'minecraft:moss','tfg:pale_moss','wan_ancient_beasts:olden_moss'
 	];
 
-	for (let i = 0; i < realMossCarpets.length; i++) {
-		event.shapeless(`${realMossCarpets[i]}block`, [
+	MossCarpets.forEach((mossCarpet) => {
+		event.shapeless(`${mossCarpet}_block`, [
 			'#tfc:dirt',
-			realMossCarpets[i] + "carpet"
-		]).id(`tfg:shapeless/${realMossCarpets[i]}block`)
-	}
+			`${mossCarpet}_carpet`
+		]).id(`tfg:shapeless/${global.linuxUnfucker(mossCarpet)}_block`)
+	})
 
 	event.shaped('6x minecraft:moss_carpet', [
 		'AA'
