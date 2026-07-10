@@ -1,7 +1,8 @@
-# Set the default behavior:
-# On checkout, the line endings will be normalized to the correct one for the OS
-# On commit, the line endings will be reset to lf
-* text=auto
+# Normalize text to LF unless a path explicitly requires CRLF.
+* text=auto eol=lf
+
+*.bat text eol=crlf
+*.cmd text eol=crlf
 
 # Binary Files
 *.png binary
