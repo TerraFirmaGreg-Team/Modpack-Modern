@@ -3,7 +3,7 @@
 
 const registerTFGGarnetSandMaterials = (event) => {
 
-	//#region Étape 2 — Digestion
+	//#region Step 1
 
 	event.create('tfg:garnet_leach_liquor')
 		.liquid(new GTFluidBuilder().temperature(370))
@@ -19,6 +19,7 @@ const registerTFGGarnetSandMaterials = (event) => {
 
 	event.create('tfg:residual_slag')
 		.dust()
+		.gem()
 		.iconSet(GTMaterialIconSet.ROUGH)
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 		.color(0x8C8577)
@@ -39,6 +40,7 @@ const registerTFGGarnetSandMaterials = (event) => {
 
 	event.create('tfg:inert_slag')
 		.dust()
+		.gem()
 		.iconSet(GTMaterialIconSet.ROUGH)
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 		.color(0x777777)
@@ -46,7 +48,7 @@ const registerTFGGarnetSandMaterials = (event) => {
 
 	//#endregion
 
-	//#region Étape 3 — Cascade pH
+	//#region Step 2
 
 	event.create('tfg:depleted_liquor_a')
 		.liquid(new GTFluidBuilder().temperature(298))
@@ -76,7 +78,7 @@ const registerTFGGarnetSandMaterials = (event) => {
 
 	//#endregion
 
-	//#region Étape 5 — Extraction Cr-Y
+	//#region Step 3
 
 	event.create('tfg:cr_y_residue')
 		.dust()
