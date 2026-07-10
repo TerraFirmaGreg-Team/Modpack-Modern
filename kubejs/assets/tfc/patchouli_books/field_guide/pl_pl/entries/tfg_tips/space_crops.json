@@ -225,7 +225,7 @@
 			"type": "patchouli:text",
 			"anchor": "bolux_mushroom",
 			"text": "$(bold)Location$(): Mars$(br)$(bold)$(l:the_world/climate#temperature)Temperature$(): -150 - 15 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 0 - 40 %$(br)$(bold)Nutrient$(): Phosphorus$(br2)Bolux Mushrooms are a single block crop. Bolux Mushroom Spores can be planted on farmland and will produce $(item)Bolux Mushrooms$() which can be eaten for $(thing)Vegetables$().$(br2)It is recommended to $(item)cook$() Bolux Mushrooms before eating.",
-			"title": "Bolux Mushroom"
+			"title": "Grzyb boluksowy"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -407,12 +407,12 @@
 					}
 				}
 			],
-			"text": "$(thing)Wild Bulbkins$() grow in any climate on Amber or Sangnum Mycelium."
+			"text": "$(thing)Dzikie dynie bulwiaste$() rosną w dowolnym klimacie na bursztynowej lub sangwinowej grzybni."
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "chalmie_mushroom",
-			"title": "Chalmie Mushroom",
+			"title": "Grzyb chalmie",
 			"text": "$(bold)Location$(): Mars$(br)$(bold)$(l:the_world/climate#temperature)Temperature$(): -150 - 15 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 0 - 40 %$(br)$(bold)Nutrient$(): Phosphorus$(br2)Chalmie Mushrooms are a single block crop. Chalmie mushroom spores can be planted on farmland and will produce $(item)Chalmie Mushrooms$() which can be eaten for $(thing)Vegetables$().$(br2)It is recommended to $(item)cook$() Chalmie Mushrooms before eating."
 		},
 		{
@@ -487,7 +487,7 @@
 					}
 				}
 			],
-			"text": "$(thing)Wild Chalmie Mushrooms$() grow in any climate on Amber, Rusticus, and Sangnum Mycelium."
+			"text": "$(thing)Dzikie grzyby chalmie$() rosną w dowolnym klimacie na bursztynowej, rdzawej lub sangwinowej grzybni."
 		},
 		{
 			"type": "patchouli:text",

@@ -8,7 +8,7 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "你需要一把$(thing)鎬$()或$(thing)採礦錘$()來挖掘礦石。$(br2)一般的$(thing)錘子$()也能快速破壞石頭類型的方塊，但不會掉落礦石。然而它仍可用於$(l:getting_started/primitive_anvils#raw_rock)取得$()石頭方塊。"
+            "text": "你需要$(thing)鎬$()或$(thing)採礦錘$()來開採礦石。$(br2)一般的$(thing)錘$()也能快速破壞石頭類型的方塊，但不會掉落礦石。仍然可以用它$(l:getting_started/primitive_anvils#raw_rock)採集$()石頭。"
         },
         {
             "type": "patchouli:crafting",

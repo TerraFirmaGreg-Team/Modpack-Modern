@@ -65,7 +65,7 @@
     },
     {
       "type": "patchouli:text",
-      "text": "你需要準備：$(br)$(li)一$(l:getting_started/pottery#vessel)小缸$()$(li)以及足夠搭建一$(l:getting_started/pit_kiln)窯坑$()的材料。$(li)一些用來澆鑄金屬的$(l:getting_started/pottery#mold)模具$()。$(li)最後還需要至少 144 mB 可用來鑄造來鑄造的礦石。初期的話只有$(thing)銅$()(三種銅礦中的任一種或混搭)。$(br2)$(br)$(italic)備註：材料充足也可以鑄造一些$(l:getting_started/primitive_alloys)合金$()"
+      "text": "準備：$(br)$(li)一缸$(l:getting_started/pottery#vessel)小缸$()$(li)以及足夠搭建$(l:getting_started/pit_kiln)窯坑$()的材料。$(li)一些用來澆鑄金屬的$(l:getting_started/pottery#mold)模具$()。$(li)最後還要至少 144 mB 用來鑄造的礦石。初期的話只有$(thing)銅$()(三種銅礦任意混搭)。$(br2)$(br)$(italic)備註：材料充足也可以鑄造些$(l:getting_started/primitive_alloys)合金$()"
     },
     {
       "type": "patchouli:text",

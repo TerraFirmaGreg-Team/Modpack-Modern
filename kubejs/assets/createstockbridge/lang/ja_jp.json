@@ -1,4 +1,13 @@
 {
   "block.createstockbridge.ae_bridge": "MEストックブリッジ",
-  "gui.createstockbridge.address": "小包の住所:"
+  "gui.createstockbridge.address": "小包の住所:",
+  "item.createstockbridge.request_pattern": "リクエストパターン",
+  "createstockbridge.ponder.ae_stockbridge.header": "ストックシステムをME倉庫に接続する",
+  "createstockbridge.ponder.ae_stockbridge.text_1": "MEストックブリッジは、CreateのストックシステムとAEを連携させます",
+  "createstockbridge.ponder.ae_stockbridge.text_2": "ストックネットワークに右クリックしてバインドしてから設置してください",
+  "createstockbridge.ponder.ae_stockbridge.text_3": "配送ガエルのアドレスと一致するようにMEストックブリッジにアドレスを設定してください",
+  "createstockbridge.ponder.ae_stockbridge.text_4": "AE",
+  "createstockbridge.ponder.ae_stockbridge.text_5": "AE",
+  "createstockbridge.ponder.ae_stockbridge.text_6": "ME倉庫側は「crafting」でアイテムをリクエストできます",
+  "createstockbridge.ponder.ae_stockbridge.text_7": "Create側はME倉庫に保存されたアイテムをリクエストすることができます"
 }

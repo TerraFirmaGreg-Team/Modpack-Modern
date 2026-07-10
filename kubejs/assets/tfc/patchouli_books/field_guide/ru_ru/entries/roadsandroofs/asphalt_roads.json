@@ -72,7 +72,7 @@
     },
     {
       "type": "patchouli:text",
-      "text": "The color is determined by the spray can, and the orientation by the player's direction.$(br)Spraying again on an existing marking will replace it and consume spray can durability, unless the same color, orientation, and pattern are used."
+      "text": "Цвет зависит от баллончика, а ориентация от направления игрока. $(br)Повторное нанесение краски заменит рисунок и потратит прочность баллончика в том случае, если только не используется тот же цвет, та же ориентация и тот же узор."
     },
     {
       "type": "patchouli:image",
@@ -84,14 +84,14 @@
     {
       "type": "patchouli:spotlight",
       "item": "gtceu:solvent_spray_can",
-      "title": "Removing Markings",
-      "text": "To redesign the road, use a $(thing)Spray Can (Solvent)$() on an asphalt road or slab to erase the marking at that location."
+      "title": "Удаление разметки",
+      "text": "Используй $(thing)Баллончик (Растворитель)$() на асфальтной дороге для удаления разметки."
     },
     {
       "type": "patchouli:spotlight",
       "item": "tfg:asphalt_rubble",
-      "title": "Breaking and Recycling",
-      "text": "Breaking asphalt roads, hot asphalt, slabs, or stairs drops $(thing)Asphalt Rubble$() instead of the intact block. Processing the rubble in an $(thing)Extractor$() recovers a small amount of asphalt mixture."
+      "title": "Поломки и переработка",
+      "text": "При поломке любого вида из асфальта, вместо обычного блока, тебе выпадет $(thing)Асфальтовый щебень$().\nТы можешь переработать его в небольшое количество асфальтной смеси используя $(thing)Экстрактор$()"
     }
   ],
   "read_by_default": true,
