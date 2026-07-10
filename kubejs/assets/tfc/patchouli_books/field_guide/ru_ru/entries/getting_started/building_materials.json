@@ -1,15 +1,15 @@
 {
-    "name": "Building Materials",
+    "name": "Строительные материалы",
     "category": "tfc:getting_started",
     "icon": "tfc:wattle/unstained",
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "In the early stages of the game, building can be a challenge as many sturdy building blocks require metal tools to obtain. However, there are a few building blocks that can be obtained with just stone tools.$(br2)More $(l:mechanics/advanced_building_materials)building blocks$() are obtainable with metal tools."
+            "text": "На ранних стадиях игры строительство может стать проблемой, так как для добычи многих прочных строительных блоков требуются металлические инструменты. Однако есть несколько строительных блоков, которые можно получить с помощью одних лишь каменных инструментов.$(br2)Ещё больше $(l:mechanics/advanced_building_materials)строительных блоков$() станет доступно с металлическими инструментами."
         },
         {
             "type": "patchouli:text",
-            "text": "$(br)  1. $(l:getting_started/building_materials#thatch)Thatch$()$(br)  2. $(l:getting_started/building_materials#mud_bricks)Mud Bricks$()$(br)  3. $(l:getting_started/building_materials#wattle_and_daub)Wattle and Daub$()$(br)  4. $(l:getting_started/building_materials#clay_and_peat)Clay Blocks and Peat$()$(br)",
+            "text": "$(br)  1. $(l:getting_started/building_materials#thatch)Сноп соломы$()$(br)  2. $(l:getting_started/building_materials#mud_bricks)Саманные кирпичи$()$(br)  3. $(l:getting_started/building_materials#wattle_and_daub)Дом из грязи и палок$()$(br)  4. $(l:getting_started/building_materials#clay_and_peat)Глиняные блоки и Торф$()$(br)",
             "title": "Содержит"
         },
         {
