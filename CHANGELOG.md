@@ -4,6 +4,7 @@
 - 
 ### Bug fixes
 - Pale Moss Carpet now acts like a carpet @strangelyng
+- Fix the Chameleon Spraycan being able to be fill with any fluids @Phoenixvine32908
 
 ## [0.13.3] - 05-07-2026
 ### Changes

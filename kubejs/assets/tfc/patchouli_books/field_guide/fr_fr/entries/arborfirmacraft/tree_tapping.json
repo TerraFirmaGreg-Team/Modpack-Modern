@@ -1,15 +1,15 @@
 {
-	"name": "Tapping Trees",
+	"name": "Extraire de la Sève",
 	"category": "tfc:arborfirmacraft",
 	"icon": "afc:tree_tap",
 	"pages": [
         {
             "type": "patchouli:text",
-            "text": "Some types of trees can be tapped for useful fluids. These trees can either produce sugary saps which can be concentrated into syrup and used as a sweetener, Latex which can be processed into rubber, or Pitch which can be processed into rosin, a wax substitute."
+            "text": "Certains fluides utiles peuvent être extraits de certains types d'arbres. Ces arbres peuvent produire soit des sèves sucrées, qui peuvent être concentrées en sirop et utilisés comme édulcorant ; du latex, qui peut être transformé en caoutchouc : ou bien de la poix, qui peut être transformée en colophane, un substitut de cire."
         },
         {
             "type": "patchouli:image",
-            "title": "Tapping a Maple Tree",
+            "title": "Extraction de la sève d'un érable",
             "images": [
             	"afc:textures/gui/book/maple_tapping.png"
             ],
@@ -17,14 +17,14 @@
         },
         {
             "type": "patchouli:text",
-            "text": "Three things are required to tap a tree: the tree itself, a tree tap, which must forged from a Copper Ingot and placed in the middle of a trunk at least three blocks tall, and a barrel, which must be placed directly below the tap facing upward. If the conditions are right, your barrel will immediately begin to fill with sap."
+            "text": "3 choses sont nécessaires pour extraire de la sève : un arbre, un chalumeau à sève, qui doit être forgé à partir d'un lingot de cuivre et placé au milieu d'un tronc haut d'au moins trois blocs, ainsi qu'un tonneau, placé directement sous le chalumeau et tourné vers le haut. Si ces conditions sont remplies et que la température est bonnne, votre tonneau va immédiatement commencer à se remplir de sève."
         },
         {
             "type": "patchouli:image",
             "images": [
             	"tfg:textures/gui/field_guide/tree_tapping/tapping_kapok.png"
             ],
-            "text": "A valid tapping configuration used to extract Latex from Kapok",
+            "text": "Une configuration valide d'extraction du latex d'un kapokier",
             "border": true
         }
 	],

@@ -41,7 +41,7 @@
 			"type": "patchouli:spotlight",
 			"title": "Poix de conifère",
 			"item": "tfg:conifer_pitch_bucket",
-			"text": "De la résine collante peut également être obtenue à partir de $(thing)Poix de conifère$(), obtenue à partir de $(thing)Conifères$(), mais ces arbres ne peuvent pas produire de latex."
+			"text": "De la résine collante peut également être obtenue à partir de $(thing)Poix de conifère$(), extraite de $(thing)Conifères$(), mais ces arbres ne peuvent pas produire de latex."
 		}
 	],
 	"read_by_default": true,

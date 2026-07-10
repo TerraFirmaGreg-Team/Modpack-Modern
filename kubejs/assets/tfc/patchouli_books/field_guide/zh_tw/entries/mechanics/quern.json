@@ -52,9 +52,9 @@
     },
     {
       "type": "tfc:quern_recipe",
-      "title": "粉碎礦石",
+      "title": "碎礦",
       "recipe": "tfg:quern/copper_crushed_ore_from_normal_raw_ore",
-      "text": "$(l:tfg_ores/ore_basics#processing)礦石$()透過粉碎以取得更多金屬。"
+      "text": "粉碎$(l:tfg_ores/ore_basics#processing)礦石$()以取得更多金屬。"
     },
     {
       "type": "tfc:quern_recipe",

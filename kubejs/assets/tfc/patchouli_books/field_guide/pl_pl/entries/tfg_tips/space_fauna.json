@@ -181,7 +181,7 @@
 			"type": "patchouli:entity",
 			"entity": "species:springling",
 			"scale": 0.9,
-			"name": "Springling",
+			"name": "Skoczek",
 			"text": "$(thing)Springlings$() are wild animals found above -108°C. Feeding them $(item)Saplings$() will let you ride them and extend their extremely long necks. They can also be eaten."
 		},
 		{
