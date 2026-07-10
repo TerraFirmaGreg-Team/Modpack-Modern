@@ -1,15 +1,15 @@
 {
-	"feature": "tfg:earth/crop/coconut_patch",
+	"feature": "tfg:earth/crop/palm_tree/coconut_patch",
 	"placement": [
 		{
 			"type": "minecraft:rarity_filter",
-			"chance": 10
+			"chance": 160
 		},
 		{
 			"type": "tfc:climate",
 			"min_temperature": 15,
-			"max_temperature": 35,
-			"min_rainfall": 100
+			"max_temperature": 45,
+			"min_rainfall": 170
 		},
 		{
 			"type": "minecraft:in_square"
@@ -20,7 +20,7 @@
 		},
 		{
 			"type": "tfc:near_fluid",
-			"radius": 8,
+			"radius": 20,
 			"fluids": [
 				"tfc:salt_water"
 			]
@@ -30,7 +30,7 @@
 			"predicate": {
 				"type": "matching_block_tag",
 				"offset": [ 0, -1, 0 ],
-				"tag": "forge:sand"
+				"tag": "minecraft:bamboo_plantable_on"
 			}
 		},
 		{

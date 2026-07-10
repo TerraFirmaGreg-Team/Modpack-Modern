@@ -1,0 +1,15 @@
+{
+	"type": "tfc:random_tree",
+	"config": {
+		"structures": [
+			"tfg:palm_tree/oil_palm_0",
+			"tfg:palm_tree/oil_palm_1",
+			"tfg:palm_tree/oil_palm_2"
+		],
+		"placement": {
+			"width": 1,
+			"height": 10,
+			"ground_type": "sand"
+		}
+	}
+}

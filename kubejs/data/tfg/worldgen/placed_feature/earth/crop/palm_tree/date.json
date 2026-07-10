@@ -1,13 +1,13 @@
 {
-	"feature": "tfg:earth/crop/coconut",
+	"feature": "tfg:earth/crop/palm_tree/date",
 	"placement": [
 		{
 			"type": "minecraft:random_offset",
 			"xz_spread": {
 				"type": "minecraft:uniform",
 				"value": {
-					"min_inclusive": -6,
-					"max_inclusive": 6
+					"min_inclusive": -7,
+					"max_inclusive": 7
 				}
 			},
 			"y_spread": 0
@@ -21,7 +21,7 @@
 			"predicate": {
 				"type": "matching_block_tag",
 				"offset": [ 0, -1, 0 ],
-				"tag": "forge:sand"
+				"tag": "minecraft:bamboo_plantable_on"
 			}
 		}
 	]

@@ -1,5 +1,5 @@
 {
-	"feature": "tfg:nether/crop/palm",
+	"feature": "tfg:nether/crop/palm_tree/oil_palm",
 	"placement": [
 		{
 			"type": "minecraft:count",
@@ -48,7 +48,7 @@
 			"predicate": {
 				"type": "minecraft:matching_block_tag",
 				"offset": [ 0, -1, 0 ],
-				"tag": "forge:sand"
+				"tag": "minecraft:bamboo_plantable_on"
 			}
 		}
 	]

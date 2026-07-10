@@ -877,6 +877,14 @@ global.CROP_CLIMATE_DATA = [
 		id: 'tfg:cucumber', seed: 'tfg:cucumber_seeds', dimension: 'minecraft:overworld', fertilizer: 'NITROGEN', moreInfo: 'tfg.tooltip.crop.stick',
 		minHydration: 70, maxHydration: 100, minTemp: 5, maxTemp: 40, hydrationWiggle: 6.5, tempWiggle: 2, genData: true, genTooltip: true 
 	},
+	{
+		id: 'tfg:palm_tree/coconut', dimension: 'minecraft:overworld',
+		minHydration: 35, maxHydration: 100, minTemp: 15, maxTemp: 45, hydrationWiggle: 0, tempWiggle: 0, genData: true, genTooltip: true
+	},
+	{
+		id: 'tfg:palm_tree/date', dimension: 'minecraft:overworld',
+		minHydration: 40, maxHydration: 100, minTemp: 20, maxTemp: 50, hydrationWiggle: 0, tempWiggle: 0, genData: true, genTooltip: true
+	},
 	// ============== Beneath =================
 	{ 
 		id: 'tfg:peanut', seed: 'tfg:peanut_seeds', dimension: 'minecraft:the_nether', fertilizer: 'POTASSIUM',
@@ -901,6 +909,14 @@ global.CROP_CLIMATE_DATA = [
 	{ 
 		id: 'tfg:fruit_tree/magmango',
 		minHydration: 30, maxHydration: 100, minTemp: 8, maxTemp: 80, hydrationWiggle: 8, tempWiggle: 5, genData: true, genTooltip: true
+	},
+	{
+		id: 'tfg:palm_tree/oil_palm', dimension: 'minecraft:the_nether',
+		minHydration: 10, maxHydration: 100, minTemp: 19, maxTemp: 62, hydrationWiggle: 0, tempWiggle: 0, genData: true, genTooltip: true
+	},
+	{
+		id: 'tfg:palm_tree/acai', dimension: 'minecraft:the_nether',
+		minHydration: 10, maxHydration: 100, minTemp: 24, maxTemp: 70, hydrationWiggle: 0, tempWiggle: 0, genData: true, genTooltip: true
 	},
 	// ============== Mars =================
 	{ 
