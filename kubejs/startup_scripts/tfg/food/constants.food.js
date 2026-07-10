@@ -573,7 +573,7 @@ global.TFG_CREATE_GENERIC_FOOD_ITEM = /** @type {TFGCreateGenericFoodItem[]} */ 
 		drinkable: true,
 		alwaysEdible: true,
 		size: {
-			volume: 'large',
+			volume: 'small',
 			weight: 'medium'
 		},
 		mealType: 'dynamic',
@@ -587,7 +587,7 @@ global.TFG_CREATE_GENERIC_FOOD_ITEM = /** @type {TFGCreateGenericFoodItem[]} */ 
 		drinkable: true,
 		alwaysEdible: true,
 		size: {
-			volume: 'large',
+			volume: 'small',
 			weight: 'medium'
 		},
 		returnItem: 'tfc:empty_jar',
@@ -601,7 +601,7 @@ global.TFG_CREATE_GENERIC_FOOD_ITEM = /** @type {TFGCreateGenericFoodItem[]} */ 
 		drinkable: true,
 		alwaysEdible: true,
 		size: {
-			volume: 'large',
+			volume: 'small',
 			weight: 'medium'
 		},
 		mealType: 'dynamic',
@@ -615,7 +615,7 @@ global.TFG_CREATE_GENERIC_FOOD_ITEM = /** @type {TFGCreateGenericFoodItem[]} */ 
 		drinkable: true,
 		alwaysEdible: true,
 		size: {
-			volume: 'large',
+			volume: 'small',
 			weight: 'medium'
 		},
 		nutrition: {
@@ -632,7 +632,30 @@ global.TFG_CREATE_GENERIC_FOOD_ITEM = /** @type {TFGCreateGenericFoodItem[]} */ 
 		mealType: 'dynamic',
 		returnItem: 'tfg:used_foil_pack',
 		tags: ['tfg:dynamic_color', 'tfg:space_food', 'tfg:foods/microplastics']
-	}
+	},
+	// Coconuts
+	{
+		id: 'tfg:food/opened_green_coconut',
+		texture: 'tfg:item/food/opened_green_coconut',
+		drinkable: true,
+		alwaysEdible: true,
+		nutrition: {
+			decay: 1.6,
+			dairy: 0.5,
+			water: 40,
+			quenching: 5 
+		}
+	},
+	{
+		id: 'tfg:food/opened_brown_coconut',
+		texture: 'tfg:item/food/opened_coconut',
+		nutrition: {
+			decay: 2,
+			dairy: 1,
+			water: 2,
+			saturation: 1.5
+		}
+	},
 	// #endregion
 ]);
 
@@ -685,7 +708,9 @@ global.FOOD_FRUIT = [
 	{name: 'cave_pumpkin', id: 'betterend:cave_pumpkin_chunks', color: 0xe5e2c0, genJam: true, saturation: 1, water: 5, fruit: 0.8, decay: 2.25 },
 	{name: 'blossom_berry', id: 'betterend:blossom_berry_product', color: 0xcc4db7, genJam: true, saturation: 1, water: 7.5, fruit: 1.5, decay: 2 },
 	{name: 'shadow_berry', id: 'betterend:shadow_berry_cooked', color: 0x2c276f, genJam: true, saturation: 1, water: 5, fruit: 1.5, decay: 2 },
-	{name: 'magmango', id: 'tfg:food/magmango', color: 0xeca345, saturation: 1, genJam: true, water: 15, fruit: 1.5, decay: 2.25}
+	{name: 'magmango', id: 'tfg:food/magmango', color: 0xeca345, saturation: 1, genJam: true, water: 15, fruit: 1.5, decay: 2.25},
+	{name: 'date', id: 'tfg:food/date', color: 0x9c3b46, saturation: 0.5, genJam: true, water: 0, fruit: 1, decay: 2.2},
+	{name: 'acai', id: 'tfg:food/acai', color: 0x433e82, saturation: 1, genJam: true, water: 10, fruit: 1.5, decay: 2.2}
 ];
 
 // #endregion

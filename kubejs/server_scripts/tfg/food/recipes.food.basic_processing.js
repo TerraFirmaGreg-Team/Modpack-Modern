@@ -231,6 +231,23 @@ function registerTFGBasicProcessingFoodRecipes(event) {
 		.EUt(GTValues.VA[GTValues.ULV]);
 
 	//#endregion
+	//#region Coconut Processing
+
+	global.generateCuttingFoodRecipes(event, 'tfg:palm_tree/coconut_fruit_brown', 'tfg:food/opened_brown_coconut', false, true);
+	global.generateCuttingFoodRecipes(event, 'tfg:palm_tree/coconut_fruit_green', 'tfg:food/opened_green_coconut', false, true);
+
+	event.recipes.tfc.barrel_instant()
+		.outputFluid(Fluid.of('firmalife:coconut_milk', 500))
+		.inputItem(TFC.ingredient.notRotten('tfg:food/opened_green_coconut'))
+		.id('tfg:barrel/opened_green_coconut_draining');
+
+	global.processorRecipe(event, 'opened_green_coconut_draining', 100, 8, {
+		circuit: 1,
+		itemInputs: ['tfg:food/opened_green_coconut'],
+		fluidOutputs: [Fluid.of('firmalife:coconut_milk', 500)]
+	});
+
+	//#endregion
 	//#region Chemicals
 
 	// Crude Gelatin
