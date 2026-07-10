@@ -8,7 +8,7 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "你需要一把$(thing)鎬$()或$(thing)採礦錘$()來挖掘礦石。$(br2)一般的$(thing)錘子$()也能快速破壞石頭類型的方塊，但不會掉落礦石。然而它仍可用於$(l:getting_started/primitive_anvils#raw_rock)取得$()石頭方塊。"
+            "text": "你需要$(thing)鎬$()或$(thing)採礦錘$()來開採礦石。$(br2)一般的$(thing)錘$()也能快速破壞石頭類型的方塊，但不會掉落礦石。仍然可以用它$(l:getting_started/primitive_anvils#raw_rock)採集$()石頭。"
         },
         {
             "type": "patchouli:crafting",
@@ -18,7 +18,7 @@
         {
             "type": "patchouli:spotlight",
             "title": "鎬",
-            "text": "使用鎬破壞礦石方塊，會產生$(thing)原礦$()（貧乏、普通或富集），以及一些石粉。原礦提供的單位價值不高，需要多個才能製成一個錠，但部分礦物只能在這種狀態下使用，例如$(thing)煤炭$()。",
+            "text": "使用鎬破壞礦石方塊，會產生$(thing)原礦$()(貧乏、普通或富集)，以及一些石粉。原礦提供的單位價值不高，需要多個才能製成一個錠，但部分礦物只能在這種狀態下使用，例如$(thing)煤炭$()。",
             "item": {
                 "tag": "minecraft:pickaxes"
             }

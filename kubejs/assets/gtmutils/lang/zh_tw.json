@@ -89,7 +89,7 @@
   "config.jade.plugin_gtmutils.pterb_info": "主動式無線變壓器訊息",
   "gtceu.placeholder_info.watfrequency.0": "回傳主動式無線變壓器當前使用的頻率訊息",
   "gtceu.placeholder_info.watfrequency.1": "用途：",
-  "gtceu.placeholder_info.watfrequency.2": "  {watfrequency} -> 當前頻率：（此處插入頻率）",
+  "gtceu.placeholder_info.watfrequency.2": "  {watfrequency} -> 當前頻率：(這裡插入頻率)",
   "gtmutils.gui.pterb.wireless_configurator.title": "無線頻率",
   "gtmutils.machine.64a_energy_converter.tooltip_tool_usage": "預設§f轉換為EU§r，使用軟錘切換。",
   "gtmutils.multiblock.pterb_machine.coolant_usage": "§c每秒消耗 %s mB的 %s",
@@ -148,6 +148,6 @@
   "tooltip.omnibreaker.tool_mode_4": "撬棍",
   "tooltip.pterb_machine.frequencies": "同頻的主動式無線變壓器間會無線傳輸能量，如同單個主動式變壓器。",
   "tooltip.pterb_machine.input_coolant_before_use": "開啟前務必先輸入冷卻劑！",
-  "tooltip.pterb_machine.purpose": "能量傳輸愛因斯坦-羅森橋（PTERB）",
+  "tooltip.pterb_machine.purpose": "能量傳輸愛因斯坦-羅森橋(PTERB)",
   "tooltip.pterb_machine.uses_coolant": "消耗 %s 來維持運作！"
 }

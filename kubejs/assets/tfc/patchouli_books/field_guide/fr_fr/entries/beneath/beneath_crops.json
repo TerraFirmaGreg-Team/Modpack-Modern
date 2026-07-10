@@ -1,16 +1,16 @@
 {
-	"name": "Beneath Crops",
+	"name": "Cultures du Beneath",
 	"category": "tfc:beneath",
 	"icon": "tfg:textures/item/cassava_product.png",
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"title": "Beneath Crops",
-			"text": "Malgré que le $(thing)Beneath$() soit un environnement hostile, il est toujours possible d'y trouver des plantes cultivées. Les cultures du Sous-Monde sont particulièrement résiliente et tolèrent des chaleurs extrêmes, les rendant idéales pour des plantations souterraines ou à la surface."
+			"title": "Cultures du Beneath",
+			"text": "Bien que le $(thing)Beneath$() soit un environnement hostile, il est toujours possible d'y trouver des plantes cultivées. Les cultures du Beneath sont particulièrement résilientes et tolèrent des chaleurs extrêmes, les rendant idéales pour des plantations souterraines ou à la surface."
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Les plantations dans le Sous-Monde fonctionnent pareillement à la surface ; ayant des exigences concernant humidité, température ainsi que nutriments. Elles peuvent aussi être cultivées dans une $(thing)serre$().$(br2)Attention  :  les cultures plantées dans le Sous-Monde nécessite toujours un niveau de lumière minimum de 12, qui n'est pas présent naturellement. Ce problème peut être résolu par des $(l:tfc:beneath/curious_blocks#blackstone_aqueduct)aqueducts de lave$() ou tout autre source lumineuse."
+			"text": "Les plantations dans le Beneath fonctionnent pareillement à la surface ; ayant des exigences concernant humidité, température ainsi que nutriments. Elles peuvent aussi être cultivées dans une $(thing)serre$().$(br2)Attention  :  les cultures plantées dans le Beneath nécessitent toujours un niveau de lumière minimum de 12, qui n'est pas présent naturellement. Ce problème peut être résolu par des $(l:tfc:beneath/curious_blocks#blackstone_aqueduct)aqueducs de lave$() ou tout autre source lumineuse."
 		},
 		{
 			"type": "patchouli:text",
@@ -24,8 +24,8 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "cassava",
-			"title": "Cassava",
-			"text": "$(bold)$(l:the_world/climate#temperature)Température$(): 10 - 80 °C$(br)$(bold)$(l:mechanics/hydration)Hhumidité$(): 70 - 100 %$(br)$(bold)Nutriment$(): Azote$(br2)Le manioc peut être consommé afin de gagner de la nutrition $(thing)Légume$(), mais il est plus efficace $(thing)cuisiné$() avant d'être mangé.$(br)"
+			"title": "Manioc",
+			"text": "$(bold)$(l:the_world/climate#temperature)Température$() : 10 - 80 °C$(br)$(bold)$(l:mechanics/hydration)Hydratation$() : 70 - 100 %$(br)$(bold)Nutriment$() : Azote$(br2)Le manioc peut être consommé afin de gagner de la nutrition $(thing)Légume$(), mais il est plus efficace $(thing)cuisiné$() avant d'être mangé.$(br)"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -133,14 +133,14 @@
 					}
 				}
 			],
-			"text": "$(thing)Wild Cassava$() grow between Y=203 and Y=80.",
+			"text": "Le $(thing)manioc sauvage$() pousse entre Y=203 et Y=80",
 			"enable_visualize": false
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "peanut",
-			"title": "Peanut",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 10 - 80 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 20 - 80 %$(br)$(bold)Nutrient$(): Potassium$(br2)Peanuts can be eaten for $(thing)Vegetable$() and $(thing)Protein$() nutrition"
+			"title": "Cacahuète",
+			"text": "$(bold)$(l:the_world/climate#temperature)Température$() : 10 - 80 °C$(br)$(bold)$(l:mechanics/hydration)Hydratation$() : 20 - 80 %$(br)$(bold)Nutriment$() : Potassium$(br2)Les cacahuètes peuvent être mangées pour combler vos besoins en $(thing)Légume$() et $(thing)Protéine$()"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -248,7 +248,7 @@
 					}
 				}
 			],
-			"text": "$(thing)Wild Peanuts$() grow between Y=203 and Y=80.",
+			"text": "Les $(thing)cacahuètes sauvages$() poussent entre Y=203 et Y=80",
 			"enable_visualize": false
 		},
 		{

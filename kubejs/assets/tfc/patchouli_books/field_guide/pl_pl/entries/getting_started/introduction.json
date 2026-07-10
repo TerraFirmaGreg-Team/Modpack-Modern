@@ -77,7 +77,7 @@
 			"recipes": [
 				"tfg:rock_knapping/stone_axe_head"
 			],
-			"text": "$(thing)Siekiery$() mogą być użyte do ścięcia całych drzew, kłód i liści. Jednakże sadzonki i patyki będą uzyskiwane tylko w przypadku osobnego zniszczenia liści."
+			"text": "$(thing)Siekiery$() mogą być użyte do ścięcia całych drzew: pni i liści. Jednakże sadzonki i patyki będą uzyskiwane tylko w przypadku osobnego zniszczenia liści."
 		},
 		{
 			"type": "tfc:rock_knapping_recipe",

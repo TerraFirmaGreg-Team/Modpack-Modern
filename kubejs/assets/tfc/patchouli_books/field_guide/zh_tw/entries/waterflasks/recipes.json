@@ -17,14 +17,14 @@
       "type": "patchouli:crafting",
       "recipe": "waterflasks:crafting/repair_leather",
       "recipe2": "tfg:shaped/repair_iron_bladder",
-      "title": "Repair Recipes"
+      "title": "修補配方"
     },
     {
       "type": "patchouli:crafting",
       "recipe": "waterflasks:crafting/repair_broken_leather",
       "recipe2": "tfg:shaped/repair_broken_iron",
-      "title": "Renew Recipes",
-      "text": "Flasks can also be repaired when completely broken."
+      "title": "修復配方",
+      "text": "水壺在全損後也能進行修復"
     },
     {
       "type": "patchouli:crafting",

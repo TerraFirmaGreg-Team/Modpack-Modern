@@ -44,14 +44,6 @@ function registerTFGWorldGenBeneathDecoBlocks(event) {
 		.tagBlock('tfc:dirt')
 		.tagItem('minecraft:dirt')
 		.tagBlock('minecraft:mineable/hoe')
-	
-	event.create('tfg:pale_moss_carpet')
-		.mapColor('glow_lichen')
-		.hardness(0.1)
-		.soundType('moss')
-		.box(0, 0, 0, 16, 1, 16)
-		.tagItem('tfc:compost_greens_low')
-		.tagBlock('minecraft:mineable/hoe')
 
 	// Plants
 

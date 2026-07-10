@@ -6,7 +6,7 @@
 	"constructionwand.description.durability.unlimited": "无限",
 	"constructionwand.description.key.sneak": "潜行",
 	"constructionwand.description.key.sneak_opt": "潜行+%s",
-	"constructionwand.description.wand": "%1$s可以在建筑物面向你的一侧放置最多%2$d个方块，持续时间为%3$s。\n\n按住%5$s并滚动以更改放置限制（水平、垂直、北/南、东/西、无锁定）。\n\n在选项配置GUI上打开%6$s§9+右键单击§0。\n\n§5§nUNDO§0§r\n在查看方块时向下折叠§9Sneak+§0%4$s将显示你放置的最后一个方块,并在其周围加上绿色边框。§9潜行+§0%4$s§9+右键单击其中任何一个方块将撤消操作,并将所有以此法放置的方块重返至玩家背包。如果你使用了破坏核心,它将恢复方块。\n\n§5§n容器§0§r\n潜影盒、收纳袋和许多其它模组存在于玩家背包内的容器都可以为建筑手杖提供构建所需的方块。\n\n§5§非即时优先级§0§r\n如果玩家在使用手杖时副手栏持有所需方块将被放置,而不是只是在你的手里放着。",
+	"constructionwand.description.wand": "%1$s可以在建筑物面向你的一侧放置最多%2$d个方块，持续时间为%3$s。\n\n按住%5$s并滚动以更改放置限制（水平、垂直、北/南、东/西、无锁定）。\n\n在选项配置GUI上打开%6$s§9+右键单击§0。\n\n§5§nUNDO§0§r\n在查看方块时向下折叠§9Sneak+§0%4$s将显示你放置的最后一个方块,并在其周围加上绿色边框。§9潜行+§0%4$s§9+右键单击其中任何一个方块将撤消操作,并将所有以此法放置的方块重返至玩家背包。如果你使用了破坏核心,它将恢复方块。\n\n§5§n容器§0§r\n潜影盒、收纳袋和许多其它模组存在于玩家背包内的容器都可以为建筑手杖提供构建所需的方块。\n\n§5§n非即时优先级§0§r\n如果玩家在使用手杖时副手栏持有所需方块将被放置,而不是只是在你的手里放着。",
 	"constructionwand.option.cores": "",
 	"constructionwand.option.cores.constructionwand:core_angel": "§6天使核心",
 	"constructionwand.option.cores.constructionwand:core_angel.desc": "在面向你的方块的背面放置方块，还可以悬空放置方块",

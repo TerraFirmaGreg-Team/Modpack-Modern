@@ -1,12 +1,12 @@
 {
   "__comment__": "This file was automatically created by mcresources",
-  "name": "Flask Recipes",
+  "name": "水筒のレシピ",
   "category": "tfc:waterflasks",
   "icon": "waterflasks:leather_flask",
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "There are three tiers of water flasks.$(br)The leather flask holds 5 drinks and lasts for 100 uses.$(br)The iron flask holds 20 drinks, and lasts for 400 uses.$(br)The red steel flask holds 20 drinks, and lasts for ever.$(br)Both leather and iron flasks may be repaired."
+      "text": "水筒には3つの種類があります。$(br)革製の水筒は5杯分入り、100回使用できます。$(br)鉄製の水筒は20杯分入り、400回使用できます。$(br)赤鋼製の水筒は20杯分入り、永久に使用できます。$(br)革製と鉄製の水筒は、どちらも修理が可能です。"
     },
     {
       "type": "patchouli:crafting",
@@ -17,14 +17,14 @@
       "type": "patchouli:crafting",
       "recipe": "waterflasks:crafting/repair_leather",
       "recipe2": "tfg:shaped/repair_iron_bladder",
-      "title": "Repair Recipes"
+      "title": "修理レシピ"
     },
     {
       "type": "patchouli:crafting",
       "recipe": "waterflasks:crafting/repair_broken_leather",
       "recipe2": "tfg:shaped/repair_broken_iron",
-      "title": "Renew Recipes",
-      "text": "Flasks can also be repaired when completely broken."
+      "title": "再生レシピ",
+      "text": "水筒は完全に壊れても修理することができます。"
     },
     {
       "type": "patchouli:crafting",
