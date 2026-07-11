@@ -571,7 +571,6 @@ global.TFG_CREATE_GENERIC_FOOD_ITEM = /** @type {TFGCreateGenericFoodItem[]} */ 
 		id: 'tfg:food/smoothie',
 		texture: 'tfg:item/food/smoothie',
 		drinkable: true,
-		alwaysEdible: true,
 		size: {
 			volume: 'small',
 			weight: 'medium'
@@ -599,7 +598,6 @@ global.TFG_CREATE_GENERIC_FOOD_ITEM = /** @type {TFGCreateGenericFoodItem[]} */ 
 		id: 'tfg:food/fruit_yogurt',
 		texture: 'tfg:item/food/fruit_yogurt',
 		drinkable: true,
-		alwaysEdible: true,
 		size: {
 			volume: 'small',
 			weight: 'medium'
@@ -613,7 +611,6 @@ global.TFG_CREATE_GENERIC_FOOD_ITEM = /** @type {TFGCreateGenericFoodItem[]} */ 
 		id: 'tfg:food/yogurt',
 		texture: 'tfg:item/food/yogurt',
 		drinkable: true,
-		alwaysEdible: true,
 		size: {
 			volume: 'small',
 			weight: 'medium'
