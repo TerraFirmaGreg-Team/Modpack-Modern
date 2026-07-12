@@ -95,4 +95,9 @@ const registerFirmaLifeFluidTags = (event) => {
     event.add('firmalife:oils', 'gtceu:fish_oil')
     event.add('firmalife:oils', 'tfg:triglyceride_oil')
     event.add('firmalife:oils', 'tfg:peanut_oil')
+    event.add('firmalife:oils', 'tfg:palm_oil');
+
+    event.remove('tfc:milks', 'firmalife:coconut_milk');
+    event.remove('tfc:drinkables', 'firmalife:coconut_milk');
+    event.remove('tfc:any_drinkables', 'firmalife:coconut_milk');
 }

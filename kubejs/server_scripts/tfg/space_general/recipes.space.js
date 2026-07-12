@@ -83,6 +83,7 @@ function registerTFGSpaceRecipes(event) {
 	event.recipes.gtceu.aqueous_accumulator('spring_water')
 		.circuit(6)
 		.dimension('minecraft:overworld')
+		.dimension('minecraft:the_nether')
 		.duration(20)
 		.EUt(GTValues.VA[GTValues.LV])
 		.adjacentFluids(["tfc:spring_water"])

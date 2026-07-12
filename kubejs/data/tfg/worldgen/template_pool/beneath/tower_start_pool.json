@@ -3,10 +3,19 @@
 	"fallback": "minecraft:empty",
 	"elements": [
 		{
-			"weight": 100,
+			"weight": 60,
 			"element": {
-				"location": "tfg:beneath/tower_3",
-				"processors": "tfg:beneath/tower_transition",
+				"location": "tfg:beneath/tower/3/gilded",
+				"processors": "tfg:beneath/tower/3/gilded",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 40,
+			"element": {
+				"location": "tfg:beneath/tower/3/basalt",
+				"processors": "tfg:beneath/tower/3/basalt",
 				"projection": "rigid",
 				"element_type": "minecraft:single_pool_element"
 			}

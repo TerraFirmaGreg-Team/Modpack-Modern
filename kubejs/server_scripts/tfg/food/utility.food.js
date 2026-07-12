@@ -835,13 +835,15 @@ global.generateMealFoodRecipes = function(event, inputItems, inputFluid, outputF
  * @param {Boolean|null} genShapelessHammerRecipe Wether to generate shapeless hammer recipe. Defaults to false.
  * @param {Boolean|null} genShapelessMortarRecipe Wether to generate shapeless mortar and pestle recipe. Defaults to false.
  * @param {Boolean|null} genProcessorRecipe Wether to generate a processor recipe. Defaults to true.
+ * @param {Boolean|null} genQuernRecipe Wether to generate a quern recipe. Defaults to false.
  * @param {Number|null} circuitOverride Circuit number override for the processor recipe. Defaults to 30.
  */
-global.generateCuttingFoodRecipes = function(event, inputItem, outputItem, genShapelessKnifeRecipe, genShapelessHammerRecipe, genShapelessMortarRecipe, genProcessorRecipe, circuitOverride) {
+global.generateCuttingFoodRecipes = function(event, inputItem, outputItem, genShapelessKnifeRecipe, genShapelessHammerRecipe, genShapelessMortarRecipe, genProcessorRecipe, genQuernRecipe, circuitOverride) {
 	genShapelessKnifeRecipe = genShapelessKnifeRecipe === true;
 	genShapelessHammerRecipe = genShapelessHammerRecipe === true;
 	genShapelessMortarRecipe = genShapelessMortarRecipe === true;
 	genProcessorRecipe = genProcessorRecipe !== false;
+	genQuernRecipe = genQuernRecipe === true;
 	let circuit = circuitOverride ? circuitOverride : 30;
 	let parsedInputItem;
 
@@ -864,10 +866,17 @@ global.generateCuttingFoodRecipes = function(event, inputItem, outputItem, genSh
 	}
 
 	if (genShapelessMortarRecipe) {
-		event.recipes.tfc.advanced_shapeless_crafting(
-			outputItem,
-			[parsedInputItem, '#forge:tools/mortars'], inputItem)
-			.id(`tfg:crafting/${unfuckedOutput}_mortar`);
+		event.recipes.tfc.advanced_shaped_crafting(
+			TFC.itemStackProvider.of(outputItem).copyFood(), 
+			['A', 'B'], {
+				A: parsedInputItem,
+				B: '#forge:tools/mortars'
+			}, 0, 0).id(`tfg:crafting/${unfuckedOutput}_mortar`);
+	}
+
+	if (genQuernRecipe) {
+		event.recipes.tfc.quern(TFC.itemStackProvider.of(outputItem).copyFood(), parsedInputItem)
+		.id(`tfg:quern/${unfuckedOutput}`);
 	}
 
 	if (genProcessorRecipe) {

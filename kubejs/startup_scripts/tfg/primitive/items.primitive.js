@@ -187,7 +187,14 @@ function registerTFGPrimitiveItems(event) {
 	
 	event.create('tfg:bundled_scraped_flax')
 		.tag('tfc:scrapable')
-		.texture('tfg:item/bundled_scraped_flax')	
+		.texture('tfg:item/bundled_scraped_flax')
+		
+	// Oil Palm Stuff
+	event.create('tfg:oil_palm_paste')
+	event.create('tfg:oil_palm_debris')
+	event.create('tfg:oil_palm_fiber')
+		.tag('tfg:burlap_fiber')
+		.tag('tfc:compost_browns')
 
 		// Molds
 	event.create('tfg:rod_mold', 'tfc:mold')

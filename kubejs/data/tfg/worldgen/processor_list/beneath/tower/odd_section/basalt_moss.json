@@ -1,0 +1,71 @@
+{
+	"processors": [
+        {
+            "processor_type": "lithostitched:condition",
+            "random_mode": {
+                "mode": "per_block",
+                "name": "palette:basalt_moss"
+            },
+            "if_true": [
+                {
+                    "type": "lithostitched:matching_blocks",
+                    "blocks": "minecraft:bricks",
+                    "match_type": "input"
+                }
+                ],
+            "then": {
+                "processor_type": "lithostitched:set_block",
+                "state_provider": {
+                    "type": "minecraft:noise_provider",
+                    "seed": 52,
+                    "noise": {
+                        "firstOctave": -4,
+                        "amplitudes": [ 10, 0, 0, 0 ]
+                    },
+                    "scale": 5,
+                    "states": [
+                        { "Name": "tfc:rock/hardened/basalt" },
+                        { "Name": "tfc:rock/hardened/basalt" },
+                        { "Name": "tfc:rock/hardened/basalt" },
+                        { "Name": "tfc:rock/hardened/basalt" },
+                        { "Name": "tfc:rock/mossy_cobble/basalt" },
+                        { "Name": "tfc:rock/mossy_cobble/basalt" },
+                        { "Name": "tfc:rock/mossy_cobble/basalt" },
+                        { "Name": "tfc:rock/mossy_cobble/basalt" },
+                        { "Name": "tfc:rock/bricks/basalt" },
+                        { "Name": "tfc:rock/bricks/basalt" },
+                        { "Name": "minecraft:moss_block" },
+                        { "Name": "tfc:rock/bricks/basalt" },
+                        { "Name": "tfc:rock/bricks/basalt" },
+                        { "Name": "tfc:rock/mossy_cobble/basalt" },
+                        { "Name": "minecraft:moss_block" },
+                        { "Name": "minecraft:moss_block" },
+                        { "Name": "minecraft:moss_block" },
+                        { "Name": "minecraft:moss_block" },
+                        { "Name": "tfc:rock/bricks/basalt" },
+                        { "Name": "tfc:rock/bricks/basalt" },
+                        { "Name": "minecraft:moss_block" },
+                        { "Name": "tfc:rock/mossy_cobble/basalt" },
+                        { "Name": "tfc:rock/mossy_cobble/basalt" },
+                        { "Name": "tfc:rock/bricks/basalt" },
+                        { "Name": "tfc:rock/bricks/basalt" },
+                        { "Name": "minecraft:moss_block" },
+                        { "Name": "tfc:rock/cracked_bricks/basalt" }
+                    ]
+                },
+                "preserve_state": true,
+                "random_mode": "per_block",
+                "block_entity_modifier": {
+                    "type": "minecraft:passthrough"
+                }
+            }
+            },
+            {
+			"processor_type": "lithostitched:block_swap",
+			"blocks": {
+				"tfc:smooth_sandstone/red": "minecraft:basalt",
+				"minecraft:brick_wall": "tfc:rock/bricks/basalt_wall"
+            }
+		}
+	]
+}
