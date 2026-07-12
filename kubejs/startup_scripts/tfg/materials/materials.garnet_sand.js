@@ -17,32 +17,23 @@ const registerTFGGarnetSandMaterials = (event) => {
 		.color(0x8C4F2E)
 		.secondaryColor(0xC79269)
 
-	event.create('tfg:residual_slag')
-		.dust()
+	event.create('tfg:garnet_residual_slag')
 		.gem()
 		.iconSet(GTMaterialIconSet.ROUGH)
-		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.DISABLE_MATERIAL_RECIPES)
 		.color(0x8C8577)
 		.secondaryColor(0xC4BEB0)
 
-	event.create('tfg:fusion_clinker')
-		.dust()
-		.iconSet(GTMaterialIconSet.ROUGH)
-		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-		.color(0x9E8F6F)
-		.secondaryColor(0xD4C6A1)
-
-	event.create('tfg:secondary_liquor')
+	event.create('tfg:garnet_secondary_liquor')
 		.liquid(new GTFluidBuilder().temperature(370))
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 		.color(0xB9D3D6)
 		.secondaryColor(0xE0EFEF)
 
 	event.create('tfg:inert_slag')
-		.dust()
 		.gem()
 		.iconSet(GTMaterialIconSet.ROUGH)
-		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.DISABLE_MATERIAL_RECIPES)
 		.color(0x777777)
 		.secondaryColor(0xB0B0B0)
 
@@ -50,18 +41,11 @@ const registerTFGGarnetSandMaterials = (event) => {
 
 	//#region Step 2
 
-	event.create('tfg:depleted_liquor_a')
+	event.create('tfg:depleted_garnet_liquor_a')
 		.liquid(new GTFluidBuilder().temperature(298))
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 		.color(0xC9A889)
 		.secondaryColor(0xE6D4C0)
-
-	event.create('tfg:al_cr_y_hydroxide_cake')
-		.dust()
-		.iconSet(GTMaterialIconSet.FINE)
-		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-		.color(0x8FAF8A)
-		.secondaryColor(0xC9DDC5)
 
 	event.create('tfg:sodium_aluminate_liquor')
 		.liquid(new GTFluidBuilder().temperature(370))
@@ -70,7 +54,7 @@ const registerTFGGarnetSandMaterials = (event) => {
 		.color(0xE8EDE0)
 		.secondaryColor(0xC7D4BC)
 
-	event.create('tfg:depleted_liquor_b')
+	event.create('tfg:depleted_garnet_liquor_b')
 		.liquid(new GTFluidBuilder().temperature(298))
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 		.color(0xD4C2AE)
@@ -82,10 +66,17 @@ const registerTFGGarnetSandMaterials = (event) => {
 
 	event.create('tfg:cr_y_residue')
 		.dust()
-		.iconSet(GTMaterialIconSet.FINE)
-		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.iconSet(GTMaterialIconSet.OPAL)
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.DISABLE_MATERIAL_RECIPES)
 		.color(0x7FA87A)
 		.secondaryColor(0xC3DCC0)
+
+	event.create('tfg:enriched_cr_y_residue')
+		.dust()
+		.iconSet(GTMaterialIconSet.OPAL)
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.DISABLE_MATERIAL_RECIPES)
+		.color(0x5E745C)
+		.secondaryColor(0xA4E89D)
 
 	event.create('tfg:cr_y_pregnant_liquor')
 		.liquid(new GTFluidBuilder().temperature(370).attribute(GTFluidAttributes.ACID))

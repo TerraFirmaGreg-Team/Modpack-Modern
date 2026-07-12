@@ -89,4 +89,15 @@ const registerTFGItems = (event) => {
 	event.create('tfg:chemical_prismatic_dye')
 		.texture('tfg:item/chemical_prismatic_dye')
 		.tag('forge:dyes/prismatic')
+
+	// Item for Garnet Line
+
+	event.create('tfg:garnet_fusion_clinker')
+		.texture('tfg:item/fusion_clinker')
+		.tag('forge:fusion_clinker/garnet')
+
+	event.create('tfg:al_cr_y_hydroxide_cake')
+		.texture('tfg:item/al_cr_y_hydroxide_cake')
+		.tag('forge:cake/al_cr_y_hydroxide')
+
 }

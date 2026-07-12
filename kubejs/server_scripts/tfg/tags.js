@@ -436,6 +436,17 @@ const registerTFGFluidTags = (event) => {
 	// Fluid tag to run the Ore Proc Multiblock
 
 	event.add('tfg:ore_proc_gas', 'gtceu:natural_gas')
+
+	// Garnet Slurry
+
+	event.add('tfg:dirty_garnet_slurry', 'tfg:dirty_yellow_garnet_slurry')
+	event.add('tfg:dirty_garnet_slurry', 'tfg:dirty_red_garnet_slurry')
+
+	event.add('tfg:filtered_garnet_slurry', 'tfg:filtered_yellow_garnet_slurry')
+	event.add('tfg:filtered_garnet_slurry', 'tfg:filtered_red_garnet_slurry')
+
+	event.add('tfg:clean_garnet_slurry', 'tfg:clean_yellow_garnet_slurry')
+	event.add('tfg:clean_garnet_slurry', 'tfg:clean_red_garnet_slurry')
 }
 //#endregion
 
