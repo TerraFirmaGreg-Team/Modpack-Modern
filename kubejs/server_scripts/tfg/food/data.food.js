@@ -92,6 +92,38 @@ function registerTFGFoodData(event) {
 		food.saturation(1);
 	});
 
+	// Date
+	event.foodItem('tfg:food/date', (food) => {
+		food.hunger(4.0);
+		food.decayModifier(2.2);
+		food.fruit(1);
+		food.saturation(0.5);
+	});
+
+	// Acai
+	event.foodItem('tfg:food/acai', (food) => {
+		food.hunger(4.0);
+		food.decayModifier(2.2);
+		food.water(10);
+		food.fruit(1.5);
+		food.saturation(1);
+	});
+
+	// Oil Palm
+	event.foodItem('tfg:food/oil_palm', (food) => {
+		food.hunger(4.0);
+		food.decayModifier(1.8);
+		food.water(5);
+	});
+
+	// Coconuts
+	event.foodItem('tfg:palm_tree/coconut_fruit_green', (food) => {
+		food.decayModifier(1.6);
+	});
+	event.foodItem('tfg:palm_tree/coconut_fruit_brown', (food) => {
+		food.decayModifier(2);
+	});
+
 	// Fly Agaric
 	event.foodItem('tfg:food/fly_agaric', (food) => {
 		food.hunger(4.0);

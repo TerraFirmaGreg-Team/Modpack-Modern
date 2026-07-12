@@ -1,0 +1,16 @@
+{
+	"type": "tfc:random_tree",
+	"config": {
+		"structures": [
+			"tfg:palm_tree/acai_0",
+			"tfg:palm_tree/acai_1",
+			"tfg:palm_tree/acai_2",
+			"tfg:palm_tree/acai_3"
+		],
+		"placement": {
+			"width": 1,
+			"height": 12,
+			"ground_type": "sand"
+		}
+	}
+}

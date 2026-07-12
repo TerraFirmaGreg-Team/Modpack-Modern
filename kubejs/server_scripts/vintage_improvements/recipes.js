@@ -501,6 +501,10 @@ function registerVintageImprovementsRecipes(event) {
 		.processingTime(500 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
 		.id('tfg:vi/vacuumizing/peanut')
 
+	event.recipes.vintageimprovements.vacuumizing([Fluid.of('tfg:palm_oil', 500), 'tfg:oil_palm_debris'], 'tfg:oil_palm_paste')
+		.processingTime(500 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
+		.id('tfg:vi/vacuumizing/palm_oil')
+
 	event.recipes.vintageimprovements.vacuumizing(Fluid.of('gtceu:seed_oil', 16), '#forge:seeds')
 		.processingTime(50 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
 		.id('tfg:vi/vacuumizing/seed_oil')

@@ -531,6 +531,27 @@ function registerTFGOverworldPlacedFeatures(event) {
 	event.remove("tfc:in_biome/large_features/old_mountains", "tfc:random_active_hot_spring")
 	event.remove("tfc:in_biome/large_features/volcanic_mountains", "tfc:random_active_hot_spring")
 	event.remove("tfc:in_biome/large_features/canyons", "tfc:random_active_hot_spring")
+
+	// Palm Fruits
+	/** @param {{Biome[]}} */
+	const palmFruitBiomes = [
+		//TFG
+		'tfg:in_biome/large_features/coastal_dunes',
+		'tfg:in_biome/large_features/embayments',
+		'tfg:in_biome/large_features/old_shield_volcano_shore',
+		'tfg:in_biome/large_features/sea_stacks',
+		'tfg:in_biome/large_features/setback_cliffs',
+		'tfg:in_biome/large_features/shore',
+		'tfg:in_biome/large_features/tidal_flats',
+		// TFC
+		'tfc:in_biome/large_features/shore',
+		'tfc:in_biome/large_features/tidal_flats'
+	];
+
+	palmFruitBiomes.forEach(biome => {
+		event.add(biome, 'tfg:earth/crop/palm_tree/coconut_patch');
+		event.add(biome, 'tfg:earth/crop/palm_tree/date_patch');
+	});
 }
 
 function registerTFGOverworldEntityTypeTags(event) {
