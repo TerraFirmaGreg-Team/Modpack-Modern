@@ -22,8 +22,16 @@
 		{
 			id: "1F73EFB819A489A9"
 			linked_quest: "3AF4B19564593C89"
+			shape: "hexagon"
 			x: 3.0d
 			y: 9.0d
+		}
+		{
+			id: "5865A1E9D48261C9"
+			linked_quest: "78001BB24E7F1D1F"
+			shape: "hexagon"
+			x: -5.5d
+			y: 12.0d
 		}
 	]
 	quests: [
@@ -324,7 +332,7 @@
 				type: "item"
 			}]
 			title: "{quests.medium_voltage.mv_mixer.title}"
-			x: 7.0d
+			x: 6.0d
 			y: 1.0d
 		}
 		{
@@ -426,7 +434,10 @@
 			y: -4.0d
 		}
 		{
-			dependencies: ["4A92AFD2532EED26"]
+			dependencies: [
+				"4A92AFD2532EED26"
+				"3AF4B19564593C89"
+			]
 			description: ["{quests.medium_voltage.mv_steel_alloy.desc}"]
 			icon: "gtceu:vanadium_steel_ingot"
 			id: "682C26579EDDCA76"
@@ -439,7 +450,7 @@
 				type: "item"
 			}]
 			title: "{quests.medium_voltage.mv_steel_alloy.title}"
-			x: 10.0d
+			x: 8.5d
 			y: 1.0d
 		}
 		{
@@ -1328,7 +1339,7 @@
 				}
 			]
 			title: "{quests.medium_voltage.mv_ulpic.title}"
-			x: 4.5d
+			x: 6.0d
 			y: 7.5d
 		}
 		{
@@ -1807,7 +1818,10 @@
 			y: 13.0d
 		}
 		{
-			dependencies: ["10FB27DD3C7BEC2F"]
+			dependencies: [
+				"10FB27DD3C7BEC2F"
+				"78001BB24E7F1D1F"
+			]
 			description: ["{quests.medium_voltage.chemical_bath.desc}"]
 			id: "28111275F2315FF7"
 			size: 1.0d
@@ -1923,7 +1937,7 @@
 				type: "item"
 			}]
 			title: "{quests.medium_voltage.vanadium_tools.title}"
-			x: 10.0d
+			x: 8.5d
 			y: -0.5d
 		}
 		{
@@ -2097,16 +2111,25 @@
 				"{@pagebreak}"
 				"{quests.medium_voltage.chameleon_spray.desc.2}"
 			]
+			icon: "tfg:chameleon_spray_can"
 			id: "382646E2476ED41C"
 			optional: true
 			shape: "heart"
 			subtitle: "{quests.medium_voltage.chameleon_spray.subtitle}"
-			tasks: [{
-				id: "4033CBC14C946625"
-				item: "tfg:chameleon_spray_can"
-				type: "item"
-			}]
-			x: 11.5d
+			tasks: [
+				{
+					id: "4033CBC14C946625"
+					item: "tfg:chameleon_spray_can"
+					type: "item"
+				}
+				{
+					id: "4DA69B758E341564"
+					item: "tfg:prismatic_paint_bucket"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 10.0d
 			y: 1.0d
 		}
 	]

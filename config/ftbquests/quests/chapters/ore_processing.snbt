@@ -1361,7 +1361,15 @@
 		}
 		{
 			dependencies: ["05A072877CA01773"]
-			description: ["{quests.ore_proc.chromium.desc}"]
+			description: [
+				"{quests.ore_proc.chromium.desc.1}"
+				"{@pagebreak}"
+				"{quests.ore_proc.chromium.desc.2}"
+				"{@pagebreak}"
+				"{quests.ore_proc.chromium.desc.3}"
+				"{@pagebreak}"
+				"{quests.ore_proc.chromium.desc.4}"
+			]
 			id: "3AF4B19564593C89"
 			subtitle: "{quests.ore_proc.chromium.subtitle}"
 			tasks: [{
@@ -1374,13 +1382,15 @@
 			y: -4.5d
 		}
 		{
-			dependencies: ["0F0525A70047EEB2"]
+			dependencies: ["701BCADAE5CF6CA5"]
 			description: [
 				"{quests.low_voltage.geologic_vulcanizer.desc.1}"
 				"{@pagebreak}"
 				"{quests.low_voltage.geologic_vulcanizer.desc.2}"
 			]
 			id: "2D40F76DFA41D747"
+			optional: true
+			shape: "heart"
 			size: 1.0d
 			subtitle: "{quests.low_voltage.geologic_vulcanizer.subtitle}"
 			tasks: [{
@@ -1390,6 +1400,24 @@
 			}]
 			x: -6.0d
 			y: -6.5d
+		}
+		{
+			dependencies: ["05A072877CA01773"]
+			description: [
+				"{quests.ore_proc.molybdenum.desc.1}"
+				"{@pagebreak}"
+				"{quests.ore_proc.molybdenum.desc.2}"
+			]
+			id: "78001BB24E7F1D1F"
+			subtitle: "{quests.ore_proc.molybdenum.subtitle}"
+			tasks: [{
+				id: "65B94783606A42D8"
+				item: "gtceu:molybdenum_dust"
+				type: "item"
+			}]
+			title: "{quests.ore_proc.molybdenum.title}"
+			x: 3.0d
+			y: -4.5d
 		}
 	]
 	subtitle: ["{quests.ore_proc.subtitle}"]

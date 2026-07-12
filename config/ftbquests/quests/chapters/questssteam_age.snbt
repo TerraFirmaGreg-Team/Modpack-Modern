@@ -2086,6 +2086,35 @@
 			x: -15.0d
 			y: -4.0d
 		}
+		{
+			dependencies: ["46FA9DD4755A5548"]
+			description: ["{quest.steam_age.soft_mallet.desc}"]
+			id: "1D4701C28C2FACF7"
+			optional: true
+			shape: "heart"
+			size: 1.25d
+			subtitle: "{quest.steam_age.soft_mallet.subtitle}"
+			tasks: [{
+				id: "555897B32BD0B6DC"
+				item: {
+					Count: 1
+					id: "gtceu:wood_mallet"
+					tag: {
+						Damage: 0
+						DisallowContainerItem: 0b
+						GT.Behaviours: { }
+						GT.Tool: {
+							DefaultEnchantments: [ ]
+							MaxDamage: 127
+						}
+						HideFlags: 2
+					}
+				}
+				type: "item"
+			}]
+			x: -19.5d
+			y: 10.0d
+		}
 	]
 	subtitle: ["{quests.steam_age.subtitle}"]
 	title: "{quests.steam_age}"
