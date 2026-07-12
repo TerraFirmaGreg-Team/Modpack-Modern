@@ -1,0 +1,15 @@
+{
+	"processors": [
+		{
+			"processor_type": "lithostitched:reference",
+			"processor_lists": [
+				"tfg:beneath/tower/stairs",
+				"tfg:beneath/tower/door_deepslate",
+				"tfg:beneath/tower/even_section/magma_gilded",
+				"tfg:beneath/tower/holes",
+				"tfg:beneath/tower/stairs",
+                "tfg:beneath/tower/cracks"
+			]
+		}
+	]
+}

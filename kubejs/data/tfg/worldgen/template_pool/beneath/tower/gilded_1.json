@@ -1,0 +1,15 @@
+{
+	"name": "tfg:beneath/tower/gilded_1",
+	"fallback": "minecraft:empty",
+	"elements": [
+		{
+			"weight": 40,
+			"element": {
+				"location": "tfg:beneath/tower/1/gilded",
+				"processors": "tfg:beneath/tower/1/gilded",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		}
+	]
+}
