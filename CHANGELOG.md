@@ -1,10 +1,39 @@
 # Changelog
 ## Unreleased
+
+### Palm Fruit Trees
+- Added Coconuts, Dates, Acai, and Oil Palms trees which are a new variety of crop trees.
+- *Palm Fruit Trees* spawn naturally along beaches or in the Beneath within their given climate zones. Information for each tree can be viewed in their tooltip or in the field guide in a future update. Palm fruit clusters will grow around the trees canopy head when it is their fruiting season and climate conditions are met. Clusters advance in age once a day until mature, at which point they can be harvested by right-clicking them, using a harvest basket on them, or throwing a projectile at them (besides snow balls). Harvesting the canopy head block will yield 1-2 saplings. Saplings can be planted on dirt or sand and will grow in stages until they are a full tree; around 5 days per stage and 4 stages. Palm Fruit Saplings can also be cultivated in greenhouses in hanging planters, although they dont give extra saplings.
+- Acai spawns naturally in the Beneath, most commonly in the tar pools biome. They are a source of fruit.
+- Dates spawn naturally in the overworld along beaches. They are a source of fruit.
+- Oil Palms spawns naturally in the Beneath, most commonly in the tar pools biome. They are a source of oil and burlap fibers.
+- Coconuts spawn naturally in the overworld along beaches. They can be harvested early for young coconuts which can be drunk for dairy, and water. Or you can harvest them when mature for brown coconuts which yield flesh that can be eaten for dairy. Be careful when harvesting or walking under coconut trees as they can drop on your head and knock you out.
+- More food and meals related to these crops will be coming later. As a tip you can calculate their rainfall zone by taking their hydration requirements and multiplying it by 5.
+### Ambiental
+- temperature change speed has been temporarily halved until there's a more reasonable way to fight against extreme temperatures.
+- lowered the temperature of many blocks. Players should no longer reach 100C when next to an EBF or -20C when surrounded by snow.
+- temperature damage has been lowered significantly and no longer makes the player lose thirst/hunger
+- when in a cold climate, small completely enclosed rooms will significantly warm the player up. Smaller rooms are considered warmer.
+- encased fans from Create now slightly cool the player down
 ### Changes
-- 
+- Added new variations of the Beneath tower structure, based on the new gilsonite bricks, basalt, and moss variants. (#4488) @Filiipa
+- Remove always-edible ability from smoothies and yogurt @Redeix
+- Added new methods to craft the various moss blocks (#4487) @OLOXpl
+- Added greenhouse roof blocks to #firmalife:valid_always_greenshouse_wall allowing them to be placed in any orientation. (#4490) @hollow-earth
+- Added loom recipes for linen cloth and silk cloth to wool for parity with the assembler. And renamed wool blocks to cloth blocks @Froffy025
+- Decreased regeneration pills hunger effect from 180s to 60s @hollow-earth
+- Added mineable with pickaxe tags to girders/struts @SakuraKitsurugi
+- Increase amount of item slots in Vulcanizer. You may need to break and replace the machine controller for this change to go into affect. @TomPlop
+- Smoothies, Juices, and Yogurts have had their volume changed to small. @Redeix
 ### Bug fixes
 - Pale Moss Carpet now acts like a carpet @strangelyng
 - Fix the Chameleon Spraycan being able to be fill with any fluids @Phoenixvine32908
+- Fixed pie pan dupe (#4497) @Redeix
+- Fixed stonecutter dupe (#4491) @OLOXpl
+- Removed quest rewards from reliable remover (#4446) @ashleney
+- Added ostrum deposits to gregtech terminals blacklist (#4465) @ashleney
+- Fixed TFG wood doors dropping two items when broken @strangelyng
+- Fixed canner dupe until fixed upstream @TomPlop
 
 ## [0.13.3] - 05-07-2026
 ### Changes

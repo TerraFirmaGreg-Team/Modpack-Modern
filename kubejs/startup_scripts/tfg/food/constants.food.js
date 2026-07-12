@@ -637,8 +637,8 @@ global.TFG_CREATE_GENERIC_FOOD_ITEM = /** @type {TFGCreateGenericFoodItem[]} */ 
 		drinkable: true,
 		alwaysEdible: true,
 		nutrition: {
-			decay: 1.6,
-			dairy: 0.5,
+			decay: 1.2,
+			dairy: 0.3,
 			water: 40,
 			quenching: 5 
 		}
@@ -648,7 +648,7 @@ global.TFG_CREATE_GENERIC_FOOD_ITEM = /** @type {TFGCreateGenericFoodItem[]} */ 
 		texture: 'tfg:item/food/opened_coconut',
 		nutrition: {
 			decay: 2,
-			dairy: 1,
+			dairy: 0.6,
 			water: 2,
 			saturation: 1.5
 		}
