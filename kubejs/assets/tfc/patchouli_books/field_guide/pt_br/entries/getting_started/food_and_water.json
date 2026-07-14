@@ -150,7 +150,7 @@
             "title": "Microplastics",
             "type": "patchouli:text",
             "anchor": "microplastics",
-            "text": "$(l)$(3)Microplastics$()$() come from consuming food packaged in plastic. Microplastics decrease naturally at a rate of 1%/day. Consume $(item)Nanofiltration Capsules$() to actively $(l:tfg_tips/mob_effects_glossary#cure_microplastics)Cure Microplastics$().$(br)Increasing your microplastics value gives the following effects:$()$(li)$(bold)Value >33% → $()$()$(italic)Increase high-temp thirst decay multiplier by 25%$()$(li)$(bold)Value >66% ↴$()$()$(italic)$(li2)Increase high-temp thirst decay multiplier by 50%.$()$()$(italic)$(li2)On any new increase: 5% chance to get $(l:tfg_ores/hazards#Carcinogens)Cancer$().$()$()"
+            "text": "$(l)$(3)Microplásticos$()$() provêm do consumo de alimentos embalados em plástico. Os níveis de microplásticos diminuem naturalmente a uma taxa de 1%/dia. Consuma $(item)Cápsulas de Nanofiltração$() para ativamente $(l:tfg_tips/mob_effects_glossary#cure_microplastics)Curar Microplásticos$().$(br)Aumentar os valores de microplásticos causa os seguintes efeitos:$()$(li)$(bold)Valor >33% → $()$()$(italic)Aumenta em 25% o multiplicador de desidratação em altas temperaturas.$()$(li)$(bold)Valor >66% ↴$()$()$(italic)$(li2)Aumenta em 50% o multiplicador de desidratação em altas temperaturas.$()$()$(italic)$(li2)A qualquer novo aumento: 5% de chance de contrair $(l:tfg_ores/hazards#Carcinogens)Câncer$().$()$()"
         },
         {
             "type": "patchouli:text",

@@ -66,12 +66,12 @@
     },
     {
       "type": "patchouli:image",
-      "title": "Ore Prospector",
+      "title": "Prospector de Minérios",
       "images": [
         "tfg:textures/gui/field_guide/prospecting/tfg_luv_ore_prospector.png"
       ],
       "border": true,
-      "text": "An example of what you may see using the $(#e373ff)LuV ore prospector$()."
+      "text": "\"Um exemplo do que você verá ao usar o $(#e373ff)prospector de minérios LuV$r.\""
     }
   ],
   "read_by_default": true,
