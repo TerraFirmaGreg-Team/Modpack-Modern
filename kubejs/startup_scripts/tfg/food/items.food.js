@@ -129,11 +129,12 @@ function registerTFGFoodItems(event) {
 	//#endregion
 	//#region Gimic Foods
 
+	// This will be changed a bit soonish to be more dynamic
+	// Or removed...
 	event.create('tfg:food/ice_soup')
 		.translationKey('item.tfg.food.ice_soup')
 		.texture('tfg:item/food/ice_soup')
 		.food(food => {
-			food.effect('tfg:cooling', 100, 0, 1)
 			food.eaten(ctx => {
 				if (ctx.player) {
 					ctx.player.give('tfc:ceramic/bowl')

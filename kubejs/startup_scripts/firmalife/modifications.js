@@ -17,19 +17,12 @@ function registerFirmalifeItemModifications(event) {
 		}
 	})
 	
-	//#region add cooling/heating to foods
-	global.COOLING_FOODS.forEach(food => {
-		event.modify(food, item => {
-			item.foodProperties = food => {
-				food.effect('tfg:cooling', 20, 0, 1)
-			}
-		})
-	})
+	//#region Temp Changing Foods
 	
 	global.WARMING_FOODS.forEach(food => {
 		event.modify(food, item => {
 			item.foodProperties = food => {
-				food.effect('tfg:warming', 20, 1, 1)
+				food.effect('tfg:warming', 9600, 0, 1)
 			}
 		})
 	})

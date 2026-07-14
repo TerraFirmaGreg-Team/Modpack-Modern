@@ -221,12 +221,8 @@ function registerTFGBakingAndDessertFoodRecipes(event) {
 		itemOutputProvider: TFC.isp.of('2x firmalife:food/vanilla_ice_cream').resetFood()
 	});
 
-	global.processorRecipe(event, 'chocolate_ice_cream', 300, 16, {
-		itemInputs: ['firmalife:food/vanilla_ice_cream'],
-		itemOutputs: ['firmalife:food/chocolate_ice_cream'],
-		fluidInputs: [Fluid.of('tfcchannelcasting:milk_chocolate', 100)],
-		itemOutputProvider: TFC.isp.of('firmalife:food/chocolate_ice_cream').resetFood()
-	});
+	global.generateMixingFoodRecipes(event, 'firmalife:food/vanilla_ice_cream', 'tfcchannelcasting:milk_chocolate 100', null, 'firmalife:food/chocolate_ice_cream', 
+		false, true, true, null, TFC.isp.of('firmalife:food/chocolate_ice_cream').resetFood());
 
 	global.processorRecipe(event, 'strawberry_ice_cream', 300, 16, {
 		itemInputs: ['firmalife:food/vanilla_ice_cream', '2x tfc:food/strawberry'],

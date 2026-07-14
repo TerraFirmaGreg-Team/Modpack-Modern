@@ -1,0 +1,14 @@
+{
+  "ingredient": {
+    "item": "firmalife:food/chocolate_ice_cream"
+  },
+  "category": "other",
+  "hunger": 4,
+  "saturation": 1.5,
+  "water": 1,
+  "decay_modifier": 5,
+  "grain": 0.25,
+  "dairy": 0.5,
+  "cooling": 8,
+  "sugary": 3
+}
