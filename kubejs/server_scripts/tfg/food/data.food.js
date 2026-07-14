@@ -71,7 +71,8 @@ function registerTFGFoodData(event) {
 		food.hunger(4.0);
 		food.decayModifier(0.8);
 		food.water(5);
-		food.fruit(2);
+		food.fruit(1);
+		food.sugary(1);
 		food.saturation(1);
 	});
 
