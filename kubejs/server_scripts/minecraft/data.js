@@ -3,6 +3,14 @@
 
 function registerTFCDataForMinecraft(event) {
 
+	event.foodItem('minecraft:golden_carrot', food => {
+		food.hunger(5)
+		food.saturation(5)
+		food.vegetables(3)
+		food.water(20)
+		food.decayModifier(0)
+	});
+	
 	event.foodItem('minecraft:glow_berries', food => {
 		food.hunger(1)
 		food.fruit(0.5)
