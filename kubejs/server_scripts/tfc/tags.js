@@ -99,6 +99,7 @@ function registerTFCItemTags(event) {
 	event.add("tfc:nonplaceable", "minecraft:milk_bucket")
 	event.add("tfc:nonplaceable", "firmalife:bucket/yak_milk")
 	event.add("tfc:nonplaceable", "firmalife:bucket/goat_milk")
+	event.add("tfc:nonplaceable", "firmalife:bucket/coconut_milk")
 	event.add("tfc:nonplaceable", "tfc_gourmet:ox_milk_bucket")
 	event.add("tfc:nonplaceable", "tfc_gourmet:sheep_milk_bucket")
 	event.add("tfc:nonplaceable", "tfc_gourmet:alpaca_milk_bucket")
@@ -448,26 +449,26 @@ function registerTFCItemTags(event) {
 	event.add('tfc:compost_greens_low', '#tfc:fallen_leaves')
 	event.add('tfc:compost_greens_low', '#minecraft:leaves')
 
-    // Powder dyes
-    event.add('forge:dyes/blue', 'tfc:powder/lapis_lazuli')
-    event.add('forge:dyes/blue', 'tfc:powder/graphite')
-    event.add('forge:dyes/black', 'tfc:powder/charcoal')
-    event.add('forge:dyes/black', 'tfc:powder/coke')
-    event.add('forge:dyes/pink', 'tfc:powder/kaolinite')
-    event.add('forge:dyes/blue', 'tfc:powder/lapis_lazuli')
-    event.add('forge:dyes/orange', 'tfc:powder/sylvite')
-    event.add('forge:dyes/orange', 'tfc:powder/copper')
-    event.add('forge:dyes/blue', 'tfc:powder/lapis_lazuli')
-    event.add('forge:dyes/light_gray', 'tfc:powder/silver')
-    event.add('forge:dyes/gray', 'tfc:powder/cassiterite')
-    event.add('forge:dyes/gray', 'tfc:powder/magnetite')
-    event.add('forge:dyes/gray', 'tfc:powder/sphalerite')
-    event.add('forge:dyes/gray', 'tfc:powder/tetrahedrite')
-    event.add('forge:dyes/green', 'tfc:powder/bismuthinite')
-    event.add('forge:dyes/green', 'tfc:powder/malachite')
-    event.add('forge:dyes/brown', 'tfc:powder/garnierite')
-    event.add('forge:dyes/yellow', 'tfc:powder/limonite')
-    event.add('forge:dyes/yellow', 'tfc:powder/native_gold')
+	// Powder dyes
+	event.add('forge:dyes/blue', 'tfc:powder/lapis_lazuli')
+	event.add('forge:dyes/blue', 'tfc:powder/graphite')
+	event.add('forge:dyes/black', 'tfc:powder/charcoal')
+	event.add('forge:dyes/black', 'tfc:powder/coke')
+	event.add('forge:dyes/pink', 'tfc:powder/kaolinite')
+	event.add('forge:dyes/blue', 'tfc:powder/lapis_lazuli')
+	event.add('forge:dyes/orange', 'tfc:powder/sylvite')
+	event.add('forge:dyes/orange', 'tfc:powder/copper')
+	event.add('forge:dyes/blue', 'tfc:powder/lapis_lazuli')
+	event.add('forge:dyes/light_gray', 'tfc:powder/silver')
+	event.add('forge:dyes/gray', 'tfc:powder/cassiterite')
+	event.add('forge:dyes/gray', 'tfc:powder/magnetite')
+	event.add('forge:dyes/gray', 'tfc:powder/sphalerite')
+	event.add('forge:dyes/gray', 'tfc:powder/tetrahedrite')
+	event.add('forge:dyes/green', 'tfc:powder/bismuthinite')
+	event.add('forge:dyes/green', 'tfc:powder/malachite')
+	event.add('forge:dyes/brown', 'tfc:powder/garnierite')
+	event.add('forge:dyes/yellow', 'tfc:powder/limonite')
+	event.add('forge:dyes/yellow', 'tfc:powder/native_gold')
 
 	//Hanging Signs Soft & Hard Wood
 	global.TFC_EQUIPMENT_METALS.forEach(metal => {
@@ -481,32 +482,32 @@ function registerTFCItemTags(event) {
 
 	event.add('tfc:fluxstone', 'tfg:loose/dripstone')
 
-    event.add('tfc:food/bell_peppers', 'tfc:food/green_bell_pepper');
-    event.add('tfc:food/bell_peppers', 'tfc:food/yellow_bell_pepper');
-    event.add('tfc:food/bell_peppers', 'tfc:food/red_bell_pepper');
+	event.add('tfc:food/bell_peppers', 'tfc:food/green_bell_pepper');
+	event.add('tfc:food/bell_peppers', 'tfc:food/yellow_bell_pepper');
+	event.add('tfc:food/bell_peppers', 'tfc:food/red_bell_pepper');
 
-    // More offhand things for piglin brutes
-    event.add('tfc:mob_offhand_weapons', 'tfchotornot:tongs/gold');
-    event.add('tfc:mob_offhand_weapons', 'tfchotornot:tongs/rose_gold');
-    event.add('tfc:mob_offhand_weapons', 'gtceu:black_bronze_knife');
-    event.add('tfc:mob_offhand_weapons', 'tfc:metal/javelin/black_bronze');
-    event.add('tfc:mob_offhand_weapons', 'tfc:metal/mace/black_bronze');
+	// More offhand things for piglin brutes
+	event.add('tfc:mob_offhand_weapons', 'tfchotornot:tongs/gold');
+	event.add('tfc:mob_offhand_weapons', 'tfchotornot:tongs/rose_gold');
+	event.add('tfc:mob_offhand_weapons', 'gtceu:black_bronze_knife');
+	event.add('tfc:mob_offhand_weapons', 'tfc:metal/javelin/black_bronze');
+	event.add('tfc:mob_offhand_weapons', 'tfc:metal/mace/black_bronze');
 
-    event.add('tfc:starts_fires_with_items', 'gtceu:matches');
-    event.add('tfc:starts_fires_with_durability', 'gtceu:matchbox');
-    event.add('forge:tools/igniter', 'tfc:firestarter');
+	event.add('tfc:starts_fires_with_items', 'gtceu:matches');
+	event.add('tfc:starts_fires_with_durability', 'gtceu:matchbox');
+	event.add('forge:tools/igniter', 'tfc:firestarter');
 
-    //TODO: properly allow GT fluid containers to work with TFC crafting recipes.
-    /** @type {{Item[]}} */
-    const fluidItemIngredientHolders = [
-        //'#gtceu:super_tanks',
-        //'#gtceu:fluid_cells',
-        //'#gtceu:drums',
-        '#tfc:barrels'
-    ];
-    fluidItemIngredientHolders.forEach(item => {
-        event.add('tfc:fluid_item_ingredient_empty_containers', item)
-    });
+	//TODO: properly allow GT fluid containers to work with TFC crafting recipes.
+	/** @type {{Item[]}} */
+	const fluidItemIngredientHolders = [
+		//'#gtceu:super_tanks',
+		//'#gtceu:fluid_cells',
+		//'#gtceu:drums',
+		'#tfc:barrels'
+	];
+	fluidItemIngredientHolders.forEach(item => {
+		event.add('tfc:fluid_item_ingredient_empty_containers', item)
+	});
 }
 
 /** @param {TagEvent.Block} event */

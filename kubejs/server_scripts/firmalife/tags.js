@@ -2,8 +2,8 @@
 "use strict";
 
 const registerFirmaLifeItemTags = (event) => {
-    
-   
+
+
     // Make our own "dried fruit" tag so we can display something in EMI - used for yeast starter
     global.FOOD_FRUIT
         .map(fruit => fruit.id)
@@ -26,28 +26,28 @@ const registerFirmaLifeItemTags = (event) => {
 }
 
 const registerFirmaLifeBlockTags = (event) => {
-	
-	//greenhouse wall fixes
-	event.remove('firmalife:always_valid_greenhouse_wall', '#minecraft:doors')
-	event.remove('firmalife:always_valid_greenhouse_wall', '#minecraft:trapdoors')
-	
-	const greenhouse_tiers = [
-		'treated_wood',
-		'weathered_treated_wood',
-		'copper',
-		'exposed_copper',
-		'weathered_copper',
-		'oxidized_copper',
-		'iron',
-		'rusted_iron',
-		'stainless_steel'
-	]
 
-	greenhouse_tiers.forEach(tier => {
-		event.add('firmalife:always_valid_greenhouse_wall', `firmalife:${  tier  }_greenhouse_door`)
-		event.add('firmalife:always_valid_greenhouse_wall', `firmalife:${  tier  }_greenhouse_trapdoor`)
-		event.add('firmalife:always_valid_greenhouse_wall', `firmalife:${  tier  }_greenhouse_roof`)
-	})
+    //greenhouse wall fixes
+    event.remove('firmalife:always_valid_greenhouse_wall', '#minecraft:doors')
+    event.remove('firmalife:always_valid_greenhouse_wall', '#minecraft:trapdoors')
+
+    const greenhouse_tiers = [
+        'treated_wood',
+        'weathered_treated_wood',
+        'copper',
+        'exposed_copper',
+        'weathered_copper',
+        'oxidized_copper',
+        'iron',
+        'rusted_iron',
+        'stainless_steel'
+    ]
+
+    greenhouse_tiers.forEach(tier => {
+        event.add('firmalife:always_valid_greenhouse_wall', `firmalife:${tier}_greenhouse_door`)
+        event.add('firmalife:always_valid_greenhouse_wall', `firmalife:${tier}_greenhouse_trapdoor`)
+        event.add('firmalife:always_valid_greenhouse_wall', `firmalife:${tier}_greenhouse_roof`)
+    })
 
     //Allows any block with the word "brick" in its id to be used as oven insulation.
     //Add blacklisted words to the const with | between.
@@ -61,7 +61,7 @@ const registerFirmaLifeBlockTags = (event) => {
     event.add('firmalife:bee_restoration_plants', 'tfg:plant/azalea')
     event.add('firmalife:bee_restoration_plants', 'tfg:plant/buttercup')
     event.add('firmalife:bee_restoration_plants', 'tfg:plant/cornflower')
-	event.add('firmalife:bee_restoration_plants', 'tfg:plant/edelweiss')
+    event.add('firmalife:bee_restoration_plants', 'tfg:plant/edelweiss')
     event.add('firmalife:bee_restoration_plants', 'tfg:plant/eyeblossom')
     event.add('firmalife:bee_restoration_plants', 'tfc:plant/rose')
     event.add('firmalife:bee_restoration_plants', 'tfc:plant/hibiscus')
@@ -75,7 +75,7 @@ const registerFirmaLifeBlockTags = (event) => {
 }
 
 const registerFirmaLifeFluidTags = (event) => {
-    
+
     // Добавляем тег для скрытия в EMI
     event.add('c:hidden_from_recipe_viewers', 'firmalife:metal/chromium')
     event.add('c:hidden_from_recipe_viewers', 'firmalife:metal/stainless_steel')
@@ -96,8 +96,4 @@ const registerFirmaLifeFluidTags = (event) => {
     event.add('firmalife:oils', 'tfg:triglyceride_oil')
     event.add('firmalife:oils', 'tfg:peanut_oil')
     event.add('firmalife:oils', 'tfg:palm_oil');
-
-    event.remove('tfc:milks', 'firmalife:coconut_milk');
-    event.remove('tfc:drinkables', 'firmalife:coconut_milk');
-    event.remove('tfc:any_drinkables', 'firmalife:coconut_milk');
 }
