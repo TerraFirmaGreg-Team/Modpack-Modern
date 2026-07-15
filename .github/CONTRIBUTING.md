@@ -17,6 +17,7 @@
       - [Step 7: Working with Branches and Creating Pull Request](#step-7-working-with-branches-and-creating-pull-request)
       - [Step 8: Processing and Merging Pull Request](#step-8-processing-and-merging-pull-request)
     - [3. Additional Recommendations](#3-additional-recommendations)
+    - [4. Quality Guidelines](#4-quality-guidelines)
   - [Russian Version](#russian-version)
     - [1. Необходимое и рекомендуемое ПО](#1-необходимое-и-рекомендуемое-по)
       - [Необходимое ПО](#необходимое-по)
@@ -343,6 +344,32 @@ There are two approaches to creating a Pull Request: via terminal and via Visual
   1. Install dependencies (see above)
   2. Run ProbeJS to generate types
   3. Set `"noCheck": false` in `kubejs/tsconfig.json`
+
+---
+
+### 4. Quality Guidelines
+
+### a. Style
+In general we will not hold you accountable for personal stylistic choices in your work. However, please do not change others work to suit your sytle standards unless you are actively working on that section of code. This is to ensure our programming environment feels less restrictive and prevents issues when reviewing code for redundant changes. We may ask you to change the style of your work if it is difficult to review, runs less efficient, or conflicts with common conventions.
+
+### b. Organization
+There is no strict organization principles in our repositories. For most purposes try to use common sense when deciding where things should go. But at the very least please try to follow these rules:
+- **No hard coded text!** Lang strings should be used in all relevant places and submitted to our [Tools Repository](https://github.com/TerraFirmaGreg-Team/Tools-Modern/tree/dev/LanguageMerger) for translation.
+- Custom GT machines/multiblocks should be submitted in our [Core Mod](https://github.com/TerraFirmaGreg-Team/Core-Modern) instead of done through KubeJS.
+- Recipes, basic items/blocks, materials, data, assets, loot, etc. Should be submitted through [Kubejs](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/tree/dev/kubejs) instead of in our core mod when most convenient.
+- All custom recipes, assets, items, blocks, etc. Should be in the `tfg:` namespace when possible.
+- All custom recipes should be given an ID.
+- Try to keep Kubejs scripts in folders under the relevant mod names.
+
+### c. Pull Requests
+Please make a new branch for each pull request and keep submissions focused on one change at a time when possible. If you want to fix multiple issues at once, please make multiple pull requests unless the changes are very small. When making a pull request at the very least please describe the outcome of your changes and link any issues it may solve. For example adding `Fixes #123` to the PR description will automatically assign issue `#123` for closure. If you find that your PR includes many files that you did not change it is likely that your branch has not been kept up to date with the one you are trying to merge into. We will ask you to fix any conflicts when present.
+
+### d. AI Use/ Disclosure
+The use of Artificial Intelligence or more specifically LLM's is not allowed when contributing to TerraFirmaGreg-Modern, our core mod, or translations. We understand that LLM's may provide help in diagnosing issues or peer-reviewing translation work and we may begrudgingly accept such use. But in general all code must be at least 90% written by you, 100% of assets must be man-made, and all work must be checked by you. If you do not understand programming when using AI, do not submit your work to us we do not want it. If you have used AI to assist in diagnosing issues or writing difficult sections of code then you must always disclose of such use for us to review. We may ask for sections to be rewritten if they do not meet our standards for non-slop. And we may completely reject your pull requests if we feel there is enough evidence for AI use. If we find that you have used AI extensively without disclosing of such you may be banned from our repository. We have a reputation to uphold; we will not allow non-human work to taint our quality standards.
+
+### e. Art
+
+We take our art direction and vision for our pack seriously. It is important to us that our assets follow a cohesive style and theme. In general all item textures must be 16x16. All blocks must follow 1.20.1 model contraints; OBJ models are only allowed when strictly necessary. And general pixel art best-practices will be expected. If we feel your assets are not up to our standards please do not take it personally if we replace them. If you feel you cannot deliver quality assets but still want to contribute new items please ask one of our dedicated artists if they can help you or contact Redeix on discord for advice. If you would like to try your hand at making assets we recommend [Blockbench](https://www.blockbench.net) for making models, and [PixelComposer](https://pixel-composer.com) or [Aseprite](https://www.aseprite.org) for making textures. If you would like to help adjusting your style to match our standards please check out this [Style Guide](https://www.blockbench.net/wiki/guides/minecraft-style-guide).
 
 ---
 
