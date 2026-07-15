@@ -111,15 +111,6 @@ function registerTFGBasicProcessingFoodRecipes(event) {
 	
 	//#endregion
 	//#region Misc Plants
-	
-	// Golden Apple
-	global.processorRecipe(event, 'golden_apple', 30 * 20, GTValues.VA[GTValues.HV], {
-		itemInputs: ['#tfc:foods/apples'],
-		fluidInputs: [Fluid.of('gtceu:gold', 144 * 8)],
-		itemOutputs: ['minecraft:golden_apple'],
-		circuit: 5,
-		itemOutputProvider: TFC.isp.of('minecraft:golden_apple').resetFood()
-	});
 
 	// Fries
 	event.recipes.tfc.advanced_shapeless_crafting(
@@ -216,19 +207,7 @@ function registerTFGBasicProcessingFoodRecipes(event) {
 
 	});
 
-	event.recipes.tfc.barrel_instant()
-		.outputItem('tfc:empty_jar')
-		.inputItem('tfg:food/juice')
-		.inputFluid(TFC.fluidStackIngredient('#tfg:clean_water', 100))
-		.sound('minecraft:entity.generic.splash')
-		.id('tfg:barrel/juice_washing');
-
-	event.recipes.gtceu.chemical_bath('tfg:chemical_bath/juice_washing')
-		.itemInputs('tfg:food/juice')
-		.itemOutputs('tfc:empty_jar')
-		.inputFluids('#tfg:clean_water 100')
-		.duration(20*1)
-		.EUt(GTValues.VA[GTValues.ULV]);
+	global.washingHelper(event, 'tfg:food/juice', 'tfc:empty_jar');
 
 	//#endregion
 	//#region Coconut Processing

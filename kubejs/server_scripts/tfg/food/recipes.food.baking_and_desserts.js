@@ -481,6 +481,8 @@ function registerTFGBakingAndDessertFoodRecipes(event) {
 			[(portion) => portion.nutrientModifier(1).saturationModifier(1.1)]
 		)
 	});
+	
+	global.washingHelper(event, 'tfg:food/smoothie', 'tfc:empty_jar');
 
 	//#endregion
 	//#region Misc Desserts
