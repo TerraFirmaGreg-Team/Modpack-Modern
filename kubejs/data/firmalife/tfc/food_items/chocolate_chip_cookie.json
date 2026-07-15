@@ -1,0 +1,12 @@
+{
+  "ingredient": {
+    "item": "firmalife:food/chocolate_chip_cookie"
+  },
+  "category": "other",
+  "hunger": 4,
+  "saturation": 0.5,
+  "decay_modifier": 4.5,
+  "grain": 1.0,
+  "dairy": 0.2,
+  "sugary": 3
+}

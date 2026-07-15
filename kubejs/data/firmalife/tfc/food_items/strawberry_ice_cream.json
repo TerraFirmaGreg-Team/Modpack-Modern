@@ -1,0 +1,14 @@
+{
+  "ingredient": {
+    "item": "firmalife:food/strawberry_ice_cream"
+  },
+  "category": "other",
+  "hunger": 4,
+  "saturation": 1.5,
+  "water": 1,
+  "decay_modifier": 5,
+  "fruit": 0.5,
+  "dairy": 0.5,
+  "cooling": 8,
+  "sugary": 3
+}

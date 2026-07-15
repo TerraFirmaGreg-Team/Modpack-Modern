@@ -733,20 +733,8 @@ global.TFC_GRAINS = [
 // #endregion
 // #region Food Effects
 
-/** @type {string[]} - List of foods that apply the cooling effect */
-global.COOLING_FOODS = [
-	'firmalife:food/vanilla_ice_cream',
-	'firmalife:food/chocolate_ice_cream',
-	'firmalife:food/strawberry_ice_cream',
-	'firmalife:food/cookie_dough_ice_cream',
-	'firmalife:food/banana_split'
-];
-
-/** @type {string[]} - List of foods that apply a strong cooling effect */
-global.COOLING_FOODS_STRONG = [
-	'tfg:ice_soup'
-];
-
+// Im going to leave this as is until the soup refactor. Too annoying to
+// rewrite all the soup recipes to give the warming effect for now.
 /** @type {string[]} - List of foods that apply a warming effect */
 global.WARMING_FOODS = [
 	'tfc:food/grain_soup',
@@ -754,7 +742,7 @@ global.WARMING_FOODS = [
 	'tfc:food/vegetables_soup',
 	'tfc:food/protein_soup',
 	'tfc:food/dairy_soup',
-	'tfg:food/poutine'
+	'firmalife:food/stinky_soup'
 ];
 
 // #endregion
