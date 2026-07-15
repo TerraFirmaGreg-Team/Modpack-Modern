@@ -4561,7 +4561,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "fluidlogistics-1.1.2.jar",
+                    "file_name": "fluidlogistics-1.2.0.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -4569,22 +4569,22 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8373/667/fluidlogistics-1.1.2.jar",
-                    "id": "8373667",
+                    "url": "https://edge.forgecdn.net/files/8379/520/fluidlogistics-1.2.0.jar",
+                    "id": "8379520",
                     "parent_id": "1475079",
                     "hashes": {
-                        "sha1": "4c2e3ff5d84439d46730474c78e05e061363d182",
-                        "md5": "04668699c3fdfb83755999610c37c47f"
+                        "sha1": "8e55f87e853ecd2b2adbd7c2ca804284b13912c6",
+                        "md5": "3cd124063b80782639ea4f8a6bdd7b9f"
                     },
                     "required_dependencies": [
                         "328085"
                     ],
-                    "size": 1813305,
-                    "date_published": "2026-07-05T08:41:28.187Z"
+                    "size": 2456196,
+                    "date_published": "2026-07-06T06:31:31.053Z"
                 },
                 {
                     "type": "modrinth",
-                    "file_name": "fluidlogistics-1.1.2.jar",
+                    "file_name": "fluidlogistics-1.2.0.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -4592,18 +4592,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/g4AWLVIr/versions/wa2zAGVz/fluidlogistics-1.1.2.jar",
-                    "id": "wa2zAGVz",
+                    "url": "https://cdn.modrinth.com/data/g4AWLVIr/versions/f8W7tbSO/fluidlogistics-1.2.0.jar",
+                    "id": "f8W7tbSO",
                     "parent_id": "g4AWLVIr",
                     "hashes": {
-                        "sha512": "d28149814f2321749b90fef822f38b1e8ce4e5e5fdf94deb91287519575e909c22ae751125df98dd99b1606dc8ac1eaee99503eccb8e6b9ba3c666a72ec81a6b",
-                        "sha1": "4c2e3ff5d84439d46730474c78e05e061363d182"
+                        "sha512": "42b0b6b8a67207a5d0362287c853b980ac0a30a47a46c5287807969f6e8544f627fdec6f1e9ac66a199c0bf4df136b60b03e52e0fbec0457d56a3e7fcd51c9e2",
+                        "sha1": "8e55f87e853ecd2b2adbd7c2ca804284b13912c6"
                     },
-                    "required_dependencies": [
-                        "LNytGWDc"
-                    ],
-                    "size": 1813305,
-                    "date_published": "2026-07-05T08:41:32.161811Z"
+                    "required_dependencies": [],
+                    "size": 2456196,
+                    "date_published": "2026-07-06T06:28:05.858087Z"
                 }
             ]
         },
