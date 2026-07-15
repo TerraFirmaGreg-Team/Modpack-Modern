@@ -131,6 +131,9 @@ function registerTFGDairyFoodRecipes(event) {
 
 	});
 
+	global.washingHelper(event, 'tfg:food/yogurt', 'tfc:empty_jar');
+	global.washingHelper(event, 'tfg:food/fruit_yogurt', 'tfc:empty_jar');
+
 	//#endregion
 	//#region Churning
 
