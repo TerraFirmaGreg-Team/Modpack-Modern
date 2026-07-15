@@ -37,12 +37,16 @@ function registerTFCDataForMinecraft(event) {
 		food.hunger(1.5)
 		food.fruit(2)
 		food.water(5)
-	})
+	});
+
+    event.itemHeat('minecraft:chorus_fruit', 1.0, null, null);
 
 	event.foodItem('minecraft:popped_chorus_fruit', food => {
 		food.hunger(2)
 		food.saturation(1)
 		food.fruit(3)
 		food.decayModifier(0.5)
-	})
+	});
+	
+    event.itemHeat('minecraft:popped_chorus_fruit', 1.0, null, null);
 }
