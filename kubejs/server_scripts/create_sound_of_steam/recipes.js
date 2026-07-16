@@ -122,6 +122,140 @@ function registerCreateSoundOfSteamRecipes(event) {
 			E: 'pipeorgans:base'
 		}).id('pipeorgans:vox_humana')
 
+		//Prestant
+		event.shaped('pipeorgans:prestant', [
+			'ABC',
+			' B ',
+			' D '
+		], {
+			A: '#forge:tools/saws',
+			B: 'gtceu:tin_alloy_ingot',
+			C: '#forge:tools/hammers',
+			D: 'pipeorgans:base'
+		}).id('pipeorgans:prestant')
+
+		//English Horn
+		event.shaped('pipeorgans:english_horn', [
+			'ABC',
+			' D ',
+			' E '
+		], {
+			A: '#forge:tools/saws',
+			B: 'gtceu:wrought_iron_plate',
+			C: '#forge:tools/hammers',
+			D: 'pipeorgans:iron_boot',
+      E: 'pipeorgans:base'
+		}).id('pipeorgans:english_horn')
+
+    //Krummhorn
+    event.shaped('pipeorgans:krummhorn',[
+      'ABC',
+      ' D ',
+      ' E '
+    ], {
+			A: '#forge:tools/saws',
+			B: 'create:copper_sheet',
+			C: '#forge:tools/hammers',
+			D: 'pipeorgans:reinforced_copper_boot',
+      E: 'pipeorgans:base'
+    }).id('pipeorgans:krummhorn')
+
+    //Rohrflote
+    event.shaped('pipeorgans:rohrflote',[
+      'ABC',
+      ' D ',
+      ' E '
+    ], {
+			A: '#forge:tools/saws',
+			B: 'gtceu:wrought_iron_plate',
+			C: '#forge:tools/hammers',
+			D: 'gtceu:wrought_iron_ingot',
+      E: 'pipeorgans:base'
+    }).id('pipeorgans:rohrflote')
+
+		//Tierce
+		event.shaped('pipeorgans:tierce', [
+			'ABC',
+			' B ',
+			' D '
+		], {
+			A: '#forge:tools/saws',
+			B: 'minecraft:gold_ingot',
+			C: '#forge:tools/hammers',
+			D: 'pipeorgans:base'
+		}).id('pipeorgans:tierce')
+
+  	//Bassoon
+		event.shaped('pipeorgans:bassoon', [
+			'ABC',
+			' D ',
+			' E '
+		], {
+			A: '#forge:tools/saws',
+			B: 'minecraft:gold_ingot',
+			C: '#forge:tools/hammers',
+      D: 'pipeorgans:brassbound_boot',
+			E: 'pipeorgans:base'
+		}).id('pipeorgans:bassoon')
+
+    //Haunted Whistle
+    event.shapeless('pipeorgans:haunted_whistle', [
+        'create:steam_whistle',
+        'minecraft:cobweb'
+    ]
+    ).id('pipeorgans:haunted_whistle');
+
+    //Viola
+    event.remove({ id: 'toomanyrecipeviewers:/greate/splashing/integration/pipeorgans/washing/vox_celeste_washing' })
+    event.shaped('pipeorgans:viola', [
+			'ABC',
+			' B ',
+			' D '
+		], {
+			A: '#forge:tools/saws',
+			B: 'minecraft:iron_ingot',
+			C: '#forge:tools/hammers',
+			D: 'pipeorgans:base'
+		}).id('pipeorgans:viola')
+
+    //Vox Celeste
+    event.shaped('pipeorgans:vox_celeste', [
+			'ABC',
+			' D ',
+			' E '
+		], {
+			A: '#forge:tools/saws',
+			B: 'minecraft:iron_ingot',
+			C: '#forge:tools/hammers',
+      D: 'vintageimprovements:cast_iron_sheet',
+			E: 'pipeorgans:base'
+		}).id('pipeorgans:vox_celeste')
+
+    //Open Wood
+    event.shaped('pipeorgans:open_wood', [
+			'ABC',
+			' B ',
+			' D '
+		], {
+			A: '#forge:tools/saws',
+			B: '#tfc:lumber',
+			C: '#forge:tools/hammers',
+			D: 'pipeorgans:base'
+		}).id('pipeorgans:open_wood')
+
+    //Hohlflute
+    event.shaped('pipeorgans:hohlflute', [
+			'ABC',
+			' D ',
+			' E '
+		], {
+			A: '#forge:tools/saws',
+			B: '#tfc:lumber',
+			C: '#forge:tools/hammers',
+      D: '#minecraft:planks',
+			E: 'pipeorgans:base'
+		}).id('pipeorgans:hohlflute')
+
 		//Pipe Base
 		event.recipes.tfc.welding('pipeorgans:base', 'create:fluid_pipe', 'gtceu:double_copper_plate', 1)
 
@@ -174,6 +308,21 @@ function registerCreateSoundOfSteamRecipes(event) {
 			.tier(3)
 			.id('tfc:anvil/copper_boot')
 
+    //Iron Boot
+		event.recipes.tfc.anvil('pipeorgans:iron_boot', 'gtceu:double_wrought_iron_plate', ['bend_last', 'shrink_second_last', 'shrink_third_last'])
+			.tier(3)
+			.id('tfc:anvil/iron_boot')
+
+    //Reinforced Copper Boot
+		event.recipes.tfc.welding('pipeorgans:reinforced_copper_boot', 'pipeorgans:copper_boot', 'gtceu:wrought_iron_plate', 1)
+
+    //Brassbound Boot
+    event.shapeless('pipeorgans:brassbound_boot', [
+        'pipeorgans:dark_oak_boot',
+        'create:brass_sheet'
+    ]
+    ).id('pipeorgans:brassbound_boot')
+
 		//Keyboard Relay
 		event.shaped('pipeorgans:keyboard_relay', [
 			'ABC',
@@ -221,6 +370,6 @@ function registerCreateSoundOfSteamRecipes(event) {
       'create:redstone_link',
       'pipeorgans:tuning_wire'
     ]
-    )
+    ).id('pipeorgans:note_link')
 	}
 }
