@@ -206,7 +206,7 @@ function registerCreateSoundOfSteamRecipes(event) {
     ).id('pipeorgans:haunted_whistle');
 
     //Viola
-    event.remove({ id: 'toomanyrecipeviewers:/greate/splashing/integration/pipeorgans/washing/vox_celeste_washing' })
+    event.remove({ id: 'greate:splashing/integration/pipeorgans/washing/vox_celeste_washing' })
     event.shaped('pipeorgans:viola', [
 			'ABC',
 			' B ',
