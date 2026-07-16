@@ -14,7 +14,7 @@ function registerCreateSoundOfSteamRecipes(event) {
 			A: '#forge:tools/saws',
 			B: '#tfg:hardwood',
 			C: '#forge:tools/hammers',
-			D: 'gtceu:wrought_iron_ingot',
+			D: '#forge:ingots/wrought_iron',
 			E: 'pipeorgans:base'
 		}).id('tfg:shaped/piccolo')
 
@@ -27,7 +27,7 @@ function registerCreateSoundOfSteamRecipes(event) {
 			' D '
 		], {
 			A: '#forge:tools/saws',
-			B: 'create:zinc_ingot',
+			B: '#forge:ingots/zinc',
 			C: '#forge:tools/hammers',
 			D: 'pipeorgans:base'
 		}).id('tfg:shaped/diapason')
@@ -39,7 +39,7 @@ function registerCreateSoundOfSteamRecipes(event) {
 			' E '
 		], {
 			A: '#forge:tools/saws',
-			B: 'create:brass_sheet',
+			B: '#forge:sheets/brass',
 			C: '#forge:tools/hammers',
 			D: 'pipeorgans:brass_boot',
 			E: 'pipeorgans:base'
@@ -65,9 +65,9 @@ function registerCreateSoundOfSteamRecipes(event) {
 			' E '
 		], {
 			A: '#forge:tools/saws',
-			B: 'gtceu:wrought_iron_ingot',
+			B: '#forge:ingots/wrought_iron',
 			C: '#forge:tools/hammers',
-			D: 'gtceu:wrought_iron_plate',
+			D: '#forge:plates/wrought_iron',
 			E: 'pipeorgans:base'
 		}).id('tfg:shaped/gamba')
 
@@ -78,7 +78,7 @@ function registerCreateSoundOfSteamRecipes(event) {
 			' D '
 		], {
 			A: '#forge:tools/saws',
-			B: 'minecraft:copper_ingot',
+			B: '#forge:ingots/copper',
 			C: '#forge:tools/hammers',
 			D: 'pipeorgans:base'
 		}).id('tfg:shaped/nasard')
@@ -103,7 +103,7 @@ function registerCreateSoundOfSteamRecipes(event) {
 			' E '
 		], {
 			A: '#forge:tools/saws',
-			B: 'create:brass_sheet',
+			B: '#forge:sheets/brass',
 			C: '#forge:tools/hammers',
 			D: 'pipeorgans:dark_oak_boot',
 			E: 'pipeorgans:base'
@@ -116,7 +116,7 @@ function registerCreateSoundOfSteamRecipes(event) {
 			' E '
 		], {
 			A: '#forge:tools/saws',
-			B: 'create:brass_sheet',
+			B: '#forge:sheets/brass',
 			C: '#forge:tools/hammers',
 			D: 'pipeorgans:copper_boot',
 			E: 'pipeorgans:base'
@@ -129,7 +129,7 @@ function registerCreateSoundOfSteamRecipes(event) {
 			' D '
 		], {
 			A: '#forge:tools/saws',
-			B: 'gtceu:tin_alloy_ingot',
+			B: '#forge:ingots/tin_alloy',
 			C: '#forge:tools/hammers',
 			D: 'pipeorgans:base'
 		}).id('tfg:shaped/prestant')
@@ -141,7 +141,7 @@ function registerCreateSoundOfSteamRecipes(event) {
 			' E '
 		], {
 			A: '#forge:tools/saws',
-			B: 'gtceu:wrought_iron_plate',
+			B: '#forge:plates/wrought_iron',
 			C: '#forge:tools/hammers',
 			D: 'pipeorgans:iron_boot',
       E: 'pipeorgans:base'
@@ -154,7 +154,7 @@ function registerCreateSoundOfSteamRecipes(event) {
       ' E '
     ], {
 			A: '#forge:tools/saws',
-			B: 'create:copper_sheet',
+			B: '#forge:sheets/copper',
 			C: '#forge:tools/hammers',
 			D: 'pipeorgans:reinforced_copper_boot',
       E: 'pipeorgans:base'
@@ -167,9 +167,9 @@ function registerCreateSoundOfSteamRecipes(event) {
       ' E '
     ], {
 			A: '#forge:tools/saws',
-			B: 'gtceu:wrought_iron_plate',
+			B: '#forge:plates/wrought_iron',
 			C: '#forge:tools/hammers',
-			D: 'gtceu:wrought_iron_ingot',
+			D: '#forge:ingots/wrought_iron',
       E: 'pipeorgans:base'
     }).id('tfg:shaped/rohrflote')
 
@@ -180,7 +180,7 @@ function registerCreateSoundOfSteamRecipes(event) {
 			' D '
 		], {
 			A: '#forge:tools/saws',
-			B: 'minecraft:gold_ingot',
+			B: '#forge:ingots/gold',
 			C: '#forge:tools/hammers',
 			D: 'pipeorgans:base'
 		}).id('tfg:shaped/tierce')
@@ -192,7 +192,7 @@ function registerCreateSoundOfSteamRecipes(event) {
 			' E '
 		], {
 			A: '#forge:tools/saws',
-			B: 'minecraft:gold_ingot',
+			B: '#forge:ingots/gold',
 			C: '#forge:tools/hammers',
       D: 'pipeorgans:brassbound_boot',
 			E: 'pipeorgans:base'
@@ -213,7 +213,7 @@ function registerCreateSoundOfSteamRecipes(event) {
 			' D '
 		], {
 			A: '#forge:tools/saws',
-			B: 'minecraft:iron_ingot',
+			B: '#forge:ingots/iron',
 			C: '#forge:tools/hammers',
 			D: 'pipeorgans:base'
 		}).id('tfg:shaped/viola')
@@ -225,9 +225,9 @@ function registerCreateSoundOfSteamRecipes(event) {
 			' E '
 		], {
 			A: '#forge:tools/saws',
-			B: 'minecraft:iron_ingot',
+			B: '#forge:ingots/iron',
 			C: '#forge:tools/hammers',
-      D: 'vintageimprovements:cast_iron_sheet',
+      D: '#forge:sheets/iron',
 			E: 'pipeorgans:base'
 		}).id('tfg:shaped/vox_celeste')
 
@@ -257,7 +257,7 @@ function registerCreateSoundOfSteamRecipes(event) {
 		}).id('tfg:shaped/hohlflute')
 
 		//Pipe Base
-		event.recipes.tfc.welding('pipeorgans:base', 'create:fluid_pipe', 'gtceu:double_copper_plate', 1)
+		event.recipes.tfc.welding('pipeorgans:base', 'create:fluid_pipe', '#forge:double_plates/copper', 1)
 
 		//Windchest Controller
 		event.shaped('pipeorgans:windchest_master', [
@@ -267,9 +267,9 @@ function registerCreateSoundOfSteamRecipes(event) {
 		], {
 			A: '#forge:tools/saws',
 			B: '#minecraft:planks',
-			C: 'create:zinc_ingot',
+			C: '#forge:ingots/zinc',
 			D: '#minecraft:wooden_slabs',
-			E: 'minecraft:redstone',
+			E: '#forge:dusts/redstone',
 			F: '#forge:tools/hammers'
 		}).id('tfg:shaped/windchest_master')
 
@@ -282,13 +282,13 @@ function registerCreateSoundOfSteamRecipes(event) {
 			A: '#forge:tools/saws',
 			B: 'create:fluid_pipe',
 			C: '#minecraft:wooden_slabs',
-			D: 'minecraft:redstone',
+			D: '#forge:dusts/redstone',
 			E: '#forge:tools/hammers',
 			F: '#minecraft:planks'
 		}).id('tfg:shaped/windchest')
 
 		//Brass Boot
-		event.recipes.tfc.anvil('pipeorgans:brass_boot', 'gtceu:double_brass_plate', ['bend_last', 'shrink_second_last', 'shrink_third_last'])
+		event.recipes.tfc.anvil('pipeorgans:brass_boot', '#forge:double_plates/brass', ['bend_last', 'shrink_second_last', 'shrink_third_last'])
 			.tier(3)
 			.id('tfc:anvil/brass_boot')
 
@@ -304,22 +304,22 @@ function registerCreateSoundOfSteamRecipes(event) {
 		}).id('tfg:shaped/dark_oak_boot')
 
 		//Copper Boot
-		event.recipes.tfc.anvil('pipeorgans:copper_boot', 'gtceu:double_copper_plate', ['bend_last', 'shrink_second_last', 'shrink_third_last'])
+		event.recipes.tfc.anvil('pipeorgans:copper_boot', '#forge:double_plates/copper', ['bend_last', 'shrink_second_last', 'shrink_third_last'])
 			.tier(3)
 			.id('tfc:anvil/copper_boot')
 
     //Iron Boot
-		event.recipes.tfc.anvil('pipeorgans:iron_boot', 'gtceu:double_wrought_iron_plate', ['bend_last', 'shrink_second_last', 'shrink_third_last'])
+		event.recipes.tfc.anvil('pipeorgans:iron_boot', '#forge:double_plates/wrought_iron', ['bend_last', 'shrink_second_last', 'shrink_third_last'])
 			.tier(3)
 			.id('tfc:anvil/iron_boot')
 
     //Reinforced Copper Boot
-		event.recipes.tfc.welding('pipeorgans:reinforced_copper_boot', 'pipeorgans:copper_boot', 'gtceu:wrought_iron_plate', 1)
+		event.recipes.tfc.welding('pipeorgans:reinforced_copper_boot', 'pipeorgans:copper_boot', '#forge:double_plates/wrought_iron', 1)
 
     //Brassbound Boot
     event.shapeless('pipeorgans:brassbound_boot', [
         'pipeorgans:dark_oak_boot',
-        'create:brass_sheet'
+        '#forge:sheets/brass'
     ]
     ).id('tfg:shapeless/brassbound_boot')
 
@@ -330,9 +330,9 @@ function registerCreateSoundOfSteamRecipes(event) {
 			'FGC'
 		], {
 			A: 'create:transmitter',
-			B: 'minecraft:redstone',
+			B: '#forge:dusts/redstone',
 			C: '#minecraft:buttons',
-			D: 'gtceu:wrought_iron_ingot',
+			D: '#forge:ingots/wrought_iron',
 			E: 'create:precision_mechanism',
 			F: '#forge:tools/screwdrivers',
 			G: 'create:brass_casing'
@@ -344,11 +344,11 @@ function registerCreateSoundOfSteamRecipes(event) {
 			'BCB',
 			'DEF'
 		], {
-			A: 'gtceu:brass_bolt',
+			A: '#forge:bolts/brass',
 			B: 'create:precision_mechanism',
 			C: 'create:brass_casing',
 			D: '#forge:tools/screwdrivers',
-			E: 'minecraft:paper',
+			E: '#forge:paper',
 			F: 'create:transmitter',
 		}).id('tfg:shaped/tracker_bar')
 
@@ -358,7 +358,7 @@ function registerCreateSoundOfSteamRecipes(event) {
 			'CCC',
 			'DE '
 		], {
-			A: 'minecraft:feather',
+			A: '#forge:feathers',
 			B: '#forge:dyes/black',
 			C: '#minecraft:wooden_slabs',
 			D: '#forge:tools/saws',
