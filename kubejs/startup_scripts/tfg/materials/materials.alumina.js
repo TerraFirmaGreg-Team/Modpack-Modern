@@ -53,6 +53,7 @@ function registerTFGAluminaMaterials(event) {
 		.iconSet(GTMaterialIconSet.METALLIC)
 		.components('1x iron', '2x chromium')
 
+	// To remove later - Be sure it has nore more usage!
 	event.create('tfg:sodium_chromate')
 		.dust()
 		.color(0xD2D252)
@@ -69,6 +70,7 @@ function registerTFGAluminaMaterials(event) {
 		.iconSet(GTMaterialIconSet.METALLIC)
 		.components('1x calcium', '1x silicon', '3x oxygen')
 
+	// To remove late - Be sure it has nore more usage!
 	event.create('tfg:sodium_dichromate')
 		.dust()
 		.color(0xE84B0A)
