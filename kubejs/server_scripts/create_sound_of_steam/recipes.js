@@ -16,7 +16,7 @@ function registerCreateSoundOfSteamRecipes(event) {
 			C: '#forge:tools/hammers',
 			D: 'gtceu:wrought_iron_ingot',
 			E: 'pipeorgans:base'
-		}).id('pipeorgans:piccolo')
+		}).id('tfg:shaped/piccolo')
 
 		//Diapason
 		event.remove({ id: 'pipeorgans:diapason' })
@@ -30,7 +30,7 @@ function registerCreateSoundOfSteamRecipes(event) {
 			B: 'create:zinc_ingot',
 			C: '#forge:tools/hammers',
 			D: 'pipeorgans:base'
-		}).id('pipeorgans:diapason')
+		}).id('tfg:shaped/diapason')
 
 		//Trompette
 		event.shaped('pipeorgans:trompette', [
@@ -43,7 +43,7 @@ function registerCreateSoundOfSteamRecipes(event) {
 			C: '#forge:tools/hammers',
 			D: 'pipeorgans:brass_boot',
 			E: 'pipeorgans:base'
-		}).id('pipeorgans:trompette')
+		}).id('tfg:shaped/trompette')
 
 		//Gedeckt
 		event.shaped('pipeorgans:gedeckt', [
@@ -56,7 +56,7 @@ function registerCreateSoundOfSteamRecipes(event) {
 			C: '#forge:tools/hammers',
 			D: '#minecraft:wooden_slabs',
 			E: 'pipeorgans:base'
-		}).id('pipeorgans:gedeckt')
+		}).id('tfg:shaped/gedeckt')
 
 		//Gamba
 		event.shaped('pipeorgans:gamba', [
@@ -69,7 +69,7 @@ function registerCreateSoundOfSteamRecipes(event) {
 			C: '#forge:tools/hammers',
 			D: 'gtceu:wrought_iron_plate',
 			E: 'pipeorgans:base'
-		}).id('pipeorgans:gamba')
+		}).id('tfg:shaped/gamba')
 
 		//Nasard
 		event.shaped('pipeorgans:nasard', [
@@ -81,7 +81,7 @@ function registerCreateSoundOfSteamRecipes(event) {
 			B: 'minecraft:copper_ingot',
 			C: '#forge:tools/hammers',
 			D: 'pipeorgans:base'
-		}).id('pipeorgans:nasard')
+		}).id('tfg:shaped/nasard')
 
 		//Subbass
 		event.shaped('pipeorgans:subbass', [
@@ -94,7 +94,7 @@ function registerCreateSoundOfSteamRecipes(event) {
 			C: '#forge:tools/hammers',
 			D: '#minecraft:wooden_slabs',
 			E: 'pipeorgans:base'
-		}).id('pipeorgans:subbass')
+		}).id('tfg:shaped/subbass')
 
 		//Posaune FIX
 		event.shaped('pipeorgans:posaune', [
@@ -107,7 +107,7 @@ function registerCreateSoundOfSteamRecipes(event) {
 			C: '#forge:tools/hammers',
 			D: 'pipeorgans:dark_oak_boot',
 			E: 'pipeorgans:base'
-		}).id('pipeorgans:posaune')
+		}).id('tfg:shaped/posaune')
 
 		//Humana
 		event.shaped('pipeorgans:vox_humana', [
@@ -120,7 +120,7 @@ function registerCreateSoundOfSteamRecipes(event) {
 			C: '#forge:tools/hammers',
 			D: 'pipeorgans:copper_boot',
 			E: 'pipeorgans:base'
-		}).id('pipeorgans:vox_humana')
+		}).id('tfg:shaped/vox_humana')
 
 		//Prestant
 		event.shaped('pipeorgans:prestant', [
@@ -132,7 +132,7 @@ function registerCreateSoundOfSteamRecipes(event) {
 			B: 'gtceu:tin_alloy_ingot',
 			C: '#forge:tools/hammers',
 			D: 'pipeorgans:base'
-		}).id('pipeorgans:prestant')
+		}).id('tfg:shaped/prestant')
 
 		//English Horn
 		event.shaped('pipeorgans:english_horn', [
@@ -145,7 +145,7 @@ function registerCreateSoundOfSteamRecipes(event) {
 			C: '#forge:tools/hammers',
 			D: 'pipeorgans:iron_boot',
       E: 'pipeorgans:base'
-		}).id('pipeorgans:english_horn')
+		}).id('tfg:shaped/english_horn')
 
     //Krummhorn
     event.shaped('pipeorgans:krummhorn',[
@@ -158,7 +158,7 @@ function registerCreateSoundOfSteamRecipes(event) {
 			C: '#forge:tools/hammers',
 			D: 'pipeorgans:reinforced_copper_boot',
       E: 'pipeorgans:base'
-    }).id('pipeorgans:krummhorn')
+    }).id('tfg:shaped/krummhorn')
 
     //Rohrflote
     event.shaped('pipeorgans:rohrflote',[
@@ -171,7 +171,7 @@ function registerCreateSoundOfSteamRecipes(event) {
 			C: '#forge:tools/hammers',
 			D: 'gtceu:wrought_iron_ingot',
       E: 'pipeorgans:base'
-    }).id('pipeorgans:rohrflote')
+    }).id('tfg:shaped/rohrflote')
 
 		//Tierce
 		event.shaped('pipeorgans:tierce', [
@@ -183,7 +183,7 @@ function registerCreateSoundOfSteamRecipes(event) {
 			B: 'minecraft:gold_ingot',
 			C: '#forge:tools/hammers',
 			D: 'pipeorgans:base'
-		}).id('pipeorgans:tierce')
+		}).id('tfg:shaped/tierce')
 
   	//Bassoon
 		event.shaped('pipeorgans:bassoon', [
@@ -196,14 +196,14 @@ function registerCreateSoundOfSteamRecipes(event) {
 			C: '#forge:tools/hammers',
       D: 'pipeorgans:brassbound_boot',
 			E: 'pipeorgans:base'
-		}).id('pipeorgans:bassoon')
+		}).id('tfg:shaped/bassoon')
 
     //Haunted Whistle
     event.shapeless('pipeorgans:haunted_whistle', [
         'create:steam_whistle',
         'minecraft:cobweb'
     ]
-    ).id('pipeorgans:haunted_whistle');
+    ).id('tfg:shapeless/haunted_whistle');
 
     //Viola
     event.remove({ id: 'greate:splashing/integration/pipeorgans/washing/vox_celeste_washing' })
@@ -216,7 +216,7 @@ function registerCreateSoundOfSteamRecipes(event) {
 			B: 'minecraft:iron_ingot',
 			C: '#forge:tools/hammers',
 			D: 'pipeorgans:base'
-		}).id('pipeorgans:viola')
+		}).id('tfg:shaped/viola')
 
     //Vox Celeste
     event.shaped('pipeorgans:vox_celeste', [
@@ -229,7 +229,7 @@ function registerCreateSoundOfSteamRecipes(event) {
 			C: '#forge:tools/hammers',
       D: 'vintageimprovements:cast_iron_sheet',
 			E: 'pipeorgans:base'
-		}).id('pipeorgans:vox_celeste')
+		}).id('tfg:shaped/vox_celeste')
 
     //Open Wood
     event.shaped('pipeorgans:open_wood', [
@@ -241,7 +241,7 @@ function registerCreateSoundOfSteamRecipes(event) {
 			B: '#tfc:lumber',
 			C: '#forge:tools/hammers',
 			D: 'pipeorgans:base'
-		}).id('pipeorgans:open_wood')
+		}).id('tfg:shaped/open_wood')
 
     //Hohlflute
     event.shaped('pipeorgans:hohlflute', [
@@ -254,7 +254,7 @@ function registerCreateSoundOfSteamRecipes(event) {
 			C: '#forge:tools/hammers',
       D: '#minecraft:planks',
 			E: 'pipeorgans:base'
-		}).id('pipeorgans:hohlflute')
+		}).id('tfg:shaped/hohlflute')
 
 		//Pipe Base
 		event.recipes.tfc.welding('pipeorgans:base', 'create:fluid_pipe', 'gtceu:double_copper_plate', 1)
@@ -271,7 +271,7 @@ function registerCreateSoundOfSteamRecipes(event) {
 			D: '#minecraft:wooden_slabs',
 			E: 'minecraft:redstone',
 			F: '#forge:tools/hammers'
-		}).id('pipeorgans:windchest_master')
+		}).id('tfg:shaped/windchest_master')
 
 		//Windchest
 		event.shaped('6x pipeorgans:windchest', [
@@ -285,7 +285,7 @@ function registerCreateSoundOfSteamRecipes(event) {
 			D: 'minecraft:redstone',
 			E: '#forge:tools/hammers',
 			F: '#minecraft:planks'
-		}).id('pipeorgans:windchest')
+		}).id('tfg:shaped/windchest')
 
 		//Brass Boot
 		event.recipes.tfc.anvil('pipeorgans:brass_boot', 'gtceu:double_brass_plate', ['bend_last', 'shrink_second_last', 'shrink_third_last'])
@@ -301,7 +301,7 @@ function registerCreateSoundOfSteamRecipes(event) {
 			A: '#minecraft:planks',
 			B: '#forge:tools/saws',
 			C: '#forge:tools/hammers'
-		}).id('pipeorgans:dark_oak_boot')
+		}).id('tfg:shaped/dark_oak_boot')
 
 		//Copper Boot
 		event.recipes.tfc.anvil('pipeorgans:copper_boot', 'gtceu:double_copper_plate', ['bend_last', 'shrink_second_last', 'shrink_third_last'])
@@ -321,7 +321,7 @@ function registerCreateSoundOfSteamRecipes(event) {
         'pipeorgans:dark_oak_boot',
         'create:brass_sheet'
     ]
-    ).id('pipeorgans:brassbound_boot')
+    ).id('tfg:shapeless/brassbound_boot')
 
 		//Keyboard Relay
 		event.shaped('pipeorgans:keyboard_relay', [
@@ -336,7 +336,7 @@ function registerCreateSoundOfSteamRecipes(event) {
 			E: 'create:precision_mechanism',
 			F: '#forge:tools/screwdrivers',
 			G: 'create:brass_casing'
-		}).id('pipeorgans:keyboard_relay')
+		}).id('tfg:shaped/keyboard_relay')
 
     //Tracker Bar
     event.shaped('pipeorgans:tracker_bar', [
@@ -350,7 +350,7 @@ function registerCreateSoundOfSteamRecipes(event) {
 			D: '#forge:tools/screwdrivers',
 			E: 'minecraft:paper',
 			F: 'create:transmitter',
-		}).id('pipeorgans:tracker_bar')
+		}).id('tfg:shaped/tracker_bar')
 
     //Roll Authoring Table
     event.shaped('pipeorgans:roll_puncher', [
@@ -363,13 +363,13 @@ function registerCreateSoundOfSteamRecipes(event) {
 			C: '#minecraft:wooden_slabs',
 			D: '#forge:tools/saws',
 			E: '#minecraft:logs',
-		}).id('pipeorgans:roll_puncher')
+		}).id('tfg:shaped/roll_puncher')
 
     //Note Link
     event.shapeless('pipeorgans:note_link', [
       'create:redstone_link',
       'pipeorgans:tuning_wire'
     ]
-    ).id('pipeorgans:note_link')
+    ).id('tfg:shapeless/note_link')
 	}
 }
