@@ -188,5 +188,39 @@ function registerCreateSoundOfSteamRecipes(event) {
 			F: '#forge:tools/screwdrivers',
 			G: 'create:brass_casing'
 		}).id('pipeorgans:keyboard_relay')
+
+    //Tracker Bar
+    event.shaped('pipeorgans:tracker_bar', [
+			'AAA',
+			'BCB',
+			'DEF'
+		], {
+			A: 'gtceu:brass_bolt',
+			B: 'create:precision_mechanism',
+			C: 'create:brass_casing',
+			D: '#forge:tools/screwdrivers',
+			E: 'minecraft:paper',
+			F: 'create:transmitter',
+		}).id('pipeorgans:tracker_bar')
+
+    //Roll Authoring Table
+    event.shaped('pipeorgans:roll_puncher', [
+			'AB ',
+			'CCC',
+			'DE '
+		], {
+			A: 'minecraft:feather',
+			B: '#forge:dyes/black',
+			C: '#minecraft:wooden_slabs',
+			D: '#forge:tools/saws',
+			E: '#minecraft:logs',
+		}).id('pipeorgans:roll_puncher')
+
+    //Note Link
+    event.shapeless('pipeorgans:note_link', [
+      'create:redstone_link',
+      'pipeorgans:tuning_wire'
+    ]
+    )
 	}
 }
