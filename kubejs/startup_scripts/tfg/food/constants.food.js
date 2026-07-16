@@ -698,6 +698,7 @@ global.FOOD_FRUIT = [
 	{name: 'peach', id: 'tfc:food/peach', color: 0xc56954, saturation: 0.4, water: 10, fruit: 0.5, decay: 2.5},
 	{name: 'plum', id: 'tfc:food/plum', color: 0x8a40b7, saturation: 0.4, water: 5, fruit: 0.8, decay: 2.25},
 	{name: 'red_apple', id: 'tfc:food/red_apple', color: 0x9f3131, saturation: 0.4, water: 0, fruit: 1, decay: 2.25},
+	{name: 'honeyed_apple', id: 'create:honeyed_apple', color: 0x9f3131, saturation: 0.4, water:0, fruit:1, sugary:1, decay: 2.25},
 	{name: 'pumpkin_chunks', id: 'tfc:food/pumpkin_chunks', color: 0xa97c4c, saturation: 1, water: 5, fruit: 0.8, decay: 2.25},
 	{name: 'melon_slice', id: 'tfc:food/melon_slice', color: 0xad160b, saturation: 0.2, water: 5, fruit: 0.8, decay: 2.25},
 	{name: 'fig', id: 'firmalife:food/fig', color: 0x9e4264, saturation: 1, water: 5, fruit: 0.9, decay: 1},
