@@ -3029,7 +3029,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "ComplementaryUnbound_r5.7.1.zip",
+                    "file_name": "ComplementaryUnbound_r5.8.1.zip",
                     "mc_versions": [
                         "1.20.2",
                         "1.20.5",
@@ -3040,20 +3040,20 @@
                         "1.20.3"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7574/260/ComplementaryUnbound_r5.7.1.zip",
-                    "id": "7574260",
+                    "url": "https://edge.forgecdn.net/files/8123/288/ComplementaryUnbound_r5.8.1.zip",
+                    "id": "8123288",
                     "parent_id": "385587",
                     "hashes": {
-                        "sha1": "95883b516298ff4cf1a67ff512086eb67aeedd98",
-                        "md5": "b535d194c7115b360860e226c65ae3f2"
+                        "sha1": "af656a33be2cbd217ea08986ad2cdd76f6bbfe1c",
+                        "md5": "0a3553109dbe689a9f76d1aedc8f50c6"
                     },
                     "required_dependencies": [],
-                    "size": 522973,
-                    "date_published": "2026-02-04T08:12:10.420Z"
+                    "size": 546928,
+                    "date_published": "2026-05-21T14:53:22.100Z"
                 },
                 {
                     "type": "modrinth",
-                    "file_name": "ComplementaryUnbound_r5.7.1.zip",
+                    "file_name": "ComplementaryUnbound_r5.8.1.zip",
                     "mc_versions": [
                         "1.7.10",
                         "1.8",
@@ -3126,23 +3126,26 @@
                         "1.21.9",
                         "1.21.10",
                         "1.21.11",
-                        "26.1"
+                        "26.1",
+                        "26.1.1",
+                        "26.1.2",
+                        "26.2"
                     ],
                     "loaders": [
                         "iris",
                         "optifine"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/R6NEzAwj/versions/d8rcvDTp/ComplementaryUnbound_r5.7.1.zip",
-                    "id": "d8rcvDTp",
+                    "url": "https://cdn.modrinth.com/data/R6NEzAwj/versions/VMHXIk50/ComplementaryUnbound_r5.8.1.zip",
+                    "id": "VMHXIk50",
                     "parent_id": "R6NEzAwj",
                     "hashes": {
-                        "sha512": "207ad92ab354e1be002e1ccce978da3860af69532ddcdecbc2a943ffe1ff7ac5eec6b021073ae68b93d78499c63d505de3abf63d9058cdf6cb80bed6528b7532",
-                        "sha1": "95883b516298ff4cf1a67ff512086eb67aeedd98"
+                        "sha512": "9098dd9e0c18b80f7aba2839cea33ce9a614d97665bbfcac87ccce6e4771667c41602d99088852cb1642ccab20b2ceff9b98af8f2e795bd0d3b90b7c9cbab914",
+                        "sha1": "af656a33be2cbd217ea08986ad2cdd76f6bbfe1c"
                     },
                     "required_dependencies": [],
-                    "size": 522973,
-                    "date_published": "2026-01-30T12:45:23.381970Z"
+                    "size": 546928,
+                    "date_published": "2026-05-21T14:50:33.267877Z"
                 }
             ]
         },
@@ -9700,6 +9703,74 @@
             ]
         },
         {
+            "pakku_id": "fxr9lkBYCKcNTsZp",
+            "pakku_links": [
+                "y0UC3kpLVhVgLz9b"
+            ],
+            "type": "MOD",
+            "side": "CLIENT",
+            "slug": {
+                "curseforge": "iris-search",
+                "modrinth": "irissearch"
+            },
+            "name": {
+                "curseforge": "Iris & Oculus Search",
+                "modrinth": "Iris & Oculus Search"
+            },
+            "id": {
+                "curseforge": "1583035",
+                "modrinth": "bkAgg84v"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "IrisSearch-1.4.2-forge.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8394/392/IrisSearch-1.4.2-forge.jar",
+                    "id": "8394392",
+                    "parent_id": "1583035",
+                    "hashes": {
+                        "sha1": "85af9d52b5896fc3b9eab4fb3693649c812fca8e",
+                        "md5": "b351ba9e0027dd359f160a480eb77edd"
+                    },
+                    "required_dependencies": [
+                        "581495"
+                    ],
+                    "size": 191329,
+                    "date_published": "2026-07-08T15:34:54.503Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "IrisSearch-1.4.2-forge.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/bkAgg84v/versions/VI8CVuS7/IrisSearch-1.4.2-forge.jar",
+                    "id": "VI8CVuS7",
+                    "parent_id": "bkAgg84v",
+                    "hashes": {
+                        "sha512": "58a70ed642c7c23a35956973ea2fad7fb5eba0782365e521cd81e70f08468a9d7cec169b91f1fa4db069049446c734004503c0116652bdbaa6e624cfde023849",
+                        "sha1": "85af9d52b5896fc3b9eab4fb3693649c812fca8e"
+                    },
+                    "required_dependencies": [
+                        "GchcoXML"
+                    ],
+                    "size": 191329,
+                    "date_published": "2026-07-08T15:34:54.636749Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "8XO2vCNl00TcjiTl",
             "pakku_links": [
                 "y0UC3kpLVhVgLz9b"
@@ -14575,89 +14646,6 @@
                     "required_dependencies": [],
                     "size": 206584,
                     "date_published": "2023-08-21T13:15:59.833389Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "u8Ivj1BgadzcIUzO",
-            "pakku_links": [
-                "oC0unMVGatUQIsDP",
-                "y0UC3kpLVhVgLz9b"
-            ],
-            "type": "MOD",
-            "side": "CLIENT",
-            "slug": {
-                "curseforge": "supplemental-patches",
-                "modrinth": "supplemental-patches"
-            },
-            "name": {
-                "curseforge": "Supplemental Patches",
-                "modrinth": "Supplemental Patches"
-            },
-            "id": {
-                "curseforge": "1222851",
-                "modrinth": "7G5M8xtj"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "supplemental_patches-0.8.0-beta.jar",
-                    "mc_versions": [
-                        "1.20.2",
-                        "1.20.5",
-                        "1.20.1",
-                        "1.20",
-                        "1.20.6",
-                        "1.20.4",
-                        "1.20.3"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/7765/110/supplemental_patches-0.8.0-beta.jar",
-                    "id": "7765110",
-                    "parent_id": "1222851",
-                    "hashes": {
-                        "sha1": "6bc56e996cce7018459e622b10ab40b32a610106",
-                        "md5": "c5084509b5b6c10129ea2099268556c2"
-                    },
-                    "required_dependencies": [
-                        "351264",
-                        "581495"
-                    ],
-                    "size": 2883884,
-                    "date_published": "2026-03-16T03:39:14.017Z"
-                },
-                {
-                    "type": "modrinth",
-                    "file_name": "supplemental_patches-0.8.0-beta.jar",
-                    "mc_versions": [
-                        "1.20",
-                        "1.20.1",
-                        "1.20.2",
-                        "1.20.3",
-                        "1.20.4",
-                        "1.20.5",
-                        "1.20.6"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "beta",
-                    "url": "https://cdn.modrinth.com/data/7G5M8xtj/versions/Fw4hS7eH/supplemental_patches-0.8.0-beta.jar",
-                    "id": "Fw4hS7eH",
-                    "parent_id": "7G5M8xtj",
-                    "hashes": {
-                        "sha512": "afa803b085c36e296a022567479de2cb3903c67c7dc753a681663ad2c414127caae22cb37caa01cd4a16a21c598de720fdaeb621fc862d40d217867fefd2b8e0",
-                        "sha1": "6bc56e996cce7018459e622b10ab40b32a610106"
-                    },
-                    "required_dependencies": [
-                        "ordsPcFz",
-                        "GchcoXML"
-                    ],
-                    "size": 2883884,
-                    "date_published": "2026-03-04T12:16:21.448310Z"
                 }
             ]
         },
