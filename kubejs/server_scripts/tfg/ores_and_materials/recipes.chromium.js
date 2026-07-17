@@ -155,6 +155,14 @@ function registerTFGChromiumProcessing(event) {
                 .duration(16 * 20)
                 .EUt(GTValues.VA[GTValues.LV])
 
+        event.recipes.gtceu.chemical_reactor('tfg:calcium_hydroxide_carbonation')
+                .itemInputs(Item.of('gtceu:calcium_hydroxide_dust', 5))
+                .inputFluids(Fluid.of('gtceu:carbon_dioxide', 1000))
+                .itemOutputs(Item.of('gtceu:calcium_carbonate_dust', 5))
+                .outputFluids(Fluid.of('minecraft:water', 1000))
+                .duration(8 * 20)
+                .EUt(GTValues.VA[GTValues.MV])
+
 
 
 }
