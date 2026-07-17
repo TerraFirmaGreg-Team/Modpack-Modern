@@ -1,4 +1,13 @@
 # Changelog
+
+## Unreleased
+
+### Breaking Changes
+- Remove two steps in the Uvarovite-Chromium line so it's more appropriate to MV difficulty (all the recipes and materials will be removed later) @TomPlop
+### Changes
+- Add a new recipe for Calcium Carbonate by reacting calcium hydroxide with carbon dioxide @MajorMoth
+### Bug fixes
+
 ## [0.13.4] - 12-07-2026
 
 ### Ore Processing
