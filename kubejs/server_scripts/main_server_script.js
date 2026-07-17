@@ -51,6 +51,7 @@ ServerEvents.tags('item', event => {
     registerTFCLunchboxItemTags(event)
 	registerVintageImprovementsItemTags(event)
 	registerWABItemTags(event)
+	registerJelliesItemTags(event)
 })
 
 /**
@@ -285,6 +286,7 @@ ServerEvents.recipes(event => {
 	registerWABRecipes(event)
 	registerTFCScrapingKnivesRecipes(event)
 	registerTFGCircuitBoardsRecipes(event)
+	registerJelliesRecipes(event)
 })
 
 TaCZServerEvents.gunIndexLoad((event) => {
