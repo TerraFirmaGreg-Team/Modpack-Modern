@@ -18,7 +18,7 @@
 	"commands.sophisticatedbackpacks.list.cloth_color": "Tecido",
 	"commands.sophisticatedbackpacks.list.header": "Nome da mochila, Cores, Aberta pela última vez por, Aberta pela última vez em",
 	"commands.sophisticatedbackpacks.list.trim_color": "Enfeite",
-	"commands.sophisticatedbackpacks.remove_non_player.success": "%s mochilas que não eram de jogadores foram removidas",
+	"commands.sophisticatedbackpacks.remove_non_player.success": "Mochilas %s que não eram de jogadores foram removidas",
 	"commands.sophisticatedbackpacks.template.backpackempty": "A mochila está vazia",
 	"commands.sophisticatedbackpacks.template.create.alreadyexists": "O modelo '%s' já existe",
 	"commands.sophisticatedbackpacks.template.create.nobackpack": "Nenhuma mochila encontrada na mão principal",

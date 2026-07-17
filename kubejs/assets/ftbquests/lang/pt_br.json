@@ -47,6 +47,7 @@
   "commands.ftbquests.change_team_rewards.text": "Alterada configuração %d de recompensa de time para %s",
   "commands.ftbquests.command.delete_empty_reward_tables.text": "Excluídas tabelas %s de recompensas vazias",
   "commands.ftbquests.command.error.invalid_id": "ID de Objeto Inválida: %s!",
+  "commands.ftbquests.command.feedback.table_too_many_items": "AVISO: A tabela %s contém mais itens do que o bloco alvo pode suportar, parando por aqui!",
   "commands.ftbquests.editing_mode.disabled": "Modo de Edição desativado para %s",
   "commands.ftbquests.editing_mode.enabled": "Modo de Edição ativado para %s",
   "ftbquests.chapter": "Capítulo",
