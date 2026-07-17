@@ -10137,6 +10137,67 @@
             ]
         },
         {
+            "pakku_id": "XpEKC5TlViSebIVf",
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "curseforge": "jellies",
+                "modrinth": "jellies"
+            },
+            "name": {
+                "curseforge": "Jellies",
+                "modrinth": "Jellies"
+            },
+            "id": {
+                "curseforge": "1607526",
+                "modrinth": "9uLmCnkY"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "Jellies-1.20.1-0.1.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8420/106/Jellies-1.20.1-0.1.0.jar",
+                    "id": "8420106",
+                    "parent_id": "1607526",
+                    "hashes": {
+                        "sha1": "809f06ea60b8b2ad358c4aaceae97e4706b88902",
+                        "md5": "6e60de56e040321bc01d180f1ee80f7e"
+                    },
+                    "required_dependencies": [],
+                    "size": 912355,
+                    "date_published": "2026-07-12T17:28:05.937Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "Jellies-1.20.1-0.1.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/9uLmCnkY/versions/pjGw5MNu/Jellies-1.20.1-0.1.0.jar",
+                    "id": "pjGw5MNu",
+                    "parent_id": "9uLmCnkY",
+                    "hashes": {
+                        "sha512": "ee1871e1052e5021e67b47f65fffc5da9a896b131213457ff7dcfdfb842d1eaa97927348057b687deefb94b1571101bb2844ddbaf40380f684f4d9e829ff6146",
+                        "sha1": "809f06ea60b8b2ad358c4aaceae97e4706b88902"
+                    },
+                    "required_dependencies": [],
+                    "size": 912355,
+                    "date_published": "2026-07-12T17:28:08.844942Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "NZy1xTZhTOBxDiDt",
             "type": "MOD",
             "side": "CLIENT",
