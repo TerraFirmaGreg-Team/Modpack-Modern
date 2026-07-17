@@ -573,7 +573,12 @@ function registerTFGOverworldEntityTypeTags(event) {
 
 	event.add('tfg:slimes', 'minecraft:slime')
 	event.add('tfg:slimes', 'minecraft:magma_cube')
-	event.add('tfg:slimes', 'tfg:slime')
+	event.add('tfg:slimes', 'jellies:glowberry')
+	event.add('tfg:slimes', 'jellies:ice')
+	event.add('tfg:slimes', 'jellies:latex')
+	event.add('tfg:slimes', 'jellies:lava')
+	event.add('tfg:slimes', 'jellies:plant')
+	event.add('tfg:slimes', 'jellies:spring')
 
 	// Takes no damage from the new 1.21 cacti
 	event.add('tfg:ignores_cacti', 'waves:waves')
