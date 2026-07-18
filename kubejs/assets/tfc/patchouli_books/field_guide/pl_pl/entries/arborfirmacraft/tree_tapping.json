@@ -9,7 +9,7 @@
         },
         {
             "type": "patchouli:image",
-            "title": "Tapping a Maple Tree",
+            "title": "Ociąganie syropu z drzewa klonowego",
             "images": [
             	"afc:textures/gui/book/maple_tapping.png"
             ],
@@ -24,7 +24,7 @@
             "images": [
             	"tfg:textures/gui/field_guide/tree_tapping/tapping_kapok.png"
             ],
-            "text": "A valid tapping configuration used to extract Latex from Kapok",
+            "text": "Prawidłowa ekstrakcja lateksu z drzewa kapokowego",
             "border": true
         }
 	],
