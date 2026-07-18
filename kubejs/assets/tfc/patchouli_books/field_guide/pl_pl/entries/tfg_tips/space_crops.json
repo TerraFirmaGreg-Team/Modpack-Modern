@@ -145,7 +145,7 @@
 			"type": "patchouli:text",
 			"anchor": "blossom_berry",
 			"text": "$(bold)Location$(): Mars$(br)$(bold)$(l:the_world/climate#temperature)Temperature$(): -80 - 30 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 70 - 100 %$(br)$(bold)Nutrient$(): Potassium$(br2)Blossom Berry is a single block crop. Blossom Berry Seeds can be planted on farmland and will produce $(item)Blossom Berries$() which can be eaten for $(thing)Fruit$().",
-			"title": "Blossom Berry"
+			"title": "Kwitnące jagody"
 		},
 		{
 			"type": "tfc:multimultiblock",
