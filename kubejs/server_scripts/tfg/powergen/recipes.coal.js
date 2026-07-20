@@ -63,6 +63,7 @@ function registerTFGCoalRecipes(event) {
 
 	event.recipes.gtceu.coke_oven("tfg:peat")
 		.itemInputs('tfc:peat')
+		.itemOutputs("4x tfg:dried_peat_brick")
 		.outputFluids(Fluid.of('gtceu:creosote', 1000))
 		.duration(900)
 

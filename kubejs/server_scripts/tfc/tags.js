@@ -213,6 +213,7 @@ function registerTFCItemTags(event) {
 	event.add("tfc:forge_fuel", "gtceu:small_coal_dust");
 	event.add("tfc:forge_fuel", "gtceu:tiny_coal_dust");
 
+	event.add("tfc:forge_fuel", "tfg:dried_peat_brick");
 	event.add("tfc:forge_fuel", "beneath:cursecoal");
 
 	event.add("tfc:forge_fuel", "gtceu:coke_gem");
