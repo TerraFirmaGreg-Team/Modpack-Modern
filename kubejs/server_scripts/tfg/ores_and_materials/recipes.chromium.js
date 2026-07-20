@@ -86,12 +86,24 @@ function registerTFGChromiumProcessing(event) {
                 .duration(8 * 8)
                 .EUt(GTValues.VA[GTValues.LV])
 
-        event.recipes.gtceu.electric_blast_furnace('tfg:sodium_chromate_dust')
-                .itemInputs(Item.of('gtceu:uvarovite_dust', 20), Item.of('gtceu:sodium_hydroxide_dust', 18))
-                .itemOutputs(Item.of('tfg:sodium_chromate_dust', 14), Item.of('tfg:wollastonite_dust', 15))
-                .duration(16 * 20)
+        event.recipes.gtceu.electric_blast_furnace('tfg:chromium_3_oxide__from_uvarovite')
+                .itemInputs(Item.of('gtceu:uvarovite_dust', 20))
+                .itemOutputs(Item.of('tfg:chromium_3_oxide_dust', 5), Item.of('tfg:wollastonite_dust', 15))
+                .duration(24 * 20)
+                .circuit(1)
                 .EUt(GTValues.VA[GTValues.LV])
                 .blastFurnaceTemp(1250)
+
+        event.recipes.gtceu.electric_blast_furnace('tfg:chromium_3_oxide__from_uvarovite_boosted')
+                .itemInputs(Item.of('gtceu:uvarovite_dust', 20))
+                .inputFluids(Fluid.of('gtceu:nitrogen', 1000))
+                .itemOutputs(Item.of('tfg:chromium_3_oxide_dust', 5), Item.of('tfg:wollastonite_dust', 15))
+                .duration(16 * 20)
+                .circuit(2)
+                .EUt(GTValues.VA[GTValues.LV])
+                .blastFurnaceTemp(1250)
+
+        // To Remove in a further update with the custom made materials sodium_dichromate and sodium_chromate
 
         event.recipes.gtceu.chemical_reactor('tfg:sodium_dichromate_dust')
                 .itemInputs(Item.of('tfg:sodium_chromate_dust', 14))
@@ -142,6 +154,14 @@ function registerTFGChromiumProcessing(event) {
                 .itemOutputs(Item.of('gtceu:calcium_carbonate_dust', 1), Item.of('gtceu:sodium_hydroxide_dust', 2))
                 .duration(16 * 20)
                 .EUt(GTValues.VA[GTValues.LV])
+
+        event.recipes.gtceu.chemical_reactor('tfg:calcium_hydroxide_carbonation')
+                .itemInputs(Item.of('gtceu:calcium_hydroxide_dust', 5))
+                .inputFluids(Fluid.of('gtceu:carbon_dioxide', 1000))
+                .itemOutputs(Item.of('gtceu:calcium_carbonate_dust', 5))
+                .outputFluids(Fluid.of('minecraft:water', 1000))
+                .duration(8 * 20)
+                .EUt(GTValues.VA[GTValues.MV])
 
 
 

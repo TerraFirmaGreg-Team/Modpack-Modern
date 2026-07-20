@@ -5,7 +5,7 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "$(thing)Wild Crops$() can be found scattered around the world, growing in small patches. They can be harvested for food and seeds, which can then be cultivated themselves in the not-wild form.$(br2)Harvesting wild crops can be done with your fists, or with a $(thing)Knife$() or other sharp tool. When broken, they will drop $(thing)Seeds$() and some $(thing)Products$()."
+      "text": "$(thing)Dzikie Uprawy$() można znaleźć rozproszone na całym świecie, rosnąc w małych grupkach. Można je zbierać na żywność i nasiona, które następnie mogą być uprawiane w postaci nie dzikiej.$(br2) Dzikie rośliny możesz zebac za pomocą twoich dłoni lub za pomocą $(thing)noża$() lub innego ostrego narzędzia. Po zniszczeniu wypadają nasiona $(thing)() i niektóre produkty $(thing)$()."
     },
     {
       "type": "patchouli:multiblock",
@@ -23,7 +23,7 @@
         }
       },
       "name": "Dzika pszenica",
-      "text": "An example of a wild crop, in this case $(l:mechanics/crops#wheat)Wheat$().",
+      "text": "Przykład uprawy dzikiej, w tym przypadku $(l:mechanics/crops#pszenica)Pszennica$().",
       "enable_visualize": false
     },
     {

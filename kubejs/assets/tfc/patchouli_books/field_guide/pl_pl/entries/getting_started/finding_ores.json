@@ -91,7 +91,7 @@
     {
       "type": "patchouli:crafting",
       "recipe": "gtceu:shaped/pickaxe_copper",
-      "text": "You are now able to craft your first pickaxe! Find enough copper to make a pickaxe head, fire a pickaxe mold and melt the ore using a pit kiln, then cast a head. Slap it on a stick, and voila! You can now dig for $(l:tfg_ores/index)ore$()."
+      "text": "Teraz możesz wytworzyć swój pierwszy kilof! Znajdź wystarczająco dużo miedzi, aby utworzyć głowicę kilofa, przepal forme na kilof i roztop rude używając pieca jamowego, a następnie wyjmij głowice. Włóż ją na kijek i włala! Możesz teraz kopać $(l:tfg_ores/index)rudy$()."
     },
     {
       "type": "patchouli:spotlight",

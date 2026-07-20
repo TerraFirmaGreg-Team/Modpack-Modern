@@ -1,0 +1,13 @@
+{
+  "ingredient": {
+    "item": "firmalife:food/toast_with_jam"
+  },
+  "category": "other",
+  "hunger": 4,
+  "saturation": 2,
+  "water": 1,
+  "decay_modifier": 2,
+  "fruit": 0.75,
+  "grain": 1,
+  "sugary": 1
+}
