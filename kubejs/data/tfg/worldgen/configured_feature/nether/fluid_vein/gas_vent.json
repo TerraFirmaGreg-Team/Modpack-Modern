@@ -1,0 +1,39 @@
+{
+    "type": "minecraft:vegetation_patch",
+    "config": {
+        "depth": 2,
+        "extra_bottom_block_chance": 0.3,
+        "extra_edge_column_chance": 0.3,
+        "ground_state": {
+            "type": "minecraft:simple_state_provider",
+            "state": {
+                "Name": "tfg:rock/cobble_blackstone"
+            }
+        },
+        "replaceable": "#minecraft:nether_carver_replaceables",
+        "surface": "floor",
+        "vegetation_chance": 0.45,
+        "vegetation_feature": {
+            "feature": {
+                "type": "minecraft:simple_block",
+                "config": {
+                    "to_place": {
+                        "type": "minecraft:simple_state_provider",
+                        "state": {
+                            "Name": "tfg:natural_gas_emitter"
+                        }
+                    }
+                }
+            },
+            "placement": []
+        },
+        "vertical_range": 3,
+        "xz_radius": {
+            "type": "minecraft:uniform",
+            "value": {
+                "max_inclusive": 4,
+                "min_inclusive": 3
+            }
+        }
+    }
+}

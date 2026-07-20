@@ -6,11 +6,11 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "The journey of making a $(thing)Tortilla$() is a long process, but rewarding. Start with $(thing)Maize Grain$(). Boil it in a pot of $(thing)Limewater$(), and seal it in a barrel of water to make $(thing)Nixtamal$(). Then crush it in a $(thing)Quern$() to make $(thing)Masa Flour$()."
+      "text": "Путь создания $(thing)тортильи$() — долгий, но полезный процесс. Начните с $(thing)кукурузного зерна$(). Сварите его в кастрюле с $(thing)известковой водой$(), и запечатайте в\nбочке с водой, чтобы получить $(thing)Никстамаль$(). Затем перетрите его в $(thing)жерновах$(), чтобы получить $(thing)муку Маса$()."
     },
     {
       "type": "patchouli:text",
-      "text": "Crafting the Masa Flour with a bucket of water makes $(thing)Masa$(), the dough of a tortilla. This can be heated to make a $(thing)Corn Tortilla$(). Baking a Tortilla in an oven makes a $(thing)Taco Shell$()."
+      "text": "При приготовлении муки Маса из ведра с водой получается $(thing)Masa$(), тесто для тортильи, Его можно нагреть, чтобы получить$(thing)Кукурузная тортилья$(). При выпекании тортильи в духовке получатся $(thing)чипсы из тортильи$()."
     },
     {
       "type": "patchouli:crafting",
@@ -20,17 +20,17 @@
     {
       "type": "patchouli:crafting",
       "recipe": "tfg:crafting/salsa",
-      "text": "A tomato, cilantro, salt, and a knife will yield you $(thing)Salsa$()."
+      "text": "Помидор, кинза, соль и нож дадут вам $(thing)сальсу$()."
     },
     {
       "type": "patchouli:crafting",
       "recipe": "firmalife:crafting/burrito",
-      "text": "The $(thing)Burrito$() is made from cooked meat, $(l:firmalife/pizza#shredded_cheese)Shredded Cheese$(), $(l:firmalife/pizza#tomato_sauce)Tomato Sauce$(), a vegetable, and Salsa."
+      "text": "$(thing)Burrito$() состоит из варёного мяса,\n$(l:firmalife/pizza#shredded_cheese)тёртого сыра$(), $(l:firmalife/pizza#tomato_sauce)томатного соуса$(), овощей и сальсы."
     },
     {
       "type": "patchouli:crafting",
       "recipe": "firmalife:crafting/taco",
-      "text": "The $(thing)Taco$() is made from the same ingredients, except with a $(thing)Taco Shell$()."
+      "text": "$(thing)Тако$() изготовлен из тех же\nингредиентов, за исключением $(thing)чипсов из тортильи$()."
     }
   ],
   "read_by_default": true,

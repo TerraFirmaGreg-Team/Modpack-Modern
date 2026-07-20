@@ -26,7 +26,7 @@
         {
             "type": "patchouli:spotlight",
             "title": "Martelo de Mineração",
-            "text": "Basicamente, são picaretas com alcance 3x3 e também rendem $(thing)minérios brutos$(). Também são bons para limpar pedras após martelar os minérios!$(br2)Enquanto estiver $(thing)agachado$() quebrará apenas um bloco por vez.",
+            "text": "Basicamente, são picaretas com alcance 3x3 e também rendem $(thing)minérios brutos$(). Também são bons para limpar pedras!$(br2)Enquanto estiver $(thing)agachado$() quebrará apenas um bloco por vez.",
             "item": {
                 "tag": "forge:tools/mining_hammers"
             }

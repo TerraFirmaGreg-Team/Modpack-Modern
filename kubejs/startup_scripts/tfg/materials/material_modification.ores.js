@@ -29,6 +29,10 @@ function registerTFGOresMaterialModification(event) {
 	// Change Ores that have Chromium for Chromite
 	GTMaterials.Ruby.getProperty(PropertyKey.ORE).setOreByProducts(GTMaterials.Chromite, GTMaterials.GarnetRed, GTMaterials.Chromite);
 
+	// Change Ores that have Molybdenum for Molybdenite
+	GTMaterials.Scheelite.getProperty(PropertyKey.ORE).setOreByProducts(GTMaterials.Manganese, GTMaterials.Molybdenite, GTMaterials.Calcium);
+	GTMaterials.Molybdenite.getProperty(PropertyKey.ORE).setOreByProducts(GTMaterials.Quartzite, GTMaterials.Sulfur, GTMaterials.Molybdenum);
+
 	// Remove old stone dusts
 	GTMaterials.GraniticMineralSand.getProperty(PropertyKey.ORE).setOreByProducts(GTMaterials.get('tfg:igneous_felsic'), GTMaterials.Magnetite, GTMaterials.Magnetite);
 	GTMaterials.BasalticMineralSand.getProperty(PropertyKey.ORE).setOreByProducts(GTMaterials.get('tfg:igneous_mafic'), GTMaterials.Magnetite, GTMaterials.Magnetite);

@@ -64,7 +64,7 @@ function registerTFGCircuitBoardsRecipes(event) {
 		.inputFluids(Fluid.of('gtceu:oxygen', 1000))
 		.itemOutputs(Item.of('tfg:copper_bonded_al2o3_pcb'))
 		.duration(20 * 5)
-		.EUt(GTValues.VA[GTValues.MV])
+		.EUt(GTValues.VA[GTValues.HV])
 
 	event.recipes.gtceu.chemical_bath('tfg:ceramic_circuit_board_t2')
 		.itemInputs(Item.of('tfg:copper_bonded_al2o3_pcb'), Item.of('gtceu:nickel_dust', 1))

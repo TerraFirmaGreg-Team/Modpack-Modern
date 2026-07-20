@@ -25,8 +25,8 @@
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Hardwoods",
-            "text": "Known for their exceptional sturdiness, Hardwood trees are ideal for creating larger and sophisticated Watercrafts such as $(l:firmaciv/rowboat)Rowboats$() and $(l:firmaciv/sloop)Sloops$()",
+            "title": "Madeiras Densas",
+            "text": "Conhecidas pela sua excepcional dureza, árvores de Madeira Densa são ideais para criar grandes e sofisticadas Embarcações como os $(l:firmaciv/rowboat)Barcos a Remo$() e os $(l:firmaciv/sloop)Saveiros$()",
             "item": "beneath:wood/planks/warped"
         },
         {

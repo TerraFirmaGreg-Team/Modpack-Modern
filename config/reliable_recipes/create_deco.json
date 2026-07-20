@@ -25,6 +25,7 @@
 	},
 	{
 		"action": "remove_recipe",
+		"mod": "createdeco",
 		"output": [
 			"createdeco:zinc_sheet",
 			"createdeco:industrial_iron_sheet",
@@ -210,6 +211,7 @@
 	},
 	{
 		"action": "remove_recipe",
+		"mod": "createdeco",
 		"type": "minecraft:stonecutting",
 		"input": [
 			"#forge:storage_blocks/tin_alloy",

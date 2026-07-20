@@ -166,6 +166,18 @@ function registerTFGBoilerRecipes(event) {
 		.dimension('minecraft:overworld')
 		.dimension('minecraft:the_nether')
 
+	event.recipes.gtceu.steam_boiler('tfg:peanut_oil')
+		.inputFluids(Fluid.of('tfg:peanut_oil', 160))
+		.duration(200)
+		.dimension('minecraft:overworld')
+		.dimension('minecraft:the_nether')
+
+	event.recipes.gtceu.steam_boiler('tfg:palm_oil')
+		.inputFluids(Fluid.of('tfg:palm_oil', 160))
+		.duration(200)
+		.dimension('minecraft:overworld')
+		.dimension('minecraft:the_nether')
+
 	event.recipes.gtceu.steam_boiler('tfg:soybean_oil')
 		.inputFluids(Fluid.of('firmalife:soybean_oil', 160))
 		.duration(200)
@@ -256,16 +268,25 @@ function registerTFGBoilerRecipes(event) {
 		.outputFluids(Fluid.of('gtceu:seed_oil', 50))
 		.duration(32)
 		.EUt(2)
-
 	event.recipes.gtceu.extractor(`rapeseed_oil`)
 		.itemInputs('tfg:rapeseed_product')
 		.outputFluids(Fluid.of('gtceu:seed_oil', 600))
 		.duration(20 * 5)
 		.EUt(GTValues.VHA[GTValues.ULV])
-
 	event.recipes.gtceu.extractor(`sunflower_oil`)
 		.itemInputs('tfg:sunflower_product')
-		.outputFluids(Fluid.of('gtceu:seed_oil', 350))
+		.outputFluids(Fluid.of('gtceu:seed_oil', 500))
+		.duration(20 * 5)
+		.EUt(GTValues.VHA[GTValues.ULV])
+	event.recipes.gtceu.extractor(`tfg:peanut_oil`)
+		.itemInputs('tfg:peanut_product')
+		.outputFluids(Fluid.of('tfg:peanut_oil', 500))
+		.duration(20 * 5)
+		.EUt(GTValues.VHA[GTValues.ULV])
+	event.recipes.gtceu.extractor(`tfg:palm_oil`)
+		.itemInputs('tfg:oil_palm_paste')
+		.itemOutputs('tfg:oil_palm_debris')
+		.outputFluids(Fluid.of('tfg:palm_oil', 500))
 		.duration(20 * 5)
 		.EUt(GTValues.VHA[GTValues.ULV])
 
@@ -276,6 +297,17 @@ function registerTFGBoilerRecipes(event) {
 
 	event.recipes.tfc.barrel_sealed(1000)
 		.inputs('tfg:sunflower_product', Fluid.of('minecraft:water', 100))
-		.outputFluid(Fluid.of('gtceu:seed_oil', 120))
+		.outputFluid(Fluid.of('gtceu:seed_oil', 200))
 		.id('tfg:barrel/sunflower_to_oil')
+
+	event.recipes.tfc.barrel_sealed(1000)
+		.inputs('tfg:peanut_product', Fluid.of('minecraft:water', 100))
+		.outputFluid(Fluid.of('tfg:peanut_oil', 200))
+		.id('tfg:barrel/peanut_to_oil')
+
+	event.recipes.tfc.barrel_sealed(8000)
+		.inputs('tfg:oil_palm_paste', Fluid.of('tfc:spring_water', 100))
+		.outputItem('tfg:oil_palm_debris')
+		.outputFluid(Fluid.of('tfg:palm_oil', 200))
+		.id('tfg:barrel/palm_to_oil')
 }

@@ -1,0 +1,21 @@
+{
+	"processors": [
+		{
+			"processor_type": "lithostitched:block_swap",
+			"blocks": {
+                "minecraft:purpur_pillar": "minecraft:polished_deepslate",
+				"minecraft:purpur_block": "minecraft:deepslate_bricks",
+                "minecraft:purpur_slab": "minecraft:deepslate_brick_slab",
+				"minecraft:chiseled_quartz_block": "minecraft:polished_deepslate",
+				"tfc:rock/bricks/quartzite": "minecraft:deepslate_bricks",
+				"tfc:rock/bricks/quartzite_slab": "minecraft:deepslate_brick_slab",
+				"minecraft:cut_red_sandstone": "minecraft:polished_deepslate",
+				"minecraft:smooth_red_sandstone": "minecraft:deepslate_bricks",
+				"minecraft:smooth_red_sandstone_slab": "minecraft:deepslate_brick_slab",
+                "gtceu:certus_quartz_block": "minecraft:chiseled_polished_blackstone",
+                "createdeco:corner_red_bricks": "minecraft:chiseled_polished_blackstone",
+				"minecraft:mud_brick_wall": "minecraft:cobbled_deepslate_wall"
+			}
+		}
+	]
+}

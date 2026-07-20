@@ -18,7 +18,7 @@
   "filter.ftbfiltersystem.max_stack_size.name": "Максимальний розмір стосу",
   "filter.ftbfiltersystem.max_stack_size.tooltip": "Відповідає максимальному розміру стосу предмета.\nПредмети, що не складаються, відповідають значенню 1.",
   "filter.ftbfiltersystem.mod.name": "Мод",
-  "filter.ftbfiltersystem.mod.tooltip": "Відповідає модифікації, яка додає предмет.\nПредмети звичайної гри відповідають «моду» Minecraft.",
+  "filter.ftbfiltersystem.mod.tooltip": "Відповідає модифікації, яка додає предмет.\nПредмети звичайної гри відповідають \"моду\" Minecraft.",
   "filter.ftbfiltersystem.nbt.name": "NBT",
   "filter.ftbfiltersystem.nbt.tooltip": "Перевіряє відповідність NBT-тегів предмета за допомогою точного або нечіткого порівняння.\nЧітке: NBT має збігатися повністю.\nНечітке: перевіряються лише ті NBT-поля, які вказані тут.\nЯкщо у вас є права адміністратора, ви можете натиснути на предмети з NBT у твоєму інвентарі, щоб скопіювати їхній поточний NBT-тег у текстовий редактор.",
   "filter.ftbfiltersystem.not.name": "Не",

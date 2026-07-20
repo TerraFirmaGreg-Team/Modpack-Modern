@@ -1614,7 +1614,25 @@
 					type: "item"
 				}
 				{
-					id: "674CEEB9EAFE84A0"
+					id: "63D0D52966213B49"
+					item: "tfg:peanut_oil_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "4C6DF0905D0D35A2"
+					item: "firmalife:bucket/soybean_oil"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "31B846079D376069"
+					item: "tfc:bucket/olive_oil"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "4DD43C796578251A"
 					type: "checkmark"
 				}
 			]
@@ -2129,6 +2147,30 @@
 			title: "{quests.tfg_tips.capsules.title}"
 			x: 3.5d
 			y: 8.0d
+		}
+		{
+			dependencies: [
+				"701BCADAE5CF6CA5"
+				"5D0B0B9E61C3DE75"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"{quests.low_voltage.geologic_vulcanizer.desc.1}"
+				"{@pagebreak}"
+				"{quests.low_voltage.geologic_vulcanizer.desc.2}"
+			]
+			id: "4F6C86CA85019228"
+			optional: true
+			shape: "heart"
+			size: 1.5d
+			subtitle: "{quests.low_voltage.geologic_vulcanizer.subtitle}"
+			tasks: [{
+				id: "425A1E5EC9C1F722"
+				item: "tfg:ore_processing_beneath"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 10.0d
 		}
 	]
 	subtitle: ["{quests.low_voltage.subtitle}"]

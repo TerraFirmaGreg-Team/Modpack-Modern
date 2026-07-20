@@ -1,0 +1,15 @@
+{
+	"name": "tfg:beneath/tower/bst_moss_5",
+	"fallback": "minecraft:empty",
+	"elements": [
+		{
+			"weight": 40,
+			"element": {
+				"location": "tfg:beneath/tower/5/bst_moss",
+				"processors": "tfg:beneath/tower/5/bst_moss",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		}
+	]
+}

@@ -666,7 +666,7 @@
 						"ftbfiltersystem:filter": "or(item_tag(forge:small_item_pipes)item_tag(forge:normal_item_pipes)item_tag(forge:large_item_pipes)item_tag(forge:huge_item_pipes))"
 					}
 				}
-				title: "Any Item Pipes"
+				title: "{quests.steam_age.item_pipes.task}"
 				type: "item"
 			}]
 			title: "{quests.steam_age.item_pipes.title}"
@@ -1086,7 +1086,7 @@
 							"ftbfiltersystem:filter": "or(item(gtceu:bronze_tiny_fluid_pipe)item(gtceu:bronze_quadruple_fluid_pipe)item(gtceu:bronze_nonuple_fluid_pipe)item(gtceu:bronze_huge_fluid_pipe)item(gtceu:bronze_large_fluid_pipe)item(gtceu:bronze_normal_fluid_pipe)item(gtceu:bronze_small_fluid_pipe))"
 						}
 					}
-					title: "Any Bronze Pipe"
+					title: "{quests.tasktype.item.any} Bronze Pipe"
 					type: "item"
 				}
 				{
@@ -1149,7 +1149,7 @@
 						"ftbfiltersystem:filter": "or(item(gtceu:potin_tiny_fluid_pipe)item(gtceu:potin_small_fluid_pipe)item(gtceu:potin_normal_fluid_pipe)item(gtceu:potin_large_fluid_pipe)item(gtceu:potin_huge_fluid_pipe)item(gtceu:potin_huge_fluid_pipe)item(gtceu:potin_quadruple_fluid_pipe)item(gtceu:potin_nonuple_fluid_pipe))"
 					}
 				}
-				title: "Any Potin Pipe"
+				title: "{quests.tasktype.item.any} Potin Pipe"
 				type: "item"
 			}]
 			title: "{quests.steam_age.potin.title}"
@@ -1276,7 +1276,7 @@
 						}
 					}
 					optional_task: true
-					title: "Any #tfc:dirt"
+					title: "{quests.tasktype.item.any} #tfc:dirt"
 					type: "item"
 				}
 				{
@@ -1290,7 +1290,7 @@
 						}
 					}
 					optional_task: true
-					title: "Any #tfc:grass"
+					title: "{quests.tasktype.item.any} #tfc:grass"
 					type: "item"
 				}
 				{
@@ -1322,7 +1322,7 @@
 						}
 					}
 					optional_task: true
-					title: "Any #tfc:paths"
+					title: "{quests.tasktype.item.any} #tfc:paths"
 					type: "item"
 				}
 				{
@@ -1336,7 +1336,7 @@
 						}
 					}
 					optional_task: true
-					title: "Any #tfc:rock/gravel"
+					title: "{quests.tasktype.item.any} #tfc:rock/gravel"
 					type: "item"
 				}
 				{
@@ -1465,7 +1465,7 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:bronze_anvils)"
 					}
 				}
-				title: "Any #tfc:bronze_anvils"
+				title: "{quests.tasktype.item.any} #tfc:bronze_anvils"
 				type: "item"
 			}]
 			title: "{quests.metal_age.bronze_goodies.title}"
@@ -2085,6 +2085,35 @@
 			title: "{quests.tfg_tips.salvo.title}"
 			x: -15.0d
 			y: -4.0d
+		}
+		{
+			dependencies: ["46FA9DD4755A5548"]
+			description: ["{quest.steam_age.soft_mallet.desc}"]
+			id: "1D4701C28C2FACF7"
+			optional: true
+			shape: "heart"
+			size: 1.25d
+			subtitle: "{quest.steam_age.soft_mallet.subtitle}"
+			tasks: [{
+				id: "555897B32BD0B6DC"
+				item: {
+					Count: 1
+					id: "gtceu:wood_mallet"
+					tag: {
+						Damage: 0
+						DisallowContainerItem: 0b
+						GT.Behaviours: { }
+						GT.Tool: {
+							DefaultEnchantments: [ ]
+							MaxDamage: 127
+						}
+						HideFlags: 2
+					}
+				}
+				type: "item"
+			}]
+			x: -19.5d
+			y: 10.0d
 		}
 	]
 	subtitle: ["{quests.steam_age.subtitle}"]

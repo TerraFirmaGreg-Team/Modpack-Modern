@@ -34,12 +34,12 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#deep_sulfur)Schwefel (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#high_sulfur)Schwefel (Volcanic)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_copper_sulfide)Schwefel, Gips, Chalkosin (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sphalerite)Schwefel, Pyrit, Zinkblende (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_sulfide)Schwefel, Stibnite, Gips (Volcanic)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_galena)Smaragd, Natives Silber$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_galena)Smaragd, Natives Silber, Lead (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_mica)Sodalith (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_mica)Sodalith, Lasurit$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_scheelite)Sphalerit, Blei, Blei$()$()$(li)$(l:tfg_ores/earth_vein_index#high_coal)Steinkohle (High)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_tarkianite)Tarkianite, Borax, Talk$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_thorianite)Thorianite, Uranit, Smaragd...$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_tricalcium_phosphate)Tricalciumphosphat (Surface)$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#deep_sulfur)Schwefel (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#high_sulfur)Schwefel (Volcanic)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_copper_sulfide)Schwefel, Gips, Chalkosin (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sphalerite)Schwefel, Pyrit, Zinkblende (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_sulfide)Schwefel, Stibnite, Gips (Volcanic)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_galena)Smaragd, Natives Silber$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_galena)Smaragd, Natives Silber, Lead (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_mica)Sodalith (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_mica)Sodalith, Lasurit$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_scheelite)Sphalerit, Blei, Blei$()$()$(li)$(l:tfg_ores/earth_vein_index#high_coal)Steinkohle (High)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_tarkianite)Tarkianite, Borax, Talk$()$()$(li)$(l:tfg_ores/earth_vein_index#sand_garnet)Thorianit, Opal, Garnet Sand$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_thorianite)Thorianite, Uranit, Smaragd...$()$()",
       "type": "patchouli:text"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#deep_molybdenum)Wulfenit, Molybdänit...$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_sphalerite)Zinkblende (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_sphalerite)Zinkblende, Smaragd$()$()$(li)$(l:tfg_ores/earth_vein_index#high_tin)Zinn, Kassiterit (High)$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#surface_tricalcium_phosphate)Tricalciumphosphat (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_molybdenum)Wulfenit, Molybdänit, Ölsand$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_sphalerite)Zinkblende (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_sphalerite)Zinkblende, Smaragd$()$()$(li)$(l:tfg_ores/earth_vein_index#high_tin)Zinn, Kassiterit (High)$()$()",
       "type": "patchouli:text"
     },
     {
@@ -230,7 +230,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 57%$(br)$(thing)Melts into$(): Cast Iron$(br)$(thing)Formula$(): (Fe₃O₄)((Mg₂Fe(SiO₂)₂)(CaCo₃)₃(SiO₂)₈C₄)",
+      "text": "$(thing)Prozentzahl$(): 50%$(br)$(thing)Melts into$(): Cast Iron$(br)$(thing)Formula$(): (Fe₃O₄)((Mg₂Fe(SiO₂)₂)(CaCo₃)₃(SiO₂)₈C₄)",
       "type": "patchouli:multiblock"
     },
     {
@@ -250,7 +250,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 35%$(br)$(thing)Source of$(): Magnesium, Aluminium$(br)$(thing)Formula$(): KMg₂Al₄H₂O₁₂",
+      "text": "$(thing)Prozentzahl$(): 31%$(br)$(thing)Source of$(): Magnesium, Aluminium$(br)$(thing)Formula$(): KMg₂Al₄H₂O₁₂",
       "type": "patchouli:multiblock"
     },
     {
@@ -270,7 +270,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 7%$(br)$(thing)Source of$(): Almandine, Andradite, Grossular, Pyrope, Spessartine, Uvarovite",
+      "text": "$(thing)Prozentzahl$(): 18%$(br)$(thing)Source of$(): Almandine, Andradite, Grossular, Pyrope, Spessartine, Uvarovite",
       "type": "patchouli:multiblock"
     },
     {
@@ -1264,7 +1264,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 61%$(br)$(thing)Melts into$(): Cast Iron$(br)$(thing)Formula$(): (Fe₃O₄)((SiO₂)₄(KMg₃Al₃F₂Si₃O₁₀))",
+      "text": "$(thing)Prozentzahl$(): 53%$(br)$(thing)Melts into$(): Cast Iron$(br)$(thing)Formula$(): (Fe₃O₄)((SiO₂)₄(KMg₃Al₃F₂Si₃O₁₀))",
       "type": "patchouli:multiblock"
     },
     {
@@ -1284,7 +1284,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 30%$(br)$(thing)Source of$(): Magnesium$(br)$(thing)Formula$(): MgSi₄H(H₂O)₄O₁₁",
+      "text": "$(thing)Prozentzahl$(): 26%$(br)$(thing)Source of$(): Magnesium$(br)$(thing)Formula$(): MgSi₄H(H₂O)₄O₁₁",
       "type": "patchouli:multiblock"
     },
     {
@@ -1304,7 +1304,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 7%$(br)$(thing)Source of$(): Almandine, Andradite, Grossular, Pyrope, Spessartine, Uvarovite",
+      "text": "$(thing)Prozentzahl$(): 20%$(br)$(thing)Source of$(): Almandine, Andradite, Grossular, Pyrope, Spessartine, Uvarovite",
       "type": "patchouli:multiblock"
     },
     {
@@ -3925,6 +3925,73 @@
     },
     {
       "Type": "patchouli:text",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/270 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 24%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:How far deep the vein is relative to the surface's Y level.)Surface Depth$(/t)$(): -5 — 1$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 34$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 20$(br)$(thing)Biomes$(): $(t:Mud Flats, Salt Flats, Dune Sea, Grassy Dunes)Dry$(/t)$(br2)$(thing)Stone Types$(): Brauner Sand, Gelber Sand, Grüner Sand, Pinker Sand, Roter Sand, Schwarzer Sand, Weißer Sand",
+      "title": "Thorianit, Opal, Garnet Sand",
+      "type": "patchouli:text",
+      "anchor": "sand_garnet"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Garnet Sand",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/garnet_sand"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Prozentzahl$(): 40%$(br)$(thing)Source of$(): Almandine, Andradite, Grossular, Pyrope, Spessartine, Uvarovite",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Thorianit",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/glauconite_sand"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Prozentzahl$(): 30%$(br)$(thing)Source of$(): Magnesium, Aluminium$(br)$(thing)Formula$(): KMg₂Al₄H₂O₁₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Opal",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/fullers_earth"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Prozentzahl$(): 30%$(br)$(thing)Source of$(): Magnesium$(br)$(thing)Formula$(): MgSi₄H(H₂O)₄O₁₁",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:text",
       "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/270 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 21%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): -50 — 20$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 31$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 15$(br)$(thing)Biomes$(): Alle$(br2)$(thing)Stone Types$(): Diorit, Gabbro, Granit",
       "title": "Thorianite, Uranit, Smaragd...",
       "type": "patchouli:text",
@@ -4045,29 +4112,9 @@
     {
       "Type": "patchouli:text",
       "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/210 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 22%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): -50 — 20$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 38$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 15$(br)$(thing)Biomes$(): Alle$(br2)$(thing)Stone Types$(): Diorit, Gabbro, Granit",
-      "title": "Wulfenit, Molybdänit...",
+      "title": "Wulfenit, Molybdänit, Ölsand",
       "type": "patchouli:text",
       "anchor": "deep_molybdenum"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Molybdänit",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/molybdenite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 57%$(br)$(thing)Source of$(): Molybdenum$(br)$(thing)Formula$(): MoS₂",
-      "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:multiblock",
@@ -4086,27 +4133,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 28%$(br)$(thing)Source of$(): Lead, Molybdenum$(br)$(thing)Formula$(): PbMoO₄",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Molybdenum",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/molybdenum"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 7%$(br)$(thing)Source of$(): Molybdenum$(br)$(thing)Formula$(): Mo",
+      "text": "$(thing)Prozentzahl$(): 40%$(br)$(thing)Source of$(): Lead, Molybdenum$(br)$(thing)Formula$(): PbMoO₄",
       "type": "patchouli:multiblock"
     },
     {
@@ -4126,13 +4153,28 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 7%$(br)$(thing)Source of$(): Molybdenum$(br)$(thing)Formula$(): CaMoO₄",
+      "text": "$(thing)Prozentzahl$(): 34%$(br)$(thing)Source of$(): Molybdenum$(br)$(thing)Formula$(): CaMoO₄",
       "type": "patchouli:multiblock"
     },
     {
-      "Type": "patchouli:empty",
-      "draw_filler": true,
-      "type": "patchouli:empty"
+      "Type": "patchouli:multiblock",
+      "name": "Molybdänit",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/molybdenite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Prozentzahl$(): 24%$(br)$(thing)Source of$(): Molybdenum$(br)$(thing)Formula$(): MoS₂",
+      "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:text",

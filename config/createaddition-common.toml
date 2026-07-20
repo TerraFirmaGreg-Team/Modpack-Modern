@@ -80,13 +80,13 @@
 [accumulator]
 	#Accumulator max input in FE/t (Energy transfer).
 	#Range: > 0
-	accumulator_max_input = 5000
+	accumulator_max_input = 8388608
 	#Accumulator max output in FE/t (Energy transfer).
 	#Range: > 0
-	accumulator_max_output = 5000
+	accumulator_max_output = 8388608
 	#Accumulator internal capacity per block in FE.
 	#Range: > 0
-	accumulator_capacity = 2000000
+	accumulator_capacity = 8000000
 	#Accumulator max multiblock height.
 	#Range: 1 ~ 8
 	accumulator_max_height = 5
@@ -98,10 +98,10 @@
 [portable_energy_interface]
 	#PEI max input in FE/t (Energy transfer).
 	#Range: > 0
-	pei_max_input = 5000
+	pei_max_input = 8388608
 	#PEI max output in FE/t (Energy transfer).
 	#Range: > 0
-	pei_max_output = 5000
+	pei_max_output = 8388608
 
 #Tesla Coil
 [tesla_coil]

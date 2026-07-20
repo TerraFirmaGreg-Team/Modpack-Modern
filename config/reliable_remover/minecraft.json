@@ -435,7 +435,6 @@
 		"minecraft:lily_pad",
 		"minecraft:vine",
 		"minecraft:seagrass",
-		"minecraft:grass",
 		"minecraft:dandelion",
 		"minecraft:poppy",
 		"minecraft:blue_orchid",
@@ -558,7 +557,6 @@
 		"minecraft:sea_pickle",
 		"minecraft:apple",
 		"minecraft:soul_torch",
-		"minecraft:torch",
 		"minecraft:anvil",
 		"minecraft:chipped_anvil",
 		"minecraft:damaged_anvil",
@@ -634,6 +632,9 @@
 		"minecraft:nautilus_shell",
 		"minecraft:red_mushroom",
 		"minecraft:brown_mushroom",
-		"minecraft:warped_roots"
+		"minecraft:warped_roots",
+
+		"minecraft:golden_apple",
+		"minecraft:enchanted_golden_apple"
 	]
 }

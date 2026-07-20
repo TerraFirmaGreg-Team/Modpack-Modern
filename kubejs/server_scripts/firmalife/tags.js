@@ -46,6 +46,7 @@ const registerFirmaLifeBlockTags = (event) => {
 	greenhouse_tiers.forEach(tier => {
 		event.add('firmalife:always_valid_greenhouse_wall', `firmalife:${  tier  }_greenhouse_door`)
 		event.add('firmalife:always_valid_greenhouse_wall', `firmalife:${  tier  }_greenhouse_trapdoor`)
+		event.add('firmalife:always_valid_greenhouse_wall', `firmalife:${  tier  }_greenhouse_roof`)
 	})
 
     event.add('firmalife:oven_insulation', 'firmalife:stovetop_pot');
@@ -89,4 +90,10 @@ const registerFirmaLifeFluidTags = (event) => {
     event.add('firmalife:oils', 'gtceu:seed_oil')
     event.add('firmalife:oils', 'gtceu:fish_oil')
     event.add('firmalife:oils', 'tfg:triglyceride_oil')
+    event.add('firmalife:oils', 'tfg:peanut_oil')
+    event.add('firmalife:oils', 'tfg:palm_oil');
+
+    event.remove('tfc:milks', 'firmalife:coconut_milk');
+    event.remove('tfc:drinkables', 'firmalife:coconut_milk');
+    event.remove('tfc:any_drinkables', 'firmalife:coconut_milk');
 }

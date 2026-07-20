@@ -108,6 +108,7 @@ function registerTFGClothRecipes(event) {
 		.circuit(16)
 		.duration(100)
 		.EUt(4)
+	
 
 	// Wool Yarn
 	event.recipes.gtceu.macerator('macerate_wool')
@@ -126,33 +127,47 @@ function registerTFGClothRecipes(event) {
 
 	//#region Spindle Recipes
 	
-	event.shaped('tfg:copper_spindle', [
-		'A',
-		'B'
-	], {
-		A: 'tfg:copper_spindle_head',
-		B: '#forge:rods/wooden'
-	}).id('tfg:shaped/copper_spindle')
+	const spindle_metals_cast = [
+		{metal: 'copper', tier:1},
+		{metal: 'bronze', tier:2},
+		{metal: 'black_bronze', tier:2},
+		{metal: 'bismuth_bronze', tier:2}
+	]
 	
-	event.recipes.tfc.casting(
-        'tfg:copper_spindle_head',
-        'tfg:spindle_head_mold',
-        TFC.fluidStackIngredient('gtceu:copper', 72),
-        0.1
-    ).id('tfg:casting/copper_spindle_head')
+	const spindle_metals =[
+		{metal: 'wrought_iron', tier:3}
+	].concat(spindle_metals_cast)
 	
-	event.recipes.tfc.anvil(
-		'tfg:copper_spindle_head',
-        'gtceu:copper_rod',
-        [
-            'draw_last',
-            'upset_second_last',
-			'shrink_third_last'
-        ]
-    ).bonus(true)
-	 .tier(1)
-	 .id('tfg:anvil/copper_spindle_head')
-
+	spindle_metals.forEach(spindle => {
+		
+		event.shaped(`tfg:${spindle.metal}_spindle`, [
+			'A',
+			'B'
+		], {
+			A: `tfg:${spindle.metal}_spindle_head`,
+			B: '#forge:rods/wooden'
+		}).id(`tfg:shaped/${spindle.metal}_spindle`)
+		
+		event.recipes.tfc.anvil(
+			`tfg:${spindle.metal}_spindle_head`,
+			`gtceu:${spindle.metal}_rod`,
+			[
+				'draw_last',
+				'upset_second_last',
+				'shrink_third_last'
+			]
+		).bonus(true).tier(spindle.tier).id(`tfg:anvil/${spindle.metal}_spindle_head`)
+	})
+	
+	spindle_metals_cast.forEach(spindle => {
+		event.recipes.tfc.casting(
+			`tfg:${spindle.metal}_spindle_head`,
+			'tfg:spindle_head_mold',
+			TFC.fluidStackIngredient(`gtceu:${spindle.metal}`, 72),
+			0.1
+		).id(`tfg:casting/${spindle.metal}_spindle_head`)
+	})
+	
 	//#endregion
 
 
@@ -278,12 +293,27 @@ function registerTFGClothRecipes(event) {
 		8,
 		'tfc:block/burlap'
 	)
-
+	
 	event.recipes.tfc.loom(
 		'1x tfc:burlap_cloth',
 		'16x tfg:flax_tow',
 		12,
 		'tfc:block/burlap'
+	)
+	
+	// light cloth to wool
+	event.recipes.tfc.loom(
+		'8x minecraft:white_wool',
+		'4x tfg:linen_cloth',
+		4,
+		'minecraft:block/white_wool'
+	)
+	
+	event.recipes.tfc.loom(
+		'8x minecraft:white_wool',
+		'4x tfc:silk_cloth',
+		4,
+		'minecraft:block/white_wool'
 	)
 
 	event.recipes.gtceu.assembler('tfg:assembler/linen_cloth')
@@ -299,6 +329,29 @@ function registerTFGClothRecipes(event) {
 		.itemOutputs('tfc:burlap_cloth')
 		.duration(100)
 		.EUt(4)
+	//#endregion
+
+	//#region Oil Palm
+	global.generateCuttingFoodRecipes(event, 'tfg:food/oil_palm', 'tfg:oil_palm_paste', false, false, true, true, true);
+
+	event.recipes.tfc.barrel_sealed(8000)
+		.inputs('tfg:oil_palm_debris', TFC.fluidStackIngredient('#tfg:clean_water', 200))
+		.outputItem('tfg:oil_palm_fiber')
+		.id('tfg:barrel/oil_palm_debris_to_fiber');
+
+	event.recipes.tfc.loom(
+		'1x tfc:burlap_cloth',
+		'16x tfg:oil_palm_fiber',
+		16,
+		'tfc:block/burlap'
+	).id('tfg:loom/oil_palm_burlap');
+
+	event.recipes.gtceu.assembler('tfg:oil_palm_burlap')
+		.itemInputs('16x tfg:oil_palm_fiber')
+		.circuit(10)
+		.itemOutputs('tfc:burlap_cloth')
+		.duration(100)
+		.EUt(GTValues.VA[GTValues.ULV]);
 	//#endregion
 	
 }

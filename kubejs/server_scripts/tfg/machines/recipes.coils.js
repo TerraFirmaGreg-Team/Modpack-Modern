@@ -33,9 +33,21 @@ function registerTFGCoilRecipes(event) {
 		.itemOutputs('#forge:dusts/magnesia')
 		.duration(20 * 40)
 
+	event.recipes.gtceu.coke_oven('tfg:magnesia_from_phlogopite')
+		.itemInputs('3x #forge:dusts/phlogopite')
+		.itemOutputs('#forge:dusts/magnesia')
+		.duration(20 * 40)
+
 	event.recipes.gtceu.pyrolyse_oven('tfg:magnesia')
 		.itemInputs('#forge:dusts/magnesium_hydroxide')
 		.itemOutputs('#forge:dusts/magnesia')
+		.duration(20 * 20)
+		.EUt(GTValues.VHA[GTValues.MV])
+
+	event.recipes.gtceu.pyrolyse_oven('tfg:magnesia_from_phlogopite')
+		.itemInputs('5x #forge:dusts/phlogopite')
+		.itemOutputs('3x #forge:dusts/magnesia', Item.of('gtceu:aluminium_dust'))
+		.outputFluids(Fluid.of('gtceu:carbon_dioxide', 1000))
 		.duration(20 * 20)
 		.EUt(GTValues.VHA[GTValues.MV])
 

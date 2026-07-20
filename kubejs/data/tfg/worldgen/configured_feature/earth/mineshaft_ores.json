@@ -1,0 +1,20 @@
+{
+    "type": "tfg:mineshaft_ore",
+    "config": {
+		"horizontal_range": {
+            "type": "minecraft:uniform",
+            "value": {
+                "max_inclusive": 28,
+                "min_inclusive": 15
+            }
+        },
+		"vertical_range": {
+            "type": "minecraft:uniform",
+            "value": {
+                "max_inclusive": 18,
+                "min_inclusive": 14
+            }
+        },
+        "all_ores": true
+    }
+}

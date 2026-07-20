@@ -1,0 +1,14 @@
+{
+    "type": "tfg:rock_pile",
+    "config": {
+        "radius": 2,
+		"height": 4,
+		"size": {
+            "type": "minecraft:uniform",
+            "value": {
+                "max_inclusive": 100,
+                "min_inclusive": 64
+            }
+        }
+    }
+}

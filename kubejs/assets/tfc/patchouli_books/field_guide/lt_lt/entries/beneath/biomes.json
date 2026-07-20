@@ -1,0 +1,111 @@
+{
+	"name": "Biomes",
+	"category": "tfc:beneath",
+	"icon": "minecraft:spyglass",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "The Beneath has a full set of new biomes to explore! The Beneath can be split into three vertical layers, each with their own set of biomes. Each one is more hot and dangerous as you descend!"
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Salt Caves",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/salt_caves.png"
+			],
+			"border": true,
+			"text": "Like a warm ocean breeze, this biome is full of $(item)Halite$(). Makes for a great base location!"
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Muggy Bog",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/muggy_bog.png"
+			],
+			"border": true,
+			"text": "Humid and swamp-like. A safe source of wood, if you can avoid the $(thing)Crocodiles$()."
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Decaying Caverns",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/decaying_caverns.png"
+			],
+			"border": true,
+			"text": "Nature's recyclers are hard at work in this damp region full of rot."
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Webbed Lair",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/webbed_lair.png"
+			],
+			"border": true,
+			"text": "No prizes for guessing what lives here! Also features huge $(thing)Travertine$() pillars."
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Tar Pools",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/tar_pools.png"
+			],
+			"border": true,
+			"text": "Sandy like a small desert, this area contains sticky $(thing)Tar Pits$() full of oil."
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Geothermal Springs",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/geothermal_springs.png"
+			],
+			"border": true,
+			"text": "No Sulfur Cubes here, but this steamy biome can be a great place to find $(thing)Spring Water$() for healing."
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Thorny Grove",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/thorny_brambles.png"
+			],
+			"border": true,
+			"text": "A difficult to traverse biome with plants that affect you when stepped on. Watch out!"
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Lush Hollow",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/lush_hollow.png"
+			],
+			"border": true,
+			"text": "Hot and full of greenery! The dense ferns hides the underlying $(thing)Kaolin Clay$()."
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Ash Forest",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/ash_forest.png"
+			],
+			"border": true,
+			"text": "What remains of the Lush Hollow after the frequent fires caused by the heat."
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Lava Floes",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/lava_floes.png"
+			],
+			"border": true,
+			"text": "An ore-rich $(thing)Pyroxenite$() area crisscrossed with rivers of lava."
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Basalt Deltas",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/basalt_deltas.png"
+			],
+			"border": true,
+			"text": "Everyone's favourite nether biome returns, and is just as dangerous to navigate as ever."
+		}
+	],
+	"read_by_default": true
+}

@@ -98,6 +98,39 @@
 		ftbranks.name_format: "&c{name}&c"
 		ftbchunks.max_claimed: 10000
 		ftbchunks.max_force_loaded: 10000
+		ftbchunks.chunk_load_offline: true
 		ftbessentials.rtp.cooldown: 0
+
+		command.enderchest: true
+		command.ldlib: true
+		command.compass_server: true
+		command.chunky: true
+		command.catnip: true
+		command.bookshelf: true
+		command.aptweaks: true
+		command.afc: true
+		command.advancement: true
+		command.bossbar: true
+		command.clone: true
+		command.cucumber: true
+		command.gamemode: true
+		command.give: true
+		command.guideme: true
+		command.kubejs: true
+		command.kubejs_tfc: true
+		command.letmedespawn: true
+		command.locate: true
+		command.lode: true
+		command.octolib: true
+		command.worldborder: true
+		command.whitelist: true
+		command.uteamcore: true
+		command.tpx: true
+		command.tp_offline: true
+		command.tpa: true
+		command.tpaccept: true
+		command.tpahere: true
+		command.tpdeny: true
+		command.grieflogger: true
 	}
 }

@@ -1,0 +1,58 @@
+{
+	"feature": "tfg:nether/structure/spider_house",
+	"placement": [
+		{
+			"type": "minecraft:rarity_filter",
+			"chance": 8
+		},
+		{
+			"type": "minecraft:in_square"
+		},
+		{
+			"type": "minecraft:height_range",
+			"height": {
+				"type": "minecraft:uniform",
+				"max_inclusive": {
+					"absolute": 190
+				},
+				"min_inclusive": {
+					"absolute": 120
+				}
+			}
+		},
+		{
+			"type": "minecraft:biome"
+		},
+		{
+			"type": "minecraft:environment_scan",
+			"allowed_search_condition": {
+				"type": "minecraft:matching_blocks",
+				"blocks": "minecraft:air"
+			},
+			"direction_of_search": "down",
+			"max_steps": 12,
+			"target_condition": {
+				"type": "minecraft:solid"
+			}
+		},
+		{
+			"type": "minecraft:biome"
+		},
+		{
+			"type": "minecraft:random_offset",
+			"xz_spread": 6,
+			"y_spread": 1
+		},
+		{
+			"type": "tfc:flat_enough",
+			"radius": 4,
+			"flatness": 0.3,
+			"max_depth": 2
+		},
+		{
+			"type": "minecraft:random_offset",
+			"xz_spread": -6,
+			"y_spread": -1
+		}
+	]
+}

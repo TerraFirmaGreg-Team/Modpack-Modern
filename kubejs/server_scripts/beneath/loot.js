@@ -4,6 +4,7 @@
 function registerBeneathLoots(event) {
 	event.addEntityLootModifier('beneath:red_elk')
 		.addLoot(LootEntry.of('waterflasks:bladder').when(c => c.randomChance(0.1)))
+		.addWeightedLoot([1, 3], ['firmalife:rennet'])
 				
 	event.addEntityLootModifier('beneath:red_elk')
 		.matchMainHand('#forge:tools/butchery_knives')

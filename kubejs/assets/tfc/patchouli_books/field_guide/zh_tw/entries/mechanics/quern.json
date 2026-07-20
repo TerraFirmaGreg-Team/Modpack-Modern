@@ -6,7 +6,7 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "$(thing)手推磨$()是用來研磨物品的裝置。可以粉碎粗礦以用於$(l:tfg_ores/ore_basics#processing)加工$()，還能製作粉末、$(l:mechanics/dye)染料$() 以及其他物品。它由$(thing)底座$()和$(thing)磨盤$()組合而成。"
+      "text": "$(thing)手推磨$()是用來研磨物品的裝置。可以粉碎原礦以用於$(l:tfg_ores/ore_basics#processing)加工$()，還能製作粉末、$(l:mechanics/dye)染料$() 以及其他物品。它由$(thing)底座$()和$(thing)磨盤$()組合而成。"
     },
     {
       "type": "patchouli:crafting",
@@ -52,9 +52,9 @@
     },
     {
       "type": "tfc:quern_recipe",
-      "title": "粉碎礦石",
+      "title": "碎礦",
       "recipe": "tfg:quern/copper_crushed_ore_from_normal_raw_ore",
-      "text": "$(l:tfg_ores/ore_basics#processing)礦石$()透過粉碎以取得更多金屬。"
+      "text": "粉碎$(l:tfg_ores/ore_basics#processing)礦石$()以取得更多金屬。"
     },
     {
       "type": "tfc:quern_recipe",

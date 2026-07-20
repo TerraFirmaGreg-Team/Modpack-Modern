@@ -527,7 +527,7 @@
 							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:tools/mining_hammers)"
 						}
 					}
-					title: "Any #forge:tools/mining_hammers"
+					title: "{quests.tasktype.item.any} #forge:tools/mining_hammers"
 					type: "item"
 				}
 				{
@@ -540,7 +540,7 @@
 						}
 					}
 					optional_task: true
-					title: "Any #tfg:rope_ladders"
+					title: "{quests.tasktype.item.any} #tfg:rope_ladders"
 					type: "item"
 				}
 				{
@@ -909,7 +909,7 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:blast_furnace_fuel)"
 					}
 				}
-				title: "Any #tfc:blast_furnace_fuel"
+				title: "{quests.tasktype.item.any} #tfc:blast_furnace_fuel"
 				type: "item"
 				weak_nbt_match: true
 			}]
@@ -1446,7 +1446,7 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfg:crafting_stations)"
 					}
 				}
-				title: "Any #tfg:crafting_stations"
+				title: "{quests.tasktype.item.any} #tfg:crafting_stations"
 				type: "item"
 			}]
 			title: "{quests.metal_age.crafting_station.title}"
@@ -1524,7 +1524,7 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfg:latex_logs)"
 					}
 				}
-				title: "Any #tfg:latex_logs"
+				title: "{quests.tasktype.item.any} #tfg:latex_logs"
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.find_latex_tree.title}"

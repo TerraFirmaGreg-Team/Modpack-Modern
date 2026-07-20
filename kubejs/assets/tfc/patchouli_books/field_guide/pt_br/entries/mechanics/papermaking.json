@@ -84,33 +84,33 @@
       },
       {
         "type": "patchouli:text",
-        "text": "First you need to find Hardwood:$(br2)Acacia$(br)Ash$(br)Aspen$(br)Birch$(br)Blackwood$(br)Chestnut$(br)Hickory$(br)Maple$(br)Oak$(br)Rosewood$(br)Sycamore"
+        "text": "Primeiro você precisa encontrar alguma Madeira Densa:$(br2)Acácia$(br)Álamo$(br)Bétula$(br)Bordo$(br)Carvalho$(br)Castanheira$(br)Ébano$(br)Freixo$(br)Jacarandá$(br)Nogueira$(br)Sicômoro"
       },
       {
         "type": "patchouli:spotlight",
-        "title": "Stripped Hardwood",
+        "title": "Madeira Densa Descascada",
         "item": {
           "tag": "tfg:stripped_hardwood"
         },
-        "text": "The process begins by stripping the $(thing)Hardwood$()'s bark off to expose the internal fibers of the log, You can strip the log by placing it down and right clicking it with an axe"
+        "text": "O processo começa removendo a casca de uma $(thing)Madeira Densa$() para expor as fibras internas da mesma. Você pode descascar colocando-a no chão e clicando nela com botão direito segurando um machado."
       },
       {
         "type": "patchouli:crafting",
-        "title": "Hardwood Strip",
+        "title": "Tira de Madeira Densa",
         "recipe": "tfg:crafting/strip_hardwood",
-        "text": "Next, the stripped wood is shaven with an axe to obtain $(item)Hardwood Strips$(). This can be done using an Axe or more sophisticated methods"
+        "text": "Em seguida, a madeira descascada é desbastada com um machado para obter $(item)Tiras de Madeira Densa$(). Isso pode ser feito usando um Machado ou métodos mais sofisticados"
       },
       {
         "type": "tfc:sealed_barrel_recipe",
-        "title": "Soaked Hardwood Strip",
+        "title": "Tira de Madeira Densa Encharcada",
         "recipe": "tfg:barrel/soak_hardwood_strip",
         "text": "Then, the individual strips are soaked in a $(l:mechanics/barrels)Barrel$() of $(thing)Water$(). This $(thing)debilitates the structural integrity$() of the $(thing)wood$() so it can be $(thing)broken down further$()"
       },
       {
         "type": "tfc:quern_recipe",
         "recipe": "tfg:quern/soaked_hardwood_strip",
-        "title": "Hardwood Pulp",
-        "text": "Afterwards, utilize the $(l:mechanics/quern)Quern$() to break down the soaked strips into $(item)Hardwood Pulp$()"
+        "title": "Polpa de Madeira Densa",
+        "text": "Depois, utilize a $(l:mechanics/quern)Moenda$() para transformar as tiras encharcadas em $(item)Polpa de Madeira Densa$()."
       },
       {
         "type": "patchouli:crafting",
@@ -131,7 +131,7 @@
         "type": "patchouli:spotlight",
         "item": "tfg:soaked_unrefined_paper",
         "title": "Pressing the Pulp",
-        "text": "After broken down by boiling it with Lye, the $(item)Thermochemically Treated Hardwood Pulp$() can be pressed down into a sheet of $(item)Soaked Unrefined Paper$()"
+        "text": "Após ser decomposta por fervura com Lixívia, a $(item)Polpa de Madeira Densa Termoquimicamente Tratada$() pode ser prensada em uma folha de $(item)Papel Não Refinado Encharcado$()."
       },
       {
         "type": "tfc:anvil_recipe",
@@ -144,7 +144,7 @@
         "item": {
           "tag": "firmalife:stomping_barrels"
         },
-        "text": "Alternatively, you can stomp the Thermochemically Treated Hardwood Pulp in a $(l:firmalife/wine)Stomping Barrel$()"
+        "text": "Como alternativa, você pode pisotear a Polpa de Madeira Densa Termoquimicamente Tratada em um $(l:firmalife/wine)Lagar$()."
       },
       {
         "type": "tfc:drying_recipe",

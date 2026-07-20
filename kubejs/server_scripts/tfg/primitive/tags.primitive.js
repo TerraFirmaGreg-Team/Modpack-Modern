@@ -141,6 +141,9 @@ function registerTFGPrimitiveFluidTags(event) {
 	})
 	
 	event.add('tfg:usable_in_spindle_head_mold', 'gtceu:copper');
+	event.add('tfg:usable_in_spindle_head_mold', 'gtceu:bronze');
+	event.add('tfg:usable_in_spindle_head_mold', 'gtceu:bismuth_bronze');
+	event.add('tfg:usable_in_spindle_head_mold', 'gtceu:black_bronze');
 }
 
 function registerTFGPrimitiveEntityTags(event) {

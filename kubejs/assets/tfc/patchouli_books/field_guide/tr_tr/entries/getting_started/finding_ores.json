@@ -1,12 +1,12 @@
 {
   "__comment__": "This file was automatically created by mcresources",
-  "name": "Ores, Metal, and Casting",
+  "name": "Madenler,Metaller ve Dökümcülük",
   "category": "tfc:getting_started",
   "icon": "tfc:ore/normal_native_copper",
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "In addition to sticks, twigs, and stones on the ground, in your travels you may encounter small pieces of ores scattered around the ground. These are important, as they are one of the only sources of ore and metal before obtaining a pickaxe."
+      "text": "Etrafta gezerken çubuk ve taşların yanında ufak maden parçalarına rastlamış olabilirsiniz.Bunlar önemli çünkü bunlar kazma yapmadan erişebildiğiniz tek madenler."
     },
     {
       "type": "patchouli:multiblock",
@@ -45,12 +45,12 @@
         }
       },
       "name": "",
-      "text": "All small ore pieces",
+      "text": "Bütün ufak maden parçaları",
       "enable_visualize": false
     },
     {
       "type": "patchouli:text",
-      "text": "These small ore pieces can serve two purposes: they can provide a source of metal, and more importantly, they indicate the presence of a larger vein of ore somewhere nearby, probably underground and close to the surface. Be sure to note where you find small ores, as the location of ore veins will be useful later during $(l:mechanics/prospecting)Prospecting$().$(br2)The twelve types of small ores, and the metal they can be melted into are listed on the next page."
+      "text": "Bu ufak maden parçaları iki işe yarar: size kullanmak için maden kaynağı olurlar ve daha önemli olarak aşağılarında büyük bir maden damarı olduğunu belirtirler.Bu yüzden bu küçük madenleri bulduğunuz yerleri işaretleyin çünkü ileride $(l:mechanics/prospecting)Prospecting$().$(br2) yaparken işinize yarayacak.yan sayafada on iki çeşit metalin eriyip neye dönüştüğü yazmakta."
     },
     {
       "type": "patchouli:text",

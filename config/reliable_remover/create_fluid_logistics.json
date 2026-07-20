@@ -3,11 +3,10 @@
 		"action": "remove",
 		"items": [
             "fluidlogistics:fluid_transporter",
-            "fluidlogistics:smart_faucet",
-            "fluidlogistics:smart_hopper",
             "fluidlogistics:infinite_fluid_tank",
             "fluidlogistics:fluid_pump",
-            "fluidlogistics:water_containing_copper_casing"
+            "fluidlogistics:water_containing_copper_casing",
+            "fluidlogistics:copper_basin"
 		]
 	}
 ]

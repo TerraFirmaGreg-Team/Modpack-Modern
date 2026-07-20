@@ -259,8 +259,6 @@ global.TFC_MILKS = /** @type {const} */ ([
     { id: "minecraft:milk" },
     { id: "firmalife:yak_milk" },
     { id: "firmalife:goat_milk" }
-    // Uncomment this if firmalife ever makes this obtainable
-    //{id: 'firmalife:coconut_milk'},
 ]);
 
 global.TFC_CURDS_AND_CHEESES = /** @type {const} */ ([

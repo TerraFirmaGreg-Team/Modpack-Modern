@@ -1296,7 +1296,7 @@
 										"then_run": {
 											"type": "minecraft:block",
 											"result_state": {
-												"Name": "minecraft:magma_block"
+												"Name": "tfc:rock/magma/basalt"
 											}
 										}
 									},
@@ -1311,7 +1311,7 @@
 										"then_run": {
 											"type": "minecraft:block",
 											"result_state": {
-												"Name": "tfc:rock/hardened/basalt"
+												"Name": "tfc:rock/cobble/basalt"
 											}
 										}
 									},
@@ -1371,7 +1371,7 @@
 										"then_run": {
 											"type": "minecraft:block",
 											"result_state": {
-												"Name": "minecraft:magma_block"
+												"Name": "tfc:rock/magma/basalt"
 											}
 										}
 									},

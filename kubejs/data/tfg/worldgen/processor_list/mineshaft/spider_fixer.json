@@ -1,0 +1,10 @@
+{
+	"processors": [
+		{
+			"processor_type": "tfg:mine_spider_processor"
+		},
+		{
+			"processor_type": "tfg:mine_support_processor"
+		}
+	]
+}

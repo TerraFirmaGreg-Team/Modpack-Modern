@@ -111,15 +111,6 @@ function registerTFGBasicProcessingFoodRecipes(event) {
 	
 	//#endregion
 	//#region Misc Plants
-	
-	// Golden Apple
-	global.processorRecipe(event, 'golden_apple', 30 * 20, GTValues.VA[GTValues.HV], {
-		itemInputs: ['#tfc:foods/apples'],
-		fluidInputs: [Fluid.of('gtceu:gold', 144 * 8)],
-		itemOutputs: ['minecraft:golden_apple'],
-		circuit: 5,
-		itemOutputProvider: TFC.isp.of('minecraft:golden_apple').resetFood()
-	});
 
 	// Fries
 	event.recipes.tfc.advanced_shapeless_crafting(
@@ -216,19 +207,24 @@ function registerTFGBasicProcessingFoodRecipes(event) {
 
 	});
 
-	event.recipes.tfc.barrel_instant()
-		.outputItem('tfc:empty_jar')
-		.inputItem('tfg:food/juice')
-		.inputFluid(TFC.fluidStackIngredient('#tfg:clean_water', 100))
-		.sound('minecraft:entity.generic.splash')
-		.id('tfg:barrel/juice_washing');
+	global.washingHelper(event, 'tfg:food/juice', 'tfc:empty_jar');
 
-	event.recipes.gtceu.chemical_bath('tfg:chemical_bath/juice_washing')
-		.itemInputs('tfg:food/juice')
-		.itemOutputs('tfc:empty_jar')
-		.inputFluids('#tfg:clean_water 100')
-		.duration(20*1)
-		.EUt(GTValues.VA[GTValues.ULV]);
+	//#endregion
+	//#region Coconut Processing
+
+	global.generateCuttingFoodRecipes(event, 'tfg:palm_tree/coconut_fruit_brown', 'tfg:food/opened_brown_coconut', false, true);
+	global.generateCuttingFoodRecipes(event, 'tfg:palm_tree/coconut_fruit_green', 'tfg:food/opened_green_coconut', false, true);
+
+	event.recipes.tfc.barrel_instant()
+		.outputFluid(Fluid.of('firmalife:coconut_milk', 500))
+		.inputItem(TFC.ingredient.notRotten('tfg:food/opened_green_coconut'))
+		.id('tfg:barrel/opened_green_coconut_draining');
+
+	global.processorRecipe(event, 'opened_green_coconut_draining', 100, 8, {
+		circuit: 1,
+		itemInputs: ['tfg:food/opened_green_coconut'],
+		fluidOutputs: [Fluid.of('firmalife:coconut_milk', 500)]
+	});
 
 	//#endregion
 	//#region Chemicals

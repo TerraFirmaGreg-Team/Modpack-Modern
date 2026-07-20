@@ -31,11 +31,13 @@ function registerTFGGeneralWorldgenItemTags(event) {
 	event.add("tfg:stripped_softwood", `tfg:wood/stripped_log/araucaria`);
 	event.add("tfg:stripped_softwood", `tfg:wood/stripped_wood/araucaria`);
 	event.add("tfg:softwood_supports", `tfg:wood/support/araucaria`);
+	event.add('tfc:makes_tannin', '#tfg:araucaria_logs')
 
 	event.add("tfg:hardwood", `#tfg:mahoe_logs`);
 	event.add("tfg:stripped_hardwood", `tfg:wood/stripped_log/mahoe`);
 	event.add("tfg:stripped_hardwood", `tfg:wood/stripped_wood/mahoe`);
 	event.add("tfg:hardwood_supports", `tfg:wood/support/mahoe`);
+	event.add('tfc:makes_tannin', '#tfg:mahoe_logs')
 
 	event.add("tfg:hardwood", `#tfg:beech_logs`);
 	event.add("tfg:stripped_hardwood", `tfg:wood/stripped_log/beech`);

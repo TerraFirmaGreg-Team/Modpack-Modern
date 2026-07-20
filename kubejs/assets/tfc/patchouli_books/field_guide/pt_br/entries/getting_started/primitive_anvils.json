@@ -20,7 +20,7 @@
     },
     {
       "type": "tfc:multimultiblock",
-      "text": "Convertendo a pedra bruta central numa bigorna.",
+      "text": "Convertendo a rocha bruta central numa bigorna.",
       "multiblocks": [
         {
           "pattern": [
@@ -42,12 +42,12 @@
     {
       "type": "patchouli:text",
       "anchor": "raw_rock",
-      "text": "Para obter um bloco de rocha bruta sem quebrá-lo em rochas menores, ele precisa ser $(thing)extraído$(). Você deve minerar os blocos dos seis lados de um bloco de pedra bruta - assim que esteja cercada por ar em todos os lados - ela vai cair como um item que pode ser pego.",
-      "title": "Obtendo Pedra Bruta"
+      "text": "Para obter um bloco de rocha bruta sem quebrá-lo em rochas menores, ele precisa ser $(thing)extraído$(). Você deve minerar os blocos dos seis lados de um bloco de pedra bruta - assim que estiver livre em todos os lados - ela vai cair como um item que pode ser pego.",
+      "title": "Obtendo Rocha Bruta"
     },
     {
       "type": "tfc:multimultiblock",
-      "text": "Minerando todos os seis lados de uma peça de pedra bruta - uma vez completa, o bloco central saltará como um item.",
+      "text": "Minerando todos os seis lados de uma rocha bruta - uma vez completa, o bloco central cairá como um item.",
       "multiblocks": [
         {
           "pattern": [
@@ -215,7 +215,7 @@
     {
       "type": "patchouli:text",
       "anchor": "welding",
-      "text": "Soldar é um processo através do qual dois itens são fundidos juntos para criar um novo item. Funciona da mesma maneira em uma $(l:getting_started/primitive_anvils)bigorna de pedra$() ou em uma $(l:mechanics/anvils)bigorna de metal$().$(br2)Primeiro, você deve colocar os dois itens que você quer soldar na bigorna. Você pode fazer isso usando os itens na bigorna, ou abrindo a interface da bigorna e inserindo-as nos dois slots mais à esquerda.",
+      "text": "Soldagem é um processo através do qual dois itens são fundidos juntos para criar um novo item. Funciona da mesma maneira em uma $(l:getting_started/primitive_anvils)bigorna de pedra$() ou em uma $(l:mechanics/anvils)bigorna de metal$().$(br2)Primeiro, você deve colocar os dois itens que você quer soldar na bigorna. Você pode fazer isso usando os itens na bigorna, ou abrindo a interface da bigorna e inserindo-as nos dois slots mais à esquerda.",
       "title": "Soldagem"
     },
     {

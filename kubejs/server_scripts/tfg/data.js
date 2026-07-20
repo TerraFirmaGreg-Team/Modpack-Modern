@@ -372,6 +372,8 @@ function registerTFGSupportData(event) {
 
 	for (let [rockId, rock] of Object.entries(global.BIG_ROCK_TABLE)) {
 		if (rock.support) {
+			if (rockId === "light_concrete" || rockId === "dark_concrete")
+				continue;
 			event.support(`${rock.support}_horizontal`, 2, 2, 4, `${rockId}_support`);
 		}
 	}

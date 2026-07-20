@@ -19,11 +19,11 @@
         ],
         "with": [
           {
-            "block": "gtceu:schist_chalcopyrite_ore",
+            "block": "gtceu:schist_chalcocite_ore",
             "weight": 12
           },
           {
-            "block": "gtceu:raw_chalcopyrite_block",
+            "block": "gtceu:raw_chalcocite_block",
             "weight": 1
           },
           {
@@ -42,11 +42,11 @@
         ],
         "with": [
           {
-            "block": "gtceu:gneiss_chalcopyrite_ore",
+            "block": "gtceu:gneiss_chalcocite_ore",
             "weight": 12
           },
           {
-            "block": "gtceu:raw_chalcopyrite_block",
+            "block": "gtceu:raw_chalcocite_block",
             "weight": 1
           },
           {
@@ -65,11 +65,11 @@
         ],
         "with": [
           {
-            "block": "gtceu:tuff_chalcopyrite_ore",
+            "block": "gtceu:tuff_chalcocite_ore",
             "weight": 12
           },
           {
-            "block": "gtceu:raw_chalcopyrite_block",
+            "block": "gtceu:raw_chalcocite_block",
             "weight": 1
           },
           {
@@ -88,11 +88,11 @@
         ],
         "with": [
           {
-            "block": "gtceu:deepslate_chalcopyrite_ore",
+            "block": "gtceu:deepslate_chalcocite_ore",
             "weight": 12
           },
           {
-            "block": "gtceu:raw_chalcopyrite_block",
+            "block": "gtceu:raw_chalcocite_block",
             "weight": 1
           },
           {
@@ -111,11 +111,11 @@
         ],
         "with": [
           {
-            "block": "gtceu:dripstone_chalcopyrite_ore",
+            "block": "gtceu:dripstone_chalcocite_ore",
             "weight": 12
           },
           {
-            "block": "gtceu:raw_chalcopyrite_block",
+            "block": "gtceu:raw_chalcocite_block",
             "weight": 1
           },
           {
@@ -134,11 +134,11 @@
         ],
         "with": [
           {
-            "block": "gtceu:diorite_chalcopyrite_ore",
+            "block": "gtceu:diorite_chalcocite_ore",
             "weight": 12
           },
           {
-            "block": "gtceu:raw_chalcopyrite_block",
+            "block": "gtceu:raw_chalcocite_block",
             "weight": 1
           },
           {
@@ -157,11 +157,11 @@
         ],
         "with": [
           {
-            "block": "gtceu:gabbro_chalcopyrite_ore",
+            "block": "gtceu:gabbro_chalcocite_ore",
             "weight": 12
           },
           {
-            "block": "gtceu:raw_chalcopyrite_block",
+            "block": "gtceu:raw_chalcocite_block",
             "weight": 1
           },
           {
@@ -180,11 +180,11 @@
         ],
         "with": [
           {
-            "block": "gtceu:granite_chalcopyrite_ore",
+            "block": "gtceu:granite_chalcocite_ore",
             "weight": 12
           },
           {
-            "block": "gtceu:raw_chalcopyrite_block",
+            "block": "gtceu:raw_chalcocite_block",
             "weight": 1
           },
           {
@@ -205,7 +205,7 @@
       "underground_count": 200,
       "blocks": [
         {
-          "block": "gtceu:chalcopyrite_indicator",
+          "block": "gtceu:chalcocite_indicator",
           "weight": 12
         },
         {

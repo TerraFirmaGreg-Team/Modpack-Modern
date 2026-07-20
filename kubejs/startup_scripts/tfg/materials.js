@@ -46,8 +46,10 @@ const registerTFGMaterials = (event) => {
 	registerTFGVenusMaterials(event);
 	registerTFGEuropaMaterials(event);
 	registerTFGAquaponicsMaterials(event);
+	registerTFGBeneathMaterials(event);
 
 	registerTFGEtchingMaterials(event);
+	registerTFGGarnetSandMaterials(event);
 	registerTFGBakeliteMaterials(event);
 	registerTFGRefrigerantMaterials(event);
 	registerTFGCoilMaterials(event);
@@ -58,7 +60,7 @@ const registerTFGMaterials = (event) => {
 	registerTFGZirconiumMaterials(event);
 	registerTFGAluminaMaterials(event)
 	registerTFGGemSlurryMaterials(event);
-	registerTFGMiscAlloyMaterials(event)
+	registerTFGMiscAlloyMaterials(event);
 
 
 	// Crafting components

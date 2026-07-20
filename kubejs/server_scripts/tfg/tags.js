@@ -130,12 +130,6 @@ const registerTFGItemTags = (event) => {
 	event.add('tfg:precision_fabricator_holder_rods', '#forge:rods/topaz')
 	event.add('tfg:precision_fabricator_holder_rods', '#forge:rods/emerald')
 	event.add('tfg:precision_fabricator_holder_rods', '#forge:rods/olivine')
-	
-	event.add('tfcambiental:cold_stuff', 'minecraft:packed_ice')
-	event.add('tfcambiental:cold_stuff', 'tfc:sea_ice')
-	event.add('tfcambiental:cold_stuff', 'tfg:mars_ice')
-	event.add('tfcambiental:cold_stuff', 'tfg:dry_ice')
-
 	// Tag for new lenses
 
 	event.add('forge:lenses/orange', 'gtceu:spessartine_lens')
@@ -410,17 +404,7 @@ const registerTFGFluidTags = (event) => {
 	event.add('tfg:oils', 'gtceu:oil_medium')
 	event.add('tfg:oils', 'gtceu:oil_heavy')
 
-	event.add('tfg:cooling_drinks', 'tfc_gourmet:kvass')
-	event.add('tfg:cooling_drinks', 'tfc_gourmet:lemonade')
-	event.add('tfg:cooling_drinks', 'tfc_gourmet:nalivka')
 	event.add('tfg:cooling_drinks', 'gtceu:ice')
-
-	event.add('tfg:warming_drinks', 'tfc_gourmet:coffee')
-	event.add('tfg:warming_drinks', 'tfc_gourmet:cocoa')
-	event.add('tfg:warming_drinks', 'tfc_gourmet:tea_mint')
-	event.add('tfg:warming_drinks', 'tfc_gourmet:tea_chamomile')
-	event.add('tfg:warming_drinks', 'tfc_gourmet:tea_nettle')
-	event.add('tfg:warming_drinks', 'tfc_gourmet:tea_rosehip')
 	event.add('tfg:warming_drinks', 'tfc:spring_water')
 
 	global.BREATHABLE_COMPRESSED_AIRS.forEach(x => {
@@ -438,6 +422,21 @@ const registerTFGFluidTags = (event) => {
 	event.add('forge:iron_iii_chloride', 'gtceu:iron_iii_chloride')
 	event.add('forge:tin',               'gtceu:tin')
 	event.add('forge:soldering_alloy',   'gtceu:soldering_alloy')
+
+	// Fluid tag to run the Ore Proc Multiblock
+
+	event.add('tfg:ore_proc_gas', 'gtceu:natural_gas')
+
+	// Garnet Slurry
+
+	event.add('tfg:dirty_garnet_slurry', 'tfg:dirty_yellow_garnet_slurry')
+	event.add('tfg:dirty_garnet_slurry', 'tfg:dirty_red_garnet_slurry')
+
+	event.add('tfg:filtered_garnet_slurry', 'tfg:filtered_yellow_garnet_slurry')
+	event.add('tfg:filtered_garnet_slurry', 'tfg:filtered_red_garnet_slurry')
+
+	event.add('tfg:clean_garnet_slurry', 'tfg:clean_yellow_garnet_slurry')
+	event.add('tfg:clean_garnet_slurry', 'tfg:clean_red_garnet_slurry')
 }
 //#endregion
 

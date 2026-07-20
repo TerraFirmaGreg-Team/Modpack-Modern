@@ -252,7 +252,6 @@ function registerTFGOverworldBiomeTags(event) {
 	event.add('tfg:has_structure/illager_camp', 'tfc:highlands')
 	event.add('tfg:has_structure/illager_camp', 'tfc:hills')
 	event.add('tfg:has_structure/illager_camp', 'tfc:inverted_badlands')
-	event.add('tfg:has_structure/illager_camp', 'tfc:low_canyons')
 	event.add('tfg:has_structure/illager_camp', 'tfc:lowlands')
 	event.add('tfg:has_structure/illager_camp', 'tfc:mountains')
 	event.add('tfg:has_structure/illager_camp', 'tfc:oceanic_mountains')
@@ -296,7 +295,6 @@ function registerTFGOverworldBiomeTags(event) {
 	event.add('tfg:has_structure/illager_camp', 'tfg:earth/highlands')
 	event.add('tfg:has_structure/illager_camp', 'tfg:earth/hills')
 	event.add('tfg:has_structure/illager_camp', 'tfg:earth/inverted_patterned_ground')
-	event.add('tfg:has_structure/illager_camp', 'tfg:earth/low_canyons')
 	event.add('tfg:has_structure/illager_camp', 'tfg:earth/mountains')
 	event.add('tfg:has_structure/illager_camp', 'tfg:earth/mud_flats')
 	event.add('tfg:has_structure/illager_camp', 'tfg:earth/oceanic_mountains')
@@ -321,12 +319,12 @@ function registerTFGOverworldBiomeTags(event) {
 
 	event.add('tfg:has_structure/illager_roaming', '#tfg:has_structure/illager_camp')
 
-	event.add('tfg:never_has_structure/illages', '#tfc:is_lake')
-	event.add('tfg:never_has_structure/illages', '#tfc:is_ocean')
-	event.add('tfg:never_has_structure/illages', '#tfc:is_river')
-	event.add('tfg:never_has_structure/illages', '#tfg:earth/is_lake')
-	event.add('tfg:never_has_structure/illages', '#tfg:earth/is_ocean')
-	event.add('tfg:never_has_structure/illages', '#tfg:earth/is_river')
+	event.add('tfg:never_has_structure/water', '#tfc:is_lake')
+	event.add('tfg:never_has_structure/water', '#tfc:is_ocean')
+	event.add('tfg:never_has_structure/water', '#tfc:is_river')
+	event.add('tfg:never_has_structure/water', '#tfg:earth/is_lake')
+	event.add('tfg:never_has_structure/water', '#tfg:earth/is_ocean')
+	event.add('tfg:never_has_structure/water', '#tfg:earth/is_river')
 
 	event.add('tfc_ruins:has_structure/ruin_beach', 'tfg:earth/coastal_dunes')
 	event.add('tfc_ruins:has_structure/ruin_beach', 'tfg:earth/embayments')
@@ -533,6 +531,27 @@ function registerTFGOverworldPlacedFeatures(event) {
 	event.remove("tfc:in_biome/large_features/old_mountains", "tfc:random_active_hot_spring")
 	event.remove("tfc:in_biome/large_features/volcanic_mountains", "tfc:random_active_hot_spring")
 	event.remove("tfc:in_biome/large_features/canyons", "tfc:random_active_hot_spring")
+
+	// Palm Fruits
+	/** @param {{Biome[]}} */
+	const palmFruitBiomes = [
+		//TFG
+		'tfg:in_biome/large_features/coastal_dunes',
+		'tfg:in_biome/large_features/embayments',
+		'tfg:in_biome/large_features/old_shield_volcano_shore',
+		'tfg:in_biome/large_features/sea_stacks',
+		'tfg:in_biome/large_features/setback_cliffs',
+		'tfg:in_biome/large_features/shore',
+		'tfg:in_biome/large_features/tidal_flats',
+		// TFC
+		'tfc:in_biome/large_features/shore',
+		'tfc:in_biome/large_features/tidal_flats'
+	];
+
+	palmFruitBiomes.forEach(biome => {
+		event.add(biome, 'tfg:earth/crop/palm_tree/coconut_patch');
+		event.add(biome, 'tfg:earth/crop/palm_tree/date_patch');
+	});
 }
 
 function registerTFGOverworldEntityTypeTags(event) {
@@ -557,7 +576,6 @@ function registerTFGOverworldEntityTypeTags(event) {
 	event.add('tfg:slimes', 'tfg:slime')
 
 	// Takes no damage from the new 1.21 cacti
-	event.add('tfg:ignores_cacti', 'tumbleweed:tumbleweed')
 	event.add('tfg:ignores_cacti', 'waves:waves')
 	event.add('tfg:ignores_cacti', 'tfg:jerboa')
 	event.add('tfg:ignores_cacti', 'tfc:horse')

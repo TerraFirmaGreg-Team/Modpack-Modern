@@ -10,5 +10,5 @@ maxPerPlayer = 3
 #Should tumbleweeds destroy crops they land upon.
 damageCrops = true
 #Drop items only when destroyed by player (normally also drops on lava and cactus damage, for example).
-dropOnlyByPlayer = false
+dropOnlyByPlayer = true
 

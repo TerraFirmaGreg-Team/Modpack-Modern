@@ -8,6 +8,8 @@ function registerCreateFluidLogisticsRecipes(event) {
 			{ id: 'fluidlogistics:horizontal_multi_fluid_tank_from_tank' },
 			{ id: 'fluidlogistics:multi_fluid_tank_from_horizontal' },
 			{ id: 'fluidlogistics:hand_pointer_clear' },
+			{ id: 'fluidlogistics:fluid_repackager' },
+			{ id: 'fluidlogistics:fluid_packager_switch' }
 		], mod: "fluidlogistics" })
 
     event.shapeless('fluidlogistics:waterproof_cardboard_block', ['create:cardboard_block', '#forge:wax'])
@@ -122,4 +124,43 @@ function registerCreateFluidLogisticsRecipes(event) {
 		.EUt(20)
 
 	TFGHelpers.registerMaterialInfo('fluidlogistics:fluid_hatch', [GTMaterials.Copper, 1, GTMaterials.Wood, 1])
+
+	event.shapeless('fluidlogistics:faucet', ['#create:valve_handles', 'gtceu:copper_small_fluid_pipe'])
+		.id('tfg:shapeless/fluidlogistics/faucet')
+
+	event.shapeless('fluidlogistics:smart_faucet', ['fluidlogistics:faucet', 'create:electron_tube', '#forge:plates/brass'])
+		.id('tfg:shapeless/fluidlogistics/smart_faucet')
+
+
+	event.shaped('fluidlogistics:mechanical_fluid_gun', [
+		'A ',
+		'C ',
+		'DF'
+	], {
+		A: 'create:spout',
+		C: 'create:precision_mechanism',
+		D: 'create:copper_casing',
+		F: '#forge:tools/wrenches'
+	}).id('tfg:shaped/fluidlogistics/mechanical_fluid_gun')
+
+	event.recipes.gtceu.assembler('tfg:fluidlogistics/mechanical_fluid_gun')
+		.itemInputs('create:spout', 'create:precision_mechanism', 'create:copper_casing')
+		.itemOutputs('fluidlogistics:mechanical_fluid_gun')
+		.duration(200)
+		.EUt(20)
+		.addMaterialInfo(true)
+
+	event.shaped('fluidlogistics:smart_hopper', [
+		' A ',
+		' B ',
+		'DCD'
+	], {
+		A: 'create:electron_tube',
+		B: '#gtceu:electric_pumps',
+		C: 'minecraft:hopper',
+		D: '#forge:plates/copper'
+	}).id('tfg:shaped/smart_hopper')
+
+	event.shapeless('8x fluidlogistics:phantom_chain', [ '#forge:tiny_dusts/ender_pearl', '8x #tfg:metal_chains' ])
+		.id('tfg:shaped/phantom_chain')
 }

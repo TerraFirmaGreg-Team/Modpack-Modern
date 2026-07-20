@@ -23,7 +23,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"item": "tfg:vulcanized_latex_bucket",
-			"title": "I am rubber...",
+			"title": "Jestem gumą...",
 			"text": "The other main use of $(thing)Latex$() is to make rubber. To make the latex stronger and harder for industrial uses, it needs to be heated (either in a $(l:firmalife/oven_appliances#vat)Vat$() or a $(l:mechanics/pot)Pot$()) with added $(thing)Sulfur Powder$() to produce $(thing)Vulcanized Latex$(). In fact, this whole process is called vulcanization!"
 		},
 		{

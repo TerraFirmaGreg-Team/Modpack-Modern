@@ -6,6 +6,7 @@ function registerVintageImprovementsItemTags(event) {
 	event.add('c:hidden_from_recipe_viewers', '#vintageimprovements:springs')
 	event.add('c:hidden_from_recipe_viewers', '#vintageimprovements:small_springs')
 	event.add('c:hidden_from_recipe_viewers', '#forge:wires')
+	event.add('c:hidden_from_recipe_viewers', 'vintageimprovements:incomplete_redstone_module')
 	
 	event.add('vintageimprovements:custom_hammering_blocks', '#tfc:anvils')
 	event.add('vintageimprovements:curving_heads', '#gtceu:extruder_molds')

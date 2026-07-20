@@ -56,6 +56,8 @@ const registerTFGRecipes = (event) => {
 	registerTFGHVMaterialRecipes(event)
 	registerTFGMoSiBRecipes(event)
 
+	registerTFGBeneathOreProcRecipes(event)
+
 	registerTFGCasingRecipes(event)
 	registerTFGCircuitRecipes(event)
 	registerTFGEnderPearlRecipes(event)
@@ -75,6 +77,7 @@ const registerTFGRecipes = (event) => {
 	registerTFGSolarRecipes(event)
 	registerTFGCoalRecipes(event)
 	registerTFGPowerGenBalance(event)
+	registerTFGGarnetSandLine(event)
 
 	registerTFGZirconiumRecipes(event)
 	registerTFGBromineRecipes(event)

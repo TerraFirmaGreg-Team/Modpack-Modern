@@ -145,7 +145,7 @@
 	#a specific version regardless of what was recorded at generation time. 
 	#Changing this for an existing world can cause chunk boundary artifacts. 
 	#Format: list of "dimension_id=version", e.g. ["minecraft:overworld=1"]
-	worldgenOverrides = []
+	worldgenOverrides = ["minecraft:overworld=1"]
 
 [overworld_climate]
 	#Enables instant snow and ice removal as chunks are loaded in and the temperature is warm enough.
@@ -153,4 +153,33 @@
 	#The maximum amount of snow update to apply for each correction tick
 	#Range: > 1
 	snowMaxAccumulationOnUpdate = 256
+
+[tfg_food_effects]
+	#Enables TFG food debuff effects. Allows receiving harmful effects from contaminants like Toxins, or transient nutrients like Freezing.
+	enableTFGFoodDebuffs = true
+	#Enables TFG food buff effects. Allows receiving helpful effects from nutrients like Fruits, or transient nutrients like Fulfilling.
+	enableTFGFoodBuffs = true
+
+[chameleon_spray_can]
+	#
+	#The maximum Prismatic Paint capacity of the Chameleon Spray Can (in mB). Default: 8000
+	#Range: > 1
+	chameleonSprayCanCapacity = 2000
+	#
+	#The amount of Prismatic Paint consumed per block/entity recolored (in mB). Default: 1
+	#Range: > 0
+	chameleonSprayCanCostPerOperation = 1
+	#
+	#The fluid consumption multiplier applied when chain-painting/bulk-painting blocks (e.g. 0.85 equals a 15% discount). Set to 1.0 to disable discounts.
+	#Range: 0.0 ~ 10.0
+	chameleonSprayCanBulkMultiplier = 1.0
+
+[mining_restrictions]
+	#Enables restrictions on automatic mining machines in the Beneath.
+	enableBeneathMiningRestrictions = true
+	#Below this Y level, single block gregtech miners and create contraptions cannot mine ores.
+	#Range: > 1
+	disabledBeneathMiningYLevel = 80
+	#Enables restrictions on automatic mining machines on hot planets.
+	enableHotPlanetMiningRestrictions = true
 

@@ -1,0 +1,23 @@
+{
+	"type": "minecraft:block",
+	"pools": [
+		{
+			"bonus_rolls": 0.0,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"functions": [
+						{
+							"add": false,
+							"count": 7.0,
+							"function": "minecraft:set_count"
+						}
+					],
+					"name": "minecraft:charcoal"
+				}
+			],
+			"rolls": 1.0
+		}
+	],
+	"random_sequence": "beneath:blocks/hellforge"
+}

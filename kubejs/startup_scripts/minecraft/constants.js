@@ -21,6 +21,7 @@ global.MINECRAFT_HIDED_ITEMS = [
     "minecraft:lantern",
     "minecraft:raw_iron_block",
 	"minecraft:infested_deepslate",
+    "minecraft:golden_carrot",
     // unobtainable but used for recipe displays
 	"minecraft:grass_block", 
     "minecraft:furnace",
@@ -30,6 +31,8 @@ global.MINECRAFT_HIDED_ITEMS = [
 	"minecraft:dragon_head", 
 	"minecraft:creeper_head", 
 	"minecraft:wither_skeleton_skull", 
+    // quest reward
+    "minecraft:grass",
 ];
 
 global.MINECRAFT_DYE_NAMES = [

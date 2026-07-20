@@ -14,7 +14,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/moon_vein_index#moon_apatite)アパタイト, リン酸三カルシウム, パイロクロア...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_quartz)クォーツ, ケルタスクオーツ, ネザークォーツ, 重晶石$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_graphite)グラファイト, ダイヤモンド, オリビン$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_gold)グリーンサファイア, ボーキサイト, 磁鉄鉱, 自然金$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_desh)デッシュ, チタン鉄鉱, アルミニウム, アーマルコライト$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_sphalerite)デッシュ, 閃亜鉛鉱, 黄鉄鉱$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_monazite)バストネス石, モナザイト, ネオジム, オリビン$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_topaz)ブルートパーズ, トパーズ, 輝銅鉱, 斑銅鉱$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_beryllium)ベリリウム, エメラルド, トリアナイト, オリビン...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_bauxite)ボーキサイト, チタン鉄鉱, アーマルコライト$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_gypsum)ホウ砂, 方解石, 明礬石, 石膏, オリビン$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_molybdenum)モリブデン鉛鉱, 輝水鉛鉱, パウエル石, オリビン$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_garnet)レッドガーネット, イエローガーネット, アメジスト...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_redstone)レッドストーン, ルビー, 辰砂, オリビン$()$()",
+      "text": "$(li)$(l:tfg_ores/moon_vein_index#moon_apatite)アパタイト, リン酸三カルシウム, パイロクロア...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_quartz)クォーツ, ケルタスクオーツ, ネザークォーツ, 重晶石$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_graphite)グラファイト, ダイヤモンド, オリビン$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_gold)グリーンサファイア, ボーキサイト, 磁鉄鉱, 自然金$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_desh)デッシュ, チタン鉄鉱, アルミニウム, アーマルコライト$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_sphalerite)デッシュ, 閃亜鉛鉱, 黄鉄鉱$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_monazite)バストネス石, モナザイト, ネオジム, オリビン$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_topaz)ブルートパーズ, トパーズ, 輝銅鉱, 斑銅鉱$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_beryllium)ベリリウム, エメラルド, トリアナイト, オリビン...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_bauxite)ボーキサイト, チタン鉄鉱, アーマルコライト$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_gypsum)ホウ砂, 方解石, 明礬石, 石膏, オリビン$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_molybdenum)モリブデン鉛鉱, パウエル石, 輝水鉛鉱, オリビン$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_garnet)レッドガーネット, イエローガーネット, アメジスト...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_redstone)レッドストーン, ルビー, 辰砂, オリビン$()$()",
       "type": "patchouli:text"
     },
     {
@@ -997,7 +997,7 @@
     {
       "Type": "patchouli:text",
       "text": "$(thing)$(t:何チャンクごとに鉱脈が生成されるかを示します。数値が小さいほど見つかりやすくなります。)レア度$(/t)$(): 1/245 チャンク$(br)$(thing)$(t:鉱脈の中に含まれている鉱石の密度を割合で示しています。数値が高いほど鉱石量が多くなります。)密度$(/t)$(): 35%$(br)$(thing)$(t:鉱脈の形状です)タイプ$(/t)$(): $(t:主に丸い形状をしています)塊状鉱脈$(/t)$(br)$(thing)$(t:この鉱脈が生成される高さ（Y座標）の範囲を示します。)Y$(/t)$(): 0 — 50$(br)$(thing)$(t:鉱脈の平均的な直径のサイズを示します。)サイズ$(/t)$(): 35$(br)$(thing)$(t:地表から鉱脈までの距離がこの値を超えると、地表に指標となる鉱石が現れなくなります。)表出の最大深度$(/t)$(): 50$(br)$(thing)バイオーム$(): : いつでも$(br2)$(thing)岩石の種類$(): デイサイト, ノーライト, 斑れい岩, 玄武岩",
-      "title": "モリブデン鉛鉱, 輝水鉛鉱, パウエル石, オリビン",
+      "title": "モリブデン鉛鉱, パウエル石, 輝水鉛鉱, オリビン",
       "type": "patchouli:text",
       "anchor": "moon_molybdenum"
     },
@@ -1023,26 +1023,6 @@
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "輝水鉛鉱",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/molybdenite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 33%$(br)$(thing)採取可能$(): モリブデン$(br)$(thing)化学式$(): MoS₂",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
       "name": "パウエル石",
       "multiblock": {
         "mapping": {
@@ -1058,7 +1038,27 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 16%$(br)$(thing)採取可能$(): モリブデン$(br)$(thing)化学式$(): CaMoO₄",
+      "text": "$(thing)パーセント$(): 33%$(br)$(thing)採取可能$(): モリブデン$(br)$(thing)化学式$(): CaMoO₄",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "輝水鉛鉱",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/molybdenite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)パーセント$(): 16%$(br)$(thing)採取可能$(): モリブデン$(br)$(thing)化学式$(): MoS₂",
       "type": "patchouli:multiblock"
     },
     {
