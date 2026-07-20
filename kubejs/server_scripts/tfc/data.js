@@ -34,6 +34,8 @@ const registerTFCHeats = (event) => {
 
 
 const registerTFCFuels = (event) => {
+	event.fuel('tfg:dried_peat_brick', 627, 750, 0.7)
+
 	event.fuel('gtceu:coke_gem', 1415, 4400, 1.0)
 	event.fuel('gtceu:coke_dust', 1415, 1200, 0.95)
 

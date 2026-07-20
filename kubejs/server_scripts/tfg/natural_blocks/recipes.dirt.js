@@ -225,6 +225,11 @@ function registerTFGDirtRecipes(event) {
 			.id(`tfg:shapeless/muddy_roots_${dirtType}`);
 	});
 
+	// Drying peat into bricks
+
+	event.recipes.firmalife.drying(`4x tfg:dried_peat_brick`, `tfc:peat`)
+		.id(`tfg:drying/peat_drying`);
+
 
 	// #region Wattle and daub
 	// TODO: Workaround for not being able to stain wattle and daub with normal dyes

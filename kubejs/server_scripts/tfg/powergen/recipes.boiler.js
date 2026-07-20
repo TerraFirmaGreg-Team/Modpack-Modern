@@ -91,6 +91,12 @@ function registerTFGBoilerRecipes(event) {
 		.dimension('minecraft:overworld')
 		.dimension('minecraft:the_nether')
 
+	event.recipes.gtceu.steam_boiler('tfg:dried_peat_brick')
+		.itemInputs('tfg:dried_peat_brick')
+		.duration(45 * 20)
+		.dimension('minecraft:overworld')
+		.dimension('minecraft:the_nether')
+
 	event.recipes.gtceu.steam_boiler('tfg:flora_pellets')
 		.itemInputs('tfg:flora_pellets')
 		.duration(1200)

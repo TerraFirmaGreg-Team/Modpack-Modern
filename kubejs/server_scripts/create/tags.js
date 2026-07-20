@@ -51,6 +51,7 @@ const registerCreateItemTags = (event) => {
 
 	event.removeAll('create:crushed_raw_materials')
 
+	event.add('create:blaze_burner_fuel/regular', "tfg:dried_peat_brick")
 	event.add('create:blaze_burner_fuel/regular', "tfc:ore/lignite")
 	event.add('create:blaze_burner_fuel/regular', "tfc:ore/bituminous_coal")
 	event.add('create:blaze_burner_fuel/regular', "gtceu:coal_dust")
