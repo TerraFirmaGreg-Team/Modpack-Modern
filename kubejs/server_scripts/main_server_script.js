@@ -30,6 +30,7 @@ ServerEvents.tags('item', event => {
 	registerFTBQuestsItemTags(event)
 	registerGreateItemTags(event)
 	registerGTCEUItemTags(event)
+	registerJelliesItemTags(event)
 	registerMacawsForTFCItemTags(event)
 	registerMinecraftItemTags(event)
 	registerModernMarkingsItemTags(event)
@@ -51,7 +52,6 @@ ServerEvents.tags('item', event => {
     registerTFCLunchboxItemTags(event)
 	registerVintageImprovementsItemTags(event)
 	registerWABItemTags(event)
-	registerJelliesItemTags(event)
 })
 
 /**
@@ -254,6 +254,7 @@ ServerEvents.recipes(event => {
 	registerHandGliderRecipes(event)
 	registerHotOrNotRecipes(event)
 	registerImmersiveAircraftRecipes(event)
+	registerJelliesRecipes(event)
 	registerMacawsForTFCRecipes(event)
 	registerMeasurementsRecipes(event)
 	registerMegaCellsRecipes(event)
@@ -286,7 +287,6 @@ ServerEvents.recipes(event => {
 	registerWABRecipes(event)
 	registerTFCScrapingKnivesRecipes(event)
 	registerTFGCircuitBoardsRecipes(event)
-	registerJelliesRecipes(event)
 })
 
 TaCZServerEvents.gunIndexLoad((event) => {
