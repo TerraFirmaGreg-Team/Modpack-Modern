@@ -227,16 +227,8 @@ function registerTFGDirtRecipes(event) {
 
 	// Drying peat into bricks
 
-	event.custom({
-		type: "firmalife:drying",
-		ingredient: {
-			item: `tfc:peat`
-		},
-		result: {
-			"count": 4,
-			item: `tfg:dried_peat_brick`
-		}
-	}).id(`tfg:drying/peat_drying`)
+	event.recipes.firmalife.drying(`4x tfg:dried_peat_brick`, `tfc:peat`)
+		.id(`tfg:drying/peat_drying`);
 
 
 	// #region Wattle and daub
