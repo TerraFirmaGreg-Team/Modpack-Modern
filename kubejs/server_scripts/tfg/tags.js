@@ -29,7 +29,6 @@ const registerTFGItemTags = (event) => {
 	registerTFGAquaponicsItemTags(event)
 	registerTFGMaterialItemTags(event)
 	registerTFGMaterialHiddenPipesTags(event)
-	registerTFGSlimeItemTags(event)
 	
 	// Curios slots for wearables
 	event.add("curios:face", "tfg:snorkel")
@@ -447,7 +446,6 @@ const registerTFGBiomeTags = (event) => {
 	registerTFGMoonBiomeTags(event)
 	registerTFGMarsBiomeTags(event)
 	registerTFGVenusBiomeTags(event)
-	registerTFGSlimeBiomeTags(event)
 }
 
 function registerTFGConfiguredFeatures(event) {
