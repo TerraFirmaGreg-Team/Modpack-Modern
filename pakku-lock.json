@@ -13256,29 +13256,8 @@
             },
             "files": [
                 {
-                    "type": "curseforge",
-                    "file_name": "reliable_recipes-forge-1.20.1-1.13.2.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8072/207/reliable_recipes-forge-1.20.1-1.13.2.jar",
-                    "id": "8072207",
-                    "parent_id": "1414959",
-                    "hashes": {
-                        "sha1": "53ec9d467c81962ce35cc031179b269859b1b76f",
-                        "md5": "23a69414cea2dcd199510fee6dfd4c9d"
-                    },
-                    "required_dependencies": [],
-                    "size": 95630,
-                    "date_published": "2026-05-11T05:34:41.510Z"
-                },
-                {
                     "type": "modrinth",
-                    "file_name": "reliable_recipes-forge-1.20.1-1.13.2.jar",
+                    "file_name": "reliable_recipes-forge-1.20.1-2.2.0.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -13286,16 +13265,37 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/Hl4ARA1z/versions/3u05J991/reliable_recipes-forge-1.20.1-1.13.2.jar",
-                    "id": "3u05J991",
+                    "url": "https://cdn.modrinth.com/data/Hl4ARA1z/versions/un7y7AHJ/reliable_recipes-forge-1.20.1-2.2.0.jar",
+                    "id": "un7y7AHJ",
                     "parent_id": "Hl4ARA1z",
                     "hashes": {
-                        "sha512": "1fe14da409652c780f30acfecd0ddb3c9f31294d04264d30383b53fc8e7d23ca604e0c7f669a6666c33844eed95b0c271203f115d866e0925af517883dfa6664",
-                        "sha1": "53ec9d467c81962ce35cc031179b269859b1b76f"
+                        "sha512": "8afa312dd10867312ecd35d56a8f08d01c6fa4528ab6ee9ada36f77f6b5072e9b42ea2c2e28f9ca4f55d14c8fefb11cf14010f59f20211390a4c0ea401ac3c04",
+                        "sha1": "065344ae6223ed67233f09ba5d87c641b7bfde47"
                     },
                     "required_dependencies": [],
-                    "size": 95630,
-                    "date_published": "2026-05-11T05:34:41.631018Z"
+                    "size": 112316,
+                    "date_published": "2026-07-06T08:36:02.595980Z"
+                },
+                {
+                    "type": "curseforge",
+                    "file_name": "reliable_recipes-forge-1.20.1-2.2.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8379/995/reliable_recipes-forge-1.20.1-2.2.0.jar",
+                    "id": "8379995",
+                    "parent_id": "1414959",
+                    "hashes": {
+                        "sha1": "065344ae6223ed67233f09ba5d87c641b7bfde47",
+                        "md5": "c7437a54de1a1bfe1d64ff50ecaa4d89"
+                    },
+                    "required_dependencies": [],
+                    "size": 112316,
+                    "date_published": "2026-07-06T08:37:43.133Z"
                 }
             ]
         },
@@ -13321,7 +13321,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "reliable_remover-forge-1.20.1-2.4.1.jar",
+                    "file_name": "reliable_remover-forge-1.20.1-2.4.3.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -13329,22 +13329,22 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/pLxsKvNt/versions/V0XY0DLj/reliable_remover-forge-1.20.1-2.4.1.jar",
-                    "id": "V0XY0DLj",
+                    "url": "https://cdn.modrinth.com/data/pLxsKvNt/versions/yoQixmKI/reliable_remover-forge-1.20.1-2.4.3.jar",
+                    "id": "yoQixmKI",
                     "parent_id": "pLxsKvNt",
                     "hashes": {
-                        "sha512": "ee0c30509e02810582003d563a238a5856f6f6a0a7b8925341898679a8c3effa6274609ff347179d06d97c268d61d0fcf0a1b5605019a9bbf33c87a49ff13e63",
-                        "sha1": "4cc7835ae11ce1bccd16454f3c3fc38c368d0f8f"
+                        "sha512": "9b7fa996bc16fe9291fb2ed8a9913de180a5893f18b6ed7c3dc527c43f684ed901d01895e205e7fea67024eb1e561469dff25cbde543fcdf8a848c6c67ec463c",
+                        "sha1": "2f97162350cab542e0cd9825edb3ab116774a35f"
                     },
                     "required_dependencies": [
                         "Hl4ARA1z"
                     ],
-                    "size": 93981,
-                    "date_published": "2026-06-04T02:41:06.239347Z"
+                    "size": 97654,
+                    "date_published": "2026-07-14T04:21:01.523067Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "reliable_remover-forge-1.20.1-2.4.1.jar",
+                    "file_name": "reliable_remover-forge-1.20.1-2.4.3.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -13352,18 +13352,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8193/995/reliable_remover-forge-1.20.1-2.4.1.jar",
-                    "id": "8193995",
+                    "url": "https://edge.forgecdn.net/files/8428/690/reliable_remover-forge-1.20.1-2.4.3.jar",
+                    "id": "8428690",
                     "parent_id": "1420447",
                     "hashes": {
-                        "sha1": "4cc7835ae11ce1bccd16454f3c3fc38c368d0f8f",
-                        "md5": "c7d2ce8816679bc4156ef5a72bc48080"
+                        "sha1": "2f97162350cab542e0cd9825edb3ab116774a35f",
+                        "md5": "6085228444d7098f260b9d11a32abccd"
                     },
                     "required_dependencies": [
                         "1414959"
                     ],
-                    "size": 93981,
-                    "date_published": "2026-06-04T02:41:06.123Z"
+                    "size": 97654,
+                    "date_published": "2026-07-14T04:21:01.080Z"
                 }
             ]
         },
@@ -16203,26 +16203,8 @@
             },
             "files": [
                 {
-                    "type": "curseforge",
-                    "file_name": "TerraFirmaGreg-Shaders-Complementary-3.1.6.zip",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8104/352/TerraFirmaGreg-Shaders-Complementary-3.1.6.zip",
-                    "id": "8104352",
-                    "parent_id": "954161",
-                    "hashes": {
-                        "sha1": "72d5bb073fcddcae79605f40b2618446bc5c293e",
-                        "md5": "32b8d8cab35d287e07fb5993c1ecd0a1"
-                    },
-                    "required_dependencies": [],
-                    "size": 2286615,
-                    "date_published": "2026-05-17T15:48:41.433Z"
-                },
-                {
                     "type": "modrinth",
-                    "file_name": "TerraFirmaGreg-Shaders-Complementary-3.1.6.zip",
+                    "file_name": "TerraFirmaGreg-Shaders-Complementary-3.1.7.zip",
                     "mc_versions": [
                         "1.12.2",
                         "1.20.1"
@@ -16232,16 +16214,34 @@
                         "optifine"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/cFPyBbB1/versions/vyWrTwOC/TerraFirmaGreg-Shaders-Complementary-3.1.6.zip",
-                    "id": "vyWrTwOC",
+                    "url": "https://cdn.modrinth.com/data/cFPyBbB1/versions/o2S1KeDB/TerraFirmaGreg-Shaders-Complementary-3.1.7.zip",
+                    "id": "o2S1KeDB",
                     "parent_id": "cFPyBbB1",
                     "hashes": {
-                        "sha512": "7ee2025e2cb5d3173ef6d535739619b1be34e08c7db3d06de1c05d53bfa92574ff2fe277e285370447874481e940970b7b2529d36556e157f400ff91c324c18b",
-                        "sha1": "72d5bb073fcddcae79605f40b2618446bc5c293e"
+                        "sha512": "8f979c9476086cb070c4b6ee7431ebf579e5917b99b7ae28d9417177f1ba33b6de297ee19c40fcfa6c2938cc4fb6a19013b8fb082a1b74746baa8e16d8099d7b",
+                        "sha1": "8cc8cefda8dff007339b43538c6ae5ba8d7ca454"
                     },
                     "required_dependencies": [],
-                    "size": 2286615,
-                    "date_published": "2026-05-17T15:48:42.996433Z"
+                    "size": 2288516,
+                    "date_published": "2026-06-07T01:43:22.346431Z"
+                },
+                {
+                    "type": "curseforge",
+                    "file_name": "TerraFirmaGreg-Shaders-Complementary-3.1.7.zip",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8208/462/TerraFirmaGreg-Shaders-Complementary-3.1.7.zip",
+                    "id": "8208462",
+                    "parent_id": "954161",
+                    "hashes": {
+                        "sha1": "8cc8cefda8dff007339b43538c6ae5ba8d7ca454",
+                        "md5": "ae44a5c5ddc7431f7582aaa2e498977d"
+                    },
+                    "required_dependencies": [],
+                    "size": 2288516,
+                    "date_published": "2026-06-07T01:43:20.247Z"
                 }
             ]
         },
