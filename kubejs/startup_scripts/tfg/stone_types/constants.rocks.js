@@ -241,11 +241,11 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 		material: 'tfg:igneous_mafic',
 		tfcTag: 'tfc:igneous_extrusive_items',
 		gravelTag: 'tfc:black_gravel',
-		pillar: 'minecraft:basalt',
-		pillar2: 'minecraft:polished_basalt',
 		stonecutterTag: 'tfg:stone_types/basalt',
 		stonecutting: [
-			{ block: 'minecraft:smooth_basalt' }
+			{ block: 'minecraft:basalt' },
+			{ block: 'minecraft:smooth_basalt' },
+			{ block: 'minecraft:polished_basalt' }
 		]
 	}),
 	"andesite": generateTFC('andesite', {
