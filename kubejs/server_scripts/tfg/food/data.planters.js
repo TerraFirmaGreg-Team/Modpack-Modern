@@ -181,7 +181,7 @@ function registerTFGFLPlanters(event) {
 		3,
 		0.15,
 		"tfg:ghost_pepper_seeds",
-		"tfg:ghost_pepper_product",
+		"beneath:ghost_pepper",
 		$FarmlandBlockEntity.NutrientType.NITROGEN,
 		[
 			"tfg:block/crop/ghost_pepper_1",
