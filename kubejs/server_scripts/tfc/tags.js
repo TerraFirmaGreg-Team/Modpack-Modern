@@ -629,6 +629,8 @@ function registerTFCBlockTags(event) {
 	event.add('tfg:dead_crops', "tfc:dead_crop/red_bell_pepper");
 	event.add('tfg:dead_crops', "tfc:dead_crop/yellow_bell_pepper");
 
+	event.add('minecraft:logs', '#tfc:fruit_tree_branch');
+
 	// Glass
 	event.add('tfc:mineable_with_glass_saw', 'ae2:quartz_glass');
 	event.add('tfc:mineable_with_glass_saw', 'ae2:quartz_vibrant_glass');
