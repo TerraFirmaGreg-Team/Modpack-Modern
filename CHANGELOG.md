@@ -4,7 +4,10 @@
 
 ### Breaking Changes
 - Remove two steps in the Uvarovite-Chromium line so it's more appropriate to MV difficulty (all the recipes and materials will be removed later) @TomPlop
+- The Gas Well won't void Natural Gas if the Hatch is full but will keep consumming Explosives and Water or Steam @TomPlop
 ### Changes
+- The Geological Vulcanizer can now parallel recipes if you OC it @TomPlop
+- Add more GUI indication the Gas Well @TomPlop
 - Add a new recipe for Calcium Carbonate by reacting calcium hydroxide with carbon dioxide @MajorMoth
 ### Bug fixes
 
