@@ -4,7 +4,7 @@
 		"id": [
 			"gtceu:compressor/stone_from_dust",
 			"gtceu:rock_breaker/stone",
-			"gtceu:shaped/stone_button"
+			"gtceu:shaped/stone_button",
 			"gtceu:shaped/stone_hammer",
 			"gtceu:mixer/mossy_cobblestone_from_moss_block",
 			"gtceu:shaped/smooth_stone_slab_saw",
@@ -202,7 +202,7 @@
 			"gtceu:forge_hammer/red_sandstone_to_red_sand",
 			"gtceu:forge_hammer/chiseled_red_sandstone_to_red_sand",
 			"gtceu:compressor/red_sandstone",
-			"gtceu:shaped/red_sandstone_slab_saw" ,
+			"gtceu:shaped/red_sandstone_slab_saw",
 			"gtceu:shaped/smooth_red_sandstone_stair_saw",
 			"gtceu:shaped/smooth_red_sandstone_slab_saw",
 			"gtceu:shaped/cut_red_sandstone_slab_saw",
@@ -446,7 +446,7 @@
 			"gtceu:ore_washer/wash_plutonium_pure_dust_to_dust",
 			"gtceu:ore_washer/wash_plutonium_dirty_dust_to_dust",
 			"gtceu:forge_hammer/hammer_plutonium_refined_ore_to_dust",
-			"gtceu:electrolyzer/decomposition_electrolyzing_chromatic_compound" ,
+			"gtceu:electrolyzer/decomposition_electrolyzing_chromatic_compound",
 			"gtceu:chemical_reactor/soda_ash_from_carbon_dioxide",
 			"gtceu:large_chemical_reactor/soda_ash_from_carbon_dioxide",
 			"gtceu:macerator/macerate_chiseled_sandstone",
@@ -463,11 +463,11 @@
 			"gtceu:distillation_tower/distill_liquid_nether_air",
 			"gtceu:centrifuge/ender_air_separation",
 			"gtceu:vacuum_freezer/liquid_ender_air",
-			"gtceu:distillation_tower/distill_liquid_ender_air",
+			"gtceu:distillation_tower/distill_liquid_ender_air"
 		]
-	}
+	},
 	{
 		"action": "remove_recipe",
-		"pattern": "/^gtceu:.*damascus_steel.*/"
-	},
+		"pattern": "/^gtceu:shaped/.*damascus_steel.*/"
+	}
 ]

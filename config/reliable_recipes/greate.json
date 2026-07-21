@@ -78,7 +78,7 @@
 	},
 	{
 		"action": "remove_recipe",
-		"pattern": "/^greate:(compacting|pressing)\/integration\/.*/"
+		"pattern": "/^greate:(compacting|pressing)/integration/.*/"
 	},
 	{
 		"action": "remove_recipe",
