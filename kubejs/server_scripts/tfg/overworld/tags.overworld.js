@@ -316,6 +316,7 @@ function registerTFGOverworldBiomeTags(event) {
 	event.add('tfg:has_structure/illager_camp', 'tfg:earth/whorled_canyons')
 
 	event.add('tfg:has_structure/illager_roaming', '#tfg:has_structure/illager_camp')
+	event.add('tfg:has_structure/mineshaft', '#tfg:has_structure/illager_camp')
 
 	event.add('tfg:never_has_structure/water', '#tfc:is_lake')
 	event.add('tfg:never_has_structure/water', '#tfc:is_ocean')
