@@ -118,6 +118,7 @@ ServerEvents.tags('worldgen/placed_feature', event => {
 
 ServerEvents.tags('worldgen/biome', event => {
 	registerAdAstraBiomeTags(event)
+	registerCosyCrittersBiomeTags(event)
 	registerCreatePickyWheelsBiomeTags(event)
 	registerTFGBiomeTags(event)
 	registerRealmRpgBiomeTags(event)
