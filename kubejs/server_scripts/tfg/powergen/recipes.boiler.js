@@ -207,7 +207,7 @@ function registerTFGBoilerRecipes(event) {
 		.dimension('minecraft:the_nether')
 
 	event.recipes.gtceu.super_boiler('tfg:syngas_fuel')
-		.itemInputs(Item.of('#minecraft:coals', 1))
+		.itemInputs('#minecraft:coals')
 		.inputFluids(Fluid.of('tfg:syngas', 20000*4))
 		.duration(20*150)
 		.dimension('minecraft:overworld')
