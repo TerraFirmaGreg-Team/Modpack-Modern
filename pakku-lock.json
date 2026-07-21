@@ -13257,7 +13257,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "reliable_recipes-forge-1.20.1-2.2.0.jar",
+                    "file_name": "reliable_recipes-forge-1.20.1-2.2.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -13265,16 +13265,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/Hl4ARA1z/versions/un7y7AHJ/reliable_recipes-forge-1.20.1-2.2.0.jar",
-                    "id": "un7y7AHJ",
+                    "url": "https://cdn.modrinth.com/data/Hl4ARA1z/versions/pMDaOH4K/reliable_recipes-forge-1.20.1-2.2.1.jar",
+                    "id": "pMDaOH4K",
                     "parent_id": "Hl4ARA1z",
                     "hashes": {
-                        "sha512": "8afa312dd10867312ecd35d56a8f08d01c6fa4528ab6ee9ada36f77f6b5072e9b42ea2c2e28f9ca4f55d14c8fefb11cf14010f59f20211390a4c0ea401ac3c04",
-                        "sha1": "065344ae6223ed67233f09ba5d87c641b7bfde47"
+                        "sha512": "7e060c0748f9df6fcae169ff885b64b56fb02eacc5efea010c9b466817ab319a5e6137d9a312412e67a43273bb2024cebc4a4d3c11f4ddaff268a770594218a4",
+                        "sha1": "a295b7d7793ae295934c52d2fdd974fa9ec652a4"
                     },
                     "required_dependencies": [],
-                    "size": 112316,
-                    "date_published": "2026-07-06T08:36:02.595980Z"
+                    "size": 112547,
+                    "date_published": "2026-07-21T22:06:37.922945Z"
                 },
                 {
                     "type": "curseforge",
