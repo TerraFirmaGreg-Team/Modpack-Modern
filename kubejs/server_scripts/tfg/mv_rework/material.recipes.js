@@ -141,7 +141,7 @@ function registerTFGMVMaterialRecipes(event) {
 			.itemOutputs(`tfg:diamond_tipped_mo_50_re_${element.id}`)
 			.notConsumable('gtceu:glass_lens')
 			.duration(15 * 20 * element.amount)
-			.circuit(index)
+			.circuit(index + 1)
 			.EUt(GTValues.VA[GTValues.MV])
 	});
 
