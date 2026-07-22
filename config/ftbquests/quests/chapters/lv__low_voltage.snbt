@@ -1668,11 +1668,23 @@
 				{
 					id: "2E64EF18DC263002"
 					item: "greate:large_aluminium_cogwheel"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "32C96E141753187B"
 					item: "greate:aluminium_shaft"
+					type: "item"
+				}
+				{
+					id: "12417889D1FEF40F"
+					item: "steampowered:cast_iron_steam_engine"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "783001EEAB92FFB1"
+					item: "steampowered:cast_iron_flywheel"
 					optional_task: true
 					type: "item"
 				}

@@ -1624,12 +1624,12 @@
 				{
 					id: "0C95EDF964B17ED6"
 					item: "greate:large_titanium_cogwheel"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "2E602B31550041B9"
 					item: "greate:titanium_shaft"
-					optional_task: true
 					type: "item"
 				}
 			]

@@ -2092,7 +2092,6 @@
 			id: "1D4701C28C2FACF7"
 			optional: true
 			shape: "heart"
-			size: 1.25d
 			subtitle: "{quest.steam_age.soft_mallet.subtitle}"
 			tasks: [{
 				id: "555897B32BD0B6DC"
@@ -2114,6 +2113,33 @@
 			}]
 			x: -19.5d
 			y: 10.0d
+		}
+		{
+			dependencies: ["46FA9DD4755A5548"]
+			description: [
+				"{quests.steam_age.steel_steam_engine.desc.1}"
+				"{@pagebreak}"
+				"{quests.steam_age.steel_steam_engine.desc.2}"
+			]
+			id: "3259A3431E873F1B"
+			optional: true
+			shape: "heart"
+			subtitle: "{quests.steam_age.steel_steam_engine.subtitle}"
+			tasks: [
+				{
+					id: "1D0540A939459AC5"
+					item: "steampowered:bronze_steam_engine"
+					type: "item"
+				}
+				{
+					id: "07F4FBBCE34B1627"
+					item: "steampowered:bronze_flywheel"
+					type: "item"
+				}
+			]
+			title: "{quests.steam_age.steel_steam_engine.title}"
+			x: -16.5d
+			y: 6.5d
 		}
 	]
 	subtitle: ["{quests.steam_age.subtitle}"]
