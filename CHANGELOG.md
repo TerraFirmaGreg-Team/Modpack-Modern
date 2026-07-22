@@ -5,6 +5,7 @@
 - Remove two steps in the Uvarovite-Chromium line so it's more appropriate to MV difficulty (all the recipes and materials will be removed later) @TomPlop
 - The Gas Well will no longer void Natural Gas if the output hatch is full, but will keep consuming Explosives and Water/Steam @TomPlop
 ### Changes
+- Repair Kits can now only stacks up to 16 and don't fit in a Framepack @TomPlop
 #### Foods
 - Standardized cooling/warming effects a bit to use the new food trait (#4516) @Redeix
 - Added the Sugary trait to jam and some desserts (#4516) @Redeix
@@ -33,6 +34,7 @@
 - Air distributors, gravity normalizers, and single-block miners can no longer be glued to create contraptions due to exploits (#4530) @Pyritie
 - TFC Textile clothes can now have armor trims applied (#4461) @Pyritie
 ### Bug fixes
+- The disabled Fluid and Item Pipes are not craftable anymore @TomPlop
 - The Final Moments effect now only kills on natural effect completion instead of on refreshes or clears, and also maybe fixed it sometimes not leaving a corpse @Redeix
 - Fixed tree felling not draining chaninsaws' energy instead of durability (#3293) @Black0305
 - Fixed an issue with the rocket lander sometimes leaving you frozen at a high Y level until relogging, or sometimes landing you at the wrong position (#3054) @Black0305
