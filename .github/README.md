@@ -54,7 +54,7 @@ Other small mods and addons tie everything together, and an ingame book and ques
 
 This modpack is still a work in progress, and is constantly being updated. In its current state, the modpack is fully completable, and worlds will always be compatible with future versions. Clear instructions will be provided if you need to take any extra steps when updating. 
 
-Interested in contributing? For detailed setup instructions, coding standards, and guidelines, please read [this](CONTRIBUTING.md).
+Interested in contributing? For detailed setup instructions, coding standards, and guidelines, please read [this](https://wiki.terrafirmagreg.team/modern/en_us/developer/contributing).
 
 Want to help translate? Check out our [Crowdin](https://terrafirmagreg.crowdin.com/modern)!
 

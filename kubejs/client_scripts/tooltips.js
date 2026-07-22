@@ -382,10 +382,6 @@ const registerTooltips = (event) => {
 		text.add(1, Text.translate('tfg.tooltip.cooling_foods'))
 	})
 
-	event.addAdvanced(['#tfg:cooling_foods_strong'], (item, advanced, text) => {
-		text.add(1, Text.translate('tfg.tooltip.cooling_foods_strong'))
-	})
-
 	event.addAdvanced(['#tfg:warming_foods'], (item, advanced, text) => {
 		text.add(1, Text.translate('tfg.tooltip.warming_foods'))
 	})

@@ -4,6 +4,13 @@ function registerTFGPrimitiveItems(event) {
 
 	event.create('tfg:unstrung_bow');
 
+	// Peat Bricks
+
+	event.create('tfg:dried_peat_brick')
+		.translationKey('item.tfg.dried_peat_brick')
+		.texture('tfg:item/brick/dried_peat_brick')
+
+
 	// Paper making
 	event.create('tfg:hardwood_strip')
 	event.create('tfg:soaked_hardwood_strip')
