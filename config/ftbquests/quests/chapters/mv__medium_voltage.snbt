@@ -1764,6 +1764,7 @@
 			dependencies: ["75F38905DEA60F15"]
 			description: ["{quests.medium_voltage.terminal_dismantler.desc}"]
 			id: "0053E98892F910BF"
+			optional: true
 			shape: "heart"
 			subtitle: "{quests.medium_voltage.terminal_dismantler.subtitle}"
 			tasks: [{

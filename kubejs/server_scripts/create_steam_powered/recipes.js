@@ -102,7 +102,7 @@ function registerCreateSteamPoweredRecipes(event) {
 		A: 'gtceu:ev_machine_casing',
 		B: '#forge:small_gears/stainless_steel',
 		C: '#forge:rods/titanium',
-		D: '#forge:small_fluid_pipes/stainless steel',
+		D: '#forge:small_fluid_pipes/stainless_steel',
 		F: '#forge:tools/wrenches',
 		G: '#forge:tools/hammers'
 	}).id('tfg:shaped/titanium_steam_engine')
