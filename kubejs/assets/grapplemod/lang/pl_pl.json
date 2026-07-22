@@ -75,6 +75,7 @@
   "text.autoconfig.grapplemod.option.clientOptions.sounds.rocket_sound_volume": "rocket_sound_volume",
   "text.autoconfig.grapplemod.option.clientOptions.sounds.rocket_sound_volume.@Tooltip": "Głośność rakiety (1=domyślna)",
   "text.autoconfig.grapplemod.option.clientOptions.sounds.slide_sound_volume": "slide_sound_volume",
+  "text.autoconfig.grapplemod.option.clientOptions.sounds.slide_sound_volume.@Tooltip": "Głośność ślizgu (1=domyślna)",
   "text.autoconfig.grapplemod.option.clientOptions.sounds.wallrun_sound_effect_time_s": "wallrun_sound_effect_time_s",
   "text.autoconfig.grapplemod.option.clientOptions.sounds.wallrun_sound_effect_time_s.@Tooltip": "Limituj dźwięk kroków do jednego na (w sekundach)",
   "text.autoconfig.grapplemod.option.clientOptions.sounds.wallrun_sound_volume": "wallrun_sound_volume",
