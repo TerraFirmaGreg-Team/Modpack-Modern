@@ -31,6 +31,7 @@
 - Looted swine-steel tools no longer have their enchantment glint, for consistency with swine-steel tools dropped by piglin brutes @Pyritie
 - Added quern recipes for grinding ingots into dust @Pyritie
 - Air distributors, gravity normalizers, and single-block miners can no longer be glued to create contraptions due to exploits (#4530) @Pyritie
+- TFC Textile clothes can now have armor trims applied (#4461) @Pyritie
 ### Bug fixes
 - The Final Moments effect now only kills on natural effect completion instead of on refreshes or clears, and also maybe fixed it sometimes not leaving a corpse @Redeix
 - Fixed tree felling not draining chaninsaws' energy instead of durability (#3293) @Black0305
@@ -46,6 +47,7 @@
 - Fixed the syngas + coal advanced boiler recipe using vanilla coal instead of TFC (#4552) @Pyritie
 - Fixed inconsistent coal block to coke block recipes in the pyro oven (#4542) @Pyritie
 - Fixed mobs spawning on GT concrete (#4477) @Pyritie
+- Fixed struts/trusses not having any mining tool assigned (#4468) @SakuraKitsurugi
 ### Shaders
 - The TFG shaders should now work on MacOS!
 
