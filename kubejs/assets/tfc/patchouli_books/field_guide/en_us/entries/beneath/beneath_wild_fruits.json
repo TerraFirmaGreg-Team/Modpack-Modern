@@ -1824,6 +1824,16 @@
                     }
                 }
             ]
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Further Reading",
+            "anchor": "relations",
+            "entries": [
+                "tfc:the_world/wild_fruits",
+                "tfc:the_world/climate",
+                "tfc:beneath/biomes"
+            ]
         }
     ],
     "read_by_default": true,

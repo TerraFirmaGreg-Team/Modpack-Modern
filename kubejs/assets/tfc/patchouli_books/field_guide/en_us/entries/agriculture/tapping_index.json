@@ -1,8 +1,7 @@
 {
 	"name": "Tapping Index",
-	"category": "tfc:arborfirmacraft",
+	"category": "tfc:agriculture",
 	"icon": "afc:wood/sapling/weeping_maple",
-	"read_by_default": true,
 	"pages": [
 		{
 			"type": "patchouli:text",
@@ -137,6 +136,17 @@
 			"images": [ "tfg:textures/gui/field_guide/tapping_index/douglas_fir_tree.png" ],
 			"text": "$(thing)Produces$(): Conifer Pitch$(br)$(thing)Processes Into$(): Sticky Resin & Conifer Rosin",
 			"border": true
-		}
-	]
+		},
+        {
+            "type": "patchouli:relations",
+            "title": "Further Reading",
+            "anchor": "relations",
+            "entries": [
+                "tfc:agriculture/tree_tapping",
+                "tfc:the_world/earth_tree_index"
+            ]
+        }
+	],
+	"read_by_default": true,
+	"sortnum": 4
 }

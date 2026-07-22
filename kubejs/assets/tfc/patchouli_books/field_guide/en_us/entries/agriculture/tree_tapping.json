@@ -1,6 +1,6 @@
 {
 	"name": "Tapping Trees",
-	"category": "tfc:arborfirmacraft",
+	"category": "tfc:agriculture",
 	"icon": "afc:tree_tap",
 	"pages": [
         {
@@ -24,10 +24,20 @@
             "images": ["tfg:textures/gui/field_guide/tree_tapping/tapping_kapok.png"],
             "text": "A valid tapping configuration used to extract Latex from Kapok",
             "border": true
-        }	
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Further Reading",
+            "anchor": "relations",
+            "entries": [
+                "tfc:agriculture/tapping_index",
+                "tfc:the_world/earth_tree_index",
+                "tfc:cooking/cooking_methods"
+            ]
+        }
 	],
 	"read_by_default": true,
-	"sortnum": 1,
+	"sortnum": 3,
     "extra_recipe_mappings": {
       "afc:tree_tap": 0
     }
