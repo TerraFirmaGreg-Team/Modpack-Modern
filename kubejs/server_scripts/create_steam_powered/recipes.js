@@ -92,5 +92,32 @@ function registerCreateSteamPoweredRecipes(event) {
 
 	TFGHelpers.registerMaterialInfo('steampowered:steel_flywheel', [GTMaterials.StainlessSteel, 2 + 1/9, GTMaterials.Aluminium, 2]);
 
-	// ES: TODO
+	// ES
+
+	event.shaped('tfg:titanium_steam_engine', [
+		' CB',
+		'DCD',
+		'GAF'
+	], {
+		A: 'gtceu:ev_machine_casing',
+		B: '#forge:small_gears/stainless_steel',
+		C: '#forge:rods/titanium',
+		D: '#forge:small_fluid_pipes/stainless steel',
+		F: '#forge:tools/wrenches',
+		G: '#forge:tools/hammers'
+	}).id('tfg:shaped/titanium_steam_engine')
+
+	TFGHelpers.registerMaterialInfo('tfg:titanium_steam_engine', [GTMaterials.Titanium, 9, GTMaterials.StainlessSteel, 3]);
+
+	event.shaped('tfg:titanium_flywheel', [
+		'ABA',
+		'BCB',
+		'ABA'
+	], {
+		A: '#forge:rods/titanium',
+		B: '#forge:rods/stainless_steel',
+		C: 'greate:titanium_shaft'
+	}).id('tfg:shaped/titanium_flywheel')
+
+	TFGHelpers.registerMaterialInfo('tfg:titanium_flywheel', [GTMaterials.Titanium, 2 + 1/9, GTMaterials.StainlessSteel, 2]);
 }
