@@ -170,7 +170,9 @@ function registerTFGChipboardRecipes(event) {
 		.EUt(GTValues.VA[GTValues.ULV])
 
 	event.recipes.gtceu.assembler('tfg:resin_circuit_assembler')
-		.itemInputs('gtceu:wood_plate', '2x gtceu:sticky_resin')
+		.itemInputs('gtceu:wood_plate')
+		.inputFluids(Fluid.of('gtceu:glue', 100))
+		.circuit(1)
 		.itemOutputs('gtceu:resin_circuit_board')
 		.duration(20 * 10)
 		.EUt(GTValues.VA[GTValues.ULV])
