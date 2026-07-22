@@ -1,0 +1,67 @@
+{
+  "name": "Chocolate Confections",
+  "category": "tfc:cooking",
+  "icon": "firmalife:textures/item/food/dark_chocolate.png",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)Chocolate-making$() takes a few processing steps, for not much of a reward... It's important to remember, when playing Firmalife, that being a chocolatier is for your personal enjoyment and pleasure, rather than for trying to extract maximum value from any given input."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "To start chocolate processing, cocoa beans must first be $(thing)roasted$() in an $(l:firmalife/ovens)Oven$() to make $(thing)Roasted Cocoa Beans$(). Then, craft the roasted beans with a $(thing)Knife$() to split the beans into $(thing)Cocoa Powder$() and $(thing)Cocoa Butter$()."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "The $(l:firmalife/mixing_bowl)Mixing Bowl$() is used to mix cocoa powder, butter, and sweetener (sugar or honey) to make $(thing)Chocolate Blends$(). The ratio of cocoa butter to powder determines what comes out:$(br)$(li)1 Powder, 1 Butter, 1 Sweetener: Milk Chocolate$()$(li)2 Powder, 1 Sweetener: Dark Chocolate$()$(li)2 Butter, 1 Sweetener: White Chocolate$()"
+    },
+    {
+      "type": "tfc:drying_recipe",
+      "recipe": "firmalife:drying/dark_chocolate",
+      "text": "Finally, chocolate is dried on a $(l:firmalife/drying)Drying Mat$() to make $(thing)Chocolate$()."
+    },
+    {
+      "title": "Casting Chocolate",
+      "type": "patchouli:text",
+      "text": "$(thing)Chocolate$() does not need to come only in boring bars! Melt down $(thing)White$(), $(thing)Milk$(), or $(thing)Dark$() chocolate in a $(thing)Vessel$() or $(thing)Crucible$() and then cast it into a mold to obtain chocolate confections. There are three types of chocolate confections: $(thing)Hearts$(), $(thing)Bells$(), and $(thing)Knives$(). Each is obtained by casting chocolate into a different mold."
+    },
+    {
+      "type": "tfc:knapping_recipe",
+      "recipe": "tfcchannelcasting:clay_knapping/unfired_heart_mold",
+      "text": "Knapping a $(thing)Heart Mold$(), used to create $(thing)Heart$()-shaped chocolates."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Chocolate confections provide the same nutrition as chocolate bars, but they are faster to eat. However, if these confections are prepared at specific times of the year, they will gain a trait that doubles their nutrition. $(thing)Chocolate Hearts$() gain the $(thing)Romantic$() trait in Februrary, $(thing)Chocolate Winter Bells$() gain the $(thing)Festive$() trait in December, and $(thing)Chocolate Candy Knives$() gain the $(thing)Scary$() trait in October."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Moreover, confections can be $(thing)filled$() to gain additional benefits. Confections filled with $(thing)Jam$() have extra $(thing)Fruit$() nutrition. Confections filled with $(thing)Alcohol$() give positive potion effects."
+    },
+    {
+      "type": "tfc:sealed_barrel_recipe",
+      "recipe": "tfcchannelcasting:barrel/fill_with_sweet_liquor",
+      "text": "Eating chocolates filled with $(thing)Sweet Liquor$() gives a speed buff."
+    },
+    {
+      "type": "tfc:sealed_barrel_recipe",
+      "recipe": "tfcchannelcasting:barrel/fill_with_strong_liquor",
+      "text": "Eating chocolates filled with $(thing)Strong Liquor$() gives damange resistance."
+    },
+    {
+      "type": "tfc:sealed_barrel_recipe",
+      "recipe": "tfcchannelcasting:barrel/fill_with_whiskey",
+      "text": "Eating chocolates filled with $(thing)Whiskey$() gives haste."
+    },
+    {
+        "type": "patchouli:relations",
+        "title": "Further Reading",
+        "anchor": "relations",
+        "entries": [
+            "tfc:cooking/alcohol"
+        ]
+    }
+  ],
+    "read_by_default": true,
+    "sortnum": 11
+}
