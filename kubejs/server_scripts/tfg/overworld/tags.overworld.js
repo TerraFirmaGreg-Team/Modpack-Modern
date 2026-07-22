@@ -467,7 +467,7 @@ function registerTFGOverworldPlacedFeatures(event) {
 	event.add("tfc:in_biome/veins", "tfg:earth/geode/gypsum");
 	event.add("tfc:in_biome/veins", "tfg:earth/geode/opal");
 	event.add("tfc:in_biome/veins", "tfg:earth/geode/pyrite");
-	event.add("tfc:in_biome/veins", "tfg:earth/geode/quartzite");
+	event.add("tfc:in_biome/veins", "tfg:earth/geode/red_garnet");
 
 	// Crops
 	event.add("tfc:feature/crops", "tfg:earth/crop/sunflower_patch");

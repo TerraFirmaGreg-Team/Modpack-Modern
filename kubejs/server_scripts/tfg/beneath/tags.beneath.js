@@ -256,6 +256,12 @@ function registerTFGBeneathPlacedFeatures(event) {
 	event.add('tfg:nether_lakes_and_geodes', "tfg:nether/terrain/spring_water_lake");
 	event.add('tfg:nether_lakes_and_geodes', "minecraft:basalt_pillar");
 	event.add('tfg:nether_lakes_and_geodes', "tfg:earth/geode/amethyst");
+	event.add('tfg:nether_lakes_and_geodes', "tfg:earth/geode/barite")
+	event.add('tfg:nether_lakes_and_geodes', "tfg:earth/geode/calcite")
+	event.add('tfg:nether_lakes_and_geodes', "tfg:earth/geode/gypsum")
+	event.add('tfg:nether_lakes_and_geodes', "tfg:earth/geode/opal")
+	event.add('tfg:nether_lakes_and_geodes', "tfg:earth/geode/pyrite")
+	event.add('tfg:nether_lakes_and_geodes', "tfg:earth/geode/red_garnet")
 	event.add('tfg:nether_lakes_and_geodes', 'tfg:nether/terrain/cave_column')
 	event.add('tfg:nether_lakes_and_geodes', 'tfg:nether/terrain/large_cave_spike')
 	event.add('tfg:nether_lakes_and_geodes', 'tfg:nether/terrain/huge_column');
