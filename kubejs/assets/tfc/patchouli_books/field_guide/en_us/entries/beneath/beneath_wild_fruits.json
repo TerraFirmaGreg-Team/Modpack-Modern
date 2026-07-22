@@ -1,307 +1,1841 @@
 {
-  "name": "Beneath Wild Fruits",
-  "category": "tfc:beneath",
-  "icon": "tfg:textures/item/fruit_trees/magmango_sapling.png",
-  "pages": [
-    {
-      "type": "patchouli:text",
-      "text": "The $(l:beneath)Beneath$() hosts its own unique selection of wild fruits, which have adapted to the extreme conditions underground. Wild fruits can be cultivated in all the same ways as regular $(l:the_world/wild_fruits)wild fruits$() in the Overworld."
-    },
-    {
-      "type": "patchouli:text",
-      "title": "Contents",
-      "text": "$(li)$(l:tfc:beneath/beneath_wild_fruits#lavacado)Lavacado$()$(li)$(l:tfc:beneath/beneath_wild_fruits#magmango)Magmango$()"
-    },
-    {
-      "type": "patchouli:text",
-      "anchor": "lavacado",
-      "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 8 - 80 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 20 - 100 %$(br2)Lavacado trees grow in the months of December through April, start flowering in May and June, and bear fruit in July.",
-      "title": "Lavacado"
-    },
-    {
-      "type": "tfc:multimultiblock",
-      "text": "Wild Lavacado trees can be found between Y=198 and Y=60.",
-      "multiblocks": [
+    "name": "Beneath Fruits",
+    "category": "tfc:beneath",
+    "icon": "tfg:textures/item/fruit_trees/magmango_sapling.png",
+    "pages": [
         {
-          "pattern": [
-            [
-              "     ",
-              "  L  ",
-              "     ",
-              "     ",
-              "     "
+            "type": "patchouli:text",
+            "anchor": "index",
+            "title": "Index",
+            "text": "$(bold)$(li)$(l:tfc:beneath/beneath_wild_fruits#fruit_trees)Fruit Trees$()$(li2)$(l:tfc:beneath/beneath_wild_fruits#lavacado)Lavacado$()$(li2)$(l:tfc:beneath/beneath_wild_fruits#magmango)Magmango$()$(bold)$(li)$(l:tfc:beneath/beneath_wild_fruits#palm_fruit_trees)Palm Fruit Trees$()$(li2)$(l:tfc:beneath/beneath_wild_fruits#oil_palm)Oil Palm$()$(li2)$(l:tfc:beneath/beneath_wild_fruits#acai)Açaí$()"
+        },
+        {
+            "title": "Introduction",
+            "anchor": "into",
+            "type": "patchouli:text",
+            "text": "The $(l:beneath)Beneath$() hosts its own unique selection of wild fruits, which have adapted to the extreme conditions underground. Wild fruits can be cultivated in all the same ways as regular $(l:the_world/wild_fruits)wild fruits$() in the Overworld."
+        },
+        {
+            "type": "tfc:table",
+            "anchor": "fruit_trees",
+            "strings": [
+                {
+                    "text": ""
+                },
+                {
+                    "text": "Jan"
+                },
+                {
+                    "text": "Feb"
+                },
+                {
+                    "text": "Mar"
+                },
+                {
+                    "text": "Apr"
+                },
+                {
+                    "text": "May"
+                },
+                {
+                    "text": "Jun"
+                },
+                {
+                    "text": "Jul"
+                },
+                {
+                    "text": "Aug"
+                },
+                {
+                    "text": "Sep"
+                },
+                {
+                    "text": "Oct"
+                },
+                {
+                    "text": "Nov"
+                },
+                {
+                    "text": "Dec"
+                },
+                {
+                    "text": "Lavacado"
+                },
+                {
+                    "fill": "0x6ab553"
+                },
+                {
+                    "fill": "0x6ab553"
+                },
+                {
+                    "fill": "0x6ab553"
+                },
+                {
+                    "fill": "0x6ab553"
+                },
+                {
+                    "fill": "0xcca0db"
+                },
+                {
+                    "fill": "0xcca0db"
+                },
+                {
+                    "fill": "0xa217ff"
+                },
+                {
+                    "fill": "0xa8986a"
+                },
+                {
+                    "fill": "0xa8986a"
+                },
+                {
+                    "fill": "0xa8986a"
+                },
+                {
+                    "fill": "0xa8986a"
+                },
+                {
+                    "fill": "0x6ab553"
+                },
+                {
+                    "text": "Magmango"
+                },
+                {
+                    "fill": "0x6ab553"
+                },
+                {
+                    "fill": "0x6ab553"
+                },
+                {
+                    "fill": "0xcca0db"
+                },
+                {
+                    "fill": "0xcca0db"
+                },
+                {
+                    "fill": "0xa217ff"
+                },
+                {
+                    "fill": "0xa8986a"
+                },
+                {
+                    "fill": "0xa8986a"
+                },
+                {
+                    "fill": "0xa8986a"
+                },
+                {
+                    "fill": "0xa8986a"
+                },
+                {
+                    "fill": "0x6ab553"
+                },
+                {
+                    "fill": "0x6ab553"
+                },
+                {
+                    "fill": "0x6ab553"
+                }
             ],
-            [
-              "  L  ",
-              " L1L ",
-              "  L  ",
-              "     ",
-              "     "
+            "text": "The fruiting calendar for fruit trees.",
+            "title": "Fruit Trees",
+            "legend": [
+                {
+                    "text": "Dormant",
+                    "color": "0xa8986a"
+                },
+                {
+                    "text": "Healthy",
+                    "color": "0x6ab553"
+                },
+                {
+                    "text": "Flowering",
+                    "color": "0xcca0db"
+                },
+                {
+                    "text": "Fruiting",
+                    "color": "0xa217ff"
+                }
             ],
-            [
-              "  L  ",
-              " L1L ",
-              "  L  ",
-              "     ",
-              "     "
-            ],
-            [
-              "  L  ",
-              " L3L ",
-              " L2L ",
-              "  L  ",
-              "     "
-            ],
-            [
-              "     ",
-              "     ",
-              "  0  ",
-              "     ",
-              "     "
-            ],
-            [
-              "     ",
-              "     ",
-              "  1  ",
-              "     ",
-              "     "
+            "columns": 12,
+            "first_column_width": 45,
+            "column_width": 15,
+            "row_height": 10,
+            "left_buffer": 5,
+            "top_buffer": 11,
+            "draw_background": true
+        },
+        {
+            "type": "patchouli:empty",
+            "draw_filler": false
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "lavacado",
+            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 8 - 80 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 20 - 100 %$(br2)Lavacado trees grow in the months of December through April, start flowering in May and June, and bear fruit in July.",
+            "title": "Lavacado"
+        },
+        {
+            "type": "tfc:multimultiblock",
+            "text": "Wild Lavacado trees can be found between Y=198 and Y=60.",
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "     ",
+                            "  L  ",
+                            "     ",
+                            "     ",
+                            "     "
+                        ],
+                        [
+                            "  L  ",
+                            " L1L ",
+                            "  L  ",
+                            "     ",
+                            "     "
+                        ],
+                        [
+                            "  L  ",
+                            " L1L ",
+                            "  L  ",
+                            "     ",
+                            "     "
+                        ],
+                        [
+                            "  L  ",
+                            " L3L ",
+                            " L2L ",
+                            "  L  ",
+                            "     "
+                        ],
+                        [
+                            "     ",
+                            "     ",
+                            "  0  ",
+                            "     ",
+                            "     "
+                        ],
+                        [
+                            "     ",
+                            "     ",
+                            "  1  ",
+                            "     ",
+                            "     "
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "tfg:fruit_trees/lavacado_branch[down=true,up=true]",
+                        "1": "tfg:fruit_trees/lavacado_branch[down=true,up=true]",
+                        "2": "tfg:fruit_trees/lavacado_branch[down=true,west=true]",
+                        "3": "tfg:fruit_trees/lavacado_branch[east=true,up=true]",
+                        "L": "tfg:fruit_trees/lavacado_leaves[lifecycle=dormant]"
+                    }
+                }
             ]
-          ],
-          "mapping": {
-            "0": "tfg:fruit_trees/lavacado_branch[down=true,up=true]",
-            "1": "tfg:fruit_trees/lavacado_branch[down=true,up=true]",
-            "2": "tfg:fruit_trees/lavacado_branch[down=true,west=true]",
-            "3": "tfg:fruit_trees/lavacado_branch[east=true,up=true]",
-            "L": "tfg:fruit_trees/lavacado_leaves[lifecycle=dormant]"
-          }
-        }
-      ]
-    },
-    {
-      "type": "patchouli:text",
-      "anchor": "magmango",
-      "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 8 - 80 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 30 - 100 %$(br2)Magmango trees grow in the months of October through February, start flowering in March and April, and bear fruit in May.",
-      "title": "Magmango"
-    },
-    {
-      "type": "tfc:multimultiblock",
-      "text": "Wild Magmango trees can be found between Y=198 and Y=60.",
-      "multiblocks": [
+        },
         {
-          "pattern": [
-            [
-              "     ",
-              "  L  ",
-              "     ",
-              "     ",
-              "     "
-            ],
-            [
-              "  L  ",
-              " L1L ",
-              "  L  ",
-              "     ",
-              "     "
-            ],
-            [
-              "  L  ",
-              " L1L ",
-              "  L  ",
-              "     ",
-              "     "
-            ],
-            [
-              "  L  ",
-              " L3L ",
-              " L2L ",
-              "  L  ",
-              "     "
-            ],
-            [
-              "     ",
-              "     ",
-              "  0  ",
-              "     ",
-              "     "
-            ],
-            [
-              "     ",
-              "     ",
-              "  1  ",
-              "     ",
-              "     "
+            "type": "patchouli:text",
+            "anchor": "magmango",
+            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 8 - 80 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 30 - 100 %$(br2)Magmango trees grow in the months of October through February, start flowering in March and April, and bear fruit in May.",
+            "title": "Magmango"
+        },
+        {
+            "type": "tfc:multimultiblock",
+            "text": "Wild Magmango trees can be found between Y=198 and Y=60.",
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "     ",
+                            "  L  ",
+                            "     ",
+                            "     ",
+                            "     "
+                        ],
+                        [
+                            "  L  ",
+                            " L1L ",
+                            "  L  ",
+                            "     ",
+                            "     "
+                        ],
+                        [
+                            "  L  ",
+                            " L1L ",
+                            "  L  ",
+                            "     ",
+                            "     "
+                        ],
+                        [
+                            "  L  ",
+                            " L3L ",
+                            " L2L ",
+                            "  L  ",
+                            "     "
+                        ],
+                        [
+                            "     ",
+                            "     ",
+                            "  0  ",
+                            "     ",
+                            "     "
+                        ],
+                        [
+                            "     ",
+                            "     ",
+                            "  1  ",
+                            "     ",
+                            "     "
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "tfg:fruit_trees/magmango_branch[down=true,up=true]",
+                        "1": "tfg:fruit_trees/magmango_branch[down=true,up=true]",
+                        "2": "tfg:fruit_trees/magmango_branch[down=true,west=true]",
+                        "3": "tfg:fruit_trees/magmango_branch[east=true,up=true]",
+                        "L": "tfg:fruit_trees/magmango_leaves[lifecycle=dormant]"
+                    }
+                }
             ]
-          ],
-          "mapping": {
-            "0": "tfg:fruit_trees/magmango_branch[down=true,up=true]",
-            "1": "tfg:fruit_trees/magmango_branch[down=true,up=true]",
-            "2": "tfg:fruit_trees/magmango_branch[down=true,west=true]",
-            "3": "tfg:fruit_trees/magmango_branch[east=true,up=true]",
-            "L": "tfg:fruit_trees/magmango_leaves[lifecycle=dormant]"
-          }
+        },
+        {
+            "type": "tfc:table",
+            "anchor": "palm_fruit_trees",
+            "strings": [
+                {
+                    "text": ""
+                },
+                {
+                    "text": "Jan"
+                },
+                {
+                    "text": "Feb"
+                },
+                {
+                    "text": "Mar"
+                },
+                {
+                    "text": "Apr"
+                },
+                {
+                    "text": "May"
+                },
+                {
+                    "text": "Jun"
+                },
+                {
+                    "text": "Jul"
+                },
+                {
+                    "text": "Aug"
+                },
+                {
+                    "text": "Sep"
+                },
+                {
+                    "text": "Oct"
+                },
+                {
+                    "text": "Nov"
+                },
+                {
+                    "text": "Dec"
+                },
+                {
+                    "text": "Oil Palm"
+                },
+                {
+                    "fill": "0xa217ff"
+                },
+                {
+                    "fill": "0xa8986a"
+                },
+                {
+                    "fill": "0xa8986a"
+                },
+                {
+                    "fill": "0xa217ff"
+                },
+                {
+                    "fill": "0xa217ff"
+                },
+                {
+                    "fill": "0xa217ff"
+                },
+                {
+                    "fill": "0xa217ff"
+                },
+                {
+                    "fill": "0xa8986a"
+                },
+                {
+                    "fill": "0xa8986a"
+                },
+                {
+                    "fill": "0xa8986a"
+                },
+                {
+                    "fill": "0xa217ff"
+                },
+                {
+                    "fill": "0xa217ff"
+                },
+                {
+                    "text": "Açaí"
+                },
+                {
+                    "fill": "0xa217ff"
+                },
+                {
+                    "fill": "0xa217ff"
+                },
+                {
+                    "fill": "0xa217ff"
+                },
+                {
+                    "fill": "0xa217ff"
+                },
+                {
+                    "fill": "0xa8986a"
+                },
+                {
+                    "fill": "0xa8986a"
+                },
+                {
+                    "fill": "0xa8986a"
+                },
+                {
+                    "fill": "0xa8986a"
+                },
+                {
+                    "fill": "0xa8986a"
+                },
+                {
+                    "fill": "0xa8986a"
+                },
+                {
+                    "fill": "0xa8986a"
+                },
+                {
+                    "fill": "0xa8986a"
+                }
+            ],
+            "text": "The fruiting calendar for palm fruit trees.",
+            "title": "Palm Fruit Trees",
+            "legend": [
+                {
+                    "text": "Dormant",
+                    "color": "0xa8986a"
+                },
+                {
+                    "text": "Fruiting",
+                    "color": "0xa217ff"
+                }
+            ],
+            "columns": 12,
+            "first_column_width": 45,
+            "column_width": 15,
+            "row_height": 10,
+            "left_buffer": 5,
+            "top_buffer": 11,
+            "draw_background": true
+        },
+        {
+            "type": "patchouli:empty",
+            "draw_filler": false
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "oil_palm",
+            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 19 - 62 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 10 - 100 %$(br2)Oil Palm trees are harvested for their fruits which can be processed into Palm Oil and a source of burlap fiber. Oil palm clusters grow in 4 stages and yield 3-6 items when harvested.",
+            "title": "Oil Palm Tree"
+        },
+        {
+            "type": "tfc:multimultiblock",
+            "text": "Oil palm trees can be found in $(thing)Salt Caves$() and $(thing)Tar Pools$() biomes between y=50 and y=190",
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "   l   ",
+                            "   l   ",
+                            "       ",
+                            "ll   ll",
+                            "       ",
+                            "   l   ",
+                            "   l   "
+                        ],
+                        [
+                            "       ",
+                            "   l   ",
+                            "   l   ",
+                            " ll ll ",
+                            "   l   ",
+                            "   l   ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            "       ",
+                            "  lll  ",
+                            "  lll  ",
+                            "  lll  ",
+                            "       ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            "   l   ",
+                            "   l   ",
+                            " lllll ",
+                            "   l   ",
+                            "   l   ",
+                            "       "
+                        ],
+                        [
+                            "   l   ",
+                            "   l   ",
+                            "       ",
+                            "ll h ll",
+                            "       ",
+                            "   l   ",
+                            "   l   "
+                        ],
+                        [
+                            "       ",
+                            "       ",
+                            "       ",
+                            "   3   ",
+                            "       ",
+                            "       ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            "       ",
+                            "       ",
+                            "   3   ",
+                            "       ",
+                            "       ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            "       ",
+                            "       ",
+                            "   2   ",
+                            "       ",
+                            "       ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            "       ",
+                            "       ",
+                            "   2   ",
+                            "       ",
+                            "       ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            "       ",
+                            "       ",
+                            "   2   ",
+                            "       ",
+                            "       ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            "       ",
+                            "       ",
+                            "   1   ",
+                            "       ",
+                            "       ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            "       ",
+                            "       ",
+                            "   0   ",
+                            "       ",
+                            "       ",
+                            "       "
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "tfg:palm_tree/trunk[size=0]",
+                        "1": "tfg:palm_tree/trunk[size=0]",
+                        "2": "tfg:palm_tree/trunk[size=1]",
+                        "3": "tfg:palm_tree/trunk[size=2]",
+                        "h": "tfg:palm_tree/oil_palm_tree_head",
+                        "l": "tfg:palm_tree/oil_palm_leaves"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "   l   ",
+                            "   l   ",
+                            "       ",
+                            "ll   ll",
+                            "       ",
+                            "   l   ",
+                            "   l   "
+                        ],
+                        [
+                            "       ",
+                            "   l   ",
+                            "   l   ",
+                            " ll ll ",
+                            "   l   ",
+                            "   l   ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            "       ",
+                            "  lll  ",
+                            "  lll  ",
+                            "  lll  ",
+                            "       ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            "   l   ",
+                            "   l   ",
+                            " lllll ",
+                            "   l   ",
+                            "   l   ",
+                            "       "
+                        ],
+                        [
+                            "   l   ",
+                            "   l   ",
+                            "   e   ",
+                            "llshnll",
+                            "   w   ",
+                            "   l   ",
+                            "   l   "
+                        ],
+                        [
+                            "       ",
+                            "       ",
+                            "       ",
+                            "   3   ",
+                            "       ",
+                            "       ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            "       ",
+                            "       ",
+                            "   3   ",
+                            "       ",
+                            "       ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            "       ",
+                            "       ",
+                            "   2   ",
+                            "       ",
+                            "       ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            "       ",
+                            "       ",
+                            "   2   ",
+                            "       ",
+                            "       ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            "       ",
+                            "       ",
+                            "   2   ",
+                            "       ",
+                            "       ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            "       ",
+                            "       ",
+                            "   1   ",
+                            "       ",
+                            "       ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            "       ",
+                            "       ",
+                            "   0   ",
+                            "       ",
+                            "       ",
+                            "       "
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "tfg:palm_tree/trunk[size=0]",
+                        "1": "tfg:palm_tree/trunk[size=0]",
+                        "2": "tfg:palm_tree/trunk[size=1]",
+                        "3": "tfg:palm_tree/trunk[size=2]",
+                        "n": "tfg:palm_tree/oil_palm_tree_cluster[age=0,facing=north]",
+                        "e": "tfg:palm_tree/oil_palm_tree_cluster[age=0,facing=east]",
+                        "s": "tfg:palm_tree/oil_palm_tree_cluster[age=0,facing=south]",
+                        "w": "tfg:palm_tree/oil_palm_tree_cluster[age=0,facing=west]",
+                        "h": "tfg:palm_tree/oil_palm_tree_head",
+                        "l": "tfg:palm_tree/oil_palm_leaves"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "   l   ",
+                            "   l   ",
+                            "       ",
+                            "ll   ll",
+                            "       ",
+                            "   l   ",
+                            "   l   "
+                        ],
+                        [
+                            "       ",
+                            "   l   ",
+                            "   l   ",
+                            " ll ll ",
+                            "   l   ",
+                            "   l   ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            "       ",
+                            "  lll  ",
+                            "  lll  ",
+                            "  lll  ",
+                            "       ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            "   l   ",
+                            "   l   ",
+                            " lllll ",
+                            "   l   ",
+                            "   l   ",
+                            "       "
+                        ],
+                        [
+                            "   l   ",
+                            "   l   ",
+                            "   e   ",
+                            "llshnll",
+                            "   w   ",
+                            "   l   ",
+                            "   l   "
+                        ],
+                        [
+                            "       ",
+                            "       ",
+                            "       ",
+                            "   3   ",
+                            "       ",
+                            "       ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            "       ",
+                            "       ",
+                            "   3   ",
+                            "       ",
+                            "       ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            "       ",
+                            "       ",
+                            "   2   ",
+                            "       ",
+                            "       ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            "       ",
+                            "       ",
+                            "   2   ",
+                            "       ",
+                            "       ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            "       ",
+                            "       ",
+                            "   2   ",
+                            "       ",
+                            "       ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            "       ",
+                            "       ",
+                            "   1   ",
+                            "       ",
+                            "       ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            "       ",
+                            "       ",
+                            "   0   ",
+                            "       ",
+                            "       ",
+                            "       "
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "tfg:palm_tree/trunk[size=0]",
+                        "1": "tfg:palm_tree/trunk[size=0]",
+                        "2": "tfg:palm_tree/trunk[size=1]",
+                        "3": "tfg:palm_tree/trunk[size=2]",
+                        "n": "tfg:palm_tree/oil_palm_tree_cluster[age=1,facing=north]",
+                        "e": "tfg:palm_tree/oil_palm_tree_cluster[age=1,facing=east]",
+                        "s": "tfg:palm_tree/oil_palm_tree_cluster[age=1,facing=south]",
+                        "w": "tfg:palm_tree/oil_palm_tree_cluster[age=1,facing=west]",
+                        "h": "tfg:palm_tree/oil_palm_tree_head",
+                        "l": "tfg:palm_tree/oil_palm_leaves"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "   l   ",
+                            "   l   ",
+                            "       ",
+                            "ll   ll",
+                            "       ",
+                            "   l   ",
+                            "   l   "
+                        ],
+                        [
+                            "       ",
+                            "   l   ",
+                            "   l   ",
+                            " ll ll ",
+                            "   l   ",
+                            "   l   ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            "       ",
+                            "  lll  ",
+                            "  lll  ",
+                            "  lll  ",
+                            "       ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            "   l   ",
+                            "   l   ",
+                            " lllll ",
+                            "   l   ",
+                            "   l   ",
+                            "       "
+                        ],
+                        [
+                            "   l   ",
+                            "   l   ",
+                            "   e   ",
+                            "llshnll",
+                            "   w   ",
+                            "   l   ",
+                            "   l   "
+                        ],
+                        [
+                            "       ",
+                            "       ",
+                            "       ",
+                            "   3   ",
+                            "       ",
+                            "       ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            "       ",
+                            "       ",
+                            "   3   ",
+                            "       ",
+                            "       ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            "       ",
+                            "       ",
+                            "   2   ",
+                            "       ",
+                            "       ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            "       ",
+                            "       ",
+                            "   2   ",
+                            "       ",
+                            "       ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            "       ",
+                            "       ",
+                            "   2   ",
+                            "       ",
+                            "       ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            "       ",
+                            "       ",
+                            "   1   ",
+                            "       ",
+                            "       ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            "       ",
+                            "       ",
+                            "   0   ",
+                            "       ",
+                            "       ",
+                            "       "
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "tfg:palm_tree/trunk[size=0]",
+                        "1": "tfg:palm_tree/trunk[size=0]",
+                        "2": "tfg:palm_tree/trunk[size=1]",
+                        "3": "tfg:palm_tree/trunk[size=2]",
+                        "n": "tfg:palm_tree/oil_palm_tree_cluster[age=2,facing=north]",
+                        "e": "tfg:palm_tree/oil_palm_tree_cluster[age=2,facing=east]",
+                        "s": "tfg:palm_tree/oil_palm_tree_cluster[age=2,facing=south]",
+                        "w": "tfg:palm_tree/oil_palm_tree_cluster[age=2,facing=west]",
+                        "h": "tfg:palm_tree/oil_palm_tree_head",
+                        "l": "tfg:palm_tree/oil_palm_leaves"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "   l   ",
+                            "   l   ",
+                            "       ",
+                            "ll   ll",
+                            "       ",
+                            "   l   ",
+                            "   l   "
+                        ],
+                        [
+                            "       ",
+                            "   l   ",
+                            "   l   ",
+                            " ll ll ",
+                            "   l   ",
+                            "   l   ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            "       ",
+                            "  lll  ",
+                            "  lll  ",
+                            "  lll  ",
+                            "       ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            "   l   ",
+                            "   l   ",
+                            " lllll ",
+                            "   l   ",
+                            "   l   ",
+                            "       "
+                        ],
+                        [
+                            "   l   ",
+                            "   l   ",
+                            "   e   ",
+                            "llshnll",
+                            "   w   ",
+                            "   l   ",
+                            "   l   "
+                        ],
+                        [
+                            "       ",
+                            "       ",
+                            "       ",
+                            "   3   ",
+                            "       ",
+                            "       ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            "       ",
+                            "       ",
+                            "   3   ",
+                            "       ",
+                            "       ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            "       ",
+                            "       ",
+                            "   2   ",
+                            "       ",
+                            "       ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            "       ",
+                            "       ",
+                            "   2   ",
+                            "       ",
+                            "       ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            "       ",
+                            "       ",
+                            "   2   ",
+                            "       ",
+                            "       ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            "       ",
+                            "       ",
+                            "   1   ",
+                            "       ",
+                            "       ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            "       ",
+                            "       ",
+                            "   0   ",
+                            "       ",
+                            "       ",
+                            "       "
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "tfg:palm_tree/trunk[size=0]",
+                        "1": "tfg:palm_tree/trunk[size=0]",
+                        "2": "tfg:palm_tree/trunk[size=1]",
+                        "3": "tfg:palm_tree/trunk[size=2]",
+                        "n": "tfg:palm_tree/oil_palm_tree_cluster[age=3,facing=north]",
+                        "e": "tfg:palm_tree/oil_palm_tree_cluster[age=3,facing=east]",
+                        "s": "tfg:palm_tree/oil_palm_tree_cluster[age=3,facing=south]",
+                        "w": "tfg:palm_tree/oil_palm_tree_cluster[age=3,facing=west]",
+                        "h": "tfg:palm_tree/oil_palm_tree_head",
+                        "l": "tfg:palm_tree/oil_palm_leaves"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "acai",
+            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 24 - 70 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 10 - 100 %$(br2)Açaí tree clusters grow in 5 stages and yield 4-8 fruits when harvested.",
+            "title": "Açaí Tree"
+        },
+        {
+            "type": "tfc:multimultiblock",
+            "text": "Açaí trees can be found in $(thing)Salt Caves$() and $(thing)Tar Pools$() biomes between y=50 and y=190",
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "   l   ",
+                            "   l   ",
+                            "       ",
+                            "ll   ll",
+                            "       ",
+                            "   l   ",
+                            "   l   "
+                        ],
+                        [
+                            "       ",
+                            "   l   ",
+                            "   l   ",
+                            " ll ll ",
+                            "   l   ",
+                            "   l   ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            "       ",
+                            "  lll  ",
+                            "  lll  ",
+                            "  lll  ",
+                            "       ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            "   l   ",
+                            "   l   ",
+                            " lllll ",
+                            "   l   ",
+                            "   l   ",
+                            "       "
+                        ],
+                        [
+                            "   l   ",
+                            "   l   ",
+                            "       ",
+                            "ll h ll",
+                            "       ",
+                            "   l   ",
+                            "   l   "
+                        ],
+                        [
+                            "       ",
+                            "       ",
+                            "       ",
+                            "   3   ",
+                            "       ",
+                            "       ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            "       ",
+                            "       ",
+                            "   3   ",
+                            "       ",
+                            "       ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            "       ",
+                            "       ",
+                            "   2   ",
+                            "       ",
+                            "       ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            "       ",
+                            "       ",
+                            "   2   ",
+                            "       ",
+                            "       ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            "       ",
+                            "       ",
+                            "   2   ",
+                            "       ",
+                            "       ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            "       ",
+                            "       ",
+                            "   1   ",
+                            "       ",
+                            "       ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            "       ",
+                            "       ",
+                            "   0   ",
+                            "       ",
+                            "       ",
+                            "       "
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "tfg:palm_tree/trunk[size=0]",
+                        "1": "tfg:palm_tree/trunk[size=0]",
+                        "2": "tfg:palm_tree/trunk[size=1]",
+                        "3": "tfg:palm_tree/trunk[size=2]",
+                        "h": "tfg:palm_tree/acai_tree_head",
+                        "l": "tfg:palm_tree/acai_leaves"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "   l   ",
+                            "   l   ",
+                            "       ",
+                            "ll   ll",
+                            "       ",
+                            "   l   ",
+                            "   l   "
+                        ],
+                        [
+                            "       ",
+                            "   l   ",
+                            "   l   ",
+                            " ll ll ",
+                            "   l   ",
+                            "   l   ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            "       ",
+                            "  lll  ",
+                            "  lll  ",
+                            "  lll  ",
+                            "       ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            "   l   ",
+                            "   l   ",
+                            " lllll ",
+                            "   l   ",
+                            "   l   ",
+                            "       "
+                        ],
+                        [
+                            "   l   ",
+                            "   l   ",
+                            "   e   ",
+                            "llshnll",
+                            "   w   ",
+                            "   l   ",
+                            "   l   "
+                        ],
+                        [
+                            "       ",
+                            "       ",
+                            "       ",
+                            "   3   ",
+                            "       ",
+                            "       ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            "       ",
+                            "       ",
+                            "   3   ",
+                            "       ",
+                            "       ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            "       ",
+                            "       ",
+                            "   2   ",
+                            "       ",
+                            "       ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            "       ",
+                            "       ",
+                            "   2   ",
+                            "       ",
+                            "       ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            "       ",
+                            "       ",
+                            "   2   ",
+                            "       ",
+                            "       ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            "       ",
+                            "       ",
+                            "   1   ",
+                            "       ",
+                            "       ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            "       ",
+                            "       ",
+                            "   0   ",
+                            "       ",
+                            "       ",
+                            "       "
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "tfg:palm_tree/trunk[size=0]",
+                        "1": "tfg:palm_tree/trunk[size=0]",
+                        "2": "tfg:palm_tree/trunk[size=1]",
+                        "3": "tfg:palm_tree/trunk[size=2]",
+                        "n": "tfg:palm_tree/acai_tree_cluster[age=0,facing=north]",
+                        "e": "tfg:palm_tree/acai_tree_cluster[age=0,facing=east]",
+                        "s": "tfg:palm_tree/acai_tree_cluster[age=0,facing=south]",
+                        "w": "tfg:palm_tree/acai_tree_cluster[age=0,facing=west]",
+                        "h": "tfg:palm_tree/acai_tree_head",
+                        "l": "tfg:palm_tree/acai_leaves"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "   l   ",
+                            "   l   ",
+                            "       ",
+                            "ll   ll",
+                            "       ",
+                            "   l   ",
+                            "   l   "
+                        ],
+                        [
+                            "       ",
+                            "   l   ",
+                            "   l   ",
+                            " ll ll ",
+                            "   l   ",
+                            "   l   ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            "       ",
+                            "  lll  ",
+                            "  lll  ",
+                            "  lll  ",
+                            "       ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            "   l   ",
+                            "   l   ",
+                            " lllll ",
+                            "   l   ",
+                            "   l   ",
+                            "       "
+                        ],
+                        [
+                            "   l   ",
+                            "   l   ",
+                            "   e   ",
+                            "llshnll",
+                            "   w   ",
+                            "   l   ",
+                            "   l   "
+                        ],
+                        [
+                            "       ",
+                            "       ",
+                            "       ",
+                            "   3   ",
+                            "       ",
+                            "       ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            "       ",
+                            "       ",
+                            "   3   ",
+                            "       ",
+                            "       ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            "       ",
+                            "       ",
+                            "   2   ",
+                            "       ",
+                            "       ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            "       ",
+                            "       ",
+                            "   2   ",
+                            "       ",
+                            "       ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            "       ",
+                            "       ",
+                            "   2   ",
+                            "       ",
+                            "       ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            "       ",
+                            "       ",
+                            "   1   ",
+                            "       ",
+                            "       ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            "       ",
+                            "       ",
+                            "   0   ",
+                            "       ",
+                            "       ",
+                            "       "
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "tfg:palm_tree/trunk[size=0]",
+                        "1": "tfg:palm_tree/trunk[size=0]",
+                        "2": "tfg:palm_tree/trunk[size=1]",
+                        "3": "tfg:palm_tree/trunk[size=2]",
+                        "n": "tfg:palm_tree/acai_tree_cluster[age=1,facing=north]",
+                        "e": "tfg:palm_tree/acai_tree_cluster[age=1,facing=east]",
+                        "s": "tfg:palm_tree/acai_tree_cluster[age=1,facing=south]",
+                        "w": "tfg:palm_tree/acai_tree_cluster[age=1,facing=west]",
+                        "h": "tfg:palm_tree/acai_tree_head",
+                        "l": "tfg:palm_tree/acai_leaves"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "   l   ",
+                            "   l   ",
+                            "       ",
+                            "ll   ll",
+                            "       ",
+                            "   l   ",
+                            "   l   "
+                        ],
+                        [
+                            "       ",
+                            "   l   ",
+                            "   l   ",
+                            " ll ll ",
+                            "   l   ",
+                            "   l   ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            "       ",
+                            "  lll  ",
+                            "  lll  ",
+                            "  lll  ",
+                            "       ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            "   l   ",
+                            "   l   ",
+                            " lllll ",
+                            "   l   ",
+                            "   l   ",
+                            "       "
+                        ],
+                        [
+                            "   l   ",
+                            "   l   ",
+                            "   e   ",
+                            "llshnll",
+                            "   w   ",
+                            "   l   ",
+                            "   l   "
+                        ],
+                        [
+                            "       ",
+                            "       ",
+                            "       ",
+                            "   3   ",
+                            "       ",
+                            "       ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            "       ",
+                            "       ",
+                            "   3   ",
+                            "       ",
+                            "       ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            "       ",
+                            "       ",
+                            "   2   ",
+                            "       ",
+                            "       ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            "       ",
+                            "       ",
+                            "   2   ",
+                            "       ",
+                            "       ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            "       ",
+                            "       ",
+                            "   2   ",
+                            "       ",
+                            "       ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            "       ",
+                            "       ",
+                            "   1   ",
+                            "       ",
+                            "       ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            "       ",
+                            "       ",
+                            "   0   ",
+                            "       ",
+                            "       ",
+                            "       "
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "tfg:palm_tree/trunk[size=0]",
+                        "1": "tfg:palm_tree/trunk[size=0]",
+                        "2": "tfg:palm_tree/trunk[size=1]",
+                        "3": "tfg:palm_tree/trunk[size=2]",
+                        "n": "tfg:palm_tree/acai_tree_cluster[age=2,facing=north]",
+                        "e": "tfg:palm_tree/acai_tree_cluster[age=2,facing=east]",
+                        "s": "tfg:palm_tree/acai_tree_cluster[age=2,facing=south]",
+                        "w": "tfg:palm_tree/acai_tree_cluster[age=2,facing=west]",
+                        "h": "tfg:palm_tree/acai_tree_head",
+                        "l": "tfg:palm_tree/acai_leaves"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "   l   ",
+                            "   l   ",
+                            "       ",
+                            "ll   ll",
+                            "       ",
+                            "   l   ",
+                            "   l   "
+                        ],
+                        [
+                            "       ",
+                            "   l   ",
+                            "   l   ",
+                            " ll ll ",
+                            "   l   ",
+                            "   l   ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            "       ",
+                            "  lll  ",
+                            "  lll  ",
+                            "  lll  ",
+                            "       ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            "   l   ",
+                            "   l   ",
+                            " lllll ",
+                            "   l   ",
+                            "   l   ",
+                            "       "
+                        ],
+                        [
+                            "   l   ",
+                            "   l   ",
+                            "   e   ",
+                            "llshnll",
+                            "   w   ",
+                            "   l   ",
+                            "   l   "
+                        ],
+                        [
+                            "       ",
+                            "       ",
+                            "       ",
+                            "   3   ",
+                            "       ",
+                            "       ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            "       ",
+                            "       ",
+                            "   3   ",
+                            "       ",
+                            "       ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            "       ",
+                            "       ",
+                            "   2   ",
+                            "       ",
+                            "       ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            "       ",
+                            "       ",
+                            "   2   ",
+                            "       ",
+                            "       ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            "       ",
+                            "       ",
+                            "   2   ",
+                            "       ",
+                            "       ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            "       ",
+                            "       ",
+                            "   1   ",
+                            "       ",
+                            "       ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            "       ",
+                            "       ",
+                            "   0   ",
+                            "       ",
+                            "       ",
+                            "       "
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "tfg:palm_tree/trunk[size=0]",
+                        "1": "tfg:palm_tree/trunk[size=0]",
+                        "2": "tfg:palm_tree/trunk[size=1]",
+                        "3": "tfg:palm_tree/trunk[size=2]",
+                        "n": "tfg:palm_tree/acai_tree_cluster[age=3,facing=north]",
+                        "e": "tfg:palm_tree/acai_tree_cluster[age=3,facing=east]",
+                        "s": "tfg:palm_tree/acai_tree_cluster[age=3,facing=south]",
+                        "w": "tfg:palm_tree/acai_tree_cluster[age=3,facing=west]",
+                        "h": "tfg:palm_tree/acai_tree_head",
+                        "l": "tfg:palm_tree/acai_leaves"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "   l   ",
+                            "   l   ",
+                            "       ",
+                            "ll   ll",
+                            "       ",
+                            "   l   ",
+                            "   l   "
+                        ],
+                        [
+                            "       ",
+                            "   l   ",
+                            "   l   ",
+                            " ll ll ",
+                            "   l   ",
+                            "   l   ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            "       ",
+                            "  lll  ",
+                            "  lll  ",
+                            "  lll  ",
+                            "       ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            "   l   ",
+                            "   l   ",
+                            " lllll ",
+                            "   l   ",
+                            "   l   ",
+                            "       "
+                        ],
+                        [
+                            "   l   ",
+                            "   l   ",
+                            "   e   ",
+                            "llshnll",
+                            "   w   ",
+                            "   l   ",
+                            "   l   "
+                        ],
+                        [
+                            "       ",
+                            "       ",
+                            "       ",
+                            "   3   ",
+                            "       ",
+                            "       ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            "       ",
+                            "       ",
+                            "   3   ",
+                            "       ",
+                            "       ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            "       ",
+                            "       ",
+                            "   2   ",
+                            "       ",
+                            "       ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            "       ",
+                            "       ",
+                            "   2   ",
+                            "       ",
+                            "       ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            "       ",
+                            "       ",
+                            "   2   ",
+                            "       ",
+                            "       ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            "       ",
+                            "       ",
+                            "   1   ",
+                            "       ",
+                            "       ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            "       ",
+                            "       ",
+                            "   0   ",
+                            "       ",
+                            "       ",
+                            "       "
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "tfg:palm_tree/trunk[size=0]",
+                        "1": "tfg:palm_tree/trunk[size=0]",
+                        "2": "tfg:palm_tree/trunk[size=1]",
+                        "3": "tfg:palm_tree/trunk[size=2]",
+                        "n": "tfg:palm_tree/acai_tree_cluster[age=4,facing=north]",
+                        "e": "tfg:palm_tree/acai_tree_cluster[age=4,facing=east]",
+                        "s": "tfg:palm_tree/acai_tree_cluster[age=4,facing=south]",
+                        "w": "tfg:palm_tree/acai_tree_cluster[age=4,facing=west]",
+                        "h": "tfg:palm_tree/acai_tree_head",
+                        "l": "tfg:palm_tree/acai_leaves"
+                    }
+                }
+            ]
         }
-      ]
-    },
-    {
-      "type": "tfc:table",
-      "strings": [
-        {
-          "text": ""
-        },
-        {
-          "text": "Jan"
-        },
-        {
-          "text": "Feb"
-        },
-        {
-          "text": "Mar"
-        },
-        {
-          "text": "Apr"
-        },
-        {
-          "text": "May"
-        },
-        {
-          "text": "Jun"
-        },
-        {
-          "text": "Jul"
-        },
-        {
-          "text": "Aug"
-        },
-        {
-          "text": "Sep"
-        },
-        {
-          "text": "Oct"
-        },
-        {
-          "text": "Nov"
-        },
-        {
-          "text": "Dec"
-        },
-        {
-          "text": "Lavacado"
-        },
-        {
-          "fill": "0x6ab553"
-        },
-        {
-          "fill": "0x6ab553"
-        },
-        {
-          "fill": "0x6ab553"
-        },
-        {
-          "fill": "0x6ab553"
-        },
-        {
-          "fill": "0xcca0db"
-        },
-        {
-          "fill": "0xcca0db"
-        },
-        {
-          "fill": "0xa217ff"
-        },
-        {
-          "fill": "0xa8986a"
-        },
-        {
-          "fill": "0xa8986a"
-        },
-        {
-          "fill": "0xa8986a"
-        },
-        {
-          "fill": "0xa8986a"
-        },
-        {
-          "fill": "0x6ab553"
-        },
-        {
-          "text": "Magmango"
-        },
-        {
-          "fill": "0x6ab553"
-        },
-        {
-          "fill": "0x6ab553"
-        },
-        {
-          "fill": "0xcca0db"
-        },
-        {
-          "fill": "0xcca0db"
-        },
-        {
-          "fill": "0xa217ff"
-        },
-        {
-          "fill": "0xa8986a"
-        },
-        {
-          "fill": "0xa8986a"
-        },
-        {
-          "fill": "0xa8986a"
-        },
-        {
-          "fill": "0xa8986a"
-        },
-        {
-          "fill": "0x6ab553"
-        },
-        {
-          "fill": "0x6ab553"
-        },
-        {
-          "fill": "0x6ab553"
-        }
-      ],
-      "text": "The fruiting calendar for fruit trees.",
-      "title": "Fruit Trees",
-      "legend": [
-        {
-          "text": "Dormant",
-          "color": "0xa8986a"
-        },
-        {
-          "text": "Healthy",
-          "color": "0x6ab553"
-        },
-        {
-          "text": "Flowering",
-          "color": "0xcca0db"
-        },
-        {
-          "text": "Fruiting",
-          "color": "0xa217ff"
-        }
-      ],
-      "columns": 12,
-      "first_column_width": 45,
-      "column_width": 15,
-      "row_height": 10,
-      "left_buffer": 5,
-      "top_buffer": 11,
-      "draw_background": true
-    },
-    {
-      "type": "patchouli:empty",
-      "draw_filler": false
+    ],
+    "read_by_default": true,
+    "sortnum": 3,
+    "extra_recipe_mappings": {
+        "tfg:food/lavacado": 5,
+        "tfg:fruit_trees/lavacado_sapling": 5,
+        "tfg:food/magmango": 7,
+        "tfg:fruit_trees/magmango_sapling": 7,
+        "tfg:food/oil_palm": 11,
+        "tfg:palm_tree/oil_palm_sapling": 11,
+        "tfg:food/acai": 13,
+        "tfg:palm_tree/acai_sapling": 13
     }
-  ],
-  "read_by_default": true,
-  "sortnum": 5,
-  "extra_recipe_mappings": {
-    "tfg:food/lavacado": 3,
-    "tfg:fruit_trees/lavacado_sapling": 3,
-    "tfg:food/magmango": 5,
-    "tfg:fruit_trees/magmango_sapling": 5
-  }
 }
