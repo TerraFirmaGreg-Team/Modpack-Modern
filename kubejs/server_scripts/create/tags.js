@@ -191,6 +191,13 @@ const registerCreateBlockTags = (event) => {
 	event.add('create:non_movable', 'tfg:carbonate_hornfels')
 	event.add('create:non_movable', 'tfg:pelitic_hornfels')
 	event.add('create:non_movable', 'tfg:mafic_hornfels')
+	event.add('create:non_movable', 'ad_astra:oxygen_distributor')
+	event.add('create:non_movable', 'ad_astra:gravity_normalizer')
+	event.add('create:non_movable', 'ad_astra:launch_pad')
+	event.add('create:non_movable', 'gtceu:hp_steam_miner')
+	event.add('create:non_movable', 'gtceu:lv_miner')
+	event.add('create:non_movable', 'gtceu:mv_miner')
+	event.add('create:non_movable', 'gtceu:hv_miner')
 
 	event.add('tfc:no_icicle_generation', 'create:chain_conveyor')
 
