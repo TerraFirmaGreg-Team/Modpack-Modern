@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "steampowered:block/flywheel/bronze_steam_engine_wheel",
-		"1_1": "steampowered:block/steam_engine/bronze_furnace_cylinder"
+		"0": "steampowered:block/flywheel/steel_steam_engine_wheel",
+		"1_1": "steampowered:block/steam_engine/steel_furnace_cylinder"
 	},
 	"elements": [
 		{

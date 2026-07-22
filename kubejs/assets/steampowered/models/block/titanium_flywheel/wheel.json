@@ -2,11 +2,11 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [32, 32],
 	"textures": {
-		"0": "steampowered:block/flywheel/steel_steam_engine_wheel",
-		"1": "greate:block/stainless_steel/axis",
-		"2": "greate:block/stainless_steel/axis_top",
-		"3": "steampowered:block/steam_engine/steel_linkage",
-		"particle": "steampowered:block/flywheel/steel_steam_engine_wheel"
+		"0": "steampowered:block/flywheel/titanium_steam_engine_wheel",
+		"1": "greate:block/titanium/axis",
+		"2": "greate:block/titanium/axis_top",
+		"3": "steampowered:block/steam_engine/titanium_linkage",
+		"particle": "steampowered:block/flywheel/titanium_steam_engine_wheel"
 	},
 	"elements": [
 		{

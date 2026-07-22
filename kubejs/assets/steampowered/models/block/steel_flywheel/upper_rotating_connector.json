@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"1": "steampowered:block/steam_engine/steel_linkage",
-		"particle": "steampowered:block/flywheel/bronze_steam_engine_wheel"
+		"particle": "steampowered:block/flywheel/steel_steam_engine_wheel"
 	},
 	"elements": [
 		{
