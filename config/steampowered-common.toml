@@ -42,7 +42,7 @@
 		#Range: 0 ~ 8192
 		bronzeFlywheelSpeed = 32
 		#Range: 0 ~ 8192
-		bronzeFlywheelSteamConsumptionPerTick = 32
+		bronzeFlywheelSteamConsumptionPerTick = 16
 		#Range: 0 ~ 1048576
 		bronzeFlywheelSteamStorage = 32000
 		#Range: 0.0 ~ 1.0
@@ -54,7 +54,7 @@
 		#Range: 0 ~ 8192
 		castIronFlywheelSpeed = 32
 		#Range: 0 ~ 8192
-		castIronFlywheelSteamConsumptionPerTick = 128
+		castIronFlywheelSteamConsumptionPerTick = 64
 		#Range: 0 ~ 1048576
 		castIronFlywheelSteamStorage = 64000
 		#Range: 0.0 ~ 1.0
@@ -66,7 +66,7 @@
 		#Range: 0 ~ 8192
 		steelFlywheelSpeed = 32
 		#Range: 0 ~ 1048576
-		steelFlywheelSteamConsumptionPerTick = 512
+		steelFlywheelSteamConsumptionPerTick = 256
 		#Range: 0 ~ 1048576
 		steelFlywheelSteamStorage = 96000
 		#Range: 0.0 ~ 1.0
