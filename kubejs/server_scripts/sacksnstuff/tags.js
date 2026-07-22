@@ -40,6 +40,8 @@ function registerSNSItemTags(event) {
 	event.add('sns:prevented_in_frame_pack','sophisticatedbackpacks:gold_backpack')
 	event.add('sns:prevented_in_frame_pack','sophisticatedbackpacks:diamond_backpack')
 	event.add('sns:prevented_in_frame_pack','sophisticatedbackpacks:netherite_backpack')
+
+	event.add('sns:prevented_in_frame_pack','#forge:repair_kit_materials')
 	
 	event.remove('sns:prevented_in_straw_basket', '#tfc:ore_pieces')
 	event.remove('sns:prevented_in_burlap_sack', '#tfc:ore_pieces')
