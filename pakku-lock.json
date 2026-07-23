@@ -4816,6 +4816,49 @@
             ]
         },
         {
+            "pakku_id": "QHFY2vXmee4HGXW8",
+            "pakku_links": [
+                "Nw8xTCQngHA15ilh"
+            ],
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "modrinth": "create-steam-powered"
+            },
+            "name": {
+                "modrinth": "Create: Steam Powered"
+            },
+            "id": {
+                "modrinth": "J7eSzkL7"
+            },
+            "files": [
+                {
+                    "type": "modrinth",
+                    "file_name": "steampowered-1.20.1-3.1.0.jar",
+                    "mc_versions": [
+                        "1.20",
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/J7eSzkL7/versions/JjQ6e6M5/steampowered-1.20.1-3.1.0.jar",
+                    "id": "JjQ6e6M5",
+                    "parent_id": "J7eSzkL7",
+                    "hashes": {
+                        "sha512": "95be9567ba738442c6c9bcc519bfcdd7b568cf9b2746cd99615bb9206e80a1c45c53b8ee8c8b8897860d3a9f3519c0b1ba6542e9fd632d4698d97d8dbec32e82",
+                        "sha1": "5bab2cc52204eb1773d31675cb015c00224b923b"
+                    },
+                    "required_dependencies": [
+                        "LNytGWDc"
+                    ],
+                    "size": 311122,
+                    "date_published": "2025-03-29T19:48:54.856591Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "akHy85nANe33zAFR",
             "type": "MOD",
             "side": "BOTH",
@@ -11384,6 +11427,39 @@
                     "required_dependencies": [],
                     "size": 37178,
                     "date_published": "2024-02-15T10:46:09.435735Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "lVUKSWXoUNMWdo6W",
+            "type": "RESOURCE_PACK",
+            "slug": {
+                "curseforge": "modern-create-steam-powered"
+            },
+            "name": {
+                "curseforge": "Modern Create: Steam Powered"
+            },
+            "id": {
+                "curseforge": "1168737"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "modern_steam_powered_1_20_1.zip",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6037/968/modern_steam_powered_1_20_1.zip",
+                    "id": "6037968",
+                    "parent_id": "1168737",
+                    "hashes": {
+                        "sha1": "d3d0c34f1ed31f5556a56afb6225df9ae59cbeaa",
+                        "md5": "5491b485a19ed674aa6515ce83172e0a"
+                    },
+                    "required_dependencies": [],
+                    "size": 57417,
+                    "date_published": "2024-12-30T23:13:50.960Z"
                 }
             ]
         },
