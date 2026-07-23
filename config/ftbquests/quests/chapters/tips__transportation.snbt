@@ -433,28 +433,112 @@
 			y: -3.5d
 		}
 		{
+			alpha: 100
 			height: 3.0d
 			image: "minecraft:block/rail"
 			rotation: 0.0d
 			width: 3.0d
 			x: 6.5d
-			y: 10.5d
+			y: 9.0d
 		}
 		{
+			alpha: 100
 			height: 3.0d
-			image: "minecraft:block/rail"
-			rotation: 0.0d
+			image: "minecraft:block/rail_corner"
+			rotation: -90.0d
 			width: 3.0d
 			x: 6.5d
-			y: 12.5d
+			y: 21.5d
 		}
 		{
+			alpha: 100
+			height: 3.0d
+			image: "minecraft:block/rail_corner"
+			rotation: -90.0d
+			width: 3.0d
+			x: 9.0d
+			y: 19.0d
+		}
+		{
+			alpha: 100
+			height: 3.0d
+			image: "minecraft:block/rail"
+			rotation: 90.0d
+			width: 3.0d
+			x: 9.0d
+			y: 21.5d
+		}
+		{
+			alpha: 100
 			height: 3.0d
 			image: "minecraft:block/rail"
 			rotation: 0.0d
 			width: 3.0d
 			x: 6.5d
-			y: 8.5d
+			y: 11.5d
+		}
+		{
+			alpha: 100
+			height: 3.0d
+			image: "minecraft:block/rail"
+			rotation: 0.0d
+			width: 3.0d
+			x: 6.5d
+			y: 14.0d
+		}
+		{
+			alpha: 100
+			height: 3.0d
+			image: "minecraft:block/rail"
+			rotation: 0.0d
+			width: 3.0d
+			x: 6.5d
+			y: 16.5d
+		}
+		{
+			alpha: 100
+			height: 3.0d
+			image: "minecraft:block/rail"
+			rotation: 0.0d
+			width: 3.0d
+			x: 6.5d
+			y: 19.0d
+		}
+		{
+			alpha: 100
+			height: 3.0d
+			image: "minecraft:block/rail"
+			rotation: 0.0d
+			width: 3.0d
+			x: 9.0d
+			y: 16.5d
+		}
+		{
+			alpha: 100
+			height: 3.0d
+			image: "minecraft:block/rail"
+			rotation: 90.0d
+			width: 3.0d
+			x: 11.5d
+			y: 21.5d
+		}
+		{
+			alpha: 100
+			height: 3.0d
+			image: "minecraft:block/rail"
+			rotation: 90.0d
+			width: 3.0d
+			x: 11.5d
+			y: 19.0d
+		}
+		{
+			alpha: 100
+			height: 3.0d
+			image: "minecraft:block/rail"
+			rotation: 90.0d
+			width: 3.0d
+			x: 14.0d
+			y: 19.0d
 		}
 	]
 	order_index: 1
@@ -1573,14 +1657,15 @@
 		{
 			dependencies: ["60497014785301EB"]
 			dependency_requirement: "one_completed"
-			description: ["&2Create: Steam 'n' Rails&r is a powerfull mod that allows you to build your own trains, these can be handy to travel across the waistland or between your points of intrest"]
+			description: ["&2Create: Steam 'n' Rails&r is a powerfull mod that allows you to build your own &5Trains&r, these can be handy to travel across the waistlands or help you transport enormus amounts of materials"]
 			icon: "railways:white_conductor_cap"
 			id: "24F55AFE2EC875F2"
 			shape: "octagon"
 			size: 2.0d
-			subtitle: "Stay On Track"
+			subtitle: "Stay on track"
 			tasks: [{
 				id: "0175333225F43F08"
+				title: "{quests.tasktype.checkmark}"
 				type: "checkmark"
 			}]
 			title: "Create: Steam 'n' Rails"
@@ -1590,12 +1675,12 @@
 		{
 			dependencies: ["24F55AFE2EC875F2"]
 			description: [
-				"Tracks are essential for your trains, laying paths to diffrent locations will allow you to relocate your trains."
+				"&dTracks&r are essential for your &5Trains&r, laying paths to diffrent locations will allow you to relocate your trains."
 				""
 				"&3&lTip:&r&r Placing a track and right-clicking it with tracks in your hand, allows you to place tracks quickly and create curved shapes."
 			]
 			id: "50AE05306D3F6F0D"
-			subtitle: "Laying Paths"
+			subtitle: "A sturdy foundation"
 			tasks: [{
 				count: 32L
 				id: "0CA3970908FE6ACF"
@@ -1609,15 +1694,16 @@
 				title: "Any #create:tracks"
 				type: "item"
 			}]
-			title: "Sturdy Foundation"
+			title: "Train Tracks"
 			x: 6.5d
 			y: 11.5d
 		}
 		{
 			dependencies: ["50AE05306D3F6F0D"]
+			description: ["By right-clicking a Train Station on the tracks and placing it next to the tracks you can start constructiong your trains!"]
 			id: "65194B2DC42B3E07"
 			size: 2.0d
-			subtitle: "Steam Ahead"
+			subtitle: "Steam ahead!"
 			tasks: [
 				{
 					id: "5369E6FB96F52926"
@@ -1638,6 +1724,232 @@
 			title: "Your First Train"
 			x: 6.5d
 			y: 14.0d
+		}
+		{
+			dependencies: ["65194B2DC42B3E07"]
+			icon: "createdeco:decal_warning"
+			id: "13C368BE21161068"
+			shape: "diamond"
+			subtitle: "A little bit or realism"
+			tasks: [{
+				id: "2C7B422B2A1DFD50"
+				title: "{quests.tasktype.checkmark}"
+				type: "checkmark"
+			}]
+			title: "Train Limitaions"
+			x: 9.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["42E33D1E45BFE93B"]
+			id: "630446139085B8A1"
+			subtitle: "No more derailing"
+			tasks: [{
+				id: "436178FDB6972602"
+				item: "railways:buffer"
+				type: "item"
+			}]
+			title: "Hard Stop"
+			x: 11.5d
+			y: 21.5d
+		}
+		{
+			dependencies: ["65194B2DC42B3E07"]
+			icon: "railways:black_conductor_cap"
+			id: "1AD2A065051AD671"
+			subtitle: "Your own cute employees"
+			tasks: [
+				{
+					id: "11B40FB9E0778937"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(railways:conductor_caps)"
+						}
+					}
+					title: "Any #railways:conductor_caps"
+					type: "item"
+				}
+				{
+					id: "2F35E1683AB9493B"
+					item: "create:andesite_casing"
+					type: "item"
+				}
+				{
+					id: "3A09CD82FE32BA39"
+					item: "create:schedule"
+					type: "item"
+				}
+				{
+					id: "55A73ED2D9AB08EE"
+					item: "minecraft:lead"
+					type: "item"
+				}
+			]
+			title: "Train Personel"
+			x: 9.0d
+			y: 16.5d
+		}
+		{
+			dependencies: ["6D7248BFB6FFFCE9"]
+			icon: "railways:semaphore"
+			id: "4868CD0A3946C201"
+			subtitle: "Redusing casualties"
+			tasks: [
+				{
+					id: "3A7A68E9092E56FA"
+					item: "create:track_signal"
+					type: "item"
+				}
+				{
+					id: "7B28C5B637C8860B"
+					item: "railways:semaphore"
+					type: "item"
+				}
+			]
+			title: "Colision Prevention"
+			x: 6.5d
+			y: 19.0d
+		}
+		{
+			dependencies: ["65194B2DC42B3E07"]
+			id: "39EFFFDC11B3CD64"
+			subtitle: "Air polution"
+			tasks: [{
+				id: "0E4C3A126793D5A5"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfg:smokestacks)"
+					}
+				}
+				title: "Any #tfg:smokestacks"
+				type: "item"
+			}]
+			title: "Smoke Stacks"
+			x: 4.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["65194B2DC42B3E07"]
+			id: "2BC0719E8FF1613A"
+			subtitle: "A serious workout"
+			tasks: [{
+				id: "3A7AB8A34963ACE3"
+				item: "railways:handcar"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 15.5d
+		}
+		{
+			dependencies: ["65194B2DC42B3E07"]
+			id: "0B79E10AB35FDB82"
+			subtitle: "A comfortable ride"
+			tasks: [{
+				id: "0E26552E6336BB32"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(create:seats)"
+					}
+				}
+				title: "Any #create:seats"
+				type: "item"
+			}]
+			title: "Seats"
+			x: 3.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["1AD2A065051AD671"]
+			id: "624DBB15C2B3C8E3"
+			subtitle: "Transport at its finest"
+			tasks: [
+				{
+					id: "0293AB0A5313B936"
+					item: "create:portable_fluid_interface"
+					type: "item"
+				}
+				{
+					id: "1F6DACC813B96525"
+					item: "create:portable_storage_interface"
+					type: "item"
+				}
+				{
+					id: "35865115B239482E"
+					item: "createaddition:portable_energy_interface"
+					type: "item"
+				}
+				{
+					id: "73D0FE82D3588DB1"
+					item: "create:fluid_tank"
+					type: "item"
+				}
+				{
+					id: "4518F01795121E7B"
+					item: "create:item_vault"
+					type: "item"
+				}
+				{
+					id: "40D1488EF043610A"
+					item: "railways:fuel_tank"
+					type: "item"
+				}
+			]
+			title: "Train Cargo"
+			x: 11.5d
+			y: 19.0d
+		}
+		{
+			dependencies: ["65194B2DC42B3E07"]
+			dependency_requirement: "one_completed"
+			id: "6D7248BFB6FFFCE9"
+			subtitle: "Parting ways"
+			tasks: [
+				{
+					id: "5660F88D800B2086"
+					item: "railways:track_switch_andesite"
+					type: "item"
+				}
+				{
+					id: "5C094B6F7FA80333"
+					item: "railways:track_switch_brass"
+					type: "item"
+				}
+			]
+			title: "Switching Tracks"
+			x: 6.5d
+			y: 16.5d
+		}
+		{
+			dependencies: ["4868CD0A3946C201"]
+			id: "42E33D1E45BFE93B"
+			subtitle: "Train management"
+			tasks: [{
+				id: "5DE55F0DCA4214C1"
+				item: "railways:track_coupler"
+				type: "item"
+			}]
+			title: "Splitting Couples"
+			x: 9.0d
+			y: 21.5d
+		}
+		{
+			dependencies: ["624DBB15C2B3C8E3"]
+			id: "69F5BB121E93A5A5"
+			subtitle: "Compleat automation"
+			tasks: [{
+				id: "0DEE5A0E718DDC29"
+				item: "create:track_observer"
+				type: "item"
+			}]
+			title: "Detecting Cargo"
+			x: 14.0d
+			y: 19.0d
 		}
 	]
 	subtitle: ["{quests.tfg_tips.transportation_tips.subtitle}"]
