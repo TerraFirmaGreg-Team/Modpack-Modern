@@ -1,0 +1,15 @@
+{
+	"type": "lithostitched:set_structure_spawn_condition",
+	"structures": [
+		"tfg:mineshaft/mineshaft"
+	],
+	"spawn_condition": {
+		"type": "lithostitched:height_filter",
+		"range_type": "absolute",
+		"heightmap": "WORLD_SURFACE_WG",
+		"permitted_range": {
+			"min_inclusive": 63,
+			"max_inclusive": 140
+		}
+	}
+}

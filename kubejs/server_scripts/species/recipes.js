@@ -168,12 +168,12 @@ function registerSpeciesRecipes(event) {
 
 	event.recipes.gtceu.macerator('tfg:werefang')
 		.itemInputs("species:werefang")
-		.itemOutputs("minecraft:bone_meal")
+		.itemOutputs("3x minecraft:bone_meal")
 		.duration(50)
 		.EUt(2)
 		.category(GTRecipeCategories.MACERATOR_RECYCLING);
 
-	event.recipes.tfc.quern("minecraft:bone_meal", "species:werefang")
+	event.recipes.tfc.quern("3x minecraft:bone_meal", "species:werefang")
 		.id("tfg:quern/werefang")
 
 	event.recipes.gtceu.macerator('tfg:bone_spike')

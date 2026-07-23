@@ -612,9 +612,6 @@ function processGems(event, material) {
 			.id(`greate:pressing/unpacking_${materialName}_block`)
 	}
 
-	event.recipes.tfc.quern(ChemicalHelper.get(TagPrefix.dust, material, 1), gemItem)
-		.id(`tfg:quern/${materialName}_gem_to_dust`)
-
 	// Melting
 	const tfcProperty = material.getProperty(TFGPropertyKey.TFC_PROPERTY);
 	if (tfcProperty !== null) {

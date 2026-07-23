@@ -491,7 +491,8 @@ const registerMinecraftRecipes = (event) => {
 		.itemOutputs('minecraft:cauldron')
 		.duration(700)
 		.EUt(4)
-		.addMaterialInfo(true)
+
+	TFGHelpers.registerMaterialInfo('minecraft:cauldron', [GTMaterials.Iron, 5]);
 
 	//#endregion
 

@@ -320,7 +320,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{\"tfc:forging_bonus\":4, \"HideFlags\":1, \"Enchantments\": [{\"id\":\"minecraft:infinity\",\"lvl\":\"1s\"}]}"
+							"tag": "{\"tfc:forging_bonus\":4}"
 						}
 					]
 				},
@@ -331,7 +331,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{\"tfc:forging_bonus\":4, \"HideFlags\":1, \"Enchantments\": [{\"id\":\"minecraft:infinity\",\"lvl\":\"1s\"}]}"
+							"tag": "{\"tfc:forging_bonus\":4}"
 						}
 					]
 				},
@@ -342,7 +342,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{\"tfc:forging_bonus\":4, \"HideFlags\":1, \"Enchantments\": [{\"id\":\"minecraft:infinity\",\"lvl\":\"1s\"}]}"
+							"tag": "{\"tfc:forging_bonus\":4}"
 						}
 					]
 				},
@@ -353,7 +353,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{\"tfc:forging_bonus\":4, \"HideFlags\":1, \"Enchantments\": [{\"id\":\"minecraft:infinity\",\"lvl\":\"1s\"}]}"
+							"tag": "{\"tfc:forging_bonus\":4}"
 						}
 					]
 				},
@@ -364,7 +364,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{\"tfc:forging_bonus\":4, \"GT.Behaviours\":{\"MaxAoEColumn\":1, \"MaxAoERow\":1}, \"HideFlags\":1, \"Enchantments\": [{\"id\":\"minecraft:infinity\",\"lvl\":\"1s\"}]}"
+							"tag": "{\"tfc:forging_bonus\":4, \"GT.Behaviours\":{\"MaxAoEColumn\":1, \"MaxAoERow\":1}}"
 						}
 					]
 				},
@@ -375,7 +375,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{\"tfc:forging_bonus\":4, \"HideFlags\":1, \"Enchantments\": [{\"id\":\"minecraft:infinity\",\"lvl\":\"1s\"}]}"
+							"tag": "{\"tfc:forging_bonus\":4}"
 						}
 					]
 				},
@@ -386,7 +386,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{\"tfc:forging_bonus\":4, \"GT.Behaviours\":{\"MaxAoEColumn\":1, \"MaxAoERow\":1}, \"HideFlags\":1, \"Enchantments\": [{\"id\":\"minecraft:infinity\",\"lvl\":\"1s\"}]}"
+							"tag": "{\"tfc:forging_bonus\":4, \"GT.Behaviours\":{\"MaxAoEColumn\":1, \"MaxAoERow\":1}}"
 						}
 					]
 				},
@@ -397,7 +397,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{\"tfc:forging_bonus\":4, \"GT.Behaviours\":{\"MaxAoEColumn\":5, \"MaxAoERow\":5, \"MaxAoELayer\":3}, \"HideFlags\":1, \"Enchantments\": [{\"id\":\"minecraft:infinity\",\"lvl\":\"1s\"}]}"
+							"tag": "{\"tfc:forging_bonus\":4, \"GT.Behaviours\":{\"MaxAoEColumn\":3, \"MaxAoERow\":3, \"MaxAoELayer\":3}}"
 						}
 					]
 				},
@@ -408,7 +408,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{\"tfc:forging_bonus\":4, \"HideFlags\":1, \"Enchantments\": [{\"id\":\"minecraft:infinity\",\"lvl\":\"1s\"}]}"
+							"tag": "{\"tfc:forging_bonus\":4}"
 						}
 					]
 				},
@@ -419,7 +419,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{\"tfc:forging_bonus\":4, \"GT.Behaviours\":{\"Mode\":2}, \"HideFlags\":1, \"Enchantments\": [{\"id\":\"minecraft:infinity\",\"lvl\":\"1s\"}]}"
+							"tag": "{\"tfc:forging_bonus\":4, \"GT.Behaviours\":{\"Mode\":2}}"
 						}
 					]
 				},
@@ -430,7 +430,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{\"tfc:forging_bonus\": 4, \"HideFlags\":1, \"Enchantments\": [{\"id\":\"minecraft:infinity\",\"lvl\":\"1s\"}]}"
+							"tag": "{\"tfc:forging_bonus\": 4}"
 						}
 					]
 				},
@@ -441,7 +441,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{\"tfc:forging_bonus\": 4, \"HideFlags\":1, \"Enchantments\": [{\"id\":\"minecraft:infinity\",\"lvl\":\"1s\"}]}"
+							"tag": "{\"tfc:forging_bonus\": 4}"
 						}
 					]
 				},
@@ -452,7 +452,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{\"tfc:forging_bonus\": 4, \"HideFlags\":1, \"Enchantments\": [{\"id\":\"minecraft:infinity\",\"lvl\":\"1s\"}]}"
+							"tag": "{\"tfc:forging_bonus\": 4}"
 						}
 					]
 				},
@@ -463,7 +463,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{\"tfc:forging_bonus\": 4, \"HideFlags\":1, \"Enchantments\": [{\"id\":\"minecraft:infinity\",\"lvl\":\"1s\"}]}"
+							"tag": "{\"tfc:forging_bonus\": 4}"
 						}
 					]
 				},
@@ -474,7 +474,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{\"tfc:forging_bonus\": 4, \"HideFlags\":1, \"Enchantments\": [{\"id\":\"minecraft:infinity\",\"lvl\":\"1s\"}]}"
+							"tag": "{\"tfc:forging_bonus\": 4}"
 						}
 					]
 				},
@@ -485,7 +485,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{\"tfc:forging_bonus\": 4, \"GT.Behaviours\":{\"HarvestIce\":1}, \"HideFlags\":1, \"Enchantments\": [{\"id\":\"minecraft:infinity\",\"lvl\":\"1s\"}]}"
+							"tag": "{\"tfc:forging_bonus\": 4, \"GT.Behaviours\":{\"HarvestIce\":1}}"
 						}
 					]
 				},
@@ -496,7 +496,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{\"tfc:forging_bonus\": 4, \"GT.Behaviours\":{\"DisableShields\":1, \"TreeFelling\":1}, \"HideFlags\":1, \"Enchantments\": [{\"id\":\"minecraft:infinity\",\"lvl\":\"1s\"}]}"
+							"tag": "{\"tfc:forging_bonus\": 4, \"GT.Behaviours\":{\"DisableShields\":1, \"TreeFelling\":1}}"
 						}
 					]
 				}

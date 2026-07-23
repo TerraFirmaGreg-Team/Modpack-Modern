@@ -709,7 +709,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"name": "tfg:slime/slime_ball/plant",
+					"name": "jellies:jellie/slime_ball/plant",
 					"weight": 100,
 					"functions": [
 						{
@@ -725,7 +725,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"name": "tfg:slime/slime_ball/glowberry",
+					"name": "jellies:jellie/slime_ball/glowberry",
 					"weight": 100,
 					"functions": [
 						{

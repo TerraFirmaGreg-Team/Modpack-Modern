@@ -30,6 +30,7 @@ ServerEvents.tags('item', event => {
 	registerFTBQuestsItemTags(event)
 	registerGreateItemTags(event)
 	registerGTCEUItemTags(event)
+	registerJelliesItemTags(event)
 	registerMacawsForTFCItemTags(event)
 	registerMinecraftItemTags(event)
 	registerModernMarkingsItemTags(event)
@@ -117,6 +118,7 @@ ServerEvents.tags('worldgen/placed_feature', event => {
 
 ServerEvents.tags('worldgen/biome', event => {
 	registerAdAstraBiomeTags(event)
+	registerCosyCrittersBiomeTags(event)
 	registerCreatePickyWheelsBiomeTags(event)
 	registerTFGBiomeTags(event)
 	registerRealmRpgBiomeTags(event)
@@ -253,6 +255,7 @@ ServerEvents.recipes(event => {
 	registerHandGliderRecipes(event)
 	registerHotOrNotRecipes(event)
 	registerImmersiveAircraftRecipes(event)
+	registerJelliesRecipes(event)
 	registerMacawsForTFCRecipes(event)
 	registerMeasurementsRecipes(event)
 	registerMegaCellsRecipes(event)
