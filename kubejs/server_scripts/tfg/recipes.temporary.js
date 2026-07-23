@@ -20,17 +20,11 @@ function registerTFGTemporaryRecipes(event) {
 		GTMaterials.Gold,
 		GTMaterials.Iron,
 		GTMaterials.Cobalt,
-		GTMaterials.RoseGold,
 		GTMaterials.Aluminium,
 		GTMaterials.Invar,
-		GTMaterials.Lead,
-		GTMaterials.Nickel,
-		GTMaterials.Osmium,
 		GTMaterials.Palladium,
-		GTMaterials.Platinum,
 		GTMaterials.Rhodium,
 		GTMaterials.Silver,
-		GTMaterials.Vanadium,
 		GTMaterials.Zinc,
 		TFGHelpers.getMaterial('ostrum')
 	]

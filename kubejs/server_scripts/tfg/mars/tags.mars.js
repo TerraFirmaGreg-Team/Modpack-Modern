@@ -341,7 +341,7 @@ function registerTFGMarsPlacedFeatures(event) {
 	event.add('tfg:mars_underground_decoration', "tfg:earth/geode/gypsum")
 	event.add('tfg:mars_underground_decoration', "tfg:earth/geode/opal")
 	event.add('tfg:mars_underground_decoration', "tfg:earth/geode/pyrite")
-	event.add('tfg:mars_underground_decoration', "tfg:earth/geode/quartzite")
+	event.add('tfg:mars_underground_decoration', "tfg:earth/geode/red_garnet")
 
 	// Vegetation
 	event.add("tfg:mars_global_small_plants", "tfg:mars/tree/lucernia")

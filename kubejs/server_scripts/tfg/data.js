@@ -204,7 +204,10 @@ function registerTFGItemSize(event) {
 	event.itemSize("gtceu:huge_duct_pipe", "normal", "medium", "huge_duct_pipe");
 
 	// Nuclear Rod
-	event.itemSize(Ingredient.of("#tfg:fission_rods"), "very_large", "heavy");
+	event.itemSize(Ingredient.of("#tfg:fission_rods"), "very_large", "very_heavy");
+
+	// Repair Kit
+	event.itemSize(Ingredient.of("#forge:repair_kit_materials"), "small", "medium");
 
 	// Cables
 	event.itemSize(Ingredient.of("#forge:single_cables").or("#forge:single_wires"), "tiny", "very_light", "cables_1x");

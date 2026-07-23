@@ -1,16 +1,57 @@
 # Changelog
 
 ## Unreleased
-
 ### Breaking Changes
 - Remove two steps in the Uvarovite-Chromium line so it's more appropriate to MV difficulty (all the recipes and materials will be removed later) @TomPlop
-- The Gas Well won't void Natural Gas if the Hatch is full but will keep consumming Explosives and Water or Steam @TomPlop
+- The Gas Well will no longer void Natural Gas if the output hatch is full, but will keep consuming Explosives and Water/Steam @TomPlop
 ### Changes
-- Buff the temporary Naquadah Ore recipe for players that wish to continue progression post TFG @TomPlop
-- The Geological Vulcanizer can now parallel recipes if you OC it @TomPlop
-- Add more GUI indication the Gas Well @TomPlop
-- Add a new recipe for Calcium Carbonate by reacting calcium hydroxide with carbon dioxide @MajorMoth
+- Repair Kits can now only stacks up to 16 and don't fit in a Framepack @TomPlop
+#### Foods
+- Standardized cooling/warming effects a bit to use the new food trait (#4516) @Redeix
+- Added the Sugary trait to jam and some desserts (#4516) @Redeix
+- Warming/Cooling effects now provide a static change to temperature when active (like armor), instead of continuously applying temperature changes until a target temperature is reached @Redeix
+- Honeyed apples no longer have a longer shelf life than regular apples, but can be used for fruit crafts and cryodessication. This means they pass their Sugary trait to any food crafted with them. (#4540) @Froffy025
+- Added a mixing bowl recipe for chocolate ice cream (#4516) @Redeix
+- Removed golden apples (#4516) @Redeix
+- Fixed not being able to heat up chorus fruit or popped chorus fruit the TFC way @Redeix
+#### GregTech
+- Buffed the temporary Naquadah Ore recipe for players that wish to continue progression past EV @TomPlop
+- The Geologic Vulcanizer can now parallel recipes if you overclock it @TomPlop
+- The Geologic Vulcanizer now has a new sound effect (#4556) @SpaceHarvester
+- Add more GUI information to the Gas Well @TomPlop
+- Add a new recipe for Calcium Carbonate by reacting calcium hydroxide with carbon dioxide (#4536) @MajorMoth
+#### Other changes
+- Migrated tameable slimes to their own mod, and renamed them to Jellies (any existing entities in your world should switch over automatically) (#4546) @SakuraKitsurugi
+- Piglin bartering now returns flawless gems instead of regular, so MV progression isn't blocked @Pyritie
+- Fruit trees now fall over like wood trees, so you don't have to worry about cutting the branches any more @Redeix
+- Increased the temperature of Peat a little so now it can boil water @Redeix
+- Added Peat Briquettes, which can be used in a charcoal forge to keep things at a low temperature, or bellowed to bring your items just below Bronze's melting point, making them ideal for working with early metals. They can also be used as boiler fuel (#4562) @applenper
+- Updated and fixed the recipes for the optional Sound of Steam mod (#4537) @Excavon
+- Gems can now be stored in the Ore Sack @Redeix
+- Garnet geodes now only contain red garnet instead of both red and yellow @Pyritie
+- Looted swine-steel tools no longer have their enchantment glint, for consistency with swine-steel tools dropped by piglin brutes @Pyritie
+- Added quern recipes for grinding ingots into dust @Pyritie
+- Air distributors, gravity normalizers, and single-block miners can no longer be glued to create contraptions due to exploits (#4530) @Pyritie
+- TFC Textile clothes can now have armor trims applied (#4461) @Pyritie
 ### Bug fixes
+- The disabled Fluid and Item Pipes are not craftable anymore @TomPlop
+- The Final Moments effect now only kills on natural effect completion instead of on refreshes or clears, and also maybe fixed it sometimes not leaving a corpse @Redeix
+- Fixed tree felling not draining chaninsaws' energy instead of durability (#3293) @Black0305
+- Fixed an issue with the rocket lander sometimes leaving you frozen at a high Y level until relogging, or sometimes landing you at the wrong position (#3054) @Black0305
+- Fixed fruit tree and palm tree tooltips showing the current temperature instead of average, so they will correctly tell you when the growing tree is about to die @Redeix
+- Fixed several issues where GT machines would craft unobtainable vanilla items (#4370) @evanbones
+- Fixed mineshafts sometimes spawning on the tops of mountains, making the rest of the underground structure stick out of the sides @Pyritie
+- Fixed ghost peppers in a firmalife greenhouse only returning seeds when mature @Pyritie
+- Fixed moths not spawning around light sources in the overworld @Pyritie
+- Fixed boron carbide and molybdenum-50-diamond-tipped tool head recycling (#4551) @Pyritie
+- Fixed beech trees not felling, and changed their shape (#4568) @Filiipa
+- Fixed not being able to craft vanilla basalt columns @Pyritie
+- Fixed the syngas + coal advanced boiler recipe using vanilla coal instead of TFC (#4552) @Pyritie
+- Fixed inconsistent coal block to coke block recipes in the pyro oven (#4542) @Pyritie
+- Fixed mobs spawning on GT concrete (#4477) @Pyritie
+- Fixed struts/trusses not having any mining tool assigned (#4468) @SakuraKitsurugi
+### Shaders
+- The TFG shaders should now work on MacOS!
 
 ## [0.13.4] - 12-07-2026
 
