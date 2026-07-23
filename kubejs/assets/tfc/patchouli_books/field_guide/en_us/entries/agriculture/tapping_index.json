@@ -9,7 +9,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(l:arborfirmacraft/tapping_index#maple)$(li)Maple$()$(l:arborfirmacraft/tapping_index#birch)$(li)Birch$()$(l:arborfirmacraft/tapping_index#hevea)$(li)Hevea$()$(l:arborfirmacraft/tapping_index#rubber_fig)$(li)Rubber Fig$()$(l:arborfirmacraft/tapping_index#kapok)$(li)Kapok$()$(l:arborfirmacraft/tapping_index#aspen)$(li)Aspen$()$(l:arborfirmacraft/tapping_index#spruce)$(li)Spruce$()$(l:arborfirmacraft/tapping_index#white_cedar)$(li)White Cedar$()$(l:arborfirmacraft/tapping_index#douglas_fir)$(li)Douglas Fir$()"
+			"text": "$(l:agriculture/tapping_index#maple)$(li)Maple$()$(l:agriculture/tapping_index#birch)$(li)Birch$()$(l:agriculture/tapping_index#hevea)$(li)Hevea$()$(l:agriculture/tapping_index#rubber_fig)$(li)Rubber Fig$()$(l:agriculture/tapping_index#kapok)$(li)Kapok$()$(l:agriculture/tapping_index#aspen)$(li)Aspen$()$(l:agriculture/tapping_index#spruce)$(li)Spruce$()$(l:agriculture/tapping_index#white_cedar)$(li)White Cedar$()$(l:agriculture/tapping_index#douglas_fir)$(li)Douglas Fir$()"
 		},
 		{
 			"type": "patchouli:spotlight",
