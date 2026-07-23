@@ -432,6 +432,30 @@
 			x: 4.5d
 			y: -3.5d
 		}
+		{
+			height: 3.0d
+			image: "minecraft:block/rail"
+			rotation: 0.0d
+			width: 3.0d
+			x: 6.5d
+			y: 10.5d
+		}
+		{
+			height: 3.0d
+			image: "minecraft:block/rail"
+			rotation: 0.0d
+			width: 3.0d
+			x: 6.5d
+			y: 12.5d
+		}
+		{
+			height: 3.0d
+			image: "minecraft:block/rail"
+			rotation: 0.0d
+			width: 3.0d
+			x: 6.5d
+			y: 8.5d
+		}
 	]
 	order_index: 1
 	quest_links: [{
@@ -1545,6 +1569,75 @@
 			title: "{quests.tfg_tips.transportation_tips.rnr_plow.title}"
 			x: 8.5d
 			y: -1.5d
+		}
+		{
+			dependencies: ["60497014785301EB"]
+			dependency_requirement: "one_completed"
+			description: ["&2Create: Steam 'n' Rails&r is a powerfull mod that allows you to build your own trains, these can be handy to travel across the waistland or between your points of intrest"]
+			icon: "railways:white_conductor_cap"
+			id: "24F55AFE2EC875F2"
+			shape: "octagon"
+			size: 2.0d
+			subtitle: "Stay On Track"
+			tasks: [{
+				id: "0175333225F43F08"
+				type: "checkmark"
+			}]
+			title: "Create: Steam 'n' Rails"
+			x: 6.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["24F55AFE2EC875F2"]
+			description: [
+				"Tracks are essential for your trains, laying paths to diffrent locations will allow you to relocate your trains."
+				""
+				"&3&lTip:&r&r Placing a track and right-clicking it with tracks in your hand, allows you to place tracks quickly and create curved shapes."
+			]
+			id: "50AE05306D3F6F0D"
+			subtitle: "Laying Paths"
+			tasks: [{
+				count: 32L
+				id: "0CA3970908FE6ACF"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(create:tracks)"
+					}
+				}
+				title: "Any #create:tracks"
+				type: "item"
+			}]
+			title: "Sturdy Foundation"
+			x: 6.5d
+			y: 11.5d
+		}
+		{
+			dependencies: ["50AE05306D3F6F0D"]
+			id: "65194B2DC42B3E07"
+			size: 2.0d
+			subtitle: "Steam Ahead"
+			tasks: [
+				{
+					id: "5369E6FB96F52926"
+					item: "create:track_station"
+					type: "item"
+				}
+				{
+					id: "18AB80143A289829"
+					item: "create:controls"
+					type: "item"
+				}
+				{
+					id: "5FC320F221ABD24A"
+					item: "create:railway_casing"
+					type: "item"
+				}
+			]
+			title: "Your First Train"
+			x: 6.5d
+			y: 14.0d
 		}
 	]
 	subtitle: ["{quests.tfg_tips.transportation_tips.subtitle}"]
