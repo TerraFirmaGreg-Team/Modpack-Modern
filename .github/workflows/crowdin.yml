@@ -117,7 +117,8 @@ jobs:
         
 
       - name: "Create Pull Request"
-        uses: xikaro/action-pull-request@main
+        id: create_pr
+        uses: devops-infra/action-pull-request@v1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           source_branch: ${{ env.LOCALIZATION_BRANCH }}
@@ -132,6 +133,8 @@ jobs:
             - Updated translation files
             - Patchouli book translations
           draft: false
-          auto_merge: true
-          auto_merge_require_approval: false
-          auto_merge_wait_checks: false
+
+      - name: Merge
+        uses: KeisukeYamashita/auto-pull-request-merge@v1
+        with:
+          pullRequestNumber: ${{ steps.create_pr.outputs.pr_number }}
