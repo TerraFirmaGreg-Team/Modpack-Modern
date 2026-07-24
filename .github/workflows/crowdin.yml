@@ -149,5 +149,6 @@ jobs:
           MERGE_LABELS: ""
           MERGE_REQUIRED_APPROVALS: "0"
           MERGE_DELETE_BRANCH: true
+          MERGE_READY_STATE: "clean,has_hooks,unknown,unstable,blocked"
           PULL_REQUEST: ${{ steps.create_pr.outputs.pr_number }}
           
