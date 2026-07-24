@@ -133,3 +133,4 @@ jobs:
             - Patchouli book translations
           draft: false
           auto_merge: true
+          auto_merge_require_approval: false
