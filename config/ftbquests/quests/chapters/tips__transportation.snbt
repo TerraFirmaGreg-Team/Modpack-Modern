@@ -445,7 +445,7 @@
 			alpha: 100
 			height: 3.0d
 			image: "minecraft:block/rail_corner"
-			rotation: -90.0d
+			rotation: 180.0d
 			width: 3.0d
 			x: 6.5d
 			y: 21.5d
@@ -465,7 +465,7 @@
 			image: "minecraft:block/rail"
 			rotation: 90.0d
 			width: 3.0d
-			x: 9.0d
+			x: 4.0d
 			y: 21.5d
 		}
 		{
@@ -519,7 +519,7 @@
 			image: "minecraft:block/rail"
 			rotation: 90.0d
 			width: 3.0d
-			x: 11.5d
+			x: 1.5d
 			y: 21.5d
 		}
 		{
@@ -1677,7 +1677,7 @@
 			description: [
 				"&dTracks&r are essential for your &5Trains&r, laying paths to diffrent locations will allow you to relocate your trains."
 				""
-				"&3&lTip:&r&r Placing a track and right-clicking it with tracks in your hand, allows you to place tracks quickly and create curved shapes."
+				"&3&lTip:&r&r Placing a track and right-clicking it with &dTracks&r in your hand, allows you to place tracks quickly and create curved shapes."
 			]
 			id: "50AE05306D3F6F0D"
 			subtitle: "A sturdy foundation"
@@ -1700,7 +1700,13 @@
 		}
 		{
 			dependencies: ["50AE05306D3F6F0D"]
-			description: ["By right-clicking a Train Station on the tracks and placing it next to the tracks you can start constructiong your trains!"]
+			description: [
+				"By right-clicking a &bTrain Station&r on the tracks it will create an arrow on the tracks, this is the forwards direction of the &5Train&r. placing the &bTrain Station&r next to the tracks will now allow you to start creating your own &5Trains&r!"
+				""
+				"In the &bTrain Station&r interface Press Create new Train, this will project light blue spots on the tracks next to it. Placing &bTrain Casings&r on those spots will create a &5Bogey&r, you can connect up to two bogey's with building blocks to form a &5Carraige&r. Remember to use &aGlue&r!"
+				""
+				"Place &bTrain Controls&r facing in the forwards direction of your train, this direction is indicated with the arrow on the track. After Pressing Assamble Train your &5Train&r is now functional! right-click on the &bTrain Controls&r and use &lW&r and &lS&r to move it around"
+			]
 			id: "65194B2DC42B3E07"
 			size: 2.0d
 			subtitle: "Steam ahead!"
@@ -1750,46 +1756,8 @@
 				type: "item"
 			}]
 			title: "Hard Stop"
-			x: 11.5d
+			x: 1.5d
 			y: 21.5d
-		}
-		{
-			dependencies: ["65194B2DC42B3E07"]
-			icon: "railways:black_conductor_cap"
-			id: "1AD2A065051AD671"
-			subtitle: "Your own cute employees"
-			tasks: [
-				{
-					id: "11B40FB9E0778937"
-					item: {
-						Count: 1
-						id: "ftbfiltersystem:smart_filter"
-						tag: {
-							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(railways:conductor_caps)"
-						}
-					}
-					title: "Any #railways:conductor_caps"
-					type: "item"
-				}
-				{
-					id: "2F35E1683AB9493B"
-					item: "create:andesite_casing"
-					type: "item"
-				}
-				{
-					id: "3A09CD82FE32BA39"
-					item: "create:schedule"
-					type: "item"
-				}
-				{
-					id: "55A73ED2D9AB08EE"
-					item: "minecraft:lead"
-					type: "item"
-				}
-			]
-			title: "Train Personel"
-			x: 9.0d
-			y: 16.5d
 		}
 		{
 			dependencies: ["6D7248BFB6FFFCE9"]
@@ -1816,19 +1784,33 @@
 			dependencies: ["65194B2DC42B3E07"]
 			id: "39EFFFDC11B3CD64"
 			subtitle: "Air polution"
-			tasks: [{
-				id: "0E4C3A126793D5A5"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfg:smokestacks)"
+			tasks: [
+				{
+					id: "0E4C3A126793D5A5"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfg:smokestacks)"
+						}
 					}
+					title: "Any #tfg:smokestacks"
+					type: "item"
 				}
-				title: "Any #tfg:smokestacks"
-				type: "item"
-			}]
-			title: "Smoke Stacks"
+				{
+					id: "65557D761EC57130"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(railways:palettes/dye_groups/boiler)"
+						}
+					}
+					title: "Any #railways:palettes/dye_groups/boiler"
+					type: "item"
+				}
+			]
+			title: "Steam Immersion"
 			x: 4.0d
 			y: 12.5d
 		}
@@ -1865,25 +1847,10 @@
 			y: 14.0d
 		}
 		{
-			dependencies: ["1AD2A065051AD671"]
+			dependencies: ["65194B2DC42B3E07"]
 			id: "624DBB15C2B3C8E3"
 			subtitle: "Transport at its finest"
 			tasks: [
-				{
-					id: "0293AB0A5313B936"
-					item: "create:portable_fluid_interface"
-					type: "item"
-				}
-				{
-					id: "1F6DACC813B96525"
-					item: "create:portable_storage_interface"
-					type: "item"
-				}
-				{
-					id: "35865115B239482E"
-					item: "createaddition:portable_energy_interface"
-					type: "item"
-				}
 				{
 					id: "73D0FE82D3588DB1"
 					item: "create:fluid_tank"
@@ -1894,15 +1861,10 @@
 					item: "create:item_vault"
 					type: "item"
 				}
-				{
-					id: "40D1488EF043610A"
-					item: "railways:fuel_tank"
-					type: "item"
-				}
 			]
 			title: "Train Cargo"
-			x: 11.5d
-			y: 19.0d
+			x: 9.0d
+			y: 16.5d
 		}
 		{
 			dependencies: ["65194B2DC42B3E07"]
@@ -1934,8 +1896,8 @@
 				item: "railways:track_coupler"
 				type: "item"
 			}]
-			title: "Splitting Couples"
-			x: 9.0d
+			title: "Splitting Carraiges"
+			x: 4.0d
 			y: 21.5d
 		}
 		{
@@ -1948,8 +1910,173 @@
 				type: "item"
 			}]
 			title: "Detecting Cargo"
+			x: 11.5d
+			y: 19.0d
+		}
+		{
+			dependencies: [
+				"69F5BB121E93A5A5"
+				"0E26552E6336BB32"
+			]
+			icon: "create:schedule"
+			id: "374304894C62001B"
+			size: 2.0d
+			subtitle: "Your own employees"
+			tasks: [
+				{
+					id: "375D0EB7DF147A96"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(railways:conductor_caps)"
+						}
+					}
+					title: "Any #railways:conductor_caps"
+					type: "item"
+				}
+				{
+					id: "62146AF093CB06F4"
+					item: "create:schedule"
+					type: "item"
+				}
+				{
+					id: "1D6A767AC7A77A49"
+					item: "minecraft:lead"
+					type: "item"
+				}
+			]
+			title: "Automated Delieveries"
 			x: 14.0d
 			y: 19.0d
+		}
+		{
+			dependencies: ["624DBB15C2B3C8E3"]
+			id: "2EC917FB326D5A58"
+			tasks: [
+				{
+					count: 2L
+					id: "3230B77BBA6CC3A3"
+					item: { Count: 2, id: "create:portable_fluid_interface" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "35379EA5912DC4D8"
+					item: { Count: 2, id: "create:portable_storage_interface" }
+					type: "item"
+				}
+			]
+			title: "Cargo Management"
+			x: 11.0d
+			y: 17.0d
+		}
+		{
+			dependencies: ["624DBB15C2B3C8E3"]
+			id: "5CD2605615A0AA20"
+			tasks: [
+				{
+					id: "32DBE62198A0299F"
+					item: "fluidlogistics:multi_fluid_tank"
+					type: "item"
+				}
+				{
+					id: "6506463434B5035F"
+					item: "fluidlogistics:horizontal_multi_fluid_tank"
+					type: "item"
+				}
+			]
+			x: 11.0d
+			y: 15.5d
+		}
+		{
+			dependencies: ["374304894C62001B"]
+			icon: "minecraft:charcoal"
+			id: "31B91C1FF958CEC3"
+			subtitle: "Faster than warpspeed, kinda..."
+			tasks: [{
+				id: "4BCB9F78ADFD3693"
+				title: "{quests.tasktype.checkmark}"
+				type: "checkmark"
+			}]
+			title: "Fueling Your Train"
+			x: 16.5d
+			y: 17.5d
+		}
+		{
+			dependencies: ["374304894C62001B"]
+			id: "41E8E1F8E7ACFD36"
+			subtitle: "Concentrated energy"
+			tasks: [
+				{
+					id: "2DF381C73A33328D"
+					item: "railways:fuel_tank"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "3A0AE2C22E32C834"
+					item: { Count: 2, id: "railways:portable_fuel_interface" }
+					type: "item"
+				}
+			]
+			title: "Liquid Train Fuel"
+			x: 16.5d
+			y: 20.5d
+		}
+		{
+			dependencies: ["374304894C62001B"]
+			id: "48138F7AFC3B8611"
+			tasks: [{
+				id: "2C461998B72628C4"
+				item: {
+					Count: 1
+					id: "railways:conductor_whistle"
+					tag: {
+						SelectedColor: 0b
+						SelectedConductor: [I;
+							-1441291000
+							872761579
+							-1530620007
+							885363878
+						]
+						SelectedTrain: [I;
+							1234691926
+							1234715382
+							-1953141675
+							-804657543
+						]
+					}
+				}
+				type: "item"
+			}]
+			x: 14.0d
+			y: 16.5d
+		}
+		{
+			dependencies: ["374304894C62001B"]
+			icon: "create:goggles"
+			id: "0A9A54599EE46D5F"
+			subtitle: "Legalised oversight"
+			tasks: [{
+				id: "54949AFACDBD8789"
+				item: {
+					Count: 1
+					id: "railways:remote_lens"
+					tag: {
+						SelectedConductor: [I;
+							-1441291000
+							872761579
+							-1530620007
+							885363878
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Meta Glasses™"
+			x: 14.0d
+			y: 22.0d
 		}
 	]
 	subtitle: ["{quests.tfg_tips.transportation_tips.subtitle}"]
