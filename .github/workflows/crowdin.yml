@@ -134,3 +134,4 @@ jobs:
           draft: false
           auto_merge: true
           auto_merge_require_approval: false
+          auto_merge_wait_checks: false
