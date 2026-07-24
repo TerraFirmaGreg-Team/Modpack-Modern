@@ -114,6 +114,13 @@ jobs:
         uses: actions/checkout@v7
         with:
           fetch-depth: 0
+
+      - name: "Generate GitHub App Token"
+        id: generate_token
+        uses: actions/create-github-app-token@v3
+        with:
+          app-id: ${{ secrets.APP_ID }}
+          private-key: ${{ secrets.APP_PRIVATE_KEY }}
         
 
       - name: "Create Pull Request"
@@ -134,7 +141,9 @@ jobs:
             - Patchouli book translations
           draft: false
 
-      - name: Merge
-        uses: KeisukeYamashita/auto-pull-request-merge@v1
-        with:
-          pullRequestNumber: ${{ steps.create_pr.outputs.pr_number }}
+      - name: "Automatically Merge PR"
+        uses: pascalgn/automerge-action@v0.16.4
+        env:
+          GITHUB_TOKEN: "${{ steps.generate_token.outputs.token }}"
+          MERGE_METHOD: "squash"
+          MERGE_DELETE_BRANCH: true
