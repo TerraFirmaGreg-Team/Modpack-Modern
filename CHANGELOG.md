@@ -16,7 +16,7 @@
 #### GregTech
 - Buffed the temporary Naquadah Ore recipe for players that wish to continue progression past EV @TomPlop
 - The Geologic Vulcanizer can now parallel recipes if you overclock it @TomPlop
-- The Geologic Vulcanizer now has a new sound effect (#4556) @SpaceHarvester
+- The Geologic Vulcanizer now has a new sound effect (#4556) @Space-Harvester
 - Add more GUI information to the Gas Well @TomPlop
 - Add a new recipe for Calcium Carbonate by reacting calcium hydroxide with carbon dioxide (#4536) @MajorMoth
 #### Other changes
@@ -32,6 +32,7 @@
 - Added quern recipes for grinding ingots into dust @Pyritie
 - Air distributors, gravity normalizers, and single-block miners can no longer be glued to create contraptions due to exploits (#4530) @Pyritie
 - TFC Textile clothes can now have armor trims applied (#4461) @Pyritie
+- Create's fluid tanks (and the multi-tank and both horizontal versions) now hold 32B per block instead of 16B @Pyritie
 ### Bug fixes
 - The Final Moments effect now only kills on natural effect completion instead of on refreshes or clears, and also maybe fixed it sometimes not leaving a corpse @Redeix
 - Fixed tree felling not draining chaninsaws' energy instead of durability (#3293) @Black0305

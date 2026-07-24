@@ -404,8 +404,8 @@ const registerTooltips = (event) => {
 		text.add(1, Text.translate("gtceu.universal.tooltip.item_storage_capacity", "36"))
 		text.add(2, Text.translate("gtceu.universal.tooltip.fluid_storage_capacity", "80,000"))
 	})
-	event.addAdvanced(['create:fluid_tank', 'create_connected:fluid_vessel'], (item, advanced, text) => {
-		text.add(1, Text.translate("gtceu.universal.tooltip.fluid_storage_capacity", "16,000"))
+	event.addAdvanced(['create:fluid_tank', 'create_connected:fluid_vessel', 'fluidlogistics:multi_fluid_tank', 'fluidlogistics:horizontal_multi_fluid_tank'], (item, advanced, text) => {
+		text.add(1, Text.translate("gtceu.universal.tooltip.fluid_storage_capacity", "32,000"))
 	})
 	event.addAdvanced(['#tfc:barrels'], (item, advanced, text) => {
 		text.add(1, Text.translate("gtceu.universal.tooltip.fluid_storage_capacity", "10,000"))
