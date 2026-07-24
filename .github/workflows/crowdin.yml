@@ -146,4 +146,5 @@ jobs:
         env:
           GITHUB_TOKEN: "${{ steps.generate_token.outputs.token }}"
           MERGE_METHOD: "squash"
+          PULL_REQUEST: ${{ steps.create_pr.outputs.pr_number }}
           MERGE_DELETE_BRANCH: true
