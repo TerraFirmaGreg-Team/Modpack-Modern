@@ -1,0 +1,138 @@
+{
+  "name": "Greenhouse",
+  "category": "tfc:agriculture",
+  "icon": "firmalife:large_planter",
+  "pages": [
+    {
+        "type": "patchouli:text",
+        "text": "$(li)$(bold)$(l:tfc:agriculture/greenhouse#types)Greenhouse Types$()$(li)$(bold)$(l:tfc:agriculture/greenhouse#planters)Planters$()$(li2)$(l:tfc:agriculture/greenhouse#large_planter)Large Planter$()$(li2)$(l:tfc:agriculture/greenhouse#quad_planter)Quad Planter$()$(li2)$(l:tfc:agriculture/greenhouse#bonsai_planter)Bonsai Planter$()$(li2)$(l:tfc:agriculture/greenhouse#hanging_planter)Hanging Planter$()$(li2)$(l:tfc:agriculture/greenhouse#trellis_planter)Trellis Planter$()$(li2)$(l:tfc:agriculture/greenhouse#hydroponic_planter)Hydroponic Planter$()$(li)$(bold)$(l:tfc:agriculture/greenhouse#irrigation)Irrigation$()$(li)$(bold)$(l:tfc:agriculture/greenhouse#auto_harvesting)Auto-Harvesting$()"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "intro",
+      "title": "Greenhouse",
+      "text": "The $(thing)Greenhouse$() is a multiblock device controlled by a $(item)Climate Station$(). It allows growing crops year round. The Greenhouse has an array of types and blocks to choose from. However, building a greenhouse is quite simple. Like the $(l:cooking/decay#cellar)Cellar$(), it should be an enclosed area of blocks belonging to the same $(thing)Greenhouse Type$(). The floor of the greenhouse may be non-air block."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "The walls of greenhouses must be solid faces. Panel walls should be placed so that the face that is on the exterior of the block (ex. the face you can place a torch on) faces into the greenhouse. Trapdoors, doors, and roofs are always valid and require no special placement.$(br2)The maximum internal volume of a greenhouse is 31x31x31 blocks."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)Greenhouse Types$() are families of greenhouse blocks that can be used interchangeably in a greenhouse. Additionally, $(bold)$(#ff0fb7)TerraFirma$()$(bold)$(#595959)Greg$() adds more greenhouse wall styles that can be swapped around with the basic greenhouse walls of the same tier."
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "types",
+      "text": "These are the $(thing)Greenhouse Types$() available, with the block types they can age into:$(br)$(li)Treated Wood: Weathered $()$(li)Copper: Exposed, Weathered, Oxidized$()$(li)Iron: Rusted$() $(li)Stainless Steel (does not age)$()",
+      "title": "Greenhouse Types"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "There are four types of regular $(thing)Greenhouse Blocks$(): Walls, Doors, Roofs, and Roof Tops. Roofs and Roof Tops are stairs and slabs, respectively. There are also thinner versions of these blocks, known as panel walls, trapdoors, and panel roofs. These can be combined however you choose to form the structure of the greenhouse."
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "An example greenhouse, in each main type.",
+      "multiblocks": [
+        "firmalife:treated_wood_greenhouse",
+        "firmalife:copper_greenhouse",
+        "firmalife:iron_greenhouse",
+        "firmalife:stainless_steel_greenhouse"
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "planters",
+      "title": "Planters",
+      "text": "$(thing)Planters$() are used to grow crops inside a Greenhouse. Crops in planters consume $(l:tfc:agriculture/growing_crops#intro)Nutrients$() similarly to crops. Planters should be placed inside a valid Greenhouse and activated with a $(item)Climate Station$(). Planters need at least some natural sunlight to work."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "anchor": "large_planter",
+      "item": "firmalife:large_planter",
+      "text": "$(thing)Large Planters$() are the simplest kind of planter. They grow a single crop from seed, and are harvested with $(item)$(k:key.use)$() when mature.$(br)Large Planters typically grow $(thing)Large Crops$() and $(thing)Grains$(). However, to grow Grains, you need a $(thing)Copper$() or better Greenhouse."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "anchor": "quad_planter",
+      "item": "firmalife:quad_planter",
+      "text": "$(thing)Quad Planters$() grow four individual crops at once that all draw from the same nutrient pool, and can be harvested individually with $(item)$(k:key.use)$() when mature.$(br)Quad Planters typically grow smaller vegetables such as $(thing)Onions$() and $(thing)Beets$(). These crops can be grown in any greenhouse type."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "anchor": "bonsai_planter",
+      "item": "firmalife:bonsai_planter",
+      "text": "$(thing)Bonsai Planters$() grow small fruit trees from their saplings.$(br)Bonsai Planters grow fruit tree type, except $(thing)Bananas$() and $(thing)Palm Fruit Trees$(), which need a $(thing)Hanging Planter$(). They need an $(thing)Iron$() or better greenhouse to grow."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "anchor": "hanging_planter",
+      "item": "firmalife:hanging_planter",
+      "text": "$(thing)Hanging Planters$() grow crops upside down.$(br)Hanging Planters grow $(thing)Squash$(), $(thing)Bananas$(), and $(thing)Palm Fruit Trees$(). Squash can be grown in any greenhouse, but Bananas and Palm Fruit Trees require an $(thing)Iron$() or better greenhouse to grow. Hanging planters need to anchor to a solid block above them."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "anchor": "trellis_planter",
+      "item": "firmalife:trellis_planter",
+      "text": "$(thing)Trellis Planters$() grow berry bushes.$(br)Trellis Planters have the unique property of $(thing)propagating$() berry bushes. If a trellis planter is placed on top of another with a mature berry bush, it has a chance to grow upwards into the next one. Trellis planters usually require an $(thing)Iron$() or better greenhouse to work."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "anchor": "hydroponic_planter",
+      "item": "firmalife:hydroponic_planter",
+      "text": "$(thing)Hydroponic Planters$() grow submerged crops like $(thing)Rice$() and $(thing)Cranberry Bushes$(). They work the same as a quad planter, except that they do not need to be watered.$(br)Hydroponic Planters must instead, have a $(item)Fluid Pipe$() below them supplying water. Without the pipe they will not grow."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "anchor": "irrigation",
+      "title": "Irrigation",
+      "item": "firmalife:watering_can,firmalife:sprinkler",
+      "text": "Planters must be $(thing)Watered$() to grow. This is done with a $(thing)Watering Can$() or automatically with $(thing)Sprinklers$(). Press $(item)$(k:key.use)$() with a watering can to water nearby planters. Refill your can by pressing $(item)$(k:key.use)$() on a water source."
+    },
+		{
+			"type": "patchouli:text",
+			"text": "The $(thing)Sprinkler$() is a device that sprinkles water in a 5x6x5 area centered on the block below or above the sprinkler block. You know it is working when it drips out water particles. Sprinklers must be connected to a system of pipes that feed it water in order to work."
+		},
+		{
+			"title": "Piping",
+			"item": "gtceu:copper_tiny_fluid_pipe",
+			"type": "patchouli:spotlight",
+			"text": "Feeding sprinklers with water can be done by connecting $(thing)Fluid Pipes$() to them and pumping in water with a $(thing)Mechanical Pump$().$(br)You can $(item)$(k:key.use)$() a pipe with a $(t:Such as a Copper Frame)GregTech Frame$() or a Greenhouse Port to pass them through a wall. $(item)$(k:key.use)$() fluid pipes with a wrench to change their direction, and $(item)$(k:key.sneak)-$(k:key.use)$() them with an $(thing)empty offhand$() to make them one-way."
+		},
+    {
+      "type": "patchouli:spotlight",
+      "anchor": "auto_harvesting",
+      "title": "Auto-Harvesting",
+      "item": "firmalife:sweeper,firmalife:picker",
+      "text": "$(li)$(thing)Sweepers$() are used to harvest planters other than Quad and Hydroponic planters. They can be powered by redstone.$(li)$(thing)Pickers$() can be powered via redstone signal from above. They extend down to pick the crops from Quad and Hydroponic planters.$(li)Additionally, $(item)Harvest Baskets$() can be used to harvest most planter types."
+    },
+    {
+        "type": "patchouli:relations",
+        "title": "Further Reading",
+        "anchor": "relations",
+        "entries": [
+            "tfc:the_world/wild_crops",
+            "tfc:the_world/wild_fruits",
+            "tfc:agriculture/growing_crops",
+            "tfc:cooking/decay"
+        ]
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 2,
+  "extra_recipe_mappings": {
+        "#tfg:all_greenhouse_casings": 2,
+        "#firmalife:greenhouse": 2,
+        "firmalife:large_planter": 9,
+        "firmalife:quad_planter": 10,
+        "firmalife:bonsai_planter": 11,
+        "firmalife:hanging_planter": 12,
+        "firmalife:trellis_planter": 13,
+        "firmalife:hydroponic_planter": 14,
+        "firmalife:sprinkler": 15,
+        "firmalife:watering_can": 15,
+        "firmalife:sweeper": 18,
+        "firmalife:picker": 18
+  }
+}

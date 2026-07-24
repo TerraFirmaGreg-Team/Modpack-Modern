@@ -147,7 +147,7 @@
         {
             "type": "patchouli:text",
             "anchor": "vessels",
-            "text": "One of the earliest ways to preserve food is to use a $(thing)Vessel$(). $(thing)Large Vessels$() are a block which can store up to nine items, and when $(thing)sealed$() the items inside will gain the $(5)$(bold)Preserved$() trait with a modifier of 0.5.$(br2)$(thing)Small Vessels$() are a item which can store up to four other items, and will also apply the $(5)$(bold)Preserved$() trait to their contents.",
+            "text": "One of the earliest ways to preserve food is to use a $(thing)Vessel$(). $(thing)Large Vessels$() are a block which can store up to nine items, and when $(thing)sealed$() the items inside will gain the $(5)$(bold)Preserved$() trait with a modifier of 0.5.$(br2)$(thing)Small Vessels$() are an item which can store up to four other items, and will also apply the $(5)$(bold)Preserved$() trait to their contents.",
             "title": "Vessels"
         },
         {
@@ -185,7 +185,7 @@
             "type": "patchouli:text",
             "anchor": "smoking",
             "title": "Smoking",
-            "text": "Smoking is used to preserve $(thing)Meat$() and $(l:tfc:cooking/cheese)Cheese$() with a modifier of 0.7. To smoke meat, it must have first been $(thing)Brined$() by sealing it in a $(thing)Barrel$() with $(thing)Brine$(). Cheese does not have this requirement.$(br)To start smoking, add an item to wool yarn that is within four blocks above a firepit.The string should begin to generate some smoke if it is working.$(br)Note: The firepit may only be burned with $(thing)Logs$()!"
+            "text": "Smoking is used to preserve $(thing)Meat$() and $(l:tfc:cooking/cheese)Cheese$() with a modifier of 0.7. To smoke meat, it must have first been $(thing)Brined$() by sealing it in a $(thing)Barrel$() with $(thing)Brine$(). Cheese does not have this requirement.$(br)To start smoking, add an item to wool yarn that is within four blocks above a firepit. The string should begin to generate some smoke if it is working.$(br)Note: The firepit may only be burned with $(thing)Logs$()!"
         },
         {
             "type": "patchouli:multiblock",
@@ -216,7 +216,7 @@
         {
             "type": "patchouli:text",
             "anchor": "salting",
-            "text": "$(thing)Salting$() is a way to make meat last longer. To salt meat, it must be crafted with $(thing)Salt$() in a crafting grid. Only raw meat can be salted. Afterwards, cooking or otherwise preserving the meat does not take away the salted property.$(7)$(bold)Salted$() food gain a modifier of 0.5",
+            "text": "$(thing)Salting$() is a way to make meat last longer. To salt meat, it must be crafted with $(thing)Salt$() in a crafting grid. Only raw meat can be salted. Afterward, cooking or otherwise preserving the meat does not take away the salted property.$(7)$(bold)Salted$() food gain a modifier of 0.5",
             "title": "Salting"
         },
         {
@@ -258,13 +258,13 @@
             "type": "patchouli:text",
             "anchor": "oven_baked",
             "title": "Oven Baked",
-            "text": "Baking food items in a $(l:tfc:cooking/cooking_methods#top_oven)Top Oven$() is the second best way to preserve your food items through cooking as it gives the $(7)$(bold)Oven Baked$() trait with a modifier of 0.9"
+            "text": "Baking food items in a $(l:tfc:cooking/cooking_methods#top_oven)Top Oven$() is the second-best way to preserve your food items through cooking as it gives the $(7)$(bold)Oven Baked$() trait with a modifier of 0.9"
         },
         {
             "type": "patchouli:text",
             "anchor": "cellar",
             "title": "Cellar",
-            "text": "The $(thing)Cellar$() is a multiblock device controlled by a $(item)Climate Station$(). The Cellar multiblock must be fully enclosed by $(thing)$(t:#firmalife:cellar_insulation)Sealed Bricks$() on all sides. The Climate Station must be placed on the first level of the cellar, touching a wall. Activate the climate station by $(item)$(k:key.use)$() it. If you update the structure in any way you will need to reactive the climate station.$(br)The maximum internal volume of a cellar is 31x31x31 blocks."
+            "text": "The $(thing)Cellar$() is a multiblock device controlled by a $(item)Climate Station$(). The Cellar multiblock must be fully enclosed by $(thing)$(t:#firmalife:cellar_insulation)Sealed Bricks$() on all sides. The Climate Station must be placed on the first level of the cellar, touching a wall. Activate the climate station by $(item)$(k:key.use)$() it. If you update the structure in any way you will need to reactivate the climate station.$(br)The maximum internal volume of a cellar is 31x31x31 blocks."
         },
         {
             "type": "patchouli:text",
@@ -446,21 +446,21 @@
             "anchor": "lunch_box",
             "title": "Lunch Boxes",
             "item": "tfclunchbox:lunchbox,tfclunchbox:cooling_lunchbox,tfclunchbox:electric_lunchbox",
-            "text": "Lunch boxes provide a convient method to transport and consume food items. The basic lunchbox provides the $(5)$(bold)Preserved$() trait while the $(item)Cooling$() and $(item)Electric Lunchboxes$() give the $(9)$(bold)Cooled$() trait with a modifier of 0.3$(br2)Cooling lunchboxes consume $(item)Ice$() to preserve food, while the electric lunchbox consumes $(2)EU$() energy."
+            "text": "Lunch boxes provide a convenient method to transport and consume food items. The basic lunchbox provides the $(5)$(bold)Preserved$() trait while the $(item)Cooling$() and $(item)Electric Lunchboxes$() give the $(9)$(bold)Cooled$() trait with a modifier of 0.3$(br2)Cooling lunchboxes consume $(item)Ice$() to preserve food, while the electric lunchbox consumes $(2)EU$() energy."
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "refrigerator",
             "title": "Refrigerators",
             "item": "tfg:mv_food_refrigerator,tfg:hv_food_refrigerator,tfg:ev_food_refrigerator,tfg:iv_food_refrigerator",
-            "text": "Refrigerators are added by $(bold)$(#ff0fb7)TF$()$()$(bold)$(#595959)G$()$() and consume $(2)EU$() to provide the $(3)$(bold)Refrigerating$() trait with a modifier of 0.125$(br)Increasing tiers of the fridge does not effect the preservation buff―Only the storage space available. Fridges can also combine food stacks by merging expiration dates."
+            "text": "Refrigerators are added by $(bold)$(#ff0fb7)TF$()$()$(bold)$(#595959)G$()$() and consume $(2)EU$() to provide the $(3)$(bold)Refrigerating$() trait with a modifier of 0.125$(br)Increasing tiers of the fridge does not affect the preservation buff―Only the storage space available. Fridges can also combine food stacks by merging expiration dates."
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "freeze_dry",
             "title": "Freeze Drying",
             "item": "tfg:food/meal_bag,tfg:food/freeze_dried_fruit,tfg:food/calorie_paste",
-            "text": "$(bold)$(#ff0fb7)TF$()$()$(bold)$(#595959)G$()$() adds the ability to freeze dry select food items in $(item)Food Processors$() to greatly increase shelf life. Freeze drying gives the $(7)$(bold)Cryodesiccated$() trait with a modifier of 0.02"
+            "text": "$(bold)$(#ff0fb7)TF$()$()$(bold)$(#595959)G$()$() adds the ability to freeze dry select food items in $(item)Food Processors$() to greatly increase shelf life. Freeze drying gives the $(7)$(bold)Cryodessicated$() trait with a modifier of 0.02"
         },
         {
             "type": "patchouli:text",

@@ -15,7 +15,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "When crops are planted without sufficient hydration or outside their temperature range the crop will die. If a crop reaches full maturity before dying it will yield excess seeds. You can kill a crop with $(l:tfc:agriculture/composting#rotten_compost)Rotten Compost$() to purposefully duplicate its seeds. Crops planted in $(l:tfc:agriculture/greenhouse)Greenhouse Planters$() are not capable of dying and will automatically provide bonus seeds."
+            "text": "When crops are planted without sufficient hydration or outside their temperature range the crop will die. If a crop reaches full maturity before dying it will yield excess seeds. You can kill a crop with $(l:tfc:agriculture/composting#rotten_compost)Rotten Compost$() to purposefully duplicate its seeds. Crops planted in $(l:tfc:agriculture/greenhouse#planters)Greenhouse Planters$() are not capable of dying and will automatically provide bonus seeds."
         },
         {
             "type": "patchouli:text",
@@ -83,7 +83,20 @@
         {
             "type": "patchouli:text",
             "text": "Provided the $(l:tfc:the_world/climate#temperature)Temperature$() requirements are satisfied, the grape vine will grow up and over the trellis over the course of a few months. It will fruit in the month of July, flowering the month prior. Grapes can then be harvested and used to produce $(l:tfc:cooking/alcohol#wine_making)Wine$().$(br2)Grape plants will not die even when they are outside their temperature range. But they will go dormant and won't produce any fruit until they are back to the right temperature."
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Further Reading",
+            "anchor": "relations",
+            "entries": [
+                "tfc:the_world/wild_crops",
+                "tfc:the_world/wild_fruits",
+                "tfc:cooking/alcohol",
+                "tfc:the_world/climate",
+                "tfc:agriculture/greenhouse"
+            ]
         }
     ],
-    "read_by_default": true
+    "read_by_default": true,
+	"sortnum": 1
 }
