@@ -1854,6 +1854,7 @@
 		}
 		{
 			dependencies: ["65194B2DC42B3E07"]
+			description: ["&bFluid Tanks&r and &bItem Vaults&r can be placed on a &5Trains&r to transport items and fluids."]
 			id: "624DBB15C2B3C8E3"
 			subtitle: "Transport at its finest"
 			tasks: [
@@ -1959,6 +1960,7 @@
 		{
 			dependencies: ["624DBB15C2B3C8E3"]
 			id: "2EC917FB326D5A58"
+			subtitle: "Loading and unloading"
 			tasks: [
 				{
 					count: 2L
@@ -2083,6 +2085,17 @@
 			title: "Meta Glasses™"
 			x: 14.0d
 			y: 22.0d
+		}
+		{
+			dependencies: ["630446139085B8A1"]
+			id: "5655D6E5228A467E"
+			tasks: [{
+				id: "7842A67897C575D4"
+				type: "checkmark"
+			}]
+			title: "Back On Tracks"
+			x: -1.0d
+			y: 21.5d
 		}
 	]
 	subtitle: ["{quests.tfg_tips.transportation_tips.subtitle}"]
