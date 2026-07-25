@@ -24,7 +24,14 @@
 - Add more GUI information to the Gas Well @TomPlop
 - Add a new recipe for Calcium Carbonate by reacting calcium hydroxide with carbon dioxide (#4536) @MajorMoth
 - Added missing ethanol and methanol biodiesel recipes for peanut and palm oil (#4584) @jmecn
+#### Ambiental
+- Forked TFC Textile into TFG Core, so we have more control over it @ashleney
+- Most clothes have been buffed
+- The blue steel diving armor now decreases temperature by a bigger amount
+- Most natural blocks are now strictly beneficial and can no longer make you die from frostbite or heatstroke
+- Torches now warm players up a little
 #### Other changes
+- Added a quest chapter for weapons and equipment (#4596) @BlueBoat29 @Pyritie 
 - Migrated tameable slimes to their own mod, and renamed them to Jellies (any existing entities in your world should switch over automatically) (#4546) @SakuraKitsurugi
 - Piglin bartering now returns flawless gems instead of regular, so MV progression isn't blocked @Pyritie
 - Fruit trees now fall over like wood trees, so you don't have to worry about cutting the branches any more @Redeix
