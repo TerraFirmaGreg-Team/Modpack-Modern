@@ -1782,6 +1782,7 @@
 		}
 		{
 			dependencies: ["65194B2DC42B3E07"]
+			description: ["Is your &5Locomotive&r out of style? Fear Not! &bLocoboilers&r and &bSmokestacks&r are here to bring immersion to your railway system. &bSmokestacks&r create steam particles indefinitely, while &bLocoboilers&r give you the posibility to build using &mround&r shapes."]
 			id: "39EFFFDC11B3CD64"
 			subtitle: "Air polution"
 			tasks: [
@@ -1828,6 +1829,11 @@
 		}
 		{
 			dependencies: ["65194B2DC42B3E07"]
+			description: [
+				"&dSeats&r allow you to sit down while operating your train. You may have noticed that the fundamental law of Inercia is conserved while the train is moving. To prevent flying off the train place a &dSeat&r on your &5Train&r and remember to secure it with &aGlue&r"
+				""
+				"&dSeats&r are required for automation of your trains, keep this in mind for later."
+			]
 			id: "0B79E10AB35FDB82"
 			subtitle: "A comfortable ride"
 			tasks: [{
