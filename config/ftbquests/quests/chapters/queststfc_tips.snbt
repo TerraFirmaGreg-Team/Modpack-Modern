@@ -494,21 +494,21 @@
 			subtitle: "{quests.tfg_tips.get_milk.subtitle}"
 			tasks: [
 				{
-					id: "5ADFB5FC06EAED6C"
+					id: "26460F400A280214"
+					type: "checkmark"
+				}
+				{
+					id: "127802526495AC3B"
 					item: {
 						Count: 1
 						id: "ftbfiltersystem:smart_filter"
 						tag: {
-							"ftbfiltersystem:filter": "or(item(minecraft:milk_bucket)item(firmalife:bucket/yak_milk)item(firmalife:bucket/goat_milk)item(tfc_gourmet:ox_milk_bucket)item(tfc_gourmet:sheep_milk_bucket)item(tfc_gourmet:alpaca_milk_bucket))"
+							"ftbfiltersystem:filter": "or(item(minecraft:milk_bucket)item(firmalife:bucket/yak_milk)item(firmalife:bucket/goat_milk)item(firmalife:bucket/coconut_milk))"
 						}
 					}
 					optional_task: true
 					title: "{quests.tfg_tips.get_milk.task}"
 					type: "item"
-				}
-				{
-					id: "26460F400A280214"
-					type: "checkmark"
 				}
 			]
 			title: "{quests.tfg_tips.get_milk.title}"
