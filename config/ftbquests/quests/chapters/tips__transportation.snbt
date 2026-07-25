@@ -843,7 +843,11 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["78358ED2C6F6FCFD"]
+			dependencies: [
+				"78358ED2C6F6FCFD"
+				"611C053A562DA9F0"
+			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.warfare.desc}"]
 			guide_page: "tfc:field_guide tfc:firmaciv/cannon"
 			id: "66FDACC7E7F9180C"

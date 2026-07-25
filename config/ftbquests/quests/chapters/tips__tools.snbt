@@ -663,7 +663,11 @@
 			y: 8.5d
 		}
 		{
-			dependencies: ["2D2CB8104E40E808"]
+			dependencies: [
+				"2D2CB8104E40E808"
+				"278F18477F9B7E08"
+			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.nano_saber.desc}"]
 			id: "7A4C6930EF68646E"
 			subtitle: "{quests.tfg_tips.nano_saber.subtitle}"
@@ -715,8 +719,15 @@
 			y: 14.0d
 		}
 		{
-			dependencies: ["7516BF9C12015DF3"]
+			dependencies: [
+				"7516BF9C12015DF3"
+				"1FF607647FA682B3"
+				"16B735F9C391D260"
+			]
+			dependency_requirement: "one_completed"
+			description: ["{quests.tfg_tips.nano_armor.desc}"]
 			id: "38FF003C9349C0F2"
+			subtitle: "{quests.tfg_tips.nano_armor.subtitle}"
 			tasks: [
 				{
 					id: "7C3E295B35639EC9"
@@ -743,12 +754,19 @@
 					type: "item"
 				}
 			]
+			title: "{quests.tfg_tips.nano_armor.title}"
 			x: 5.0d
 			y: 14.0d
 		}
 		{
-			dependencies: ["7516BF9C12015DF3"]
+			dependencies: [
+				"7516BF9C12015DF3"
+				"11DE49B8724C2603"
+			]
+			dependency_requirement: "one_completed"
+			description: ["{quests.tfg_tips.quarktech.desc}"]
 			id: "4D5B75F5270CCBD3"
+			subtitle: "{quests.tfg_tips.quarktech.subtitle}"
 			tasks: [
 				{
 					id: "4DFF8E5F32E7AFC3"
@@ -775,12 +793,15 @@
 					type: "item"
 				}
 			]
+			title: "{quests.tfg_tips.quarktech.title}"
 			x: 6.0d
 			y: 14.0d
 		}
 		{
 			dependencies: ["4D5B75F5270CCBD3"]
+			description: ["{quests.tfg_tips.adv_quarktech.desc}"]
 			id: "035B0FDD90E51C0C"
+			subtitle: "{quests.tfg_tips.adv_quarktech.subtitle}"
 			tasks: [{
 				id: "154A01EC8F888EDB"
 				item: {
@@ -892,10 +913,12 @@
 			dependencies: [
 				"57FE828BAA8F6276"
 				"40408FFD02134148"
+				"07A777BAAB2DBCFC"
 			]
 			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.hazmat.desc}"]
 			id: "784A0743B257EAEB"
+			subtitle: "{quests.tfg_tips.hazmat.subtitle}"
 			tasks: [
 				{
 					id: "2FD004A7EDFCB2E0"
@@ -1078,7 +1101,9 @@
 		}
 		{
 			dependencies: ["38FF003C9349C0F2"]
+			description: ["{quests.tfg_tips.adv_nano_armor.desc}"]
 			id: "4C37DAD7C66523CC"
+			subtitle: "{quests.tfg_tips.adv_nano_armor.subtitle}"
 			tasks: [{
 				id: "05BCE3FC68B3C66E"
 				item: {
@@ -2305,7 +2330,11 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["205E3ACA10A16C23"]
+			dependencies: [
+				"205E3ACA10A16C23"
+				"00D957B20B4A12F3"
+			]
+			dependency_requirement: "one_completed"
 			description: [
 				"{quests.tfg_tips.digger_helmet.desc.1}"
 				"{@pagebreak}"
@@ -2448,6 +2477,11 @@
 				{
 					id: "62C27C8AC16CBE20"
 					item: "tfg:peanut_oil_bucket"
+					type: "item"
+				}
+				{
+					id: "2C316D9814153B6F"
+					item: "tfg:palm_oil_bucket"
 					type: "item"
 				}
 			]
@@ -2750,7 +2784,11 @@
 			y: -1.0d
 		}
 		{
-			dependencies: ["205E3ACA10A16C23"]
+			dependencies: [
+				"205E3ACA10A16C23"
+				"611C053A562DA9F0"
+			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.hiking.desc}"]
 			guide_page: "tfc:field_guide tfc:sns/hiking_boots"
 			icon: {
@@ -2973,6 +3011,7 @@
 			dependencies: [
 				"205E3ACA10A16C23"
 				"560B17BFBE8D477D"
+				"45B3A5C226C0EC9F"
 			]
 			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.tools_tips.swim_gear.desc}"]

@@ -1369,7 +1369,11 @@
 			y: 6.0d
 		}
 		{
-			dependencies: ["3E6DC423FE4A99F7"]
+			dependencies: [
+				"3E6DC423FE4A99F7"
+				"165215273D49B85B"
+			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.low_voltage.night_vision_goggles.desc}"]
 			id: "4B4F052F00435AFE"
 			optional: true
