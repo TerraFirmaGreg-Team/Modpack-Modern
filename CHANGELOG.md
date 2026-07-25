@@ -46,7 +46,7 @@
 - Fixed mineshafts sometimes spawning on the tops of mountains, making the rest of the underground structure stick out of the sides @Pyritie
 - Fixed ghost peppers in a firmalife greenhouse only returning seeds when mature @Pyritie
 - Fixed moths not spawning around light sources in the overworld @Pyritie
-- Fixed boron carbide and molybdenum-50-diamond-tipped tool head recycling (#4551) @Pyritie
+- Fixed boron carbide and molybdenum-50-diamond-tipped tool head recycling (#4551, #4585) @Pyritie
 - Fixed beech trees not felling, and changed their shape (#4568) @Filiipa
 - Fixed not being able to craft vanilla basalt columns @Pyritie
 - Fixed the syngas + coal advanced boiler recipe using vanilla coal instead of TFC (#4552) @Pyritie
