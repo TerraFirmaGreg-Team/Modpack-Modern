@@ -2,7 +2,7 @@
 
 ## Unreleased
 ### Breaking Changes
-- Remove two steps in the Uvarovite-Chromium line so it's more appropriate to MV difficulty (all the recipes and materials will be removed later) @TomPlop
+- Remove two steps in the Uvarovite-Chromium line so it's more appropriate to MV difficulty (the now-useless recipes and materials will be removed later) @TomPlop
 - The Gas Well will no longer void Natural Gas if the output hatch is full, but will keep consuming Explosives and Water/Steam @TomPlop
 ### Changes
 #### Foods
@@ -40,7 +40,7 @@
 - Create's fluid tanks (and the multi-tank and both horizontal versions) now hold 32B per block instead of 16B @Pyritie
 - Whiskey-filled chocolates now accept all forms of whiskey @Pyritie
 - Increased the effect tier of some of the medicine buffs to be more competitive with vintage alcohols @Pyritie
-- Repair Kits can now only stacks up to 16 and don't fit in a Framepack @TomPlop
+- Repair Kits now only stacks up to 16 and don't fit in a Framepack @TomPlop
 ### Bug fixes
 - Fixed an issue with the rocket lander sometimes leaving you frozen at a high Y level until relogging, or sometimes landing you at the wrong position. Please let us know if you still have this issue as the bug is difficult to reproduce. (#3054) @Black0305
 - The previously disabled Fluid and Item Pipes are no longer still craftable @TomPlop
@@ -60,6 +60,9 @@
 - Fixed mobs spawning on GT concrete (#4477) @Pyritie
 - Fixed struts/trusses not having any mining tool assigned (#4468) @SakuraKitsurugi
 - Fixed hanging planters in greenhouses outputting food with two different expiry dates @Redeix
+### Mods
+#### Create: Fluid Logistics
+- Added copper frogports
 ### Shaders
 - The TFG shaders should now work on MacOS!
 - Fixed raw ore blocks rendering as transparent @Pyritie
