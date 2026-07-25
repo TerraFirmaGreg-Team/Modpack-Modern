@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"1": "tfg:block/steam_engine/titanium_linkage",
-		"particle": "tfg:block/flywheel/titanium_steam_engine_wheel"
+		"1": "steampowered:block/steam_engine/titanium_linkage",
+		"particle": "steampowered:block/flywheel/titanium_steam_engine_wheel"
 	},
 	"elements": [
 		{
