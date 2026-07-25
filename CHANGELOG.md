@@ -18,8 +18,8 @@
 - Removed golden apples (#4516) @Redeix
 - Fixed not being able to heat up chorus fruit or popped chorus fruit the TFC way @Redeix
 #### Create
-- Alternators have been removed. Any existing ones will still work but they are no longer craftable.
-- Added new Steam Engines and Flywheels for each Greate tier that consume a little GregTech steam to make SU. These should be a lot easier to use and set up than a normal Create steam engine, and are also an effective way of generating SU for higher tiers like your stainless steel crushing wheels.
+- Alternators have been removed. Any existing ones will still work but they are no longer craftable. @Pyritie
+- Added new Steam Engines and Flywheels for each Greate tier that consume a little GregTech steam to make SU. These should be a lot easier to use and set up than a normal Create steam engine, and are also an effective way of generating SU for higher tiers like your stainless steel crushing wheels. @Pyritie
 - Similar engines that take combustion and gas fuels will be coming soon. 
 #### GregTech
 - Buffed the temporary Naquadah Ore recipe for players that wish to continue progression past EV @TomPlop
