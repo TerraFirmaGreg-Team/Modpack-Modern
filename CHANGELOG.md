@@ -35,6 +35,7 @@
 - TFC Textile clothes can now have armor trims applied (#4461) @Pyritie
 - Create's fluid tanks (and the multi-tank and both horizontal versions) now hold 32B per block instead of 16B @Pyritie
 - Whiskey-filled chocolates now accept all forms of whiskey @Pyritie
+- Increased the effect tier of some of the medicine buffs to be more competitive with vintage alcohols @Pyritie
 ### Bug fixes
 - The disabled Fluid and Item Pipes are not craftable anymore @TomPlop
 - The Final Moments effect now only kills on natural effect completion instead of on refreshes or clears, and also maybe fixed it sometimes not leaving a corpse @Redeix
@@ -54,6 +55,7 @@
 - Fixed struts/trusses not having any mining tool assigned (#4468) @SakuraKitsurugi
 ### Shaders
 - The TFG shaders should now work on MacOS!
+- Fixed raw ore blocks rendering as transparent @Pyritie
 
 ## [0.13.4] - 12-07-2026
 

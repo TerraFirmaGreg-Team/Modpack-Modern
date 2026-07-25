@@ -2,13 +2,13 @@
     "parent": "block/block",
     "loader": "forge:composite",
     "textures": {
-        "particle": "gtceu:block/material_sets/quartz/raw_ore_block"
+        "particle": "gtceu:block/material_sets/dull/raw_ore_block"
     },
     "children": {
         "bottom": {
             "parent": "block/block",
             "textures": {
-                "layer0": "gtceu:block/material_sets/quartz/raw_ore_block",
+                "layer0": "gtceu:block/material_sets/dull/raw_ore_block",
                 "particle": "#layer0"
             },
             "render_type": "solid",
@@ -54,7 +54,7 @@
         "top": {
             "parent": "block/block",
             "textures": {
-                "layer1": "gtceu:block/material_sets/quartz/raw_ore_block_secondary",
+                "layer1": "gtceu:block/material_sets/dull/raw_ore_block_secondary",
                 "particle": "#layer1"
             },
             "render_type": "translucent",
