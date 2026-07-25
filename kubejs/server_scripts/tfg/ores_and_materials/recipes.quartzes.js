@@ -23,14 +23,14 @@ function registerTFGQuartzRecipes(event) {
 		.duration(7 * 20)
 		.EUt(60)
 
-	event.recipes.gtceu.electrolyzer('electrolyze_smoky_quartz_dust')
+	event.recipes.gtceu.electrolyzer('tfg:electrolyze_smoky_quartz_dust')
 		.itemInputs('3x #forge:dusts/nether_quartz')
 		.itemOutputs('gtceu:silicon_dust')
 		.outputFluids(Fluid.of('gtceu:oxygen', 2000))
 		.duration(7 * 20)
 		.EUt(60)
 
-	event.recipes.gtceu.electrolyzer('electrolyze_quartz_dust')
+	event.recipes.gtceu.electrolyzer('tfg:electrolyze_quartz_dust')
 		.itemInputs('3x #forge:dusts/quartzite')
 		.itemOutputs('gtceu:silicon_dust')
 		.outputFluids(Fluid.of('gtceu:oxygen', 2000))
