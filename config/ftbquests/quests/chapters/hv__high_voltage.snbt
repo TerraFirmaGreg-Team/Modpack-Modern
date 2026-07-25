@@ -69,6 +69,20 @@
 			x: 17.0d
 			y: -6.0d
 		}
+		{
+			id: "32FFB5754312AA2F"
+			linked_quest: "38FF003C9349C0F2"
+			shape: "heart"
+			x: 6.0d
+			y: -7.5d
+		}
+		{
+			id: "110B41E737911196"
+			linked_quest: "4C37DAD7C66523CC"
+			shape: "heart"
+			x: 7.0d
+			y: -7.5d
+		}
 	]
 	quests: [
 		{
@@ -1153,7 +1167,9 @@
 			dependencies: [
 				"3FBDC8552F7D8008"
 				"72BD27FEEB34C7B0"
+				"1FF607647FA682B3"
 			]
+			dependency_requirement: "one_completed"
 			description: [
 				"{quests.high_voltage.space_suit.desc.1}"
 				"{@pagebreak}"
@@ -1744,6 +1760,7 @@
 							}
 						}
 					}
+					match_nbt: true
 					optional_task: true
 					type: "item"
 				}
@@ -1815,6 +1832,7 @@
 						}
 					}
 				}
+				match_nbt: true
 				type: "item"
 			}]
 			x: 5.0d
