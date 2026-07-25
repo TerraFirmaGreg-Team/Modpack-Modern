@@ -130,7 +130,7 @@ function registerTACZGunRecipes(event){
 		.duration(120)
 	event.recipes.gtceu.assembler('tfg_tacz:ca_flywheel_mg')
 		.itemInputs('gtceu:steel_normal_fluid_pipe', '10x #forge:ingots/aluminium', '6x #forge:ingots/black_steel', 
-					'6x #forge:plates/brass', 'create:brass_mechanism', '3x gtceu:steel_tiny_fluid_pipe', 
+					'6x #forge:plates/brass', 'create:precision_mechanism', '3x gtceu:steel_tiny_fluid_pipe', 
 					'2x gtceu:treated_wood_planks','20x #forge:screws/black_steel', '2x tfg:advanced_clockwork_mechanism')
 		.inputFluids(Fluid.of('gtceu:soldering_alloy', 1008))
 		.itemOutputs(Item.of('tacz:modern_kinetic_gun', 
