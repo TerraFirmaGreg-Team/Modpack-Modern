@@ -16143,6 +16143,30 @@
             },
             "files": [
                 {
+                    "type": "modrinth",
+                    "file_name": "TerraFirmaGreg-Core-Modern-0.9.17.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/lNttW2Xl/versions/UCC3oEfP/TerraFirmaGreg-Core-Modern-0.9.17.jar",
+                    "id": "UCC3oEfP",
+                    "parent_id": "lNttW2Xl",
+                    "hashes": {
+                        "sha512": "57ca6c530106c2663923487c2177e4e6b455de78d2dc5d1262a2f63d7cf5cb08c351354e78cd714b6d85b7927ebfeb9cb307cdb8f4a7431d821f3e4f477812c3",
+                        "sha1": "e22f9d2de05f37a37c673c5de659b8d7efd9be60"
+                    },
+                    "required_dependencies": [
+                        "vvuO3ImH",
+                        "1o7aFiY6"
+                    ],
+                    "size": 14610826,
+                    "date_published": "2026-07-25T21:27:35.886621Z"
+                },
+                {
                     "type": "curseforge",
                     "file_name": "TerraFirmaGreg-Core-Modern-0.9.16.jar",
                     "mc_versions": [
@@ -16164,30 +16188,6 @@
                     ],
                     "size": 14479958,
                     "date_published": "2026-07-12T17:06:54.217Z"
-                },
-                {
-                    "type": "modrinth",
-                    "file_name": "TerraFirmaGreg-Core-Modern-0.9.16.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/lNttW2Xl/versions/iKqWqLsV/TerraFirmaGreg-Core-Modern-0.9.16.jar",
-                    "id": "iKqWqLsV",
-                    "parent_id": "lNttW2Xl",
-                    "hashes": {
-                        "sha512": "8045704645855e4c56f19a58e36982f4d62c0155fe9cfc906fe93263169928ee28b3e689afd0d8cc21e71f6f2063e469458c64bf930aacb776a73dfd23634ac7",
-                        "sha1": "e03df94ad46c51b4c48bd9b31fab66a5d29a39bf"
-                    },
-                    "required_dependencies": [
-                        "1o7aFiY6",
-                        "vvuO3ImH"
-                    ],
-                    "size": 14479958,
-                    "date_published": "2026-07-12T17:06:57.548563Z"
                 }
             ]
         },

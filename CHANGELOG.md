@@ -1,6 +1,10 @@
 # Changelog
 
 ## Unreleased
+### Changes
+### Bug fixes
+
+## [0.13.5] - 25-07-2026
 ### Breaking Changes
 - Remove two steps in the Uvarovite-Chromium line so it's more appropriate to MV difficulty (the now-useless recipes and materials will be removed later) @TomPlop
 - The Gas Well will no longer void Natural Gas if the output hatch is full, but will keep consuming Explosives and Water/Steam @TomPlop
@@ -75,7 +79,6 @@
 - Fixed raw ore blocks rendering as transparent @Pyritie
 
 ## [0.13.4] - 12-07-2026
-
 ### Ore Processing
 - New Crushed/Refined Garnet Sand line offering massive amount of Chromium and byproducts (Yttrium)
 - Fix Molybdenum being obtainable from other sources
