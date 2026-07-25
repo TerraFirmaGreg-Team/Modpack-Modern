@@ -132,25 +132,25 @@
             "type": "patchouli:text",
             "anchor": "contaminants",
             "text": "In addition to nutrients $(bold)$(#ff0fb7)TerraFirma$()$()$(bold)$(#595959)Greg$()$() also adds contaminants. There are three contaminants, all obtainable from food: $(l)$(d)Toxins$()$(), $(l)$(4)Parasites$()$(), and $(l)$(3)Microplastics$()$(). Contaminants can be passed into meal items and build up within the player.",
-            "title": "Contaminants"
+            "title": "Contaminantes"
         },
         {
-            "title": "Toxins",
+            "title": "Toxinas",
             "type": "patchouli:text",
             "anchor": "toxins",
             "text": "$(l)$(d)Toxins$()$() come from specifically dangerous crops and meats. Toxins decrease naturally at a rate of 3%/day. Consume $(item)Detox Capsules$() to actively $(l:tfg_tips/mob_effects_glossary#cure_toxins)Cure Toxins$().$(br2)Increasing your toxins value gives the following effects:$()$(li)$(bold)Value >0% → $()$()$(italic)On any new increase: 25% chance to get a random hazardous effect for 10sec.$()$(li)$(bold)Value >99% → $()$()$(italic)$(l:tfg_tips/mob_effects_glossary#final_moments)Death.$()"
         },
         {
-            "title": "Parasites",
+            "title": "Parasitas.",
             "type": "patchouli:text",
             "anchor": "parasites",
             "text": "$(l)$(4)Parasites$()$() come from eating certain raw meats or drinking muddy water. Consume $(item)Parasiticide Capsules$() to actively $(l:tfg_tips/mob_effects_glossary#cure_parasites)Cure Parasites$().$(br2)Increasing your parasites value gives the following effects:$()$(li)$(bold)Value >10% → $()$()$(italic)20% chance to increase by 10% each day to a max of 60%.$()$(li)$(bold)Value >33% → $()$()$(italic)Increases passive exhaustion by 25%.$()$(li)$(bold)Value >66% → $()$()$(italic)Increases passive exhaustion by 50%.$()"
         },
         {
-            "title": "Microplastics",
+            "title": "Microplásticos",
             "type": "patchouli:text",
             "anchor": "microplastics",
-            "text": "$(l)$(3)Microplastics$()$() come from consuming food packaged in plastic. Microplastics decrease naturally at a rate of 1%/day. Consume $(item)Nanofiltration Capsules$() to actively $(l:tfg_tips/mob_effects_glossary#cure_microplastics)Cure Microplastics$().$(br)Increasing your microplastics value gives the following effects:$()$(li)$(bold)Value >33% → $()$()$(italic)Increase high-temp thirst decay multiplier by 25%$()$(li)$(bold)Value >66% ↴$()$()$(italic)$(li2)Increase high-temp thirst decay multiplier by 50%.$()$()$(italic)$(li2)On any new increase: 5% chance to get $(l:tfg_ores/hazards#Carcinogens)Cancer$().$()$()"
+            "text": "$(l)$(3)Microplásticos$()$() provêm do consumo de alimentos embalados em plástico. Os níveis de microplásticos diminuem naturalmente a uma taxa de 1%/dia. Consuma $(item)Cápsulas de Nanofiltração$() para ativamente $(l:tfg_tips/mob_effects_glossary#cure_microplastics)Curar Microplásticos$().$(br)Aumentar os valores de microplásticos causa os seguintes efeitos:$()$(li)$(bold)Valor >33% → $()$()$(italic)Aumenta em 25% o multiplicador de desidratação em altas temperaturas.$()$(li)$(bold)Valor >66% ↴$()$()$(italic)$(li2)Aumenta em 50% o multiplicador de desidratação em altas temperaturas.$()$()$(italic)$(li2)A qualquer novo aumento: 5% de chance de contrair $(l:tfg_ores/hazards#Carcinogens)Câncer$().$()$()"
         },
         {
             "type": "patchouli:text",

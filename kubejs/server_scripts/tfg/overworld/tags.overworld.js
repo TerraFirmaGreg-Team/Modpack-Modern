@@ -252,14 +252,12 @@ function registerTFGOverworldBiomeTags(event) {
 	event.add('tfg:has_structure/illager_camp', 'tfc:highlands')
 	event.add('tfg:has_structure/illager_camp', 'tfc:hills')
 	event.add('tfg:has_structure/illager_camp', 'tfc:inverted_badlands')
-	event.add('tfg:has_structure/illager_camp', 'tfc:lowlands')
 	event.add('tfg:has_structure/illager_camp', 'tfc:mountains')
 	event.add('tfg:has_structure/illager_camp', 'tfc:oceanic_mountains')
 	event.add('tfg:has_structure/illager_camp', 'tfc:old_mountains')
 	event.add('tfg:has_structure/illager_camp', 'tfc:plains')
 	event.add('tfg:has_structure/illager_camp', 'tfc:plateau')
 	event.add('tfg:has_structure/illager_camp', 'tfc:rolling_hills')
-	event.add('tfg:has_structure/illager_camp', 'tfc:salt_marsh')
 	event.add('tfg:has_structure/illager_camp', 'tfc:shore')
 	event.add('tfg:has_structure/illager_camp', 'tfc:tidal_flats')
 	event.add('tfg:has_structure/illager_camp', 'tfc:volcanic_mountains')
@@ -318,6 +316,7 @@ function registerTFGOverworldBiomeTags(event) {
 	event.add('tfg:has_structure/illager_camp', 'tfg:earth/whorled_canyons')
 
 	event.add('tfg:has_structure/illager_roaming', '#tfg:has_structure/illager_camp')
+	event.add('tfg:has_structure/mineshaft', '#tfg:has_structure/illager_camp')
 
 	event.add('tfg:never_has_structure/water', '#tfc:is_lake')
 	event.add('tfg:never_has_structure/water', '#tfc:is_ocean')
@@ -468,7 +467,7 @@ function registerTFGOverworldPlacedFeatures(event) {
 	event.add("tfc:in_biome/veins", "tfg:earth/geode/gypsum");
 	event.add("tfc:in_biome/veins", "tfg:earth/geode/opal");
 	event.add("tfc:in_biome/veins", "tfg:earth/geode/pyrite");
-	event.add("tfc:in_biome/veins", "tfg:earth/geode/quartzite");
+	event.add("tfc:in_biome/veins", "tfg:earth/geode/red_garnet");
 
 	// Crops
 	event.add("tfc:feature/crops", "tfg:earth/crop/sunflower_patch");
@@ -573,7 +572,12 @@ function registerTFGOverworldEntityTypeTags(event) {
 
 	event.add('tfg:slimes', 'minecraft:slime')
 	event.add('tfg:slimes', 'minecraft:magma_cube')
-	event.add('tfg:slimes', 'tfg:slime')
+	event.add('tfg:slimes', 'jellies:glowberry')
+	event.add('tfg:slimes', 'jellies:ice')
+	event.add('tfg:slimes', 'jellies:latex')
+	event.add('tfg:slimes', 'jellies:lava')
+	event.add('tfg:slimes', 'jellies:plant')
+	event.add('tfg:slimes', 'jellies:spring')
 
 	// Takes no damage from the new 1.21 cacti
 	event.add('tfg:ignores_cacti', 'waves:waves')

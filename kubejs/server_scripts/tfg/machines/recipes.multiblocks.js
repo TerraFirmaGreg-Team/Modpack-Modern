@@ -78,7 +78,7 @@ function registerTFGMultiblockRecipes(event) {
 		'ACA'
 	], {
 		A: '#forge:plates/brass',
-		B: 'create:steam_engine',
+		B: 'create:flywheel',
 		C: ChemicalHelper.get(TagPrefix.gear, GTMaterials.Invar, 1),
 		D: '#gtceu:circuits/lv'
 	}).addMaterialInfo().id('tfg:shaped/steam_thermal_centrifuge')

@@ -22,6 +22,10 @@ concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
+permissions:
+  contents: write
+  pull-requests: write
+
 env:
   LOCALIZATION_BRANCH: translations
   TARGET_BRANCH: dev
@@ -91,14 +95,13 @@ jobs:
 
       - name: "Remove empty translation files"
         run: |
-          find kubejs/assets -name "*.json" -type f -exec sh -c '
-            jq -e "keys | length == 0" "$1" >/dev/null 2>&1 && rm "$1"
-          ' _ {} \;
+          find kubejs/assets -name "*.json" -type f -exec sh -c 'jq -e "keys | length == 0" "$1" >/dev/null 2>&1 && rm "$1"' _ {} \;
 
       - name: "Commit and push changes"
         uses: stefanzweifel/git-auto-commit-action@v7
         with:
-          commit_message: "Remove empty translation files"
+          commit_message: "[translation] Remove empty translation files"
+          commit_author: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
           branch: ${{ env.LOCALIZATION_BRANCH }}
 
   create-pr:
@@ -110,7 +113,15 @@ jobs:
       - name: "Checkout repository"
         uses: actions/checkout@v7
 
+      - name: "Generate GitHub App Token"
+        id: generate_token
+        uses: actions/create-github-app-token@v3
+        with:
+          client-id: ${{ secrets.APP_ID }}
+          private-key: ${{ secrets.APP_PRIVATE_KEY }}
+
       - name: "Create Pull Request"
+        id: create_pr
         uses: devops-infra/action-pull-request@v1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
@@ -126,5 +137,14 @@ jobs:
             - Updated translation files
             - Patchouli book translations
 
-            ### 🧪 Testing
-            Test in-game with different languages.
+      - name: "Automatically Merge PR"
+        uses: pascalgn/automerge-action@v0.16.4
+        env:
+          GITHUB_TOKEN: "${{ steps.generate_token.outputs.token }}"
+          MERGE_METHOD: "squash"
+          MERGE_LABELS: ""
+          MERGE_REQUIRED_APPROVALS: "0"
+          MERGE_DELETE_BRANCH: true
+          MERGE_READY_STATE: "clean,has_hooks,unknown,unstable,blocked"
+          PULL_REQUEST: ${{ steps.create_pr.outputs.pr_number }}
+          

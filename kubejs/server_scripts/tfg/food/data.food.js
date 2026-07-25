@@ -62,6 +62,7 @@ function registerTFGFoodData(event) {
 	event.foodItem("tfg:food/ice_soup", (food) => {
 		food.hunger(1);
 		food.water(20);
+		food.cooling(3);
 		food.decayModifier(0);
 	});
 
@@ -70,7 +71,8 @@ function registerTFGFoodData(event) {
 		food.hunger(4.0);
 		food.decayModifier(0.8);
 		food.water(5);
-		food.fruit(2);
+		food.fruit(1);
+		food.sugary(1);
 		food.saturation(1);
 	});
 

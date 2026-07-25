@@ -15,7 +15,7 @@
         {
             "type": "patchouli:text",
             "anchor": "thatch",
-            "text": "With just a $(l:getting_started/introduction#knife)Stone Knife$(), you are able to obtain $(thing)Straw$() by breaking plant like blocks. This can be used to craft a very simple building material: $(thing)Thatch$(). Thatch is a lightweight block that isn't affected by gravity, however players and other entities can pass right through it! It can also be crafted back into $(thing)Straw$() if needed.",
+            "text": "Имея всего лишь $(l:getting_started/introduction#knife)Каменный нож$(), вы можете добыть $(thing)Солому$(), ломая растительность. Её можно использовать для создания очень простого строительного материала: $(thing)Снопа соломы$(). Сноп соломы это лёгкий блок, на который не действует гравитация, однако игроки и другие существа могут проходить сквозь него насквозь! При необходимости его также можно переработать обратно в $(thing)Солому$().",
             "title": "Сноп соломы"
         },
         {
@@ -28,11 +28,11 @@
             "anchor": "mud_bricks",
             "recipe": "tfc:crafting/soil/loam_drying_bricks",
             "title": "Саманные кирпичи",
-            "text": "$(thing)Mud$() can be found on the ground, underneath rivers and lakes, or in patches in low elevation swampy environments. With a little bit of $(thing)Straw$(), it can be crafted into $()Wet Mud Bricks$()."
+            "text": "$(thing)Грязь$() можно найти на земле, под реками и озёрами или отдельными участками в низинных болотистых биомах. Добавив немного $(thing)Соломы$(), из неё можно сделать $()Влажные грязевые кирпичи$()."
         },
         {
             "type": "tfc:multimultiblock",
-            "text": "These can be placed on the ground in a dry location, and after a day they will harden into $(thing)Mud Bricks$().",
+            "text": "Их можно разместить на земле в сухом месте, и через день они затвердеют в $(thing)Грязевые кирпичи$().",
             "multiblocks": [
                 {
                     "pattern": [
@@ -74,7 +74,7 @@
             "type": "patchouli:crafting",
             "recipe": "tfc:crafting/soil/loam_mud_bricks",
             "title": " ",
-            "text": "These dried mud bricks can then be crafted into $(thing)Mud Brick Blocks$(). They can also be made into $(thing)Stairs$(), $(thing)Slabs$(), or $(thing)Walls$(), if so desired."
+            "text": "Затем из этих высушенных грязевых кирпичей можно сделать $(thing)Блоки грязевых кирпичей$(). Из них также можно сделать $(thing)Ступени$(), $(thing)Плиты$() или $(thing)Ограды$(), при желании."
         },
         {
             "type": "patchouli:multiblock",
@@ -92,19 +92,19 @@
                 }
             },
             "name": "",
-            "text": "All different varieties of mud bricks.",
+            "text": "Все разновидности грязевых кирпичей.",
             "enable_visualize": false
         },
         {
             "type": "patchouli:text",
             "anchor": "wattle_and_daub",
-            "text": "$(thing)Wattle$() and $(thing)Daub$() is a versatile building and decoration block.$(br2)$(thing)Wattle$() can be crafted and placed, however it is breakable and allows players and mobs to walk through it. It can be augmented with $(thing)Daub$(), to make it solid.",
+            "text": "$(thing)Обрешётка$() и $(thing)Глиняно-соломенная смесь$() это универсальный строительный декоративный блок.$(br2)$(thing)Обрешётку$() можно скрафтить и разместить, однако она хрупка и позволяет игрокам и мобам проходить сквозь неё. Её можно укрепить с помощью $(thing)Глиняно-соломенной смеси$(), чтобы сделать твёрдой.",
             "title": "Дом из грязи и палок"
         },
         {
             "type": "patchouli:crafting",
             "recipe": "tfc:crafting/wattle",
-            "text": "In order to make $(thing)Wattle$() solid, it first must be woven, which requires adding sticks to the structure."
+            "text": "Чтобы сделать $(thing)Обрешётку$() твёрдой, её сначала нужно заплести, для чего требуется добавить палки к структуре."
         },
         {
             "type": "patchouli:crafting",
@@ -117,19 +117,19 @@
             "images": [
                 "tfc:textures/gui/book/tutorial/wattle_weave.png"
             ],
-            "text": "Four sticks are required to $(thing)weave$() wattle.",
+            "text": "Требуется четыре палки, чтобы $(thing)заплести$() обрешётку.",
             "border": true
         },
         {
             "type": "patchouli:text",
-            "text": "At any time, sticks can be added on each diagonal, as well as the top and bottom. Hold a single $(thing)Stick$() in your hand and $(item)$(k:key.use)$() it to add a stick. Change what part of the wattle you're adding the stick to by selecting a different side of the face."
+            "text": "В любое время палки можно добавить по каждой диагонали, а также сверху и снизу. Возьмите в руку одну $(thing)Палку$() и нажмите $(item)$(k:key.use)$(), чтобы добавить её. Изменяйте часть обрешётки, к которой добавляете палку, выбирая соответствующую часть грани блока."
         },
         {
             "type": "patchouli:image",
             "images": [
                 "tfc:textures/gui/book/tutorial/wattle_add_stick.png"
             ],
-            "text": "Adding sticks to wattle.",
+            "text": "Добавление палок к обрешётке.",
             "border": true
         },
         {
@@ -137,7 +137,7 @@
             "images": [
                 "tfc:textures/gui/book/tutorial/wattle_add_daub.png"
             ],
-            "text": "Using $(thing)Daub on $(thing)Woven Wattle$() creates a solid block.",
+            "text": "Использование $(thing)Глиняно-соломенной смеси на $(thing)Заплетённой обрешётке$() создаёт твёрдый блок.",
             "border": true
         },
         {
@@ -145,19 +145,19 @@
             "images": [
                 "tfc:textures/gui/book/tutorial/wattle_stained.png"
             ],
-            "text": "It can then be $(thing)stained$() by using $(l:mechanics/dye)Dye$() on it.",
+            "text": "Затем его можно $(thing)окрасить$(), используя на нём $(l:mechanics/dye)Краситель$().",
             "border": true
         },
         {
             "type": "patchouli:text",
             "anchor": "clay_and_peat",
-            "text": "Clay obtained from the ground can be crafted into clay blocks. When placed and dug again, they'll turn back into clay. While unattractive, they are easy to obtain.$(br2)Peat spawns in the world in patches along water bodies and is mineable with stone tools. Some plants will grow on it.$(br2)However, peat is quite flammable.",
-            "title": "Clay Blocks and Peat"
+            "text": "Комки глины, добытые из земли, можно объединить в глиняные блоки. При размещении и повторном выкапывании они снова превратятся в комки глины. Хотя они и выглядят невзрачно, их легко получить.$(br2)Торф генерируется в мире участками вдоль водоёмов, и его можно добывать каменными инструментами. На нём могут расти некоторые растения.$(br2)Однако торф весьма горюч.",
+            "title": "Глиняные блоки и Торф"
         },
         {
             "type": "patchouli:crafting",
             "recipe": "tfg:shaped/clay_balls_to_block",
-            "title": "Clay Blocks"
+            "title": "Глиняные блоки"
         }
     ],
     "read_by_default": true,

@@ -22,7 +22,39 @@ function registerTFGEquipmentItemTags(event) {
     event.add('minecraft:trimmable_armor', 'tfcambiental:insulated_leather_tunic')
     event.add('minecraft:trimmable_armor', 'tfcambiental:insulated_leather_pants')
     event.add('minecraft:trimmable_armor', 'tfcambiental:insulated_leather_boots')
-    event.add('minecraft:trimmable_armor', '#firmalife:beekeeper_armor')	
+    event.add('minecraft:trimmable_armor', '#firmalife:beekeeper_armor')
+
+	const textiles = [
+		"crocodile",
+		"caribou",
+		"polar_bear",
+		"cougar",
+		"tiger",
+		"panther",
+		"sabertooth",
+		"black_bear",
+		"grizzly_bear",
+		"direwolf",
+		"lion"
+	];
+	const parts = [
+		"hat", "shirt", "pants", "boots"
+	];
+	textiles.forEach(textile => {
+		parts.forEach(part => {
+			event.add('minecraft:trimmable_armor', `tfc_textile:${textile}_${part}`)
+		})
+	})
+
+	// tfc textile, why do these have to use 'socks' instead of 'boots'? you were so close
+	event.add('minecraft:trimmable_armor', 'tfc_textile:raw_hat')
+	event.add('minecraft:trimmable_armor', 'tfc_textile:raw_shirt')
+	event.add('minecraft:trimmable_armor', 'tfc_textile:raw_pants')
+	event.add('minecraft:trimmable_armor', 'tfc_textile:raw_socks')
+	event.add('minecraft:trimmable_armor', 'tfc_textile:linen_hat')
+	event.add('minecraft:trimmable_armor', 'tfc_textile:linen_shirt')
+	event.add('minecraft:trimmable_armor', 'tfc_textile:linen_pants')
+	event.add('minecraft:trimmable_armor', 'tfc_textile:linen_socks')
 
 	event.add('minecraft:freeze_immune_wearables', 'tfc:metal/helmet/red_steel')
 	event.add('minecraft:freeze_immune_wearables', 'tfc:metal/chestplate/red_steel')

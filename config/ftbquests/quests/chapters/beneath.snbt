@@ -153,7 +153,11 @@
 			y: -6.0d
 		}
 		{
-			dependencies: ["6694C656C4D4792B"]
+			dependencies: [
+				"6694C656C4D4792B"
+				"45B3A5C226C0EC9F"
+			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.piglin_disguise.desc}"]
 			id: "2EE6A09A11BFC0EE"
 			optional: true
@@ -284,6 +288,7 @@
 			dependencies: [
 				"5D0B0B9E61C3DE75"
 				"6B2ADEEEC2E9ED4B"
+				"2E3C021FEAE6A490"
 			]
 			description: ["{quests.tfg_tips.blue_steel_diving.desc}"]
 			id: "1371C0F8BFDEE0FC"
@@ -593,7 +598,7 @@
 				"{@pagebreak}"
 				"{quests.tfg_tips.top_slimes.desc.2}"
 			]
-			icon: "tfg:slime/slime_ball/plant"
+			icon: "jellies:jellie/slime_ball/plant"
 			id: "5C8E47A086DF5EC0"
 			subtitle: "{quests.tfg_tips.top_slimes.subtitle}"
 			tasks: [
@@ -626,7 +631,7 @@
 				}
 				{
 					id: "78C8CDC154866808"
-					item: "tfg:slime/slime_ball/plant"
+					item: "jellies:jellie/slime_ball/plant"
 					optional_task: true
 					type: "item"
 				}
@@ -643,7 +648,7 @@
 			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.middle_slimes.desc}"]
 			disable_toast: true
-			icon: "tfg:slime/slime_ball/glowberry"
+			icon: "jellies:jellie/slime_ball/glowberry"
 			id: "743E9861F32E84A5"
 			subtitle: "{quests.tfg_tips.middle_slimes.subtitle}"
 			tasks: [
@@ -686,7 +691,7 @@
 				}
 				{
 					id: "19E226F88A0F9391"
-					item: "tfg:slime/slime_ball/glowberry"
+					item: "jellies:jellie/slime_ball/glowberry"
 					optional_task: true
 					type: "item"
 				}
@@ -706,7 +711,7 @@
 				"{@pagebreak}"
 				"{quests.tfg_tips.bottom_slimes.desc.2}"
 			]
-			icon: "tfg:slime/slime_ball/latex"
+			icon: "jellies:jellie/slime_ball/latex"
 			id: "4E98FB76D9AF0205"
 			subtitle: "{quests.tfg_tips.bottom_slimes.subtitle}"
 			tasks: [
@@ -722,7 +727,7 @@
 				}
 				{
 					id: "230B0F0E83D54EAF"
-					item: "tfg:slime/slime_ball/latex"
+					item: "jellies:jellie/slime_ball/latex"
 					type: "item"
 				}
 			]

@@ -698,6 +698,7 @@ global.FOOD_FRUIT = [
 	{name: 'peach', id: 'tfc:food/peach', color: 0xc56954, saturation: 0.4, water: 10, fruit: 0.5, decay: 2.5},
 	{name: 'plum', id: 'tfc:food/plum', color: 0x8a40b7, saturation: 0.4, water: 5, fruit: 0.8, decay: 2.25},
 	{name: 'red_apple', id: 'tfc:food/red_apple', color: 0x9f3131, saturation: 0.4, water: 0, fruit: 1, decay: 2.25},
+	{name: 'honeyed_apple', id: 'create:honeyed_apple', color: 0x9f3131, saturation: 0.4, water:0, fruit:1, sugary:1, decay: 2.25},
 	{name: 'pumpkin_chunks', id: 'tfc:food/pumpkin_chunks', color: 0xa97c4c, saturation: 1, water: 5, fruit: 0.8, decay: 2.25},
 	{name: 'melon_slice', id: 'tfc:food/melon_slice', color: 0xad160b, saturation: 0.2, water: 5, fruit: 0.8, decay: 2.25},
 	{name: 'fig', id: 'firmalife:food/fig', color: 0x9e4264, saturation: 1, water: 5, fruit: 0.9, decay: 1},
@@ -733,20 +734,8 @@ global.TFC_GRAINS = [
 // #endregion
 // #region Food Effects
 
-/** @type {string[]} - List of foods that apply the cooling effect */
-global.COOLING_FOODS = [
-	'firmalife:food/vanilla_ice_cream',
-	'firmalife:food/chocolate_ice_cream',
-	'firmalife:food/strawberry_ice_cream',
-	'firmalife:food/cookie_dough_ice_cream',
-	'firmalife:food/banana_split'
-];
-
-/** @type {string[]} - List of foods that apply a strong cooling effect */
-global.COOLING_FOODS_STRONG = [
-	'tfg:ice_soup'
-];
-
+// Im going to leave this as is until the soup refactor. Too annoying to
+// rewrite all the soup recipes to give the warming effect for now.
 /** @type {string[]} - List of foods that apply a warming effect */
 global.WARMING_FOODS = [
 	'tfc:food/grain_soup',
@@ -754,7 +743,7 @@ global.WARMING_FOODS = [
 	'tfc:food/vegetables_soup',
 	'tfc:food/protein_soup',
 	'tfc:food/dairy_soup',
-	'tfg:food/poutine'
+	'firmalife:food/stinky_soup'
 ];
 
 // #endregion

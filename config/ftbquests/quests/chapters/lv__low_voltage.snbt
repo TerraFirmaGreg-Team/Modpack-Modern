@@ -84,7 +84,7 @@
 			id: "258922881D3BAB94"
 			linked_quest: "1F7AAF65CC0A4ADF"
 			shape: "heart"
-			x: 0.0d
+			x: -1.0d
 			y: -6.0d
 		}
 		{
@@ -200,7 +200,7 @@
 				type: "item"
 			}]
 			title: "{quests.low_voltage.lv_steam_turbine.title}"
-			x: 1.0d
+			x: 0.0d
 			y: -6.0d
 		}
 		{
@@ -1369,7 +1369,11 @@
 			y: 6.0d
 		}
 		{
-			dependencies: ["3E6DC423FE4A99F7"]
+			dependencies: [
+				"3E6DC423FE4A99F7"
+				"165215273D49B85B"
+			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.low_voltage.night_vision_goggles.desc}"]
 			id: "4B4F052F00435AFE"
 			optional: true
@@ -1386,38 +1390,6 @@
 			}]
 			x: 7.0d
 			y: 5.5d
-		}
-		{
-			dependencies: ["7FA1525D681C4B4A"]
-			description: ["{quests.steam_age.alternator.desc.1}"]
-			icon: "createaddition:alternator"
-			id: "2DC24661CAD557B0"
-			optional: true
-			subtitle: "{quests.steam_age.alternator.subtitle}"
-			tasks: [
-				{
-					id: "5367AD306EAB07E2"
-					item: "createaddition:alternator"
-					type: "item"
-				}
-				{
-					id: "040F5FC6058411EE"
-					item: {
-						Count: 1
-						id: "ftbfiltersystem:smart_filter"
-						tag: {
-							display: {
-								Name: "{\"text\":\"LV Converter\"}"
-							}
-							"ftbfiltersystem:filter": "or(item(gtceu:lv_1a_energy_converter)item(gtceu:lv_4a_energy_converter)item(gtceu:lv_8a_energy_converter)item(gtceu:lv_16a_energy_converter))"
-						}
-					}
-					type: "item"
-				}
-			]
-			title: "{quests.steam_age.alternator.title}"
-			x: -1.0d
-			y: -6.0d
 		}
 		{
 			dependencies: [
@@ -1445,7 +1417,6 @@
 		{
 			dependencies: [
 				"170B544373A16112"
-				"2DC24661CAD557B0"
 				"1AD51E2B66EA7F67"
 				"6E186F9C57155BFA"
 			]
@@ -1583,12 +1554,12 @@
 			shape: "heart"
 			subtitle: "{quests.low_voltage.lv_seeds.subtitle}"
 			tasks: [{
-				id: "0910468BF66597DE"
+				id: "732AF8D135994E94"
 				item: {
 					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						"ftbfiltersystem:filter": "or(item(tfg:rapeseed_seeds)item(tfg:sunflower_seeds))"
+						"ftbfiltersystem:filter": "or(item(tfg:rapeseed_seeds)item(tfg:sunflower_seeds)item(tfg:peanut_seeds)item(tfc:seeds/soybean)item(tfg:palm_tree/oil_palm_sapling)item(tfc:plant/olive_sapling))"
 					}
 				}
 				title: "{quests.low_voltage.lv_seeds.task}"
@@ -1632,7 +1603,13 @@
 					type: "item"
 				}
 				{
-					id: "4DD43C796578251A"
+					id: "36DCD9CC6EC21699"
+					item: "tfg:palm_oil_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "59EF011ACBBE19B0"
 					type: "checkmark"
 				}
 			]
@@ -1695,11 +1672,23 @@
 				{
 					id: "2E64EF18DC263002"
 					item: "greate:large_aluminium_cogwheel"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "32C96E141753187B"
 					item: "greate:aluminium_shaft"
+					type: "item"
+				}
+				{
+					id: "12417889D1FEF40F"
+					item: "steampowered:cast_iron_steam_engine"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "783001EEAB92FFB1"
+					item: "steampowered:cast_iron_flywheel"
 					optional_task: true
 					type: "item"
 				}

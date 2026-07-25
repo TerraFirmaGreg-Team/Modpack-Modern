@@ -27,7 +27,7 @@
             "type": "patchouli:crafting",
             "anchor": "mud_bricks",
             "recipe": "tfc:crafting/soil/loam_drying_bricks",
-            "title": "Mud Bricks",
+            "title": "Vályogtégla",
             "text": "$(thing)Mud$() can be found on the ground, underneath rivers and lakes, or in patches in low elevation swampy environments. With a little bit of $(thing)Straw$(), it can be crafted into $()Wet Mud Bricks$()."
         },
         {

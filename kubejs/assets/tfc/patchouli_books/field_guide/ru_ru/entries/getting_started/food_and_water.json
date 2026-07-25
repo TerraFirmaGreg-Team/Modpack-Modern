@@ -114,19 +114,19 @@
             "title": "Белки",
             "type": "patchouli:text",
             "anchor": "protein",
-            "text": "$(l)$(c)Белки$()$() можно получать потребляя мясо диких $(l:the_world/wild_animals)Животных$(). Их также можно получить съедая $(thing)Бобовые$()\n\nЭффекты:$()$(li)$(bold)Среднее >55% → $()$()$(italic)Уменьшает множитель истощения на 25%.$()$(li)$(bold)Среднее >85% → $()$()$(italic)Позволяет переносить дополнительный тяжёлый/большой предмет без $(l:getting_started/size_and_weight#overburdening)Перегрузки$()$()"
+            "text": "$(l)$(c)Белки$()$() можно получать потребляя мясо диких $(l:the_world/wild_animals)Животных$(). Их также можно получить съедая $(thing)Бобовые$().$(br2)Эффекты:$()$(li)$(bold)Среднее >55% → $()$()$(italic)Уменьшает множитель истощения на 25%.$()$(li)$(bold)Среднее >85% → $()$()$(italic)Позволяет переносить дополнительный тяжёлый/большой предмет без $(l:getting_started/size_and_weight#overburdening)Перегрузки$()$()"
         },
         {
             "title": "Зерновые",
             "type": "patchouli:text",
             "anchor": "grain",
-            "text": "$(l)$(6)Grain$()$() is found in cereal crops, such as $(l:mechanics/crops#barley)Barley$(). The processing of grain is on the $(l:firmalife/bread)Bread$() page. Some root crops also count as grains.$(br2)Increasing your grain value gives the following effects:$()$(li)$(bold)Value >55% → $()$()$(italic)Gives a 5% speed buff.$()$(li)$(bold)Value >85% → $()$()$(italic)Gives a 15% speed buff.$()"
+            "text": "$(l)$(6)Зерновые$()$() можно найти в злаковых культурах, таких как $(l:mechanics/crops#barley)Ячмень$(). Процесс переработки зерна описан на странице $(l:firmalife/bread)Хлеб$(). Некоторые корнеплоды также считаются зерновыми.$(br2)Увеличение уровня зерновых дает следующие эффекты:$()$(li)$(bold)Среднее >55% →$()$()$(italic)Даёт 5% бонус к скорости бега.$()$(li)$(bold)Среднее >85%  →$()$()$(italic)Даёт 15% бонус к скорости бега.$()"
         },
         {
             "title": "Молочные",
             "type": "patchouli:text",
             "anchor": "dairy",
-            "text": "$(l)$(5)Dairy$()$() comes from $(thing)Milk$(), which is derived from $(l:mechanics/animal_husbandry#dairy_animals)Dairy Animals$(). Processing and drinking milk is covered on the $(l:firmalife/cheese)Dairy$() page.$(br2)Increasing your dairy value gives the following effects:$()$(li)$(bold)Value >55% → $()$()$(italic)Gives the $(thing)Feather Falling I$() effect.$()$(li)$(bold)Value >85% → $()$()$(italic)Gives the $(thing)Feather Falling IV$() effect.$()"
+            "text": "$(l)$(5)Молочные$()$() можно получить из $(thing)Молока$(), которое дают $(l:mechanics/animal_husbandry#dairy_animals)Молочные животные$(). Процесс переработки и употребления молока описан на странице $(l:firmalife/cheese)Молочные продукты$().$(br2)Увеличения уровня молочных даёт следующие эффекты:$()$(li)$(bold)Среднее >55% → $()$()$(italic)Накладывает эффект $(thing)Невесомость I$().$()$(li)$(bold)Среднее >85% → $()$()$(italic)Накладывает эффект $(thing)Невесомость IV$().$()"
         },
         {
             "type": "patchouli:text",
@@ -138,104 +138,104 @@
             "title": "Токсины",
             "type": "patchouli:text",
             "anchor": "toxins",
-            "text": "$(l)$(d)Toxins$()$() come from specifically dangerous crops and meats. Toxins decrease naturally at a rate of 3%/day. Consume $(item)Detox Capsules$() to actively $(l:tfg_tips/mob_effects_glossary#cure_toxins)Cure Toxins$().$(br2)Increasing your toxins value gives the following effects:$()$(li)$(bold)Value >0% → $()$()$(italic)On any new increase: 25% chance to get a random hazardous effect for 10sec.$()$(li)$(bold)Value >99% → $()$()$(italic)$(l:tfg_tips/mob_effects_glossary#final_moments)Death.$()"
+            "text": "$(l)$(d)Токсины$()$() попадают в организм из определённых опасных культур и мяса. Уровень токсинов снижается естественным путём со скоростью 3% в день. Используйте $(item)Капсулы детокса$(), чтобы активно $(l:tfg_tips/mob_effects_glossary#cure_toxins)Выводить токсины$().$(br2)Увеличение уровня токсинов даёт следующие эффекты:$()$(li)$(bold)Среднее >0% → $()$()$(italic)При любом новом повышении: 25% шанс получить случайный опасный эффект на 10 секунд.$()$(li)$(bold)Среднее >99% → $()$()$(italic)$(l:tfg_tips/mob_effects_glossary#final_moments)Смерть.$()"
         },
         {
             "title": "Паразиты",
             "type": "patchouli:text",
             "anchor": "parasites",
-            "text": "$(l)$(4)Parasites$()$() come from eating certain raw meats or drinking muddy water. Consume $(item)Parasiticide Capsules$() to actively $(l:tfg_tips/mob_effects_glossary#cure_parasites)Cure Parasites$().$(br2)Increasing your parasites value gives the following effects:$()$(li)$(bold)Value >10% → $()$()$(italic)20% chance to increase by 10% each day to a max of 60%.$()$(li)$(bold)Value >33% → $()$()$(italic)Increases passive exhaustion by 25%.$()$(li)$(bold)Value >66% → $()$()$(italic)Increases passive exhaustion by 50%.$()"
+            "text": "$(l)$(4)Паразиты$()$() появляются из-за употребления некоторых видов сырого мяса или питья грязной воды. Используйте $(item)Капсулу паразитицида$(), чтобы активно $(l:tfg_tips/mob_effects_glossary#cure_parasites)Уничтожать паразитов$().$(br2)Увеличение уровня паразитов даёт следующие эффекиы:$()$(li)$(bold)Среднее >10% → $()$()$(italic)20% шанс увеличения уровня на 10% каждый день, максимум 60%.$()$(li)$(bold)Среднее >33% → $()$()$(italic)Увеличивает пассивную усталость на 25%.$()$(li)$(bold)Среднее >66% → $()$()$(italic)Увеличивает пассивную усталость 50%.$()"
         },
         {
             "title": "Микропластик",
             "type": "patchouli:text",
             "anchor": "microplastics",
-            "text": "$(l)$(3)Microplastics$()$() come from consuming food packaged in plastic. Microplastics decrease naturally at a rate of 1%/day. Consume $(item)Nanofiltration Capsules$() to actively $(l:tfg_tips/mob_effects_glossary#cure_microplastics)Cure Microplastics$().$(br)Increasing your microplastics value gives the following effects:$()$(li)$(bold)Value >33% → $()$()$(italic)Increase high-temp thirst decay multiplier by 25%$()$(li)$(bold)Value >66% ↴$()$()$(italic)$(li2)Increase high-temp thirst decay multiplier by 50%.$()$()$(italic)$(li2)On any new increase: 5% chance to get $(l:tfg_ores/hazards#Carcinogens)Cancer$().$()$()"
+            "text": "$(l)$(3)Микропластик$()$() попадает в организм при употреблении еды, упакованной в пластик. Уровень микропластика снижается естественным путём со скоростью 1% в день. Используйте $(item)Капсулы нанофильтрации$(), чтобы активно $(l:tfg_tips/mob_effects_glossary#cure_microplastics)Выводить микропластик$().$(br)Увеличение уровня микропластика даёт следующие эффекты:$()$(li)$(bold)Среднее >33% → $()$()$(italic)Увеличивает множитель потери жажды высоких температурах на 25%$()$(li)$(bold)Среднее >66% ↴$()$()$(italic)$(li2)Увеличивает множитель потери жажды при высоких температурах на 50%.$()$()$(italic)$(li2)При оюбом новом повышении 5% шанс получить$(l:tfg_ores/hazards#Carcinogens)Рак$().$()$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "transient_effects",
-            "text": "$(bold)$(#ff0fb7)TerraFirma$()$()$(bold)$(#595959)Greg$()$() also adds $(item)Transient Effects$(). Transient effects exist for the purpose of transferring buffs/ debuffs from ingredients into meal items. Transient effects can be combined and consumed. However, they do not accumulate within the player―They are immediately consumed.$(br)The strength of the effect depends on the value of the nutrient. However, the way the strength is determined is not uniform for every type.$()",
+            "text": "$(bold)$(#ff0fb7)TerraFirma$()$()$(bold)$(#595959)Greg$()$() также добавляет$(item)Переходящие эффекты$(). Эти эффекты существуют для того, чтобы переносить баффы/дебаффы из ингридиентов в блюда. Временные эффекты можно комбинировать и употреблять. Однако они не накапливаются в игроке ― они сразу расходуются.$(br)Сила эффекта зависит от значения питательного вещества. Впрочем, способ определения силы не одинаков для каждого типа.$()",
             "title": "Переходящие эффекты"
         },
         {
             "type": "patchouli:text",
             "anchor": "cooling_transient_effect",
-            "text": "$(#12d7ff)❅$()$(bold) Cooling$()$(li)Gives the player the $(l:tfg_tips/mob_effects_glossary#cooling)Cooling$() effect with 1 minute of duration per 1 nutrient point. With a max duration of 30min.$()"
+            "text": "$(#12d7ff)❅$()$(bold) Охлаждение$()$(li)Накладывает на вас эффект$(l:tfg_tips/mob_effects_glossary#cooling)Охлаждения$() длительностью 1 минута за каждое очко питательного вещества. Максимальная длительность составляет 30 минут.$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "warming_transient_effect",
-            "text": "$(#ff7700)🔆$()$(bold) Warming$()$(li)Gives the player the $(l:tfg_tips/mob_effects_glossary#warming)Warming$() effect with 1 minute of duration per 1 nutrient point. With a max duration of 30min.$()"
+            "text": "$(#ff7700)🔆$()$(bold) Согревание$()$(li)Накладывает на вас эффект$(l:tfg_tips/mob_effects_glossary#warming)Согревание$() длительностью 1 минута за каждое очко питательного вещества. Максимальная длительность составляет 30 минут.$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "quenching_transient_effect",
-            "text": "$(#00c792)🍹$()$(bold) Quenching$()$(li)Gives the player the $(l:tfg_tips/mob_effects_glossary#quenched)Quenched$() effect with 1 minute of duration per 1 nutrient point. With a max duration of 30min.$()"
+            "text": "$(#00c792)🍹$()$(bold) Утоление жажды$()$(li)Накладывает на вас эффект $(l:tfg_tips/mob_effects_glossary#quenched)Утоление жажды$() длительностью 1 минута за каждое очко питательного вещества. Максимальная длительность составляет 30 минут.$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "bolstering_transient_effect",
-            "text": "$(#ffe417)♡$()$(bold) Bolstering$()$(li)Gives the player the $(n)Absorption$() effect for 8 minutes. With its amplifier scaled based on the amount of nutrient points with a max amplifier of 5.$()"
+            "text": "$(#ffe417)♡$()$(bold) Укрепление$()$(li)Накладывает на вас эффект $(n)Поглощения$() на 8 минут. Уровень эффекта масштабируется в зависимости от количества очков питательного вещества, а максимальный уровень составляет 5.$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "hearty_transient_effect",
-            "text": "$(#ff171b)♡$()$(bold) Hearty$()$(li)Gives the player the $(n)Health Boost$() effect for 8 minutes. With its amplifier scaled based on the amount of nutrient points with a max amplifier of 5.$()"
+            "text": "$(#ff171b)♡$()$(bold) Сытость$()$(li)Накладывает на вас эффект $(n)Повышения здоровья$() на 8 минут. Уровень эффекта масштабируется в зависимости от количества очков питательного вещества, а максимальный уровень составляет 5.$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "rejuvenating_transient_effect",
-            "text": "$(#ff178f)💕$()$(bold) Rejuvenating$()$(li)Gives the player the $(n)Regeneration$() effect with 1 minute of duration per 1 nutrient point. With a max duration of 3min.$()"
+            "text": "$(#ff178f)💕$()$(bold) Омолаживание$()$(li)Накладывает на вас эффект $(n)Регенерации$() длительностью 1 минута за каждое 1 очко питательного вещества. Максимальная длительность составляет 3 минуты.$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "freezing_transient_effect",
-            "text": "$(#12d7ff)⛇$()$(bold) Freezing$()$(li)Gives the player the $(l:tfg_tips/mob_effects_glossary#freezing)Freezing$() effect with 5 seconds of duration per 1 nutrient point. With a max duration of 30sec.$()"
+            "text": "$(#12d7ff)⛇$()$(bold) Замерзание$()$(li)Накладывает на вас эффект $(l:tfg_tips/mob_effects_glossary#freezing)Замерзание$() длительностью 5 секунд за каждое 1 очко питательного вещества. Максимальная длительность составляет 30 секунд.$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "blazing_transient_effect",
-            "text": "$(#ff7700)🔥$()$(bold) Blazing$()$(li)Gives the player the $(l:tfg_tips/mob_effects_glossary#blazing)Blazing$() effect with 5 seconds of duration per 1 nutrient point. With a max duration of 30sec.$()"
+            "text": "$(#ff7700)🔥$()$(bold) Обжигание$()$(li)Накладывает на вас эффект $(l:tfg_tips/mob_effects_glossary#blazing)Обжигание$() длительностью 5 секунд за каждое 1 очко питательного вещества. Максимальная длительность составляет 30 секунд.$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "radiating_transient_effect",
-            "text": "$(#9fc700)☢$()$(bold) Radiating$()$(li)Gives the player the $(n)Glowing$() effect for 24 seconds.$()$(li)Gives the player the $(l:tfg_tips/mob_effects_glossary#instant_radiation)Radiation$() effect for 24 seconds. With its amplifier scaled based on the amount of nutrient points with a max amplifier of 5.$()"
+            "text": "$(#9fc700)☢$()$(bold) Излучение$()$(li)Накладывает на вас эффект $(n)Свечения$() на 24 секунды.$()$(li)Накладывает на вас эффект $(l:tfg_tips/mob_effects_glossary#instant_radiation)Радиации$() на 24 секунды. Уровень эффекта масштабируется в зависимости от количества очков питательного вещества, а максимальный уровень составляет 5.$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "nauseating_transient_effect",
-            "text": "$(#078f00)🤢$()$(bold) Nauseating$()$(li)Gives the player the $(n)Nausea$() effect with 5 seconds of duration per 1 nutrient point. With a max duration of 12sec.$()$(li)Gives the player the $(n)Hunger VI$() effect with 10 seconds of duration per 1 nutrient point. With a max duration of 30sec.$()"
+            "text": "$(#078f00)🤢$()$(bold) Тошнота$()$(li)Накладывает на вас эффект $(n)Тошноты$() длительностью 5 секунд за каждое 1 очко питательного вещества. Максимальная длительность составляет 12 секунд.$()$(li)Накладывает на вас эффект $(n)Голода VI$() длительностью 10 секунд за каждое 1 очко питательного вещества. Максимальная длительность составляет 30 секунд.$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "parching_transient_effect",
-            "text": "🧂$(bold) Parching$()$(li)Gives the player the $(n)Thirsty$() effect with 1 minute of duration per 1 nutrient point. With a max duration of 8min.$()"
+            "text": "🧂$(bold) Обезвоживание$()$(li)Накладывает на вас эффект $(n)Жажды$() длительностью 1 минута за каждое 1 очко питательного вещества. Максимальная длительность составляет 8 минут.$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "deadly_transient_effect",
-            "text": "$(#470275)💀$()$(bold) Deadly$()$(li)Gives the player the $(l:tfg_tips/mob_effects_glossary#final_moments)Final Moments$() effect for 8min. With every additional nutrient point halving the duration.$()"
+            "text": "$(#470275)💀$()$(bold) Смертельность$()$(li)Накладывает на вас эффект $(l:tfg_tips/mob_effects_glossary#final_moments)Последние минуты$() длительностью 8 минут. Каждое дополнительное очко питательного вещества сокращает эту длительность вдвое.$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "fulfilling_transient_effect",
-            "text": "$(#551913)🍖$()$(bold) Fulfilling$()$(li)Gives the player the $(n)Resistance$() effect with 1 minute of duration per 1 nutrient point. With a max duration of 15min.$()$(li)Gives the player the $(n)Instant Health$() effect. With its amplifier scaled based on the amount of nutrient points with a max amplifier of 2.$()"
+            "text": "$(#551913)🍖$()$(bold) Удовлетворённость$()$(li)Накладывает на вас эффект $(n)Сопроттивления$() длительностью 1 минута за каждое 1 очко питательного вещества. Максимальная длительность составляет 15 минут.$()$(li)Накладывает на вас эффект $(n)Мгновенного лечения$(). Уровень эффекта масштабируется в зависимости от количества очков питательного вещества, а максимальный уровень составляет 2.$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "sugary_transient_effect",
-            "text": "$(#837447)🍰$()$(bold) Sugary$()$(li)Gives the player the $(n)Weakness$() effect with 15 seconds of duration per 1 nutrient point. With a max duration of 5min.$()$(li)Gives the player the $(n)Speed$() effect with 1 minute of duration per 1 nutrient point. With a max duration of 30min.$()"
+            "text": "$(#837447)🍰$()$(bold) Приторность$()$(li)Наккладывает на вас эффект $(n)Слабости$() длительностью 15 секунд за каждое 1 очко питательного вещества. Максимальная длительность составляет 5 минут.$()$(li)Накладывает на вас эффект $(n)Скорости$() длительностью 1 минута за каждое 1 очко питательного вещества. Максимальная длительность составляет 30 минут.$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "spicy_transient_effect",
-            "text": "$(#8F0000)🌶 $()$(bold) Spicy$()$(li)Gives the player the $(n)Thirsty$() effect with 15 seconds of duration per 1 nutrient point. With a max duration of 5min.$()$(li)Gives the player the $(l:tfg_tips/mob_effects_glossary#warming)Warming$() mob effect with 1 minute of duration per 1 nutrient point. With a max duration of 30min.$()"
+            "text": "$(#8F0000)🌶 $()$(bold) Жгучесть$()$(li)Накладывает на вас эффект $(n)Жажды$() длительностью 15 секунд за каждое 1 очко питательного вещества. Максимальная длительность составляет 5 минут.$()$(li)Накладывает на вас эффект $(l:tfg_tips/mob_effects_glossary#warming)Согревания$() длительностью 1 минута за каждое 1 очко питательного вещества. Максимальная длительность составляет 30 минут.$()"
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "Читать дальше",
             "anchor": "relations",
             "entries": [
                 "tfc:getting_started/size_and_weight",

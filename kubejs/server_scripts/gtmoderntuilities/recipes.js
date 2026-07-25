@@ -17,6 +17,10 @@ const registerGTModernUtilitiesRecipes = (event) => {
 			{ id: 'gtceu:assembler/omnibreaker' },
 			{ id: 'gtceu:shaped/luv_power_unit_lapotronic_energy_orb_cluster' },
 			{ id: 'gtceu:shaped/zpm_power_unit_energy_module' },
+			{ id: 'gtceu:assembly_line/pterb' },
+			{ id: 'gtceu:research_station/1x_gtmutils_web_receiver' },
+			{ id: 'gtceu:assembly_line/web' },
+			{ id: 'gtceu:research_station/1x_gtceu_active_transformer' }
 		], mod: 'gtmutils'
 	});
 }

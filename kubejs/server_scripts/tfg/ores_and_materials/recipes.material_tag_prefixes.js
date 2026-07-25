@@ -7,6 +7,10 @@
  * @param {com.gregtechceu.gtceu.api.data.chemical.material.Material_} material 
  */
 function processDust(event, material) {
+	const dust = ChemicalHelper.get(TagPrefix.dust, material, 1);
+	if (dust.isEmpty())
+		return;
+	
 	// Melting
 	const tfcProperty = material.getProperty(TFGPropertyKey.TFC_PROPERTY);
 	if (tfcProperty !== null) {
@@ -14,8 +18,35 @@ function processDust(event, material) {
 		addTFCMelting(event, tinyDust, material, global.calcAmountOfMetalProcessed(144 / 9, tfcProperty.getPercentOfMaterial()), 'tiny_dust');
 		const smallDust = ChemicalHelper.get(TagPrefix.dustSmall, material, 1);
 		addTFCMelting(event, smallDust, material, global.calcAmountOfMetalProcessed(144 / 4, tfcProperty.getPercentOfMaterial()), 'small_dust');
-		const dust = ChemicalHelper.get(TagPrefix.dust, material, 1);
 		addTFCMelting(event, dust, material, global.calcAmountOfMetalProcessed(144, tfcProperty.getPercentOfMaterial()), 'dust');
+	}
+
+	// Millstone/crushing wheels/macerator recipes are automatically created, but quern ones are not
+	if (!material.hasFlag(MaterialFlags.IS_MAGNETIC)) {
+		if (material.hasProperty(PropertyKey.INGOT)) {
+			const ingot = ChemicalHelper.get(TagPrefix.ingot, material, 1);
+			if (!ingot.isEmpty()) {
+				event.recipes.tfc.quern(dust, ingot)
+					.id(`tfg:quern/${material.getName()}_ingot_to_dust`)
+			}
+		}
+		else if (material.hasProperty(PropertyKey.GEM)) {
+			const gem = ChemicalHelper.get(TagPrefix.gem, material, 1);
+			if (!gem.isEmpty()) {
+				event.recipes.tfc.quern(dust, gem)
+					.id(`tfg:quern/${material.getName()}_gem_to_dust`)
+			}
+			const flawed = ChemicalHelper.get(TagPrefix.gemFlawed, material, 1);
+			if (!flawed.isEmpty()) {
+				event.recipes.tfc.quern(ChemicalHelper.get(TagPrefix.dustSmall, material, 2), flawed)
+					.id(`tfg:quern/${material.getName()}_flawed_gem_to_dust`)
+			}
+			const chipped = ChemicalHelper.get(TagPrefix.gemChipped, material, 1);
+			if (!chipped.isEmpty()) {
+				event.recipes.tfc.quern(ChemicalHelper.get(TagPrefix.dustSmall, material, 1), chipped)
+					.id(`tfg:quern/${material.getName()}_chipped_gem_to_dust`)
+			}
+		}
 	}
 }
 
@@ -451,7 +482,15 @@ function processBars(event, material) {
 function processBuzzsawBlade(event, material) {
 	const buzzsawBladeItem = ChemicalHelper.get(TagPrefix.toolHeadBuzzSaw, material, 1)
 	const doublePlateItem = ChemicalHelper.get(TagPrefix.plateDouble, material, 1)
-	if (buzzsawBladeItem.isEmpty() || doublePlateItem.isEmpty())
+	if (buzzsawBladeItem.isEmpty())
+		return;
+
+	TagPrefix.toolHeadBuzzSaw.modifyMaterialAmount(material, 2);
+	addMaterialRecycling(event, buzzsawBladeItem, material, 'buzz_saw_blade', TagPrefix.toolHeadBuzzSaw);
+
+	event.remove({ id: `gtceu:shaped/buzzsaw_blade_${materialName}` })
+
+	if (doublePlateItem.isEmpty())
 		return;
 
 	const tfcProperty = material.getProperty(TFGPropertyKey.TFC_PROPERTY);
@@ -471,11 +510,6 @@ function processBuzzsawBlade(event, material) {
 			.processingTime(material.getMass() * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
 			.id(`tfg:vi/lathe/${materialName}_buzzsaw`)
 	}
-
-	TagPrefix.toolHeadBuzzSaw.modifyMaterialAmount(material, 2);
-	addMaterialRecycling(event, buzzsawBladeItem, material, 'buzz_saw_blade', TagPrefix.toolHeadBuzzSaw);
-
-	event.remove({ id: `gtceu:shaped/buzzsaw_blade_${materialName}` })
 }
 
 

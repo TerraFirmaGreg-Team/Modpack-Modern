@@ -2,7 +2,7 @@
   "parent": "block/block",
   "loader": "forge:composite",
   "textures": {
-    "particle": "gtceu:block/material_sets/nether_quartz/ore"
+    "particle": "#layer0"
   },
   "children": {
     "base_stone": {
@@ -10,11 +10,11 @@
     },
     "ore_texture": {
       "parent": "block/block",
-        "textures": {
-            "layer0": "gtceu:block/material_sets/nether_quartz/ore",
-            "layer1": "gtceu:block/material_sets/nether_quartz/ore_layer2",
-            "particle": "#layer0"
-        },
+      "textures": {
+        "layer0": "#bot_all",
+        "layer1": "#top_all",
+        "particle": "#layer0"
+      },
       "render_type": "translucent",
       "elements": [
         {

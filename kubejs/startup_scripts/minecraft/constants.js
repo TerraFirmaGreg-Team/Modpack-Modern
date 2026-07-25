@@ -21,6 +21,7 @@ global.MINECRAFT_HIDED_ITEMS = [
     "minecraft:lantern",
     "minecraft:raw_iron_block",
 	"minecraft:infested_deepslate",
+    "minecraft:golden_carrot",
     // unobtainable but used for recipe displays
 	"minecraft:grass_block", 
     "minecraft:furnace",

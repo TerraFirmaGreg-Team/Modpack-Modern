@@ -382,10 +382,6 @@ const registerTooltips = (event) => {
 		text.add(1, Text.translate('tfg.tooltip.cooling_foods'))
 	})
 
-	event.addAdvanced(['#tfg:cooling_foods_strong'], (item, advanced, text) => {
-		text.add(1, Text.translate('tfg.tooltip.cooling_foods_strong'))
-	})
-
 	event.addAdvanced(['#tfg:warming_foods'], (item, advanced, text) => {
 		text.add(1, Text.translate('tfg.tooltip.warming_foods'))
 	})
@@ -396,6 +392,22 @@ const registerTooltips = (event) => {
 	})
 	event.addAdvanced(['create:large_water_wheel', 'create:windmill_bearing'], (item, advanced, text) => {
 		text.add(1, Text.translate("greate.tooltip.max_capacity").append(Text.translate("tfg.greate.ls_limit")))
+	})
+	event.addAdvanced(['steampowered:bronze_steam_engine', 'steampowered:bronze_flywheel'], (item, advanced, text) => {
+		text.add(1, Text.translate("greate.tooltip.max_capacity").append(Text.translate("tfg.greate.ls_limit")))
+		text.add(2, Text.translate("tfg.gui.consumes").append(Text.translate("tooltip.ad_astra.fluid_per_tick", "16")).append(" ").append(Text.translate("material.gtceu.steam")))
+	})
+	event.addAdvanced(['steampowered:cast_iron_steam_engine', 'steampowered:cast_iron_flywheel'], (item, advanced, text) => {
+		text.add(1, Text.translate("greate.tooltip.max_capacity").append(Text.translate("tfg.greate.ms_limit")))
+		text.add(2, Text.translate("tfg.gui.consumes").append(Text.translate("tooltip.ad_astra.fluid_per_tick", "64")).append(" ").append(Text.translate("material.gtceu.steam")))
+	})
+	event.addAdvanced(['steampowered:steel_steam_engine', 'steampowered:steel_flywheel'], (item, advanced, text) => {
+		text.add(1, Text.translate("greate.tooltip.max_capacity").append(Text.translate("tfg.greate.hs_limit")))
+		text.add(2, Text.translate("tfg.gui.consumes").append(Text.translate("tooltip.ad_astra.fluid_per_tick", "256")).append(" ").append(Text.translate("material.gtceu.steam")))
+	})
+	event.addAdvanced(['tfg:titanium_steam_engine', 'tfg:titanium_flywheel'], (item, advanced, text) => {
+		text.add(1, Text.translate("greate.tooltip.max_capacity").append(Text.translate("tfg.greate.es_limit")))
+		text.add(2, Text.translate("tfg.gui.consumes").append(Text.translate("tooltip.ad_astra.fluid_per_tick", "1024")).append(" ").append(Text.translate("material.gtceu.steam")))
 	})
 
 	// Fluid + item containers
@@ -408,8 +420,8 @@ const registerTooltips = (event) => {
 		text.add(1, Text.translate("gtceu.universal.tooltip.item_storage_capacity", "36"))
 		text.add(2, Text.translate("gtceu.universal.tooltip.fluid_storage_capacity", "80,000"))
 	})
-	event.addAdvanced(['create:fluid_tank', 'create_connected:fluid_vessel'], (item, advanced, text) => {
-		text.add(1, Text.translate("gtceu.universal.tooltip.fluid_storage_capacity", "16,000"))
+	event.addAdvanced(['create:fluid_tank', 'create_connected:fluid_vessel', 'fluidlogistics:multi_fluid_tank', 'fluidlogistics:horizontal_multi_fluid_tank'], (item, advanced, text) => {
+		text.add(1, Text.translate("gtceu.universal.tooltip.fluid_storage_capacity", "32,000"))
 	})
 	event.addAdvanced(['#tfc:barrels'], (item, advanced, text) => {
 		text.add(1, Text.translate("gtceu.universal.tooltip.fluid_storage_capacity", "10,000"))

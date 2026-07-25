@@ -10,39 +10,39 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Aeronos",
+			"title": "Aeronosowe",
 			"item": "ad_astra:aeronos_stem",
-			"text": "$(bold)Aeronos Mushroom$()$(br)$(thing)Temperature$(): -100°C and above$(br)Appears more often to the East."
+			"text": "$(bold)Grzyby aeronosowe$()$(br)$(thing)Temperatura$(): powyżej -100°C$(br)Pojawiają się częściej na wschodzie."
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Alfacen",
+			"title": "Alfacenowe",
 			"item": "species:alphacene_mushroom_block",
 			"text": "$(bold)Grzyby alfacenowe$()$(br)$(thing)Temperatura$(): -85°C i powyżej$(br)Pojawiają się zarówno na wschodzie, jak i na zachodzie."
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Szkarłat",
+			"title": "Szkarłatne",
 			"item": "beneath:wood/log/crimson",
 			"text": "$(bold)Grzyby szkarłatne$()$(br)$(thing)Temperatura$(): -109 — -13°C$(br)Pojawiają się częściej na wschodzie."
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Glacian",
+			"title": "Lodowcowe",
 			"item": "ad_astra:glacian_log",
-			"text": "$(bold)Glacian Mushroom$()$(br)$(thing)Temperature$(): -107°C and below$(br)Appears both to the East and West."
+			"text": "$(bold)Grzyby lodowcowe$()$(br)$(thing)Temperatura$(): poniżej -107°C$(br)Pojawiają się zarówno na wschodzie, jak i na zachodzie."
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Strophar",
+			"title": "Strofarowe",
 			"item": "ad_astra:strophar_stem",
-			"text": "$(bold)Strophar Mushroom$()$(br)$(thing)Temperature$(): -100°C and above$(br)Appears more often to the West."
+			"text": "$(bold)Grzyby strofarowe$()$(br)$(thing)Temperatura$(): powyżej -100°C$(br)Pojawiają się częściej na wschodzie."
 		},
 		{
 			"type": "patchouli:spotlight",
 			"title": "Spaczone",
 			"item": "beneath:wood/log/warped",
-			"text": "$(bold)Warped Mushroom$()$(br)$(thing)Temperature$(): -109 — -13°C$(br)Appears more often to the West."
+			"text": "$(bold)Grzyby spaczone$()$(br)$(thing)Temperatura$(): -109 — -13°C$(br)Pojawiają się częściej na wschodzie."
 		}
 	]
 }

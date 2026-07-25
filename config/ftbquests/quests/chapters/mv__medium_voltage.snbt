@@ -1661,11 +1661,23 @@
 				{
 					id: "2C8FD46F69EA05B0"
 					item: "greate:large_stainless_steel_cogwheel"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "6DF7F28AABF6785F"
 					item: "greate:stainless_steel_shaft"
+					type: "item"
+				}
+				{
+					id: "40BC7BB72146EF55"
+					item: "steampowered:steel_steam_engine"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "32B9D4E33074A1D3"
+					item: "steampowered:steel_flywheel"
 					optional_task: true
 					type: "item"
 				}
@@ -1752,6 +1764,7 @@
 			dependencies: ["75F38905DEA60F15"]
 			description: ["{quests.medium_voltage.terminal_dismantler.desc}"]
 			id: "0053E98892F910BF"
+			optional: true
 			shape: "heart"
 			subtitle: "{quests.medium_voltage.terminal_dismantler.subtitle}"
 			tasks: [{
@@ -1958,6 +1971,7 @@
 						}
 					}
 				}
+				match_nbt: true
 				type: "item"
 			}]
 			x: -2.0d

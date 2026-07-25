@@ -2,22 +2,33 @@
 "use strict";
 
 function registerSNSItemTags(event) {
-	event.add('sns:allowed_in_ore_sack', 'tfc:kaolin_clay')
-	event.add('sns:allowed_in_ore_sack', 'minecraft:clay_ball')
-	event.add('sns:allowed_in_ore_sack', 'beneath:cursecoal')
-	event.add('sns:allowed_in_ore_sack', 'minecraft:flint')
+
 	
-	event.add('sns:allowed_in_ore_sack', '#tfc:powders')
-	event.add('sns:allowed_in_ore_sack', '#minecraft:coals')
-	event.add('sns:allowed_in_ore_sack', '#tfg:stone_dusts')
-	event.add('sns:allowed_in_ore_sack', '#forge:rich_raw_materials')
-	event.add('sns:allowed_in_ore_sack', '#forge:raw_materials')
-	event.add('sns:allowed_in_ore_sack', '#forge:poor_raw_materials')
-	
-	event.add('sns:allowed_in_ore_sack', '#tfc:sedimentary_rock')
-	event.add('sns:allowed_in_ore_sack', '#tfc:metamorphic_rock')
-	event.add('sns:allowed_in_ore_sack', '#tfc:igneous_intrusive_rock')
-	event.add('sns:allowed_in_ore_sack', '#tfc:igneous_extrusive_rock')
+	/** @type {String[]} */
+	const allowedInOreSack = [
+		'tfc:kaolin_clay',
+		'minecraft:clay_ball',
+		'#tfc:powders',
+		'#minecraft:coals',
+		'#tfg:stone_dusts',
+		'#forge:rich_raw_materials',
+		'#forge:raw_materials',
+		'#forge:poor_raw_materials',
+		'#tfc:sedimentary_rock',
+		'#tfc:metamorphic_rock',
+		'#tfc:igneous_intrusive_rock',
+		'#tfc:igneous_extrusive_rock',
+		'#forge:chipped_gems',
+		'#forge:flawed_gems',
+		'#forge:gems',
+		'#forge:flawless_gems',
+		'#forge:exquisite_gems',
+		'tfg:huge_quartz'
+	];
+
+	allowedInOreSack.forEach(entry => {
+		event.add('sns:allowed_in_ore_sack', entry);
+	});
 
 	event.add('sns:allowed_in_seed_pouch', '#minecraft:saplings')
 	event.add('sns:allowed_in_seed_pouch', '#tfc:wild_fruits')
@@ -29,6 +40,8 @@ function registerSNSItemTags(event) {
 	event.add('sns:prevented_in_frame_pack','sophisticatedbackpacks:gold_backpack')
 	event.add('sns:prevented_in_frame_pack','sophisticatedbackpacks:diamond_backpack')
 	event.add('sns:prevented_in_frame_pack','sophisticatedbackpacks:netherite_backpack')
+
+	event.add('sns:prevented_in_frame_pack','#forge:repair_kit_materials')
 	
 	event.remove('sns:prevented_in_straw_basket', '#tfc:ore_pieces')
 	event.remove('sns:prevented_in_burlap_sack', '#tfc:ore_pieces')

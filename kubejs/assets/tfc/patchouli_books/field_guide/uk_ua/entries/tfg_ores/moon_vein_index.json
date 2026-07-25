@@ -367,7 +367,7 @@
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Кам'яна сіль",
+      "name": "Кам’яна сіль",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/rock_salt"
@@ -1421,7 +1421,7 @@
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Димчастий кварц",
+      "name": "Незерський кварц",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/nether_quartz"

@@ -616,6 +616,30 @@ global.fluidIngredientInputParser = function(inputArray) {
 };
 
 /**
+ * Takes a fluid string and returns a FluidStackIngredient.
+ * example: 'minecraft:water 1000' -> `TFC.fluidStackIngredient(minecraft:water, 1000)`
+ * @param fluid
+ * @returns {Internal.FluidStackIngredient|null}
+ */
+global.toFluidStackIngredient = function(fluid) {
+	if (!fluid) return null;
+	let parts = fluid.split(' ');
+	return TFC.fluidStackIngredient(parts[0], parts.length > 1 ? parseInt(parts[1]) : 1000);
+};
+
+/**
+ * Takes a fluid string and returns a FluidStack.
+ * example: 'minecraft:water 1000' -> `Fluid.of(minecraft:water, 1000)`
+ * @param fluid
+ * @returns {Internal.FluidStackJS}
+ */
+global.toFluidStack = function(fluid) {
+	if (!fluid) return null;
+	let parts = fluid.split(' ');
+	return Fluid.of(parts[0], parts.length > 1 ? parseInt(parts[1]) : 1000);
+};
+
+/**
  * Function for generating mixing bowl, advanced shapeless, and food processor recipes at once.
  * @param {*} event 
  * @param {Internal.Ingredient[]|null} inputItems Array of ingredients < 6. Ex. `['2x #tfg:martian_eggs', '2x betterend:cave_pumpkin_chunks', 'betterend:amber_root_product']`.
@@ -649,19 +673,6 @@ global.generateMixingFoodRecipes = function(event, inputItems, inputFluid, outpu
 		id = global.linuxUnfucker(idOverride);
 	} else {
 		id = outputItem ? global.linuxUnfucker(outputItem) : global.linuxUnfucker(outputFluid);
-	};
-
-	// Helper to split Fluid string into FluidStackIngredient.
-	const toFluidStackIngredient = (fluid) => {
-		if (!fluid) return null;
-		let parts = fluid.split(' ');
-		return TFC.fluidStackIngredient(parts[0], parts.length > 1 ? parseInt(parts[1]) : 1000);
-	};
-	// Helper to split Fluid string into FluidStack.
-	const toFluidStack = (fluid) => {
-		if (!fluid) return null;
-		let parts = fluid.split(' ');
-		return Fluid.of(parts[0], parts.length > 1 ? parseInt(parts[1]) : 1000);
 	};
 
 	if (genShapelessRecipe) {
@@ -719,10 +730,10 @@ global.generateMixingFoodRecipes = function(event, inputItems, inputFluid, outpu
 		if (formattedOutputItems && formattedOutputItems.length > 5) throw new Error(`Too many output items for generateMixingFoodRecipes recipe ID: 'tfg:mixing_bowl/${id}'`)
 
 		if (formattedInputItems.length > 0) recipe.itemIngredients(formattedInputItems);
-		if (inputFluid) recipe.fluidIngredient(toFluidStackIngredient(typeof inputFluid === 'string' ? inputFluid : inputFluid[0]));
+		if (inputFluid) recipe.fluidIngredient(global.toFluidStackIngredient(typeof inputFluid === 'string' ? inputFluid : inputFluid[0]));
 		
 		if (outputItem) recipe.outputItem(outputItem);
-		if (outputFluid) recipe.outputFluid(toFluidStack(typeof outputFluid === 'string' ? outputFluid : outputFluid[0]));
+		if (outputFluid) recipe.outputFluid(global.toFluidStack(typeof outputFluid === 'string' ? outputFluid : outputFluid[0]));
 		
 		recipe.id(`tfg:mixing_bowl/${id}`);
 	}
@@ -764,19 +775,6 @@ global.generateMealFoodRecipes = function(event, inputItems, inputFluid, outputF
 		id = outputItem ? global.linuxUnfucker(outputItem) : global.linuxUnfucker(outputFluid);
 	};
 
-	// Helper to split Fluid string into FluidStackIngredient.
-	const toFluidStackIngredient = (fluid) => {
-		if (!fluid) return null;
-		let parts = fluid.split(' ');
-		return TFC.fluidStackIngredient(parts[0], parts.length > 1 ? parseInt(parts[1]) : 1000);
-	};
-	// Helper to split Fluid string into FluidStack.
-	const toFluidStack = (fluid) => {
-		if (!fluid) return null;
-		let parts = fluid.split(' ');
-		return Fluid.of(parts[0], parts.length > 1 ? parseInt(parts[1]) : 1000);
-	};
-
 	if (genProcessorRecipe) {
 		let processorData = {};
 		let processorTier = tier ? tier : GTValues.VA[GTValues.LV];
@@ -804,7 +802,7 @@ global.generateMealFoodRecipes = function(event, inputItems, inputFluid, outputF
 		if (formattedInputItems.length > 5) throw new Error(`Too many input items for generateMealFoodRecipes recipe ID: 'tfg:pot/${id}'`)
 
 		let potTemp = temp ? temp : 200;
-		let potInputFluid = toFluidStackIngredient(typeof inputFluid === 'string' ? inputFluid : inputFluid[0])
+		let potInputFluid = global.toFluidStackIngredient(typeof inputFluid === 'string' ? inputFluid : inputFluid[0])
 		let recipe = event.recipes.tfc.pot(formattedInputItems, potInputFluid, recipeDuration, potTemp);
 
 		if (outputItem) {
@@ -815,7 +813,7 @@ global.generateMealFoodRecipes = function(event, inputItems, inputFluid, outputF
 			}
 		}
 		if (outputFluid) recipe.fluidOutput(
-			toFluidStack(typeof outputFluid === 'string' ? outputFluid : outputFluid[0])
+			global.toFluidStack(typeof outputFluid === 'string' ? outputFluid : outputFluid[0])
 		);
 		
 		recipe.id(`tfg:pot/${id}`);
@@ -889,4 +887,45 @@ global.generateCuttingFoodRecipes = function(event, inputItem, outputItem, genSh
 	}
 };
 
+/**
+ * Creates washing recipes for barrels and chemical baths.
+ * @param {*} event
+ * @param {Internal.ItemStackKJS} inputItem Input item. Ex. 'tfg:food/juice'
+ * @param {Internal.ItemStackKJS} outputItem Output item. Ex. 'tfc:empty_jar'
+ * @param {Internal.Fluid|null} inputFluid Input fluid string. Ex. 'minecraft:water 1000'. Defaults to '#tfg:clean_water 100'
+ * @param {Internal.Fluid|null} outputFluid Output fluid string. Ex. 'minecraft:water 1000'. Defaults to null.
+ * @param {boolean|null} genBarrel Wether to generate barrel recipe. Defaults to true.
+ * @param {boolean|null} genChemBath Wether to generate chemical bath recipe. Defaults to true.
+ */
+global.washingHelper = function(event, inputItem, outputItem, inputFluid, outputFluid, genBarrel, genChemBath) {
+	genBarrel = genBarrel !== false;
+	genChemBath = genChemBath !== false;
+	let parsedInputFluid = inputFluid ? inputFluid : '#tfg:clean_water 100';
+
+	if (genBarrel) {
+		let b = event.recipes.tfc.barrel_instant()
+			.inputItem(inputItem)
+			.outputItem(outputItem)
+			.inputFluid(global.toFluidStackIngredient(parsedInputFluid))
+			.sound('minecraft:entity.generic.splash')
+			.id(`tfg:barrel/${global.linuxUnfucker(inputItem)}_washing_with_${global.linuxUnfucker(parsedInputFluid)}`);
+
+		if (outputFluid) {
+			b.outputFluid(global.toFluidStack(outputFluid));
+		}
+	}
+
+	if (genChemBath) {
+		let c = event.recipes.gtceu.chemical_bath(`tfg:${global.linuxUnfucker(inputItem)}_washing_with_${global.linuxUnfucker(parsedInputFluid)}`)
+			.itemInputs(inputItem)
+			.itemOutputs(outputItem)
+			.inputFluids(parsedInputFluid)
+			.duration(20*1)
+			.EUt(GTValues.VA[GTValues.ULV]);
+
+		if (outputFluid) {
+			c.outputFluid(global.toFluidStack(outputFluid));
+		}
+	}
+};
 //#endregion

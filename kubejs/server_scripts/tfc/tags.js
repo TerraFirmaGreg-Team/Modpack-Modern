@@ -213,6 +213,7 @@ function registerTFCItemTags(event) {
 	event.add("tfc:forge_fuel", "gtceu:small_coal_dust");
 	event.add("tfc:forge_fuel", "gtceu:tiny_coal_dust");
 
+	event.add("tfc:forge_fuel", "tfg:dried_peat_brick");
 	event.add("tfc:forge_fuel", "beneath:cursecoal");
 
 	event.add("tfc:forge_fuel", "gtceu:coke_gem");
@@ -627,6 +628,8 @@ function registerTFCBlockTags(event) {
 	event.add('tfg:dead_crops', "tfc:dead_crop/melon");
 	event.add('tfg:dead_crops', "tfc:dead_crop/red_bell_pepper");
 	event.add('tfg:dead_crops', "tfc:dead_crop/yellow_bell_pepper");
+
+	event.add('minecraft:logs', '#tfc:fruit_tree_branch');
 
 	// Glass
 	event.add('tfc:mineable_with_glass_saw', 'ae2:quartz_glass');

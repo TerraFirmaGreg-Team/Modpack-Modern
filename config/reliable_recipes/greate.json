@@ -2,6 +2,8 @@
 	{
 		"action": "remove_recipe",
 		"id": [
+			"greate:mixing/integration/gtceu/mixer/mossy_cobblestone_from_moss_block",
+			"greate:mixing/integration/gtceu/mixer/mossy_cobblestone_from_vine",
 			"greate:cutting/integration/create/cutting/runtime_generated/compat/minecraft/bamboo_planks_to_bamboo_button",
 			"greate:mixing/integration/gtceu/mixer/fire_charge",
 			"greate:milling/integration/gtceu/macerator/macerate_coal_crushed_ore_to_dust",
@@ -76,42 +78,42 @@
 	},
 	{
 		"action": "remove_recipe",
-		"pattern": "/^greate:(compacting|pressing)\/integration\/.*/"
+		"pattern": "/^greate:(compacting|pressing)/integration/.*/"
 	},
 	{
 		"action": "remove_recipe",
 		"input": [
-			"create:andesite_alloy",
-			"greate:andesite_alloy_dust",
-			"greate:andesite_alloy_alloy",
-			"greate:wrought_iron_alloy",
-			"greate:steel_alloy",
-			"greate:aluminium_alloy",
-			"greate:stainless_steel_alloy",
-			"greate:titanium_alloy",
-			"greate:tungsten_steel_alloy",
-			"greate:rhodium_plated_palladium_alloy",
-			"greate:naquadah_alloy_alloy",
-			"greate:darmstadtium_alloy",
-			"greate:neutroniu_alloy"
+			"#forge:andesite_alloy",
+			"#forge:dusts/andesite_alloy",
+			"#forge:alloys/andesite_alloy",
+			"#forge:alloys/wrought_iron",
+			"#forge:alloys/steel",
+			"#forge:alloys/aluminium",
+			"#forge:alloys/stainless_steel",
+			"#forge:alloys/titanium",
+			"#forge:alloys/tungsten_steel",
+			"#forge:alloys/rhodium_plated_palladium",
+			"#forge:alloys/naquadah_alloy",
+			"#forge:alloys/darmstadtium",
+			"#forge:alloys/neutronium"
 		]
 	},
 	{
 		"action": "remove_recipe",
 		"output": [
-			"create:andesite_alloy",
-			"greate:andesite_alloy_dust",
-			"greate:andesite_alloy_alloy",
-			"greate:wrought_iron_alloy",
-			"greate:steel_alloy",
-			"greate:aluminium_alloy",
-			"greate:stainless_steel_alloy",
-			"greate:titanium_alloy",
-			"greate:tungsten_steel_alloy",
-			"greate:rhodium_plated_palladium_alloy",
-			"greate:naquadah_alloy_alloy",
-			"greate:darmstadtium_alloy",
-			"greate:neutroniu_alloy"
+			"#forge:andesite_alloy",
+			"#forge:dusts/andesite_alloy",
+			"#forge:alloys/andesite_alloy",
+			"#forge:alloys/wrought_iron",
+			"#forge:alloys/steel",
+			"#forge:alloys/aluminium",
+			"#forge:alloys/stainless_steel",
+			"#forge:alloys/titanium",
+			"#forge:alloys/tungsten_steel",
+			"#forge:alloys/rhodium_plated_palladium",
+			"#forge:alloys/naquadah_alloy",
+			"#forge:alloys/darmstadtium",
+			"#forge:alloys/neutronium"
 		]
 	}
 ]
