@@ -12,6 +12,9 @@ function registerTFCChannelCastingItemTags(event) {
 }
 
 function registerTFCChannelCastingFluidTags(event) {
+	event.add('tfcchannelcasting:whiskey', 'tfcagedalcohol:aged_corn_whiskey')
+	event.add('tfcchannelcasting:whiskey', 'tfcagedalcohol:aged_rye_whiskey')
+	event.add('tfcchannelcasting:whiskey', 'tfcagedalcohol:aged_whiskey')
 	event.add('tfcchannelcasting:whiskey', 'tfg:vintage_corn_whiskey')
 	event.add('tfcchannelcasting:whiskey', 'tfg:vintage_rye_whiskey')
 	event.add('tfcchannelcasting:whiskey', 'tfg:vintage_whiskey')
