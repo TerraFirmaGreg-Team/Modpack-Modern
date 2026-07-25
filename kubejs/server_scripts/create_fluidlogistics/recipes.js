@@ -163,4 +163,29 @@ function registerCreateFluidLogisticsRecipes(event) {
 
 	event.shapeless('8x fluidlogistics:phantom_chain', [ '#forge:tiny_dusts/ender_pearl', '8x #tfg:metal_chains' ])
 		.id('tfg:shaped/phantom_chain')
+
+	event.shaped('fluidlogistics:copper_frogport', [
+		' A ',
+		'HCB',
+		'EDF'
+	], {
+		A: 'tfc:glue',
+		B: '#forge:small_gears/red_alloy',
+		C: '#tfg:metal_chains',
+		D: 'create:copper_casing',
+		E: '#forge:tools/screwdrivers',
+		F: '#forge:tools/wrenches',
+		H: 'create:electron_tube'
+	}).id('tfg:fluidlogistics/shaped/copper_frogport')
+
+	event.recipes.gtceu.assembler('tfg:fluidlogistics/copper_frogport')
+		.itemInputs('#tfg:metal_chains', '1x #forge:small_gears/red_alloy', 'create:electron_tube', 'create:copper_casing')
+		.inputFluids(Fluid.of('gtceu:glue', 50))
+		.itemOutputs('fluidlogistics:copper_frogport')
+		.circuit(20)
+		.duration(200)
+		.EUt(20)
+
+	TFGHelpers.registerMaterialInfo('fluidlogistics:copper_frogport', [GTMaterials.RedAlloy, 1, GTMaterials.Copper, 1, GTMaterials.Wood, 1])
+
 }
