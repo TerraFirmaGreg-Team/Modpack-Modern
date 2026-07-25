@@ -5,22 +5,24 @@
 	group: "19428C6E7A36D463"
 	icon: {
 		Count: 1
-		id: "gtceu:diamond_sword"
+		id: "gtceu:neutronium_sword"
 		tag: {
 			Damage: 0
 			DisallowContainerItem: 0b
 			GT.Behaviours: { }
 			GT.Tool: {
-				AttackDamage: 10.0f
-				AttackSpeed: -2.3000002f
+				AttackDamage: 103.0f
+				AttackSpeed: -2.4f
 				DefaultEnchantments: [ ]
-				MaxDamage: 4607
+				MaxDamage: 65534
 			}
-			HideFlags: 2
+			HideFlags: 2b
+			Unbreakable: 1b
 		}
 	}
 	id: "72E4C93BA4A0AD00"
 	images: [{
+		alpha: 128
 		height: 4.0d
 		image: "applied_armorer:textures/gun/hud/moritz_sniper_semi_k30.png"
 		rotation: 0.0d
@@ -28,16 +30,133 @@
 		x: 13.5d
 		y: -6.0d
 	}]
-	order_index: 4
-	quest_links: [{
-		id: "1B5C9A1CD6F718A4"
-		linked_quest: "66FDACC7E7F9180C"
-		x: 6.0d
-		y: 2.5d
-	}]
+	order_index: 3
+	quest_links: [
+		{
+			id: "1B5C9A1CD6F718A4"
+			linked_quest: "66FDACC7E7F9180C"
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			id: "4016D8415F59B1A4"
+			linked_quest: "38FF003C9349C0F2"
+			x: 16.5d
+			y: -1.5d
+		}
+		{
+			id: "0C7E9422BF567F2C"
+			linked_quest: "4C37DAD7C66523CC"
+			shape: "gear"
+			size: 1.5d
+			x: 16.5d
+			y: -3.0d
+		}
+		{
+			id: "6DB21C9A32CCA1C2"
+			linked_quest: "4D5B75F5270CCBD3"
+			x: 25.0d
+			y: -1.5d
+		}
+		{
+			id: "67F9A71A21D9C7C1"
+			linked_quest: "035B0FDD90E51C0C"
+			shape: "gear"
+			size: 2.0d
+			x: 25.0d
+			y: -3.0d
+		}
+		{
+			id: "5A0155B06CF04C97"
+			linked_quest: "038B204DAC9C863D"
+			x: 16.5d
+			y: 1.5d
+		}
+		{
+			id: "7940A64DE742E568"
+			linked_quest: "6D7ADBBCEF5770B6"
+			x: 22.5d
+			y: 1.5d
+		}
+		{
+			id: "005D4527B078CFE6"
+			linked_quest: "6E757133FA00C40D"
+			x: 18.0d
+			y: -1.5d
+		}
+		{
+			id: "59AF05C8EAD38CAC"
+			linked_quest: "784A0743B257EAEB"
+			x: 13.0d
+			y: -3.0d
+		}
+		{
+			id: "7C7D879462F927C3"
+			linked_quest: "2EE6A09A11BFC0EE"
+			x: -5.0d
+			y: 1.5d
+		}
+		{
+			id: "156D1EDE1657636B"
+			linked_quest: "21042F13F754E6E6"
+			x: 3.0d
+			y: -3.0d
+		}
+		{
+			id: "6691530BA2A34EB4"
+			linked_quest: "615361AD621B588E"
+			x: -3.0d
+			y: 1.5d
+		}
+		{
+			id: "226F255DA78E438C"
+			linked_quest: "4425519187BF28FE"
+			x: -4.0d
+			y: -4.5d
+		}
+		{
+			id: "44336726DD9F224A"
+			linked_quest: "70FE6706B43FC5FC"
+			x: 0.0d
+			y: -4.5d
+		}
+		{
+			id: "6E9E31CA4122E6C3"
+			linked_quest: "1371C0F8BFDEE0FC"
+			x: 6.0d
+			y: -3.0d
+		}
+		{
+			id: "591636FADB59A1AE"
+			linked_quest: "4201BFA1946F6491"
+			x: -4.0d
+			y: 2.5d
+		}
+		{
+			id: "35F893275E728B14"
+			linked_quest: "7A4C6930EF68646E"
+			x: 21.0d
+			y: 1.5d
+		}
+		{
+			id: "22A2FD93040504D0"
+			linked_quest: "4B4F052F00435AFE"
+			x: 9.0d
+			y: -3.0d
+		}
+		{
+			id: "66C975E99A868296"
+			linked_quest: "6B9257192CF56FE3"
+			shape: "hexagon"
+			size: 1.5d
+			x: 18.0d
+			y: 1.5d
+		}
+	]
 	quests: [
 		{
 			dependencies: ["0EDFCD5F30AAE7D7"]
+			disable_toast: true
 			icon: {
 				Count: 1
 				ForgeCaps: {
@@ -49,29 +168,23 @@
 				id: "tfc:metal/anvil/wrought_iron"
 			}
 			id: "611C053A562DA9F0"
+			shape: "octagon"
 			size: 1.5d
-			tasks: [
-				{
-					id: "589AB2C0FCE86092"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
+			tasks: [{
+				disable_toast: true
+				id: "589AB2C0FCE86092"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
 						}
-						id: "tfc:metal/anvil/wrought_iron"
 					}
-					optional_task: true
-					type: "item"
+					id: "tfc:metal/anvil/wrought_iron"
 				}
-				{
-					id: "0197F629D0B5B08D"
-					optional_task: true
-					type: "checkmark"
-				}
-			]
+				type: "item"
+			}]
 			title: "{quests.combat_tips.iron_main.title}"
 			x: 3.0d
 			y: 0.0d
@@ -98,6 +211,7 @@
 		}
 		{
 			dependencies: ["611C053A562DA9F0"]
+			disable_toast: true
 			icon: {
 				Count: 1
 				ForgeCaps: {
@@ -109,38 +223,29 @@
 				id: "tfc:metal/anvil/black_steel"
 			}
 			id: "2E3C021FEAE6A490"
+			shape: "octagon"
 			size: 1.5d
-			tasks: [
-				{
-					id: "71D7678CDD6C364C"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
+			tasks: [{
+				disable_toast: true
+				id: "71D7678CDD6C364C"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
 						}
-						id: "tfc:metal/anvil/black_steel"
 					}
-					optional_task: true
-					type: "item"
+					id: "tfc:metal/anvil/black_steel"
 				}
-				{
-					id: "139619DD12A7589E"
-					optional_task: true
-					type: "checkmark"
-				}
-			]
+				type: "item"
+			}]
 			title: "{quests.combat_tips.steel_main.title}"
 			x: 6.0d
 			y: 0.0d
 		}
 		{
-			dependencies: [
-				"66950FBFBEB9CC05"
-				"2E3C021FEAE6A490"
-			]
+			dependencies: ["66950FBFBEB9CC05"]
 			description: ["{quests.combat_tips.crankbow.description}"]
 			id: "13373A2C78C8FB52"
 			subtitle: "{quests.combat_tips.crankbow.subtitle}"
@@ -156,8 +261,8 @@
 				type: "item"
 			}]
 			title: "{quests.combat_tips.crankbow.title}"
-			x: 7.5d
-			y: -1.5d
+			x: 4.5d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -207,68 +312,46 @@
 				}
 			]
 			title: "{quests.combat_tips.springfield_gun.title}"
-			x: 7.5d
+			x: 6.0d
 			y: 1.5d
 		}
 		{
 			dependencies: ["2E3C021FEAE6A490"]
+			disable_toast: true
 			icon: "tfg:lv_universal_circuit"
 			id: "165215273D49B85B"
+			shape: "octagon"
 			size: 1.5d
-			tasks: [
-				{
-					id: "51331F413C1FDD10"
-					item: "gtceu:lv_assembler"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "008547E2849C7E56"
-					optional_task: true
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				disable_toast: true
+				id: "51331F413C1FDD10"
+				item: "gtceu:lv_assembler"
+				type: "item"
+			}]
 			title: "{quests.combat_tips.lv_main.title}"
 			x: 9.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["165215273D49B85B"]
+			description: ["{quests.combat_tips.adv_clock_main.desc}"]
 			icon: "tfg:mv_universal_circuit"
-			id: "0B6E37EACC69D5AB"
-			size: 1.5d
-			tasks: [
-				{
-					id: "7853FD614B60608F"
-					item: "gtceu:mv_assembler"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "4E44AA968A515658"
-					optional_task: true
-					type: "checkmark"
-				}
-			]
-			title: "{quests.combat_tips.mv_main.title}"
-			x: 12.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["0B6E37EACC69D5AB"]
 			id: "07A777BAAB2DBCFC"
+			shape: "octagon"
 			size: 1.5d
+			subtitle: "{quests.combat_tips.adv_clock_main.subtitle}"
 			tasks: [{
 				id: "35B435B79ECBE1C4"
 				item: "tfg:advanced_clockwork_mechanism"
 				type: "item"
 			}]
-			title: "{quests.combat_tips.adv_clock_main.title}"
-			x: 15.0d
+			title: "{item.tfg.advanced_clockwork_mechanism}"
+			x: 13.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["165215273D49B85B"]
+			description: ["{quests.combat_tips.revolver_gun.desc}"]
 			icon: {
 				Count: 1
 				id: "tacz:modern_kinetic_gun"
@@ -280,6 +363,7 @@
 				}
 			}
 			id: "3BDC99511009E616"
+			subtitle: "{quests.combat_tips.revolver_gun.subtitle}"
 			tasks: [
 				{
 					id: "68CF2CA933A92E47"
@@ -311,10 +395,11 @@
 			]
 			title: "{quests.combat_tips.revolver_gun.title}"
 			x: 10.0d
-			y: 1.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["07A777BAAB2DBCFC"]
+			description: ["{quests.combat_tips.rimmed_blunt_ammo.desc}"]
 			icon: {
 				Count: 1
 				id: "tacz:ammo"
@@ -370,11 +455,12 @@
 				}
 			]
 			title: "{quests.combat_tips.rimmed_blunt_ammo.title}"
-			x: 14.0d
+			x: 12.0d
 			y: 1.5d
 		}
 		{
 			dependencies: ["07A777BAAB2DBCFC"]
+			description: ["{quests.combat_tips.slap_ammo.desc}"]
 			icon: {
 				Count: 1
 				id: "tacz:ammo"
@@ -446,11 +532,12 @@
 				}
 			]
 			title: "{quests.combat_tips.slap_ammo.title}"
-			x: 14.0d
+			x: 12.0d
 			y: -1.5d
 		}
 		{
 			dependencies: ["07A777BAAB2DBCFC"]
+			description: ["{quests.combat_tips.high_slap_ammo.desc}"]
 			icon: {
 				Count: 1
 				id: "tacz:ammo"
@@ -490,46 +577,29 @@
 				}
 			]
 			title: "{quests.combat_tips.high_slap_ammo.title}"
-			x: 16.0d
+			x: 14.0d
 			y: -1.5d
 		}
 		{
-			dependencies: ["0B6E37EACC69D5AB"]
+			dependencies: ["1FF607647FA682B3"]
+			description: ["{quests.combat_tips.certus_main.desc}"]
 			icon: "tfg:ev_universal_circuit"
-			id: "400B303E339E1D60"
-			size: 1.5d
-			tasks: [
-				{
-					id: "34124DDD4D29AF6A"
-					item: "gtceu:ev_assembler"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "0EE0A9DF55D7D04B"
-					optional_task: true
-					type: "checkmark"
-				}
-			]
-			title: "{quests.combat_tips.ev_main.title}"
-			x: 18.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["400B303E339E1D60"]
 			id: "278F18477F9B7E08"
+			shape: "octagon"
 			size: 1.5d
+			subtitle: "{quests.combat_tips.certus_main.subtitle}"
 			tasks: [{
 				id: "3495E2D9731C0A6C"
 				item: "tfg:certus_mechanism"
 				type: "item"
 			}]
-			title: "{quests.combat_tips.certus_main.title}"
+			title: "{item.tfg.certus_mechanism}"
 			x: 21.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["278F18477F9B7E08"]
+			description: ["{quests.combat_tips.hard_quartz_ammo.desc}"]
 			icon: {
 				Count: 1
 				id: "tacz:ammo"
@@ -585,11 +655,12 @@
 				}
 			]
 			title: "{quests.combat_tips.hard_quartz_ammo.title}"
-			x: 20.0d
+			x: 21.0d
 			y: -1.5d
 		}
 		{
 			dependencies: ["07A777BAAB2DBCFC"]
+			description: ["{quests.combat_tips.12g_ammo.desc}"]
 			icon: {
 				Count: 1
 				id: "tacz:ammo"
@@ -661,11 +732,12 @@
 				}
 			]
 			title: "{quests.combat_tips.12g_ammo.title}"
-			x: 16.0d
+			x: 14.0d
 			y: 1.5d
 		}
 		{
 			dependencies: ["278F18477F9B7E08"]
+			description: ["{quests.combat_tips.fluix_quartz_ammo.desc}"]
 			icon: {
 				Count: 1
 				id: "tacz:ammo"
@@ -705,11 +777,12 @@
 				}
 			]
 			title: "{quests.combat_tips.fluix_quartz_ammo.title}"
-			x: 22.0d
+			x: 22.5d
 			y: -1.5d
 		}
 		{
 			dependencies: ["278F18477F9B7E08"]
+			description: ["{quests.combat_tips.etched_quartz_ammo.desc}"]
 			icon: {
 				Count: 1
 				id: "tacz:ammo"
@@ -798,10 +871,11 @@
 			]
 			title: "{quests.combat_tips.etched_quartz_ammo.title}"
 			x: 20.0d
-			y: 1.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["278F18477F9B7E08"]
+			description: ["{quests.combat_tips.cluster_quartz_ammo.desc}"]
 			icon: {
 				Count: 1
 				id: "tacz:ammo"
@@ -842,10 +916,15 @@
 			]
 			title: "{quests.combat_tips.cluster_quartz_ammo.title}"
 			x: 22.0d
-			y: 1.5d
+			y: -3.0d
 		}
 		{
-			dependencies: ["400B303E339E1D60"]
+			dependencies: [
+				"278F18477F9B7E08"
+				"601088B7920140B2"
+			]
+			dependency_requirement: "one_completed"
+			description: ["{quests.combat_tips.40mm_ammo.desc}"]
 			icon: {
 				Count: 1
 				id: "tacz:ammo"
@@ -885,11 +964,12 @@
 				}
 			]
 			title: "{quests.combat_tips.40mm_ammo.title}"
-			x: 18.0d
-			y: -2.0d
+			x: 19.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["45B3A5C226C0EC9F"]
+			disable_toast: true
 			icon: {
 				Count: 1
 				ForgeCaps: {
@@ -901,27 +981,21 @@
 				id: "tfc:metal/anvil/bronze"
 			}
 			id: "0EDFCD5F30AAE7D7"
+			shape: "octagon"
 			size: 1.5d
-			tasks: [
-				{
-					id: "7C1F481F134D4242"
-					item: {
-						Count: 1
-						id: "ftbfiltersystem:smart_filter"
-						tag: {
-							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:bronze_anvils)"
-						}
+			tasks: [{
+				disable_toast: true
+				id: "7C1F481F134D4242"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:bronze_anvils)"
 					}
-					optional_task: true
-					title: "Any #tfc:bronze_anvils"
-					type: "item"
 				}
-				{
-					id: "5702F158547E9952"
-					optional_task: true
-					type: "checkmark"
-				}
-			]
+				title: "Any #tfc:bronze_anvils"
+				type: "item"
+			}]
 			title: "{quests.combat_tips.bronze_main.title}"
 			x: 0.0d
 			y: 0.0d
@@ -929,6 +1003,7 @@
 		{
 			icon: "tfc:rock/loose/gabbro"
 			id: "55BF74AD2E6EF14A"
+			shape: "octagon"
 			size: 1.5d
 			tasks: [{
 				dimension: "minecraft:overworld"
@@ -997,7 +1072,7 @@
 			}]
 			title: "{quests.combat_tips.shield.title}"
 			x: -1.0d
-			y: 1.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["0EDFCD5F30AAE7D7"]
@@ -1055,8 +1130,8 @@
 				}
 			]
 			title: "{quests.combat_tips.armor.title}"
-			x: 1.0d
-			y: 1.5d
+			x: 0.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["55BF74AD2E6EF14A"]
@@ -1104,11 +1179,12 @@
 				type: "item"
 			}]
 			title: "{quests.combat_tips.forged_weapons.title}"
-			x: 0.0d
-			y: -2.0d
+			x: 1.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["165215273D49B85B"]
+			description: ["{quests.combat_tips.chainsaw.desc}"]
 			icon: {
 				Count: 1
 				id: "gtceu:lv_blue_steel_chainsaw"
@@ -1132,6 +1208,7 @@
 				}
 			}
 			id: "776632D85771A644"
+			subtitle: "{quests.combat_tips.chainsaw.subtitle}"
 			tasks: [{
 				id: "61FE3D50B5176268"
 				item: {
@@ -1146,27 +1223,7 @@
 			}]
 			title: "{quests.combat_tips.chainsaw.title}"
 			x: 10.0d
-			y: -1.5d
-		}
-		{
-			dependencies: ["400B303E339E1D60"]
-			icon: {
-				Count: 1
-				id: "gtceu:nano_saber"
-				tag: {
-					Active: 1b
-					Charge: 3849152L
-				}
-			}
-			id: "28908AAFF06D32BC"
-			tasks: [{
-				id: "740F42CBCEB9771B"
-				item: "gtceu:nano_saber"
-				type: "item"
-			}]
-			title: "{quests.combat_tips.nano_saber.title}"
-			x: 18.0d
-			y: 2.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["55BF74AD2E6EF14A"]
@@ -1210,6 +1267,7 @@
 		}
 		{
 			dependencies: ["55BF74AD2E6EF14A"]
+			disable_toast: true
 			icon: {
 				Count: 1
 				ForgeCaps: {
@@ -1221,33 +1279,27 @@
 				id: "tfc:ceramic/scythe_blade_mold"
 			}
 			id: "45B3A5C226C0EC9F"
+			shape: "octagon"
 			size: 1.5d
-			tasks: [
-				{
-					id: "4FC134F32F693083"
-					item: {
-						Count: 1
-						id: "ftbfiltersystem:smart_filter"
-						tag: {
-							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:fired_molds)"
-						}
+			tasks: [{
+				disable_toast: true
+				id: "4FC134F32F693083"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:fired_molds)"
 					}
-					optional_task: true
-					title: "Any #tfc:fired_molds"
-					type: "item"
 				}
-				{
-					id: "42BA2C54E7F433F9"
-					optional_task: true
-					type: "checkmark"
-				}
-			]
+				title: "Any #tfc:fired_molds"
+				type: "item"
+			}]
 			title: "{quests.combat_tips.mold_main.title}"
 			x: -4.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["45B3A5C226C0EC9F"]
+			dependencies: ["55BF74AD2E6EF14A"]
 			description: ["{quests.combat_tips.bow.description}"]
 			icon: {
 				Count: 1
@@ -1285,8 +1337,8 @@
 				}
 			]
 			title: "{quests.combat_tips.bow.title}"
-			x: -3.0d
-			y: 1.5d
+			x: -8.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["55BF74AD2E6EF14A"]
@@ -1369,8 +1421,8 @@
 				}
 			]
 			title: "{quests.combat_tips.mold_weapons.title}"
-			x: -5.0d
-			y: 1.5d
+			x: -3.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["45B3A5C226C0EC9F"]
@@ -1444,11 +1496,15 @@
 				}
 			]
 			title: "{quests.combat_tips.leather.title}"
-			x: -3.0d
-			y: -1.5d
+			x: -4.0d
+			y: -3.0d
 		}
 		{
-			dependencies: ["5CDA3E5AEB6D6339"]
+			dependencies: [
+				"5CDA3E5AEB6D6339"
+				"165215273D49B85B"
+			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.combat_tips.steel_ammo.description}"]
 			id: "1D83CA22152163EF"
 			subtitle: "{quests.combat_tips.steel_ammo.subtitle}"
@@ -1471,8 +1527,9 @@
 		{
 			dependencies: [
 				"5CDA3E5AEB6D6339"
-				"24158DEE63DAEB41"
+				"278F18477F9B7E08"
 			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.combat_tips.wireless_ammo.description}"]
 			id: "56ADEA4C00824362"
 			subtitle: "{quests.combat_tips.wireless_ammo.subtitle}"
@@ -1488,11 +1545,15 @@
 				type: "item"
 			}]
 			title: "{quests.combat_tips.wireless_ammo.title}"
-			x: 18.0d
+			x: 21.0d
 			y: 4.5d
 		}
 		{
-			dependencies: ["5CDA3E5AEB6D6339"]
+			dependencies: [
+				"5CDA3E5AEB6D6339"
+				"07A777BAAB2DBCFC"
+			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.combat_tips.magnalium_ammo.description}"]
 			id: "1FB1870CA923C94D"
 			subtitle: "{quests.combat_tips.magnalium_ammo.subtitle}"
@@ -1509,11 +1570,15 @@
 				type: "item"
 			}]
 			title: "{quests.combat_tips.magnalium_ammo.title}"
-			x: 12.0d
+			x: 13.0d
 			y: 4.5d
 		}
 		{
-			dependencies: ["5CDA3E5AEB6D6339"]
+			dependencies: [
+				"5CDA3E5AEB6D6339"
+				"1FF607647FA682B3"
+			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.combat_tips.desh_ammo.description}"]
 			id: "32E406869A84E2CA"
 			subtitle: "{quests.combat_tips.desh_ammo.subtitle}"
@@ -1530,10 +1595,11 @@
 				type: "item"
 			}]
 			title: "{quests.combat_tips.desh_ammo.title}"
-			x: 15.0d
+			x: 16.5d
 			y: 4.5d
 		}
 		{
+			description: ["{quests.combat_tips.mag.desc}"]
 			id: "2C2C58B077ACBF71"
 			tasks: [{
 				id: "54136F9CEB744468"
@@ -1545,6 +1611,7 @@
 					}
 				}
 				match_nbt: true
+				title: "{quests.combat_tips.mag.task}"
 				type: "item"
 			}]
 			title: "{quests.combat_tips.mag.title}"
@@ -1552,6 +1619,7 @@
 			y: -5.0d
 		}
 		{
+			description: ["{quests.combat_tips.grip.desc}"]
 			id: "7A7D0CBC84FC515A"
 			tasks: [{
 				id: "40FCFCE05919E280"
@@ -1563,6 +1631,7 @@
 					}
 				}
 				match_nbt: true
+				title: "quests.combat_tips.grip.task"
 				type: "item"
 			}]
 			title: "{quests.combat_tips.grip.title}"
@@ -1570,6 +1639,7 @@
 			y: -5.5d
 		}
 		{
+			description: ["{quests.combat_tips.muzzle.desc}"]
 			id: "1E7A53E11BF639F9"
 			tasks: [{
 				id: "588FD45A042CC703"
@@ -1581,6 +1651,7 @@
 					}
 				}
 				match_nbt: true
+				title: "{quests.combat_tips.muzzle.task}"
 				type: "item"
 			}]
 			title: "{quests.combat_tips.muzzle.title}"
@@ -1588,6 +1659,8 @@
 			y: -6.6d
 		}
 		{
+			dependencies: ["611C053A562DA9F0"]
+			description: ["{quests.comabt_tips.any_ammo.desc}"]
 			id: "5CDA3E5AEB6D6339"
 			subtitle: "{quests.combat_tips.any_ammo.subtitle}"
 			tasks: [{
@@ -1603,10 +1676,11 @@
 				type: "item"
 			}]
 			title: "{quests.combat_tips.any_ammo.title}"
-			x: 6.0d
+			x: 3.0d
 			y: 4.5d
 		}
 		{
+			description: ["{quests.combat_tips.scope.desc}"]
 			id: "3336D54AA0BB14BE"
 			tasks: [{
 				id: "3EDBD274C1375E98"
@@ -1618,6 +1692,7 @@
 					}
 				}
 				match_nbt: true
+				title: "{quests.combat_tips.scope.task}"
 				type: "item"
 			}]
 			title: "{quests.combat_tips.scope.title}"
@@ -1625,12 +1700,8 @@
 			y: -7.5d
 		}
 		{
-			dependencies: [
-				"2E3C021FEAE6A490"
-				"5917B0D4708BF534"
-			]
+			dependencies: ["2E3C021FEAE6A490"]
 			description: ["{quests.combat_tips.potato_cannon.description}"]
-			hide_dependency_lines: true
 			id: "1AD3447A86494F91"
 			subtitle: "{quests.combat_tips.potato_cannon.subtitle}"
 			tasks: [{
@@ -1645,8 +1716,8 @@
 				type: "item"
 			}]
 			title: "{quests.combat_tips.potato_cannon.title}"
-			x: 6.0d
-			y: -2.5d
+			x: 7.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["46214D40FA69DA7B"]
@@ -1710,7 +1781,7 @@
 			y: 1.5d
 		}
 		{
-			description: ["{quests.combat_tips.gun.description}"]
+			description: ["{quests.combat_tips.gun.desc}"]
 			icon: "createdeco:decal_warning"
 			id: "148F5DCEB5F68F6D"
 			shape: "none"
@@ -1755,9 +1826,66 @@
 				}
 			]
 			title: "{quests.combat_tips.club.title}"
-			x: -10.0d
+			x: -8.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["07A777BAAB2DBCFC"]
+			icon: "tfg:hv_universal_circuit"
+			id: "1FF607647FA682B3"
+			shape: "octagon"
+			size: 1.5d
+			tasks: [{
+				disable_toast: true
+				id: "050C41DFAD456777"
+				item: "gtceu:hv_assembler"
+				type: "item"
+			}]
+			title: "{quests.combat_tips.hv_main.title}"
+			x: 16.5d
 			y: 0.0d
 		}
+		{
+			dependencies: ["278F18477F9B7E08"]
+			icon: "tfg:iv_universal_circuit"
+			id: "11DE49B8724C2603"
+			shape: "octagon"
+			size: 1.5d
+			tasks: [{
+				disable_toast: true
+				id: "592B533C15CDA18D"
+				item: "gtceu:iv_assembler"
+				type: "item"
+			}]
+			title: "{quests.combat_tips.iv_main.title}"
+			x: 25.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"538780D3B9B11070"
+				"56B7191D184B499C"
+			]
+			dependency_requirement: "one_completed"
+			id: "452CE4E2F952F01D"
+			tasks: [{
+				id: "04A58E36C5F549B3"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							Items: [ ]
+							voidSlots: [I; ]
+						}
+					}
+					id: "sns:quiver"
+				}
+				type: "item"
+			}]
+			x: -7.0d
+			y: -2.5d
+		}
 	]
-	title: "Tips - Combat"
+	subtitle: ["{quests.combat.subtitle}"]
+	title: "{quests.combat}"
 }

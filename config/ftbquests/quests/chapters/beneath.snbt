@@ -153,7 +153,11 @@
 			y: -6.0d
 		}
 		{
-			dependencies: ["6694C656C4D4792B"]
+			dependencies: [
+				"6694C656C4D4792B"
+				"45B3A5C226C0EC9F"
+			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.piglin_disguise.desc}"]
 			id: "2EE6A09A11BFC0EE"
 			optional: true
@@ -284,6 +288,7 @@
 			dependencies: [
 				"5D0B0B9E61C3DE75"
 				"6B2ADEEEC2E9ED4B"
+				"2E3C021FEAE6A490"
 			]
 			description: ["{quests.tfg_tips.blue_steel_diving.desc}"]
 			id: "1371C0F8BFDEE0FC"

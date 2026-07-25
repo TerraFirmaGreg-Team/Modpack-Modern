@@ -310,7 +310,11 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["0967CE7F5DFF5CF6"]
+			dependencies: [
+				"0967CE7F5DFF5CF6"
+				"278F18477F9B7E08"
+			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.space_survival.t2_space_suit.desc}"]
 			id: "6D7ADBBCEF5770B6"
 			shape: "hexagon"
@@ -587,7 +591,11 @@
 			y: 4.5d
 		}
 		{
-			dependencies: ["1777E6C81C8353D5"]
+			dependencies: [
+				"1777E6C81C8353D5"
+				"1FF607647FA682B3"
+			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.space_survival.mars_shields.desc}"]
 			id: "6E757133FA00C40D"
 			optional: true
