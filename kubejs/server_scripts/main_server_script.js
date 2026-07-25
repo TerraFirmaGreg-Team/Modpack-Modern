@@ -97,6 +97,7 @@ ServerEvents.tags('fluid', event => {
 	registerHotOrNotFluidTags(event)
 	registerFirmaLifeFluidTags(event)
 	registerTFCFluidTags(event)
+	registerTFCChannelCastingFluidTags(event)
 	registerTFGFluidTags(event)
 	registerTFGFluidTagsNuclear(event)
 	registerVintageImprovementsFluidTags(event)

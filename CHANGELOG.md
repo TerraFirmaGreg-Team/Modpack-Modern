@@ -34,6 +34,7 @@
 - Air distributors, gravity normalizers, and single-block miners can no longer be glued to create contraptions due to exploits (#4530) @Pyritie
 - TFC Textile clothes can now have armor trims applied (#4461) @Pyritie
 - Create's fluid tanks (and the multi-tank and both horizontal versions) now hold 32B per block instead of 16B @Pyritie
+- Whiskey-filled chocolates now accept all forms of whiskey @Pyritie
 ### Bug fixes
 - The disabled Fluid and Item Pipes are not craftable anymore @TomPlop
 - The Final Moments effect now only kills on natural effect completion instead of on refreshes or clears, and also maybe fixed it sometimes not leaving a corpse @Redeix
