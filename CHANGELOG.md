@@ -2,11 +2,15 @@
 
 ## Unreleased
 ### Changes
+### Bug fixes
+
+## [0.13.6] - 27-07-2026
+### Changes
+- Moved several resource packs to our [optional mods](https://wiki.terrafirmagreg.team/modern/en_us/modpack/optional-mods) wiki page @Pyritie
 - Zoglins now drop a little animal fat @Pyritie
 - Fireflies can now spawn in rivers and lake biomes @Pyritie
 - Added electrolyzer recipes for quartz and smoky quartz (#4589) @hollow-earth
 - Changed textures of firmalife ovens and greenhouses, and enabled a TFC Ambiental resource pack by default
-- Moved several resource packs to our [optional mods](https://wiki.terrafirmagreg.team/modern/en_us/modpack/optional-mods) wiki page @Pyritie
 ### Bug fixes
 - Fixed bear clothes rendering @ashleney
 - Fixed not being able to put clothes in the curios slots (#4608) @ashleney
