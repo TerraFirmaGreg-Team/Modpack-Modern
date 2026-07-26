@@ -2,6 +2,7 @@
 
 ## Unreleased
 ### Changes
+- Zoglins now drop a little animal fat @Pyritie
 ### Bug fixes
 
 ## [0.13.5] - 25-07-2026
