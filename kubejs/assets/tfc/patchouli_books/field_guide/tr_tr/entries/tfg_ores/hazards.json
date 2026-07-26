@@ -1,5 +1,5 @@
 {
-	"name": "Hazardous Materials",
+	"name": "Tehlikeli Maddeler",
 	"icon": "createdeco:decal_skull",
 	"category": "tfc:tfg_ores",
 	"priority": true,
@@ -8,143 +8,143 @@
 	"pages": [
 		{
 			"type": "patchouli:spotlight",
-			"title": "Hazardous Materials",
+			"title": "Tehlikeli Maddeler",
 			"item": "gtceu:cobaltite_dust",
-			"text": "Some $(thing)ores$(), $(thing)dusts$() and $(thing)chemicals$() are hazardous and can cause $(item)negative effects$() or even $(item)kill$() you if they are carried in your inventory. When carried, they are displayed on screen with a $(item)Status Effect$().$(br2)Certain equipment such as $(thing)masks$(), $(thing)gloves$(), and the $(thing)hazardous material suit$() can be used to counter these effects."
+			"text": "Bazı $(thing)cevherler$(), $(thing)tozlar$() ve $(thing)kimyasallar$() tehlikelidir; envanterinizde taşındıklarında $(item)olumsuz etkilere$() yol açabilir, hatta sizi $(item)öldürebilir$(). Taşındıkları zaman ekranda bir $(item)Statü Etkisi$() ile gösterilirler.$(br2)$(thing)Maskeler$(), $(thing)eldivenler$() ve $(thing)tehlikeli madde giysisi$() gibi belirli ekipmanlar bu etkileri nötralize etmek için kullanılabilir."
 		},
 		{
 			"type": "patchouli:text",
-			"title": "All of the effects",
-			"text": "$(li)$(l:tfg_ores/hazards#Arsenicosis)Arsenicosis$()$()$(li)$(l:tfg_ores/hazards#Asbestosis)Asbestosis$()$()$(li)$(l:tfg_ores/hazards#Berylliosis)Berylliosis$()$(li)$(l:tfg_ores/hazards#Carbon_Monoxide_poisoning)Carbon Monoxide poisoning$()$(li)$(l:tfg_ores/hazards#Carcinogens)Carcinogens$()$(li)$(l:tfg_ores/hazards#Chemical_burns)Chemical burns$()$(li)$(l:tfg_ores/hazards#Irritants)Irritants$()$(li)$(l:tfg_ores/hazards#Methanol_poisoning)Methanol poisoning$()$(li)$(l:tfg_ores/hazards#Nauseating_chemicals)Nauseating chemicals$()$(li)$(l:tfg_ores/hazards#Poisons)Poisonous materials$()$(li)$(l:tfg_ores/hazards#Radioactive_materials)Radioactive materials$()$(li)$(l:tfg_ores/hazards#Silicosis)Silicosis$()$()$(br2)The next page will provide information on how to deal with these effects."
+			"title": "Tüm Etkiler",
+			"text": "$(li)$(l:tfg_ores/hazards#Arsenicosis)Arsenik Zehirlenmesi$()$()$(li)$(l:tfg_ores/hazards#Asbestosis)Asbestoz$()$()$(li)$(l:tfg_ores/hazards#Berylliosis)Berilyoz$()$(li)$(l:tfg_ores/hazards#Carbon_Monoxide_poisoning)Karbonmonoksit Zehirlenmesi$()$(li)$(l:tfg_ores/hazards#Carcinogens)Kanserojen Maddeler$()$(li)$(l:tfg_ores/hazards#Chemical_burns)Kimyasal Yanıklar$()$(li)$(l:tfg_ores/hazards#Irritants)Tahriş Edici Maddeler$()$(li)$(l:tfg_ores/hazards#Methanol_poisoning)Metanol Zehirlenmesi$()$(li)$(l:tfg_ores/hazards#Nauseating_chemicals)Mide Bulandırıcı Kimyasallar$()$(li)$(l:tfg_ores/hazards#Poisons)Zehirli Maddeler$()$(li)$(l:tfg_ores/hazards#Radioactive_materials)Radyoaktif Maddeler$()$(li)$(l:tfg_ores/hazards#Silicosis)Silikozis$()$()$(br2)Sonraki sayfa bu etkilerle nasıl başa çıkılacağı hakkında bilgi verecektir."
 		},
 		{
 			"type": "patchouli:text",
-			"title": "Prevention and Cures",
-			"text": "$(li)$(l:tfg_ores/hazards#rocks)Rocks?$()$()$(li)$(l:tfg_ores/hazards#containers)Containers$()$(li)$(l:tfg_ores/hazards#mask)The Face Mask$()$(li)$(l:tfg_ores/hazards#gloves)The Rubber Gloves$()$(li)$(l:tfg_ores/hazards#hazmat)The Hazmat Suit$()$(li)$(l:tfg_ores/hazards#medicine)Pills, Tablets and Salvos$()$(li)$(l:tfg_ores/hazards#rad_away)The RadAwayᵗᵐ pill$()$(li)$(l:tfg_ores/hazards#respawn)The Unthinkable...$()"
+			"title": "Önleme ve Tedaviler",
+			"text": "$(li)$(l:tfg_ores/hazards#rocks)Kayalar mı?$()$()$(li)$(l:tfg_ores/hazards#containers)Konteynerler$()$(li)$(l:tfg_ores/hazards#mask)Yüz Maskesi$()$(li)$(l:tfg_ores/hazards#gloves)Kauçuk Eldivenler$()$(li)$(l:tfg_ores/hazards#hazmat)Tehlikeli Madde Giysisi (Hazmat)$()$(li)$(l:tfg_ores/hazards#medicine)Haplar, Tabletler ve Merhemler$()$(li)$(l:tfg_ores/hazards#rad_away)RadAwayᵗᵐ Hapı$()$(li)$(l:tfg_ores/hazards#respawn)Düşünülmek İstenmeyen O Şey...$()"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Rocks!",
+			"title": "Kayalar!",
 			"item": {
 				"tag": "tfc:rock_knapping"
 			},
 			"anchor": "rocks",
-			"text": "$(thing)The easiest way$() to $(thing)prevent$() hazardous effects is to $(item)not pick up the dangerous items at all$().$(br2)Filling your inventory with $(thing)Rocks$(), for example, will let you pick and choose which items you want to pick up, letting you deal with the hazardous ones later."
+			"text": "Tehlikeli etkileri $(thing)önlemenin$()$(thing)en kolay yolu$(),$(item)tehlikeli eşyaları hiç toplamamaktır$().$(br2)Örneğin, envanterinizi $(thing)Kayalar$() ile doldurmak, hangi eşyaları toplamak istediğinizi seçip ayıklamanıza olanak tanır ve tehlikeli olanlarla daha sonra ilgilenmenizi sağlar."
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Containers",
+			"title": "Depolama Alanları",
 			"anchor": "containers",
-			"text": "Hazardous materials only deal damage while they are in your $(thing)inventory$(), but that doesn't apply to other containers!$(br)Hazardous materials will not deal damage while they are in another container such as a $(l:tfg_tips/inventory_management)Backpack$() or $(l:getting_started/pottery#vessel)Vessel$(). $(thing)Right-clicking$() while holding a vessel will allow direct transfer of its contents to and from containers.",
+			"text": "Anlaşıldı Kaan, hemen **Vessel** kelimesini **Pota** olarak güncelliyorum:\n\nTehlikeli maddeler yalnızca $(thing)envanterinizde$() bulunduklarında hasar verir, ancak bu durum diğer konteynerler için geçerli değildir!$(br)Tehlikeli maddeler bir $(l:tfg_tips/inventory_management)Sırt Çantası$() veya $(l:getting_started/pottery#vessel)Pota$() gibi başka bir konteynerin içindeyken hasar vermezler. Elinizde pota tutarken $(thing)Sağ tık yapmak$(), içindekilerin konteynerlere veya konteynerlerden doğrudan aktarılmasını sağlar.",
 			"item": "sophisticatedbackpacks:backpack,tfc:ceramic/vessel,tfc:ceramic/large_vessel"
 		},
 		{
 			"type": "patchouli:crafting",
-			"title": "Face Mask",
+			"title": "Yüz Maskesi",
 			"recipe": "gtceu:shaped/face_mask",
-			"text": "The $(thing)Face Mask$() provides protection from any $(item)Inhalation$() hazards, such as Arsenicosis.",
+			"text": "$(thing)Yüz Maskesi$(), Arsenikoz gibi her türlü $(item)Soluma$() tehlikesine karşı koruma sağlar.",
 			"anchor": "mask"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:rubber_gloves",
-			"title": "Rubber gloves",
+			"title": "Kauçuk Eldivenler",
 			"link_recipes": true,
 			"anchor": "gloves",
-			"text": "The $(thing)Rubber gloves$() can either be made from $(l:mechanics/leather_making)Leather$() and $(l:arborfirmacraft/making_rubber)Latex$(), or out of $(thing)Rubber Sheets$(). They provide protection from any $(item)Skin Contact$() hazards, such as $(thing)Beryllium Dust$()."
+			"text": "$(thing)Kauçuk Eldivenler$(), ya $(l:mechanics/leather_making)Deri$() ve $(l:arborfirmacraft/making_rubber)Lateks$() kullanılarak ya da $(thing)Kauçuk Levhalar$() ile yapılabilir. $(thing)Berilyum Tozu$() gibi her türlü $(item)Cilt Teması$() tehlikesine karşı koruma sağlarlar."
 		},
 		{
 			"type": "tfc:knapping_recipe",
 			"recipe": "tfchotornot:leather_knapping/mittens",
-			"text": "First, knap the leather into mittens."
+			"text": "İlk olarak deriyi yontarak eldiven haline getirin."
 		},
 		{
 			"type": "tfc:sealed_barrel_recipe",
 			"recipe": "tfg:sealed_barrel/prepared_leather_gloves",
-			"text": "$(thing)Mittens$() are then soaked in $(thing)Vinegar$(), a mixture of fruit and alcohol."
+			"text": "$(thing)Eldivenler$() daha sonra meyve ve alkol karışımı olan $(thing)Sirke$() içinde bekletilir."
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "tfg:latex_soaked_gloves",
-			"text": "Prepared $(thing)leather gloves$() are then heated in a $(thing)vat$() with $(thing)Vulcanized Latex$(), one step away from rubber."
+			"text": "Hazırlanan $(thing)deri eldivenler$() ardından, kauçuktan bir önceki adım olan $(thing)Vulkanize Lateks$() ile birlikte bir $(thing)kazan$() içinde ısıtılır."
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:rubber_gloves",
-			"text": "Finally, the latex-soaked gloves are heated in an $(l:firmalife/ovens)Oven$()."
+			"text": "Son olarak, lateks emdirilmiş eldivenler bir $(l:firmalife/ovens)Ocak$() içinde ısıtılır."
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "The Hazmat Suit",
+			"title": "Tehlikeli Madde Elbisesi",
 			"item": "gtceu:hazmat_headpiece,gtceu:hazmat_chestpiece,gtceu:hazmat_leggings,gtceu:hazmat_boots",
-			"text": "A completed $(thing)Hazmat suit $()provides $(item)immunity $()from $(item)every$() hazard, even $(item)radiation$(). It is made in an $(thing)LV Assembler$() from $(thing)Polyethylene$() and $(thing)Polyvinyl Chloride$().$(br2)Fun fact! You can also look up $(thing)#ppe_armor$() in JEI for more equipment that provides protection from hazardous materials.",
+			"text": "Üstüne tam çektiğin bir $(thing)Hazmat Tulumu $()sana$(item)radyasyon$() bile dahil$(item)her türlü$() pisliğe karşı tam $(item)bağışıklık $()sağlar. $(thing)LV Assembler$() içinde $(thing)Polietilen$() ve$(thing)Polivinil Klorür$() harmanlanarak yapılır.$(br2)Kıyak bilgi! Tehlikeli materyallerden paçayı kurtaracak diğer zımbırtılar için JEI'de $(thing)#ppe_armor$() diye aratabilirsin.",
 			"anchor": "hazmat"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Medicine",
+			"title": "İlaçlar",
 			"item": {
 				"tag": "tfg:medicine"
 			},
 			"anchor": "medicine",
-			"text": "In case you do get heavily exposed to a hazard, there are some $(thing)Medicines$() that can help you recover.$(br2)Basic $(thing)Pills$() are the most primitive and easy to make, but most come with $(item)Negative Side Effects$(). $(thing)Tablets$() and $(thing)Salvos$() are more effective and have less side effects, but they require $(thing)LV equipment$() and more advanced resources to make."
+			"text": "Baktın bir şekilde tehlikenin dibine kadar battın, paçayı toparlamana yardım edecek bazı $(thing)İlaçlar$() var.$(br2)Düz $(thing)Haplar$() işin en ilkel, en fred çakmaktaş usulü ve yapması kolay olanı; ama çoğunun faturası $(item)Olumsuz Yan Etkiler$() olarak geri döner. $(thing)Tabletler$() ve $(thing)Merhemler$() ise hem daha etkilidir hem de yan etkisi azdır, fakat bunları basmak için $(thing)LV Ekipmanı$() ve daha babayiğit kaynaklar şart."
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "The RadAwayᵗᵐ pill",
+			"title": "RadAway™ Hapı",
 			"item": "tfg:rad_away_pill",
 			"anchor": "rad_away",
-			"text": "This is $(item)The Ultimate$() cure for $(item)ALL$() the hazards and the $(item)ONLY$() effective cure to $(item)Radiation$(). However, it is also the most $(thing)Expensive$() and $(thing)Difficult$() to make, requiring $(thing)HV tier$() equipment and advanced materials."
+			"text": "Bu meret, $(item)TÜM$() pisliklerin $(item)Nihai Devası$() ve $(item)Radyasyon$() illetini çözen $(item)TEK$() çaredir. Gelgelelim yapması da en $(thing)Tuzlu$() ve en $(thing)Çileli$() olanıdır; zira üretmek için $(thing)HV Seviye$() ekipman ve bayağı baba malzemeler ister."
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Failure...",
+			"title": "Başarısızlık...",
 			"item": {
 				"tag": "minecraft:beds"
 			},
 			"anchor": "respawn",
-			"text": "If all else fails, bringing along a bed to respawn is a good idea.$(br2)If you don't have access to $(thing)Wool$() or $(thing)String$(), you can also make a $(l:getting_started/a_place_to_sleep)Thatch Bed$()."
+			"text": "Baktın hiçbir şey kâr etmedi, tahtalıköyü boyladığında yeniden doğabilmek için yanında bir yatak taşımak en temizi.$(br2)Elde avuçta $(thing)Yün$() veya $(thing)İp$() yoksa, derme çatma bir $(l:getting_started/a_place_to_sleep)Saman Yatak$() da çakabilirsin."
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Arsenicosis",
+			"title": "Arsenikoz",
 			"item": "gtceu:arsenic_dust",
 			"anchor": "Arsenicosis",
-			"text": "$(thing)Arsenicosis$() is an illness caused by inhaling $(thing)Arsenic$() from its dust, vapor or $(thing)Realgar$(). It slowly increases $(item)hunger$(), followed by $(item)nausea$(), and eventually $(item)death$().$(br2)The $(l:tfg_ores/hazards#mask)Face Mask$() and the $(l:tfg_ores/hazards#hazmat)Hazmat Suit$() provide protection from $(thing)Arsenicosis$()."
+			"text": "$(thing)Arsenikoz$(), tozundan, buharından veya $(thing)Realgar$()'dan ciğerlere $(thing)Arsenik$() çekilmesiyle musallat olan bir illettir. Önce sinsi sinsi $(item)açlığını$() azdırır, peşinden $(item)mide bulantısı$() vurur ve en sonunda da tahtalıköyü boylatır, yani bildiğin $(item)ölüm$().$(br2)$(l:tfg_ores/hazards#mask)Yüz Maskesi$() ve $(l:tfg_ores/hazards#hazmat)Hazmat Tulumu$() giyerek bu $(thing)Arsenikoz$() belasından paçayı rahatlıkla sıyırabilirsin."
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Asbestosis",
+			"title": "Asbestoz",
 			"item": "gtceu:asbestos_dust",
 			"anchor": "Asbestosis",
-			"text": "$(thing)Asbestosis$() is an illness caused by inhaling $(thing)Asbestos$() dust. If carried for long enough, it causes $(item)hunger$().$(br2)The $(l:tfg_ores/hazards#mask)Face Mask$() and the $(l:tfg_ores/hazards#hazmat)Hazmat Suit$() provide protection from $(thing)Asbestosis$()."
+			"text": "$(thing)Asbestoz$(), ortalıktaki $(thing)Asbest$() tozunu ciğerlere çekince bünyeye musallat olan bir illettir. Üstünde uzun süre taşırsan fena halde $(item)açlık$() bastırır.$(br2)$(l:tfg_ores/hazards#mask)Yüz Maskesi$() veya $(l:tfg_ores/hazards#hazmat)Hazmat Tulumu$() çekerek bu $(thing)Asbestoz$() belasından paçayı rahatça kurtarabilirsin."
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Berylliosis",
+			"title": "Berilyoz",
 			"item": "gtceu:beryllium_dust",
 			"anchor": "Berylliosis",
-			"text": "$(thing)Berylliosis$() is an illness caused by skin contact with $(thing)Beryllium dust$() or $(thing)Liquid Beryllium$(). At first it might seem that it doesn't do much. However, the longer the exposure, the faster it $(item)kills$() you.$(br2)$(l:tfg_ores/hazards#gloves)Gloves$() and the $(l:tfg_ores/hazards#hazmat)Hazmat Suit$() provide protection from $(thing)Berylliosis$()."
+			"text": "$(thing)Berilyoz$(), $(thing)Berilyum Tozu$() veya $(thing)Sıvı Berilyum$() cildine değdiği an yapışan bir illettir. İlk başta pek bir numarası yokmuş, masummuş gibi gelebilir; ama maruz kaldığın süre uzadıkça seni o kadar hızlı $(item)nalları diktirir$().$(br2)$(l:tfg_ores/hazards#gloves)Eldivenler$() ve $(l:tfg_ores/hazards#hazmat)Hazmat Tulumu$() takarak bu $(thing)Berilyoz$() belasından paçayı sıyırabilirsin."
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Carbon Monoxide poisoning",
+			"title": "Karbonmonoksit Zehirlenmesi",
 			"item": "gtceu:carbon_monoxide_bucket",
 			"anchor": "Carbon_Monoxide_poisoning",
-			"text": "$(thing)Carbon Monoxide poisoning$() is an illness caused by inhaling $(thing)Carbon Monoxide$() gas. Prolonged exposure causes $(item)nausea$() and quick $(item)death$().$(br2)The $(l:tfg_ores/hazards#mask)Face Mask$() and the $(l:tfg_ores/hazards#hazmat)Hazmat Suit$() provide protection from $(thing)Carbon Monoxide$()."
+			"text": "$(thing)Karbonmonoksit Zehirlenmesi$(), ortamdaki $(thing)Karbonmonoksit$() gazını ciğerlere çekince musallat olan bir illettir. Uzun süre maruz kalırsan önce fena bir $(item)mide bulantısı$() basar, peşinden de kaşla göz arasında $(item)ölüm$() gelir.$(br2)$(l:tfg_ores/hazards#mask)Yüz Maskesi$() veya $(l:tfg_ores/hazards#hazmat)Hazmat Tulumu$() takarak bu $(thing)Karbonmonoksit$() belasından paçayı rahatça kurtarabilirsin."
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Carcinogens",
+			"title": "Karsinojenler",
 			"item": "gtceu:benzene_bucket",
-			"anchor": "Carcinogens",
-			"text": "$(thing)Carcinogens$() are substances that cause $(item)Cancer$(). They include $(thing)Chromium Dust$() aswell as some organic compounds, such as $(thing)Benzene and its products$(). $(thing)Carcinogens$() $(item)don't go away on their own$(), but they give plenty of warnings before doing any real harm. It starts off with $(item)Weakness$(), followed by $(item)Hunger$(), then $(item)Slowness$() and later on $(item)Mining Fatique$(). Only when substantial enough exposure is accumulated it causes $(item)Death$()."
+			"anchor": "Karsinojenler",
+			"text": "$(thing)Karsinojenler$(), doğrudan $(item)Kanser$()'e yol açan belalı maddelerdir. Aralarında $(thing)Krom Tozu$()'nun yanı sıra $(thing)Benzen ve Ürünleri$() gibi bazı organik bileşikler de yer alır. Bu $(thing)Karsinojenler$() öyle $(item)kendi kendine geçip gitmez$(), ama esaslı bir darbe vurmadan önce sana bol bol uyarı çakar. İş önce $(item)Halsizlik$() ile başlar, ardından $(item)Açlık$() bastırır, peşinden $(item)Yavaşlık$() ve ilerleyen safhada $(item)Madencilik Yorgunluğu$() çöker. Yalnızca bünyede yeterince birikip doz aşımı yaptığında $(item)Ölüm$()'le işini bitirir."
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Carcinogens",
+			"title": "Karsinojenler",
 			"item": "gtceu:chromium_dust",
-			"anchor": "Carcinogens",
+			"anchor": "Karsinojenler",
 			"text": "The $(l:tfg_ores/hazards#mask)Face Mask$() protects from inhalation of harmful chemicals, while the $(l:tfg_ores/hazards#gloves)Gloves$() protect from contact with $(thing)Chromium Dust$().$(br2)The $(l:tfg_ores/hazards#hazmat)Hazmat Suit$() protects from both.$(br2)In case of severe exposure, it is advised to take some $(l:tfg_ores/hazards#medicine)Medicines$() to $(thing)Prevent$() any possible damage."
 		},
 		{
