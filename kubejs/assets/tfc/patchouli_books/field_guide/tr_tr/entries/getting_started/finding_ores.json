@@ -1,12 +1,12 @@
 {
   "__comment__": "This file was automatically created by mcresources",
-  "name": "Madenler,Metaller ve Dökümcülük",
+  "name": "Madenler, Metaller ve Dökümcülük",
   "category": "tfc:getting_started",
   "icon": "tfc:ore/normal_native_copper",
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "Etrafta gezerken çubuk ve taşların yanında ufak maden parçalarına rastlamış olabilirsiniz.Bunlar önemli çünkü bunlar kazma yapmadan erişebildiğiniz tek madenler."
+      "text": "Etrafta gezerken çubuk ve taşların yanında ufak maden parçalarına rastlamış olabilirsiniz. Bunlar önemli çünkü bunlar kazma yapmadan erişebildiğiniz tek madenler."
     },
     {
       "type": "patchouli:multiblock",
@@ -50,58 +50,58 @@
     },
     {
       "type": "patchouli:text",
-      "text": "Bu ufak maden parçaları iki işe yarar: size kullanmak için maden kaynağı olurlar ve daha önemli olarak aşağılarında büyük bir maden damarı olduğunu belirtirler.Bu yüzden bu küçük madenleri bulduğunuz yerleri işaretleyin çünkü ileride $(l:mechanics/prospecting)Prospecting$().$(br2) yaparken işinize yarayacak.yan sayafada on iki çeşit metalin eriyip neye dönüştüğü yazmakta."
+      "text": "Bu küçük cevher parçaları iki işe yarar: Hem sana metal kaynağı sağlarlar hem de çok daha önemlisi, yakınlarda bir yerlerde —muhtemelen yeraltında ve yüzeye yakın— devasa bir cevher damarı olduğunu haber verirler. Küçük cevherleri nerede bulduğunu mutlaka bir yere not et; çünkü bu cevher damarlarının yeri ileride $(l:mechanics/prospecting)Maden Arama$() yaparken acayip işine yarayacak.$(br2)On iki küçük cevher türü ve eritildiklerinde hangi metale dönüştükleri bir sonraki sayfada listelenmiştir."
     },
     {
       "type": "patchouli:text",
-      "text": "",
-      "title": "Small Ores"
+      "text": "$(li)Doğal Bakır ($(thing)Bakır$())$(li)Doğal Altın ($(thing)Altın$())$(li)Hematit ($(thing)Dökme Demir$())$(li)Doğal Gümüş ($(thing)Gümüş$())$(li)Kasiterit ($(thing)Kalay$())$(li)Bismutinit ($(thing)Bizmut$())$(li)Garniyerit ($(thing)Nikel$())$(li)Malakit ($(thing)Bakır$())$(li)Manyetit ($(thing)Dökme Demir$())$(li)Limonit ($(thing)Dökme Demir$())$(li)Sfalerit ($(thing)Çinko$())$(li)Tetrahedrit ($(thing)Bakır$())",
+      "title": "Küçük Cevherler"
     },
     {
       "type": "patchouli:text",
       "anchor": "casting",
-      "text": "In TerraFirmaCraft, ores each contain a certain number of $(thing)units$(), or $(thing)mB (millibuckets)$() of actual metal which can be extracted. Small ores like this found on the surface are the lowest quality, and only provide $(thing)16 mB$() of metal. In order to extract this metal, it needs to be $(thing)melted$(), and made into tools using a process called $(thing)casting$().",
-      "title": "Casting"
+      "text": "TerraFirmaCraft'ta her cevher, çıkarılabilecek belirli miktarda gerçek metal içerir; bunu $(thing)birim$() ya da $(thing)mB (mililitre)$() olarak ölçersin. Yüzeyde bulduğun bu küçük cevherler en düşük kaliteli olanlarıdır ve sadece $(thing)16 mB$() metal verir. Bu metali çıkarmak için önce $(thing)eritmen$(), sonra da $(thing)döküm$() denen bir işlemle alete dönüştürmen gerekiyor.",
+      "title": "Döküm"
     },
     {
       "type": "patchouli:text",
-      "text": "You will need:$(br)$(li)A $(l:getting_started/pottery#vessel)Small Vessel$()$(li)Enough materials for a $(l:getting_started/pit_kiln)Pit Kiln$().$(li)One or more $(l:getting_started/pottery#mold)Mold(s)$() to cast the molten metal.$(li)And finally, at least 144 mB total of a metal which is suitable for casting: $(thing)Copper$(), in one or more of its three ore forms.$(br2)$(br)$(italic)Note: Casting can also be done with some $(l:getting_started/primitive_alloys)Alloys$()"
+      "text": "İhtiyacın olanlar:$(br)$(li)Bir $(l:getting_started/pottery#vessel)Küçük Kap$()$(li)Bir $(l:getting_started/pit_kiln)Çukur Ocak$() kurmak için yeterli malzeme.$(li)Erimiş metali dökmek için bir veya daha fazla $(l:getting_started/pottery#mold)Kalıp$().$(li)Ve son olarak, döküme uygun toplam en az 144 mB metal: üç cevher formundan herhangi birinde $(thing)Bakır$().$(br2)$(br)$(italic)Not: Döküm bazı $(l:getting_started/primitive_alloys)Alaşımlar$() ile de yapılabilir."
     },
     {
       "type": "patchouli:text",
-      "text": "First, open the $(thing)Small Vessel$() and put the ores inside. Count up the total amount of metal in the ores carefully! The vessel can only hold up to 3024mB of molten metal, excess will be lost. Then, you need to build a $(l:getting_started/pit_kiln)Pit Kiln$() with the filled small vessel inside. As the vessel heats, the ores inside it will melt, and you'll be left with a vessel of molten metal."
+      "text": "Önce $(thing)Küçük Kap$()'ı aç ve cevherleri içine koy. Cevherlerdeki toplam metal miktarını iyi hesapla! Kap en fazla 3024mB erimiş metal alır, fazlası ziyan olur. Sonra, içinde dolu küçük kap olan bir $(l:getting_started/pit_kiln)Çukur Ocak$() kurman gerekiyor. Kap ısındıkça içindeki cevherler eriyecek ve elinde erimiş metal dolu bir kap kalacak."
     },
     {
       "type": "patchouli:crafting",
       "recipe": "tfchotornot:crafting/tongs/wood",
-      "text": "Careful, the vessel will be hot! Craft $(thing)Wooden Tongs$() with two sticks and a knife and hold them in your off hand to handle the hot vessel safely."
+      "text": "Dikkat et, kap sıcak olacak! İki çubuk ve bir bıçakla $(thing)Tahta Maşa$() yap ve sıcak kabı güvenle tutmak için ikincil elinde bulundur."
     },
     {
       "type": "patchouli:image",
       "images": [
         "tfc:textures/gui/book/gui/casting.png"
       ],
-      "text": "Hold the vessel and $(item)$(k:key.use)$() to open the $(thing)Casting$() interface.",
+      "text": "Kabı tut ve $(thing)Döküm$() arayüzünü açmak için $(item)$(k:key.use)$() tuşuna bas.",
       "border": false
     },
     {
       "type": "patchouli:text",
-      "text": "With the casting interface open, place your empty fired mold in the center slot. It will fill up as long as the vessel remains liquid. (If the vessel solidifies, it can be reheated in another pit kiln.) Once the mold is full, it can be removed and left to cool. Once cool, the mold and its contents can be extracted by using the mold, or putting it in the crafting grid."
+      "text": "Döküm arayüzü açıkken, boş ve pişmiş kalıbını orta yuvaya yerleştir. Kap sıvı kaldığı sürece kalıp dolmaya devam edecek. (Kap katılaşırsa, başka bir çukur ocakta yeniden ısıtabilirsin.) Kalıp dolunca çıkarıp soğumaya bırakabilirsin. Soğuduktan sonra da kalıbı kullanarak ya da crafting tablasına koyarak içindekini çıkarabilirsin."
     },
     {
       "type": "patchouli:crafting",
       "recipe": "gtceu:shaped/pickaxe_copper",
-      "text": "You are now able to craft your first pickaxe! Find enough copper to make a pickaxe head, fire a pickaxe mold and melt the ore using a pit kiln, then cast a head. Slap it on a stick, and voila! You can now dig for $(l:tfg_ores/index)ore$()."
+      "text": "Artık ilk kazmanı yapabilirsin! Kazma başı için yeterince bakır bul, bir kazma kalıbı pişir, cevheri bir çukur ocakta erit, sonra da başı dök. Bir sapa tak, işte bu kadar! Artık $(l:tfg_ores/index)cevher$() kazabilirsin."
     },
     {
       "type": "patchouli:spotlight",
       "item": "tfc:metal/chisel/copper",
-      "text": "A couple other important metal tools are available for progression as well. The $(l:mechanics/chisel)Chisel$() is useful for working with stone blocks for building and other recipes."
+      "text": "İlerlemende işine yarayacak birkaç önemli metal alet daha var. $(l:mechanics/chisel)Keski$(), taş blokları işlemek, inşaat yapmak ve başka tarifler için gerçekten elinden düşürmeyeceğin bir alet."
     },
     {
       "type": "patchouli:spotlight",
       "item": "gtceu:copper_saw",
-      "text": "The saw allows you turn wood logs into $(l:mechanics/support_beams)support beams$() and $(thing)lumber$(), which can further be crafted into planks, the crafting bench, barrels, and chests, among other things. It is also useful to make a $(l:firmaciv/canoe)canoe$()."
+      "text": "Testere ile kütüklerini $(l:mechanics/support_beams)destek kirişlerine$() ve $(thing)kerestene$() dönüştürebilirsin, bunları da tahta, marangoz tezgahı, fıçı ve sandık gibi bir sürü şeye çevirebilirsin. Bir de $(l:firmaciv/canoe)kano$() yapmak istersen, yine bu işine yarar."
     }
   ],
   "read_by_default": true,
