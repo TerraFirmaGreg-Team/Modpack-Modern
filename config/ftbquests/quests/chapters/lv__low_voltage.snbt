@@ -672,6 +672,7 @@
 						"ftbfiltersystem:filter": "or(item(gtceu:prospector.lv)item(gtceu:prospector.hv)item(gtceu:prospector.luv))"
 					}
 				}
+				title: "{quests.low_voltage.lv_ore_prospector.task}"
 				type: "item"
 			}]
 			title: "{quests.low_voltage.lv_ore_prospector.title}"
