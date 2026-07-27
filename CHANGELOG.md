@@ -11,6 +11,7 @@
 - Fireflies can now spawn in rivers and lake biomes @Pyritie
 - Added electrolyzer recipes for quartz and smoky quartz (#4589) @hollow-earth
 - Changed textures of firmalife ovens and greenhouses, and enabled a TFC Ambiental resource pack by default
+- Added a quest about armor trims to the new equipment chapter, which is now also craftable out of iron @Pyritie
 ### Bug fixes
 - Fixed bear clothes rendering @ashleney
 - Fixed not being able to put clothes in the curios slots (#4608) @ashleney
