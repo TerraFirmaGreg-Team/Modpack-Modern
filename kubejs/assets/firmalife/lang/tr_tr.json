@@ -1,6 +1,14 @@
 {
 	"block.firmalife.beehive": "Tahta Arı Kovanı",
 	"block.firmalife.cured_oven_chimney": "Kürlenmiş Fırın Bacası",
+	"block.firmalife.plant.basil": "Fesleğen",
+	"block.firmalife.plant.bay_laurel": "Yaban Defnesi",
+	"block.firmalife.plant.cardamom": "Kakule",
+	"block.firmalife.plant.cilantro": "Kişniş",
+	"block.firmalife.plant.cumin": "Kimyon",
+	"block.firmalife.plant.oregano": "Kekik",
+	"block.firmalife.plant.pimento": "Yenibahar",
+	"block.firmalife.plant.vanilla": "Vanilya",
 	"config.jade.plugin_firmalife.cheese": "Cheese",
 	"config.jade.plugin_firmalife.fruit_tree_sapling": "Fruit Tree Sapling",
 	"firmalife.block_entity.berry_bush": "Yemiş Çalısı",
@@ -18,6 +26,7 @@
 	"item.firmalife.food.rice_dough": "Pirinç Hamuru",
 	"item.firmalife.food.rye_dough": "Çavdar Hamuru",
 	"item.firmalife.food.wheat_dough": "Buğday Hamuru",
+	"item.firmalife.spice.vanilla": "Vanilya",
 	"tfc.recipe.barrel.firmalife.barrel.curdled_milk": "Süt Kesiliyor",
 	"tfc.recipe.barrel.firmalife.barrel.feta": "Feta Peyniri"
 }

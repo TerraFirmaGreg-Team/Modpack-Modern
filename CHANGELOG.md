@@ -4,6 +4,22 @@
 ### Changes
 ### Bug fixes
 
+## [0.13.6] - 27-07-2026
+### Changes
+- Moved several resource packs to our [optional mods](https://wiki.terrafirmagreg.team/modern/en_us/modpack/optional-mods) wiki page @Pyritie
+- Zoglins now drop a little animal fat @Pyritie
+- Fireflies can now spawn in rivers and lake biomes @Pyritie
+- Added electrolyzer recipes for quartz and smoky quartz (#4589) @hollow-earth
+- Changed textures of firmalife ovens and greenhouses, and enabled a TFC Ambiental resource pack by default
+- Added a quest about armor trims to the new equipment chapter, which is now also craftable out of iron @Pyritie
+### Bug fixes
+- Fixed bear clothes rendering @ashleney
+- Fixed not being able to put clothes in the curios slots (#4608) @ashleney
+- Fixed ginkgo logs and charred trees having more logs as their "dirt", even when growing new trees @Pyritie
+- Fixed smoky quartz ore block textures @Pyritie
+- Fixed not being able to pick up titanium steam engines and flywheels (#4610) @Pyritie
+- Fixed not being able to put anthracite in an ore sack @Pyritie
+
 ## [0.13.5] - 25-07-2026
 ### Breaking Changes
 - Remove two steps in the Uvarovite-Chromium line so it's more appropriate to MV difficulty (the now-useless recipes and materials will be removed later) @TomPlop

@@ -1,0 +1,466 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "multipart": [
+    {
+      "when": {
+        "facing": "east",
+        "lit": false
+      },
+      "apply": {
+        "model": "firmalife:block/oven/brick_oven_bottom_insulated",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "north",
+        "lit": false
+      },
+      "apply": {
+        "model": "firmalife:block/oven/brick_oven_bottom_insulated"
+      }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "lit": false
+      },
+      "apply": {
+        "model": "firmalife:block/oven/brick_oven_bottom_insulated",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "lit": false
+      },
+      "apply": {
+        "model": "firmalife:block/oven/brick_oven_bottom_insulated",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "facing": "east",
+        "lit": true
+      },
+      "apply": {
+        "model": "firmalife:block/oven/brick_oven_bottom_lit_insulated",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "north",
+        "lit": true
+      },
+      "apply": {
+        "model": "firmalife:block/oven/brick_oven_bottom_lit_insulated"
+      }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "lit": true
+      },
+      "apply": {
+        "model": "firmalife:block/oven/brick_oven_bottom_lit_insulated",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "lit": true
+      },
+      "apply": {
+        "model": "firmalife:block/oven/brick_oven_bottom_lit_insulated",
+        "y": 270
+      }
+    },
+	{
+      "when": {
+        "facing": "east",
+        "lit": true
+      },
+      "apply": {
+        "model": "firmalife:block/oven/oven_fire",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "north",
+        "lit": true
+      },
+      "apply": {
+        "model": "firmalife:block/oven/oven_fire"
+      }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "lit": true
+      },
+      "apply": {
+        "model": "firmalife:block/oven/oven_fire",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "lit": true
+      },
+      "apply": {
+        "model": "firmalife:block/oven/oven_fire",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "facing": "east",
+        "lit": false,
+        "logs": 1
+      },
+      "apply": {
+        "model": "firmalife:block/oven/log_1_unlit",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "north",
+        "lit": false,
+        "logs": 1
+      },
+      "apply": {
+        "model": "firmalife:block/oven/log_1_unlit"
+      }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "lit": false,
+        "logs": 1
+      },
+      "apply": {
+        "model": "firmalife:block/oven/log_1_unlit",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "lit": false,
+        "logs": 1
+      },
+      "apply": {
+        "model": "firmalife:block/oven/log_1_unlit",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "facing": "east",
+        "lit": false,
+        "logs": 2
+      },
+      "apply": {
+        "model": "firmalife:block/oven/log_2_unlit",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "north",
+        "lit": false,
+        "logs": 2
+      },
+      "apply": {
+        "model": "firmalife:block/oven/log_2_unlit"
+      }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "lit": false,
+        "logs": 2
+      },
+      "apply": {
+        "model": "firmalife:block/oven/log_2_unlit",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "lit": false,
+        "logs": 2
+      },
+      "apply": {
+        "model": "firmalife:block/oven/log_2_unlit",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "facing": "east",
+        "lit": false,
+        "logs": 3
+      },
+      "apply": {
+        "model": "firmalife:block/oven/log_3_unlit",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "north",
+        "lit": false,
+        "logs": 3
+      },
+      "apply": {
+        "model": "firmalife:block/oven/log_3_unlit"
+      }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "lit": false,
+        "logs": 3
+      },
+      "apply": {
+        "model": "firmalife:block/oven/log_3_unlit",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "lit": false,
+        "logs": 3
+      },
+      "apply": {
+        "model": "firmalife:block/oven/log_3_unlit",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "facing": "east",
+        "lit": false,
+        "logs": 4
+      },
+      "apply": {
+        "model": "firmalife:block/oven/log_4_unlit",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "north",
+        "lit": false,
+        "logs": 4
+      },
+      "apply": {
+        "model": "firmalife:block/oven/log_4_unlit"
+      }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "lit": false,
+        "logs": 4
+      },
+      "apply": {
+        "model": "firmalife:block/oven/log_4_unlit",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "lit": false,
+        "logs": 4
+      },
+      "apply": {
+        "model": "firmalife:block/oven/log_4_unlit",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "facing": "east",
+        "lit": true,
+        "logs": 1
+      },
+      "apply": {
+        "model": "firmalife:block/oven/log_1_lit",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "north",
+        "lit": true,
+        "logs": 1
+      },
+      "apply": {
+        "model": "firmalife:block/oven/log_1_lit"
+      }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "lit": true,
+        "logs": 1
+      },
+      "apply": {
+        "model": "firmalife:block/oven/log_1_lit",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "lit": true,
+        "logs": 1
+      },
+      "apply": {
+        "model": "firmalife:block/oven/log_1_lit",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "facing": "east",
+        "lit": true,
+        "logs": 2
+      },
+      "apply": {
+        "model": "firmalife:block/oven/log_2_lit",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "north",
+        "lit": true,
+        "logs": 2
+      },
+      "apply": {
+        "model": "firmalife:block/oven/log_2_lit"
+      }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "lit": true,
+        "logs": 2
+      },
+      "apply": {
+        "model": "firmalife:block/oven/log_2_lit",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "lit": true,
+        "logs": 2
+      },
+      "apply": {
+        "model": "firmalife:block/oven/log_2_lit",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "facing": "east",
+        "lit": true,
+        "logs": 3
+      },
+      "apply": {
+        "model": "firmalife:block/oven/log_3_lit",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "north",
+        "lit": true,
+        "logs": 3
+      },
+      "apply": {
+        "model": "firmalife:block/oven/log_3_lit"
+      }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "lit": true,
+        "logs": 3
+      },
+      "apply": {
+        "model": "firmalife:block/oven/log_3_lit",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "lit": true,
+        "logs": 3
+      },
+      "apply": {
+        "model": "firmalife:block/oven/log_3_lit",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "facing": "east",
+        "lit": true,
+        "logs": 4
+      },
+      "apply": {
+        "model": "firmalife:block/oven/log_4_lit",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "north",
+        "lit": true,
+        "logs": 4
+      },
+      "apply": {
+        "model": "firmalife:block/oven/log_4_lit"
+      }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "lit": true,
+        "logs": 4
+      },
+      "apply": {
+        "model": "firmalife:block/oven/log_4_lit",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "lit": true,
+        "logs": 4
+      },
+      "apply": {
+        "model": "firmalife:block/oven/log_4_lit",
+        "y": 270
+      }
+    }
+  ]
+}

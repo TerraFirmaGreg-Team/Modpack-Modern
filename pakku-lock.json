@@ -355,73 +355,6 @@
             ]
         },
         {
-            "pakku_id": "w4J4AtAF3fKDeBHZ",
-            "pakku_links": [
-                "rjOX4EXWlGvG84kO"
-            ],
-            "type": "RESOURCE_PACK",
-            "side": "CLIENT",
-            "slug": {
-                "curseforge": "ad-astra-3d",
-                "modrinth": "ad-astra-3d"
-            },
-            "name": {
-                "curseforge": "Ad Astra 3D",
-                "modrinth": "Ad Astra 3D"
-            },
-            "id": {
-                "curseforge": "1056380",
-                "modrinth": "fbTZG6SB"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "Ad Astra 3D.zip",
-                    "mc_versions": [
-                        "1.20.1",
-                        "1.20.4"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5604/481/Ad Astra 3D.zip",
-                    "id": "5604481",
-                    "parent_id": "1056380",
-                    "hashes": {
-                        "sha1": "5e64593611cea49516d32e4831f3ac946c095370",
-                        "md5": "095672976a9798d6a293674c3b38a726"
-                    },
-                    "required_dependencies": [
-                        "635042"
-                    ],
-                    "size": 66158433,
-                    "date_published": "2024-08-07T11:12:07.200Z"
-                },
-                {
-                    "type": "modrinth",
-                    "file_name": "Ad Astra 3D.zip",
-                    "mc_versions": [
-                        "1.20.1",
-                        "1.20.4"
-                    ],
-                    "loaders": [
-                        "minecraft"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/fbTZG6SB/versions/tjsrvHBr/Ad Astra 3D.zip",
-                    "id": "tjsrvHBr",
-                    "parent_id": "fbTZG6SB",
-                    "hashes": {
-                        "sha512": "bd91876c90bf7026781e225f9f62010c4578ced596eff158690caa3a51ab6df55cc76cd4f0d910f2b01e528cc1c0a0b6756905040db93116926f33571db72a29",
-                        "sha1": "5e64593611cea49516d32e4831f3ac946c095370"
-                    },
-                    "required_dependencies": [
-                        "3ufwT9JF"
-                    ],
-                    "size": 66158433,
-                    "date_published": "2024-08-08T09:34:23.113351Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "7KKvgCCVN5ojt885",
             "type": "MOD",
             "side": "SERVER",
@@ -8640,68 +8573,6 @@
             ]
         },
         {
-            "pakku_id": "0jxn9gNhlmSZ6ooq",
-            "type": "RESOURCE_PACK",
-            "side": "CLIENT",
-            "slug": {
-                "curseforge": "gregtech-revival-32x",
-                "modrinth": "gregtech-revival-32x"
-            },
-            "name": {
-                "curseforge": "GregTech Revival 32x",
-                "modrinth": "GregTech Revival 32x"
-            },
-            "id": {
-                "curseforge": "964322",
-                "modrinth": "fUawEtti"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "[ver_0.22]_GT_Revival 32x_1.19.2-1.20.1-1.21.zip",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7397/183/[ver_0.22]_GT_Revival 32x_1.19.2-1.20.1-1.21.zip",
-                    "id": "7397183",
-                    "parent_id": "964322",
-                    "hashes": {
-                        "sha1": "56e46338a29a64c3218191e3418f21d731b5a17e",
-                        "md5": "914085c283ce8b0fb10cdfaf063cb2c8"
-                    },
-                    "required_dependencies": [],
-                    "size": 8884123,
-                    "date_published": "2025-12-30T17:57:31.660Z"
-                },
-                {
-                    "type": "modrinth",
-                    "file_name": "[ver_0.22]_GT_Revival 32x_1.19.2-1.20.1-1.21.zip",
-                    "mc_versions": [
-                        "1.19.2",
-                        "1.20",
-                        "1.20.1",
-                        "1.21",
-                        "1.21.1"
-                    ],
-                    "loaders": [
-                        "minecraft"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/fUawEtti/versions/peiL81bR/[ver_0.22]_GT_Revival 32x_1.19.2-1.20.1-1.21.zip",
-                    "id": "peiL81bR",
-                    "parent_id": "fUawEtti",
-                    "hashes": {
-                        "sha512": "8fbe2a520a2b3dcae3a677871517fb66c930865a318665f4d7a92278353724cf155a94a0a9703f515433d0697f6958ecc6066b84ab4daeea5e40cb61c11b50d0",
-                        "sha1": "56e46338a29a64c3218191e3418f21d731b5a17e"
-                    },
-                    "required_dependencies": [],
-                    "size": 8884123,
-                    "date_published": "2026-01-05T16:23:46.810793Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "YXlwv3dBaimWi5Lk",
             "pakku_links": [
                 "WN9DdLqsRKVeZIc9"
@@ -9062,65 +8933,6 @@
                     ],
                     "size": 103491,
                     "date_published": "2024-11-14T01:25:07.688102Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "xahPtsrvcLFX70mD",
-            "type": "RESOURCE_PACK",
-            "side": "CLIENT",
-            "slug": {
-                "curseforge": "ilaores-tfc-32x",
-                "modrinth": "ilaores-tfc-32x"
-            },
-            "name": {
-                "curseforge": "ILAORE's TFC 32x (terrafirmacraft, terra firma craft)",
-                "modrinth": "ILAORE's TFC 32x"
-            },
-            "id": {
-                "curseforge": "952112",
-                "modrinth": "vqrI97xw"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "[1.20.1_ver_0.23]_ILAORE's_TFC_32x.zip",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7951/534/[1.20.1_ver_0.23]_ILAORE's_TFC_32x.zip",
-                    "id": "7951534",
-                    "parent_id": "952112",
-                    "hashes": {
-                        "sha1": "e1883e7e597b3e7c35c23c530811e4169e378ffb",
-                        "md5": "7295fdfa6182662e20286977c917039a"
-                    },
-                    "required_dependencies": [],
-                    "size": 40747534,
-                    "date_published": "2026-04-19T16:58:16.880Z"
-                },
-                {
-                    "type": "modrinth",
-                    "file_name": "[1.20.1_ver_0.23]_ILAORE's_TFC_32x.zip",
-                    "mc_versions": [
-                        "1.20",
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "minecraft"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/vqrI97xw/versions/pnptbl8D/[1.20.1_ver_0.23]_ILAORE's_TFC_32x.zip",
-                    "id": "pnptbl8D",
-                    "parent_id": "vqrI97xw",
-                    "hashes": {
-                        "sha512": "193c26f6ba3bda53f268bb14ee4a66e3e03febb4b39dbb3a1810ab175504baa70ef0548f9599b4e3a8d7b140f4805c180e85a77711ea61e861991a4aa681db7f",
-                        "sha1": "e1883e7e597b3e7c35c23c530811e4169e378ffb"
-                    },
-                    "required_dependencies": [],
-                    "size": 40747534,
-                    "date_published": "2026-04-19T17:02:00.678965Z"
                 }
             ]
         },
@@ -9516,124 +9328,6 @@
             ]
         },
         {
-            "pakku_id": "vEzSlPTesOJoM5Q4",
-            "type": "RESOURCE_PACK",
-            "side": "CLIENT",
-            "slug": {
-                "curseforge": "improved-applied-energistics-2",
-                "modrinth": "improved-applied-energistics-2"
-            },
-            "name": {
-                "curseforge": "Improved Applied Energistics 2 (ae2, ae 2)",
-                "modrinth": "Improved Applied Energistics 2"
-            },
-            "id": {
-                "curseforge": "891816",
-                "modrinth": "dOV2wnYX"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "[1.20.1_ver_0.05.1]_Improved_AE_2_32x.zip",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7590/860/[1.20.1_ver_0.05.1]_Improved_AE_2_32x.zip",
-                    "id": "7590860",
-                    "parent_id": "891816",
-                    "hashes": {
-                        "sha1": "a88aca7ec618bfb8ce4f2ab596c5c2c9c6e41193",
-                        "md5": "eba81a21ae31f7b50f5b6aef0d905496"
-                    },
-                    "required_dependencies": [],
-                    "size": 2703847,
-                    "date_published": "2026-02-07T20:56:33.880Z"
-                },
-                {
-                    "type": "modrinth",
-                    "file_name": "[1.20.1_ver_0.05.1]_Improved_AE_2_32x.zip",
-                    "mc_versions": [
-                        "1.20",
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "minecraft"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/dOV2wnYX/versions/ADLAHWpP/[1.20.1_ver_0.05.1]_Improved_AE_2_32x.zip",
-                    "id": "ADLAHWpP",
-                    "parent_id": "dOV2wnYX",
-                    "hashes": {
-                        "sha512": "dd2a19913bd656c7e15efcd9121a75ececef9af7caa6322fc74033bda8b84f5579f0dd0bb2a7f2989012b91bd6e9f69c1481ac4b78719cc9b89512ccb1cc2da0",
-                        "sha1": "a88aca7ec618bfb8ce4f2ab596c5c2c9c6e41193"
-                    },
-                    "required_dependencies": [],
-                    "size": 2703847,
-                    "date_published": "2026-02-07T20:56:27.938640Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "jZb43VmCUz6QhpIQ",
-            "type": "RESOURCE_PACK",
-            "side": "CLIENT",
-            "slug": {
-                "curseforge": "improved-create-32x",
-                "modrinth": "improved-create-32x"
-            },
-            "name": {
-                "curseforge": "Improved Create 32x",
-                "modrinth": "Improved Create 32x"
-            },
-            "id": {
-                "curseforge": "973588",
-                "modrinth": "ZyLGK5YD"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "[1.20.1_ver_0.06.1]_Improved_Create_32x.zip",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7383/828/[1.20.1_ver_0.06.1]_Improved_Create_32x.zip",
-                    "id": "7383828",
-                    "parent_id": "973588",
-                    "hashes": {
-                        "sha1": "bbb13393f052cee815db4a9908e5d30696f604dc",
-                        "md5": "17eeab5d55dc08e2d01658f85d0cd8f9"
-                    },
-                    "required_dependencies": [],
-                    "size": 12615396,
-                    "date_published": "2025-12-27T08:19:03.583Z"
-                },
-                {
-                    "type": "modrinth",
-                    "file_name": "[1.20.1_ver_0.06.1]_Improved_Create_32x.zip",
-                    "mc_versions": [
-                        "1.20",
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "minecraft"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/ZyLGK5YD/versions/YcF3Jaah/[1.20.1_ver_0.06.1]_Improved_Create_32x.zip",
-                    "id": "YcF3Jaah",
-                    "parent_id": "ZyLGK5YD",
-                    "hashes": {
-                        "sha512": "5f23be27610562fcc3824f84aa4212a0af9d576b4500bb36ad362ee336fc35d80cd992fd20853477d1d24549a60d0531650b1c206c6e0781e19e68960fbe50ac",
-                        "sha1": "bbb13393f052cee815db4a9908e5d30696f604dc"
-                    },
-                    "required_dependencies": [],
-                    "size": 12615396,
-                    "date_published": "2025-12-27T08:18:58.690542Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "tBWBoSoDoXnODeqL",
             "type": "MOD",
             "side": "CLIENT",
@@ -9835,7 +9529,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "iris_shader_folder-1.4.0-forge.jar",
+                    "file_name": "iris_shader_folder-1.4.1-forge.jar",
                     "mc_versions": [
                         "1.16",
                         "1.16.1",
@@ -9865,18 +9559,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/yv6sGJzN/versions/Rkn6BwcM/iris_shader_folder-1.4.0-forge.jar",
-                    "id": "Rkn6BwcM",
+                    "url": "https://cdn.modrinth.com/data/yv6sGJzN/versions/I4rLjQbU/iris_shader_folder-1.4.1-forge.jar",
+                    "id": "I4rLjQbU",
                     "parent_id": "yv6sGJzN",
                     "hashes": {
-                        "sha512": "4f7b1304da4014d7479352044c6d61b4b4bc4a5138d59dfddcd8c5fda03a46e6dff030ba83aa9abcbfeaa42b58f5257b90566130275bac7c2e6582f91014b52c",
-                        "sha1": "b180c12f7dbdfdbd1bd16c9ed5026ad62f9b0ec8"
+                        "sha512": "452ef4376e332cf134b0ac3ca0e1f150d0efca9ae0438f02a939c2b121a533d84cbe0dd47f1c34033d21daf0cc9e503310e598291b1b2a82c1025dff204df24f",
+                        "sha1": "daf47cce58220bf0ff49a391d279f96d4aa384d5"
                     },
                     "required_dependencies": [
                         "GchcoXML"
                     ],
-                    "size": 842639,
-                    "date_published": "2026-07-24T14:43:40.653255Z"
+                    "size": 214254,
+                    "date_published": "2026-07-26T11:50:35.543776Z"
                 },
                 {
                     "type": "curseforge",
@@ -16144,7 +15838,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "TerraFirmaGreg-Core-Modern-0.9.17.jar",
+                    "file_name": "TerraFirmaGreg-Core-Modern-0.9.18.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -16152,23 +15846,23 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/lNttW2Xl/versions/UCC3oEfP/TerraFirmaGreg-Core-Modern-0.9.17.jar",
-                    "id": "UCC3oEfP",
+                    "url": "https://cdn.modrinth.com/data/lNttW2Xl/versions/zDIPrPnt/TerraFirmaGreg-Core-Modern-0.9.18.jar",
+                    "id": "zDIPrPnt",
                     "parent_id": "lNttW2Xl",
                     "hashes": {
-                        "sha512": "57ca6c530106c2663923487c2177e4e6b455de78d2dc5d1262a2f63d7cf5cb08c351354e78cd714b6d85b7927ebfeb9cb307cdb8f4a7431d821f3e4f477812c3",
-                        "sha1": "e22f9d2de05f37a37c673c5de659b8d7efd9be60"
+                        "sha512": "1712d9db2944b56ec8e02ef25f805c26dad4e17c27e26c60ca68862b9f3f446b5e9ce31567bc068e97ddb55a6ec1919966dd9fb7bbb97a59b2eba1398d33f9fb",
+                        "sha1": "d13fff5ef580039030caf8a2ee0b09f385871ff6"
                     },
                     "required_dependencies": [
                         "vvuO3ImH",
                         "1o7aFiY6"
                     ],
-                    "size": 14610826,
-                    "date_published": "2026-07-25T21:27:35.886621Z"
+                    "size": 14618378,
+                    "date_published": "2026-07-26T22:40:13.713032Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "TerraFirmaGreg-Core-Modern-0.9.17.jar",
+                    "file_name": "TerraFirmaGreg-Core-Modern-0.9.18.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -16176,23 +15870,23 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8509/198/TerraFirmaGreg-Core-Modern-0.9.17.jar",
-                    "id": "8509198",
+                    "url": "https://edge.forgecdn.net/files/8516/699/TerraFirmaGreg-Core-Modern-0.9.18.jar",
+                    "id": "8516699",
                     "parent_id": "513402",
                     "hashes": {
-                        "sha1": "e22f9d2de05f37a37c673c5de659b8d7efd9be60",
-                        "md5": "f81e82b365ef32646fe6f20da361dd57"
+                        "sha1": "d13fff5ef580039030caf8a2ee0b09f385871ff6",
+                        "md5": "2391628aed15a39dc5c5054d8a315aed"
                     },
                     "required_dependencies": [
                         "309927"
                     ],
-                    "size": 14610826,
-                    "date_published": "2026-07-25T21:27:32.480Z"
+                    "size": 14618378,
+                    "date_published": "2026-07-26T22:40:10.510Z"
                 }
             ]
         },
         {
-            "pakku_id": "da3JqzvBNgaJgIJq",
+            "pakku_id": "np8kLa5fe2FFWvDJ",
             "type": "SHADER",
             "side": "CLIENT",
             "slug": {
@@ -16209,8 +15903,26 @@
             },
             "files": [
                 {
+                    "type": "curseforge",
+                    "file_name": "TerraFirmaGreg-Shaders-Complementary-3.1.6.zip",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8104/352/TerraFirmaGreg-Shaders-Complementary-3.1.6.zip",
+                    "id": "8104352",
+                    "parent_id": "954161",
+                    "hashes": {
+                        "sha1": "72d5bb073fcddcae79605f40b2618446bc5c293e",
+                        "md5": "32b8d8cab35d287e07fb5993c1ecd0a1"
+                    },
+                    "required_dependencies": [],
+                    "size": 2286615,
+                    "date_published": "2026-05-17T15:48:41.433Z"
+                },
+                {
                     "type": "modrinth",
-                    "file_name": "TerraFirmaGreg-Shaders-Complementary-3.1.7.zip",
+                    "file_name": "TerraFirmaGreg-Shaders-Complementary-3.1.6.zip",
                     "mc_versions": [
                         "1.12.2",
                         "1.20.1"
@@ -16220,34 +15932,16 @@
                         "optifine"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/cFPyBbB1/versions/o2S1KeDB/TerraFirmaGreg-Shaders-Complementary-3.1.7.zip",
-                    "id": "o2S1KeDB",
+                    "url": "https://cdn.modrinth.com/data/cFPyBbB1/versions/vyWrTwOC/TerraFirmaGreg-Shaders-Complementary-3.1.6.zip",
+                    "id": "vyWrTwOC",
                     "parent_id": "cFPyBbB1",
                     "hashes": {
-                        "sha512": "8f979c9476086cb070c4b6ee7431ebf579e5917b99b7ae28d9417177f1ba33b6de297ee19c40fcfa6c2938cc4fb6a19013b8fb082a1b74746baa8e16d8099d7b",
-                        "sha1": "8cc8cefda8dff007339b43538c6ae5ba8d7ca454"
+                        "sha512": "7ee2025e2cb5d3173ef6d535739619b1be34e08c7db3d06de1c05d53bfa92574ff2fe277e285370447874481e940970b7b2529d36556e157f400ff91c324c18b",
+                        "sha1": "72d5bb073fcddcae79605f40b2618446bc5c293e"
                     },
                     "required_dependencies": [],
-                    "size": 2288516,
-                    "date_published": "2026-06-07T01:43:22.346431Z"
-                },
-                {
-                    "type": "curseforge",
-                    "file_name": "TerraFirmaGreg-Shaders-Complementary-3.1.7.zip",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8208/462/TerraFirmaGreg-Shaders-Complementary-3.1.7.zip",
-                    "id": "8208462",
-                    "parent_id": "954161",
-                    "hashes": {
-                        "sha1": "8cc8cefda8dff007339b43538c6ae5ba8d7ca454",
-                        "md5": "ae44a5c5ddc7431f7582aaa2e498977d"
-                    },
-                    "required_dependencies": [],
-                    "size": 2288516,
-                    "date_published": "2026-06-07T01:43:20.247Z"
+                    "size": 2286615,
+                    "date_published": "2026-05-17T15:48:42.996433Z"
                 }
             ]
         },

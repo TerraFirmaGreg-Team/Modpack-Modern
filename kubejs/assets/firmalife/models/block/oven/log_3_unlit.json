@@ -1,0 +1,43 @@
+{
+	"credit": "Made by @vexxel with Blockbench - https://github.com/vexxel",
+	"textures": {
+		"6": "firmalife:block/oven/bottom/log"
+	},
+	"elements": [
+		{
+			"name": "log1",
+			"from": [8, 2, 1],
+			"to": [11, 5, 11],
+			"faces": {
+				"north": {"uv": [4, 4, 7, 7], "texture": "#6"},
+				"east": {"uv": [4, 0, 14, 3], "texture": "#6"},
+				"west": {"uv": [5, 1, 15, 4], "texture": "#6"},
+				"up": {"uv": [0, 0, 10, 3], "rotation": 90, "texture": "#6"}
+			}
+		},
+		{
+			"name": "log2",
+			"from": [4, 2, 2],
+			"to": [7, 5, 12],
+			"faces": {
+				"north": {"uv": [4, 4, 7, 7], "texture": "#6"},
+				"east": {"uv": [4, 0, 14, 3], "texture": "#6"},
+				"west": {"uv": [5, 1, 15, 4], "texture": "#6"},
+				"up": {"uv": [6, 1, 16, 4], "rotation": 90, "texture": "#6"}
+			}
+		},
+		{
+			"name": "log3",
+			"from": [5.5, 5, 1],
+			"to": [8.5, 8, 11],
+			"rotation": {"angle": -22.5, "axis": "y", "origin": [8, 0, 8]},
+			"faces": {
+				"north": {"uv": [4, 4, 7, 7], "texture": "#6"},
+				"east": {"uv": [4, 0, 14, 3], "texture": "#6"},
+				"west": {"uv": [5, 1, 15, 4], "texture": "#6"},
+				"up": {"uv": [4, 0, 14, 3], "rotation": 90, "texture": "#6"},
+				"down": {"uv": [0, 0, 10, 3], "rotation": 90, "texture": "#6"}
+			}
+		}
+	]
+}

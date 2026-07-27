@@ -1885,6 +1885,20 @@
 			x: -7.0d
 			y: -2.5d
 		}
+		{
+			dependencies: ["0EDFCD5F30AAE7D7"]
+			description: ["{quests.combat_tips.trims.desc}"]
+			id: "0F1603CC9D7D41E3"
+			subtitle: "{quests.combat_tips.trims.subtitle}"
+			tasks: [{
+				id: "791E44D7DF5F0C2C"
+				item: "minecraft:smithing_table"
+				type: "item"
+			}]
+			title: "{quests.combat_tips.trims.title}"
+			x: 0.0d
+			y: 1.5d
+		}
 	]
 	subtitle: ["{quests.combat.subtitle}"]
 	title: "{quests.combat}"
