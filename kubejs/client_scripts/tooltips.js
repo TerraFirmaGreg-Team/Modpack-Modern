@@ -511,6 +511,9 @@ const registerTooltips = (event) => {
 		text.add(1, Text.translate('tfg.tooltip.javelin.1'));
 		text.add(2, Text.translate('tfg.tooltip.javelin.2'));
 	});
+	event.addAdvanced(['beneath:unposter'], (item, advanced, text) => {
+		text.add(1, Text.translate('tfg.tooltip.unposter'));
+	});
 
 	// Wearables
 	event.addAdvanced(['tfg:snorkel'], (item, advanced, text) => {

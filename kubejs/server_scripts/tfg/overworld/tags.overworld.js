@@ -123,6 +123,9 @@ function registerTFGOverworldBlockTags(event) {
 	event.add('firmalife:butterfly_grass_mutants', 'tfc:plant/timothy_grass')
 	event.add('firmalife:butterfly_grass_mutants', 'tfg:plant/red_oat_grass')
 
+	event.add('tfg:unposter_growable', '#beneath:mushrooms')
+	event.add('tfg:unposter_growable', '#minecraft:flowers')
+
 	event.add('tfc:kaolin_clay_replaceable', '#tfc:mud');
 
 	event.add('tfc:powder_snow_replaceable', 'minecraft:snow_block');
