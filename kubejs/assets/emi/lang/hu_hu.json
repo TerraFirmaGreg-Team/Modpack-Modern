@@ -8,6 +8,7 @@
   "emi.fluid.amount.liters": "%s L",
   "emi.fluid.amount.millibuckets": "%s mB",
   "emi.help_level.none": "Nincs",
+  "emi.help_level.normal": "Normál",
   "emi.sidebar.none": "Nincs",
   "emi.sidebar.theme.vanilla": "Vanília",
   "emi.sidebar.type.empty": "Üres",
@@ -34,5 +35,6 @@
   "tag.item.c.string": "Fonál",
   "tag.item.c.strings": "Fonál",
   "tag.item.c.wrenches": "Csavarkulcsok",
-  "tag.item.minecraft.music_discs": "Hanglemez"
+  "tag.item.minecraft.music_discs": "Hanglemez",
+  "tag.item.minecraft.wool": "Gyapjú"
 }
