@@ -336,12 +336,56 @@
 					"type": "minecraft:item",
 					"name": "minecraft:music_disc_relic",
 					"weight": 8
+				},
+				{
+					"type": "minecraft:item",
+					"name": "exposure:aged_photograph",
+					"weight": 5,
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{Texture:\"exposure:textures/exposure/village/village_1.png\"}"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "exposure:aged_photograph",
+					"weight": 5,
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{Texture:\"exposure:textures/exposure/village/village_2.png\"}"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "exposure:aged_photograph",
+					"weight": 5,
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{Texture:\"exposure:textures/exposure/village/village_3.png\"}"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "exposure:aged_photograph",
+					"weight": 5,
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{Texture:\"exposure:textures/exposure/village/village_4.png\"}"
+						}
+					]
 				}
 			],
 			"rolls": {
 				"type": "minecraft:uniform",
 				"max": 7,
-				"min": 6
+				"min": 7
 			}
 		}
 	]
