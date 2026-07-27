@@ -907,12 +907,19 @@ const registerMinecraftRecipes = (event) => {
 		'AA '
 	], {
 		A: '#minecraft:planks',
-		B: ChemicalHelper.get(TagPrefix.plate, GTMaterials.Lead, 1),
+		B: ['#forge:plates/lead', '#forge:plates/iron'],
 		C: '#forge:tools/hammers'
-	}).id('minecraft:shapeless/smithing_table')
+	}).id('minecraft:shaped/smithing_table')
 
-	event.recipes.gtceu.assembler('minecraft:assembler/smithing_table')
+	event.recipes.gtceu.assembler('minecraft:assembler/smithing_table_lead')
 		.itemInputs('2x #minecraft:planks', ChemicalHelper.get(TagPrefix.plate, GTMaterials.Lead, 2))
+		.circuit(4)
+		.itemOutputs('minecraft:smithing_table')
+		.duration(60)
+		.EUt(GTValues.VA[GTValues.ULV])
+
+	event.recipes.gtceu.assembler('minecraft:assembler/smithing_table_iron')
+		.itemInputs('2x #minecraft:planks', ChemicalHelper.get(TagPrefix.plate, GTMaterials.Iron, 2))
 		.circuit(4)
 		.itemOutputs('minecraft:smithing_table')
 		.duration(60)
