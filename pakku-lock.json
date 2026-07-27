@@ -13093,7 +13093,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "reliable_remover-forge-1.20.1-2.4.3.jar",
+                    "file_name": "reliable_remover-forge-1.20.1-2.4.6.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -13101,41 +13101,39 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/pLxsKvNt/versions/yoQixmKI/reliable_remover-forge-1.20.1-2.4.3.jar",
-                    "id": "yoQixmKI",
+                    "url": "https://cdn.modrinth.com/data/pLxsKvNt/versions/OgqCEIoC/reliable_remover-forge-1.20.1-2.4.6.jar",
+                    "id": "OgqCEIoC",
                     "parent_id": "pLxsKvNt",
                     "hashes": {
-                        "sha512": "9b7fa996bc16fe9291fb2ed8a9913de180a5893f18b6ed7c3dc527c43f684ed901d01895e205e7fea67024eb1e561469dff25cbde543fcdf8a848c6c67ec463c",
-                        "sha1": "2f97162350cab542e0cd9825edb3ab116774a35f"
+                        "sha512": "62485ab376e9c6ce114b7189d906c1860f2aabb7f105ed6ebb4f30f50e57af6928f2fceecbd7061a0ecf0fb33ee8a244ee3de13a55f3a7015c93962f16fb9d90",
+                        "sha1": "278c4d6257cc9d68b8afe1fa3113f89091ce4403"
                     },
                     "required_dependencies": [
                         "Hl4ARA1z"
                     ],
-                    "size": 97654,
-                    "date_published": "2026-07-14T04:21:01.523067Z"
+                    "size": 97549,
+                    "date_published": "2026-07-27T18:32:37.115607Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "reliable_remover-forge-1.20.1-2.4.3.jar",
+                    "file_name": "reliable_remover-forge-1.20.1-2.0.3.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
                     "loaders": [
                         "forge"
                     ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8428/690/reliable_remover-forge-1.20.1-2.4.3.jar",
-                    "id": "8428690",
+                    "release_type": "beta",
+                    "url": "https://edge.forgecdn.net/files/7903/121/reliable_remover-forge-1.20.1-2.0.3.jar",
+                    "id": "7903121",
                     "parent_id": "1420447",
                     "hashes": {
-                        "sha1": "2f97162350cab542e0cd9825edb3ab116774a35f",
-                        "md5": "6085228444d7098f260b9d11a32abccd"
+                        "sha1": "b6cd0819248bdb5e9987c3d0e0844bc606ac2899",
+                        "md5": "837b21c549693801c82235650964a34e"
                     },
-                    "required_dependencies": [
-                        "1414959"
-                    ],
-                    "size": 97654,
-                    "date_published": "2026-07-14T04:21:01.080Z"
+                    "required_dependencies": [],
+                    "size": 171881,
+                    "date_published": "2026-04-10T04:40:53.143Z"
                 }
             ]
         },
