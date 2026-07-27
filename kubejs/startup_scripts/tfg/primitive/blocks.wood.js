@@ -22,6 +22,7 @@ function registerTFGNewWoodBlocks(event) {
 			.noDynamicTinting()
 			.twig(`tfg:wood/twig/${wood.name}`)
 			.mapColor('plant')
+			.hardness(0.5)
 			.fallenLeaves(leaves => {
 				leaves.noCollision()
 				leaves.notSolid()
