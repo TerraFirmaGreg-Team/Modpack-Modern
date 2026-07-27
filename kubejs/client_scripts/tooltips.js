@@ -507,6 +507,10 @@ const registerTooltips = (event) => {
 	event.addAdvanced(['#tfg:rope_ladders'], (item, advanced, text) => {
 		text.add(1, Text.translate('tfg.tooltip.rope_ladders'));
 	});
+	event.addAdvanced(['#tfc:javelins'], (item, advanced, text) => {
+		text.add(1, Text.translate('tfg.tooltip.javelin.1'));
+		text.add(2, Text.translate('tfg.tooltip.javelin.2'));
+	});
 
 	// Wearables
 	event.addAdvanced(['tfg:snorkel'], (item, advanced, text) => {

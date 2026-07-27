@@ -130,7 +130,7 @@
 			id: "591636FADB59A1AE"
 			linked_quest: "4201BFA1946F6491"
 			x: -4.0d
-			y: 2.5d
+			y: 3.0d
 		}
 		{
 			id: "35F893275E728B14"
@@ -1158,8 +1158,8 @@
 				type: "item"
 			}]
 			title: "{quests.combat_tips.javelin.title}"
-			x: -7.0d
-			y: -1.5d
+			x: -8.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["0EDFCD5F30AAE7D7"]
@@ -1337,8 +1337,8 @@
 				}
 			]
 			title: "{quests.combat_tips.bow.title}"
-			x: -8.0d
-			y: -2.5d
+			x: -7.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["55BF74AD2E6EF14A"]
@@ -1827,7 +1827,7 @@
 			]
 			title: "{quests.combat_tips.club.title}"
 			x: -8.0d
-			y: 2.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["07A777BAAB2DBCFC"]
@@ -1867,7 +1867,9 @@
 				"56B7191D184B499C"
 			]
 			dependency_requirement: "one_completed"
+			description: ["{quests.combat_tips.quiver.desc}"]
 			id: "452CE4E2F952F01D"
+			subtitle: "{quests.combat_tips.quiver.subtitle}"
 			tasks: [{
 				id: "04A58E36C5F549B3"
 				item: {
@@ -1882,8 +1884,9 @@
 				}
 				type: "item"
 			}]
+			title: "{quests.combat_tips.quiver.title}"
 			x: -7.0d
-			y: -2.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["0EDFCD5F30AAE7D7"]
@@ -1898,6 +1901,20 @@
 			title: "{quests.combat_tips.trims.title}"
 			x: 0.0d
 			y: 1.5d
+		}
+		{
+			dependencies: ["56B7191D184B499C"]
+			description: ["{quests.combat_tips.javelin_throwing.desc}"]
+			id: "0E47C6B0EB1BA724"
+			subtitle: "{quests.combat_tips.javelin_throwing.subtitle}"
+			tasks: [{
+				id: "15F49241A9FBF3E0"
+				item: "firmaciv:rope_coil"
+				type: "item"
+			}]
+			title: "{quests.combat_tips.javelin_throwing.title}"
+			x: -8.0d
+			y: -4.5d
 		}
 	]
 	subtitle: ["{quests.combat.subtitle}"]
