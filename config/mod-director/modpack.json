@@ -5,7 +5,8 @@
         "width": 32,
         "height": 32
     },
+    "uiTheme": "intellij-dark",
     "localVersion": "DEV",
-    "requiresRestart": true,
+    "requiresRestart": false,
     "checkStopModReposts": false
 }
