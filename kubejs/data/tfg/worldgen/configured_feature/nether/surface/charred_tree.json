@@ -5,7 +5,7 @@
 		"dirt_provider": {
 			"type": "minecraft:simple_state_provider",
 			"state": {
-				"Name": "tfg:charred_log"
+				"Name": "tfg:coarse_dirt/mollisol"
 			}
 		},
 		"foliage_placer": {

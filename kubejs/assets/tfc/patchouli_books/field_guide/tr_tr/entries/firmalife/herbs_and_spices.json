@@ -1,6 +1,6 @@
 {
 	"__comment__": "This file was automatically created by mcresources",
-	"name": "Herbs and Spices",
+	"name": "Bitkiler ve Baharatlar",
 	"category": "tfc:firmalife",
 	"icon": "firmalife:spice/basil_leaves",
 	"pages": [
@@ -38,8 +38,8 @@
 					}
 				}
 			],
-			"name": "Basil",
-			"text": "$(thing)Wild Basil$() grows between 12 and 25C, and 300 to 500mm of rainfall.",
+			"name": "Fesleğen",
+			"text": "$(thing)Yaban Fesleğeni$(), 12-25°C sıcaklık ve 300-500 mm yağış arasında yetişir.",
 			"enable_visualize": false
 		},
 		{
@@ -72,8 +72,8 @@
 					}
 				}
 			],
-			"name": "Bay Laurel",
-			"text": "$(thing)Wild Bay Laurel$() grows between 8 and 14C, and 25 to 225mm of rainfall.",
+			"name": "Yaban Defnesi",
+			"text": "$(thing)Yaban Defnesi$() 8 ile 14°C sıcaklık ve 25 ila 225 mm yağış alan yerlerde yetişir.",
 			"enable_visualize": false
 		},
 		{
@@ -106,8 +106,8 @@
 					}
 				}
 			],
-			"name": "Cardamom",
-			"text": "$(thing)Wild Cardamom$() grows between 18 and 30C, and 350 to 500mm of rainfall.",
+			"name": "Kakule",
+			"text": "$(thing)Yaban Kakulesi$() 18 ile 30°C sıcaklık ve 350 ila 500 mm yağış alan yerlerde yetişir.",
 			"enable_visualize": false
 		},
 		{
@@ -140,8 +140,8 @@
 					}
 				}
 			],
-			"name": "Cilantro",
-			"text": "$(thing)Wild Cilantro$() grows between 5 and 15C, and 0 to 150mm of rainfall.",
+			"name": "Kişniş",
+			"text": "$(thing)Yaban Kişnişi$() 5 ile 15°C sıcaklık ve 0 ila 150 mm yağış alan yerlerde yetişir.",
 			"enable_visualize": false
 		},
 		{
@@ -174,8 +174,8 @@
 					}
 				}
 			],
-			"name": "Cumin",
-			"text": "$(thing)Wild Cumin$() grows between 6 and 20C, and 50 to 250mm of rainfall.",
+			"name": "Kimyon",
+			"text": "$(thing)Yaban Kimyonu$() 6 ile 20°C sıcaklık ve 50 ila 250 mm yağış alan yerlerde yetişir.",
 			"enable_visualize": false
 		},
 		{
@@ -208,8 +208,8 @@
 					}
 				}
 			],
-			"name": "Oregano",
-			"text": "$(thing)Wild Oregano$() grows between 5 and 13C, and 50 to 150mm of rainfall.",
+			"name": "Kekik",
+			"text": "$(thing)Yaban Kekiği$() 5 ile 13°C sıcaklık ve 50 ila 150 mm yağış alan yerlerde yetişir.",
 			"enable_visualize": false
 		},
 		{
@@ -242,8 +242,8 @@
 					}
 				}
 			],
-			"name": "Pimento",
-			"text": "$(thing)Wild Pimento$() grows between 15 and 30C, and 200 to 450mm of rainfall.",
+			"name": "Yenibahar",
+			"text": "$(thing)Yaban Yenibaharı$() 15 ile 30°C sıcaklık ve 200 ila 450 mm yağış alan yerlerde yetişir.",
 			"enable_visualize": false
 		},
 		{
@@ -276,14 +276,14 @@
 					}
 				}
 			],
-			"name": "Vanilla",
-			"text": "$(thing)Wild Vanilla$() grows between 18 and 30C, and 200 to 500mm of rainfall.",
+			"name": "Vanilya",
+			"text": "$(thing)Yaban Vanilyası$() 18 ile 30°C sıcaklık ve 200 ila 500 mm yağış alan yerlerde yetişir.",
 			"enable_visualize": false
 		},
 		{
 			"type": "patchouli:crafting",
 			"recipe": "firmalife:crafting/seed_ball",
-			"text": "$(item)Seed Balls$() can be used to plant different types of Grass. This can be useful after clearing your base for building. The recipe for the seed ball requires $(item)Compost$() and 4 $(thing)Seeds$()."
+			"text": "$(item)Tohum Topları$(), farklı çim türlerini dikmek için kullanılabilir. Bu, üssünüzü inşaat için temizledikten sonra işe yarayabilir. Tohum topunun tarifi $(item)Kompost$() ve 4 adet $(thing)Tohum$() gerektirir."
 		},
 		{
 			"type": "patchouli:multiblock",
@@ -301,12 +301,12 @@
 				}
 			},
 			"name": "",
-			"text": "A butterfly grass plant.",
+			"text": "Bir kelebek otu bitkisi.",
 			"enable_visualize": false
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Butterfly grass will mature over time. When one reaches maturity, it has a chance to spread to surrounding blocks, or turn into something new. Butterfly grass blocks that have been spread by another grass block do not spread anymore.$(br)After Butterfly grass turns into another grass, you can pick them up with $(item)Shears$()."
+			"text": "Kelebek otu zamanla olgunlaşır. Biri olgunlaştığında, etrafındaki bloklara yayılma veya yeni bir şeye dönüşme ihtimali vardır. Başka bir çim bloğu tarafından yayılan kelebek otu blokları artık yayılmaz.$(br)Kelebek otu başka bir çime dönüştükten sonra onu $(item)Makas$() ile toplayabilirsiniz."
 		}
 	],
 	"read_by_default": true,

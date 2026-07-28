@@ -1,11 +1,11 @@
 {
-  "name": "Wild Crops",
+  "name": "Yabani Ekinler",
   "category": "tfc:the_world",
   "icon": "tfc:textures/gui/book/icons/wild_crops.png",
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "$(thing)Wild Crops$() can be found scattered around the world, growing in small patches. They can be harvested for food and seeds, which can then be cultivated themselves in the not-wild form.$(br2)Harvesting wild crops can be done with your fists, or with a $(thing)Knife$() or other sharp tool. When broken, they will drop $(thing)Seeds$() and some $(thing)Products$()."
+      "text": "$(thing)Yabani Ekinler$() dünyanın dört bir yanına dağılmış halde, küçük yamalar halinde büyürken bulunabilir. Yiyecek ve tohum elde etmek için hasat edilebilirler, bu tohumlar daha sonra yabani olmayan formlarında yetiştirilebilir.$(br2)Yabani ekinleri hasat etmek yumruklarınızla veya bir $(thing)Bıçak$() ya da başka bir keskin aletle yapılabilir. Kırıldıklarında $(thing)Tohumlar$() ve bazı $(thing)Ürünler$() düşürürler."
     },
     {
       "type": "patchouli:multiblock",
@@ -22,17 +22,17 @@
           "X": "tfc:wild_crop/wheat[mature=true]"
         }
       },
-      "name": "Wild Wheat",
-      "text": "An example of a wild crop, in this case $(l:mechanics/crops#wheat)Wheat$().",
+      "name": "Yabani Buğday",
+      "text": "Yabani bir ekin örneği, bu durumda $(l:mechanics/crops#wheat)Buğday$().",
       "enable_visualize": false
     },
     {
       "type": "patchouli:text",
-      "text": "Every $(l:mechanics/crops)crop$() that can be cultivated can also be found in the wild. Wild crops will look similar to their cultivated counterparts, but are more hidden within the grass. Wild crops are only mature from June to October. Otherwise, they appear dead until the next Summer."
+      "text": "Yetiştirilebilen her $(l:mechanics/crops)ekin$() aynı zamanda doğada yabani olarak da bulunabilir. Yabani ekinler, yetiştirilen muadillerine benzer görünürler ancak çimlerin arasında daha çok gizlenmişlerdir. Yabani ekinler yalnızca Haziran'dan Ekim'e kadar olgunlaşır. Aksi takdirde, bir sonraki Yaza kadar ölü gibi görünürler."
     },
     {
       "type": "tfc:multimultiblock",
-      "text": "All different varieties of wild crop",
+      "text": "Tüm farklı yabani ekin çeşitleri",
       "multiblocks": [
         {
           "pattern": [
@@ -318,30 +318,30 @@
     },
     {
       "type": "patchouli:text",
-      "text": "Wild crops will spawn in climates near where the crop itself can be cultivated, so if looking for a specific crop, look in the climate where the crop can be cultivated. However, unlike $(l:mechanics/crops)Crops$() that the player has planted, wild crops do not require $(l:mechanics/hydration)Hydration$(). Instead, they are found in areas depending on the average $()Temperature$() and $()Rainfall$().",
-      "title": "Finding Wild Crops"
+      "text": "Yabani ekinler, ekinin kendisinin yetiştirilebildiği iklimlere yakın yerlerde oluşur; bu yüzden belirli bir ekin arıyorsanız, o ekinin yetiştirilebildiği iklime bakın. Ancak oyuncunun ektiği $(l:mechanics/crops)Ekinlerin$() aksine, yabani ekinler $(l:mechanics/hydration)Nem$() gerektirmez. Bunun yerine ortalama $()Sıcaklık$() ve $()Yağış$() miktarına bağlı alanlarda bulunurlar.",
+      "title": "Yabani Ekinleri Bulma"
     },
     {
       "type": "patchouli:text",
-      "text": "The next pages show a table of the environments where wild crops can be found."
+      "text": "Sonraki sayfalar, yabani ekinlerin bulunabileceği ortamların bir tablosunu göstermektedir."
     },
     {
       "type": "tfc:table",
       "strings": [
         {
-          "text": "Crop",
+          "text": "Ekin",
           "bold": true
         },
         {
-          "text": "Temperature (°C)",
+          "text": "Sıcaklık (°C)",
           "bold": true
         },
         {
-          "text": "Rainfall (mm)",
+          "text": "Yağış Miktarı (mm)",
           "bold": true
         },
         {
-          "text": "Barley"
+          "text": "Arpa"
         },
         {
           "text": " -8 - 26"
@@ -350,7 +350,7 @@
           "text": " 70 - 310"
         },
         {
-          "text": "Oat"
+          "text": "Yulaf"
         },
         {
           "text": "  3 - 40"
@@ -359,7 +359,7 @@
           "text": "140 - 400"
         },
         {
-          "text": "Rye"
+          "text": "Çavdar"
         },
         {
           "text": "-11 - 30"
@@ -368,7 +368,7 @@
           "text": "100 - 350"
         },
         {
-          "text": "Maize"
+          "text": "Mısır"
         },
         {
           "text": " 13 - 40"
@@ -377,7 +377,7 @@
           "text": "300 - 500"
         },
         {
-          "text": "Wheat"
+          "text": "Buğday"
         },
         {
           "text": " -4 - 35"
@@ -386,7 +386,7 @@
           "text": "100 - 400"
         },
         {
-          "text": "Rice"
+          "text": "Pirinç"
         },
         {
           "text": " 15 - 30"
@@ -395,7 +395,7 @@
           "text": "100 - 500"
         },
         {
-          "text": "Beet"
+          "text": "Pancar"
         },
         {
           "text": " -5 - 20"
@@ -404,7 +404,7 @@
           "text": " 70 - 300"
         },
         {
-          "text": "Cabbage"
+          "text": "Lahana"
         },
         {
           "text": "-10 - 27"
@@ -413,7 +413,7 @@
           "text": " 60 - 280"
         },
         {
-          "text": "Carrot"
+          "text": "Havuç"
         },
         {
           "text": "  3 - 30"
@@ -422,7 +422,7 @@
           "text": "100 - 400"
         },
         {
-          "text": "Garlic"
+          "text": "Sarımsak"
         },
         {
           "text": "-20 - 18"
@@ -431,7 +431,7 @@
           "text": " 60 - 310"
         },
         {
-          "text": "Green Bean"
+          "text": "Yeşil Fasülye"
         },
         {
           "text": "  2 - 35"
@@ -440,7 +440,7 @@
           "text": "150 - 410"
         },
         {
-          "text": "Melon"
+          "text": "Karpuz"
         },
         {
           "text": "  5 - 37"
@@ -450,7 +450,7 @@
         }
       ],
       "text": "",
-      "title": "Wild Crop Requirements",
+      "title": "Yabani Ekin Gereksinimleri",
       "legend": [],
       "columns": 2,
       "first_column_width": 80,
@@ -468,19 +468,19 @@
       "type": "tfc:table",
       "strings": [
         {
-          "text": "Crop",
+          "text": "Ekin",
           "bold": true
         },
         {
-          "text": "Temperature (°C)",
+          "text": "Sıcaklık (°C)",
           "bold": true
         },
         {
-          "text": "Rainfall (mm)",
+          "text": "Yağış Miktarı (mm)",
           "bold": true
         },
         {
-          "text": "Potato"
+          "text": "Patates"
         },
         {
           "text": " -1 - 37"
@@ -489,7 +489,7 @@
           "text": "200 - 410"
         },
         {
-          "text": "Pumpkin"
+          "text": "Bal Kabağı"
         },
         {
           "text": "  0 - 30"
@@ -498,7 +498,7 @@
           "text": "120 - 390"
         },
         {
-          "text": "Onion"
+          "text": "Soğan"
         },
         {
           "text": "  0 - 30"
@@ -507,7 +507,7 @@
           "text": "100 - 390"
         },
         {
-          "text": "Soybean"
+          "text": "Soya Fasülyesi"
         },
         {
           "text": "  8 - 30"
@@ -516,7 +516,7 @@
           "text": "160 - 410"
         },
         {
-          "text": "Squash"
+          "text": "Kabak"
         },
         {
           "text": "  5 - 33"
@@ -552,7 +552,7 @@
           "text": "100 - 410"
         },
         {
-          "text": "Papyrus"
+          "text": "Papirüs"
         },
         {
           "text": " 19 - 37"
@@ -561,7 +561,7 @@
           "text": "310 - 500"
         },
         {
-          "text": "Red Bell Pepper"
+          "text": "Kırmızı Dolmalık Biber"
         },
         {
           "text": " 16 - 30"
@@ -570,7 +570,7 @@
           "text": "190 - 400"
         },
         {
-          "text": "Yellow Bell Pepper"
+          "text": "Sarı Dolmalık Biber"
         },
         {
           "text": " 16 - 30"
@@ -579,7 +579,7 @@
           "text": "190 - 400"
         },
         {
-          "text": "Sunflower"
+          "text": "Ayçiçeği"
         },
         {
           "text": "  5 - 40"
@@ -589,7 +589,7 @@
         }
       ],
       "text": "",
-      "title": "Wild Crop Requirements",
+      "title": "Yabani Ekin Gereksinimleri",
       "legend": [],
       "columns": 2,
       "first_column_width": 80,
@@ -607,19 +607,19 @@
       "type": "tfc:table",
       "strings": [
         {
-          "text": "Crop",
+          "text": "Ekin",
           "bold": true
         },
         {
-          "text": "Temperature (°C)",
+          "text": "Sıcaklık (°C)",
           "bold": true
         },
         {
-          "text": "Rainfall (mm)",
+          "text": "Yağış Miktarı (mm)",
           "bold": true
         },
         {
-          "text": "Canola"
+          "text": "Kanola"
         },
         {
           "text": " -5 - 25"
@@ -628,7 +628,7 @@
           "text": " 50 - 350"
         },
         {
-          "text": "Flax"
+          "text": "Keten"
         },
         {
           "text": " -8 - 25"
@@ -637,7 +637,7 @@
           "text": "175 - 475"
         },
         {
-          "text": "Cucumber"
+          "text": "Hıyar"
         },
         {
           "text": " 15 - 40"
@@ -646,7 +646,7 @@
           "text": "350 - 500"
         },
         {
-          "text": "Radish"
+          "text": "Turp"
         },
         {
           "text": " -16 - 4"
@@ -655,7 +655,7 @@
           "text": "75 - 325"
         },
         {
-          "text": "Lentil"
+          "text": "Mercimek"
         },
         {
           "text": " -18 - 2"
@@ -665,7 +665,7 @@
         }
       ],
       "text": "",
-      "title": "Wild Crop Requirements",
+      "title": "Yabani Ekin Gereksinimleri",
       "legend": [],
       "columns": 2,
       "first_column_width": 80,

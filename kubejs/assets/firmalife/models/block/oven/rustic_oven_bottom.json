@@ -1,0 +1,12 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "parent": "firmalife:block/oven/template_oven_bottom",
+  "textures": {
+		"side": "firmalife:block/oven/bottom/rustic/side",
+		"front": "firmalife:block/oven/bottom/rustic/front",
+		"bottom": "firmalife:block/oven/bottom/rustic/bottom",
+		"top": "firmalife:block/oven/bottom/rustic/top",
+		"coals": "firmalife:block/oven/bottom/rustic/coals_unlit",
+		"inside": "firmalife:block/oven/bottom/rustic/inside_unlit"
+	}
+}

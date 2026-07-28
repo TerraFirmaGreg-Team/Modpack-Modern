@@ -1,26 +1,26 @@
 {
-	"name": "Irrigation",
+	"name": "Sulama",
 	"category": "tfc:firmalife",
 	"icon": "firmalife:sprinkler",
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "The $(thing)Sprinkler$() is a device that sprinkles water in a 5x6x5 area centered on the block below the sprinkler block. You know it is working when it drips out water particles. Sprinklers placed facing up irrigate the same 5x6x5 area above."
+			"text": "$(thing)Fıskiye$(), fıskiye bloğunun altındaki bloğu merkez alan 5x6x5'lik bir alana su serpen bir cihazdır. Su parçacıkları damlatmaya başladığında çalıştığını anlarsınız. Yukarı bakacak şekilde yerleştirilen fıskiyeler, yukarıdaki aynı 5x6x5'lik alanı sularlar."
 		},
 		{
 			"type": "tfc:anvil_recipe",
 			"recipe": "firmalife:anvil/sprinkler",
-			"text": "The sprinkler is made with a $(thing)Copper Plate$()."
+			"text": "Fıskiye, bir $(thing)Bakır Plaka$() ile yapılır."
 		},
 		{
-			"title": "Piping",
+			"title": "Tesisat",
 			"item": "gtceu:copper_tiny_fluid_pipe",
 			"type": "patchouli:spotlight",
-			"text": "Sprinklers must be connected to a system of pipes that feed it water in order to work. This is done by connecting a series of $(thing)Fluid Pipes$() to them. You can pump water into them with a $(thing)Mechanical Pump$()."
+			"text": "Fıskiyelerin çalışabilmesi için onlara su sağlayan bir boru sistemine bağlanması gerekir. Bu işlem, fıskiyelere bir dizi $(thing)Sıvı Borusu$() bağlanarak yapılır. $(thing)Mekanik Pompa$() kullanarak borulara su pompalayabilirsiniz."
 		},
 		{
 			"type": "patchouli:text",
-			"text": "You can right-click a pipe with a GregTech Frame (such as a $(thing)Copper Frame$()) to make them flush with the wall, or use a Greenhouse Port. You can then attach your sprinkler directly to the pipe! Right-click fluid pipes with a wrench to change their direction, and sneak-right-click them with an $(thing)empty offhand$() to make them one-way."
+			"text": "Duvara sıfır hale getirmek için bir boruya GregTech Çerçevesi (örneğin bir $(thing)Bakır Çerçeve$()) ile sağ tıklayabilir veya bir Sera Portu kullanabilirsiniz. Ardından fıskiyenizi doğrudan boruya takabilirsiniz! Yönlerini değiştirmek için sıvı borularına İngiliz anahtarı ile sağ tıklayın, boruları tek yönlü yapmak için ise $(thing)boş ikincil el$() ile eğilerek sağ tıklayın."
 		}
 	],
 	"read_by_default": true,

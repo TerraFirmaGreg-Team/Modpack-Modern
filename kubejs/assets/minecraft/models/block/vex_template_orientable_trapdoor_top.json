@@ -1,0 +1,22 @@
+{
+	"credit": "Made by @vexxel with Blockbench - https://github.com/vexxel",
+	"textures": {
+		"particle": "#top",
+		"texture": "#top",
+		"sides": "#sides"
+	},
+	"elements": [
+		{
+			"from": [0, 13, 0],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 3], "rotation": 180, "texture": "#sides", "cullface": "north"},
+				"east": {"uv": [0, 0, 16, 3], "rotation": 180, "texture": "#sides", "cullface": "east"},
+				"south": {"uv": [0, 0, 16, 3], "texture": "#sides", "cullface": "south"},
+				"west": {"uv": [0, 0, 16, 3], "texture": "#sides", "cullface": "west"},
+				"up": {"uv": [0, 16, 16, 0], "texture": "#texture", "cullface": "up"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#texture"}
+			}
+		}
+	]
+}

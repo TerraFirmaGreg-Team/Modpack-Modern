@@ -23,7 +23,8 @@ function registerSNSItemTags(event) {
 		'#forge:gems',
 		'#forge:flawless_gems',
 		'#forge:exquisite_gems',
-		'tfg:huge_quartz'
+		'tfg:huge_quartz',
+		'beneath:cursecoal'
 	];
 
 	allowedInOreSack.forEach(entry => {

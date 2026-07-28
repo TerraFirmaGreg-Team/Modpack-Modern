@@ -3,7 +3,7 @@
   "maxBirds": 20,
   "maxMoths": 8,
   "maxSpiders": 10,
-  "spawnHatman": false,
+  "spawnHatman": true,
   "spawnBird": true,
   "spawnMoth": true,
   "spawnSpider": true,

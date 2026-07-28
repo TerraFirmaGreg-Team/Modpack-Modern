@@ -1,21 +1,21 @@
 {
-    "name": "Building Materials",
+    "name": "Yapı Malzemeleri",
     "category": "tfc:getting_started",
     "icon": "tfc:wattle/unstained",
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "In the early stages of the game, building can be a challenge as many sturdy building blocks require metal tools to obtain. However, there are a few building blocks that can be obtained with just stone tools.$(br2)More $(l:mechanics/advanced_building_materials)building blocks$() are obtainable with metal tools."
+            "text": "Oyunun erken safhalarında inşaat yapmak tam bir çile olabilir çünkü çoğu sağlam blok için metal aletler şart. Ama neyse ki sadece taş aletlerle bile söküp alabileceğin birkaç blok var.$(br2)Metal aletleri kapınca çok daha fazla $(l:mechanics/advanced_building_materials)inşa bloğunun$() önü açılıyor."
         },
         {
             "type": "patchouli:text",
-            "text": "$(br)  1. $(l:getting_started/building_materials#thatch)Thatch$()$(br)  2. $(l:getting_started/building_materials#mud_bricks)Mud Bricks$()$(br)  3. $(l:getting_started/building_materials#wattle_and_daub)Wattle and Daub$()$(br)  4. $(l:getting_started/building_materials#clay_and_peat)Clay Blocks and Peat$()$(br)",
+            "text": "$(br)  1.$(l:getting_started/building_materials#thatch)Amanizm / Saman$()$(br)  2. $(l:getting_started/building_materials#mud_bricks)Çamur Tuğlalar$()$(br)  3.$(l:getting_started/building_materials#wattle_and_daub)Çit ve Harç (Wattle & Daub)$()$(br)  4.$(l:getting_started/building_materials#clay_and_peat)Kil Blokları ve Torf$()$(br)",
             "title": "İçindekiler"
         },
         {
             "type": "patchouli:text",
             "anchor": "thatch",
-            "text": "With just a $(l:getting_started/introduction#knife)Stone Knife$(), you are able to obtain $(thing)Straw$() by breaking plant like blocks. This can be used to craft a very simple building material: $(thing)Thatch$(). Thatch is a lightweight block that isn't affected by gravity, however players and other entities can pass right through it! It can also be crafted back into $(thing)Straw$() if needed.",
+            "text": "Sadece bir $(l:getting_started/introduction#knife)Taş Bıçak$() kullanarak bitki benzeri blokları kırdığında $(thing)Saman$() elde edebilirsin. Bu malzemeyle son derece basit bir yapı bloğu olan $(thing)Saman Balyası$() craft edilebilir. Saman Balyası yerçekiminden etkilenmeyen hafif bir bloktur; ancak oyuncular ve diğer varlıklar içinden patır patır geçebilir! Ayrıca gerekirse tekrar $(thing)Saman$() haline dönüştürülebilir.",
             "title": "Saman"
         },
         {
@@ -27,12 +27,12 @@
             "type": "patchouli:crafting",
             "anchor": "mud_bricks",
             "recipe": "tfc:crafting/soil/loam_drying_bricks",
-            "title": "Mud Bricks",
-            "text": "$(thing)Mud$() can be found on the ground, underneath rivers and lakes, or in patches in low elevation swampy environments. With a little bit of $(thing)Straw$(), it can be crafted into $()Wet Mud Bricks$()."
+            "title": "Çamur Tuğlalar",
+            "text": "$(thing)Çamur$() yerde, nehir ve göllerin altında ya da alçak rakımlı bataklık alanlarda parça parça bulunabilir. Birazcık $(thing)Saman$() ekleyerek bunu $()Islak Çamur Tuğlası$() haline getirebilirsin."
         },
         {
             "type": "tfc:multimultiblock",
-            "text": "These can be placed on the ground in a dry location, and after a day they will harden into $(thing)Mud Bricks$().",
+            "text": "Bunlar kuru bir zemine koyulabilir ve bir gün geçtikten sonra sertleşerek $(thing)Çamur Tuğla$() haline gelir.",
             "multiblocks": [
                 {
                     "pattern": [
@@ -74,7 +74,7 @@
             "type": "patchouli:crafting",
             "recipe": "tfc:crafting/soil/loam_mud_bricks",
             "title": " ",
-            "text": "These dried mud bricks can then be crafted into $(thing)Mud Brick Blocks$(). They can also be made into $(thing)Stairs$(), $(thing)Slabs$(), or $(thing)Walls$(), if so desired."
+            "text": "Bu kurumuş çamur tuğlaları daha sonra $(thing)Çamur Tuğla Blokları$() haline getirebilirsin. Hatta istersen bunlardan $(thing)Merdiven$(), $(thing)Basamak$() veya $(thing)Duvar$() da yapabilirsin."
         },
         {
             "type": "patchouli:multiblock",
@@ -92,19 +92,19 @@
                 }
             },
             "name": "",
-            "text": "All different varieties of mud bricks.",
+            "text": "Çamur tuğlaların tüm farklı çeşitleri.",
             "enable_visualize": false
         },
         {
             "type": "patchouli:text",
             "anchor": "wattle_and_daub",
-            "text": "$(thing)Wattle$() and $(thing)Daub$() is a versatile building and decoration block.$(br2)$(thing)Wattle$() can be crafted and placed, however it is breakable and allows players and mobs to walk through it. It can be augmented with $(thing)Daub$(), to make it solid.",
-            "title": "Saman Örgü ve Çamur Harç"
+            "text": "$(thing)Örme Çit$() ve $(thing)Harç$() oldukça çok yönlü bir yapı ve dekorasyon bloğudur.$(br2)$(thing)Örme Çit$() craft edilip yerleştirilebilir, fakat kırılgan bir yapısı vardır; oyuncular ve yaratıklar içinden patır patır geçebilir. Onu sağlamlaştırmak ve katı bir bloğa dönüştürmek için $(thing)Killi Harç$() ile takviye edebilirsin.",
+            "title": "Örme Çit ve Harç"
         },
         {
             "type": "patchouli:crafting",
             "recipe": "tfc:crafting/wattle",
-            "text": "In order to make $(thing)Wattle$() solid, it first must be woven, which requires adding sticks to the structure."
+            "text": "$(thing)Örme Çit$() bloğunu katı hale getirmek için önce onu örmen gerekir; bu da yapıya çubuk eklemeyi gerektirir."
         },
         {
             "type": "patchouli:crafting",
@@ -117,19 +117,19 @@
             "images": [
                 "tfc:textures/gui/book/tutorial/wattle_weave.png"
             ],
-            "text": "Four sticks are required to $(thing)weave$() wattle.",
+            "text": "Örme çiti $(thing)örmek$() için dört adet çubuk gerekir.",
             "border": true
         },
         {
             "type": "patchouli:text",
-            "text": "At any time, sticks can be added on each diagonal, as well as the top and bottom. Hold a single $(thing)Stick$() in your hand and $(item)$(k:key.use)$() it to add a stick. Change what part of the wattle you're adding the stick to by selecting a different side of the face."
+            "text": "İstediğin zaman köşegenlere, ayrıca üst ve alt kısımlara çubuk ekleyebilirsin. Elinde tek bir $(thing)Çubuk$() tut ve çubuk eklemek için $(item)$(k:key.use)$() yap. Yüzeyin farklı bir tarafını seçerek örme çitin hangi kısmına çubuk ekleyeceğini değiştirebilirsin."
         },
         {
             "type": "patchouli:image",
             "images": [
                 "tfc:textures/gui/book/tutorial/wattle_add_stick.png"
             ],
-            "text": "Adding sticks to wattle.",
+            "text": "Örme Çite Çubuk Ekleme.",
             "border": true
         },
         {
@@ -137,7 +137,7 @@
             "images": [
                 "tfc:textures/gui/book/tutorial/wattle_add_daub.png"
             ],
-            "text": "Using $(thing)Daub on $(thing)Woven Wattle$() creates a solid block.",
+            "text": "$(thing)Örülmüş Örme Çit$() üzerine $(thing)Harç$() kullanmak katı bir blok oluşturur.",
             "border": true
         },
         {
@@ -145,19 +145,19 @@
             "images": [
                 "tfc:textures/gui/book/tutorial/wattle_stained.png"
             ],
-            "text": "It can then be $(thing)stained$() by using $(l:mechanics/dye)Dye$() on it.",
+            "text": "Daha sonra üzerine $(l:mechanics/dye)Boya$() kullanarak bloğu $(thing)renklendirebilirsin$().",
             "border": true
         },
         {
             "type": "patchouli:text",
             "anchor": "clay_and_peat",
-            "text": "Clay obtained from the ground can be crafted into clay blocks. When placed and dug again, they'll turn back into clay. While unattractive, they are easy to obtain.$(br2)Peat spawns in the world in patches along water bodies and is mineable with stone tools. Some plants will grow on it.$(br2)However, peat is quite flammable.",
-            "title": "Clay Blocks and Peat"
+            "text": "Topraktan elde edilen kil, kil bloğuna dönüştürülebilir. Yerleştirilip tekrar kazıldığında tekrardan kile dönüşürler. Görünüşü pek açıcı olmasa da elde etmesi acayip kolaydır.$(br2)Turba, dünyada su kenarlarında öbekler halinde oluşur ve taş aletlerle kazılabilir. Bazı bitkiler üzerinde yetişebilir.$(br2)Yalnız dikkat et, turba bayağı kolay alev alır.",
+            "title": "Kil Blokları ve Turba"
         },
         {
             "type": "patchouli:crafting",
             "recipe": "tfg:shaped/clay_balls_to_block",
-            "title": "Clay Blocks"
+            "title": "Kil Blokları"
         }
     ],
     "read_by_default": true,
