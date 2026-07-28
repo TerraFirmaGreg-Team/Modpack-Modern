@@ -6,5 +6,6 @@
         "height": 32
     },
     "localVersion": "DEV",
-    "requiresRestart": true
+    "requiresRestart": true,
+    "checkStopModReposts": false
 }
