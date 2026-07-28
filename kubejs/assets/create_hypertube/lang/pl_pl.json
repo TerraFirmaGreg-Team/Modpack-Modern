@@ -1,6 +1,6 @@
 {
   "block.create_hypertube.hypertube": "Blok hipertuby",
-  "block.create_hypertube.hypertube_accelerator": "Przyśpieszacz Hipertuby",
+  "block.create_hypertube.hypertube_accelerator": "Przyśpieszacz hipertuby",
   "block.create_hypertube.hypertube_entrance": "Wejście do Hipertuby",
   "block.hypertube.hyper_accelerator.accelerate_mode": "Tryb przyśpieszenia",
   "block.hypertube.hyper_accelerator.brake_mode": "Tryb hamowania",
@@ -24,7 +24,7 @@
   "create_hypertube.ponder.simple_tube.text_2": "Wtedy kładziesz drugą tubę.",
   "create_hypertube.ponder.simple_tube.text_3": "I otrzymałeś właśnie połączenie Hipertub!",
   "create_hypertube.ponder.simple_tube.text_4": "Możesz połączyć już położone tuby.",
-  "create_hypertube.ponder.simple_tube.text_5": "Możesz zmienić kawałek rury z kluczem.",
+  "create_hypertube.ponder.simple_tube.text_5": "Możesz zmienić segment rury, używając klucza.",
   "create_hypertube.ponder.tag.hypertube_systems": "Systemy hipertub",
   "create_hypertube.ponder.tag.hypertube_systems.description": "Bloki i rzeczy używane w Systemach transportacyjnych Hipertub.",
   "hypertube.travel.too_short": "Twoja tuba jest zbyt krótka, by nią podróżować",
@@ -43,10 +43,10 @@
   "placement.create_hypertube.invalid_conn": "Niewłaściwe połączenie",
   "placement.create_hypertube.no_enough_tubes": "Nie masz wystarczająco tub w swoim ekwipunku",
   "placement.create_hypertube.no_other_tube_found": "Nie znaleziono drugiej tuby",
-  "placement.create_hypertube.no_valid_points": "Obie permisje muszą być ustawione",
+  "placement.create_hypertube.no_valid_points": "Obie pozycje muszą być ustawione",
   "placement.create_hypertube.success_conn": "Tuby połączono!",
   "subtitles.create_hypertube.suction": "Zasys Hipertuby",
   "subtitles.create_hypertube.traveling": "Przepływ powietrza przez Hipertubę",
   "tooltip.create_hypertube.entrance_blocked": "Wejście zablokowane",
-  "tooltip.create_hypertube.entrance_no_speed": "Nie wystarczająca prędkość"
+  "tooltip.create_hypertube.entrance_no_speed": "Niewystarczająca prędkość"
 }
