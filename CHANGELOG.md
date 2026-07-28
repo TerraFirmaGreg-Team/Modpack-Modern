@@ -2,7 +2,15 @@
 
 ## Unreleased
 ### Changes
+- This was actually added back with the palm crops, but now if you hold a rope coil in your offhand, thrown javelins return to you. Also added a new quest and tooltip about this @Redeix
+- The Unposter now also works on flowers @Pyritie
+- Added some spooky photos to some chest loot tables @Pyritie
+- Blocks that can be broken for straw now show up in EMI (should help Beneath starts) @Pyritie
+- Added a sleep paralysis demon @Redeix
 ### Bug fixes
+- Fixed being able to turn smooth/polished stone into bricks with a stonecutter @Pyritie
+- Fixed the smithing table EMI tab disappearing @evanbones
+- Fixed leaf blocks from Beneath trees taking twice as long to break @Pyritie
 
 ## [0.13.6] - 27-07-2026
 ### Changes
