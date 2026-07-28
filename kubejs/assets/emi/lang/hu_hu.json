@@ -8,6 +8,7 @@
   "emi.fluid.amount.liters": "%s L",
   "emi.fluid.amount.millibuckets": "%s mB",
   "emi.help_level.none": "Nincs",
+  "emi.help_level.normal": "Normál",
   "emi.sidebar.none": "Nincs",
   "emi.sidebar.theme.vanilla": "Vanília",
   "emi.sidebar.type.empty": "Üres",
@@ -28,8 +29,12 @@
   "tag.item.c.raw_iron_ores": "Nyers Vasércek",
   "tag.item.c.raw_materials": "Nyersanyagok",
   "tag.item.c.sand.red": "Vörös homok",
+  "tag.item.c.seeds.melon": "Görögdinnye vetőmag",
+  "tag.item.c.seeds.pumpkin": "Sütőtök vetőmag",
+  "tag.item.c.seeds.wheat": "Búza vetőmag",
   "tag.item.c.string": "Fonál",
   "tag.item.c.strings": "Fonál",
   "tag.item.c.wrenches": "Csavarkulcsok",
-  "tag.item.minecraft.music_discs": "Hanglemez"
+  "tag.item.minecraft.music_discs": "Hanglemez",
+  "tag.item.minecraft.wool": "Gyapjú"
 }

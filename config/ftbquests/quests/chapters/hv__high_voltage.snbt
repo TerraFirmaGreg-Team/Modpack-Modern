@@ -69,6 +69,20 @@
 			x: 17.0d
 			y: -6.0d
 		}
+		{
+			id: "32FFB5754312AA2F"
+			linked_quest: "38FF003C9349C0F2"
+			shape: "heart"
+			x: 6.0d
+			y: -7.5d
+		}
+		{
+			id: "110B41E737911196"
+			linked_quest: "4C37DAD7C66523CC"
+			shape: "heart"
+			x: 7.0d
+			y: -7.5d
+		}
 	]
 	quests: [
 		{
@@ -426,8 +440,8 @@
 			description: ["{quests.high_voltage.vacuum_freezer.desc}"]
 			icon: "gtceu:vacuum_freezer"
 			id: "6958029B5514D4EC"
-			shape: "gear"
-			size: 3.0d
+			shape: "octagon"
+			size: 2.0d
 			subtitle: "{quests.high_voltage.vacuum_freezer.subtitle}"
 			tasks: [{
 				id: "784C1A8A77AD314E"
@@ -1153,7 +1167,9 @@
 			dependencies: [
 				"3FBDC8552F7D8008"
 				"72BD27FEEB34C7B0"
+				"1FF607647FA682B3"
 			]
+			dependency_requirement: "one_completed"
 			description: [
 				"{quests.high_voltage.space_suit.desc.1}"
 				"{@pagebreak}"
@@ -1531,7 +1547,7 @@
 			]
 			title: "{quests.high_voltage.final_dust.title}"
 			x: 17.5d
-			y: 5.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["396E85A39FF414CF"]
@@ -1624,11 +1640,23 @@
 				{
 					id: "0C95EDF964B17ED6"
 					item: "greate:large_titanium_cogwheel"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "2E602B31550041B9"
 					item: "greate:titanium_shaft"
+					type: "item"
+				}
+				{
+					id: "5426CE4B588729F9"
+					item: "tfg:titanium_flywheel"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "07020B14B9DABDB8"
+					item: "tfg:titanium_steam_engine"
 					optional_task: true
 					type: "item"
 				}
@@ -1732,6 +1760,7 @@
 							}
 						}
 					}
+					match_nbt: true
 					optional_task: true
 					type: "item"
 				}
@@ -1803,6 +1832,7 @@
 						}
 					}
 				}
+				match_nbt: true
 				type: "item"
 			}]
 			x: 5.0d

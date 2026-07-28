@@ -1,0 +1,31 @@
+{
+	"credit": "Made by @vexxel with Blockbench - https://github.com/vexxel",
+	"textures": {
+		"6": "firmalife:block/oven/bottom/log_lit"
+	},
+	"elements": [
+		{
+			"name": "log1",
+			"from": [8, 2, 1],
+			"to": [11, 5, 11],
+			"faces": {
+				"north": {"uv": [4, 12, 7, 15], "texture": "#6"},
+				"east": {"uv": [3, 2, 13, 5], "texture": "#6"},
+				"west": {"uv": [3, 2, 13, 5], "texture": "#6"},
+				"up": {"uv": [3, 8, 13, 11], "rotation": 90, "texture": "#6"}
+			}
+		},
+		{
+			"name": "log2",
+			"from": [4, 2, 2],
+			"to": [7, 5, 12],
+			"rotation": {"angle": 0, "axis": "y", "origin": [5, 3, 8]},
+			"faces": {
+				"north": {"uv": [4, 12, 7, 15], "texture": "#6"},
+				"east": {"uv": [3, 5, 13, 8], "texture": "#6"},
+				"west": {"uv": [3, 1, 13, 4], "texture": "#6"},
+				"up": {"uv": [3, 1, 13, 4], "rotation": 270, "texture": "#6"}
+			}
+		}
+	]
+}

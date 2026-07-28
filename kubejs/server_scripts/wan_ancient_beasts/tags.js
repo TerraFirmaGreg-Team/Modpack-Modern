@@ -7,6 +7,12 @@ const registerWABBlockTags = (event) => {
 	event.add('minecraft:snow_layer_cannot_survive_on', 'wan_ancient_beasts:quick_red_sand')
 	event.add('minecraft:mineable/shovel', 'wan_ancient_beasts:quick_sand')
 	event.add('minecraft:mineable/shovel', 'wan_ancient_beasts:quick_red_sand')
+
+	event.add('minecraft:flowers', 'wan_ancient_beasts:bellflower')
+	event.add('minecraft:flowers', 'wan_ancient_beasts:rafflesia')
+	event.add('minecraft:flowers', 'wan_ancient_beasts:sundew')
+	event.add('minecraft:flowers', 'wan_ancient_beasts:moonflower')
+	event.add('minecraft:flowers', 'wan_ancient_beasts:equisetum')
 }
 
 const registerWABItemTags = (event) => {

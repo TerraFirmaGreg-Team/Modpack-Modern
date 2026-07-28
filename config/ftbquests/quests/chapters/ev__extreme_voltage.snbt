@@ -1903,6 +1903,7 @@
 							}
 						}
 					}
+					match_nbt: true
 					optional_task: true
 					type: "item"
 				}
@@ -1917,6 +1918,7 @@
 							}
 						}
 					}
+					match_nbt: true
 					optional_task: true
 					type: "item"
 				}
@@ -2592,6 +2594,7 @@
 						}
 					}
 				}
+				match_nbt: true
 				type: "item"
 			}]
 			x: -5.5d
@@ -2615,6 +2618,7 @@
 						}
 					}
 				}
+				match_nbt: true
 				type: "item"
 			}]
 			x: 23.5d

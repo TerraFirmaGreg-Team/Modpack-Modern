@@ -54,7 +54,7 @@
 			#Whether fireflies can spawn in rain
 			canSpawnInRain = true
 			#Biomes where fireflies always spawn (bypasses temperature check). Example: "minecraft:swamp"
-			biomes = ["tfc:lowlands", "tfc:salt_marsh", "tfg:earth/lowlands", "tfg:earth/salt_marsh"]
+			biomes = ["tfc:lowlands", "tfg:earth/lowlands", "tfc:salt_marsh", "tfg:earth/salt_marsh", "tfc:river", "tfg:earth/river", "tfc:lake", "tfg:earth/lake", "tfc:mountain_lake", "tfg:earth/mountain_lake", "tfc:oceanic_mountain_lake", "tfg:earth/oceanic_mountain_lake", "tfc:old_mountain_lake", "tfg:earth/old_mountain_lake", "tfc:plateau_lake", "tfg:earth/plateau_lake", "tfg:earth/tower_karst_lake", "tfc:volcanic_mountain_lake", "tfg:earth/volcanic_mountain_lake", "tfc:volcanic_oceanic_mountain_lake", "tfg:earth/volcanic_oceanic_mountain_lake"]
 			#Extra blocks that spawn fireflies. Example: "tfc:plant/cattail"
 			spawnBlocks = ["tfc:plant/arrowhead", "tfc:plant/bur_reed", "tfc:plant/cattail", "tfc:plant/marigold", "tfc:plant/phragmite", "tfc:plant/pickerelweed", "tfc:plant/water_taro", "tfc:plant/water_lily", "tfc:plant/water_canna", "tfc:plant/lotus"]
 			#Per-biome firefly RGB hex tints. Format: "biomeId|RRGGBB". Example: "minecraft:swamp|FFD27F". Takes priority over fireflyColorPool.

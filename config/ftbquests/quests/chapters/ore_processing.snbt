@@ -488,7 +488,7 @@
 				}
 			]
 			title: "{quests.ore_proc.platline.title}"
-			x: -3.5d
+			x: -3.0d
 			y: -0.5d
 		}
 		{
@@ -1337,27 +1337,6 @@
 			title: "{quests.ore_proc.bauxite.title}"
 			x: -3.0d
 			y: -2.5d
-		}
-		{
-			dependencies: ["00004BE1D77EA003"]
-			description: ["{quests.ore_proc.gem_slurry.desc}"]
-			id: "12C0BC3514FCEF96"
-			subtitle: "{quests.ore_proc.gem_slurry.subtitle}"
-			tasks: [{
-				id: "730EA57B64DE54C0"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "or(item(gtceu:crushed_ruby_ore)item(gtceu:crushed_sapphire_ore)item(gtceu:crushed_green_sapphire_ore)item(gtceu:purified_ruby_ore)item(gtceu:purified_sapphire_ore)item(gtceu:purified_green_sapphire_ore))"
-					}
-				}
-				title: "{quests.ore_proc.gem_slurry.task}"
-				type: "item"
-			}]
-			title: "{quests.ore_proc.gem_slurry.title}"
-			x: -2.5d
-			y: -0.5d
 		}
 		{
 			dependencies: ["05A072877CA01773"]

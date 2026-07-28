@@ -28,6 +28,9 @@
   "enum.deathpunishment.health_mode.MANUAL": "Konfiguracja ręczna",
   "enum.deathpunishment.health_mode.KEEP": "Zachowaj po śmierci",
   "tooltip.deathpunishment.health": "Początkowe zdrowie po odrodzeniu (aktywne w trybie ręcznym)",
+  "tooltip.deathpunishment.thirst_duration": "Czas trwania efektu pragnienia (sekundy)",
+  "tooltip.deathpunishment.confusion_duration": "Czas trwania efektu nudności (sekundy)",
+  "tooltip.deathpunishment.hunger_duration": "Czas trwania efektu głodu (sekundy)",
   "tooltip.deathpunishment.movement_duration": "Czas trwania efektu spowolnienia (sekundy)",
   "tooltip.deathpunishment.darkness_duration": "Czas trwania efektu ciemności (sekundy)",
   "message.deathpunishment.reload_config": "Przeładuj konfigurację, by zastosować zmiany"

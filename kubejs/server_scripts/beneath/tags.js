@@ -59,6 +59,8 @@ const registerBeneathBlockTags = (event) => {
 	event.add('tfg:do_not_destroy_in_space', 'beneath:wood/leaves/crimson')
 	event.add('tfg:do_not_destroy_in_space', 'beneath:wood/leaves/warped')
 
+	event.add('minecraft:flowers', 'beneath:gleamflower')
+
 	global.TFC_EQUIPMENT_METALS.forEach(metal => {
 		event.add("minecraft:mineable/axe", `beneath:wood/hanging_sign/${metal}/crimson`)
 		event.add("minecraft:mineable/axe", `beneath:wood/hanging_sign/${metal}/warped`)

@@ -1,0 +1,8 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "parent": "firmalife:block/oven/tile_oven_bottom",
+  "textures": {
+		"coals": "firmalife:block/oven/bottom/tile/coals_lit",
+		"inside": "firmalife:block/oven/bottom/tile/inside_lit"
+	}
+}
