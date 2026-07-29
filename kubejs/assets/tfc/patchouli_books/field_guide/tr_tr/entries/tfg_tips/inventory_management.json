@@ -7,12 +7,12 @@
 		{
 			"type": "patchouli:text",
 			"title": "Inventory Management",
-			"text": "So you've got a few $(l:getting_started/pottery#vessel)Vessels$() and you've made a few $(item)Wooden Chests$(), but you still have more items than you know what to do with. What's next?$(br2)A $(thing)Backpack$() can double your on-person inventory at base level, and further backpack upgrades increase it even more!"
+			"text": "Demek birkaç $(l:getting_started/pottery#vessel)Vessels$() yaptınız, yanına $(item)Tahta Sandık$() da eklediniz ama hâlâ baş edemeyeceğiniz kadar çok eşyanız var. Sırada ne mi var?$(br2)Bir $(thing)Sırt Çantası$() temel seviyede üzerinizdeki envanter kapasitesini iki katına çıkarabilir ve üst seviye çanta geliştirmeleri bu kapasiteyi daha da artırır!"
 		},
 		{
 			"type": "patchouli:crafting",
 			"recipe": "tfg:sophisticated_backpacks/shaped/backpack",
-			"text": "Backpacks can carry multiple heavy items without encumbering you, as well as big items like stacks of logs.$(br2)You can even upgrade it with a $(thing)Crafting Upgrade$() to have a Crafting Table with you everywhere."
+			"text": "Sırt çantaları, sizi yük altında bırakmadan birden fazla ağır eşyanın yanı sıra kütük yığınları gibi büyük eşyaları da taşıyabilir.$(br2)Hatta bir $(thing)Crafting Yükseltmesi$() ile yükselterek gittiğiniz her yere bir Crafting Table götürebilirsiniz."
 		},
 		{
 			"type": "patchouli:text",
