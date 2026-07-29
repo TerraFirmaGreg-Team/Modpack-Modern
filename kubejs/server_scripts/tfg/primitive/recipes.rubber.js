@@ -149,6 +149,11 @@ function registerTFGRubberRecipes(event) {
 		.inputFluids(Fluid.of('tfg:latex', 1000))
 		.outputFluids(Fluid.of('tfg:vulcanized_latex', 1000))
 
+	event.recipes.greate.mixing(Fluid.of('tfg:vulcanized_latex', 1000), ['tfc:powder/sulfur', Fluid.of('tfg:latex', 1000)])
+		.recipeTier(1)
+		.heated()
+		.id('tfg:create/mixer/latex_to_vulcanized_latex')
+
 	// Raw rubber pulp
 	event.recipes.vintageimprovements.pressurizing('#forge:dusts/raw_rubber', Fluid.of('tfg:vulcanized_latex', 250))
 		.heated()
