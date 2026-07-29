@@ -330,8 +330,8 @@ function registerTFGItemSize(event) {
 	)
 
 	//Universal Compost Bags
-	event.itemSize("tfg:universal_compost_browns_bag", "tiny", "medium")
-	event.itemSize("tfg:universal_compost_greens_bag", "tiny", "medium")
+	event.itemSize("tfg:universal_compost_browns_bag", "tiny", "light");
+	event.itemSize("tfg:universal_compost_greens_bag", "tiny", "light");
 
 
 	//Crafting Station
