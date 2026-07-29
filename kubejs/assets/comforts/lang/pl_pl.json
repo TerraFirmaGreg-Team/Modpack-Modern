@@ -42,6 +42,7 @@
   "capability.comforts.not_sleepy": "Nie możesz teraz odpoczywać; nie czujesz się jeszcze zmęczony",
   "comforts.skipping_day": "Przesypianie dnia",
   "gui.comforts.config.autoUse.name": "Automatycznie używaj śpiworów",
+  "gui.comforts.config.daySleepingPercentage.name": "Odsetek śpiących za dnia",
   "gui.comforts.config.hammockUse.name": "Pora dnia na używanie hamaków",
   "gui.comforts.config.hammocksStopPhantoms.name": "Hamaki zatrzymują fantomy",
   "gui.comforts.config.nightWakeTimeOffset.description": "Ilość czasu, w tikach, która zostanie dodana lub odjęta od nowego czasu po przespaniu dnia.",
