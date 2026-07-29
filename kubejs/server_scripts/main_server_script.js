@@ -155,6 +155,7 @@ TFCEvents.data(event => {
 	registerTFCDataForChalk(event);
 	registerTFCDataForChimes(event);
 	registerTFCDataForCreateAddition(event);
+	registerCreateDecoData(event);
 	registerTFCDataForFirmalife(event)
 	registerTFCDataForGTCEU(event)
 	registerTFCDataForImmersiveAircraft(event);
