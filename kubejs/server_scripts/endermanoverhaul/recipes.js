@@ -16,6 +16,9 @@ function registerEndermanOverhaulRecipes(event) {
 		.duration(50)
 		.EUt(GTValues.VA[GTValues.ULV])
 
+	event.recipes.tfc.quern('ae2:ender_dust', '#forge:ender_pearls')
+		.id('tfg:quern/ender_pearls')
+
 	event.shaped('endermanoverhaul:corrupted_shield', [
 		'ABA',
 		'ECE',

@@ -1,0 +1,68 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "鼓風爐",
+  "category": "tfc:mechanics",
+  "icon": "tfc:blast_furnace",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)高爐$()是製造$(thing)鋼鐵$()的高階設備。在高溫且受控的環境混合$(l:getting_started/finding_ores)鐵礦$()、$(l:tfg_tips/basic_automation)焦炭$()或$(l:beneath/ores_and_minerals#cursecoal)無煙煤$()以及$(l:mechanics/flux)助熔劑$()，就能製造出比鑄鐵或鍛鐵更堅固的金屬。$(br2)若要獲得高爐，需要先準備$(l:mechanics/crucible)坩堝$()與大量的$(thing)鍛鐵板$()。\n"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/blast_furnace",
+      "text": "製作高爐需要$(thing)坩鍋$()以及一些$(thing)雙層鍛鐵板$()。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "接著需要建造高爐及其$(thing)煙囪$()。煙囪必須由$(l:mechanics/fire_clay#fire_bricks)強化耐火磚$()建造才能承受極端高溫，其用耐火磚與鑄鐵或鍛鐵板製作。手持鐵板 $(item)$(k:key.sneak)$() + $(item)$(k:key.use)$() 貼滿耐火磚的外側或製作成$(l:mechanics/blast_furnace_insulation)高爐隔熱層$()。"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock_id": "tfc:blast_furnace",
+      "name": "高爐",
+      "text": "最低煙囪高度的高爐。",
+      "enable_visualize": true
+    },
+    {
+      "type": "patchouli:text",
+      "text": "高爐的煙囪最高可達五層——每層需要四個$(thing)耐火磚$()與十二個$(thing)鍛鐵板$()來建造。每層煙囪能讓高爐多容納四個礦石，進而增加生產效率！"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "高爐的使用方法是從煙囪頂部投入物品——造鋼時必須加入等量的$(l:getting_started/finding_ores)鐵礦$()與$(l:mechanics/flux)助熔劑$()。任何能熔成$(thing)鑄鐵$()的鐵礦或物品都行。高爐運作時會消耗加入的$(l:tfg_tips/basic_automation)焦炭$()或$(l:beneath/ores_and_minerals#cursecoal)無煙煤$()。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "打開高爐介面能看到右側顯示的內容。介面包含高爐的礦石與燃料計量條。右上角的欄位必須放置將空氣導入高爐的$(thing)風口$()，讓高爐達到煉鋼溫度的必需品。風口在$(l:mechanics/anvils)砧$()上鍛造。"
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "tfc:textures/gui/book/gui/blast_furnace.png"
+      ],
+      "text": "高爐介面",
+      "border": false
+    },
+    {
+      "type": "patchouli:text",
+      "text": "還需要在高爐的任一面放置$(l:mechanics/bellows)風箱$()來達到熔鐵溫度。"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock_id": "tfc:full_blast_furnace",
+      "name": "",
+      "text": "連接了風箱與坩堝的完整高爐結構。",
+      "enable_visualize": true
+    },
+    {
+      "type": "patchouli:text",
+      "text": "最後用$(l:getting_started/firepit#firestarter)取火器$()或$(thing)打火石$()點燃高爐開始加熱礦石。確保燃料充足的同時在溫度達到上限後，使用風箱鼓風。溫度滿足熔點時鐵礦會熔化並轉化為$(l:mechanics/steel)生鐵$()。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "熔化的金屬液會流入高爐正下方的任何金屬流體容器，例如$(l:mechanics/crucible)坩堝$()。金屬液可從坩堝的輸出欄位澆築至錠模中，並進一步加工成$(l:mechanics/steel)鋼鐵$()。"
+    }
+  ],
+  "read_by_default": true
+}

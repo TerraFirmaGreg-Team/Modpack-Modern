@@ -1,0 +1,138 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "Ovens",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:cured_oven_top",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)Ovens$() are a great way of cooking lots of food in a way that improves their shelf life. Oven-baked food decays at 90% of the rate of regular food. Ovens are a multiblock structure consisting of a $(thing)Bottom Oven$(), $(thing)Top Oven$(), and optionally $(thing)Chimneys$(). These blocks start off as clay, and must be $(thing)Cured$() by raising their temperature to a certain amount for long enough.$(br)$(l:firmalife/oven_appliances)Oven Appliances$() extend oven functionality."
+    },
+    {
+      "type": "tfc:knapping_recipe",
+      "recipe": "firmalife:clay_knapping/oven_top",
+      "text": "烤爐頂的配方"
+    },
+    {
+      "type": "tfc:knapping_recipe",
+      "recipe": "firmalife:clay_knapping/oven_bottom",
+      "text": "烤爐底的配方"
+    },
+    {
+      "type": "tfc:knapping_recipe",
+      "recipe": "firmalife:clay_knapping/oven_chimney",
+      "text": "烤爐煙囪的配方"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/bricks",
+      "text": "Ovens are insulated with $(thing)Bricks$(), other oven blocks, or anything that can insulate a Forge. This means you can use stone blocks, if you want!"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfchotornot:crafting/tongs/wood",
+      "text": "$(thing)木鉗$()能從烤爐安全地取出熱食。手持木鉗對烤爐$(item)$(k:key.use)$()就能拿取。否則會被燙傷！"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "The Oven first consists of the Top Oven placed on top of the Bottom Oven. All sides of each oven part, besides the front face, should then be covered with Oven Insulation blocks, as covered two pages ago. You may choose to use $(thing)Oven Chimneys$() as insulation. Placing a stack of chimneys directly behind the oven causes the smoke from the oven to travel up and out of it. If you don't do this, smoke will quickly fill up your house, which is very distracting!"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "硬化與未硬化的烤爐結構範例",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "     ",
+              "  C  "
+            ],
+            [
+              "     ",
+              "  C  "
+            ],
+            [
+              "WT0TW",
+              "WWCWW"
+            ],
+            [
+              "WBBBW",
+              "WWCWW"
+            ]
+          ],
+          "mapping": {
+            "0": "firmalife:cured_oven_top[facing=north]",
+            "T": "firmalife:cured_oven_top[facing=north]",
+            "B": "firmalife:cured_oven_bottom[facing=north]",
+            "W": "minecraft:bricks",
+            "C": "firmalife:cured_oven_chimney"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "     ",
+              "  C  "
+            ],
+            [
+              "     ",
+              "  C  "
+            ],
+            [
+              "WT0TW",
+              "WWCWW"
+            ],
+            [
+              "WBBBW",
+              "WWCWW"
+            ]
+          ],
+          "mapping": {
+            "0": "firmalife:oven_top[facing=north]",
+            "T": "firmalife:oven_top[facing=north]",
+            "B": "firmalife:oven_bottom[facing=north]",
+            "W": "minecraft:bricks",
+            "C": "firmalife:oven_chimney"
+          }
+        }
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "text": "烤爐底只能添加原木作為燃料。$(item)$(k:key.use)$()加入或取出原木。爐底也是烤爐的一部份，用$(thing)起火器$()或其他工具點燃。爐底會傳導熱量到上方的爐頂。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "烤爐頂放置要烹飪的食物，爐頂會吸收爐底的熱量並緩慢釋放，也就是說，當燃料耗盡時爐頂仍能繼續烹飪一段時間。$(item)$(k:key.use)$()放入物品。記得稍後要用$(thing)木鉗$()取出熱食。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "硬化烤爐方塊很容易但需要耐心。只要點燃烤爐底，稍後一會就大功告成。烤爐方塊在600度以上的溫度維持80秒，自身連同周圍烤爐方塊都會硬化，效果會延伸到煙囪。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/oven_insulation",
+      "text": "為烤爐底製作隔熱層就能省去為側面與背面隔熱的麻煩。但這不代表不需要煙囪。$(item)$(k:key.use)$()套用隔熱層。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/brick_countertop",
+      "text": "Countertops are aesthetic blocks that count as oven insulation, and have an appearance that matches that of oven blocks. They are a nice aesthetic choice for your kitchen."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Ovens also have $(thing)Finishes$() that can be used to change their appearance. These finishes are applied to the basic brick stage of the oven (or brick blocks themselves), and are cosmetic. Finishes can be mixed and matched. They are applied with $(item)$(k:key.use)$()."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/rustic_finish",
+      "recipe2": "firmalife:crafting/stone_finish"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/tile_finish"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 14
+}

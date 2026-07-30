@@ -1,5 +1,6 @@
 {
 	"renderPosition": "BEFORE_NAME",
+	"threeDeeNess": 0.0,
 	"offsetNonPlayerText": true,
 	"senderDetection": "UUID_AND_HEURISTIC",
 	"smartHeuristics": true,

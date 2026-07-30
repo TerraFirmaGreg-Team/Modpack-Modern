@@ -1,0 +1,71 @@
+{
+  "name": "コンクリート道路",
+  "category": "tfc:roadsandroofs",
+  "icon": "rnr:concrete_road_panel",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "コンクリートの道は、正しく施工すれば移動速度が30%向上します。\nただし、乾く前にひびが入ったり踏まれたりすると効果が失われるため、施工中は慎重に扱う必要があります。"
+    },
+    {
+      "type": "patchouli:image",
+      "title": "コンクリート道路",
+      "images": [
+        "rnr:textures/gui/book/concrete_road.png"
+      ],
+      "border": true
+    },
+    {
+      "type": "patchouli:spotlight",
+      "anchor": "liquid_concrete",
+      "item": "gtceu:concrete_bucket",
+      "title": "コンクリートの作成",
+      "text": "コンクリートの道を作るためには、まず液化コンクリートを作ります。\n$(thing)液化コンクリート$()を作る方法として、$(thing)ミキサー$()を使い、水と石の粉をベースとして、方解石の粉と石膏の粉を加える方法、炭酸塩堆積岩の粉と粘土の粉を加える方法、炭酸塩堆積岩の粉と石膏の粉を加える方法の3つがあります。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "anchor": "wet_concrete",
+      "item": "rnr:bucket/concrete",
+      "title": "コンクリートの作成",
+      "text": "その後、$(thing)回路番号#7$()に設定した$(thing)ミキサー$()に液化コンクリートと水を投入して薄めることで$(thing)生コンクリート$()を作ります。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)生コンクリート$()が完成したら、バケツで掬って$(thing)路盤$()の上に流し込むと、周囲のブロックにも広がっていきます。\nコンクリートは1日で固まりますが、それまでは動物やプレイヤーが上を歩いてしまわないよう注意が必要です。固まる前に踏まれると、足跡が残り表面がデコボコになってしまうため、速度ボーナスが得られなくなります。\nできてしまった足跡は、固まる前であれば$(thing)マトック$()で平らに整えることができます。"
+    },
+    {
+      "type": "patchouli:image",
+      "title": "流し込まれたコンクリートの道",
+      "images": [
+        "rnr:textures/gui/book/wet_concrete.png"
+      ],
+      "border": true
+    },
+    {
+      "type": "patchouli:text",
+      "text": "コンクリートは固まる際に収縮してひび割れることがあります。\n幅が4ブロックを超える広い範囲に流し込むと、$(thing)縁$()や$(thing)目地$()、$(thing)模様仕上げ$()から2ブロック以上離れた場所は、硬化時にひびが入ってしまいます。\nこれを防ぐには、施工範囲を小さく区切るか、$(thing)マトック$()で$(thing)収縮目地$()を入れる、あるいは$(thing)模様仕上げ$()を施す必要があります。"
+    },
+    {
+      "type": "patchouli:image",
+      "title": "目地",
+      "images": [
+        "rnr:textures/gui/book/control_joints.png"
+      ],
+      "border": true
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)模様仕上げ$()は、乾く前のコンクリートに$(thing)レンガ$()や$(thing)敷石$()、$(thing)滑らかな石系ブロック$()を押し付けて模様が付くように仕上げる方法です。\nこれらは見た目だけでなく、ひび割れ防止の$(thing)収縮目地$()としても役立ちます。\nコンクリートが完全に固まった後は、$(thing)ノミ$()で半ブロックや階段の形に加工することもできます。"
+    },
+    {
+      "type": "patchouli:image",
+      "title": "舗石風の道",
+      "images": [
+        "rnr:textures/gui/book/faux_sett.png"
+      ],
+      "border": true
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 20
+}

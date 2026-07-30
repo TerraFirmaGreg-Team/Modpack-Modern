@@ -1,0 +1,20 @@
+{
+	"feature": "tfg:earth/crop/cardamom_patch",
+	"placement": [
+		{
+			"type": "minecraft:rarity_filter",
+			"chance": 80
+		},
+		{
+			"type": "minecraft:in_square"
+		},
+		{
+			"type": "tfc:climate",
+			"min_temperature": 18,
+			"max_temperature": 30,
+			"min_rainfall": 350,
+			"min_forest": "edge",
+			"max_forest": "old_growth"
+		}
+	]
+}

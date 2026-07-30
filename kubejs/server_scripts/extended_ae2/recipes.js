@@ -579,7 +579,7 @@ const registerExtendedAE2Recipes = (event) => {
 	// Wireless Crafting Terminal
 	event.recipes.gtceu.assembler('expatternprovider:wireless_ex_pat')
 		.itemInputs(
-			'2x gtceu:hv_lithium_battery',
+			'2x gtceu:lapotronic_energy_orb',
 			'2x gtceu:iv_sensor',
 			'gtceu:iv_emitter',
 			'2x #forge:rods/iridium',

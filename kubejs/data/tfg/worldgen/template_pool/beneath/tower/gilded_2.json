@@ -1,0 +1,24 @@
+{
+	"name": "tfg:beneath/tower/gilded_2",
+	"fallback": "minecraft:empty",
+	"elements": [
+		{
+			"weight": 30,
+			"element": {
+				"location": "tfg:beneath/tower/2/gilded_gilded",
+				"processors": "tfg:beneath/tower/2/gilded_gilded",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 70,
+			"element": {
+				"location": "tfg:beneath/tower/2/gilded_magma",
+				"processors": "tfg:beneath/tower/2/gilded_magma",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		}
+	]
+}

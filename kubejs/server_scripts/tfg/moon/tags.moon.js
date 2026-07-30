@@ -80,13 +80,14 @@ function registerTFGMoonEntityTypeTags(event) {
 	})
 
 	event.add('tfc:deals_piercing_damage', 'minecraft:stray')
-	event.add('tfc:deals_slashing_damage', 'minecraft:enderman')
 	event.add('tfc:deals_slashing_damage', 'endermanoverhaul:windswept_hills_enderman')
 	event.add('tfc:deals_slashing_damage', 'endermanoverhaul:soulsand_valley_enderman')
 	event.add('tfc:deals_piercing_damage', 'endermanoverhaul:end_enderman')
 	event.add('tfc:deals_slashing_damage', 'endermanoverhaul:end_islands_enderman')
 	event.add('tfc:deals_crushing_damage', 'ad_astra:star_crawler')
 	event.add('tfc:deals_crushing_damage', 'species:birt')
+
+	event.add('tfc:zombies', 'ad_astra:corrupted_lunarian')
 
 	event.add('tfg:ignores_gravity', 'minecraft:shulker_bullet')
 	event.add('tfg:ignores_gravity', 'endermanoverhaul:spirit')

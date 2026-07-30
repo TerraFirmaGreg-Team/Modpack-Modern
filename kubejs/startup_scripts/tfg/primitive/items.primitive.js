@@ -2,6 +2,15 @@
 
 function registerTFGPrimitiveItems(event) {
 
+	event.create('tfg:unstrung_bow');
+
+	// Peat Bricks
+
+	event.create('tfg:dried_peat_brick')
+		.translationKey('item.tfg.dried_peat_brick')
+		.texture('tfg:item/brick/dried_peat_brick')
+
+
 	// Paper making
 	event.create('tfg:hardwood_strip')
 	event.create('tfg:soaked_hardwood_strip')
@@ -38,6 +47,46 @@ function registerTFGPrimitiveItems(event) {
 
 	event.create('tfg:armor_stand_arms')
 
+	event.create('tfg:copper_spindle')
+		.tag('tfg:tools/spindles')
+		.tag('tfc:usable_on_tool_rack')
+		.maxDamage(120)
+		.texture('tfg:item/copper_spindle')
+	event.create('tfg:copper_spindle_head')
+		.texture('tfg:item/copper_spindle_head')
+
+	event.create('tfg:bronze_spindle')
+		.tag('tfg:tools/spindles')
+		.tag('tfc:usable_on_tool_rack')
+		.maxDamage(192)
+		.texture('tfg:item/bronze_spindle')
+	event.create('tfg:bronze_spindle_head')
+		.texture('tfg:item/bronze_spindle_head')
+
+	event.create('tfg:bismuth_bronze_spindle')
+		.tag('tfg:tools/spindles')
+		.tag('tfc:usable_on_tool_rack')
+		.maxDamage(160)
+		.texture('tfg:item/bismuth_bronze_spindle')
+	event.create('tfg:bismuth_bronze_spindle_head')
+		.texture('tfg:item/bismuth_bronze_spindle_head')
+
+	event.create('tfg:black_bronze_spindle')
+		.tag('tfg:tools/spindles')
+		.tag('tfc:usable_on_tool_rack')
+		.maxDamage(220)
+		.texture('tfg:item/black_bronze_spindle')
+	event.create('tfg:black_bronze_spindle_head')
+		.texture('tfg:item/black_bronze_spindle_head')
+
+	event.create('tfg:wrought_iron_spindle')
+		.tag('tfg:tools/spindles')
+		.tag('tfc:usable_on_tool_rack')
+		.maxDamage(480)
+		.texture('tfg:item/wrought_iron_spindle')
+	event.create('tfg:wrought_iron_spindle_head')
+		.texture('tfg:item/wrought_iron_spindle_head')
+	
 	event.create('tfg:harvest_basket')
 		.parentModel('tfg:item/harvest_basket')
 		.maxDamage(256)
@@ -145,7 +194,14 @@ function registerTFGPrimitiveItems(event) {
 	
 	event.create('tfg:bundled_scraped_flax')
 		.tag('tfc:scrapable')
-		.texture('tfg:item/bundled_scraped_flax')	
+		.texture('tfg:item/bundled_scraped_flax')
+		
+	// Oil Palm Stuff
+	event.create('tfg:oil_palm_paste')
+	event.create('tfg:oil_palm_debris')
+	event.create('tfg:oil_palm_fiber')
+		.tag('tfg:burlap_fiber')
+		.tag('tfc:compost_browns')
 
 		// Molds
 	event.create('tfg:rod_mold', 'tfc:mold')
@@ -164,6 +220,31 @@ function registerTFGPrimitiveItems(event) {
 			"XXXXXXX   XXXX",
 			"XXXXXX   XXXXX",
 			"XXXXX   XXXXXX",
+			"XXXX   XXXXXXX",
+			"XXX   XXXXXXXX",
+			"XX   XXXXXXXXX",
+			"XX  XXXXXXXXXX",
+			"XXXXXXXXXXXXXX",
+			"XXXXXXXXXXXXXX"
+		])
+
+
+	event.create('tfg:spindle_head_mold', 'tfc:mold')
+        .capacity(72)
+		.texture("base", "tfg:item/mold/fired/spindle_head_empty")
+		.texture("fluid", "tfg:item/mold/fired/spindle_head_overlay")
+		.tag('tfc:fired_molds')
+		.tag('tfc:molds')
+		.fluidTagAccept('tfg:usable_in_spindle_head_mold')
+		.tfcccAllowedInMoldTable([
+			"XXXXXXXXXXXXXX",
+			"XXXXXXXXXXXXXX",
+			"XXXXXXXXXX  XX",
+			"XXXXXXXXX   XX",
+			"XXXXXX     XXX",
+			"XXXXX     XXXX",
+			"XXXX     XXXXX",
+			"XXXX    XXXXXX",
 			"XXXX   XXXXXXX",
 			"XXX   XXXXXXXX",
 			"XX   XXXXXXXXX",
@@ -219,6 +300,30 @@ function registerTFGPrimitiveItems(event) {
 			"XXXXXXXXXXXXXX",
 			"XXXXXXXXXXXXXX"
 		])
+
+	event.create('tfg:lamp_mold', 'tfc:mold')
+        .capacity(144)
+		.texture("base", "tfg:item/mold/fired/lamp_mold_empty")
+		.texture("fluid", "tfg:item/mold/fired/lamp_mold_overlay")
+		.tag('tfc:fired_molds')
+		.tag('tfc:molds')
+		.fluidTagAccept('tfg:usable_in_lamp_mold')
+		.tfcccAllowedInMoldTable([
+			"XXXXXXXXXXXXXX",
+			"XXXXXXXXXXXXXX",
+			"XXXXXX XXXXXXX",
+			"XXXXX    XXXXX",
+			"XXXXX    XXXXX",
+			"XXXX      XXXX",
+			"XXXX XXXX XXXX",
+			"XXXX XXXX XXXX",
+			"XXXX XXXX XXXX",
+			"XXXX XXXX XXXX",
+			"XXXX XXXX XXXX",
+			"XXXX      XXXX",
+			"XXXXXXXXXXXXXX",
+			"XXXXXXXXXXXXXX"
+		])
 	
 	// Unfired Molds
 	event.create('tfg:unfired_rod_mold')
@@ -227,6 +332,13 @@ function registerTFGPrimitiveItems(event) {
 		.tag('tfc:fire_clay_recycle_5')
 		.tag('tfc:molds')
 		.tag('tfc:unfired_pottery')
+		
+	event.create('tfg:unfired_spindle_head_mold')
+		.texture("tfg:item/mold/unfired/unfired_spindle_head_mold")
+		.tag('tfc:unfired_molds')
+		.tag('tfc:clay_recycle_5')
+		.tag('tfc:molds')
+		.tag('tfc:unfired_pottery')	
 	
 	event.create('tfg:unfired_small_gear_mold')
 		.texture("tfg:item/mold/unfired/unfired_small_gear_mold")
@@ -237,6 +349,13 @@ function registerTFGPrimitiveItems(event) {
 	
 	event.create('tfg:unfired_nugget_mold')
 		.texture("tfg:item/mold/unfired/unfired_nugget_mold")
+		.tag('tfc:unfired_molds')
+		.tag('tfc:clay_recycle_5')
+		.tag('tfc:molds')
+		.tag('tfc:unfired_pottery')
+
+	event.create('tfg:unfired_lamp_mold')
+		.texture("tfg:item/mold/unfired/unfired_lamp_mold")
 		.tag('tfc:unfired_molds')
 		.tag('tfc:clay_recycle_5')
 		.tag('tfc:molds')

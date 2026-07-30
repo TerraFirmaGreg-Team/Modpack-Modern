@@ -1,0 +1,9 @@
+{
+	"type": "tfg:creeping_underwater_plant",
+	"config": {
+		"integrity": 0.35,
+		"block": "tfg:plant/anemone_purple",
+		"radius": 3,
+		"height": 3
+	}
+}

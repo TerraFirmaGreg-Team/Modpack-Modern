@@ -1,0 +1,23 @@
+{
+	"type": "tfc:random_tree",
+	"config": {
+		"structures": [
+			"tfg:trees/mahoe_large1",
+			"tfg:trees/mahoe_large2",
+			"tfg:trees/mahoe_large3",
+			"tfg:trees/mahoe_large4",
+			"tfg:trees/mahoe_large5",
+			"tfg:trees/mahoe_large6",
+			"tfg:trees/mahoe_normal1",
+			"tfg:trees/mahoe_normal2",
+			"tfg:trees/mahoe_normal3",
+			"tfg:trees/mahoe_normal4",
+			"tfg:trees/mahoe_normal5",
+			"tfg:trees/mahoe_normal6"
+		],
+		"placement": {
+			"width": 2,
+			"height": 5
+		}
+	}
+}

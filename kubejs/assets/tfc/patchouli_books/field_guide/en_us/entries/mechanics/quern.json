@@ -51,7 +51,7 @@
     {
       "type": "tfc:quern_recipe",
       "title": "Powders",
-      "recipe": "tfg:quern/sulfur_powder",
+      "recipe": "tfg:quern/sulfur",
       "text": "The quern is used to make various $(thing)Powders$() from dust, like $(thing)Sulfur$(). $(thing)Gems$() can also be ground into powder."
     },
     {

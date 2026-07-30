@@ -1,6 +1,16 @@
 "use strict";
 
 function registerTFGIceRecipes(event) {
+	// Dirty water
+	event.recipes.tfc.barrel_instant()
+		.inputs('tfc:jute_net', Fluid.of('tfg:muddy_water', 1000))
+		.outputs('tfc:dirty_jute_net', Fluid.of('minecraft:water', 1000))
+
+	event.recipes.gtceu.centrifuge('tfg:muddy_water')
+		.inputFluids(Fluid.of('tfg:muddy_water', 1000))
+		.outputFluids(Fluid.of('minecraft:water', 1000))
+		.duration(50)
+		.EUt(GTValues.VA[GTValues.ULV])
 
 	// Ice
 	event.remove({ id: 'gtceu:compressor/ice_from_dust' })

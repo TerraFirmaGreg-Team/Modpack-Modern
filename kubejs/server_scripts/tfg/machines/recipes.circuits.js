@@ -131,7 +131,7 @@ function registerTFGCircuitRecipes(event) {
 
     }
 
-    Object.keys(CIRCUIT_ASSEMBLER_RECIPE_TIERS).forEach(function(recipe) {
+    Object.keys(CIRCUIT_ASSEMBLER_RECIPE_TIERS).forEach((recipe) => {
         var tier = CIRCUIT_ASSEMBLER_RECIPE_TIERS[recipe]
         var tinReplacement = global.SOLDER_TIERS[tier][TIN_REPLACEMENT]
         var solderReplacement = global.SOLDER_TIERS[tier][SOLDER_REPLACEMENT]
@@ -147,11 +147,11 @@ function registerTFGCircuitRecipes(event) {
 
         // Soldering alloy → remplacement
         if (solderReplacement) {
-            global.modifyRecipe(event, recipe + "_soldering_alloy", {
+            global.modifyRecipe(event, `${recipe}_soldering_alloy`, {
                 fluidReplacements: { "forge:soldering_alloy": solderReplacement }
             })
         } else {
-            event.remove({ id: recipe + "_soldering_alloy" })
+            event.remove({ id: `${recipe}_soldering_alloy` })
         }
     })
 
@@ -211,7 +211,7 @@ function registerTFGCircuitRecipes(event) {
         "gtceu:assembly_line/fusion_reactor_mk3":               "uv",
     }
 
-    Object.keys(ASSEMBLY_LINE_RECIPE_TIERS).forEach(function(recipe) {
+    Object.keys(ASSEMBLY_LINE_RECIPE_TIERS).forEach((recipe) => {
         var tier = ASSEMBLY_LINE_RECIPE_TIERS[recipe]
         var solderReplacement = global.SOLDER_TIERS[tier][SOLDER_REPLACEMENT]
         var tinReplacement = global.SOLDER_TIERS[tier][TIN_REPLACEMENT]

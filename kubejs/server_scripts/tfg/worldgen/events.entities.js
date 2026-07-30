@@ -5,6 +5,16 @@ const NEW_MOB_MAX_HP = {
 	// earth mobs
 	"primitive_creatures:beast": 40,
 
+	// beneath mobs
+	"minecraft:piglin": 20,
+	"minecraft:wither_skeleton": 30,
+	"species:leaf_hanger": 20,
+	"species:cliff_hanger": 20,
+	"species:spectre": 16,
+	"species:ghoul": 40,
+	"species:bewereager": 50,
+	"species:mammutilation": 50,
+
 	// moon mobs
 	"endermanoverhaul:end_enderman": 50,
 	"endermanoverhaul:end_islands_enderman": 120,
@@ -17,7 +27,7 @@ const NEW_MOB_MAX_HP = {
 	// mars mobs -- wan's ancient beasts has its own config for this (also includes sniffer)
 	"endermanoverhaul:crimson_enderman": 60,
 	"endermanoverhaul:warped_enderman": 60,
-	"endermanoverhaul:badlands_enderman": 65,
+	"endermanoverhaul:badlands_enderman": 66,
 	"endermanoverhaul:cave_enderman": 60,
 	"ad_astra:martian_raptor": 50,
 	"tfg:glacian_ram": 50,
@@ -27,17 +37,17 @@ const NEW_MOB_MAX_HP = {
 	"species:springling": 60,
 	"species:quake": 130,
 	"species:cruncher": 1200,
+	"wan_ancient_beasts:snatcher": 60,
 
 	// venus mobs
-	"endermanoverhaul:savanna_enderman": 85,
+	"endermanoverhaul:savanna_enderman": 86,
 	"endermanoverhaul:desert_enderman": 90,
 	"ad_astra:sulfur_creeper": 60,
-	"species:cliff_hanger": 95,
 	"species:trooper": 30,
 	"minecraft:blaze": 80,
 	"minecraft:strider": 50,
 	'arthropocolypse:scarab': 10,
-	'arthropocolypse:prairie_grasshopper': 15,
+	'arthropocolypse:prairie_grasshopper': 14,
 	'arthropocolypse:field_cricket': 20,
 	'arthropocolypse:ice_crawler': 70,
 	'arthropocolypse:behemoth_desert_spider': 1300,
@@ -47,18 +57,17 @@ const NEW_MOB_MAX_HP = {
 	'arthropocolypse:stag_beetle': 90,
 	'arthropocolypse:stag_beetle_larva': 20,
 	'arthropocolypse:wharf_roach': 20,
-	'arthropocolypse:platerodrilus': 95,
+	'arthropocolypse:platerodrilus': 90,
 	'arthropocolypse:mealworm_beetle': 50,
-	'arthropocolypse:mealworm': 15,
+	'arthropocolypse:mealworm': 14,
 	'arthropocolypse:millipede_head': 110,
 	'arthropocolypse:millipede_body': 110,
 	'arthropocolypse:millipede_tail': 110,
 
 	// europa mobs
-	"endermanoverhaul:ice_spikes_enderman": 85,
+	"endermanoverhaul:ice_spikes_enderman": 90,
 	"endermanoverhaul:snowy_enderman": 80,
-	"endermanoverhaul:coral_enderman": 80,
-	"species:leaf_hanger": 85,
+	"endermanoverhaul:coral_enderman": 80
 };
 
 const NEW_MOB_ARMOR = {
@@ -72,14 +81,16 @@ const NEW_MOB_ARMOR = {
 	"endermanoverhaul:savanna_enderman": 4,
 	"endermanoverhaul:desert_enderman": 4,
 	"endermanoverhaul:nether_wastes_enderman": 2,
-	"ad_astra:sulfur_creeper": 4,
-	"species:cliff_hanger": 2,
+	"ad_astra:sulfur_creeper": 4
 };
 
 const NEEDS_FIREPROOFING = [
+	"minecraft:bat",
+	"minecraft:hoglin",
 	"primitive_creatures:golem_2",
 	"endermanoverhaul:savanna_enderman",
 	"endermanoverhaul:desert_enderman",
+	"endermanoverhaul:dark_oak_enderman",
 	'arthropocolypse:scarab',
 	'arthropocolypse:prairie_grasshopper',
 	'arthropocolypse:field_cricket',
@@ -128,17 +139,38 @@ EntityEvents.spawned((event) => {
 	if (type === "minecraft:enderman") {
 		switch (dimension) {
 			// use default for beneath
-			case "ad_astra:moon": newHP = 45;
-			case "ad_astra:mars": newHP = 65;
-			case "ad_astra:venus": newHP = 75;
-			case "ad_astra:mercury": newHP = 75;
-			case "ad_astra:glacio": newHP = 85;
+			case "ad_astra:moon": {
+				newHP = 45;
+				break;
+			}
+			case "ad_astra:mars": {
+				newHP = 65;
+				break;
+			}
+			case "ad_astra:venus": {
+				newHP = 75;
+				break;
+			}
+			case "ad_astra:mercury": {
+				newHP = 75;
+				break;
+			}
+			case "ad_astra:glacio": {
+				newHP = 85;
+				break;
+			}
 		}
 	}
 	else if (type === "endermanoverhaul:nether_wastes_enderman") {
 		switch (dimension) {
 			// use default for beneath
 			case "ad_astra:venus": newHP = 80;
+		}
+	}
+	else if (type === "minecraft:slime") {
+		switch (dimension) {
+			// use default for overworld
+			case "minecraft:the_nether": newHP = entity.maxHealth * 2;
 		}
 	}
 	else if (type === "minecraft:magma_cube") {

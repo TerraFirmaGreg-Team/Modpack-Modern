@@ -1,0 +1,21 @@
+{
+    "variants" : {
+        "default" : "model:0"
+    },
+    
+    "modelConfigs" : [
+        {
+            "baseScale" : 0.6,
+            "modelMainPartFieldAliases" : [
+                "su.terrafirmagreg.core.common.entity.animals.tfcmongoose.TFCMongooseModel;body",
+                "su.terrafirmagreg.core.common.entity.animals.tfcmongoose.TFCMongooseModel;head",
+                "su.terrafirmagreg.core.common.entity.animals.tfcmongoose.TFCMongooseModel;right_ear",
+                "su.terrafirmagreg.core.common.entity.animals.tfcmongoose.TFCMongooseModel;left_ear",
+                "su.terrafirmagreg.core.common.entity.animals.tfcmongoose.TFCMongooseModel;leg_q",
+                "su.terrafirmagreg.core.common.entity.animals.tfcmongoose.TFCMongooseModel;leg_w"
+            ]
+        }
+    ],
+
+    "variantMethod" : "xaero.hud.minimap.radar.icon.definition.BuiltInRadarIconDefinitions.getVariant"
+}

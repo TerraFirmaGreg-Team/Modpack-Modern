@@ -4,7 +4,7 @@
 function registerTFGBakeliteMaterials(event) {
 	event.create('tfg:bakelite')
 		.polymer()
-		.fluid()
+		.liquid(new GTFluidBuilder().temperature(430))
 		.color(0xF29104)
 		.secondaryColor(0xD96005)
 		.components('1x phenol', '1x formaldehyde')
@@ -16,7 +16,7 @@ function registerTFGBakeliteMaterials(event) {
 		)
 
 	event.create('tfg:phenolic_resin')
-		.fluid()
+		.liquid(new GTFluidBuilder().temperature(430))
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 		.components('1x phenol', '1x formaldehyde')
 		.color(0xFCD7A3)

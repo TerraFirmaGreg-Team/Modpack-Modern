@@ -5,4 +5,11 @@ displayItemContentsAsImages = true
 #Config for which hiking boots model is used. FANCY for the full 3D model, NO_FLOOF for only toes and VANILLA for the vanilla style model
 #Allowed Values: FANCY, NO_FLOOF, VANILLA
 bootModelType = "FANCY"
+#A list of curio slot identifiers ordered by highest priority to lowest priority. The default config will skip over anything in the back slot (useful when wearing a quiver). Additionally for you pack devs this is the actual curio slot identifier meaning custom slots will Just WorkTM
+openItemContainerCuriosPriorities = ["belt", "back"]
+#The slot highlight color for the lunchbox item contents tooltip in hexadecimal in RGB format (technically ARGB but the alpha value will be ignored)
+lunchboxSelectedSlotHighlightColor = "1bab44"
+#The line thickness in pixels, 0 will effectively disable the highlight 7 will make it fill the whole slot
+#Range: 0 ~ 7
+lunchboxSelectedSlotHighlightThickness = 1
 

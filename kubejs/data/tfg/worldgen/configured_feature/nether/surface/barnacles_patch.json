@@ -1,0 +1,9 @@
+{
+	"type": "tfg:creeping_underwater_plant",
+	"config": {
+		"integrity": 0.6,
+		"block": "tfg:plant/barnacles",
+		"radius": 3,
+		"height": 5
+	}
+}

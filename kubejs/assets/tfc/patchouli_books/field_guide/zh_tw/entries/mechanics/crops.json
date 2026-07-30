@@ -1,0 +1,4213 @@
+{
+	"__comment__": "This file was automatically created by mcresources",
+	"name": "農作物",
+	"category": "tfc:mechanics",
+	"icon": "tfc:textures/item/food/wheat.png",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "農作物是食物與一些材料的來源。雖然每種農作物略有不同，但它們都遵循一些相似的原則。要開始種植作物，你需要一些$(thing)種子$()，透過搜尋$(l:the_world/wild_crops)野生作$()並破壞它們來取得。$(br2)取得種子後還需要一把$(thing)鋤頭$()。種子也可以用作$(l:mechanics/fishing)魚餌$()。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "除了尋找野生作物外，還可以從現有的​​作物中獲得種子。當完全成熟的作物因天氣原因死亡或任其枯萎後就會結籽，留下更多種子，這些種子可以用來在下個季節種植更多作物。"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "目錄",
+			"text": "$(li)$(l:tfc:mechanics/crops#barley)大麥$()\n$(li)$(l:tfc:mechanics/crops#beet)甜菜$()\n$(li)$(l:tfc:mechanics/crops#cabbage)高麗菜$()\n$(li)$(l:tfc:mechanics/crops#canola)油菜$()\n$(li)$(l:tfc:mechanics/crops#carrot)胡蘿蔔$()\n$(li)$(l:tfc:mechanics/crops#cucumber)黄瓜$()\n$(li)$(l:tfc:mechanics/crops#flax)亞麻$()\n$(li)$(l:tfc:mechanics/crops#garlic)大蒜$()\n$(li)$(l:tfc:mechanics/crops#green_bean)四季豆$()\n$(li)$(l:tfc:mechanics/crops#jute)黄麻$()\n$(li)$(l:tfc:mechanics/crops#lentil)扁豆$()\n$(li)$(l:tfc:mechanics/crops#maize)玉米$()\n$(li)$(l:tfc:mechanics/crops#melon)西瓜$()"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(li)$(l:tfc:mechanics/crops#oat)燕麥$()\n$(li)$(l:tfc:mechanics/crops#onion)洋蔥$()\n$(li)$(l:tfc:mechanics/crops#papyrus)紙莎草$()\n$(li)$(l:tfc:mechanics/crops#potato)馬鈴薯$()\n$(li)$(l:tfc:mechanics/crops#pumpkin)南瓜$()\n$(li)$(l:tfc:mechanics/crops#radish)蘿蔔$()\n$(li)$(l:tfc:mechanics/crops#red_bell_pepper)紅甜椒$()\n$(li)$(l:tfc:mechanics/crops#rice)大米$()\n$(li)$(l:tfc:mechanics/crops#rye)黑麥$()\n$(li)$(l:tfc:mechanics/crops#soybean)大豆$()\n$(li)$(l:tfc:mechanics/crops#squash)櫛瓜$()\n$(li)$(l:tfc:mechanics/crops#sugarcane)甘蔗$()\n$(li)$(l:tfc:mechanics/crops#sunflower)向日葵$()\n$(li)$(l:tfc:mechanics/crops#tomatoes)番茄$()\n$(li)$(l:tfc:mechanics/crops#wheat)小麥$()\n$(li)$(l:tfc:mechanics/crops#yellow_bell_pepper)黄甜椒$()"
+		},
+		{
+			"type": "tfc:rock_knapping_recipe",
+			"recipes": [
+				"tfg:rock_knapping/stone_hoe_head_1"
+			],
+			"text": "首先，如上圖$(thing)打製石器$()製作$(thing)石鋤$()。"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "gtceu:shaped/hoe_stone",
+			"text": "鋤頭打製成型後，即可製成鋤頭。$(br2)鋤頭的功能與原版相同，右鍵泥土即可將其變成$(thing)耕地$()。也可以將$(thing)纏根土$()變成$(thing)泥土$()。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "所有作物都需要種植在耕地上才能生長。有些作物還有其他特殊要求，例如需要種在水裡或需要支架才能生長。$(br2)作物生長不一定需要$(thing)養分$()，但養分有助於作物生長。養分主要有三種：$(b)氮$()、$(6)磷$()和$(d)鉀$()。每種作物都有其偏好的養分。",
+			"title": "種植作物"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "作物吸收偏好的養分後會加快生長速度，採收時產量也會提高。這意味著，作物消耗越多養分採收時會掉落更多食物！攝取某種養分也有助於補充少量其他養分。$(br2)接下來的幾頁列出了群巒傳說存在的所有作物"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "barley",
+			"text": "$(bold)$(l:the_world/climate#temperature)温度$()：-8 - 26 °C$(br)$(bold)$(l:mechanics/hydration)濕度$()：18 - 75 %$(br)$(bold)養分$()：氮$(br2)大麥是種一格高的作物。產出$(thing)大麥$()和$(thing)大麥種子$()。",
+			"title": "大麥"
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"text": "",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/barley[age=0]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/barley[age=1]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/barley[age=2]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/barley[age=3]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/barley[age=4]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/barley[age=5]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/barley[age=6]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/barley[age=7]",
+						"Y": "tfc:farmland/loam"
+					}
+				}
+			]
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "oat",
+			"text": "$(bold)$(l:the_world/climate#temperature)温度$()：3 - 40 °C$(br)$(bold)$(l:mechanics/hydration)濕度$()：35 - 100 %$(br)$(bold)養分$()：磷$(br2)燕麥是種一格高的作物。產出$(thing)燕麥$()和$(thing)燕麥種子$()。",
+			"title": "燕麥"
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"text": "",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/oat[age=0]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/oat[age=1]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/oat[age=2]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/oat[age=3]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/oat[age=4]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/oat[age=5]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/oat[age=6]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/oat[age=7]",
+						"Y": "tfc:farmland/loam"
+					}
+				}
+			]
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "rye",
+			"text": "$(bold)$(l:the_world/climate#temperature)温度$()：-11 - 30 °C$(br)$(bold)$(l:mechanics/hydration)濕度$()：25 - 85 %$(br)$(bold)養分$()：磷$(br2)黑麥是種一格高的作物。產出$(thing)黑麥$()和$(thing)黑麥種子$()。",
+			"title": "黑麥"
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"text": "",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/rye[age=0]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/rye[age=1]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/rye[age=2]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/rye[age=3]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/rye[age=4]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/rye[age=5]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/rye[age=6]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/rye[age=7]",
+						"Y": "tfc:farmland/loam"
+					}
+				}
+			]
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "maize",
+			"text": "$(bold)$(l:the_world/climate#temperature)温度$()：13 - 40 °C$(br)$(bold)$(l:mechanics/hydration)濕度$()：75 - 100 %$(br)$(bold)養分$()：磷$(br2)玉米是種兩格高的作物。產出$(thing)玉米$()和$(thing)玉米種子$()。",
+			"title": "玉米"
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"text": "",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "minecraft:air",
+						"Y": "tfc:crop/maize[age=0,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "minecraft:air",
+						"Y": "tfc:crop/maize[age=1,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "minecraft:air",
+						"Y": "tfc:crop/maize[age=2,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/maize[age=3,part=top]",
+						"Y": "tfc:crop/maize[age=3,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/maize[age=4,part=top]",
+						"Y": "tfc:crop/maize[age=4,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/maize[age=5,part=top]",
+						"Y": "tfc:crop/maize[age=5,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				}
+			]
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "wheat",
+			"text": "$(bold)$(l:the_world/climate#temperature)温度$()：-4 - 35 °C$(br)$(bold)$(l:mechanics/hydration)濕度$()：25 - 100 %$(br)$(bold)養分$()：磷$(br2)小麥是種一格高的作物。產出$(thing)小麥$()和$(thing)小麥種子$()。",
+			"title": "小麥"
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"text": "",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/wheat[age=0]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/wheat[age=1]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/wheat[age=2]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/wheat[age=3]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/wheat[age=4]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/wheat[age=5]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/wheat[age=6]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/wheat[age=7]",
+						"Y": "tfc:farmland/loam"
+					}
+				}
+			]
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "rice",
+			"text": "$(bold)$(l:the_world/climate#temperature)温度$()：15 - 30 °C$(br)$(bold)$(l:mechanics/hydration)濕度$()：25 - 100 %$(br)$(bold)養分$()：磷$(br2)水稻是種一格高的作物。水稻必須種在浸泡一格淡水的耕地。產出$(thing)水稻$()和$(thing)水稻種子$()。",
+			"title": "水稻"
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"text": "注意：種植水稻種子的方塊必須在$(thing)水中$()。",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/rice[age=0,fluid=water]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/rice[age=1,fluid=water]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/rice[age=2,fluid=water]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/rice[age=3,fluid=water]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/rice[age=4,fluid=water]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/rice[age=5,fluid=water]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/rice[age=6,fluid=water]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/rice[age=7,fluid=water]",
+						"Y": "tfc:farmland/loam"
+					}
+				}
+			]
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "beet",
+			"text": "$(bold)$(l:the_world/climate#temperature)温度$()：-5 - 20 °C$(br)$(bold)$(l:mechanics/hydration)濕度$()：18 - 85 %$(br)$(bold)養分$()：鉀$(br2)甜菜是種一格高的作物。產出$(thing)甜菜$()和$(thing)甜菜種子$()。",
+			"title": "甜菜"
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"text": "",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/beet[age=0]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/beet[age=1]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/beet[age=2]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/beet[age=3]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/beet[age=4]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/beet[age=5]",
+						"Y": "tfc:farmland/loam"
+					}
+				}
+			]
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "cabbage",
+			"text": "$(bold)$(l:the_world/climate#temperature)温度$()：-10 - 27 °C$(br)$(bold)$(l:mechanics/hydration)濕度$()：15 - 65 %$(br)$(bold)養分$()：氮$(br2)高麗菜是種一格高的作物。產出$(thing)高麗菜$()和$(thing)高麗菜種子$()。",
+			"title": "高麗菜"
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"text": "",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/cabbage[age=0]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/cabbage[age=1]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/cabbage[age=2]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/cabbage[age=3]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/cabbage[age=4]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/cabbage[age=5]",
+						"Y": "tfc:farmland/loam"
+					}
+				}
+			]
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "carrot",
+			"text": "$(bold)$(l:the_world/climate#temperature)温度$()：3 - 30 °C$(br)$(bold)$(l:mechanics/hydration)濕度$()：25 - 100 %$(br)$(bold)養分$()：鉀$(br2)胡蘿蔔是種一格高的作物。產出$(thing)胡蘿蔔$()和$(thing)胡蘿蔔種子$()。",
+			"title": "胡蘿蔔"
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"text": "",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/carrot[age=0]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/carrot[age=1]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/carrot[age=2]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/carrot[age=3]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/carrot[age=4]",
+						"Y": "tfc:farmland/loam"
+					}
+				}
+			]
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "garlic",
+			"text": "$(bold)$(l:the_world/climate#temperature)温度$()：-8 - 26 °C$(br)$(bold)$(l:mechanics/hydration)濕度$()：18 - 75 %$(br)$(bold)養分$()：氮$(br2)大蒜是種一格高的作物。產出$(thing)大蒜$()和$(thing)大蒜種子$()。",
+			"title": "大蒜"
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"text": "",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/garlic[age=0]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/garlic[age=1]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/garlic[age=2]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/garlic[age=3]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/garlic[age=4]",
+						"Y": "tfc:farmland/loam"
+					}
+				}
+			]
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "green_bean",
+			"text": "$(bold)$(l:the_world/climate#temperature)溫度$()：2 - 35 °C$(br)$(bold)$(l:mechanics/hydration)濕度$()：38 - 100 %$(br)$(bold)養分$()：氮$(br2)四季豆是種會攀爬的作物。有木棍時會長到兩格高，並產出$(thing)四季豆$()和$(thing)四季豆種子$()。\n",
+			"title": "四季豆"
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"text": "需要插根木棍作物才會成熟",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/green_bean[age=0,part=top,stick=true]",
+						"Y": "tfc:crop/green_bean[age=0,part=bottom,stick=true]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/green_bean[age=1,part=top,stick=true]",
+						"Y": "tfc:crop/green_bean[age=1,part=bottom,stick=true]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/green_bean[age=2,part=top,stick=true]",
+						"Y": "tfc:crop/green_bean[age=2,part=bottom,stick=true]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/green_bean[age=3,part=top,stick=true]",
+						"Y": "tfc:crop/green_bean[age=3,part=bottom,stick=true]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/green_bean[age=4,part=top,stick=true]",
+						"Y": "tfc:crop/green_bean[age=4,part=bottom,stick=true]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/green_bean[age=5,part=top,stick=true]",
+						"Y": "tfc:crop/green_bean[age=5,part=bottom,stick=true]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/green_bean[age=6,part=top,stick=true]",
+						"Y": "tfc:crop/green_bean[age=6,part=bottom,stick=true]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/green_bean[age=7,part=top,stick=true]",
+						"Y": "tfc:crop/green_bean[age=7,part=bottom,stick=true]",
+						"Z": "tfc:farmland/loam"
+					}
+				}
+			]
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "potato",
+			"text": "$(bold)$(l:the_world/climate#temperature)溫度$()：-1 - 37 °C$(br)$(bold)$(l:mechanics/hydration)濕度$()：50 - 100 %$(br)$(bold)養分$()：鉀$(br2)馬鈴薯是種一格高的作物。馬鈴薯種子可以種植在耕地上，並產出$(thing)馬鈴薯$()和$(thing)馬鈴薯種子$()。\n",
+			"title": "馬鈴薯"
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"text": "",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/potato[age=0]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/potato[age=1]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/potato[age=2]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/potato[age=3]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/potato[age=4]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/potato[age=5]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/potato[age=6]",
+						"Y": "tfc:farmland/loam"
+					}
+				}
+			]
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "pumpkin",
+			"text": "$(bold)$(l:the_world/climate#temperature)溫度$()：0 - 30 °C$(br)$(bold)$(l:mechanics/hydration)濕度$()：30 - 80 %$(br)$(bold)養分$()：磷$(br2)南瓜是種會蔓延的作物。成熟時會在周圍地面放置最多兩個$(thing)南瓜$()。成熟的南瓜梗會不斷長出南瓜。南瓜能做成$(l:mechanics/lighting#jack_o_lanterns)南瓜燈$()。\n",
+			"title": "南瓜"
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"text": "",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"   ",
+							" CP",
+							"   "
+						],
+						[
+							"GGG",
+							"G0G",
+							"GGG"
+						]
+					],
+					"mapping": {
+						"G": "tfc:farmland/loam",
+						"0": "tfc:farmland/loam",
+						"C": "tfc:crop/pumpkin[age=0]",
+						"P": "minecraft:air"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"   ",
+							" CP",
+							"   "
+						],
+						[
+							"GGG",
+							"G0G",
+							"GGG"
+						]
+					],
+					"mapping": {
+						"G": "tfc:farmland/loam",
+						"0": "tfc:farmland/loam",
+						"C": "tfc:crop/pumpkin[age=1]",
+						"P": "minecraft:air"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"   ",
+							" CP",
+							"   "
+						],
+						[
+							"GGG",
+							"G0G",
+							"GGG"
+						]
+					],
+					"mapping": {
+						"G": "tfc:farmland/loam",
+						"0": "tfc:farmland/loam",
+						"C": "tfc:crop/pumpkin[age=2]",
+						"P": "minecraft:air"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"   ",
+							" CP",
+							"   "
+						],
+						[
+							"GGG",
+							"G0G",
+							"GGG"
+						]
+					],
+					"mapping": {
+						"G": "tfc:farmland/loam",
+						"0": "tfc:farmland/loam",
+						"C": "tfc:crop/pumpkin[age=3]",
+						"P": "minecraft:air"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"   ",
+							" CP",
+							"   "
+						],
+						[
+							"GGG",
+							"G0G",
+							"GGG"
+						]
+					],
+					"mapping": {
+						"G": "tfc:farmland/loam",
+						"0": "tfc:farmland/loam",
+						"C": "tfc:crop/pumpkin[age=4]",
+						"P": "minecraft:air"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"   ",
+							" CP",
+							"   "
+						],
+						[
+							"GGG",
+							"G0G",
+							"GGG"
+						]
+					],
+					"mapping": {
+						"G": "tfc:farmland/loam",
+						"0": "tfc:farmland/loam",
+						"C": "tfc:crop/pumpkin[age=5]",
+						"P": "minecraft:air"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"   ",
+							" CP",
+							"   "
+						],
+						[
+							"GGG",
+							"G0G",
+							"GGG"
+						]
+					],
+					"mapping": {
+						"G": "tfc:farmland/loam",
+						"0": "tfc:farmland/loam",
+						"C": "tfc:crop/pumpkin[age=6]",
+						"P": "minecraft:air"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"   ",
+							" CP",
+							"   "
+						],
+						[
+							"GGG",
+							"G0G",
+							"GGG"
+						]
+					],
+					"mapping": {
+						"G": "tfc:farmland/loam",
+						"0": "tfc:farmland/loam",
+						"C": "tfc:crop/pumpkin[age=7]",
+						"P": "tfc:pumpkin"
+					}
+				}
+			]
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "melon",
+			"text": "$(bold)$(l:the_world/climate#temperature)溫度$()：5 - 37 °C$(br)$(bold)$(l:mechanics/hydration)濕度$()：75 - 100 %$(br)$(bold)養分$()：磷$(br2)西瓜是種會蔓延的作物。成熟時會在周圍地面放置最多兩個$(thing)西瓜$()。成熟的西瓜梗會不斷長出西瓜。",
+			"title": "西瓜"
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"text": "",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"   ",
+							" CP",
+							"   "
+						],
+						[
+							"GGG",
+							"G0G",
+							"GGG"
+						]
+					],
+					"mapping": {
+						"G": "tfc:farmland/loam",
+						"0": "tfc:farmland/loam",
+						"C": "tfc:crop/melon[age=0]",
+						"P": "minecraft:air"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"   ",
+							" CP",
+							"   "
+						],
+						[
+							"GGG",
+							"G0G",
+							"GGG"
+						]
+					],
+					"mapping": {
+						"G": "tfc:farmland/loam",
+						"0": "tfc:farmland/loam",
+						"C": "tfc:crop/melon[age=1]",
+						"P": "minecraft:air"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"   ",
+							" CP",
+							"   "
+						],
+						[
+							"GGG",
+							"G0G",
+							"GGG"
+						]
+					],
+					"mapping": {
+						"G": "tfc:farmland/loam",
+						"0": "tfc:farmland/loam",
+						"C": "tfc:crop/melon[age=2]",
+						"P": "minecraft:air"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"   ",
+							" CP",
+							"   "
+						],
+						[
+							"GGG",
+							"G0G",
+							"GGG"
+						]
+					],
+					"mapping": {
+						"G": "tfc:farmland/loam",
+						"0": "tfc:farmland/loam",
+						"C": "tfc:crop/melon[age=3]",
+						"P": "minecraft:air"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"   ",
+							" CP",
+							"   "
+						],
+						[
+							"GGG",
+							"G0G",
+							"GGG"
+						]
+					],
+					"mapping": {
+						"G": "tfc:farmland/loam",
+						"0": "tfc:farmland/loam",
+						"C": "tfc:crop/melon[age=4]",
+						"P": "minecraft:air"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"   ",
+							" CP",
+							"   "
+						],
+						[
+							"GGG",
+							"G0G",
+							"GGG"
+						]
+					],
+					"mapping": {
+						"G": "tfc:farmland/loam",
+						"0": "tfc:farmland/loam",
+						"C": "tfc:crop/melon[age=5]",
+						"P": "minecraft:air"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"   ",
+							" CP",
+							"   "
+						],
+						[
+							"GGG",
+							"G0G",
+							"GGG"
+						]
+					],
+					"mapping": {
+						"G": "tfc:farmland/loam",
+						"0": "tfc:farmland/loam",
+						"C": "tfc:crop/melon[age=6]",
+						"P": "minecraft:air"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"   ",
+							" CP",
+							"   "
+						],
+						[
+							"GGG",
+							"G0G",
+							"GGG"
+						]
+					],
+					"mapping": {
+						"G": "tfc:farmland/loam",
+						"0": "tfc:farmland/loam",
+						"C": "tfc:crop/melon[age=7]",
+						"P": "tfc:melon"
+					}
+				}
+			]
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "red_bell_pepper",
+			"text": "$(bold)$(l:the_world/climate#temperature)溫度$()：16 - 30 °C$(br)$(bold)$(l:mechanics/hydration)濕度$()：25 - 60 %$(br)$(bold)養分$()：鉀$(br2)紅椒是種可重複採摘的作物。接近成熟 $(item)$(k:key.use)$() 來採收青椒。 $(item)$(k:key.use)$() 採收可以讓植株在未來長出更多彩椒，而不摧毀植株。",
+			"title": "紅椒"
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"text": "",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/red_bell_pepper[age=0]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/red_bell_pepper[age=1]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/red_bell_pepper[age=2]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/red_bell_pepper[age=3]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/red_bell_pepper[age=4]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/red_bell_pepper[age=5]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/red_bell_pepper[age=6]",
+						"Y": "tfc:farmland/loam"
+					}
+				}
+			]
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "yellow_bell_pepper",
+			"text": "$(bold)$(l:the_world/climate#temperature)溫度$()：16 - 30 °C$(br)$(bold)$(l:mechanics/hydration)濕度$()：25 - 60 %$(br)$(bold)養分$()：鉀$(br2)黃椒是種可重複採摘的作物。接近成熟時 $(item)$(k:key.use)$() 來採收青椒。 $(item)$(k:key.use)$() 採收可以讓植株在未來長出更多彩椒，而不摧毀植株。",
+			"title": "黃甜椒"
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"text": "",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/yellow_bell_pepper[age=0]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/yellow_bell_pepper[age=1]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/yellow_bell_pepper[age=2]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/yellow_bell_pepper[age=3]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/yellow_bell_pepper[age=4]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/yellow_bell_pepper[age=5]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/yellow_bell_pepper[age=6]",
+						"Y": "tfc:farmland/loam"
+					}
+				}
+			]
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "onion",
+			"text": "$(bold)$(l:the_world/climate#temperature)温度$()：0 - 30 °C$(br)$(bold)$(l:mechanics/hydration)濕度$()：25 - 90 %$(br)$(bold)養分$()：氮$(br2)洋蔥是種一格高的農作物。種植洋蔥會產出$(thing)洋蔥$()和$(thing)洋蔥種子$()。",
+			"title": "洋蔥"
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"text": "",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/onion[age=0]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/onion[age=1]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/onion[age=2]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/onion[age=3]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/onion[age=4]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/onion[age=5]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/onion[age=6]",
+						"Y": "tfc:farmland/loam"
+					}
+				}
+			]
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "soybean",
+			"text": "$(bold)$(l:the_world/climate#temperature)温度$()：8 - 30 °C$(br)$(bold)$(l:mechanics/hydration)濕度$()：40 - 100 %$(br)$(bold)養分$()：氮$(br2)大豆是種一格高的農作物。種植大豆會產出$(thing)大豆$()和$(thing)大豆種子$()。",
+			"title": "大豆"
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"text": "",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/soybean[age=0]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/soybean[age=1]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/soybean[age=2]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/soybean[age=3]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/soybean[age=4]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/soybean[age=5]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/soybean[age=6]",
+						"Y": "tfc:farmland/loam"
+					}
+				}
+			]
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "squash",
+			"text": "$(bold)$(l:the_world/climate#temperature)温度$()：5 - 33 °C$(br)$(bold)$(l:mechanics/hydration)濕度$()：23 - 95 %$(br)$(bold)養分$()：鉀$(br2)櫛瓜是種一格高的農作物。種植櫛瓜會產出$(thing)櫛瓜$()和$(thing)櫛瓜種子$()。",
+			"title": "櫛瓜"
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"text": "",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/squash[age=0]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/squash[age=1]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/squash[age=2]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/squash[age=3]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/squash[age=4]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/squash[age=5]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/squash[age=6]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/squash[age=7]",
+						"Y": "tfc:farmland/loam"
+					}
+				}
+			]
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "sugarcane",
+			"text": "$(bold)$(l:the_world/climate#temperature)溫度$()：12 - 38 °C$(br)$(bold)$(l:mechanics/hydration)濕度$()：40 - 100 %$(br)$(bold)養分$()：鉀$(br2)甘蔗是種會長到兩格高的作物。產出$(thing)甘蔗$()和$(thing)甘蔗種子$()。甘蔗能做成$(thing)糖$()。",
+			"title": "甘蔗"
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"text": "",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "minecraft:air",
+						"Y": "tfc:crop/sugarcane[age=0,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "minecraft:air",
+						"Y": "tfc:crop/sugarcane[age=1,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "minecraft:air",
+						"Y": "tfc:crop/sugarcane[age=2,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "minecraft:air",
+						"Y": "tfc:crop/sugarcane[age=3,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/sugarcane[age=4,part=top]",
+						"Y": "tfc:crop/sugarcane[age=4,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/sugarcane[age=5,part=top]",
+						"Y": "tfc:crop/sugarcane[age=5,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/sugarcane[age=6,part=top]",
+						"Y": "tfc:crop/sugarcane[age=6,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/sugarcane[age=7,part=top]",
+						"Y": "tfc:crop/sugarcane[age=7,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				}
+			]
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "tomatoes",
+			"text": "$(bold)$(l:the_world/climate#temperature)溫度$()：0 - 36 °C$(br)$(bold)$(l:mechanics/hydration)濕度$()：30 - 95 %$(br)$(bold)養分$()：鉀$(br2)番茄是種會攀爬的作物。有木棍時會長到兩格高，並產出$(thing)番茄$()和$(thing)番茄種子$()。",
+			"title": "番茄"
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"text": "需要插根木棍作物才會成熟",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/tomato[age=0,part=top,stick=true]",
+						"Y": "tfc:crop/tomato[age=0,part=bottom,stick=true]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/tomato[age=1,part=top,stick=true]",
+						"Y": "tfc:crop/tomato[age=1,part=bottom,stick=true]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/tomato[age=2,part=top,stick=true]",
+						"Y": "tfc:crop/tomato[age=2,part=bottom,stick=true]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/tomato[age=3,part=top,stick=true]",
+						"Y": "tfc:crop/tomato[age=3,part=bottom,stick=true]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/tomato[age=4,part=top,stick=true]",
+						"Y": "tfc:crop/tomato[age=4,part=bottom,stick=true]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/tomato[age=5,part=top,stick=true]",
+						"Y": "tfc:crop/tomato[age=5,part=bottom,stick=true]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/tomato[age=6,part=top,stick=true]",
+						"Y": "tfc:crop/tomato[age=6,part=bottom,stick=true]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/tomato[age=7,part=top,stick=true]",
+						"Y": "tfc:crop/tomato[age=7,part=bottom,stick=true]",
+						"Z": "tfc:farmland/loam"
+					}
+				}
+			]
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "jute",
+			"text": "$(bold)$(l:the_world/climate#temperature)溫度$()：5 - 37 °C$(br)$(bold)$(l:mechanics/hydration)濕度$()：25 - 100 %$(br)$(bold)養分$()：鉀$(br2)黃麻是種會長到兩格高的作物。產出$(thing)黃麻$()和$(thing)黃麻種子$()。\n",
+			"title": "黃麻"
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"text": "",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "minecraft:air",
+						"Y": "tfc:crop/jute[age=0,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "minecraft:air",
+						"Y": "tfc:crop/jute[age=1,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "minecraft:air",
+						"Y": "tfc:crop/jute[age=2,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/jute[age=3,part=top]",
+						"Y": "tfc:crop/jute[age=3,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/jute[age=4,part=top]",
+						"Y": "tfc:crop/jute[age=4,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/jute[age=5,part=top]",
+						"Y": "tfc:crop/jute[age=5,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				}
+			]
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "papyrus",
+			"text": "$(bold)$(l:the_world/climate#temperature)溫度$()：19 - 37 °C$(br)$(bold)$(l:mechanics/hydration)濕度$()：70 - 100 %$(br)$(bold)養分$()：鉀$(br2)紙莎草是種會長到兩格高的作物。產出$(l:mechanics/papermaking)紙莎草$()和$(thing)紙莎草種子$()。\n",
+			"title": "紙莎草"
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"text": "",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "minecraft:air",
+						"Y": "tfc:crop/papyrus[age=0,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "minecraft:air",
+						"Y": "tfc:crop/papyrus[age=1,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "minecraft:air",
+						"Y": "tfc:crop/papyrus[age=2,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/papyrus[age=3,part=top]",
+						"Y": "tfc:crop/papyrus[age=3,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/papyrus[age=4,part=top]",
+						"Y": "tfc:crop/papyrus[age=4,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/papyrus[age=5,part=top]",
+						"Y": "tfc:crop/papyrus[age=5,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				}
+			]
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "sunflower",
+			"text": "$(bold)$(l:the_world/climate#temperature)溫度$()：5 - 40 °C$(br)$(bold)$(l:mechanics/hydration)濕度$()：20 - 80 %$(br)$(bold)養分$()：氮$(br2)向日葵是種會長到兩格高的作物。產出$(item)葵花盤$()可加工成$(thing)葵花油$()。葵花油既能當作燈具燃料，後期也能做成$(thing)生質柴油$()。$(br)在$(l:firmalife/beekeeping)養蜂$()系統，向日葵也被視為花朵。",
+			"title": "向日葵"
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "minecraft:air",
+						"Y": "tfg:sunflower[age=0,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "minecraft:air",
+						"Y": "tfg:sunflower[age=1,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "minecraft:air",
+						"Y": "tfg:sunflower[age=2,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "minecraft:air",
+						"Y": "tfg:sunflower[age=3,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfg:sunflower[age=4,part=top]",
+						"Y": "tfg:sunflower[age=4,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfg:sunflower[age=5,part=top]",
+						"Y": "tfg:sunflower[age=5,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfg:sunflower[age=6,part=top]",
+						"Y": "tfg:sunflower[age=6,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				}
+			],
+			"text": "$(thing)野生向日葵$()生長在溫度 5 至 40°C、降雨量 100 至 450mm 的環境。它們的種子可以烤來吃！"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "canola",
+			"text": "$(bold)$(l:the_world/climate#temperature)溫度$()：-5 - 25 °C$(br)$(bold)$(l:mechanics/hydration)濕度$()：10 - 60 %$(br)$(bold)養分$()：磷$(br2)油菜是種會長到兩格高的作物。產出$(item)油菜籽$()可加工成$(thing)菜籽油$()。菜籽油既能當作燈具燃料，後期也能做成$(thing)生質柴油$()。$(br)在$(l:firmalife/beekeeping)養蜂$()系統，油菜也被視為花朵。\n",
+			"title": "油菜"
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "minecraft:air",
+						"Y": "tfg:rapeseed[age=0,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "minecraft:air",
+						"Y": "tfg:rapeseed[age=1,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "minecraft:air",
+						"Y": "tfg:rapeseed[age=2,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfg:rapeseed[age=3,part=top]",
+						"Y": "tfg:rapeseed[age=3,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfg:rapeseed[age=4,part=top]",
+						"Y": "tfg:rapeseed[age=4,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfg:rapeseed[age=5,part=top]",
+						"Y": "tfg:rapeseed[age=5,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfg:rapeseed[age=6,part=top]",
+						"Y": "tfg:rapeseed[age=6,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				}
+			],
+			"text": "$(thing)野生油菜$()也稱為$(thing)油菜籽$()，生長在 -7°C 到 25°C的溫度區間與 50 到 350毫米的降雨環境。",
+			"enable_visualize": false
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "flax",
+			"text": "$(bold)$(l:the_world/climate#temperature)溫度$()：-8°C - 25°C$(br)$(bold)$(l:mechanics/hydration)濕度$()：15 - 65 %$(br)$(bold)養分$()：氮$(br2)亞麻是種兩格高的農作物。亞麻種子可種在耕地，能生長到兩格高，產出用於加工的$(item)亞麻莖桿$()，可用於製作$(thing)亞麻布$()或$(thing)粗麻布$()。$(br)$(l:firmalife/beekeeping)養蜂$()系统，視亞麻為有效花源。",
+			"title": "亞麻"
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "minecraft:air",
+						"Y": "tfg:flax[age=0,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "minecraft:air",
+						"Y": "tfg:flax[age=1,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "minecraft:air",
+						"Y": "tfg:flax[age=2,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "minecraft:air",
+						"Y": "tfg:flax[age=3,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfg:flax[age=4,part=top]",
+						"Y": "tfg:flax[age=4,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfg:flax[age=5,part=top]",
+						"Y": "tfg:flax[age=5,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfg:flax[age=6,part=top]",
+						"Y": "tfg:flax[age=6,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				}
+			],
+			"text": "$(thing)野生亞麻$()生長在 -5°C 到 23°C 的溫度區間與 175 至 475毫米 的降雨環境。"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "cucumber",
+			"text": "$(bold)$(l:the_world/climate#temperature)溫度$(): 5 - 40 °C$(br)$(bold)$(l:mechanics/hydration)濕度$(): 70 - 100 %$(br)$(bold)養分$(): 氮$(br2)黃瓜是種兩格高的農作物。黄瓜種子可種在耕地，能生長到兩格高，產出作為$(thing)蔬菜$()$(item)的黄瓜$()。$(br)$(bold)種植黃瓜需要插根木棍才能完全成熟。$()",
+			"title": "黄瓜"
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "minecraft:air",
+						"Y": "tfg:cucumber[age=0,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "minecraft:air",
+						"Y": "tfg:cucumber[age=1,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfg:cucumber[age=2,part=top]",
+						"Y": "tfg:cucumber[age=2,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfg:cucumber[age=3,part=top]",
+						"Y": "tfg:cucumber[age=3,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfg:cucumber[age=4,part=top]",
+						"Y": "tfg:cucumber[age=4,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfg:cucumber[age=5,part=top]",
+						"Y": "tfg:cucumber[age=5,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				}
+			],
+			"text": "$(thing)野生黄瓜$()生長在 15°C 至 40°C的溫度區間與 0 到 150 毫米的降雨環境。",
+			"enable_visualize": false
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "radish",
+			"title": "菜頭",
+			"text": "$(bold)$(l:the_world/climate#temperature)溫度$(): -20 - 20 °C$(br)$(bold)$(l:mechanics/hydration)濕度$(): 15 - 65 %$(br)$(bold)養分$(): 鉀$(br2)蘿蔔作為$(thing)蔬菜$()食用。若要在寒冷的地方生存，蘿蔔是不錯的選擇。"
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:radish[age=0]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:radish[age=1]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:radish[age=2]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:radish[age=3]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:radish[age=4]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:radish[age=5]",
+						"Z": "tfc:farmland/loam"
+					}
+				}
+			],
+			"text": "$(thing)野生蘿蔔$()生長在 -16°C 至 4°C的溫度區間與 75 到 325 毫米的降雨環境。",
+			"enable_visualize": false
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "lentil",
+			"title": "扁豆",
+			"text": "$(bold)$(l:the_world/climate#temperature)溫度$(): -20 - 18 °C$(br)$(bold)$(l:mechanics/hydration)濕度$(): 50 - 100 %$(br)$(bold)養分$(): 磷$(br2)扁豆作為$(thing)蔬菜$()食用，建議先煮熟。在寒冷氣候地區，扁豆是另一種不錯的作物。"
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:lentil[age=0]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:lentil[age=1]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:lentil[age=2]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:lentil[age=3]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:lentil[age=4]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:lentil[age=5]",
+						"Z": "tfc:farmland/loam"
+					}
+				}
+			],
+			"text": "$(thing)野生扁豆$()生長在 -18°C 至 2°C的溫度區間與 250 到 425 毫米的降雨環境。",
+			"enable_visualize": false
+		}
+	],
+	"read_by_default": true,
+	"extra_recipe_mappings": {
+		"tfc:seeds/barley": 8,
+		"tfc:food/barley": 8,
+		"tfc:seeds/oat": 10,
+		"tfc:food/oat": 10,
+		"tfc:seeds/rye": 12,
+		"tfc:food/rye": 12,
+		"tfc:seeds/maize": 14,
+		"tfc:food/maize": 14,
+		"tfc:seeds/wheat": 16,
+		"tfc:food/wheat": 16,
+		"tfc:seeds/rice": 18,
+		"tfc:food/rice": 18,
+		"tfc:seeds/beet": 20,
+		"tfc:food/beet": 20,
+		"tfc:seeds/cabbage": 22,
+		"tfc:food/cabbage": 22,
+		"tfc:seeds/carrot": 24,
+		"tfc:food/carrot": 24,
+		"tfc:seeds/garlic": 26,
+		"tfc:food/garlic": 26,
+		"tfc:seeds/green_bean": 28,
+		"tfc:food/green_bean": 28,
+		"tfc:seeds/potato": 30,
+		"tfc:food/potato": 30,
+		"tfc:seeds/pumpkin": 32,
+		"tfc:seeds/melon": 34,
+		"tfc:seeds/red_bell_pepper": 36,
+		"tfc:seeds/yellow_bell_pepper": 38,
+		"tfc:seeds/onion": 40,
+		"tfc:food/onion": 40,
+		"tfc:seeds/soybean": 42,
+		"tfc:food/soybean": 42,
+		"tfc:seeds/squash": 44,
+		"tfc:food/squash": 44,
+		"tfc:seeds/sugarcane": 46,
+		"tfc:food/sugarcane": 46,
+		"tfc:seeds/tomato": 48,
+		"tfc:food/tomato": 48,
+		"tfc:seeds/jute": 50,
+		"tfc:jute": 50,
+		"tfc:seeds/papyrus": 52,
+		"tfc:papyrus": 52,
+		"tfg:sunflower_seeds": 54,
+		"tfg:sunflower_product": 54,
+		"tfg:rapeseed_seeds": 56,
+		"tfg:rapeseed_product": 56,
+		"tfg:flax_seeds": 58,
+		"tfg:flax_product": 58,
+		"tfg:cucumber_seeds": 60,
+		"tfg:cucumber_product": 60,
+		"tfg:radish_seeds": 62,
+		"tfg:radish_product": 62,
+		"tfg:lentil_seeds": 64,
+		"tfg:lentil_product": 64
+	}
+}

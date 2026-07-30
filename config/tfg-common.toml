@@ -5,3 +5,8 @@
 	#Should be tfc ambiental compat enabled?
 	tfcAmbientalCompat = true
 
+[worldSpawn]
+	#ID of the custom spawn conditions for the next generated world.
+	#Valid ids are: tropical, tundra, polar, default, temperate, desert
+	id = "default"
+

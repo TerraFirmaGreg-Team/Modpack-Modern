@@ -2,7 +2,22 @@
 	"name": "beach",
 	"biomes": [
 		"shore",
-		"tidal_flats"
+		"tidal_flats",
+		"coastal_dunes",
+		"guano_island",
+		"sea_stacks",
+		"setback_cliffs",
+		"ice_sheet_shore",
+		"ice_sheet_oceanic",
+		"ice_sheet_oceanic_mountains",
+		"shield_volcano_shore",
+		"old_shield_volcano_shore",
+		"rocky_shores",
+		"tower_karst_bay",
+		"terrace_lower",
+		"terrace_upper",
+		"sunken_shield_volcano",
+		"embayments"
 	],
 	"sounds": [
 		{

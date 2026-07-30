@@ -40,7 +40,7 @@ function registerTFGRotorMaterials(event) {
 	// Material for Inconel Line at HV
 
 	event.create('tfg:inert_furnace_atmosphere')
-		.gas(new GTFluidBuilder().state(GTFluidState.GAS).temperature(3730))
+		.gas(new GTFluidBuilder().state(GTFluidState.GAS).temperature(2426))
 		.components('2x nitrogen', '1x argon', '1x hydrogen')
 		.color(0xB8B6AD)
 		.secondaryColor(0x9A8C62)

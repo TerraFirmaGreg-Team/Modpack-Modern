@@ -1,0 +1,24 @@
+{
+    "feature": "tfg:earth/volcano/volcano_smoke",
+    "placement": [
+        {
+            "center": true,
+            "type": "tfg:cinder_cone"
+        },
+        {
+            "type": "minecraft:random_offset",
+            "xz_spread": {
+                "type": "minecraft:uniform",
+                "value": {
+                    "min_inclusive": -2,
+                    "max_inclusive": 2
+                }
+            },
+            "y_spread": 0
+        },
+        {
+            "type": "minecraft:heightmap",
+            "heightmap": "OCEAN_FLOOR"
+        }
+    ]
+}

@@ -1,0 +1,37 @@
+{
+	"feature": "realmrpg_skeletons:snow_skeletons",
+	"placement": [
+		{
+			"type": "tfc:climate",
+			"max_temperature": -12
+		},
+		{
+			"type": "minecraft:count",
+			"count": {
+				"type": "uniform",
+				"value": {
+					"min_inclusive": 3,
+					"max_inclusive": 5
+				}
+			}
+		},
+		{
+			"type": "minecraft:in_square"
+		},
+		{
+			"type": "minecraft:height_range",
+			"height": {
+				"type": "minecraft:uniform",
+				"min_inclusive": {
+					"absolute": 55
+				},
+				"max_inclusive": {
+					"below_top": 5
+				}
+			}
+		},
+		{
+			"type": "minecraft:biome"
+		}
+	]
+}

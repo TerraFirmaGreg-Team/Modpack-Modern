@@ -2,17 +2,6 @@
 
 const registerEndermanOverhaulItemTags = (event) => {
 
-	const DISABLED_ITEMS = [
-		'endermanoverhaul:corrupted_blade',
-
-		'endermanoverhaul:bubble_pearl',
-		'endermanoverhaul:icy_pearl'
-	]
-
-	DISABLED_ITEMS.forEach(item => {
-		event.removeAllTagsFrom(item)
-		event.add('c:hidden_from_recipe_viewers', item)
-	})
 }
 
 

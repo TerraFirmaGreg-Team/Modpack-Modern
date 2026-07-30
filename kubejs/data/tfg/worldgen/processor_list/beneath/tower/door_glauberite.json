@@ -1,0 +1,21 @@
+{
+	"processors": [
+		{
+			"processor_type": "lithostitched:block_swap",
+			"blocks": {
+                "minecraft:purpur_pillar": "tfg:rock/polished_glauberite",
+				"minecraft:purpur_block": "tfg:rock/bricks_glauberite",
+                "minecraft:purpur_slab": "tfg:rock/bricks_glauberite_slab",
+				"minecraft:chiseled_quartz_block": "tfg:rock/polished_glauberite",
+				"tfc:rock/bricks/quartzite": "tfg:rock/bricks_glauberite",
+				"tfc:rock/bricks/quartzite_slab": "tfg:rock/bricks_glauberite_slab",
+				"minecraft:cut_red_sandstone": "tfg:rock/polished_glauberite",
+				"minecraft:smooth_red_sandstone": "tfg:rock/bricks_glauberite",
+				"minecraft:smooth_red_sandstone_slab": "tfg:rock/bricks_glauberite_slab",
+                "gtceu:certus_quartz_block": "tfg:rock/chiseled_glauberite",
+                "createdeco:corner_red_bricks": "tfg:rock/chiseled_glauberite",
+				"minecraft:mud_brick_wall": "minecraft:cobbled_deepslate_wall"
+			}
+		}
+	]
+}

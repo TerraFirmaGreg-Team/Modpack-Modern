@@ -1,0 +1,6 @@
+{
+    "name": "Minerales en TFG",
+    "description": "TFG tiene su propio sistema de generación de minerales, similar al de TFC, con vetas grandes pero poco comunes, pero con varios minerales por veta. Esta categoría lista todos los tipos de vetas y dónde encontrarlas.$(br2)Las vetas se nombran según su mineral predominante, pero la mayoría contienen entre 3 y 5 minerales.$(br2)Ver también: $(l:the_world/geology)Geología$(), $(l:getting_started/finding_ores)Indicadores$()",
+    "icon": "tfc:ore/pyrite",
+    "sortnum": 60
+}

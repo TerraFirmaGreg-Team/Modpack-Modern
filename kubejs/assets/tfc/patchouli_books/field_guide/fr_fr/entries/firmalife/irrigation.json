@@ -1,0 +1,28 @@
+{
+	"name": "Irrigation",
+	"category": "tfc:firmalife",
+	"icon": "firmalife:sprinkler",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "L'$(thing)arroseur$() est un appareil qui asperge de l'eau dans une zone de 5x6x5 centrée sur le bloc situé en dessous du bloc d'arrosage. Vous savez qu'il fonctionne quand il dégage des particules d'eau. Les arroseurs placés vers le haut irriguent la même surface 5x6x5 au-dessus."
+		},
+		{
+			"type": "tfc:anvil_recipe",
+			"recipe": "firmalife:anvil/sprinkler",
+			"text": "L'arroseur est fabriqué avec une $(thing)plaque de cuivre$()."
+		},
+		{
+			"title": "Canalisation",
+			"item": "gtceu:copper_tiny_fluid_pipe",
+			"type": "patchouli:spotlight",
+			"text": "Les arroseurs doivent être raccordés à un système de tuyaux qui les alimentent en eau pour pouvoir travailler. Cela se fait en connectant une série de $(thing)Tuyaux de fluides$() à eux. Vous pouvez y pomper de l'eau avec une  $(thing)Pompe mécanique$()."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "You can right-click a pipe with a GregTech Frame (such as a $(thing)Copper Frame$()) to make them flush with the wall, or use a Greenhouse Port. You can then attach your sprinkler directly to the pipe! Right-click fluid pipes with a wrench to change their direction, and sneak-right-click them with an $(thing)empty offhand$() to make them one-way."
+		}
+	],
+	"read_by_default": true,
+	"sortnum": 8
+}

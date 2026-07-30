@@ -1,0 +1,49 @@
+{
+    "name": "Порохові діжки",
+    "category": "tfc:mechanics",
+    "icon": "tfc:powderkeg",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(thing)Порохові діжки$() — це пристрій, який використовується для створення вибухів. Вони мають інвентар на 12 слотів, у яких може зберігатися лише $(thing)порох$(). Сила вибуху пропорційна кількості пороху всередині."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfc:powderkeg[sealed=true]"
+                }
+            },
+            "name": "Порохова діжка",
+            "text": "Подібно до $(l:mechanics/barrels)діжки$(), порохова діжка — це пристрій, який можна закривати та відкривати за допомогою натискання $(item)$(k:key.use)$(). Підпалити можна лише закриту порохову діжку.",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Вибухи порохових діжок змушують інші порохові діжки спалахувати та вибухати. Усі блоки, знищені вибухом, випадуть у вигляді предметів, але не обов'язково на тому самому місці, де вони стояли."
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "tfc:crafting/powderkeg",
+            "text": "Порохову діжку можна пофарбувати, додавши $(l:mechanics/dye)червоний барвник$() та нитку до схеми створення звичайної діжки."
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "tfg:shapeless/gunpowder_tfc_style",
+            "recipe2": "tfg:shapeless/gunpowder_graphite"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Порох можна виготовити двома методами: перший рецепт складається з порошку $(l:the_world/ores_and_minerals#saltpeter)селітри$(), $(l:the_world/ores_and_minerals#saltpeter)сірки$() та $(l:mechanics/charcoal_pit)деревного вугілля$(). Порошок виготовляється за допомогою $(l:mechanics/quern)жорен$(). Якщо у тебе є доступ до $(l:the_world/ores_and_minerals#graphite)графіту$(), то можна використовувати більш продуктивний рецепт."
+        }
+    ],
+    "read_by_default": true
+}

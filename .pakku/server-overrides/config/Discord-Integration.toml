@@ -1,0 +1,375 @@
+# General options for the bot
+[general]
+  # Insert your Bot Token here!
+  # DO NOT SHARE IT WITH ANYONE!
+  botToken = ""
+  # The channel ID where the bot will be working in
+  botChannel = ""
+  # The bots status message
+  # 
+  # PLACEHOLDERS:
+  # %online% - Online Players
+  # %max% - Maximum Player Amount
+  botStatusName = "1.20.x: %online% players"
+  # The bots status message for 1 online player, set to empty to use botStatusName
+  # PLACEHOLDERS:
+  # %online% - Online Players
+  # %max% - Maximum Player Amount
+  botStatusNameSingular = "1.20.x: %online% player online"
+  # The bots status message for no online players, set to empty to use botStatusName
+  # PLACEHOLDERS:
+  # %online% - Online Players
+  # %max% - Maximum Player Amount
+  botStatusNameEmpty = "1.20.x: No-one is online"
+  # Type of the bots status
+  # Allowed Values: DISABLED,PLAYING,WATCHING,LISTENING,STREAMING,COMPETING,CUSTOM
+  botStatusType = "PLAYING"
+  # URL of the bots stream when using the status type 'STREAMING'
+  # Has to start with https://twitch.tv/ or https://www.youtube.com/watch?v=
+  streamingURL = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+  # Enable checking for updates?
+  # Notification will be shown after every server start in log when update is available
+  enableUpdateChecker = false
+  # The minimum release type for the update checker to notify
+  # Allowed values: release, beta, alpha
+  updateCheckerMinimumReleaseType = "beta"
+  # Set to false to disable config migration from other mods/plugins to this one
+  # This does not prevent updating of this config after mod updates
+  allowConfigMigration = true
+  # Set to true to suppress warning of unsafe mod download location
+  ignoreFileSource = false
+  # Set to true to allow relaying webhook messages
+  allowWebhookMessages = false
+  # Set to false to disable automatic config tweaking to fix known issues
+  # Your config file will not be sent anywhere during this
+  # This feature is not implemented yet
+  allowAutomaticBugFixing = true
+# Some settings that can be tweaked to increase compatibility with other mods, if required
+[compatibility]
+  # Disables modifying sent chat messages in-game to show who was pinged. (Will not convert <@1234567890> to @User)
+  # This may fix mods also modifying sent messages
+  disableParsingMentionsIngame = false
+# Configuration options for commands
+[commands]
+  # Toggle the entire command feature
+  # Disabling this will disable registering any commands to discord
+  enabled = false
+  # The Role IDs of your Admin Roles
+  # Now supports multiple roles which can access admin commands
+adminRoleIDs = [  ""  ]
+  # Add your custom commands here
+  # You can also generate some on https://erdbeerbaerlp.de/dcintegration-commands/
+  # Enable the list command in discord
+  listCmdEnabled = false
+  # Show list command only for the user who runs it
+  hideListCmd = false
+  # Enable the uptime command in discord
+  uptimeCmdEnabled = false
+  # Show uptime command only for the user who runs it
+  hideUptimeCmd = false
+  # Enables using local commands for faster registration
+  # Local Commands will register all slash commands directly to the server instead of to the bot
+  # Setting this to true requires the bot to be invited with the scope 'application.commands' to work
+  useLocalCommands = false
+
+    [[commands.customCommands]]
+      name = "kick"
+      description = "Kicks an player from the Server"
+      mcCommand = "kick %player% %reason%"
+      textToSend = ""
+      adminOnly = true
+      hidden = false
+
+        [[commands.customCommands.args]]
+          name = "player"
+          description = "The player to be kicked"
+          optional = false
+
+        [[commands.customCommands.args]]
+          name = "reason"
+          description = "Reason for the kick"
+          optional = true
+
+    [[commands.customCommands]]
+      name = "stop"
+      description = "Stops the server"
+      mcCommand = "stop"
+      textToSend = ""
+      adminOnly = true
+      hidden = false
+args = [    ]
+
+    [[commands.customCommands]]
+      name = "kill"
+      description = "Kills an Player or Entity"
+      mcCommand = "kill %target%"
+      textToSend = ""
+      adminOnly = true
+      hidden = false
+
+        [[commands.customCommands.args]]
+          name = "target"
+          description = "The target(s) for the kill command."
+          optional = false
+# Toggle some message related features
+[messages]
+  # Changing this to an language key (like en-US, de-DE) will always attempt to download the latest language file from https://github.com/ErdbeerbaerLP/Discord-Integration-Translations
+  # Setting to 'local' disables downloading
+  language = "local"
+  # Should /say output be sent to discord?
+  sendOnSayCommand = true
+  # Should /me output be sent to discord?
+  sendOnMeCommand = true
+  # Adding an selector (ex. @a ) here will relay all /tellraw messages sent with that exact same selector to discord.
+  # Leave blank to disable
+  tellrawSelector = ""
+  # When an /say command's message starts with this prefix, it will not be sent to discord
+  # Useful for hiding system messages by prepending it with this
+  sayCommandIgnoredPrefix = "§4§6§k§r"
+  # Should Discord users have their role color in-game?
+  discordRoleColorIngame = true
+  # Should you be able to hover and click on the discord username in-game?
+  enableHoverMessage = true
+  # List of characters that should be removed from usernames and chat messages before sending TO discord
+charBlacklist = [  "࿕", "࿖"  ]
+# Settings for embed mode
+[embedMode]
+  # Enabling this will send configured messages as embed messages
+  # See below configuration options of this category to see what messages can be moved to embeds
+  enabled = false
+
+    # Starting & Started Messages
+    [embedMode.startMessages]
+      # Send as embed?
+      asEmbed = true
+      # Color of embed bar
+      colorHexCode = "#57f287"
+      # Custom embed JSON, will overwrite color setting. For more info, check the documentation at https://github.com/ErdbeerbaerLP/DiscordIntegration-Core/wiki/embed-mode or ask on discord.
+      customJSON = ""
+
+    # Stop & Crash Messages
+    [embedMode.stopMessages]
+      # Send as embed?
+      asEmbed = true
+      # Color of embed bar
+      colorHexCode = "#ed4245"
+      # Custom embed JSON, will overwrite color setting. For more info, check the documentation at https://github.com/ErdbeerbaerLP/DiscordIntegration-Core/wiki/embed-mode or ask on discord.
+      customJSON = ""
+
+    # Player join message
+    [embedMode.playerJoinMessage]
+      # Send as embed?
+      asEmbed = true
+      # Color of embed bar
+      colorHexCode = "#57f287"
+      # Custom embed JSON, will overwrite color setting. For more info, check the documentation at https://github.com/ErdbeerbaerLP/DiscordIntegration-Core/wiki/embed-mode or ask on discord.
+      customJSON = ""
+
+    # Player leave messages
+# Also containing timeouts
+    [embedMode.playerLeaveMessages]
+      # Send as embed?
+      asEmbed = true
+      # Color of embed bar
+      colorHexCode = "#ed4245"
+      # Custom embed JSON, will overwrite color setting. For more info, check the documentation at https://github.com/ErdbeerbaerLP/DiscordIntegration-Core/wiki/embed-mode or ask on discord.
+      customJSON = ""
+
+    # Player Death message
+    [embedMode.deathMessage]
+      # Send as embed?
+      asEmbed = true
+      # Color of embed bar
+      colorHexCode = "#000000"
+      # Custom embed JSON, will overwrite color setting. For more info, check the documentation at https://github.com/ErdbeerbaerLP/DiscordIntegration-Core/wiki/embed-mode or ask on discord.
+      customJSON = ""
+
+    # Advancement messages
+    [embedMode.advancementMessage]
+      # Send as embed?
+      asEmbed = false
+      # Color of embed bar
+      colorHexCode = "#fee75c"
+      # Custom embed JSON, will overwrite color setting. For more info, check the documentation at https://github.com/ErdbeerbaerLP/DiscordIntegration-Core/wiki/embed-mode or ask on discord.
+      customJSON = ""
+
+    # Player chat messages
+    [embedMode.chatMessages]
+      # Generate unique chat colors from player uuid?
+      generateUniqueColors = true
+      # Send as embed?
+      asEmbed = true
+      # Color of embed bar
+      colorHexCode = "#808080"
+      # Custom embed JSON, will overwrite color setting. For more info, check the documentation at https://github.com/ErdbeerbaerLP/DiscordIntegration-Core/wiki/embed-mode or ask on discord.
+      customJSON = ""
+# Advanced options
+[advanced]
+  # Custom channel ID for server specific messages (like Join/leave)
+  # Leave 'default' to use default channel
+  serverChannelID = "default"
+  # Custom channel ID for death messages
+  # Leave 'default' to use default channel
+  deathsChannelID = "default"
+  # Custom channel for for in-game messages
+  # Leave 'default' to use default channel
+  chatOutputChannelID = "default"
+  # Custom channel where messages get sent to minecraft
+  # Leave 'default' to use default channel
+  chatInputChannelID = "default"
+  # Allows you to change the target URL for the API to make it usable with custom discord instances like Spacebar
+  # DO NOT CHANGE if you don't know what you are doing!!
+  baseAPIUrl = "https://discord.com"
+# Config options which usually only have an effect when using forge
+# sendItemInfo was ported to fabric but kept here for config compatibility
+[forgeSpecific]
+  # A list of blacklisted modids
+  # Adding one will prevent the mod to send messages to discord using forges IMC system
+IMC_modIdBlacklist = [  "examplemod"  ]
+  # Show item information, which is visible on hover in-game, as embed in discord?
+  # Ported to fabric but kept here for config compatibility
+  sendItemInfo = true
+# Configuration for linking
+[linking]
+  # Unlink players when they leave the discord server for whatever reason (ex. leave,kick,ban)?
+  unlinkOnLeave = true
+  # Should discord linking be enabled?
+  # If whitelist is on, this can NOT be disabled
+  # DOES NOT WORK IN OFFLINE MODE!
+  enableLinking = true
+  # Set Discord nicknames to match Minecraft usernames when linked
+  shouldNickname = false
+  # Enable global linking?
+  # Does not work in offline mode
+  globalLinking = true
+  # Database interface class
+  # This allows you to change your database implementation
+  # Add database implementations using the addon system
+  # Do not change without knowing what you are doing
+  databaseClass = "de.erdbeerbaerlp.dcintegration.common.storage.linking.database.JSONInterface"
+  # Role ID of an role an player should get when he links his discord account
+  # Leave as 0 to disable
+  linkedRoleID = "0"
+  # Enable discord based whitelist?
+  # This will override the link config!
+  # To whitelist use the whitelist command in the bot DMs
+  # It does NOT override the vanilla whitelist
+  whitelistMode = false
+  # Adding Role IDs here will require the players to have at least ONE of these roles to link account
+requiredRoles = [    ]
+  # Adding setting keys to this array will prevent those settings to be changed
+  # They will still show up in the list though
+settingsBlacklist = [    ]
+
+    # Allows you to configure the default values of some personal settings
+    [linking.personalSettingsDefaults]
+      default_useDiscordNameInChannel = true
+      default_ignoreReactions = false
+      default_pingSound = true
+# Webhook configuration
+[webhook]
+  # Whether or not the bot should use a webhook (it will create one)
+  # This will only work in standard channels
+  enable = true
+  # The avatar to be used for server messages
+  serverAvatarURL = "https://github.com/TerraFirmaGreg-Team/.github/blob/main/branding/logo.png?raw=true"
+  # The name to be used for server messages
+  serverName = "Server-Modern"
+  # Use the server name and avatar for RCON
+  useServerNameForRcon = true
+  # Use the server name and avatar for Console
+  useServerNameForConsole = true
+  # The URL where the player avatar gets fetched from
+  # 
+  # PLACEHOLDERS:
+  # %uuid% - Returns the player's UUID with dashes
+  # %uuid_dashless% - Returns the player's UUID without dashes
+  # %name% - Returns the player's name
+  # %randomUUID% - Returns an random UUID which can be used to prevent discord cache
+  # https://www.tydiumcraft.net/docs/skinapi supports both bedrock(floodgate) and java players
+  # Default - https://api.tydiumcraft.net/v1/players/skin?uuid=%uuid%&type=avatar&randomuuid=%randomUUID%
+  playerAvatarURL = "https://minotar.net/avatar/%name%"
+  webhookName = "Server-Modern"
+# Configuration for the in-game command '/discord'
+[ingameCommand]
+  # Enable the /discord command to show an custom message with invite URL?
+  enabled = false
+  # The message displayed when typing /discord in the server chat
+  message = "Join our discord! https://discord.gg/y4khKF9zjT"
+  # The message shown when hovering the /discord command message
+  hoverMessage = "Click to open the invite url"
+  # The url to open when clicking the /discord command text
+  inviteURL = "https://discord.gg/y4khKF9zjT"
+# The command log channel is an channel where every command execution gets logged
+[commandLog]
+  # Channel ID for the command log channel
+  # Leave 0 to disable
+  channelID = "0"
+  # The format of the log messages
+  # 
+  # PLACEHOLDERS:
+  # %sender% - The name of the Command Source
+  # %cmd% - executed command (e.g. "say Hello World"
+  # %cmd-no-args% - Command without arguments (e.g. "say"
+  message = "%sender% executed command `%cmd%`"
+  # A list of commands that should NOT be logged
+ignoredCommands = [  "list", "help", "?"  ]
+  # Invert the meaning of the ignoredCommands configuration (make it ONLY log those commands)
+  commandWhitelist = false
+# Configure votifier integration here
+# (Spigot only)
+[votifier]
+  # Should votifier messages be sent to discord?
+  enabled = false
+  # Custom channel ID for Votifier messages
+  # Leave 'default' to use default channel
+  votifierChannelID = "default"
+  # The message format of the votifier message
+  # 
+  # PLACEHOLDERS:
+  # %player% - The player´s name
+  # %site% - The name of the vote site
+  # %addr% - (IP) Address of the site
+  message = ":ballot_box: %player% just voted on %site%"
+  # Name of the webhook title
+  name = "Votifier"
+  # URL of the webhook avatar image
+  avatarURL = "https://www.cubecraft.net/attachments/bkjvmqn-png.126824/"
+# Configure Dynmap integration here
+[dynmap]
+  # The message format of the message forwarded to discord
+  # 
+  # PLACEHOLDERS:
+  # %sender% - The sender´s name
+  # %msg% - The Message
+  dcMessage = "<%sender%> %msg%"
+  # Custom channel ID for dynmap chat
+  # Leave 'default' to use default channel
+  dynmapChannelID = "default"
+  # Name of the webhook title
+  name = "Dynmap Web-Chat"
+  # URL of the webhook avatar image
+  avatarURL = "https://static.wikia.nocookie.net/minecraft_gamepedia/images/9/91/Map_Zoom_0.png/revision/latest?cb=20200311153330"
+  # The name format of the message forwarded to the dynmap web-chat
+  # 
+  # PLACEHOLDERS:
+  # %name% - The discord name of the sender (including nickname)
+  # %name#tag% - The discord name with tag of the sender (without nickname)
+  webName = "%name% (discord)"
+  # Name shown in discord when no name was specified on the website
+  unnamed = "Unnamed"
+# Configure some plugin-specific BStats settings here
+# Everything can be seen here: https://bstats.org/plugin/bukkit/DiscordIntegration/9765
+# 
+# Does not apply to fabric yet, as there is no bstats for it
+[bstats]
+  # Allow sending of installed addon stats (Name and version of installed addons)
+  sendAddonStats = false
+# Settings for servers running as Bungeecord-suberver
+[bungee]
+  # Set this to true if the server is running as an subserver of an bungeecord network and therefore needs to be in offline mode
+  # Setting this will force account linking in offline mode
+  # Do NOT use for actual offline mode servers, as this will break the linking feature because of the UUIDs!
+  # 
+  # Currently no support for floodgate running on bungee
+  isBehindBungee = false

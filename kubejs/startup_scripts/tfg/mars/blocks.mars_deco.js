@@ -15,8 +15,6 @@ function registerTFGWorldGenMarsDecoBlocks(event) {
 		.lootItem('beneath:warped_straw')
 	createPlant(event, 'clawfern', 'mars')
 		.box(2, 0, 2, 14, 14, 14)
-	createPlant(event, 'creeping_moss', 'mars')
-		.box(2, 0, 2, 14, 20, 14)
 		.lootItem('beneath:warped_straw')
 	createPlant(event, 'flammalix', 'mars')
 	createPlant(event, 'globulagus', 'mars')
@@ -34,6 +32,7 @@ function registerTFGWorldGenMarsDecoBlocks(event) {
 	createPlant(event, 'small_amaranita_mushroom', 'mars')
 		.box(3, 0, 3, 13, 8, 13)
 	createPlant(event, 'lucernia_outer_leaves', 'mars')
+		.lootItem('beneath:warped_straw')
 	createPlant(event, 'lanceleaf_small', 'mars')
 		.box(4, 0, 4, 12, 8, 12)
 	createPlant(event, 'selagine', 'mars')
@@ -230,7 +229,28 @@ function registerTFGWorldGenMarsDecoBlocks(event) {
 		.texture('particle', 'species:block/alphacene_mushroom_block')
 		.texture('all', 'species:block/alphacene_mushroom_block')
 		.texture('top', 'minecraft:block/mushroom_stem')
-		
+
+	// Decorative saplings
+	
+	function createFakeSapling(name) {
+		event.create(`tfg:fake_sapling/${name}`, 'tfg:decorative_plant')
+			.box(3, 0, 3, 13, 8, 13)
+			.soundType('nether_wart')
+			.renderType('cutout_mipped')
+			.lootItem(`tfg:saplings/${name}`)
+			.tagItem('c:hidden_from_recipe_viewers')
+			.tagBlock('minecraft:replaceable')
+			.tagBlock('tfg:do_not_destroy_in_space')
+			.tagBlock('tfc:can_be_snow_piled')
+	}
+
+	createFakeSapling('aeronos')
+	createFakeSapling('strophar')
+	createFakeSapling('crimson')
+	createFakeSapling('warped')
+	createFakeSapling('alphacene')
+	createFakeSapling('glacian')
+
 	// Misc
 
 	event.create('tfg:spice', 'tfg:particle_emitter')

@@ -1,0 +1,28 @@
+{
+	"name": "Sulama",
+	"category": "tfc:firmalife",
+	"icon": "firmalife:sprinkler",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "$(thing)Fıskiye$(), fıskiye bloğunun altındaki bloğu merkez alan 5x6x5'lik bir alana su serpen bir cihazdır. Su parçacıkları damlatmaya başladığında çalıştığını anlarsınız. Yukarı bakacak şekilde yerleştirilen fıskiyeler, yukarıdaki aynı 5x6x5'lik alanı sularlar."
+		},
+		{
+			"type": "tfc:anvil_recipe",
+			"recipe": "firmalife:anvil/sprinkler",
+			"text": "Fıskiye, bir $(thing)Bakır Plaka$() ile yapılır."
+		},
+		{
+			"title": "Tesisat",
+			"item": "gtceu:copper_tiny_fluid_pipe",
+			"type": "patchouli:spotlight",
+			"text": "Fıskiyelerin çalışabilmesi için onlara su sağlayan bir boru sistemine bağlanması gerekir. Bu işlem, fıskiyelere bir dizi $(thing)Sıvı Borusu$() bağlanarak yapılır. $(thing)Mekanik Pompa$() kullanarak borulara su pompalayabilirsiniz."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Duvara sıfır hale getirmek için bir boruya GregTech Çerçevesi (örneğin bir $(thing)Bakır Çerçeve$()) ile sağ tıklayabilir veya bir Sera Portu kullanabilirsiniz. Ardından fıskiyenizi doğrudan boruya takabilirsiniz! Yönlerini değiştirmek için sıvı borularına İngiliz anahtarı ile sağ tıklayın, boruları tek yönlü yapmak için ise $(thing)boş ikincil el$() ile eğilerek sağ tıklayın."
+		}
+	],
+	"read_by_default": true,
+	"sortnum": 8
+}

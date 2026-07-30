@@ -1,0 +1,40 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "耐火粘土",
+  "category": "tfc:mechanics",
+  "icon": "tfc:fire_clay",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "耐火粘土の使い道は多くはありませんが、どれも重要な用途です。通常の粘土よりも丈夫で耐熱性に優れているため、高温に耐える必要があるものの製作に使われます！"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/fire_clay",
+      "text": "耐火粘土は、$(l:tfg_ores/earth_vein_index#normal_graphite)黒鉛$()を$(l:mechanics/quern)石臼$()で粉末にしたものと、$(l:tfg_ores/surface_kaolin#powder)カオリナイト$()の粉を組み合わせて作ります。"
+    },
+    {
+      "type": "tfc:heat_recipe",
+      "recipe": "tfc:heating/kaolin_clay",
+      "text": "$(l:mechanics/surface_kaolin)カオリン粘土$()を加熱するとカオリナイトの粉が得られます。しかし、この変換効率は低く、粘土のうち約20％しか粉末になりません！"
+    },
+    {
+      "type": "tfc:knapping_recipe",
+      "anchor": "crucible",
+      "recipe": "tfc:fire_clay_knapping/crucible",
+      "text": "未焼成の$(l:mechanics/crucible)るつぼ$()を作るには、耐火粘土を使う必要があります。"
+    },
+    {
+      "type": "tfc:knapping_recipe",
+      "anchor": "fire_bricks",
+      "recipe": "tfc:fire_clay_knapping/brick",
+      "text": "$(l:mechanics/blast_furnace)高炉$()を建造するためには、断熱材として耐火レンガしか使用できません。"
+    },
+    {
+      "type": "tfc:knapping_recipe",
+      "recipe": "tfc:fire_clay_knapping/fire_ingot_mold",
+      "text": "$(thing)耐火のインゴットの型$()は、通常の$(l:getting_started/pottery#mold)インゴット型$()よりも耐久性が高い上位互換です。通常の型が約10％で壊れるのに対し、こちらはわずか1％の確率でしか壊れません。"
+    }
+  ],
+  "read_by_default": true
+}

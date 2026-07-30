@@ -381,6 +381,9 @@ machines:
     tungstensteelBoilerHeatSpeed: 2
 
 client:
+  # Whether or not to display all temperatures in Celsius instead of Kelvin
+  temperaturesInCelsius: false
+
   # Whether or not to enable Emissive Textures for GregTech Machines.
   # Default: true
   machinesEmissiveTextures: true
@@ -447,11 +450,15 @@ client:
     # Default: true
     renderGrowingPlants: true
 
+    # Whether or not to color material/ore block highlights in the material color
+    # Default: true
+    coloredMaterialBlockOutline: true
+
     # Whether or not to color tiered machine highlights in the tier color
     # Default: true
     coloredTieredMachineOutline: true
 
-    # Whether or not to color wire/cable highlights based on voltage tier
+    # Whether or not to color wire/cable highlights based on voltage tier or material color
     # Default: true
     coloredWireOutline: true
 
@@ -539,6 +546,13 @@ gameplay:
   # Default: 0.001
   environmentalHazardDecayRate: 0.001
 
+  # List of domains that are allowed in the image module
+  allowedImageDomains:
+    - imgur.com
+    - discord.com
+    - github.com
+    - raw.githubusercontent.com
+
 # Config options for Mod Compatibility
 compat:
   # Config options regarding GTEU compatibility with other energy systems
@@ -611,10 +625,22 @@ compat:
 
     # Which part of the screen to anchor buttons to
     # Default: "BOTTOM_LEFT"
+    # Allowed values:
+    # - TOP_LEFT
+    # - TOP_CENTER
+    # - TOP_RIGHT
+    # - RIGHT_CENTER
+    # - BOTTOM_RIGHT
+    # - BOTTOM_CENTER
+    # - BOTTOM_LEFT
+    # - LEFT_CENTER
     buttonAnchor: BOTTOM_LEFT
 
     # Which direction the buttons will go
     # Default: "VERTICAL"
+    # Allowed values:
+    # - VERTICAL
+    # - HORIZONTAL
     direction: HORIZONTAL
 
     # How horizontally far away from the anchor to place the buttons
@@ -669,4 +695,9 @@ dev:
   # Dump all registered GT models/blockstates/etc?
   # Default: false
   dumpAssets: false
+
+  # Executes ./gradlew :processResources when F3+T is pressed
+  # Only works in a development environment
+  # Default: false
+  autoRebuildResources: false
 

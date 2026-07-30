@@ -55,4 +55,12 @@
 	#Darkness effect duration in seconds (0-600)
 	#Range: 0 ~ 600
 	darkness_duration = 0
+	#Apply hunger effect when eating raw TFC meat (tfc:foods/raw_meats)
+	raw_meat_poisoning_enabled = true
+	#Hunger effect duration in seconds when eating raw TFC meat (0-600)
+	#Range: 0 ~ 600
+	raw_meat_hunger_duration = 30
+	#Hunger effect level when eating raw TFC meat (0-4)
+	#Range: 0 ~ 4
+	raw_meat_hunger_amplifier = 2
 

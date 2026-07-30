@@ -1,0 +1,31 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "Хлеб",
+  "category": "tfc:firmalife",
+  "icon": "tfc:textures/item/food/barley_bread.png",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Чтобы сделать $(thing)хлеб$(), сначала нужно получить $(thing)дрожжи$(). Чтобы получить свои первые дрожжи, запечатайте $(l:firmalife/drying)Сушёные фрукты$() в бочке с $(thing)водой$(). Через три дня сформируются $(thing)дрожжи$(). $(br)С этого момента ваши дрожжи можно будет подкармливать, запечатывая дрожжи в бочке с $(thing)мукой$(). Это приводит к их размножению. Из 1 муки и 10 Мб дрожжей получается 60 МБ дрожжей, Это хорошая сделка!"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfg:shapeless/barley_dough",
+      "text": "Дрожжи, подсластитель и муки можно\nобъединить, чтобы получить $(thing)тесто$(). Тесто можно приготовить как обычно, чтобы получить $(thing)хлеб!$()."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfg:crafting/barley_slice",
+      "title": "Нарезной хлеб",
+      "text": "После выпекания вы можете использовать $(thing)нож$() чтобы разрезать хлеб на $(thing)slices$(). Затем их можно либо использовать для приготовления $(l:tfc:mechanics/sandwiches)сэндвича$(), либо\nприготовить $(thing)тост$() на который можно намазать $(thing)масло$() или консервировать,"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/toast_with_butter",
+      "recipe2": "firmalife:crafting/toast_with_jam",
+      "title": "Тост"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 16
+}

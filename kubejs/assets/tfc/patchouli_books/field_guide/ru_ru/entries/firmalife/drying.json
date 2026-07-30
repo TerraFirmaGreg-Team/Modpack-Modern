@@ -1,0 +1,42 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "Сушка",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:drying_mat",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)Настил для сушки$() используется для сушки предметов. Он изготавливается из $(thing)листьев фруктовых деревьев$(), которые получаются при разрушении листвы $(thing)фруктовых деревьев$()."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/drying_mat",
+      "text": "Рецепт настила для сушки"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Чтобы использовать настил для сушки, поставь его на солнце и положи на него предмет с помощью $(item)$(k:key.use)$(). Через пол дня он высохнет. Если пойдёт дождь, процесс сушки придётся начать заново."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/solar_drier",
+      "text": "Солнечная сушилка работает так же, как настил для сушки, но в 12 раз быстрее."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Настил для сушки можно автоматизировать. Если толкнуть головку поршня в сторону сушильного коврика, предмет с него выпадет. Если бросить предмет на сушильный коврик, он разместится на коврике."
+    },
+    {
+      "type": "tfc:drying_recipe",
+      "recipe": "firmalife:drying/drying_fruit",
+      "text": "Сушка фруктов — это самое распространённое применение настила для сушки. Сушёные фрукты используются в некоторых рецептах и хранятся дольше."
+    },
+    {
+      "type": "tfc:drying_recipe",
+      "recipe": "firmalife:drying/tofu",
+      "text": "Тофу изготавливается с помощью настила для сушки."
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 12
+}

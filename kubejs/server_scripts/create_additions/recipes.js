@@ -62,19 +62,6 @@ const registerCreateAdditionsRecipes = (event) => {
 		D: 'gtceu:lv_electric_motor',
 	}).addMaterialInfo().id('tfg:createadditions/shaped/electric_motor')
 
-	event.recipes.gtceu.shaped('createaddition:alternator', [
-		'ABA',
-		'CDC',
-		'EFE'
-	], {
-		A: '#gtceu:resistors',
-		B: '#gtceu:circuits/lv',
-		C: 'gtceu:ulv_voltage_coil',
-		D: 'gtceu:ulv_machine_hull',
-		E: 'gtceu:tin_single_cable',
-		F: '#forge:shafts'
-	}).addMaterialInfo().id('tfg:createadditions/shaped/alternator')
-
 	
 	event.shapeless('createaddition:diamond_grit_sandpaper', ['minecraft:paper', 'tfc:glue', '#forge:dusts/diamond'])
 		.id('tfg:shapeless/diamond_grit_sand_paper')
@@ -93,19 +80,19 @@ const registerCreateAdditionsRecipes = (event) => {
 	}).addMaterialInfo().id('tfg:create_additions/shaped/portable_energy_interface')
 
 	event.recipes.gtceu.assembler('create_additions/battery_hv')
-		.itemInputs('2x gtceu:industrial_steam_casing', '#gtceu:batteries/hv')
-		.itemOutputs('2x createaddition:modular_accumulator')
+		.itemInputs('gtceu:industrial_steam_casing', '#gtceu:batteries/hv')
+		.itemOutputs('createaddition:modular_accumulator')
 		.duration(400)
 		.EUt(30)
 
 	event.recipes.gtceu.assembler('create_additions/battery_mv')
-		.itemInputs('gtceu:industrial_steam_casing', '2x #gtceu:batteries/mv')
+		.itemInputs('gtceu:industrial_steam_casing', '4x #gtceu:batteries/mv')
 		.itemOutputs('createaddition:modular_accumulator')
 		.duration(400)
 		.EUt(30)
 
 	event.recipes.gtceu.assembler('create_additions/battery_lv')
-		.itemInputs('gtceu:industrial_steam_casing', '8x #gtceu:batteries/lv')
+		.itemInputs('gtceu:industrial_steam_casing', '16x #gtceu:batteries/lv')
 		.itemOutputs('createaddition:modular_accumulator')
 		.duration(400)
 		.EUt(30)

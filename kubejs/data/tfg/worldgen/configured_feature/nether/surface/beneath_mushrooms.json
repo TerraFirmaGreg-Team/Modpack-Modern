@@ -41,6 +41,10 @@
 			{
 				"feature": "beneath:sulfur_tuft_patch",
 				"placement": []
+			},
+			{
+				"feature": "tfg:nether/surface/fly_agaric_patch",
+				"placement": []
 			}
 		]
 	}

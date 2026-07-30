@@ -1,0 +1,15 @@
+infoDisplayOrder:coords:overworld_coords:chunk_coords:angles:dimension:biome:weather:light_level:time:real_time:highlights:light_overlay_indicator:manual_cave_mode_indicator:custom_sub_world
+infoDisplay:coords:true:15:-1
+infoDisplay:overworld_coords:false:15:-1
+infoDisplay:chunk_coords:false:15:-1
+infoDisplay:angles:false:15:-1
+infoDisplay:dimension:false:15:-1
+infoDisplay:biome:false:15:-1
+infoDisplay:weather:false:15:-1
+infoDisplay:light_level:0:15:-1
+infoDisplay:time:0:15:-1
+infoDisplay:real_time:0:15:-1
+infoDisplay:highlights:true:15:-1
+infoDisplay:light_overlay_indicator:true:15:-1
+infoDisplay:manual_cave_mode_indicator:true:15:-1
+infoDisplay:custom_sub_world:true:15:-1

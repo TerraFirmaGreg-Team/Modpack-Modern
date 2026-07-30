@@ -161,7 +161,7 @@ const registerGTCEURecipes = (event) => {
 		.modifyResult((craftingGrid, result) => {
 			let blockID = craftingGrid.find(Ingredient.of("#tfg:whitelisted/facades")).id
 
-			let facadeNBT = `{Facade: {Count:1b,id:` + `'${blockID}'` + `}}`
+			let facadeNBT = `{Facade: {Count:1b,id:'${blockID}'}}`
 			result.nbt = facadeNBT
 			return result;
 		}).id('gtceu:facade_cover');
@@ -170,7 +170,7 @@ const registerGTCEURecipes = (event) => {
 		.modifyResult((craftingGrid, result) => {
 			let blockID = craftingGrid.find(Ingredient.of("#tfg:whitelisted/facades")).id
 
-			let facadeNBT = `{Facade: {Count:1b,id:` + `'${blockID}'` + `}}`
+			let facadeNBT = `{Facade: {Count:1b,id:'${blockID}'}}`
 			result.nbt = facadeNBT
 			return result;
 		}).id('gtceu:facade_cover32');
@@ -179,7 +179,7 @@ const registerGTCEURecipes = (event) => {
 		.modifyResult((craftingGrid, result) => {
 			let blockID = craftingGrid.find(Ingredient.of("#tfg:whitelisted/facades")).id
 
-			let facadeNBT = `{Facade: {Count:1b,id:` + `'${blockID}'` + `}}`
+			let facadeNBT = `{Facade: {Count:1b,id:'${blockID}'}}`
 			result.nbt = facadeNBT
 			return result;
 		}).id('gtceu:facade_cover_recycle');
@@ -308,7 +308,7 @@ const registerGTCEURecipes = (event) => {
 
 	// Modify Rotor Holder to require an Assembler
 
-	event.remove({ id: 'gtceu:shaped/rotor_holder_hv' })
+	//event.remove({ id: 'gtceu:shaped/rotor_holder_hv' }) Keep it craftable before the Assembler
 	event.remove({ id: 'gtceu:shaped/rotor_holder_ev' })
 	event.remove({ id: 'gtceu:shaped/rotor_holder_iv' })
 	event.remove({ id: 'gtceu:shaped/rotor_holder_luv' })
@@ -413,4 +413,81 @@ const registerGTCEURecipes = (event) => {
 		.duration(20*2)
 		.EUt(GTValues.VA[GTValues.LV])
 		.circuit(1)
+
+	// Increase casing costs
+
+	event.replaceInput({ id: 'gtceu:shaped/casing_steel_pipe' }, '#forge:normal_fluid_pipes/steel', '#forge:huge_fluid_pipes/steel')
+	event.replaceInput({ id: 'gtceu:shaped/casing_steel_pipe' }, '#forge:plates/steel', '#forge:double_plates/steel')
+
+	// Modify HV Dynamo Hatch to be craftable before Cleanroom
+
+	event.recipes.gtceu.assembler('gtceu:voltage_coil_hv')
+		.itemInputs('#forge:rods/magnetic_steel', '16x #forge:fine_wires/black_steel')
+		.itemOutputs('gtceu:hv_voltage_coil')
+		.circuit(1)
+		.duration(20*20)
+		.EUt(GTValues.VA[GTValues.MV])
+
+	event.recipes.gtceu.assembler('gtceu:dynamo_hatch_hv')
+		.itemInputs('gtceu:hv_machine_hull', '2x #forge:springs/gold', '2x gtceu:ulpic_chip', 'gtceu:hv_voltage_coil')
+		.inputFluids('gtceu:sodium_potassium 1000')
+		.itemOutputs('gtceu:hv_energy_output_hatch')
+		.duration(20*20)
+		.EUt(GTValues.VA[GTValues.MV])
+
+	// Change Sterling Silver Turbine Rotor to be craftable at MV
+
+	// modifyRecipe doesn't work for turbine blades
+	event.recipes.gtceu.assembler('gtceu:assemble_sterling_silver_turbine_blade')
+		.itemInputs('8x #forge:turbine_blades/sterling_silver', '#forge:rods/long/magnalium')
+		.itemOutputs(Item.of('gtceu:turbine_rotor', '{GT.PartStats:{Material:"gtceu:sterling_silver"}}'))
+		.duration(10*20)
+		.EUt(GTValues.VA[GTValues.MV])
+
+	// Change Red Alloy in the ABS to match
+
+	global.modifyRecipe(event, "gtceu:alloy_blast_smelter/red_alloy", {
+        newId: "tfg:red_alloy",
+        fluidOutputs: { "gtceu:red_alloy": 720 }
+	});
+
+	// Change Cracker to require Cleanroom
+
+	event.replaceInput({ id: 'gtceu:shaped/cracking_unit' }, '#gtceu:circuits/hv', '#gtceu:circuits/ev')
+
+  // Allow alternate rubbers for hazmat pieces
+
+  const HAZMAT_PIECES_TO_REPLACE = [
+    "chestpiece",
+    "leggings",
+    "boots"
+  ]
+  HAZMAT_PIECES_TO_REPLACE.forEach(piece => {
+    event.replaceInput({ id: `gtceu:assembler/hazmat_${piece}` },
+      '#forge:plates/rubber', '#tfg:rubber_plates');
+  })
+
+  	// Buff Bauxite Line
+
+	global.modifyRecipe(event, "gtceu:mixer/bauxite_slurry_from_washed_bauxite", {
+        newId: "tfg:bauxite_slurry_from_washed_bauxite",
+        itemInputs: { "forge:purified_ores/bauxite": 24 },
+    	fluidReplacements: { "forge:water": "minecraft:water" }
+    })
+
+	global.modifyRecipe(event, "gtceu:mixer/bauxite_slurry_from_crushed_bauxite", {
+        newId: "tfg:bauxite_slurry_from_crushed_bauxite",
+        itemInputs: { "forge:crushed_ores/bauxite": 24 },
+    	fluidReplacements: { "forge:water": "minecraft:water" }
+    })
+
+	event.remove({ id: 'gtceu:electromagnetic_separator/bauxite_slag_separation' })
+
+	event.recipes.gtceu.electromagnetic_separator('tfg:bauxite_slag_separation')
+		.itemInputs(Item.of('gtceu:bauxite_slag_dust', 1))
+		.itemOutputs(Item.of('gtceu:salt_dust', 1))
+		.chancedOutput(Item.of('gtceu:chromium_dust', 1), 7500, 0)
+		.chancedOutput(Item.of('gtceu:neodymium_dust', 1), 2000, 0)
+		.duration(2.5*20)
+		.EUt(GTValues.VA[GTValues.MV])
 }

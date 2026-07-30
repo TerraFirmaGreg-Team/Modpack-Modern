@@ -1,0 +1,17 @@
+{
+    "name": "锻造纹饰",
+    "category": "tfc:mechanics",
+    "icon": "minecraft:rib_armor_trim_smithing_template",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "锻造纹饰是通过将$(thing)纹饰材料$()和$(l:mechanics/sewing_table)锻造模板$()合成得到的。群峦传说中所有宝石，以及标准纯银、黄金、玫瑰金和铋都能作为纹饰材料使用。盔甲纹饰是纯装饰作用的。"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "minecraft:shapeless/smithing_table",
+            "text": "锻造台可以将纹饰材料打入盔甲。"
+        }
+    ],
+    "read_by_default": true
+}

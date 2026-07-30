@@ -1,0 +1,20 @@
+{
+    "feature": "tfg:earth/volcano/sulfur_patch",
+    "placement": [
+        {
+            "type": "minecraft:count",
+            "count": 3
+        },
+        {
+            "type": "minecraft:in_square"
+        },
+        {
+            "distance": 0.7,
+            "type": "tfg:tuya"
+        },
+        {
+            "type": "minecraft:heightmap",
+            "heightmap": "WORLD_SURFACE"
+        }
+    ]
+}

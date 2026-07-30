@@ -1,0 +1,21 @@
+{
+	"block.deafission.battery_heat_port_ev": "Conexão de Calor",
+	"block.deafission.fission_reactor_mk1": "Reator de Fissão MK I",
+	"block.deafission.fission_reactor_mk2": "Reator de Fissão MK II",
+	"block.deafission.fission_reactor_smr1": "Reator de Fissão Pequeno MK I",
+	"block.deafission.fuel_holder": "Suporte de Combustível",
+	"block.deafission.heat_battery_mk1": "Bateria Térmica MK I",
+	"block.deafission.heat_input_hatch_ev": "Escotilha de Entrada de Calor",
+	"block.deafission.material_holder": "Suporte de Material",
+	"block.deafission.redstone_port": "Conexão de Redstone",
+	"config.jade.plugin_deafission.battery": "Exibir informações de Bateria Térmica",
+	"config.jade.plugin_deafission.reactor": "Exibir informações de Reator de Fissão",
+	"deafission.fission_reactor_coolant": "Reator de Fissão",
+	"deafission.fission_reactor_coolant_smr": "Reator de Fissão Pequeno",
+	"deafission.fission_reactor_fuel": "Produto de Fissão",
+	"deafission.fission_reactor_processing": "Processamento Térmico de Fissão",
+	"deafission.fission_reactor.gui.fuel_throttle": "Combustível: %s de desgaste (%s%% de reação)",
+	"emi.deafission.throttle_component_key": "Potência:",
+	"emi.deafission.throttle_component_value": "%d",
+	"tooltip.deafission.fuelcell.rodcount": "Hastes: %s"
+}

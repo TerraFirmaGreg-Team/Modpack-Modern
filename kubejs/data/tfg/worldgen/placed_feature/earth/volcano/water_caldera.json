@@ -1,0 +1,13 @@
+{
+    "feature": "tfg:earth/volcano/water_caldera",
+    "placement": [
+        {
+            "center": true,
+            "type": "tfg:cinder_cone"
+        },
+        {
+            "heightmap": "WORLD_SURFACE_WG",
+            "type": "minecraft:heightmap"
+        }
+    ]
+}

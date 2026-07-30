@@ -13,7 +13,7 @@
         {
             "type": "patchouli:image",
             "images": [
-            "tfg:textures/gui/field_guide/anvil_working_guide/anvil_ui.png"
+                "tfg:textures/gui/field_guide/anvil_working_guide/anvil_ui.png"
             ],
             "border": false,
             "text": "Пользовательский интерфейс с включенным TFC Anvil Helper"
@@ -21,7 +21,7 @@
         {
             "type": "patchouli:image",
             "images": [
-            "tfg:textures/gui/field_guide/anvil_working_guide/anvil_ui_marked.png"
+                "tfg:textures/gui/field_guide/anvil_working_guide/anvil_ui_marked.png"
             ],
             "border": false,
             "anchor": "ui_explained",
@@ -35,7 +35,7 @@
         {
             "type": "patchouli:image",
             "images": [
-            "tfg:textures/gui/field_guide/anvil_working_guide/anvil_ui_marked.png"
+                "tfg:textures/gui/field_guide/anvil_working_guide/anvil_ui_marked.png"
             ],
             "border": false
         },
@@ -46,7 +46,7 @@
         {
             "type": "patchouli:image",
             "images": [
-            "tfg:textures/gui/field_guide/anvil_working_guide/anvil_ui_marked.png"
+                "tfg:textures/gui/field_guide/anvil_working_guide/anvil_ui_marked.png"
             ],
             "border": false
         },
@@ -57,7 +57,7 @@
         {
             "type": "patchouli:image",
             "images": [
-            "tfg:textures/gui/field_guide/anvil_working_guide/anvil_ui_marked.png"
+                "tfg:textures/gui/field_guide/anvil_working_guide/anvil_ui_marked.png"
             ],
             "border": false
         },
@@ -74,7 +74,7 @@
         {
             "type": "patchouli:image",
             "images": [
-            "tfg:textures/gui/field_guide/anvil_working_guide/perfectly_forged_item.png"
+                "tfg:textures/gui/field_guide/anvil_working_guide/perfectly_forged_item.png"
             ],
             "border": false,
             "text": "Идеально выкованная головка кирки из кованого железа"
@@ -96,7 +96,7 @@
         {
             "type": "patchouli:image",
             "images": [
-            "tfg:textures/gui/field_guide/anvil_working_guide/steps.png"
+                "tfg:textures/gui/field_guide/anvil_working_guide/steps.png"
             ],
             "text": "Этапы изготовления кирки"
         },
@@ -116,8 +116,8 @@
         {
             "type": "patchouli:image",
             "images": [
-            "tfg:textures/gui/field_guide/anvil_working_guide/work_bar_numbers.png",
-            "tfg:textures/gui/field_guide/anvil_working_guide/target_work_for_wrought_iron_pickaxe_head.png"
+                "tfg:textures/gui/field_guide/anvil_working_guide/work_bar_numbers.png",
+                "tfg:textures/gui/field_guide/anvil_working_guide/target_work_for_wrought_iron_pickaxe_head.png"
             ]
         },
         {
@@ -128,7 +128,7 @@
         {
             "type": "patchouli:image",
             "images": [
-            "tfg:textures/gui/field_guide/anvil_working_guide/work_bar_cheat_sheet.png"
+                "tfg:textures/gui/field_guide/anvil_working_guide/work_bar_cheat_sheet.png"
             ],
             "text": "16 + 16 + 16 + 16 + 16 + 7 + 2 = 89"
         },
@@ -140,9 +140,9 @@
         {
             "type": "patchouli:image",
             "images": [
-            "tfg:textures/gui/field_guide/anvil_working_guide/wrought_iron_pickaxe_head_no_work.png",
-            "tfg:textures/gui/field_guide/anvil_working_guide/wrought_iron_pickaxe_head_some_work.png",
-            "tfg:textures/gui/field_guide/anvil_working_guide/wrought_iron_pickaxe_head_complete.png"
+                "tfg:textures/gui/field_guide/anvil_working_guide/wrought_iron_pickaxe_head_no_work.png",
+                "tfg:textures/gui/field_guide/anvil_working_guide/wrought_iron_pickaxe_head_some_work.png",
+                "tfg:textures/gui/field_guide/anvil_working_guide/wrought_iron_pickaxe_head_complete.png"
             ],
             "text": "Слиток без обработки -> Достигнуто желаемое значение обработки -> Выполнение необходимых шагов для нашего изделия."
         },

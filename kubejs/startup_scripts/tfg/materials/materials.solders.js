@@ -16,7 +16,7 @@ function registerTFGSolderMaterials(event) {
 		.dust()
 		.liquid(GTFluidBuilder().temperature(314).customStill())
 		.ingot()
-		.color(0x745252)
+		.color(0x3C3E5B)
 		.components('8x bismuth', '4x lead', '2x tin', '3x indium', '2x cadmium', '1x thallium')
 		.flags(GTMaterialFlags.DECOMPOSITION_BY_CENTRIFUGING)
 		.hazard(HazardProperty.HazardTrigger.SKIN_CONTACT, GTMedicalConditions.CHEMICAL_BURNS)

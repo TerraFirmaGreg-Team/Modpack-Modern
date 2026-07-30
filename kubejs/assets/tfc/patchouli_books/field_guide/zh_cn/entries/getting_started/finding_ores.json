@@ -13,19 +13,19 @@
       "multiblock": {
         "pattern": [
           [
-          "    ",
-          "  0 ",
-          "    "
+            "    ",
+            "  0 ",
+            "    "
           ],
           [
-          "ABCD",
-          "EFGH",
-          "IJKL"
+            "ABCD",
+            "EFGH",
+            "IJKL"
           ],
           [
-          "XXXX",
-          "XXXX",
-          "XXXX"
+            "XXXX",
+            "XXXX",
+            "XXXX"
           ]
         ],
         "mapping": {

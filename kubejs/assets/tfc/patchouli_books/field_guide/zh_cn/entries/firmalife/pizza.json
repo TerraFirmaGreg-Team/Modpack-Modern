@@ -1,0 +1,30 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "披萨",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:textures/item/food/cooked_pizza.png",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "要制作$(thing)披萨$()，请在$(l:firmalife/mixing_bowl)搅拌碗$()中混合面团、盐、罗勒叶和100 mB油。油可以是橄榄油或大豆油（将大豆酱密封在一桶水中制成的产物）。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "anchor": "shredded_cheese",
+      "recipe": "firmalife:crafting/shredded_cheese",
+      "text": "首先你需要一些奶酪丝。"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "tomato_sauce",
+      "text": "要制作$(thing)番茄酱$()，请把一个番茄、盐、大蒜和水一起在锅中煮沸。或者，使用$(l:firmalife/oven_appliances#vat)铁锅$()煮沸这些原料的合成物，即$(thing)番茄酱混合料$()。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfg:shapeless/raw_pizza_2",
+      "text": "披萨由1-3份蔬菜、熟肉或水果，一份奶酪丝和一份番茄酱制作而成。"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 26
+}

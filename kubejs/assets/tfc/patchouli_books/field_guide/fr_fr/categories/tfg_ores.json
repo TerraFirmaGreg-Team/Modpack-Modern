@@ -1,0 +1,6 @@
+{
+    "name": "Les minerais dans TFG",
+    "description": "TFG possède son propre système de génération des minerais, similaire à TFC, avec des veines énormes, mais qui contiennent néanmoins plusieurs minéraux par veine. Cette catégorie recense tous les types de veines et où les trouver.$(br2)Les veines sont nommées d'après leur minerai principal mais la plupart des veines contiennent 3 à 5 minéraux.$(br2)Voir aussi : $(l:the_world/geology)Geology$(), $(l:getting_started/finding_ores)Indicators$()",
+    "icon": "tfc:ore/pyrite",
+    "sortnum": 60
+}

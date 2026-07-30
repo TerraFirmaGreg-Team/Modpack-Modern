@@ -1,0 +1,18 @@
+{
+	"variants": {
+		"": [
+			{ "model": "betterend:block/murkweed_01" },
+			{ "model": "betterend:block/murkweed_02" },
+			{ "model": "betterend:block/murkweed_03" },
+			{ "model": "betterend:block/murkweed_01", "y": 90 },
+			{ "model": "betterend:block/murkweed_02", "y": 90 },
+			{ "model": "betterend:block/murkweed_03", "y": 90 },
+			{ "model": "betterend:block/murkweed_01", "y": 180 },
+			{ "model": "betterend:block/murkweed_02", "y": 180 },
+			{ "model": "betterend:block/murkweed_03", "y": 180 },
+			{ "model": "betterend:block/murkweed_01", "y": 270 },
+			{ "model": "betterend:block/murkweed_02", "y": 270 },
+			{ "model": "betterend:block/murkweed_03", "y": 270 }
+		]
+	}
+}

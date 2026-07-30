@@ -2,7 +2,7 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "queststfg"
-	group: "19428C6E7A36D463"
+	group: "3C4612A920658A7E"
 	icon: "tfg:terra_firma_greg"
 	id: "5DD2C08324B24805"
 	images: [
@@ -15,9 +15,9 @@
 			y: -3.0d
 		}
 		{
-			click: "https://github.com/TerraFirmaGreg-Team/Modpack-Modern/wiki/%5BEN%5D-Suggested-additional-mods"
+			click: "https://wiki.terrafirmagreg.team/modern/en_us/modpack/optional-mods"
 			height: 1.0d
-			image: "tfg:textures/gui/github_logo.png"
+			image: "ftblibrary:icons/globe"
 			rotation: 0.0d
 			width: 1.0d
 			x: -4.5d
@@ -35,13 +35,6 @@
 			shape: "gear"
 			size: 4.0d
 			subtitle: "{quests.tfg.welcome.subtitle}"
-			tasks: [{
-				dimension: "minecraft:overworld"
-				icon: "gtceu:overworld_marker"
-				id: "1D8C7D630DFA8A0D"
-				title: "{quests.stone_age.temperature.task}"
-				type: "dimension"
-			}]
 			title: "{quests.tfg.welcome.title}"
 			x: 0.0d
 			y: 0.0d

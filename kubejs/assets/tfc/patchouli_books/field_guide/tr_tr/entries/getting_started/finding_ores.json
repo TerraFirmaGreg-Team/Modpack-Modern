@@ -1,0 +1,109 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "Madenler, Metaller ve Dökümcülük",
+  "category": "tfc:getting_started",
+  "icon": "tfc:ore/normal_native_copper",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Etrafta gezerken çubuk ve taşların yanında ufak maden parçalarına rastlamış olabilirsiniz. Bunlar önemli çünkü bunlar kazma yapmadan erişebildiğiniz tek madenler."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "    ",
+            "  0 ",
+            "    "
+          ],
+          [
+            "ABCD",
+            "EFGH",
+            "IJKL"
+          ],
+          [
+            "XXXX",
+            "XXXX",
+            "XXXX"
+          ]
+        ],
+        "mapping": {
+          "X": "tfc:grass/loam",
+          "A": "tfc:ore/small_native_copper",
+          "B": "tfc:ore/small_native_gold",
+          "C": "tfc:ore/small_hematite",
+          "D": "tfc:ore/small_native_silver",
+          "E": "tfc:ore/small_cassiterite",
+          "F": "tfc:ore/small_bismuthinite",
+          "G": "tfc:ore/small_garnierite",
+          "H": "tfc:ore/small_malachite",
+          "I": "tfc:ore/small_magnetite",
+          "J": "tfc:ore/small_limonite",
+          "K": "tfc:ore/small_sphalerite",
+          "L": "tfc:ore/small_tetrahedrite"
+        }
+      },
+      "name": "",
+      "text": "Bütün ufak maden parçaları",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Bu küçük cevher parçaları iki işe yarar: Hem sana metal kaynağı sağlarlar hem de çok daha önemlisi, yakınlarda bir yerlerde —muhtemelen yeraltında ve yüzeye yakın— devasa bir cevher damarı olduğunu haber verirler. Küçük cevherleri nerede bulduğunu mutlaka bir yere not et; çünkü bu cevher damarlarının yeri ileride $(l:mechanics/prospecting)Maden Arama$() yaparken acayip işine yarayacak.$(br2)On iki küçük cevher türü ve eritildiklerinde hangi metale dönüştükleri bir sonraki sayfada listelenmiştir."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(li)Doğal Bakır ($(thing)Bakır$())$(li)Doğal Altın ($(thing)Altın$())$(li)Hematit ($(thing)Dökme Demir$())$(li)Doğal Gümüş ($(thing)Gümüş$())$(li)Kasiterit ($(thing)Kalay$())$(li)Bismutinit ($(thing)Bizmut$())$(li)Garniyerit ($(thing)Nikel$())$(li)Malakit ($(thing)Bakır$())$(li)Manyetit ($(thing)Dökme Demir$())$(li)Limonit ($(thing)Dökme Demir$())$(li)Sfalerit ($(thing)Çinko$())$(li)Tetrahedrit ($(thing)Bakır$())",
+      "title": "Küçük Cevherler"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "casting",
+      "text": "TerraFirmaCraft'ta her cevher, çıkarılabilecek belirli miktarda gerçek metal içerir; bunu $(thing)birim$() ya da $(thing)mB (mililitre)$() olarak ölçersin. Yüzeyde bulduğun bu küçük cevherler en düşük kaliteli olanlarıdır ve sadece $(thing)16 mB$() metal verir. Bu metali çıkarmak için önce $(thing)eritmen$(), sonra da $(thing)döküm$() denen bir işlemle alete dönüştürmen gerekiyor.",
+      "title": "Döküm"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "İhtiyacın olanlar:$(br)$(li)Bir $(l:getting_started/pottery#vessel)Küçük Kap$()$(li)Bir $(l:getting_started/pit_kiln)Çukur Ocak$() kurmak için yeterli malzeme.$(li)Erimiş metali dökmek için bir veya daha fazla $(l:getting_started/pottery#mold)Kalıp$().$(li)Ve son olarak, döküme uygun toplam en az 144 mB metal: üç cevher formundan herhangi birinde $(thing)Bakır$().$(br2)$(br)$(italic)Not: Döküm bazı $(l:getting_started/primitive_alloys)Alaşımlar$() ile de yapılabilir."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Önce $(thing)Küçük Kap$()'ı aç ve cevherleri içine koy. Cevherlerdeki toplam metal miktarını iyi hesapla! Kap en fazla 3024mB erimiş metal alır, fazlası ziyan olur. Sonra, içinde dolu küçük kap olan bir $(l:getting_started/pit_kiln)Çukur Ocak$() kurman gerekiyor. Kap ısındıkça içindeki cevherler eriyecek ve elinde erimiş metal dolu bir kap kalacak."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfchotornot:crafting/tongs/wood",
+      "text": "Dikkat et, kap sıcak olacak! İki çubuk ve bir bıçakla $(thing)Tahta Maşa$() yap ve sıcak kabı güvenle tutmak için ikincil elinde bulundur."
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "tfc:textures/gui/book/gui/casting.png"
+      ],
+      "text": "Kabı tut ve $(thing)Döküm$() arayüzünü açmak için $(item)$(k:key.use)$() tuşuna bas.",
+      "border": false
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Döküm arayüzü açıkken, boş ve pişmiş kalıbını orta yuvaya yerleştir. Kap sıvı kaldığı sürece kalıp dolmaya devam edecek. (Kap katılaşırsa, başka bir çukur ocakta yeniden ısıtabilirsin.) Kalıp dolunca çıkarıp soğumaya bırakabilirsin. Soğuduktan sonra da kalıbı kullanarak ya da crafting tablasına koyarak içindekini çıkarabilirsin."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "gtceu:shaped/pickaxe_copper",
+      "text": "Artık ilk kazmanı yapabilirsin! Kazma başı için yeterince bakır bul, bir kazma kalıbı pişir, cevheri bir çukur ocakta erit, sonra da başı dök. Bir sapa tak, işte bu kadar! Artık $(l:tfg_ores/index)cevher$() kazabilirsin."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "tfc:metal/chisel/copper",
+      "text": "İlerlemende işine yarayacak birkaç önemli metal alet daha var. $(l:mechanics/chisel)Keski$(), taş blokları işlemek, inşaat yapmak ve başka tarifler için gerçekten elinden düşürmeyeceğin bir alet."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "gtceu:copper_saw",
+      "text": "Testere ile kütüklerini $(l:mechanics/support_beams)destek kirişlerine$() ve $(thing)kerestene$() dönüştürebilirsin, bunları da tahta, marangoz tezgahı, fıçı ve sandık gibi bir sürü şeye çevirebilirsin. Bir de $(l:firmaciv/canoe)kano$() yapmak istersen, yine bu işine yarar."
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 4
+}

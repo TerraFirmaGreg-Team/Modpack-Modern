@@ -1,0 +1,6 @@
+{
+    "variants" : {
+        "ad_astra:textures/entity/mob/martian_raptor.png" : "outlined_sprite:ad_astra/martian_raptor.png",
+        "default" : "outlined_sprite:ad_astra/martian_raptor.png"
+    }
+}

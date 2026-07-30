@@ -1,0 +1,88 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "奶酪",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:textures/item/food/gouda.png",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "在 Firmalife 中制作$(thing)奶酪$()比在原版群峦中稍复杂一些。新增了两种奶：$(thing)牦牛奶$()和$(thing)山羊奶$()。它们分别通过挤取$(l:mechanics/animal_husbandry#yak)牦牛$()和$(l:mechanics/animal_husbandry#goat)山羊$()获得。挤取$(l:mechanics/animal_husbandry#cow)奶牛$()获得的仍是原来的奶。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "和通常一样，奶首先要$(thing)凝固$()。要使奶凝固，你需要$(thing)凝乳酶$()。凝乳酶来自$(thing)反刍$()动物的胃。这包括$(l:mechanics/animal_husbandry#yak)牦牛$()、$(l:mechanics/animal_husbandry#cow)奶牛$()、$(l:mechanics/animal_husbandry#sheep)绵羊$()、$(l:mechanics/animal_husbandry#goat)山羊$()和$(l:mechanics/animal_husbandry#musk_ox)麝牛$()。要使奶凝固，需将其与凝乳酶一起在$(l:mechanics/barrels)大桶$()中密封4小时。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "anchor": "cheesecloth",
+      "recipe": "firmalife:crafting/cheesecloth",
+      "text": "凝固后的奶和$(thing)奶酪布$()一起密封在大桶中就可以制成$(thing)凝乳$()。奶酪布是不能重复使用的。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfg:crafting/cheddar_wheel",
+      "text": "现在你可以制造$(thing)干酪$()了。你可以用$(thing)牦牛奶凝乳$()制作$(thing)西藏干酪$()，用$(thing)山羊奶凝乳$()制作$(thing)法式干酪$()，以及用$(thing)牛奶凝乳$()制作$(thing)英格兰切达干酪$()。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfg:crafting/chevre_wheel",
+      "recipe2": "tfg:crafting/rajya_metok_wheel"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "你的另一个选择是制作$(thing)鲜奶酪$()。这些是通过将凝乳密封在一桶$(thing)盐水$()中制成的。你可以用$(thing)牦牛奶凝乳$()制作$(thing)喜马拉雅奶酪$()，用$(thing)山羊奶凝乳$()制作$(thing)希腊菲达奶酪$()，以及用$(thing)牛奶凝乳$()制作$(thing)荷兰高达奶酪$()。"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "aging",
+      "text": "奶酪轮是方块，应放置起来以利于保存。为了提高其品质和保质期，奶酪轮应在$(l:firmalife/cellar)地窖$()中进行$(thing)熟化$()。为了从奶酪轮上获得可食用的奶酪，应手持$(thing)刀$()点击$(item)$(k:key.use)$()将其切片。如果直接破坏奶酪块，将丢失熟成效果！"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "一块荷兰高达干酪轮的熟化阶段：$(thing)新鲜$()、$(thing)熟成$()和$(thing)陈年$()。",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "firmalife:gouda_wheel[age=fresh]"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "firmalife:gouda_wheel[age=aged]"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "firmalife:gouda_wheel[age=vintage]"
+          }
+        }
+      ]
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 1
+}

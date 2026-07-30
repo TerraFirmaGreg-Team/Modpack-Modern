@@ -42,9 +42,9 @@ const registerChalkRecipes = (event) => {
 			]
 		).ingredient(x.rock)
 			.outsideSlotRequired(false)
-			.id(`tfg:knapping/${linuxUnfucker(x.rock)}_chalk`)
+			.id(`tfg:knapping/${global.linuxUnfucker(x.rock)}_chalk`)
 
-		event.recipes.gtceu.extruder(`tfg:${linuxUnfucker(x.rock)}_chalk`)
+		event.recipes.gtceu.extruder(`tfg:${global.linuxUnfucker(x.rock)}_chalk`)
 			.itemInputs(x.rock)
 			.notConsumable('gtceu:rod_extruder_mold')
 			.itemOutputs(Item.of(`chalk:${x.color}_chalk`, '{Damage:32}'))
@@ -53,7 +53,7 @@ const registerChalkRecipes = (event) => {
 
 		event.recipes.vintageimprovements.curving(Item.of(`chalk:${x.color}_chalk`, '{Damage:32}'), x.rock)
 			.head('gtceu:rod_extruder_mold')
-			.id(`tfg:vi/curving/${linuxUnfucker(x.rock)}_chalk`)
+			.id(`tfg:vi/curving/${global.linuxUnfucker(x.rock)}_chalk`)
 	})
 
 

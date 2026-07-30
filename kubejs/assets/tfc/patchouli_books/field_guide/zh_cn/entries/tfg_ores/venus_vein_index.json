@@ -14,13 +14,13 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/venus_vein_index#venus_manual_salt)盐, 锂辉石$()$()$(li)$(l:tfg_ores/venus_vein_index#venus_manual_sulfur)硫, 黄铁矿$()$()",
+      "text": "$(li)$(l:tfg_ores/venus_vein_index#venus_manual_salt)岩盐, 钾石盐, 锂云母, 锂辉石$()$()$(li)$(l:tfg_ores/venus_vein_index#venus_manual_sulfur)硫, 黄铁矿, 闪锌矿$()$()",
       "type": "patchouli:text"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 1/30 区块$(br)$(thing)密度$(): 20%$(br)$(thing)类型$(): 盘状矿脉$(br)$(thing)Y 坐标$(): 40 — 65$(br)$(thing)尺寸$(): 20$(br)$(thing)高度$(): 6$(br)$(thing)指示器最大深度$(): 30$(br2)$(thing)岩石类型$(): 天然煌斑岩, 天然熔灰岩, 安山岩, 流纹岩, 玄武岩, 石灰华, 粗面岩, 英安岩",
-      "title": "盐, 锂辉石",
+      "text": "$(thing)$(t:每个区块生成矿脉的几率。下面的数字越小就越常见。)稀有度$(/t)$(): 1/30 区块$(br)$(thing)$(t:矿脉中矿石方块所占的百分比。百分比越高，矿石越多。)密度$(/t)$(): 20%$(br)$(thing)$(t:矿脉的形状。)类型$(/t)$(): $(t:宽而扁平)盘状矿脉$(/t)$(br)$(thing)$(t:矿脉可能生成的 Y 轴范围。)Y$(/t)$(): 40 — 65$(br)$(thing)$(t:矿脉的平均直径)尺寸$(/t)$(): 20$(br)$(thing)高度$(): 6$(br)$(thing)$(t:如果地表与矿脉之间的距离大于此数值，则地表不会生成矿脉指示物。)指示物最大深度$(/t)$(): 30$(br)$(thing)生物群系$(): 任意$(br2)$(thing)岩石类型$(): 安山岩, 流纹岩, 煌斑岩, 熔灰岩, 玄武岩, 石灰华, 粗面岩, 英安岩",
+      "title": "岩盐, 钾石盐, 锂云母, 锂辉石",
       "type": "patchouli:text",
       "anchor": "venus_manual_salt"
     },
@@ -111,8 +111,8 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 1/30 区块$(br)$(thing)密度$(): 20%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 40 — 65$(br)$(thing)尺寸$(): 20$(br)$(thing)指示器最大深度$(): 30$(br2)$(thing)岩石类型$(): 天然煌斑岩, 天然熔灰岩, 安山岩, 流纹岩, 玄武岩, 石灰华, 粗面岩, 英安岩",
-      "title": "硫, 黄铁矿",
+      "text": "$(thing)$(t:每个区块生成矿脉的几率。下面的数字越小就越常见。)稀有度$(/t)$(): 1/30 区块$(br)$(thing)$(t:矿脉中矿石方块所占的百分比。百分比越高，矿石越多。)密度$(/t)$(): 20%$(br)$(thing)$(t:矿脉的形状。)类型$(/t)$(): $(t:大致呈圆形)团簇状矿脉$(/t)$(br)$(thing)$(t:矿脉可能生成的 Y 轴范围。)Y$(/t)$(): 40 — 65$(br)$(thing)$(t:矿脉的平均直径)尺寸$(/t)$(): 20$(br)$(thing)$(t:如果地表与矿脉之间的距离大于此数值，则地表不会生成矿脉指示物。)指示物最大深度$(/t)$(): 30$(br)$(thing)生物群系$(): 任意$(br2)$(thing)岩石类型$(): 安山岩, 流纹岩, 煌斑岩, 熔灰岩, 玄武岩, 石灰华, 粗面岩, 英安岩",
+      "title": "硫, 黄铁矿, 闪锌矿",
       "type": "patchouli:text",
       "anchor": "venus_manual_sulfur"
     },

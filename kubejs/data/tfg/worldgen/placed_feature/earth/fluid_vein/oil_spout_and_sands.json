@@ -1,0 +1,47 @@
+{
+	"feature": "tfg:earth/fluid_vein/oil_spout_and_sands",
+	"placement": [
+		{
+			"type": "minecraft:rarity_filter",
+			"chance": 80
+		},
+		{
+			"type": "minecraft:in_square"
+		},
+		{
+			"type": "minecraft:heightmap",
+			"heightmap": "WORLD_SURFACE"
+		},
+		{
+			"type": "minecraft:block_predicate_filter",
+			"predicate": {
+				"type": "minecraft:matching_blocks",
+				"offset": [ 0, -1, 0 ],
+				"blocks": "#tfc:can_carve"
+			}
+		},
+		{
+			"type": "minecraft:height_range",
+			"height": {
+				"type": "uniform",
+				"min_inclusive": {
+					"absolute": -20
+				},
+				"max_inclusive": {
+					"absolute": 20
+				}
+			}
+		},
+		{
+			"type": "tfg:fluid_vein",
+			"vein_ids": [
+				"tfg:oil_spout_hot",
+				"tfg:heavy_oil_spout_hot",
+				"tfg:raw_oil_spout_hot",
+				"tfg:light_oil_spout_hot",
+				"tfg:raw_oil_spout_sandstone",
+				"tfg:heavy_oil_spout_dry"
+			]
+		}
+	]
+}

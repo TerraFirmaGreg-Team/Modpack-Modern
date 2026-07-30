@@ -1,0 +1,38 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "墨西哥卷饼与墨西哥煎饼",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:textures/item/food/burrito.png",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "制作$(thing)玉米薄饼$()的过程虽漫长，但回报丰厚。首先从$(thing)玉米粒$()开始：将其放入$(thing)石灰水$()中煮沸，再密封于水桶中浸泡，即可制成$(thing)碱水玉米$()。随后用$(thing)手推磨$()研磨成$(thing)湿玉米粉$()。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "将马萨玉米面粉与一桶水合成即可得到制作薄饼的面团——$(thing)马萨玉米面团$()。加热该面团可制成$(thing)墨西哥薄饼$()，而将薄饼放入烤炉烘烤则会变成$(thing)墨西哥煎饼壳$()。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/tortilla_chips",
+      "recipe2": "firmalife:crafting/nachos"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfg:crafting/salsa",
+      "text": "将番茄、香菜、盐与刀组合即可制成$(thing)莎莎酱$()。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/burrito",
+      "text": "$(thing)墨西哥卷饼$()需用熟肉、$(l:firmalife/pizza#shredded_cheese)奶酪丝$()、$(l:firmalife/pizza#tomato_sauce)番茄酱$()、蔬菜与莎莎酱共同制作。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/taco",
+      "text": "$(thing)墨西哥煎饼$()原料与之相同，但需使用$(thing)墨西哥煎饼壳$()作为基底。"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 28
+}

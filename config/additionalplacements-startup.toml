@@ -14,7 +14,16 @@
 			[startup.types.additionalplacements.slab]
 				#Blocklist for controlling which blocks (that are valid for this type) will generate variants of this type
 				#See https://github.com/FirEmerald/AdditionalPlacements/wiki/Blocklist-Format for blocklist format
-				enabled = ["+*", "-rnr:roof_frame_slab"]
+				enabled = ["+*", "-rnr:roof_frame_slab", "-tfg:wood/crafting_station/araucaria_slab", "-tfg:wood/crafting_station/beech_slab", "-tfg:wood/crafting_station/mahoe_slab", 
+					"-tfg:wood/crafting_station/glacian_slab", "-tfg:wood/crafting_station/strophar_slab", "-tfg:wood/crafting_station/aeronos_slab", "-tfg:wood/crafting_station/ginkgo_slab", 
+					"-tfg:wood/crafting_station/baobab_slab", "-tfg:wood/crafting_station/eucalyptus_slab", "-tfg:wood/crafting_station/mahogany_slab", "-tfg:wood/crafting_station/hevea_slab", 
+					"-tfg:wood/crafting_station/tualang_slab", "-tfg:wood/crafting_station/teak_slab", "-tfg:wood/crafting_station/cypress_slab", "-tfg:wood/crafting_station/fig_slab", 
+					"-tfg:wood/crafting_station/ironwood_slab", "-tfg:wood/crafting_station/ipe_slab", "-tfg:wood/crafting_station/acacia_slab", "-tfg:wood/crafting_station/ash_slab", 
+					"-tfg:wood/crafting_station/aspen_slab", "-tfg:wood/crafting_station/birch_slab", "-tfg:wood/crafting_station/blackwood_slab", "-tfg:wood/crafting_station/chestnut_slab", 
+					"-tfg:wood/crafting_station/douglas_fir_slab", "-tfg:wood/crafting_station/hickory_slab", "-tfg:wood/crafting_station/kapok_slab", "-tfg:wood/crafting_station/mangrove_slab", 
+					"-tfg:wood/crafting_station/maple_slab", "-tfg:wood/crafting_station/oak_slab", "-tfg:wood/crafting_station/palm_slab", "-tfg:wood/crafting_station/pine_slab", 
+					"-tfg:wood/crafting_station/rosewood_slab", "-tfg:wood/crafting_station/sequoia_slab", "-tfg:wood/crafting_station/spruce_slab", "-tfg:wood/crafting_station/sycamore_slab", 
+					"-tfg:wood/crafting_station/white_cedar_slab", "-tfg:wood/crafting_station/willow_slab", "-tfg:wood/crafting_station/crimson_slab", "-tfg:wood/crafting_station/warped_slab" ]
 
 			#Stairs
 			[startup.types.additionalplacements.stairs]

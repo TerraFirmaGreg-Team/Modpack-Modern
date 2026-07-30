@@ -1,0 +1,18 @@
+{
+	"name": "こて",
+	"icon": "tfg:trowel",
+	"category": "tfc:mechanics",
+	"read_by_default": true,
+	"pages": [
+		{
+			"type": "patchouli:crafting",
+			"title": "こて",
+			"recipe": "tfg:shaped/trowel",
+			"text": "$(item)コテ$()を使うと、右クリックでホットバーにあるブロックをランダムに配置でき、建築作業がしやすくなります。$(br2)さらに、$(item)Roads and Roofs$()Modとも連携しており、レンガや石畳などの装飾も自動的にランダム配置できます。便利ですね。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "このアイテムは、みなさんご存知Vazkii氏の$(item)Quark$()Modの「trowel」にインスパイアされています。"
+		}
+	]
+}

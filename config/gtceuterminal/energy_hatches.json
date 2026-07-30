@@ -1,0 +1,62 @@
+{
+  "version": "2.0",
+  "description": "GTCEu Terminal - Energy Hatch Configuration",
+  "hatches": [],
+  "patterns": [
+    {
+      "blockIdPattern": "gtceu:*_energy_input_hatch",
+      "componentType": "ENERGY_HATCH",
+      "amperage": "2A"
+    },
+    {
+      "blockIdPattern": "gtceu:*_energy_input_hatch_4a",
+      "componentType": "ENERGY_HATCH",
+      "amperage": "4A"
+    },
+    {
+      "blockIdPattern": "gtceu:*_energy_input_hatch_16a",
+      "componentType": "ENERGY_HATCH",
+      "amperage": "16A"
+    },
+    {
+      "blockIdPattern": "gtceu:*_energy_input_hatch_64a",
+      "componentType": "ENERGY_HATCH",
+      "amperage": "64A"
+    },
+    {
+      "blockIdPattern": "gtceu:*_energy_input_hatch_256a",
+      "componentType": "ENERGY_HATCH",
+      "amperage": "256A"
+    },
+    {
+      "blockIdPattern": "gtceu:*_energy_output_hatch",
+      "componentType": "DYNAMO_HATCH",
+      "amperage": "2A"
+    },
+    {
+      "blockIdPattern": "gtceu:*_energy_output_hatch_4a",
+      "componentType": "DYNAMO_HATCH",
+      "amperage": "4A"
+    },
+    {
+      "blockIdPattern": "gtceu:*_energy_output_hatch_16a",
+      "componentType": "DYNAMO_HATCH",
+      "amperage": "16A"
+    },
+    {
+      "blockIdPattern": "gtceu:*_energy_output_hatch_64a",
+      "componentType": "DYNAMO_HATCH",
+      "amperage": "64A"
+    },
+    {
+      "blockIdPattern": "gtceu:*_substation_input_hatch_*",
+      "componentType": "SUBSTATION_INPUT",
+      "amperage": "64A+"
+    },
+    {
+      "blockIdPattern": "gtceu:*_substation_output_hatch_*",
+      "componentType": "SUBSTATION_OUTPUT",
+      "amperage": "64A+"
+    }
+  ]
+}

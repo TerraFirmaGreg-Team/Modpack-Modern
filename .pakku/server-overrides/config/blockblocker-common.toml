@@ -1,0 +1,4 @@
+
+[BlockBlocker]
+	BlockedBlocks = ["create_connected:creative_fluid_vessel", "applied_ammo_box:creative_ammo_box", "gtceu:creative_energy", "gtceu:creative_computation_provider", "gtceu:creative_tank", "gtceu:creative_chest", "gtceu:creative_data_access_hatch", "create:handheld_worldshaper", "create:creative_motor", "create:creative_fluid_tank", "create:creative_crate", "create:creative_blaze_cake", "createaddition:creative_energy"]
+

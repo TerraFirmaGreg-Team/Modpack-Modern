@@ -79,7 +79,7 @@ function processGTToolHead(event, toolType, headTagPrefix, material) {
 	} else {
 		event.recipes.tfc.advanced_shapeless_crafting(
 			TFC.itemStackProvider.of(toolItem).copyForgingBonus().copyHeat(),
-			[toolHeadItem, '#forge:rods/wooden'],
+			[toolHeadItem, '#forge:rods'],
 			toolHeadItem
 		)
 		.id(`gtceu:shaped/${toolType.name}_${materialName}`);
@@ -98,16 +98,23 @@ function processGTToolHead(event, toolType, headTagPrefix, material) {
  * @param {String} tagPrefixName
  * @param {Internal.ItemStack} extruderMold 
  * @param {Internal.ItemStack} ceramicMold
- * @param {number} circuitMeta 
  * Used for the laser engraver recipes for gem tools.
  * @param {com.gregtechceu.gtceu.api.data.chemical.material.Material_} material 
  */
-function processToolHead(event, headTagPrefix, tagPrefixName, extruderMold, ceramicMold, circuitMeta, material) {
+function processToolHead(event, headTagPrefix, tagPrefixName, extruderMold, ceramicMold, material) {
 	const toolHeadItem = ChemicalHelper.get(headTagPrefix, material, 1);
 	if (toolHeadItem.isEmpty())
 		return;
 
 	event.remove({ mod: 'gtceu', type: 'minecraft:crafting_shaped', output: toolHeadItem })
+
+	addMaterialRecycling(event, toolHeadItem, material, tagPrefixName, headTagPrefix);
+
+	const EXCLUDED_MATERIALS = [
+        'diamond_tipped_mo_50_re',
+    ];
+    if (EXCLUDED_MATERIALS.includes(material.getName()))
+		return;
 
 	const materialName = material.getName();
 	const materialAmount = getMaterialAmount(headTagPrefix, material);
@@ -136,25 +143,9 @@ function processToolHead(event, headTagPrefix, tagPrefixName, extruderMold, cera
 		}
 
 		if (material.hasFlag(TFGMaterialFlags.CAN_BE_UNMOLDED) && ceramicMold !== null) {
-			addMaterialCasting(event, toolHeadItem, ceramicMold, false, null, material, tagPrefixName, materialAmount * 144);
+			addMaterialCasting(event, toolHeadItem, ceramicMold, false, null, material, tagPrefixName, materialAmount * 144, false);
 		}
 	}
-	// Gem tools
-	else if (material.hasProperty(PropertyKey.GEM)) {
-		const gemItem = ChemicalHelper.get(TagPrefix.gem, material, materialAmount)
-		if (gemItem.isEmpty() || gemItem.hasTag('c:hidden_from_recipe_viewers'))
-			return
-
-		event.recipes.gtceu.laser_engraver(`tfg:engrave_${materialName}_gem_to_${tagPrefixName}`)
-			.itemInputs(gemItem)
-			.notConsumable(ChemicalHelper.get(TagPrefix.lens, GTMaterials.Glass, 1))
-			.circuit(circuitMeta)
-			.itemOutputs(toolHeadItem)
-			.duration(material.getMass() * 6)
-			.EUt(GTValues.VA[material === GTMaterials.Flint ? GTValues.LV : GTValues.MV])
-	}
-
-	addMaterialRecycling(event, toolHeadItem, material, tagPrefixName, headTagPrefix);
 }
 
 
@@ -163,7 +154,6 @@ function processToolHead(event, headTagPrefix, tagPrefixName, extruderMold, cera
  */
 function modifyRecyclingAmounts(material) {
 	TagPrefix.toolHeadWrench.modifyMaterialAmount(material, 2);
-	TagPrefix.toolHeadBuzzSaw.modifyMaterialAmount(material, 2);
 	TagPrefix.toolHeadScrewdriver.modifyMaterialAmount(material, 1);
 	TagPrefix.toolHeadWireCutter.modifyMaterialAmount(material, 2);
 	TFGTagPrefix.toolHeadSword.modifyMaterialAmount(material, 2);

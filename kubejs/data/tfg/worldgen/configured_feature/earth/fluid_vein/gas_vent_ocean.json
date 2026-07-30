@@ -1,0 +1,13 @@
+{
+    "type": "tfg:fluid_gas_vent",
+    "config": {
+        "base_radius": 6,
+        "chance": 0.8,
+        "vent": {
+            "Name": "tfg:natural_gas_bubble_emitter",
+            "Properties": {
+                "fluid": "salt_water"
+            }
+        }
+    }
+}

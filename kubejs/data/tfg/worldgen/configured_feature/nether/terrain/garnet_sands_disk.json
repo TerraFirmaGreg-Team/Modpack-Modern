@@ -1,0 +1,35 @@
+{
+	"type": "tfc:soil_disc",
+	"config": {
+		"height": 3,
+		"min_radius": 2,
+		"max_radius": 4,
+		"integrity": 0.75,
+		"states": [
+			{
+				"replace": "minecraft:blackstone",
+				"with": "gtceu:black_sand_garnet_sand_ore"
+			},
+			{
+				"replace": "minecraft:deepslate",
+				"with": "gtceu:black_sand_garnet_sand_ore"
+			},
+			{
+				"replace": "tfc:rock/raw/basalt",
+				"with": "gtceu:black_sand_garnet_sand_ore"
+			},
+			{
+				"replace": "tfg:dirt/mollisol",
+				"with": "gtceu:black_sand_garnet_sand_ore"
+			},
+			{
+				"replace": "tfg:coarse_dirt/mollisol",
+				"with": "gtceu:black_sand_garnet_sand_ore"
+			},
+			{
+				"replace": "beneath:crackrack",
+				"with": "gtceu:pink_sand_garnet_sand_ore"
+			}
+		]
+	}
+}

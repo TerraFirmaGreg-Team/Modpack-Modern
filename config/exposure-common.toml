@@ -1,60 +1,12 @@
 
-[Camera]
-	#Default focal range of the camera (without a lens attached).
-	#Allowed range: 10-300
-	#Default: 18-55
-	DefaultFocalRange = "18-55"
-	#Can attack while looking through Viewfinder.
+[misc]
+	#Signed Album item will have an enchantment glint.
+	signed_album_glint = true
+	#Mundane, Awkward and Thick potions will have their color changed slightly, so it's easier to tell them apart. Default: true
+	different_developing_potions_colors = true
+	#Generate photographs and film rolls in loot chests. Default: true
+	loot_chests = true
+	#Convert old photograph IDs to the new system (1.7 -> 1.9 update). Makes old photos visible, but results may be undesirable (missing pixels, different colors, etc).
 	#Default: true
-	ViewfinderAttacking = true
-	#Right-clicking Camera in GUI will open Camera attachments screen. Only in player inventory.
-	#Default: true
-	RightClickAttachmentsScreen = true
-	#Right-clicking Camera in GUI with attachment item will insert/swap it.
-	#Default: true
-	RightClickHotswap = true
-
-[Lightroom]
-	#Time in ticks to print black and white photograph. Default: 80
-	#Range: > 1
-	BlackAndWhitePrintTime = 80
-	#Time in ticks to print color photograph. Default: 200
-	#Range: > 1
-	ColorPrintTime = 200
-	#Time in ticks to print one channel of a chromatic photograph. Default: 120
-	#Range: > 1
-	ChromaticPrintTime = 120
-	#Amount of experience awarded per printed black and white Photograph. Set to 0 to disable. Default: 2
-	#Range: 0 ~ 99
-	ExperiencePerPrintBW = 2
-	#Amount of experience awarded per printed color Photograph. Set to 0 to disable. Default: 4
-	#Range: 0 ~ 99
-	ExperiencePerPrintColor = 4
-	#Amount of experience awarded per printed chromatic Photograph (when all three channels have been printed). Set to 0 to disable. Default: 5
-	#Range: 0 ~ 99
-	ExperiencePerPrintChromatic = 5
-
-[Integration]
-
-	[Integration.Create]
-
-		[Integration.Create.SequencedSpoutFilmDeveloping]
-			#Film can be developed with create Spout Filling. Default: true
-			Enabled = true
-			#Fluid spouting sequence required to develop color film.
-			ColorFilmSequence = ["{FluidName:\"create:potion\",Amount:250,Tag:{Potion:\"minecraft:awkward\"}}", "{FluidName:\"create:potion\",Amount:250,Tag:{Potion:\"minecraft:thick\"}}", "{FluidName:\"create:potion\",Amount:250,Tag:{Potion:\"minecraft:mundane\"}}"]
-			#Fluid spouting sequence required to develop black and white film.
-			BlackAndWhiteFilmSequence = ["{FluidName:\"minecraft:water\",Amount:250}"]
-
-[Photographs]
-	#How many photographs can be stacked in Stacked Photographs item. Default: 16.
-	#Larger numbers may cause errors. Use at your own risk.
-	#Range: 2 ~ 64
-	StackedPhotographsMaxSize = 16
-
-[Misc]
-	#Film rolls can be renamed by using the item. Default: true
-	FilmRollRenaming = true
-	#Generate items in loot chests. Default: true
-	AddItemsToLootChests = true
+	datafix_old_ids = true
 

@@ -78,7 +78,7 @@ function registerTFGMultiblockRecipes(event) {
 		'ACA'
 	], {
 		A: '#forge:plates/brass',
-		B: 'create:steam_engine',
+		B: 'create:flywheel',
 		C: ChemicalHelper.get(TagPrefix.gear, GTMaterials.Invar, 1),
 		D: '#gtceu:circuits/lv'
 	}).addMaterialInfo().id('tfg:shaped/steam_thermal_centrifuge')
@@ -222,7 +222,7 @@ function registerTFGMultiblockRecipes(event) {
 		B: 'gtceu:ev_robot_arm'
 	}).addMaterialInfo().id('tfg:shaped/nuclear_fuel_factory')
 
-	event.recipes.gtceu.shaped('gtceu:heat_exchanger', [
+	event.recipes.gtceu.shaped('tfg:heat_exchanger', [
 		'TUT',
 		'WZW',
 		'GBG'
@@ -282,5 +282,90 @@ function registerTFGMultiblockRecipes(event) {
 		.duration(300)
 		.EUt(GTValues.VA[GTValues.EV])
 		.circuit(2)
+
+	// Large Bronze Boiler
+
+	event.recipes.gtceu.shaped('tfg:large_bronze_boiler', [
+		'ABA',
+		'BCB',
+		'ABA'
+	], {
+		A: '#forge:quadruple_wires/tin',
+		B: '#gtceu:circuits/ulv',
+		C: Item.of('gtceu:bronze_firebox_casing')
+	}).addMaterialInfo().id('tfg:shaped/large_bronze_boiler')
+
+	// Large Steel Boiler
+
+	event.recipes.gtceu.shaped('tfg:large_steel_boiler', [
+		'ABA',
+		'BCB',
+		'DBD'
+	], {
+		A: '#forge:single_cables/copper',
+		B: '#gtceu:circuits/mv',
+		C: Item.of('gtceu:steel_firebox_casing'),
+		D: '#gtceu:capacitors'
+	}).addMaterialInfo().id('tfg:shaped/large_steel_boiler')
+
+	// Large Steam Turbine
+
+	event.recipes.gtceu.shaped('tfg:large_steam_turbine', [
+		'ABE',
+		'BCB',
+		'DBD'
+	], {
+		A: Item.of('gtceu:red_steel_gear'),
+		B: '#gtceu:circuits/hv',
+		C: Item.of('gtceu:hv_machine_hull'),
+		D: Item.of('#forge:huge_fluid_pipes/stainless_steel'),
+		E: Item.of('gtceu:blue_steel_gear')
+	}).addMaterialInfo().id('tfg:shaped/large_steam_turbine')
+
+	event.replaceInput({ id: 'gtceu:shaped/casing_steel_turbine_casing'}, 'gtceu:magnalium_plate', 'gtceu:double_magnalium_plate')
+	event.replaceInput({ id: 'gtceu:assembler/casing_steel_turbine'}, 'gtceu:magnalium_plate', 'gtceu:double_magnalium_plate')
+
+	// Gas Well
+
+	event.recipes.gtceu.shaped('tfg:gas_well', [
+		'ABA',
+		'BCB',
+		'DBD'
+	], {
+		A: Item.of('gtceu:small_steel_gear'),
+		B: '#gtceu:circuits/ulv',
+		C: Item.of('gtceu:ulv_machine_hull'),
+		D: Item.of('#forge:normal_fluid_pipes/steel')
+	}).addMaterialInfo().id('tfg:shaped/gas_well')
+
+	// Pastoral Rancher
+
+	event.recipes.gtceu.shaped('tfg:pastoral_engine', [
+		'ABA',
+		'DCE',
+		'ABA'
+	], {
+		A: Item.of('gtceu:copper_single_cable'),
+		B: '#gtceu:circuits/mv',
+		C: Item.of('gtceu:steel_machine_casing'),
+		D: Item.of('tfcgroomer:red_steel_grooming_station'),
+		E: Item.of('tfcgroomer:blue_steel_grooming_station')
+	}).addMaterialInfo().id('tfg:shaped/pastoral_engine')
+
+	// Geologic Vulcanizer
+
+	event.recipes.gtceu.shaped('tfg:ore_processing_beneath', [
+		'ABC',
+		'DED',
+		'FGF'
+	], {
+		A: Item.of('gtceu:lv_ore_washer'),
+		B: Item.of('gtceu:lv_thermal_centrifuge'),
+		C: Item.of('gtceu:lv_macerator'),
+		D: '#gtceu:circuits/lv',
+		E: Item.of('gtceu:industrial_steam_casing'),
+		F: Item.of('gtceu:bronze_normal_fluid_pipe'),
+		G: Item.of('gtceu:tin_single_cable')
+	}).addMaterialInfo().id('tfg:shaped/ore_processing_beneath')
 	
 }

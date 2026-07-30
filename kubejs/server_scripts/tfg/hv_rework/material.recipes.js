@@ -89,15 +89,15 @@ function registerTFGHVMaterialRecipes(event) {
     event.recipes.gtceu.mixer('tfg:obsidian_dust')
         .inputFluids(Fluid.of('tfg:igneous_mafic', 144), Fluid.of('gtceu:ice', 1000))
 		.itemOutputs(Item.of('gtceu:obsidian_dust', 1))
-        .duration(20 * 28)
-        .EUt(GTValues.VA[GTValues.LV]);
+        .duration(20 * 7)
+        .EUt(GTValues.VA[GTValues.HV]);
 
     event.recipes.gtceu.gas_pressurizer('tfg:obsidian_dust')
 		.itemInputs(Item.of('gtceu:obsidian_dust', 1))
         .inputFluids(Fluid.of('gtceu:steam', 1000))
 		.itemOutputs(Item.of('gtceu:perlite_dust', 1))
-        .duration(20 * 16)
-        .EUt(GTValues.VA[GTValues.HV]);
+        .duration(20 * 8)
+        .EUt(GTValues.VHA[GTValues.HV]);
 
 	// Alumina
 
@@ -147,7 +147,7 @@ function registerTFGHVMaterialRecipes(event) {
 		.inputFluids(Fluid.of('gtceu:titanium_tetrachloride', 1000))
 		.itemOutputs(Item.of('gtceu:hot_titanium_ingot', 1), Item.of('gtceu:magnesium_chloride_dust', 6))
 		.duration(20 * 30)
-		.blastFurnaceTemp(2750)
+		.blastFurnaceTemp(2950)
 		.EUt(GTValues.VA[GTValues.HV])
 
 	// Let's also do NaqLine here
@@ -158,7 +158,7 @@ function registerTFGHVMaterialRecipes(event) {
 		.itemOutputs(Item.of('gtceu:hot_titanium_ingot', 1))
 		.outputFluids(Fluid.of('gtceu:hydrofluoric_acid', 3000))
 		.duration(20 * 30)
-		.blastFurnaceTemp(2750)
+		.blastFurnaceTemp(2950)
 		.EUt(GTValues.VA[GTValues.HV])
 
 	//#endregion

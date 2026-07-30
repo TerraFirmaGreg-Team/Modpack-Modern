@@ -1,0 +1,50 @@
+{
+	"feature": "tfg:nether/terrain/oil_lake_selector",
+	"placement": [
+		{
+			"type": "minecraft:count",
+			"count": 10
+		},
+		{
+			"type": "minecraft:random_offset",
+			"y_spread": 0,
+			"xz_spread": {
+				"type": "minecraft:uniform",
+				"value": {
+					"min_inclusive": -8,
+					"max_inclusive": 8
+				}
+			}
+		},
+		{
+			"type": "minecraft:height_range",
+			"height": {
+				"type": "minecraft:uniform",
+				"max_inclusive": {
+					"absolute": 180
+				},
+				"min_inclusive": {
+					"absolute": 50
+				}
+			}
+		},
+		{
+			"type": "minecraft:biome"
+		},
+		{
+			"type": "minecraft:environment_scan",
+			"allowed_search_condition": {
+				"type": "minecraft:matching_blocks",
+				"blocks": "minecraft:air"
+			},
+			"direction_of_search": "down",
+			"max_steps": 12,
+			"target_condition": {
+				"type": "minecraft:solid"
+			}
+		},
+		{
+			"type": "minecraft:biome"
+		}
+	]
+}

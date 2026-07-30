@@ -27,7 +27,7 @@
 	#Those blocks that the ammo can pass through
 	PassThroughBlocks = []
 	#Whether a ammo can break the glass
-	DestroyGlass = true
+	DestroyGlass = false
 	#Whether a ammo can ignite the block
 	IgniteBlock = true
 	#Whether a ammo can ignite the entity

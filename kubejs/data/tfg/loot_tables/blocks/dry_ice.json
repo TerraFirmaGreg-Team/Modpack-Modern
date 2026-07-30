@@ -1,0 +1,34 @@
+{
+    "type": "minecraft:block",
+    "pools": [
+        {
+            "name": "loot_pool",
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "tfg:dry_ice"
+                }
+            ],
+            "conditions": [
+                {
+                    "condition": "minecraft:any_of",
+                    "terms": [
+                        {
+                            "condition": "minecraft:match_tool",
+                            "predicate": {
+                                "tag": "minecraft:pickaxes"
+                            }
+                        },
+                        {
+                            "condition": "minecraft:match_tool",
+                            "predicate": {
+                                "tag": "tfc:saws"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

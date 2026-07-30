@@ -1,0 +1,22 @@
+{
+	"name": "魚取り網",
+	"icon": "tfg:fishing_net/brass",
+	"category": "tfc:mechanics",
+	"read_by_default": true,
+	"pages": [
+		{
+			"type": "patchouli:spotlight",
+			"title": "魚取り網",
+			"item": {
+				"tag": "forge:tools/fishing_nets"
+			},
+			"text": "槍で魚を追い回すのに疲れていませんか？それとも、せっかく$(l:mechanics/fishing)釣り$()あげた魚を逃してしまったことはありませんか？そんなときは$(thing)魚取り網$()を作って、手軽に魚を確保しましょう。$(br)使い方は簡単です。ただ魚に向かって右クリックするだけでインベントリに回収できます。なお、魚取り網は上位のものでも性能は変わらず、耐久値のみが異なります。"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": "木製の魚取り網",
+			"recipe": "tfc:kjs/damage/shaped/fishing_net/wood",
+			"text": "基本的な$(item)木製の魚取り網$()。"
+		}
+	]
+}

@@ -1,0 +1,24 @@
+{
+	"name": "muggy_bog",
+	"regions": [
+		"cave"
+	],
+	"biomes": [
+		"muggy_bog"
+	],
+	"biome-type": "underground",
+	"min-height-relative": {
+		"max": -5,
+		"fade": 2
+	},
+	"sounds": [
+		{
+			"name": "frog",
+			"category": "suspense",
+			"files": [
+				"ambientsounds:animals.frog-cave1"
+			],
+			"volume": 0.3
+		}
+	]
+}

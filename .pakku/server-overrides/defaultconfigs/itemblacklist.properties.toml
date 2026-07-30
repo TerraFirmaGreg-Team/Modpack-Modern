@@ -1,0 +1,19 @@
+
+[banProperties]
+	#The chance that an item is checked. Lower values will give better performance. 
+	# Does not apply to crafting and merchant trades
+	#Range: 0.0 ~ 1.0
+	banRate = 0.5
+	#Should ban items from containers
+	banContainerChanged = true
+	#Should take away merchant trades
+	banMerchantTrades = true
+	#Should ban crafting recipes that create the item
+	banCraftingRecipes = false
+	#Should ban the item when it's dropped
+	banItemEntity = true
+
+[miscProperties]
+	#Should non-ops be able to see the banned items
+	showMessages = false
+

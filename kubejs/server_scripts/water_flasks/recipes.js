@@ -104,7 +104,7 @@ const registerWaterFlasksRecipes = (event) => {
 			'C '
 		], {
 			A: 'waterflasks:iron_flask',
-			B: '#forge:foils/rubber',
+			B: '#tfg:rubber_foils',
 			C: '#forge:cloth'
 		})).id('tfg:shaped/repair_iron_rubber')
 
@@ -130,26 +130,26 @@ const registerWaterFlasksRecipes = (event) => {
 		A: '#forge:string',
 		B: '#forge:tools/knives',
 		C: 'tfg:phantom_silk',
-		D: '#forge:foils/rubber',
+		D: '#tfg:rubber_foils',
 		F: 'waterflasks:unfinished_red_steel_flask'
 	}).id('tfg:shaped/red_steel_flask_rubber')
 
 	event.recipes.gtceu.assembler('tfg:water_flasks/iron_flask')
-		.itemInputs('2x #forge:cloth', '#forge:string', '#forge:plates/wrought_iron', '3x #forge:foils/rubber')
+		.itemInputs('2x #forge:cloth', '#forge:string', '#forge:plates/wrought_iron', '3x #tfg:rubber_foils')
 		.circuit(5)
 		.itemOutputs('waterflasks:iron_flask')
 		.duration(250)
 		.EUt(16)
 
 	event.recipes.gtceu.assembler('tfg:water_flasks/iron_flask_repair')
-		.itemInputs('waterflasks:broken_iron_flask', '#forge:cloth', '#forge:foils/rubber')
+		.itemInputs('waterflasks:broken_iron_flask', '#forge:cloth', '#tfg:rubber_foils')
 		.circuit(6)
 		.itemOutputs('waterflasks:iron_flask')
 		.duration(250)
 		.EUt(16)
 
 	event.recipes.gtceu.assembler('tfg:water_flasks/red_steel_flask')
-		.itemInputs('2x tfg:phantom_silk', '#forge:string', '#forge:plates/red_steel', '3x #forge:foils/rubber')
+		.itemInputs('2x tfg:phantom_silk', '#forge:string', '#forge:plates/red_steel', '3x #tfg:rubber_foils')
 		.circuit(5)
 		.itemOutputs('waterflasks:red_steel_flask')
 		.duration(250)

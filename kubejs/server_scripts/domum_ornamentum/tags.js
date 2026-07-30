@@ -5,17 +5,13 @@ function registerDomumOrnamentumItemTags(event) {
     global.DOMUM_ORNAMENTUM_FLOATING_CARPETS.forEach((carpet) => {
         event.add("domum_ornamentum:floating_carpet", carpet);
     });
+
+    event.add('minecraft:fences', 'domum_ornamentum:vanilla_fence_compat')
+    event.add('minecraft:fence_gates', 'domum_ornamentum:vanilla_fence_gate_compat')
 }
 
 /** @param {TagEvent.Block} event */
 function registerDomumOrnamentumBlockTags(event) {
-    //#region Hidden Items
-    global.DOMUM_ORNAMENTUM_DISABLED_ITEMS.forEach((item) => {
-        event.removeAllTagsFrom(item);
-        event.add("c:hidden_from_recipe_viewers", item);
-    });
-    //#endregion
-
     //#region Assign Tags
     const materials = [
         //tags

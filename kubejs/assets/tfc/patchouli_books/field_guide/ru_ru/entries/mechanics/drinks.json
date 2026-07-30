@@ -1,82 +1,132 @@
 {
-	"name": "Питьевые эффекты",
+	"name": "Напитки",
 	"icon": "firmalife:olivine_wine_bottle",
 	"category": "tfc:mechanics",
 	"read_by_default": true,
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Зелья и магия не существуют в мире TerraFirmaCraft,но есть множество других напитков, которые могут оказывать схожий эффект!$(br2)В этой главе представлен список всех различных эффектов, а в качестве бонуса, все они также способствуют поддержанию водного баланса."
+			"anchor": "intro",
+			"text": "Зелья и магия не существуют в мире TerraFirmaCraft, но есть множество других способов добиться схожего эффекта!$(br2)В этой главе представлены напитки и их эффекты при употреблении."
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Каталог",
+			"anchor": "index",
+			"text": "$(li)$(bold)$(l:mechanics/drinks#containers)Контейнеры$()$(li)$(bold)$(l:mechanics/drinks#alcohol)Алкоголь$()$(li2)$(l:mechanics/drinks#aged_alcohol)Выдержанный алкоголь$()$(li2)$(l:mechanics/drinks#vintage_alcohol)Сверхвыдержанный алкоголь$()$(li2)$(l:mechanics/drinks#wine)Вино$()$(li)$(bold)$(l:mechanics/drinks#spring_water)Родниковая вода$()$(li)$(bold)$(l:mechanics/drinks#sea_water)Морская вода$()$(li)$(bold)$(l:mechanics/drinks#muddy_water)Грязная вода$()$(li)$(bold)$(l:mechanics/drinks#juice)Фруктовый сок$()$(li)$(bold)$(l:mechanics/drinks#yogurt)Йогурт$()$(li)$(bold)$(l:mechanics/drinks#smoothie)Fruit Smoothie$()$(li)$(bold)$(l:mechanics/drinks#ice_slush)Ледяная слякоть$()"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"title": "Резервуары для напитков",
-			"text": "Напитки можно пить из $(l:getting_started/pottery#jug)кувшина$(), $(l:waterflasks/recipes)бурдюка$() или $(l:mechanics/glassworking_applications#glass_bottle)пузырька$(). Кувшины вмещают только один глоток и легко разбиваются. Пузырьки вмещают лишь небольшое количество глотков и тоже могут разбиться. Бурдюки могут вмещать ещё больше и при этом постепенно теряют свою прочность, кроме $(item)фляги(красная сталь)$() вмещает 20 напитков и никогда не ломается.",
-			"item": "tfc:ceramic/jug,tfc:silica_glass_bottle,tfc:olivine_glass_bottle,tfc:hematitic_glass_bottle,tfc:volcanic_glass_bottle,waterflasks:leather_flask,waterflasks:iron_flask,waterflasks:red_steel_flask"
+			"text": "Напитки можно пить из $(l:getting_started/pottery#jug)кувшина$(), $(l:waterflasks/recipes)бурдюка$() или $(l:mechanics/glassworking_applications#glass_bottle)пузырька$(). Кувшины вмещают только один глоток и легко разбиваются. Пузырьки вмещают лишь небольшое количество глотков и тоже могут разбиться. Бурдюки могут вмещать ещё больше и при этом постепенно теряют свою прочность, кроме $(item)Фляги из красной стали$() вмещает 20 напитков и никогда не ломается.",
+			"item": "tfc:ceramic/jug,tfc:silica_glass_bottle,tfc:olivine_glass_bottle,tfc:hematitic_glass_bottle,tfc:volcanic_glass_bottle,waterflasks:leather_flask,waterflasks:iron_flask,waterflasks:red_steel_flask",
+			"anchor": "containers"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Алкоголь",
+			"text": "$(thing)Обычный алкоголь$() не даёт положительных эффектов игроку. Его можно сделать путём добавления различных фруктов, муки или других ингредиентов в $(l:mechanics/barrels)Бочке$() с водой. Как бонус, распитие любого алкоголя повлияет на ваше общение в чате!",
+			"item": "tfcagedalcohol:bucket/aged_beer,tfcagedalcohol:bucket/aged_cider,tfcagedalcohol:bucket/aged_rum,tfcagedalcohol:bucket/aged_sake,tfcagedalcohol:bucket/aged_vodka,tfcagedalcohol:bucket/aged_whiskey,tfcagedalcohol:bucket/aged_corn_whiskey,tfcagedalcohol:bucket/aged_rye_whiskey",
+			"anchor": "alcohol"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"title": "Выдержанный алкоголь",
-			"text": "$(thing)Выдержанный алкоголь$() приготовляется путём выдержки обычного алкоголя, который, в свою очередь, получают путем оставления различных фруктов, муки или других ингридиентов в бочке с водой. В качестве бонуса, они влияют на вашу речь в чате!",
-			"item": "tfcagedalcohol:bucket/aged_beer,tfcagedalcohol:bucket/aged_cider,tfcagedalcohol:bucket/aged_rum,tfcagedalcohol:bucket/aged_sake,tfcagedalcohol:bucket/aged_vodka,tfcagedalcohol:bucket/aged_whiskey,tfcagedalcohol:bucket/aged_corn_whiskey,tfcagedalcohol:bucket/aged_rye_whiskey"
+			"text": "$(thing)Выдержанный алкоголь$() готовится выдержкой обычного алкоголя за 3 месяца в запечатанной бочке. Выдержанный алкоголь обеспечивает эффектами при употреблении.",
+			"item": "tfcagedalcohol:bucket/aged_beer,tfcagedalcohol:bucket/aged_cider,tfcagedalcohol:bucket/aged_rum,tfcagedalcohol:bucket/aged_sake,tfcagedalcohol:bucket/aged_vodka,tfcagedalcohol:bucket/aged_whiskey,tfcagedalcohol:bucket/aged_corn_whiskey,tfcagedalcohol:bucket/aged_rye_whiskey",
+			"anchor": "aged_alcohol"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(li)Выдержанное пиво: Поглощение II (20:00)$(li)Выдержанный сидр: Скорость (5:20)$(li)Выдержанный ром: Скорость II (2:40)$(li)Выдержанное саке: Сопротивление (5:20)$(li)Выдержанная водка: Сопротивление II (2:40)$(li)Выдержанный кукурузное виски: Спешка (5:20)$(li)Выдержанный ржаной виски: Спешка (5:20)$(li)Выдержанный виски: Спешка II (2:40)$(li)Выдержанная медовуха: Регенерация (5:20)"
-		},
-		{
-			"type": "patchouli:text",
-			"title": "Wine",
-			"text": "$(thing)Вино$() — это ещё один вид алкоголя, который производится иначе, чем другие. Это сложный, но увлекательный процесс, который невозможно автоматизировать с помощью машины. Проверь главу $(l:firmalife/wine)Винаделия$() для изучения, как его производить.",
-			"item": "firmalife:bucket/red_wine,firmalife:bucket/white_wine,firmalife:bucket/rose_wine,firmalife:bucket/sparkling_wine,firmalife:bucket/dessert_wine"
-		},
-		{
-			"type": "patchouli:text",
-			"text": "$(li)Красное вино: Сила (5:20)$(li)Белое вино: Устойчивость к иссушению (5:20)$(li)Розовое вино: Скорость плавания (5:20)$(li)Игристое вино: Прыгучесть II (5:20)$(li)Десертное вино: Упёртость (5:20)"
+			"text": "$(li)Выдержанное пиво: Поглощение II (5:20)$(li)Выдержанный сидр: Скорость (5:20)$(li)Выдержанный ром: Скорость II (2:40)$(li)Выдержанное саке: Сопротивление (5:20)$(li)Выдержанная водка: Сопротивление II (2:40)$(li)Выдержанный кукурузное виски: Спешка (5:20)$(li)Выдержанный ржаной виски: Спешка (5:20)$(li)Выдержанный виски: Спешка II (2:40)$(li)Выдержанная медовуха: Регенерация (5:20)"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Чаи",
-			"text": "$(thing)Чаи$() можно заваривать, используя высушенные версии некоторых растений.$(br2)Они дают кратковременные, но эффективные эффекты и согревают на 4°C. Идеально подходят для зимы!",
-			"item": "tfc_gourmet:tea_mint_bucket,tfc_gourmet:tea_chamomile_bucket,tfc_gourmet:tea_rosehip_bucket,tfc_gourmet:tea_nettle_bucket"
+			"title": "Сверхвыдержанный алкоголь",
+			"text": "$(thing)Сверхвыдержанный алкоголь$() готовится дальнейшей выдержкой выдержанного алкоголя ещё за 3 месяца в запечатанной бочке. Этот алкоголь обеспечивает сильнее эффект и увеличенной длительностью.",
+			"item": "tfg:vintage_beer_bucket,tfg:vintage_cider_bucket,tfg:vintage_rum_bucket,tfg:vintage_sake_bucket,tfg:vintage_vodka_bucket,tfg:vintage_whiskey_bucket,tfg:vintage_corn_whiskey_bucket,tfg:vintage_rye_whiskey_bucket",
+			"anchor": "vintage_alcohol"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(li)Мятный чай: Регенерация II (0:30)$(li)Ромашковый чай: Сопротивление II (0:30)$(li)Шиповниковый чай: Поглощение (0:30)$(li)Крапивный чай: Плавное падение (0:30)"
-		},
-		{
-			"type": "patchouli:spotlight",
-			"title": "Сладости",
-			"text": "Это категория для других разнообразных напитков с восхитительным вкусом и особыми эффектами. Приятного аппетита!",
-			"item": "tfc_gourmet:cocoa_bucket,tfc_gourmet:coffee_bucket,tfc_gourmet:nalivka_bucket,tfc_gourmet:kvass_bucket,tfc_gourmet:compote_bucket,tfc_gourmet:lemonade_bucket"
+			"text": "$(li)Старинное пиво: Поглощение III (8:00)$(li)Старинный сидр: Скорость II (8:00)$(li)Старинный ром: Скорость III (4:00)$(li)Старинное саке: Сопротивление II (8:00)$(li)Старинная водка: Сопротивление III (4:00)$(li)Старинное кукурузное виски: Спешка II (8:00)$(li)Старинное ржаное виски: Спешка II (8:00)$(li)Старинный виски: Спешка III (4:00)$(li)Старинная медовуха: Регенерация II (8:00)"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(li)Какао: Спешка (0:30), согревает тебя на 4°C$(li)Кофе: Скорость (0:30), согревает тебя на 4°C$(li)Лимонад: Спешка (0:30), охлаждает тебя на 2°C$(li)Наливка: Сила (2:40), охлаждает тебя на 2°C$(li)Квас: Сила (1:20), охлаждает тебя на 2°C$(li)Компот: Прыгучесть II (0:30)"
+			"title": "Вино",
+			"text": "$(thing)Вино$() — это ещё один вид алкоголя, который производится иначе, чем другие. Это сложный, но увлекательный процесс, который невозможно автоматизировать с помощью машины. Проверь главу $(l:firmalife/wine)Винаделия$() для изучения, как его производить.$(br2)Все вина также дают эффект $(item)Сила (5:20)$() в дополнение к другим эффектам!",
+			"item": "firmalife:bucket/red_wine,firmalife:bucket/white_wine,firmalife:bucket/rose_wine,firmalife:bucket/sparkling_wine,firmalife:bucket/dessert_wine",
+			"anchor": "wine"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(li)Красное вино: Спешка (5:20)$(li)Белое вино: Сопротивление иссушению (5:20)$(li)Розовое вино: Ускоренное плавание (5:20)$(li)Игристое вино: Прыгучесть II (5:20)$(li)Десертное вино: Сопротивление отбрасыванию (5:20)"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"title": "Молоко",
-			"text": "$(thing)Молоко$() можно получить от большинства самок молочных животных, просто щелкнув по ним правой кнопкой мыши с деревянным или металлическим ведром, когда уровень прирученности достигнет достаточно высокого уровня. (Если доение не работает, убедитесь, что ведра не состаканы!)$(br)Хотя этот напиток не дает никаких бонусов, он обеспечивает организм молочными продуктами, если его выпить после еды, и из него впоследствии можно приготовить сыр.",
-			"item": "minecraft:milk_bucket,firmalife:bucket/yak_milk,firmalife:bucket/goat_milk,tfc_gourmet:ox_milk_bucket,tfc_gourmet:sheep_milk_bucket,tfc_gourmet:alpaca_milk_bucket"
+			"text": "Это категория для других разнообразных напитков с восхитительным вкусом и особыми эффектами. Приятного аппетита!",
+			"item": "minecraft:milk_bucket,firmalife:bucket/yak_milk,firmalife:bucket/goat_milk",
+			"anchor": "milk"
 		},
 		{
 			"title": "Родниковая вода",
-			"text": "Питьё $(thing)Родниковой воды$() согревает тебя на 4°C и при стоянии в ней даёт эффект регенерация, а также согревает",
+			"text": "Питьё $(thing)Родниковой воды$() согревает тебя на 4°C и при стоянии в ней даёт эффект регенерация, а также согревает.",
 			"item": "tfc:bucket/spring_water",
-			"type": "patchouli:spotlight"
+			"type": "patchouli:spotlight",
+			"anchor": "spring_water"
 		},
 		{
 			"title": "Морская вода",
-			"text": "Питьё $(thing)Морской воды$() не утоляет жажду, а наоборот, усиливает её. Высокая температура тела также может усиливать жажду. Заблудились в море? Посмотрите вверх, когда идёт дождь, так легко можно утолить жажду!",
+			"text": "$(thing)Молоко$() можно получить от большинства самок молочных животных, просто щелкнув по ним правой кнопкой мыши с деревянным или металлическим ведром, только когда уровень прирученности достигнет достаточно высокого уровня. (Если доение не работает, убедитесь, что ведра не состаканы!)$(br)Хотя этот напиток не дает никаких бонусов, он обеспечивает организм молочными продуктами, если его выпить после еды. Из него впоследствии можно приготовить сыр.",
 			"type": "patchouli:spotlight",
-			"item": "tfc:bucket/salt_water"
+			"item": "tfc:bucket/salt_water",
+			"anchor": "sea_water"
 		},
 		{
-			"title": "Ледяная слякоть",
+			"title": "Грязная Вода",
+			"text": "Питьё $(thing)Грязной воды$() не рекомендуется. От этого тебя стошнит и появятся паразиты.",
+			"type": "patchouli:spotlight",
+			"item": "tfg:muddy_water_bucket",
+			"anchor": "muddy_water"
+		},
+		{
+			"title": "Фруктовый сок",
+			"text": "$(thing)Фруктовый сок$() — отличный способ превратить ваши фрукты в продукт с большей длительностью хранения. Фруктовый сок даёт $(l:getting_started/food_and_water#quenching_transient_effect)Утоление$().  Он поможет утолять жажду.$(br2)Срок годности фруктового сока ограничен.$()",
+			"type": "patchouli:spotlight",
+			"anchor": "juice",
+			"item": "tfg:food/juice"
+		},
+		{
+			"title": "Йогурт",
+			"text": "$(thing)Йогурт$() содержит те же питательные вещества, что и молоко. Он также может быть смешат с фруктами для получения $(item)Фруктового йогурта$().$(br2)Срок годности йогурта ограничен.$()",
+			"type": "patchouli:spotlight",
+			"anchor": "yogurt",
+			"item": "tfg:food/yogurt"
+		},
+		{
+			"title": "Фруктовый смузи",
+			"text": "$(thing)Смузи$() крайне мощный напиток. Он обеспечивает эффектами $(l:getting_started/food_and_water#quenching_transient_effect)Утоление$() и $(l:getting_started/food_and_water#cooling_transient_effect)Охлаждение$(). Они хорошие источники для $(l:getting_started/food_and_water#fruit)Фруктового$() и $(l:getting_started/food_and_water#dairy)Молочного$() рациона.$(br2)Срок годности смузи ограничен.$()",
+			"type": "patchouli:spotlight",
+			"anchor": "smoothie",
+			"item": "tfg:food/smoothie"
+		},
+		{
+			"title": "Жидкая ледяная слякоть",
 			"text": "Питьё $(thing)Ледяной слякоти$() охлаждает тебя на 4°C, идеально для лета! Также удобно для передвижения в бездне.",
 			"type": "patchouli:spotlight",
-			"item": "gtceu:ice_bucket"
+			"item": "gtceu:ice_bucket",
+			"anchor": "ice_slush"
+		},
+		{
+			"type": "patchouli:relations",
+			"title": "Читать дальше",
+			"anchor": "relations",
+			"entries": [
+                "tfc:getting_started/food_and_water",
+                "tfc:firmalife/wine",
+                "tfc:waterflasks/recipes"
+			]
 		}
 	]
 }

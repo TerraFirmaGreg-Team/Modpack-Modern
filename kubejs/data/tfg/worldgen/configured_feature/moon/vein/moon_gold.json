@@ -9,6 +9,9 @@
     "min_y": 10,
     "max_y": 80,
     "random_name": "moon_gold",
+    "project": false,
+    "project_offset": false,
+    "near_lava": false,
     "blocks": [
       {
         "replace": [

@@ -1,0 +1,31 @@
+{
+	"pools": [
+		{
+			"entries": [
+				{
+					"name": "wan_ancient_beasts:rafflesia",
+					"type": "minecraft:item",
+					"conditions": [
+						{
+							"condition": "minecraft:any_of",
+							"terms": [
+								{
+									"predicate": { "tag": "tfc:sharp_tools" },
+									"condition": "minecraft:match_tool"
+								},
+								{
+									"predicate": { "tag": "forge:shears" },
+									"condition": "minecraft:match_tool"
+								}
+							]
+						}
+					]
+				}
+			],
+			"name": "loot_pool",
+			"rolls": 1,
+			"conditions": [ { "condition": "minecraft:survives_explosion" } ]
+		}
+	],
+	"type": "minecraft:block"
+}

@@ -1,0 +1,31 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "面包",
+  "category": "tfc:firmalife",
+  "icon": "tfc:textures/item/food/barley_bread.png",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "想要制作$(thing)面包$()，第一要务就是获取$(thing)酵母$()。要获取初始酵母，可将$(l:firmalife/drying)晒干的水果$()密封在一个装满$(thing)水$()的木桶中。三天后，便会形成$(thing)酵种$()。$(br)从现在起，你可以通过将酵种与$(thing)面粉$()一起密封在桶中来喂养酵母，使其增殖。每100mB酵母加入1份面粉，可以产出600mB酵母。这很划算！"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfg:shapeless/barley_dough",
+      "text": "将酵种、甜味剂和面粉混合，可以制成$(thing)面团$()。像平常一样把面团烤熟，就能做出$(thing)面包$()了！"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfg:crafting/barley_slice",
+      "title": "面包片",
+      "text": "面包烤好后，可以用$(thing)刀$()将其切成$(thing)面包片$()。这些面包片可用于$(l:tfc:mechanics/sandwiches)制作三明治$()，或者烤成$(thing)吐司$()，然后涂抹上$(thing)黄油$()或果酱。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/toast_with_butter",
+      "recipe2": "firmalife:crafting/toast_with_jam",
+      "title": "吐司"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 16
+}

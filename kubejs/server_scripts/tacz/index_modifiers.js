@@ -15,7 +15,7 @@ const ammoIndexLogic = (event) => {
 	
 	const json = JSON.parse(event.getStdJson());
 	
-	switch(id) {
+	switch (id) {
 		case "tacz:45_70": json.stack_size = 64; break;
 		case "tacz:12g": json.stack_size = 64; break;
 		case "tacz:30_06": json.stack_size = 64; break;
@@ -44,7 +44,7 @@ const attachmentIndexLogic = (event) => {
 	const json = JSON.parse(event.getStdJson());
 	
 	
-	switch(id) {
+	switch (id) {
 		
 		//Scope Sorting
 		case "create_armorer:sight_simple": json.sort = 100; break;
@@ -128,7 +128,7 @@ const gunDataLogic = (event) => {
 		]
 	}
 	
-	if(id === "create_armorer:pistol_revolver_torque_data"){
+	if (id === "create_armorer:pistol_revolver_torque_data"){
 		json.ammo = "create_armorer:rbapb";
 		
 		json.bullet.pierce = 2;
@@ -145,7 +145,7 @@ const gunDataLogic = (event) => {
 		
 	}
 	
-	if(id === "create_armorer:pistol_auto_stress_data"){
+	if (id === "create_armorer:pistol_auto_stress_data"){
 		json.ammo = "create_armorer:rbapb";
 		json.ammo_amount = 10;
 		json.extended_mag_ammo_amount = 
@@ -170,11 +170,11 @@ const gunDataLogic = (event) => {
 		]
 	}
 	
-	if(id === "applied_armorer:niklas_pistol_semi_pride_data"){
+	if (id === "applied_armorer:niklas_pistol_semi_pride_data"){
 		json.bullet.extra_damage.armor_ignore = 0.25;
 	}
 	
-	if(id === "applied_armorer:niklas_pistol_double_win_win_data"){
+	if (id === "applied_armorer:niklas_pistol_double_win_win_data"){
 		json.bullet.damage = 10;
 		json.bullet.extra_damage.armor_ignore = 0.25;
 		json.bullet.extra_damage.head_shot_multiplier = 1.5;
@@ -187,7 +187,7 @@ const gunDataLogic = (event) => {
 	}
 	
 	//Snipers
-	if(id === "tacz:springfield1873_data") {
+	if (id === "tacz:springfield1873_data") {
 		json.bullet.damage = 25;
 		json.bullet.extra_damage.damage_adjust = 
 		[
@@ -198,7 +198,7 @@ const gunDataLogic = (event) => {
 		]
 	}
 	
-	if(id === "tacz:m700_data"){
+	if (id === "tacz:m700_data"){
 		json.ammo_amount = 2;
 		json.extended_mag_ammo_amount = 
 		[
@@ -218,7 +218,7 @@ const gunDataLogic = (event) => {
 		]
 	}
 	
-	if(id === "applied_armorer:moritz_sniper_semi_k30_data") {
+	if (id === "applied_armorer:moritz_sniper_semi_k30_data") {
 		json.bullet.pierce = 4;
 		json.bullet.damage = 40;
 		json.bullet.extra_damage.armor_ignore = 0.55;
@@ -232,7 +232,7 @@ const gunDataLogic = (event) => {
         
 	
 	//Rifles
-	if(id === "create_armorer:sniper_semi_clockwork_data"){
+	if (id === "create_armorer:sniper_semi_clockwork_data"){
 		json.ammo = "create_armorer:slap";
 		json.ammo_amount = 10;
 		json.extended_mag_ammo_amount = 
@@ -257,7 +257,7 @@ const gunDataLogic = (event) => {
 		json.builtin_attachments.scope = "create_armorer:sight_simple";
 	}
 	
-	if(id === "create_armorer:rifle_assult_crane_data"){
+	if (id === "create_armorer:rifle_assult_crane_data"){
 		json.ammo_amount = 20;
 		json.extended_mag_ammo_amount = 
 		[
@@ -267,7 +267,7 @@ const gunDataLogic = (event) => {
 		]
 	}
 	
-	if(id === "applied_armorer:moritz_rifle_ar77_data") {
+	if (id === "applied_armorer:moritz_rifle_ar77_data") {
 		json.ammo = "applied_armorer:hard_core_quartz_bullet";
 		json.ammo_amount = 25;
 		json.extended_mag_ammo_amount = 
@@ -291,16 +291,16 @@ const gunDataLogic = (event) => {
 	}
 	
 	//Shotguns
-	if(id === "tacz:db_long_data"){
+	if (id === "tacz:db_long_data"){
 		json.bullet.extra_damage.armor_ignore = 0.22;
 	}
 	
-	if(id === "tacz:db_short_data"){
+	if (id === "tacz:db_short_data"){
 		json.bullet.extra_damage.armor_ignore = 0.22;
 	}
 	
 	//SMGs
-	if(id === "create_armorer:smg_auto_crank_data"){
+	if (id === "create_armorer:smg_auto_crank_data"){
 		json.ammo = "create_armorer:rbapb";
 		
 		json.ammo_amount = 25;
@@ -323,7 +323,7 @@ const gunDataLogic = (event) => {
 		]
 	}
 	
-	if(id === "applied_armorer:niklas_smg_freedom_data"){
+	if (id === "applied_armorer:niklas_smg_freedom_data"){
 		json.ammo_amount = 35;
 		json.extended_mag_ammo_amount = 
 		[
@@ -344,7 +344,7 @@ const gunDataLogic = (event) => {
 	}
 	
 	//Heavy
-	if(id === "create_armorer:mg_platemag_flywheel_data") {
+	if (id === "create_armorer:mg_platemag_flywheel_data") {
 		json.ammo_amount = 40;
 		json.extended_mag_ammo_amount = 
 		[
@@ -364,7 +364,7 @@ const gunDataLogic = (event) => {
 		]
 	}
 	
-	if(id === "create_armorer:cannon_40mm_salamander_data"){
+	if (id === "create_armorer:cannon_40mm_salamander_data"){
 		json.bullet.damage = 50;
 		json.bullet.extra_damage.damage_adjust =
 		[
@@ -376,7 +376,7 @@ const gunDataLogic = (event) => {
 		json.builtin_attachments.scope = "create_armorer:sight_simple";
 	}
 	
-	if(id === "applied_armorer:moritz_gernade_gl3_data"){
+	if (id === "applied_armorer:moritz_gernade_gl3_data"){
 		json.ammo_amount = 2;
 		json.extended_mag_ammo_amount = 
 		[

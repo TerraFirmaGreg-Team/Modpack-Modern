@@ -1,0 +1,165 @@
+{
+    "name": "Будівельні матеріали",
+    "category": "tfc:getting_started",
+    "icon": "tfc:wattle/unstained",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "На початкових етапах гри будівництво може стати справжнім викликом, оскільки для отримання багатьох міцних будівельних блоків потрібні металеві інструменти. Однак є кілька будівельних блоків, які ти можеш здобути лише за допомогою кам'яних інструментів.$(br2)Більше $(l:mechanics/advanced_building_materials)будівельних блоків$() стане доступно з металевими інструментами."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)  1. $(l:getting_started/building_materials#thatch)Солома$()$(br)  2. $(l:getting_started/building_materials#mud_bricks)Цегла з бруду$()$(br)  3. $(l:getting_started/building_materials#wattle_and_daub)Тин та глиняна обмазанка$()$(br)  4. $(l:getting_started/building_materials#clay_and_peat)Глиняні блоки та торф$()$(br)",
+            "title": "Зміст"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "thatch",
+            "text": "Маючи лише $(l:getting_started/introduction#knife)кам'яний ніж$(), ти можеш здобути $(thing)солому$(), ламаючи подібні до рослин блоки. Її можна використовувати для створення дуже простого будівельного матеріалу: $(thing)соломи$(). Солома — це легкий блок, на який не діє гравітація, проте гравці та інші істоти можуть проходити крізь нього наскрізь! За потреби її також можна переробити назад у $(thing)солому$().",
+            "title": "Тюк соломи"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "tfc:crafting/thatch",
+            "recipe2": "tfc:crafting/straw"
+        },
+        {
+            "type": "patchouli:crafting",
+            "anchor": "mud_bricks",
+            "recipe": "tfc:crafting/soil/loam_drying_bricks",
+            "title": "Цегла з мулу",
+            "text": "$(thing)Бруд$() можна знайти на землі, під річками та озерами або ж окремими ділянками в низинних болотистих біомах. Додавши трохи $(thing)соломи$(), її можна створити у $()вологі цегли бруду$()."
+        },
+        {
+            "type": "tfc:multimultiblock",
+            "text": "Їх можна розмістити на землі в сухому місці, і через день вони перетворяться у $(thing)цеглу з бруду$().",
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:drying_bricks/loam[count=4,dried=false]",
+                        "Y": "tfc:grass/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:drying_bricks/loam[count=4,dried=true]",
+                        "Y": "tfc:grass/loam"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "tfc:crafting/soil/loam_mud_bricks",
+            "title": " ",
+            "text": "Ці висушені багнисті цегли потім можна переробити у $(thing)блоки цегли з бруду$(). За бажання з них також можна зробити $(thing)сходи$(), $(thing)плити$() або $(thing)стіни$()."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "#tfc:mud_bricks"
+                }
+            },
+            "name": "",
+            "text": "Усі різноманітні види цегли з бруду. ",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "wattle_and_daub",
+            "text": "$(thing)Тин$() і $(thing)глиняна обмазанка$() — це універсальний будівельний та декоративний блоки.$(br2)$(thing)Тин$() можна створити та розмістити, проте він ламкий і дозволяє гравцям та мобам проходити крізь нього. Його можна зміцнити за допомогою $(thing)глиняно-солом'яної суміші$(), щоб зробити твердим.",
+            "title": "Тин та глина"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "tfc:crafting/wattle",
+            "text": "Для того щоб зробити $(thing)тин$() твердим, його спочатку потрібно сплести, що вимагає додавання палиць до самої структури."
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "tfc:crafting/daub",
+            "recipe2": "tfc:crafting/daub_from_mud",
+            "text": ""
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/wattle_weave.png"
+            ],
+            "text": "Потрібно чотири палиці, щоб $(thing)сплести$() тин.",
+            "border": true
+        },
+        {
+            "type": "patchouli:text",
+            "text": "У будь-який момент палиці можна додати по кожній діагоналі, а також зверху та знизу. Візьми одну $(thing)палицю$() в руку та натисни $(item)$(k:key.use)$(), щоб додати її. Ти можеш вирішувати, до якої саме частини тину додавати палицю, вибираючи іншу сторону грані блока."
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/wattle_add_stick.png"
+            ],
+            "text": "Додавання палиць до тину.",
+            "border": true
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/wattle_add_daub.png"
+            ],
+            "text": "Використання $(thing)обмазки на $(thing)тину$() створює твердий блок.",
+            "border": true
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/wattle_stained.png"
+            ],
+            "text": "Після цього його можна $(thing)пофарбувати$(), використавши на ньому $(l:mechanics/dye)барвник$().",
+            "border": true
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "clay_and_peat",
+            "text": "Глину, яку ти здобудеш із землі, можна перетворити в глиняні блоки. Якщо їх розмістити, а потім знову здобути, вони перетворяться назад на глину. Хоч вони й непривабливі, але їх легко дістати.$(br2)Торф генерується у світі ділянками вздовж водойм, і його можна видобувати кам'яними інструментами. На ньому можуть рости деякі рослини.$(br2)Проте торф досить легкозаймистий.",
+            "title": "Глиняні блоки та торф"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "tfg:shaped/clay_balls_to_block",
+            "title": "Глиняні блоки"
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 7
+}

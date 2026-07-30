@@ -1,0 +1,29 @@
+{
+    "name": "nether",
+    "dimension-names": [
+        "nether"
+    ],
+    "rain": false,
+    "storm": false,
+    "biome-selector": {
+        "always": true
+    },
+    "regions": [
+        {
+            "name": "nether_caves",
+            "sounds": [
+                {
+                    "name": "nether-cave",
+                    "category": "cave",
+                    "files": [
+                        "ambientsounds:cave.cave1",
+                        "ambientsounds:cave.cave2",
+                        "ambientsounds:cave.cave3"
+                    ],
+                    "volume": 0.25,
+                    "transition": 200
+                }
+            ]
+        }
+    ]
+}

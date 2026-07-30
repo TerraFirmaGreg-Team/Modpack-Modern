@@ -55,14 +55,14 @@ function registerTFGBouleRecipes(event) {
 		.notConsumable('tfc:crucible')
 		.itemOutputs('tfg:quartz_crucible')
 		.duration(20 * 20)
-		.EUt(GTValues.VA[GTValues.MV])
+		.EUt(GTValues.VA[GTValues.LV])
 
 	event.recipes.gtceu.arc_furnace('tfg:quartz_crucible_nether')
 		.itemInputs('5x #forge:dusts/nether_quartz')
 		.notConsumable('tfc:crucible')
 		.itemOutputs('tfg:quartz_crucible')
 		.duration(20 * 20)
-		.EUt(GTValues.VA[GTValues.MV])
+		.EUt(GTValues.VA[GTValues.LV])
 
 	// Boules
 

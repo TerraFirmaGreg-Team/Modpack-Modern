@@ -1,7 +1,6 @@
 {
-	"parent": "tfc:block/rock/magma/magma",
+	"parent": "tfg:block/rock/cube_magma",
 	"textures": {
-		"0": "tfc:block/rock/magma/dacite",
-		"particle": "tfc:block/rock/magma/dacite"
+		"all": "tfc:block/rock/raw/dacite"
 	}
 }

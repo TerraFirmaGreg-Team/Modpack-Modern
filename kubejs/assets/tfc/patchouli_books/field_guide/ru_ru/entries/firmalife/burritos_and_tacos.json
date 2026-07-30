@@ -1,0 +1,38 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "Буррито и Тако",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:textures/item/food/burrito.png",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Путь создания $(thing)тортильи$() — долгий, но полезный процесс. Начните с $(thing)кукурузного зерна$(). Сварите его в кастрюле с $(thing)известковой водой$(), и запечатайте в\nбочке с водой, чтобы получить $(thing)Никстамаль$(). Затем перетрите его в $(thing)жерновах$(), чтобы получить $(thing)муку Маса$()."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "При приготовлении муки Маса из ведра с водой получается $(thing)Masa$(), тесто для тортильи, Его можно нагреть, чтобы получить$(thing)Кукурузная тортилья$(). При выпекании тортильи в духовке получатся $(thing)чипсы из тортильи$()."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/tortilla_chips",
+      "recipe2": "firmalife:crafting/nachos"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfg:crafting/salsa",
+      "text": "Помидор, кинза, соль и нож дадут вам $(thing)сальсу$()."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/burrito",
+      "text": "$(thing)Burrito$() состоит из варёного мяса,\n$(l:firmalife/pizza#shredded_cheese)тёртого сыра$(), $(l:firmalife/pizza#tomato_sauce)томатного соуса$(), овощей и сальсы."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/taco",
+      "text": "$(thing)Тако$() изготовлен из тех же\nингредиентов, за исключением $(thing)чипсов из тортильи$()."
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 28
+}

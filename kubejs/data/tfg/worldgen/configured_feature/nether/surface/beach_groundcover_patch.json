@@ -1,0 +1,79 @@
+{
+	"type": "minecraft:random_patch",
+	"config": {
+		"feature": {
+			"feature": {
+				"type": "minecraft:simple_block",
+				"config": {
+					"to_place": {
+						"type": "minecraft:weighted_state_provider",
+						"entries": [
+							{
+								"data": {
+									"Name": "tfc:groundcover/clam"
+								},
+								"weight": 20
+							},
+							{
+								"data": {
+									"Name": "tfc:groundcover/mollusk"
+								},
+								"weight": 20
+							},
+							{
+								"data": {
+									"Name": "tfc:groundcover/sea_urchin"
+								},
+								"weight": 20
+							},
+							{
+								"data": {
+									"Name": "tfc:groundcover/flint"
+								},
+								"weight": 20
+							},
+							{
+								"data": {
+									"Name": "firmalife:hollow_shell"
+								},
+								"weight": 20
+							},
+							{
+								"data": {
+									"Name": "tfc:groundcover/seaweed"
+								},
+								"weight": 20
+							},
+							{
+								"data": {
+									"Name": "tfc:groundcover/driftwood"
+								},
+								"weight": 10
+							}
+						]
+					}
+				}
+			},
+			"placement": [
+				{
+					"type": "block_predicate_filter",
+					"predicate": {
+						"type": "tfc:replaceable"
+					}
+				},
+				{
+					"type": "block_predicate_filter",
+					"predicate": {
+						"type": "would_survive",
+						"state": {
+							"Name": "tfc:groundcover/clam"
+						}
+					}
+				}
+			]
+		},
+		"tries": 64,
+		"xz_spread": 16,
+		"y_spread": 2
+	}
+}

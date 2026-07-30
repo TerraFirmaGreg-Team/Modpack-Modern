@@ -3,20 +3,16 @@
 
 TFCEvents.worldgenData(event => {
 
-	event.forest('tfg:mars_forest', '#tfg:mars_forest_entries',
-		[
-			// https://notenoughmail.github.io/kubejs_tfc/1.20.1/worldgen/#forest-types-map-entry
-			// type, treeCount, groundcoverCount, perChunkChance, bushCount, hasSpoilerOldGrowth, allowsOldGrowth, leafPileCount
+	event.forest('tfg:mars_forest', '#tfg:mars_forest_entries', [
+		// https://notenoughmail.github.io/kubejs_tfc/1.20.1/worldgen/#forest-types-map-entry
+		// type, treeCount, groundcoverCount, perChunkChance, bushCount, hasSpoilerOldGrowth, allowsOldGrowth, leafPileCount
 
-			event.forestTypesMapEntry('none',       [0, 1],   1,  0.1,  0, false, false, 0),
-			event.forestTypesMapEntry('sparse',     [0, 3],   10, 0.3,  1, false, false, [0, 1]),
-			event.forestTypesMapEntry('edge',       [2, 5],   20, 0.8,  2, true,  false, [1, 2]),
-			event.forestTypesMapEntry('normal',     [7, 10],  35, 1,    3, true,  false, [4, 6]),
-			event.forestTypesMapEntry('old_growth', [10, 13], 50, 1,    4, true,  true,  [5, 8])
-		],
-		false, 
-		placement => {}
-	)
+		event.forestTypesMapEntry('none',       [0, 1],   1,  0.1, 0, false, false, 0),
+		event.forestTypesMapEntry('sparse',     [0, 3],   10, 0.3, 1, false, false, [0, 1]),
+		event.forestTypesMapEntry('edge',       [2, 5],   20, 0.8, 2, true,  false, [1, 2]),
+		event.forestTypesMapEntry('normal',     [7, 10],  35, 1,   3, true,  false, [4, 6]),
+		event.forestTypesMapEntry('old_growth', [10, 13], 50, 1,   4, true,  true,  [5, 8])
+	], false, placement => {})
 
 	event.forestEntry('tfg:mars/crimson_forest_entry',
 		climate => {
@@ -30,7 +26,7 @@ TFCEvents.worldgenData(event => {
 		'beneath:wood/log/crimson', // fallen log
 		'beneath:wood/fallen_leaves/crimson', // fallen leaves
 		[ // ground cover
-			'minecraft:crimson_fungus',
+			'tfg:fake_sapling/crimson',
 			'beneath:wood/fallen_leaves/crimson',
 			'beneath:wood/twig/crimson',
 			'tfg:groundcover/wraptor_feather',
@@ -60,7 +56,7 @@ TFCEvents.worldgenData(event => {
 		'beneath:wood/log/warped',
 		'beneath:wood/fallen_leaves/warped',
 		[
-			'minecraft:warped_fungus',
+			'tfg:fake_sapling/warped',
 			'beneath:wood/fallen_leaves/warped',
 			'beneath:wood/twig/warped',
 			'tfg:groundcover/wraptor_feather',
@@ -84,7 +80,7 @@ TFCEvents.worldgenData(event => {
 		null,
 		null,
 		[
-			"ad_astra:aeronos_mushroom",
+			"tfg:fake_sapling/aeronos",
 			'tfg:groundcover/aeronos_stick',
 			'tfg:groundcover/wraptor_feather',
 			'tfg:groundcover/glider_feather'
@@ -107,7 +103,7 @@ TFCEvents.worldgenData(event => {
 		null,
 		null,
 		[
-			"ad_astra:strophar_mushroom",
+			"tfg:fake_sapling/strophar",
 			'tfg:groundcover/strophar_stick',
 			'tfg:groundcover/wraptor_feather',
 			'tfg:groundcover/glider_feather'
@@ -129,7 +125,7 @@ TFCEvents.worldgenData(event => {
 		null,
 		null,
 		[
-			"species:alphacene_mushroom",
+			"tfg:fake_sapling/alphacene",
 			'tfg:groundcover/alphacene_stick',
 			'tfg:groundcover/wraptor_feather',
 			'tfg:groundcover/glider_feather'
@@ -151,6 +147,7 @@ TFCEvents.worldgenData(event => {
 		null,
 		null,
 		[
+			"tfg:fake_sapling/glacian",
 			"tfg:glacian_leaves_fallen",
 			'tfg:groundcover/glacian_stick'
 		],

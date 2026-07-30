@@ -8,6 +8,9 @@
     "min_y": 50,
     "max_y": 128,
     "random_name": "moon_tetrahedrite",
+    "project": false,
+    "project_offset": false,
+    "near_lava": false,
     "blocks": [
       {
         "replace": [

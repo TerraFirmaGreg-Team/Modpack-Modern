@@ -1,0 +1,15 @@
+{
+  "ingredient": {
+    "item": "firmalife:food/banana_split"
+  },
+  "category": "other",
+  "hunger": 4,
+  "saturation": 2,
+  "water": 1,
+  "decay_modifier": 5,
+  "fruit": 3.5,
+  "grain": 0.25,
+  "dairy": 1.75,
+  "cooling": 10,
+  "sugary": 3
+}

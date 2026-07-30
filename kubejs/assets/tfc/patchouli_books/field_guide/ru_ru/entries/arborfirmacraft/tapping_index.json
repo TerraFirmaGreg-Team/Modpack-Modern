@@ -10,7 +10,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(l:arborfirmacraft/tapping_index#maple)$(li)Клён$()$(l:arborfirmacraft/tapping_index#birch)$(li)Берёза$()$(l:arborfirmacraft/tapping_index#hevea)$(li)Гевея$()$(l:arborfirmacraft/tapping_index#rubber_fig)$(li)Каучуконосный фикус$()$(l:arborfirmacraft/tapping_index#kapok)$(li)Сейба$()$(l:arborfirmacraft/tapping_index#aspen)$(li)Осина$()$(l:arborfirmacraft/tapping_index#spruce)$(li)Ель$()$(l:arborfirmacraft/tapping_index#white_cedar)$(li)Белый кедр$()$(l:arborfirmacraft/tapping_index#douglas_fir)$(li)Пихта$()"
+			"text": "$(l:arborfirmacraft/tapping_index#maple)$(li)Клён$()$(l:arborfirmacraft/tapping_index#birch)$(li)Берёза$()$(l:arborfirmacraft/tapping_index#hevea)$(li)Гевея$()$(l:arborfirmacraft/tapping_index#rubber_fig)$(li)Каучуконосный фикус$()$(l:arborfirmacraft/tapping_index#kapok)$(li)Сейба$()$(l:arborfirmacraft/tapping_index#aspen)$(li)Осина$()$(l:arborfirmacraft/tapping_index#spruce)$(li)Ель$()$(l:arborfirmacraft/tapping_index#white_cedar)$(li)Кедр$()$(l:arborfirmacraft/tapping_index#douglas_fir)$(li)Пихта$()"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -23,7 +23,7 @@
 		{
 			"type": "patchouli:image",
 			"images": [
-			"tfg:textures/gui/field_guide/tapping_index/maple_tree.png"
+				"tfg:textures/gui/field_guide/tapping_index/maple_tree.png"
 			],
 			"text": "$(thing)Производит$(): Кленовый сок$(br)$(thing)Перерабатывается в $(): Кленовый сахар",
 			"border": true
@@ -39,7 +39,7 @@
 		{
 			"type": "patchouli:image",
 			"images": [
-			"tfg:textures/gui/field_guide/tapping_index/birch_tree.png"
+				"tfg:textures/gui/field_guide/tapping_index/birch_tree.png"
 			],
 			"text": "$(thing)Производит$(): Берёзовый сок$(br)$(thing)Перерабатывается в $(): Берёзовый сахар",
 			"border": true
@@ -55,7 +55,7 @@
 		{
 			"type": "patchouli:image",
 			"images": [
-			"tfg:textures/gui/field_guide/tapping_index/hevea_tree.png"
+				"tfg:textures/gui/field_guide/tapping_index/hevea_tree.png"
 			],
 			"text": "$(thing)Производит$(): Латекс$(br)$(thing)Перерабатывается в $(): Липкая смола & Резина",
 			"border": true
@@ -71,7 +71,7 @@
 		{
 			"type": "patchouli:image",
 			"images": [
-			"tfg:textures/gui/field_guide/tapping_index/rubber_fig_tree.png"
+				"tfg:textures/gui/field_guide/tapping_index/rubber_fig_tree.png"
 			],
 			"text": "$(thing)Производит$(): Латекс$(br)$(thing)Перерабатывается в $(): Липкая смола & Резина",
 			"border": true
@@ -87,7 +87,7 @@
 		{
 			"type": "patchouli:image",
 			"images": [
-			"tfg:textures/gui/field_guide/tapping_index/kapok_tree.png"
+				"tfg:textures/gui/field_guide/tapping_index/kapok_tree.png"
 			],
 			"text": "$(thing)Производит$(): Латекс$(br)$(thing)Перерабатывается в $(): Липкая смола & Резина",
 			"border": true
@@ -103,7 +103,7 @@
 		{
 			"type": "patchouli:image",
 			"images": [
-			"tfg:textures/gui/field_guide/tapping_index/aspen_tree.png"
+				"tfg:textures/gui/field_guide/tapping_index/aspen_tree.png"
 			],
 			"text": "$(thing)Производит$(): Хвойная смола$(br)$(thing)Перерабатывается в $(): Липкая смола & Хвойная канифоль",
 			"border": true
@@ -119,7 +119,7 @@
 		{
 			"type": "patchouli:image",
 			"images": [
-			"tfg:textures/gui/field_guide/tapping_index/spruce_tree.png"
+				"tfg:textures/gui/field_guide/tapping_index/spruce_tree.png"
 			],
 			"text": "$(thing)Производит$(): Хвойная смола$(br)$(thing)Перерабатывается в $(): Липкая смола & Хвойная канифоль",
 			"border": true
@@ -127,7 +127,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"anchor": "white_cedar",
-			"title": "Белый кедр",
+			"title": "Кедр",
 			"item": "tfc:wood/log/white_cedar,tfc:wood/wood/white_cedar,tfc:wood/leaves/white_cedar,tfc:wood/sapling/white_cedar",
 			"link_recipe": false,
 			"text": "$(bold)Климат$()$(br)$(thing)Минимальная температура$(): -15.7°C$(br)$(thing)Максимальная температура$(): 0.7°C$(br)$(thing)Минимальные годовые осадки$(): 100$(br)$(thing)Максимальные годовые осадки$(): 285$(br2)$(bold)Информация для подсочки$()$(br)$(thing)Мин. темп. для производства$(): -8°C$(br)$(thing)Макс. темп. для производства$(): N/A$(br)$(thing)Только весной$(): Нет$(br)$(thing)Скорость производства$(): 3mb"
@@ -135,7 +135,7 @@
 		{
 			"type": "patchouli:image",
 			"images": [
-			"tfg:textures/gui/field_guide/tapping_index/white_cedar_tree.png"
+				"tfg:textures/gui/field_guide/tapping_index/white_cedar_tree.png"
 			],
 			"text": "$(thing)Производит$(): Хвойная смола$(br)$(thing)Перерабатывается в $(): Липкая смола & Хвойная канифоль",
 			"border": true
@@ -151,7 +151,7 @@
 		{
 			"type": "patchouli:image",
 			"images": [
-			"tfg:textures/gui/field_guide/tapping_index/douglas_fir_tree.png"
+				"tfg:textures/gui/field_guide/tapping_index/douglas_fir_tree.png"
 			],
 			"text": "$(thing)Производит$(): Хвойная смола$(br)$(thing)Перерабатывается в $(): Липкая смола & Хвойная канифоль",
 			"border": true

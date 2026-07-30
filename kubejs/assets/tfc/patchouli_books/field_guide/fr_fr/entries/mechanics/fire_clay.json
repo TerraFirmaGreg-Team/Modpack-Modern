@@ -1,0 +1,40 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "Argile Réfractaire",
+  "category": "tfc:mechanics",
+  "icon": "tfc:fire_clay",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "L'argile réfractaire possède peu d'applications, mais celles-ci sont toutes importantes. L'argile réfractaire est une variante d'argile possédant une meilleure résistance à la chaleur. Elle est utilisée pour faire des choses qui doivent devenir très chaudes !"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/fire_clay",
+      "text": "L'argile réfractaire est faite à partir de poudre de $(l:tfg_ores/earth_vein_index#normal_graphite)graphite$(), broyée dans une $(l:mechanics/quern)meule$(), mélangée à de la poudre de $(l:tfg_ores/surface_kaolin#powder)kaolinite$()."
+    },
+    {
+      "type": "tfc:heat_recipe",
+      "recipe": "tfc:heating/kaolin_clay",
+      "text": "La poudre de kaolinite est produite en chauffant de la $(l:mechanics/surface_kaolin)Kaolin$(). Ce processus n'est toutefois pas parfait et seulement 20% de l'argile deviendra de la poudre !"
+    },
+    {
+      "type": "tfc:knapping_recipe",
+      "anchor": "crucible",
+      "recipe": "tfc:fire_clay_knapping/crucible",
+      "text": "Le $(l:mechanics/crucible)Creuset$() dans sa forme non durcie est fabriqué à partir d'argile réfractaire."
+    },
+    {
+      "type": "tfc:knapping_recipe",
+      "anchor": "fire_bricks",
+      "recipe": "tfc:fire_clay_knapping/brick",
+      "text": "Le $(l:mechanics/blast_furnace)Haut fourneau$() n'accepte que des briques réfractaires comme isolation."
+    },
+    {
+      "type": "tfc:knapping_recipe",
+      "recipe": "tfc:fire_clay_knapping/fire_ingot_mold",
+      "text": "Les $(thing)Moules réfractaires à lingot$() sont un type plus résistant de $(l:getting_started/pottery#mold)Moule à lingot$() qui non que 1 chance sur 100 de se casser, contre 1 chance sur 10 pour un moule à lingot normal."
+    }
+  ],
+  "read_by_default": true
+}

@@ -1,0 +1,18 @@
+{
+	"block.tfcgroomer.bismuth_bronze_grooming_station": "Mangeoire en bronze au bismuth",
+	"block.tfcgroomer.black_bronze_grooming_station": "Mangeoire en bronze noir",
+	"block.tfcgroomer.black_steel_grooming_station": "Mangeoire en acier noir",
+	"block.tfcgroomer.blue_steel_grooming_station": "Mangeoire en acier bleu",
+	"block.tfcgroomer.bronze_grooming_station": "Mangeoire en bronze",
+	"block.tfcgroomer.copper_grooming_station": "Mangeoire en cuivre",
+	"block.tfcgroomer.grooming_station": "Station de toilettage",
+	"block.tfcgroomer.red_steel_grooming_station": "Mangeoire en acier rouge",
+	"block.tfcgroomer.steel_grooming_station": "Mangeoire en acier",
+	"block.tfcgroomer.wrought_iron_grooming_station": "Mangeoire en fer forgé",
+	"config.jade.plugin_tfcgroomer.grooming_station": "Station de toilettage",
+	"gui.tfcgroomer.enable_breeding": "Activer la reproduction",
+	"tfcgroomer.grooming_station.range": "Portée : %s",
+	"tfcgroomer.tooltip.breedDisabled": "Reproduction désactivée",
+	"tfcgroomer.tooltip.breedEnabled": "Reproduction activée",
+	"tfcgroomer.tooltip.toggleBreeding": "Activer/désactiver la reproduction"
+}

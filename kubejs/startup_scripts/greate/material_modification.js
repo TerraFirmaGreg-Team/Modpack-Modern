@@ -7,7 +7,9 @@ const registerGreateMaterialModification = (event) => {
 
 	// Add flags
 	$GreateMaterials.RoseQuartz.addFlags(
-		GTMaterialFlags.GENERATE_LENS
+		GTMaterialFlags.GENERATE_LENS,
+		GTMaterialFlags.HIGH_SIFTER_OUTPUT,
+		GTMaterialFlags.CRYSTALLIZABLE
 	);
 	
 	// Material composition

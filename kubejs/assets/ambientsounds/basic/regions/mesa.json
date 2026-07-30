@@ -7,10 +7,24 @@
 		"volcanic_mountain_lake",
 		"volcanic_oceanic_mountains",
 		"volcanic_oceanic_mountain_lake",
+		"dune_sea",
 		"martian_deep_desert",
 		"martian_dunes",
 		"martian_dune_edge",
-		"jagged_tablelands"
+		"jagged_tablelands",
+		"salt_flats",
+		"mud_flats",
+		"ice_sheet",
+		"ice_sheet_edge",
+		"ice_sheet_mountains",
+		"ice_sheet_mountains_edge",
+		"ice_sheet_oceanic",
+		"ice_sheet_oceanic_mountains",
+		"ice_sheet_oceanic_mountains_edge",
+		"ice_sheet_shield_volcano",
+		"ice_sheet_tuyas",
+		"ice_sheet_tuyas_edge",
+		"stone_circles"
 	],
 	"sounds": [
 		{

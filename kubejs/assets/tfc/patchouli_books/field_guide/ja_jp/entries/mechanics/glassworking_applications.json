@@ -1,0 +1,434 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "ガラス製品",
+  "category": "tfc:mechanics",
+  "icon": "minecraft:glass",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "最もシンプルなガラス製品は$(thing)ガラス板$()と$(thing)ガラスブロック$()です。これらを作るには、$(l:mechanics/glassworking#blowpipe)吹き竿$()に$(thing)ガラスバッチ$()を付けた状態から$(thing)注ぐ$()工程を行う必要があります。$(br)$(li)$(bold)テーブルに注ぐ$()ことで$(thing)ガラス板$()を作ることができます。$(li)$(bold)穴に注ぐ$()ことで$(thing)ガラスブロック$()を作ることができます。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "ガラスは注ぐ前に$(thing)染色$()することで、色付きガラスを作ることができます。仕上がりの色は、使用するガラスバッチの種類や加えた粉末によって決まります。$(br2)各種類の$(thing)ガラスバッチ$()は元からそれぞれ異なる色を持っています。$(thing)シリカ$()ガラスバッチは多彩な色に対応できますが、$(thing)かんらん$()や$(thing)火山$()ガラスは作れる色の種類がやや限られています。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)ガラス板$()は、$(thing)テーブル注ぎ$()によって作成します。テーブルは、$(thing)カオリン粘土ブロック$()または$(thing)真鍮メッキのブロック$()を最大16個まで連続して並べることで用意できます。$(br2)1. $(l:mechanics/glassworking)ガラスバッチ$()を$(thing)吹き竿$()に取り付けます。$(br)2. その吹き竿を$(4)$(bold)ぼんやりした赤色$()の状態まで加熱します。$(br)3. テーブルの上で$(thing)吹き竿$()を$(item)$(k:key.use)$()で使い、ガラスを注ぎます。$(br)4. 仕上げに、$(l:mechanics/glassworking#paddle)木ごて$()で$(item)$(k:key.use)$()してガラスを平らにします。",
+      "title": "テーブルに注ぐ"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "mapping": {
+          "C": "#tfc:glass_pouring_table",
+          "0": "#tfc:glass_pouring_table"
+        },
+        "pattern": [
+          [
+            "CCCC",
+            "CCC0",
+            "CCCC",
+            "CCCC"
+          ]
+        ]
+      },
+      "text": "ガラスが冷えて固まった後、$(l:mechanics/glassworking#saw)宝石ノコギリ$()で壊すことで回収できます。",
+      "border": true
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)ガラスブロック$()は、$(thing)穴へ注ぎ$()作られます。ガラスを注ぐための穴は、空気ブロックの上面以外を$(thing)カオリン粘土ブロック$()または$(thing)真鍮メッキのブロック$()で囲うことで作れます。$(br2)1. $(l:mechanics/glassworking)ガラスバッチ$()を$(thing)吹き竿$()に取り付けます。$(br)2. その吹き竿を$(4)$(bold)ぼんやりした赤色$()まで加熱します。$(br)3. $(item)$(k:key.use)$()を押して$(thing)吹き竿$()を使い、穴にガラスを注ぎます。",
+      "title": "穴に注ぐ"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "mapping": {
+          "C": "#tfc:glass_basin_blocks",
+          "0": "#tfc:glass_basin_blocks"
+        },
+        "pattern": [
+          [
+            " C ",
+            "C C",
+            " C "
+          ],
+          [
+            "   ",
+            " 0 ",
+            "   "
+          ]
+        ]
+      },
+      "text": "ガラスが冷えて固まった後、$(l:mechanics/glassworking#saw)宝石ノコギリ$()で壊すことで回収できます。",
+      "border": true
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": "ガラス精製用のブロック",
+      "recipe": "tfc:crafting/white_kaolin_clay",
+      "text": "$(thing)真鍮メッキのブロック$()は、$(thing)真鍮プレート$()を手に持ち、いずれかの種類の$(thing)石レンガ$()に対して$(item)$(k:key.use)$()で作れます。"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "coloring",
+      "text": "ガラスは、使用された$(l:mechanics/glassworking)ガラスバッチ$()の種類に基づいて自然な色を持っています。他の色は$(l:mechanics/bowls)ボウル$()を使って作ることができます。$(br2)使い方は、まず$(l:mechanics/bowls)ボウル$()を地面に置き、必要な$(thing)粉末$()を$(item)$(k:key.use)$()します。その後、$(thing)注ぐ$()前に$(thing)吹き竿$()をボウルに使うことで、粉末をガラスバッチに加えられます。",
+      "title": "ガラスの染色"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(li)$(bold)$(7)白色$()：シリカまたは赤鉄鉱ガラス + $(thing)ソーダ灰$()$(li)$(bold)$(0)黒色$()：任意のガラス + $(thing)黒鉛$()$(li)$(bold)$(8)灰色$()：任意のガラス + $(thing)黒鉛$() + $(thing)ソーダ灰$()$(li)$(bold)$(7)薄灰色$()：任意のガラス + $(thing)黒鉛$() + 2x $(thing)ソーダ灰$()$(li)$(bold)$(5)紫色$()：任意のガラス + $(thing)鉄$() + $(thing)銅$()$(li)$(bold)$(#964b00)茶色$()：任意のガラス + $(thing)ニッケル$()$(li)$(bold)$(3)青緑色$()：火山ガラス以外 + $(thing)銅$() + $(thing)サファイア$()$(li)$(bold)$(2)緑色$()：シリカまたは赤鉄鉱ガラス + $(thing)鉄$()",
+      "title": "染料の色"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(li)$(bold)$(a)黄緑色$()：シリカまたは赤鉄鉱ガラス + $(thing)鉄$() + $(thing)ソーダ灰$()$(li)$(bold)$(b)水色$()：シリカガラス + $(thing)ラピスラズリ$()$(li)$(bold)$(1)青色$()：シリカガラス + $(thing)銅$()$(li)$(bold)$(4)赤色$()：シリカまたは赤鉄鉱ガラス + $(thing)スズ$()$(li)$(bold)$(6)黄色$()：シリカまたは赤鉄鉱ガラス + $(thing)銀$()$(li)$(bold)$(#ef8e38)橙色$()：シリカガラス + $(thing)黄鉄鉱$()$(li)$(bold)$(5)赤紫色$()：シリカまたは赤鉄鉱ガラス + $(thing)ルビー$()$(li)$(bold)$(d)桃色$()：シリカガラス + $(thing)金$()$(li)$(bold)$(0)遮光$()：シリカガラス以外 + $(thing)アメジスト$()"
+    },
+    {
+      "type": "tfc:table_small",
+      "strings": [
+        {
+          "text": ""
+        },
+        {
+          "text": "C"
+        },
+        {
+          "text": "T"
+        },
+        {
+          "fill": "0xff42f2"
+        },
+        {
+          "fill": "0x8af3ff"
+        },
+        {
+          "fill": "0x526cff"
+        },
+        {
+          "fill": "0xe3e3e3"
+        },
+        {
+          "fill": "0xe69407"
+        },
+        {
+          "fill": "0xc738c9"
+        },
+        {
+          "fill": "0xffe81c"
+        },
+        {
+          "fill": "0x48ff1f"
+        },
+        {
+          "fill": "0xe01414"
+        },
+        {
+          "fill": "0x0c9400"
+        },
+        {
+          "fill": "0x188a9e"
+        },
+        {
+          "fill": "0x7d4f00"
+        },
+        {
+          "fill": "0x6e059c"
+        },
+        {
+          "fill": "0x7d7d7d"
+        },
+        {
+          "fill": "0xbdbdbd"
+        },
+        {
+          "fill": "0x000000"
+        },
+        {
+          "text": "シリカ"
+        },
+        {
+          "fill": "0x3d42a8"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "text": "赤鉄鉱"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3d42a8"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "text": "かんらん"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0x3d42a8"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "text": "火山"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0x3d42a8"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        }
+      ],
+      "text": "ガラスの色には作成できる条件があります。「C」は透明なガラス、「T」は遮光ガラスを表しています。なお、それぞれの色は対応したガラスバッチでしか作れません。",
+      "title": "ガラス着色の可否表",
+      "legend": [
+        {
+          "text": "クラフト可能",
+          "color": "0x3eb340"
+        },
+        {
+          "text": "クラフト不可能",
+          "color": "0xb33e3e"
+        },
+        {
+          "text": "デフォルトの色",
+          "color": "0x3d42a8"
+        }
+      ],
+      "columns": 18,
+      "first_column_width": 35,
+      "column_width": 10,
+      "row_height": 10,
+      "left_buffer": 5,
+      "top_buffer": 15,
+      "draw_background": true
+    },
+    {
+      "type": "patchouli:empty",
+      "draw_filler": false
+    },
+    {
+      "type": "tfc:glassworking_recipe",
+      "anchor": "lamp_glass",
+      "recipe": "tfg:glassworking/lamp_glass",
+      "text": "$(thing)ランタンガラス$()は、$(l:mechanics/lamps)ランタン$()を作るために必要な部品です。"
+    },
+    {
+      "type": "tfc:glassworking_recipe",
+      "anchor": "jar",
+      "recipe": "tfc:glassworking/jar",
+      "text": "$(l:mechanics/jarring)ジャム瓶$()は吹きガラスで作りますが、使えるのはシリカまたは赤鉄鉱のガラスに限られます。"
+    },
+    {
+      "type": "tfc:glassworking_recipe",
+      "anchor": "glass_bottle",
+      "recipe": "tfc:glassworking/silica_bottle",
+      "text": "$(thing)ガラス瓶$()も作成可能です。使用するガラスの種類によって品質が変わります。"
+    },
+    {
+      "type": "tfc:glassworking_recipe",
+      "recipe": "tfc:glassworking/lens",
+      "text": "$(thing)レンズ$()は、$(thing)望遠鏡$()や$(thing)コンパス$()などの製作に使われます。"
+    }
+  ],
+  "read_by_default": true,
+  "extra_recipe_mappings": {
+    "tag:tfc:glass_batches": 1,
+    "tag:forge:glass": 2
+  }
+}

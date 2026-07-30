@@ -1,0 +1,28 @@
+{
+	"name": "Drėkinimas",
+	"category": "tfc:firmalife",
+	"icon": "firmalife:sprinkler",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "$(thing)Purkštuvas$() – tai įrenginys, kuris purškia vandenį 5x6x5 plote, kurios centras yra blokas, esantis po purkštuvo bloku. Jūs žinote, kad jis veikia, kai iš jo lašėja vandens dalelės. Į viršų nukreipti purkštuvai drėkina tą patį 5x6x5 plotį virš jų."
+		},
+		{
+			"type": "tfc:anvil_recipe",
+			"recipe": "firmalife:anvil/sprinkler",
+			"text": "Purkštuvas yra pagamintas iš $(thing)Vario plokštės$()."
+		},
+		{
+			"title": "Vamzdynas",
+			"item": "gtceu:copper_tiny_fluid_pipe",
+			"type": "patchouli:spotlight",
+			"text": "Kad purkštuvai veiktų, juos reikia prijungti prie vamzdžių sistemos, tiekančios jiems vandenį. Tai daroma prijungiant prie jų $(thing)Skystinių vamzdžių$(). Vandenį į juos galima pumpuoti naudojant $(thing)Mechaninį siurblį$()."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Jūs galite dešiniuoju pelės mygtuku spustelėti vamzdį su „GregTech“ rėmeliu (pavyzdžiui, $(thing)Vario rėmas$()) ir priderinti jį prie sienos, arba naudoti šiltnamio prievadą. Tada galite purkštuvą prijungti tiesiai prie vamzdžio! Dešiniuoju pelės mygtuku spustelėkite skysčių vamzdžius su veržliarakčiu, kad pakeistumėte jų kryptį, o sėlinus (sneak) dešiniuoju pelės mygtuku spustelėkite juos su $(thing)tuščią antrinę ranką$(), kad jie taptų vienkrypčiai."
+		}
+	],
+	"read_by_default": true,
+	"sortnum": 8
+}

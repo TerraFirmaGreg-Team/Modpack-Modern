@@ -1,0 +1,237 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "İlkel Örsler",
+  "category": "tfc:getting_started",
+  "icon": "tfc:rock/anvil/granite",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Oyunun erken döneminde aletleri doğrudan dökmek yerine, ve daha üst tier metaller için de bir zorunluluk olarak, $(thing)Örs$() kullanabilirsin. Örs, iki farklı işlem için kullanılan bir bloktur: $(l:mechanics/anvils#working)işleme$() ve $(l:getting_started/primitive_anvils#welding)kaynak yapma$(). Bir örs, bir üst tier örsü yapmak için gereken metal türünün çift külçelerini kaynaklayabilir; bu da o metalden diğer eşyaları işlemek için gerekli olacaktır."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "İlk olarak, $(thing)ham kaya$() bloğu edinmen gerekiyor; bu ya $(thing)volkanik püskürük$() (Riyolit, Bazalt, Andezit veya Dasit) ya da $(thing)volkanik sokulum$() (Granit, Diyorit veya Gabro) türü olmalı. Dünyada açıkta duran bir bloğu bulup kullanabilir, ya da çevredeki kayadan $(l:getting_started/primitive_anvils#raw_rock)birini çıkarabilirsin$()."
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "stone_anvils",
+      "text": "Ayrıca herhangi bir malzemeden yapılmış bir $(thing)çekice$() de ihtiyacın olacak. Örsü yapmak için, o ham kaya bloklarından birinin açıkta duran $(thing)üst$() yüzüne $(thing)çekicinle$() sağ tıklaman yeterli, işte bu kadar! Bir örs oluşacak.$(br2)Örslerin $(l:mechanics/anvils#tiers)tier'leri$() vardır ve taş örs tier 0'dır - en düşük tier. Sadece tier I külçeleri $(l:getting_started/primitive_anvils#welding)kaynaklayabilir$().",
+      "title": "Kaya Örsü"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "Ortadaki ham kayayı bir örse dönüştürmek.",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              " 0 "
+            ],
+            [
+              "RRR"
+            ]
+          ],
+          "mapping": {
+            "0": "AIR",
+            "R": "tfc:rock/raw/gabbro"
+          }
+        },
+        "tfc:rock_anvil"
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "raw_rock",
+      "text": "Bir ham kaya bloğunu kırıp küçük taşlara dönüştürmeden elde etmek için, onu $(thing)çıkarman$() gerekiyor. Ham kaya bloğunun altı tarafındaki blokları da kazman lazım - blok her tarafından hava ile çevrildiğinde - kendiliğinden düşüp alınabilir bir eşyaya dönüşecek.",
+      "title": "Ham Taş Elde Etme"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "Ham taşın altı tarafını da kazmak - tamamlandığında, ortadaki blok kendiliğinden düşüp bir eşya olarak elde edilir.",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "   ",
+              " R ",
+              "   "
+            ],
+            [
+              " R ",
+              "RRR",
+              " R "
+            ],
+            [
+              "   ",
+              " 0 ",
+              "   "
+            ]
+          ],
+          "mapping": {
+            "0": "tfc:rock/raw/gabbro",
+            "R": "tfc:rock/raw/gabbro"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "   ",
+              "   ",
+              "   "
+            ],
+            [
+              " R ",
+              "RRR",
+              " R "
+            ],
+            [
+              "   ",
+              " 0 ",
+              "   "
+            ]
+          ],
+          "mapping": {
+            "0": "tfc:rock/raw/gabbro",
+            "R": "tfc:rock/raw/gabbro"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "   ",
+              "   ",
+              "   "
+            ],
+            [
+              "   ",
+              "RRR",
+              " R "
+            ],
+            [
+              "   ",
+              " 0 ",
+              "   "
+            ]
+          ],
+          "mapping": {
+            "0": "tfc:rock/raw/gabbro",
+            "R": "tfc:rock/raw/gabbro"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "   ",
+              "   ",
+              "   "
+            ],
+            [
+              "   ",
+              " RR",
+              " R "
+            ],
+            [
+              "   ",
+              " 0 ",
+              "   "
+            ]
+          ],
+          "mapping": {
+            "0": "tfc:rock/raw/gabbro",
+            "R": "tfc:rock/raw/gabbro"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "   ",
+              "   ",
+              "   "
+            ],
+            [
+              "   ",
+              " RR",
+              "   "
+            ],
+            [
+              "   ",
+              " 0 ",
+              "   "
+            ]
+          ],
+          "mapping": {
+            "0": "tfc:rock/raw/gabbro",
+            "R": "tfc:rock/raw/gabbro"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "   ",
+              "   ",
+              "   "
+            ],
+            [
+              "   ",
+              " R ",
+              "   "
+            ],
+            [
+              "   ",
+              " 0 ",
+              "   "
+            ]
+          ],
+          "mapping": {
+            "0": "tfc:rock/raw/gabbro",
+            "R": "tfc:rock/raw/gabbro"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "   ",
+              "   ",
+              "   "
+            ],
+            [
+              "   ",
+              " R ",
+              "   "
+            ],
+            [
+              "   ",
+              " 0 ",
+              "   "
+            ]
+          ],
+          "mapping": {
+            "0": "AIR",
+            "R": "tfc:rock/raw/gabbro"
+          }
+        }
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "welding",
+      "text": "Kaynaklama, iki eşyanın birleştirilerek yeni bir eşya oluşturulduğu bir işlemdir. Kaynak yapma, ister $(l:getting_started/primitive_anvils)taş örste$() ister $(l:mechanics/anvils)metal örste$() olsun aynı şekilde çalışır.$(br2)İlk olarak, kaynaklamak istediğin iki eşyayı örse yerleştirmen gerekiyor. Bunu, eşyaları örs üzerinde kullanarak ya da örs arayüzünü açıp en soldaki iki yuvaya yerleştirerek yapabilirsin.",
+      "title": "Kaynaklama"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Kaynak işlemine yardımcı olması için örste en az bir $(l:mechanics/flux)dekapan$() bulundurman da gerekiyor. Ardından, her iki eşya da kaynaklamak için $(l:mechanics/heating)yeterince sıcak$() olduğunda - tooltip'te \"Kaynaklanabilir\" yazacaktır - örse herhangi bir $(thing)çekiçle$() vurman ya da örs arayüzündeki kaynak butonuna basman gerekiyor. Bir çekiç sesi duyacaksın ve eşyalar birbirine kaynaklanmış olacak."
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 6,
+  "extra_recipe_mappings": {
+    "tfc:rock/anvil/granite": 0,
+    "tfc:rock/anvil/diorite": 0,
+    "tfc:rock/anvil/gabbro": 0,
+    "tfc:rock/anvil/rhyolite": 0,
+    "tfc:rock/anvil/basalt": 0,
+    "tfc:rock/anvil/andesite": 0,
+    "tfc:rock/anvil/dacite": 0
+  }
+}

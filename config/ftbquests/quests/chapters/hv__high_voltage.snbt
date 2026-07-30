@@ -69,6 +69,20 @@
 			x: 17.0d
 			y: -6.0d
 		}
+		{
+			id: "32FFB5754312AA2F"
+			linked_quest: "38FF003C9349C0F2"
+			shape: "heart"
+			x: 6.0d
+			y: -7.5d
+		}
+		{
+			id: "110B41E737911196"
+			linked_quest: "4C37DAD7C66523CC"
+			shape: "heart"
+			x: 7.0d
+			y: -7.5d
+		}
 	]
 	quests: [
 		{
@@ -116,8 +130,8 @@
 				type: "item"
 			}]
 			title: "{quests.high_voltage.chem_bath.title}"
-			x: -2.5d
-			y: 0.5d
+			x: -1.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["52AD30F04DD5A812"]
@@ -202,7 +216,6 @@
 		{
 			dependencies: ["52AD30F04DD5A812"]
 			description: ["{quests.high_voltage.assembler.desc}"]
-			hide_dependency_lines: true
 			icon: "gtceu:hv_assembler"
 			id: "16B735F9C391D260"
 			tasks: [{
@@ -217,13 +230,13 @@
 		{
 			dependencies: ["3568BC9742092FC5"]
 			description: ["{quests.high_voltage.lenses.desc}"]
-			icon: "gtceu:cyan_glass_lens"
+			icon: "gtceu:apatite_lens"
 			id: "6975F16F5B50F17F"
 			size: 1.0d
 			tasks: [
 				{
 					id: "73A16ED7BA7D64E8"
-					item: "gtceu:cyan_glass_lens"
+					item: "gtceu:apatite_lens"
 					optional_task: true
 					type: "item"
 				}
@@ -234,7 +247,7 @@
 				}
 				{
 					id: "0A73E24102F7294F"
-					item: "gtceu:orange_glass_lens"
+					item: "gtceu:spessartine_lens"
 					type: "item"
 				}
 				{
@@ -283,11 +296,6 @@
 				{
 					id: "22E204ADB8257706"
 					item: "gtceu:hv_energy_input_hatch"
-					type: "item"
-				}
-				{
-					id: "0799251A5E99839C"
-					item: "gtceu:sodium_potassium_bucket"
 					type: "item"
 				}
 			]
@@ -432,8 +440,8 @@
 			description: ["{quests.high_voltage.vacuum_freezer.desc}"]
 			icon: "gtceu:vacuum_freezer"
 			id: "6958029B5514D4EC"
-			shape: "gear"
-			size: 3.0d
+			shape: "octagon"
+			size: 2.0d
 			subtitle: "{quests.high_voltage.vacuum_freezer.subtitle}"
 			tasks: [{
 				id: "784C1A8A77AD314E"
@@ -1159,7 +1167,9 @@
 			dependencies: [
 				"3FBDC8552F7D8008"
 				"72BD27FEEB34C7B0"
+				"1FF607647FA682B3"
 			]
+			dependency_requirement: "one_completed"
 			description: [
 				"{quests.high_voltage.space_suit.desc.1}"
 				"{@pagebreak}"
@@ -1537,7 +1547,7 @@
 			]
 			title: "{quests.high_voltage.final_dust.title}"
 			x: 17.5d
-			y: 5.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["396E85A39FF414CF"]
@@ -1630,11 +1640,23 @@
 				{
 					id: "0C95EDF964B17ED6"
 					item: "greate:large_titanium_cogwheel"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "2E602B31550041B9"
 					item: "greate:titanium_shaft"
+					type: "item"
+				}
+				{
+					id: "5426CE4B588729F9"
+					item: "tfg:titanium_flywheel"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "07020B14B9DABDB8"
+					item: "tfg:titanium_steam_engine"
 					optional_task: true
 					type: "item"
 				}
@@ -1738,6 +1760,7 @@
 							}
 						}
 					}
+					match_nbt: true
 					optional_task: true
 					type: "item"
 				}
@@ -1809,6 +1832,7 @@
 						}
 					}
 				}
+				match_nbt: true
 				type: "item"
 			}]
 			x: 5.0d
@@ -1922,7 +1946,7 @@
 				item: "tfg:copper_bonded_al2o3_pcb"
 				type: "item"
 			}]
-			x: -2.5d
+			x: -1.5d
 			y: 3.0d
 		}
 		{
@@ -1937,6 +1961,71 @@
 			title: "{quests.high_voltage.perlite.title}"
 			x: 17.5d
 			y: -4.0d
+		}
+		{
+			dependencies: ["52AD30F04DD5A812"]
+			description: [
+				"{quests.high_voltage.large_steam_turbine.desc}"
+				""
+				"{ \"text\": \"▶▶▶▶▶▶▶\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"20DA81038C507C90\" } }"
+			]
+			icon: "tfg:large_steam_turbine"
+			id: "0278967C0472ECE6"
+			optional: true
+			subtitle: "{quests.high_voltage.large_steam_turbine.subtitle}"
+			tasks: [
+				{
+					id: "2B287AB098A64944"
+					item: "tfg:large_steam_turbine"
+					type: "item"
+				}
+				{
+					id: "0AA564036AD4CC59"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(gtceu:hv_energy_output_hatch)item(gtceu:hv_energy_output_hatch_4a)item(gtceu:hv_energy_output_hatch_16a))"
+						}
+					}
+					title: "{quests.high_voltage.large_steam_turbine.task}"
+					type: "item"
+				}
+				{
+					id: "6B7F5C0C7C47E362"
+					item: "gtceu:hv_rotor_holder"
+					type: "item"
+				}
+			]
+			x: -2.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["396E85A39FF414CF"]
+			description: [
+				"{quests.high_voltage.wireless_charger.desc.1}"
+				"{@pagebreak}"
+				"{quests.high_voltage.wireless_charger.desc.2}"
+			]
+			id: "380C4E4E1D97C9D0"
+			optional: true
+			shape: "heart"
+			subtitle: "{quests.high_voltage.wireless_charger.subtitle}"
+			tasks: [{
+				id: "4012D54C42920F50"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(tfg:hv_wireless_charger)item(tfg:ev_wireless_charger)item(tfg:iv_wireless_charger)item(tfg:luv_wireless_charger)item(tfg:zpm_wireless_charger)item(tfg:uv_wireless_charger)item(tfg:uhv_wireless_charger))"
+					}
+				}
+				title: "{quests.high_voltage.wireless_charger.task}"
+				type: "item"
+			}]
+			title: "{quests.high_voltage.wireless_charger.title}"
+			x: 12.0d
+			y: -6.0d
 		}
 	]
 	subtitle: ["{quests.high_voltage.subtitle}"]

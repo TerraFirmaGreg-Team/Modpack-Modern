@@ -1,0 +1,17 @@
+{
+    "variants" : {
+        "default" : "model:0"
+    },
+    
+    "modelConfigs" : [
+        {
+            "baseScale" : 0.18,
+            "modelMainPartFieldAliases" : [
+                "su.terrafirmagreg.core.common.entity.sniffer.TFCSnifferModel;head",
+                "su.terrafirmagreg.core.common.entity.sniffer.TFCSnifferModel;root"
+            ]
+        }
+    ],
+
+    "variantMethod" : "xaero.hud.minimap.radar.icon.definition.BuiltInRadarIconDefinitions.getVariant"
+}

@@ -12,7 +12,7 @@
 			"item": "gtceu:sticky_resin",
 			"title": "一种黏稠物质",
 			"link_recipe": true,
-			"text": "$(thing)乳胶$()的一种用途是生产$(item)黏性树脂$()。黏性树脂需要在$(l:firmalife/oven_appliances#vat)不锈钢锅$()或$(l:mechanics/pot)陶锅$()中加入$(thing)草木灰$()来凝固乳胶制成。"
+			"text": "$(thing)乳胶$()的一种用途是生产$(item)黏性树脂$()。黏性树脂需要在$(l:firmalife/oven_appliances#vat)铁锅$()或$(l:mechanics/pot)陶锅$()中加入$(thing)草木灰$()来凝固乳胶制成。"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -24,7 +24,7 @@
 			"type": "patchouli:spotlight",
 			"item": "tfg:vulcanized_latex_bucket",
 			"title": "我是橡胶……",
-			"text": "$(thing)乳胶$()的另一主要用途是制造橡胶。为了让乳胶更强韧、适合工业用途，需将其加热（使用 $(l:firmalife/oven_appliances#vat)不锈钢锅$()或$(l:mechanics/pot)陶锅$()），并加入$(thing)硫磺粉$()制成$(thing)硫化乳胶$()。这个过程本身叫做“硫化”！"
+			"text": "$(thing)乳胶$()的另一主要用途是制造橡胶。为了让乳胶更强韧、适合工业用途，需将其加热（使用 $(l:firmalife/oven_appliances#vat)铁锅$()或$(l:mechanics/pot)陶锅$()），并加入$(thing)硫磺粉$()制成$(thing)硫化乳胶$()。这个过程本身叫做“硫化”！"
 		},
 		{
 			"type": "patchouli:spotlight",

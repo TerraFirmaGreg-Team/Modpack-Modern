@@ -3,37 +3,16 @@
 # On commit, the line endings will be reset to lf
 * text=auto
 
-# Text Files
-*.txt text
-*.md text
-LICENSE text
-
-*.cfg text
-*.lang text
-
-*.bat text
-*.sh text
-
-*.json text
-*.yml text
-*.yaml text
-*.toml text
-
-*.js text
-*.ts text
-
-*.zs text
-*.groovy text
-
-*.xml text
-*.xsd text
-*.svg text
-
 # Binary Files
 *.png binary
 *.jpg binary
 *.jpeg binary
+*.gif binary
+*.ico binary
 *.pdf binary
+*.zip binary
+*.jar binary
 
+# GitHub Linguist
 dumps/**/*.* linguist-generated=true
 *.log linguist-generated=true

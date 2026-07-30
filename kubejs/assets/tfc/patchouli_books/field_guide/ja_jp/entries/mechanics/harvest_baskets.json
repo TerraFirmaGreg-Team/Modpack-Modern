@@ -1,0 +1,26 @@
+{
+	"name": "収穫かご",
+	"icon": "tfg:harvest_basket",
+	"category": "tfc:mechanics",
+	"read_by_default": true,
+	"pages": [
+		{
+			"type": "patchouli:spotlight",
+			"title": "収穫かご",
+			"item": {
+				"tag": "tfg:harvester"
+			},
+			"text": "$(thing)収穫かご$()は、背の低い方でも果樹や果実の茂みから効率よく収穫できるようになる道具です。$(br)使用方法は、果樹や果実の茂みに向かって右クリックするだけで、$(thing)半径7ブロック$()内にある果実を一括で収穫できます。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "通常の収穫バスケットは耐久値が$(thing)128$()あり、使用するたびに消耗しますが、アルミニウム製収穫バスケットは使用しても耐久値が減少しません。さらに、$(thing)Createのデプロイヤー$()のような装置に持たせることで収穫を自動化することも可能です。その場合はバスケットの耐久値が消費されます。"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": "収穫かご",
+			"recipe": "tfg:shaped/harvest_basket_from_papyrus",
+			"text": "$(item)収穫バスケット$()は、浸したパピルスや堅木を使って作成できます。"
+		}
+	]
+}

@@ -3,7 +3,7 @@
 
 function registerTFCMaterialModification(event) {
 	
-	const $TFC_PROPERTY = Java.loadClass('su.terrafirmagreg.core.compat.gtceu.properties.TFCProperty')
+	const $TFC_PROPERTY = Java.loadClass('su.terrafirmagreg.core.common.tfgt.material.property.TFCProperty')
 
 	
 	// TFC_PROPERTY = (forging temp, welding temp, melt temp, material, tier, percent of material)
@@ -72,5 +72,7 @@ function registerTFCMaterialModification(event) {
 	GTMaterials.Mica.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1540, 1540, 1540, AlSi, 1, 40))
 	GTMaterials.Spodumene.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1540, 1540, 1540, AlSi, 1, 30))
 	GTMaterials.Pollucite.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1540, 1540, 1540, AlSi, 1, 25))
-
+	GTMaterials.Lapis.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1540, 1540, 1540, AlSi, 1, 10))
+	GTMaterials.Lazurite.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1540, 1540, 1540, AlSi, 1, 10))
+	GTMaterials.Sodalite.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1540, 1540, 1540, AlSi, 1, 10))
 }

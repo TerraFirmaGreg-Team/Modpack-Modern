@@ -33,6 +33,15 @@
 			},
 			{
 				"state": {
+					"Name": "tfg:rock/mossy_cobble_tuff"
+				},
+				"target": {
+					"predicate_type": "minecraft:block_match",
+					"block": "minecraft:tuff"
+				}
+			},
+			{
+				"state": {
 					"Name": "tfg:rock/mossy_cobble_crackrack"
 				},
 				"target": {
@@ -92,6 +101,33 @@
 				"target": {
 					"predicate_type": "minecraft:block_match",
 					"block": "tfc:rock/raw/basalt"
+				}
+			},
+			{
+				"state": {
+					"Name": "tfc:rock/mossy_cobble/marble"
+				},
+				"target": {
+					"predicate_type": "minecraft:block_match",
+					"block": "tfc:rock/raw/marble"
+				}
+			},
+			{
+				"state": {
+					"Name": "tfc:rock/mossy_cobble/slate"
+				},
+				"target": {
+					"predicate_type": "minecraft:block_match",
+					"block": "tfc:rock/raw/slate"
+				}
+			},
+			{
+				"state": {
+					"Name": "tfc:rock/mossy_cobble/phyllite"
+				},
+				"target": {
+					"predicate_type": "minecraft:block_match",
+					"block": "tfc:rock/raw/phyllite"
 				}
 			}
 		]

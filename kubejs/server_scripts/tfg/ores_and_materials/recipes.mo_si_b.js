@@ -22,6 +22,7 @@ function registerTFGMoSiBRecipes(event) {
 		.outputFluids(Fluid.of('tfg:hydroxide_decomposition_off_gas', 300))
 		.duration(12 * 20)
 		.EUt(GTValues.VA[GTValues.EV])
+		.circuit(1)
 
 	event.recipes.gtceu.arc_furnace('tfg:silicon_tetrachloride_water')
 		.itemInputs(Item.of('tfg:dirty_mo_si_b_dust', 1))
@@ -80,7 +81,7 @@ function registerTFGMoSiBRecipes(event) {
 		.inputFluids(Fluid.of('gtceu:dense_ostrum_vapor', 1000))
 		.itemOutputs(Item.of('tfg:activated_mo_si_b_ingot', 1))
         .outputFluids(Fluid.of('tfg:linac_activated_gas', 100))
-		.input($HeatRecipeCapability.CAP, new $HeatIngredient(500, 900))
+		.input($HeatRecipeCapability.CAP, new $HeatIngredient(500, 890))
 		.dimension('ad_astra:mars')
 		.duration(20 * 600)
 		.EUt(GTValues.VA[GTValues.IV])

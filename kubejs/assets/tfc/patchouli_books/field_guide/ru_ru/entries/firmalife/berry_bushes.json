@@ -1,0 +1,41 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "Ягодные кусты",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:plant/pineapple_bush",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Firmalife добавляет ягодные кусты. Информацию о\nкустах дикого винограда см. в разделе $(l:firmalife/wine)виноделие$()."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "firmalife:food/nightshade_berry",
+      "link_recipes": false,
+      "text": "Во-первых, это паслен. Паслен — ядовитая ягода. Если добавить его в суп, он сделает его ядовитым $(thing)Вонючий суп$(). Она встречается в лесах, где выпадает от 200 до 400 мм осадков, а температура составляет от 7 до 24 °C."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "firmalife:food/pineapple",
+      "link_recipes": false,
+      "text": "Кусты ананаса встречаются в лесах при 250—500 мм осадков и температуре 20—32. Ананасы похожи Ha любые другие фрукты, за исключением  того что из них можно сделать  $(thing)Ананасовую кожу$()."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/pineapple_fiber",
+      "text": "Ананасы, прошедшие $(l:firmalife/drying)Сушку$() можно превратить в ананасовое волокно."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:kjs/damage/shapeless/pineapple_yarn",
+      "text": "Пряжа из ананаса изготовляется путем создания $(thing)Веретена$() из волокна."
+    },
+    {
+      "type": "tfc:loom_recipe",
+      "recipe": "firmalife:loom/pineapple_leather",
+      "text": "Наконец, кожу ананаса можно соткать на $(l:tfc:mechanics/weaving)Loom$(). Это растительный заменитель обычной кожи, которую можно использовать для выделывания, изготовления изделий и других целей!"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 21
+}

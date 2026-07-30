@@ -179,7 +179,7 @@
     {
       "type": "tfc:glassworking_recipe",
       "anchor": "lamp_glass",
-      "recipe": "tfc:glassworking/lamp_glass",
+      "recipe": "tfg:glassworking/lamp_glass",
       "text": "$(thing)Lamp Glass$() is a necessary component to craft $(l:mechanics/lamps)Lamps$()."
     },
     {

@@ -1,0 +1,32 @@
+// Default rules file
+
+@default
+    @creative_menu_order
+
+@creative_menu_order
+    ::custom_name
+    ::creative_menu_group_index
+    ::raw_id
+    @default_nbt_rule
+
+@item_name
+    ::display_name
+    @default_nbt_rule
+
+@item_id
+    ::item_id
+    @default_nbt_rule
+
+@raw_id
+    ::raw_id
+    @default_nbt_rule
+
+@default_nbt_rule
+    ::enchantments_score
+    ::damage
+    ::display_name
+    ::potion_effect
+    ::nbt_comparator
+
+@auto_refill_best
+    @default_nbt_rule

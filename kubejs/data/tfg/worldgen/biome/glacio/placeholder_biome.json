@@ -94,12 +94,7 @@
 		],
 		"water_ambient": [],
 		"water_creature": [
-			{
-				"type": "species:leaf_hanger",
-				"maxCount": 2,
-				"minCount": 1,
-				"weight": 50
-			}
+		
 		]
 	},
 	"temperature": -0.5

@@ -1,0 +1,17 @@
+{
+    "name": "Отделка брони",
+    "category": "tfc:mechanics",
+    "icon": "minecraft:rib_armor_trim_smithing_template",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Отделка брони создается с помощью $(thing)материала для отделки$() и $(l:mechanics/sewing_table)кузнечного шаблона$(). В TFC все драгоценные камни, а так же стерлинговое серебро, золото, розовое золото и висмут можно использовать как материалы для отделки. Отделка брони является чисто косметической."
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "minecraft:shapeless/smithing_table",
+            "text": "Кузнечный стол можно использовать для нанесения отделки на броню TFC."
+        }
+    ],
+    "read_by_default": true
+}

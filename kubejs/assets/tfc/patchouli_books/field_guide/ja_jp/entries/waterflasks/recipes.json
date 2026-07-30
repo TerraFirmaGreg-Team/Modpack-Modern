@@ -1,0 +1,41 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "水筒のレシピ",
+  "category": "tfc:waterflasks",
+  "icon": "waterflasks:leather_flask",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "水筒には3つの種類があります。$(br)革製の水筒は5杯分入り、100回使用できます。$(br)鉄製の水筒は20杯分入り、400回使用できます。$(br)赤鋼製の水筒は20杯分入り、永久に使用できます。$(br)革製と鉄製の水筒は、どちらも修理が可能です。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "waterflasks:crafting/leather_flask",
+      "recipe2": "tfg:shaped/iron_flask"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "waterflasks:crafting/repair_leather",
+      "recipe2": "tfg:shaped/repair_iron_bladder",
+      "title": "修理レシピ"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "waterflasks:crafting/repair_broken_leather",
+      "recipe2": "tfg:shaped/repair_broken_iron",
+      "title": "再生レシピ",
+      "text": "水筒は完全に壊れても修理することができます。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfg:shaped/red_steel_flask_bladder"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 1,
+  "extra_recipe_mappings": {
+    "waterflasks:leather_flask": 1,
+    "waterflasks:iron_flask": 1,
+    "waterflasks:red_steel_flask": 4
+  }
+}

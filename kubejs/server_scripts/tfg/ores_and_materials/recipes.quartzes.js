@@ -11,9 +11,10 @@ function registerTFGQuartzRecipes(event) {
 
 	event.recipes.gtceu.autoclave("autoclave_dust_rose_quartz_ice")
 		.itemInputs('#forge:dusts/rose_quartz')
+		.notConsumable('#forge:gems/rose_quartz')
 		.inputFluids(Fluid.of("gtceu:ice", 144))
 		.itemOutputs("#forge:gems/rose_quartz")
-		.duration(2000)
+		.duration(30 * 20)
 		.EUt(120)
 
 	event.recipes.gtceu.electrolyzer('electrolyze_rose_quartz_dust')
@@ -21,7 +22,21 @@ function registerTFGQuartzRecipes(event) {
 		.itemOutputs('1x #forge:dusts/nether_quartz', '8x minecraft:redstone')
 		.duration(7 * 20)
 		.EUt(60)
-	//#endregion
+
+	event.recipes.gtceu.electrolyzer('tfg:electrolyze_smoky_quartz_dust')
+		.itemInputs('3x #forge:dusts/nether_quartz')
+		.itemOutputs('gtceu:silicon_dust')
+		.outputFluids(Fluid.of('gtceu:oxygen', 2000))
+		.duration(7 * 20)
+		.EUt(60)
+
+	event.recipes.gtceu.electrolyzer('tfg:electrolyze_quartz_dust')
+		.itemInputs('3x #forge:dusts/quartzite')
+		.itemOutputs('gtceu:silicon_dust')
+		.outputFluids(Fluid.of('gtceu:oxygen', 2000))
+		.duration(7 * 20)
+		.EUt(60)
+  //#endregion
 
 	//#region Glass
 
@@ -53,7 +68,7 @@ function registerTFGQuartzRecipes(event) {
 	event.recipes.gtceu.alloy_smelter(`tfg:tfc/lamp_glass`)
 		.itemInputs('#tfc:glass_batches')
 		.notConsumable('#tfg:unfinished_lamps')
-		.itemOutputs('tfc:lamp_glass')
+		.itemOutputs('4x tfc:lamp_glass')
 		.duration(100)
 		.EUt(2)
 		.category(GTRecipeCategories.INGOT_MOLDING)
@@ -61,7 +76,7 @@ function registerTFGQuartzRecipes(event) {
 	event.recipes.gtceu.alloy_smelter(`tfg:tfc/lamp_glass_from_dust`)
 		.itemInputs('#forge:dusts/glass')
 		.notConsumable('#tfg:unfinished_lamps')
-		.itemOutputs('tfc:lamp_glass')
+		.itemOutputs('4x tfc:lamp_glass')
 		.duration(100)
 		.EUt(2)
 		.category(GTRecipeCategories.INGOT_MOLDING)

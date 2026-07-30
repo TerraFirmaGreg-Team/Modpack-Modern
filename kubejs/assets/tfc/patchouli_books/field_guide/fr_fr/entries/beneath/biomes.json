@@ -1,0 +1,111 @@
+{
+	"name": "Biomes",
+	"category": "tfc:beneath",
+	"icon": "minecraft:spyglass",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Le Beneath possède un tout nouvel ensemble de biomes à explorer ! Le Beaneath peut être séparé en trois couches horizontales, avec chacune son propre ensemble de biomes. Ceux-ci se réchauffent lorsque vous descendez !"
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Grottes Salines",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/salt_caves.png"
+			],
+			"border": true,
+			"text": "Comme une chaude brise océanique, ce biome est rempli de $(item)Halite$(). Cela en fait un très bon emplacement pour une base !"
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Tourbière Étouffante",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/muggy_bog.png"
+			],
+			"border": true,
+			"text": "Humide comme un marais. Une source sûre de bois, si vous pouvez éviter les $(thing)Crocodiles$()."
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Cavernes Pourrissantes",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/decaying_caverns.png"
+			],
+			"border": true,
+			"text": "Les recycleurs de la nature travaillent dur dans cette région humide pleine de pourriture."
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Repaire Entoilé",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/webbed_lair.png"
+			],
+			"border": true,
+			"text": "Pas de prix pour avoir deviné ce qui y vit ! Possède aussi des énormes colonnes de $(thing)travertin$()."
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Étangs de Goudron",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/tar_pools.png"
+			],
+			"border": true,
+			"text": "Sableux comme un petit désert, cette zone contient des $(thing)bassins de goudron$() pleins de pétrole."
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Sources Géothermales",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/geothermal_springs.png"
+			],
+			"border": true,
+			"text": "Pas de Cubes de soufre ici, mais ce biome embué est un super endroit pour chercher de l'$(thing)eau de source$() pour se soigner."
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Bosquet Épineux",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/thorny_brambles.png"
+			],
+			"border": true,
+			"text": "Un biome difficile à traverser rempli de plantes qui affectent ceux qui marchent dessus. Prenez garde !"
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Antre Luxuriante",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/lush_hollow.png"
+			],
+			"border": true,
+			"text": "Chaude et pleine de verdure ! Les denses fougères cachent de la $(thing)Kaolin$() sous-jacente"
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Forêt de Cendres",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/ash_forest.png"
+			],
+			"border": true,
+			"text": "Ce qui reste de l'Antre Luxuriante après les incendies fréquents causés par la chaleur."
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Banquise de Lave",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/lava_floes.png"
+			],
+			"border": true,
+			"text": "Une zone de $(thing)pyroxénite$() riche en minerais traversée par des rivières de lave."
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Deltas de Basalte",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/basalt_deltas.png"
+			],
+			"border": true,
+			"text": "Le biome du Nether préféré de tous revient, tout aussi dangereux à traverser qu'avant."
+		}
+	],
+	"read_by_default": true
+}

@@ -78,6 +78,9 @@ const registerGTCEUHeats = (event) => {
 			makeItemHeatByTagPrefix(TFGTagPrefix.toolHeadButcheryKnife, material, tfcProperty, 1.429)
 			makeItemHeatByTagPrefix(TFGTagPrefix.toolHeadMiningHammer, material, tfcProperty, 2.875)
 			makeItemHeatByTagPrefix(TFGTagPrefix.toolHeadSpade, material, tfcProperty, 2.875)
+			
+			makeItemHeatByTagPrefix(TFGTagPrefix.unfiredRepairKit, material, tfcProperty, 1.875)
+			makeItemHeatByTagPrefix(TFGTagPrefix.repairKit, material, tfcProperty, 1.875)
 
 			makeItemHeatByToolType(GTToolType.SWORD, material, tfcProperty, 1.429)
 			makeItemHeatByToolType(GTToolType.PICKAXE, material, tfcProperty, 1.429)
@@ -138,7 +141,6 @@ const registerGTCEUMetals = (event) => {
 }
 
 function registerGTCEUBedrockFluidVeins(event) {
-
 	registerTFGMoonBedrockFluidVeins(event)
 	registerTFGMarsBedrockFluidVeins(event)
 	registerTFGVenusBedrockFluidVeins(event)

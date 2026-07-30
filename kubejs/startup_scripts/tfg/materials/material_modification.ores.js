@@ -10,7 +10,7 @@ function registerTFGOresMaterialModification(event) {
 	GTMaterials.Borax.setProperty(PropertyKey.ORE, new $ORE_PROPERTY());
 
 	let rose_quartz = $GreateMaterials.RoseQuartz;
-	rose_quartz.setProperty(PropertyKey.ORE, new $ORE_PROPERTY());
+	rose_quartz.setProperty(PropertyKey.ORE, new $ORE_PROPERTY(6, 1, true));
 	rose_quartz.getProperty(PropertyKey.ORE).setOreByProducts(rose_quartz, GTMaterials.Redstone, rose_quartz);
 
 	// Change byproducts so you can't get certus from normal quartzite
@@ -24,10 +24,21 @@ function registerTFGOresMaterialModification(event) {
 	// Change any Ores that have Rutile
 	GTMaterials.Ilmenite.getProperty(PropertyKey.ORE).setOreByProducts(GTMaterials.Iron, GTMaterials.Ilmenite, GTMaterials.IlmeniteSlag, GTMaterials.IlmeniteSlag);
 	GTMaterials.Aluminium.getProperty(PropertyKey.ORE).setOreByProducts(GTMaterials.Bauxite, GTMaterials.Bauxite, GTMaterials.Ilmenite, GTMaterials.IlmeniteSlag);
-	GTMaterials.Bauxite.getProperty(PropertyKey.ORE).setOreByProducts(GTMaterials.Grossular, GTMaterials.IlmeniteSlag, GTMaterials.Gallium, GTMaterials.Gallium);
+	GTMaterials.Bauxite.getProperty(PropertyKey.ORE).setOreByProducts(GTMaterials.Grossular, GTMaterials.Ilmenite, GTMaterials.Gallium, GTMaterials.Gallium);
+
+	// Change Ores that have Chromium for Chromite
+	GTMaterials.Ruby.getProperty(PropertyKey.ORE).setOreByProducts(GTMaterials.Chromite, GTMaterials.GarnetRed, GTMaterials.Chromite);
+
+	// Change Ores that have Molybdenum for Molybdenite
+	GTMaterials.Scheelite.getProperty(PropertyKey.ORE).setOreByProducts(GTMaterials.Manganese, GTMaterials.Molybdenite, GTMaterials.Calcium);
+	GTMaterials.Molybdenite.getProperty(PropertyKey.ORE).setOreByProducts(GTMaterials.Quartzite, GTMaterials.Sulfur, GTMaterials.Molybdenum);
 
 	// Remove old stone dusts
 	GTMaterials.GraniticMineralSand.getProperty(PropertyKey.ORE).setOreByProducts(GTMaterials.get('tfg:igneous_felsic'), GTMaterials.Magnetite, GTMaterials.Magnetite);
 	GTMaterials.BasalticMineralSand.getProperty(PropertyKey.ORE).setOreByProducts(GTMaterials.get('tfg:igneous_mafic'), GTMaterials.Magnetite, GTMaterials.Magnetite);
 	
+	// Change ore multipliers
+	GTMaterials.Cassiterite.getProperty(PropertyKey.ORE).setOreMultiplier(1);
+	GTMaterials.CassiteriteSand.getProperty(PropertyKey.ORE).setOreMultiplier(1);
+	GTMaterials.Coal.getProperty(PropertyKey.ORE).setOreMultiplier(1);
 }

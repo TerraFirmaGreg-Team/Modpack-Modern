@@ -5,9 +5,18 @@ function registerTFGMVMaterialRecipes(event) {
 	event.remove({ id: 'gtceu:electric_blast_furnace/blast_rough_silicon_carbide' })
 	event.remove({ id: 'gtceu:electric_blast_furnace/blast_rough_silicon_carbide_gas' })
 	event.remove({ id: 'gtceu:alloy_smelter/alloy_smelt_silicon_carbide_to_nugget' })
+	event.remove({ id: 'gtceu:alloy_smelter/alloy_smelt_weak_inconel_718_to_nugget' })
 
 	event.recipes.gtceu.electric_blast_furnace('tfg:rough_sic_gem')
 		.itemInputs(Item.of('gtceu:quartzite_gem', 9), Item.of('gtceu:graphite_dust', 27))
+		.itemOutputs(Item.of('tfg:hot_rough_silicon_carbide_ingot', 1))
+		.outputFluids(Fluid.of('gtceu:carbon_monoxide', 18000))
+		.blastFurnaceTemp(1760)
+		.duration(20 * 180)
+		.EUt(GTValues.VA[GTValues.MV])
+
+	event.recipes.gtceu.electric_blast_furnace('tfg:rough_sic_gem_nq')
+		.itemInputs(Item.of('minecraft:quartz', 9), Item.of('gtceu:graphite_dust', 27))
 		.itemOutputs(Item.of('tfg:hot_rough_silicon_carbide_ingot', 1))
 		.outputFluids(Fluid.of('gtceu:carbon_monoxide', 18000))
 		.blastFurnaceTemp(1760)
@@ -22,8 +31,24 @@ function registerTFGMVMaterialRecipes(event) {
 		.duration(20 * 140)
 		.EUt(GTValues.VA[GTValues.MV])
 
+	event.recipes.gtceu.electric_blast_furnace('tfg:flawless_rough_sic_gem_nq')
+		.itemInputs(Item.of('gtceu:flawless_nether_quartz_gem', 9), Item.of('gtceu:graphite_dust', 27))
+		.itemOutputs(Item.of('tfg:hot_rough_silicon_carbide_ingot', 5))
+		.outputFluids(Fluid.of('gtceu:carbon_monoxide', 18000))
+		.blastFurnaceTemp(1760)
+		.duration(20 * 140)
+		.EUt(GTValues.VA[GTValues.MV])
+
 	event.recipes.gtceu.electric_blast_furnace('tfg:exquisite_rough_sic_gem')
 		.itemInputs(Item.of('gtceu:exquisite_quartzite_gem', 9), Item.of('gtceu:graphite_dust', 27))
+		.itemOutputs(Item.of('tfg:hot_rough_silicon_carbide_ingot', 9))
+		.outputFluids(Fluid.of('gtceu:carbon_monoxide', 18000))
+		.blastFurnaceTemp(1760)
+		.duration(20 * 100)
+		.EUt(GTValues.VA[GTValues.MV])
+
+	event.recipes.gtceu.electric_blast_furnace('tfg:exquisite_rough_sic_gem_nq')
+		.itemInputs(Item.of('gtceu:exquisite_nether_quartz_gem', 9), Item.of('gtceu:graphite_dust', 27))
 		.itemOutputs(Item.of('tfg:hot_rough_silicon_carbide_ingot', 9))
 		.outputFluids(Fluid.of('gtceu:carbon_monoxide', 18000))
 		.blastFurnaceTemp(1760)
@@ -63,9 +88,9 @@ function registerTFGMVMaterialRecipes(event) {
 			Item.of('gtceu:aluminium_dust', 1),
 			Item.of('gtceu:boron_dust', 1))
 		.inputFluids(Fluid.of('gtceu:carbon_monoxide', 1000))
-		.itemOutputs(Item.of('tfg:rene_41_dust', 7))
+		.itemOutputs(Item.of('tfg:rene_41_dust', 14))
 		.outputFluids(Fluid.of('gtceu:oxygen', 1000))
-		.duration(20 * 46)
+		.duration(20 * 92)
 		.EUt(GTValues.VA[GTValues.MV])
 		.circuit(4)
 
@@ -73,14 +98,14 @@ function registerTFGMVMaterialRecipes(event) {
 		.itemInputs(Item.of('#forge:hot_ingots/rene_41', 1))
 		.inputFluids(Fluid.of('minecraft:water', 100))
 		.itemOutputs(Item.of('#forge:ingots/rene_41', 1))
-		.duration(20 * 23)
+		.duration(20 * 11.5)
 		.EUt(GTValues.VA[GTValues.MV])
 
 	event.recipes.gtceu.chemical_bath('tfg:rene_41_cool_down_distilled_water')
 		.itemInputs(Item.of('#forge:hot_ingots/rene_41', 1))
 		.inputFluids(Fluid.of('gtceu:distilled_water', 100))
 		.itemOutputs(Item.of('#forge:ingots/rene_41', 1))
-		.duration(20 * 14)
+		.duration(20 * 7)
 		.EUt(GTValues.VA[GTValues.MV])
 
 	//#region Diamond Tipped Tools custom recipes
@@ -116,7 +141,7 @@ function registerTFGMVMaterialRecipes(event) {
 			.itemOutputs(`tfg:diamond_tipped_mo_50_re_${element.id}`)
 			.notConsumable('gtceu:glass_lens')
 			.duration(15 * 20 * element.amount)
-			.circuit(index)
+			.circuit(index + 1)
 			.EUt(GTValues.VA[GTValues.MV])
 	});
 
@@ -128,8 +153,11 @@ function registerTFGMVMaterialRecipes(event) {
 
 	//#region Modify Electronic Component to require Silicon Rubber
 
-	//event.replaceInput({ id: 'gtceu:assembler/transistor' }, Fluid.of('gtceu:polyethylene'), Fluid.of('gtceu:silicone_rubber'))
-	event.replaceInput({ id: 'gtceu:assembler/capacitor' }, Item.of('gtceu:polyethylene_foil'), Item.of('gtceu:silicone_rubber_foil'))
+
+	global.modifyRecipe(event, "gtceu:assembler/capacitor", {
+		newId: "tfg:assembler/capacitor",
+		fluidReplacements: { "forge:polyethylene": "gtceu:silicone_rubber" },
+	})
 
 	global.modifyRecipe(event, "gtceu:assembler/transistor", {
 		newId: "tfg:assembler/transistor",

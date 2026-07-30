@@ -1,0 +1,88 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "Сыр",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:textures/item/food/gouda.png",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Создание $(thing)сыра$() в Firmalife немного сложнее, чем в ванильном TFС, Появилось два новых вида молока: $(thing)Молоко яка$() и $(thing)Козье молоко$(). Их получают в результате доения $(l:mechanics/animal_husbandry#yak)Яка$() и $(l:mechanics/animal_husbandry#goat)Козы$() соответственно, Доение $(l:mechanics/animal_husbandry#cow)Коровы$() по-прежнему дает старый вид молока."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Как обычно, молоко сначала должно быть\n$(thing)свертывание$(), Чтобы свернуть молоко, вам\nпонадобится $(thing)сычуг$0. Сычуг выпадает из $(thing)жвачных$() животных. Таких как $(l:mechanics/animal_husbandry#yak)Як$(), $(l:mechanics/animal_husbandry#cow)Корова$(), $(l:mechanics/animal_husbandry#sheep)Овца$(), $(l:mechanics/animal_husbandry#goat)Коза$(), и $(l:mechanics/animal_husbandry#musk_ox)Овце-бык$(). Чтобы свернулось молоко, запечатайте его в $(l:mechanics/barrels)бочке$() с сычугом на 4 часа."
+    },
+    {
+      "type": "patchouli:crafting",
+      "anchor": "cheesecloth",
+      "recipe": "firmalife:crafting/cheesecloth",
+      "text": "Простоквашку нужно превратить в $(thing)творог$(), запечатав его в бочке с $(thing)марлей$(). Марлю нельзя использовать повторно."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfg:crafting/cheddar_wheel",
+      "text": "Теперь вы готовы сделать $(thing)сухой сыр$(), если хотите. Вы можете сделать $(thing)Сыр Райя-Меток$() из $(thing)творога из молока яка$(), $(thing)Шевр$() из $(thing)творога из козьего молока$() и $(thing)Чеддер$() из $(thing)молочного творога$()."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfg:crafting/chevre_wheel",
+      "recipe2": "tfg:crafting/rajya_metok_wheel"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Другой вариант — сделать $(thing)Рассольный сыры$(). Они изготавливаются путём запечатывания творога в бочке с $(thing)солёной водой$(). Вы можете сделать $(thing)Шошу$() из $(thing)творога из молока яка$(), $(thing)Фету$() из $(thing)творога из козьего молока$() и $(thing)Гауду$() из $(thing)молочного творога$()."
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "aging",
+      "text": "Сырные колёса — это блоки, которые следует размещать, чтобы они дольше хранились. Дабы улучшить их качество и срок хранения, сырные колёса нужно $(thing)выдерживать$() в $(l:firmalife/cellar)погребе$(). Для получения съедобного сыра из сырного колеса, его нужно отрезать от колеса, нажав $(item)$(k:key.use)$() с $(thing)ножом$(). Если просто сломать блок, выдержка будет потеряна!"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "Стадии старения колеса Гауды: $(thing)Свежое$(), $(thing)Выдержанное$() и $(thing)Сверхвыдержанное$().",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "firmalife:gouda_wheel[age=fresh]"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "firmalife:gouda_wheel[age=aged]"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "firmalife:gouda_wheel[age=vintage]"
+          }
+        }
+      ]
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 1
+}

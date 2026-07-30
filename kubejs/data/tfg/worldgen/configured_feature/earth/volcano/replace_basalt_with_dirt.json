@@ -1,0 +1,36 @@
+{
+	"type": "minecraft:disk",
+	"config": {
+		"half_height": 4,
+		"radius": 8,
+		"state_provider": {
+			"fallback": {
+				"type": "minecraft:simple_state_provider",
+				"state": {
+					"Name": "tfc:rock/hardened/basalt"
+				}
+			},
+			"rules": [
+				{
+					"if_true": {
+						"type": "minecraft:not",
+						"predicate": {
+							"type": "minecraft:solid",
+							"offset": [ 0, 1, 0 ]
+						}
+					},
+					"then": {
+						"type": "minecraft:simple_state_provider",
+						"state": {
+							"Name": "tfg:grass/mollisol"
+						}
+					}
+				}
+			]
+		},
+		"target": {
+			"type": "minecraft:matching_block_tag",
+			"tag": "forge:stone"
+		}
+	}
+}

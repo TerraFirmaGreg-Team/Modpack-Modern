@@ -1,0 +1,71 @@
+name: Giscus rename
+
+on:
+  discussion:
+    types: [created]
+  workflow_dispatch:
+    inputs:
+      discussion_number:
+        description: 'Discussion ID: (e.g. 4283)'
+        required: true
+        type: number
+
+permissions:
+  discussions: write
+
+env:
+  WIKI_URL: https://wiki.terrafirmagreg.team
+
+jobs:
+  rename:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          set -euo pipefail
+
+          # load discussion
+          if [ "$GITHUB_EVENT_NAME" = workflow_dispatch ]; then
+            NUM='${{ inputs.discussion_number }}'
+            O="${GITHUB_REPOSITORY%/*}"
+            R="${GITHUB_REPOSITORY#*/}"
+            D=$(gh api graphql -f query='query($o:String!,$n:String!,$num:Int!){repository(owner:$o,name:$n){discussion(number:$num){id title body}}}' -f o="$O" -f n="$R" -F num="$NUM")
+            NODE_ID=$(echo "$D" | jq -r '.data.repository.discussion.id // empty')
+            TITLE=$(echo "$D" | jq -r '.data.repository.discussion.title // empty')
+            BODY=$(echo "$D" | jq -r '.data.repository.discussion.body // empty')
+            [ -n "$NODE_ID" ] || { echo 'gr: skip not found'; exit 0; }
+          else
+            NODE_ID=$(jq -r '.discussion.node_id' "$GITHUB_EVENT_PATH")
+            TITLE=$(jq -r '.discussion.title' "$GITHUB_EVENT_PATH")
+            BODY=$(jq -r '.discussion.body' "$GITHUB_EVENT_PATH")
+          fi
+
+          # check sha1
+          [ -n "$TITLE" ] || { echo 'gr: skip bad title'; exit 0; }
+          EXPECTED=$(printf '%s' "$TITLE" | sha1sum | awk '{print $1}')
+          FOUND=$(printf '%s' "$BODY" | grep -oE '[a-f0-9]{40}' | head -1 || true)
+          [ -n "$FOUND" ] || { echo 'gr: skip no hash'; exit 0; }
+          [ "$FOUND" = "$EXPECTED" ] || { echo 'gr: err sha1 mismatch'; exit 1; }
+
+          # build URL
+          [[ "$TITLE" == /* ]] || { echo 'gr: skip bad title'; exit 0; }
+          URL="${WIKI_URL%/}${TITLE}"
+
+          # fetch og:title
+          OG=
+          for i in 1 2 3; do
+            CODE=$(curl -sS -o /tmp/page.html -w '%{http_code}' --max-time 30 -A 'giscus-rename/1' "$URL" || echo 000)
+            if [ "$CODE" = 200 ]; then
+              OG=$(sed -n 's/.*property="og:title"[^>]*content="\([^"]*\)".*/\1/p;s/.*content="\([^"]*\)"[^>]*property="og:title".*/\1/p' /tmp/page.html | head -1)
+              [ -n "$OG" ] && break
+            else
+              [ "$i" -lt 3 ] && echo "gr: retry $i http=$CODE"
+            fi
+            [ "$i" -lt 3 ] && sleep 2
+          done
+          [ -n "$OG" ] || { echo 'gr: skip no og:title'; exit 0; }
+
+          # rename
+          gh api graphql -f query='mutation($id:ID!,$title:String!){updateDiscussion(input:{discussionId:$id,title:$title}){discussion{title}}}' -f id="$NODE_ID" -f title="$OG" > /dev/null
+          echo "gr: ok title=$OG"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

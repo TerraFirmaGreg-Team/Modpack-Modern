@@ -1,0 +1,50 @@
+# This file stores configuration options for the Euphoria Patcher mod
+# Made for version 1.8.6
+# Thank you for using Euphoria Patches - SpacEagle17
+
+[display]
+	# Option for the sodium message popup logging.
+	# Default = true
+	doPopUpLogging = true
+
+	# Option that enables or disables the in-game shader messages, for example an update message made by the shader itself. Only works on Iris or Oculus
+	# Default = true
+	doDisplayShaderInGameMessage = true
+
+[updates]
+	# Option which determines what updates the update checker considers.
+	# Update checker mode: 'important' (critical or big updates only), 'all' (all updates), 'none' (disabled).
+	# Uses the Modrinth API to fetch update information.
+	# Default = important
+	doUpdateChecking = "none"
+
+[maintenance]
+	# Option that automatically renames outdated Euphoria Patches folders and config files to a new name.
+	# This makes it easier for users to identify which ones are outdated.
+	# Default = true
+	doRenameOldShaderFiles = false
+
+	# Option that automatically deletes outdated Euphoria Patches folders and config files.
+	# Default = false
+	doDeleteOldShaderFiles = false
+
+[debug]
+	# Option that enables or disables debug logging. Alternatively, one can also set the JVM argument -DebugEP=true/false which takes priority over this setting.
+	# Default = false
+	doDebugLogging = false
+
+[advanced]
+	# Here one can set alternative Shader Names which will also be generated alongside the normal one.
+	# This is useful if you want multiple different settings you can quickly switch between
+	# Default = Empty String, which means no alternative names will be generated.
+	# In case of multiple names, separate them with a comma
+	# You can also use {baseVersion} or {patchVersion} in names to insert the base shader or Euphoria Patches version.
+	# Example: Euphoria Saturated, Comp_{baseVersion} + EP_{patchVersion} Dark Settings, EP High Performance, etc...
+	alternativeShaderNames = ""
+
+	# Option that enables or disables automatic merging of the fragmented block.properties files into the main block.properties file.
+	# The properties files inside "Euphoria Patches/shaders/properties/" will be merged into a single block.properties file at the specified interval if any of them have changed.
+	# This helps organizing the files, reduces the number of entries in a single file and improves speed while editing them.
+	# Since they are merged automatically into the final block.properties file, the individual files can be edited without worrying about merge conflicts or losing changes.
+	# Default = false
+	autoMergeBlockProperties = false

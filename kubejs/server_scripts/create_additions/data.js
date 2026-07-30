@@ -18,6 +18,7 @@ function registerTFCDataForCreateAddition(event) {
 		food.decayModifier(2)
 		food.dairy(0.4)
 		food.grain(0.4)
+		food.sugary(1)
 	})
 
 	event.foodItem('tfc:cake', food => {
@@ -26,6 +27,7 @@ function registerTFCDataForCreateAddition(event) {
 		food.decayModifier(2)
 		food.dairy(0.8)
 		food.grain(0.8)
+		food.sugary(1)
 	})
 
 	event.foodItem('createaddition:chocolate_cake', food => {
@@ -34,6 +36,7 @@ function registerTFCDataForCreateAddition(event) {
 		food.decayModifier(2)
 		food.dairy(0.8)
 		food.grain(0.8)
+		food.sugary(3)
 	})
 
 	event.foodItem('createaddition:honey_cake', food => {
@@ -42,6 +45,7 @@ function registerTFCDataForCreateAddition(event) {
 		food.decayModifier(2)
 		food.dairy(0.8)
 		food.grain(0.8)
+		food.sugary(3)
 	})
 
 	event.foodItem('species:birtday_cake', food => {

@@ -1,0 +1,31 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "Хліб",
+  "category": "tfc:firmalife",
+  "icon": "tfc:textures/item/food/barley_bread.png",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Щоб приготувати $(thing)хліб$(), спочатку потрібно роздобути $(thing)дріжджі$(). Щоб отримати свої перші дріжджі, закрий $(l:firmalife/drying)сухофрукти$() в діжці з $(thing)водою$(). Через три дні там утвориться $(thing)дріжджова закваска$().$(br)Надалі свої дріжджі можна підгодовувати, закриваючи дріжджову закваску в діжці з $(thing)борошном$(). Це змусить їх розмножуватися. 1 одиниця борошна на 100 мВ закваски дає 600 мВ дріжджів. Вигідна угода!"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfg:shapeless/barley_dough",
+      "text": "Дріжджову закваску, підсолоджувач та борошно можна об'єднати, щоб отримати $(thing)тісто$(). Тісто можна спекти як зазвичай, щоб отримати $(thing)хліб!$()."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfg:crafting/barley_slice",
+      "title": "Нарізаний хліб",
+      "text": "Після випікання ти можеш використовувати $(thing)ніж$(), щоб нарізати хліб на $(thing)скибки$(). Потім їх можна використовувати для $(l:tfc:mechanics/sandwiches)приготування сендвічів$() або ж обсмажити на $(thing)тости$(), які можна намазати $(thing)вершковим маслом$() чи варенням."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/toast_with_butter",
+      "recipe2": "firmalife:crafting/toast_with_jam",
+      "title": "Тост"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 16
+}

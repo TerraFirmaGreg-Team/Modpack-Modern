@@ -1,0 +1,9 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "parent": "firmalife:block/oven/template_oven_hopper",
+  "textures": {
+		"side": "firmalife:block/oven/bottom/clay/hopper_side",
+		"bottom": "firmalife:block/oven/bottom/clay/bottom",
+		"front": "firmalife:block/oven/bottom/clay/hopper_front"
+	}
+}

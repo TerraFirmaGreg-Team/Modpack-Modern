@@ -1,0 +1,92 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "探鉱",
+  "category": "tfc:mechanics",
+  "icon": "tfc:metal/propick/wrought_iron",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "その$(l:getting_started/finding_ores)小さな鉱石$()をどこで拾ったか覚えていますよね？さらなる鉱石を見つけるには、広範な探索と採掘が必要になる場合があります。そのため$(l:tfg_ores/earth_ore_index)鉱石や鉱物$()について十分に理解しておくことが重要です。特定の資源が必要な場合は、それが生成される岩石層を、自分の足元や世界各地で探し出す必要があります。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "小さな金属の塊を拾うだけでは物足りなくなったら、鉱脈を探すための「探鉱」を始める段階です。$(br)$(li)小さな鉱石や小さな粉、露出した岩石は、その地下に鉱脈が存在する場合に現れます。それらの中心付近の直下に鉱脈がある可能性が高いです。$(li)また、鉱石は崖や水辺にも露出して生成されることがあり、遠くからでも確認できる場合もあります。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "anchor": "propick",
+      "item": "tfc:metal/propick/copper",
+      "title": "探鉱槌",
+      "link_recipes": false,
+      "text": "鉱脈を探していて、直観のままに掘り進めていてもまったく見つからないという場合は$(item)探鉱槌$()の出番です。$(thing)TFC$()の探鉱槌に慣れている人は、$(thing)TerraFirmaGreg$()でその挙動が大きく異なることに驚くかもしれません。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)TFG$()では探鉱槌で右クリックすることで、視線方向の鉱脈を探知し、様々な情報を表示してくれます。探知範囲（幅・深さ）はツールのティアに応じて変化し、ツールチップに表示されます。また上位ティアの探鉱槌になると、探知範囲内の鉱石の存在量が数値で表示するようになり、最上位のものは鉱脈の位置を$(thing)X線$()のように可視化して表示してくれるようになります。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "探鉱槌は使用時にチャット欄にて以下の情報を表示します：$(br)$(li)鉱脈の$(thing)総鉱石量$()、鉱脈を構成する$(thing)鉱石の種類$()、および各鉱石タイプごとの$(thing)個別数量$()を確認できます。$(li)$(thing)色付き鋼$()製の探鉱槌は、鉱脈の$(thing)中心位置$()に大きなX線パーティクルを表示するものと$(thing)各鉱石ブロック単位のパーティクル$()を表示するものがあります。"
+    },
+    {
+      "type": "patchouli:image",
+      "title": "探鉱表示",
+      "images": [
+        "tfg:textures/gui/field_guide/prospecting/tfg_prospectors_pick_xray.png"
+      ],
+      "border": true,
+      "text": "探鉱槌使用時の表示の例です。大きな$(bold)\"！\"$()の表示は鉱脈の位置を示しており、小さな$(bold)\"！\"$()は各鉱石の位置を示しています。"
+    },
+    {
+      "type": "tfc:knapping_recipe",
+      "recipe": "tfc:clay_knapping/propick_head_mold",
+      "text": "探鉱槌を作成するには、他のツールと同じように、粘土を$(l:getting_started/pottery)ナッピング$()して探鉱槌の頭の型を作る必要があります。"
+    },
+    {
+      "type": "tfc:heat_recipe",
+      "recipe": "tfc:heating/propick_head_mold",
+      "text": "未焼成の型を$(l:getting_started/pottery)ナッピング$()で作成した後、それを$(l:mechanics/heating)焼成$()して$(item)探鉱槌の頭の型$()に仕上げます。$(br2)その後、溶融した金属をその型へ流し込んで探鉱槌の頭を$(l:getting_started/finding_ores#casting)鋳造$()します。"
+    },
+    {
+      "type": "tfc:anvil_recipe",
+      "recipe": "tfc:anvil/copper_propick_head",
+      "text": "探鉱槌の頭は、$(l:mechanics/anvils)金床$()で金属の$(item)インゴット$()を$(l:mechanics/anvils#working)鍛造$()することによっても作成できます。$(br2)その後、完成した探鉱槌の頭と棒を組み合わせてクラフトすることで、探鉱槌が完成します。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "探鉱槌のほとんどの性能や特性は、サーバーの設定ファイルによって調整することができます。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "anchor": "prospector",
+      "item": "gtceu:prospector.lv",
+      "title": "デジタルな鉱石探知",
+      "link_recipes": false,
+      "text": "夢の技術が実現しました！これは鉱脈探索に革新をもたらします！$(br)$(item)電動探知機$()は、鉱脈や液体鉱脈を探知するための$(thing)GregTech$()製のデバイスです。鉱脈の位置や大きさを地上からでも簡単に確認できるようになります。その探知範囲や機能は$(#ff1100)電圧ティア$()が上がるほどに向上します。"
+    },
+    {
+      "type": "patchouli:image",
+      "title": "電動探知機",
+      "images": [
+        "tfg:textures/gui/field_guide/prospecting/tfg_luv_ore_prospector.png"
+      ],
+      "border": true,
+      "text": "これは$(#e373ff)LuV電動探知機$()を使用した際の表示の例です。"
+    }
+  ],
+  "read_by_default": true,
+  "extra_recipe_mappings": {
+    "tfc:metal/propick/bismuth_bronze": 2,
+    "tfc:metal/propick/black_bronze": 2,
+    "tfc:metal/propick/bronze": 2,
+    "tfc:metal/propick/copper": 2,
+    "tfc:metal/propick/wrought_iron": 2,
+    "tfc:metal/propick/steel": 2,
+    "tfc:metal/propick/black_steel": 2,
+    "tfc:metal/propick/blue_steel": 2,
+    "tfc:metal/propick/red_steel": 2,
+    "gtceu:prospector.lv": 10,
+    "gtceu:prospector.hv": 10,
+    "gtceu:prospector.luv": 10
+  }
+}

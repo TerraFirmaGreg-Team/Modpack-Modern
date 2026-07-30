@@ -12,15 +12,15 @@
       "type": "patchouli:multiblock",
       "multiblock": {
         "pattern": [
-      [
-      "X"
-      ],
-      [
-      "0"
-      ]
+          [
+            "X"
+          ],
+          [
+            "0"
+          ]
         ],
         "mapping": {
-      "X": "#tfc:anvils"
+          "X": "#tfc:anvils"
         }
       },
       "name": "",

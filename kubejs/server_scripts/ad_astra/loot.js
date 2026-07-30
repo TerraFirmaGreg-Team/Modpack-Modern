@@ -18,4 +18,11 @@ function registerAdAstraLoots(event) {
 	
 	event.addEntityLootModifier('ad_astra:martian_raptor')
 		.addWeightedLoot([2, 4], ['minecraft:bone'])
+
+
+	event.addLootTableModifier('ad_astra:chests/dungeon/moon/dungeon_chest').removeLoot(ItemFilter.ALWAYS_TRUE)
+	event.addLootTableModifier('ad_astra:chests/dungeon/moon/large_dungeon_chest').removeLoot(ItemFilter.ALWAYS_TRUE)
+	event.addLootTableModifier('ad_astra:chests/village/moon/house').removeLoot(ItemFilter.ALWAYS_TRUE)
+	event.addLootTableModifier('ad_astra:chests/village/moon/blacksmith').removeLoot(ItemFilter.ALWAYS_TRUE)
+	event.addLootTableModifier('ad_astra:chests/temple/mars/temple').removeLoot(ItemFilter.ALWAYS_TRUE)
 }

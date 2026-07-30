@@ -1,0 +1,244 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "支撐梁與坍塌",
+  "category": "tfc:mechanics",
+  "icon": "tfc:wood/support/oak",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "群巒傳說的岩石並不穩定，可能會發生$(thing)坍塌$()。不加防範$(thing)岩石$()、$(thing)礦石$()、$(thing)平滑岩石$()和$(thing)石錐$()等方塊將如雨點般落在你的頭上。$(br2)$(thing)支撐梁$()被用來防範坍塌的發生。",
+      "title": "支撐梁"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "當玩家$(thing)開採岩石$()附近若存在$(thing)未受支撐的岩石$()將可能發生坍塌。一旦坍塌開始，先前$(thing)受到支撐的$()岩石也會開始坍塌。$(br2)洞穴頂部的岩石是已$(thing)承重$()狀態。若岩石下方存在無法發生坍塌的方塊，也屬於$(thing)被支撐$()的狀態。此外，$(thing)支撐梁$()可以一次可以撐起一大片區域。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l:the_world/ores_and_minerals)礦石$()(有貧瘠、普通或富集)坍塌時，品質會下降。富集變成普通、普通變為貧瘠以及貧瘠變為卵石。礦物則會直接變為卵石。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "泥土、草塊、黏土、礫石、鵝卵石和沙子也會受到重力影響。但是，與原始重力方塊不同，這些方塊會沿著斜坡滑落，若沒有周圍方塊支撐，它們無法堆疊超過一層。$(l:mechanics/sluices)沉積礦$()也會發生滑落，但不會失去品質。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/wood/oak_support",
+      "title": "支撐梁",
+      "text": "$(thing)支撐梁$()可用$(thing)鋸$()與任意類型的$(thing)原木$()製作。$(br2)將$(thing)支撐梁$()放在方塊頂部會形成最高三格高的柱子。這些柱子下方必須有實心方塊支撐才能保持直立。"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "$(thing)水平梁$()可以放在相距5格內的$(thing)垂直梁$()並連接它們。",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "   ",
+              "CRD",
+              "   "
+            ],
+            [
+              "   ",
+              "V W",
+              "   "
+            ],
+            [
+              "   ",
+              "V W",
+              "   "
+            ],
+            [
+              "GGG",
+              "G0G",
+              "GGG"
+            ],
+            [
+              "   ",
+              "   ",
+              "   "
+            ]
+          ],
+          "mapping": {
+            "R": "air",
+            "C": "air",
+            "D": "air",
+            "V": "air",
+            "W": "air",
+            "0": "tfc:rock/raw/andesite",
+            "G": "tfc:rock/raw/andesite"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "   ",
+              "CRD",
+              "   "
+            ],
+            [
+              "   ",
+              "V W",
+              "   "
+            ],
+            [
+              "   ",
+              "V W",
+              "   "
+            ],
+            [
+              "GGG",
+              "G0G",
+              "GGG"
+            ],
+            [
+              "   ",
+              "   ",
+              "   "
+            ]
+          ],
+          "mapping": {
+            "R": "air",
+            "C": "tfc:wood/vertical_support/oak",
+            "D": "air",
+            "V": "tfc:wood/vertical_support/oak",
+            "W": "air",
+            "0": "tfc:rock/raw/andesite",
+            "G": "tfc:rock/raw/andesite"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "   ",
+              "CRD",
+              "   "
+            ],
+            [
+              "   ",
+              "V W",
+              "   "
+            ],
+            [
+              "   ",
+              "V W",
+              "   "
+            ],
+            [
+              "GGG",
+              "G0G",
+              "GGG"
+            ],
+            [
+              "   ",
+              "   ",
+              "   "
+            ]
+          ],
+          "mapping": {
+            "R": "air",
+            "C": "tfc:wood/vertical_support/oak",
+            "D": "tfc:wood/vertical_support/oak",
+            "V": "tfc:wood/vertical_support/oak",
+            "W": "tfc:wood/vertical_support/oak",
+            "0": "tfc:rock/raw/andesite",
+            "G": "tfc:rock/raw/andesite"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "   ",
+              "CRD",
+              "   "
+            ],
+            [
+              "   ",
+              "V W",
+              "   "
+            ],
+            [
+              "   ",
+              "V W",
+              "   "
+            ],
+            [
+              "GGG",
+              "G0G",
+              "GGG"
+            ],
+            [
+              "   ",
+              "   ",
+              "   "
+            ]
+          ],
+          "mapping": {
+            "R": "tfc:wood/horizontal_support/oak[north=true,south=true]",
+            "C": "tfc:wood/vertical_support/oak[south=true]",
+            "D": "tfc:wood/vertical_support/oak[north=true]",
+            "V": "tfc:wood/vertical_support/oak",
+            "W": "tfc:wood/vertical_support/oak",
+            "0": "tfc:rock/raw/andesite",
+            "G": "tfc:rock/raw/andesite"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "   ",
+              "CRD",
+              "   "
+            ],
+            [
+              "   ",
+              "V W",
+              "   "
+            ],
+            [
+              "   ",
+              "V W",
+              "   "
+            ],
+            [
+              "GGG",
+              "G0G",
+              "GGG"
+            ],
+            [
+              "   ",
+              "   ",
+              "   "
+            ]
+          ],
+          "mapping": {
+            "R": "tfc:wood/horizontal_support/oak[north=true,south=true]",
+            "C": "tfc:wood/vertical_support/oak[south=true]",
+            "D": "tfc:wood/vertical_support/oak[north=true]",
+            "V": "tfc:wood/vertical_support/oak",
+            "W": "tfc:wood/vertical_support/oak",
+            "0": "tfc:rock/raw/andesite",
+            "G": "tfc:rock/raw/andesite"
+          }
+        }
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "text": "只有$(thing)水平支撐梁$()才能對附近的方塊起到$(thing)支撐$()效果。以水平支撐梁為中心$(bold)9 x 5 x 9$()的區域都是為$(thing)受支撐$()。$(br2)除了支撐梁外，岩石還可以依靠其下方堅實的實心方塊像是更多的岩石來支撐。需要注意的是，$(thing)非實心方塊$()像是$(thing)階梯$()和$(thing)石板$()以及$(thing)光滑石材$()$(bold)不屬於$()支撐物。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "除了$(thing)木製支撐梁$()，$(bold)群巒格雷$()還添加了更高階的支撐梁類型，包含$(thing)石製支撐梁$()、$(thing)混凝土支撐梁$()與$(thing)鋼製支撐梁$()。最高階的支撐梁可支撐的範圍高達$(bold)33 x 13 x 33$()的區域！"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "最後請特別注意：$(l:mechanics/chisel)鑿刻$()岩石和挖掘岩石一樣可能導致坍塌，尤其是對任何可能引發坍塌的$(thing)岩石$()進行鑿刻時。$(br2)$(br2)孩子們請銘記：遵守安全開採準則！",
+      "title": "鑿刻"
+    }
+  ],
+  "read_by_default": true,
+  "extra_recipe_mappings": {
+    "tag:tfc:support_beams": 0
+  }
+}

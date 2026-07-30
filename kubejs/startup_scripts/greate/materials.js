@@ -11,7 +11,7 @@ const registerGreateMaterials = (event) => {
 	$GreateMaterials.AndesiteAlloy.setProperty(GreatePropertyKeys.BELT, new $BeltProperty([$GreateMaterials.AndesiteAlloy], 5))
 
 	// Leather belt
-	GTMaterials.Stone.setProperty(GreatePropertyKeys.BELT, new $BeltProperty([GTMaterials.Steel, $GreateMaterials.AndesiteAlloy], 10))
+	GTMaterials.Stone.setProperty(GreatePropertyKeys.BELT, new $BeltProperty([$GreateMaterials.AndesiteAlloy, GTMaterials.Steel], 10))
 
 	// Remove plastic belts
 	GTMaterials.Polyethylene.getProperties().removeProperty(GreatePropertyKeys.BELT);
@@ -20,12 +20,12 @@ const registerGreateMaterials = (event) => {
 
 	// Change properties of other rubber belts
 	GTMaterials.Rubber.getProperties().removeProperty(GreatePropertyKeys.BELT);
-	GTMaterials.Rubber.setProperty(GreatePropertyKeys.BELT, new $BeltProperty([GTMaterials.Steel, $GreateMaterials.AndesiteAlloy], 20))
+	GTMaterials.Rubber.setProperty(GreatePropertyKeys.BELT, new $BeltProperty([GTMaterials.Steel, GTMaterials.Aluminium], 20))
 	
 	GTMaterials.SiliconeRubber.getProperties().removeProperty(GreatePropertyKeys.BELT);
-	GTMaterials.SiliconeRubber.setProperty(GreatePropertyKeys.BELT, new $BeltProperty([GTMaterials.StainlessSteel, GTMaterials.Aluminium], 25))
+	GTMaterials.SiliconeRubber.setProperty(GreatePropertyKeys.BELT, new $BeltProperty([GTMaterials.Aluminium, GTMaterials.StainlessSteel], 25))
 	
-	GTMaterials.StyreneButadieneRubber.setProperty(GreatePropertyKeys.BELT, new $BeltProperty([GTMaterials.Titanium, GTMaterials.StainlessSteel], 30))
+	GTMaterials.StyreneButadieneRubber.setProperty(GreatePropertyKeys.BELT, new $BeltProperty([GTMaterials.StainlessSteel, GTMaterials.Titanium], 30))
 
 	// Change stress levels
 	let capacity = 32;

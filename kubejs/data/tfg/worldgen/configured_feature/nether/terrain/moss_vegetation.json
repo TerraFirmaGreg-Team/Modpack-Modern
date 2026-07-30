@@ -1,52 +1,92 @@
 {
-	"type": "minecraft:simple_block",
+	"type": "minecraft:random_selector",
 	"config": {
-		"to_place": {
-			"type": "minecraft:weighted_state_provider",
-			"entries": [
-				{
-					"data": {
-						"Name": "tfc:plant/moss"
+		"default": {
+			"feature": {
+				"type": "tfc:tall_plant",
+				"config": { "block": "tfc:plant/king_fern" }
+			},
+			"placement": []
+		},
+		"features": [
+			{
+				"chance": 0.95,
+				"feature": {
+					"feature": {
+						"type": "minecraft:simple_block",
+						"config": {
+							"to_place": {
+								"type": "minecraft:weighted_state_provider",
+								"entries": [
+									{
+										"data": {
+											"Name": "minecraft:moss_carpet"
+										},
+										"weight": 30
+									},
+									{
+										"data": {
+											"Name": "tfc:plant/lady_fern"
+										},
+										"weight": 20
+									},
+									{
+										"data": {
+											"Name": "tfc:plant/athyrium_fern"
+										},
+										"weight": 10
+									},
+									{
+										"data": {
+											"Name": "tfc:plant/ostrich_fern"
+										},
+										"weight": 25
+									},
+									{
+										"data": {
+											"Name": "tfc:plant/sword_fern"
+										},
+										"weight": 20
+									},
+									{
+										"data": {
+											"Name": "minecraft:fern"
+										},
+										"weight": 20
+									},
+									{
+										"data": {
+											"Name": "minecraft:large_fern"
+										},
+										"weight": 20
+									}
+								]
+							}
+						}
 					},
-					"weight": 30
-				},
-				{
-					"data": {
-						"Name": "tfc:plant/lady_fern"
-					},
-					"weight": 20
-				},
-				{
-					"data": {
-						"Name": "tfc:plant/king_fern"
-					},
-					"weight": 5
-				},
-				{
-					"data": {
-						"Name": "tfc:plant/ostrich_fern"
-					},
-					"weight": 25
-				},
-				{
-					"data": {
-						"Name": "tfc:plant/sword_fern"
-					},
-					"weight": 20
-				},
-				{
-					"data": {
-						"Name": "minecraft:fern"
-					},
-					"weight": 20
-				},
-				{
-					"data": {
-						"Name": "minecraft:large_fern"
-					},
-					"weight": 20
+					"placement": []
 				}
-			]
-		}
+			},
+			{
+				"chance": 0.1,
+				"feature": {
+					"feature": {
+						"type": "tfc:tall_plant",
+						"config": { "block": "tfg:plant/fan_palm" }
+					},
+					"placement": []
+				}
+			},
+			{
+				"chance": 0.1,
+				"feature": {
+					"feature": {
+						"type": "tfc:tall_plant",
+						"config": { "block": "tfg:plant/azalea" }
+					},
+					"placement": []
+				}
+			}
+		]
 	}
 }

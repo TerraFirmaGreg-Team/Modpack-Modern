@@ -80,6 +80,26 @@
 			x: 7.0d
 			y: 4.5d
 		}
+		{
+			id: "258922881D3BAB94"
+			linked_quest: "1F7AAF65CC0A4ADF"
+			shape: "heart"
+			x: -1.0d
+			y: -6.0d
+		}
+		{
+			id: "00F47E7BD0D377EF"
+			linked_quest: "66E34DAA25149FC0"
+			shape: "heart"
+			x: 5.0d
+			y: -5.5d
+		}
+		{
+			id: "66CE037FEBE1ABE0"
+			linked_quest: "361AC06D62D9BCCF"
+			x: 1.5d
+			y: 13.0d
+		}
 	]
 	quests: [
 		{
@@ -180,7 +200,7 @@
 				type: "item"
 			}]
 			title: "{quests.low_voltage.lv_steam_turbine.title}"
-			x: 1.0d
+			x: 0.0d
 			y: -6.0d
 		}
 		{
@@ -393,34 +413,6 @@
 			title: "{quests.low_voltage.lv_polariser.title}"
 			x: 3.0d
 			y: -1.0d
-		}
-		{
-			dependencies: [
-				"6E186F9C57155BFA"
-				"46FA9DD4755A5548"
-				"3D8174C64DDC268B"
-			]
-			dependency_requirement: "one_completed"
-			description: [
-				"{quests.low_voltage.lbb.desc.1}"
-				"{@pagebreak}"
-				"{quests.low_voltage.lbb.desc.2}"
-				"{@pagebreak}"
-				"{quests.low_voltage.lbb.desc.3}"
-			]
-			id: "33263404ED38C6D2"
-			optional: true
-			shape: "heart"
-			size: 1.0d
-			subtitle: "{quests.low_voltage.lbb.subtitle}"
-			tasks: [{
-				id: "560D4D0D6BECE006"
-				item: "gtceu:bronze_large_boiler"
-				type: "item"
-			}]
-			title: "{quests.low_voltage.lbb.title}"
-			x: 0.0d
-			y: -6.0d
 		}
 		{
 			dependencies: ["1E9BE8D3F8A602DC"]
@@ -680,6 +672,7 @@
 						"ftbfiltersystem:filter": "or(item(gtceu:prospector.lv)item(gtceu:prospector.hv)item(gtceu:prospector.luv))"
 					}
 				}
+				title: "{quests.low_voltage.lv_ore_prospector.task}"
 				type: "item"
 			}]
 			title: "{quests.low_voltage.lv_ore_prospector.title}"
@@ -1076,7 +1069,10 @@
 			y: 10.0d
 		}
 		{
-			dependencies: ["701BCADAE5CF6CA5"]
+			dependencies: [
+				"701BCADAE5CF6CA5"
+				"361AC06D62D9BCCF"
+			]
 			dependency_requirement: "one_completed"
 			description: ["{quests.low_voltage.gallium_arsenide.desc}"]
 			id: "4073577B7EF9B593"
@@ -1199,9 +1195,9 @@
 					type: "item"
 				}
 				{
-					count: 14L
+					count: 10L
 					id: "2E6781820FF96078"
-					item: { Count: 14, id: "gtceu:heatproof_machine_casing" }
+					item: "gtceu:heatproof_machine_casing"
 					type: "item"
 				}
 				{
@@ -1374,7 +1370,11 @@
 			y: 6.0d
 		}
 		{
-			dependencies: ["3E6DC423FE4A99F7"]
+			dependencies: [
+				"3E6DC423FE4A99F7"
+				"165215273D49B85B"
+			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.low_voltage.night_vision_goggles.desc}"]
 			id: "4B4F052F00435AFE"
 			optional: true
@@ -1391,38 +1391,6 @@
 			}]
 			x: 7.0d
 			y: 5.5d
-		}
-		{
-			dependencies: ["7FA1525D681C4B4A"]
-			description: ["{quests.steam_age.alternator.desc.1}"]
-			icon: "createaddition:alternator"
-			id: "2DC24661CAD557B0"
-			optional: true
-			subtitle: "{quests.steam_age.alternator.subtitle}"
-			tasks: [
-				{
-					id: "5367AD306EAB07E2"
-					item: "createaddition:alternator"
-					type: "item"
-				}
-				{
-					id: "040F5FC6058411EE"
-					item: {
-						Count: 1
-						id: "ftbfiltersystem:smart_filter"
-						tag: {
-							display: {
-								Name: "{\"text\":\"LV Converter\"}"
-							}
-							"ftbfiltersystem:filter": "or(item(gtceu:lv_1a_energy_converter)item(gtceu:lv_4a_energy_converter)item(gtceu:lv_8a_energy_converter)item(gtceu:lv_16a_energy_converter))"
-						}
-					}
-					type: "item"
-				}
-			]
-			title: "{quests.steam_age.alternator.title}"
-			x: -1.0d
-			y: -6.0d
 		}
 		{
 			dependencies: [
@@ -1450,7 +1418,6 @@
 		{
 			dependencies: [
 				"170B544373A16112"
-				"2DC24661CAD557B0"
 				"1AD51E2B66EA7F67"
 				"6E186F9C57155BFA"
 			]
@@ -1588,12 +1555,12 @@
 			shape: "heart"
 			subtitle: "{quests.low_voltage.lv_seeds.subtitle}"
 			tasks: [{
-				id: "0910468BF66597DE"
+				id: "732AF8D135994E94"
 				item: {
 					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						"ftbfiltersystem:filter": "or(item(tfg:rapeseed_seeds)item(tfg:sunflower_seeds))"
+						"ftbfiltersystem:filter": "or(item(tfg:rapeseed_seeds)item(tfg:sunflower_seeds)item(tfg:peanut_seeds)item(tfc:seeds/soybean)item(tfg:palm_tree/oil_palm_sapling)item(tfc:plant/olive_sapling))"
 					}
 				}
 				title: "{quests.low_voltage.lv_seeds.task}"
@@ -1619,7 +1586,31 @@
 					type: "item"
 				}
 				{
-					id: "674CEEB9EAFE84A0"
+					id: "63D0D52966213B49"
+					item: "tfg:peanut_oil_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "4C6DF0905D0D35A2"
+					item: "firmalife:bucket/soybean_oil"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "31B846079D376069"
+					item: "tfc:bucket/olive_oil"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "36DCD9CC6EC21699"
+					item: "tfg:palm_oil_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "59EF011ACBBE19B0"
 					type: "checkmark"
 				}
 			]
@@ -1682,11 +1673,23 @@
 				{
 					id: "2E64EF18DC263002"
 					item: "greate:large_aluminium_cogwheel"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "32C96E141753187B"
 					item: "greate:aluminium_shaft"
+					type: "item"
+				}
+				{
+					id: "12417889D1FEF40F"
+					item: "steampowered:cast_iron_steam_engine"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "783001EEAB92FFB1"
+					item: "steampowered:cast_iron_flywheel"
 					optional_task: true
 					type: "item"
 				}
@@ -1717,7 +1720,9 @@
 			dependencies: [
 				"0404FBCC34011053"
 				"7FA1525D681C4B4A"
+				"66E34DAA25149FC0"
 			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.low_voltage.lv_gas_turbine.desc}"]
 			id: "1AD51E2B66EA7F67"
 			optional: true
@@ -1786,7 +1791,7 @@
 			]
 			title: "{quests.low_voltage.lv_gas_syngas.title}"
 			x: 5.0d
-			y: -6.0d
+			y: -6.5d
 		}
 		{
 			dependencies: [
@@ -1953,7 +1958,6 @@
 		{
 			dependencies: [
 				"671F90ADCDF476A8"
-				"6FFD4990FF07078A"
 				"698DCAB4F014EB3B"
 			]
 			dependency_requirement: "one_completed"
@@ -2091,6 +2095,72 @@
 			title: "{quests.medium_voltage.mv_jetpack.title}"
 			x: 1.0d
 			y: 9.5d
+		}
+		{
+			dependencies: ["0DBC148D92A9F69F"]
+			description: ["{quests.low_voltage.rancher.desc}"]
+			icon: "minecraft:milk_bucket"
+			id: "35BA757ACDB3ED82"
+			optional: true
+			shape: "heart"
+			size: 1.5d
+			subtitle: "{quests.low_voltage.rancher.subtitle}"
+			tasks: [{
+				id: "03BA37C094F8C0A7"
+				item: "tfg:pastoral_engine"
+				type: "item"
+			}]
+			title: "{quests.low_voltage.rancher.title}"
+			x: -2.0d
+			y: 19.5d
+		}
+		{
+			dependencies: ["37307A46E70011D3"]
+			description: ["{quests.tfg_tips.capsules.desc}"]
+			guide_page: "tfc:field_guide tfc:getting_started/food_and_water"
+			id: "69DA11F2EC7FAECC"
+			optional: true
+			shape: "heart"
+			subtitle: "{quests.tfg_tips.capsules.subtitle}"
+			tasks: [{
+				id: "265BDCE55CEDC38F"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "item_tag(tfg:medicine/capsules)"
+					}
+				}
+				title: "{quests.tfg_tips.capsules.task}"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.capsules.title}"
+			x: 3.5d
+			y: 8.0d
+		}
+		{
+			dependencies: [
+				"701BCADAE5CF6CA5"
+				"5D0B0B9E61C3DE75"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"{quests.low_voltage.geologic_vulcanizer.desc.1}"
+				"{@pagebreak}"
+				"{quests.low_voltage.geologic_vulcanizer.desc.2}"
+			]
+			id: "4F6C86CA85019228"
+			optional: true
+			shape: "heart"
+			size: 1.5d
+			subtitle: "{quests.low_voltage.geologic_vulcanizer.subtitle}"
+			tasks: [{
+				id: "425A1E5EC9C1F722"
+				item: "tfg:ore_processing_beneath"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 10.0d
 		}
 	]
 	subtitle: ["{quests.low_voltage.subtitle}"]

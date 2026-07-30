@@ -1,0 +1,256 @@
+{
+    "name": "Yemek ve Su",
+    "category": "tfc:getting_started",
+    "icon": "tfc:textures/item/food/orange.png",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "title": "Giriş",
+            "anchor": "index",
+            "text": "$(li)$(bold)$(l:getting_started/food_and_water#basics)Temel Bilgiler$()$(li)$(bold)$(l:getting_started/food_and_water#thirst)Susuzluk$()$(li)$(bold)$(l:getting_started/food_and_water#nutrition_screen)Beslenme Ekranı$()$(li)$(bold)$(l:getting_started/food_and_water#nutrients)Besinler$()$(li2)$(l:getting_started/food_and_water#fruit)Meyve$()$(li2)$(l:getting_started/food_and_water#vegetables)Sebze$()$(li2)$(l:getting_started/food_and_water#protein)Protein$()$(li2)$(l:getting_started/food_and_water#grain)Tahıl$()$(li2)$(l:getting_started/food_and_water#dairy)Süt Ürünleri$()$(li)$(bold)$(l:getting_started/food_and_water#contaminants)Kontaminantlar$()$(li2)$(l:getting_started/food_and_water#toxins)Toksinler$()$(li2)$(l:getting_started/food_and_water#parasites)Parazitler$()$(li2)$(l:getting_started/food_and_water#microplastics)Mikroplastikler$()"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)$(bold)$(l:getting_started/food_and_water#transient_effects)Geçici Etkiler$()$(li2)$(l:getting_started/food_and_water#cooling_transient_effect)Serinletici$()$(li2)$(l:getting_started/food_and_water#warming_transient_effect)Isıtıcı$()$(li2)$(l:getting_started/food_and_water#quenching_transient_effect)Susuzluk Giderici$()$(li2)$(l:getting_started/food_and_water#bolstering_transient_effect)Güçlendirici$()$(li2)$(l:getting_started/food_and_water#hearty_transient_effect)Doyurucu$()$(li2)$(l:getting_started/food_and_water#rejuvenating_transient_effect)Canlandırıcı$()$(li2)$(l:getting_started/food_and_water#freezing_transient_effect)Dondurucu$()$(li2)$(l:getting_started/food_and_water#blazing_transient_effect)Alevlendirici$()$(li2)$(l:getting_started/food_and_water#radiating_transient_effect)Işınlayıcı$()$(li2)$(l:getting_started/food_and_water#nauseating_transient_effect)Mide Bulandırıcı$()$(li2)$(l:getting_started/food_and_water#parching_transient_effect)Kurutucu$()$(li2)$(l:getting_started/food_and_water#deadly_transient_effect)Öldürücü$()$(li2)$(l:getting_started/food_and_water#fulfilling_transient_effect)Tatmin Edici$()$(li2)$(l:getting_started/food_and_water#sugary_transient_effect)Şekerli$()$(li2)$(l:getting_started/food_and_water#spicy_transient_effect)Baharatlı$()"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Temeller",
+            "anchor": "basics",
+            "text": "TerraFirmaCraft'ta sadece açlığını değil, susuzluğunu da yönetmen gerekiyor. Açlık, vanilla Minecraft'takine benzer şekilde çalışır. Çoğu yiyecek açlık çubuğunun beşte birini doldurur. Bazı yiyecekler biraz daha az doldurabilir, $(thing)Kaz Ayağı Kökü$() gibi. Yemek yemek aynı zamanda ne kadar tok olduğunu gösteren $(thing)Doygunluğunu$() da yeniler. Açlığın ya da susuzluğun tükenmesi hareketlerini yavaşlatır ve hasar almana neden olur. Ölmek, besin değerlerini ya da kontaminant seviyeni sıfırlamaz."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Bazı yiyecekler oldukça doyurucudur, bu yüzden açlığını daha uzun süre korumana yardımcı olur, bazılarının etkisi ise kısa sürelidir.$(br2)Normal oynanış sırasında da açlığın azalacaktır. Koşmak, yüzmek ya da $(l:getting_started/size_and_weight#overburdening)Aşırı Yüklenmek$() gibi şeyler yaptığında açlığın daha hızlı tükenir. Bir yiyeceğin sağladığı $(thing)Doygunluk$(), $(thing)Su$() ve $(thing)Besin$() bilgilerini envanterinde üzerine gelerek görebilirsin. $(item)$(k:key.sneak)$() tuşunu kullanmak tam tooltip'i gösterir."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Tüm yiyeceklerde bu bilgileri içeren bir tooltip bulunur. Tooltip'te ayrıca yiyeceğin, koruma yöntemleriyle uzatılabilecek olan $(l:mechanics/decay)Bozulma Tarihi$() de yer alır. Bu bilgilere bakarken şunu unutma: her yiyeceğin besin değeri yoktur. Örneğin, $(l:mechanics/bread)Hamur$() bir yiyecektir ama Besin, Doygunluk veya Su değeri yoktur. Onu yemek pek bir işe yaramaz."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Bir yiyecek tooltip'i şöyle görünebilir:$(br2)$(bold)Portakal$()$(br) $(2)$(bold)Son kullanma: 11:59, 6 Temmuz 1004 (1 ay 1 gün sonra)$()$(br) $(8)Besin Değeri:$(br) - Doygunluk: 2%$(br) - Su: 10%$(br)$(a) - Meyve: 0.5"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "thirst",
+            "text": "Susuzluk, vücudundaki su seviyesini gösterir. Açlığa benzer bir hızda azalır. Yüksek sıcaklıklarda ya da açlığın hızlı tükendiği durumlarda susuzluğun daha hızlı azalır. Neyse ki $(thing)Tatlı Su$() içmek susuzluğunu giderir. Bunu bir su bloğuna $(item)$(k:key.use)$() tuşuyla tıklayarak yapabilirsin. Tuzlu su içmek ise susuzluğunu azaltır, hatta seni daha da fazla yıpratacak $(thing)Susuzluk$() etkisine yakalanma ihtimalini de artırır.",
+            "title": "Susuzluk"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "Y"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "minecraft:air",
+                    "Y": "tfc:plant/cattail[part=lower,fluid=water]"
+                }
+            },
+            "name": "Su Güvenliği",
+            "text": "Tuzlu su ya da bulanık sudan kaçınmak için nehirleri, gölleri ve $(thing)Kaz Ayağı$() gibi tatlı su bitkilerini ara.",
+            "enable_visualize": false
+        },
+        {
+            "type": "tfc:knapping_recipe",
+            "recipe": "tfc:clay_knapping/jug",
+            "text": "$(l:getting_started/pottery)Yontarak$() ve pişirerek bir $(l:getting_started/pottery#jug)testi$() yapmak, yanında su taşımanın bir yoludur. Bir kova gibi $(item)$(k:key.use)$() ile doldurabilirsin. $(item)$(k:key.use)$() tuşunu basılı tutmak suyu içmeni sağlar."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Ayrıca $(l:waterflasks)Matara$() veya $(l:mechanics/glassworking)Cam Şişe$() gibi diğer kaplardan da içebilirsin. İçme kapları ve içecek etkileri hakkında daha fazla bilgiyi $(l:mechanics/drinks#containers)Burada$() bulabilirsin."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "nutrition_screen",
+            "text": "$(bold)$(#ff0fb7)TerraFirma$()$()$(bold)$(#595959)Greg$()$()'de beslenme ekranı, sağlığın hakkında çok geniş bilgiler sunar. $(li)$(l:getting_started/food_and_water#nutrients)Besinlerini$() gösteren ana bir grafik vardır$()$(li)$(l:getting_started/food_and_water#contaminants)Kontaminantlarını$() gösteren yan bir grafik$()$(li)Sağlık istatistiklerini gösteren bir tablo.$()$(li)Ve takımının beslenmesini kontrol edebileceğin, açılıp kapanabilir bir görünüm.$()$(br)$(item)Daha fazla bilgi görmek için ekrandaki bir öğenin üzerinde $(k:key.sneak)$() tuşunu basılı tut.$()",
+            "title": "Beslenme Ekranı"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfg:textures/gui/field_guide/nutrition/tfg_nutrition_screen.png"
+            ],
+            "text": "Her besin maddesinin seviyelerini gösteren grafikli besin ekranı.",
+            "border": false
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "nutrients",
+            "text": "Hepsi yiyeceklerden elde edilebilen beş besin türü vardır: $(l)$(a)Meyve$()$(), $(l)$(2)Sebze$()$(), $(l)$(c)Protein$()$(), $(l)$(6)Tahıl$()$(), ve $(l)$(5)Süt Ürünleri$()$(). Yemek yemek sana o besinleri kazandırır. $(l:mechanics/pot#soup)Çorba$() gibi yemekler birden fazla besini tek bir öğünde birleştirir. Çoğu zaman yemekler, besinlerini doğrudan içindeki malzemelerden alır. Bu önemli, çünkü bir süre önce yediğin yemekler artık besin durumuna dahil edilmez.",
+            "title": "Besinler"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "average_nutrients",
+            "text": "Besinlerinin toplam değeri, maksimum canını (HP) belirler. En yüksek değerde $(l)$(c)30 kalp$()$() elde edebilirsin. En düşük değer ise $(l)$(c)3 kalp$()$()'tir.$(br)Ortalama besin değerlerin ayrıca şunları da etkiler:$()$(li)$(bold)Ortalama >55% ↴$()$()$(italic)$(li2)Pasif can yenilenmesini 50% artırır.$()$()$(italic)$(li2)$(l:tfg_ores/hazards#medicine)Sağlık Durumu$() ilerleme hızını 25% azaltır.$()$()$(italic)$(li2)Sağlık durumunun pasif iyileşme hızını 50% artırır.$()$()"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)$(bold)Ortalama >85% ↴$()$()$(italic)$(li2)Pasif can yenilenmesini 100% artırır.$()$()$(italic)$(li2)$(l:tfg_ores/hazards#medicine)Sağlık Durumu$() ilerleme hızını 50% azaltır.$()$()$(italic)$(li2)Sağlık durumunun pasif iyileşme hızını 100% artırır.$()$()"
+        },
+        {
+            "title": "Meyve",
+            "type": "patchouli:text",
+            "anchor": "fruit",
+            "text": "$(l)$(a)Meyve$()$() besinleri çoğunlukla böğürtlen çalıları ve meyve ağaçları gibi $(l:the_world/wild_fruits)Meyve Veren Bitkilerden$() elde edilir. Buna dikkat çeken bir istisna, beslenme açısından meyve sayılan $(l:mechanics/crops#pumpkin)Balkabakları$() ve $(l:mechanics/crops#pumpkin)Kavunlardır$().$(br2)Meyve değerini artırmak şu etkileri sağlar:$()$(li)$(bold)Ortalama >55% → $()$()$(italic)Susuzluk kullanımını 25% azaltır.$()$(li)$(bold)Ortalama >85% → $()$()$(italic)Kazma hızını 30% artırır.$()"
+        },
+        {
+            "title": "Sebze",
+            "type": "patchouli:text",
+            "anchor": "vegetables",
+            "text": "$(l)$(2)Sebzeler$()$(), neredeyse her $(l:mechanics/crops)Ekin$()'de bulunur.$(br2)Sebze değerini artırmak şu etkileri sağlar:$()$(li)$(bold)Değer >55% → $()$()$(italic)Su altında kazma cezasını kaldırır.$()$(li)$(bold)Değer >85% → $()$()$(italic)Solunum efekti kazandırır.$()"
+        },
+        {
+            "title": "Protein",
+            "type": "patchouli:text",
+            "anchor": "protein",
+            "text": "$(l)$(c)Protein$()$(), $(l:the_world/wild_animals)Hayvanların$() etinden elde edilebilir. Ayrıca $(thing)baklagiller$() gibi bazı ekinlerden de sağlanabilir.$(br2)Protein değerini artırmak şu etkileri sağlar:$()$(li)$(bold)Değer >55% → $()$()$(italic)Yorgunluk çarpanını 25% azaltır.$()$(li)$(bold)Değer >85% → $()$()$(italic)$(l:getting_started/size_and_weight#overburdening)Aşırı Yüklenmeden$() ekstra bir kocaman ve ağır eşya (mühürlü fıçı gibi) taşımanı sağlar.$()"
+        },
+        {
+            "title": "Tahıl",
+            "type": "patchouli:text",
+            "anchor": "grain",
+            "text": "$(l)$(6)Tahıl$()$(), $(l:mechanics/crops#barley)Arpa$() gibi tahıl ekinlerinde bulunur. Tahılın işlenmesi $(l:firmalife/bread)Ekmek$() sayfasında anlatılıyor. Bazı kök ekinleri de tahıl sayılır.$(br2)Tahıl değerini artırmak şu etkileri sağlar:$()$(li)$(bold)Değer >55% → $()$()$(italic)5% hız bonusu verir.$()$(li)$(bold)Değer >85% → $()$()$(italic)15% hız bonusu verir.$()"
+        },
+        {
+            "title": "Süt ürünleri",
+            "type": "patchouli:text",
+            "anchor": "dairy",
+            "text": "$(l)$(5)Süt Ürünleri$()$(), $(l:mechanics/animal_husbandry#dairy_animals)Süt Hayvanlarından$() elde edilen $(thing)Süt$()'ten gelir. Sütün işlenmesi ve içilmesi $(l:firmalife/cheese)Süt Ürünleri$() sayfasında anlatılıyor.$(br2)Süt ürünleri değerini artırmak şu etkileri sağlar:$()$(li)$(bold)Değer >55% → $()$()$(italic)$(thing)Tüy Gibi Düşüş I$() efekti verir.$()$(li)$(bold)Değer >85% → $()$()$(italic)$(thing)Tüy Gibi Düşüş IV$() efekti verir.$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "contaminants",
+            "text": "Besinlere ek olarak $(bold)$(#ff0fb7)TerraFirma$()$()$(bold)$(#595959)Greg$()$() kontaminantları da oyuna ekler. Hepsi yiyeceklerden edinilebilen üç kontaminant vardır: $(l)$(d)Toksinler$()$(), $(l)$(4)Parazitler$()$(), ve $(l)$(3)Mikroplastikler$()$(). Kontaminantlar yemek eşyalarına da geçebilir ve oyuncunun içinde birikebilir.",
+            "title": "Kontaminantlar"
+        },
+        {
+            "title": "Toksinler",
+            "type": "patchouli:text",
+            "anchor": "toxins",
+            "text": "$(l)$(d)Toksinler$()$(), özellikle tehlikeli ekinlerden ve etlerden gelir. Toksinler günde 3% oranında doğal olarak azalır. $(l:tfg_tips/mob_effects_glossary#cure_toxins)Toksinleri Tedavi Etmek$() için aktif olarak $(item)Detoks Kapsülleri$() tüket.$(br2)Toksin değerini artırmak şu etkileri sağlar:$()$(li)$(bold)Değer >0% → $()$()$(italic)Her yeni artışta: 25% ihtimalle 10 saniyeliğine rastgele bir tehlikeli efekt kapma.$()$(li)$(bold)Değer >99% → $()$()$(italic)$(l:tfg_tips/mob_effects_glossary#final_moments)Ölüm.$()"
+        },
+        {
+            "title": "Parazitler",
+            "type": "patchouli:text",
+            "anchor": "parasites",
+            "text": "$(l)$(4)Parazitler$()$(), belirli çiğ etleri yemekten ya da bulanık su içmekten kaynaklanır. $(l:tfg_tips/mob_effects_glossary#cure_parasites)Parazitleri Tedavi Etmek$() için aktif olarak $(item)Parazit İlacı Kapsülleri$() tüket.$(br2)Parazit değerini artırmak şu etkileri sağlar:$()$(li)$(bold)Değer >10% → $()$()$(italic)Her gün 10% artış ile en fazla 60%'a çıkma ihtimali 20%.$()$(li)$(bold)Değer >33% → $()$()$(italic)Pasif yorgunluğu 25% artırır.$()$(li)$(bold)Değer >66% → $()$()$(italic)Pasif yorgunluğu 50% artırır.$()"
+        },
+        {
+            "title": "Mikroplastikler",
+            "type": "patchouli:text",
+            "anchor": "microplastics",
+            "text": "$(l)$(3)Mikroplastikler$()$(), plastikle paketlenmiş yiyecekler tüketmekten kaynaklanır. Mikroplastikler günde 1% oranında doğal olarak azalır. $(l:tfg_tips/mob_effects_glossary#cure_microplastics)Mikroplastikleri Tedavi Etmek$() için aktif olarak $(item)Nanofiltrasyon Kapsülleri$() tüket.$(br)Mikroplastik değerini artırmak şu etkileri sağlar:$()$(li)$(bold)Değer >33% → $()$()$(italic)Yüksek sıcaklıkta susuzluk azalma çarpanını 25% artırır$()$(li)$(bold)Değer >66% ↴$()$()$(italic)$(li2)Yüksek sıcaklıkta susuzluk azalma çarpanını 50% artırır.$()$()$(italic)$(li2)Her yeni artışta: $(l:tfg_ores/hazards#Carcinogens)Kanser$() kapma ihtimali 5%.$()$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "transient_effects",
+            "text": "$(bold)$(#ff0fb7)TerraFirma$()$()$(bold)$(#595959)Greg$()$() ayrıca $(item)Geçici Etkiler$() de ekler. Geçici etkiler, malzemelerdeki güçlendirme/zayıflatma etkilerini yemek eşyalarına aktarmak amacıyla vardır. Geçici etkiler birleştirilebilir ve tüketilebilir. Ancak oyuncunun içinde birikmezler ― hemen tüketilirler.$(br)Etkinin gücü, besin değerine bağlıdır. Ancak gücün nasıl belirlendiği her tür için aynı değildir.$()",
+            "title": "Geçici Etkiler"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "cooling_transient_effect",
+            "text": "$(#12d7ff)❅$()$(bold) Serinletici$()$(li)Oyuncuya, her 1 besin puanı için 1 dakika süren $(l:tfg_tips/mob_effects_glossary#cooling)Serinletici$() efekti verir. Maksimum süre 30 dakikadır.$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "warming_transient_effect",
+            "text": "$(#ff7700)🔆$()$(bold) Isıtıcı$()$(li)Oyuncuya, her 1 besin puanı için 1 dakika süren $(l:tfg_tips/mob_effects_glossary#warming)Isıtıcı$() efekti verir. Maksimum süre 30 dakikadır.$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "quenching_transient_effect",
+            "text": "$(#00c792)🍹$()$(bold) Susuzluk Giderici$()$(li)Oyuncuya, her 1 besin puanı için 1 dakika süren $(l:tfg_tips/mob_effects_glossary#quenched)Susuzluğu Giderilmiş$() efekti verir. Maksimum süre 30 dakikadır.$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "bolstering_transient_effect",
+            "text": "$(#ffe417)♡$()$(bold) Güçlendirici$()$(li)Oyuncuya 8 dakika süren $(n)Emilim$() efekti verir. Efektin gücü besin puanına göre ölçeklenir, maksimum güç seviyesi 5'tir.$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "hearty_transient_effect",
+            "text": "$(#ff171b)♡$()$(bold) Besleyici$()$(li)Oyuncuya 8 dakika süren $(n)Sağlık Artışı$() efekti verir. Efektin gücü besin puanına göre ölçeklenir, maksimum güç seviyesi 5'tir.$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "rejuvenating_transient_effect",
+            "text": "$(#ff178f)💕$()$(bold) Canlandırıcı$()$(li)Oyuncuya, her 1 besin puanı için 1 dakika süren $(n)Yenilenme$() efekti verir. Maksimum süre 3 dakikadır.$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "freezing_transient_effect",
+            "text": "$(#12d7ff)⛇$()$(bold) Dondurucu$()$(li)Oyuncuya, her 1 besin puanı için 5 saniye süren $(l:tfg_tips/mob_effects_glossary#freezing)Donma$() efekti verir. Maksimum süre 30 saniyedir.$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "blazing_transient_effect",
+            "text": "$(#ff7700)🔥$()$(bold) Alevlendirici$()$(li)Oyuncuya, her 1 besin puanı için 5 saniye süren $(l:tfg_tips/mob_effects_glossary#blazing)Yanma$() efekti verir. Maksimum süre 30 saniyedir.$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "radiating_transient_effect",
+            "text": "$(#9fc700)☢$()$(bold) Işınlayıcı$()$(li)Oyuncuya 24 saniye süren $(n)Parlama$() efekti verir.$(li)Oyuncuya 24 saniye süren $(l:tfg_tips/mob_effects_glossary#instant_radiation)Radyasyon$() efekti verir. Efektin gücü besin puanına göre ölçeklenir, maksimum güç seviyesi 5'tir.$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "nauseating_transient_effect",
+            "text": "$(#078f00)🤢$()$(bold) Mide Bulandırıcı$()$(li)Oyuncuya, her 1 besin puanı için 5 saniye süren $(n)Mide Bulantısı$() efekti verir. Maksimum süre 12 saniyedir.$(li)Oyuncuya, her 1 besin puanı için 10 saniye süren $(n)Açlık VI$() efekti verir. Maksimum süre 30 saniyedir.$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "parching_transient_effect",
+            "text": "🧂$(bold) Kurutucu$()$(li)Oyuncuya, her 1 besin puanı için 1 dakika süren $(n)Susamış$() efekti verir. Maksimum süre 8 dakikadır.$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "deadly_transient_effect",
+            "text": "$(#470275)💀$()$(bold) Öldürücü$()$(li)Oyuncuya 8 dakika süren $(l:tfg_tips/mob_effects_glossary#final_moments)Son Anlar$() efekti verir. Her ek besin puanı süreyi yarıya indirir.$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "fulfilling_transient_effect",
+            "text": "$(#551913)🍖$()$(bold) Tatmin Edici$()$(li)Oyuncuya, her 1 besin puanı için 1 dakika süren $(n)Direnç$() efekti verir. Maksimum süre 15 dakikadır.$(li)Oyuncuya $(n)Anlık Sağlık$() efekti verir. Efektin gücü besin puanına göre ölçeklenir, maksimum güç seviyesi 2'dir.$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "sugary_transient_effect",
+            "text": "$(#837447)🍰$()$(bold) Şekerli$()$(li)Oyuncuya, her 1 besin puanı için 15 saniye süren $(n)Zayıflık$() efekti verir. Maksimum süre 5 dakikadır.$(li)Oyuncuya, her 1 besin puanı için 1 dakika süren $(n)Hız$() efekti verir. Maksimum süre 30 dakikadır.$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "spicy_transient_effect",
+            "text": "$(#8F0000)🌶 $()$(bold) Baharatlı$()$(li)Oyuncuya, her 1 besin puanı için 15 saniye süren $(n)Susamış$() efekti verir. Maksimum süre 5 dakikadır.$(li)Oyuncuya, her 1 besin puanı için 1 dakika süren $(l:tfg_tips/mob_effects_glossary#warming)Isıtıcı$() efekti verir. Maksimum süre 30 dakikadır.$()"
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Ek Okuma",
+            "anchor": "relations",
+            "entries": [
+                "tfc:getting_started/size_and_weight",
+                "tfc:mechanics/animal_husbandry",
+                "tfc:mechanics/crops",
+                "tfc:the_world/wild_fruits",
+                "tfc:mechanics/drinks",
+                "tfc:mechanics/decay",
+                "tfc:firmalife/differences_from_tfc",
+                "tfc:beneath/beneath_crops",
+                "tfc:beneath/beneath_wild_fruits",
+                "tfc:tfg_ores/hazards"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 10
+}

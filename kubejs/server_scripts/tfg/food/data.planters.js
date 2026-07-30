@@ -4,6 +4,10 @@
 /** @param {Internal.TFCDataEventJS} event */
 function registerTFGFLPlanters(event) {
 	const $FarmlandBlockEntity = Java.loadClass("net.dries007.tfc.common.blockentities.FarmlandBlockEntity")
+	const $PalmTree = Java.loadClass('su.terrafirmagreg.core.common.data.PalmTrees');
+	const PALMS = $PalmTree.values().map(palm => palm.getSerializedName());
+
+	//#region Earth
 
 	event.firmalifePlantable(
 		"tfg:sunflower_seeds",
@@ -58,6 +62,216 @@ function registerTFGFLPlanters(event) {
 		],
 		null
 	);
+
+	event.firmalifePlantable(
+		"tfg:cucumber_seeds",
+		"large",
+		0,
+		3,
+		0.15,
+		"tfg:cucumber_seeds",
+		"tfg:cucumber_product",
+		$FarmlandBlockEntity.NutrientType.NITROGEN,
+		[
+			"tfg:block/crop/cucumber_bottom_1",
+			"tfg:block/crop/cucumber_bottom_2",
+			"tfg:block/crop/cucumber_top_4",
+			"tfg:block/crop/cucumber_top_5"
+		],
+		null
+	);
+
+	event.firmalifePlantable(
+		"tfg:radish_seeds",
+		"quad",
+		0,
+		3,
+		0.15,
+		"tfg:radish_seeds",
+		"tfg:radish_product",
+		$FarmlandBlockEntity.NutrientType.POTASSIUM,
+		[
+			"tfg:block/crop/radish_2",
+			"tfg:block/crop/radish_3",
+			"tfg:block/crop/radish_4",
+			"tfg:block/crop/radish_5"
+		],
+		null
+	);
+
+	event.firmalifePlantable(
+		"tfg:lentil_seeds",
+		"quad",
+		0,
+		3,
+		0.15,
+		"tfg:lentil_seeds",
+		"tfg:lentil_product",
+		$FarmlandBlockEntity.NutrientType.PHOSPHOROUS,
+		[
+			"tfg:block/crop/lentil_1",
+			"tfg:block/crop/lentil_3",
+			"tfg:block/crop/lentil_4",
+			"tfg:block/crop/lentil_5"
+		],
+		null
+	);
+
+	//#endregion
+	//#region Beneath
+
+	event.firmalifePlantable(
+		"tfg:beans_seeds",
+		"quad",
+		2,
+		3,
+		0.15,
+		"tfg:beans_seeds",
+		"tfg:beans_product",
+		$FarmlandBlockEntity.NutrientType.POTASSIUM,
+		[
+			"tfg:block/crop/beans_2",
+			"tfg:block/crop/beans_3",
+			"tfg:block/crop/beans_4",
+			"tfg:block/crop/beans_5"
+		],
+		null
+	);
+
+	event.firmalifePlantable(
+		"tfg:cassava_seeds",
+		"quad",
+		2,
+		3,
+		0.15,
+		"tfg:cassava_seeds",
+		"tfg:cassava_product",
+		$FarmlandBlockEntity.NutrientType.NITROGEN,
+		[
+			"tfg:block/crop/cassava_1",
+			"tfg:block/crop/cassava_2",
+			"tfg:block/crop/cassava_4",
+			"tfg:block/crop/cassava_5"
+		],
+		null
+	);
+
+	event.firmalifePlantable(
+		"tfg:peanut_seeds",
+		"quad",
+		2,
+		3,
+		0.15,
+		"tfg:peanut_seeds",
+		"tfg:peanut_product",
+		$FarmlandBlockEntity.NutrientType.POTASSIUM,
+		[
+			"tfg:block/crop/peanut_0",
+			"tfg:block/crop/peanut_2",
+			"tfg:block/crop/peanut_3",
+			"tfg:block/crop/peanut_5"
+		],
+		null
+	);
+
+	event.firmalifePlantable(
+		"tfg:ghost_pepper_seeds",
+		"quad",
+		2,
+		3,
+		0.15,
+		"tfg:ghost_pepper_seeds",
+		"beneath:ghost_pepper",
+		$FarmlandBlockEntity.NutrientType.NITROGEN,
+		[
+			"tfg:block/crop/ghost_pepper_1",
+			"tfg:block/crop/ghost_pepper_3",
+			"tfg:block/crop/ghost_pepper_4",
+			"tfg:block/crop/ghost_pepper_5"
+		],
+		null
+	);
+
+	event.firmalifePlantable(
+		"tfg:fruit_trees/lavacado_sapling",
+		"bonsai",
+		2,
+		null,
+		0.5,
+		"tfg:fruit_trees/lavacado_sapling",
+		"tfg:food/lavacado",
+		null,
+		[
+			"tfg:block/fruit_tree/lavacado_fruiting_leaves",
+			"tfg:block/fruit_tree/lavacado_dry_leaves",
+			"tfg:block/fruit_tree/lavacado_flowering_leaves",
+			"tfg:block/fruit_tree/lavacado_branch",
+			"tfg:block/fruit_tree/lavacado_leaves"
+		],
+		null
+	);
+
+	event.firmalifePlantable(
+		"tfg:fruit_trees/magmango_sapling",
+		"bonsai",
+		2,
+		null,
+		0.5,
+		"tfg:fruit_trees/magmango_sapling",
+		"tfg:food/magmango",
+		null,
+		[
+			"tfg:block/fruit_tree/magmango_fruiting_leaves",
+			"tfg:block/fruit_tree/magmango_dry_leaves",
+			"tfg:block/fruit_tree/magmango_flowering_leaves",
+			"tfg:block/fruit_tree/magmango_branch",
+			"tfg:block/fruit_tree/magmango_leaves"
+		],
+		null
+	);
+
+	PALMS.forEach(palm => {
+		if (palm !== 'coconut') {
+			event.firmalifePlantable(
+				`tfg:palm_tree/${palm}_sapling`,
+				'hanging',
+				2,
+				4,
+				0.5,
+				`3x tfg:food/${palm}`,
+				`6x tfg:food/${palm}`,
+				$FarmlandBlockEntity.NutrientType.POTASSIUM,
+				[
+					'tfg:block/palm_tree/palm_fruit_planter_0',
+					'tfg:block/palm_tree/palm_fruit_planter_1',
+					'tfg:block/palm_tree/palm_fruit_planter_2',
+					'tfg:block/palm_tree/palm_fruit_planter_3',
+				],
+				`tfg:block/palm_tree/palm_fruit_planter_${palm}`
+			);
+		} else {
+			event.firmalifePlantable(
+				`tfg:palm_tree/${palm}_sapling`,
+				'hanging',
+				2,
+				4,
+				1,
+				`3x tfg:palm_tree/${palm}_fruit_green`,
+				`3x tfg:palm_tree/${palm}_fruit_brown`,
+				$FarmlandBlockEntity.NutrientType.POTASSIUM,
+				[
+					'tfg:block/palm_tree/palm_fruit_planter_0',
+					'tfg:block/palm_tree/palm_fruit_planter_1',
+					'tfg:block/palm_tree/palm_fruit_planter_2',
+					'tfg:block/palm_tree/palm_fruit_planter_3',
+				],
+				`tfg:block/palm_tree/palm_fruit_planter_${palm}`
+			);
+		}
+	});
+
+	//#endregion
+	//#region Mars
 
 	event.firmalifePlantable(
 		"betterend:amber_root_seeds",
@@ -166,4 +380,6 @@ function registerTFGFLPlanters(event) {
 		],
 		null
 	);
+
+	//#endregion
 }

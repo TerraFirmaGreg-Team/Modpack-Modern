@@ -1,0 +1,80 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "臼",
+  "category": "tfc:mechanics",
+  "icon": "tfc:quern",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)臼$()はアイテムをすり潰すための装置です。（TFGでは、Createの「石臼」と区別するために「臼」と表記しています。）鉱石を$(l:tfg_ores/ore_basics#processing)鉱石処理$()のために粉砕できるほか、粉末や$(l:mechanics/dye)染料$()などのアイテムを作るためにも利用できます。この装置は$(thing)下臼$()と$(thing)上臼$()を組み合わせて構成されます。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/quern",
+      "text": "臼のベースとなる下臼は、$(thing)滑らかな石$()を3つと、任意の種類の$(thing)石ブロック$()を3つ組み合わせてクラフトできます。$(br2)石ブロックは$(l:getting_started/primitive_anvils#raw_rock)切り出す$()ことによって入手でき、滑らかな石は$(l:mechanics/chisel)ノミ$()を使って加工することで作成できます。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/handstone",
+      "text": "臼が動作するには$(thing)上臼$()も必要です。"
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "tfc:textures/gui/book/tutorial/quern_empty.png"
+      ],
+      "text": "設置した下臼の上面にカーソルを合わせ、$(item)$(k:key.use)$()で上臼を取り付けられます。",
+      "border": true
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "tfc:textures/gui/book/tutorial/quern_add_item.png"
+      ],
+      "text": "上臼の上部へ$(item)$(k:key.use)$()を使用して、粉砕したいアイテムを投入できます。",
+      "border": true
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "tfc:textures/gui/book/tutorial/quern_handle.png"
+      ],
+      "text": "ハンドルに$(item)$(k:key.use)$()で上臼を回転させ、粉砕を開始します。",
+      "border": true
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "tfc:textures/gui/book/tutorial/quern_result.png"
+      ],
+      "text": "処理が終わったアイテムは下臼に表示されます。下臼に$(item)$(k:key.use)$()で回収できます。",
+      "border": true
+    },
+    {
+      "type": "tfc:quern_recipe",
+      "title": "砕いた鉱石",
+      "recipe": "tfg:quern/copper_crushed_ore_from_normal_raw_ore",
+      "text": "$(l:tfg_ores/ore_basics#processing)鉱石$()は粉砕処理を行うことで、より多くの金属を得ることができます。"
+    },
+    {
+      "type": "tfc:quern_recipe",
+      "title": "粉末",
+      "recipe": "tfg:quern/sulfur",
+      "text": "臼は、$(thing)硫黄$()などの粉をさらに細かく砕いて各種$(thing)粉末$()を生成するためにも使用されます。また、$(thing)宝石$()を粉末にすることも可能です。"
+    },
+    {
+      "type": "tfc:quern_recipe",
+      "title": "染料",
+      "recipe": "tfc:quern/red_dye",
+      "text": "$(l:mechanics/dye)染料$()は、各種の花をすり潰すことで入手できます。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "tag": "tfc:foods/flour"
+      },
+      "text": "$(thing)穀物系の作物$()はナイフとクラフトすることで$(thing)穀物の粒$()にすることができ、さらにそれを臼で挽くことで$(thing)穀物の粉（小麦粉など）$()へと加工できます。"
+    }
+  ],
+  "read_by_default": true
+}

@@ -2,11 +2,6 @@
 
 const registerRnrItemTags = (event) => {
 
-	global.RNR_DISABLED_ITEMS.forEach(item => {
-		event.removeAllTagsFrom(item)
-		event.add('c:hidden_from_recipe_viewers', item)
-	});
-
 	global.TFC_WOOD_TYPES.forEach(wood => {
 		event.add('rnr:shingles', `rnr:wood/shingle/${wood}`)
 		event.add('rnr:roof_blocks', `rnr:wood/shingles/${wood}`)
@@ -96,6 +91,13 @@ const registerRnrItemTags = (event) => {
 	event.add('rnr:concrete_roads', `rnr:concrete_road_panel_slab`)
 	event.add('rnr:concrete_roads', `rnr:concrete_road_sett_slab`)
 	event.add('rnr:concrete_roads', `rnr:concrete_road_flagstones_slab`)
+	
+	event.add('rnr:concrete_roads', 'rnr:wet_concrete_road')
+    event.add('rnr:concrete_roads', 'rnr:wet_concrete_road_control_joint')
+    event.add('rnr:concrete_roads', 'rnr:wet_concrete_road_panel')
+    event.add('rnr:concrete_roads', 'rnr:wet_concrete_road_sett')
+    event.add('rnr:concrete_roads', 'rnr:wet_concrete_road_flagstones')
+	
 };
 
 function registerRnrBlockTags(event) {
@@ -123,4 +125,10 @@ function registerRnrBlockTags(event) {
 	event.add('minecraft:mineable/pickaxe', `rnr:ceramic_roof_stairs`)
 	event.add('minecraft:mineable/pickaxe', `rnr:ceramic_roof_slab`)
 
+	event.add('tfc:supports_landslide', 'rnr:wet_concrete_road_panel')
+	event.add('tfc:supports_landslide', 'rnr:wet_concrete_road_sett')
+	event.add('tfc:supports_landslide', 'rnr:wet_concrete_road_flagstones')
+	event.add('minecraft:mineable/shovel', 'rnr:wet_concrete_road_panel')
+	event.add('minecraft:mineable/shovel', 'rnr:wet_concrete_road_sett')
+	event.add('minecraft:mineable/shovel', 'rnr:wet_concrete_road_flagstones')
 }

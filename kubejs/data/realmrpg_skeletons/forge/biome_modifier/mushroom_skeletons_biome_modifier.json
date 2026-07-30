@@ -1,0 +1,6 @@
+{
+	"type": "forge:add_features",
+	"biomes": "#realmrpg_skeletons:has_mushroom_skeletons",
+	"features": "realmrpg_skeletons:mushroom_skeletons",
+	"step": "vegetal_decoration"
+}

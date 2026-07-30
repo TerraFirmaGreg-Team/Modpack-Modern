@@ -10,7 +10,7 @@
 				"Name": "minecraft:moss_block"
 			}
 		},
-		"replaceable": "#minecraft:moss_replaceable",
+		"replaceable": "#minecraft:base_stone_nether",
 		"surface": "floor",
 		"vegetation_chance": 0.6,
 		"vegetation_feature": {

@@ -101,11 +101,6 @@ function registerTFGVenusBlockTags(event) {
 	event.add('tfc:can_carve', '#ad_astra:venus_stone_replaceables')
 	event.add('minecraft:animals_spawnable_on', '#ad_astra:venus_stone_replaceables')
 
-	event.add("tfc:monster_spawns_on", "create:scorchia");
-	event.add("tfc:monster_spawns_on", "create:scoria");
-	event.add("tfc:monster_spawns_on", "minecraft:basalt");
-	event.add("tfc:monster_spawns_on", "minecraft:smooth_basalt");
-
 	event.add("minecraft:strider_warm_blocks", "create:scorchia");
 	event.add("minecraft:strider_warm_blocks", "tfg:rock/hardened_scorchia");
 	event.add("minecraft:strider_warm_blocks", "minecraft:basalt");
@@ -143,7 +138,6 @@ function registerTFGVenusEntityTypeTags(event) {
 		"endermanoverhaul:savanna_enderman",
 		"endermanoverhaul:nether_wastes_enderman",
 		"ad_astra:sulfur_creeper",
-		'species:cliff_hanger',
 		'species:trooper',
 		'primitive_creatures:golem_2',
 		'arthropocolypse:scarab',
@@ -175,7 +169,6 @@ function registerTFGVenusEntityTypeTags(event) {
 	event.add('tfc:deals_slashing_damage', 'endermanoverhaul:desert_enderman')
 	event.add('tfc:deals_slashing_damage', 'endermanoverhaul:savanna_enderman')
 	event.add('tfc:deals_slashing_damage', 'endermanoverhaul:nether_wastes_enderman')
-	event.add('tfc:deals_slashing_damage', 'species:cliff_hanger')
 	event.add('tfc:deals_crushing_damage', 'minecraft:magma_cube')
 	event.add('tfc:deals_crushing_damage', 'primitive_creatures:golem_2')
 	event.add('tfc:deals_piercing_damage', 'arthropocolypse:scarab')

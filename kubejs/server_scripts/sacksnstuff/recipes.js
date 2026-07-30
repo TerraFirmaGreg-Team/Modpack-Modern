@@ -1,11 +1,6 @@
 "use strict";
 
 const registerSNSRecipes = (event) => {
-	global.SNS_DISABLED_ITEMS.forEach(item => {
-		event.remove({ input: item })
-		event.remove({ output: item })
-	})
-	
 	event.remove({ mod: 'sns', type: 'tfc:heating' })
 	event.remove({ output: 'sns:buckle'})
 	
@@ -311,15 +306,5 @@ const registerSNSRecipes = (event) => {
 				C: '#forge:tools/hammers'
 			}).id(`sns:shaped/${baseTier.id}_to_${upgradedTier.id}`)
 		})
-	})
-
-	BOOT_TIERS.forEach(tier => {
-		 event.shapeless(`sns:${tier.id}`, [
-			`sns:${tier.id}`,
-			`${tier.resource}`,
-			'#tfc:sewing_needles'
-		])
-		.damageIngredient('#tfc:sewing_needles', 1)
-		.id(`sns:shapeless/${tier.id}_repair`)
 	})
 }

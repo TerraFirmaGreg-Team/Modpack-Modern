@@ -36,6 +36,7 @@ const registerWABRecipes = (event) => {
 		.itemOutputs('32x #forge:dusts/bone')
 		.duration(400)
 		.EUt(30)
+		.category(GTRecipeCategories.MACERATOR_RECYCLING)
 
 	event.shaped('wan_ancient_beasts:reinforced_shield', [
 		'BAB',
@@ -78,4 +79,60 @@ const registerWABRecipes = (event) => {
 			.EUt(4)
 			.category(GTRecipeCategories.CHEM_DYES)
 	})
+
+	event.recipes.tfc.sewing('wan_ancient_beasts:sniff_armor_trim_smithing_template',[
+			0, 0, 1, 1, 1, 0, 1, 0, 0,
+			0, 0, 0, 0, 0, 0, 0, 0, 0,
+			0, 0, 0, 0, 1, 1, 0, 0, 0,
+			0, 0, 0, 0, 0, 0, 0, 0, 0,
+			0, 0, 1, 1, 1, 0, 1, 0, 0
+		], [
+			0, 0, 1, 0, 1, 1, 0, 0,
+			0, 0, 1, 0, 1, 0, 0, 0,
+			0, 0, 1, 0, 1, 0, 0, 0,
+			0, 0, 1, 0, 1, 1, 0, 0
+		]
+	)
+
+	event.recipes.tfc.sewing('wan_ancient_beasts:spike_armor_trim_smithing_template',[
+			0, 0, 1, 0, 0, 0, 1, 0, 0,
+			0, 0, 1, 0, 0, 1, 0, 1, 0,
+			0, 0, 0, 0, 0, 0, 0, 0, 0,
+			0, 0, 1, 0, 0, 1, 0, 1, 0,
+			0, 0, 1, 0, 0, 0, 1, 0, 0
+		], [
+			0, 0, 1, 1, 1, 1, 0, 0,
+			0, 0, 0, 0, 0, 1, 1, 0,
+			0, 0, 0, 0, 0, 1, 1, 0,
+			0, 0, 1, 1, 1, 1, 0, 0
+		]
+	)
+
+	event.recipes.tfc.sewing('wan_ancient_beasts:bones_banner_pattern',[
+			0, 0, 0, 0, 0, 1, 0, 0, 0,
+			0, 0, 0, 0, 1, 0, 0, 0, 0,
+			0, 1, 0, 0, 1, 0, 0, 1, 0,
+			0, 0, 0, 0, 1, 0, 0, 0, 0,
+			0, 0, 0, 1, 0, 0, 0, 0, 0
+		], [
+			0, 0, 0, 0, 0, 1, 0, 0,
+			0, 0, 0, 0, 1, 1, 1, 0,
+			0, 1, 1, 1, 0, 0, 0, 0,
+			0, 0, 1, 0, 0, 0, 0, 0
+		]
+	)
+
+	event.recipes.tfc.sewing('wan_ancient_beasts:dino_banner_pattern',[
+			0, 0, 0, 0, 0, 0, 1, 0, 0,
+			0, 1, 0, 0, 0, 0, 0, 0, 0,
+			0, 0, 1, 0, 0, 0, 1, 0, 0,
+			0, 0, 0, 0, 0, 0, 0, 0, 0,
+			0, 0, 1, 0, 0, 0, 0, 1, 0
+		], [
+			0, 0, 0, 0, 0, 1, 1, 0,
+			0, 1, 1, 1, 1, 1, 0, 0,
+			0, 0, 1, 1, 1, 1, 1, 0,
+			0, 0, 1, 0, 0, 0, 1, 0
+		]
+	)
 }

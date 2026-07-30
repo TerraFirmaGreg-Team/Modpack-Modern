@@ -30,6 +30,7 @@ const registerGTCEuRecipeTypes = (event) => {
 			.setProgressBar(GuiTextures.PROGRESS_BAR_LATHE, FillDirection.LEFT_TO_RIGHT)
 			.setSound(GTSoundEntries.CUT)
 	*/
+	/*
 	event.create('heat_exchanger')
 		.category('heat_exchanger')
 		.setEUIO($EnergyIO.IN)
@@ -37,7 +38,7 @@ const registerGTCEuRecipeTypes = (event) => {
 		.setSlotOverlay(false, false, GuiTextures.ATOMIC_OVERLAY_1)
 		.setProgressBar(GuiTextures.PROGRESS_BAR_GAS_COLLECTOR, FillDirection.LEFT_TO_RIGHT)
 		.setSound(GTSoundEntries.TURBINE)
-
+	*/
 	/* Just keeping it in case we got mod issues
 		event.create('fission_reactor')
 			.category('fission_reactor')

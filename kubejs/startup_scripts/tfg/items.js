@@ -13,13 +13,13 @@ const registerTFGItems = (event) => {
 	registerTFGWoodItems(event);
 	registerTFGAircraftItems(event);
 	registerTFGSpaceItems(event);
-	registerTFGMarsItems(event);
 	registerTFGDimensionMarkerItems(event);
 	registerTFGBiotechItems(event);
 	registerTFGWeaponItems(event);
 	registerTFGRockItems(event);
 	registerTFGAquaponicsItems(event);
-	
+	registerTFGAsphaltRoadItems(event);
+
 	event.create('tfg:terra_firma_greg')
 		.tag('c:hidden_from_recipe_viewers')
 
@@ -36,6 +36,7 @@ const registerTFGItems = (event) => {
 	event.create('tfg:blue_alloy_desh_foil')
 	event.create('tfg:chorus_ceramic_insulation')
 	event.create('tfg:fired_chorus_ceramic_insulation')
+	event.create('tfg:steel_drill_head')
 
 	// Molds
 	global.TFG_EXTRUDER_MOLDS.forEach(id => event.create(id))
@@ -82,5 +83,21 @@ const registerTFGItems = (event) => {
 	event.create('tfg:worked_optical_borosilicate_blank')
 		.texture('tfg:item/worked_optical_borosilicate_blank')
 		.tag('tfg:precision_fabricator_dipped_items')
+
+	// Prismatic Related Stuff (Spray Can)
+
+	event.create('tfg:chemical_prismatic_dye')
+		.texture('tfg:item/chemical_prismatic_dye')
+		.tag('forge:dyes/prismatic')
+
+	// Item for Garnet Line
+
+	event.create('tfg:garnet_fusion_clinker')
+		.texture('tfg:item/fusion_clinker')
+		.tag('forge:fusion_clinker/garnet')
+
+	event.create('tfg:al_cr_y_hydroxide_cake')
+		.texture('tfg:item/al_cr_y_hydroxide_cake')
+		.tag('forge:cake/al_cr_y_hydroxide')
 
 }

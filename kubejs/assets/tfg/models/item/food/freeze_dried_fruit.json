@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "tfg:item/foil_pack",
+		"layer1": "tfg:item/food/freeze_dried_fruit_overlay"
+  }
+}

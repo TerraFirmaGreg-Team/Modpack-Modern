@@ -1,0 +1,38 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "Бурріто та Тако",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:textures/item/food/burrito.png",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Шлях приготування $(thing)тортильї$() — це тривалий процес, але результат того вартий. Почни з $(thing)кукурудзяного зерна$(). Відвари його в казанку з $(thing)вапняною водою$() та закрий у діжці з водою, щоб отримати $(thing)мамалигу$(). Потім розмели її в $(thing)жорнах$(), щоб зробити $(thing)борошно для маси$()."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Борошно для маси з поєднанням відром води дає $(thing)масу$() — тісто для тортильї. Його можна підсмажити, щоб отримати $(thing)кукурудзяну тортилью$(). А випікання тортильї в печі перетворить її на $(thing)тортилью для тако$()."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/tortilla_chips",
+      "recipe2": "firmalife:crafting/nachos"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfg:crafting/salsa",
+      "text": "Поєднання помідора, кінзи, солі та ножа дасть тобі $(thing)сальсу$()."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/burrito",
+      "text": "$(thing)Бурріто$() готується з приготовленого м'яса, $(l:firmalife/pizza#shredded_cheese)тертого сиру$(), $(l:firmalife/pizza#tomato_sauce)томатного соусу$(), овочів та сальси."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/taco",
+      "text": "$(thing)Тако$() готується з тих самих інгредієнтів, але замість цього використовується $(thing)тортилья для тако$()."
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 28
+}

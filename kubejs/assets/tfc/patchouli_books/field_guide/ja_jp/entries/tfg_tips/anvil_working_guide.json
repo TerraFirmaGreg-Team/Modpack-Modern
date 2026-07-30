@@ -1,0 +1,174 @@
+{
+    "name": "金床鍛造ガイド",
+    "icon": "gtceu:red_steel_hammer",
+    "category": "tfc:tfg_tips",
+    "read_by_default": true,
+    "priority": false,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "title": "金床での鍛造",
+            "text": "$(l:mechanics/anvils#working)鍛造$()は、$(l:mechanics/anvils)金床$()で行う非常に重要な作業です。$(thing)TerraFirmaGreg$()では、$(thing)蒸気時代と機械時代$()へ進むための多くの工程で金床を使用することになります。$(br)このガイドは、$(l:tfg_tips/anvil_working_guide#ui_explained)UIの見方$()と、$(l:tfg_tips/anvil_working_guide#how_to_perfectly_forge)完璧な鍛造への道$()の2つのパートに分かれています。$(br2)このガイドを理解するためには、モッドパックに含まれている専用の$(thing)リソースパック$()である$(l:https://www.curseforge.com/minecraft/texture-packs/tfc-anvil-helper)TFC Anvil Helper$()を有効にする必要があります。$()"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfg:textures/gui/field_guide/anvil_working_guide/anvil_ui.png"
+            ],
+            "border": false,
+            "text": "TFC Anvil Helperを有効化した状態での金床UI"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfg:textures/gui/field_guide/anvil_working_guide/anvil_ui_marked.png"
+            ],
+            "border": false,
+            "anchor": "ui_explained",
+            "tile": "UIとあなた",
+            "text": "各表示の詳細"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(#ff0000)1.$() 金床で作成対象として選択しているアイテムです。各アイテムには、それぞれ固有の$(#be00ff)工程$()と$(#ff6b00)作業量$()が設定されています。$(br)$(#ff00c6)2.$() 現在加工中の素材です。$(br)$(#be00ff)3.$() アイテムを完成させるための、決められた工程です。工程実行順番は全部で4種類あります（次のページを参照してください）。"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfg:textures/gui/field_guide/anvil_working_guide/anvil_ui_marked.png"
+            ],
+            "border": false
+        },
+        {
+            "type": "patchouli:text",
+            "text": "（注：X は任意の工程を表します）$(br)$(li)X_いつでも：その工程は直近3回の行動のどこに入っていても構いません。$()$(li)X_最後に：その工程を最後に実行しなければなりません。$()$(li)X_最後以外に：その工程を最後に実行してはいけません。$()$(li)X_最後から2番目に：その工程を最後から2番目に実行しなければなりません。$()$(li)X_最後から3番目に：その工程を最後から3番目に実行しなければなりません。$()"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfg:textures/gui/field_guide/anvil_working_guide/anvil_ui_marked.png"
+            ],
+            "border": false
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(#2e00ff)4.$() 工程の種類です。各工程は現在の進行度を減算または加算します。左から右、上から下の順に次の通りです。$(li)軽く打つ：-3$()$(li)普通に打つ：-6$()$(li)穴をあける：+2$()$(li)曲げる：+7$()$(li)強く打つ：-9$()$(li)引き延ばす：-15$()$(li)短くする：+13$()$(li)縮める：+16$()"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfg:textures/gui/field_guide/anvil_working_guide/anvil_ui_marked.png"
+            ],
+            "border": false
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(#00a7ff)5.$() ハンマーを配置するスロットです。溶接を行う場合は、ここに融剤も配置する必要があります。$(br)$(#00ff26)6.$() 現在の進行度です。実行する工程によって、この値が増加または減少します。$(br)$(#fff400)7.$() 目標進行度です。アイテムを完成させるには、$(#ff00c6)必要工程$()の順番を満たしながら$(#00ff26)進行度$()をこの目標値に完全に一致させなければなりません。$(br)$(#ff6b00)8.$() 進行度バーです。現在の進行度を目標進行度に合わせるために使用します。"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "how_to_perfectly_forge",
+            "title": "完璧な鍛造への道",
+            "text": "$(thing)ツールヘッド$()、$(thing)武器$()、$(thing)防具$()などの破損するアイテムを鍛造するために要した総工程数が少ないほど、そのアイテムの耐久性および全体的な効率にボーナスが与えられます。非常に少ない工程数でアイテムの加工を完了すると、そのアイテムは$(thing)完璧な鍛造（Perfectly Forging）$()となります。これにより完成品にボーナスが付与されるだけでなく、当然ですがハンマーの損耗も少なくてすみます。"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfg:textures/gui/field_guide/anvil_working_guide/perfectly_forged_item.png"
+            ],
+            "border": false,
+            "text": "完璧な鍛造の錬鉄のツルハシの頭"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "鍛造ガイド",
+            "item": "gtceu:wrought_iron_pickaxe_head",
+            "text": "このパートでは、$(thing)錬鉄のツルハシの頭$()を例に、あらゆるアイテムを$(thing)完璧に鍛造する方法$()を解説します。$(br2)$(bold)$(italic)注意:$()$(br)TerraFirmaGregでは、アイテムごとの必要工程やその順序はどのワールドでも共通ですが、目標進行度はワールドシードによって異なります。そのため、このガイドでは錬鉄のツルハシヘッドの目標進行度が$(bold)83$()であるとして説明します。"
+        },
+        {
+            "type": "patchouli:empty"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "ステップ 1",
+            "text": "鍛造の最初の手順は、必要工程の値をすべて合計することです。今回はツルハシの頭を例にします。必要な工程は次の通りです。$(li)$(bold)穴をあける$()：最後$()$(li)$(bold)曲げる$()：最後以外$()$(li)$(bold)引き延ばす$()：最後以外$()。$(br)各工程の下に表示されている値を合計すると、求める値が得られます。この値を「必要工程値」と呼ぶことにします。$(br)$(bold)2 + 7 + (-15) = -6$()"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfg:textures/gui/field_guide/anvil_working_guide/steps.png"
+            ],
+            "text": "この工程はツルハシの頭のものです"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "ステップ２",
+            "text": "鍛造の最終的な目標は目標進行度に合わせることですが、達成しなければならないのはそれだけではありません。必要工程の順番も同時に成立させる必要があります。したがって、単純に進行度を目標進行度へ合わせるだけでは完成しません。そこで、「目標進行度」と「必要工程値」から新たな値を計算します。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "この値は、「必要工程値」が正か負かによって求め方が変わります。$(li)「必要工程値」が正の場合$()$(li2)「必要工程値」の絶対値を「目標進行度」から引きます。$()$(li3)83 - 6 = $(bold)77$()$()$(li)「必要工程値」が負の場合$()$(li2)「必要工程値」の絶対値を「目標進行度」に足します。$()$(li3)83 + 6 = $(bold)89$()$()"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "今回のアイテムの「必要工程値」は -6 なので、求めるべき値は$(bold)89$()です。$(br)「目標進行度の正確な数値はどうやって確認するのか？」と思われるかもしれません。目標進行度は金床の進行度バーから読み取れます。進行度バーには20刻みの数値しか表示されませんが、色分けされた目盛りを利用することで、その間の数値も簡単に読み取れます。$(li)薄い灰色：5の倍数を表します。$()$(li)灰色：奇数を表します。$()$(li)濃い灰色：偶数を表します。$()"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfg:textures/gui/field_guide/anvil_working_guide/work_bar_numbers.png",
+                "tfg:textures/gui/field_guide/anvil_working_guide/target_work_for_wrought_iron_pickaxe_head.png"
+            ]
+        },
+        {
+            "type": "patchouli:text",
+            "title": "ステップ 3",
+            "text": "「目標進行度」と「必要工程値」から求めた値が分かったら、次は実際にその進行度へ到達する必要があります。これを行う方法は、各工程に対応する数値を自分で計算しながら進める方法と、進行度バーの下のチートシートを利用する方法の2つがあります。各色は工程の種類に対応しています。$(br)例えば、赤色は「縮める(+16)」を表します。"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfg:textures/gui/field_guide/anvil_working_guide/work_bar_cheat_sheet.png"
+            ],
+            "text": "16 + 16 + 16 + 16 + 16 + 7 + 2 = 89"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "ステップ４",
+            "text": "必要な工程が分かったので、次は「目標進行度」と「必要工程値」から求めた値まで加工値を調整します。ツルハシの頭の目標加工値が83の場合、到達すべき値は89です。そのため、次の工程を実行します：(縮める × 5) → 曲げる → 穴をあける$(br2)進行度が目的の値に到達したら、あとは必要工程を順番通りに実行するだけです。ツルハシの頭の場合は次の通りです：引き延ばす → 曲げる → 穴をあける$(br)これで完璧な鍛造の錬鉄のツルハシの頭が完成します！"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfg:textures/gui/field_guide/anvil_working_guide/wrought_iron_pickaxe_head_no_work.png",
+                "tfg:textures/gui/field_guide/anvil_working_guide/wrought_iron_pickaxe_head_some_work.png",
+                "tfg:textures/gui/field_guide/anvil_working_guide/wrought_iron_pickaxe_head_complete.png"
+            ],
+            "text": "「目標進行度」と「必要工程値」から計算 → 計算した値まで進める → アイテムに必要な工程を実行。"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "その他の例",
+            "text": "それでは、この方法をプレートや棒など別のアイテムでも見てみましょう。なお、目標進行度はワールドシードによって変化するため、あなたのワールドでは異なる値になる可能性があります。$(br)プレートの目標進行度：$(bold)111$()$(br)必要工程：軽く打つ × 3（順番は自由）$(br)「必要工程値」：-3 × 3 = -9$(br)計算後の目標値：111 + 9 = 120$(br)値の調整方法：(縮める × 5) → (短くする × 2) → (穴をあける × 2)$(br)アイテムの完成：120 - (軽く打つ × 3) = $(bold)111$()。進行度と必要工程の両方を満たしているため完成です。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "棒の目標進行度：$(bold)78$()$(br)必要工程：引き延ばす → 引き延ばす → 曲げる$(br)「必要工程値」：(-15 × 2) + 7 = -23$(br)計算後の目標値：78 + 23 = 101$(br)値の調整方法：(縮める× 5) → (曲げる × 3)$(br)アイテムの完成：101 - 15 - 15 + 7 = 78。これで目標進行度と必要工程の両方を満たし、棒が完成します。"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "補足",
+            "text": "必要工程の中に空欄がある場合、その枠はなんでもありです。どの工程であっても条件を満たせます。$(br2)もし計算を間違えてしまっても心配はいりません。アイテムを溶かして再びインゴットとして鋳造すれば、「鍛造途中」状態がリセットされます。これにより、完璧な鍛造に再挑戦できます。"
+        },
+        {
+            "type": "patchouli:empty"
+        },
+        {
+            "type": "patchouli:empty"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "ここまで読んでいただき、おめでとうございます！ もしあなたがこのガイドのスクリーンショットを撮り直したいコントリビューターであれば、このガイド作成時に使用されたシード値は$(bold)-7291708953208913102$()です。また、クリエイティブワールドを作成して、この鍛造アルゴリズムを自分で試してみることもできます！$(br2)$(br)それから……もし毎回これらの計算をするのが面倒であれば、$(l:https://adrianmiller99.github.io/tfg-anvil-calculator/src/index.html)TFC Anvil Calculator$()を使うこともできます……。"
+        }
+    ]
+}

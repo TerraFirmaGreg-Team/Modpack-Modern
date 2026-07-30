@@ -101,6 +101,7 @@ function registerTFCMetalsRecipes(event) {
 
 	// Слабая сталь + Чугун -> Высокоуглеродная черная сталь
 	event.recipes.tfc.welding(TFC.isp.of('tfc:metal/ingot/high_carbon_black_steel').copyHeat(), 'tfc:metal/ingot/weak_steel', 'tfc:metal/ingot/pig_iron', 4)
+		.id("tfg:welding/high_carbon_black_steel_ingot")
 
 	event.recipes.greate.compacting('tfc:metal/ingot/high_carbon_black_steel',
 		['tfc:metal/ingot/weak_steel', 'tfc:metal/ingot/pig_iron', 'tfc:powder/flux'])
@@ -116,6 +117,7 @@ function registerTFCMetalsRecipes(event) {
 
 	// Слабая синяя сталь + Черная сталь -> Высокоуглеродная синяя сталь
 	event.recipes.tfc.welding(TFC.isp.of('tfc:metal/ingot/high_carbon_blue_steel').copyHeat(), 'tfc:metal/ingot/weak_blue_steel', 'tfc:metal/ingot/black_steel', 5)
+		.id("tfg:welding/high_carbon_blue_steel_ingot")
 
 	event.recipes.greate.compacting('tfc:metal/ingot/high_carbon_blue_steel',
 		['tfc:metal/ingot/weak_blue_steel', 'tfc:metal/ingot/black_steel', 'tfc:powder/flux'])
@@ -131,6 +133,7 @@ function registerTFCMetalsRecipes(event) {
 
 	// Слабая красная сталь + Черная сталь -> Высокоуглеродная красная сталь
 	event.recipes.tfc.welding(TFC.isp.of('tfc:metal/ingot/high_carbon_red_steel').copyHeat(), 'tfc:metal/ingot/weak_red_steel', 'tfc:metal/ingot/black_steel', 5)
+		.id("tfg:welding/high_carbon_red_steel_ingot")
 
 	event.recipes.greate.compacting('tfc:metal/ingot/high_carbon_red_steel',
 		['tfc:metal/ingot/weak_red_steel', 'tfc:metal/ingot/black_steel', 'tfc:powder/flux'])
@@ -237,6 +240,11 @@ function registerTFCMetalsRecipes(event) {
 		.resultFluid(Fluid.of('gtceu:iron', 288))
 		.id(`tfc:heating/grill`)
 
+	// Wrought Iron Grill
+	event.recipes.tfc.anvil('tfc:wrought_iron_grill', '#forge:double_plates/wrought_iron', ['punch_last', 'draw_any', 'punch_not_last'])
+		.tier(3)
+		.id(`tfc:anvil/wrought_iron_grill`)
+
 	// Ванильная дверь декрафт
 	event.recipes.tfc.heating('minecraft:iron_door', 1535)
 		.resultFluid(Fluid.of('gtceu:iron', 288))
@@ -273,7 +281,7 @@ function registerTFCMetalsRecipes(event) {
 		.id('tfc:anvil/blue_steel_ingot')
 
 	// Cast iron -> Raw Iron Bloom
-	event.recipes.tfc.bloomery('tfc:raw_iron_bloom', '#tfg:bloomery_basic_fuels', Fluid.of('gtceu:iron', 144), 15000)
+	event.recipes.tfc.bloomery('tfc:raw_iron_bloom', 'minecraft:charcoal', Fluid.of('gtceu:iron', 144), 15000)
 		.id('tfc:bloomery/raw_iron_bloom')
 
 	// Cast Iron -> Pig Iron
@@ -296,25 +304,53 @@ function registerTFCMetalsRecipes(event) {
 			event.recipes.gtceu.ore_washer(`tfc:ore_washer/water/deposit/${ore}/${stone}`)
 				.itemInputs(`1x tfc:deposit/${ore}/${stone}`)
 				.inputFluids("#tfg:clean_water 100")
-				.circuit(4)
-				.itemOutputs(`1x tfc:ore/normal_${ore}`)
+				.chancedOutput(`1x gtceu:${ore.replace(/native_/g, '')}_dust`, 6000, 0)
+				.chancedOutput(`1x gtceu:small_${ore.replace(/native_/g, '')}_dust`, 5000, 0)
 				.duration(40)
 				.EUt(GTValues.VHA[GTValues.LV])
 
 			event.recipes.gtceu.ore_washer(`tfc:ore_washer/distilled_water/deposit/${ore}/${stone}`)
 				.itemInputs(`1x tfc:deposit/${ore}/${stone}`)
 				.inputFluids(Fluid.of('gtceu:distilled_water', 50))
-				.circuit(4)
-				.itemOutputs(`1x tfc:ore/normal_${ore}`)
+				.chancedOutput(`1x gtceu:${ore.replace(/native_/g, '')}_dust`, 6000, 0)
+				.chancedOutput(`1x gtceu:small_${ore.replace(/native_/g, '')}_dust`, 5000, 0)
 				.duration(20)
 				.EUt(GTValues.VHA[GTValues.LV])
 
 			event.recipes.greate.splashing(
-				[`tfc:ore/normal_${ore}`],
-				[`1x tfc:deposit/${ore}/${stone}`, Fluid.of('minecraft:water', 100)]
-			)
-			.recipeTier(1)
-			.id(`tfg:splashing/${ore}/${stone}_deposit`)
+				[
+					Item.of(`1x gtceu:${ore.replace(/native_/g, '')}_dust`).withChance(0.6), 
+					Item.of(`1x gtceu:small_${ore.replace(/native_/g, '')}_dust`).withChance(0.5)
+				],
+				[
+					`1x tfc:deposit/${ore}/${stone}`,
+					Fluid.of('minecraft:water', 250)
+				])
+				.recipeTier(1)
+				.circuitNumber(1)
+				.id(`tfg:splashing/${ore}/${stone}_deposit`)
+
+			event.recipes.greate.splashing(
+				[
+					Item.of(`1x gtceu:${ore.replace(/native_/g, '')}_dust`).withChance(0.6), 
+					Item.of(`1x gtceu:small_${ore.replace(/native_/g, '')}_dust`).withChance(0.5)
+				],
+				[
+					`1x tfc:deposit/${ore}/${stone}`,
+					Fluid.of('gtceu:distilled_water', 25)
+				])
+				.recipeTier(1)
+				.circuitNumber(2)
+				.id(`tfg:splashing/${ore}/${stone}_deposit_distilled`)
+
+			event.recipes.vintageimprovements.vibrating(
+				[
+					Item.of(`1x gtceu:${ore.replace(/native_/g, '')}_dust`).withChance(0.6), 
+					Item.of(`1x gtceu:small_${ore.replace(/native_/g, '')}_dust`).withChance(0.5)
+				],
+				`tfc:deposit/${ore}/${stone}`)
+				.processingTime(100 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
+				.id(`tfg:vi/vibrating/deposits/${stone}_${ore}`)
 		})
 	})
 	//#endregion

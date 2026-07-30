@@ -1,0 +1,244 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "梁と崩落",
+  "category": "tfc:mechanics",
+  "icon": "tfc:wood/support/oak",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "TerraFirmaCraftでは、石は非常に不安定なブロックであり、$(thing)崩落$()が起こりえます。$(thing)石$()や$(thing)鉱石$()、$(thing)滑らかな石$()、$(thing)つらら石$()などの多くの石系ブロックは、崩落する可能性があります。$(br2)これを防ぐには、$(thing)梁$()を設置してください。",
+      "title": "梁"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "プレイヤーが$(thing)梁の支えがない石ブロック$()の近くにある$(thing)$()を掘ると、崩落が発生することがあります。一度崩落が始まると、もともと$(thing)梁の支えがある$()ブロックであっても連鎖的に崩れてしまう可能性があります。$(br2)洞窟の天井などで見られる硬い石ブロックは梁がなくとも$(thing)支えがある$()状態として扱われます。また、下に崩落しないブロックがある石ブロックも$(thing)支えがある$()状態になります。さらに、$(thing)梁$()を使えば一定範囲内をまとめて支えることができます。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l:the_world/ores_and_minerals)鉱石$()は、崩落すると品質（低純度、中純度、高純度）が一段階ずつ下がります。高純度鉱石は中純度に、中純度鉱石は低純度に、そして低純度鉱石は丸石へと劣化していきます。なお、品質がない鉱物系の原石は崩落した時点で即座に丸石になります。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "土、草、粘土、砂利、丸石、砂といったブロックも重力の影響で動きます。バニラの重力ブロックと違い、これらは斜面に沿って崩れ落ちるため、周囲に支えがないと1段以上積むことができません。$(l:mechanics/sluices)鉱石が混じった砂利$()も同様に重力の影響を受けますが、こちらは品質が劣化することはありません。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/wood/oak_support",
+      "title": "梁",
+      "text": "まず$(thing)梁$()は、$(thing)のこぎり$()と任意の$(thing)丸太$()から作成できます。$(br2)$(thing)梁$()をブロックの上に設置すると、最大3ブロック分の高さまで積まれた状態で配置されます。梁は、下にブロックがないと崩れてしまいます。"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "上の図の通り、$(thing)水平の梁$()は、5ブロック以内にある$(thing)垂直の梁$()同士をつなぐように設置できます。",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "   ",
+              "CRD",
+              "   "
+            ],
+            [
+              "   ",
+              "V W",
+              "   "
+            ],
+            [
+              "   ",
+              "V W",
+              "   "
+            ],
+            [
+              "GGG",
+              "G0G",
+              "GGG"
+            ],
+            [
+              "   ",
+              "   ",
+              "   "
+            ]
+          ],
+          "mapping": {
+            "R": "air",
+            "C": "air",
+            "D": "air",
+            "V": "air",
+            "W": "air",
+            "0": "tfc:rock/raw/andesite",
+            "G": "tfc:rock/raw/andesite"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "   ",
+              "CRD",
+              "   "
+            ],
+            [
+              "   ",
+              "V W",
+              "   "
+            ],
+            [
+              "   ",
+              "V W",
+              "   "
+            ],
+            [
+              "GGG",
+              "G0G",
+              "GGG"
+            ],
+            [
+              "   ",
+              "   ",
+              "   "
+            ]
+          ],
+          "mapping": {
+            "R": "air",
+            "C": "tfc:wood/vertical_support/oak",
+            "D": "air",
+            "V": "tfc:wood/vertical_support/oak",
+            "W": "air",
+            "0": "tfc:rock/raw/andesite",
+            "G": "tfc:rock/raw/andesite"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "   ",
+              "CRD",
+              "   "
+            ],
+            [
+              "   ",
+              "V W",
+              "   "
+            ],
+            [
+              "   ",
+              "V W",
+              "   "
+            ],
+            [
+              "GGG",
+              "G0G",
+              "GGG"
+            ],
+            [
+              "   ",
+              "   ",
+              "   "
+            ]
+          ],
+          "mapping": {
+            "R": "air",
+            "C": "tfc:wood/vertical_support/oak",
+            "D": "tfc:wood/vertical_support/oak",
+            "V": "tfc:wood/vertical_support/oak",
+            "W": "tfc:wood/vertical_support/oak",
+            "0": "tfc:rock/raw/andesite",
+            "G": "tfc:rock/raw/andesite"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "   ",
+              "CRD",
+              "   "
+            ],
+            [
+              "   ",
+              "V W",
+              "   "
+            ],
+            [
+              "   ",
+              "V W",
+              "   "
+            ],
+            [
+              "GGG",
+              "G0G",
+              "GGG"
+            ],
+            [
+              "   ",
+              "   ",
+              "   "
+            ]
+          ],
+          "mapping": {
+            "R": "tfc:wood/horizontal_support/oak[north=true,south=true]",
+            "C": "tfc:wood/vertical_support/oak[south=true]",
+            "D": "tfc:wood/vertical_support/oak[north=true]",
+            "V": "tfc:wood/vertical_support/oak",
+            "W": "tfc:wood/vertical_support/oak",
+            "0": "tfc:rock/raw/andesite",
+            "G": "tfc:rock/raw/andesite"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "   ",
+              "CRD",
+              "   "
+            ],
+            [
+              "   ",
+              "V W",
+              "   "
+            ],
+            [
+              "   ",
+              "V W",
+              "   "
+            ],
+            [
+              "GGG",
+              "G0G",
+              "GGG"
+            ],
+            [
+              "   ",
+              "   ",
+              "   "
+            ]
+          ],
+          "mapping": {
+            "R": "tfc:wood/horizontal_support/oak[north=true,south=true]",
+            "C": "tfc:wood/vertical_support/oak[south=true]",
+            "D": "tfc:wood/vertical_support/oak[north=true]",
+            "V": "tfc:wood/vertical_support/oak",
+            "W": "tfc:wood/vertical_support/oak",
+            "0": "tfc:rock/raw/andesite",
+            "G": "tfc:rock/raw/andesite"
+          }
+        }
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)水平の梁$()だけが周囲のブロックを$(thing)支えられている$()状態にします。水平の梁を中心にした$(bold)9 x 5 x 9$()の範囲内にあるブロックは、すべて$(thing)支えられている$()と判定されます。$(br2)また、支柱がなくても、下に別の石ブロックなどの固体ブロックがあれば自然に支えられます。ただし、$(thing)階段$()や$(thing)ハーフブロック$()といった$(thing)フルブロックではないブロック$()、および$(thing)滑らかな石$()は$(bold)支えとしては扱われない$()点に注意してください。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(bold)TFG$()では$(thing)木製の梁$()にだけでなく、さらに上位の支柱も追加されます。$(thing)石の梁$()や$(thing)コンクリートの梁$()、$(thing)鋼鉄製の梁$()などがあり、上位のものほど支えられる範囲も広がります。最上位の梁は、水平の梁を中心に$(bold)33 x 13 x 33$()という非常に広い範囲を支えてくれます！"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "最後に重要な点として、$(l:mechanics/chisel)彫刻$()も採掘と同じように崩落の原因になります。特に、崩落発生の危険性がある$(thing)石ブロック$()に対して行うと、簡単に崩れてしまう危険性があります。$(br2)$(br2)皆さん、安全第一で採掘を行いましょう！",
+      "title": "彫刻"
+    }
+  ],
+  "read_by_default": true,
+  "extra_recipe_mappings": {
+    "tag:tfc:support_beams": 0
+  }
+}

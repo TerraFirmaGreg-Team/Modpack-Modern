@@ -86,11 +86,11 @@ const registerSingleGroups = (event) => {
         '#tfchotornot:tong_parts',
         '#tfcscraping:scraping_knife_blades',
         '#forge:fish_hooks',
+        '#tfg:rope_ladders',
 
         // Tools (Minecraft)
         '#tfc:pickaxes',
         '#tfc:shovels',
-        '#tfc:axes',
         '#tfc:hoes',
 
         // Tools (Forge)
@@ -143,13 +143,13 @@ const registerSingleGroups = (event) => {
         '#tfcastikorcarts:animal_cart',
 
         // Blocks (Forge)
-        '#forge:fence_gates',
         '#forge:chests',
         '#forge:frames',
         '#forge:surface_rocks',
         '#forge:bud_indicators',
         '#forge:glass',
         '#forge:glass_panes',
+        '#forge:coral_blocks',
 
         // Blocks (GTCEU)
         '#gtceu:lamps',
@@ -164,13 +164,17 @@ const registerSingleGroups = (event) => {
         '#tfc:sluices',
         '#tfc:barrels',
         '#tfc:lecterns',
-        '#tfc:scribing_tables',
         '#tfc:sewing_tables',
         '#tfc:jar_shelves',
-        '#tfc:support_beams',
         '#tfc:minecarts',
         '#tfc:anvils',
         '#tfc:ore_deposits',
+        '#tfc:colored_glazed_terracotta',
+        '#tfc:corals',
+        '#tfc:colored_raw_alabaster',
+        '#tfc:colored_bricks_alabaster',
+        '#tfc:colored_polished_alabaster',
+        "#tfc:support_beams",
 
         // Stone-related
         '#tfc:rock/hardened',
@@ -179,6 +183,7 @@ const registerSingleGroups = (event) => {
         '#tfc:rock/smooth',
         '#tfc:rock/gravel',
         '#tfc:rock/aqueducts',
+        '#tfg:rock_spikes',
 
         // Blocks (Firmalife)
         '#firmalife:food_shelves',
@@ -210,7 +215,32 @@ const registerSingleGroups = (event) => {
         '#mcw_tfc_aio:gutters',
         '#mcw_tfc_aio:awnings',
         '#mcw_tfc_aio:furniture',
-        '#mcw_tfc_aio:stripped_furniture'
+        '#mcw_tfc_aio:stripped_furniture',
+
+        // Create
+        '#create:tracks',
+        '#create:valve_handles',
+        '#create:postboxes',
+        '#create:table_cloths',
+        '#create:toolboxes',
+        '#create:seats',
+        '#createdeco:placards',
+
+        // Steam n Rails
+        '#railways:conductor_caps',
+		'#tfg:locometal_blocks',
+        '#tfg:smokestacks',
+        '#tfg:train_connectors',
+		
+        // Misc
+        '#comforts:sleeping_bags',
+        '#comforts:hammocks',
+        '#minecraft:music_discs',
+        '#simplylight:any_lamp_on',
+        '#simplylight:any_lamp_off',
+        '#computercraft:disks',
+        '#wan_ancient_beasts:charger_armors',
+        '#tfg:crafting_stations'
     ]
 
     SINGLE_GROUPS_TO_REGISTER.forEach(x => {
@@ -271,6 +301,10 @@ const registerMultiGroups = (event) => {
             '#forge:normal_restrictive_pipes',
             '#forge:large_restrictive_pipes',
             '#forge:huge_restrictive_pipes'
+        ]},
+        { group_name: 'scribing_tables', tags: [
+            '#tfc:scribing_tables',
+            "#beneath:scribing_tables"
         ]}
     ]
 

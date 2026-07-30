@@ -1,0 +1,29 @@
+{
+	"name": "Unikalne bloki",
+	"category": "tfc:beneath",
+	"icon": "beneath:blackstone_aqueduct",
+	"pages": [
+		{
+			"type": "patchouli:crafting",
+			"anchor": "blackstone_aqueduct",
+			"recipe": "tfg:shaped/blackstone_aqueduct",
+			"text": "Aqueducts can also move lava and other fluids around, which may be useful when building the $(l:beneath/hellforge)Hellforge$()."
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "tfg:shapeless/hellbricks",
+			"text": "Hellbricks are a building block that is also used for the $(l:beneath/hellforge)Hellforge$()."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "beneath:ancient_altar",
+			"text": "The Pyroxenite Pedestal can be used to display items you want to show off!"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "tfg:shaped/blackstone_brick_to_bricks",
+			"text": "Migmatite and Pyroxenite bricks are made like regular bricks, and that includes needing to create the brick item."
+		}
+	],
+	"read_by_default": true
+}

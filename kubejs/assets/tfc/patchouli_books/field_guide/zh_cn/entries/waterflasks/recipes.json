@@ -1,0 +1,41 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "水壶配方",
+  "category": "tfc:waterflasks",
+  "icon": "waterflasks:leather_flask",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "水壶共有三个等级。$(br)皮革水壶可盛装 5 次饮用量，耐久度为 100 次使用。$(br)铁制水壶可盛装 20 次饮用量，耐久度为 400 次使用。$(br)红钢水壶可盛装 20 次饮用量，且永久耐用。$(br)皮革水壶和铁制水壶均可修复。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "waterflasks:crafting/leather_flask",
+      "recipe2": "tfg:shaped/iron_flask"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "waterflasks:crafting/repair_leather",
+      "recipe2": "tfg:shaped/repair_iron_bladder",
+      "title": "修复配方"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "waterflasks:crafting/repair_broken_leather",
+      "recipe2": "tfg:shaped/repair_broken_iron",
+      "title": "修复（完全损坏）",
+      "text": "水壶在完全损坏后也可进行修复。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfg:shaped/red_steel_flask_bladder"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 1,
+  "extra_recipe_mappings": {
+    "waterflasks:leather_flask": 1,
+    "waterflasks:iron_flask": 1,
+    "waterflasks:red_steel_flask": 4
+  }
+}

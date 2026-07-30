@@ -12,6 +12,8 @@ const TWO_PI = JavaMath.PI * 2;
 
 const OXYGENATED_TEMP = 15;
 
+global.NETHER_HEIGHT = 208;
+
 global.MARS_PLANET_SIZE = 10000;
 global.MARS_MIN_AVG_TEMP = -110;
 global.MARS_MAX_AVG_TEMP = -15;
@@ -148,22 +150,21 @@ function calcAverage(playerZ, scale, min, max) {
 TFCEvents.registerClimateModel(event => {
 
 	event.register('tfg:nether_climate', builder => {
-
 		builder.setCurrentTemperatureCalculation((level, pos, calendarTicks, daysInMonth) => {
-			return lerp(100, 25, pos.y / 128);
+			return clamp(80.0 * Math.pow(0.983, pos.y) + 20.0, 20, 100);
 		})
 
 		builder.setAverageTemperatureCalculation((level, pos) => {
-			return lerp(100, 25, pos.y / 128);
+			return clamp(80.0 * Math.pow(0.983, pos.y) + 20.0, 20, 100);
 		})
 
 		builder.setAverageRainfallCalculation((level, pos) => {
-			return lerp(-200, 200, pos.y / 128);
+			return lerp(-200, 500, pos.y / global.NETHER_HEIGHT);
 		})
 
 		builder.setAirFog((level, pos, calendarTicks) => 0)
-		builder.setWaterFog((level, pos, calendarTicks) => 0.02)
-		builder.setWindVector((level, block, calendarTicks) => builder.vector(0, 0))
+		builder.setWaterFog((level, pos, calendarTicks) => 1)
+		builder.setWindVector((level, block, calendarTicks) => builder.vector(0.05, 0.05))
 	})
 
 	event.register('tfg:orbit_climate', builder => {
@@ -176,7 +177,7 @@ TFCEvents.registerClimateModel(event => {
 		builder.setAverageTemperatureCalculation((level, pos) => -270)
 		builder.setAverageRainfallCalculation((level, pos) => 0)
 		builder.setAirFog((level, pos, calendarTicks) => 0)
-		builder.setWaterFog((level, pos, calendarTicks) => 0.02)
+		builder.setWaterFog((level, pos, calendarTicks) => 1)
 		builder.setWindVector((level, block, calendarTicks) => builder.vector(0, 0))
 	})
 
@@ -192,7 +193,7 @@ TFCEvents.registerClimateModel(event => {
 		builder.setAverageTemperatureCalculation((level, pos) => -5)
 		builder.setAverageRainfallCalculation((level, pos) => 0)
 		builder.setAirFog((level, pos, calendarTicks) => 0)
-		builder.setWaterFog((level, pos, calendarTicks) => 0.02)
+		builder.setWaterFog((level, pos, calendarTicks) => 1)
 		builder.setWindVector((level, block, calendarTicks) => builder.vector(0, 0))
 	})
 
@@ -220,7 +221,7 @@ TFCEvents.registerClimateModel(event => {
 			return calcAverage(pos.x, global.MARS_PLANET_SIZE, -25, 13)
 		})
 
-		builder.setWaterFog((level, pos, calendarTicks) => 0.02);
+		builder.setWaterFog((level, pos, calendarTicks) => 1);
 
 		const controller = global.getMarsClimateController();
 		builder.setAirFog(controller.createFogCallback(builder));
@@ -248,7 +249,7 @@ TFCEvents.registerClimateModel(event => {
 		})
 
 		builder.setAirFog((level, pos, calendarTicks) => 0)
-		builder.setWaterFog((level, pos, calendarTicks) => 0.6)
+		builder.setWaterFog((level, pos, calendarTicks) => 1)
 		// Make up something for the wind. Apparently Venus irl is not very windy on the surface
 		builder.setWindVector((level, block, calendarTicks) => {
 			const strength = Math.max(0, Math.sin(calendarTicks / 10000)) * 0.2;

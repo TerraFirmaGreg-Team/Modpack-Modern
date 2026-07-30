@@ -522,6 +522,50 @@
 							"function": "minecraft:set_count"
 						}
 					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "exposure:aged_photograph",
+					"weight": 5,
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{Texture:\"exposure:textures/exposure/village/village_1.png\"}"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "exposure:aged_photograph",
+					"weight": 5,
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{Texture:\"exposure:textures/exposure/village/village_2.png\"}"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "exposure:aged_photograph",
+					"weight": 5,
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{Texture:\"exposure:textures/exposure/village/village_3.png\"}"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "exposure:aged_photograph",
+					"weight": 5,
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{Texture:\"exposure:textures/exposure/village/village_4.png\"}"
+						}
+					]
 				}
 			],
 			"rolls": {

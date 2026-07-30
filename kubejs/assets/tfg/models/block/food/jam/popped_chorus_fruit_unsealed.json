@@ -1,0 +1,7 @@
+{
+	"parent": "tfc:block/jar",
+	"textures": {
+		"1": "tfg:block/food/jam/popped_chorus_fruit",
+		"2": "tfc:block/jar_no_lid"
+	}
+}

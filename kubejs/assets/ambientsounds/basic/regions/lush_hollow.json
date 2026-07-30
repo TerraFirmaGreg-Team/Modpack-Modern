@@ -1,0 +1,24 @@
+{
+	"name": "lush_hollow",
+	"regions": [
+		"cave"
+	],
+	"biomes": [
+		"lush_hollow"
+	],
+	"biome-type": "underground",
+	"min-height-relative": {
+		"max": -5,
+		"fade": 2
+	},
+	"sounds": [
+		{
+			"name": "frog",
+			"files": [
+				"ambientsounds:cave.cave-lush"
+			],
+			"category": "suspense",
+			"volume": 0.3
+		}
+	]
+}
