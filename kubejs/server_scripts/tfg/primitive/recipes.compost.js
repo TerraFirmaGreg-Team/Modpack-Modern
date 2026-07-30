@@ -102,7 +102,7 @@ function registerTFGCompostRecipes(event) {
 	], {
 		A: '#tfc:compost_greens_low',
 		B: '#forge:tools/mortars'
-	}).id('tfg:shaped/universal_compost_greens_from_low')
+	}).id('tfg:shaped/universal_compost_greens_from_low').noMirror()
 
 	// Mediums via crafting with mortar
 	event.shaped(Item.of('tfg:universal_compost_greens', 2), [
@@ -110,7 +110,7 @@ function registerTFGCompostRecipes(event) {
 	], {
 		A: '#tfc:compost_greens',
 		B: '#forge:tools/mortars'
-	}).id('tfg:shaped/universal_compost_greens_from_medium')
+	}).id('tfg:shaped/universal_compost_greens_from_medium').noMirror()
 
 	// Highs via crafting with mortar
 	event.shaped(Item.of('tfg:universal_compost_greens', 4), [
@@ -118,7 +118,7 @@ function registerTFGCompostRecipes(event) {
 	], {
 		A: '#tfc:compost_greens_high',
 		B: '#forge:tools/mortars'
-	}).id('tfg:shaped/universal_compost_greens_from_high')
+	}).id('tfg:shaped/universal_compost_greens_from_high').noMirror()
 
 	// Filters
 	const greens_low = Ingredient.of('#tfc:compost_greens_low')
@@ -171,7 +171,7 @@ function registerTFGCompostRecipes(event) {
 	], {
 		A: '#tfc:compost_browns_low',
 		B: '#forge:tools/mortars'
-	}).id('tfg:shaped/universal_compost_browns_from_low')
+	}).id('tfg:shaped/universal_compost_browns_from_low').noMirror()
 
 	// Mediums via crafting with mortar
 	event.shaped(Item.of('tfg:universal_compost_browns', 2), [
@@ -179,7 +179,7 @@ function registerTFGCompostRecipes(event) {
 	], {
 		A: '#tfc:compost_browns',
 		B: '#forge:tools/mortars'
-	}).id('tfg:shaped/universal_compost_browns_from_medium')
+	}).id('tfg:shaped/universal_compost_browns_from_medium').noMirror()
 
 	// Highs via crafting with mortar
 	event.shaped(Item.of('tfg:universal_compost_browns', 4), [
@@ -187,7 +187,7 @@ function registerTFGCompostRecipes(event) {
 	], {
 		A: '#tfc:compost_browns_high',
 		B: '#forge:tools/mortars'
-	}).id('tfg:shaped/universal_compost_browns_from_high')
+	}).id('tfg:shaped/universal_compost_browns_from_high').noMirror()
 
 	// Lows via forge hammer
 	event.recipes.gtceu.forge_hammer('tfg:universal_compost_browns_low')
