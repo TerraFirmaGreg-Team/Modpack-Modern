@@ -1391,7 +1391,7 @@
 		{
 			dependencies: ["0FCB88A64D3FBF0F"]
 			description: ["{quests.tfg_tips.tools_tips.cheese_rack.desc}"]
-			guide_page: "tfc:field_guide tfc:barrels"
+			guide_page: "tfc:field_guide tfc:mechanics/barrels"
 			id: "7B09F8757A210F1A"
 			subtitle: "{"quests.tfg_tips.tools_tips.cheese_rack.subtitle"}"
 			tasks: [{
