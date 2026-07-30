@@ -1393,7 +1393,7 @@
 			description: ["{quests.tfg_tips.tools_tips.cheese_rack.desc}"]
 			guide_page: "tfc:field_guide tfc:mechanics/barrels"
 			id: "7B09F8757A210F1A"
-			subtitle: "{"quests.tfg_tips.tools_tips.cheese_rack.subtitle"}"
+			subtitle: "{quests.tfg_tips.tools_tips.cheese_rack.subtitle}"
 			tasks: [{
 				id: "15FF9378F8DA33D8"
 				item: "tfc:barrel_rack"
