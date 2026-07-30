@@ -2919,6 +2919,19 @@
 			x: 8.5d
 			y: 20.5d
 		}
+		{
+			dependencies: ["3E8833E7CE591E6F"]
+			description: ["The barrel rack can be used to stack barrels on top of eachother, allowing you to be more space-efficient! Consult your field guide for more specific information on how to use them."]
+			id: "3F2AE6040E9E665F"
+			subtitle: "Now that's a nice rack!"
+			tasks: [{
+				id: "17C78AA6BBFD0513"
+				item: "tfc:barrel_rack"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 15.0d
+		}
 	]
 	subtitle: ["{quests.stone_age.subtitle}"]
 	title: "{quests.stone_age}"
