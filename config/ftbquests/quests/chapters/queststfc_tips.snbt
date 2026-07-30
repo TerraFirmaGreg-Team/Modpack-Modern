@@ -1388,6 +1388,19 @@
 			x: 4.0d
 			y: -4.0d
 		}
+		{
+			dependencies: ["0FCB88A64D3FBF0F"]
+			description: ["Barrel racks can be used to place cheesewheels on top of other cheesewheels, allowing for greater space-efficiency! Consult your field guide to learn specifics about how to use them."]
+			id: "7B09F8757A210F1A"
+			subtitle: "Wait, that's not a barrel..."
+			tasks: [{
+				id: "15FF9378F8DA33D8"
+				item: "tfc:barrel_rack"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -12.0d
+		}
 	]
 	subtitle: ["{quests.tfg_tips.subtitle}"]
 	title: "{quests.tfg_tips}"
