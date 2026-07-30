@@ -32,6 +32,11 @@
   "item.megacells.cell_component_256m": "MEGA magazyn rzemieślniczy 256M",
   "item.megacells.cell_component_4m": "MEGA magazyn rzemieślniczy 4M",
   "item.megacells.cell_component_64m": "MEGA magazyn rzemieślniczy 64M",
+  "item.megacells.chemical_storage_cell_16m": "MEGA magazyn chemiczny 16M",
+  "item.megacells.chemical_storage_cell_1m": "MEGA magazyn chemiczny 1M",
+  "item.megacells.chemical_storage_cell_256m": "MEGA magazyn chemiczny 256M",
+  "item.megacells.chemical_storage_cell_4m": "MEGA magazyn chemiczny 4M",
+  "item.megacells.chemical_storage_cell_64m": "MEGA magazyn chemiczny 64M",
   "item.megacells.compression_card": "Karta kompresji",
   "item.megacells.decompression_module": "Moduł dekompresji MEGA",
   "item.megacells.decompression_pattern": "Wzór dekompresji",
@@ -80,7 +85,9 @@
   "item.megacells.sky_steel_ingot": "Sztabka podniebnej stali",
   "item.megacells.source_storage_cell_16m": "MEGA magazyn źródła 16M",
   "item.megacells.source_storage_cell_1m": "MEGA magazyn źródła 1M",
+  "item.megacells.source_storage_cell_256m": "MEGA magazyn źródła 256M",
   "item.megacells.source_storage_cell_4m": "MEGA magazyn źródła 4M",
   "item.megacells.source_storage_cell_64m": "MEGA magazyn źródła 64M",
+  "text.autoconfig.megacells.option.CompressionChainLimit": "Limit długości łańcucha masowej kompresji",
   "text.autoconfig.megacells.title": "MEGA Cells"
 }
