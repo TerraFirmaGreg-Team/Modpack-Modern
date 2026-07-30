@@ -1128,7 +1128,7 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["49896161B31DB7B4"]
+			dependencies: ["12CB3B9ADC586521"]
 			description: [
 				"{quests.steam_age.potin.desc.1}"
 				"{@pagebreak}"
@@ -1153,8 +1153,8 @@
 				type: "item"
 			}]
 			title: "{quests.steam_age.potin.title}"
-			x: -2.5d
-			y: 14.0d
+			x: -16.0d
+			y: 13.5d
 		}
 		{
 			dependencies: ["6F1BC99BE641B671"]
@@ -1962,6 +1962,7 @@
 			y: 9.5d
 		}
 		{
+			dependencies: ["12CB3B9ADC586521"]
 			description: [
 				"{quests.steam_age.cobalt_brass.desc.1}"
 				"{@pagebreak}"
@@ -1984,7 +1985,7 @@
 				type: "item"
 			}]
 			title: "{quests.steam_age.cobalt_brass.title}"
-			x: -15.5d
+			x: -15.0d
 			y: 13.5d
 		}
 		{
