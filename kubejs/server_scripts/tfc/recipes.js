@@ -156,12 +156,24 @@ const registerTFCRecipes = (event) => {
 		.EUt(16)
 
 	// LimeWater + Sand -> Mortar
-	event.recipes.gtceu.mixer('mortar')
+	event.recipes.gtceu.mixer('tfg:mortar_from_sand')
 		.itemInputs('#forge:sand')
 		.inputFluids(Fluid.of('tfc:limewater', 100))
 		.itemOutputs('16x tfc:mortar')
-		.duration(800)
+		.duration(600)
 		.EUt(8)
+
+	event.recipes.tfc.barrel_sealed(8000)
+		.inputs('#tfg:stone_dusts', TFC.fluidStackIngredient('tfc:limewater', 25))
+		.outputItem('tfc:mortar')
+		.id('tfg:barrel/mortar_from_dusts');
+
+	event.recipes.gtceu.mixer('tfg:mortar_from_dusts')
+		.itemInputs('#tfg:stone_dusts')
+		.inputFluids(Fluid.of('tfc:limewater', 25))
+		.itemOutputs('tfc:mortar')
+		.duration(30)
+		.EUt(8);
 
 	// Jar lids
 
