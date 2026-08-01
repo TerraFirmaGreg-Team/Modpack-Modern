@@ -1,0 +1,464 @@
+# Config options for jellie stats.
+entities:
+  biotiteJellie:
+    # Maximum familiarity that a wild jellie can reach.
+    # Default: 1
+    familiarityCap: 1.0
+
+    # How many days it takes a jellie to reach adulthood.
+    # Default: 16
+    adulthoodDays: 16
+
+    # How many uses a jellie has before becoming old.
+    # Default: 120
+    uses: 120
+
+    # Does jellie eat rotten food.
+    # Default: false
+    eatsRottenFood: false
+
+    # How long it takes for a jellie to produce products.
+    # Default: 23500
+    produceTicks: 23501
+
+    # Minimum familiarity needed for jellie to produce products.
+    # Default: 0.15
+    produceFamiliarity: 0.15
+
+    # How many children a jellie can have at once.
+    # Default: 1
+    childCount: 1
+
+    # How long it takes for a jellie to be born.
+    # Default: 32
+    gestationDays: 32
+
+  certusJellie:
+    # Maximum familiarity that a wild jellie can reach.
+    # Default: 1
+    familiarityCap: 1.0
+
+    # How many days it takes a jellie to reach adulthood.
+    # Default: 16
+    adulthoodDays: 16
+
+    # How many uses a jellie has before becoming old.
+    # Default: 120
+    uses: 120
+
+    # Does jellie eat rotten food.
+    # Default: false
+    eatsRottenFood: false
+
+    # How long it takes for a jellie to produce products.
+    # Default: 23500
+    produceTicks: 23500
+
+    # Minimum familiarity needed for jellie to produce products.
+    # Default: 0.15
+    produceFamiliarity: 0.15
+
+    # How many children a jellie can have at once.
+    # Default: 1
+    childCount: 1
+
+    # How long it takes for a jellie to be born.
+    # Default: 32
+    gestationDays: 32
+
+  glowberryJellie:
+    # Maximum familiarity that a wild jellie can reach.
+    # Default: 1
+    familiarityCap: 1.0
+
+    # How many days it takes a jellie to reach adulthood.
+    # Default: 16
+    adulthoodDays: 16
+
+    # How many uses a jellie has before becoming old.
+    # Default: 120
+    uses: 120
+
+    # Does jellie eat rotten food.
+    # Default: false
+    eatsRottenFood: false
+
+    # How long it takes for a jellie to produce products.
+    # Default: 23500
+    produceTicks: 23500
+
+    # Minimum familiarity needed for jellie to produce products.
+    # Default: 0.15
+    produceFamiliarity: 0.15
+
+    # How many children a jellie can have at once.
+    # Default: 1
+    childCount: 1
+
+    # How long it takes for a jellie to be born.
+    # Default: 32
+    gestationDays: 32
+
+  herbalJellie:
+    # Maximum familiarity that a wild jellie can reach.
+    # Default: 1
+    familiarityCap: 1.0
+
+    # How many days it takes a jellie to reach adulthood.
+    # Default: 16
+    adulthoodDays: 16
+
+    # How many uses a jellie has before becoming old.
+    # Default: 120
+    uses: 120
+
+    # Does jellie eat rotten food.
+    # Default: false
+    eatsRottenFood: false
+
+    # How long it takes for a jellie to produce products.
+    # Default: 23500
+    produceTicks: 23500
+
+    # Minimum familiarity needed for jellie to produce products.
+    # Default: 0.15
+    produceFamiliarity: 0.15
+
+    # How many children a jellie can have at once.
+    # Default: 1
+    childCount: 1
+
+    # How long it takes for a jellie to be born.
+    # Default: 32
+    gestationDays: 32
+
+  iceJellie:
+    # Maximum familiarity that a wild jellie can reach.
+    # Default: 1
+    familiarityCap: 1.0
+
+    # How many days it takes a jellie to reach adulthood.
+    # Default: 16
+    adulthoodDays: 16
+
+    # How many uses a jellie has before becoming old.
+    # Default: 120
+    uses: 120
+
+    # Does jellie eat rotten food.
+    # Default: false
+    eatsRottenFood: false
+
+    # How long it takes for a jellie to produce products.
+    # Default: 23500
+    produceTicks: 23500
+
+    # Minimum familiarity needed for jellie to produce products.
+    # Default: 0.15
+    produceFamiliarity: 0.15
+
+    # How many children a jellie can have at once.
+    # Default: 1
+    childCount: 1
+
+    # How long it takes for a jellie to be born.
+    # Default: 32
+    gestationDays: 32
+
+  latexJellie:
+    # Maximum familiarity that a wild jellie can reach.
+    # Default: 1
+    familiarityCap: 1.0
+
+    # How many days it takes a jellie to reach adulthood.
+    # Default: 16
+    adulthoodDays: 16
+
+    # How many uses a jellie has before becoming old.
+    # Default: 120
+    uses: 120
+
+    # Does jellie eat rotten food.
+    # Default: false
+    eatsRottenFood: false
+
+    # How long it takes for a jellie to produce products.
+    # Default: 23500
+    produceTicks: 23500
+
+    # Minimum familiarity needed for jellie to produce products.
+    # Default: 0.15
+    produceFamiliarity: 0.15
+
+    # How many children a jellie can have at once.
+    # Default: 1
+    childCount: 1
+
+    # How long it takes for a jellie to be born.
+    # Default: 32
+    gestationDays: 32
+
+  lavaJellie:
+    # Maximum familiarity that a wild jellie can reach.
+    # Default: 1
+    familiarityCap: 1.0
+
+    # How many days it takes a jellie to reach adulthood.
+    # Default: 16
+    adulthoodDays: 16
+
+    # How many uses a jellie has before becoming old.
+    # Default: 120
+    uses: 120
+
+    # Does jellie eat rotten food.
+    # Default: false
+    eatsRottenFood: false
+
+    # How long it takes for a jellie to produce products.
+    # Default: 23500
+    produceTicks: 23500
+
+    # Minimum familiarity needed for jellie to produce products.
+    # Default: 0.15
+    produceFamiliarity: 0.15
+
+    # How many children a jellie can have at once.
+    # Default: 1
+    childCount: 1
+
+    # How long it takes for a jellie to be born.
+    # Default: 32
+    gestationDays: 32
+
+  penteticJellie:
+    # Maximum familiarity that a wild jellie can reach.
+    # Default: 1
+    familiarityCap: 1.0
+
+    # How many days it takes a jellie to reach adulthood.
+    # Default: 16
+    adulthoodDays: 16
+
+    # How many uses a jellie has before becoming old.
+    # Default: 120
+    uses: 120
+
+    # Does jellie eat rotten food.
+    # Default: false
+    eatsRottenFood: false
+
+    # How long it takes for a jellie to produce products.
+    # Default: 23500
+    produceTicks: 23500
+
+    # Minimum familiarity needed for jellie to produce products.
+    # Default: 0.15
+    produceFamiliarity: 0.15
+
+    # How many children a jellie can have at once.
+    # Default: 1
+    childCount: 1
+
+    # How long it takes for a jellie to be born.
+    # Default: 32
+    gestationDays: 32
+
+  phosphorumJellie:
+    # Maximum familiarity that a wild jellie can reach.
+    # Default: 1
+    familiarityCap: 1.0
+
+    # How many days it takes a jellie to reach adulthood.
+    # Default: 16
+    adulthoodDays: 16
+
+    # How many uses a jellie has before becoming old.
+    # Default: 120
+    uses: 120
+
+    # Does jellie eat rotten food.
+    # Default: false
+    eatsRottenFood: false
+
+    # How long it takes for a jellie to produce products.
+    # Default: 23500
+    produceTicks: 23500
+
+    # Minimum familiarity needed for jellie to produce products.
+    # Default: 0.15
+    produceFamiliarity: 0.15
+
+    # How many children a jellie can have at once.
+    # Default: 1
+    childCount: 1
+
+    # How long it takes for a jellie to be born.
+    # Default: 32
+    gestationDays: 32
+
+  plantJellie:
+    # Maximum familiarity that a wild jellie can reach.
+    # Default: 1
+    familiarityCap: 1.0
+
+    # How many days it takes a jellie to reach adulthood.
+    # Default: 16
+    adulthoodDays: 16
+
+    # How many uses a jellie has before becoming old.
+    # Default: 120
+    uses: 120
+
+    # Does jellie eat rotten food.
+    # Default: false
+    eatsRottenFood: false
+
+    # How long it takes for a jellie to produce products.
+    # Default: 23500
+    produceTicks: 23500
+
+    # Minimum familiarity needed for jellie to produce products.
+    # Default: 0.15
+    produceFamiliarity: 0.15
+
+    # How many children a jellie can have at once.
+    # Default: 1
+    childCount: 1
+
+    # How long it takes for a jellie to be born.
+    # Default: 32
+    gestationDays: 32
+
+  rockJellie:
+    # Maximum familiarity that a wild jellie can reach.
+    # Default: 1
+    familiarityCap: 1.0
+
+    # How many days it takes a jellie to reach adulthood.
+    # Default: 16
+    adulthoodDays: 16
+
+    # How many uses a jellie has before becoming old.
+    # Default: 120
+    uses: 120
+
+    # Does jellie eat rotten food.
+    # Default: false
+    eatsRottenFood: false
+
+    # How long it takes for a jellie to produce products.
+    # Default: 23500
+    produceTicks: 23500
+
+    # Minimum familiarity needed for jellie to produce products.
+    # Default: 0.15
+    produceFamiliarity: 0.15
+
+    # How many children a jellie can have at once.
+    # Default: 1
+    childCount: 1
+
+    # How long it takes for a jellie to be born.
+    # Default: 32
+    gestationDays: 32
+
+  springJellie:
+    # Maximum familiarity that a wild jellie can reach.
+    # Default: 1
+    familiarityCap: 1.0
+
+    # How many days it takes a jellie to reach adulthood.
+    # Default: 16
+    adulthoodDays: 16
+
+    # How many uses a jellie has before becoming old.
+    # Default: 120
+    uses: 120
+
+    # Does jellie eat rotten food.
+    # Default: false
+    eatsRottenFood: false
+
+    # How long it takes for a jellie to produce products.
+    # Default: 23500
+    produceTicks: 23500
+
+    # Minimum familiarity needed for jellie to produce products.
+    # Default: 0.15
+    produceFamiliarity: 0.15
+
+    # How many children a jellie can have at once.
+    # Default: 1
+    childCount: 1
+
+    # How long it takes for a jellie to be born.
+    # Default: 32
+    gestationDays: 32
+
+  pyritieJellie:
+    # Maximum familiarity that a wild jellie can reach.
+    # Default: 1
+    familiarityCap: 1.0
+
+    # How many days it takes a jellie to reach adulthood.
+    # Default: 16
+    adulthoodDays: 16
+
+    # How many uses a jellie has before becoming old.
+    # Default: 120
+    uses: 120
+
+    # Does jellie eat rotten food.
+    # Default: false
+    eatsRottenFood: false
+
+    # How long it takes for a jellie to produce products.
+    # Default: 23500
+    produceTicks: 23500
+
+    # Minimum familiarity needed for jellie to produce products.
+    # Default: 0.15
+    produceFamiliarity: 0.15
+
+    # How many children a jellie can have at once.
+    # Default: 1
+    childCount: 1
+
+    # How long it takes for a jellie to be born.
+    # Default: 32
+    gestationDays: 32
+
+  redeixJellie:
+    # Maximum familiarity that a wild jellie can reach.
+    # Default: 1
+    familiarityCap: 1.0
+
+    # How many days it takes a jellie to reach adulthood.
+    # Default: 16
+    adulthoodDays: 16
+
+    # How many uses a jellie has before becoming old.
+    # Default: 120
+    uses: 120
+
+    # Does jellie eat rotten food.
+    # Default: false
+    eatsRottenFood: false
+
+    # How long it takes for a jellie to produce products.
+    # Default: 23500
+    produceTicks: 23500
+
+    # Minimum familiarity needed for jellie to produce products.
+    # Default: 0.15
+    produceFamiliarity: 0.15
+
+    # How many children a jellie can have at once.
+    # Default: 1
+    childCount: 1
+
+    # How long it takes for a jellie to be born.
+    # Default: 32
+    gestationDays: 32
+
