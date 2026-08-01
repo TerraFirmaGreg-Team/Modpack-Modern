@@ -110,7 +110,14 @@
 		}
 	},
 	"spawners": {
-		"ambient": [],
+		"ambient": [
+			{
+				"type": "jellies:pentetic",
+				"maxCount": 2,
+				"minCount": 1,
+				"weight": 100
+			}
+		],
 		"axolotls": [],
 		"creature": [
 			{
