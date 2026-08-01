@@ -35,13 +35,6 @@
 			shape: "gear"
 			size: 4.0d
 			subtitle: "{quests.tfg.welcome.subtitle}"
-			tasks: [{
-				dimension: "minecraft:overworld"
-				icon: "gtceu:overworld_marker"
-				id: "1D8C7D630DFA8A0D"
-				title: "{quests.stone_age.temperature.task}"
-				type: "dimension"
-			}]
 			title: "{quests.tfg.welcome.title}"
 			x: 0.0d
 			y: 0.0d

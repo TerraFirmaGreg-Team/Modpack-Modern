@@ -352,6 +352,9 @@ const registerFirmaLifeRecipes = (event) => {
 		}
 	});
 
+	// Sweeper
+	event.remove('firmalife:crafting/sweeper');
+
 	event.recipes.gtceu.shaped('2x firmalife:sweeper', [
 		'ABD',
 		'CB '
@@ -360,7 +363,17 @@ const registerFirmaLifeRecipes = (event) => {
 		B: '#forge:rods/wrought_iron',
 		C: '#forge:small_gears/red_alloy',
 		D: '#forge:tools/wrenches'
-	}).addMaterialInfo().id('firmalife:crafting/sweeper')
+	}).addMaterialInfo().id('tfg:crafting/sweeper');
+
+	event.recipes.gtceu.assembler('tfg:sweeper')
+		.itemInputs('#forge:saw_heads/wrought_iron', '2x #forge:rods/wrought_iron', '#forge:small_gears/red_alloy')
+		.itemOutputs('2x firmalife:sweeper')
+		.circuit(3)
+		.duration(30)
+		.EUt(GTValues.VA[GTValues.ULV]);
+
+	// Picker
+	event.remove('firmalife:crafting/picker');
 
 	event.recipes.gtceu.shaped('4x firmalife:picker', [
 		'ABD',
@@ -372,7 +385,38 @@ const registerFirmaLifeRecipes = (event) => {
 		C: '#forge:rods/wrought_iron',
 		D: '#forge:tools/wrenches',
 		E: '#forge:hoe_heads/wrought_iron'
-	}).addMaterialInfo().id('firmalife:crafting/picker')
+	}).addMaterialInfo().id('tfg:crafting/picker');
+
+	event.recipes.gtceu.assembler('tfg:picker')
+		.itemInputs('2x #forge:hoe_heads/wrought_iron', '#forge:plates/wrought_iron', '#forge:small_gears/red_alloy', '2x #forge:rods/wrought_iron')
+		.itemOutputs('4x firmalife:picker')
+		.circuit(3)
+		.duration(30)
+		.EUt(GTValues.VA[GTValues.ULV]);
+
+	// Compost Tumbler
+	event.remove('firmalife:crafting/compost_tumbler');
+
+	event.recipes.gtceu.shaped('firmalife:compost_tumbler', [
+		'BBE',
+		'CAD',
+		'BB '
+	], {
+		A: 'tfc:composter',
+		B: 'createdeco:andesite_bars',
+		C: '#forge:rings',
+		D: '#forge:shafts',
+		E: '#forge:tools/wrenches'
+	}).id('tfg:crafting/compost_tumbler');
+
+	TFGHelpers.registerMaterialInfo('firmalife:compost_tumbler', [GTMaterials.TinAlloy, 6/9, GTMaterials.Wood, 1]);
+
+	event.recipes.gtceu.assembler('tfg:compost_tumbler')
+		.itemInputs('tfc:composter', '4x createdeco:andesite_bars', '#forge:rings', '#forge:shafts')
+		.itemOutputs('firmalife:compost_tumbler')
+		.circuit(3)
+		.duration(30)
+		.EUt(GTValues.VA[GTValues.ULV]);
 
 	//#endregion
 
@@ -728,13 +772,6 @@ const registerFirmaLifeRecipes = (event) => {
 			Fluid.of('afc:birch_syrup', 1000))
 		.outputItem('createaddition:honey_cake')
 		.id('tfg:mixing_bowl/birch_honey_cake')
-
-	event.remove({ id: 'firmalife:mixing_bowl/chocolate_ice_cream' })
-	event.recipes.firmalife.mixing_bowl()
-		.ingredients([TFC.ingredient.notRotten('firmalife:food/vanilla_ice_cream')],
-			Fluid.of('tfcchannelcasting:milk_chocolate', 100))
-		.outputItem(TFC.isp.of('firmalife:food/chocolate_ice_cream').copyFood())
-		.id('tfg:mixing_bowl/chocolate_ice_cream')
 
 	// Chocolate Melting
 	const setChocolateHeating = (variant) => {

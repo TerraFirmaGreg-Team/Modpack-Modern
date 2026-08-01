@@ -119,7 +119,7 @@ function registerTFGOverworldBlockTags(event) {
 	event.add('firmalife:butterfly_grass_mutants', 'tfc:plant/ryegrass')
 	event.add('firmalife:butterfly_grass_mutants', 'tfc:plant/scutch_grass')
 	event.add('firmalife:butterfly_grass_mutants', 'tfc:plant/switchgrass')
-	event.add('firmalife:butterfly_grass_mutants', 'tfc:plant/fall_fescue_grass')
+	event.add('firmalife:butterfly_grass_mutants', 'tfc:plant/tall_fescue_grass')
 	event.add('firmalife:butterfly_grass_mutants', 'tfc:plant/timothy_grass')
 	event.add('firmalife:butterfly_grass_mutants', 'tfg:plant/red_oat_grass')
 

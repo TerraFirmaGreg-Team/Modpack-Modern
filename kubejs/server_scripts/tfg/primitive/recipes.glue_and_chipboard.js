@@ -55,10 +55,10 @@ function registerTFGChipboardRecipes(event) {
 		'minecraft:block/slime_block', 'tfc:block/glue_block', 'minecraft:entity.slime.squish')
 		.id('tfg:stomping/slime_ball')
 
-	event.smelting('tfc:glue', 'minecraft:magma_cream')
-		.id('tfg:smelting/magma_cream_to_glue')
+	event.smelting('minecraft:slime_ball', 'minecraft:magma_cream')
+		.id('tfg:smelting/magma_cream_to_slime')
 		
-	event.recipes.firmalife.stomping('tfc:glue', 'minecraft:magma_cream', 
+	event.recipes.firmalife.stomping('minecraft:slime_ball', 'minecraft:magma_cream', 
 		'minecraft:block/slime_block', 'tfc:block/glue_block', 'minecraft:entity.slime.squish')
 		.id('tfg:stomping/magma_cream')
 
