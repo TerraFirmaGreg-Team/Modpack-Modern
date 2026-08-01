@@ -497,6 +497,12 @@ const registerRnrRecipes = (event) => {
 			result: `rnr:tamped_${soil}`,
 			mode: `smooth`
 		})
+		event.custom({
+			type: `rnr:mattock`,
+			ingredient: `tfg:grass_path/${soil}`,
+			result: `rnr:tamped_${soil}`,
+			mode: `smooth`
+		})
 	})
 
 	// Asphalt road shaping: same pattern as RNR concrete (`rnr/recipes/mattock/slab/concrete_road_slab.json` etc.).
