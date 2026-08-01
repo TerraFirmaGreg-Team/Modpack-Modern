@@ -10,11 +10,9 @@ function registerJelliesItemTags(event) {
 function registerJelliesEntityTags(event) {
 	event.add('tfc:vanilla_monsters', 'jellies:rock')
 
-	allJellies.forEach(jellie => {
-		event.add('ad_astra:lives_without_oxygen', '#jellies:jellie')
-		event.add('ad_astra:can_survive_extreme_cold', '#jellies:jellie')
-		event.add('ad_astra:can_survive_extreme_heat', '#jellies:jellie')
-		event.add('ad_astra:can_survive_in_space', '#jellies:jellie')
-		event.add('ad_astra:can_survive_in_acid_rain', '#jellies:jellie')
-	})
+	event.add('ad_astra:lives_without_oxygen', '#jellies:jellie')
+	event.add('ad_astra:can_survive_extreme_cold', '#jellies:jellie')
+	event.add('ad_astra:can_survive_extreme_heat', '#jellies:jellie')
+	event.add('ad_astra:can_survive_in_space', '#jellies:jellie')
+	event.add('ad_astra:can_survive_in_acid_rain', '#jellies:jellie')
 }
