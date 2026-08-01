@@ -19,7 +19,7 @@ entities:
 
     # How long it takes for a jellie to produce products.
     # Default: 23500
-    produceTicks: 23501
+    produceTicks: 23500
 
     # Minimum familiarity needed for jellie to produce products.
     # Default: 0.15
