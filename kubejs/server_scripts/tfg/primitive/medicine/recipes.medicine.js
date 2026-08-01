@@ -614,6 +614,18 @@ function registerTFGMedicineRecipes(event) {
 		.itemInputs(`#tfg:${type[1]}_ingredients`, `#tfg:${type[2]}_ingredients`, 'minecraft:bone_meal')
 		.duration(200)
 		.EUt(GTValues.VA[GTValues.LV])
+
+		event.recipes.firmalife.mixing_bowl()
+		.itemIngredients([`#tfg:${type[1]}_ingredients`, `#tfg:${type[2]}_ingredients`, 'jellies:jellie/slime_ball/herbal'])
+		.outputItem(`2x tfg:${type[0]}_powder`)
+		.id(`tfg:mixing_bowl/${type[0]}_powder_with_herbal_slime_ball`)
+
+		event.recipes.gtceu.mixer(`tfg:gtceu/mixer/${type[0]}_powder_with_herbal_slime_ball`)
+		.circuit(4)
+		.itemOutputs(`2x tfg:${type[0]}_powder`)
+		.itemInputs(`#tfg:${type[1]}_ingredients`, `#tfg:${type[2]}_ingredients`, 'jellies:jellie/slime_ball/herbal')
+		.duration(200)
+		.EUt(GTValues.VA[GTValues.LV])
 	})
 
 	//#endregion
