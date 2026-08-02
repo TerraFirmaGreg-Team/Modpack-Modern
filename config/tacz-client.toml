@@ -50,6 +50,8 @@
 	EnableTaczIdInTooltip = true
 	#Enable translucent while render block entity or not. Enable this option will result in ADDITIONAL PERFORMANCE OVERHEAD.
 	EnableBlockEntityTranslucent = false
+	#Whether or not to automatically select the gun smith table's held item filter when opening it with a gun, attachment or ammo in main hand
+	AutoSelectGunSmithTableFilter = true
 
 [Zoom]
 	#Screen distance coefficient for zoom, using MDV standard, default is MDV133
@@ -58,4 +60,23 @@
 	#Zoom sensitivity is multiplied by this factor
 	#Range: 0.0 ~ 2.0
 	ZoomSensitivityBaseMultiplier = 1.0
+
+[resource]
+	#Build heavy TACZ client assets such as models and animation state machines on demand.
+	#Inventory items are pre-warmed in the background when possible.
+	#If a render needs an asset before warmup finishes, the render thread will wait for it once.
+	EnableLazyClientAssetLoad = true
+
+[sound]
+	#Max active hit marker sounds for the same entity and sound id. 0 disables this limit.
+	#Range: 0 ~ 128
+	HitSoundConcurrencyLimit = 1
+	#Max active normal gun sounds for the same entity and sound id. 0 disables this limit.
+	#Range: 0 ~ 128
+	DefaultSoundConcurrencyLimit = 2
+	#Max active high-frequency gun sounds, such as shooting and animation keyframe sounds, for the same entity and sound id. 0 disables this limit.
+	#Range: 0 ~ 128
+	HighFrequencySoundConcurrencyLimit = 4
+	#Use a non-relative entity-tracking world sound source for first-person animation keyframe sounds. This can improve compatibility with physical sound mods, but may introduce slight stereo drift while moving.
+	FirstPersonAnimationSoundTracking = false
 

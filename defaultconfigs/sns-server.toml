@@ -202,7 +202,7 @@
 	["Boot config"."Red Steel Toe Boots"]
 		#The movement speed bonus these boots provide
 		#Range: 0.0 ~ 1024.0
-		movementSpeed = 0.20
+		movementSpeed = 0.2
 		#The step height bonus these boots provide
 		#Range: 0.0 ~ 512.0
 		stepHeight = 0.5

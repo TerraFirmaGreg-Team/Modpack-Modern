@@ -26,6 +26,9 @@ disableItemRender = false
 	#Power usage multiplier for wireless connectors
 	#Range: 0.0 ~ 100.0
 	wireless_connector_power_multiplier = 1.0
+	#The max queue size for the ME Wireless Advanced Setup Kit
+	#Range: 10 ~ 100
+	max_queue_size = 10
 
 [misc]
 	#Enable debug logging.

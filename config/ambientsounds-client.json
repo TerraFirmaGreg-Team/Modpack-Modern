@@ -10,6 +10,8 @@
     "abyssalcraft": 1,
     "ad_astra_mars": 1,
     "ad_astra_mercury": 1,
+    "ad_astra_moon": 1,
+    "ad_astra_orbit": 1,
     "ad_astra_venus": 1,
     "betweenlands": 1,
     "cave": 1,
@@ -31,9 +33,13 @@
       "overall": 1,
       "wind.light-wind": 1
     },
-    "ad_astra_mercury_unknown": {
+    "ad_astra_mercury_suspense": {
       "overall": 1,
-      "suspense.suspense": 1
+      "nether": 1
+    },
+    "ad_astra_orbit_suspense": {
+      "overall": 1,
+      "nether": 1
     },
     "end_unknown": {
       "overall": 1,
@@ -46,6 +52,10 @@
     "nether_suspense": {
       "overall": 1,
       "nether": 1
+    },
+    "nether_nether_caves": {
+      "overall": 1,
+      "nether-cave": 1
     },
     "twilightforest_unknown": {
       "overall": 1,
@@ -137,6 +147,14 @@
       "ocean": 1,
       "frog": 1
     },
+    "lower_nether": {
+      "overall": 1,
+      "suspense-nether": 1
+    },
+    "lush_hollow": {
+      "overall": 1,
+      "frog": 1
+    },
     "martian_lake": {
       "overall": 1,
       "ocean": 1
@@ -144,6 +162,10 @@
     "mesa": {
       "overall": 1,
       "wind-mesa": 1
+    },
+    "muggy_bog": {
+      "overall": 1,
+      "frog": 1
     },
     "mushroom_fields": {
       "overall": 1,
@@ -247,6 +269,10 @@
     "warden": {
       "overall": 1,
       "warden": 1
+    },
+    "webbed_lair": {
+      "overall": 1,
+      "pale-garden-ambience": 1
     }
   },
   "categories": {
@@ -265,6 +291,7 @@
       }
     },
     "cave": 1,
+    "suspense": 1,
     "weather": 1,
     "wind": 0.65
   },

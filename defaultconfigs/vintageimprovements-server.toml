@@ -34,7 +34,7 @@
 		#Vibrating Table settings
 		[recipes.recipes.vibratingTable]
 			#.
-			#Allows unpacking storage blocks crafts on vibrating table.
+			#Allows reversible 4-to-1 and 9-to-1 packing crafts to be unpacked on the vibrating table.
 			allowUnpackingOnVibratingTable = false
 			#.
 			#Allows vibrating leaves on vibrating table to get matching drops.

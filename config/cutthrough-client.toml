@@ -1,0 +1,3 @@
+#Only allow targeting alive entities, as opposed to entities that have already died and only remain to render a death animation. Greatly helps in combat as dead entities will no longer absorb hits.
+target_alive_only = true
+
