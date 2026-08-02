@@ -36,8 +36,8 @@ const registerTFCHeats = (event) => {
 const registerTFCFuels = (event) => {
 	event.fuel('tfg:dried_peat_brick', 627, 750, 0.7)
 
-	event.fuel('patchouli:guide_book', 100, 199, 0.7)
-	event.fuel('ftbquests:book', 100, 199, 0.7)
+	event.fuel('patchouli:guide_book', 50, 199, 0.7)
+	event.fuel('ftbquests:book', 50, 199, 0.7)
 	event.fuel('tfc:wool', 150, 199, 0.7)
 	event.fuel('primitive_creatures:grh', 150, 199, 0.7)
 	event.fuel('tfc:straw', 150, 199, 0.7)
