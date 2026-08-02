@@ -171,9 +171,14 @@ function registerTFGChipboardRecipes(event) {
 
 	event.recipes.gtceu.assembler('tfg:resin_circuit_assembler')
 		.itemInputs('gtceu:wood_plate')
-		.inputFluids(Fluid.of('gtceu:glue', 100))
-		.circuit(1)
+		.inputFluids(Fluid.of('gtceu:glue', 200))
 		.itemOutputs('gtceu:resin_circuit_board')
 		.duration(20 * 10)
+		.circuit(3)
 		.EUt(GTValues.VA[GTValues.ULV])
+
+	global.modifyRecipe(event, "gtceu:assembler/basic_circuit_board", {
+        newId: "tfg:basic_circuit_board",
+        circuit: 1
+    })
 }
