@@ -1,0 +1,161 @@
+{
+    "name": "Composting",
+    "category": "tfc:agriculture",
+    "icon": "tfc:composter",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "title": "Index",
+            "anchor": "index",
+            "text": "$(li)$(bold)$(l:tfc:agriculture/composting#compostables)Compostables$()$(li2)$(l:tfc:agriculture/composting#green_compost)Green Compost$()$(li2)$(l:tfc:agriculture/composting#brown_compost)Brown Compost$()$(li2)$(l:tfc:agriculture/composting#compost_poisons)Rotten Compost$()$(li)$(bold)$(l:tfc:agriculture/composting#compost_tumbler)Compost Tumbler$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "intro",
+            "title": "Intro to Composting",
+            "text": "Composting is an essential process for making fertilizer. It needs both $(2)\"Green\"$() and $(4)\"Brown\"$() organics to work. Different items contribute more to the amount of compost produced than others. To add an item to a composter, $(item)$(k:key.use)$() the block while holding a valid item. The items that can be added are described on later pages."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Composters operate better in certain conditions. Composters that have a block of snow on top work slightly faster. Composters in regions of $(6)>150mm$() or $(3)<350mm$() of rainfall operate much slower, with that effect getting stronger closer to the maximum and minimum rainfall. Also, composters that are touching other composters work slower."
+        },
+        {
+            "type": "tfc:multimultiblock",
+            "text": "The composter at its empty, working, and complete stage.",
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:composter[stage=0,type=normal]"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:composter[stage=8,type=normal]"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:composter[stage=8,type=ready]"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "patchouli:text",
+            "text": "The composter takes 12 days to complete in average conditions. When it is ready, it will have a dirt-like color and gray particles will be emitted from the top of it. The compost can then be retrieved with $(item)$(k:key.sneak) + $(k:key.use)$() with an empty hand. Adding things like $(c)meat$() and $(c)bones$() to compost spoils it, turning it reddish and causing it to emit gross particles. When this rotten compost is used on a crop, it instantly kills it. Which can be helpful for $(l:tfc:agriculture/growing_crops)Duplicating Seeds$() from mature plants!"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Compostables",
+            "anchor": "compostables",
+            "text": "Compostables are seperated by quality. Lows provide a value of 1, Mediums 2, Highs 4.$(li)$(l)$(2)Green$():$(li2)$(l)Low:$() Basic plants and saplings.$(li2)$(l)Medium:$() $(l:tfc:cooking/food_and_water#grain)Grains$(), moss blocks, mushroom blocks.$(li2)$(l)High:$() $(l:tfc:cooking/food_and_water#vegetables)Vegetables$() and $(l:tfc:cooking/food_and_water#vegetables)Fruits$().$(li)$(l)$(4)Brown$():$(li2)$(l)Low:$() Vines.$(li2)$(l)Medium:$() Wood ash, fibers, anemone.$(li2)$(l)High:$() Humus, dead grass, driftwood."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "Green Compost",
+            "anchor": "green_compost",
+            "item": "tfg:universal_compost_greens,tfg:universal_compost_greens_bag",
+            "text": "All $(2)\"Green\"$() compost items can be used directly on a composter or turned into universal compost which condenses these items down to take up less space. Universal green compost gives a value of 1 when used in a composter. Universal green compost can be further compacted into bags which give a value of 4."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "Brown Compost",
+            "anchor": "brown_compost",
+            "item": "tfg:universal_compost_browns,tfg:universal_compost_browns_bag",
+            "text": "All $(4)\"Brown\"$() compost items can be used directly on a composter or turned into universal compost like their green counterpart. Universal brown compost gives a value of 1 when used in a composter. Universal brown compost bags give a value of 4."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "Compost Poisons",
+            "anchor": "compost_poisons",
+            "item": "tag:tfc:compost_poisons",
+            "text": "Some items will $(c)poison$() your compost. These include $(c)meat$() and $(c)bones$(). Poison compost, when used on a crop, instantly kills it. If the crop is fully mature when it dies it will yield multiple seeds. Crops that can be used in compost like grains and vegetables will work even when rotten. They are not compost poisons. "
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfc:composter[stage=8,type=rotten]"
+                }
+            },
+            "anchor": "rotten_compost",
+            "name": "Rotten Compost",
+            "text": "A rotten composter.",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "compost_tumbler",
+            "item": "firmalife:compost_tumbler",
+            "text": "$(thing)Compost Tumblers$() are a great way to produce more fertilizer. They must be connected to $(item)Create$() mechanical power from their side in order to work. Tumblers have an $(thing)RPM$() limit of 16 and a kinetic capacity of 8 $(thing)SU$(). It can only be interacted with when not powered, so consider connecting it to a clutch!"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "The compost tumbler is unique in that it takes more types of compost, and does not require precise ratios in order to work.$(br2)The tumbler can take green and brown items like a regular composter. It can also take pottery sherds, charcoal, fish, and bones in small amounts."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Green and brown items count the same, being on the range 1-4, but the new additions like fish always count for 1. Adding too much weird stuff to the composter causes it to produce rotten compost. Further, you will not know it is rotten until the very end! If the compost is more than fifteen percent bones, fish, or pottery, or more than twenty percent charcoal. It will rot. Or, if there are 10 or more green units than brown units, it will rot."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Favorable amounts of certain additions can extend or shorten the length of time it takes for the compost to complete. Rotation speed does not impact the processing speed!$(br)If 32 units are in the composter, 3 compost will be produced. If at least 24, 2 compost will be made. If 16 or more, 1 will be made. Below that, and there will be no compost."
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Further Reading",
+            "anchor": "relations",
+            "entries": [
+                "tfc:cooking/decay",
+                "tfc:the_world/wild_crops",
+                "tfc:the_world/wild_fruits",
+                "tfc:agriculture/growing_crops",
+                "tfc:agriculture/greenhouse"
+            ]
+        }
+    ],
+    "sortnum": 5,
+    "read_by_default": true,
+    "extra_recipe_mappings": {
+          "tfc:composter": 1,
+          "tfc:compost": 1,
+          "tfg:universal_compost_greens": 6,
+          "tfg:universal_compost_greens_bag": 6,
+          "tfg:universal_compost_browns": 7,
+          "tfg:universal_compost_browns_bag": 7,
+          "tfc:rotten_compost": 8,
+          "firmalife:compost_tumbler": 11
+    }
+}
