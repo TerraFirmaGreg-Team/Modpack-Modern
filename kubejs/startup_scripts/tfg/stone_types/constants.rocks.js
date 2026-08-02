@@ -9,6 +9,7 @@
  * @property {string?} wall
  * @property {BlockForms?} mossy - If this block has a mossy variant
  * @property {BlockForms?} cracked - If this block has a cracked variant
+ * @property {string?} texture - If this block has a texture that isn't in a default location
  */
 
 /**
@@ -572,6 +573,24 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 		bricks: generateForms('aragonite', 'tfg:rock/bricks_%s'),
 		polished: generateForms('aragonite', 'tfg:rock/polished_%s'),
 		chiseled: { block: 'tfg:rock/chiseled_aragonite' }
+	},
+	"gilsonite": {
+		material: "tfg:gilsonite",
+		stonecutterTag: 'tfg:stone_types/gilsonite',
+		isTFC: false,
+		collapsible: false,
+		sound: 'bone_block',
+		mapColor: 'color_black',
+		raw: generateFormsExisting('gilsonite', 'tfg:%s', {
+			block: 'tfg:gilsonite',
+			stair: 'tfg:rock/gilsonite_stairs',
+			slab: 'tfg:rock/gilsonite_slab',
+			wall: 'tfg:rock/gilsonite_wall',
+			texture: 'tfg:block/gilsonite'
+		}),
+		bricks: generateForms('gilsonite', 'tfg:rock/%s_bricks'),
+		polished: generateForms('gilsonite', 'tfg:rock/smooth_%s'),
+		chiseled: generateForms('gilsonite', 'tfg:rock/chiseled_%s_bricks')
 	},
 
 	/////////////////////////////////////////////////////////////////////////////////////////////
