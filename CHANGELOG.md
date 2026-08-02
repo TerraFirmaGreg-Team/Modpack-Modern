@@ -34,6 +34,14 @@
 - Fixed not being able to mattock dirt paths of the new dirt types @Pyritie
 - Fixed not being able to craft chocolate ice cream again @Redeix
 - Fixed arundo only being craftable into green compost and not also brown (#4637) @Vazde
+### Mods
+#### Create: Hypertubes
+- Added Hypertube Splitter
+- Tubes now have collision
+#### Create: Fluid Logsitic
+- Added ponder for copper frogport, unpackager, and multi-fluid tank
+- Fixed issues with the unpacker
+- Fixed fluid factory gauges having high TPS impact
 
 ## [0.13.6] - 27-07-2026
 ### Changes
