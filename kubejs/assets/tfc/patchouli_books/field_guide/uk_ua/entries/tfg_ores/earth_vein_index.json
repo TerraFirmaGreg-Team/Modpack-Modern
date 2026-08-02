@@ -39,7 +39,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#deep_copper_iron)Халькопірит, Ґетит, Пірит...$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_copper)Халькопірит, Пірит...$()$()$(li)$(l:tfg_ores/earth_vein_index#high_realgar)Халькопірит, Цеоліт, Реальгар (Поверхневий)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_copper_tin)Халькопірит, Цеоліт...$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_scheelite)Шеєліт, Вольфрамат, Літій$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#deep_copper_iron)Халькопірит, Ґетит, Пірит...$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_copper)Халькопірит, Пірит...$()$()$(li)$(l:tfg_ores/earth_vein_index#high_realgar)Халькопірит, Цеоліт, Реальгар (Поверхневий)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_copper_tin)Халькопірит, Цеоліт...$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_amethyst)Червоний гранат, Альмандин...$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_scheelite)Шеєліт, Вольфрамат, Літій$()$()",
       "type": "patchouli:text"
     },
     {
@@ -4239,6 +4239,98 @@
       "enable_visualize": false,
       "text": "$(thing)Відсоток$(): 23%$(br)$(thing)Переплавляється у$(): Олово$(br)$(thing)Формула$(): SnO₂",
       "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)$(t:Ймовірність появи жили на чанк. Менші нижні числа означають більшу поширеність.)Рідкість$(/t)$(): 1/230 чинки$(br)$(thing)$(t:Відсоток блоків у жилі, які є рудами замість каменю. Більший відсоток означає більше руди.)Щільність$(/t)$(): 28%$(br)$(thing)$(t:Форма жили.)Тип$(/t)$(): $(t:Широка та пласка)Дискова жила$(/t)$(br)$(thing)$(t:Рівні Y, між якими може генеруватися жила.)Y$(/t)$(): 10 — 70$(br)$(thing)$(t:Середній діаметр жили.)Розмір$(/t)$(): 15$(br)$(thing)Висота$(): 7$(br)$(thing)$(t:Якщо відстань між поверхнею та жильною рудою більша за це число, поверхневі індикатори не генеруються.)Максимальна глибина індикатора$(/t)$(): 70$(br)$(thing)Біоми$(): Будь-який$(br2)$(thing)Типи каменю$(): Базальт, Гранит, Діорит, Ріоліт, Туф",
+      "title": "Червоний гранат, Альмандин...",
+      "type": "patchouli:text",
+      "anchor": "normal_amethyst"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Аметист",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/amethyst"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Відсоток$(): 38%$(br)$(thing)Джерело$(): Заліза$(br)$(thing)Формула$(): (SiO₂)₄Fe",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Опал",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/opal"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Відсоток$(): 38%$(br)$(thing)Джерело$(): Кремнію, Кисню$(br)$(thing)Формула$(): (SiO₂)",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Альмандин",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/almandine"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Відсоток$(): 14%$(br)$(thing)Джерело$(): Алюміній, Залізо$(br)$(thing)Формула$(): Al₂Fe₃Si₃O₁₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Червоний гранат",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/red_garnet"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Відсоток$(): 9%$(br)$(thing)Джерело$(): Піроп, Альмандин, Спесартину",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
     },
     {
       "Type": "patchouli:text",
