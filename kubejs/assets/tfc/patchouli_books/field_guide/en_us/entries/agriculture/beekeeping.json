@@ -1,0 +1,378 @@
+{
+    "name": "Beekeeping",
+    "category": "tfc:agriculture",
+    "icon": "firmalife:beehive",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(thing)Beehives$() are a place to house bees for $(thing)Beekeeping$(). Beekeeping is a direct source of both wax and honey. Beehives need $(item)Beehive Frames$() inside them for the bees to live. Removing frames from an active hive will cause the bees to attack you, unless wearing a full $(item)Beekeeper Suit$(), or with a lit $(thing)Firepit$() beneath the hive."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Beehives know about the area in a 5 block radius from them. If there are at least 10 $(t:#minecraft:flowers block tag)$(3)Flowers$() around the hive, there is a chance an empty frame will be populated with a $(thing)Queen$(). Having 4 empty frames in a hive greatly increases the chances of bees moving in. Beehives can share flowers. The benefit of flowers diminishes after 60 flowers."
+        },
+        {
+            "anchor": "preview",
+            "type": "tfc:multimultiblock",
+            "text": "Beehive Range",
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "YYYYYOYYYYY",
+                            "Y    O    Y",
+                            "Y    O    Y",
+                            "Y    O    Y",
+                            "Y    O    Y",
+                            "OOOOOOOOOOO",
+                            "Y    O    Y",
+                            "Y    O    Y",
+                            "Y    O    Y",
+                            "Y    O    Y",
+                            "YYYYYOYYYYY"
+                        ],
+                        [
+                            "Y    O    Y",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "O         O",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "Y    O    Y"
+                        ],
+                        [
+                            "Y    O    Y",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "O         O",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "Y    O    Y"
+                        ],
+                        [
+                            "Y    O    Y",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "O         O",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "Y    O    Y"
+                        ],
+                        [
+                            "Y    O    Y",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "O         O",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "Y    O    Y"
+                        ],
+                        [
+                            "OOOOOOOOOOO",
+                            "O    O    O",
+                            "O    O    O",
+                            "O    O    O",
+                            "O    O    O",
+                            "OOOOO0OOOOO",
+                            "O    O    O",
+                            "O    O    O",
+                            "O    O    O",
+                            "O    O    O",
+                            "OOOOOOOOOOO"
+                        ],
+                        [
+                            "Y    O    Y",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "O         O",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "Y    O    Y"
+                        ],
+                        [
+                            "Y    O    Y",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "O         O",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "Y    O    Y"
+                        ],
+                        [
+                            "Y    O    Y",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "O         O",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "Y    O    Y"
+                        ],
+                        [
+                            "Y    O    Y",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "O         O",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "Y    O    Y"
+                        ],
+                        [
+                            "YYYYYOYYYYY",
+                            "Y    O    Y",
+                            "Y    O    Y",
+                            "Y    O    Y",
+                            "Y    O    Y",
+                            "OOOOOOOOOOO",
+                            "Y    O    Y",
+                            "Y    O    Y",
+                            "Y    O    Y",
+                            "Y    O    Y",
+                            "YYYYYOYYYYY"
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "firmalife:beehive[facing=east]",
+                        "O": "minecraft:orange_stained_glass",
+                        "Y": "minecraft:glass"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           "
+                        ],
+                        [
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           "
+                        ],
+                        [
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           "
+                        ],
+                        [
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           "
+                        ],
+                        [
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           "
+                        ],
+                        [
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "     0     ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           "
+                        ],
+                        [
+                            "ABBAAABAAAA",
+                            "AAABAAAABBA",
+                            "ABAABABAAAA",
+                            "ABBBAAABBBA",
+                            "BAABABBBAAA",
+                            "BABBACABAAB",
+                            "AABBBAABAAA",
+                            "BBAAAAAABBB",
+                            "ABBBBABAABA",
+                            "AABABAABBAA",
+                            "BABAAABBBAA"
+                        ],
+                        [
+                            "DDDDDDDDDDD",
+                            "DDDDDDDDDDD",
+                            "DDDDDDDDDDD",
+                            "DDDDDDDDDDD",
+                            "DDDDDDDDDDD",
+                            "DDDDDDDDDDD",
+                            "DDDDDDDDDDD",
+                            "DDDDDDDDDDD",
+                            "DDDDDDDDDDD",
+                            "DDDDDDDDDDD",
+                            "DDDDDDDDDDD"
+                        ],
+                        [
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           "
+                        ],
+                        [
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           "
+                        ],
+                        [
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           ",
+                            "           "
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "firmalife:beehive[facing=east,honey=true]",
+                        "D": "tfc:grass/loam",
+                        "A": "tfc:plant/labrador_tea[stage=4,age=1]",
+                        "B": "tfc:plant/grape_hyacinth[stage=1,age=3]",
+                        "C": "tfc:firepit[lit=false]"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "patchouli:text",
+            "text": "If a beehive has two frames with queens, and an empty frame, the two colonies have a chance of $(thing)Breeding$() and producing a new queen in the empty frame. This has the effect of passing on the $(thing)Abilities$() of each parent to the offspring. Abilities are different traits bees have that change how they affect the world around them. They are on a scale of 1-10, with 10 being the max."
+        },
+        {
+            "title": "Honey & Wax",
+            "anchor": "honey_and_wax",
+            "type": "patchouli:spotlight",
+            "item": "firmalife:jar/honey,firmalife:raw_honey,firmalife:beeswax",
+            "text": "Bees produce $(thing)Honey$(). Using $(item)$(k:key.use)$() with an Empty Jar on a hive that contains honey gives you a $(thing)Honey Jar$(). Opening a Honey Jar gives you $(thing)Raw Honey$(), a $(thing)Sugar$() substitute.$(br2)Pressing $(item)$(k:key.use)$() on a filled frame with a $(thing)Knife$() gives you $(thing)Beeswax$(), which has many uses. However, this kills the queen inside the frame!"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "abilities",
+            "text": "$(li)$(thing)Hardiness$(): Allows bees to produce honey at lower temperatures. Hardiness 10 allows up to -16°C, whereas Hardiness 1 allows up to 2°C.$()$(li)$(thing)Production$(): Improves the speed of honey production.$()$(li)$(thing)Mutant$(): Increases variability in the traits passed during breeding$().",
+            "title": "List of Abilities"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)$(thing)Fertility$(): Increases likelihood of breeding.$()$(li)$(thing)Crop Affinity$(): Likelihood of spreading a small amount of nutrients to crops.$()$()$(li)$(thing)Nature Restoration$(): Causes new flowers and lilypads to spawn around the hive.$()$()$(li)$(thing)Calmness$(): Decreases likelihood of bees attacking you$()."
+        },
+        {
+          "type": "patchouli:text",
+          "anchor": "disease",
+          "title": "Disease",
+          "text": "Bees with a high Mutant ability have a chance of developing a $(thing)Genetic Disease$(). Diseased bees pass on their affliction to their offspring, and do not produce honey."
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Bee Tips",
+            "anchor": "tips",
+            "text": "$(li)Bees can help fertilize $(l:tfc:agriculture/greenhouse#planters)Planters!$()$(li)Hydrated large planters count as flowers.$(li)Being wet prevents bee attacks.$(li)Some crops like sunflowers and flax count as flowers.$(li)The ranges for $(thing)Crop Affinity$(), $(thing)Nature Restoration$(), and flowers are the same."
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Further Reading",
+            "anchor": "relations",
+            "entries": [
+                "tfc:agriculture/greenhouse",
+                "tfc:cooking/cooking_methods",
+                "tfc:cooking/decay",
+                "tfc:the_world/flora"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 4,
+    "extra_recipe_mappings": {
+          "firmalife:beehive": 1,
+          "firmalife:beehive_frame": 1
+    }
+}
