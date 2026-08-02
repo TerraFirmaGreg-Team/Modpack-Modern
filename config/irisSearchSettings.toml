@@ -1,0 +1,13 @@
+# This file stores configuration options for the IrisSearch mod
+# Made for version 1.5.1
+# Thank you for using IrisSearch - SpacEagle17
+
+[behavior]
+	# Minimum number of shader packs required for the search bar to appear in the shader selection menu.
+	# Default = 6
+	minPacksForSelectionSearch = 6
+
+[debug]
+	# Option that enables or disables debug logging. Alternatively, one can also set the JVM argument -DebugIrisSearch=true/false which takes priority over this setting.
+	# Default = false
+	doDebugLogging = false

@@ -28,6 +28,10 @@ batteryCapacity = 512.0
 #.
 #Allow Redstone Links to have wildcards in both slots [restart required]
 allowDualWildcardLink = false
+#.
+#Minimum su consumption per tick of a discharging Kinetic Battery
+#Range: 0.0 ~ 8192.0
+batteryMinDischarge = 1.0
 
 [stressValues]
 

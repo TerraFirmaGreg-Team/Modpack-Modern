@@ -159,6 +159,9 @@
 	enableTFGFoodDebuffs = true
 	#Enables TFG food buff effects. Allows receiving helpful effects from nutrients like Fruits, or transient nutrients like Fulfilling.
 	enableTFGFoodBuffs = true
+	#The maximum distance a javelin can travel from the player when leashed before it stops (in blocks). Default: 16
+	#Range: 1 ~ 64
+	javelinLeashMaxDistance = 16
 
 [chameleon_spray_can]
 	#

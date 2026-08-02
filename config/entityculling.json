@@ -1,5 +1,5 @@
 {
-  "configVersion": 7,
+  "configVersion": 8,
   "renderNametagsThroughWalls": true,
   "blockEntityWhitelist": [
     "create:rope_pulley",
@@ -14,13 +14,15 @@
     "botania:mana_burst",
     "mts:builder_existing",
     "mts:builder_rendering",
-    "mts:builder_seat"
+    "mts:builder_seat",
+    "drg_flares:drg_flares",
+    "quark:soul_bead"
   ],
   "tracingDistance": 128,
   "debugMode": false,
   "sleepDelay": 10,
   "hitboxLimit": 50,
-  "skipMarkerArmorStands": true,
+  "captureRate": 5,
   "tickCulling": true,
   "tickCullingWhitelist": [
     "create:contraption",
@@ -51,9 +53,28 @@
     "minecraft:spruce_boat",
     "minecraft:spruce_chest_boat",
     "minecraft:bamboo_raft",
-    "minecraft:bamboo_chest_raft"
+    "minecraft:bamboo_chest_raft",
+    "cinematiccataclysm:scylla_cutscene",
+    "minecraft:block_display",
+    "alexscaves:gum_worm",
+    "cinematiccataclysm:maledictus_cutscene",
+    "drg_flares:drg_flares",
+    "drg_flares:drg_flare",
+    "cinematiccataclysm:leviathan_cutscene",
+    "alexscaves:gum_worm_segment",
+    "cinematiccataclysm:ancient_remnant_cutscene",
+    "avm_staff:campfire_flame",
+    "minecraft:text_display",
+    "createbigcannons:cannon_carriage",
+    "createbigcannons:pitch_contraption",
+    "minecraft:item_display",
+    "cinematiccataclysm:ignis_cutscene",
+    "voidscape:corrupted_pawn"
   ],
   "disableF3": false,
   "skipEntityCulling": false,
-  "skipBlockEntityCulling": false
+  "skipBlockEntityCulling": false,
+  "blockEntityFrustumCulling": true,
+  "forceDisplayCulling": false,
+  "solidLeaves": false
 }
