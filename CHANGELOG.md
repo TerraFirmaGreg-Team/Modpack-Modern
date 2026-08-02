@@ -5,6 +5,7 @@
 #### Create
 - The Quern, Bellows, and Compost Tumbler now connect to Create's kinetic rotation! Check the field guide for information on what the Compost Tumbler does. (#4625) @Redeix
 - Added a resource pack which retextures a lot of Create things to better match the materials you craft them out of. It's a resource pack so you can disable it if you don't like the changes @Pyritie
+- Reduced the consumption rate of steam, cooking oils, and lava inside blaze burners @Pyritie
 #### TFC
 - Added "time to grow" tooltips to wood saplings @Redeix
 - Backported TFC's glassblowing changes from 1.21, which includes a shorter cooldown and information on what action you're about to do @Redeix
@@ -24,6 +25,7 @@
 - Added a sleep paralysis demon @Redeix
 ### Bug fixes
 - Fixed not being able to break Additional Placements blocks @Pyritie @Redeix
+- Fixed a crash if you had steam being pumped into a blaze burner @Pyritie
 - Fixed being able to turn smooth/polished stone into bricks with a stonecutter @Pyritie
 - Fixed the smithing table EMI tab disappearing @evanbones
 - Fixed leaf blocks from Beneath trees taking twice as long to break @Pyritie
