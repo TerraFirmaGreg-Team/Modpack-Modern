@@ -586,7 +586,7 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 			stair: 'tfg:rock/gilsonite_stairs',
 			slab: 'tfg:rock/gilsonite_slab',
 			wall: 'tfg:rock/gilsonite_wall',
-			texture: 'tfg:block/gilsonite'
+			texture: 'tfg:block/fluid_vein/gilsonite'
 		}),
 		bricks: generateForms('gilsonite', 'tfg:rock/%s_bricks'),
 		polished: generateForms('gilsonite', 'tfg:rock/smooth_%s'),
