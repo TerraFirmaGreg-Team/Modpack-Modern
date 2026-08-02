@@ -19,9 +19,9 @@
 	#Controls whether Infinite Fluid Tank appears in creative tabs; mechanics remain active
 	infiniteFluidTankEnabled = true
 	#Controls whether Water-Containing Copper Leaf Casing appears in creative tabs; mechanics remain active
-	waterContainingCopperCasingEnabled = true
+	waterContainingCopperCasingEnabled = false
 	#Controls whether Copper Basin appears in creative tabs; mechanics remain active
-	copperBasinEnabled = true
+	copperBasinEnabled = false
 	#Controls whether Mechanical Fluid Gun appears in creative tabs; mechanics remain active
 	mechanicalFluidGunEnabled = true
 	#Controls whether Hand Pointer appears in creative tabs; mechanics remain active
@@ -48,11 +48,11 @@
 	#Range: 1 ~ 64
 	handPointerMaxMailboxes = 5
 	#Allow the fluid transporter to extract infinite water from waterlogged leaves
-	fluidTransporterInfiniteWaterEnabled = true
+	fluidTransporterInfiniteWaterEnabled = false
 	#Allow the faucet and smart faucet to extract infinite water from waterlogged leaves
-	faucetInfiniteWaterEnabled = true
+	faucetInfiniteWaterEnabled = false
 	#Allow the smart hopper to extract infinite water from waterlogged leaves
-	smartHopperInfiniteWaterEnabled = true
+	smartHopperInfiniteWaterEnabled = false
 	#Infinite tank capacity (in B/buckets). -1 = follow Create's infinite fluid capacity config option
 	#Range: -1 ~ 2147483
 	infiniteFluidTankCapacity = -1
