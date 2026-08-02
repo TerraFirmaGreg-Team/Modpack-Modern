@@ -236,7 +236,7 @@ function registerGreateRecipes(event) {
 		'DCE',
 		'AGA'
 	], {
-		A: '#forge:smooth_stone',
+		A: '#forge:plates/wrought_iron',
 		B: 'gtceu:treated_wood_slab',
 		C: '#forge:small_gears/steel',
 		D: '#forge:tools/hammers',
@@ -246,7 +246,7 @@ function registerGreateRecipes(event) {
 	}).id('greate:shaped/steel_millstone')
 
 	event.recipes.gtceu.assembler('greate:steel_millstone')
-		.itemInputs('2x #forge:smooth_stone', 'gtceu:treated_wood_slab', '#forge:small_gears/steel', '2x #forge:dusts/diamond', 'greate:steel_shaft')
+		.itemInputs('2x #forge:plates/wrought_iron', 'gtceu:treated_wood_slab', '#forge:small_gears/steel', '2x #forge:dusts/diamond', 'greate:steel_shaft')
 		.itemOutputs('greate:steel_millstone')
 		.duration(200)
 		.EUt(GTValues.VA[GTValues.ULV])
