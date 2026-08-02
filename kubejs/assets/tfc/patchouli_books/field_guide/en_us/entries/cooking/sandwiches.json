@@ -30,6 +30,7 @@
             "entries": [
                 "tfc:cooking/food_and_water",
                 "tfc:cooking/salad",
+                "tfc:cooking/mixing_bowl",
                 "tfc:the_world/wild_crops",
                 "tfc:the_world/wild_fruits",
                 "tfc:the_world/wild_animals"
@@ -37,7 +38,7 @@
         }
     ],
     "read_by_default": true,
-    "sortnum": 11,
+    "sortnum": 10,
     "extra_recipe_mappings": {
         "tfc:food/barley_bread_sandwich": 0,
         "tfc:food/maize_bread_sandwich": 0,

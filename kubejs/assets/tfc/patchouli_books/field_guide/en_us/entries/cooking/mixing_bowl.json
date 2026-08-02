@@ -1,0 +1,28 @@
+{
+    "name": "Mixing Bowl",
+    "category": "tfc:cooking",
+    "icon": "firmalife:mixing_bowl",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "The mixing bowl is a way of mixing items and fluids together in a friendly way. In order to operate a mixing bowl $(item)$(k:key.use)$() on one with a $(thing)Spoon$() to add it to the bowl. The spoon will remain in the bowl and not degrade in durability."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "To use a mixing bowl add in your ingredients and $(item)$(k:key.use)$() it to begin mixing. Mixing bowls can take up to $(6)5 item inputs$() and $(3)1 fluid input$(). Recipes need $(n)exact quantities$() of items to be performed. If a recipe outputs a fluid any excess input fluids will be voided, so be careful!"
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Further Reading",
+            "anchor": "relations",
+            "entries": [
+                "tfc:cooking/decay",
+                "tfc:cooking/bread",
+                "tfc:cooking/cooking_methods",
+                "tfc:agriculture/beekeeping"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 13
+}
