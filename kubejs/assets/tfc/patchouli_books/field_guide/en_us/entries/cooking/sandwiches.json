@@ -13,7 +13,7 @@
             "item": "tfc:food/barley_bread_sandwich",
             "title": "Sandwich",
             "link_recipes": false,
-            "text": "Sandwiches are dynamic meal items. The ingrediants used will determine the $(l:tfc:cooking/food_and_water#nutrients)Nutrients$() it contains.$(br2)$(t:§70.8§r§l∑§r§7Ingredients §r+ §70.5§r§l∑§r§7Bread§r)To calculate the nutritional value; take the sum of each ingredients nutrition and multiply by 0.8 except the bread which is multiplied by 0.5$()"
+            "text": "Sandwiches are dynamic meal items. The ingrediants used will determine the $(l:tfc:cooking/food_and_water#nutrients)Nutrients$() it contains.$(br2)$(t:§70.8§r§l∑§r§7Ingredients §r+ §70.5§r§l∑§r§7Bread§r)To calculate the nutritional value; take the sum of each ingredient's nutrition and multiply by 0.8 except the bread which is multiplied by 0.5$()"
         },
         {
             "type": "patchouli:spotlight",
@@ -37,7 +37,7 @@
         }
     ],
     "read_by_default": true,
-    "sortnum": 10,
+    "sortnum": 11,
     "extra_recipe_mappings": {
         "tfc:food/barley_bread_sandwich": 0,
         "tfc:food/maize_bread_sandwich": 0,

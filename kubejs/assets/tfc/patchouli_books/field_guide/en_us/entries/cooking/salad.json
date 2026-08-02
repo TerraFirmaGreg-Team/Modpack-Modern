@@ -13,7 +13,7 @@
             "item": "tag:tfc:salads",
             "title": "Salads",
             "link_recipes": false,
-            "text": "Salads are dynamic meal items. The ingrediants used will determine what type of salad is made and the $(l:tfc:cooking/food_and_water#nutrients)Nutrients$() it contains.$(br2)$(t:§70.75§r§l∑§r§7Ingredients§r)To calculate the nutritional value; take the sum of every ingredients nutrition and multiply by 0.75"
+            "text": "Salads are dynamic meal items. The ingrediants used will determine what type of salad is made and the $(l:tfc:cooking/food_and_water#nutrients)Nutrients$() it contains.$(br2)$(t:§70.75§r§l∑§r§7Ingredients§r)To calculate the nutritional value; take the sum of every ingredient's nutrition and multiply by 0.75"
         },
         {
             "type": "patchouli:relations",
@@ -29,7 +29,7 @@
         }
     ],
     "read_by_default": true,
-    "sortnum": 9,
+    "sortnum": 10,
     "extra_recipe_mappings": {
         "tfc:food/fruit_salad": 0,
         "tfc:food/dairy_salad": 0,

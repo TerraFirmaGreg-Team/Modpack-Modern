@@ -366,7 +366,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "To use a vat, $(item)$(k:key.use)$() it with fluids and items to add them to the inventory. With an empty hand and $(item)$(k:key.sneak)$() held, click to seal and unseal the vat. A vat will not boil until it is sealed.$(br)Vats should be placed above a $(thing)Bottom Oven$(). If the vat would overflow on completion of the recipe, it will not boil! Vats can be automatically opened and closed with $(thing)Redstone$()."
+            "text": "To use a vat, $(item)$(k:key.use)$() it with fluids and items to add them to the inventory. With an empty hand and $(item)$(k:key.sneak)$() held, click to seal and unseal the vat. A vat will not boil until it is sealed.$(br)Vats should be placed above a $(thing)Bottom Oven$(). If the vat overflowed on completion of the recipe, it will not boil! Vats can be automatically opened and closed with $(thing)Redstone$()."
         },
         {
             "type": "tfc:multimultiblock",
