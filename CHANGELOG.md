@@ -2,22 +2,36 @@
 
 ## Unreleased
 ### Changes
+#### Create
 - The Quern, Bellows, and Compost Tumbler now connect to Create's kinetic rotation! Check the field guide for information on what the Compost Tumbler does. (#4625) @Redeix
+- Added a resource pack which retextures a lot of Create things to better match the materials you craft them out of. It's a resource pack so you can disable it if you don't like the changes @Pyritie
+#### TFC
 - Added "time to grow" tooltips to wood saplings @Redeix
 - Backported TFC's glassblowing changes from 1.21, which includes a shorter cooldown and information on what action you're about to do @Redeix
 - This was actually added back with the palm crops, but now if you hold a rope coil in your offhand, thrown javelins return to you. Also added a new quest and tooltip about this @Redeix
 - The Unposter can now also grow more flowers @Pyritie
+- Blocks that can be broken for straw now show up in EMI (should help Beneath starts) @Pyritie
+- Added more things to count as firepit logs, fuel, and kindling, so now polar start can actually make firepits (such as driftwood, moss, and animal fat) @Pyritie
+#### Other changes
 - Added some spooky photos to some chest loot tables @Pyritie
 - Added coins to some loot tables, and made coins meltable @Pyritie
-- Blocks that can be broken for straw now show up in EMI (should help Beneath starts) @Pyritie
 - Reduced the drop chance of weapons and equipment from piglin brutes @Pyritie
 - Jellie slime balls can now be crafted into "plain" slime balls @Pyritie
+- Added a new amethyst/opal/red garnet ore vein to the overworld @Pyritie
+- Added a new Gilsonite block set @Atraxia
+- Stone dusts can now also be turned into Mortar and Crushed Base Course (#4648) @Redeix
+- Changed the textures of wrought iron and stainless steel firmalife greenhouses again to better match the material textures @Pyritie
 - Added a sleep paralysis demon @Redeix
 ### Bug fixes
+- Fixed not being able to break Additional Placements blocks @Pyritie @Redeix
 - Fixed being able to turn smooth/polished stone into bricks with a stonecutter @Pyritie
 - Fixed the smithing table EMI tab disappearing @evanbones
 - Fixed leaf blocks from Beneath trees taking twice as long to break @Pyritie
 - Fixed not being able to pick up Jellies @Pyritie
+- Fixed not being able to actually sleep in the Beneath @Thomasx0
+- Fixed not being able to mattock dirt paths of the new dirt types @Pyritie
+- Fixed not being able to craft chocolate ice cream again @Redeix
+- Fixed arundo only being craftable into green compost and not also brown (#4637) @Vazde
 
 ## [0.13.6] - 27-07-2026
 ### Changes
