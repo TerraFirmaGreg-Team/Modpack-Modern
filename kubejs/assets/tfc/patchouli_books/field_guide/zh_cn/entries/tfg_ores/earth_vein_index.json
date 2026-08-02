@@ -24,7 +24,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#high_sulfur)硫 （火山）$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_copper_sulfide)硫, 斑铜矿, 辉铜矿 （深层）$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_sulfide)硫, 辉锑矿, 斑铜矿 （火山）$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sphalerite)硫, 黄铁矿, 闪锌矿 （深层）$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_magnetite)磁铁矿 （地表）$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_magnetite)磁铁矿, 钒磁铁矿, 原生金$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_apatite)磷灰石, 磷酸三钙, 烧绿石 （深层）$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_tricalcium_phosphate)磷酸三钙 （地表）$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_big_redstone)红石, 红宝石, 朱砂 （大型）$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_redstone)红石, 红宝石, 朱砂 （深层）$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_amethyst)红石榴石, 铁铝榴石, 紫水晶, 猫眼石$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_magnetite_olivine)膨润土, 菱镁矿, 橄榄石, 漂白土$()$()$(li)$(l:tfg_ores/earth_vein_index#sand_granitic)花岗岩矿砂, 漂白土, 石榴石砂$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_kyanite)蓝晶石, 云母, 铯榴石$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#high_sulfur)硫 （火山）$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_copper_sulfide)硫, 斑铜矿, 辉铜矿 （深层）$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_sulfide)硫, 辉锑矿, 斑铜矿 （火山）$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sphalerite)硫, 黄铁矿, 闪锌矿 （深层）$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_magnetite)磁铁矿 （地表）$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_magnetite)磁铁矿, 钒磁铁矿, 原生金$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_apatite)磷灰石, 磷酸三钙, 烧绿石 （深层）$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_tricalcium_phosphate)磷酸三钙 （地表）$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_amethyst)紫水晶, 猫眼石, 红石榴石, 铁铝榴石$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_big_redstone)红石, 红宝石, 朱砂 （大型）$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_redstone)红石, 红宝石, 朱砂 （深层）$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_magnetite_olivine)膨润土, 菱镁矿, 橄榄石, 漂白土$()$()$(li)$(l:tfg_ores/earth_vein_index#sand_granitic)花岗岩矿砂, 漂白土, 石榴石砂$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_kyanite)蓝晶石, 云母, 铯榴石$()$()",
       "type": "patchouli:text"
     },
     {
@@ -1966,6 +1966,98 @@
     },
     {
       "Type": "patchouli:text",
+      "text": "$(thing)$(t:每个区块生成矿脉的几率。下面的数字越小就越常见。)稀有度$(/t)$(): 1/230 区块$(br)$(thing)$(t:矿脉中矿石方块所占的百分比。百分比越高，矿石越多。)密度$(/t)$(): 28%$(br)$(thing)$(t:矿脉的形状。)类型$(/t)$(): $(t:宽而扁平)盘状矿脉$(/t)$(br)$(thing)$(t:矿脉可能生成的 Y 轴范围。)Y$(/t)$(): 10 — 70$(br)$(thing)$(t:矿脉的平均直径)尺寸$(/t)$(): 15$(br)$(thing)高度$(): 7$(br)$(thing)$(t:如果地表与矿脉之间的距离大于此数值，则地表不会生成矿脉指示物。)指示物最大深度$(/t)$(): 70$(br)$(thing)生物群系$(): 任意$(br2)$(thing)岩石类型$(): 凝灰岩, 流纹岩, 玄武岩, 花岗岩, 闪长岩",
+      "title": "紫水晶, 猫眼石, 红石榴石, 铁铝榴石",
+      "type": "patchouli:text",
+      "anchor": "normal_amethyst"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "紫水晶",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/amethyst"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)百分比$(): 38%$(br)$(thing)来源$(): 铁$(br)$(thing)化学式$(): (SiO₂)₄Fe",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "猫眼石",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/opal"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)百分比$(): 38%$(br)$(thing)来源$(): 硅, 氧$(br)$(thing)化学式$(): (SiO₂)",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "铁铝榴石",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/almandine"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)百分比$(): 14%$(br)$(thing)来源$(): 铝, 铁$(br)$(thing)化学式$(): Al₂Fe₃Si₃O₁₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "红石榴石",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/red_garnet"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)百分比$(): 9%$(br)$(thing)来源$(): 镁铝榴石, 铁铝榴石, 锰铝榴石",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
+    },
+    {
+      "Type": "patchouli:text",
       "text": "$(thing)$(t:每个区块生成矿脉的几率。下面的数字越小就越常见。)稀有度$(/t)$(): 1/270 区块$(br)$(thing)$(t:矿脉中矿石方块所占的百分比。百分比越高，矿石越多。)密度$(/t)$(): 32%$(br)$(thing)$(t:矿脉的形状。)类型$(/t)$(): $(t:宽而扁平)盘状矿脉$(/t)$(br)$(thing)$(t:矿脉可能生成的 Y 轴范围。)Y$(/t)$(): -50 — 20$(br)$(thing)$(t:矿脉的平均直径)尺寸$(/t)$(): 42$(br)$(thing)高度$(): 5$(br)$(thing)$(t:如果地表与矿脉之间的距离大于此数值，则地表不会生成矿脉指示物。)指示物最大深度$(/t)$(): 15$(br)$(thing)生物群系$(): 任意$(br2)$(thing)岩石类型$(): 花岗岩, 辉长岩, 闪长岩",
       "title": "红石, 红宝石, 朱砂 （大型）",
       "type": "patchouli:text",
@@ -2097,98 +2189,6 @@
       "enable_visualize": false,
       "text": "$(thing)百分比$(): 14%$(br)$(thing)来源$(): 汞$(br)$(thing)化学式$(): HgS",
       "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:text",
-      "text": "$(thing)$(t:每个区块生成矿脉的几率。下面的数字越小就越常见。)稀有度$(/t)$(): 1/230 区块$(br)$(thing)$(t:矿脉中矿石方块所占的百分比。百分比越高，矿石越多。)密度$(/t)$(): 28%$(br)$(thing)$(t:矿脉的形状。)类型$(/t)$(): $(t:宽而扁平)盘状矿脉$(/t)$(br)$(thing)$(t:矿脉可能生成的 Y 轴范围。)Y$(/t)$(): 10 — 70$(br)$(thing)$(t:矿脉的平均直径)尺寸$(/t)$(): 15$(br)$(thing)高度$(): 7$(br)$(thing)$(t:如果地表与矿脉之间的距离大于此数值，则地表不会生成矿脉指示物。)指示物最大深度$(/t)$(): 70$(br)$(thing)生物群系$(): 任意$(br2)$(thing)岩石类型$(): 凝灰岩, 流纹岩, 玄武岩, 花岗岩, 闪长岩",
-      "title": "红石榴石, 铁铝榴石, 紫水晶, 猫眼石",
-      "type": "patchouli:text",
-      "anchor": "normal_amethyst"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "紫水晶",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/amethyst"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)百分比$(): 38%$(br)$(thing)来源$(): 铁$(br)$(thing)化学式$(): (SiO₂)₄Fe",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "猫眼石",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/opal"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)百分比$(): 38%$(br)$(thing)来源$(): 硅, 氧$(br)$(thing)化学式$(): (SiO₂)",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "铁铝榴石",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/almandine"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)百分比$(): 14%$(br)$(thing)来源$(): 铝, 铁$(br)$(thing)化学式$(): Al₂Fe₃Si₃O₁₂",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "红石榴石",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/red_garnet"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)百分比$(): 9%$(br)$(thing)来源$(): 镁铝榴石, 铁铝榴石, 锰铝榴石",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:empty",
-      "draw_filler": true,
-      "type": "patchouli:empty"
     },
     {
       "Type": "patchouli:text",

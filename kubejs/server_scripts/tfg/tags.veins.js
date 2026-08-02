@@ -45,6 +45,7 @@ const registerTFGOreVeinFeatures = (event) => {
 	event.add('tfc:in_biome/veins', 'tfg:earth/vein/high_sulfur')
 	event.add('tfc:in_biome/veins', 'tfg:earth/vein/high_tetrahedrite')
 	event.add('tfc:in_biome/veins', 'tfg:earth/vein/high_tin')
+	event.add('tfc:in_biome/veins', 'tfg:earth/vein/normal_amethyst')
 	event.add('tfc:in_biome/veins', 'tfg:earth/vein/normal_asbestos_dry')
 	event.add('tfc:in_biome/veins', 'tfg:earth/vein/normal_coal')
 	event.add('tfc:in_biome/veins', 'tfg:earth/vein/normal_copper')
