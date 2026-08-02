@@ -1,13 +1,62 @@
-#The maximum amount of fluid (in mB) a compressed tank can hold
-#Range: 1000 ~ 10000
-compressedTankCapacity = 10000
-#The maximum amount of fluid (in mB) a fluid package can hold
-#The effective maximum is limited by both 90000 mB and 9x the configured compressed tank capacity
-#Range: 1 ~ 90000
-fluidPackageCapacity = 10000
-#Enables fluid transporter
-fluidTransporterEnabled = true
-#Enables basin capacity expansion
-#Requires restarting the game to fully apply
-basinCapacityExpansionEnabled = false
+
+[featureToggles]
+	#Controls whether Fluid Transporter appears in creative tabs; mechanics remain active
+	fluidTransporterEnabled = true
+	#Controls whether Smart Faucet appears in creative tabs; mechanics remain active
+	smartFaucetEnabled = true
+	#Controls whether Faucet appears in creative tabs; mechanics remain active
+	faucetEnabled = true
+	#Controls whether Multi-Fluid Tank appears in creative tabs; mechanics remain active
+	multiFluidTankEnabled = true
+	#Controls whether Horizontal Multi-Fluid Tank appears in creative tabs; mechanics remain active
+	horizontalMultiFluidTankEnabled = true
+	#Controls whether Multi-Fluid Access Port appears in creative tabs; mechanics remain active
+	multiFluidAccessPortEnabled = true
+	#Controls whether Smart Hopper appears in creative tabs; mechanics remain active
+	smartHopperEnabled = true
+	#Controls whether Fluid Pump is advertised and whether its network updater is active
+	fluidPumpEnabled = true
+	#Controls whether Infinite Fluid Tank appears in creative tabs; mechanics remain active
+	infiniteFluidTankEnabled = true
+	#Controls whether Water-Containing Copper Leaf Casing appears in creative tabs; mechanics remain active
+	waterContainingCopperCasingEnabled = true
+	#Controls whether Copper Basin appears in creative tabs; mechanics remain active
+	copperBasinEnabled = true
+	#Controls whether Mechanical Fluid Gun appears in creative tabs; mechanics remain active
+	mechanicalFluidGunEnabled = true
+	#Controls whether Hand Pointer appears in creative tabs; mechanics remain active
+	handPointerEnabled = true
+	#After disabling, packages cannot be used to transport fluids
+	advancedLogisticsNetworkEnabled = true
+	#Controls whether Fluid Hatch appears in creative tabs; mechanics remain active
+	fluidHatchEnabled = true
+
+[blockProperties]
+	#Maximum fluid amount a fluid package can hold (in mB)
+	#Range: > 1
+	fluidPackageCapacity = 10000
+	#Maximum distance a Fluid Pump can push or pull fluids on either side
+	#Range: > 1
+	fluidPumpRange = 24
+	#Maximum number of Mechanical Arms configurable in one Hand Pointer session
+	#Range: 1 ~ 64
+	handPointerMaxArms = 5
+	#Maximum number of Package Frogports configurable in one Hand Pointer session
+	#Range: 1 ~ 64
+	handPointerMaxFrogports = 5
+	#Maximum number of Postboxes configurable in one Hand Pointer session
+	#Range: 1 ~ 64
+	handPointerMaxMailboxes = 5
+	#Allow the fluid transporter to extract infinite water from waterlogged leaves
+	fluidTransporterInfiniteWaterEnabled = true
+	#Allow the faucet and smart faucet to extract infinite water from waterlogged leaves
+	faucetInfiniteWaterEnabled = true
+	#Allow the smart hopper to extract infinite water from waterlogged leaves
+	smartHopperInfiniteWaterEnabled = true
+	#Infinite tank capacity (in B/buckets). -1 = follow Create's infinite fluid capacity config option
+	#Range: -1 ~ 2147483
+	infiniteFluidTankCapacity = -1
+	#FOLLOW_CREATE = follow Create's bottomless fluid config option
+	#Allowed Values: FOLLOW_CREATE, ALLOW_ALL, DENY_ALL, ALLOW_BY_TAG, DENY_BY_TAG
+	infiniteFluidTankAllowedFluids = "FOLLOW_CREATE"
 
