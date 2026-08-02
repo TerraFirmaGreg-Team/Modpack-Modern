@@ -1,12 +1,6 @@
 
-[general]
-	#Should be create compat enabled?
-	createCompat = true
-	#Should be tfc ambiental compat enabled?
-	tfcAmbientalCompat = true
-
 [worldSpawn]
 	#ID of the custom spawn conditions for the next generated world.
-	#Valid ids are: tropical, tundra, polar, default, temperate, desert
+	#Valid ids are: beneath, default, desert, polar, temperate, tfcgenviewer, tropical, tundra
 	id = "default"
 
