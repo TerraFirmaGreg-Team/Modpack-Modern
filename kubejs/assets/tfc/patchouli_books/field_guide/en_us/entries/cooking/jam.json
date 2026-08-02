@@ -1,7 +1,7 @@
 {
     "name": "Jam Making",
     "category": "tfc:cooking",
-    "icon": "tfc:jar/cloudberry",
+    "icon": "tfc:textures/item/jar/cloudberry.png",
     "pages": [
         {
             "type": "patchouli:text",
@@ -20,7 +20,7 @@
             "item": "firmalife:vat,firmalife:jarring_station",
             "anchor": "jarring_station",
             "title": "Automating Jam",
-            "text": "Jam can also be mass produced in a $(l:tfc:cooking/cooking_methods#vat)Vat$() using a $(l:tfc:cooking/cooking_methods#jarring_station)Jarring Station$(). Funnel ingredients into the vat, use redstone to close it and then extract the outputs from the jarring station."
+            "text": "Jam can also be mass-produced in a $(l:tfc:cooking/cooking_methods#vat)Vat$() using a $(l:tfc:cooking/cooking_methods#jarring_station)Jarring Station$(). Funnel ingredients into the vat, use redstone to close it and then extract the outputs from the jarring station."
         },
         {
             "type": "patchouli:crafting",
