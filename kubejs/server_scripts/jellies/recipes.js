@@ -2,6 +2,23 @@
 "use strict";
 
 function registerJelliesRecipes(event) {
+	event.custom({
+		type: "ae2:transform",
+		circumstance: {
+			type: "fluid",
+			tag: "tfc:any_water"
+		},
+		ingredients: [{ tag: 'jellies:slime_ball' }],
+		result: { item: 'minecraft:slime_ball' }
+	}).id(`tfg:ae_transform/jellies_to_slime`)
+
+	event.recipes.gtceu.chemical_bath('tfg:jellies_to_slime')
+		.itemInputs('#jellies:slime_ball')
+		.inputFluids(Fluid.of('minecraft:water', 250))
+		.itemOutputs('minecraft:slime_ball')
+		.duration(50)
+		.EUt(GTValues.VA[GTValues.ULV])
+
 	// Plant slime ball
 	event.shapeless('gtceu:plant_ball', ['jellies:jellie/slime_ball/plant', '#forge:tools/mortars'])
 		.id('tfg:shapeless/mortar_plant_slime_ball')

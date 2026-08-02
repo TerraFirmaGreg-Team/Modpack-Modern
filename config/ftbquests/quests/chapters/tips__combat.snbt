@@ -1001,17 +1001,11 @@
 			y: 0.0d
 		}
 		{
+			disable_toast: true
 			icon: "tfc:rock/loose/gabbro"
 			id: "55BF74AD2E6EF14A"
 			shape: "octagon"
 			size: 1.5d
-			tasks: [{
-				dimension: "minecraft:overworld"
-				icon: "gtceu:overworld_marker"
-				id: "32C9D640115FC6CD"
-				title: "{quests.stone_age.temperature.task}"
-				type: "dimension"
-			}]
 			title: "{quests.combat_tips.stone_main.title}"
 			x: -8.0d
 			y: 0.0d

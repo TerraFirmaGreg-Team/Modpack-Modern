@@ -603,37 +603,22 @@
 			subtitle: "{quests.tfg_tips.top_slimes.subtitle}"
 			tasks: [
 				{
-					biome: "tfg:nether/salt_caves"
-					disable_toast: true
-					icon: "tfg:halite"
-					id: "2BF170444922B465"
-					optional_task: true
-					title: "{quests.tfg_tips.top_slimes.task.1}"
-					type: "biome"
-				}
-				{
-					biome: "tfg:nether/muggy_bog"
-					disable_toast: true
-					icon: "tfg:hardened_clay"
-					id: "523005C4670A439D"
-					optional_task: true
-					title: "{quests.tfg_tips.top_slimes.task.2}"
-					type: "biome"
-				}
-				{
-					icon: "tfg:spawn_egg/slime"
-					id: "6FC962ECC223F799"
+					icon: "jellies:jellie/slime_ball/certus"
+					id: "66E888B92EADA8E8"
 					observe_type: 5
 					timer: 0L
-					title: "{quests.tfg_tips.top_slimes.task.3}"
-					to_observe: "tfg:slime"
+					title: "{quests.tfg_tips.top_slimes.task.1}"
+					to_observe: "jellies:ice"
 					type: "observation"
 				}
 				{
-					id: "78C8CDC154866808"
-					item: "jellies:jellie/slime_ball/plant"
-					optional_task: true
-					type: "item"
+					icon: "jellies:jellie/slime_ball/plant"
+					id: "32122FC385AA2A20"
+					observe_type: 5
+					timer: 0L
+					title: "{quests.tfg_tips.top_slimes.task.2}"
+					to_observe: "jellies:plant"
+					type: "observation"
 				}
 			]
 			title: "{quests.tfg_tips.top_slimes.title}"
@@ -653,47 +638,32 @@
 			subtitle: "{quests.tfg_tips.middle_slimes.subtitle}"
 			tasks: [
 				{
-					biome: "tfg:nether/lush_hollow"
-					disable_toast: true
-					icon: "minecraft:moss_block"
-					id: "2E9F5A0EB4118661"
-					optional_task: true
-					title: "{quests.tfg_tips.middle_slimes.task.1}"
-					type: "biome"
-				}
-				{
-					biome: "tfg:nether/geothermal_springs"
-					disable_toast: true
-					icon: "minecraft:calcite"
-					id: "212039DCF5896DEF"
-					optional_task: true
-					title: "{quests.tfg_tips.middle_slimes.task.2}"
-					type: "biome"
-				}
-				{
-					biome: "tfg:nether/thorny_brambles"
-					disable_toast: true
-					icon: "wan_ancient_beasts:olden_moss_block"
-					id: "0B964D9767632BD7"
-					optional_task: true
-					title: "{quests.tfg_tips.middle_slimes.task.3}"
-					type: "biome"
-				}
-				{
-					disable_toast: true
-					icon: "tfg:spawn_egg/slime"
+					icon: "jellies:jellie/slime_ball/glowberry"
 					id: "68EB0510ADE6DA59"
 					observe_type: 5
 					timer: 0L
-					title: "{quests.tfg_tips.middle_slimes.task.4}"
-					to_observe: "tfg:slime"
+					title: "{quests.tfg_tips.middle_slimes.task.1}"
+					to_observe: "jellies:glowberry"
 					type: "observation"
 				}
 				{
-					id: "19E226F88A0F9391"
-					item: "jellies:jellie/slime_ball/glowberry"
-					optional_task: true
-					type: "item"
+					icon: "jellies:jellie/slime_ball/spring"
+					id: "347E4BC5895EAE24"
+					observe_type: 5
+					timer: 0L
+					title: "{quests.tfg_tips.middle_slimes.task.2}"
+					to_observe: "jellies:spring"
+					type: "observation"
+				}
+				{
+					disable_toast: true
+					icon: "jellies:jellie/slime_ball/plant"
+					id: "6C8AB8F252D12A82"
+					observe_type: 5
+					timer: 0L
+					title: "{quests.tfg_tips.middle_slimes.task.3}"
+					to_observe: "jellies:plant"
+					type: "observation"
 				}
 			]
 			title: "{quests.tfg_tips.middle_slimes.title}"
@@ -716,19 +686,22 @@
 			subtitle: "{quests.tfg_tips.bottom_slimes.subtitle}"
 			tasks: [
 				{
-					disable_toast: true
-					icon: "tfg:spawn_egg/slime"
-					id: "2336B8B00B823EFF"
+					icon: "jellies:jellie/slime_ball/phosphorum"
+					id: "65784A1CBB8727D9"
 					observe_type: 5
 					timer: 0L
-					title: "{quests.tfg_tips.bottom_slimes.task}"
-					to_observe: "tfg:slime"
+					title: "{quests.tfg_tips.bottom_slimes.task.1}"
+					to_observe: "jellies:lava"
 					type: "observation"
 				}
 				{
-					id: "230B0F0E83D54EAF"
-					item: "jellies:jellie/slime_ball/latex"
-					type: "item"
+					icon: "jellies:jellie/slime_ball/latex"
+					id: "681A467944EDF999"
+					observe_type: 5
+					timer: 0L
+					title: "{quests.tfg_tips.bottom_slimes.task.2}"
+					to_observe: "jellies:latex"
+					type: "observation"
 				}
 			]
 			title: "{quests.tfg_tips.bottom_slimes.title}"

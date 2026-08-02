@@ -22,8 +22,8 @@
           "X": "tfc:wild_crop/wheat[mature=true]"
         }
       },
-      "name": "Wild Wheat",
-      "text": "An example of a wild crop, in this case $(l:mechanics/crops#wheat)Wheat$().",
+      "name": "Wilder Weizen",
+      "text": "Ein Beispiel für eine wilde Ernte, in diesem Fall $(l:mechanics/crops#wheat$().",
       "enable_visualize": false
     },
     {
@@ -319,29 +319,29 @@
     {
       "type": "patchouli:text",
       "text": "Wild crops will spawn in climates near where the crop itself can be cultivated, so if looking for a specific crop, look in the climate where the crop can be cultivated. However, unlike $(l:mechanics/crops)Crops$() that the player has planted, wild crops do not require $(l:mechanics/hydration)Hydration$(). Instead, they are found in areas depending on the average $()Temperature$() and $()Rainfall$().",
-      "title": "Finding Wild Crops"
+      "title": "Suche nach Wildpflanzen"
     },
     {
       "type": "patchouli:text",
-      "text": "The next pages show a table of the environments where wild crops can be found."
+      "text": "Die folgenden Seiten zeigen eine Tabelle der Umgebungen, in denen wilde Pflanzen zu finden sind."
     },
     {
       "type": "tfc:table",
       "strings": [
         {
-          "text": "Crop",
+          "text": "Ernte",
           "bold": true
         },
         {
-          "text": "Temperature (°C)",
+          "text": "Temperatur (°C)",
           "bold": true
         },
         {
-          "text": "Rainfall (mm)",
+          "text": "Niederschlag (mm)",
           "bold": true
         },
         {
-          "text": "Barley"
+          "text": "Gerste"
         },
         {
           "text": " -8 - 26"
@@ -350,10 +350,10 @@
           "text": " 70 - 310"
         },
         {
-          "text": "Oat"
+          "text": "Hafer"
         },
         {
-          "text": "  3 - 40"
+          "text": "3 - 40"
         },
         {
           "text": "140 - 400"
@@ -377,25 +377,25 @@
           "text": "300 - 500"
         },
         {
-          "text": "Wheat"
+          "text": "Weizen"
         },
         {
-          "text": " -4 - 35"
+          "text": "-4 - 35"
         },
         {
           "text": "100 - 400"
         },
         {
-          "text": "Rice"
+          "text": "Reis"
         },
         {
-          "text": " 15 - 30"
+          "text": "15 - 30"
         },
         {
-          "text": "100 - 500"
+          "text": "300 - 500"
         },
         {
-          "text": "Beet"
+          "text": "Rübe"
         },
         {
           "text": " -5 - 20"
@@ -404,7 +404,7 @@
           "text": " 70 - 300"
         },
         {
-          "text": "Cabbage"
+          "text": "Weißkohl"
         },
         {
           "text": "-10 - 27"
@@ -413,7 +413,7 @@
           "text": " 60 - 280"
         },
         {
-          "text": "Carrot"
+          "text": "Karotte"
         },
         {
           "text": "  3 - 30"
@@ -422,13 +422,13 @@
           "text": "100 - 400"
         },
         {
-          "text": "Garlic"
+          "text": "Knoblauch"
         },
         {
           "text": "-20 - 18"
         },
         {
-          "text": " 60 - 310"
+          "text": "60 - 310"
         },
         {
           "text": "Green Bean"
@@ -468,15 +468,15 @@
       "type": "tfc:table",
       "strings": [
         {
-          "text": "Crop",
+          "text": "Ernte",
           "bold": true
         },
         {
-          "text": "Temperature (°C)",
+          "text": "Temperatur (°C)",
           "bold": true
         },
         {
-          "text": "Rainfall (mm)",
+          "text": "Niederschlag (mm)",
           "bold": true
         },
         {
@@ -607,15 +607,15 @@
       "type": "tfc:table",
       "strings": [
         {
-          "text": "Crop",
+          "text": "Ernte",
           "bold": true
         },
         {
-          "text": "Temperature (°C)",
+          "text": "Temperatur (°C)",
           "bold": true
         },
         {
-          "text": "Rainfall (mm)",
+          "text": "Niederschlag (mm)",
           "bold": true
         },
         {

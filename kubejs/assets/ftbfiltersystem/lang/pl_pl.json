@@ -36,6 +36,7 @@
   "ftbfiltersystem.gui.percentage": "Procenty",
   "ftbfiltersystem.message.changes_saved": "Filtr został zaktualizowany!",
   "ftbfiltersystem.message.matched": "Filtr pasuje: %s",
+  "ftbfiltersystem.message.not_a_filter": "Musisz trzymać inteligentny filtr w swojej głównej ręce",
   "ftbfiltersystem.message.not_matched": "Filtr nie pasuje: %s",
   "ftbfiltersystem.message.parse_failed": "Nie udało się przetworzyć filtra: %s",
   "item.ftbfiltersystem.smart_filter": "Inteligentny filtr",

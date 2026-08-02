@@ -114,7 +114,13 @@
 			size: 1.0d
 			subtitle: "{quests.stone_age.find_potable_water.subtitle}"
 			tasks: [{
-				icon: "minecraft:water_bucket"
+				icon: {
+					Count: 1
+					id: "minecraft:potion"
+					tag: {
+						Potion: "minecraft:water"
+					}
+				}
 				id: "3601D2311BB1383F"
 				stage: "tfg.stages.quests.drank_fresh_water_with_hand"
 				title: "{quests.stone_age.find_potable_water.task}"
@@ -1239,6 +1245,67 @@
 				{
 					id: "0BB8771118915F9E"
 					item: "minecraft:brick"
+					type: "item"
+				}
+				{
+					id: "18EAE06E3E8167A3"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							Parent: {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfcscraping:ceramic/scraping_knife_blade_mold"
+					}
+					type: "item"
+				}
+				{
+					id: "1380F15978789143"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							Parent: {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfg:spindle_head_mold"
+					}
+					type: "item"
+				}
+				{
+					id: "68DBB874FCCCD509"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							Parent: {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfg:nugget_mold"
+					}
+					type: "item"
+				}
+				{
+					id: "7BA2D7D2C6176DD3"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							Parent: {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfg:lamp_mold"
+					}
+					type: "item"
+				}
+				{
+					id: "1134C29F6FB4382E"
+					item: "tfg:decorative_vase"
 					type: "item"
 				}
 			]

@@ -42,6 +42,8 @@ migrateCopycatsOnInitialize = false
 	cross_connector = true
 	redstone_link_wildcard = true
 	kinetic_battery = true
+	brass_chute = true
+	dashboard = true
 
 #.
 #Enable/disable categories of features. Disabling a category hides all related features. Values on server override clients

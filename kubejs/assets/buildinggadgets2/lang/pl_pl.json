@@ -23,6 +23,7 @@
   "buildinggadgets2.messages.cutinprogress": "Trwa wycinanie - Proszę czekać!",
   "buildinggadgets2.messages.invalidblock": "Nieprawidłowy blok",
   "buildinggadgets2.messages.namealreadyexists": "Ta nazwa jest już w użyciu, usuń ją komendami albo nadaj nową nazwę.",
+  "buildinggadgets2.messages.namerequired": "Schemat wymaga nazwy. Spróbuj ponownie.",
   "buildinggadgets2.messages.notenoughenergy": "Niewystarczająca ilość energii, by wyciąć. Potrzeba: %d. Jest: %d",
   "buildinggadgets2.messages.outofpower": "Gadżet rozładowany!",
   "buildinggadgets2.messages.overwritecut": "Narzędzie już zapisało dane wycinania - kliknij ponownie, aby NADPISAĆ te dane",

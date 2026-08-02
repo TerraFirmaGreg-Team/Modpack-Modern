@@ -325,68 +325,39 @@ const registerCreatedecoRecipes = (event) => {
 
 	//#region Coins
 
-	event.recipes.gtceu.forming_press('createdeco:gold_coin')
-		.itemInputs('#forge:nuggets/gold')
-		.notConsumable('gtceu:cylinder_casting_mold')
-		.itemOutputs('createdeco:gold_coin')
-		.duration(50)
-		.EUt(16)
+	const coins = [
+		{ material: GTMaterials.Gold, coin: 'createdeco:gold_coin' },
+		{ material: GTMaterials.BlueSteel, coin: 'createdeco:netherite_coin' },
+		{ material: GTMaterials.Brass, coin: 'createdeco:brass_coin' },
+		{ material: GTMaterials.Iron, coin: 'createdeco:iron_coin' },
+		{ material: GTMaterials.Copper, coin: 'createdeco:copper_coin' },
+		{ material: GTMaterials.Steel, coin: 'createdeco:industrial_iron_coin' },
+		{ material: GTMaterials.Zinc, coin: 'createdeco:zinc_coin' },
+	];
 
-	TFGHelpers.registerMaterialInfo('createdeco:gold_coin', [GTMaterials.Gold, 1/9])
+	coins.forEach(coin => {
+		let tfcProperty = coin.material.getProperty(TFGPropertyKey.TFC_PROPERTY);
 
-	event.recipes.gtceu.forming_press('createdeco:netherite_coin')
-		.itemInputs('#forge:nuggets/blue_steel')
-		.notConsumable('gtceu:cylinder_casting_mold')
-		.itemOutputs('createdeco:netherite_coin')
-		.duration(50)
-		.EUt(16)
+		event.recipes.gtceu.forming_press(coin.coin)
+			.itemInputs(ChemicalHelper.get(TagPrefix.nugget, coin.material, 1))
+			.notConsumable('gtceu:cylinder_casting_mold')
+			.itemOutputs(coin.coin)
+			.duration(50)
+			.EUt(16)
 
-	TFGHelpers.registerMaterialInfo('createdeco:netherite_coin', [GTMaterials.BlueSteel, 1/9])
+		let meltMaterial = (tfcProperty.getOutputMaterial() === null) ? coin.material : tfcProperty.getOutputMaterial();
 
-	event.recipes.gtceu.forming_press('createdeco:brass_coin')
-		.itemInputs('#forge:nuggets/brass')
-		.notConsumable('gtceu:cylinder_casting_mold')
-		.itemOutputs('createdeco:brass_coin')
-		.duration(50)
-		.EUt(16)
+		event.recipes.tfc.heating(coin.coin, tfcProperty.getMeltTemp())
+			.resultFluid(Fluid.of(meltMaterial.getFluid(), 144 * 1/9))
+			.id(`tfg:heating/${coin.material.getName()}_coin`)
 
-	TFGHelpers.registerMaterialInfo('createdeco:brass_coin', [GTMaterials.Brass, 1/9])
+		event.recipes.tfc.heating(`${coin.coin}stack`, tfcProperty.getMeltTemp())
+			.resultFluid(Fluid.of(meltMaterial.getFluid(), 144 * 4/9))
+			.id(`tfg:heating/${coin.material.getName()}_coinstack`)
 
-	event.recipes.gtceu.forming_press('createdeco:iron_coin')
-		.itemInputs('#forge:nuggets/wrought_iron')
-		.notConsumable('gtceu:cylinder_casting_mold')
-		.itemOutputs('createdeco:iron_coin')
-		.duration(50)
-		.EUt(16)
-
-	TFGHelpers.registerMaterialInfo('createdeco:iron_coin', [GTMaterials.WroughtIron, 1/9])
-
-	event.recipes.gtceu.forming_press('createdeco:copper_coin')
-		.itemInputs('#forge:nuggets/copper')
-		.notConsumable('gtceu:cylinder_casting_mold')
-		.itemOutputs('createdeco:copper_coin')
-		.duration(50)
-		.EUt(16)
-
-	TFGHelpers.registerMaterialInfo('createdeco:copper_coin', [GTMaterials.Copper, 1/9])
-
-	event.recipes.gtceu.forming_press('createdeco:industrial_iron_coin')
-		.itemInputs('#forge:nuggets/steel')
-		.notConsumable('gtceu:cylinder_casting_mold')
-		.itemOutputs('createdeco:industrial_iron_coin')
-		.duration(50)
-		.EUt(16)
-
-	TFGHelpers.registerMaterialInfo('createdeco:industrial_iron_coin', [GTMaterials.Steel, 1/9])
-
-	event.recipes.gtceu.forming_press('createdeco:zinc_coin')
-		.itemInputs('#forge:nuggets/zinc')
-		.notConsumable('gtceu:cylinder_casting_mold')
-		.itemOutputs('createdeco:zinc_coin')
-		.duration(50)
-		.EUt(16)
-
-	TFGHelpers.registerMaterialInfo('createdeco:zinc_coin', [GTMaterials.Zinc, 1/9])
+		TFGHelpers.registerMaterialInfo(coin.coin, [coin.material, 1/9])
+		TFGHelpers.registerMaterialInfo(`${coin.coin}stack`, [coin.material, 4/9])
+	})
 
 	// #region
 
