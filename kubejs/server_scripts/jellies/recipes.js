@@ -76,15 +76,15 @@ function registerJelliesRecipes(event) {
 		.EUt(GTValues.VA[GTValues.ULV])
 	
 	// Plant Slime Ball
-	event.shapeless('gtceu:plant_ball', ['jellies:jellie/slime_ball/plant', '#forge:tools/mortars'])
+	event.shapeless('2x gtceu:plant_ball', ['jellies:jellie/slime_ball/plant', '#forge:tools/mortars'])
 		.id('tfg:shapeless/mortar_plant_slime_ball')
 
-	event.recipes.tfc.quern('gtceu:plant_ball', 'jellies:jellie/slime_ball/plant')
+	event.recipes.tfc.quern('2x gtceu:plant_ball', 'jellies:jellie/slime_ball/plant')
 		.id('tfg:quern/plant_slime_ball')
 
 	event.recipes.gtceu.macerator('tfg:plant_slime_ball')
 		.itemInputs('jellies:jellie/slime_ball/plant')
-		.itemOutputs('gtceu:plant_ball')
+		.itemOutputs('2x gtceu:plant_ball')
 		.duration(50)
 		.EUt(GTValues.VA[GTValues.ULV])
 
