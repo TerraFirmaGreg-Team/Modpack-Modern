@@ -10057,29 +10057,8 @@
             },
             "files": [
                 {
-                    "type": "curseforge",
-                    "file_name": "Jellies-1.20.1-0.1.0.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8420/106/Jellies-1.20.1-0.1.0.jar",
-                    "id": "8420106",
-                    "parent_id": "1607526",
-                    "hashes": {
-                        "sha1": "809f06ea60b8b2ad358c4aaceae97e4706b88902",
-                        "md5": "6e60de56e040321bc01d180f1ee80f7e"
-                    },
-                    "required_dependencies": [],
-                    "size": 912355,
-                    "date_published": "2026-07-12T17:28:05.937Z"
-                },
-                {
                     "type": "modrinth",
-                    "file_name": "Jellies-1.20.1-0.1.0.jar",
+                    "file_name": "Jellies-1.20.1-0.1.3.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -10087,16 +10066,37 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/9uLmCnkY/versions/pjGw5MNu/Jellies-1.20.1-0.1.0.jar",
-                    "id": "pjGw5MNu",
+                    "url": "https://cdn.modrinth.com/data/9uLmCnkY/versions/F2IARDY3/Jellies-1.20.1-0.1.3.jar",
+                    "id": "F2IARDY3",
                     "parent_id": "9uLmCnkY",
                     "hashes": {
-                        "sha512": "ee1871e1052e5021e67b47f65fffc5da9a896b131213457ff7dcfdfb842d1eaa97927348057b687deefb94b1571101bb2844ddbaf40380f684f4d9e829ff6146",
-                        "sha1": "809f06ea60b8b2ad358c4aaceae97e4706b88902"
+                        "sha512": "31e6e1559469b2bd004351ea5642ce50d552aff509bb8a7136855f1b4a272a9c9987084f209f8efd7303567b1035f9c39651605fb74f219922be76aed4edd5ac",
+                        "sha1": "df66462c121ec1d305a9e41dc4623f9b8c60c9a9"
                     },
                     "required_dependencies": [],
-                    "size": 912355,
-                    "date_published": "2026-07-12T17:28:08.844942Z"
+                    "size": 967569,
+                    "date_published": "2026-08-01T23:13:43.564278Z"
+                },
+                {
+                    "type": "curseforge",
+                    "file_name": "Jellies-1.20.1-0.1.3.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8557/752/Jellies-1.20.1-0.1.3.jar",
+                    "id": "8557752",
+                    "parent_id": "1607526",
+                    "hashes": {
+                        "sha1": "df66462c121ec1d305a9e41dc4623f9b8c60c9a9",
+                        "md5": "e79d6a7f5be8806bdaf465fa7264bf19"
+                    },
+                    "required_dependencies": [],
+                    "size": 967569,
+                    "date_published": "2026-08-01T23:13:41.530Z"
                 }
             ]
         },

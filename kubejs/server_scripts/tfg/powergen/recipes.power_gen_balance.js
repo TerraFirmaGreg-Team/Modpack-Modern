@@ -38,6 +38,17 @@ function registerTFGPowerGenBalance(event) {
         .dimension('minecraft:overworld')
 		.dimension('minecraft:the_nether')
 
+	// Adjust methane
+
+	event.remove({ id: 'gtceu:gas_turbine/methane' })
+
+	event.recipes.gtceu.gas_turbine('tfg:methane') // Gas Turbine
+		.inputFluids(Fluid.of('gtceu:methane', 1))
+		.EUt(-(32))
+		.duration(20*0.15)
+		.dimension('minecraft:overworld')
+		.dimension('minecraft:the_nether')
+
     // Remove Light fuel ability as a fuel
 
 	event.remove({ id: 'gtceu:combustion_generator/sulfuric_light_fuel' })
