@@ -86,8 +86,6 @@ const NEW_MOB_ARMOR = {
 const NEEDS_FIREPROOFING = [
 	"minecraft:bat",
 	"minecraft:hoglin",
-	"minecraft:stray",
-	'ad_astra:corrupted_lunarian',
 	"primitive_creatures:golem_2",
 	"endermanoverhaul:savanna_enderman",
 	"endermanoverhaul:desert_enderman",
