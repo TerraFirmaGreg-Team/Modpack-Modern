@@ -278,6 +278,39 @@
             ]
         },
         {
+            "pakku_id": "kvWzLaoM9L3XxwtR",
+            "type": "RESOURCE_PACK",
+            "slug": {
+                "curseforge": "accurate-tfg-create-machines"
+            },
+            "name": {
+                "curseforge": "Accurate TFG Create Machines"
+            },
+            "id": {
+                "curseforge": "1636299"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "tfg-accurate-create-machines.zip",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8561/627/tfg-accurate-create-machines.zip",
+                    "id": "8561627",
+                    "parent_id": "1636299",
+                    "hashes": {
+                        "sha1": "9ca3f5c77aa0838cbca8f9bb30f8e891e825b2e1",
+                        "md5": "7de3dc389663640233af70e63a46bd8a"
+                    },
+                    "required_dependencies": [],
+                    "size": 136345,
+                    "date_published": "2026-08-02T13:25:41.673Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "rjOX4EXWlGvG84kO",
             "pakku_links": [
                 "R14GIz0WdkeNLuXD",
