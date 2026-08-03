@@ -16,6 +16,7 @@
 - Adjusted the climates of polar and tundra start to make them more different - polar is now more dry, while tundra is more humid @Pyritie
 - Added more things to count as firepit logs, fuel, and kindling, so now polar start can actually make firepits (such as driftwood, moss, and animal fat) @Pyritie
 - Calcite dust now counts as fluxstone, and added the ability to quern stone blocks into dusts @Pyritie
+- Increased spawn rates of all herbs and spices (from 1/80 chunks to 1/50 chunks) @Pyritie
 #### Other changes
 - Added some spooky photos to some chest loot tables @Pyritie
 - Added coins to some loot tables, and made coins meltable @Pyritie
