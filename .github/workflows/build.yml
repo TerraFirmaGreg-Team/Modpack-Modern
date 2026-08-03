@@ -351,7 +351,7 @@ jobs:
           sed -i -e "s/MINECRAFT_VERSION/${MINECRAFT_VERSION}/g" .pakku/server-overrides/forge-auto-install.txt
           sed -i -e "s/MINECRAFT_VERSION/${MINECRAFT_VERSION}/g" .pakku/docker-overrides/docker-compose.yml
 
-          cp -vf ./config/fancymenu/assets/icons/icon32x32.png .pakku/server-overrides/server-icon.png
+          cp -vf ./config/fancymenu/assets/icons/icon64x64.png .pakku/server-overrides/server-icon.png
 
       - name: Cache Pakku
         uses: actions/cache@v6
