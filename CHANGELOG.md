@@ -7,6 +7,7 @@
 - Added a resource pack which retextures a lot of Create things to better match the materials you craft them out of. It's a resource pack so you can disable it if you don't like the changes @Pyritie
 - Reduced the consumption rate of steam, cooking oils, and lava inside blaze burners @Pyritie
 #### TFC
+- Reduced the speed at which items passively cool down (so smithing some metals with low melting points is a little easier), but increased the rate at which food decays *on servers using the default settings* (single player is not affected) - servers are of course free to change these as they like @Pyritie
 - Added "time to grow" tooltips to wood saplings @Redeix
 - Backported TFC's glassblowing changes from 1.21, which includes a shorter cooldown and information on what action you're about to do @Redeix
 - This was actually added back with the palm crops, but now if you hold a rope coil in your offhand, thrown javelins return to you. Also added a new quest and tooltip about this @Redeix
@@ -14,16 +15,18 @@
 - Blocks that can be broken for straw now show up in EMI (should help Beneath starts) @Pyritie
 - Adjusted the climates of polar and tundra start to make them more different - polar is now more dry, while tundra is more humid @Pyritie
 - Added more things to count as firepit logs, fuel, and kindling, so now polar start can actually make firepits (such as driftwood, moss, and animal fat) @Pyritie
+- Calcite dust now counts as fluxstone, and added the ability to quern stone blocks into dusts @Pyritie
 #### Other changes
 - Added some spooky photos to some chest loot tables @Pyritie
 - Added coins to some loot tables, and made coins meltable @Pyritie
 - Reduced the drop chance of weapons and equipment from piglin brutes @Pyritie
 - Jellie slime balls can now be crafted into "plain" slime balls @Pyritie
-- Added a new amethyst/opal/red garnet ore vein to the overworld @Pyritie
+- Added a new amethyst/opal/red garnet ore vein to the overworld, and changed the ore processing byproducts of amethyst and opal @Pyritie
 - Added new Gilsonite and Obsidian block sets @Atraxia
 - Stone dusts can now also be turned into Mortar and Crushed Base Course (#4648) @Redeix
 - Changed the textures of wrought iron and stainless steel firmalife greenhouses again to better match the material textures @Pyritie
-- Added a sleep paralysis demon @Redeix
+- Vanadium magnetite ore/dust can now also be directly smelted into cast iron @Pyritie
+- Removed gregbrine @Redeix
 ### Bug fixes
 - Fixed not being able to break Additional Placements blocks @Pyritie @Redeix
 - Fixed a crash if you had steam being pumped into a blaze burner @Pyritie
@@ -35,7 +38,10 @@
 - Fixed not being able to mattock dirt paths of the new dirt types @Pyritie
 - Fixed not being able to craft chocolate ice cream again @Redeix
 - Fixed arundo only being craftable into green compost and not also brown (#4637) @Vazde
+- Fixed not being able to put pyrite powder or lapis powder in a crucible @Pyritie
 ### Mods
+#### Jellies
+- Fixed not being able to breed jellies together
 #### Create: Hypertubes
 - Added Hypertube Splitter
 - Tubes now have collision
