@@ -575,12 +575,7 @@ function registerTFGOverworldEntityTypeTags(event) {
 
 	event.add('tfg:slimes', 'minecraft:slime')
 	event.add('tfg:slimes', 'minecraft:magma_cube')
-	event.add('tfg:slimes', 'jellies:glowberry')
-	event.add('tfg:slimes', 'jellies:ice')
-	event.add('tfg:slimes', 'jellies:latex')
-	event.add('tfg:slimes', 'jellies:lava')
-	event.add('tfg:slimes', 'jellies:plant')
-	event.add('tfg:slimes', 'jellies:spring')
+	event.add('tfg:slimes', '#jellies:jellie')
 
 	// Takes no damage from the new 1.21 cacti
 	event.add('tfg:ignores_cacti', 'waves:waves')
@@ -597,6 +592,7 @@ function registerTFGOverworldEntityTypeTags(event) {
 	event.add('tfc:hunted_by_ocean_predators', 'tfc:turtle')
 
 	event.add('tfc:land_prey', 'tfg:leopard_seal')
+	event.add('tfc:land_prey', '#jellies:jellie')
 
 	event.add('tfc:hunted_by_dogs', 'tfg:jerboa')
 	event.add('tfc:hunted_by_dogs', 'tfg:lemming')

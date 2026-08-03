@@ -63,6 +63,43 @@ function registerTFGFauna(event) {
 		},
 		"tfg:mongoose")
 
+	// Jellies
+	event.fauna(
+		climate => {
+			climate.minTemp(1)
+			climate.maxTemp(10)
+			climate.minRain(150)
+			climate.minForest('normal')
+		},
+		faunaData => {
+			faunaData.chance(4)
+			faunaData.solidGround(true)
+		},
+		"jellies:herbal")
+
+	event.fauna(
+		climate => {
+			climate.minTemp(-10)
+			climate.maxTemp(0)
+			climate.minRain(150)
+			climate.minForest('normal')
+		},
+		faunaData => {
+			faunaData.chance(4)
+			faunaData.solidGround(true)
+		},
+		"jellies:phosphorum")
+
+	event.fauna(
+		climate => {
+			climate.maxForest('edge')
+		},
+		faunaData => {
+			faunaData.chance(4)
+			faunaData.solidGround(true)
+		},
+		"jellies:rock")
+
 	// MARS FAUNA
 	// -108 is the average at z=-4k to z=-6k, which feels like a big enough band
 	event.fauna(

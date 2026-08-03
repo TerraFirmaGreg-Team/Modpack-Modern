@@ -4,12 +4,18 @@
 TFCEvents.registerFaunas(event => {
 	const $SpawnPlacements = Java.loadClass("net.minecraft.world.entity.SpawnPlacements")
 
+	// Earth
 	event.replace("tfg:bison", $SpawnPlacements.Type.ON_GROUND, "ocean_floor");
 	event.replace("tfg:jerboa", $SpawnPlacements.Type.ON_GROUND, "ocean_floor");
 	event.replace("tfg:lemming", $SpawnPlacements.Type.ON_GROUND, "ocean_floor");
 	event.replace("tfg:mongoose", $SpawnPlacements.Type.ON_GROUND, "ocean_floor");
 	event.replace("tfg:leopard_seal", $SpawnPlacements.Type.NO_RESTRICTIONS, "ocean_floor");
+	
+	event.replace("jellies:herbal", $SpawnPlacements.Type.NO_RESTRICTIONS, "motion_blocking_no_leaves");
+	event.replace("jellies:phosphorum", $SpawnPlacements.Type.NO_RESTRICTIONS, "motion_blocking_no_leaves");
+	event.replace("jellies:rock", $SpawnPlacements.Type.NO_RESTRICTIONS, "motion_blocking_no_leaves");
 
+	// Mars
 	event.replace("tfg:glacian_ram", $SpawnPlacements.Type.ON_GROUND, "ocean_floor");
 	event.replace("tfg:sniffer", $SpawnPlacements.Type.ON_GROUND, "ocean_floor");
 	event.replace("tfg:wraptor", $SpawnPlacements.Type.ON_GROUND, "ocean_floor");
