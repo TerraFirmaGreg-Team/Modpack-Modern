@@ -12,6 +12,7 @@
 - This was actually added back with the palm crops, but now if you hold a rope coil in your offhand, thrown javelins return to you. Also added a new quest and tooltip about this @Redeix
 - The Unposter can now also grow more flowers @Pyritie
 - Blocks that can be broken for straw now show up in EMI (should help Beneath starts) @Pyritie
+- Adjusted the climates of polar and tundra start to make them more different - polar is now more dry, while tundra is more humid @Pyritie
 - Added more things to count as firepit logs, fuel, and kindling, so now polar start can actually make firepits (such as driftwood, moss, and animal fat) @Pyritie
 #### Other changes
 - Added some spooky photos to some chest loot tables @Pyritie
@@ -19,7 +20,7 @@
 - Reduced the drop chance of weapons and equipment from piglin brutes @Pyritie
 - Jellie slime balls can now be crafted into "plain" slime balls @Pyritie
 - Added a new amethyst/opal/red garnet ore vein to the overworld @Pyritie
-- Added a new Gilsonite block set @Atraxia
+- Added new Gilsonite and Obsidian block sets @Atraxia
 - Stone dusts can now also be turned into Mortar and Crushed Base Course (#4648) @Redeix
 - Changed the textures of wrought iron and stainless steel firmalife greenhouses again to better match the material textures @Pyritie
 - Added a sleep paralysis demon @Redeix

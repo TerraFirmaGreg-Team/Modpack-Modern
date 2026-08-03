@@ -367,6 +367,22 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 		tfcTag: 'tfc:metamorphic_items',
 		gravelTag: 'tfc:white_gravel'
 	}),
+	"obsidian": {
+		material: "gtceu:obsidian",
+		stonecutterTag: 'tfg:stone_types/obsidian',
+		isTFC: false,
+		collapsible: false,
+		hardness: 10,
+		resistance: 1200,
+		mapColor: 'color_black',
+		raw: generateFormsExisting('obsidian', 'tfg:rock/%s', {
+			block: 'minecraft:obsidian',
+			texture: 'minecraft:block/obsidian'
+		}),
+		bricks: generateForms('obsidian', 'tfg:rock/%s_bricks'),
+		polished: generateForms('obsidian', 'tfg:rock/smooth_%s'),
+		chiseled: generateForms('obsidian', 'tfg:rock/chiseled_%s'),
+	},
 
 	/////////////////////////////////////////////////////////////////////////////////////////////
 	// BENEATH ROCKS
@@ -581,11 +597,8 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 		collapsible: false,
 		sound: 'bone_block',
 		mapColor: 'color_black',
-		raw: generateFormsExisting('gilsonite', 'tfg:%s', {
+		raw: generateFormsExisting('gilsonite', 'tfg:rock/%s', { 
 			block: 'tfg:gilsonite',
-			stair: 'tfg:rock/gilsonite_stairs',
-			slab: 'tfg:rock/gilsonite_slab',
-			wall: 'tfg:rock/gilsonite_wall',
 			texture: 'tfg:block/fluid_vein/gilsonite'
 		}),
 		bricks: generateForms('gilsonite', 'tfg:rock/%s_bricks'),

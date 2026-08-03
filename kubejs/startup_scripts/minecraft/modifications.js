@@ -42,9 +42,15 @@ function registerMinecraftItemModifications(event) {
 }
 
 function registerMinecraftBlockModifications(event) {
-
 	event.modify('minecraft:cherry_leaves', block => {
-		block.hasCollision = false
+		// No idea why Figura doesn't like 'hasCollision'
+		if (!Platform.isLoaded("figura")) {
+			block.hasCollision = false
+		}
 		block.speedFactor = 0.25
+	})
+
+	event.modify('minecraft:obsidian', block => {
+		block.destroySpeed = 10;
 	})
 }
