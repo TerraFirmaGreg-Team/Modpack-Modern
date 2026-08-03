@@ -9913,7 +9913,7 @@
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "Jellies-1.20.1-0.1.2.jar",
+                    "file_name": "Jellies-1.20.1-0.1.3.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -9921,16 +9921,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8549/493/Jellies-1.20.1-0.1.2.jar",
-                    "id": "8549493",
+                    "url": "https://edge.forgecdn.net/files/8557/752/Jellies-1.20.1-0.1.3.jar",
+                    "id": "8557752",
                     "parent_id": "1607526",
                     "hashes": {
-                        "sha1": "979c197fec4fc4dc94dfd404c4ed6b2da7d3674d",
-                        "md5": "1db4ad7baaaebf1d1d5c04d115129433"
+                        "sha1": "df66462c121ec1d305a9e41dc4623f9b8c60c9a9",
+                        "md5": "e79d6a7f5be8806bdaf465fa7264bf19"
                     },
                     "required_dependencies": [],
-                    "size": 967180,
-                    "date_published": "2026-07-31T20:14:54.547Z"
+                    "size": 967569,
+                    "date_published": "2026-08-01T23:13:41.530Z"
                 }
             ]
         },
