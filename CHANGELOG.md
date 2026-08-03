@@ -27,6 +27,7 @@
 - Stone dusts can now also be turned into Mortar and Crushed Base Course (#4648) @Redeix
 - Changed the textures of wrought iron and stainless steel firmalife greenhouses again to better match the material textures @Pyritie
 - Vanadium magnetite ore/dust can now also be directly smelted into cast iron @Pyritie
+- Hostile moon mobs no longer catch fire from the sun on the moon @Pyritie
 - Removed gregbrine @Redeix
 ### Bug fixes
 - Fixed not being able to break Additional Placements blocks @Pyritie @Redeix
