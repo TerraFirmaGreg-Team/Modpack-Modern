@@ -142,6 +142,17 @@ function registerTFGOverworldBlockTags(event) {
 	event.add("tfc:monster_spawns_on", "tfg:pelitic_hornfels");
 	event.add("tfc:monster_spawns_on", "minecraft:packed_ice");
 	event.add("tfc:monster_spawns_on", "minecraft:blue_ice");
+
+	event.add('tfg:camel_faster_on', '#tfc:coarse_dirt')
+	event.add('tfg:camel_faster_on', '#forge:gravels')
+	event.add('tfg:camel_faster_on', '#forge:sands')
+	event.add('tfg:camel_faster_on', 'tfc:raw_sandstone/brown')
+	event.add('tfg:camel_faster_on', 'tfc:raw_sandstone/white')
+	event.add('tfg:camel_faster_on', 'tfc:raw_sandstone/black')
+	event.add('tfg:camel_faster_on', 'tfc:raw_sandstone/red')
+	event.add('tfg:camel_faster_on', 'tfc:raw_sandstone/yellow')
+	event.add('tfg:camel_faster_on', 'tfc:raw_sandstone/green')
+	event.add('tfg:camel_faster_on', 'tfc:raw_sandstone/pink')
 }
 
 function registerTFGOverworldBiomeTags(event) {
