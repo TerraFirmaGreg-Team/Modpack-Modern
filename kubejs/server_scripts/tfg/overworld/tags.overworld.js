@@ -583,6 +583,8 @@ function registerTFGOverworldEntityTypeTags(event) {
 	event.add('tfg:ignores_cacti', 'tfc:horse')
 	event.add('tfg:ignores_cacti', 'tfc:donkey')
 	event.add('tfg:ignores_cacti', 'tfc:mule')
+	event.add('tfg:ignores_cacti', 'tfg:dromedary_camel')
+	event.add('tfg:ignores_cacti', 'tfg:bactrian_camel')
 
 	event.add('tfc:amphibious_creatures', 'tfg:leopard_seal')
 	event.add('tfc:spawns_on_cold_blocks', 'tfg:leopard_seal')
@@ -592,6 +594,8 @@ function registerTFGOverworldEntityTypeTags(event) {
 	event.add('tfc:hunted_by_ocean_predators', 'tfc:turtle')
 
 	event.add('tfc:land_prey', 'tfg:leopard_seal')
+	event.add('tfc:land_prey', 'tfg:dromedary_camel')
+	event.add('tfc:land_prey', 'tfg:bactrian_camel')
 	event.add('tfc:land_prey', '#jellies:jellie')
 
 	event.add('tfc:hunted_by_dogs', 'tfg:jerboa')
@@ -604,4 +608,9 @@ function registerTFGOverworldEntityTypeTags(event) {
 	event.add('tfg:not_rammed_by_rammers', '#tfc:bubble_column_immune')
 	event.add('tfg:not_rammed_by_rammers', '#tfc:pests')
 	event.add('tfg:not_rammed_by_rammers', 'tfc:frog')
+
+	event.add('tfg:ramming_animals', 'tfc:boar')
+	event.add('tfg:ramming_animals', 'tfc:moose')
+	event.add('tfg:ramming_animals', 'tfc:wildebeest')
+	event.add('tfg:ramming_animals', 'tfg:bison')
 }
