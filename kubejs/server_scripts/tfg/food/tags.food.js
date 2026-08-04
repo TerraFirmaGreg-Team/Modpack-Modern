@@ -334,6 +334,9 @@ function registerTFGFoodItemTags(event) {
 	event.add('tfc:rabbit_food', 'minecraft:chorus_fruit')
 	event.add('tfc:rabbit_food', 'minecraft:popped_chorus_fruit')
 
+	event.add('tfg:camel_food', '#tfc:foods/grains')
+	event.add('tfg:camel_food', '#tfc:foods/fruits')
+
 	event.add('tfc:foods', 'ad_astra:cheese')
 	event.add('tfc:foods/dairy', 'ad_astra:cheese')
 	event.add('tfc:foods/usable_in_sandwich', 'ad_astra:cheese')
