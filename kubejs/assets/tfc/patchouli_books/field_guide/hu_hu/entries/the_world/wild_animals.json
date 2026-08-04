@@ -71,7 +71,7 @@
 			"type": "patchouli:entity",
 			"entity": "tfc:sabertooth",
 			"scale": 0.6,
-			"name": "Kardfogú Tigris",
+			"name": "Kardfogú tigris",
 			"text": "The sabertooth spawns at any $(l:the_world/climate#temperature)temperature$() above 0°C, and any $(l:the_world/climate#rainfall)rainfall$() above 250mm."
 		},
 		{
