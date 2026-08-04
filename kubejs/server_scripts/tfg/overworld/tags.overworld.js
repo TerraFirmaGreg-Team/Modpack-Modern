@@ -143,9 +143,16 @@ function registerTFGOverworldBlockTags(event) {
 	event.add("tfc:monster_spawns_on", "minecraft:packed_ice");
 	event.add("tfc:monster_spawns_on", "minecraft:blue_ice");
 
-	event.add('tfg:camel_faster_on', '#tfc:coarse_dirt')
-	event.add('tfg:camel_faster_on', '#forge:gravels')
-	event.add('tfg:camel_faster_on', '#forge:sands')
+	event.add('tfg:camel_faster_on', 'tfg:coarse_dirt/silty_loam')
+	event.add('tfg:camel_faster_on', 'tfg:coarse_dirt/sandy_loam')
+	event.add('tfg:camel_faster_on', 'tfg:coarse_dirt/silt')
+	event.add('tfg:camel_faster_on', 'tfg:coarse_dirt/loam')
+	event.add('tfg:camel_faster_on', 'tfg:coarse_dirt/alfisol')
+	event.add('tfg:camel_faster_on', 'tfg:coarse_dirt/mollisol')
+	event.add('tfg:camel_faster_on', 'tfg:coarse_dirt/oxisol')
+	event.add('tfg:camel_faster_on', 'tfg:coarse_dirt/podzol')
+	event.add('tfg:camel_faster_on', '#forge:gravel')
+	event.add('tfg:camel_faster_on', '#forge:sand')
 	event.add('tfg:camel_faster_on', 'tfc:raw_sandstone/brown')
 	event.add('tfg:camel_faster_on', 'tfc:raw_sandstone/white')
 	event.add('tfg:camel_faster_on', 'tfc:raw_sandstone/black')
