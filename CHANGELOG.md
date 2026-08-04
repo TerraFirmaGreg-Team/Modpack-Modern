@@ -46,6 +46,7 @@
 - Fixed arundo only being craftable into green compost and not also brown (#4637) @Vazde
 - Fixed not being able to put pyrite powder or lapis powder in a crucible @Pyritie
 - Fixed metal spindles not inheriting forging bonuses when crafted from their heads (#4669) @Pyritie
+- Fixed soups made in a food processor having the wrong nutrient/saturation multipliers @Pyritie
 ### Mods
 #### Jellies
 - Added new jellies! Three in the overworld, one on the moon, and one on mars. @SakuraKitsurugi

@@ -314,6 +314,7 @@ function registerTFGFoodItemTags(event) {
 	event.add('tfc:foods/usable_in_soup', 'minecraft:glow_berries')
 	event.add('tfc:foods/usable_in_soup', 'minecraft:chorus_fruit')
 	event.add('tfc:foods/usable_in_soup', 'minecraft:popped_chorus_fruit')
+	event.add('tfc:foods/usable_in_soup', '#tfg:martian_herbivore_foods')
 	
 	// Make eggs not useless
     event.add('tfc:foods/usable_in_salad', 'firmalife:food/pickled_egg')
