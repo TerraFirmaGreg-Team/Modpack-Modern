@@ -5,7 +5,7 @@
 		#Determines if this container will automatically pickup items
 		doPickup = true
 		#Determines if this container can void items on pickup
-		doVoiding = true
+		doVoiding = false
 		#Determines if this container can transfer items in an inventory
 		doInventoryTransfer = true
 		#Controls the amount of slots this container has
@@ -13,16 +13,16 @@
 		slotCount = 4
 		#Item stack max for the type of container
 		#Range: 1 ~ 512
-		slotCap = 32
+		slotCap = 16
 		#The maximum item size allowed in the container
 		#Allowed Values: TINY, VERY_SMALL, SMALL, NORMAL, LARGE, VERY_LARGE, HUGE
-		allowedSize = "NORMAL"
+		allowedSize = "SMALL"
 
 	["Container Item Config"."Leather Sack"]
 		#Determines if this container will automatically pickup items
-		doPickup = false
+		doPickup = true
 		#Determines if this container can void items on pickup
-		doVoiding = false
+		doVoiding = true
 		#Determines if this container can transfer items in an inventory
 		doInventoryTransfer = true
 		#Controls the amount of slots this container has
@@ -41,13 +41,13 @@
 		#Determines if this container can void items on pickup
 		doVoiding = true
 		#Determines if this container can transfer items in an inventory
-		doInventoryTransfer = false
+		doInventoryTransfer = true
 		#Controls the amount of slots this container has
 		#Range: 1 ~ 27
 		slotCount = 8
 		#Item stack max for the type of container
 		#Range: 1 ~ 512
-		slotCap = 48
+		slotCap = 64
 		#The maximum item size allowed in the container
 		#Allowed Values: TINY, VERY_SMALL, SMALL, NORMAL, LARGE, VERY_LARGE, HUGE
 		allowedSize = "NORMAL"
@@ -56,7 +56,7 @@
 		#Determines if this container will automatically pickup items
 		doPickup = true
 		#Determines if this container can void items on pickup
-		doVoiding = false
+		doVoiding = true
 		#Determines if this container can transfer items in an inventory
 		doInventoryTransfer = true
 		#Controls the amount of slots this container has
@@ -88,11 +88,11 @@
 
 	["Container Item Config"."Frame Pack"]
 		#Determines if this container will automatically pickup items
-		doPickup = false
+		doPickup = true
 		#Determines if this container can void items on pickup
-		doVoiding = false
+		doVoiding = true
 		#Determines if this container can transfer items in an inventory
-		doInventoryTransfer = false
+		doInventoryTransfer = true
 		#Controls the amount of slots this container has
 		#Range: 1 ~ 27
 		slotCount = 18
@@ -126,7 +126,7 @@
 		#Determines if this container can void items on pickup
 		doVoiding = false
 		#Determines if this container can transfer items in an inventory
-		doInventoryTransfer = false
+		doInventoryTransfer = true
 		#Controls the amount of slots this container has
 		#Range: 1 ~ 27
 		slotCount = 8
