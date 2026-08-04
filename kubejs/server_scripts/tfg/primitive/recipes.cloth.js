@@ -139,14 +139,14 @@ function registerTFGClothRecipes(event) {
 	].concat(spindle_metals_cast)
 	
 	spindle_metals.forEach(spindle => {
-		
-		event.shaped(`tfg:${spindle.metal}_spindle`, [
-			'A',
-			'B'
-		], {
-			A: `tfg:${spindle.metal}_spindle_head`,
-			B: '#forge:rods/wooden'
-		}).id(`tfg:shaped/${spindle.metal}_spindle`)
+		event.recipes.tfc.advanced_shaped_crafting(
+			TFC.itemStackProvider.of(`tfg:${spindle.metal}_spindle`).copyForgingBonus(), [
+				'A',
+				'B'
+			], {
+				A: `tfg:${spindle.metal}_spindle_head`,
+				B: '#forge:rods/wooden'
+			}, 0, 0).id(`tfg:shaped/${spindle.metal}_spindle`)
 		
 		event.recipes.tfc.anvil(
 			`tfg:${spindle.metal}_spindle_head`,

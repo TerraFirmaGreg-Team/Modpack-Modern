@@ -21,13 +21,14 @@
 - Added some spooky photos to some chest loot tables @Pyritie
 - Added coins to some loot tables, and made coins meltable @Pyritie
 - Reduced the drop chance of weapons and equipment from piglin brutes @Pyritie
-- Jellie slime balls can now be crafted into "plain" slime balls @Pyritie
 - Added a new amethyst/opal/red garnet ore vein to the overworld, and changed the ore processing byproducts of amethyst and opal @Pyritie
 - Added new Gilsonite and Obsidian block sets @Atraxia
 - Stone dusts can now also be turned into Mortar and Crushed Base Course (#4648) @Redeix
 - Changed the textures of wrought iron and stainless steel firmalife greenhouses again to better match the material textures @Pyritie
 - Vanadium magnetite ore/dust can now also be directly smelted into cast iron @Pyritie
 - Hostile moon mobs no longer catch fire from the sun on the moon @Pyritie
+- Naquadah in the Ostrum Linear Accelerator no longer requires radioactive effluent (#4675) @ashleney
+- Methane is now burned in 1mB input amounts so you won't get tiny amounts of it stuck in a gas turbine any more (#4663) @applnper
 - Removed gregbrine @Redeix
 ### Bug fixes
 - Fixed not being able to break Additional Placements blocks @Pyritie @Redeix
@@ -41,9 +42,12 @@
 - Fixed not being able to craft chocolate ice cream again @Redeix
 - Fixed arundo only being craftable into green compost and not also brown (#4637) @Vazde
 - Fixed not being able to put pyrite powder or lapis powder in a crucible @Pyritie
+- Fixed metal spindles not inheriting forging bonuses when crafted from their heads (#4669) @Pyritie
 ### Mods
 #### Jellies
-- Fixed not being able to breed jellies together
+- Added new jellies! Three in the overworld, one on the moon, and one on mars. @SakuraKitsurugi
+- Fixed not being able to breed jellies together @SakuraKitsurugi
+- Jellie slime balls can now be crafted into "plain" slime balls @Pyritie
 #### Create: Hypertubes
 - Added Hypertube Splitter
 - Tubes now have collision
