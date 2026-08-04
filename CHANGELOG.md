@@ -30,6 +30,7 @@
 - Naquadah in the Ostrum Linear Accelerator no longer requires radioactive effluent (#4675) @ashleney
 - Methane is now burned in 1mB input amounts so you won't get tiny amounts of it stuck in a gas turbine any more (#4663) @applnper
 - Mobs on every other dimension besides the overworld should now only spawn on "natural" blocks, matching overworld behaviour (except they can also spawn on the world surface) @Pyritie
+- Increased the sapling drop rate for beech and mahoe trees (#4545) @Pyritie
 - Removed gregbrine @Redeix
 ### Bug fixes
 - Fixed not being able to break Additional Placements blocks @Pyritie @Redeix
