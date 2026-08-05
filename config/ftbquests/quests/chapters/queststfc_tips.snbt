@@ -251,6 +251,11 @@
 					title: "{quests.tfg_tips.cellar.task}"
 					type: "item"
 				}
+				{
+					id: "283A3FD854C80401"
+					item: "firmalife:climate_station"
+					type: "item"
+				}
 			]
 			title: "{quests.tfg_tips.cellar.title}"
 			x: 1.5d
