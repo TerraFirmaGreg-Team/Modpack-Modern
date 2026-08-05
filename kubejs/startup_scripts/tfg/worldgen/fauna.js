@@ -13,7 +13,19 @@ TFCEvents.registerFaunas(event => {
 	
 	event.replace("jellies:herbal", $SpawnPlacements.Type.NO_RESTRICTIONS, "motion_blocking_no_leaves");
 	event.replace("jellies:phosphorum", $SpawnPlacements.Type.NO_RESTRICTIONS, "motion_blocking_no_leaves");
-	event.replace("jellies:rock", $SpawnPlacements.Type.NO_RESTRICTIONS, "motion_blocking_no_leaves");
+
+	event.replace("fowlplay:blue_jay", $SpawnPlacements.Type.NO_RESTRICTIONS, "world_surface");
+	event.replace("fowlplay:cardinal", $SpawnPlacements.Type.NO_RESTRICTIONS, "world_surface");
+	event.replace("fowlplay:chickadee", $SpawnPlacements.Type.NO_RESTRICTIONS, "world_surface");
+	event.replace("fowlplay:crow", $SpawnPlacements.Type.NO_RESTRICTIONS, "world_surface");
+	event.replace("fowlplay:goose", $SpawnPlacements.Type.NO_RESTRICTIONS, "world_surface");
+	event.replace("fowlplay:gull", $SpawnPlacements.Type.NO_RESTRICTIONS, "world_surface");
+	event.replace("fowlplay:hawk", $SpawnPlacements.Type.NO_RESTRICTIONS, "world_surface");
+	event.replace("fowlplay:penguin", $SpawnPlacements.Type.NO_RESTRICTIONS, "world_surface");
+	event.replace("fowlplay:pigeon", $SpawnPlacements.Type.NO_RESTRICTIONS, "world_surface");
+	event.replace("fowlplay:raven", $SpawnPlacements.Type.NO_RESTRICTIONS, "world_surface");
+	event.replace("fowlplay:robin", $SpawnPlacements.Type.NO_RESTRICTIONS, "world_surface");
+	event.replace("fowlplay:sparrow", $SpawnPlacements.Type.NO_RESTRICTIONS, "world_surface");
 
 	// Mars
 	event.replace("tfg:glacian_ram", $SpawnPlacements.Type.ON_GROUND, "ocean_floor");
