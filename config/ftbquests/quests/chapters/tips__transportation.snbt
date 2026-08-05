@@ -434,20 +434,12 @@
 		}
 	]
 	order_index: 1
-	quest_links: [
-		{
-			id: "704C995D4B6CE874"
-			linked_quest: "46C92B938921A0AC"
-			x: 4.5d
-			y: -3.5d
-		}
-		{
-			id: "3D5204E3B8DF1754"
-			linked_quest: "02854A3E8A5D5043"
-			x: 4.5d
-			y: 0.5d
-		}
-	]
+	quest_links: [{
+		id: "704C995D4B6CE874"
+		linked_quest: "46C92B938921A0AC"
+		x: 4.5d
+		y: 0.5d
+	}]
 	quests: [
 		{
 			dependencies: ["2746958D3D4A0885"]
