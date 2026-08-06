@@ -5463,76 +5463,6 @@
             ]
         },
         {
-            "pakku_id": "9qu4ykllIgaf9Rzk",
-            "pakku_links": [
-                "pZzT9Td5lfhTMVmJ"
-            ],
-            "type": "MOD",
-            "side": "CLIENT",
-            "slug": {
-                "curseforge": "distraction-free-recipes",
-                "modrinth": "distraction-free-recipes"
-            },
-            "name": {
-                "curseforge": "Distraction Free Recipes (EMI / REI / JEI)",
-                "modrinth": "Distraction Free Recipes (EMI / REI / JEI)"
-            },
-            "id": {
-                "curseforge": "1167848",
-                "modrinth": "gbJLUhZP"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "distraction_free_recipes-forge-1.2.1-1.20.1.jar",
-                    "mc_versions": [
-                        "1.20.1",
-                        "1.20"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6110/178/distraction_free_recipes-forge-1.2.1-1.20.1.jar",
-                    "id": "6110178",
-                    "parent_id": "1167848",
-                    "hashes": {
-                        "sha1": "8cb739a7b1707d535b29a01e8b7d45e31d2874c0",
-                        "md5": "093eb577627f1707e64575b4d767b529"
-                    },
-                    "required_dependencies": [
-                        "1104882"
-                    ],
-                    "size": 241822,
-                    "date_published": "2025-01-21T15:35:56.757Z"
-                },
-                {
-                    "type": "modrinth",
-                    "file_name": "distraction_free_recipes-forge-1.2.1-1.20.1.jar",
-                    "mc_versions": [
-                        "1.20",
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/gbJLUhZP/versions/tmdAnJOP/distraction_free_recipes-forge-1.2.1-1.20.1.jar",
-                    "id": "tmdAnJOP",
-                    "parent_id": "gbJLUhZP",
-                    "hashes": {
-                        "sha512": "5d5a10b33b597a0eb2d4204f3b5db3aff17fbec9d4480845446f168ce01a4be856890e96c82c8d762bd9d58b5d7b7ffae7db1fd5890f44ec95aca4bd279606c7",
-                        "sha1": "8cb739a7b1707d535b29a01e8b7d45e31d2874c0"
-                    },
-                    "required_dependencies": [
-                        "vBbPDuOs"
-                    ],
-                    "size": 241822,
-                    "date_published": "2025-01-21T15:35:59.132603Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "lv9zy1yqw8z5AIQb",
             "type": "MOD",
             "side": "BOTH",
@@ -8088,6 +8018,80 @@
                     "required_dependencies": [],
                     "size": 5630,
                     "date_published": "2023-10-08T21:35:01.440637Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "zmhWyb7IMRr5SlIp",
+            "pakku_links": [
+                "x1EwQZ6H2kVKR3U3",
+                "X9FGabMONJK1VhDR",
+                "ScveDDpCjKro99ki"
+            ],
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "curseforge": "fowlplay",
+                "modrinth": "fowlplay"
+            },
+            "name": {
+                "curseforge": "Fowl Play",
+                "modrinth": "Fowl Play"
+            },
+            "id": {
+                "curseforge": "1246320",
+                "modrinth": "WpXfePbg"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "fowlplay-1.2.3+1.20.1-forge.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8578/733/fowlplay-1.2.3+1.20.1-forge.jar",
+                    "id": "8578733",
+                    "parent_id": "1246320",
+                    "hashes": {
+                        "sha1": "dcafd69f5199b73078213fff06786b08c5307a43",
+                        "md5": "9e33c161f4214777be83b98e5ec5a545"
+                    },
+                    "required_dependencies": [
+                        "419699",
+                        "661293",
+                        "667299"
+                    ],
+                    "size": 3299170,
+                    "date_published": "2026-08-04T22:13:37.913Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "fowlplay-1.2.3+1.20.1-forge.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/WpXfePbg/versions/R0J5mu1D/fowlplay-1.2.3+1.20.1-forge.jar",
+                    "id": "R0J5mu1D",
+                    "parent_id": "WpXfePbg",
+                    "hashes": {
+                        "sha512": "dfb5b1f2cfc7412e0e4c36e5e7802fb1730d97123d0f4337951217a071ed72cccc3fcf73172a8ef0dcc35254c5bcf61cd27e92ef036a146dcee3149b566b3498",
+                        "sha1": "dcafd69f5199b73078213fff06786b08c5307a43"
+                    },
+                    "required_dependencies": [
+                        "1eAoo2KR",
+                        "PuyPazRT",
+                        "lhGA9TYQ"
+                    ],
+                    "size": 3299170,
+                    "date_published": "2026-08-04T22:13:38.152843Z"
                 }
             ]
         },
@@ -13957,6 +13961,67 @@
             ]
         },
         {
+            "pakku_id": "X9FGabMONJK1VhDR",
+            "type": "MOD",
+            "side": "SERVER",
+            "slug": {
+                "curseforge": "smartbrainlib",
+                "modrinth": "smartbrainlib"
+            },
+            "name": {
+                "curseforge": "SmartBrainLib (Forge/Fabric/Quilt)",
+                "modrinth": "SmartBrainLib"
+            },
+            "id": {
+                "curseforge": "661293",
+                "modrinth": "PuyPazRT"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "SmartBrainLib-forge-1.20.1-1.15.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/5654/964/SmartBrainLib-forge-1.20.1-1.15.jar",
+                    "id": "5654964",
+                    "parent_id": "661293",
+                    "hashes": {
+                        "sha1": "d278b6ca36075c4d097677345a25751f9aeed3c1",
+                        "md5": "d5a060ce11b8c13268b821dfe5a936e4"
+                    },
+                    "required_dependencies": [],
+                    "size": 362338,
+                    "date_published": "2024-08-23T04:23:38.737Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "SmartBrainLib-forge-1.20.1-1.15.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/PuyPazRT/versions/YkeJNm33/SmartBrainLib-forge-1.20.1-1.15.jar",
+                    "id": "YkeJNm33",
+                    "parent_id": "PuyPazRT",
+                    "hashes": {
+                        "sha512": "51754d743b86bf89da5c15a1c2b733f4b3713bf2aa7e6bd4d920cd36bc7923f2de316903fbe0d675a37f848929508c0e418dec1ecf7e87342f547fe32e75f8f4",
+                        "sha1": "366e0f0c7ca746fee327392d3569b31aefd34b5a"
+                    },
+                    "required_dependencies": [],
+                    "size": 362339,
+                    "date_published": "2024-08-23T04:22:55.344970Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "CKhfz5UfCp2SSXt9",
             "type": "MOD",
             "side": "BOTH",
@@ -16389,69 +16454,6 @@
                     "required_dependencies": [],
                     "size": 128369,
                     "date_published": "2023-11-22T20:21:03.360Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "pZzT9Td5lfhTMVmJ",
-            "type": "MOD",
-            "side": "BOTH",
-            "slug": {
-                "curseforge": "txnilib",
-                "modrinth": "txnilib"
-            },
-            "name": {
-                "curseforge": "TxniLib",
-                "modrinth": "TxniLib"
-            },
-            "id": {
-                "curseforge": "1104882",
-                "modrinth": "vBbPDuOs"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "txnilib-forge-1.0.24-1.20.1.jar",
-                    "mc_versions": [
-                        "1.20.1",
-                        "1.20"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6533/724/txnilib-forge-1.0.24-1.20.1.jar",
-                    "id": "6533724",
-                    "parent_id": "1104882",
-                    "hashes": {
-                        "sha1": "a1e16b7d61f0f16a162d429ee1eab9b4e3eeb9ef",
-                        "md5": "31823d0999fda413af6dc226481e404a"
-                    },
-                    "required_dependencies": [],
-                    "size": 3743339,
-                    "date_published": "2025-05-15T21:54:10.010Z"
-                },
-                {
-                    "type": "modrinth",
-                    "file_name": "txnilib-forge-1.0.24-1.20.1.jar",
-                    "mc_versions": [
-                        "1.20",
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/vBbPDuOs/versions/kQ8qnDHA/txnilib-forge-1.0.24-1.20.1.jar",
-                    "id": "kQ8qnDHA",
-                    "parent_id": "vBbPDuOs",
-                    "hashes": {
-                        "sha512": "06881ae202d9903909c34a1742f38308f7a04e4ed9c5eb3bd09441920d2666c6f4ee54b38ed3688b612ade5a06d2a35b45fad8a232c4e8f7f6bf527f082f6bc9",
-                        "sha1": "a1e16b7d61f0f16a162d429ee1eab9b4e3eeb9ef"
-                    },
-                    "required_dependencies": [],
-                    "size": 3743339,
-                    "date_published": "2025-05-15T21:54:11.743443Z"
                 }
             ]
         },

@@ -606,6 +606,7 @@ function registerTFGOverworldEntityTypeTags(event) {
 
 	event.add('tfc:amphibious_creatures', 'tfg:leopard_seal')
 	event.add('tfc:spawns_on_cold_blocks', 'tfg:leopard_seal')
+	event.add('tfc:land_predators', 'tfg:leopard_seal')
 
 	event.add('tfc:hunted_by_ocean_predators', 'tfg:leopard_seal')
 	event.add('tfc:hunted_by_ocean_predators', 'tfc:penguin')
@@ -622,6 +623,12 @@ function registerTFGOverworldEntityTypeTags(event) {
 	event.add('tfc:hunted_by_cats', 'tfg:jerboa')
 	event.add('tfc:hunted_by_cats', 'tfg:lemming')
 	event.add('tfc:hunted_by_cats', 'tfg:mongoose')
+	event.add('tfc:land_prey', 'tfg:jerboa')
+	event.add('tfc:land_prey', 'tfg:lemming')
+	event.add('tfc:land_prey', 'tfg:mongoose')
+	event.add('tfc:pests', 'tfg:jerboa')
+	event.add('tfc:pests', 'tfg:lemming')
+	event.add('tfc:pests', 'tfg:mongoose')
 
 	event.add('tfg:not_rammed_by_rammers', '#tfc:bubble_column_immune')
 	event.add('tfg:not_rammed_by_rammers', '#tfc:pests')
