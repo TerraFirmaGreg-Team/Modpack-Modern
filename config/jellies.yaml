@@ -27,11 +27,11 @@ entities:
 
     # How many children a jellie can have at once.
     # Default: 1
-    childCount: 1
+    childCount: 2
 
     # How long it takes for a jellie to be born.
     # Default: 32
-    gestationDays: 32
+    gestationDays: 16
 
   certusJellie:
     # Maximum familiarity that a wild jellie can reach.
@@ -60,11 +60,11 @@ entities:
 
     # How many children a jellie can have at once.
     # Default: 1
-    childCount: 1
+    childCount: 2
 
     # How long it takes for a jellie to be born.
     # Default: 32
-    gestationDays: 32
+    gestationDays: 16
 
   glowberryJellie:
     # Maximum familiarity that a wild jellie can reach.
@@ -93,11 +93,11 @@ entities:
 
     # How many children a jellie can have at once.
     # Default: 1
-    childCount: 1
+    childCount: 2
 
     # How long it takes for a jellie to be born.
     # Default: 32
-    gestationDays: 32
+    gestationDays: 16
 
   herbalJellie:
     # Maximum familiarity that a wild jellie can reach.
@@ -126,11 +126,11 @@ entities:
 
     # How many children a jellie can have at once.
     # Default: 1
-    childCount: 1
+    childCount: 2
 
     # How long it takes for a jellie to be born.
     # Default: 32
-    gestationDays: 32
+    gestationDays: 16
 
   iceJellie:
     # Maximum familiarity that a wild jellie can reach.
@@ -159,11 +159,11 @@ entities:
 
     # How many children a jellie can have at once.
     # Default: 1
-    childCount: 1
+    childCount: 2
 
     # How long it takes for a jellie to be born.
     # Default: 32
-    gestationDays: 32
+    gestationDays: 16
 
   latexJellie:
     # Maximum familiarity that a wild jellie can reach.
@@ -192,11 +192,11 @@ entities:
 
     # How many children a jellie can have at once.
     # Default: 1
-    childCount: 1
+    childCount: 2
 
     # How long it takes for a jellie to be born.
     # Default: 32
-    gestationDays: 32
+    gestationDays: 16
 
   lavaJellie:
     # Maximum familiarity that a wild jellie can reach.
@@ -225,11 +225,11 @@ entities:
 
     # How many children a jellie can have at once.
     # Default: 1
-    childCount: 1
+    childCount: 2
 
     # How long it takes for a jellie to be born.
     # Default: 32
-    gestationDays: 32
+    gestationDays: 16
 
   penteticJellie:
     # Maximum familiarity that a wild jellie can reach.
@@ -258,11 +258,11 @@ entities:
 
     # How many children a jellie can have at once.
     # Default: 1
-    childCount: 1
+    childCount: 2
 
     # How long it takes for a jellie to be born.
     # Default: 32
-    gestationDays: 32
+    gestationDays: 16
 
   phosphorumJellie:
     # Maximum familiarity that a wild jellie can reach.
@@ -291,11 +291,11 @@ entities:
 
     # How many children a jellie can have at once.
     # Default: 1
-    childCount: 1
+    childCount: 2
 
     # How long it takes for a jellie to be born.
     # Default: 32
-    gestationDays: 32
+    gestationDays: 16
 
   plantJellie:
     # Maximum familiarity that a wild jellie can reach.
@@ -324,11 +324,11 @@ entities:
 
     # How many children a jellie can have at once.
     # Default: 1
-    childCount: 1
+    childCount: 2
 
     # How long it takes for a jellie to be born.
     # Default: 32
-    gestationDays: 32
+    gestationDays: 16
 
   rockJellie:
     # Maximum familiarity that a wild jellie can reach.
@@ -357,11 +357,11 @@ entities:
 
     # How many children a jellie can have at once.
     # Default: 1
-    childCount: 1
+    childCount: 2
 
     # How long it takes for a jellie to be born.
     # Default: 32
-    gestationDays: 32
+    gestationDays: 16
 
   springJellie:
     # Maximum familiarity that a wild jellie can reach.
@@ -390,11 +390,11 @@ entities:
 
     # How many children a jellie can have at once.
     # Default: 1
-    childCount: 1
+    childCount: 2
 
     # How long it takes for a jellie to be born.
     # Default: 32
-    gestationDays: 32
+    gestationDays: 16
 
   pyritieJellie:
     # Maximum familiarity that a wild jellie can reach.
@@ -423,11 +423,11 @@ entities:
 
     # How many children a jellie can have at once.
     # Default: 1
-    childCount: 1
+    childCount: 2
 
     # How long it takes for a jellie to be born.
     # Default: 32
-    gestationDays: 32
+    gestationDays: 16
 
   redeixJellie:
     # Maximum familiarity that a wild jellie can reach.
@@ -456,9 +456,9 @@ entities:
 
     # How many children a jellie can have at once.
     # Default: 1
-    childCount: 1
+    childCount: 2
 
     # How long it takes for a jellie to be born.
     # Default: 32
-    gestationDays: 32
+    gestationDays: 16
 
