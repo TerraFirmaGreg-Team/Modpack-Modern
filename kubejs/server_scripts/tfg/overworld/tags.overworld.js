@@ -142,6 +142,24 @@ function registerTFGOverworldBlockTags(event) {
 	event.add("tfc:monster_spawns_on", "tfg:pelitic_hornfels");
 	event.add("tfc:monster_spawns_on", "minecraft:packed_ice");
 	event.add("tfc:monster_spawns_on", "minecraft:blue_ice");
+
+	event.add('tfg:camel_faster_on', 'tfg:coarse_dirt/silty_loam')
+	event.add('tfg:camel_faster_on', 'tfg:coarse_dirt/sandy_loam')
+	event.add('tfg:camel_faster_on', 'tfg:coarse_dirt/silt')
+	event.add('tfg:camel_faster_on', 'tfg:coarse_dirt/loam')
+	event.add('tfg:camel_faster_on', 'tfg:coarse_dirt/alfisol')
+	event.add('tfg:camel_faster_on', 'tfg:coarse_dirt/mollisol')
+	event.add('tfg:camel_faster_on', 'tfg:coarse_dirt/oxisol')
+	event.add('tfg:camel_faster_on', 'tfg:coarse_dirt/podzol')
+	event.add('tfg:camel_faster_on', '#forge:gravel')
+	event.add('tfg:camel_faster_on', '#forge:sand')
+	event.add('tfg:camel_faster_on', 'tfc:raw_sandstone/brown')
+	event.add('tfg:camel_faster_on', 'tfc:raw_sandstone/white')
+	event.add('tfg:camel_faster_on', 'tfc:raw_sandstone/black')
+	event.add('tfg:camel_faster_on', 'tfc:raw_sandstone/red')
+	event.add('tfg:camel_faster_on', 'tfc:raw_sandstone/yellow')
+	event.add('tfg:camel_faster_on', 'tfc:raw_sandstone/green')
+	event.add('tfg:camel_faster_on', 'tfc:raw_sandstone/pink')
 }
 
 function registerTFGOverworldBiomeTags(event) {
@@ -583,6 +601,8 @@ function registerTFGOverworldEntityTypeTags(event) {
 	event.add('tfg:ignores_cacti', 'tfc:horse')
 	event.add('tfg:ignores_cacti', 'tfc:donkey')
 	event.add('tfg:ignores_cacti', 'tfc:mule')
+	event.add('tfg:ignores_cacti', 'tfg:dromedary_camel')
+	event.add('tfg:ignores_cacti', 'tfg:bactrian_camel')
 
 	event.add('tfc:amphibious_creatures', 'tfg:leopard_seal')
 	event.add('tfc:spawns_on_cold_blocks', 'tfg:leopard_seal')
@@ -592,6 +612,9 @@ function registerTFGOverworldEntityTypeTags(event) {
 	event.add('tfc:hunted_by_ocean_predators', 'tfc:penguin')
 	event.add('tfc:hunted_by_ocean_predators', 'tfc:turtle')
 
+	event.add('tfc:land_prey', 'tfg:leopard_seal')
+	event.add('tfc:land_prey', 'tfg:dromedary_camel')
+	event.add('tfc:land_prey', 'tfg:bactrian_camel')
 	event.add('tfc:land_prey', '#jellies:jellie')
 
 	event.add('tfc:hunted_by_dogs', 'tfg:jerboa')
@@ -610,4 +633,9 @@ function registerTFGOverworldEntityTypeTags(event) {
 	event.add('tfg:not_rammed_by_rammers', '#tfc:bubble_column_immune')
 	event.add('tfg:not_rammed_by_rammers', '#tfc:pests')
 	event.add('tfg:not_rammed_by_rammers', 'tfc:frog')
+
+	event.add('tfg:ramming_animals', 'tfc:boar')
+	event.add('tfg:ramming_animals', 'tfc:moose')
+	event.add('tfg:ramming_animals', 'tfc:wildebeest')
+	event.add('tfg:ramming_animals', 'tfg:bison')
 }

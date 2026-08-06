@@ -9,6 +9,8 @@ TFCEvents.registerFaunas(event => {
 	event.replace("tfg:jerboa", $SpawnPlacements.Type.ON_GROUND, "ocean_floor");
 	event.replace("tfg:lemming", $SpawnPlacements.Type.ON_GROUND, "ocean_floor");
 	event.replace("tfg:mongoose", $SpawnPlacements.Type.ON_GROUND, "ocean_floor");
+	event.replace("tfg:dromedary_camel", $SpawnPlacements.Type.ON_GROUND, "ocean_floor");
+	event.replace("tfg:bactrian_camel", $SpawnPlacements.Type.ON_GROUND, "ocean_floor");
 	event.replace("tfg:leopard_seal", $SpawnPlacements.Type.NO_RESTRICTIONS, "ocean_floor");
 	
 	event.replace("jellies:herbal", $SpawnPlacements.Type.ON_GROUND, "motion_blocking_no_leaves");

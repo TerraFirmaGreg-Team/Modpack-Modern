@@ -1,6 +1,12 @@
 {
 	"block.create.water_wheel": "Vandenratis",
+	"item.create.brass_ingot": "Žalvario liejinys",
+	"item.create.brass_sheet": "Žalvario lakštas",
 	"item.create.chocolate_bucket": "Šokolado kibiras",
+	"item.create.copper_sheet": "Vario lakštas",
+	"item.create.golden_sheet": "Aukso lakštas",
+	"item.create.zinc_ingot": "Cinko liejinys",
 	"tag.item.create.sandpaper": "Švitrinis popierius",
-	"tag.item.create.stone_types.calcite": "Kalcitas"
+	"tag.item.create.stone_types.calcite": "Kalcitas",
+	"tag.item.forge.plates": "Lakštai"
 }
