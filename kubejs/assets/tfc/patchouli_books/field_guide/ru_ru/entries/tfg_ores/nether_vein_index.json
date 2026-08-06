@@ -19,7 +19,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/nether_vein_index#beneath_iron_magnetite)Магнетит, Ванадий магнетит...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_nickel)Пентландит, Гарниерит...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_manganese)Пиролюзит, Гроссуляр...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_realgar)Реальгар, Стибнит, Киноварь$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_redstone)Редстоуновая пыль, Киноварь...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_copper_native)Самородная медь, Малахит$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_gold_rich)Самородное золото, Магнетит...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_gold)Самородное золото, Пирит...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_sulfur)Сера, Пирит, Стибнит$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_lithium)Сподумен, Литий, Сильвин$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_zinc)Сфалерит, Галена, Сера$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_copper_tetrahedrite)Тетраэдрит, Стибнит...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_phosphate)Трикальцийфосфат, Апатит...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_phlogopite)Флогопит, Сера, Апатит$()$()",
+      "text": "$(li)$(l:tfg_ores/nether_vein_index#beneath_iron_magnetite)Магнетит, Ванадий магнетит...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_nickel)Пентландит, Гарниерит...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_manganese)Пиролюзит, Гроссуляр...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_realgar)Реальгар, Стибнит, Киноварь$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_redstone)Редстоуновая пыль, Киноварь...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_copper_native)Самородная медь, Малахит$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_gold_rich)Самородное золото, Магнетит...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_gold)Самородное золото, Пирит...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_sulfur)Сера, Пирит, Стибнит$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_lithium)Сподумен, Антрацит, Алунит$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_zinc)Сфалерит, Галена, Сера$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_copper_tetrahedrite)Тетраэдрит, Стибнит...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_phosphate)Трикальцийфосфат, Апатит...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_phlogopite)Флогопит, Сера, Апатит$()$()",
       "type": "patchouli:text"
     },
     {
@@ -1506,7 +1506,7 @@
     {
       "Type": "patchouli:text",
       "text": "$(thing)$(t:Шанс появления жилы на чанк. Чем меньше значение, тем больше вероятность.)Редкость$(/t)$(): 1/10 чанки$(br)$(thing)$(t:Процент блоков в жиле, которые являются рудой, а не камнем. Больший шанс означает больше руд.)Плотность$(/t)$(): 22%$(br)$(thing)$(t:Форма жилы.)Тип$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Промежуток по Y, в котором может генерироваться жила.)Y$(/t)$(): 0 — 80$(br)$(thing)$(t:Средний диаметр жилы)Размер$(/t)$(): 25$(br)$(thing)Биомы$(): $(t:Магмовые пустоши)Магмовые пустоши$(/t)$(br2)$(thing)Виды камня$(): Базальт, Мигматит, Пироксенит",
-      "title": "Сподумен, Литий, Сильвин",
+      "title": "Сподумен, Антрацит, Алунит",
       "type": "patchouli:text",
       "anchor": "beneath_lithium"
     },
@@ -1532,10 +1532,10 @@
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Литий",
+      "name": "Антрацит",
       "multiblock": {
         "mapping": {
-          "0": "#forge:ores/lithium"
+          "0": "#forge:ores/anthracite"
         },
         "pattern": [
           [
@@ -1547,15 +1547,15 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент нагрузки$(): 23%$(br)$(thing)Источник для$(): Литий$(br)$(thing)Формула$(): Li",
+      "text": "$(thing)Процент нагрузки$(): 23%$(br)$(thing)Используется для$(): Топливо$(br)$(thing)Формула$(): C",
       "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Сильвин",
+      "name": "Алунит",
       "multiblock": {
         "mapping": {
-          "0": "#forge:ores/rock_salt"
+          "0": "#forge:ores/alunite"
         },
         "pattern": [
           [
@@ -1567,7 +1567,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент нагрузки$(): 15%$(br)$(thing)Источник для$(): Калий, Хлор, Удобрение$(br)$(thing)Формула$(): KCl",
+      "text": "$(thing)Процент нагрузки$(): 15%$(br)$(thing)Источник для$(): Калий, Алюминий$(br)$(thing)Формула$(): KAl₃Si₂H₆O₁₄",
       "type": "patchouli:multiblock"
     },
     {

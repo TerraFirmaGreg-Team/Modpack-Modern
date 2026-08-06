@@ -24,7 +24,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#deep_scheelite)灰重石, タングステン酸塩, リチウム$()$()$(li)$(l:tfg_ores/earth_vein_index#sand_basaltic)玄武岩質含鉱砂, 砂状海緑石, ガーネットサンド$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_nickel)珪ニッケル鉱 （地表）$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_garnierite)珪ニッケル鉱, ニッケル, 輝コバルト鉱$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_nickel)珪ニッケル鉱, ニッケル, 輝コバルト鉱, 硫鉄ニッケル鉱$()$()$(li)$(l:tfg_ores/earth_vein_index#high_gypsum)石膏 （高地）$()$()$(li)$(l:tfg_ores/earth_vein_index#sand_garnet)砂状海緑石, フラー土, ガーネットサンド$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_salpeter)硝酸カリウム （地表）$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_saltpeter)硝酸カリウム, 珪藻土, エレクトロチン, 明礬石$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sulfur)硫黄 （深層）$()$()$(li)$(l:tfg_ores/earth_vein_index#high_sulfur)硫黄 （火山）$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_copper_sulfide)硫黄, 斑銅鉱, 輝銅鉱 （深層）$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_sulfide)硫黄, 輝安鉱, 斑銅鉱 （火山）$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sphalerite)硫黄, 黄鉄鉱, 閃亜鉛鉱 （深層）$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#deep_scheelite)灰重石, タングステン酸塩, リチア雲母$()$()$(li)$(l:tfg_ores/earth_vein_index#sand_basaltic)玄武岩質含鉱砂, 砂状海緑石, ガーネットサンド$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_nickel)珪ニッケル鉱 （地表）$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_garnierite)珪ニッケル鉱, ニッケル, 輝コバルト鉱$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_nickel)珪ニッケル鉱, ニッケル, 輝コバルト鉱, 硫鉄ニッケル鉱$()$()$(li)$(l:tfg_ores/earth_vein_index#high_gypsum)石膏 （高地）$()$()$(li)$(l:tfg_ores/earth_vein_index#sand_garnet)砂状海緑石, フラー土, ガーネットサンド$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_salpeter)硝酸カリウム （地表）$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_saltpeter)硝酸カリウム, 珪藻土, エレクトロチン, 明礬石$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sulfur)硫黄 （深層）$()$()$(li)$(l:tfg_ores/earth_vein_index#high_sulfur)硫黄 （火山）$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_copper_sulfide)硫黄, 斑銅鉱, 輝銅鉱 （深層）$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_sulfide)硫黄, 輝安鉱, 斑銅鉱 （火山）$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sphalerite)硫黄, 黄鉄鉱, 閃亜鉛鉱 （深層）$()$()",
       "type": "patchouli:text"
     },
     {
@@ -1746,7 +1746,7 @@
     {
       "Type": "patchouli:text",
       "text": "$(thing)$(t:何チャンクごとに鉱脈が生成されるかを示します。数値が小さいほど見つかりやすくなります。)レア度$(/t)$(): 1/420 チャンク$(br)$(thing)$(t:鉱脈の中に含まれている鉱石の密度を割合で示しています。数値が高いほど鉱石量が多くなります。)密度$(/t)$(): 27%$(br)$(thing)$(t:鉱脈の形状です)タイプ$(/t)$(): $(t:主に丸い形状をしています)塊状鉱脈$(/t)$(br)$(thing)$(t:この鉱脈が生成される高さ（Y座標）の範囲を示します。)Y$(/t)$(): -50 — 20$(br)$(thing)$(t:鉱脈の平均的な直径のサイズを示します。)サイズ$(/t)$(): 25$(br)$(thing)$(t:地表から鉱脈までの距離がこの値を超えると、地表に指標となる鉱石が現れなくなります。)表出の最大深度$(/t)$(): 15$(br)$(thing)バイオーム$(): : 不問$(br2)$(thing)岩石の種類$(): Quartzite, 千枚岩, 大理石, 片岩, 片麻岩, 粘板岩",
-      "title": "灰重石, タングステン酸塩, リチウム",
+      "title": "灰重石, タングステン酸塩, リチア雲母",
       "type": "patchouli:text",
       "anchor": "deep_scheelite"
     },
@@ -1792,10 +1792,10 @@
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "リチウム",
+      "name": "リチア雲母",
       "multiblock": {
         "mapping": {
-          "0": "#forge:ores/lithium"
+          "0": "#forge:ores/lepidolite"
         },
         "pattern": [
           [
@@ -1807,7 +1807,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 14%$(br)$(thing)採取可能$(): リチウム$(br)$(thing)化学式$(): Li",
+      "text": "$(thing)パーセント$(): 14%$(br)$(thing)採取可能$(): カリウム、リチウム、アルミニウム、フッ素$(br)$(thing)化学式$(): KLi₃Al₄F₂O₁₀",
       "type": "patchouli:multiblock"
     },
     {
