@@ -8022,6 +8022,80 @@
             ]
         },
         {
+            "pakku_id": "zmhWyb7IMRr5SlIp",
+            "pakku_links": [
+                "x1EwQZ6H2kVKR3U3",
+                "X9FGabMONJK1VhDR",
+                "ScveDDpCjKro99ki"
+            ],
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "curseforge": "fowlplay",
+                "modrinth": "fowlplay"
+            },
+            "name": {
+                "curseforge": "Fowl Play",
+                "modrinth": "Fowl Play"
+            },
+            "id": {
+                "curseforge": "1246320",
+                "modrinth": "WpXfePbg"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "fowlplay-1.2.3+1.20.1-forge.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8578/733/fowlplay-1.2.3+1.20.1-forge.jar",
+                    "id": "8578733",
+                    "parent_id": "1246320",
+                    "hashes": {
+                        "sha1": "dcafd69f5199b73078213fff06786b08c5307a43",
+                        "md5": "9e33c161f4214777be83b98e5ec5a545"
+                    },
+                    "required_dependencies": [
+                        "419699",
+                        "661293",
+                        "667299"
+                    ],
+                    "size": 3299170,
+                    "date_published": "2026-08-04T22:13:37.913Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "fowlplay-1.2.3+1.20.1-forge.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/WpXfePbg/versions/R0J5mu1D/fowlplay-1.2.3+1.20.1-forge.jar",
+                    "id": "R0J5mu1D",
+                    "parent_id": "WpXfePbg",
+                    "hashes": {
+                        "sha512": "dfb5b1f2cfc7412e0e4c36e5e7802fb1730d97123d0f4337951217a071ed72cccc3fcf73172a8ef0dcc35254c5bcf61cd27e92ef036a146dcee3149b566b3498",
+                        "sha1": "dcafd69f5199b73078213fff06786b08c5307a43"
+                    },
+                    "required_dependencies": [
+                        "1eAoo2KR",
+                        "PuyPazRT",
+                        "lhGA9TYQ"
+                    ],
+                    "size": 3299170,
+                    "date_published": "2026-08-04T22:13:38.152843Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "5SQ0czDAOB19jrY9",
             "type": "MOD",
             "side": "BOTH",
@@ -13883,6 +13957,67 @@
                     "required_dependencies": [],
                     "size": 20849,
                     "date_published": "2026-02-21T09:46:54.760Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "X9FGabMONJK1VhDR",
+            "type": "MOD",
+            "side": "SERVER",
+            "slug": {
+                "curseforge": "smartbrainlib",
+                "modrinth": "smartbrainlib"
+            },
+            "name": {
+                "curseforge": "SmartBrainLib (Forge/Fabric/Quilt)",
+                "modrinth": "SmartBrainLib"
+            },
+            "id": {
+                "curseforge": "661293",
+                "modrinth": "PuyPazRT"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "SmartBrainLib-forge-1.20.1-1.15.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/5654/964/SmartBrainLib-forge-1.20.1-1.15.jar",
+                    "id": "5654964",
+                    "parent_id": "661293",
+                    "hashes": {
+                        "sha1": "d278b6ca36075c4d097677345a25751f9aeed3c1",
+                        "md5": "d5a060ce11b8c13268b821dfe5a936e4"
+                    },
+                    "required_dependencies": [],
+                    "size": 362338,
+                    "date_published": "2024-08-23T04:23:38.737Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "SmartBrainLib-forge-1.20.1-1.15.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/PuyPazRT/versions/YkeJNm33/SmartBrainLib-forge-1.20.1-1.15.jar",
+                    "id": "YkeJNm33",
+                    "parent_id": "PuyPazRT",
+                    "hashes": {
+                        "sha512": "51754d743b86bf89da5c15a1c2b733f4b3713bf2aa7e6bd4d920cd36bc7923f2de316903fbe0d675a37f848929508c0e418dec1ecf7e87342f547fe32e75f8f4",
+                        "sha1": "366e0f0c7ca746fee327392d3569b31aefd34b5a"
+                    },
+                    "required_dependencies": [],
+                    "size": 362339,
+                    "date_published": "2024-08-23T04:22:55.344970Z"
                 }
             ]
         },
