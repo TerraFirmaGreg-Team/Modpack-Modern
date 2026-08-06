@@ -17,6 +17,7 @@
   "gui.tooltips.megacells.Disabled": "Wyłączone",
   "gui.tooltips.megacells.Empty": "Pusty",
   "gui.tooltips.megacells.Enabled": "Włączony",
+  "gui.tooltips.megacells.FilterChemicalUnsupported": "Filtr chemiczny nie jest obsługiwany!",
   "gui.tooltips.megacells.MismatchedFilter": "Niedopasowany filtr!",
   "gui.tooltips.megacells.NotPartitioned": "Nie partycjonowano",
   "gui.tooltips.megacells.PartitionedFor": "Partycjonowane dla: %s",
@@ -56,6 +57,7 @@
   "item.megacells.mana_storage_cell_256m": "MEGA magazyn many 256M",
   "item.megacells.mana_storage_cell_4m": "MEGA magazyn many 4M",
   "item.megacells.mana_storage_cell_64m": "MEGA magazyn many 64M",
+  "item.megacells.mega_source_cell_housing": "MEGA obudowa magazynu źródła",
   "item.megacells.portable_chemical_cell_16m": "Przenośny magazyn chemiczny 16M",
   "item.megacells.portable_chemical_cell_1m": "Przenośny magazyn chemiczny 1M",
   "item.megacells.portable_chemical_cell_256m": "Przenośny magazyn chemiczny 256M",
@@ -88,6 +90,7 @@
   "item.megacells.source_storage_cell_256m": "MEGA magazyn źródła 256M",
   "item.megacells.source_storage_cell_4m": "MEGA magazyn źródła 4M",
   "item.megacells.source_storage_cell_64m": "MEGA magazyn źródła 64M",
+  "text.autoconfig.megacells.option.AllowSpentWaste": "(AppMek) Zezwalaj na zużyte odpady jądrowe",
   "text.autoconfig.megacells.option.CompressionChainLimit": "Limit długości łańcucha masowej kompresji",
   "text.autoconfig.megacells.title": "MEGA Cells"
 }
