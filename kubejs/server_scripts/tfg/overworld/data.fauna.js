@@ -107,15 +107,6 @@ function registerOverworldFauna(event) {
 		},
 		"jellies:phosphorum")
 
-	//event.fauna(
-	//	climate => {
-	//		climate.maxForest('edge')
-	//	},
-	//	faunaData => {
-	//		faunaData.solidGround(true)
-	//	},
-	//	"jellies:rock")
-
 	// Fowl Play
 
 	const BIRD_CHANCE = 1;
