@@ -62,6 +62,26 @@ function registerOverworldFauna(event) {
 		},
 		"tfg:mongoose")
 
+	event.fauna(
+		climate => {
+			climate.minTemp(-5)
+			climate.maxRain(100)
+		},
+		faunaData => {
+			faunaData.solidGround(true)
+		},
+		"tfg:dromedary_camel")
+
+	event.fauna(
+		climate => {
+			climate.maxTemp(0)
+			climate.maxRain(100)
+		},
+		faunaData => {
+			faunaData.solidGround(true)
+		},
+		"tfg:bactrian_camel")
+
 	// Jellies
 	event.fauna(
 		climate => {
@@ -196,6 +216,7 @@ function registerOverworldFauna(event) {
 		},
 		faunaData => {
 			faunaData.chance(BIRD_CHANCE)
+			faunaData.solidGround(true)
 		},
 		"fowlplay:penguin")
 
