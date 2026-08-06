@@ -128,7 +128,7 @@ function registerOverworldFauna(event) {
 		
 	event.fauna(
 		climate => {
-			climate.minRain(150)
+			climate.minRain(90)
 			climate.maxRain(350)
 			climate.minTemp(-11)
 			climate.maxTemp(5)
@@ -141,7 +141,7 @@ function registerOverworldFauna(event) {
 
 	event.fauna(
 		climate => {
-			climate.minRain(200)
+			climate.minRain(80)
 			climate.maxRain(400)
 			climate.minTemp(-7)
 			climate.maxTemp(12)
@@ -167,7 +167,7 @@ function registerOverworldFauna(event) {
 
 	event.fauna(
 		climate => {
-			climate.minRain(100)
+			climate.minRain(50)
 			climate.minTemp(-8)
 			climate.maxTemp(20)
 		},
@@ -180,9 +180,9 @@ function registerOverworldFauna(event) {
 		climate => {
 			climate.minRain(50)
 			climate.maxRain(400)
-			climate.minTemp(-5)
+			climate.minTemp(-12)
 			climate.maxTemp(15)
-			climate.maxForest('edge')
+			climate.maxForest('normal')
 		},
 		faunaData => {
 			faunaData.chance(BIRD_CHANCE)
@@ -201,7 +201,7 @@ function registerOverworldFauna(event) {
 
 	event.fauna(
 		climate => {
-			climate.minRain(100)
+			climate.minRain(80)
 			climate.maxRain(500)
 			climate.minTemp(-8)
 			climate.maxTemp(17)
@@ -240,7 +240,7 @@ function registerOverworldFauna(event) {
 
 	event.fauna(
 		climate => {
-			climate.minRain(200)
+			climate.minRain(100)
 			climate.maxRain(400)
 			climate.minTemp(-8)
 			climate.maxTemp(10)
