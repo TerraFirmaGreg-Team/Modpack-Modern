@@ -19,7 +19,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/nether_vein_index#beneath_coal_lignite)褐煤$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_iron_hematite)赤铁矿, 针铁矿$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_manganese)软锰矿, 钙铝榴石, 钽铁矿$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_copper_sulfide)辉铜矿, 黄铁矿, 斑铜矿$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_phlogopite)金云母, 硫, 磷灰石$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_iron_banded)针铁矿, 褐铁矿, 孔雀石$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_molydbenum)钼铅矿, 辉钼矿, 钼钙矿$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_bismuth)铋, 硫, 硝石$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_psg)铱砷矿, 钌砷矿, 铁铑矿$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_lithium)锂辉石, 锂, 钾石盐$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_tin)锡石, 锡$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_nickel)镍黄铁矿, 硅镁镍矿, 辉钴矿$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_zinc)闪锌矿, 方铅矿, 硫$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_realgar)雄黄, 辉锑矿, 朱砂$()$()",
+      "text": "$(li)$(l:tfg_ores/nether_vein_index#beneath_coal_lignite)褐煤$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_iron_hematite)赤铁矿, 针铁矿$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_manganese)软锰矿, 钙铝榴石, 钽铁矿$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_copper_sulfide)辉铜矿, 黄铁矿, 斑铜矿$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_phlogopite)金云母, 硫, 磷灰石$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_iron_banded)针铁矿, 褐铁矿, 孔雀石$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_molydbenum)钼铅矿, 辉钼矿, 钼钙矿$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_bismuth)铋, 硫, 硝石$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_psg)铱砷矿, 钌砷矿, 铁铑矿$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_lithium)锂辉石, 无烟煤, 明矾石$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_tin)锡石, 锡$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_nickel)镍黄铁矿, 硅镁镍矿, 辉钴矿$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_zinc)闪锌矿, 方铅矿, 硫$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_realgar)雄黄, 辉锑矿, 朱砂$()$()",
       "type": "patchouli:text"
     },
     {
@@ -1521,7 +1521,7 @@
     {
       "Type": "patchouli:text",
       "text": "$(thing)$(t:每个区块生成矿脉的几率。下面的数字越小就越常见。)稀有度$(/t)$(): 1/10 区块$(br)$(thing)$(t:矿脉中矿石方块所占的百分比。百分比越高，矿石越多。)密度$(/t)$(): 22%$(br)$(thing)$(t:矿脉的形状。)类型$(/t)$(): $(t:大致呈圆形)团簇状矿脉$(/t)$(br)$(thing)$(t:矿脉可能生成的 Y 轴范围。)Y$(/t)$(): 0 — 80$(br)$(thing)$(t:矿脉的平均直径)尺寸$(/t)$(): 25$(br)$(thing)生物群系$(): $(t:熔岩浮岛)熔岩浮岛$(/t)$(br2)$(thing)岩石类型$(): 混合岩, 玄武岩, 辉石岩",
-      "title": "锂辉石, 锂, 钾石盐",
+      "title": "锂辉石, 无烟煤, 明矾石",
       "type": "patchouli:text",
       "anchor": "beneath_lithium"
     },
@@ -1547,10 +1547,10 @@
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "锂",
+      "name": "无烟煤",
       "multiblock": {
         "mapping": {
-          "0": "#forge:ores/lithium"
+          "0": "#forge:ores/anthracite"
         },
         "pattern": [
           [
@@ -1562,15 +1562,15 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)百分比$(): 23%$(br)$(thing)来源$(): 锂$(br)$(thing)化学式$(): Li",
+      "text": "$(thing)百分比$(): 23%$(br)$(thing)用于$(): 燃料$(br)$(thing)化学式$(): C",
       "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "钾石盐",
+      "name": "明矾石",
       "multiblock": {
         "mapping": {
-          "0": "#forge:ores/rock_salt"
+          "0": "#forge:ores/alunite"
         },
         "pattern": [
           [
@@ -1582,7 +1582,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)百分比$(): 15%$(br)$(thing)来源$(): 钾, 氯, 肥料$(br)$(thing)化学式$(): KCl",
+      "text": "$(thing)百分比$(): 15%$(br)$(thing)来源$(): 钾, 铝$(br)$(thing)化学式$(): KAl₃Si₂H₆O₁₄",
       "type": "patchouli:multiblock"
     },
     {
