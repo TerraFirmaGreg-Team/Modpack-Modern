@@ -1,0 +1,8 @@
+{
+	"commands.sophisticatedbackpacks.template.backpackempty": "Kuprinė yra tuščia",
+	"commands.sophisticatedbackpacks.template.give.failure.notemplate": "Šablonas „%s“ neegzistuoja",
+	"commands.sophisticatedbackpacks.template.give.failure.notpersistent": "Šablonas „%s“ nėra nuolatinis ir negali būti naudojamas su „template give“ komanda",
+	"commands.sophisticatedbackpacks.template.list.delete": "Ištrinti šabloną",
+	"commands.sophisticatedbackpacks.template.list.delete.tooltip": "Spustelėkite, kad ištrintumėte šabloną: %s",
+	"commands.sophisticatedbackpacks.template.list.export": "Eksportuoti šabloną"
+}
