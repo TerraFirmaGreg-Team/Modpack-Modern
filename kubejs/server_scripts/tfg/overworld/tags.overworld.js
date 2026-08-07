@@ -160,6 +160,10 @@ function registerTFGOverworldBlockTags(event) {
 	event.add('tfg:camel_faster_on', 'tfc:raw_sandstone/yellow')
 	event.add('tfg:camel_faster_on', 'tfc:raw_sandstone/green')
 	event.add('tfg:camel_faster_on', 'tfc:raw_sandstone/pink')
+	
+	event.add("tfg:hornfels", "tfg:mafic_hornfels");
+	event.add("tfg:hornfels", "tfg:carbonate_hornfels");
+	event.add("tfg:hornfels", "tfg:pelitic_hornfels");
 }
 
 function registerTFGOverworldBiomeTags(event) {

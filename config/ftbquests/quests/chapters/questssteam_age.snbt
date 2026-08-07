@@ -655,15 +655,12 @@
 			size: 1.0d
 			subtitle: "{quests.steam_age.item_pipes.subtitle}"
 			tasks: [{
-				id: "3122D989BAB787F4"
+				id: "153F8811183001E5"
 				item: {
 					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						display: {
-							Name: "{\"text\":\"Any item pipe\"}"
-						}
-						"ftbfiltersystem:filter": "or(item_tag(forge:small_item_pipes)item_tag(forge:normal_item_pipes)item_tag(forge:large_item_pipes)item_tag(forge:huge_item_pipes))"
+						"ftbfiltersystem:filter": "or(item(gtceu:tin_small_item_pipe)item(gtceu:brass_small_item_pipe)item(gtceu:cobalt_small_item_pipe)item(gtceu:tin_normal_item_pipe)item(gtceu:brass_normal_item_pipe)item(gtceu:cobalt_normal_item_pipe))"
 					}
 				}
 				title: "{quests.steam_age.item_pipes.task}"
