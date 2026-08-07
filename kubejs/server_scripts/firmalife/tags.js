@@ -23,6 +23,7 @@ const registerFirmaLifeItemTags = (event) => {
     event.add('tfg:oven_tops', 'firmalife:cured_tile_oven_top')
     event.add('tfg:oven_tops', 'firmalife:cured_stone_oven_top')
 
+    event.add('firmalife:cellar_insulation', 'firmalife:stone_countertop')
 }
 
 const registerFirmaLifeBlockTags = (event) => {
@@ -72,6 +73,9 @@ const registerFirmaLifeBlockTags = (event) => {
     event.add('firmalife:bee_restoration_plants', 'tfg:plant/ramirezella')
     event.add('firmalife:bee_restoration_plants', 'tfg:plant/ramunda')
     event.add('firmalife:bee_restoration_plants', 'tfg:plant/yellow_saxifrage')
+
+    event.add('firmalife:cellar_insulation', 'firmalife:stone_countertop')
+    event.add('tfc:forge_insulation', 'firmalife:stone_countertop')
 }
 
 const registerFirmaLifeFluidTags = (event) => {
