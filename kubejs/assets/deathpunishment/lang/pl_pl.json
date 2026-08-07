@@ -18,6 +18,7 @@
   "config.deathpunishment.penalties.hunger_duration": "Czas trwania głodu (0-600 s)",
   "config.deathpunishment.penalties.movement_duration": "Czas trwania spowolnienia (0-600 s)",
   "config.deathpunishment.penalties.darkness_duration": "Czas trwania ciemności (0-600 s)",
+  "config.deathpunishment.penalties.raw_meat_enabled": "Głód przy jedzeniu surowego mięsa TFC",
   "enum.deathpunishment.hunger_mode.TFC": "Domyślne TFC",
   "enum.deathpunishment.hunger_mode.MANUAL": "Konfiguracja ręczna",
   "enum.deathpunishment.hunger_mode.KEEP": "Zachowaj po śmierci",
