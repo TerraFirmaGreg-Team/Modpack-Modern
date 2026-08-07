@@ -7,6 +7,8 @@
 - Added a resource pack which retextures a lot of Create things to better match the materials you craft them out of. It's a resource pack so you can disable it if you don't like the changes @Pyritie
 - Reduced the consumption rate of steam, cooking oils, and lava inside blaze burners @Pyritie
 #### TFC
+- Backported camels from 1.21 TFC! Find dromedary camels in hot and dry climates, and bactrian camels in cold and dry climates. (#4688) @SakuraKitsurugi
+- Replaced the bird particles with a different bird mod and integrated them with TFC (#4705) @Pyritie
 - Reduced the speed at which items passively cool down (so smithing some metals with low melting points is a little easier), but increased the rate at which food decays *on servers using the default settings* (single player is not affected) - servers are of course free to change these as they like @Pyritie
 - Added "time to grow" tooltips to wood saplings @Redeix
 - Backported TFC's glassblowing changes from 1.21, which includes a shorter cooldown and information on what action you're about to do @Redeix
@@ -17,6 +19,7 @@
 - Added more things to count as firepit logs, fuel, and kindling, so now polar start can actually make firepits (such as driftwood, moss, and animal fat) @Pyritie
 - Calcite dust now counts as fluxstone, and added the ability to quern stone blocks into dusts @Pyritie
 - Increased spawn rates of all herbs and spices (from 1/80 chunks to 1/50 chunks) @Pyritie
+- The warning message on vessels now only shows when it contains too much fluid (#4691) @ashleney
 #### Other changes
 - Added some spooky photos to some chest loot tables @Pyritie
 - Added coins to some loot tables, and made coins meltable @Pyritie
@@ -32,6 +35,8 @@
 - Mobs on every other dimension besides the overworld should now only spawn on "natural" blocks, matching overworld behaviour (except they can also spawn on the world surface) @Pyritie
 - Increased the sapling drop rate for beech and mahoe trees (#4545) @Pyritie
 - Reduced the capacity of straw baskets, increased the capacity of burlap sacks, and enabled inventory interaction, voiding, and auto pickup for all other Sacks n Such containers (#4652) @Pyritie
+- The warming/insulation amount on clothing now shows °C too (#4690) @ashleney
+- The rocket countdown is now actual seconds instead of being slower when your server has a TPS below 20 @ashleney
 - Removed gregbrine @Redeix
 ### Bug fixes
 - Fixed not being able to break Additional Placements blocks @Pyritie @Redeix
@@ -47,9 +52,10 @@
 - Fixed not being able to put pyrite powder or lapis powder in a crucible @Pyritie
 - Fixed metal spindles not inheriting forging bonuses when crafted from their heads (#4669) @Pyritie
 - Fixed soups made in a food processor having the wrong nutrient/saturation multipliers @Pyritie
+- Fixed tamed fox familiarity capping at 35 instead of 100 @SakuraKitsurugi
 ### Mods
 #### Jellies
-- Added new jellies! Three in the overworld, one on the moon, and one on mars. @SakuraKitsurugi
+- Added new jellies! Two in the overworld, one in the beneath, one on the moon, one on mars, and two secret ones. Field guide entry and uses for all of the slimeballs are coming soon. @SakuraKitsurugi
 - Fixed not being able to breed jellies together @SakuraKitsurugi
 - Jellie slime balls can now be crafted into "plain" slime balls @Pyritie
 #### Create: Hypertubes
