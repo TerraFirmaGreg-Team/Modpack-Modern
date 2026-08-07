@@ -709,7 +709,11 @@
 			y: 5.0d
 		}
 		{
-			dependencies: ["604E10FF2A87C62F"]
+			dependencies: [
+				"604E10FF2A87C62F"
+				"264D138DFFE13BD0"
+			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.unposter.desc}"]
 			guide_page: "tfc:field_guide tfc:beneath/unposter"
 			id: "43CC656CB7D0F813"

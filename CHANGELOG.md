@@ -2,6 +2,10 @@
 
 ## Unreleased
 ### Changes
+### Bug fixes
+
+## [0.13.7] - 7-08-2026
+### Changes
 #### Create
 - The Quern, Bellows, and Compost Tumbler now connect to Create's kinetic rotation! Check the field guide for information on what the Compost Tumbler does. (#4625) @Redeix
 - Added a resource pack which retextures a lot of Create things to better match the materials you craft them out of. It's a resource pack so you can disable it if you don't like the changes @Pyritie
@@ -69,6 +73,12 @@
 - Added ponder for copper frogport, unpackager, and multi-fluid tank
 - Fixed issues with the unpacker
 - Fixed fluid factory gauges having high TPS impact
+#### Digger Helmet
+- Fixed helmet linings and changed their values to align with the appropriate clothing @Thomasx0
+- Fixed mining speed modifiers @Thomasx0
+- Fixed multiplayer desync when equipping/unequipping the helmet @Thomasx0
+#### Roads and Roofs
+- Fixed knapping UI opening when trying to make cobbled roads @Therighthon
 
 ## [0.13.6] - 27-07-2026
 ### Changes
