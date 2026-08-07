@@ -2924,6 +2924,7 @@
 			description: ["{quests.stone_age.barrelrack.desc}"]
 			guide_page: "tfc:field_guide tfc:mechanics/barrels"
 			id: "3F2AE6040E9E665F"
+			optional: true
 			subtitle: "{quests.stone_age.barrelrack.subtitle}"
 			tasks: [{
 				id: "17C78AA6BBFD0513"
