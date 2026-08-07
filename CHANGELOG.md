@@ -42,6 +42,7 @@
 - The warming/insulation amount on clothing now shows °C too (#4690) @ashleney
 - The rocket countdown is now actual seconds instead of being slower when your server has a TPS below 20 @ashleney
 - Stone countertops can now also be used as cellar insulation (since they're made from sealed bricks) (#4708) @Froffy025
+- Changed the raw Lithium ores in the overworld and beneath with Leipdolite and Alunite respectively (#4682) @TomPlop @Pyritie
 - Removed gregbrine @Redeix
 ### Bug fixes
 - Fixed not being able to break Additional Placements blocks @Pyritie @Redeix
