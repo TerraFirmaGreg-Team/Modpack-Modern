@@ -55,6 +55,7 @@
 - Fixed tamed fox familiarity capping at 35 instead of 100 @SakuraKitsurugi
 - Fixed a broken texture when stomping honey into sugar (#4710) @Pyritie
 - Fixed some inconsistencies with pressing/polishing poor ores compared to crushing (#4713) @Pyritie
+- Fixed disappearing assembler recipes for create deco brick blocks (#4687) @Pyritie
 ### Mods
 #### Jellies
 - Added new jellies! Two in the overworld, one in the beneath, one on the moon, one on mars, and two secret ones. Field guide entry and uses for all of the slimeballs are coming soon. @SakuraKitsurugi
