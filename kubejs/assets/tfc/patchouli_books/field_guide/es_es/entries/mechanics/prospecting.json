@@ -1,6 +1,6 @@
 {
   "__comment__": "This file was automatically created by mcresources",
-  "name": "Prospecting",
+  "name": "Prospección",
   "category": "tfc:mechanics",
   "icon": "tfc:metal/propick/wrought_iron",
   "pages": [
@@ -16,7 +16,7 @@
       "type": "patchouli:spotlight",
       "anchor": "propick",
       "item": "tfc:metal/propick/copper",
-      "title": "Prospector's Pick",
+      "title": "Pico de Prospección",
       "link_recipes": false,
       "text": "If you're looking for ore veins, and you can't find the vein by guessing, it's time to pull out the $(item)prospector's pick$(). If you are familiar with base prospector's picks in $(thing)TFC$() you may be suprised to learn that they function very differently in $(thing)TerraFirmaGreg$()"
     },
@@ -30,7 +30,7 @@
     },
     {
       "type": "patchouli:image",
-      "title": "Prospector View",
+      "title": "Vista de Prospección",
       "images": [
         "tfg:textures/gui/field_guide/prospecting/tfg_prospectors_pick_xray.png"
       ],
@@ -60,13 +60,13 @@
       "type": "patchouli:spotlight",
       "anchor": "prospector",
       "item": "gtceu:prospector.lv",
-      "title": "Digital Ore Prospector's",
+      "title": "Prospector de Minerales Digital",
       "link_recipes": false,
       "text": "Technology is now! And with it comes new ways to find your ore veins!$(br)$(item)Ore Prospector's$() are $(thing)GregTech's$() solution to finding ore veins and fluid deposits in your world. The size and capabilities of the ore prospectors are determined by the $(#ff1100)voltage tier$()."
     },
     {
       "type": "patchouli:image",
-      "title": "Ore Prospector",
+      "title": "Prospección de Minerales",
       "images": [
         "tfg:textures/gui/field_guide/prospecting/tfg_luv_ore_prospector.png"
       ],
