@@ -57,9 +57,6 @@ const registerFirmaLifeBlockTags = (event) => {
 
     event.add('firmalife:oven_insulation', 'firmalife:stovetop_pot');
     event.add('firmalife:oven_insulation', 'firmalife:vat');
-    
-    // this countertop can only be made from sealed bricks
-    event.add('firmalife:cellar_insulation', 'firmalife:stone_countertop')
 
     // tfg and a few missed(?) tfc flowers for bee restoration
     event.add('firmalife:bee_restoration_plants', 'tfg:plant/azalea')
@@ -76,7 +73,8 @@ const registerFirmaLifeBlockTags = (event) => {
     event.add('firmalife:bee_restoration_plants', 'tfg:plant/ramirezella')
     event.add('firmalife:bee_restoration_plants', 'tfg:plant/ramunda')
     event.add('firmalife:bee_restoration_plants', 'tfg:plant/yellow_saxifrage')
-
+    
+    // this countertop can only be made from sealed bricks
     event.add('firmalife:cellar_insulation', 'firmalife:stone_countertop')
     event.add('tfc:forge_insulation', 'firmalife:stone_countertop')
 }
