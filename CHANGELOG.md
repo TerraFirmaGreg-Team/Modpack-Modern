@@ -44,6 +44,7 @@
 - Stone countertops can now also be used as cellar insulation (since they're made from sealed bricks) (#4708) @Froffy025
 - Changed the raw Lithium ores in the overworld and beneath with Leipdolite and Alunite respectively (#4682) @TomPlop @Pyritie
 - Crates, drums, super chests, and super tanks can now be picked up, like wooden chests (sneak rclick with empty hands) @Pyritie
+- Silk clothes and the hang glider can now also be repaired with phantom silk and nylon (#4716) @olavfla
 - Removed gregbrine @Redeix
 ### Bug fixes
 - Fixed not being able to break Additional Placements blocks @Pyritie @Redeix
