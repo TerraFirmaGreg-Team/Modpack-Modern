@@ -36,6 +36,7 @@
 	"block.beneath.wood.barrel.warped": "Barril Distorcido",
 	"block.beneath.wood.chest.crimson": "Baú Carmesim",
 	"block.beneath.wood.chest.warped": "Baú Distorcido",
+	"block.beneath.wood.horizontal_support.warped": "Suporte Distorcido",
 	"block.beneath.wood.planks.crimson_button": "Botão Carmesim",
 	"block.beneath.wood.planks.crimson_door": "Porta Carmesim",
 	"block.beneath.wood.planks.crimson_fence": "Cerca Carmesim",
@@ -46,6 +47,7 @@
 	"block.beneath.wood.planks.wall_hanging_sign.wrought_iron.warped": "Placa Suspensa Distorcida (Ferro Forjado)",
 	"block.beneath.wood.planks.warped_sign": "Placa Distorcida",
 	"block.beneath.wood.planks.warped_wall_sign": "Placa Distorcida",
+	"block.beneath.wood.vertical_support.warped": "Suporte Distorcido",
 	"block.minecraft.nether_quartz_ore.prospected": "Quartzo do Nether",
 	"item.beneath.food.button": "Botão",
 	"item.beneath.food.chantrelle": "Cantarelo",
@@ -77,5 +79,6 @@
 	"item.beneath.wood.hanging_sign.wrought_iron.warped": "Placa Suspensa Distorcida (Ferro Forjado)",
 	"item.beneath.wood.sign.crimson": "Placa Carmesim",
 	"item.beneath.wood.sign.warped": "Placa Distorcida",
+	"item.beneath.wood.support.warped": "Suporte Distorcido",
 	"tfc.recipe.barrel.tfc.barrel.mortar": "Argamassa"
 }
