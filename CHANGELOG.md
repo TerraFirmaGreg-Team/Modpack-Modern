@@ -3,6 +3,7 @@
 ## Unreleased
 ### Changes
 ### Bug fixes
+- Fixed beneath quartz crystal blocks not dropping anything when mined with a hammer, mining hammer, or drill @Pyritie
 
 ## [0.13.7] - 7-08-2026
 ### Changes
