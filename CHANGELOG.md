@@ -65,8 +65,9 @@
 - Fixed disappearing assembler recipes for create deco brick blocks (#4687) @Pyritie
 ### Mods
 #### Jellies
-- Added new jellies! Two in the overworld, one in the beneath, one on the moon, one on mars, and two secret ones. Field guide entry and uses for all of the slimeballs are coming soon. @SakuraKitsurugi
+- Added new jellies! Two in the overworld, one in the beneath, one on the moon, one on mars, and one secret one. Field guide entry and uses for all of the slimeballs are coming soon. @SakuraKitsurugi
 - Fixed not being able to breed jellies together @SakuraKitsurugi
+- Fixed jellies not spawning in the beneath @SakuraKitsurugi
 - Jellie slime balls can now be crafted into "plain" slime balls @Pyritie
 #### Create: Hypertubes
 - Added Hypertube Splitter
