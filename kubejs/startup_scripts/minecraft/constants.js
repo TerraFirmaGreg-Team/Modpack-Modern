@@ -18,6 +18,7 @@ global.MINECRAFT_HIDED_ITEMS = [
 	"minecraft:structure_block", 
 
     // unobtainable but used in worldgen
+    "minecraft:torch",
     "minecraft:lantern",
     "minecraft:raw_iron_block",
 	"minecraft:infested_deepslate",
