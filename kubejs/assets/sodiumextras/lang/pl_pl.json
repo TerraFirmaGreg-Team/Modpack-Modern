@@ -14,6 +14,7 @@
   "sodium.extras.options.common.simple": "Prosty",
   "sodium.extras.options.common.slow": "Wolne",
   "sodium.extras.options.common.superfast": "Bardzo szybkie",
+  "sodium.extras.options.culling.entity.distance.horizontal.title": "Odległość maksymalna bytów (pozioma)",
   "sodium.extras.options.culling.entity.distance.vertical.title": "Odległość maksymalna bytów (pionowa)",
   "sodium.extras.options.culling.entity.title": "Użyj maksymalnej odległości dla bytów",
   "sodium.extras.options.culling.page": "Entity Culling",
@@ -89,6 +90,7 @@
   "sodium.extras.options.zoom.page": "Powiększenie",
   "sodium.extras.options.zoom.quadratics.title": "Użyj współczynników kwadratowych",
   "sodium.extras.options.zoom.sensitive.title": "Czułość myszy",
+  "sodium.extras.options.zoom.smoothness.title": "Płynność zoomu w milisekundach",
   "sodium.extras.options.zoom.speed.title": "Szybkość przybliżania",
   "sodium.extras.options.zoom.toggle.title": "Przełącz tryb"
 }

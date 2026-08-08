@@ -36,6 +36,19 @@ const registerTFCHeats = (event) => {
 const registerTFCFuels = (event) => {
 	event.fuel('tfg:dried_peat_brick', 627, 750, 0.7)
 
+	event.fuel('patchouli:guide_book', 50, 199, 0.7)
+	event.fuel('ftbquests:book', 50, 199, 0.7)
+	event.fuel('tfc:wool', 150, 199, 0.7)
+	event.fuel('primitive_creatures:grh', 150, 199, 0.7)
+	event.fuel('tfc:straw', 150, 199, 0.7)
+	event.fuel('#tfc:moss', 150, 199, 0.7)
+	event.fuel('beneath:crimson_straw', 150, 199, 0.7)
+	event.fuel('beneath:warped_straw', 150, 199, 0.7)
+	event.fuel('tfg:groundcover/palm_husk', 150, 199, 0.7)
+	event.fuel('tfg:plant/moss_campion', 150, 199, 0.7)
+	event.fuel('tfg:plant/elegant_sunburst_lichen', 150, 199, 0.7)
+	event.fuel('tfc:blubber', 400, 650, 0.4)
+
 	event.fuel('gtceu:coke_gem', 1415, 4400, 1.0)
 	event.fuel('gtceu:coke_dust', 1415, 1200, 0.95)
 

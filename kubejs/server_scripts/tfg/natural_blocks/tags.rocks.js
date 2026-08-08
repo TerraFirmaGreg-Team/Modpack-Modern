@@ -165,7 +165,6 @@ function registerTFGStoneItemTags(event) {
 			event.add('forge:smooth_stone', rock.polished.block);
 			addToTfcTag(rock.polished.block);
 			addToMaterialTag(material, rock.polished.block);
-			addToStonecutterTag(rock.stonecutterTag, rock.polished);
 
 			SHAPES.forEach(shape => {
 				if (rock.polished[shape] != null) {

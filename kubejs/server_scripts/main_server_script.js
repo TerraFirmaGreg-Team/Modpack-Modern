@@ -27,6 +27,7 @@ ServerEvents.tags('item', event => {
 	registerExposureItemTags(event)
 	registerFirmaCivItemTags(event)
 	registerFirmaLifeItemTags(event)
+	registerFowlPlayItemTags(event)
 	registerFramedBlocksItemTags(event)
 	registerFTBQuestsItemTags(event)
 	registerGreateItemTags(event)
@@ -71,6 +72,7 @@ ServerEvents.tags('block', event => {
 	registerEndermanOverhaulBlockTags(event)
 	registerEveryCompatBlockTags(event)
 	registerFirmaLifeBlockTags(event)
+	registerFowlPlayBlockTags(event)
 	registerGTCEUBlockTags(event)
 	registerMinecraftBlockTags(event)
 	registerRailWaysBlockTags(event)
@@ -123,12 +125,15 @@ ServerEvents.tags('worldgen/biome', event => {
 	registerAdAstraBiomeTags(event)
 	registerCosyCrittersBiomeTags(event)
 	registerCreatePickyWheelsBiomeTags(event)
+	registerFowlPlayBiomeTags(event)
 	registerTFGBiomeTags(event)
 	registerRealmRpgBiomeTags(event)
 	registerWansAncientBeastsBiomeTags(event)
 })
 
 ServerEvents.tags('entity_type', event => {
+	registerFowlPlayEntityTags(event)
+	registerJelliesEntityTags(event)
 	registerTFGEntityTypeTags(event)
 	registerWABEntityTypeTags(event)
 })
@@ -155,6 +160,7 @@ TFCEvents.data(event => {
 	registerTFCDataForChalk(event);
 	registerTFCDataForChimes(event);
 	registerTFCDataForCreateAddition(event);
+	registerCreateDecoData(event);
 	registerTFCDataForFirmalife(event)
 	registerTFCDataForGTCEU(event)
 	registerTFCDataForImmersiveAircraft(event);

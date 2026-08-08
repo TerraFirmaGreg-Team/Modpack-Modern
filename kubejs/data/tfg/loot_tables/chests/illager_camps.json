@@ -367,6 +367,36 @@
 					"type": "minecraft:item",
 					"name": "species:music_disc_lapidarian",
 					"weight": 10
+				},
+				{
+					"type": "minecraft:item",
+					"name": "createdeco:copper_coin",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 6,
+								"max": 20,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 50
+				},
+				{
+					"type": "minecraft:item",
+					"name": "createdeco:copper_coinstack",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 2,
+								"max": 4,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 50
 				}
 			],
 			"rolls": {

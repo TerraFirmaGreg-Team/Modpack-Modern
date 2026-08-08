@@ -9,9 +9,18 @@
       "tacz:db_short",
       "tacz:db_long"
     ],
+    "fireSelectWhileShooting": false,
+    "disableUnderwater": false,
+    "manualBolting": false,
     "allowUnload": true,
+    "unloadBulletInBarrel": false,
+    "reduceSensitivityKeyMultiplier": 0.5,
+    "disableReduceSensitivityKeyWhileAiming": false,
+    "tiltGunKeyCancelsSprint": true,
+    "tiltGunKeyTriggersReduceSensitivity": true,
     "cancelInspection": false,
-    "disableBulletCulling": false
+    "disableBulletCulling": false,
+    "thirdPersonGunRenderingFix": true
   },
   "modifiers": {
     "damage": {
@@ -54,12 +63,27 @@
       "multiplier": 1.0,
       "function": ""
     },
+    "aimTime": {
+      "addend": 0.0,
+      "multiplier": 1.0,
+      "function": ""
+    },
     "inaccuracy": {
       "addend": 0.0,
       "multiplier": 1.0,
       "function": ""
     },
+    "standInaccuracy": {
+      "addend": 0.0,
+      "multiplier": 1.0,
+      "function": ""
+    },
     "aimInaccuracy": {
+      "addend": 0.0,
+      "multiplier": 1.0,
+      "function": ""
+    },
+    "moveInaccuracy": {
       "addend": 0.0,
       "multiplier": 1.0,
       "function": ""
@@ -115,7 +139,8 @@
     "pitchUpperLimit": 25.0,
     "pitchLowerLimit": -10.0,
     "dynamicPitchLimit": false,
-    "visualTweak": true
+    "visualTweak": true,
+    "tiltGun": "DEFAULT"
   },
   "compat": {
     "firstAidCompat": false,
@@ -125,10 +150,18 @@
     "mtsFix": false
   },
   "tweaks": {
+    "audibleFirstPersonGunSounds": false,
     "forceFirstPersonShootingSound": false,
     "betterMonoConversion": false,
+    "betterInaccuracy": false,
+    "betterGunTilt": false,
+    "bulletProtection": false,
     "endermenEvadeBullets": false,
+    "disableRefitOnAdventure": false,
+    "infiniteAmmoDisablesConsumption": false,
     "alwaysFilterByHand": true,
+    "rps": false,
+    "forceDefaultHitAndKillSounds": false,
     "suppressHeadHitSounds": false,
     "suppressFleshHitSounds": false,
     "suppressKillSounds": false,

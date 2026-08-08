@@ -59,6 +59,9 @@ function registerTFGPropertyMaterialModification(event) {
 
 	GTMaterials.Titanium.getProperties().removeProperty(PropertyKey.BLAST);
 	GTMaterials.Titanium.setProperty(PropertyKey.BLAST, new $BLAST_PROPERTY(2750, $BLAST_PROPERTY.GasTier.MID, GTValues.VA[GTValues.HV], 20 * 60, GTValues.VA[GTValues.HV], 7.2 * 20));
+	
+	// Make this smeltable
+	GTMaterials.VanadiumMagnetite.getProperty(PropertyKey.ORE).setDirectSmeltResult(GTMaterials.Iron);
 
 	// Remove properties
 	GTMaterials.Glass.getProperties().removeProperty(PropertyKey.GEM)

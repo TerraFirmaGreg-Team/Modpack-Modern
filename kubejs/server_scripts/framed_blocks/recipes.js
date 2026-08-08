@@ -84,7 +84,7 @@ const registerFramedBlocksRecipes = (event) => {
 	}).id('framedblocks:framing_saw/framed_pressure_plate')
 	//#endregion
 
-	//#region Framed Pressure Plate
+	//#region Framed Stone Pressure Plate
 	event.shapeless(
 		Item.of('framedblocks:framed_stone_pressure_plate', 1),
 		[
@@ -111,13 +111,13 @@ const registerFramedBlocksRecipes = (event) => {
 	//#endregion
 
 	//#region Framed Gold Pressure Plate
-	event.shaped('framedblocks:framed_gold_pressure_plate', [
-		'AA',
-		'BB'
-	], {
-		A: '#forge:plates/gold',
-		B: 'framedblocks:framed_cube'
-	}).id('framedblocks:framed_gold_pressure_plate')
+	event.shapeless(
+		Item.of('framedblocks:framed_gold_pressure_plate', 1),
+		[
+			'minecraft:light_weighted_pressure_plate',
+			'framedblocks:framed_cube',
+		]
+	).id('framedblocks:framed_gold_pressure_plate')
 
 	event.custom({
 		type: "framedblocks:frame",
@@ -125,7 +125,7 @@ const registerFramedBlocksRecipes = (event) => {
 			{
 				count: 1,
 				ingredient: {
-					tag: "forge:plates/gold"
+					item: "minecraft:light_weighted_pressure_plate"
 				}
 			}
 		],
@@ -137,13 +137,13 @@ const registerFramedBlocksRecipes = (event) => {
 	//#endregion
 
 	//#region Framed Iron Pressure Plate
-	event.shaped('framedblocks:framed_iron_pressure_plate', [
-		'AA',
-		'BB'
-	], {
-		A: '#forge:plates/iron',
-		B: 'framedblocks:framed_cube'
-	}).id('framedblocks:framed_iron_pressure_plate')
+	event.shapeless(
+		Item.of('framedblocks:framed_iron_pressure_plate', 1),
+		[
+			'minecraft:heavy_weighted_pressure_plate',
+			'framedblocks:framed_cube',
+		]
+	).id('framedblocks:framed_iron_pressure_plate')
 
 	event.custom({
 		type: "framedblocks:frame",
@@ -151,7 +151,7 @@ const registerFramedBlocksRecipes = (event) => {
 			{
 				count: 1,
 				ingredient: {
-					tag: "forge:plates/iron"
+					item: "minecraft:heavy_weighted_pressure_plate"
 				}
 			}
 		],

@@ -55,10 +55,8 @@
     "chiseled_bookshelf": true
   },
   "gtmutils": {
-    "me_expanded_pattern_buffer_proxy_info": true,
-    "me_expanded_pattern_buffer_info": true,
-    "enlarged_me_stocking_bus_info": true,
-    "pterb_info": true
+    "web_info": true,
+    "enlarged_me_stocking_bus_info": true
   },
   "jadeaddons.create": {
     "filter": true,
@@ -170,6 +168,7 @@
     "wall_torch": true,
     "windmill": true,
     "ocelot": true,
+    "tamed_fox": true,
     "candle_cake": true,
     "horse": true,
     "charger": true,
@@ -177,6 +176,7 @@
     "animal": true,
     "fruit_tree_sapling": true,
     "squid": true,
+    "dog": true,
     "encased_axle": true,
     "crop": true,
     "blast_furnace": true,
@@ -184,6 +184,7 @@
     "hand_wheel": true,
     "mongoose": true,
     "sheet_pile": true,
+    "fox": true,
     "quern": true,
     "pit_kiln_above": true,
     "hot_poured_glass": true,
@@ -194,6 +195,7 @@
     "barrel": true,
     "leopard_seal": true,
     "mold_table": true,
+    "wolf": true,
     "predator": true,
     "wild_animal": true,
     "crucible": true,
@@ -203,6 +205,7 @@
     "water_wheel": true,
     "crankshaft": true,
     "powder_keg": true,
+    "jellie": true,
     "pit_kiln_internal": true,
     "fish": true,
     "candle": true,
@@ -229,14 +232,11 @@
     "photograph_frame": true
   },
   "tfg": {
+    "dynamic_age": true,
     "tier_locked_block_info": true
   },
   "jadeaddons.lootr": {
     "info": true
-  },
-  "tfc_gourmet": {
-    "milkable_animal": true,
-    "brinza_wheel": true
   },
   "corpse": {
     "corpse": true

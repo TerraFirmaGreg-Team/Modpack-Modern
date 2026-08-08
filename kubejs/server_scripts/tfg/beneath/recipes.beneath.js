@@ -8,7 +8,7 @@
 function registerTFGBeneathRecipes(event) {
 	
 	const mossLichens = [
-		'tfc:plant/moss','tfc:plant/spanish_moss',
+		'tfc:plant/moss',
 		'tfc:plant/reindeer_lichen','tfc:plant/cobblestone_lichen'
 	];
 
@@ -18,6 +18,12 @@ function registerTFGBeneathRecipes(event) {
 			`${mossLichen}`
 		]).id(`tfg:shapeless/moss_block/${global.linuxUnfucker(mossLichen)}`)
 	})
+
+	event.shapeless('1x tfg:pale_moss_block', [
+		'#tfc:dirt',
+		'tfc:plant/spanish_moss'
+	]).id(`tfg:shapeless/moss_block/spanish_moss`)
+
 
 	const MossCarpets = [
 		'minecraft:moss','tfg:pale_moss','wan_ancient_beasts:olden_moss'
@@ -29,6 +35,7 @@ function registerTFGBeneathRecipes(event) {
 			`${mossCarpet}_carpet`
 		]).id(`tfg:shapeless/${global.linuxUnfucker(mossCarpet)}_block`)
 	})
+
 
 	event.shaped('6x minecraft:moss_carpet', [
 		'AA'
