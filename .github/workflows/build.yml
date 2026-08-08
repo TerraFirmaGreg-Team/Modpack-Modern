@@ -574,8 +574,8 @@ jobs:
           project-id: ${{ vars.CURSEFORGE_ID }}
           display-name: ${{ needs.info.outputs.project_full_name }}
           modpack-path: ${{ needs.info.outputs.project_full_name }}-curseforge.zip
-          server-display-name: ${{ needs.info.outputs.project_full_name }}-serverpack
-          modpack-server-path: ${{ needs.info.outputs.project_full_name }}-serverpack.zip
+          # server-display-name: ${{ needs.info.outputs.project_full_name }}-serverpack
+          # modpack-server-path: ${{ needs.info.outputs.project_full_name }}-serverpack.zip
           changelog: |
             ${{ needs.info.outputs.changelog }}
             ${{ needs.info.outputs.diff }}
