@@ -63,6 +63,7 @@
 - Fixed a broken texture when stomping honey into sugar (#4710) @Pyritie
 - Fixed some inconsistencies with pressing/polishing poor ores compared to crushing (#4713) @Pyritie
 - Fixed disappearing assembler recipes for create deco brick blocks (#4687) @Pyritie
+- Fixed a dupe with gilded blackstone for infinite gold @Pyritie
 ### Mods
 #### Jellies
 - Added new jellies! Two in the overworld, one in the beneath, one on the moon, one on mars, and one secret one. Field guide entry and uses for all of the slimeballs are coming soon. @SakuraKitsurugi
