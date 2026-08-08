@@ -67,7 +67,7 @@
 	"block.firmalife.fluid.sugar_water": "Woda cukrowa",
 	"block.firmalife.fluid.white_wine": "Białe wino",
 	"block.firmalife.fluid.yak_milk": "Mleko jaka",
-	"block.firmalife.fluid.yeast_starter": "Starter drożdżowy",
+	"block.firmalife.fluid.yeast_starter": "Zakwas drożdżowy",
 	"block.firmalife.gouda_wheel": "Koło sera gouda",
 	"block.firmalife.grape_fluff_red": "Czerwona winorośl",
 	"block.firmalife.grape_fluff_white": "Biała winorośl",
@@ -524,7 +524,7 @@
 	"firmalife.tooltip.food_trait.hung_2": "Powieszone w piwnicy II",
 	"firmalife.tooltip.food_trait.hung_3": "Powieszone w piwnicy III",
 	"firmalife.tooltip.food_trait.oven_baked": "Pieczone w piecu",
-	"firmalife.tooltip.food_trait.rancid_smoked": "Zjełczałe wędzone",
+	"firmalife.tooltip.food_trait.rancid_smoked": "Zjełczałe",
 	"firmalife.tooltip.food_trait.shelved": "Na półce w piwnicy",
 	"firmalife.tooltip.food_trait.shelved_2": "Na półce w piwnicy II",
 	"firmalife.tooltip.food_trait.shelved_3": "Na półce w piwnicy III",
@@ -564,7 +564,7 @@
 	"fluid.firmalife.sugar_water": "Woda cukrowa",
 	"fluid.firmalife.white_wine": "Białe wino",
 	"fluid.firmalife.yak_milk": "Mleko jaka",
-	"fluid.firmalife.yeast_starter": "Starter drożdżowy",
+	"fluid.firmalife.yeast_starter": "Zakwas drożdżowy",
 	"greenhouse.firmalife.copper": "Miedź",
 	"greenhouse.firmalife.iron": "Żelazo",
 	"greenhouse.firmalife.stainless_steel": "Stal nierdzewna",
@@ -796,5 +796,5 @@
 	"tfc.recipe.barrel.firmalife.barrel.shosha": "Koło shoshy",
 	"tfc.recipe.barrel.firmalife.barrel.soybean_oil": "Olej sojowy",
 	"tfc.recipe.barrel.firmalife.barrel.yak_milk_curd": "Twaróg z mleka jaka",
-	"tfc.recipe.barrel.firmalife.barrel.yeast_starter": "Starter drożdżowy"
+	"tfc.recipe.barrel.firmalife.barrel.yeast_starter": "Zakwas drożdżowy"
 }
