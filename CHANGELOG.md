@@ -2,8 +2,8 @@
 
 ## Unreleased
 ### Changes
+- Added two more "start room" variations to mineshafts, and added monsters to it @Pyritie
 ### Bug fixes
-- Fixed beneath quartz crystal blocks not dropping anything when mined with a hammer, mining hammer, or drill @Pyritie
 
 ## [0.13.7] - 7-08-2026
 ### Changes
@@ -66,6 +66,7 @@
 - Fixed some inconsistencies with pressing/polishing poor ores compared to crushing (#4713) @Pyritie
 - Fixed disappearing assembler recipes for create deco brick blocks (#4687) @Pyritie
 - Fixed a dupe with gilded blackstone for infinite gold @Pyritie
+- Fixed beneath quartz crystal blocks not dropping anything when mined with a hammer, mining hammer, or drill @Pyritie
 ### Mods
 #### Jellies
 - Added new jellies! Two in the overworld, one in the beneath, one on the moon, one on mars, and one secret one. Field guide entry and uses for all of the slimeballs are coming soon. @SakuraKitsurugi
