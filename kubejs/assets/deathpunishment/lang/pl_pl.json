@@ -19,6 +19,7 @@
   "config.deathpunishment.penalties.movement_duration": "Czas trwania spowolnienia (0-600 s)",
   "config.deathpunishment.penalties.darkness_duration": "Czas trwania ciemności (0-600 s)",
   "config.deathpunishment.penalties.raw_meat_enabled": "Głód przy jedzeniu surowego mięsa TFC",
+  "config.deathpunishment.penalties.raw_meat_hunger_duration": "Czas trwania głodu przy jedzeniu surowego mięsa (0-600 s)",
   "enum.deathpunishment.hunger_mode.TFC": "Domyślne TFC",
   "enum.deathpunishment.hunger_mode.MANUAL": "Konfiguracja ręczna",
   "enum.deathpunishment.hunger_mode.KEEP": "Zachowaj po śmierci",
@@ -31,9 +32,12 @@
   "tooltip.deathpunishment.health": "Początkowe zdrowie po odrodzeniu (aktywne w trybie ręcznym)",
   "tooltip.deathpunishment.effect_amplifier": "Podstawowy poziom wszystkich negatywnych efektów (0-5)",
   "tooltip.deathpunishment.thirst_duration": "Czas trwania efektu pragnienia (sekundy)",
+  "tooltip.deathpunishment.exhausted_duration": "Czas trwania efektu wykończenia (sekundy)",
+  "tooltip.deathpunishment.blindness_duration": "Czas trwania efektu oślepienia (sekundy)",
   "tooltip.deathpunishment.confusion_duration": "Czas trwania efektu nudności (sekundy)",
   "tooltip.deathpunishment.hunger_duration": "Czas trwania efektu głodu (sekundy)",
   "tooltip.deathpunishment.movement_duration": "Czas trwania efektu spowolnienia (sekundy)",
+  "tooltip.deathpunishment.pinned_duration": "Czas trwania efektu przygwożdżenia (sekundy)",
   "tooltip.deathpunishment.darkness_duration": "Czas trwania efektu ciemności (sekundy)",
   "message.deathpunishment.reload_config": "Przeładuj konfigurację, by zastosować zmiany"
 }
