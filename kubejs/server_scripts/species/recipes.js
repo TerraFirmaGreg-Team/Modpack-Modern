@@ -57,10 +57,14 @@ function registerSpeciesRecipes(event) {
 
 	event.shaped('species:harpoon', [
 		'A',
-		'B',
 		'B'
 	], {
-		A: 'tfc:metal/javelin_head/wrought_iron',
+		A: [
+			'tfc:metal/javelin_head/bronze', 
+			'tfc:metal/javelin_head/bismuth_bronze',
+			'tfc:metal/javelin_head/black_bronze', 
+			'tfc:metal/javelin_head/wrought_iron'
+		],
 		B: 'firmaciv:rope_coil'
 	}).id('tfg:shaped/harpoon')
 

@@ -38,6 +38,10 @@ function registerTFGRepairRecipes(event) {
 
 	const SPECIAL_REPAIRS = [
 		{ item: "grapplemod:grapplinghook", material: "gtceu:repair_kit_wrought_iron" },
+		{ item: "species:harpoon", material: "gtceu:repair_kit_bronze" },
+		{ item: "species:harpoon", material: "gtceu:repair_kit_black_bronze" },
+		{ item: "species:harpoon", material: "gtceu:repair_kit_bismuth_bronze" },
+		{ item: "species:harpoon", material: "gtceu:repair_kit_wrought_iron" },
 
 		{ item: "sns:hiking_boots", material: "sns:leather_strip" },
 
@@ -229,7 +233,7 @@ function registerTFGRepairRecipes(event) {
 				// T: { tag: "forge:tools/hammers" }
 			},
 			repairPercentage: 0.25
-		}).id(`tfg:item_repair/${global.linuxUnfucker(repair.item)}`)
+		}).id(`tfg:item_repair/${global.linuxUnfucker(repair.item)}_${global.linuxUnfucker(repair.material)}`)
 	})
 	
 	SPECIAL_TAG_REPAIRS.forEach(repair => {

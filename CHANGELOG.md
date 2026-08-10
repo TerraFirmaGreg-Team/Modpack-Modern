@@ -4,6 +4,7 @@
 ### Changes
 - Added two more "start room" variations to mineshafts, and added monsters to it @Pyritie
 - Reduced the amount of mobs (and treasure) in Beneath towers, so they are more useful for traveling @Pyritie
+- The harpoon can now also be crafted with bronze, has much more durability, and can be repaired @Pyritie
 ### Bug fixes
 
 ## [0.13.7] - 7-08-2026
