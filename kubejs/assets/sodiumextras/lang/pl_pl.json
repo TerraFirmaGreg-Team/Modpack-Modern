@@ -1,4 +1,5 @@
 {
+  "sodium.extras.options.clouds.height.desc": "Podnosi wysokość chmur.\nSkonfiguruj wysokość chmur",
   "sodium.extras.options.clouds.height.title": "Wysokość chmur",
   "sodium.extras.options.common.advanced": "Zaawansowany",
   "sodium.extras.options.common.attach": "Podłącz",
@@ -18,6 +19,7 @@
   "sodium.extras.options.culling.entity.distance.vertical.title": "Odległość maksymalna bytów (pionowa)",
   "sodium.extras.options.culling.entity.title": "Użyj maksymalnej odległości dla bytów",
   "sodium.extras.options.culling.page": "Entity Culling",
+  "sodium.extras.options.culling.tile.distance.horizontal.title": "Odległość maksymalna bytów bloków (pozioma)",
   "sodium.extras.options.culling.tiles.title": "Użyj maksymalnej odległości dla bytów bloków",
   "sodium.extras.options.darkness.blocklightonly.title": "Blokuj tylko światło",
   "sodium.extras.options.darkness.end.brightness.title": "Jasność mgły Endu",
@@ -41,6 +43,7 @@
   "sodium.extras.options.darkness.noskylight.desc": "Jeśli włączone, prawdziwa ciemność będzie włączona we wszystkich wymiarach bez nieba",
   "sodium.extras.options.darkness.noskylight.title": "Włącz w wymiarach bez widoku nieba",
   "sodium.extras.options.darkness.others.title": "Włącz w innych wymiarach",
+  "sodium.extras.options.darkness.overworld.desc": "Jeśli włączone, prawdziwa ciemność będzie włączona w świecie.",
   "sodium.extras.options.darkness.overworld.title": "Włącz w podstawowym świecie",
   "sodium.extras.options.darkness.page": "Prawdziwa ciemność",
   "sodium.extras.options.displayfps.avg": "ŚR",
