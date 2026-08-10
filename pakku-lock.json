@@ -17166,7 +17166,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "playerrevive_compat-1.0.3-f4fdba6.jar",
+                    "file_name": "playerrevive_compat-1.0.4-daf51f2.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -17174,18 +17174,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8553/822/playerrevive_compat-1.0.3-f4fdba6.jar",
-                    "id": "8553822",
+                    "url": "https://edge.forgecdn.net/files/8608/222/playerrevive_compat-1.0.4-daf51f2.jar",
+                    "id": "8608222",
                     "parent_id": "1440963",
                     "hashes": {
-                        "sha1": "46c88b2a28883bd01ca69c50236e14c7cad38b17",
-                        "md5": "92041ce5fc68d5a0aea45ab6f8a1bde8"
+                        "sha1": "bd7596d7a225dd4d1cc10a020431b51cc1e21de4",
+                        "md5": "ded724ec43ae2c2da1c06e82c6b96c47"
                     },
                     "required_dependencies": [
                         "266890"
                     ],
-                    "size": 208380,
-                    "date_published": "2026-08-01T12:00:52.610Z"
+                    "size": 208385,
+                    "date_published": "2026-08-09T10:21:01.033Z"
                 }
             ]
         },
