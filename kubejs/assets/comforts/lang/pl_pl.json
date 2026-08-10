@@ -1,4 +1,5 @@
 {
+  "block.comforts.hammock.no_rope": "Musisz powiesić hamak na parze lin i gwoździ",
   "block.comforts.hammock.no_sleep": "Możesz spać tylko w dzień",
   "block.comforts.hammock.occupied": "Ten hamak jest już zajęty",
   "block.comforts.hammock.too_far_away": "Nie możesz teraz odpoczywać; hamak jest zbyt daleko",
@@ -43,6 +44,7 @@
   "comforts.skipping_day": "Przesypianie dnia",
   "gui.comforts.config.autoUse.name": "Automatycznie używaj śpiworów",
   "gui.comforts.config.daySleepingPercentage.name": "Odsetek śpiących za dnia",
+  "gui.comforts.config.hammockUse.description": "Pora dnia, w której można używać hamaków.",
   "gui.comforts.config.hammockUse.name": "Pora dnia na używanie hamaków",
   "gui.comforts.config.hammocksStopPhantoms.name": "Hamaki powstrzymują fantomy",
   "gui.comforts.config.nightWakeTimeOffset.description": "Ilość czasu, w tikach, która zostanie dodana lub odjęta od nowego czasu po przespaniu dnia.",
