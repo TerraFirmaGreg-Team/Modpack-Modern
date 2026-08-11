@@ -23,7 +23,7 @@
   "entity.create_factory_logistics.composite_package": "Pakiet złożony",
   "create.item_attributes.is_fluid": "jest %1$s",
   "create.item_attributes.is_fluid.inverted": "nie jest %1$s",
-  "create.item_attributes.is_fluid_no_nbt": "jest %1$s (brak NBT)",
+  "create.item_attributes.is_fluid_no_nbt": "jest %1$s (bez NBT)",
   "create.item_attributes.is_fluid_no_nbt.inverted": "jest %1$s (brak NBT)"
 }
 
