@@ -26,6 +26,8 @@
 	"create.schedule.condition.redstone_link.unpowered": "Neveikia",
 	"create.schematic.mirror.none": "Joks",
 	"create.schematic.rotation.none": "Joks",
+	"create.schematicannon.status.finished": "Baigta",
+	"create.schematicannon.status.ready": "Pasiruošęs",
 	"create.tooltip.capacityProvided.high": "Didelis",
 	"create.tooltip.capacityProvided.low": "Mažas",
 	"create.tooltip.capacityProvided.medium": "Vidutinis",
@@ -37,6 +39,7 @@
 	"item.create.chocolate_bucket": "Šokolado kibiras",
 	"item.create.copper_sheet": "Vario lakštas",
 	"item.create.golden_sheet": "Aukso lakštas",
+	"item.create.rose_quartz": "Rožinis kvarcas",
 	"item.create.wheat_flour": "Kviečių miltai",
 	"item.create.zinc_ingot": "Cinko luitas",
 	"tag.item.create.sandpaper": "Švitrinis popierius",
@@ -44,5 +47,6 @@
 	"tag.item.create.stone_types.galosphere.amethyst": "Ametistas",
 	"tag.item.forge.dough.wheat": "Kvietinė tešla",
 	"tag.item.forge.flour.wheat": "Kviečių miltai",
+	"tag.item.forge.gems.certus_quartz": "Certuso kvarcas",
 	"tag.item.forge.plates": "Lakštai"
 }
