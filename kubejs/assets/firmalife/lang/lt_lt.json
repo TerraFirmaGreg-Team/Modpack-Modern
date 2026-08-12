@@ -51,6 +51,8 @@
 	"firmalife.planter.growth_water": "Augimas: %s, Vanduo: %s",
 	"firmalife.tooltip.food_trait.dried": "Džiovintas/-a",
 	"firmalife.tooltip.food_trait.fresh": "Šviežias",
+	"firmalife.tumbler.ready": "Pasiruošęs",
+	"firmalife.tumbler.rotten": "Sugedęs!",
 	"fluid.firmalife.chocolate": "Šokoladas",
 	"fluid.firmalife.cream": "Kremas",
 	"fluid.firmalife.soybean_oil": "Sojų pupelių aliejus",
@@ -122,5 +124,9 @@
 	"item.firmalife.raw_honey": "Neapdorotas medus",
 	"item.firmalife.spice.vanilla": "Vanilė",
 	"metal.firmalife.stainless_steel": "Nerūdijantis plienas",
-	"tfc.recipe.barrel.firmalife.barrel.cream": "Kremas"
+	"tfc.recipe.barrel.firmalife.barrel.cream": "Kremas",
+	"tfc.recipe.barrel.firmalife.barrel.curdled_milk": "Pienas riaugiamas",
+	"tfc.recipe.barrel.firmalife.barrel.feta": "Fetos sūrio galva",
+	"tfc.recipe.barrel.firmalife.barrel.gouda": "Guoda sūrio galva",
+	"tfc.recipe.barrel.firmalife.barrel.shosha": "Shosha sūrio galva"
 }
