@@ -28,11 +28,11 @@
             "weight": 1
           },
           {
-            "block": "gtceu:pyroxenite_lithium_ore",
+            "block": "gtceu:pyroxenite_anthracite_ore",
             "weight": 30
           },
           {
-            "block": "gtceu:pyroxenite_rock_salt_ore",
+            "block": "gtceu:pyroxenite_alunite_ore",
             "weight": 20
           }
         ]
@@ -51,11 +51,11 @@
             "weight": 1
           },
           {
-            "block": "gtceu:deepslate_lithium_ore",
+            "block": "gtceu:deepslate_anthracite_ore",
             "weight": 30
           },
           {
-            "block": "gtceu:deepslate_rock_salt_ore",
+            "block": "gtceu:deepslate_alunite_ore",
             "weight": 20
           }
         ]
@@ -75,11 +75,11 @@
             "weight": 1
           },
           {
-            "block": "gtceu:basalt_lithium_ore",
+            "block": "gtceu:basalt_anthracite_ore",
             "weight": 30
           },
           {
-            "block": "gtceu:basalt_rock_salt_ore",
+            "block": "gtceu:basalt_alunite_ore",
             "weight": 20
           }
         ]
@@ -96,11 +96,11 @@
           "weight": 80
         },
         {
-          "block": "gtceu:lithium_indicator",
+          "block": "gtceu:anthracite_indicator",
           "weight": 30
         },
         {
-          "block": "gtceu:rock_salt_indicator",
+          "block": "gtceu:alunite_indicator",
           "weight": 20
         }
       ]

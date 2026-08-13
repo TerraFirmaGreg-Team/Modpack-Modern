@@ -52,6 +52,27 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
+					"name": "tfc:medium_raw_hide",
+					"conditions": [
+						{
+							"condition": "minecraft:random_chance",
+							"chance": 0.5
+						}
+					]
+				}
+			]
+		},
+		{
+			"conditions": [
+				{
+					"condition": "minecraft:killed_by_player"
+				}
+			],
+			"name": "loot_pool",
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
 					"name": "tfc:blubber",
 					"functions": [
 						{

@@ -34,7 +34,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#high_tetrahedrite)Schwarzerz, Natives Kupfer... (High)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sulfur)Schwefel (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#high_sulfur)Schwefel (Volcanic)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_copper_sulfide)Schwefel, Gips, Chalkosin (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sphalerite)Schwefel, Pyrit, Zinkblende (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_sulfide)Schwefel, Stibnite, Gips (Volcanic)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_galena)Smaragd, Natives Silber$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_galena)Smaragd, Natives Silber, Lead (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_mica)Sodalith (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_mica)Sodalith, Lasurit$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_scheelite)Sphalerit, Blei, Blei$()$()$(li)$(l:tfg_ores/earth_vein_index#high_coal)Steinkohle (High)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_tarkianite)Tarkianite, Borax, Talk$()$()$(li)$(l:tfg_ores/earth_vein_index#sand_garnet)Thorianit, Opal, Garnet Sand$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#high_tetrahedrite)Schwarzerz, Natives Kupfer... (High)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sulfur)Schwefel (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#high_sulfur)Schwefel (Volcanic)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_copper_sulfide)Schwefel, Gips, Chalkosin (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sphalerite)Schwefel, Pyrit, Zinkblende (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_sulfide)Schwefel, Stibnite, Gips (Volcanic)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_galena)Smaragd, Natives Silber$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_galena)Smaragd, Natives Silber, Lead (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_mica)Sodalith (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_mica)Sodalith, Lasurit$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_scheelite)Sphalerit, Blei, Halit$()$()$(li)$(l:tfg_ores/earth_vein_index#high_coal)Steinkohle (High)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_tarkianite)Tarkianite, Borax, Talk$()$()$(li)$(l:tfg_ores/earth_vein_index#sand_garnet)Thorianit, Opal, Garnet Sand$()$()",
       "type": "patchouli:text"
     },
     {
@@ -3857,7 +3857,7 @@
     {
       "Type": "patchouli:text",
       "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/420 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 27%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): -50 — 20$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 25$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 15$(br)$(thing)Biomes$(): Alle$(br2)$(thing)Stone Types$(): Gneis, Kristallschiefer, Marble, Phyllit, Quartzite, Tonschiefer",
-      "title": "Sphalerit, Blei, Blei",
+      "title": "Sphalerit, Blei, Halit",
       "type": "patchouli:text",
       "anchor": "deep_scheelite"
     },
@@ -3903,10 +3903,10 @@
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Blei",
+      "name": "Halit",
       "multiblock": {
         "mapping": {
-          "0": "#forge:ores/lithium"
+          "0": "#forge:ores/lepidolite"
         },
         "pattern": [
           [
@@ -3918,7 +3918,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 14%$(br)$(thing)Source of$(): Lithium$(br)$(thing)Formula$(): Li",
+      "text": "$(thing)Prozentzahl$(): 14%$(br)$(thing)Source of$(): Potassium, Lithium, Aluminium, Fluorine$(br)$(thing)Formula$(): KLi₃Al₄F₂O₁₀",
       "type": "patchouli:multiblock"
     },
     {

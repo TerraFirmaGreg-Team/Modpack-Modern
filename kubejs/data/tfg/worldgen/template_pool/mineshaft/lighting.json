@@ -3,7 +3,7 @@
 	"fallback": "tfg:mineshaft/fallback/lighting_fallback",
 	"elements": [
 		{
-			"weight": 10,
+			"weight": 100,
 			"element": {
 				"location": "tfg:mineshaft/lighting/torches",
 				"processors": "tfg:mineshaft/support_fixer",
@@ -12,7 +12,7 @@
 			}
 		},
 		{
-			"weight": 1,
+			"weight": 5,
 			"element": {
 				"location": "tfg:mineshaft/lighting/fallen_lamp_1",
 				"processors": "tfg:mineshaft/support_fixer",
@@ -21,7 +21,7 @@
 			}
 		},
 		{
-			"weight": 1,
+			"weight": 5,
 			"element": {
 				"location": "tfg:mineshaft/lighting/fallen_lamp_2",
 				"processors": "tfg:mineshaft/support_fixer",
@@ -30,7 +30,7 @@
 			}
 		},
 		{
-			"weight": 1,
+			"weight": 10,
 			"element": {
 				"location": "tfg:mineshaft/lighting/lamp",
 				"processors": "tfg:mineshaft/support_fixer",
@@ -39,7 +39,79 @@
 			}
 		},
 		{
-			"weight": 10,
+			"weight": 5,
+			"element": {
+				"location": "tfg:mineshaft/mobs/hammer_zombie",
+				"processors": "tfg:mineshaft/support_fixer",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 5,
+			"element": {
+				"location": "tfg:mineshaft/mobs/pickaxe_zombie",
+				"processors": "tfg:mineshaft/support_fixer",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 5,
+			"element": {
+				"location": "tfg:mineshaft/mobs/torch_zombie",
+				"processors": "tfg:mineshaft/support_fixer",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 5,
+			"element": {
+				"location": "tfg:mineshaft/mobs/skeleton_javelin",
+				"processors": "tfg:mineshaft/support_fixer",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 5,
+			"element": {
+				"location": "tfg:mineshaft/mobs/skeleton_bow",
+				"processors": "tfg:mineshaft/support_fixer",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 5,
+			"element": {
+				"location": "tfg:mineshaft/mobs/creeper",
+				"processors": "tfg:mineshaft/support_fixer",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 5,
+			"element": {
+				"location": "tfg:mineshaft/mobs/spider",
+				"processors": "tfg:mineshaft/support_fixer",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 2,
+			"element": {
+				"location": "tfg:mineshaft/mobs/cave_spider",
+				"processors": "tfg:mineshaft/support_fixer",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 80,
 			"element": {
 				"location": "minecraft:empty",
 				"processors": "tfg:mineshaft/support_fixer",

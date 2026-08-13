@@ -2,11 +2,21 @@
 
 ## Unreleased
 ### Changes
+- Added two more "start room" variations to mineshafts, and added monsters to it @Pyritie
+- Reduced the amount of mobs (and treasure) in Beneath towers, so they are more useful for traveling @Pyritie
+- The harpoon can now also be crafted with bronze, has much more durability, and can be repaired @Pyritie
+### Bug fixes
+
+## [0.13.7] - 7-08-2026
+### Changes
 #### Create
 - The Quern, Bellows, and Compost Tumbler now connect to Create's kinetic rotation! Check the field guide for information on what the Compost Tumbler does. (#4625) @Redeix
 - Added a resource pack which retextures a lot of Create things to better match the materials you craft them out of. It's a resource pack so you can disable it if you don't like the changes @Pyritie
 - Reduced the consumption rate of steam, cooking oils, and lava inside blaze burners @Pyritie
 #### TFC
+- Backported camels from 1.21 TFC! Find dromedary camels in hot and dry climates, and bactrian camels in cold and dry climates. (#4688) @SakuraKitsurugi
+- Replaced the bird particles with a different bird mod and integrated them with TFC (#4705) @Pyritie
+- Reduced the speed at which items passively cool down (so smithing some metals with low melting points is a little easier), but increased the rate at which food decays *on servers using the default settings* (single player is not affected) - servers are of course free to change these as they like @Pyritie
 - Added "time to grow" tooltips to wood saplings @Redeix
 - Backported TFC's glassblowing changes from 1.21, which includes a shorter cooldown and information on what action you're about to do @Redeix
 - This was actually added back with the palm crops, but now if you hold a rope coil in your offhand, thrown javelins return to you. Also added a new quest and tooltip about this @Redeix
@@ -14,16 +24,31 @@
 - Blocks that can be broken for straw now show up in EMI (should help Beneath starts) @Pyritie
 - Adjusted the climates of polar and tundra start to make them more different - polar is now more dry, while tundra is more humid @Pyritie
 - Added more things to count as firepit logs, fuel, and kindling, so now polar start can actually make firepits (such as driftwood, moss, and animal fat) @Pyritie
+- Calcite dust now counts as fluxstone, and added the ability to quern stone blocks into dusts @Pyritie
+- Increased spawn rates of all herbs and spices (from 1/80 chunks to 1/50 chunks) @Pyritie
+- The warning message on vessels now only shows when it contains too much fluid (#4691) @ashleney
 #### Other changes
 - Added some spooky photos to some chest loot tables @Pyritie
 - Added coins to some loot tables, and made coins meltable @Pyritie
 - Reduced the drop chance of weapons and equipment from piglin brutes @Pyritie
-- Jellie slime balls can now be crafted into "plain" slime balls @Pyritie
-- Added a new amethyst/opal/red garnet ore vein to the overworld @Pyritie
+- Added a new amethyst/opal/red garnet ore vein to the overworld, and changed the ore processing byproducts of amethyst and opal @Pyritie
 - Added new Gilsonite and Obsidian block sets @Atraxia
 - Stone dusts can now also be turned into Mortar and Crushed Base Course (#4648) @Redeix
 - Changed the textures of wrought iron and stainless steel firmalife greenhouses again to better match the material textures @Pyritie
-- Added a sleep paralysis demon @Redeix
+- Vanadium magnetite ore/dust can now also be directly smelted into cast iron @Pyritie
+- Hostile moon mobs no longer catch fire from the sun on the moon @Pyritie
+- Naquadah in the Ostrum Linear Accelerator no longer requires radioactive effluent (#4675) @ashleney
+- Methane is now burned in 1mB input amounts so you won't get tiny amounts of it stuck in a gas turbine any more (#4663) @applnper
+- Mobs on every other dimension besides the overworld should now only spawn on "natural" blocks, matching overworld behaviour (except they can also spawn on the world surface) @Pyritie
+- Increased the sapling drop rate for beech and mahoe trees (#4545) @Pyritie
+- Reduced the capacity of straw baskets, increased the capacity of burlap sacks, and enabled inventory interaction, voiding, and auto pickup for all other Sacks n Such containers (#4652) @Pyritie
+- The warming/insulation amount on clothing now shows °C too (#4690) @ashleney
+- The rocket countdown is now actual seconds instead of being slower when your server has a TPS below 20 @ashleney
+- Stone countertops can now also be used as cellar insulation (since they're made from sealed bricks) (#4708) @Froffy025
+- Changed the raw Lithium ores in the overworld and beneath with Leipdolite and Alunite respectively (#4682) @TomPlop @Pyritie
+- Crates, drums, super chests, and super tanks can now be picked up, like wooden chests (sneak rclick with empty hands) @Pyritie
+- Silk clothes and the hang glider can now also be repaired with phantom silk and nylon (#4716) @olavfla
+- Removed gregbrine @Redeix
 ### Bug fixes
 - Fixed not being able to break Additional Placements blocks @Pyritie @Redeix
 - Fixed a crash if you had steam being pumped into a blaze burner @Pyritie
@@ -35,7 +60,21 @@
 - Fixed not being able to mattock dirt paths of the new dirt types @Pyritie
 - Fixed not being able to craft chocolate ice cream again @Redeix
 - Fixed arundo only being craftable into green compost and not also brown (#4637) @Vazde
+- Fixed not being able to put pyrite powder or lapis powder in a crucible @Pyritie
+- Fixed metal spindles not inheriting forging bonuses when crafted from their heads (#4669) @Pyritie
+- Fixed soups made in a food processor having the wrong nutrient/saturation multipliers @Pyritie
+- Fixed tamed fox familiarity capping at 35 instead of 100 @SakuraKitsurugi
+- Fixed a broken texture when stomping honey into sugar (#4710) @Pyritie
+- Fixed some inconsistencies with pressing/polishing poor ores compared to crushing (#4713) @Pyritie
+- Fixed disappearing assembler recipes for create deco brick blocks (#4687) @Pyritie
+- Fixed a dupe with gilded blackstone for infinite gold @Pyritie
+- Fixed beneath quartz crystal blocks not dropping anything when mined with a hammer, mining hammer, or drill @Pyritie
 ### Mods
+#### Jellies
+- Added new jellies! Two in the overworld, one in the beneath, one on the moon, one on mars, and one secret one. Field guide entry and uses for all of the slimeballs are coming soon. @SakuraKitsurugi
+- Fixed not being able to breed jellies together @SakuraKitsurugi
+- Fixed jellies not spawning in the beneath @SakuraKitsurugi
+- Jellie slime balls can now be crafted into "plain" slime balls @Pyritie
 #### Create: Hypertubes
 - Added Hypertube Splitter
 - Tubes now have collision
@@ -43,6 +82,12 @@
 - Added ponder for copper frogport, unpackager, and multi-fluid tank
 - Fixed issues with the unpacker
 - Fixed fluid factory gauges having high TPS impact
+#### Digger Helmet
+- Fixed helmet linings and changed their values to align with the appropriate clothing @Thomasx0
+- Fixed mining speed modifiers @Thomasx0
+- Fixed multiplayer desync when equipping/unequipping the helmet @Thomasx0
+#### Roads and Roofs
+- Fixed knapping UI opening when trying to make cobbled roads @Therighthon
 
 ## [0.13.6] - 27-07-2026
 ### Changes

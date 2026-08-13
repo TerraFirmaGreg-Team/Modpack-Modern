@@ -22,7 +22,7 @@
         "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_gui_width.png"
       ],
       "border": true,
-      "text": "The cart allows you to adjust the width of the path in the GUI"
+      "text": "Wóz pozwala dostosować szerokość ścieżki w jego interfejsie"
     },
     {
       "type": "patchouli:image",
@@ -39,7 +39,7 @@
         "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_gui_random.png"
       ],
       "border": true,
-      "text": "The cart has a mode that will lay down materials in a random pattern."
+      "text": "Wóz ma tryb, który będzie układał materiały w losowej kolejności."
     },
     {
       "type": "patchouli:image",

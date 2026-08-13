@@ -22,21 +22,21 @@
 			"type": "patchouli:entity",
 			"entity": "tfc:polar_bear",
 			"scale": 0.55,
-			"name": "Polar Bear",
+			"name": "Poliarinė meška",
 			"text": "The polar bear spawns in only the coldest regions, $(l:the_world/climate#temperature)temperature$() at most 10°C, with a $(l:the_world/climate#rainfall)rainfall$() of at least 100mm."
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "tfc:grizzly_bear",
 			"scale": 0.55,
-			"name": "Grizzly Bear",
+			"name": "Grizlis",
 			"text": "The grizzly bear spawns in forests of moderate climates, with a $(l:the_world/climate#temperature)temperature$() range of -15 to 15°C and at least 200mm of $(l:the_world/climate#rainfall)rainfall$()."
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "tfc:black_bear",
 			"scale": 0.55,
-			"name": "Black Bear",
+			"name": "Juodoji meška",
 			"text": "The black bear spawns in forests of warmer, wetter climates, of $(l:the_world/climate#temperature)temperature$() 5 to 20°C and at least 250mm of $(l:the_world/climate#rainfall)rainfall$()."
 		},
 		{
@@ -96,7 +96,7 @@
 			"type": "patchouli:entity",
 			"entity": "tfc:crocodile",
 			"scale": 0.7,
-			"name": "Crocodile",
+			"name": "Krokodilas",
 			"text": "The crocodile spawns near rivers, lakes, and marshes at any $(l:the_world/climate#temperature)temperature$() warmer than 15°C, and at any $(l:the_world/climate#rainfall)rainfall$(). They are nocturnal, and most dangerous in the water."
 		},
 		{
@@ -115,7 +115,7 @@
 			"type": "patchouli:entity",
 			"entity": "tfc:boar",
 			"scale": 0.7,
-			"name": "Boar",
+			"name": "Šernas",
 			"text": "The boar spawns at $(l:the_world/climate#temperature)temperature$() below 25°C and above -5°C, and $(l:the_world/climate#rainfall)rainfall$() between 130 and 400mm."
 		},
 		{
@@ -129,7 +129,7 @@
 			"type": "patchouli:entity",
 			"entity": "tfc:wildebeest",
 			"scale": 0.7,
-			"name": "Wildebeest",
+			"name": "Gnu",
 			"text": "The wildebeest spawns in open plains at any $(l:the_world/climate#temperature)temperature$() above 13°C, and $(l:the_world/climate#rainfall)rainfall$() between 90 and 380mm."
 		},
 		{
@@ -172,7 +172,7 @@
 			"type": "patchouli:entity",
 			"entity": "tfc:caribou",
 			"scale": 0.6,
-			"name": "Caribou",
+			"name": "Šiaurinis elnias",
 			"text": "The caribou spawns at any $(l:the_world/climate#temperature)temperature$() below -9°C, and $(l:the_world/climate#rainfall)rainfall$() between 110 and 500mm."
 		},
 		{
@@ -185,7 +185,7 @@
 			"type": "patchouli:entity",
 			"entity": "tfc:bongo",
 			"scale": 0.9,
-			"name": "Bongo",
+			"name": "Bongas",
 			"text": "The bongo spawns in forests at any $(l:the_world/climate#temperature)temperature$() above 15°C, and $(l:the_world/climate#rainfall)rainfall$() between 230 and 500mm."
 		},
 		{
@@ -268,14 +268,14 @@
 			"type": "patchouli:entity",
 			"entity": "tfc:cod",
 			"scale": 0.7,
-			"name": "Cod",
+			"name": "Menkė",
 			"text": "Cod prefer colder oceans, $(l:the_world/climate#temperature)temperature$() at most 18°C. They can be fished."
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "tfc:pufferfish",
 			"scale": 0.7,
-			"name": "Pufferfish",
+			"name": "Pūsliažuvė",
 			"text": "Pufferfish live in any ocean with at least a $(l:the_world/climate#temperature)temperature$() of 10°C."
 		},
 		{
@@ -303,7 +303,7 @@
 			"type": "patchouli:entity",
 			"entity": "tfc:bluegill",
 			"scale": 0.7,
-			"name": "Bluegill",
+			"name": "Mėlynžandė saulažuvė",
 			"text": "Bluegill spawn in any river or lake with a $(l:the_world/climate#temperature)temperature$() of at least -10°C and at most 26°C."
 		},
 		{
@@ -333,14 +333,14 @@
 			"type": "patchouli:entity",
 			"entity": "tfc:crayfish",
 			"scale": 0.7,
-			"name": "Crayfish",
+			"name": "Vėžys",
 			"text": "Crayfish are like lobster, but spawn in rivers and lakes. They need a $(l:the_world/climate#temperature)temperature$() of at least 5°C and a $(l:the_world/climate#rainfall)rainfall$() of at least 125mm."
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "tfc:horseshoe_crab",
 			"scale": 0.7,
-			"name": "Horseshoe Crab",
+			"name": "Pasaginis krabas",
 			"text": "Horseshoe crabs spawn in oceans of moderate climate, $(l:the_world/climate#temperature)temperature$() between 10 and 21°C and with a $(l:the_world/climate#rainfall)rainfall$() of at most 400mm."
 		},
 		{

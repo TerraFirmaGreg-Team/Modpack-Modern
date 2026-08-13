@@ -30,13 +30,13 @@ function registerTFGSoupFoodRecipes(event) {
 			fluidInputs: ['#tfg:clean_water 100'],
 			itemOutputs: [`3x tfc:food/${soup.type}`],
 			itemOutputProvider: TFC.isp.of(`3x tfc:food/${soup.type}`).simpleModifier('tfg:add_bowl').meal(
-				(food) => food.hunger(5).water(1).saturation(1).decayModifier(4.5),
+				(food) => food.hunger(4).water(1).saturation(1).decayModifier(3.5),
 				[
 					(portion) => portion
 						.ingredient(Ingredient.of('#tfc:foods/usable_in_soup'))
-						.nutrientModifier(1)
-						.saturationModifier(0.8)
-						.waterModifier(0.8)
+						.nutrientModifier(0.75)
+						.saturationModifier(0.75)
+						.waterModifier(0.75)
 				]
 			)
     	});

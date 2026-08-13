@@ -19,7 +19,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/nether_vein_index#beneath_gold_rich)Natives Gold, Magnetit...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_gold)Natives Gold, Pyrit...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_copper_native)Natives Kupfer, Malachit$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_phlogopite)Phlogopite, Schwefel, Apatite$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_lithium)Pyrit, Blei, Sylvin$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_realgar)Realgar, Stibnite, Zinnober$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_redstone)Redstone, Zinnober...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_copper_tetrahedrite)Schwarzerz, Stibnite...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_sulfur)Schwefel, Pyrit, Stibnite$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_lead_silver)Smaragd, Natives Silber, Lead$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_quartz)Smoky Quartz, Quartz...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_coal_bituminous)Steinkohle, Pyrit$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_phosphate)Tricalciumphosphat, Apatite...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_molydbenum)Wulfenit, Molybdänit, Ölsand$()$()",
+      "text": "$(li)$(l:tfg_ores/nether_vein_index#beneath_gold_rich)Natives Gold, Magnetit...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_gold)Natives Gold, Pyrit...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_copper_native)Natives Kupfer, Malachit$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_phlogopite)Phlogopite, Schwefel, Apatite$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_lithium)Pyrit, Anthracite, Borax$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_realgar)Realgar, Stibnite, Zinnober$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_redstone)Redstone, Zinnober...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_copper_tetrahedrite)Schwarzerz, Stibnite...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_sulfur)Schwefel, Pyrit, Stibnite$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_lead_silver)Smaragd, Natives Silber, Lead$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_quartz)Smoky Quartz, Quartz...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_coal_bituminous)Steinkohle, Pyrit$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_phosphate)Tricalciumphosphat, Apatite...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_molydbenum)Wulfenit, Molybdänit, Ölsand$()$()",
       "type": "patchouli:text"
     },
     {
@@ -1136,7 +1136,7 @@
     {
       "Type": "patchouli:text",
       "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/10 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 22%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 0 — 80$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 25$(br)$(thing)Biomes$(): $(t:Lavaschollen)Lava Floes$(/t)$(br2)$(thing)Stone Types$(): Basalt, Migmatite, Pyroxenite",
-      "title": "Pyrit, Blei, Sylvin",
+      "title": "Pyrit, Anthracite, Borax",
       "type": "patchouli:text",
       "anchor": "beneath_lithium"
     },
@@ -1162,10 +1162,10 @@
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Blei",
+      "name": "Anthracite",
       "multiblock": {
         "mapping": {
-          "0": "#forge:ores/lithium"
+          "0": "#forge:ores/anthracite"
         },
         "pattern": [
           [
@@ -1177,15 +1177,15 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 23%$(br)$(thing)Source of$(): Lithium$(br)$(thing)Formula$(): Li",
+      "text": "$(thing)Prozentzahl$(): 23%$(br)$(thing)Used for$(): Fuel$(br)$(thing)Formula$(): C",
       "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Sylvin",
+      "name": "Borax",
       "multiblock": {
         "mapping": {
-          "0": "#forge:ores/rock_salt"
+          "0": "#forge:ores/alunite"
         },
         "pattern": [
           [
@@ -1197,7 +1197,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 15%$(br)$(thing)Source of$(): Potassium, Chlorine, Fertilizer$(br)$(thing)Formula$(): KCl",
+      "text": "$(thing)Prozentzahl$(): 15%$(br)$(thing)Source of$(): Potassium, Aluminium$(br)$(thing)Formula$(): KAl₃Si₂H₆O₁₄",
       "type": "patchouli:multiblock"
     },
     {

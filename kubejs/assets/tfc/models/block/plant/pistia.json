@@ -1,0 +1,62 @@
+{
+	"credit": "Made by Vexxel#9727 with Blockbench || https://github.com/Vexxel || 2022",
+	"ambientocclusion": false,
+	"textures": {
+		"2": "tfc:block/plant/pistia/pistia_hanging",
+		"particle": "tfc:block/plant/pistia/pistia_0",
+		"layer0": "tfc:block/plant/pistia/pistia_0",
+		"layer1": "tfc:block/plant/pistia/pistia_1"
+	},
+	"elements": [
+		{
+			"from": [0, 0.25, 0],
+			"to": [16, 0.25, 16],
+			"faces": {
+				"up": {"uv": [16, 0, 0, 16], "texture": "#layer0", "tintindex": 0},
+				"down": {"uv": [16, 16, 0, 0], "texture": "#layer0", "tintindex": 0}
+			}
+		},
+		{
+			"from": [0, 0.75, 0],
+			"to": [16, 0.75, 16],
+			"faces": {
+				"up": {"uv": [16, 0, 0, 16], "texture": "#layer1", "tintindex": 0},
+				"down": {"uv": [16, 16, 0, 0], "texture": "#layer1", "tintindex": 0}
+			}
+		},
+		{
+			"from": [1, -11, 4],
+			"to": [17, 0, 4],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 16, 11], "texture": "#2", "tintindex": 0},
+				"south": {"uv": [0, 0, 16, 11], "texture": "#2", "tintindex": 0}
+			}
+		},
+		{
+			"from": [4, -11, 1],
+			"to": [4, 0, 17],
+			"faces": {
+				"east": {"uv": [0, 0, 16, 11], "texture": "#2", "tintindex": 0},
+				"west": {"uv": [0, 0, 16, 11], "texture": "#2", "tintindex": 0}
+			}
+		},
+		{
+			"from": [1, -11, 14],
+			"to": [17, 0, 14],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 16, 11], "texture": "#2", "tintindex": 0},
+				"south": {"uv": [0, 0, 16, 11], "texture": "#2", "tintindex": 0}
+			}
+		},
+		{
+			"from": [14, -11, 1],
+			"to": [14, 0, 17],
+			"faces": {
+				"east": {"uv": [0, 0, 16, 11], "texture": "#2", "tintindex": 0},
+				"west": {"uv": [0, 0, 16, 11], "texture": "#2", "tintindex": 0}
+			}
+		}
+	]
+}

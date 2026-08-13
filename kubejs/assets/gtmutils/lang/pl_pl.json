@@ -23,8 +23,10 @@
   "block.gtmutils.opv_64a_energy_converter": "Konwerter energii §9§lOpV§r 64§eA§r",
   "block.gtmutils.opv_auto_charger_4x": "Automatyczna turbo ładowarka §9§lobezwładniającego napięcia§r 4x",
   "block.gtmutils.pterb_machine": "Bezprzewodowy aktywny transformator",
+  "block.gtmutils.sterile_cleaning_maintenance_hatch": "Sterylny czyszczący właz konserwacyjny",
   "block.gtmutils.tag_enlarged_stocking_bus.desc.0": "Pobiera przedmioty bezpośrednio z sieci ME",
   "block.gtmutils.tag_stocking_bus.desc.0": "Pobiera przedmioty bezpośrednio z sieci ME",
+  "block.gtmutils.tag_stocking_hatch.desc.2": "Automatycznie przechowuje pasujące płyny w buforze",
   "block.gtmutils.uev_64a_energy_converter": "Konwerter energii §aUEN§r 64§eA§r",
   "block.gtmutils.uhv_64a_energy_converter": "Konwerter energii §4UWN§r 64§eA§r",
   "block.gtmutils.uhv_auto_charger_4x": "Automatyczna turbo ładowarka §4ultra wysokiego napięcia§r 4x",
@@ -37,7 +39,7 @@
   "block.gtmutils.zpm_64a_energy_converter": "Konwerter energii §cMPZ§r 64§eA§r",
   "block.gtmutils.zpm_auto_charger_4x": "Automatyczna turbo ładowarka §cMPZ§r 4x",
   "config.gtmutils.option.autoChargersEnabled": "autoChargersEnabled",
-  "config.gtmutils.option.coinsEnabled": "coinsEnabled",
+  "config.gtmutils.option.coinsEnabled": "Włącz monety",
   "config.gtmutils.option.converters64aEnabled": "converters64aEnabled",
   "config.gtmutils.option.customEVToolsEnabled": "customEVToolsEnabled",
   "config.gtmutils.option.customHVToolsEnabled": "customHVToolsEnabled",
@@ -113,5 +115,6 @@
   "tooltip.omnibreaker.tool_mode_2": "Śrubokręt",
   "tooltip.omnibreaker.tool_mode_3": "Nożyce do drutu",
   "tooltip.omnibreaker.tool_mode_4": "Łom",
+  "tooltip.pterb_machine.input_coolant_before_use": "Zawsze wprowadź chłodziwo przed włączeniem!",
   "tooltip.pterb_machine.uses_coolant": "Używa %s do funkcjonowania!"
 }

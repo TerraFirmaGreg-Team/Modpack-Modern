@@ -30,6 +30,7 @@
                 "minecraft:basalt",
                 "minecraft:fern",
                 "minecraft:large_fern",
+                "minecraft:cobweb",
                 "tfg:plant/dry_grass",
                 "tfg:plant/red_oat_grass",
                 "tfc:plant/bluegrass",
@@ -54,7 +55,11 @@
                 "betterend:lucernia_outer_leaves",
                 "betterend:selagine",
                 "betterend:bulb_moss",
-                "tfg:lunar_chorus_flower"
+                "tfg:lunar_chorus_flower",
+                "minecraft:ice",
+                "minecraft:packed_ice",
+                "minecraft:blue_ice",
+                "tfc:sea_ice"
             ]
         }
     ],

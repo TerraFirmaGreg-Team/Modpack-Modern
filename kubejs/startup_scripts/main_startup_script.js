@@ -37,6 +37,7 @@ ItemEvents.modification(event => {
 	registerGTCEuItemModifications(event)
 	registerMinecraftItemModifications(event)
     registerSNSItemModifications(event)
+	registerSpeciesItemModifications(event)
 	registerTFGItemModifications(event)
 })
 

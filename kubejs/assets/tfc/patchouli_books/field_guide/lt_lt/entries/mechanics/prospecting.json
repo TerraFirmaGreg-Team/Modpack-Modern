@@ -18,7 +18,7 @@
       "item": "tfc:metal/propick/copper",
       "title": "Kasyklininko kirtiklis",
       "link_recipes": false,
-      "text": "Jei Jūs ieškote rūdos gyslų ir negalite jų rasti spėdami, laikas išsitraukti $(item)kasyklininko kirtiklį$(). Jei Jūs esate susipažinę su baziniais kasyklininko kirtikliai $(thing) per „TFC“$() funkcijoje, Jūs galite nustebti sužinoję, kad jie veikia labai skirtingai per $(thing)„TerraFirmaGreg“$().\n"
+      "text": "Jei Jūs ieškote rūdos gyslų ir negalite jų rasti spėdami, laikas išsitraukti $(item)kasyklininko kirtiklį$(). Jei Jūs esate susipažinę su baziniais kasyklininko kirtikliais $(thing) per „TFC“$() , Jūs galite nustebti sužinoję, kad jie veikia labai skirtingai per $(thing)„TerraFirmaGreg“$().\n"
     },
     {
       "type": "patchouli:text",
