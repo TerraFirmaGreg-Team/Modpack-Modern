@@ -246,14 +246,6 @@ const registerTooltips = (event) => {
 	})
 
 	// Insulation
-	event.addAdvanced(['create:copper_diving_helmet', 'create:copper_backtank', 'create:copper_diving_boots'], (item, advanced, text) => {
-		text.add(1, Text.translate('tfg.tooltip.armor.copper_diving_suit_warmth'));
-		text.add(2, Text.translate('tfg.tooltip.armor.copper_diving_suit_safety'));
-	})
-	event.addAdvanced(['create:netherite_diving_helmet', 'create:netherite_backtank', 'create:netherite_diving_boots', 'minecraft:netherite_leggings', 'minecraft:netherite_boots'], (item, advanced, text) => {
-		text.add(1, Text.translate('tfg.tooltip.armor.netherite_diving_suit_warmth'));
-		text.add(2, Text.translate('tfg.tooltip.armor.netherite_diving_suit_safety'));
-	})
 	event.addAdvanced(['gtceu:nanomuscle_helmet', 'gtceu:nanomuscle_chestplate', 'gtceu:nanomuscle_leggings', 'gtceu:nanomuscle_boots', 'gtceu:advanced_nanomuscle_chestplate'], (item, advanced, text) => {
 		text.add(3, Text.translate('tfg.tooltip.armor.nanomuscle_set'));
 		if (item === 'gtceu:nanomuscle_leggings') {
