@@ -69,14 +69,18 @@
 		"species:limpet": {
 			"energy_budget": 0.15,
 			"charge": 0.7
+		},
+		"jellies:certus": {
+			"energy_budget": 0.15,
+			"charge": 0.7
 		}
 	},
 	"spawners": {
 		"ambient": [
 			{
 				"type": "jellies:certus",
-				"maxCount": 4,
-				"minCount": 3,
+				"maxCount": 1,
+				"minCount": 1,
 				"weight": 100
 			}
 		],

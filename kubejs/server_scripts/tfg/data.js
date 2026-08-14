@@ -9,7 +9,8 @@ function registerTFCDataForTFG(event) {
 	registerTFGFoodData(event);
 	registerTFGCropRanges(event);
 	registerTFGFLPlanters(event);
-	registerTFGFauna(event);
+	registerOverworldFauna(event);
+	registerMarsFauna(event);
 	registerTFGEquipmentData(event);
 	registerTFGAquaponicsData(event);
 }

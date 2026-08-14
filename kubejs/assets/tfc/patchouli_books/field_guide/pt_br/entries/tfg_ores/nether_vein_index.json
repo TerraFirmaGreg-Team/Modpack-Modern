@@ -14,7 +14,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/nether_vein_index#beneath_aluminium)Alunita, Zeólita, Barita$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_coal_anthracite)Antracito, Grafite$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_bismuth)Bismuto, Enxofre, Salitre$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_copper_sulfide)Calcocita, Pirita, Bornita$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_coal_bituminous)Carvão Betuminoso, Pirita$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_tin)Cassiterita, Estanho$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_copper_native)Cobre Nativo, Malaquita$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_sulfur)Enxofre, Pirita, Estibnita$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_zinc)Esfalerita, Galena, Enxofre$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_lithium)Espodumênio, Lítio, Sal-gema$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_phlogopite)Flogopita, Enxofre, Apatita$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_phosphate)Fosfato Tricálcico, Apatita...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_lead_silver)Galena, Prata Nativa, Chumbo$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_iron_banded)Goethita, Limonita, Malaquita$()$()",
+      "text": "$(li)$(l:tfg_ores/nether_vein_index#beneath_aluminium)Alunita, Zeólita, Barita$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_coal_anthracite)Antracito, Grafite$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_bismuth)Bismuto, Enxofre, Salitre$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_copper_sulfide)Calcocita, Pirita, Bornita$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_coal_bituminous)Carvão Betuminoso, Pirita$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_tin)Cassiterita, Estanho$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_copper_native)Cobre Nativo, Malaquita$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_sulfur)Enxofre, Pirita, Estibnita$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_zinc)Esfalerita, Galena, Enxofre$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_lithium)Espodumênio, Antracito...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_phlogopite)Flogopita, Enxofre, Apatita$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_phosphate)Fosfato Tricálcico, Apatita...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_lead_silver)Galena, Prata Nativa, Chumbo$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_iron_banded)Goethita, Limonita, Malaquita$()$()",
       "type": "patchouli:text"
     },
     {
@@ -573,7 +573,7 @@
     {
       "Type": "patchouli:text",
       "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/10 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 22%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 0 — 80$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 25$(br)$(thing)Biomes$(): $(t:Placas de Lava)Placas de Lava$(/t)$(br2)$(thing)Stone Types$(): Basalto, Migmatite, Pyroxenite",
-      "title": "Espodumênio, Lítio, Sal-gema",
+      "title": "Espodumênio, Antracito...",
       "type": "patchouli:text",
       "anchor": "beneath_lithium"
     },
@@ -599,10 +599,10 @@
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Lítio",
+      "name": "Antracito",
       "multiblock": {
         "mapping": {
-          "0": "#forge:ores/lithium"
+          "0": "#forge:ores/anthracite"
         },
         "pattern": [
           [
@@ -614,15 +614,15 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Porcentagem$(): 23%$(br)$(thing)Source of$(): Lithium$(br)$(thing)Formula$(): Li",
+      "text": "$(thing)Porcentagem$(): 23%$(br)$(thing)Used for$(): Fuel$(br)$(thing)Formula$(): C",
       "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Sal-gema",
+      "name": "Alunita",
       "multiblock": {
         "mapping": {
-          "0": "#forge:ores/rock_salt"
+          "0": "#forge:ores/alunite"
         },
         "pattern": [
           [
@@ -634,7 +634,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Porcentagem$(): 15%$(br)$(thing)Source of$(): Potassium, Chlorine, Fertilizer$(br)$(thing)Formula$(): KCl",
+      "text": "$(thing)Porcentagem$(): 15%$(br)$(thing)Source of$(): Potassium, Aluminium$(br)$(thing)Formula$(): KAl₃Si₂H₆O₁₄",
       "type": "patchouli:multiblock"
     },
     {

@@ -39,7 +39,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#normal_copper_gypsum)Халькозин, Гіпс, Кобальт...$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_copper_iron)Халькопірит, Ґетит, Пірит...$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_copper)Халькопірит, Пірит...$()$()$(li)$(l:tfg_ores/earth_vein_index#high_realgar)Халькопірит, Цеоліт, Реальгар (Поверхневий)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_copper_tin)Халькопірит, Цеоліт...$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_scheelite)Шеєліт, Вольфрамат, Літій$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#normal_copper_gypsum)Халькозин, Гіпс, Кобальт...$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_copper_iron)Халькопірит, Ґетит, Пірит...$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_copper)Халькопірит, Пірит...$()$()$(li)$(l:tfg_ores/earth_vein_index#high_realgar)Халькопірит, Цеоліт, Реальгар (Поверхневий)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_copper_tin)Халькопірит, Цеоліт...$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_scheelite)Шеєліт, Вольфрамат, Лепідоліт$()$()",
       "type": "patchouli:text"
     },
     {
@@ -4335,7 +4335,7 @@
     {
       "Type": "patchouli:text",
       "text": "$(thing)$(t:Ймовірність появи жили на чанк. Менші нижні числа означають більшу поширеність.)Рідкість$(/t)$(): 1/420 чинки$(br)$(thing)$(t:Відсоток блоків у жилі, які є рудами замість каменю. Більший відсоток означає більше руди.)Щільність$(/t)$(): 27%$(br)$(thing)$(t:Форма жили.)Тип$(/t)$(): $(t:Переважно округлої форми) Скупчення жили$(/t)$(br)$(thing)$(t:Рівні Y, між якими може генеруватися жила.)Y$(/t)$(): -50 — 20$(br)$(thing)$(t:Середній діаметр жили.)Розмір$(/t)$(): 25$(br)$(thing)$(t:Якщо відстань між поверхнею та жильною рудою більша за це число, поверхневі індикатори не генеруються.)Максимальна глибина індикатора$(/t)$(): 15$(br)$(thing)Біоми$(): Будь-який$(br2)$(thing)Типи каменю$(): Аспідний сланець, Гнейс, Кварцит, Мармур, Філіт, Шиферний сланець",
-      "title": "Шеєліт, Вольфрамат, Літій",
+      "title": "Шеєліт, Вольфрамат, Лепідоліт",
       "type": "patchouli:text",
       "anchor": "deep_scheelite"
     },
@@ -4381,10 +4381,10 @@
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Літій",
+      "name": "Лепідоліт",
       "multiblock": {
         "mapping": {
-          "0": "#forge:ores/lithium"
+          "0": "#forge:ores/lepidolite"
         },
         "pattern": [
           [
@@ -4396,7 +4396,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 14%$(br)$(thing)Джерело$(): Літію$(br)$(thing)Формула$(): Li",
+      "text": "$(thing)Відсоток$(): 14%$(br)$(thing)Джерело$(): Калію, Літію, Алюмінію, Фтору$(br)$(thing)Формула$(): KLi₃Al₄F₂O₁₀",
       "type": "patchouli:multiblock"
     }
   ],

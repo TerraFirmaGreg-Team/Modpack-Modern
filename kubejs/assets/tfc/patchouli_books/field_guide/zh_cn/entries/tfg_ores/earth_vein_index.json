@@ -19,7 +19,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#high_coal)烟煤 （高山）$()$()$(li)$(l:tfg_ores/earth_vein_index#sand_basaltic)玄武岩矿砂, 海绿石砂, 石榴石砂$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_scheelite)白钨矿, 钨酸锂, 锂$()$()$(li)$(l:tfg_ores/earth_vein_index#high_gypsum)石膏 （高山）$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_quartz_borax)石英, 硼砂$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_quartz)石英, 重晶石$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_graphite)石墨, 烟煤, 钻石 （深层）$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_graphite_volcanic)石墨, 烟煤, 钻石 （火山）$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_nickel)硅镁镍矿 （地表）$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_garnierite)硅镁镍矿, 镍, 辉钴矿$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_nickel)硅镁镍矿, 镍, 辉钴矿, 镍黄铁矿$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_salpeter)硝石 （地表）$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_saltpeter)硝石, 硅藻土, 蓝石, 明矾石$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sulfur)硫 （深层）$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#high_coal)烟煤 （高山）$()$()$(li)$(l:tfg_ores/earth_vein_index#sand_basaltic)玄武岩矿砂, 海绿石砂, 石榴石砂$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_scheelite)白钨矿, 钨酸锂, 锂云母$()$()$(li)$(l:tfg_ores/earth_vein_index#high_gypsum)石膏 （高山）$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_quartz_borax)石英, 硼砂$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_quartz)石英, 重晶石$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_graphite)石墨, 烟煤, 钻石 （深层）$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_graphite_volcanic)石墨, 烟煤, 钻石 （火山）$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_nickel)硅镁镍矿 （地表）$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_garnierite)硅镁镍矿, 镍, 辉钴矿$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_nickel)硅镁镍矿, 镍, 辉钴矿, 镍黄铁矿$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_salpeter)硝石 （地表）$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_saltpeter)硝石, 硅藻土, 蓝石, 明矾石$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sulfur)硫 （深层）$()$()",
       "type": "patchouli:text"
     },
     {
@@ -887,7 +887,7 @@
     {
       "Type": "patchouli:text",
       "text": "$(thing)$(t:每个区块生成矿脉的几率。下面的数字越小就越常见。)稀有度$(/t)$(): 1/420 区块$(br)$(thing)$(t:矿脉中矿石方块所占的百分比。百分比越高，矿石越多。)密度$(/t)$(): 27%$(br)$(thing)$(t:矿脉的形状。)类型$(/t)$(): $(t:大致呈圆形)团簇状矿脉$(/t)$(br)$(thing)$(t:矿脉可能生成的 Y 轴范围。)Y$(/t)$(): -50 — 20$(br)$(thing)$(t:矿脉的平均直径)尺寸$(/t)$(): 25$(br)$(thing)$(t:如果地表与矿脉之间的距离大于此数值，则地表不会生成矿脉指示物。)指示物最大深度$(/t)$(): 15$(br)$(thing)生物群系$(): 任意$(br2)$(thing)岩石类型$(): 千枚岩, 大理岩, 板岩, 片岩, 片麻岩, 石英岩",
-      "title": "白钨矿, 钨酸锂, 锂",
+      "title": "白钨矿, 钨酸锂, 锂云母",
       "type": "patchouli:text",
       "anchor": "deep_scheelite"
     },
@@ -933,10 +933,10 @@
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "锂",
+      "name": "锂云母",
       "multiblock": {
         "mapping": {
-          "0": "#forge:ores/lithium"
+          "0": "#forge:ores/lepidolite"
         },
         "pattern": [
           [
@@ -948,7 +948,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)百分比$(): 14%$(br)$(thing)来源$(): 锂$(br)$(thing)化学式$(): Li",
+      "text": "$(thing)百分比$(): 14%$(br)$(thing)来源$(): 钾, 锂, 铝, 氟$(br)$(thing)化学式$(): KLi₃Al₄F₂O₁₀",
       "type": "patchouli:multiblock"
     },
     {

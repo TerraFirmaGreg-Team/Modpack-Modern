@@ -156,6 +156,7 @@ const registerTFGOreVeinFeatures = (event) => {
 	// #region nether ores
 
 	event.add('tfg:nether_veins', 'tfg:nether/vein/beneath_aluminium')
+	event.add('tfg:nether_veins', 'tfg:nether/vein/beneath_lithium')
 	event.add('tfg:nether_veins', 'tfg:nether/vein/beneath_bismuth')
 	event.add('tfg:nether_veins', 'tfg:nether/vein/beneath_coal_anthracite')
 	event.add('tfg:nether_veins', 'tfg:nether/vein/beneath_coal_bituminous')
@@ -170,7 +171,6 @@ const registerTFGOreVeinFeatures = (event) => {
 	event.add('tfg:nether_veins', 'tfg:nether/vein/beneath_iron_hematite')
 	event.add('tfg:nether_veins', 'tfg:nether/vein/beneath_iron_magnetite')
 	event.add('tfg:nether_veins', 'tfg:nether/vein/beneath_lead_silver')
-	event.add('tfg:nether_veins', 'tfg:nether/vein/beneath_lithium')
 	event.add('tfg:nether_veins', 'tfg:nether/vein/beneath_manganese')
 	event.add('tfg:nether_veins', 'tfg:nether/vein/beneath_molydbenum')
 	event.add('tfg:nether_veins', 'tfg:nether/vein/beneath_nickel')

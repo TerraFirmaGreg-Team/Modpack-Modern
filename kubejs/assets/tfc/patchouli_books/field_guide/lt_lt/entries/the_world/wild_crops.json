@@ -318,7 +318,7 @@
     },
     {
       "type": "patchouli:text",
-      "text": "Laukinės pasėliai atsiras klimatuose, esančiuose netoli vietų, kur galima auginti pačią tą pasėlį, taigi, jei ieškote konkretaus pasėlio, ieškokite tame klimate, kur ją galima auginti. Tačiau, skirtingai nuo $(l:mechanics/crops)pasėlių$(), kuriuos pasodino žaidėjas, laukiniams pasėliams nereikia $(l:mechanics/hydration)drėkinimo$(). Vietoj to, jie randami vietovėse, priklausomai nuo vidutinės $()temperatūros$() ir $()kritulių kiekio$().",
+      "text": "Laukiniai pasėliai atsiras klimatuose, esančiuose netoli vietų, kur galima auginti pačią tą pasėlį, taigi, jei ieškote konkretaus pasėlio, ieškokite tame klimate, kur ją galima auginti. Tačiau, skirtingai nuo $(l:mechanics/crops)pasėlių$(), kuriuos pasodino žaidėjas, laukiniams pasėliams nereikia $(l:mechanics/hydration)drėkinimo$(). Vietoj to, jie randami vietovėse, priklausomai nuo vidutinės $()temperatūros$() ir $()kritulių kiekio$().",
       "title": "Ieškant laukinių pasėlių"
     },
     {

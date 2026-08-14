@@ -34,7 +34,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#surface_malachite)Malaquita (Superfície)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_mica)Mica (Superfície)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_mica)Mica, Cianita$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_gold)Ouro Nativo (Superfície)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_gold)Ouro Nativo, Magnetita$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_quartz)Quartzito, Barita$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_quartz_borax)Quartzito, Bórax$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_big_redstone)Redstone, Rubi, Cinábrio (Grande)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_redstone)Redstone, Rubi, Cinábrio (Profundo)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_sylvite_salt)Sal, Sal-gema (Superfície)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_salt)Sal, Sal-gema, Bórax$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_salpeter)Salitre (Superfície)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_saltpeter)Salitre, Diatomita...$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_scheelite)Scheelita, Tungstato, Lítio$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#surface_malachite)Malaquita (Superfície)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_mica)Mica (Superfície)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_mica)Mica, Cianita$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_gold)Ouro Nativo (Superfície)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_gold)Ouro Nativo, Magnetita$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_quartz)Quartzito, Barita$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_quartz_borax)Quartzito, Bórax$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_big_redstone)Redstone, Rubi, Cinábrio (Grande)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_redstone)Redstone, Rubi, Cinábrio (Profundo)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_sylvite_salt)Sal, Sal-gema (Superfície)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_salt)Sal, Sal-gema, Bórax$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_salpeter)Salitre (Superfície)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_saltpeter)Salitre, Diatomita...$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_scheelite)Scheelita, Tungstato...$()$()",
       "type": "patchouli:text"
     },
     {
@@ -3923,7 +3923,7 @@
     {
       "Type": "patchouli:text",
       "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/420 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 27%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): -50 — 20$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 25$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 15$(br)$(thing)Biomes$(): Qualquer$(br2)$(thing)Stone Types$(): Ardósia, Filito, Gnaisse, Mármore, Quartzito, Xisto",
-      "title": "Scheelita, Tungstato, Lítio",
+      "title": "Scheelita, Tungstato...",
       "type": "patchouli:text",
       "anchor": "deep_scheelite"
     },
@@ -3969,10 +3969,10 @@
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Lítio",
+      "name": "Lepidolita",
       "multiblock": {
         "mapping": {
-          "0": "#forge:ores/lithium"
+          "0": "#forge:ores/lepidolite"
         },
         "pattern": [
           [
@@ -3984,7 +3984,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Porcentagem$(): 14%$(br)$(thing)Source of$(): Lithium$(br)$(thing)Formula$(): Li",
+      "text": "$(thing)Porcentagem$(): 14%$(br)$(thing)Source of$(): Potassium, Lithium, Aluminium, Fluorine$(br)$(thing)Formula$(): KLi₃Al₄F₂O₁₀",
       "type": "patchouli:multiblock"
     },
     {

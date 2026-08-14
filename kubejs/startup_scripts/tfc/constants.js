@@ -25,7 +25,9 @@ global.TFC_HIDDEN_ITEMS = /** @type {const} */ ([
     "tfc:wild_crop/squash",
     "tfc:wild_crop/sugarcane",
     "tfc:wild_crop/tomato",
-    "tfc:wild_crop/jute"
+    "tfc:wild_crop/jute",
+    "tfc:food/cheese",
+    "tfc:thatch_bed"
 ]);
 
 /**
