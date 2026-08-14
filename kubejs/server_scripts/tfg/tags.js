@@ -304,6 +304,12 @@ const registerTFGBlockTags = (event) => {
 	event.add('tfg:functional_asphalt_roads', 'tfg:asphalt_road')
 	event.add('tfg:functional_asphalt_road_stairs', 'tfg:asphalt_road_stairs')
 	event.add('tfg:functional_asphalt_road_slabs', 'tfg:asphalt_road_slab')
+
+	// Several mods use only either Forge or Minecraft tags; unify them.
+	event.add('forge:fences', '#minecraft:fences')
+	event.add('forge:fence_gates', '#minecraft:fence_gates')
+	event.add('minecraft:fences', '#forge:fences')
+	event.add('minecraft:fence_gates', '#forge:fence_gates')
 }
 //#endregion
 
