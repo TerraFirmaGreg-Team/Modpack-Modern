@@ -368,7 +368,7 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 		gravelTag: 'tfc:white_gravel'
 	}),
 	"obsidian": {
-		material: "gtceu:obsidian",
+		material: "obsidian",
 		stonecutterTag: 'tfg:stone_types/obsidian',
 		isTFC: false,
 		collapsible: false,
