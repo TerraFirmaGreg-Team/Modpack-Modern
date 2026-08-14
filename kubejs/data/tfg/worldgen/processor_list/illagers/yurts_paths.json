@@ -28,11 +28,10 @@
 					"output_state": {
 						"Name": "tfc:wood/planks/pine"
 					}
-				},
-
-
-				
-				{
+				}
+			]
+		},
+		{		
 					"processor_type": "lithostitched:condition",
 					"random_mode": {
 						"mode": "per_block",
@@ -50,7 +49,12 @@
 								"heightmap": "WORLD_SURFACE_WG",
 								"offset": -1
 					}
-				},
+			},
+			
+			
+			{
+			"processor_type": "minecraft:rule",
+			"rules": [
 				{
 					"input_predicate": {
 						"block": "tfc:rock/bricks/andesite",
