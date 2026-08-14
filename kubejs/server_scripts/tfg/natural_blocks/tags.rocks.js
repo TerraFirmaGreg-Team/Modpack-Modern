@@ -40,7 +40,7 @@ function registerTFGStoneItemTags(event) {
 
 		let material = null;
 		if (rock.material != null)
-			material = rock.material.replace(/tfg:/g, '');
+			material = rock.material.replace(/tfg:/g, '').replace(/gtceu:/g, '');
 
 		if (rock.raw != null) {
 			if (rock.collapsible && rock.cobble != null) {
