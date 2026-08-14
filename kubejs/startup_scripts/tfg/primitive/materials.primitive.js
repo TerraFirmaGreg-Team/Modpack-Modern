@@ -110,7 +110,7 @@ function registerTFGPrimitiveMaterials(event) {
     event.create('tfg:weak_steel')
         .ingot()
         .liquid()
-        .components('1x nickel', '1x black_bronze', '3x steel')
+        .components('1x nickel', '1x black_bronze', '2x steel')
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.NO_SMELTING, GTMaterialFlags.DISABLE_ALLOY_BLAST)
 		.iconSet(GTMaterialIconSet.METALLIC)
 
