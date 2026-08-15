@@ -1701,7 +1701,7 @@
 		{
 			dependencies: ["50AE05306D3F6F0D"]
 			description: [
-				"By right-clicking a &bTrain Station&r on the tracks it will create an arrow on the tracks, this is the forwards direction of the &5Train&r. placing the &bTrain Station&r next to the tracks will now allow you to start creating your own &5Trains&r!"
+				"By right-clicking a &bTrain Station&r on the tracks will create an arrow on the tracks, this is the forwards direction of the &5Train&r. placing the &bTrain Station&r next to the tracks will now allow you to start creating your own &5Trains&r!"
 				""
 				"In the &bTrain Station&r interface Press Create new Train, this will project light blue spots on the tracks next to it. Placing &bTrain Casings&r on those spots will create a &5Bogey&r, you can connect up to two bogey's with building blocks to form a &5Carraige&r. Remember to use &aGlue&r!"
 				""
@@ -1756,7 +1756,7 @@
 				type: "item"
 			}]
 			title: "Hard Stop"
-			x: 1.5d
+			x: 4.0d
 			y: 21.5d
 		}
 		{
@@ -1876,6 +1876,15 @@
 		{
 			dependencies: ["65194B2DC42B3E07"]
 			dependency_requirement: "one_completed"
+			description: [
+				"&bTrack Switches&r can be used to switch tracks. By right-clicking the &bTrack Switch&r on Tracks and placing it next to them will allow you to switch with Tracks!"
+				""
+				"Right-clicking the &bTrack Switch&r switches the track towards the right side, while shift-right-clicking the &bTrack Switch&r switches them in towards the left side."
+				""
+				"You can automate the process of switching tracks with Redstone, supplying a redstone signal to the sides of the &bTrack Switch&r will force it to change the track direction depening on the side from where the signal was recieved."
+				""
+				"&3Note:&r &bTrack Switches&r change there orientation depening on there possition to the track and the orientation of the player that placed it. Placing the &bTrack Switch&r on the right-hand-side of the tracks while &lFACING&r the tracks themselfs will allign them in a way the switch is alligned parrallel with the tracks"
+			]
 			id: "6D7248BFB6FFFCE9"
 			subtitle: "Parting ways"
 			tasks: [
@@ -1904,7 +1913,7 @@
 				type: "item"
 			}]
 			title: "Splitting Carraiges"
-			x: 4.0d
+			x: 6.5d
 			y: 21.5d
 		}
 		{
@@ -1917,7 +1926,7 @@
 				type: "item"
 			}]
 			title: "Detecting Cargo"
-			x: 11.5d
+			x: 9.0d
 			y: 19.0d
 		}
 		{
@@ -1954,7 +1963,7 @@
 				}
 			]
 			title: "Automated Delieveries"
-			x: 14.0d
+			x: 12.0d
 			y: 19.0d
 		}
 		{
@@ -2008,8 +2017,8 @@
 				type: "checkmark"
 			}]
 			title: "Fueling Your Train"
-			x: 16.5d
-			y: 17.5d
+			x: 13.0d
+			y: 21.0d
 		}
 		{
 			dependencies: ["374304894C62001B"]
@@ -2029,8 +2038,8 @@
 				}
 			]
 			title: "Liquid Train Fuel"
-			x: 16.5d
-			y: 20.5d
+			x: 11.0d
+			y: 21.0d
 		}
 		{
 			dependencies: ["374304894C62001B"]
@@ -2058,8 +2067,8 @@
 				}
 				type: "item"
 			}]
-			x: 14.0d
-			y: 16.5d
+			x: 13.0d
+			y: 17.0d
 		}
 		{
 			dependencies: ["374304894C62001B"]
@@ -2083,8 +2092,8 @@
 				type: "item"
 			}]
 			title: "Meta Glasses™"
-			x: 14.0d
-			y: 22.0d
+			x: 14.5d
+			y: 19.0d
 		}
 		{
 			dependencies: ["630446139085B8A1"]
@@ -2094,7 +2103,7 @@
 				type: "checkmark"
 			}]
 			title: "Back On Tracks"
-			x: -1.0d
+			x: 1.5d
 			y: 21.5d
 		}
 	]
