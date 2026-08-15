@@ -1733,6 +1733,7 @@
 		}
 		{
 			dependencies: ["65194B2DC42B3E07"]
+			description: ["Sadly trains have some limitations. A single train contraption &4CAN NOT&r exceed &b20 bogeys&r and be longer than &b128 blocks&r."]
 			icon: "createdeco:decal_warning"
 			id: "13C368BE21161068"
 			shape: "diamond"
@@ -1919,7 +1920,7 @@
 		{
 			dependencies: ["624DBB15C2B3C8E3"]
 			id: "69F5BB121E93A5A5"
-			subtitle: "Compleat automation"
+			subtitle: "Customs control"
 			tasks: [{
 				id: "0DEE5A0E718DDC29"
 				item: "create:track_observer"
@@ -1990,7 +1991,9 @@
 		}
 		{
 			dependencies: ["624DBB15C2B3C8E3"]
+			description: ["By installing &bMulti-Fluid Tanks&r on your train you dont need to worry about transporting multiple fluids at the same time!"]
 			id: "5CD2605615A0AA20"
+			subtitle: "Efficient trips"
 			tasks: [
 				{
 					id: "32DBE62198A0299F"
@@ -2017,7 +2020,7 @@
 				type: "checkmark"
 			}]
 			title: "Fueling Your Train"
-			x: 13.0d
+			x: 11.0d
 			y: 21.0d
 		}
 		{
@@ -2038,33 +2041,15 @@
 				}
 			]
 			title: "Liquid Train Fuel"
-			x: 11.0d
+			x: 13.0d
 			y: 21.0d
 		}
 		{
 			dependencies: ["374304894C62001B"]
 			id: "48138F7AFC3B8611"
 			tasks: [{
-				id: "2C461998B72628C4"
-				item: {
-					Count: 1
-					id: "railways:conductor_whistle"
-					tag: {
-						SelectedColor: 0b
-						SelectedConductor: [I;
-							-1441291000
-							872761579
-							-1530620007
-							885363878
-						]
-						SelectedTrain: [I;
-							1234691926
-							1234715382
-							-1953141675
-							-804657543
-						]
-					}
-				}
+				id: "1134B4D5982EC316"
+				item: "railways:conductor_whistle"
 				type: "item"
 			}]
 			x: 13.0d
@@ -2076,19 +2061,8 @@
 			id: "0A9A54599EE46D5F"
 			subtitle: "Legalised oversight"
 			tasks: [{
-				id: "54949AFACDBD8789"
-				item: {
-					Count: 1
-					id: "railways:remote_lens"
-					tag: {
-						SelectedConductor: [I;
-							-1441291000
-							872761579
-							-1530620007
-							885363878
-						]
-					}
-				}
+				id: "3D1B33716D5CF073"
+				item: "railways:remote_lens"
 				type: "item"
 			}]
 			title: "Meta Glasses™"
@@ -2097,6 +2071,7 @@
 		}
 		{
 			dependencies: ["630446139085B8A1"]
+			icon: "create:wrench"
 			id: "5655D6E5228A467E"
 			tasks: [{
 				id: "7842A67897C575D4"
