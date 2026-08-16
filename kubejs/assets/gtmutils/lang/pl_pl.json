@@ -5,6 +5,7 @@
   "block.gtmutils.ev_64a_energy_converter": "Konwerter energii §5EN§r 64§eA§r",
   "block.gtmutils.ev_auto_charger_4x": "Automatyczna turbo ładowarka §5ekstremalnego napięcia§r 4x",
   "block.gtmutils.expanded_me_pattern_buffer": "Rozszerzony bufor wzorców ME",
+  "block.gtmutils.expanded_me_pattern_buffer_proxy": "Rozszerzony pośrednik bufora wzorców ME",
   "block.gtmutils.hv_64a_energy_converter": "Konwerter energii §6WN§r 64§eA§r",
   "block.gtmutils.hv_auto_charger_4x": "Automatyczna turbo ładowarka §6wysokiego napięcia§r 4x",
   "block.gtmutils.iv_64a_energy_converter": "Konwerter energii §9IN§r 64§eA§r",
@@ -60,6 +61,7 @@
   "config.gtmutils.option.sterileHatchEnabled": "sterileHatchEnabled",
   "config.gtmutils.option.tagStockingEnabled": "tagStockingEnabled",
   "config.jade.plugin_gtmutils.enlarged_me_stocking_bus_info": "Informacje o powiększonej magistrali ME",
+  "config.jade.plugin_gtmutils.me_expanded_pattern_buffer_info": "Informacje rozszerzonego bufora wzorców ME",
   "config.jade.plugin_gtmutils.pterb_info": "Informacje o WAT",
   "gtceu.placeholder_info.watfrequency.1": "Użycie:",
   "gtceu.placeholder_info.watfrequency.2": "  {watfrequency} -> Obecna częstotliwość: (wstaw tutaj częstotliwość)",
@@ -116,5 +118,6 @@
   "tooltip.omnibreaker.tool_mode_3": "Nożyce do drutu",
   "tooltip.omnibreaker.tool_mode_4": "Łom",
   "tooltip.pterb_machine.input_coolant_before_use": "Zawsze wprowadź chłodziwo przed włączeniem!",
+  "tooltip.pterb_machine.purpose": "Most Einsteina–Rosena do przesyłu energii (PTERB)\"",
   "tooltip.pterb_machine.uses_coolant": "Używa %s do funkcjonowania!"
 }

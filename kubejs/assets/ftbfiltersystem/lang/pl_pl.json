@@ -1,5 +1,6 @@
 {
   "filter.ftbfiltersystem.and.name": "Wszystkie z",
+  "filter.ftbfiltersystem.and.tooltip": "Filtr złożony: ten filtr pasuje, jeśli WSZYSTKIE filtry podrzędne pasują.",
   "filter.ftbfiltersystem.block.name": "Jest blokiem",
   "filter.ftbfiltersystem.custom.name": "Niestandardowa",
   "filter.ftbfiltersystem.durability.name": "Wytrzymałość",
@@ -13,6 +14,7 @@
   "filter.ftbfiltersystem.not.name": "Nie",
   "filter.ftbfiltersystem.only_one.name": "Tylko jeden z",
   "filter.ftbfiltersystem.or.name": "Dowolny z",
+  "filter.ftbfiltersystem.or.tooltip": "Filtr złożony: ten filtr pasuje, jeśli DOWOLNY filtr podrzędny pasuje.",
   "filter.ftbfiltersystem.root.name": "Wszystkie z (Root)",
   "filter.ftbfiltersystem.stack_size.name": "Wielkość stosu",
   "ftbfiltersystem": "System filtrowania FTB",

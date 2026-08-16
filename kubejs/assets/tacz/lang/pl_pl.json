@@ -85,7 +85,7 @@
 	"config.tacz.common.ammo.destroy_glass.desc": "Czy amunicja może niszczyć szkło",
 	"config.tacz.common.ammo.explosive_ammo_destroys_blocks": "Wybuchowa Amunicja Niszczy Bloki",
 	"config.tacz.common.ammo.explosive_ammo_destroys_blocks.desc": "Uwaga: Amunicja z właściwościami niszczącymi może niszczyć bloki",
-	"config.tacz.common.ammo.explosive_ammo_fire": "Wybuchowa Amunicja Podpala",
+	"config.tacz.common.ammo.explosive_ammo_fire": "Podpalanie wybuchowej amunicji",
 	"config.tacz.common.ammo.explosive_ammo_fire.desc": "Uwaga: Amunicja z właściwościami wybuchowymi może podpalić obiekty w pobliżu",
 	"config.tacz.common.ammo.explosive_ammo_knock_back": "Odrzut Wybuchowej Amunicji",
 	"config.tacz.common.ammo.explosive_ammo_knock_back.desc": "Amunicja z właściwościami wybuchowymi może dodać efekt odrzutu",

@@ -202,4 +202,29 @@ function registerTFGQuartzRecipes(event) {
 		.duration(6.4 * 20)
 		.EUt(30)
 	//#endregion
+	//#region Rose quartz tiles to blocks
+	event.recipes.gtceu.compressor('tfg:compressor/rose_quartz_tiles_to_blocks')
+		.itemInputs('4x create:rose_quartz_tiles')
+		.itemOutputs('create:rose_quartz_block')
+		.duration(20 * 15)
+		.EUt(2)
+
+	event.recipes.gtceu.compressor('tfg:compressor/small_rose_quartz_tiles_to_blocks')
+		.itemInputs('4x create:small_rose_quartz_tiles')
+		.itemOutputs('create:rose_quartz_block')
+		.duration(20 * 15)
+		.EUt(2)
+
+	event.recipes.greate.compacting('create:rose_quartz_block', [
+		'create:rose_quartz_tiles', 'create:rose_quartz_tiles', 
+		'create:rose_quartz_tiles', 'create:rose_quartz_tiles'])
+		.recipeTier(1)
+		.id(`tfg:pressing/rose_quartz_tiles_to_blocks`)
+
+	event.recipes.greate.compacting('create:rose_quartz_block', [
+		'create:small_rose_quartz_tiles', 'create:small_rose_quartz_tiles', 
+		'create:small_rose_quartz_tiles', 'create:small_rose_quartz_tiles'])
+		.recipeTier(1)
+		.id(`tfg:pressing/small_rose_quartz_tiles_to_blocks`)
+	//#endregion
 }

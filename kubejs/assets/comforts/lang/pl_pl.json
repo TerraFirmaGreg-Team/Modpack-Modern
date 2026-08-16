@@ -46,6 +46,7 @@
   "gui.comforts.config.daySleepingPercentage.name": "Odsetek śpiących za dnia",
   "gui.comforts.config.hammockUse.description": "Pora dnia, w której można używać hamaków.",
   "gui.comforts.config.hammockUse.name": "Pora dnia na używanie hamaków",
+  "gui.comforts.config.hammocksStopPhantoms.description": "Jeśli opcja jest włączona, spanie w hamaku powstrzymuje spawnowanie fantomów.",
   "gui.comforts.config.hammocksStopPhantoms.name": "Hamaki powstrzymują fantomy",
   "gui.comforts.config.nightWakeTimeOffset.description": "Ilość czasu, w tikach, która zostanie dodana lub odjęta od nowego czasu po przespaniu dnia.",
   "gui.comforts.config.restMultiplier.name": "Mnożnik senności",
