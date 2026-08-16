@@ -1733,7 +1733,7 @@
 		}
 		{
 			dependencies: ["65194B2DC42B3E07"]
-			description: ["Sadly trains have some limitations. A single train contraption &4CAN NOT&r exceed &b20 bogeys&r and be longer than &b128 blocks&r."]
+			description: ["Sadly trains have some limitations. A single train contraption &4CAN NOT&r exceed &b20 bogeys&r and be longer than &b128 blocks&r, keep this in mind while designing your trains."]
 			icon: "createdeco:decal_warning"
 			id: "13C368BE21161068"
 			shape: "diamond"
@@ -1919,6 +1919,13 @@
 		}
 		{
 			dependencies: ["624DBB15C2B3C8E3"]
+			description: [
+				"&bTrain Obeservators&r can be used to detect the cargo transported by the &5Train&r. by right-clicking the &bTrain Observator&r and placing it next to the tracks, you can filter the train cargo by placing an item on top of the block."
+				""
+				"Once a train with the filterd cargo passes over the &bTrain Observator&r a redstone signal will be send from the block!"
+				""
+				"&3Tip:&r you can use filters to filter multiple items or fluid at once!"
+			]
 			id: "69F5BB121E93A5A5"
 			subtitle: "Customs control"
 			tasks: [{
@@ -1934,6 +1941,11 @@
 			dependencies: [
 				"69F5BB121E93A5A5"
 				"0E26552E6336BB32"
+			]
+			description: [
+				"It's time to automate your railway system! by placing an &aMetal Casing&r and right-clicking a &bConductors Cap&r on it you can spawn your own conductor. Cute isn't he? You can move him around with a lead."
+				""
+				"Placing him next to a &aLever&r and looking at him will make him pull the lever, this is usefull for &aTrack Switches&r"
 			]
 			icon: "create:schedule"
 			id: "374304894C62001B"
@@ -1969,6 +1981,13 @@
 		}
 		{
 			dependencies: ["624DBB15C2B3C8E3"]
+			description: [
+				"&bPortable interfaces&r allow you to move items beteen your trains and your storage. Placing an &bPortable Interface&r on the train and conecting it to a fault or fluid tank will allow you to move on and off your train! The interfaces require a &ltwo block gap&r between eachoter to work."
+				""
+				"By supplying the &lPortable Interface&r next to the tracks with items will cause them to be moved onto the train, once the interfaces are connected. While requesting items from the interface will move them off the train. This can be done with &aHoppers, Item and Fluid Pipes&r."
+				""
+				"&3Note:&r an interface &4DOESN'T&r have it's own storage its an extencion of the Fault or the Fluid Tank, keep this in mind while working with them."
+			]
 			id: "2EC917FB326D5A58"
 			subtitle: "Loading and unloading"
 			tasks: [
@@ -2073,6 +2092,7 @@
 			dependencies: ["630446139085B8A1"]
 			icon: "create:wrench"
 			id: "5655D6E5228A467E"
+			subtitle: "Why didn't you use Track Buffers ???"
 			tasks: [{
 				id: "7842A67897C575D4"
 				type: "checkmark"
