@@ -1733,7 +1733,11 @@
 		}
 		{
 			dependencies: ["65194B2DC42B3E07"]
-			description: ["Sadly trains have some limitations. A single train contraption &4CAN NOT&r exceed &b20 bogeys&r and be longer than &b128 blocks&r, keep this in mind while designing your trains."]
+			description: [
+				"Sadly trains have some limitations. A single train contraption &4CAN NOT&r exceed &b20 bogeys&r and be longer than &b128 blocks&r, keep this in mind while designing your trains."
+				""
+				"&3Note:&r you can always change the limits in your config, just remember that increasing the limit will use &lmore&r server resources."
+			]
 			icon: "createdeco:decal_warning"
 			id: "13C368BE21161068"
 			shape: "diamond"
@@ -1818,6 +1822,7 @@
 		}
 		{
 			dependencies: ["65194B2DC42B3E07"]
+			description: ["The &bHandcar&r is a deployable train that allows you to move over rails! You can pick it up with a &aWrench&r and move on, a great way to quickly move around without building a full train."]
 			id: "2BC0719E8FF1613A"
 			subtitle: "A serious workout"
 			tasks: [{
@@ -1943,9 +1948,11 @@
 				"0E26552E6336BB32"
 			]
 			description: [
-				"It's time to automate your railway system! by placing an &aMetal Casing&r and right-clicking a &bConductors Cap&r on it you can spawn your own conductor. Cute isn't he? You can move him around with a lead."
+				"It's time to automate your railway system! by placing an &aMetal Casing&r and right-clicking a &bConductors Cap&r on it you can spawn your own conductor. Cute isn't he? You can move him around with a &bLead&r."
 				""
-				"Placing him next to a &aLever&r and looking at him will make him pull the lever, this is usefull for &aTrack Switches&r"
+				"Placing him next to a &aLever&r and looking at him will make him pull the lever, this is usefull for &aTrack Switches&r. You can also Place him on a &aSeat&r in your train. by giving him a &bTrain Schedule&r you can make him ride your train between your &aTrain Stations&r."
+				""
+				"Right-clicking a &bTrain Schedule&r allows you to select the &aTrain Station&r to which the &5Train&r should go and how long it needs to wait at a specific station. you can also select if the &5Train&r should loop the route or stop at a specific point."
 			]
 			icon: "create:schedule"
 			id: "374304894C62001B"
@@ -2030,6 +2037,7 @@
 		}
 		{
 			dependencies: ["374304894C62001B"]
+			description: ["Your &5Train&r can use Solid fuels to accelerate the train up to 50%!, by supplying the &5Train&r with any kind of &bCoal&r your trains speed will increase for 5min per piece of Coal."]
 			icon: "minecraft:charcoal"
 			id: "31B91C1FF958CEC3"
 			subtitle: "Faster than warpspeed, kinda..."
@@ -2044,6 +2052,13 @@
 		}
 		{
 			dependencies: ["374304894C62001B"]
+			description: [
+				"&bLiquid fuels&r are way more energy dense compared to Solid fuels, but they require a bit more infrastructure. By placing an &bFuel Tank&r on the Train and supplying it using the &bFuel Interface&r your &5Train&r will consume 100mb of fuel and accelerate it by 50%. Liquid fuels last &lA LOT&r longer compared to &aCoal&r."
+				""
+				"E.g. 100mb of Rocket Fuel lasts for &l6 HOURS&r, that's &l60 HOURS&r per bucket."
+				""
+				"You can use &aCreosote, Benzene, Diesel&r and way more as fuel in your train, are you unsure if your liquid classifies as a fuel? try pumping it into a &bFuel Tank&r, if the tank accepts the liquid it can be used as fuel!"
+			]
 			id: "41E8E1F8E7ACFD36"
 			subtitle: "Concentrated energy"
 			tasks: [
