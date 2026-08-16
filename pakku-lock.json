@@ -186,31 +186,43 @@
             ]
         },
         {
-            "pakku_id": "tIIGT85PQd5pJGf0",
-            "type": "RESOURCE_PACK",
-            "side": "CLIENT",
+            "pakku_id": "mLtN3bX1D3dl7WDh",
+            "pakku_links": [
+                "E7ASIvLUKD1YJURv"
+            ],
+            "type": "MOD",
             "slug": {
-                "github": "Frontiers-PackForge/AE2-Midnight-and-Daybreak"
+                "curseforge": "ae2-uelm"
             },
             "name": {
-                "github": "AE2-Midnight-and-Daybreak"
+                "curseforge": "AE2 Unofficial Extended Life Modern"
             },
             "id": {
-                "github": "1083466923"
+                "curseforge": "1624366"
             },
             "files": [
                 {
-                    "type": "github",
-                    "file_name": "midnight-ae2-30e7823.zip",
+                    "type": "curseforge",
+                    "file_name": "appliedenergistics2-forge-15.5.0-uelm.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
                     "release_type": "release",
-                    "url": "https://github.com/Frontiers-PackForge/AE2-Midnight-and-Daybreak/releases/download/midnight-ae2-latest/midnight-ae2-30e7823.zip",
-                    "id": "394148872",
-                    "parent_id": "1083466923",
+                    "url": "https://edge.forgecdn.net/files/8516/890/appliedenergistics2-forge-15.5.0-uelm.jar",
+                    "id": "8516890",
+                    "parent_id": "1624366",
                     "hashes": {
-                        "sha256": "0e1436fe51f6f6a33fcae3106482e1042f622e1431aa4c4d056d17d540c7506b"
+                        "sha1": "c9b83b39ec9247264a4e123a442d5cb7e5e769fc",
+                        "md5": "640c38629a2aea399fe6077225d3f353"
                     },
-                    "size": 5653589,
-                    "date_published": "2026-04-11T15:08:44Z"
+                    "required_dependencies": [
+                        "1173950"
+                    ],
+                    "size": 8530770,
+                    "date_published": "2026-07-26T23:15:36.147Z"
                 }
             ]
         },
