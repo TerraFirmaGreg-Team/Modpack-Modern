@@ -6,6 +6,8 @@
 	"block.sophisticatedbackpacks.iron_backpack": "Plecak z czerwonej stali",
 	"block.sophisticatedbackpacks.netherite_backpack": "Plecak ze stali wolframowej",
 	"chat.sophisticatedbackpacks.backpack_uuid.tooltip": "Kliknij aby nadać plecakowi UUID: %s",
+	"commands.sophisticatedbackpacks.dynamic.begin.success": "Pomyślnie uruchomiono dynamiczny szablon '%s'",
+	"commands.sophisticatedbackpacks.dynamic.end.success": "Pomyślnie zakończono dynamiczny szablon '%s'",
 	"commands.sophisticatedbackpacks.give.success": "Oddaj plecak %s",
 	"commands.sophisticatedbackpacks.list.cloth_color": "Tkanina",
 	"commands.sophisticatedbackpacks.list.header": "Nazwa plecaka, kolory, ostatnie otwarcie przez, ostatnie otwarcie",

@@ -283,7 +283,7 @@
 			"entity": "tfc:jellyfish",
 			"scale": 0.7,
 			"name": "Meduza",
-			"text": "Jellyfish live in warmer oceans, with a $(l:the_world/climate#temperature)temperature$() of at least 18°C."
+			"text": "Meduzy żyją w ciepłych oceanach, o $(l:the_world/climate#temperature)temperaturze$() co najmniej 18°C."
 		},
 		{
 			"type": "patchouli:entity",
@@ -297,7 +297,7 @@
 			"entity": "tfc:salmon",
 			"scale": 0.7,
 			"name": "Łosoś",
-			"text": "Salmon spawn in any river or lake with a $(l:the_world/climate#temperature)temperature$() of at least -5°C."
+			"text": "Łosoś spawnuje się w dowolnej rzece lub jeziorach, gdzie $(l:the_world/climate#temperature)temperatura$() jest co najmniej -5°C."
 		},
 		{
 			"type": "patchouli:entity",
