@@ -21,6 +21,7 @@
 - Added some 3D molecules to the molecular structure view (#4754) @BlueBoat29
 - Added recipes to convert rose quartz tiles back into blocks (#4768) @applenper
 - Added more cloth blocks @Pyritie
+- Added earlier ways to compress fertilizers into their "pure" form which give 100% nutrients at once @Pyritie
 ### Bug fixes
 - Fixed mobs suffocating to death inside supports @Pyritie
 - Fixed the hose pulley collecting "flowing" oil fluid instead of normal oil fluid @Pyritie

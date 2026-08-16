@@ -39,19 +39,19 @@ function registerTFGCompostRecipes(event) {
 
 	event.recipes.gtceu.mixer('tfg:pure_nitrogen')
 		.itemInputs('#forge:wax')
-		.inputFluids(Fluid.of('gtceu:nitrogen', 8000))
+		.inputFluids(Fluid.of('gtceu:nitrogen', 4000))
 		.itemOutputs('4x tfc:pure_nitrogen')
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.LV])
 
 	event.recipes.gtceu.mixer('tfg:pure_potassium')
-		.itemInputs('#forge:wax', '8x gtceu:potassium_dust')
+		.itemInputs('#forge:wax', '4x gtceu:potassium_dust')
 		.itemOutputs('4x tfc:pure_potassium')
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.LV])
 	
 	event.recipes.gtceu.mixer('tfg:pure_phosphorus')
-		.itemInputs('#forge:wax', '8x gtceu:phosphorus_dust')
+		.itemInputs('#forge:wax', '4x gtceu:phosphorus_dust')
 		.itemOutputs('4x tfc:pure_phosphorus')
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.LV])
@@ -231,4 +231,95 @@ function registerTFGCompostRecipes(event) {
 	[
 		"tfg:universal_compost_greens_bag"	
 	]).id("tfg:shapeless/universal_compost_greens_from_bag")
+
+	// Pure fertilisers from other ingredients
+
+	event.recipes.greate.pressing(
+		['2x tfc:pure_nitrogen', '2x tfc:pure_potassium', 'tfc:pure_phosphorus'],
+		['tfc:compost', 'tfc:compost', 'tfc:compost', 'tfc:compost', 'tfc:compost', 'tfc:compost', 'tfc:compost', 'tfc:compost'])
+		.id('tfg:pressing/compost_to_pure')
+
+	event.recipes.greate.pressing(
+		['tfc:pure_phosphorus'],
+		['minecraft:bone_meal', 'minecraft:bone_meal', 'minecraft:bone_meal', 'minecraft:bone_meal', 'minecraft:bone_meal', 
+		'minecraft:bone_meal', 'minecraft:bone_meal', 'minecraft:bone_meal', 'minecraft:bone_meal', 'minecraft:bone_meal'])
+		.id('tfg:pressing/bone_meal_to_pure')
+
+	event.recipes.greate.pressing(
+		['3x tfc:pure_potassium', 'tfc:pure_phosphorus'],
+		['gtceu:ash_dust', 'gtceu:ash_dust', 'gtceu:ash_dust', 'gtceu:ash_dust', 'gtceu:ash_dust', 
+		'gtceu:ash_dust', 'gtceu:ash_dust', 'gtceu:ash_dust', 'gtceu:ash_dust', 'gtceu:ash_dust'])
+		.id('tfg:pressing/ash_dust_to_pure')
+
+	event.recipes.greate.pressing(
+		['3x tfc:pure_potassium', 'tfc:pure_phosphorus'],
+		['gtceu:dark_ash_dust', 'gtceu:dark_ash_dust', 'gtceu:dark_ash_dust', 'gtceu:dark_ash_dust', 'gtceu:dark_ash_dust', 
+		'gtceu:dark_ash_dust', 'gtceu:dark_ash_dust', 'gtceu:dark_ash_dust', 'gtceu:dark_ash_dust', 'gtceu:dark_ash_dust'])
+		.id('tfg:pressing/dark_ash_dust_to_pure')
+
+	event.recipes.greate.pressing(
+		['3x tfc:pure_potassium', 'tfc:pure_phosphorus'],
+		['gtceu:ash_dust', 'tfc:powder/wood_ash', 'tfc:powder/wood_ash', 'tfc:powder/wood_ash', 'tfc:powder/wood_ash', 
+		'tfc:powder/wood_ash', 'tfc:powder/wood_ash', 'tfc:powder/wood_ash', 'tfc:powder/wood_ash', 'tfc:powder/wood_ash'])
+		.id('tfg:pressing/wood_ash_to_pure')
+
+	event.recipes.greate.pressing(
+		['tfc:pure_phosphorus'],
+		['gtceu:tricalcium_phosphate_dust', 'gtceu:tricalcium_phosphate_dust', 'gtceu:tricalcium_phosphate_dust', 
+		'gtceu:tricalcium_phosphate_dust', 'gtceu:tricalcium_phosphate_dust', 'gtceu:tricalcium_phosphate_dust', 
+		'gtceu:tricalcium_phosphate_dust'])
+		.id('tfg:pressing/tricalc_to_pure')
+
+	event.recipes.greate.pressing(
+		['tfc:pure_phosphorus'],
+		['gtceu:phosphorus_dust', 'gtceu:phosphorus_dust'])
+		.id('tfg:pressing/phosphorus_to_pure')
+
+	event.recipes.greate.pressing(
+		['tfc:pure_phosphorus'],
+		['gtceu:phosphate_dust', 'gtceu:phosphate_dust', 'gtceu:phosphate_dust', 'gtceu:phosphate_dust', 'gtceu:phosphate_dust'])
+		.id('tfg:pressing/phosphate_to_pure')
+		
+	event.recipes.greate.pressing(
+		['tfc:pure_phosphorus'],
+		['gtceu:apatite_dust', 'gtceu:apatite_dust', 'gtceu:apatite_dust', 'gtceu:apatite_dust', 
+		'gtceu:apatite_dust', 'gtceu:apatite_dust', 'gtceu:apatite_dust'])
+		.id('tfg:pressing/apatite_to_pure')
+		
+	event.recipes.greate.pressing(
+		['tfc:pure_phosphorus', 'tfc:pure_nitrogen', 'tfc:pure_potassium'],
+		['gtceu:fertilizer', 'gtceu:fertilizer', 'gtceu:fertilizer', 'gtceu:fertilizer', 
+		'gtceu:fertilizer', 'gtceu:fertilizer', 'gtceu:fertilizer', 'gtceu:fertilizer'])
+		.id('tfg:pressing/fertilizer_to_pure')
+
+	event.recipes.greate.pressing(
+		['4x tfc:pure_potassium', 'tfc:pure_nitrogen'],
+		['tfc:powder/saltpeter', 'tfc:powder/saltpeter', 'tfc:powder/saltpeter', 'tfc:powder/saltpeter', 'tfc:powder/saltpeter', 
+		'tfc:powder/saltpeter', 'tfc:powder/saltpeter', 'tfc:powder/saltpeter', 'tfc:powder/saltpeter', 'tfc:powder/saltpeter'])
+		.id('tfg:pressing/saltpeter_powder_to_pure')
+
+	event.recipes.greate.pressing(
+		['4x tfc:pure_potassium', 'tfc:pure_nitrogen'],
+		['gtceu:saltpeter_dust', 'gtceu:saltpeter_dust', 'gtceu:saltpeter_dust', 'gtceu:saltpeter_dust', 'gtceu:saltpeter_dust'])
+		.id('tfg:pressing/saltpeter_to_pure')
+
+	event.recipes.greate.pressing(
+		['tfc:pure_nitrogen', 'tfc:pure_potassium'],
+		['ae2:ender_dust', 'ae2:ender_dust'])
+		.id('tfg:pressing/ender_to_pure')
+
+	event.recipes.greate.pressing(
+		['tfc:pure_potassium'],
+		['tfc:powder/sylvite', 'tfc:powder/sylvite'])
+		.id('tfg:pressing/sylvite_powder_to_pure')
+		
+	event.recipes.greate.pressing(
+		['tfc:pure_potassium'],
+		['gtceu:potassium_dust', 'gtceu:potassium_dust'])
+		.id('tfg:pressing/potassium_to_pure')
+
+	event.recipes.greate.pressing(
+		['tfc:pure_potassium'],
+		['gtceu:potassium_sulfate_dust', 'gtceu:potassium_sulfate_dust', 'gtceu:potassium_sulfate_dust', 'gtceu:potassium_sulfate_dust'])
+		.id('tfg:pressing/potassium_sulfate_to_pure')
 }

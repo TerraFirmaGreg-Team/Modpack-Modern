@@ -150,6 +150,8 @@ const registerCreateBlockTags = (event) => {
 
 	event.removeAll('create:passive_boiler_heaters')
 
+	event.add('gtceu:mineable/pickaxe_or_wrench', 'create:blaze_burner')
+
 	event.remove('create:windmill_sails', 'create:sail_frame')
 	
 	event.add('create:non_movable', 'gtceu:wood_crate')
