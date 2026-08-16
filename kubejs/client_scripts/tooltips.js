@@ -395,6 +395,22 @@ const registerTooltips = (event) => {
 		text.add(1, Text.translate("greate.tooltip.max_capacity").append(Text.translate("tfg.greate.es_limit")))
 		text.add(2, Text.translate("tfg.gui.consumes").append(Text.translate("tooltip.ad_astra.fluid_per_tick", "1024")).append(" ").append(Text.translate("material.gtceu.steam")))
 	})
+	event.addAdvanced(['tfg:generators/steel_combustion_engine'], (item, advanced, text) => {
+		text.add(1, Text.translate("greate.tooltip.max_capacity").append(Text.translate("tfg.greate.ls_limit")))
+		text.add(2, Text.translate("tfg.tooltip.attribution.diesel_generators"))
+	})
+	event.addAdvanced(['tfg:generators/aluminium_combustion_engine'], (item, advanced, text) => {
+		text.add(1, Text.translate("greate.tooltip.max_capacity").append(Text.translate("tfg.greate.ms_limit")))
+		text.add(2, Text.translate("tfg.tooltip.attribution.diesel_generators"))
+	})
+	event.addAdvanced(['tfg:generators/stainless_steel_combustion_engine'], (item, advanced, text) => {
+		text.add(1, Text.translate("greate.tooltip.max_capacity").append(Text.translate("tfg.greate.hs_limit")))
+		text.add(2, Text.translate("tfg.tooltip.attribution.diesel_generators"))
+	})
+	event.addAdvanced(['tfg:generators/titanium_combustion_engine'], (item, advanced, text) => {
+		text.add(1, Text.translate("greate.tooltip.max_capacity").append(Text.translate("tfg.greate.es_limit")))
+		text.add(2, Text.translate("tfg.tooltip.attribution.diesel_generators"))
+	})
 
 	// Fluid + item containers
 	global.LAB_EQUIPMENT_CONTAINERS.forEach(container => {
