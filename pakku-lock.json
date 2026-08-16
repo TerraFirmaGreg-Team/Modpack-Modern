@@ -13690,6 +13690,71 @@
             ]
         },
         {
+            "pakku_id": "9g0kJLCzJcjYVRkj",
+            "type": "MOD",
+            "side": "CLIENT",
+            "slug": {
+                "curseforge": "seasonhud",
+                "modrinth": "seasonhud"
+            },
+            "name": {
+                "curseforge": "SeasonHud",
+                "modrinth": "SeasonHud"
+            },
+            "id": {
+                "curseforge": "690971",
+                "modrinth": "VNjUn3NA"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "seasonhud-forge-1.20.1-2.0.8.jar",
+                    "mc_versions": [
+                        "1.20.1",
+                        "1.20"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8551/397/seasonhud-forge-1.20.1-2.0.8.jar",
+                    "id": "8551397",
+                    "parent_id": "690971",
+                    "hashes": {
+                        "sha1": "23a2f09cc006dc3b04cc5f4360f596a9a423bd58",
+                        "md5": "cb44b672115212cb00adadc2b275591b"
+                    },
+                    "required_dependencies": [],
+                    "size": 236262,
+                    "date_published": "2026-08-01T02:18:15.040Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "seasonhud-forge-1.20.1-2.0.8.jar",
+                    "mc_versions": [
+                        "1.20",
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/VNjUn3NA/versions/ocbnwoWo/seasonhud-forge-1.20.1-2.0.8.jar",
+                    "id": "ocbnwoWo",
+                    "parent_id": "VNjUn3NA",
+                    "hashes": {
+                        "sha512": "f309c55c6f3810c577e4401e35f16a0b1e4b1e1a0e81f6d5364bfba73ba3721ba7f236228acb77d86d75e5bc1de730099c19d0bc52f1c9d4842af3a3fec7d150",
+                        "sha1": "23a2f09cc006dc3b04cc5f4360f596a9a423bd58"
+                    },
+                    "required_dependencies": [],
+                    "size": 236262,
+                    "date_published": "2026-08-01T02:18:16.051839Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "IczdjNSWfxo0u4aT",
             "pakku_links": [
                 "x1EwQZ6H2kVKR3U3"
