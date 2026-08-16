@@ -290,26 +290,21 @@
 		}
 		{
 			dependencies: ["32046292AA5B0E30"]
-			description: ["{quests.steam_age.steam_engine.desc}"]
+			description: [
+				"{quests.steam_age.blaze_burner.desc.1}"
+				"{@pagebreak}"
+				"{quests.steam_age.blaze_burner.desc.2}"
+			]
 			id: "183D47F04CAEBFA7"
 			optional: true
 			shape: "heart"
-			subtitle: "{quests.steam_age.steam_engine.subtitle}"
-			tasks: [
-				{
-					id: "704B7094BE2FB3E1"
-					item: "create:steam_engine"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "4655500474F4236C"
-					item: "create:blaze_burner"
-					type: "item"
-				}
-			]
-			title: "{quests.steam_age.steam_engine.title}"
-			x: -4.0d
+			subtitle: "{quests.steam_age.blaze_burner.subtitle}"
+			tasks: [{
+				id: "4655500474F4236C"
+				item: "create:blaze_burner"
+				type: "item"
+			}]
+			x: -6.0d
 			y: -2.0d
 		}
 		{
@@ -1708,22 +1703,6 @@
 			y: 4.0d
 		}
 		{
-			dependencies: ["183D47F04CAEBFA7"]
-			description: ["{quests.steam_age.fuel_sources.desc}"]
-			icon: "createdeco:decal_fire"
-			id: "753A53733C6DFA04"
-			optional: true
-			shape: "circle"
-			subtitle: "{quests.steam_age.fuel_sources.subtitle}"
-			tasks: [{
-				id: "38A3F9A1D2F11EE3"
-				type: "checkmark"
-			}]
-			title: "{quests.steam_age.fuel_sources.title}"
-			x: -6.0d
-			y: -2.0d
-		}
-		{
 			dependencies: ["32046292AA5B0E30"]
 			description: ["{quests.steam_age.large_water_wheel.desc}"]
 			id: "56A068A5488CB273"
@@ -1736,7 +1715,7 @@
 				type: "item"
 			}]
 			title: "{quests.steam_age.large_water_wheel.title}"
-			x: -2.0d
+			x: -4.0d
 			y: -2.0d
 		}
 		{
