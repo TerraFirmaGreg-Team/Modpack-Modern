@@ -847,14 +847,14 @@ const registerAE2Recipes = (event) => {
 
 	// Pattern box
 
-	event.recipes.gtceu.shaped('ae2:pattern_box', [
-		'ABA',
-		'CAC'
-	], {
-		A: 'create:cardboard',
-		B: 'ae2:blank_pattern',
-		C: '#forge:fine_wires/red_alloy'
-	}).id('tfg:shaped/ae2_pattern_box')
+	//event.recipes.gtceu.shaped('ae2:pattern_box', [
+	//	'ABA',
+	//	'CAC'
+	//], {
+	//	A: 'create:cardboard',
+	//	B: 'ae2:blank_pattern',
+	//	C: '#forge:fine_wires/red_alloy'
+	//}).id('tfg:shaped/ae2_pattern_box')
 
 	// Annihilation Core
 

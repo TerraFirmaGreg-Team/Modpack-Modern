@@ -287,6 +287,7 @@ function registerTFGBeneathPlacedFeatures(event) {
 	event.add('tfg:nether_crops', "tfg:nether/crop/cassava");
 	event.add('tfg:nether_crops', "tfg:nether/crop/ghost_pepper");
 	event.add('tfg:nether_crops', "tfg:nether/crop/peanut");
+	event.add('tfg:nether_crops', "tfg:nether/crop/cotton");
 	event.add('tfg:nether_crops', "tfg:nether/crop/magmango");
 	event.add('tfg:nether_crops', "tfg:nether/crop/lavacado");
 

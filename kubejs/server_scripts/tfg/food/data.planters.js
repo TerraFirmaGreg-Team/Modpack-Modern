@@ -64,6 +64,24 @@ function registerTFGFLPlanters(event) {
 	);
 
 	event.firmalifePlantable(
+		"tfg:cotton_seeds",
+		"large",
+		0,
+		3,
+		0.15,
+		"tfg:cotton_seeds",
+		"tfg:cotton_product",
+		$FarmlandBlockEntity.NutrientType.NITROGEN,
+		[
+			"tfg:block/crop/cotton_0",
+			"tfg:block/crop/cotton_1",
+			"tfg:block/crop/cotton_2_top",
+			"tfg:block/crop/cotton_5_top"
+		],
+		null
+	);
+
+	event.firmalifePlantable(
 		"tfg:cucumber_seeds",
 		"large",
 		0,
