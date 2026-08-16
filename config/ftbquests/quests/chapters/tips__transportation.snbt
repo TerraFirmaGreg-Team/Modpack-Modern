@@ -1753,6 +1753,7 @@
 		}
 		{
 			dependencies: ["42E33D1E45BFE93B"]
+			description: ["Using &bTrack Buffers&r can prevent derailing of your &5Trains!&r Placing them on the end of an unfinished track or at the outer-ends of your track will remove the possibility for your &5Train&r to derail. "]
 			id: "630446139085B8A1"
 			subtitle: "No more derailing"
 			tasks: [{
@@ -1836,7 +1837,7 @@
 		{
 			dependencies: ["65194B2DC42B3E07"]
 			description: [
-				"&dSeats&r allow you to sit down while operating your train. You may have noticed that the fundamental law of Inercia is conserved while the train is moving. To prevent flying off the train place a &dSeat&r on your &5Train&r and remember to secure it with &aGlue&r"
+				"&dSeats&r allow you to sit down while operating your train. You may have noticed that the fundamental law of Inercia is conserved while the train is moving. To prevent flying off the train place a &dSeat&r on your &5Train&r and remember to secure it with &aGlue.&r"
 				""
 				"&dSeats&r are required for automation of your trains, keep this in mind for later."
 			]
@@ -1911,6 +1912,7 @@
 		}
 		{
 			dependencies: ["4868CD0A3946C201"]
+			description: ["Does offloading your goods take too much time? did you ever just want to leave the "]
 			id: "42E33D1E45BFE93B"
 			subtitle: "Train management"
 			tasks: [{
@@ -1991,7 +1993,7 @@
 			description: [
 				"&bPortable interfaces&r allow you to move items beteen your trains and your storage. Placing an &bPortable Interface&r on the train and conecting it to a fault or fluid tank will allow you to move on and off your train! The interfaces require a &ltwo block gap&r between eachoter to work."
 				""
-				"By supplying the &lPortable Interface&r next to the tracks with items will cause them to be moved onto the train, once the interfaces are connected. While requesting items from the interface will move them off the train. This can be done with &aHoppers, Item and Fluid Pipes&r."
+				"By supplying the &lPortable Interface&r next to the tracks with items will cause them to be moved onto the train, once the interfaces are connected. While requesting items from the interface will move them off the train. This can be done with &aHoppers, Item and Fluid Pipes.&r"
 				""
 				"&3Note:&r an interface &4DOESN'T&r have it's own storage its an extencion of the Fault or the Fluid Tank, keep this in mind while working with them."
 			]
@@ -2080,7 +2082,14 @@
 		}
 		{
 			dependencies: ["374304894C62001B"]
+			description: [
+				"The &bConductor Whistle&r can be used to make a &dTrain Conductor&r move to a specific place on the tracks, ideal if you want to modify a working &5Train&r."
+				"Right-clicking it on a &dTrain Conductor&r will bound the item to the them, by right-clicking on the tracks the &5Train&r will move towards your selected spot, if the &5Train&r is not able to acces the specified location it will tell you so in the game chat."
+				""
+				"Note: The &bConductor Whistle&r will &4OVERRIDE&r the &aTrain Schedule&r, if you wish for your &dConductor&r to continue his journey you have to re-give him the &aTrain Schedule&r by right-clicking him &ltwice&r with an empty hand."
+			]
 			id: "48138F7AFC3B8611"
+			subtitle: "I think i got tinnitus"
 			tasks: [{
 				id: "1134B4D5982EC316"
 				item: "railways:conductor_whistle"
@@ -2091,6 +2100,12 @@
 		}
 		{
 			dependencies: ["374304894C62001B"]
+			description: [
+				"Ever wonderd where your &5Train&r goes? or did you lose it and cannot find it? Fear not!"
+				"By giving you &dTrain Conductor&r &aEngineer's Goggles&r and a &bRemote Lens&r you can now look from the perspective of the &dTrain Conductor&r."
+				""
+				"Right-click the item on the &dTrain Conductor&r to bind it to the item and use it whenever you want to inspect your &5Train!&r"
+			]
 			icon: "create:goggles"
 			id: "0A9A54599EE46D5F"
 			subtitle: "Legalised oversight"
@@ -2099,12 +2114,13 @@
 				item: "railways:remote_lens"
 				type: "item"
 			}]
-			title: "Meta Glasses™"
+			title: "Remote Lens"
 			x: 14.5d
 			y: 19.0d
 		}
 		{
 			dependencies: ["630446139085B8A1"]
+			description: ["It happens to the best of us. You accidentally break the tracks or your &5Train&r somehow escaped your tracks. And not it's &lDerailed&r. Luckly there is an easy fix for that, by right-clicking with a &aWrench&r to select it and then right-click again on the tracks to place it back. Did you place it the train facing the wrong direction? you can select it again and place it down while facing the other direction, this will make the &5Train&r face the other direction!"]
 			icon: "create:wrench"
 			id: "5655D6E5228A467E"
 			subtitle: "Why didn't you use Track Buffers ???"
