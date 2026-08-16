@@ -32,24 +32,24 @@
 							"function": "minecraft:set_count"
 						}
 					]
-				},
-				{
-					"conditions": [
-						{
-							"condition": "minecraft:killed_by_player"
-						}
-					],
-					"name": "loot_pool",
-					"rolls": 1,
-					"entries": [
-						{
-							"type": "minecraft:item",
-							"name": "tfc:small_raw_hide"
-						}
-					]
 				}
 			],
 			"rolls": 1.0
+		},
+		{
+			"conditions": [
+				{
+					"condition": "minecraft:killed_by_player"
+				}
+			],
+			"name": "loot_pool",
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "tfc:small_raw_hide"
+				}
+			]
 		}
 	],
 	"random_sequence": "minecraft:entities/zombie_horse"
