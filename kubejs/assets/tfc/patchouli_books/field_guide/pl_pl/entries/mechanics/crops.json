@@ -780,7 +780,7 @@
 		},
 		{
 			"type": "tfc:multimultiblock",
-			"text": "Note: in order to grow, the rice block must be $(thing)Waterlogged$().",
+			"text": "Uwaga: By rosnąć, ryż musi być $(thing)otoczony wodą$().",
 			"multiblocks": [
 				{
 					"pattern": [

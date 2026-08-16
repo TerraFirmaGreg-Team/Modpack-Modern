@@ -25,7 +25,7 @@
 			"images": [
 				"tfg:textures/gui/field_guide/tapping_index/maple_tree.png"
 			],
-			"text": "$(thing)Produces$(): Maple Sap$(br)$(thing)Processes Into$(): Maple Sugar",
+			"text": "$(thing)Produkuje$(): Sok klonowy$(br)$(thing)Można przetworzyć na$(): Cukier klonowy",
 			"border": true
 		},
 		{
@@ -41,7 +41,7 @@
 			"images": [
 				"tfg:textures/gui/field_guide/tapping_index/birch_tree.png"
 			],
-			"text": "$(thing)Produces$(): Birch Sap$(br)$(thing)Processes Into$(): Birch Sugar",
+			"text": "$(thing)Produkuje$(): Sok brzozowy$(br)$(thing)Można przetworzyć na$(): Cukier brzozowy",
 			"border": true
 		},
 		{
