@@ -20,6 +20,9 @@ function registerTFGKineticRecipes(event) {
 		.duration(100)
 		.EUt(7)
 
+	TFGHelpers.registerMaterialInfo('tfg:generators/steel_combustion_engine', [GTMaterials.Steel, 8.5, GTMaterials.TinAlloy, 2, GTMaterials.Brass, 1]);
+
+
 	event.shaped('tfg:generators/aluminium_combustion_engine', [
 		'BDB',
 		'BAB',
@@ -37,6 +40,9 @@ function registerTFGKineticRecipes(event) {
 		.itemOutputs('tfg:generators/aluminium_combustion_engine')
 		.duration(100)
 		.EUt(7)
+
+	TFGHelpers.registerMaterialInfo('tfg:generators/aluminium_combustion_engine', [GTMaterials.Aluminium, 8.5, GTMaterials.Steel, 3]);
+
 
 	event.shaped('tfg:generators/stainless_steel_combustion_engine', [
 		'BDB',
@@ -56,6 +62,9 @@ function registerTFGKineticRecipes(event) {
 		.duration(100)
 		.EUt(7)
 
+	TFGHelpers.registerMaterialInfo('tfg:generators/stainless_steel_combustion_engine', [GTMaterials.StainlessSteel, 8.5, GTMaterials.Aluminium, 3]);
+
+
 	event.shaped('tfg:generators/titanium_combustion_engine', [
 		'BDB',
 		'BAB',
@@ -73,4 +82,7 @@ function registerTFGKineticRecipes(event) {
 		.itemOutputs('tfg:generators/titanium_combustion_engine')
 		.duration(100)
 		.EUt(7)
+
+	TFGHelpers.registerMaterialInfo('tfg:generators/titanium_combustion_engine', [GTMaterials.Titanium, 8.5, GTMaterials.StainlessSteel, 3]);
+
 }
