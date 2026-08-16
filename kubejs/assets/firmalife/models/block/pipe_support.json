@@ -1,0 +1,25 @@
+{
+	"credit": "Made by Vexxel#9727 with Blockbench || https://github.com/Vexxel || 2022",
+	"parent": "block/block",
+	"textures": {
+		"support": "firmalife:block/devices/copper_pipe/support_copper"
+	},
+	"elements": [
+		{
+			"from": [2, 4, 2.01],
+			"to": [14, 12, 2.01],
+			"faces": {
+				"north": {"uv": [0, 0, 12, 8], "texture": "#support"},
+				"south": {"uv": [0, 0, 12, 8], "texture": "#support"}
+			}
+		},
+		{
+			"from": [2, 4, 13.99],
+			"to": [14, 12, 13.99],
+			"faces": {
+				"north": {"uv": [0, 0, 12, 8], "texture": "#support"},
+				"south": {"uv": [0, 0, 12, 8], "texture": "#support"}
+			}
+		}
+	]
+}

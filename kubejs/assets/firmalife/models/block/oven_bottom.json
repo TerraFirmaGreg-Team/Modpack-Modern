@@ -1,0 +1,71 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "block/block",
+	"textures": {
+		"main": "firmalife:block/rustic_bricks",
+		"side": "firmalife:block/rustic_oven_side",
+		"front": "firmalife:block/rustic_oven_bottom",
+		"gravel": "firmalife:block/oven_gravel",
+		"top": "firmalife:block/rustic_oven_surface",
+		"particle": "#main"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 16, 0],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#front"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#front"}
+			}
+		},
+		{
+			"from": [0, 0, 15],
+			"to": [16, 16, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#side"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#side"}
+			}
+		},
+		{
+			"from": [0, 0, 0],
+			"to": [4, 16, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
+			"faces": {
+				"east": {"uv": [0, 0, 16, 16], "texture": "#side"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#side"}
+			}
+		},
+		{
+			"from": [12, 0, 0],
+			"to": [16, 16, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
+			"faces": {
+				"east": {"uv": [0, 0, 16, 16], "texture": "#side"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#side"}
+			}
+		},
+		{
+			"from": [0, 11, 0],
+			"to": [16, 16, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
+			"faces": {
+				"up": {"uv": [0, 0, 16, 16], "rotation": 270, "texture": "#top"},
+				"down": {"uv": [0, 0, 16, 16], "rotation": 270, "texture": "#main"}
+			}
+		},
+		{
+			"from": [0.1, 0, 0.1],
+			"to": [15.9, 0.5, 15.9],
+			"faces": {
+				"north": {"uv": [0, 0, 15.8, 0.5], "texture": "#gravel"},
+				"east": {"uv": [0, 0, 15.8, 0.5], "texture": "#gravel"},
+				"south": {"uv": [0, 0, 15.8, 0.5], "texture": "#gravel"},
+				"west": {"uv": [0, 0, 15.8, 0.5], "texture": "#gravel"},
+				"up": {"uv": [0, 0, 15.8, 15.8], "texture": "#gravel"},
+				"down": {"uv": [0, 0, 15.8, 15.8], "texture": "#gravel"}
+			}
+		}
+	]
+}

@@ -15,12 +15,12 @@
 		{
 			"type": "patchouli:text",
 			"title": "Visi poveikiai",
-			"text": "$(li)$(l:tfg_ores/hazards#Arsenicosis)Arsenicosis$()$()$(li)$(l:tfg_ores/hazards#Asbestosis)Asbestosis$()$()$(li)$(l:tfg_ores/hazards#Berylliosis)Berylliosis$()$(li)$(l:tfg_ores/hazards#Carbon_Monoxide_poisoning)Carbon Monoxide poisoning$()$(li)$(l:tfg_ores/hazards#Carcinogens)Carcinogens$()$(li)$(l:tfg_ores/hazards#Chemical_burns)Chemical burns$()$(li)$(l:tfg_ores/hazards#Irritants)Irritants$()$(li)$(l:tfg_ores/hazards#Methanol_poisoning)Methanol poisoning$()$(li)$(l:tfg_ores/hazards#Nauseating_chemicals)Nauseating chemicals$()$(li)$(l:tfg_ores/hazards#Poisons)Poisonous materials$()$(li)$(l:tfg_ores/hazards#Radioactive_materials)Radioactive materials$()$(li)$(l:tfg_ores/hazards#Silicosis)Silicosis$()$()$(br2)The next page will provide information on how to deal with these effects."
+			"text": "$(li)$(l:tfg_ores/hazards#Arsenicosis)Arsenozė$()$()$(li)\n$(l:tfg_ores/hazards#Asbestosis)Asbestozė$()$()$(li)\n$(l:tfg_ores/hazards#Berylliosis)Beriliozė$()$(li)\n$(l:tfg_ores/hazards#Carbon_Monoxide_poisoning)Apsinuodijimas anglies monoksidu$()$(li)$(l:tfg_ores/hazards#Carcinogens)Kancerogenai$()$(li)\n$(l:tfg_ores/hazards#Chemical_burns)Cheminiai nudegimai$()$(li)\n$(l:tfg_ores/hazards#Irritants)Dirginančios medžiagos$()$(li)\n$(l:tfg_ores/hazards#Methanol_poisoning)Apsinuodijimas metanoliu$()$(li)\n$(l:tfg_ores/hazards#Nauseating_chemicals)Medžiagos sukeliančios pykinimą$()$(li)\n$(l:tfg_ores/hazards#Poisons)Nuodingos medžiagos$()$(li)\n$(l:tfg_ores/hazards#Radioactive_materials)Radioaktyvios medžiagos$()$(li)\n$(l:tfg_ores/hazards#Silicosis)Silikozė$()$()$(br2)Kitame puslapyje bus aprašyta kaip elgtis susidūrus su šiais reiškiniais."
 		},
 		{
 			"type": "patchouli:text",
 			"title": "Prevencija ir gydymai",
-			"text": "$(li)$(l:tfg_ores/hazards#rocks)Rocks?$()$()$(li)$(l:tfg_ores/hazards#containers)Containers$()$(li)$(l:tfg_ores/hazards#mask)The Face Mask$()$(li)$(l:tfg_ores/hazards#gloves)The Rubber Gloves$()$(li)$(l:tfg_ores/hazards#hazmat)The Hazmat Suit$()$(li)$(l:tfg_ores/hazards#medicine)Pills, Tablets and Salvos$()$(li)$(l:tfg_ores/hazards#rad_away)The RadAwayᵗᵐ pill$()$(li)$(l:tfg_ores/hazards#respawn)The Unthinkable...$()"
+			"text": "$(li)$(l:tfg_ores/hazards#rocks)Akmenys?$()$()$(li)\n$(l:tfg_ores/hazards#containers)Konteineriai$()$(li)\n$(l:tfg_ores/hazards#mask)Veido kaukė$()$(li)\n$(l:tfg_ores/hazards#gloves)Guminės pirštinės$()$(li)\n$(l:tfg_ores/hazards#hazmat)Apsauginis kostiumas$()$(li)\n$(l:tfg_ores/hazards#medicine)Kapsulės, tabletės ir tepalai$()$(li)\n$(l:tfg_ores/hazards#rad_away)„RadAwayᵗᵐ“ tabletė$()$(li)\n$(l:tfg_ores/hazards#respawn)Neįsivaizduojama...$()"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -42,42 +42,42 @@
 			"type": "patchouli:crafting",
 			"title": "Veido kaukė",
 			"recipe": "gtceu:shaped/face_mask",
-			"text": "$(thing)Veido kaukė$() suteikia apsaugą nuo bet kokių $(item)Įkvėpimo$() pavojų, pavyzdžiui: arsenikozės.",
+			"text": "$(thing)Veido kaukė$() suteikia apsaugą nuo bet kokių $(item)Įkvepiamų$() pavojų, pavyzdžiui: arsenozės.",
 			"anchor": "mask"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:rubber_gloves",
-			"title": "guminės pirštinės",
+			"title": "Guminės pirštinės",
 			"link_recipes": true,
 			"anchor": "gloves",
-			"text": "The $(thing)Rubber gloves$() can either be made from $(l:mechanics/leather_making)Leather$() and $(l:arborfirmacraft/making_rubber)Latex$(), or out of $(thing)Rubber Sheets$(). They provide protection from any $(item)Skin Contact$() hazards, such as $(thing)Beryllium Dust$()."
+			"text": "$(thing)Guminės pirštinės$() gali būti padarytos iš $(l:mechanics/leather_making)Odos$() ir $(l:arborfirmacraft/making_rubber)Latekso$() arba iš $(thing)Gumos lakštų$(). Jos apsaugo nuo pavojų susijusių su$(item)odos kontaktu$(), tokių kaip $(thing)berilio dulkės$()."
 		},
 		{
 			"type": "tfc:knapping_recipe",
 			"recipe": "tfchotornot:leather_knapping/mittens",
-			"text": "First, knap the leather into mittens."
+			"text": "Pirma iš odos iškirpkite pirštines."
 		},
 		{
 			"type": "tfc:sealed_barrel_recipe",
 			"recipe": "tfg:sealed_barrel/prepared_leather_gloves",
-			"text": "$(thing)Mittens$() are then soaked in $(thing)Vinegar$(), a mixture of fruit and alcohol."
+			"text": "$(thing)Kumštinės pirštinės$() tuomet mirkomos $(thing)Acte$() - vaisių ir alkoholio mišinyje."
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "tfg:latex_soaked_gloves",
-			"text": "Prepared $(thing)leather gloves$() are then heated in a $(thing)vat$() with $(thing)Vulcanized Latex$(), one step away from rubber."
+			"text": "Paruoštos $(thing)odinės pirštinės$() tuomet kaitinamos $(thing)kubile$() su $(thing)vulkanizuotu lateksu$(), kuris yra vienu žingsniu nuo tapimo guma."
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:rubber_gloves",
-			"text": "Finally, the latex-soaked gloves are heated in an $(l:firmalife/ovens)Oven$()."
+			"text": "Galiausia latekse išmirkintos pirštinės yra kaitinamos$(l:firmalife/ovens)orkaitės krosnyje$()"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"title": "Apsauginis kostiumas",
 			"item": "gtceu:hazmat_headpiece,gtceu:hazmat_chestpiece,gtceu:hazmat_leggings,gtceu:hazmat_boots",
-			"text": "Užbaigtas$(thing)apsauginis kostiumas $()užtikrina $(item)apsaugą $()nuo $(item)visų$() pavojų, net ir $(item)radiacijos$(). Jis pagamintas $(thing)ŽĮ („LV“) surinkėjo$() iš $(thing)polietileno$() ir $(thing)polivinilchlorido$().$(br2)Įdomus faktas! Jūs taip pat galite paieškoti $(thing)#ppe_armor$() „JEI“ duomenų bazėje, kad rastumėte daugiau įrangos, kurie suteikia apsauga nuo pavojingų medžiagų.",
+			"text": "Užbaigtas$(thing)apsauginis kostiumas $()užtikrina $(item)apsaugą $()nuo $(item)visų$() pavojų, net ir $(item)radiacijos$(). Jis pagaminamas $(thing)„LV“ surinkėjo$() iš $(thing)polietileno$() ir $(thing)polivinilchlorido$().$(br2)Įdomus faktas! Jūs taip pat galite paieškoti $(thing)#ppe_armor$() „JEI“ duomenų bazėje, kad rastumėte daugiau įrangos, kuri suteikia apsauga nuo pavojingų medžiagų.",
 			"anchor": "hazmat"
 		},
 		{
@@ -87,30 +87,30 @@
 				"tag": "tfg:medicine"
 			},
 			"anchor": "medicine",
-			"text": "In case you do get heavily exposed to a hazard, there are some $(thing)Medicines$() that can help you recover.$(br2)Basic $(thing)Pills$() are the most primitive and easy to make, but most come with $(item)Negative Side Effects$(). $(thing)Tablets$() and $(thing)Salvos$() are more effective and have less side effects, but they require $(thing)LV equipment$() and more advanced resources to make."
+			"text": "Jeigu Jūs esate stipriai paveikti pavojingos medžiagos, tokiu atveju yra $(thing)Vaistai$() kurie gali padėti Jums atsigauti.$(br2)Paprastos $(thing)tabletės$() yra primityviausios ir lengvai padaromos, tačiau dauguma jų turi$(item)neigiamus šalutinius poveikius$(). $(thing)Tabletės$() ir $(thing)Tepalai$() yra labiau efektyvūs ir turi mažiau šalutinių poveikių, bet jie reikalauja „LV“  $(thing) įrangos$() ir labiau pažangių medžiagų pagaminti."
 		},
 		{
 			"type": "patchouli:spotlight",
 			"title": "„RadAwayᵗᵐ“ tabletė",
 			"item": "tfg:rad_away_pill",
 			"anchor": "rad_away",
-			"text": "Tai yra $(item)galutinis$() vaistas, skirtas $(item)VISIEMS$() pavojams ir $(item)TIK$() veiksmingas vaistas nuo $(item)Spinduliuotės$(). Tačiau tai taip pat yra $(thing)brangiausias$() ir $(thing)sunkiausiai$() pagaminamas daiktas, kuriam reikia $(thing)AĮ(„HV“) įtampos pakopos įrangos ir pažangių medžiagų.\n"
+			"text": "Tai yra $(item)galutinis$() vaistas, skirtas $(item)VISIEMS$() pavojams ir yra $(item)VIENINTELIS$() veiksmingas vaistas nuo $(item)Spinduliuotės/Radiacijos$(). Tačiau tai taip pat yra $(thing)brangiausias$() ir $(thing)sunkiausiai$() pagaminamas daiktas, kuriam reikia $(thing)„HV“ pakopos įrangos ir pažangių medžiagų.\n"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Failure...",
+			"title": "Nesėkmė...",
 			"item": {
 				"tag": "minecraft:beds"
 			},
 			"anchor": "respawn",
-			"text": "If all else fails, bringing along a bed to respawn is a good idea.$(br2)If you don't have access to $(thing)Wool$() or $(thing)String$(), you can also make a $(l:getting_started/a_place_to_sleep)Thatch Bed$()."
+			"text": "Jei viskas nepavyksta, neštis lovą prisikėlimui yra gera idėja.$(br2)Jei Jūs neturite $(thing)vilnos$() ar $(thing)siulų$(), Jūs galite pasidaryti $(l:getting_started/a_place_to_sleep)Nendrinę lovą$()."
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Arsenikozė",
+			"title": "Arsenozė",
 			"item": "gtceu:arsenic_dust",
 			"anchor": "Arsenikozė",
-			"text": "$(thing)Arsenicosis$() is an illness caused by inhaling $(thing)Arsenic$() from its dust, vapor or $(thing)Realgar$(). It slowly increases $(item)hunger$(), followed by $(item)nausea$(), and eventually $(item)death$().$(br2)The $(l:tfg_ores/hazards#mask)Face Mask$() and the $(l:tfg_ores/hazards#hazmat)Hazmat Suit$() provide protection from $(thing)Arsenicosis$()."
+			"text": "$(thing)Arsenozė$() - liga sukeliama įkvepiant $(thing)Arseno$() dulkes, garus ar $(thing)Realgarą$(). Ji lėtai skatina $(item)alkį$(), po kurio seka $(item)pykinimas$() ir galiausia $(item)mirtis$().$(br2) $(l:tfg_ores/hazards#mask)Veido kaukė$() ir $(l:tfg_ores/hazards#hazmat)apsauginis kostiumas$() suteikia apsauga nuo $(thing)Arsenozės$()."
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -187,7 +187,7 @@
 			"title": "Radioaktyviosios medžiagos",
 			"item": "gtceu:uranium_ingot",
 			"anchor": "Radioactive_materials",
-			"text": "Dauguma $(thing)radioaktyviųjų medžiagų $()kaip $(thing)uranas 238$(), su kuriomis Jūs susidursite tik pasiekus $(thing)EĮ („EV“) lygį$() arba aukštesnį. Jos $(item)nuolat Jus apšvitins$(). Nedidelis poveikis sukelia $(item)švytėjimą$(), bet ilgalaikis kontaktas sukelia greitą $(item)mirtį$().$(br2)Žinome, kad jis atrodo skanus ir turi milijardą kalorijų, bet $(#ff0000)PRAŠOME NEVALGYTI URANO!$()"
+			"text": "Dauguma $(thing)radioaktyviųjų medžiagų $()kaip $(thing)uranas 238$(), su kuriomis Jūs susidursite tik pasiekus $(thing)„EV“ pakopą$() arba aukštesnę. Jos $(item)nuolat Jus apšvitins$(). Nedidelis poveikis sukelia $(item)švytėjimą$(), bet ilgalaikis kontaktas sukelia greitą $(item)mirtį$().$(br2)Žinome, kad jis atrodo skanus ir turi milijardą kalorijų, bet $(#ff0000)PRAŠOME NEVALGYTI URANO!$()"
 		},
 		{
 			"type": "patchouli:spotlight",

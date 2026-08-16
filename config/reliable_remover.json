@@ -1,0 +1,20 @@
+{
+  "showAttackMessage": true,
+  "showHandSwingMessage": true,
+  "showRemovalMessage": true,
+  "removeItemsFromCreativeTabs": true,
+  "removeItemsFromEmi": true,
+  "removeItemsFromInventories": true,
+  "removeItemsOnInventoryOpen": true,
+  "removeDroppedItems": false,
+  "removeItemsFromLootChests": false,
+  "removeItemsFromStorage": false,
+  "removeItemsFromInfoTabs": true,
+  "removeItemsFromTrades": false,
+  "removeMobEquipment": false,
+  "enableEmiRemoval": false,
+  "showEmiToast": true,
+  "showEmiChatMessages": true,
+  "reloadAfterRemoval": false,
+  "blacklistedItems": []
+}

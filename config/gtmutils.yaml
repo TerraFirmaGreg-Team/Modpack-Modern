@@ -16,15 +16,16 @@ features:
   omnibreakerEnergyCapacity: 40960000
 
   # Whether the Wireless Active Transformer is enabled.
-  pterbEnabled: true
+  webEnabled: true
 
   # Base amount of WAT coolant to drain every second.
   # (Setting both this amount and the IO multiplier to 0 disables the coolant mechanic.)
-  pterbCoolantBaseDrain: 10
+  webCoolantBaseDrain: 10
 
   # Multiplier over IO amount for additional coolant drain.
+  # Multiplies over the logarithm of Voltage * Amperage.
   # (Setting both this and the base drain amount to 0 disables the coolant mechanic.)
-  pterbCoolantIOMultiplier: 0.0
+  webCoolantIOMultiplier: 0.0
 
   # Whether the coins/credits are enabled.
   coinsEnabled: false
@@ -61,4 +62,7 @@ features:
 
   # Whether the Tag Stocking Input Bus/Hatch are enabled. If AE2 is not loaded, this config will not load the machines regardless.
   tagStockingEnabled: true
+
+  # Whether the Infinite Spray Can should be enabled.
+  infiniteSprayCanEnabled: false
 

@@ -314,27 +314,6 @@ const registerCreateRecipes = (event) => {
 		.EUt(GTValues.VA[GTValues.ULV])
 		.addMaterialInfo(true)
 
-	// Паровой двигатель
-	event.shaped('create:steam_engine', [
-		'  A',
-		'DCC',
-		'FE '
-	], {
-		A: '#forge:screws/wrought_iron',
-		C: '#forge:rods/brass',
-		D: '#forge:small_gears/steel',
-		E: '#forge:tools/hammers',
-		F: '#forge:double_ingots/copper'
-	}).id('tfg:create/shaped/steam_engine')
-
-	event.recipes.gtceu.assembler('tfg:create/steam_engine')
-		.itemInputs('1x #forge:screws/wrought_iron', '2x #forge:rods/brass', '#forge:small_gears/steel', '#forge:double_ingots/copper')
-		.circuit(3)
-		.itemOutputs('create:steam_engine')
-		.duration(200)
-		.EUt(32)
-		.addMaterialInfo(true)
-
 	// Паровой свисток
 	event.shaped('create:steam_whistle', [
 		'AC',

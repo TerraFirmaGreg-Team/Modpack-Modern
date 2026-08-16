@@ -290,26 +290,21 @@
 		}
 		{
 			dependencies: ["32046292AA5B0E30"]
-			description: ["{quests.steam_age.steam_engine.desc}"]
+			description: [
+				"{quests.steam_age.blaze_burner.desc.1}"
+				"{@pagebreak}"
+				"{quests.steam_age.blaze_burner.desc.2}"
+			]
 			id: "183D47F04CAEBFA7"
 			optional: true
 			shape: "heart"
-			subtitle: "{quests.steam_age.steam_engine.subtitle}"
-			tasks: [
-				{
-					id: "704B7094BE2FB3E1"
-					item: "create:steam_engine"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "4655500474F4236C"
-					item: "create:blaze_burner"
-					type: "item"
-				}
-			]
-			title: "{quests.steam_age.steam_engine.title}"
-			x: -4.0d
+			subtitle: "{quests.steam_age.blaze_burner.subtitle}"
+			tasks: [{
+				id: "4655500474F4236C"
+				item: "create:blaze_burner"
+				type: "item"
+			}]
+			x: -6.0d
 			y: -2.0d
 		}
 		{
@@ -655,15 +650,12 @@
 			size: 1.0d
 			subtitle: "{quests.steam_age.item_pipes.subtitle}"
 			tasks: [{
-				id: "3122D989BAB787F4"
+				id: "153F8811183001E5"
 				item: {
 					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						display: {
-							Name: "{\"text\":\"Any item pipe\"}"
-						}
-						"ftbfiltersystem:filter": "or(item_tag(forge:small_item_pipes)item_tag(forge:normal_item_pipes)item_tag(forge:large_item_pipes)item_tag(forge:huge_item_pipes))"
+						"ftbfiltersystem:filter": "or(item(gtceu:tin_small_item_pipe)item(gtceu:brass_small_item_pipe)item(gtceu:cobalt_small_item_pipe)item(gtceu:tin_normal_item_pipe)item(gtceu:brass_normal_item_pipe)item(gtceu:cobalt_normal_item_pipe))"
 					}
 				}
 				title: "{quests.steam_age.item_pipes.task}"
@@ -1128,7 +1120,7 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["49896161B31DB7B4"]
+			dependencies: ["12CB3B9ADC586521"]
 			description: [
 				"{quests.steam_age.potin.desc.1}"
 				"{@pagebreak}"
@@ -1153,8 +1145,8 @@
 				type: "item"
 			}]
 			title: "{quests.steam_age.potin.title}"
-			x: -2.5d
-			y: 14.0d
+			x: -16.0d
+			y: 13.5d
 		}
 		{
 			dependencies: ["6F1BC99BE641B671"]
@@ -1711,22 +1703,6 @@
 			y: 4.0d
 		}
 		{
-			dependencies: ["183D47F04CAEBFA7"]
-			description: ["{quests.steam_age.fuel_sources.desc}"]
-			icon: "createdeco:decal_fire"
-			id: "753A53733C6DFA04"
-			optional: true
-			shape: "circle"
-			subtitle: "{quests.steam_age.fuel_sources.subtitle}"
-			tasks: [{
-				id: "38A3F9A1D2F11EE3"
-				type: "checkmark"
-			}]
-			title: "{quests.steam_age.fuel_sources.title}"
-			x: -6.0d
-			y: -2.0d
-		}
-		{
 			dependencies: ["32046292AA5B0E30"]
 			description: ["{quests.steam_age.large_water_wheel.desc}"]
 			id: "56A068A5488CB273"
@@ -1739,7 +1715,7 @@
 				type: "item"
 			}]
 			title: "{quests.steam_age.large_water_wheel.title}"
-			x: -2.0d
+			x: -4.0d
 			y: -2.0d
 		}
 		{
@@ -1962,6 +1938,7 @@
 			y: 9.5d
 		}
 		{
+			dependencies: ["12CB3B9ADC586521"]
 			description: [
 				"{quests.steam_age.cobalt_brass.desc.1}"
 				"{@pagebreak}"
@@ -1984,7 +1961,7 @@
 				type: "item"
 			}]
 			title: "{quests.steam_age.cobalt_brass.title}"
-			x: -15.5d
+			x: -15.0d
 			y: 13.5d
 		}
 		{
@@ -2092,7 +2069,6 @@
 			id: "1D4701C28C2FACF7"
 			optional: true
 			shape: "heart"
-			size: 1.25d
 			subtitle: "{quest.steam_age.soft_mallet.subtitle}"
 			tasks: [{
 				id: "555897B32BD0B6DC"
@@ -2114,6 +2090,49 @@
 			}]
 			x: -19.5d
 			y: 10.0d
+		}
+		{
+			dependencies: ["46FA9DD4755A5548"]
+			description: [
+				"{quests.steam_age.steel_steam_engine.desc.1}"
+				"{@pagebreak}"
+				"{quests.steam_age.steel_steam_engine.desc.2}"
+			]
+			id: "3259A3431E873F1B"
+			optional: true
+			shape: "heart"
+			subtitle: "{quests.steam_age.steel_steam_engine.subtitle}"
+			tasks: [
+				{
+					id: "1D0540A939459AC5"
+					item: "steampowered:bronze_steam_engine"
+					type: "item"
+				}
+				{
+					id: "07F4FBBCE34B1627"
+					item: "steampowered:bronze_flywheel"
+					type: "item"
+				}
+			]
+			title: "{quests.steam_age.steel_steam_engine.title}"
+			x: -16.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["209958FE2EEA5D72"]
+			description: ["{quests.steel_combustion_engine.desc}"]
+			id: "745C46D3CF595600"
+			optional: true
+			shape: "heart"
+			subtitle: "{quests.steel_combustion_engine.subtitle}"
+			tasks: [{
+				id: "33EE294C4D470649"
+				item: "tfg:generators/steel_combustion_engine"
+				type: "item"
+			}]
+			title: "{quests.steel_combustion_engine.title}"
+			x: -16.5d
+			y: 5.5d
 		}
 	]
 	subtitle: ["{quests.steam_age.subtitle}"]

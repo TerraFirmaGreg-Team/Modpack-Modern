@@ -35,26 +35,32 @@ function registerTFGEquipmentItemTags(event) {
 		"black_bear",
 		"grizzly_bear",
 		"direwolf",
-		"lion"
+		"lion",
+		"red_elk"
 	];
-	const parts = [
+	const textile_parts = [
 		"hat", "shirt", "pants", "boots"
 	];
 	textiles.forEach(textile => {
-		parts.forEach(part => {
+		textile_parts.forEach(part => {
 			event.add('minecraft:trimmable_armor', `tfc_textile:${textile}_${part}`)
 		})
 	})
 
-	// tfc textile, why do these have to use 'socks' instead of 'boots'? you were so close
-	event.add('minecraft:trimmable_armor', 'tfc_textile:raw_hat')
-	event.add('minecraft:trimmable_armor', 'tfc_textile:raw_shirt')
-	event.add('minecraft:trimmable_armor', 'tfc_textile:raw_pants')
-	event.add('minecraft:trimmable_armor', 'tfc_textile:raw_socks')
-	event.add('minecraft:trimmable_armor', 'tfc_textile:linen_hat')
-	event.add('minecraft:trimmable_armor', 'tfc_textile:linen_shirt')
-	event.add('minecraft:trimmable_armor', 'tfc_textile:linen_pants')
-	event.add('minecraft:trimmable_armor', 'tfc_textile:linen_socks')
+	const clothes = [
+		"raw",
+		"linen",
+		"cotton",
+		"phantom_silk"
+	];
+	const cloth_parts = [
+		"hat", "shirt", "pants", "socks"
+	];
+	clothes.forEach(cloth => {
+		cloth_parts.forEach(part => {
+			event.add('minecraft:trimmable_armor', `tfc_textile:${cloth}_${part}`)
+		})
+	})
 
 	event.add('minecraft:freeze_immune_wearables', 'tfc:metal/helmet/red_steel')
 	event.add('minecraft:freeze_immune_wearables', 'tfc:metal/chestplate/red_steel')

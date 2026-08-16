@@ -22,7 +22,21 @@ function registerTFGQuartzRecipes(event) {
 		.itemOutputs('1x #forge:dusts/nether_quartz', '8x minecraft:redstone')
 		.duration(7 * 20)
 		.EUt(60)
-	//#endregion
+
+	event.recipes.gtceu.electrolyzer('tfg:electrolyze_smoky_quartz_dust')
+		.itemInputs('3x #forge:dusts/nether_quartz')
+		.itemOutputs('gtceu:silicon_dust')
+		.outputFluids(Fluid.of('gtceu:oxygen', 2000))
+		.duration(7 * 20)
+		.EUt(60)
+
+	event.recipes.gtceu.electrolyzer('tfg:electrolyze_quartz_dust')
+		.itemInputs('3x #forge:dusts/quartzite')
+		.itemOutputs('gtceu:silicon_dust')
+		.outputFluids(Fluid.of('gtceu:oxygen', 2000))
+		.duration(7 * 20)
+		.EUt(60)
+  //#endregion
 
 	//#region Glass
 
@@ -187,5 +201,30 @@ function registerTFGQuartzRecipes(event) {
 		.itemOutputs("4x gtceu:glass_vial")
 		.duration(6.4 * 20)
 		.EUt(30)
+	//#endregion
+	//#region Rose quartz tiles to blocks
+	event.recipes.gtceu.compressor('tfg:compressor/rose_quartz_tiles_to_blocks')
+		.itemInputs('4x create:rose_quartz_tiles')
+		.itemOutputs('create:rose_quartz_block')
+		.duration(20 * 15)
+		.EUt(2)
+
+	event.recipes.gtceu.compressor('tfg:compressor/small_rose_quartz_tiles_to_blocks')
+		.itemInputs('4x create:small_rose_quartz_tiles')
+		.itemOutputs('create:rose_quartz_block')
+		.duration(20 * 15)
+		.EUt(2)
+
+	event.recipes.greate.compacting('create:rose_quartz_block', [
+		'create:rose_quartz_tiles', 'create:rose_quartz_tiles', 
+		'create:rose_quartz_tiles', 'create:rose_quartz_tiles'])
+		.recipeTier(1)
+		.id(`tfg:pressing/rose_quartz_tiles_to_blocks`)
+
+	event.recipes.greate.compacting('create:rose_quartz_block', [
+		'create:small_rose_quartz_tiles', 'create:small_rose_quartz_tiles', 
+		'create:small_rose_quartz_tiles', 'create:small_rose_quartz_tiles'])
+		.recipeTier(1)
+		.id(`tfg:pressing/small_rose_quartz_tiles_to_blocks`)
 	//#endregion
 }

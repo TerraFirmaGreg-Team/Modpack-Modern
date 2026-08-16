@@ -62,19 +62,6 @@ const registerCreateAdditionsRecipes = (event) => {
 		D: 'gtceu:lv_electric_motor',
 	}).addMaterialInfo().id('tfg:createadditions/shaped/electric_motor')
 
-	event.recipes.gtceu.shaped('createaddition:alternator', [
-		'ABA',
-		'CDC',
-		'EFE'
-	], {
-		A: '#gtceu:resistors',
-		B: '#gtceu:circuits/lv',
-		C: 'gtceu:ulv_voltage_coil',
-		D: 'gtceu:ulv_machine_hull',
-		E: 'gtceu:tin_single_cable',
-		F: '#forge:shafts'
-	}).addMaterialInfo().id('tfg:createadditions/shaped/alternator')
-
 	
 	event.shapeless('createaddition:diamond_grit_sandpaper', ['minecraft:paper', 'tfc:glue', '#forge:dusts/diamond'])
 		.id('tfg:shapeless/diamond_grit_sand_paper')

@@ -1313,7 +1313,11 @@
 			y: -25.0d
 		}
 		{
-			dependencies: ["3C173357029AB649"]
+			dependencies: [
+				"3C173357029AB649"
+				"0F100B271DD4A689"
+			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.metal_age.copper_diving.desc}"]
 			id: "70FE6706B43FC5FC"
 			optional: true

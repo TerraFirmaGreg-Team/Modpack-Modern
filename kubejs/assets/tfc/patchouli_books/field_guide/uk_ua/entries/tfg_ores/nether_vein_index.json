@@ -19,7 +19,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/nether_vein_index#beneath_phosphate)Ортофосфат кальцію, Апатит...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_nickel)Пентландит, Гранетит...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_manganese)Піролюзит, Гроссуляр...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_realgar)Реальгар, Антимоніт, Кіновар$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_redstone)Редстоун, Кіновар...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_copper_native)Самородна мідь, Малахіт$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_gold_rich)Самородне золото, Магнетит...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_gold)Самородне золото, Пірит...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_salt)Сіль, Кам’яна сіль, Трона$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_sulfur)Сірка, Пірит, Антимоніт$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_lithium)Сподумен, Літій, Кам’яна сіль$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_zinc)Сфалерит, Галеніт, Сірка$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_copper_tetrahedrite)Тетраедрит, Антимоніт...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_phlogopite)Флогопіт, Сірка, Апатит$()$()",
+      "text": "$(li)$(l:tfg_ores/nether_vein_index#beneath_phosphate)Ортофосфат кальцію, Апатит...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_nickel)Пентландит, Гранетит...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_manganese)Піролюзит, Гроссуляр...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_realgar)Реальгар, Антимоніт, Кіновар$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_redstone)Редстоун, Кіновар...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_copper_native)Самородна мідь, Малахіт$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_gold_rich)Самородне золото, Магнетит...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_gold)Самородне золото, Пірит...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_salt)Сіль, Кам’яна сіль, Трона$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_sulfur)Сірка, Пірит, Антимоніт$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_lithium)Сподумен, Антрацит, Алуніт$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_zinc)Сфалерит, Галеніт, Сірка$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_copper_tetrahedrite)Тетраедрит, Антимоніт...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_phlogopite)Флогопіт, Сірка, Апатит$()$()",
       "type": "patchouli:text"
     },
     {
@@ -1573,7 +1573,7 @@
     {
       "Type": "patchouli:text",
       "text": "$(thing)$(t:Ймовірність появи жили на чанк. Менші нижні числа означають більшу поширеність.)Рідкість$(/t)$(): 1/10 чинки$(br)$(thing)$(t:Відсоток блоків у жилі, які є рудами замість каменю. Більший відсоток означає більше руди.)Щільність$(/t)$(): 22%$(br)$(thing)$(t:Форма жили.)Тип$(/t)$(): $(t:Переважно округлої форми) Скупчення жили$(/t)$(br)$(thing)$(t:Рівні Y, між якими може генеруватися жила.)Y$(/t)$(): 0 — 80$(br)$(thing)$(t:Середній діаметр жили.)Розмір$(/t)$(): 25$(br)$(thing)Біоми$(): $(t:Лавові потоки)Лавові пласти$(/t)$(br2)$(thing)Типи каменю$(): Базальт, Мігматит, Піроксеніт",
-      "title": "Сподумен, Літій, Кам’яна сіль",
+      "title": "Сподумен, Антрацит, Алуніт",
       "type": "patchouli:text",
       "anchor": "beneath_lithium"
     },
@@ -1599,10 +1599,10 @@
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Літій",
+      "name": "Антрацит",
       "multiblock": {
         "mapping": {
-          "0": "#forge:ores/lithium"
+          "0": "#forge:ores/anthracite"
         },
         "pattern": [
           [
@@ -1614,15 +1614,15 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 23%$(br)$(thing)Джерело$(): Літію$(br)$(thing)Формула$(): Li",
+      "text": "$(thing)Відсоток$(): 23%$(br)$(thing)Використовується для$(): Палива$(br)$(thing)Формула$(): C",
       "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Кам’яна сіль",
+      "name": "Алуніт",
       "multiblock": {
         "mapping": {
-          "0": "#forge:ores/rock_salt"
+          "0": "#forge:ores/alunite"
         },
         "pattern": [
           [
@@ -1634,7 +1634,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 15%$(br)$(thing)Джерело$(): Калію, Хлору, Добрив$(br)$(thing)Формула$(): KCl",
+      "text": "$(thing)Відсоток$(): 15%$(br)$(thing)Джерело$(): Калію, Алюмінію$(br)$(thing)Формула$(): KAl₃Si₂H₆O₁₄",
       "type": "patchouli:multiblock"
     },
     {

@@ -32,12 +32,6 @@ function registerTFGAsphaltRoadRecipes(event) {
 	tarSolidify('light_oil', 'gtceu:oil_light', 'tfg:light_oil_tar')
 	tarSolidify('heavy_oil', 'gtceu:oil_heavy', 'tfg:heavy_oil_tar')
 
-	event.recipes.gtceu.macerator('tfg:asphalt/gilsonite_dust')
-		.itemInputs('1x tfg:gilsonite')
-		.itemOutputs('1x #forge:dusts/gilsonite')
-		.duration(100)
-		.EUt(2)
-
 	event.recipes.gtceu.macerator('tfg:asphalt/macerate/tar_to_carbon')
 		.itemInputs('1x #tfg:asphalt_tars')
 		.itemOutputs('1x gtceu:carbon_dust')

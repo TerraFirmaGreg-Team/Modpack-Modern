@@ -14,7 +14,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/moon_vein_index#moon_apatite)アパタイト, リン酸三カルシウム, パイロクロア...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_quartz)クォーツ, ケルタスクオーツ, スモーキークォーツ...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_gold)グリーンサファイア, ボーキサイト, 磁鉄鉱, 自然金$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_desh)デッシュ, チタン鉄鉱, アルミニウム, アーマルコライト$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_sphalerite)デッシュ, 閃亜鉛鉱, 黄鉄鉱$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_monazite)バストネス石, モナザイト, ネオジム, オリビン$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_topaz)ブルートパーズ, トパーズ, 輝銅鉱, 斑銅鉱$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_beryllium)ベリリウム, エメラルド, トリアナイト, オリビン...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_bauxite)ボーキサイト, チタン鉄鉱, アーマルコライト$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_gypsum)ホウ砂, 方解石, 明礬石, 石膏, オリビン$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_molybdenum)モリブデン鉛鉱, パウエル石, 輝水鉛鉱, オリビン$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_garnet)レッドガーネット, イエローガーネット, アメジスト...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_redstone)レッドストーン, ルビー, 辰砂, オリビン$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_tetrahedrite)四面銅鉱, 自然銅, 輝安鉱, 輝銅鉱$()$()",
+      "text": "$(li)$(l:tfg_ores/moon_vein_index#moon_apatite)アパタイト, リン酸三カルシウム, パイロクロア...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_quartz)クォーツ, ケルタスクオーツ, スモーキークォーツ...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_gold)グリーンサファイア, ボーキサイト, 磁鉄鉱, 自然金$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_desh)デッシュ, チタン鉄鉱, アルミニウム...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_sphalerite)デッシュ, 閃亜鉛鉱, 黄鉄鉱$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_monazite)バストネス石, モナザイト, ネオジム, オリビン$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_topaz)ブルートパーズ, トパーズ, 輝銅鉱, 斑銅鉱$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_beryllium)ベリリウム, エメラルド, トリアナイト, オリビン...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_bauxite)ボーキサイト, チタン鉄鉱, Armalcolite$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_gypsum)ホウ砂, 方解石, 明礬石, 石膏, オリビン$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_molybdenum)モリブデン鉛鉱, パウエル石, 輝水鉛鉱, オリビン$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_garnet)レッドガーネット, イエローガーネット, アメジスト...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_redstone)レッドストーン, ルビー, 辰砂, オリビン$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_tetrahedrite)四面銅鉱, 自然銅, 輝安鉱, 輝銅鉱$()$()",
       "type": "patchouli:text"
     },
     {
@@ -306,7 +306,7 @@
     {
       "Type": "patchouli:text",
       "text": "$(thing)$(t:何チャンクごとに鉱脈が生成されるかを示します。数値が小さいほど見つかりやすくなります。)レア度$(/t)$(): 1/230 チャンク$(br)$(thing)$(t:鉱脈の中に含まれている鉱石の密度を割合で示しています。数値が高いほど鉱石量が多くなります。)密度$(/t)$(): 35%$(br)$(thing)$(t:鉱脈の形状です)タイプ$(/t)$(): $(t:主に丸い形状をしています)塊状鉱脈$(/t)$(br)$(thing)$(t:この鉱脈が生成される高さ（Y座標）の範囲を示します。)Y$(/t)$(): 10 — 80$(br)$(thing)$(t:鉱脈の平均的な直径のサイズを示します。)サイズ$(/t)$(): 30$(br)$(thing)$(t:地表から鉱脈までの距離がこの値を超えると、地表に指標となる鉱石が現れなくなります。)表出の最大深度$(/t)$(): 50$(br)$(thing)バイオーム$(): : 不問$(br2)$(thing)岩石の種類$(): デイサイト, 安山岩, 斑れい岩, 玄武岩",
-      "title": "デッシュ, チタン鉄鉱, アルミニウム, アーマルコライト",
+      "title": "デッシュ, チタン鉄鉱, アルミニウム...",
       "type": "patchouli:text",
       "anchor": "moon_desh"
     },
@@ -372,7 +372,7 @@
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "アーマルコライト",
+      "name": "Armalcolite",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/armalcolite"
@@ -756,7 +756,7 @@
     {
       "Type": "patchouli:text",
       "text": "$(thing)$(t:何チャンクごとに鉱脈が生成されるかを示します。数値が小さいほど見つかりやすくなります。)レア度$(/t)$(): 1/200 チャンク$(br)$(thing)$(t:鉱脈の中に含まれている鉱石の密度を割合で示しています。数値が高いほど鉱石量が多くなります。)密度$(/t)$(): 35%$(br)$(thing)$(t:鉱脈の形状です)タイプ$(/t)$(): $(t:主に丸い形状をしています)塊状鉱脈$(/t)$(br)$(thing)$(t:この鉱脈が生成される高さ（Y座標）の範囲を示します。)Y$(/t)$(): 0 — 80$(br)$(thing)$(t:鉱脈の平均的な直径のサイズを示します。)サイズ$(/t)$(): 40$(br)$(thing)$(t:地表から鉱脈までの距離がこの値を超えると、地表に指標となる鉱石が現れなくなります。)表出の最大深度$(/t)$(): 50$(br)$(thing)バイオーム$(): : 不問$(br2)$(thing)岩石の種類$(): ノーライト, 斜長岩, 流紋岩, 玄武岩, 閃緑岩, 響岩",
-      "title": "ボーキサイト, チタン鉄鉱, アーマルコライト",
+      "title": "ボーキサイト, チタン鉄鉱, Armalcolite",
       "type": "patchouli:text",
       "anchor": "moon_bauxite"
     },
@@ -802,7 +802,7 @@
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "アーマルコライト",
+      "name": "Armalcolite",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/armalcolite"

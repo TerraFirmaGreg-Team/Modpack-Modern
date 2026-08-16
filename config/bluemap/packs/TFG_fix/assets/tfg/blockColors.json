@@ -30,5 +30,13 @@
   "tfg:asphalt_road_slab[color=brown]": "#664C33",
   "tfg:asphalt_road_slab[color=green]": "#667F33",
   "tfg:asphalt_road_slab[color=red]": "#993333",
-  "tfg:asphalt_road_slab[color=black]": "#191919"
+  "tfg:asphalt_road_slab[color=black]": "#191919",
+  "tfg:grass/alfisol": "@grass",
+  "tfg:grass/mollisol": "@grass",
+  "tfg:grass/oxisol": "@grass",
+  "tfg:grass/podzol": "@grass",
+  "tfg:clay_grass/alfisol": "@grass",
+  "tfg:clay_grass/mollisol": "@grass",
+  "tfg:clay_grass/oxisol": "@grass",
+  "tfg:clay_grass/podzol": "@grass"
 }

@@ -1,0 +1,33 @@
+{
+	"credit": "Made by @vexxel with Blockbench - https://github.com/vexxel",
+	"textures": {
+		"2": "firmalife:block/oven/bottom/oven_fire"
+	},
+	"elements": [
+		{
+			"name": "fire1",
+			"from": [9, 2, 1],
+			"to": [9, 12, 13],
+			"rotation": {"angle": 45, "axis": "y", "origin": [8, 0, 8]},
+			"faces": {
+				"east": {"uv": [2, 0, 14, 10], "texture": "#2"},
+				"west": {"uv": [2, 0, 14, 10], "texture": "#2"}
+			}
+		},
+		{
+			"name": "fire2",
+			"from": [3, 2, 7],
+			"to": [15, 12, 7],
+			"rotation": {"angle": 45, "axis": "y", "origin": [8, 0, 8]},
+			"faces": {
+				"north": {"uv": [2, 0, 14, 10], "texture": "#2"},
+				"south": {"uv": [2, 0, 14, 10], "texture": "#2"}
+			}
+		}
+	],
+	"display": {
+		"head": {
+			"translation": [0, 10.5, 0]
+		}
+	}
+}

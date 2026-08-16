@@ -55,10 +55,10 @@ function registerTFGChipboardRecipes(event) {
 		'minecraft:block/slime_block', 'tfc:block/glue_block', 'minecraft:entity.slime.squish')
 		.id('tfg:stomping/slime_ball')
 
-	event.smelting('tfc:glue', 'minecraft:magma_cream')
-		.id('tfg:smelting/magma_cream_to_glue')
+	event.smelting('minecraft:slime_ball', 'minecraft:magma_cream')
+		.id('tfg:smelting/magma_cream_to_slime')
 		
-	event.recipes.firmalife.stomping('tfc:glue', 'minecraft:magma_cream', 
+	event.recipes.firmalife.stomping('minecraft:slime_ball', 'minecraft:magma_cream', 
 		'minecraft:block/slime_block', 'tfc:block/glue_block', 'minecraft:entity.slime.squish')
 		.id('tfg:stomping/magma_cream')
 
@@ -170,8 +170,15 @@ function registerTFGChipboardRecipes(event) {
 		.EUt(GTValues.VA[GTValues.ULV])
 
 	event.recipes.gtceu.assembler('tfg:resin_circuit_assembler')
-		.itemInputs('gtceu:wood_plate', '2x gtceu:sticky_resin')
+		.itemInputs('gtceu:wood_plate')
+		.inputFluids(Fluid.of('gtceu:glue', 200))
 		.itemOutputs('gtceu:resin_circuit_board')
 		.duration(20 * 10)
+		.circuit(3)
 		.EUt(GTValues.VA[GTValues.ULV])
+
+	global.modifyRecipe(event, "gtceu:assembler/basic_circuit_board", {
+        newId: "tfg:basic_circuit_board",
+        circuit: 1
+    })
 }

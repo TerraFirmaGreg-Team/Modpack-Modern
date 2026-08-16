@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "In Firmalife, there are a number of small plants you can collect and grow on your own, which have cooking properties. They can all be found in the wild, and once harvested, may be cultivated in a $(l:firmalife/greenhouse)Greenhouse$(), in which they consume 20 points of N, P, and K."
+			"text": "In Firmalife gibt es eine Menge an kleinen Pflanzen, die Sie sammeln und selber anbauen können. Jede davon hat verschiedene Kocheigenschaften. Jede Pflanze kann in der freien Natur gefunden werden. Ist die Pflanze einst geerntet, kann sie möglicherweise in einem $(I:firmalife/greenhouse)Gewächshaus$(), in dem sie 20 Einheiten an N, P und K verbrauchen, angepflanzt werden.  "
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -39,7 +39,7 @@
 				}
 			],
 			"name": "Basilikum",
-			"text": "$(thing)Wild Basil$() grows between 12 and 25C, and 300 to 500mm of rainfall.",
+			"text": "$(thing)Wild Basil$() wächst zwischen 12 °C und 25 °C und benötigt 300 bis 500 mm an durchschnittlichem Niederschlag. ",
 			"enable_visualize": false
 		},
 		{
@@ -106,7 +106,7 @@
 					}
 				}
 			],
-			"name": "Cardamom",
+			"name": "Kardamom",
 			"text": "$(thing)Wild Cardamom$() grows between 18 and 30C, and 350 to 500mm of rainfall.",
 			"enable_visualize": false
 		},
@@ -140,7 +140,7 @@
 					}
 				}
 			],
-			"name": "Cilantro",
+			"name": "Koriander",
 			"text": "$(thing)Wild Cilantro$() grows between 5 and 15C, and 0 to 150mm of rainfall.",
 			"enable_visualize": false
 		},

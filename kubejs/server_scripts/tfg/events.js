@@ -12,6 +12,11 @@ TFGServerEvents.dimensionalPowerConsumption(event => {
     event.add("ad_astra:venus_orbit", 200000);
 });
 
+PlayerEvents.loggedIn(event => {
+	event.player.tell(Text.translate("tfg.clientmessage.welcome.1"));
+	event.player.tell(Text.translate("tfg.clientmessage.welcome.2"));
+})
+
 // Vase Sounds
 global.MINECRAFT_DYE_NAMES.forEach(color => {
 	BlockEvents.rightClicked(event => {

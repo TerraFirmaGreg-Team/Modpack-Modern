@@ -1,3 +1,18 @@
 {
-  "item.framedblocks.framed_screwdriver": "Įrėmintas atsuktuvas"
+  "desc.framedblocks.blueprint_none": "Joks",
+  "item.framedblocks.framed_screwdriver": "Įrėmintas atsuktuvas",
+  "msg.framedblocks.powered_saw.status.ready": "Pasiruošęs",
+  "tooltip.framedblocks.one_way_window.dir.down": "Žemyn",
+  "tooltip.framedblocks.one_way_window.dir.east": "Rytai",
+  "tooltip.framedblocks.one_way_window.dir.north": "Šiaurė",
+  "tooltip.framedblocks.one_way_window.dir.south": "Pietūs",
+  "tooltip.framedblocks.one_way_window.dir.up": "Į viršų",
+  "tooltip.framedblocks.one_way_window.dir.west": "Vakarai",
+  "tooltip.framedblocks.one_way_window.face.down": "Žemyn",
+  "tooltip.framedblocks.one_way_window.face.east": "Rytai",
+  "tooltip.framedblocks.one_way_window.face.none": "Joks",
+  "tooltip.framedblocks.one_way_window.face.north": "Šiaurė",
+  "tooltip.framedblocks.one_way_window.face.south": "Pietūs",
+  "tooltip.framedblocks.one_way_window.face.up": "Į viršų",
+  "tooltip.framedblocks.one_way_window.face.west": "Vakarai"
 }

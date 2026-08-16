@@ -130,7 +130,7 @@ function registerTACZGunRecipes(event){
 		.duration(120)
 	event.recipes.gtceu.assembler('tfg_tacz:ca_flywheel_mg')
 		.itemInputs('gtceu:steel_normal_fluid_pipe', '10x #forge:ingots/aluminium', '6x #forge:ingots/black_steel', 
-					'6x #forge:plates/brass', 'create:steam_engine', '3x gtceu:steel_tiny_fluid_pipe', 
+					'6x #forge:plates/brass', 'create:precision_mechanism', '3x gtceu:steel_tiny_fluid_pipe', 
 					'2x gtceu:treated_wood_planks','20x #forge:screws/black_steel', '2x tfg:advanced_clockwork_mechanism')
 		.inputFluids(Fluid.of('gtceu:soldering_alloy', 1008))
 		.itemOutputs(Item.of('tacz:modern_kinetic_gun', 
@@ -237,7 +237,7 @@ function registerTACZGunRecipes(event){
 	event.recipes.gtceu.assembler('tfg_tacz:ca_cannon')
 		.itemInputs('2x gtceu:tungsten_steel_large_fluid_pipe', '2x gtceu:tungsten_steel_normal_fluid_pipe', '10x #forge:ingots/titanium',
 					'4x #forge:ingots/tungsten', '10x #forge:plates/brass', 'create:gantry_shaft',
-					'4x gtceu:treated_wood_planks', '30x #forge:screws/tungsten', '3x tfg:advanced_clockwork_mechanism')
+					'4x gtceu:treated_wood_planks', '30x #forge:screws/tungsten', '3x tfg:certus_mechanism')
 		.inputFluids(Fluid.of('gtceu:soldering_alloy', 3024))
 		.itemOutputs(Item.of('tacz:modern_kinetic_gun', 
 							 '{GunCurrentAmmoCount:0,GunFireMode:"SEMI",GunId:"create_armorer:cannon_40mm_salamander",HasBulletInBarrel:1b}'))

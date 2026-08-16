@@ -86,6 +86,22 @@
 				},
 				{
 					"type": "minecraft:item",
+					"name": "tfc:lamp_glass",
+					"weight": 100,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 6,
+								"min": 3
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
 					"name": "minecraft:arrow",
 					"weight": 100,
 					"functions": [
@@ -585,6 +601,39 @@
 						}
 					],
 					"weight": 50
+				},
+				{
+					"type": "minecraft:item",
+					"name": "exposure:photograph",
+					"weight": 3,
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{Texture:\"exposure:textures/exposure/mineshaft/tunnel.png\"}"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "exposure:photograph",
+					"weight": 3,
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{Texture:\"exposure:textures/exposure/mineshaft/skeleton.png\"}"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "exposure:photograph",
+					"weight": 3,
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{Texture:\"exposure:textures/exposure/mineshaft/skeleton_smirk.png\"}"
+						}
+					]
 				}
 			],
 			"rolls": {

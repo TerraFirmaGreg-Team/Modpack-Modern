@@ -1,0 +1,47 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "block/block",
+	"textures": {
+		"0": "tfc:block/plant/sea_palm/sea_palm",
+		"1": "tfc:block/plant/sea_palm/sea_palm_top",
+		"particle": "tfc:block/plant/sea_palm/sea_palm"
+	},
+	"elements": [
+		{
+			"name": "frond",
+			"from": [2, 2, 2],
+			"to": [14, 13, 14],
+			"faces": {
+				"north": {"uv": [0, 0, 12, 11], "texture": "#0"},
+				"east": {"uv": [3, 0, 15, 11], "texture": "#0"},
+				"south": {"uv": [2, 0, 14, 11], "texture": "#0"},
+				"west": {"uv": [4, 0, 16, 11], "texture": "#0"},
+				"up": {"uv": [2, 1, 14, 13], "texture": "#1"}
+			}
+		},
+		{
+			"name": "frondunder",
+			"from": [14, 13, 14],
+			"to": [2, 2, 2],
+			"faces": {
+				"north": {"uv": [0, 0, 12, 11], "rotation": 180, "texture": "#0"},
+				"east": {"uv": [2, 0, 14, 11], "rotation": 180, "texture": "#0"},
+				"south": {"uv": [2, 0, 14, 11], "rotation": 180, "texture": "#0"},
+				"west": {"uv": [2, 0, 14, 11], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [2, 2, 14, 14], "rotation": 180, "texture": "#1"}
+			}
+		},
+		{
+			"name": "stalk",
+			"from": [7, 0, 7],
+			"to": [9, 13, 9],
+			"faces": {
+				"north": {"uv": [7, 3, 9, 16], "texture": "#1"},
+				"east": {"uv": [7, 3, 9, 16], "texture": "#1"},
+				"south": {"uv": [7, 3, 9, 16], "texture": "#1"},
+				"west": {"uv": [7, 3, 9, 16], "texture": "#1"},
+				"down": {"uv": [7, 5, 9, 7], "texture": "#1"}
+			}
+		}
+	]
+}

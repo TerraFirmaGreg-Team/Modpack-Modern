@@ -1,5 +1,5 @@
 {
-	"name": "Mob Effect Glossary",
+	"name": "Глоссарий эффектов живых существ",
 	"category": "tfc:tfg_tips",
 	"icon": "minecraft:splash_potion",
 	"read_by_default": true,
@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "index",
-			"text": "This chapter is dedicated to describing custom mob effects in $(bold)$(#ff0fb7)TerraFirma$()$()$(bold)$(#595959)Greg$()$().$(li)$(bold)$(9)$(l:tfg_tips/mob_effects_glossary#cooling)Cooling$()$(li)$(bold)$(9)$(l:tfg_tips/mob_effects_glossary#warming)Warming$()$(li)$(bold)$(9)$(l:tfg_tips/mob_effects_glossary#quenched)Quenched$()$(li)$(bold)$(9)$(l:tfg_tips/mob_effects_glossary#cure_parasites)Cure Parasites$()$(li)$(bold)$(9)$(l:tfg_tips/mob_effects_glossary#cure_toxins)Detoxify$()$(li)$(bold)$(9)$(l:tfg_tips/mob_effects_glossary#cure_microplastics)Filter Microplastics$()$(li)$(bold)$(c)$(l:tfg_tips/mob_effects_glossary#freezing)Freezing$()$(li)$(bold)$(c)$(l:tfg_tips/mob_effects_glossary#blazing)Blazing$()$(li)$(bold)$(c)$(l:tfg_tips/mob_effects_glossary#instant_radiation)Instant Radiation$()$(li)$(bold)$(c)$(l:tfg_tips/mob_effects_glossary#final_moments)Final Moments$()"
+			"text": "Этот раздел посвящён описанию личных эффектов существ в $(bold)$(#ff0fb7)TerraFirma$()$()$(bold)$(#595959)Greg$()$().$(li)$(bold)$(9)$(l:tfg_tips/mob_effects_glossary#cooling)Охлаждение$()$(li)$(bold)$(9)$(l:tfg_tips/mob_effects_glossary#warming)Согревание$()$(li)$(bold)$(9)$(l:tfg_tips/mob_effects_glossary#quenched)Утоление$()$(li)$(bold)$(9)$(l:tfg_tips/mob_effects_glossary#cure_parasites)Лечение от паразитов$()$(li)$(bold)$(9)$(l:tfg_tips/mob_effects_glossary#cure_toxins)Детоксикация$()$(li)$(bold)$(9)$(l:tfg_tips/mob_effects_glossary#cure_microplastics)Фильтрация микропластика$()$(li)$(bold)$(c)$(l:tfg_tips/mob_effects_glossary#freezing)Замерзание$()$(li)$(bold)$(c)$(l:tfg_tips/mob_effects_glossary#blazing)Обжигание$()$(li)$(bold)$(c)$(l:tfg_tips/mob_effects_glossary#instant_radiation)Мгновенная радиация$()$(li)$(bold)$(c)$(l:tfg_tips/mob_effects_glossary#final_moments)Последние минуты$()"
 		},
 		{
 			"type": "patchouli:empty"
@@ -15,52 +15,52 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "cooling",
-			"text": "$(bold)$(9)Cooling$()$(li)While active this effect continually $(l:beneath/cooling)Cools$() the player down to a minimum of $(n)5°C$()"
+			"text": "$(bold)$(9)Охлаждение$()$(li)Пока этот эффект активен, он непрерывно $(l:beneath/cooling)Охлаждает$() вас до минимальной температуры $(n)5°C$()"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "warming",
-			"text": "$(bold)$(9)Warming$()$(li)While active this effect continually $(l:beneath/cooling)Warms$() the player up to a maximum of $(n)25°C$()"
+			"text": "$(bold)$(9)Согревание$()$(li)Пока этот эффект активен, он непрерывно $(l:beneath/cooling)Согревает$() вас до максимальной температуры $(n)25°C$()"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "quenched",
-			"text": "$(bold)$(9)Quenched$()$(li)While active this effect prevents the natural decay of $(l:getting_started/food_and_water#thirst)Thirst$(). However, it does not prevent the Thirsty effect from decreasing your meter.$()"
+			"text": "$(bold)$(9)Утоление$()$(li)Пока этот эффект активен, он предотвращает естественное снижение $(l:getting_started/food_and_water#thirst)Жажды$(). Однако он не предотвращает уменьшение шкалы от эффекта \"Жажда\".$()"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "cure_parasites",
-			"text": "$(bold)$(9)Cure Parasites$()$(li)While active this effect gradually removes $(l:getting_started/food_and_water#parasites)Parasite Contamination$() at a rate of about 1% every 10s at base level.$()"
+			"text": "$(bold)$(9)Уничтожение паразитов$()$(li)Пока этот эффект активен, он постепенно выводит $(l:getting_started/food_and_water#parasites)Паразитов$() со скоростью примерно 1% каждые 10 секунд на базовом уровне.$()"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "cure_toxins",
-			"text": "$(bold)$(9)Detoxify$()$(li)While active this effect gradually removes $(l:getting_started/food_and_water#toxins)Toxin Contamination$() at a rate of about 1% every 10s at base level.$()"
+			"text": "$(bold)$(9)Детоксикация$()$(li)Пока этот эффект активен, он постепенно выводит $(l:getting_started/food_and_water#toxins)Токсины$() со скоростью примерно 1% каждые 10 секунд на базовом уровне.$()"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "cure_microplastics",
-			"text": "$(bold)$(9)Filter Microplastics$()$(li)While active this effect gradually removes $(l:getting_started/food_and_water#microplastics)Microplastic Contamination$() at a rate of about 1% every 10s at base level.$()"
+			"text": "$(bold)$(9)Фильтрация микропластика$()$(li)Пока этот эффект активен, он постепенно выводит $(l:getting_started/food_and_water#microplastics)Микропластик$() со скоростью примерно 1% каждые 10 секунд на базовом уровне.$()"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "freezing",
-			"text": "$(bold)$(c)Freezing$()$(li)While active this effect continually $(l:beneath/cooling)Cools$() the player down to a dangerously-low minimum of $(n)-20°C$(). Protective equipment is recommended to survive this condition."
+			"text": "$(bold)$(c)Замерзание$()$(li)Пока этот эффект активен, он непрерывно $(l:beneath/cooling)Охлаждает$() вас до опасно низкой минимальной температуры $(n)-20°C$(). Чтобы выжить в таких условиях, рекомендуется использовать защитное снаряжение."
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "blazing",
-			"text": "$(bold)$(c)Blazing$()$(li)While active this effect continually $(l:beneath/cooling)Warms$() the player up to a dangerously-high maximum of $(n)60°C$(). Protective equipment is recommended to survive this condition."
+			"text": "$(bold)$(c)Обжигание$()$(li)Пока этот эффект активен, он непрерывно $(l:beneath/cooling)Согревает$() вас до опасно высокой максимальной температуры $(n)60°C$(). Чтобы выжить в таких условиях, рекомендуется использовать защитное снаряжение."
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "instant_radiation",
-			"text": "$(bold)$(c)Instant Radiation$()$(li)This effect quickly damages the player with $(l:tfg_ores/hazards#Radioactive_materials)Radiation Damage$()"
+			"text": "$(bold)$(c)Мгновенная радиация$()$(li)Этот эффект быстро наносит вам $(l:tfg_ores/hazards#Radioactive_materials)Радиационный урон$()"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "final_moments",
-			"text": "$(bold)$(c)Final Moments$()$(li)This effect starts a timer that counts down your last few minutes. When the clock ends you die."
+			"text": "$(bold)$(c)Последние минуты$()$(li)Этот эффект запускает таймер, отсчитывающий ваши последние несколько минут. Когда время истечёт, вы умрёте."
 		},
 		{
 			"type": "patchouli:relations",

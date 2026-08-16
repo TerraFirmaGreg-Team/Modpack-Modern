@@ -482,7 +482,15 @@ function processBars(event, material) {
 function processBuzzsawBlade(event, material) {
 	const buzzsawBladeItem = ChemicalHelper.get(TagPrefix.toolHeadBuzzSaw, material, 1)
 	const doublePlateItem = ChemicalHelper.get(TagPrefix.plateDouble, material, 1)
-	if (buzzsawBladeItem.isEmpty() || doublePlateItem.isEmpty())
+	if (buzzsawBladeItem.isEmpty())
+		return;
+
+	TagPrefix.toolHeadBuzzSaw.modifyMaterialAmount(material, 2);
+	addMaterialRecycling(event, buzzsawBladeItem, material, 'buzz_saw_blade', TagPrefix.toolHeadBuzzSaw);
+
+	event.remove({ id: `gtceu:shaped/buzzsaw_blade_${materialName}` })
+
+	if (doublePlateItem.isEmpty())
 		return;
 
 	const tfcProperty = material.getProperty(TFGPropertyKey.TFC_PROPERTY);
@@ -502,11 +510,6 @@ function processBuzzsawBlade(event, material) {
 			.processingTime(material.getMass() * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
 			.id(`tfg:vi/lathe/${materialName}_buzzsaw`)
 	}
-
-	TagPrefix.toolHeadBuzzSaw.modifyMaterialAmount(material, 2);
-	addMaterialRecycling(event, buzzsawBladeItem, material, 'buzz_saw_blade', TagPrefix.toolHeadBuzzSaw);
-
-	event.remove({ id: `gtceu:shaped/buzzsaw_blade_${materialName}` })
 }
 
 

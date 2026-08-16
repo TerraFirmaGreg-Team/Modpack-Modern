@@ -1,6 +1,6 @@
 {
-  "fluid": "gtceu:steam",
-  "burnTime": 5,
-  "superHeat": false,
-  "amountConsumedPerTick" : 640
+	"fluid": "gtceu:steam",
+	"burnTime": 20,
+	"superHeat": false,
+	"amountConsumedPerTick": 600
 }
