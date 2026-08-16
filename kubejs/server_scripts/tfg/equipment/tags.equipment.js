@@ -35,7 +35,9 @@ function registerTFGEquipmentItemTags(event) {
 		"black_bear",
 		"grizzly_bear",
 		"direwolf",
-		"lion"
+		"lion",
+		"phantom_silk",
+		"red_elk"
 	];
 	const parts = [
 		"hat", "shirt", "pants", "boots"
