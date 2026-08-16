@@ -1660,6 +1660,12 @@
 					optional_task: true
 					type: "item"
 				}
+				{
+					id: "65DA42FD95854FB4"
+					item: "tfg:generators/titanium_combustion_engine"
+					optional_task: true
+					type: "item"
+				}
 			]
 			title: "{quests.high_voltage.titanium_greate.title}"
 			x: 20.5d

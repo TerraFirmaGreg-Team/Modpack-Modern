@@ -8,19 +8,19 @@ function registerTFGKineticRecipes(event) {
 		'CEC'
 	], {
 		A: 'gtceu:lv_machine_casing',
-		B: '#forge:bolts/steel',
+		B: '#forge:bolts/black_steel',
 		C: '#forge:small_fluid_pipes/tin_alloy',
 		D: '#forge:small_gears/brass',
 		E: '#forge:tools/wrenches'
 	}).id('tfg:shaped/steel_combustion_engine');
 
 	event.recipes.gtceu.assembler('tfg:steel_combustion_engine')
-		.itemInputs('gtceu:lv_machine_casing', '#forge:small_gears/brass', '4x #forge:bolts/steel', '2x #forge:small_fluid_pipes/tin_alloy')
+		.itemInputs('gtceu:lv_machine_casing', '#forge:small_gears/brass', '4x #forge:bolts/black_steel', '2x #forge:small_fluid_pipes/tin_alloy')
 		.itemOutputs('tfg:generators/steel_combustion_engine')
 		.duration(100)
 		.EUt(7)
 
-	TFGHelpers.registerMaterialInfo('tfg:generators/steel_combustion_engine', [GTMaterials.Steel, 8.5, GTMaterials.TinAlloy, 2, GTMaterials.Brass, 1]);
+	TFGHelpers.registerMaterialInfo('tfg:generators/steel_combustion_engine', [GTMaterials.Steel, 8, GTMaterials.TinAlloy, 2, GTMaterials.Brass, 1, GTMaterials.BlackSteel, 0.5]);
 
 
 	event.shaped('tfg:generators/aluminium_combustion_engine', [
