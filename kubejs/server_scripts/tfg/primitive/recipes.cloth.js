@@ -2,16 +2,10 @@
 
 function registerTFGClothRecipes(event) {
 
-	//Cloth & String
+	// Phantom Silk
 	event.recipes.gtceu.wiremill('tfg:wiremill/phantom_thread')
 		.itemInputs('1x minecraft:phantom_membrane')
 		.itemOutputs('16x tfg:phantom_thread')
-		.duration(100)
-		.EUt(GTValues.VA[GTValues.ULV])
-
-	event.recipes.gtceu.wiremill('tfg:wiremill/polycaprolactam_string')
-		.itemInputs(ChemicalHelper.get(TagPrefix.ingot, GTMaterials.Polycaprolactam, 1))
-		.itemOutputs('32x tfg:polycaprolactam_string')
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.ULV])
 
@@ -22,6 +16,39 @@ function registerTFGClothRecipes(event) {
 		.circuit(3)
 		.EUt(GTValues.VA[GTValues.ULV])
 
+	event.recipes.tfc.loom(
+		'1x tfg:phantom_silk',
+		'16x tfg:phantom_thread',
+		8,
+		'tfg:block/phantom_silk_block'
+	)
+	
+	event.recipes.tfc.damage_inputs_shapeless_crafting(
+		event.shapeless('16x tfg:phantom_thread', [
+			'minecraft:phantom_membrane',
+			'#tfg:tools/spindles'
+		]).id('tfg:shapeless/phantom_thread'))
+
+	event.recipes.tfc.loom(
+		'8x tfg:phantom_silk_block',
+		'4x tfg:phantom_silk',
+		4,
+		'tfg:block/phantom_silk_block'
+	)
+
+	event.recipes.gtceu.assembler('tfg:assembler/phantom_silk_block')
+		.itemInputs('tfg:phantom_silk')
+		.circuit(16)
+		.itemOutputs('2x tfg:phantom_silk_block')
+		.duration(100)
+		.EUt(4)
+
+	// Nylon
+	event.recipes.gtceu.wiremill('tfg:wiremill/polycaprolactam_string')
+		.itemInputs(ChemicalHelper.get(TagPrefix.ingot, GTMaterials.Polycaprolactam, 1))
+		.itemOutputs('32x tfg:polycaprolactam_string')
+		.duration(100)
+		.EUt(GTValues.VA[GTValues.ULV])
 	event.recipes.gtceu.assembler('tfg:assembler/polycaprolactam_fabric')
 		.itemInputs('16x tfg:polycaprolactam_string')
 		.itemOutputs('1x tfg:polycaprolactam_fabric')
@@ -36,13 +63,6 @@ function registerTFGClothRecipes(event) {
 		.duration(80)
 		.EUt(GTValues.VA[GTValues.ULV])
 		.category(GTRecipeCategories.CHEM_DYES)
-
-	event.recipes.tfc.loom(
-		'1x tfg:phantom_silk',
-		'16x tfg:phantom_thread',
-		8,
-		'tfg:block/phantom_silk_block'
-	)
 
 	event.recipes.tfc.loom(
 		'1x tfg:polycaprolactam_fabric',
@@ -64,36 +84,27 @@ function registerTFGClothRecipes(event) {
 		]).id('tfg:shapeless/wool_yarn')
 	)
 
-	event.recipes.tfc.damage_inputs_shapeless_crafting(
-		event.shapeless('16x tfg:phantom_thread', [
-			'minecraft:phantom_membrane',
-			'#tfg:tools/spindles'
-		]).id('tfg:shapeless/phantom_thread'))
+	event.recipes.tfc.loom(
+		'8x tfg:polycaprolactam_block',
+		'4x tfg:polycaprolactam_fabric',
+		4,
+		'tfg:block/polycaprolactam_fabric_block'
+	)
 
-		// Wool Yarn
+	event.recipes.gtceu.assembler('tfg:assembler/polycaprolactam_block')
+		.itemInputs('tfg:polycaprolactam_fabric')
+		.circuit(16)
+		.itemOutputs('2x tfg:polycaprolactam_block')
+		.duration(100)
+		.EUt(4)
+
+	// Wool
 	event.recipes.gtceu.wiremill('tfg:tfc/wool_yarn')
 		.itemInputs('tfc:wool')
 		.itemOutputs('8x tfc:wool_yarn')
 		.duration(100)
 		.EUt(4)
 
-	// Burlap Cloth
-	event.recipes.gtceu.assembler('tfg:tfc/burlap_cloth')
-		.itemInputs('12x tfc:jute_fiber')
-		.circuit(0)
-		.itemOutputs('tfc:burlap_cloth')
-		.duration(100)
-		.EUt(4)
-
-	// Silk Cloth
-	event.recipes.gtceu.assembler('tfg:tfc/silk_cloth')
-		.itemInputs('24x minecraft:string')
-		.circuit(0)
-		.itemOutputs('tfc:silk_cloth')
-		.duration(100)
-		.EUt(4)
-
-	// Wool Cloth
 	event.recipes.gtceu.assembler('tfg:tfc/wool_cloth')
 		.itemInputs('16x tfc:wool_yarn')
 		.circuit(0)
@@ -101,28 +112,132 @@ function registerTFGClothRecipes(event) {
 		.duration(100)
 		.EUt(4)
 
-	// Cloths to Wool
 	event.recipes.gtceu.assembler('tfg:tfc/cloth_to_wool')
-		.itemInputs('4x #tfc:sewing_light_cloth')
-		.itemOutputs('8x minecraft:white_wool')
+		.itemInputs('tfc:wool_cloth')
+		.itemOutputs('2x minecraft:white_wool')
 		.circuit(16)
 		.duration(100)
 		.EUt(4)
-	
 
-	// Wool Yarn
-	event.recipes.gtceu.macerator('macerate_wool')
-		.itemInputs('#minecraft:wool')
-		.itemOutputs('tfc:wool_yarn')
-		.chancedOutput('tfc:wool_yarn', 9000, 0)
-		.chancedOutput('tfc:wool_yarn', 5000, 0)
-		.chancedOutput('tfc:wool_yarn', 2000, 0)
-		.duration(200)
-		.EUt(2)
+	// Linen
+	event.recipes.tfc.loom(
+		'1x tfg:linen_cloth',
+		'16x tfg:linen_thread',
+		8,
+		'tfc_textile:block/linen'
+	)
 
-	// Jute Fiber
+	event.recipes.gtceu.assembler('tfg:assembler/linen_cloth')
+		.itemInputs('16x tfg:linen_thread')
+		.circuit(10)
+		.itemOutputs('tfg:linen_cloth')
+		.duration(100)
+		.EUt(4)
+
+	event.recipes.tfc.loom(
+		'8x tfg:linen_block',
+		'4x tfg:linen_cloth',
+		4,
+		'tfc_textile:block/linen'
+	)
+
+	event.recipes.gtceu.assembler('tfg:assembler/linen_block')
+		.itemInputs('tfg:linen_cloth')
+		.circuit(16)
+		.itemOutputs('2x tfg:linen_block')
+		.duration(100)
+		.EUt(4)
+
+	// Burlap 
+	event.recipes.gtceu.assembler('tfg:tfc/burlap_cloth')
+		.itemInputs('12x tfc:jute_fiber')
+		.circuit(0)
+		.itemOutputs('tfc:burlap_cloth')
+		.duration(100)
+		.EUt(4)
+
 	generateMixerRecipe(event, 'tfc:jute', "#tfg:clean_water 200",
 		'tfc:jute_fiber', null, [], 100, 4, 16, 'tfg:tfc/jute_fiber')
+
+	event.recipes.tfc.loom(
+		'1x tfc:burlap_cloth',
+		'16x tfg:flax_tow',
+		12,
+		'tfc:block/burlap'
+	)
+
+	event.recipes.gtceu.assembler('tfg:assembler/flax_burlap')
+		.itemInputs('16x tfg:flax_tow')
+		.circuit(10)
+		.itemOutputs('tfc:burlap_cloth')
+		.duration(100)
+		.EUt(4)
+
+	event.recipes.tfc.loom(
+		'8x tfg:burlap_block',
+		'4x tfc:burlap_cloth',
+		4,
+		'tfc:block/burlap'
+	)
+
+	event.recipes.gtceu.assembler('tfg:assembler/burlap_block')
+		.itemInputs('tfc:burlap_cloth')
+		.circuit(16)
+		.itemOutputs('2x tfg:burlap_block')
+		.duration(100)
+		.EUt(4)
+
+	// Silk 
+	event.recipes.gtceu.assembler('tfg:tfc/silk_cloth')
+		.itemInputs('24x minecraft:string')
+		.circuit(0)
+		.itemOutputs('tfc:silk_cloth')
+		.duration(100)
+		.EUt(4)
+	
+	event.recipes.tfc.loom(
+		'8x tfg:silk_block',
+		'4x tfc:silk_cloth',
+		4,
+		'tfc:block/silk'
+	)
+
+	event.recipes.gtceu.assembler('tfg:assembler/silk_block')
+		.itemInputs('tfc:silk_cloth')
+		.circuit(16)
+		.itemOutputs('2x tfg:silk_block')
+		.duration(100)
+		.EUt(4)
+
+	// Cotton
+	
+	event.recipes.tfc.loom(
+		'1x tfc_textile:cotton_cloth',
+		'16x tfc_textile:cotton_string',
+		8,
+		'tfc_textile:block/cotton'
+	)
+
+	event.recipes.gtceu.assembler('tfg:assembler/cotton_cloth')
+		.itemInputs('16x tfc_textile:cotton_string')
+		.circuit(10)
+		.itemOutputs('tfc_textile:cotton_cloth')
+		.duration(100)
+		.EUt(4)
+	
+	event.recipes.tfc.loom(
+		'8x tfg:cotton_block',
+		'4x tfc_textile:cotton_cloth',
+		4,
+		'tfc_textile:block/cotton'
+	)
+
+	event.recipes.gtceu.assembler('tfg:assembler/cotton_block')
+		.itemInputs('tfc_textile:cotton_cloth')
+		.circuit(16)
+		.itemOutputs('2x tfg:cotton_block')
+		.duration(100)
+		.EUt(4)
 
 
 	//#region Spindle Recipes
@@ -286,50 +401,6 @@ function registerTFGClothRecipes(event) {
 		.duration(80)
 		.EUt(GTValues.VA[GTValues.LV])
 	//#endregion
-	//#region flax looming
-	event.recipes.tfc.loom(
-		'1x tfg:linen_cloth',
-		'16x tfg:linen_thread',
-		8,
-		'tfc:block/burlap'
-	)
-	
-	event.recipes.tfc.loom(
-		'1x tfc:burlap_cloth',
-		'16x tfg:flax_tow',
-		12,
-		'tfc:block/burlap'
-	)
-	
-	// light cloth to wool
-	event.recipes.tfc.loom(
-		'8x minecraft:white_wool',
-		'4x tfg:linen_cloth',
-		4,
-		'minecraft:block/white_wool'
-	)
-	
-	event.recipes.tfc.loom(
-		'8x minecraft:white_wool',
-		'4x tfc:silk_cloth',
-		4,
-		'minecraft:block/white_wool'
-	)
-
-	event.recipes.gtceu.assembler('tfg:assembler/linen_cloth')
-		.itemInputs('16x tfg:linen_thread')
-		.circuit(10)
-		.itemOutputs('tfg:linen_cloth')
-		.duration(100)
-		.EUt(4)
-
-	event.recipes.gtceu.assembler('tfg:assembler/flax_burlap')
-		.itemInputs('16x tfg:flax_tow')
-		.circuit(10)
-		.itemOutputs('tfc:burlap_cloth')
-		.duration(100)
-		.EUt(4)
-	//#endregion
 
 	//#region Oil Palm
 	global.generateCuttingFoodRecipes(event, 'tfg:food/oil_palm', 'tfg:oil_palm_paste', false, false, true, true, true);
@@ -353,5 +424,8 @@ function registerTFGClothRecipes(event) {
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.ULV]);
 	//#endregion
-	
+
+	global.MINECRAFT_DYE_NAMES.forEach(dye => {
+		event.replaceInput({ id: `tfc:barrel/dye/${dye}_wool` }, 'minecraft:white_wool', '#forge:wools/white')
+	})
 }

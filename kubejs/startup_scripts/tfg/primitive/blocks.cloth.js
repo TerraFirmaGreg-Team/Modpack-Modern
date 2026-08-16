@@ -1,0 +1,58 @@
+"use strict";
+
+function registerTFGClothBlocks(event) {
+
+	event.create('tfg:burlap_block')
+		.tagBlock('minecraft:mineable/hoe')
+		.tagItem('minecraft:wool')
+		.tagItem('forge:wools/white')
+		.soundType('wool')
+		.mapColor('terracotta_white')
+		.hardness(0.5)
+		.textureAll('tfc:block/burlap')
+
+	event.create('tfg:silk_block')
+		.tagBlock('minecraft:mineable/hoe')
+		.tagItem('minecraft:wool')
+		.tagItem('forge:wools/white')
+		.soundType('wool')
+		.mapColor('terracotta_white')
+		.hardness(0.5)
+		.textureAll('tfc:block/silk')
+
+	event.create('tfg:phantom_silk_block')
+		.tagBlock('minecraft:mineable/hoe')
+		.tagItem('minecraft:wool')
+		.tagItem('forge:wools/black')
+		.soundType('wool')
+		.mapColor('terracotta_white')
+		.hardness(0.5)
+		.textureAll('tfg:block/phantom_silk_block')
+
+	event.create('tfg:polycaprolactam_block')
+		.tagBlock('minecraft:mineable/hoe')
+		.tagItem('minecraft:wool')
+		.tagItem('forge:wools/white')
+		.soundType('wool')
+		.mapColor('color_black')
+		.hardness(0.5)
+		.textureAll('tfg:block/polycaprolactam_fabric_block')
+
+	event.create('tfg:linen_block')
+		.tagBlock('minecraft:mineable/hoe')
+		.tagItem('minecraft:wool')
+		.tagItem('forge:wools/white')
+		.soundType('wool')
+		.mapColor('sand')
+		.hardness(0.5)
+		.textureAll('tfc_textile:block/linen')
+
+	event.create('tfg:cotton_block')
+		.tagBlock('minecraft:mineable/hoe')
+		.tagItem('minecraft:wool')
+		.tagItem('forge:wools/white')
+		.soundType('wool')
+		.mapColor('quartz')
+		.hardness(0.5)
+		.textureAll('tfc_textile:block/cotton')
+}

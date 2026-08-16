@@ -3,9 +3,11 @@
 ## Unreleased
 ### Changes
 #### Ambiental
-- Tiger and lion clothing are now cooling instead of warming
-- Rebalanced all clothing into several tiers. For warming: primitive and insulated have +2 warmth, wool has +4 warmth, and animal clothes have +8. For cooling: silk, burlap, and linen are -2 warmth, animal clothes have -4, and new phantom silk and red elk clothes have -8. Clothing that's more difficult to obtain has more durability and insulation to compensate.
-- Armor no longer affects player temperature (yes this includes the blue steel diving suit, though it does still make you fireproof)
+- Tiger and lion clothing are now cooling instead of warming @ashleney
+- Rebalanced all clothing into several tiers. For warming: primitive and insulated have +2 warmth, wool has +4 warmth, and animal clothes have +8. For cooling: silk, burlap, and linen are -2 warmth, animal clothes have -4, and new phantom silk and red elk clothes have -8. Clothing that's more difficult to obtain has more durability and insulation to compensate. @ashleney
+- Armor no longer affects player temperature (yes this includes the blue steel diving suit, though it does still make you fireproof) @ashleney
+- All recipes have been changed @Pyritie
+- Added new strong cooling clothing: phantom silk and red elk @ashleney @Atraxia
 #### Other changes
 - Added combustion engines for generating SU from combustible fuels. You can use any fluid that works in a GregTech combustion generator or gas turbine (#4766) @Pyritie
 - Added two more "start room" variations to mineshafts, and added monsters to it @Pyritie
@@ -18,6 +20,7 @@
 - Added easier recipes for crafting arrows out of bones (#4736) @Pyritie
 - Added some 3D molecules to the molecular structure view (#4754) @BlueBoat29
 - Added recipes to convert rose quartz tiles back into blocks (#4768) @applenper
+- Added more cloth blocks @Pyritie
 ### Bug fixes
 - Fixed mobs suffocating to death inside supports @Pyritie
 - Fixed the hose pulley collecting "flowing" oil fluid instead of normal oil fluid @Pyritie
