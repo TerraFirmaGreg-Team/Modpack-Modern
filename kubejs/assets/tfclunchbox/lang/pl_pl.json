@@ -8,6 +8,7 @@
   "item.tfclunchbox.cooling_lunchbox": "Chłodząca śniadaniówka",
   "item.tfclunchbox.cooling_lunchbox.main": "Twój niesamowity towarzysz w przygodach z lodowym chłodzeniem",
   "item.tfclunchbox.electric_lunchbox": "Elektryczna śniadaniówka",
+  "item.tfclunchbox.electric_lunchbox.main": "Nowoczesna śniadaniówka z elektrycznym chłodzeniem zasilanym bateriami GregTech",
   "item.tfclunchbox.lunchbox": "Śniadaniówka",
   "item.tfclunchbox.simple_lunchbox.main": "Prosty pojemnik do przechowywania żywności",
   "itemGroup.tfclunchbox": "TFC Lunchbox",
@@ -41,6 +42,7 @@
   "tooltip.tfclunchbox.ice_slots_help.line4": "§7by ochłodzić jedzenie w śniadaniówce",
   "tooltip.tfclunchbox.lunchbox.contents": "Zawartość:",
   "tooltip.tfclunchbox.lunchbox.empty": "Pusty",
+  "tooltip.tfclunchbox.lunchbox.scroll_hint": "Przytrzymaj CTRL i przewijaj, by zmienić wybrane miejsce",
   "tooltip.tfclunchbox.lunchbox.selected_slot": "Wybrane miejsce: %d",
   "tooltip.tfclunchbox.lunchbox.shift": "Przytrzymaj SHIFT po więcej szczegółów",
   "tooltip.tfclunchbox.simple_lunchbox.hold_shift": "Przytrzymaj §eSHIFT§7, aby uzyskać szczegóły"
