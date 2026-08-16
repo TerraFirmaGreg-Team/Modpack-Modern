@@ -1657,7 +1657,11 @@
 		{
 			dependencies: ["60497014785301EB"]
 			dependency_requirement: "one_completed"
-			description: ["&2Create: Steam 'n' Rails&r is a powerfull mod that allows you to build your own &5Trains&r, these can be handy to travel across the waistlands or help you transport enormus amounts of materials"]
+			description: [
+				"&2Create: Steam 'n' Rails&r is a powerfull mod that allows you to build your own &5Trains&r, these can be handy to travel across the waistlands or help you transport enormus amounts of materials"
+				""
+				"&3Tip:&r if something is counfusing you can always hold &lW&r while hovering over an item for the item functionality visualization."
+			]
 			icon: "railways:white_conductor_cap"
 			id: "24F55AFE2EC875F2"
 			shape: "octagon"
@@ -1767,6 +1771,13 @@
 		}
 		{
 			dependencies: ["6D7248BFB6FFFCE9"]
+			description: [
+				"&5Train&r crashes are a serious problem while automating your railway system. a crash will derail a &5Train&r making it &4Inoperable&r. luckly you can prevent most crashes with a bit of infrastucture. "
+				""
+				"By right-clicking the &bTrain signal&r on the tracks close infront of an intersection and placing it next to them you can detect when a &5Train&r is moving over them! you can place a &bSemaphore&r on top of &bTrain Signal&r facing the other track. Now when a &5Train&r is moving over the intersection the other track will be blocked and the &5Trains&r won't be able to pass preventing a crash."
+				""
+				"&3Tip:&r you can stack multiple &bSemaphores&r on top of eachother and connect them to multiple &bTrain Signals&r, this gets pretty complex. For more information hold &lW&r while hovering over the &bSemaphore&r for a visualization of the functionality."
+			]
 			icon: "railways:semaphore"
 			id: "4868CD0A3946C201"
 			subtitle: "Redusing casualties"
@@ -1912,7 +1923,13 @@
 		}
 		{
 			dependencies: ["4868CD0A3946C201"]
-			description: ["Does offloading your goods take too much time? did you ever just want to leave the "]
+			description: [
+				"Does loading your goods take too much time? did you ever just want to leave the empty &5Carraige&r behind? Now you can!"
+				""
+				"By right-clicking a &bTrain Coupler&r on the tracks and placing it next to them will spawn two &dNodes&r 5 block apart from eachother, you can change the distance of the nodes by holding a wrench and hold-right-click on the &bTrain Couplers&r top-side."
+				""
+				"By powering the &bTrain Coupler&r with a redstone signal while two separate &5Carraiges&r are above the Nodes the &5Carraiges&r will split! They wont be connected anymore and your &5Train&r is free to go wherever it wants. Do you want to connect them back? you can do it by repeating the same steps!"
+			]
 			id: "42E33D1E45BFE93B"
 			subtitle: "Train management"
 			tasks: [{
@@ -2120,7 +2137,7 @@
 		}
 		{
 			dependencies: ["630446139085B8A1"]
-			description: ["It happens to the best of us. You accidentally break the tracks or your &5Train&r somehow escaped your tracks. And not it's &lDerailed&r. Luckly there is an easy fix for that, by right-clicking with a &aWrench&r to select it and then right-click again on the tracks to place it back. Did you place it the train facing the wrong direction? you can select it again and place it down while facing the other direction, this will make the &5Train&r face the other direction!"]
+			description: ["It happens to the best of us. You accidentally break the tracks or your &5Train&r somehow escaped your tracks or two trains colided with eachoter. And not it's &lDerailed&r. Luckly there is an easy fix for that, by right-clicking with a &aWrench&r to select it and then right-click again on the tracks to place it back. Did you place it the train facing the wrong direction? you can select it again and place it down while facing the other direction, this will make the &5Train&r face the other direction!"]
 			icon: "create:wrench"
 			id: "5655D6E5228A467E"
 			subtitle: "Why didn't you use Track Buffers ???"
