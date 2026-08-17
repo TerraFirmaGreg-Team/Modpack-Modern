@@ -278,6 +278,19 @@ function registerTFGClothRecipes(event) {
 		.duration(100)
 		.EUt(4)
 
+	event.recipes.tfc.heating('tfg:cotton_product', 200)
+		.resultItem('gtceu:charcoal_dust')
+		.id('tfg:heating/cotton_balls')
+
+	event.smelting('gtceu:charcoal_dust', 'tfg:cotton_product')
+		.id('tfg:smelting/cotton_balls')
+
+	event.recipes.tfc.heating('tfc_textile:cotton_cloth', 200)
+		.resultItem('gtceu:charcoal_dust')
+		.id('tfg:heating/cotton_cloth')
+
+	event.smelting('gtceu:charcoal_dust', 'tfc_textile:cotton_cloth')
+		.id('tfg:smelting/cotton_cloth')
 
 	//#region Spindle Recipes
 	

@@ -54,6 +54,8 @@ function registerTFGHeatData(event) {
 	event.itemHeat('betterend:charnia_purple', 0.25, null, null)
 	event.itemHeat('betterend:charnia_red', 0.25, null, null)
 
+	event.itemHeat('tfg:cotton_product', 0.25, null, null);
+	event.itemHeat('tfc_textile:cotton_cloth', 0.25, null, null);
 }
 
 //#endregion
