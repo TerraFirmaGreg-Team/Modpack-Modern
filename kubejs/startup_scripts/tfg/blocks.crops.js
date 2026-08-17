@@ -1,15 +1,19 @@
 // Priority: 0
 "use strict";
 /*
- * Some Crops Are Originally from [TerraFirmaCraft] (https://github.com/TerraFirmaCraft/TerraFirmaCraft)
+ * Some Crops Are Originally from [TerraFirmaCraft](https://github.com/TerraFirmaCraft/TerraFirmaCraft)
  * Licensed under the EUPL, Version 1.2.
  * You may obtain a copy of the Licence at:
  * https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12
  * 
- * Some Crops Are Originally from [Beneath] (https://github.com/eerussianguy/Beneath)
+ * Some Crops Are Originally from [Beneath](https://github.com/eerussianguy/Beneath)
  * Licensed under the MIT License.
  * Copyright (c) 2022 eerussianguy
  * https://github.com/eerussianguy/Beneath/blob/1.21.x/LICENSE
+ * 
+ * Cotton is from [TFC Textile](https://github.com/AtobaAzul/tfc-textile/)
+ * Licensed under the MIT License.
+ * Copyright (c) 2025 oatobaazul
  */
 
 const registerTFGCrops = (event) => {
@@ -26,7 +30,7 @@ const registerTFGCrops = (event) => {
 		.stages(4)
 		.doubleStages(2)
 		.hardness(0.4)
-		.growthModifier(0.8)
+		.growthModifier(1.2)
 		.tagBlock('tfc:plants')
 		.tagBlock('minecraft:mineable/hoe')
 		.tagBlock('tfc:mineable_with_sharp_tool')
@@ -35,6 +39,8 @@ const registerTFGCrops = (event) => {
 		.existingProductItem('tfg:sunflower_product')
 		.seedItem(seed => {
 			seed.texture('tfg:item/sunflower_seed')
+			seed.tag('tfc:seeds')
+			seed.tag('forge:seeds')
 		})
 		.deadBlock(dead => {
 			dead.hardness(0.2)
@@ -69,6 +75,10 @@ const registerTFGCrops = (event) => {
 		.tagBlock('tfc:mineable_with_sharp_tool')
 		.tagBlock('minecraft:flowers')
 		.tagBlock('tfc:crops')
+		.seedItem(seed => {
+			seed.tag('tfc:seeds')
+			seed.tag('forge:seeds')
+		})
 		.deadBlock(dead => {
 			dead.hardness(0.2)
 			dead.soundType('crop')
@@ -110,6 +120,8 @@ const registerTFGCrops = (event) => {
 		})
 		.seedItem(seed => {
 			seed.texture('tfg:item/flax_seed')
+			seed.tag('tfc:seeds')
+			seed.tag('forge:seeds')
 		})
 		.deadBlock(dead => {
 			dead.hardness(0.2)
@@ -122,6 +134,45 @@ const registerTFGCrops = (event) => {
 		.soundType('crop')
 		.seeds('tfg:flax_seeds')
 		.food('tfg:flax_product')
+		.hardness(0.2)
+		.tagBoth('tfc:wild_crops')
+		.tagBlock('tfc:plants')
+		.tagBlock('minecraft:mineable/hoe')
+		.tagBlock('tfc:mineable_with_sharp_tool')
+		.tagBlock('tfc:can_be_snow_piled')
+		.tagItem('c:hidden_from_recipe_viewers')
+
+	// Cotton
+	event.create('tfg:cotton', 'tfc:double_crop')
+		.mapColor('plant')
+		.soundType('crop')
+		.nutrient($FarmlandBlockEntity.NutrientType.NITROGEN)
+		.stages(1)
+		.doubleStages(4)
+		.hardness(0.4)
+		.tagBlock('tfc:plants')
+		.tagBlock('minecraft:mineable/hoe')
+		.tagBlock('tfc:mineable_with_sharp_tool')
+		.tagBlock('tfc:crops')
+		.productItem(product => {
+			product.texture('tfg:item/cotton_product')
+		})
+		.seedItem(seed => {
+			seed.texture('tfg:item/cotton_seed')
+			seed.tag('tfc:seeds')
+			seed.tag('forge:seeds')
+		})
+		.deadBlock(dead => {
+			dead.hardness(0.2)
+			dead.soundType('crop')
+			dead.tagBlock('minecraft:mineable/hoe')
+			dead.tagBlock('tfg:dead_crops')
+		})
+	event.create('tfg:cotton_wild', 'tfc:wild_crop')
+		.type('double')
+		.soundType('crop')
+		.seeds('tfg:cotton_seeds')
+		.food('tfg:cotton_product')
 		.hardness(0.2)
 		.tagBoth('tfc:wild_crops')
 		.tagBlock('tfc:plants')
