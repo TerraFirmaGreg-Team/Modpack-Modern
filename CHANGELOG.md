@@ -22,6 +22,8 @@
 - Added recipes to convert rose quartz tiles back into blocks (#4768) @applenper
 - Added more cloth blocks @Pyritie
 - Added earlier ways to compress fertilizers into their "pure" form which give 100% nutrients at once @Pyritie
+- Changed a bunch of textures
+- Added new quests for concrete and steel supports, and fixed the drum/crate quests missing black/bismuth bronze (#4784) @zxro
 ### Bug fixes
 - Fixed mobs suffocating to death inside supports @Pyritie
 - Fixed the hose pulley collecting "flowing" oil fluid instead of normal oil fluid @Pyritie
