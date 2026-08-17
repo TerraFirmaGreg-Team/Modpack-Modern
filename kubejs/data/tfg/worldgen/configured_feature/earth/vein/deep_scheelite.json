@@ -26,11 +26,11 @@
             "weight": 12
           },
           {
-            "block": "gtceu:quartzite_lithium_ore",
+            "block": "gtceu:quartzite_lepidolite_ore",
             "weight": 4
           },
           {
-            "block": "gtceu:raw_lithium_block",
+            "block": "gtceu:raw_lepidolite_block",
             "weight": 1
           }
         ]
@@ -49,11 +49,11 @@
             "weight": 12
           },
           {
-            "block": "gtceu:slate_lithium_ore",
+            "block": "gtceu:slate_lepidolite_ore",
             "weight": 4
           },
           {
-            "block": "gtceu:raw_lithium_block",
+            "block": "gtceu:raw_lepidolite_block",
             "weight": 1
           }
         ]
@@ -72,11 +72,11 @@
             "weight": 12
           },
           {
-            "block": "gtceu:phyllite_lithium_ore",
+            "block": "gtceu:phyllite_lepidolite_ore",
             "weight": 4
           },
           {
-            "block": "gtceu:raw_lithium_block",
+            "block": "gtceu:raw_lepidolite_block",
             "weight": 1
           }
         ]
@@ -95,11 +95,11 @@
             "weight": 12
           },
           {
-            "block": "gtceu:schist_lithium_ore",
+            "block": "gtceu:schist_lepidolite_ore",
             "weight": 4
           },
           {
-            "block": "gtceu:raw_lithium_block",
+            "block": "gtceu:raw_lepidolite_block",
             "weight": 1
           }
         ]
@@ -118,11 +118,11 @@
             "weight": 12
           },
           {
-            "block": "gtceu:gneiss_lithium_ore",
+            "block": "gtceu:gneiss_lepidolite_ore",
             "weight": 4
           },
           {
-            "block": "gtceu:raw_lithium_block",
+            "block": "gtceu:raw_lepidolite_block",
             "weight": 1
           }
         ]
@@ -141,11 +141,11 @@
             "weight": 12
           },
           {
-            "block": "gtceu:marble_lithium_ore",
+            "block": "gtceu:marble_lepidolite_ore",
             "weight": 4
           },
           {
-            "block": "gtceu:raw_lithium_block",
+            "block": "gtceu:raw_lepidolite_block",
             "weight": 1
           }
         ]
@@ -166,7 +166,7 @@
           "weight": 12
         },
         {
-          "block": "gtceu:lithium_indicator",
+          "block": "gtceu:lepidolite_indicator",
           "weight": 4
         }
       ]

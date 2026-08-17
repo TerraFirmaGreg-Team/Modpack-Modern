@@ -161,14 +161,14 @@ const registerAE2Recipes = (event) => {
 	}).addMaterialInfo().id('tfg:crafting/speed_card')
 
 	//Auto Crafting Card
-	event.recipes.gtceu.shaped('ae2:auto_complete_card', [
-		'AB',
-		'BC'
-	], {
-		A: 'ae2:advanced_card',
-		B: 'ae2:engineering_processor',
-		C: 'ae2:calculation_processor'
-	}).addMaterialInfo().id('tfg:crafting/auto_complete_card')
+	//event.recipes.gtceu.shaped('ae2:auto_complete_card', [
+	//	'AB',
+	//	'BC'
+	//], {
+	//	A: 'ae2:advanced_card',
+	//	B: 'ae2:engineering_processor',
+	//	C: 'ae2:calculation_processor'
+	//}).addMaterialInfo().id('tfg:crafting/auto_complete_card')
 
 	// Void Card
 	event.shapeless('ae2:void_card', ['ae2:basic_card', 'ae2:calculation_processor'])

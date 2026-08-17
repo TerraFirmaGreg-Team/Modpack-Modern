@@ -8,6 +8,7 @@
   "item.tfclunchbox.cooling_lunchbox": "Chłodząca śniadaniówka",
   "item.tfclunchbox.cooling_lunchbox.main": "Twój niesamowity towarzysz w przygodach z lodowym chłodzeniem",
   "item.tfclunchbox.electric_lunchbox": "Elektryczna śniadaniówka",
+  "item.tfclunchbox.electric_lunchbox.main": "Nowoczesna śniadaniówka z elektrycznym chłodzeniem zasilanym bateriami GregTech",
   "item.tfclunchbox.lunchbox": "Śniadaniówka",
   "item.tfclunchbox.simple_lunchbox.main": "Prosty pojemnik do przechowywania żywności",
   "itemGroup.tfclunchbox": "TFC Lunchbox",
@@ -18,6 +19,7 @@
   "tooltip.tfclunchbox.battery_slot_help.line1": "§7Umieść tutaj dowolne:",
   "tooltip.tfclunchbox.battery_slot_help.line2": "§e• bateria (GregTech)",
   "tooltip.tfclunchbox.battery_slot_help.line3": "§7Bateria zostanie rozładowana,",
+  "tooltip.tfclunchbox.battery_slot_help.line4": "§7napełniając wewnętrzny bufor energetyczny",
   "tooltip.tfclunchbox.battery_tier": "Poziom baterii: %s",
   "tooltip.tfclunchbox.cell_remaining": "Pozostały płynny lód: %d mW",
   "tooltip.tfclunchbox.contents": "Zawartość:",
@@ -36,10 +38,13 @@
   "tooltip.tfclunchbox.ice_slots_help": "Miejsce na lód/kapsułki",
   "tooltip.tfclunchbox.ice_slots_help.line1": "§7Połóż tutaj:",
   "tooltip.tfclunchbox.ice_slots_help.line2": "§b• bloki lodu",
+  "tooltip.tfclunchbox.ice_slots_help.line3": "§b• GregTechowe zbiorniki z płynnym lodem",
   "tooltip.tfclunchbox.ice_slots_help.line4": "§7by ochłodzić jedzenie w śniadaniówce",
   "tooltip.tfclunchbox.lunchbox.contents": "Zawartość:",
   "tooltip.tfclunchbox.lunchbox.empty": "Pusty",
+  "tooltip.tfclunchbox.lunchbox.scroll_hint": "Przytrzymaj CTRL i przewijaj, by zmienić wybrane miejsce",
   "tooltip.tfclunchbox.lunchbox.selected_slot": "Wybrane miejsce: %d",
   "tooltip.tfclunchbox.lunchbox.shift": "Przytrzymaj SHIFT po więcej szczegółów",
-  "tooltip.tfclunchbox.simple_lunchbox.hold_shift": "Przytrzymaj §eSHIFT§7, aby uzyskać szczegóły"
+  "tooltip.tfclunchbox.simple_lunchbox.hold_shift": "Przytrzymaj §eSHIFT§7, aby uzyskać szczegóły",
+  "tooltip.tfclunchbox.simple_lunchbox.shift_info": "Użyj CTRL + kółko myszy, by wybrać jedzenie"
 }

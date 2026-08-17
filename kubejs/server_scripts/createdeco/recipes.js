@@ -121,7 +121,7 @@ const registerCreatedecoRecipes = (event) => {
 				M: `tfc:mortar`
 			}).id(`tfg:shaped/cdeco_${type}_bricks`);
 
-			event.recipes.gtceu.assembler(`createdeco:${type}_bricks`)
+			event.recipes.gtceu.assembler(`tfg:createdeco_${type}_bricks`)
 				.itemInputs('5x minecraft:brick', dye)
 				.inputFluids(Fluid.of('gtceu:concrete', 144))
 				.itemOutputs(`4x createdeco:${type}_bricks`)

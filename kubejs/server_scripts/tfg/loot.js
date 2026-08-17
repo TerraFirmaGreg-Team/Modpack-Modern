@@ -247,6 +247,30 @@ function registerTFGLoots(event) {
 		.addWeightedLoot([1, 3], ['minecraft:bone'])
 		.addLoot(LootEntry.of('tfc:small_raw_hide', 1))
 
+	// Bactrian camel normal loot table
+	event.addEntityLootModifier('tfg:bactrian_camel')
+		.addWeightedLoot([13, 19], ['tfc:food/camelidae'])
+		.addWeightedLoot([1, 4], ['minecraft:bone'])
+		.addLoot(LootEntry.of('tfc:large_sheepskin_hide', 1))
+		.addSequenceLoot(LootEntry.of('waterflasks:bladder').when(c => c.randomChance(0.5)))
+
+	// Bactrian camel drop extra with butchery knife
+	event.addEntityLootModifier('tfg:bactrian_camel')
+		.matchMainHand('#forge:tools/butchery_knives')
+		.addWeightedLoot([3, 5], ['tfc:food/camelidae'])
+
+	// Dromedary camel normal loot table
+	event.addEntityLootModifier('tfg:dromedary_camel')
+		.addWeightedLoot([13, 19], ['tfc:food/camelidae'])
+		.addWeightedLoot([1, 4], ['minecraft:bone'])
+		.addLoot(LootEntry.of('tfc:large_raw_hide', 1))
+		.addSequenceLoot(LootEntry.of('waterflasks:bladder').when(c => c.randomChance(0.5)))
+
+	// Dromedary camel drop extra with butchery knife
+	event.addEntityLootModifier('tfg:dromedary_camel')
+		.matchMainHand('#forge:tools/butchery_knives')
+		.addWeightedLoot([3, 5], ['tfc:food/camelidae'])
+
 	// Tamed Fox normal loot table
 	event.addEntityLootModifier('tfg:fox')
 		.addLoot(LootEntry.of('tfc:small_raw_hide', 1))

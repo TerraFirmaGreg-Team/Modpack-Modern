@@ -1,0 +1,8 @@
+{
+  "showToast": true,
+  "showChatMessages": true,
+  "reloadEmi": true,
+  "ignoredTags": [
+    "c:hidden_from_recipe_viewers"
+  ]
+}

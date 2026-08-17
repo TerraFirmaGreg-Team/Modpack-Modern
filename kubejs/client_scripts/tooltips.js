@@ -246,25 +246,13 @@ const registerTooltips = (event) => {
 	})
 
 	// Insulation
-	event.addAdvanced(['create:copper_diving_helmet', 'create:copper_backtank', 'create:copper_diving_boots'], (item, advanced, text) => {
-		text.add(1, Text.translate('tfg.tooltip.armor.copper_diving_suit_warmth'));
-		text.add(2, Text.translate('tfg.tooltip.armor.copper_diving_suit_insulation'));
-	})
-	event.addAdvanced(['create:netherite_diving_helmet', 'create:netherite_backtank', 'create:netherite_diving_boots', 'minecraft:netherite_leggings', 'minecraft:netherite_boots'], (item, advanced, text) => {
-		text.add(1, Text.translate('tfg.tooltip.armor.netherite_diving_suit_warmth'));
-		text.add(2, Text.translate('tfg.tooltip.armor.netherite_diving_suit_insulation'));
-	})
 	event.addAdvanced(['gtceu:nanomuscle_helmet', 'gtceu:nanomuscle_chestplate', 'gtceu:nanomuscle_leggings', 'gtceu:nanomuscle_boots', 'gtceu:advanced_nanomuscle_chestplate'], (item, advanced, text) => {
-		text.add(1, Text.translate('tfg.tooltip.armor.nanomuscle_warmth'));
-		text.add(2, Text.translate('tfg.tooltip.armor.nanomuscle_insulation'));
 		text.add(3, Text.translate('tfg.tooltip.armor.nanomuscle_set'));
 		if (item === 'gtceu:nanomuscle_leggings') {
 			text.add(4, Text.translate('tfg.tooltip.armor.nanomuscle_legs_buff'));
 		}
 	})
 	event.addAdvanced(['gtceu:quarktech_helmet', 'gtceu:quarktech_chestplate', 'gtceu:quarktech_leggings', 'gtceu:quarktech_boots', 'gtceu:advanced_quarktech_chestplate'], (item, advanced, text) => {
-		text.add(1, Text.translate('tfg.tooltip.armor.quarktech_warmth'));
-		text.add(2, Text.translate('tfg.tooltip.armor.quarktech_insulation'));
 		text.add(3, Text.translate('tfg.tooltip.armor.quarktech_set'));
 	})
 	event.addAdvanced([
@@ -272,8 +260,6 @@ const registerTooltips = (event) => {
 		'ad_astra:netherite_space_helmet', 'ad_astra:netherite_space_suit', 'ad_astra:netherite_space_pants', 'ad_astra:netherite_space_boots',
 		'ad_astra:jet_suit_helmet', 'ad_astra:jet_suit', 'ad_astra:jet_suit_pants', 'ad_astra:jet_suit_boots'
 	], (item, advanced, text) => {
-		text.add(1, Text.translate('tfg.tooltip.armor.space_suit_warmth'));
-		text.add(2, Text.translate('tfg.tooltip.armor.space_suit_insulation'));
 		text.add(3, Text.translate('tfg.tooltip.armor.space_suit_set'));
 	})
 	event.addAdvanced(['sns:blue_steel_toe_hiking_boots'], (item, advanced, text) => {
@@ -409,6 +395,22 @@ const registerTooltips = (event) => {
 		text.add(1, Text.translate("greate.tooltip.max_capacity").append(Text.translate("tfg.greate.es_limit")))
 		text.add(2, Text.translate("tfg.gui.consumes").append(Text.translate("tooltip.ad_astra.fluid_per_tick", "1024")).append(" ").append(Text.translate("material.gtceu.steam")))
 	})
+	event.addAdvanced(['tfg:generators/steel_combustion_engine'], (item, advanced, text) => {
+		text.add(1, Text.translate("greate.tooltip.max_capacity").append(Text.translate("tfg.greate.ls_limit")))
+		text.add(2, Text.translate("tfg.tooltip.attribution.diesel_generators"))
+	})
+	event.addAdvanced(['tfg:generators/aluminium_combustion_engine'], (item, advanced, text) => {
+		text.add(1, Text.translate("greate.tooltip.max_capacity").append(Text.translate("tfg.greate.ms_limit")))
+		text.add(2, Text.translate("tfg.tooltip.attribution.diesel_generators"))
+	})
+	event.addAdvanced(['tfg:generators/stainless_steel_combustion_engine'], (item, advanced, text) => {
+		text.add(1, Text.translate("greate.tooltip.max_capacity").append(Text.translate("tfg.greate.hs_limit")))
+		text.add(2, Text.translate("tfg.tooltip.attribution.diesel_generators"))
+	})
+	event.addAdvanced(['tfg:generators/titanium_combustion_engine'], (item, advanced, text) => {
+		text.add(1, Text.translate("greate.tooltip.max_capacity").append(Text.translate("tfg.greate.es_limit")))
+		text.add(2, Text.translate("tfg.tooltip.attribution.diesel_generators"))
+	})
 
 	// Fluid + item containers
 	global.LAB_EQUIPMENT_CONTAINERS.forEach(container => {
@@ -431,7 +433,6 @@ const registerTooltips = (event) => {
 	})
 	event.addAdvanced(['#tfc:fired_vessels'], (item, advanced, text) => {
 		text.add(1, Text.translate("gtceu.universal.tooltip.fluid_storage_capacity", "3,024"))
-		text.add(2, Text.translate("tfg.tooltip.vessel_warning"))
 	})
 	event.addAdvanced(['waterflasks:iron_flask', 'waterflasks:red_steel_flask'], (item, advanced, text) => {
 		text.add(1, Text.translate("gtceu.universal.tooltip.fluid_storage_capacity", "2,000"))

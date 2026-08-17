@@ -658,7 +658,7 @@ familiarityDecayLimit = 0.3
 		#
 		# A multiplier for how fast items cool. Higher = faster.
 		#Range: 0.0 ~ 1.7976931348623157E308
-		itemCoolingModifier = 0.8
+		itemCoolingModifier = 0.5
 		#
 		# Should hot item entities cool off when in contact with blocks like water or snow?
 		coolHotItemEntities = true
@@ -750,7 +750,7 @@ familiarityDecayLimit = 0.3
 		# Setting this to zero will cause decay not to apply.
 		# Note that if you set this to zero **food items will lose their creation dates!!**. This is not reversible!
 		#Range: 0.0 ~ 1000.0
-		foodDecayModifier = 0.25
+		foodDecayModifier = 0.5
 		#
 		# Enables negative effects from carrying too many very heavy items, including potion effects.
 		enableOverburdening = true

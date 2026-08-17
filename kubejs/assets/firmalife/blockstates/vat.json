@@ -1,0 +1,11 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "variants": {
+    "sealed=false": {
+      "model": "firmalife:block/vat"
+    },
+    "sealed=true": {
+      "model": "firmalife:block/vat_sealed"
+    }
+  }
+}

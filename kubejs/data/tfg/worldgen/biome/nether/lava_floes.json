@@ -81,6 +81,12 @@
 	"spawners": {
 		"ambient": [
 			{
+				"type": "jellies:biotite",
+				"maxCount": 4,
+				"minCount": 3,
+				"weight": 100
+			},
+			{
 				"type": "jellies:lava",
 				"maxCount": 4,
 				"minCount": 3,

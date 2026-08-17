@@ -412,7 +412,7 @@
 							"then_run": {
 								"type": "minecraft:block",
 								"result_state": {
-									"Name": "tfg:rock/halite"
+									"Name": "tfg:halite"
 								}
 							}
 						}

@@ -113,7 +113,7 @@
 		},
 		{
 			"title": "液態冰沙",
-			"text": "飲用$(thing)冰沙$()可降低4°C體溫，非常適合夏天！穿越幽冥之地時也很方便。",
+			"text": "飲用$(thing)冰沙$()可降低4°C體溫，非常適合夏天！穿越地底時也很方便。",
 			"type": "patchouli:spotlight",
 			"item": "gtceu:ice_bucket",
 			"anchor": "ice_slush"

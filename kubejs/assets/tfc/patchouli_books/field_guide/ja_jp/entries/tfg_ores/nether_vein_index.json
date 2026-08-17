@@ -14,7 +14,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/nether_vein_index#beneath_quartz)スモーキークォーツ, クォーツ, 重晶石, ゼオライト$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_bismuth)ビスマス, 硫黄, 硝酸カリウム$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_molydbenum)モリブデン鉛鉱, 輝水鉛鉱, パウエル石$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_lithium)リシア輝石, リチウム, カリ岩塩$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_phosphate)リン酸三カルシウム, アパタイト, 黄鉄鉱$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_redstone)レッドストーン, 辰砂, スモーキークォーツ, ルビー$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_copper_tetrahedrite)四面銅鉱, 輝安鉱, 自然銀$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_salt)岩塩, カリ岩塩, トロナ$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_lead_silver)方鉛鉱, 自然銀, 鉛$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_aluminium)明礬石, ゼオライト, 重晶石$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_coal_bituminous)歴青炭, 黄鉄鉱$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_coal_anthracite)無煙炭, 黒鉛$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_nickel)硫鉄ニッケル鉱, 珪ニッケル鉱, 輝コバルト鉱$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_sulfur)硫黄, 黄鉄鉱, 輝安鉱$()$()",
+      "text": "$(li)$(l:tfg_ores/nether_vein_index#beneath_quartz)スモーキークォーツ, クォーツ, 重晶石, ゼオライト$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_bismuth)ビスマス, 硫黄, 硝酸カリウム$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_molydbenum)モリブデン鉛鉱, 輝水鉛鉱, パウエル石$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_lithium)リシア輝石, 無煙炭, 明礬石$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_phosphate)リン酸三カルシウム, アパタイト, 黄鉄鉱$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_redstone)レッドストーン, 辰砂, スモーキークォーツ, ルビー$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_copper_tetrahedrite)四面銅鉱, 輝安鉱, 自然銀$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_salt)岩塩, カリ岩塩, トロナ$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_lead_silver)方鉛鉱, 自然銀, 鉛$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_aluminium)明礬石, ゼオライト, 重晶石$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_coal_bituminous)歴青炭, 黄鉄鉱$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_coal_anthracite)無煙炭, 黒鉛$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_nickel)硫鉄ニッケル鉱, 珪ニッケル鉱, 輝コバルト鉱$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_sulfur)硫黄, 黄鉄鉱, 輝安鉱$()$()",
       "type": "patchouli:text"
     },
     {
@@ -256,7 +256,7 @@
     {
       "Type": "patchouli:text",
       "text": "$(thing)$(t:何チャンクごとに鉱脈が生成されるかを示します。数値が小さいほど見つかりやすくなります。)レア度$(/t)$(): 1/10 チャンク$(br)$(thing)$(t:鉱脈の中に含まれている鉱石の密度を割合で示しています。数値が高いほど鉱石量が多くなります。)密度$(/t)$(): 22%$(br)$(thing)$(t:鉱脈の形状です)タイプ$(/t)$(): $(t:主に丸い形状をしています)塊状鉱脈$(/t)$(br)$(thing)$(t:この鉱脈が生成される高さ（Y座標）の範囲を示します。)Y$(/t)$(): 0 — 80$(br)$(thing)$(t:鉱脈の平均的な直径のサイズを示します。)サイズ$(/t)$(): 25$(br)$(thing)バイオーム$(): $(t:Lava Floes)溶岩床$(/t)$(br2)$(thing)岩石の種類$(): 混成岩, 玄武岩, 輝岩",
-      "title": "リシア輝石, リチウム, カリ岩塩",
+      "title": "リシア輝石, 無煙炭, 明礬石",
       "type": "patchouli:text",
       "anchor": "beneath_lithium"
     },
@@ -282,10 +282,10 @@
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "リチウム",
+      "name": "無煙炭",
       "multiblock": {
         "mapping": {
-          "0": "#forge:ores/lithium"
+          "0": "#forge:ores/anthracite"
         },
         "pattern": [
           [
@@ -297,15 +297,15 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 23%$(br)$(thing)採取可能$(): リチウム$(br)$(thing)化学式$(): Li",
+      "text": "$(thing)パーセント$(): 23%$(br)$(thing)用途$(): 燃料$(br)$(thing)化学式$(): C",
       "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "カリ岩塩",
+      "name": "明礬石",
       "multiblock": {
         "mapping": {
-          "0": "#forge:ores/rock_salt"
+          "0": "#forge:ores/alunite"
         },
         "pattern": [
           [
@@ -317,7 +317,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 15%$(br)$(thing)採取可能$(): カリウム、塩素、肥料$(br)$(thing)化学式$(): KCl",
+      "text": "$(thing)パーセント$(): 15%$(br)$(thing)採取可能$(): カリウム、アルミニウム$(br)$(thing)化学式$(): KAl₃Si₂H₆O₁₄",
       "type": "patchouli:multiblock"
     },
     {

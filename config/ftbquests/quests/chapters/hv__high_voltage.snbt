@@ -1318,7 +1318,7 @@
 						}
 					}
 					match_nbt: false
-					title: "{quests.high_voltage.gun.task1}"
+					title: "{quests.high_voltage.gun.task.1}"
 					type: "item"
 				}
 				{
@@ -1331,7 +1331,7 @@
 						}
 					}
 					optional_task: true
-					title: "{quests.high_voltage.gun.task2}"
+					title: "{quests.high_voltage.gun.task.2}"
 					type: "item"
 				}
 				{
@@ -1657,6 +1657,12 @@
 				{
 					id: "07020B14B9DABDB8"
 					item: "tfg:titanium_steam_engine"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "65DA42FD95854FB4"
+					item: "tfg:generators/titanium_combustion_engine"
 					optional_task: true
 					type: "item"
 				}

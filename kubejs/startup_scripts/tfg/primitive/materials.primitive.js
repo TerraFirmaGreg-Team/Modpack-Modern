@@ -106,7 +106,14 @@ function registerTFGPrimitiveMaterials(event) {
 		.color(0xB49AA2)
 		.secondaryColor(0x60545F)
 
-	// Weak colored steel
+	// Weak steel
+    event.create('tfg:weak_steel')
+        .ingot()
+        .liquid()
+        .components('1x nickel', '1x black_bronze', '2x steel')
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.NO_SMELTING, GTMaterialFlags.DISABLE_ALLOY_BLAST)
+		.iconSet(GTMaterialIconSet.METALLIC)
+
 	event.create('tfg:weak_blue_steel')
 		.dust()
 		.ingot()

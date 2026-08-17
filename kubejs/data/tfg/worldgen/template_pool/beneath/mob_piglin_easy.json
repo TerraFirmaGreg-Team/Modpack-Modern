@@ -3,7 +3,7 @@
 	"fallback": "minecraft:empty",
 	"elements": [
 		{
-			"weight": 100,
+			"weight": 20,
 			"element": {
 				"location": "tfg:piglin_generic/mobs/piglin",
 				"processors": "minecraft:empty",
@@ -13,15 +13,6 @@
 		},
 		{
 			"weight": 20,
-			"element": {
-				"location": "tfg:piglin_generic/mobs/piglin_brute",
-				"processors": "minecraft:empty",
-				"projection": "rigid",
-				"element_type": "minecraft:single_pool_element"
-			}
-		},
-		{
-			"weight": 50,
 			"element": {
 				"location": "tfg:beneath/tower_loot_top",
 				"processors": "minecraft:empty",
@@ -84,7 +75,7 @@
 			}
 		},
 		{
-			"weight": 30,
+			"weight": 100,
 			"element": {
 				"projection": "rigid",
 				"element_type": "minecraft:empty_pool_element"

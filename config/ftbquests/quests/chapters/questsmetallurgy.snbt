@@ -1028,7 +1028,7 @@
 							"ftbfiltersystem:filter": "or(item(gtceu:nickel_ingot)item(gtceu:nickel_dust))"
 						}
 					}
-					title: "{quests.metal_age.weak_steel.task1}"
+					title: "{quests.metal_age.weak_steel.task.1}"
 					type: "item"
 					weak_nbt_match: true
 				}
@@ -1042,7 +1042,7 @@
 							"ftbfiltersystem:filter": "or(item(gtceu:steel_ingot)item(gtceu:steel_dust))"
 						}
 					}
-					title: "{quests.metal_age.weak_steel.task2}"
+					title: "{quests.metal_age.weak_steel.task.2}"
 					type: "item"
 					weak_nbt_match: true
 				}
@@ -1055,7 +1055,7 @@
 							"ftbfiltersystem:filter": "or(item(gtceu:black_bronze_ingot)item(gtceu:black_bronze_dust))"
 						}
 					}
-					title: "{quests.metal_age.weak_steel.task3}"
+					title: "{quests.metal_age.weak_steel.task.3}"
 					type: "item"
 					weak_nbt_match: true
 				}
@@ -1818,6 +1818,64 @@
 			title: "{quests.tfg_tips.sloop_under_construction_materials.title}"
 			x: 9.5d
 			y: -36.0d
+		}
+		{
+			dependencies: ["2936976FC773ABE4"]
+			description: ["{quests.tfg_tips.create_concrete_support.desc}"]
+			icon: "tfg:light_concrete_support"
+			id: "21FB1C0595EAC316"
+			optional: true
+			shape: "heart"
+			subtitle: "{quests.tfg_tips.create_concrete_support.subtitle}"
+			tasks: [{
+				id: "4F2AC7CA093C30BD"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(tfg:light_concrete_support)item(tfg:dark_concrete_support))"
+					}
+				}
+				title: "{quests.tfg_tips.create_concrete_support.task}"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.create_concrete_support.title}"
+			x: -4.5d
+			y: -30.5d
+		}
+		{
+			dependencies: ["04DE7C58F20B535A"]
+			description: ["{quests.tfg_tips.create_reinforced_concrete_support.desc}"]
+			id: "620DEF4A7F08EE15"
+			optional: true
+			shape: "heart"
+			subtitle: "{quests.tfg_tips.create_reinforced_concrete_support.subtitle}"
+			tasks: [
+				{
+					id: "7753818267F79DA7"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							display: {
+								Name: "{\"text\":\"rf\"}"
+							}
+							"ftbfiltersystem:filter": "or(item(tfg:reinforced_light_concrete_support)item(tfg:reinforced_dark_concrete_support))"
+						}
+					}
+					title: "{quests.tfg_tips.create_reinforced_concrete_support.task.0}"
+					type: "item"
+				}
+				{
+					id: "5A3CFB31F6A7A51C"
+					item: "tfg:steel_support"
+					title: "{quests.tfg_tips.create_reinforced_concrete_support.task.1}"
+					type: "item"
+				}
+			]
+			title: "{quests.tfg_tips.create_reinforced_concrete_support.title}"
+			x: 28.5d
+			y: -31.0d
 		}
 	]
 	subtitle: ["{quests.metal_age.subtitle}"]

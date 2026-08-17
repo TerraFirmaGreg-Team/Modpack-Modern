@@ -316,7 +316,7 @@ const registerTFCRecipes = (event) => {
 		}).id(`tfg:shaped/tfc/${type}_krummholz`);
 	});
 
-	event.shapeless('minecraft:stick', ['tfc:groundcover/driftwood', '#forge:tools/knives'])
+	event.shapeless('minecraft:stick', ['tfc:groundcover/driftwood'])
 		.id('tfg:shapeless/driftwood_to_stick')
 
 	// Buff Lamp Glass for easier early game

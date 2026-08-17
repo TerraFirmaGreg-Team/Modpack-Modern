@@ -2,10 +2,6 @@
 	"feature": "tfg:nether/entity/temperate_frog",
 	"placement": [
 		{
-			"type": "minecraft:count",
-			"count": 2
-		},
-		{
 			"type": "minecraft:rarity_filter",
 			"chance": 4
 		},

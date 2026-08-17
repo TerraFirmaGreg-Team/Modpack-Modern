@@ -443,7 +443,8 @@ const registerRnrRecipes = (event) => {
 		"clay",
 		"clay_grass",
 		"coarse_dirt",
-		"duff"
+		"duff",
+		"grass_path"
 	]
 
 	const MUD_VARIATIONS = [
@@ -499,12 +500,6 @@ const registerRnrRecipes = (event) => {
 		event.custom({
 			type: `rnr:mattock`,
 			ingredient: `tfg:duff/${soil}`,
-			result: `rnr:tamped_${soil}`,
-			mode: `smooth`
-		})
-		event.custom({
-			type: `rnr:mattock`,
-			ingredient: `tfg:grass_path/${soil}`,
 			result: `rnr:tamped_${soil}`,
 			mode: `smooth`
 		})

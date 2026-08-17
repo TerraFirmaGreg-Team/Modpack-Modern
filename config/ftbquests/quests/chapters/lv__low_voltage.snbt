@@ -1693,6 +1693,12 @@
 					optional_task: true
 					type: "item"
 				}
+				{
+					id: "659C0C8DC34EF2E8"
+					item: "tfg:generators/aluminium_combustion_engine"
+					optional_task: true
+					type: "item"
+				}
 			]
 			title: "{quests.low_voltage.aluminium_greate.title}"
 			x: -14.5d

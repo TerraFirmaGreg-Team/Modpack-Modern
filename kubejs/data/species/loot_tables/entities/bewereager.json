@@ -35,12 +35,16 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
+					"name": "beneath:cursed_hide"
+				},
+				{
+					"type": "minecraft:item",
 					"name": "species:werefang",
 					"functions": [
 						{
 							"function": "minecraft:set_count",
 							"count": {
-								"max": 4,
+								"max": 2,
 								"min": 1,
 								"type": "minecraft:uniform"
 							}

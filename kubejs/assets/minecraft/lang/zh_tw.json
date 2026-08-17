@@ -99,7 +99,7 @@
 	"death.attack.magic": "%1$s 中毒身亡",
 	"death.attack.magic.player": "%1$s 試圖逃離 %2$s 時被酸雨融化",
 	"dimension.minecraft.overworld": "地球",
-	"dimension.minecraft.the_nether": "幽冥之地",
+	"dimension.minecraft.the_nether": "地底",
 	"effect.minecraft.dolphins_grace": "游泳速度",
 	"entity.minecraft.furnace_minecart": "動力礦車",
 	"entity.minecraft.hoglin": "殭屍疣豬獸",
@@ -131,5 +131,6 @@
 	"item.minecraft.shield.white": "白色木盾牌",
 	"item.minecraft.shield.yellow": "黃色木盾牌",
 	"item.minecraft.string": "絲線",
-	"material.tfg.dripstone": "鐘乳石"
+	"material.tfg.dripstone": "鐘乳石",
+	"tag.item.minecraft.wool": "羊毛"
 }
