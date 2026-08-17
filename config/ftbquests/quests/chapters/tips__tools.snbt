@@ -2862,7 +2862,7 @@
 							"ftbfiltersystem:filter": "item_tag(rnr:mattocks)"
 						}
 					}
-					title: "{quests.tfg_tips.tools_tips.mattocks.task0}"
+					title: "{quests.tfg_tips.tools_tips.mattocks.task.0}"
 					type: "item"
 				}
 				{
@@ -2876,7 +2876,7 @@
 						}
 					}
 					optional_task: true
-					title: "{quests.tfg_tips.tools_tips.mattocks.task1}"
+					title: "{quests.tfg_tips.tools_tips.mattocks.task.1}"
 					type: "item"
 				}
 			]

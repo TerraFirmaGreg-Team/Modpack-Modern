@@ -1028,7 +1028,7 @@
 							"ftbfiltersystem:filter": "or(item(gtceu:nickel_ingot)item(gtceu:nickel_dust))"
 						}
 					}
-					title: "{quests.metal_age.weak_steel.task1}"
+					title: "{quests.metal_age.weak_steel.task.1}"
 					type: "item"
 					weak_nbt_match: true
 				}
@@ -1042,7 +1042,7 @@
 							"ftbfiltersystem:filter": "or(item(gtceu:steel_ingot)item(gtceu:steel_dust))"
 						}
 					}
-					title: "{quests.metal_age.weak_steel.task2}"
+					title: "{quests.metal_age.weak_steel.task.2}"
 					type: "item"
 					weak_nbt_match: true
 				}
@@ -1055,7 +1055,7 @@
 							"ftbfiltersystem:filter": "or(item(gtceu:black_bronze_ingot)item(gtceu:black_bronze_dust))"
 						}
 					}
-					title: "{quests.metal_age.weak_steel.task3}"
+					title: "{quests.metal_age.weak_steel.task.3}"
 					type: "item"
 					weak_nbt_match: true
 				}
