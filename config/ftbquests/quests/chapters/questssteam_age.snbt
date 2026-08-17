@@ -1109,7 +1109,7 @@
 					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						"ftbfiltersystem:filter": "or(item(gtceu:bronze_drum)item(gtceu:steel_drum)item(gtceu:aluminium_drum)item(gtceu:stainless_steel_drum)item(gtceu:gold_drum)item(gtceu:titanium_drum)item(gtceu:tungsten_steel_drum))"
+						"ftbfiltersystem:filter": "or(item(gtceu:bronze_drum)item(gtceu:steel_drum)item(gtceu:aluminium_drum)item(gtceu:stainless_steel_drum)item(gtceu:gold_drum)item(gtceu:titanium_drum)item(gtceu:tungsten_steel_drum)item(gtceu:bismuth_bronze_drum)item(gtceu:black_bronze_drum))"
 					}
 				}
 				title: "{quests.tasktype.item.any}"

@@ -623,7 +623,7 @@
 					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						"ftbfiltersystem:filter": "or(item(gtceu:wood_crate)item(gtceu:bronze_crate)item(gtceu:steel_crate)item(gtceu:aluminium_crate)item(gtceu:stainless_steel_crate)item(gtceu:titanium_crate)item(gtceu:tungsten_steel_crate))"
+						"ftbfiltersystem:filter": "or(item(gtceu:wood_crate)item(gtceu:bronze_crate)item(gtceu:steel_crate)item(gtceu:aluminium_crate)item(gtceu:stainless_steel_crate)item(gtceu:titanium_crate)item(gtceu:tungsten_steel_crate)item(gtceu:bismuth_bronze_crate)item(gtceu:black_bronze_crate))"
 					}
 				}
 				type: "item"
