@@ -7,6 +7,7 @@
 	"block.sophisticatedbackpacks.netherite_backpack": "Plecak ze stali wolframowej",
 	"chat.sophisticatedbackpacks.backpack_uuid.tooltip": "Kliknij aby nadać plecakowi UUID: %s",
 	"commands.sophisticatedbackpacks.dynamic.begin.success": "Pomyślnie uruchomiono dynamiczny szablon '%s'",
+	"commands.sophisticatedbackpacks.dynamic.end.addRemainingItemsFailed": "Nie można dodać wszystkich elementów: Pozostało %d x %s",
 	"commands.sophisticatedbackpacks.dynamic.end.success": "Pomyślnie zakończono dynamiczny szablon '%s'",
 	"commands.sophisticatedbackpacks.give.success": "Oddaj plecak %s",
 	"commands.sophisticatedbackpacks.list.cloth_color": "Tkanina",
