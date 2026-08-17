@@ -1083,7 +1083,7 @@
 							"ftbfiltersystem:filter": "or(item(tfc:metal/helmet/bismuth_bronze)item(tfc:metal/helmet/black_bronze)item(tfc:metal/helmet/bronze)item(tfc:metal/helmet/copper)item(tfc:metal/helmet/wrought_iron)item(tfc:metal/helmet/steel)item(tfc:metal/helmet/black_steel)item(tfc:metal/helmet/blue_steel)item(tfc:metal/helmet/red_steel))"
 						}
 					}
-					title: "{quests.combat_tips.armor.task1}"
+					title: "{quests.combat_tips.armor.task.1}"
 					type: "item"
 				}
 				{
@@ -1095,7 +1095,7 @@
 							"ftbfiltersystem:filter": "or(item(tfc:metal/chestplate/bismuth_bronze)item(tfc:metal/chestplate/black_bronze)item(tfc:metal/chestplate/bronze)item(tfc:metal/chestplate/copper)item(tfc:metal/chestplate/wrought_iron)item(tfc:metal/chestplate/steel)item(tfc:metal/chestplate/black_steel)item(tfc:metal/chestplate/blue_steel)item(tfc:metal/chestplate/red_steel))"
 						}
 					}
-					title: "{quests.combat_tips.armor.task2}"
+					title: "{quests.combat_tips.armor.task.2}"
 					type: "item"
 				}
 				{
@@ -1107,7 +1107,7 @@
 							"ftbfiltersystem:filter": "or(item(tfc:metal/greaves/bismuth_bronze)item(tfc:metal/greaves/black_bronze)item(tfc:metal/greaves/bronze)item(tfc:metal/greaves/copper)item(tfc:metal/greaves/wrought_iron)item(tfc:metal/greaves/steel)item(tfc:metal/greaves/black_steel)item(tfc:metal/greaves/blue_steel)item(tfc:metal/greaves/red_steel))"
 						}
 					}
-					title: "{quests.combat_tips.armor.task3}"
+					title: "{quests.combat_tips.armor.task.3}"
 					type: "item"
 				}
 				{
@@ -1119,7 +1119,7 @@
 							"ftbfiltersystem:filter": "or(item(tfc:metal/boots/bismuth_bronze)item(tfc:metal/boots/black_bronze)item(tfc:metal/boots/bronze)item(tfc:metal/boots/copper)item(tfc:metal/boots/wrought_iron)item(tfc:metal/boots/steel)item(tfc:metal/boots/black_steel)item(tfc:metal/boots/blue_steel)item(tfc:metal/boots/red_steel))"
 						}
 					}
-					title: "{quests.combat_tips.armor.task4}"
+					title: "{quests.combat_tips.armor.task.4}"
 					type: "item"
 				}
 			]
@@ -1326,7 +1326,7 @@
 						}
 					}
 					optional_task: true
-					title: "{quests.combat_tips.bow.task2}"
+					title: "{quests.combat_tips.bow.task.2}"
 					type: "item"
 				}
 			]
@@ -1386,7 +1386,7 @@
 							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:swords)"
 						}
 					}
-					title: "{quests.combat_tips.mold_weapons.task1}"
+					title: "{quests.combat_tips.mold_weapons.task.1}"
 					type: "item"
 				}
 				{
@@ -1398,7 +1398,7 @@
 							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:scythes)"
 						}
 					}
-					title: "{quests.combat_tips.mold_weapons.task2}"
+					title: "{quests.combat_tips.mold_weapons.task.2}"
 					type: "item"
 				}
 				{
@@ -1410,7 +1410,7 @@
 							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:maces)"
 						}
 					}
-					title: "{quests.combat_tips.mold_weapons.task3}"
+					title: "{quests.combat_tips.mold_weapons.task.3}"
 					type: "item"
 				}
 			]

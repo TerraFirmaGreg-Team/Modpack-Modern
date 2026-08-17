@@ -62,7 +62,7 @@
 	"block.minecraft.nether_brick_fence": "Паркан з кератофірової цегли",
 	"block.minecraft.nether_brick_slab": "Плита з кератофірової цегли",
 	"block.minecraft.nether_brick_stairs": "Сходи з кератофірової цегли",
-	"block.minecraft.nether_brick_wall": "Стіна з кератофірової цегли",
+	"block.minecraft.nether_brick_wall": "Стіна з кератофірової цеглини",
 	"block.minecraft.nether_bricks": "Кератофірова цегла",
 	"block.minecraft.nether_wart_block": "Капелюшок багрянцю",
 	"block.minecraft.ochre_froglight": "Охристий світлобутон",
@@ -147,5 +147,6 @@
 	"item.minecraft.shield.yellow": "Жовтий дерев'яний щит",
 	"item.minecraft.smithing_template.armor_trim.additions_slot_description": "Додай пластину або вишуканий дорогоцінний камінь",
 	"item.minecraft.string": "Шовкова нитка",
-	"material.tfg.dripstone": "Травертин"
+	"material.tfg.dripstone": "Травертин",
+	"tag.item.minecraft.wool": "Блоки тканини"
 }
