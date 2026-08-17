@@ -186,43 +186,31 @@
             ]
         },
         {
-            "pakku_id": "mLtN3bX1D3dl7WDh",
-            "pakku_links": [
-                "E7ASIvLUKD1YJURv"
-            ],
-            "type": "MOD",
+            "pakku_id": "tIIGT85PQd5pJGf0",
+            "type": "RESOURCE_PACK",
+            "side": "CLIENT",
             "slug": {
-                "curseforge": "ae2-uelm"
+                "github": "Frontiers-PackForge/AE2-Midnight-and-Daybreak"
             },
             "name": {
-                "curseforge": "AE2 Unofficial Extended Life Modern"
+                "github": "AE2-Midnight-and-Daybreak"
             },
             "id": {
-                "curseforge": "1624366"
+                "github": "1083466923"
             },
             "files": [
                 {
-                    "type": "curseforge",
-                    "file_name": "appliedenergistics2-forge-15.5.0-uelm.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
+                    "type": "github",
+                    "file_name": "midnight-ae2-30e7823.zip",
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8516/890/appliedenergistics2-forge-15.5.0-uelm.jar",
-                    "id": "8516890",
-                    "parent_id": "1624366",
+                    "url": "https://github.com/Frontiers-PackForge/AE2-Midnight-and-Daybreak/releases/download/midnight-ae2-latest/midnight-ae2-30e7823.zip",
+                    "id": "394148872",
+                    "parent_id": "1083466923",
                     "hashes": {
-                        "sha1": "c9b83b39ec9247264a4e123a442d5cb7e5e769fc",
-                        "md5": "640c38629a2aea399fe6077225d3f353"
+                        "sha256": "0e1436fe51f6f6a33fcae3106482e1042f622e1431aa4c4d056d17d540c7506b"
                     },
-                    "required_dependencies": [
-                        "1173950"
-                    ],
-                    "size": 8530770,
-                    "date_published": "2026-07-26T23:15:36.147Z"
+                    "size": 5653589,
+                    "date_published": "2026-04-11T15:08:44Z"
                 }
             ]
         },
