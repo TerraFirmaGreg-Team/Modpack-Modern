@@ -1836,7 +1836,7 @@
 						"ftbfiltersystem:filter": "or(item(tfg:light_concrete_support)item(tfg:dark_concrete_support))"
 					}
 				}
-				title: "{quests.tfg_tips.create_concrete_support.task0}"
+				title: "{quests.tfg_tips.create_concrete_support.task}"
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.create_concrete_support.title}"
@@ -1863,13 +1863,13 @@
 							"ftbfiltersystem:filter": "or(item(tfg:reinforced_light_concrete_support)item(tfg:reinforced_dark_concrete_support))"
 						}
 					}
-					title: "{quests.tfg_tips.create_reinforced_concrete_support.task0}"
+					title: "{quests.tfg_tips.create_reinforced_concrete_support.task.0}"
 					type: "item"
 				}
 				{
 					id: "5A3CFB31F6A7A51C"
 					item: "tfg:steel_support"
-					title: "{quests.tfg_tips.create_reinforced_concrete_support.task1}"
+					title: "{quests.tfg_tips.create_reinforced_concrete_support.task.1}"
 					type: "item"
 				}
 			]
