@@ -226,6 +226,7 @@
   "tooltip.framedblocks.camo_rotation.true": "Wybrany kamuflaż może być obracany",
   "tooltip.framedblocks.framing_saw.have_item_none": "brak",
   "tooltip.framedblocks.framing_saw.have_x_but_need_y_item": "Masz %s, ale potrzebujesz %s",
+  "tooltip.framedblocks.framing_saw.have_x_but_need_y_item_count": "Masz %s przedmiot(ów), ale potrzebujesz co najmniej %s przedmiot(ów)",
   "tooltip.framedblocks.framing_saw.have_x_but_need_y_tag": "Masz %s, ale potrzebujesz dowolnego %s",
   "tooltip.framedblocks.framing_saw.material": "Wartość materiału: %s",
   "tooltip.framedblocks.framing_saw.output_count": "Rozmiar: %s, maksymalny rozmiar: %s",
