@@ -1662,34 +1662,26 @@
 		{
 			dependencies: ["60497014785301EB"]
 			dependency_requirement: "one_completed"
-			description: [
-				"&2Create: Steam 'n' Rails&r is a powerfull mod that allows you to build your own &5Trains&r, these can be handy to travel across the waistlands or help you transport enormus amounts of materials"
-				""
-				"&3Tip:&r if something is counfusing you can always hold &lW&r while hovering over an item for the item functionality visualization."
-			]
+			description: ["{quests.tfg_tips.create_steam_n_rails.desc}"]
 			icon: "railways:white_conductor_cap"
 			id: "24F55AFE2EC875F2"
 			shape: "octagon"
 			size: 2.0d
-			subtitle: "Stay on track"
+			subtitle: "{quests.tfg_tips.create_steam_n_rails.subtitle}"
 			tasks: [{
 				id: "0175333225F43F08"
 				title: "{quests.tasktype.checkmark}"
 				type: "checkmark"
 			}]
-			title: "Create: Steam 'n' Rails"
+			title: "{quests.tfg_tips.create_steam_n_rails.title}"
 			x: 6.5d
 			y: 9.0d
 		}
 		{
 			dependencies: ["24F55AFE2EC875F2"]
-			description: [
-				"&dTracks&r are essential for your &5Trains&r, laying paths to diffrent locations will allow you to relocate your trains."
-				""
-				"&3&lTip:&r&r Placing a track and right-clicking it with &dTracks&r in your hand, allows you to place tracks quickly and create curved shapes."
-			]
+			description: ["{quests.tfg_tips.train_tracks.desc}"]
 			id: "50AE05306D3F6F0D"
-			subtitle: "A sturdy foundation"
+			subtitle: "{quests.tfg_tips.train_tracks.subtitle}"
 			tasks: [{
 				count: 32L
 				id: "0CA3970908FE6ACF"
@@ -1703,22 +1695,16 @@
 				title: "Any #create:tracks"
 				type: "item"
 			}]
-			title: "Train Tracks"
+			title: "{quests.tfg_tips.train_tracks.title}"
 			x: 6.5d
 			y: 11.5d
 		}
 		{
 			dependencies: ["50AE05306D3F6F0D"]
-			description: [
-				"By right-clicking a &bTrain Station&r on the tracks will create an arrow on the tracks, this is the forwards direction of the &5Train&r. placing the &bTrain Station&r next to the tracks will now allow you to start creating your own &5Trains&r!"
-				""
-				"In the &bTrain Station&r interface Press Create new Train, this will project light blue spots on the tracks next to it. Placing &bTrain Casings&r on those spots will create a &5Bogey&r, you can connect up to two bogey's with building blocks to form a &5Carraige&r. Remember to use &aGlue&r!"
-				""
-				"Place &bTrain Controls&r facing in the forwards direction of your train, this direction is indicated with the arrow on the track. After Pressing Assamble Train your &5Train&r is now functional! right-click on the &bTrain Controls&r and use &lW&r and &lS&r to move it around"
-			]
+			description: ["{quests.tfg_tips.your_first_train.desc}"]
 			id: "65194B2DC42B3E07"
 			size: 2.0d
-			subtitle: "Steam ahead!"
+			subtitle: "{quests.tfg_tips.your_first_train.subtitle}"
 			tasks: [
 				{
 					id: "5369E6FB96F52926"
@@ -1736,56 +1722,46 @@
 					type: "item"
 				}
 			]
-			title: "Your First Train"
+			title: "{quests.tfg_tips.your_first_train.title}"
 			x: 6.5d
 			y: 14.0d
 		}
 		{
 			dependencies: ["65194B2DC42B3E07"]
-			description: [
-				"Sadly trains have some limitations. A single train contraption &4CAN NOT&r exceed &b20 bogeys&r and be longer than &b128 blocks&r, keep this in mind while designing your trains."
-				""
-				"&3Note:&r you can always change the limits in your config, just remember that increasing the limit will use &lmore&r server resources."
-			]
+			description: ["{quests.tfg_tips.train_limitations.desc}"]
 			icon: "createdeco:decal_warning"
 			id: "13C368BE21161068"
 			shape: "diamond"
-			subtitle: "A little bit or realism"
+			subtitle: "{quests.tfg_tips.train_limitations.subtitle}"
 			tasks: [{
 				id: "2C7B422B2A1DFD50"
 				title: "{quests.tasktype.checkmark}"
 				type: "checkmark"
 			}]
-			title: "Train Limitaions"
+			title: "{quests.tfg_tips.train_limitations.title}"
 			x: 9.0d
 			y: 14.0d
 		}
 		{
 			dependencies: ["42E33D1E45BFE93B"]
-			description: ["Using &bTrack Buffers&r can prevent derailing of your &5Trains!&r Placing them on the end of an unfinished track or at the outer-ends of your track will remove the possibility for your &5Train&r to derail. "]
+			description: ["{quests.tfg_tips.hard_stop.desc}"]
 			id: "630446139085B8A1"
-			subtitle: "No more derailing"
+			subtitle: "{quests.tfg_tips.hard_stop.subtitle}"
 			tasks: [{
 				id: "436178FDB6972602"
 				item: "railways:buffer"
 				type: "item"
 			}]
-			title: "Hard Stop"
+			title: "{quests.tfg_tips.hard_stop.title}"
 			x: 4.0d
 			y: 21.5d
 		}
 		{
 			dependencies: ["6D7248BFB6FFFCE9"]
-			description: [
-				"&5Train&r crashes are a serious problem while automating your railway system. a crash will derail a &5Train&r making it &4Inoperable&r. luckly you can prevent most crashes with a bit of infrastucture. "
-				""
-				"By right-clicking the &bTrain signal&r on the tracks close infront of an intersection and placing it next to them you can detect when a &5Train&r is moving over them! you can place a &bSemaphore&r on top of &bTrain Signal&r facing the other track. Now when a &5Train&r is moving over the intersection the other track will be blocked and the &5Trains&r won't be able to pass preventing a crash."
-				""
-				"&3Tip:&r you can stack multiple &bSemaphores&r on top of eachother and connect them to multiple &bTrain Signals&r, this gets pretty complex. For more information hold &lW&r while hovering over the &bSemaphore&r for a visualization of the functionality."
-			]
+			description: ["{quests.tfg_tips.collision_prevention.desc}"]
 			icon: "railways:semaphore"
 			id: "4868CD0A3946C201"
-			subtitle: "Redusing casualties"
+			subtitle: "{quests.tfg_tips.collision_prevention.subtitle}"
 			tasks: [
 				{
 					id: "3A7A68E9092E56FA"
@@ -1798,15 +1774,15 @@
 					type: "item"
 				}
 			]
-			title: "Colision Prevention"
+			title: "{quests.tfg_tips.collision_prevention.title}"
 			x: 6.5d
 			y: 19.0d
 		}
 		{
 			dependencies: ["65194B2DC42B3E07"]
-			description: ["Is your &5Locomotive&r out of style? Fear Not! &bLocoboilers&r and &bSmokestacks&r are here to bring immersion to your railway system. &bSmokestacks&r create steam particles indefinitely, while &bLocoboilers&r give you the posibility to build using &mround&r shapes."]
+			description: ["{quests.tfg_tips.steam_immersion.desc}"]
 			id: "39EFFFDC11B3CD64"
-			subtitle: "Air polution"
+			subtitle: "{quests.tfg_tips.steam_immersion.subtitle}"
 			tasks: [
 				{
 					id: "0E4C3A126793D5A5"
@@ -1833,15 +1809,15 @@
 					type: "item"
 				}
 			]
-			title: "Steam Immersion"
+			title: "{quests.tfg_tips.steam_immersion.title}"
 			x: 4.0d
 			y: 12.5d
 		}
 		{
 			dependencies: ["65194B2DC42B3E07"]
-			description: ["The &bHandcar&r is a deployable train that allows you to move over rails! You can pick it up with a &aWrench&r and move on, a great way to quickly move around without building a full train."]
+			description: ["{quests.tfg_tips.handcar.desc}"]
 			id: "2BC0719E8FF1613A"
-			subtitle: "A serious workout"
+			subtitle: "{quests.tfg_tips.handcar.subtitle}"
 			tasks: [{
 				id: "3A7AB8A34963ACE3"
 				item: "railways:handcar"
@@ -1852,13 +1828,9 @@
 		}
 		{
 			dependencies: ["65194B2DC42B3E07"]
-			description: [
-				"&dSeats&r allow you to sit down while operating your train. You may have noticed that the fundamental law of Inercia is conserved while the train is moving. To prevent flying off the train place a &dSeat&r on your &5Train&r and remember to secure it with &aGlue.&r"
-				""
-				"&dSeats&r are required for automation of your trains, keep this in mind for later."
-			]
+			description: ["{quests.tfg_tips.seats.desc}"]
 			id: "0B79E10AB35FDB82"
-			subtitle: "A comfortable ride"
+			subtitle: "{quests.tfg_tips.seats.subtitle}"
 			tasks: [{
 				id: "0E26552E6336BB32"
 				item: {
@@ -1871,15 +1843,15 @@
 				title: "Any #create:seats"
 				type: "item"
 			}]
-			title: "Seats"
+			title: "{quests.tfg_tips.seats.title}"
 			x: 3.0d
 			y: 14.0d
 		}
 		{
 			dependencies: ["65194B2DC42B3E07"]
-			description: ["&bFluid Tanks&r and &bItem Vaults&r can be placed on a &5Trains&r to transport items and fluids."]
+			description: ["{quests.tfg_tips.train_cargo.desc}"]
 			id: "624DBB15C2B3C8E3"
-			subtitle: "Transport at its finest"
+			subtitle: "{quests.tfg_tips.train_cargo.subtitle}"
 			tasks: [
 				{
 					id: "73D0FE82D3588DB1"
@@ -1892,24 +1864,16 @@
 					type: "item"
 				}
 			]
-			title: "Train Cargo"
+			title: "{quests.tfg_tips.train_cargo.title}"
 			x: 9.0d
 			y: 16.5d
 		}
 		{
 			dependencies: ["65194B2DC42B3E07"]
 			dependency_requirement: "one_completed"
-			description: [
-				"&bTrack Switches&r can be used to switch tracks. By right-clicking the &bTrack Switch&r on Tracks and placing it next to them will allow you to switch with Tracks!"
-				""
-				"Right-clicking the &bTrack Switch&r switches the track towards the right side, while shift-right-clicking the &bTrack Switch&r switches them in towards the left side."
-				""
-				"You can automate the process of switching tracks with Redstone, supplying a redstone signal to the sides of the &bTrack Switch&r will force it to change the track direction depening on the side from where the signal was recieved."
-				""
-				"&3Note:&r &bTrack Switches&r change there orientation depening on there possition to the track and the orientation of the player that placed it. Placing the &bTrack Switch&r on the right-hand-side of the tracks while &lFACING&r the tracks themselfs will allign them in a way the switch is alligned parrallel with the tracks"
-			]
+			description: ["{quests.tfg_tips.switching_tracks.desc}"]
 			id: "6D7248BFB6FFFCE9"
-			subtitle: "Parting ways"
+			subtitle: "{quests.tfg_tips.switching_tracks.subtitle}"
 			tasks: [
 				{
 					id: "5660F88D800B2086"
@@ -1922,47 +1886,35 @@
 					type: "item"
 				}
 			]
-			title: "Switching Tracks"
+			title: "{quests.tfg_tips.switching_tracks.title}"
 			x: 6.5d
 			y: 16.5d
 		}
 		{
 			dependencies: ["4868CD0A3946C201"]
-			description: [
-				"Does loading your goods take too much time? did you ever just want to leave the empty &5Carraige&r behind? Now you can!"
-				""
-				"By right-clicking a &bTrain Coupler&r on the tracks and placing it next to them will spawn two &dNodes&r 5 block apart from eachother, you can change the distance of the nodes by holding a wrench and hold-right-click on the &bTrain Couplers&r top-side."
-				""
-				"By powering the &bTrain Coupler&r with a redstone signal while two separate &5Carraiges&r are above the Nodes the &5Carraiges&r will split! They wont be connected anymore and your &5Train&r is free to go wherever it wants. Do you want to connect them back? you can do it by repeating the same steps!"
-			]
+			description: ["{quests.tfg_tips.splitting_carriages.desc}"]
 			id: "42E33D1E45BFE93B"
-			subtitle: "Train management"
+			subtitle: "{quests.tfg_tips.splitting_carriages.subtitle}"
 			tasks: [{
 				id: "5DE55F0DCA4214C1"
 				item: "railways:track_coupler"
 				type: "item"
 			}]
-			title: "Splitting Carraiges"
+			title: "{quests.tfg_tips.splitting_carriages.title}"
 			x: 6.5d
 			y: 21.5d
 		}
 		{
 			dependencies: ["624DBB15C2B3C8E3"]
-			description: [
-				"&bTrain Obeservators&r can be used to detect the cargo transported by the &5Train&r. by right-clicking the &bTrain Observator&r and placing it next to the tracks, you can filter the train cargo by placing an item on top of the block."
-				""
-				"Once a train with the filterd cargo passes over the &bTrain Observator&r a redstone signal will be send from the block!"
-				""
-				"&3Tip:&r you can use filters to filter multiple items or fluid at once!"
-			]
+			description: ["{quests.tfg_tips.detecting_cargo.desc}"]
 			id: "69F5BB121E93A5A5"
-			subtitle: "Customs control"
+			subtitle: "{quests.tfg_tips.detecting_cargo.subtitle}"
 			tasks: [{
 				id: "0DEE5A0E718DDC29"
 				item: "create:track_observer"
 				type: "item"
 			}]
-			title: "Detecting Cargo"
+			title: "{quests.tfg_tips.detecting_cargo.title}"
 			x: 9.0d
 			y: 19.0d
 		}
@@ -1971,17 +1923,11 @@
 				"69F5BB121E93A5A5"
 				"0E26552E6336BB32"
 			]
-			description: [
-				"It's time to automate your railway system! by placing an &aMetal Casing&r and right-clicking a &bConductors Cap&r on it you can spawn your own conductor. Cute isn't he? You can move him around with a &bLead&r."
-				""
-				"Placing him next to a &aLever&r and looking at him will make him pull the lever, this is usefull for &aTrack Switches&r. You can also Place him on a &aSeat&r in your train. by giving him a &bTrain Schedule&r you can make him ride your train between your &aTrain Stations&r."
-				""
-				"Right-clicking a &bTrain Schedule&r allows you to select the &aTrain Station&r to which the &5Train&r should go and how long it needs to wait at a specific station. you can also select if the &5Train&r should loop the route or stop at a specific point."
-			]
+			description: ["{quests.tfg_tips.automated_deliveries.desc}"]
 			icon: "create:schedule"
 			id: "374304894C62001B"
 			size: 2.0d
-			subtitle: "Your own employees"
+			subtitle: "{quests.tfg_tips.automated_deliveries.subtitle}"
 			tasks: [
 				{
 					id: "375D0EB7DF147A96"
@@ -2006,21 +1952,15 @@
 					type: "item"
 				}
 			]
-			title: "Automated Delieveries"
+			title: "{quests.tfg_tips.automated_deliveries.title}"
 			x: 12.0d
 			y: 19.0d
 		}
 		{
 			dependencies: ["624DBB15C2B3C8E3"]
-			description: [
-				"&bPortable interfaces&r allow you to move items beteen your trains and your storage. Placing an &bPortable Interface&r on the train and conecting it to a fault or fluid tank will allow you to move on and off your train! The interfaces require a &ltwo block gap&r between eachoter to work."
-				""
-				"By supplying the &lPortable Interface&r next to the tracks with items will cause them to be moved onto the train, once the interfaces are connected. While requesting items from the interface will move them off the train. This can be done with &aHoppers, Item and Fluid Pipes.&r"
-				""
-				"&3Note:&r an interface &4DOESN'T&r have it's own storage its an extencion of the Fault or the Fluid Tank, keep this in mind while working with them."
-			]
+			description: ["{quests.tfg_tips.cargo_management.desc}"]
 			id: "2EC917FB326D5A58"
-			subtitle: "Loading and unloading"
+			subtitle: "{quests.tfg_tips.cargo_management.subtitle}"
 			tasks: [
 				{
 					count: 2L
@@ -2035,15 +1975,15 @@
 					type: "item"
 				}
 			]
-			title: "Cargo Management"
+			title: "{quests.tfg_tips.cargo_management.title}"
 			x: 11.0d
 			y: 17.0d
 		}
 		{
 			dependencies: ["624DBB15C2B3C8E3"]
-			description: ["By installing &bMulti-Fluid Tanks&r on your train you dont need to worry about transporting multiple fluids at the same time!"]
+			description: ["{quests.tfg_tips.efficient_trips.desc}"]
 			id: "5CD2605615A0AA20"
-			subtitle: "Efficient trips"
+			subtitle: "{quests.tfg_tips.efficient_trips.subtitle}"
 			tasks: [
 				{
 					id: "32DBE62198A0299F"
@@ -2061,30 +2001,24 @@
 		}
 		{
 			dependencies: ["374304894C62001B"]
-			description: ["Your &5Train&r can use Solid fuels to accelerate the train up to 50%!, by supplying the &5Train&r with any kind of &bCoal&r your trains speed will increase for 5min per piece of Coal."]
+			description: ["{quests.tfg_tips.fueling_your_train.desc}"]
 			icon: "minecraft:charcoal"
 			id: "31B91C1FF958CEC3"
-			subtitle: "Faster than warpspeed, kinda..."
+			subtitle: "{quests.tfg_tips.fueling_your_train.subtitle}"
 			tasks: [{
 				id: "4BCB9F78ADFD3693"
 				title: "{quests.tasktype.checkmark}"
 				type: "checkmark"
 			}]
-			title: "Fueling Your Train"
+			title: "{quests.tfg_tips.fueling_your_train.title}"
 			x: 11.0d
 			y: 21.0d
 		}
 		{
 			dependencies: ["374304894C62001B"]
-			description: [
-				"&bLiquid fuels&r are way more energy dense compared to Solid fuels, but they require a bit more infrastructure. By placing an &bFuel Tank&r on the Train and supplying it using the &bFuel Interface&r your &5Train&r will consume 100mb of fuel and accelerate it by 50%. Liquid fuels last &lA LOT&r longer compared to &aCoal&r."
-				""
-				"E.g. 100mb of Rocket Fuel lasts for &l6 HOURS&r, that's &l60 HOURS&r per bucket."
-				""
-				"You can use &aCreosote, Benzene, Diesel&r and way more as fuel in your train, are you unsure if your liquid classifies as a fuel? try pumping it into a &bFuel Tank&r, if the tank accepts the liquid it can be used as fuel!"
-			]
+			description: ["{quests.tfg_tips.liquid_train_fuel.desc}"]
 			id: "41E8E1F8E7ACFD36"
-			subtitle: "Concentrated energy"
+			subtitle: "{quests.tfg_tips.liquid_train_fuel.subtitle}"
 			tasks: [
 				{
 					id: "2DF381C73A33328D"
@@ -2098,20 +2032,15 @@
 					type: "item"
 				}
 			]
-			title: "Liquid Train Fuel"
+			title: "{quests.tfg_tips.liquid_train_fuel.title}"
 			x: 13.0d
 			y: 21.0d
 		}
 		{
 			dependencies: ["374304894C62001B"]
-			description: [
-				"The &bConductor Whistle&r can be used to make a &dTrain Conductor&r move to a specific place on the tracks, ideal if you want to modify a working &5Train&r."
-				"Right-clicking it on a &dTrain Conductor&r will bound the item to the them, by right-clicking on the tracks the &5Train&r will move towards your selected spot, if the &5Train&r is not able to acces the specified location it will tell you so in the game chat."
-				""
-				"Note: The &bConductor Whistle&r will &4OVERRIDE&r the &aTrain Schedule&r, if you wish for your &dConductor&r to continue his journey you have to re-give him the &aTrain Schedule&r by right-clicking him &ltwice&r with an empty hand."
-			]
+			description: ["{quests.tfg_tips.conductor_whistle.desc}"]
 			id: "48138F7AFC3B8611"
-			subtitle: "I think i got tinnitus"
+			subtitle: "{quests.tfg_tips.conductor_whistle.subtitle}"
 			tasks: [{
 				id: "1134B4D5982EC316"
 				item: "railways:conductor_whistle"
@@ -2122,35 +2051,30 @@
 		}
 		{
 			dependencies: ["374304894C62001B"]
-			description: [
-				"Ever wonderd where your &5Train&r goes? or did you lose it and cannot find it? Fear not!"
-				"By giving you &dTrain Conductor&r &aEngineer's Goggles&r and a &bRemote Lens&r you can now look from the perspective of the &dTrain Conductor&r."
-				""
-				"Right-click the item on the &dTrain Conductor&r to bind it to the item and use it whenever you want to inspect your &5Train!&r"
-			]
+			description: ["{quests.tfg_tips.remote_lens.desc}"]
 			icon: "create:goggles"
 			id: "0A9A54599EE46D5F"
-			subtitle: "Legalised oversight"
+			subtitle: "{quests.tfg_tips.remote_lens.subtitle}"
 			tasks: [{
 				id: "3D1B33716D5CF073"
 				item: "railways:remote_lens"
 				type: "item"
 			}]
-			title: "Remote Lens"
+			title: "{quests.tfg_tips.remote_lens.title}"
 			x: 14.5d
 			y: 19.0d
 		}
 		{
 			dependencies: ["630446139085B8A1"]
-			description: ["It happens to the best of us. You accidentally break the tracks or your &5Train&r somehow escaped your tracks or two trains colided with eachoter. And not it's &lDerailed&r. Luckly there is an easy fix for that, by right-clicking with a &aWrench&r to select it and then right-click again on the tracks to place it back. Did you place it the train facing the wrong direction? you can select it again and place it down while facing the other direction, this will make the &5Train&r face the other direction!"]
+			description: ["{quests.tfg_tips.back_on_tracks.desc}"]
 			icon: "create:wrench"
 			id: "5655D6E5228A467E"
-			subtitle: "Why didn't you use Track Buffers ???"
+			subtitle: "{quests.tfg_tips.back_on_tracks.subtitle}"
 			tasks: [{
 				id: "7842A67897C575D4"
 				type: "checkmark"
 			}]
-			title: "Back On Tracks"
+			title: "{quests.tfg_tips.back_on_tracks.title}"
 			x: 1.5d
 			y: 21.5d
 		}
