@@ -10,7 +10,7 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Конусообразный",
+			"title": "Аэронос",
 			"item": "ad_astra:aeronos_stem",
 			"text": "$(bold)Конусообразный гриб$()$(br)$(thing)Температура$(): -100°C и выше$(br)Чаще встречается на востоке."
 		},
@@ -28,9 +28,9 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Гласивник",
+			"title": "Гласиан",
 			"item": "ad_astra:glacian_log",
-			"text": "$(bold)Гласивник$()$(br)$(thing)Температура$(): -107°C и ниже$(br)Встречается на востоке и западе."
+			"text": "$(bold)Гласиан$()$(br)$(thing)Температура$(): -107°C и ниже$(br)Встречается на востоке и западе."
 		},
 		{
 			"type": "patchouli:spotlight",

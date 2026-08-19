@@ -240,7 +240,8 @@ global.TFC_GREENHOUSE_VEGETABLE_RECIPE_COMPONENTS = /** @type {const} */ ([
     { input: "tfg:peanut_seeds", output: "tfg:peanut_product"},
     { input: "tfg:cucumber_seeds", output: "tfg:cucumber_product"},
     { input: "tfg:cassava_seeds", output: "tfg:cassava_product"},
-    { input: "tfg:ghost_pepper_seeds", output: "beneath:ghost_pepper"}
+    { input: "tfg:ghost_pepper_seeds", output: "beneath:ghost_pepper"},
+    { input: "tfg:cotton_seeds", output: "tfg:cotton_product"}
 ]);
 
 global.TFC_GREENHOUSE_BERRY_RECIPE_COMPONENTS = /** @type {const} */ ([

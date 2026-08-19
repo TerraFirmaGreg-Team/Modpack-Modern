@@ -2,6 +2,23 @@
 "use strict";
 
 function registerJelliesRecipes(event) {
+	// Jellie Nutritional Mash
+	event.shaped('4x jellies:jellie/food/nutritional_mash', [
+		' A ',
+		'ABA',
+		' A '
+	], {
+		A: '#tfg:items/jellie_nutritional_mash_ingredient',
+		B: '#forge:tools/mortars'
+	}).id('tfg:shaped/jellies_nutritional_mash')
+
+	event.recipes.gtceu.mixer('tfg:jellies_nutritional_mash')
+		.circuit(8)
+		.itemInputs('#tfg:items/jellie_nutritional_mash_ingredient', '#tfg:items/jellie_nutritional_mash_ingredient', '#tfg:items/jellie_nutritional_mash_ingredient', '#tfg:items/jellie_nutritional_mash_ingredient')
+		.itemOutputs('4x jellies:jellie/food/nutritional_mash')
+		.duration(100)
+		.EUt(GTValues.VA[GTValues.LV])
+
 	// Jellie Slime Ball to Minecraft Slime Ball
 	event.custom({
 		type: "ae2:transform",

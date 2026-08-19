@@ -3,9 +3,16 @@
 function registerTFGClothRecipes(event) {
 
 	// Phantom Silk
+	
+	event.recipes.tfc.damage_inputs_shapeless_crafting(
+		event.shapeless('8x tfg:phantom_thread', [
+			'minecraft:phantom_membrane',
+			'#tfg:tools/spindles'
+		]).id('tfg:shapeless/phantom_thread'))
+
 	event.recipes.gtceu.wiremill('tfg:wiremill/phantom_thread')
 		.itemInputs('1x minecraft:phantom_membrane')
-		.itemOutputs('16x tfg:phantom_thread')
+		.itemOutputs('8x tfg:phantom_thread')
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.ULV])
 
@@ -22,12 +29,6 @@ function registerTFGClothRecipes(event) {
 		8,
 		'tfg:block/phantom_silk_block'
 	)
-	
-	event.recipes.tfc.damage_inputs_shapeless_crafting(
-		event.shapeless('16x tfg:phantom_thread', [
-			'minecraft:phantom_membrane',
-			'#tfg:tools/spindles'
-		]).id('tfg:shapeless/phantom_thread'))
 
 	event.recipes.tfc.loom(
 		'8x tfg:phantom_silk_block',
@@ -35,6 +36,11 @@ function registerTFGClothRecipes(event) {
 		4,
 		'tfg:block/phantom_silk_block'
 	)
+
+	event.recipes.vintageimprovements.coiling('16x tfg:phantom_thread', 'minecraft:phantom_membrane')
+		.processingTime(100 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
+		.id(`tfg:vi/coiling/phantom_thread`)
+		.springColor('E1C4C4')
 
 	event.recipes.gtceu.assembler('tfg:assembler/phantom_silk_block')
 		.itemInputs('tfg:phantom_silk')
@@ -44,11 +50,18 @@ function registerTFGClothRecipes(event) {
 		.EUt(4)
 
 	// Nylon
+
+	event.recipes.vintageimprovements.coiling('32x tfg:polycaprolactam_string', ChemicalHelper.get(TagPrefix.ingot, GTMaterials.Polycaprolactam, 1))
+		.processingTime(100 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
+		.id(`tfg:vi/coiling/nylon_string`)
+		.springColor('000000')
+
 	event.recipes.gtceu.wiremill('tfg:wiremill/polycaprolactam_string')
 		.itemInputs(ChemicalHelper.get(TagPrefix.ingot, GTMaterials.Polycaprolactam, 1))
 		.itemOutputs('32x tfg:polycaprolactam_string')
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.ULV])
+
 	event.recipes.gtceu.assembler('tfg:assembler/polycaprolactam_fabric')
 		.itemInputs('16x tfg:polycaprolactam_string')
 		.itemOutputs('1x tfg:polycaprolactam_fabric')
@@ -99,6 +112,15 @@ function registerTFGClothRecipes(event) {
 		.EUt(4)
 
 	// Wool
+	event.recipes.vintageimprovements.coiling('8x tfc:wool_yarn', 'tfc:wool')
+		.processingTime(100 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
+		.id(`tfg:vi/coiling/wool_yarn`)
+
+	event.recipes.vintageimprovements.coiling('8x tfc:wool_yarn', 'tfg:glacian_wool')
+		.processingTime(100 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
+		.id(`tfg:vi/coiling/glacian_wool_yarn`)
+		.springColor('FFCCFC')
+
 	event.recipes.gtceu.wiremill('tfg:tfc/wool_yarn')
 		.itemInputs('tfc:wool')
 		.itemOutputs('8x tfc:wool_yarn')
@@ -210,6 +232,23 @@ function registerTFGClothRecipes(event) {
 		.EUt(4)
 
 	// Cotton
+	event.recipes.tfc.damage_inputs_shapeless_crafting(
+		event.shapeless('4x tfc_textile:cotton_string', [
+			'tfg:cotton_product',
+			'#tfg:tools/spindles'
+		]).id('tfg:shapeless/cotton_string')
+	)
+
+	event.recipes.vintageimprovements.coiling('4x tfc_textile:cotton_string', 'tfg:cotton_product')
+		.processingTime(20 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
+		.springColor('FFFFFF')
+		.id('tfg:vi_spin_cotton_string')
+
+	event.recipes.gtceu.wiremill('tfg:spin_cotton_string')
+		.itemInputs('tfg:cotton_product')
+		.itemOutputs('4x tfc_textile:cotton_string')
+		.duration(80)
+		.EUt(GTValues.VA[GTValues.LV])
 	
 	event.recipes.tfc.loom(
 		'1x tfc_textile:cotton_cloth',
@@ -239,6 +278,15 @@ function registerTFGClothRecipes(event) {
 		.duration(100)
 		.EUt(4)
 
+	event.recipes.gtceu.coke_oven('tfg:cotton_balls')
+		.itemInputs('tfg:cotton_product')
+		.itemOutputs('gtceu:charcoal_dust')
+		.duration(10 * 20)
+
+	event.recipes.gtceu.coke_oven('tfg:cotton_cloth')
+		.itemInputs('tfc_textile:cotton_cloth')
+		.itemOutputs('gtceu:charcoal_dust')
+		.duration(10 * 20)
 
 	//#region Spindle Recipes
 	
