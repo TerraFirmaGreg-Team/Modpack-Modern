@@ -10,12 +10,12 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Les plantations dans le Beneath fonctionnent pareillement à la surface ; ayant des exigences concernant humidité, température ainsi que nutriments. Elles peuvent aussi être cultivées dans une $(thing)serre$().$(br2)Attention  :  les cultures plantées dans le Beneath nécessitent toujours un niveau de lumière minimum de 12, qui n'est pas présent naturellement. Ce problème peut être résolu par des $(l:tfc:beneath/curious_blocks#blackstone_aqueduct)aqueducs de lave$() ou tout autre source lumineuse."
+			"text": "Les plantations dans le Beneath fonctionnent comme à la surface ; ayant des exigences concernant hydratation, température ainsi que nutriments. Elles peuvent aussi être cultivées dans une $(thing)serre$().$(br2)Attention  :  les cultures plantées dans le Beneath nécessitent toujours un niveau de lumière minimum de 12, qui n'est pas présent naturellement. Ce problème peut être résolu par des $(l:tfc:beneath/curious_blocks#blackstone_aqueduct)aqueducs de lave$() ou tout autre source lumineuse."
 		},
 		{
 			"type": "patchouli:text",
 			"title": "Contenu",
-			"text": "$(li)$(l:tfc:beneath/beneath_crops#cassava)Cassava$()$(li)$(l:tfc:beneath/beneath_crops#peanut)Peanut$()$(li)$(l:tfc:beneath/beneath_crops#beans)Blackstone Beans$()$(li)$(l:tfc:beneath/beneath_crops#ghost_pepper)Ghost Pepper$()"
+			"text": "$(li)$(l:tfc:beneath/beneath_crops#cassava)Manioc$()$(li)$(l:tfc:beneath/beneath_crops#peanut)Cacahuète$()$(li)$(l:tfc:beneath/beneath_crops#beans)Haricot de pierre noir$()$(li)$(l:tfc:beneath/beneath_crops#ghost_pepper)Bhut jolokia$()$(li)$(l:tfc:beneath/beneath_crops#cotton)Coton$()"
 		},
 		{
 			"type": "patchouli:text",

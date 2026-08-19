@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Зміст",
-			"text": "$(li)$(l:tfc:beneath/beneath_crops#cassava)Маніок$()\n$(li)$(l:tfc:beneath/beneath_crops#peanut)Арахіс$()\n$(li)$(l:tfc:beneath/beneath_crops#beans)Чорнокам’яна квасоля$()\n$(li)$(l:tfc:beneath/beneath_crops#ghost_pepper)Примарний перець$()"
+			"text": "$(li)$(l:tfc:beneath/beneath_crops#cassava)Маніок$()\n$(li)$(l:tfc:beneath/beneath_crops#peanut)Арахіс$()\n$(li)$(l:tfc:beneath/beneath_crops#beans)Чорнокам’яна квасоля$()\n$(li)$(l:tfc:beneath/beneath_crops#ghost_pepper)Примарний перець$()$(li)$(l:tfc:beneath/beneath_crops#cotton)Бавовна$()"
 		},
 		{
 			"type": "patchouli:text",
