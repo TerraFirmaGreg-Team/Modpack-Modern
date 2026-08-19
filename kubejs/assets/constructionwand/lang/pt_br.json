@@ -7,7 +7,6 @@
 	"constructionwand.description.key.sneak": "Esgueirar-se",
 	"constructionwand.description.key.sneak_opt": "Esgueirar-se+%s",
 	"constructionwand.description.wand": "o %1$s pode colocar até %2$d bloqueios ao lado de um prédio de frente para você e dura %3$s.\n\nCalma %5$s e role para alterar a restrição de posicionamento (horizontal, vertical, norte/sul, leste/oeste, sem fechadura).\n\nAbra a tela de opção com %6$s§9+Clique com o botão direito do mouse§0.\n\n§5§nDESFAZER§0§r\nMantendo pressionada §9Esgueirar-se+§0%4$s Enquanto olha para um bloco, mostrará os últimos blocos que você colocou com uma borda verde ao redor deles. §9Esgueirar-se+§0%4$s§9+Certa clicando§0 Qualquer um deles desfazerá a operação, oferecendo todos os itens de volta.Se você usou o núcleo de destruição, ele restaurará os blocos.\n\n§5§nRECIPIENTES§0§r\nCaixas Shulker, pacotes e muitos contêineres de outros mods podem fornecer blocos de construção para a varinha.\n\n§5§nPrioridade imediata§0§r\nTer blocos em sua mão os colocará em vez do bloco que você está olhando.",
-	"constructionwand.option.cores": "",
 	"constructionwand.option.cores.constructionwand:core_angel": "§6angelCore",
 	"constructionwand.option.cores.constructionwand:core_angel.desc": "Coloque atrás dos quarteirões e no meio do ar",
 	"constructionwand.option.cores.constructionwand:core_destruction": "§cNúcleo de destruição",

@@ -1,5 +1,4 @@
 {
-	"behavior.portable_scanner.state": "요리 시간: %s",
 	"block.gtceu.cupronickel_coil_block": "백동 코일 블럭",
 	"block.gtceu.hp_steam_alloy_smelter": "고압 증기 합금 제련기",
 	"block.gtceu.hp_steam_compressor": "고압 증기 압축기",
@@ -32,8 +31,8 @@
 	"cover.fluid_filter.title": "유체 필터",
 	"cover.machine_controller.normal": "일반",
 	"cover.pump.fluid_filter.title": "유체 필터",
-	"fluid_cell.empty": "비어 있음",
 	"fluid.empty": "비어 있음",
+	"fluid_cell.empty": "비어 있음",
 	"gtceu.creative.tank.fluid": "유체",
 	"gtceu.direction.tooltip.down": "아래쪽",
 	"gtceu.direction.tooltip.front": "앞",

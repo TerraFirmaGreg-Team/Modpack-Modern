@@ -7,7 +7,6 @@
 	"constructionwand.description.key.sneak": "Sneak",
 	"constructionwand.description.key.sneak_opt": "Sneak+%s",
 	"constructionwand.description.wand": "The %1$s can place up to %2$d blocks at the side of a building facing you and lasts %3$s.\n\nHold down %5$s and scroll to change placement restriction (Horizontal, Vertical, North/South, East/West, No lock).\n\nOpen the option screen with %6$s§9+Right click§0.\n\n§5§nUNDO§0§r\nHolding down §9Sneak+§0%4$s while looking at a blocks will show you the last blocks you placed with a green border around them. §9Sneak+§0%4$s§9+Right clicking§0 any of them will undo the operation, giving you all the items back. If you used the Destruction core, it will restore the blocks.\n\n§5§nCONTAINERS§0§r\nShulker boxes, bundles and many containers from other mods can provide building blocks for the wand.\n\n§5§nOFFHAND PRIORITY§0§r\nHaving blocks in your offhand will place them instead of the block you're looking at.",
-	"constructionwand.option.cores": "",
 	"constructionwand.option.cores.constructionwand:core_angel": "§6Angel Core",
 	"constructionwand.option.cores.constructionwand:core_angel.desc": "Place behind blocks and in mid air",
 	"constructionwand.option.cores.constructionwand:core_destruction": "§cDestruction Core",
