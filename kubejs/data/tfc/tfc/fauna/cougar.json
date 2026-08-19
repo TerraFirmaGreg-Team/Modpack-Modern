@@ -1,4 +1,5 @@
 {
+  "__comment__": "TFC original chance defaults to 1, so every otherwise-eligible check passes this test. Chance 4 allows 1 in 4; climate values are unchanged.",
   "chance": 4,
   "climate": {
     "min_temperature": -10,

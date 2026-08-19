@@ -1,5 +1,5 @@
 {
-  "__comment__": "This file was automatically created by mcresources",
+  "__comment__": "TFC chance defaults to 1, so every otherwise-eligible check passes this test. Chance 3 allows 1 in 3; the existing TFG climate override is unchanged.",
   "chance": 3,
   "climate": {
     "min_temperature": -20,

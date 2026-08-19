@@ -1,4 +1,5 @@
 {
+  "__comment__": "TFC original: min temperature 14, min rainfall 225, min forest edge. This only lowers min temperature from 14 to 12.",
   "climate": {
     "min_temperature": 12,
     "min_rainfall": 225,

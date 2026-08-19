@@ -1,4 +1,5 @@
 {
+  "__comment__": "TFC original: temperature 0..35, rainfall 70..300, no forest limit. This lowers min temperature to -10, raises max rainfall to 350, and limits sheep to sparse-or-more-open forest.",
   "climate": {
     "min_temperature": -10,
     "max_temperature": 35,
