@@ -74,12 +74,12 @@
       {
         "type": "patchouli:crafting",
         "recipe": "tfc:crafting/parchment",
-        "text": "À partir de la peau traitée, de la $(l:mechanics/glassworking#lime)poudre de chaux$(), de la farine et un œuf frais vienne compléter le processus de traitement en donnent du papier utilisable."
+        "text": "À partir de la peau traitée, de la $(l:mechanics/glassworking#lime)poudre de chaux$(), de la farine et un œuf frais viennent compléter le processus de traitement en donnent du papier utilisable."
       },
       {
         "type": "patchouli:text",
         "anchor": "paperfromwood",
-        "text": "La $(thing)Création de papier à partir de bois$() est une technique ancienne nécessitant le traitement de types de bois durs en feuilles de bois, qui sont ensuite décomposée en pulpe puis pressées, séchées et grattées pour faire du papier.$(br2)Notez que les bois tendres ne sont pas adaptés à la fabrication de papier.",
+        "text": "La $(thing)Création de papier à partir de bois$() est une technique ancienne nécessitant le traitement de types de bois durs en feuilles de bois, qui sont ensuite décomposée en pulpes puis pressées, séchées et grattées pour faire du papier.$(br2)Notez que les bois tendres ne sont pas adaptés à la fabrication de papier.",
         "title": "Papier à partir de bois"
       },
       {
