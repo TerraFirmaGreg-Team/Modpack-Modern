@@ -1,0 +1,9 @@
+{
+  "climate": {
+    "min_temperature": -10,
+    "max_temperature": 35,
+    "min_rainfall": 70,
+    "max_rainfall": 350,
+    "max_forest": "sparse"
+  }
+}

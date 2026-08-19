@@ -1,0 +1,8 @@
+{
+  "chance": 4,
+  "climate": {
+    "min_temperature": -10,
+    "max_temperature": 21,
+    "min_rainfall": 150
+  }
+}
