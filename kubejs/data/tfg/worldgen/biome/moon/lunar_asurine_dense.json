@@ -76,7 +76,8 @@
 		}
 	},
 	"spawners": {
-		"ambient": [
+		"ambient": [],
+		"axolotls": [
 			{
 				"type": "jellies:certus",
 				"maxCount": 1,
@@ -84,7 +85,6 @@
 				"weight": 100
 			}
 		],
-		"axolotls": [],
 		"creature": [
 			{
 				"type": "species:birt",

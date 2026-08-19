@@ -462,3 +462,36 @@ entities:
     # Default: 32
     gestationDays: 16
 
+  tetoJellie:
+    # Maximum familiarity that a wild jellie can reach.
+    # Default: 1
+    familiarityCap: 1.0
+
+    # How many days it takes a jellie to reach adulthood.
+    # Default: 16
+    adulthoodDays: 16
+
+    # How many uses a jellie has before becoming old.
+    # Default: 120
+    uses: 120
+
+    # Does jellie eat rotten food.
+    # Default: false
+    eatsRottenFood: false
+
+    # How long it takes for a jellie to produce products.
+    # Default: 23500
+    produceTicks: 23500
+
+    # Minimum familiarity needed for jellie to produce products.
+    # Default: 0.15
+    produceFamiliarity: 0.15
+
+    # How many children a jellie can have at once.
+    # Default: 1
+    childCount: 2
+
+    # How long it takes for a jellie to be born.
+    # Default: 32
+    gestationDays: 16
+

@@ -2,9 +2,34 @@
 "use strict";
 
 function registerJelliesItemTags(event) {
-	event.add("jellies:jellie_food", "#forge:mushrooms");
-	event.add("jellies:jellie/slime_ball/plant", "#tfc:compost_greens_high")
-	event.add("jellies:jellie/slime_ball/phosphorum", "#tfc:compost_browns_high")
+	const NUTRITIONAL_MASH_INGREDIENTS = [
+		// Overall Liked
+		'#tfc:foods/fruits',
+		'#forge:mushrooms',
+
+		// Moon
+		'minecraft:ochre_froglight',
+		'minecraft:verdant_froglight',
+		'minecraft:pearlescent_froglight',
+		'species:birt_egg',
+
+		// Mars
+		'tfg:saplings/crimson',
+		'tfg:saplings/warped',
+		'tfg:saplings/alphacene',
+		'tfg:saplings/strophar',
+		'tfg:saplings/aeronos',
+		'tfg:saplings/glacian',
+		'betterend:aurant_polypore',
+		'betterend:purple_polypore'
+	]
+
+	NUTRITIONAL_MASH_INGREDIENTS.forEach(ingredient => {
+		event.add('tfg:items/jellie_nutritional_mash_ingredient', ingredient)
+	})
+
+	event.add('tfc:compost_greens_high', 'jellies:jellie/slime_ball/plant')
+	event.add('tfc:compost_browns_high', 'jellies:jellie/slime_ball/phosphorum')
 }
 
 function registerJelliesEntityTags(event) {
