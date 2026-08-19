@@ -14,6 +14,8 @@ function registerJelliesItemTags(event) {
 		'species:birt_egg',
 
 		// Mars
+		'tfg:saplings/crimson',
+		'tfg:saplings/warped',
 		'tfg:saplings/alphacene',
 		'tfg:saplings/strophar',
 		'tfg:saplings/aeronos',
@@ -25,12 +27,6 @@ function registerJelliesItemTags(event) {
 	NUTRITIONAL_MASH_INGREDIENTS.forEach(ingredient => {
 		event.add('tfg:items/jellie_nutritional_mash_ingredient', ingredient)
 	})
-
-
-	event.add("tfg:items/jellie_nutritional_mash_ingredient", "#beneath:mushrooms")
-	event.add("tfg:items/jellie_nutritional_mash_ingredient", "#beneath:mushrooms")
-	event.add("tfg:items/jellie_nutritional_mash_ingredient", "#beneath:mushrooms")
-	event.add("tfg:items/jellie_nutritional_mash_ingredient", "#beneath:mushrooms")
 
 	event.add('tfc:compost_greens_high', 'jellies:jellie/slime_ball/plant')
 	event.add('tfc:compost_browns_high', 'jellies:jellie/slime_ball/phosphorum')
