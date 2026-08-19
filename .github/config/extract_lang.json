@@ -112,9 +112,15 @@
   "backup_dir": ".github/script/extract_lang/backup",
   "log_dir": ".github/script/extract_lang/logs",
   "keep_namespaces": ["tfg"],
+  "drop_empty_en_keys": true,
+  "drop_nontranslatable_values": true,
+  "drop_nontranslatable_exceptions": ["tfg"],
   "drop_key_patterns": [
     "_{1,3}comment_{0,2}\\d?",
     "advancements?\\.",
-    "achievement?\\."
+    "achievement?\\.",
+    "create\\.boiler\\.\\w+_dots",
+    "item.createaddition.brass_figurine.tooltip.summary",
+    "item\\.firmaciv\\.(canoe(?:_with_paddle)?|kayak_with_paddle|rowboat|sloop)_icon_only"
   ]
 }
