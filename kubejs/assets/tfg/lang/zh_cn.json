@@ -5613,7 +5613,7 @@
 	"quests.gregtech_energy.blast_oc.title": "高炉超频",
 	"quests.gregtech_energy.blast_oc.subtitle": "你不需要理解这个",
 	"quests.gregtech_energy.blast_oc.desc.1": "如果你还没有了解完美超频，你应该先阅读上面的任务。\n\n这三个多方块结构共享一个特殊能力：它们可以根据机器的&c温度&r进行&e完美超频&r。你可以通过点击控制器来检查当前温度。\n\n有两种方法可以提高温度：\n1)使用更高等级的能源输入\n2)升级线圈",
-	"quests.gregtech_energy.blast_oc.desc.2": "要查看线圈温度，只需将鼠标悬停于上方时&3按住Shift键&r。\n\n在了解机器温度后，你还需要知道配方的需求温度。最简单的查询方式是使用EMI。\n\n获得这两个数值后，你可以通过简易计算判断是否适用完美超clock：\n&b机器的当前温度需比配方需求温度高出至少1800K（每超频一级）&r。",
+	"quests.gregtech_energy.blast_oc.desc.2": "要查看线圈温度，只需将鼠标悬停于上方时&3按住Shift键&r。\n\n在了解机器温度后，你还需要知道配方的需求温度。最简单的查询方式是使用EMI。\n\n获得这两个数值后，你可以通过简易计算判断是否适用完美超频：\n&b机器的当前温度需比配方需求温度高出至少1800K（每超频一级）&r。",
 	"quests.gregtech_energy.blast_oc.desc.3": "例子：\n-不锈钢配方需要&c1700K&r并且是&aHV&r等级。\n-你的电弧炉是&bLuV&r等级，温度为&c5900K&r。\n-HV到LuV是&a3个超频等级&r。\n-1800x3=&c5400K&r→加上配方的基础温度：需要5400+1700=&c7100K&r来实现完全完美超频。\n-由于你的机器只有&c5900K&r，你将实现从HV到EV和EV到IV的完美超频，但只能实现从IV到LuV的正常超频。\n\n所以配方将需要1.7秒，而不是完全超频时的0.85秒。\n\n感到不知所措？只需记住：更好的线圈=更快更便宜的配方。",
 	"quests.gregtech_energy.blast_oc.task": "更好的线圈更好用，懂了",
 	"quests.gregtech_energy.subtick.title": "子刻（Subtick）",
