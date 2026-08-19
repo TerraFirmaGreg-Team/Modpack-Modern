@@ -97,7 +97,11 @@
     "extremesoundmuffler",
     "cosycritters",
     "cosmeticarmorreworked",
-    "corpse"
+    "corpse",
+    "craftpresence",
+    "balm",
+    "wakes",
+    "sound_physics_remastered"
   ],
   "include_namespaces": [],
   "nested_jars": true,
@@ -106,9 +110,11 @@
   "sort_keys": true,
   "report_path": ".github/script/extract_lang/report.json",
   "backup_dir": ".github/script/extract_lang/backup",
+  "log_dir": ".github/script/extract_lang/logs",
   "keep_namespaces": ["tfg"],
   "drop_key_patterns": [
     "_{1,3}comment_{0,2}\\d?",
-    "advancements?\\."
+    "advancements?\\.",
+    "achievement?\\."
   ]
 }
