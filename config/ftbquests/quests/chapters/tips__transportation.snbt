@@ -1823,6 +1823,7 @@
 				item: "railways:handcar"
 				type: "item"
 			}]
+			title: "{quests.tfg_tips.handcar.title}"
 			x: 4.0d
 			y: 15.5d
 		}
@@ -1996,6 +1997,7 @@
 					type: "item"
 				}
 			]
+			title: "{quests.tfg_tips.efficient_trips.title}"
 			x: 11.0d
 			y: 15.5d
 		}
@@ -2046,6 +2048,7 @@
 				item: "railways:conductor_whistle"
 				type: "item"
 			}]
+			title: "{quests.tfg_tips.conductor_whistle.title}"
 			x: 13.0d
 			y: 17.0d
 		}
