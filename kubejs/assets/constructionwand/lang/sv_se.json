@@ -7,6 +7,7 @@
 	"constructionwand.description.key.sneak": "Smyg",
 	"constructionwand.description.key.sneak_opt": "Smyg+%s",
 	"constructionwand.description.wand": "En %1$s kan placera upp till %2$d block på sidan av en byggnad som är riktad mot dig och räcker %3$s.\n\nHåll ned %5$s och rulla med mushjulet för att ändra placeringsbegränsningen (horisontal, vertikal, nord/syd, öst/väst, ingen låsning).\n\nÖppna alternativmenyn med %6$s§9+Högerklick§0.\n\n§5§nÅNGRA§0§r\nNär du håller ned §9Smyga+§0%4$s medan du tittar på ett block kommer du se de senaste blocken du placerade omgivna av en grön ram. §9Smyg+§0%4$s§9+högerklicka§0 på något av dem för att ångra handlingen och få tillbaka alla föremål. Om du har använt rivningskärnan kommer blocken att återställas.\n\n§5§nBEHÅLLARE§0§r\nShulkerlådor, påsar och många behållare från andra moddar kan tillhandahålla byggblock för staven.\n\n§5§nPRIO FÖR SEKUNDÄR HAND§0§r\nBlocken i din sekundära hand placeras i stället för blocket du tittar på.",
+	"constructionwand.option.cores": "",
 	"constructionwand.option.cores.constructionwand:core_angel": "§6Änglakärna",
 	"constructionwand.option.cores.constructionwand:core_angel.desc": "Placera block bakom befintliga block och i luften",
 	"constructionwand.option.cores.constructionwand:core_destruction": "§cRivningskärna",

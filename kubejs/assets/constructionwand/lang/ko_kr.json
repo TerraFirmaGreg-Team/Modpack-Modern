@@ -7,6 +7,7 @@
 	"constructionwand.description.key.sneak": "웅크리기",
 	"constructionwand.description.key.sneak_opt": "웅크리기+%s",
 	"constructionwand.description.wand": "%1$s는 당신 쪽으로 최대 %2$d 블록까지 배치할 수 있고, %3$s 지속됩니다.\n\n%5$s을(를) 누르고 스크롤 하여 배치 제한을 바꾸세요 (수평, 수직, 북쪽/남쪽, 동쪽/서쪽, 제한 없음).\n\n%6$s§9+우클릭§0으로 옵션 스크린을 여세요.\n\n§5§n실행 취소§0§r\n블록을 보면서 §9웅크리기+§0%4$s를 누르고 있으면 마지막으로 배치했던 블록들이 녹색 테두리로 표시됩니다. 그 중 아무거나 §9S웅크리기+§0%4$s§9+우클릭§0 하면 그 작업을 실행 취소하고, 모든 아이템을 돌려줍니다. 파괴 코어를 사용했다면, 블록들을 복원합니다.\n\n§5§n컨테이너§0§r\n셜커 상자, 꾸러미, 그리고 다른 모드의 컨테이너들은 완드에 건설 블록을 제공할 수 있습니다.\n\n§5§n보조손 우선도§0§r\n보조 손에 블록을 가지고 있으면 보고 있는 블록을 배치하는 대신에 보조 손의 블록을 배치할 것입니다.",
+	"constructionwand.option.cores": "",
 	"constructionwand.option.cores.constructionwand:core_angel": "§6천사 코어",
 	"constructionwand.option.cores.constructionwand:core_angel.desc": "블록 뒤와 공중에 배치합니다.",
 	"constructionwand.option.cores.constructionwand:core_destruction": "§c파괴 코어",

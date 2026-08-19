@@ -1,5 +1,4 @@
 {
-	"advancements.ad_astra.under_pressure.title": "Nyomás alatt",
 	"block.ad_astra.aeronos_cap": "Aeronos Gombatető",
 	"block.ad_astra.aeronos_door": "Aeronos Ajtó",
 	"block.ad_astra.aeronos_fence": "Aeronos Kerítés",
@@ -305,10 +304,10 @@
 	"config.ad_astra.deshTierFluidCapacity": "Desh szintű max folyadékkapacitás",
 	"config.ad_astra.deshTierMaxEnergyInOut": "Desh szintű max energia ki/be",
 	"config.ad_astra.disableAirVortexes": "Levegőörvények letiltása",
-	"config.ad_astra.disabledPlanets": "Letiltott bolygók",
 	"config.ad_astra.disableGravity": "Gravitáció letiltása",
 	"config.ad_astra.disableOxygen": "Oxigén letiltása",
 	"config.ad_astra.disableTemperature": "Hőmérséklet letiltása",
+	"config.ad_astra.disabledPlanets": "Letiltott bolygók",
 	"config.ad_astra.distributionRefreshRate": "Szétosztás frissítési gyakorisága",
 	"config.ad_astra.energizerEnergyCapacity": "Energizáló energiakapacitás",
 	"config.ad_astra.etrionicBlastFurnaceBlastingEnergyPerItem": "Etrionos Nagyolvasztó Kemence robbanási energia tárgyanként",

@@ -1,4 +1,16 @@
 {
+	"emi.category.emixx.villager_trades": "村民交易",
+	"emixx.configuration.creativeModeTabs": "创造模式选项卡",
+	"emixx.configuration.disabledStackGroups": "禁用的折叠组",
+	"emixx.configuration.enableCreativeModeTabs": "启用创造模式选项卡",
+	"emixx.configuration.enableStackGroups": "[未完成的选项] 启用折叠组",
+	"emixx.configuration.stackGroups": "折叠组",
+	"emixx.configuration.syncSelectedCreativeModeTab": "同步选择的选项卡",
+	"emixx.configuration.title": "EMI++ 配置",
+	"gui.emixx.possible_enchantments": "可能的附魔：",
+	"gui.emixx.possible_enchantments_for_enchanted_book": "所有非宝藏附魔",
+	"gui.emixx.random_color": "随机颜色",
+	"gui.emixx.stack_group_config": "折叠组配置",
 	"stackgroup.emixx.tfg_animal_cart": "牲畜运输车",
 	"stackgroup.emixx.tfg_anvils": "砧",
 	"stackgroup.emixx.tfg_any_lamp_off": "灯具（关）",
@@ -241,5 +253,6 @@
 	"stackgroup.emixx.tfg_wire_cutter_heads": "剪线钳头",
 	"stackgroup.emixx.tfg_workbenches": "工作台",
 	"stackgroup.emixx.tfg_wrench_tips": "扳手顶",
-	"stackgroup.emixx.tfg_zpm_wires": "ZPM线缆"
+	"stackgroup.emixx.tfg_zpm_wires": "ZPM线缆",
+	"stackgroup.emixx.tooltip": " 个物品"
 }

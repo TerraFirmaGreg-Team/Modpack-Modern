@@ -1,5 +1,4 @@
 {
-	"advancements.ad_astra.under_pressure.title": "Bajo presión",
 	"block.ad_astra.aeronos_cap": "Tapa de Aeronos",
 	"block.ad_astra.aeronos_door": "Puerta de Aeronos",
 	"block.ad_astra.aeronos_fence": "Valla de Aeronos",
@@ -305,10 +304,10 @@
 	"config.ad_astra.deshTierFluidCapacity": "Máxima capacidad de fluido del nivel de acero",
 	"config.ad_astra.deshTierMaxEnergyInOut": "Energía máxima del nivel de acero entrante/salida",
 	"config.ad_astra.disableAirVortexes": "Desactivar Vórtices de Aire",
-	"config.ad_astra.disabledPlanets": "Planetas Deshabilitados",
 	"config.ad_astra.disableGravity": "Deshabilitar Gravedad",
 	"config.ad_astra.disableOxygen": "Deshabilitar Oxígeno",
 	"config.ad_astra.disableTemperature": "Deshabilitar Temperatura",
+	"config.ad_astra.disabledPlanets": "Planetas Deshabilitados",
 	"config.ad_astra.distributionRefreshRate": "Ratio de actualización de distribución",
 	"config.ad_astra.energizerEnergyCapacity": "Capacidad energética del nivel de acero",
 	"config.ad_astra.etrionicBlastFurnaceBlastingEnergyPerItem": "Energía de Explotación Etriónica por objeto",
