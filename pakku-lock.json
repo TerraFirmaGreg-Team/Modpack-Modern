@@ -9915,7 +9915,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "Jellies-1.20.1-0.1.4.jar",
+                    "file_name": "Jellies-1.20.1-0.1.6.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -9923,20 +9923,20 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/9uLmCnkY/versions/BFJ6nOS0/Jellies-1.20.1-0.1.4.jar",
-                    "id": "BFJ6nOS0",
+                    "url": "https://cdn.modrinth.com/data/9uLmCnkY/versions/VeEpZE6E/Jellies-1.20.1-0.1.6.jar",
+                    "id": "VeEpZE6E",
                     "parent_id": "9uLmCnkY",
                     "hashes": {
-                        "sha512": "15976de6bd90937e2c6d8ed3fae8f89597042452e75e56aa4ff9d24e1207060da01d9f3377a8160d30c1f62d1792411194758c3d8286cd20b3c6bf928d05abe8",
-                        "sha1": "cdb85274c6c6ad3928516c76e42458becc9325af"
+                        "sha512": "e715c0daa55c4a8a295cc87aa1ddb7272066a2836a288ec6125d674571d09860dff895164f94a363ee6b6a30cf7ed7f63a94183b6623e0153c88bd0242bbfa3c",
+                        "sha1": "c7b726f18b65c1b11eb45245e6fcf83d83ee3c20"
                     },
                     "required_dependencies": [],
-                    "size": 978794,
-                    "date_published": "2026-08-06T23:48:37.187291Z"
+                    "size": 986366,
+                    "date_published": "2026-08-19T00:02:26.548291Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "Jellies-1.20.1-0.1.4.jar",
+                    "file_name": "Jellies-1.20.1-0.1.6.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -9944,16 +9944,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8591/504/Jellies-1.20.1-0.1.4.jar",
-                    "id": "8591504",
+                    "url": "https://edge.forgecdn.net/files/8681/154/Jellies-1.20.1-0.1.6.jar",
+                    "id": "8681154",
                     "parent_id": "1607526",
                     "hashes": {
-                        "sha1": "cdb85274c6c6ad3928516c76e42458becc9325af",
-                        "md5": "588c08ebcd9b3ff9071f0a55333ade76"
+                        "sha1": "c7b726f18b65c1b11eb45245e6fcf83d83ee3c20",
+                        "md5": "bb3b378d82850b1d0ea5c9c2fe7cc334"
                     },
                     "required_dependencies": [],
-                    "size": 978794,
-                    "date_published": "2026-08-06T23:48:35.940Z"
+                    "size": 986366,
+                    "date_published": "2026-08-19T00:02:25.017Z"
                 }
             ]
         },
