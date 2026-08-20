@@ -1,4 +1,5 @@
 {
+  "block.diggerhelmet.eternal_candle": "Wieczna świeca",
   "emi.category.diggerhelmet.helmet_repair": "Naprawa hełmu górnika",
   "gui.diggerhelmet.slot_info.center_slot": "Środkowe miejsce: Modyfikator prędkości kopania",
   "gui.diggerhelmet.slot_info.left_slot": "Lewe miejsce: Modyfikator automatycznego picia",
@@ -11,6 +12,7 @@
   "item.diggerhelmet.broken_helmet.tooltip": "Ten hełm jest uszkodzony i nie działa",
   "item.diggerhelmet.digger_helmet": "Hełm górnika",
   "item.diggerhelmet.digger_helmet.main": "Nie dotykaj świecy!",
+  "item.diggerhelmet.eternal_candle": "Wieczna świeca",
   "item.diggerhelmet.mining_speed_modifier": "Modyfikator szybkości kopania",
   "item.diggerhelmet.mining_speed_modifier.desc.base": "Po zainstalowaniu w Hełmie górnika zwiększa prędkość kopania:",
   "item.diggerhelmet.mining_speed_modifier.desc.pickaxe": "Kilofy ×%.1f",

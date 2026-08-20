@@ -1,8 +1,21 @@
 {
+	"block.etched.album_jukebox": "Szafa grająca do albumów",
 	"block.etched.radio": "Radio",
+	"container.etched.album_jukebox": "Szafa grająca do albumów",
 	"container.etched.radio": "Radio",
 	"entity.etched.jukebox_minecart": "Wagonik z szafą grającą",
+	"entity.minecraft.villager.bard": "Bard",
+	"entity.minecraft.villager.etched.bard": "Bard",
+	"item.etched.album_cover": "Okładka albumu",
+	"item.etched.boombox": "Boombox",
 	"item.etched.boombox.paused": "Wstrzymana",
+	"item.etched.etched_music_disc.album": "(Album)",
 	"item.etched.jukebox_minecart": "Wagonik z szafą grającą",
-	"screen.etched.edit_music_label.title": "Tytuł"
+	"item.etched.music_label": "Etykieta muzyki",
+	"item.etched.portal_radio": "Portal Radio",
+	"screen.etched.album_jukebox.now_playing": "Teraz odtwarzane",
+	"screen.etched.edit_music_label.author": "Autor",
+	"screen.etched.edit_music_label.title": "Tytuł",
+	"screen.etched.etching_table.error.invalid_url": "Nieprawidłowy URL",
+	"sound_source.etched.radio": "Stacja radiowa"
 }

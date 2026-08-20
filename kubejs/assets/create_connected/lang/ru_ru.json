@@ -344,5 +344,6 @@
 	"item.create_connected.vertical_brass_gearbox.tooltip.summary": "Угловая передача с _независимо вращающимися_ выходами. Направления могут быть изменены гаечным ключом.",
 	"item.create_connected.vertical_parallel_gearbox": "Вертикальная параллельная угловая передача",
 	"item.create_connected.vertical_six_way_gearbox": "Вертикальная шестисторонняя угловая передача",
-	"item.create_connected.vertical_six_way_gearbox.tooltip.summary": "Угловая передача с выходами на _всех шести сторонах_. Верхний и нижний вращаются _в два раза медленнее_."
+	"item.create_connected.vertical_six_way_gearbox.tooltip.summary": "Угловая передача с выходами на _всех шести сторонах_. Верхний и нижний вращаются _в два раза медленнее_.",
+	"itemGroup.create_connected.main": "Create: Connected"
 }
