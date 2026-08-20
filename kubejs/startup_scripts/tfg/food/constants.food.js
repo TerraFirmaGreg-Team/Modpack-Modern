@@ -659,7 +659,7 @@ global.TFG_CREATE_GENERIC_FOOD_ITEM = /** @type {TFGCreateGenericFoodItem[]} */ 
 		texture: 'tfg:item/food/pickle_jar',
 		mealType: 'dynamic',
 		returnItem:'tfc:empty_jar',
-		tags: ['tfc:foods/vegetables', 'tfc:foods/sealed_jars']
+		tags: ['tfc:foods/usable_in_sandwich', 'tfc:foods/usable_in_soup', 'tfg:foods/usable_in_burgers', 'tfg:foods/usable_in_savory_pie', 'tfc:foods/sealed_jars']
 	}
 	// #endregion
 ]);
