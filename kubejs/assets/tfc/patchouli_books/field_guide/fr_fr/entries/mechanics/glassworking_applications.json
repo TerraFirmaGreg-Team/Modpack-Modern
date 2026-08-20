@@ -6,7 +6,7 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "Les $(thing)Vitres$() et $(thing)Blocs de verre$() sont les produits verriers les plus simples. Afin de les fabriquer, vous devez commencer avec une $(l:mechanics/glassworking#blowpipe)Canne de verrier$() et un $(thing)Mélange verrier$(), puis effectuer un $(thing)Versement$().$(br)$(li)Les $(bold)Versements sur table$() servent à créer des $(thing)Vitres$()$(li)Les $(bold)Versements en bassin$() servent à créer des $(thing)Blocs de verre$()."
+      "text": "Les $(thing)Vitres$() et $(thing)Blocs de verre$() sont les produits verriers les plus simples. Afin de les fabriquer, vous devez commencer avec une $(l:mechanics/glassworking#blowpipe)Canne de verrier$() et un $(thing)Mélange verrier$(), puis effectuer un $(thing)Versement$().$(br)$(li)Les $(bold)Versements sur table$() servent à créer des $(thing)Vitres$()$(li)Les $(bold)Versements en bassin$() servent à créer des $(thing)Blocs de verre$()"
     },
     {
       "type": "patchouli:text",
@@ -14,7 +14,7 @@
     },
     {
       "type": "patchouli:text",
-      "text": "Les $(thing)Vitres$() sont fabriquées via un $(thing)Versement sur table$(). Une table de versement se fait en plaçant seize $(thing)Blocs de Kaolin$() dans une zone continue.$(br2) 1. Ajoutez un $(l:mechanics/glassworking)Mélange verrier$() à une $(thing)Canne de verrier$().$(br) 2. Chauffez celle-ci à $(4)$(bold)Rouge pâle$().$(br) 3. Actionnez $()$(item)$(k:key.use)$() avec la $(thing)canne$() sur la table.$(br) 4. Enfin $()$(item)$(k:key.use)$() avec une $(l:mechanics/glassworking#paddle)Palette$() pour aplatir le verre.",
+      "text": "Les $(thing)Vitres$() sont fabriquées via un $(thing)Versement sur table$(). Une table de versement se fait en plaçant seize $(thing)Blocs de Kaolin$() ou $(thing)Blocs plaqués en laiton$() dans une zone continue.$(br2) 1. Ajoutez un $(l:mechanics/glassworking)Mélange verrier$() à une $(thing)Canne de verrier$().$(br) 2. Chauffez celle-ci à $(4)$(bold)Rouge pâle$().$(br) 3. Actionnez $()$(item)$(k:key.use)$() avec la $(thing)canne$() sur la table.$(br) 4. Enfin $()$(item)$(k:key.use)$() avec une $(l:mechanics/glassworking#paddle)Palette$() pour aplatir le verre.",
       "title": "Versement sur table"
     },
     {
@@ -38,7 +38,7 @@
     },
     {
       "type": "patchouli:text",
-      "text": "Les $(thing)Blocs de verre$() sont fabriqués via un $(thing)Versement en bassin$(). Un bassinse fait en entourant tous les côtés d'un blocs d'air, sauf le haut, par des $(thing)Blocs de Kaolin$() ou des $(thing)Blocs plaqués en laiton$().$(br2) 1. Ajoutez un $(l:mechanics/glassworking)Mélange verrier$() à une $(thing)Canne de verrier$().$(br) 2. Chauffez celle-ci à $(4)$(bold)Rouge pâle$().$(br) 3. Actionnez $()$(item)$(k:key.use)$() avec la $(thing)canne$() dans le bassin.",
+      "text": "Les $(thing)Blocs de verre$() sont fabriqués via un $(thing)Versement en bassin$(). Un bassin se fait en entourant tous les côtés d'un blocs d'air, sauf le haut, par des $(thing)Blocs de Kaolin$() ou des $(thing)Blocs plaqués en laiton$().$(br2) 1. Ajoutez un $(l:mechanics/glassworking)Mélange verrier$() à une $(thing)Canne de verrier$().$(br) 2. Chauffez celle-ci à $(4)$(bold)Rouge pâle$().$(br) 3. Actionnez $()$(item)$(k:key.use)$() avec la $(thing)canne$() dans le bassin.",
       "title": "Versement en bassin"
     },
     {
@@ -68,12 +68,12 @@
       "type": "patchouli:crafting",
       "title": "Blocs de travail du verre",
       "recipe": "tfc:crafting/white_kaolin_clay",
-      "text": "Vous pouvez créer des $(thing)Blocs plaqués en laiton$() en tenant une plaque de laiton puis en faisant $(item)$(k:key.use)$() sur n'importe quel bloc de $(thing)briques de pierre$()."
+      "text": "Vous pouvez créer des $(thing)Blocs plaqués en laiton$() en tenant une $(thing)plaque$() de laiton puis en faisant $(item)$(k:key.use)$() sur n'importe quel bloc de $(thing)briques de pierre$()."
     },
     {
       "type": "patchouli:text",
       "anchor": "coloring",
-      "text": "Le verre possède une coleur naturelle dépendant du $(l:mechanics/glassworking)Mélange verrier$() utilisé. D'autres couleurs peuvent être créées en utilisant un $(l:mechanics/bowls)Bol$().$(br)Pour l'utiliser, placez le $(l:mechanics/bowls)Bol$() au sol, puis faites $(item)$(k:key.use)$() avec la $(thing)Poudre$() requise. Avant de $(thing)verser$(), utilisez la $(thing)canne$() sur le bol pour ajouter la poudre au mélange.",
+      "text": "Le verre possède une coleur naturelle dépendant du $(l:mechanics/glassworking)Mélange verrier$() utilisé. D'autres couleurs peuvent être créées en utilisant un $(l:mechanics/bowls)Bol$().$(br2)Pour l'utiliser, placez le $(l:mechanics/bowls)Bol$() au sol, puis faites $(item)$(k:key.use)$() avec la $(thing)Poudre$() requise. Avant de $(thing)verser$(), utilisez la $(thing)canne$() sur le bol pour ajouter la poudre au mélange.",
       "title": "Colorer le verre"
     },
     {
