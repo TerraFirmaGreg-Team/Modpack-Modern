@@ -58,7 +58,7 @@ function registerTFGPreservationFoodRecipes(event) {
 		circuit: 6,
 		itemOutputProvider: TFC.isp.of('tfg:food/pickle_jar')
 			.meal(
-			(food) => food.hunger(4).decayModifier(1.1),
+			(food) => food.hunger(4).decayModifier(2),
 			[(portion) => portion.nutrientModifier(0.3).saturationModifier(0.3)]
 		).addTrait('tfc:brined').addTrait('tfc:pickled').addTrait('tfc:vinegar')
 	});
