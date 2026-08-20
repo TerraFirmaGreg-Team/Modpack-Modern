@@ -180,8 +180,8 @@ function registerTFGLoots(event) {
 			.addLoot(loco_glass)
 
 		global.LOCOMETAL_COLORS.forEach(tfc_dye => {
-			const loco_glass_dyed = `${LOCO_PREFIX}${color}_${glass}`
 			tfc_dye.colors.forEach(color => {
+				const loco_glass_dyed = `${LOCO_PREFIX}${color}_${glass}`
 				event.addBlockLootModifier(loco_glass_dyed)
 					.matchMainHand(Item.of('tfc:gem_saw'))
 					.addLoot(loco_glass_dyed)
