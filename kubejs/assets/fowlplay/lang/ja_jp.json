@@ -1,9 +1,4 @@
 {
-	"config.audio": "オーディオ",
-	"config.audio.generic.call": "通話距離",
-	"config.audio.generic.call.desc": "%s 通話の可聴範囲（チャンク単位）",
-	"config.audio.generic.song": "歌の距離",
-	"config.audio.generic.song.desc": "%s 曲の可聴範囲（チャンク単位）",
 	"config.info.restart": "有効にするには再起動が必要です。",
 	"config.spawning": "産卵",
 	"config.spawning.generic.maxGroupSize": "最大グループサイズ",
@@ -28,7 +23,6 @@
 	"entity.fowlplay.pigeon": "鳩",
 	"entity.fowlplay.raven": "レイヴン",
 	"entity.fowlplay.robin": "ロビン",
-	"entity.fowlplay.scarecrow": "Scarecrow",
 	"entity.fowlplay.sparrow": "スズメ",
 	"item.fowlplay.blue_jay_spawn_egg": "ブルージェイの産卵",
 	"item.fowlplay.cardinal_spawn_egg": "枢機卿イの産卵",
@@ -42,7 +36,6 @@
 	"item.fowlplay.pigeon_spawn_egg": "鳩の卵",
 	"item.fowlplay.raven_spawn_egg": "レイヴンの卵",
 	"item.fowlplay.robin_spawn_egg": "ロビンの産卵",
-	"item.fowlplay.scarecrow": "Scarecrow",
 	"item.fowlplay.sparrow_spawn_egg": "スズメの産卵",
 	"subtitles.entity.bird.eat": "鳥は食べる",
 	"subtitles.entity.bird.flap": "翼が羽ばたく",
@@ -58,8 +51,6 @@
 	"subtitles.entity.crow.hurt": "カラスが痛い",
 	"subtitles.entity.duck.call": "アヒルの鳴き声",
 	"subtitles.entity.duck.hurt": "アヒルは痛い",
-	"subtitles.entity.goose.call": "ガチョウの鳴き声",
-	"subtitles.entity.goose.hurt": "ガチョウは痛い",
 	"subtitles.entity.gull.call": "カモメの鳴き声",
 	"subtitles.entity.gull.hurt": "カモメが痛い",
 	"subtitles.entity.gull.long_call": "カモメの鳴き声",
@@ -92,7 +83,5 @@
 	"tag.item.fowlplay.pigeon_food": "鳩の餌",
 	"tag.item.fowlplay.raven_food": "カラスの餌",
 	"tag.item.fowlplay.robin_food": "ロビンの餌",
-	"tag.item.fowlplay.sparrow_food": "スズメの餌",
-	"text.betterf3.line.ambient_birds": "アンビエントバード",
-	"text.betterf3.line.birds": "鳥"
+	"tag.item.fowlplay.sparrow_food": "スズメの餌"
 }

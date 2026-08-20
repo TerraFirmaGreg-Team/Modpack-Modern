@@ -2,10 +2,8 @@
   "alekiships.config.server.windAffectsBoatsWithNoAnchor": "Ветер влияет на лодки без якоря",
   "alekiships.failed_multiblock_detection": "Не найдено подходящей конструкции корпуса",
   "alekiships.jade.compartment_block": "%s Отсек",
-  "block.alekiships.boat_frame": "Корабельные строительные леса",
   "block.alekiships.cleat": "Швартовая утка",
   "block.alekiships.oarlock": "Держатель для весла",
-  "block.alekiships.thatch_roofing": "Соломенная кровля",
   "block.alekiships.watercraft_frame_angled": "Ступенчатый каркас для корабля",
   "block.alekiships.watercraft_frame_flat": "Плита каркаса для корабля",
   "block.alekiships.wood.watercraft_frame.angled.acacia": "Акациевый ступенчатый каркас",
@@ -57,7 +55,6 @@
   "entity.alekiships.compartment_smithing_table": "Отсек с кузнечным столом",
   "entity.alekiships.compartment_smoker": "Отсек с коптильней",
   "entity.alekiships.compartment_stonecutter": "Отсек с камнерезом",
-  "entity.alekiships.kayak": "Каяк",
   "entity.alekiships.rowboat.acacia": "Акациевая шлюпка",
   "entity.alekiships.rowboat.bamboo": "Бамбуковая шлюпка",
   "entity.alekiships.rowboat.birch": "Берёзовая шлюпка",
@@ -97,7 +94,6 @@
   "entity.alekiships.vehicle_construction": "Строительная сущность",
   "entity.alekiships.vehicle_mast": "Мачта",
   "entity.alekiships.vehicle_part": "Часть транспортного средства",
-  "entity.alekiships.vehicle_part_boat": "Часть лодки",
   "entity.alekiships.vehicle_switch_sail": "Парус",
   "entity.alekiships.vehicle_switch_windlass": "Брашпиль",
   "item.alekiships.anchor": "Якорь",
@@ -108,6 +104,5 @@
   "item.alekiships.oar": "Весло",
   "item.alekiships.rowboat_icon_only": "Шлюпка (ПРОСТО ИКОНКА)",
   "item.alekiships.sloop_icon_only": "Шлюп (ПРОСТО ИКОНКА)",
-  "itemGroup.alekiships": "aleki's Nifty Ships",
   "press_button": "Нажми"
 }

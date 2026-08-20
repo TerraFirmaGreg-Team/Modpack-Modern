@@ -71,8 +71,6 @@
   "commands.ftbquests.weigh_from_emc.invalid_id": "无效的奖励表ID！",
   "commands.ftbquests.weigh_from_emc.text": "已根据EMC调整%s的物品权重",
   "config.jade.plugin_ftbquests.barrier": "屏障",
-  "ftbquest.gui.clear_autofocused": "清除自动聚焦任务",
-  "ftbquest.gui.set_autofocused": "设为自动聚焦任务",
   "ftbquests": "FTB 任务",
   "ftbquests.chapter": "章节",
   "ftbquests.chapter.appearance.default_min_width": "默认最小任务窗口宽度",
