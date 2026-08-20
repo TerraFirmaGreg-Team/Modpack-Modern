@@ -186,43 +186,31 @@
             ]
         },
         {
-            "pakku_id": "mLtN3bX1D3dl7WDh",
-            "pakku_links": [
-                "E7ASIvLUKD1YJURv"
-            ],
-            "type": "MOD",
+            "pakku_id": "tIIGT85PQd5pJGf0",
+            "type": "RESOURCE_PACK",
+            "side": "CLIENT",
             "slug": {
-                "curseforge": "ae2-uelm"
+                "github": "Frontiers-PackForge/AE2-Midnight-and-Daybreak"
             },
             "name": {
-                "curseforge": "AE2 Unofficial Extended Life Modern"
+                "github": "AE2-Midnight-and-Daybreak"
             },
             "id": {
-                "curseforge": "1624366"
+                "github": "1083466923"
             },
             "files": [
                 {
-                    "type": "curseforge",
-                    "file_name": "appliedenergistics2-forge-15.5.0-uelm.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
+                    "type": "github",
+                    "file_name": "midnight-ae2-30e7823.zip",
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8516/890/appliedenergistics2-forge-15.5.0-uelm.jar",
-                    "id": "8516890",
-                    "parent_id": "1624366",
+                    "url": "https://github.com/Frontiers-PackForge/AE2-Midnight-and-Daybreak/releases/download/midnight-ae2-latest/midnight-ae2-30e7823.zip",
+                    "id": "394148872",
+                    "parent_id": "1083466923",
                     "hashes": {
-                        "sha1": "c9b83b39ec9247264a4e123a442d5cb7e5e769fc",
-                        "md5": "640c38629a2aea399fe6077225d3f353"
+                        "sha256": "0e1436fe51f6f6a33fcae3106482e1042f622e1431aa4c4d056d17d540c7506b"
                     },
-                    "required_dependencies": [
-                        "1173950"
-                    ],
-                    "size": 8530770,
-                    "date_published": "2026-07-26T23:15:36.147Z"
+                    "size": 5653589,
+                    "date_published": "2026-04-11T15:08:44Z"
                 }
             ]
         },
@@ -9927,7 +9915,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "Jellies-1.20.1-0.1.4.jar",
+                    "file_name": "Jellies-1.20.1-0.1.6.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -9935,20 +9923,20 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/9uLmCnkY/versions/BFJ6nOS0/Jellies-1.20.1-0.1.4.jar",
-                    "id": "BFJ6nOS0",
+                    "url": "https://cdn.modrinth.com/data/9uLmCnkY/versions/VeEpZE6E/Jellies-1.20.1-0.1.6.jar",
+                    "id": "VeEpZE6E",
                     "parent_id": "9uLmCnkY",
                     "hashes": {
-                        "sha512": "15976de6bd90937e2c6d8ed3fae8f89597042452e75e56aa4ff9d24e1207060da01d9f3377a8160d30c1f62d1792411194758c3d8286cd20b3c6bf928d05abe8",
-                        "sha1": "cdb85274c6c6ad3928516c76e42458becc9325af"
+                        "sha512": "e715c0daa55c4a8a295cc87aa1ddb7272066a2836a288ec6125d674571d09860dff895164f94a363ee6b6a30cf7ed7f63a94183b6623e0153c88bd0242bbfa3c",
+                        "sha1": "c7b726f18b65c1b11eb45245e6fcf83d83ee3c20"
                     },
                     "required_dependencies": [],
-                    "size": 978794,
-                    "date_published": "2026-08-06T23:48:37.187291Z"
+                    "size": 986366,
+                    "date_published": "2026-08-19T00:02:26.548291Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "Jellies-1.20.1-0.1.4.jar",
+                    "file_name": "Jellies-1.20.1-0.1.6.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -9956,16 +9944,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8591/504/Jellies-1.20.1-0.1.4.jar",
-                    "id": "8591504",
+                    "url": "https://edge.forgecdn.net/files/8681/154/Jellies-1.20.1-0.1.6.jar",
+                    "id": "8681154",
                     "parent_id": "1607526",
                     "hashes": {
-                        "sha1": "cdb85274c6c6ad3928516c76e42458becc9325af",
-                        "md5": "588c08ebcd9b3ff9071f0a55333ade76"
+                        "sha1": "c7b726f18b65c1b11eb45245e6fcf83d83ee3c20",
+                        "md5": "bb3b378d82850b1d0ea5c9c2fe7cc334"
                     },
                     "required_dependencies": [],
-                    "size": 978794,
-                    "date_published": "2026-08-06T23:48:35.940Z"
+                    "size": 986366,
+                    "date_published": "2026-08-19T00:02:25.017Z"
                 }
             ]
         },
@@ -13686,6 +13674,71 @@
                     "required_dependencies": [],
                     "size": 77732,
                     "date_published": "2024-04-23T06:56:56.381361Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "9g0kJLCzJcjYVRkj",
+            "type": "MOD",
+            "side": "CLIENT",
+            "slug": {
+                "curseforge": "seasonhud",
+                "modrinth": "seasonhud"
+            },
+            "name": {
+                "curseforge": "SeasonHud",
+                "modrinth": "SeasonHud"
+            },
+            "id": {
+                "curseforge": "690971",
+                "modrinth": "VNjUn3NA"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "seasonhud-forge-1.20.1-2.0.8.jar",
+                    "mc_versions": [
+                        "1.20.1",
+                        "1.20"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8551/397/seasonhud-forge-1.20.1-2.0.8.jar",
+                    "id": "8551397",
+                    "parent_id": "690971",
+                    "hashes": {
+                        "sha1": "23a2f09cc006dc3b04cc5f4360f596a9a423bd58",
+                        "md5": "cb44b672115212cb00adadc2b275591b"
+                    },
+                    "required_dependencies": [],
+                    "size": 236262,
+                    "date_published": "2026-08-01T02:18:15.040Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "seasonhud-forge-1.20.1-2.0.8.jar",
+                    "mc_versions": [
+                        "1.20",
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/VNjUn3NA/versions/ocbnwoWo/seasonhud-forge-1.20.1-2.0.8.jar",
+                    "id": "ocbnwoWo",
+                    "parent_id": "VNjUn3NA",
+                    "hashes": {
+                        "sha512": "f309c55c6f3810c577e4401e35f16a0b1e4b1e1a0e81f6d5364bfba73ba3721ba7f236228acb77d86d75e5bc1de730099c19d0bc52f1c9d4842af3a3fec7d150",
+                        "sha1": "23a2f09cc006dc3b04cc5f4360f596a9a423bd58"
+                    },
+                    "required_dependencies": [],
+                    "size": 236262,
+                    "date_published": "2026-08-01T02:18:16.051839Z"
                 }
             ]
         },

@@ -1,4 +1,23 @@
 {
-    "item.betterp2p.advanced_memory_card.selected": "Frekans:"
+    "item.betterp2p.advanced_memory_card": "Gelişmiş Hafıza Kartı",
+    "item.betterp2p.advanced_memory_card.selected": "Frekans:",
+    "gui.advanced_memory_card.select": "Seç",
+    "gui.advanced_memory_card.bind": "Bağla",
+    "gui.advanced_memory_card.unbind": "Kopar",
+    "gui.advanced_memory_card.name": "İsim: %s",
+    "gui.advanced_memory_card.extra.channel": "Kullanılan kanallar: %s",
+    "gui.advanced_memory_card.desc.not_set": "Seçilmemiş",
+    "gui.advanced_memory_card.desc.effect": "Efekt:",
+    "gui.advanced_memory_card.gui_scale.small": "Boyut: Küçük",
+    "gui.advanced_memory_card.gui_scale.normal": "Boyut:Normal",
+    "gui.advanced_memory_card.gui_scale.large": "Boyut:Büyük",
+    "gui.advanced_memory_card.gui_scale.dynamic": "Boyut:Otomatik",
+    "gui.advanced_memory_card.p2p_status.bound": "Bağlandı",
+    "gui.advanced_memory_card.p2p_status.unbound": "Koparıldı",
+    "gui.advanced_memory_card.p2p_status.input": "Giriş",
+    "gui.advanced_memory_card.p2p_status.output": "Çıkış",
+    "gui.advanced_memory_card.p2p_status.offline": "Ofline",
+    "gui.advanced_memory_card.types.filtered": "Gösteriyor: %s",
+    "gui.advanced_memory_card.types.any": "§aHepsi"
 }
 

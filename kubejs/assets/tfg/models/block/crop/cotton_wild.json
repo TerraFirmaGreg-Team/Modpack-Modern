@@ -1,0 +1,6 @@
+{
+  "parent": "tfc:block/wild_crop/crop",
+  "textures": {
+    "crop": "tfg:block/crop/cotton_wild_bottom"
+  }
+}

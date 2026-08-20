@@ -33,6 +33,7 @@
   "enum.deathpunishment.health_mode.KEEP": "Zachowaj po śmierci",
   "tooltip.deathpunishment.hunger_mode": "Wybierz tryb głodu:\n• TFC - domyślny system\n• Ręcznie - Ustaw stałą wartość\n• Zachowaj - Zachowaj poprzedni poziom",
   "tooltip.deathpunishment.thirst_mode": "Wybierz tryb pragnienia:\n• TFC - domyślny system\n• Ręcznie - Ustaw stałą wartość\n• Zachowaj - Zachowaj poprzedni poziom",
+  "tooltip.deathpunishment.thirst_level": "Początkowe pragnienie po odrodzeniu (aktywne w trybie ręcznym)",
   "tooltip.deathpunishment.health": "Początkowe zdrowie po odrodzeniu (aktywne w trybie ręcznym)",
   "tooltip.deathpunishment.effect_amplifier": "Podstawowy poziom wszystkich negatywnych efektów (0-5)",
   "tooltip.deathpunishment.thirst_duration": "Czas trwania efektu pragnienia (sekundy)",
@@ -43,6 +44,7 @@
   "tooltip.deathpunishment.movement_duration": "Czas trwania efektu spowolnienia (sekundy)",
   "tooltip.deathpunishment.pinned_duration": "Czas trwania efektu przygwożdżenia (sekundy)",
   "tooltip.deathpunishment.darkness_duration": "Czas trwania efektu ciemności (sekundy)",
+  "tooltip.deathpunishment.raw_meat_enabled": "Zastosuj efekt głodu podczas jedzenia surowego mięsa TFC (szansa jest ustawiona z góry)",
   "tooltip.deathpunishment.raw_meat_hunger_duration": "Czas trwania efektu głodu podczas jedzenia surowego mięsa TFC (sekundy)",
   "tooltip.deathpunishment.raw_meat_hunger_amplifier": "Poziom efektu głodu podczas jedzenia surowego mięsa TFC (0-4)",
   "message.deathpunishment.reload_config": "Przeładuj konfigurację, by zastosować zmiany"

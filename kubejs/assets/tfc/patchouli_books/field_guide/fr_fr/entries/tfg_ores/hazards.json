@@ -10,7 +10,7 @@
 			"type": "patchouli:spotlight",
 			"title": "Matières Dangereuses",
 			"item": "gtceu:cobaltite_dust",
-			"text": "Plusieurs $(thing)minerais$(), $(thing)poudres$() et $(thing)substances chimiques$() sont dangereux et peuvent infliger des $(item)effets négatifs$() ou même $(item)vous tuer$() quand elles sont dans votre inventaire. Si elles y sont présentes, elles seront marquées à l'écran par des $(item)Effets De Statut$().$(br2)Certains équipements tel que les $(thing)masques$(), les $(thing)gants$(), et la $(thing)combinaison pour matières dangereuses$() peuvent être utilisés pour éviter ces effets."
+			"text": "Plusieurs $(thing)minerais$(), $(thing)poudres$() et $(thing)substances chimiques$() sont dangereux et peuvent infliger des $(item)effets négatifs$() ou même $(item)vous tuer$() quand elles sont dans votre inventaire. Si elles y sont présentes, elles seront marquées à l'écran par des $(item)Effets De Statut$().$(br2)Certains équipements tel que les $(thing)masques$(), les $(thing)gants$(), et la $(thing)combinaison hazmat$() peuvent être utilisés pour éviter ces effets."
 		},
 		{
 			"type": "patchouli:text",
@@ -20,7 +20,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Prévention et Traitements",
-			"text": "$(li)$(l:tfg_ores/hazards#rocks)Des Roches ?$()$()$(li)$(l:tfg_ores/hazards#containers)Les Contenants$()$(li)$(l:tfg_ores/hazards#mask)Le Masque$()$(li)$(l:tfg_ores/hazards#gloves)Les Gants en Caoutchouc$()$(li)$(l:tfg_ores/hazards#hazmat)La Combinaison pour les Matières Dangereuses$()$(li)$(l:tfg_ores/hazards#medicine)Pilules, Comprimés et Salves$()$(li)$(l:tfg_ores/hazards#rad_away)Les Pilules RadAwayᵗᵐ$()$(li)$(l:tfg_ores/hazards#respawn)L'Impensable...$()"
+			"text": "$(li)$(l:tfg_ores/hazards#rocks)Des Roches ?$()$()$(li)$(l:tfg_ores/hazards#containers)Les Contenants$()$(li)$(l:tfg_ores/hazards#mask)Le Masque$()$(li)$(l:tfg_ores/hazards#gloves)Les Gants en Caoutchouc$()$(li)$(l:tfg_ores/hazards#hazmat)La Combinaison Hazmat$()$(li)$(l:tfg_ores/hazards#medicine)Pilules, Comprimés et Salves$()$(li)$(l:tfg_ores/hazards#rad_away)Les Pilules RadAwayᵗᵐ$()$(li)$(l:tfg_ores/hazards#respawn)L'Impensable...$()"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -29,7 +29,7 @@
 				"tag": "tfc:rock_knapping"
 			},
 			"anchor": "rocks",
-			"text": "$(thing)La technique la plus facile$() de $(thing)prévenir$() des effets négatifs est de $(item)ne pas ramasser des items dangereux du tout$().$(br2)Remplir votre inventaire de $(thing)Roches$(), par exemple vous laissera choisir quels items vous souhaitez ramasser, ce qui vous permettra de vous soucier de ceux qui sont dangereux plus tard."
+			"text": "$(thing)La technique la plus facile$() pour $(thing)prévenir$() des effets négatifs est de $(item)ne pas ramasser d'item dangereux du tout$().$(br2)Remplir votre inventaire de $(thing)Roches$(), par exemple vous laissera choisir quels items vous souhaitez ramasser, ce qui vous permettra de vous soucier de ceux qui sont dangereux plus tard."
 		},
 		{
 			"type": "patchouli:spotlight",

@@ -1318,7 +1318,7 @@
 						}
 					}
 					match_nbt: false
-					title: "{quests.high_voltage.gun.task1}"
+					title: "{quests.high_voltage.gun.task.1}"
 					type: "item"
 				}
 				{
@@ -1331,7 +1331,7 @@
 						}
 					}
 					optional_task: true
-					title: "{quests.high_voltage.gun.task2}"
+					title: "{quests.high_voltage.gun.task.2}"
 					type: "item"
 				}
 				{

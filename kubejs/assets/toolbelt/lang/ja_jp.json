@@ -1,0 +1,15 @@
+{
+	"item.toolbelt.belt": "ツールベルト",
+	"item.toolbelt.pouch": "ベルトポーチ",
+	"key.toolbelt.category": "ツールベルト",
+	"key.toolbelt.cycle.left": "左に回す",
+	"key.toolbelt.cycle.right": "右に回す",
+	"key.toolbelt.open": "道具の入れ替え",
+	"key.toolbelt.slot": "ベルト用のインベントリスロットを開く",
+	"text.toolbelt": "ツールベルト",
+	"text.toolbelt.empty": "空",
+	"text.toolbelt.extract": "取り出す",
+	"text.toolbelt.insert": "しまう",
+	"text.toolbelt.swap": "入れ替え",
+	"text.toolbelt.tooltip": "強化回数：%s（%sスロット）"
+}

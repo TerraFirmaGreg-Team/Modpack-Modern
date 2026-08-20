@@ -623,9 +623,10 @@
 					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						"ftbfiltersystem:filter": "or(item(gtceu:wood_crate)item(gtceu:bronze_crate)item(gtceu:steel_crate)item(gtceu:aluminium_crate)item(gtceu:stainless_steel_crate)item(gtceu:titanium_crate)item(gtceu:tungsten_steel_crate))"
+						"ftbfiltersystem:filter": "or(item(gtceu:wood_crate)item(gtceu:bronze_crate)item(gtceu:steel_crate)item(gtceu:aluminium_crate)item(gtceu:stainless_steel_crate)item(gtceu:titanium_crate)item(gtceu:tungsten_steel_crate)item(gtceu:bismuth_bronze_crate)item(gtceu:black_bronze_crate))"
 					}
 				}
+				title: "{quests.tfg_tips.crates.task}"
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.crates.title}"
@@ -2862,7 +2863,7 @@
 							"ftbfiltersystem:filter": "item_tag(rnr:mattocks)"
 						}
 					}
-					title: "{quests.tfg_tips.tools_tips.mattocks.task0}"
+					title: "{quests.tfg_tips.tools_tips.mattocks.task.0}"
 					type: "item"
 				}
 				{
@@ -2876,7 +2877,7 @@
 						}
 					}
 					optional_task: true
-					title: "{quests.tfg_tips.tools_tips.mattocks.task1}"
+					title: "{quests.tfg_tips.tools_tips.mattocks.task.1}"
 					type: "item"
 				}
 			]

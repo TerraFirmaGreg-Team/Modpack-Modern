@@ -5,6 +5,7 @@
 	"commands.ap_stairs_state_debug.wrong_block": "%s is not a valid block, must be a stair block with additional states.",
 	"key.additionalplacements.placement_toggle": "Toggle placement logic",
 	"key.categories.additionalplacements": "Additional Placements",
+	"msg.additionalplacements.configurationerrors": "Additional Placement configuration errors were detected while attempting to connect to the server",
 	"msg.additionalplacements.disconnected": "Additional Placements configuration conflict",
 	"msg.additionalplacements.errors.client": "Client-side refused:",
 	"msg.additionalplacements.errors.server": "Server-side refused:",
