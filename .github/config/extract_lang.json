@@ -121,6 +121,8 @@
     "achievement?\\.",
     "create\\.boiler\\.\\w+_dots",
     "item.createaddition.brass_figurine.tooltip.summary",
-    "item\\.firmaciv\\.(canoe(?:_with_paddle)?|kayak_with_paddle|rowboat|sloop)_icon_only"
+    "item\\.firmaciv\\.(canoe(?:_with_paddle)?|kayak_with_paddle|rowboat|sloop)_icon_only",
+    "block.firmalife.ore.*",
+    "block\\.beneath\\.wood\\.(windmill|water_wheel|clutch)\\..+"
   ]
 }
