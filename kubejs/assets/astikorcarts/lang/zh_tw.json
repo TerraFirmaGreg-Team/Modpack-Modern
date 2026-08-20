@@ -1,5 +1,4 @@
 {
-	"config.astikorcarts.speedmodifier": "改變速度",
 	"entity.astikorcarts.animal_cart": "牲畜運載馬車",
 	"entity.astikorcarts.plow": "犁",
 	"entity.astikorcarts.supply_cart": "馬車",
@@ -7,7 +6,5 @@
 	"item.astikorcarts.plow": "犁",
 	"item.astikorcarts.supply_cart": "馬車",
 	"item.astikorcarts.wheel": "車輪",
-	"itemGroup.astikorcarts": "AstikorCarts",
-	"key.astikorcarts.desc": "把動物栓上車",
-	"key.categories.astikorcarts": "AstikorCarts"
+	"key.astikorcarts.desc": "把動物栓上車"
 }

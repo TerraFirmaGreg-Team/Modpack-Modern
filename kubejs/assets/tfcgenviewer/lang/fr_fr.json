@@ -1,9 +1,5 @@
 {
   "button.tfcgenviewer.save": "Sauvegarder",
-  "tfcgenviewer.preview_world.visualizer_type.biomes": "Biomes",
-  "tfcgenviewer.preview_world.km": "%s km",
-  "tfcgenviewer.rock_editor.delete_tooltip": "Retirer",
-  "tfcgenviewer.rock_editor.confirm": "Confirmer",
   "rock.tfc.andesite": "Andésite",
   "rock.tfc.chalk": "Craie",
   "rock.tfc.chert": "Chert",
@@ -21,7 +17,12 @@
   "rock.tfc.schist": "Schiste",
   "rock.tfc.shale": "Shale",
   "rock.tfc.slate": "Ardoise",
+  "tfcgenviewer.biome_altitude.high": "Élevé",
   "tfcgenviewer.biome_altitude.low": "Faible",
   "tfcgenviewer.biome_altitude.medium": "Moyen",
-  "tfcgenviewer.biome_altitude.high": "Élevé"
+  "tfcgenviewer.preview_world.km": "%s km",
+  "tfcgenviewer.preview_world.visualizer_type.biomes": "Biomes",
+  "tfcgenviewer.rock_editor.confirm": "Confirmer",
+  "tfcgenviewer.rock_editor.delete_tooltip": "Retirer",
+  "tfcgenviewer.rock_type.volcanic": "Volcanique"
 }

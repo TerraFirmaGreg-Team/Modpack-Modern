@@ -1,4 +1,8 @@
 {
+	"emixx.emixx.configuration.disabledCreativeModeTabs.manage": "Yapılandır...",
+	"emixx.emixx.configuration.disabledStackGroups.manage": "Yapılandır...",
+	"stackgroup.emixx.buckets": "Kova",
+	"stackgroup.emixx.raw_materials": "Ham materyal",
 	"stackgroup.emixx.tfg_barrels": "Fıçılar",
 	"stackgroup.emixx.tfg_conductor_caps": "Kondüktör Şapkaları",
 	"stackgroup.emixx.tfg_coral_blocks": "Mercanlar",
@@ -22,5 +26,6 @@
 	"stackgroup.emixx.tfg_palettes_cycle_groups_yellow_base": "Sarı Lokometal",
 	"stackgroup.emixx.tfg_plates": "Levha",
 	"stackgroup.emixx.tfg_seats": "Koltuklar",
-	"stackgroup.emixx.tfg_tools_wrenches": "İngiliz Anahtarı"
+	"stackgroup.emixx.tfg_tools_wrenches": "İngiliz Anahtarı",
+	"stackgroup.emixx.wool": "Yün"
 }

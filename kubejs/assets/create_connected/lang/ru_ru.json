@@ -106,7 +106,6 @@
 	"block.create_connected.linked_polished_blackstone_button": "Кнопка из полированного чернита со встроенным передатчиком",
 	"block.create_connected.linked_spruce_button": "Еловая кнопка со встроенным передатчиком",
 	"block.create_connected.linked_stone_button": "Каменная кнопка со встроенным передатчиком",
-	"block.create_connected.linked_throttle_lever": "Тяговый рычаг со встроенным передатчиком",
 	"block.create_connected.linked_warped_button": "Искажённая кнопка со встроенным передатчиком",
 	"block.create_connected.overstress_clutch": "Предохраняющее сцепление",
 	"block.create_connected.overstress_clutch.tooltip.behaviour1": "_Возвращает_ сцепление в исходное состояние.",
@@ -345,6 +344,5 @@
 	"item.create_connected.vertical_brass_gearbox.tooltip.summary": "Угловая передача с _независимо вращающимися_ выходами. Направления могут быть изменены гаечным ключом.",
 	"item.create_connected.vertical_parallel_gearbox": "Вертикальная параллельная угловая передача",
 	"item.create_connected.vertical_six_way_gearbox": "Вертикальная шестисторонняя угловая передача",
-	"item.create_connected.vertical_six_way_gearbox.tooltip.summary": "Угловая передача с выходами на _всех шести сторонах_. Верхний и нижний вращаются _в два раза медленнее_.",
-	"itemGroup.create_connected.main": "Create: Connected"
+	"item.create_connected.vertical_six_way_gearbox.tooltip.summary": "Угловая передача с выходами на _всех шести сторонах_. Верхний и нижний вращаются _в два раза медленнее_."
 }

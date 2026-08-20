@@ -1,4 +1,8 @@
 {
+  "behaviour.paintspray.infinite.status.color": "§7Режим: §f%s",
+  "behaviour.paintspray.infinite.status.solvent": "Растворитель",
+  "behaviour.paintspray.infinite.tooltip.current_color": "Текущий цвет: %s",
+  "behaviour.paintspray.solvent.short": "Растворитель",
   "block.gtmutils.enlarged_stocking_bus.desc.0": "Извлекает предметы непосредственно из сети ME",
   "block.gtmutils.enlarged_stocking_bus.desc.1": "Чрезмерный список запасов",
   "block.gtmutils.enlarged_stocking_bus.desc.2": "Авто-вытягивание может заполнить список наиболее многочисленными предметами МЭ-сети",
@@ -90,11 +94,16 @@
   "gtceu.placeholder_info.watfrequency.0": "Показывает текущую частоту, используемую беспроводным активным трансформатором.",
   "gtceu.placeholder_info.watfrequency.1": "Потребление:",
   "gtceu.placeholder_info.watfrequency.2": "  {watfrequency} -> Текущая частота: (вставьте частоту здесь)",
+  "gtceu.placeholder_info.webfrequency.1": "Потребление:",
   "gtmutils.gui.pterb.wireless_configurator.title": "Беспроводная частота",
+  "gtmutils.gui.web_hub.wireless_configurator.title": "Беспроводная частота",
   "gtmutils.machine.64a_energy_converter.tooltip_tool_usage": "Начинается как §fEU конвертер§7, используйте мягкий молоток для смены",
   "gtmutils.multiblock.pterb_machine.coolant_usage": "§cОткачивает %smb %s в секунду",
+  "gtmutils.multiblock.web_hub_machine.coolant_usage": "§cОткачивает %smb %s в секунду",
   "gtmutils.pterb.current_frequency": "Текущая частота: %s",
   "gtmutils.pterb_machine.invalid_frequency": "WAT не будут работать на частоте 0!",
+  "gtmutils.web_machine.current_frequency": "Текущая частота: %s",
+  "gui.gtmutils.color_select.title": "Выбрать цвет",
   "item.gtceu.tool.ev_buzzsaw": "Циркулярная пила (%s §5EV§r)",
   "item.gtceu.tool.ev_chainsaw": "Бензопила (%s §5EV§r)",
   "item.gtceu.tool.ev_screwdriver": "%s Электроотвертка (EV)",
@@ -149,5 +158,8 @@
   "tooltip.pterb_machine.frequencies": "Все WAT с одинаковой частотой будут передавать энергию по воздуху друг другу, как один активный трансформатор.",
   "tooltip.pterb_machine.input_coolant_before_use": "Перед включением всегда заливайте охладитель!",
   "tooltip.pterb_machine.purpose": "Мост Эйнштейна-Розена для передачи энергии (PTERB)",
-  "tooltip.pterb_machine.uses_coolant": "Тратится %s для работы!"
+  "tooltip.pterb_machine.uses_coolant": "Тратится %s для работы!",
+  "tooltip.web_hub_machine.input_coolant_before_use": "Перед включением всегда заливайте охладитель!",
+  "tooltip.web_hub_machine.purpose": "Мост Эйнштейна-Розена для передачи энергии (PTERB)",
+  "tooltip.web_hub_machine.uses_coolant": "Тратится %s для работы!"
 }
