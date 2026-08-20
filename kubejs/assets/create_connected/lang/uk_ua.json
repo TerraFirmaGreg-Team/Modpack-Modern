@@ -123,7 +123,6 @@
 	"block.create_connected.linked_polished_blackstone_button": "Зв’язана кнопка з полірованого чорнокаменю",
 	"block.create_connected.linked_spruce_button": "Зв’язана смерекова кнопка",
 	"block.create_connected.linked_stone_button": "Зв’язана кам’яна кнопка",
-	"block.create_connected.linked_throttle_lever": "Віддалений дросельний важіль",
 	"block.create_connected.linked_warped_button": "Зв’язана химерна кнопка",
 	"block.create_connected.overstress_clutch": "Зчеплення перенавантаження",
 	"block.create_connected.overstress_clutch.tooltip.behaviour1": "_Скидає_ до зчепленого стану.",
@@ -362,6 +361,5 @@
 	"item.create_connected.vertical_brass_gearbox.tooltip.summary": "Коробка передач із _незалежно налаштовними_ з'єднаннями у чотирьох напрямках.",
 	"item.create_connected.vertical_parallel_gearbox": "Вертикальна паралельна коробка передач",
 	"item.create_connected.vertical_six_way_gearbox": "Вертикальна шестибічна коробка передач",
-	"item.create_connected.vertical_six_way_gearbox.tooltip.summary": "Коробка передач із з’єднаннями на _усіх 6 сторонах_. Верхнє та нижнє обертаються _вдвічі повільніше_.",
-	"itemGroup.create_connected.main": "Create: Connected"
+	"item.create_connected.vertical_six_way_gearbox.tooltip.summary": "Коробка передач із з’єднаннями на _усіх 6 сторонах_. Верхнє та нижнє обертаються _вдвічі повільніше_."
 }

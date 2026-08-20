@@ -1,26 +1,26 @@
 {
-	"name": "Harvest Baskets",
+	"name": "Paniers de cueillette",
 	"icon": "tfg:harvest_basket",
 	"category": "tfc:mechanics",
 	"read_by_default": true,
 	"pages": [
 		{
 			"type": "patchouli:spotlight",
-			"title": "Harvest Baskets",
+			"title": "Paniers de cueillette",
 			"item": {
 				"tag": "tfg:harvester"
 			},
-			"text": "Made for those with a short stature--$(thing)Harvest Baskets$() are just the tool needed for plucking trees and bushes of fruit.$(br)To use a harvest basket; right click on a fruit tree or fruit bush and all blocks within a $(thing)7-block radius$() will be picked."
+			"text": "Parfait pour les gens de petite taille, le $(thing)Panier de cueillette$() est l'outil idéal pour cueillir les fruits des arbres et buissons.$(br)Pour utiliser un panier de cueillette, cliquez droit sur un arbre ou buisson fruitier et tous les blocs dans un $(thing)rayon de 7 blocs$() seront cueillis."
 		},
 		{
 			"type": "patchouli:text",
-			"text": "A regular harvest basket has a durability of $(thing)128$(), while the aluminium harvest basket does not take any damage on use. Harvest baskets can also be used by things like the $(thing)Create Deployer$() to automate harvesting. The baskets will use durability in the process."
+			"text": "Un panier de récolte normal possède $(thing)128$() de durabilité, tandis qu'un en aluminium ne casse pas. Les paniers de récolte sont utilisables par certaines machines comme le $(thing)Déployeur de Create$() pour automatiser la récolte. Les paniers utiliseront de la durabilité."
 		},
 		{
 			"type": "patchouli:crafting",
-			"title": "Harvest Basket",
+			"title": "Panier de cueillette",
 			"recipe": "tfg:shaped/harvest_basket_from_papyrus",
-			"text": "A basic $(item)Harvest Basket$() can be made of soaked papyrus or hardwood."
+			"text": "Un $(item)Panier de cueillette$() de base peut être fait à partir de papyrus trempé ou de bois dur."
 		}
 	]
 }

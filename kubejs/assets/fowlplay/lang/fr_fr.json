@@ -1,9 +1,4 @@
 {
-	"config.audio": "Audio",
-	"config.audio.generic.call": "Portée de l’appel",
-	"config.audio.generic.call.desc": "La portée audible des appels de %s (en chunks)",
-	"config.audio.generic.song": "Portée du chant",
-	"config.audio.generic.song.desc": "La portée audible des chants de %s (en chunks)",
 	"config.info.restart": "Nécessite un redémarrage pour être pris en compte.",
 	"config.spawning": "Apparition",
 	"config.spawning.generic.maxGroupSize": "Taille maximale du groupe",
@@ -17,7 +12,6 @@
 	"config.visual.customChickenModel": "Modèle de poulet personnalisé",
 	"config.visual.customChickenModel.desc": "Ajoute un modèle mis à jour avec des animations uniques pour le poulet.",
 	"entity.fowlplay.blue_jay": "Geai bleu",
-	"entity.fowlplay.cardinal": "Cardinal",
 	"entity.fowlplay.chickadee": "Mésange",
 	"entity.fowlplay.crow": "Corbeau",
 	"entity.fowlplay.duck": "Canard",
@@ -25,7 +19,6 @@
 	"entity.fowlplay.gull": "Mouette",
 	"entity.fowlplay.hawk": "Faucon",
 	"entity.fowlplay.penguin": "Manchot",
-	"entity.fowlplay.pigeon": "Pigeon",
 	"entity.fowlplay.raven": "Grand corbeau",
 	"entity.fowlplay.robin": "Rougegorge",
 	"entity.fowlplay.scarecrow": "Épouvantail",
@@ -96,7 +89,5 @@
 	"tag.item.fowlplay.pigeon_food": "Nourriture pour pigeon",
 	"tag.item.fowlplay.raven_food": "Nourriture pour grand corbeau",
 	"tag.item.fowlplay.robin_food": "Nourriture pour rougegorge",
-	"tag.item.fowlplay.sparrow_food": "Nourriture pour moineau",
-	"text.betterf3.line.ambient_birds": "Oiseaux ambiants",
-	"text.betterf3.line.birds": "Oiseaux"
+	"tag.item.fowlplay.sparrow_food": "Nourriture pour moineau"
 }

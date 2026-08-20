@@ -1,9 +1,4 @@
 {
-	"config.audio": "音频",
-	"config.audio.generic.call": "叫声衰减距离",
-	"config.audio.generic.call.desc": "%s叫声的可听范围（以区块为单位）",
-	"config.audio.generic.song": "歌声衰减距离",
-	"config.audio.generic.song.desc": "%s歌声的可听范围（以区块为单位）",
 	"config.info.restart": "需要重启生效",
 	"config.spawning": "生成",
 	"config.spawning.generic.maxGroupSize": "最大每群数量",
@@ -96,7 +91,5 @@
 	"tag.item.fowlplay.pigeon_food": "鸽子食物",
 	"tag.item.fowlplay.raven_food": "渡鸦食物",
 	"tag.item.fowlplay.robin_food": "知更鸟食物",
-	"tag.item.fowlplay.sparrow_food": "麻雀食物",
-	"text.betterf3.line.ambient_birds": "环境鸟叫声",
-	"text.betterf3.line.birds": "鸟"
+	"tag.item.fowlplay.sparrow_food": "麻雀食物"
 }

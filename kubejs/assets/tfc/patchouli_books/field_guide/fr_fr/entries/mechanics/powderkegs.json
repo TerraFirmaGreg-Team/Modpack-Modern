@@ -1,11 +1,11 @@
 {
-    "name": "Powderkegs",
+    "name": "Poudrières",
     "category": "tfc:mechanics",
     "icon": "tfc:powderkeg",
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "$(thing)Powderkegs$() are a device used to create explosions. They have an inventory of 12 slots, which may only contain $(thing)gunpowder$(). The strength of the explosion is proportional to the amount of gunpowder contained."
+            "text": "Les $(thing)Poudrières() sont des appareils servant à créer des explosions. Elles possèdent un inventaire de 12 emplacements, qui ne peuvent contenir que de la $(thing)poudre à canon$(). La force de l'explosion est proportionnelle à la quantité de poudre utilisée."
         },
         {
             "type": "patchouli:multiblock",
@@ -22,18 +22,18 @@
                     "X": "tfc:powderkeg[sealed=true]"
                 }
             },
-            "name": "The Powderkeg",
-            "text": "Similar to the $(l:mechanics/barrels)Barrel$(), the powderkeg is a device which can be sealed and unsealed with $(item)$(k:key.use)$(). Only sealed powderkegs may be ignited.",
+            "name": "La poudrière",
+            "text": "Tout comme les $(l:mechanics/barrels)Tonneaux$(), les poudrières peuvent être scellées et descellées avec $(item)$(k:key.use)$(). Seules les poudrières scellées peuvent être détonées.",
             "enable_visualize": false
         },
         {
             "type": "patchouli:text",
-            "text": "Explosions from powderkegs will cause other powderkegs to light and explode. All blocks broken in an explosion will drop items, but not necessarily at the same location of the block they were from."
+            "text": "L'explosion d'une poudrière provoque la détonation d'autres poudrières. Tous les blocs détruits dans l'explosion tomberont au sol, mais pas nécessairement à l'endroit d'où ils viennent."
         },
         {
             "type": "patchouli:crafting",
             "recipe": "tfc:crafting/powderkeg",
-            "text": "Powderkegs can be made from adding $(l:mechanics/dye)Red Dye$() and string to the crafting shape of a barrel."
+            "text": "Les poudrières sont fabriquées en ajoutant du $(l:mechanics/dye)Colorant rouge$() et de la ficelle à la fabrication d'un tonneau."
         },
         {
             "type": "patchouli:crafting",
@@ -42,7 +42,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "Gunpowder can be made in two ways: the first formulation is from $(l:the_world/ores_and_minerals#saltpeter)Saltpeter$(), $(l:the_world/ores_and_minerals#saltpeter)Sulfur$(), and $(l:mechanics/charcoal_pit)Charcoal$() powder. Powder is made using a $(l:mechanics/quern)Quern$(). If you have access to $(l:the_world/ores_and_minerals#graphite)Graphite$(), then a more productive recipe can be used."
+            "text": "On peut créer de la poudre à canon de deux manières : la première formulation demande de la poudre de $(l:the_world/ores_and_minerals#saltpeter)Salpêtre$(), $(l:the_world/ores_and_minerals#saltpeter)Soufre$(), et $(l:mechanics/charcoal_pit)Charbon$(). Les poudres se font à l'aide d'une $(l:mechanics/quern)Meule$(). Si vous avez accès au $(l:the_world/ores_and_minerals#graphite)Graphite$(), une recette plus productive peut être utilisée."
         }
     ],
     "read_by_default": true

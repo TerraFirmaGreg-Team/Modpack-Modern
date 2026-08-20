@@ -1,4 +1,8 @@
 {
+  "behaviour.paintspray.infinite.status.color": "§7Tryb: §f%s",
+  "behaviour.paintspray.infinite.status.solvent": "Rozpuszczalnik",
+  "behaviour.paintspray.infinite.tooltip.current_color": "Obecny kolor: %s",
+  "behaviour.paintspray.solvent.short": "Rozpuszczalnik",
   "block.gtmutils.enlarged_stocking_bus.desc.0": "Pobiera przedmioty bezpośrednio z sieci ME",
   "block.gtmutils.enlarged_stocking_bus.desc.1": "Bardzo długa lista zakupów",
   "block.gtmutils.enlarged_stocking_hatch.desc.0": "Pobiera płyny bezpośrednio z sieci ME",
@@ -69,9 +73,14 @@
   "config.jade.plugin_gtmutils.pterb_info": "Informacje o WAT",
   "gtceu.placeholder_info.watfrequency.1": "Użycie:",
   "gtceu.placeholder_info.watfrequency.2": "  {watfrequency} -> Obecna częstotliwość: (wstaw tutaj częstotliwość)",
+  "gtceu.placeholder_info.webfrequency.1": "Użycie:",
   "gtmutils.gui.pterb.wireless_configurator.title": "Częstotliwość",
+  "gtmutils.gui.web_hub.wireless_configurator.title": "Częstotliwość",
   "gtmutils.multiblock.pterb_machine.coolant_usage": "§cZużywa %smW %s na sekundę",
+  "gtmutils.multiblock.web_hub_machine.coolant_usage": "§cZużywa %smW %s na sekundę",
   "gtmutils.pterb.current_frequency": "Aktualna częstotliwość: %s",
+  "gtmutils.web_machine.current_frequency": "Aktualna częstotliwość: %s",
+  "gui.gtmutils.color_select.title": "Wybierz kolor",
   "item.gtceu.tool.ev_buzzsaw": "Piła tarczowa EN (%s)",
   "item.gtceu.tool.ev_chainsaw": "Piła łańcuchowa EN (%s)",
   "item.gtceu.tool.ev_screwdriver": "Śrubokręt elektryczny EN (%s)",
@@ -111,6 +120,7 @@
   "item.gtmutils.silver_credit": "Moneta ze srebra",
   "item.gtmutils.zpm_power_unit": "Zasilacz MPZ",
   "itemGroup.gtmutils.creative_tab": "GregTech Modern Utilities",
+  "key.categories.gtmutils": "GTM Utils",
   "material.gtmutils.quantum_coolant": "Chłodziwo kwantowe",
   "tooltip.omnibreaker.charge_status": "Energia: %s EU / %s EU",
   "tooltip.omnibreaker.modern_vajra": "Nowoczesna Vajra",
@@ -124,5 +134,8 @@
   "tooltip.omnibreaker.tool_mode_4": "Łom",
   "tooltip.pterb_machine.input_coolant_before_use": "Zawsze wprowadź chłodziwo przed włączeniem!",
   "tooltip.pterb_machine.purpose": "Most Einsteina–Rosena do przesyłu energii (PTERB)\"",
-  "tooltip.pterb_machine.uses_coolant": "Używa %s do funkcjonowania!"
+  "tooltip.pterb_machine.uses_coolant": "Używa %s do funkcjonowania!",
+  "tooltip.web_hub_machine.input_coolant_before_use": "Zawsze wprowadź chłodziwo przed włączeniem!",
+  "tooltip.web_hub_machine.purpose": "Most Einsteina–Rosena do przesyłu energii (PTERB)\"",
+  "tooltip.web_hub_machine.uses_coolant": "Używa %s do funkcjonowania!"
 }

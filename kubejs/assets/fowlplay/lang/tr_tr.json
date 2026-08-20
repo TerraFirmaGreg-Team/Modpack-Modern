@@ -1,9 +1,4 @@
 {
-	"config.audio": "Ses",
-	"config.audio.generic.call": "Çağrı Mesafesi",
-	"config.audio.generic.call.desc": "%s çağrılarının duyulabilir aralığı (parçalar halinde)",
-	"config.audio.generic.song": "Şarkı Mesafesi",
-	"config.audio.generic.song.desc": "%s şarkının duyulabilir aralığı (parçalar halinde)",
 	"config.info.restart": "Etkili olabilmesi için yeniden başlatılması gerekir.",
 	"config.spawning": "Yumurtlama",
 	"config.spawning.generic.maxGroupSize": "Maksimum Grup Boyutu",
@@ -27,7 +22,6 @@
 	"entity.fowlplay.penguin": "Penguen",
 	"entity.fowlplay.pigeon": "Güvercin",
 	"entity.fowlplay.raven": "Kuzgun",
-	"entity.fowlplay.robin": "Robin",
 	"entity.fowlplay.scarecrow": "Korkuluk",
 	"entity.fowlplay.sparrow": "Serçe",
 	"item.fowlplay.blue_jay_spawn_egg": "Mavi Alakarga Yumurtlama Yumurtası",
@@ -58,8 +52,6 @@
 	"subtitles.entity.crow.hurt": "Karga acıyor",
 	"subtitles.entity.duck.call": "Ördek vakvakları",
 	"subtitles.entity.duck.hurt": "Ördek acıyor",
-	"subtitles.entity.goose.call": "Kaz sesleri",
-	"subtitles.entity.goose.hurt": "Kaz acıyor",
 	"subtitles.entity.gull.call": "Martı çığlıkları",
 	"subtitles.entity.gull.hurt": "Martı acıyor",
 	"subtitles.entity.gull.long_call": "Martı çağrıları",
@@ -92,7 +84,5 @@
 	"tag.item.fowlplay.pigeon_food": "Güvercin yemi",
 	"tag.item.fowlplay.raven_food": "Kuzgun yemeği",
 	"tag.item.fowlplay.robin_food": "Robin yemeği",
-	"tag.item.fowlplay.sparrow_food": "Serçe yemi",
-	"text.betterf3.line.ambient_birds": "Ortam Kuşları",
-	"text.betterf3.line.birds": "Kuşlar"
+	"tag.item.fowlplay.sparrow_food": "Serçe yemi"
 }

@@ -1,4 +1,11 @@
 {
+	"sodium.option_impact.high": "高",
+	"sodium.option_impact.low": "低",
+	"sodium.option_impact.medium": "中",
+	"sodium.options.buttons.apply": "应用",
+	"sodium.options.buttons.undo": "撤销",
+	"sodium.options.leaves_quality.name": "树叶",
+	"sodium.options.pages.advanced": "高级",
 	"sodium.options.translucent_face_sorting.name": "半透明面排序",
 	"sodium.options.translucent_face_sorting.tooltip": "启用后，游戏将正确应用彩色玻璃、水等方块表面的半透明效果。",
 	"sodium.options.use_compact_vertex_format.name": "使用紧凑型顶点格式",
