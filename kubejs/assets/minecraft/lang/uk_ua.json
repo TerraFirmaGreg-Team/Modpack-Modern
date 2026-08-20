@@ -23,7 +23,7 @@
 	"block.minecraft.cobblestone_stairs": "Сходи з відновленого кам'яного кругляка",
 	"block.minecraft.cobblestone_wall": "Стіна з відновленого кам'яного кругляка",
 	"block.minecraft.cracked_deepslate_bricks": "Потріскані мігматитові цегли",
-	"block.minecraft.cracked_deepslate_tiles": "Потріскані мігматитові плитки",
+	"block.minecraft.cracked_deepslate_tiles": "Потріскані мігматитові кахлі",
 	"block.minecraft.cracked_nether_bricks": "Потріскані кератофірові цегли",
 	"block.minecraft.cracked_polished_blackstone_bricks": "Потріскані піроксенітові цегли",
 	"block.minecraft.cracked_stone_bricks": "Потріскані цегли з реконструйованого каменю",
@@ -147,5 +147,6 @@
 	"item.minecraft.shield.yellow": "Жовтий дерев'яний щит",
 	"item.minecraft.smithing_template.armor_trim.additions_slot_description": "Додай пластину або вишуканий дорогоцінний камінь",
 	"item.minecraft.string": "Шовкова нитка",
-	"material.tfg.dripstone": "Травертин"
+	"material.tfg.dripstone": "Травертин",
+	"tag.item.minecraft.wool": "Блоки тканини"
 }

@@ -517,29 +517,11 @@ function registerVintageImprovementsRecipes(event) {
 	// #endregion
 
 	// #region Coiling
-	event.recipes.vintageimprovements.coiling('8x tfc:wool_yarn', 'tfc:wool')
-		.processingTime(100 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
-		.id(`tfg:vi/coiling/wool_yarn`)
-
-	event.recipes.vintageimprovements.coiling('8x tfc:wool_yarn', 'tfg:glacian_wool')
-		.processingTime(100 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
-		.id(`tfg:vi/coiling/glacian_wool_yarn`)
-		.springColor('FFCCFC')
-
-	event.recipes.vintageimprovements.coiling('16x tfg:phantom_thread', 'minecraft:phantom_membrane')
-		.processingTime(100 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
-		.id(`tfg:vi/coiling/phantom_thread`)
-		.springColor('E1C4C4')
 
 	event.recipes.vintageimprovements.coiling('8x firmalife:pineapple_yarn', 'firmalife:pineapple_fiber')
 		.processingTime(100 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
 		.id(`tfg:vi/coiling/pineapple_yarn`)
 		.springColor('FFFCCC')
-
-	event.recipes.vintageimprovements.coiling('32x tfg:polycaprolactam_string', ChemicalHelper.get(TagPrefix.ingot, GTMaterials.Polycaprolactam, 1))
-		.processingTime(100 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
-		.id(`tfg:vi/coiling/nylon_string`)
-		.springColor('000000')
 
 	// #endregion
 

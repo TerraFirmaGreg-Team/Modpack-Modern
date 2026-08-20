@@ -1,0 +1,15 @@
+{
+	"item.toolbelt.belt": "도구 허리띠",
+	"item.toolbelt.pouch": "허리띠 주머니",
+	"key.toolbelt.category": "도구 허리띠",
+	"key.toolbelt.cycle.left": "도구 반시계 방향으로 회전",
+	"key.toolbelt.cycle.right": "도구 시계 방향으로 회전",
+	"key.toolbelt.open": "도구 교체하기",
+	"key.toolbelt.slot": "허리띠 슬롯 인벤토리 열기",
+	"text.toolbelt": "도구 허리띠",
+	"text.toolbelt.empty": "비어 있음",
+	"text.toolbelt.extract": "꺼내기",
+	"text.toolbelt.insert": "넣기",
+	"text.toolbelt.swap": "교체하기",
+	"text.toolbelt.tooltip": "업그레이드: %s (슬롯 %s개)"
+}

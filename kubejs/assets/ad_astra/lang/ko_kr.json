@@ -274,10 +274,10 @@
 	"config.ad_astra.allowFlagImages": "깃발 이미지 허용",
 	"config.ad_astra.atmosphereLeave": "대기권 이탈",
 	"config.ad_astra.disableAirVortexes": "와류 비활성",
-	"config.ad_astra.disabledPlanets": "행성 비활성",
 	"config.ad_astra.disableGravity": "중력 비활성",
 	"config.ad_astra.disableOxygen": "산소 비활성",
 	"config.ad_astra.disableTemperature": "온도 비활성",
+	"config.ad_astra.disabledPlanets": "행성 비활성",
 	"death.attack.acid_rain": "%1$s이(가) 산성 물질에 희생되었습니다",
 	"death.attack.acid_rain.player": "%1$s이(가) %2$s에게서 도망치다가 산성 물질에 희생되었습니다",
 	"death.attack.oxygen": "%1$s은(는) 더 이상 숨을 쉴 수 없었습니다",
@@ -437,5 +437,7 @@
 	"text.ad_astra.temperature": "%s도",
 	"text.ad_astra.text.confirm": "확인",
 	"tooltip.ad_astra.distribution_mode.round_robin": "돌아가며 처리",
-	"tooltip.ad_astra.etrionic_blast_furnace.mode.alloying": "합금"
+	"tooltip.ad_astra.etrionic_blast_furnace.mode.alloying": "합금",
+	"tooltip.ad_astra.next": "다음",
+	"tooltip.ad_astra.previous": "이전"
 }

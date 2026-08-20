@@ -1,0 +1,17 @@
+{
+  "component.gtceuterminal.component_type.computation_data_reception": "Skaičiavimo duomenų priėmimo anga\n",
+  "component.gtceuterminal.component_type.computation_data_transmission": "Skaičiavimo duomenų perdavimo anga",
+  "component.gtceuterminal.component_type.data_access": "Duomenų prieigos anga",
+  "component.gtceuterminal.component_type.input_bus": "Įvesties magistralė",
+  "component.gtceuterminal.component_type.input_hatch": "Įvesties anga",
+  "component.gtceuterminal.component_type.maintenance": "Priežiūros anga",
+  "component.gtceuterminal.component_type.optical_data_reception": "Optinė duomenų priėmimo anga",
+  "component.gtceuterminal.component_type.optical_data_transmission": "Optinė duomenų perdavimo anga",
+  "component.gtceuterminal.component_type.output_bus": "Išvesties magistralė",
+  "component.gtceuterminal.component_type.parallel_hatch": "Lygiagreti anga",
+  "component.gtceuterminal.component_type.steam_input_bus": "Garų įvesties magistralė",
+  "component.gtceuterminal.component_type.steam_output_bus": "Garų išvesties magistralė",
+  "gui.gtceuterminal.coil_tier.kanthal": "Kantalas",
+  "gui.gtceuterminal.material_list.source.none": "Joks",
+  "gui.gtceuterminal.theme_editor.preset.orange": "Apelsinas"
+}

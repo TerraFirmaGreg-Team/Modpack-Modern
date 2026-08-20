@@ -7,11 +7,12 @@
 - Rebalanced all clothing into several tiers. For warming: primitive and insulated have +2 warmth, wool has +4 warmth, and animal clothes have +8. For cooling: silk, burlap, and linen are -2 warmth, animal clothes have -4, and new phantom silk and red elk clothes have -8. Clothing that's more difficult to obtain has more durability and insulation to compensate. @ashleney
 - Armor no longer affects player temperature (yes this includes the blue steel diving suit, though it does still make you fireproof) @ashleney
 - All recipes have been changed @Pyritie
-- Added new strong cooling clothing: phantom silk and red elk @ashleney @Atraxia
+- Added new clothing: phantom silk (cooling), red elk (cooling), and cotton @ashleney @Atraxia @Pyritie
 #### Other changes
 - Added combustion engines for generating SU from combustible fuels. You can use any fluid that works in a GregTech combustion generator or gas turbine (#4766) @Pyritie
 - Added two more "start room" variations to mineshafts, and added monsters to it @Pyritie
 - Reduced the amount of mobs (and treasure) in Beneath towers, so they are more useful for traveling @Pyritie
+- Added a new crop: cotton! Find it in the Beneath @Pyritie
 - The harpoon can now also be crafted with bronze, has much more durability, and can be repaired @Pyritie
 - Using TFC alloying recipes in the EMI recipe tree now actually shows the correct ratios @ashleney
 - Zoglins and zombie horses now also drop some raw hide @Pyritie
@@ -21,6 +22,9 @@
 - Added some 3D molecules to the molecular structure view (#4754) @BlueBoat29
 - Added recipes to convert rose quartz tiles back into blocks (#4768) @applenper
 - Added more cloth blocks @Pyritie
+- Added earlier ways to compress fertilizers into their "pure" form which give 100% nutrients at once @Pyritie
+- Changed a bunch of textures
+- Added new quests for concrete and steel supports, and fixed the drum/crate quests missing black/bismuth bronze (#4784) @zxro
 ### Bug fixes
 - Fixed mobs suffocating to death inside supports @Pyritie
 - Fixed the hose pulley collecting "flowing" oil fluid instead of normal oil fluid @Pyritie

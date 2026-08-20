@@ -1,4 +1,8 @@
 {
+  "behaviour.paintspray.infinite.status.color": "§7模式: §f%s",
+  "behaviour.paintspray.infinite.status.solvent": "溶剂",
+  "behaviour.paintspray.infinite.tooltip.current_color": "当前颜色：%s",
+  "behaviour.paintspray.solvent.short": "溶剂",
   "block.gtmutils.enlarged_stocking_bus.desc.0": "直接从ME网络抽取物品",
   "block.gtmutils.enlarged_stocking_bus.desc.1": "超大库存列表",
   "block.gtmutils.enlarged_stocking_bus.desc.2": "ME自动拉取模式可填充ME网络中数量最多的物品至列表",
@@ -90,11 +94,16 @@
   "gtceu.placeholder_info.watfrequency.0": "返回无线有源变压器当前使用的频率。",
   "gtceu.placeholder_info.watfrequency.1": "用法：",
   "gtceu.placeholder_info.watfrequency.2": "  {watfrequency} -> 当前频率：（此处插入频率）",
+  "gtceu.placeholder_info.webfrequency.1": "用法：",
   "gtmutils.gui.pterb.wireless_configurator.title": "无线频率",
+  "gtmutils.gui.web_hub.wireless_configurator.title": "无线频率",
   "gtmutils.machine.64a_energy_converter.tooltip_tool_usage": "默认§f转换为EU§7，使用软锤切换",
   "gtmutils.multiblock.pterb_machine.coolant_usage": "§c每秒消耗 %smB的%s",
+  "gtmutils.multiblock.web_hub_machine.coolant_usage": "§c每秒消耗 %smB的%s",
   "gtmutils.pterb.current_frequency": "当前频率：%s",
   "gtmutils.pterb_machine.invalid_frequency": "无线有源变压器不能在频率0下工作！",
+  "gtmutils.web_machine.current_frequency": "当前频率：%s",
+  "gui.gtmutils.color_select.title": "选择颜色",
   "item.gtceu.tool.ev_buzzsaw": "%s圆锯（§5EV§r）",
   "item.gtceu.tool.ev_chainsaw": "%s链锯（§5EV§r）",
   "item.gtceu.tool.ev_screwdriver": "%s电动螺丝刀（§5EV§r）",
@@ -149,5 +158,8 @@
   "tooltip.pterb_machine.frequencies": "相同频率的所有无线有源变压器之间将无线传输能量，如同单个有源变压器。",
   "tooltip.pterb_machine.input_coolant_before_use": "开启前务必先输入冷却剂！",
   "tooltip.pterb_machine.purpose": "能量传输爱因斯坦-罗森桥（PTERB）",
-  "tooltip.pterb_machine.uses_coolant": "消耗%s以维持运行！"
+  "tooltip.pterb_machine.uses_coolant": "消耗%s以维持运行！",
+  "tooltip.web_hub_machine.input_coolant_before_use": "开启前务必先输入冷却剂！",
+  "tooltip.web_hub_machine.purpose": "能量传输爱因斯坦-罗森桥（PTERB）",
+  "tooltip.web_hub_machine.uses_coolant": "消耗%s以维持运行！"
 }

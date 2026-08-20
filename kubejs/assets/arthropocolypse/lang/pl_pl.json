@@ -21,7 +21,6 @@
 	"block.arthropocolypse.tiled_beetle_fragment_block_slabs": "Kafelkowa mącznikowa płyta",
 	"block.arthropocolypse.tiled_beetle_fragment_block_stairs": "Kafelkowe chitynowe schody",
 	"block.arthropocolypse.tiled_beetle_fragment_block_wall": "Kafelkowy chitynowy murek",
-	"entity.arthropocolypse.__comment__": "Do tłumaczy: Możesz pominąć tłumaczenie nazwy naukowej, jeśli chcesz. Myślałem, że dobrze byłoby używać nazw innych prehistorycznych owadów",
 	"entity.arthropocolypse.behemoth_desert_scorpion": "Strażnik królewski",
 	"entity.arthropocolypse.behemoth_desert_spider": "Gigantyczna królowa",
 	"entity.arthropocolypse.field_cricket": "Skoczek Glisachaemus",
@@ -77,5 +76,6 @@
 	"item.arthropocolypse.stag_beetle_larva": "Larwa chrząszcza rogatego",
 	"item.arthropocolypse.stag_beetle_spawn_egg": "Jajo przyzywające chrząszcza jelonka",
 	"item.arthropocolypse.wharf_roach_spawn_egg": "Jajo przyzywające ligię egzotyczną",
-	"item.arthropocolypse.worker_ant_spawn_egg": "Jajo przyzywające mrówkę robotnicę"
+	"item.arthropocolypse.worker_ant_spawn_egg": "Jajo przyzywające mrówkę robotnicę",
+	"itemGroup.creative_tab.arthropocolypse": "Arthropocolypse"
 }

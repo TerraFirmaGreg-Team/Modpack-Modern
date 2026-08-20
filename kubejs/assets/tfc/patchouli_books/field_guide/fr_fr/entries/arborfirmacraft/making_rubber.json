@@ -24,18 +24,18 @@
 			"type": "patchouli:spotlight",
 			"item": "tfg:vulcanized_latex_bucket",
 			"title": "Je suis le caoutchouc...",
-			"text": "L'autre utilité principale du $(thing)Latex$() est la production de caoutchouc. Pour rendre le latex plus fort et solide pour des applications industrielles, il faut le chauffer (soit dans une $(l:firmalife/oven_appliances#vat)Cuve$() ou une $(l:mechanics/pot)Marmite$()) en ajoutant de la $(thing)Poudre de soufre$() pour produire du $(thing)Caoutchouc vulcanisé$(). En effet, tout se procédé se nomme \"vulcanisation\" !"
+			"text": "L'autre utilité principale du $(thing)Latex$() est la production de caoutchouc. Pour rendre le latex plus fort et solide pour des applications industrielles, il faut le chauffer (soit dans une $(l:firmalife/oven_appliances#vat)Cuve$() ou une $(l:mechanics/pot)Marmite$()) en ajoutant de la $(thing)Poudre de soufre$() pour produire du $(thing)Latex vulcanisé$(). En effet, tout ce procédé se nomme \"vulcanisation\" !"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"title": "Extraction",
 			"item": "gtceu:raw_rubber_dust",
-			"text": "Grâce à un $(thing)Extracteur$() ou une $(thing)Chambre à vide$(), le $(thing)Caoutchouc vulcanisé$() peut être séché en $(thing)Pulpe de caoutchouc brut$(). Cette pulpe doit ensuite être traitée avec de la $(thing)Poussière de soufre$() dans une $(thing)Fonderie d'alliage$() pour créer des $(thing)Lingots de caoutchouc$()."
+			"text": "Grâce à un $(thing)Extracteur$() ou une $(thing)Chambre à vide$(), le $(thing)Latex vulcanisé$() peut être séché en $(item)Pulpe de caoutchouc brut$(). Cette pulpe doit ensuite être traitée avec de la $(thing)Poussière de soufre$() dans une $(thing)Fonderie d'alliage$() pour créer des $(thing)Lingots de caoutchouc$()."
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:rubber_ingot",
-			"text": "Les $(thing)Lingots de caoutchouc$() ont de nombreuses applications utiles, telles que la fabrication de $(thing)Convoyeurs$() pour vos usines ou bien l'$(bold)isolation$() de câbles électriques. Les câbles électriques peuvent être touchés sans s'électrocuter, et ont une perte de voltage réduite."
+			"text": "Les $(thing)Lingots de caoutchouc$() ont de nombreuses applications utiles, telles que la fabrication de $(thing)Convoyeurs$() pour vos usines ou bien l'$(bold)isolation$() de $(thing)câbles électriques. Les câbles électriques peuvent être touchés sans s'électrocuter, et ont une perte de voltage réduite."
 		},
 		{
 			"type": "patchouli:spotlight",

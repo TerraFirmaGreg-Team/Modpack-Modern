@@ -1,0 +1,40 @@
+{
+	"variants": {
+		"age=0,part=bottom": {
+			"model": "tfg:block/crop/cotton_age_0"
+		},
+		"age=1,part=bottom": {
+			"model": "tfg:block/crop/cotton_age_1"
+		},
+		"age=2,part=bottom": {
+			"model": "tfg:block/crop/cotton_age_2_bottom"
+		},
+		"age=3,part=bottom": {
+			"model": "tfg:block/crop/cotton_age_3_bottom"
+		},
+		"age=4,part=bottom": {
+			"model": "tfg:block/crop/cotton_age_4_bottom"
+		},
+		"age=5,part=bottom": {
+			"model": "tfg:block/crop/cotton_age_5_bottom"
+		},
+		"age=0,part=top": {
+			"model": "minecraft:block/air"
+		},
+		"age=1,part=top": {
+			"model": "minecraft:block/air"
+		},
+		"age=2,part=top": {
+			"model": "tfg:block/crop/cotton_age_2_top"
+		},
+		"age=3,part=top": {
+			"model": "tfg:block/crop/cotton_age_3_top"
+		},
+		"age=4,part=top": {
+			"model": "tfg:block/crop/cotton_age_4_top"
+		},
+		"age=5,part=top": {
+			"model": "tfg:block/crop/cotton_age_5_top"
+		}
+	}
+}

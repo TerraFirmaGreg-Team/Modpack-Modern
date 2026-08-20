@@ -36,6 +36,8 @@
 	"config.tacz.client.render.disable_movement_fov.desc": "Deaktiviere alle Fov-Effekte der Bewegungsgeschwindigkeit, während du eine Waffe hältst.",
 	"config.tacz.client.render.enable_tooltip_id": "TACZ-ID anzeigen",
 	"config.tacz.client.render.enable_tooltip_id.desc": "Zeige die Waffe/Munition/Aufsätze id im Item Tooltip, wenn der erweiterte Tooltip (F3+H) aktiviert ist.",
+	"config.tacz.client.render.enable_translucent": "Durchsichtige Block-Entitäten aktivieren",
+	"config.tacz.client.render.enable_translucent.desc": "Sollte während der Darstellung von Block-Entitäten wie Waffentisch Tabelle oder Statue Durchsichtigkeit aktivieren. Aktivieren dieser Option, führt zu ZUSÄTZLICHEM PERFORMANCE BOOST.",
 	"config.tacz.client.render.first_person_bullet_tracer_enable": "Tracer der ersten Person aktivieren",
 	"config.tacz.client.render.first_person_bullet_tracer_enable.desc": "Gibt an, ob Tracer der ersten Person angezeigt werden sollen",
 	"config.tacz.client.render.gun_hud_enable": "Waffen HUD aktivieren",
