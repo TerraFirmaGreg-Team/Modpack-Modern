@@ -55,7 +55,7 @@ function registerTFGPreservationFoodRecipes(event) {
 		itemInputs: [`2x tfg:cucumber_product`, '1x tfc:food/garlic', '1x #tfc:foods/vegetables', '1x #tfg:foods/spices', '4x tfc:powder/salt', '1x #tfc:empty_jar_with_lid'],
 		fluidInputs: [Fluid.of('tfc:vinegar', 250)],
 		itemOutputs: ['tfg:food/pickle_jar'],
-		circuit: 6,
+		circuit: 15,
 		itemOutputProvider: TFC.isp.of('tfg:food/pickle_jar')
 			.meal(
 			(food) => food.hunger(4).decayModifier(2),
