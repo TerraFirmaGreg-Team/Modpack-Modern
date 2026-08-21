@@ -271,6 +271,8 @@
 	"gui.sophisticatedcore.upgrades.xp_pump.tooltip": "经验泵",
 	"item.sophisticatedcore.stack_upgrade_conversion.tooltip": "右键点击已安装的堆叠升级，将其转换",
 	"item.sophisticatedcore.storage.tooltip.empty": "未加装升级或物品存储",
+	"item.sophisticatedcore.storage.tooltip.energy": "%s FE",
+	"item.sophisticatedcore.storage.tooltip.fluid": "%s mB %s",
 	"item.sophisticatedcore.storage.tooltip.fluid_empty": "空罐",
 	"item.sophisticatedcore.storage.tooltip.inventory": "物品",
 	"item.sophisticatedcore.storage.tooltip.press_for_contents": "按<%s>查看内容",

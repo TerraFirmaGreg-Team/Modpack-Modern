@@ -123,6 +123,7 @@
     "item.createaddition.brass_figurine.tooltip.summary",
     "item\\.firmaciv\\.(canoe(?:_with_paddle)?|kayak_with_paddle|rowboat|sloop)_icon_only",
     "block.firmalife.ore.*",
-    "block\\.beneath\\.wood\\.(windmill|water_wheel|clutch)\\..+"
+    "block\\.beneath\\.wood\\.(windmill|water_wheel|clutch)\\..+",
+    "block\\.(afc|beneath)\\.wood\\.(axle|encased_axle|bladed_axle)\\..*"
   ]
 }

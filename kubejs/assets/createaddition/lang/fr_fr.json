@@ -1,4 +1,6 @@
 {
+	"block.createaddition.accumulator": "Accumulator",
+	"block.createaddition.accumulator.tooltip": "ACCUMULATOR",
 	"block.createaddition.accumulator.tooltip.behaviour1": "Fournit du _FE_ aux _fils_ connectés au _connecteur_ marqué d'une flèche vers le haut.",
 	"block.createaddition.accumulator.tooltip.behaviour2": "Accepte _FE_ des _fils_ connectés au _connecteur_ marqué d'une flèche vers le bas.",
 	"block.createaddition.accumulator.tooltip.condition1": "Récéption",
@@ -34,6 +36,7 @@
 	"block.createaddition.large_connector.tooltip.behaviour1": "Connecté avec des _fils à courant élevé_.",
 	"block.createaddition.large_connector.tooltip.behaviour2": "Tout en tenant une _Bobine d'Or_ ou une _Bobine d'éléctrum_ pour créer un _lien_ avec jusqu'à 6 autres connecteurs.",
 	"block.createaddition.large_connector.tooltip.behaviour3": "Pour alterner entre les modes _Récéption_, _Envoie_ et _None_.",
+	"block.createaddition.large_connector.tooltip.condition1": "High Current",
 	"block.createaddition.large_connector.tooltip.condition2": "Clique-Droit",
 	"block.createaddition.large_connector.tooltip.condition3": "Clique-Droit avec une clé",
 	"block.createaddition.large_connector.tooltip.summary": "Connecte les blocs compatibles _Forge Energy_ avec des _fils_ pour transférer _FE_.",
@@ -138,6 +141,7 @@
 	"createaddition.tooltip.energy.consumption": "Consommation:",
 	"createaddition.tooltip.energy.demand": "Consommation du réseau:",
 	"createaddition.tooltip.energy.input": "Entrer",
+	"createaddition.tooltip.energy.mode": "Mode:",
 	"createaddition.tooltip.energy.none": "Aucun",
 	"createaddition.tooltip.energy.output": "Sortie",
 	"createaddition.tooltip.energy.passive": "Passive",

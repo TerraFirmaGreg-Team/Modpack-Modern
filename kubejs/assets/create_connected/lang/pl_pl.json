@@ -340,12 +340,15 @@
 	"item.create_connected.incomplete_control_chip": "Niedokończony Sterujący Procesor",
 	"item.create_connected.linked_transmitter": "Połączony nadajnik",
 	"item.create_connected.music_disc_elevator": "Płyta muzyczna",
+	"item.create_connected.music_disc_elevator.desc": "Kevin MacLeod - Casa Bossa Nova",
 	"item.create_connected.music_disc_interlude": "Płyta muzyczna",
+	"item.create_connected.music_disc_interlude.desc": "Kevin MacLeod - Local Forecast - Elevator",
 	"item.create_connected.redstone_link_wildcard": "Uniwersalny emiter sygnału",
 	"item.create_connected.redstone_link_wildcard.tooltip.summary": "Pozwala emiterowi sygnału dopasować się do dowolnej częstotliwości przypisanej do slota, w którym został umieszczony.",
 	"item.create_connected.vertical_brass_gearbox": "Pionowa Mosiężna przekładnia",
 	"item.create_connected.vertical_brass_gearbox.tooltip.summary": "Przekładnia, w której kierunek obrotu wszystkich 4 stron jest _konfigurowalnalny_.",
 	"item.create_connected.vertical_parallel_gearbox": "Pionowa Równoległa Przekładnia",
 	"item.create_connected.vertical_six_way_gearbox": "Pionowa 6-kierunkowa przekładnia",
-	"item.create_connected.vertical_six_way_gearbox.tooltip.summary": "Przekładnia z wałami na _wszystkich 6 stronach_. Góra i dół kręcą się o _połowe wolniej_."
+	"item.create_connected.vertical_six_way_gearbox.tooltip.summary": "Przekładnia z wałami na _wszystkich 6 stronach_. Góra i dół kręcą się o _połowe wolniej_.",
+	"itemGroup.create_connected.main": "Create: Connected"
 }

@@ -361,5 +361,6 @@
 	"item.create_connected.vertical_brass_gearbox.tooltip.summary": "Коробка передач із _незалежно налаштовними_ з'єднаннями у чотирьох напрямках.",
 	"item.create_connected.vertical_parallel_gearbox": "Вертикальна паралельна коробка передач",
 	"item.create_connected.vertical_six_way_gearbox": "Вертикальна шестибічна коробка передач",
-	"item.create_connected.vertical_six_way_gearbox.tooltip.summary": "Коробка передач із з’єднаннями на _усіх 6 сторонах_. Верхнє та нижнє обертаються _вдвічі повільніше_."
+	"item.create_connected.vertical_six_way_gearbox.tooltip.summary": "Коробка передач із з’єднаннями на _усіх 6 сторонах_. Верхнє та нижнє обертаються _вдвічі повільніше_.",
+	"itemGroup.create_connected.main": "Create: Connected"
 }
