@@ -124,6 +124,8 @@
     "item\\.firmaciv\\.(canoe(?:_with_paddle)?|kayak_with_paddle|rowboat|sloop)_icon_only",
     "block.firmalife.ore.*",
     "block\\.beneath\\.wood\\.(windmill|water_wheel|clutch)\\..+",
-    "block\\.(tfc|afc|beneath)\\.wood\\.(axle|encased_axle|bladed_axle)\\..*"
+    "block\\.(tfc|afc|beneath)\\.wood\\.(axle|encased_axle|bladed_axle|gear_box)\\..*",
+    "(item|entity)\\.tfcastikorcarts\\.(plow|animal_cart|supply_cart|wheel)\\.(african_padauk|alder|angelim|argyle_eucalyptus|bald_cypress|baobab|beech|black_walnut|black_willow|brazilwood|butternut|buxus|cocobolo|common_oak|cypress|ebony|fever|ghaf|ginkgo|greenheart|hawthorn|hazel|hemlock|holly|hornbeam|iroko|ironwood|jabuticabeira|joshua|juniper|kauri|larch|laurel|limba|locust|logwood|maclura|mahoe|mahogany|marblewood|medlar|messmate|mountain_ash|mulberry|nordmann_fir|norway_spruce|pear|persimmon|pink_cherry_blossom|pink_ipe|pink_ivory|poplar|purple_ipe|purple_jacaranda|purpleheart|quince|rainbow_eucalyptus|red_cedar|red_cypress|red_elm|red_mangrove|redwood|rowan|rubber_fig|sloe|snow_gum_eucalyptus|sorb|sweetgum|syzygium|teak|walnut|wenge|white_cherry_blossom|white_elm|white_ipe|white_jacaranda|white_mangrove|whitebeam|yellow_ipe|yellow_jacaranda|yellow_meranti|yew|zebrawood)",
+    "block\\.alekiroofs\\..*"
   ]
 }
