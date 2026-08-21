@@ -28,7 +28,7 @@
 	"commands.tacz.config.server_shoot_cooldown_check.enabled": "§a§l[TACZ]§r Kontrola odnowienia po stronie serwera jest włączona.",
 	"commands.tacz.config.server_shoot_network_check.disabled": "§a§l[TACZ]§r Sieć strzelania od strony serwera jest wyłączona.",
 	"commands.tacz.config.server_shoot_network_check.enabled": "§a§l[TACZ]§r Sieć strzelania od strony serwera jest włączona.",
-	"commands.tacz.reload.backup": "§a§l●§r Możesz znaleść nadpisane pliki w folderze §c§nconfig/tacz/backup",
+	"commands.tacz.reload.backup": "§a§l●§r Możesz znaleźć nadpisane pliki w folderze §c§nconfig/tacz/backup",
 	"commands.tacz.reload.overwrite_command.off": "§a§l●§r Możesz użyć komendy §c§n/tacz overwrite true§r aby włączyć funkcję nadpisywania.",
 	"commands.tacz.reload.overwrite_command.on": "§a§l●§r Możesz użyć komendy §c§n/tacz overwrite false§r aby wyłączyć funkcję nadpisywania.",
 	"commands.tacz.reload.overwrite_off": "§a§l●§r Teraz, gdy nadpisywanie konfiguracji jest wyłączone §6Możesz §lmodyfikować§6 podstawową paczkę broni TaCZ!",

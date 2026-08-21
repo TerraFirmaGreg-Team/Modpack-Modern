@@ -39,9 +39,9 @@
 	"item.advancedperipherals.tooltip.memory_card": "§7Może przechować uprawnienia gracza do użycia jej w menedżerze ekwipunku.",
 	"item.advancedperipherals.tooltip.memory_card.bound": "&7Połączono z &b%s&7.",
 	"item.advancedperipherals.tooltip.nbt_storage": "§7Ten blok jest w stanie przechowywać dane NBT",
-	"item.advancedperipherals.tooltip.overpowered_end_automata_core": "§Ulepszona wersja Endowego rdzenia automaty, która dodaje funkcje nadmiernie zasilonego rdzenia! Bądź ostrożny, to ulepszenie jest bardzo delikatne.",
-	"item.advancedperipherals.tooltip.overpowered_husbandry_automata_core": "§Ulepszona wersja rolniczego rdzenia automaty, która dodaje funkcje nadmiernie zasilonego rdzenia! Bądź ostrożny, to ulepszenie jest bardzo delikatne.",
-	"item.advancedperipherals.tooltip.overpowered_weak_automata_core": "§Ulepszona wersja słabego rdzenia automaty, która dodaje funkcje nadmiernie zasilonego rdzenia! Bądź ostrożny, to ulepszenie jest bardzo delikatne.",
+	"item.advancedperipherals.tooltip.overpowered_end_automata_core": "§7Ulepszona wersja endowego rdzenia automatu, która dodaje specjalne funkcje! Bądź ostrożny, to ulepszenie jest bardzo delikatne.",
+	"item.advancedperipherals.tooltip.overpowered_husbandry_automata_core": "§7Ulepszona wersja rolniczego rdzenia automatu, która dodaje specjalne funkcje! Bądź ostrożny, to ulepszenie jest bardzo delikatne.",
+	"item.advancedperipherals.tooltip.overpowered_weak_automata_core": "§7Ulepszona wersja słabego rdzenia automatu, która specjalne funkcje! Bądź ostrożny, to ulepszenie jest bardzo delikatne.",
 	"item.advancedperipherals.tooltip.peripheral_casing": "§7Pusta obudowa bez miłości, na którą zasługuje.",
 	"item.advancedperipherals.tooltip.player_detector": "§7Może zostać używany do interakcji z Graczami.",
 	"item.advancedperipherals.tooltip.redstone_integrator": "§7Ten blok jest w stanie wchodzić w interakcje z redstonem. Działa dokładnie jak redstone API komputera.",
@@ -69,7 +69,7 @@
 	"turtle.advancedperipherals.husbandry_automata": "Automat rolniczy",
 	"turtle.advancedperipherals.overpowered_end_automata": "Przeciążony endowy automat",
 	"turtle.advancedperipherals.overpowered_husbandry_automata": "Nadmiernie zasilony automat rolniczy",
-	"turtle.advancedperipherals.overpowered_weak_automata": "Nadmiernie zasilony słaby automat",
+	"turtle.advancedperipherals.overpowered_weak_automata": "Przeciążony słaby automat",
 	"turtle.advancedperipherals.player_turtle": "Detektor graczy",
 	"turtle.advancedperipherals.weak_automata": "Słaby automat"
 }
