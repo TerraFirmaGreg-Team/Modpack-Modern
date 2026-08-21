@@ -1,4 +1,5 @@
 {
+	"block.exposure.lightroom": "Pracownia fotograficzna",
 	"category.exposure": "Exposure",
 	"command.exposure.export.confirm": "[Potwierdzić?]",
 	"config.jade.plugin_exposure.lightroom": "Pracownia fotograficzna",
@@ -12,6 +13,7 @@
 	"exposure.configuration.export": "Eksport",
 	"exposure.configuration.integration": "Integracja",
 	"exposure.configuration.lightroom": "Pracownia fotograficzna",
+	"exposure.configuration.lightroom_light_requirement": "Wymagany poziom światła",
 	"exposure.configuration.misc": "Różne",
 	"exposure.configuration.out_of_working_range_malfunction": "Awaria",
 	"exposure.configuration.render": "Renderowanie",
@@ -49,6 +51,7 @@
 	"gui.exposure.lightroom.print": "Drukuj",
 	"gui.exposure.lightroom.printing_mode.regular": "Tryb: Zwykły",
 	"gui.exposure.next_page": "Następna strona",
+	"gui.exposure.photograph_screen.item_dropped_message": "§7Upuszczono: [§r%s§7]",
 	"gui.exposure.previous_page": "Poprzednia strona",
 	"gui.exposure.self_timer.off": "Wyłączony",
 	"item.exposure.album": "Album fotograficzny",
