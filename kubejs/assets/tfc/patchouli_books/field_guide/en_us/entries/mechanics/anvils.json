@@ -1,5 +1,4 @@
 {
-  "__comment__": "This file was automatically created by mcresources",
   "name": "Anvils",
   "category": "tfc:mechanics",
   "icon": "tfc:metal/anvil/copper",
@@ -10,7 +9,19 @@
     },
     {
       "type": "patchouli:multiblock",
-      "multiblock": { "pattern": [ [ "X" ], [ "0" ] ], "mapping": { "X": "#tfc:anvils" } },
+      "multiblock": {
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "0"
+          ]
+        ],
+        "mapping": {
+          "X": "#tfc:anvils"
+        }
+      },
       "name": "",
       "text": "All types of metal anvils.",
       "enable_visualize": false
@@ -33,7 +44,9 @@
     },
     {
       "type": "patchouli:image",
-      "images": [ "tfc:textures/gui/book/gui/anvil_empty.png" ],
+      "images": [
+        "tfc:textures/gui/book/gui/anvil_empty.png"
+      ],
       "text": "The anvil interface.",
       "border": false
     },
@@ -43,7 +56,9 @@
     },
     {
       "type": "patchouli:image",
-      "images": [ "tfc:textures/gui/book/gui/anvil_in_use.png" ],
+      "images": [
+        "tfc:textures/gui/book/gui/anvil_in_use.png"
+      ],
       "text": "After selecting to create a pickaxe.",
       "border": false
     },
