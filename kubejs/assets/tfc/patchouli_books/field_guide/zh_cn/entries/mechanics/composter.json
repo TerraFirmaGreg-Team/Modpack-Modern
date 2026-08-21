@@ -1,0 +1,131 @@
+{
+  "name": "堆肥桶",
+  "category": "tfc:mechanics",
+  "icon": "tfc:textures/gui/book/icons/composter.png",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "堆肥桶是制作肥料不可或缺的装置。它会将$(2)绿色$()和$(4)棕色()物品转化为堆肥。不同物品会提供不同量的堆肥物质。关于可用物品的具体说明会在后文详细介绍。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/composter",
+      "text": "制作堆肥桶只需要$(thing)木材$()和$(thing)土$()。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "堆肥桶所处的环境对于其工作效率有影响。堆肥桶覆盖着一层雪时效率会有所提高。当堆肥桶所处环境的降雨量小于 150mm 或大于 350mm 时效率会大幅降低，越接近降雨量的上下限时效率损失越大。同时，相邻摆放的堆肥桶工作效率也会降低。"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "堆肥桶的不同状态——空、工作中、完成。",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:composter[stage=0,type=normal]"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:composter[stage=8,type=normal]"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:composter[stage=8,type=ready]"
+          }
+        }
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "text": "平均状态下，堆肥桶需要花费 12 天时间生产一份堆肥。完成时，堆肥会呈现出土壤颜色，且上方会出现灰色粒子效果。空手$(item)$(k:key.sneak)$()$(item)$(k:key.use)$()点击就能取出堆肥。$(c)肉类$()和$(c)骨头$()之类的物品会污染堆肥。污染的堆肥呈现红色，还会散发出恶心的粒子效果。腐烂的堆肥可用同样的方法取出。对作物使用腐烂的堆肥会立即杀死它。"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "0"
+          ]
+        ],
+        "mapping": {
+          "X": "tfc:composter[stage=8,type=rotten]"
+        }
+      },
+      "name": "腐烂的堆肥",
+      "text": "污染的堆肥桶。",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "tag:tfc:compost_greens_low",
+      "link_recipes": false,
+      "text": "有些$(2)绿色$()物品对堆肥进度贡献较小，例如草和类似的植物。要满足堆肥桶对绿色物品的需求，你需要 16 个这类物品。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "tag:tfc:compost_greens",
+      "link_recipes": false,
+      "text": "有些$(2)绿色$()物品对堆肥桶贡献中等，例如谷物。要满足堆肥桶对绿色物品的需求，你需要 8 个这类物品。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "tag:tfc:compost_greens_high",
+      "link_recipes": false,
+      "text": "有些$(2)绿色$()物品对堆肥桶贡献很大，例如水果和蔬菜。要满足堆肥桶对绿色物品的需求，你需要 4 个这类物品。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "tag:tfc:compost_browns_low",
+      "link_recipes": false,
+      "text": "有些$(4)棕色$()物品对堆肥桶贡献较小，例如干芦苇、蕨类、藤蔓、以及落叶。要满足堆肥桶对棕色物品的需求，你需要 16 个这类物品。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "tag:tfc:compost_browns",
+      "link_recipes": false,
+      "text": "有些$(4)棕色$()物品对堆肥桶贡献中等，例如草木灰和黄麻。要满足堆肥桶对棕色物品的需求，你需要 8 个这类物品。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "tag:tfc:compost_browns_high",
+      "link_recipes": false,
+      "text": "有些$(4)棕色$()物品对堆肥桶贡献很大，例如西瓜、南瓜、枯萎的灌木、松果、以及浮木。要满足堆肥桶对棕色物品的需求，你需要 4 个这类物品。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "tag:tfc:compost_poisons",
+      "link_recipes": false,
+      "text": "有些物品会$(c)污染$()你的堆肥桶。比如$(c)肉$()和$(c)骨头$()。用腐烂的堆肥施肥会立刻使农作物死亡。"
+    }
+  ],
+  "read_by_default": true
+}

@@ -1,0 +1,33 @@
+{
+  "name": "水筒の素材",
+  "category": "tfc:waterflasks",
+  "icon": "waterflasks:bladder",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "水を効果的に保存するには、以前に水（らしきもの）を保存していたものを再利用することが重要です。$(br2)$(bold)       膀胱！$()$(br)特定の動物だけが目的に適した膀胱を持っており、種によっては採取が容易な場合もあります。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(br)$(bold)動物____________確率$(br)$()ヒツジ___________________10%$(br)アルパカ_______________10%$(br)ヤギ____________________10%$(br)シカ____________________10%$(br)ウマ科_________________20%$(br)クマ___________________20%$(br)ウシ属_________________50%$(br)ヘラジカ________________50%$(br)$(br)成功率を上げるには、攻撃力の高い武器で動物を倒しましょう。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "waterflasks:leather_side",
+      "title": "水筒の革",
+      "link_recipes": false,
+      "text": "水筒のレシピで要求されます。"
+    },
+    {
+      "type": "tfc:knapping_recipe",
+      "recipe": "waterflasks:leather_knapping/leather_side",
+      "text": "革から切り出して作成され、膀胱を保護します"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 0,
+  "extra_recipe_mappings": {
+    "waterflasks:bladder": 0,
+    "waterflasks:leather_side": 2
+  }
+}

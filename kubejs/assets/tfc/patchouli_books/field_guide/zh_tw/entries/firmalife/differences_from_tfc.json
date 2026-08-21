@@ -1,0 +1,28 @@
+{
+  "name": "與群巒傳說本體的區別",
+  "category": "tfc:firmalife",
+  "icon": "tfc:textures/item/food/wheat_bread.png",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Firmalife 模組對群巒傳說原版中的一些運作機制進行了改動。本章旨在幫助你瞭解那些差異較大的方面。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l:firmalife/cheese)奶酪$()的製作流程更為複雜。它能被作為方塊放置，也可以選擇在$(l:firmalife/cellar)地窖$()中進行熟化。",
+      "title": "奶酪的熟化"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l:firmalife/bread)麵包$()的製作流程更為複雜，將需要酵母和甜味劑。群巒傳說原版的麵包配方製作出的是營養價值更低的粗餅。",
+      "title": "麵包的製作"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Firmalife 更強調糖的使用。雖然仍然可以從甘蔗中獲取糖，但請考慮使用蜂蜜（來自蜜蜂）或用甜菜製糖！",
+      "title": "甜味劑"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 0
+}

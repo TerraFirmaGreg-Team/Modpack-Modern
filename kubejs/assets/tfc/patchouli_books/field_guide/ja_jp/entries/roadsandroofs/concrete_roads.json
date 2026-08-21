@@ -18,16 +18,16 @@
     {
       "type": "patchouli:spotlight",
       "anchor": "liquid_concrete",
-      "item": "gtceu:concrete_bucket",
       "title": "コンクリートの作成",
-      "text": "コンクリートの道を作るためには、まず液化コンクリートを作ります。\n$(thing)液化コンクリート$()を作る方法として、$(thing)ミキサー$()を使い、水と石の粉をベースとして、方解石の粉と石膏の粉を加える方法、炭酸塩堆積岩の粉と粘土の粉を加える方法、炭酸塩堆積岩の粉と石膏の粉を加える方法の3つがあります。"
+      "text": "コンクリートの道を作るためには、まず液化コンクリートを作ります。\n$(thing)液化コンクリート$()を作る方法として、$(thing)ミキサー$()を使い、水と石の粉をベースとして、方解石の粉と石膏の粉を加える方法、炭酸塩堆積岩の粉と粘土の粉を加える方法、炭酸塩堆積岩の粉と石膏の粉を加える方法の3つがあります。",
+      "item": "gtceu:concrete_bucket"
     },
     {
       "type": "patchouli:spotlight",
       "anchor": "wet_concrete",
-      "item": "rnr:bucket/concrete",
       "title": "コンクリートの作成",
-      "text": "その後、$(thing)回路番号#7$()に設定した$(thing)ミキサー$()に液化コンクリートと水を投入して薄めることで$(thing)生コンクリート$()を作ります。"
+      "text": "その後、$(thing)回路番号#7$()に設定した$(thing)ミキサー$()に液化コンクリートと水を投入して薄めることで$(thing)生コンクリート$()を作ります。",
+      "item": "rnr:bucket/concrete"
     },
     {
       "type": "patchouli:text",

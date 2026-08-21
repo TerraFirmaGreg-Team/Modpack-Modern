@@ -18,16 +18,16 @@
     {
       "type": "patchouli:spotlight",
       "anchor": "liquid_concrete",
-      "item": "gtceu:concrete_bucket",
       "title": "Beton Yapımı",
-      "text": "Beton yol yapımının ilk adımı sıvı betonun karıştırılmasıdır. Bir $(thing)Mikser$() kullanarak suyu; herhangi iki taş tozu, kalsit veya mermer tozundan biri ve alçıtaşı tozuyla ya da herhangi üç taş tozu ve kil tozuyla birleştirerek $(thing)Sıvı Beton$() elde edin."
+      "text": "Beton yol yapımının ilk adımı sıvı betonun karıştırılmasıdır. Bir $(thing)Mikser$() kullanarak suyu; herhangi iki taş tozu, kalsit veya mermer tozundan biri ve alçıtaşı tozuyla ya da herhangi üç taş tozu ve kil tozuyla birleştirerek $(thing)Sıvı Beton$() elde edin.",
+      "item": "gtceu:concrete_bucket"
     },
     {
       "type": "patchouli:spotlight",
       "anchor": "wet_concrete",
-      "item": "rnr:bucket/concrete",
       "title": "Beton Yapımı",
-      "text": "Ardından sıvı betonu, $(thing)Programlanmış Devre #7$() ayarına getirilmiş bir $(thing)Mikser$() içine ekleyin ve daha fazla su ekleyerek $(thing)Islak Beton Karışımı$() hâline getirin."
+      "text": "Ardından sıvı betonu, $(thing)Programlanmış Devre #7$() ayarına getirilmiş bir $(thing)Mikser$() içine ekleyin ve daha fazla su ekleyerek $(thing)Islak Beton Karışımı$() hâline getirin.",
+      "item": "rnr:bucket/concrete"
     },
     {
       "type": "patchouli:text",

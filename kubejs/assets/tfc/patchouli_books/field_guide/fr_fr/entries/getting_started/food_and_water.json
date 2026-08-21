@@ -5,9 +5,9 @@
     "pages": [
         {
             "type": "patchouli:text",
+            "text": "$(li)$(bold)$(l:getting_started/food_and_water#basics)Bases$()$(li)$(bold)$(l:getting_started/food_and_water#thirst)Soif$()$(li)$(bold)$(l:getting_started/food_and_water#nutrition_screen)L'écran de nutrition$()$(li)$(bold)$(l:getting_started/food_and_water#nutrients)Nutriments$()$(li2)$(l:getting_started/food_and_water#fruit)Fruits$()$(li2)$(l:getting_started/food_and_water#vegetables)Légumes$()$(li2)$(l:getting_started/food_and_water#protein)Protéines$()$(li2)$(l:getting_started/food_and_water#grain)Céréales$()$(li2)$(l:getting_started/food_and_water#dairy)Produits laitiers$()$(li)$(bold)$(l:getting_started/food_and_water#contaminants)Contaminants$()$(li2)$(l:getting_started/food_and_water#toxins)Toxines$()$(li2)$(l:getting_started/food_and_water#parasites)Parasites$()$(li2)$(l:getting_started/food_and_water#microplastics)Microplastiques$()",
             "title": "Index",
-            "anchor": "index",
-            "text": "$(li)$(bold)$(l:getting_started/food_and_water#basics)Bases$()$(li)$(bold)$(l:getting_started/food_and_water#thirst)Soif$()$(li)$(bold)$(l:getting_started/food_and_water#nutrition_screen)L'écran de nutrition$()$(li)$(bold)$(l:getting_started/food_and_water#nutrients)Nutriments$()$(li2)$(l:getting_started/food_and_water#fruit)Fruits$()$(li2)$(l:getting_started/food_and_water#vegetables)Légumes$()$(li2)$(l:getting_started/food_and_water#protein)Protéines$()$(li2)$(l:getting_started/food_and_water#grain)Céréales$()$(li2)$(l:getting_started/food_and_water#dairy)Produits laitiers$()$(li)$(bold)$(l:getting_started/food_and_water#contaminants)Contaminants$()$(li2)$(l:getting_started/food_and_water#toxins)Toxines$()$(li2)$(l:getting_started/food_and_water#parasites)Parasites$()$(li2)$(l:getting_started/food_and_water#microplastics)Microplastiques$()"
+            "anchor": "index"
         },
         {
             "type": "patchouli:text",
@@ -15,9 +15,9 @@
         },
         {
             "type": "patchouli:text",
+            "text": "Dans TerraFirmaCraft, vous ne devez pas seulement gérer vitre faim, mais aussi votre soif. La faim fonctionne presque comme en Vanilla. La plupart des aliments remplissent un cinquième de votre barre de faim. Certains aliments comme les $(thing)Racines de roseau$() remplissent un peu moins. Manger restaure aussi de la $(thing)Saturation, qui correspond à votre niveau de satiété. Être bas en nourriture ou en eau résulte en des mouvements plus lents et une prise de dégâts. Mourrir ne réinitialise pas vos nutriments ou contaminants.",
             "title": "Bases",
-            "anchor": "basics",
-            "text": "Dans TerraFirmaCraft, vous ne devez pas seulement gérer vitre faim, mais aussi votre soif. La faim fonctionne presque comme en Vanilla. La plupart des aliments remplissent un cinquième de votre barre de faim. Certains aliments comme les $(thing)Racines de roseau$() remplissent un peu moins. Manger restaure aussi de la $(thing)Saturation, qui correspond à votre niveau de satiété. Être bas en nourriture ou en eau résulte en des mouvements plus lents et une prise de dégâts. Mourrir ne réinitialise pas vos nutriments ou contaminants."
+            "anchor": "basics"
         },
         {
             "type": "patchouli:text",
@@ -29,16 +29,18 @@
         },
         {
             "type": "patchouli:text",
-            "text": "Une infobulle d'aliment peut ressembler à ceci :$(br2)$(bold)Orange$()$(br)$(2)$(bold)Périme le : 6 Juillet 1004, 11:59 (Dans un mois et 1 jour(s))$()$(br) $(8)Nutrition :$(br) - Saturation : 2%$(br) - Eau : 10%$(br)$(a) - Fruits : 0.5"
+            "text": "Une infobulle d'aliment peut ressembler à ceci :$(br2)$(bold)Orange$()$(br)$(2)$(bold)Périme le : 6 Juillet 1004, 11:59 (Dans un mois et 1 jour(s))$()$(br) $(8)Nutrition :$(br) - Saturation : 2%$(br) - Eau : 10%$(br)$(a) - Fruits : 0.5",
+            "title": "Nutrients"
         },
         {
             "type": "patchouli:text",
-            "anchor": "thirst",
             "text": "La soif représente le niveau d'eau de votre corps. Elle se vide à un taux similaire à la faim. À des températures plus élevées ou une haute utilisation de faim, votre soif se videra plus vite. Heureusement, boire de l'$(thing)Eau douce$() remplit la soif. Cela peut se faire en utilisant $(item)$(k:key.use)$() sur un bloc d'eau. Boire de l'eau salée vous fait perdre de l'eau, et peut même vous donner l'effet $(thing)Soif$(), qui la videra encore plus vite.",
+            "anchor": "thirst",
             "title": "Soif"
         },
         {
             "type": "patchouli:multiblock",
+            "text": "Afin d'éviter de boire de l'eau salée ou boueuse, cherchez des rivières, des lacs ou des plantes d'eau douce comme les $(thing)roseaux$().",
             "multiblock": {
                 "pattern": [
                     [
@@ -57,30 +59,31 @@
                 }
             },
             "name": "Sécurité aquatique",
-            "text": "Afin d'éviter de boire de l'eau salée ou boueuse, cherchez des rivières, des lacs ou des plantes d'eau douce comme les $(thing)roseaux$().",
             "enable_visualize": false
         },
         {
             "type": "tfc:knapping_recipe",
-            "recipe": "tfc:clay_knapping/jug",
-            "text": "$(l:getting_started/pottery)Modeler$() et cuire une $(l:getting_started/pottery#jug)cruche$() est un moyen de transporter de l'eau avec vous. Remplissez-la comme un seau avec $(item)$(k:key.use)$(). Maintenir $(item)$(k:key.use)$() vous fait boire."
+            "text": "$(l:getting_started/pottery)Modeler$() et cuire une $(l:getting_started/pottery#jug)cruche$() est un moyen de transporter de l'eau avec vous. Remplissez-la comme un seau avec $(item)$(k:key.use)$(). Maintenir $(item)$(k:key.use)$() vous fait boire.",
+            "title": "Thirst",
+            "recipe": "tfc:clay_knapping/jug"
         },
         {
             "type": "patchouli:text",
+            "name": "Water Safety",
             "text": "Vous pouvez également boire depuis d'autres contenants tels que les $(l:waterflasks)Gourdes$() ou les $(l:mechanics/glassworking)Bouteilles de verre$(). Lisez plus d'infos sur les contenants à boissons et effet de boissons $(l:mechanics/drinks#containers)Ici$()."
         },
         {
             "type": "patchouli:text",
-            "anchor": "nutrition_screen",
             "text": "Dans $(bold)$(#ff0fb7)TerraFirma$()$()$(bold)$(#595959)Greg$()$(), l'écran de nutrition affiche de nombreuses informations sur votre santé. $(li)Il y a un graphique principal affichant vos $(l:getting_started/food_and_water#nutrients)Nutriments$()$()$(li)Un graphique adjacent affiche vos $(l:getting_started/food_and_water#contaminants)Contaminants$()$()$(li)Un tableau affiche vos stats de santé.$()$(li)Et un écran désactivable montre la nutrition de votre équipe. $()$(br)$(item)Maintenez $(k:key.sneak)$() sur un élément de l'écran pour afficher plus d'infos.$()",
+            "anchor": "nutrition_screen",
             "title": "Écran de nutrition"
         },
         {
             "type": "patchouli:image",
+            "text": "L'écran de nutrition, avec des graphes affichant le niveau de chaque nutriment.",
             "images": [
                 "tfg:textures/gui/field_guide/nutrition/tfg_nutrition_screen.png"
             ],
-            "text": "L'écran de nutrition, avec des graphes affichant le niveau de chaque nutriment.",
             "border": false
         },
         {

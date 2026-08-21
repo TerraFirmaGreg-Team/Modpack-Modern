@@ -1,5 +1,4 @@
 {
-	"__comment__": "This file was automatically created by mcresources",
 	"name": "ハーブとスパイス",
 	"category": "tfc:firmalife",
 	"icon": "firmalife:spice/basil_leaves",
@@ -10,6 +9,7 @@
 		},
 		{
 			"type": "tfc:multimultiblock",
+			"text": "$(thing)野生のバジル$()は気温が12°C~25°C、降水量300~500mmの土地に生えています。",
 			"multiblocks": [
 				{
 					"pattern": [
@@ -39,11 +39,13 @@
 				}
 			],
 			"name": "バジル",
-			"text": "$(thing)野生のバジル$()は気温が12°C~25°C、降水量300~500mmの土地に生えています。",
 			"enable_visualize": false
 		},
 		{
 			"type": "tfc:multimultiblock",
+			"name": "ローリエ",
+			"text": "$(thing)野生のローリエ$()は、気温が8~14C、降水量25~225mmの土地に生えています。",
+			"enable_visualize": false,
 			"multiblocks": [
 				{
 					"pattern": [
@@ -71,13 +73,11 @@
 						"X": "firmalife:plant/bay_laurel[stage=1]"
 					}
 				}
-			],
-			"name": "ローリエ",
-			"text": "$(thing)野生のローリエ$()は、気温が8~14C、降水量25~225mmの土地に生えています。",
-			"enable_visualize": false
+			]
 		},
 		{
 			"type": "tfc:multimultiblock",
+			"text": "$(thing)野生のカルダモン$()は気温が18~30°C、降水量350~500mmの土地に生えています。",
 			"multiblocks": [
 				{
 					"pattern": [
@@ -107,11 +107,13 @@
 				}
 			],
 			"name": "カルダモン",
-			"text": "$(thing)野生のカルダモン$()は気温が18~30°C、降水量350~500mmの土地に生えています。",
 			"enable_visualize": false
 		},
 		{
 			"type": "tfc:multimultiblock",
+			"name": "コリアンダー",
+			"text": "$(thing)野生のコリアンダー$()は気温が5~15C、降水量0~150mmの土地に生えています。",
+			"enable_visualize": false,
 			"multiblocks": [
 				{
 					"pattern": [
@@ -139,13 +141,11 @@
 						"X": "firmalife:plant/cilantro[stage=1]"
 					}
 				}
-			],
-			"name": "コリアンダー",
-			"text": "$(thing)野生のコリアンダー$()は気温が5~15C、降水量0~150mmの土地に生えています。",
-			"enable_visualize": false
+			]
 		},
 		{
 			"type": "tfc:multimultiblock",
+			"text": "$(thing)野生のクミン$()は気温が6~20C、降水量50~250mmの土地に生えています。",
 			"multiblocks": [
 				{
 					"pattern": [
@@ -175,7 +175,6 @@
 				}
 			],
 			"name": "クミン",
-			"text": "$(thing)野生のクミン$()は気温が6~20C、降水量50~250mmの土地に生えています。",
 			"enable_visualize": false
 		},
 		{

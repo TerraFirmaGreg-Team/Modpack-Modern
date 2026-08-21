@@ -1,5 +1,4 @@
 {
-  "__comment__": "This file was automatically created by mcresources",
   "name": "Travail du verre",
   "category": "tfc:mechanics",
   "icon": "tfc:silica_glass_bottle",
@@ -10,9 +9,9 @@
     },
     {
       "type": "patchouli:crafting",
-      "title": "Mélange verrier siliceux",
       "recipe": "tfc:crafting/silica_glass_batch",
-      "text": "Les mélanges verriers peuvent alors être fabriqués en utilisant une des couleurs de sable, avec de la $(l:mechanics/glassworking#lime)Chaux$() et un type de $(l:mechanics/glassworking#potash)Potasse$()."
+      "text": "Les mélanges verriers peuvent alors être fabriqués en utilisant une des couleurs de sable, avec de la $(l:mechanics/glassworking#lime)Chaux$() et un type de $(l:mechanics/glassworking#potash)Potasse$().",
+      "title": "Mélange verrier siliceux"
     },
     {
       "type": "patchouli:smelting",
@@ -24,8 +23,8 @@
       "type": "patchouli:smelting",
       "anchor": "potash",
       "recipe": "tfg:smelting/dried_seaweed_to_soda",
-      "recipe2": "tfg:smelting/dried_kelp_to_soda",
-      "text": "Un type de $(thing)Potasse$() ou un équivalent est également requis pour faire des mélanges verriers. De la $(thing)Poudre de soude$() peut être utilisée, c'est une poudre obtenue en chauffant de l'$(thing)Algue séchée$() ou du $(thing)Varech$(). Du $(l:tfg_ores/earth_vein_index#normal_saltpeter)Salpêtre$() peut également être utilisée."
+      "text": "Un type de $(thing)Potasse$() ou un équivalent est également requis pour faire des mélanges verriers. De la $(thing)Poudre de soude$() peut être utilisée, c'est une poudre obtenue en chauffant de l'$(thing)Algue séchée$() ou du $(thing)Varech$(). Du $(l:tfg_ores/earth_vein_index#normal_saltpeter)Salpêtre$() peut également être utilisée.",
+      "recipe2": "tfg:smelting/dried_kelp_to_soda"
     },
     {
       "type": "patchouli:text",

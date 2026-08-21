@@ -1,0 +1,48 @@
+{
+  "name": "熏制",
+  "category": "tfc:firmalife",
+  "icon": "tfc:textures/item/food/venison.png",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "羊毛纱用于悬挂物品以进行$(thing)熏制$()。按$(item)$(k:key.use)$()即可放置羊毛纱。"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "Y"
+          ],
+          [
+            "0"
+          ]
+        ],
+        "mapping": {
+          "X": "firmalife:wool_string",
+          "Y": "tfc:firepit[lit=true]"
+        }
+      },
+      "name": "熏制",
+      "text": "篝火上方的一根线。",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:text",
+      "text": "熏制用于保存$(thing)肉类$()和$(l:mechanics/dairy)奶酪$()。熏制肉类前，必须先用$(thing)卤水$()将其密封在$(thing)大桶$()中进行$(thing)卤制$()。你也可以先将其用盐腌制。奶酪在熏制之前没有这些要求。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "要开始熏制，首先将物品放到篝火上方的线上。篝火必须在线正下方四格范围内。在熏制过程中，线会产生一些烟雾。需要特别注意，篝火必须要使用$(thing)原木$()作为燃料。如果使用诸如$(thing)泥炭$()之类的燃料，会立刻让你的食物获得$(thing)恶心$()效果！"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "熏制过程需要游戏内的8小时。熏制愉快！"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 13
+}

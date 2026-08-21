@@ -1,5 +1,4 @@
 {
-  "__comment__": "This file was automatically created by mcresources",
   "name": "Madenler, Metaller ve Dökümcülük",
   "category": "tfc:getting_started",
   "icon": "tfc:ore/normal_native_copper",
@@ -73,15 +72,15 @@
     },
     {
       "type": "patchouli:crafting",
-      "recipe": "tfchotornot:crafting/tongs/wood",
-      "text": "Dikkat et, kap sıcak olacak! İki çubuk ve bir bıçakla $(thing)Tahta Maşa$() yap ve sıcak kabı güvenle tutmak için ikincil elinde bulundur."
+      "text": "Dikkat et, kap sıcak olacak! İki çubuk ve bir bıçakla $(thing)Tahta Maşa$() yap ve sıcak kabı güvenle tutmak için ikincil elinde bulundur.",
+      "recipe": "tfchotornot:crafting/tongs/wood"
     },
     {
       "type": "patchouli:image",
+      "text": "Kabı tut ve $(thing)Döküm$() arayüzünü açmak için $(item)$(k:key.use)$() tuşuna bas.",
       "images": [
         "tfc:textures/gui/book/gui/casting.png"
       ],
-      "text": "Kabı tut ve $(thing)Döküm$() arayüzünü açmak için $(item)$(k:key.use)$() tuşuna bas.",
       "border": false
     },
     {

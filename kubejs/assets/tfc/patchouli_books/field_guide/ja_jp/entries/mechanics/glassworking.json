@@ -1,5 +1,4 @@
 {
-  "__comment__": "This file was automatically created by mcresources",
   "name": "ガラスの精製",
   "category": "tfc:mechanics",
   "icon": "tfc:silica_glass_bottle",
@@ -10,9 +9,9 @@
     },
     {
       "type": "patchouli:crafting",
-      "title": "シリカガラスバッチ",
       "recipe": "tfc:crafting/silica_glass_batch",
-      "text": "ガラスバッチは、前述の対応する色の砂に加え、$(l:mechanics/glassworking#lime)石灰の粉$()と$(l:mechanics/glassworking#potash)炭酸カリウム系の粉$()を組み合わせて作成します。"
+      "text": "ガラスバッチは、前述の対応する色の砂に加え、$(l:mechanics/glassworking#lime)石灰の粉$()と$(l:mechanics/glassworking#potash)炭酸カリウム系の粉$()を組み合わせて作成します。",
+      "title": "シリカガラスバッチ"
     },
     {
       "type": "patchouli:smelting",
@@ -24,8 +23,8 @@
       "type": "patchouli:smelting",
       "anchor": "potash",
       "recipe": "tfg:smelting/dried_seaweed_to_soda",
-      "recipe2": "tfg:smelting/dried_kelp_to_soda",
-      "text": "ガラスバッチの作成には、$(thing)炭酸カリウム$()系の粉も必要になります。これには$(thing)ソーダ灰$()または$(thing)硝石の粉$()を使うことができます。$(thing)ソーダ灰$()は$(thing)乾燥したワカメ$()や$(thing)昆布$()を加熱して得られる粉末です。$(thing)硝石の粉$()は$(l:tfg_ores/earth_vein_index#normal_saltpeter)硝酸カリウム$()を石臼で挽くことで入手できます。"
+      "text": "ガラスバッチの作成には、$(thing)炭酸カリウム$()系の粉も必要になります。これには$(thing)ソーダ灰$()または$(thing)硝石の粉$()を使うことができます。$(thing)ソーダ灰$()は$(thing)乾燥したワカメ$()や$(thing)昆布$()を加熱して得られる粉末です。$(thing)硝石の粉$()は$(l:tfg_ores/earth_vein_index#normal_saltpeter)硝酸カリウム$()を石臼で挽くことで入手できます。",
+      "recipe2": "tfg:smelting/dried_kelp_to_soda"
     },
     {
       "type": "patchouli:text",

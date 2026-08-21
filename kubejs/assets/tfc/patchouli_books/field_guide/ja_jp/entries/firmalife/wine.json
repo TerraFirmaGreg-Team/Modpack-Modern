@@ -1,0 +1,107 @@
+{
+  "name": "ワイン作り",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:textures/item/food/white_grapes.png",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)ワイン作り$()は、ブドウをアルコールに変える技術です。資源を集める時間、資源を組み合わせて作る時間、そして$(thing)楽しむ$()時間が含まれます。Firmalifeのワインは（単体では）通常のTFCアルコール以上の特別な用途はありません。$(thing)楽しみ$()たい場合にのみ作るべきです。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "firmalife:plant/wild_red_grapes",
+      "link_recipes": false,
+      "text": "赤ブドウは$(br)気温 0 - 30 ℃$(br)降水量 125 - 500 mm$(br)の範囲、つまりほぼすべての居住可能地域で見つかります。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "firmalife:plant/wild_white_grapes",
+      "link_recipes": false,
+      "text": "白ブドウは$(br)気温 0 - 30 ℃$(br)降水量 125 - 500 mm$(br)の範囲、つまりほぼすべての居住可能地域で見つかります。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/grape_trellis_post",
+      "text": "ブドウは、これらの特別な支柱とジュート繊維で作られた棚で育てる必要があります。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "棚を作るには、2本の柱を上下に積み重ねます。左右どちらかに2ブロック移動して同じ操作を繰り返します。その後、$(thing)ジュート繊維$()を持ち、$(item)$(k:key.use)$()を押して上下の柱の側面に糸を張ります。ブドウ棚は横方向に連結して列を作ることができます。"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "ブドウの棚。",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "XYX"
+            ],
+            [
+              "X0X"
+            ]
+          ],
+          "mapping": {
+            "X": "firmalife:grape_trellis_post[axis=x,string_plus=true,string_minus=true]",
+            "0": "firmalife:grape_string_plant_red[axis=z,lifecycle=healthy,stage=0]",
+            "Y": "firmalife:grape_string[axis=z]"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "ZYZ"
+            ],
+            [
+              "X0X"
+            ]
+          ],
+          "mapping": {
+            "X": "firmalife:grape_trellis_post[axis=x,string_plus=true,string_minus=true]",
+            "0": "firmalife:grape_string_plant_red[axis=z,lifecycle=healthy,stage=2]",
+            "Y": "firmalife:grape_string_red[axis=z,lifecycle=healthy]",
+            "Z": "firmalife:grape_trellis_post_red[axis=x,lifecycle=healthy,string_plus=true,string_minus=true]"
+          }
+        }
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "text": "気候条件が満たされていれば、ブドウは数か月かけて棚を覆うように成長します。7月には実をつけ、その前の月には花を咲かせます。ブドウは収穫可能で、温室内の棚でも栽培できます。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/wood/acacia_stomping_barrel",
+      "text": "踏み桶はブドウを潰すために使用されます。石臼を使用することもできます。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "踏み桶を使用するには、新鮮なブドウを持って$(item)$(k:key.use)$()を押します。その後、樽の上で16回ジャンプします。空の手で$(item)$(k:key.use)$()を押すとアイテムを取り出せます。$(br2)その後、ブドウを樽に密封して5日間発酵させます。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/wood/acacia_barrel_press",
+      "text": "圧搾機はブドウ加工の最終段階です。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "The leftmost slot can contain up to 16 grapes. Four grape items are needed for a bottle of wine. The four central slots are for mixing the grapes with other ingredients, but this is optional. Using only red or white grapes yields red or white wine. Adding at least one red grape to white wine makes Rose. Adding sugar to white wine makes dessert wine. Adding tirage mixture (yeast and sweetener in a barrel) makes sparkling wine."
+    },
+    {
+      "type": "tfc:glassworking_recipe",
+      "recipe": "firmalife:glassworking/olivine_wine_bottle",
+      "text": "ワインは非シリカガラス製の適切なワインボトルに詰める必要があります。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/bottle_label",
+      "text": "$(thing)ボトルラベル$()は筆記台で名前を変更でき、その名前がワインのツールチップに追加されます。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "ワインには$(thing)コルク$()が必要です。$(br2)$(thing)加工木材$()を$(thing)石灰水$()に1日浸けることで作成できます。$(br2)すべてが完了したら、ボトルスロットを使用してワインを詰めるか、ボトルを手に持って$(item)$(k:key.use)$()を押して詰めてください。"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 23
+}

@@ -1,0 +1,26 @@
+{
+  "name": "巧克力",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:textures/item/food/dark_chocolate.png",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)巧克力製作$()需要幾個加工步驟，但回報並不豐厚。重要的是要記住，在玩這個模組時，成為一名巧克力師是為了個人的享受與樂趣，而不是試圖從任何給定的原料中榨取最大價值。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "開始巧克力加工，必須先將可可豆在$(l:firmalife/ovens)烤爐$()中$(thing)烘焙$()，製成$(thing)烘焙過的可可豆$()。然後，用$(thing)刀$()處理烘焙豆，將其分離成$(thing)可可粉$()與$(thing)可可脂$()。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "使用$(l:firmalife/mixing_bowl)攪拌碗$()混合可可粉、黃油和甜味劑（糖或蜂蜜）來製作$(thing)巧克力混合物$()。可可脂與可可粉的比例決定了最終產物：$(br)$(li)1 可可粉，1 黃油，1 甜味劑：牛奶巧克力$()$(li)2 可可粉，1 甜味劑：黑巧克力$()$(li)2 黃油，1 甜味劑：白巧克力$()"
+    },
+    {
+      "type": "tfc:drying_recipe",
+      "recipe": "firmalife:drying/dark_chocolate",
+      "text": "最後，將巧克力放在$(l:firmalife/drying)乾燥墊$()上乾燥，製成$(thing)巧克力$()。"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 22
+}

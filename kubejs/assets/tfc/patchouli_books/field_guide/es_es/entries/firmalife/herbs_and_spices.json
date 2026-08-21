@@ -1,5 +1,4 @@
 {
-	"__comment__": "This file was automatically created by mcresources",
 	"name": "Hierbas y Especias",
 	"category": "tfc:firmalife",
 	"icon": "firmalife:spice/basil_leaves",
@@ -10,6 +9,7 @@
 		},
 		{
 			"type": "tfc:multimultiblock",
+			"text": "La $(thing)Albahaca Silvestre$() crece entre los 12 y 25 °C, y una precipitación entre 300 y 500 mm.",
 			"multiblocks": [
 				{
 					"pattern": [
@@ -39,11 +39,13 @@
 				}
 			],
 			"name": "Albahaca",
-			"text": "La $(thing)Albahaca Silvestre$() crece entre los 12 y 25 °C, y una precipitación entre 300 y 500 mm.",
 			"enable_visualize": false
 		},
 		{
 			"type": "tfc:multimultiblock",
+			"name": "Laurel",
+			"text": "El $(thing)Laurel Silvestre$() crece entre los 8 y 14 °C, y una precipitación entre 25 y 225 mm. ",
+			"enable_visualize": false,
 			"multiblocks": [
 				{
 					"pattern": [
@@ -71,13 +73,11 @@
 						"X": "firmalife:plant/bay_laurel[stage=1]"
 					}
 				}
-			],
-			"name": "Laurel",
-			"text": "El $(thing)Laurel Silvestre$() crece entre los 8 y 14 °C, y una precipitación entre 25 y 225 mm. ",
-			"enable_visualize": false
+			]
 		},
 		{
 			"type": "tfc:multimultiblock",
+			"text": "El $(thing)Cardamomo Silvestre$() crece entre los 18 y 30 °C, y una precipitación entre 350 y 500 mm.",
 			"multiblocks": [
 				{
 					"pattern": [
@@ -107,11 +107,13 @@
 				}
 			],
 			"name": "Cadramomo",
-			"text": "El $(thing)Cardamomo Silvestre$() crece entre los 18 y 30 °C, y una precipitación entre 350 y 500 mm.",
 			"enable_visualize": false
 		},
 		{
 			"type": "tfc:multimultiblock",
+			"name": "Cilantro",
+			"text": "El $(thing)Cilantro Silvestre$() crece entre los 5 y 15 °C, y una precipitación entre 0 y 150 mm.",
+			"enable_visualize": false,
 			"multiblocks": [
 				{
 					"pattern": [
@@ -139,13 +141,11 @@
 						"X": "firmalife:plant/cilantro[stage=1]"
 					}
 				}
-			],
-			"name": "Cilantro",
-			"text": "El $(thing)Cilantro Silvestre$() crece entre los 5 y 15 °C, y una precipitación entre 0 y 150 mm.",
-			"enable_visualize": false
+			]
 		},
 		{
 			"type": "tfc:multimultiblock",
+			"text": "El $(thing)Comino Silvestre$() crece entre los 6 y 20 °C, y una precipitación entre 50 y 250 mm.",
 			"multiblocks": [
 				{
 					"pattern": [
@@ -175,7 +175,6 @@
 				}
 			],
 			"name": "Comino",
-			"text": "El $(thing)Comino Silvestre$() crece entre los 6 y 20 °C, y una precipitación entre 50 y 250 mm.",
 			"enable_visualize": false
 		},
 		{
