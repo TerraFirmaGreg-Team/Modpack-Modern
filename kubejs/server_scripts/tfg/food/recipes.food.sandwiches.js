@@ -30,6 +30,39 @@ function registerTFGSandwichFoodRecipes(event) {
 				])
 			});
 
+			//pickle sandwich
+			event.recipes.tfc.advanced_shaped_crafting(
+				TFC.isp.of(`2x tfc:food/${grain.name}_bread_sandwich`).meal(
+					(food => food.hunger(4).water(0.5).saturation(1).decayModifier(4.5)), [
+						(portion) => portion.ingredient(Ingredient.of('#tfc:sandwich_bread')).nutrientModifier(0.5).saturationModifier(0.5).waterModifier(0.5),
+						(portion) => portion.nutrientModifier(0.8).saturationModifier(0.8).waterModifier(0.8)
+					]),
+				[
+					'CA ',
+					'DBB',
+					' A '
+				], {
+					A: TFC.ingredient.notRotten(`${type[1]}`),
+					B: TFC.ingredient.notRotten('#tfc:foods/usable_in_sandwich'),
+					C: '#forge:tools/knives',
+					D: TFC.ingredient.notRotten('tfg:food/pickle_jar')
+				},
+				0,
+				0
+			).id(`tfg:crafting/${grain.name}_${type[0]}_sandwich_pickle`);
+
+			global.processorRecipe(event, `${grain.name}_${type[0]}_sandwich_pickle`, 100, 16, {
+				circuit: 3,
+				itemInputs: [`2x ${type[1]}`, "2x #tfc:foods/usable_in_sandwich", "1x tfg:food/pickle_jar"],
+				itemOutputs: [`2x tfc:food/${grain.name}_bread_sandwich`, "1x tfc:empty_jar"],
+				itemOutputProvider: TFC.isp.of(`2x tfc:food/${grain.name}_bread_sandwich`).meal(
+					(food => food.hunger(4).water(0.5).saturation(1).decayModifier(4.5)), [
+						(portion) => portion.ingredient(Ingredient.of('#tfc:sandwich_bread')).nutrientModifier(0.5).saturationModifier(0.5).waterModifier(0.5),
+						(portion) => portion.nutrientModifier(0.8).saturationModifier(0.8).waterModifier(0.8)
+					])
+			});
+
+
 			//Note: preserves needs to be first in the recipe code or else it will consider it as the usable_in_jam_sandwich ingredients.
 			// 1 jam + 2 cheese
 			global.processorRecipe(event, `${grain.name}_${type[0]}_jam_sandwich_1`, 100, 16, {
@@ -101,6 +134,36 @@ function registerTFGSandwichFoodRecipes(event) {
 		)
 	});
 
+// Pickle Burger
+	event.recipes.tfc.advanced_shaped_crafting(
+		TFC.isp.of('tfg:food/hamburger').meal(
+			(food) => food.hunger(4).decayModifier(1.3),
+			[(portion) => portion.nutrientModifier(1.2).saturationModifier(1.0)]
+		),
+		[
+			'CA ',
+			'DBB',
+			' A '
+		], {
+			A: TFC.ingredient.notRotten('tfg:food/brioche_bun'),
+			B: TFC.ingredient.notRotten('#tfg:foods/usable_in_burgers'),
+			C: '#forge:tools/knives',
+			D: TFC.ingredient.notRotten('tfg:food/pickle_jar')
+		},
+		0,
+		0
+	).id('tfg:crafting/pickle_hamburger');
+
+	global.processorRecipe(event, `pickle_hamburger`, 60, GTValues.VA[GTValues.ULV], {
+		itemInputs: [`2x #tfg:foods/usable_in_burgers`, '2x tfg:food/brioche_bun', `tfg:food/pickle_jar`],
+		itemOutputs: ['tfg:food/hamburger'],
+		circuit: 2,
+		itemOutputProvider: TFC.isp.of('tfg:food/hamburger').meal(
+			(food) => food.hunger(4).decayModifier(1.3),
+			[(portion) => portion.nutrientModifier(1.2).saturationModifier(1.0)]
+		)
+	});
+
 	// Cheeseburger
 	event.recipes.tfc.advanced_shaped_crafting(
 		TFC.isp.of('tfg:food/cheeseburger').meal(
@@ -124,6 +187,37 @@ function registerTFGSandwichFoodRecipes(event) {
 	global.processorRecipe(event, `cheeseburger`, 60, GTValues.VA[GTValues.ULV], {
 		itemInputs: [`2x #tfg:foods/usable_in_burgers`, '2x tfg:food/brioche_bun', '#tfg:foods/cheeses'],
 		itemOutputs: ['tfg:food/cheeseburger'],
+		circuit: 3,
+		itemOutputProvider: TFC.isp.of('tfg:food/cheeseburger').meal(
+			(food) => food.hunger(4).decayModifier(1.3),
+			[(portion) => portion.nutrientModifier(1.2).saturationModifier(1.1)]
+		)
+	});
+
+	// Cheeseburger with Pickles
+	event.recipes.tfc.advanced_shaped_crafting(
+		TFC.isp.of('tfg:food/cheeseburger').meal(
+			(food) => food.hunger(4).decayModifier(1.3),
+			[(portion) => portion.nutrientModifier(1.2).saturationModifier(1.1)]
+		),
+		[
+			'CA ',
+			'EBD',
+			' A '
+		], {
+			A: TFC.ingredient.notRotten('tfg:food/brioche_bun'),
+			B: TFC.ingredient.notRotten('#tfg:foods/usable_in_burgers'),
+			C: '#forge:tools/knives',
+			D: TFC.ingredient.notRotten('#tfg:foods/cheeses'),
+			E: TFC.ingredient.notRotten('tfg:food/pickle_jar')
+		},
+		0,
+		0
+	).id('tfg:crafting/pickle_cheeseburger');
+
+	global.processorRecipe(event, `pickle_cheeseburger`, 60, GTValues.VA[GTValues.ULV], {
+		itemInputs: [`2x #tfg:foods/usable_in_burgers`, '2x tfg:food/brioche_bun', '#tfg:foods/cheeses', `tfg:food/pickle_jar`],
+		itemOutputs: ['tfg:food/cheeseburger', 'tfc:empty_jar'],
 		circuit: 3,
 		itemOutputProvider: TFC.isp.of('tfg:food/cheeseburger').meal(
 			(food) => food.hunger(4).decayModifier(1.3),

@@ -8,4 +8,7 @@ function registerTFGItemModifications(event) {
         };
     });
 
+    event.modify('tfg:food/pickle_jar', item => {
+        item.setCraftingRemainder('tfc:empty_jar')
+    });
 };

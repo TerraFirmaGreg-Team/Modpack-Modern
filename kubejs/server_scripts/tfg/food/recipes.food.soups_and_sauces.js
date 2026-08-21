@@ -42,6 +42,27 @@ function registerTFGSoupFoodRecipes(event) {
     	});
 	});
 
+	//zupa ogórkowa
+	global.processorRecipe(event, 'pickle_soup', 300, 8, {
+		circuit: 26,
+		itemInputs: [
+			'3x #tfc:bowls',
+			'2x tfg:food/pickle_jar',
+			'3x #tfc:foods/usable_in_soup'
+		],
+		itemOutputs: ['3x tfc:food/vegetables_soup', '2x tfc:empty_jar'],
+		itemOutputProvider: TFC.isp.of(`3x tfc:food/vegetable_soup`).simpleModifier('tfg:add_bowl').meal(
+			(food) => food.hunger(4).water(1).saturation(1).decayModifier(3.5),
+			[
+				(portion) => portion
+					.ingredient(Ingredient.of('#tfc:foods/usable_in_soup'))
+					.nutrientModifier(0.75)
+					.saturationModifier(0.75)
+					.waterModifier(0.75)
+			]
+		)
+	});
+
     // Oatmeal
 	for (let i = 1; i <= 4; i++) {
 		global.processorRecipe(event, `oatmeal_${i}`, 20*15, GTValues.VA[GTValues.LV], {
