@@ -1,6 +1,8 @@
 # Changelog
 
 ## Unreleased
+### Breaking changes
+- Chromium through Ferrochrome now requires Circuit 2 @TomPlop
 ### Changes
 #### Ambiental
 - Tiger and lion clothing are now cooling instead of warming @ashleney
@@ -9,6 +11,8 @@
 - All recipes have been changed @Pyritie
 - Added new clothing: phantom silk (cooling), red elk (cooling), and cotton @ashleney @Atraxia @Pyritie
 #### Other changes
+- Add more informations to the GUI of the Large Boiler and Geologic Vulcanizer (fluid consumption) @TomPlop
+- The Gas Well now depletes fluid vein way slower (same as the MV Fluid Rig) @TomPlop
 - Added combustion engines for generating SU from combustible fuels. You can use any fluid that works in a GregTech combustion generator or gas turbine (#4766) @Pyritie
 - Added two more "start room" variations to mineshafts, and added monsters to it @Pyritie
 - Reduced the amount of mobs (and treasure) in Beneath towers, so they are more useful for traveling @Pyritie
