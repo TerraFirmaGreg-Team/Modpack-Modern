@@ -13,10 +13,10 @@
 			"text": "El aspersor se craftea con una $(thing)Placa de Cobre$()."
 		},
 		{
-			"title": "Tubería",
-			"item": "gtceu:copper_tiny_fluid_pipe",
 			"type": "patchouli:spotlight",
-			"text": "Los aspersores deben estar conectados a un sistema de tuberías que los alimente con agua para poder funcionar. Esto se hace conectándolos con una serie de $(thing)Cañerías$(). Puedes bombearles agua con una $(thing)Bomba mecánica$()."
+			"text": "Los aspersores deben estar conectados a un sistema de tuberías que los alimente con agua para poder funcionar. Esto se hace conectándolos con una serie de $(thing)Cañerías$(). Puedes bombearles agua con una $(thing)Bomba mecánica$().",
+			"title": "Tubería",
+			"item": "gtceu:copper_tiny_fluid_pipe"
 		},
 		{
 			"type": "patchouli:text",

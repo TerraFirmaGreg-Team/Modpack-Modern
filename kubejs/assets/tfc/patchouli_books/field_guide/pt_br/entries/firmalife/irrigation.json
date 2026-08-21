@@ -13,10 +13,10 @@
 			"text": "O aspersor é feito com uma $(thing)Placa de Cobre$()."
 		},
 		{
-			"title": "Tubulação",
-			"item": "gtceu:copper_tiny_fluid_pipe",
 			"type": "patchouli:spotlight",
-			"text": "Aspersores precisam ser conectados a um sistema de tubulações que os alimentam com água para funcionar. Isso é feito conectando uma série de $(thing)Tubos de Fluido$() a eles. Você pode bombear água para eles com uma $(thing)Bomba Mecânica$()."
+			"text": "Aspersores precisam ser conectados a um sistema de tubulações que os alimentam com água para funcionar. Isso é feito conectando uma série de $(thing)Tubos de Fluido$() a eles. Você pode bombear água para eles com uma $(thing)Bomba Mecânica$().",
+			"title": "Tubulação",
+			"item": "gtceu:copper_tiny_fluid_pipe"
 		},
 		{
 			"type": "patchouli:text",

@@ -19,6 +19,7 @@
   "block.comforts.hammock_white": "하얀색 해먹",
   "block.comforts.hammock_yellow": "노란색 해먹",
   "block.comforts.rope_and_nail": "밧줄과 못",
+  "block.comforts.sleeping_bag.broke": "The sleeping bag broke",
   "block.comforts.sleeping_bag.occupied": "누가 이미 침낭에 있습니다.",
   "block.comforts.sleeping_bag.too_far_away": "침낭이 너무 멀리 있어 잘 수 없습니다.",
   "block.comforts.sleeping_bag_black": "검은색 침낭",
@@ -37,5 +38,7 @@
   "block.comforts.sleeping_bag_red": "빨간색 침낭",
   "block.comforts.sleeping_bag_white": "하얀색 침낭",
   "block.comforts.sleeping_bag_yellow": "노란색 침낭",
-  "capability.comforts.not_sleepy": "졸리지 않아 잘 수 없습니다."
+  "capability.comforts.not_sleepy": "졸리지 않아 잘 수 없습니다.",
+  "itemGroup.comforts": "Comforts 탭",
+  "itemGroup.comforts.general": "Comforts 탭"
 }

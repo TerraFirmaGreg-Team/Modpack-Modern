@@ -1,15 +1,15 @@
 {
-  "name": "Concrete Roads",
+  "name": "Beton Yollar",
   "category": "tfc:roadsandroofs",
   "icon": "rnr:concrete_road_panel",
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "Concrete roads offer a 30% movement speed bonus when properly constructed. However, road builders must be diligent when constructing concrete roads to prevent them from cracking or being trodden on while wet, as this will remove the speed bonus."
+      "text": "Beton yollar, düzgün şekilde yapıldığında %30 hareket hızı bonusu sağlar. Ancak yol yapımcıları, beton yolları oluştururken dikkatli olmalıdır. Betonun çatlamasını veya ıslakken üzerine basılmasını önlemek gerekir; aksi hâlde hız bonusu ortadan kalkar."
     },
     {
       "type": "patchouli:image",
-      "title": "Concrete Road",
+      "title": "Beton Yol",
       "images": [
         "rnr:textures/gui/book/concrete_road.png"
       ],
@@ -18,24 +18,24 @@
     {
       "type": "patchouli:spotlight",
       "anchor": "liquid_concrete",
-      "item": "gtceu:concrete_bucket",
-      "title": "Concrete Crafting",
-      "text": "The first step in making a concrete road is mixing the liquid concrete. Use a $(thing)Mixer$() to combine water with any two stone dusts, one of either calcite or marble dust, and gypsum dust, or any three stone dusts with clay dust to make $(thing)Liquid Concrete$()."
+      "title": "Beton Yapımı",
+      "text": "Beton yol yapımının ilk adımı sıvı betonun karıştırılmasıdır. Bir $(thing)Mikser$() kullanarak suyu; herhangi iki taş tozu, kalsit veya mermer tozundan biri ve alçıtaşı tozuyla ya da herhangi üç taş tozu ve kil tozuyla birleştirerek $(thing)Sıvı Beton$() elde edin.",
+      "item": "gtceu:concrete_bucket"
     },
     {
       "type": "patchouli:spotlight",
       "anchor": "wet_concrete",
-      "item": "rnr:bucket/concrete",
-      "title": "Concrete Crafting",
-      "text": "Then add the liquid concrete in a $(thing)Mixer$() set to $(thing)Programmed Circuit #7$() with more water to dilute it into $(thing)Wet Concrete Mix$()."
+      "title": "Beton Yapımı",
+      "text": "Ardından sıvı betonu, $(thing)Programlanmış Devre #7$() ayarına getirilmiş bir $(thing)Mikser$() içine ekleyin ve daha fazla su ekleyerek $(thing)Islak Beton Karışımı$() hâline getirin.",
+      "item": "rnr:bucket/concrete"
     },
     {
       "type": "patchouli:text",
-      "text": "Once $(thing)Wet Concrete$() has been mixed, it can be picked up in a bucket and placed on a $(thing)Base Course Block$() where it will spread to adjacent blocks. The concrete will harden after one day, and until it hardens care must be taken that no creatures walk through the wet concrete as this will create an uneven surface that provides no speed bonus. Footprints can be smoothed out with a $(thing)Mattock$()."
+      "text": "$(thing)Islak Beton$() karıştırıldıktan sonra bir kovayla alınabilir ve $(thing)Temel tabaka Bloğu$() üzerine yerleştirilebilir; burada bitişik bloklara doğru yayılacaktır. Beton bir gün sonra sertleşir ve sertleşene kadar ıslak betonun üzerinden geçilmemesine dikkat edilmelidir; aksi hâlde hız bonusu sağlamayan düzensiz bir yüzey oluşur. Ayak izleri bir $(thing)Mattock$() ile düzeltilebilir."
     },
     {
       "type": "patchouli:image",
-      "title": "Pouring a Concrete Road",
+      "title": "Beton yol döşeme",
       "images": [
         "rnr:textures/gui/book/wet_concrete.png"
       ],
@@ -43,11 +43,11 @@
     },
     {
       "type": "patchouli:text",
-      "text": "Shrinkage cracking is also a concern as concrete sets. If concrete is poured in areas more than four blocks wide, blocks that are farther than two blocks from the nearest $(thing)Edge$(), $(thing)Control Joint$(), or $(thing)Textured Finish$() will crack when set. This can be prevented by pouring concrete in smaller areas, using a $(thing)Mattock$() to add $(thing)Control Joints$(), or by applying a $(thing)Textured Finish$()."
+      "text": "Beton sertleşirken büzülme çatlakları da oluşabilir. Beton dört bloktan daha geniş alanlara dökülürse, en yakın $(thing)Kenar$(), $(thing)Kontrol Derzi$() veya $(thing)Dokulu Kaplama$() noktasından iki bloktan daha uzakta bulunan bloklar sertleşirken çatlayacaktır. Bu durum, betonu daha küçük alanlara dökerek, $(thing)Kazma-Çapa$() kullanarak $(thing)Kontrol Derzleri$() oluşturarak veya $(thing)Dokulu Kaplama$() uygulayarak önlenebilir."
     },
     {
       "type": "patchouli:image",
-      "title": "Control Joints",
+      "title": "Kontrol Derzleri",
       "images": [
         "rnr:textures/gui/book/control_joints.png"
       ],
@@ -55,11 +55,11 @@
     },
     {
       "type": "patchouli:text",
-      "text": "$(thing)Textured Finishes$() are created by pressing $(thing)Bricks$(), $(thing)Flagstones$(), or $(thing)Smooth Stone Blocks$() into drying concrete to create an architectural finish. These blocks also act as $(thing)Control Joints$() for preventing cracking. Once concrete has finished drying, a $(thing)Chisel$() can be used to form slabs and stairs."
+      "text": "$(thing)Dokulu Yüzeyler$(), kuruyan betonun üzerine $(thing)Tuğla$(), $(thing)Kesme Taşı$() veya $(thing)Düzgün Taş Blokları$() bastırılarak mimari bir yüzey görünümü oluşturulur. Bu bloklar ayrıca çatlamayı önlemek için $(thing)Kontrol Derzleri$() görevi görür. Beton tamamen kuruduktan sonra $(thing)Keski$() kullanılarak döşemeler ve merdivenler oluşturulabilir."
     },
     {
       "type": "patchouli:image",
-      "title": "Faux Sett Road",
+      "title": "Parke Taş Görünümlü Yol",
       "images": [
         "rnr:textures/gui/book/faux_sett.png"
       ],

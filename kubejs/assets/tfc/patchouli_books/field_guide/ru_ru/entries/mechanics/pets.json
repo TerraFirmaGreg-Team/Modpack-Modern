@@ -1,5 +1,4 @@
 {
-  "__comment__": "This file was automatically created by mcresources",
   "name": "Питомцы ",
   "category": "tfc:mechanics",
   "icon": "minecraft:lead",
@@ -24,11 +23,12 @@
     },
     {
       "type": "patchouli:text",
-      "title": "Варианты собак",
-      "text": "Собаки бывают нескольких разновидностей, которые зависят от того, какой тип волка был приручён. $(br2)На следующих страницах показана таблица климатов, где можно найти определённые разновидности волков."
+      "text": "Собаки бывают нескольких разновидностей, которые зависят от того, какой тип волка был приручён. $(br2)На следующих страницах показана таблица климатов, где можно найти определённые разновидности волков.",
+      "title": "Варианты собак"
     },
     {
       "type": "patchouli:image",
+      "text": "Cats are a pet that eats grains, cooked meats, and dairy products. They will help you hunt land prey and small fish. When at home, they will kill pests without being asked to. Cats do not always listen when being told to sit.",
       "images": [
         "tfg:textures/gui/field_guide/dog_variants.png"
       ],
@@ -36,6 +36,7 @@
     },
     {
       "type": "tfc:table",
+      "text": "Ответственные владельцы домашних животных должны научиться контролировать своего питомца. К счастью, это легко. Нажимая $(item)$(k:key.use)$() при удержании $(item)$(k:key.sneak)$() с пустой рукой, можно открыть $(thing)Экран домашнего животного$(). Этот экран содержит ряд команд, которые можно использовать, чтобы сказать питомцу, что делать: $(thing)Расслабься$(), $(thing)Мы дома$(), $(thing)Сидеть$(), $(thing)Иди за мной$() и $(thing)Охоться со мной$().",
       "strings": [
         {
           "text": "Разновидность",
@@ -100,7 +101,6 @@
           "text": "Умеренный (Леса)"
         }
       ],
-      "text": "",
       "title": "Окрас волков",
       "legend": [],
       "columns": 1,
@@ -113,13 +113,14 @@
     },
     {
       "type": "patchouli:empty",
+      "text": "$(thing)Relax$() is the default state of pets, and commanding them returns them to this state. If a pet it at home, it will wander around the property, but not leave, and sleep once a day. If it is too far from home, it will walk aimlessly.",
       "draw_filler": false
     },
     {
       "type": "patchouli:entity",
+      "text": "Кошка.",
       "entity": "tfc:cat{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
-      "scale": 0.7,
-      "text": "Кошка."
+      "scale": 0.7
     },
     {
       "type": "patchouli:text",

@@ -1,0 +1,177 @@
+{
+  "name": "Firmalife フルーツ",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:plant/fig_sapling",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Firmalifeは、TFCで追加されたものに加えて、果樹も追加しています。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "読みやすくするため、項目は次のページから始まります。"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "cocoa",
+      "text": "$(bold)$(l:the_world/climate#temperature)気温$()：20 - 35 ℃$(br)$(bold)$(l:mechanics/hydration)降雨量$()：220 - 400 mm$(br2)カカオの木は$(l:tfc:firmalife/chocolate)チョコレート$()の原料になります。",
+      "title": "カカオの木"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "カカオの木の成長",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "firmalife:plant/cocoa_leaves[lifecycle=dormant]",
+            "Y": "firmalife:plant/cocoa_branch[up=true,down=true]"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "firmalife:plant/cocoa_leaves[lifecycle=healthy]",
+            "Y": "firmalife:plant/cocoa_branch[up=true,down=true]"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "firmalife:plant/cocoa_leaves[lifecycle=flowering]",
+            "Y": "firmalife:plant/cocoa_branch[up=true,down=true]"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "firmalife:plant/cocoa_leaves[lifecycle=fruiting]",
+            "Y": "firmalife:plant/cocoa_branch[up=true,down=true]"
+          }
+        }
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "fig",
+      "text": "$(bold)$(l:the_world/climate#temperature)温度$()：20 - 35 ℃$(br)$(bold)$(l:mechanics/hydration)降雨量$()：125 - 215 mm$(br2)",
+      "title": "イチジクの木"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "イチジクの木の成長",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "firmalife:plant/fig_leaves[lifecycle=dormant]",
+            "Y": "firmalife:plant/fig_branch[up=true,down=true]"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "firmalife:plant/fig_leaves[lifecycle=healthy]",
+            "Y": "firmalife:plant/fig_branch[up=true,down=true]"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "firmalife:plant/fig_leaves[lifecycle=flowering]",
+            "Y": "firmalife:plant/fig_branch[up=true,down=true]"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "firmalife:plant/fig_leaves[lifecycle=fruiting]",
+            "Y": "firmalife:plant/fig_branch[up=true,down=true]"
+          }
+        }
+      ]
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 20
+}

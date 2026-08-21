@@ -5,19 +5,22 @@
 	"pages": [
 		{
 			"type": "patchouli:crafting",
+			"name": "Soul Clay",
+			"text": "Пироксенитовый акведук позволяет проводить лаву на любое расстояние.",
 			"anchor": "blackstone_aqueduct",
-			"recipe": "tfg:shaped/blackstone_aqueduct",
-			"text": "Пироксенитовый акведук позволяет проводить лаву на любое расстояние."
+			"recipe": "tfg:shaped/blackstone_aqueduct"
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "tfg:shapeless/hellbricks",
-			"text": "Адские кирпичи — это строительный блок, который используется для $(l:beneath/hellforge)Адской кузницы$()."
+			"name": "Sulfur",
+			"text": "Адские кирпичи — это строительный блок, который используется для $(l:beneath/hellforge)Адской кузницы$().",
+			"recipe": "tfg:shapeless/hellbricks"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"item": "beneath:ancient_altar",
-			"text": "Пироксенитовый пьедестал можно использовать для отображения предметов, которые вы хотите продемонстрировать!"
+			"name": "Thatch",
+			"text": "Пироксенитовый пьедестал можно использовать для отображения предметов, которые вы хотите продемонстрировать!",
+			"item": "beneath:ancient_altar"
 		},
 		{
 			"type": "patchouli:crafting",

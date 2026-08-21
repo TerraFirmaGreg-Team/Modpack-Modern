@@ -1,0 +1,17 @@
+{
+  "name": "罐頭櫃",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:wood/jarbnet/pine",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "罐頭櫃是一種用於存儲$(l:tfc:firmalife/jars)罐子$()、蠟燭和水壺的裝飾性存儲方塊。空手並按住$(item)$(k:key.sneak)$()點擊可將其打開或關閉。若內部放有蠟燭，可將其點燃以產生微弱的亮光。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/wood/acacia_jarbnet"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 6
+}

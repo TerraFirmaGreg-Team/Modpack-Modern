@@ -1,4 +1,8 @@
 {
+	"emixx.emixx.configuration.disabledCreativeModeTabs.manage": "설정...",
+	"emixx.emixx.configuration.disabledStackGroups.manage": "설정...",
+	"stackgroup.emixx.buckets": "양동이",
+	"stackgroup.emixx.raw_materials": "원자재",
 	"stackgroup.emixx.tfg_conductor_caps": "차장 모자",
 	"stackgroup.emixx.tfg_coral_blocks": "산호",
 	"stackgroup.emixx.tfg_corals": "산호",
@@ -21,5 +25,6 @@
 	"stackgroup.emixx.tfg_plates": "금속판",
 	"stackgroup.emixx.tfg_seats": "좌석들",
 	"stackgroup.emixx.tfg_tools_wrenches": "렌치",
-	"stackgroup.emixx.tfg_valve_handles": "밸브 손잡이"
+	"stackgroup.emixx.tfg_valve_handles": "밸브 손잡이",
+	"stackgroup.emixx.wool": "양털"
 }

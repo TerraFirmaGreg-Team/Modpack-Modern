@@ -1,5 +1,4 @@
 {
-  "__comment__": "This file was automatically created by mcresources",
   "name": "宠物",
   "category": "tfc:mechanics",
   "icon": "minecraft:lead",
@@ -24,11 +23,12 @@
     },
     {
       "type": "patchouli:text",
-      "title": "狗的变种",
-      "text": "狗有多个变种，取决于它们是由哪种狼驯化而来。$(br2)下一页的表格列出了各狼变种可在哪些气候中找到。"
+      "text": "狗有多个变种，取决于它们是由哪种狼驯化而来。$(br2)下一页的表格列出了各狼变种可在哪些气候中找到。",
+      "title": "狗的变种"
     },
     {
       "type": "patchouli:image",
+      "text": "Cats are a pet that eats grains, cooked meats, and dairy products. They will help you hunt land prey and small fish. When at home, they will kill pests without being asked to. Cats do not always listen when being told to sit.",
       "images": [
         "tfg:textures/gui/field_guide/dog_variants.png"
       ],
@@ -36,6 +36,7 @@
     },
     {
       "type": "tfc:table",
+      "text": "负责任的宠物主人需要学习如何管理自己的宠物。好在这并不是件难事。在空手的状态下按住$(item)$(k:key.sneak)$()并按下$(item)$(k:key.use)$()就可以打开$(thing)宠物面板$()。这个面板包含了一系列可以命令宠物做的事情，例如$(thing)休息$()、$(thing)我们到家了$()、$(thing)坐下$()、$(thing)跟着我$()、以及$(thing)跟我打猎$()。",
       "strings": [
         {
           "text": "变种",
@@ -100,7 +101,6 @@
           "text": "温带（森林）"
         }
       ],
-      "text": "",
       "title": "狼变种分布位置",
       "legend": [],
       "columns": 1,
@@ -113,13 +113,14 @@
     },
     {
       "type": "patchouli:empty",
+      "text": "$(thing)Relax$() is the default state of pets, and commanding them returns them to this state. If a pet it at home, it will wander around the property, but not leave, and sleep once a day. If it is too far from home, it will walk aimlessly.",
       "draw_filler": false
     },
     {
       "type": "patchouli:entity",
+      "text": "一只猫。",
       "entity": "tfc:cat{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
-      "scale": 0.7,
-      "text": "一只猫。"
+      "scale": 0.7
     },
     {
       "type": "patchouli:text",

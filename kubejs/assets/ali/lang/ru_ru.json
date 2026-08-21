@@ -1,0 +1,23 @@
+{
+	"ali.description.count": "Количество предметов: %s",
+	"ali.property.branch.biomes": "Биомы:",
+	"ali.property.branch.dimensions": "Измерения:",
+	"ali.property.value.biome": "Биом: %s",
+	"ali.property.value.block": "Блок: %s",
+	"ali.property.value.color": "Цвет: %s",
+	"ali.property.value.count": "Количество предметов: %s",
+	"ali.property.value.dimension": "Измерение: §s",
+	"ali.property.value.fluid": "Жидкость: %s",
+	"ali.property.value.id": "ID: %s",
+	"ali.property.value.levels": "Уровни: %s",
+	"ali.property.value.name": "Название: %s",
+	"ali.property.value.range": "Радиус: %s",
+	"ali.property.value.size": "Размер: %s",
+	"ali.property.value.variant": "Формат: %s",
+	"ali.property.value.zoom": "Увеличение: %s",
+	"ali.util.advanced_loot_info.accepts": "Принимает:",
+	"ali/loot_table/chests/abandoned_mineshaft": "Сундук из заброшенной шахты",
+	"ali/loot_table/gameplay/piglin_bartering": "Обмен с пиглинами",
+	"emi.category.ali.entity_loot": "Награда монстра",
+	"emi.category.ali.piglin_bartering": "Обмен с пиглинами"
+}

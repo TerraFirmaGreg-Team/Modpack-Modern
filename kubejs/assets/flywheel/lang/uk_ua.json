@@ -1,0 +1,14 @@
+{
+	"argument.flywheel_backend.id.unknown": "Невідомий бекенд '%s'",
+	"command.flywheel.backend.get": "Поточний бекенд Flywheel '%s'",
+	"command.flywheel.backend.set": "Рушій Flywheel змінено на '%s'",
+	"command.flywheel.backend.set.unavailable": "Запитуваний бекенд '%s' недоступний",
+	"command.flywheel.limit_updates.get.off": "Обмеження оновлень наразі вимкнено",
+	"command.flywheel.limit_updates.get.on": "Обмеження оновлень наразі увімкнено",
+	"command.flywheel.limit_updates.set.off": "Обмеження оновлень тепер вимкнено",
+	"command.flywheel.limit_updates.set.on": "Обмеження оновлень тепер увімкнено",
+	"command.flywheel.use_light_directions.get.off": "Напрямки світла не використовуються",
+	"command.flywheel.use_light_directions.get.on": "Напрямки світла використовуються",
+	"command.flywheel.use_light_directions.set.off": "Напрямки світла вимкнено",
+	"command.flywheel.use_light_directions.set.on": "Напрямки світла увімкнено"
+}
