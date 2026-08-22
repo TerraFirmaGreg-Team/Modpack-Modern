@@ -314,13 +314,11 @@ const registerTFGBlockTags = (event) => {
 	
 	LOCO_GLASSES.forEach(type => {
 		event.add('create:wrench_pickup', `railways:${type}`)
-		event.add('forge:mineable/wrench', `railways:${type}`)
 		event.remove('minecraft:mineable/pickaxe', `railways:${type}`)
 		event.remove('cucumber:mineable/paxel', `railways:${type}`)
 		global.LOCOMETAL_COLORS.forEach(colorObj => { 
     		colorObj.colors.forEach(subColor => {
             	event.add('create:wrench_pickup', `railways:${subColor}_${type}`)
-				event.add('forge:mineable/wrench', `railways:${subColor}_${type}`)
 				event.remove('minecraft:mineable/pickaxe', `railways:${subColor}_${type}`)
 				event.remove('cucumber:mineable/paxel', `railways:${subColor}_${type}`)
         	})
