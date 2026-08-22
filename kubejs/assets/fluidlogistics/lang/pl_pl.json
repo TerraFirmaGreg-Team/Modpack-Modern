@@ -3,6 +3,7 @@
 	"block.fluidlogistics.copper_schematicannon.tooltip.behaviour1": "Otwiera _interfejs_.",
 	"block.fluidlogistics.copper_schematicannon.tooltip.condition1": "Kiedy kliknięto PPM",
 	"block.fluidlogistics.faucet": "Kran",
+	"block.fluidlogistics.fluid_hatch": "Luk na płyny",
 	"block.fluidlogistics.fluid_hatch.tooltip.condition1": "Kiedy kliknięto PPM",
 	"block.fluidlogistics.fluid_packager": "Pakowacz płynów",
 	"block.fluidlogistics.fluid_pump": "Pompa",
@@ -82,5 +83,6 @@
 	"item.fluidlogistics.fluid_schematic.tooltip.condition1": "Kiedy w ręce",
 	"item.fluidlogistics.fluid_schematic.tooltip.condition2": "Kliknięcie PPM w czasie skradania",
 	"item.fluidlogistics.hand_pointer": "Wskaźnik ręczny",
-	"item.fluidlogistics.phantom_chain": "Fantomowy łańcuch"
+	"item.fluidlogistics.phantom_chain": "Fantomowy łańcuch",
+	"itemGroup.fluidlogistics.fluidlogistics_tab": "Create: Fluid Logistics"
 }
