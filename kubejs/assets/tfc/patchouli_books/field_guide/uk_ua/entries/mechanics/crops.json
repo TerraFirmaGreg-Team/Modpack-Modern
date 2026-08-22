@@ -23,7 +23,7 @@
 		{
 			"type": "tfc:rock_knapping_recipe",
 			"text": "Для початку можна зробити $(thing)кам’яну мотикy$() методом $(thing) оббивання$(), як показано вище.",
-			"title": "Growing Crops",
+			"title": "Вирощування рослин",
 			"recipes": [
 				"tfg:rock_knapping/stone_hoe_head_1"
 			]
@@ -632,7 +632,7 @@
 		},
 		{
 			"type": "tfc:multimultiblock",
-			"text": "Примітка: щоб рости, рисовий блок повинен бути $(thing)заболочений$().",
+			"text": "Note: in order to grow, the rice block must be $(thing)Waterlogged$().",
 			"multiblocks": [
 				{
 					"pattern": [
@@ -1253,7 +1253,7 @@
 		},
 		{
 			"type": "tfc:multimultiblock",
-			"text": "Паличка потрібна для повноцінного росту культури.",
+			"text": "The stick is required in order for the crop to fully grow.",
 			"multiblocks": [
 				{
 					"pattern": [
@@ -2677,7 +2677,7 @@
 		},
 		{
 			"type": "tfc:multimultiblock",
-			"text": "Паличка потрібна для повноцінного росту культури.",
+			"text": "The stick is required in order for the crop to fully grow.",
 			"multiblocks": [
 				{
 					"pattern": [

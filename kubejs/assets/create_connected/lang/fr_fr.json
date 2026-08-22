@@ -130,7 +130,6 @@
 	"create.item_attributes.max_damage.inverted": "n'a pas de durabilité maximale %1$s",
 	"create.item_attributes.stack_size": "empile vers %1$s",
 	"create.item_attributes.stack_size.inverted": "ne se superpose pas à %1$s",
-	"create_connected.battery.charge": "Charge",
 	"create_connected.battery.rotation_direction": "Direction de rotation pendant la décharge",
 	"create_connected.battery.status": "État de la batterie: %1$s",
 	"create_connected.battery.status.charging": "Recharge en cours",
@@ -296,7 +295,6 @@
 	"item.create_connected.incomplete_control_chip": "Puce de contrôle incomplète",
 	"item.create_connected.linked_transmitter": "Transmetteur lié",
 	"item.create_connected.music_disc_elevator": "Disque de musique",
-	"item.create_connected.music_disc_elevator.desc": "Kevin MacLeod - Casa Bossa Nova",
 	"item.create_connected.music_disc_interlude": "Disques de musique",
 	"item.create_connected.music_disc_interlude.desc": "Kevin MacLeod - Prévision locale - Élévateur",
 	"item.create_connected.redstone_link_wildcard": "Joker de liaison de redstone",
@@ -305,6 +303,5 @@
 	"item.create_connected.vertical_brass_gearbox.tooltip.summary": "Une boîte à roues dentées où la direction de rotation des 4 côtés est _configurable_ de manière _indépendante_.",
 	"item.create_connected.vertical_parallel_gearbox": "Boîte à roues dentées parallèle verticale",
 	"item.create_connected.vertical_six_way_gearbox": "Boîte à roues dentées à 6 voies verticales",
-	"item.create_connected.vertical_six_way_gearbox.tooltip.summary": "Une boîte à roues dentées avec des rotors sur _tous les 6 côtés_. Tournant de haut en bas à _demi vitesse_.",
-	"itemGroup.create_connected.main": "Create: Connected"
+	"item.create_connected.vertical_six_way_gearbox.tooltip.summary": "Une boîte à roues dentées avec des rotors sur _tous les 6 côtés_. Tournant de haut en bas à _demi vitesse_."
 }

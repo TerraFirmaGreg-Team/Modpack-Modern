@@ -26,7 +26,7 @@
     {
       "type": "patchouli:spotlight",
       "item": "tag:tfc:powders",
-      "title": "Powders",
+      "title": "Порошки",
       "link_recipes": false,
       "text": "The Powder Bowl can hold up to 16 of a given powder. To insert items, $(item)$(k:key.use)$() while holding the powder. To extract items, $(item)$(k:key.use)$() with an empty hand.$(br2)$(item)$(k:key.sneak)$() allows extracting the entire contents of the bowl."
     },

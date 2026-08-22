@@ -113,7 +113,7 @@
     },
     {
       "type": "patchouli:empty",
-      "text": "$(thing)Relax$() is the default state of pets, and commanding them returns them to this state. If a pet it at home, it will wander around the property, but not leave, and sleep once a day. If it is too far from home, it will walk aimlessly.",
+      "text": "$(thing)Repos$() est l'état de base des animaux de compagnie, et leur ordonner les retourne à cet état. Si un animal est à la maison, il se baladera dans la propriété sans partir, et dormira une fois par jour. S'il est trop loin de la maison, il marchera sans but.",
       "draw_filler": false
     },
     {

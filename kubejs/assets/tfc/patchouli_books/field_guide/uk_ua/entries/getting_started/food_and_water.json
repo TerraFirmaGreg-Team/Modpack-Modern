@@ -30,7 +30,7 @@
         {
             "type": "patchouli:text",
             "text": "Підказка до їжі може виглядати так:$(br2)$(bold)Апельсин$()$(br)  $(2)$(bold)Термін придатності: 11:59 6 липня 1004 року (через 1 міс. та 1 дн.)$()$(br)  $(8)Поживність:$(br)  - Насичення: 2%$(br)  - Вода: 10%$(br)$(a)  - Фрукти: 0.5",
-            "title": "Nutrients"
+            "title": "Поживні речовини"
         },
         {
             "type": "patchouli:text",
@@ -64,12 +64,12 @@
         {
             "type": "tfc:knapping_recipe",
             "text": "$(l:getting_started/pottery)Обробка глини$() та випалювання $(l:getting_started/pottery#jug)глечика$() — це спосіб носити воду із собою. Наповнюй його, як відро, за допомогою $(item)$(k:key.use)$(). Утримування $(item)$(k:key.use)$() дозволяє пити воду.",
-            "title": "Thirst",
+            "title": "Спрага",
             "recipe": "tfc:clay_knapping/jug"
         },
         {
             "type": "patchouli:text",
-            "name": "Water Safety",
+            "name": "Безпечна вода",
             "text": "Ти також можеш пити з інших контейнерів, таких як $(l:waterflasks)фляги$() або $(l:mechanics/glassworking)скляні пляшки$(). Докладніше про контейнери для напоїв та їхні ефекти читай $(l:mechanics/drinks#containers)Тут$()."
         },
         {

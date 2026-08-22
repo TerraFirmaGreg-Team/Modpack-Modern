@@ -10,7 +10,7 @@
     {
       "type": "patchouli:multiblock",
       "multiblock_id": "tfc:crankshaft",
-      "name": "-",
+      "name": "",
       "text": "由$(l:mechanics/mechanical_power#axle)传动杆$()提供动力的$(thing)曲轴$()",
       "enable_visualize": false
     },

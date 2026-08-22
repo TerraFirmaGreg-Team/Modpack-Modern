@@ -141,12 +141,12 @@
 		},
 		{
 			"type": "patchouli:empty",
-			"name": "Rabbit",
+			"name": "兔",
 			"text": "The rabbit is known to chew on carrots and cabbage. They are ubiquitous in the world, changing their coat based on climate. They only need 15mm of $(l:the_world/climate#rainfall)rainfall$() to spawn."
 		},
 		{
 			"type": "patchouli:text",
-			"name": "Fox",
+			"name": "狐狸",
 			"text": "$(thing)Prey$() animals fear players and predators. They are adept at fleeing from danger, but generally cannot fight back. Some prey animals enjoy snacking on crops.",
 			"anchor": "prey",
 			"title": "Prey"
@@ -201,7 +201,7 @@
 			"type": "patchouli:entity",
 			"entity": "tfc:pheasant",
 			"scale": 0.7,
-			"name": "Peafowl",
+			"name": "孔雀",
 			"text": "The pheasant spawns in forests at any $(l:the_world/climate#temperature)temperature$() below 17°C and above -5°C, and $(l:the_world/climate#rainfall)rainfall$() between 100 and 300mm."
 		},
 		{
@@ -248,7 +248,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"name": "Cod",
+			"name": "鱈魚",
 			"text": "$(thing)Shore Animals$() only spawn on sea shores and spend some of their day swimming, and some walking on the beach. They are curious creatures, and will follow the player around, but cannot be tamed."
 		},
 		{
@@ -267,7 +267,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"name": "Tropical Fish",
+			"name": "熱帶魚",
 			"text": "$(thing)Fish$() are small creatures that swim in water. Most of them can be $(l:mechanics/fishing)fished$(). Some prefer oceans, rivers, or lakes.",
 			"title": "魚類"
 		},
@@ -316,7 +316,7 @@
 		},
 		{
 			"type": "patchouli:empty",
-			"name": "Horseshoe Crab",
+			"name": "鱟",
 			"text": "Horseshoe crabs spawn in oceans of moderate climate, $(l:the_world/climate#temperature)temperature$() between 10 and 21°C and with a $(l:the_world/climate#rainfall)rainfall$() of at most 400mm."
 		},
 		{
@@ -349,7 +349,7 @@
 		{
 			"type": "patchouli:entity",
 			"text": "Horseshoe crabs spawn in oceans of moderate climate, $(l:the_world/climate#temperature)temperature$() between 10 and 21°C and with a $(l:the_world/climate#rainfall)rainfall$() of at most 400mm.",
-			"title": "Squid",
+			"title": "魷魚",
 			"entity": "tfc:horseshoe_crab",
 			"scale": 0.7,
 			"name": "鱟"

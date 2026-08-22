@@ -12,13 +12,13 @@
 		},
 		{
 			"type": "patchouli:crafting",
-			"name": "Sulfur",
+			"name": "Enxofre",
 			"text": "Hellbricks are a building block that is also used for the $(l:beneath/hellforge)Hellforge$().",
 			"recipe": "tfg:shapeless/hellbricks"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"name": "Thatch",
+			"name": "Sapé",
 			"text": "The Pyroxenite Pedestal can be used to display items you want to show off!",
 			"item": "beneath:ancient_altar"
 		},

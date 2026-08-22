@@ -30,7 +30,7 @@
         {
             "type": "patchouli:text",
             "text": "食物的提示框可能看起来像这样：$(br2)$(bold)橙子$()$(br)  $(2)$(bold)腐烂于：1004年7月6日 11:59（1个月1天后）$()$(br)  $(8)营养：$(br)  - 饱食度：2%$(br)  - 水分：10%$(br)$(a)  - 水果：0.5",
-            "title": "Nutrients"
+            "title": "营养素"
         },
         {
             "type": "patchouli:text",
@@ -64,12 +64,12 @@
         {
             "type": "tfc:knapping_recipe",
             "text": "$(l:getting_started/pottery)捏制黏土$()并烧制一个$(l:getting_started/pottery#jug)陶壶$()是随身携带水的一种方法。像桶一样对着水按$(item)$(k:key.use)$()即可装水。按住$(item)$(k:key.use)$()可以喝水。",
-            "title": "Thirst",
+            "title": "干渴",
             "recipe": "tfc:clay_knapping/jug"
         },
         {
             "type": "patchouli:text",
-            "name": "Water Safety",
+            "name": "饮水安全",
             "text": "你也可以使用其他容器喝水，例如$(l:waterflasks)水壶$()或$(l:mechanics/glassworking)玻璃瓶$()。更多关于饮水容器及饮品效果的信息，请$(l:mechanics/drinks#containers)点击此处$()"
         },
         {

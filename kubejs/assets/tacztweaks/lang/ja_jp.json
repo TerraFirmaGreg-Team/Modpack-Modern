@@ -129,7 +129,6 @@
 	"tacztweaks.config.modifiers.standInaccuracy.name": "立ち状態精度調整",
 	"tacztweaks.config.modifiers.verticalRecoil.description": "銃の垂直反動を変更します。",
 	"tacztweaks.config.modifiers.verticalRecoil.name": "垂直反動調整",
-	"tacztweaks.config.title": "TaCZ Tweaks",
 	"tacztweaks.config.tweaks": "調整",
 	"tacztweaks.config.tweaks.alwaysFilterByHand.description": "ガンスミステーブルで常に「持っているアイテム」のフィルターを有効します。",
 	"tacztweaks.config.tweaks.alwaysFilterByHand.name": "常に持っているアイテムでフィルター",
@@ -156,7 +155,6 @@
 	"tacztweaks.config.tweaks.infiniteAmmoDisablesConsumption.description": "クリエイティブ弾薬箱などでプレイヤーの弾薬が無限な場合、弾の消費を無効にします。",
 	"tacztweaks.config.tweaks.infiniteAmmoDisablesConsumption.name": "無限弾薬で消費なし",
 	"tacztweaks.config.tweaks.rps.description": "銃のステータス表記のRPM（分間発射速度）をRPS（秒間発射速度）に置き換えます.",
-	"tacztweaks.config.tweaks.rps.name": "RPS",
 	"tacztweaks.config.tweaks.suppressFleshHitSounds.description": "ヘッドショット以外で命中させた時の音を無効にします。",
 	"tacztweaks.config.tweaks.suppressFleshHitSounds.name": "命中音を抑制",
 	"tacztweaks.config.tweaks.suppressHeadHitSounds.description": "ヘッドショットした時の音を無効にします。",
@@ -168,6 +166,5 @@
 	"tacztweaks.key.tiltGun": "銃を傾ける",
 	"tacztweaks.key.unload": "弾を抜く",
 	"tacztweaks.packs.filter": "フィルター",
-	"tacztweaks.property_diagrams.rps": "RPS",
 	"tacztweaks.search": "検索..."
 }

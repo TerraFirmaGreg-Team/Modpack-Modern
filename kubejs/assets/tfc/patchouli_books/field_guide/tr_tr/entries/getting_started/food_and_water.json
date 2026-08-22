@@ -30,7 +30,7 @@
         {
             "type": "patchouli:text",
             "text": "Bir yiyecek tooltip'i şöyle görünebilir:$(br2)$(bold)Portakal$()$(br) $(2)$(bold)Son kullanma: 11:59, 6 Temmuz 1004 (1 ay 1 gün sonra)$()$(br) $(8)Besin Değeri:$(br) - Doygunluk: 2%$(br) - Su: 10%$(br)$(a) - Meyve: 0.5",
-            "title": "Nutrients"
+            "title": "Besinler"
         },
         {
             "type": "patchouli:text",
@@ -64,12 +64,12 @@
         {
             "type": "tfc:knapping_recipe",
             "text": "$(l:getting_started/pottery)Yontarak$() ve pişirerek bir $(l:getting_started/pottery#jug)testi$() yapmak, yanında su taşımanın bir yoludur. Bir kova gibi $(item)$(k:key.use)$() ile doldurabilirsin. $(item)$(k:key.use)$() tuşunu basılı tutmak suyu içmeni sağlar.",
-            "title": "Thirst",
+            "title": "Susuzluk",
             "recipe": "tfc:clay_knapping/jug"
         },
         {
             "type": "patchouli:text",
-            "name": "Water Safety",
+            "name": "Su Güvenliği",
             "text": "Ayrıca $(l:waterflasks)Matara$() veya $(l:mechanics/glassworking)Cam Şişe$() gibi diğer kaplardan da içebilirsin. İçme kapları ve içecek etkileri hakkında daha fazla bilgiyi $(l:mechanics/drinks#containers)Burada$() bulabilirsin."
         },
         {

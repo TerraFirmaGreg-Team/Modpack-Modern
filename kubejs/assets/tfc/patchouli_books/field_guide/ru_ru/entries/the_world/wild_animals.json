@@ -134,19 +134,19 @@
 		{
 			"type": "patchouli:entity",
 			"text": "Бизон появляется на открытых равнинах при $(l:the_world/climate#temperature)температуре$() ниже 15°C и выше -10°C, а также при $(l:the_world/climate#rainfall)количестве осадков$() от 160 до 420 мм.",
-			"title": "Prey",
+			"title": "Добыча",
 			"entity": "tfg:bison",
 			"scale": 0.7,
 			"name": "Бизон"
 		},
 		{
 			"type": "patchouli:empty",
-			"name": "Rabbit",
-			"text": "The rabbit is known to chew on carrots and cabbage. They are ubiquitous in the world, changing their coat based on climate. They only need 15mm of $(l:the_world/climate#rainfall)rainfall$() to spawn."
+			"name": "Кролик",
+			"text": "Кролик известен тем, что грызёт морковь и капусту. Он встречается по всему миру, меняя окрас шерсти в зависимости от климата. Для появления ему требуется всего 15 мм $(l:the_world/climate#rainfall)осадков$()."
 		},
 		{
 			"type": "patchouli:text",
-			"name": "Fox",
+			"name": "Лиса",
 			"text": "$(thing)Добыча$() — это животные, которые боятся игроков и хищников. Они отлично умеют спасаться бегством от опасности, но, как правило, не могут дать отпор. Некоторые животные из категории добычи любят полакомиться посевами.",
 			"anchor": "prey",
 			"title": "Добыча"
@@ -201,7 +201,7 @@
 			"type": "patchouli:entity",
 			"entity": "tfc:pheasant",
 			"scale": 0.7,
-			"name": "Peafowl",
+			"name": "Павлин",
 			"text": "Фазан появляется в лесах при любой $(l:the_world/climate#temperature)температуре$() ниже 17°C и выше -5°C, а также при $(l:the_world/climate#rainfall)количестве осадков$() от 100 до 300 мм."
 		},
 		{
@@ -213,7 +213,7 @@
 		{
 			"type": "patchouli:entity",
 			"text": "Павлин появляется в лесах при любой $(l:the_world/climate#temperature)температуре$() выше 14°C и $(l:the_world/climate#rainfall)количестве осадков$() от 190 до 500 мм.",
-			"title": "Aquatic Animals",
+			"title": "Водные существа",
 			"entity": "tfc:peafowl",
 			"scale": 0.6,
 			"name": "Павлин"
@@ -248,7 +248,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"name": "Cod",
+			"name": "Треска",
 			"text": "$(thing)Прибрежные существа$() появляются только на морских берегах и проводят часть дня в воде, а часть — гуляя по пляжу. Это любопытные существа: они будут следовать за игроком, но приручить их нельзя."
 		},
 		{
@@ -267,7 +267,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"name": "Tropical Fish",
+			"name": "Тропическая рыба",
 			"text": "$(thing)Рыбы$() — это маленькие существа, которые плавают в воде. Большинство из них можно $(l:mechanics/fishing)выловить$(). Некоторые предпочитают океаны, реки или озёра.",
 			"title": "Рыба"
 		},
@@ -288,7 +288,7 @@
 		{
 			"type": "patchouli:entity",
 			"text": "Медуза обитает в более тёплых океанах, где $(l:the_world/climate#temperature)температура$() составляет не менее 18°C.",
-			"title": "Shellfish",
+			"title": "Ракообразные и моллюски",
 			"entity": "tfc:jellyfish",
 			"scale": 0.7,
 			"name": "Медуза"
@@ -316,8 +316,8 @@
 		},
 		{
 			"type": "patchouli:empty",
-			"name": "Horseshoe Crab",
-			"text": "Horseshoe crabs spawn in oceans of moderate climate, $(l:the_world/climate#temperature)temperature$() between 10 and 21°C and with a $(l:the_world/climate#rainfall)rainfall$() of at most 400mm."
+			"name": "Мечехвост",
+			"text": "Мечехвосты появляются в океанах умеренного климата, где $(l:the_world/climate#temperature)температура$() находится в диапазоне от 10 до 21°C, а $(l:the_world/climate#rainfall)количество осадков$() не превышает 400 мм."
 		},
 		{
 			"type": "patchouli:text",
@@ -349,7 +349,7 @@
 		{
 			"type": "patchouli:entity",
 			"text": "Мечехвосты появляются в океанах умеренного климата, где $(l:the_world/climate#temperature)температура$() находится в диапазоне от 10 до 21°C, а $(l:the_world/climate#rainfall)количество осадков$() не превышает 400 мм.",
-			"title": "Squid",
+			"title": "Спрут",
 			"entity": "tfc:horseshoe_crab",
 			"scale": 0.7,
 			"name": "Мечехвост"

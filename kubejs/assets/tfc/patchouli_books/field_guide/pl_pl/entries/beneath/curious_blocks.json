@@ -5,20 +5,20 @@
 	"pages": [
 		{
 			"type": "patchouli:crafting",
-			"name": "Soul Clay",
+			"name": "Glina dusz",
 			"text": "Aqueducts can also move lava and other fluids around, which may be useful when building the $(l:beneath/hellforge)Hellforge$().",
 			"anchor": "blackstone_aqueduct",
 			"recipe": "tfg:shaped/blackstone_aqueduct"
 		},
 		{
 			"type": "patchouli:crafting",
-			"name": "Sulfur",
+			"name": "Przypuszczalna siarka",
 			"text": "Hellbricks are a building block that is also used for the $(l:beneath/hellforge)Hellforge$().",
 			"recipe": "tfg:shapeless/hellbricks"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"name": "Thatch",
+			"name": "Strzecha",
 			"text": "Piroksenitowy piedestał świetnie nadaje się do prezentowania przedmiotów, którymi pragniesz się pochwalić!",
 			"item": "beneath:ancient_altar"
 		},

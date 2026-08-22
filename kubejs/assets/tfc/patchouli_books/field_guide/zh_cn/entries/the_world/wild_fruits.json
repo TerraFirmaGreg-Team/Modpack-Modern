@@ -1940,127 +1940,43 @@
           "text": ""
         },
         {
-          "text": "Jan"
+          "text": "1月"
         },
         {
-          "text": "Feb"
+          "text": "2月"
         },
         {
-          "text": "Mar"
+          "text": "3月"
         },
         {
-          "text": "Apr"
+          "text": "4月"
         },
         {
-          "text": "May"
+          "text": "5月"
         },
         {
-          "text": "Jun"
+          "text": "6月"
         },
         {
-          "text": "Jul"
+          "text": "7月"
         },
         {
-          "text": "Aug"
+          "text": "8月"
         },
         {
-          "text": "Sep"
+          "text": "9月"
         },
         {
-          "text": "Oct"
+          "text": "10月"
         },
         {
-          "text": "Nov"
+          "text": "11月"
         },
         {
-          "text": "Dec"
+          "text": "12月"
         },
         {
-          "text": "Cherry"
-        },
-        {
-          "fill": "0x6ab553"
-        },
-        {
-          "fill": "0x6ab553"
-        },
-        {
-          "fill": "0x6ab553"
-        },
-        {
-          "fill": "0xcca0db"
-        },
-        {
-          "fill": "0xcca0db"
-        },
-        {
-          "fill": "0xa217ff"
-        },
-        {
-          "fill": "0xa8986a"
-        },
-        {
-          "fill": "0xa8986a"
-        },
-        {
-          "fill": "0xa8986a"
-        },
-        {
-          "fill": "0xa8986a"
-        },
-        {
-          "fill": "0xa8986a"
-        },
-        {
-          "fill": "0xa8986a"
-        },
-        {
-          "text": "Apple"
-        },
-        {
-          "fill": "0xa8986a"
-        },
-        {
-          "fill": "0xa8986a"
-        },
-        {
-          "fill": "0x6ab553"
-        },
-        {
-          "fill": "0x6ab553"
-        },
-        {
-          "fill": "0x6ab553"
-        },
-        {
-          "fill": "0x6ab553"
-        },
-        {
-          "fill": "0x6ab553"
-        },
-        {
-          "fill": "0xcca0db"
-        },
-        {
-          "fill": "0xcca0db"
-        },
-        {
-          "fill": "0xa217ff"
-        },
-        {
-          "fill": "0xa8986a"
-        },
-        {
-          "fill": "0xa8986a"
-        },
-        {
-          "text": "Lemon"
-        },
-        {
-          "fill": "0xa8986a"
-        },
-        {
-          "fill": "0x6ab553"
+          "text": "樱桃"
         },
         {
           "fill": "0x6ab553"
@@ -2093,7 +2009,13 @@
           "fill": "0xa8986a"
         },
         {
-          "text": "Olive"
+          "fill": "0xa8986a"
+        },
+        {
+          "fill": "0xa8986a"
+        },
+        {
+          "text": "苹果"
         },
         {
           "fill": "0xa8986a"
@@ -2132,7 +2054,85 @@
           "fill": "0xa8986a"
         },
         {
-          "text": "Orange"
+          "text": "柠檬"
+        },
+        {
+          "fill": "0xa8986a"
+        },
+        {
+          "fill": "0x6ab553"
+        },
+        {
+          "fill": "0x6ab553"
+        },
+        {
+          "fill": "0x6ab553"
+        },
+        {
+          "fill": "0x6ab553"
+        },
+        {
+          "fill": "0xcca0db"
+        },
+        {
+          "fill": "0xcca0db"
+        },
+        {
+          "fill": "0xa217ff"
+        },
+        {
+          "fill": "0xa8986a"
+        },
+        {
+          "fill": "0xa8986a"
+        },
+        {
+          "fill": "0xa8986a"
+        },
+        {
+          "fill": "0xa8986a"
+        },
+        {
+          "text": "橄榄"
+        },
+        {
+          "fill": "0xa8986a"
+        },
+        {
+          "fill": "0xa8986a"
+        },
+        {
+          "fill": "0x6ab553"
+        },
+        {
+          "fill": "0x6ab553"
+        },
+        {
+          "fill": "0x6ab553"
+        },
+        {
+          "fill": "0x6ab553"
+        },
+        {
+          "fill": "0x6ab553"
+        },
+        {
+          "fill": "0xcca0db"
+        },
+        {
+          "fill": "0xcca0db"
+        },
+        {
+          "fill": "0xa217ff"
+        },
+        {
+          "fill": "0xa8986a"
+        },
+        {
+          "fill": "0xa8986a"
+        },
+        {
+          "text": "橙子"
         },
         {
           "fill": "0xa8986a"
@@ -2171,7 +2171,7 @@
           "fill": "0xa8986a"
         },
         {
-          "text": "Peach"
+          "text": "桃子"
         },
         {
           "fill": "0x6ab553"
@@ -2210,7 +2210,7 @@
           "fill": "0x6ab553"
         },
         {
-          "text": "Plum"
+          "text": "李子"
         },
         {
           "fill": "0x6ab553"
@@ -2249,7 +2249,7 @@
           "fill": "0xa8986a"
         },
         {
-          "text": "Banana"
+          "text": "香蕉"
         },
         {
           "fill": "0xa8986a"
@@ -2292,19 +2292,19 @@
       "title": "果树",
       "legend": [
         {
-          "text": "Dormant",
+          "text": "休眠",
           "color": "0xa8986a"
         },
         {
-          "text": "Healthy",
+          "text": "健康",
           "color": "0x6ab553"
         },
         {
-          "text": "Flowering",
+          "text": "开花",
           "color": "0xcca0db"
         },
         {
-          "text": "Fruiting",
+          "text": "结果",
           "color": "0xa217ff"
         }
       ],
@@ -3248,124 +3248,43 @@
           "text": ""
         },
         {
-          "text": "Jan"
+          "text": "1月"
         },
         {
-          "text": "Feb"
+          "text": "2月"
         },
         {
-          "text": "Mar"
+          "text": "3月"
         },
         {
-          "text": "Apr"
+          "text": "4月"
         },
         {
-          "text": "May"
+          "text": "5月"
         },
         {
-          "text": "Jun"
+          "text": "6月"
         },
         {
-          "text": "Jul"
+          "text": "7月"
         },
         {
-          "text": "Aug"
+          "text": "8月"
         },
         {
-          "text": "Sep"
+          "text": "9月"
         },
         {
-          "text": "Oct"
+          "text": "10月"
         },
         {
-          "text": "Nov"
+          "text": "11月"
         },
         {
-          "text": "Dec"
+          "text": "12月"
         },
         {
-          "text": "Snowberry"
-        },
-        {
-          "fill": "0xa8986a"
-        },
-        {
-          "fill": "0xa8986a"
-        },
-        {
-          "fill": "0x6ab553"
-        },
-        {
-          "fill": "0x6ab553"
-        },
-        {
-          "fill": "0x6ab553"
-        },
-        {
-          "fill": "0x6ab553"
-        },
-        {
-          "fill": "0xcca0db"
-        },
-        {
-          "fill": "0xcca0db"
-        },
-        {
-          "fill": "0xa217ff"
-        },
-        {
-          "fill": "0xa8986a"
-        },
-        {
-          "fill": "0xa8986a"
-        },
-        {
-          "fill": "0xa8986a"
-        },
-        {
-          "text": "Bunchberry"
-        },
-        {
-          "fill": "0xa8986a"
-        },
-        {
-          "fill": "0xa8986a"
-        },
-        {
-          "fill": "0xa8986a"
-        },
-        {
-          "fill": "0xa8986a"
-        },
-        {
-          "fill": "0x6ab553"
-        },
-        {
-          "fill": "0x6ab553"
-        },
-        {
-          "fill": "0x6ab553"
-        },
-        {
-          "fill": "0xcca0db"
-        },
-        {
-          "fill": "0xcca0db"
-        },
-        {
-          "fill": "0xa217ff"
-        },
-        {
-          "fill": "0xa8986a"
-        },
-        {
-          "fill": "0xa8986a"
-        },
-        {
-          "text": "Gooseberry"
-        },
-        {
-          "fill": "0xa8986a"
+          "text": "雪莓"
         },
         {
           "fill": "0xa8986a"
@@ -3401,7 +3320,88 @@
           "fill": "0xa8986a"
         },
         {
-          "text": "Cloudberry"
+          "fill": "0xa8986a"
+        },
+        {
+          "text": "御膳橘"
+        },
+        {
+          "fill": "0xa8986a"
+        },
+        {
+          "fill": "0xa8986a"
+        },
+        {
+          "fill": "0xa8986a"
+        },
+        {
+          "fill": "0xa8986a"
+        },
+        {
+          "fill": "0x6ab553"
+        },
+        {
+          "fill": "0x6ab553"
+        },
+        {
+          "fill": "0x6ab553"
+        },
+        {
+          "fill": "0xcca0db"
+        },
+        {
+          "fill": "0xcca0db"
+        },
+        {
+          "fill": "0xa217ff"
+        },
+        {
+          "fill": "0xa8986a"
+        },
+        {
+          "fill": "0xa8986a"
+        },
+        {
+          "text": "鹅莓"
+        },
+        {
+          "fill": "0xa8986a"
+        },
+        {
+          "fill": "0xa8986a"
+        },
+        {
+          "fill": "0xa8986a"
+        },
+        {
+          "fill": "0x6ab553"
+        },
+        {
+          "fill": "0x6ab553"
+        },
+        {
+          "fill": "0x6ab553"
+        },
+        {
+          "fill": "0x6ab553"
+        },
+        {
+          "fill": "0xcca0db"
+        },
+        {
+          "fill": "0xcca0db"
+        },
+        {
+          "fill": "0xa217ff"
+        },
+        {
+          "fill": "0xa8986a"
+        },
+        {
+          "fill": "0xa8986a"
+        },
+        {
+          "text": "云莓"
         },
         {
           "fill": "0xa8986a"
@@ -3440,7 +3440,7 @@
           "fill": "0xa8986a"
         },
         {
-          "text": "Strawberry"
+          "text": "草莓"
         },
         {
           "fill": "0xcca0db"
@@ -3479,7 +3479,7 @@
           "fill": "0x6ab553"
         },
         {
-          "text": "Wintergreen"
+          "text": "冬青莓"
         },
         {
           "fill": "0xa8986a"
@@ -3518,7 +3518,7 @@
           "fill": "0xa8986a"
         },
         {
-          "text": "Cranberry"
+          "text": "蔓越莓"
         },
         {
           "fill": "0xa8986a"
@@ -3561,19 +3561,19 @@
       "title": "结果灌木丛",
       "legend": [
         {
-          "text": "Dormant",
+          "text": "休眠",
           "color": "0xa8986a"
         },
         {
-          "text": "Healthy",
+          "text": "健康",
           "color": "0x6ab553"
         },
         {
-          "text": "Flowering",
+          "text": "开花",
           "color": "0xcca0db"
         },
         {
-          "text": "Fruiting",
+          "text": "结果",
           "color": "0xa217ff"
         }
       ],
