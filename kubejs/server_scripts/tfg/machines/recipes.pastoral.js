@@ -45,13 +45,13 @@ function registerTFGPastoralRecipes(event) {
         .duration(20 * 5)
         .EUt(GTValues.VA[GTValues.LV])
         .circuit(6)
-    TFGRecipeSchemaBindings.animalPresent(sniffer_wool, 'producing')
+    TFGRecipeSchemaBindings.animalPresentEntity(sniffer_wool, 'tfg:sniffer')
 
     let wraptor_wool = event.recipes.gtceu.pastoral_engine('tfg:shear_wraptor')
         .itemOutputs(Item.of('tfg:wraptor_wool'))
         .duration(20 * 5)
         .EUt(GTValues.VA[GTValues.LV])
         .circuit(7)
-    TFGRecipeSchemaBindings.animalPresent(wraptor_wool, 'producing')
+    TFGRecipeSchemaBindings.animalPresentEntity(wraptor_wool, 'tfg:wraptor')
 
 }
