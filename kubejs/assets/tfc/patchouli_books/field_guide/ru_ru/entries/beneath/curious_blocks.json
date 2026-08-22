@@ -12,13 +12,13 @@
 		},
 		{
 			"type": "patchouli:crafting",
-			"name": "Sulfur",
+			"name": "Сера",
 			"text": "Адские кирпичи — это строительный блок, который используется для $(l:beneath/hellforge)Адской кузницы$().",
 			"recipe": "tfg:shapeless/hellbricks"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"name": "Thatch",
+			"name": "Сноп соломы",
 			"text": "Пироксенитовый пьедестал можно использовать для отображения предметов, которые вы хотите продемонстрировать!",
 			"item": "beneath:ancient_altar"
 		},

@@ -23,7 +23,7 @@
 		{
 			"type": "tfc:rock_knapping_recipe",
 			"text": "首先，如上圖$(thing)打製石器$()製作$(thing)石鋤$()。",
-			"title": "Growing Crops",
+			"title": "種植作物",
 			"recipes": [
 				"tfg:rock_knapping/stone_hoe_head_1"
 			]
@@ -632,7 +632,7 @@
 		},
 		{
 			"type": "tfc:multimultiblock",
-			"text": "種植水稻種子的方塊必須$(thing)含水$()。",
+			"text": "Note: in order to grow, the rice block must be $(thing)Waterlogged$().",
 			"multiblocks": [
 				{
 					"pattern": [
@@ -1253,7 +1253,7 @@
 		},
 		{
 			"type": "tfc:multimultiblock",
-			"text": "需要插木棍才能使作物充分生長。",
+			"text": "The stick is required in order for the crop to fully grow.",
 			"multiblocks": [
 				{
 					"pattern": [
@@ -2677,7 +2677,7 @@
 		},
 		{
 			"type": "tfc:multimultiblock",
-			"text": "需要插木棍才能使作物充分生長。",
+			"text": "The stick is required in order for the crop to fully grow.",
 			"multiblocks": [
 				{
 					"pattern": [

@@ -646,7 +646,7 @@
           "X": "tfc:ore/lignite/dolomite"
         }
       },
-      "name": "-",
+      "name": "",
       "text": "白雲石中的褐煤。",
       "enable_visualize": false
     },
@@ -673,7 +673,7 @@
           "X": "tfc:ore/bituminous_coal/chert"
         }
       },
-      "name": "-",
+      "name": "",
       "text": "矽質岩中的煙煤。",
       "enable_visualize": false
     },
@@ -782,7 +782,7 @@
           "X": "tfc:ore/graphite/gneiss"
         }
       },
-      "name": "-",
+      "name": "",
       "text": "片麻岩中的石墨。",
       "enable_visualize": false
     },
@@ -809,7 +809,7 @@
           "X": "tfc:ore/cinnabar/quartzite"
         }
       },
-      "name": "-",
+      "name": "",
       "text": "石英岩中的硃砂。",
       "enable_visualize": false
     },
@@ -836,7 +836,7 @@
           "X": "tfc:ore/cryolite/granite"
         }
       },
-      "name": "-",
+      "name": "",
       "text": "花崗岩中的冰晶石。",
       "enable_visualize": false
     },
@@ -863,7 +863,7 @@
           "X": "tfc:ore/saltpeter/shale"
         }
       },
-      "name": "-",
+      "name": "",
       "text": "頁岩中的硝石。",
       "enable_visualize": false
     },
@@ -890,7 +890,7 @@
           "X": "tfc:ore/sulfur/gabbro"
         }
       },
-      "name": "-",
+      "name": "",
       "text": "輝長岩中的硫磺。",
       "enable_visualize": false
     },
@@ -917,7 +917,7 @@
           "X": "tfc:ore/sylvite/chert"
         }
       },
-      "name": "-",
+      "name": "",
       "text": "矽質岩中的鉀鹽",
       "enable_visualize": false
     },
@@ -944,7 +944,7 @@
           "X": "tfc:ore/borax/shale"
         }
       },
-      "name": "-",
+      "name": "",
       "text": "頁岩中的硼砂。",
       "enable_visualize": false
     },
@@ -971,7 +971,7 @@
           "X": "tfc:ore/gypsum/chalk"
         }
       },
-      "name": "-",
+      "name": "",
       "text": "白堊巖中的石膏。",
       "enable_visualize": false
     },
@@ -998,7 +998,7 @@
           "X": "tfc:ore/halite/chalk"
         }
       },
-      "name": "-",
+      "name": "",
       "text": "白堊巖中的石鹽。",
       "enable_visualize": false
     },
@@ -1025,7 +1025,7 @@
           "X": "tfc:ore/emerald/diorite"
         }
       },
-      "name": "-",
+      "name": "",
       "text": "閃長巖中的祖母綠。",
       "enable_visualize": false
     },
@@ -1052,7 +1052,7 @@
           "X": "tfc:ore/diamond/gabbro"
         }
       },
-      "name": "-",
+      "name": "",
       "text": "輝長岩中的金伯利岩。",
       "enable_visualize": false
     },
@@ -1079,7 +1079,7 @@
           "X": "tfc:ore/lapis_lazuli/marble"
         }
       },
-      "name": "-",
+      "name": "",
       "text": "大理岩中的青金石。",
       "enable_visualize": false
     },
@@ -1106,7 +1106,7 @@
           "X": "tfc:ore/amethyst/marble"
         }
       },
-      "name": "-",
+      "name": "",
       "text": "大理岩中的紫水晶。",
       "enable_visualize": false
     },
@@ -1133,7 +1133,7 @@
           "X": "tfc:ore/opal/basalt"
         }
       },
-      "name": "-",
+      "name": "",
       "text": "玄武岩中的蛋白石。",
       "enable_visualize": false
     }

@@ -30,7 +30,7 @@
         {
             "type": "patchouli:text",
             "text": "A food tooltip may look like:$(br2)$(bold)Orange$()$(br)  $(2)$(bold)Expires on: 11:59 July 6, 1004 (in 1 month(s) and 1 day(s))$()$(br)  $(8)Nutrition:$(br)  - Saturation: 2%$(br)  - Water: 10%$(br)$(a)  - Fruit: 0.5",
-            "title": "Nutrients"
+            "title": "Składniki odżywcze"
         },
         {
             "type": "patchouli:text",
@@ -64,12 +64,12 @@
         {
             "type": "tfc:knapping_recipe",
             "text": "$(l:getting_started/pottery)Knapping$() and firing a $(l:getting_started/pottery#jug)jug$() is a way to carry water with you. Fill it like a bucket with $(item)$(k:key.use)$(). Holding $(item)$(k:key.use)$() drinks the water.",
-            "title": "Thirst",
+            "title": "Pragnienie",
             "recipe": "tfc:clay_knapping/jug"
         },
         {
             "type": "patchouli:text",
-            "name": "Water Safety",
+            "name": "Bezpieczna woda",
             "text": "You can also drink out of other containers such as $(l:waterflasks)Flasks$() or $(l:mechanics/glassworking)Glass Bottles$(). Read more about drinking containers and drink effects $(l:mechanics/drinks#containers)Here$()"
         },
         {

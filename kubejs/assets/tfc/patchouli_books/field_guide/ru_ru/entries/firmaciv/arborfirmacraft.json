@@ -1,37 +1,37 @@
 {
-    "name": "ArborFirmaCraft",
-    "category": "tfc:firmaciv",
-    "icon": "afc:wood/sapling/weeping_maple",
-    "flag": "mod:afc",
-    "read_by_default": true,
-    "sortnum": 100,
-    "pages": [
-        {
-            "type": "patchouli:text",
-            "text": "Если во время своих путешествий вы встретите деревья Компассии или Инжира, вам будет приятно узнать, что из них можно создавать $(l:firmaciv/watercraft)Лодки$() так же, как и из любого другого вида древесины."
-        },
-        {
-            "type": "patchouli:empty"
-        },
-        {
-            "type": "patchouli:spotlight",
-            "title": "Мягкие породы древесины",
-            "text": "Мягкие породы имеют достаточно мягкую древесину и кору, благодаря чему они идеально подходят для создания $(l:firmaciv/canoe)Долблёных каноэ$()",
-            "item": "afc:wood/stripped_log/tualang,afc:wood/stripped_log/fig,afc:wood/stripped_log/cypress"
-        },
-        {
-            "type": "patchouli:text",
-            "text": "$(li)Компассия$() $(li)Инжир$() $(li)Кипарис$()"
-        },
-        {
-            "type": "patchouli:spotlight",
-            "title": "Твёрдые породы древесины",
-            "text": "Известные своей исключительной прочностью, твёрдые породы древесины идеально подходят для создания более крупных и сложных водных судов, таких как $(l:firmaciv/rowboat)Гребные Лодки$() и $(l:firmaciv/sloop)Шлюпы$()",
-            "item": "afc:wood/planks/baobab,afc:wood/planks/eucalyptus,afc:wood/planks/mahogany,afc:wood/planks/hevea,afc:wood/planks/teak,afc:wood/planks/ironwood,afc:wood/planks/ipe"
-        },
-        {
-            "type": "patchouli:text",
-            "text": "$(li)Баобаб$() $(li)Эвкалипт$() $(li)Махагония$() $(li)Гевея$() $(li)Тиковое Дерево$() $(li)Железное Дерево$() $(li)Ипе$()"
-        }
-    ]
+  "name": "ArborFirmaCraft",
+  "category": "tfc:firmaciv",
+  "icon": "afc:wood/sapling/weeping_maple",
+  "flag": "mod:afc",
+  "read_by_default": true,
+  "sortnum": 100,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Если во время своих путешествий вы встретите деревья Компассии или Инжира, вам будет приятно узнать, что из них можно создавать $(l:firmaciv/watercraft)Лодки$() так же, как и из любого другого вида древесины."
+    },
+    {
+      "type": "patchouli:empty"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "title": "Мягкие породы древесины",
+      "text": "Мягкие породы имеют достаточно мягкую древесину и кору, благодаря чему они идеально подходят для создания $(l:firmaciv/canoe)Долблёных каноэ$()",
+      "item": "afc:wood/stripped_log/tualang,afc:wood/stripped_log/fig,afc:wood/stripped_log/cypress"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(li)Компассия$() $(li)Инжир$() $(li)Кипарис$()"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "title": "Твёрдые породы древесины",
+      "text": "Известные своей исключительной прочностью, твёрдые породы древесины идеально подходят для создания более крупных и сложных водных судов, таких как $(l:firmaciv/rowboat)Гребные Лодки$() и $(l:firmaciv/sloop)Шлюпы$()",
+      "item": "afc:wood/planks/baobab,afc:wood/planks/eucalyptus,afc:wood/planks/mahogany,afc:wood/planks/hevea,afc:wood/planks/teak,afc:wood/planks/ironwood,afc:wood/planks/ipe"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(li)Баобаб$() $(li)Эвкалипт$() $(li)Махагония$() $(li)Гевея$() $(li)Тиковое Дерево$() $(li)Железное Дерево$() $(li)Ипе$()"
+    }
+  ]
 }

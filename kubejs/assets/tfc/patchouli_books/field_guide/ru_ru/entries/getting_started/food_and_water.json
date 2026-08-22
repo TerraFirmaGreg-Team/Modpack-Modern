@@ -30,7 +30,7 @@
         {
             "type": "patchouli:text",
             "text": "Подсказка еды может выглядеть так:$(br2)$(bold)Апельсин$()$(br)  $(2)$(bold)Испортится: 11:59, 6 июля 1004 г. (через 1 месяц(ев) и 1 день(дней))$()$(br)  $(8)Питание:$(br)  - Насыщение: 2%$(br)  - Вода: 10%$(br)$(a)  - Фрукты: 0.5",
-            "title": "Nutrients"
+            "title": "Питательные вещества"
         },
         {
             "type": "patchouli:text",
@@ -64,12 +64,12 @@
         {
             "type": "tfc:knapping_recipe",
             "text": "$(l:getting_started/pottery)Лепка из глины$() и обжиг $(l:getting_started/pottery#jug)Кувшина$() это способ носить воду с собой. Ты можешь наполнить кувшин прямо как ведро используя $(item)$(k:key.use)$().\nДержи $(item)$(k:key.use)$() для питья воды.",
-            "title": "Thirst",
+            "title": "Жажда",
             "recipe": "tfc:clay_knapping/jug"
         },
         {
             "type": "patchouli:text",
-            "name": "Water Safety",
+            "name": "Безопасность воды",
             "text": "Ты также можешь пить из других контейнеров: $(l:waterflasks)Фляги$() или\n$(l:mechanics/glassworking)Пузырьки$(). Тебе стоит прочитать о хранении воды и эффектах алкоголя $(l:mechanics/drinks#containers)Здесь$()"
         },
         {

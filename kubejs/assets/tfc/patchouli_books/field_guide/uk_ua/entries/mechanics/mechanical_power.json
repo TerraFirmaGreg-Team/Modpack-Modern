@@ -15,7 +15,7 @@
       "type": "patchouli:text",
       "anchor": "windmill",
       "text": "$(thing)Windmills$() are a way of harnessing the power of the wind to rotate an $(l:mechanics/mechanical_power#axle)Axle$(). They are large, and require a completely unobstructed area of 13 x 13 x 1 to be placed. In order to create one, you will first need an $(thing)Axle$(), and then you will need one or more $(thing)Windmill Blades$()",
-      "title": "Windmills"
+      "title": "Вітряки"
     },
     {
       "type": "patchouli:crafting",
@@ -37,7 +37,7 @@
       "type": "patchouli:text",
       "anchor": "water_wheel",
       "text": "$(thing)Water Wheels$() are a way of harnessing the power of flowing water in $(3)Rivers$() in order to generate power. When placed optimally, they can rotate at some of the fastest possible speeds available.$(br2)A water wheel requires a 5 x 5 x 1 area of space to be placed. Note that the water wheel may break if there are any obstructions in the area around it,",
-      "title": "Water Wheels"
+      "title": "Водяні млини"
     },
     {
       "type": "patchouli:crafting",
@@ -83,7 +83,7 @@
     {
       "type": "patchouli:crafting",
       "recipe": "tfc:crafting/wood/oak_clutch",
-      "title": "Clutch",
+      "title": "Зчеплення",
       "text": "A $(thing)Clutch$() is a way of controlling a rotational network via $(c)Redstone$(). It is an $(l:mechanics/mechanical_power#axle)Encased Axle$(), which disconnects when powered, allowing rotation to pass through only when unpowered."
     },
     {
@@ -111,7 +111,7 @@
       "type": "patchouli:text",
       "anchor": "trip_hammer",
       "text": "Another mechanical device is the $(thing)Trip Hammer$(). The Trip Hammer automatically performs smithing on an $(l:mechanics/anvils)Anvil$(). The Trip Hammer needs a $(thing)Bladed Axle$() to work. The Bladed Axle works like a regular axle, but has a blade on it that is used to activate the hammer.",
-      "title": "Trip Hammer"
+      "title": "Відбійний молоток"
     },
     {
       "type": "patchouli:crafting",

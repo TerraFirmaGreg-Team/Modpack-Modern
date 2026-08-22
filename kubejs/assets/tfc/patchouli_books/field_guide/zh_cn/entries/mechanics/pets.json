@@ -36,7 +36,7 @@
     },
     {
       "type": "tfc:table",
-      "text": "负责任的宠物主人需要学习如何管理自己的宠物。好在这并不是件难事。在空手的状态下按住$(item)$(k:key.sneak)$()并按下$(item)$(k:key.use)$()就可以打开$(thing)宠物面板$()。这个面板包含了一系列可以命令宠物做的事情，例如$(thing)休息$()、$(thing)我们到家了$()、$(thing)坐下$()、$(thing)跟着我$()、以及$(thing)跟我打猎$()。",
+      "text": "Responsible pet owners must learn to control their pet. Luckily, this is easy. By pressing $(item)$(k:key.use)$() while holding $(item)$(k:key.sneak)$() with an empty hand, the $(thing)Pet Screen$() may be opened. This screen contains a number of commands that can be used to tell the pet what to do: $(thing)Relax$(), $(thing)We're Home$(), $(thing)Sit$(), $(thing)Follow Me$(), and $(thing)Hunt With Me$().",
       "strings": [
         {
           "text": "变种",
@@ -113,7 +113,7 @@
     },
     {
       "type": "patchouli:empty",
-      "text": "$(thing)Relax$() is the default state of pets, and commanding them returns them to this state. If a pet it at home, it will wander around the property, but not leave, and sleep once a day. If it is too far from home, it will walk aimlessly.",
+      "text": "$(thing)放松$()是宠物的默认状态，下达此指令可使其恢复该状态。如果宠物在家附近，它会在领地内漫步但不离开，并每天睡一次觉。如果离家太远，它会漫无目的地行走。",
       "draw_filler": false
     },
     {
