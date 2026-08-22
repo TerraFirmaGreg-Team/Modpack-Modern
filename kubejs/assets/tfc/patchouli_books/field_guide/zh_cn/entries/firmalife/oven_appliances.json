@@ -1,0 +1,77 @@
+{
+  "name": "烤炉配件",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:vat",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l:firmalife/ovens)烤炉$()有多种设备可以与其交互，从而扩展其功能。这是因为烤炉在现实中本就是模块化的。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/oven_hopper",
+      "text": "$(thing)烤炉漏斗$()会向其朝向的任何$(thing)烤炉底$()输入原木。它最多可容纳16根原木（4组，每组4根，类似一个原木堆），通过从顶部丢入物品来填充其物品栏，也可以通过其他模组的自动化设备输入。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/ashtray",
+      "text": "$(thing)炉灰收集器$()放置在$(thing)烤炉底$()下方时，会收集$(thing)草木灰$()。当燃料消耗时，有50%的几率获得草木灰。通过$(item)$(k:key.use)$()可以取出草木灰，通过攻击（左键点击）可以放入草木灰。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "anchor": "vat",
+      "recipe": "firmalife:crafting/vat",
+      "text": "$(thing)不锈钢锅$()能够批量制作某些特定的煮沸配方。它有一个物品槽位和10,000mB的流体存储空间，类似于一个大木桶。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "例如，不锈钢锅可以用1份橄榄酱与200mB水的比例制作$(thing)橄榄油/水$()。要使用不锈钢锅，手持流体与物品对其$(item)$(k:key.use)$()，将其添加到锅中。空手并按住$(item)$(k:key.sneak)$()点击，可以密封或解封不锈钢锅。不锈钢锅在被密封之前不会沸腾。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "不锈钢锅应放置在$(thing)烤炉底$()上方。如果配方完成时锅中的流体会溢出，则会停止沸腾，因此请确保不要装得太满——尤其是那些产出流体多于消耗的配方！不锈钢锅可以用$(thing)红石$()控制打开或关闭。"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "Y"
+          ],
+          [
+            "0"
+          ]
+        ],
+        "mapping": {
+          "X": "firmalife:vat",
+          "Y": "firmalife:cured_oven_bottom"
+        }
+      },
+      "name": "",
+      "text": "",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/jarring_station",
+      "text": "$(thing)装罐台$()用于将不锈钢锅中的流体装入罐子中。装罐台侧面的注嘴必须对准装罐台方向放置。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "使用不锈钢锅时，将甜味剂加入水中可制成糖水。随后加入水果便能生产$(thing)果酱$()。用$(thing)带盖空罐$()点击即可完成装罐。注意：若通过管道进行多次转移，可能导致果酱变质！"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "使用$(item)$(k:key.use)$()将带盖的空罐添加到装罐台。当检测到果酱时，它会自动将空罐子填充为$(thing)果酱$()并密封，每罐需要消耗500mB果酱。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "群峦传说模组的陶锅与烤架可放置于$(thing)烤炉底$()上方，它们会自动从烤炉底获取热量。不过，放置在此的陶锅仅能用于制作汤，无法执行常规的陶锅配方。"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 15
+}

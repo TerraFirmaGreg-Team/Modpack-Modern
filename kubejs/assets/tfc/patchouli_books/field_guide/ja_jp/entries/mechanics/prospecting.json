@@ -1,5 +1,4 @@
 {
-  "__comment__": "This file was automatically created by mcresources",
   "name": "探鉱",
   "category": "tfc:mechanics",
   "icon": "tfc:metal/propick/wrought_iron",
@@ -30,22 +29,22 @@
     },
     {
       "type": "patchouli:image",
+      "text": "探鉱槌使用時の表示の例です。大きな$(bold)\"！\"$()の表示は鉱脈の位置を示しており、小さな$(bold)\"！\"$()は各鉱石の位置を示しています。",
       "title": "探鉱表示",
       "images": [
         "tfg:textures/gui/field_guide/prospecting/tfg_prospectors_pick_xray.png"
       ],
-      "border": true,
-      "text": "探鉱槌使用時の表示の例です。大きな$(bold)\"！\"$()の表示は鉱脈の位置を示しており、小さな$(bold)\"！\"$()は各鉱石の位置を示しています。"
+      "border": true
     },
     {
       "type": "tfc:knapping_recipe",
-      "recipe": "tfc:clay_knapping/propick_head_mold",
-      "text": "探鉱槌を作成するには、他のツールと同じように、粘土を$(l:getting_started/pottery)ナッピング$()して探鉱槌の頭の型を作る必要があります。"
+      "text": "探鉱槌を作成するには、他のツールと同じように、粘土を$(l:getting_started/pottery)ナッピング$()して探鉱槌の頭の型を作る必要があります。",
+      "recipe": "tfc:clay_knapping/propick_head_mold"
     },
     {
       "type": "tfc:heat_recipe",
-      "recipe": "tfc:heating/propick_head_mold",
-      "text": "未焼成の型を$(l:getting_started/pottery)ナッピング$()で作成した後、それを$(l:mechanics/heating)焼成$()して$(item)探鉱槌の頭の型$()に仕上げます。$(br2)その後、溶融した金属をその型へ流し込んで探鉱槌の頭を$(l:getting_started/finding_ores#casting)鋳造$()します。"
+      "text": "未焼成の型を$(l:getting_started/pottery)ナッピング$()で作成した後、それを$(l:mechanics/heating)焼成$()して$(item)探鉱槌の頭の型$()に仕上げます。$(br2)その後、溶融した金属をその型へ流し込んで探鉱槌の頭を$(l:getting_started/finding_ores#casting)鋳造$()します。",
+      "recipe": "tfc:heating/propick_head_mold"
     },
     {
       "type": "tfc:anvil_recipe",

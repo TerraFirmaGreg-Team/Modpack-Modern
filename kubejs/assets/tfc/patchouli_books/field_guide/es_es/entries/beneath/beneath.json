@@ -2,7 +2,6 @@
 	"name": "What is the Beneath?",
 	"category": "tfc:beneath",
 	"icon": "minecraft:deepslate",
-	"priority": true,
 	"pages": [
 		{
 			"type": "patchouli:text",
@@ -23,5 +22,6 @@
 			"text": "To return, stand directly below ceiling bedrock in the same fashion.$(br2)It's a good idea to $(thing)make a note$() of where you entered, so you can return to the same place in the overworld whenever you're ready to leave."
 		}
 	],
-	"read_by_default": true
+	"read_by_default": true,
+	"priority": true
 }

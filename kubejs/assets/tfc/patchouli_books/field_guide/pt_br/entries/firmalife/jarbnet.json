@@ -1,0 +1,17 @@
+{
+  "name": "Estante de Potes",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:wood/jarbnet/pine",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "A estante de potes é um bloco de armazenamento cosmético para $(l:tfc:mechanics/jarring)Potes$(), Velas e Jarros. Ele pode ser aberto e fechado clicando com a mão vazia e pressionando $(item)$(k:key.sneak)$(). Se houver velas dentro, ele pode ser aceso para produzir uma pequena quantidade de luz."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/wood/acacia_jarbnet"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 6
+}

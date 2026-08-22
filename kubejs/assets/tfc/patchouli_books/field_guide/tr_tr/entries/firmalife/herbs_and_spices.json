@@ -1,5 +1,4 @@
 {
-	"__comment__": "This file was automatically created by mcresources",
 	"name": "Bitkiler ve Baharatlar",
 	"category": "tfc:firmalife",
 	"icon": "firmalife:spice/basil_leaves",
@@ -10,6 +9,7 @@
 		},
 		{
 			"type": "tfc:multimultiblock",
+			"text": "$(thing)Yaban Fesleğeni$(), 12-25°C sıcaklık ve 300-500 mm yağış arasında yetişir.",
 			"multiblocks": [
 				{
 					"pattern": [
@@ -39,11 +39,13 @@
 				}
 			],
 			"name": "Fesleğen",
-			"text": "$(thing)Yaban Fesleğeni$(), 12-25°C sıcaklık ve 300-500 mm yağış arasında yetişir.",
 			"enable_visualize": false
 		},
 		{
 			"type": "tfc:multimultiblock",
+			"name": "Yaban Defnesi",
+			"text": "$(thing)Yaban Defnesi$() 8 ile 14°C sıcaklık ve 25 ila 225 mm yağış alan yerlerde yetişir.",
+			"enable_visualize": false,
 			"multiblocks": [
 				{
 					"pattern": [
@@ -71,13 +73,11 @@
 						"X": "firmalife:plant/bay_laurel[stage=1]"
 					}
 				}
-			],
-			"name": "Yaban Defnesi",
-			"text": "$(thing)Yaban Defnesi$() 8 ile 14°C sıcaklık ve 25 ila 225 mm yağış alan yerlerde yetişir.",
-			"enable_visualize": false
+			]
 		},
 		{
 			"type": "tfc:multimultiblock",
+			"text": "$(thing)Yaban Kakulesi$() 18 ile 30°C sıcaklık ve 350 ila 500 mm yağış alan yerlerde yetişir.",
 			"multiblocks": [
 				{
 					"pattern": [
@@ -107,11 +107,13 @@
 				}
 			],
 			"name": "Kakule",
-			"text": "$(thing)Yaban Kakulesi$() 18 ile 30°C sıcaklık ve 350 ila 500 mm yağış alan yerlerde yetişir.",
 			"enable_visualize": false
 		},
 		{
 			"type": "tfc:multimultiblock",
+			"name": "Kişniş",
+			"text": "$(thing)Yaban Kişnişi$() 5 ile 15°C sıcaklık ve 0 ila 150 mm yağış alan yerlerde yetişir.",
+			"enable_visualize": false,
 			"multiblocks": [
 				{
 					"pattern": [
@@ -139,13 +141,11 @@
 						"X": "firmalife:plant/cilantro[stage=1]"
 					}
 				}
-			],
-			"name": "Kişniş",
-			"text": "$(thing)Yaban Kişnişi$() 5 ile 15°C sıcaklık ve 0 ila 150 mm yağış alan yerlerde yetişir.",
-			"enable_visualize": false
+			]
 		},
 		{
 			"type": "tfc:multimultiblock",
+			"text": "$(thing)Yaban Kimyonu$() 6 ile 20°C sıcaklık ve 50 ila 250 mm yağış alan yerlerde yetişir.",
 			"multiblocks": [
 				{
 					"pattern": [
@@ -175,7 +175,6 @@
 				}
 			],
 			"name": "Kimyon",
-			"text": "$(thing)Yaban Kimyonu$() 6 ile 20°C sıcaklık ve 50 ila 250 mm yağış alan yerlerde yetişir.",
 			"enable_visualize": false
 		},
 		{

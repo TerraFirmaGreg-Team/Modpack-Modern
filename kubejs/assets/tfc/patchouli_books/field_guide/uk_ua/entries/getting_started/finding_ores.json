@@ -1,5 +1,4 @@
 {
-  "__comment__": "This file was automatically created by mcresources",
   "name": "Руди, Метали та Лиття",
   "category": "tfc:getting_started",
   "icon": "tfc:ore/normal_native_copper",
@@ -73,15 +72,15 @@
     },
     {
       "type": "patchouli:crafting",
-      "recipe": "tfchotornot:crafting/tongs/wood",
-      "text": "Обережно, посудина буде гарячою! Зробіть $(thing)дерев’яні щипці$() з двох палиць і ножа та тримайте їх у другій руці, щоб безпечно брати гарячу посудину."
+      "text": "Обережно, посудина буде гарячою! Зробіть $(thing)дерев’яні щипці$() з двох палиць і ножа та тримайте їх у другій руці, щоб безпечно брати гарячу посудину.",
+      "recipe": "tfchotornot:crafting/tongs/wood"
     },
     {
       "type": "patchouli:image",
+      "text": "Тримайте посудину та натисніть $(item)$(k:key.use)$(), щоб відкрити інтерфейс $(thing)лиття$().",
       "images": [
         "tfc:textures/gui/book/gui/casting.png"
       ],
-      "text": "Тримайте посудину та натисніть $(item)$(k:key.use)$(), щоб відкрити інтерфейс $(thing)лиття$().",
       "border": false
     },
     {

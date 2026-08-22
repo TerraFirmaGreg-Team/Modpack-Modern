@@ -1,0 +1,77 @@
+{
+  "name": "オーブン機器",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:vat",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l:tfc:firmalife/ovens)オーブン$()には、機能を拡張するブロックが多くあります。$(br2)それらのブロックを組み合わせて使用する装置だからです。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/oven_hopper",
+      "text": "$(thing)オーブンホッパー$()は、対面にあるオーブンかまどに原木を投入します。16本の原木（4つを4スタック）を収納し、インベントリへは上部にアイテムをドロップすることで供給できます。$(br)また、他のMODから自動投入することもできます。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/ashtray",
+      "text": "$(thing)灰受け$()は$(thing)オーブンかまど$()の下に置くと$(thing)木の灰$()を集めます。$(br)燃料が消費されると0.5%の確率で灰を集めます。$(br)灰は$(item)$(k:key.use)$()で取り出し、$(item)$(k:key.attack)$()で戻せます。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "anchor": "vat",
+      "recipe": "firmalife:crafting/vat",
+      "text": "$(thing)釜$()は一部の鍋レシピを大量に作ることが出来ます。$(br2)アイテム用のスロットが1つあり、樽に似た10,000mBの液体スペースがあります。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "例えば、オリーブペースト1に対して水200mBの割合で、$(thing)オリーブオイル用の煮汁$()を作ることができます。$(br2)釜を使うには、液体を入れた状態で$(item)$(k:key.use)$()しアイテムをインベントリに追加します。$(br2)空の手で$(item)$(k:key.sneak)$()を押しながら$(item)$(k:key.use)$()すると、釜の密閉をしたり解除できます。$(br2)釜は密閉するまで沸騰しません。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Vats should be placed on the block above a $(thing)Bottom Oven$(). If the vat would overflow on completion of the recipe, it will not boil, so be sure not to overfill it -- especially with recipes that produce more fluid than they consume! Vats can be opened and closed with $(thing)Redstone$()."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "Y"
+          ],
+          [
+            "0"
+          ]
+        ],
+        "mapping": {
+          "X": "firmalife:vat",
+          "Y": "firmalife:cured_oven_bottom"
+        }
+      },
+      "name": "",
+      "text": "",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/jarring_station",
+      "text": "$(thing)瓶詰め機$()は、釜から瓶を満たすために使用されます。瓶詰機には一方の側に注ぎ口があり、それが釜に向いている必要があります。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "釜を使用して、水に甘味料を加えることで砂糖水を作ることができます。その後、果物を加えると$(thing)ジャム$()が生成されます。$(thing)蓋付きの空き瓶$()でクリックすると、それを満たすことができます。ただし、ジャムをパイプで移動させたり、あまりにも多くの移送を試みると、台無しになる可能性があるので注意してください！"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(item)$(k:key.use)$()を使用して、蓋付きの空き瓶を瓶詰め機に追加します。瓶詰め機がジャムを検出すると、自動的に瓶に$(thing)ジャム$()を詰めて密封します。1瓶あたり500mBのジャムが必要です。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "TFCの鍋やグリルは$(thing)オーブンかまど$()の上に置くことができます。これらの器具はオーブンかまどから自動的に熱を得ます。ただし、鍋はスープを作るためにのみ使用でき、通常の鍋レシピを実行することはできません。"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 15
+}

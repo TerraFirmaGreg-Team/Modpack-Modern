@@ -1,0 +1,41 @@
+{
+  "name": "矿车",
+  "category": "tfc:mechanics",
+  "icon": "tfc:wood/chest_minecart/kapok",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)矿车$()可以用来运输玩家、动物和一些大型方块。那些平时会导致你$(l:getting_started/size_and_weight#overburdening)负担过重$()的方块可以在矿车上运输。$(l:mechanics/decay#large_vessels)大缸$()、$(l:mechanics/barrels)大桶$()、$(l:mechanics/powderkegs)火药桶$()、$(l:mechanics/anvils)砧$()和$(l:mechanics/crucible)坩锅$()可以通过$(item)$(k:key.sneak)$()$(item)$(k:key.use$()的方式装到矿车上。空手$(item)$(k:key.sneak)$()便能取出方块。$(thing)铁$()或$(thing)钢$()都能用于合成矿车，用钢合成时材料效率更高。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/vanilla/redstone/activator_rail",
+      "recipe2": "tfc:crafting/vanilla/redstone/steel_activator_rail"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/vanilla/redstone/detector_rail",
+      "recipe2": "tfc:crafting/vanilla/redstone/steel_detector_rail"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/vanilla/redstone/minecart",
+      "recipe2": "tfc:crafting/vanilla/redstone/steel_minecart"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/vanilla/redstone/rail",
+      "recipe2": "tfc:crafting/vanilla/redstone/steel_rail"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/vanilla/redstone/powered_rail"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/wood/kapok_chest_minecart",
+      "text": "$(thing)箱子矿车$()与群峦传说的箱子一样只有18格，且不能存放类似原木那样的极大物品。"
+    }
+  ],
+  "read_by_default": true
+}

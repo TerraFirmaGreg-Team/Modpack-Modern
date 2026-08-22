@@ -1,0 +1,18 @@
+{
+  "name": "懸掛架",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:wood/hanger/pine",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)懸掛架$()是用於存放肉類或大蒜的設備。它只能在有效的$(l:firmalife/cellar)地窖$()中使用。懸掛架可以容納整整一組的單一物品。通過$(item)$(k:key.use)$()可以放入或取出物品。存放在有效懸掛架中的物品會獲得比食物架或小缸更好的防腐效果。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/wood/acacia_hanger",
+      "text": "懸掛架由木板和線製成。"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 5
+}

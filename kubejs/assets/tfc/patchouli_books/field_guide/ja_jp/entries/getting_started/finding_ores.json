@@ -1,5 +1,4 @@
 {
-  "__comment__": "This file was automatically created by mcresources",
   "name": "鉱石、金属、鋳造",
   "category": "tfc:getting_started",
   "icon": "tfc:ore/normal_native_copper",
@@ -73,15 +72,15 @@
     },
     {
       "type": "patchouli:crafting",
-      "recipe": "tfchotornot:crafting/tongs/wood",
-      "text": "壺は非常に熱くなるので注意が必要です。棒2本とナイフで$(thing)木製トング$()を作りましょう。オフハンドに持っていれば、熱いものも安全に取り扱えます。"
+      "text": "壺は非常に熱くなるので注意が必要です。棒2本とナイフで$(thing)木製トング$()を作りましょう。オフハンドに持っていれば、熱いものも安全に取り扱えます。",
+      "recipe": "tfchotornot:crafting/tongs/wood"
     },
     {
       "type": "patchouli:image",
+      "text": "加熱された壺を手に持ち$(item)$(k:key.use)$()で、$(thing)鋳造GUI$()を開きます。",
       "images": [
         "tfc:textures/gui/book/gui/casting.png"
       ],
-      "text": "加熱された壺を手に持ち$(item)$(k:key.use)$()で、$(thing)鋳造GUI$()を開きます。",
       "border": false
     },
     {

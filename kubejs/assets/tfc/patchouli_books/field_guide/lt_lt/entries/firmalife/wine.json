@@ -1,0 +1,107 @@
+{
+  "name": "Winemaking",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:textures/item/food/white_grapes.png",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)Winemaking$() is the science of turning grapes into alcohol. There is time spent gathering resources, and spending time crafting those resources together, as well as time spent $(thing)enjoying$() the product. Please note that wine in Firmalife (on its own) has no special use beyond regular TFC alcohol. You should make it only if you want to have $(thing)fun$()."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "firmalife:plant/wild_red_grapes",
+      "link_recipes": false,
+      "text": "Red grapes spawn from 0-30 C, and 125-500 rainfall, or almost the entire habitable area."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "firmalife:plant/wild_white_grapes",
+      "link_recipes": false,
+      "text": "White grapes spawn from 0-30 C, and 125-500 rainfall, or almost the entire habitable area."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/grape_trellis_post",
+      "text": "Grapes must be grown on trellises constructed from these special posts and jute fiber."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "To construct a trellis, place two posts on top of each other. Move two blocks to the left or right and repeat the action. Then, $(item)$(k:key.use)$() the side of one of the top and bottom posts with $(thing)Jute Fiber$() to string lines between the posts. Grape trellises can be chained horizontally to create rows of grapes."
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "A grape trellis.",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "XYX"
+            ],
+            [
+              "X0X"
+            ]
+          ],
+          "mapping": {
+            "X": "firmalife:grape_trellis_post[axis=x,string_plus=true,string_minus=true]",
+            "0": "firmalife:grape_string_plant_red[axis=z,lifecycle=healthy,stage=0]",
+            "Y": "firmalife:grape_string[axis=z]"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "ZYZ"
+            ],
+            [
+              "X0X"
+            ]
+          ],
+          "mapping": {
+            "X": "firmalife:grape_trellis_post[axis=x,string_plus=true,string_minus=true]",
+            "0": "firmalife:grape_string_plant_red[axis=z,lifecycle=healthy,stage=2]",
+            "Y": "firmalife:grape_string_red[axis=z,lifecycle=healthy]",
+            "Z": "firmalife:grape_trellis_post_red[axis=x,lifecycle=healthy,string_plus=true,string_minus=true]"
+          }
+        }
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Provided the climate requirements are satisfied, the grape will grow up and over the trellis over the course of a few months. It will fruit in the month of July, flowering the month prior. Grapes can the be harvested. Grapes can also be grown in greenhouses on trellises."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/wood/acacia_stomping_barrel",
+      "text": "The stomping barrel is used to smash grapes. A quern may also be used."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "To use a stomping barrel, $(item)$(k:key.use)$() with fresh grapes. Then, jump up and down on the barrel 16 times. $(item)$(k:key.use)$() with an empty hand to retrieve the items.$(br2)Then, seal the grapes in a barrel for 5 days to $(thing)ferment$() them."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/wood/acacia_barrel_press",
+      "text": "The barrel press is the last step in grape processing."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "The leftmost slot can contain up to 16 grapes. Four grape items are needed for a bottle of wine. The four central slots are for mixing the grapes with other ingredients, but this is optional. Using only red or white grapes yields red or white wine. Adding at least one red grape to white wine makes Rose. Adding sugar to white wine makes dessert wine. Adding tirage mixture (yeast and sweetener in a barrel) makes sparkling wine."
+    },
+    {
+      "type": "tfc:glassworking_recipe",
+      "recipe": "firmalife:glassworking/olivine_wine_bottle",
+      "text": "Wine must be bottled in a proper wine bottle, made of non-silica glass."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/bottle_label",
+      "text": "$(thing)Bottle labels$() can be renamed in a scribing station, and will add their name to the wine's tooltip."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Wine must be provided with a $(thing)Cork$(), made by soaking $(thing)Treated Lumber$() in $(thing)Limewater$() for a day. When all is complete, use the bottle slot to fill the wine, or by pressing $(item)$(k:key.use)$() with a bottle in hand."
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 23
+}

@@ -7,35 +7,30 @@
   "secret": false,
   "pages": [
     {
-      "Type": "patchouli:text",
+      "type": "patchouli:text",
       "text": "Це $(thing)Індекс жил$() для $(item)Місяць$().  \nКожна жила містить деталі щодо її рідкісності, щільності, типу, висоти знаходження, розмірів, порід каменю, в яких вона з’являється, та іншої інформації.",
-      "title": "Індекс жил Місяця",
-      "type": "patchouli:text"
+      "title": "Індекс жил Місяця"
     },
     {
-      "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/moon_vein_index#moon_sapphire)Альмандин, Піроп, Сапфір...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_apatite)Апатит, Ортофосфат кальцію...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_monazite)Бастнезит, Монацит, Неодим...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_beryllium)Берилій, Смарагд, Торій...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_bauxite)Боксит, Ільменіт, Армалколіт$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_sheldonite)Борніт, Шелдоніт, Платина...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_gypsum)Бура, Кальцит, Алуніт, Гіпс...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_molybdenum)Вульфеніт, Повеліт...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_silver)Галеніт, Самородне срібло...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_garnierite)Гранетит, Нікель, Кобальтит...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_graphite)Графіт, Діамант, Олівін$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_manganese)Гроссуляр, Спесартин...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_desh)Деш, Ільменіт, Алюміній...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_sphalerite)Деш, Сфалерит, Пірит$()$()",
-      "type": "patchouli:text"
+      "type": "patchouli:text",
+      "text": "$(li)$(l:tfg_ores/moon_vein_index#moon_sapphire)Альмандин, Піроп, Сапфір...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_apatite)Апатит, Ортофосфат кальцію...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_monazite)Бастнезит, Монацит, Неодим...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_beryllium)Берилій, Смарагд, Торій...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_bauxite)Боксит, Ільменіт, Армалколіт$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_sheldonite)Борніт, Шелдоніт, Платина...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_gypsum)Бура, Кальцит, Алуніт, Гіпс...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_molybdenum)Вульфеніт, Повеліт...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_silver)Галеніт, Самородне срібло...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_garnierite)Гранетит, Нікель, Кобальтит...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_graphite)Графіт, Діамант, Олівін$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_manganese)Гроссуляр, Спесартин...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_desh)Деш, Ільменіт, Алюміній...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_sphalerite)Деш, Сфалерит, Пірит$()$()"
     },
     {
-      "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/moon_vein_index#moon_gold)Зелений сапфір, Боксит...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_quartz)Кварцит, Істинний кварц...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_mica)Кіаніт, Слюда, Боксит...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_magnetite)Магнетит, Ванадієвий магнетит...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_pyrolusite)Піролюзит, Кобальтит, Кобальт...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_redstone)Редстоун, Рубін, Кіновар...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_saltpeter)Селітра, Стеатит, Електротин...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_topaz)Синій топаз, Топаз, Халькозин...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_lubricant)Стеатит, Тальк...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_tetrahedrite)Тетраедрит, Самородна мідь...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_cassiterite)Халькопірит, Цеоліт...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_garnet)Червоний гранат...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_scheelite)Шеєліт, Вольфрамат, Літій$()$()",
-      "type": "patchouli:text"
+      "type": "patchouli:text",
+      "text": "$(li)$(l:tfg_ores/moon_vein_index#moon_gold)Зелений сапфір, Боксит...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_quartz)Кварцит, Істинний кварц...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_mica)Кіаніт, Слюда, Боксит...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_magnetite)Магнетит, Ванадієвий магнетит...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_pyrolusite)Піролюзит, Кобальтит, Кобальт...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_redstone)Редстоун, Рубін, Кіновар...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_saltpeter)Селітра, Стеатит, Електротин...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_topaz)Синій топаз, Топаз, Халькозин...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_lubricant)Стеатит, Тальк...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_tetrahedrite)Тетраедрит, Самородна мідь...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_cassiterite)Халькопірит, Цеоліт...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_garnet)Червоний гранат...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_scheelite)Шеєліт, Вольфрамат, Літій$()$()"
     },
     {
-      "Type": "patchouli:empty",
-      "draw_filler": true,
-      "type": "patchouli:empty"
+      "type": "patchouli:empty",
+      "draw_filler": true
     },
     {
-      "Type": "patchouli:text",
+      "type": "patchouli:text",
       "text": "$(thing)$(t:Ймовірність появи жили на чанк. Менші нижні числа означають більшу поширеність.)Рідкість$(/t)$(): 1/280 чинки$(br)$(thing)$(t:Відсоток блоків у жилі, які є рудами замість каменю. Більший відсоток означає більше руди.)Щільність$(/t)$(): 35%$(br)$(thing)$(t:Форма жили.)Тип$(/t)$(): $(t:Широка та пласка)Дискова жила$(/t)$(br)$(thing)$(t:Рівні Y, між якими може генеруватися жила.)Y$(/t)$(): 0 — 100$(br)$(thing)$(t:Середній діаметр жили.)Розмір$(/t)$(): 28$(br)$(thing)Висота$(): 8$(br)$(thing)$(t:Якщо відстань між поверхнею та жильною рудою більша за це число, поверхневі індикатори не генеруються.)Максимальна глибина індикатора$(/t)$(): 50$(br)$(thing)Біоми$(): Будь-який$(br2)$(thing)Типи каменю$(): Базальт, Норит",
       "title": "Альмандин, Піроп, Сапфір...",
-      "type": "patchouli:text",
       "anchor": "moon_sapphire"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "Альмандин",
       "multiblock": {
         "mapping": {
@@ -51,11 +46,10 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 38%$(br)$(thing)Джерело$(): Алюміній, Залізо$(br)$(thing)Формула$(): Al₂Fe₃Si₃O₁₂",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Відсоток$(): 38%$(br)$(thing)Джерело$(): Алюміній, Залізо$(br)$(thing)Формула$(): Al₂Fe₃Si₃O₁₂"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "Піроп",
       "multiblock": {
         "mapping": {
@@ -71,11 +65,10 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 27%$(br)$(thing)Джерело$(): Алюмінію, Магнезії$(br)$(thing)Формула$(): Al₂Mg₃Si₃O₁₂",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Відсоток$(): 27%$(br)$(thing)Джерело$(): Алюмінію, Магнезії$(br)$(thing)Формула$(): Al₂Mg₃Si₃O₁₂"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "Сапфір",
       "multiblock": {
         "mapping": {
@@ -91,11 +84,10 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 16%$(br)$(thing)Джерело$(): Алюмінію$(br)$(thing)Формула$(): Al₂O₃",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Відсоток$(): 16%$(br)$(thing)Джерело$(): Алюмінію$(br)$(thing)Формула$(): Al₂O₃"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "Зелений сапфір",
       "multiblock": {
         "mapping": {
@@ -111,11 +103,10 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 16%$(br)$(thing)Джерело$(): Алюмінію$(br)$(thing)Формула$(): Al₂O₃",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Відсоток$(): 16%$(br)$(thing)Джерело$(): Алюмінію$(br)$(thing)Формула$(): Al₂O₃"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "Олівін",
       "multiblock": {
         "mapping": {
@@ -131,18 +122,16 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 2%$(br)$(thing)Джерело$(): Магнезії, Заліза$(br)$(thing)Формула$(): Mg₂Fe(SiO₂)₂",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Відсоток$(): 2%$(br)$(thing)Джерело$(): Магнезії, Заліза$(br)$(thing)Формула$(): Mg₂Fe(SiO₂)₂"
     },
     {
-      "Type": "patchouli:text",
+      "type": "patchouli:text",
       "text": "$(thing)$(t:Ймовірність появи жили на чанк. Менші нижні числа означають більшу поширеність.)Рідкість$(/t)$(): 1/250 чинки$(br)$(thing)$(t:Відсоток блоків у жилі, які є рудами замість каменю. Більший відсоток означає більше руди.)Щільність$(/t)$(): 30%$(br)$(thing)$(t:Форма жили.)Тип$(/t)$(): $(t:Переважно округлої форми) Скупчення жили$(/t)$(br)$(thing)$(t:Рівні Y, між якими може генеруватися жила.)Y$(/t)$(): 0 — 100$(br)$(thing)$(t:Середній діаметр жили.)Розмір$(/t)$(): 35$(br)$(thing)$(t:Якщо відстань між поверхнею та жильною рудою більша за це число, поверхневі індикатори не генеруються.)Максимальна глибина індикатора$(/t)$(): 50$(br)$(thing)Біоми$(): Будь-який$(br2)$(thing)Типи каменю$(): Анортозит, Діорит, Норит",
       "title": "Апатит, Ортофосфат кальцію...",
-      "type": "patchouli:text",
       "anchor": "moon_apatite"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "Пірохлорид",
       "multiblock": {
         "mapping": {
@@ -158,11 +147,10 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 38%$(br)$(thing)Джерело$(): Ніобію$(br)$(thing)Формула$(): Ca₂Nb₂O₇",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Відсоток$(): 38%$(br)$(thing)Джерело$(): Ніобію$(br)$(thing)Формула$(): Ca₂Nb₂O₇"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "Ортофосфат кальцію",
       "multiblock": {
         "mapping": {
@@ -178,11 +166,10 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 33%$(br)$(thing)Використовується для$(): Медицини, Добрив$(br)$(thing)Формула$(): Ca₃(PO₄)₂",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Відсоток$(): 33%$(br)$(thing)Використовується для$(): Медицини, Добрив$(br)$(thing)Формула$(): Ca₃(PO₄)₂"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "Апатит",
       "multiblock": {
         "mapping": {
@@ -198,11 +185,10 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 23%$(br)$(thing)Джерело$(): Кальцію, Фосфору, Лісового ПТСР$(br)$(thing)Формула$(): Ca₅(PO₄)₃Cl",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Відсоток$(): 23%$(br)$(thing)Джерело$(): Кальцію, Фосфору, Лісового ПТСР$(br)$(thing)Формула$(): Ca₅(PO₄)₃Cl"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "Олівін",
       "multiblock": {
         "mapping": {
@@ -218,23 +204,20 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 4%$(br)$(thing)Джерело$(): Магнезії, Заліза$(br)$(thing)Формула$(): Mg₂Fe(SiO₂)₂",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Відсоток$(): 4%$(br)$(thing)Джерело$(): Магнезії, Заліза$(br)$(thing)Формула$(): Mg₂Fe(SiO₂)₂"
     },
     {
-      "Type": "patchouli:empty",
-      "draw_filler": true,
-      "type": "patchouli:empty"
+      "type": "patchouli:empty",
+      "draw_filler": true
     },
     {
-      "Type": "patchouli:text",
+      "type": "patchouli:text",
       "text": "$(thing)$(t:Ймовірність появи жили на чанк. Менші нижні числа означають більшу поширеність.)Рідкість$(/t)$(): 1/310 чинки$(br)$(thing)$(t:Відсоток блоків у жилі, які є рудами замість каменю. Більший відсоток означає більше руди.)Щільність$(/t)$(): 20%$(br)$(thing)$(t:Форма жили.)Тип$(/t)$(): $(t:Переважно округлої форми) Скупчення жили$(/t)$(br)$(thing)$(t:Рівні Y, між якими може генеруватися жила.)Y$(/t)$(): 0 — 70$(br)$(thing)$(t:Середній діаметр жили.)Розмір$(/t)$(): 40$(br)$(thing)$(t:Якщо відстань між поверхнею та жильною рудою більша за це число, поверхневі індикатори не генеруються.)Максимальна глибина індикатора$(/t)$(): 50$(br)$(thing)Біоми$(): Будь-який$(br2)$(thing)Типи каменю$(): Андезит, Дацит, Ріоліт, Фоноліт",
       "title": "Бастнезит, Монацит, Неодим...",
-      "type": "patchouli:text",
       "anchor": "moon_monazite"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "Бастнезит",
       "multiblock": {
         "mapping": {
@@ -250,11 +233,10 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 61%$(br)$(thing)Джерело$(): Церію, Фтору$(br)$(thing)Формула$(): CeCFO₃",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Відсоток$(): 61%$(br)$(thing)Джерело$(): Церію, Фтору$(br)$(thing)Формула$(): CeCFO₃"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "Монацит",
       "multiblock": {
         "mapping": {
@@ -270,11 +252,10 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 30%$(br)$(thing)Джерело$(): Фосфору, Рідко земельних $(br)$(thing)Формула$(): ?(PO₄)",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Відсоток$(): 30%$(br)$(thing)Джерело$(): Фосфору, Рідко земельних $(br)$(thing)Формула$(): ?(PO₄)"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "Неодим",
       "multiblock": {
         "mapping": {
@@ -290,11 +271,10 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 6%$(br)$(thing)Джерело$(): Неодиму$(br)$(thing)Формула$(): Nd",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Відсоток$(): 6%$(br)$(thing)Джерело$(): Неодиму$(br)$(thing)Формула$(): Nd"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "Олівін",
       "multiblock": {
         "mapping": {
@@ -310,131 +290,21 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 1%$(br)$(thing)Джерело$(): Магнезії, Заліза$(br)$(thing)Формула$(): Mg₂Fe(SiO₂)₂",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Відсоток$(): 1%$(br)$(thing)Джерело$(): Магнезії, Заліза$(br)$(thing)Формула$(): Mg₂Fe(SiO₂)₂"
     },
     {
-      "Type": "patchouli:empty",
-      "draw_filler": true,
-      "type": "patchouli:empty"
+      "type": "patchouli:empty",
+      "draw_filler": true
     },
     {
-      "Type": "patchouli:text",
+      "type": "patchouli:text",
       "text": "$(thing)$(t:Ймовірність появи жили на чанк. Менші нижні числа означають більшу поширеність.)Рідкість$(/t)$(): 1/260 чинки$(br)$(thing)$(t:Відсоток блоків у жилі, які є рудами замість каменю. Більший відсоток означає більше руди.)Щільність$(/t)$(): 35%$(br)$(thing)$(t:Форма жили.)Тип$(/t)$(): $(t:Висока та вузька)Трубна жила$(/t)$(br)$(thing)$(t:Рівні Y, між якими може генеруватися жила.)Y$(/t)$(): 0 — 120$(br)$(thing)Висота$(): 70$(br)$(thing)Радіус$(): 8$(br)$(thing)$(t:Якщо відстань між поверхнею та жильною рудою більша за це число, поверхневі індикатори не генеруються.)Максимальна глибина індикатора$(/t)$(): 50$(br)$(thing)Біоми$(): Будь-який$(br2)$(thing)Типи каменю$(): Анортозит, Базальт, Фоноліт",
       "title": "Берилій, Смарагд, Торій...",
-      "type": "patchouli:text",
-      "anchor": "moon_beryllium"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Смарагд",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/emerald"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 45%$(br)$(thing)Використовується для$(): Берилію, компонентів MV, предметного тегового фільтра$(br)$(thing)Формула$(): Be₃Al₂Si₆O₁₈",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Берилій",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/beryllium"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 31%$(br)$(thing)Джерело$(): Берилію$(br)$(thing)Формула$(): Be$(br)$(thing)Небезпека$(): $(c)$(t:Потрібні гумові рукавички)Бериліоз (контакт зі шкірою)$(/t)$()",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Кам’яна сіль",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/rock_salt"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 18%$(br)$(thing)Джерело$(): Калію, Хлору, Добрив$(br)$(thing)Формула$(): KCl",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Олівін",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/olivine"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 4%$(br)$(thing)Джерело$(): Магнезії, Заліза$(br)$(thing)Формула$(): Mg₂Fe(SiO₂)₂",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Торій",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/thorium"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 0%$(br)$(thing)Джерело$(): Торію$(br)$(thing)Формула$(): ThO₂$(br)$(thing)Небезпека$(): $(c)$(t:Потрібен повний захист)Радіоактивне (будь-який контакт)$(/t)$()",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:text",
-      "text": "$(thing)$(t:Ймовірність появи жили на чанк. Менші нижні числа означають більшу поширеність.)Рідкість$(/t)$(): 1/200 чинки$(br)$(thing)$(t:Відсоток блоків у жилі, які є рудами замість каменю. Більший відсоток означає більше руди.)Щільність$(/t)$(): 35%$(br)$(thing)$(t:Форма жили.)Тип$(/t)$(): $(t:Переважно округлої форми) Скупчення жили$(/t)$(br)$(thing)$(t:Рівні Y, між якими може генеруватися жила.)Y$(/t)$(): 0 — 80$(br)$(thing)$(t:Середній діаметр жили.)Розмір$(/t)$(): 40$(br)$(thing)$(t:Якщо відстань між поверхнею та жильною рудою більша за це число, поверхневі індикатори не генеруються.)Максимальна глибина індикатора$(/t)$(): 50$(br)$(thing)Біоми$(): Будь-який$(br2)$(thing)Типи каменю$(): Анортозит, Базальт, Діорит, Норит, Ріоліт, Фоноліт",
-      "title": "Боксит, Ільменіт, Армалколіт",
-      "type": "patchouli:text",
       "anchor": "moon_bauxite"
     },
     {
-      "Type": "patchouli:multiblock",
-      "name": "Ільменіт",
+      "type": "patchouli:multiblock",
+      "name": "Смарагд",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/ilmenite"
@@ -449,12 +319,11 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 42%$(br)$(thing)Джерело$(): Заліза, Титана$(br)$(thing)Формула$(): FeTiO₃",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Відсоток$(): 45%$(br)$(thing)Використовується для$(): Берилію, компонентів MV, предметного тегового фільтра$(br)$(thing)Формула$(): Be₃Al₂Si₆O₁₈"
     },
     {
-      "Type": "patchouli:multiblock",
-      "name": "Боксит",
+      "type": "patchouli:multiblock",
+      "name": "Берилій",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/bauxite"
@@ -469,12 +338,11 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 36%$(br)$(thing)Джерело$(): Алюмінію$(br)$(thing)Формула$(): Al₂O₃",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Відсоток$(): 31%$(br)$(thing)Джерело$(): Берилію$(br)$(thing)Формула$(): Be$(br)$(thing)Небезпека$(): $(c)$(t:Потрібні гумові рукавички)Бериліоз (контакт зі шкірою)$(/t)$()"
     },
     {
-      "Type": "patchouli:multiblock",
-      "name": "Армалколіт",
+      "type": "patchouli:multiblock",
+      "name": "Кам’яна сіль",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/armalcolite"
@@ -489,19 +357,192 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 21%$(br)$(thing)Джерело$(): Магнезії, Рутилу, Титану$(br)$(thing)Формула$(): (Mg,Fe)Ti₂O₅",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Відсоток$(): 18%$(br)$(thing)Джерело$(): Калію, Хлору, Добрив$(br)$(thing)Формула$(): KCl"
     },
     {
-      "Type": "patchouli:text",
+      "type": "patchouli:text",
+      "text": "$(thing)Відсоток$(): 4%$(br)$(thing)Джерело$(): Магнезії, Заліза$(br)$(thing)Формула$(): Mg₂Fe(SiO₂)₂",
+      "title": "Beryllium, Emerald...",
+      "anchor": "moon_beryllium",
+      "name": "Олівін",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/olivine"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Торій",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/emerald"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Відсоток$(): 0%$(br)$(thing)Джерело$(): Торію$(br)$(thing)Формула$(): ThO₂$(br)$(thing)Небезпека$(): $(c)$(t:Потрібен повний захист)Радіоактивне (будь-який контакт)$(/t)$()"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Beryllium",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/beryllium"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)$(t:Ймовірність появи жили на чанк. Менші нижні числа означають більшу поширеність.)Рідкість$(/t)$(): 1/200 чинки$(br)$(thing)$(t:Відсоток блоків у жилі, які є рудами замість каменю. Більший відсоток означає більше руди.)Щільність$(/t)$(): 35%$(br)$(thing)$(t:Форма жили.)Тип$(/t)$(): $(t:Переважно округлої форми) Скупчення жили$(/t)$(br)$(thing)$(t:Рівні Y, між якими може генеруватися жила.)Y$(/t)$(): 0 — 80$(br)$(thing)$(t:Середній діаметр жили.)Розмір$(/t)$(): 40$(br)$(thing)$(t:Якщо відстань між поверхнею та жильною рудою більша за це число, поверхневі індикатори не генеруються.)Максимальна глибина індикатора$(/t)$(): 50$(br)$(thing)Біоми$(): Будь-який$(br2)$(thing)Типи каменю$(): Анортозит, Базальт, Діорит, Норит, Ріоліт, Фоноліт",
+      "title": "Боксит, Ільменіт, Армалколіт",
+      "anchor": "moon_bauxite"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Ільменіт",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/rock_salt"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Відсоток$(): 42%$(br)$(thing)Джерело$(): Заліза, Титана$(br)$(thing)Формула$(): FeTiO₃"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Боксит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/olivine"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Відсоток$(): 36%$(br)$(thing)Джерело$(): Алюмінію$(br)$(thing)Формула$(): Al₂O₃"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Армалколіт",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/thorium"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Відсоток$(): 21%$(br)$(thing)Джерело$(): Магнезії, Рутилу, Титану$(br)$(thing)Формула$(): (Mg,Fe)Ti₂O₅"
+    },
+    {
+      "type": "patchouli:text",
       "text": "$(thing)$(t:Ймовірність появи жили на чанк. Менші нижні числа означають більшу поширеність.)Рідкість$(/t)$(): 1/260 чинки$(br)$(thing)$(t:Відсоток блоків у жилі, які є рудами замість каменю. Більший відсоток означає більше руди.)Щільність$(/t)$(): 30%$(br)$(thing)$(t:Форма жили.)Тип$(/t)$(): $(t:Переважно округлої форми) Скупчення жили$(/t)$(br)$(thing)$(t:Рівні Y, між якими може генеруватися жила.)Y$(/t)$(): 0 — 70$(br)$(thing)$(t:Середній діаметр жили.)Розмір$(/t)$(): 30$(br)$(thing)$(t:Якщо відстань між поверхнею та жильною рудою більша за це число, поверхневі індикатори не генеруються.)Максимальна глибина індикатора$(/t)$(): 50$(br)$(thing)Біоми$(): Будь-який$(br2)$(thing)Типи каменю$(): Андезит, Базальт, Фоноліт",
       "title": "Борніт, Шелдоніт, Платина...",
-      "type": "patchouli:text",
-      "anchor": "moon_sheldonite"
+      "anchor": "moon_topaz"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "Борніт",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/blue_topaz"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Відсоток$(): 35%$(br)$(thing)Переплавляється у$(): Мідь$(br)$(thing)Формула$(): Cu₅FeS₄"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Шелдоніт",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/topaz"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Відсоток$(): 25%$(br)$(thing)Джерело$(): Платини, Нікелю, Паладію$(br)$(thing)Формула$(): Pt₃NiSPd"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Нікель",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/chalcocite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Відсоток$(): 25%$(br)$(thing)Переплавляється у$(): Нікель$(br)$(thing)Формула$(): Ni"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Платина",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/bornite"
@@ -516,83 +557,20 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 35%$(br)$(thing)Переплавляється у$(): Мідь$(br)$(thing)Формула$(): Cu₅FeS₄",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Відсоток$(): 15%$(br)$(thing)Плавиться в$(): Платина$(br)$(thing)Формула$(): Pt"
     },
     {
-      "Type": "patchouli:multiblock",
-      "name": "Шелдоніт",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/cooperite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 25%$(br)$(thing)Джерело$(): Платини, Нікелю, Паладію$(br)$(thing)Формула$(): Pt₃NiSPd",
-      "type": "patchouli:multiblock"
+      "type": "patchouli:empty",
+      "draw_filler": true
     },
     {
-      "Type": "patchouli:multiblock",
-      "name": "Нікель",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/nickel"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 25%$(br)$(thing)Переплавляється у$(): Нікель$(br)$(thing)Формула$(): Ni",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Платина",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/platinum"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 15%$(br)$(thing)Плавиться в$(): Платина$(br)$(thing)Формула$(): Pt",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:empty",
-      "draw_filler": true,
-      "type": "patchouli:empty"
-    },
-    {
-      "Type": "patchouli:text",
+      "type": "patchouli:text",
       "text": "$(thing)$(t:Ймовірність появи жили на чанк. Менші нижні числа означають більшу поширеність.)Рідкість$(/t)$(): 1/180 чинки$(br)$(thing)$(t:Відсоток блоків у жилі, які є рудами замість каменю. Більший відсоток означає більше руди.)Щільність$(/t)$(): 30%$(br)$(thing)$(t:Форма жили.)Тип$(/t)$(): $(t:Широка та пласка)Дискова жила$(/t)$(br)$(thing)$(t:Рівні Y, між якими може генеруватися жила.)Y$(/t)$(): 10 — 100$(br)$(thing)$(t:Середній діаметр жили.)Розмір$(/t)$(): 30$(br)$(thing)Висота$(): 9$(br)$(thing)$(t:Якщо відстань між поверхнею та жильною рудою більша за це число, поверхневі індикатори не генеруються.)Максимальна глибина індикатора$(/t)$(): 20$(br)$(thing)Біоми$(): Будь-який$(br2)$(thing)Типи каменю$(): Анортозит, Норит, Фоноліт",
       "title": "Бура, Кальцит, Алуніт, Гіпс...",
-      "type": "patchouli:text",
       "anchor": "moon_gypsum"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "Гіпс",
       "multiblock": {
         "mapping": {
@@ -608,11 +586,10 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 35%$(br)$(thing)Використовується для$(): Цеглин з алебастру (фарбована), Бетону$(br)$(thing)Формула$(): CaS(H₂O)₂O₄",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Відсоток$(): 35%$(br)$(thing)Використовується для$(): Цеглин з алебастру (фарбована), Бетону$(br)$(thing)Формула$(): CaS(H₂O)₂O₄"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "Кальцит",
       "multiblock": {
         "mapping": {
@@ -628,11 +605,10 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 25%$(br)$(thing)Джерело$(): Кальцію$(br)$(thing)Формула$(): CaCO₃",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Відсоток$(): 25%$(br)$(thing)Джерело$(): Кальцію$(br)$(thing)Формула$(): CaCO₃"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "Бура",
       "multiblock": {
         "mapping": {
@@ -648,11 +624,10 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 20%$(br)$(thing)Джерело$(): Натрію, Бору$(br)$(thing)Формула$(): Na₂B₄(H₂O)₁₀O₇",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Відсоток$(): 20%$(br)$(thing)Джерело$(): Натрію, Бору$(br)$(thing)Формула$(): Na₂B₄(H₂O)₁₀O₇"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "Алуніт",
       "multiblock": {
         "mapping": {
@@ -668,11 +643,10 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 15%$(br)$(thing)Джерело$(): Калію, Алюмінію$(br)$(thing)Формула$(): KAl₃Si₂H₆O₁₄",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Відсоток$(): 15%$(br)$(thing)Джерело$(): Калію, Алюмінію$(br)$(thing)Формула$(): KAl₃Si₂H₆O₁₄"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "Олівін",
       "multiblock": {
         "mapping": {
@@ -688,22 +662,20 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 5%$(br)$(thing)Джерело$(): Магнезії, Заліза$(br)$(thing)Формула$(): Mg₂Fe(SiO₂)₂",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Відсоток$(): 5%$(br)$(thing)Джерело$(): Магнезії, Заліза$(br)$(thing)Формула$(): Mg₂Fe(SiO₂)₂"
     },
     {
-      "Type": "patchouli:text",
+      "type": "patchouli:text",
       "text": "$(thing)$(t:Ймовірність появи жили на чанк. Менші нижні числа означають більшу поширеність.)Рідкість$(/t)$(): 1/245 чинки$(br)$(thing)$(t:Відсоток блоків у жилі, які є рудами замість каменю. Більший відсоток означає більше руди.)Щільність$(/t)$(): 35%$(br)$(thing)$(t:Форма жили.)Тип$(/t)$(): $(t:Переважно округлої форми) Скупчення жили$(/t)$(br)$(thing)$(t:Рівні Y, між якими може генеруватися жила.)Y$(/t)$(): 0 — 50$(br)$(thing)$(t:Середній діаметр жили.)Розмір$(/t)$(): 35$(br)$(thing)$(t:Якщо відстань між поверхнею та жильною рудою більша за це число, поверхневі індикатори не генеруються.)Максимальна глибина індикатора$(/t)$(): 50$(br)$(thing)Біоми$(): Будь-який$(br2)$(thing)Типи каменю$(): Базальт, Габро, Дацит, Норит",
       "title": "Вульфеніт, Повеліт...",
-      "type": "patchouli:text",
-      "anchor": "moon_molybdenum"
+      "anchor": "moon_sheldonite"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "Вульфеніт",
       "multiblock": {
         "mapping": {
-          "0": "#forge:ores/wulfenite"
+          "0": "#forge:ores/bornite"
         },
         "pattern": [
           [
@@ -715,15 +687,14 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 44%$(br)$(thing)Джерело$(): Свинцю, Молібдену$(br)$(thing)Формула$(): PbMoO₄",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Відсоток$(): 44%$(br)$(thing)Джерело$(): Свинцю, Молібдену$(br)$(thing)Формула$(): PbMoO₄"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "Повеліт",
       "multiblock": {
         "mapping": {
-          "0": "#forge:ores/powellite"
+          "0": "#forge:ores/cooperite"
         },
         "pattern": [
           [
@@ -735,196 +706,11 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 33%$(br)$(thing)Джерело$(): Молібдену$(br)$(thing)Формула$(): CaMoO₄",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Відсоток$(): 33%$(br)$(thing)Джерело$(): Молібдену$(br)$(thing)Формула$(): CaMoO₄"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "Молібденіт",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/molybdenite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 16%$(br)$(thing)Джерело$(): Молібдену$(br)$(thing)Формула$(): MoS₂",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Олівін",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/olivine"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 5%$(br)$(thing)Джерело$(): Магнезії, Заліза$(br)$(thing)Формула$(): Mg₂Fe(SiO₂)₂",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:empty",
-      "draw_filler": true,
-      "type": "patchouli:empty"
-    },
-    {
-      "Type": "patchouli:text",
-      "text": "$(thing)$(t:Ймовірність появи жили на чанк. Менші нижні числа означають більшу поширеність.)Рідкість$(/t)$(): 1/210 чинки$(br)$(thing)$(t:Відсоток блоків у жилі, які є рудами замість каменю. Більший відсоток означає більше руди.)Щільність$(/t)$(): 35%$(br)$(thing)$(t:Форма жили.)Тип$(/t)$(): $(t:Переважно округлої форми) Скупчення жили$(/t)$(br)$(thing)$(t:Рівні Y, між якими може генеруватися жила.)Y$(/t)$(): 20 — 75$(br)$(thing)$(t:Середній діаметр жили.)Розмір$(/t)$(): 30$(br)$(thing)$(t:Якщо відстань між поверхнею та жильною рудою більша за це число, поверхневі індикатори не генеруються.)Максимальна глибина індикатора$(/t)$(): 50$(br)$(thing)Біоми$(): Будь-який$(br2)$(thing)Типи каменю$(): Анортозит, Дацит, Діорит, Норит, Ріоліт",
-      "title": "Галеніт, Самородне срібло...",
-      "type": "patchouli:text",
-      "anchor": "moon_silver"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Самородне срібло",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/silver"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 42%$(br)$(thing)Переплавляється у$(): Срібло$(br)$(thing)Формула$(): Ag",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Галеніт",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/galena"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 28%$(br)$(thing)Переплавляється у$(): Свенець$(br)$(thing)Формула$(): PbS$(br)$(thing)Небезпека$(): $(c)$(t:Потрібна захисна маска)Слабке отруєння (інгаляційний)$(/t)$()",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Свинець",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/lead"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 23%$(br)$(thing)Переплавляється у$(): Свинець$(br)$(thing)Формула$(): Pb$(br)$(thing)Небезпека$(): $(c)$(t:Потрібна захисна маска)Слабке отруєння (інгаляційний)$(/t)$()",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Олівін",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/olivine"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 4%$(br)$(thing)Джерело$(): Магнезії, Заліза$(br)$(thing)Формула$(): Mg₂Fe(SiO₂)₂",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:empty",
-      "draw_filler": true,
-      "type": "patchouli:empty"
-    },
-    {
-      "Type": "patchouli:text",
-      "text": "$(thing)$(t:Ймовірність появи жили на чанк. Менші нижні числа означають більшу поширеність.)Рідкість$(/t)$(): 1/250 чинки$(br)$(thing)$(t:Відсоток блоків у жилі, які є рудами замість каменю. Більший відсоток означає більше руди.)Щільність$(/t)$(): 35%$(br)$(thing)$(t:Форма жили.)Тип$(/t)$(): $(t:Переважно округлої форми) Скупчення жили$(/t)$(br)$(thing)$(t:Рівні Y, між якими може генеруватися жила.)Y$(/t)$(): 5 — 85$(br)$(thing)$(t:Середній діаметр жили.)Розмір$(/t)$(): 45$(br)$(thing)$(t:Якщо відстань між поверхнею та жильною рудою більша за це число, поверхневі індикатори не генеруються.)Максимальна глибина індикатора$(/t)$(): 50$(br)$(thing)Біоми$(): Будь-який$(br2)$(thing)Типи каменю$(): Габро, Діорит, Ріоліт",
-      "title": "Гранетит, Нікель, Кобальтит...",
-      "type": "patchouli:text",
-      "anchor": "moon_garnierite"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Гранетит",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/garnierite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 23%$(br)$(thing)Переплавляється у$(): Нікель$(br)$(thing)Формула$(): NiO",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Пентландит",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/pentlandite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 23%$(br)$(thing)Переплавляється у$(): Нікель$(br)$(thing)Формула$(): Ni₉S₈",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Нікель",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/nickel"
@@ -939,15 +725,14 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 19%$(br)$(thing)Переплавляється у$(): Нікель$(br)$(thing)Формула$(): Ni",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Відсоток$(): 16%$(br)$(thing)Джерело$(): Молібдену$(br)$(thing)Формула$(): MoS₂"
     },
     {
-      "Type": "patchouli:multiblock",
-      "name": "Кобальтит",
+      "type": "patchouli:multiblock",
+      "name": "Олівін",
       "multiblock": {
         "mapping": {
-          "0": "#forge:ores/cobaltite"
+          "0": "#forge:ores/platinum"
         },
         "pattern": [
           [
@@ -959,11 +744,183 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 19%$(br)$(thing)Джерело$(): Кобальту, Миш'яку$(br)$(thing)Формула$(): CoAsS$(br)$(thing)Небезпека$(): $(c)$(t:Потрібна захисна маска)Арсенікоз (інгаляційний)$(/t)$()",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Відсоток$(): 5%$(br)$(thing)Джерело$(): Магнезії, Заліза$(br)$(thing)Формула$(): Mg₂Fe(SiO₂)₂"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:empty",
+      "draw_filler": true
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)$(t:Ймовірність появи жили на чанк. Менші нижні числа означають більшу поширеність.)Рідкість$(/t)$(): 1/210 чинки$(br)$(thing)$(t:Відсоток блоків у жилі, які є рудами замість каменю. Більший відсоток означає більше руди.)Щільність$(/t)$(): 35%$(br)$(thing)$(t:Форма жили.)Тип$(/t)$(): $(t:Переважно округлої форми) Скупчення жили$(/t)$(br)$(thing)$(t:Рівні Y, між якими може генеруватися жила.)Y$(/t)$(): 20 — 75$(br)$(thing)$(t:Середній діаметр жили.)Розмір$(/t)$(): 30$(br)$(thing)$(t:Якщо відстань між поверхнею та жильною рудою більша за це число, поверхневі індикатори не генеруються.)Максимальна глибина індикатора$(/t)$(): 50$(br)$(thing)Біоми$(): Будь-який$(br2)$(thing)Типи каменю$(): Анортозит, Дацит, Діорит, Норит, Ріоліт",
+      "title": "Галеніт, Самородне срібло...",
+      "anchor": "moon_cassiterite"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Самородне срібло",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/cassiterite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Відсоток$(): 42%$(br)$(thing)Переплавляється у$(): Срібло$(br)$(thing)Формула$(): Ag"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Галеніт",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/chalcopyrite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Відсоток$(): 28%$(br)$(thing)Переплавляється у$(): Свенець$(br)$(thing)Формула$(): PbS$(br)$(thing)Небезпека$(): $(c)$(t:Потрібна захисна маска)Слабке отруєння (інгаляційний)$(/t)$()"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Свинець",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/tin"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Відсоток$(): 23%$(br)$(thing)Переплавляється у$(): Свинець$(br)$(thing)Формула$(): Pb$(br)$(thing)Небезпека$(): $(c)$(t:Потрібна захисна маска)Слабке отруєння (інгаляційний)$(/t)$()"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Олівін",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/zeolite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Відсоток$(): 4%$(br)$(thing)Джерело$(): Магнезії, Заліза$(br)$(thing)Формула$(): Mg₂Fe(SiO₂)₂"
+    },
+    {
+      "type": "patchouli:empty",
+      "draw_filler": true
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)$(t:Ймовірність появи жили на чанк. Менші нижні числа означають більшу поширеність.)Рідкість$(/t)$(): 1/250 чинки$(br)$(thing)$(t:Відсоток блоків у жилі, які є рудами замість каменю. Більший відсоток означає більше руди.)Щільність$(/t)$(): 35%$(br)$(thing)$(t:Форма жили.)Тип$(/t)$(): $(t:Переважно округлої форми) Скупчення жили$(/t)$(br)$(thing)$(t:Рівні Y, між якими може генеруватися жила.)Y$(/t)$(): 5 — 85$(br)$(thing)$(t:Середній діаметр жили.)Розмір$(/t)$(): 45$(br)$(thing)$(t:Якщо відстань між поверхнею та жильною рудою більша за це число, поверхневі індикатори не генеруються.)Максимальна глибина індикатора$(/t)$(): 50$(br)$(thing)Біоми$(): Будь-який$(br2)$(thing)Типи каменю$(): Габро, Діорит, Ріоліт",
+      "title": "Гранетит, Нікель, Кобальтит...",
+      "anchor": "moon_desh"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Гранетит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/ilmenite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Відсоток$(): 23%$(br)$(thing)Переплавляється у$(): Нікель$(br)$(thing)Формула$(): NiO"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Пентландит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/desh"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Відсоток$(): 23%$(br)$(thing)Переплавляється у$(): Нікель$(br)$(thing)Формула$(): Ni₉S₈"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Нікель",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/aluminium"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Відсоток$(): 19%$(br)$(thing)Переплавляється у$(): Нікель$(br)$(thing)Формула$(): Ni"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Кобальтит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/armalcolite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Відсоток$(): 19%$(br)$(thing)Джерело$(): Кобальту, Миш'яку$(br)$(thing)Формула$(): CoAsS$(br)$(thing)Небезпека$(): $(c)$(t:Потрібна захисна маска)Арсенікоз (інгаляційний)$(/t)$()"
+    },
+    {
+      "type": "patchouli:empty",
+      "draw_filler": true,
       "name": "Кобальт",
       "multiblock": {
         "mapping": {
@@ -979,270 +936,17 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 14%$(br)$(thing)Переплавляється у$(): Кобальт$(br)$(thing)Формула$(): Co",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Відсоток$(): 14%$(br)$(thing)Переплавляється у$(): Кобальт$(br)$(thing)Формула$(): Co"
     },
     {
-      "Type": "patchouli:text",
+      "type": "patchouli:text",
       "text": "$(thing)$(t:Ймовірність появи жили на чанк. Менші нижні числа означають більшу поширеність.)Рідкість$(/t)$(): 1/260 чинки$(br)$(thing)$(t:Відсоток блоків у жилі, які є рудами замість каменю. Більший відсоток означає більше руди.)Щільність$(/t)$(): 40%$(br)$(thing)$(t:Форма жили.)Тип$(/t)$(): $(t:Висока та вузька)Трубна жила$(/t)$(br)$(thing)$(t:Рівні Y, між якими може генеруватися жила.)Y$(/t)$(): 0 — 120$(br)$(thing)Висота$(): 60$(br)$(thing)Радіус$(): 9$(br)$(thing)$(t:Якщо відстань між поверхнею та жильною рудою більша за це число, поверхневі індикатори не генеруються.)Максимальна глибина індикатора$(/t)$(): 50$(br)$(thing)Біоми$(): Будь-який$(br2)$(thing)Типи каменю$(): Анортозит, Базальт, Базальт, Габро, Фоноліт",
       "title": "Графіт, Діамант, Олівін",
-      "type": "patchouli:text",
-      "anchor": "moon_graphite"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Графіт",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/graphite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 52%$(br)$(thing)Використовується для$(): $(l:mechanics/fire_clay) Вогнетривкої глини$(), Карбіду кремнія, Графену$(br)$(thing)Формула$(): C",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Діамант",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/diamond"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 36%$(br)$(thing)Використовується для$(): Подрібнення, AE2$(br)$(thing)Формула$(): C",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Олівін",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/olivine"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 10%$(br)$(thing)Джерело$(): Магнезії, Заліза$(br)$(thing)Формула$(): Mg₂Fe(SiO₂)₂",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:text",
-      "text": "$(thing)$(t:Ймовірність появи жили на чанк. Менші нижні числа означають більшу поширеність.)Рідкість$(/t)$(): 1/215 чинки$(br)$(thing)$(t:Відсоток блоків у жилі, які є рудами замість каменю. Більший відсоток означає більше руди.)Щільність$(/t)$(): 35%$(br)$(thing)$(t:Форма жили.)Тип$(/t)$(): $(t:Переважно округлої форми) Скупчення жили$(/t)$(br)$(thing)$(t:Рівні Y, між якими може генеруватися жила.)Y$(/t)$(): 5 — 80$(br)$(thing)$(t:Середній діаметр жили.)Розмір$(/t)$(): 30$(br)$(thing)$(t:Якщо відстань між поверхнею та жильною рудою більша за це число, поверхневі індикатори не генеруються.)Максимальна глибина індикатора$(/t)$(): 20$(br)$(thing)Біоми$(): Будь-який$(br2)$(thing)Типи каменю$(): Андезит, Базальт, Базальт, Габро, Дацит, Норит",
-      "title": "Гроссуляр, Спесартин...",
-      "type": "patchouli:text",
-      "anchor": "moon_manganese"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Гроссуляр",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/grossular"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 37%$(br)$(thing)Джерело$(): Кальцію, Алюмінію$(br)$(thing)Формула$(): Ca₃Al₂Si₃O₁₂",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Спесартин",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/spessartine"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 25%$(br)$(thing)Джерело$(): Марганцю, Алюмінію$(br)$(thing)Формула$(): Al₂Mn₃Si₃O₁₂",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Піролюзит",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/pyrolusite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 25%$(br)$(thing)Джерело$(): Марганцю$(br)$(thing)Формула$(): MnO₂",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Танталіт",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/tantalite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 12%$(br)$(thing)Джерело$(): Марганцю, Танталу$(br)$(thing)Формула$(): MnTa₂O₆",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:empty",
-      "draw_filler": true,
-      "type": "patchouli:empty"
-    },
-    {
-      "Type": "patchouli:text",
-      "text": "$(thing)$(t:Ймовірність появи жили на чанк. Менші нижні числа означають більшу поширеність.)Рідкість$(/t)$(): 1/230 чинки$(br)$(thing)$(t:Відсоток блоків у жилі, які є рудами замість каменю. Більший відсоток означає більше руди.)Щільність$(/t)$(): 35%$(br)$(thing)$(t:Форма жили.)Тип$(/t)$(): $(t:Переважно округлої форми) Скупчення жили$(/t)$(br)$(thing)$(t:Рівні Y, між якими може генеруватися жила.)Y$(/t)$(): 10 — 80$(br)$(thing)$(t:Середній діаметр жили.)Розмір$(/t)$(): 30$(br)$(thing)$(t:Якщо відстань між поверхнею та жильною рудою більша за це число, поверхневі індикатори не генеруються.)Максимальна глибина індикатора$(/t)$(): 50$(br)$(thing)Біоми$(): Будь-який$(br2)$(thing)Типи каменю$(): Андезит, Базальт, Габро, Дацит",
-      "title": "Деш, Ільменіт, Алюміній...",
-      "type": "patchouli:text",
-      "anchor": "moon_desh"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Ільменіт",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/ilmenite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 30%$(br)$(thing)Джерело$(): Заліза, Титана$(br)$(thing)Формула$(): FeTiO₃",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Деш",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/desh"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 25%$(br)$(thing)Джерело$(): Заліза, Титану, Азоту$(br)$(thing)Формула$(): (Mg₂Fe(SiO₂)₂)₂(TiO₂)N₄",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Алюміній",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/aluminium"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 25%$(br)$(thing)Джерело$(): Алюмінію$(br)$(thing)Формула$(): Al",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Армалколіт",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/armalcolite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 20%$(br)$(thing)Джерело$(): Магнезії, Рутилу, Титану$(br)$(thing)Формула$(): (Mg,Fe)Ti₂O₅",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:empty",
-      "draw_filler": true,
-      "type": "patchouli:empty"
-    },
-    {
-      "Type": "patchouli:text",
-      "text": "$(thing)$(t:Ймовірність появи жили на чанк. Менші нижні числа означають більшу поширеність.)Рідкість$(/t)$(): 1/205 чинки$(br)$(thing)$(t:Відсоток блоків у жилі, які є рудами замість каменю. Більший відсоток означає більше руди.)Щільність$(/t)$(): 35%$(br)$(thing)$(t:Форма жили.)Тип$(/t)$(): $(t:Переважно округлої форми) Скупчення жили$(/t)$(br)$(thing)$(t:Рівні Y, між якими може генеруватися жила.)Y$(/t)$(): 2 — 75$(br)$(thing)$(t:Середній діаметр жили.)Розмір$(/t)$(): 35$(br)$(thing)$(t:Якщо відстань між поверхнею та жильною рудою більша за це число, поверхневі індикатори не генеруються.)Максимальна глибина індикатора$(/t)$(): 60$(br)$(thing)Біоми$(): Будь-який$(br2)$(thing)Типи каменю$(): Андезит, Базальт, Габро, Дацит, Фоноліт",
-      "title": "Деш, Сфалерит, Пірит",
-      "type": "patchouli:text",
       "anchor": "moon_sphalerite"
     },
     {
-      "Type": "patchouli:multiblock",
-      "name": "Сфалерит",
+      "type": "patchouli:multiblock",
+      "name": "Графіт",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/sphalerite"
@@ -1257,12 +961,11 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 50%$(br)$(thing)Переплавляється у$(): Цинк$(br)$(thing)Формула$(): ZnS",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Відсоток$(): 52%$(br)$(thing)Використовується для$(): $(l:mechanics/fire_clay) Вогнетривкої глини$(), Карбіду кремнія, Графену$(br)$(thing)Формула$(): C"
     },
     {
-      "Type": "patchouli:multiblock",
-      "name": "Пірит",
+      "type": "patchouli:multiblock",
+      "name": "Діамант",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/pyrite"
@@ -1277,12 +980,11 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 40%$(br)$(thing)Переплавляється у$(): Чавун$(br)$(thing)Формула$(): FeS₂",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Відсоток$(): 36%$(br)$(thing)Використовується для$(): Подрібнення, AE2$(br)$(thing)Формула$(): C"
     },
     {
-      "Type": "patchouli:multiblock",
-      "name": "Деш",
+      "type": "patchouli:multiblock",
+      "name": "Олівін",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/desh"
@@ -1297,18 +999,267 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 10%$(br)$(thing)Джерело$(): Заліза, Титану, Азоту$(br)$(thing)Формула$(): (Mg₂Fe(SiO₂)₂)₂(TiO₂)N₄",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Відсоток$(): 10%$(br)$(thing)Джерело$(): Магнезії, Заліза$(br)$(thing)Формула$(): Mg₂Fe(SiO₂)₂"
     },
     {
-      "Type": "patchouli:text",
+      "type": "patchouli:text",
+      "text": "$(thing)$(t:Ймовірність появи жили на чанк. Менші нижні числа означають більшу поширеність.)Рідкість$(/t)$(): 1/215 чинки$(br)$(thing)$(t:Відсоток блоків у жилі, які є рудами замість каменю. Більший відсоток означає більше руди.)Щільність$(/t)$(): 35%$(br)$(thing)$(t:Форма жили.)Тип$(/t)$(): $(t:Переважно округлої форми) Скупчення жили$(/t)$(br)$(thing)$(t:Рівні Y, між якими може генеруватися жила.)Y$(/t)$(): 5 — 80$(br)$(thing)$(t:Середній діаметр жили.)Розмір$(/t)$(): 30$(br)$(thing)$(t:Якщо відстань між поверхнею та жильною рудою більша за це число, поверхневі індикатори не генеруються.)Максимальна глибина індикатора$(/t)$(): 20$(br)$(thing)Біоми$(): Будь-який$(br2)$(thing)Типи каменю$(): Андезит, Базальт, Базальт, Габро, Дацит, Норит",
+      "title": "Гроссуляр, Спесартин...",
+      "anchor": "moon_silver"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Гроссуляр",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/silver"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Відсоток$(): 37%$(br)$(thing)Джерело$(): Кальцію, Алюмінію$(br)$(thing)Формула$(): Ca₃Al₂Si₃O₁₂"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Спесартин",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/galena"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Відсоток$(): 25%$(br)$(thing)Джерело$(): Марганцю, Алюмінію$(br)$(thing)Формула$(): Al₂Mn₃Si₃O₁₂"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Піролюзит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/lead"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Відсоток$(): 25%$(br)$(thing)Джерело$(): Марганцю$(br)$(thing)Формула$(): MnO₂"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Танталіт",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/olivine"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Відсоток$(): 12%$(br)$(thing)Джерело$(): Марганцю, Танталу$(br)$(thing)Формула$(): MnTa₂O₆"
+    },
+    {
+      "type": "patchouli:empty",
+      "draw_filler": true
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)$(t:Ймовірність появи жили на чанк. Менші нижні числа означають більшу поширеність.)Рідкість$(/t)$(): 1/230 чинки$(br)$(thing)$(t:Відсоток блоків у жилі, які є рудами замість каменю. Більший відсоток означає більше руди.)Щільність$(/t)$(): 35%$(br)$(thing)$(t:Форма жили.)Тип$(/t)$(): $(t:Переважно округлої форми) Скупчення жили$(/t)$(br)$(thing)$(t:Рівні Y, між якими може генеруватися жила.)Y$(/t)$(): 10 — 80$(br)$(thing)$(t:Середній діаметр жили.)Розмір$(/t)$(): 30$(br)$(thing)$(t:Якщо відстань між поверхнею та жильною рудою більша за це число, поверхневі індикатори не генеруються.)Максимальна глибина індикатора$(/t)$(): 50$(br)$(thing)Біоми$(): Будь-який$(br2)$(thing)Типи каменю$(): Андезит, Базальт, Габро, Дацит",
+      "title": "Деш, Ільменіт, Алюміній...",
+      "anchor": "moon_garnierite"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Ільменіт",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/garnierite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Відсоток$(): 30%$(br)$(thing)Джерело$(): Заліза, Титана$(br)$(thing)Формула$(): FeTiO₃"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Деш",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/pentlandite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Відсоток$(): 25%$(br)$(thing)Джерело$(): Заліза, Титану, Азоту$(br)$(thing)Формула$(): (Mg₂Fe(SiO₂)₂)₂(TiO₂)N₄"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Алюміній",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/nickel"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Відсоток$(): 25%$(br)$(thing)Джерело$(): Алюмінію$(br)$(thing)Формула$(): Al"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Армалколіт",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/cobaltite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Відсоток$(): 20%$(br)$(thing)Джерело$(): Магнезії, Рутилу, Титану$(br)$(thing)Формула$(): (Mg,Fe)Ti₂O₅"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Cobalt",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/cobalt"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Percentage$(): 14%$(br)$(thing)Melts into$(): Cobalt$(br)$(thing)Formula$(): Co",
+      "draw_filler": true
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)$(t:Ймовірність появи жили на чанк. Менші нижні числа означають більшу поширеність.)Рідкість$(/t)$(): 1/205 чинки$(br)$(thing)$(t:Відсоток блоків у жилі, які є рудами замість каменю. Більший відсоток означає більше руди.)Щільність$(/t)$(): 35%$(br)$(thing)$(t:Форма жили.)Тип$(/t)$(): $(t:Переважно округлої форми) Скупчення жили$(/t)$(br)$(thing)$(t:Рівні Y, між якими може генеруватися жила.)Y$(/t)$(): 2 — 75$(br)$(thing)$(t:Середній діаметр жили.)Розмір$(/t)$(): 35$(br)$(thing)$(t:Якщо відстань між поверхнею та жильною рудою більша за це число, поверхневі індикатори не генеруються.)Максимальна глибина індикатора$(/t)$(): 60$(br)$(thing)Біоми$(): Будь-який$(br2)$(thing)Типи каменю$(): Андезит, Базальт, Габро, Дацит, Фоноліт",
+      "title": "Деш, Сфалерит, Пірит",
+      "anchor": "moon_graphite"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Сфалерит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/graphite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Відсоток$(): 50%$(br)$(thing)Переплавляється у$(): Цинк$(br)$(thing)Формула$(): ZnS"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Пірит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/diamond"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Відсоток$(): 40%$(br)$(thing)Переплавляється у$(): Чавун$(br)$(thing)Формула$(): FeS₂"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Деш",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/olivine"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Відсоток$(): 10%$(br)$(thing)Джерело$(): Заліза, Титану, Азоту$(br)$(thing)Формула$(): (Mg₂Fe(SiO₂)₂)₂(TiO₂)N₄"
+    },
+    {
+      "type": "patchouli:text",
       "text": "$(thing)$(t:Ймовірність появи жили на чанк. Менші нижні числа означають більшу поширеність.)Рідкість$(/t)$(): 1/170 чинки$(br)$(thing)$(t:Відсоток блоків у жилі, які є рудами замість каменю. Більший відсоток означає більше руди.)Щільність$(/t)$(): 35%$(br)$(thing)$(t:Форма жили.)Тип$(/t)$(): $(t:Широка та пласка)Дискова жила$(/t)$(br)$(thing)$(t:Рівні Y, між якими може генеруватися жила.)Y$(/t)$(): 10 — 80$(br)$(thing)$(t:Середній діаметр жили.)Розмір$(/t)$(): 35$(br)$(thing)Висота$(): 10$(br)$(thing)$(t:Якщо відстань між поверхнею та жильною рудою більша за це число, поверхневі індикатори не генеруються.)Максимальна глибина індикатора$(/t)$(): 60$(br)$(thing)Біоми$(): Будь-який$(br2)$(thing)Типи каменю$(): Базальт, Гранит, Діорит",
       "title": "Зелений сапфір, Боксит...",
-      "type": "patchouli:text",
       "anchor": "moon_gold"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "Самородне золото",
       "multiblock": {
         "mapping": {
@@ -1324,11 +1275,10 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 55%$(br)$(thing)Переплавляється у$(): Золото$(br)$(thing)Формула$(): Au",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Відсоток$(): 55%$(br)$(thing)Переплавляється у$(): Золото$(br)$(thing)Формула$(): Au"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "Боксит",
       "multiblock": {
         "mapping": {
@@ -1344,11 +1294,10 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 20%$(br)$(thing)Джерело$(): Алюмінію$(br)$(thing)Формула$(): Al₂O₃",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Відсоток$(): 20%$(br)$(thing)Джерело$(): Алюмінію$(br)$(thing)Формула$(): Al₂O₃"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "Магнетит",
       "multiblock": {
         "mapping": {
@@ -1364,11 +1313,10 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 20%$(br)$(thing)Переплавляється у$(): Чавун$(br)$(thing)Формула$(): Fe₃O₄",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Відсоток$(): 20%$(br)$(thing)Переплавляється у$(): Чавун$(br)$(thing)Формула$(): Fe₃O₄"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "Зелений сапфір",
       "multiblock": {
         "mapping": {
@@ -1384,27 +1332,24 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 5%$(br)$(thing)Джерело$(): Алюмінію$(br)$(thing)Формула$(): Al₂O₃",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Відсоток$(): 5%$(br)$(thing)Джерело$(): Алюмінію$(br)$(thing)Формула$(): Al₂O₃"
     },
     {
-      "Type": "patchouli:empty",
-      "draw_filler": true,
-      "type": "patchouli:empty"
+      "type": "patchouli:empty",
+      "draw_filler": true
     },
     {
-      "Type": "patchouli:text",
+      "type": "patchouli:text",
       "text": "$(thing)$(t:Ймовірність появи жили на чанк. Менші нижні числа означають більшу поширеність.)Рідкість$(/t)$(): 1/230 чинки$(br)$(thing)$(t:Відсоток блоків у жилі, які є рудами замість каменю. Більший відсоток означає більше руди.)Щільність$(/t)$(): 30%$(br)$(thing)$(t:Форма жили.)Тип$(/t)$(): $(t:Переважно округлої форми) Скупчення жили$(/t)$(br)$(thing)$(t:Рівні Y, між якими може генеруватися жила.)Y$(/t)$(): 10 — 100$(br)$(thing)$(t:Середній діаметр жили.)Розмір$(/t)$(): 45$(br)$(thing)$(t:Якщо відстань між поверхнею та жильною рудою більша за це число, поверхневі індикатори не генеруються.)Максимальна глибина індикатора$(/t)$(): 80$(br)$(thing)Біоми$(): Будь-який$(br2)$(thing)Типи каменю$(): Андезит, Анортозит, Базальт, Габро, Дацит, Діорит, Норит, Ріоліт, Фоноліт",
       "title": "Кварцит, Істинний кварц...",
-      "type": "patchouli:text",
-      "anchor": "moon_quartz"
+      "anchor": "moon_manganese"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "Істинний кварц",
       "multiblock": {
         "mapping": {
-          "0": "#forge:ores/certus_quartz"
+          "0": "#forge:ores/grossular"
         },
         "pattern": [
           [
@@ -1416,15 +1361,14 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 45%$(br)$(thing)Використовується для$(): Applied Energistics 2$(br)$(thing)Формула$(): SiO₂",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Відсоток$(): 45%$(br)$(thing)Використовується для$(): Applied Energistics 2$(br)$(thing)Формула$(): SiO₂"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "Незерський кварц",
       "multiblock": {
         "mapping": {
-          "0": "#forge:ores/nether_quartz"
+          "0": "#forge:ores/spessartine"
         },
         "pattern": [
           [
@@ -1436,15 +1380,14 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 30%$(br)$(thing)Використовується для$():$(br)$(thing)Формула$(): SiO₂",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Відсоток$(): 30%$(br)$(thing)Використовується для$():$(br)$(thing)Формула$(): SiO₂"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "Кварцит",
       "multiblock": {
         "mapping": {
-          "0": "#forge:ores/quartzite"
+          "0": "#forge:ores/pyrolusite"
         },
         "pattern": [
           [
@@ -1456,15 +1399,14 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 20%$(br)$(thing)Використовується для$(): Компонентів LV$(br)$(thing)Формула$(): SiO₂",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Відсоток$(): 20%$(br)$(thing)Використовується для$(): Компонентів LV$(br)$(thing)Формула$(): SiO₂"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "Барит",
       "multiblock": {
         "mapping": {
-          "0": "#forge:ores/barite"
+          "0": "#forge:ores/tantalite"
         },
         "pattern": [
           [
@@ -1476,23 +1418,20 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 5%$(br)$(thing)Джерело$(): Барію$(br)$(thing)Формула$(): BaSO₂",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Відсоток$(): 5%$(br)$(thing)Джерело$(): Барію$(br)$(thing)Формула$(): BaSO₂"
     },
     {
-      "Type": "patchouli:empty",
-      "draw_filler": true,
-      "type": "patchouli:empty"
+      "type": "patchouli:empty",
+      "draw_filler": true
     },
     {
-      "Type": "patchouli:text",
+      "type": "patchouli:text",
       "text": "$(thing)$(t:Ймовірність появи жили на чанк. Менші нижні числа означають більшу поширеність.)Рідкість$(/t)$(): 1/250 чинки$(br)$(thing)$(t:Відсоток блоків у жилі, які є рудами замість каменю. Більший відсоток означає більше руди.)Щільність$(/t)$(): 25%$(br)$(thing)$(t:Форма жили.)Тип$(/t)$(): $(t:Переважно округлої форми) Скупчення жили$(/t)$(br)$(thing)$(t:Рівні Y, між якими може генеруватися жила.)Y$(/t)$(): 0 — 120$(br)$(thing)$(t:Середній діаметр жили.)Розмір$(/t)$(): 35$(br)$(thing)$(t:Якщо відстань між поверхнею та жильною рудою більша за це число, поверхневі індикатори не генеруються.)Максимальна глибина індикатора$(/t)$(): 50$(br)$(thing)Біоми$(): Будь-який$(br2)$(thing)Типи каменю$(): Анортозит, Габро, Діорит, Норит",
       "title": "Кіаніт, Слюда, Боксит...",
-      "type": "patchouli:text",
       "anchor": "moon_mica"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "Кіаніт",
       "multiblock": {
         "mapping": {
@@ -1508,11 +1447,10 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 33%$(br)$(thing)Джерело$(): Алюмінію$(br)$(thing)Формула$(): Al₂SiO₅",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Відсоток$(): 33%$(br)$(thing)Джерело$(): Алюмінію$(br)$(thing)Формула$(): Al₂SiO₅"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "Слюда",
       "multiblock": {
         "mapping": {
@@ -1528,11 +1466,10 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 23%$(br)$(thing)Джерело$(): Калію, Алюмінію, Фтору$(br)$(thing)Формула$(): KAl₃Si₃F₂O₁₀",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Відсоток$(): 23%$(br)$(thing)Джерело$(): Калію, Алюмінію, Фтору$(br)$(thing)Формула$(): KAl₃Si₃F₂O₁₀"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "Боксит",
       "multiblock": {
         "mapping": {
@@ -1548,11 +1485,10 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 23%$(br)$(thing)Джерело$(): Алюмінію$(br)$(thing)Формула$(): Al₂O₃",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Відсоток$(): 23%$(br)$(thing)Джерело$(): Алюмінію$(br)$(thing)Формула$(): Al₂O₃"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "Алюміній",
       "multiblock": {
         "mapping": {
@@ -1568,11 +1504,10 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 14%$(br)$(thing)Джерело$(): Алюмінію$(br)$(thing)Формула$(): Al",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Відсоток$(): 14%$(br)$(thing)Джерело$(): Алюмінію$(br)$(thing)Формула$(): Al"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "Олівін",
       "multiblock": {
         "mapping": {
@@ -1588,18 +1523,16 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 4%$(br)$(thing)Джерело$(): Магнезії, Заліза$(br)$(thing)Формула$(): Mg₂Fe(SiO₂)₂",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Відсоток$(): 4%$(br)$(thing)Джерело$(): Магнезії, Заліза$(br)$(thing)Формула$(): Mg₂Fe(SiO₂)₂"
     },
     {
-      "Type": "patchouli:text",
+      "type": "patchouli:text",
       "text": "$(thing)$(t:Ймовірність появи жили на чанк. Менші нижні числа означають більшу поширеність.)Рідкість$(/t)$(): 1/280 чинки$(br)$(thing)$(t:Відсоток блоків у жилі, які є рудами замість каменю. Більший відсоток означає більше руди.)Щільність$(/t)$(): 25%$(br)$(thing)$(t:Форма жили.)Тип$(/t)$(): $(t:Переважно округлої форми) Скупчення жили$(/t)$(br)$(thing)$(t:Рівні Y, між якими може генеруватися жила.)Y$(/t)$(): 0 — 90$(br)$(thing)$(t:Середній діаметр жили.)Розмір$(/t)$(): 50$(br)$(thing)$(t:Якщо відстань між поверхнею та жильною рудою більша за це число, поверхневі індикатори не генеруються.)Максимальна глибина індикатора$(/t)$(): 50$(br)$(thing)Біоми$(): Будь-який$(br2)$(thing)Типи каменю$(): Анортозит, Габро, Діорит, Норит",
       "title": "Магнетит, Ванадієвий магнетит...",
-      "type": "patchouli:text",
       "anchor": "moon_magnetite"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "Хроміт",
       "multiblock": {
         "mapping": {
@@ -1615,11 +1548,10 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 40%$(br)$(thing)Джерело$(): Хрому$(br)$(thing)Формула$(): FeCr₂O₄$(br)$(thing)Небезпека$(): $(c)$(t:Потрібні гумові рукавички) Подразнення (контакт зі шкірою)$(/t)$()",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Відсоток$(): 40%$(br)$(thing)Джерело$(): Хрому$(br)$(thing)Формула$(): FeCr₂O₄$(br)$(thing)Небезпека$(): $(c)$(t:Потрібні гумові рукавички) Подразнення (контакт зі шкірою)$(/t)$()"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "Магнетит",
       "multiblock": {
         "mapping": {
@@ -1635,11 +1567,10 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 25%$(br)$(thing)Переплавляється у$(): Чавун$(br)$(thing)Формула$(): Fe₃O₄",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Відсоток$(): 25%$(br)$(thing)Переплавляється у$(): Чавун$(br)$(thing)Формула$(): Fe₃O₄"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "Ванадієвий магнетит",
       "multiblock": {
         "mapping": {
@@ -1655,11 +1586,10 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 15%$(br)$(thing)Джерело$(): Заліза, Ванадію$(br)$(thing)Формула$(): (Fe₃O₄)V",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Відсоток$(): 15%$(br)$(thing)Джерело$(): Заліза, Ванадію$(br)$(thing)Формула$(): (Fe₃O₄)V"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "Самородне золото",
       "multiblock": {
         "mapping": {
@@ -1675,11 +1605,10 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 15%$(br)$(thing)Переплавляється у$(): Золото$(br)$(thing)Формула$(): Au",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Відсоток$(): 15%$(br)$(thing)Переплавляється у$(): Золото$(br)$(thing)Формула$(): Au"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "Сапфір",
       "multiblock": {
         "mapping": {
@@ -1695,18 +1624,16 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 5%$(br)$(thing)Джерело$(): Алюмінію$(br)$(thing)Формула$(): Al₂O₃",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Відсоток$(): 5%$(br)$(thing)Джерело$(): Алюмінію$(br)$(thing)Формула$(): Al₂O₃"
     },
     {
-      "Type": "patchouli:text",
+      "type": "patchouli:text",
       "text": "$(thing)$(t:Ймовірність появи жили на чанк. Менші нижні числа означають більшу поширеність.)Рідкість$(/t)$(): 1/210 чинки$(br)$(thing)$(t:Відсоток блоків у жилі, які є рудами замість каменю. Більший відсоток означає більше руди.)Щільність$(/t)$(): 25%$(br)$(thing)$(t:Форма жили.)Тип$(/t)$(): $(t:Переважно округлої форми) Скупчення жили$(/t)$(br)$(thing)$(t:Рівні Y, між якими може генеруватися жила.)Y$(/t)$(): 20 — 80$(br)$(thing)$(t:Середній діаметр жили.)Розмір$(/t)$(): 35$(br)$(thing)$(t:Якщо відстань між поверхнею та жильною рудою більша за це число, поверхневі індикатори не генеруються.)Максимальна глибина індикатора$(/t)$(): 50$(br)$(thing)Біоми$(): Будь-який$(br2)$(thing)Типи каменю$(): Андезит, Анортозит, Базальт, Габро, Норит",
       "title": "Піролюзит, Кобальтит, Кобальт...",
-      "type": "patchouli:text",
       "anchor": "moon_pyrolusite"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "Піролюзит",
       "multiblock": {
         "mapping": {
@@ -1722,11 +1649,10 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 38%$(br)$(thing)Джерело$(): Марганцю$(br)$(thing)Формула$(): MnO₂",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Відсоток$(): 38%$(br)$(thing)Джерело$(): Марганцю$(br)$(thing)Формула$(): MnO₂"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "Кобальтит",
       "multiblock": {
         "mapping": {
@@ -1742,11 +1668,10 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 23%$(br)$(thing)Джерело$(): Кобальту, Миш'яку$(br)$(thing)Формула$(): CoAsS$(br)$(thing)Небезпека$(): $(c)$(t:Потрібна захисна маска)Арсенікоз (інгаляційний)$(/t)$()",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Відсоток$(): 23%$(br)$(thing)Джерело$(): Кобальту, Миш'яку$(br)$(thing)Формула$(): CoAsS$(br)$(thing)Небезпека$(): $(c)$(t:Потрібна захисна маска)Арсенікоз (інгаляційний)$(/t)$()"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "Кобальт",
       "multiblock": {
         "mapping": {
@@ -1762,11 +1687,10 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 23%$(br)$(thing)Переплавляється у$(): Кобальт$(br)$(thing)Формула$(): Co",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Відсоток$(): 23%$(br)$(thing)Переплавляється у$(): Кобальт$(br)$(thing)Формула$(): Co"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "Танталіт",
       "multiblock": {
         "mapping": {
@@ -1782,24 +1706,193 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 14%$(br)$(thing)Джерело$(): Марганцю, Танталу$(br)$(thing)Формула$(): MnTa₂O₆",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Відсоток$(): 14%$(br)$(thing)Джерело$(): Марганцю, Танталу$(br)$(thing)Формула$(): MnTa₂O₆"
     },
     {
-      "Type": "patchouli:empty",
-      "draw_filler": true,
-      "type": "patchouli:empty"
+      "type": "patchouli:empty",
+      "draw_filler": true
     },
     {
-      "Type": "patchouli:text",
+      "type": "patchouli:text",
       "text": "$(thing)$(t:Ймовірність появи жили на чанк. Менші нижні числа означають більшу поширеність.)Рідкість$(/t)$(): 1/250 чинки$(br)$(thing)$(t:Відсоток блоків у жилі, які є рудами замість каменю. Більший відсоток означає більше руди.)Щільність$(/t)$(): 20%$(br)$(thing)$(t:Форма жили.)Тип$(/t)$(): $(t:Переважно округлої форми) Скупчення жили$(/t)$(br)$(thing)$(t:Рівні Y, між якими може генеруватися жила.)Y$(/t)$(): 20 — 100$(br)$(thing)$(t:Середній діаметр жили.)Розмір$(/t)$(): 35$(br)$(thing)$(t:Якщо відстань між поверхнею та жильною рудою більша за це число, поверхневі індикатори не генеруються.)Максимальна глибина індикатора$(/t)$(): 50$(br)$(thing)Біоми$(): Будь-який$(br2)$(thing)Типи каменю$(): Андезит, Дацит, Фоноліт",
       "title": "Редстоун, Рубін, Кіновар...",
+      "anchor": "moon_quartz"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Редстоун",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/certus_quartz"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Відсоток$(): 42%$(br)$(thing)Переплавляється у$(): Редстоун$(br)$(thing)Формула$(): Si(FeS₂)₅(CrAl₂O₃)Hg₃"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Рубін",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/nether_quartz"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Відсоток$(): 33%$(br)$(thing)Джерело$(): Хрому, Алюмінію$(br)$(thing)Формула$(): CrAl₂O₃"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Кіновар",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/quartzite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Відсоток$(): 19%$(br)$(thing)Джерело$(): Ртуті$(br)$(thing)Формула$(): HgS"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Олівін",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/barite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Відсоток$(): 4%$(br)$(thing)Джерело$(): Магнезії, Заліза$(br)$(thing)Формула$(): Mg₂Fe(SiO₂)₂"
+    },
+    {
+      "type": "patchouli:empty",
+      "draw_filler": true
+    },
+    {
       "type": "patchouli:text",
+      "text": "$(thing)$(t:Ймовірність появи жили на чанк. Менші нижні числа означають більшу поширеність.)Рідкість$(/t)$(): 1/210 чинки$(br)$(thing)$(t:Відсоток блоків у жилі, які є рудами замість каменю. Більший відсоток означає більше руди.)Щільність$(/t)$(): 30%$(br)$(thing)$(t:Форма жили.)Тип$(/t)$(): $(t:Переважно округлої форми) Скупчення жили$(/t)$(br)$(thing)$(t:Рівні Y, між якими може генеруватися жила.)Y$(/t)$(): 0 — 90$(br)$(thing)$(t:Середній діаметр жили.)Розмір$(/t)$(): 30$(br)$(thing)$(t:Якщо відстань між поверхнею та жильною рудою більша за це число, поверхневі індикатори не генеруються.)Максимальна глибина індикатора$(/t)$(): 50$(br)$(thing)Біоми$(): Будь-який$(br2)$(thing)Типи каменю$(): Андезит, Дацит, Норит, Ріоліт",
+      "title": "Селітра, Стеатит, Електротин...",
+      "anchor": "moon_garnet"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Електротин",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/amethyst"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Відсоток$(): 37%$(br)$(thing)Джерело$(): Золота, Срібла, Редстоуна$(br)$(thing)Формула$(): (Si(FeS₂)₅(CrAl₂O₃)Hg₃)(AgAu)"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Селітра",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/opal"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Відсоток$(): 29%$(br)$(thing)Джерело$(): Калію, Азоту$(br)$(thing)Формула$(): KNO₃"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Стеатит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/yellow_garnet"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Відсоток$(): 20%$(br)$(thing)Джерело$(): Магнезії$(br)$(thing)Формула$(): Mg₃Si₄H₂O₁₂"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Тальк",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/red_garnet"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Відсоток$(): 12%$(br)$(thing)Джерело$(): Магнезії$(br)$(thing)Формула$(): Mg₃Si₄H₂O₁₂"
+    },
+    {
+      "type": "patchouli:empty",
+      "draw_filler": true
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)$(t:Ймовірність появи жили на чанк. Менші нижні числа означають більшу поширеність.)Рідкість$(/t)$(): 1/210 чинки$(br)$(thing)$(t:Відсоток блоків у жилі, які є рудами замість каменю. Більший відсоток означає більше руди.)Щільність$(/t)$(): 35%$(br)$(thing)$(t:Форма жили.)Тип$(/t)$(): $(t:Широка та пласка)Дискова жила$(/t)$(br)$(thing)$(t:Рівні Y, між якими може генеруватися жила.)Y$(/t)$(): 0 — 120$(br)$(thing)$(t:Середній діаметр жили.)Розмір$(/t)$(): 45$(br)$(thing)Висота$(): 16$(br)$(thing)$(t:Якщо відстань між поверхнею та жильною рудою більша за це число, поверхневі індикатори не генеруються.)Максимальна глибина індикатора$(/t)$(): 20$(br)$(thing)Біоми$(): Будь-який$(br2)$(thing)Типи каменю$(): Андезит, Анортозит, Базальт, Габро, Дацит, Діорит, Норит, Ріоліт, Фоноліт",
+      "title": "Синій топаз, Топаз, Халькозин...",
       "anchor": "moon_redstone"
     },
     {
-      "Type": "patchouli:multiblock",
-      "name": "Редстоун",
+      "type": "patchouli:multiblock",
+      "name": "Синій топаз",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/redstone"
@@ -1814,12 +1907,11 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 42%$(br)$(thing)Переплавляється у$(): Редстоун$(br)$(thing)Формула$(): Si(FeS₂)₅(CrAl₂O₃)Hg₃",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Відсоток$(): 35%$(br)$(thing)Джерело$(): Алюміній, Фтор$(br)$(thing)Формула$(): Al₂SiF₂H₂O₆"
     },
     {
-      "Type": "patchouli:multiblock",
-      "name": "Рубін",
+      "type": "patchouli:multiblock",
+      "name": "Топаз",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/ruby"
@@ -1834,12 +1926,11 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 33%$(br)$(thing)Джерело$(): Хрому, Алюмінію$(br)$(thing)Формула$(): CrAl₂O₃",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Відсоток$(): 25%$(br)$(thing)Джерело$(): Алюмінію, Фтору$(br)$(thing)Формула$(): Al₂SiFH₂"
     },
     {
-      "Type": "patchouli:multiblock",
-      "name": "Кіновар",
+      "type": "patchouli:multiblock",
+      "name": "Халькозин",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/cinnabar"
@@ -1854,12 +1945,11 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 19%$(br)$(thing)Джерело$(): Ртуті$(br)$(thing)Формула$(): HgS",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Відсоток$(): 25%$(br)$(thing)Переплавляється у$(): Мідь$(br)$(thing)Формула$(): Cu₂S"
     },
     {
-      "Type": "patchouli:multiblock",
-      "name": "Олівін",
+      "type": "patchouli:multiblock",
+      "name": "Борніт",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/olivine"
@@ -1874,24 +1964,21 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 4%$(br)$(thing)Джерело$(): Магнезії, Заліза$(br)$(thing)Формула$(): Mg₂Fe(SiO₂)₂",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Відсоток$(): 15%$(br)$(thing)Переплавляється у$(): Мідь$(br)$(thing)Формула$(): Cu₅FeS₄"
     },
     {
-      "Type": "patchouli:empty",
-      "draw_filler": true,
-      "type": "patchouli:empty"
+      "type": "patchouli:empty",
+      "draw_filler": true
     },
     {
-      "Type": "patchouli:text",
-      "text": "$(thing)$(t:Ймовірність появи жили на чанк. Менші нижні числа означають більшу поширеність.)Рідкість$(/t)$(): 1/210 чинки$(br)$(thing)$(t:Відсоток блоків у жилі, які є рудами замість каменю. Більший відсоток означає більше руди.)Щільність$(/t)$(): 30%$(br)$(thing)$(t:Форма жили.)Тип$(/t)$(): $(t:Переважно округлої форми) Скупчення жили$(/t)$(br)$(thing)$(t:Рівні Y, між якими може генеруватися жила.)Y$(/t)$(): 0 — 90$(br)$(thing)$(t:Середній діаметр жили.)Розмір$(/t)$(): 30$(br)$(thing)$(t:Якщо відстань між поверхнею та жильною рудою більша за це число, поверхневі індикатори не генеруються.)Максимальна глибина індикатора$(/t)$(): 50$(br)$(thing)Біоми$(): Будь-який$(br2)$(thing)Типи каменю$(): Андезит, Дацит, Норит, Ріоліт",
-      "title": "Селітра, Стеатит, Електротин...",
       "type": "patchouli:text",
+      "text": "$(thing)$(t:Ймовірність появи жили на чанк. Менші нижні числа означають більшу поширеність.)Рідкість$(/t)$(): 1/190 чинки$(br)$(thing)$(t:Відсоток блоків у жилі, які є рудами замість каменю. Більший відсоток означає більше руди.)Щільність$(/t)$(): 25%$(br)$(thing)$(t:Форма жили.)Тип$(/t)$(): $(t:Переважно округлої форми) Скупчення жили$(/t)$(br)$(thing)$(t:Рівні Y, між якими може генеруватися жила.)Y$(/t)$(): 0 — 66$(br)$(thing)$(t:Середній діаметр жили.)Розмір$(/t)$(): 30$(br)$(thing)$(t:Якщо відстань між поверхнею та жильною рудою більша за це число, поверхневі індикатори не генеруються.)Максимальна глибина індикатора$(/t)$(): 20$(br)$(thing)Біоми$(): Будь-який$(br2)$(thing)Типи каменю$(): Анортозит, Базальт, Габро, Діорит, Норит",
+      "title": "Стеатит, Тальк...",
       "anchor": "moon_saltpeter"
     },
     {
-      "Type": "patchouli:multiblock",
-      "name": "Електротин",
+      "type": "patchouli:multiblock",
+      "name": "Стеатит",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/electrotine"
@@ -1906,12 +1993,11 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 37%$(br)$(thing)Джерело$(): Золота, Срібла, Редстоуна$(br)$(thing)Формула$(): (Si(FeS₂)₅(CrAl₂O₃)Hg₃)(AgAu)",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Відсоток$(): 30%$(br)$(thing)Джерело$(): Магнезії$(br)$(thing)Формула$(): Mg₃Si₄H₂O₁₂"
     },
     {
-      "Type": "patchouli:multiblock",
-      "name": "Селітра",
+      "type": "patchouli:multiblock",
+      "name": "Глауконітове скло",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/saltpeter"
@@ -1926,12 +2012,11 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 29%$(br)$(thing)Джерело$(): Калію, Азоту$(br)$(thing)Формула$(): KNO₃",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Відсоток$(): 25%$(br)$(thing)Джерело$(): Магнезії, Алюмінію$(br)$(thing)Формула$(): KMg₂Al₄H₂O₁₂"
     },
     {
-      "Type": "patchouli:multiblock",
-      "name": "Стеатит",
+      "type": "patchouli:multiblock",
+      "name": "Тальк",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/soapstone"
@@ -1946,199 +2031,14 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 20%$(br)$(thing)Джерело$(): Магнезії$(br)$(thing)Формула$(): Mg₃Si₄H₂O₁₂",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Відсоток$(): 20%$(br)$(thing)Джерело$(): Магнезії$(br)$(thing)Формула$(): Mg₃Si₄H₂O₁₂"
     },
     {
-      "Type": "patchouli:multiblock",
-      "name": "Тальк",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/talc"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 12%$(br)$(thing)Джерело$(): Магнезії$(br)$(thing)Формула$(): Mg₃Si₄H₂O₁₂",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:empty",
-      "draw_filler": true,
-      "type": "patchouli:empty"
-    },
-    {
-      "Type": "patchouli:text",
-      "text": "$(thing)$(t:Ймовірність появи жили на чанк. Менші нижні числа означають більшу поширеність.)Рідкість$(/t)$(): 1/210 чинки$(br)$(thing)$(t:Відсоток блоків у жилі, які є рудами замість каменю. Більший відсоток означає більше руди.)Щільність$(/t)$(): 35%$(br)$(thing)$(t:Форма жили.)Тип$(/t)$(): $(t:Широка та пласка)Дискова жила$(/t)$(br)$(thing)$(t:Рівні Y, між якими може генеруватися жила.)Y$(/t)$(): 0 — 120$(br)$(thing)$(t:Середній діаметр жили.)Розмір$(/t)$(): 45$(br)$(thing)Висота$(): 16$(br)$(thing)$(t:Якщо відстань між поверхнею та жильною рудою більша за це число, поверхневі індикатори не генеруються.)Максимальна глибина індикатора$(/t)$(): 20$(br)$(thing)Біоми$(): Будь-який$(br2)$(thing)Типи каменю$(): Андезит, Анортозит, Базальт, Габро, Дацит, Діорит, Норит, Ріоліт, Фоноліт",
-      "title": "Синій топаз, Топаз, Халькозин...",
-      "type": "patchouli:text",
-      "anchor": "moon_topaz"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Синій топаз",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/blue_topaz"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 35%$(br)$(thing)Джерело$(): Алюміній, Фтор$(br)$(thing)Формула$(): Al₂SiF₂H₂O₆",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Топаз",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/topaz"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 25%$(br)$(thing)Джерело$(): Алюмінію, Фтору$(br)$(thing)Формула$(): Al₂SiFH₂",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Халькозин",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/chalcocite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 25%$(br)$(thing)Переплавляється у$(): Мідь$(br)$(thing)Формула$(): Cu₂S",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Борніт",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/bornite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 15%$(br)$(thing)Переплавляється у$(): Мідь$(br)$(thing)Формула$(): Cu₅FeS₄",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:empty",
-      "draw_filler": true,
-      "type": "patchouli:empty"
-    },
-    {
-      "Type": "patchouli:text",
-      "text": "$(thing)$(t:Ймовірність появи жили на чанк. Менші нижні числа означають більшу поширеність.)Рідкість$(/t)$(): 1/190 чинки$(br)$(thing)$(t:Відсоток блоків у жилі, які є рудами замість каменю. Більший відсоток означає більше руди.)Щільність$(/t)$(): 25%$(br)$(thing)$(t:Форма жили.)Тип$(/t)$(): $(t:Переважно округлої форми) Скупчення жили$(/t)$(br)$(thing)$(t:Рівні Y, між якими може генеруватися жила.)Y$(/t)$(): 0 — 66$(br)$(thing)$(t:Середній діаметр жили.)Розмір$(/t)$(): 30$(br)$(thing)$(t:Якщо відстань між поверхнею та жильною рудою більша за це число, поверхневі індикатори не генеруються.)Максимальна глибина індикатора$(/t)$(): 20$(br)$(thing)Біоми$(): Будь-який$(br2)$(thing)Типи каменю$(): Анортозит, Базальт, Габро, Діорит, Норит",
-      "title": "Стеатит, Тальк...",
-      "type": "patchouli:text",
-      "anchor": "moon_lubricant"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Стеатит",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/soapstone"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 30%$(br)$(thing)Джерело$(): Магнезії$(br)$(thing)Формула$(): Mg₃Si₄H₂O₁₂",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Глауконітове скло",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/glauconite_sand"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 25%$(br)$(thing)Джерело$(): Магнезії, Алюмінію$(br)$(thing)Формула$(): KMg₂Al₄H₂O₁₂",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Тальк",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/talc"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 20%$(br)$(thing)Джерело$(): Магнезії$(br)$(thing)Формула$(): Mg₃Si₄H₂O₁₂",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "Пентландит",
       "multiblock": {
         "mapping": {
-          "0": "#forge:ores/pentlandite"
+          "0": "#forge:ores/talc"
         },
         "pattern": [
           [
@@ -2150,11 +2050,11 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 15%$(br)$(thing)Переплавляється у$(): Нікель$(br)$(thing)Формула$(): Ni₉S₈",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Відсоток$(): 15%$(br)$(thing)Переплавляється у$(): Нікель$(br)$(thing)Формула$(): Ni₉S₈"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:empty",
+      "draw_filler": true,
       "name": "Трона",
       "multiblock": {
         "mapping": {
@@ -2170,22 +2070,20 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 10%$(br)$(thing)Джерело$(): Натрію$(br)$(thing)Формула$(): Na₃C₂H(H₂O)₂O₆",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Відсоток$(): 10%$(br)$(thing)Джерело$(): Натрію$(br)$(thing)Формула$(): Na₃C₂H(H₂O)₂O₆"
     },
     {
-      "Type": "patchouli:text",
+      "type": "patchouli:text",
       "text": "$(thing)$(t:Ймовірність появи жили на чанк. Менші нижні числа означають більшу поширеність.)Рідкість$(/t)$(): 1/190 чинки$(br)$(thing)$(t:Відсоток блоків у жилі, які є рудами замість каменю. Більший відсоток означає більше руди.)Щільність$(/t)$(): 30%$(br)$(thing)$(t:Форма жили.)Тип$(/t)$(): $(t:Переважно округлої форми) Скупчення жили$(/t)$(br)$(thing)$(t:Рівні Y, між якими може генеруватися жила.)Y$(/t)$(): 50 — 128$(br)$(thing)$(t:Середній діаметр жили.)Розмір$(/t)$(): 35$(br)$(thing)$(t:Якщо відстань між поверхнею та жильною рудою більша за це число, поверхневі індикатори не генеруються.)Максимальна глибина індикатора$(/t)$(): 60$(br)$(thing)Біоми$(): Будь-який$(br2)$(thing)Типи каменю$(): Андезит, Дацит, Ріоліт, Фоноліт",
       "title": "Тетраедрит, Самородна мідь...",
-      "type": "patchouli:text",
-      "anchor": "moon_tetrahedrite"
+      "anchor": "moon_scheelite"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "Тетраедрит",
       "multiblock": {
         "mapping": {
-          "0": "#forge:ores/tetrahedrite"
+          "0": "#forge:ores/tungstate"
         },
         "pattern": [
           [
@@ -2197,15 +2095,14 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 40%$(br)$(thing)Переплавляється у$(): Міді$(br)$(thing)Формула$(): Cu₃SbS₃Fe",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Відсоток$(): 40%$(br)$(thing)Переплавляється у$(): Міді$(br)$(thing)Формула$(): Cu₃SbS₃Fe"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "Халькозин",
       "multiblock": {
         "mapping": {
-          "0": "#forge:ores/chalcocite"
+          "0": "#forge:ores/scheelite"
         },
         "pattern": [
           [
@@ -2217,15 +2114,14 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 25%$(br)$(thing)Переплавляється у$(): Мідь$(br)$(thing)Формула$(): Cu₂S",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Відсоток$(): 25%$(br)$(thing)Переплавляється у$(): Мідь$(br)$(thing)Формула$(): Cu₂S"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "Антимоніт",
       "multiblock": {
         "mapping": {
-          "0": "#forge:ores/stibnite"
+          "0": "#forge:ores/lithium"
         },
         "pattern": [
           [
@@ -2237,11 +2133,13 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 20%$(br)$(thing)Плавиться в$(): Стибій$(br)$(thing)Формула$(): Sb₂S₃",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Відсоток$(): 20%$(br)$(thing)Плавиться в$(): Стибій$(br)$(thing)Формула$(): Sb₂S₃"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:text",
+      "text": "$(thing)Відсоток$(): 15%$(br)$(thing)Переплавляється у$(): Мідь$(br)$(thing)Формула$(): Cu",
+      "title": "Soapstone, Talc...",
+      "anchor": "moon_lubricant",
       "name": "Самородна мідь",
       "multiblock": {
         "mapping": {
@@ -2256,28 +2154,55 @@
           ]
         ]
       },
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Soapstone",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/soapstone"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 15%$(br)$(thing)Переплавляється у$(): Мідь$(br)$(thing)Формула$(): Cu",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Percentage$(): 30%$(br)$(thing)Source of$(): Magnesium$(br)$(thing)Formula$(): Mg₃Si₄H₂O₁₂",
+      "draw_filler": true
     },
     {
-      "Type": "patchouli:empty",
-      "draw_filler": true,
-      "type": "patchouli:empty"
-    },
-    {
-      "Type": "patchouli:text",
+      "type": "patchouli:multiblock",
+      "name": "Glauconite Sand",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/glauconite_sand"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
       "text": "$(thing)$(t:Ймовірність появи жили на чанк. Менші нижні числа означають більшу поширеність.)Рідкість$(/t)$(): 1/210 чинки$(br)$(thing)$(t:Відсоток блоків у жилі, які є рудами замість каменю. Більший відсоток означає більше руди.)Щільність$(/t)$(): 30%$(br)$(thing)$(t:Форма жили.)Тип$(/t)$(): $(t:Переважно округлої форми) Скупчення жили$(/t)$(br)$(thing)$(t:Рівні Y, між якими може генеруватися жила.)Y$(/t)$(): 10 — 128$(br)$(thing)$(t:Середній діаметр жили.)Розмір$(/t)$(): 35$(br)$(thing)$(t:Якщо відстань між поверхнею та жильною рудою більша за це число, поверхневі індикатори не генеруються.)Максимальна глибина індикатора$(/t)$(): 60$(br)$(thing)Біоми$(): Будь-який$(br2)$(thing)Типи каменю$(): Габро, Гранит, Діорит, Норит",
       "title": "Халькопірит, Цеоліт...",
-      "type": "patchouli:text",
       "anchor": "moon_cassiterite"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "Каситерит",
       "multiblock": {
         "mapping": {
-          "0": "#forge:ores/cassiterite"
+          "0": "#forge:ores/talc"
         },
         "pattern": [
           [
@@ -2289,15 +2214,14 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 41%$(br)$(thing)Переплавляється у$(): Олово$(br)$(thing)Формула$(): SnO₂",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Відсоток$(): 41%$(br)$(thing)Переплавляється у$(): Олово$(br)$(thing)Формула$(): SnO₂"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "Халькопірит",
       "multiblock": {
         "mapping": {
-          "0": "#forge:ores/chalcopyrite"
+          "0": "#forge:ores/pentlandite"
         },
         "pattern": [
           [
@@ -2309,15 +2233,14 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 35%$(br)$(thing)Переплавляється у$(): Мідь$(br)$(thing)Формула$(): CuFeS₂",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Відсоток$(): 35%$(br)$(thing)Переплавляється у$(): Мідь$(br)$(thing)Формула$(): CuFeS₂"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "Олово",
       "multiblock": {
         "mapping": {
-          "0": "#forge:ores/tin"
+          "0": "#forge:ores/trona"
         },
         "pattern": [
           [
@@ -2329,11 +2252,13 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 17%$(br)$(thing)Переплавляється у$(): Олово$(br)$(thing)Формула$(): Sn",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Відсоток$(): 17%$(br)$(thing)Переплавляється у$(): Олово$(br)$(thing)Формула$(): Sn"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:text",
+      "text": "$(thing)Відсоток$(): 5%$(br)$(thing)Джерело$(): Алюмінію, Кисню$(br)$(thing)Формула$(): NaCa₄Si₂₇Al₉(H₂O)₂₈O₇₂",
+      "title": "Tetrahedrite, Native Copper...",
+      "anchor": "moon_tetrahedrite",
       "name": "Цеоліт",
       "multiblock": {
         "mapping": {
@@ -2348,28 +2273,55 @@
           ]
         ]
       },
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Tetrahedrite",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/tetrahedrite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 5%$(br)$(thing)Джерело$(): Алюмінію, Кисню$(br)$(thing)Формула$(): NaCa₄Si₂₇Al₉(H₂O)₂₈O₇₂",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Percentage$(): 40%$(br)$(thing)Melts into$(): Copper$(br)$(thing)Formula$(): Cu₃SbS₃Fe",
+      "draw_filler": true
     },
     {
-      "Type": "patchouli:empty",
-      "draw_filler": true,
-      "type": "patchouli:empty"
-    },
-    {
-      "Type": "patchouli:text",
+      "type": "patchouli:multiblock",
+      "name": "Chalcocite",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/chalcocite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
       "text": "$(thing)$(t:Ймовірність появи жили на чанк. Менші нижні числа означають більшу поширеність.)Рідкість$(/t)$(): 1/230 чинки$(br)$(thing)$(t:Відсоток блоків у жилі, які є рудами замість каменю. Більший відсоток означає більше руди.)Щільність$(/t)$(): 35%$(br)$(thing)$(t:Форма жили.)Тип$(/t)$(): $(t:Широка та пласка)Дискова жила$(/t)$(br)$(thing)$(t:Рівні Y, між якими може генеруватися жила.)Y$(/t)$(): 10 — 128$(br)$(thing)$(t:Середній діаметр жили.)Розмір$(/t)$(): 35$(br)$(thing)Висота$(): 7$(br)$(thing)$(t:Якщо відстань між поверхнею та жильною рудою більша за це число, поверхневі індикатори не генеруються.)Максимальна глибина індикатора$(/t)$(): 20$(br)$(thing)Біоми$(): Будь-який$(br2)$(thing)Типи каменю$(): Андезит, Базальт, Ріоліт",
       "title": "Червоний гранат...",
-      "type": "patchouli:text",
       "anchor": "moon_garnet"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "Аметист",
       "multiblock": {
         "mapping": {
-          "0": "#forge:ores/amethyst"
+          "0": "#forge:ores/stibnite"
         },
         "pattern": [
           [
@@ -2381,15 +2333,14 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 38%$(br)$(thing)Джерело$(): Заліза$(br)$(thing)Формула$(): (SiO₂)₄Fe",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Відсоток$(): 38%$(br)$(thing)Джерело$(): Заліза$(br)$(thing)Формула$(): (SiO₂)₄Fe"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "Опал",
       "multiblock": {
         "mapping": {
-          "0": "#forge:ores/opal"
+          "0": "#forge:ores/copper"
         },
         "pattern": [
           [
@@ -2401,11 +2352,11 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 38%$(br)$(thing)Джерело$(): Кремнію, Кисню$(br)$(thing)Формула$(): (SiO₂)",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Відсоток$(): 38%$(br)$(thing)Джерело$(): Кремнію, Кисню$(br)$(thing)Формула$(): (SiO₂)"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:empty",
+      "draw_filler": true,
       "name": "Жовтий гранат",
       "multiblock": {
         "mapping": {
@@ -2421,11 +2372,13 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 14%$(br)$(thing)Джерело$(): Андрадіту, Гросуляру, Уваровіту",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Відсоток$(): 14%$(br)$(thing)Джерело$(): Андрадіту, Гросуляру, Уваровіту"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:text",
+      "text": "$(thing)Відсоток$(): 9%$(br)$(thing)Джерело$(): Піроп, Альмандин, Спесартину",
+      "title": "Wulfenite, Powellite...",
+      "anchor": "moon_molybdenum",
       "name": "Червоний гранат",
       "multiblock": {
         "mapping": {
@@ -2440,28 +2393,55 @@
           ]
         ]
       },
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Wulfenite",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/wulfenite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 9%$(br)$(thing)Джерело$(): Піроп, Альмандин, Спесартину",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Percentage$(): 44%$(br)$(thing)Source of$(): Lead, Molybdenum$(br)$(thing)Formula$(): PbMoO₄",
+      "draw_filler": true
     },
     {
-      "Type": "patchouli:empty",
-      "draw_filler": true,
-      "type": "patchouli:empty"
-    },
-    {
-      "Type": "patchouli:text",
+      "type": "patchouli:multiblock",
+      "name": "Powellite",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/powellite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
       "text": "$(thing)$(t:Ймовірність появи жили на чанк. Менші нижні числа означають більшу поширеність.)Рідкість$(/t)$(): 1/200 чинки$(br)$(thing)$(t:Відсоток блоків у жилі, які є рудами замість каменю. Більший відсоток означає більше руди.)Щільність$(/t)$(): 40%$(br)$(thing)$(t:Форма жили.)Тип$(/t)$(): $(t:Переважно округлої форми) Скупчення жили$(/t)$(br)$(thing)$(t:Рівні Y, між якими може генеруватися жила.)Y$(/t)$(): 0 — 70$(br)$(thing)$(t:Середній діаметр жили.)Розмір$(/t)$(): 20$(br)$(thing)$(t:Якщо відстань між поверхнею та жильною рудою більша за це число, поверхневі індикатори не генеруються.)Максимальна глибина індикатора$(/t)$(): 50$(br)$(thing)Біоми$(): Будь-який$(br2)$(thing)Типи каменю$(): Габро, Ріоліт, Фоноліт",
       "title": "Шеєліт, Вольфрамат, Літій",
-      "type": "patchouli:text",
       "anchor": "moon_scheelite"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "Вольфрамат",
       "multiblock": {
         "mapping": {
-          "0": "#forge:ores/tungstate"
+          "0": "#forge:ores/molybdenite"
         },
         "pattern": [
           [
@@ -2473,15 +2453,14 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 50%$(br)$(thing)Джерело$(): Вольфраму, Літію$(br)$(thing)Формула$(): Li₂(WO₃)O",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Відсоток$(): 50%$(br)$(thing)Джерело$(): Вольфраму, Літію$(br)$(thing)Формула$(): Li₂(WO₃)O"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "Шеєліт",
       "multiblock": {
         "mapping": {
-          "0": "#forge:ores/scheelite"
+          "0": "#forge:ores/olivine"
         },
         "pattern": [
           [
@@ -2493,11 +2472,11 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 40%$(br)$(thing)Джерело$(): Вольфраму$(br)$(thing)Формула$(): Ca(WO₃)O",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Відсоток$(): 40%$(br)$(thing)Джерело$(): Вольфраму$(br)$(thing)Формула$(): Ca(WO₃)O"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:empty",
+      "draw_filler": true,
       "name": "Літій",
       "multiblock": {
         "mapping": {
@@ -2513,8 +2492,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 10%$(br)$(thing)Джерело$(): Літію$(br)$(thing)Формула$(): Li",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Відсоток$(): 10%$(br)$(thing)Джерело$(): Літію$(br)$(thing)Формула$(): Li"
     }
   ],
   "sortnum": 5

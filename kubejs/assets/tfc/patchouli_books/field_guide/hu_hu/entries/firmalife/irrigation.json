@@ -13,10 +13,10 @@
 			"text": "A locsolót egy $(thing)Réz lemezzel$() készül."
 		},
 		{
-			"title": "Csövezés",
-			"item": "gtceu:copper_tiny_fluid_pipe",
 			"type": "patchouli:spotlight",
-			"text": "A locsolókat be kell kötni egy csőrendszerbe, ami el lássa őket vízzel, ez szükséges a működésükhöz. Ezt úgy érjük, hogy egy $(thing)folyadék cső$() rendszert csatlakoztatunk hozzájuk. A vizet szivattyúzhatod egy $(thing)mechanikus szivattyúval$()."
+			"text": "A locsolókat be kell kötni egy csőrendszerbe, ami el lássa őket vízzel, ez szükséges a működésükhöz. Ezt úgy érjük, hogy egy $(thing)folyadék cső$() rendszert csatlakoztatunk hozzájuk. A vizet szivattyúzhatod egy $(thing)mechanikus szivattyúval$().",
+			"title": "Csövezés",
+			"item": "gtceu:copper_tiny_fluid_pipe"
 		},
 		{
 			"type": "patchouli:text",

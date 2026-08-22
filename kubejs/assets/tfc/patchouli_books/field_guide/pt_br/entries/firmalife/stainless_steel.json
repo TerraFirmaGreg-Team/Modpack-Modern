@@ -1,0 +1,31 @@
+{
+  "name": "Aço Inoxidável",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:metal/ingot/stainless_steel",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)Aço Inoxidável$() e $(thing)Cromo$() são metais de $(thing)nível Aço$() adicionados pelo Firmalife. Eles são usados na construção de $(l:firmalife/greenhouse)Estufa de Aço Inoxidável$()."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "firmalife:metal/ingot/stainless_steel",
+      "title": "Aço Inoxidável",
+      "link_recipes": false,
+      "text": "$(br)$(bold)Requisitos:$()$(br)$(li)20 - 30 % : $(thing)Cromo$()$(li)10 - 20 % : $(thing)Níquel$()$(li)60 - 80 % : $(thing)Aço$()$(br2)"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "firmalife:ore/small_chromite",
+      "link_recipes": false,
+      "text": "Cromita é um minério que é fundido para obter Crômio. É encontrado em rochas $(thing)Ígneas Intrusivas$() e $(thing)Metamórficas$()."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(li)Granito$()$(li)Diorito$()$(li)Gabro$()$(li)Ardósia$()$(li)Filito$()$(li)Xisto$()$(li)Gnaisse$()$(li)Mármore$()",
+      "title": "Todas as Rochas de Cromo"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 11
+}

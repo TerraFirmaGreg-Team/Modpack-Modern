@@ -1,0 +1,1214 @@
+{
+  "name": "§l광석과 광물",
+  "category": "tfc:the_world",
+  "icon": "tfc:ore/normal_hematite",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "TerraFirmaCraft에서 광석과 광물들은 흔하지 않습니다. 바닐라와 다르게, 광석들은 $(l:mechanics/prospecting)탐색기$()로 찾을 수 있는 거대하지만 드문 광맥에서 찾을 수 있습니다. 각각의 광물마다 발견할 수 있는 암석 종류나 고도가 다릅니다. 따라서 원하는 광석을 찾기 위해서는 올바른 고도에서 올바른 암석의 종류를 찾는 것이 중요합니다."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "In addition, some ores are $(thing)Graded$(). Ore blocks may be Poor, Normal, or Rich, and different veins will have different concentrations of each type of block. Veins that are $(thing)richer$() are more lucrative.$(br2)The next several pages show the different types of ores, what they look like, and where to find them."
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "native_copper",
+      "text": "Native Copper is an ore of $(thing)Copper$() metal. It can be found in $(l:the_world/geology#igneous_extrusive)Igneous Extrusive$() rocks, at elevations above y=40.$(br2)It can also be found in deposits in $(thing)rivers$(), which can be $(l:mechanics/panning)panned$().",
+      "title": "§l자연동"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "석영안산암 속의 자연동 광석.",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:ore/poor_native_copper/dacite"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:ore/normal_native_copper/dacite"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:ore/rich_native_copper/dacite"
+          }
+        }
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "native_gold",
+      "text": "Native Gold is an ore of $(thing)Gold$() metal. It can be found at elevations below y=70, but deeper veins are larger and richer. It can be found in $(l:the_world/geology#igneous_extrusive)Igneous Extrusive$() and $(l:the_world/geology#igneous_intrusive)Igneous Intrusive$() rocks.$(br2)It can also be found in deposits in $(thing)rivers$(), which can be $(l:mechanics/panning)panned$().",
+      "title": "§l자연금"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "섬록암 속의 자연금 광석",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:ore/poor_native_gold/diorite"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:ore/normal_native_gold/diorite"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:ore/rich_native_gold/diorite"
+          }
+        }
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "native_silver",
+      "text": "Native Silver is an ore of $(thing)Silver$() metal. Small poor veins can be found in $(thing)Granite$() or $(thing)Diorite$() in uplift regions, above y=90. Larger and richer veins can be found in $(thing)Granite$(), $(thing)Diorite$(), $(thing)Schist$(), and $(thing)Gneiss$() deep underground below y=20.$(br2)It can also be found in deposits in $(thing)rivers$(), which can be $(l:mechanics/panning)panned$().",
+      "title": "§l자연은"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "화강암 속의 자연은 광석.",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:ore/poor_native_silver/granite"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:ore/normal_native_silver/granite"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:ore/rich_native_silver/granite"
+          }
+        }
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "tetrahedrite",
+      "text": "사면동석은 $(thing)구리$() 광석입니다. 모든 고도에서 발견할 수 있지만, 깊은 광맥일수록 대체로 풍부합니다. 사면동석은 $(l:the_world/geology#metamorphic)변성암$()에서 찾을 수 있습니다.",
+      "title": "§l사면동석"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "편암 속의 사면동석 광석.",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:ore/poor_tetrahedrite/schist"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:ore/normal_tetrahedrite/schist"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:ore/rich_tetrahedrite/schist"
+          }
+        }
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "malachite",
+      "text": "Malachite is an ore of $(thing)Copper$() metal. It can be found primarily in $(thing)Marble$() or $(thing)Limestone$(), $(thing)Chalk$(), and $(thing)Dolomite$(). It can be found at most elevations, however deeper veins are often larger and richer.",
+      "title": "§l공작석"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "대리암 속의 공작석 광석.",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:ore/poor_malachite/marble"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:ore/normal_malachite/marble"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:ore/rich_malachite/marble"
+          }
+        }
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "cassiterite",
+      "text": "Cassiterite is an ore of $(thing)Tin$() metal. It can be found in $(l:the_world/geology#igneous_intrusive)Igneous Intrusive$() rocks at high elevation, above y=80 in uplift regions or in dikes.$(br2)It can also be found in deposits in $(thing)rivers$(), which can be $(l:mechanics/panning)panned$().",
+      "title": "§l주석석"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "섬록암 속의 주석석 광석.",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:ore/poor_cassiterite/diorite"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:ore/normal_cassiterite/diorite"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:ore/rich_cassiterite/diorite"
+          }
+        }
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "bismuthinite",
+      "text": "Bismuthinite is an ore of $(thing)Bismuth$() metal. It can be found in $(l:the_world/geology#sedimentary)Sedimentary$() rocks near the surface, or larger and richer veins in $(l:the_world/geology#igneous_intrusive)Igneous Intrusive$() rocks deep underground.",
+      "title": "§l휘창연석"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "셰일 속의 휘창연석 광석.",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:ore/poor_bismuthinite/shale"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:ore/normal_bismuthinite/shale"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:ore/rich_bismuthinite/shale"
+          }
+        }
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "garnierite",
+      "text": "Garnierite is an ore of $(thing)Nickel$() metal. It can be found at elevations below y=0. It can be found primarily in $(thing)Gabbro$() deep underground. Smaller, rarer veins can also be found in any $(l:the_world/geology#igneous_intrusive)Igneous Intrusive$() rock.",
+      "title": "§l규니켈석"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "반려암 속의 규니켈석 광석.",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:ore/poor_garnierite/gabbro"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:ore/normal_garnierite/gabbro"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:ore/rich_garnierite/gabbro"
+          }
+        }
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "hematite",
+      "text": "Hematite is an ore of $(thing)Iron$() metal. It can be found in large veins in any $(l:the_world/geology#igneous_extrusive)Igneous Extrusive$() rocks near the surface.",
+      "title": "§l적철석"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "안산암 속의 적철석 광석.",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:ore/poor_hematite/andesite"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:ore/normal_hematite/andesite"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:ore/rich_hematite/andesite"
+          }
+        }
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "magnetite",
+      "text": "Magnetite is an ore of $(thing)Iron$() metal. It can be found in large veins in any $(l:the_world/geology#sedimentary)Sedimentary$() rocks near the surface.",
+      "title": "§l자철석"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "석회암 속의 자철석 광석.",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:ore/poor_magnetite/limestone"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:ore/normal_magnetite/limestone"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:ore/rich_magnetite/limestone"
+          }
+        }
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "limonite",
+      "text": "Limonite is an ore of $(thing)Iron$() metal. It can be found in large veins in any $(l:the_world/geology#sedimentary)Sedimentary$() rocks near the surface.",
+      "title": "§l갈철석"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "백악 속의 갈철석 광석.",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:ore/poor_limonite/chalk"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:ore/normal_limonite/chalk"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:ore/rich_limonite/chalk"
+          }
+        }
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "sphalerite",
+      "text": "Sphalerite is an ore of $(thing)Zinc$() metal. Small, poor veins can be found in $(l:the_world/geology#igneous_extrusive)Igneous Extrusive$() rocks near the surface, and large richer veins can be found in $(l:the_world/geology#igneous_intrusive)Igneous Intrusive$() rocks deep underground.",
+      "title": "§l섬아연석"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "규암 속의 섬아연석 광석.",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:ore/poor_sphalerite/quartzite"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:ore/normal_sphalerite/quartzite"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:ore/rich_sphalerite/quartzite"
+          }
+        }
+      ]
+    },
+    {
+      "type": "patchouli:spotlight",
+      "anchor": "lignite",
+      "item": "tfc:ore/lignite",
+      "title": "§l갈탄",
+      "link_recipes": false,
+      "text": "Lignite is a type of low-grade $(thing)Coal$() ore. It can be found in very large flat deposits near the surface in $(l:the_world/geology#sedimentary)Sedimentary$() rocks."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "0"
+          ]
+        ],
+        "mapping": {
+          "X": "tfc:ore/lignite/dolomite"
+        }
+      },
+      "name": "",
+      "text": "백운암 속의 갈탄.",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:spotlight",
+      "anchor": "bituminous_coal",
+      "item": "tfc:ore/bituminous_coal",
+      "title": "§l역청탄",
+      "link_recipes": false,
+      "text": "Bituminous Coal is a type of mid-grade $(thing)Coal$() ore. It can be found in very large flat deposits near the surface in $(l:the_world/geology#sedimentary)Sedimentary$() rocks."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "0"
+          ]
+        ],
+        "mapping": {
+          "X": "tfc:ore/bituminous_coal/chert"
+        }
+      },
+      "name": "",
+      "text": "각암 속의 역청탄.",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:spotlight",
+      "anchor": "kaolinite",
+      "item": "tfc:kaolin_clay",
+      "title": "§l고령석",
+      "link_recipes": false,
+      "text": "Kaolinite is a soft $(thing)Mineral$() which is used in the construction of $(l:mechanics/fire_clay)Fire Clay$(). It can be found spawning at high altitudes in Plateaus, Old Mountains, and Highlands, at a $(l:the_world/climate#temperature)temperature$() of at least 18°C, with a $(l:the_world/climate#rainfall)rainfall$() of at least 300mm. The $(thing)Blood Lily$() flower grows on Kaolin clay."
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "Variants of kaolin clay.",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:plant/blood_lily",
+            "Y": "tfc:kaolin_clay_grass"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:plant/blood_lily",
+            "Y": "tfc:red_kaolin_clay"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:plant/blood_lily",
+            "Y": "tfc:white_kaolin_clay"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:plant/blood_lily",
+            "Y": "tfc:pink_kaolin_clay"
+          }
+        }
+      ]
+    },
+    {
+      "type": "patchouli:spotlight",
+      "anchor": "graphite",
+      "item": "tfc:ore/graphite",
+      "title": "§l흑연",
+      "link_recipes": false,
+      "text": "Graphite is a $(thing)Mineral$() which is used in the construction of $(l:mechanics/fire_clay)Fire Clay$(). It can be found in $(thing)Gneiss$(), $(thing)Marble$(), $(thing)Quartzite$(), and $(thing)Schist$() rocks, in elevations below y=60 and above y=-30."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "0"
+          ]
+        ],
+        "mapping": {
+          "X": "tfc:ore/graphite/gneiss"
+        }
+      },
+      "name": "",
+      "text": "편마암 속의 흑연.",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:spotlight",
+      "anchor": "cinnabar",
+      "item": "tfc:ore/cinnabar",
+      "title": "§l진사",
+      "link_recipes": false,
+      "text": "Cinnabar is a $(thing)Mineral$() which can be ground in the $(l:mechanics/quern)Quern$() to obtain $(thing)Redstone Dust$(). It can be found in veins deep underground, in $(thing)Quartzite$(), $(thing)Gneiss$(), $(thing)Phyllite$(), and $(thing)Schist$()."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "0"
+          ]
+        ],
+        "mapping": {
+          "X": "tfc:ore/cinnabar/quartzite"
+        }
+      },
+      "name": "",
+      "text": "규암 속의 진사.",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:spotlight",
+      "anchor": "cryolite",
+      "item": "tfc:ore/cryolite",
+      "title": "§l빙정석",
+      "link_recipes": false,
+      "text": "Cryolite is a $(thing)Mineral$() which can be ground in the $(l:mechanics/quern)Quern$() to obtain $(thing)Redstone Dust$(). It can be found in veins deep underground, in $(thing)Granite$(), and $(thing)Diorite$()."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "0"
+          ]
+        ],
+        "mapping": {
+          "X": "tfc:ore/cryolite/granite"
+        }
+      },
+      "name": "",
+      "text": "화강암 속의 빙정석.",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:spotlight",
+      "anchor": "saltpeter",
+      "item": "tfc:ore/saltpeter",
+      "title": "§l초석",
+      "link_recipes": false,
+      "text": "Saltpeter is a $(thing)Mineral$() which can be ground in the $(l:mechanics/quern)Quern$(), and then used in the crafting of $(thing)Gunpowder$(). It can be found in very large flat deposits near the surface in $(l:the_world/geology#sedimentary)Sedimentary$() rocks."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "0"
+          ]
+        ],
+        "mapping": {
+          "X": "tfc:ore/saltpeter/shale"
+        }
+      },
+      "name": "",
+      "text": "셰일 속의 초석.",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:spotlight",
+      "anchor": "sulfur",
+      "item": "tfc:ore/sulfur",
+      "title": "§l황",
+      "link_recipes": false,
+      "text": "Sulfur is a $(thing)Mineral$() which can be ground in the $(l:mechanics/quern)Quern$(), and then used in the crafting of $(thing)Gunpowder$(). It is found near lava level deep underground, in sparse but large and plentiful veins, in any $(l:the_world/geology#metamorphic)Metamorphic$() or $(l:the_world/geology#igneous_intrusive)Igneous Intrusive$() rock."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "0"
+          ]
+        ],
+        "mapping": {
+          "X": "tfc:ore/sulfur/gabbro"
+        }
+      },
+      "name": "",
+      "text": "Sulfur in Gabbro.",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:spotlight",
+      "anchor": "sylvite",
+      "item": "tfc:ore/sylvite",
+      "title": "§l칼리암염",
+      "link_recipes": false,
+      "text": "Sylvite is a $(thing)Mineral$() which can be ground in the $(l:mechanics/quern)Quern$(), and then used as a $(l:mechanics/fertilizers)Fertilizer$(). It can be found in very large flat deposits near the surface in $(thing)Shale$(), $(thing)Claystone$() and $(thing)Chert$()."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "0"
+          ]
+        ],
+        "mapping": {
+          "X": "tfc:ore/sylvite/chert"
+        }
+      },
+      "name": "",
+      "text": "각암 속의 칼리암염.",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:spotlight",
+      "anchor": "borax",
+      "item": "tfc:ore/borax",
+      "title": "§l붕사",
+      "link_recipes": false,
+      "text": "Borax is a $(thing)Mineral$() which can be ground in the $(l:mechanics/quern)Quern$() to produce $(l:mechanics/flux)Flux$(). It can be found in very large flat deposits near the surface in $(thing)Claystone$(), $(thing)Limestone$(), and $(thing)Shale$()."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "0"
+          ]
+        ],
+        "mapping": {
+          "X": "tfc:ore/borax/shale"
+        }
+      },
+      "name": "",
+      "text": "셰일 속의 붕사.",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:spotlight",
+      "anchor": "gypsum",
+      "item": "tfc:ore/gypsum",
+      "title": "§l석고",
+      "link_recipes": false,
+      "text": "Gypsum is a decorative $(thing)Mineral$() which can be used to make $(l:mechanics/advanced_building_materials#alabaster)Alabaster$(). It can be found in very large flat deposits near the surface in $(l:the_world/geology#sedimentary)Sedimentary$() rocks."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "0"
+          ]
+        ],
+        "mapping": {
+          "X": "tfc:ore/gypsum/chalk"
+        }
+      },
+      "name": "",
+      "text": "Gypsum in Chalk.",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:spotlight",
+      "anchor": "halite",
+      "item": "tfc:ore/halite",
+      "title": "§l암염",
+      "link_recipes": false,
+      "text": "Halite is a $(thing)Mineral$() which can be ground in the $(l:mechanics/quern)Quern$() to make $(thing)Salt$(), which is an important $(l:mechanics/decay#salting)Preservative$(). It can be found in very large flat deposits near the surface in $(l:the_world/geology#sedimentary)Sedimentary$() rocks."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "0"
+          ]
+        ],
+        "mapping": {
+          "X": "tfc:ore/halite/chalk"
+        }
+      },
+      "name": "",
+      "text": "백악 속의 암염.",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:spotlight",
+      "anchor": "emerald",
+      "item": "tfc:ore/emerald",
+      "title": "§l에메랄드",
+      "link_recipes": false,
+      "text": "에메랄드는 장식용 $(thing)보석$()입니다. 꽤 예뻐 보이는데, 이 고독한 세상에서 누군가와 거래할 수 있을지는 모르겠네요...$(br2)에메랄드는 최대 60블록까지 수직적으로 광석이 생성됩니다. $(l:the_world/geology#igneous_intrusive)심성암$()에서 찾을 수 있습니다."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "0"
+          ]
+        ],
+        "mapping": {
+          "X": "tfc:ore/emerald/diorite"
+        }
+      },
+      "name": "",
+      "text": "섬록암 속의 에메랄드.",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:spotlight",
+      "anchor": "diamond",
+      "item": "tfc:ore/diamond",
+      "title": "§l킴벌라이트",
+      "link_recipes": false,
+      "text": "킴벌라이트는 귀중한 장식용 $(thing)보석$()입니다. 킴벌라이트는 $(l:https://en.wikipedia.org/wiki/Volcanic_pipe)킴벌라이트 파이프$()라는 구조로 최대 60블록까지 수직적으로 광석이 생성됩니다. 유일하게 $(thing)반려암$()에서만 찾을 수 있습니다."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "0"
+          ]
+        ],
+        "mapping": {
+          "X": "tfc:ore/diamond/gabbro"
+        }
+      },
+      "name": "",
+      "text": "반려암 속의 킴벌라이트.",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:spotlight",
+      "anchor": "lapis_lazuli",
+      "item": "tfc:ore/lapis_lazuli",
+      "title": "§l청금석",
+      "link_recipes": false,
+      "text": "Lapis Lazuli is a decorative $(thing)Mineral$() which can be used to make $(l:mechanics/dye)Blue Dye$(). It can be found in large, but sparse veins in $(thing)Limestone$() and $(thing)Marble$(), between y=-20 and y=80."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "0"
+          ]
+        ],
+        "mapping": {
+          "X": "tfc:ore/lapis_lazuli/marble"
+        }
+      },
+      "name": "",
+      "text": "Lapis Lazuli in Marble.",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:spotlight",
+      "anchor": "amethyst",
+      "item": "tfc:ore/amethyst",
+      "title": "자수정",
+      "link_recipes": false,
+      "text": "Amethyst is a decorative $(thing)Mineral$() which can be used to make $(l:mechanics/glassworking)Glass$(). It can be found in $(thing)Sedimentary$() and $(thing)Metamorphic$() rock beneath rivers above y=40."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "0"
+          ]
+        ],
+        "mapping": {
+          "X": "tfc:ore/amethyst/marble"
+        }
+      },
+      "name": "",
+      "text": "Amethyst in Marble.",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:spotlight",
+      "anchor": "opal",
+      "item": "tfc:ore/opal",
+      "title": "오팔",
+      "link_recipes": false,
+      "text": "Opal is a decorative $(thing)Mineral$(). It can be found in $(thing)Sedimentary) and $(thing)Igneous Extrusive$() rock beneath rivers above y=40."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "0"
+          ]
+        ],
+        "mapping": {
+          "X": "tfc:ore/opal/basalt"
+        }
+      },
+      "name": "",
+      "text": "Opal in Basalt.",
+      "enable_visualize": false
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 1,
+  "extra_recipe_mappings": {
+    "tfc:ore/small_native_copper": 2,
+    "tfc:ore/poor_native_copper": 2,
+    "tfc:ore/normal_native_copper": 2,
+    "tfc:ore/rich_native_copper": 2,
+    "tfc:ore/small_native_gold": 4,
+    "tfc:ore/poor_native_gold": 4,
+    "tfc:ore/normal_native_gold": 4,
+    "tfc:ore/rich_native_gold": 4,
+    "tfc:ore/small_native_silver": 6,
+    "tfc:ore/poor_native_silver": 6,
+    "tfc:ore/normal_native_silver": 6,
+    "tfc:ore/rich_native_silver": 6,
+    "tfc:ore/small_tetrahedrite": 8,
+    "tfc:ore/poor_tetrahedrite": 8,
+    "tfc:ore/normal_tetrahedrite": 8,
+    "tfc:ore/rich_tetrahedrite": 8,
+    "tfc:ore/small_malachite": 10,
+    "tfc:ore/poor_malachite": 10,
+    "tfc:ore/normal_malachite": 10,
+    "tfc:ore/rich_malachite": 10,
+    "tfc:ore/small_cassiterite": 12,
+    "tfc:ore/poor_cassiterite": 12,
+    "tfc:ore/normal_cassiterite": 12,
+    "tfc:ore/rich_cassiterite": 12,
+    "tfc:ore/small_bismuthinite": 14,
+    "tfc:ore/poor_bismuthinite": 14,
+    "tfc:ore/normal_bismuthinite": 14,
+    "tfc:ore/rich_bismuthinite": 14,
+    "tfc:ore/small_garnierite": 16,
+    "tfc:ore/poor_garnierite": 16,
+    "tfc:ore/normal_garnierite": 16,
+    "tfc:ore/rich_garnierite": 16,
+    "tfc:ore/small_hematite": 18,
+    "tfc:ore/poor_hematite": 18,
+    "tfc:ore/normal_hematite": 18,
+    "tfc:ore/rich_hematite": 18,
+    "tfc:ore/small_magnetite": 20,
+    "tfc:ore/poor_magnetite": 20,
+    "tfc:ore/normal_magnetite": 20,
+    "tfc:ore/rich_magnetite": 20,
+    "tfc:ore/small_limonite": 22,
+    "tfc:ore/poor_limonite": 22,
+    "tfc:ore/normal_limonite": 22,
+    "tfc:ore/rich_limonite": 22,
+    "tfc:ore/small_sphalerite": 24,
+    "tfc:ore/poor_sphalerite": 24,
+    "tfc:ore/normal_sphalerite": 24,
+    "tfc:ore/rich_sphalerite": 24,
+    "tfc:ore/lignite": 26,
+    "tfc:ore/bituminous_coal": 28,
+    "tfc:red_kaolin_clay": 30,
+    "tfc:pink_kaolin_clay": 30,
+    "tfc:white_kaolin_clay": 30,
+    "tfc:kaolin_clay_grass": 30,
+    "tfc:kaolin_clay": 30,
+    "tfc:ore/graphite": 32,
+    "tfc:ore/cinnabar": 34,
+    "tfc:ore/cryolite": 36,
+    "tfc:ore/saltpeter": 38,
+    "tfc:ore/sulfur": 40,
+    "tfc:ore/sylvite": 42,
+    "tfc:ore/borax": 44,
+    "tfc:ore/gypsum": 46,
+    "tfc:ore/halite": 48,
+    "tfc:ore/emerald": 50,
+    "tfc:ore/diamond": 52,
+    "tfc:ore/lapis_lazuli": 54,
+    "tfc:ore/amethyst": 56,
+    "tfc:ore/opal": 58
+  }
+}

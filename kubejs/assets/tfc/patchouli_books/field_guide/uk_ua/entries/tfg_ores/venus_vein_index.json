@@ -7,25 +7,22 @@
   "secret": false,
   "pages": [
     {
-      "Type": "patchouli:text",
+      "type": "patchouli:text",
       "text": "Це $(thing)Індекс жил$() для $(item)Венера$().  \nКожна жила містить деталі щодо її рідкісності, щільності, типу, висоти знаходження, розмірів, порід каменю, в яких вона з’являється, та іншої інформації.",
-      "title": "Індекс жил Венери",
-      "type": "patchouli:text"
+      "title": "Індекс жил Венери"
     },
     {
-      "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/venus_vein_index#venus_manual_salt)Сіль, Кам’яна сіль, Лепідоліт...$()$()$(li)$(l:tfg_ores/venus_vein_index#venus_manual_sulfur)Сірка, Пірит, Сфалерит$()$()",
-      "type": "patchouli:text"
+      "type": "patchouli:text",
+      "text": "$(li)$(l:tfg_ores/venus_vein_index#venus_manual_salt)Сіль, Кам’яна сіль, Лепідоліт...$()$()$(li)$(l:tfg_ores/venus_vein_index#venus_manual_sulfur)Сірка, Пірит, Сфалерит$()$()"
     },
     {
-      "Type": "patchouli:text",
+      "type": "patchouli:text",
       "text": "$(thing)$(t:Ймовірність появи жили на чанк. Менші нижні числа означають більшу поширеність.)Рідкість$(/t)$(): 1/30 чинки$(br)$(thing)$(t:Відсоток блоків у жилі, які є рудами замість каменю. Більший відсоток означає більше руди.)Щільність$(/t)$(): 20%$(br)$(thing)$(t:Форма жили.)Тип$(/t)$(): $(t:Широка та пласка)Дискова жила$(/t)$(br)$(thing)$(t:Рівні Y, між якими може генеруватися жила.)Y$(/t)$(): 40 — 65$(br)$(thing)$(t:Середній діаметр жили.)Розмір$(/t)$(): 20$(br)$(thing)Висота$(): 6$(br)$(thing)$(t:Якщо відстань між поверхнею та жильною рудою більша за це число, поверхневі індикатори не генеруються.)Максимальна глибина індикатора$(/t)$(): 30$(br)$(thing)Біоми$(): Будь-який$(br2)$(thing)Типи каменю$(): Андезит, Базальт, Дацит, Ігнімбрит, Лампроїт, Ріоліт, Травертин, Трахіт",
       "title": "Сіль, Кам’яна сіль, Лепідоліт...",
-      "type": "patchouli:text",
       "anchor": "venus_manual_salt"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "Сіль",
       "multiblock": {
         "mapping": {
@@ -41,11 +38,10 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 80%$(br)$(thing)Джерело$(): Натрію, Хлору$(br)$(thing)Формула$(): NaCl",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Відсоток$(): 80%$(br)$(thing)Джерело$(): Натрію, Хлору$(br)$(thing)Формула$(): NaCl"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "Кам’яна сіль",
       "multiblock": {
         "mapping": {
@@ -61,11 +57,10 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 10%$(br)$(thing)Джерело$(): Калію, Хлору, Добрив$(br)$(thing)Формула$(): KCl",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Відсоток$(): 10%$(br)$(thing)Джерело$(): Калію, Хлору, Добрив$(br)$(thing)Формула$(): KCl"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "Лепідоліт",
       "multiblock": {
         "mapping": {
@@ -81,11 +76,10 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 5%$(br)$(thing)Джерело$(): Калію, Літію, Алюмінію, Фтору$(br)$(thing)Формула$(): KLi₃Al₄F₂O₁₀",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Відсоток$(): 5%$(br)$(thing)Джерело$(): Калію, Літію, Алюмінію, Фтору$(br)$(thing)Формула$(): KLi₃Al₄F₂O₁₀"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "Сподумен",
       "multiblock": {
         "mapping": {
@@ -101,23 +95,20 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 5%$(br)$(thing)Джерело$(): Літію, Алюмінію$(br)$(thing)Формула$(): LiAlSi₂O₆",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Відсоток$(): 5%$(br)$(thing)Джерело$(): Літію, Алюмінію$(br)$(thing)Формула$(): LiAlSi₂O₆"
     },
     {
-      "Type": "patchouli:empty",
-      "draw_filler": true,
-      "type": "patchouli:empty"
+      "type": "patchouli:empty",
+      "draw_filler": true
     },
     {
-      "Type": "patchouli:text",
+      "type": "patchouli:text",
       "text": "$(thing)$(t:Ймовірність появи жили на чанк. Менші нижні числа означають більшу поширеність.)Рідкість$(/t)$(): 1/30 чинки$(br)$(thing)$(t:Відсоток блоків у жилі, які є рудами замість каменю. Більший відсоток означає більше руди.)Щільність$(/t)$(): 20%$(br)$(thing)$(t:Форма жили.)Тип$(/t)$(): $(t:Переважно округлої форми) Скупчення жили$(/t)$(br)$(thing)$(t:Рівні Y, між якими може генеруватися жила.)Y$(/t)$(): 40 — 65$(br)$(thing)$(t:Середній діаметр жили.)Розмір$(/t)$(): 20$(br)$(thing)$(t:Якщо відстань між поверхнею та жильною рудою більша за це число, поверхневі індикатори не генеруються.)Максимальна глибина індикатора$(/t)$(): 30$(br)$(thing)Біоми$(): Будь-який$(br2)$(thing)Типи каменю$(): Андезит, Базальт, Дацит, Ігнімбрит, Лампроїт, Ріоліт, Травертин, Трахіт",
       "title": "Сірка, Пірит, Сфалерит",
-      "type": "patchouli:text",
       "anchor": "venus_manual_sulfur"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "Сірка",
       "multiblock": {
         "mapping": {
@@ -133,11 +124,10 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 80%$(br)$(thing)Джерело$(): Сірки$(br)$(thing)Формула$(): S",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Відсоток$(): 80%$(br)$(thing)Джерело$(): Сірки$(br)$(thing)Формула$(): S"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "Пірит",
       "multiblock": {
         "mapping": {
@@ -153,11 +143,10 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 15%$(br)$(thing)Переплавляється у$(): Чавун$(br)$(thing)Формула$(): FeS₂",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Відсоток$(): 15%$(br)$(thing)Переплавляється у$(): Чавун$(br)$(thing)Формула$(): FeS₂"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "Сфалерит",
       "multiblock": {
         "mapping": {
@@ -173,8 +162,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 5%$(br)$(thing)Переплавляється у$(): Цинк$(br)$(thing)Формула$(): ZnS",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Відсоток$(): 5%$(br)$(thing)Переплавляється у$(): Цинк$(br)$(thing)Формула$(): ZnS"
     }
   ],
   "sortnum": 9

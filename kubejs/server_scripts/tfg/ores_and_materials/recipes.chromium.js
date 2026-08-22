@@ -138,6 +138,7 @@ function registerTFGChromiumProcessing(event) {
                 .duration(32 * 20)
                 .EUt(GTValues.VA[GTValues.MV])
                 .blastFurnaceTemp(1650)
+                .circuit(2)
 
         event.recipes.gtceu.electrolyzer('tfg:ferrochrome')
                 .itemInputs(Item.of('tfg:ferrochrome_dust', 3))

@@ -1,5 +1,4 @@
 {
-  "__comment__": "This file was automatically created by mcresources",
   "name": "Руды, Металл и литьё",
   "category": "tfc:getting_started",
   "icon": "tfc:ore/normal_native_copper",
@@ -73,15 +72,15 @@
     },
     {
       "type": "patchouli:crafting",
-      "recipe": "tfchotornot:crafting/tongs/wood",
-      "text": "Сначала откройте $(thing)Cосуд$() и поместите в него руды. Тщательно подсчитайте общее количество металла в рудах! Затем вам нужно построить $(l:getting_started/pit_kiln)Земляную печь$() с заполненным маленьким сосудом внутри. По мере нагрева сосуда руды внутри него расплавятся, и у вас останется сосуд с расплавленным металлом.$(br2)Выньте сосуд и $(item)$(k:key.use)$() его, чтобы открыть $(thing)Интерфейс литья$()."
+      "text": "Сначала откройте $(thing)Cосуд$() и поместите в него руды. Тщательно подсчитайте общее количество металла в рудах! Затем вам нужно построить $(l:getting_started/pit_kiln)Земляную печь$() с заполненным маленьким сосудом внутри. По мере нагрева сосуда руды внутри него расплавятся, и у вас останется сосуд с расплавленным металлом.$(br2)Выньте сосуд и $(item)$(k:key.use)$() его, чтобы открыть $(thing)Интерфейс литья$().",
+      "recipe": "tfchotornot:crafting/tongs/wood"
     },
     {
       "type": "patchouli:image",
+      "text": "Интерфейс литья.",
       "images": [
         "tfc:textures/gui/book/gui/casting.png"
       ],
-      "text": "Интерфейс литья.",
       "border": false
     },
     {
