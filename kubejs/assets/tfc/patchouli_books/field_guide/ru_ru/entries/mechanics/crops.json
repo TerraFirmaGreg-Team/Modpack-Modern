@@ -23,7 +23,7 @@
 		{
 			"type": "tfc:rock_knapping_recipe",
 			"text": "Чтобы начать работу, камень $(thing)Hoe$() может быть $(thing)knapped$(), как показано выше.",
-			"title": "Growing Crops",
+			"title": "Выращивание урожая",
 			"recipes": [
 				"tfg:rock_knapping/stone_hoe_head_1"
 			]
@@ -632,7 +632,7 @@
 		},
 		{
 			"type": "tfc:multimultiblock",
-			"text": "Примечание: для роста блок риса должен быть $(thing)Затоплен$().",
+			"text": "Note: in order to grow, the rice block must be $(thing)Waterlogged$().",
 			"multiblocks": [
 				{
 					"pattern": [
@@ -1253,7 +1253,7 @@
 		},
 		{
 			"type": "tfc:multimultiblock",
-			"text": "Для полного роста культуры требуется палка.",
+			"text": "The stick is required in order for the crop to fully grow.",
 			"multiblocks": [
 				{
 					"pattern": [
@@ -2677,7 +2677,7 @@
 		},
 		{
 			"type": "tfc:multimultiblock",
-			"text": "Для полного роста культуры требуется палка.",
+			"text": "The stick is required in order for the crop to fully grow.",
 			"multiblocks": [
 				{
 					"pattern": [

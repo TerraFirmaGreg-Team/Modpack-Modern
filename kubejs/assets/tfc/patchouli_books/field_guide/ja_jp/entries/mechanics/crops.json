@@ -23,7 +23,7 @@
 		{
 			"type": "tfc:rock_knapping_recipe",
 			"text": "まず、石を$(thing)加工$()して$(thing)石のクワ$() を作成します。",
-			"title": "Growing Crops",
+			"title": "作物の成長",
 			"recipes": [
 				"tfg:rock_knapping/stone_hoe_head_1"
 			]
@@ -632,7 +632,7 @@
 		},
 		{
 			"type": "tfc:multimultiblock",
-			"text": "注: 成長するには、米の苗が$(thing)水中$()でなければなりません。",
+			"text": "Note: in order to grow, the rice block must be $(thing)Waterlogged$().",
 			"multiblocks": [
 				{
 					"pattern": [
@@ -1253,7 +1253,7 @@
 		},
 		{
 			"type": "tfc:multimultiblock",
-			"text": "作物が十分に成長するためには棒が必要です。",
+			"text": "The stick is required in order for the crop to fully grow.",
 			"multiblocks": [
 				{
 					"pattern": [
@@ -2677,7 +2677,7 @@
 		},
 		{
 			"type": "tfc:multimultiblock",
-			"text": "作物が十分に成長するためには棒が必要です。",
+			"text": "The stick is required in order for the crop to fully grow.",
 			"multiblocks": [
 				{
 					"pattern": [

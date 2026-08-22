@@ -28,7 +28,7 @@
       "type": "patchouli:spotlight",
       "anchor": "scraping",
       "item": "tfc:small_scraped_hide,tfc:medium_scraped_hide,tfc:large_scraped_hide",
-      "title": "Scraping",
+      "title": "Raspando",
       "link_recipes": true,
       "text": "After soaking, $(thing)Soaked Hides$() must be scraped which removes any excess material. In order to scrape hides, place the hide on the side of a $(thing)Log$(). With a $(thing)Knife$(), $(item)$(k:key.use)$() on each part of the hide and it will start to change texture."
     },

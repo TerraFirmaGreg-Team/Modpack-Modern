@@ -12,13 +12,13 @@
 		},
 		{
 			"type": "patchouli:crafting",
-			"name": "Sulfur",
+			"name": "硫磺",
 			"text": "地獄磚是一種建築磚塊，也可用於$(l:beneath/hellforge)地獄熔爐$()。",
 			"recipe": "tfg:shapeless/hellbricks"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"name": "Thatch",
+			"name": "乾草塊",
 			"text": "輝石岩基座可用於展示想要展示的物品！",
 			"item": "beneath:ancient_altar"
 		},

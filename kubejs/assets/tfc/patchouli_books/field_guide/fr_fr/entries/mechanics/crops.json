@@ -23,7 +23,7 @@
 		{
 			"type": "tfc:rock_knapping_recipe",
 			"text": "Pour commencer, une $(thing)Houe en pierre$() peut être $(thing)taillée, comme ci-dessus.",
-			"title": "Growing Crops",
+			"title": "Faire pousser vos cultures",
 			"recipes": [
 				"tfg:rock_knapping/stone_hoe_head_1"
 			]

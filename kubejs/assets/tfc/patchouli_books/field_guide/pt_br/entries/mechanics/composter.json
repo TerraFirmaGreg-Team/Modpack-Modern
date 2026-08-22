@@ -1,5 +1,5 @@
 {
-  "name": "Composter",
+  "name": "Composteira",
   "category": "tfc:mechanics",
   "icon": "tfc:textures/gui/book/icons/composter.png",
   "pages": [
@@ -80,7 +80,7 @@
           "X": "tfc:composter[stage=8,type=rotten]"
         }
       },
-      "name": "Rotten Compost",
+      "name": "Composto Podre",
       "text": "A rotten composter.",
       "enable_visualize": false
     },

@@ -36,7 +36,7 @@
     },
     {
       "type": "tfc:table",
-      "text": "負責任的寵物主人需要學習如何管理自己的寵物。好在這並不是件難事。在空手的狀態下按住$(item)$(k:key.sneak)$()並按下$(item)$(k:key.use)$()就可以開啟$(thing)寵物面板$()。這個面板包含了一系列可以命令寵物做的事情，例如$(thing)休息$()、$(thing)我們到家了$()、$(thing)坐下$()、$(thing)跟著我$()、以及$(thing)跟我打獵$()。",
+      "text": "Responsible pet owners must learn to control their pet. Luckily, this is easy. By pressing $(item)$(k:key.use)$() while holding $(item)$(k:key.sneak)$() with an empty hand, the $(thing)Pet Screen$() may be opened. This screen contains a number of commands that can be used to tell the pet what to do: $(thing)Relax$(), $(thing)We're Home$(), $(thing)Sit$(), $(thing)Follow Me$(), and $(thing)Hunt With Me$().",
       "strings": [
         {
           "text": "Variant",

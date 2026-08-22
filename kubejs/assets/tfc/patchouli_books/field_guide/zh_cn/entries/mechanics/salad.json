@@ -10,7 +10,7 @@
     {
       "type": "patchouli:spotlight",
       "item": "tag:tfc:salads",
-      "title": "-",
+      "title": "",
       "link_recipes": false,
       "text": "在界面上方的格子中放置最多五种食材。在左下角的格子中放置$(thing)碗$()。完成时，可以在右侧格子中取出制作好的沙拉。"
     }

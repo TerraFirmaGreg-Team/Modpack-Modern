@@ -29,8 +29,8 @@
     {
       "type": "patchouli:multiblock",
       "multiblock_id": "tfc:windmill",
-      "name": "-",
-      "text": "-",
+      "name": "",
+      "text": "",
       "enable_visualize": false
     },
     {
@@ -42,7 +42,7 @@
     {
       "type": "patchouli:crafting",
       "recipe": "tfc:crafting/wood/oak_water_wheel",
-      "title": "-",
+      "title": " ",
       "text": "或者如果传动杆已经连接到其他动力源。$(br2)水车可以用木材制作。"
     },
     {
@@ -52,7 +52,7 @@
     {
       "type": "patchouli:multiblock",
       "multiblock_id": "tfc:water_wheel",
-      "name": "-",
+      "name": "",
       "text": "一台$(thing)水车$()",
       "enable_visualize": false
     },
@@ -103,7 +103,7 @@
     {
       "type": "patchouli:multiblock",
       "multiblock_id": "tfc:rotating_quern",
-      "name": "-",
+      "name": "",
       "text": "一个连接到$(l:mechanics/mechanical_power#axle)传动杆$()的$(thing)手推磨$()。",
       "enable_visualize": false
     },
@@ -138,7 +138,7 @@
           "Z": "tfc:metal/anvil/copper[facing=west]"
         }
       },
-      "name": "-",
+      "name": "",
       "text": "一个杵锤的设置示例。",
       "enable_visualize": false
     },

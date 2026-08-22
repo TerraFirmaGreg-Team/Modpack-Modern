@@ -146,7 +146,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"name": "Fox",
+			"name": "Zorro",
 			"text": "$(thing)Prey$() animals fear players and predators. They are adept at fleeing from danger, but generally cannot fight back. Some prey animals enjoy snacking on crops.",
 			"anchor": "prey",
 			"title": "Prey"
@@ -248,7 +248,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"name": "Cod",
+			"name": "Bacalao",
 			"text": "$(thing)Shore Animals$() only spawn on sea shores and spend some of their day swimming, and some walking on the beach. They are curious creatures, and will follow the player around, but cannot be tamed."
 		},
 		{
@@ -267,7 +267,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"name": "Tropical Fish",
+			"name": "Pez Tropical",
 			"text": "$(thing)Fish$() are small creatures that swim in water. Most of them can be $(l:mechanics/fishing)fished$(). Some prefer oceans, rivers, or lakes.",
 			"title": "Fish"
 		},
@@ -316,7 +316,7 @@
 		},
 		{
 			"type": "patchouli:empty",
-			"name": "Horseshoe Crab",
+			"name": "Cangrejo herradura",
 			"text": "Horseshoe crabs spawn in oceans of moderate climate, $(l:the_world/climate#temperature)temperature$() between 10 and 21°C and with a $(l:the_world/climate#rainfall)rainfall$() of at most 400mm."
 		},
 		{

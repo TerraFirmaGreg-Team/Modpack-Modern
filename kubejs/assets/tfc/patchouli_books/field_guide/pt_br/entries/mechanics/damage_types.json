@@ -20,7 +20,7 @@
     {
       "type": "patchouli:text",
       "text": "$(thing)Crushing$() damage is dealt by blunt weapons like $(thing)Hammers$() and $(thing)Maces$(). $(thing)Zombies$() deal crushing damage, and are somewhat resistant to it. $(thing)Creepers$() also resist some crushing damage$(). $(thing)Skeletons$() are vulnerable to it.",
-      "title": "Crushing"
+      "title": "Triturando"
     },
     {
       "type": "patchouli:text",

@@ -1,0 +1,13 @@
+{
+  "name": "Dairy Products",
+  "category": "tfc:mechanics",
+  "icon": "tfc:textures/item/food/cheese.png",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l:firmalife/cheese)See the Firmalife entry for the correct information.$()",
+      "title": "Süt ürünleri"
+    }
+  ],
+  "read_by_default": true
+}
