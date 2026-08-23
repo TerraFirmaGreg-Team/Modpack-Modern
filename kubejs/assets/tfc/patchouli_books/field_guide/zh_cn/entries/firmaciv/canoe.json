@@ -8,7 +8,7 @@
       "text": "独木舟很可能是您水上之旅的第一步！如果你生活在青铜时代，你很可能会造一艘独木舟。"
     },
     {
-      "type": "patchouli:text",
+      "type": "patchouli:image",
       "images": [
         "firmaciv:textures/gui/book/canoe_isometric.png"
       ]
@@ -22,7 +22,7 @@
       "text": "雕刻独木舟需要比较柔软的木材，因此，只有部分原木是可行的：$(br2)花旗松木$(br)松木$(br)棕榈木$(br)云杉木$(br)红杉木$(br)木棉木$(br)红树木$(br)白杉木$(br)柳木"
     },
     {
-      "type": "patchouli:multiblock",
+      "type": "patchouli:text",
       "text": "制作独木舟的第一步"
     },
     {
@@ -36,9 +36,9 @@
           ]
         ],
         "mapping": {
-          "F": "firmaciv:wood/canoe_component_block/douglas_fir[canoe_carved=5,facing=east,end=true]",
-          "0": "firmaciv:wood/canoe_component_block/douglas_fir[canoe_carved=5,facing=east,end=false]",
-          "B": "firmaciv:wood/canoe_component_block/douglas_fir[canoe_carved=5,facing=east,end=true]"
+          "F": "tfc:wood/stripped_log/douglas_fir[axis=x]",
+          "0": "tfc:wood/stripped_log/douglas_fir[axis=x]",
+          "B": "tfc:wood/stripped_log/douglas_fir[axis=x]"
         }
       },
       "name": "奇怪的板条",
@@ -56,9 +56,9 @@
           ]
         ],
         "mapping": {
-          "F": "firmaciv:wood/canoe_component_block/douglas_fir[canoe_carved=11,facing=west,end=true]",
-          "0": "firmaciv:wood/canoe_component_block/douglas_fir[canoe_carved=11,facing=east,end=false]",
-          "B": "firmaciv:wood/canoe_component_block/douglas_fir[canoe_carved=11,facing=east,end=true]"
+          "F": "firmaciv:wood/canoe_component_block/douglas_fir[canoe_carved=5,facing=east,end=true]",
+          "0": "firmaciv:wood/canoe_component_block/douglas_fir[canoe_carved=5,facing=east,end=false]",
+          "B": "firmaciv:wood/canoe_component_block/douglas_fir[canoe_carved=5,facing=east,end=true]"
         }
       },
       "name": "一个奇怪的雕塑",
@@ -66,7 +66,7 @@
       "enable_visualize": false
     },
     {
-      "type": "patchouli:image",
+      "type": "patchouli:multiblock",
       "multiblock": {
         "pattern": [
           [
