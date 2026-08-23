@@ -29,7 +29,7 @@
     },
     {
       "type": "patchouli:text",
-      "title": "Boats as Items",
+      "title": "Łodzie jako przedmioty",
       "text": "They don't exist! With the exception of the kayak, if you break a boat, it will only drop some of its ingredients! This means you'll need a kayak if you want to carry a boat over land, and it also means you might want to build a dock for your larger vessels."
     },
     {
@@ -40,7 +40,7 @@
     },
     {
       "type": "patchouli:text",
-      "title": "Transporting Animals",
+      "title": "Transportowanie zwierząt",
       "text": "Like always, you can move animals around using boats! However, be aware that larger animals, like horses, will only fit in boats that are big enough. If an animal is riding a boat and is in your way, you only have to crouch and press $(item)$(k:key.use)$() to eject it from the boat. Animals will get restless after 2 days in the boat and will leave the boat on their own in 3 days."
     },
     {
@@ -89,7 +89,7 @@
     },
     {
       "type": "patchouli:text",
-      "title": "Sails",
+      "title": "Żagle",
       "text": "Sailing vessels, of course, have sails. You'll need to deploy them in order to properly control your boat. Look for the triangular sail icon and press $(item)$(k:key.use)$() to deploy each sail. Since most boats have multiple sails, you can use different combinations of sail deployment to control your speed."
     },
     {
@@ -102,7 +102,7 @@
     },
     {
       "type": "patchouli:text",
-      "title": "Sailing",
+      "title": "Żeglarstwo",
       "text": "Unlike ships that you may be used to, sailing is a skill with Firma: Civilization. When you're piloting a sailing vessel, a new UI element will appear showing the wind speed and direction, as well as the boat's speed. The color of the wind arrow will indicate the difficulty of sailing in that direction. Use your forward and backward movement keys to set the angle of the sails, and experiment to find the best one for the wind angle."
     },
     {

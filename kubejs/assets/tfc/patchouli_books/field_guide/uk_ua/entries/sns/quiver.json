@@ -6,12 +6,12 @@
     {
       "type": "patchouli:spotlight",
       "item": "sns:quiver",
-      "text": "The $(item)Quiver$() is a type of $(l:sns/item_containers)Item Container$() every ranged warriors best friend, be it one with love for the $(item)Javalin$() or those who prefer the bow. $(br)Quivers will be drawn from first for \"ammo\", when using the bow and will replace thrown Javelins."
+      "text": "$(item)Сагайдак$() — це вид $(l:sns/item_containers)контейнера для предметів$() та найкращий друг будь-якого воїна далекого бою, незалежно від того, чи любить він $(item)спис$(), чи віддає перевагу луку. $(br)При використанні лука стріли насамперед братимуться із сагайдака, а при киданні списа він автоматично заміщатиме його новим у руці."
     },
     {
       "type": "tfc:knapping_recipe",
       "recipe": "sns:leather_knapping/quiver",
-      "text": "For modpack authors or simply people wishing to support extra \"ammo\" see the item tag $(bold)sns:allowed_in_quiver$(). Do note the Javalin refill will not work with anything but TFC (or addon) Javelins"
+      "text": "Для авторів модпаків або просто людей, які бажають додати підтримку іншого «боєприпасу», див. тег предмета $(bold)sns:allowed_in_quiver$(). Зверни увагу, що автоматичне поповнення списа не працюватиме ні з чим, крім списів із TFC (або аддонів)"
     }
   ],
   "read_by_default": true

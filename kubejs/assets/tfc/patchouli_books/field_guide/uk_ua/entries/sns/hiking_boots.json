@@ -5,12 +5,12 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "Every explorer needs a good pair of boots. These enable you to quickly push through shrubbery and give a minor speed boost in addition to a minor increase in safe fall height"
+      "text": "Кожному досліднику потрібна хороша пара чобіт. Вони дозволяють тобі швидко продиратися крізь чагарники, а також дають невелике прискорення й трохи збільшують висоту безпечного падіння"
     },
     {
       "type": "patchouli:crafting",
       "recipe": "sns:crafting/hiking_boots",
-      "text": "These boots were made for walking"
+      "text": "Ці чоботи створені для ходьби"
     }
   ],
   "read_by_default": true

@@ -77,7 +77,7 @@
 	"gui.sophisticatedcore.settings.memory": "Запом.",
 	"gui.sophisticatedcore.settings.memory.tooltip": "Настройки запоминания слота",
 	"gui.sophisticatedcore.settings.memory.tooltip_detail": "Позволяют задавать слоты для запоминания содержимого и учёта точного совпадения предметов в них\nОткройте вкладку для дальнейшей настройки",
-	"gui.sophisticatedcore.settings.memory.tooltip_open_detail": "Позволяют задавать слоты для запоминания содержимого и учёта точного совпадения предметов в них\nВыделить все слоты или снять всё выделение = отдельные клавиши\nВыделить слот = нажмите или зажмите ЛКМ\nСнять выделение со слота = нажмите или зажмите ПКМ",
+	"gui.sophisticatedcore.settings.memory.tooltip_open_detail": "Позволяет выбирать слоты, которые запоминают своё содержимое и допускают в них только соответствующие стаки.\nВыбрать все / Снять выбор со всех = кнопки\nВыбрать слот = нажать или зажать ЛКМ\nСнять выделение со слота = нажать или зажать ПКМ",
 	"gui.sophisticatedcore.settings.message.export_template": "Настройки экспортированы в %s",
 	"gui.sophisticatedcore.settings.message.export_template.empty_name": "Имя файла не может быть пустым",
 	"gui.sophisticatedcore.settings.message.export_template.invalid_characters": "Имя файла содержит недопустимые символы: %s",

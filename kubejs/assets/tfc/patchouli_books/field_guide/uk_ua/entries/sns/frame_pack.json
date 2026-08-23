@@ -1,17 +1,17 @@
 {
-  "name": "The Frame Pack",
+  "name": "Рюкзак для каркасів",
   "category": "tfc:sacks_n_such",
   "icon": "sns:frame_pack",
   "pages": [
     {
       "type": "patchouli:spotlight",
       "item": "sns:frame_pack",
-      "text": "The $(item)Frame Pack$() is a type of $(l:sns/item_containers)Item Container$(), essentially a TFC chest on your back. Like the TFC chest it respects TFC's $(l:getting_started/size_and_weight)Size system$()."
+      "text": "$(item)Рюкзак для каркасів$() — це тип $(l:sns/item_containers)контейнера для предметів$(), який, по суті, є скринею з TFC у тебе на спині. Як і звичайна скриня, він враховує ванільну $(l:getting_started/size_and_weight)систему розмірів і ваги$() предметів TFC."
     },
     {
       "type": "patchouli:crafting",
       "recipe": "sns:crafting/frame_pack",
-      "text": "By default these can hold up to $(thing)Large$() Items"
+      "text": "За замовчуванням у них можна зберігати предмети розміром до $(thing)великий$() включно."
     }
   ],
   "read_by_default": true

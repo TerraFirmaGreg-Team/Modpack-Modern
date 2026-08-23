@@ -1,11 +1,11 @@
 {
-  "name": "Dugout Canoes",
+  "name": "Човен-довбанка",
   "category": "tfc:firmaciv",
   "icon": "firmaciv:canoe_with_paddle_icon_only",
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "The Dugout Canoe will likely be the first step on your aquatic journey! If you're in the copper age, you can probably build a canoe."
+      "text": "Човен-довбанка, швидше за все, стане першим кроком у твоїй водній подорожі! Якщо ти перебуваєш у мідному віці, ти вже можеш побудувати таке судно."
     },
     {
       "type": "patchouli:image",
@@ -15,15 +15,15 @@
     },
     {
       "type": "patchouli:text",
-      "text": "You can put blocks or animals in the pilot seat, but be aware that there's no way to paddle the boat if you do this! It's most useful if you just want to send materials down a river on their own.$(br2)A canoe has two seats, and is piloted from the rear. You need to hold a canoe paddle in order to move at full speed, and if two players are holding paddles, you can go even faster."
+      "text": "Ти можеш посадити тварин або покласти блоки на місце стернового, але май на увазі, що в такому разі гребти не вийде! Це найкорисніше, якщо ти просто хочеш самостійно відправити матеріали за течією річки.$(br2)Човен-довбанка має два місця, а керування здійснюється з заднього сидіння. Тобі потрібно тримати в руці весло, щоб рухатися на повній швидкості, а якщо весла тримають двоє гравців, ви зможете пливти ще швидше."
     },
     {
       "type": "patchouli:text",
-      "text": "To build a Dugout Canoe, place 3 stripped logs in a row, horizontally, and cut off the tops with a saw. Then, carve out the canoe shape with an axe. Finally, light the inside of the canoe on fire to hollow out the hull. It will take the same amount of time as a pit kiln to complete the hollowing process."
+      "text": "Щоб побудувати човен-довбанку, виклади 3 обтесані колоди в горизонтальний ряд і зріж верхню частину пилкою. Потім витеши форму човна сокирою. Наостанок підпали човен зсередини, щоб випалити заглиблення в корпусі. Процес випалювання триватиме стільки ж часу, скільки й випалювання в ямній печі."
     },
     {
       "type": "patchouli:text",
-      "text": "Carving out a Dugout Canoe requires a softer wood, and as a result, only some logs are workable:$(br2)Douglas Fir$(br)Pine$(br)Palm$(br)Spruce$(br)Sequoia$(br)Kapok$(br)Mangrove$(br)White Cedar$(br)Willow"
+      "text": "Для витесування човна-довбанки потрібна м'якша деревина, тому для обробки підходять лише деякі види колод:$(br2)Дуґласія$(br)Сосна$(br)Пальма$(br)Смерека$(br)Секвоя$(br)Сейба$(br)Мангрове деоево$(br)Білий кедр$(br)Верба"
     },
     {
       "type": "patchouli:multiblock",
@@ -41,8 +41,8 @@
           "B": "tfc:wood/stripped_log/douglas_fir[axis=x]"
         }
       },
-      "name": "Just a Log",
-      "text": "The first step in making a Dugout Canoe.",
+      "name": "Просто колода",
+      "text": "Перший крок у створенні човна-довбанки.",
       "enable_visualize": false
     },
     {
@@ -61,8 +61,8 @@
           "B": "firmaciv:wood/canoe_component_block/douglas_fir[canoe_carved=5,facing=east,end=true]"
         }
       },
-      "name": "Weird Slabs",
-      "text": "The top of the log has been removed using a saw.",
+      "name": "Дивна плита",
+      "text": "Верхню частину колоди повинно зрізати пилкою.",
       "enable_visualize": false
     },
     {
@@ -81,14 +81,14 @@
           "B": "firmaciv:wood/canoe_component_block/douglas_fir[canoe_carved=11,facing=east,end=true]"
         }
       },
-      "name": "A Strange Sculpture",
-      "text": "A fully carved Dugout Canoe, ready for hollowing out the hull.",
+      "name": "Дивна скульптура",
+      "text": "Повністю витесаний човен-довбанка, готовий до випалювання заглиблення в корпусі.",
       "enable_visualize": false
     },
     {
       "type": "patchouli:crafting",
       "recipe": "firmaciv:crafting/canoe_paddle",
-      "text": "Don't forget to craft a paddle or two!"
+      "text": "Не забудь створити весло або два весла!"
     }
   ],
   "read_by_default": true,

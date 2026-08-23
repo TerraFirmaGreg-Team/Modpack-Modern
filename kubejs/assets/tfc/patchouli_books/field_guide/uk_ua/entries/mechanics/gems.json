@@ -5,13 +5,13 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "Gems are a kind of mineral that spawns in a variety of different places, such as $(thing)under rivers$() and in $(l:the_world/geology)Volcanoes$(). For information on the precise conditions, see $(l:the_world/ores_and_minerals)the ores and minerals chapter$()."
+      "text": "Самоцвіти — це вид мінералів, який з'являється у багатьох різних місцях, наприклад, $(thing)під річками$() та у $(l:the_world/geology)вулканах$(). Для отримання інформації про точні умови їхньої генерації звернися до $(l:the_world/ores_and_minerals)розділу про руди та мінерали$()."
     },
     {
       "type": "patchouli:spotlight",
       "item": "tag:tfc:gem_powders",
       "link_recipes": false,
-      "text": "Gems can be ground into powder using a $(l:mechanics/quern)Quern$(). Gem powders are particularly useful in $(l:mechanics/glassworking_applications#coloring)Coloring Glass$()."
+      "text": "Самоцвіти можна змолоти на порошок за допомогою $(l:mechanics/quern)жорна$(). Порошки з дорогоцінного каміння особливо корисні для $(l:mechanics/glassworking_applications#coloring)фарбування скла$()."
     },
     {
       "type": "patchouli:text",
@@ -19,11 +19,11 @@
     },
     {
       "type": "patchouli:text",
-      "text": "Gems have higher $(thing)Hardness$() values than regular ore, requiring different strength tools to break them. This summarizes the minimum $(thing)Pickaxe$() tier required to break a gem ore block:$(br)$(li)Amethyst: Steel$(li)Diamond: Black Steel$(li)Emerald: Steel$(li)Lapis Lazuli: Bronze$(li)Opal: Bronze$(li)Pyrite: Copper$(li)Ruby: Black Steel$(li)Sapphire: Black Steel$(li)Topaz: Steel"
+      "text": "Самоцвіти мають вищі показники $(thing)твердості$(), ніж звичайна руда, тому для їхнього видобутку потрібні інструменти різної міцності. Нижче наведено мінімальний рівень $(thing)кайла$(), необхідний для руйнування блока самоцвітної руди:$(br)$(li)Аметист: Сталь$(li)Алмаз: Чорна сталь$(li)Смарагд: Сталь$(li)Лазурит: Бронза$(li)Опал: Бронза$(li)Пирит: Мідь$(li)Рубін: Чорна сталь$(li)Сапфір: Чорна сталь$(li)Топаз: Сталь"
     },
     {
       "type": "patchouli:text",
-      "text": "To cut a gem, you must craft $(thing)Sandpaper$(). Sandpaper is made from Black Sand, Flux, Glue, any Gem Powder, and Paper. Crafting an uncut gem with sandpaper cuts the gem."
+      "text": "Щоб огранувати самоцвіт, тобі потрібно створити $(thing)наждачний папір$(). Наждачний папір виготовляється з чорного піску, флюсу, клею, будь-якого порошку з дорогоцінного каміння та паперу. Поєднання неогранованого самоцвіту з наждачним папером у сітці створення дозволяє огранувати його."
     },
     {
       "type": "patchouli:crafting",
