@@ -1,11 +1,13 @@
 {
 	"chat.ae2wtlib.NetworkNotPowered": "Netzwerk hat keine Energie",
+	"gui.ae2wtlib.Magnet": "Magnet Filter",
 	"gui.ae2wtlib.blacklist": "Blacklist",
 	"gui.ae2wtlib.copy_insert": "Zu Einfügefilter kopieren",
 	"gui.ae2wtlib.copy_pickup": "Zu Aufsammelfilter kopieren",
 	"gui.ae2wtlib.creativetab": "AE2 Drahtlose Zugangskonsolen (AE2WTLib)",
 	"gui.ae2wtlib.cycle_terminal.desc": "nächste Konsole Öffnen",
 	"gui.ae2wtlib.insert_filter": "Einfügefilter: ",
+	"gui.ae2wtlib.magnet.text": "Magnet",
 	"gui.ae2wtlib.magnet_settings_title": "Magneteinstellungen",
 	"gui.ae2wtlib.magnetcard": "Magnet Karte",
 	"gui.ae2wtlib.magnetcard.desc.inv": "Items werden in das Inventar eingesammelt",
@@ -36,5 +38,6 @@
 	"key.ae2.ae2wtlib_stow": "Hand in ME System lagern",
 	"key.ae2.wireless_pattern_access_terminal": "Drahtlose Schablonenkonsole Öffnen",
 	"key.ae2.wireless_pattern_encoding_terminal": "Drahtlose Schnittstellenkonsole Öffnen",
-	"text.autoconfig.de/mari_023/ae2wtlib.option.magnetCardRange": "Reichweite der Magnet Karte"
+	"text.autoconfig.de/mari_023/ae2wtlib.option.magnetCardRange": "Reichweite der Magnet Karte",
+	"text.autoconfig.de/mari_023/ae2wtlib.title": "AE2 Wireless Terminals"
 }
