@@ -1,16 +1,16 @@
 {
-  "name": "The Mob Net",
+  "name": "Сітка для мобів",
   "category": "tfc:sacks_n_such",
   "icon": "sns:mob_net",
   "pages": [
     {
       "type": "patchouli:crafting",
       "recipe": "sns:crafting/mob_net",
-      "text": "Mob nets are extremely useful for capturing small mobs. You'll get the most use out of them for transporting things like Birds or babies of larger mobs like Cows."
+      "text": "Сітка для мобів надзвичайно корисна для вилову малих мобів. Найбільшу користь ти отримаєш від неї під час транспортування таких істот, як птах або дитинча більшого моба, як-от корова."
     },
     {
       "type": "patchouli:text",
-      "text": "For modpack authors or simply people wishing to add extra mobs see the entity tag $(bold)sns:netable_mobs"
+      "text": "Для авторів модпаків або просто людей, які бажають додати іншого моба, див. тег сутності $(bold)sns:netable_mobs"
     }
   ],
   "read_by_default": true

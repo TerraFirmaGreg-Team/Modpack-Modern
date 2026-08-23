@@ -1,34 +1,34 @@
 {
-  "name": "Jarring",
+  "name": "Консервація",
   "category": "tfc:mechanics",
   "icon": "tfc:jar/plum",
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "$(thing)Jars$() are used to preserve fruit for longer periods of time. Jars start as $(thing)Empty Jars$(), obtained through $(l:mechanics/glassworking_applications#jar)Glassworking$(). Then, a $(thing)Jar Lid$() must be smithed from $(thing)Tin$(). Crafting these together creates an $(thing)Empty Jar With Lid$()."
+      "text": "$(thing)Банки$() використовуються для збереження фруктів на довший період часу. Спочатку ти отримуєш $(thing)порожні банки$() за допомогою $(l:mechanics/glassworking_applications#jar)склодувства$(). Потім на ковадлі необхідно викувати $(thing)кришку для банки$() з $(thing)олова$(). Поєднавши їх разом у сітці створення, ти отримаєш $(thing)порожню банку з кришкою$()."
     },
     {
       "type": "patchouli:text",
-      "text": "In a pot, boil $(thing)Sugar$() with 2-4 pieces of $(thing)Fruit$(). When the recipe is done, $(item)$(k:key.use)$() with the empty jar with lid to create a $(thing)Sealed Jar of Jam$(). The sealed jar will last quite a long time on its own."
+      "text": "У горщику закип'яти $(thing)цукор$() разом із 2-4 шматочками $(thing)фруктів$(). Коли рецепт завершиться, натисни $(item)$(k:key.use)$() порожньою банкою з кришкою по горщику, щоб створити $(thing)запечатану банку з варенням$(). Запечатана банка сама по собі зберігатиметься дуже довго."
     },
     {
       "type": "patchouli:crafting",
       "recipe": "tfc:crafting/unseal_plum_jar",
-      "text": "Unsealing a jar is done by crafting. The lid is not able to be retrieved. An unsealed jar only lasts for a few days!"
+      "text": "Розпечатування банки відбувається через сітку створення. Повернути кришку після цього не вдасться. Відкрита банка зберігається лише кілька днів!"
     },
     {
       "type": "patchouli:crafting",
       "recipe": "tfc:crafting/barley_sandwich_with_jam_1",
-      "text": "Jam is used for making sandwiches. Jam sandwiches can contain Dairy, Cooked Meats, and Jam. An $(thing)Empty Jar$() is left over."
+      "text": "Варення використовується для приготування бутербродів. Бутерброди з варенням можуть містити молочні продукти, приготоване м'ясо та варення. Після з'їдання у тебе залишиться $(thing)порожня банка$()."
     },
     {
       "type": "patchouli:text",
-      "text": "Jars can be placed on solid surfaces with $(item)$(k:key.use)$(). A block can contain four jars of any kind."
+      "text": "Банки можна ставити на тверді поверхні за допомогою натискання $(item)$(k:key.use)$(). Один блок може містити до чотирьох банок будь-якого виду."
     },
     {
       "type": "patchouli:crafting",
       "recipe": "tfc:crafting/wood/oak_shelf",
-      "text": "$(thing)Jar Shelves$() can be attached to solid walls. They can be placed directly or by clicking on an existing block of placed jars. The top of the jar shelf counts as a solid surface for placing items, more jars, or other blocks."
+      "text": "$(thing)Полиці для банок$() можна прикріплювати до твердих стін. Їх можна розміщувати як зазвичай або клацнувши по вже встановлених на землі банках. Верхня частина полиці вважається твердою поверхнею, тому на неї можна ставити інші предмети, ще більше банок або інші блоки."
     }
   ],
   "read_by_default": true

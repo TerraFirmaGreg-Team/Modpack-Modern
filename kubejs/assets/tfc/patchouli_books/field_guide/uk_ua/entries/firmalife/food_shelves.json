@@ -5,12 +5,12 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "The $(thing)Food Shelf$() is a device for storing food. It can only be used in a valid $(l:firmalife/cellar)Cellar$(). Food shelves can contain a full stack of one food item. Adding and removing the item can be done with $(item)$(k:key.use)$(). Items in valid food shelves receive a decay modifier that is better than vessels."
+      "text": "$(thing)Полиця для їжі$() — це пристосування для зберігання харчів. Її можна використовувати лише в побудованому правильно $(l:firmalife/cellar)льоху$(). Полиця для їжі може вміщувати повний стос одного виду їжі. Додавати та забирати предмети можна за допомогою $(item)$(k:key.use)$(). Предмети на правильно встановленій полиці для їжі отримують кращий модифікатор псування, ніж у судинах."
     },
     {
       "type": "patchouli:crafting",
       "recipe": "firmalife:crafting/wood/acacia_shelf",
-      "text": "The food shelf is made from planks and lumber."
+      "text": "Полиця для їжі виготовляється з дощок та пиломатеріалів."
     }
   ],
   "read_by_default": true,

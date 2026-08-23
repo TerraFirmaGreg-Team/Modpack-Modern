@@ -5,7 +5,7 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "The jarbnet is a cosmetic storage block for $(l:tfc:mechanics/jarring)Jars$(), Candles, and Jugs. It can be opened and closed by clicking with an empty hand and $(item)$(k:key.sneak)$() pressed. If candles are inside, it can be lit to produce a small amount of light."
+      "text": "Шафка для банок — це декоративний блок для зберігання $(l:tfc:mechanics/jarring)банок$(), свічок та глечиків. Її можна відкрити й закрити, натиснувши порожньою рукою із затиснутою клавішею $(item)$(k:key.sneak)$(). Якщо всередині є свічка, її можна запалити для створення невеликої кількості світла."
     },
     {
       "type": "patchouli:crafting",

@@ -1,19 +1,19 @@
 {
-  "name": "Item Containers",
+  "name": "Ємність для предметів",
   "category": "tfc:sacks_n_such",
   "icon": "sns:straw_basket",
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "$(thing)Item Containers$() are the primary items this mod adds. They have 6 main stats which can be seen by holding $(3)Shift$(clear) while hovering over the stack with your mouse. $(li)$(thing)Slot count$(): the amount of slots it has. $(li)$(thing)Slot Capacity$(): how many items a slot can hold $(li)$(thing)Allowed Size$(): what's the largest $(l:getting_started/size_and_weight)TFC Size$() allowed in the slots."
+      "text": "$(thing)Ємність для предметів$() — це основний предмет, який додає цей мод. Вона має 6 головних характеристик, які можна побачити, затиснувши $(3)Shift$(clear) під час наведення курсору миші на стос. $(li)$(thing)Кількість слотів$(): кількість слотів, яку вона має. $(li)$(thing)Місткість слота$(): скільки предметів може вмістити один слот. $(li)$(thing)Дозволений розмір$(): який найбільший $(l:getting_started/size_and_weight)розмір TFC$() дозволено в слотах."
     },
     {
       "type": "patchouli:text",
-      "text": "$(li)$(thing)Item Pickup$() if it can pickup item entities from the world. Shift right click or use $(k:sns.key.pickup) to toggle. $(li)$(thing)Item Voiding$() if it can void excess items picked up from the world. To toggle Ctrl + Left Click slots. $(li)$(thing)Inventory interaction$() if you can insert and extract from it by clicking on the stack like TFC vessels or vanilla bundles. $(br)All $(thing)Item Containers$() support vanilla pick block via $(k:pickItem)"
+      "text": "$(li)$(thing)Збір предметів$(), якщо цей контейнер може підбирати предмети, що лежать у світі. Натисни Shift + ПКМ або використовуй $(k:sns.key.pickup), щоб увімкнути/вимкнути. $(li)$(thing)Знищення предметів$(), якщо він може видаляти надлишок підібраних зі світу предметів. Для перемикання натисни Ctrl + ЛКМ на слоти. $(li)$(thing)Взаємодія з інвентарем$(), якщо ти можеш класти предмети всередину та діставати їх, клікаючи по стопці предметів, як у посудинах з TFC або ванільних мішках. $(br)Усі $(thing)Контейнери для предметів$() підтримують ванільну функцію вибору блока через $(k:pickItem)"
     },
     {
       "type": "patchouli:text",
-      "text": "For modpack authors or simply people wanting to configure things. All$(thing) Item Containers$() have a \"blacklist\" tag which includes $(bold)sns:prevented_in_item_containers$(). The naming scheme is $(bold)prevented_in_<registry_name>$() for example the straw basket uses $(bold)sns:prevented_in_straw_basket$(). $(thing)Item Containers$() with special \"whitelist\" tags will have them listed in their book entry."
+      "text": "Для авторів модпаків або просто людей, які бажають усе налаштувати. Кожна $(thing)ємність для предметів$() має тег «чорного списку», який містить $(bold)sns:prevented_in_item_containers$(). Схема найменування виглядає як $(bold)prevented_in_<ідентифікатор_реєстру>$(), наприклад, солом'яний кошик використовує $(bold)sns:prevented_in_straw_basket$(). $(thing)Ємність для предметів$() зі спеціальним тегом «білого списку» матиме його у своєму розділі книги."
     }
   ],
   "read_by_default": true

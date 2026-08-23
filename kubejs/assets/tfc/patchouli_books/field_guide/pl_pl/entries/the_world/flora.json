@@ -104,8 +104,8 @@
           "Y": "tfc:plant/licorice_fern[facing=south]"
         }
       },
-      "name": "Epiphyte",
-      "text": "Epiphytes only live on the sides of logs.",
+      "name": "Epifit",
+      "text": "Epifity rosną jedynie na bokach kłód.",
       "enable_visualize": false
     },
     {
@@ -300,7 +300,7 @@
           "Y": "minecraft:water"
         }
       },
-      "name": "Floating",
+      "name": "Pływające rośliny",
       "text": "Floating plants sit on top of the water. Boats will break them on contact.",
       "enable_visualize": false
     },

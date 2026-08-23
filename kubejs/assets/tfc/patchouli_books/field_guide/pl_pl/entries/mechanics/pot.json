@@ -52,7 +52,7 @@
       "type": "patchouli:spotlight",
       "anchor": "soup",
       "item": "tfc:food/fruit_soup",
-      "title": "Soup Recipes",
+      "title": "Przepisy na zupę",
       "link_recipes": false,
       "text": "Soup is made from 3-5 $(thing)fruits$(), $(thing)vegetables$(), or $(thing)meats$() in a pot of $(thing)water$(). When the recipe is done, the water in the pot will turn red. $(item)$(k:key.use)$() with a $(l:mechanics/bowls)bowl$() to retrieve it. Soup combines multiple nutrients into a single meal."
     },

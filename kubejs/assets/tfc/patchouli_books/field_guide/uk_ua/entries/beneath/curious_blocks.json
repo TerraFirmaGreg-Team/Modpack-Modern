@@ -5,7 +5,7 @@
 	"pages": [
 		{
 			"type": "patchouli:crafting",
-			"name": "Soul Clay",
+			"name": "Глина душ",
 			"text": "Акведуки також можуть переносити лаву та інші рідини, що може бути корисним під час будівництва $(l:beneath/hellforge)пекельної кузні$().",
 			"anchor": "blackstone_aqueduct",
 			"recipe": "tfg:shaped/blackstone_aqueduct"
