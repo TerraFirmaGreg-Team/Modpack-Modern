@@ -45,6 +45,7 @@
 	"fluidlogistics.configuration.fluidPackageCapacity": "Pojemność pakowacza płynów",
 	"fluidlogistics.configuration.fluidPackageCapacity.tooltip": "Maksymalna ilość płynu, jaką może pomieścić paczka z płynem (w mW)",
 	"fluidlogistics.configuration.fluidPumpRange": "Zasięg pompy",
+	"fluidlogistics.configuration.section.blockProperties": "Właściwości bloku",
 	"fluidlogistics.configuration.section.fluidlogistics.server.toml": "Konfiguracja pakowacza płynów",
 	"fluidlogistics.configuration.section.fluidlogistics.server.toml.title": "Konfiguracja pakowacza płynów",
 	"fluidlogistics.configuration.title": "Konfiguracja pakowacza płynów",
