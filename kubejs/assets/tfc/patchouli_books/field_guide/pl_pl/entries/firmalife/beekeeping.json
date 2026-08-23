@@ -42,7 +42,7 @@
     {
       "type": "patchouli:text",
       "text": "$(li)$(thing)Hardiness$(): Allows bees to produce honey at lower temperatures. Hardiness 10 allows up to -16°C, whereas Hardiness 1 allows up to 2°C.$()$(li)$(thing)Production$(): Improves the speed of honey production.$()$(li)$(thing)Mutant$(): Increases variability in the traits passed during breeding$().",
-      "title": "List of Abilities"
+      "title": "Lista zdolności"
     },
     {
       "type": "patchouli:text",

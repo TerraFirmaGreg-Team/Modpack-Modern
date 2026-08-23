@@ -5,12 +5,12 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "The mixing bowl is a way of mixing items and fluids together in a friendly way. $(item)$(k:key.use)$() on it with a $(thing)Spoon$() to add it to the bowl, which allows it to operate."
+      "text": "Миска для змішування — це зручний спосіб змішувати предмети та рідини разом. Натисни $(item)$(k:key.use)$() на неї $(thing)дерев'яною ложкою$(), щоб додати її до миски, що дозволить їй працювати."
     },
     {
       "type": "patchouli:crafting",
       "recipe": "firmalife:crafting/mixing_bowl",
-      "text": "Requires a $(thing)Spoon$() to use."
+      "text": "Для використання потрібна $(thing)дерев'яна ложка$()."
     }
   ],
   "read_by_default": true,

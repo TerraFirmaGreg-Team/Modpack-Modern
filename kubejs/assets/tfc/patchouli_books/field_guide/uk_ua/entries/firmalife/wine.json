@@ -1,36 +1,36 @@
 {
-  "name": "Winemaking",
+  "name": "Виноробство",
   "category": "tfc:firmalife",
   "icon": "firmalife:textures/item/food/white_grapes.png",
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "$(thing)Winemaking$() is the science of turning grapes into alcohol. There is time spent gathering resources, and spending time crafting those resources together, as well as time spent $(thing)enjoying$() the product. Please note that wine in Firmalife (on its own) has no special use beyond regular TFC alcohol. You should make it only if you want to have $(thing)fun$()."
+      "text": "$(thing)Виноробство$() — це наука про перетворення винограду на алкоголь. Певний час витрачається на збір ресурсів та їхній спільне створення, а також на те, щоб $(thing)насолодитися$() продуктом. Будь ласка, зверни увагу, що вино у FirmaLife (саме по собі) не має особливого призначення, окрім властивостей звичайного алкоголю з TFC. Тобі слід виготовляти його лише в тому разі, якщо ти бажаєш отримати $(thing)задоволення$()."
     },
     {
       "type": "patchouli:spotlight",
       "item": "firmalife:plant/wild_red_grapes",
       "link_recipes": false,
-      "text": "Red grapes spawn from 0-30 C, and 125-500 rainfall, or almost the entire habitable area."
+      "text": "Червоний виноград з'являється за температури 0–30 °C та опадів 125–500 мм, тобто майже по всій заселеній території."
     },
     {
       "type": "patchouli:spotlight",
       "item": "firmalife:plant/wild_white_grapes",
       "link_recipes": false,
-      "text": "White grapes spawn from 0-30 C, and 125-500 rainfall, or almost the entire habitable area."
+      "text": "Білий виноград з'являється за температури 0–30 °C та опадів 125–500 мм, тобто майже по всій заселеній території."
     },
     {
       "type": "patchouli:crafting",
       "recipe": "firmalife:crafting/grape_trellis_post",
-      "text": "Grapes must be grown on trellises constructed from these special posts and jute fiber."
+      "text": "Виноград обов'язково має вирощуватися на шпалері, побудованій із цього спеціального стовпчика та джутового волокна."
     },
     {
       "type": "patchouli:text",
-      "text": "To construct a trellis, place two posts on top of each other. Move two blocks to the left or right and repeat the action. Then, $(item)$(k:key.use)$() the side of one of the top and bottom posts with $(thing)Jute Fiber$() to string lines between the posts. Grape trellises can be chained horizontally to create rows of grapes."
+      "text": "Щоб побудувати шпалеру, розмісти два стовпчики один на один. Відійди на два блоки ліворуч або праворуч і повтори дію. Потім натисни $(item)$(k:key.use)$() по бічній стороні одного з верхніх та нижніх стовпчиків, тримаючи $(thing)джутове волокно$(), щоб натягнути нитку між ними. Виноградну шпалеру можна з'єднувати горизонтально, щоб створювати винний ряд."
     },
     {
       "type": "tfc:multimultiblock",
-      "text": "A grape trellis.",
+      "text": "Виноградна шпалера.",
       "multiblocks": [
         {
           "pattern": [
@@ -67,39 +67,39 @@
     },
     {
       "type": "patchouli:text",
-      "text": "Provided the climate requirements are satisfied, the grape will grow up and over the trellis over the course of a few months. It will fruit in the month of July, flowering the month prior. Grapes can the be harvested. Grapes can also be grown in greenhouses on trellises."
+      "text": "За умови дотримання кліматичних вимог виноград ростиме вгору й пошириться по шпалері протягом кількох місяців. Він плодоносить у липні, а квітне місяцем раніше. Після цього виноград можна збирати. Виноград також можна вирощувати в теплиці на жардиньєрці для кущів."
     },
     {
       "type": "patchouli:crafting",
       "recipe": "firmalife:crafting/wood/acacia_stomping_barrel",
-      "text": "The stomping barrel is used to smash grapes. A quern may also be used."
+      "text": "Чавильна діжка використовується для чавлення винограду. Для цього також можна використовувати жорна."
     },
     {
       "type": "patchouli:text",
-      "text": "To use a stomping barrel, $(item)$(k:key.use)$() with fresh grapes. Then, jump up and down on the barrel 16 times. $(item)$(k:key.use)$() with an empty hand to retrieve the items.$(br2)Then, seal the grapes in a barrel for 5 days to $(thing)ferment$() them."
+      "text": "Щоб скористатися чавильною діжкою, натисни $(item)$(k:key.use)$(), тримаючи свіжий виноград. Потім пострибай на діжці 16 разів. Натисни $(item)$(k:key.use)$() порожньою рукою, щоб забрати предмети.$(br2)Після цього закрий виноград у діжці на 5 днів, щоб він $(thing)забродив$()."
     },
     {
       "type": "patchouli:crafting",
       "recipe": "firmalife:crafting/wood/acacia_barrel_press",
-      "text": "The barrel press is the last step in grape processing."
+      "text": "Пресова діжка — це останній крок в обробці винограду."
     },
     {
       "type": "patchouli:text",
-      "text": "The leftmost slot can contain up to 16 grapes. Four grape items are needed for a bottle of wine. The four central slots are for mixing the grapes with other ingredients, but this is optional. Using only red or white grapes yields red or white wine. Adding at least one red grape to white wine makes Rose. Adding sugar to white wine makes dessert wine. Adding tirage mixture (yeast and sweetener in a barrel) makes sparkling wine."
+      "text": "Найлівіший слот може вміщувати до 16 одиниць винограду. Для однієї пляшки вина потрібно чотири предмети винограду. Чотири центральні слоти призначені для змішування винограду з іншим інгредієнтом, але це необов'язково. Використання лише червоного або білого винограду дає червоне або біле вино. Додавання принаймні одного червоного винограду до білого утворює рожеве вино. Додавання цукру до білого вина робить його десертним. Додавання тиражної суміші (дріжджі та підсолоджувач у діжці) утворює ігристе вино."
     },
     {
       "type": "tfc:glassworking_recipe",
       "recipe": "firmalife:glassworking/olivine_wine_bottle",
-      "text": "Wine must be bottled in a proper wine bottle, made of non-silica glass."
+      "text": "Вино обов'язково має бути розлите у справжню винну пляшку, виготовлену з некремнієвого скла."
     },
     {
       "type": "patchouli:crafting",
       "recipe": "firmalife:crafting/bottle_label",
-      "text": "$(thing)Bottle labels$() can be renamed in a scribing station, and will add their name to the wine's tooltip."
+      "text": "$(thing)Етикетка для пляшки$() може бути перейменована на станції писаря, після чого її назва додасться до підказки вина."
     },
     {
       "type": "patchouli:text",
-      "text": "Wine must be provided with a $(thing)Cork$(), made by soaking $(thing)Treated Lumber$() in $(thing)Limewater$() for a day. When all is complete, use the bottle slot to fill the wine, or by pressing $(item)$(k:key.use)$() with a bottle in hand."
+      "text": "Вино обов'язково має бути забезпечене $(thing)корком$(), виготовленим шляхом замочування $(thing)обробленого пиломатеріалу$() у $(thing)вапняній воді$() на один день. Коли все буде готово, скористайся слотом для пляшки, щоб налити вино, або натисни $(item)$(k:key.use)$(), тримаючи пляшку в руці."
     }
   ],
   "read_by_default": true,

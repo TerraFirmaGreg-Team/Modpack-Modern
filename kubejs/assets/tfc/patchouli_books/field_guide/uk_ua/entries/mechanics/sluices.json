@@ -5,7 +5,7 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "The $(thing)Sluice$() is a device that is used to process $(thing)Ore Deposits$(), producing the same results that $(l:mechanics/panning)Panning$() does, with different probabilities."
+      "text": "$(thing)Мийний жолоб$() — це пристосування, яке використовується для обробки $(thing)рудного відкладення$(). Він дає такі ж результати, як і $(l:mechanics/panning)промивання$(), але з іншою ймовірністю."
     },
     {
       "type": "patchouli:crafting",

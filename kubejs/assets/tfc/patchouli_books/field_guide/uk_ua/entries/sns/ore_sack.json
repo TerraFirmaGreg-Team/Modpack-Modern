@@ -1,17 +1,17 @@
 {
-  "name": "The Ore Sack",
+  "name": "Мішок для руди",
   "category": "tfc:sacks_n_such",
   "icon": "sns:ore_sack",
   "pages": [
     {
       "type": "patchouli:spotlight",
       "item": "sns:ore_sack",
-      "text": "The $(item)Ore Sack$() is a type of $(l:sns/item_containers)Item Container$() intended for holding large amounts of a single ore like item making it extremely useful when going mining. $(br2)By default these hold a staggering 512 items"
+      "text": "$(item)Мішок для руди$() — це різновид $(l:sns/item_containers)контейнера для предметів$(), призначений для зберігання великої кількості одного виду руди, що робить його надзвичайно корисним під час виправ на штольню. $(br2)За замовчуванням він уміщує приголомшливі 512 предметів"
     },
     {
       "type": "patchouli:crafting",
       "recipe": "sns:crafting/ore_sack",
-      "text": "For modpack authors or simply people wishing to add extra ores see the item tag $(bold)sns:allowed_in_ore_sack$() most addons should be automatically supported"
+      "text": "Для авторів модпаків або просто людей, які бажають додати нові руди, дивіться тег предмета $(bold)sns:allowed_in_ore_sack$() — більшість аддонів мають підтримуватися автоматично"
     }
   ],
   "read_by_default": true

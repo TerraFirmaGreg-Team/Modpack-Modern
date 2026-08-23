@@ -1,12 +1,12 @@
 {
-  "name": "The Straw Basket",
+  "name": "Солом'яний кошик",
   "category": "tfc:sacks_n_such",
   "icon": "sns:straw_basket",
   "pages": [
     {
       "type": "patchouli:spotlight",
       "item": "sns:straw_basket",
-      "text": "The $(item)Straw Basket$() is a type of $(l:sns/item_containers)Item Container$() and is basically a cheaper Vessel. By default these can hold up to $(thing)Small$() Items"
+      "text": "$(item)Солом'яний кошик$() — це тип $(l:sns/item_containers)контейнера для предметів$(), який, по суті, є дешевшим аналогом корчаги. За замовчуванням у ньому можна зберігати предмети розміром до $(thing)малий$() включно."
     },
     {
       "type": "patchouli:crafting",

@@ -1,17 +1,17 @@
 {
-  "name": "The Seed Pouch",
+  "name": "Мішечок для насіння",
   "category": "tfc:sacks_n_such",
   "icon": "sns:seed_pouch",
   "pages": [
     {
       "type": "patchouli:spotlight",
       "item": "sns:seed_pouch",
-      "text": "The $(item)Seed Pouch$() is a type of $(l:sns/item_containers)Item Container$() intended for holding a large variety of seeds making it very useful when farming. $(br2)By default these have 27 slots holding up to 64 seeds each"
+      "text": "$(item)Мішечок для насіння$() — це різновид $(l:sns/item_containers)контейнера для предметів$(), призначений для зберігання великої кількості різного насіння, що робить її дуже корисною під час фермерства. $(br2)За замовчуванням вона має 27 слотів, кожен з яких уміщує до 64 насінин"
     },
     {
       "type": "patchouli:crafting",
       "recipe": "sns:crafting/seed_pouch",
-      "text": "For modpack authors or simply people wishing to add extra seeds see the item tag $(bold)sns:allowed_in_seed_pouch$() most addons should be automatically supported"
+      "text": "Для авторів модпаків або просто людей, які бажають додати нове насіння, дивіться тег предмета $(bold)sns:allowed_in_seed_pouch$() — більшість аддонів мають підтримуватися автоматично"
     }
   ],
   "read_by_default": true

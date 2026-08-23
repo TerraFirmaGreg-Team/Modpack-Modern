@@ -33,6 +33,7 @@
   "enum.deathpunishment.health_mode.KEEP": "Zachowaj po śmierci",
   "tooltip.deathpunishment.hunger_mode": "Wybierz tryb głodu:\n• TFC - domyślny system\n• Ręcznie - Ustaw stałą wartość\n• Zachowaj - Zachowaj poprzedni poziom",
   "tooltip.deathpunishment.thirst_mode": "Wybierz tryb pragnienia:\n• TFC - domyślny system\n• Ręcznie - Ustaw stałą wartość\n• Zachowaj - Zachowaj poprzedni poziom",
+  "tooltip.deathpunishment.food_level": "Początkowy poziom najedzenia po odrodzeniu (aktywne w trybie ręcznym)",
   "tooltip.deathpunishment.thirst_level": "Początkowe pragnienie po odrodzeniu (aktywne w trybie ręcznym)",
   "tooltip.deathpunishment.health": "Początkowe zdrowie po odrodzeniu (aktywne w trybie ręcznym)",
   "tooltip.deathpunishment.effect_amplifier": "Podstawowy poziom wszystkich negatywnych efektów (0-5)",

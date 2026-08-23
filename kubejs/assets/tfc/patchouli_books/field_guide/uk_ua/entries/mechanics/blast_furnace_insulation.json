@@ -5,12 +5,12 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "$(thing)Blast Furnace Insulation$() is a more compact way to insulate your $(l:mechanics/blast_furnace)Blast Furnace$(). Rather than placing sheets around the chimney, $(thing)Blast Furnace Insulation$() is applied directly to the $(l:mechanics/fire_clay#fire_bricks)Fire Bricks$() using $(item)$(k:key.use)$(). When broken, the insulation and bricks drop separately."
+      "text": "$(thing)Ізоляція доменної печі$() — це компактніший спосіб ізолювати твою $(l:mechanics/blast_furnace)доменну піч$(). Замість того щоб розкладати листи навколо димаря, $(thing)ізоляція доменної печі$() наноситься безпосередньо на $(l:mechanics/fire_clay#fire_bricks)вогнетривку цеглу$() за допомогою $(item)$(k:key.use)$(). Якщо її зламати, ізоляція та цегла випадуть окремо."
     },
     {
       "type": "patchouli:crafting",
       "recipe": "tfcbetterbf:crafting/insulation",
-      "text": "Crafting insulation requires the same number of $(thing)Wrought Iron Sheets$() that would be placed around a single fire brick block."
+      "text": "Для створення ізоляції потрібна така ж кількість $(thing)листів зварного заліза$(), яка б знадобилася для розміщення навколо одного блока вогнетривкої цегли."
     }
   ],
   "read_by_default": true
