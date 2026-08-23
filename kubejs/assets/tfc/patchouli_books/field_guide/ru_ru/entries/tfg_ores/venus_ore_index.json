@@ -7,15 +7,13 @@
   "secret": false,
   "pages": [
     {
-      "Type": "patchouli:text",
+      "type": "patchouli:text",
       "text": "Это $(thing)Индекс руд$() для $(thing)Венера$(). Все руды отсортированы в алфавитном порядке, а затем от самых богатых к самым бедным жилам. Ты можешь нажать на них для получения информации про каждую жилу.",
-      "title": "Каталог руд Венеры",
-      "type": "patchouli:text"
+      "title": "Каталог руд Венеры"
     },
     {
-      "Type": "patchouli:text",
-      "text": "$(li)Галит: $(l:tfg_ores/venus_vein_index#venus_manual_salt)80%$(/l)$()$(li)Лепидолит: $(l:tfg_ores/venus_vein_index#venus_manual_salt)5%$(/l)$()$(li)Пирит: $(l:tfg_ores/venus_vein_index#venus_manual_sulfur)15%$(/l)$()$(li)Сера: $(l:tfg_ores/venus_vein_index#venus_manual_sulfur)80%$(/l)$()$(li)Сильвин: $(l:tfg_ores/venus_vein_index#venus_manual_salt)10%$(/l)$()$(li)Сподумен: $(l:tfg_ores/venus_vein_index#venus_manual_salt)5%$(/l)$()$(li)Сфалерит: $(l:tfg_ores/venus_vein_index#venus_manual_sulfur)5%$(/l)$()",
-      "type": "patchouli:text"
+      "type": "patchouli:text",
+      "text": "$(li)Галит: $(l:tfg_ores/venus_vein_index#venus_manual_salt)80%$(/l)$()$(li)Лепидолит: $(l:tfg_ores/venus_vein_index#venus_manual_salt)5%$(/l)$()$(li)Пирит: $(l:tfg_ores/venus_vein_index#venus_manual_sulfur)15%$(/l)$()$(li)Сера: $(l:tfg_ores/venus_vein_index#venus_manual_sulfur)80%$(/l)$()$(li)Сильвин: $(l:tfg_ores/venus_vein_index#venus_manual_salt)10%$(/l)$()$(li)Сподумен: $(l:tfg_ores/venus_vein_index#venus_manual_salt)5%$(/l)$()$(li)Сфалерит: $(l:tfg_ores/venus_vein_index#venus_manual_sulfur)5%$(/l)$()"
     }
   ],
   "sortnum": 8

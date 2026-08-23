@@ -1,0 +1,49 @@
+{
+  "name": "流し樋",
+  "category": "tfc:mechanics",
+  "icon": "tfc:textures/gui/book/icons/sluice.png",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)流し樋$()は鉱石が混ざった砂利である$(thing)鉱床$()から金属のみを取り出す装置であり、$(l:mechanics/panning)ふるい$()と同じ様に機能しますが確率が異なります。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/wood/sequoia_sluice",
+      "text": "流し樋は棒と木材で作成できます。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "流し樋を設置すると、2ブロックが占有されます。使うには水が内部を通って先端から流れ出る必要があります。流し樋は、内部で水が流れているように見えるときに正常に機能します。水を正しく流すには、水流の最後のブロックでなければなりません。水が先端から排出されるには、流し樋の先端には何もない空間が必要です。"
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "tfc:textures/gui/book/tutorial/sluice_cross.png"
+      ],
+      "text": "水を適切に配置した流し樋。",
+      "border": true
+    },
+    {
+      "type": "patchouli:text",
+      "text": "流し樋を使用するには、水流を使って鉱床を流し桶に入れ込みます。入れ込まれたアイテムは見た目にも表示され、しばらくすると確率で加工されたアイテムが吐き出されます。"
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "tfc:textures/gui/book/tutorial/sluice_in_use.png"
+      ],
+      "text": "内部にアイテムが入った稼働中の流し樋。",
+      "border": true
+    },
+    {
+      "type": "patchouli:text",
+      "text": "流し樋は、$(thing)鉱石$()、$(thing)小石$()、および$(l:mechanics/gems)宝石$()の3種類のアイテムが得られる可能性があります。確率は次のとおりです:$(br)$(li)鉱石: 55%$(li)小石: 22.5%$(li)宝石: 0.9%$()$(br)岩石の種類には、特定の宝石が含まれることがあり、それに応じて宝石が得られます。",
+      "title": "ふるいで得られるもの"
+    }
+  ],
+  "read_by_default": true,
+  "extra_recipe_mappings": {
+    "tag:tfc:sluices": 0
+  }
+}

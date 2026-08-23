@@ -1,0 +1,26 @@
+{
+  "name": "チョコレート",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:textures/item/food/dark_chocolate.png",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)チョコレート$()作りには、大した報酬もないのに、いくつかの加工工程が必要です。$(br2)Firmalifeをプレイする上で重要なことは、ショコラティエになることは個人的な楽しみや喜びのためであり、与えられた入力から最大限の価値を引き出そうとするためではないということです。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "チョコレート加工を始めるには、まずカカオ豆を$(l:tfc:firmalife/ovens)オーブン$()で$(thing)焙煎$()し、$(thing)焙煎カカオ豆$()を作る必要があります。$(br2)その後、焙煎した豆を$(thing)ナイフ$()で削り、$(thing)ココアパウダー$()と$(thing)ココアバター$()に分けられます。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l:tfc:firmalife/mixing_bowl)ミキシングボウル$()は、ココアパウダー、バター、甘味料（砂糖または蜂蜜）を混ぜて$(thing)チョコレートブレンド$()を作るのに使います。$(br)ココアバターとパウダーの割合が、出来上がりを左右します:$(br)$(li)パウダー1個、バター1個、甘味料1個：ミルクチョコレート$()$(li)パウダー2個、甘味料1: ダークチョコレート$()$(li)パウダー2個、甘味料1: ホワイトチョコレート$()"
+    },
+    {
+      "type": "tfc:drying_recipe",
+      "recipe": "firmalife:drying/dark_chocolate",
+      "text": "最後にチョコレートを$(l:tfc:firmalife/drying)乾燥マット$()の上で乾燥させ、$(thing)チョコレート$()が完成します。"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 22
+}

@@ -1,0 +1,51 @@
+{
+  "name": "裁縫テーブル",
+  "category": "tfc:mechanics",
+  "icon": "tfc:wood/sewing_table/oak",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)裁縫テーブル$()は、バナーパターンや鍛冶テンプレートを作成するために使用されます。それには、$(l:mechanics/weaving#wool_cloth)羊毛の布$()、$(l:mechanics/weaving#burlap_cloth)麻布$()、糸または羊毛の糸、および針が必要です。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/bone_needle",
+      "text": "裁縫用の針は、骨から作ることができます。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/wood/oak_sewing_table",
+      "text": "裁縫テーブルは木材、革、ハサミから作成することができます。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "裁縫テーブルのインベントリは、作業台のインベントリに似ています。間違えた場合は、インベントリを終了するだけで、アイテムは返されます。GUIにはレシピブックがあり、本を選択するとメニューが開き、レシピを選択できます。これにより、作業面に実行するステップの小さな指示が表示されます。"
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "tfc:textures/gui/book/gui/sewing_table.png"
+      ],
+      "text": "裁縫画面。",
+      "border": true
+    },
+    {
+      "type": "patchouli:text",
+      "text": "左側のスロットには糸と針を入れます。下部の2つのスロットには、ジュート布とウール布の任意の組み合わせを入れることができます。右側のスロットには、仕上がった完成品が表示されます。完成品スロットからアイテムを取り出すことでクラフトが完了し、アイテムが使用されます。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "各布製アイテムは、裁縫面にその材料の8つの四角を配置することができます。同様に、各毛糸アイテムは16ステッチを配置することができます。レシピを選択したら、画面の右上のボタンを使用して四角を配置し、ガイドに示されたようにそれらを縫い合わせます。ステッチを削除したいですか？赤い「X」ボタンを使用して四角を取り除きます。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/vanilla/loom",
+      "text": "旗のパターンを作成するための旗の加工台は、旗のパターンを使用して作業するために作られます。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "鍛冶テンプレートの使用方法については、$(l:mechanics/armor_trims)防具の装飾$()の章を参照してください。"
+    }
+  ],
+  "read_by_default": true
+}

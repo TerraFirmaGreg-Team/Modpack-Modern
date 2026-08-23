@@ -1,5 +1,4 @@
 {
-  "__comment__": "This file was automatically created by mcresources",
   "name": "Драгоценные камни",
   "category": "tfc:mechanics",
   "icon": "tfc:gem/opal",
@@ -24,7 +23,7 @@
     },
     {
       "type": "patchouli:text",
-      "text": "To cut a gem, you must craft $(thing)Sandpaper$(). Sandpaper is made from Black Sand, Flux, Glue, any Gem Powder, and Paper. Crafting an uncut gem with sandpaper cuts the gem."
+      "text": "Чтобы огранить драгоценный камень, тебе нужно создать $(thing)наждачную бумагу$(). Наждачная бумага изготавливается из чёрного песка, флюса, клея, любого порошка из драгоценного камня и бумаги. Обработка неогранённого драгоценного камня наждачной бумагой позволяет огранить его."
     },
     {
       "type": "patchouli:crafting",

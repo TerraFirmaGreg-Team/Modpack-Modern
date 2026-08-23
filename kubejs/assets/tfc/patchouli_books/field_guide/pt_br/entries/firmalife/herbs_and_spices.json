@@ -1,5 +1,4 @@
 {
-	"__comment__": "This file was automatically created by mcresources",
 	"name": "Ervas e Especiarias",
 	"category": "tfc:firmalife",
 	"icon": "firmalife:spice/basil_leaves",
@@ -10,6 +9,7 @@
 		},
 		{
 			"type": "tfc:multimultiblock",
+			"text": "$(thing)Manjericão Selvagem$() cresce entre 12 e 25C, e 300 a 500mm de precipitação.",
 			"multiblocks": [
 				{
 					"pattern": [
@@ -39,11 +39,13 @@
 				}
 			],
 			"name": "Manjericão",
-			"text": "$(thing)Manjericão Selvagem$() cresce entre 12 e 25C, e 300 a 500mm de precipitação.",
 			"enable_visualize": false
 		},
 		{
 			"type": "tfc:multimultiblock",
+			"name": "Loureiro",
+			"text": "$(thing)Loureiro Selvagem$() cresce entre 8 e 14C, e 25 a 225mm de precipitação.",
+			"enable_visualize": false,
 			"multiblocks": [
 				{
 					"pattern": [
@@ -71,13 +73,11 @@
 						"X": "firmalife:plant/bay_laurel[stage=1]"
 					}
 				}
-			],
-			"name": "Loureiro",
-			"text": "$(thing)Loureiro Selvagem$() cresce entre 8 e 14C, e 25 a 225mm de precipitação.",
-			"enable_visualize": false
+			]
 		},
 		{
 			"type": "tfc:multimultiblock",
+			"text": "$(thing)Cardamomo Selvagem$() cresce entre 18 e 30C, e 350 a 500mm de precipitação.",
 			"multiblocks": [
 				{
 					"pattern": [
@@ -107,11 +107,13 @@
 				}
 			],
 			"name": "Cardamomo",
-			"text": "$(thing)Cardamomo Selvagem$() cresce entre 18 e 30C, e 350 a 500mm de precipitação.",
 			"enable_visualize": false
 		},
 		{
 			"type": "tfc:multimultiblock",
+			"name": "Coentro",
+			"text": "$(thing)Coentro Selvagem$() cresce entre 5 e 15C, e 0 a 150mm de precipitação.",
+			"enable_visualize": false,
 			"multiblocks": [
 				{
 					"pattern": [
@@ -139,13 +141,11 @@
 						"X": "firmalife:plant/cilantro[stage=1]"
 					}
 				}
-			],
-			"name": "Coentro",
-			"text": "$(thing)Coentro Selvagem$() cresce entre 5 e 15C, e 0 a 150mm de precipitação.",
-			"enable_visualize": false
+			]
 		},
 		{
 			"type": "tfc:multimultiblock",
+			"text": "$(thing)Cominho Selvagem$() cresce entre 6 e 20C, e 50 a 250mm de precipitação.",
 			"multiblocks": [
 				{
 					"pattern": [
@@ -175,7 +175,6 @@
 				}
 			],
 			"name": "Cominho",
-			"text": "$(thing)Cominho Selvagem$() cresce entre 6 e 20C, e 50 a 250mm de precipitação.",
 			"enable_visualize": false
 		},
 		{

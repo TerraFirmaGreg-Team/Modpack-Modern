@@ -4,5 +4,8 @@
 	"entity.sandworm_mod.worm_chain": "Песчаный червь",
 	"entity.sandworm_mod.worm_head_segment": "Голова песчаного червя",
 	"entity.sandworm_mod.worm_segment": "Тело песчаного червя",
-	"item.sandworm_mod.sandworm_tooth": "Зуб песчаного червя"
+	"item.sandworm_mod.sandworm_tooth": "Зуб песчаного червя",
+	"msg.sandworm_mod.spawn": "§4ОН ИДЁТ!!!",
+	"msg.sandworm_mod.stage_1": "§eПесчаный червь чувствует тебя...",
+	"msg.sandworm_mod.stage_2": "§cПесчаный червь скоро проснётся!"
 }

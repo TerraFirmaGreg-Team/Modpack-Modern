@@ -1,0 +1,34 @@
+{
+  "name": "宝石",
+  "category": "tfc:mechanics",
+  "icon": "tfc:gem/opal",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "宝石は、$(thing)川底$()や$(l:the_world/geology)火山$()など、さまざまな場所で生成される鉱物の一種です。正確な条件については、$(l:the_world/ores_and_minerals)鉱石と鉱物$()の章を参照してください。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "tag:tfc:gem_powders",
+      "link_recipes": false,
+      "text": "宝石は、$(l:mechanics/quern)石臼$()を使用して粉末にすることができます。宝石の粉末は、$(l:mechanics/glassworking_applications#coloring)ガラスの着色$()に特に有用です。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l:mechanics/sluices)流し樋$()と$(l:mechanics/panning)ふるい$()を通じて、$(thing)宝石$()を取得できます。流し樋で入手できる宝石は、処理中の岩石の種類に関連付けられています。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "宝石は通常の鉱石よりも$(thing)硬度$()が高く、破壊するには異なる強度のツールが必要です。以下は、宝石鉱石ブロックを破壊するために必要な最低等級の$(thing)ツルハシ$()をまとめたものです: $(br)$(li)アメジスト: 鋼$(li)ダイヤモンド: 黒鋼$(li)エメラルド: 鋼$(li)ラピスラズリ: 青銅$(li)オパール: 青銅$(li)黄鉄鉱: 銅$(li)ルビー: 黒鋼$(li)サファイア: 黒鋼$(li)トパーズ: 鋼"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "宝石を得るには、$(thing)紙やすり$()を作成しなければなりません。紙やすりは黒い砂、融剤、接着剤、任意の宝石粉末、紙から作られます。紙やすりを使用して未研磨の宝石を加工すると、宝石が手に入ります。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/sandpaper"
+    }
+  ],
+  "read_by_default": true
+}

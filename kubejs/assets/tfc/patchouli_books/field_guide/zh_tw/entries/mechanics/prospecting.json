@@ -1,5 +1,4 @@
 {
-  "__comment__": "This file was automatically created by mcresources",
   "name": "探礦",
   "category": "tfc:mechanics",
   "icon": "tfc:metal/propick/wrought_iron",
@@ -30,22 +29,22 @@
     },
     {
       "type": "patchouli:image",
+      "text": "探礦鎬效果如圖所示。大$(bold)\"!\"$()標識粒子為全礦脈顯像，小粒子則為各礦石顯像。",
       "title": "探礦視角",
       "images": [
         "tfg:textures/gui/field_guide/prospecting/tfg_prospectors_pick_xray.png"
       ],
-      "border": true,
-      "text": "探礦鎬效果如圖所示。大$(bold)\"!\"$()標識粒子為全礦脈顯像，小粒子則為各礦石顯像。"
+      "border": true
     },
     {
       "type": "tfc:knapping_recipe",
-      "recipe": "tfc:clay_knapping/propick_head_mold",
-      "text": "製作探礦鎬可以用黏土按上圖$(l:getting_started/pottery)捏製$()成未燒製的探礦鎬頭模具。"
+      "text": "製作探礦鎬可以用黏土按上圖$(l:getting_started/pottery)捏製$()成未燒製的探礦鎬頭模具。",
+      "recipe": "tfc:clay_knapping/propick_head_mold"
     },
     {
       "type": "tfc:heat_recipe",
-      "recipe": "tfc:heating/propick_head_mold",
-      "text": "黏土$(l:getting_started/pottery)捏製()後需要$(l:mechanics/heating)燒製$()才能做成$(item)探礦鎬模具$()。$(br2)將液態金屬倒入燒製好的模具就能$(l:getting_started/finding_ores#casting)鑄造$()出探礦鎬。"
+      "text": "黏土$(l:getting_started/pottery)捏製()後需要$(l:mechanics/heating)燒製$()才能做成$(item)探礦鎬模具$()。$(br2)將液態金屬倒入燒製好的模具就能$(l:getting_started/finding_ores#casting)鑄造$()出探礦鎬。",
+      "recipe": "tfc:heating/propick_head_mold"
     },
     {
       "type": "tfc:anvil_recipe",

@@ -1,0 +1,17 @@
+{
+  "name": "Buty górskie",
+  "category": "tfc:sacks_n_such",
+  "icon": "sns:hiking_boots",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Every explorer needs a good pair of boots. These enable you to quickly push through shrubbery and give a minor speed boost in addition to a minor increase in safe fall height"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "sns:crafting/hiking_boots",
+      "text": "These boots were made for walking"
+    }
+  ],
+  "read_by_default": true
+}

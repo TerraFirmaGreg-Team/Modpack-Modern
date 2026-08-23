@@ -7,25 +7,22 @@
   "secret": false,
   "pages": [
     {
-      "Type": "patchouli:text",
+      "type": "patchouli:text",
       "text": "这是 $(item)金星$() 的 $(thing)矿脉索引$()。每个矿脉都有关于其稀有度、密度、矿脉类型、生成高度、尺寸、生成于何种岩石中等详细信息。",
-      "title": "金星矿脉索引",
-      "type": "patchouli:text"
+      "title": "金星矿脉索引"
     },
     {
-      "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/venus_vein_index#venus_manual_salt)岩盐, 钾石盐, 锂云母, 锂辉石$()$()$(li)$(l:tfg_ores/venus_vein_index#venus_manual_sulfur)硫, 黄铁矿, 闪锌矿$()$()",
-      "type": "patchouli:text"
+      "type": "patchouli:text",
+      "text": "$(li)$(l:tfg_ores/venus_vein_index#venus_manual_salt)岩盐, 钾石盐, 锂云母, 锂辉石$()$()$(li)$(l:tfg_ores/venus_vein_index#venus_manual_sulfur)硫, 黄铁矿, 闪锌矿$()$()"
     },
     {
-      "Type": "patchouli:text",
+      "type": "patchouli:text",
       "text": "$(thing)$(t:每个区块生成矿脉的几率。下面的数字越小就越常见。)稀有度$(/t)$(): 1/30 区块$(br)$(thing)$(t:矿脉中矿石方块所占的百分比。百分比越高，矿石越多。)密度$(/t)$(): 20%$(br)$(thing)$(t:矿脉的形状。)类型$(/t)$(): $(t:宽而扁平)盘状矿脉$(/t)$(br)$(thing)$(t:矿脉可能生成的 Y 轴范围。)Y$(/t)$(): 40 — 65$(br)$(thing)$(t:矿脉的平均直径)尺寸$(/t)$(): 20$(br)$(thing)高度$(): 6$(br)$(thing)$(t:如果地表与矿脉之间的距离大于此数值，则地表不会生成矿脉指示物。)指示物最大深度$(/t)$(): 30$(br)$(thing)生物群系$(): 任意$(br2)$(thing)岩石类型$(): 安山岩, 流纹岩, 煌斑岩, 熔灰岩, 玄武岩, 石灰华, 粗面岩, 英安岩",
       "title": "岩盐, 钾石盐, 锂云母, 锂辉石",
-      "type": "patchouli:text",
       "anchor": "venus_manual_salt"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "岩盐",
       "multiblock": {
         "mapping": {
@@ -41,11 +38,10 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)百分比$(): 80%$(br)$(thing)来源$(): 钠, 氯$(br)$(thing)化学式$(): NaCl",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)百分比$(): 80%$(br)$(thing)来源$(): 钠, 氯$(br)$(thing)化学式$(): NaCl"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "钾石盐",
       "multiblock": {
         "mapping": {
@@ -61,11 +57,10 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)百分比$(): 10%$(br)$(thing)来源$(): 钾, 氯, 肥料$(br)$(thing)化学式$(): KCl",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)百分比$(): 10%$(br)$(thing)来源$(): 钾, 氯, 肥料$(br)$(thing)化学式$(): KCl"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "锂云母",
       "multiblock": {
         "mapping": {
@@ -81,11 +76,10 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)百分比$(): 5%$(br)$(thing)来源$(): 钾, 锂, 铝, 氟$(br)$(thing)化学式$(): KLi₃Al₄F₂O₁₀",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)百分比$(): 5%$(br)$(thing)来源$(): 钾, 锂, 铝, 氟$(br)$(thing)化学式$(): KLi₃Al₄F₂O₁₀"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "锂辉石",
       "multiblock": {
         "mapping": {
@@ -101,23 +95,20 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)百分比$(): 5%$(br)$(thing)来源$(): 锂, 铝$(br)$(thing)化学式$(): LiAlSi₂O₆",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)百分比$(): 5%$(br)$(thing)来源$(): 锂, 铝$(br)$(thing)化学式$(): LiAlSi₂O₆"
     },
     {
-      "Type": "patchouli:empty",
-      "draw_filler": true,
-      "type": "patchouli:empty"
+      "type": "patchouli:empty",
+      "draw_filler": true
     },
     {
-      "Type": "patchouli:text",
+      "type": "patchouli:text",
       "text": "$(thing)$(t:每个区块生成矿脉的几率。下面的数字越小就越常见。)稀有度$(/t)$(): 1/30 区块$(br)$(thing)$(t:矿脉中矿石方块所占的百分比。百分比越高，矿石越多。)密度$(/t)$(): 20%$(br)$(thing)$(t:矿脉的形状。)类型$(/t)$(): $(t:大致呈圆形)团簇状矿脉$(/t)$(br)$(thing)$(t:矿脉可能生成的 Y 轴范围。)Y$(/t)$(): 40 — 65$(br)$(thing)$(t:矿脉的平均直径)尺寸$(/t)$(): 20$(br)$(thing)$(t:如果地表与矿脉之间的距离大于此数值，则地表不会生成矿脉指示物。)指示物最大深度$(/t)$(): 30$(br)$(thing)生物群系$(): 任意$(br2)$(thing)岩石类型$(): 安山岩, 流纹岩, 煌斑岩, 熔灰岩, 玄武岩, 石灰华, 粗面岩, 英安岩",
       "title": "硫, 黄铁矿, 闪锌矿",
-      "type": "patchouli:text",
       "anchor": "venus_manual_sulfur"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "硫",
       "multiblock": {
         "mapping": {
@@ -133,11 +124,10 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)百分比$(): 80%$(br)$(thing)来源$(): 硫$(br)$(thing)化学式$(): S",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)百分比$(): 80%$(br)$(thing)来源$(): 硫$(br)$(thing)化学式$(): S"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "黄铁矿",
       "multiblock": {
         "mapping": {
@@ -153,11 +143,10 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)百分比$(): 15%$(br)$(thing)熔化$(): 铸铁$(br)$(thing)化学式$(): FeS₂",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)百分比$(): 15%$(br)$(thing)熔化$(): 铸铁$(br)$(thing)化学式$(): FeS₂"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "闪锌矿",
       "multiblock": {
         "mapping": {
@@ -173,8 +162,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)百分比$(): 5%$(br)$(thing)熔化$(): 锌$(br)$(thing)化学式$(): ZnS",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)百分比$(): 5%$(br)$(thing)熔化$(): 锌$(br)$(thing)化学式$(): ZnS"
     }
   ],
   "sortnum": 9

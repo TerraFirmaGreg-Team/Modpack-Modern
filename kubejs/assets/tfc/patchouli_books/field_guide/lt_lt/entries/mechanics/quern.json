@@ -1,5 +1,4 @@
 {
-  "__comment__": "This file was automatically created by mcresources",
   "name": "Quern",
   "category": "tfc:mechanics",
   "icon": "tfc:quern",
@@ -52,28 +51,28 @@
     },
     {
       "type": "tfc:quern_recipe",
-      "title": "Susmulkinta rūda",
       "recipe": "tfg:quern/copper_crushed_ore_from_normal_raw_ore",
-      "text": "$(l:tfg_ores/ore_basics#processing)Rūdas$() galima susmulkinti, kad būtų gauta daugiau metalo.\n"
+      "text": "$(l:tfg_ores/ore_basics#processing)Rūdas$() galima susmulkinti, kad būtų gauta daugiau metalo.\n",
+      "title": "Susmulkinta rūda"
     },
     {
       "type": "tfc:quern_recipe",
-      "title": "Milteliai",
       "recipe": "tfg:quern/sulfur",
-      "text": "The quern is used to make various $(thing)Powders$() from dust, like $(thing)Sulfur$(). $(thing)Gems$() can also be ground into powder."
+      "text": "The quern is used to make various $(thing)Powders$() from dust, like $(thing)Sulfur$(). $(thing)Gems$() can also be ground into powder.",
+      "title": "Milteliai"
     },
     {
       "type": "tfc:quern_recipe",
-      "title": "Dažai",
       "recipe": "tfc:quern/red_dye",
-      "text": "Dažus galima gauti iš įvairių gėlių"
+      "text": "Dažus galima gauti iš įvairių gėlių",
+      "title": "Dažai"
     },
     {
       "type": "patchouli:spotlight",
+      "text": "$(thing)Crops$() can be processed with a knife or quern to acquire $(thing)Grain$(), which can further be ground into $(thing)Flour$().",
       "item": {
         "tag": "tfc:foods/flour"
-      },
-      "text": "$(thing)Crops$() can be processed with a knife or quern to acquire $(thing)Grain$(), which can further be ground into $(thing)Flour$()."
+      }
     }
   ],
   "read_by_default": true

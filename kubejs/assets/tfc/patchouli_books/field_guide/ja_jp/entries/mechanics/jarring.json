@@ -1,0 +1,35 @@
+{
+  "name": "瓶詰め",
+  "category": "tfc:mechanics",
+  "icon": "tfc:jar/plum",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)ジャム瓶$()は、果物を長期間保存するために使用されます。$(thing)空のジャム瓶$()は、$(l:mechanics/glassworking_applications#jar)ガラスの加工$()で得られます。その後、$(thing)ジャム瓶の蓋$()を$(thing)錫$()から鍛造する必要があります。これらを組み合わせることで$(thing)蓋付きの空のジャム瓶$()が作成されます。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "鍋で$(thing)砂糖$()と2～4個の$(thing)果物$()を煮ます。レシピが完了したら、$(item)$(k:key.use)$()で蓋付きの空のジャム瓶を使って$(thing)密封されたジャム瓶$()が得られます。密封されたジャム瓶は、とても長持ちします。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/unseal_plum_jar",
+      "text": "ジャム瓶の封を解除するにはクラフトが必要です。蓋は回収できません。封を解除したジャムは数日しか持ちません！"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/barley_sandwich_with_jam_1",
+      "text": "ジャムはサンドイッチ作りに使用されます。ジャムサンドイッチには、乳製品、調理済みの肉、そしてジャムが含まれることがあります。$(thing)空のジャム瓶$()が残ります。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "ジャム瓶は$(item)$(k:key.use)$()を使用して、平らな面に設置できます。1つのブロックには、任意の種類のジャム瓶を4つまで置くことができます。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/wood/oak_shelf",
+      "text": "$(thing)棚$()は、平らな壁に付けられます。上部はアイテムやジャム瓶、または他のブロックを置くための平らな面として認識されます。ジャム瓶を置くには、直接設置するか、既に置かれているジャム瓶をクリックで追加設置できます。"
+    }
+  ],
+  "read_by_default": true
+}

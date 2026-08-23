@@ -1,5 +1,4 @@
 {
-  "__comment__": "This file was automatically created by mcresources",
   "name": "支撐梁與坍塌",
   "category": "tfc:mechanics",
   "icon": "tfc:wood/support/oak",
@@ -229,7 +228,8 @@
     },
     {
       "type": "patchouli:text",
-      "text": "除了$(thing)木製支撐梁$()，$(bold)群巒格雷$()還添加了更高階的支撐梁類型，包含$(thing)石製支撐梁$()、$(thing)混凝土支撐梁$()與$(thing)鋼製支撐梁$()。最高階的支撐梁可支撐的範圍高達$(bold)33 x 13 x 33$()的區域！"
+      "text": "除了$(thing)木製支撐梁$()，$(bold)群巒格雷$()還添加了更高階的支撐梁類型，包含$(thing)石製支撐梁$()、$(thing)混凝土支撐梁$()與$(thing)鋼製支撐梁$()。最高階的支撐梁可支撐的範圍高達$(bold)33 x 13 x 33$()的區域！",
+      "title": "鑿刻"
     },
     {
       "type": "patchouli:text",

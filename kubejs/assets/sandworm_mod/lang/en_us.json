@@ -4,5 +4,8 @@
 	"entity.sandworm_mod.worm_chain": "Sandworm",
 	"entity.sandworm_mod.worm_head_segment": "Sandworm Head",
 	"entity.sandworm_mod.worm_segment": "Sandworm Body",
-	"item.sandworm_mod.sandworm_tooth": "Sandworm Tooth"
+	"item.sandworm_mod.sandworm_tooth": "Sandworm Tooth",
+	"msg.sandworm_mod.spawn": "§4IT'S COMING!!!",
+	"msg.sandworm_mod.stage_1": "§eThe sandworm feels you...",
+	"msg.sandworm_mod.stage_2": "§cThe sandworm is awakening soon!"
 }

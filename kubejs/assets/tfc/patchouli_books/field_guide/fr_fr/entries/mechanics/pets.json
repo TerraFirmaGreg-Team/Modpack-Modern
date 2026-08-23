@@ -1,34 +1,34 @@
 {
-  "__comment__": "This file was automatically created by mcresources",
-  "name": "Pets",
+  "name": "Animaux de compagnie",
   "category": "tfc:mechanics",
   "icon": "minecraft:lead",
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "$(thing)Pets$() are animals that function quite similar to $(l:mechanics/animal_husbandry)Livestock$(), but have no useful products. Instead, they can obey commands, follow you around your home, control pests, and help you hunt."
+      "text": "Les $(thing)Animaux de compagnie$() fonctionnent similairement au $(l:mechanics/animal_husbandry)Bétail$() mais ne produisent rien d'utile. Au lieu de cela, ils peuvent obéir à des ordres, vous suivre chez vous, s'occupper des nuisibles et vous aider à chasser."
     },
     {
       "type": "patchouli:text",
-      "text": "Pets recognize a certain player as their $(thing)Owner$(). To become a pet's owner, feed it to raise its familiarity above 15%%. Pets will only obey commands that come from their owner.$(br2)Clicking on a pet with $(l:mechanics/dye)dye$() changes its collar color."
+      "text": "Les animaux de compagnie reconnaissent un certain joueur comme leur $(thing)Propriétaire$(). Pour devenir le propriétaire d'un animal de compagnie, nourrissez-le pour dépasser 15%% de familiarité. Les animaux de compagnie n'obéissent qu'aux ordres de leur propriétaire.$(br2)Cliquez sur un animal de compagnie avec une $(l:mechanics/dye)teinture$() pour changer la couleur de son collier."
     },
     {
       "type": "patchouli:entity",
       "entity": "tfc:dog{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16,TFCWolfVariant:8}",
       "scale": 0.7,
-      "text": "A dog."
+      "text": "Un chien."
     },
     {
       "type": "patchouli:text",
-      "text": "Dogs are a pet that eats grains, vegetables, and meat, rotten or not rotten. They will help you hunt most any land predator or prey."
+      "text": "Les chiens se nourrissent de céréales, légumes, et viande, pourrie ou non. Ils vous aideront à chasser presque n'importe quelle créature terrestre."
     },
     {
       "type": "patchouli:text",
-      "title": "Dog Variants",
-      "text": "Dogs come in multiple variants that depend on what type of wolf it was domesticated from.$(br2)The next pages show a table of the climates where specific wolf variants can be found."
+      "text": "Les chiens possèdent plusieurs variantes qui dépendent de quel type de loup ils ont été domestiqués.$(br2)La page suivante montre un tableau des climats où des variantes de loup spécifiques peuvent être trouvés.",
+      "title": "Variantes de chien"
     },
     {
       "type": "patchouli:image",
+      "text": "Cats are a pet that eats grains, cooked meats, and dairy products. They will help you hunt land prey and small fish. When at home, they will kill pests without being asked to. Cats do not always listen when being told to sit.",
       "images": [
         "tfg:textures/gui/field_guide/dog_variants.png"
       ],
@@ -36,9 +36,10 @@
     },
     {
       "type": "tfc:table",
+      "text": "Responsible pet owners must learn to control their pet. Luckily, this is easy. By pressing $(item)$(k:key.use)$() while holding $(item)$(k:key.sneak)$() with an empty hand, the $(thing)Pet Screen$() may be opened. This screen contains a number of commands that can be used to tell the pet what to do: $(thing)Relax$(), $(thing)We're Home$(), $(thing)Sit$(), $(thing)Follow Me$(), and $(thing)Hunt With Me$().",
       "strings": [
         {
-          "text": "Variant",
+          "text": "Variante",
           "bold": true
         },
         {
@@ -46,62 +47,61 @@
           "bold": true
         },
         {
-          "text": "Pale"
+          "text": "Blanc"
         },
         {
-          "text": "Cold Desert, Temperate, Humid Oceanic (Plains)"
+          "text": "Désert froid, Tempéré, Océanique humide (Plaines)"
         },
         {
-          "text": "Ashen"
+          "text": "Cendré"
         },
         {
-          "text": "Arctic, Subarctic (Forests)"
+          "text": "Arctique, Subarctique (Forêts)"
         },
         {
-          "text": "Black"
+          "text": "Noir"
         },
         {
-          "text": "Tundra, Humid Subarctic (Forests)"
+          "text": "Toundra, Subarctique humide (Forêts)"
         },
         {
-          "text": "Châtaignier"
+          "text": "Marron"
         },
         {
-          "text": "Tundra, Humid Subarctic (Plains)"
+          "text": "Toundra, Subarctique humide (Plaines)"
         },
         {
-          "text": "Rusty"
+          "text": "Roux"
         },
         {
-          "text": "Humid Subtropical, Tropical Rainforest (Plains)"
+          "text": "Subtropical humide, Forêt tropicale (Plaines)"
         },
         {
-          "text": "Snowy"
+          "text": "Des neiges"
         },
         {
-          "text": "Arctic, Subarctic (Plains)"
+          "text": "Arctique, Subarctique (Plaines)"
         },
         {
-          "text": "Spotted"
+          "text": "Tacheté"
         },
         {
-          "text": "Hot Desert, Subtropical, Tropical Savanna (Forests)"
+          "text": "Désert chaud, Subtropical, Savane tropicale (Forêts)"
         },
         {
-          "text": "Striped"
+          "text": "À rayures"
         },
         {
-          "text": "Hot Desert, Subtropical, Tropical Savanna (Plains)"
+          "text": "Désert chaud, Subtropical, Savane tropicale (Plaines)"
         },
         {
-          "text": "Woods"
+          "text": "Des bois"
         },
         {
-          "text": "Temperate (Forests)"
+          "text": "Tempéré (Forêts)"
         }
       ],
-      "text": "",
-      "title": "Wolf Variant Locations",
+      "title": "Emplacements des variantes de loup",
       "legend": [],
       "columns": 1,
       "first_column_width": 45,
@@ -113,43 +113,44 @@
     },
     {
       "type": "patchouli:empty",
+      "text": "$(thing)Repos$() est l'état de base des animaux de compagnie, et leur ordonner les retourne à cet état. Si un animal est à la maison, il se baladera dans la propriété sans partir, et dormira une fois par jour. S'il est trop loin de la maison, il marchera sans but.",
       "draw_filler": false
     },
     {
       "type": "patchouli:entity",
+      "text": "Un chat.",
       "entity": "tfc:cat{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
-      "scale": 0.7,
-      "text": "A cat."
+      "scale": 0.7
     },
     {
       "type": "patchouli:text",
-      "text": "Cats are a pet that eats grains, cooked meats, and dairy products. They will help you hunt land prey and small fish. When at home, they will kill pests without being asked to. Cats do not always listen when being told to sit.$(br2)Variants: Black, British Shorthair, Calico, Jellie, Persian, Ragdoll, Red, Siamese, Tabby, White."
+      "text": "Les chats se nourrissent de céréales, viandes cuites, et produits laitiers. Ils vous aideront à chasser des proies terrestres et des petits poissons. À la maison, ils tueront les nuisibles sans qu'on leur demande. Les chats n'écoutent pas toujours quand on leur demande de s'asseoir.$(br2)Variantes : Panthère, British Shorthair, Calico, Jellie, Persan, Ragdoll, Tigré roux, Siamois, Tigré brun, Angora."
     },
     {
       "type": "patchouli:entity",
       "entity": "tfg:fox{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,FoxType:1}",
       "scale": 0.7,
-      "text": "A fox."
+      "text": "Un renard."
     },
     {
       "type": "patchouli:text",
-      "text": "Foxes are a pet that eats any edible food. They will help you hunt land prey and small fish. When at home, they will kill pests without being asked to. Foxes do not always listen when being told to sit.$(br2)Variants: Red, Snow."
+      "text": "Les renards mangent toute nourriture comestible. Ils vous aideront à chasser des proies terrestres et des petits poissons. À la maison, ils tueront les nuisibles sans qu'on leur demande. Les renards n'écoutent pas toujours quand on leur demande de s'asseoir.$(br2)Variantes : Roux, Blanc."
     },
     {
       "type": "patchouli:text",
-      "text": "Responsible pet owners must learn to control their pet. Luckily, this is easy. By pressing $(item)$(k:key.use)$() while holding $(item)$(k:key.sneak)$() with an empty hand, the $(thing)Pet Screen$() may be opened. This screen contains a number of commands that can be used to tell the pet what to do: $(thing)Relax$(), $(thing)We're Home$(), $(thing)Sit$(), $(thing)Follow Me$(), and $(thing)Hunt With Me$()."
+      "text": "Les propriétaires d'animaux de compagnie doivent apprendre à les contrôler. C'est heureusement facile. En appuyant sur $(item)$(k:key.use)$() en maintenant $(item)$(k:key.sneak)$() avec une main vide, l'$(thing)écran d'animaux de compagnie$() s'ouvre. Cet écran contient plusieurs commandes utiles pour indiquer quoi faire à son animal de compagnie : $(thing)Repos$(), $(thing)On est rentrés$(), $(thing)Assis$(), $(thing)Suis-moi$(), et $(thing)Chasse avec moi$()."
     },
     {
       "type": "patchouli:text",
-      "text": "$(thing)Relax$() is the default state of pets, and commanding them returns them to this state. If a pet it at home, it will wander around the property, but not leave, and sleep once a day. If it is too far from home, it will walk aimlessly."
+      "text": "$(thing)Repos$() est l'état de base des animaux de compagnie, et leur ordonner les retourne à cet état. Si un animal est à la maison, il se baladera dans la propriété sans partir, et dormira une fois par jour. S'il est trop loin de la maison, il marchera sans but."
     },
     {
       "type": "patchouli:text",
-      "text": "$(thing)We're Home$() sets the home position of the pet. This tells the animal that it should, when relaxing, stay in that general area. Telling an animal that it is at home does not change the activity it is currently doing.$(br2)$(thing)Sit$() tells the pet to sit where it is. However, animals have minds of their own, and will eventually get bored and stand up!"
+      "text": "$(thing)On est rentrés$() définit la position de la maison de l'animal de compagnon. Cela indique à l'animal qu'il doit, en se reposant, rester dans la zone. Indiquer à un animal qu'il est rentré ne change pas son activité en cours.$(br2)$(thing)Assis$() indique à l'animal de s'asseoi roù il est. Cependant, les animaux ont leur propre conscience, et s'ennuieront éventuellement, et donc se relèveront !"
     },
     {
       "type": "patchouli:text",
-      "text": "$(thing)Hunt With Me$() tells the pet to follow you, and engage in combat when you attack or are attacked. Pets will only attack animals that they are able to (for example, cats and foxes cannot help attack bears!).$(br2)$(thing)Follow Me$() is the same as Hunt With Me, but the pet will not risk itself in combat."
+      "text": "$(thing)Chasse avec moi$() indique au joueur de vous suivre et d'engager le combat si vous attaquez ou êtes attaqué. Les animaux de compagnie n'attaqueront que les animaux qu'ils peuvent attaquer (par exemple, un chat ou un renard n'affrontera pas un ours !).$(br2)$(thing)Suis-moi$() fonctionne comme Chasse avec moi, mais l'animal ne combattra jamais."
     }
   ],
   "read_by_default": true

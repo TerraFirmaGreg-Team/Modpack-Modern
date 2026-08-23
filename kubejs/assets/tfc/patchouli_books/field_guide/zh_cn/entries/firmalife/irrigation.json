@@ -13,10 +13,10 @@
 			"text": "喷洒器由一块 $(thing)铜板$() 制成。"
 		},
 		{
-			"title": "管道系统",
-			"item": "gtceu:copper_tiny_fluid_pipe",
 			"type": "patchouli:spotlight",
-			"text": "喷洒器必须连接到一套供水管道才能工作。这通过将一系列 $(thing)流体管道$() 连接到喷洒器实现。你可以用 $(thing)动力泵$() 向其中加水。"
+			"text": "喷洒器必须连接到一套供水管道才能工作。这通过将一系列 $(thing)流体管道$() 连接到喷洒器实现。你可以用 $(thing)动力泵$() 向其中加水。",
+			"title": "管道系统",
+			"item": "gtceu:copper_tiny_fluid_pipe"
 		},
 		{
 			"type": "patchouli:text",

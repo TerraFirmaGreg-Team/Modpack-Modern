@@ -7,15 +7,13 @@
   "secret": false,
   "pages": [
     {
-      "Type": "patchouli:text",
+      "type": "patchouli:text",
       "text": "こちらは$(thing)金星$()の$(thing)鉱石の一覧$()です。鉱石はアルファベット順に整理されており、となりには鉱脈に含まれている割合が表記されています。各項目をクリックすると、その鉱脈の詳細な情報を見ることができます。",
-      "title": "金星の鉱石一覧",
-      "type": "patchouli:text"
+      "title": "金星の鉱石一覧"
     },
     {
-      "Type": "patchouli:text",
-      "text": "$(li)カリ岩塩: $(l:tfg_ores/venus_vein_index#venus_manual_salt)10%$(/l)$()$(li)リシア輝石: $(l:tfg_ores/venus_vein_index#venus_manual_salt)5%$(/l)$()$(li)リチア雲母: $(l:tfg_ores/venus_vein_index#venus_manual_salt)5%$(/l)$()$(li)岩塩: $(l:tfg_ores/venus_vein_index#venus_manual_salt)80%$(/l)$()$(li)硫黄: $(l:tfg_ores/venus_vein_index#venus_manual_sulfur)80%$(/l)$()$(li)閃亜鉛鉱: $(l:tfg_ores/venus_vein_index#venus_manual_sulfur)5%$(/l)$()$(li)黄鉄鉱: $(l:tfg_ores/venus_vein_index#venus_manual_sulfur)15%$(/l)$()",
-      "type": "patchouli:text"
+      "type": "patchouli:text",
+      "text": "$(li)カリ岩塩: $(l:tfg_ores/venus_vein_index#venus_manual_salt)10%$(/l)$()$(li)リシア輝石: $(l:tfg_ores/venus_vein_index#venus_manual_salt)5%$(/l)$()$(li)リチア雲母: $(l:tfg_ores/venus_vein_index#venus_manual_salt)5%$(/l)$()$(li)岩塩: $(l:tfg_ores/venus_vein_index#venus_manual_salt)80%$(/l)$()$(li)硫黄: $(l:tfg_ores/venus_vein_index#venus_manual_sulfur)80%$(/l)$()$(li)閃亜鉛鉱: $(l:tfg_ores/venus_vein_index#venus_manual_sulfur)5%$(/l)$()$(li)黄鉄鉱: $(l:tfg_ores/venus_vein_index#venus_manual_sulfur)15%$(/l)$()"
     }
   ],
   "sortnum": 8

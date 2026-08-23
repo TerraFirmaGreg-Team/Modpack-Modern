@@ -1,8 +1,27 @@
 {
+	"block.steampowered.brass_flywheel": "Mosiężne koło zamachowe",
+	"block.steampowered.bronze_boiler": "Kocioł parowy z brązu",
+	"block.steampowered.bronze_cogwheel": "Brązowe koło zębate",
 	"block.steampowered.bronze_flywheel": "Koło zamachowe stalowego silnika parowego",
 	"block.steampowered.bronze_steam_engine": "Stalowy silnik parowy",
+	"block.steampowered.cast_iron_cogwheel": "Żeliwne koło zębate",
 	"block.steampowered.cast_iron_flywheel": "Koło zamachowe aluminiowego silnika parowego",
 	"block.steampowered.cast_iron_steam_engine": "Aluminiowy silnik parowy",
+	"block.steampowered.steam": "Para",
+	"block.steampowered.steam_flow": "Para",
+	"block.steampowered.steam_still": "Para",
+	"block.steampowered.steel_boiler": "Stalowy kocioł parowy",
+	"block.steampowered.steel_cogwheel": "Stalowe koło zębate",
 	"block.steampowered.steel_flywheel": "Koło zamachowe silnika parowego ze stali nierdzewnej",
-	"block.steampowered.steel_steam_engine": "Silnik parowy ze stali nierdzewnej"
+	"block.steampowered.steel_steam_engine": "Silnik parowy ze stali nierdzewnej",
+	"fluid.steampowered.steam": "Para",
+	"item.steampowered.bronze_sheet": "Brązowa płyta",
+	"item.steampowered.cast_iron_ingot": "Sztabka żeliwa",
+	"item.steampowered.cast_iron_sheet": "Żeliwna płyta",
+	"item.steampowered.steel_ingot": "Sztabka stali",
+	"item.steampowered.steel_sheet": "Stalowa płyta",
+	"itemGroup.steampowered.base": "Create: Steam Powered",
+	"steampowered.ponder.tag.steam": "Para",
+	"tooltip.steampowered.steam_engine.heating": "Status: Rozgrzewa się",
+	"tooltip.steampowered.steam_engine.running": "Status: Uruchomiony"
 }

@@ -1,5 +1,4 @@
 {
-	"__comment__": "This file was automatically created by mcresources",
 	"name": "Cultures",
 	"category": "tfc:mechanics",
 	"icon": "tfc:textures/item/food/wheat.png",
@@ -14,8 +13,8 @@
 		},
 		{
 			"type": "patchouli:text",
-			"title": "Contenu",
-			"text": "$(li)$(l:tfc:mechanics/crops#barley)Orge$()$(li)$(l:tfc:mechanics/crops#beet)Betterave$()$(li)$(l:tfc:mechanics/crops#cabbage)Chou$()$(li)$(l:tfc:mechanics/crops#canola)Colza$()$(li)$(l:tfc:mechanics/crops#carrot)Carotte$()$(li)$(l:tfc:mechanics/crops#cucumber)Concombre$()$(li)$(l:tfc:mechanics/crops#flax)Lin$()$(li)$(l:tfc:mechanics/crops#garlic)Ail$()$(li)$(l:tfc:mechanics/crops#green_bean)Haricot vert$()$(li)$(l:tfc:mechanics/crops#jute)Jute$()$(li)$(l:tfc:mechanics/crops#lentil)Lentilles$()$(li)$(l:tfc:mechanics/crops#maize)Maïs$()$(li)$(l:tfc:mechanics/crops#melon)Pastèque$()"
+			"text": "$(li)$(l:tfc:mechanics/crops#barley)Orge$()$(li)$(l:tfc:mechanics/crops#beet)Betterave$()$(li)$(l:tfc:mechanics/crops#cabbage)Chou$()$(li)$(l:tfc:mechanics/crops#canola)Colza$()$(li)$(l:tfc:mechanics/crops#carrot)Carotte$()$(li)$(l:tfc:mechanics/crops#cucumber)Concombre$()$(li)$(l:tfc:mechanics/crops#flax)Lin$()$(li)$(l:tfc:mechanics/crops#garlic)Ail$()$(li)$(l:tfc:mechanics/crops#green_bean)Haricot vert$()$(li)$(l:tfc:mechanics/crops#jute)Jute$()$(li)$(l:tfc:mechanics/crops#lentil)Lentilles$()$(li)$(l:tfc:mechanics/crops#maize)Maïs$()$(li)$(l:tfc:mechanics/crops#melon)Pastèque$()",
+			"title": "Contenu"
 		},
 		{
 			"type": "patchouli:text",
@@ -23,15 +22,16 @@
 		},
 		{
 			"type": "tfc:rock_knapping_recipe",
+			"text": "Pour commencer, une $(thing)Houe en pierre$() peut être $(thing)taillée, comme ci-dessus.",
+			"title": "Faire pousser vos cultures",
 			"recipes": [
 				"tfg:rock_knapping/stone_hoe_head_1"
-			],
-			"text": "Pour commencer, une $(thing)Houe en pierre$() peut être $(thing)taillée, comme ci-dessus."
+			]
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "gtceu:shaped/hoe_stone",
-			"text": "Une fois la tête de houe taillée, elle peut être transformée en Houe.$(br2)La houe fonctionne comme en Vanilla, en faisant un clic droit sur un bloc de terre pour le transformer en $(thing)Terre labourée$(). Elle peut aussi être utilisée pour convertir de la $(thing)Terre racineuse$() en $(thing)Terre$()."
+			"text": "Une fois la tête de houe taillée, elle peut être transformée en Houe.$(br2)La houe fonctionne comme en Vanilla, en faisant un clic droit sur un bloc de terre pour le transformer en $(thing)Terre labourée$(). Elle peut aussi être utilisée pour convertir de la $(thing)Terre racineuse$() en $(thing)Terre$().",
+			"recipe": "gtceu:shaped/hoe_stone"
 		},
 		{
 			"type": "patchouli:text",
@@ -632,7 +632,7 @@
 		},
 		{
 			"type": "tfc:multimultiblock",
-			"text": "",
+			"text": "Note: in order to grow, the rice block must be $(thing)Waterlogged$().",
 			"multiblocks": [
 				{
 					"pattern": [
@@ -1253,7 +1253,7 @@
 		},
 		{
 			"type": "tfc:multimultiblock",
-			"text": "",
+			"text": "The stick is required in order for the crop to fully grow.",
 			"multiblocks": [
 				{
 					"pattern": [
@@ -2677,7 +2677,7 @@
 		},
 		{
 			"type": "tfc:multimultiblock",
-			"text": "",
+			"text": "The stick is required in order for the crop to fully grow.",
 			"multiblocks": [
 				{
 					"pattern": [

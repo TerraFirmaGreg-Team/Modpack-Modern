@@ -1,0 +1,96 @@
+{
+  "name": "独木舟",
+  "category": "tfc:firmaciv",
+  "icon": "firmaciv:canoe_with_paddle_icon_only",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "独木舟很可能是您水上之旅的第一步！如果你生活在青铜时代，你很可能会造一艘独木舟。"
+    },
+    {
+      "type": "patchouli:text",
+      "images": [
+        "firmaciv:textures/gui/book/canoe_isometric.png"
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "text": "要制作独木舟，你首先得将3根剥皮的原木水平放置成一排，并用锯切掉顶部。然后，用斧头雕刻出独木舟的形状。最后，点燃独木舟的内部，掏空船体。这将花费与坑窑相同的时间来完成挖空过程。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "雕刻独木舟需要比较柔软的木材，因此，只有部分原木是可行的：$(br2)花旗松木$(br)松木$(br)棕榈木$(br)云杉木$(br)红杉木$(br)木棉木$(br)红树木$(br)白杉木$(br)柳木"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "text": "制作独木舟的第一步"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            " F ",
+            " 0 ",
+            " B "
+          ]
+        ],
+        "mapping": {
+          "F": "firmaciv:wood/canoe_component_block/douglas_fir[canoe_carved=5,facing=east,end=true]",
+          "0": "firmaciv:wood/canoe_component_block/douglas_fir[canoe_carved=5,facing=east,end=false]",
+          "B": "firmaciv:wood/canoe_component_block/douglas_fir[canoe_carved=5,facing=east,end=true]"
+        }
+      },
+      "name": "奇怪的板条",
+      "text": "原木的顶部已经用锯子锯掉了。",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            " F ",
+            " 0 ",
+            " B "
+          ]
+        ],
+        "mapping": {
+          "F": "firmaciv:wood/canoe_component_block/douglas_fir[canoe_carved=11,facing=west,end=true]",
+          "0": "firmaciv:wood/canoe_component_block/douglas_fir[canoe_carved=11,facing=east,end=false]",
+          "B": "firmaciv:wood/canoe_component_block/douglas_fir[canoe_carved=11,facing=east,end=true]"
+        }
+      },
+      "name": "一个奇怪的雕塑",
+      "text": "一个完全雕刻好的独木舟，准备挖空船体。",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:image",
+      "multiblock": {
+        "pattern": [
+          [
+            " F ",
+            " 0 ",
+            " B "
+          ]
+        ],
+        "mapping": {
+          "F": "firmaciv:wood/canoe_component_block/douglas_fir[canoe_carved=11,facing=west,end=true]",
+          "0": "firmaciv:wood/canoe_component_block/douglas_fir[canoe_carved=11,facing=east,end=false]",
+          "B": "firmaciv:wood/canoe_component_block/douglas_fir[canoe_carved=11,facing=east,end=true]"
+        }
+      },
+      "name": "A Strange Sculpture",
+      "text": "一艘完整的独木舟",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmaciv:crafting/canoe_paddle",
+      "text": "别忘了制作一两支桨！"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 1
+}

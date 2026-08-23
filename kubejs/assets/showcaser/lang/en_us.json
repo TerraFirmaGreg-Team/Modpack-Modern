@@ -1,0 +1,18 @@
+{
+	"key.showcaser.category": "Showcaser",
+	"key.showcaser.share_item_in_chat": "Share resource",
+	"showcaser.chat.banned": "Server has restricted resource sharing for you",
+	"showcaser.chat.share_message": "%s shared %s",
+	"showcaser.chat.share_message.patchouli_book": "%s shared book %s",
+	"showcaser.chat.share_message.patchouli_book_entry": "%s shared book entry %s",
+	"showcaser.chat.share_message.quest": "%s shared quest %s",
+	"showcaser.chat.share_message.quest.not_visible": "Quest cannot be opened as it is not visible to you",
+	"showcaser.chat.share_message.recipe": "%s shared recipe %s",
+	"showcaser.chat.share_message.tooltip.unverified": "Not verified by the server",
+	"showcaser.chat.share_message.tooltip.verified": "Verified by the server",
+	"showcaser.commands.reload": "Showcaser storage and config reloaded successfully",
+	"showcaser.commands.sharing.ban.player_already_banned": "Player %s is already banned",
+	"showcaser.commands.sharing.ban.success": "Player %s is now banned from sharing things",
+	"showcaser.commands.sharing.unban.player_not_banned": "Player %s is not banned",
+	"showcaser.commands.sharing.unban.success": "Player %s can share things again"
+}

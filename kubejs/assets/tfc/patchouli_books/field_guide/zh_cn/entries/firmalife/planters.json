@@ -1,0 +1,83 @@
+{
+  "name": "种植盆",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:large_planter",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "anchor": "planters",
+      "text": "$(thing)种植盆$()用于在$(l:firmalife/greenhouse)温室$()内种植$(thing)作物$()。要查看种植盆的状态，你可以手持一把$(thing)锄$()观察它。种植盆中的作物会消耗$(l:mechanics/fertilizers)营养$()，其方式类似于$(l:mechanics/crops)作物$()。种植盆应放置在有效的温室内，并由一个$(l:firmalife/climate_station)气象站$()激活。种植盆需要至少一些阳光才能工作。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/watering_can",
+      "text": "种植盆必须要$(thing)浇水$()才能生长。这需要使用$(thing)喷壶$()，它用$(thing)木桶$()、一个装$(thing)水$()的容器和$(thing)木材$()来合成。手持喷壶按下$(item)$(k:key.use)$()可以为附近的种植盆浇水。对着水源按$(item)$(k:key.use)$()就可以为其重新灌满水。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/large_planter",
+      "text": "$(thing)大型种植盆$()是最简单的一种种植盆。它们从单粒种子开始种植一株作物，成熟后可使用$(item)$(k:key.use)$()收获。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "大型种植盆可以种植$(thing)绿豆$()、$(thing)西红柿$()、$(thing)甘蔗$()、$(thing)黄麻$()和$(thing)谷物$()。但如果要种植谷物，你需要一个$(thing)铜$()或更高等级的温室。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/quad_planter",
+      "text": "$(thing)四槽种植盆$()可以同时种植四株作物。这些作物都会从同一个养料池汲取营养，成熟后可分别使用$(item)$(k:key.use)$()来单独收获。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "四槽种植盆可以种植$(thing)甜菜$()、$(thing)卷心菜$()、$(thing)胡萝卜$()、$(thing)大蒜$()、$(thing)洋葱$()、$(thing)马铃薯$()和$(thing)大豆$()。这些农作物都可以在任意等级的温室中种植。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/bonsai_planter",
+      "text": "$(thing)盆栽种植盆$()可以用树苗来种植小型果树。按$(item)$(k:key.use)$()就可以收获水果。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "盆栽种植盆可以种植除$(thing)香蕉$()外的任何果树，而香蕉需要$(thing)悬挂种植盆$()。它们都会消耗氮作为主要的营养，并且需要$(thing)铁$()或更高等级的温室才能种植。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/hanging_planter",
+      "text": "$(thing)悬挂种植盆$()可以倒着种植农作物。成熟后可以按$(item)$(k:key.use)$()收获。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "悬挂种植盆可以用种子种植$(thing)西葫芦$()，以及用树苗种植$(thing)香蕉$()。西葫芦可以在任意等级的温室种植，但香蕉需要$(thing)铁$()或更高等级的温室。悬挂种植盆必须被挂在一个实心方块的下方。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/trellis_planter",
+      "text": "$(thing)格子种植架$()可以种植各种浆果丛。浆果可以按$(item)$(k:key.use)$()收获。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "格子种植架具有$(thing)繁殖$()浆果丛的特性。如果一个种植架放置在另一个之上，并且下方的架子上长有成熟的浆果丛，则上方的架子有可能繁殖出新的浆果丛。格子种植架可以种植除$(thing)蔓越莓$()外的任何浆果丛，但需要$(thing)铁$()或更高级的温室才能运作。这些浆果丛偏好氮元素。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/hydroponic_planter",
+      "text": "$(thing)水培种植盆$()用于种植水稻和蔓越莓。其运作方式与四格种植盆相同，只是无需浇水。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "水培种植盆必须在其下方安装一根$(li)$(l:firmalife/irrigation)洒水器管道$()来提供水源。没有这根管道，作物将无法生长。每个水泵操作站可以供给的水培种植园没有严格的数量限制。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/sweeper",
+      "text": "$(thing)清扫器$()用于收割四槽种植盆和水培种植盆以外的种植盆。其底部必须连接一个旋转的$(thing)传动轴$()。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/picker",
+      "text": "$(thing)采摘器$()可通过上方的红石信号激活。它会向下延伸，以采集四槽种植盆和水培种植盆中的作物。"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 9
+}

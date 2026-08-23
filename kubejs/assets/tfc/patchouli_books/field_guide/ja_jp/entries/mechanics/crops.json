@@ -1,5 +1,4 @@
 {
-	"__comment__": "This file was automatically created by mcresources",
 	"name": "作物",
 	"category": "tfc:mechanics",
 	"icon": "tfc:textures/item/food/wheat.png",
@@ -14,8 +13,8 @@
 		},
 		{
 			"type": "patchouli:text",
-			"title": "内容物",
-			"text": "$(li)$(l:tfc:mechanics/crops#barley)大麦$()$(li)$(l:tfc:mechanics/crops#beet)ビーツ$()$(li)$(l:tfc:mechanics/crops#cabbage)キャベツ$()$(li)$(l:tfc:mechanics/crops#canola)キャノーラ$()$(li)$(l:tfc:mechanics/crops#carrot)ニンジン$()$(li)$(l:tfc:mechanics/crops#cucumber)キュウリ$()$(li)$(l:tfc:mechanics/crops#flax)亜麻$()$(li)$(l:tfc:mechanics/crops#garlic)ニンニク$()$(li)$(l:tfc:mechanics/crops#green_bean)サヤインゲン$()$(li)$(l:tfc:mechanics/crops#jute)ジュート$()$(li)$(l:tfc:mechanics/crops#lentil)レンズ豆\n$()$(li)$(l:tfc:mechanics/crops#maize)トウモロコシ$()$(li)$(l:tfc:mechanics/crops#melon)スイカ$()"
+			"text": "$(li)$(l:tfc:mechanics/crops#barley)大麦$()$(li)$(l:tfc:mechanics/crops#beet)ビーツ$()$(li)$(l:tfc:mechanics/crops#cabbage)キャベツ$()$(li)$(l:tfc:mechanics/crops#canola)キャノーラ$()$(li)$(l:tfc:mechanics/crops#carrot)ニンジン$()$(li)$(l:tfc:mechanics/crops#cucumber)キュウリ$()$(li)$(l:tfc:mechanics/crops#flax)亜麻$()$(li)$(l:tfc:mechanics/crops#garlic)ニンニク$()$(li)$(l:tfc:mechanics/crops#green_bean)サヤインゲン$()$(li)$(l:tfc:mechanics/crops#jute)ジュート$()$(li)$(l:tfc:mechanics/crops#lentil)レンズ豆\n$()$(li)$(l:tfc:mechanics/crops#maize)トウモロコシ$()$(li)$(l:tfc:mechanics/crops#melon)スイカ$()",
+			"title": "内容物"
 		},
 		{
 			"type": "patchouli:text",
@@ -23,15 +22,16 @@
 		},
 		{
 			"type": "tfc:rock_knapping_recipe",
+			"text": "まず、石を$(thing)加工$()して$(thing)石のクワ$() を作成します。",
+			"title": "作物の成長",
 			"recipes": [
 				"tfg:rock_knapping/stone_hoe_head_1"
-			],
-			"text": "まず、石を$(thing)加工$()して$(thing)石のクワ$() を作成します。"
+			]
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "gtceu:shaped/hoe_stone",
-			"text": "$(br2)クワを作成したら、バニラと同様に土ブロックを右クリックして耕すことで$(thing)耕地$()にできます。また、クワは$(thing)根付いた土$()を通常の$(thing)土$()に戻す用途にも使えます。"
+			"text": "$(br2)クワを作成したら、バニラと同様に土ブロックを右クリックして耕すことで$(thing)耕地$()にできます。また、クワは$(thing)根付いた土$()を通常の$(thing)土$()に戻す用途にも使えます。",
+			"recipe": "gtceu:shaped/hoe_stone"
 		},
 		{
 			"type": "patchouli:text",
@@ -632,7 +632,7 @@
 		},
 		{
 			"type": "tfc:multimultiblock",
-			"text": "",
+			"text": "Note: in order to grow, the rice block must be $(thing)Waterlogged$().",
 			"multiblocks": [
 				{
 					"pattern": [
@@ -1253,7 +1253,7 @@
 		},
 		{
 			"type": "tfc:multimultiblock",
-			"text": "",
+			"text": "The stick is required in order for the crop to fully grow.",
 			"multiblocks": [
 				{
 					"pattern": [
@@ -2677,7 +2677,7 @@
 		},
 		{
 			"type": "tfc:multimultiblock",
-			"text": "",
+			"text": "The stick is required in order for the crop to fully grow.",
 			"multiblocks": [
 				{
 					"pattern": [

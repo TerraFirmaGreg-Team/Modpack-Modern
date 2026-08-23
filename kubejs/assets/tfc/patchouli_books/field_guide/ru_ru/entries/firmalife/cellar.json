@@ -1,0 +1,33 @@
+{
+  "name": "Погреба",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:sealed_bricks",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)Погреб$() — это многоблочное устройство, управляемое $(l:firmalife/climate_station)климатической станцией$(). Единственное требование к многоблочному погребу — это его расположение в закрытом помещении, окруженном со всех сторон $(thing)Вощёными каменными кирпичами$() или $(thing)Запечатанными кирпичными дверями$(). Климатическая станция должна быть установлена на первом уровне погреба, примыкая к стене."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock_id": "firmalife:cellar",
+      "name": "Пример погреба",
+      "text": "Это лишь один из многих погребов, которые вы можете построить!",
+      "enable_visualize": true
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/sealed_bricks",
+      "recipe2": "firmalife:crafting/sealed_door"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)Пчелиный воск$() добывается в процессе $(l:firmalife/beekeeping)пчеловодства$().$(br)Погреба используются для $(l:firmalife/cheese#aging)созревания сыра$()."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Погреб используется для консервации продуктов, например, с помощью $(l:firmalife/food_shelves)полок для продуктов$() и $(l:firmalife/hangers)вешалок$(). Погреб работает лучше в среде с более низкими средними температурами для сохранения продуктов. Ниже 0 градусов модификаторы порчи работают немного лучше. Ниже -12 градусов они работают намного лучше."
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 3
+}

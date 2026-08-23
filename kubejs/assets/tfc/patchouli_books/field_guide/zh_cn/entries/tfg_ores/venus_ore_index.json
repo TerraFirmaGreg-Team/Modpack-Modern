@@ -7,15 +7,13 @@
   "secret": false,
   "pages": [
     {
-      "Type": "patchouli:text",
+      "type": "patchouli:text",
       "text": "这是 $(thing)金星$() 的 $(thing)矿物索引$()。所有矿物按字母顺序排序，然后按矿脉类型从最富集到最贫瘠排列。你可以点击它们以了解有关每种矿脉的更多信息。",
-      "title": "金星矿物索引",
-      "type": "patchouli:text"
+      "title": "金星矿物索引"
     },
     {
-      "Type": "patchouli:text",
-      "text": "$(li)岩盐: $(l:tfg_ores/venus_vein_index#venus_manual_salt)80%$(/l)$()$(li)硫: $(l:tfg_ores/venus_vein_index#venus_manual_sulfur)80%$(/l)$()$(li)钾石盐: $(l:tfg_ores/venus_vein_index#venus_manual_salt)10%$(/l)$()$(li)锂云母: $(l:tfg_ores/venus_vein_index#venus_manual_salt)5%$(/l)$()$(li)锂辉石: $(l:tfg_ores/venus_vein_index#venus_manual_salt)5%$(/l)$()$(li)闪锌矿: $(l:tfg_ores/venus_vein_index#venus_manual_sulfur)5%$(/l)$()$(li)黄铁矿: $(l:tfg_ores/venus_vein_index#venus_manual_sulfur)15%$(/l)$()",
-      "type": "patchouli:text"
+      "type": "patchouli:text",
+      "text": "$(li)岩盐: $(l:tfg_ores/venus_vein_index#venus_manual_salt)80%$(/l)$()$(li)硫: $(l:tfg_ores/venus_vein_index#venus_manual_sulfur)80%$(/l)$()$(li)钾石盐: $(l:tfg_ores/venus_vein_index#venus_manual_salt)10%$(/l)$()$(li)锂云母: $(l:tfg_ores/venus_vein_index#venus_manual_salt)5%$(/l)$()$(li)锂辉石: $(l:tfg_ores/venus_vein_index#venus_manual_salt)5%$(/l)$()$(li)闪锌矿: $(l:tfg_ores/venus_vein_index#venus_manual_sulfur)5%$(/l)$()$(li)黄铁矿: $(l:tfg_ores/venus_vein_index#venus_manual_sulfur)15%$(/l)$()"
     }
   ],
   "sortnum": 8
