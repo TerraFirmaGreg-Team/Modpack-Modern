@@ -9,7 +9,9 @@
     },
     {
       "type": "patchouli:text",
-      "text": "你当然可以在两个座位上都放上方块或动物，但要注意，如果你这样做，就没有办法驾驶它了！不过如果你不想亲自运送材料，那就当我没说了。$(br2)独木舟有两个座位，从后面驾驶。你得划桨才能全速前进，如果两个玩家一起划桨，它可以走得更快。"
+      "images": [
+        "firmaciv:textures/gui/book/canoe_isometric.png"
+      ]
     },
     {
       "type": "patchouli:text",
@@ -21,23 +23,7 @@
     },
     {
       "type": "patchouli:multiblock",
-      "text": "制作独木舟的第一步",
-      "multiblock": {
-        "pattern": [
-          [
-            " F ",
-            " 0 ",
-            " B "
-          ]
-        ],
-        "mapping": {
-          "F": "tfc:wood/stripped_log/douglas_fir[axis=x]",
-          "0": "tfc:wood/stripped_log/douglas_fir[axis=x]",
-          "B": "tfc:wood/stripped_log/douglas_fir[axis=x]"
-        }
-      },
-      "name": "诶，弄一根原木给你",
-      "enable_visualize": false
+      "text": "制作独木舟的第一步"
     },
     {
       "type": "patchouli:multiblock",
@@ -81,11 +67,23 @@
     },
     {
       "type": "patchouli:image",
+      "multiblock": {
+        "pattern": [
+          [
+            " F ",
+            " 0 ",
+            " B "
+          ]
+        ],
+        "mapping": {
+          "F": "firmaciv:wood/canoe_component_block/douglas_fir[canoe_carved=11,facing=west,end=true]",
+          "0": "firmaciv:wood/canoe_component_block/douglas_fir[canoe_carved=11,facing=east,end=false]",
+          "B": "firmaciv:wood/canoe_component_block/douglas_fir[canoe_carved=11,facing=east,end=true]"
+        }
+      },
+      "name": "A Strange Sculpture",
       "text": "一艘完整的独木舟",
-      "title": "独木舟",
-      "images": [
-        "firmaciv:textures/gui/book/canoe_isometric.png"
-      ]
+      "enable_visualize": false
     },
     {
       "type": "patchouli:crafting",

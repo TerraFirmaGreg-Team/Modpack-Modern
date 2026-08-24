@@ -9,9 +9,5 @@
       "title": "Молочные продукты"
     }
   ],
-  "read_by_default": true,
-  "extra_recipe_mappings": {
-    "minecraft:milk_bucket": 0,
-    "tfc:food/cheese": 1
-  }
+  "read_by_default": true
 }

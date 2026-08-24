@@ -30,7 +30,7 @@
         {
             "type": "patchouli:text",
             "text": "ツールチップ表示の例：$(br2)$(bold)オレンジ$()$(br) $(2)$(bold)11:59 7月6日, 1004年 に腐る（あと1か月 1日）$()$(br) $(8)栄養素：$(br) - 腹持ち：2%$(br) - 水分：10%$(br)$(a) - 果物：0.5",
-            "title": "Nutrients"
+            "title": "栄養素"
         },
         {
             "type": "patchouli:text",
@@ -64,12 +64,12 @@
         {
             "type": "tfc:knapping_recipe",
             "text": "粘土の$(l:getting_started/pottery)ナッピング$()で成型し、焼成した$(l:getting_started/pottery#jug)水差し$()を使えば、飲み水を持ち運べるようになります。$(item)$(k:key.use)$()で水を汲むことができ、水が入った状態で$(item)$(k:key.use)$()を長押しすると、水を飲めます。",
-            "title": "Thirst",
+            "title": "渇き",
             "recipe": "tfc:clay_knapping/jug"
         },
         {
             "type": "patchouli:text",
-            "name": "Water Safety",
+            "name": "安全な水",
             "text": "$(l:waterflasks)水筒$()や$(l:mechanics/glassworking)ガラス瓶$()などでも飲み水を持ち運ぶことができ、それぞれ性能が異なります。$(l:mechanics/drinks#containers)Here$()"
         },
         {

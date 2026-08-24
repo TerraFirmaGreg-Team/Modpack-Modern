@@ -1,0 +1,33 @@
+{
+  "name": "Flask Materials",
+  "category": "tfc:waterflasks",
+  "icon": "waterflasks:bladder",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Central to effective water storage is reuse of something that stored water(ish) before.$(br2)$(bold)       Bladders!$()$(br)Only certain animals have bladders that work for this purpose, and some species' are easier to extract than others."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(br)$(bold)Animal____________Chance$(br)$()Sheep___________________10%$(br)Alpaca__________________10%$(br)Goat____________________10%$(br)Deer____________________10%$(br)Equines_________________20%$(br)Bears___________________20%$(br)Bovines_________________50%$(br)Moose___________________50%$(br)$(br)To increase your chances, use a higher damage weapon to butcher the animal."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "waterflasks:leather_side",
+      "title": "Côté de gourde en cuire",
+      "link_recipes": false,
+      "text": "Flask Sides are used in both flask recipes."
+    },
+    {
+      "type": "tfc:knapping_recipe",
+      "recipe": "waterflasks:leather_knapping/leather_side",
+      "text": "Leather flask sides are knapped out of leather to protect the bladder from punctures."
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 0,
+  "extra_recipe_mappings": {
+    "waterflasks:bladder": 0,
+    "waterflasks:leather_side": 2
+  }
+}

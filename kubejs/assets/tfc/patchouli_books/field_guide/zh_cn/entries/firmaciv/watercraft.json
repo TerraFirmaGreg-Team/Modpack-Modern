@@ -73,6 +73,63 @@
       "images": [
         "firmaciv:textures/gui/book/leads.png"
       ]
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Anchors and Windlasses",
+      "text": "Large boats have anchors, which can be used to completely stop the boat, provided the anchor is seated in the seafloor and no sails are deployed. The boat will still turn in the wind while it's at anchor. Look for the anchor icon located at the windlass (anchor winch) and press $(item)$(k:key.use)$() to lower and raise the anchor."
+    },
+    {
+      "type": "patchouli:image",
+      "border": true,
+      "images": [
+        "firmaciv:textures/gui/book/anchor.png"
+      ],
+      "text": "The anchor and windlass on a sloop."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Sails",
+      "text": "Sailing vessels, of course, have sails. You'll need to deploy them in order to properly control your boat. Look for the triangular sail icon and press $(item)$(k:key.use)$() to deploy each sail. Since most boats have multiple sails, you can use different combinations of sail deployment to control your speed."
+    },
+    {
+      "type": "patchouli:image",
+      "border": true,
+      "images": [
+        "firmaciv:textures/gui/book/sails.png"
+      ],
+      "text": "Both the jibsail (left) and mainsail (right) have been deployed on this sloop."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Sailing",
+      "text": "Unlike ships that you may be used to, sailing is a skill with Firma: Civilization. When you're piloting a sailing vessel, a new UI element will appear showing the wind speed and direction, as well as the boat's speed. The color of the wind arrow will indicate the difficulty of sailing in that direction. Use your forward and backward movement keys to set the angle of the sails, and experiment to find the best one for the wind angle."
+    },
+    {
+      "type": "patchouli:image",
+      "border": false,
+      "images": [
+        "firmaciv:textures/gui/book/sailing.png"
+      ],
+      "text": "The sailing UI will help you control your vessel."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Painting and Dyeing",
+      "text": "Any boat constructed using Shipwright's Scaffolding can be painted, and any sail can be individually dyed. Simply hold a dye item in your hand and press $(item)$(k:key.use)$() when you see the paint brush icon to either paint a hull or dye a sail. Larger boats have unique patterns for each paint color."
+    },
+    {
+      "type": "patchouli:image",
+      "border": true,
+      "images": [
+        "firmaciv:textures/gui/book/painting.png"
+      ],
+      "text": "A sloop has been painted yellow and its sails have been dyed."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Damage and Repair",
+      "text": "A damaged boat will start to show cracks. For any boat built using Shipwright's Scaffolding, use the appropriate type of planks to repair it. For canoes, use lumber. At 90% damage, a boat will appear to take on water, and at 100% damage, it will sink! This does not apply to Kayaks."
     }
   ],
   "read_by_default": true,

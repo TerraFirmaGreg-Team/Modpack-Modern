@@ -62,7 +62,5 @@
   "gui.comforts.config.sleepingBagUse.name": "Tid på dagen för att kunna använda sovsäckar",
   "item.comforts.hammock.placement.tooltip": "Kräver %s för att placeras.",
   "item.comforts.rope_and_nail.placement.tooltip": "Används för att placera hängmattor.",
-  "item.comforts.sleeping_bag.auto_use.tooltip": "Försöker sova automatiskt.\nSmyg och använd för att placera.",
-  "itemGroup.comforts": "Comforts",
-  "itemGroup.comforts.general": "Comforts"
+  "item.comforts.sleeping_bag.auto_use.tooltip": "Försöker sova automatiskt.\nSmyg och använd för att placera."
 }

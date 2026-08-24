@@ -30,7 +30,7 @@
         {
             "type": "patchouli:text",
             "text": "Une infobulle d'aliment peut ressembler à ceci :$(br2)$(bold)Orange$()$(br)$(2)$(bold)Périme le : 6 Juillet 1004, 11:59 (Dans un mois et 1 jour(s))$()$(br) $(8)Nutrition :$(br) - Saturation : 2%$(br) - Eau : 10%$(br)$(a) - Fruits : 0.5",
-            "title": "Nutrients"
+            "title": "Nutriments"
         },
         {
             "type": "patchouli:text",
@@ -64,12 +64,12 @@
         {
             "type": "tfc:knapping_recipe",
             "text": "$(l:getting_started/pottery)Modeler$() et cuire une $(l:getting_started/pottery#jug)cruche$() est un moyen de transporter de l'eau avec vous. Remplissez-la comme un seau avec $(item)$(k:key.use)$(). Maintenir $(item)$(k:key.use)$() vous fait boire.",
-            "title": "Thirst",
+            "title": "Soif",
             "recipe": "tfc:clay_knapping/jug"
         },
         {
             "type": "patchouli:text",
-            "name": "Water Safety",
+            "name": "Sécurité aquatique",
             "text": "Vous pouvez également boire depuis d'autres contenants tels que les $(l:waterflasks)Gourdes$() ou les $(l:mechanics/glassworking)Bouteilles de verre$(). Lisez plus d'infos sur les contenants à boissons et effet de boissons $(l:mechanics/drinks#containers)Ici$()."
         },
         {

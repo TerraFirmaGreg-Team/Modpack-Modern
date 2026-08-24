@@ -1,5 +1,5 @@
 {
-  "name": "Composter",
+  "name": "퇴비통",
   "category": "tfc:mechanics",
   "icon": "tfc:textures/gui/book/icons/composter.png",
   "pages": [
@@ -80,7 +80,7 @@
           "X": "tfc:composter[stage=8,type=rotten]"
         }
       },
-      "name": "Rotten Compost",
+      "name": "썩은 퇴비",
       "text": "A rotten composter.",
       "enable_visualize": false
     },

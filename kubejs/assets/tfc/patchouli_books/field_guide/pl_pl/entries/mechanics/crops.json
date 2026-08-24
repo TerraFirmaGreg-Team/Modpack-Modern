@@ -23,7 +23,7 @@
 		{
 			"type": "tfc:rock_knapping_recipe",
 			"text": "To get started, a $(thing)Stone Hoe$() can be $(thing)knapped$() as seen above.",
-			"title": "Growing Crops",
+			"title": "Uprawy rolne",
 			"recipes": [
 				"tfg:rock_knapping/stone_hoe_head_1"
 			]

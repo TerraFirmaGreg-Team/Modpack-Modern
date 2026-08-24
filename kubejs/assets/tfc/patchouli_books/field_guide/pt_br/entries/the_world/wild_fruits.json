@@ -1976,7 +1976,7 @@
           "text": "Dec"
         },
         {
-          "text": "Cherry"
+          "text": "Cereja"
         },
         {
           "fill": "0x6ab553"
@@ -2054,7 +2054,7 @@
           "fill": "0xa8986a"
         },
         {
-          "text": "Lemon"
+          "text": "Limão"
         },
         {
           "fill": "0xa8986a"
@@ -2093,7 +2093,7 @@
           "fill": "0xa8986a"
         },
         {
-          "text": "Olive"
+          "text": "Azeitona"
         },
         {
           "fill": "0xa8986a"
@@ -2132,7 +2132,7 @@
           "fill": "0xa8986a"
         },
         {
-          "text": "Orange"
+          "text": "Laranja"
         },
         {
           "fill": "0xa8986a"
@@ -2171,7 +2171,7 @@
           "fill": "0xa8986a"
         },
         {
-          "text": "Peach"
+          "text": "Pêssego"
         },
         {
           "fill": "0x6ab553"
@@ -2210,7 +2210,7 @@
           "fill": "0x6ab553"
         },
         {
-          "text": "Plum"
+          "text": "Ameixa"
         },
         {
           "fill": "0x6ab553"
@@ -2346,7 +2346,7 @@
       "type": "patchouli:text",
       "anchor": "blackberry",
       "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 7 - 24 °C$(br)$(bold)$(l:mechanics/hydration)Rainfall$(): 24 - 100mm$(br2)Blackberry bushes grow from February to May, start flowering in June and July, and bear fruit in August.$(br2)They can be found in areas with few trees.",
-      "title": "Blackberry Bush"
+      "title": "Arbusto de Amora"
     },
     {
       "type": "tfc:multimultiblock",
@@ -2446,7 +2446,7 @@
       "type": "patchouli:text",
       "anchor": "raspberry",
       "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 5 - 25 °C$(br)$(bold)$(l:mechanics/hydration)Rainfall$(): 24 - 100mm$(br2)Raspberry bushes grow from April to July, start flowering in August and September, and bear fruit in October.$(br2)They can be found in areas with few trees.",
-      "title": "Raspberry Bush"
+      "title": "Arbusto de Framboesa"
     },
     {
       "type": "tfc:multimultiblock",
@@ -2546,7 +2546,7 @@
       "type": "patchouli:text",
       "anchor": "blueberry",
       "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 7 - 29 °C$(br)$(bold)$(l:mechanics/hydration)Rainfall$(): 12 - 100mm$(br2)Blueberry bushes grow from February to May, start flowering in June and July, and bear fruit in August.$(br2)They can be found in areas with few trees.",
-      "title": "Blueberry Bush"
+      "title": "Arbusto de Mirtilo"
     },
     {
       "type": "tfc:multimultiblock",
@@ -2646,7 +2646,7 @@
       "type": "patchouli:text",
       "anchor": "elderberry",
       "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 10 - 33 °C$(br)$(bold)$(l:mechanics/hydration)Rainfall$(): 12 - 100mm$(br2)Elderberry bushes grow from February to May, start flowering in June and July, and bear fruit in August.$(br2)They can be found in areas with few trees.",
-      "title": "Elderberry Bush"
+      "title": "Arbusto de Sabugueiro"
     },
     {
       "type": "tfc:multimultiblock",
@@ -2797,7 +2797,7 @@
       "type": "patchouli:text",
       "anchor": "bunchberry",
       "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 15 - 35 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 24 - 100 %$(br2)Bunchberry bushes grow from May to July, start flowering in August and September, and bear fruit in October.$(br2)They can be found in forests.",
-      "title": "Bunchberry Bush"
+      "title": "Arbusto de Bunchberry"
     },
     {
       "type": "tfc:multimultiblock",
@@ -2861,7 +2861,7 @@
       "type": "patchouli:text",
       "anchor": "gooseberry",
       "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 5 - 27 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 24 - 100 %$(br2)Gooseberry bushes grow from April to July, start flowering in August and September, and bear fruit in October.$(br2)They can be found in forests.",
-      "title": "Gooseberry Bush"
+      "title": "Arbusto de Groselha"
     },
     {
       "type": "tfc:multimultiblock",
@@ -2925,7 +2925,7 @@
       "type": "patchouli:text",
       "anchor": "snowberry",
       "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -7 - 18 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 24 - 100 %$(br2)Snowberry bushes grow from March to June, start flowering in July and August, and bear fruit in September.$(br2)They can be found in forests.",
-      "title": "Snowberry Bush"
+      "title": "Arbusto de Amora-branca"
     },
     {
       "type": "tfc:multimultiblock",
@@ -2989,7 +2989,7 @@
       "type": "patchouli:text",
       "anchor": "cloudberry",
       "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -2 - 17 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 9 - 100 %$(br2)Cloudberry bushes grow from February to May, start flowering in June to August, and bear fruit in September.$(br2)They can be found in forests.",
-      "title": "Cloudberry Bush"
+      "title": "Arbusto de Amora-ártica"
     },
     {
       "type": "tfc:multimultiblock",
@@ -3053,7 +3053,7 @@
       "type": "patchouli:text",
       "anchor": "strawberry",
       "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 5 - 28 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 12 - 100 %$(br2)Strawberry bushes grow from October to December, start flowering in January and February, and bear fruit in March.$(br2)They can be found in forests.",
-      "title": "Strawberry Bush"
+      "title": "Arbusto de Morango"
     },
     {
       "type": "tfc:multimultiblock",
@@ -3117,7 +3117,7 @@
       "type": "patchouli:text",
       "anchor": "wintergreen_berry",
       "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -6 - 17 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 12 - 100 %$(br2)Wintergreen berry bushes grow from May to September, start flowering in October and November, and bear fruit in December.$(br2)They can be found in forests.",
-      "title": "Wintergreen Berry Bush"
+      "title": "Arbusto de Gaultéria"
     },
     {
       "type": "tfc:multimultiblock",
@@ -3181,7 +3181,7 @@
       "type": "patchouli:text",
       "anchor": "cranberry",
       "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -5 - 17 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 30 - 100 %$(br2)Cranberry bushes grow from March to June, start flowering in July and August, and bear fruit in September.$(br2)They can be found in forests. Unlike most small bushes, cranberry bushes are grown underwater.",
-      "title": "Cranberry Bush"
+      "title": "Arbusto de Cranberry"
     },
     {
       "type": "tfc:multimultiblock",
@@ -3284,7 +3284,7 @@
           "text": "Dec"
         },
         {
-          "text": "Snowberry"
+          "text": "Amora-branca"
         },
         {
           "fill": "0xa8986a"
@@ -3362,7 +3362,7 @@
           "fill": "0xa8986a"
         },
         {
-          "text": "Gooseberry"
+          "text": "Groselha"
         },
         {
           "fill": "0xa8986a"
@@ -3401,7 +3401,7 @@
           "fill": "0xa8986a"
         },
         {
-          "text": "Cloudberry"
+          "text": "Amora-ártica"
         },
         {
           "fill": "0xa8986a"
@@ -3440,7 +3440,7 @@
           "fill": "0xa8986a"
         },
         {
-          "text": "Strawberry"
+          "text": "Morango"
         },
         {
           "fill": "0xcca0db"

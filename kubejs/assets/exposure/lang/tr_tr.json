@@ -1,6 +1,5 @@
 {
 	"block.exposure.lightroom": "Işık Odası",
-	"category.exposure": "Exposure",
 	"command.exposure.export.failure.cannot_get_all_ids": "Poz kimlikleri alınamıyor. Hiçbir poz kaydedilmedi veya bir hata oluştu.",
 	"command.exposure.export.failure.none_saved": "Hiçbir poz dışarı aktarılmadı.",
 	"command.exposure.export.failure.not_found": "Pozlama dışa aktarılamıyor: Kimlik [%s] bulunamadı.",
@@ -79,7 +78,6 @@
 	"item.exposure.camera.tooltip.details_attachments_screen": "§8Yapılandırmak için [§7Eğil + Kullan§8] veya §8[§7Sağ Tık§8]",
 	"item.exposure.camera.tooltip.details_hotswap": "§8Ek Takmak/Değiştirmek için eşyayla [§7Sağ Tık§8]",
 	"item.exposure.camera.tooltip.details_remove_tooltip": "§8Bu mesajı kaldırmak için §7Makasla§8 [§7Sağ Tıkla§8]",
-	"item.exposure.camera.tooltip.film_roll_frames": "§7Film: §f%s/%s",
 	"item.exposure.chromatic_sheet": "Kromatik Levha",
 	"item.exposure.chromatic_sheet.use_tooltip": "Üç kanalı bir Fotoğrafta birleştirmek için kullanılır",
 	"item.exposure.color_film": "Renkli Film",

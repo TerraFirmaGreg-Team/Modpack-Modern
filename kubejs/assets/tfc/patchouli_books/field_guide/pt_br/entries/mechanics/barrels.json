@@ -1,5 +1,5 @@
 {
-  "name": "Barrels",
+  "name": "Barris",
   "category": "tfc:mechanics",
   "icon": "tfc:wood/barrel/palm",
   "pages": [
@@ -27,7 +27,7 @@
     {
       "type": "patchouli:text",
       "text": "Barrels are an important device used for mixing various fluids and items together. To use a $(thing)Barrel$() recipe, the barrel must be filled with the correct ratio of fluid and items required. Depending on the recipe, it may need to be $(thing)Sealed$() for a period of time to allow the contents to transform.",
-      "title": "Crafting"
+      "title": "Fabricando"
     },
     {
       "type": "patchouli:text",

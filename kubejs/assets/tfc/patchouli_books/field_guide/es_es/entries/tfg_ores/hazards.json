@@ -158,7 +158,7 @@
 			"type": "patchouli:spotlight",
 			"title": "Irritantes",
 			"item": "gtceu:chromite_dust",
-			"anchor": "Irritants",
+			"anchor": "Irritantes",
 			"text": "$(thing)Irritation$() is caused by inhalation of $(thing)Ammonium Formate$() or skin contact with $(thing)Chromite Dust$(). Short contact only causes $(item)Weakness$(), but if ignored for longer it starts $(item)Damaging Randomly$().$(br2)The $(l:tfg_ores/hazards#mask)Face Mask$() protects from inhalation, while the $(l:tfg_ores/hazards#gloves)Gloves$() protects from direct skin contact.$(br2)The $(l:tfg_ores/hazards#hazmat)Hazmat Suit$() protects from both."
 		},
 		{

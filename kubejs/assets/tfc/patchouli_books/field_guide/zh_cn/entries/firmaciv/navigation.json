@@ -5,7 +5,11 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "在群峦星中导航可不简单。为了建立一个文明，你必须对你的位置了如指掌，并且熟记那些重要的地方的方位！"
+      "title": "航海",
+      "images": [
+        "firmaciv:textures/gui/book/navigation.png"
+      ],
+      "border": true
     },
     {
       "type": "patchouli:text",

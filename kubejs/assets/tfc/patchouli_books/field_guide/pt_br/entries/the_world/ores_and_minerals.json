@@ -525,7 +525,7 @@
       "type": "patchouli:text",
       "anchor": "limonite",
       "text": "Limonite is an ore of $(thing)Iron$() metal. It can be found in large veins in any $(l:the_world/geology#sedimentary)Sedimentary$() rocks near the surface.",
-      "title": "Limonite"
+      "title": "Limonita"
     },
     {
       "type": "tfc:multimultiblock",
@@ -627,7 +627,7 @@
       "type": "patchouli:spotlight",
       "anchor": "lignite",
       "item": "tfc:ore/lignite",
-      "title": "Lignite",
+      "title": "Lignito",
       "link_recipes": false,
       "text": "Lignite is a type of low-grade $(thing)Coal$() ore. It can be found in very large flat deposits near the surface in $(l:the_world/geology#sedimentary)Sedimentary$() rocks."
     },
@@ -790,7 +790,7 @@
       "type": "patchouli:spotlight",
       "anchor": "cinnabar",
       "item": "tfc:ore/cinnabar",
-      "title": "Cinnabar",
+      "title": "Cinábrio",
       "link_recipes": false,
       "text": "Cinnabar is a $(thing)Mineral$() which can be ground in the $(l:mechanics/quern)Quern$() to obtain $(thing)Redstone Dust$(). It can be found in veins deep underground, in $(thing)Quartzite$(), $(thing)Gneiss$(), $(thing)Phyllite$(), and $(thing)Schist$()."
     },
@@ -898,7 +898,7 @@
       "type": "patchouli:spotlight",
       "anchor": "sylvite",
       "item": "tfc:ore/sylvite",
-      "title": "Sylvite",
+      "title": "Silvita",
       "link_recipes": false,
       "text": "Sylvite is a $(thing)Mineral$() which can be ground in the $(l:mechanics/quern)Quern$(), and then used as a $(l:mechanics/fertilizers)Fertilizer$(). It can be found in very large flat deposits near the surface in $(thing)Shale$(), $(thing)Claystone$() and $(thing)Chert$()."
     },
@@ -925,7 +925,7 @@
       "type": "patchouli:spotlight",
       "anchor": "borax",
       "item": "tfc:ore/borax",
-      "title": "Borax",
+      "title": "Bórax",
       "link_recipes": false,
       "text": "Borax is a $(thing)Mineral$() which can be ground in the $(l:mechanics/quern)Quern$() to produce $(l:mechanics/flux)Flux$(). It can be found in very large flat deposits near the surface in $(thing)Claystone$(), $(thing)Limestone$(), and $(thing)Shale$()."
     },
@@ -1033,7 +1033,7 @@
       "type": "patchouli:spotlight",
       "anchor": "diamond",
       "item": "tfc:ore/diamond",
-      "title": "Kimberlite",
+      "title": "Kimberlito",
       "link_recipes": false,
       "text": "Kimberlite é decorativo e inestimável $(l:mechanics/gems)pedra preciosa$(). Aparece em finas formações de minério vertical chamadas $(l:https://en.wikipedia.org/wiki/Volcanic_pipe)Tubos de Kimberlite$() que pode ter até 60 quarteirões de altura. Só pode ser encontrado em $(thing)Gabro$()."
     },
@@ -1060,7 +1060,7 @@
       "type": "patchouli:spotlight",
       "anchor": "lapis_lazuli",
       "item": "tfc:ore/lapis_lazuli",
-      "title": "Lapis Lazuli",
+      "title": "Lápis-lazúli",
       "link_recipes": false,
       "text": "Lapis Lazuli is a decorative $(thing)Mineral$() which can be used to make $(l:mechanics/dye)Blue Dye$(). It can be found in large, but sparse veins in $(thing)Limestone$() and $(thing)Marble$(), between y=-20 and y=80."
     },
@@ -1087,7 +1087,7 @@
       "type": "patchouli:spotlight",
       "anchor": "amethyst",
       "item": "tfc:ore/amethyst",
-      "title": "Amethyst",
+      "title": "Ametista",
       "link_recipes": false,
       "text": "Amethyst is a decorative $(thing)Mineral$() which can be used to make $(l:mechanics/glassworking)Glass$(). It can be found in $(thing)Sedimentary$() and $(thing)Metamorphic$() rock beneath rivers above y=40."
     },
@@ -1114,7 +1114,7 @@
       "type": "patchouli:spotlight",
       "anchor": "opal",
       "item": "tfc:ore/opal",
-      "title": "Opal",
+      "title": "Opala",
       "link_recipes": false,
       "text": "Opal is a decorative $(thing)Mineral$(). It can be found in $(thing)Sedimentary) and $(thing)Igneous Extrusive$() rock beneath rivers above y=40."
     },
