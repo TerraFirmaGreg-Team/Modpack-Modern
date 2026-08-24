@@ -1,15 +1,15 @@
 {
-	"name": "Making a Road",
+	"name": "Будівництво дороги",
 	"category": "tfc:roadsandroofs",
 	"icon": "rnr:metal/mattock/bismuth_bronze",
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Road construction consists of three basic steps: tamping the native soil with a mattock, laying a base course, and laying the surface material. Different varietis of road use different ingredients, as described on their respective pages of this manual."
+			"text": "Будівництво дороги складається з трьох основних кроків: утрамбування місцевого ґрунту за допомогою універсальної мотики, укладання базового шару та укладання поверхневого матеріалу. Для різних видів доріг потрібні різні інгредієнти, як описано на відповідних сторінках цього посібника."
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Building a Path",
+			"title": "Будівництво стежки",
 			"images": [
 				"rnr:textures/gui/book/path_building.png"
 			],
@@ -17,15 +17,15 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "A mattock can be used on dirt-type blocks similarly to a chisel. When used in the default mode, a mattock will tamp these blocks. If the mattock was used to tamp mud or muddy roots, the resulting tamped mud must be remediated by applying crushed base course."
+			"text": "Універсальну мотику можна використовувати на блоках типу землі подібно до долота. При використанні у стандартному режимі мотика утрамбовуватиме ці блоки. Якщо ти використав мотику для утрамбування бруду або коренистого чорнозема, отриманий утрамбований бруд необхідно обробити, нанісши щебенну основу дороги."
 		},
 		{
 			"type": "patchouli:text",
-			"text": "After the local soil has been tamped down, the next step is to lay a base course for the road. Crushed base course can be crafted with gravel, loose rocks, and a hammer, and can be applied to tamped blocks via right-clicking. This base course of crushed rocks creates a sturdy base for the final walking surface to rest upon."
+			"text": "Після того як місцевий ґрунт буде утрамбовано, наступним кроком є укладання базового шару для дороги. Щебеневу основу дороги можна створити з гравію, дрібних каменів та молотки, а нанести його на утрамбовані блоки можна за допомогою правої кнопки миші. Цей базовий шар із подрібненого каміння створює міцну основу, на яку ляже фінальне дорожнє покриття."
 		},
 		{
 			"type": "patchouli:text",
-			"text": "The final step in creating a road is laying the road surface. Different items, including bricks, hoggin, and loose rocks can be applied via right-clicking on top of a base course to form a walkable road. Different items result in different varieties of road, and different varieties of road allow for various walking speeds. For more details on different types of road, refer to their respective pages in this manual."
+			"text": "Фінальним кроком у створенні дороги є укладання дорожнього покриття. Різні предмети, зокрема цеглу, гарцовану суміш та дрібні каменці, можна наносити за допомогою правої кнопки миші поверх базового шару, щоб сформувати придатну для ходьби дорогу. Різні предмети створюють різні типи доріг, а різні типи доріг забезпечують різну швидкість ходьби. Для отримання детальнішої інформації про види доріг звернися до відповідних сторінок цього посібника."
 		}
 	],
 	"read_by_default": true,

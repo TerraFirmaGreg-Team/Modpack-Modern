@@ -1,5 +1,5 @@
 {
-  "name": "Differences from TFC",
+  "name": "Różnice wobec TFC",
   "category": "tfc:firmalife",
   "icon": "tfc:textures/item/food/wheat_bread.png",
   "pages": [
@@ -15,12 +15,12 @@
     {
       "type": "patchouli:text",
       "text": "$(l:firmalife/bread)Bread$() is made through a more complex process, requiring yeast and sweetener. The regular TFC bread recipe makes flatbread, which is worse nutritionally.",
-      "title": "Bread Making"
+      "title": "Wytwarzanie chleba"
     },
     {
       "type": "patchouli:text",
       "text": "Firmalife has a greater emphasis on sugar. While it can still be obtained through sugar cane, consider using honey (from bees) or making sugar from beets!",
-      "title": "Sweeteners"
+      "title": "Słodziki"
     }
   ],
   "read_by_default": true,

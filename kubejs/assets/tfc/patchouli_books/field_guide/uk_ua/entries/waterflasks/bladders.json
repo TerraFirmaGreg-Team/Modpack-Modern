@@ -1,27 +1,27 @@
 {
-  "name": "Flask Materials",
+  "name": "Матеріали для фляг",
   "category": "tfc:waterflasks",
   "icon": "waterflasks:bladder",
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "Central to effective water storage is reuse of something that stored water(ish) before.$(br2)$(bold)       Bladders!$()$(br)Only certain animals have bladders that work for this purpose, and some species' are easier to extract than others."
+      "text": "Головне для ефективного зберігання води — це повторне використання того, що вже зберігало воду (ну, майже).$(br2)$(bold)       Міхурі!$()$(br)Лише деякі тварини мають міхурі, які підходять для цієї мети, і у деяких видів їх легше добути, ніж у інших."
     },
     {
       "type": "patchouli:text",
-      "text": "$(br)$(bold)Animal____________Chance$(br)$()Sheep___________________10%$(br)Alpaca__________________10%$(br)Goat____________________10%$(br)Deer____________________10%$(br)Equines_________________20%$(br)Bears___________________20%$(br)Bovines_________________50%$(br)Moose___________________50%$(br)$(br)To increase your chances, use a higher damage weapon to butcher the animal."
+      "text": "$(br)$(bold)Тварина___________Шанс$(br)$()Вівця___________________10%$(br)Альпака_________________10%$(br)Коза____________________10%$(br)Олень___________________10%$(br)Кінь__________________20%$(br)Ведмедь_________________20%$(br)Бик__________________50%$(br)Лось____________________50%$(br)$(br)Щоб збільшити свої шанси, використовуй зброю з більшою шкодою для забою тварини."
     },
     {
       "type": "patchouli:spotlight",
       "item": "waterflasks:leather_side",
       "title": "Шкіра на бурдюк",
       "link_recipes": false,
-      "text": "Flask Sides are used in both flask recipes."
+      "text": "Стінки бурдюка використовуються в обох рецептах створення бурдюка."
     },
     {
       "type": "tfc:knapping_recipe",
       "recipe": "waterflasks:leather_knapping/leather_side",
-      "text": "Leather flask sides are knapped out of leather to protect the bladder from punctures."
+      "text": "Шкіряні стінки бурдюка вирізаються зі шкіри, щоб захистити міхур від проколів."
     }
   ],
   "read_by_default": true,

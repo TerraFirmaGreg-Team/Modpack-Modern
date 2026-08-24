@@ -1,11 +1,11 @@
 {
-  "name": "Kayaks",
+  "name": "Каяк",
   "category": "tfc:firmaciv",
   "icon": "firmaciv:kayak_with_paddle_icon_only",
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "Your best overland solo-adventure friend. Of course, being the only boat that can be carried as an item helps. It's the fastest boat for a solo player, and very maneuverable!$(br2)To carry the kayak, just break it.",
+      "text": "Твій найкращий друг для самостійних сухопутних пригод. Звісно, те, що це єдиний човен, який можна носити з собою як предмет, неабияк допомагає. Це найшвидший човен для одного гравця, і він дуже маневровий!$(br2)Щоб переносити каяк, просто зламай його.",
       "title": "Байдарка"
     },
     {
@@ -14,7 +14,7 @@
       "images": [
         "firmaciv:textures/gui/book/kayak_isometric.png"
       ],
-      "text": "Kayaks are the smallest and most portable boats."
+      "text": "Каяк — це найменший та найкомпактніший човен."
     },
     {
       "type": "patchouli:crafting",
@@ -25,7 +25,7 @@
       "type": "tfc:sealed_barrel_recipe",
       "anchor": "soaking",
       "recipe": "firmaciv:barrel/large_waterproof_hide_olive",
-      "text": "Soak a Large Prepared Hide in either tallow or olive oil to make its surface impervious to water."
+      "text": "Вимочи велику оброблену шкіру у тваринному жирі або оливковій олії, щоб зробити її поверхню водонепроникною."
     }
   ],
   "read_by_default": true,
