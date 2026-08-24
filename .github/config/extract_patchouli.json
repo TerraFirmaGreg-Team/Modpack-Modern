@@ -1,0 +1,43 @@
+{
+  "mods_dir": "mods",
+  "kubejs_assets": "kubejs/assets",
+  "locales": [
+    "en_us",
+    "ru_ru",
+    "zh_cn",
+    "zh_tw",
+    "uk_ua",
+    "pl_pl",
+    "ja_jp",
+    "ko_kr",
+    "de_de",
+    "es_es",
+    "fr_fr",
+    "pt_br",
+    "hu_hu",
+    "tr_tr",
+    "sv_se",
+    "lt_lt"
+  ],
+  "books": [
+    "tfc/field_guide"
+  ],
+  "translatable_keys": [
+    "name",
+    "title",
+    "text",
+    "description",
+    "header",
+    "landing_text"
+  ],
+  "drop_keys": [
+    "__comment__"
+  ],
+  "skip_relpaths": [
+    "templates"
+  ],
+  "nested_jars": true,
+  "max_jar_depth": 3,
+  "backup_dir": ".github/script/extract_patchouli/backup",
+  "log_dir": ".github/script/extract_patchouli/logs"
+}

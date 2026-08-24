@@ -1,0 +1,46 @@
+{
+  "name": "Миски",
+  "category": "tfc:mechanics",
+  "icon": "tfc:ceramic/bowl",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)Миска$() — це універсальний інструмент, який можна використовувати для приготування $(l:mechanics/salad)салату$() чи $(l:mechanics/pot)супу$(), $(l:mechanics/decay#salting)засолювання$() м'яса або нанесення $(thing)порошку$() на $(l:mechanics/glassworking_applications#coloring)скло$(), щоб змінити колір отриманого скла.$(br2)Миску можна виготовити із $(thing)кераміки$() шляхом ліплення з глини з подальшим випалюванням."
+    },
+    {
+      "type": "tfc:knapping_recipe",
+      "recipe": "tfc:clay_knapping/bowl_4",
+      "text": "З одного ліплення можна отримати кілька невипалених мисок."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/vanilla/bowl",
+      "title": "Дерев'яна миска",
+      "text": "Миску також можна виготовити з деревини шляхом створення разом із $(thing)клеєм$().$(br2)$(thing)Клей$() можна приготувати, замочивши $(thing)кісткове борошно$() в діжці з $(l:mechanics/barrels#limewater)вапняною водою$()."
+    },
+    {
+      "type": "tfc:sealed_barrel_recipe",
+      "recipe": "tfc:barrel/glue",
+      "text": "Миску також можна розмістити на землі як блок. Після розміщення її можна наповнити будь-яким видом $(thing)порошку$() — результатом подрібнення руди, мінералу чи дорогоцінного каменя в $(l:mechanics/quern)жорнах$()."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "tag:tfc:powders",
+      "title": "Порошки",
+      "link_recipes": false,
+      "text": "Миска з порошком може вміщувати до 16 одиниць певного порошку. Щоб додати предмет, натисни $(item)$(k:key.use)$(), тримаючи порошок у руці. Щоб вийняти предмет, натисни $(item)$(k:key.use)$() порожньою рукою.$(br2)Затискання клавіші $(item)$(k:key.sneak)$() дозволяє вийняти весь вміст миски."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "tfc:powder/salt",
+      "link_recipes": false,
+      "text": "Якщо в мисці є сіль, натискання по ній несолоним сирим м'ясом засолить його. Це працює так само, як і створення м'яса із сіллю у твоєму інвентарі."
+    }
+  ],
+  "read_by_default": true,
+  "extra_recipe_mappings": {
+    "tfc:ceramic/unfired_bowl": 1,
+    "tfc:ceramic/bowl": 1,
+    "minecraft:bowl": 2
+  }
+}

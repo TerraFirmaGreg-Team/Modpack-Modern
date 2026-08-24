@@ -5,9 +5,9 @@
     "pages": [
         {
             "type": "patchouli:text",
+            "text": "$(li)$(bold)$(l:getting_started/food_and_water#basics)基础$()$(li)$(bold)$(l:getting_started/food_and_water#thirst)口渴$()$(li)$(bold)$(l:getting_started/food_and_water#nutrition_screen)营养界面$()$(li)$(bold)$(l:getting_started/food_and_water#nutrients)营养素$()$(li2)$(l:getting_started/food_and_water#fruit)水果$()$(li2)$(l:getting_started/food_and_water#vegetables)蔬菜$()$(li2)$(l:getting_started/food_and_water#protein)蛋白质$()$(li2)$(l:getting_started/food_and_water#grain)谷物$()$(li2)$(l:getting_started/food_and_water#dairy)乳制品$()$(li)$(bold)$(l:getting_started/food_and_water#contaminants)污染物$()$(li2)$(l:getting_started/food_and_water#toxins)毒素$()$(li2)$(l:getting_started/food_and_water#parasites)寄生虫$()$(li2)$(l:getting_started/food_and_water#microplastics)微塑料$()",
             "title": "索引",
-            "anchor": "index",
-            "text": "$(li)$(bold)$(l:getting_started/food_and_water#basics)基础$()$(li)$(bold)$(l:getting_started/food_and_water#thirst)口渴$()$(li)$(bold)$(l:getting_started/food_and_water#nutrition_screen)营养界面$()$(li)$(bold)$(l:getting_started/food_and_water#nutrients)营养素$()$(li2)$(l:getting_started/food_and_water#fruit)水果$()$(li2)$(l:getting_started/food_and_water#vegetables)蔬菜$()$(li2)$(l:getting_started/food_and_water#protein)蛋白质$()$(li2)$(l:getting_started/food_and_water#grain)谷物$()$(li2)$(l:getting_started/food_and_water#dairy)乳制品$()$(li)$(bold)$(l:getting_started/food_and_water#contaminants)污染物$()$(li2)$(l:getting_started/food_and_water#toxins)毒素$()$(li2)$(l:getting_started/food_and_water#parasites)寄生虫$()$(li2)$(l:getting_started/food_and_water#microplastics)微塑料$()"
+            "anchor": "index"
         },
         {
             "type": "patchouli:text",
@@ -15,9 +15,9 @@
         },
         {
             "type": "patchouli:text",
+            "text": "在群峦传说中，你不仅需要管理饥饿值，还需要管理口渴值。饥饿机制与原版类似。大多数食物恢复大约五分之一的饥饿值。有些食物恢复得少一些，比如$(thing)香蒲根$()。进食也会恢复$(thing)饱食度$()，可以理解为你的饱腹程度。饥饿或水分耗尽会导致行动迟缓并受到伤害。死亡不会重置你的营养素或污染物。",
             "title": "基础",
-            "anchor": "basics",
-            "text": "在群峦传说中，你不仅需要管理饥饿值，还需要管理口渴值。饥饿机制与原版类似。大多数食物恢复大约五分之一的饥饿值。有些食物恢复得少一些，比如$(thing)香蒲根$()。进食也会恢复$(thing)饱食度$()，可以理解为你的饱腹程度。饥饿或水分耗尽会导致行动迟缓并受到伤害。死亡不会重置你的营养素或污染物。"
+            "anchor": "basics"
         },
         {
             "type": "patchouli:text",
@@ -29,16 +29,18 @@
         },
         {
             "type": "patchouli:text",
-            "text": "食物的提示框可能看起来像这样：$(br2)$(bold)橙子$()$(br)  $(2)$(bold)腐烂于：1004年7月6日 11:59（1个月1天后）$()$(br)  $(8)营养：$(br)  - 饱食度：2%$(br)  - 水分：10%$(br)$(a)  - 水果：0.5"
+            "text": "食物的提示框可能看起来像这样：$(br2)$(bold)橙子$()$(br)  $(2)$(bold)腐烂于：1004年7月6日 11:59（1个月1天后）$()$(br)  $(8)营养：$(br)  - 饱食度：2%$(br)  - 水分：10%$(br)$(a)  - 水果：0.5",
+            "title": "营养素"
         },
         {
             "type": "patchouli:text",
-            "anchor": "thirst",
             "text": "口渴值是身体中的水分含量，其消耗速度与饥饿相似。在高温或高饥饿消耗的情况下，口渴消耗会更快。幸运的是，饮用$(thing)淡水$()可以补充口渴值。可以通过对着水方块按下$(item)$(k:key.use)$()来喝水。饮用盐水会导致口渴值下降，甚至有可能使你获得$(thing)口渴$()效果，进一步加速水分流失。",
+            "anchor": "thirst",
             "title": "口渴"
         },
         {
             "type": "patchouli:multiblock",
+            "text": "要避开盐水或泥水，请寻找河流、湖泊以及像$(thing)香蒲$()这样的淡水植物。",
             "multiblock": {
                 "pattern": [
                     [
@@ -57,30 +59,31 @@
                 }
             },
             "name": "饮水安全",
-            "text": "要避开盐水或泥水，请寻找河流、湖泊以及像$(thing)香蒲$()这样的淡水植物。",
             "enable_visualize": false
         },
         {
             "type": "tfc:knapping_recipe",
-            "recipe": "tfc:clay_knapping/jug",
-            "text": "$(l:getting_started/pottery)捏制黏土$()并烧制一个$(l:getting_started/pottery#jug)陶壶$()是随身携带水的一种方法。像桶一样对着水按$(item)$(k:key.use)$()即可装水。按住$(item)$(k:key.use)$()可以喝水。"
+            "text": "$(l:getting_started/pottery)捏制黏土$()并烧制一个$(l:getting_started/pottery#jug)陶壶$()是随身携带水的一种方法。像桶一样对着水按$(item)$(k:key.use)$()即可装水。按住$(item)$(k:key.use)$()可以喝水。",
+            "title": "干渴",
+            "recipe": "tfc:clay_knapping/jug"
         },
         {
             "type": "patchouli:text",
+            "name": "饮水安全",
             "text": "你也可以使用其他容器喝水，例如$(l:waterflasks)水壶$()或$(l:mechanics/glassworking)玻璃瓶$()。更多关于饮水容器及饮品效果的信息，请$(l:mechanics/drinks#containers)点击此处$()"
         },
         {
             "type": "patchouli:text",
-            "anchor": "nutrition_screen",
             "text": "在$(bold)$(#ff0fb7)群峦$()$()$(bold)$(#595959)格雷$()$()中，营养界面会显示关于你健康的丰富信息。$(li)主图表显示你的$(l:getting_started/food_and_water#nutrients)营养素$()$()$(li)侧边图表显示你的$(l:getting_started/food_and_water#contaminants)污染物$()$()$(li)表格显示你的健康属性$()$(li)还有一个可切换的视图，用于查看队伍的营养状况$()$(br)$(item)按住-$(k:key.sneak)$()将鼠标悬停在界面元素上可查看更多信息。$()",
+            "anchor": "nutrition_screen",
             "title": "营养界面"
         },
         {
             "type": "patchouli:image",
+            "text": "营养界面，图表显示每种营养素的水准。",
             "images": [
                 "tfg:textures/gui/field_guide/nutrition/tfg_nutrition_screen.png"
             ],
-            "text": "营养界面，图表显示每种营养素的水准。",
             "border": false
         },
         {

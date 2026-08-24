@@ -1,5 +1,4 @@
 {
-	"__comment__": "This file was automatically created by mcresources",
 	"name": "Рослини",
 	"category": "tfc:mechanics",
 	"icon": "tfc:textures/item/food/wheat.png",
@@ -14,8 +13,8 @@
 		},
 		{
 			"type": "patchouli:text",
-			"title": "Зміст",
-			"text": "$(li)$(l:tfc:mechanics/crops#barley)Ячмінь$()\n$(li)$(l:tfc:mechanics/crops#beet)Буряк$()\n$(li)$(l:tfc:mechanics/crops#cabbage)Капуста$()\n$(li)$(l:tfc:mechanics/crops#canola)Ріпак$()\n$(li)$(l:tfc:mechanics/crops#carrot)Морква$()\n$(li)$(l:tfc:mechanics/crops#cucumber)Огірок$()\n$(li)$(l:tfc:mechanics/crops#flax)Льон$()\n$(li)$(l:tfc:mechanics/crops#garlic)Часник$()\n$(li)$(l:tfc:mechanics/crops#green_bean)Зелена квасоля$()\n$(li)$(l:tfc:mechanics/crops#jute)Джут$()\n$(li)$(l:tfc:mechanics/crops#lentil)Сочевиця$()\n$(li)$(l:tfc:mechanics/crops#maize)Кукурудза$()\n$(li)$(l:tfc:mechanics/crops#melon)Диня$()"
+			"text": "$(li)$(l:tfc:mechanics/crops#barley)Ячмінь$()\n$(li)$(l:tfc:mechanics/crops#beet)Буряк$()\n$(li)$(l:tfc:mechanics/crops#cabbage)Капуста$()\n$(li)$(l:tfc:mechanics/crops#canola)Ріпак$()\n$(li)$(l:tfc:mechanics/crops#carrot)Морква$()\n$(li)$(l:tfc:mechanics/crops#cucumber)Огірок$()\n$(li)$(l:tfc:mechanics/crops#flax)Льон$()\n$(li)$(l:tfc:mechanics/crops#garlic)Часник$()\n$(li)$(l:tfc:mechanics/crops#green_bean)Зелена квасоля$()\n$(li)$(l:tfc:mechanics/crops#jute)Джут$()\n$(li)$(l:tfc:mechanics/crops#lentil)Сочевиця$()\n$(li)$(l:tfc:mechanics/crops#maize)Кукурудза$()\n$(li)$(l:tfc:mechanics/crops#melon)Диня$()",
+			"title": "Зміст"
 		},
 		{
 			"type": "patchouli:text",
@@ -23,15 +22,16 @@
 		},
 		{
 			"type": "tfc:rock_knapping_recipe",
+			"text": "Для початку можна зробити $(thing)кам’яну мотикy$() методом $(thing) оббивання$(), як показано вище.",
+			"title": "Вирощування рослин",
 			"recipes": [
 				"tfg:rock_knapping/stone_hoe_head_1"
-			],
-			"text": "Для початку можна зробити $(thing)кам’яну мотикy$() методом $(thing) оббивання$(), як показано вище."
+			]
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "gtceu:shaped/hoe_stone",
-			"text": "Коли головка мотики буде одбита, її можна зібрати у мотику.$(br2)Мотики працюють так само, як у Vanilla: правий клац по блоках землі перетворює їх на $(thing)ріллю$(). Їх також можна використовувати, щоб перетворювати $(thing)землю з корінням$() на $(thing)землю$()."
+			"text": "Коли головка мотики буде одбита, її можна зібрати у мотику.$(br2)Мотики працюють так само, як у Vanilla: правий клац по блоках землі перетворює їх на $(thing)ріллю$(). Їх також можна використовувати, щоб перетворювати $(thing)землю з корінням$() на $(thing)землю$().",
+			"recipe": "gtceu:shaped/hoe_stone"
 		},
 		{
 			"type": "patchouli:text",
@@ -632,7 +632,7 @@
 		},
 		{
 			"type": "tfc:multimultiblock",
-			"text": "",
+			"text": "Note: in order to grow, the rice block must be $(thing)Waterlogged$().",
 			"multiblocks": [
 				{
 					"pattern": [
@@ -1253,7 +1253,7 @@
 		},
 		{
 			"type": "tfc:multimultiblock",
-			"text": "",
+			"text": "The stick is required in order for the crop to fully grow.",
 			"multiblocks": [
 				{
 					"pattern": [
@@ -2677,7 +2677,7 @@
 		},
 		{
 			"type": "tfc:multimultiblock",
-			"text": "",
+			"text": "The stick is required in order for the crop to fully grow.",
 			"multiblocks": [
 				{
 					"pattern": [

@@ -1,0 +1,13 @@
+{
+  "name": "Chleb",
+  "category": "tfc:mechanics",
+  "icon": "tfc:textures/item/food/wheat_bread.png",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l:firmalife/bread)See the Firmalife entry for the correct information.$()",
+      "title": "Chleb"
+    }
+  ],
+  "read_by_default": true
+}

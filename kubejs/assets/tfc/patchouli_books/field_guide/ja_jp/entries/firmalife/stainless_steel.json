@@ -1,0 +1,31 @@
+{
+  "name": "ステンレス鋼",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:metal/ingot/stainless_steel",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)ステンレス鋼$()と$(thing)クロム$()は、Firmalifeが追加した$(thing)スチール級$()金属です。$(br2)$(l:tfc:firmalife/greenhouse)ステンレス鋼の温室$()の建設に使用されます。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "firmalife:metal/ingot/stainless_steel",
+      "title": "ステンレス鋼",
+      "link_recipes": false,
+      "text": "$(br)$(bold)材料:$()$(br)$(li)20 - 30 % : $(thing)クロム$()$(li)10 - 20 % : $(thing)ニッケル$()$(li)60 - 80 % : $(thing)鋼$()$(br2)"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "firmalife:ore/small_chromite",
+      "link_recipes": false,
+      "text": "クロマイト鉱石を溶かすとクロムが得られます。$(br2)$(thing)火成岩質貫入岩$()や$(thing)変成岩$()に含まれています。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(li)花崗岩$()$(li)閃緑岩$()$(li)斑れい岩$()$(li)頁岩$()$(li)千枚岩$()$(li)片岩$()$(li)片麻岩$()$(li)大理石$()",
+      "title": "クロマイトが含まれる地層"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 11
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Ізоляція доменної печі",
+  "category": "tfc:mechanics",
+  "icon": "tfcbetterbf:insulation",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)Ізоляція доменної печі$() — це компактніший спосіб ізолювати твою $(l:mechanics/blast_furnace)доменну піч$(). Замість того щоб розкладати листи навколо димаря, $(thing)ізоляція доменної печі$() наноситься безпосередньо на $(l:mechanics/fire_clay#fire_bricks)вогнетривку цеглу$() за допомогою $(item)$(k:key.use)$(). Якщо її зламати, ізоляція та цегла випадуть окремо."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfcbetterbf:crafting/insulation",
+      "text": "Для створення ізоляції потрібна така ж кількість $(thing)листів зварного заліза$(), яка б знадобилася для розміщення навколо одного блока вогнетривкої цегли."
+    }
+  ],
+  "read_by_default": true
+}

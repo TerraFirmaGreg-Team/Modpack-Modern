@@ -1,0 +1,31 @@
+{
+  "name": "不鏽鋼",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:metal/ingot/stainless_steel",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)不鏽鋼$()和$(thing)鉻$()是Firmalife模組添加的$(thing)鋼級$()金屬。它們用於建造$(l:firmalife/greenhouse)不鏽鋼溫室$()。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "firmalife:metal/ingot/stainless_steel",
+      "title": "不鏽鋼",
+      "link_recipes": false,
+      "text": "$(br)$(bold)成分：$()$(br)$(li)20 - 30 % : $(thing)鉻$()$(li)10 - 20 % : $(thing)鎳$()$(li)60 - 80 % : $(thing)鋼$()$(br2)"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "firmalife:ore/small_chromite",
+      "link_recipes": false,
+      "text": "鉻鐵礦是一種熔鍊後可獲得鉻的礦石。它存在於$(thing)侵入岩$()和$(thing)變質岩$()中。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(li)花崗岩$()$(li)閃長巖$()$(li)輝長岩$()$(li)板岩$()$(li)千枚巖$()$(li)片岩$()$(li)片麻岩$()$(li)大理岩$()",
+      "title": "所有可能含鉻的岩石種類"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 11
+}

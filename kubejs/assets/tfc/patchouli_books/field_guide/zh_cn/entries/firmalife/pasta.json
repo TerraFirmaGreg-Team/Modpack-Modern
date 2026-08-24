@@ -1,0 +1,27 @@
+{
+  "name": "意大利面",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:textures/item/food/cooked_pasta.png",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)面条$()有两种：鸡蛋面和米线。将米粉、玉米粉、盐和1000 mB牛奶在$(l:firmalife/mixing_bowl)搅拌碗$()中混合，可以制成$(thing)米线$()。而将面粉、一个鸡蛋、盐和1000 mB牛奶混合，则可以制成$(thing)鸡蛋面$()。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/lasagna",
+      "text": "$(thing)千层面$()可以直接用鸡蛋面制作，配料需要$(l:firmalife/pizza#tomato_sauce)番茄酱$()、熟肉和牛至，然后放入$(l:firmalife/ovens)烤炉$()中烘烤。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "制作完成的意大利面需要在水中煮熟。无论是哪种面条，都必须用$(thing)碗$()点击锅才能取出。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/tomato_pasta",
+      "text": "将煮熟的鸡蛋面（意面）与番茄酱一起合成，就能做出美味的番茄酱意面了！"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 27
+}

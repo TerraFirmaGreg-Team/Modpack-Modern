@@ -1,9 +1,7 @@
 {
 	"bar.species.cruncher": "%sの空腹度",
 	"block.species.alphacene_grass": "アルファセンの草",
-	"block.species.alphacene_grass_block": "アルファセンの草ブロック",
 	"block.species.alphacene_moss_block": "グラシアンのキャップ",
-	"block.species.alphacene_moss_carpet": "アルファセン苔のカーペット",
 	"block.species.alphacene_mushroom": "アルファセンキノコ",
 	"block.species.alphacene_mushroom_block": "アルファセンキノコブロック",
 	"block.species.alphacene_mushroom_growth": "アルファセンキノコの群生",
@@ -21,7 +19,6 @@
 	"block.species.petrified_egg": "グーバーの卵",
 	"block.species.speclight": "幽光",
 	"block.species.springling_egg": "スプリングリングの卵",
-	"block.species.wraptor_egg": "ラプターの卵",
 	"container.species.birtday_cake": "誕生日を設定",
 	"death.attack.cranktrap": "%1$sはトラバサミの餌食になった",
 	"death.attack.cranktrap.item": "%1$sは%3$sを振るう%2$sから逃れようとしてトラバサミの餌食になった",
@@ -165,8 +162,6 @@
 	"subtitles.block.species.springling_egg.crack": "スプリングリングの卵にひびが入る",
 	"subtitles.block.species.springling_egg.hatch": "スプリングリングの卵が孵化する",
 	"subtitles.block.species.springling_egg.plop": "スプリングリングが卵を産む",
-	"subtitles.block.species.wraptor_egg.crack": "ラプターの卵にひびが入る",
-	"subtitles.block.species.wraptor_egg.hatch": "ラプターの卵が孵化する",
 	"subtitles.effect.species.gut_feeling.applied": "お腹が鳴る",
 	"subtitles.effect.species.gut_feeling.roar": "お腹を壊す",
 	"subtitles.effect.species.gut_feeling.spawn": "お腹が締め付けられる",
@@ -319,6 +314,5 @@
 	"subtitles.item.species.wicked_swapper.fail": "スワッパーパールが落ちる",
 	"subtitles.item.species.wicked_swapper.teleport": "スワッパーパールが位置を入れ替える",
 	"subtitles.item.species.wicked_swapper.throw": "スワッパーパールが投げられる",
-	"subtitles.item.species.wicked_treat.apply": "ペットが強化された",
-	"subtitles.item.species.wicked_wax.eat": "食べた"
+	"subtitles.item.species.wicked_treat.apply": "ペットが強化された"
 }

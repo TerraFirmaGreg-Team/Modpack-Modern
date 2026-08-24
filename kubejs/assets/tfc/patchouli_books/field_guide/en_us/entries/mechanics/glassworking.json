@@ -1,5 +1,4 @@
 {
-  "__comment__": "This file was automatically created by mcresources",
   "name": "Glassworking",
   "category": "tfc:mechanics",
   "icon": "tfc:silica_glass_bottle",
@@ -10,9 +9,9 @@
     },
     {
       "type": "patchouli:crafting",
-	  "title": "Silica Glass Batch",
       "recipe": "tfc:crafting/silica_glass_batch",
-      "text": "Glass batches can then be crafted using one of the aforementioned colors of sand, plus $(l:mechanics/glassworking#lime)Lime$() and a type of $(l:mechanics/glassworking#potash)Potash$()."
+      "text": "Glass batches can then be crafted using one of the aforementioned colors of sand, plus $(l:mechanics/glassworking#lime)Lime$() and a type of $(l:mechanics/glassworking#potash)Potash$().",
+      "title": "Silica Glass Batch"
     },
     {
       "type": "patchouli:smelting",
@@ -24,8 +23,8 @@
       "type": "patchouli:smelting",
       "anchor": "potash",
       "recipe": "tfg:smelting/dried_seaweed_to_soda",
-	  "recipe2": "tfg:smelting/dried_kelp_to_soda",
-      "text": "A type of $(thing)Potash$() or equivalent is also required for glass batches. $(thing)Soda Ash$() can be used, which is a powder made from heating $(thing)Dried Seaweed$() or $(thing)Kelp$(). $(l:tfg_ores/earth_vein_index#normal_saltpeter)Saltpeter$() can be used as well."
+      "text": "A type of $(thing)Potash$() or equivalent is also required for glass batches. $(thing)Soda Ash$() can be used, which is a powder made from heating $(thing)Dried Seaweed$() or $(thing)Kelp$(). $(l:tfg_ores/earth_vein_index#normal_saltpeter)Saltpeter$() can be used as well.",
+      "recipe2": "tfg:smelting/dried_kelp_to_soda"
     },
     {
       "type": "patchouli:text",

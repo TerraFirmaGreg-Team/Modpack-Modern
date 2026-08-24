@@ -1,0 +1,20 @@
+{
+  "name": "Спресована ґрунтово-гравійна стежка",
+  "category": "tfc:roadsandroofs",
+  "icon": "rnr:hoggin",
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "anchor": "hoggin_mix",
+      "recipe": "rnr:crafting/hoggin_mix",
+      "title": "Гарцована суміш",
+      "text": "Спресований ґрунто-гравій — це ущільнюване підлогове покриття, виготовлене із суміші глини, гравію та піску. Його можна наносити на базовий дорожній шар для створення простої стежки, яка дає скромне 10% прискорення швидкості ходьби."
+    },
+    {
+      "type": "patchouli:text",
+      "text": ""
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 4
+}

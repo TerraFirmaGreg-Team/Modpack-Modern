@@ -1,0 +1,18 @@
+{
+  "name": "믹싱 볼",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:mixing_bowl",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "The mixing bowl is a way of mixing items and fluids together in a friendly way. $(item)$(k:key.use)$() on it with a $(thing)Spoon$() to add it to the bowl, which allows it to operate."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/mixing_bowl",
+      "text": "Requires a $(thing)Spoon$() to use."
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 18
+}

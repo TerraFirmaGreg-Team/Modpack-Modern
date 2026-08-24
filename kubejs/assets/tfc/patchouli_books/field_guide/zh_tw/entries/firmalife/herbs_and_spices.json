@@ -1,5 +1,4 @@
 {
-	"__comment__": "This file was automatically created by mcresources",
 	"name": "藥草與香料",
 	"category": "tfc:firmalife",
 	"icon": "firmalife:spice/basil_leaves",
@@ -10,6 +9,7 @@
 		},
 		{
 			"type": "tfc:multimultiblock",
+			"text": "$(thing)野生羅勒$()生長在温度12-25°C、降雨量300-500mm的區域。",
 			"multiblocks": [
 				{
 					"pattern": [
@@ -39,11 +39,13 @@
 				}
 			],
 			"name": "羅勒",
-			"text": "$(thing)野生羅勒$()生長在温度12-25°C、降雨量300-500mm的區域。",
 			"enable_visualize": false
 		},
 		{
 			"type": "tfc:multimultiblock",
+			"name": "月桂",
+			"text": "$(thing)野生月桂$()生長在温度8-14°C、降雨量25-225mm的區域。",
+			"enable_visualize": false,
 			"multiblocks": [
 				{
 					"pattern": [
@@ -71,13 +73,11 @@
 						"X": "firmalife:plant/bay_laurel[stage=1]"
 					}
 				}
-			],
-			"name": "月桂",
-			"text": "$(thing)野生月桂$()生長在温度8-14°C、降雨量25-225mm的區域。",
-			"enable_visualize": false
+			]
 		},
 		{
 			"type": "tfc:multimultiblock",
+			"text": "$(thing)野生豆蔻$()生長在温度18-30°C、降雨量350-500mm的區域。",
 			"multiblocks": [
 				{
 					"pattern": [
@@ -107,11 +107,13 @@
 				}
 			],
 			"name": "豆蔻",
-			"text": "$(thing)野生豆蔻$()生長在温度18-30°C、降雨量350-500mm的區域。",
 			"enable_visualize": false
 		},
 		{
 			"type": "tfc:multimultiblock",
+			"name": "香菜",
+			"text": "$(thing)野生香菜$()生長在温度5-15°C、降雨量0-150mm的區域。",
+			"enable_visualize": false,
 			"multiblocks": [
 				{
 					"pattern": [
@@ -139,13 +141,11 @@
 						"X": "firmalife:plant/cilantro[stage=1]"
 					}
 				}
-			],
-			"name": "香菜",
-			"text": "$(thing)野生香菜$()生長在温度5-15°C、降雨量0-150mm的區域。",
-			"enable_visualize": false
+			]
 		},
 		{
 			"type": "tfc:multimultiblock",
+			"text": "$(thing)野生孜然$()生長在温度6-20°C、降雨量50-250mm的區域。",
 			"multiblocks": [
 				{
 					"pattern": [
@@ -175,7 +175,6 @@
 				}
 			],
 			"name": "孜然",
-			"text": "$(thing)野生孜然$()生長在温度6-20°C、降雨量50-250mm的區域。",
 			"enable_visualize": false
 		},
 		{

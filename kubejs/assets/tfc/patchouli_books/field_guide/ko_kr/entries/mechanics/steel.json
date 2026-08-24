@@ -1,5 +1,5 @@
 {
-    "name": "Steel",
+    "name": "녹은 강철",
     "category": "tfc:mechanics",
     "icon": "tfc:metal/ingot/steel",
     "pages": [
@@ -16,7 +16,7 @@
             "type": "patchouli:text",
             "anchor": "black_steel",
             "text": "$(thing)Black Steel$() is an advanced form of steel formed from an alloy of steel and some other metals. In order to create it, you will need to create an alloy called $(thing)Weak Steel$() in a $(l:mechanics/crucible)Crucible$().",
-            "title": "Black Steel"
+            "title": "녹은 흑강"
         },
         {
             "type": "patchouli:spotlight",
@@ -38,12 +38,12 @@
             "type": "patchouli:text",
             "anchor": "blue_steel",
             "text": "$(thing)Blue Steel$() is one of the two highest tier metals, along with $(l:mechanics/steel#red_steel)Red Steel$(). Similar to $(l:mechanics/steel#black_steel)Black Steel$(), the first step is to create an alloy of $(thing)Weak Blue Steel$() in a $(l:mechanics/crucible)Crucible$().",
-            "title": "Blue Steel"
+            "title": "녹은 청강"
         },
         {
             "type": "patchouli:spotlight",
             "item": "tfc:metal/ingot/weak_blue_steel",
-            "title": "Weak Blue Steel",
+            "title": "녹은 약한 청강",
             "link_recipes": false,
             "text": "$(br)$(bold)Requirements:$()$(br)$(li)50 - 55 % : $(thing)Black Steel$()$(li)20 - 25 % : $(thing)Steel$()$(li)10 - 15 % : $(thing)Bismuth Bronze$()$(li)10 - 15 % : $(thing)Sterling Silver$()$(br2)"
         },
@@ -60,12 +60,12 @@
             "type": "patchouli:text",
             "anchor": "red_steel",
             "text": "$(thing)Red Steel$() is one of the two highest tier metals, along with $(l:mechanics/steel#blue_steel)Blue Steel$(). Similar to $(l:mechanics/steel#black_steel)Black Steel$(), the first step is to create an alloy of $(thing)Weak Red Steel$() in a $(l:mechanics/crucible)Crucible$().",
-            "title": "Red Steel"
+            "title": "녹은 적강"
         },
         {
             "type": "patchouli:spotlight",
             "item": "tfc:metal/ingot/weak_red_steel",
-            "title": "Weak Red Steel",
+            "title": "녹은 약한 적강",
             "link_recipes": false,
             "text": "$(br)$(bold)Requirements:$()$(br)$(li)50 - 55 % : $(thing)Black Steel$()$(li)20 - 25 % : $(thing)Steel$()$(li)10 - 15 % : $(thing)Brass$()$(li)10 - 15 % : $(thing)Rose Gold$()$(br2)"
         },

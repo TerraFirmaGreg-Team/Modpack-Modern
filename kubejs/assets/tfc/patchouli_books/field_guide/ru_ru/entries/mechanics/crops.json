@@ -1,5 +1,4 @@
 {
-	"__comment__": "This file was automatically created by mcresources",
 	"name": "Культуры",
 	"category": "tfc:mechanics",
 	"icon": "tfc:textures/item/food/wheat.png",
@@ -14,8 +13,8 @@
 		},
 		{
 			"type": "patchouli:text",
-			"title": "Содержит",
-			"text": "$(li)$(l:tfc:mechanics/crops#barley)Ячмень$()$(li)$(l:tfc:mechanics/crops#beet)Свёкла$()$(li)$(l:tfc:mechanics/crops#cabbage)Капуста$()$(li)$(l:tfc:mechanics/crops#canola)Канола$()$(li)$(l:tfc:mechanics/crops#carrot)Морковь$()$(li)$(l:tfc:mechanics/crops#cucumber)Огурец$()$(li)$(l:tfc:mechanics/crops#flax)Лён$()$(li)$(l:tfc:mechanics/crops#garlic)Чеснок$()$(li)$(l:tfc:mechanics/crops#green_bean)Горох$()$(li)$(l:tfc:mechanics/crops#jute)Джут$()$(li)$(l:tfc:mechanics/crops#lentil)Чечевица$()$(li)$(l:tfc:mechanics/crops#maize)Кукуруза$()$(li)$(l:tfc:mechanics/crops#melon)Арбуз$()"
+			"text": "$(li)$(l:tfc:mechanics/crops#barley)Ячмень$()$(li)$(l:tfc:mechanics/crops#beet)Свёкла$()$(li)$(l:tfc:mechanics/crops#cabbage)Капуста$()$(li)$(l:tfc:mechanics/crops#canola)Канола$()$(li)$(l:tfc:mechanics/crops#carrot)Морковь$()$(li)$(l:tfc:mechanics/crops#cucumber)Огурец$()$(li)$(l:tfc:mechanics/crops#flax)Лён$()$(li)$(l:tfc:mechanics/crops#garlic)Чеснок$()$(li)$(l:tfc:mechanics/crops#green_bean)Горох$()$(li)$(l:tfc:mechanics/crops#jute)Джут$()$(li)$(l:tfc:mechanics/crops#lentil)Чечевица$()$(li)$(l:tfc:mechanics/crops#maize)Кукуруза$()$(li)$(l:tfc:mechanics/crops#melon)Арбуз$()",
+			"title": "Содержит"
 		},
 		{
 			"type": "patchouli:text",
@@ -23,15 +22,16 @@
 		},
 		{
 			"type": "tfc:rock_knapping_recipe",
+			"text": "Чтобы начать работу, камень $(thing)Hoe$() может быть $(thing)knapped$(), как показано выше.",
+			"title": "Выращивание урожая",
 			"recipes": [
 				"tfg:rock_knapping/stone_hoe_head_1"
-			],
-			"text": "Чтобы начать работу, камень $(thing)Hoe$() может быть $(thing)knapped$(), как показано выше."
+			]
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "gtceu:shaped/hoe_stone",
-			"text": "Как только мокрый голова приклеивается, она может быть сделана в мотыгу.$(br2)Моты функционируют как в Vanilla, нажав правой кнопкой мыши на блоках земли, чтобы превратить их в $(thing)Farmland$(). Они также могут быть использованы для преобразования $(thing)Rooted Dirt$() в $(thing)Dirt$()."
+			"text": "Как только мокрый голова приклеивается, она может быть сделана в мотыгу.$(br2)Моты функционируют как в Vanilla, нажав правой кнопкой мыши на блоках земли, чтобы превратить их в $(thing)Farmland$(). Они также могут быть использованы для преобразования $(thing)Rooted Dirt$() в $(thing)Dirt$().",
+			"recipe": "gtceu:shaped/hoe_stone"
 		},
 		{
 			"type": "patchouli:text",
@@ -490,7 +490,7 @@
 			"type": "patchouli:text",
 			"anchor": "maize",
 			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 13 - 40 °C$(br)$(bold)$(l:mechanics/hydration)Влажность$(): 75 - 100 %$(br)$(bold)Питательное вещество$(): Фосфор$(br2)Кукуруза — это культура высотой в два блока. Семена кукурузы можно сажать на вспаханную землю, она вырастает до двух блоков в высоту и даёт $(thing)Кукуруза$() и $(thing)Семена кукурузы$() в качестве урожая.",
-			"title": "Маис"
+			"title": "Кукуруза"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -632,7 +632,7 @@
 		},
 		{
 			"type": "tfc:multimultiblock",
-			"text": "",
+			"text": "Note: in order to grow, the rice block must be $(thing)Waterlogged$().",
 			"multiblocks": [
 				{
 					"pattern": [
@@ -1253,7 +1253,7 @@
 		},
 		{
 			"type": "tfc:multimultiblock",
-			"text": "",
+			"text": "The stick is required in order for the crop to fully grow.",
 			"multiblocks": [
 				{
 					"pattern": [
@@ -2677,7 +2677,7 @@
 		},
 		{
 			"type": "tfc:multimultiblock",
-			"text": "",
+			"text": "The stick is required in order for the crop to fully grow.",
 			"multiblocks": [
 				{
 					"pattern": [

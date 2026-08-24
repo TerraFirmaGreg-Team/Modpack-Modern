@@ -1,5 +1,4 @@
 {
-  "__comment__": "This file was automatically created by mcresources",
   "name": "手推磨",
   "category": "tfc:mechanics",
   "icon": "tfc:quern",
@@ -52,28 +51,28 @@
     },
     {
       "type": "tfc:quern_recipe",
-      "title": "粉碎矿石",
       "recipe": "tfg:quern/copper_crushed_ore_from_normal_raw_ore",
-      "text": "$(l:tfg_ores/ore_basics#processing)矿石$() 可被粉碎以获取更多的金属。"
+      "text": "$(l:tfg_ores/ore_basics#processing)矿石$() 可被粉碎以获取更多的金属。",
+      "title": "粉碎矿石"
     },
     {
       "type": "tfc:quern_recipe",
-      "title": "粉末",
       "recipe": "tfg:quern/sulfur",
-      "text": "手推磨可用于将矿粉（如 $(thing)硫磺$()）制成各种 $(thing)粉末$()。$(thing)宝石$() 也可被研磨成粉末。"
+      "text": "手推磨可用于将矿粉（如 $(thing)硫磺$()）制成各种 $(thing)粉末$()。$(thing)宝石$() 也可被研磨成粉末。",
+      "title": "粉末"
     },
     {
       "type": "tfc:quern_recipe",
-      "title": "染料",
       "recipe": "tfc:quern/red_dye",
-      "text": "$(l:mechanics/dye)染料$()可以从花中提取得到。"
+      "text": "$(l:mechanics/dye)染料$()可以从花中提取得到。",
+      "title": "染料"
     },
     {
       "type": "patchouli:spotlight",
+      "text": "$(thing)农作物$() 可用刀具或手推磨加工成 $(thing)谷物$()，进一步研磨可得到 $(thing)面粉$()。",
       "item": {
         "tag": "tfc:foods/flour"
-      },
-      "text": "$(thing)农作物$() 可用刀具或手推磨加工成 $(thing)谷物$()，进一步研磨可得到 $(thing)面粉$()。"
+      }
     }
   ],
   "read_by_default": true
