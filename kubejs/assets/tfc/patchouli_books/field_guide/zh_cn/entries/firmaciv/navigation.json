@@ -4,7 +4,7 @@
   "icon": "firmaciv:textures/item/nav_toolkit.png",
   "pages": [
     {
-      "type": "patchouli:image",
+      "type": "patchouli:text",
       "title": "航海",
       "images": [
         "firmaciv:textures/gui/book/navigation.png"

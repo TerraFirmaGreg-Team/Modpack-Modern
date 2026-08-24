@@ -135,7 +135,7 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Carcinógenos",
+			"title": "Carcinogens",
 			"item": "gtceu:benzene_bucket",
 			"anchor": "Carcinogens",
 			"text": "$(thing)Carcinógenos$() são substâncias que causam $(item)Câncer$(). Elas incluem $(thing)Pó de Crômio$() bem como alguns compostos orgânicos, como $(thing)Benzene e seus produtos$(). $(thing)Carcinógenos$() $(item)não desaparecem por conta própria$(), mas eles dão muitos avisos antes de causar qualquer dano real. Começa com $(item)Fraqueza$(), seguido de $(item)Fome$(), então $(item)Lentidão$() e mais tarde $(item)Exaustão$(). Somente quando se acumula uma exposição suficientemente significativa é que eles causam $(item)Morte$()."
