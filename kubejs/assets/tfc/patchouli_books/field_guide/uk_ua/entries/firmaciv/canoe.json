@@ -1,0 +1,96 @@
+{
+  "name": "Човен-довбанка",
+  "category": "tfc:firmaciv",
+  "icon": "firmaciv:canoe_with_paddle_icon_only",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Човен-довбанка, швидше за все, стане першим кроком у твоїй водній подорожі! Якщо ти перебуваєш у мідному віці, ти вже можеш побудувати таке судно."
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "firmaciv:textures/gui/book/canoe_isometric.png"
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Ти можеш посадити тварин або покласти блоки на місце стернового, але май на увазі, що в такому разі гребти не вийде! Це найкорисніше, якщо ти просто хочеш самостійно відправити матеріали за течією річки.$(br2)Човен-довбанка має два місця, а керування здійснюється з заднього сидіння. Тобі потрібно тримати в руці весло, щоб рухатися на повній швидкості, а якщо весла тримають двоє гравців, ви зможете пливти ще швидше."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Щоб побудувати човен-довбанку, виклади 3 обтесані колоди в горизонтальний ряд і зріж верхню частину пилкою. Потім витеши форму човна сокирою. Наостанок підпали човен зсередини, щоб випалити заглиблення в корпусі. Процес випалювання триватиме стільки ж часу, скільки й випалювання в ямній печі."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Для витесування човна-довбанки потрібна м'якша деревина, тому для обробки підходять лише деякі види колод:$(br2)Дуґласія$(br)Сосна$(br)Пальма$(br)Смерека$(br)Секвоя$(br)Сейба$(br)Мангрове деоево$(br)Білий кедр$(br)Верба"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            " F ",
+            " 0 ",
+            " B "
+          ]
+        ],
+        "mapping": {
+          "F": "tfc:wood/stripped_log/douglas_fir[axis=x]",
+          "0": "tfc:wood/stripped_log/douglas_fir[axis=x]",
+          "B": "tfc:wood/stripped_log/douglas_fir[axis=x]"
+        }
+      },
+      "name": "Просто колода",
+      "text": "Перший крок у створенні човна-довбанки.",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            " F ",
+            " 0 ",
+            " B "
+          ]
+        ],
+        "mapping": {
+          "F": "firmaciv:wood/canoe_component_block/douglas_fir[canoe_carved=5,facing=east,end=true]",
+          "0": "firmaciv:wood/canoe_component_block/douglas_fir[canoe_carved=5,facing=east,end=false]",
+          "B": "firmaciv:wood/canoe_component_block/douglas_fir[canoe_carved=5,facing=east,end=true]"
+        }
+      },
+      "name": "Дивна плита",
+      "text": "Верхню частину колоди повинно зрізати пилкою.",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            " F ",
+            " 0 ",
+            " B "
+          ]
+        ],
+        "mapping": {
+          "F": "firmaciv:wood/canoe_component_block/douglas_fir[canoe_carved=11,facing=west,end=true]",
+          "0": "firmaciv:wood/canoe_component_block/douglas_fir[canoe_carved=11,facing=east,end=false]",
+          "B": "firmaciv:wood/canoe_component_block/douglas_fir[canoe_carved=11,facing=east,end=true]"
+        }
+      },
+      "name": "Дивна скульптура",
+      "text": "Повністю витесаний човен-довбанка, готовий до випалювання заглиблення в корпусі.",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmaciv:crafting/canoe_paddle",
+      "text": "Не забудь створити весло або два весла!"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 1
+}

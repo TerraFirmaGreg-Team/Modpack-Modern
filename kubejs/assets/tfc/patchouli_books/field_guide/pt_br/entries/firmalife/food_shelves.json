@@ -1,0 +1,18 @@
+{
+  "name": "Prateleiras de Comida",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:wood/food_shelf/pine",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "A $(thing)Prateleira de Comida$() é um dispositivo para armazenar alimentos. Ela só pode ser usada em uma $(l:firmalife/cellar)Adega$() válida. As prateleiras de comida podem conter uma pilha completa de um item alimentar. Adicionar e remover o item pode ser feito com $(item)$(k:key.use)$(). Itens em prateleiras de comida válidas recebem um modificador de decaimento melhor do que vasos."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/wood/acacia_shelf",
+      "text": "A prateleira de comida é feita de tábuas e madeira serrada."
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 4
+}

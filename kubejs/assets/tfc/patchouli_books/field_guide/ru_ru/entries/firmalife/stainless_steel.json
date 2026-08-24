@@ -1,0 +1,31 @@
+{
+  "name": "Нержавеющая сталь",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:metal/ingot/stainless_steel",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)Нержавеющая сталь$() и $(thing)хром$() — это металлы $(thing)стального уровня$(), добавленные Firmalife. Они используются при строительстве $(l:firmalife/greenhouse)теплиц из нержавеющей стали$()."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "firmalife:metal/ingot/stainless_steel",
+      "title": "Нержавеющая сталь",
+      "link_recipes": false,
+      "text": "$(br)$(bold)Требования:$()$(br)$(li)20 - 30 % : $(thing)хром$()$(li)10 - 20 % : $(thing)никель$()$(li)60 - 80 % : $(thing)сталь$()$(br2)"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "firmalife:ore/small_chromite",
+      "link_recipes": false,
+      "text": "Хромит — это руда, которая плавится для получения хрома. Она встречается в $(thing)интрузивных изверженных$() и $(thing)метаморфических$() породах."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(li)Гранит$()$(li)Диорит$()$(li)Габбро$()$(li)Сланцы$()$(li)Филлит$()$(li)Сланцы$()$(li)Гнейс$()$(li)Мрамор$()",
+      "title": "Все руды с хромом"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 11
+}

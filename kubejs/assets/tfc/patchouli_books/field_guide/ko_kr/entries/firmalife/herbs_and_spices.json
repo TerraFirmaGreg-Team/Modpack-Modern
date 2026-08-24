@@ -1,5 +1,4 @@
 {
-	"__comment__": "This file was automatically created by mcresources",
 	"name": "허브와 향신료들",
 	"category": "tfc:firmalife",
 	"icon": "firmalife:spice/basil_leaves",
@@ -10,6 +9,7 @@
 		},
 		{
 			"type": "tfc:multimultiblock",
+			"text": "$(thing)야생 바질$()은 기온 12~25°C, 강수량 300~500mm 환경에서 자랍니다.",
 			"multiblocks": [
 				{
 					"pattern": [
@@ -39,11 +39,13 @@
 				}
 			],
 			"name": "바질",
-			"text": "$(thing)야생 바질$()은 기온 12~25°C, 강수량 300~500mm 환경에서 자랍니다.",
 			"enable_visualize": false
 		},
 		{
 			"type": "tfc:multimultiblock",
+			"name": "월계수",
+			"text": "$(thing)야생 월계수$()는 기온 8~14°C, 강수량 25~225mm 환경에서 자랍니다.",
+			"enable_visualize": false,
 			"multiblocks": [
 				{
 					"pattern": [
@@ -71,13 +73,11 @@
 						"X": "firmalife:plant/bay_laurel[stage=1]"
 					}
 				}
-			],
-			"name": "월계수",
-			"text": "$(thing)야생 월계수$()는 기온 8~14°C, 강수량 25~225mm 환경에서 자랍니다.",
-			"enable_visualize": false
+			]
 		},
 		{
 			"type": "tfc:multimultiblock",
+			"text": "$(thing)야생 카다멈$()은 기온 18~30°C, 강수량 350~500mm 환경에서 자랍니다.",
 			"multiblocks": [
 				{
 					"pattern": [
@@ -107,11 +107,13 @@
 				}
 			],
 			"name": "카다멈",
-			"text": "$(thing)야생 카다멈$()은 기온 18~30°C, 강수량 350~500mm 환경에서 자랍니다.",
 			"enable_visualize": false
 		},
 		{
 			"type": "tfc:multimultiblock",
+			"name": "고수",
+			"text": "$(thing)야생 고수$()는 기온 5~15°C, 강수량 0~150mm 환경에서 자랍니다.",
+			"enable_visualize": false,
 			"multiblocks": [
 				{
 					"pattern": [
@@ -139,13 +141,11 @@
 						"X": "firmalife:plant/cilantro[stage=1]"
 					}
 				}
-			],
-			"name": "고수",
-			"text": "$(thing)야생 고수$()는 기온 5~15°C, 강수량 0~150mm 환경에서 자랍니다.",
-			"enable_visualize": false
+			]
 		},
 		{
 			"type": "tfc:multimultiblock",
+			"text": "$(thing)야생 커민$()은 기온 6~20°C, 강수량 50~250mm 환경에서 자랍니다.",
 			"multiblocks": [
 				{
 					"pattern": [
@@ -175,7 +175,6 @@
 				}
 			],
 			"name": "커민",
-			"text": "$(thing)야생 커민$()은 기온 6~20°C, 강수량 50~250mm 환경에서 자랍니다.",
 			"enable_visualize": false
 		},
 		{

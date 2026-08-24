@@ -1,5 +1,4 @@
 {
-	"__comment__": "This file was automatically created by mcresources",
 	"name": "农作物",
 	"category": "tfc:mechanics",
 	"icon": "tfc:textures/item/food/wheat.png",
@@ -14,8 +13,8 @@
 		},
 		{
 			"type": "patchouli:text",
-			"title": "目录",
-			"text": "$(li)$(l:tfc:mechanics/crops#barley)大麦$()$(li)$(l:tfc:mechanics/crops#beet)甜菜$()$(li)$(l:tfc:mechanics/crops#cabbage)卷心菜$()$(li)$(l:tfc:mechanics/crops#canola)油菜$()$(li)$(l:tfc:mechanics/crops#carrot)胡萝卜$()$(li)$(l:tfc:mechanics/crops#cucumber)黄瓜$()$(li)$(l:tfc:mechanics/crops#flax)亚麻$()$(li)$(l:tfc:mechanics/crops#garlic)大蒜$()$(li)$(l:tfc:mechanics/crops#green_bean)四季豆$()$(li)$(l:tfc:mechanics/crops#jute)黄麻$()$(li)$(l:tfc:mechanics/crops#lentil)扁豆$()$(li)$(l:tfc:mechanics/crops#maize)玉米$()$(li)$(l:tfc:mechanics/crops#melon)西瓜$()"
+			"text": "$(li)$(l:tfc:mechanics/crops#barley)大麦$()$(li)$(l:tfc:mechanics/crops#beet)甜菜$()$(li)$(l:tfc:mechanics/crops#cabbage)卷心菜$()$(li)$(l:tfc:mechanics/crops#canola)油菜$()$(li)$(l:tfc:mechanics/crops#carrot)胡萝卜$()$(li)$(l:tfc:mechanics/crops#cucumber)黄瓜$()$(li)$(l:tfc:mechanics/crops#flax)亚麻$()$(li)$(l:tfc:mechanics/crops#garlic)大蒜$()$(li)$(l:tfc:mechanics/crops#green_bean)四季豆$()$(li)$(l:tfc:mechanics/crops#jute)黄麻$()$(li)$(l:tfc:mechanics/crops#lentil)扁豆$()$(li)$(l:tfc:mechanics/crops#maize)玉米$()$(li)$(l:tfc:mechanics/crops#melon)西瓜$()",
+			"title": "目录"
 		},
 		{
 			"type": "patchouli:text",
@@ -23,15 +22,16 @@
 		},
 		{
 			"type": "tfc:rock_knapping_recipe",
+			"text": "要开始，首先通过$(thing)打制石器$()做一把$(thing)石锄$()。",
+			"title": "种植作物",
 			"recipes": [
 				"tfg:rock_knapping/stone_hoe_head_1"
-			],
-			"text": "要开始，首先通过$(thing)打制石器$()做一把$(thing)石锄$()。"
+			]
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "gtceu:shaped/hoe_stone",
-			"text": "将锄头与木棍合成一把锄。$(br2)锄的功能与原版相同，右键点击泥土方块即可将其转化为$(thing)耕地$()。它还可以用于将$(thing)缠根泥土$()转化为$(thing)土$()。"
+			"text": "将锄头与木棍合成一把锄。$(br2)锄的功能与原版相同，右键点击泥土方块即可将其转化为$(thing)耕地$()。它还可以用于将$(thing)缠根泥土$()转化为$(thing)土$()。",
+			"recipe": "gtceu:shaped/hoe_stone"
 		},
 		{
 			"type": "patchouli:text",
@@ -632,7 +632,7 @@
 		},
 		{
 			"type": "tfc:multimultiblock",
-			"text": "",
+			"text": "Note: in order to grow, the rice block must be $(thing)Waterlogged$().",
 			"multiblocks": [
 				{
 					"pattern": [
@@ -1253,7 +1253,7 @@
 		},
 		{
 			"type": "tfc:multimultiblock",
-			"text": "",
+			"text": "The stick is required in order for the crop to fully grow.",
 			"multiblocks": [
 				{
 					"pattern": [
@@ -2677,7 +2677,7 @@
 		},
 		{
 			"type": "tfc:multimultiblock",
-			"text": "",
+			"text": "The stick is required in order for the crop to fully grow.",
 			"multiblocks": [
 				{
 					"pattern": [

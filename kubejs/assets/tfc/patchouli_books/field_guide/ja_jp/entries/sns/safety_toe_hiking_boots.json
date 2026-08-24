@@ -1,0 +1,22 @@
+{
+  "name": "安全な登山靴",
+  "category": "tfc:sacks_n_such",
+  "icon": "sns:steel_toe_hiking_boots",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "鋼製のつま先のおかげで$(l:sns/hiking_boots)登山靴$()よりも安全です。残念ながら、安全帽を発明した人はまだいないようです。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "sns:crafting/steel_toe_hiking_boots",
+      "recipe2": "sns:crafting/black_steel_toe_hiking_boots"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "sns:crafting/blue_steel_toe_hiking_boots",
+      "recipe2": "sns:crafting/red_steel_toe_hiking_boots"
+    }
+  ],
+  "read_by_default": true
+}

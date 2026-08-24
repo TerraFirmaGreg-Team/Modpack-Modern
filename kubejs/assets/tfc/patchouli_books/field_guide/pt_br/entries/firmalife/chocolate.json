@@ -1,0 +1,26 @@
+{
+  "name": "Chocolate",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:textures/item/food/dark_chocolate.png",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)Fabricação de Chocolate$() requer algumas etapas de processamento, sem muita recompensa. É importante lembrar, ao jogar Firmalife, que ser um chocolateiro é para seu próprio prazer e diversão, e não para tentar extrair o máximo valor de qualquer informação fornecida."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Para iniciar o processamento do chocolate, os grãos de cacau devem primeiro ser $(thing)torrados$() em um $(l:firmalife/ovens)Forno$() para produzir $(thing)Grãos de Cacau Torrados$(). Em seguida, processe os grãos torrados com uma $(thing)Faca$() para dividi-los em $(thing)Cacau em Pó$() e $(thing)Manteiga de Cacau$()."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "A $(l:firmalife/mixing_bowl)Tigela de Mistura$() é usada para misturar cacau em pó, manteiga e adoçante (açúcar ou mel) para fazer $(thing)Misturas de Chocolate$(). A proporção de manteiga de cacau em pó determina o resultado:$(br)$(li)1 Pó, 1 Manteiga, 1 Adoçante: Chocolate ao Leite$()$(li)2 Pó, 1 Adoçante: Chocolate Amargo$()$(li)2 Manteiga, 1 Adoçante: Chocolate Branco$()"
+    },
+    {
+      "type": "tfc:drying_recipe",
+      "recipe": "firmalife:drying/dark_chocolate",
+      "text": "Por fim, o chocolate é seco em um $(l:firmalife/drying)Tapete de Secagem$() para fazer $(thing)Chocolate$()."
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 22
+}

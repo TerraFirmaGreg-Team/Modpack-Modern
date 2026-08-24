@@ -1,5 +1,4 @@
 {
-  "__comment__": "This file was automatically created by mcresources",
   "name": "Wyroby szklane",
   "category": "tfc:mechanics",
   "icon": "minecraft:glass",
@@ -19,6 +18,8 @@
     },
     {
       "type": "patchouli:multiblock",
+      "text": "Gdy szkło wystygnie, może zostać zebrane za pomocą $(l:mechanics/glassworking#saw)piły do szkła$().",
+      "border": true,
       "multiblock": {
         "mapping": {
           "C": "#tfc:glass_pouring_table",
@@ -32,9 +33,7 @@
             "CCCC"
           ]
         ]
-      },
-      "text": "Gdy szkło wystygnie, może zostać zebrane za pomocą $(l:mechanics/glassworking#saw)piły do szkła$().",
-      "border": true
+      }
     },
     {
       "type": "patchouli:text",
@@ -43,6 +42,8 @@
     },
     {
       "type": "patchouli:multiblock",
+      "text": "Gdy szkło wystygnie, może zostać zebrane za pomocą $(l:mechanics/glassworking#saw)piły do szkła$().",
+      "border": true,
       "multiblock": {
         "mapping": {
           "C": "#tfc:glass_basin_blocks",
@@ -60,20 +61,18 @@
             "   "
           ]
         ]
-      },
-      "text": "Gdy szkło wystygnie, może zostać zebrane za pomocą $(l:mechanics/glassworking#saw)piły do szkła$().",
-      "border": true
+      }
     },
     {
       "type": "patchouli:crafting",
+      "text": "$(thing)Brass plated blocks$() can be created by holding a $(thing)brass plate$() and $(item)$(k:key.use)$() on any $(thing)stone brick$().",
       "title": "Bloki do obróbki szkła",
-      "recipe": "tfc:crafting/white_kaolin_clay",
-      "text": "$(thing)Brass plated blocks$() can be created by holding a $(thing)brass plate$() and $(item)$(k:key.use)$() on any $(thing)stone brick$()."
+      "recipe": "tfc:crafting/white_kaolin_clay"
     },
     {
       "type": "patchouli:text",
-      "anchor": "coloring",
       "text": "Glass has a natural color based on the type of $(l:mechanics/glassworking)Glass Batch$() that was used. Other colors can be made using a $(l:mechanics/bowls)Bowl$().$(br2)To use, place the $(l:mechanics/bowls)Bowl$() on the ground, then $(item)$(k:key.use)$() the required $(thing)Powder$(). Before $(thing)Pouring$(), use the $(thing)Blowpipe$() on the bowl to add the powder to the batch.",
+      "anchor": "coloring",
       "title": "Barwienie szkła"
     },
     {

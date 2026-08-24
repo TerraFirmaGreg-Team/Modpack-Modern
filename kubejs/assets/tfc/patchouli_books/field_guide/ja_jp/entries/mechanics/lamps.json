@@ -1,0 +1,87 @@
+{
+  "name": "ランタン",
+  "category": "tfc:mechanics",
+  "icon": "tfc:metal/lamp/bismuth_bronze",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "ランタンは長期的な光源です。液体燃料を燃焼します。ランタンは壊れても燃料が残ります。バケツを使ってランタンに燃料を追加するには、$(item)$(k:key.use)$()を使用してください。次に、$(thing)火おこし器$()や火をつけることができるものを使って点火します。$(thing)オリーブオイル$()や$(thing)獣脂$()はランタンの燃料です。点灯したランタンに矢を射ると火災が発生することがあります。"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "Y"
+          ],
+          [
+            "0"
+          ]
+        ],
+        "mapping": {
+          "X": "tfc:metal/chain/copper[axis=y]",
+          "Y": "tfc:metal/lamp/copper[hanging=true,lit=true]"
+        }
+      },
+      "name": "ランタン",
+      "text": "チェーンに吊るされた点灯したランタン。",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/metal/lamp/bronze",
+      "text": "ランタンは$(l:mechanics/anvils)金床$()で鍛造され、$(l:mechanics/glassworking_applications#lamp_glass)ランタンガラス$()で完成されます。"
+    },
+    {
+      "type": "tfc:quern_recipe",
+      "anchor": "olives",
+      "recipe": "tfc:quern/olive",
+      "text": "ランタンの燃料の1つは$(thing)オリーブオイル$()です。製造の最初のステップは、オリーブペーストを作ることです。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/jute_net",
+      "text": "ジュートの網も必要になります。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)オリーブペースト$()と$(thing)水$()を$(l:mechanics/pot)鍋$()で煮て、$(thing)オリーブオイル水$()を作ります。それを$(thing)ジュートの網$()と共に$(l:mechanics/barrels)樽$()に密閉し、$(thing)オリーブオイル$()を生成します。オリーブオイルは、液体単位ごとにゲーム内で8時間燃焼します。"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "tallow",
+      "text": "もう1つのランタンの燃料は$(thing)獣脂$()です。作り方は、$(l:mechanics/pot)鍋$()で水と5個の$(thing)獣脂$()を調理することです。獣脂の燃焼時間は、ユニットごとにゲーム内で2時間です。$(l:mechanics/lighting#candles)ろうそく$()を作成するためにも使用できます。"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "0"
+          ]
+        ],
+        "mapping": {
+          "X": "tfc:metal/lamp/blue_steel[lit=true]"
+        }
+      },
+      "name": "溶岩ランタン",
+      "text": "溶岩は永遠に燃え続けますが、$(l:mechanics/steel#blue_steel)青鋼$()ランタンの中にのみ保持できます。",
+      "enable_visualize": false
+    },
+    {
+      "type": "tfc:anvil_recipe",
+      "recipe": "tfc:anvil/black_steel_chain",
+      "text": "$(thing)鎖$()はランタンを吊るすのに最適な方法で、$(l:mechanics/anvils)金床$()で鍛造できます。"
+    }
+  ],
+  "read_by_default": true,
+  "extra_recipe_mappings": {
+    "tag:tfc:lamps": 1
+  }
+}

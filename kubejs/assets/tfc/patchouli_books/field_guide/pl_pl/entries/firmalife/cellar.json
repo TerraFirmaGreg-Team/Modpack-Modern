@@ -1,0 +1,33 @@
+{
+  "name": "Piwnice",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:sealed_bricks",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "The $(thing)Cellar$() is a multiblock device controlled by a $(l:firmalife/climate_station)Climate Station$(). The Cellar multiblock's only requirement is that it be in an enclosed area surrounded by $(thing)Sealed Bricks$() or $(thing)Sealed Brick Doors$() on all sides. The Climate Station must be placed on the first level of the cellar, touching a wall."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock_id": "firmalife:cellar",
+      "name": "Przykładowa piwnica",
+      "text": "This is just one of many cellars that you could make!",
+      "enable_visualize": true
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/sealed_bricks",
+      "recipe2": "firmalife:crafting/sealed_door"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)Beeswax$() is obtained from $(l:firmalife/beekeeping)Beekeeping$().$(br)Cellars are used for $(l:firmalife/cheese#aging)Aging Cheese$()."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "The cellar is used for food preservation, for example by using $(l:firmalife/food_shelves)Food Shelves$() and $(l:firmalife/hangers)Hangers$(). The cellar performs better in environments with cooler average temperatures for food preservation. Below 0 degrees, decay modifiers work slightly better. Below -12 degrees, they perform much better."
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 3
+}

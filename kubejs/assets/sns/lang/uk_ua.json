@@ -16,7 +16,6 @@
   "item.sns.metal.horseshoes.blue_steel": "Підкови з синьої сталі",
   "item.sns.metal.horseshoes.red_steel": "Підкови з червоної сталі",
   "item.sns.metal.horseshoes.steel": "Підкови зі сталі",
-  "item.sns.mob_net": "Ловильна сітка",
   "item.sns.ore_sack": "Мішок для руд",
   "item.sns.pack_frame": "Каркас для рюкзака",
   "item.sns.quiver": "Сагайдак",
@@ -27,6 +26,7 @@
   "item.sns.steel_toe_hiking_boots": "Похідні чоботи зі сталі",
   "item.sns.straw_basket": "Солом'яний кошик",
   "item.sns.unfinished_leather_sack": "Незавершена шкіряний мішок",
+  "pack.sns.description": "Ресурси Sacks 'N Such",
   "sns.creative_tab.sacks": "Sacks 'N Such",
   "sns.disabled": "Вимкнено",
   "sns.enabled": "Увімкнено",
@@ -41,7 +41,9 @@
   "sns.status.mob_net.cannot_capture_size": "%s занадто великий для захоплення",
   "sns.status.mob_net.cannot_place": "Недостатньо місця для звільнення захоплених %s",
   "sns.status.sack.auto_pickup": "Підбір предметів %s",
+  "sns.tooltip.food_trait.lunchbox": "Ланчбокс зберігся",
   "sns.tooltip.hiking_boots.prevents_slow": "Запобігає сповільнення у високій траві",
+  "sns.tooltip.hiking_boots.step_up": "Піднятися на %s",
   "sns.tooltip.horseshoe.modifier": "Коли на коні:",
   "sns.tooltip.item_container.allowed_size": "Вміщує максимум розмір: %s",
   "sns.tooltip.item_container.slot_capacity": "Місткість слота: %s",
@@ -49,5 +51,6 @@
   "sns.tooltip.item_container.tooltip.inventory_interaction": "Взаємодія з інвентарем: %s",
   "sns.tooltip.item_container.tooltip.pickup": "Підбір предметів %s",
   "sns.tooltip.item_container.tooltip.shift": "Утримуйте (Shift) для інформації контейнера",
-  "sns.tooltip.item_container.tooltip.void": "Знищення предметів: %s"
+  "sns.tooltip.item_container.tooltip.void": "Знищення предметів: %s",
+  "sns.tooltip.lunchbox.selected_slot": "Вибраний слот: %s"
 }

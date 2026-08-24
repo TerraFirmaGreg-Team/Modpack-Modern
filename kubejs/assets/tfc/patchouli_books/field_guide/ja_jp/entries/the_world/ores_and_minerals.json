@@ -1,0 +1,1214 @@
+{
+  "name": "鉱石と鉱物",
+  "category": "tfc:the_world",
+  "icon": "tfc:ore/normal_hematite",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "TFCの鉱石と鉱物はバニラとは違い、鉱脈で生成されます。一つの鉱脈で鉱石が大量に採掘できますが、鉱脈は珍しいものであり、見つけるには$(l:mechanics/prospecting)探鉱$()が必要です。鉱石は、特定の種類の岩石や特定の標高に生成されます。つまり、適切な高度で適切な種類の岩石を見つけることが、鉱石を探す鍵となります。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "さらに、鉱石には$(thing)含有量$()が存在します。鉱石ブロックは低純度、中純度、高純度と区別され、鉱脈によって各ブロックの量が異なります。$(thing)高純度$()な鉱脈はより収益性が高くなります。$(br2)次のページからは、さまざまな種類の鉱石、その外観、および鉱石の場所についての解説です。"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "native_copper",
+      "text": "自然銅は$(thing)銅$()の鉱石です。標高y=40以上の$(l:the_world/geology#igneous_extrusive)火成噴出岩$()で見つかります。$(br2)また、$(thing)川$()の堆積物の中にも存在し、$(l:mechanics/panning)ふるい$()で採取できます。",
+      "title": "自然銅"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "デイサイト岩に含まれている自然銅鉱石。",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:ore/poor_native_copper/dacite"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:ore/normal_native_copper/dacite"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:ore/rich_native_copper/dacite"
+          }
+        }
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "native_gold",
+      "text": "自然金は$(thing)金$()の鉱石です。標高y=70未満で見つかりますが、より地下深くにある鉱脈の方が大きく、純度も高くなります。$(l:the_world/geology#igneous_extrusive)火成噴出岩$()および$(l:the_world/geology#igneous_intrusive)火成貫入岩$()で見つかります。$(br2)また、$(thing)川$()の堆積物の中にも存在し、$(l:mechanics/panning)ふるい$()で採取できます。",
+      "title": "自然金"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "閃緑岩に含まれている自然金鉱石。",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:ore/poor_native_gold/diorite"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:ore/normal_native_gold/diorite"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:ore/rich_native_gold/diorite"
+          }
+        }
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "native_silver",
+      "text": "自然銀は$(thing)銀$()の鉱石です。標高y=90以上で隆起地域の$(thing)花崗岩$()や$(thing)閃緑岩$()に小さな鉱脈が見つかります。より大きな鉱脈は、標高y=20以下の地下深くにある$(thing)花崗岩$()、$(thing)閃緑岩$()、$(thing)片岩$()、および$(thing)片麻岩$()で見つかります。$(br2)また、$(thing)川$()の堆積物の中にも存在し、$(l:mechanics/panning)ふるい$()で採取できます。",
+      "title": "自然銀"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "花崗岩に含まれる自然銀鉱石。",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:ore/poor_native_silver/granite"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:ore/normal_native_silver/granite"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:ore/rich_native_silver/granite"
+          }
+        }
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "tetrahedrite",
+      "text": "四面銅鉱は$(thing)銅$()の鉱石です。どの標高でも見つけることができますが、より地下深くにある鉱脈のほうが純度が高くなることが多いです。$(l:the_world/geology#metamorphic)変成岩$()で見つかります。",
+      "title": "四面銅鉱"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "片岩に含まれる四面銅鉱石。",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:ore/poor_tetrahedrite/schist"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:ore/normal_tetrahedrite/schist"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:ore/rich_tetrahedrite/schist"
+          }
+        }
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "malachite",
+      "text": "孔雀石は$(thing)銅$()の鉱石です。主に$(thing)大理石$()や$(thing)石灰岩$()、$(thing)白亜$()、および$(thing)苦灰石$()で見つかります。ほとんどの標高で見かりますが、より地下深くにある鉱脈の方が大きく、純度も高くなる事が多いです。",
+      "title": "孔雀石"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "大理石に含まれる孔雀石。",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:ore/poor_malachite/marble"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:ore/normal_malachite/marble"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:ore/rich_malachite/marble"
+          }
+        }
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "cassiterite",
+      "text": "錫石は$(thing)錫$()の鉱石です。標高y=80以上の隆起地域または岩脈にある$(l:the_world/geology#igneous_intrusive)火成貫入岩$()で見つかります。$(br2)また、$(thing)川$()の堆積物の中にも見つかり、$(l:mechanics/panning)ふるい$()で採取できます。",
+      "title": "錫石"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "閃緑岩に含まれる錫鉱石。",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:ore/poor_cassiterite/diorite"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:ore/normal_cassiterite/diorite"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:ore/rich_cassiterite/diorite"
+          }
+        }
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "bismuthinite",
+      "text": "輝蒼鉛鉱は$(thing)蒼鉛$()の鉱石です。表面近くの$(l:the_world/geology#sedimentary)堆積岩$()や、地下深くの$(l:the_world/geology#igneous_intrusive)火成貫入岩$()により大きくて純度の高い鉱脈が見つかります。",
+      "title": "輝蒼鉛鉱"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "頁岩に含まれる輝蒼鉛鉱石。",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:ore/poor_bismuthinite/shale"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:ore/normal_bismuthinite/shale"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:ore/rich_bismuthinite/shale"
+          }
+        }
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "garnierite",
+      "text": "珪ニッケル鉱は$(thing)ニッケル$()の鉱石です。標高y=0以下で見つかります。主に地下深くの$(thing)斑れい岩$()で見つかります。より小さくて珍しい鉱脈は、どの$(l:the_world/geology#igneous_intrusive)火成貫入岩$()でも見つかることがあります。",
+      "title": "珪ニッケル鉱"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "斑れい岩に含まれる珪ニッケル鉱石。",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:ore/poor_garnierite/gabbro"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:ore/normal_garnierite/gabbro"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:ore/rich_garnierite/gabbro"
+          }
+        }
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "hematite",
+      "text": "赤鉄鉱は$(thing)鉄$()の鉱石です。地表近くの$(l:the_world/geology#igneous_extrusive)火成噴出岩$()で大きな鉱脈として見つかります。",
+      "title": "赤鉄鉱"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "安山岩に含まれる赤鉄鉱石。",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:ore/poor_hematite/andesite"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:ore/normal_hematite/andesite"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:ore/rich_hematite/andesite"
+          }
+        }
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "magnetite",
+      "text": "磁鉄鉱は$(thing)鉄$()の鉱石です。地表近くの$(l:the_world/geology#sedimentary)堆積岩$()で大きな鉱脈として見つかります。",
+      "title": "磁鉄鉱"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "石灰岩に含まれる磁鉄鉱石。",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:ore/poor_magnetite/limestone"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:ore/normal_magnetite/limestone"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:ore/rich_magnetite/limestone"
+          }
+        }
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "limonite",
+      "text": "褐鉄鉱は$(thing)鉄$()の鉱石です。地表近くの$(l:the_world/geology#sedimentary)堆積岩$()で大きな鉱脈として見つかります。",
+      "title": "褐鉄鉱"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "白亜に含まれる褐鉄鉱石。",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:ore/poor_limonite/chalk"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:ore/normal_limonite/chalk"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:ore/rich_limonite/chalk"
+          }
+        }
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "sphalerite",
+      "text": "閃亜鉛鉱は$(thing)亜鉛$()の鉱石です。地表近くの$(l:the_world/geology#igneous_extrusive)火成噴出岩$()で小さく純度も低い鉱脈が見つかり、地下深くの$(l:the_world/geology#igneous_intrusive)火成貫入岩$()で大きく純度も高い鉱脈が見つかります。",
+      "title": "閃亜鉛鉱"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "珪岩に含まれる閃亜鉛鉱石。",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:ore/poor_sphalerite/quartzite"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:ore/normal_sphalerite/quartzite"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:ore/rich_sphalerite/quartzite"
+          }
+        }
+      ]
+    },
+    {
+      "type": "patchouli:spotlight",
+      "anchor": "lignite",
+      "item": "tfc:ore/lignite",
+      "title": "褐炭",
+      "link_recipes": false,
+      "text": "褐炭は低品位の$(thing)石炭$()鉱石です。地表近くの$(l:the_world/geology#sedimentary)堆積岩$()で非常に大きく平らに堆積物として見つかります。"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "0"
+          ]
+        ],
+        "mapping": {
+          "X": "tfc:ore/lignite/dolomite"
+        }
+      },
+      "name": "",
+      "text": "苦灰岩に含まれる褐炭。",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:spotlight",
+      "anchor": "bituminous_coal",
+      "item": "tfc:ore/bituminous_coal",
+      "title": "瀝青炭",
+      "link_recipes": false,
+      "text": "瀝青炭は中品位の$(thing)石炭$()鉱石です。地表近くの$(l:the_world/geology#sedimentary)堆積岩$()で非常に大きく平らに堆積物として見つかります。"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "0"
+          ]
+        ],
+        "mapping": {
+          "X": "tfc:ore/bituminous_coal/chert"
+        }
+      },
+      "name": "",
+      "text": "角岩に含まれる瀝青炭。",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:spotlight",
+      "anchor": "kaolinite",
+      "item": "tfc:kaolin_clay",
+      "title": "カオリナイト",
+      "link_recipes": false,
+      "text": "カオリナイトは、$(l:mechanics/fire_clay)耐火粘土$()に使用される柔らかい$(thing)鉱物$()です。高原、古代の山岳地帯、高地の高い標高で生成され、$(l:the_world/climate#temperature)気温$()が18°C以上、$(l:the_world/climate#rainfall)降水量$()が300mm以上の場所で見つかります。$(thing)ハエマンサス$()の花はカオリン粘土の上に育ちます。"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "カオリン粘土の様々な種類",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:plant/blood_lily",
+            "Y": "tfc:kaolin_clay_grass"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:plant/blood_lily",
+            "Y": "tfc:red_kaolin_clay"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:plant/blood_lily",
+            "Y": "tfc:white_kaolin_clay"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:plant/blood_lily",
+            "Y": "tfc:pink_kaolin_clay"
+          }
+        }
+      ]
+    },
+    {
+      "type": "patchouli:spotlight",
+      "anchor": "graphite",
+      "item": "tfc:ore/graphite",
+      "title": "黒鉛",
+      "link_recipes": false,
+      "text": "黒鉛は、$(l:mechanics/fire_clay)耐火粘土$()に使用される$(thing)鉱物$()です。標高y=60未満の$(thing)片麻岩$()、$(thing)大理石$()、$(thing)珪岩$()、および$(thing)片岩$()の岩石で見つかります。"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "0"
+          ]
+        ],
+        "mapping": {
+          "X": "tfc:ore/graphite/gneiss"
+        }
+      },
+      "name": "",
+      "text": "片麻岩に含まれる黒鉛。",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:spotlight",
+      "anchor": "cinnabar",
+      "item": "tfc:ore/cinnabar",
+      "title": "辰砂",
+      "link_recipes": false,
+      "text": "辰砂は、$(l:mechanics/quern)石臼$()で挽くことによって$(thing)レッドストーンダスト$()を得ることができる$(thing)鉱物$()です。地下深くの$(thing)珪岩$()、$(thing)片麻岩$()、$(thing)千枚岩$()、および$(thing)片岩$()の岩石で見つかります。"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "0"
+          ]
+        ],
+        "mapping": {
+          "X": "tfc:ore/cinnabar/quartzite"
+        }
+      },
+      "name": "",
+      "text": "珪岩に含まれる辰砂。",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:spotlight",
+      "anchor": "cryolite",
+      "item": "tfc:ore/cryolite",
+      "title": "氷晶石",
+      "link_recipes": false,
+      "text": "氷晶石は、$(l:mechanics/quern)石臼$()で挽くことによって$(thing)レッドストーンダスト$()を得ることができる$(thing)鉱物$()です。地下深くの$(thing)花崗岩$()および$(thing)閃緑岩$()の鉱脈で見つかります。"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "0"
+          ]
+        ],
+        "mapping": {
+          "X": "tfc:ore/cryolite/granite"
+        }
+      },
+      "name": "",
+      "text": "花崗岩に含まれる氷晶石。",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:spotlight",
+      "anchor": "saltpeter",
+      "item": "tfc:ore/saltpeter",
+      "title": "硝石",
+      "link_recipes": false,
+      "text": "硝石は、$(l:mechanics/quern)石臼$()で挽くことによって$(thing)火薬$()の製作に使用できる$(thing)鉱物$()です。地表近くの$(l:the_world/geology#sedimentary)堆積岩$()で非常に大きく平らに堆積物として見つかります。"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "0"
+          ]
+        ],
+        "mapping": {
+          "X": "tfc:ore/saltpeter/shale"
+        }
+      },
+      "name": "",
+      "text": "頁岩に含まれる硝石。",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:spotlight",
+      "anchor": "sulfur",
+      "item": "tfc:ore/sulfur",
+      "title": "硫黄",
+      "link_recipes": false,
+      "text": "硫黄は、$(l:mechanics/quern)石臼$()で挽くことによって$(thing)火薬$()の製作に使用できる$(thing)鉱物$()です。地下深くの$(l:the_world/geology#metamorphic)変成岩$()や$(l:the_world/geology#igneous_intrusive)火成貫入岩$()の溶岩近くで、まばらではあるものの大きくて豊富な鉱脈で見つかります。"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "0"
+          ]
+        ],
+        "mapping": {
+          "X": "tfc:ore/sulfur/gabbro"
+        }
+      },
+      "name": "",
+      "text": "斑れい岩に含まれる硫黄。",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:spotlight",
+      "anchor": "sylvite",
+      "item": "tfc:ore/sylvite",
+      "title": "カリ岩塩",
+      "link_recipes": false,
+      "text": "カリ岩塩は、$(l:mechanics/quern)石臼$()で挽くことによって$(l:mechanics/fertilizers)肥料$()として使用できる$(thing)鉱物$()です。地表面近くの$(thing)頁岩$()、$(thing)泥岩$()、および$(thing)角岩$()に非常に大きく平らな堆積物として見つかります。"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "0"
+          ]
+        ],
+        "mapping": {
+          "X": "tfc:ore/sylvite/chert"
+        }
+      },
+      "name": "",
+      "text": "角岩に含まれるカリ岩塩。",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:spotlight",
+      "anchor": "borax",
+      "item": "tfc:ore/borax",
+      "title": "ホウ砂",
+      "link_recipes": false,
+      "text": "ホウ砂は、$(l:mechanics/quern)石臼$()で挽くことによって$(l:mechanics/flux)融剤$()として使用できる$(thing)鉱物$()です。地表近くの$(thing)泥岩$()、$(thing)石灰岩$()、および$(thing)頁岩$()で非常に大きく平らな堆積物として見つかります。"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "0"
+          ]
+        ],
+        "mapping": {
+          "X": "tfc:ore/borax/shale"
+        }
+      },
+      "name": "",
+      "text": "頁岩に含まれるホウ砂",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:spotlight",
+      "anchor": "gypsum",
+      "item": "tfc:ore/gypsum",
+      "title": "石膏",
+      "link_recipes": false,
+      "text": "石膏は装飾用の$(thing)鉱物$()であり、$(l:mechanics/advanced_building_materials#alabaster)雪花石膏$()の製作に使用されます。地表近くの$(l:the_world/geology#sedimentary)堆積岩$()で非常に大きく平らな堆積物として見つかります。"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "0"
+          ]
+        ],
+        "mapping": {
+          "X": "tfc:ore/gypsum/chalk"
+        }
+      },
+      "name": "",
+      "text": "白亜に含まれる石膏",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:spotlight",
+      "anchor": "halite",
+      "item": "tfc:ore/halite",
+      "title": "岩塩",
+      "link_recipes": false,
+      "text": "岩塩は$(l:mechanics/quern)石臼$()で挽くことによって$(thing)塩$()になる$(thing)鉱物$()です。これは重要な$(l:mechanics/decay#salting)保存料$()です。地表近くの$(l:the_world/geology#sedimentary)堆積岩$()で非常に大きく平らな堆積物として見つかります。"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "0"
+          ]
+        ],
+        "mapping": {
+          "X": "tfc:ore/halite/chalk"
+        }
+      },
+      "name": "",
+      "text": "白亜に含まれる岩塩。",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:spotlight",
+      "anchor": "emerald",
+      "item": "tfc:ore/emerald",
+      "title": "エメラルド",
+      "link_recipes": false,
+      "text": "エメラルドは装飾用の$(l:mechanics/gems)宝石$()です。それはとても美しく、この信じられないほど孤独な世界で他の誰かを見つけることができれば、彼らと取引することもできるかもしれません...$(br2)それは最大で100ブロックの高さまでの細い垂直の鉱脈で見つかります。$(l:the_world/geology#igneous_intrusive)火成貫入岩$()で見つかります。"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "0"
+          ]
+        ],
+        "mapping": {
+          "X": "tfc:ore/emerald/diorite"
+        }
+      },
+      "name": "",
+      "text": "閃緑岩に含まれるエメラルド",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:spotlight",
+      "anchor": "diamond",
+      "item": "tfc:ore/diamond",
+      "title": "キンバーライト",
+      "link_recipes": false,
+      "text": "キンバーライトは、装飾用であり非常に価値のある$(l:mechanics/gems)宝石$()です。それは$(l:https://en.wikipedia.org/wiki/Volcanic_pipe)キンバーライトパイプ$()と呼ばれる細い垂直の鉱脈で見つかり、最大で100ブロックの高さに達することがあります。$(thing)斑れい岩$()でのみ見つかります。"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "0"
+          ]
+        ],
+        "mapping": {
+          "X": "tfc:ore/diamond/gabbro"
+        }
+      },
+      "name": "",
+      "text": "斑れい岩に含まれるキンバーライト。",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:spotlight",
+      "anchor": "lapis_lazuli",
+      "item": "tfc:ore/lapis_lazuli",
+      "title": "ラピスラズリ",
+      "link_recipes": false,
+      "text": "ラピスラズリは、装飾用の$(thing)鉱物$()であり、$(l:mechanics/dye)青色の染料$()の製作に使用されます。標高y=-20からy=80の間の$(thing)石灰岩$()と$(thing)大理石$()の中で、大きいけれどもまばらな鉱脈として見つかります。"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "0"
+          ]
+        ],
+        "mapping": {
+          "X": "tfc:ore/lapis_lazuli/marble"
+        }
+      },
+      "name": "",
+      "text": "大理石に含まれるラピスラズリ",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:spotlight",
+      "anchor": "amethyst",
+      "item": "tfc:ore/amethyst",
+      "title": "アメジスト",
+      "link_recipes": false,
+      "text": "アメジストは、$(l:mechanics/glassworking)ガラス$()の製作に使用できる装飾用の$(thing)鉱物$()です。標高y=40以上の川の下の$(thing)堆積岩$()および$(thing)変成岩$()の中で見つかります。"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "0"
+          ]
+        ],
+        "mapping": {
+          "X": "tfc:ore/amethyst/marble"
+        }
+      },
+      "name": "",
+      "text": "大理石に含まれるアメジスト",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:spotlight",
+      "anchor": "opal",
+      "item": "tfc:ore/opal",
+      "title": "オパール",
+      "link_recipes": false,
+      "text": "オパールは、装飾用の$(thing)鉱物$()です。標高y=40以上の川の下にある$(thing)堆積岩$()および$(thing)火成噴出岩$()の中で見つかります。"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "0"
+          ]
+        ],
+        "mapping": {
+          "X": "tfc:ore/opal/basalt"
+        }
+      },
+      "name": "",
+      "text": "玄武岩に含まれるオパール",
+      "enable_visualize": false
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 1,
+  "extra_recipe_mappings": {
+    "tfc:ore/small_native_copper": 2,
+    "tfc:ore/poor_native_copper": 2,
+    "tfc:ore/normal_native_copper": 2,
+    "tfc:ore/rich_native_copper": 2,
+    "tfc:ore/small_native_gold": 4,
+    "tfc:ore/poor_native_gold": 4,
+    "tfc:ore/normal_native_gold": 4,
+    "tfc:ore/rich_native_gold": 4,
+    "tfc:ore/small_native_silver": 6,
+    "tfc:ore/poor_native_silver": 6,
+    "tfc:ore/normal_native_silver": 6,
+    "tfc:ore/rich_native_silver": 6,
+    "tfc:ore/small_tetrahedrite": 8,
+    "tfc:ore/poor_tetrahedrite": 8,
+    "tfc:ore/normal_tetrahedrite": 8,
+    "tfc:ore/rich_tetrahedrite": 8,
+    "tfc:ore/small_malachite": 10,
+    "tfc:ore/poor_malachite": 10,
+    "tfc:ore/normal_malachite": 10,
+    "tfc:ore/rich_malachite": 10,
+    "tfc:ore/small_cassiterite": 12,
+    "tfc:ore/poor_cassiterite": 12,
+    "tfc:ore/normal_cassiterite": 12,
+    "tfc:ore/rich_cassiterite": 12,
+    "tfc:ore/small_bismuthinite": 14,
+    "tfc:ore/poor_bismuthinite": 14,
+    "tfc:ore/normal_bismuthinite": 14,
+    "tfc:ore/rich_bismuthinite": 14,
+    "tfc:ore/small_garnierite": 16,
+    "tfc:ore/poor_garnierite": 16,
+    "tfc:ore/normal_garnierite": 16,
+    "tfc:ore/rich_garnierite": 16,
+    "tfc:ore/small_hematite": 18,
+    "tfc:ore/poor_hematite": 18,
+    "tfc:ore/normal_hematite": 18,
+    "tfc:ore/rich_hematite": 18,
+    "tfc:ore/small_magnetite": 20,
+    "tfc:ore/poor_magnetite": 20,
+    "tfc:ore/normal_magnetite": 20,
+    "tfc:ore/rich_magnetite": 20,
+    "tfc:ore/small_limonite": 22,
+    "tfc:ore/poor_limonite": 22,
+    "tfc:ore/normal_limonite": 22,
+    "tfc:ore/rich_limonite": 22,
+    "tfc:ore/small_sphalerite": 24,
+    "tfc:ore/poor_sphalerite": 24,
+    "tfc:ore/normal_sphalerite": 24,
+    "tfc:ore/rich_sphalerite": 24,
+    "tfc:ore/lignite": 26,
+    "tfc:ore/bituminous_coal": 28,
+    "tfc:red_kaolin_clay": 30,
+    "tfc:pink_kaolin_clay": 30,
+    "tfc:white_kaolin_clay": 30,
+    "tfc:kaolin_clay_grass": 30,
+    "tfc:kaolin_clay": 30,
+    "tfc:ore/graphite": 32,
+    "tfc:ore/cinnabar": 34,
+    "tfc:ore/cryolite": 36,
+    "tfc:ore/saltpeter": 38,
+    "tfc:ore/sulfur": 40,
+    "tfc:ore/sylvite": 42,
+    "tfc:ore/borax": 44,
+    "tfc:ore/gypsum": 46,
+    "tfc:ore/halite": 48,
+    "tfc:ore/emerald": 50,
+    "tfc:ore/diamond": 52,
+    "tfc:ore/lapis_lazuli": 54,
+    "tfc:ore/amethyst": 56,
+    "tfc:ore/opal": 58
+  }
+}

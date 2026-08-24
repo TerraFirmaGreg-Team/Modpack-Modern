@@ -1,0 +1,17 @@
+{
+  "name": "モブネット",
+  "category": "tfc:sacks_n_such",
+  "icon": "sns:mob_net",
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "sns:crafting/mob_net",
+      "text": "モブネットは小さなモブを捕まえるのに非常に便利です。主に鳥や、牛などの大型モブの子供などを運搬するために最も役立ちます。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Modpack作成者や追加のモブを追加したい方は、エンティティタグ$(bold)sns:netable_mobs$()を参照してください。"
+    }
+  ],
+  "read_by_default": true
+}

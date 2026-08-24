@@ -193,6 +193,7 @@
 	"block.createdeco.iron_door": "Drzwi z kutego żelaza",
 	"block.createdeco.iron_facade": "Fasada z kutego żelaza",
 	"block.createdeco.iron_hull": "Kadłub pociągu z kutego żelaza",
+	"block.createdeco.iron_ladder": "Żelazna drabina",
 	"block.createdeco.iron_mesh_fence": "Siatka z kutego żelaza",
 	"block.createdeco.iron_sheet_metal": "Blacha z kutego żelaza",
 	"block.createdeco.iron_support": "Podpora z kutego żelaza",
@@ -412,6 +413,5 @@
 	"item.createdeco.netherite_coin": "Moneta z niebieskiej stali",
 	"item.createdeco.netherite_coinstack": "Stos monet z niebieskiej stali",
 	"item.createdeco.zinc_coin": "Cynkowa moneta",
-	"item.createdeco.zinc_coinstack": "Stos monet z cynku",
-	"item.createdeco.zinc_sheet": "Arkusz (Cynk)"
+	"item.createdeco.zinc_coinstack": "Stos monet z cynku"
 }

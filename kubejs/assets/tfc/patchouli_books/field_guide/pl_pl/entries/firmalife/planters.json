@@ -1,0 +1,83 @@
+{
+  "name": "Donice",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:large_planter",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "anchor": "planters",
+      "text": "$(thing)Planters$() are used to grow crops inside a $(l:firmalife/greenhouse)Greenhouse$(). To see the status of a planter, you can look at it while holding a $(thing)Hoe$(). Crops in planters consume $(l:mechanics/fertilizers)Nutrients$() in a similar way to $(l:mechanics/crops)Crops$(). Planters should be placed inside a valid Greenhouse and activated with a $(l:firmalife/climate_station)Climate Station$(). Planters need at least some natural sunlight to work."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/watering_can",
+      "text": "Planters must be $(thing)Watered$() to grow. This is done with a $(thing)Watering Can$(), crafted from a $(thing)Wooden Bucket$(), a container of $(thing)Water$() and $(thing)Lumber$(). Press $(item)$(k:key.use)$() with it to water nearby planters. Refill it by pressing $(item)$(k:key.use)$() on a water source."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/large_planter",
+      "text": "$(thing)Large Planters$() are the most simple kind of planter. They grow a single crop from seed, and are harvested with $(item)$(k:key.use)$() when mature."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Large Planters can grow $(thing)Green Beans$(), $(thing)Tomatoes$(), $(thing)Sugarcane$(), $(thing)Jute$(), and $(thing)Grains$(). However, to grow Grains, you need a $(thing)Copper$() or better Greenhouse."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/quad_planter",
+      "text": "$(thing)Quad Planters$() grow four individual crops at once. These crops all draw from the same nutrient pool, and can be harvested individually with $(item)$(k:key.use)$() when mature."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Quad Planters can grow $(thing)Beets$(), $(thing)Cabbage$(), $(thing)Carrots$(), $(thing)Garlic$(), $(thing)Onions$(), $(thing)Potatoes$(), and $(thing)Soybeans$(). These crops can be grown in any greenhouse type."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/bonsai_planter",
+      "text": "$(thing)Bonsai Planters$() grow small fruit trees from their saplings. The fruit can be picked with $(item)$(k:key.use)$()."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Bonsai Planters can grow any fruit tree type, except $(thing)Bananas$(), which need a $(thing)Hanging Planter$(). They all consume Nitrogen as their main nutrient. They need an $(thing)Iron$() or better greenhouse to grow."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/hanging_planter",
+      "text": "$(thing)Hanging Planters$() grow crops upside down. When mature, they can be harvested with $(item)$(k:key.use)$()."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Hanging Planters grow $(thing)Squash$(), from their seeds, and $(thing)Bananas$(), from their saplings. Squash can be grown in any greenhouse, but Bananas require an $(thing)Iron$() or better greenhouse to grow. Hanging planters need to anchor to a solid block above them."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/trellis_planter",
+      "text": "$(thing)Trellis Planters$() grow berry bushes. Berries can be picked with $(item)$(k:key.use)$()."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Trellis Planters have the unique property of $(thing)propagating$() berry bushes. If a trellis planter is placed on top of another, and the one below has a mature berry bush, it has a chance to grow upwards into the next one. Trellis planters can grow any berry bush except $(thing)Cranberries$(), but require an $(thing)Iron$() or better greenhouse to work. Bushes prefer Nitrogen."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/hydroponic_planter",
+      "text": "$(thing)Hydroponic Planters$() grow rice and cranberry bushes. They work the same as a quad planter, except that they do not need to be watered."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Hydroponic Planters must instead, have a $(li)$(l:firmalife/irrigation)Sprinkler Pipe$() below them that is supplying water. Without the pipe they will not grow. There is no hard limit to how many hydroponic planters may be fed by one station."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/sweeper",
+      "text": "$(thing)Sweepers$() are used to harvest planters other than Quad and Hydroponic planters. They must be connected to a rotating $(thing)Axle$() on their bottom face."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/picker",
+      "text": "$(thing)Pickers$() can be powered via redstone signal from above. They extend down to pick the crops from Quad and Hydroponic planters."
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 9
+}

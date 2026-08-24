@@ -1,0 +1,31 @@
+{
+  "name": "Ciasto",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:textures/item/food/cooked_pie.png",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Firmalife allows the creation of a variety of delectable baked goods. This chapter will give you all you need to start eating delicious and creative meals for breakfast, lunch, and dinner."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)Butter is the base of many such foods. Using a $(l:firmalife/mixing_bowl)Mixing Bowl$(), combine 1000 mB of $(thing)Cream$() with one item of $(thing)Salt$(). Cream is made by sealing 1000 mB of milk in a barrel with a $(l:mechanics/firmalife#cheesecloth)Cheesecloth$()."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "One useful meal is the $(thing)Pie$(). In your mixing bowl, combine butter, flower, and a sweetener (sugar, honey) to make $(thing)Pie Dough$(). To directly make $(thing)Pumpkin Pie$(), mix in an egg, two pumpkin chunks, flour, and sweetener. Craft it with a $(thing)Pie Pan$() and bake it in an $(l:firmalife/ovens)Oven$() to complete the recipe."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/raw_pumpkin_pie",
+      "text": "$(thing)Pie Pans$() can be smithed in an Anvil from $(thing)Cast Iron$()."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/filled_pie",
+      "text": "Pie Dough, Preserves, and a Pie Pan will net you a $(thing)Filled Pie$(), which can then be finished in the oven for a delicious pie."
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 25
+}

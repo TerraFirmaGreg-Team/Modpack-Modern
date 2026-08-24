@@ -2,7 +2,6 @@
 	"name": "Що таке Безодня?",
 	"category": "tfc:beneath",
 	"icon": "minecraft:deepslate",
-	"priority": true,
 	"pages": [
 		{
 			"type": "patchouli:text",
@@ -23,5 +22,6 @@
 			"text": "Щоб повернутися, стань прямо під стельовим бедроком так само, як ти входив.$(br2)Добре буде $(thing)зробити позначку$() там, де ти зайшов, щоб завжди мати змогу повернутися в те саме місце верхнього світу, коли захочеш піти."
 		}
 	],
-	"read_by_default": true
+	"read_by_default": true,
+	"priority": true
 }

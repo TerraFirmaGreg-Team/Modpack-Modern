@@ -1,0 +1,49 @@
+{
+  "name": "洗矿槽",
+  "category": "tfc:mechanics",
+  "icon": "tfc:textures/gui/book/icons/sluice.png",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)洗矿槽$()是一种用来处理$(thing)矿石沉积物$()的装置，其产物和$(l:mechanics/panning)淘金盘$()一致，但产出各物品的几率不同。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/wood/sequoia_sluice",
+      "text": "使用木棍和木材制作洗矿槽。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "洗矿槽被放置后会占据两个方块。为了让它正常工作，水必须流过洗矿槽的顶部并从底部流出。如果水看起来流过了整个洗矿槽，就表示它在正常工作。流进洗矿槽的水必须是水流的最后一格水，且在洗矿槽的出口处必须有一个空方块让水能够流进去。"
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "tfc:textures/gui/book/tutorial/sluice_cross.png"
+      ],
+      "text": "一个正确安装的洗矿槽。",
+      "border": true
+    },
+    {
+      "type": "patchouli:text",
+      "text": "要使用洗矿槽，只需要把矿石沉积物方块以物品形式丢到上游水流中，让水流把物品冲进洗矿槽，沉积物会出现在洗矿槽中。一段时间之后，洗矿的产物就有可能从下游吐出。"
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "tfc:textures/gui/book/tutorial/sluice_in_use.png"
+      ],
+      "text": "一个正常工作的、里面有沉积物的洗矿槽。",
+      "border": true
+    },
+    {
+      "type": "patchouli:text",
+      "text": "洗矿槽会产出三种不同的产物：$(thing)矿石$()、$(thing)石子$()和$(l:mechanics/gems)宝石$()。$(br)$(li)矿石：55%几率$(li)石子：22.5%几率$(li)宝石：0.9%几率$()，每种岩石类型都会有一种独有的宝石可能出现。",
+      "title": "洗矿产物"
+    }
+  ],
+  "read_by_default": true,
+  "extra_recipe_mappings": {
+    "tag:tfc:sluices": 0
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "name": "Beekeeping",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:beehive",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)Beehives$() are a place to house bees. Beehives need $(thing)Beehive Frames$() inside them for the bees to live. Removing frames from an active hive will cause the bees to attack you, unless done at night, or with a $(thing)Firepit$() underneath the hive active. Beehives can share flowers. The benefit of flowers diminishes after 60 flowers."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/beehive",
+      "recipe2": "firmalife:crafting/beehive_frame"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Beehives know about the area in a 5 block radius from them. If there are at least 10 flowers around the hive, there is a chance an empty frame will be populated with a $(thing)Queen$(). This is indicated by bee particles flying around the hive. Having 4 empty frames in a hive greatly increases the chances of bees moving in."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "If a beehive has two frames with queens, and an empty frame, the two colonies have a chance of $(thing)Breeding$() and producing a new queen in the empty frame. This has the effect of passing on the $(thing)Abilities$() of each parent to the offspring. Abilities are different traits bees have that change how they effect the world around them. They are on a scale of 1-10, with 10 being the max."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/honey_jar_open",
+      "text": "Bees also produce $(thing)Honey$(). Using $(item)$(k:key.use)$() with an Empty Jar on a hive that visibly has honey gives you a $(thing)Honey Jar$(). Opening a Honey Jar gives you $(thing)Raw Honey$(), a $(thing)Sugar$() substitute."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Pressing $(item)$(k:key.use)$() a filled frame in your inventory with a $(thing)Knife$() gives you $(thing)Beeswax$(), which has many uses. However, this kills the queen inside the frame so be careful!"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/treated_lumber",
+      "text": "The most important use of beeswax is in creating $(thing)Treated Lumber$()."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(li)Bees can help fertilize planters!$()$(li)Scraping a frame sacrifices the queen. Be smart!$()$(li)Being wet prevents bees from attacking you.$()",
+      "title": "Bee Tips"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(li)$(thing)Hardiness$(): Allows bees to produce honey at lower temperatures. Hardiness 10 allows up to -16°C, whereas Hardiness 1 allows up to 2°C.$()$(li)$(thing)Production$(): Improves the speed of honey production.$()$(li)$(thing)Mutant$(): Increases variability in the traits passed during breeding$().",
+      "title": "List of Abilities"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(li)$(thing)Fertility$(): Increases likelihood of breeding.$()$(li)$(thing)Crop Affinity$(): Likelihood of spreading a small amount of nutrients to crops.$()$(li)$(thing)Nature Restoration$(): Causes new flowers and lilypads to spawn around the hive.$()$(li)$(thing)Calmness$(): Decreases likelihood of bees attacking you$()."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Bees with high Mutant ability have a chance of developing a $(thing)Genetic Disease$(). Diseased bees pass on their disease to their offspring, and don't produce honey."
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 10
+}

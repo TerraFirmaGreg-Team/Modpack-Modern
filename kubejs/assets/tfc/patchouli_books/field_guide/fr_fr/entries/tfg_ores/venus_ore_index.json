@@ -7,15 +7,13 @@
   "secret": false,
   "pages": [
     {
-      "Type": "patchouli:text",
+      "type": "patchouli:text",
       "text": "Voici l'$(thing)Index des minerais$() pour $(thing)Venus$(). Tous les minerais y sont rangé dans l'ordre alphabétique en anglais du type de veine le plus riche au plus pauvre. Vous pouvez cliquer dessus pour en apprendre plus sur chaque veine.",
-      "title": "Index des minerais de Vénus",
-      "type": "patchouli:text"
+      "title": "Index des minerais de Vénus"
     },
     {
-      "Type": "patchouli:text",
-      "text": "$(li)Halite: $(l:tfg_ores/venus_vein_index#venus_manual_salt)80%$(/l)$()$(li)Lépidolite: $(l:tfg_ores/venus_vein_index#venus_manual_salt)5%$(/l)$()$(li)Pyrite: $(l:tfg_ores/venus_vein_index#venus_manual_sulfur)15%$(/l)$()$(li)Sphalerite: $(l:tfg_ores/venus_vein_index#venus_manual_sulfur)5%$(/l)$()$(li)Spodumène: $(l:tfg_ores/venus_vein_index#venus_manual_salt)5%$(/l)$()$(li)Sulfur: $(l:tfg_ores/venus_vein_index#venus_manual_sulfur)80%$(/l)$()$(li)Sylvite: $(l:tfg_ores/venus_vein_index#venus_manual_salt)10%$(/l)$()",
-      "type": "patchouli:text"
+      "type": "patchouli:text",
+      "text": "$(li)Halite: $(l:tfg_ores/venus_vein_index#venus_manual_salt)80%$(/l)$()$(li)Lépidolite: $(l:tfg_ores/venus_vein_index#venus_manual_salt)5%$(/l)$()$(li)Pyrite: $(l:tfg_ores/venus_vein_index#venus_manual_sulfur)15%$(/l)$()$(li)Sphalerite: $(l:tfg_ores/venus_vein_index#venus_manual_sulfur)5%$(/l)$()$(li)Spodumène: $(l:tfg_ores/venus_vein_index#venus_manual_salt)5%$(/l)$()$(li)Sulfur: $(l:tfg_ores/venus_vein_index#venus_manual_sulfur)80%$(/l)$()$(li)Sylvite: $(l:tfg_ores/venus_vein_index#venus_manual_salt)10%$(/l)$()"
     }
   ],
   "sortnum": 8

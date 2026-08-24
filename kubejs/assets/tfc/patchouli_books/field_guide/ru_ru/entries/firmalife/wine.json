@@ -1,0 +1,107 @@
+{
+  "name": "Виноделие",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:textures/item/food/white_grapes.png",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)Виноделие$() — это наука превращения винограда в алкоголь.  Требуется время на сбор ресурсов, их обработку, а также на $(thing)наслаждение$() результатом. Обратите внимание, что вино в Firmalife (само по себе) не имеет особого применения помимо обычного алкоголя TFC. Вы должны делать его только если хотите $(thing)повеселиться$()."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "firmalife:plant/wild_red_grapes",
+      "link_recipes": false,
+      "text": "Красный виноград произрастает при температуре 0-30°C и количестве осадков 125-500, то есть почти на всей обитаемой территории."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "firmalife:plant/wild_white_grapes",
+      "link_recipes": false,
+      "text": "Белый виноград произрастает при температуре 0-30°C и количестве осадков 125-500, то есть почти на всей обитаемой территории."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/grape_trellis_post",
+      "text": "Виноград должен выращиваться на шпалерах, построенных из этих специальных столбов и джутового волокна."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Чтобы построить шпалеру, установите два столба друг на друга. Переместитесь на два блока влево или вправо и повторите действие. Затем, $(item)$(k:key.use)$() боковую сторону одного из верхних и нижних столбов с помощью $(thing)джутового волокна$(), чтобы натянуть между столбами линии. Виноградные шпалеры могут быть соединены горизонтально, чтобы создать ряды винограда."
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "Виноградная шпалера.",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "XYX"
+            ],
+            [
+              "X0X"
+            ]
+          ],
+          "mapping": {
+            "X": "firmalife:grape_trellis_post[axis=x,string_plus=true,string_minus=true]",
+            "0": "firmalife:grape_string_plant_red[axis=z,lifecycle=healthy,stage=0]",
+            "Y": "firmalife:grape_string[axis=z]"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "ZYZ"
+            ],
+            [
+              "X0X"
+            ]
+          ],
+          "mapping": {
+            "X": "firmalife:grape_trellis_post[axis=x,string_plus=true,string_minus=true]",
+            "0": "firmalife:grape_string_plant_red[axis=z,lifecycle=healthy,stage=2]",
+            "Y": "firmalife:grape_string_red[axis=z,lifecycle=healthy]",
+            "Z": "firmalife:grape_trellis_post_red[axis=x,lifecycle=healthy,string_plus=true,string_minus=true]"
+          }
+        }
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "text": "При соблюдении климатических требований виноград будет расти и оплетать шпалеру в течение нескольких месяцев. Он будет плодоносить в июле, цветя в предыдущем месяце. Затем виноград можно собирать. Виноград также можно выращивать в теплицах на шпалерах."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/wood/acacia_stomping_barrel",
+      "text": "Топчальная бочка используется для раздавливания винограда. Можно также использовать жернова."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Чтобы использовать топчальную бочку, $(item)$(k:key.use)$() со свежим виноградом. Затем подпрыгивайте на бочке 16 раз. $(item)$(k:key.use)$() пустой рукой, чтобы забрать предметы.$(br2)Затем запечатайте виноград в бочке на 5 дней, чтобы $(thing)сбродить$() его."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/wood/acacia_barrel_press",
+      "text": "Пресс для бочек — это последний этап обработки винограда."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "В крайнем левом слоте можно разместить до 16 винограда. Для бутылки вина требуется четыре винограда. Четыре центральных слота предназначены для смешивания винограда с другими ингредиентами, но это необязательно. Использование только красного или белого винограда дает красное или белое вино. Добавление хотя бы одной красного винограда к белому вину дает розовое вино. Добавление сахара к белому вину дает десертное вино. Добавление тиражной смеси (дрожжи и подсластитель в бочке) дает игристое вино."
+    },
+    {
+      "type": "tfc:glassworking_recipe",
+      "recipe": "firmalife:glassworking/olivine_wine_bottle",
+      "text": "Вино должно быть разлито в соответствующие винные бутылки, изготовленные из несиликатного стекла."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/bottle_label",
+      "text": "$(thing)Этикетка для бутылки$() может быть переименована на столе писаря, и она добавит её имя к тултипу вина."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Для вина обязательно нужна $(thing)пробка$(), которую делают, вымачивая $(thing)обработанную древесину$() в $(thing)щёлочи$() в течение дня. Когда всё готово, используй слот для бокала, чтобы разлить вино, либо нажми $(item)$(k:key.use)$(), держа бутылку в руке."
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 23
+}

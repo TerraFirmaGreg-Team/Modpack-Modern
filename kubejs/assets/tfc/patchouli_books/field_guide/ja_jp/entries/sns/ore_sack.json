@@ -1,0 +1,18 @@
+{
+  "name": "鉱石袋",
+  "category": "tfc:sacks_n_such",
+  "icon": "sns:ore_sack",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "sns:ore_sack",
+      "text": "$(item)鉱石袋$()は、特定の鉱石を大量に収納するための$(l:sns/item_containers)アイテムコンテナ$()で、採掘時に非常に役立ちます。$(br2)基本的には驚異の512個ものアイテムを収納できます。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "sns:crafting/ore_sack",
+      "text": "Modpack作成者や追加の鉱石を追加したい方は、アイテムタグ$(bold)sns:allowed_in_ore_sack$()を参照してください。ほとんどのアドオンは自動的にサポートされます。"
+    }
+  ],
+  "read_by_default": true
+}

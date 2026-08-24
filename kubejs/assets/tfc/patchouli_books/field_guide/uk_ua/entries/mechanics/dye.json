@@ -1,0 +1,45 @@
+{
+  "name": "Барвник",
+  "category": "tfc:mechanics",
+  "icon": "minecraft:red_dye",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Усі 16 ванільних $(thing)кольорів барвників$() можна отримати у вигляді предметів. Більшість квітів та інших яскравих рослин можна розтерти на барвник за допомогою $(l:mechanics/quern)жорна$(). Порошок з $(l:the_world/ores_and_minerals)металевої руди$() можна створити безпосередньо як барвник. $(l:the_world/ores_and_minerals#graphite)Графіт$(), $(l:the_world/ores_and_minerals#kaolinite)каолініт$(), $(l:the_world/ores_and_minerals#sylvite)сильвін$(), $(l:the_world/ores_and_minerals#lapis_lazuli)лазурит$(), кокс і деревновугільний порошок також можна переробити на барвник."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "tfc:bucket/red_dye",
+      "title": "Рідкий барвник",
+      "link_recipes": false,
+      "text": "Барвник також можна перетворити на рідину. Якщо закип'ятити предмет барвника та 1000 мВ $(item)води$() у $(l:mechanics/pot)казані$(), вийде така ж кількість $(thing)рідкого барвника$(). Рідкий барвник використовується в $(l:mechanics/barrels)діжці$() для фарбування предметів."
+    },
+    {
+      "type": "tfc:sealed_barrel_recipe",
+      "recipe": "tfc:barrel/dye/red_concrete_powder",
+      "text": "Фарбування предметів у діжці є вигіднішим, ніж використання звичайних матеріалів, адже для цього потрібно лише 25 мВ рідкого барвника."
+    },
+    {
+      "type": "tfc:sealed_barrel_recipe",
+      "recipe": "tfc:barrel/dye/disc_chirp",
+      "text": "Рідкий барвник можна використовувати для фінішної обробки $(item)музичної платівки$()."
+    },
+    {
+      "type": "tfc:sealed_barrel_recipe",
+      "recipe": "tfc:barrel/dye/red_leather",
+      "text": "Рідким барвником можна фарбувати навіть шкіру, наче під час звичайного створення!"
+    },
+    {
+      "type": "tfc:sealed_barrel_recipe",
+      "anchor": "lye",
+      "recipe": "tfc:barrel/dye/bleach_concrete_powder",
+      "text": "П'ять одиниць $(item)деревної золи$() та 1000 мВ $(item)води$(), закип'ячені в $(l:mechanics/pot)казані$(), утворюють луг. 25 мВ лугу змивають колір із пофарбованого предмета."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(li)$(item)Чорний барвник$() використовується для $(l:mechanics/scribing_table)креслярського стола$().$(li)$(item)Червоний барвник$() потрібен для $(l:mechanics/powderkegs)порохової діжки$().$(li)Невипалену $(l:mechanics/decay#small_vessels)малу горщик$() та $(l:mechanics/decay#large_vessels)великий горщик$() можна пофарбувати.",
+      "title": "Різне"
+    }
+  ],
+  "read_by_default": true
+}

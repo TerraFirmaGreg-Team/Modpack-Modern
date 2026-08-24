@@ -2,7 +2,6 @@
 	"name": "Qu'est-ce que le Beneath ?",
 	"category": "tfc:beneath",
 	"icon": "minecraft:deepslate",
-	"priority": true,
 	"pages": [
 		{
 			"type": "patchouli:text",
@@ -23,5 +22,6 @@
 			"text": "Pour vous en aller, tenez-vous directement sous le plafond de Bedrock de la même manière.$(br2)Il serait bon de $(thing)noter$() où vous êtes entré, afin de retourner d'où vous êtes venu dans l'Overworld dès que vous êtes prêt à partir."
 		}
 	],
-	"read_by_default": true
+	"read_by_default": true,
+	"priority": true
 }

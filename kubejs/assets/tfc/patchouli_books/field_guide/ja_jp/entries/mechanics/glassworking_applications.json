@@ -1,5 +1,4 @@
 {
-  "__comment__": "This file was automatically created by mcresources",
   "name": "ガラス製品",
   "category": "tfc:mechanics",
   "icon": "minecraft:glass",
@@ -19,6 +18,8 @@
     },
     {
       "type": "patchouli:multiblock",
+      "text": "ガラスが冷えて固まった後、$(l:mechanics/glassworking#saw)宝石ノコギリ$()で壊すことで回収できます。",
+      "border": true,
       "multiblock": {
         "mapping": {
           "C": "#tfc:glass_pouring_table",
@@ -32,9 +33,7 @@
             "CCCC"
           ]
         ]
-      },
-      "text": "ガラスが冷えて固まった後、$(l:mechanics/glassworking#saw)宝石ノコギリ$()で壊すことで回収できます。",
-      "border": true
+      }
     },
     {
       "type": "patchouli:text",
@@ -43,6 +42,8 @@
     },
     {
       "type": "patchouli:multiblock",
+      "text": "ガラスが冷えて固まった後、$(l:mechanics/glassworking#saw)宝石ノコギリ$()で壊すことで回収できます。",
+      "border": true,
       "multiblock": {
         "mapping": {
           "C": "#tfc:glass_basin_blocks",
@@ -60,20 +61,18 @@
             "   "
           ]
         ]
-      },
-      "text": "ガラスが冷えて固まった後、$(l:mechanics/glassworking#saw)宝石ノコギリ$()で壊すことで回収できます。",
-      "border": true
+      }
     },
     {
       "type": "patchouli:crafting",
+      "text": "$(thing)真鍮メッキのブロック$()は、$(thing)真鍮プレート$()を手に持ち、いずれかの種類の$(thing)石レンガ$()に対して$(item)$(k:key.use)$()で作れます。",
       "title": "ガラス精製用のブロック",
-      "recipe": "tfc:crafting/white_kaolin_clay",
-      "text": "$(thing)真鍮メッキのブロック$()は、$(thing)真鍮プレート$()を手に持ち、いずれかの種類の$(thing)石レンガ$()に対して$(item)$(k:key.use)$()で作れます。"
+      "recipe": "tfc:crafting/white_kaolin_clay"
     },
     {
       "type": "patchouli:text",
-      "anchor": "coloring",
       "text": "ガラスは、使用された$(l:mechanics/glassworking)ガラスバッチ$()の種類に基づいて自然な色を持っています。他の色は$(l:mechanics/bowls)ボウル$()を使って作ることができます。$(br2)使い方は、まず$(l:mechanics/bowls)ボウル$()を地面に置き、必要な$(thing)粉末$()を$(item)$(k:key.use)$()します。その後、$(thing)注ぐ$()前に$(thing)吹き竿$()をボウルに使うことで、粉末をガラスバッチに加えられます。",
+      "anchor": "coloring",
       "title": "ガラスの染色"
     },
     {

@@ -13,10 +13,10 @@
 			"text": "Fıskiye, bir $(thing)Bakır Plaka$() ile yapılır."
 		},
 		{
-			"title": "Tesisat",
-			"item": "gtceu:copper_tiny_fluid_pipe",
 			"type": "patchouli:spotlight",
-			"text": "Fıskiyelerin çalışabilmesi için onlara su sağlayan bir boru sistemine bağlanması gerekir. Bu işlem, fıskiyelere bir dizi $(thing)Sıvı Borusu$() bağlanarak yapılır. $(thing)Mekanik Pompa$() kullanarak borulara su pompalayabilirsiniz."
+			"text": "Fıskiyelerin çalışabilmesi için onlara su sağlayan bir boru sistemine bağlanması gerekir. Bu işlem, fıskiyelere bir dizi $(thing)Sıvı Borusu$() bağlanarak yapılır. $(thing)Mekanik Pompa$() kullanarak borulara su pompalayabilirsiniz.",
+			"title": "Tesisat",
+			"item": "gtceu:copper_tiny_fluid_pipe"
 		},
 		{
 			"type": "patchouli:text",

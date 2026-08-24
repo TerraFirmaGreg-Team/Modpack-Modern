@@ -1,5 +1,4 @@
 {
-	"__comment__": "This file was automatically created by mcresources",
 	"name": "野生动物",
 	"category": "tfc:the_world",
 	"icon": "tfc:medium_raw_hide",
@@ -122,38 +121,42 @@
 			"type": "patchouli:entity",
 			"entity": "tfc:moose",
 			"scale": 0.7,
-			"name": "麋鹿",
-			"text": "麋鹿生成在森林中，$(l:the_world/climate#temperature)温度$()低于10°C且高于-15°C，$(l:the_world/climate#rainfall)降雨量$()在150至300mm之间。"
+			"text": "麋鹿生成在森林中，$(l:the_world/climate#temperature)温度$()低于10°C且高于-15°C，$(l:the_world/climate#rainfall)降雨量$()在150至300mm之间。",
+			"name": "麋鹿"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "tfc:wildebeest",
 			"scale": 0.7,
-			"name": "牛羚",
-			"text": "牛羚生成在开阔平原上，任何$(l:the_world/climate#temperature)温度$()高于13°C、$(l:the_world/climate#rainfall)降雨量$()在90至380mm之间的地方。"
+			"text": "牛羚生成在开阔平原上，任何$(l:the_world/climate#temperature)温度$()高于13°C、$(l:the_world/climate#rainfall)降雨量$()在90至380mm之间的地方。",
+			"name": "牛羚"
 		},
 		{
 			"type": "patchouli:entity",
+			"text": "野牛生成在开阔平原上，$(l:the_world/climate#temperature)温度$()低于15°C且高于-10°C，$(l:the_world/climate#rainfall)降雨量$()在160至420mm之间。",
+			"title": "猎物",
 			"entity": "tfg:bison",
 			"scale": 0.7,
-			"name": "野牛",
-			"text": "野牛生成在开阔平原上，$(l:the_world/climate#temperature)温度$()低于15°C且高于-10°C，$(l:the_world/climate#rainfall)降雨量$()在160至420mm之间。"
+			"name": "野牛"
 		},
 		{
-			"type": "patchouli:empty"
+			"type": "patchouli:empty",
+			"name": "兔",
+			"text": "兔子以啃食胡萝卜和卷心菜而闻名。它们在世界上无处不在，毛色随气候而变化。它们只需要15mm的$(l:the_world/climate#rainfall)降雨量$()即可生成。"
 		},
 		{
 			"type": "patchouli:text",
-			"anchor": "prey",
+			"name": "狐狸",
 			"text": "$(thing)猎物$()害怕玩家和掠食者。它们善于逃离危险，但通常无法反击。有些猎物喜欢啃食作物。",
+			"anchor": "prey",
 			"title": "猎物"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "tfc:rabbit",
 			"scale": 0.7,
-			"name": "兔",
-			"text": "兔子以啃食胡萝卜和卷心菜而闻名。它们在世界上无处不在，毛色随气候而变化。它们只需要15mm的$(l:the_world/climate#rainfall)降雨量$()即可生成。"
+			"text": "兔子以啃食胡萝卜和卷心菜而闻名。它们在世界上无处不在，毛色随气候而变化。它们只需要15mm的$(l:the_world/climate#rainfall)降雨量$()即可生成。",
+			"name": "兔"
 		},
 		{
 			"type": "patchouli:entity",
@@ -185,8 +188,8 @@
 			"type": "patchouli:entity",
 			"entity": "tfc:bongo",
 			"scale": 0.9,
-			"name": "羚羊",
-			"text": "羚羊生成在森林中，任何$(l:the_world/climate#temperature)温度$()高于15°C，$(l:the_world/climate#rainfall)降雨量$()在230至500mm之间的地方。"
+			"text": "羚羊生成在森林中，任何$(l:the_world/climate#temperature)温度$()高于15°C，$(l:the_world/climate#rainfall)降雨量$()在230至500mm之间的地方。",
+			"name": "羚羊"
 		},
 		{
 			"type": "patchouli:entity",
@@ -198,6 +201,7 @@
 			"type": "patchouli:entity",
 			"entity": "tfc:pheasant",
 			"scale": 0.7,
+			"name": "孔雀",
 			"text": "野鸡生成在森林中，任何$(l:the_world/climate#temperature)温度$()低于17°C且高于-5°C，$(l:the_world/climate#rainfall)降雨量$()在100至300mm之间的地方。"
 		},
 		{
@@ -208,18 +212,19 @@
 		},
 		{
 			"type": "patchouli:entity",
+			"text": "孔雀生成在森林中，任何$(l:the_world/climate#temperature)温度$()高于14°C，$(l:the_world/climate#rainfall)降雨量$()在190至500mm之间的地方。",
+			"title": "水生动物",
 			"entity": "tfc:peafowl",
 			"scale": 0.6,
-			"name": "孔雀",
-			"text": "孔雀生成在森林中，任何$(l:the_world/climate#temperature)温度$()高于14°C，$(l:the_world/climate#rainfall)降雨量$()在190至500mm之间的地方。"
+			"name": "孔雀"
 		},
 		{
 			"type": "patchouli:entity",
+			"text": "旅鼠生成在任何$(l:the_world/climate#temperature)温度$()低于-3°C且高于-12°C，$(l:the_world/climate#rainfall)降雨量$()在160至500mm之间的地方。",
 			"entity": "tfg:lemming",
 			"scale": 1.5,
 			"offset": -0.2,
-			"name": "旅鼠",
-			"text": "旅鼠生成在任何$(l:the_world/climate#temperature)温度$()低于-3°C且高于-12°C，$(l:the_world/climate#rainfall)降雨量$()在160至500mm之间的地方。"
+			"name": "旅鼠"
 		},
 		{
 			"type": "patchouli:entity",
@@ -237,12 +242,13 @@
 		},
 		{
 			"type": "patchouli:text",
-			"anchor": "aquatic",
 			"text": "$(thing)水生动物$()是一个涵盖多种不同行为的广泛类别。它们可能是$(thing)滨岸生物$()、$(thing)鱼类$()、$(thing)贝类$()或$(thing)大型水生生物$()",
-			"title": "水生动物"
+			"title": "水生动物",
+			"anchor": "aquatic"
 		},
 		{
 			"type": "patchouli:text",
+			"name": "鳕鱼",
 			"text": "$(thing)滨岸动物$()只生成在海滩上，它们一天中一部分时间游泳，一部分时间在海滩上行走。它们是好奇的生物，会跟随玩家，但无法被驯服。"
 		},
 		{
@@ -261,6 +267,7 @@
 		},
 		{
 			"type": "patchouli:text",
+			"name": "热带鱼",
 			"text": "$(thing)鱼类$()是游动在水中的小生物。大多数可以通过$(l:mechanics/fishing)钓鱼$()获得。有些偏好海洋、河流或湖泊。",
 			"title": "鱼类"
 		},
@@ -280,10 +287,11 @@
 		},
 		{
 			"type": "patchouli:entity",
+			"text": "水母生活在较温暖的海洋中，$(l:the_world/climate#temperature)温度$()至少18°C。",
+			"title": "贝类",
 			"entity": "tfc:jellyfish",
 			"scale": 0.7,
-			"name": "水母",
-			"text": "水母生活在较温暖的海洋中，$(l:the_world/climate#temperature)温度$()至少18°C。"
+			"name": "水母"
 		},
 		{
 			"type": "patchouli:entity",
@@ -307,13 +315,15 @@
 			"text": "蓝鳃鱼生成在任何$(l:the_world/climate#temperature)温度$()至少-10°C且最高26°C的河流或湖泊中。"
 		},
 		{
-			"type": "patchouli:empty"
+			"type": "patchouli:empty",
+			"name": "马蹄蟹",
+			"text": "马蹄蟹生成在温带气候的海洋中，$(l:the_world/climate#temperature)温度$()在10至21°C之间，$(l:the_world/climate#rainfall)降雨量$()最高400mm。"
 		},
 		{
 			"type": "patchouli:text",
-			"anchor": "shellfish",
 			"text": "$(thing)贝类$()是生活在水体底部的小动物。它们无法被钓到，但会掉落可食用或用于制作$(l:mechanics/flux)助熔剂$()的贝壳。贝类可作为$(l:mechanics/fishing)鱼饵$()。",
-			"title": "贝类"
+			"title": "贝类",
+			"anchor": "shellfish"
 		},
 		{
 			"type": "patchouli:entity",
@@ -338,10 +348,11 @@
 		},
 		{
 			"type": "patchouli:entity",
+			"text": "马蹄蟹生成在温带气候的海洋中，$(l:the_world/climate#temperature)温度$()在10至21°C之间，$(l:the_world/climate#rainfall)降雨量$()最高400mm。",
+			"title": "鱿鱼",
 			"entity": "tfc:horseshoe_crab",
 			"scale": 0.7,
-			"name": "马蹄蟹",
-			"text": "马蹄蟹生成在温带气候的海洋中，$(l:the_world/climate#temperature)温度$()在10至21°C之间，$(l:the_world/climate#rainfall)降雨量$()最高400mm。"
+			"name": "马蹄蟹"
 		},
 		{
 			"type": "patchouli:empty"
