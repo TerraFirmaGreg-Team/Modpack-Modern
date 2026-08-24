@@ -1,11 +1,11 @@
 {
-  "name": "Safety Toe Hiking Boots",
+  "name": "Похідні черевики із захисним носком",
   "category": "tfc:sacks_n_such",
   "icon": "sns:steel_toe_hiking_boots",
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "Like $(l:sns/hiking_boots)Hiking Boots$() but safer thanks to their steel toes. It's just a shame nobody's invented a hard hat yet"
+      "text": "Схожі на $(l:sns/hiking_boots)похідні черевики$(), але безпечніший завдяки сталевому носку. Шкода лише, що ніхто ще не винайшов будівельну каску"
     },
     {
       "type": "patchouli:crafting",

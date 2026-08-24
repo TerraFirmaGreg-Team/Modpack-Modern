@@ -1,11 +1,11 @@
 {
-  "name": "Cannons",
+  "name": "Гармати",
   "category": "tfc:firmaciv",
   "icon": "alekiships:cannon",
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "Cannons! Who doesn't want cannons? These powerful weapons of naval warfare can be placed on large ships, as well as on land, and are the best way to destroy your enemy's vessels, dealing far more damage to ships than any alternative."
+      "text": "Гармати! Хто ж не хоче гармат? Цю потужну зброю морської війни можна розміщувати як на великих кораблях, так і на суші. Це найкращий спосіб знищити ворожі судна, адже гармати завдають кораблям набагато більше шкоди, ніж будь-яка альтернатива."
     },
     {
       "type": "patchouli:image",
@@ -16,11 +16,11 @@
     {
       "type": "patchouli:crafting",
       "recipe": "firmaciv:crafting/cannon",
-      "text": "Smith cannon barrels from Wrought Iron Double Sheets and complete the cannon with crafting."
+      "text": "Викуй гарматні стволи з подвійних листів зварного заліза та збери готову гармату за допомогою створення"
     },
     {
       "type": "text",
-      "text": "You'll also need cannonballs, smithed from Wrought Iron Double Ingots, as well as Gunpowder, Unrefined Paper and a Flint and Steel in order to fire a cannon. A UI element will indicate the status of the cannon. You can angle a cannon up by pressing $(item)$(k:key.use)$() and down by crouching and pressing $(item)$(k:key.use)$()."
+      "text": "Тобі також знадобляться гарматні ядра, викувані з подвійних зливків зварного заліза, а також порох, неочищений папір і кресало, щоб вистрілити з гармати. Елемент інтерфейсу показуватиме стан гармати. Ти можеш підняти гармату вгору, натиснувши $(item)$(k:key.use)$(), і опустити вниз, якщо присядеш і натиснеш $(item)$(k:key.use)$()."
     }
   ],
   "read_by_default": true,

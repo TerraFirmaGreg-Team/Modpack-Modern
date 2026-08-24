@@ -5,7 +5,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "$(thing)Грибница$() используется для выращивания грибов. В него можно поместить грибы и урожай из Нижнего мира. Когда он находится рядом с грибом, он потребляет содержащиеся внутри предметы, чтобы размножить этот гриб в окружающей области, один раз в день."
+			"text": "The $(thing)Unposter$() is used to grow mushrooms.$(br2)You can deposit the same items as with the composter, except instead of making compost, when a mushroom is within its range, it will consume the items inside to multiply that mushroom in the area around it."
 		},
 		{
 			"type": "patchouli:crafting",

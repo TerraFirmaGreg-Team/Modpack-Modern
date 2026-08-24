@@ -1,39 +1,39 @@
 {
-  "name": "Casting Chocolate",
+  "name": "Відливання шоколаду",
   "category": "tfc:tfcchannelcasting",
   "icon": "tfcchannelcasting:food/milk_chocolate_heart",
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "The following content is only available if Firmalife is installed. $(thing)Chocolate$() does not need to come only in boring bars! Melt down $(thing)White$(), $(thing)Milk$(), or $(thing)Dark$() chocolate in a $(thing)Vessel$() or $(thing)Crucible$() and then cast it into a mold to obtain chocolate confections. There are three types of chocolate confections: $(thing)Hearts$(), $(thing)Bells$(), and $(thing)Knives$(). Each is obtained by casting chocolate into a different mold."
+      "text": "Наступний вміст доступний лише якщо встановлено мод Firmalife. $(thing)Шоколад$() не обов'язково має бути лише у нудних плитках! Розтопи $(thing)білий$(), $(thing)молочний$() або $(thing)чорний$() шоколад у $(thing)корчазі$() чи $(thing)тиглі$(), а потім відлий його у форму, щоб отримати шоколадні фігурки. Існує три види шоколадних фігурок: $(thing)Серце$(), $(thing)Дзвіночок$() та $(thing)Ніж$(). Кожну з них можна отримати, відливши шоколад у відповідну форму."
     },
     {
       "type": "tfc:knapping_recipe",
       "recipe": "tfcchannelcasting:clay_knapping/unfired_heart_mold",
-      "text": "Knapping a $(thing)Heart Mold$(), used to create $(thing)Heart$()-shaped chocolates."
+      "text": "Висікання $(thing)форми «Серце»$(), яка використовується для створення шоколадних цукерок у формі $(thing)серця$()."
     },
     {
       "type": "patchouli:text",
-      "text": "Chocolate confections provide the same nutrition as chocolate bars, but they are faster to eat. However, if these confections are prepared at specific times of the year, they will gain a trait that doubles their nutrition. $(thing)Chocolate Hearts$() gain the $(thing)Romantic$() trait in Februrary, $(thing)Chocolate Winter Bells$() gain the $(thing)Festive$() trait in December, and $(thing)Chocolate Candy Knives$() gain the $(thing)Scary$() trait in October."
+      "text": "Шоколадні фігурки забезпечують таку ж поживність, як і звичайні плитки шоколаду, але з'їдаються швидше. Проте, якщо приготувати ці фігурки в певні пори року, вони отримають особливу властивість, яка подвоює їхню поживність. $(thing)Шоколадні серця$() отримують властивість $(thing)«Романтичний»$() у лютому, $(thing)Шоколадні зимові дзвіночки$() отримують властивість $(thing)«Святковий»$() у грудні, а $(thing)Шоколадні цукеркові ножі$() отримують властивість $(thing)«Страшний»$() у жовтні."
     },
     {
       "type": "patchouli:text",
-      "text": "Moreover, confections can be $(thing)filled$() to gain additional benefits. Confections filled with $(thing)Jam$() have extra $(thing)Fruit$() nutrition. Confections filled with $(thing)Alcohol$() give positive potion effects."
+      "text": "Крім того, фігурки можна $(thing)наповнювати$() для отримання додаткових переваг. Цукерки, наповнені $(thing)варенням$(), мають додаткову поживність $(thing)фруктів$(). Цукерки, наповнені $(thing)алкоголем$(), дають позитивні ефекти зілля."
     },
     {
       "type": "tfc:sealed_barrel_recipe",
       "recipe": "tfcchannelcasting:barrel/fill_with_sweet_liquor",
-      "text": "Eating chocolates filled with $(thing)Sweet Liquor$() gives a speed buff."
+      "text": "Поїдання шоколадних цукерок, наповнених $(thing)солодким лікером$(), дає бафф до швидкості."
     },
     {
       "type": "tfc:sealed_barrel_recipe",
       "recipe": "tfcchannelcasting:barrel/fill_with_strong_liquor",
-      "text": "Eating chocolates filled with $(thing)Strong Liquor$() gives damange resistance."
+      "text": "Поїдання шоколадних цукерок, наповнених $(thing)міцним лікером$(), дає опір до шкоди."
     },
     {
       "type": "tfc:sealed_barrel_recipe",
       "recipe": "tfcchannelcasting:barrel/fill_with_whiskey",
-      "text": "Eating chocolates filled with $(thing)Whiskey$() gives haste."
+      "text": "Поїдання шоколадних цукерок, наповнених $(thing)віскі$(), дає ефект прискорення."
     }
   ],
   "read_by_default": true

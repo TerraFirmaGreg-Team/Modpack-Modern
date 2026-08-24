@@ -5,7 +5,7 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "$(thing)Beehives$() are a place to house bees. Beehives need $(thing)Beehive Frames$() inside them for the bees to live. Removing frames from an active hive will cause the bees to attack you, unless done at night, or with a $(thing)Firepit$() underneath the hive active. Beehives can share flowers. The benefit of flowers diminishes after 60 flowers."
+      "text": "$(thing)Вулик$() — це місце для утримання бджіл. Для життєдіяльності бджіл усередині вулика обов'язково має бути $(thing)рамка для вулика$(). Виймання рамки з активного вулика змусить бджіл напасти на тебе, якщо тільки це не робиться вночі або за наявності активного $(thing)багаття$() під вуликом. Вулики можуть ділити між собою квіти. Користь від квітів зменшується, якщо їхня кількість перевищує 60 шт."
     },
     {
       "type": "patchouli:crafting",
@@ -14,43 +14,43 @@
     },
     {
       "type": "patchouli:text",
-      "text": "Beehives know about the area in a 5 block radius from them. If there are at least 10 flowers around the hive, there is a chance an empty frame will be populated with a $(thing)Queen$(). This is indicated by bee particles flying around the hive. Having 4 empty frames in a hive greatly increases the chances of bees moving in."
+      "text": "Вулик зчитує область у радіусі 5 блоків навколо себе. Якщо навколо нього є принаймні 10 квітів, з'являється шанс, що порожня рамка заселиться $(thing)бджолиною маткою$(). На це вказуватимуть частинки бджіл, що літають навколо вулика. Наявність 4 порожніх рамок у вулику значно підвищує шанси на заселення бджіл."
     },
     {
       "type": "patchouli:text",
-      "text": "If a beehive has two frames with queens, and an empty frame, the two colonies have a chance of $(thing)Breeding$() and producing a new queen in the empty frame. This has the effect of passing on the $(thing)Abilities$() of each parent to the offspring. Abilities are different traits bees have that change how they effect the world around them. They are on a scale of 1-10, with 10 being the max."
+      "text": "Якщо у вулику є дві рамки з бджолиними матками та одна порожня рамка, дві колонії мають шанс на $(thing)розмноження$() й утворення нової матки в порожній рамці. Це дає ефект передачі $(thing)здібностей$() від кожної материнської особини до потомства. Здібності — це різні риси бджіл, які змінюють їхній вплив на навколишній світ. Вони вимірюються за шкалою від 1 до 10, де 10 — максимум."
     },
     {
       "type": "patchouli:crafting",
       "recipe": "firmalife:crafting/honey_jar_open",
-      "text": "Bees also produce $(thing)Honey$(). Using $(item)$(k:key.use)$() with an Empty Jar on a hive that visibly has honey gives you a $(thing)Honey Jar$(). Opening a Honey Jar gives you $(thing)Raw Honey$(), a $(thing)Sugar$() substitute."
+      "text": "Бджоли також виробляють $(thing)мед$(). Натискання $(item)$(k:key.use)$() порожньою банкою на вулик, у якому візуально видно мед, дає тобі $(thing)банку меду$(). Відкриття банки меду дає $(thing)сирий мед$(), який є замінником $(thing)цукру$()."
     },
     {
       "type": "patchouli:text",
-      "text": "Pressing $(item)$(k:key.use)$() a filled frame in your inventory with a $(thing)Knife$() gives you $(thing)Beeswax$(), which has many uses. However, this kills the queen inside the frame so be careful!"
+      "text": "Натискання $(item)$(k:key.use)$() $(thing)ножем$() на заповнену рамку у твоєму інвентарі дає $(thing)бджолиний віск$(), який має багато застосувань. Однак це вбиває бджолину матку всередині рамки, тому будь обережним!"
     },
     {
       "type": "patchouli:crafting",
       "recipe": "firmalife:crafting/treated_lumber",
-      "text": "The most important use of beeswax is in creating $(thing)Treated Lumber$()."
+      "text": "Найважливіше застосування бджолиного воску — це створення $(thing)вощених пиломатеріалів$()."
     },
     {
       "type": "patchouli:text",
-      "text": "$(li)Bees can help fertilize planters!$()$(li)Scraping a frame sacrifices the queen. Be smart!$()$(li)Being wet prevents bees from attacking you.$()",
-      "title": "Bee Tips"
+      "text": "$(li)Бджола допомагає запилювати лотки для рослин!$()$(li)Очищення рамки приносить у жертву бджолину матку. Будь розумним!$()$(li)Перебування у воді заважає бджолі напасти на тебе.$()",
+      "title": "Порада щодо бджіл"
     },
     {
       "type": "patchouli:text",
-      "text": "$(li)$(thing)Hardiness$(): Allows bees to produce honey at lower temperatures. Hardiness 10 allows up to -16°C, whereas Hardiness 1 allows up to 2°C.$()$(li)$(thing)Production$(): Improves the speed of honey production.$()$(li)$(thing)Mutant$(): Increases variability in the traits passed during breeding$().",
-      "title": "List of Abilities"
+      "text": "$(li)$(thing)Стійкість до холоду$(): дозволяє бджолі виробляти мед за нижчих температур. Стійкість до холоду 10 дозволяє працювати до -16°C, тоді як стійкість до холоду 1 — лише до 2°C.$()$(li)$(thing)Продуктивність$(): підвищує швидкість виробництва меду.$()$(li)$(thing)Мутація$(): збільшує мінливість рис, що передаються під час розмноження$().",
+      "title": "Список здібностей"
     },
     {
       "type": "patchouli:text",
-      "text": "$(li)$(thing)Fertility$(): Increases likelihood of breeding.$()$(li)$(thing)Crop Affinity$(): Likelihood of spreading a small amount of nutrients to crops.$()$(li)$(thing)Nature Restoration$(): Causes new flowers and lilypads to spawn around the hive.$()$(li)$(thing)Calmness$(): Decreases likelihood of bees attacking you$()."
+      "text": "$(li)$(thing)Родючість$(): збільшує ймовірність розмноження.$()$(li)$(thing)Запилення культур$(): ймовірність поширення невеликої кількості поживних речовин на сільськогосподарську культуру.$()$(li)$(thing)Швидкість розростання$(): спонукає до появи нової квітки та латаття навколо вулика.$()$(li)$(thing)Спокій$(): знижує ймовірність того, що бджола нападе на тебе$()."
     },
     {
       "type": "patchouli:text",
-      "text": "Bees with high Mutant ability have a chance of developing a $(thing)Genetic Disease$(). Diseased bees pass on their disease to their offspring, and don't produce honey."
+      "text": "Бджола з високою здатністю до мутації має шанс підхопити $(thing)генетичне захворювання$(). Хвора бджола передає свою хворобу потомству й не виробляє мед."
     }
   ],
   "read_by_default": true,

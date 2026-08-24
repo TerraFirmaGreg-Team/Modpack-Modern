@@ -1,5 +1,5 @@
 {
-  "name": "Cellars",
+  "name": "Piwnice",
   "category": "tfc:firmalife",
   "icon": "firmalife:sealed_bricks",
   "pages": [
@@ -10,7 +10,7 @@
     {
       "type": "patchouli:multiblock",
       "multiblock_id": "firmalife:cellar",
-      "name": "An Example Cellar",
+      "name": "Przykładowa piwnica",
       "text": "This is just one of many cellars that you could make!",
       "enable_visualize": true
     },

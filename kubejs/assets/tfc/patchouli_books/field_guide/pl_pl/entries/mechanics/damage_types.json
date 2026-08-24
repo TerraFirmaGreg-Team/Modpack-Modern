@@ -10,12 +10,12 @@
     {
       "type": "patchouli:text",
       "text": "$(thing)Piercing$() damage is dealt by pointy weapons such as $(thing)Knives$(), projectiles like $(thing)Arrows$() and $(thing)Javelins$(), fanged monsters like $(thing)Spiders$(), and $(l:the_world/flora#cacti)Cacti$(). $(thing)Skeletons$() are invulnerable to piercing damage, and $(thing)Zombies$() are slightly vulnerable to it.",
-      "title": "Piercing"
+      "title": "Kłute"
     },
     {
       "type": "patchouli:text",
       "text": "$(thing)Slashing$() damage is dealt by weapons with long sharp edges like $(thing)Axes$() and $(thing)Swords$(), as well as large $(l:the_world/wild_animals#predators)Predators$() like bears and cougars. $(thing)Creepers$() are vulnerable to slashing damage.",
-      "title": "Slashing"
+      "title": "Sieczne"
     },
     {
       "type": "patchouli:text",

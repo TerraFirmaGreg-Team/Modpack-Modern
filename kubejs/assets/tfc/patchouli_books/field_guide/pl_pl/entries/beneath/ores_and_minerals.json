@@ -63,8 +63,8 @@
           "X": "beneath:ore/blackstone_sylvite"
         }
       },
-      "name": "Przypuszczalny sylwin",
-      "text": "Sylvite replaces basalt at any level.",
+      "name": "Sylwin",
+      "text": "Sylwin zastępuje bazalt na dowolnym poziomie.",
       "enable_visualize": false
     },
     {
@@ -83,8 +83,8 @@
           "X": "minecraft:nether_quartz_ore"
         }
       },
-      "name": "Antracyt",
-      "text": "Nether Quartz replaces netherrack at all levels, and is common.",
+      "name": "Netherowy kwarc",
+      "text": "Netherowy kwarc zastępuje netherack na wszystkich poziomach i jest powszechny.",
       "enable_visualize": false
     },
     {

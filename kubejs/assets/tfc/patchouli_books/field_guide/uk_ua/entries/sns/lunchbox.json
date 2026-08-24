@@ -1,17 +1,17 @@
 {
-  "name": "The Lunchbox",
+  "name": "Ланчбокс",
   "category": "tfc:sacks_n_such",
   "icon": "sns:lunchbox",
   "pages": [
     {
       "type": "patchouli:spotlight",
       "item": "sns:lunchbox",
-      "text": "The $(item)Lunchbox$() is one of the more interesting $(l:sns/item_containers)Item Container$()s. As you might expect from the name these hold food items and even allow you to consume food out of them. $(k:sneak) and $(k:use) to open the lunchbox, $(k:sneak) and scroll wheel to select the consumed stack and $(k:use) to eat the selected stack"
+      "text": "$(item)Ланчбокс$() — це один із найцікавіших $(l:sns/item_containers)контейнерів для предметів$(). Як можна здогадатися з назви, він уміщує їжу й навіть дозволяє тобі їсти прямо з нього. Натисни $(k:sneak) та $(k:use), щоб відкрити ланчбокс; утримуй $(k:sneak) і крути коліщатко миші, щоб вибрати потрібний стос харчів, і натисни $(k:use), щоб з'їсти вибрану їжу"
     },
     {
       "type": "patchouli:crafting",
       "recipe": "sns:crafting/lunchbox",
-      "text": "For modpack authors or simply people wishing to add extra foods see the item tag $(bold)sns:lunchbox_food$() most addons should be automatically supported"
+      "text": "Для авторів модпаків або просто людей, які бажають додати нову їжу, дивіться тег предмета $(bold)sns:lunchbox_food$() — більшість аддонів мають підтримуватися автоматично"
     }
   ],
   "read_by_default": true

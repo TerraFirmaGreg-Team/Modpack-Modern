@@ -59,7 +59,7 @@
       "type": "patchouli:text",
       "anchor": "jug",
       "text": "Another useful pottery item is the $(thing)Jug$(). It can be used to pick up and $(thing)drink$() fluids, such as fresh water.$(br2)In order to use it, simply $(item)$(k:key.use)$() the jug on the fluid in the world. Then use the jug in order to drink from it. The jug can hold $(thing)100 mB$() of fluid at a time.",
-      "title": "Jug"
+      "title": "Dzban"
     },
     {
       "type": "tfc:knapping_recipe",

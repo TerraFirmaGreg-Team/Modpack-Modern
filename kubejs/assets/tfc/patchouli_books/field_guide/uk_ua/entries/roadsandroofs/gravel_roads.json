@@ -1,5 +1,5 @@
 {
-  "name": "Gravel and Macadam Roads",
+  "name": "Гравійні та щебеневі дороги",
   "category": "tfc:roadsandroofs",
   "icon": "rnr:rock/gravel_road/chert",
   "pages": [
@@ -8,11 +8,11 @@
       "anchor": "gravel_fill",
       "recipe": "rnr:crafting/gravel_fill/chert",
       "title": "Гарцована суміш",
-      "text": "A small amount of gravel can be applied to a base course to produce a simple path that offers a modest 10% boost to walking speed. Additional gravel fill can be added and tamped with the mattock to create a Macadam road that gives a 20% speed boost."
+      "text": "Невелику кількість гравію можна нанести на базовий шар, щоб створити просту стежку, яка забезпечує скромний 10% бонус до швидкості ходьби. Потім можна додати додатковий шар гравію та утрамбувати його за допомогою універсальної мотики, щоб створити щебеневу дорогу, яка дає 20% бонус до швидкості."
     },
     {
       "type": "patchouli:image",
-      "title": "Macadam Construction",
+      "title": "Будівництво щебеневої дороги",
       "images": [
         "rnr:textures/gui/book/macadam.png"
       ],

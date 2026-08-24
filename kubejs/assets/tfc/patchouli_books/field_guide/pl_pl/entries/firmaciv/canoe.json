@@ -41,7 +41,7 @@
           "B": "tfc:wood/stripped_log/douglas_fir[axis=x]"
         }
       },
-      "name": "Just a Log",
+      "name": "Zwykła kłoda",
       "text": "The first step in making a Dugout Canoe.",
       "enable_visualize": false
     },
@@ -81,7 +81,7 @@
           "B": "firmaciv:wood/canoe_component_block/douglas_fir[canoe_carved=11,facing=east,end=true]"
         }
       },
-      "name": "A Strange Sculpture",
+      "name": "Dziwna rzeźba",
       "text": "A fully carved Dugout Canoe, ready for hollowing out the hull.",
       "enable_visualize": false
     },
