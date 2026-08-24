@@ -1,0 +1,139 @@
+{
+    "name": "Metallurgy & Prospecting",
+    "category": "tfc:craftsmanship",
+    "icon": "tfc:ore/rich_hematite",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "In addition to sticks, twigs, and stones on the ground, you may encounter small pieces of ores. These are important, as they are one of the few sources of ore and metal before obtaining a pickaxe. There are three types of these indicators: $(li)Mineral Dust$(li)Gem Buds$(li)Small Ores."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "ABC"
+                    ],
+                    [
+                        "X0X"
+                    ]
+                ],
+                "mapping": {
+                    "0": "tfc:grass/loam",
+                    "X": "tfc:grass/loam",
+                    "A": "#tfg:dust_ore_indicators",
+                    "B": "#tfg:bud_ore_indicators",
+                    "C": "#tfg:small_ore_indicators"
+                }
+            },
+            "name": "Ground Ores",
+            "text": "When broken―dust indicators drop tiny piles of dust, gem buds drop chipped gems, and small ores give, well, small ores...",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:text",
+            "text": "These indicator pieces can serve two purposes: They can provide a source of metal, and more importantly, they indicate the presence of a larger vein of ore somewhere below them. Be sure to note where indicators are on your map so you may return to excavate the vein later.$(br2)⚠ Be careful when picking up mineral dusts as some of them may be $(l:tfg_ores/hazards)Hazardous$(), like Cobaltite or Galena for example."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "extraction",
+            "text": "Ores yield a specific $(thing)millibucket (mB)$() amount of actual metal which can be extracted through refining, melting, and casting. The amount obtained from an ore depends on the items \"richness\", chemical composition, and refinement.$(br2)Ore richness―from least to most rich―goes small, poor, normal, rich.",
+            "title": "Extraction"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Some ores go by names you may be unfamiliar with. For example, if you are looking for copper you shouldn't just look for copper ore. There are many different variates available. To understand what an ore piece will yield you can search its recipes in $(d)E$(a)M$(b)I$(), or look at its tooltip."
+        },
+        {
+            "type": "patchouli:image",
+            "width": 1024,
+            "texture_width": 1024,
+            "height": 1024,
+            "texture_height": 1024,
+            "images": [
+                "tfg:textures/gui/field_guide/prospecting/ore_item.png"
+            ],
+            "text": "$(2)◼$() - Chemical formula.$(br)$(4)◼$() - Metal yield when melted.$(br)$(3)◼$() - Melting temperature.",
+            "title": "Understanding Ore",
+            "border": false
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "casting",
+            "title": "Casting",
+            "text": "To begin casting your first metal you will use a $(l:craftsmanship/pottery#vessel)Small Vessel$(). Place enough meltable ore inside of it to fill your desired $(l:craftsmanship/pottery#mold)Mold$(). For example, to make a saw blade you will need at least 144mb of metal.$(br)You can view the amount of material in the vessel by looking at its tooltip.$(br)Be aware that a vessel has a max fluid capacity of 3,024mb!"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "You can mix and match the types of ore inside a vessel, however all the ore must yield the same fluid metal, or you will create an $(l:craftsmanship/metallurgy#alloying)Alloy$().$(br)Place your filled vessel into a $(l:craftsmanship/pit_kiln)Pit Kiln$() to melt its contents. Once finished you will have a brief window of time to cast, so keep an eye on your kiln!"
+        },
+        {
+            "type": "patchouli:crafting",
+            "text": "Careful, the vessel will be hot! Craft $(thing)Wooden Tongs$() with two sticks and a knife and hold them in your offhand to handle the hot vessel safely.",
+            "recipe": "tfchotornot:crafting/tongs/wood"
+        },
+        {
+            "type": "patchouli:image",
+            "text": "Hold the vessel and $(item)$(k:key.use)$() to open the $(thing)Casting$() interface.",
+            "images": [
+                "tfc:textures/gui/book/gui/casting.png"
+            ],
+            "border": false
+        },
+        {
+            "type": "patchouli:text",
+            "text": "With the casting interface open, place your empty fired mold in the center slot. It will fill up as long as the vessel remains liquid. (If the vessel solidifies, it can be reheated in another pit kiln.) Once the mold is full, it can be removed and left to cool. Once cool, the mold and its contents can be extracted by using the mold, or putting it in the crafting grid."
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "gtceu:shaped/pickaxe_copper",
+            "text": "You are now able to craft your first pickaxe! Find enough copper to make a pickaxe head, fire a pickaxe mold and melt the ore using a pit kiln, then cast a head. Slap it on a stick, and voilà! You can now dig for $(l:the_world/earth_vein_index)Ore$()."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tfc:metal/chisel/copper",
+            "text": "A couple other important metal tools are available for progression as well. The $(l:mechanics/chisel)Chisel$() is useful for working with stone blocks for building and required for other recipes."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "gtceu:copper_saw",
+            "text": "The saw allows you turn wood logs into $(l:mechanics/support_beams)support beams$() and $(thing)lumber$(), which can further be crafted into planks, the crafting bench, barrels, and chests, among other things. It is also useful to make a $(l:firmaciv/canoe)canoe$()."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "alloying",
+            "title": "Alloying",
+            "text": "$(thing)Alloys$() are a method of mixing two or more metals together, to create a new, stronger metal. During the early game, while copper is a useful metal for creating tools, the next tier of metal is one of three types of $(thing)Bronze$(). They are each slightly different in regard to durability, efficiency, and attack damage. An alloy is made up of component $(thing)metals$() which must each satisfy a specific percentage of the overall whole."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "One method through which alloys can be made during the early game is through the usage of a $(thing)Small Vessel$(). The process is very similar to $(l:craftsmanship/matallurgy#casting)Casting$(). However, instead of using just a single metal, place enough ore pieces inside the vessel in the correct ratio to form a known alloy mix."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "You can find alloy ratios by looking at their liquid alloying recipe in $(d)E$(a)M$(b)I$(). Alloys will except a range of values, so percentages do not have to be perfect. For example, an idealized ratio for Bronze is 75% Copper, and 25% Tin. Which means that for 144mB of Bronze you will need 108mB of Copper and 36mB of Tin."
+        },
+        {
+            "type": "patchouli:image",
+            "width": 1024,
+            "texture_width": 1024,
+            "height": 1024,
+            "texture_height": 1024,
+            "images": [
+                "tfg:textures/gui/field_guide/prospecting/alloy.png"
+            ],
+            "text": "Example alloy recipe for bronze showing 70-80% Copper + 20-30% Tin = Bronze.",
+            "title": "Alloy Recipe",
+            "border": false
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tag:forge:ingots/brass,tag:forge:ingots/rose_gold,tag:forge:ingots/sterling_silver,tag:forge:ingots/tin_alloy,tag:forge:ingots/red_alloy,tag:forge:ingots/potin,tag:forge:ingots/cobalt_brass,tag:forge:ingots/invar,tag:forge:ingots/brass",
+            "anchor": "utility_alloys",
+            "text": "Many alloys are not suitable for creating tools but are still necessary for progression. Some of the most important utility alloys for early progression are $(thing)Brass$(), $(thing)Rose Gold$(), $(thing)Sterling Silver$(), $(thing)Tin Alloy$(), and $(thing)Red Alloy$().",
+            "title": "Utility Alloys"
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 3
+}

@@ -1,0 +1,224 @@
+{
+    "name": "Clay & Pottery",
+    "category": "tfc:craftsmanship",
+    "icon": "minecraft:clay_ball",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "anchor": "index",
+            "text": "$(li)$(bold)$(l:craftsmanship/pottery#clay)Clay$()$(li2)$(l:craftsmanship/pottery#vessel)Vessels$()$(li2)$(l:craftsmanship/pottery#jug)Jugs$()$(li2)$(l:craftsmanship/pottery#mold)Molds$()$(li)$(bold)$(l:craftsmanship/pottery#kaolin_clay)Kaolin Clay$()$(li2)$(l:craftsmanship/pottery#kaolinite_powder)Kaolinite Powder$()$(li)$(bold)$(l:craftsmanship/pottery#fire_clay)Fire Clay$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "clay",
+            "title": "Clay",
+            "text": "$(thing)Clay$() is an incredibly useful and balanced material which can be used for pottery. It can prove challenging to locate at first. Clay is usually hidden by grass, but it is often found in two locations. In areas with at least 175mm $(l:the_world/climate#rainfall)Annual Rainfall$(), clay can be found in patches all over the place, usually marked by the presence of certain $(thing)Plants$()."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "   ",
+                        " C ",
+                        "   "
+                    ],
+                    [
+                        "XXX",
+                        "X0X",
+                        "XXX"
+                    ]
+                ],
+                "mapping": {
+                    "0": "tfc:clay_grass/sandy_loam",
+                    "X": "tfc:clay_grass/sandy_loam",
+                    "C": "#tfc:clay_indicators"
+                }
+            },
+            "name": "Clay Indicators",
+            "text": "Clay, with one of the plants that may indicate its presence.",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(thing)Athyrium Fern$(), $(thing)Canna$(), $(thing)Goldenrod$(), $(thing)Pampas Grass$(), $(thing)Perovskia$(), and $(thing)Water Canna$() all indicate the presence of clay nearby. Clay can also be found in smaller deposits close to water sources, such as rivers, lakes, or ponds.$(br2)Like with rocks, clay can be knapped to form new items. It requires five clay in your hand to knap. Unlike rocks, if you make a mistake, you can simply close the knapping interface, reshape your clay, and try again."
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/gui/clay_knapping.png"
+            ],
+            "text": "The Knapping Interface.",
+            "border": false
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "vessel",
+            "text": "The small vessel is one such item. Like all pottery items, it must be $(l:https://en.wikipedia.org/wiki/Pottery)fired$() before it can be used. Firing is a process of $(l:mechanics/heating)heating$() the item up to a point where the clay will turn into a hard $(thing)Ceramic$() material, which requires heating to 1400 °C, or $(e)$(bold)$(t:Yellow White)Yellow White$().$(br2)In order to do this in the early game, you will need to use a $(l:craftsmanship/pit_kiln)Pit Kiln$().",
+            "title": "Small Vessel"
+        },
+        {
+            "type": "tfc:knapping_recipe",
+            "recipe": "tfc:clay_knapping/vessel",
+            "text": "Small Vessels can store items to save space in your inventory as well as $(l:cooking/decay#vessels)Preserving Food Items$(). Small vessels have a limit of 16 items per-slot and cannot fit items larger than $(l:getting_started/size_and_weight)\"small\"$()."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "jug",
+            "text": "Another useful pottery item is the $(thing)Jug$(). It can be used to pick up and $(thing)drink$() fluids, such as fresh water.$(br2)In order to use it, simply $(item)$(k:key.use)$() the jug on the fluid in the world. Then use the jug in order to drink from it. The jug is a $(l:cooking/drinking_containers)Drinking Container$() that can hold $(thing)100 mB$() of fluid at a time.",
+            "title": "Jug"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "mold",
+            "text": "Clay is also necessary for making $(thing)Molds$(). Molds can have molten metal poured into them, which will eventually solidify into the shape of a mold. The item and potentially the mold can then be retrieved by using $(item)$(k:key.use)$() on the mold.$(br2)All molds have a limit of not being able to contain molten metal past the bronze-age. Except ingot molds.",
+            "title": "Molds"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "Mold Types",
+            "item": "tag:tfc:unfired_molds,tag:tfc:fired_molds",
+            "text": "There are many different types of molds. The most useful of which are the $(item)Ingot$() and $(item)Tool Head$() molds.$(br)Ingot molds require $(thing)144mb$() of molten metal to produce one ingot.$(br)Tool head molds replace traditional stone knapping for tools and usually require $(thing)144mb$() of fluid, however some tool types may require less or more."
+        },
+        {
+            "type": "tfc:heat_recipe",
+            "recipe": "tfc:heating/ingot_mold",
+            "text": "The mold then needs to be fired―like all clay items―to be usable. Likely in a $(l:getting_started/pit_kiln)Pit Kiln$().$(br2)Once it is fired, molten metal can be poured in. Once the metal has cooled enough, it can be extracted."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tfc:ceramic/ingot_mold{tank:{\"Amount\":100,\"FluidName\":\"tfc:metal/copper\"}}",
+            "title": "Casting",
+            "link_recipes": false,
+            "text": "You will very likely run into scenarios where you produce tiny amounts of excess melted metal. It is recommended to pour it into an ingot mold and save for the next time you need to cast that metal. Trying to produce perfect 144mb ratios of alloys is not feasible or worth the effort until you reach steam-age processing."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "kaolin_clay",
+            "title": "Kaolin Clay",
+            "item": "tfc:kaolin_clay",
+            "text": "Kaolin Clay is required to make $(l:craftsmanship/pottery#fire_clay)Fire Clay$(). It can be found spawning between Y=75-110 in Plateaus, Rolling Hills and Highlands (and in their $(t:Surface rock of Limestone, Dolomite, Chalk, or Marble)Karst$() $(t:Burren, Cenote, Doline, Shilin, or Tower Karst)variants$()), Old Mountains, and Shield Volcanoes at a $(l:the_world/climate#temperature)temperature$() of at least 18°C, with a $(l:the_world/climate#rainfall)rainfall$() of at least 300mm. The $(thing)Blood Lily$() flower grows on Kaolin clay, which can be up to 35 blocks below."
+        },
+        {
+            "type": "tfc:multimultiblock",
+            "text": "Generally, go $(thing)South East$() to increase temperature and humidity.",
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:plant/blood_lily",
+                        "Y": "tfc:kaolin_clay_grass"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:plant/blood_lily",
+                        "Y": "tfc:red_kaolin_clay"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:plant/blood_lily",
+                        "Y": "tfc:white_kaolin_clay"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:plant/blood_lily",
+                        "Y": "tfc:pink_kaolin_clay"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tfc:powder/kaolinite",
+            "anchor": "kaolinite_powder",
+            "text": "Kaolinite powder is made by heating $(l:craftsmanship/kaolin_clay)Kaolin Clay$(). However, the process is not perfect, and only 20% of clay will form powder!$(br2)In order to mass produce kaolinite powder early on, it is recommended to fill small vessels with kaolin clay blocks and then place these vessels in a $(l:craftsmanship/pit_kiln)Pit Kiln$() to cook on-site. With this method you can cook up to 1,024 kaolin clay at a time per pit kiln."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "The amount of kaolinite powder you will need is enormous. If you have traveled very far to acquire kaolin clay and wish to make the most of your trip it is recommended to not return until you have at least 7 stacks (448 items) of $(n)kaolinite dust$(). This will ensure you have enough for a full-size $(l:craftsmanship/blast_furnace)Blast Furnace$(), $(l:craftsmanship/crucible)Crucibles$(), and molds. You should also bring back at least 20 blocks of kaolin clay for $(l:craftsmanship/glassworking)Glassworking$()."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "Fire Clay",
+            "anchor": "fire_clay",
+            "item": "tfc:fire_clay",
+            "text": "The list of uses of fire clay is small, but all of them are important. Fire clay is a stronger variant of clay that has better heat resistance. It is used to make things that have to get very hot!"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "tfc:crafting/fire_clay",
+            "text": "Fire clay is made from $(l:the_world/earth_vein_index#deep_graphite)Graphite$() crushed in a $(l:craftsmanship/quern)Quern$(), as well as $(l:craftsmanship/pottery#kaolinite_powder)Kaolinite Powder$()."
+        },
+        {
+            "type": "tfc:knapping_recipe",
+            "recipe": "tfc:fire_clay_knapping/fire_ingot_mold",
+            "text": "$(thing)Fire Ingot Molds$() are a stronger type of $(l:getting_started/pottery#mold)Ingot Mold$() that has just a 1 in 100 chance of breaking, compared to 1 in 10 for a regular ingot mold."
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Further Reading",
+            "anchor": "relations",
+            "entries": [
+                "tfc:the_world/geology",
+                "tfc:the_world/climate"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 2,
+    "extra_recipe_mappings": {
+        "minecraft:clay": 1,
+        "tag:tfc:clay_indicators": 3,
+        "tfg:tfc:molds": 8,
+        "tfc:kaolin_clay": 12,
+        "tfc:plant/blood_lily": 13,
+        "tfc:powder/kaolinite": 14,
+        "tfc:fire_clay": 16
+    }
+}

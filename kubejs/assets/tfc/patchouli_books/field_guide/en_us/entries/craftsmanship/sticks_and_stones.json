@@ -1,0 +1,200 @@
+{
+	"name": "Sticks & Stones",
+	"category": "tfc:craftsmanship",
+	"icon": "tfg:flint_arrow_head",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "In $(bold)$(#ff0fb7)TerraFirma$()$(bold)$(#595959)Greg$(), the first things you can obtain are sticks, twigs, flint, and loose rocks. They can be found in almost every climate, lying scattered on the ground. $(item)$(k:key.use)$() or break these to pick them up."
+		},
+		{
+			"type": "patchouli:multiblock",
+			"multiblock": {
+				"pattern": [
+					[
+						"     ",
+						"     ",
+						"  0  ",
+						"     ",
+						"     "
+					],
+					[
+						"1    ",
+						" 2  4",
+						"   3 ",
+						" 4   ",
+						"6   5"
+					],
+					[
+						"GGGGG",
+						"GGGGG",
+						"GGGGG",
+						"GGGGG",
+						"GGGGG"
+					]
+				],
+				"mapping": {
+					"G": "tfc:grass/sandy_loam",
+					"1": "#tfc:loose_rocks[count=1]",
+					"2": "#tfc:loose_rocks[count=2]",
+					"3": "#tfc:loose_rocks[count=3]",
+					"4": "tfc:groundcover/stick",
+					"5": "#tfc:twigs",
+					"6": "tfc:groundcover/flint"
+				}
+			},
+			"name": "Example",
+			"text": "A smattering of common sticks and stones.",
+			"enable_visualize": false
+		},
+		{
+			"type": "patchouli:text",
+			"text": "In addition to gathering sticks and twigs on the ground, sticks can also be obtained by breaking leaves with your fist. Once you have a number of rocks and sticks, you are ready to start $(thing)Knapping$(). Knapping is a process where two rocks are hit together, to form a particular shape. In order to knap, first hold at least two rocks in your hand, then right click in the air, which will open up the $(thing)Knapping Interface$()."
+		},
+		{
+			"type": "patchouli:image",
+			"images": [
+				"tfc:textures/gui/book/gui/rock_knapping.png"
+			],
+			"text": "The Knapping Interface.",
+			"border": false
+		},
+		{
+			"type": "patchouli:text",
+			"text": "In order to knap a particular item, you want to remove squares until you form the desired pattern by $(item)$(k:key.use)$() them. For example, create a knife blade by matching the recipe shown to the right.$(br2)Like crafting recipes, the location of the desired pattern doesn't matter for the output, and some recipes have multiple variants that are valid."
+		},
+		{
+			"type": "tfc:rock_knapping_recipe",
+			"anchor": "knife",
+			"recipes": [
+				"tfg:rock_knapping/stone_knife_head",
+				"tfg:rock_knapping/stone_knife_head_1",
+				"tfg:rock_knapping/stone_knife_head_2",
+				"tfg:rock_knapping/stone_knife_head_3"
+			],
+			"text": "A knife blade, crafted from several different rock types."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "flint",
+			"title": "Flint Knapping",
+			"item": "gtceu:flint_hoe_head,gtceu:flint_knife_head,gtceu:flint_shovel_head,gtceu:flint_axe_head,gtceu:flint_sword_head,tfg:flint_club_head,tfg:flint_arrow_head",
+			"text": "Flint can be used to craft many of the same items that can be knapped by stone as well as unique items like arrow heads. Flint items are often far superior to stone items stat-wise. You can easily locate flint by checking the bottom of rivers and lakes for loose flint groundcover."
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "gtceu:shaped/knife_stone",
+			"text": "All stone tool heads can be crafted with a stick or twig to assemble them into a tool.$(br2)The stone knife can be used to harvest $(thing)Straw$() by breaking plants."
+		},
+		{
+			"type": "tfc:rock_knapping_recipe",
+			"recipes": [
+				"tfg:rock_knapping/stone_axe_head"
+			],
+			"text": "$(thing)Axes$() can be used to cut down entire trees, logs and leaves included. Axes are required for obtaining $(l:the_world/wild_fruits#fruit_trees)Fruit Tree Saplings$()."
+		},
+		{
+			"type": "tfc:rock_knapping_recipe",
+			"recipes": [
+				"tfg:rock_knapping/stone_shovel_head"
+			],
+			"text": "$(thing)Shovels$() can be used to dig soil type blocks. They can also be used to create $(thing)Paths$() by $(item)using$() them on $(thing)Dirt$() or $(thing)Grass$()."
+		},
+		{
+			"type": "tfc:rock_knapping_recipe",
+			"recipes": [
+				"tfg:rock_knapping/stone_hoe_head",
+				"tfg:rock_knapping/stone_hoe_head_1",
+				"tfg:rock_knapping/stone_hoe_head_2"
+			],
+			"text": "$(thing)Hoes$() are useful tools for $(l:agriculture/growing_crops)Farming$(), but they can also be used to cut down leaves and other plant matter like knives."
+		},
+		{
+			"type": "tfc:rock_knapping_recipe",
+			"recipes": [
+				"tfg:rock_knapping/stone_hammer_head"
+			],
+			"text": "$(thing)Hammers$() can be used as $(l:mechanics/damage_types)Crushing$() weapons, but are more important tools used for $(l:getting_started/primitive_anvils)Forging$()."
+		},
+		{
+			"type": "tfc:rock_knapping_recipe",
+			"recipes": [
+				"tfc:rock_knapping/javelin_head_sedimentary",
+				"tfc:rock_knapping/javelin_head_metamorphic",
+				"tfc:rock_knapping/javelin_head_igneous_extrusive",
+				"tfc:rock_knapping/javelin_head_igneous_intrusive"
+			],
+			"text": "Finally, a $(thing)Javelin$() can be used as a primitive weapon, capable of being thrown at targets, or used as a $(l:mechanics/damage_types)Piercing$() weapon."
+		},
+        {
+            "type": "patchouli:relations",
+            "title": "Further Reading",
+            "anchor": "relations",
+            "entries": [
+				"tfc:the_world/wild_fruits",
+                "tfc:agriculture/growing_crops",
+                "tfc:the_world/earth_tree_index",
+                "tfc:the_world/geology"
+            ]
+        }
+	],
+	"read_by_default": true,
+	"sortnum": 0,
+	"extra_recipe_mappings": {
+		"tfc:stone/knife_head/sedimentary": 6,
+		"tfc:stone/knife_head/metamorphic": 6,
+		"tfc:stone/knife_head/igneous_extrusive": 6,
+		"tfc:stone/knife_head/igneous_intrusive": 6,
+		"tfc:stone/knife/sedimentary": 6,
+		"tfc:stone/knife/metamorphic": 6,
+		"tfc:stone/knife/igneous_extrusive": 6,
+		"tfc:stone/knife/igneous_intrusive": 6,
+		"gtceu:flint_hoe_head": 7,
+		"gtceu:flint_knife_head": 7,
+		"gtceu:flint_shovel_head": 7,
+		"gtceu:flint_axe_head": 7,
+		"gtceu:flint_sword_head": 7,
+		"tfg:flint_club_head": 7,
+		"tfg:flint_arrow_head": 7,
+		"tfc:stone/axe_head/sedimentary": 8,
+		"tfc:stone/axe_head/metamorphic": 8,
+		"tfc:stone/axe_head/igneous_extrusive": 8,
+		"tfc:stone/axe_head/igneous_intrusive": 8,
+		"tfc:stone/axe/sedimentary": 8,
+		"tfc:stone/axe/metamorphic": 8,
+		"tfc:stone/axe/igneous_extrusive": 8,
+		"tfc:stone/axe/igneous_intrusive": 8,
+		"tfc:stone/shovel_head/sedimentary": 9,
+		"tfc:stone/shovel_head/metamorphic": 9,
+		"tfc:stone/shovel_head/igneous_extrusive": 9,
+		"tfc:stone/shovel_head/igneous_intrusive": 9,
+		"tfc:stone/shovel/sedimentary": 9,
+		"tfc:stone/shovel/metamorphic": 9,
+		"tfc:stone/shovel/igneous_extrusive": 9,
+		"tfc:stone/shovel/igneous_intrusive": 9,
+		"tfc:stone/hoe_head/sedimentary": 10,
+		"tfc:stone/hoe_head/metamorphic": 10,
+		"tfc:stone/hoe_head/igneous_extrusive": 10,
+		"tfc:stone/hoe_head/igneous_intrusive": 10,
+		"tfc:stone/hoe/sedimentary": 10,
+		"tfc:stone/hoe/metamorphic": 10,
+		"tfc:stone/hoe/igneous_extrusive": 10,
+		"tfc:stone/hoe/igneous_intrusive": 10,
+		"tfc:stone/hammer_head/sedimentary": 11,
+		"tfc:stone/hammer_head/metamorphic": 11,
+		"tfc:stone/hammer_head/igneous_extrusive": 11,
+		"tfc:stone/hammer_head/igneous_intrusive": 11,
+		"tfc:stone/hammer/sedimentary": 11,
+		"tfc:stone/hammer/metamorphic": 11,
+		"tfc:stone/hammer/igneous_extrusive": 11,
+		"tfc:stone/hammer/igneous_intrusive": 11,
+		"tfc:stone/javelin_head/sedimentary": 12,
+		"tfc:stone/javelin_head/metamorphic": 12,
+		"tfc:stone/javelin_head/igneous_extrusive": 12,
+		"tfc:stone/javelin_head/igneous_intrusive": 12,
+		"tfc:stone/javelin/sedimentary": 12,
+		"tfc:stone/javelin/metamorphic": 12,
+		"tfc:stone/javelin/igneous_extrusive": 12,
+		"tfc:stone/javelin/igneous_intrusive": 12
+	}
+}
