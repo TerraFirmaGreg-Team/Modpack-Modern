@@ -1,0 +1,27 @@
+{
+  "name": "Паста",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:textures/item/food/cooked_pasta.png",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Существует два типа $(thing)Лапши$(): Яичная и Рисовая. Рисовая мука, кукурузная мука, соль и 1000 мБ молока вместе в $(l:firmalife/mixing_bowl)Миска для смешивания$() создают $(thing)Рисовую лапшу$(). Мука, яйцо, соль и 1000 мБ молока создают $(thing)Яичную лапшу$()."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/lasagna",
+      "text": "$(thing)Лазанью$() можно приготовить непосредственно из яичной лапши с $(l:firmalife/pizza#tomato_sauce)Томатным соусом$(), приготовленным мясом и орегано, которую затем можно запечь в $(l:firmalife/ovens)Печи$()."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Затем паста доводится до готовности путем варки в воде. Для любого вида лапши ее необходимо достать из горшка, щелкнув по ней $(thing)Миской$()."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/tomato_pasta",
+      "text": "Скрафтинг приготовленной яичной лапши (пасты) с томатным соусом дает вкусную пасту с томатным соусом!"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 27
+}

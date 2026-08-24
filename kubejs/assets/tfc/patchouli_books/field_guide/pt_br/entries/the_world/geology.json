@@ -1,0 +1,87 @@
+{
+  "name": "Geologia",
+  "category": "tfc:the_world",
+  "icon": "tfc:rock/raw/shale",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "O mundo de TerraFirmaCraft é dividido em grandes continentes - massas de terra com muitos quilômetros de largura e separadas por oceanos. Nelas, você pode encontrar cadeias de montanhas, rios e muitos outros ambientes."
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "tfc:textures/gui/book/biomes/regions.png"
+      ],
+      "text": "Um mundo típico do TFC visto em larga escala",
+      "border": true
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "rocks",
+      "text": "O mundo também está dividido em diferentes tipos de $(thing)Rocha$(). As regiões rochosas podem ter mais de um quilômetro de largura e geralmente haverá duas ou três camadas de rocha diferentes sob seus pés o tempo todo. Como diferentes minérios são encontrados em diferentes tipos de rochas, a localização de tipos de rocha específicos pode ser muito importante para encontrar recursos como $(l:the_world/ores_and_minerals)Minérios$(), o que geralmente aparece apenas em certos tipos de rocha.",
+      "title": "Camadas de Rocha"
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "tfc:textures/gui/book/biomes/rock_layers.png"
+      ],
+      "text": "Seção transversal de um mundo TFC.",
+      "border": true
+    },
+    {
+      "type": "patchouli:text",
+      "text": "O fundo do oceano é composto por rochas $(l:the_world/geology#igneous_extrusive)ígneas extrusivas$() - rochas formadas por magma que resfria rapidamente. Abaixo da rocha ígnea extrusiva, provavelmente haverá uma rocha $(l:the_world/geology)ígnea intrusiva$() do mesmo $(item)grau$().$(br2)Por exemplo, sob o $(thing)Basalto$() (uma rocha ígnea extrusiva, máfica), provavelmente haverá $(thing)Gabro$() (uma rocha ígnea intrusiva, máfica).",
+      "title": "Fundo dos Oceanos"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(li)$(l:https://pt.wikipedia.org/wiki/Félsico)Rochas Félsicas$() são $(thing)Granito$() e $(thing)Riólito$().$(li)$(l:https://pt.wikipedia.org/wiki/Composição_intermédia)Rochas Intermédias$() são $(thing)Andesito$(), $(thing)Dacito$() e $(thing)Diorito$().$(li)$(l:https://en.wikipedia.org/wiki/Mafic)Rochas Máficas$() são $(thing)Basalto$() e $(thing)Gabro$().",
+      "title": "Graus de Rochas Ígneas"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "A camada superior de rocha em um continente será ou ígnea extrusiva ou $(l:the_world/geology#sedimentary)sedimentar$(). Abaixo das rochas sedimentares, provavelmente haverá formas $(l:the_world/geology#metamorphic)metamorfoseadas$() da rocha acima.$(br2)Por exemplo, $(thing)Mármore$() (uma rocha metamórfica) provavelmente será encontrada abaixo de $(thing)Calcário$() ou $(thing)Giz$(). Rochas metamórficas de alto grau são encontradas profundamente abaixo de outras rochas metamórficas ou ígneas."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(li)$(thing)Ardósia$() se forma sob $(thing)Folhelho$(), $(thing)Argilito$() e $(thing)Conglomerado$().$(li)$(thing)Mármore$() se forma sob $(thing)Calcário$(), $(thing)Dolomita$() e $(thing)Giz$().$(li)$(thing)Quartzito$() se forma sob $(thing)Cherte$().$(li)$(thing)Filito$() se forma sob $(thing)Ardósia$().$(li)$(thing)Folhelho$() e $(thing)Gnaisse$() se formam sob $(thing)Filito$(), ou outras rochas ígneas intrusivas.",
+      "title": "Rochas Metamórficas"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Finally, in mountainous regions you might also see $(thing)uplift$(), where a metamorphic or igneous intrusive rock is found on the surface. Uplift rocks can be found above other continental sedimentary or higher-grade metamorphic rocks.$(br2)In addition, $(l:https://en.wikipedia.org/wiki/Dike_%28geology%29)Dikes$() - small vertical slices of igneous intrusive rock - may appear scattered around the world,",
+      "title": "Uplift Regions"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "protruding through the upper layers of rocks.$(br2)With all that in mind, the next few pages list the rocks of all four categories: $(thing)Sedimentary$(), $(thing)Metamorphic$(), $(thing)Igneous Extrusive$(), and $(thing)Igneous Intrusive$(). These categories determine where the rock can spawn (see the previous pages), and also what ores may spawn in this rock."
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "sedimentary",
+      "text": "$(l:https://en.wikipedia.org/wiki/Sedimentary_rock)Sedimentary$() rocks are formed by the accumulation or deposition of mineral or organic particles. They are typically found on the top layers of rock in continental areas. They are:$(br)$(li)Shale$(li)Claystone$(li)Limestone$(li)Conglomerate$(li)Dolomite$(li)Chert$(li)Chalk",
+      "title": "Sedimentar"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "metamorphic",
+      "text": "$(l:https://en.wikipedia.org/wiki/Metamorphic_rock)Metamorphic$() rocks are created by a process called metamorphism. They can be found underneath corresponding sedimentary or igneous rock, or in uplift areas. They are:$(br)$(li)Quartzite$(li)Slate$(li)Phyllite$(li)Schist$(li)Gneiss$(li)Marble",
+      "title": "Metamórfica"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "igneous_extrusive",
+      "text": "$(l:https://en.wikipedia.org/wiki/Igneous_rock#Extrusive)Igneous Extrusive$() rocks are formed from magma cooling on the Earth's surface. They can be found on the top layer of rock in continental areas, or on the floor of oceans. They are:$(br)$(li)Rhyolite$(li)Basalt$(li)Andesite$(li)Dacite",
+      "title": "Ígneo extrusivo"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "igneous_intrusive",
+      "text": "$(l:https://en.wikipedia.org/wiki/Igneous_rock#Intrusive)Igneous Intrusive$() rocks are formed from magma which cooled under the Earth's crust. They can be found deep underground, or rarely in dikes or uplift areas. They are:$(br)$(li)Granite$(li)Diorite$(li)Gabbro",
+      "title": "Intrusivo ígneo"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 0
+}

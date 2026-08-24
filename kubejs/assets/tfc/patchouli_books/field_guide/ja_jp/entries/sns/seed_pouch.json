@@ -1,0 +1,18 @@
+{
+  "name": "種袋",
+  "category": "tfc:sacks_n_such",
+  "icon": "sns:seed_pouch",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "sns:seed_pouch",
+      "text": "$(item)種袋$()は、様々な種類の種を収納するための$(l:sns/item_containers)アイテムコンテナ$()です。農業を行う際に非常に役立ちます。$(br2)基本的には27のスロットを持ち、それぞれ64個の種を収納できます。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "sns:crafting/seed_pouch",
+      "text": "モッドパック作成者や追加の種を追加したい人向けに、アイテムタグ$(bold)sns:allowed_in_seed_pouch$()があります。ほとんどのアドオンは自動的にサポートされるはずです。"
+    }
+  ],
+  "read_by_default": true
+}

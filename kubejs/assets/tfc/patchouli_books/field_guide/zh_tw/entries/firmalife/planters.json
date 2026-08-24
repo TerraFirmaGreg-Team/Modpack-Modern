@@ -1,0 +1,83 @@
+{
+  "name": "種植盆",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:large_planter",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "anchor": "planters",
+      "text": "$(thing)種植盆$()用於在$(l:firmalife/greenhouse)溫室$()內種植$(thing)作物$()。要查看種植盆的狀態，你可以手持一把$(thing)鋤$()觀察它。種植盆中的作物會消耗$(l:mechanics/fertilizers)營養$()，其方式類似於$(l:mechanics/crops)作物$()。種植盆應放置在有效的溫室內，並由一個$(l:firmalife/climate_station)氣象站$()激活。種植盆需要至少一些陽光才能工作。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/watering_can",
+      "text": "種植盆必須要$(thing)澆水$()才能生長。這需要使用$(thing)噴壺$()，它用$(thing)木桶$()、一個裝$(thing)水$()的容器和$(thing)木材$()來合成。手持噴壺按下$(item)$(k:key.use)$()可以為附近的種植盆澆水。對著水源按$(item)$(k:key.use)$()就可以為其重新灌滿水。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/large_planter",
+      "text": "$(thing)大型種植盆$()是最簡單的一種種植盆。它們從單粒種子開始種植一株作物，成熟後可使用$(item)$(k:key.use)$()收穫。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "大型種植盆可以種植$(thing)綠豆$()、$(thing)西紅柿$()、$(thing)甘蔗$()、$(thing)黃麻$()和$(thing)穀物$()。但如果要種植穀物，你需要一個$(thing)銅$()或更高等級的溫室。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/quad_planter",
+      "text": "$(thing)四槽種植盆$()可以同時種植四株作物。這些作物都會從同一個養料池汲取營養，成熟後可分別使用$(item)$(k:key.use)$()來單獨收穫。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "四槽種植盆可以種植$(thing)甜菜$()、$(thing)捲心菜$()、$(thing)胡蘿蔔$()、$(thing)大蒜$()、$(thing)洋蔥$()、$(thing)馬鈴薯$()和$(thing)大豆$()。這些農作物都可以在任意等級的溫室中種植。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/bonsai_planter",
+      "text": "$(thing)盆栽種植盆$()可以用樹苗來種植小型果樹。按$(item)$(k:key.use)$()就可以收穫水果。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "盆栽種植盆可以種植除$(thing)香蕉$()外的任何果樹，而香蕉需要$(thing)懸掛種植盆$()。它們都會消耗氮作為主要的營養，並且需要$(thing)鐵$()或更高等級的溫室才能種植。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/hanging_planter",
+      "text": "$(thing)懸掛種植盆$()可以倒著種植農作物。成熟後可以按$(item)$(k:key.use)$()收穫。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "懸掛種植盆可以用種子種植$(thing)西葫蘆$()，以及用樹苗種植$(thing)香蕉$()。西葫蘆可以在任意等級的溫室種植，但香蕉需要$(thing)鐵$()或更高等級的溫室。懸掛種植盆必須被掛在一個實心方塊的下方。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/trellis_planter",
+      "text": "$(thing)格子種植架$()可以種植各種漿果叢。漿果可以按$(item)$(k:key.use)$()收穫。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "格子種植架具有$(thing)繁殖$()漿果叢的特性。如果一個種植架放置在另一個之上，並且下方的架子上長有成熟的漿果叢，則上方的架子有可能繁殖出新的漿果叢。格子種植架可以種植除$(thing)蔓越莓$()外的任何漿果叢，但需要$(thing)鐵$()或更高級的溫室才能運作。這些漿果叢偏好氮元素。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/hydroponic_planter",
+      "text": "$(thing)水培種植盆$()用於種植水稻和蔓越莓。其運作方式與四格種植盆相同，只是無需澆水。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "水培種植盆必須在其下方安裝一根$(li)$(l:firmalife/irrigation)灑水器管道$()來提供水源。沒有這根管道，作物將無法生長。每個水泵操作站可以供給的水培種植園沒有嚴格的數量限制。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/sweeper",
+      "text": "$(thing)清掃器$()用於收割四槽種植盆和水培種植盆以外的種植盆。其底部必須連接一個旋轉的$(thing)傳動軸$()。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/picker",
+      "text": "$(thing)採摘器$()可通過上方的紅石信號激活。它會向下延伸，以採集四槽種植盆和水培種植盆中的作物。"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 9
+}

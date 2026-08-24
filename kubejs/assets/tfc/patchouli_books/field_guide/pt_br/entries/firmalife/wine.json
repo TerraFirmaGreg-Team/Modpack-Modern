@@ -1,0 +1,107 @@
+{
+  "name": "Vinificação",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:textures/item/food/white_grapes.png",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)Vinificação$() é a ciência de transformar uvas em álcool. Há tempo gasto reunindo recursos e elaborando esses recursos juntos, além de tempo gasto $(thing)aproveitando$() o produto. Observe que o vinho no Firmalife (por si só) não tem uso especial além do álcool comum do TFC. Você deve produzi-lo apenas se quiser $(thing)se divertir$()."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "firmalife:plant/wild_red_grapes",
+      "link_recipes": false,
+      "text": "As uvas tintas nascem entre 0 e 30°C e 125 a 500mm de chuva, ou quase toda a área habitável."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "firmalife:plant/wild_white_grapes",
+      "link_recipes": false,
+      "text": "As uvas brancas nascem entre 0 e 30°C e 125 a 500mm de chuva, ou quase toda a área habitável."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/grape_trellis_post",
+      "text": "As uvas devem ser cultivadas em treliças construídas com esses postes especiais e fibra de juta."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Para construir uma treliça, coloque dois postes um sobre o outro. Mova dois blocos para a esquerda ou direita e repita a ação. Em seguida, clique $(item)$(k:key.use)$() na lateral de um dos postes superior e inferior com $(thing)Fibra de Juta$() para amarrar linhas entre os postes. Treliças de uva podem ser encadeadas horizontalmente para criar fileiras de uvas."
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "Uma treliça de uva.",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "XYX"
+            ],
+            [
+              "X0X"
+            ]
+          ],
+          "mapping": {
+            "X": "firmalife:grape_trellis_post[axis=x,string_plus=true,string_minus=true]",
+            "0": "firmalife:grape_string_plant_red[axis=z,lifecycle=healthy,stage=0]",
+            "Y": "firmalife:grape_string[axis=z]"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "ZYZ"
+            ],
+            [
+              "X0X"
+            ]
+          ],
+          "mapping": {
+            "X": "firmalife:grape_trellis_post[axis=x,string_plus=true,string_minus=true]",
+            "0": "firmalife:grape_string_plant_red[axis=z,lifecycle=healthy,stage=2]",
+            "Y": "firmalife:grape_string_red[axis=z,lifecycle=healthy]",
+            "Z": "firmalife:grape_trellis_post_red[axis=x,lifecycle=healthy,string_plus=true,string_minus=true]"
+          }
+        }
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Desde que as condições climáticas sejam atendidas, a uva crescerá sobre a treliça ao longo de alguns meses. Ela frutificará no mês de julho e florescerá no mês anterior. As uvas podem ser colhidas. As uvas também podem ser cultivadas em estufas, em treliças."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/wood/acacia_stomping_barrel",
+      "text": "O Lagar é usado para esmagar uvas. Uma moenda também pode ser usada."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Para usar um lagar, clique $(item)$(k:key.use)$() com uvas frescas. Em seguida, pule para cima e para baixo no barril 16 vezes. Clique $(item)$(k:key.use)$() com a mão vazia para recuperar os itens.$(br2)Em seguida, sele as uvas em um barril por 5 dias para $(thing)fermentá-las$()."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/wood/acacia_barrel_press",
+      "text": "A prensagem em barril é a última etapa do processamento da uva."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "O compartimento mais à esquerda pode conter até 16 uvas. Quatro uvas são necessárias para uma garrafa de vinho. Os quatro compartimentos centrais servem para misturar as uvas com outros ingredientes, mas isso é opcional. Usar apenas uvas tintas ou brancas produz vinho tinto ou branco. Adicionar pelo menos uma uva tinta ao vinho branco produz vinho rosé. Adicionar açúcar ao vinho branco produz vinho doce. Adicionar uma mistura de tiragem (fermento e adoçante em um barril) produz vinho espumante."
+    },
+    {
+      "type": "tfc:glassworking_recipe",
+      "recipe": "firmalife:glassworking/olivine_wine_bottle",
+      "text": "O vinho deve ser engarrafado em uma garrafa apropriada, feita de vidro sem sílica."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/bottle_label",
+      "text": "Os $(thing)Rótulos de Garrafa$() podem ser renomeados em uma estação de escrita e adicionarão seu nome ao texto-dica do vinho."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "O vinho deve ser fornecido com uma $(thing)Rolha$(), feita mergulhando $(thing)Madeira Serrada Tratada$() em $(thing)Água de Cal$() por um dia. Quando tudo estiver pronto, use o compartimento para encher a garrafa de vinho ou pressione $(item)$(k:key.use)$() com uma garrafa na mão."
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 23
+}

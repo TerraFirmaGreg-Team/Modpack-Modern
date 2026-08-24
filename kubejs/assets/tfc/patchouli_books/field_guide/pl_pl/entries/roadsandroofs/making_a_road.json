@@ -1,0 +1,33 @@
+{
+	"name": "Tworzenie drogi",
+	"category": "tfc:roadsandroofs",
+	"icon": "rnr:metal/mattock/bismuth_bronze",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Road construction consists of three basic steps: tamping the native soil with a mattock, laying a base course, and laying the surface material. Different varietis of road use different ingredients, as described on their respective pages of this manual."
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Building a Path",
+			"images": [
+				"rnr:textures/gui/book/path_building.png"
+			],
+			"border": true
+		},
+		{
+			"type": "patchouli:text",
+			"text": "A mattock can be used on dirt-type blocks similarly to a chisel. When used in the default mode, a mattock will tamp these blocks. If the mattock was used to tamp mud or muddy roots, the resulting tamped mud must be remediated by applying crushed base course."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "After the local soil has been tamped down, the next step is to lay a base course for the road. Crushed base course can be crafted with gravel, loose rocks, and a hammer, and can be applied to tamped blocks via right-clicking. This base course of crushed rocks creates a sturdy base for the final walking surface to rest upon."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "The final step in creating a road is laying the road surface. Different items, including bricks, hoggin, and loose rocks can be applied via right-clicking on top of a base course to form a walkable road. Different items result in different varieties of road, and different varieties of road allow for various walking speeds. For more details on different types of road, refer to their respective pages in this manual."
+		}
+	],
+	"read_by_default": true,
+	"sortnum": 1
+}

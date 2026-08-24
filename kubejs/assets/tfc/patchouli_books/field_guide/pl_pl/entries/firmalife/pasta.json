@@ -1,0 +1,27 @@
+{
+  "name": "Makaron",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:textures/item/food/cooked_pasta.png",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "There are two types of $(thing)Noodles$(): Egg and Rice. Rice flour, maize flour, salt, and 1000 mB of milk together in a $(l:firmalife/mixing_bowl)Mixing Bowl$() makes $(thing)Rice Noodles$(). Flour, an egg, salt, and 1000 mB of milk makes $(thing)Egg Noodles$()."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/lasagna",
+      "text": "$(thing)Lasagna$() can be made directly from egg noodles with $(l:firmalife/pizza#tomato_sauce)Tomato Sauce$(), cooked meat, and oregano, which can then be baked in an $(l:firmalife/ovens)Oven$()."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Pasta is then completed by boiling it in water. For either kind of noodles, it must be retrieved from the pot by clicking with a $(thing)Bowl$()."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/tomato_pasta",
+      "text": "Crafting cooked egg noodles (pasta) with tomato sauce makes delicious pasta with tomato sauce!"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 27
+}

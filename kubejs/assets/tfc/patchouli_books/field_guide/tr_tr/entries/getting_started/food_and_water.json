@@ -5,9 +5,9 @@
     "pages": [
         {
             "type": "patchouli:text",
+            "text": "$(li)$(bold)$(l:getting_started/food_and_water#basics)Temel Bilgiler$()$(li)$(bold)$(l:getting_started/food_and_water#thirst)Susuzluk$()$(li)$(bold)$(l:getting_started/food_and_water#nutrition_screen)Beslenme Ekranı$()$(li)$(bold)$(l:getting_started/food_and_water#nutrients)Besinler$()$(li2)$(l:getting_started/food_and_water#fruit)Meyve$()$(li2)$(l:getting_started/food_and_water#vegetables)Sebze$()$(li2)$(l:getting_started/food_and_water#protein)Protein$()$(li2)$(l:getting_started/food_and_water#grain)Tahıl$()$(li2)$(l:getting_started/food_and_water#dairy)Süt Ürünleri$()$(li)$(bold)$(l:getting_started/food_and_water#contaminants)Kontaminantlar$()$(li2)$(l:getting_started/food_and_water#toxins)Toksinler$()$(li2)$(l:getting_started/food_and_water#parasites)Parazitler$()$(li2)$(l:getting_started/food_and_water#microplastics)Mikroplastikler$()",
             "title": "Giriş",
-            "anchor": "index",
-            "text": "$(li)$(bold)$(l:getting_started/food_and_water#basics)Temel Bilgiler$()$(li)$(bold)$(l:getting_started/food_and_water#thirst)Susuzluk$()$(li)$(bold)$(l:getting_started/food_and_water#nutrition_screen)Beslenme Ekranı$()$(li)$(bold)$(l:getting_started/food_and_water#nutrients)Besinler$()$(li2)$(l:getting_started/food_and_water#fruit)Meyve$()$(li2)$(l:getting_started/food_and_water#vegetables)Sebze$()$(li2)$(l:getting_started/food_and_water#protein)Protein$()$(li2)$(l:getting_started/food_and_water#grain)Tahıl$()$(li2)$(l:getting_started/food_and_water#dairy)Süt Ürünleri$()$(li)$(bold)$(l:getting_started/food_and_water#contaminants)Kontaminantlar$()$(li2)$(l:getting_started/food_and_water#toxins)Toksinler$()$(li2)$(l:getting_started/food_and_water#parasites)Parazitler$()$(li2)$(l:getting_started/food_and_water#microplastics)Mikroplastikler$()"
+            "anchor": "index"
         },
         {
             "type": "patchouli:text",
@@ -15,9 +15,9 @@
         },
         {
             "type": "patchouli:text",
+            "text": "TerraFirmaCraft'ta sadece açlığını değil, susuzluğunu da yönetmen gerekiyor. Açlık, vanilla Minecraft'takine benzer şekilde çalışır. Çoğu yiyecek açlık çubuğunun beşte birini doldurur. Bazı yiyecekler biraz daha az doldurabilir, $(thing)Kaz Ayağı Kökü$() gibi. Yemek yemek aynı zamanda ne kadar tok olduğunu gösteren $(thing)Doygunluğunu$() da yeniler. Açlığın ya da susuzluğun tükenmesi hareketlerini yavaşlatır ve hasar almana neden olur. Ölmek, besin değerlerini ya da kontaminant seviyeni sıfırlamaz.",
             "title": "Temeller",
-            "anchor": "basics",
-            "text": "TerraFirmaCraft'ta sadece açlığını değil, susuzluğunu da yönetmen gerekiyor. Açlık, vanilla Minecraft'takine benzer şekilde çalışır. Çoğu yiyecek açlık çubuğunun beşte birini doldurur. Bazı yiyecekler biraz daha az doldurabilir, $(thing)Kaz Ayağı Kökü$() gibi. Yemek yemek aynı zamanda ne kadar tok olduğunu gösteren $(thing)Doygunluğunu$() da yeniler. Açlığın ya da susuzluğun tükenmesi hareketlerini yavaşlatır ve hasar almana neden olur. Ölmek, besin değerlerini ya da kontaminant seviyeni sıfırlamaz."
+            "anchor": "basics"
         },
         {
             "type": "patchouli:text",
@@ -29,16 +29,18 @@
         },
         {
             "type": "patchouli:text",
-            "text": "Bir yiyecek tooltip'i şöyle görünebilir:$(br2)$(bold)Portakal$()$(br) $(2)$(bold)Son kullanma: 11:59, 6 Temmuz 1004 (1 ay 1 gün sonra)$()$(br) $(8)Besin Değeri:$(br) - Doygunluk: 2%$(br) - Su: 10%$(br)$(a) - Meyve: 0.5"
+            "text": "Bir yiyecek tooltip'i şöyle görünebilir:$(br2)$(bold)Portakal$()$(br) $(2)$(bold)Son kullanma: 11:59, 6 Temmuz 1004 (1 ay 1 gün sonra)$()$(br) $(8)Besin Değeri:$(br) - Doygunluk: 2%$(br) - Su: 10%$(br)$(a) - Meyve: 0.5",
+            "title": "Besinler"
         },
         {
             "type": "patchouli:text",
-            "anchor": "thirst",
             "text": "Susuzluk, vücudundaki su seviyesini gösterir. Açlığa benzer bir hızda azalır. Yüksek sıcaklıklarda ya da açlığın hızlı tükendiği durumlarda susuzluğun daha hızlı azalır. Neyse ki $(thing)Tatlı Su$() içmek susuzluğunu giderir. Bunu bir su bloğuna $(item)$(k:key.use)$() tuşuyla tıklayarak yapabilirsin. Tuzlu su içmek ise susuzluğunu azaltır, hatta seni daha da fazla yıpratacak $(thing)Susuzluk$() etkisine yakalanma ihtimalini de artırır.",
+            "anchor": "thirst",
             "title": "Susuzluk"
         },
         {
             "type": "patchouli:multiblock",
+            "text": "Tuzlu su ya da bulanık sudan kaçınmak için nehirleri, gölleri ve $(thing)Kaz Ayağı$() gibi tatlı su bitkilerini ara.",
             "multiblock": {
                 "pattern": [
                     [
@@ -57,30 +59,31 @@
                 }
             },
             "name": "Su Güvenliği",
-            "text": "Tuzlu su ya da bulanık sudan kaçınmak için nehirleri, gölleri ve $(thing)Kaz Ayağı$() gibi tatlı su bitkilerini ara.",
             "enable_visualize": false
         },
         {
             "type": "tfc:knapping_recipe",
-            "recipe": "tfc:clay_knapping/jug",
-            "text": "$(l:getting_started/pottery)Yontarak$() ve pişirerek bir $(l:getting_started/pottery#jug)testi$() yapmak, yanında su taşımanın bir yoludur. Bir kova gibi $(item)$(k:key.use)$() ile doldurabilirsin. $(item)$(k:key.use)$() tuşunu basılı tutmak suyu içmeni sağlar."
+            "text": "$(l:getting_started/pottery)Yontarak$() ve pişirerek bir $(l:getting_started/pottery#jug)testi$() yapmak, yanında su taşımanın bir yoludur. Bir kova gibi $(item)$(k:key.use)$() ile doldurabilirsin. $(item)$(k:key.use)$() tuşunu basılı tutmak suyu içmeni sağlar.",
+            "title": "Susuzluk",
+            "recipe": "tfc:clay_knapping/jug"
         },
         {
             "type": "patchouli:text",
+            "name": "Su Güvenliği",
             "text": "Ayrıca $(l:waterflasks)Matara$() veya $(l:mechanics/glassworking)Cam Şişe$() gibi diğer kaplardan da içebilirsin. İçme kapları ve içecek etkileri hakkında daha fazla bilgiyi $(l:mechanics/drinks#containers)Burada$() bulabilirsin."
         },
         {
             "type": "patchouli:text",
-            "anchor": "nutrition_screen",
             "text": "$(bold)$(#ff0fb7)TerraFirma$()$()$(bold)$(#595959)Greg$()$()'de beslenme ekranı, sağlığın hakkında çok geniş bilgiler sunar. $(li)$(l:getting_started/food_and_water#nutrients)Besinlerini$() gösteren ana bir grafik vardır$()$(li)$(l:getting_started/food_and_water#contaminants)Kontaminantlarını$() gösteren yan bir grafik$()$(li)Sağlık istatistiklerini gösteren bir tablo.$()$(li)Ve takımının beslenmesini kontrol edebileceğin, açılıp kapanabilir bir görünüm.$()$(br)$(item)Daha fazla bilgi görmek için ekrandaki bir öğenin üzerinde $(k:key.sneak)$() tuşunu basılı tut.$()",
+            "anchor": "nutrition_screen",
             "title": "Beslenme Ekranı"
         },
         {
             "type": "patchouli:image",
+            "text": "Her besin maddesinin seviyelerini gösteren grafikli besin ekranı.",
             "images": [
                 "tfg:textures/gui/field_guide/nutrition/tfg_nutrition_screen.png"
             ],
-            "text": "Her besin maddesinin seviyelerini gösteren grafikli besin ekranı.",
             "border": false
         },
         {

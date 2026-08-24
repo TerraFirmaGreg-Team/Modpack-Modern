@@ -1,0 +1,22 @@
+{
+  "name": "Похідні черевики із захисним носком",
+  "category": "tfc:sacks_n_such",
+  "icon": "sns:steel_toe_hiking_boots",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Схожі на $(l:sns/hiking_boots)похідні черевики$(), але безпечніший завдяки сталевому носку. Шкода лише, що ніхто ще не винайшов будівельну каску"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "sns:crafting/steel_toe_hiking_boots",
+      "recipe2": "sns:crafting/black_steel_toe_hiking_boots"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "sns:crafting/blue_steel_toe_hiking_boots",
+      "recipe2": "sns:crafting/red_steel_toe_hiking_boots"
+    }
+  ],
+  "read_by_default": true
+}

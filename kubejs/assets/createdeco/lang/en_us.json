@@ -400,7 +400,6 @@
 	"block.createdeco.zinc_trapdoor": "Zinc Trapdoor",
 	"block.createdeco.zinc_window": "Zinc Window",
 	"block.createdeco.zinc_window_pane": "Zinc Window Pane",
-	"item.createdeco.andesite_sheet": "Andesite Alloy Sheet",
 	"item.createdeco.brass_coin": "Brass Coin",
 	"item.createdeco.brass_coinstack": "Brass Coin Stack",
 	"item.createdeco.copper_coin": "Copper Coin",
@@ -409,16 +408,10 @@
 	"item.createdeco.gold_coinstack": "Gold Coin Stack",
 	"item.createdeco.industrial_iron_coin": "Steel Coin",
 	"item.createdeco.industrial_iron_coinstack": "Steel Coinstack",
-	"item.createdeco.industrial_iron_ingot": "Industrial Iron Ingot",
-	"item.createdeco.industrial_iron_nugget": "Industrial Iron Nugget",
-	"item.createdeco.industrial_iron_sheet": "Industrial Iron Sheet",
 	"item.createdeco.iron_coin": "Wrought Iron Coin",
 	"item.createdeco.iron_coinstack": "Wrought Iron Coinstack",
 	"item.createdeco.netherite_coin": "Blue Steel Coin",
 	"item.createdeco.netherite_coinstack": "Blue Steel Coinstack",
-	"item.createdeco.netherite_nugget": "Netherite Nugget",
-	"item.createdeco.netherite_sheet": "Netherite Sheet",
 	"item.createdeco.zinc_coin": "Zinc Coin",
-	"item.createdeco.zinc_coinstack": "Zinc Coin Stack",
-	"item.createdeco.zinc_sheet": "Zinc Sheet"
+	"item.createdeco.zinc_coinstack": "Zinc Coin Stack"
 }

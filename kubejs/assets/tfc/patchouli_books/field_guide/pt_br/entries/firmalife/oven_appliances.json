@@ -1,0 +1,77 @@
+{
+  "name": "Dispositivos de Forno",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:vat",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l:firmalife/ovens)Fornos$() possuem diversos dispositivos que interagem com eles, ampliando sua funcionalidade. Isso ocorre porque os fornos são modulares por natureza."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/oven_hopper",
+      "text": "O $(thing)Funil de Forno$() insere toras em qualquer Forno Inferior que esteja voltado para ele. Ele comporta 16 toras (4 pilhas de 4, como uma pilha de toras) e seu inventário é alimentado ao soltar itens no topo. Ele também pode ser alimentado por meio da automação de outros mods."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/ashtray",
+      "text": "O $(thing)Cinzeiro$() coleta $(thing)Cinzas$() quando colocado abaixo de um $(thing)Bloco de Forno Inferior$(). Há 0,5 de chance de ele ganhar cinzas ao consumir combustível. As cinzas são extraídas com $(item)$(k:key.use)$() e inseridas ao atacá-lo."
+    },
+    {
+      "type": "patchouli:crafting",
+      "anchor": "vat",
+      "recipe": "firmalife:crafting/vat",
+      "text": "A $(thing)Cuba$() produz algumas receitas de fervura selecionadas em massa. Ela tem um slot para itens e 10.000 MB de espaço fluido, semelhante a um barril."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Por exemplo, a cuba pode ser usada para fazer $(thing)Água de Azeite$() usando uma proporção de 1 Pasta de Azeitona para 200 mB de Água. Para usar uma cuba, clique $(item)$(k:key.use)$() e encha-o com fluidos e itens para adicioná-los ao inventário. Com a mão vazia e $(item)$(k:key.sneak)$() pressionado, clique para tampar e destampar a cuba. Uma cuba não ferverá até ser tampada."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "A cuba deve ser colocada no bloco acima de um $(thing)Forno Inferior$(). Se a cuba transbordar ao terminar a receita, ela não ferverá, então tome cuidado para não enchê-la demais -- especialmente com receitas que produzem mais líquido do que consomem! A cuba pode ser destampada e tampada com $(thing)Redstone$()."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "Y"
+          ],
+          [
+            "0"
+          ]
+        ],
+        "mapping": {
+          "X": "firmalife:vat",
+          "Y": "firmalife:cured_oven_bottom"
+        }
+      },
+      "name": "",
+      "text": "",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/jarring_station",
+      "text": "A $(thing)Estação de Envase$() é usada para encher potes a partir da cuba. A estação de envase tem um bico em um dos lados que deve apontar para a cuba."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Usando a Cuba, é possível fazer Água com Açúcar adicionando um adoçante à água. Adicionar frutas faz com que $(thing)Fluido Frutado$() seja criado. Clicar nele com um $(thing)Pote Vazio com Tampa$() o encherá. Cuidado: tentar canalizar ou transportar fluido frutado por muitas transferências pode estragá-lo!"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Com $(item)$(k:key.use)$(), adicione potes vazios com tampa à estação de envase. Ao detectar fluido frutado, o sistema automaticamente encherá os potes com $(thing)Geleia$() e os selará, exigindo 500 mB de fluido frutado por pote."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Panelas e Grelhas do TFC podem ser colocadas em cima de um $(thing)Forno Inferior$(). Esses aparelhos receberão calor automaticamente do forno inferior. A panela só pode ser usada para fazer sopa. Ela não pode executar receitas de panela comuns."
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 15
+}

@@ -1,5 +1,4 @@
 {
-  "__comment__": "This file was automatically created by mcresources",
   "name": "Produits verriers",
   "category": "tfc:mechanics",
   "icon": "minecraft:glass",
@@ -19,6 +18,8 @@
     },
     {
       "type": "patchouli:multiblock",
+      "text": "Une fois le verre refroidi, il peut être récupéré à l'aide d'une $(l:mechanics/glassworking#saw)Scie à gemme$().",
+      "border": true,
       "multiblock": {
         "mapping": {
           "C": "#tfc:glass_pouring_table",
@@ -32,9 +33,7 @@
             "CCCC"
           ]
         ]
-      },
-      "text": "Une fois le verre refroidi, il peut être récupéré à l'aide d'une $(l:mechanics/glassworking#saw)Scie à gemme$().",
-      "border": true
+      }
     },
     {
       "type": "patchouli:text",
@@ -43,6 +42,8 @@
     },
     {
       "type": "patchouli:multiblock",
+      "text": "Une fois le verre refroidi, il peut être récupéré à l'aide d'une $(l:mechanics/glassworking#saw)Scie à gemme$().",
+      "border": true,
       "multiblock": {
         "mapping": {
           "C": "#tfc:glass_basin_blocks",
@@ -60,20 +61,18 @@
             "   "
           ]
         ]
-      },
-      "text": "Une fois le verre refroidi, il peut être récupéré à l'aide d'une $(l:mechanics/glassworking#saw)Scie à gemme$().",
-      "border": true
+      }
     },
     {
       "type": "patchouli:crafting",
+      "text": "Vous pouvez créer des $(thing)Blocs plaqués en laiton$() en tenant une $(thing)plaque$() de laiton puis en faisant $(item)$(k:key.use)$() sur n'importe quel bloc de $(thing)briques de pierre$().",
       "title": "Blocs de travail du verre",
-      "recipe": "tfc:crafting/white_kaolin_clay",
-      "text": "Vous pouvez créer des $(thing)Blocs plaqués en laiton$() en tenant une $(thing)plaque$() de laiton puis en faisant $(item)$(k:key.use)$() sur n'importe quel bloc de $(thing)briques de pierre$()."
+      "recipe": "tfc:crafting/white_kaolin_clay"
     },
     {
       "type": "patchouli:text",
-      "anchor": "coloring",
       "text": "Le verre possède une coleur naturelle dépendant du $(l:mechanics/glassworking)Mélange verrier$() utilisé. D'autres couleurs peuvent être créées en utilisant un $(l:mechanics/bowls)Bol$().$(br2)Pour l'utiliser, placez le $(l:mechanics/bowls)Bol$() au sol, puis faites $(item)$(k:key.use)$() avec la $(thing)Poudre$() requise. Avant de $(thing)verser$(), utilisez la $(thing)canne$() sur le bol pour ajouter la poudre au mélange.",
+      "anchor": "coloring",
       "title": "Colorer le verre"
     },
     {

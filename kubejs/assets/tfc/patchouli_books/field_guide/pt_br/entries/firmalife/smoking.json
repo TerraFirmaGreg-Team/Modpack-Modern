@@ -1,0 +1,48 @@
+{
+  "name": "Defumação",
+  "category": "tfc:firmalife",
+  "icon": "tfc:textures/item/food/venison.png",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Linha de lã é usada para pendurar itens para $(thing)Defumação$(). Para colocá-la, basta usar $(item)$(k:key.use)$()."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "Y"
+          ],
+          [
+            "0"
+          ]
+        ],
+        "mapping": {
+          "X": "firmalife:wool_string",
+          "Y": "tfc:firepit[lit=true]"
+        }
+      },
+      "name": "Defumação",
+      "text": "Um pedaço de linha acima de uma fogueira.",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:text",
+      "text": "A defumação é usada para conservar $(thing)Carne$() e $(l:mechanics/dairy)Queijo$(). Para defumar a carne, ela deve primeiro ter sido $(thing)Salmourada$(), selando-a em um $(thing)Barril$() com $(thing)Salmoura$(). Você também pode salgá-la primeiro. O queijo não tem esse requisito."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Para iniciar o processo de defumação, adicione o item à linha acima de uma fogueira. A fogueira deve estar a quatro blocos de distância, diretamente abaixo da corda. A corda deve começar a gerar fumaça se estiver funcionando. É importante observar que a fogueira só deve ser queimada com $(thing)Logs$(). Usar algo como $(thing)Peat$() dará instantaneamente à sua comida a característica $(thing)Horrível$()!"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "O processo de defumação leva 8 horas no jogo. Boa defumação!"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 13
+}

@@ -1,5 +1,4 @@
 {
-  "__comment__": "This file was automatically created by mcresources",
   "name": "Minerais, Métal, et Moulage",
   "category": "tfc:getting_started",
   "icon": "tfc:ore/normal_native_copper",
@@ -73,15 +72,15 @@
     },
     {
       "type": "patchouli:crafting",
-      "recipe": "tfchotornot:crafting/tongs/wood",
-      "text": "Attention, le récipient sera brûlant ! Fabriquez des $(thing)Pinces en bois$() avec deux bâtons et un couteau et placez-les dans votre main secondaire afin de manipuler le récipient en toute sécurité."
+      "text": "Attention, le récipient sera brûlant ! Fabriquez des $(thing)Pinces en bois$() avec deux bâtons et un couteau et placez-les dans votre main secondaire afin de manipuler le récipient en toute sécurité.",
+      "recipe": "tfchotornot:crafting/tongs/wood"
     },
     {
       "type": "patchouli:image",
+      "text": "Tenez le récipient et utilisez $(item)$(k:key.use)$() pour ouvrir l'interface de $(thing)Moulage$().",
       "images": [
         "tfc:textures/gui/book/gui/casting.png"
       ],
-      "text": "Tenez le récipient et utilisez $(item)$(k:key.use)$() pour ouvrir l'interface de $(thing)Moulage$().",
       "border": false
     },
     {

@@ -18,16 +18,16 @@
     {
       "type": "patchouli:spotlight",
       "anchor": "liquid_concrete",
-      "item": "gtceu:concrete_bucket",
       "title": "制备混凝土",
-      "text": "建造混凝土路的第一步是配制湿混凝土。使用$(thing)搅拌机$()将水与任意两种石粉（方解石或大理石粉），以及石膏粉混合；或者用三种石粉加黏土粉，来制作$(thing)液态混凝土$()。"
+      "text": "建造混凝土路的第一步是配制湿混凝土。使用$(thing)搅拌机$()将水与任意两种石粉（方解石或大理石粉），以及石膏粉混合；或者用三种石粉加黏土粉，来制作$(thing)液态混凝土$()。",
+      "item": "gtceu:concrete_bucket"
     },
     {
       "type": "patchouli:spotlight",
       "anchor": "wet_concrete",
-      "item": "rnr:bucket/concrete",
       "title": "制备混凝土",
-      "text": "然后把$(thing)搅拌机$()设置为$(thing)编程电路 #7$()，加入更多水稀释液态混凝土，得到$(thing)湿混凝土混合物$()。"
+      "text": "然后把$(thing)搅拌机$()设置为$(thing)编程电路 #7$()，加入更多水稀释液态混凝土，得到$(thing)湿混凝土混合物$()。",
+      "item": "rnr:bucket/concrete"
     },
     {
       "type": "patchouli:text",

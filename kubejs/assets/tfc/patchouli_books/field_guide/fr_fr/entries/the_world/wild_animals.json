@@ -1,5 +1,4 @@
 {
-	"__comment__": "This file was automatically created by mcresources",
 	"name": "Animaux Sauvages",
 	"category": "tfc:the_world",
 	"icon": "tfc:medium_raw_hide",
@@ -122,38 +121,42 @@
 			"type": "patchouli:entity",
 			"entity": "tfc:moose",
 			"scale": 0.7,
-			"name": "Élan",
-			"text": "L'élan apparaît dans les forêts à une $(l:the_world/climate#temperature)température$()  entre -15 et 10°C, et des $(l:the_world/climate#rainfall)précipitations$() entre 150 et 300mm."
+			"text": "L'élan apparaît dans les forêts à une $(l:the_world/climate#temperature)température$()  entre -15 et 10°C, et des $(l:the_world/climate#rainfall)précipitations$() entre 150 et 300mm.",
+			"name": "Élan"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "tfc:wildebeest",
 			"scale": 0.7,
-			"name": "Gnou",
-			"text": "Le gnou apparaît dans les plaines à une $(l:the_world/climate#temperature)température$()  supérieure à 13°C, et des $(l:the_world/climate#rainfall)précipitations$() entre 90 et 380mm."
+			"text": "Le gnou apparaît dans les plaines à une $(l:the_world/climate#temperature)température$()  supérieure à 13°C, et des $(l:the_world/climate#rainfall)précipitations$() entre 90 et 380mm.",
+			"name": "Gnou"
 		},
 		{
 			"type": "patchouli:entity",
+			"text": "Le bison apparaît dans les plaines à une $(l:the_world/climate#temperature)température$()  entre -10 et 15°C, et des $(l:the_world/climate#rainfall)précipitations$() entre 160 et 420mm.",
+			"title": "Proies",
 			"entity": "tfg:bison",
 			"scale": 0.7,
-			"name": "Bison",
-			"text": "Le bison apparaît dans les plaines à une $(l:the_world/climate#temperature)température$()  entre -10 et 15°C, et des $(l:the_world/climate#rainfall)précipitations$() entre 160 et 420mm."
+			"name": "Bison"
 		},
 		{
-			"type": "patchouli:empty"
+			"type": "patchouli:empty",
+			"name": "Lapin",
+			"text": "Le lapin est connu pour manger des carottes et du chou. Ils sont omniprésents dans le monde, et changent de pelage en fonction du climat. Ils n'ont besoin que de 15 mm de $(l:the_world/climate#rainfall)précipitations$() pour apparaître."
 		},
 		{
 			"type": "patchouli:text",
-			"anchor": "prey",
+			"name": "Renard",
 			"text": "Les $(thing)Proies$() craignent les joueurs et les prédateurs. Ils sont taillés pour fuir le danger, mais ne peuvent généralement pas riposter. Certaines proies aiment grignoter des cultures.",
+			"anchor": "prey",
 			"title": "Proies"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "tfc:rabbit",
 			"scale": 0.7,
-			"name": "Lapin",
-			"text": "Le lapin est connu pour manger des carottes et du chou. Ils sont omniprésents dans le monde, et changent de pelage en fonction du climat. Ils n'ont besoin que de 15 mm de $(l:the_world/climate#rainfall)précipitations$() pour apparaître."
+			"text": "Le lapin est connu pour manger des carottes et du chou. Ils sont omniprésents dans le monde, et changent de pelage en fonction du climat. Ils n'ont besoin que de 15 mm de $(l:the_world/climate#rainfall)précipitations$() pour apparaître.",
+			"name": "Lapin"
 		},
 		{
 			"type": "patchouli:entity",
@@ -185,8 +188,8 @@
 			"type": "patchouli:entity",
 			"entity": "tfc:bongo",
 			"scale": 0.9,
-			"name": "Bongo",
-			"text": "Le bongo apparaît dans les forêts à une $(l:the_world/climate#temperature)température$()  supérieure à 15°C, et des $(l:the_world/climate#rainfall)précipitations$() entre 230 et 500mm."
+			"text": "Le bongo apparaît dans les forêts à une $(l:the_world/climate#temperature)température$()  supérieure à 15°C, et des $(l:the_world/climate#rainfall)précipitations$() entre 230 et 500mm.",
+			"name": "Bongo"
 		},
 		{
 			"type": "patchouli:entity",
@@ -198,6 +201,7 @@
 			"type": "patchouli:entity",
 			"entity": "tfc:pheasant",
 			"scale": 0.7,
+			"name": "Paon",
 			"text": "Le faisan apparaît dans les forêts à une $(l:the_world/climate#temperature)température$()  entre -5 et 17°C, et des $(l:the_world/climate#rainfall)précipitations$() entre 100 et 300mm."
 		},
 		{
@@ -208,18 +212,19 @@
 		},
 		{
 			"type": "patchouli:entity",
+			"text": "Le paon apparaît dans les forêts à une $(l:the_world/climate#temperature)température$()  supérieure à 14°C, et des $(l:the_world/climate#rainfall)précipitations$() entre 190 et 500mm.",
+			"title": "Animaux aquatiques",
 			"entity": "tfc:peafowl",
 			"scale": 0.6,
-			"name": "Paon",
-			"text": "Le paon apparaît dans les forêts à une $(l:the_world/climate#temperature)température$()  supérieure à 14°C, et des $(l:the_world/climate#rainfall)précipitations$() entre 190 et 500mm."
+			"name": "Paon"
 		},
 		{
 			"type": "patchouli:entity",
+			"text": "Le lemming apparaît à une $(l:the_world/climate#temperature)température$()  entre -12 et -3°C, et des $(l:the_world/climate#rainfall)précipitations$() entre 160 et 500mm.",
 			"entity": "tfg:lemming",
 			"scale": 1.5,
 			"offset": -0.2,
-			"name": "Lemming",
-			"text": "Le lemming apparaît à une $(l:the_world/climate#temperature)température$()  entre -12 et -3°C, et des $(l:the_world/climate#rainfall)précipitations$() entre 160 et 500mm."
+			"name": "Lemming"
 		},
 		{
 			"type": "patchouli:entity",
@@ -237,12 +242,13 @@
 		},
 		{
 			"type": "patchouli:text",
-			"anchor": "aquatic",
 			"text": "Les $(thing)Animaux aquatiques$() font partie d'une large catégorie qui regroupe de nombreux comportements différents. Ils peuvent être $(thing)Côtiers$(), des $(thing)Poissons$(), des $(thing)Crustacés$(), ou des $(thing)Grands animaux marins$()",
-			"title": "Animaux aquatiques"
+			"title": "Animaux aquatiques",
+			"anchor": "aquatic"
 		},
 		{
 			"type": "patchouli:text",
+			"name": "Morue",
 			"text": "Les $(thing)Animaux côtiers$() n'apparaissent qu'au bord de la mer. Ils ne passent qu'une partie de leur journée à nager, et l'autre à marcher sur la plage. Ce sont des créatures curieuses, et ils suivront un peu le joueur, mais ils ne peuvent pas être apprivoisés. "
 		},
 		{
@@ -261,6 +267,7 @@
 		},
 		{
 			"type": "patchouli:text",
+			"name": "Poisson tropical",
 			"text": "Les $(thing)Poissons$() sont des petites créatures nageant dans l'eau. La plupart peuvent être $(l:mechanics/fishing)pêchés$(). Ils peuvent préférer, les océans, les rivières ou les lacs.",
 			"title": "Poissons"
 		},
@@ -280,10 +287,11 @@
 		},
 		{
 			"type": "patchouli:entity",
+			"text": "La méduse vit dans les océans plus chauds, d'une $(l:the_world/climate#temperature)température$() d'au moins 18°C.",
+			"title": "Crustacés",
 			"entity": "tfc:jellyfish",
 			"scale": 0.7,
-			"name": "Méduse",
-			"text": "La méduse vit dans les océans plus chauds, d'une $(l:the_world/climate#temperature)température$() d'au moins 18°C."
+			"name": "Méduse"
 		},
 		{
 			"type": "patchouli:entity",
@@ -307,13 +315,15 @@
 			"text": "Le crapet arlqeuin apparaît dans n'importe quelle rivière ou lac d'une $(l:the_world/climate#temperature)température$() entre -10 et 25°C."
 		},
 		{
-			"type": "patchouli:empty"
+			"type": "patchouli:empty",
+			"name": "Limule",
+			"text": "La limule apparaît dans les océans avec un climat modéré, à une $(l:the_world/climate#temperature)température$()entre 10 et 21°C et de $(l:the_world/climate#rainfall)précipitations$() d'au moins 400mm."
 		},
 		{
 			"type": "patchouli:text",
-			"anchor": "shellfish",
 			"text": "Les $(thing)Crustacés$() sont de petits animaux vivant sur les fonds marins. Ils ne peuvent pas être pêchés, mais lâchent leur coquille, qui peut être mangée ou transformée en $(l:mechanics/flux)flux$(). Les crustacés servent aussi d'$(l:mechanics/fishing)appât$() à poisson.",
-			"title": "Crustacés"
+			"title": "Crustacés",
+			"anchor": "shellfish"
 		},
 		{
 			"type": "patchouli:entity",
@@ -338,10 +348,11 @@
 		},
 		{
 			"type": "patchouli:entity",
+			"text": "La limule apparaît dans les océans avec un climat modéré, à une $(l:the_world/climate#temperature)température$()entre 10 et 21°C et de $(l:the_world/climate#rainfall)précipitations$() d'au moins 400mm.",
+			"title": "Calamar",
 			"entity": "tfc:horseshoe_crab",
 			"scale": 0.7,
-			"name": "Limule",
-			"text": "La limule apparaît dans les océans avec un climat modéré, à une $(l:the_world/climate#temperature)température$()entre 10 et 21°C et de $(l:the_world/climate#rainfall)précipitations$() d'au moins 400mm."
+			"name": "Limule"
 		},
 		{
 			"type": "patchouli:empty"

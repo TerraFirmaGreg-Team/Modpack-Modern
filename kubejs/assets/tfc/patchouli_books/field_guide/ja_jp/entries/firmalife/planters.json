@@ -1,0 +1,83 @@
+{
+  "name": "プランター",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:large_planter",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "anchor": "planters",
+      "text": "$(thing)プランター$()は$(l:tfc:firmalife/greenhouse)温室$()内で作物を栽培するために使用します。$(br)プランター内の作物は地面に植えた$(l:mechanics/crops)作物$()と同様に$(l:mechanics/fertilizers)養分$()を消費し、$(thing)クワ$()を持つと状態を確認できます。$(br)プランターは有効な温室内に置き、$(l:tfc:firmalife/climate_station)空調機$()で活性化させます。$(br)プランターが機能するには、少なくとも自然光が必要です。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/watering_can",
+      "text": "プランターの作物が育つには$(thing)水$()が必要です。水やりは、$(thing)木のバケツ$()、$(thing)水$()の入った容器、$(thing)板$()から作られる$(thing)ジョウロ$()を使います。$(item)$(k:key.use)$()を押すと、近くのプランターに水をあげられます。水源で$(item)$(k:key.use)$()を押すと水を補充できます。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/large_planter",
+      "text": "$(thing)大型プランター$()は最もシンプルなプランターです。$(br2)種から1つの作物を育て、成熟したら$(item)$(k:key.use)$()で収穫できます。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "大型プランターでは、$(thing)サヤインゲン$()、$(thing)トマト$()、$(thing)サトウキビ$()、$(thing)ジュート$()、$(thing)穀類$()を栽培できます。$(br2)ただし、穀類を栽培するには、$(thing)銅$()製以上の温室が必要です。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/quad_planter",
+      "text": "$(thing)4種のプランター$()は一度に4つの作物を栽培できます。$(br2)これらの作物はすべて同じ栄養プールを利用し、成熟したら$(item)$(k:key.use)$()で個別に収穫できます。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "4種のプランターは、$(thing)ビーツ$()、$(thing)キャベツ$()、$(thing)ニンジン$()、$(thing)ニンニク$()、$(thing)タマネギ$()、$(thing)ジャガイモ$()、$(thing)大豆$()を栽培できます。$(br2)これらの作物は、どの温室タイプでも栽培できます。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/bonsai_planter",
+      "text": "$(thing)果樹用プランター$()は、苗木から小さな果樹を育てられます。$(br2)果実は$(item)$(k:key.use)$()で収穫できます。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "果樹用プランターは、様々な種類のの果樹を育てることができますが、$(thing)バナナ$()については$(thing)吊り下げプランター$()が必要です。$(br2)いずれも窒素を主栄養分として消費します。$(br2)栽培には$(thing)鉄$()かそれ以上の温室が必要です。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/hanging_planter",
+      "text": "$(thing)吊り下げプランター$()は作物を逆さまに育てられます。$(br2)成熟したら、$(item)$(k:key.use)$()で収穫できます。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "吊り下げプランターは、$(thing)カボチャ$()は種から、$(thing)バナナ$()は苗木から育てられます。$(br2)カボチャはどんな温室でも育ちますが、バナナは$(thing)鉄$()製以上の温室でないと育ちません。$(br2)吊り下げプランターは、平らな面に固定する必要があります。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/trellis_planter",
+      "text": "$(thing)支柱プランター$()はベリーを育てられます。$(br)$(item)$(k:key.use)$()でベリーを収穫できます。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "支柱プランターには、ベリーの茂みを$(thing)繁殖させる$()ユニークな性質があります。$(br)支柱プランターが縦に置かれ、下のプランターに成熟したベリーの茂みがあればベリーが上のプランターへと成長するチャンスがあります。$(br2)支柱プランターは、$(thing)クランベリー$()以外のどんなベリーの茂みも育てることができますが、作業には$(thing)鉄$()かそれ以上の温室が必要です。$(br2)茂みは窒素を栄養とします。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/hydroponic_planter",
+      "text": "$(thing)Hydroponic Planters$() grow rice and cranberry bushes. They work the same as a quad planter, except that they do not need to be watered."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Hydroponic Planters must instead, have a $(li)$(l:firmalife/irrigation)Sprinkler Pipe$() below them that is supplying water. Without the pipe they will not grow. There is no hard limit to how many hydroponic planters may be fed by one station."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/sweeper",
+      "text": "$(thing)Sweepers$() are used to harvest planters other than Quad and Hydroponic planters. They must be connected to a rotating $(thing)Axle$() on their bottom face."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/picker",
+      "text": "$(thing)Pickers$() can be powered via redstone signal from above. They extend down to pick the crops from Quad and Hydroponic planters."
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 9
+}
