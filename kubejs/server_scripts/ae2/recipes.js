@@ -1396,7 +1396,7 @@ const registerAE2Recipes = (event) => {
 			'ae2:cell_component_1k',
 			'#gtceu:batteries/mv',
 			'ae2:item_cell_housing')
-		.inputFluids(Fluid.of('gtceu:cryogenized_fluix', 144))
+		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144))
 		.itemOutputs('ae2:portable_item_cell_1k')
 		.duration(200)
 		.EUt(480)
@@ -1408,7 +1408,7 @@ const registerAE2Recipes = (event) => {
 			'ae2:cell_component_4k',
 			'#gtceu:batteries/mv',
 			'ae2:item_cell_housing')
-		.inputFluids(Fluid.of('gtceu:cryogenized_fluix', 144))
+		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144))
 		.itemOutputs('ae2:portable_item_cell_4k')
 		.duration(200)
 		.EUt(1920)
@@ -1421,7 +1421,7 @@ const registerAE2Recipes = (event) => {
 			'ae2:cell_component_16k',
 			'#gtceu:batteries/mv',
 			'ae2:item_cell_housing')
-		.inputFluids(Fluid.of('gtceu:cryogenized_fluix', 144))
+		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144))
 		.itemOutputs('ae2:portable_item_cell_16k')
 		.duration(200)
 		.EUt(7680)
@@ -1434,7 +1434,7 @@ const registerAE2Recipes = (event) => {
 			'ae2:cell_component_64k',
 			'#gtceu:batteries/mv',
 			'ae2:item_cell_housing')
-		.inputFluids(Fluid.of('gtceu:cryogenized_fluix', 144))
+		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144))
 		.itemOutputs('ae2:portable_item_cell_64k')
 		.duration(200)
 		.EUt(30720)
@@ -1447,7 +1447,7 @@ const registerAE2Recipes = (event) => {
 			'ae2:cell_component_256k',
 			'#gtceu:batteries/mv',
 			'ae2:item_cell_housing')
-		.inputFluids(Fluid.of('gtceu:cryogenized_fluix', 144))
+		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144))
 		.itemOutputs('ae2:portable_item_cell_256k')
 		.duration(200)
 		.EUt(122880)
@@ -1464,7 +1464,7 @@ const registerAE2Recipes = (event) => {
 			'ae2:cell_component_1k',
 			'#gtceu:batteries/mv',
 			'ae2:fluid_cell_housing')
-		.inputFluids(Fluid.of('gtceu:cryogenized_fluix', 144))
+		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144))
 		.itemOutputs('ae2:portable_fluid_cell_1k')
 		.duration(200)
 		.EUt(480)
@@ -1476,7 +1476,7 @@ const registerAE2Recipes = (event) => {
 			'ae2:cell_component_4k',
 			'#gtceu:batteries/mv',
 			'ae2:fluid_cell_housing')
-		.inputFluids(Fluid.of('gtceu:cryogenized_fluix', 144))
+		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144))
 		.itemOutputs('ae2:portable_fluid_cell_4k')
 		.duration(200)
 		.EUt(1920)
@@ -1489,7 +1489,7 @@ const registerAE2Recipes = (event) => {
 			'ae2:cell_component_16k',
 			'#gtceu:batteries/mv',
 			'ae2:fluid_cell_housing')
-		.inputFluids(Fluid.of('gtceu:cryogenized_fluix', 144))
+		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144))
 		.itemOutputs('ae2:portable_fluid_cell_16k')
 		.duration(200)
 		.EUt(7680)
@@ -1502,7 +1502,7 @@ const registerAE2Recipes = (event) => {
 			'ae2:cell_component_64k',
 			'#gtceu:batteries/mv',
 			'ae2:fluid_cell_housing')
-		.inputFluids(Fluid.of('gtceu:cryogenized_fluix', 144))
+		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144))
 		.itemOutputs('ae2:portable_fluid_cell_64k')
 		.duration(200)
 		.EUt(30720)
@@ -1515,7 +1515,7 @@ const registerAE2Recipes = (event) => {
 			'ae2:cell_component_256k',
 			'#gtceu:batteries/mv',
 			'ae2:fluid_cell_housing')
-		.inputFluids(Fluid.of('gtceu:cryogenized_fluix', 144))
+		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144))
 		.itemOutputs('ae2:portable_fluid_cell_256k')
 		.duration(200)
 		.EUt(122880)
