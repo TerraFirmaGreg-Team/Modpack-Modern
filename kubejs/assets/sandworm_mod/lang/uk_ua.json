@@ -4,5 +4,8 @@
 	"entity.sandworm_mod.worm_chain": "Піщаний хробак",
 	"entity.sandworm_mod.worm_head_segment": "Голова піщаного хробака",
 	"entity.sandworm_mod.worm_segment": "Тіло піщаного хробака",
-	"item.sandworm_mod.sandworm_tooth": "Зуб піщаного хробака"
+	"item.sandworm_mod.sandworm_tooth": "Зуб піщаного хробака",
+	"msg.sandworm_mod.spawn": "§4ВОНО ЙДЕ!!!",
+	"msg.sandworm_mod.stage_1": "§eПіщаний хробак відчуває тебе...",
+	"msg.sandworm_mod.stage_2": "§cПіщаний хробак незабаром прокинеться!"
 }
