@@ -304,6 +304,26 @@ const registerTFGBlockTags = (event) => {
 	event.add('tfg:functional_asphalt_roads', 'tfg:asphalt_road')
 	event.add('tfg:functional_asphalt_road_stairs', 'tfg:asphalt_road_stairs')
 	event.add('tfg:functional_asphalt_road_slabs', 'tfg:asphalt_road_slab')
+
+	const LOCO_GLASSES = [
+		'round_pane_locometal_window',
+		'single_pane_locometal_window',
+		'two_pane_locometal_window',
+		'four_pane_locometal_window'
+	]
+	
+	LOCO_GLASSES.forEach(type => {
+		event.add('create:wrench_pickup', `railways:${type}`)
+		event.remove('minecraft:mineable/pickaxe', `railways:${type}`)
+		event.remove('cucumber:mineable/paxel', `railways:${type}`)
+		global.LOCOMETAL_COLORS.forEach(colorObj => { 
+    		colorObj.colors.forEach(subColor => {
+            	event.add('create:wrench_pickup', `railways:${subColor}_${type}`)
+				event.remove('minecraft:mineable/pickaxe', `railways:${subColor}_${type}`)
+				event.remove('cucumber:mineable/paxel', `railways:${subColor}_${type}`)
+        	})
+    	})
+	})
 }
 //#endregion
 
