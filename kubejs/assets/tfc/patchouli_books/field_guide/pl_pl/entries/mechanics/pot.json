@@ -59,7 +59,7 @@
     {
       "type": "patchouli:spotlight",
       "item": "tfc:bucket/red_dye",
-      "title": "Simple Recipes",
+      "title": "Proste przepisy",
       "link_recipes": false,
       "text": "Other pot recipes transform the items and fluid in the pot into something else. For example, boiling five $(thing)ash$() in $(thing)water$() makes $(thing)lye$()."
     }

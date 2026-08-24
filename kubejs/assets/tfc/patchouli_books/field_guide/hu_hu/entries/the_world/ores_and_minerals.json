@@ -423,7 +423,7 @@
       "type": "patchouli:text",
       "anchor": "hematite",
       "text": "Hematite is an ore of $(thing)Iron$() metal. It can be found in large veins in any $(l:the_world/geology#igneous_extrusive)Igneous Extrusive$() rocks near the surface.",
-      "title": "Hematite"
+      "title": "Hematit "
     },
     {
       "type": "tfc:multimultiblock",
@@ -525,7 +525,7 @@
       "type": "patchouli:text",
       "anchor": "limonite",
       "text": "Limonite is an ore of $(thing)Iron$() metal. It can be found in large veins in any $(l:the_world/geology#sedimentary)Sedimentary$() rocks near the surface.",
-      "title": "Limonite"
+      "title": "Limonit"
     },
     {
       "type": "tfc:multimultiblock",
@@ -871,7 +871,7 @@
       "type": "patchouli:spotlight",
       "anchor": "sulfur",
       "item": "tfc:ore/sulfur",
-      "title": "Sulfur",
+      "title": "Kén",
       "link_recipes": false,
       "text": "Sulfur is a $(thing)Mineral$() which can be ground in the $(l:mechanics/quern)Quern$(), and then used in the crafting of $(thing)Gunpowder$(). It is found near lava level deep underground, in sparse but large and plentiful veins, in any $(l:the_world/geology#metamorphic)Metamorphic$() or $(l:the_world/geology#igneous_intrusive)Igneous Intrusive$() rock."
     },

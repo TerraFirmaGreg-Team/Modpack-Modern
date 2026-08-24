@@ -1,0 +1,14 @@
+{
+	"argument.flywheel_backend.id.unknown": "Неизвестный бэкенд «%s»",
+	"command.flywheel.backend.get": "Текущий бэкенд Flywheel: «%s»",
+	"command.flywheel.backend.set": "Бэкенд Flywheel теперь «%s»",
+	"command.flywheel.backend.set.unavailable": "Запрошенный бэкенд «%s» недоступен",
+	"command.flywheel.limit_updates.get.off": "Ограничение обновлений на данный момент выключено",
+	"command.flywheel.limit_updates.get.on": "Ограничение обновлений на данный момент включено",
+	"command.flywheel.limit_updates.set.off": "Ограничение обновлений теперь выключено",
+	"command.flywheel.limit_updates.set.on": "Ограничение обновлений теперь включено",
+	"command.flywheel.use_light_directions.get.off": "Направления света не используются",
+	"command.flywheel.use_light_directions.get.on": "Направления света используются",
+	"command.flywheel.use_light_directions.set.off": "Использование направлений света отключено",
+	"command.flywheel.use_light_directions.set.on": "Использование направлений света включено"
+}

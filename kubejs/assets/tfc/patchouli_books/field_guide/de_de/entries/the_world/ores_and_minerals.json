@@ -871,7 +871,7 @@
       "type": "patchouli:spotlight",
       "anchor": "sulfur",
       "item": "tfc:ore/sulfur",
-      "title": "Schwefel",
+      "title": "Sulfur",
       "link_recipes": false,
       "text": "Sulfur is a $(thing)Mineral$() which can be ground in the $(l:mechanics/quern)Quern$(), and then used in the crafting of $(thing)Gunpowder$(). It is found near lava level deep underground, in sparse but large and plentiful veins, in any $(l:the_world/geology#metamorphic)Metamorphic$() or $(l:the_world/geology#igneous_intrusive)Igneous Intrusive$() rock."
     },
