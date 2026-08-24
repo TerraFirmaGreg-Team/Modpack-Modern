@@ -12,7 +12,7 @@
 		},
 		{
 			"type": "patchouli:crafting",
-			"name": "硫磺",
+			"name": "硫化物",
 			"text": "地獄磚是一種建築磚塊，也可用於$(l:beneath/hellforge)地獄熔爐$()。",
 			"recipe": "tfg:shapeless/hellbricks"
 		},

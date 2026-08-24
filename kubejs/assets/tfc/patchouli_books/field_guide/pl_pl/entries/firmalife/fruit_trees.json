@@ -15,7 +15,7 @@
       "type": "patchouli:text",
       "anchor": "cocoa",
       "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 20 - 35 °C$(br)$(bold)$(l:mechanics/hydration)Rainfall$(): 220 - 400mm$(br2)Cocoa trees are used to make $(l:firmalife/chocolate)Chocolate$().",
-      "title": "Cocoa Tree"
+      "title": "Kakaowiec"
     },
     {
       "type": "tfc:multimultiblock",

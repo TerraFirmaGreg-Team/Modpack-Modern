@@ -69,7 +69,6 @@
 	"config.tacz.client.render.head_shot_debug_hitbox.desc": "Czy wyświetlać hitbox strzału w głowę",
 	"config.tacz.client.render.hit_market_start_position": "Pozycja Początkowa Markera Trafienia",
 	"config.tacz.client.render.hit_market_start_position.desc": "Pozycja startowa markera trafienia przy zabiciu",
-	"config.tacz.client.render.kill_amount_duration_second": "Liczba zabójstw trwania drugie",
 	"config.tacz.client.render.kill_amount_duration_second.desc": "Czas trwania liczby zabójstw, w sekundach",
 	"config.tacz.client.render.kill_amount_enable": "Włącz liczbę zabójstw",
 	"config.tacz.client.render.kill_amount_enable.desc": "Czy wyświetlać liczbę zabójstw",

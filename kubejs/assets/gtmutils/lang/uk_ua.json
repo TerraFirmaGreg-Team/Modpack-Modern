@@ -1,7 +1,11 @@
 {
+  "behaviour.paintspray.infinite.fluid_storage": "§bФарба: §f%s / %s мБ",
   "behaviour.paintspray.infinite.status.color": "§7Режим: §f%s",
   "behaviour.paintspray.infinite.status.solvent": "Розчинник",
   "behaviour.paintspray.infinite.tooltip.current_color": "Поточний колір: %s",
+  "behaviour.paintspray.infinite.tooltip.info": "§eНатисни ПКМ §7для фарбування.",
+  "behaviour.paintspray.infinite.tooltip.info_1": "§eShift + ПКМ по блоку, який можна пофарбувати, §7щоб виконати ланцюгове фарбування.",
+  "behaviour.paintspray.infinite.tooltip.info_2": "§eShift + ПКМ §7, щоб відкрити меню вибору кольору.",
   "behaviour.paintspray.infinite.tooltip.solvent": "§7Режим: §bРозчинник (Очищення)",
   "behaviour.paintspray.solvent.short": "Розчинник",
   "block.gtmutils.enlarged_stocking_bus.desc.0": "Отримує предмети безпосередньо з МЕ мережі",
@@ -158,7 +162,11 @@
   "tooltip.pterb_machine.input_coolant_before_use": "Завжди заливайте охолоджувач перед увімкненням!",
   "tooltip.pterb_machine.purpose": "Міст Ейнштейна — Розена, для передачі енергії (PTERB)",
   "tooltip.pterb_machine.uses_coolant": "Витрачає %s для роботи!",
+  "tooltip.web_hub_machine.frequencies": "WEB Hub є джерелом енергії бездротової енергетичної мережі, він має спільну частоту з WEB-приймачем і подає енергію до бездротової мережі.",
   "tooltip.web_hub_machine.input_coolant_before_use": "Завжди заливайте охолоджувач перед увімкненням!",
   "tooltip.web_hub_machine.purpose": "Міст Ейнштейна — Розена, для передачі енергії (PTERB)",
-  "tooltip.web_hub_machine.uses_coolant": "Витрачає %s для роботи!"
+  "tooltip.web_hub_machine.uses_coolant": "Витрачає %s для роботи!",
+  "tooltip.web_receiver_machine.frequencies": "WEB-приймач є виходом енергії бездротової енергетичної мережі, він має спільну частоту з WEB Hub, отримує та виводить енергію з бездротової мережі.",
+  "tooltip.web_receiver_machine.only_output": "Отримує енергію від WEB Hub",
+  "tooltip.web_receiver_machine.purpose": "Якірна точка Ейнштейна — Розена (ERAP)"
 }

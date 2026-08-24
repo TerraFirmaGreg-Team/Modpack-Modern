@@ -135,7 +135,7 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "致癌物",
+			"title": "Carcinogens",
 			"item": "gtceu:benzene_bucket",
 			"anchor": "Carcinogens",
 			"text": "$(thing)致癌物$()是導致 $(item)癌症$() 的物質。包括 $(thing)鉻粉$()以及部分有機化合物，例如$(thing)苯及其產物$()。$(thing)致癌物$()$(item) 不會主動消失$()，但在實際造成危害前會出現大量警告。一開始會 $(item)虛弱$() ，接著是 $(item)飢餓$() ，再來是 $(item)緩慢$() ，最後后是$(item)挖掘疲勞$() 。當累積足夠的曝露量時，才會導致 $(item)死亡$()。"
@@ -156,7 +156,7 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "刺激",
+			"title": "Irritants",
 			"item": "gtceu:chromite_dust",
 			"anchor": "Irritants",
 			"text": "$(thing)刺激物$()是由吸入$(thing)甲酸胺$()或接觸$(thing)鉻鐵礦粉$()所引起。短暫接觸導致 $(item)虛弱$()，但長時間忽略，則會引發 $(item)隨機造成危害$()。$(br2)$(l:tfg_ores/hazards#mask)口罩$()可以防止吸入，而$(l:tfg_ores/hazards#gloves)手套$()可以防止直接接觸。$(br2)$(l:tfg_ores/hazards#hazmat)防護服$()可以同时防護兩者。"

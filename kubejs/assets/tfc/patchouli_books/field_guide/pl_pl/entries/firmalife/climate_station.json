@@ -42,7 +42,7 @@
     {
       "type": "patchouli:text",
       "text": "$(li)It updates periodically on its own, or when placed/broken.$()$(li)When a climate station updates, it tells all the blocks inside the multiblock that they can operate. For example, it lets $(l:firmalife/cheese)Cheese$() begin aging.$()$(li)Press $(item)$(k:key.use)$() to force update the Climate Station and the blocks inside the multiblock.",
-      "title": "Climate Station Tips"
+      "title": "Wskazówki do stacji klimatycznej"
     },
     {
       "type": "patchouli:crafting",

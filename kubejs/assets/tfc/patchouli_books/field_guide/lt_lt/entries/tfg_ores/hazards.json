@@ -135,7 +135,7 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Kancerogenai",
+			"title": "Carcinogens",
 			"item": "gtceu:benzene_bucket",
 			"anchor": "Carcinogens",
 			"text": "$(thing)Carcinogens$() are substances that cause $(item)Cancer$(). They include $(thing)Chromium Dust$() aswell as some organic compounds, such as $(thing)Benzene and its products$(). $(thing)Carcinogens$() $(item)don't go away on their own$(), but they give plenty of warnings before doing any real harm. It starts off with $(item)Weakness$(), followed by $(item)Hunger$(), then $(item)Slowness$() and later on $(item)Mining Fatique$(). Only when substantial enough exposure is accumulated it causes $(item)Death$()."
