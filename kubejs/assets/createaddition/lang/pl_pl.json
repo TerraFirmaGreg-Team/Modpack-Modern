@@ -1,4 +1,5 @@
 {
+	"attack.death.createaddition.barbed_wire": "%1$s próbował przekroczyć drut kolczasty",
 	"block.createaddition.accumulator": "Akumulator",
 	"block.createaddition.accumulator.tooltip": "AKUMULATOR",
 	"block.createaddition.accumulator.tooltip.behaviour1": "[NEEDS_TRANSLATION] Provides _⚡_ to _wires_ connected to the _connector_ marked with an upwards arrow.",

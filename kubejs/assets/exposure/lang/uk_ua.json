@@ -1,6 +1,6 @@
 {
 	"block.exposure.lightroom": "Лайтрум",
-	"category.exposure": "Exposure",
+	"category.exposure": "Експозиція",
 	"command.exposure.debug.chromatic_from_last_three.fail.error": "Неможливо створити барвисту експозицію: %s",
 	"command.exposure.debug.chromatic_from_last_three.fail.not_enough_frames": "Недостатньо кадрів. Для барвистої експозиції потрібно 3.",
 	"command.exposure.debug.chromatic_from_last_three.success.created": "Створено барвисту експозицію: ",
@@ -291,7 +291,7 @@
 	"item.exposure.photograph_frame": "Рамка для фотографії",
 	"item.exposure.signed_album": "Підписаний фотоальбом",
 	"item.exposure.stacked_photographs": "Фотографії",
-	"itemGroup.exposure.exposure": "Exposure",
+	"itemGroup.exposure.exposure": "Експозиція",
 	"jei.exposure.photograph_printing.title": "Друк фотографій",
 	"jei.exposure.photograph_stacking.removing.tooltip": "Клацніть правою кнопкою миші",
 	"jei.exposure.photograph_stacking.stacking.tooltip": "Клацніть правою кнопкою миші",

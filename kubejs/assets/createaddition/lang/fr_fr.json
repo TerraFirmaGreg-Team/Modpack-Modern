@@ -1,6 +1,4 @@
 {
-	"block.createaddition.accumulator": "Accumulator",
-	"block.createaddition.accumulator.tooltip": "ACCUMULATOR",
 	"block.createaddition.accumulator.tooltip.behaviour1": "Fournit du _FE_ aux _fils_ connectés au _connecteur_ marqué d'une flèche vers le haut.",
 	"block.createaddition.accumulator.tooltip.behaviour2": "Accepte _FE_ des _fils_ connectés au _connecteur_ marqué d'une flèche vers le bas.",
 	"block.createaddition.accumulator.tooltip.condition1": "Récéption",
@@ -98,7 +96,6 @@
 	"createaddition.tooltip.energy.consumption": "Consommation:",
 	"createaddition.tooltip.energy.demand": "Consommation du réseau:",
 	"createaddition.tooltip.energy.input": "Entrer",
-	"createaddition.tooltip.energy.mode": "Mode:",
 	"createaddition.tooltip.energy.none": "Aucun",
 	"createaddition.tooltip.energy.output": "Sortie",
 	"createaddition.tooltip.energy.passive": "Passive",

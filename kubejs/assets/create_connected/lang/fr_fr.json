@@ -115,7 +115,6 @@
 	"create.item_attributes.max_damage.inverted": "n'a pas de durabilité maximale %1$s",
 	"create.item_attributes.stack_size": "empile vers %1$s",
 	"create.item_attributes.stack_size.inverted": "ne se superpose pas à %1$s",
-	"create_connected.battery.charge": "Charge",
 	"create_connected.battery.rotation_direction": "Direction de rotation pendant la décharge",
 	"create_connected.battery.status": "État de la batterie: %1$s",
 	"create_connected.battery.status.charging": "Recharge en cours",
@@ -278,10 +277,8 @@
 	"item.create_connected.copycat_catwalk.tooltip.summary": "_Imitation panneaux_ pré-assemblés en une passerelle pour un placement pratique.",
 	"item.create_connected.linked_transmitter": "Transmetteur lié",
 	"item.create_connected.music_disc_elevator": "Disque de musique",
-	"item.create_connected.music_disc_elevator.desc": "Kevin MacLeod - Casa Bossa Nova",
 	"item.create_connected.music_disc_interlude": "Disques de musique",
 	"item.create_connected.music_disc_interlude.desc": "Kevin MacLeod - Prévision locale - Élévateur",
 	"item.create_connected.redstone_link_wildcard": "Joker de liaison de redstone",
-	"item.create_connected.redstone_link_wildcard.tooltip.summary": "Permet aux liaisons de redstone de correspondre à n'importe quelle fréquence pour l'emplacement dans lequel ils sont placés.",
-	"itemGroup.create_connected.main": "Create: Connected"
+	"item.create_connected.redstone_link_wildcard.tooltip.summary": "Permet aux liaisons de redstone de correspondre à n'importe quelle fréquence pour l'emplacement dans lequel ils sont placés."
 }

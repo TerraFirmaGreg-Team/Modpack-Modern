@@ -44,6 +44,8 @@
 	"subtitles.entity.bird.flap": "Хлопот крыльев",
 	"subtitles.entity.blue_jay.call": "Голубая сойка щебечет",
 	"subtitles.entity.blue_jay.hurt": "Голубая сойка ранена",
+	"subtitles.entity.canada_goose.call": "Канадский гусь гогочет",
+	"subtitles.entity.canada_goose.hurt": "Канадский гусь ранен",
 	"subtitles.entity.cardinal.call": "Красный кардинал щебечет",
 	"subtitles.entity.cardinal.hurt": "Красный кардинал ранен",
 	"subtitles.entity.cardinal.song": "Красный кардинал поёт",
@@ -54,6 +56,8 @@
 	"subtitles.entity.crow.hurt": "Чёрная ворона ранена",
 	"subtitles.entity.duck.call": "Утка крякает",
 	"subtitles.entity.duck.hurt": "Утка ранена",
+	"subtitles.entity.greylag_goose.call": "Серый гусь гогочет",
+	"subtitles.entity.greylag_goose.hurt": "Серый гусь ранен",
 	"subtitles.entity.gull.call": "Чайка кричит",
 	"subtitles.entity.gull.hurt": "Чайка ранена",
 	"subtitles.entity.gull.long_call": "Чайка протяжно кричит",
@@ -74,6 +78,8 @@
 	"subtitles.entity.sparrow.call": "Воробей чирикает",
 	"subtitles.entity.sparrow.hurt": "Воробей ранен",
 	"subtitles.entity.sparrow.song": "Воробей поёт",
+	"subtitles.entity.swan_goose.call": "Гусь-сухонос гогочет",
+	"subtitles.entity.swan_goose.hurt": "Гусь-сухонос ранен",
 	"tag.item.fowlplay.blue_jay_food": "Еда голубых соек",
 	"tag.item.fowlplay.cardinal_food": "Еда красных кардиналов",
 	"tag.item.fowlplay.chickadee_food": "Еда гаичек",
@@ -87,5 +93,6 @@
 	"tag.item.fowlplay.raven_food": "Еда воронов",
 	"tag.item.fowlplay.robin_food": "Еда зарянок",
 	"tag.item.fowlplay.sparrow_food": "Еда воробьёв",
+	"text.betterf3.line.fowlplay_ambient_birds": "Окружающие птицы",
 	"text.betterf3.line.fowlplay_birds": "Птицы"
 }

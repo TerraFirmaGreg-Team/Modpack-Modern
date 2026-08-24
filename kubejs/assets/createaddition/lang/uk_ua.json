@@ -1,4 +1,8 @@
 {
+	"attack.death.createaddition.barbed_wire": "%1$s намагався перетнути колючий дріт",
+	"attack.death.createaddition.barbed_wire.player": "%1$s намагався перетнути колючий дріт під час бою з %2$s",
+	"attack.death.createaddition.tesla_coil": "%1$s отримав смертельний удар струмом",
+	"attack.death.createaddition.tesla_coil.player": "%1$s отримав смертельний удар струмом під час бою з %2$s",
 	"block.createaddition.accumulator": "Акумулятор",
 	"block.createaddition.accumulator.tooltip": "АКУМУЛЯТОР",
 	"block.createaddition.accumulator.tooltip.behaviour1": "Проводить _FE_ по _дротах_ коли підключено до _з'єднувача_ позначені стрілкою вгору.",
@@ -116,7 +120,6 @@
 	"fluid.createaddition.bioethanol": "біоетанол",
 	"fluid.createaddition.seed_oil": "Олія",
 	"item.createaddition.brass_figurine": "Brass Figurine",
-	"item.createaddition.brass_figurine.tooltip": "BRASS_FIGURINE",
 	"item.createaddition.bronze_rod": "Бронзовий стрижень",
 	"item.createaddition.cake_base": "Основа для торта",
 	"item.createaddition.cake_base_baked": "Запечена основа для торта",
