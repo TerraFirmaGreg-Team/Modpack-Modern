@@ -13,10 +13,10 @@
 			"text": "Zraszacz wytwarza się z $(thing)miedzianej płytki$()."
 		},
 		{
-			"title": "Rurociągi",
-			"item": "gtceu:copper_tiny_fluid_pipe",
 			"type": "patchouli:spotlight",
-			"text": "Zraszacze muszą być podłączone do systemu rurociągów dostarczających wodę. Można to osiągnąć poprzez podłączenie sieci $(thing)rur do płynów$(). $(thing)Pompa mechaniczna$() pozwoli napełnić je wodą."
+			"text": "Zraszacze muszą być podłączone do systemu rurociągów dostarczających wodę. Można to osiągnąć poprzez podłączenie sieci $(thing)rur do płynów$(). $(thing)Pompa mechaniczna$() pozwoli napełnić je wodą.",
+			"title": "Rurociągi",
+			"item": "gtceu:copper_tiny_fluid_pipe"
 		},
 		{
 			"type": "patchouli:text",

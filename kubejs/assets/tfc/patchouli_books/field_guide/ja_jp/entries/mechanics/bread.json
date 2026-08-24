@@ -1,0 +1,13 @@
+{
+  "name": "パン",
+  "category": "tfc:mechanics",
+  "icon": "tfc:textures/item/food/wheat_bread.png",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "パンは、$(l:mechanics/crops#barley)大麦$()など、さまざまな穀物を加工した食品です。穀物の植物を壊すと、生の未加工の穀物がドロップしますが、その状態では役に立ちません。これは$(thing)パン$()に加工する必要があり、$(l:mechanics/sandwiches)サンドイッチ$()にして食べたりそのまま食料にしたりできます。",
+      "title": "Bread"
+    }
+  ],
+  "read_by_default": true
+}

@@ -318,7 +318,6 @@
 	"block.createdeco.zinc_trapdoor": "亜鉛のトラップドア",
 	"block.createdeco.zinc_window": "亜鉛の窓",
 	"block.createdeco.zinc_window_pane": "亜鉛の板窓",
-	"item.createdeco.andesite_sheet": "安山岩合金板",
 	"item.createdeco.brass_coin": "真鍮のコイン",
 	"item.createdeco.brass_coinstack": "真鍮のコインの束",
 	"item.createdeco.copper_coin": "銅のコイン",
@@ -327,16 +326,10 @@
 	"item.createdeco.gold_coinstack": "金のコインの束",
 	"item.createdeco.industrial_iron_coin": "鋼鉄のコイン",
 	"item.createdeco.industrial_iron_coinstack": "鋼鉄のコインの束",
-	"item.createdeco.industrial_iron_ingot": "鋼材のインゴット",
-	"item.createdeco.industrial_iron_nugget": "鋼材塊",
-	"item.createdeco.industrial_iron_sheet": "鋼材の板",
 	"item.createdeco.iron_coin": "錬鉄のコイン",
 	"item.createdeco.iron_coinstack": "錬鉄のコインの束",
 	"item.createdeco.netherite_coin": "青鋼のコイン",
 	"item.createdeco.netherite_coinstack": "青鋼のコインの束",
-	"item.createdeco.netherite_nugget": "ネザライトのナゲット",
-	"item.createdeco.netherite_sheet": "ネザライトの板金",
 	"item.createdeco.zinc_coin": "亜鉛のコイン",
-	"item.createdeco.zinc_coinstack": "亜鉛のコインの束",
-	"item.createdeco.zinc_sheet": "亜鉛の板金"
+	"item.createdeco.zinc_coinstack": "亜鉛のコインの束"
 }

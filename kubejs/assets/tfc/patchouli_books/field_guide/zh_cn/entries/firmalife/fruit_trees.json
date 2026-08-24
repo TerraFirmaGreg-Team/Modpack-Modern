@@ -1,0 +1,177 @@
+{
+  "name": "Firmalife中的水果",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:plant/fig_sapling",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Firmalife在群峦传说原有的基础上新增了一些结果植物。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "为了提高可读性，正文将从下一页开始。"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "cocoa",
+      "text": "$(bold)$(l:the_world/climate#temperature)温度$(): 20 - 35 °C$(br)$(bold)$(l:mechanics/hydration)降雨量$(): 220 - 400mm$(br2)可可树用于制作$(l:firmalife/chocolate)巧克力$()。",
+      "title": "可可树"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "可可树的月度生长阶段",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "firmalife:plant/cocoa_leaves[lifecycle=dormant]",
+            "Y": "firmalife:plant/cocoa_branch[up=true,down=true]"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "firmalife:plant/cocoa_leaves[lifecycle=healthy]",
+            "Y": "firmalife:plant/cocoa_branch[up=true,down=true]"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "firmalife:plant/cocoa_leaves[lifecycle=flowering]",
+            "Y": "firmalife:plant/cocoa_branch[up=true,down=true]"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "firmalife:plant/cocoa_leaves[lifecycle=fruiting]",
+            "Y": "firmalife:plant/cocoa_branch[up=true,down=true]"
+          }
+        }
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "fig",
+      "text": "$(bold)$(l:the_world/climate#temperature)温度$(): 20 - 35 °C$(br)$(bold)$(l:mechanics/hydration)降雨量$(): 125 - 215mm$(br2)",
+      "title": "无花果树"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "无花果树的月度生长阶段",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "firmalife:plant/fig_leaves[lifecycle=dormant]",
+            "Y": "firmalife:plant/fig_branch[up=true,down=true]"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "firmalife:plant/fig_leaves[lifecycle=healthy]",
+            "Y": "firmalife:plant/fig_branch[up=true,down=true]"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "firmalife:plant/fig_leaves[lifecycle=flowering]",
+            "Y": "firmalife:plant/fig_branch[up=true,down=true]"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "firmalife:plant/fig_leaves[lifecycle=fruiting]",
+            "Y": "firmalife:plant/fig_branch[up=true,down=true]"
+          }
+        }
+      ]
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 20
+}

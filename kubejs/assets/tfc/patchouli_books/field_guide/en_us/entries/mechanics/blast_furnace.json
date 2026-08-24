@@ -1,5 +1,4 @@
 {
-  "__comment__": "This file was automatically created by mcresources",
   "name": "Blast Furnace",
   "category": "tfc:mechanics",
   "icon": "tfc:blast_furnace",
@@ -38,7 +37,9 @@
     },
     {
       "type": "patchouli:image",
-      "images": [ "tfc:textures/gui/book/gui/blast_furnace.png" ],
+      "images": [
+        "tfc:textures/gui/book/gui/blast_furnace.png"
+      ],
       "text": "The Blast Furnace Interface",
       "border": false
     },

@@ -1,0 +1,18 @@
+{
+  "name": "Ganchos",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:wood/hanger/pine",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "O $(thing)Gancho$() é um dispositivo para armazenar carne ou alho. Ele só pode ser usado em uma $(l:firmalife/cellar)Adega$() válida. Prateleiras de comida podem conter uma pilha completa de um item. Adicionar e remover o item pode ser feito com $(item)$(k:key.use)$(). Itens em prateleiras de comida válidas recebem um modificador de decaimento melhor do que prateleiras ou recipientes."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/wood/acacia_hanger",
+      "text": "O gancho é feito de tábuas e linha."
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 5
+}

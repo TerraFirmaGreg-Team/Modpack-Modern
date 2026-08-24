@@ -1,5 +1,4 @@
 {
-  "__comment__": "This file was automatically created by mcresources",
   "name": "Вироби зі скла",
   "category": "tfc:mechanics",
   "icon": "minecraft:glass",
@@ -19,6 +18,8 @@
     },
     {
       "type": "patchouli:multiblock",
+      "text": "Після охолодження скло можна розбити за допомогою $(l:mechanics/glassworking#saw)ювелірної пилки$(), щоб отримати його.",
+      "border": true,
       "multiblock": {
         "mapping": {
           "C": "#tfc:glass_pouring_table",
@@ -32,9 +33,7 @@
             "CCCC"
           ]
         ]
-      },
-      "text": "Після охолодження скло можна розбити за допомогою $(l:mechanics/glassworking#saw)ювелірної пилки$(), щоб отримати його.",
-      "border": true
+      }
     },
     {
       "type": "patchouli:text",
@@ -43,6 +42,8 @@
     },
     {
       "type": "patchouli:multiblock",
+      "text": "Після охолодження скло можна розбити за допомогою $(l:mechanics/glassworking#saw)ювелірної пилки$(), щоб отримати його.",
+      "border": true,
       "multiblock": {
         "mapping": {
           "C": "#tfc:glass_basin_blocks",
@@ -60,20 +61,18 @@
             "   "
           ]
         ]
-      },
-      "text": "Після охолодження скло можна розбити за допомогою $(l:mechanics/glassworking#saw)ювелірної пилки$(), щоб отримати його.",
-      "border": true
+      }
     },
     {
       "type": "patchouli:crafting",
+      "text": "$(thing)Блоки, вкриті латунню$() можна створити, тримаючи $(thing)латунну пластину$() та використавши $(item)$(k:key.use)$() на будь-якому $(thing)кам’яному цегляному блоці$().",
       "title": "Блоки для склоробства",
-      "recipe": "tfc:crafting/white_kaolin_clay",
-      "text": "$(thing)Блоки, вкриті латунню$() можна створити, тримаючи $(thing)латунну пластину$() та використавши $(item)$(k:key.use)$() на будь-якому $(thing)кам’яному цегляному блоці$()."
+      "recipe": "tfc:crafting/white_kaolin_clay"
     },
     {
       "type": "patchouli:text",
-      "anchor": "coloring",
       "text": "Скло має природний колір залежно від типу $(l:mechanics/glassworking)скляної суміші$(), яка була використана. Інші кольори можна отримати за допомогою $(l:mechanics/bowls)миски$().$(br2)\nЩоб використати, постав $(l:mechanics/bowls)миску$() на землю, потім застосуй $(item)$(k:key.use)$() з потрібним $(thing)порошком$(). Перед $(thing)виливанням$() використайте $(thing)склодувну трубку$() на мисці, щоб додати порошок до суміші.",
+      "anchor": "coloring",
       "title": "Фарбування скла"
     },
     {

@@ -1,0 +1,17 @@
+{
+  "name": "The Mob Net",
+  "category": "tfc:sacks_n_such",
+  "icon": "sns:mob_net",
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "sns:crafting/mob_net",
+      "text": "Mob nets are extremely useful for capturing small mobs. You'll get the most use out of them for transporting things like Birds or babies of larger mobs like Cows."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "For modpack authors or simply people wishing to add extra mobs see the entity tag $(bold)sns:netable_mobs"
+    }
+  ],
+  "read_by_default": true
+}

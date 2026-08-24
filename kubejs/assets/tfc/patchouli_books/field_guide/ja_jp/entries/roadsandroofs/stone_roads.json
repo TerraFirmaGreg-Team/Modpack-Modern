@@ -1,0 +1,35 @@
+{
+  "name": "Stone Roads",
+  "category": "tfc:roadsandroofs",
+  "icon": "rnr:rock/flagstones/basalt",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "A variety of different stone walking surfaces can be applied over a base course, and all provide a 20% speed bonus. Cobbled roads are created by adding loose rocks over the base course. Sett roads can be constructed from stone or ceramic bricks."
+    },
+    {
+      "type": "patchouli:crafting",
+      "anchor": "gneiss_flagstones",
+      "recipe": "rnr:crafting/flagstone/gneiss",
+      "title": "Flagstone Crafting",
+      "text": "Flagstones can be crafted from smooth stone or sandstone blocks."
+    },
+    {
+      "type": "patchouli:crafting",
+      "anchor": "pink_sandstone_flagstones",
+      "recipe": "rnr:crafting/flagstone/pink_sandstone",
+      "title": "Flagstone Crafting",
+      "text": "Flagstones can be crafted from smooth stone or sandstone blocks."
+    },
+    {
+      "type": "patchouli:image",
+      "title": "玄武岩の舗石道",
+      "images": [
+        "rnr:textures/gui/book/sett_road.png"
+      ],
+      "border": true
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 12
+}

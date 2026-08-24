@@ -1,0 +1,33 @@
+{
+  "name": "Materiais de Cantil",
+  "category": "tfc:waterflasks",
+  "icon": "waterflasks:bladder",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Central to effective water storage is reuse of something that stored water(ish) before.$(br2)$(bold)       Bladders!$()$(br)Only certain animals have bladders that work for this purpose, and some species' are easier to extract than others."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(br)$(bold)Animal____________Chance$(br)$()Ovelha__________________10%$(br)Alpaca__________________10%$(br)Cabra___________________10%$(br)Cervo___________________10%$(br)Equinos_________________20%$(br)Ursos___________________20%$(br)Bovinos_________________50%$(br)Alce____________________50%$(br)$(br)Para aumentar suas chances, use uma arma de maior dano para abater o animal."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "waterflasks:leather_side",
+      "title": "Lateral de Couro de Cantil",
+      "link_recipes": false,
+      "text": "Laterais de Cantil são usadas em receitas de cantil."
+    },
+    {
+      "type": "tfc:knapping_recipe",
+      "recipe": "waterflasks:leather_knapping/leather_side",
+      "text": "Laterais de Couro de Cantil são feitas de couro para proteger a bexiga de perfurações."
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 0,
+  "extra_recipe_mappings": {
+    "waterflasks:bladder": 0,
+    "waterflasks:leather_side": 2
+  }
+}

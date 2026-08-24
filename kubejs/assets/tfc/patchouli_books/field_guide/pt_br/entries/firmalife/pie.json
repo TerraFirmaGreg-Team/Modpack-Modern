@@ -1,0 +1,31 @@
+{
+  "name": "Torta",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:textures/item/food/cooked_pie.png",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "O Firmalife permite a criação de uma variedade de deliciosos produtos assados. Este capítulo lhe dará tudo o que você precisa para começar a saborear refeições deliciosas e criativas no café da manhã, almoço e jantar."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "A $(thing)Manteiga$() é a base de muitos desses alimentos. Usando uma $(l:firmalife/mixing_bowl)Tigela de Mistura$(), misture 1000 mB de $(thing)Creme$() com um item de $(thing)Sal$(). O creme é feito selando 1000 mB de leite em um barril com um $(l:mechanics/firmalife#cheesecloth)Pano de Queijo$()."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Uma refeição útil é a $(thing)Torta$(). Em uma tigela de mistura, combine manteiga, farinha e um adoçante (açúcar, mel) para fazer a $(thing)Massa de Torta$(). Para fazer a $(thing)Torta de Abóbora$() diretamente, misture um ovo, dois pedaços de abóbora, farinha e adoçante. Prepare-a com uma $(thing)Forma de Torta$() e asse em um $(l:firmalife/ovens)Forno$() para completar a receita."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/raw_pumpkin_pie",
+      "text": "$(thing)Formas de Torta$() podem ser forjadas de $(thing)Ferro Fundido$() em uma bigorna."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/filled_pie",
+      "text": "Massa de Torta, Conservas e uma Forma de Torta lhe renderão uma $(thing)Torta Recheada$(), que pode ser finalizada no forno e virar uma torta deliciosa."
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 25
+}

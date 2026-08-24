@@ -1,5 +1,4 @@
 {
-  "__comment__": "This file was automatically created by mcresources",
   "name": "Геологорозвідка",
   "category": "tfc:mechanics",
   "icon": "tfc:metal/propick/wrought_iron",
@@ -30,22 +29,22 @@
     },
     {
       "type": "patchouli:image",
+      "text": "Використання геологічного молотка виглядає ось так. Велика частинка з позначкою $(bold)\"!\"$() — це стиль рентгену для всієї жили. А менші частинки — це стиль рентгену для кожного блока.",
       "title": "Геологічний огляд",
       "images": [
         "tfg:textures/gui/field_guide/prospecting/tfg_prospectors_pick_xray.png"
       ],
-      "border": true,
-      "text": "Використання геологічного молотка виглядає ось так. Велика частинка з позначкою $(bold)\"!\"$() — це стиль рентгену для всієї жили. А менші частинки — це стиль рентгену для кожного блока."
+      "border": true
     },
     {
       "type": "tfc:knapping_recipe",
-      "recipe": "tfc:clay_knapping/propick_head_mold",
-      "text": "Щоб зробити геологічний молоток, можна $(l:getting_started/pottery)виколотити$() необпалений шаблон із глини, як показано вище."
+      "text": "Щоб зробити геологічний молоток, можна $(l:getting_started/pottery)виколотити$() необпалений шаблон із глини, як показано вище.",
+      "recipe": "tfc:clay_knapping/propick_head_mold"
     },
     {
       "type": "tfc:heat_recipe",
-      "recipe": "tfc:heating/propick_head_mold",
-      "text": "Після того як шаблон було $(l:getting_started/pottery)виколото$(), його потрібно $(l:mechanics/heating)обпалити$(), щоб отримати $(item)шаблон голівки геологічного молотка.$()$(br2)Щоб створити головку інструмента, потрібно $(l:getting_started/finding_ores#casting)залити$() рідкий метал у шаблон."
+      "text": "Після того як шаблон було $(l:getting_started/pottery)виколото$(), його потрібно $(l:mechanics/heating)обпалити$(), щоб отримати $(item)шаблон голівки геологічного молотка.$()$(br2)Щоб створити головку інструмента, потрібно $(l:getting_started/finding_ores#casting)залити$() рідкий метал у шаблон.",
+      "recipe": "tfc:heating/propick_head_mold"
     },
     {
       "type": "tfc:anvil_recipe",

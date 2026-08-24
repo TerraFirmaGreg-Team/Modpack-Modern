@@ -1,5 +1,4 @@
 {
-  "__comment__": "This file was automatically created by mcresources",
   "name": "Дикие фрукты",
   "category": "tfc:the_world",
   "icon": "tfc:textures/item/food/elderberry.png",
@@ -3577,7 +3576,6 @@
           "text": "Плодоносящий",
           "color": "0xa217ff"
         }
-
       ],
       "columns": 12,
       "first_column_width": 45,

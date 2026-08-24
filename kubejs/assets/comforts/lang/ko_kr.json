@@ -37,5 +37,7 @@
   "block.comforts.sleeping_bag_red": "빨간색 침낭",
   "block.comforts.sleeping_bag_white": "하얀색 침낭",
   "block.comforts.sleeping_bag_yellow": "노란색 침낭",
-  "capability.comforts.not_sleepy": "졸리지 않아 잘 수 없습니다."
+  "capability.comforts.not_sleepy": "졸리지 않아 잘 수 없습니다.",
+  "itemGroup.comforts": "Comforts 탭",
+  "itemGroup.comforts.general": "Comforts 탭"
 }

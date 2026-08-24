@@ -1,0 +1,26 @@
+{
+  "name": "サラダ",
+  "category": "tfc:mechanics",
+  "icon": "tfc:textures/item/food/protein_salad.png",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)サラダ$()は、最大5つの$(thing)果物$()、$(thing)野菜$()、または$(thing)調理済みの肉$()から$(thing)ボウル$()を使って作られる食事です。$(br2)サラダは最も簡単な食事の一つです。ただ$(l:mechanics/bowls)ボウル$()が必要です。まず、$(thing)ボウル$()を持ち、$(item)$(k:key.sneak)$()を押しながら$(item)$(k:key.use)$()を押します。これでサラダ画面が開きます。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "tag:tfc:salads",
+      "title": "",
+      "link_recipes": false,
+      "text": "上部のスロットに最大5つの材料を追加できます。左下のスロットには$(thing)ボウル$()を追加できます。完了したら、右下のスロットからサラダを取り出すことができます。"
+    }
+  ],
+  "read_by_default": true,
+  "extra_recipe_mappings": {
+    "tfc:food/fruit_salad": 0,
+    "tfc:food/dairy_salad": 0,
+    "tfc:food/vegetables_salad": 0,
+    "tfc:food/protein_salad": 0,
+    "tfc:food/grain_salad": 0
+  }
+}
