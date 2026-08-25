@@ -1692,7 +1692,7 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(create:tracks)"
 					}
 				}
-				title: "Any #create:tracks"
+				title: "{quests.tfg_tips.train_tracks.task}"
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.train_tracks.title}"
@@ -1793,7 +1793,7 @@
 							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfg:smokestacks)"
 						}
 					}
-					title: "Any #tfg:smokestacks"
+					title: "{quests.tfg_tips.steam_immersion.task.1}"
 					type: "item"
 				}
 				{
@@ -1805,7 +1805,7 @@
 							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(railways:palettes/dye_groups/boiler)"
 						}
 					}
-					title: "Any #railways:palettes/dye_groups/boiler"
+					title: "{quests.tfg_tips.steam_immersion.task.2}"
 					type: "item"
 				}
 			]
@@ -1841,7 +1841,7 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(create:seats)"
 					}
 				}
-				title: "Any #create:seats"
+				title: "{quests.tfg_tips.seats.task}"
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.seats.title}"
@@ -1924,12 +1924,21 @@
 				"69F5BB121E93A5A5"
 				"0E26552E6336BB32"
 			]
-			description: ["{quests.tfg_tips.automated_deliveries.desc}"]
+			description: [
+				"{quests.tfg_tips.automated_deliveries.desc.1}"
+				"{@pagebreak}"
+				"{quests.tfg_tips.automated_deliveries.desc.2}"
+			]
 			icon: "create:schedule"
 			id: "374304894C62001B"
 			size: 2.0d
 			subtitle: "{quests.tfg_tips.automated_deliveries.subtitle}"
 			tasks: [
+				{
+					id: "62146AF093CB06F4"
+					item: "create:schedule"
+					type: "item"
+				}
 				{
 					id: "375D0EB7DF147A96"
 					item: {
@@ -1939,18 +1948,15 @@
 							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(railways:conductor_caps)"
 						}
 					}
-					title: "Any #railways:conductor_caps"
+					title: "{quests.tfg_tips.automated_deliveries.task}"
 					type: "item"
-				}
-				{
-					id: "62146AF093CB06F4"
-					item: "create:schedule"
-					type: "item"
+					optional: true
 				}
 				{
 					id: "1D6A767AC7A77A49"
 					item: "minecraft:lead"
 					type: "item"
+					optional: true
 				}
 			]
 			title: "{quests.tfg_tips.automated_deliveries.title}"
@@ -1973,6 +1979,12 @@
 					count: 2L
 					id: "35379EA5912DC4D8"
 					item: { Count: 2, id: "create:portable_storage_interface" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "35379EA5912DC4D8"
+					item: { Count: 2, id: "createaddition:portable_energy_interface" }
 					type: "item"
 				}
 			]
