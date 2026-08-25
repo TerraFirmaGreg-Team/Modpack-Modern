@@ -18,5 +18,6 @@
 	"tooltip.steampowered.burner.item": "Pozostałe paliwo: %s x %s",
 	"tooltip.steampowered.engine.steamconsume": "Wymaga %s mW/t pary",
 	"tooltip.steampowered.steam_engine.heating": "Status: Rozgrzewa się",
-	"tooltip.steampowered.steam_engine.running": "Status: Uruchomiony"
+	"tooltip.steampowered.steam_engine.not_enough_steam": "Status: Za mało pary",
+	"tooltip.steampowered.steam_engine.running": "Status: Działa"
 }

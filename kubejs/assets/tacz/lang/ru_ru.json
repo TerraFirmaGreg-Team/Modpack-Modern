@@ -85,6 +85,8 @@
 	"config.tacz.client.sound": "Звук",
 	"config.tacz.client.sound.default_sound_concurrency_limit": "Предел параллелизма звука по умолчанию",
 	"config.tacz.client.sound.default_sound_concurrency_limit.desc": "Максимальное количество активных звуков обычного оружия для одной сущности и звукового идентификатора. 0 отключает это ограничение.",
+	"config.tacz.client.sound.first_person_animation_sound_tracking": "Отслеживание звуков анимации от первого лица",
+	"config.tacz.client.sound.first_person_animation_sound_tracking.desc": "Использовать абсолютный источник звука в мире с отслеживанием сущности для ключевых кадров анимации от первого лица. Это может улучшить совместимость с модами на физику звука, но может вызвать небольшое смещение стереозвука при движении",
 	"config.tacz.client.sound.high_frequency_sound_concurrency_limit": "Предел параллелизма высокочастотного звука",
 	"config.tacz.client.sound.high_frequency_sound_concurrency_limit.desc": "Максимальное количество активных высокочастотных звуков оружия, таких как звуки выстрелов и анимации, для одной сущности и звукового идентификатора. 0 отключает это ограничение.",
 	"config.tacz.client.sound.hit_sound_concurrency_limit": "Предел параллелизма звука попадания",
