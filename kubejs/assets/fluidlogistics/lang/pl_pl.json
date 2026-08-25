@@ -46,6 +46,7 @@
 	"create.item_attributes.is_any_fluid": "jest płynem",
 	"create.item_attributes.is_any_fluid.inverted": "nie jest płynem",
 	"create.item_attributes.is_fluid": "jest %1$s",
+	"create.item_attributes.is_fluid.inverted": "nie jest %1$s",
 	"create.schematicannon.status.missingFluid": "Brakujący płyn:",
 	"fluidlogistics.configuration.fluidPackageCapacity": "Pojemność pakowacza płynów",
 	"fluidlogistics.configuration.fluidPackageCapacity.tooltip": "Maksymalna ilość płynu, jaką może pomieścić paczka z płynem (w mW)",
@@ -81,6 +82,7 @@
 	"fluidlogistics.ponder.pump_speed.text_3": "...oraz szybkość, z jaką przenoszone są płyny",
 	"fluidlogistics.ponder.pump_speed.text_4": "Pompy łączą swoją przepustowość w tym samym systemie rur",
 	"fluidlogistics.ponder.pump_speed.text_5": "Upewnij się, że wszystkie są zwrócone w tym samym kierunku",
+	"gui.fluidlogistics.creative_banner.title": "FL",
 	"item.fluidlogistics.compressed_storage_tank": "Skompresowany zbiornik",
 	"item.fluidlogistics.fluid_package": "Paczka z płynem",
 	"item.fluidlogistics.fluid_schematic": "Schemat płynów",
@@ -89,5 +91,6 @@
 	"item.fluidlogistics.fluid_schematic.tooltip.condition1": "Kiedy w ręce",
 	"item.fluidlogistics.fluid_schematic.tooltip.condition2": "Kliknięcie PPM w czasie skradania",
 	"item.fluidlogistics.hand_pointer": "Wskaźnik ręczny",
-	"item.fluidlogistics.phantom_chain": "Fantomowy łańcuch"
+	"item.fluidlogistics.phantom_chain": "Fantomowy łańcuch",
+	"itemGroup.fluidlogistics.fluidlogistics_tab": "Create: Fluid Logistics"
 }
