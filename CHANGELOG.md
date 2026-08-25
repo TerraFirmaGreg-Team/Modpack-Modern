@@ -1,6 +1,10 @@
 # Changelog
 
 ## Unreleased
+### Changes
+### Bug fixes
+
+## [0.13.8] - 25-08-2026
 ### Breaking changes
 - Chromium through Ferrochrome now requires Circuit 2, fixing a recipe conflict (#4810) @TomPlop
 - Changes to how AE2 components are crafted on the moon will be coming soon, so start setting up a railgun!
