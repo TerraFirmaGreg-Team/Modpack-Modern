@@ -21,6 +21,7 @@
 - The Gas Well now depletes fluid vein way slower (same as the MV Fluid Rig) @TomPlop
 - Fixed being able to get wraptor/sniffer/glacian sheep shearable items from earth shearable animals via the pastoral rancher (#4813) @TomPlop
 - Fixed the wraptor/sniffer/glacian sheep output amounts in the pastoral rancher to better match their manual shearing amounts (#4814) @TomPlop
+- Fixed not being able to fully process garnet sands in a normal chemical reactor (#4686) @TomPlop
 #### Other changes
 - Added combustion engines for generating SU from combustible fuels. You can use any fluid that works in a GregTech combustion generator or gas turbine (#4766) @Pyritie
 - Added two more "start room" variations to mineshafts, and added monsters to it @Pyritie
