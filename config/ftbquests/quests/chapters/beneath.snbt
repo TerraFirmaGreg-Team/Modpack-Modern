@@ -21,13 +21,13 @@
 			}
 			id: "6C3E8E1974A07479"
 			linked_quest: "061116CF508D54F6"
-			x: 2.5d
+			x: 3.0d
 			y: 2.5d
 		}
 		{
 			id: "50806ED6BC26A04A"
 			linked_quest: "2DB82986FE176CD7"
-			x: 2.5d
+			x: 3.0d
 			y: 5.0d
 		}
 		{
@@ -36,6 +36,12 @@
 			shape: "heart"
 			x: -1.0d
 			y: 7.0d
+		}
+		{
+			id: "4F69D75A27802ED9"
+			linked_quest: "37108D618CF60730"
+			x: -7.0d
+			y: 5.0d
 		}
 	]
 	quests: [
@@ -296,17 +302,6 @@
 			subtitle: "{quests.tfg_tips.blue_steel_diving.subtitle}"
 			tasks: [
 				{
-					id: "429B22DC3DA3C04F"
-					item: {
-						Count: 1
-						id: "create:netherite_diving_boots"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
 					id: "0FB3C9125058EFD0"
 					item: {
 						Count: 1
@@ -339,9 +334,21 @@
 					}
 					type: "item"
 				}
+				{
+					id: "240F301920DD2E3D"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(minecraft:netherite_boots)item(create:netherite_diving_boots))"
+						}
+					}
+					title: "{quests.tasktype.item.any}"
+					type: "item"
+				}
 			]
 			title: "{quests.tfg_tips.blue_steel_diving.title}"
-			x: -3.0d
+			x: -5.0d
 			y: 5.0d
 		}
 		{
@@ -500,7 +507,7 @@
 				value: 1L
 			}]
 			title: "{quests.tfg_tips.red_elk.title}"
-			x: -3.0d
+			x: -5.0d
 			y: 2.5d
 		}
 		{
@@ -556,7 +563,7 @@
 				}
 			]
 			title: "{quests.tfg_tips.hellforge.title}"
-			x: 2.5d
+			x: 3.0d
 			y: 0.0d
 		}
 		{
@@ -622,7 +629,7 @@
 				}
 			]
 			title: "{quests.tfg_tips.top_slimes.title}"
-			x: -5.0d
+			x: -3.0d
 			y: 0.0d
 		}
 		{
@@ -667,7 +674,7 @@
 				}
 			]
 			title: "{quests.tfg_tips.middle_slimes.title}"
-			x: -5.0d
+			x: -3.0d
 			y: 2.5d
 		}
 		{
@@ -705,7 +712,7 @@
 				}
 			]
 			title: "{quests.tfg_tips.bottom_slimes.title}"
-			x: -5.0d
+			x: -3.0d
 			y: 5.0d
 		}
 		{
@@ -724,8 +731,24 @@
 				item: "beneath:unposter"
 				type: "item"
 			}]
-			x: 4.0d
+			x: 5.0d
 			y: 0.0d
+		}
+		{
+			dependencies: ["3A7EAA08E124010D"]
+			description: ["{quests.tfg_tips.phantoms.desc}"]
+			icon: "minecraft:phantom_membrane"
+			id: "777646123ED397D1"
+			tasks: [{
+				entity: "minecraft:phantom"
+				icon: "minecraft:phantom_membrane"
+				id: "64F275A6F9439869"
+				type: "kill"
+				value: 1L
+			}]
+			title: "{quests.tfg_tips.phantoms.title}"
+			x: -7.0d
+			y: 2.5d
 		}
 	]
 	subtitle: ["{quests.beneath.subtitle}"]

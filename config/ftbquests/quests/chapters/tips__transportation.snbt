@@ -1857,11 +1857,18 @@
 				{
 					id: "73D0FE82D3588DB1"
 					item: "create:fluid_tank"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "4518F01795121E7B"
 					item: "create:item_vault"
+					type: "item"
+				}
+				{
+					id: "61366CF93761C8FB"
+					item: "createaddition:modular_accumulator"
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -1948,15 +1955,15 @@
 							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(railways:conductor_caps)"
 						}
 					}
+					optional_task: true
 					title: "{quests.tfg_tips.automated_deliveries.task}"
 					type: "item"
-					optional: true
 				}
 				{
 					id: "1D6A767AC7A77A49"
 					item: "minecraft:lead"
+					optional_task: true
 					type: "item"
-					optional: true
 				}
 			]
 			title: "{quests.tfg_tips.automated_deliveries.title}"
@@ -1972,7 +1979,8 @@
 				{
 					count: 2L
 					id: "3230B77BBA6CC3A3"
-					item: { Count: 2, id: "create:portable_fluid_interface" }
+					item: "create:portable_fluid_interface"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1983,8 +1991,9 @@
 				}
 				{
 					count: 2L
-					id: "35379EA5912DC4D8"
-					item: { Count: 2, id: "createaddition:portable_energy_interface" }
+					id: "52E5F55725F5804A"
+					item: "createaddition:portable_energy_interface"
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -2006,6 +2015,7 @@
 				{
 					id: "6506463434B5035F"
 					item: "fluidlogistics:horizontal_multi_fluid_tank"
+					optional_task: true
 					type: "item"
 				}
 			]
