@@ -1,4 +1,5 @@
 {
+  "behaviour.paintspray.infinite.fluid_storage": "§bFarba: §f%s / %s mW",
   "behaviour.paintspray.infinite.status.color": "§7Tryb: §f%s",
   "behaviour.paintspray.infinite.status.solvent": "Rozpuszczalnik",
   "behaviour.paintspray.infinite.tooltip.current_color": "Obecny kolor: %s",
@@ -129,9 +130,9 @@
   "tooltip.omnibreaker.tool_mode_3": "Nożyce do drutu",
   "tooltip.omnibreaker.tool_mode_4": "Łom",
   "tooltip.pterb_machine.input_coolant_before_use": "Zawsze wprowadź chłodziwo przed włączeniem!",
-  "tooltip.pterb_machine.purpose": "Most Einsteina–Rosena do przesyłu energii (PTERB)\"",
+  "tooltip.pterb_machine.purpose": "Most Einsteina–Rosena do przesyłu energii (PTERB)",
   "tooltip.pterb_machine.uses_coolant": "Używa %s do funkcjonowania!",
   "tooltip.web_hub_machine.input_coolant_before_use": "Zawsze wprowadź chłodziwo przed włączeniem!",
-  "tooltip.web_hub_machine.purpose": "Most Einsteina–Rosena do przesyłu energii (PTERB)\"",
+  "tooltip.web_hub_machine.purpose": "Most Einsteina–Rosena do przesyłu energii (PTERB)",
   "tooltip.web_hub_machine.uses_coolant": "Używa %s do funkcjonowania!"
 }

@@ -1,5 +1,6 @@
 {
 	"fluid_type.sophisticatedcore.experience": "Опыт",
+	"gui.sophisticatedcore.buttons.browse_results": "Открыть расширенный список результатов с поиском",
 	"gui.sophisticatedcore.buttons.cancel": "Отмена",
 	"gui.sophisticatedcore.buttons.confirm": "Подтвердить",
 	"gui.sophisticatedcore.buttons.sort_action": "Сортировать инвентарь",
@@ -70,6 +71,7 @@
 	"gui.sophisticatedcore.settings.buttons.toggle_color_detail": "Следующий цвет = ЛКМ\nПредыдущий цвет = ПКМ",
 	"gui.sophisticatedcore.settings.buttons.unselect_all_slots": "Снять выделение со всех слотов",
 	"gui.sophisticatedcore.settings.buttons.z_offset": "Глубина",
+	"gui.sophisticatedcore.settings.buttons.z_offset_detail": "Наружу = ЛКМ\nВнутрь = ПКМ",
 	"gui.sophisticatedcore.settings.item_display": "Отображ.",
 	"gui.sophisticatedcore.settings.item_display.tooltip": "Настройки отображения предмета",
 	"gui.sophisticatedcore.settings.item_display.tooltip_detail": "Позволяют задавать слот под показ находящегося в нём предмета на модели хранилища\nОткройте вкладку для дальнейшей настройки",
@@ -267,7 +269,10 @@
 	"gui.sophisticatedcore.upgrades.void.tooltip": "Настройки уничтожения",
 	"gui.sophisticatedcore.upgrades.xp_pump": "Помпа опыта",
 	"gui.sophisticatedcore.upgrades.xp_pump.tooltip": "Помпа опыта",
+	"item.sophisticatedcore.stack_upgrade_conversion.tooltip": "Нажми ПКМ по установленному Улучшению стака для его преобразования",
 	"item.sophisticatedcore.storage.tooltip.empty": "Не содержит предметы или улучшения",
+	"item.sophisticatedcore.storage.tooltip.energy": "%s FE",
+	"item.sophisticatedcore.storage.tooltip.fluid": "%s mB %s",
 	"item.sophisticatedcore.storage.tooltip.fluid_empty": "Резервуар пуст",
 	"item.sophisticatedcore.storage.tooltip.inventory": "Инвентарь",
 	"item.sophisticatedcore.storage.tooltip.press_for_contents": "Зажмите <%s> для просмотра содержимого",
@@ -275,11 +280,12 @@
 	"item.sophisticatedcore.storage.tooltip.shift": "Shift слева",
 	"item.sophisticatedcore.storage.tooltip.stack_multiplier": "Множитель стака: %s",
 	"item.sophisticatedcore.storage.tooltip.upgrades": "Улучшения",
+	"item.sophisticatedcore.xp_bucket": "Ведро опыта",
 	"key.category.sophisticatedcore.main": "Моды «Sophisticated»",
 	"key.sophisticatedcore.sort": "Сортировать хранилище или рюкзак",
 	"key.sophisticatedcore.transfer_to_inventory": "Перенести в инвентарь игрока",
 	"key.sophisticatedcore.transfer_to_storage": "Перенести в инвентарь хранилища",
 	"upgrade_group.sophisticatedcore.cooking_upgrades": "Печные улучшения",
 	"upgrade_group.sophisticatedcore.jukebox_upgrades": "Музыкальные улучшения",
-	"upgrade_group.sophisticatedcore.stack_upgrades": "Стаковые улучшения"
+	"upgrade_group.sophisticatedcore.stack_upgrades": "Улучшения стака"
 }

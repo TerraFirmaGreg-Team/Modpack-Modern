@@ -10,7 +10,7 @@
     {
       "type": "patchouli:spotlight",
       "item": "tfc:bucket/red_dye",
-      "title": "Dye Liquids",
+      "title": "Barwniki płynne",
       "link_recipes": false,
       "text": "Dyes can also be made into fluids. A dye item and 1000mB of $(item)Water$() boiled in a $(l:mechanics/pot)Pot$() produces the same amount of $(thing)Dye Fluid$(). Dye fluids are used in $(l:mechanics/barrels)Barrels$() to color items."
     },
