@@ -1,0 +1,73 @@
+{
+  "name": "焚き火と鍋",
+  "category": "tfc:mechanics",
+  "icon": "tfc:pot",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)鍋$()は、食べ物を調理したり、その他の便利なアイテムを作成するために、焚き火に追加できるアイテムです。$(br2)鍋付きの焚き火を作るには、まず$(l:getting_started/firepit)焚き火$()を作成し、次に$(thing)鍋$()を焚き火に使用します。"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "0"
+          ]
+        ],
+        "mapping": {
+          "X": "tfc:pot"
+        }
+      },
+      "name": "",
+      "text": "鍋付きの焚き火。",
+      "enable_visualize": false
+    },
+    {
+      "type": "tfc:knapping_recipe",
+      "recipe": "tfc:clay_knapping/pot",
+      "text": "鍋を作るには、まず粘土を$(l:getting_started/pottery)加工$()します。"
+    },
+    {
+      "type": "tfc:heat_recipe",
+      "recipe": "tfc:heating/fired_pot",
+      "text": "次に、焚き火で使用できる$(thing)鍋$()を作成するには、$(l:mechanics/heating)焼成$()する必要があります。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "焚き火と同様に、鍋には燃料用の4つのスロットがあり、温度メーターも付いています。鍋には5つのアイテムスロットがあり、最大$(thing)1000mB$()の液体を入れることができます。$(br2)鍋で何かを調理するにはまず、あらゆる種類の液体容器を使用して液体を追加する必要があります。(バケツなど)次にアイテムを追加し、鍋に火をつけます。レシピが完成するまでしばらく煮込みます。"
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "tfc:textures/gui/book/gui/pot.png"
+      ],
+      "text": "一種のスープを作る鍋GUI。",
+      "border": false
+    },
+    {
+      "type": "patchouli:spotlight",
+      "anchor": "soup",
+      "item": "tfc:food/fruit_soup",
+      "title": "スープのレシピ",
+      "link_recipes": false,
+      "text": "スープは、$(thing)水$()の入った鍋に3～5個の$(thing)果物$()、$(thing)野菜$()、$(thing)肉を$()入れることで作成できます。レシピが完成すると、鍋の水が赤くなります。$(thing)ボウル$()を持ち、$(item)$(k:key.use)$()を使って回収できます。スープは複数の栄養素を1つの食事に組み合わせて摂取することができます。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "tfc:bucket/red_dye",
+      "title": "簡単なレシピ",
+      "link_recipes": false,
+      "text": "他のレシピは、鍋の中のアイテムや液体を別のものに変えるレシピです。たとえば、5つの$(thing)灰$()を$(thing)水$()と一緒に沸騰させると$(thing)灰汁$()ができます。"
+    }
+  ],
+  "read_by_default": true,
+  "extra_recipe_mappings": {
+    "tfc:pot": 0,
+    "tfc:ceramic/unfired_pot": 2,
+    "tfc:ceramic/pot": 3
+  }
+}

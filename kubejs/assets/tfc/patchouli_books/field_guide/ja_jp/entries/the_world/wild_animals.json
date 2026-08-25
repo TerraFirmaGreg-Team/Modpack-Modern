@@ -1,5 +1,4 @@
 {
-	"__comment__": "This file was automatically created by mcresources",
 	"name": "野生の動物",
 	"category": "tfc:the_world",
 	"icon": "tfc:medium_raw_hide",
@@ -122,38 +121,42 @@
 			"type": "patchouli:entity",
 			"entity": "tfc:moose",
 			"scale": 0.7,
-			"name": "ヘラジカ",
-			"text": "$(l:the_world/climate#temperature)気温$() -15°C～10°C、$(l:the_world/climate#rainfall)降水量$()150～300mmの環境に生息。"
+			"text": "$(l:the_world/climate#temperature)気温$() -15°C～10°C、$(l:the_world/climate#rainfall)降水量$()150～300mmの環境に生息。",
+			"name": "ヘラジカ"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "tfc:wildebeest",
 			"scale": 0.7,
-			"name": "ヌー",
-			"text": "平均$(l:the_world/climate#temperature)気温$() 13°C以上、$(l:the_world/climate#rainfall)降水量$()90～380mmの平原に生息。"
+			"text": "平均$(l:the_world/climate#temperature)気温$() 13°C以上、$(l:the_world/climate#rainfall)降水量$()90～380mmの平原に生息。",
+			"name": "ヌー"
 		},
 		{
 			"type": "patchouli:entity",
+			"text": "$(l:the_world/climate#temperature)気温$() -10°C～15°C、$(l:the_world/climate#rainfall)降水量$()160～420mmの環境に生息。",
+			"title": "獲物の動物",
 			"entity": "tfg:bison",
 			"scale": 0.7,
-			"name": "バイソン",
-			"text": "$(l:the_world/climate#temperature)気温$() -10°C～15°C、$(l:the_world/climate#rainfall)降水量$()160～420mmの環境に生息。"
+			"name": "バイソン"
 		},
 		{
-			"type": "patchouli:empty"
+			"type": "patchouli:empty",
+			"name": "ウサギ",
+			"text": "$(l:the_world/climate#rainfall)降水量$()15mm以上の場所に広く生息。ニンジンとキャベツを好み、気候によって毛皮が違っています。"
 		},
 		{
 			"type": "patchouli:text",
-			"anchor": "prey",
+			"name": "キツネ",
 			"text": "$(thing)獲物の動物$()はプレイヤーや捕食者を恐れます。危険から逃げるのが得意で、通常は反撃しません。いくつかの獲物動物は作物をつまむのを楽しみます。",
+			"anchor": "prey",
 			"title": "獲物の動物"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "tfc:rabbit",
 			"scale": 0.7,
-			"name": "ウサギ",
-			"text": "$(l:the_world/climate#rainfall)降水量$()15mm以上の場所に広く生息。ニンジンとキャベツを好み、気候によって毛皮が違っています。"
+			"text": "$(l:the_world/climate#rainfall)降水量$()15mm以上の場所に広く生息。ニンジンとキャベツを好み、気候によって毛皮が違っています。",
+			"name": "ウサギ"
 		},
 		{
 			"type": "patchouli:entity",
@@ -185,8 +188,8 @@
 			"type": "patchouli:entity",
 			"entity": "tfc:bongo",
 			"scale": 0.9,
-			"name": "ボンゴ",
-			"text": "平均$(l:the_world/climate#temperature)気温$() 15°C以上、$(l:the_world/climate#rainfall)降水量$()230～500mmの森林に生息。"
+			"text": "平均$(l:the_world/climate#temperature)気温$() 15°C以上、$(l:the_world/climate#rainfall)降水量$()230～500mmの森林に生息。",
+			"name": "ボンゴ"
 		},
 		{
 			"type": "patchouli:entity",
@@ -198,6 +201,7 @@
 			"type": "patchouli:entity",
 			"entity": "tfc:pheasant",
 			"scale": 0.7,
+			"name": "クジャク",
 			"text": "$(l:the_world/climate#temperature)気温$() -5°C～17°C、$(l:the_world/climate#rainfall)降水量$()100～300mmの森林に生息。"
 		},
 		{
@@ -208,18 +212,19 @@
 		},
 		{
 			"type": "patchouli:entity",
+			"text": "平均$(l:the_world/climate#temperature)気温$() 14°C以上、$(l:the_world/climate#rainfall)降水量$()190～500mmの森林に生息。",
+			"title": "水生生物",
 			"entity": "tfc:peafowl",
 			"scale": 0.6,
-			"name": "クジャク",
-			"text": "平均$(l:the_world/climate#temperature)気温$() 14°C以上、$(l:the_world/climate#rainfall)降水量$()190～500mmの森林に生息。"
+			"name": "クジャク"
 		},
 		{
 			"type": "patchouli:entity",
+			"text": "$(l:the_world/climate#temperature)気温$() -3°C～-12°C、$(l:the_world/climate#rainfall)降水量$()160～500mmの環境に生息。",
 			"entity": "tfg:lemming",
 			"scale": 1.5,
 			"offset": -0.2,
-			"name": "レミング",
-			"text": "$(l:the_world/climate#temperature)気温$() -3°C～-12°C、$(l:the_world/climate#rainfall)降水量$()160～500mmの環境に生息。"
+			"name": "レミング"
 		},
 		{
 			"type": "patchouli:entity",
@@ -237,12 +242,13 @@
 		},
 		{
 			"type": "patchouli:text",
-			"anchor": "aquatic",
 			"text": "$(thing)水生動物$()は、多様な種類を含む大まかな分類です。$(thing)沿岸動物$()、$(thing)魚類$()、$(thing)甲殻類$()、$(thing)大型水生生物$()といったタイプに分かれます。",
-			"title": "水生生物"
+			"title": "水生生物",
+			"anchor": "aquatic"
 		},
 		{
 			"type": "patchouli:text",
+			"name": "タラ",
 			"text": "$(thing)沿岸動物$()は、海岸のみに生息し、泳いだり、ビーチを歩いたりして一日を過ごします。好奇心旺盛な生き物で、プレイヤーを追いかけますが、飼いならすことはできません。\n\n"
 		},
 		{
@@ -261,6 +267,7 @@
 		},
 		{
 			"type": "patchouli:text",
+			"name": "熱帯魚",
 			"text": "$(thing)魚$()は水中を泳ぐ小さな生き物です。ほとんどの魚は$(l:mechanics/fishing)釣り$()で捕獲できます。海、川、または湖に生息しています。",
 			"title": "魚"
 		},
@@ -280,10 +287,11 @@
 		},
 		{
 			"type": "patchouli:entity",
+			"text": "$(l:the_world/climate#temperature)気温$()18℃以上の温かい海に生息。",
+			"title": "甲殻類",
 			"entity": "tfc:jellyfish",
 			"scale": 0.7,
-			"name": "クラゲ",
-			"text": "$(l:the_world/climate#temperature)気温$()18℃以上の温かい海に生息。"
+			"name": "クラゲ"
 		},
 		{
 			"type": "patchouli:entity",
@@ -307,13 +315,15 @@
 			"text": "$(l:the_world/climate#temperature)気温$()-10～26℃の川や湖に生息。"
 		},
 		{
-			"type": "patchouli:empty"
+			"type": "patchouli:empty",
+			"name": "カブトガニ",
+			"text": "$(l:the_world/climate#temperature)気温$() 10～21℃、$(l:the_world/climate#rainfall)降水量$()400mm以下の温かい海に生息。"
 		},
 		{
 			"type": "patchouli:text",
-			"anchor": "shellfish",
 			"text": "$(thing)甲殻類$()は水底に生息する小さな生物です。釣ることができませんが、食料にしたり、殻を$(l:mechanics/flux)融剤$()の素材として使えます。また、$(l:mechanics/fishing)魚釣りの餌$()としても利用できます。",
-			"title": "甲殻類"
+			"title": "甲殻類",
+			"anchor": "shellfish"
 		},
 		{
 			"type": "patchouli:entity",
@@ -338,10 +348,11 @@
 		},
 		{
 			"type": "patchouli:entity",
+			"text": "$(l:the_world/climate#temperature)気温$() 10～21℃、$(l:the_world/climate#rainfall)降水量$()400mm以下の温かい海に生息。",
+			"title": "イカ",
 			"entity": "tfc:horseshoe_crab",
 			"scale": 0.7,
-			"name": "カブトガニ",
-			"text": "$(l:the_world/climate#temperature)気温$() 10～21℃、$(l:the_world/climate#rainfall)降水量$()400mm以下の温かい海に生息。"
+			"name": "カブトガニ"
 		},
 		{
 			"type": "patchouli:empty"

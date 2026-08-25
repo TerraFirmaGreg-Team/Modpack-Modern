@@ -1,5 +1,4 @@
 {
-  "__comment__": "This file was automatically created by mcresources",
   "name": "ペット",
   "category": "tfc:mechanics",
   "icon": "minecraft:lead",
@@ -24,11 +23,12 @@
     },
     {
       "type": "patchouli:text",
-      "title": "犬の品種",
-      "text": "犬には複数の種類があり、どの種類のオオカミを飼いならしたかによって見た目が変わります。$(br2)次のページでは、それぞれのオオカミの種類が出現する気候を表で確認できます。"
+      "text": "犬には複数の種類があり、どの種類のオオカミを飼いならしたかによって見た目が変わります。$(br2)次のページでは、それぞれのオオカミの種類が出現する気候を表で確認できます。",
+      "title": "犬の品種"
     },
     {
       "type": "patchouli:image",
+      "text": "Cats are a pet that eats grains, cooked meats, and dairy products. They will help you hunt land prey and small fish. When at home, they will kill pests without being asked to. Cats do not always listen when being told to sit.",
       "images": [
         "tfg:textures/gui/field_guide/dog_variants.png"
       ],
@@ -36,6 +36,7 @@
     },
     {
       "type": "tfc:table",
+      "text": "Responsible pet owners must learn to control their pet. Luckily, this is easy. By pressing $(item)$(k:key.use)$() while holding $(item)$(k:key.sneak)$() with an empty hand, the $(thing)Pet Screen$() may be opened. This screen contains a number of commands that can be used to tell the pet what to do: $(thing)Relax$(), $(thing)We're Home$(), $(thing)Sit$(), $(thing)Follow Me$(), and $(thing)Hunt With Me$().",
       "strings": [
         {
           "text": "品種",
@@ -100,7 +101,6 @@
           "text": "Temperate (Forests)"
         }
       ],
-      "text": "",
       "title": "Wolf Variant Locations",
       "legend": [],
       "columns": 1,
@@ -113,13 +113,14 @@
     },
     {
       "type": "patchouli:empty",
+      "text": "$(thing)リラックス$()はペットの基本状態であり、この命令を出すとペットは通常の状態に戻ります。家にいる場合は敷地内を自由に歩き回りますが、外へ出ることはなく、1日に1回眠ります。家から離れすぎている場合は、その場をあてもなく歩き回ります。",
       "draw_filler": false
     },
     {
       "type": "patchouli:entity",
+      "text": "ニャンコ",
       "entity": "tfc:cat{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
-      "scale": 0.7,
-      "text": "ニャンコ"
+      "scale": 0.7
     },
     {
       "type": "patchouli:text",

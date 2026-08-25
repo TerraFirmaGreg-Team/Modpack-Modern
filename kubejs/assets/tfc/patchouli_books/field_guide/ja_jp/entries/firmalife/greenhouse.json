@@ -1,0 +1,68 @@
+{
+  "name": "温室",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:sealed_bricks",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)温室$()は、$(l:tfc:firmalife/climate_station)空調機$()によって制御されるマルチブロック装置です。年間を通して作物を栽培できます。温室にはさまざまな種類のブロックがありますが、温室の作り方はいたって簡単です。$(l:tfc:firmalife/cellar)貯蔵庫$()と同じように、$(thing)同じ種類の温室ブロック$()で囲まれたエリアが温室になります。温室の床は非空気ブロックであればどのようなブロックでも構いません。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "温室の壁は平らな面でなければなりません。$(br2)板壁は、ブロックの外側にある面（例えばトーチを置ける面）が温室内に向くように配置する必要があります。$(br)板屋根も同様ですが、ハーフブロックは常に有効な屋根ブロックとみなされます。$(br)トラップドアとドアも常に有効で、特別な配置は必要ありません。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)温室の種類$()は、温室内で互換的に使用できる温室ブロックのファミリーです。$(br)ほとんどの温室ブロックは$(thing)古く$()なります。$(br2)例えば、$(thing)加工木材$()温室ブロックは$(thing)風化した加工木材$()温室ブロックになります。$(br2)どちらのブロックタイプも同じ温室タイプに属しますので、温室の機能は継続します。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(br)以下は、利用可能な$(thing)温室の種類$()で、劣化した場合のブロックタイプも示しています。$(br)$(li)加工木材：風化 $()$(li)銅： 露出、風化、酸化$()$(li)鉄：錆び$() $(li)ステンレス鋼：劣化なし$()",
+      "title": "温室の種類"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "通常の$(thing)温室ブロック$()は4種類のブロックがあります。$(br2)壁、ドア、屋根、天板です。$(br)屋根と天板はそれぞれ階段とハーフブロック。$(br)それ以外に、板壁、トラップドア、板屋根などの薄い見た目のブロックもあります。$(br2)これらを自由に組み合わせて温室を作ることができます。"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "各主要タイプの温室の例。",
+      "multiblocks": [
+        "firmalife:treated_wood_greenhouse",
+        "firmalife:copper_greenhouse",
+        "firmalife:iron_greenhouse",
+        "firmalife:stainless_steel_greenhouse"
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "text": "温室内には様々なブロックが配置できます。$(br)$(li)$(l:tfc:firmalife/planters)プランター$()は作物を育てる事ができます$()$(br)$(li)$(l:tfc:firmalife/sprinklers)スプリンクラー$()はプランターに水を与える事ができます。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "次の4ページには、主な温室ブロックのレシピがあります。$(br2)鉄製の温室ブロックのみ紹介されていますが、レシピの鉄の棒は$(thing)加工板材$()、$(thing)銅の棒$()、$(thing)ステンレス鋼の棒$()に置き換えることができます。$(br2)ステンレス鋼については、$(l:tfc:firmalife/stainless_steel)リンク先のページ$()を参照してください。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/greenhouse/iron_greenhouse_wall",
+      "recipe2": "firmalife:crafting/greenhouse/iron_greenhouse_roof"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/greenhouse/iron_greenhouse_door",
+      "recipe2": "firmalife:crafting/greenhouse/iron_greenhouse_roof_top"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/greenhouse/iron_greenhouse_trapdoor",
+      "recipe2": "firmalife:crafting/greenhouse/iron_greenhouse_panel_roof"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/greenhouse/iron_greenhouse_panel_wall",
+      "recipe2": "firmalife:crafting/greenhouse/iron_greenhouse_port"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 7
+}

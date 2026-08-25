@@ -1,5 +1,4 @@
 {
-  "__comment__": "This file was automatically created by mcresources",
   "name": "Argile Réfractaire",
   "category": "tfc:mechanics",
   "icon": "tfc:fire_clay",
@@ -33,7 +32,7 @@
     {
       "type": "tfc:knapping_recipe",
       "recipe": "tfc:fire_clay_knapping/fire_ingot_mold",
-      "text": "Les $(thing)Moules réfractaires à lingot$() sont un type plus résistant de $(l:getting_started/pottery#mold)Moule à lingot$() qui non que 1 chance sur 100 de se casser, contre 1 chance sur 10 pour un moule à lingot normal."
+      "text": "Les $(thing)Moules réfractaires à lingot$() sont un type plus résistant de $(l:getting_started/pottery#mold)Moule à lingot$() qui n'ont qu'1 chance sur 100 de se casser, contre 1 chance sur 10 pour un moule à lingot normal."
     }
   ],
   "read_by_default": true

@@ -1,5 +1,4 @@
 {
-	"__comment__": "This file was automatically created by mcresources",
 	"name": "Дикие животные",
 	"category": "tfc:the_world",
 	"icon": "tfc:medium_raw_hide",
@@ -122,38 +121,42 @@
 			"type": "patchouli:entity",
 			"entity": "tfc:moose",
 			"scale": 0.7,
-			"name": "Лось",
-			"text": "Лось появляется в лесах при $(l:the_world/climate#temperature)температуре$() ниже 10°C и выше -15°C, а также при $(l:the_world/climate#rainfall)количестве осадков$() от 150 до 300 мм."
+			"text": "Лось появляется в лесах при $(l:the_world/climate#temperature)температуре$() ниже 10°C и выше -15°C, а также при $(l:the_world/climate#rainfall)количестве осадков$() от 150 до 300 мм.",
+			"name": "Лось"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "tfc:wildebeest",
 			"scale": 0.7,
-			"name": "Антилопа гну",
-			"text": "Антилопа гну появляется на открытых равнинах при любой $(l:the_world/climate#temperature)температуре$() выше 13°C и $(l:the_world/climate#rainfall)количестве осадков$() от 90 до 380 мм."
+			"text": "Антилопа гну появляется на открытых равнинах при любой $(l:the_world/climate#temperature)температуре$() выше 13°C и $(l:the_world/climate#rainfall)количестве осадков$() от 90 до 380 мм.",
+			"name": "Антилопа гну"
 		},
 		{
 			"type": "patchouli:entity",
+			"text": "Бизон появляется на открытых равнинах при $(l:the_world/climate#temperature)температуре$() ниже 15°C и выше -10°C, а также при $(l:the_world/climate#rainfall)количестве осадков$() от 160 до 420 мм.",
+			"title": "Добыча",
 			"entity": "tfg:bison",
 			"scale": 0.7,
-			"name": "Бизон",
-			"text": "Бизон появляется на открытых равнинах при $(l:the_world/climate#temperature)температуре$() ниже 15°C и выше -10°C, а также при $(l:the_world/climate#rainfall)количестве осадков$() от 160 до 420 мм."
+			"name": "Бизон"
 		},
 		{
-			"type": "patchouli:empty"
+			"type": "patchouli:empty",
+			"name": "Кролик",
+			"text": "Кролик известен тем, что грызёт морковь и капусту. Он встречается по всему миру, меняя окрас шерсти в зависимости от климата. Для появления ему требуется всего 15 мм $(l:the_world/climate#rainfall)осадков$()."
 		},
 		{
 			"type": "patchouli:text",
-			"anchor": "prey",
+			"name": "Лиса",
 			"text": "$(thing)Добыча$() — это животные, которые боятся игроков и хищников. Они отлично умеют спасаться бегством от опасности, но, как правило, не могут дать отпор. Некоторые животные из категории добычи любят полакомиться посевами.",
+			"anchor": "prey",
 			"title": "Добыча"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "tfc:rabbit",
 			"scale": 0.7,
-			"name": "Кролик",
-			"text": "Кролик известен тем, что грызёт морковь и капусту. Он встречается по всему миру, меняя окрас шерсти в зависимости от климата. Для появления ему требуется всего 15 мм $(l:the_world/climate#rainfall)осадков$()."
+			"text": "Кролик известен тем, что грызёт морковь и капусту. Он встречается по всему миру, меняя окрас шерсти в зависимости от климата. Для появления ему требуется всего 15 мм $(l:the_world/climate#rainfall)осадков$().",
+			"name": "Кролик"
 		},
 		{
 			"type": "patchouli:entity",
@@ -185,8 +188,8 @@
 			"type": "patchouli:entity",
 			"entity": "tfc:bongo",
 			"scale": 0.9,
-			"name": "Бонго",
-			"text": "Бонго появляется в лесах при любой $(l:the_world/climate#temperature)температуре$() выше 15°C и $(l:the_world/climate#rainfall)количестве осадков$() от 230 до 500 мм."
+			"text": "Бонго появляется в лесах при любой $(l:the_world/climate#temperature)температуре$() выше 15°C и $(l:the_world/climate#rainfall)количестве осадков$() от 230 до 500 мм.",
+			"name": "Бонго"
 		},
 		{
 			"type": "patchouli:entity",
@@ -198,6 +201,7 @@
 			"type": "patchouli:entity",
 			"entity": "tfc:pheasant",
 			"scale": 0.7,
+			"name": "Павлин",
 			"text": "Фазан появляется в лесах при любой $(l:the_world/climate#temperature)температуре$() ниже 17°C и выше -5°C, а также при $(l:the_world/climate#rainfall)количестве осадков$() от 100 до 300 мм."
 		},
 		{
@@ -208,18 +212,19 @@
 		},
 		{
 			"type": "patchouli:entity",
+			"text": "Павлин появляется в лесах при любой $(l:the_world/climate#temperature)температуре$() выше 14°C и $(l:the_world/climate#rainfall)количестве осадков$() от 190 до 500 мм.",
+			"title": "Водные существа",
 			"entity": "tfc:peafowl",
 			"scale": 0.6,
-			"name": "Павлин",
-			"text": "Павлин появляется в лесах при любой $(l:the_world/climate#temperature)температуре$() выше 14°C и $(l:the_world/climate#rainfall)количестве осадков$() от 190 до 500 мм."
+			"name": "Павлин"
 		},
 		{
 			"type": "patchouli:entity",
+			"text": "Лемминг появляется при любой $(l:the_world/climate#temperature)температуре$() ниже -3°C и выше -12°C, а также при $(l:the_world/climate#rainfall)количестве осадков$() от 160 до 500 мм.",
 			"entity": "tfg:lemming",
 			"scale": 1.5,
 			"offset": -0.2,
-			"name": "Лемминг",
-			"text": "Лемминг появляется при любой $(l:the_world/climate#temperature)температуре$() ниже -3°C и выше -12°C, а также при $(l:the_world/climate#rainfall)количестве осадков$() от 160 до 500 мм."
+			"name": "Лемминг"
 		},
 		{
 			"type": "patchouli:entity",
@@ -237,12 +242,13 @@
 		},
 		{
 			"type": "patchouli:text",
-			"anchor": "aquatic",
 			"text": "$(thing)Водные существа$() — это широкая категория, охватывающая несколько разных типов поведения. Они могут быть $(thing)Прибрежными обитателями$(), $(thing)Рыбами$(), $(thing)Моллюсками$() или $(thing)Крупными водными существами$()",
-			"title": "Водные существа"
+			"title": "Водные существа",
+			"anchor": "aquatic"
 		},
 		{
 			"type": "patchouli:text",
+			"name": "Треска",
 			"text": "$(thing)Прибрежные существа$() появляются только на морских берегах и проводят часть дня в воде, а часть — гуляя по пляжу. Это любопытные существа: они будут следовать за игроком, но приручить их нельзя."
 		},
 		{
@@ -261,6 +267,7 @@
 		},
 		{
 			"type": "patchouli:text",
+			"name": "Тропическая рыба",
 			"text": "$(thing)Рыбы$() — это маленькие существа, которые плавают в воде. Большинство из них можно $(l:mechanics/fishing)выловить$(). Некоторые предпочитают океаны, реки или озёра.",
 			"title": "Рыба"
 		},
@@ -280,10 +287,11 @@
 		},
 		{
 			"type": "patchouli:entity",
+			"text": "Медуза обитает в более тёплых океанах, где $(l:the_world/climate#temperature)температура$() составляет не менее 18°C.",
+			"title": "Ракообразные и моллюски",
 			"entity": "tfc:jellyfish",
 			"scale": 0.7,
-			"name": "Медуза",
-			"text": "Медуза обитает в более тёплых океанах, где $(l:the_world/climate#temperature)температура$() составляет не менее 18°C."
+			"name": "Медуза"
 		},
 		{
 			"type": "patchouli:entity",
@@ -307,13 +315,15 @@
 			"text": "Синежаберник появляется в любой реке или озере, где $(l:the_world/climate#temperature)температура$() составляет не менее -10°C и не более 26°C."
 		},
 		{
-			"type": "patchouli:empty"
+			"type": "patchouli:empty",
+			"name": "Мечехвост",
+			"text": "Мечехвосты появляются в океанах умеренного климата, где $(l:the_world/climate#temperature)температура$() находится в диапазоне от 10 до 21°C, а $(l:the_world/climate#rainfall)количество осадков$() не превышает 400 мм."
 		},
 		{
 			"type": "patchouli:text",
-			"anchor": "shellfish",
 			"text": "$(thing)Моллюски$() — это небольшие животные, обитающие на дне водоёмов. Их нельзя выловить удочкой, но с них выпадают раковины, которые можно съесть или превратить во $(l:mechanics/flux)флюс$(). Моллюсков также можно использовать как $(l:mechanics/fishing)наживку$() для рыбы.",
-			"title": "Ракообразные и моллюски"
+			"title": "Ракообразные и моллюски",
+			"anchor": "shellfish"
 		},
 		{
 			"type": "patchouli:entity",
@@ -338,10 +348,11 @@
 		},
 		{
 			"type": "patchouli:entity",
+			"text": "Мечехвосты появляются в океанах умеренного климата, где $(l:the_world/climate#temperature)температура$() находится в диапазоне от 10 до 21°C, а $(l:the_world/climate#rainfall)количество осадков$() не превышает 400 мм.",
+			"title": "Спрут",
 			"entity": "tfc:horseshoe_crab",
 			"scale": 0.7,
-			"name": "Мечехвост",
-			"text": "Мечехвосты появляются в океанах умеренного климата, где $(l:the_world/climate#temperature)температура$() находится в диапазоне от 10 до 21°C, а $(l:the_world/climate#rainfall)количество осадков$() не превышает 400 мм."
+			"name": "Мечехвост"
 		},
 		{
 			"type": "patchouli:empty"

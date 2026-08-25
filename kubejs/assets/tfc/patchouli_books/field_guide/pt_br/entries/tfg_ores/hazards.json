@@ -135,16 +135,16 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Carcinógenos",
+			"title": "Carcinogens",
 			"item": "gtceu:benzene_bucket",
-			"anchor": "Carcinógenos",
+			"anchor": "Carcinogens",
 			"text": "$(thing)Carcinógenos$() são substâncias que causam $(item)Câncer$(). Elas incluem $(thing)Pó de Crômio$() bem como alguns compostos orgânicos, como $(thing)Benzene e seus produtos$(). $(thing)Carcinógenos$() $(item)não desaparecem por conta própria$(), mas eles dão muitos avisos antes de causar qualquer dano real. Começa com $(item)Fraqueza$(), seguido de $(item)Fome$(), então $(item)Lentidão$() e mais tarde $(item)Exaustão$(). Somente quando se acumula uma exposição suficientemente significativa é que eles causam $(item)Morte$()."
 		},
 		{
 			"type": "patchouli:spotlight",
 			"title": "Carcinógenos",
 			"item": "gtceu:chromium_dust",
-			"anchor": "Carcinógenos",
+			"anchor": "Carcinogens",
 			"text": "The $(l:tfg_ores/hazards#mask)Face Mask$() protects from inhalation of harmful chemicals, while the $(l:tfg_ores/hazards#gloves)Gloves$() protect from contact with $(thing)Chromium Dust$().$(br2)The $(l:tfg_ores/hazards#hazmat)Hazmat Suit$() protects from both.$(br2)In case of severe exposure, it is advised to take some $(l:tfg_ores/hazards#medicine)Medicines$() to $(thing)Prevent$() any possible damage."
 		},
 		{

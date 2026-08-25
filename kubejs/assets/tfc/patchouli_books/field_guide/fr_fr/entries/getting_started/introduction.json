@@ -1,5 +1,4 @@
 {
-	"__comment__": "This file was automatically created by mcresources",
 	"name": "Introduction",
 	"category": "tfc:getting_started",
 	"icon": "tfc:rock/loose/granite",
@@ -77,7 +76,7 @@
 			"recipes": [
 				"tfg:rock_knapping/stone_axe_head"
 			],
-			"text": "Les $(thing)Haches$() peuvent couper des arbres entiers d'un coup, bûches et feuilles y compris. Cependant, les pousses et les bâtons ne peuvent être obtenus qu'en cassant les feuilles individuellement."
+			"text": "Les $(thing)Haches$() peuvent couper des arbres entiers d'un coup, bûches et feuilles compris. Cependant, les pousses et les bâtons ne peuvent être obtenus qu'en cassant les feuilles individuellement."
 		},
 		{
 			"type": "tfc:rock_knapping_recipe",

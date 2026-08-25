@@ -1,4 +1,9 @@
 {
+	"stackgroup.emixx.axes": "Kirviai",
+	"stackgroup.emixx.dyes": "Dažai",
+	"stackgroup.emixx.ingots": "Luitai",
+	"stackgroup.emixx.pickaxes": "Kirtikliai",
+	"stackgroup.emixx.shovels": "Kastuvai",
 	"stackgroup.emixx.tfg_anvils": "Priekalai",
 	"stackgroup.emixx.tfg_axe_heads": "Kirvių galvos",
 	"stackgroup.emixx.tfg_axes": "Kirviai",
@@ -23,5 +28,6 @@
 	"stackgroup.emixx.tfg_shovels": "Kastuvai",
 	"stackgroup.emixx.tfg_support_beams": "Atraminės sijos",
 	"stackgroup.emixx.tfg_sword_heads": "Kardų galvos",
-	"stackgroup.emixx.tfg_tools_screwdrivers": "Atsuktuvai"
+	"stackgroup.emixx.tfg_tools_screwdrivers": "Atsuktuvai",
+	"stackgroup.emixx.wool": "Vilna"
 }

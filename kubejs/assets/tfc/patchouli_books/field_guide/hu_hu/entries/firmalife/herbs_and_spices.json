@@ -1,5 +1,4 @@
 {
-	"__comment__": "This file was automatically created by mcresources",
 	"name": "Fűszernövények és Fűszerek",
 	"category": "tfc:firmalife",
 	"icon": "firmalife:spice/basil_leaves",
@@ -10,6 +9,7 @@
 		},
 		{
 			"type": "tfc:multimultiblock",
+			"text": "A $(thing)vad bazsalikom$() 12-25°C között nő és 300-500mm csapadákban.",
 			"multiblocks": [
 				{
 					"pattern": [
@@ -39,11 +39,13 @@
 				}
 			],
 			"name": "Bazsalikom",
-			"text": "A $(thing)vad bazsalikom$() 12-25°C között nő és 300-500mm csapadákban.",
 			"enable_visualize": false
 		},
 		{
 			"type": "tfc:multimultiblock",
+			"name": "Nemes babér",
+			"text": "A $(thing)vad nemes babér$() 8-14°C között nő és 25-225mm csapadékban.",
+			"enable_visualize": false,
 			"multiblocks": [
 				{
 					"pattern": [
@@ -71,13 +73,11 @@
 						"X": "firmalife:plant/bay_laurel[stage=1]"
 					}
 				}
-			],
-			"name": "Nemes babér",
-			"text": "A $(thing)vad nemes babér$() 8-14°C között nő és 25-225mm csapadékban.",
-			"enable_visualize": false
+			]
 		},
 		{
 			"type": "tfc:multimultiblock",
+			"text": "A $(thing)vad kardamom$() 18-30°C között nő és 350-500mm csapadékban.",
 			"multiblocks": [
 				{
 					"pattern": [
@@ -107,11 +107,13 @@
 				}
 			],
 			"name": "Kardamom",
-			"text": "A $(thing)vad kardamom$() 18-30°C között nő és 350-500mm csapadékban.",
 			"enable_visualize": false
 		},
 		{
 			"type": "tfc:multimultiblock",
+			"name": "Koriander",
+			"text": "A $(thing)vad koriander$() 5-15°C között nő és 0-150mm csapadékban.",
+			"enable_visualize": false,
 			"multiblocks": [
 				{
 					"pattern": [
@@ -139,13 +141,11 @@
 						"X": "firmalife:plant/cilantro[stage=1]"
 					}
 				}
-			],
-			"name": "Koriander",
-			"text": "A $(thing)vad koriander$() 5-15°C között nő és 0-150mm csapadékban.",
-			"enable_visualize": false
+			]
 		},
 		{
 			"type": "tfc:multimultiblock",
+			"text": "A $(thing)vad rómaikömény$() 6-20°C között nő és 50-250mm csapadékban.",
 			"multiblocks": [
 				{
 					"pattern": [
@@ -175,7 +175,6 @@
 				}
 			],
 			"name": "Rómaikömény",
-			"text": "A $(thing)vad rómaikömény$() 6-20°C között nő és 50-250mm csapadékban.",
 			"enable_visualize": false
 		},
 		{

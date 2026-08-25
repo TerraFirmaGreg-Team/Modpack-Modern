@@ -1,5 +1,4 @@
 {
-	"__comment__": "This file was automatically created by mcresources",
 	"name": "Пряні трави та спеції",
 	"category": "tfc:firmalife",
 	"icon": "firmalife:spice/basil_leaves",
@@ -10,6 +9,7 @@
 		},
 		{
 			"type": "tfc:multimultiblock",
+			"text": "$(thing)Дикий базилік$() росте при температурі від 12 до 25°C, і від 300 до 500 мм опадів.",
 			"multiblocks": [
 				{
 					"pattern": [
@@ -39,11 +39,13 @@
 				}
 			],
 			"name": "Базилік",
-			"text": "$(thing)Дикий базилік$() росте при температурі від 12 до 25°C, і від 300 до 500 мм опадів.",
 			"enable_visualize": false
 		},
 		{
 			"type": "tfc:multimultiblock",
+			"name": "Лавровий лист",
+			"text": "$(thing)Дикий лавровий лист$() росте між 8 та 14°C, і від 25 до 225 мм опадів.",
+			"enable_visualize": false,
 			"multiblocks": [
 				{
 					"pattern": [
@@ -71,13 +73,11 @@
 						"X": "firmalife:plant/bay_laurel[stage=1]"
 					}
 				}
-			],
-			"name": "Лавровий лист",
-			"text": "$(thing)Дикий лавровий лист$() росте між 8 та 14°C, і від 25 до 225 мм опадів.",
-			"enable_visualize": false
+			]
 		},
 		{
 			"type": "tfc:multimultiblock",
+			"text": "$(thing)Дикий кардамон$() росте при температурі від 18 до 30°C, і від 350 до 500 мм опадів.",
 			"multiblocks": [
 				{
 					"pattern": [
@@ -107,11 +107,13 @@
 				}
 			],
 			"name": "Кардамон",
-			"text": "$(thing)Дикий кардамон$() росте при температурі від 18 до 30°C, і від 350 до 500 мм опадів.",
 			"enable_visualize": false
 		},
 		{
 			"type": "tfc:multimultiblock",
+			"name": "Кінза",
+			"text": "$(thing)Дика кінза$() росте при температурі від 5 до 15°C, і від 0 до 150 мм опадів.",
+			"enable_visualize": false,
 			"multiblocks": [
 				{
 					"pattern": [
@@ -139,13 +141,11 @@
 						"X": "firmalife:plant/cilantro[stage=1]"
 					}
 				}
-			],
-			"name": "Кінза",
-			"text": "$(thing)Дика кінза$() росте при температурі від 5 до 15°C, і від 0 до 150 мм опадів.",
-			"enable_visualize": false
+			]
 		},
 		{
 			"type": "tfc:multimultiblock",
+			"text": "$(thing)Дикий кмин$() росте при температурі від 6 до 20°C, і від 50 до 250 мм опадів.",
 			"multiblocks": [
 				{
 					"pattern": [
@@ -175,7 +175,6 @@
 				}
 			],
 			"name": "Кмин",
-			"text": "$(thing)Дикий кмин$() росте при температурі від 6 до 20°C, і від 50 до 250 мм опадів.",
 			"enable_visualize": false
 		},
 		{

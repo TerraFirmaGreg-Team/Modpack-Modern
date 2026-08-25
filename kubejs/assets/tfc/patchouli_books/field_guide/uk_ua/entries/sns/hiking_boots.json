@@ -1,0 +1,17 @@
+{
+  "name": "Похідні чоботи",
+  "category": "tfc:sacks_n_such",
+  "icon": "sns:hiking_boots",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Кожному досліднику потрібна хороша пара чобіт. Вони дозволяють тобі швидко продиратися крізь чагарники, а також дають невелике прискорення й трохи збільшують висоту безпечного падіння"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "sns:crafting/hiking_boots",
+      "text": "Ці чоботи створені для ходьби"
+    }
+  ],
+  "read_by_default": true
+}

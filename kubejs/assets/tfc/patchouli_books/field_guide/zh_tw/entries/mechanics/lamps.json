@@ -1,0 +1,87 @@
+{
+  "name": "燈",
+  "category": "tfc:mechanics",
+  "icon": "tfc:metal/lamp/bismuth_bronze",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "燈是一種使用液體燃料的長期光源。挖掘燈時不會令其損失其中的燃料。手持裝有燃料的桶$(item)$(k:key.use)$()點選燈就可以向其新增燃料，隨後使用$(thing)起火器$()或任何生火工具就能點燃了。$(thing)橄欖油$()和$(thing)鯨脂$()可作為燈的燃料。用箭射點燃的燈可能會引起火災。"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "Y"
+          ],
+          [
+            "0"
+          ]
+        ],
+        "mapping": {
+          "X": "tfc:metal/chain/copper[axis=y]",
+          "Y": "tfc:metal/lamp/copper[hanging=true,lit=true]"
+        }
+      },
+      "name": "燈",
+      "text": "鐵鏈懸掛著的燈。",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/metal/lamp/bronze",
+      "text": "燈是在$(l:mechanics/anvils)砧$()上用金屬打造，再與$(l:mechanics/glassworking_applications#lamp_glass)燈罩$()合成得到的。"
+    },
+    {
+      "type": "tfc:quern_recipe",
+      "anchor": "olives",
+      "recipe": "tfc:quern/olive",
+      "text": "$(thing)橄欖油$()就可以作為燈的燃料。要獲得橄欖油，首先要製作橄欖糊。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/jute_net",
+      "text": "你得做一張黃麻網。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "在$(l:mechanics/pot)鍋$()裡用$(thing)水$()煮$(thing)橄欖糊$()可以得到$(thing)毛橄欖油$(). 把它和$(thing)黃麻網$()一起密封在$(l:mechanics/barrels)大桶$()裡可以得到$(thing)橄欖油$(). 每單位橄欖油的燃燒時間是 8 遊戲內小時。"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "tallow",
+      "text": "另一種較弱的燃料是$(thing)蠟脂$()。要製作蠟脂，在$(l:mechanics/pot)陶鍋$()中用淡水中煮 5 份$(thing)鯨脂$()。每單位蠟脂的燃燒時間只有不到 2 遊戲內小時。蠟脂可以用於製作$(l:mechanics/lighting#candles)蠟燭$()。"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "0"
+          ]
+        ],
+        "mapping": {
+          "X": "tfc:metal/lamp/blue_steel[lit=true]"
+        }
+      },
+      "name": "熔岩燈",
+      "text": "熔岩燈是一種$(thing)永久光源$()。不過，只有$(l:mechanics/steel#blue_steel)藍鋼$()燈才能盛裝熔岩。",
+      "enable_visualize": false
+    },
+    {
+      "type": "tfc:anvil_recipe",
+      "recipe": "tfc:anvil/black_steel_chain",
+      "text": "$(thing)鏈子$()可以用來掛燈，在$(l:mechanics/anvils)砧$()上就能鍛造。"
+    }
+  ],
+  "read_by_default": true,
+  "extra_recipe_mappings": {
+    "tag:tfc:lamps": 1
+  }
+}

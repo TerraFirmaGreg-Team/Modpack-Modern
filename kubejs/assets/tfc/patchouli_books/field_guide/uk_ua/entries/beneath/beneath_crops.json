@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Зміст",
-			"text": "$(li)$(l:tfc:beneath/beneath_crops#cassava)Маніок$()\n$(li)$(l:tfc:beneath/beneath_crops#peanut)Арахіс$()\n$(li)$(l:tfc:beneath/beneath_crops#beans)Чорнокам’яна квасоля$()\n$(li)$(l:tfc:beneath/beneath_crops#ghost_pepper)Примарний перець$()"
+			"text": "$(li)$(l:tfc:beneath/beneath_crops#cassava)Маніок$()\n$(li)$(l:tfc:beneath/beneath_crops#peanut)Арахіс$()\n$(li)$(l:tfc:beneath/beneath_crops#beans)Чорнокам’яна квасоля$()\n$(li)$(l:tfc:beneath/beneath_crops#ghost_pepper)Примарний перець$()$(li)$(l:tfc:beneath/beneath_crops#cotton)Бавовна$()"
 		},
 		{
 			"type": "patchouli:text",
@@ -483,7 +483,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"anchor": "бавовна",
+			"anchor": "cotton",
 			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 10 - 80 °C$(br)$(bold)$(l:mechanics/hydration)Вологість$(): 40 - 100 %$(br)$(bold)Поживна речовина$(): Азот$(br2)Бавовна — це сільськогосподарська культура заввишки у два блоки. Насіння бавовни можна висаджувати на грядку, воно виросте заввишки у два блоки, і даватиме $(item)бавовняні кульки$(), які можна переробити на $(thing)бавовняні нитки$() або $(thing)тканину$().",
 			"title": "Бавовна"
 		},

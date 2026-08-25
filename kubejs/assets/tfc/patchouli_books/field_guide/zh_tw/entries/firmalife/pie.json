@@ -1,0 +1,31 @@
+{
+  "name": "餡餅",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:textures/item/food/cooked_pie.png",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Firmalife 允許製作各式各樣的美味烘焙食品。本章將為你提供所需的一切知識，讓你開始為早餐、午餐和晚餐享用美味而富有創意的餐點。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)黃油$()是許多這類食品的基礎。使用一個$(l:firmalife/mixing_bowl)攪拌碗$()，將1000 mB的$(thing)奶油$()與一份$(thing)鹽$()混合。奶油是通過將1000 mB牛奶與一塊$(l:mechanics/firmalife#cheesecloth)奶酪布$()一同密封在桶中製成的。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "一種實用的餐點是$(thing)餡餅$()。在你的攪拌碗中，混合黃油、麵粉和一種甜味劑（糖、蜂蜜）來製作$(thing)餡餅麵糰$()。若要直接製作$(thing)南瓜餡餅$()，則需混合一個雞蛋、兩塊南瓜塊、麵粉和甜味劑。將其與一個$(thing)餡餅烤盤$()合成，然後在$(l:firmalife/ovens)烤爐$()中烘烤，即可完成配方。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/raw_pumpkin_pie",
+      "text": "$(thing)餡餅烤盤$()可以在砧上用$(thing)鑄鐵$()鍛造而成。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/filled_pie",
+      "text": "麵糰、果醬和一個餡餅烤盤可以讓你獲得一個$(thing)已填充的餡餅$()，隨後放入烤爐完成製作，即可得到一個美味的餡餅。"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 25
+}

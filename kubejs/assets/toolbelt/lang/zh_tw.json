@@ -1,0 +1,15 @@
+{
+	"item.toolbelt.belt": "工具腰帶",
+	"item.toolbelt.pouch": "腰包",
+	"key.toolbelt.category": "工具腰帶",
+	"key.toolbelt.cycle.left": "選擇左邊工具",
+	"key.toolbelt.cycle.right": "選擇右邊工具",
+	"key.toolbelt.open": "交換工具",
+	"key.toolbelt.slot": "打開腰帶庫存",
+	"text.toolbelt": "工具腰帶",
+	"text.toolbelt.empty": "空",
+	"text.toolbelt.extract": "拿出",
+	"text.toolbelt.insert": "插入",
+	"text.toolbelt.swap": "換",
+	"text.toolbelt.tooltip": "升級: %s (%s 位置)"
+}

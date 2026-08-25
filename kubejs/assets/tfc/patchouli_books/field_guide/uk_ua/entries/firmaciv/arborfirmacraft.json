@@ -1,0 +1,37 @@
+{
+  "name": "ArborFirmaCraft",
+  "category": "tfc:firmaciv",
+  "icon": "afc:wood/sapling/weeping_maple",
+  "flag": "mod:afc",
+  "read_by_default": true,
+  "sortnum": 100,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Якщо у своїх мандрах ти натрапиш на туаланг чи інжир, тобі буде приємно дізнатися, що з них можна створювати $(l:firmaciv/watercraft)човни$() так само, як і з будь-якої іншої деревини"
+    },
+    {
+      "type": "patchouli:empty"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "title": "М'які породи",
+      "text": "М'які породи мають достатньо м’яку деревину та кору, тож вони ідеально підходять для створення $(l:firmaciv/canoe)Довбаних каное$()",
+      "item": "afc:wood/stripped_log/tualang,afc:wood/stripped_log/fig,afc:wood/stripped_log/cypress"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(li)Туаланг$() $(li)Інжир$() $(li)Кипарис$()"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "title": "Тверді породи",
+      "text": "Відомі своєю винятковою міцністю, дерева твердих порід ідеально підходять для створення більших і складніших водних суден, таких як $(l:firmaciv/rowboat)Веслові човни$() та $(l:firmaciv/sloop)Шлюпи$()",
+      "item": "afc:wood/planks/baobab,afc:wood/planks/eucalyptus,afc:wood/planks/mahogany,afc:wood/planks/hevea,afc:wood/planks/teak,afc:wood/planks/ironwood,afc:wood/planks/ipe"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(li)Баобаб$() $(li)Евкаліпт$() $(li)Махагоні$() $(li)Гевея$() $(li)Тик$() $(li)Залізне дерево$() $(li)Іпе$()"
+    }
+  ]
+}

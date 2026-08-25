@@ -1,0 +1,48 @@
+{
+  "name": "Wędzenie",
+  "category": "tfc:firmalife",
+  "icon": "tfc:textures/item/food/venison.png",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Wool string is used to hang items for $(thing)Smoking$(). To place it, just use $(item)$(k:key.use)$()."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "Y"
+          ],
+          [
+            "0"
+          ]
+        ],
+        "mapping": {
+          "X": "firmalife:wool_string",
+          "Y": "tfc:firepit[lit=true]"
+        }
+      },
+      "name": "Wędzenie",
+      "text": "A piece of string above a firepit.",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Smoking is used to preserve $(thing)Meat$() and $(l:mechanics/dairy)Cheese$(). To smoke meat, it must have first been $(thing)Brined$() by sealing it in a $(thing)Barrel$() with $(thing)Brine$(). You may also salt it first. Cheese does not have this requirement."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "To start the smoking process, add the item to the string above a firepit. The firepit must be within four blocks, directly underneath the string. The string should begin to generate some smoke if it is working. It is important to note that the firepit must only be burned with $(thing)Logs$(). Using something like $(thing)Peat$() will instantly give your food the $(thing)Disgusting$() trait!"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "The smoking process takes 8 in-game hours. Happy smoking!"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 13
+}

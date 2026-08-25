@@ -1,0 +1,59 @@
+{
+  "name": "Klimastation",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:climate_station",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "The $(thing)Climate Station$() is a block that manages the $(l:firmalife/greenhouse)Greenhouse$() and the $(l:firmalife/cellar)Cellar$(). When its corresponding multiblock is built correctly, it will show water on its sides. When it is invalid, it will show ice. The Climate Station must be placed on the first level of the multiblock, touching a wall. If it is not touching a wall, you may $(item)$(k:key.use)$() it with a block that is part of the multiblock you are trying to make to tell it what to look for."
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "The climate station in its valid and invalid state.",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "firmalife:climate_station[stasis=true]"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "firmalife:climate_station[stasis=false]"
+          }
+        }
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(li)It updates periodically on its own, or when placed/broken.$()$(li)When a climate station updates, it tells all the blocks inside the multiblock that they can operate. For example, it lets $(l:firmalife/cheese)Cheese$() begin aging.$()$(li)Press $(item)$(k:key.use)$() to force update the Climate Station and the blocks inside the multiblock.",
+      "title": "Climate Station Tips"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/climate_station",
+      "text": "The climate station is crafted like this."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "A note about greenhouse construction: The largest greenhouse is 31x31x31, centered on the climate station, or 15 blocks in each direction. Centering the climate station in the greenhouse will allow you to take advantage of the full size range. You can also internally subdivide a greenhouse into multiple by using walls and multiple climate stations to make it larger."
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 2
+}

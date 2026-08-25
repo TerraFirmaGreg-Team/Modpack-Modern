@@ -1,0 +1,58 @@
+{
+  "name": "Apicultura",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:beehive",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)Colmeias$() são um local para abrigar abelhas. As colmeias precisam de $(thing)Quadros de Colmeia$() dentro delas para que as abelhas possam viver. Remover quadros de uma colmeia ativa fará com que as abelhas ataquem você, a menos que seja feito à noite ou com uma $(thing)Fogueira$() embaixo da colmeia ativa. As colmeias podem compartilhar flores. O benefício das flores diminui após 60 flores."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/beehive",
+      "recipe2": "firmalife:crafting/beehive_frame"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "As colmeias conhecem a área em um raio de 5 blocos. Se houver pelo menos 10 flores ao redor da colmeia, há uma chance de um quadro vazio ser preenchido com uma $(thing)Rainha$(). Isso é indicado por partículas de abelhas voando ao redor da colmeia. Ter 4 quadros vazios em uma colmeia aumenta muito as chances de abelhas se instalarem."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Se uma colmeia tiver dois quadros com rainhas e um quadro vazio, as duas colônias têm a chance de $(thing)Reproduzir$() e criar uma nova rainha no quadro vazio. Isso tem o efeito de transmitir as $(thing)habilidades$() de cada progenitor para a prole. Habilidades são características diferentes que as abelhas possuem e que mudam a forma como elas afetam o mundo ao seu redor. Elas estão em uma escala de 1 a 10, sendo 10 o valor máximo."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/honey_jar_open",
+      "text": "As abelhas também produzem $(thing)Mel$(). Usar $(item)$(k:key.use)$() com um Pote Vazio em uma colmeia que visivelmente contém mel resulta em um $(thing)Pote de Mel$(). Abrir um Pote de Mel resulta em $(thing)Mel Cru$(), um substituto para $(thing)Açúcar$()."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Pressionar $(item)$(k:key.use)$() em um quadro preenchido no seu inventário com uma $(thing)Faca$() rende $(thing)Cera de Abelha$(), que tem muitas utilidades. No entanto, isso mata a rainha dentro do quadro, então tome cuidado!"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/treated_lumber",
+      "text": "O uso mais importante da cera de abelha é na criação de $(thing)Madeira Serrada Tratada$()."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(li)As abelhas podem ajudar a fertilizar as plantações!$()$(li)Raspar um quadro sacrifica a rainha. Seja inteligente!$()$(li)Estar molhado evita que as abelhas ataquem você.$()",
+      "title": "Dicas para Abelhas"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(li)$(thing)Resistência$(): Permite que as abelhas produzam mel em temperaturas mais baixas. A Resistência 10 permite até -16 °C, enquanto a Resistência 1 permite até 2 °C.$()$(li)$(thing)Produção$(): Aumenta a velocidade de produção de mel.$()$(li)$(thing)Mutante$(): Aumenta a variabilidade nas características transmitidas durante a reprodução$().",
+      "title": "Listas de Habilidades"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(li)$(thing)Fertilidade$(): Aumenta a probabilidade de reprodução.$()$(li)$(thing)Afinidade Agrícola$(): Probabilidade de espalhar uma pequena quantidade de nutrientes para as culturas.$()$(li)$(thing)Restauração da Natureza$(): Faz com que novas flores e vitórias-régias surjam ao redor da colmeia.$()$(li)$(thing)Calma$(): Diminui a probabilidade de as abelhas atacarem você$()."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Abelhas com habilidade Mutação alta têm maior probabilidade de desenvolver uma $(thing)Doença Genética$(). Abelhas doentes transmitem a doença para seus descendentes e não produzem mel."
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 10
+}

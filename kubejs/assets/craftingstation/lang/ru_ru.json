@@ -1,0 +1,8 @@
+{
+	"text.crafting_station.clear": "Очистить сетку крафта\n(Зажми Shift для отправки\nв соседние инвентари)",
+	"text.crafting_station.connected_resources.false": "Использовать подключённые ресурсы: False",
+	"text.crafting_station.connected_resources.true": "Использовать подключённые ресурсы: True",
+	"text.crafting_station.error": "Ошибка в рецепте %s, детали в логе",
+	"text.crafting_station.jei_nopull_output": "В этом контейнере есть заблокированные слоты!\nJEI больше не берёт ресурсы из слотов только для вывода (например, результата плавки в печи).\n\nДля использования перемести эти предметы в обычные слоты хранения!",
+	"title.crafting_station": "Станция крафта"
+}

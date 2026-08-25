@@ -5,9 +5,9 @@
     "pages": [
         {
             "type": "patchouli:text",
+            "text": "$(li)$(bold)$(l:getting_started/food_and_water#basics)Основи$()  \n$(li)$(bold)$(l:getting_started/food_and_water#thirst)Спрага$()  \n$(li)$(bold)$(l:getting_started/food_and_water#nutrition_screen)Екран харчування$()  \n$(li)$(bold)$(l:getting_started/food_and_water#nutrients)Поживні речовини$()  \n$(li2)$(l:getting_started/food_and_water#fruit)Фрукти$()  \n$(li2)$(l:getting_started/food_and_water#vegetables)Овочі$()  \n$(li2)$(l:getting_started/food_and_water#protein)Білки$()  \n$(li2)$(l:getting_started/food_and_water#grain)Зернові$()  \n$(li2)$(l:getting_started/food_and_water#dairy)Молочні продукти$()  \n$(li)$(bold)$(l:getting_started/food_and_water#contaminants)Шкідливі речовини$()  \n$(li2)$(l:getting_started/food_and_water#toxins)Токсини$()  \n$(li2)$(l:getting_started/food_and_water#parasites)Паразити$()  \n$(li2)$(l:getting_started/food_and_water#microplastics)Мікропластик$()",
             "title": "Індекс",
-            "anchor": "index",
-            "text": "$(li)$(bold)$(l:getting_started/food_and_water#basics)Основи$()  \n$(li)$(bold)$(l:getting_started/food_and_water#thirst)Спрага$()  \n$(li)$(bold)$(l:getting_started/food_and_water#nutrition_screen)Екран харчування$()  \n$(li)$(bold)$(l:getting_started/food_and_water#nutrients)Поживні речовини$()  \n$(li2)$(l:getting_started/food_and_water#fruit)Фрукти$()  \n$(li2)$(l:getting_started/food_and_water#vegetables)Овочі$()  \n$(li2)$(l:getting_started/food_and_water#protein)Білки$()  \n$(li2)$(l:getting_started/food_and_water#grain)Зернові$()  \n$(li2)$(l:getting_started/food_and_water#dairy)Молочні продукти$()  \n$(li)$(bold)$(l:getting_started/food_and_water#contaminants)Шкідливі речовини$()  \n$(li2)$(l:getting_started/food_and_water#toxins)Токсини$()  \n$(li2)$(l:getting_started/food_and_water#parasites)Паразити$()  \n$(li2)$(l:getting_started/food_and_water#microplastics)Мікропластик$()"
+            "anchor": "index"
         },
         {
             "type": "patchouli:text",
@@ -15,9 +15,9 @@
         },
         {
             "type": "patchouli:text",
+            "text": "У TerraFirmaCraft тобі доведеться стежити не лише за голодом, але й за спрагою. Голод працює схоже на ванілу. Більшість видів їжі відновлюють близько п'ятої частини твоєї шкали голоду. Деякі продукти можуть відновлювати трохи менше, як-от $(thing)коріння рогозу$(). Споживання їжі також відновлює $(thing)насичення$() — це те, наскільки ти ситий. Опустошення шкали їжі або води призведе до сповільнення рухів та отримання шкоди. Смерть не скидає твої поживні речовини та шкідливі речовини.",
             "title": "Основи",
-            "anchor": "basics",
-            "text": "У TerraFirmaCraft тобі доведеться стежити не лише за голодом, але й за спрагою. Голод працює схоже на ванілу. Більшість видів їжі відновлюють близько п'ятої частини твоєї шкали голоду. Деякі продукти можуть відновлювати трохи менше, як-от $(thing)коріння рогозу$(). Споживання їжі також відновлює $(thing)насичення$() — це те, наскільки ти ситий. Опустошення шкали їжі або води призведе до сповільнення рухів та отримання шкоди. Смерть не скидає твої поживні речовини та шкідливі речовини."
+            "anchor": "basics"
         },
         {
             "type": "patchouli:text",
@@ -29,16 +29,18 @@
         },
         {
             "type": "patchouli:text",
-            "text": "Підказка до їжі може виглядати так:$(br2)$(bold)Апельсин$()$(br)  $(2)$(bold)Термін придатності: 11:59 6 липня 1004 року (через 1 міс. та 1 дн.)$()$(br)  $(8)Поживність:$(br)  - Насичення: 2%$(br)  - Вода: 10%$(br)$(a)  - Фрукти: 0.5"
+            "text": "Підказка до їжі може виглядати так:$(br2)$(bold)Апельсин$()$(br)  $(2)$(bold)Термін придатності: 11:59 6 липня 1004 року (через 1 міс. та 1 дн.)$()$(br)  $(8)Поживність:$(br)  - Насичення: 2%$(br)  - Вода: 10%$(br)$(a)  - Фрукти: 0.5",
+            "title": "Поживні речовини"
         },
         {
             "type": "patchouli:text",
-            "anchor": "thirst",
             "text": "Спрага — це рівень води у твоєму тілі. Вона вичерпується приблизно з такою ж швидкістю, як і голод. За високих температур або у разі великих витрат голоду твоя спрага зникатиме швидше. На щастя, пиття $(thing)свіжої води$() відновлює її рівень. Це можна зробити, натиснувши $(item)$(k:key.use)$() на блоці води. Пиття солоної води призводить до втрати спраги і навіть може накласти на тебе ефект $(thing)спраги$(), який зневоднить тебе ще сильніше.",
+            "anchor": "thirst",
             "title": "Спрага"
         },
         {
             "type": "patchouli:multiblock",
+            "text": "Щоб уникати солоної або брудної води, шукай річки, озера та прісноводні рослини, як-от $(thing)Рогоз$().",
             "multiblock": {
                 "pattern": [
                     [
@@ -57,30 +59,31 @@
                 }
             },
             "name": "Безпечна вода",
-            "text": "Щоб уникати солоної або брудної води, шукай річки, озера та прісноводні рослини, як-от $(thing)Рогоз$().",
             "enable_visualize": false
         },
         {
             "type": "tfc:knapping_recipe",
-            "recipe": "tfc:clay_knapping/jug",
-            "text": "$(l:getting_started/pottery)Обробка глини$() та випалювання $(l:getting_started/pottery#jug)глечика$() — це спосіб носити воду із собою. Наповнюй його, як відро, за допомогою $(item)$(k:key.use)$(). Утримування $(item)$(k:key.use)$() дозволяє пити воду."
+            "text": "$(l:getting_started/pottery)Обробка глини$() та випалювання $(l:getting_started/pottery#jug)глечика$() — це спосіб носити воду із собою. Наповнюй його, як відро, за допомогою $(item)$(k:key.use)$(). Утримування $(item)$(k:key.use)$() дозволяє пити воду.",
+            "title": "Спрага",
+            "recipe": "tfc:clay_knapping/jug"
         },
         {
             "type": "patchouli:text",
+            "name": "Безпечна вода",
             "text": "Ти також можеш пити з інших контейнерів, таких як $(l:waterflasks)фляги$() або $(l:mechanics/glassworking)скляні пляшки$(). Докладніше про контейнери для напоїв та їхні ефекти читай $(l:mechanics/drinks#containers)Тут$()."
         },
         {
             "type": "patchouli:text",
-            "anchor": "nutrition_screen",
             "text": "В $(bold)$(#ff0fb7)TerraFirma$()$()$(bold)$(#595959)Greg$()$() екран харчування відображає розлогу інформацію про твоє здоров'я. $(li)Там є головний графік, що показує твої $(l:getting_started/food_and_water#nutrients)поживні речовини$()$()$(li)Бічний графік, який демонструє твої $(l:getting_started/food_and_water#contaminants)шкідливі речовини$()$()$(li)Таблиця з показниками твого здоров'я.$()$(li)А також перемикач для перевірки стану харчування твоєї команди.$()$(br)$(item)Утримуй $(k:key.sneak)$() над будь-яким елементом на екрані, щоб переглянути детальнішу інформацію.$()",
+            "anchor": "nutrition_screen",
             "title": "Вікно поживності"
         },
         {
             "type": "patchouli:image",
+            "text": "Відкрий екран харчування з графіками, які показують твій рівень кожної поживної речовини.",
             "images": [
                 "tfg:textures/gui/field_guide/nutrition/tfg_nutrition_screen.png"
             ],
-            "text": "Відкрий екран харчування з графіками, які показують твій рівень кожної поживної речовини.",
             "border": false
         },
         {

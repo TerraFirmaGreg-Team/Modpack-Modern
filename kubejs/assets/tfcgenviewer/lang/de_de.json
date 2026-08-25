@@ -1,7 +1,5 @@
 {
   "button.tfcgenviewer.save": "Speichern",
-  "tfcgenviewer.preview_world.km": "%s km",
-  "tfcgenviewer.rock_editor.confirm": "Bestätigen",
   "rock.tfc.andesite": "Andesit",
   "rock.tfc.chalk": "Kalk",
   "rock.tfc.chert": "Hornstein",
@@ -19,7 +17,9 @@
   "rock.tfc.schist": "Kristallschiefer",
   "rock.tfc.shale": "Schieferstein",
   "rock.tfc.slate": "Tonschiefer",
+  "tfcgenviewer.biome_altitude.high": "Hoch",
   "tfcgenviewer.biome_altitude.low": "Niedrig",
   "tfcgenviewer.biome_altitude.medium": "Mittel Schwer",
-  "tfcgenviewer.biome_altitude.high": "Hoch"
+  "tfcgenviewer.preview_world.km": "%s km",
+  "tfcgenviewer.rock_editor.confirm": "Bestätigen"
 }

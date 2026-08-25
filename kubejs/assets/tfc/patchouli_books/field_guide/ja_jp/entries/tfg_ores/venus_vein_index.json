@@ -7,25 +7,22 @@
   "secret": false,
   "pages": [
     {
-      "Type": "patchouli:text",
+      "type": "patchouli:text",
       "text": "こちらは$(item)金星$()の$(thing)鉱脈一覧$()です。それぞれの鉱脈の、出現率（レア度）、密度、形状タイプ、生成高度、大きさ、生成される岩石の種類など、さまざまな情報を確認できます。",
-      "title": "金星の鉱脈一覧",
-      "type": "patchouli:text"
+      "title": "金星の鉱脈一覧"
     },
     {
-      "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/venus_vein_index#venus_manual_salt)岩塩, カリ岩塩, リチア雲母, リシア輝石$()$()$(li)$(l:tfg_ores/venus_vein_index#venus_manual_sulfur)硫黄, 黄鉄鉱, 閃亜鉛鉱$()$()",
-      "type": "patchouli:text"
+      "type": "patchouli:text",
+      "text": "$(li)$(l:tfg_ores/venus_vein_index#venus_manual_salt)岩塩, カリ岩塩, リチア雲母, リシア輝石$()$()$(li)$(l:tfg_ores/venus_vein_index#venus_manual_sulfur)硫黄, 黄鉄鉱, 閃亜鉛鉱$()$()"
     },
     {
-      "Type": "patchouli:text",
+      "type": "patchouli:text",
       "text": "$(thing)$(t:何チャンクごとに鉱脈が生成されるかを示します。数値が小さいほど見つかりやすくなります。)レア度$(/t)$(): 1/30 チャンク$(br)$(thing)$(t:鉱脈の中に含まれている鉱石の密度を割合で示しています。数値が高いほど鉱石量が多くなります。)密度$(/t)$(): 20%$(br)$(thing)$(t:鉱脈の形状です)タイプ$(/t)$(): $(t:主に幅広く平たい形状です)円盤状鉱脈$(/t)$(br)$(thing)$(t:この鉱脈が生成される高さ（Y座標）の範囲を示します。)Y$(/t)$(): 40 — 65$(br)$(thing)$(t:鉱脈の平均的な直径のサイズを示します。)サイズ$(/t)$(): 20$(br)$(thing)高さ$(): 6$(br)$(thing)$(t:地表から鉱脈までの距離がこの値を超えると、地表に指標となる鉱石が現れなくなります。)表出の最大深度$(/t)$(): 30$(br)$(thing)バイオーム$(): : 不問$(br2)$(thing)岩石の種類$(): イグニンブライト, デイサイト, ランプロアイト, 安山岩, 流紋岩, 玄武岩, 粗面岩, 鍾乳石",
       "title": "岩塩, カリ岩塩, リチア雲母, リシア輝石",
-      "type": "patchouli:text",
       "anchor": "venus_manual_salt"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "岩塩",
       "multiblock": {
         "mapping": {
@@ -41,11 +38,10 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 80%$(br)$(thing)採取可能$(): ナトリウム、塩素$(br)$(thing)化学式$(): NaCl",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)パーセント$(): 80%$(br)$(thing)採取可能$(): ナトリウム、塩素$(br)$(thing)化学式$(): NaCl"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "カリ岩塩",
       "multiblock": {
         "mapping": {
@@ -61,11 +57,10 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 10%$(br)$(thing)採取可能$(): カリウム、塩素、肥料$(br)$(thing)化学式$(): KCl",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)パーセント$(): 10%$(br)$(thing)採取可能$(): カリウム、塩素、肥料$(br)$(thing)化学式$(): KCl"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "リチア雲母",
       "multiblock": {
         "mapping": {
@@ -81,11 +76,10 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 5%$(br)$(thing)採取可能$(): カリウム、リチウム、アルミニウム、フッ素$(br)$(thing)化学式$(): KLi₃Al₄F₂O₁₀",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)パーセント$(): 5%$(br)$(thing)採取可能$(): カリウム、リチウム、アルミニウム、フッ素$(br)$(thing)化学式$(): KLi₃Al₄F₂O₁₀"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "リシア輝石",
       "multiblock": {
         "mapping": {
@@ -101,23 +95,20 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 5%$(br)$(thing)採取可能$(): リチウム、アルミニウム$(br)$(thing)化学式$(): LiAlSi₂O₆",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)パーセント$(): 5%$(br)$(thing)採取可能$(): リチウム、アルミニウム$(br)$(thing)化学式$(): LiAlSi₂O₆"
     },
     {
-      "Type": "patchouli:empty",
-      "draw_filler": true,
-      "type": "patchouli:empty"
+      "type": "patchouli:empty",
+      "draw_filler": true
     },
     {
-      "Type": "patchouli:text",
+      "type": "patchouli:text",
       "text": "$(thing)$(t:何チャンクごとに鉱脈が生成されるかを示します。数値が小さいほど見つかりやすくなります。)レア度$(/t)$(): 1/30 チャンク$(br)$(thing)$(t:鉱脈の中に含まれている鉱石の密度を割合で示しています。数値が高いほど鉱石量が多くなります。)密度$(/t)$(): 20%$(br)$(thing)$(t:鉱脈の形状です)タイプ$(/t)$(): $(t:主に丸い形状をしています)塊状鉱脈$(/t)$(br)$(thing)$(t:この鉱脈が生成される高さ（Y座標）の範囲を示します。)Y$(/t)$(): 40 — 65$(br)$(thing)$(t:鉱脈の平均的な直径のサイズを示します。)サイズ$(/t)$(): 20$(br)$(thing)$(t:地表から鉱脈までの距離がこの値を超えると、地表に指標となる鉱石が現れなくなります。)表出の最大深度$(/t)$(): 30$(br)$(thing)バイオーム$(): : 不問$(br2)$(thing)岩石の種類$(): イグニンブライト, デイサイト, ランプロアイト, 安山岩, 流紋岩, 玄武岩, 粗面岩, 鍾乳石",
       "title": "硫黄, 黄鉄鉱, 閃亜鉛鉱",
-      "type": "patchouli:text",
       "anchor": "venus_manual_sulfur"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "硫黄",
       "multiblock": {
         "mapping": {
@@ -133,11 +124,10 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 80%$(br)$(thing)採取可能$(): 硫黄$(br)$(thing)化学式$(): S",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)パーセント$(): 80%$(br)$(thing)採取可能$(): 硫黄$(br)$(thing)化学式$(): S"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "黄鉄鉱",
       "multiblock": {
         "mapping": {
@@ -153,11 +143,10 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 15%$(br)$(thing)融解$(): 鋳鉄$(br)$(thing)化学式$(): FeS₂",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)パーセント$(): 15%$(br)$(thing)融解$(): 鋳鉄$(br)$(thing)化学式$(): FeS₂"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "閃亜鉛鉱",
       "multiblock": {
         "mapping": {
@@ -173,8 +162,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 5%$(br)$(thing)融解$(): 亜鉛$(br)$(thing)化学式$(): ZnS",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)パーセント$(): 5%$(br)$(thing)融解$(): 亜鉛$(br)$(thing)化学式$(): ZnS"
     }
   ],
   "sortnum": 9

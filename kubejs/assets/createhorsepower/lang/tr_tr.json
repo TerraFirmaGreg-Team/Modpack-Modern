@@ -1,0 +1,23 @@
+{
+	"block.createhorsepower.horse_crank": "Hayvan Krankı",
+	"createhorsepower.ponder.horse_crank.header": "At Krankını Kullanmak",
+	"createhorsepower.ponder.horse_crank.text_1": "Bu Bir At Krankıdır",
+	"createhorsepower.ponder.horse_crank.text_2": "At krankını kullanmak için öncelikle altında uygun bloklar bulunmalıdır",
+	"createhorsepower.ponder.horse_crank.text_3": "Bazı malzemeler diğerlerinden daha iyi olabilir",
+	"createhorsepower.ponder.horse_crank.text_4": "Uygun işçi bağlandığında krank stres üretir",
+	"createhorsepower.ponder.horse_crank.text_5": "Yapılandırmada belirtilen herhangi bir canlıyı işçiye dönüştürmek için ona bağlayabilirsiniz",
+	"createhorsepower.ponder.horse_crank.text_6": "Yandan bir dişli ile dönme hareketini alabilirsiniz",
+	"createhorsepower.ponder.horse_crank.text_7": "veya alttan bir mil ile",
+	"createhorsepower.ponder.horse_crank.text_8": "Ama üstten alamazsınız",
+	"createhorsepower.ponder.tag.path_types": "Yol blokları",
+	"createhorsepower.ponder.tag.path_types.description": "Çalışan hayvanların üzerinde yürüyebileceği uygun bloklar",
+	"createhorsepower.ponder.tag.viable_workers": "Uygun İşçiler",
+	"createhorsepower.ponder.tag.viable_workers.description": "At Krankını çekmek için kullanılabilen hayvanlar",
+	"entity.createhorsepower.chp_leash_knot": "(CHP) Tasma Düğümü",
+	"item.createhorsepower.horse_crank": "At Krankı",
+	"tooltip.createhorsepower.horse_crank.alreadyHasWorker": "Krankta zaten bir işçi var",
+	"tooltip.createhorsepower.horse_crank.attached": "İşçi bağlandı",
+	"tooltip.createhorsepower.horse_crank.detached": "İşçinin bağlantısı kesildi",
+	"tooltip.createhorsepower.horse_crank.maximumMobs": "Yalnızca 1 canlı bağlanabilir",
+	"tooltip.createhorsepower.horse_crank.notValidWorker": "Canlı uygun işçi değil"
+}

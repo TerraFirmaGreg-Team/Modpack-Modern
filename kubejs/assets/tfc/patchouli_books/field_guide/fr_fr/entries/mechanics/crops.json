@@ -1,5 +1,4 @@
 {
-	"__comment__": "This file was automatically created by mcresources",
 	"name": "Cultures",
 	"category": "tfc:mechanics",
 	"icon": "tfc:textures/item/food/wheat.png",
@@ -14,8 +13,8 @@
 		},
 		{
 			"type": "patchouli:text",
-			"title": "Contenu",
-			"text": "$(li)$(l:tfc:mechanics/crops#barley)Orge$()$(li)$(l:tfc:mechanics/crops#beet)Betterave$()$(li)$(l:tfc:mechanics/crops#cabbage)Chou$()$(li)$(l:tfc:mechanics/crops#canola)Colza$()$(li)$(l:tfc:mechanics/crops#carrot)Carotte$()$(li)$(l:tfc:mechanics/crops#cucumber)Concombre$()$(li)$(l:tfc:mechanics/crops#flax)Lin$()$(li)$(l:tfc:mechanics/crops#garlic)Ail$()$(li)$(l:tfc:mechanics/crops#green_bean)Haricot vert$()$(li)$(l:tfc:mechanics/crops#jute)Jute$()$(li)$(l:tfc:mechanics/crops#lentil)Lentilles$()$(li)$(l:tfc:mechanics/crops#maize)Maïs$()$(li)$(l:tfc:mechanics/crops#melon)Pastèque$()"
+			"text": "$(li)$(l:tfc:mechanics/crops#barley)Orge$()$(li)$(l:tfc:mechanics/crops#beet)Betterave$()$(li)$(l:tfc:mechanics/crops#cabbage)Chou$()$(li)$(l:tfc:mechanics/crops#canola)Colza$()$(li)$(l:tfc:mechanics/crops#carrot)Carotte$()$(li)$(l:tfc:mechanics/crops#cucumber)Concombre$()$(li)$(l:tfc:mechanics/crops#flax)Lin$()$(li)$(l:tfc:mechanics/crops#garlic)Ail$()$(li)$(l:tfc:mechanics/crops#green_bean)Haricot vert$()$(li)$(l:tfc:mechanics/crops#jute)Jute$()$(li)$(l:tfc:mechanics/crops#lentil)Lentilles$()$(li)$(l:tfc:mechanics/crops#maize)Maïs$()$(li)$(l:tfc:mechanics/crops#melon)Pastèque$()",
+			"title": "Contenu"
 		},
 		{
 			"type": "patchouli:text",
@@ -23,15 +22,16 @@
 		},
 		{
 			"type": "tfc:rock_knapping_recipe",
+			"text": "Pour commencer, une $(thing)Houe en pierre$() peut être $(thing)taillée, comme ci-dessus.",
+			"title": "Faire pousser vos cultures",
 			"recipes": [
 				"tfg:rock_knapping/stone_hoe_head_1"
-			],
-			"text": "Pour commencer, une $(thing)Houe en pierre$() peut être $(thing)taillée, comme ci-dessus."
+			]
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "gtceu:shaped/hoe_stone",
-			"text": "Une fois la tête de houe taillée, elle peut être transformée en Houe.$(br2)Les houes fonctionnent comme en Vanilla, en faisant un clic droit sur un bloc de terre pour le transformer en $(thing)Terre labourée$().  Elle peuvent auss être utilisée pour convertir de la $(thing)Terre racineuse$() en $(thing)Terre$()."
+			"text": "Une fois la tête de houe taillée, elle peut être transformée en Houe.$(br2)La houe fonctionne comme en Vanilla, en faisant un clic droit sur un bloc de terre pour le transformer en $(thing)Terre labourée$(). Elle peut aussi être utilisée pour convertir de la $(thing)Terre racineuse$() en $(thing)Terre$().",
+			"recipe": "gtceu:shaped/hoe_stone"
 		},
 		{
 			"type": "patchouli:text",
@@ -489,7 +489,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "maize",
-			"text": "$(bold)$(l:the_world/climate#temperature)Température$() : 13 - 40 °C$(br)$(bold)$(l:mechanics/hydration)Hydratation$() : 75 - 100 %$(br)$(bold)Nutrmient$(): Phosphore$(br2)Le maïs est une culture de deux blocs de haut. Des graines de maïs peuvent être plantées dans de la terre labourée, grandissent jusqu'à deux blocs de haut et produisent du $(thing)Maïs$() et des $(thing)Graines de maïs$().",
+			"text": "$(bold)$(l:the_world/climate#temperature)Température$() : 13 - 40 °C$(br)$(bold)$(l:mechanics/hydration)Hydratation$() : 75 - 100 %$(br)$(bold)Nutriment$() : Phosphore$(br2)Le maïs est une culture de deux blocs de haut. Des graines de maïs peuvent être plantées dans de la terre labourée, grandissent jusqu'à deux blocs de haut et produisent du $(thing)Maïs$() et des $(thing)Graines de maïs$().",
 			"title": "Maïs"
 		},
 		{
@@ -632,7 +632,7 @@
 		},
 		{
 			"type": "tfc:multimultiblock",
-			"text": "",
+			"text": "Note: in order to grow, the rice block must be $(thing)Waterlogged$().",
 			"multiblocks": [
 				{
 					"pattern": [
@@ -1253,7 +1253,7 @@
 		},
 		{
 			"type": "tfc:multimultiblock",
-			"text": "",
+			"text": "The stick is required in order for the crop to fully grow.",
 			"multiblocks": [
 				{
 					"pattern": [
@@ -1345,7 +1345,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "green_bean",
-			"text": "$(bold)$(l:the_world/climate#temperature)Température$() : 2 - 35 °C$(br)$(bold)$(l:mechanics/hydration)Hydratation$() : 38 - 100 %$(br)$(bold)Nutriment$(): Azote$(br2)Le haricots verts est une culture grimpante de deux blocs de haut. Des graines d'haricot vert peuvent être plantée dans de la terre labourée, grandisent jusqu'à deux blocs de haut si un bâton est présent, et produisent des $(thing)Haricots verts$() et des $(thing)Graines d'haricot vert$().",
+			"text": "$(bold)$(l:the_world/climate#temperature)Température$() : 2 - 35 °C$(br)$(bold)$(l:mechanics/hydration)Hydratation$() : 38 - 100 %$(br)$(bold)Nutriment$(): Azote$(br2)Le haricots vert est une culture grimpante de deux blocs de haut. Des graines d'haricot vert peuvent être plantées dans de la terre labourée, grandisent jusqu'à deux blocs de haut si un bâton est présent, et produisent des $(thing)Haricots verts$() et des $(thing)Graines d'haricot vert$().",
 			"title": "Haricots verts"
 		},
 		{
@@ -2000,7 +2000,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "red_bell_pepper",
-			"text": "$(bold)$(l:the_world/climate#temperature)Température$() : 16 - 30 °C$(br)$(bold)$(l:mechanics/hydration)Hydratation$() : 25 - 60 %$(br)$(bold)Nutriment$() : Potassium$(br2)Le poivron rouge est une culture cueillable. Ils peuvent être cueillis avec $(item)$(k:key.use)$() quand ils sont presques mûrs pour obtenir des Poivrons verts. Cueillir avec $(item)$(k:key.use)$() permet au plant de produire plus de poivrons à l'avenir plutôt que de le détruire.",
+			"text": "$(bold)$(l:the_world/climate#temperature)Température$() : 16 - 30 °C$(br)$(bold)$(l:mechanics/hydration)Hydratation$() : 25 - 60 %$(br)$(bold)Nutriment$() : Potassium$(br2)Le poivron rouge est une culture cueillable. Ils peuvent être cueillis avec $(item)$(k:key.use)$() quand ils sont presques mûrs pour obtenir des Poivrons verts. Cueillir avec $(item)$(k:key.use)$() permet au plant de produire plus de poivrons à l'avenir plutôt que de détruire le plant.",
 			"title": "Poivrons rouges"
 		},
 		{
@@ -2131,7 +2131,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "yellow_bell_pepper",
-			"text": "$(bold)$(l:the_world/climate#temperature)Température$() : 16 - 30 °C$(br)$(bold)$(l:mechanics/hydration)Hydratation$() : 25 - 60 %$(br)$(bold)Nutriment$() : Potassium$(br2)Le poivron jaune est une culture cueillable. Ils peuvent être cueillis avec $(item)$(k:key.use)$() quand ils sont presques mûrs pour obtenir des Poivrons verts. Cueillir avec $(item)$(k:key.use)$() permet au plant de produire plus de poivrons à l'avenir plutôt que de le détruire.",
+			"text": "$(bold)$(l:the_world/climate#temperature)Température$() : 16 - 30 °C$(br)$(bold)$(l:mechanics/hydration)Hydratation$() : 25 - 60 %$(br)$(bold)Nutriment$() : Potassium$(br2)Le poivron jaune est une culture cueillable. Ils peuvent être cueillis avec $(item)$(k:key.use)$() quand ils sont presques mûrs pour obtenir des Poivrons verts. Cueillir avec $(item)$(k:key.use)$() permet au plant de produire plus de poivrons à l'avenir plutôt que de détruire le plant.",
 			"title": "Poivrons jaunes"
 		},
 		{
@@ -2677,7 +2677,7 @@
 		},
 		{
 			"type": "tfc:multimultiblock",
-			"text": "",
+			"text": "The stick is required in order for the crop to fully grow.",
 			"multiblocks": [
 				{
 					"pattern": [
@@ -3032,7 +3032,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "jute",
-			"text": "$(bold)$(l:the_world/climate#temperature)Température$() : 5 - 37 °C$(br)$(bold)$(l:mechanics/hydration)Hydratation$() : 25 - 100 %$(br)$(bold)Nutrmient$(): Potassium$(br2)La jute est une culture de deux blocs de haut. Des graines de jute peuvent être plantées dans de la terre labourée, grandissent jusqu'à deux blocs de haut et produisent de la $(thing)Jute$() et des $(thing)Graines de jute$().",
+			"text": "$(bold)$(l:the_world/climate#temperature)Température$() : 5 - 37 °C$(br)$(bold)$(l:mechanics/hydration)Hydratation$() : 25 - 100 %$(br)$(bold)Nutriment$(): Potassium$(br2)La jute est une culture de deux blocs de haut. Des graines de jute peuvent être plantées dans de la terre labourée, grandissent jusqu'à deux blocs de haut et produisent de la $(thing)Jute$() et des $(thing)Graines de jute$().",
 			"title": "Jute"
 		},
 		{
@@ -3170,7 +3170,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "papyrus",
-			"text": "$(bold)$(l:the_world/climate#temperature)Température$() : 19 - 37 °C$(br)$(bold)$(l:mechanics/hydration)Hydratation$() : 70 - 100 %$(br)$(bold)Nutrmient$(): Potassium$(br2)Le papyrus est une culture de deux blocs de haut. Des graines de papyrus peuvent être plantées dans de la terre labourée, grandissent jusqu'à deux blocs de haut et produisent du $(thing)Papyrus$() et des $(thing)Graines de papyrus$().",
+			"text": "$(bold)$(l:the_world/climate#temperature)Température$() : 19 - 37 °C$(br)$(bold)$(l:mechanics/hydration)Hydratation$() : 70 - 100 %$(br)$(bold)Nutriment$(): Potassium$(br2)Le papyrus est une culture de deux blocs de haut. Des graines de papyrus peuvent être plantées dans de la terre labourée, grandissent jusqu'à deux blocs de haut et produisent du $(l:mechanics/papermaking)Papyrus$() et des $(thing)Graines de papyrus$().",
 			"title": "Papyrus"
 		},
 		{
@@ -3308,7 +3308,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "sunflower",
-			"text": "$(bold)$(l:the_world/climate#temperature)Température$() : 5 - 40 °C$(br)$(bold)$(l:mechanics/hydration)Hydratation$() : 20 - 80 %$(br)$(bold)Nutrmient$(): Azote$(br2)Le tournesol est une culture de deux blocs de haut. Des graines de tournesol peuvent être plantées dans de la terre labourée, grandissent jusqu'à deux blocs de haut et produisent des $(thing)Têtes de tournesol$() qui peuvent être transformées en $(thing)Huile de graines$(). Celle-ci peut être utilisé en tant que carburant pour les Lampes ou pour le $(thing)Biodiesel$() plus tard. Un Tournesol joue aussi le rôle de Fleur pour l'$(l:firmalife/beekeeping)Apiculture$().",
+			"text": "$(bold)$(l:the_world/climate#temperature)Température$() : 5 - 40 °C$(br)$(bold)$(l:mechanics/hydration)Hydratation$() : 20 - 80 %$(br)$(bold)Nutriment$(): Azote$(br2)Le tournesol est une culture de deux blocs de haut. Des graines de tournesol peuvent être plantées dans de la terre labourée, grandissent jusqu'à deux blocs de haut et produisent des $(item)Têtes de tournesol$() qui peuvent être transformées en $(thing)Huile de graines$(). Celle-ci peut être utilisé en tant que carburant pour les Lampes ou pour le $(thing)Biodiesel$() plus tard.$(br)Un Tournesol joue aussi le rôle de Fleur pour l'$(l:firmalife/beekeeping)Apiculture$().",
 			"title": "Tournesol"
 		},
 		{
@@ -3467,7 +3467,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "canola",
-			"text": "$(bold)$(l:the_world/climate#temperature)Température$() : -5 - 25 °C$(br)$(bold)$(l:mechanics/hydration)Hydratation$() : 10 - 60 %$(br)$(bold)Nutrmient$(): Phosphore$(br2)Le colza est une culture de deux blocs de haut. Des graines de colza peuvent être plantées dans de la terre labourée, grandissent jusqu'à deux blocs de haut et produisent des $(thing)Siliques de colza$() qui peuvent être transformées en $(thing)Huile de graines$(). Celle-ci peut être utilisé en tant que carburant pour les Lampes ou pour le $(thing)Biodiesel$() plus tard. Le colza joue aussi le rôle de Fleur pour l'$(l:firmalife/beekeeping)Apiculture$().",
+			"text": "$(bold)$(l:the_world/climate#temperature)Température$() : -5 - 25 °C$(br)$(bold)$(l:mechanics/hydration)Hydratation$() : 10 - 60 %$(br)$(bold)Nutriment$(): Phosphore$(br2)Le colza est une culture de deux blocs de haut. Des graines de colza peuvent être plantées dans de la terre labourée, grandissent jusqu'à deux blocs de haut et produisent des $(item)Siliques de colza$() qui peuvent être transformées en $(thing)Huile de graines$(). Celle-ci peut être utilisé en tant que carburant pour les Lampes ou pour le $(thing)Biodiesel$() plus tard.$(br)Le colza joue aussi le rôle de Fleur pour l'$(l:firmalife/beekeeping)Apiculture$().",
 			"title": "Colza"
 		},
 		{
@@ -3627,7 +3627,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "flax",
-			"text": "$(bold)$(l:the_world/climate#temperature)Température$() : -8 - 25 °C$(br)$(bold)$(l:mechanics/hydration)Hydratation$() : 15 - 65 %$(br)$(bold)Nutrmient$(): Azote$(br2)Le lin est une culture de deux blocs de haut. Des graines de lin peuvent être plantées dans de la terre labourée, grandissent jusqu'à deux blocs de haut et produisent des $(thing)Tiges de lin$() qui peuvent être transformées en $(thing)Lin$() ou en $(thing)Toile$(). Le colza joue aussi le rôle de Fleur pour l'$(l:firmalife/beekeeping)Apiculture$().",
+			"text": "$(bold)$(l:the_world/climate#temperature)Température$() : -8 - 25 °C$(br)$(bold)$(l:mechanics/hydration)Hydratation$() : 15 - 65 %$(br)$(bold)Nutriment$(): Azote$(br2)Le lin est une culture de deux blocs de haut. Des graines de lin peuvent être plantées dans de la terre labourée, grandissent jusqu'à deux blocs de haut et produisent des $(item)Tiges de lin$() qui peuvent être transformées en $(thing)Lin$() ou en $(thing)Toile$().$(br)Le colza joue aussi le rôle de Fleur pour l'$(l:firmalife/beekeeping)Apiculture$().",
 			"title": "Lin"
 		},
 		{
@@ -3786,7 +3786,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "cucumber",
-			"text": "$(bold)$(l:the_world/climate#temperature)Température$() : 5 - 40 °C$(br)$(bold)$(l:mechanics/hydration)Hydratation$() : 70 - 100 %$(br)$(bold)Nutriment$(): Azote$(br2)Le concombre est une culture de deux blocs de haut. Des graines de concombre peuvent être plantée dans de la terre labourée, grandisent jusqu'à deux blocs de haut, et produisent des $(thing)Tomates$() et des $(thing)Graines de tomate$(). $(br)$(bold)Le concombre a besoin d'un bâton pour grandir complètement.$()",
+			"text": "$(bold)$(l:the_world/climate#temperature)Température$() : 5 - 40 °C$(br)$(bold)$(l:mechanics/hydration)Hydratation$() : 70 - 100 %$(br)$(bold)Nutriment$(): Azote$(br2)Le concombre est une culture de deux blocs de haut. Des graines de concombre peuvent être plantée dans de la terre labourée, grandisent jusqu'à deux blocs de haut, et produisent des $(item)Concombre$() qui comblent vos besoins en $(thing)Légume$(). $(br)$(bold)Le concombre a besoin d'un bâton pour grandir complètement.$()",
 			"title": "Concombre"
 		},
 		{
@@ -4041,7 +4041,7 @@
 			"type": "patchouli:text",
 			"anchor": "lentil",
 			"title": "Lentilles",
-			"text": "$(bold)$(l:the_world/climate#temperature)Température$() : -20 - 18 °C$(br)$(bold)$(l:mechanics/hydration)Hydratation$() : 50 - 100 %$(br)$(bold)Nutriment$(): Phosphore$(br2)Les lentilles peuvent être mangés pour vos besoins en $(thing)Légumes$(), mais il est recommandé de les cuire d'abord. Les lentilles sont un autres bon choix pour cultiver dans des climats plus froids."
+			"text": "$(bold)$(l:the_world/climate#temperature)Température$() : -20 - 18 °C$(br)$(bold)$(l:mechanics/hydration)Hydratation$() : 50 - 100 %$(br)$(bold)Nutriment$(): Phosphore$(br2)Les lentilles peuvent être mangés pour vos besoins en $(thing)Légumes$(), mais il est recommandé de les cuire d'abord. Les lentilles sont un autre bon choix pour cultiver dans des climats plus froids."
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -4149,7 +4149,7 @@
 					}
 				}
 			],
-			"text": "Les $(thing)lentilles sauvage$() poussent entre -18 et 42 °C, et entre 250 et 425 mm de précipitations.",
+			"text": "Les $(thing)lentilles sauvages$() poussent entre -18 et 42 °C, et entre 250 et 425 mm de précipitations.",
 			"enable_visualize": false
 		}
 	],

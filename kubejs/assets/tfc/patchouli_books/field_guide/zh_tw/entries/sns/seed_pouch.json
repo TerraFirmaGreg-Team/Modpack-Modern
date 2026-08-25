@@ -1,0 +1,18 @@
+{
+  "name": "The Seed Pouch",
+  "category": "tfc:sacks_n_such",
+  "icon": "sns:seed_pouch",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "sns:seed_pouch",
+      "text": "The $(item)Seed Pouch$() is a type of $(l:sns/item_containers)Item Container$() intended for holding a large variety of seeds making it very useful when farming. $(br2)By default these have 27 slots holding up to 64 seeds each"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "sns:crafting/seed_pouch",
+      "text": "For modpack authors or simply people wishing to add extra seeds see the item tag $(bold)sns:allowed_in_seed_pouch$() most addons should be automatically supported"
+    }
+  ],
+  "read_by_default": true
+}

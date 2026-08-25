@@ -10,7 +10,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(l:arborfirmacraft/tapping_index#maple)$(li)Maple$()$(l:arborfirmacraft/tapping_index#birch)$(li)Birch$()$(l:arborfirmacraft/tapping_index#hevea)$(li)Hevea$()$(l:arborfirmacraft/tapping_index#rubber_fig)$(li)Rubber Fig$()$(l:arborfirmacraft/tapping_index#kapok)$(li)Kapok$()$(l:arborfirmacraft/tapping_index#aspen)$(li)Aspen$()$(l:arborfirmacraft/tapping_index#spruce)$(li)Spruce$()$(l:arborfirmacraft/tapping_index#white_cedar)$(li)White Cedar$()$(l:arborfirmacraft/tapping_index#douglas_fir)$(li)Douglas Fir$()"
+			"text": "$(l:arborfirmacraft/tapping_index#maple)$(li)Érable$()$(l:arborfirmacraft/tapping_index#birch)$(li)Bouleau$()$(l:arborfirmacraft/tapping_index#hevea)$(li)Hévéa$()$(l:arborfirmacraft/tapping_index#rubber_fig)$(li)Figuier à caoutchouc$()$(l:arborfirmacraft/tapping_index#kapok)$(li)Kapokier$()$(l:arborfirmacraft/tapping_index#aspen)$(li)Hêtre$()$(l:arborfirmacraft/tapping_index#spruce)$(li)Épicéa$()$(l:arborfirmacraft/tapping_index#white_cedar)$(li)Cèdre blanc$()$(l:arborfirmacraft/tapping_index#douglas_fir)$(li)Douglas$()"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -34,7 +34,7 @@
 			"title": "Bouleau",
 			"item": "tfc:wood/log/birch,tfc:wood/wood/birch,tfc:wood/leaves/birch,tfc:wood/sapling/birch",
 			"link_recipe": false,
-			"text": "$(bold)Données climatiques$()$(br)$(thing)Température minimum$() : -12.1°C$(br)$(thing)Température maximum$() : 6.1°C$(br)$(thing)Précipitations minimum$(): 125$(br)$(thing)Précipitations maximum$() : 310$(br2)$(bold)Données d'extraction$()$(br)$(thing)Tempé min pour produire$() : -15°C$(br)$(thing)Tempé max pour produire$() : 5°C$(br)$(thing)Exclusif au printemps$() : Non$(br)$(thing)Débit$() : 5mb"
+			"text": "$(bold)Données climatiques$()$(br)$(thing)Température minimum$() : -12.1°C$(br)$(thing)Température maximum$() : 6.1°C$(br)$(thing)Précipitations minimum$() : 125$(br)$(thing)Précipitations maximum$() : 310$(br2)$(bold)Données d'extraction$()$(br)$(thing)Tempé min pour produire$() : -15°C$(br)$(thing)Tempé max pour produire$() : 5°C$(br)$(thing)Exclusif au printemps$() : Non$(br)$(thing)Débit$() : 5mb"
 		},
 		{
 			"type": "patchouli:image",
@@ -153,7 +153,7 @@
 			"images": [
 				"tfg:textures/gui/field_guide/tapping_index/douglas_fir_tree.png"
 			],
-			"text": "$(thing)Produit$() : Poix de conifère(br)$(thing)Raffinable en$() : Résine collante et colophane de conifère",
+			"text": "$(thing)Produit$() : Poix de conifère$(br)$(thing)Raffinable en$() : Résine collante et colophane de conifère",
 			"border": true
 		}
 	]
