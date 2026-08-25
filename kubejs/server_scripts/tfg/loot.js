@@ -165,6 +165,36 @@ function registerTFGLoots(event) {
 
 	})
 
+	const LOCO_PREFIX = 'railways:'
+	const LOCO_GLASSES = [
+		'round_pane_locometal_window',
+		'single_pane_locometal_window',
+		'two_pane_locometal_window',
+		'four_pane_locometal_window'
+	]
+	
+	LOCO_GLASSES.forEach(glass => {
+		const loco_glass = `${LOCO_PREFIX}${glass}`
+		event.addBlockLootModifier(loco_glass)
+			.removeLoot(Ingredient.all)
+			.or((or) => {
+            	or.matchMainHand("#forge:tools/wrench").matchMainHand(Item.of('tfc:gem_saw'))
+        	})
+			.addLoot(loco_glass)
+
+		global.LOCOMETAL_COLORS.forEach(tfc_dye => {
+			tfc_dye.colors.forEach(color => {
+				const loco_glass_dyed = `${LOCO_PREFIX}${color}_${glass}`
+				event.addBlockLootModifier(loco_glass_dyed)
+					.removeLoot(Ingredient.all)
+					.or((or) => {
+						or.matchMainHand("#forge:tools/wrench").matchMainHand(Item.of('tfc:gem_saw'))
+					})
+					.addLoot(loco_glass_dyed)
+			})
+		})
+	})
+
 	global.TFC_WOOD_TYPES.forEach(wood => {
 		const id = `everycomp:c/tfc/${wood}_window_pane`
 		event.addBlockLootModifier(id)

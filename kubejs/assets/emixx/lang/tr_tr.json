@@ -1,9 +1,17 @@
 {
+	"emixx.emixx.configuration.disabledCreativeModeTabs.manage": "Yapılandır...",
+	"emixx.emixx.configuration.disabledStackGroups.manage": "Yapılandır...",
+	"stackgroup.emixx.axes": "Baltalar",
+	"stackgroup.emixx.buckets": "Kova",
+	"stackgroup.emixx.raw_materials": "Ham materyal",
+	"stackgroup.emixx.tfg_axes": "Baltalar",
 	"stackgroup.emixx.tfg_barrels": "Fıçılar",
+	"stackgroup.emixx.tfg_concrete_roads": "Beton Yollar",
 	"stackgroup.emixx.tfg_conductor_caps": "Kondüktör Şapkaları",
 	"stackgroup.emixx.tfg_coral_blocks": "Mercanlar",
 	"stackgroup.emixx.tfg_corals": "Mercanlar",
 	"stackgroup.emixx.tfg_glass": "Cam",
+	"stackgroup.emixx.tfg_javelins": "İnce Mızraklar",
 	"stackgroup.emixx.tfg_palettes_cycle_groups_black_base": "Siyah Lokometal",
 	"stackgroup.emixx.tfg_palettes_cycle_groups_blue_base": "Mavi Lokometal",
 	"stackgroup.emixx.tfg_palettes_cycle_groups_brown_base": "Kahverengi Lokometal",
@@ -21,6 +29,9 @@
 	"stackgroup.emixx.tfg_palettes_cycle_groups_white_base": "Beyaz Lokometal",
 	"stackgroup.emixx.tfg_palettes_cycle_groups_yellow_base": "Sarı Lokometal",
 	"stackgroup.emixx.tfg_plates": "Levha",
+	"stackgroup.emixx.tfg_postboxes": "Posta kutusu",
 	"stackgroup.emixx.tfg_seats": "Koltuklar",
-	"stackgroup.emixx.tfg_tools_wrenches": "İngiliz Anahtarı"
+	"stackgroup.emixx.tfg_tools_hammers": "Çekiçler",
+	"stackgroup.emixx.tfg_tools_wrenches": "İngiliz Anahtarı",
+	"stackgroup.emixx.wool": "Yün"
 }

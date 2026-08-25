@@ -53,7 +53,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"title": "Wine",
+			"title": "Vynas",
 			"text": "$(thing)Wine$() is another kind of alcohol that's made in a different way than the others. It's a complex but rewarding process that can't be automated in a machine. Check the $(l:firmalife/wine)Winemaking$() entry to learn how to craft it.$(br2)All wines also give $(item)Strength (5:20)$() in addition to another effect!",
 			"item": "firmalife:bucket/red_wine,firmalife:bucket/white_wine,firmalife:bucket/rose_wine,firmalife:bucket/sparkling_wine,firmalife:bucket/dessert_wine",
 			"anchor": "wine"
@@ -64,41 +64,41 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Milks",
+			"title": "Pienai",
 			"text": "$(thing)Milk$() can be aquired from most female livestock by simply right clicking them with a wood or metal bucket once familiarity is at a high enough level. (If the milking isn't working, make sure the buckets aren't stacked!)$(br)While it doesn't provide any buffs, it provides dairy nutrition if drank after eating, and can later be made into cheese.",
 			"item": "minecraft:milk_bucket,firmalife:bucket/yak_milk,firmalife:bucket/goat_milk",
 			"anchor": "milk"
 		},
 		{
-			"title": "Spring Water",
+			"title": "Šaltinio vanduo\n",
 			"text": "Drinking $(thing)Spring Water$() warms you up by 4°C and applies a small regeneration effect while standing in it, as well as warming you.",
 			"item": "tfc:bucket/spring_water",
 			"type": "patchouli:spotlight",
 			"anchor": "spring_water"
 		},
 		{
-			"title": "Sea Water",
+			"title": "Jūros vanduo",
 			"text": "Drinking $(thing)Sea Water$() does not hydrate you and will make you more thirsty instead. A hot body temperature can also make you more thirsty. Lost at sea? Look upwards when it's raining for some easy hydration!",
 			"type": "patchouli:spotlight",
 			"item": "tfc:bucket/salt_water",
 			"anchor": "sea_water"
 		},
 		{
-			"title": "Muddy Water",
+			"title": "Purvinas vanduo",
 			"text": "Drinking $(thing)Muddy Water$() is not recommended. Doing so will make you nauseous and give you parasites.",
 			"type": "patchouli:spotlight",
 			"item": "tfg:muddy_water_bucket",
 			"anchor": "muddy_water"
 		},
 		{
-			"title": "Fruit Juice",
+			"title": "Vaisių sultys",
 			"text": "$(thing)Fruit Juice$() is a great way to condense your fruits into a longer lasting food item. Fruit juice provides the $(l:getting_started/food_and_water#quenching_transient_effect)Quenching Effect$(). Which helps stave off thirst.$(br2)Fruit Juice will expire over time.$()",
 			"type": "patchouli:spotlight",
 			"anchor": "juice",
 			"item": "tfg:food/juice"
 		},
 		{
-			"title": "Yogurt",
+			"title": "Jogurtas",
 			"text": "$(thing)Yogurt$() provides dairy nutrition similarly to milk. It can also be mixed with fruit to make $(item)Fruit Yogurt$().$(br2)Yogurt will expire over time.$()",
 			"type": "patchouli:spotlight",
 			"anchor": "yogurt",

@@ -1,5 +1,4 @@
 {
-  "__comment__": "This file was automatically created by mcresources",
   "name": "支撑梁及塌方",
   "category": "tfc:mechanics",
   "icon": "tfc:wood/support/oak",
@@ -229,7 +228,8 @@
     },
     {
       "type": "patchouli:text",
-      "text": "除$(thing)木质支撑梁$()外，$(bold)TFG$()还新增了更高阶的支撑梁类型，包括$(thing)石质支撑梁$()、$(thing)混凝土支撑梁$()与$(thing)钢质支撑梁$()。最高阶的支撑梁可支撑以水平梁为中心、范围高达$(bold)33 x 13 x 33$()方块的区域！"
+      "text": "除$(thing)木质支撑梁$()外，$(bold)TFG$()还新增了更高阶的支撑梁类型，包括$(thing)石质支撑梁$()、$(thing)混凝土支撑梁$()与$(thing)钢质支撑梁$()。最高阶的支撑梁可支撑以水平梁为中心、范围高达$(bold)33 x 13 x 33$()方块的区域！",
+      "title": "凿制"
     },
     {
       "type": "patchouli:text",

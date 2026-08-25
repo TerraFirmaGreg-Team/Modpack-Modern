@@ -1,5 +1,4 @@
 {
-	"__comment__": "This file was automatically created by mcresources",
 	"name": "農作物",
 	"category": "tfc:mechanics",
 	"icon": "tfc:textures/item/food/wheat.png",
@@ -14,8 +13,8 @@
 		},
 		{
 			"type": "patchouli:text",
-			"title": "目錄",
-			"text": "$(li)$(l:tfc:mechanics/crops#barley)大麥$()\n$(li)$(l:tfc:mechanics/crops#beet)甜菜$()\n$(li)$(l:tfc:mechanics/crops#cabbage)高麗菜$()\n$(li)$(l:tfc:mechanics/crops#canola)油菜$()\n$(li)$(l:tfc:mechanics/crops#carrot)胡蘿蔔$()\n$(li)$(l:tfc:mechanics/crops#cucumber)黄瓜$()\n$(li)$(l:tfc:mechanics/crops#flax)亞麻$()\n$(li)$(l:tfc:mechanics/crops#garlic)大蒜$()\n$(li)$(l:tfc:mechanics/crops#green_bean)四季豆$()\n$(li)$(l:tfc:mechanics/crops#jute)黄麻$()\n$(li)$(l:tfc:mechanics/crops#lentil)扁豆$()\n$(li)$(l:tfc:mechanics/crops#maize)玉米$()\n$(li)$(l:tfc:mechanics/crops#melon)西瓜$()"
+			"text": "$(li)$(l:tfc:mechanics/crops#barley)大麥$()\n$(li)$(l:tfc:mechanics/crops#beet)甜菜$()\n$(li)$(l:tfc:mechanics/crops#cabbage)高麗菜$()\n$(li)$(l:tfc:mechanics/crops#canola)油菜$()\n$(li)$(l:tfc:mechanics/crops#carrot)胡蘿蔔$()\n$(li)$(l:tfc:mechanics/crops#cucumber)黄瓜$()\n$(li)$(l:tfc:mechanics/crops#flax)亞麻$()\n$(li)$(l:tfc:mechanics/crops#garlic)大蒜$()\n$(li)$(l:tfc:mechanics/crops#green_bean)四季豆$()\n$(li)$(l:tfc:mechanics/crops#jute)黄麻$()\n$(li)$(l:tfc:mechanics/crops#lentil)扁豆$()\n$(li)$(l:tfc:mechanics/crops#maize)玉米$()\n$(li)$(l:tfc:mechanics/crops#melon)西瓜$()",
+			"title": "目錄"
 		},
 		{
 			"type": "patchouli:text",
@@ -23,15 +22,16 @@
 		},
 		{
 			"type": "tfc:rock_knapping_recipe",
+			"text": "首先，如上圖$(thing)打製石器$()製作$(thing)石鋤$()。",
+			"title": "種植作物",
 			"recipes": [
 				"tfg:rock_knapping/stone_hoe_head_1"
-			],
-			"text": "首先，如上圖$(thing)打製石器$()製作$(thing)石鋤$()。"
+			]
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "gtceu:shaped/hoe_stone",
-			"text": "鋤頭打製成型後，即可製成鋤頭。$(br2)鋤頭的功能與原版相同，右鍵泥土即可將其變成$(thing)耕地$()。也可以將$(thing)纏根土$()變成$(thing)泥土$()。"
+			"text": "鋤頭打製成型後，即可製成鋤頭。$(br2)鋤頭的功能與原版相同，右鍵泥土即可將其變成$(thing)耕地$()。也可以將$(thing)纏根土$()變成$(thing)泥土$()。",
+			"recipe": "gtceu:shaped/hoe_stone"
 		},
 		{
 			"type": "patchouli:text",
@@ -632,7 +632,7 @@
 		},
 		{
 			"type": "tfc:multimultiblock",
-			"text": "",
+			"text": "Note: in order to grow, the rice block must be $(thing)Waterlogged$().",
 			"multiblocks": [
 				{
 					"pattern": [
@@ -1253,7 +1253,7 @@
 		},
 		{
 			"type": "tfc:multimultiblock",
-			"text": "",
+			"text": "The stick is required in order for the crop to fully grow.",
 			"multiblocks": [
 				{
 					"pattern": [
@@ -2677,7 +2677,7 @@
 		},
 		{
 			"type": "tfc:multimultiblock",
-			"text": "",
+			"text": "The stick is required in order for the crop to fully grow.",
 			"multiblocks": [
 				{
 					"pattern": [

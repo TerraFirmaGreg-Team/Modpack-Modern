@@ -5,9 +5,9 @@
     "pages": [
         {
             "type": "patchouli:text",
+            "text": "$(li)$(bold)$(l:getting_started/food_and_water#basics)Basics$()$(li)$(bold)$(l:getting_started/food_and_water#thirst)Thirst$()$(li)$(bold)$(l:getting_started/food_and_water#nutrition_screen)The Nutrition Screen$()$(li)$(bold)$(l:getting_started/food_and_water#nutrients)Nutrients$()$(li2)$(l:getting_started/food_and_water#fruit)Fruit$()$(li2)$(l:getting_started/food_and_water#vegetables)Vegetables$()$(li2)$(l:getting_started/food_and_water#protein)Protein$()$(li2)$(l:getting_started/food_and_water#grain)Grain$()$(li2)$(l:getting_started/food_and_water#dairy)Dairy$()$(li)$(bold)$(l:getting_started/food_and_water#contaminants)Contaminants$()$(li2)$(l:getting_started/food_and_water#toxins)Toxins$()$(li2)$(l:getting_started/food_and_water#parasites)Parasites$()$(li2)$(l:getting_started/food_and_water#microplastics)Microplastics$()",
             "title": "Index",
-            "anchor": "index",
-            "text": "$(li)$(bold)$(l:getting_started/food_and_water#basics)Basics$()$(li)$(bold)$(l:getting_started/food_and_water#thirst)Thirst$()$(li)$(bold)$(l:getting_started/food_and_water#nutrition_screen)The Nutrition Screen$()$(li)$(bold)$(l:getting_started/food_and_water#nutrients)Nutrients$()$(li2)$(l:getting_started/food_and_water#fruit)Fruit$()$(li2)$(l:getting_started/food_and_water#vegetables)Vegetables$()$(li2)$(l:getting_started/food_and_water#protein)Protein$()$(li2)$(l:getting_started/food_and_water#grain)Grain$()$(li2)$(l:getting_started/food_and_water#dairy)Dairy$()$(li)$(bold)$(l:getting_started/food_and_water#contaminants)Contaminants$()$(li2)$(l:getting_started/food_and_water#toxins)Toxins$()$(li2)$(l:getting_started/food_and_water#parasites)Parasites$()$(li2)$(l:getting_started/food_and_water#microplastics)Microplastics$()"
+            "anchor": "index"
         },
         {
             "type": "patchouli:text",
@@ -15,9 +15,9 @@
         },
         {
             "type": "patchouli:text",
+            "text": "In TerraFirmaCraft, not only must you manage your hunger, but you must manage your thirst. Hunger works similar to vanilla. Most pieces of food restore about a fifth of your hunger bar. Some pieces of food may restore a bit less, such as $(thing)Cattail Roots$(). Eating food also restores $(thing)Saturation$(), which can be thought of as how full you are. Depleting food or water results in sluggish movement and taking damage. Dying does not reset your nutrients or contaminants.",
             "title": "Basics",
-            "anchor": "basics",
-            "text": "In TerraFirmaCraft, not only must you manage your hunger, but you must manage your thirst. Hunger works similar to vanilla. Most pieces of food restore about a fifth of your hunger bar. Some pieces of food may restore a bit less, such as $(thing)Cattail Roots$(). Eating food also restores $(thing)Saturation$(), which can be thought of as how full you are. Depleting food or water results in sluggish movement and taking damage. Dying does not reset your nutrients or contaminants."
+            "anchor": "basics"
         },
         {
             "type": "patchouli:text",
@@ -29,16 +29,18 @@
         },
         {
             "type": "patchouli:text",
-            "text": "A food tooltip may look like:$(br2)$(bold)Orange$()$(br)  $(2)$(bold)Expires on: 11:59 July 6, 1004 (in 1 month(s) and 1 day(s))$()$(br)  $(8)Nutrition:$(br)  - Saturation: 2%$(br)  - Water: 10%$(br)$(a)  - Fruit: 0.5"
+            "text": "A food tooltip may look like:$(br2)$(bold)Orange$()$(br)  $(2)$(bold)Expires on: 11:59 July 6, 1004 (in 1 month(s) and 1 day(s))$()$(br)  $(8)Nutrition:$(br)  - Saturation: 2%$(br)  - Water: 10%$(br)$(a)  - Fruit: 0.5",
+            "title": "Nutrients"
         },
         {
             "type": "patchouli:text",
-            "anchor": "thirst",
             "text": "Thirst is the level of water in your body. It depletes at a similar rate to hunger. At high temperatures or levels of high hunger usage, your thirst will deplete faster. Luckily, drinking $(thing)Fresh Water$() replenishes thirst. This can be done by clicking $(item)$(k:key.use)$() on a water block. Drinking saltwater causes you to lose thirst, and even has a chance of giving you the $(thing)Thirst$() effect, which will drain you even more.",
+            "anchor": "thirst",
             "title": "Durst"
         },
         {
             "type": "patchouli:multiblock",
+            "text": "To avoid saltwater or muddy water, look for rivers, lakes, and freshwater plants like $(thing)Cattails$().",
             "multiblock": {
                 "pattern": [
                     [
@@ -57,30 +59,31 @@
                 }
             },
             "name": "Water Safety",
-            "text": "To avoid saltwater or muddy water, look for rivers, lakes, and freshwater plants like $(thing)Cattails$().",
             "enable_visualize": false
         },
         {
             "type": "tfc:knapping_recipe",
-            "recipe": "tfc:clay_knapping/jug",
-            "text": "$(l:getting_started/pottery)Knapping$() and firing a $(l:getting_started/pottery#jug)jug$() is a way to carry water with you. Fill it like a bucket with $(item)$(k:key.use)$(). Holding $(item)$(k:key.use)$() drinks the water."
+            "text": "$(l:getting_started/pottery)Knapping$() and firing a $(l:getting_started/pottery#jug)jug$() is a way to carry water with you. Fill it like a bucket with $(item)$(k:key.use)$(). Holding $(item)$(k:key.use)$() drinks the water.",
+            "title": "Durst",
+            "recipe": "tfc:clay_knapping/jug"
         },
         {
             "type": "patchouli:text",
+            "name": "Water Safety",
             "text": "You can also drink out of other containers such as $(l:waterflasks)Flasks$() or $(l:mechanics/glassworking)Glass Bottles$(). Read more about drinking containers and drink effects $(l:mechanics/drinks#containers)Here$()"
         },
         {
             "type": "patchouli:text",
-            "anchor": "nutrition_screen",
             "text": "In $(bold)$(#ff0fb7)TerraFirma$()$()$(bold)$(#595959)Greg$()$() the nutrition screen displays vast information about your health. $(li)There is a main graph displaying your $(l:getting_started/food_and_water#nutrients)Nutrients$()$()$(li)A side graph showing your $(l:getting_started/food_and_water#contaminants)Contaminants$()$()$(li)A table displaying your health stats.$()$(li)And a toggleable view for checking on your teams nutrition.$()$(br)$(item)Hold-$(k:key.sneak)$() over an element on the screen to view more information.$()",
+            "anchor": "nutrition_screen",
             "title": "Nutrition Screen"
         },
         {
             "type": "patchouli:image",
+            "text": "The nutrition screen, with graphs showing the levels of each nutrient.",
             "images": [
                 "tfg:textures/gui/field_guide/nutrition/tfg_nutrition_screen.png"
             ],
-            "text": "The nutrition screen, with graphs showing the levels of each nutrient.",
             "border": false
         },
         {

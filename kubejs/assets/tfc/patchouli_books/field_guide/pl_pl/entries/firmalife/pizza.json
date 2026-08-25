@@ -1,5 +1,4 @@
 {
-  "__comment__": "This file was automatically created by mcresources",
   "name": "Pizza",
   "category": "tfc:firmalife",
   "icon": "firmalife:textures/item/food/cooked_pizza.png",
@@ -12,7 +11,7 @@
       "type": "patchouli:crafting",
       "anchor": "shredded_cheese",
       "recipe": "firmalife:crafting/shredded_cheese",
-      "text": "You'll need some shredded cheese to start with."
+      "text": "Na początek potrzebujesz trochę rozdrobnionego sera."
     },
     {
       "type": "patchouli:text",

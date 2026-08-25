@@ -1,40 +1,39 @@
 {
-  "__comment__": "This file was automatically created by mcresources",
   "name": "Séchage",
   "category": "tfc:firmalife",
   "icon": "firmalife:drying_mat",
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "The $(thing)Drying Mat$() is used to dry items. It is made with $(thing)Fruit Leaves$(), which are obtained from breaking the leaves of $(thing)Fruit Trees$()."
+      "text": "La $(thing)Natte de séchage$() sert à sécher des items. Elle est fabriquée à partir de $(thing)Feuilles d'arbre fruitier$(), obtenues en cassant le $(thing) bloc correspondant$()."
     },
     {
       "type": "patchouli:crafting",
       "recipe": "firmalife:crafting/drying_mat",
-      "text": "The recipe for the drying mat."
+      "text": "La recette de la natte de séchage."
     },
     {
       "type": "patchouli:text",
-      "text": "To use the drying mat, place it out on the sun and add an item to it with $(item)$(k:key.use)$(). After a half day, it will be dried. If it rains, the drying process must start over."
+      "text": "Pour utiliser la natte de séchage, placez-la au soleil et posez un item dessus avec $(item)$(k:key.use)$(). Cet item sera sec au bout d'une demi-journée. S'il pleut, ce processus doit repartir de zéro."
     },
     {
       "type": "patchouli:crafting",
       "recipe": "firmalife:crafting/solar_drier",
-      "text": "The solar drier functions the same as the drying mat, but 12x as fast."
+      "text": "Le séchoir solaire fonctionne de manière identique à la natte de séchage mais est 12x plus rapide."
     },
     {
       "type": "patchouli:text",
-      "text": "Drying mats can be automated. Pushing a piston head against a drying mat will pop the item off. Dropping an item onto a drying mat will place it on the mat."
+      "text": "Les nattes de séchages peuvent être automatisées. Pousser une tête de piston contre la natte en fera tomber l'objet. Faire tomber un objet sur la natte le placera dessus."
     },
     {
       "type": "tfc:drying_recipe",
       "recipe": "firmalife:drying/drying_fruit",
-      "text": "Drying fruit is a common use of the drying mat. Dried fruit is used in some recipes, and lasts longer."
+      "text": "Le séchage des fruits est une utilisation courante de la natte de séchage. Les fruits secs sont utilisés dans certaines recettes et durent plus longtemps."
     },
     {
       "type": "tfc:drying_recipe",
       "recipe": "firmalife:drying/tofu",
-      "text": "Tofu is made using a drying mat."
+      "text": "Le tofu est fabriqué grâce à une natte de séchage."
     }
   ],
   "read_by_default": true,

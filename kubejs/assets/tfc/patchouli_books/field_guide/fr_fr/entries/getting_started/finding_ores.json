@@ -1,5 +1,4 @@
 {
-  "__comment__": "This file was automatically created by mcresources",
   "name": "Minerais, Métal, et Moulage",
   "category": "tfc:getting_started",
   "icon": "tfc:ore/normal_native_copper",
@@ -54,13 +53,13 @@
     },
     {
       "type": "patchouli:text",
-      "text": "$(li)Cuivre natifr ($(thing)Cuivre$())$(li)Or natif ($(thing)Or$())$(li)Hématite ($(thing)Fonte$())$(li)Argent natif($(thing)Argent$())$(li)Cassitérite ($(thing)Étain$())$(li)Bismuthinite ($(thing)Bismuth$())$(li)Garniérite ($(thing)Nickel$())$(li)Malachite ($(thing)Cuivre$())$(li)Magnétite ($(thing)Fonte$())$(li)Limonite ($(thing)Fonte$())$(li)Sphalérite ($(thing)Zinc$())$(li)Tetrahédrite ($(thing)Cuivre$())",
+      "text": "$(li)Cuivre natif ($(thing)Cuivre$())$(li)Or natif ($(thing)Or$())$(li)Hématite ($(thing)Fonte$())$(li)Argent natif($(thing)Argent$())$(li)Cassitérite ($(thing)Étain$())$(li)Bismuthinite ($(thing)Bismuth$())$(li)Garniérite ($(thing)Nickel$())$(li)Malachite ($(thing)Cuivre$())$(li)Magnétite ($(thing)Fonte$())$(li)Limonite ($(thing)Fonte$())$(li)Sphalérite ($(thing)Zinc$())$(li)Tétraédrite ($(thing)Cuivre$())",
       "title": "Morceaux de minerai"
     },
     {
       "type": "patchouli:text",
       "anchor": "casting",
-      "text": "Dans TerraFirmaCraft, les minerais contienne un certain nombre d'$(thing)unités$(), ou $(thing)mB (\"millibuckets\", milliseaux en français)$() de métal qui peut effectivement être extrait. Les morceaux de minerai comme ceux trouvés à la surface sont de la plus basse qualité, et ne donne que $(thing)16 mB$() de métal. Afin d'extraire ce métal, il doivent être $(thing)fondus$() et transformés en outils grâce au $(thing)moulage$().",
+      "text": "Dans TerraFirmaCraft, les minerais contiennent un certain nombre d'$(thing)unités$(), ou $(thing)mB (\"millibuckets\", milliseaux en français)$() de métal qui peut effectivement être extrait. Les morceaux de minerai comme ceux trouvés à la surface sont de la plus basse qualité, et ne donne que $(thing)16 mB$() de métal. Afin d'extraire ce métal, il doivent être $(thing)fondus$() et transformés en outils grâce au $(thing)moulage$().",
       "title": "Moulage"
     },
     {
@@ -73,15 +72,15 @@
     },
     {
       "type": "patchouli:crafting",
-      "recipe": "tfchotornot:crafting/tongs/wood",
-      "text": "Attention, le récipient sera brûlant ! Fabriquez des $(thing)Pinces en bois$() avec deux bâtons et un couteau et placez-les dans votre main secondaire afin de manipuler le récipient en toute sécurité."
+      "text": "Attention, le récipient sera brûlant ! Fabriquez des $(thing)Pinces en bois$() avec deux bâtons et un couteau et placez-les dans votre main secondaire afin de manipuler le récipient en toute sécurité.",
+      "recipe": "tfchotornot:crafting/tongs/wood"
     },
     {
       "type": "patchouli:image",
+      "text": "Tenez le récipient et utilisez $(item)$(k:key.use)$() pour ouvrir l'interface de $(thing)Moulage$().",
       "images": [
         "tfc:textures/gui/book/gui/casting.png"
       ],
-      "text": "Tenez le récipient et utilisez $(item)$(k:key.use)$() pour ouvrir l'interface de $(thing)Moulage$().",
       "border": false
     },
     {

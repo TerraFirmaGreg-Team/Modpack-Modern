@@ -1,0 +1,13 @@
+{
+	"carryon.category.blacklist": "Чёрный список",
+	"carryon.category.custompickupconditions": "Индивидуальные условия поднятия (Улучшенное)",
+	"carryon.category.custompickupconditions.custompickupconditionsblocks": "Пользовательские условия поднятия блока",
+	"carryon.category.custompickupconditions.custompickupconditionsentities": "Пользовательские условия поднятия сущности",
+	"carryon.category.modeloverrides": "Переопределения модели (Улучшенное)",
+	"carryon.category.settings": "Настройки",
+	"carryon.category.whitelist": "Белый список",
+	"carryon.general.blacklist.forbiddenentities": "Сущности, которых игрок не может поднять",
+	"carryon.general.blacklist.forbiddentiles": "Блоки, которые игрок не может поднять",
+	"carryon.general.modeloverrides.modeloverrides": "Переопределения модели",
+	"key.carry.desc": "Поднять"
+}

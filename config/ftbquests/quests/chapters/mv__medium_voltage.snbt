@@ -1681,6 +1681,12 @@
 					optional_task: true
 					type: "item"
 				}
+				{
+					id: "44DDD538CDEC7010"
+					item: "tfg:generators/stainless_steel_combustion_engine"
+					optional_task: true
+					type: "item"
+				}
 			]
 			title: "{quests.medium_voltage.stainless_greate.title}"
 			x: -1.0d

@@ -3,168 +3,294 @@
 
 function registerTFCTextileRecipes(event) {
 
-	event.shapeless('tfc:large_raw_hide', ['tfc_textile:crocodile_leather', '#forge:tools/knives'])
+	// Cloth
 
-	event.replaceInput({ id: 'tfc_textile:clothing/crocodile/crocodile_hat' }, 'tfcambiental:burlap_cowl', ['tfcambiental:burlap_cowl', 'tfcambiental:silk_cowl', 'tfc_textile:linen_hat'])
-	event.replaceInput({ id: 'tfc_textile:clothing/crocodile/crocodile_shirt' }, 'tfcambiental:burlap_shirt', ['tfcambiental:burlap_shirt', 'tfcambiental:silk_shirt', 'tfc_textile:linen_shirt'])
-	event.replaceInput({ id: 'tfc_textile:clothing/crocodile/crocodile_pants' }, 'tfcambiental:burlap_pants', ['tfcambiental:burlap_pants', 'tfcambiental:silk_pants', 'tfc_textile:linen_pants'])
-	event.replaceInput({ id: 'tfc_textile:clothing/crocodile/crocodile_boots' }, 'tfcambiental:burlap_shoes', ['tfcambiental:burlap_shoes', 'tfcambiental:silk_shoes', 'tfc_textile:linen_socks'])
+	const cloths = [
+		{ name: "phantom_silk", material: "tfg:phantom_silk" },
+		{ name: "linen", material: "tfg:linen_cloth" },
+		{ name: "cotton", material: "tfc_textile:cotton_cloth" }
+	]
 
-	event.shaped('tfc_textile:caribou_hat', [
+	cloths.forEach(cloth => {
+
+		event.shaped(`tfc_textile:${cloth.name}_hat`, [
+			"AAA",
+			"A A",
+			"   "
+		], {
+			A: cloth.material
+		}).id(`tfg:shaped/${cloth.name}_hat`)
+
+		event.shaped(`tfc_textile:${cloth.name}_shirt`, [
+			"A A",
+			"AAA",
+			"AAA"
+		], {
+			A: cloth.material
+		}).id(`tfg:shaped/${cloth.name}_shirt`)
+
+		event.shaped(`tfc_textile:${cloth.name}_pants`, [
+			"AAA",
+			"A A",
+			"A A"
+		], {
+			A: cloth.material
+		}).id(`tfg:shaped/${cloth.name}_pants`)
+
+		event.shaped(`tfc_textile:${cloth.name}_socks`, [
+			"   ",
+			"A A",
+			"A A"
+		], {
+			A: cloth.material
+		}).id(`tfg:shaped/${cloth.name}_socks`)
+	})
+
+	// Animal clothes
+
+	// Cooling
+
+	const cooling_hides = [
+		{ animal: "crocodile", material: "tfc_textile:crocodile_leather" },
+		{ animal: "lion", material: "tfc_textile:lion_fur" },
+		{ animal: "tiger", material: "tfc_textile:tiger_fur" }
+	]
+
+	cooling_hides.forEach(hide => {
+		event.shaped(`tfc_textile:${hide.animal}_hat`, [
+			'ABA',
+			'ACA',
+			'   '
+		], {
+			A: '#forge:string',
+			B: hide.material,
+			C: ['tfcambiental:burlap_cowl', 'tfcambiental:silk_cowl', 'tfc_textile:linen_hat']
+		}).id(`tfg:shaped/${hide.animal}_hat`)
+
+		event.shaped(`tfc_textile:${hide.animal}_shirt`, [
+			'A A',
+			'ACA',
+			'ABA'
+		], {
+			A: '#forge:string',
+			B: hide.material,
+			C: ['tfcambiental:burlap_shirt', 'tfcambiental:silk_shirt', 'tfc_textile:linen_shirt']
+		}).id(`tfg:shaped/${hide.animal}_shirt`)
+
+		event.shaped(`tfc_textile:${hide.animal}_pants`, [
+			'ABA',
+			'ACA',
+			'A A'
+		], {
+			A: '#forge:string',
+			B: hide.material,
+			C: ['tfcambiental:burlap_pants', 'tfcambiental:silk_pants', 'tfc_textile:linen_pants']
+		}).id(`tfg:shaped/${hide.animal}_pants`)
+
+		event.shaped(`tfc_textile:${hide.animal}_boots`, [
+			'ACA',
+			'ABA',
+			'   '
+		], {
+			A: '#forge:string',
+			B: hide.material,
+			C: ['tfcambiental:burlap_shoes', 'tfcambiental:silk_shoes', 'tfc_textile:linen_socks']
+		}).id(`tfg:shaped/${hide.animal}_boots`)
+	})
+
+	// Warming
+
+	const warming_hides = [
+		"direwolf",
+		"panther",
+		"cougar",
+		"black_bear",
+		"grizzly_bear"
+	];
+
+	warming_hides.forEach(hide => {
+		event.shaped(`tfc_textile:${hide}_hat`, [
+			'ABA',
+			'ACA',
+			'   '
+		], {
+			A: '#forge:string',
+			B: `tfc_textile:${hide}_fur`,
+			C: ['tfcambiental:wool_hat', 'tfc_textile:cotton_hat']
+		}).id(`tfg:shaped/${hide}_hat`)
+
+		event.shaped(`tfc_textile:${hide}_shirt`, [
+			'A A',
+			'ACA',
+			'ABA'
+		], {
+			A: '#forge:string',
+			B: `tfc_textile:${hide}_fur`,
+			C: ['tfcambiental:wool_sweater', 'tfc_textile:cotton_shirt']
+		}).id(`tfg:shaped/${hide}_shirt`)
+
+		event.shaped(`tfc_textile:${hide}_pants`, [
+			'ABA',
+			'ACA',
+			'A A'
+		], {
+			A: '#forge:string',
+			B: `tfc_textile:${hide}_fur`,
+			C: ['tfcambiental:wool_pants', 'tfc_textile:cotton_pants']
+		}).id(`tfg:shaped/${hide}_pants`)
+
+		event.shaped(`tfc_textile:${hide}_boots`, [
+			'ACA',
+			'ABA',
+			'   '
+		], {
+			A: '#forge:string',
+			B: `tfc_textile:${hide}_fur`,
+			C: ['tfcambiental:wool_boots', 'tfc_textile:cotton_socks']
+		}).id(`tfg:shaped/${hide}_boots`)
+	})
+
+	const very_warming_hides = [
+		"caribou",
+		"sabertooth",
+		"polar_bear"
+	];
+
+	very_warming_hides.forEach(hide => {
+		event.shaped(`tfc_textile:${hide}_hat`, [
+			'ABA',
+			'ACA',
+			'DDD'
+		], {
+			A: '#forge:string',
+			B: `tfc_textile:${hide}_fur`,
+			C: ['tfcambiental:wool_hat', 'tfc_textile:cotton_hat'],
+			D: ['minecraft:feather', 'tfg:wraptor_wool', 'wan_ancient_beasts:glider_feather']
+		}).id(`tfg:shaped/${hide}_hat`)
+
+		event.shaped(`tfc_textile:${hide}_shirt`, [
+			'ADA',
+			'DCD',
+			'ABA'
+		], {
+			A: '#forge:string',
+			B: `tfc_textile:${hide}_fur`,
+			C: ['tfcambiental:wool_sweater', 'tfc_textile:cotton_shirt'],
+			D: ['minecraft:feather', 'tfg:wraptor_wool', 'wan_ancient_beasts:glider_feather']
+		}).id(`tfg:shaped/${hide}_shirt`)
+
+		event.shaped(`tfc_textile:${hide}_pants`, [
+			'ABA',
+			'DCD',
+			'ADA'
+		], {
+			A: '#forge:string',
+			B: `tfc_textile:${hide}_fur`,
+			C: ['tfcambiental:wool_pants', 'tfc_textile:cotton_pants'],
+			D: ['minecraft:feather', 'tfg:wraptor_wool', 'wan_ancient_beasts:glider_feather']
+		}).id(`tfg:shaped/${hide}_pants`)
+
+		event.shaped(`tfc_textile:${hide}_boots`, [
+			'ACA',
+			'ABA',
+			'DDD'
+		], {
+			A: '#forge:string',
+			B: `tfc_textile:${hide}_fur`,
+			C: ['tfcambiental:wool_boots', 'tfc_textile:cotton_socks'],
+			D: ['minecraft:feather', 'tfg:wraptor_wool', 'wan_ancient_beasts:glider_feather']
+		}).id(`tfg:shaped/${hide}_boots`)
+	})
+
+
+	// Red elk
+
+	event.shaped(`tfc_textile:red_elk_hat`, [
 		'ABA',
 		'ACA',
 		' D '
 	], {
 		A: '#forge:string',
-		B: 'tfc_textile:caribou_fur',
-		C: 'tfcambiental:wool_hat',
-		D: 'tfcambiental:insulated_leather_hat'
-	}).id('tfc_textile:clothing/caribou/caribou_hat')
+		B: 'beneath:cursed_hide',
+		C: 'tfc_textile:phantom_silk_hat',
+		D: ['species:werefang', 'species:ghoul_tongue']
+	}).id(`tfg:shaped/red_elk_hat`)
 
-	event.shaped('tfc_textile:caribou_shirt', [
+	event.shaped(`tfc_textile:red_elk_shirt`, [
+		'ADA',
+		'ACA',
+		'ABA'
+	], {
+		A: '#forge:string',
+		B: 'beneath:cursed_hide',
+		C: 'tfc_textile:phantom_silk_shirt',
+		D: ['species:werefang', 'species:ghoul_tongue']
+	}).id(`tfg:shaped/red_elk_shirt`)
+
+	event.shaped(`tfc_textile:red_elk_pants`, [
 		'ABA',
 		'ACA',
 		'ADA'
 	], {
 		A: '#forge:string',
-		B: 'tfc_textile:caribou_fur',
-		C: 'tfcambiental:wool_sweater',
-		D: 'tfcambiental:insulated_leather_tunic'
-	}).id('tfc_textile:clothing/caribou/caribou_shirt')
+		B: 'beneath:cursed_hide',
+		C: 'tfc_textile:phantom_silk_pants',
+		D: ['species:werefang', 'species:ghoul_tongue']
+	}).id(`tfg:shaped/red_elk_pants`)
 
-	event.shaped('tfc_textile:caribou_pants', [
-		'ABA',
+	event.shaped(`tfc_textile:red_elk_boots`, [
 		'ACA',
-		'ADA'
-	], {
-		A: '#forge:string',
-		B: 'tfc_textile:caribou_fur',
-		C: 'tfcambiental:wool_pants',
-		D: 'tfcambiental:insulated_leather_pants'
-	}).id('tfc_textile:clothing/caribou/caribou_pants')
-
-	event.shaped('tfc_textile:caribou_boots', [
 		'ABA',
-		'ACA',
 		' D '
 	], {
 		A: '#forge:string',
-		B: 'tfc_textile:caribou_fur',
-		C: 'tfcambiental:wool_boots',
-		D: 'tfcambiental:insulated_leather_boots'
-	}).id('tfc_textile:clothing/caribou/caribou_boots')
+		B: 'beneath:cursed_hide',
+		C: 'tfc_textile:phantom_silk_socks',
+		D: ['species:werefang', 'species:ghoul_tongue']
+	}).id(`tfg:shaped/red_elk_boots`)
 
-	event.shaped('tfc_textile:polar_bear_hat', [
-		'ABA',
-		'ACA',
-		' D '
-	], {
-		A: '#forge:string',
-		B: 'tfc_textile:polar_bear_fur',
-		C: 'tfcambiental:wool_hat',
-		D: 'tfcambiental:insulated_leather_hat'
-	}).id('tfc_textile:clothing/polar_bear/polar_bear_hat')
 
-	event.shaped('tfc_textile:polar_bear_shirt', [
-		'ABA',
-		'ACA',
-		'ADA'
-	], {
-		A: '#forge:string',
-		B: 'tfc_textile:polar_bear_fur',
-		C: 'tfcambiental:wool_sweater',
-		D: 'tfcambiental:insulated_leather_tunic'
-	}).id('tfc_textile:clothing/polar_bear/polar_bear_shirt')
+	// Primitive
 
-	event.shaped('tfc_textile:polar_bear_pants', [
-		'ABA',
-		'ACA',
-		'ADA'
-	], {
-		A: '#forge:string',
-		B: 'tfc_textile:polar_bear_fur',
-		C: 'tfcambiental:wool_pants',
-		D: 'tfcambiental:insulated_leather_pants'
-	}).id('tfc_textile:clothing/polar_bear/polar_bear_pants')
+	event.shapeless('tfc:large_raw_hide', ['#tfc_textile:animal_furs', '#forge:tools/knives'])
+	event.shapeless('tfc:medium_raw_hide', ['species:ghoul_tongue', '#forge:tools/knives'])
 
-	event.shaped('tfc_textile:polar_bear_boots', [
-		'ABA',
-		'ACA',
-		' D '
-	], {
-		A: '#forge:string',
-		B: 'tfc_textile:polar_bear_fur',
-		C: 'tfcambiental:wool_boots',
-		D: 'tfcambiental:insulated_leather_boots'
-	}).id('tfc_textile:clothing/polar_bear/polar_bear_boots')
+	event.shapeless('4x tfc_textile:primitive_insulation', ['tfc:large_raw_hide', '3x tfc:straw'])
+		.id('tfg:shapeless/primitive_insulation_large')
 
-	event.replaceInput({ id: 'tfc_textile:clothing/direwolf/direwolf_hat' }, 'minecraft:leather_helmet', 'tfcambiental:wool_hat')
-	event.replaceInput({ id: 'tfc_textile:clothing/direwolf/direwolf_shirt' }, 'minecraft:leather_chestplate', 'tfcambiental:wool_sweater')
-	event.replaceInput({ id: 'tfc_textile:clothing/direwolf/direwolf_pants' }, 'minecraft:leather_leggings', 'tfcambiental:wool_pants')
-	event.replaceInput({ id: 'tfc_textile:clothing/direwolf/direwolf_boots' }, 'minecraft:leather_boots', 'tfcambiental:wool_boots')
+	event.shapeless('2x tfc_textile:primitive_insulation', ['tfc:medium_raw_hide', '3x tfc:straw'])
+		.id('tfg:shapeless/primitive_insulation_medium')
 
-	event.replaceInput({ id: 'tfc_textile:clothing/cougar/cougar_hat' }, 'minecraft:leather_helmet', 'tfcambiental:insulated_leather_hat')
-	event.replaceInput({ id: 'tfc_textile:clothing/cougar/cougar_shirt' }, 'minecraft:leather_chestplate', 'tfcambiental:insulated_leather_tunic')
-	event.replaceInput({ id: 'tfc_textile:clothing/cougar/cougar_pants' }, 'minecraft:leather_leggings', 'tfcambiental:insulated_leather_pants')
-	event.replaceInput({ id: 'tfc_textile:clothing/cougar/cougar_boots' }, 'minecraft:leather_boots', 'tfcambiental:insulated_leather_boots')
+	event.shapeless('tfc_textile:primitive_insulation', ['tfc:small_raw_hide', '3x tfc:straw'])
+		.id('tfg:shapeless/primitive_insulation_small')
 
-	event.replaceInput({ id: 'tfc_textile:clothing/tiger/tiger_hat' }, 'minecraft:leather_helmet', 'tfcambiental:insulated_leather_hat')
-	event.replaceInput({ id: 'tfc_textile:clothing/tiger/tiger_shirt' }, 'minecraft:leather_chestplate', 'tfcambiental:insulated_leather_tunic')
-	event.replaceInput({ id: 'tfc_textile:clothing/tiger/tiger_pants' }, 'minecraft:leather_leggings', 'tfcambiental:insulated_leather_pants')
-	event.replaceInput({ id: 'tfc_textile:clothing/tiger/tiger_boots' }, 'minecraft:leather_boots', 'tfcambiental:insulated_leather_boots')
+	event.recipes.tfc.knapping("tfc_textile:raw_hat", "tfc_textile:raw_hide", [
+		"XXXXX",
+		"X   X",
+		"X   X"
+	]).outsideSlotRequired(false).id("tfg:knapping/raw_hat")
 
-	event.replaceInput({ id: 'tfc_textile:clothing/panther/panther_hat' }, 'minecraft:leather_helmet', 'tfcambiental:insulated_leather_hat')
-	event.replaceInput({ id: 'tfc_textile:clothing/panther/panther_shirt' }, 'minecraft:leather_chestplate', 'tfcambiental:insulated_leather_tunic')
-	event.replaceInput({ id: 'tfc_textile:clothing/panther/panther_pants' }, 'minecraft:leather_leggings', 'tfcambiental:insulated_leather_pants')
-	event.replaceInput({ id: 'tfc_textile:clothing/panther/panther_boots' }, 'minecraft:leather_boots', 'tfcambiental:insulated_leather_boots')
+	event.recipes.tfc.knapping("tfc_textile:raw_shirt", "tfc_textile:raw_hide", [
+		"X   X",
+		"XXXXX",
+		"XXXXX",
+		"XXXXX",
+		"XXXXX"
+	]).id("tfg:knapping/raw_shirt")
 
-	event.replaceInput({ id: 'tfc_textile:clothing/sabertooth/sabertooth_hat' }, 'minecraft:leather_helmet', 'tfcambiental:insulated_leather_hat')
-	event.replaceInput({ id: 'tfc_textile:clothing/sabertooth/sabertooth_shirt' }, 'minecraft:leather_chestplate', 'tfcambiental:insulated_leather_tunic')
-	event.replaceInput({ id: 'tfc_textile:clothing/sabertooth/sabertooth_pants' }, 'minecraft:leather_leggings', 'tfcambiental:insulated_leather_pants')
-	event.replaceInput({ id: 'tfc_textile:clothing/sabertooth/sabertooth_boots' }, 'minecraft:leather_boots', 'tfcambiental:insulated_leather_boots')
+	event.recipes.tfc.knapping("tfc_textile:raw_pants", "tfc_textile:raw_hide", [
+		"XXXXX",
+		"XXXXX",
+		"XX XX",
+		"XX XX",
+		"XX XX"
+	]).id("tfg:knapping/raw_pants")
 
-	event.replaceInput({ id: 'tfc_textile:clothing/black_bear/black_bear_hat' }, 'minecraft:leather_helmet', 'tfcambiental:insulated_leather_hat')
-	event.replaceInput({ id: 'tfc_textile:clothing/black_bear/black_bear_shirt' }, 'minecraft:leather_chestplate', 'tfcambiental:insulated_leather_tunic')
-	event.replaceInput({ id: 'tfc_textile:clothing/black_bear/black_bear_pants' }, 'minecraft:leather_leggings', 'tfcambiental:insulated_leather_pants')
-	event.replaceInput({ id: 'tfc_textile:clothing/black_bear/black_bear_boots' }, 'minecraft:leather_boots', 'tfcambiental:insulated_leather_boots')
-
-	event.replaceInput({ id: 'tfc_textile:clothing/grizzly_bear/grizzly_bear_hat' }, 'minecraft:leather_helmet', 'tfcambiental:insulated_leather_hat')
-	event.replaceInput({ id: 'tfc_textile:clothing/grizzly_bear/grizzly_bear_shirt' }, 'minecraft:leather_chestplate', 'tfcambiental:insulated_leather_tunic')
-	event.replaceInput({ id: 'tfc_textile:clothing/grizzly_bear/grizzly_bear_pants' }, 'minecraft:leather_leggings', 'tfcambiental:insulated_leather_pants')
-	event.replaceInput({ id: 'tfc_textile:clothing/grizzly_bear/grizzly_bear_boots' }, 'minecraft:leather_boots', 'tfcambiental:insulated_leather_boots')
-
-	event.replaceInput({ id: 'tfc_textile:clothing/lion/lion_hat' }, 'minecraft:leather_helmet', 'tfcambiental:insulated_leather_hat')
-	event.replaceInput({ id: 'tfc_textile:clothing/lion/lion_shirt' }, 'minecraft:leather_chestplate', 'tfcambiental:insulated_leather_tunic')
-	event.replaceInput({ id: 'tfc_textile:clothing/lion/lion_pants' }, 'minecraft:leather_leggings', 'tfcambiental:insulated_leather_pants')
-	event.replaceInput({ id: 'tfc_textile:clothing/lion/lion_boots' }, 'minecraft:leather_boots', 'tfcambiental:insulated_leather_boots')
-
-	event.shaped('tfc_textile:linen_hat', [
-		'AAA',
-		'A A'
-	], {
-		A: 'tfg:linen_cloth'
-	}).id('tfg:shaped/linen_hat')
-		
-	event.shaped('tfc_textile:linen_shirt', [
-		'A A',
-		'AAA',
-		'AAA'
-	], {
-		A: 'tfg:linen_cloth'
-	}).id('tfg:shaped/linen_shirt')
-
-	event.shaped('tfc_textile:linen_pants', [
-		'AAA',
-		'A A',
-		'A A'
-	], {
-		A: 'tfg:linen_cloth'
-	}).id('tfg:shaped/linen_pants')
-
-	event.shaped('tfc_textile:linen_socks', [
-		'A A',
-		'A A'
-	], {
-		A: 'tfg:linen_cloth'
-	}).id('tfg:shaped/linen_socks')
+	event.recipes.tfc.knapping("tfc_textile:raw_socks", "tfc_textile:raw_hide", [
+		"XX   ",
+		"XX   ",
+		"XX   ",
+		"XXXX ",
+		"XXXXX"
+	]).id("tfg:knapping/raw_socks")
 }

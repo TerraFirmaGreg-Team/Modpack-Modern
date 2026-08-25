@@ -149,8 +149,8 @@ function registerTFGBeneathBlockTags(event) {
 	event.add('minecraft:base_stone_nether', "#minecraft:sand");
 	event.add('minecraft:base_stone_nether', "#forge:sandstone");
 
-	event.add('tfc:creeping_plantable_on', '#minecraft:base_stone_nether')
-	event.add('tfc:creeping_stone_plantable_on', '#minecraft:base_stone_nether')
+	event.add('tfc:creeping_plantable_on', '#forge:stone')
+	event.add('tfc:creeping_stone_plantable_on', '#forge:stone')
 	event.add('minecraft:axolotls_spawnable_on', '#minecraft:base_stone_nether')
 	event.add('minecraft:frogs_spawnable_on', '#minecraft:base_stone_nether')
 	event.add('beneath:nether_bush_plantable_on', '#minecraft:base_stone_nether')
@@ -287,6 +287,7 @@ function registerTFGBeneathPlacedFeatures(event) {
 	event.add('tfg:nether_crops', "tfg:nether/crop/cassava");
 	event.add('tfg:nether_crops', "tfg:nether/crop/ghost_pepper");
 	event.add('tfg:nether_crops', "tfg:nether/crop/peanut");
+	event.add('tfg:nether_crops', "tfg:nether/crop/cotton");
 	event.add('tfg:nether_crops', "tfg:nether/crop/magmango");
 	event.add('tfg:nether_crops', "tfg:nether/crop/lavacado");
 

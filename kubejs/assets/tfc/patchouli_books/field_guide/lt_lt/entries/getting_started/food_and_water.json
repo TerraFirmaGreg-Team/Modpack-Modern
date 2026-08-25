@@ -5,9 +5,9 @@
     "pages": [
         {
             "type": "patchouli:text",
+            "text": "$(li)$(bold)$(l:getting_started/food_and_water#basics)Basics$()$(li)$(bold)$(l:getting_started/food_and_water#thirst)Thirst$()$(li)$(bold)$(l:getting_started/food_and_water#nutrition_screen)The Nutrition Screen$()$(li)$(bold)$(l:getting_started/food_and_water#nutrients)Nutrients$()$(li2)$(l:getting_started/food_and_water#fruit)Fruit$()$(li2)$(l:getting_started/food_and_water#vegetables)Vegetables$()$(li2)$(l:getting_started/food_and_water#protein)Protein$()$(li2)$(l:getting_started/food_and_water#grain)Grain$()$(li2)$(l:getting_started/food_and_water#dairy)Dairy$()$(li)$(bold)$(l:getting_started/food_and_water#contaminants)Contaminants$()$(li2)$(l:getting_started/food_and_water#toxins)Toxins$()$(li2)$(l:getting_started/food_and_water#parasites)Parasites$()$(li2)$(l:getting_started/food_and_water#microplastics)Microplastics$()",
             "title": "Index",
-            "anchor": "index",
-            "text": "$(li)$(bold)$(l:getting_started/food_and_water#basics)Basics$()$(li)$(bold)$(l:getting_started/food_and_water#thirst)Thirst$()$(li)$(bold)$(l:getting_started/food_and_water#nutrition_screen)The Nutrition Screen$()$(li)$(bold)$(l:getting_started/food_and_water#nutrients)Nutrients$()$(li2)$(l:getting_started/food_and_water#fruit)Fruit$()$(li2)$(l:getting_started/food_and_water#vegetables)Vegetables$()$(li2)$(l:getting_started/food_and_water#protein)Protein$()$(li2)$(l:getting_started/food_and_water#grain)Grain$()$(li2)$(l:getting_started/food_and_water#dairy)Dairy$()$(li)$(bold)$(l:getting_started/food_and_water#contaminants)Contaminants$()$(li2)$(l:getting_started/food_and_water#toxins)Toxins$()$(li2)$(l:getting_started/food_and_water#parasites)Parasites$()$(li2)$(l:getting_started/food_and_water#microplastics)Microplastics$()"
+            "anchor": "index"
         },
         {
             "type": "patchouli:text",
@@ -15,9 +15,9 @@
         },
         {
             "type": "patchouli:text",
+            "text": "In TerraFirmaCraft, not only must you manage your hunger, but you must manage your thirst. Hunger works similar to vanilla. Most pieces of food restore about a fifth of your hunger bar. Some pieces of food may restore a bit less, such as $(thing)Cattail Roots$(). Eating food also restores $(thing)Saturation$(), which can be thought of as how full you are. Depleting food or water results in sluggish movement and taking damage. Dying does not reset your nutrients or contaminants.",
             "title": "Basics",
-            "anchor": "basics",
-            "text": "In TerraFirmaCraft, not only must you manage your hunger, but you must manage your thirst. Hunger works similar to vanilla. Most pieces of food restore about a fifth of your hunger bar. Some pieces of food may restore a bit less, such as $(thing)Cattail Roots$(). Eating food also restores $(thing)Saturation$(), which can be thought of as how full you are. Depleting food or water results in sluggish movement and taking damage. Dying does not reset your nutrients or contaminants."
+            "anchor": "basics"
         },
         {
             "type": "patchouli:text",
@@ -29,16 +29,18 @@
         },
         {
             "type": "patchouli:text",
-            "text": "A food tooltip may look like:$(br2)$(bold)Orange$()$(br)  $(2)$(bold)Expires on: 11:59 July 6, 1004 (in 1 month(s) and 1 day(s))$()$(br)  $(8)Nutrition:$(br)  - Saturation: 2%$(br)  - Water: 10%$(br)$(a)  - Fruit: 0.5"
+            "text": "A food tooltip may look like:$(br2)$(bold)Orange$()$(br)  $(2)$(bold)Expires on: 11:59 July 6, 1004 (in 1 month(s) and 1 day(s))$()$(br)  $(8)Nutrition:$(br)  - Saturation: 2%$(br)  - Water: 10%$(br)$(a)  - Fruit: 0.5",
+            "title": "Nutrients"
         },
         {
             "type": "patchouli:text",
-            "anchor": "thirst",
             "text": "Thirst is the level of water in your body. It depletes at a similar rate to hunger. At high temperatures or levels of high hunger usage, your thirst will deplete faster. Luckily, drinking $(thing)Fresh Water$() replenishes thirst. This can be done by clicking $(item)$(k:key.use)$() on a water block. Drinking saltwater causes you to lose thirst, and even has a chance of giving you the $(thing)Thirst$() effect, which will drain you even more.",
-            "title": "Thirst"
+            "anchor": "thirst",
+            "title": "Troškulys"
         },
         {
             "type": "patchouli:multiblock",
+            "text": "To avoid saltwater or muddy water, look for rivers, lakes, and freshwater plants like $(thing)Cattails$().",
             "multiblock": {
                 "pattern": [
                     [
@@ -57,30 +59,31 @@
                 }
             },
             "name": "Water Safety",
-            "text": "To avoid saltwater or muddy water, look for rivers, lakes, and freshwater plants like $(thing)Cattails$().",
             "enable_visualize": false
         },
         {
             "type": "tfc:knapping_recipe",
-            "recipe": "tfc:clay_knapping/jug",
-            "text": "$(l:getting_started/pottery)Knapping$() and firing a $(l:getting_started/pottery#jug)jug$() is a way to carry water with you. Fill it like a bucket with $(item)$(k:key.use)$(). Holding $(item)$(k:key.use)$() drinks the water."
+            "text": "$(l:getting_started/pottery)Knapping$() and firing a $(l:getting_started/pottery#jug)jug$() is a way to carry water with you. Fill it like a bucket with $(item)$(k:key.use)$(). Holding $(item)$(k:key.use)$() drinks the water.",
+            "title": "Troškulys",
+            "recipe": "tfc:clay_knapping/jug"
         },
         {
             "type": "patchouli:text",
+            "name": "Water Safety",
             "text": "You can also drink out of other containers such as $(l:waterflasks)Flasks$() or $(l:mechanics/glassworking)Glass Bottles$(). Read more about drinking containers and drink effects $(l:mechanics/drinks#containers)Here$()"
         },
         {
             "type": "patchouli:text",
-            "anchor": "nutrition_screen",
             "text": "In $(bold)$(#ff0fb7)TerraFirma$()$()$(bold)$(#595959)Greg$()$() the nutrition screen displays vast information about your health. $(li)There is a main graph displaying your $(l:getting_started/food_and_water#nutrients)Nutrients$()$()$(li)A side graph showing your $(l:getting_started/food_and_water#contaminants)Contaminants$()$()$(li)A table displaying your health stats.$()$(li)And a toggleable view for checking on your teams nutrition.$()$(br)$(item)Hold-$(k:key.sneak)$() over an element on the screen to view more information.$()",
+            "anchor": "nutrition_screen",
             "title": "Nutrition Screen"
         },
         {
             "type": "patchouli:image",
+            "text": "The nutrition screen, with graphs showing the levels of each nutrient.",
             "images": [
                 "tfg:textures/gui/field_guide/nutrition/tfg_nutrition_screen.png"
             ],
-            "text": "The nutrition screen, with graphs showing the levels of each nutrient.",
             "border": false
         },
         {
@@ -99,31 +102,31 @@
             "text": "$(li)$(bold)Average >85% ↴$()$()$(italic)$(li2)Increase passive health regen by 100%.$()$()$(italic)$(li2)Decreases $(l:tfg_ores/hazards#medicine)Medical Condition$() progression rate by 50%.$()$()$(italic)$(li2)Increase medical condition passive healing rate by 100%.$()$()"
         },
         {
-            "title": "Fruit",
+            "title": "Vaisiai",
             "type": "patchouli:text",
             "anchor": "fruit",
             "text": "$(l)$(a)Fruit$()$() nutrients are mostly found from $(l:the_world/wild_fruits)Fruiting Plants$(), like berry bushes, and fruit trees. A notable exception to this is $(l:mechanics/crops#pumpkin)Pumpkins$() and $(l:mechanics/crops#pumpkin)Melons$(), which nutritionally are fruits.$(br2)Increasing your fruit value gives the following effects:$()$(li)$(bold)Average >55% → $()$()$(italic)Decreases thirst usage by 25%.$()$(li)$(bold)Average >85% → $()$()$(italic)Increases mining speed by 30%.$()"
         },
         {
-            "title": "Vegetables",
+            "title": "Daržovės",
             "type": "patchouli:text",
             "anchor": "vegetables",
             "text": "$(l)$(2)Vegetables$()$() are found in nearly every $(l:mechanics/crops)Crop$().$(br2)Increasing your vegetable value gives the following effects:$()$(li)$(bold)Value >55% → $()$()$(italic)Removes under-water mining penalty.$()$(li)$(bold)Value >85% → $()$()$(italic)Gives the respiration effect.$()"
         },
         {
-            "title": "Protein",
+            "title": "Baltymai",
             "type": "patchouli:text",
             "anchor": "protein",
             "text": "$(l)$(c)Protein$()$() can be sourced from the meat of $(l:the_world/wild_animals)Animals$(). It can also be obtained from some crops like $(thing)legumes$().$(br2)Increasing your protein value gives the following effects:$()$(li)$(bold)Value >55% → $()$()$(italic)Decrease exhaustion multiplier by 25%.$()$(li)$(bold)Value >85% → $()$()$(italic)Allows you to carry an additional huge & heavy item without being $(l:getting_started/size_and_weight#overburdening)Overburdened$() (like a sealed barrel).$()"
         },
         {
-            "title": "Grain",
+            "title": "Grūdų produktai",
             "type": "patchouli:text",
             "anchor": "grain",
             "text": "$(l)$(6)Grain$()$() is found in cereal crops, such as $(l:mechanics/crops#barley)Barley$(). The processing of grain is on the $(l:firmalife/bread)Bread$() page. Some root crops also count as grains.$(br2)Increasing your grain value gives the following effects:$()$(li)$(bold)Value >55% → $()$()$(italic)Gives a 5% speed buff.$()$(li)$(bold)Value >85% → $()$()$(italic)Gives a 15% speed buff.$()"
         },
         {
-            "title": "Dairy",
+            "title": "Pieno produktai",
             "type": "patchouli:text",
             "anchor": "dairy",
             "text": "$(l)$(5)Dairy$()$() comes from $(thing)Milk$(), which is derived from $(l:mechanics/animal_husbandry#dairy_animals)Dairy Animals$(). Processing and drinking milk is covered on the $(l:firmalife/cheese)Dairy$() page.$(br2)Increasing your dairy value gives the following effects:$()$(li)$(bold)Value >55% → $()$()$(italic)Gives the $(thing)Feather Falling I$() effect.$()$(li)$(bold)Value >85% → $()$()$(italic)Gives the $(thing)Feather Falling IV$() effect.$()"

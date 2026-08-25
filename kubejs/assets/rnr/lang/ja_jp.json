@@ -492,7 +492,6 @@
   "fluid.rnr.concrete": "生コンクリート",
   "item.rnr.bucket.concrete": "生コンクリート入りのバケツ",
   "item.rnr.ceramic_roof_tile": "セラミックの屋根瓦",
-  "item.rnr.concrete_powder": "ドライコンクリートミックス",
   "item.rnr.crushed_base_course": "砕石路盤材",
   "item.rnr.flagstone.andesite": "安山岩の敷石",
   "item.rnr.flagstone.basalt": "玄武岩の敷石",
@@ -593,13 +592,11 @@
   "item.rnr.wood.shingle.tualang": "トゥアランの屋根板",
   "item.rnr.wood.shingle.white_cedar": "ホワイトシダーの屋根板",
   "item.rnr.wood.shingle.willow": "ヤナギの屋根板",
-  "rnr.creative_tab.roads_and_roofs": "Roads and Roofs",
   "rnr.jade.will_crack": "乾燥時にひび割れます",
   "rnr.jade.will_not_crack": "ひび割れません",
   "rnr.mattock.bad_fluid": "このブロックをマトックで舗装したものにはここに液体を含むことができない",
   "rnr.mattock.cannot_place": "このブロックをマトックで舗装したものはここには設置できない",
   "rnr.mattock.no_recipe": "このブロックはマトックで舗装できない",
-  "roads_and_roofs": "Roads and Roofs",
   "tfc.jei.block_mod": "ブロック加工",
   "tfc.jei.mattock": "マトック"
 }

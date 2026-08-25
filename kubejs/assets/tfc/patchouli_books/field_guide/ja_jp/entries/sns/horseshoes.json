@@ -1,0 +1,30 @@
+{
+  "name": "蹄鉄",
+  "category": "tfc:sacks_n_such",
+  "icon": "sns:metal/horseshoe/steel",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(item)蹄鉄$()は個別に鍛造され、その後作業台で組み合わせられます。念の為ですが、馬は4本足を持っているんですよ？$(br)$(br)ちなみに、馬には高品質な蹄鉄を装着するのが良いでしょう。通常の安全ピットではうまくいきません！"
+    },
+    {
+      "type": "tfc:sns/better_anvil_recipe",
+      "recipe": "sns:anvil/metal/horseshoe/steel",
+      "recipe2": "sns:anvil/metal/horseshoe/black_steel",
+      "recipe3": "sns:anvil/metal/horseshoe/blue_steel",
+      "recipe4": "sns:anvil/metal/horseshoe/red_steel",
+      "text4": "すべての馬には蹄鉄が必要です"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "sns:crafting/metal/horseshoes/steel",
+      "recipe2": "sns:crafting/metal/horseshoes/black_steel"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "sns:crafting/metal/horseshoes/blue_steel",
+      "recipe2": "sns:crafting/metal/horseshoes/red_steel"
+    }
+  ],
+  "read_by_default": true
+}

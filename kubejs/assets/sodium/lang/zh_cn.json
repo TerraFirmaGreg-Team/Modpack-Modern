@@ -1,0 +1,13 @@
+{
+	"sodium.option_impact.high": "高",
+	"sodium.option_impact.low": "低",
+	"sodium.option_impact.medium": "中",
+	"sodium.options.buttons.apply": "应用",
+	"sodium.options.buttons.undo": "撤销",
+	"sodium.options.leaves_quality.name": "树叶",
+	"sodium.options.pages.advanced": "高级",
+	"sodium.options.translucent_face_sorting.name": "半透明面排序",
+	"sodium.options.translucent_face_sorting.tooltip": "启用后，游戏将正确应用彩色玻璃、水等方块表面的半透明效果。",
+	"sodium.options.use_compact_vertex_format.name": "使用紧凑型顶点格式",
+	"sodium.options.use_compact_vertex_format.tooltip": "启用后，游戏将使用更紧凑的顶点格式来渲染区块。这可以显著减少显存使用和带宽需求，尤其是对于集成显卡而言。但是，由于它降低了位置和纹理坐标属性的精度，可能会导致一些资源包出现深度冲突（z-fighting）的问题。"
+}

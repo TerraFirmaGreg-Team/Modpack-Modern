@@ -1,0 +1,46 @@
+{
+	"credit": "Made by @vexxel with Blockbench - https://github.com/vexxel",
+	"parent": "block/block",
+	"textures": {
+		"0": "firmalife:block/devices/vat/vat_side",
+		"2": "firmalife:block/devices/vat/vat_bottom",
+		"3": "firmalife:block/devices/vat/lid_top",
+		"particle": "firmalife:block/devices/vat/vat_side"
+	},
+	"elements": [
+		{
+			"from": [1, 0, 1],
+			"to": [15, 12, 15],
+			"faces": {
+				"north": {"uv": [1, 4, 15, 16], "texture": "#0"},
+				"east": {"uv": [1, 4, 15, 16], "texture": "#0"},
+				"south": {"uv": [1, 4, 15, 16], "texture": "#0"},
+				"west": {"uv": [1, 4, 15, 16], "texture": "#0"},
+				"down": {"uv": [1, 1, 15, 15], "texture": "#2"}
+			}
+		},
+		{
+			"from": [0, 11, 0],
+			"to": [16, 13, 16],
+			"faces": {
+				"north": {"uv": [0, 2, 16, 4], "texture": "#0"},
+				"east": {"uv": [0, 2, 16, 4], "texture": "#0"},
+				"south": {"uv": [0, 2, 16, 4], "texture": "#0"},
+				"west": {"uv": [0, 2, 16, 4], "texture": "#0"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#3"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#2"}
+			}
+		},
+		{
+			"from": [6, 13, 6],
+			"to": [10, 14, 10],
+			"faces": {
+				"north": {"uv": [6, 10, 10, 11], "texture": "#3"},
+				"east": {"uv": [6, 10, 10, 11], "texture": "#3"},
+				"south": {"uv": [6, 10, 10, 11], "texture": "#3"},
+				"west": {"uv": [6, 10, 10, 11], "texture": "#3"},
+				"up": {"uv": [6, 6, 10, 10], "texture": "#3"}
+			}
+		}
+	]
+}

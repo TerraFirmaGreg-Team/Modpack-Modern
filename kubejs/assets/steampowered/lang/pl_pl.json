@@ -3,6 +3,20 @@
 	"block.steampowered.bronze_steam_engine": "Stalowy silnik parowy",
 	"block.steampowered.cast_iron_flywheel": "Koło zamachowe aluminiowego silnika parowego",
 	"block.steampowered.cast_iron_steam_engine": "Aluminiowy silnik parowy",
+	"block.steampowered.steam": "Para",
+	"block.steampowered.steam_flow": "Para",
+	"block.steampowered.steam_still": "Para",
 	"block.steampowered.steel_flywheel": "Koło zamachowe silnika parowego ze stali nierdzewnej",
-	"block.steampowered.steel_steam_engine": "Silnik parowy ze stali nierdzewnej"
+	"block.steampowered.steel_steam_engine": "Silnik parowy ze stali nierdzewnej",
+	"fluid.steampowered.steam": "Para",
+	"item.steampowered.cast_iron_ingot": "Sztabka żeliwa",
+	"item.steampowered.cast_iron_sheet": "Żeliwna płyta",
+	"item.steampowered.steel_ingot": "Sztabka stali",
+	"item.steampowered.steel_sheet": "Stalowa płyta",
+	"steampowered.ponder.tag.steam": "Para",
+	"tooltip.steampowered.burner.item": "Pozostałe paliwo: %s x %s",
+	"tooltip.steampowered.engine.steamconsume": "Wymaga %s mW/t pary",
+	"tooltip.steampowered.steam_engine.heating": "Status: Rozgrzewa się",
+	"tooltip.steampowered.steam_engine.not_enough_steam": "Status: Za mało pary",
+	"tooltip.steampowered.steam_engine.running": "Status: Działa"
 }

@@ -1,0 +1,50 @@
+{
+    "net.dries007.tfc.client.screen.CalendarScreen": {
+        "playerSideOnly": true
+    },
+    "net.dries007.tfc.client.screen.NutritionScreen": {
+        "playerSideOnly": true,
+        "buttonHints": {
+            "SORT": {
+                "bottom": 66
+            },
+            "SORT_COLUMNS": {
+                "bottom": 66
+            },
+            "SORT_ROWS": {
+                "bottom": 66
+            }
+        }
+    },
+    "net.dries007.tfc.client.screen.ClimateScreen": {
+        "playerSideOnly": true
+    },
+    "net.dries007.tfc.client.screen.FirepitScreen": {
+        "playerSideOnly": true
+    },
+    "net.dries007.tfc.client.screen.GrillScreen": {
+        "playerSideOnly": true
+    },
+    "net.dries007.tfc.client.screen.PotScreen": {
+        "playerSideOnly": true
+    },
+    "net.dries007.tfc.client.screen.CharcoalForgeScreen": {
+        "playerSideOnly": true
+    },
+    "net.dries007.tfc.client.screen.CrucibleScreen": {
+        "ignore": true,
+        "playerSideOnly": true
+    },
+    "net.dries007.tfc.client.screen.PowderkegScreen": {
+        "playerSideOnly": true
+    },
+    "net.dries007.tfc.client.screen.BlastFurnaceScreen": {
+        "playerSideOnly": true
+    },
+    "net.dries007.tfc.client.screen.NestBoxScreen": {
+        "playerSideOnly": true
+    },
+    "net.dries007.tfc.client.screen.LogPileScreen": {
+        "playerSideOnly": true
+    }
+}

@@ -4,5 +4,8 @@
 	"entity.sandworm_mod.worm_chain": "沙虫",
 	"entity.sandworm_mod.worm_head_segment": "沙虫头部",
 	"entity.sandworm_mod.worm_segment": "沙虫躯体",
-	"item.sandworm_mod.sandworm_tooth": "沙虫牙齿"
+	"item.sandworm_mod.sandworm_tooth": "沙虫牙齿",
+	"msg.sandworm_mod.spawn": "§4它来了！！！",
+	"msg.sandworm_mod.stage_1": "§e沙虫感受到了震动...",
+	"msg.sandworm_mod.stage_2": "§c沙虫即将苏醒！"
 }

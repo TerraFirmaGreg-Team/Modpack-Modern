@@ -18,6 +18,7 @@ const registerBeneathRecipes = (event) => {
 	event.remove({ id: 'beneath:crafting/nether_brick' })
 	event.remove({ id: 'beneath:quern/slime' })
 	event.remove({ id: 'beneath:crafting/ancient_altar' })
+	event.remove({ id: 'beneath:crafting/cursed_hide_change' })
 
 	event.shaped('beneath:unposter', [
 		'ABA',

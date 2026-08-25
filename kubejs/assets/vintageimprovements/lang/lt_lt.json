@@ -13,10 +13,18 @@
 	"item.vintageimprovements.ostrum_sheet": "Ostrumo lakštas",
 	"item.vintageimprovements.palladium_sheet": "Paladžio lakštas",
 	"item.vintageimprovements.platinum_sheet": "Platinos lakštas",
+	"item.vintageimprovements.redstone_module": "Raudonakmenio modulis",
 	"item.vintageimprovements.rhodium_sheet": "Rodžio lakštas",
 	"item.vintageimprovements.rose_gold_sheet": "Rožinio aukso lakštas",
 	"item.vintageimprovements.silver_sheet": "Sidabro lakštas",
-	"item.vintageimprovements.vanadium_ingot": "Vanadžio liejinys",
+	"item.vintageimprovements.vanadium_ingot": "Vanadžio luitas",
 	"item.vintageimprovements.vanadium_sheet": "Vanadžio lakštas",
-	"item.vintageimprovements.zinc_sheet": "Cinko lakštas"
+	"item.vintageimprovements.zinc_sheet": "Cinko lakštas",
+	"vintageimprovements.gui.goggles.medium": "Vidutinis",
+	"vintageimprovements.gui.goggles.redstone_module": "Raudonakmenio modulis įdiegtas",
+	"vintageimprovements.jei.text.any": "Bet kuris",
+	"vintageimprovements.jei.text.medium": "Vidutinis",
+	"vintageimprovements.ponder.centrifuge_redstone.text_2": "Jūs turite įdiegti raudonakmenio modulį į centrifugą",
+	"vintageimprovements.recipe.assembly.any": "Bet kuris",
+	"vintageimprovements.recipe.assembly.medium": "Vidutinis"
 }

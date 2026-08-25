@@ -290,26 +290,21 @@
 		}
 		{
 			dependencies: ["32046292AA5B0E30"]
-			description: ["{quests.steam_age.steam_engine.desc}"]
+			description: [
+				"{quests.steam_age.blaze_burner.desc.1}"
+				"{@pagebreak}"
+				"{quests.steam_age.blaze_burner.desc.2}"
+			]
 			id: "183D47F04CAEBFA7"
 			optional: true
 			shape: "heart"
-			subtitle: "{quests.steam_age.steam_engine.subtitle}"
-			tasks: [
-				{
-					id: "704B7094BE2FB3E1"
-					item: "create:steam_engine"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "4655500474F4236C"
-					item: "create:blaze_burner"
-					type: "item"
-				}
-			]
-			title: "{quests.steam_age.steam_engine.title}"
-			x: -4.0d
+			subtitle: "{quests.steam_age.blaze_burner.subtitle}"
+			tasks: [{
+				id: "4655500474F4236C"
+				item: "create:blaze_burner"
+				type: "item"
+			}]
+			x: -6.0d
 			y: -2.0d
 		}
 		{
@@ -1114,10 +1109,10 @@
 					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						"ftbfiltersystem:filter": "or(item(gtceu:bronze_drum)item(gtceu:steel_drum)item(gtceu:aluminium_drum)item(gtceu:stainless_steel_drum)item(gtceu:gold_drum)item(gtceu:titanium_drum)item(gtceu:tungsten_steel_drum))"
+						"ftbfiltersystem:filter": "or(item(gtceu:bronze_drum)item(gtceu:steel_drum)item(gtceu:aluminium_drum)item(gtceu:stainless_steel_drum)item(gtceu:gold_drum)item(gtceu:titanium_drum)item(gtceu:tungsten_steel_drum)item(gtceu:bismuth_bronze_drum)item(gtceu:black_bronze_drum))"
 					}
 				}
-				title: "{quests.tasktype.item.any}"
+				title: "{quests.steam_age.fluid_drums.task}"
 				type: "item"
 			}]
 			title: "{quests.steam_age.fluid_drums.title}"
@@ -1708,22 +1703,6 @@
 			y: 4.0d
 		}
 		{
-			dependencies: ["183D47F04CAEBFA7"]
-			description: ["{quests.steam_age.fuel_sources.desc}"]
-			icon: "createdeco:decal_fire"
-			id: "753A53733C6DFA04"
-			optional: true
-			shape: "circle"
-			subtitle: "{quests.steam_age.fuel_sources.subtitle}"
-			tasks: [{
-				id: "38A3F9A1D2F11EE3"
-				type: "checkmark"
-			}]
-			title: "{quests.steam_age.fuel_sources.title}"
-			x: -6.0d
-			y: -2.0d
-		}
-		{
 			dependencies: ["32046292AA5B0E30"]
 			description: ["{quests.steam_age.large_water_wheel.desc}"]
 			id: "56A068A5488CB273"
@@ -1736,7 +1715,7 @@
 				type: "item"
 			}]
 			title: "{quests.steam_age.large_water_wheel.title}"
-			x: -2.0d
+			x: -4.0d
 			y: -2.0d
 		}
 		{
@@ -2138,6 +2117,22 @@
 			title: "{quests.steam_age.steel_steam_engine.title}"
 			x: -16.5d
 			y: 6.5d
+		}
+		{
+			dependencies: ["5F3063C539C9CBBF"]
+			description: ["{quests.steel_combustion_engine.desc}"]
+			id: "745C46D3CF595600"
+			optional: true
+			shape: "heart"
+			subtitle: "{quests.steel_combustion_engine.subtitle}"
+			tasks: [{
+				id: "33EE294C4D470649"
+				item: "tfg:generators/steel_combustion_engine"
+				type: "item"
+			}]
+			title: "{quests.steel_combustion_engine.title}"
+			x: -11.5d
+			y: 17.0d
 		}
 	]
 	subtitle: ["{quests.steam_age.subtitle}"]

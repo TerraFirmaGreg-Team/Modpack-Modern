@@ -1,6 +1,10 @@
 {
+	"block.createdeco.brass_bars": "Žalvarinis liejinys",
 	"block.createdeco.copper_bars": "Vario luitai",
-	"block.createdeco.copper_trapdoor": "Varinis liukas",
+	"block.createdeco.copper_door": "Varinios Durys",
+	"block.createdeco.copper_trapdoor": "Vario liukas",
 	"block.createdeco.industrial_iron_bars": "Plieno strypai",
-	"block.createdeco.iron_bars": "Kaliosios geležies strypai"
+	"block.createdeco.industrial_iron_trapdoor": "Plieno liukas",
+	"block.createdeco.iron_bars": "Kaliosios geležies strypai",
+	"block.createdeco.iron_trapdoor": "Kaliosios geležies liukas"
 }

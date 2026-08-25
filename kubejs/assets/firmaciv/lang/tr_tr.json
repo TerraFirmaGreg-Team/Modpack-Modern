@@ -1,9 +1,11 @@
 {
-	"east": "East",
+	"block.firmaciv.watercraft_frame_angled": "Eğimli Gemi Yapım İskelesi",
+	"block.firmaciv.watercraft_frame_flat": "Düz Gemi Yapım İskelesi",
+	"eject_passengers": "Yolcuları İndir",
+	"entity.firmaciv.cannon": "Top",
 	"entity.firmaciv.compartment_large_vessel": "Büyük Küp",
-	"firmaciv.advancements.kayak_paddle.title": "Tehlikeli İkili",
+	"entity.firmaciv.compartment_tfc_chest": "Sandık Bölmesi",
+	"item.firmaciv.cannon": "Top",
 	"meters": "Metre",
-	"north": "North",
-	"south": "South",
-	"west": "West"
+	"press_button": "Düğmeye bas"
 }

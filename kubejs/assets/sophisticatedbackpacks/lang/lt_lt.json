@@ -4,5 +4,7 @@
 	"commands.sophisticatedbackpacks.template.give.failure.notpersistent": "Šablonas „%s“ nėra nuolatinis ir negali būti naudojamas su „template give“ komanda",
 	"commands.sophisticatedbackpacks.template.list.delete": "Ištrinti šabloną",
 	"commands.sophisticatedbackpacks.template.list.delete.tooltip": "Spustelėkite, kad ištrintumėte šabloną: %s",
-	"commands.sophisticatedbackpacks.template.list.export": "Eksportuoti šabloną"
+	"commands.sophisticatedbackpacks.template.list.export": "Eksportuoti šabloną",
+	"gui.sophisticatedbackpacks.upgrades.anvil": "Priekalas",
+	"gui.sophisticatedbackpacks.upgrades.anvil.tooltip": "Priekalas"
 }

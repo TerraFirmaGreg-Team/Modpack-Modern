@@ -3,13 +3,10 @@
 function registerTFGFoodItemTags(event) {
 
 	// Crops
-	event.add('tfc:seeds', 'tfg:sunflower_seeds')
-	event.add('tfc:seeds', 'tfg:rapeseed_seeds')
-	event.add('tfc:seeds', 'tfg:flax_seeds')
-
 	event.add('tfc:compost_greens_high', 'tfg:rapeseed_product')
 	event.add('tfc:compost_greens_high', 'tfg:sunflower_product')
 	event.add('tfc:compost_greens_high', 'tfg:flax_product')
+	event.add('tfc:compost_greens_high', 'tfg:cotton_product')
 	event.add('tfc:compost_greens_high', 'tfg:lunar_chorus_flower')
 
 	event.add("tfg:sugars", "minecraft:sugar");
@@ -364,6 +361,9 @@ function registerTFGFoodBlockTags(event) {
 	
 	event.add('tfc:crops', 'tfg:flax')
 	event.add('tfc:mineable_with_sharp_tool', 'tfg:flax')
+	
+	event.add('tfc:crops', 'tfg:cotton')
+	event.add('tfc:mineable_with_sharp_tool', 'tfg:cotton')
 
 	event.add('ad_astra:destroyed_in_space', '#tfc:wild_fruits')
 	event.add('ad_astra:destroyed_in_space', '#minecraft:saplings')

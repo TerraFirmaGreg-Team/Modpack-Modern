@@ -1,0 +1,18 @@
+{
+  "name": "Смесительная чаша",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:mixing_bowl",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Смесительная чаша — это способ смешивания предметов и жидкостей удобным способом. $(item)$(k:key.use)$() на ней с помощью $(thing)ложки$(), чтобы добавить её в чашу, что позволит ей работать."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/mixing_bowl",
+      "text": "Для использования требуется $(thing)ложка$()."
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 18
+}

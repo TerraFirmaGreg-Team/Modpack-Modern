@@ -1,0 +1,46 @@
+{
+  "name": "ボウル",
+  "category": "tfc:mechanics",
+  "icon": "tfc:ceramic/bowl",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)ボウル$()は、多目的なツールであり、$(l:mechanics/salad)サラダ$()や$(l:mechanics/pot)スープ$()の作成、$(l:mechanics/decay#salting)肉の塩漬け$()、または$(thing)粉末$()を$(l:mechanics/glassworking_applications#coloring)ガラス$()に適用して、ガラスの色を変更するために使用できます。$(br2)ボウルは、$(thing)セラミック$()から作ることができ、粘土を加工してボウルを作り、それを焼成します。"
+    },
+    {
+      "type": "tfc:knapping_recipe",
+      "recipe": "tfc:clay_knapping/bowl_4",
+      "text": "1回の加工で複数の未焼成のボウルを作ることができます。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/vanilla/bowl",
+      "title": "木のボウル",
+      "text": "ボウルは$(thing)接着剤$()を使うことで木材からも作れます。$(br2)$(thing)接着剤$()は、$(thing)骨粉$()を$(l:mechanics/barrels#limewater)石灰水$()入りの樽に浸すことで作成できます。"
+    },
+    {
+      "type": "tfc:sealed_barrel_recipe",
+      "recipe": "tfc:barrel/glue",
+      "text": "ボウルはブロックのように地面に置くこともできます。設置すると、$(l:mechanics/quern)石臼$()で鉱石、鉱物、または宝石を粉砕した$(thing)粉末$()を入れられます。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "tag:tfc:powders",
+      "title": "粉末",
+      "link_recipes": false,
+      "text": "粉末入りのボウルは、指定された粉末を最大16個まで保持できます。粉末を入れるには、粉末を持ちながら$(item)$(k:key.use)$()を押します。アイテムを取り出すには、空の手で$(item)$(k:key.use)$()を押します。$(br2)$(item)$(k:key.sneak)$()を押すと、ボウルの中身を全て取り出せます。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "tfc:powder/salt",
+      "link_recipes": false,
+      "text": "ボウルに塩がある場合、生肉をクリックすると肉を塩を付けできます。これはインベントリ内の塩で肉をクラフトするのと同じです。"
+    }
+  ],
+  "read_by_default": true,
+  "extra_recipe_mappings": {
+    "tfc:ceramic/unfired_bowl": 1,
+    "tfc:ceramic/bowl": 1,
+    "minecraft:bowl": 2
+  }
+}

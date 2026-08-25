@@ -2,7 +2,6 @@
 	"name": "Что такое Бездна?",
 	"category": "tfc:beneath",
 	"icon": "minecraft:deepslate",
-	"priority": true,
 	"pages": [
 		{
 			"type": "patchouli:text",
@@ -23,5 +22,6 @@
 			"text": "Чтобы вернуться, станьте прямо под потолком из бедрока таким же образом.$(br2)Хорошей идеей будет $(thing)записать$() место, откуда вы вошли, чтобы потом вернуться в то же самое место в верхнем мире, когда будете готовы выйти."
 		}
 	],
-	"read_by_default": true
+	"read_by_default": true,
+	"priority": true
 }

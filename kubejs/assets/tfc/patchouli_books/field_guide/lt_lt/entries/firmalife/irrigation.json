@@ -10,13 +10,13 @@
 		{
 			"type": "tfc:anvil_recipe",
 			"recipe": "firmalife:anvil/sprinkler",
-			"text": "Purkštuvas yra pagamintas iš $(thing)Vario plokštės$()."
+			"text": "Purkštuvas yra pagamintas iš $(thing)Vario lakšto$()."
 		},
 		{
-			"title": "Vamzdynas",
-			"item": "gtceu:copper_tiny_fluid_pipe",
 			"type": "patchouli:spotlight",
-			"text": "Kad purkštuvai veiktų, juos reikia prijungti prie vamzdžių sistemos, tiekančios jiems vandenį. Tai daroma prijungiant prie jų $(thing)Skystinių vamzdžių$(). Vandenį į juos galima pumpuoti naudojant $(thing)Mechaninį siurblį$()."
+			"text": "Kad purkštuvai veiktų, juos reikia prijungti prie vamzdžių sistemos, tiekančios jiems vandenį. Tai daroma prijungiant prie jų $(thing)Skystinių vamzdžių$(). Vandenį į juos galima pumpuoti naudojant $(thing)Mechaninį siurblį$().",
+			"title": "Vamzdynas",
+			"item": "gtceu:copper_tiny_fluid_pipe"
 		},
 		{
 			"type": "patchouli:text",

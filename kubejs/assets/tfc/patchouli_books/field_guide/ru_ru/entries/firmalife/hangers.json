@@ -1,0 +1,18 @@
+{
+  "name": "Вешалки",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:wood/hanger/pine",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)Вешалка$() — это устройство для хранения мяса или чеснока. Она может использоваться только в $(l:firmalife/cellar)погребе$(). На вешалках может храниться полный стек одного предмета. Добавление и удаление предметов осуществляется с помощью $(item)$(k:key.use)$(). Предметы на валидных вешалках получают модификатор порчи, который лучше, чем у полок или сосудов."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/wood/acacia_hanger",
+      "text": "Вешалка изготавливается из досок и ниток."
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 5
+}

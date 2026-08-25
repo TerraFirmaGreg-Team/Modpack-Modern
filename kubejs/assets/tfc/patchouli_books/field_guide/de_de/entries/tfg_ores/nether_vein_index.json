@@ -7,36 +7,95 @@
   "secret": false,
   "pages": [
     {
-      "Type": "patchouli:text",
+      "type": "patchouli:text",
       "text": "This is the $(thing)Vein Index$() for $(item)The Beneath$(). Each Vein has details regarding its rarity, density, vein type, height found, sizes, what stones it spawns in, and more.",
-      "title": "The Beneath Vein Index",
-      "type": "patchouli:text"
+      "title": "The Beneath Vein Index"
     },
     {
-      "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/nether_vein_index#beneath_coal_anthracite)Anthracite, Graphit$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_bismuth)Bismut, Schwefel, Salpeter$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_manganese)Bleicherde, Grossular, Gips$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_aluminium)Borax, Zeolith, Saltpeter$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_coal_lignite)Braunkohle$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_copper_sulfide)Chalkosin, Pyrit, Gips$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_nickel)Glaukonitsand, Garnierit...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_iron_banded)Goethit, Limonit, Malachit$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_graphite)Graphit, Steinkohle, Diamond$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_salt)Halit, Sylvin, Talk$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_iron_hematite)Hämatit, Goethit$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_psg)Irarsite, Ruarsite...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_tin)Kassiterit, Zinn$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_iron_magnetite)Magnetit, Spessartin...$()$()",
-      "type": "patchouli:text"
+      "type": "patchouli:text",
+      "text": "$(li)$(l:tfg_ores/nether_vein_index#beneath_coal_anthracite)Anthracite, Graphit$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_bismuth)Bismut, Schwefel, Salpeter$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_manganese)Bleicherde, Grossular, Gips$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_aluminium)Borax, Zeolith, Saltpeter$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_coal_lignite)Braunkohle$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_copper_sulfide)Chalkosin, Pyrit, Gips$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_nickel)Glaukonitsand, Garnierit...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_iron_banded)Goethit, Limonit, Malachit$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_graphite)Graphit, Steinkohle, Diamond$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_salt)Halit, Sylvin, Talk$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_iron_hematite)Hämatit, Goethit$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_psg)Irarsite, Ruarsite...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_tin)Kassiterit, Zinn$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_iron_magnetite)Magnetit, Spessartin...$()$()"
     },
     {
-      "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/nether_vein_index#beneath_gold_rich)Natives Gold, Magnetit...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_gold)Natives Gold, Pyrit...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_copper_native)Natives Kupfer, Malachit$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_phlogopite)Phlogopite, Schwefel, Apatite$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_lithium)Pyrit, Anthracite, Borax$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_realgar)Realgar, Stibnite, Zinnober$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_redstone)Redstone, Zinnober...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_copper_tetrahedrite)Schwarzerz, Stibnite...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_sulfur)Schwefel, Pyrit, Stibnite$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_lead_silver)Smaragd, Natives Silber, Lead$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_quartz)Smoky Quartz, Quartz...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_coal_bituminous)Steinkohle, Pyrit$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_phosphate)Tricalciumphosphat, Apatite...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_molydbenum)Wulfenit, Molybdänit, Ölsand$()$()",
-      "type": "patchouli:text"
+      "type": "patchouli:text",
+      "text": "$(li)$(l:tfg_ores/nether_vein_index#beneath_gold_rich)Natives Gold, Magnetit...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_gold)Natives Gold, Pyrit...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_copper_native)Natives Kupfer, Malachit$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_phlogopite)Phlogopite, Schwefel, Apatite$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_lithium)Pyrit, Anthracite, Borax$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_realgar)Realgar, Stibnite, Zinnober$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_redstone)Redstone, Zinnober...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_copper_tetrahedrite)Schwarzerz, Stibnite...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_sulfur)Schwefel, Pyrit, Stibnite$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_lead_silver)Smaragd, Natives Silber, Lead$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_quartz)Smoky Quartz, Quartz...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_coal_bituminous)Steinkohle, Pyrit$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_phosphate)Tricalciumphosphat, Apatite...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_molydbenum)Wulfenit, Molybdänit, Ölsand$()$()"
     },
     {
-      "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/nether_vein_index#beneath_zinc)Zinkblende, Smaragd, Schwefel$()$()",
-      "type": "patchouli:text"
+      "type": "patchouli:text",
+      "text": "$(li)$(l:tfg_ores/nether_vein_index#beneath_zinc)Zinkblende, Smaragd, Schwefel$()$()"
     },
     {
-      "Type": "patchouli:text",
+      "type": "patchouli:text",
       "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/10 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 25%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 140 — 190$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 27$(br)$(thing)Biomes$(): $(t:Verfallende Höhlen)Decaying Caverns$(/t)$(br2)$(thing)Stone Types$(): Diorit, Gneis, Kristallschiefer, Marble, Migmatite, Phyllit, Tonschiefer, Travertine, Tuff",
       "title": "Anthracite, Graphit",
+      "anchor": "beneath_aluminium"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Anthracite",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/alunite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Prozentzahl$(): 75%$(br)$(thing)Used for$(): Fuel$(br)$(thing)Formula$(): C"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Graphit",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/zeolite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Prozentzahl$(): 25%$(br)$(thing)Used for$(): $(l:mechanics/fire_clay)Fire Clay$(), Silicon Carbide, Graphene$(br)$(thing)Formula$(): C"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Barite",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/barite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Percentage$(): 20%$(br)$(thing)Source of$(): Barium$(br)$(thing)Formula$(): BaSO₂",
+      "draw_filler": true
+    },
+    {
       "type": "patchouli:text",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/10 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 24%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Tall and narrow)Pipe Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 0 — 80$(br)$(thing)Höhe$(): 60$(br)$(thing)Radius$(): 15$(br)$(thing)Biomes$(): $(t:Aschewald)Ash Forest$(/t)$(br2)$(thing)Stone Types$(): Basalt, Migmatite, Pyroxenite",
+      "title": "Bismut, Schwefel, Salpeter",
       "anchor": "beneath_coal_anthracite"
     },
     {
-      "Type": "patchouli:multiblock",
-      "name": "Anthracite",
+      "type": "patchouli:multiblock",
+      "name": "Bismut",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/anthracite"
@@ -51,12 +110,11 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 75%$(br)$(thing)Used for$(): Fuel$(br)$(thing)Formula$(): C",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Prozentzahl$(): 37%$(br)$(thing)Melts into$(): Bismuth$(br)$(thing)Formula$(): Bi"
     },
     {
-      "Type": "patchouli:multiblock",
-      "name": "Graphit",
+      "type": "patchouli:multiblock",
+      "name": "Schwefel",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/graphite"
@@ -71,63 +129,11 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 25%$(br)$(thing)Used for$(): $(l:mechanics/fire_clay)Fire Clay$(), Silicon Carbide, Graphene$(br)$(thing)Formula$(): C",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Prozentzahl$(): 33%$(br)$(thing)Source of$(): Sulfur$(br)$(thing)Formula$(): S"
     },
     {
-      "Type": "patchouli:empty",
+      "type": "patchouli:empty",
       "draw_filler": true,
-      "type": "patchouli:empty"
-    },
-    {
-      "Type": "patchouli:text",
-      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/10 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 24%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Tall and narrow)Pipe Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 0 — 80$(br)$(thing)Höhe$(): 60$(br)$(thing)Radius$(): 15$(br)$(thing)Biomes$(): $(t:Aschewald)Ash Forest$(/t)$(br2)$(thing)Stone Types$(): Basalt, Migmatite, Pyroxenite",
-      "title": "Bismut, Schwefel, Salpeter",
-      "type": "patchouli:text",
-      "anchor": "beneath_bismuth"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Bismut",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/bismuth"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 37%$(br)$(thing)Melts into$(): Bismuth$(br)$(thing)Formula$(): Bi",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Schwefel",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/sulfur"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 33%$(br)$(thing)Source of$(): Sulfur$(br)$(thing)Formula$(): S",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
       "name": "Salpeter",
       "multiblock": {
         "mapping": {
@@ -143,22 +149,20 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 28%$(br)$(thing)Source of$(): Potassium, Nitrogen$(br)$(thing)Formula$(): KNO₃",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Prozentzahl$(): 28%$(br)$(thing)Source of$(): Potassium, Nitrogen$(br)$(thing)Formula$(): KNO₃"
     },
     {
-      "Type": "patchouli:text",
+      "type": "patchouli:text",
       "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/10 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 22%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Tall and narrow)Pipe Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 80 — 140$(br)$(thing)Höhe$(): 60$(br)$(thing)Radius$(): 8$(br)$(thing)Biomes$(): $(t:Thorny Grove)Thorny Grove$(/t)$(br2)$(thing)Stone Types$(): Diorit, Gabbro, Gneis, Granit, Kristallschiefer, Migmatite, Travertine, Tuff",
       "title": "Bleicherde, Grossular, Gips",
-      "type": "patchouli:text",
-      "anchor": "beneath_manganese"
+      "anchor": "beneath_bismuth"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "Bleicherde",
       "multiblock": {
         "mapping": {
-          "0": "#forge:ores/pyrolusite"
+          "0": "#forge:ores/bismuth"
         },
         "pattern": [
           [
@@ -170,15 +174,14 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 53%$(br)$(thing)Source of$(): Manganese$(br)$(thing)Formula$(): MnO₂",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Prozentzahl$(): 53%$(br)$(thing)Source of$(): Manganese$(br)$(thing)Formula$(): MnO₂"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "Grossular",
       "multiblock": {
         "mapping": {
-          "0": "#forge:ores/grossular"
+          "0": "#forge:ores/sulfur"
         },
         "pattern": [
           [
@@ -190,15 +193,14 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 30%$(br)$(thing)Source of$(): Calcium, Aluminium$(br)$(thing)Formula$(): Ca₃Al₂Si₃O₁₂",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Prozentzahl$(): 30%$(br)$(thing)Source of$(): Calcium, Aluminium$(br)$(thing)Formula$(): Ca₃Al₂Si₃O₁₂"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "Gips",
       "multiblock": {
         "mapping": {
-          "0": "#forge:ores/tantalite"
+          "0": "#forge:ores/saltpeter"
         },
         "pattern": [
           [
@@ -210,22 +212,20 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 15%$(br)$(thing)Source of$(): Manganese, Tantalum$(br)$(thing)Formula$(): MnTa₂O₆",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Prozentzahl$(): 15%$(br)$(thing)Source of$(): Manganese, Tantalum$(br)$(thing)Formula$(): MnTa₂O₆"
     },
     {
-      "Type": "patchouli:text",
+      "type": "patchouli:text",
       "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/10 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 22%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Tall and narrow)Pipe Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 80 — 140$(br)$(thing)Höhe$(): 60$(br)$(thing)Radius$(): 10$(br)$(thing)Biomes$(): $(t:Tar Pools)Tar Pools$(/t)$(br2)$(thing)Stone Types$(): Diorit, Gabbro, Gneis, Granit, Kristallschiefer, Migmatite, Travertine, Tuff",
       "title": "Borax, Zeolith, Saltpeter",
-      "type": "patchouli:text",
-      "anchor": "beneath_aluminium"
+      "anchor": "beneath_coal_bituminous"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "Borax",
       "multiblock": {
         "mapping": {
-          "0": "#forge:ores/alunite"
+          "0": "#forge:ores/coal"
         },
         "pattern": [
           [
@@ -237,15 +237,14 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 50%$(br)$(thing)Source of$(): Potassium, Aluminium$(br)$(thing)Formula$(): KAl₃Si₂H₆O₁₄",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Prozentzahl$(): 50%$(br)$(thing)Source of$(): Potassium, Aluminium$(br)$(thing)Formula$(): KAl₃Si₂H₆O₁₄"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "Zeolith",
       "multiblock": {
         "mapping": {
-          "0": "#forge:ores/zeolite"
+          "0": "#forge:ores/pyrite"
         },
         "pattern": [
           [
@@ -257,11 +256,11 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 30%$(br)$(thing)Source of$(): Aluminium, Oxygen$(br)$(thing)Formula$(): NaCa₄Si₂₇Al₉(H₂O)₂₈O₇₂",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Prozentzahl$(): 30%$(br)$(thing)Source of$(): Aluminium, Oxygen$(br)$(thing)Formula$(): NaCa₄Si₂₇Al₉(H₂O)₂₈O₇₂"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:empty",
+      "draw_filler": true,
       "name": "Saltpeter",
       "multiblock": {
         "mapping": {
@@ -277,22 +276,20 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 20%$(br)$(thing)Source of$(): Barium$(br)$(thing)Formula$(): BaSO₂",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Prozentzahl$(): 20%$(br)$(thing)Source of$(): Barium$(br)$(thing)Formula$(): BaSO₂"
     },
     {
-      "Type": "patchouli:text",
+      "type": "patchouli:text",
       "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/10 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 30%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 140 — 190$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 25$(br)$(thing)Biomes$(): $(t:Vernetztes Versteck)Webbed Lair$(/t)$(br2)$(thing)Stone Types$(): Diorit, Gneis, Kristallschiefer, Marble, Migmatite, Phyllit, Tonschiefer, Travertine, Tuff",
       "title": "Braunkohle",
-      "type": "patchouli:text",
-      "anchor": "beneath_coal_lignite"
+      "anchor": "beneath_tin"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "Braunkohle",
       "multiblock": {
         "mapping": {
-          "0": "#forge:ores/lignite"
+          "0": "#forge:ores/cassiterite"
         },
         "pattern": [
           [
@@ -304,18 +301,32 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 100%$(br)$(thing)Used for$(): Fuel$(br)$(thing)Formula$(): C",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Prozentzahl$(): 100%$(br)$(thing)Used for$(): Fuel$(br)$(thing)Formula$(): C"
     },
     {
-      "Type": "patchouli:text",
+      "type": "patchouli:multiblock",
+      "name": "Tin",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/tin"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
       "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/10 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 28%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 80 — 140$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 27$(br)$(thing)Biomes$(): $(t:Geothermal Springs)Geothermal Springs$(/t)$(br2)$(thing)Stone Types$(): Diorit, Gabbro, Gneis, Granit, Kristallschiefer, Migmatite, Travertine, Tuff",
       "title": "Chalkosin, Pyrit, Gips",
-      "type": "patchouli:text",
       "anchor": "beneath_copper_sulfide"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:empty",
+      "draw_filler": true,
       "name": "Chalkosin",
       "multiblock": {
         "mapping": {
@@ -331,11 +342,13 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 50%$(br)$(thing)Melts into$(): Copper$(br)$(thing)Formula$(): Cu₂S",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Prozentzahl$(): 50%$(br)$(thing)Melts into$(): Copper$(br)$(thing)Formula$(): Cu₂S"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:text",
+      "text": "$(thing)Prozentzahl$(): 33%$(br)$(thing)Melts into$(): Cast Iron$(br)$(thing)Formula$(): FeS₂",
+      "title": "Chalcocite, Pyrite, Bornite",
+      "anchor": "beneath_copper_sulfide",
       "name": "Pyrit",
       "multiblock": {
         "mapping": {
@@ -350,13 +363,51 @@
           ]
         ]
       },
-      "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 33%$(br)$(thing)Melts into$(): Cast Iron$(br)$(thing)Formula$(): FeS₂",
-      "type": "patchouli:multiblock"
+      "enable_visualize": false
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "Gips",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/chalcocite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Prozentzahl$(): 16%$(br)$(thing)Melts into$(): Copper$(br)$(thing)Formula$(): Cu₅FeS₄"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Pyrite",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/pyrite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/10 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 22%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 80 — 140$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 25$(br)$(thing)Biomes$(): $(t:Thorny Grove)Thorny Grove$(/t)$(br2)$(thing)Stone Types$(): Diorit, Gabbro, Gneis, Granit, Kristallschiefer, Migmatite, Travertine, Tuff",
+      "title": "Glaukonitsand, Garnierit...",
+      "anchor": "beneath_nickel"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Glaukonitsand",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/bornite"
@@ -371,38 +422,13 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 16%$(br)$(thing)Melts into$(): Copper$(br)$(thing)Formula$(): Cu₅FeS₄",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Prozentzahl$(): 54%$(br)$(thing)Melts into$(): Nickel$(br)$(thing)Formula$(): Ni₉S₈"
     },
     {
-      "Type": "patchouli:text",
-      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/10 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 22%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 80 — 140$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 25$(br)$(thing)Biomes$(): $(t:Thorny Grove)Thorny Grove$(/t)$(br2)$(thing)Stone Types$(): Diorit, Gabbro, Gneis, Granit, Kristallschiefer, Migmatite, Travertine, Tuff",
-      "title": "Glaukonitsand, Garnierit...",
       "type": "patchouli:text",
-      "anchor": "beneath_nickel"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Glaukonitsand",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/pentlandite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 54%$(br)$(thing)Melts into$(): Nickel$(br)$(thing)Formula$(): Ni₉S₈",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
+      "text": "$(thing)Prozentzahl$(): 27%$(br)$(thing)Melts into$(): Nickel$(br)$(thing)Formula$(): NiO",
+      "title": "Galena, Native Silver, Lead",
+      "anchor": "beneath_lead_silver",
       "name": "Garnierit",
       "multiblock": {
         "mapping": {
@@ -417,16 +443,14 @@
           ]
         ]
       },
-      "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 27%$(br)$(thing)Melts into$(): Nickel$(br)$(thing)Formula$(): NiO",
-      "type": "patchouli:multiblock"
+      "enable_visualize": false
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "Kassiteritsand",
       "multiblock": {
         "mapping": {
-          "0": "#forge:ores/cobaltite"
+          "0": "#forge:ores/galena"
         },
         "pattern": [
           [
@@ -438,22 +462,35 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 18%$(br)$(thing)Source of$(): Cobalt, Arsenic$(br)$(thing)Formula$(): CoAsS$(br)$(thing)Hazard$(): $(c)$(t:Requires Face Mask)Arsenicosis (Inhalation)$(/t)$()",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Prozentzahl$(): 18%$(br)$(thing)Source of$(): Cobalt, Arsenic$(br)$(thing)Formula$(): CoAsS$(br)$(thing)Hazard$(): $(c)$(t:Requires Face Mask)Arsenicosis (Inhalation)$(/t)$()"
     },
     {
-      "Type": "patchouli:text",
+      "type": "patchouli:multiblock",
+      "name": "Native Silver",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/silver"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
       "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/10 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 28%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 140 — 190$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 31$(br)$(thing)Biomes$(): $(t:Vernetztes Versteck)Webbed Lair$(/t)$(br2)$(thing)Stone Types$(): Diorit, Gneis, Kristallschiefer, Marble, Migmatite, Phyllit, Tonschiefer, Travertine, Tuff",
       "title": "Goethit, Limonit, Malachit",
-      "type": "patchouli:text",
       "anchor": "beneath_iron_banded"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "Goethit",
       "multiblock": {
         "mapping": {
-          "0": "#forge:ores/goethite"
+          "0": "#forge:ores/lead"
         },
         "pattern": [
           [
@@ -465,11 +502,13 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 38%$(br)$(thing)Melts into$(): Cast Iron$(br)$(thing)Formula$(): FeHO₂",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Prozentzahl$(): 38%$(br)$(thing)Melts into$(): Cast Iron$(br)$(thing)Formula$(): FeHO₂"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:text",
+      "text": "$(thing)Prozentzahl$(): 30%$(br)$(thing)Melts into$(): Cast Iron$(br)$(thing)Formula$(): FeHO₂",
+      "title": "Goethite, Limonite, Malachite",
+      "anchor": "beneath_iron_banded",
       "name": "Limonit",
       "multiblock": {
         "mapping": {
@@ -484,194 +523,11 @@
           ]
         ]
       },
-      "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 30%$(br)$(thing)Melts into$(): Cast Iron$(br)$(thing)Formula$(): FeHO₂",
-      "type": "patchouli:multiblock"
+      "enable_visualize": false
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "Malachit",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/malachite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 30%$(br)$(thing)Melts into$(): Copper$(br)$(thing)Formula$(): Cu₂CH₂O₅",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:text",
-      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/10 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 22%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Wide and flat)Disc Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 0 — 80$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 50$(br)$(thing)Höhe$(): 10$(br)$(thing)Biomes$(): $(t:Basaltdeltas)Basalt Deltas$(/t)$(br2)$(thing)Stone Types$(): Basalt, Migmatite, Pyroxenite",
-      "title": "Graphit, Steinkohle, Diamond",
-      "type": "patchouli:text",
-      "anchor": "beneath_graphite"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Graphit",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/graphite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 72%$(br)$(thing)Used for$(): $(l:mechanics/fire_clay)Fire Clay$(), Silicon Carbide, Graphene$(br)$(thing)Formula$(): C",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Steinkohle",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/coal"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 18%$(br)$(thing)Used for$(): Fuel, Distillation$(br)$(thing)Formula$(): C",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Diamond",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/diamond"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 9%$(br)$(thing)Used for$(): Grinding, AE2$(br)$(thing)Formula$(): C",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:text",
-      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/10 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 28%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Tall and narrow)Pipe Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 140 — 190$(br)$(thing)Höhe$(): 60$(br)$(thing)Radius$(): 10$(br)$(thing)Biomes$(): $(t:Salt Caves)Salt Caves$(/t)$(br2)$(thing)Stone Types$(): Diorit, Gneis, Kristallschiefer, Marble, Migmatite, Phyllit, Tonschiefer, Travertine, Tuff",
-      "title": "Halit, Sylvin, Talk",
-      "type": "patchouli:text",
-      "anchor": "beneath_salt"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Halit",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/salt"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 50%$(br)$(thing)Source of$(): Sodium, Chlorine$(br)$(thing)Formula$(): NaCl",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Sylvin",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/rock_salt"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 35%$(br)$(thing)Source of$(): Potassium, Chlorine, Fertilizer$(br)$(thing)Formula$(): KCl",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Talk",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/trona"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 14%$(br)$(thing)Source of$(): Sodium$(br)$(thing)Formula$(): Na₃C₂H(H₂O)₂O₆",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:text",
-      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/10 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 28%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 80 — 140$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 29$(br)$(thing)Biomes$(): $(t:Tar Pools)Tar Pools$(/t)$(br2)$(thing)Stone Types$(): Diorit, Gabbro, Gneis, Granit, Kristallschiefer, Migmatite, Travertine, Tuff",
-      "title": "Hämatit, Goethit",
-      "type": "patchouli:text",
-      "anchor": "beneath_iron_hematite"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Hämatit",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/hematite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 70%$(br)$(thing)Melts into$(): Cast Iron$(br)$(thing)Formula$(): Fe₂O₃",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Goethit",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/goethite"
@@ -686,23 +542,273 @@
         ]
       },
       "enable_visualize": false,
+      "text": "$(thing)Prozentzahl$(): 30%$(br)$(thing)Melts into$(): Copper$(br)$(thing)Formula$(): Cu₂CH₂O₅"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Limonite",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/yellow_limonite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/10 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 22%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Wide and flat)Disc Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 0 — 80$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 50$(br)$(thing)Höhe$(): 10$(br)$(thing)Biomes$(): $(t:Basaltdeltas)Basalt Deltas$(/t)$(br2)$(thing)Stone Types$(): Basalt, Migmatite, Pyroxenite",
+      "title": "Graphit, Steinkohle, Diamond",
+      "anchor": "beneath_graphite"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Graphit",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/malachite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Prozentzahl$(): 72%$(br)$(thing)Used for$(): $(l:mechanics/fire_clay)Fire Clay$(), Silicon Carbide, Graphene$(br)$(thing)Formula$(): C"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)Prozentzahl$(): 18%$(br)$(thing)Used for$(): Fuel, Distillation$(br)$(thing)Formula$(): C",
+      "title": "Graphite, Bituminous Coal...",
+      "anchor": "beneath_graphite",
+      "name": "Steinkohle",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/coal"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Diamond",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/graphite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Prozentzahl$(): 9%$(br)$(thing)Used for$(): Grinding, AE2$(br)$(thing)Formula$(): C"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Bituminous Coal",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/coal"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/10 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 28%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Tall and narrow)Pipe Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 140 — 190$(br)$(thing)Höhe$(): 60$(br)$(thing)Radius$(): 10$(br)$(thing)Biomes$(): $(t:Salt Caves)Salt Caves$(/t)$(br2)$(thing)Stone Types$(): Diorit, Gneis, Kristallschiefer, Marble, Migmatite, Phyllit, Tonschiefer, Travertine, Tuff",
+      "title": "Halit, Sylvin, Talk",
+      "anchor": "beneath_salt"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Halit",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/diamond"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Prozentzahl$(): 50%$(br)$(thing)Source of$(): Sodium, Chlorine$(br)$(thing)Formula$(): NaCl"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)Prozentzahl$(): 35%$(br)$(thing)Source of$(): Potassium, Chlorine, Fertilizer$(br)$(thing)Formula$(): KCl",
+      "title": "Halite, Sylvite, Trona",
+      "anchor": "beneath_salt",
+      "name": "Sylvin",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/rock_salt"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Talk",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/salt"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Prozentzahl$(): 14%$(br)$(thing)Source of$(): Sodium$(br)$(thing)Formula$(): Na₃C₂H(H₂O)₂O₆"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Sylvite",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/rock_salt"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/10 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 28%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 80 — 140$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 29$(br)$(thing)Biomes$(): $(t:Tar Pools)Tar Pools$(/t)$(br2)$(thing)Stone Types$(): Diorit, Gabbro, Gneis, Granit, Kristallschiefer, Migmatite, Travertine, Tuff",
+      "title": "Hämatit, Goethit",
+      "anchor": "beneath_iron_hematite"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Hämatit",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/trona"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Prozentzahl$(): 70%$(br)$(thing)Melts into$(): Cast Iron$(br)$(thing)Formula$(): Fe₂O₃"
+    },
+    {
+      "type": "patchouli:text",
       "text": "$(thing)Prozentzahl$(): 30%$(br)$(thing)Melts into$(): Cast Iron$(br)$(thing)Formula$(): FeHO₂",
-      "type": "patchouli:multiblock"
+      "title": "Hematite, Goethite",
+      "anchor": "beneath_iron_hematite",
+      "name": "Goethit",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/goethite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false
     },
     {
-      "Type": "patchouli:empty",
-      "draw_filler": true,
-      "type": "patchouli:empty"
+      "type": "patchouli:multiblock",
+      "name": "Hematite",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/hematite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Percentage$(): 70%$(br)$(thing)Melts into$(): Cast Iron$(br)$(thing)Formula$(): Fe₂O₃",
+      "draw_filler": true
     },
     {
-      "Type": "patchouli:text",
+      "type": "patchouli:multiblock",
+      "name": "Goethite",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/goethite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
       "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/30 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 18%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Wide and flat)Disc Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 0 — 80$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 50$(br)$(thing)Höhe$(): 10$(br)$(thing)Biomes$(): $(t:Lavaschollen)Lava Floes$(/t)$(br2)$(thing)Stone Types$(): Basalt, Migmatite, Pyroxenite",
       "title": "Irarsite, Ruarsite...",
-      "type": "patchouli:text",
       "anchor": "beneath_psg"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:empty",
+      "draw_filler": true,
       "name": "Irarsite",
       "multiblock": {
         "mapping": {
@@ -718,11 +824,50 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 37%$(br)$(thing)Source of$(): Iridium, Arsenic, Sulfur$(br)$(thing)Formula$(): Ir₄Ru₁Rh₁Pt₁As₇S₇",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Prozentzahl$(): 37%$(br)$(thing)Source of$(): Iridium, Arsenic, Sulfur$(br)$(thing)Formula$(): Ir₄Ru₁Rh₁Pt₁As₇S₇"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:text",
+      "text": "$(thing)Prozentzahl$(): 35%$(br)$(thing)Source of$(): Ruthenium, Arsenic, Sulfur$(br)$(thing)Formula$(): RuAsS",
+      "title": "Irarsite, Ruarsite...",
+      "anchor": "beneath_psg",
+      "name": "Ruarsite",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/ruarsite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Ferhodsite",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/irarsite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Prozentzahl$(): 27%$(br)$(thing)Source of$(): Rhodium, Iron, Nickel$(br)$(thing)Formula$(): Fe₂Rh₂Ir₁Ni₃Cu₁S₉"
+    },
+    {
+      "type": "patchouli:multiblock",
       "name": "Ruarsite",
       "multiblock": {
         "mapping": {
@@ -738,12 +883,13 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 35%$(br)$(thing)Source of$(): Ruthenium, Arsenic, Sulfur$(br)$(thing)Formula$(): RuAsS",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/10 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 25%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 140 — 190$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 25$(br)$(thing)Biomes$(): $(t:Verfallende Höhlen)Decaying Caverns$(/t)$(br2)$(thing)Stone Types$(): Diorit, Gneis, Kristallschiefer, Marble, Migmatite, Phyllit, Tonschiefer, Travertine, Tuff",
+      "title": "Kassiterit, Zinn",
+      "anchor": "beneath_tin"
     },
     {
-      "Type": "patchouli:multiblock",
-      "name": "Ferhodsite",
+      "type": "patchouli:multiblock",
+      "name": "Kassiterit",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/ferhodsite"
@@ -758,38 +904,13 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 27%$(br)$(thing)Source of$(): Rhodium, Iron, Nickel$(br)$(thing)Formula$(): Fe₂Rh₂Ir₁Ni₃Cu₁S₉",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Prozentzahl$(): 77%$(br)$(thing)Melts into$(): Tin$(br)$(thing)Formula$(): SnO₂"
     },
     {
-      "Type": "patchouli:text",
-      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/10 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 25%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 140 — 190$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 25$(br)$(thing)Biomes$(): $(t:Verfallende Höhlen)Decaying Caverns$(/t)$(br2)$(thing)Stone Types$(): Diorit, Gneis, Kristallschiefer, Marble, Migmatite, Phyllit, Tonschiefer, Travertine, Tuff",
-      "title": "Kassiterit, Zinn",
       "type": "patchouli:text",
-      "anchor": "beneath_tin"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Kassiterit",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/cassiterite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 77%$(br)$(thing)Melts into$(): Tin$(br)$(thing)Formula$(): SnO₂",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
+      "text": "$(thing)Prozentzahl$(): 22%$(br)$(thing)Melts into$(): Tin$(br)$(thing)Formula$(): Sn",
+      "title": "Lignite",
+      "anchor": "beneath_coal_lignite",
       "name": "Zinn",
       "multiblock": {
         "mapping": {
@@ -804,24 +925,36 @@
           ]
         ]
       },
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Lignite",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/lignite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
       "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 22%$(br)$(thing)Melts into$(): Tin$(br)$(thing)Formula$(): Sn",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Percentage$(): 100%$(br)$(thing)Used for$(): Fuel$(br)$(thing)Formula$(): C",
+      "draw_filler": true
     },
     {
-      "Type": "patchouli:empty",
-      "draw_filler": true,
-      "type": "patchouli:empty"
-    },
-    {
-      "Type": "patchouli:text",
+      "type": "patchouli:text",
       "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/10 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 28%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Tall and narrow)Pipe Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 80 — 140$(br)$(thing)Höhe$(): 60$(br)$(thing)Radius$(): 8$(br)$(thing)Biomes$(): $(t:Geothermal Springs)Geothermal Springs$(/t)$(br2)$(thing)Stone Types$(): Diorit, Gabbro, Gneis, Granit, Kristallschiefer, Migmatite, Travertine, Tuff",
       "title": "Magnetit, Spessartin...",
-      "type": "patchouli:text",
       "anchor": "beneath_iron_magnetite"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "Magnetit",
       "multiblock": {
         "mapping": {
@@ -837,11 +970,10 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 66%$(br)$(thing)Melts into$(): Cast Iron$(br)$(thing)Formula$(): Fe₃O₄",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Prozentzahl$(): 66%$(br)$(thing)Melts into$(): Cast Iron$(br)$(thing)Formula$(): Fe₃O₄"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "Spessartin",
       "multiblock": {
         "mapping": {
@@ -857,11 +989,10 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 25%$(br)$(thing)Source of$(): Iron, Vanadium$(br)$(thing)Formula$(): (Fe₃O₄)V",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Prozentzahl$(): 25%$(br)$(thing)Source of$(): Iron, Vanadium$(br)$(thing)Formula$(): (Fe₃O₄)V"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "Natives Gold",
       "multiblock": {
         "mapping": {
@@ -877,22 +1008,20 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 8%$(br)$(thing)Melts into$(): Gold$(br)$(thing)Formula$(): Au",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Prozentzahl$(): 8%$(br)$(thing)Melts into$(): Gold$(br)$(thing)Formula$(): Au"
     },
     {
-      "Type": "patchouli:text",
+      "type": "patchouli:text",
       "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/10 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 20%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 0 — 80$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 23$(br)$(thing)Biomes$(): $(t:Aschewald)Ash Forest$(/t)$(br2)$(thing)Stone Types$(): Basalt, Migmatite, Pyroxenite",
       "title": "Natives Gold, Magnetit...",
-      "type": "patchouli:text",
-      "anchor": "beneath_gold_rich"
+      "anchor": "beneath_copper_native"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "Natives Gold",
       "multiblock": {
         "mapping": {
-          "0": "#forge:ores/gold"
+          "0": "#forge:ores/copper"
         },
         "pattern": [
           [
@@ -904,15 +1033,14 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 44%$(br)$(thing)Melts into$(): Gold$(br)$(thing)Formula$(): Au",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Prozentzahl$(): 44%$(br)$(thing)Melts into$(): Gold$(br)$(thing)Formula$(): Au"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "Magnetit",
       "multiblock": {
         "mapping": {
-          "0": "#forge:ores/magnetite"
+          "0": "#forge:ores/malachite"
         },
         "pattern": [
           [
@@ -924,11 +1052,11 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 33%$(br)$(thing)Melts into$(): Cast Iron$(br)$(thing)Formula$(): Fe₃O₄",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Prozentzahl$(): 33%$(br)$(thing)Melts into$(): Cast Iron$(br)$(thing)Formula$(): Fe₃O₄"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:empty",
+      "draw_filler": true,
       "name": "Lepidolith",
       "multiblock": {
         "mapping": {
@@ -944,18 +1072,16 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 22%$(br)$(thing)Source of$(): Gold, Silver, Redstone$(br)$(thing)Formula$(): (Si(FeS₂)₅(CrAl₂O₃)Hg₃)(AgAu)",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Prozentzahl$(): 22%$(br)$(thing)Source of$(): Gold, Silver, Redstone$(br)$(thing)Formula$(): (Si(FeS₂)₅(CrAl₂O₃)Hg₃)(AgAu)"
     },
     {
-      "Type": "patchouli:text",
+      "type": "patchouli:text",
       "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/10 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 25%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 80 — 140$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 25$(br)$(thing)Biomes$(): $(t:Üppige Höhlen)Lush Hollow$(/t)$(br2)$(thing)Stone Types$(): Diorit, Gabbro, Gneis, Granit, Kristallschiefer, Migmatite, Travertine, Tuff",
       "title": "Natives Gold, Pyrit...",
-      "type": "patchouli:text",
-      "anchor": "beneath_gold"
+      "anchor": "beneath_gold_rich"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "Natives Gold",
       "multiblock": {
         "mapping": {
@@ -971,12 +1097,74 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 45%$(br)$(thing)Melts into$(): Gold$(br)$(thing)Formula$(): Au",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Prozentzahl$(): 45%$(br)$(thing)Melts into$(): Gold$(br)$(thing)Formula$(): Au"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "Pyrit",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/magnetite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Prozentzahl$(): 36%$(br)$(thing)Melts into$(): Cast Iron$(br)$(thing)Formula$(): FeS₂"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Chalkosin",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/electrotine"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Prozentzahl$(): 18%$(br)$(thing)Melts into$(): Copper$(br)$(thing)Formula$(): Cu₂S"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/10 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 30%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 80 — 140$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 27$(br)$(thing)Biomes$(): $(t:Üppige Höhlen)Lush Hollow$(/t)$(br2)$(thing)Stone Types$(): Diorit, Gabbro, Gneis, Granit, Kristallschiefer, Migmatite, Travertine, Tuff",
+      "title": "Natives Kupfer, Malachit",
+      "anchor": "beneath_gold"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Natives Kupfer",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/gold"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Prozentzahl$(): 75%$(br)$(thing)Melts into$(): Copper$(br)$(thing)Formula$(): Cu"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Malachit",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/pyrite"
@@ -991,12 +1179,11 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 36%$(br)$(thing)Melts into$(): Cast Iron$(br)$(thing)Formula$(): FeS₂",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Prozentzahl$(): 25%$(br)$(thing)Melts into$(): Copper$(br)$(thing)Formula$(): Cu₂CH₂O₅"
     },
     {
-      "Type": "patchouli:multiblock",
-      "name": "Chalkosin",
+      "type": "patchouli:multiblock",
+      "name": "Chalcocite",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/chalcocite"
@@ -1011,71 +1198,81 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 18%$(br)$(thing)Melts into$(): Copper$(br)$(thing)Formula$(): Cu₂S",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Percentage$(): 18%$(br)$(thing)Melts into$(): Copper$(br)$(thing)Formula$(): Cu₂S",
+      "draw_filler": true
     },
     {
-      "Type": "patchouli:text",
-      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/10 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 30%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 80 — 140$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 27$(br)$(thing)Biomes$(): $(t:Üppige Höhlen)Lush Hollow$(/t)$(br2)$(thing)Stone Types$(): Diorit, Gabbro, Gneis, Granit, Kristallschiefer, Migmatite, Travertine, Tuff",
-      "title": "Natives Kupfer, Malachit",
       "type": "patchouli:text",
-      "anchor": "beneath_copper_native"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Natives Kupfer",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/copper"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 75%$(br)$(thing)Melts into$(): Copper$(br)$(thing)Formula$(): Cu",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Malachit",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/malachite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 25%$(br)$(thing)Melts into$(): Copper$(br)$(thing)Formula$(): Cu₂CH₂O₅",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:empty",
-      "draw_filler": true,
-      "type": "patchouli:empty"
-    },
-    {
-      "Type": "patchouli:text",
       "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/10 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 20%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Wide and flat)Disc Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 0 — 80$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 45$(br)$(thing)Höhe$(): 10$(br)$(thing)Biomes$(): $(t:Basaltdeltas)Basalt Deltas$(/t)$(br2)$(thing)Stone Types$(): Basalt, Migmatite, Pyroxenite",
       "title": "Phlogopite, Schwefel, Apatite",
+      "anchor": "beneath_nickel"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Phlogopite",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/pentlandite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Prozentzahl$(): 60%$(br)$(thing)Source of$(): Aluminium, Fluorine$(br)$(thing)Formula$(): KMg₃AlSi₃O₁₀F₂"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Schwefel",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/garnierite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Prozentzahl$(): 28%$(br)$(thing)Source of$(): Sulfur$(br)$(thing)Formula$(): S"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Apatite",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/cobaltite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Prozentzahl$(): 12%$(br)$(thing)Source of$(): Calcium, Phosphorus, Forestry PTSD$(br)$(thing)Formula$(): Ca₅(PO₄)₃Cl"
+    },
+    {
       "type": "patchouli:text",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/10 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 22%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 0 — 80$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 25$(br)$(thing)Biomes$(): $(t:Lavaschollen)Lava Floes$(/t)$(br2)$(thing)Stone Types$(): Basalt, Migmatite, Pyroxenite",
+      "title": "Pyrit, Anthracite, Borax",
       "anchor": "beneath_phlogopite"
     },
     {
-      "Type": "patchouli:multiblock",
-      "name": "Phlogopite",
+      "type": "patchouli:multiblock",
+      "name": "Pyrit",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/phlogopite"
@@ -1090,12 +1287,11 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 60%$(br)$(thing)Source of$(): Aluminium, Fluorine$(br)$(thing)Formula$(): KMg₃AlSi₃O₁₀F₂",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Prozentzahl$(): 61%$(br)$(thing)Source of$(): Lithium, Aluminium$(br)$(thing)Formula$(): LiAlSi₂O₆"
     },
     {
-      "Type": "patchouli:multiblock",
-      "name": "Schwefel",
+      "type": "patchouli:multiblock",
+      "name": "Anthracite",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/sulfur"
@@ -1110,12 +1306,11 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 28%$(br)$(thing)Source of$(): Sulfur$(br)$(thing)Formula$(): S",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Prozentzahl$(): 23%$(br)$(thing)Used for$(): Fuel$(br)$(thing)Formula$(): C"
     },
     {
-      "Type": "patchouli:multiblock",
-      "name": "Apatite",
+      "type": "patchouli:multiblock",
+      "name": "Borax",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/apatite"
@@ -1130,86 +1325,80 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 12%$(br)$(thing)Source of$(): Calcium, Phosphorus, Forestry PTSD$(br)$(thing)Formula$(): Ca₅(PO₄)₃Cl",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Prozentzahl$(): 15%$(br)$(thing)Source of$(): Potassium, Aluminium$(br)$(thing)Formula$(): KAl₃Si₂H₆O₁₄"
     },
     {
-      "Type": "patchouli:text",
-      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/10 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 22%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 0 — 80$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 25$(br)$(thing)Biomes$(): $(t:Lavaschollen)Lava Floes$(/t)$(br2)$(thing)Stone Types$(): Basalt, Migmatite, Pyroxenite",
-      "title": "Pyrit, Anthracite, Borax",
       "type": "patchouli:text",
-      "anchor": "beneath_lithium"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Pyrit",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/spodumene"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 61%$(br)$(thing)Source of$(): Lithium, Aluminium$(br)$(thing)Formula$(): LiAlSi₂O₆",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Anthracite",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/anthracite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 23%$(br)$(thing)Used for$(): Fuel$(br)$(thing)Formula$(): C",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Borax",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/alunite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 15%$(br)$(thing)Source of$(): Potassium, Aluminium$(br)$(thing)Formula$(): KAl₃Si₂H₆O₁₄",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:text",
       "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/20 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 25%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 80 — 140$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 23$(br)$(thing)Biomes$(): $(t:Geothermal Springs)Geothermal Springs$(/t)$(br2)$(thing)Stone Types$(): Diorit, Gabbro, Gneis, Granit, Kristallschiefer, Migmatite, Travertine, Tuff",
       "title": "Realgar, Stibnite, Zinnober",
+      "anchor": "beneath_manganese"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Realgar",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/pyrolusite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Prozentzahl$(): 60%$(br)$(thing)Source of$(): Arsenic$(br)$(thing)Formula$(): As₄S₄$(br)$(thing)Hazard$(): $(c)$(t:Requires Face Mask)Arsenicosis (Inhalation)$(/t)$()"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Stibnite",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/grossular"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Prozentzahl$(): 30%$(br)$(thing)Smelts into$(): Antimony$(br)$(thing)Formula$(): Sb₂S₃"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Zinnober",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/tantalite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Prozentzahl$(): 10%$(br)$(thing)Source of$(): Mercury$(br)$(thing)Formula$(): HgS"
+    },
+    {
       "type": "patchouli:text",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/10 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 20%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Tall and narrow)Pipe Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 0 — 80$(br)$(thing)Höhe$(): 60$(br)$(thing)Radius$(): 12$(br)$(thing)Biomes$(): $(t:Basaltdeltas)Basalt Deltas$(/t)$(br2)$(thing)Stone Types$(): Basalt, Migmatite, Pyroxenite",
+      "title": "Redstone, Zinnober...",
       "anchor": "beneath_realgar"
     },
     {
-      "Type": "patchouli:multiblock",
-      "name": "Realgar",
+      "type": "patchouli:multiblock",
+      "name": "Redstone",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/realgar"
@@ -1224,12 +1413,11 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 60%$(br)$(thing)Source of$(): Arsenic$(br)$(thing)Formula$(): As₄S₄$(br)$(thing)Hazard$(): $(c)$(t:Requires Face Mask)Arsenicosis (Inhalation)$(/t)$()",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Prozentzahl$(): 50%$(br)$(thing)Melts into$(): Redstone$(br)$(thing)Formula$(): Si(FeS₂)₅(CrAl₂O₃)Hg₃"
     },
     {
-      "Type": "patchouli:multiblock",
-      "name": "Stibnite",
+      "type": "patchouli:multiblock",
+      "name": "Zinnober",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/stibnite"
@@ -1244,12 +1432,11 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 30%$(br)$(thing)Smelts into$(): Antimony$(br)$(thing)Formula$(): Sb₂S₃",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Prozentzahl$(): 25%$(br)$(thing)Source of$(): Mercury$(br)$(thing)Formula$(): HgS"
     },
     {
-      "Type": "patchouli:multiblock",
-      "name": "Zinnober",
+      "type": "patchouli:multiblock",
+      "name": "Smoky Quartz",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/cinnabar"
@@ -1264,18 +1451,31 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 10%$(br)$(thing)Source of$(): Mercury$(br)$(thing)Formula$(): HgS",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Prozentzahl$(): 16%$(br)$(thing)Used for$(): Applied Energistics 2$(br)$(thing)Formula$(): SiO₂"
     },
     {
-      "Type": "patchouli:text",
-      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/10 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 20%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Tall and narrow)Pipe Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 0 — 80$(br)$(thing)Höhe$(): 60$(br)$(thing)Radius$(): 12$(br)$(thing)Biomes$(): $(t:Basaltdeltas)Basalt Deltas$(/t)$(br2)$(thing)Stone Types$(): Basalt, Migmatite, Pyroxenite",
-      "title": "Redstone, Zinnober...",
       "type": "patchouli:text",
-      "anchor": "beneath_redstone"
+      "text": "$(thing)Prozentzahl$(): 8%$(br)$(thing)Source of$(): Chromium, Aluminium$(br)$(thing)Formula$(): CrAl₂O₃",
+      "title": "Redstone, Cinnabar...",
+      "anchor": "beneath_redstone",
+      "name": "Rubin",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/ruby"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "Redstone",
       "multiblock": {
         "mapping": {
@@ -1291,12 +1491,12 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 50%$(br)$(thing)Melts into$(): Redstone$(br)$(thing)Formula$(): Si(FeS₂)₅(CrAl₂O₃)Hg₃",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Percentage$(): 50%$(br)$(thing)Melts into$(): Redstone$(br)$(thing)Formula$(): Si(FeS₂)₅(CrAl₂O₃)Hg₃",
+      "draw_filler": true
     },
     {
-      "Type": "patchouli:multiblock",
-      "name": "Zinnober",
+      "type": "patchouli:multiblock",
+      "name": "Cinnabar",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/cinnabar"
@@ -1311,12 +1511,13 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 25%$(br)$(thing)Source of$(): Mercury$(br)$(thing)Formula$(): HgS",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/10 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 28%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 80 — 140$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 25$(br)$(thing)Biomes$(): $(t:Üppige Höhlen)Lush Hollow$(/t)$(br2)$(thing)Stone Types$(): Diorit, Gabbro, Gneis, Granit, Kristallschiefer, Migmatite, Travertine, Tuff",
+      "title": "Schwarzerz, Stibnite...",
+      "anchor": "beneath_copper_tetrahedrite"
     },
     {
-      "Type": "patchouli:multiblock",
-      "name": "Smoky Quartz",
+      "type": "patchouli:multiblock",
+      "name": "Schwarzerz",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/nether_quartz"
@@ -1331,12 +1532,11 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 16%$(br)$(thing)Used for$(): Applied Energistics 2$(br)$(thing)Formula$(): SiO₂",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Prozentzahl$(): 55%$(br)$(thing)Melts into$(): Copper$(br)$(thing)Formula$(): Cu₃SbS₃Fe"
     },
     {
-      "Type": "patchouli:multiblock",
-      "name": "Rubin",
+      "type": "patchouli:multiblock",
+      "name": "Stibnite",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/ruby"
@@ -1351,63 +1551,11 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 8%$(br)$(thing)Source of$(): Chromium, Aluminium$(br)$(thing)Formula$(): CrAl₂O₃",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Prozentzahl$(): 33%$(br)$(thing)Smelts into$(): Antimony$(br)$(thing)Formula$(): Sb₂S₃"
     },
     {
-      "Type": "patchouli:empty",
+      "type": "patchouli:empty",
       "draw_filler": true,
-      "type": "patchouli:empty"
-    },
-    {
-      "Type": "patchouli:text",
-      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/10 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 28%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 80 — 140$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 25$(br)$(thing)Biomes$(): $(t:Üppige Höhlen)Lush Hollow$(/t)$(br2)$(thing)Stone Types$(): Diorit, Gabbro, Gneis, Granit, Kristallschiefer, Migmatite, Travertine, Tuff",
-      "title": "Schwarzerz, Stibnite...",
-      "type": "patchouli:text",
-      "anchor": "beneath_copper_tetrahedrite"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Schwarzerz",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/tetrahedrite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 55%$(br)$(thing)Melts into$(): Copper$(br)$(thing)Formula$(): Cu₃SbS₃Fe",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Stibnite",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/stibnite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 33%$(br)$(thing)Smelts into$(): Antimony$(br)$(thing)Formula$(): Sb₂S₃",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
       "name": "Natives Silber",
       "multiblock": {
         "mapping": {
@@ -1423,153 +1571,17 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 11%$(br)$(thing)Melts into$(): Silver$(br)$(thing)Formula$(): Ag",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Prozentzahl$(): 11%$(br)$(thing)Melts into$(): Silver$(br)$(thing)Formula$(): Ag"
     },
     {
-      "Type": "patchouli:text",
+      "type": "patchouli:text",
       "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/10 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 35%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 0 — 80$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 29$(br)$(thing)Biomes$(): $(t:Lavaschollen)Lava Floes$(/t)$(br2)$(thing)Stone Types$(): Basalt, Migmatite, Pyroxenite",
       "title": "Schwefel, Pyrit, Stibnite",
-      "type": "patchouli:text",
-      "anchor": "beneath_sulfur"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Schwefel",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/sulfur"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 64%$(br)$(thing)Source of$(): Sulfur$(br)$(thing)Formula$(): S",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Pyrit",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/pyrite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 28%$(br)$(thing)Melts into$(): Cast Iron$(br)$(thing)Formula$(): FeS₂",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Stibnite",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/stibnite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 7%$(br)$(thing)Smelts into$(): Antimony$(br)$(thing)Formula$(): Sb₂S₃",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:text",
-      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/15 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 22%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 140 — 190$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 27$(br)$(thing)Biomes$(): $(t:Salt Caves)Salt Caves$(/t)$(br2)$(thing)Stone Types$(): Diorit, Gneis, Kristallschiefer, Marble, Migmatite, Phyllit, Tonschiefer, Travertine, Tuff",
-      "title": "Smaragd, Natives Silber, Lead",
-      "type": "patchouli:text",
-      "anchor": "beneath_lead_silver"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Smaragd",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/galena"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 57%$(br)$(thing)Melts into$(): Lead$(br)$(thing)Formula$(): PbS$(br)$(thing)Hazard$(): $(c)$(t:Requires Face Mask)Weakly Poisonous (Inhalation)$(/t)$()",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Natives Silber",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/silver"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 28%$(br)$(thing)Melts into$(): Silver$(br)$(thing)Formula$(): Ag",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Lead",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/lead"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 14%$(br)$(thing)Melts into$(): Lead$(br)$(thing)Formula$(): Pb$(br)$(thing)Hazard$(): $(c)$(t:Requires Face Mask)Weakly Poisonous (Inhalation)$(/t)$()",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:text",
-      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/20 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 22%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Tall and narrow)Pipe Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 80 — 140$(br)$(thing)Höhe$(): 60$(br)$(thing)Radius$(): 15$(br)$(thing)Biomes$(): $(t:Thorny Grove)Thorny Grove$(/t)$(br2)$(thing)Stone Types$(): Diorit, Gabbro, Gneis, Granit, Kristallschiefer, Migmatite, Travertine, Tuff",
-      "title": "Smoky Quartz, Quartz...",
-      "type": "patchouli:text",
       "anchor": "beneath_quartz"
     },
     {
-      "Type": "patchouli:multiblock",
-      "name": "Smoky Quartz",
+      "type": "patchouli:multiblock",
+      "name": "Schwefel",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/nether_quartz"
@@ -1584,12 +1596,11 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 44%$(br)$(thing)Used for$(): Applied Energistics 2$(br)$(thing)Formula$(): SiO₂",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Prozentzahl$(): 64%$(br)$(thing)Source of$(): Sulfur$(br)$(thing)Formula$(): S"
     },
     {
-      "Type": "patchouli:multiblock",
-      "name": "Quartz",
+      "type": "patchouli:multiblock",
+      "name": "Pyrit",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/quartzite"
@@ -1604,12 +1615,11 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 27%$(br)$(thing)Used for$(): LV components$(br)$(thing)Formula$(): SiO₂",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Prozentzahl$(): 28%$(br)$(thing)Melts into$(): Cast Iron$(br)$(thing)Formula$(): FeS₂"
     },
     {
-      "Type": "patchouli:multiblock",
-      "name": "Saltpeter",
+      "type": "patchouli:multiblock",
+      "name": "Stibnite",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/barite"
@@ -1624,12 +1634,11 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 16%$(br)$(thing)Source of$(): Barium$(br)$(thing)Formula$(): BaSO₂",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Prozentzahl$(): 7%$(br)$(thing)Smelts into$(): Antimony$(br)$(thing)Formula$(): Sb₂S₃"
     },
     {
-      "Type": "patchouli:multiblock",
-      "name": "Zeolith",
+      "type": "patchouli:multiblock",
+      "name": "Zeolite",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/zeolite"
@@ -1644,229 +1653,13 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 11%$(br)$(thing)Source of$(): Aluminium, Oxygen$(br)$(thing)Formula$(): NaCa₄Si₂₇Al₉(H₂O)₂₈O₇₂",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/15 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 22%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 140 — 190$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 27$(br)$(thing)Biomes$(): $(t:Salt Caves)Salt Caves$(/t)$(br2)$(thing)Stone Types$(): Diorit, Gneis, Kristallschiefer, Marble, Migmatite, Phyllit, Tonschiefer, Travertine, Tuff",
+      "title": "Smaragd, Natives Silber, Lead",
+      "anchor": "beneath_lead_silver"
     },
     {
-      "Type": "patchouli:empty",
+      "type": "patchouli:empty",
       "draw_filler": true,
-      "type": "patchouli:empty"
-    },
-    {
-      "Type": "patchouli:text",
-      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/10 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 28%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 140 — 190$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 29$(br)$(thing)Biomes$(): $(t:Muggy Bog)Muggy Bog$(/t)$(br2)$(thing)Stone Types$(): Diorit, Gneis, Kristallschiefer, Marble, Migmatite, Phyllit, Tonschiefer, Travertine, Tuff",
-      "title": "Steinkohle, Pyrit",
-      "type": "patchouli:text",
-      "anchor": "beneath_coal_bituminous"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Steinkohle",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/coal"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 66%$(br)$(thing)Used for$(): Fuel, Distillation$(br)$(thing)Formula$(): C",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Pyrit",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/pyrite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 33%$(br)$(thing)Melts into$(): Cast Iron$(br)$(thing)Formula$(): FeS₂",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:empty",
-      "draw_filler": true,
-      "type": "patchouli:empty"
-    },
-    {
-      "Type": "patchouli:text",
-      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/10 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 25%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 80 — 140$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 25$(br)$(thing)Biomes$(): $(t:Tar Pools)Tar Pools$(/t)$(br2)$(thing)Stone Types$(): Diorit, Gabbro, Gneis, Granit, Kristallschiefer, Migmatite, Travertine, Tuff",
-      "title": "Tricalciumphosphat, Apatite...",
-      "type": "patchouli:text",
-      "anchor": "beneath_phosphate"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Tricalciumphosphat",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/tricalcium_phosphate"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 54%$(br)$(thing)Used for$(): Medicine, Fertiliser$(br)$(thing)Formula$(): Ca₃(PO₄)₂",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Apatite",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/apatite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 36%$(br)$(thing)Source of$(): Calcium, Phosphorus, Forestry PTSD$(br)$(thing)Formula$(): Ca₅(PO₄)₃Cl",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Pyrit",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/pyrite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 9%$(br)$(thing)Melts into$(): Cast Iron$(br)$(thing)Formula$(): FeS₂",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:text",
-      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/10 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 25%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 140 — 190$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 27$(br)$(thing)Biomes$(): $(t:Verfallende Höhlen)Decaying Caverns$(/t)$(br2)$(thing)Stone Types$(): Diorit, Gneis, Kristallschiefer, Marble, Migmatite, Phyllit, Tonschiefer, Travertine, Tuff",
-      "title": "Wulfenit, Molybdänit, Ölsand",
-      "type": "patchouli:text",
-      "anchor": "beneath_molydbenum"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Wulfenit",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/wulfenite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 43%$(br)$(thing)Source of$(): Lead, Molybdenum$(br)$(thing)Formula$(): PbMoO₄",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Ölsand",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/powellite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 34%$(br)$(thing)Source of$(): Molybdenum$(br)$(thing)Formula$(): CaMoO₄",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Molybdänit",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/molybdenite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 21%$(br)$(thing)Source of$(): Molybdenum$(br)$(thing)Formula$(): MoS₂",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:text",
-      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/10 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 25%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 140 — 190$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 25$(br)$(thing)Biomes$(): $(t:Muggy Bog)Muggy Bog$(/t)$(br2)$(thing)Stone Types$(): Diorit, Gneis, Kristallschiefer, Marble, Migmatite, Phyllit, Tonschiefer, Travertine, Tuff",
-      "title": "Zinkblende, Smaragd, Schwefel",
-      "type": "patchouli:text",
-      "anchor": "beneath_zinc"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Zinkblende",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/sphalerite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 60%$(br)$(thing)Melts into$(): Zinc$(br)$(thing)Formula$(): ZnS",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
       "name": "Smaragd",
       "multiblock": {
         "mapping": {
@@ -1882,12 +1675,72 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 30%$(br)$(thing)Melts into$(): Lead$(br)$(thing)Formula$(): PbS$(br)$(thing)Hazard$(): $(c)$(t:Requires Face Mask)Weakly Poisonous (Inhalation)$(/t)$()",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Prozentzahl$(): 57%$(br)$(thing)Melts into$(): Lead$(br)$(thing)Formula$(): PbS$(br)$(thing)Hazard$(): $(c)$(t:Requires Face Mask)Weakly Poisonous (Inhalation)$(/t)$()"
     },
     {
-      "Type": "patchouli:multiblock",
-      "name": "Schwefel",
+      "type": "patchouli:text",
+      "text": "$(thing)Prozentzahl$(): 28%$(br)$(thing)Melts into$(): Silver$(br)$(thing)Formula$(): Ag",
+      "title": "Sphalerite, Galena, Sulfur",
+      "anchor": "beneath_zinc",
+      "name": "Natives Silber",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/silver"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Lead",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/sphalerite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Prozentzahl$(): 14%$(br)$(thing)Melts into$(): Lead$(br)$(thing)Formula$(): Pb$(br)$(thing)Hazard$(): $(c)$(t:Requires Face Mask)Weakly Poisonous (Inhalation)$(/t)$()"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Galena",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/galena"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/20 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 22%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Tall and narrow)Pipe Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 80 — 140$(br)$(thing)Höhe$(): 60$(br)$(thing)Radius$(): 15$(br)$(thing)Biomes$(): $(t:Thorny Grove)Thorny Grove$(/t)$(br2)$(thing)Stone Types$(): Diorit, Gabbro, Gneis, Granit, Kristallschiefer, Migmatite, Travertine, Tuff",
+      "title": "Smoky Quartz, Quartz...",
+      "anchor": "beneath_quartz"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Smoky Quartz",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/sulfur"
@@ -1902,8 +1755,339 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 10%$(br)$(thing)Source of$(): Sulfur$(br)$(thing)Formula$(): S",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Prozentzahl$(): 44%$(br)$(thing)Used for$(): Applied Energistics 2$(br)$(thing)Formula$(): SiO₂"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)Prozentzahl$(): 27%$(br)$(thing)Used for$(): LV components$(br)$(thing)Formula$(): SiO₂",
+      "title": "Spodumene, Anthracite...",
+      "anchor": "beneath_lithium",
+      "name": "Quartz",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/quartzite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Saltpeter",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/spodumene"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Prozentzahl$(): 16%$(br)$(thing)Source of$(): Barium$(br)$(thing)Formula$(): BaSO₂"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Zeolith",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/anthracite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Prozentzahl$(): 11%$(br)$(thing)Source of$(): Aluminium, Oxygen$(br)$(thing)Formula$(): NaCa₄Si₂₇Al₉(H₂O)₂₈O₇₂"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Alunite",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/alunite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Percentage$(): 15%$(br)$(thing)Source of$(): Potassium, Aluminium$(br)$(thing)Formula$(): KAl₃Si₂H₆O₁₄",
+      "draw_filler": true
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/10 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 28%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 140 — 190$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 29$(br)$(thing)Biomes$(): $(t:Muggy Bog)Muggy Bog$(/t)$(br2)$(thing)Stone Types$(): Diorit, Gneis, Kristallschiefer, Marble, Migmatite, Phyllit, Tonschiefer, Travertine, Tuff",
+      "title": "Steinkohle, Pyrit",
+      "anchor": "beneath_sulfur"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Steinkohle",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/sulfur"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Prozentzahl$(): 66%$(br)$(thing)Used for$(): Fuel, Distillation$(br)$(thing)Formula$(): C"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Pyrit",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/pyrite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Prozentzahl$(): 33%$(br)$(thing)Melts into$(): Cast Iron$(br)$(thing)Formula$(): FeS₂"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Stibnite",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/stibnite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Percentage$(): 7%$(br)$(thing)Smelts into$(): Antimony$(br)$(thing)Formula$(): Sb₂S₃",
+      "draw_filler": true
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/10 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 25%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 80 — 140$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 25$(br)$(thing)Biomes$(): $(t:Tar Pools)Tar Pools$(/t)$(br2)$(thing)Stone Types$(): Diorit, Gabbro, Gneis, Granit, Kristallschiefer, Migmatite, Travertine, Tuff",
+      "title": "Tricalciumphosphat, Apatite...",
+      "anchor": "beneath_copper_tetrahedrite"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Tricalciumphosphat",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/tetrahedrite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Prozentzahl$(): 54%$(br)$(thing)Used for$(): Medicine, Fertiliser$(br)$(thing)Formula$(): Ca₃(PO₄)₂"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Apatite",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/stibnite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Prozentzahl$(): 36%$(br)$(thing)Source of$(): Calcium, Phosphorus, Forestry PTSD$(br)$(thing)Formula$(): Ca₅(PO₄)₃Cl"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Pyrit",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/silver"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Prozentzahl$(): 9%$(br)$(thing)Melts into$(): Cast Iron$(br)$(thing)Formula$(): FeS₂"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/10 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 25%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 140 — 190$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 27$(br)$(thing)Biomes$(): $(t:Verfallende Höhlen)Decaying Caverns$(/t)$(br2)$(thing)Stone Types$(): Diorit, Gneis, Kristallschiefer, Marble, Migmatite, Phyllit, Tonschiefer, Travertine, Tuff",
+      "title": "Wulfenit, Molybdänit, Ölsand",
+      "anchor": "beneath_phosphate"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Wulfenit",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/tricalcium_phosphate"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Prozentzahl$(): 43%$(br)$(thing)Source of$(): Lead, Molybdenum$(br)$(thing)Formula$(): PbMoO₄"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Ölsand",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/apatite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Prozentzahl$(): 34%$(br)$(thing)Source of$(): Molybdenum$(br)$(thing)Formula$(): CaMoO₄"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Molybdänit",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/pyrite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Prozentzahl$(): 21%$(br)$(thing)Source of$(): Molybdenum$(br)$(thing)Formula$(): MoS₂"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/10 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 25%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 140 — 190$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 25$(br)$(thing)Biomes$(): $(t:Muggy Bog)Muggy Bog$(/t)$(br2)$(thing)Stone Types$(): Diorit, Gneis, Kristallschiefer, Marble, Migmatite, Phyllit, Tonschiefer, Travertine, Tuff",
+      "title": "Zinkblende, Smaragd, Schwefel",
+      "anchor": "beneath_molydbenum"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Zinkblende",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/wulfenite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Prozentzahl$(): 60%$(br)$(thing)Melts into$(): Zinc$(br)$(thing)Formula$(): ZnS"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Smaragd",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/powellite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Prozentzahl$(): 30%$(br)$(thing)Melts into$(): Lead$(br)$(thing)Formula$(): PbS$(br)$(thing)Hazard$(): $(c)$(t:Requires Face Mask)Weakly Poisonous (Inhalation)$(/t)$()"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Schwefel",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/molybdenite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Prozentzahl$(): 10%$(br)$(thing)Source of$(): Sulfur$(br)$(thing)Formula$(): S"
     }
   ],
   "sortnum": 3

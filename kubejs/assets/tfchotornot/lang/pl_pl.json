@@ -1,10 +1,10 @@
 {
-  "item.tfchotornot.burlap_potholder": "Rękawica kuchenna z juty",
+  "item.tfchotornot.burlap_potholder": "Jutowa łapka do garnków",
   "item.tfchotornot.mittens": "Rękawice",
   "item.tfchotornot.silk_potholder": "Jedwabna łapka do garnków",
   "item.tfchotornot.tong_part.bismuth": "Część szczypiec z bizmutu",
   "item.tfchotornot.tong_part.bismuth_bronze": "Część szczypiec z brązu bizmutowego",
-  "item.tfchotornot.tong_part.black_bronze": "Część szczypce z czarnego brązu",
+  "item.tfchotornot.tong_part.black_bronze": "Część szczypiec z czarnego brązu",
   "item.tfchotornot.tong_part.black_steel": "Część szczypiec z czarnej stali",
   "item.tfchotornot.tong_part.blue_steel": "Część szczypiec z niebieskiej stali",
   "item.tfchotornot.tong_part.brass": "Część szczypiec z mosiądzu",
@@ -41,9 +41,8 @@
   "item.tfchotornot.tongs.zinc": "Szczypce z cynku",
   "item.tfchotornot.wool_potholder": "Wełniana łapka do garnków",
   "message.tfchotornot.item_getting_hot": "Ostrożnie! Twoja druga ręka przegrzewa się!",
-  "tfchotornot.creative_tab.tfchotornot": "TFC Hot or Not",
   "tooltip.tfchotornot.insulating_items": "Noś w drugiej dłoni, by uniknąć negatywnych efektów.",
   "tooltip.tfchotornot.toocold": "Zbyt zimne, by chwycić!",
-  "tooltip.tfchotornot.toohot": "Zbyt gorący by chwycić!",
+  "tooltip.tfchotornot.toohot": "Zbyt gorący, by chwycić!",
   "tooltip.tfchotornot.toolight": "Zbyt lekkie, by chwycić!"
 }

@@ -1,0 +1,18 @@
+{
+	"block.fluidlogistics.fluid_hatch.tooltip.condition1": "Jobb kattintáskor",
+	"create.fluidlogistics.hand_pointer.display_link.can_connect": "Csatlakozhat ✔",
+	"create.fluidlogistics.hand_pointer.frogport.can_connect": "Csatlakozhat ✔",
+	"create.fluidlogistics.hand_pointer.mailbox.can_connect": "Csatlakozhat ✔",
+	"create.fluidlogistics.hand_pointer.too_far": "Túl messze van",
+	"create.goggles.no_address": "Nincs",
+	"create.gui.stock_keeper.package_adress": "Csomag cím",
+	"create.hint.mechanical_fluid_gun_no_targets.title": "Nincs célpont",
+	"fluidlogistics.fluid_pump.transfer_direction": "Átviteli irány",
+	"fluidlogistics.mechanical_fluid_gun.schedule_mode": "Elrendezési mód",
+	"fluidlogistics.mechanical_fluid_gun.schedule_mode.forced_round_robin": "Szigorúan sorjában",
+	"fluidlogistics.mechanical_fluid_gun.schedule_mode.round_robin": "Sorjában",
+	"fluidlogistics.ponder.multi_fluid_tank_storage.text_2": "Csőhalózatok bármely oldalról képesek kiszivattyúzni, illetve betölteni folyadékot",
+	"fluidlogistics.ponder.multi_fluid_tank_storage.text_4": "Fontos, hogy túlélő módban nem lehetséges közvetlen kiszedni vagy betenni folyadékot",
+	"item.fluidlogistics.fluid_schematic.tooltip.condition1": "Kézben tartva",
+	"item.fluidlogistics.fluid_schematic.tooltip.condition2": "Jobb kattintás lopakodás közben"
+}

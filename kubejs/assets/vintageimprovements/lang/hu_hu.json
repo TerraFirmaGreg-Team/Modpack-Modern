@@ -1,11 +1,16 @@
 {
 	"vintageimprovements.gui.goggles.high": "Nagy",
 	"vintageimprovements.gui.goggles.low": "Alacsony",
+	"vintageimprovements.gui.goggles.medium": "Közepes",
+	"vintageimprovements.jei.text.any": "Bármelyik",
 	"vintageimprovements.jei.text.high": "Nagy",
 	"vintageimprovements.jei.text.low": "Alacsony",
+	"vintageimprovements.jei.text.medium": "Közepes",
 	"vintageimprovements.ponder.curving_press.text_5": "A feldolgozni kívánt tárgy ráhelyezhető egy lerakatra, vagy a présgép alá dobható",
 	"vintageimprovements.ponder.curving_press.text_7": "A présgép fenntartja, és automatikusan feldolgozza azokat",
+	"vintageimprovements.recipe.assembly.any": "Bármelyik",
 	"vintageimprovements.recipe.assembly.high": "Nagy",
 	"vintageimprovements.recipe.assembly.low": "Alacsony",
+	"vintageimprovements.recipe.assembly.medium": "Közepes",
 	"vintageimprovements.recipe.assembly.speed": "Sebesség"
 }

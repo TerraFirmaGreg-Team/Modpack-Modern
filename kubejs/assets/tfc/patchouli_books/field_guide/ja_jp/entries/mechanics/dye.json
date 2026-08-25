@@ -1,0 +1,45 @@
+{
+  "name": "染料",
+  "category": "tfc:mechanics",
+  "icon": "minecraft:red_dye",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "16色のバニラの$(thing)染料$()は、アイテムとして取得できます。ほとんどの花やその他のカラフルな植物は、$(l:mechanics/quern)石臼$()を使用して染料に粉砕できます。$(l:the_world/ores_and_minerals)鉱石$()の粉末は、直接染料に加工できます。$(l:the_world/ores_and_minerals#graphite)黒鉛$()、$(l:the_world/ores_and_minerals#kaolinite)カオリナイト$()、$(l:the_world/ores_and_minerals#sylvite)カリ岩塩$()、$(l:the_world/ores_and_minerals#lapis_lazuli)ラピス$()、石炭、木炭の粉末も染料に加工できます。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "tfc:bucket/red_dye",
+      "title": "液体染料",
+      "link_recipes": false,
+      "text": "染料は液体にすることができます。染料アイテムと1000mBの$(item)水$()を$(l:mechanics/pot)鍋$()で煮ると同量の$(thing)染料液$()が生成されます。染料液体は$(l:mechanics/barrels)樽$()でアイテムの着色に使用されます。"
+    },
+    {
+      "type": "tfc:sealed_barrel_recipe",
+      "recipe": "tfc:barrel/dye/red_concrete_powder",
+      "text": "樽でアイテムを染色するのは、アイテムを使用するよりも安価で、染料液体はわずか25mBしか必要としません。"
+    },
+    {
+      "type": "tfc:sealed_barrel_recipe",
+      "recipe": "tfc:barrel/dye/disc_chirp",
+      "text": "染料液は$(item)レコード$()の仕上げに使用できます。"
+    },
+    {
+      "type": "tfc:sealed_barrel_recipe",
+      "recipe": "tfc:barrel/dye/red_leather",
+      "text": "染料液は、まるで工芸品のように革を染色することさえできます！"
+    },
+    {
+      "type": "tfc:sealed_barrel_recipe",
+      "anchor": "lye",
+      "recipe": "tfc:barrel/dye/bleach_concrete_powder",
+      "text": "5つの$(item)木の灰$()と1000mBの$(item)水$()を$(l:mechanics/pot)鍋$()で煮ると、灰汁が生成されます。25mBの灰汁は、色付きアイテムの色を取り除きます。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(li)$(item)黒の染料$()は$(l:mechanics/scribing_table)筆記台$()に使用されます。$(li)$(item)赤の染料$()は$(l:mechanics/powderkegs)火薬樽$()に使用されます。$(li)未焼成の$(l:mechanics/decay#small_vessels)小さな壺$()と$(l:mechanics/decay#large_vessels)大きな容器$()は染色できます$()。",
+      "title": "その他"
+    }
+  ],
+  "read_by_default": true
+}

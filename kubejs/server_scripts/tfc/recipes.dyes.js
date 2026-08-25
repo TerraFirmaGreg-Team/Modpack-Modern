@@ -212,4 +212,18 @@ function registerTFCDyeRecipes(event) {
     }
 
     //#endregion
+	
+	//#region Dye Hammering
+	
+	global.MINECRAFT_DYE_NAMES.forEach(dye => {
+	event.shapeless(
+		Item.of(`minecraft:${dye}_dye`, 1),
+		[
+			`#tfc:makes_${dye}_dye`,
+			'#tfc:hammers'
+		]
+	).damageIngredient('#tfc:hammers', 1)
+})
+
+	//#endregion
 }

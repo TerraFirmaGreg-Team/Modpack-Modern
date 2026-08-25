@@ -90,14 +90,6 @@ function registerTFGRockLoots(event) {
 	})
 
 	// Other rocks
-	event.addBlockLootModifier('minecraft:gilded_blackstone')
-		.matchMainHand('#forge:tools/hammers')
-		.removeLoot(ItemFilter.ALWAYS_TRUE)
-		.addSequenceLoot(
-			LootEntry.of('tfg:rock/cobble_blackstone'),
-			LootEntry.of('tfc:powder/native_gold')
-		)
-
 	event.addBlockLootModifier('tfg:halite')
 		.removeLoot(ItemFilter.ALWAYS_TRUE)
 		.addWeightedLoot([

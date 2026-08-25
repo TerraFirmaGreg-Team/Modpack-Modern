@@ -13,10 +13,10 @@
 			"text": "L'arroseur est fabriqué avec une $(thing)plaque de cuivre$()."
 		},
 		{
-			"title": "Canalisation",
-			"item": "gtceu:copper_tiny_fluid_pipe",
 			"type": "patchouli:spotlight",
-			"text": "Les arroseurs doivent être raccordés à un système de tuyaux qui les alimentent en eau pour pouvoir travailler. Cela se fait en connectant une série de $(thing)Tuyaux de fluides$() à eux. Vous pouvez y pomper de l'eau avec une  $(thing)Pompe mécanique$()."
+			"text": "Les arroseurs doivent être raccordés à un système de tuyaux qui les alimentent en eau pour pouvoir travailler. Cela se fait en connectant une série de $(thing)Tuyaux de fluides$() à eux. Vous pouvez y pomper de l'eau avec une  $(thing)Pompe mécanique$().",
+			"title": "Canalisation",
+			"item": "gtceu:copper_tiny_fluid_pipe"
 		},
 		{
 			"type": "patchouli:text",

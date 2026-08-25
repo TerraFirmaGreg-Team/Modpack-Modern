@@ -51,5 +51,14 @@
     },
     "su.terrafirmagreg.core.client.screen.TFGNutritionScreen": {
         "ignore": true
+    },
+    "com.simibubi.create.content.logistics.factoryBoard.FactoryPanelSetItemScreen": {
+        "ignore": true
+    },
+    "com.yision.fluidlogistics.content.logistics.factoryGauge.client.ResourceFactoryGaugeSetFilterScreen": {
+        "ignore": true
+    },
+    "net.dries007.tfc.client.screen.BarrelScreen": {
+        "ignore": true
     }
 }

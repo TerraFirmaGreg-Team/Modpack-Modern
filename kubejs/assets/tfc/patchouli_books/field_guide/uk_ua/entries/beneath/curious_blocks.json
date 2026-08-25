@@ -5,19 +5,22 @@
 	"pages": [
 		{
 			"type": "patchouli:crafting",
+			"name": "Глина душ",
+			"text": "Акведуки також можуть переносити лаву та інші рідини, що може бути корисним під час будівництва $(l:beneath/hellforge)пекельної кузні$().",
 			"anchor": "blackstone_aqueduct",
-			"recipe": "tfg:shaped/blackstone_aqueduct",
-			"text": "Акведуки також можуть переносити лаву та інші рідини, що може бути корисним під час будівництва $(l:beneath/hellforge)пекельної кузні$()."
+			"recipe": "tfg:shaped/blackstone_aqueduct"
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "tfg:shapeless/hellbricks",
-			"text": "Пекельні цегли — це будівельний блок, який також використовується для $(l:beneath/hellforge)пекельної кузні$()."
+			"name": "Сірка",
+			"text": "Пекельна цегла — це будівельний блок, який також використовується для $(l:beneath/hellforge)пекельної кузні$().",
+			"recipe": "tfg:shapeless/hellbricks"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"item": "beneath:ancient_altar",
-			"text": "П’єдестал із піроксеніту можна використати, щоб виставити предмети, якими хочеш похвалитися!"
+			"name": "Тюк соломи",
+			"text": "П’єдестал із піроксеніту можна використати, щоб виставити предмети, якими хочеш похвалитися!",
+			"item": "beneath:ancient_altar"
 		},
 		{
 			"type": "patchouli:crafting",

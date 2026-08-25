@@ -1,0 +1,30 @@
+{
+  "name": "Podkowy",
+  "category": "tfc:sacks_n_such",
+  "icon": "sns:metal/horseshoe/steel",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(item)Horseshoes$() are smithed individually and then combined together in the crafting grid. What you didn't know Horses had 4 feet? $(br)$(br)By the way it's a really good idea to tie up your horse with the higher tier horseshoes, the typical safety pit won't work!"
+    },
+    {
+      "type": "tfc:sns/better_anvil_recipe",
+      "recipe": "sns:anvil/metal/horseshoe/steel",
+      "recipe2": "sns:anvil/metal/horseshoe/black_steel",
+      "recipe3": "sns:anvil/metal/horseshoe/blue_steel",
+      "recipe4": "sns:anvil/metal/horseshoe/red_steel",
+      "text4": "Every Horse deserves some shoes"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "sns:crafting/metal/horseshoes/steel",
+      "recipe2": "sns:crafting/metal/horseshoes/black_steel"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "sns:crafting/metal/horseshoes/blue_steel",
+      "recipe2": "sns:crafting/metal/horseshoes/red_steel"
+    }
+  ],
+  "read_by_default": true
+}

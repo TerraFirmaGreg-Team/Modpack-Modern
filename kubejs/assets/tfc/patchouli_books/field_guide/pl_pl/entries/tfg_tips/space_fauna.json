@@ -39,7 +39,7 @@
 			"entity": "ad_astra:star_crawler",
 			"scale": 0.4,
 			"name": "Gwiezdny pełzacz",
-			"text": "$(thing)Star Crawlers$() are a type of starfish. They are hostile and can be eaten."
+			"text": "$(thing)Gwiezdne pełzacze$() to rodzaj rozgwiazdy. Są wrogie i mogą być zjedzone."
 		},
 		{
 			"type": "patchouli:entity",

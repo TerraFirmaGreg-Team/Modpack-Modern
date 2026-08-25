@@ -1,5 +1,4 @@
 {
-	"__comment__": "This file was automatically created by mcresources",
 	"name": "Wild Animals",
 	"category": "tfc:the_world",
 	"icon": "tfc:medium_raw_hide",
@@ -122,38 +121,42 @@
 			"type": "patchouli:entity",
 			"entity": "tfc:moose",
 			"scale": 0.7,
-			"name": "무스",
-			"text": "The moose spawns in forests at $(l:the_world/climate#temperature)temperature$() below 10°C and above -15°C, and $(l:the_world/climate#rainfall)rainfall$() between 150 and 300mm."
+			"text": "The moose spawns in forests at $(l:the_world/climate#temperature)temperature$() below 10°C and above -15°C, and $(l:the_world/climate#rainfall)rainfall$() between 150 and 300mm.",
+			"name": "무스"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "tfc:wildebeest",
 			"scale": 0.7,
-			"name": "누",
-			"text": "The wildebeest spawns in open plains at any $(l:the_world/climate#temperature)temperature$() above 13°C, and $(l:the_world/climate#rainfall)rainfall$() between 90 and 380mm."
+			"text": "The wildebeest spawns in open plains at any $(l:the_world/climate#temperature)temperature$() above 13°C, and $(l:the_world/climate#rainfall)rainfall$() between 90 and 380mm.",
+			"name": "누"
 		},
 		{
 			"type": "patchouli:entity",
+			"text": "The bison spawns in open plains at $(l:the_world/climate#temperature)temperature$() below 15°C and above -10°C, and $(l:the_world/climate#rainfall)rainfall$() between 160 and 420mm.",
+			"title": "Prey",
 			"entity": "tfg:bison",
 			"scale": 0.7,
-			"name": "Bison",
-			"text": "The bison spawns in open plains at $(l:the_world/climate#temperature)temperature$() below 15°C and above -10°C, and $(l:the_world/climate#rainfall)rainfall$() between 160 and 420mm."
+			"name": "Bison"
 		},
 		{
-			"type": "patchouli:empty"
+			"type": "patchouli:empty",
+			"name": "토끼",
+			"text": "The rabbit is known to chew on carrots and cabbage. They are ubiquitous in the world, changing their coat based on climate. They only need 15mm of $(l:the_world/climate#rainfall)rainfall$() to spawn."
 		},
 		{
 			"type": "patchouli:text",
-			"anchor": "prey",
+			"name": "여우",
 			"text": "$(thing)Prey$() animals fear players and predators. They are adept at fleeing from danger, but generally cannot fight back. Some prey animals enjoy snacking on crops.",
+			"anchor": "prey",
 			"title": "Prey"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "tfc:rabbit",
 			"scale": 0.7,
-			"name": "토끼",
-			"text": "The rabbit is known to chew on carrots and cabbage. They are ubiquitous in the world, changing their coat based on climate. They only need 15mm of $(l:the_world/climate#rainfall)rainfall$() to spawn."
+			"text": "The rabbit is known to chew on carrots and cabbage. They are ubiquitous in the world, changing their coat based on climate. They only need 15mm of $(l:the_world/climate#rainfall)rainfall$() to spawn.",
+			"name": "토끼"
 		},
 		{
 			"type": "patchouli:entity",
@@ -185,8 +188,8 @@
 			"type": "patchouli:entity",
 			"entity": "tfc:bongo",
 			"scale": 0.9,
-			"name": "봉고",
-			"text": "The bongo spawns in forests at any $(l:the_world/climate#temperature)temperature$() above 15°C, and $(l:the_world/climate#rainfall)rainfall$() between 230 and 500mm."
+			"text": "The bongo spawns in forests at any $(l:the_world/climate#temperature)temperature$() above 15°C, and $(l:the_world/climate#rainfall)rainfall$() between 230 and 500mm.",
+			"name": "봉고"
 		},
 		{
 			"type": "patchouli:entity",
@@ -198,6 +201,7 @@
 			"type": "patchouli:entity",
 			"entity": "tfc:pheasant",
 			"scale": 0.7,
+			"name": "공작새",
 			"text": "The pheasant spawns in forests at any $(l:the_world/climate#temperature)temperature$() below 17°C and above -5°C, and $(l:the_world/climate#rainfall)rainfall$() between 100 and 300mm."
 		},
 		{
@@ -208,18 +212,19 @@
 		},
 		{
 			"type": "patchouli:entity",
+			"text": "The peafowl spawns in forests at any $(l:the_world/climate#temperature)temperature$() above 14°C, and $(l:the_world/climate#rainfall)rainfall$() between 190 and 500mm.",
+			"title": "Aquatic Animals",
 			"entity": "tfc:peafowl",
 			"scale": 0.6,
-			"name": "공작새",
-			"text": "The peafowl spawns in forests at any $(l:the_world/climate#temperature)temperature$() above 14°C, and $(l:the_world/climate#rainfall)rainfall$() between 190 and 500mm."
+			"name": "공작새"
 		},
 		{
 			"type": "patchouli:entity",
+			"text": "The lemming spawns at any $(l:the_world/climate#temperature)temperature$() below -3°C and above -12°C, and $(l:the_world/climate#rainfall)rainfall$() between 160 and 500mm.",
 			"entity": "tfg:lemming",
 			"scale": 1.5,
 			"offset": -0.2,
-			"name": "Lemming",
-			"text": "The lemming spawns at any $(l:the_world/climate#temperature)temperature$() below -3°C and above -12°C, and $(l:the_world/climate#rainfall)rainfall$() between 160 and 500mm."
+			"name": "Lemming"
 		},
 		{
 			"type": "patchouli:entity",
@@ -237,12 +242,13 @@
 		},
 		{
 			"type": "patchouli:text",
-			"anchor": "aquatic",
 			"text": "$(thing)Aquatic Animals$() are a broad category which covers a number of different behaviors. They may be $(thing)Shore Dwellers$(), $(thing)Fish$(), $(thing)Shellfish$(), or $(thing)Large Aquatic Creatures$()",
-			"title": "Aquatic Animals"
+			"title": "Aquatic Animals",
+			"anchor": "aquatic"
 		},
 		{
 			"type": "patchouli:text",
+			"name": "대구",
 			"text": "$(thing)Shore Animals$() only spawn on sea shores and spend some of their day swimming, and some walking on the beach. They are curious creatures, and will follow the player around, but cannot be tamed."
 		},
 		{
@@ -261,6 +267,7 @@
 		},
 		{
 			"type": "patchouli:text",
+			"name": "열대어",
 			"text": "$(thing)Fish$() are small creatures that swim in water. Most of them can be $(l:mechanics/fishing)fished$(). Some prefer oceans, rivers, or lakes.",
 			"title": "물고기"
 		},
@@ -280,10 +287,11 @@
 		},
 		{
 			"type": "patchouli:entity",
+			"text": "Jellyfish live in warmer oceans, with a $(l:the_world/climate#temperature)temperature$() of at least 18°C.",
+			"title": "Shellfish",
 			"entity": "tfc:jellyfish",
 			"scale": 0.7,
-			"name": "해파리",
-			"text": "Jellyfish live in warmer oceans, with a $(l:the_world/climate#temperature)temperature$() of at least 18°C."
+			"name": "해파리"
 		},
 		{
 			"type": "patchouli:entity",
@@ -307,13 +315,15 @@
 			"text": "Bluegill spawn in any river or lake with a $(l:the_world/climate#temperature)temperature$() of at least -10°C and at most 26°C."
 		},
 		{
-			"type": "patchouli:empty"
+			"type": "patchouli:empty",
+			"name": "투구게",
+			"text": "Horseshoe crabs spawn in oceans of moderate climate, $(l:the_world/climate#temperature)temperature$() between 10 and 21°C and with a $(l:the_world/climate#rainfall)rainfall$() of at most 400mm."
 		},
 		{
 			"type": "patchouli:text",
-			"anchor": "shellfish",
 			"text": "$(thing)Shellfish$() are small animals that live on the floor of bodies of water. They cannot be fished, but drop shells that can be eaten or made into $(l:mechanics/flux)flux$(). Shellfish can be $(l:mechanics/fishing)bait$() for fish.",
-			"title": "Shellfish"
+			"title": "Shellfish",
+			"anchor": "shellfish"
 		},
 		{
 			"type": "patchouli:entity",
@@ -338,10 +348,11 @@
 		},
 		{
 			"type": "patchouli:entity",
+			"text": "Horseshoe crabs spawn in oceans of moderate climate, $(l:the_world/climate#temperature)temperature$() between 10 and 21°C and with a $(l:the_world/climate#rainfall)rainfall$() of at most 400mm.",
+			"title": "오징어",
 			"entity": "tfc:horseshoe_crab",
 			"scale": 0.7,
-			"name": "투구게",
-			"text": "Horseshoe crabs spawn in oceans of moderate climate, $(l:the_world/climate#temperature)temperature$() between 10 and 21°C and with a $(l:the_world/climate#rainfall)rainfall$() of at most 400mm."
+			"name": "투구게"
 		},
 		{
 			"type": "patchouli:empty"

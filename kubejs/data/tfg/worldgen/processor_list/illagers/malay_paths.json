@@ -54,10 +54,31 @@
 					"output_state": {
 						"Name": "afc:wood/planks/cypress"
 					}
-				},
-
-
-
+				}
+			]
+		},
+		{		
+			"processor_type": "lithostitched:condition",
+			"random_mode": {
+				"mode": "per_block",
+				"name": "path:gravity"
+			},
+			"if_true": [
+				{
+				"type": "lithostitched:matching_blocks",
+				"blocks": "tfc:rock/bricks/andesite",
+				"match_type": "input"
+				}
+			],
+			"then": {
+						"processor_type": "minecraft:gravity",
+						"heightmap": "WORLD_SURFACE_WG",
+						"offset": -1
+			}
+		},
+		{
+			"processor_type": "minecraft:rule",
+			"rules": [
 				{
 					"input_predicate": {
 						"block": "tfc:rock/bricks/andesite",

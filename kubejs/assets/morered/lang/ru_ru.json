@@ -38,15 +38,11 @@
   "block.morered.redwire_post": "Стойка красного провода",
   "block.morered.redwire_post_plate": "Пластина стойки красного провода",
   "block.morered.redwire_post_relay_plate": "Релейная пластина стойки красного провода",
-  "block.morered.soldering_table": "Паяльный стол",
-  "block.morered.stone_plate": "Каменная пластина",
   "block.morered.white_network_cable": "Белый сетевой кабель",
   "block.morered.xnor_gate": "Элемент ИСКЛЮЧАЮЩЕЕ ИЛИ-НЕ",
   "block.morered.xor_gate": "Элемент ИСКЛЮЧАЮЩЕЕ ИЛИ",
   "block.morered.yellow_network_cable": "Жёлтый сетевой кабель",
   "gui.morered.category.soldering": "Пайка",
   "item.morered.bundled_cable_spool": "Катушка пучкового кабеля",
-  "item.morered.red_alloy_ingot": "Слиток красного сплава",
-  "item.morered.redwire_spool": "Катушка красного провода",
-  "itemGroup.morered": "More Red"
+  "item.morered.redwire_spool": "Катушка красного провода"
 }

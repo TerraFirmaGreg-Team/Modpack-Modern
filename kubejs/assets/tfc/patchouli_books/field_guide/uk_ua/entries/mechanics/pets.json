@@ -1,5 +1,4 @@
 {
-  "__comment__": "This file was automatically created by mcresources",
   "name": "Домашні тварини",
   "category": "tfc:mechanics",
   "icon": "minecraft:lead",
@@ -24,11 +23,12 @@
     },
     {
       "type": "patchouli:text",
-      "title": "Варіанти собак",
-      "text": "Собаки бувають різних варіантів залежно від того, від якого типу вовка їх було приручено.$(br2)На наступних сторінках наведено таблицю кліматичних умов, де можна знайти конкретні варіанти вовків."
+      "text": "Собаки бувають різних варіантів залежно від того, від якого типу вовка їх було приручено.$(br2)На наступних сторінках наведено таблицю кліматичних умов, де можна знайти конкретні варіанти вовків.",
+      "title": "Варіанти собак"
     },
     {
       "type": "patchouli:image",
+      "text": "Кіт — це домашній улюбленець, який їсть зерно, приготоване м'ясо та молочні продукти. Він допомагатиме тобі полювати на сухопутну здобич і дрібну рибу. Коли він удома, то без жодних наказів нищитиме шкідників. Коти не завжди слухаються, коли їм наказують сісти.",
       "images": [
         "tfg:textures/gui/field_guide/dog_variants.png"
       ],
@@ -36,6 +36,7 @@
     },
     {
       "type": "tfc:table",
+      "text": "Responsible pet owners must learn to control their pet. Luckily, this is easy. By pressing $(item)$(k:key.use)$() while holding $(item)$(k:key.sneak)$() with an empty hand, the $(thing)Pet Screen$() may be opened. This screen contains a number of commands that can be used to tell the pet what to do: $(thing)Relax$(), $(thing)We're Home$(), $(thing)Sit$(), $(thing)Follow Me$(), and $(thing)Hunt With Me$().",
       "strings": [
         {
           "text": "Варіант",
@@ -100,7 +101,6 @@
           "text": "Помірний (Ліси)"
         }
       ],
-      "text": "",
       "title": "Місця проживання вовків",
       "legend": [],
       "columns": 1,
@@ -113,13 +113,14 @@
     },
     {
       "type": "patchouli:empty",
+      "text": "$(thing)Відпочивай$() — це початковий стан домашніх улюбленців, і ця команда повертає їх до нього. Якщо улюбленець перебуває вдома, він бродитиме територією, але не залишатиме її, і спатиме раз на день. Якщо він перебуває занадто далеко від дому, то безцільно ходитиме довкола.",
       "draw_filler": false
     },
     {
       "type": "patchouli:entity",
+      "text": "Кіт.",
       "entity": "tfc:cat{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
-      "scale": 0.7,
-      "text": "Кіт."
+      "scale": 0.7
     },
     {
       "type": "patchouli:text",

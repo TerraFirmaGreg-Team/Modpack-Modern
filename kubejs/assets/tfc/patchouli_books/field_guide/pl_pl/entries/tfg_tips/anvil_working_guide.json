@@ -25,7 +25,7 @@
             ],
             "border": false,
             "anchor": "ui_explained",
-            "tile": "Interfejs i Ty",
+            "title": "The UI and You",
             "text": "The UI for the Anvil with TFC Anvil Helper Enabled, Color Coded."
         },
         {
@@ -77,7 +77,7 @@
                 "tfg:textures/gui/field_guide/anvil_working_guide/perfectly_forged_item.png"
             ],
             "border": false,
-            "text": "A Perfectly Forged Wrought Iron Pickaxe Head"
+            "text": "Idealnie wykuta żelazna głowica kilofa"
         },
         {
             "type": "patchouli:spotlight",

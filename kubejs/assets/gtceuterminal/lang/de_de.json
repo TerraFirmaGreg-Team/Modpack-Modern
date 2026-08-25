@@ -1,13 +1,17 @@
 {
-  "item.gtceuterminal.multi_structure_manager": "Multistruktur-Manager",
-  "item.gtceuterminal.schematic_interface": "Schematik-Interface",
+  "gui.gtceuterminal.manager_settings.common.no": "§cAus",
+  "gui.gtceuterminal.manager_settings.common.yes": "§aEin",
+  "gui.gtceuterminal.material_list.source.none": "Nichts",
+  "gui.gtceuterminal.theme_editor.preset.cyan": "Türkis",
   "item.gtceuterminal.dismantler": "Demontierer",
-  "item.gtceuterminal.terminal.success": "Multiblock erfolgreich aufgebaut",
-  "item.gtceuterminal.terminal.failed": "Multiblock-Aufbau fehlgeschlagen",
-  "item.gtceuterminal.terminal.cooldown": "Terminal hat noch Abklingzeit",
-  "item.gtceuterminal.terminal.not_controller": "Dies ist kein Multiblock-Controller",
-  "item.gtceuterminal.terminal.already_formed": "Multiblock ist bereits vervollständigt",
+  "item.gtceuterminal.dismantler.tooltip": "Zerlege Multiblocks und erhalte die Komponenten zurück",
+  "item.gtceuterminal.multi_structure_manager": "Multistruktur-Manager",
   "item.gtceuterminal.multi_structure_manager.tooltip": "Verwalte und verbessere nahegelegene Multiblocks",
+  "item.gtceuterminal.schematic_interface": "Schematik-Interface",
   "item.gtceuterminal.schematic_interface.tooltip": "Kopiere und füge Multiblock-Schematiken ein",
-  "item.gtceuterminal.dismantler.tooltip": "Zerlege Multiblocks und erhalte die Komponenten zurück"
+  "item.gtceuterminal.terminal.already_formed": "Multiblock ist bereits vervollständigt",
+  "item.gtceuterminal.terminal.cooldown": "Terminal hat noch Abklingzeit",
+  "item.gtceuterminal.terminal.failed": "Multiblock-Aufbau fehlgeschlagen",
+  "item.gtceuterminal.terminal.not_controller": "Dies ist kein Multiblock-Controller",
+  "item.gtceuterminal.terminal.success": "Multiblock erfolgreich aufgebaut"
 }

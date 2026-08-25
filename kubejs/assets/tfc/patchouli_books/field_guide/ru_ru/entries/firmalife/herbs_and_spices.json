@@ -1,5 +1,4 @@
 {
-	"__comment__": "This file was automatically created by mcresources",
 	"name": "Травы и специи",
 	"category": "tfc:firmalife",
 	"icon": "firmalife:spice/basil_leaves",
@@ -10,6 +9,7 @@
 		},
 		{
 			"type": "tfc:multimultiblock",
+			"text": "$(thing)Дикий базилик$() растёт при температуре от 12 до 25 °C и осадках 300–500 мм.",
 			"multiblocks": [
 				{
 					"pattern": [
@@ -39,11 +39,13 @@
 				}
 			],
 			"name": "Базилик",
-			"text": "$(thing)Дикий базилик$() растёт при температуре от 12 до 25 °C и осадках 300–500 мм.",
 			"enable_visualize": false
 		},
 		{
 			"type": "tfc:multimultiblock",
+			"name": "Лавр",
+			"text": "$(thing)Дикий лавровый лист$() растёт при температуре от 8 до 14 °C и осадках 25–225 мм.",
+			"enable_visualize": false,
 			"multiblocks": [
 				{
 					"pattern": [
@@ -71,13 +73,11 @@
 						"X": "firmalife:plant/bay_laurel[stage=1]"
 					}
 				}
-			],
-			"name": "Лавр",
-			"text": "$(thing)Дикий лавровый лист$() растёт при температуре от 8 до 14 °C и осадках 25–225 мм.",
-			"enable_visualize": false
+			]
 		},
 		{
 			"type": "tfc:multimultiblock",
+			"text": "$(thing)Дикий кардамон$() растёт при температуре от 18 до 30 °C и осадках 350–500 мм.",
 			"multiblocks": [
 				{
 					"pattern": [
@@ -107,11 +107,13 @@
 				}
 			],
 			"name": "Кардамон",
-			"text": "$(thing)Дикий кардамон$() растёт при температуре от 18 до 30 °C и осадках 350–500 мм.",
 			"enable_visualize": false
 		},
 		{
 			"type": "tfc:multimultiblock",
+			"name": "Кинза",
+			"text": "$(thing)Дикий кориандр$() растёт при температуре от 5 до 15 °C и осадках 0–150 мм.",
+			"enable_visualize": false,
 			"multiblocks": [
 				{
 					"pattern": [
@@ -139,13 +141,11 @@
 						"X": "firmalife:plant/cilantro[stage=1]"
 					}
 				}
-			],
-			"name": "Кинза",
-			"text": "$(thing)Дикий кориандр$() растёт при температуре от 5 до 15 °C и осадках 0–150 мм.",
-			"enable_visualize": false
+			]
 		},
 		{
 			"type": "tfc:multimultiblock",
+			"text": "$(thing)Дикий тмин$() растёт при температуре от 6 до 20 °C и осадках 50–250 мм.",
 			"multiblocks": [
 				{
 					"pattern": [
@@ -175,7 +175,6 @@
 				}
 			],
 			"name": "Тмин",
-			"text": "$(thing)Дикий тмин$() растёт при температуре от 6 до 20 °C и осадках 50–250 мм.",
 			"enable_visualize": false
 		},
 		{
