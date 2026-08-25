@@ -142,6 +142,7 @@ function registerTFGOverworldBlockTags(event) {
 	event.add("tfc:monster_spawns_on", "tfg:pelitic_hornfels");
 	event.add("tfc:monster_spawns_on", "minecraft:packed_ice");
 	event.add("tfc:monster_spawns_on", "minecraft:blue_ice");
+    event.add("tfc:monster_spawns_on", "#forge:sand");
 
 	event.add('tfg:camel_faster_on', 'tfg:coarse_dirt/silty_loam')
 	event.add('tfg:camel_faster_on', 'tfg:coarse_dirt/sandy_loam')

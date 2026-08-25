@@ -2,18 +2,22 @@
 
 ## Unreleased
 ### Breaking changes
-- Chromium through Ferrochrome now requires Circuit 2 @TomPlop
+- Chromium through Ferrochrome now requires Circuit 2, fixing a recipe conflict (#4810) @TomPlop
+- Changes to how AE2 components are crafted on the moon will be coming soon, so start setting up a railgun!
 ### Changes
 #### Ambiental
 - Tiger and lion clothing are now cooling instead of warming @ashleney
-- Rebalanced all clothing into several tiers. For warming: primitive and insulated have +2 warmth, wool has +4 warmth, and animal clothes have +8. For cooling: silk, burlap, and linen are -2 warmth, animal clothes have -4, and new phantom silk and red elk clothes have -8. Clothing that's more difficult to obtain has more durability and insulation to compensate. @ashleney
+- Rebalanced all clothing into several tiers. _For warming:_ primitive and insulated have +2 warmth, wool has +4 warmth, and animal clothes have +8. _For cooling:_ silk, burlap, and linen are -2 warmth, animal clothes have -4, and new phantom silk and red elk clothes have -8. Clothing that's more difficult to obtain has more durability and insulation to compensate. @ashleney
 - Armor no longer affects player temperature (yes this includes the blue steel diving suit, though it does still make you fireproof) @ashleney
 - All recipes have been changed @Pyritie
-- Added new clothing: phantom silk (cooling), red elk (cooling), and cotton @ashleney @Atraxia @Pyritie
-#### Other changes
+- Added new clothing: phantom silk (cooling), red elk (cooling), and cotton @ashleney @NaharaSabrea @Pyritie
+#### GregTech
 - Add more informations to the GUI of the Large Boiler and Geologic Vulcanizer (fluid consumption) @TomPlop
 - Geological Vulcanizer now consummes less Natural Gas with each parallel @TomPlop
 - The Gas Well now depletes fluid vein way slower (same as the MV Fluid Rig) @TomPlop
+- Fixed being able to get wraptor/sniffer/glacian sheep shearable items from earth shearable animals via the pastoral rancher (#4813) @TomPlop
+- Fixed the wraptor/sniffer/glacian sheep output amounts in the pastoral rancher to better match their manual shearing amounts (#4814) @TomPlop
+#### Other changes
 - Added combustion engines for generating SU from combustible fuels. You can use any fluid that works in a GregTech combustion generator or gas turbine (#4766) @Pyritie
 - Added two more "start room" variations to mineshafts, and added monsters to it @Pyritie
 - Reduced the amount of mobs (and treasure) in Beneath towers, so they are more useful for traveling @Pyritie
@@ -28,8 +32,15 @@
 - Added recipes to convert rose quartz tiles back into blocks (#4768) @applenper
 - Added more cloth blocks @Pyritie
 - Added earlier ways to compress fertilizers into their "pure" form which give 100% nutrients at once @Pyritie
-- Changed a bunch of textures
+- Changed a bunch of textures to their vexxed visuals version @Pyritie
+- Added a new texture for pumpkin chunks @NaharaSabrea
 - Added new quests for concrete and steel supports, and fixed the drum/crate quests missing black/bismuth bronze (#4784) @zxro
+- Added new quests for trains (#4774) @OLOXpl
+- Added a way to craft dyes pre-quern, so your first vessels can be dyed (#4806) @jurjen909
+- Added a mod to properly have borderless fullscreen (#4762) @Pyritie
+- Removed some inventory sorting buttons on more TFC screens that caused issues (#4711) @Pyritie
+- Changed the crankbow to wrought iron tier @Pyritie
+- Removed gregbrine @Pyritie
 ### Bug fixes
 - Fixed mobs suffocating to death inside supports @Pyritie
 - Fixed the hose pulley collecting "flowing" oil fluid instead of normal oil fluid @Pyritie
@@ -38,17 +49,23 @@
 - Fixed the bluemap resource pack so it understands the newer grass blocks (#4752) @jmecn
 - Fixed recipes not loading correctly on certain linux distros @Pyritie
 - Fixed flint knapping not consuming the flint when starting (#4744) @Pyritie
+- Fixed the artisan table not having a correct tool to break it with (#4827) @Redeix
+- Fixed locometal windows not dropping when broken with a gem saw or wrench (#4807) @Sylenoid
+- Fixed gregtech wrenches not interacting with some of create's block entities, like mechanical crafters (#3427) @carbonatek
+- Fixed some rendering issues with connecting create to TFC's kinetic blocks @Redeix
+- Fixed some of TFC's kinetic blocks accepting stress input from sources that were rotated the wrong way @Redeix
+- Fixed sodium bisulfate having an incorrect molecule (#4821) @BlueBoat29
 ### Mods
+#### Jellies
+- Fixed an issue with some jellies not spawning on sand @Pyritie
+- Reduced the amount of jellies that can spawn on the overworld, moon, and mars @SakuraKitsurugi
+- Added nutritional mash, a new food which all jellies can eat @SakuraKitsurugi
 #### ArborFirmaCraft
 - Added new EMI pages for tree tapping @Redeix
 #### TerraFirmaCraft
 - Fixed a crash when sometimes generating chunks with a sealed barrel from structures (such as in the Beneath) @Pyritie
 #### Wakes
 - Fixed several issues involving shaders
-#### Create: Fluid Logistic
-- Added CC:Tweaked compatibility
-- Fixed factory gauge promises overclearing
-- Fixed factory gauges connected to a fluid packager leading to world corruption
 #### ExtendedAE
 - Added exact mode for Precise Export Bus
 #### TACZ/PlayerRevive compatibility
@@ -79,7 +96,7 @@
 - Added coins to some loot tables, and made coins meltable @Pyritie
 - Reduced the drop chance of weapons and equipment from piglin brutes @Pyritie
 - Added a new amethyst/opal/red garnet ore vein to the overworld, and changed the ore processing byproducts of amethyst and opal @Pyritie
-- Added new Gilsonite and Obsidian block sets @Atraxia
+- Added new Gilsonite and Obsidian block sets @NaharaSabrea
 - Stone dusts can now also be turned into Mortar and Crushed Base Course (#4648) @Redeix
 - Changed the textures of wrought iron and stainless steel firmalife greenhouses again to better match the material textures @Pyritie
 - Vanadium magnetite ore/dust can now also be directly smelted into cast iron @Pyritie
@@ -287,7 +304,7 @@
 - Halite blocks (in the Salt Flats and Salt Caves biomes) now gives less salt when mined @Pyritie
 - Renamed Nether Quartz to Smoky Quartz because the netherlands isn't real @Pyritie
 - Breaking the large quartz crystals in the Geothermal Springs biome with a gem saw now gives you the full blocks to build with @Pyritie
-- Added a new texture for the Powderbarrel @Atraxia
+- Added a new texture for the Powderbarrel @NaharaSabrea
 - Added purified irarsite, ruarsite, and ferhodsite ores to the `#tfg:platinum_ore_group` tag (#4367) @AzureCrafts
 - Removed matchboxes from mineshaft loot tables, replaced them with lighters @Pyritie
 - You can now use other kinds of water and oils to cool down hot things in barrels, as well as Ice Slush to cool them even faster (#4384) @theMegaTech
@@ -366,7 +383,7 @@ Due to some issues with servers, we've changed the default world generation for 
 #### Ores
 - Added more ores to the Beneath, including four brand new ones! @TomPlop
 - Added a new multiblock that exclusively works at the bottom of the Beneath - the Geologic Vulcanizer. Right now, it can process all your ores in one single recipe *and* return a bit of extra than you'd normally get doing all the steps separately! However, it's significantly more complicated to run... check the quest in LV for more details. @TomPlop
-- Added new textures for raw ore items and blocks! @Atraxia @Redeix
+- Added new textures for raw ore items and blocks! @NaharaSabrea @Redeix
 - Increased the processing duration of vibration tables @Pyritie
 - Uvarovite now only requires cupronickel coils instead of kanthal @Pyritie
 #### New structures
@@ -376,7 +393,7 @@ Due to some issues with servers, we've changed the default world generation for 
 #### Other changes
 - If you can't find feathers, you can now also use hardwood strips as arrow fletching. You can now also use bone needles as the pointy end of an arrow @Pyritie
 - Made player heads craftable. Check out the client-side mod [lsc's Player Dolls](https://www.curseforge.com/minecraft/texture-packs/lscs-player-dolls) to turn them into into adorable dolls. @ashleney
-- Added a Wireless Charger to charge items in your inventory @TomPlop @AtraxiA
+- Added a Wireless Charger to charge items in your inventory @TomPlop @NaharaSabrea
 - Added a Chameleon Spray Can, a spray can that can do all colors in one item, as well as some extra text effects on signs @Phoenixvine32908 @TomPlop
 - Reduced the aggro range of Spectres from 35 blocks to 16 @Pyritie
 - Increased the HP of cliff hangers and leaf hangers, but now they let go of the player when attacked @Pyritie

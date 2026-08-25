@@ -27,10 +27,10 @@ function registerSpeciesRecipes(event) {
 		'CBC',
 		'DED'
 	], {
-		A: '#forge:rods/steel',
+		A: '#forge:rods/wrought_iron',
 		B: 'minecraft:crossbow',
 		C: '#forge:small_gears/wrought_iron',
-		D: 'tfc:metal/chain/steel',
+		D: '#tfg:metal_chains',
 		E: 'create:hand_crank'
 	}).id('tfg:shaped/crankbow')
 
