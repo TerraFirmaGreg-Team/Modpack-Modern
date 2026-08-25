@@ -36,7 +36,6 @@
 	"deafission.machine.material_holder.tooltip": "存储并容纳基于热辐射的裂变反应堆合成配方所需输入材料。",
 	"deafission.machine.redstone_port.tooltip": "使用扳手切换工作模式。",
 	"deafission.overlay.hb_capacity": "容量: %s HU/°",
-	"deafission.overlay.hb_energy": "%s HU",
 	"deafission.overlay.hb_load": "负载: %s%% // %s%%",
 	"deafission.overlay.hb_temp": "温度: %s° / %s°",
 	"deafission.recipe.coolant_heat_per_tick": "热量: -%s HU/t/°",
