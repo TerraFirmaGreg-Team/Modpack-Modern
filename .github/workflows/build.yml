@@ -14,6 +14,7 @@ on:
       - 'CHANGELOG.md'
       - 'pakku-lock.json'
       - 'pakku.json'
+      - '.github/workflows/build.yml'
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
