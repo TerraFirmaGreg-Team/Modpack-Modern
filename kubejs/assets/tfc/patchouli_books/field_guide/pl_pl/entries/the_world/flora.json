@@ -235,7 +235,7 @@
           "X": "tfc:plant/sago[fluid=water]"
         }
       },
-      "name": "Standard Water",
+      "name": "Standardowa woda",
       "text": "Standard water plants can be broken with a $(thing)$()Knife$() to get $(thing)Seaweed$().",
       "enable_visualize": false
     },
@@ -254,7 +254,7 @@
           "X": "tfc:plant/manatee_grass[fluid=salt_water]"
         }
       },
-      "name": "Water Grass",
+      "name": "Trawa wodna",
       "text": "Water grasses are grasses that grow under the water.",
       "enable_visualize": false
     },
