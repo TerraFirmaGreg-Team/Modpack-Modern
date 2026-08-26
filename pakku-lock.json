@@ -16391,31 +16391,8 @@
             },
             "files": [
                 {
-                    "type": "modrinth",
-                    "file_name": "toomanyrecipeviewers-0.9.0+mc.20.1.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/yFypjcfd/versions/PSC3dlCl/toomanyrecipeviewers-0.9.0+mc.20.1.jar",
-                    "id": "PSC3dlCl",
-                    "parent_id": "yFypjcfd",
-                    "hashes": {
-                        "sha512": "cec208aaef2c7875f18091124fd4b5df05646c905d80a65a203e85664504bbe63dd05afb9a6c419923ca7fe04ec47a775660f984bc5115d12188f47986d5eff8",
-                        "sha1": "68b17e577526582ac22611d412433022647fc674"
-                    },
-                    "required_dependencies": [
-                        "fRiHVvU7"
-                    ],
-                    "size": 1751185,
-                    "date_published": "2026-06-28T20:48:08.527020Z"
-                },
-                {
                     "type": "curseforge",
-                    "file_name": "toomanyrecipeviewers-0.9.0+mc.20.1.jar",
+                    "file_name": "toomanyrecipeviewers-0.8.1+mc.20.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -16423,18 +16400,41 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8336/855/toomanyrecipeviewers-0.9.0+mc.20.1.jar",
-                    "id": "8336855",
+                    "url": "https://edge.forgecdn.net/files/8145/843/toomanyrecipeviewers-0.8.1+mc.20.1.jar",
+                    "id": "8145843",
                     "parent_id": "1194921",
                     "hashes": {
-                        "sha1": "68b17e577526582ac22611d412433022647fc674",
-                        "md5": "807ea941ce3ca32fe5484aa7f4ca32b6"
+                        "sha1": "c83ea731d2977c178ac98502a79013bdbba916be",
+                        "md5": "9b5213d13b7217248187486cf2a7e844"
                     },
                     "required_dependencies": [
                         "580555"
                     ],
-                    "size": 1751185,
-                    "date_published": "2026-06-28T20:48:05.583Z"
+                    "size": 1683000,
+                    "date_published": "2026-05-25T21:23:39.273Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "toomanyrecipeviewers-0.8.1+mc.20.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/yFypjcfd/versions/OncYLjJM/toomanyrecipeviewers-0.8.1+mc.20.1.jar",
+                    "id": "OncYLjJM",
+                    "parent_id": "yFypjcfd",
+                    "hashes": {
+                        "sha512": "48f666d45e696b922048c13758fee465bf528c7a783904f3677f55d4e8744141a182596f7afd9808d8506e1d30f77ce602f4a7920fb283d04a33305b567972de",
+                        "sha1": "c83ea731d2977c178ac98502a79013bdbba916be"
+                    },
+                    "required_dependencies": [
+                        "fRiHVvU7"
+                    ],
+                    "size": 1683000,
+                    "date_published": "2026-05-25T21:23:44.541605Z"
                 }
             ]
         },
