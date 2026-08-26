@@ -32,6 +32,16 @@ const registerSNSRecipes = (event) => {
 		]
 	).id('sns:sewing/burlap_sack')
 	
+	event.recipes.gtceu.assembler('sns:assembler/burlap_sack')
+		.itemInputs(
+			'3x #forge:string',
+			'3x #tfc:sewing_dark_cloth'
+		)
+		.notConsumable('#tfc:sewing_needles')
+		.itemOutputs('sns:burlap_sack')
+		.duration(100)
+		.EUt(GTValues.VA[GTValues.LV])
+	
 	event.recipes.tfc.sewing(
 		'sns:seed_pouch',
 		[
