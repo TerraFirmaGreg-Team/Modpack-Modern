@@ -653,6 +653,14 @@ global.TFG_CREATE_GENERIC_FOOD_ITEM = /** @type {TFGCreateGenericFoodItem[]} */ 
 			saturation: 1.5
 		}
 	},
+	// Pickle Jar
+	{
+		id: 'tfg:food/pickle_jar',
+		texture: 'tfg:item/food/pickle_jar',
+		mealType: 'dynamic',
+		returnItem:'tfc:empty_jar',
+		tags: ['tfc:foods/sealed_jars']
+	}
 	// #endregion
 ]);
 

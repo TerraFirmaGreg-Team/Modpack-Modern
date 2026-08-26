@@ -48,8 +48,22 @@ function registerTFGPreservationFoodRecipes(event) {
 			itemOutputProvider: TFC.isp.copyInput().addTrait("firmalife:dried")
 		});
 	});
-
 	//#endregion
+
+	//#region Pickle Jars
+	global.processorRecipe(event, `pickle_jar`, 2400, GTValues.VA[GTValues.ULV], {
+		itemInputs: [`2x tfg:cucumber_product`, '1x tfc:food/garlic', '1x #tfc:foods/vegetables', '1x #tfg:foods/spices', '4x tfc:powder/salt', '1x #tfc:empty_jar_with_lid'],
+		fluidInputs: [Fluid.of('tfc:vinegar', 250)],
+		itemOutputs: ['tfg:food/pickle_jar'],
+		circuit: 15,
+		itemOutputProvider: TFC.isp.of('tfg:food/pickle_jar')
+			.meal(
+			(food) => food.hunger(4).decayModifier(1.5).water(-10),
+			[(portion) => portion.nutrientModifier(0.4).saturationModifier(0.4)]
+		).addTrait('tfc:brined').addTrait('tfc:pickled').addTrait('tfc:vinegar')
+	});
+	//#endregion
+
 	//#region Smoking
 
 	const smoking_meats = Ingredient.of('#tfc:foods/raw_meats').itemIds;
@@ -90,6 +104,5 @@ function registerTFGPreservationFoodRecipes(event) {
 	drying_recipes.forEach(item => {
 		global.generateDryingFoodRecipes(event, item.input, item.output);
 	});
-
 	//#endregion
 };
