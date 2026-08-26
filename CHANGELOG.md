@@ -2,12 +2,14 @@
 
 ## Unreleased
 ### Changes
+- Added a new model and texture for pineapple bushes (#4776) @eggyplantsu
 ### Bug fixes
 - Fixed a freeze when pressing U on items that had a lot of recipes or tags (#4837) @Pyritie
 - Fixed a bunch of missing crop models (#4838) @Pyritie
 - Fixed slashed and riveted locometal dye recipes being the wrong way around (#4844) @pehala
 - Fixed negative durability on leather apron (#4843) @Pyritie
 - Fixed missing Jade information on tree taps @Pyritie
+- Fixed teleporting to the beneath not clearing out gravel above your spawn point, which caused damage/death (#4795) @Pyritie
 
 ## [0.13.8] - 25-08-2026
 ### Breaking changes

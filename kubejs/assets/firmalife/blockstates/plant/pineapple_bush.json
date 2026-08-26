@@ -1,0 +1,40 @@
+{
+"variants": {
+		"lifecycle=healthy,stage=0": {
+			"model": "firmalife:block/plant/pineapple_0"
+		},
+		"lifecycle=healthy,stage=1": {
+			"model": "firmalife:block/plant/pineapple_1"
+		},
+		"lifecycle=healthy,stage=2": {
+			"model": "firmalife:block/plant/pineapple_2"
+		},
+		"lifecycle=dormant,stage=0": {
+			"model": "firmalife:block/plant/dry_pineapple_0"
+		},
+		"lifecycle=dormant,stage=1": {
+			"model": "firmalife:block/plant/dry_pineapple_1"
+		},
+		"lifecycle=dormant,stage=2": {
+			"model": "firmalife:block/plant/dry_pineapple_2"
+		},
+		"lifecycle=fruiting,stage=0": {
+			"model": "firmalife:block/plant/fruiting_pineapple_0"
+		},
+		"lifecycle=fruiting,stage=1": {
+			"model": "firmalife:block/plant/fruiting_pineapple_1"
+		},
+		"lifecycle=fruiting,stage=2": {
+			"model": "firmalife:block/plant/fruiting_pineapple_2"
+		},
+		"lifecycle=flowering,stage=0": {
+			"model": "firmalife:block/plant/flowering_pineapple_0"
+		},
+		"lifecycle=flowering,stage=1": {
+			"model": "firmalife:block/plant/flowering_pineapple_1"
+		},
+		"lifecycle=flowering,stage=2": {
+			"model": "firmalife:block/plant/flowering_pineapple_2"
+		}
+	}
+}
