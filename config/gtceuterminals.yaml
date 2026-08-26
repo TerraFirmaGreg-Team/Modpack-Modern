@@ -23,9 +23,17 @@ schematic.planner_build_all_enabled: false
 #  Example: - minecraft:bedrock, - kubejs:custom_block
 schematic.block_blacklist:
 - tfg:spice
+- ae2:flawless_budding_quartz
+- ae2:flawed_budding_quartz
+- ae2:chipped_budding_quartz
+- ae2:damaged_budding_quartz
 #  Registry IDs of blocks the Dismantler will NEVER refund or remove.
 #  Use this to protect blocks that cannot normally be obtained (e.g. bedrock, barriers, etc.)
 # - minecraft:bedrock, - minecraft; barriers, -kubejs:custom_block. 
 dismantler.block_blacklist:
 - tfg:spice
+- ae2:flawless_budding_quartz
+- ae2:flawed_budding_quartz
+- ae2:chipped_budding_quartz
+- ae2:damaged_budding_quartz
 
