@@ -6,6 +6,7 @@
 - Added new textures for the red steel flask @NaharaSabrea
 - Buffed the durability of insulated leather clothes @Pyritie
 - The slider on the new combustion engines now only controls rotation direction instead of RPM (#4854) @Pyritie
+- Tarkianite dust is now centrifuged and give Molybdenite so you can't bypass Molybdenum line @TomPlop
 ### Bug fixes
 - Fixed a freeze when pressing U on items that had a lot of recipes or tags (#4837) @Pyritie
 - Fixed a bunch of missing crop models (#4838) @Pyritie

@@ -1428,8 +1428,8 @@ function registerTFGNuclearRecipes(event) {
 		.inputFluids(Fluid.of('gtceu:carbon_dioxide', 1000))
 		.outputFluids(Fluid.of('tfg:supercritical_co2', 10))
 		.circuit(1)
-		.duration(20*58)
-		.EUt(GTValues.VA[GTValues.HV])
+		.duration(20*30)
+		.EUt(GTValues.VA[GTValues.LV])
 
 	event.recipes.gtceu.chemical_reactor('tfg:ticl_doped')
 		.inputFluids(Fluid.of('gtceu:titanium_tetrachloride', 1000), Fluid.of('tfg:supercritical_co2', 1000))

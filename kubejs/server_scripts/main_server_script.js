@@ -278,6 +278,7 @@ ServerEvents.recipes(event => {
 	registerMTSOCPRecipes(event)
 	registerPrimitiveCreaturesRecipes(event)
 	registerRailWaysRecipes(event)
+	registerRailwaysNavigatorRecipes(event)
 	registerRnrRecipes(event)
 	registerSandwormRecipes(event)
 	registerSophisticatedBackpacksRecipes(event)
