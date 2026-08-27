@@ -24,6 +24,18 @@ const registerRailwaysNavigatorRecipes = (event) => {
                 E: 'gtceu:brass_screw'
             }
         )
+        event.recipes.gtceu.assembler('assembler:advanced_display')
+            .itemInputs(
+                'create:display_board',
+                'gtceu:computer_monitor_cover',
+                'vintageimprovements:redstone_module',
+                '3x gtceu:glass_plate',
+                '3x gtceu:brass_screw'
+            )
+            .itemOutputs('2x createrailwaysnavigator:advanced_display')
+            .duration(100)
+            .EUt(GTValues.VA[GTValues.LV])
+            .addMaterialInfo(true)
 
         //Navigator
         event.shaped(
@@ -42,5 +54,19 @@ const registerRailwaysNavigatorRecipes = (event) => {
                 G: 'gtceu:mv_emitter'
             }
         )
+        event.recipes.gtceu.assembler('assembler:navigator')
+            .itemInputs(
+                'gtceu:computer_monitor_cover',
+                'vintageimprovements:redstone_module',
+                '#gtceu:batteries/mv',
+                'gtceu:mv_emitter',
+                'gtceu:glass_plate',
+                '2x #gtceu:circuits/mv',
+                '2x gtceu:mv_sensor'
+            )
+            .itemOutputs('createrailwaysnavigator:navigator')
+            .duration(200)
+            .EUt(GTValues.VA[GTValues.LV])
+            .addMaterialInfo(true)
 	}
 }
