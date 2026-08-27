@@ -18,25 +18,7 @@ const registerExtendedAE2Recipes = (event) => {
 
 	// IV
 
-	event.recipes.gtceu.assembler('tfg:ex_interface_iv')
-		.itemInputs(
-			'gtceu:iv_conveyor_module',
-			'8x gtceu:laminated_glass',
-			'4x #forge:plates/tungsten_steel',
-			'4x ae2:annihilation_core',
-			'4x ae2:formation_core',
-			'2x megacells:accumulation_processor',
-			'2x #ae2:interface')
-		.inputFluids(Fluid.of('tfg:fluix', 144 * 8))
-		.itemOutputs('expatternprovider:ex_interface')
-		.duration(300)
-		.EUt(GTValues.VA[GTValues.IV])
-		.cleanroom(CleanroomType.CLEANROOM)
-		.circuit(1)
-
-	// IV Moon Only
-
-	event.recipes.gtceu.assembler('tfg:ex_interface_iv_moon')
+	event.recipes.gtceu.me_assembler('tfg:ex_interface_iv_moon')
 		.itemInputs(
 			'gtceu:iv_conveyor_module',
 			'8x gtceu:laminated_glass',
@@ -50,29 +32,10 @@ const registerExtendedAE2Recipes = (event) => {
 		.duration(300)
 		.EUt(GTValues.VA[GTValues.IV])
 		.dimension('ad_astra:moon')
-		.circuit(1)
 
-	// ZPM
+	// CR
 
-	event.recipes.gtceu.assembler('tfg:ex_interface_zpm')
-		.itemInputs(
-			'gtceu:zpm_conveyor_module',
-			'8x gtceu:laminated_glass',
-			'4x #forge:plates/naquadah_alloy',
-			'16x ae2:annihilation_core',
-			'16x ae2:formation_core',
-			'8x megacells:accumulation_processor',
-			'16x #ae2:interface')
-		.inputFluids(Fluid.of('tfg:fluix', 144 * 32))
-		.itemOutputs('16x expatternprovider:ex_interface')
-		.duration(300)
-		.EUt(GTValues.VA[GTValues.ZPM])
-		.cleanroom(CleanroomType.CLEANROOM)
-		.circuit(1)
-
-	// ZPM Moon Only
-
-	event.recipes.gtceu.assembler('tfg:ex_interface_zpm_moon')
+	event.recipes.gtceu.me_assembler('tfg:ex_interface_zpm_cr')
 		.itemInputs(
 			'gtceu:zpm_conveyor_module',
 			'8x gtceu:laminated_glass',
@@ -82,17 +45,17 @@ const registerExtendedAE2Recipes = (event) => {
 			'8x megacells:accumulation_processor',
 			'16x #ae2:interface')
 		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144 * 32))
-		.itemOutputs('32x expatternprovider:ex_interface')
+		.itemOutputs('16x expatternprovider:ex_interface')
 		.duration(300)
 		.EUt(GTValues.VA[GTValues.ZPM])
+		.cleanroom(CleanroomType.CLEANROOM)
 		.dimension('ad_astra:moon')
-		.circuit(1)
 
 	// Interface Upgrade
 
 	// IV
 
-	event.recipes.gtceu.assembler('expatternprovider:interface_upgrade_iv')
+	event.recipes.gtceu.me_assembler('expatternprovider:interface_upgrade_iv')
 		.itemInputs(
 			'gtceu:iv_conveyor_module',
 			'8x gtceu:laminated_glass',
@@ -101,7 +64,7 @@ const registerExtendedAE2Recipes = (event) => {
 			'4x ae2:formation_core',
 			'2x megacells:accumulation_processor',
 			'1x #ae2:interface')
-		.inputFluids(Fluid.of('tfg:fluix', 144 * 8))
+		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144 * 8))
 		.itemOutputs('expatternprovider:interface_upgrade')
 		.duration(300)
 		.EUt(GTValues.VA[GTValues.IV])
@@ -110,7 +73,7 @@ const registerExtendedAE2Recipes = (event) => {
 
 	// IV Moon Only
 
-	event.recipes.gtceu.assembler('expatternprovider:interface_upgrade_iv_moon')
+	event.recipes.gtceu.me_assembler('expatternprovider:interface_upgrade_iv_moon')
 		.itemInputs(
 			'gtceu:iv_conveyor_module',
 			'8x gtceu:laminated_glass',
@@ -127,7 +90,7 @@ const registerExtendedAE2Recipes = (event) => {
 
 	// ZPM
 
-	event.recipes.gtceu.assembler('expatternprovider:interface_upgrade_zpm')
+	event.recipes.gtceu.me_assembler('expatternprovider:interface_upgrade_zpm')
 		.itemInputs(
 			'gtceu:zpm_conveyor_module',
 			'8x gtceu:laminated_glass',
@@ -136,7 +99,7 @@ const registerExtendedAE2Recipes = (event) => {
 			'16x ae2:formation_core',
 			'8x megacells:accumulation_processor',
 			'8x #ae2:interface')
-		.inputFluids(Fluid.of('tfg:fluix', 144 * 32))
+		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144 * 32))
 		.itemOutputs('16x expatternprovider:interface_upgrade')
 		.duration(300)
 		.EUt(GTValues.VA[GTValues.ZPM])
@@ -145,7 +108,7 @@ const registerExtendedAE2Recipes = (event) => {
 
 	// ZPM Moon Only
 
-	event.recipes.gtceu.assembler('expatternprovider:interface_upgrade_zpm_moon')
+	event.recipes.gtceu.me_assembler('expatternprovider:interface_upgrade_zpm_moon')
 		.itemInputs(
 			'gtceu:zpm_conveyor_module',
 			'8x gtceu:laminated_glass',
@@ -166,7 +129,7 @@ const registerExtendedAE2Recipes = (event) => {
 
 	// IV
 
-	event.recipes.gtceu.assembly_line('expatternprovider:oversize_interface_iv')
+	event.recipes.gtceu.me_assembler('expatternprovider:oversize_interface_iv')
 		.itemInputs(
 			'4x #expatternprovider:extended_interface',
 			'4x megacells:accumulation_processor',
@@ -174,7 +137,7 @@ const registerExtendedAE2Recipes = (event) => {
 			'gtceu:iv_fluid_regulator',
 			'4x #forge:dense_plates/tungsten_steel',
 			'#gtceu:circuits/luv')
-		.inputFluids(Fluid.of('tfg:fluix', 144 * 9))
+		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144 * 9))
 		.itemOutputs("expatternprovider:oversize_interface")
 		.duration(300)
 		.EUt(GTValues.VA[GTValues.IV])
@@ -182,7 +145,7 @@ const registerExtendedAE2Recipes = (event) => {
 
 	// IV Moon
 
-	event.recipes.gtceu.assembly_line('expatternprovider:oversize_interface_iv_moon')
+	event.recipes.gtceu.me_assembler('expatternprovider:oversize_interface_iv_moon')
 		.itemInputs(
 			'4x #expatternprovider:extended_interface',
 			'4x megacells:accumulation_processor',
@@ -198,7 +161,7 @@ const registerExtendedAE2Recipes = (event) => {
 
 	// ZPM
 
-	event.recipes.gtceu.assembly_line('expatternprovider:oversize_interface_zpm')
+	event.recipes.gtceu.me_assembler('expatternprovider:oversize_interface_zpm')
 		.itemInputs(
 			'8x #expatternprovider:extended_interface',
 			'4x megacells:accumulation_processor',
@@ -206,7 +169,7 @@ const registerExtendedAE2Recipes = (event) => {
 			'gtceu:zpm_fluid_regulator',
 			'4x #forge:dense_plates/naquadah_alloy',
 			'#gtceu:circuits/uv')
-		.inputFluids(Fluid.of('tfg:fluix', 144 * 18))
+		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144 * 18))
 		.itemOutputs("8x expatternprovider:oversize_interface")
 		.duration(300)
 		.EUt(GTValues.VA[GTValues.ZPM])
@@ -214,7 +177,7 @@ const registerExtendedAE2Recipes = (event) => {
 
 	// ZPM Moon
 
-	event.recipes.gtceu.assembly_line('expatternprovider:oversize_interface_zpm_moon')
+	event.recipes.gtceu.me_assembler('expatternprovider:oversize_interface_zpm_moon')
 		.itemInputs(
 			'8x #expatternprovider:extended_interface',
 			'4x megacells:accumulation_processor',
@@ -234,7 +197,7 @@ const registerExtendedAE2Recipes = (event) => {
 
 	// IV
 
-	event.recipes.gtceu.assembler('tfg:ex_pattern_provider_iv')
+	event.recipes.gtceu.me_assembler('tfg:ex_pattern_provider_iv')
 		.itemInputs(
 			'gtceu:iv_robot_arm',
 			'8x gtceu:laminated_glass',
@@ -243,7 +206,7 @@ const registerExtendedAE2Recipes = (event) => {
 			'4x ae2:formation_core',
 			'2x megacells:accumulation_processor',
 			'2x #ae2:pattern_provider')
-		.inputFluids(Fluid.of('tfg:fluix', 144 * 8))
+		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144 * 8))
 		.itemOutputs('expatternprovider:ex_pattern_provider')
 		.duration(300)
 		.EUt(GTValues.VA[GTValues.IV])
@@ -252,7 +215,7 @@ const registerExtendedAE2Recipes = (event) => {
 
 	// IV Moon Only
 
-	event.recipes.gtceu.assembler('tfg:ex_pattern_provider_iv_moon')
+	event.recipes.gtceu.me_assembler('tfg:ex_pattern_provider_iv_moon')
 		.itemInputs(
 			'gtceu:iv_robot_arm',
 			'8x gtceu:laminated_glass',
@@ -270,7 +233,7 @@ const registerExtendedAE2Recipes = (event) => {
 
 	// ZPM
 
-	event.recipes.gtceu.assembler('tfg:ex_pattern_provider_zpm')
+	event.recipes.gtceu.me_assembler('tfg:ex_pattern_provider_zpm')
 		.itemInputs(
 			'gtceu:zpm_robot_arm',
 			'8x gtceu:laminated_glass',
@@ -279,7 +242,7 @@ const registerExtendedAE2Recipes = (event) => {
 			'16x ae2:formation_core',
 			'8x megacells:accumulation_processor',
 			'16x #ae2:pattern_provider')
-		.inputFluids(Fluid.of('tfg:fluix', 144 * 32))
+		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144 * 32))
 		.itemOutputs('16x expatternprovider:ex_pattern_provider')
 		.duration(300)
 		.EUt(GTValues.VA[GTValues.ZPM])
@@ -288,7 +251,7 @@ const registerExtendedAE2Recipes = (event) => {
 
 	// ZPM Moon Only
 
-	event.recipes.gtceu.assembler('tfg:ex_pattern_provider_zpm_moon')
+	event.recipes.gtceu.me_assembler('tfg:ex_pattern_provider_zpm_moon')
 		.itemInputs(
 			'gtceu:zpm_robot_arm',
 			'8x gtceu:laminated_glass',
@@ -308,7 +271,7 @@ const registerExtendedAE2Recipes = (event) => {
 
 	// IV
 
-	event.recipes.gtceu.assembler('expatternprovider:pattern_provider_upgrade_iv')
+	event.recipes.gtceu.me_assembler('expatternprovider:pattern_provider_upgrade_iv')
 		.itemInputs(
 			'gtceu:iv_robot_arm',
 			'8x gtceu:laminated_glass',
@@ -317,7 +280,7 @@ const registerExtendedAE2Recipes = (event) => {
 			'4x ae2:formation_core',
 			'2x megacells:accumulation_processor',
 			'1x #ae2:pattern_provider')
-		.inputFluids(Fluid.of('tfg:fluix', 144 * 8))
+		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144 * 8))
 		.itemOutputs('expatternprovider:pattern_provider_upgrade')
 		.duration(300)
 		.EUt(GTValues.VA[GTValues.IV])
@@ -326,7 +289,7 @@ const registerExtendedAE2Recipes = (event) => {
 
 	// IV Moon Only
 
-	event.recipes.gtceu.assembler('expatternprovider:pattern_provider_upgrade_iv_moon')
+	event.recipes.gtceu.me_assembler('expatternprovider:pattern_provider_upgrade_iv_moon')
 		.itemInputs(
 			'gtceu:iv_robot_arm',
 			'8x gtceu:laminated_glass',
@@ -343,7 +306,7 @@ const registerExtendedAE2Recipes = (event) => {
 
 	// ZPM
 
-	event.recipes.gtceu.assembler('expatternprovider:pattern_provider_upgrade_zpm')
+	event.recipes.gtceu.me_assembler('expatternprovider:pattern_provider_upgrade_zpm')
 		.itemInputs(
 			'gtceu:zpm_robot_arm',
 			'8x gtceu:laminated_glass',
@@ -352,7 +315,7 @@ const registerExtendedAE2Recipes = (event) => {
 			'16x ae2:formation_core',
 			'8x megacells:accumulation_processor',
 			'8x #ae2:pattern_provider')
-		.inputFluids(Fluid.of('tfg:fluix', 144 * 32))
+		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144 * 32))
 		.itemOutputs('16x expatternprovider:pattern_provider_upgrade')
 		.duration(300)
 		.EUt(GTValues.VA[GTValues.ZPM])
@@ -361,7 +324,7 @@ const registerExtendedAE2Recipes = (event) => {
 
 	// ZPM Moon Only
 
-	event.recipes.gtceu.assembler('expatternprovider:pattern_provider_upgrade_zpm_moon')
+	event.recipes.gtceu.me_assembler('expatternprovider:pattern_provider_upgrade_zpm_moon')
 		.itemInputs(
 			'gtceu:zpm_robot_arm',
 			'8x gtceu:laminated_glass',
@@ -381,13 +344,13 @@ const registerExtendedAE2Recipes = (event) => {
 	//#region bus
 
 	//ex import bus part
-	event.recipes.gtceu.assembler('expatternprovider:ex_import_bus_part')
+	event.recipes.gtceu.me_assembler('expatternprovider:ex_import_bus_part')
 		.itemInputs(
 			'1x #forge:plates/stainless_steel',
 			'2x ae2:annihilation_core',
 			'2x gtceu:hv_robot_arm',
 			'1x megacells:accumulation_processor')
-		.inputFluids(Fluid.of('gtceu:polyvinyl_chloride', 144))
+		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144))
 		.itemOutputs('expatternprovider:ex_import_bus_part')
 		.circuit(2)
 		.duration(200)
@@ -395,13 +358,13 @@ const registerExtendedAE2Recipes = (event) => {
 		.addMaterialInfo(true, true)
 
 	//ex export bus part
-	event.recipes.gtceu.assembler('expatternprovider:ex_export_bus_part')
+	event.recipes.gtceu.me_assembler('expatternprovider:ex_export_bus_part')
 		.itemInputs(
 			'1x #forge:plates/stainless_steel',
 			'2x ae2:formation_core',
 			'2x gtceu:hv_robot_arm',
 			'1x megacells:accumulation_processor')
-		.inputFluids(Fluid.of('gtceu:polyvinyl_chloride', 144))
+		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144))
 		.itemOutputs('expatternprovider:ex_export_bus_part')
 		.circuit(3)
 		.duration(200)
@@ -409,7 +372,7 @@ const registerExtendedAE2Recipes = (event) => {
 		.addMaterialInfo(true, true)
 
 	//tag export bus
-	event.recipes.gtceu.assembler('expatternprovider:tag_export_bus')
+	event.recipes.gtceu.me_assembler('expatternprovider:tag_export_bus')
 		.itemInputs(
 			'ae2:export_bus',
 			'2x ae2:logic_processor',
@@ -420,7 +383,7 @@ const registerExtendedAE2Recipes = (event) => {
 		.addMaterialInfo(true)
 
 	//tag storage bus
-	event.recipes.gtceu.assembler('expatternprovider:tag_storage_bus')
+	event.recipes.gtceu.me_assembler('expatternprovider:tag_storage_bus')
 		.itemInputs(
 			'ae2:storage_bus',
 			'2x ae2:logic_processor',
@@ -431,7 +394,7 @@ const registerExtendedAE2Recipes = (event) => {
 		.addMaterialInfo(true)
 
 	//mod export bus
-	event.recipes.gtceu.assembler('expatternprovider:mod_export_bus')
+	event.recipes.gtceu.me_assembler('expatternprovider:mod_export_bus')
 		.itemInputs(
 			'ae2:export_bus',
 			'2x ae2:calculation_processor',
@@ -442,7 +405,7 @@ const registerExtendedAE2Recipes = (event) => {
 		.addMaterialInfo(true)
 
 	//mod storage bus
-	event.recipes.gtceu.assembler('expatternprovider:mod_storage_bus')
+	event.recipes.gtceu.me_assembler('expatternprovider:mod_storage_bus')
 		.itemInputs(
 			'ae2:storage_bus',
 			'2x ae2:calculation_processor',
@@ -453,7 +416,7 @@ const registerExtendedAE2Recipes = (event) => {
 		.addMaterialInfo(true)
 
 	//precise export bus
-	event.recipes.gtceu.assembler('expatternprovider:precise_export_bus')
+	event.recipes.gtceu.me_assembler('expatternprovider:precise_export_bus')
 		.itemInputs(
 			'ae2:export_bus',
 			'2x ae2:engineering_processor',
@@ -464,7 +427,7 @@ const registerExtendedAE2Recipes = (event) => {
 		.addMaterialInfo(true)
 
 	//precise storage bus
-	event.recipes.gtceu.assembler('expatternprovider:precise_storage_bus')
+	event.recipes.gtceu.me_assembler('expatternprovider:precise_storage_bus')
 		.itemInputs(
 			'ae2:storage_bus',
 			'2x ae2:engineering_processor',
@@ -475,7 +438,7 @@ const registerExtendedAE2Recipes = (event) => {
 		.addMaterialInfo(true)
 
 	//threshold export bus
-	event.recipes.gtceu.assembler('expatternprovider:threshold_export_bus')
+	event.recipes.gtceu.me_assembler('expatternprovider:threshold_export_bus')
 		.itemInputs(
 			'ae2:export_bus',
 			'2x ae2:logic_processor',
@@ -488,7 +451,7 @@ const registerExtendedAE2Recipes = (event) => {
 	//#endregion
 
 	//active formation plane
-	event.recipes.gtceu.assembler('expatternprovider:active_formation_plane')
+	event.recipes.gtceu.me_assembler('expatternprovider:active_formation_plane')
 		.itemInputs(
 			'ae2:formation_plane',
 			'ae2:export_bus',
@@ -499,7 +462,7 @@ const registerExtendedAE2Recipes = (event) => {
 		.addMaterialInfo(true)
 
 	//pattern modifier
-	event.recipes.gtceu.assembler('expatternprovider:pattern_modifier')
+	event.recipes.gtceu.me_assembler('expatternprovider:pattern_modifier')
 		.itemInputs(
 			'ae2:blank_pattern',
 			'ae2:logic_processor')
@@ -510,7 +473,7 @@ const registerExtendedAE2Recipes = (event) => {
 		.addMaterialInfo(true)
 
 	//threshold level emitter
-	event.recipes.gtceu.assembler('expatternprovider:threshold_level_emitter')
+	event.recipes.gtceu.me_assembler('expatternprovider:threshold_level_emitter')
 		.itemInputs(
 			'ae2:level_emitter',
 			'2x minecraft:redstone_torch',
@@ -521,7 +484,7 @@ const registerExtendedAE2Recipes = (event) => {
 		.addMaterialInfo(true)
 
 	//wireless tool
-	event.recipes.gtceu.assembler('expatternprovider:wireless_tool')
+	event.recipes.gtceu.me_assembler('expatternprovider:wireless_tool')
 		.itemInputs(
 			'3x #forge:plates/steel',
 			'#gtceu:circuits/ev',
@@ -533,7 +496,7 @@ const registerExtendedAE2Recipes = (event) => {
 		.EUt(1920)
 
 	//wireless tool
-	event.recipes.gtceu.assembler('expatternprovider:wireless_connect')
+	event.recipes.gtceu.me_assembler('expatternprovider:wireless_connect')
 		.itemInputs(
 			'2x gtceu:iv_machine_casing',
 			'4x #gtceu:circuits/iv',
@@ -552,13 +515,13 @@ const registerExtendedAE2Recipes = (event) => {
 		.itemInputs(
 			'4x #forge:dusts/fluix',
 			'2x #forge:plates/paper')
-		.inputFluids(Fluid.of('gtceu:glue', 144))
+		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144))
 		.itemOutputs(Item.of('expatternprovider:me_packing_tape', '{Damage:0}'))
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.MV])
 
 	//ex pattern access
-	event.recipes.gtceu.assembler('expatternprovider:ex_pattern_access_part')
+	event.recipes.gtceu.me_assembler('expatternprovider:ex_pattern_access_part')
 		.itemInputs(
 			'ae2:pattern_access_terminal',
 			Item.of('ae2:engineering_processor', 4),
@@ -567,7 +530,7 @@ const registerExtendedAE2Recipes = (event) => {
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.EV])
 
-	event.recipes.gtceu.assembler('expatternprovider:pattern_terminal_upgrade')
+	event.recipes.gtceu.me_assembler('expatternprovider:pattern_terminal_upgrade')
 		.itemInputs(
 			'4x ae2:calculation_processor',
 			'2x megacells:accumulation_processor')
@@ -607,7 +570,7 @@ const registerExtendedAE2Recipes = (event) => {
 	//#region ex molecular assembler
 
 	// IV
-	event.recipes.gtceu.assembler('expatternprovider:ex_molecular_assembler_iv')
+	event.recipes.gtceu.me_assembler('expatternprovider:ex_molecular_assembler_iv')
 		.itemInputs(
 			'2x #gtceu:circuits/iv',
 			'8x gtceu:cleanroom_glass',
@@ -615,14 +578,14 @@ const registerExtendedAE2Recipes = (event) => {
 			'4x ae2:formation_core',
 			'2x gtceu:iv_robot_arm',
 			'ae2:molecular_assembler')
-		.inputFluids(Fluid.of('tfg:fluix', 144 * 4))
+		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144 * 4))
 		.itemOutputs('expatternprovider:ex_molecular_assembler')
 		.duration(200)
 		.EUt(GTValues.VA[GTValues.IV])
 		.cleanroom(CleanroomType.CLEANROOM)
 
 	// LuV Moon
-	event.recipes.gtceu.assembler('expatternprovider:ex_molecular_assembler_luv')
+	event.recipes.gtceu.me_assembler('expatternprovider:ex_molecular_assembler_luv')
 		.itemInputs(
 			'2x #gtceu:circuits/luv',
 			'8x gtceu:cleanroom_glass',
@@ -637,7 +600,7 @@ const registerExtendedAE2Recipes = (event) => {
 		.dimension('ad_astra:moon')
 
 	// ZPM
-	event.recipes.gtceu.assembler('expatternprovider:ex_molecular_assembler_zpm')
+	event.recipes.gtceu.me_assembler('expatternprovider:ex_molecular_assembler_zpm')
 		.itemInputs(
 			'2x #gtceu:circuits/zpm',
 			'8x gtceu:cleanroom_glass',
@@ -645,7 +608,7 @@ const registerExtendedAE2Recipes = (event) => {
 			'4x ae2:formation_core',
 			'2x gtceu:zpm_robot_arm',
 			'4x ae2:molecular_assembler')
-		.inputFluids(Fluid.of('tfg:fluix', 144 * 16))
+		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144 * 16))
 		.itemOutputs('8x expatternprovider:ex_molecular_assembler')
 		.duration(200)
 		.EUt(GTValues.VA[GTValues.ZPM])
@@ -654,7 +617,7 @@ const registerExtendedAE2Recipes = (event) => {
 	//#endregion
 
 	//ex io port
-	event.recipes.gtceu.assembler('expatternprovider:ex_io_port')
+	event.recipes.gtceu.me_assembler('expatternprovider:ex_io_port')
 		.itemInputs(
 			'gtceu:ev_machine_casing',
 			'ae2:io_port',
@@ -667,7 +630,7 @@ const registerExtendedAE2Recipes = (event) => {
 		.EUt(1000)
 		.addMaterialInfo(true)
 
-	event.recipes.gtceu.assembler('expatternprovider:ex_drive')
+	event.recipes.gtceu.me_assembler('expatternprovider:ex_drive')
 		.itemInputs(
 			'gtceu:ev_machine_casing',
 			'ae2:drive',
@@ -680,7 +643,7 @@ const registerExtendedAE2Recipes = (event) => {
 		.EUt(1920)
 		.addMaterialInfo(true)
 
-	event.recipes.gtceu.assembler('expatternprovider:drive_upgrade')
+	event.recipes.gtceu.me_assembler('expatternprovider:drive_upgrade')
 		.itemInputs(
 			'gtceu:ev_machine_casing',
 			'2x megacells:accumulation_processor',
@@ -692,7 +655,7 @@ const registerExtendedAE2Recipes = (event) => {
 		.circuit(2)
 		.EUt(1920)
 
-	event.recipes.gtceu.assembler('expatternprovider:ingredient_buffer')
+	event.recipes.gtceu.me_assembler('expatternprovider:ingredient_buffer')
 		.itemInputs('gtceu:hv_buffer', 'ae2:cell_component_1k')
 		.itemOutputs('expatternprovider:ingredient_buffer')
 		.duration(200)
@@ -705,7 +668,7 @@ const registerExtendedAE2Recipes = (event) => {
 
 	//Frame
 
-	event.recipes.gtceu.assembly_line('expatternprovider:assembler_matrix_frame')
+	event.recipes.gtceu.me_assembler('expatternprovider:assembler_matrix_frame')
 		.itemInputs(
 			'4x gtceu:plascrete',
 			'4x gtceu:luv_machine_casing',
@@ -716,13 +679,13 @@ const registerExtendedAE2Recipes = (event) => {
 			'1x expatternprovider:ex_molecular_assembler')
 		.inputFluids(
 			Fluid.of("gtceu:concrete", 144 * 8),
-			Fluid.of('tfg:fluix', 144 * 16))
+			Fluid.of('tfg:cryogenized_fluix', 144 * 16))
 		.itemOutputs('expatternprovider:assembler_matrix_frame')
 		.duration(2000)
 		.EUt(GTValues.VA[GTValues.LuV])
 		.cleanroom(CleanroomType.CLEANROOM)
 
-	event.recipes.gtceu.assembly_line('expatternprovider:assembler_matrix_frame_moon')
+	event.recipes.gtceu.me_assembler('expatternprovider:assembler_matrix_frame_moon')
 		.itemInputs(
 			'8x gtceu:plascrete',
 			'8x gtceu:iv_machine_casing',
@@ -741,7 +704,7 @@ const registerExtendedAE2Recipes = (event) => {
 
 	//Matrix Wall
 
-	event.recipes.gtceu.assembler('expatternprovider:assembler_matrix_wall_luv')
+	event.recipes.gtceu.me_assembler('expatternprovider:assembler_matrix_wall_luv')
 		.itemInputs(
 			'#forge:frames/polytetrafluoroethylene',
 			'gtceu:plascrete',
@@ -755,7 +718,7 @@ const registerExtendedAE2Recipes = (event) => {
 
 	//Matrix Glass
 
-	event.recipes.gtceu.assembler("expatternprovider:assembler_matrix_glass")
+	event.recipes.gtceu.me_assembler("expatternprovider:assembler_matrix_glass")
 		.itemInputs(
 			'#forge:frames/polytetrafluoroethylene',
 			'gtceu:cleanroom_glass',
@@ -769,7 +732,7 @@ const registerExtendedAE2Recipes = (event) => {
 
 	//Matrix Pattern
 
-	event.recipes.gtceu.assembly_line("expatternprovider:assembler_matrix_pattern")
+	event.recipes.gtceu.me_assembler("expatternprovider:assembler_matrix_pattern")
 		.itemInputs(
 			'#expatternprovider:extended_pattern_provider',
 			'8x megacells:accumulation_processor',
@@ -778,14 +741,14 @@ const registerExtendedAE2Recipes = (event) => {
 			'#gtceu:circuits/zpm',
 			'2x #gtceu:circuits/luv')
 		.inputFluids(
-			Fluid.of('tfg:fluix', 144 * 16),
+			Fluid.of('tfg:cryogenized_fluix', 144 * 16),
 			Fluid.of('gtceu:polybenzimidazole', 1430))
 		.itemOutputs('expatternprovider:assembler_matrix_pattern')
 		.duration(20 * 30)
 		.EUt(GTValues.VA[GTValues.LuV])
 		.cleanroom(CleanroomType.CLEANROOM)
 
-	event.recipes.gtceu.assembly_line("expatternprovider:assembler_matrix_pattern_moon")
+	event.recipes.gtceu.me_assembler("expatternprovider:assembler_matrix_pattern_moon")
 		.itemInputs(
 			'2x #expatternprovider:extended_pattern_provider',
 			'8x megacells:accumulation_processor',
@@ -803,7 +766,7 @@ const registerExtendedAE2Recipes = (event) => {
 
 	//Matrix Crafter
 
-	event.recipes.gtceu.assembly_line("expatternprovider:assembler_matrix_crafter")
+	event.recipes.gtceu.me_assembler("expatternprovider:assembler_matrix_crafter")
 		.itemInputs(
 			"#expatternprovider:oversize_interface",
 			'8x megacells:accumulation_processor',
@@ -812,14 +775,14 @@ const registerExtendedAE2Recipes = (event) => {
 			'#gtceu:circuits/zpm',
 			'2x #gtceu:circuits/luv')
 		.inputFluids(
-			Fluid.of('tfg:fluix', 144 * 16),
+			Fluid.of('tfg:cryogenized_fluix', 144 * 16),
 			Fluid.of('gtceu:polybenzimidazole', 1430))
 		.itemOutputs('expatternprovider:assembler_matrix_crafter')
 		.duration(20 * 30)
 		.EUt(GTValues.VA[GTValues.LuV])
 		.cleanroom(CleanroomType.CLEANROOM)
 
-	event.recipes.gtceu.assembly_line("expatternprovider:assembler_matrix_crafter_moon")
+	event.recipes.gtceu.me_assembler("expatternprovider:assembler_matrix_crafter_moon")
 		.itemInputs(
 			"2x #expatternprovider:oversize_interface",
 			'8x megacells:accumulation_processor',
@@ -837,7 +800,7 @@ const registerExtendedAE2Recipes = (event) => {
 
 	//Matrix Speed
 
-	event.recipes.gtceu.assembly_line("expatternprovider:assembler_matrix_speed_luv")
+	event.recipes.gtceu.me_assembler("expatternprovider:assembler_matrix_speed_luv")
 		.itemInputs(
 			"megacells:mega_crafting_accelerator",
 			'8x megacells:accumulation_processor',
@@ -846,14 +809,14 @@ const registerExtendedAE2Recipes = (event) => {
 			'#gtceu:circuits/zpm',
 			'2x #gtceu:circuits/luv')
 		.inputFluids(
-			Fluid.of('tfg:fluix', 144 * 16),
+			Fluid.of('tfg:cryogenized_fluix', 144 * 16),
 			Fluid.of('gtceu:polybenzimidazole', 1430))
 		.itemOutputs('expatternprovider:assembler_matrix_speed')
 		.duration(20 * 30)
 		.EUt(GTValues.VA[GTValues.LuV])
 		.cleanroom(CleanroomType.CLEANROOM)
 
-	event.recipes.gtceu.assembly_line("expatternprovider:assembler_matrix_speed_zpm")
+	event.recipes.gtceu.me_assembler("expatternprovider:assembler_matrix_speed_zpm")
 		.itemInputs(
 			"2x megacells:mega_crafting_accelerator",
 			'8x megacells:accumulation_processor',
