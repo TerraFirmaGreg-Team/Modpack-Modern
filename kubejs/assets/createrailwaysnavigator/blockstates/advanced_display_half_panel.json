@@ -1,0 +1,303 @@
+{
+    "variants": {
+      "side=front,facing=north,y_alignment=negative,z_alignment=negative": {
+        "model": "createrailwaysnavigator:block/advanced_display_half_panel_neg_neg"
+      },
+      "side=front,facing=east,y_alignment=negative,z_alignment=negative": {
+        "model": "createrailwaysnavigator:block/advanced_display_half_panel_neg_neg",
+        "y": 90
+      },
+      "side=front,facing=south,y_alignment=negative,z_alignment=negative": {
+        "model": "createrailwaysnavigator:block/advanced_display_half_panel_neg_neg",
+        "y": 180
+      },
+      "side=front,facing=west,y_alignment=negative,z_alignment=negative": {
+        "model": "createrailwaysnavigator:block/advanced_display_half_panel_neg_neg",
+        "y": 270
+      },
+  
+      "side=front,facing=north,y_alignment=center,z_alignment=negative": {
+        "model": "createrailwaysnavigator:block/advanced_display_half_panel_cen_neg"
+      },
+      "side=front,facing=east,y_alignment=center,z_alignment=negative": {
+        "model": "createrailwaysnavigator:block/advanced_display_half_panel_cen_neg",
+        "y": 90
+      },
+      "side=front,facing=south,y_alignment=center,z_alignment=negative": {
+        "model": "createrailwaysnavigator:block/advanced_display_half_panel_cen_neg",
+        "y": 180
+      },
+      "side=front,facing=west,y_alignment=center,z_alignment=negative": {
+        "model": "createrailwaysnavigator:block/advanced_display_half_panel_cen_neg",
+        "y": 270
+      },
+  
+      "side=front,facing=north,y_alignment=positive,z_alignment=negative": {
+        "model": "createrailwaysnavigator:block/advanced_display_half_panel_pos_neg"
+      },
+      "side=front,facing=east,y_alignment=positive,z_alignment=negative": {
+        "model": "createrailwaysnavigator:block/advanced_display_half_panel_pos_neg",
+        "y": 90
+      },
+      "side=front,facing=south,y_alignment=positive,z_alignment=negative": {
+        "model": "createrailwaysnavigator:block/advanced_display_half_panel_pos_neg",
+        "y": 180
+      },
+      "side=front,facing=west,y_alignment=positive,z_alignment=negative": {
+        "model": "createrailwaysnavigator:block/advanced_display_half_panel_pos_neg",
+        "y": 270
+      },
+  
+  
+  
+      "side=front,facing=north,y_alignment=negative,z_alignment=center": {
+        "model": "createrailwaysnavigator:block/advanced_display_half_panel_neg_cen"
+      },
+      "side=front,facing=east,y_alignment=negative,z_alignment=center": {
+        "model": "createrailwaysnavigator:block/advanced_display_half_panel_neg_cen",
+        "y": 90
+      },
+      "side=front,facing=south,y_alignment=negative,z_alignment=center": {
+        "model": "createrailwaysnavigator:block/advanced_display_half_panel_neg_cen",
+        "y": 180
+      },
+      "side=front,facing=west,y_alignment=negative,z_alignment=center": {
+        "model": "createrailwaysnavigator:block/advanced_display_half_panel_neg_cen",
+        "y": 270
+      },
+  
+      "side=front,facing=north,y_alignment=center,z_alignment=center": {
+        "model": "createrailwaysnavigator:block/advanced_display_half_panel_cen_cen"
+      },
+      "side=front,facing=east,y_alignment=center,z_alignment=center": {
+        "model": "createrailwaysnavigator:block/advanced_display_half_panel_cen_cen",
+        "y": 90
+      },
+      "side=front,facing=south,y_alignment=center,z_alignment=center": {
+        "model": "createrailwaysnavigator:block/advanced_display_half_panel_cen_cen",
+        "y": 180
+      },
+      "side=front,facing=west,y_alignment=center,z_alignment=center": {
+        "model": "createrailwaysnavigator:block/advanced_display_half_panel_cen_cen",
+        "y": 270
+      },
+  
+      "side=front,facing=north,y_alignment=positive,z_alignment=center": {
+        "model": "createrailwaysnavigator:block/advanced_display_half_panel_pos_cen"
+      },
+      "side=front,facing=east,y_alignment=positive,z_alignment=center": {
+        "model": "createrailwaysnavigator:block/advanced_display_half_panel_pos_cen",
+        "y": 90
+      },
+      "side=front,facing=south,y_alignment=positive,z_alignment=center": {
+        "model": "createrailwaysnavigator:block/advanced_display_half_panel_pos_cen",
+        "y": 180
+      },
+      "side=front,facing=west,y_alignment=positive,z_alignment=center": {
+        "model": "createrailwaysnavigator:block/advanced_display_half_panel_pos_cen",
+        "y": 270
+      },
+  
+  
+  
+      "side=front,facing=north,y_alignment=negative,z_alignment=positive": {
+        "model": "createrailwaysnavigator:block/advanced_display_half_panel_neg_pos"
+      },
+      "side=front,facing=east,y_alignment=negative,z_alignment=positive": {
+        "model": "createrailwaysnavigator:block/advanced_display_half_panel_neg_pos",
+        "y": 90
+      },
+      "side=front,facing=south,y_alignment=negative,z_alignment=positive": {
+        "model": "createrailwaysnavigator:block/advanced_display_half_panel_neg_pos",
+        "y": 180
+      },
+      "side=front,facing=west,y_alignment=negative,z_alignment=positive": {
+        "model": "createrailwaysnavigator:block/advanced_display_half_panel_neg_pos",
+        "y": 270
+      },
+  
+      "side=front,facing=north,y_alignment=center,z_alignment=positive": {
+        "model": "createrailwaysnavigator:block/advanced_display_half_panel_cen_pos"
+      },
+      "side=front,facing=east,y_alignment=center,z_alignment=positive": {
+        "model": "createrailwaysnavigator:block/advanced_display_half_panel_cen_pos",
+        "y": 90
+      },
+      "side=front,facing=south,y_alignment=center,z_alignment=positive": {
+        "model": "createrailwaysnavigator:block/advanced_display_half_panel_cen_pos",
+        "y": 180
+      },
+      "side=front,facing=west,y_alignment=center,z_alignment=positive": {
+        "model": "createrailwaysnavigator:block/advanced_display_half_panel_cen_pos",
+        "y": 270
+      },
+  
+      "side=front,facing=north,y_alignment=positive,z_alignment=positive": {
+        "model": "createrailwaysnavigator:block/advanced_display_half_panel_pos_pos"
+      },
+      "side=front,facing=east,y_alignment=positive,z_alignment=positive": {
+        "model": "createrailwaysnavigator:block/advanced_display_half_panel_pos_pos",
+        "y": 90
+      },
+      "side=front,facing=south,y_alignment=positive,z_alignment=positive": {
+        "model": "createrailwaysnavigator:block/advanced_display_half_panel_pos_pos",
+        "y": 180
+      },
+      "side=front,facing=west,y_alignment=positive,z_alignment=positive": {
+        "model": "createrailwaysnavigator:block/advanced_display_half_panel_pos_pos",
+        "y": 270
+      },
+  
+  
+  
+  
+  
+      "side=both,facing=north,y_alignment=negative,z_alignment=negative": {
+        "model": "createrailwaysnavigator:block/advanced_display_half_panel_double_neg_neg"
+      },
+      "side=both,facing=east,y_alignment=negative,z_alignment=negative": {
+        "model": "createrailwaysnavigator:block/advanced_display_half_panel_double_neg_neg",
+        "y": 90
+      },
+      "side=both,facing=south,y_alignment=negative,z_alignment=negative": {
+        "model": "createrailwaysnavigator:block/advanced_display_half_panel_double_neg_neg",
+        "y": 180
+      },
+      "side=both,facing=west,y_alignment=negative,z_alignment=negative": {
+        "model": "createrailwaysnavigator:block/advanced_display_half_panel_double_neg_neg",
+        "y": 270
+      },
+  
+      "side=both,facing=north,y_alignment=center,z_alignment=negative": {
+        "model": "createrailwaysnavigator:block/advanced_display_half_panel_double_cen_neg"
+      },
+      "side=both,facing=east,y_alignment=center,z_alignment=negative": {
+        "model": "createrailwaysnavigator:block/advanced_display_half_panel_double_cen_neg",
+        "y": 90
+      },
+      "side=both,facing=south,y_alignment=center,z_alignment=negative": {
+        "model": "createrailwaysnavigator:block/advanced_display_half_panel_double_cen_neg",
+        "y": 180
+      },
+      "side=both,facing=west,y_alignment=center,z_alignment=negative": {
+        "model": "createrailwaysnavigator:block/advanced_display_half_panel_double_cen_neg",
+        "y": 270
+      },
+  
+      "side=both,facing=north,y_alignment=positive,z_alignment=negative": {
+        "model": "createrailwaysnavigator:block/advanced_display_half_panel_double_pos_neg"
+      },
+      "side=both,facing=east,y_alignment=positive,z_alignment=negative": {
+        "model": "createrailwaysnavigator:block/advanced_display_half_panel_double_pos_neg",
+        "y": 90
+      },
+      "side=both,facing=south,y_alignment=positive,z_alignment=negative": {
+        "model": "createrailwaysnavigator:block/advanced_display_half_panel_double_pos_neg",
+        "y": 180
+      },
+      "side=both,facing=west,y_alignment=positive,z_alignment=negative": {
+        "model": "createrailwaysnavigator:block/advanced_display_half_panel_double_pos_neg",
+        "y": 270
+      },
+  
+  
+  
+      "side=both,facing=north,y_alignment=negative,z_alignment=center": {
+        "model": "createrailwaysnavigator:block/advanced_display_half_panel_double_neg_cen"
+      },
+      "side=both,facing=east,y_alignment=negative,z_alignment=center": {
+        "model": "createrailwaysnavigator:block/advanced_display_half_panel_double_neg_cen",
+        "y": 90
+      },
+      "side=both,facing=south,y_alignment=negative,z_alignment=center": {
+        "model": "createrailwaysnavigator:block/advanced_display_half_panel_double_neg_cen",
+        "y": 180
+      },
+      "side=both,facing=west,y_alignment=negative,z_alignment=center": {
+        "model": "createrailwaysnavigator:block/advanced_display_half_panel_double_neg_cen",
+        "y": 270
+      },
+  
+      "side=both,facing=north,y_alignment=center,z_alignment=center": {
+        "model": "createrailwaysnavigator:block/advanced_display_half_panel_double_cen_cen"
+      },
+      "side=both,facing=east,y_alignment=center,z_alignment=center": {
+        "model": "createrailwaysnavigator:block/advanced_display_half_panel_double_cen_cen",
+        "y": 90
+      },
+      "side=both,facing=south,y_alignment=center,z_alignment=center": {
+        "model": "createrailwaysnavigator:block/advanced_display_half_panel_double_cen_cen",
+        "y": 180
+      },
+      "side=both,facing=west,y_alignment=center,z_alignment=center": {
+        "model": "createrailwaysnavigator:block/advanced_display_half_panel_double_cen_cen",
+        "y": 270
+      },
+  
+      "side=both,facing=north,y_alignment=positive,z_alignment=center": {
+        "model": "createrailwaysnavigator:block/advanced_display_half_panel_double_pos_cen"
+      },
+      "side=both,facing=east,y_alignment=positive,z_alignment=center": {
+        "model": "createrailwaysnavigator:block/advanced_display_half_panel_double_pos_cen",
+        "y": 90
+      },
+      "side=both,facing=south,y_alignment=positive,z_alignment=center": {
+        "model": "createrailwaysnavigator:block/advanced_display_half_panel_double_pos_cen",
+        "y": 180
+      },
+      "side=both,facing=west,y_alignment=positive,z_alignment=center": {
+        "model": "createrailwaysnavigator:block/advanced_display_half_panel_double_pos_cen",
+        "y": 270
+      },
+  
+  
+  
+      "side=both,facing=north,y_alignment=negative,z_alignment=positive": {
+        "model": "createrailwaysnavigator:block/advanced_display_half_panel_double_neg_pos"
+      },
+      "side=both,facing=east,y_alignment=negative,z_alignment=positive": {
+        "model": "createrailwaysnavigator:block/advanced_display_half_panel_double_neg_pos",
+        "y": 90
+      },
+      "side=both,facing=south,y_alignment=negative,z_alignment=positive": {
+        "model": "createrailwaysnavigator:block/advanced_display_half_panel_double_neg_pos",
+        "y": 180
+      },
+      "side=both,facing=west,y_alignment=negative,z_alignment=positive": {
+        "model": "createrailwaysnavigator:block/advanced_display_half_panel_double_neg_pos",
+        "y": 270
+      },
+  
+      "side=both,facing=north,y_alignment=center,z_alignment=positive": {
+        "model": "createrailwaysnavigator:block/advanced_display_half_panel_double_cen_pos"
+      },
+      "side=both,facing=east,y_alignment=center,z_alignment=positive": {
+        "model": "createrailwaysnavigator:block/advanced_display_half_panel_double_cen_pos",
+        "y": 90
+      },
+      "side=both,facing=south,y_alignment=center,z_alignment=positive": {
+        "model": "createrailwaysnavigator:block/advanced_display_half_panel_double_cen_pos",
+        "y": 180
+      },
+      "side=both,facing=west,y_alignment=center,z_alignment=positive": {
+        "model": "createrailwaysnavigator:block/advanced_display_half_panel_double_cen_pos",
+        "y": 270
+      },
+  
+      "side=both,facing=north,y_alignment=positive,z_alignment=positive": {
+        "model": "createrailwaysnavigator:block/advanced_display_half_panel_double_pos_pos"
+      },
+      "side=both,facing=east,y_alignment=positive,z_alignment=positive": {
+        "model": "createrailwaysnavigator:block/advanced_display_half_panel_double_pos_pos",
+        "y": 90
+      },
+      "side=both,facing=south,y_alignment=positive,z_alignment=positive": {
+        "model": "createrailwaysnavigator:block/advanced_display_half_panel_double_pos_pos",
+        "y": 180
+      },
+      "side=both,facing=west,y_alignment=positive,z_alignment=positive": {
+        "model": "createrailwaysnavigator:block/advanced_display_half_panel_double_pos_pos",
+        "y": 270
+      }
+    }
+  }

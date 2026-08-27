@@ -1,0 +1,101 @@
+{
+  "variants": {
+    "facing=north,side=front,z_alignment=negative": {
+      "model": "createrailwaysnavigator:block/advanced_display_panel_neg"
+    },
+    "facing=east,side=front,z_alignment=negative": {
+      "model": "createrailwaysnavigator:block/advanced_display_panel_neg",
+      "y": 90
+    },
+    "facing=south,side=front,z_alignment=negative": {
+      "model": "createrailwaysnavigator:block/advanced_display_panel_neg",
+      "y": 180
+    },
+    "facing=west,side=front,z_alignment=negative": {
+      "model": "createrailwaysnavigator:block/advanced_display_panel_neg",
+      "y": 270
+    },
+
+    "facing=north,side=both,z_alignment=negative": {
+      "model": "createrailwaysnavigator:block/advanced_display_panel_double_neg"
+    },
+    "facing=east,side=both,z_alignment=negative": {
+      "model": "createrailwaysnavigator:block/advanced_display_panel_double_neg",
+      "y": 90
+    },
+    "facing=south,side=both,z_alignment=negative": {
+      "model": "createrailwaysnavigator:block/advanced_display_panel_double_neg",
+      "y": 180
+    },
+    "facing=west,side=both,z_alignment=negative": {
+      "model": "createrailwaysnavigator:block/advanced_display_panel_double_neg",
+      "y": 270
+    },
+
+
+    "facing=north,side=front,z_alignment=center": {
+      "model": "createrailwaysnavigator:block/advanced_display_panel_cen"
+    },
+    "facing=east,side=front,z_alignment=center": {
+      "model": "createrailwaysnavigator:block/advanced_display_panel_cen",
+      "y": 90
+    },
+    "facing=south,side=front,z_alignment=center": {
+      "model": "createrailwaysnavigator:block/advanced_display_panel_cen",
+      "y": 180
+    },
+    "facing=west,side=front,z_alignment=center": {
+      "model": "createrailwaysnavigator:block/advanced_display_panel_cen",
+      "y": 270
+    },
+
+    "facing=north,side=both,z_alignment=center": {
+      "model": "createrailwaysnavigator:block/advanced_display_panel_double_cen"
+    },
+    "facing=east,side=both,z_alignment=center": {
+      "model": "createrailwaysnavigator:block/advanced_display_panel_double_cen",
+      "y": 90
+    },
+    "facing=south,side=both,z_alignment=center": {
+      "model": "createrailwaysnavigator:block/advanced_display_panel_double_cen",
+      "y": 180
+    },
+    "facing=west,side=both,z_alignment=center": {
+      "model": "createrailwaysnavigator:block/advanced_display_panel_double_cen",
+      "y": 270
+    },
+
+
+    "facing=north,side=front,z_alignment=positive": {
+      "model": "createrailwaysnavigator:block/advanced_display_panel_pos"
+    },
+    "facing=east,side=front,z_alignment=positive": {
+      "model": "createrailwaysnavigator:block/advanced_display_panel_pos",
+      "y": 90
+    },
+    "facing=south,side=front,z_alignment=positive": {
+      "model": "createrailwaysnavigator:block/advanced_display_panel_pos",
+      "y": 180
+    },
+    "facing=west,side=front,z_alignment=positive": {
+      "model": "createrailwaysnavigator:block/advanced_display_panel_pos",
+      "y": 270
+    },
+
+    "facing=north,side=both,z_alignment=positive": {
+      "model": "createrailwaysnavigator:block/advanced_display_panel_double_pos"
+    },
+    "facing=east,side=both,z_alignment=positive": {
+      "model": "createrailwaysnavigator:block/advanced_display_panel_double_pos",
+      "y": 90
+    },
+    "facing=south,side=both,z_alignment=positive": {
+      "model": "createrailwaysnavigator:block/advanced_display_panel_double_pos",
+      "y": 180
+    },
+    "facing=west,side=both,z_alignment=positive": {
+      "model": "createrailwaysnavigator:block/advanced_display_panel_double_pos",
+      "y": 270
+    }
+  }
+}
