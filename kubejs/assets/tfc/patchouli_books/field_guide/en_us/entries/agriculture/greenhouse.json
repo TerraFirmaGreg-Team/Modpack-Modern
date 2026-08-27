@@ -19,7 +19,7 @@
     },
     {
       "type": "patchouli:text",
-      "text": "$(thing)Greenhouse Types$() are families of greenhouse blocks that can be used interchangeably in a greenhouse. Additionally, $(bold)$(#ff0fb7)TerraFirma$()$(bold)$(#595959)Greg$() adds more greenhouse wall styles that can be swapped around with the basic greenhouse walls of the same tier."
+      "text": "$(thing)Greenhouse Types$() are families of greenhouse blocks that can be used interchangeably in a greenhouse. Additionally, $(bold)$(#ff0fb7)TerraFirma$()$(bold)$(#595959)Greg$() adds more greenhouse wall styles that can be swapped around with the basic greenhouse walls of the same tier.$(br)Validate a greenhouse by placing a climate station against a wall and $(item)$(k:key.use)$() it. Or, place it anywhere and $(item)$(k:key.use)$() it with a greenhouse block of the same type as the structure."
     },
     {
       "type": "patchouli:text",

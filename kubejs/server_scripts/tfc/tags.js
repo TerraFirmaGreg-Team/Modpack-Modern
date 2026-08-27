@@ -649,6 +649,26 @@ function registerTFCBlockTags(event) {
 	event.add('tfc:mineable_with_glass_saw', 'createdeco:industrial_iron_window_pane');
 	event.add('tfc:mineable_with_glass_saw', 'createdeco:brass_window_pane');
 	event.add('tfc:mineable_with_glass_saw', 'createdeco:zinc_window_pane');
+	
+	// Add small ore block tag to all small ores.
+	const small_ores = [
+		'native_copper',
+		'native_gold',
+		'hematite',
+		'native_silver',
+		'cassiterite',
+		'bismuthinite',
+		'garnierite',
+		'malachite',
+		'magnetite',
+		'limonite',
+		'sphalerite',
+		'tetrahedrite'
+	];
+	small_ores.forEach(small_ore => {
+		event.add('tfg:small_ore_indicators', `tfc:ore/small_${small_ore}`);
+	});
+	event.add('tfg:small_ore_indicators', 'firmalife:ore/small_chromite');
 }
 
 /** @param {TagEvent.Fluid} event */

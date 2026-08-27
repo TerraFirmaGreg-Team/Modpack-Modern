@@ -42,7 +42,4 @@ function registerTFGMaterialBlockTags(event) {
 	{
 		event.removeAllTagsFrom(item)
 	})
-
-	// Add small ore block tag to all small ores.
-	event.add('tfg:small_ore_indicators', Ingredient.of('#tfc:small_ore_pieces').itemIds);
 }

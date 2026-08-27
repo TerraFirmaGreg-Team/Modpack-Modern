@@ -355,7 +355,7 @@
             "type": "patchouli:text",
             "title": "Bee Tips",
             "anchor": "tips",
-            "text": "$(li)Bees can help fertilize $(l:tfc:agriculture/greenhouse#planters)Planters!$()$(li)Hydrated large planters count as flowers.$(li)Being wet prevents bee attacks.$(li)Some crops like sunflowers and flax count as flowers.$(li)The ranges for $(thing)Crop Affinity$(), $(thing)Nature Restoration$(), and flowers are the same."
+            "text": "$(li)Bees can help fertilize $(l:tfc:agriculture/greenhouse#planters)Planters!$()$(li)Hydrated large planters count as flowers.$(li)Being wet prevents bee attacks.$(li)Some crops like sunflowers and flax count as flowers.$(li)The ranges for $(thing)Crop Affinity$(), $(thing)Nature Restoration$(), and flowers are the same.$(li)Make sure to keep the hive entrance unobstructed."
         },
         {
             "type": "patchouli:relations",

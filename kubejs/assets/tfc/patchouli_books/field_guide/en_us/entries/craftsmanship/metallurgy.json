@@ -5,6 +5,13 @@
     "pages": [
         {
             "type": "patchouli:text",
+            "anchor": "index",
+            "text": "$(li)$(bold)$(l:craftsmanship/metallurgy#intro)Surface Metal$()$(li)$(bold)$(l:craftsmanship/metallurgy#extraction)Extracting Metal$()$(li2)$(l:craftsmanship/metallurgy#casting)Casting$()$(li)$(bold)$(l:craftsmanship/metallurgy#alloying)Alloying$()$(li2)$(l:craftsmanship/metallurgy#utility_alloys)Utility Alloys$()$(li)$(bold)$(l:craftsmanship/metallurgy#propick)Prospector's Pick$()$(li2)$(l:craftsmanship/metallurgy#prospector)Digital Prospecting$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "intro",
+            "title": "Scattered Metal",
             "text": "In addition to sticks, twigs, and stones on the ground, you may encounter small pieces of ores. These are important, as they are one of the few sources of ore and metal before obtaining a pickaxe. There are three types of these indicators: $(li)Mineral Dust$(li)Gem Buds$(li)Small Ores."
         },
         {
@@ -26,8 +33,8 @@
                     "C": "#tfg:small_ore_indicators"
                 }
             },
-            "name": "Ground Ores",
-            "text": "When broken―dust indicators drop tiny piles of dust, gem buds drop chipped gems, and small ores give, well, small ores...",
+            "name": "Float Ore",
+            "text": "When broken; dust indicators drop tiny piles of dust, gem buds drop chipped gems, and small ores give, well, small ores.",
             "enable_visualize": false
         },
         {
@@ -107,7 +114,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "One method through which alloys can be made during the early game is through the usage of a $(thing)Small Vessel$(). The process is very similar to $(l:craftsmanship/matallurgy#casting)Casting$(). However, instead of using just a single metal, place enough ore pieces inside the vessel in the correct ratio to form a known alloy mix."
+            "text": "One method through which alloys can be made during the early game is through the usage of a $(thing)Small Vessel$(). The process is very similar to $(l:craftsmanship/metallurgy#casting)Casting$(). However, instead of using just a single metal, place enough ore pieces inside the vessel in the correct ratio to form a known alloy mix."
         },
         {
             "type": "patchouli:text",
@@ -132,8 +139,85 @@
             "anchor": "utility_alloys",
             "text": "Many alloys are not suitable for creating tools but are still necessary for progression. Some of the most important utility alloys for early progression are $(thing)Brass$(), $(thing)Rose Gold$(), $(thing)Sterling Silver$(), $(thing)Tin Alloy$(), and $(thing)Red Alloy$().",
             "title": "Utility Alloys"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "propick",
+            "title": "Prospector's Pick",
+            "text": "You remembered where you picked up those indicator ores, right? Finding additional ores may require extensive exploration and mining. You should become very familiar with $(l:the_world/earth_ore_index)Ores and Minerals$(). If you need a specific resource, you must find the rock type it spawns in either under your feet or across the world."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tag:tfc:propicks",
+            "title": "Pro-Pick",
+            "link_recipes": false,
+            "text": "If you're looking for ore veins, and you can't find the vein by guessing, it's time to pull out the $(item)prospector's pick$(). If you are familiar with base prospector's picks in $(thing)TFC$() you may be suprised to learn that they function very differently in $(bold)$(#ff0fb7)TerraFirma$(#595959)Greg$()"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Right-clicking a prospector's pick in $(bold)$(#ff0fb7)TF$(#595959)G$() will cast a search ray in your views' direction. The rays width and depth is dependent on the tier of the pick noted in its tooltips. Depending on the tier of the prospector's pick can also give you a count of the ore quantities and even display an $(thing)X-Ray$() indicator of the ore vein."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "The prospector's pick can display the following information on use:$(li)In chat the pick can display the $(thing)total quantity$() of the ore vein, the $(thing)contents$() of the ore vein, and the $(thing)quantity per ore-type$() of the ore vein.$(li)$(thing)colored steel$() prospector's picks can also display either a large X-Ray particle in the $(thing)center$() of an ore vein, or $(thing)paricle's per ore block$()"
+        },
+        {
+            "type": "patchouli:image",
+            "width": 1024,
+            "texture_width": 1024,
+            "height": 1024,
+            "texture_height": 1024,
+            "text": "Colored steel pro-picks: The large $(bold)$(#D68400)❗$() is from per-vein style x-ray. And the smaller ones are from per-block style x-ray.",
+            "title": "Prospector View",
+            "images": [
+                "tfg:textures/gui/field_guide/prospecting/tfg_prospectors_pick_xray.png"
+            ],
+            "border": true
+        },
+        {
+            "type": "tfc:anvil_recipe",
+            "recipe": "tfc:anvil/copper_propick_head",
+            "text": "A prospector's pick head can be $(l:craftsmanship/anvils#working)smithed$() on an $(l:craftsmanship/anvils)Anvil$() or $(l:craftsmanship/metallurgy#casting)Cast$(), then affixed upon a stick like other tools.$(br2)Note: The majority of the stats and charecteristics of the prospector's picks can be adjusted in your server config file."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "prospector",
+            "item": "gtceu:prospector.lv,gtceu:prospector.hv,gtceu:prospector.luv",
+            "title": "Digital Ore Prospector's",
+            "link_recipes": false,
+            "text": "Technology is now! And with it comes new ways to find your ore veins!$(br)$(item)Ore Prospector's$() are $(thing)GregTech's$() solution to finding ore veins and fluid deposits in your world. The size and capabilities of the ore prospectors are determined by the $(#ff1100)voltage tier$()."
+        },
+        {
+            "type": "patchouli:image",
+            "width": 1024,
+            "texture_width": 1024,
+            "height": 1024,
+            "texture_height": 1024,
+            "images": [
+                "tfg:textures/gui/field_guide/prospecting/tfg_luv_ore_prospector.png"
+            ],
+            "border": true,
+            "text": "An example of what you may see using the $(#e373ff)LuV ore prospector$(). Keep your battery charged!"
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Further Reading",
+            "anchor": "relations",
+            "entries": [
+                "tfc:the_world/earth_vein_index",
+                "tfc:craftsmanship/pottery",
+                "tfc:craftsmanship/pit_kiln",
+                "tfc:craftsmanship/charcoal_forge"
+            ]
         }
     ],
     "read_by_default": true,
-    "sortnum": 3
+    "sortnum": 3,
+	"extra_recipe_mappings": {
+		"tag:tfc:small_ore_pieces": 1,
+		"tag:tfc:propicks": 20,
+        "gtceu:prospector.lv": 26,
+        "gtceu:prospector.hv": 26,
+        "gtceu:prospector.luv": 26
+	}
 }

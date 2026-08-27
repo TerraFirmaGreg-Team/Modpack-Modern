@@ -21,7 +21,7 @@
     },
     {
       "type": "patchouli:text",
-      "text": "Right-clicking a prospector's pick in $(thing)TFG$() will cast a search ray in your views direction. The rays width and depth is dependent on the tier of the pick noted in its tooltips. Depending on the tier of the prospector's pick can also give you a count of the ore quantities and even display an $(thing)X-Ray$() indicator of the ore vein."
+      "text": "Right-clicking a prospector's pick in $(thing)TFG$() will cast a search ray in your views' direction. The rays width and depth is dependent on the tier of the pick noted in its tooltips. Depending on the tier of the prospector's pick can also give you a count of the ore quantities and even display an $(thing)X-Ray$() indicator of the ore vein."
     },
     {
       "type": "patchouli:text",
