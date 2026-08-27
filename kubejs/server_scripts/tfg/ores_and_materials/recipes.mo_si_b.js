@@ -108,10 +108,4 @@ function registerTFGMoSiBRecipes(event) {
 		.duration(60 * 20)
 		.EUt(GTValues.VA[GTValues.HV])
 
-	// Not part of the line but it involves Mo so it can live here
-	event.recipes.gtceu.centrifuge('tfg:decomposition_centrifuging_tarkianite')
-		.itemInputs('18x gtceu:tarkianite_dust')
-		.itemOutputs('gtceu:copper_dust', 'gtceu:iron_dust', '4x gtceu:rhenium_dust', '4x gtceu:molybdenite_dust')
-		.duration(20*65)
-		.EUt(GTValues.VA[GTValues.MV])
 }
