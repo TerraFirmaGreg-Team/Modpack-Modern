@@ -13,10 +13,10 @@
 	"item.steampowered.cast_iron_sheet": "Żeliwna płyta",
 	"item.steampowered.steel_ingot": "Sztabka stali",
 	"item.steampowered.steel_sheet": "Stalowa płyta",
-	"itemGroup.steampowered.base": "Create: Steam Powered",
 	"steampowered.ponder.tag.steam": "Para",
 	"tooltip.steampowered.burner.item": "Pozostałe paliwo: %s x %s",
 	"tooltip.steampowered.engine.steamconsume": "Wymaga %s mW/t pary",
 	"tooltip.steampowered.steam_engine.heating": "Status: Rozgrzewa się",
-	"tooltip.steampowered.steam_engine.running": "Status: Uruchomiony"
+	"tooltip.steampowered.steam_engine.not_enough_steam": "Status: Za mało pary",
+	"tooltip.steampowered.steam_engine.running": "Status: Działa"
 }

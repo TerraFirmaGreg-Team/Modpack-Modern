@@ -19,7 +19,7 @@ function registerTFGGarnetSandLine(event) {
     event.recipes.gtceu.chemical_reactor('tfg:garnet_leach_liquor')
             .itemInputs(Item.of('gtceu:crushed_garnet_sand_ore'))
             .inputFluids(Fluid.of('gtceu:sulfuric_acid', 1000))
-            .itemOutputs(Item.of('gtceu:gypsum_dust', 8), Item.of('gtceu:silicon_dioxide_dust', 3), Item.of('tfg:flawed_garnet_residual_slag_gem', 1))
+            .itemOutputs(Item.of('gtceu:gypsum_dust', 8), Item.of('tfg:flawed_garnet_residual_slag_gem', 1), Item.of('gtceu:silicon_dioxide_dust', 3))
             .outputFluids(Fluid.of('tfg:garnet_leach_liquor', 1000))
             .duration(20 * 30)
             .EUt(GTValues.VA[GTValues.MV])

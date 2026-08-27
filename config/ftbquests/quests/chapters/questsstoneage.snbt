@@ -995,20 +995,6 @@
 			subtitle: "{quests.stone_age.clay_products.subtitle}"
 			tasks: [
 				{
-					id: "49D59028557EF5B3"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							Parent: {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "tfc:ceramic/scythe_blade_mold"
-					}
-					type: "item"
-				}
-				{
 					id: "5754EBBCC16E2E01"
 					item: "tfc:ceramic/jug"
 					type: "item"
@@ -1024,64 +1010,8 @@
 					type: "item"
 				}
 				{
-					id: "0F5E694A6237E2E5"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							Parent: {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "tfc:ceramic/propick_head_mold"
-					}
-					type: "item"
-				}
-				{
 					id: "4469E283FAC0DD1D"
 					item: "tfc:ceramic/bowl"
-					type: "item"
-				}
-				{
-					id: "0E69C79D1F9EA3D8"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							Parent: {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "tfc:ceramic/javelin_head_mold"
-					}
-					type: "item"
-				}
-				{
-					id: "2C3FF1BCA34FE5AA"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							Parent: {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "tfc:ceramic/axe_head_mold"
-					}
-					type: "item"
-				}
-				{
-					id: "72A411E02594DAC9"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							Parent: {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "tfc:ceramic/shovel_head_mold"
-					}
 					type: "item"
 				}
 				{
@@ -1097,20 +1027,6 @@
 					type: "item"
 				}
 				{
-					id: "1ABB2C093670CA44"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							Parent: {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "tfc:ceramic/ingot_mold"
-					}
-					type: "item"
-				}
-				{
 					id: "1E47F46FCD46B745"
 					item: "tfc:ceramic/large_vessel"
 					type: "item"
@@ -1121,120 +1037,20 @@
 					type: "item"
 				}
 				{
-					id: "0979B34A0896AF86"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							Parent: {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "tfc:ceramic/saw_blade_mold"
-					}
-					type: "item"
-				}
-				{
 					id: "3A7BBC4232D0E1DD"
 					item: {
 						Count: 1
-						ForgeCaps: {
-							Parent: {
-								heat: 0.0f
-								ticks: 0L
-							}
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:fired_molds)"
 						}
-						id: "tfc:ceramic/chisel_head_mold"
 					}
-					type: "item"
-				}
-				{
-					id: "296ACF0D04C16118"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							Parent: {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "tfc:ceramic/mace_head_mold"
-					}
+					title: "{quests.tasktype.item.any} #tfc:fired_molds"
 					type: "item"
 				}
 				{
 					id: "21A457BF0968FE98"
 					item: "tfc:ceramic/spindle_head"
-					type: "item"
-				}
-				{
-					id: "00562CD636AB6668"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							Parent: {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "tfc:ceramic/hoe_head_mold"
-					}
-					type: "item"
-				}
-				{
-					id: "0168EE0CC6AF7A54"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							Parent: {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "tfc:ceramic/hammer_head_mold"
-					}
-					type: "item"
-				}
-				{
-					id: "5480C7B0518AEE1F"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							Parent: {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "tfc:ceramic/knife_blade_mold"
-					}
-					type: "item"
-				}
-				{
-					id: "484142EC546C9EC3"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							Parent: {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "tfc:ceramic/pickaxe_head_mold"
-					}
-					type: "item"
-				}
-				{
-					id: "0F480F614AD99C33"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							Parent: {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "tfc:ceramic/sword_blade_mold"
-					}
 					type: "item"
 				}
 				{
@@ -1245,62 +1061,6 @@
 				{
 					id: "0BB8771118915F9E"
 					item: "minecraft:brick"
-					type: "item"
-				}
-				{
-					id: "18EAE06E3E8167A3"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							Parent: {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "tfcscraping:ceramic/scraping_knife_blade_mold"
-					}
-					type: "item"
-				}
-				{
-					id: "1380F15978789143"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							Parent: {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "tfg:spindle_head_mold"
-					}
-					type: "item"
-				}
-				{
-					id: "68DBB874FCCCD509"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							Parent: {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "tfg:nugget_mold"
-					}
-					type: "item"
-				}
-				{
-					id: "7BA2D7D2C6176DD3"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							Parent: {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "tfg:lamp_mold"
-					}
 					type: "item"
 				}
 				{
@@ -2012,47 +1772,51 @@
 			subtitle: "{quests.stone_age.wool_clothes.subtitle}"
 			tasks: [
 				{
-					id: "3D3B801BD59C5C58"
+					id: "00632E580F0DFF7B"
 					item: {
 						Count: 1
-						id: "tfcambiental:wool_boots"
+						id: "ftbfiltersystem:smart_filter"
 						tag: {
-							Damage: 0
+							"ftbfiltersystem:filter": "or(item(tfcambiental:wool_hat)item(tfc_textile:cotton_hat))"
 						}
 					}
+					title: "{quests.tasktype.item.any}"
 					type: "item"
 				}
 				{
-					id: "5DCC89E1CCE3B1AA"
+					id: "591077F8A2F806A4"
 					item: {
 						Count: 1
-						id: "tfcambiental:wool_pants"
+						id: "ftbfiltersystem:smart_filter"
 						tag: {
-							Damage: 0
+							"ftbfiltersystem:filter": "or(item(tfcambiental:wool_sweater)item(tfc_textile:cotton_shirt))"
 						}
 					}
+					title: "{quests.tasktype.item.any}"
 					type: "item"
 				}
 				{
-					id: "6179B367FF1C4FBC"
+					id: "05AD9728321D97A6"
 					item: {
 						Count: 1
-						id: "tfcambiental:wool_sweater"
+						id: "ftbfiltersystem:smart_filter"
 						tag: {
-							Damage: 0
+							"ftbfiltersystem:filter": "or(item(tfcambiental:wool_pants)item(tfc_textile:cotton_pants))"
 						}
 					}
+					title: "{quests.tasktype.item.any}"
 					type: "item"
 				}
 				{
-					id: "398DD59822B91BF7"
+					id: "7F93EC071958349B"
 					item: {
 						Count: 1
-						id: "tfcambiental:wool_hat"
+						id: "ftbfiltersystem:smart_filter"
 						tag: {
-							Damage: 0
+							"ftbfiltersystem:filter": "or(item(tfcambiental:wool_boots)item(tfc_textile:cotton_socks))"
 						}
 					}
+					title: "{quests.tasktype.item.any}"
 					type: "item"
 				}
 			]
@@ -2062,113 +1826,127 @@
 		}
 		{
 			dependencies: ["4521BB8892B386AF"]
-			description: ["{quests.stone_age.burlap_clothes.desc}"]
+			description: ["{quests.stone_age.cooling_clothes.desc}"]
 			id: "1602438D9FCADA5E"
 			optional: true
-			subtitle: "{quests.stone_age.burlap_clothes.subtitle}"
+			subtitle: "{quests.stone_age.cooling_clothes.subtitle}"
 			tasks: [
 				{
-					id: "578606AB58CCB2D8"
+					id: "4D83FE7E1F3F9EF1"
 					item: {
 						Count: 1
-						id: "tfcambiental:burlap_shoes"
+						id: "ftbfiltersystem:smart_filter"
 						tag: {
-							Damage: 0
+							"ftbfiltersystem:filter": "or(item(tfcambiental:burlap_cowl)item(tfcambiental:silk_cowl)item(tfc_textile:linen_hat))"
 						}
 					}
+					title: "{quests.tasktype.item.any}"
 					type: "item"
 				}
 				{
-					id: "652C26BED5BE0ECE"
+					id: "4E937D9582B304D8"
 					item: {
 						Count: 1
-						id: "tfcambiental:burlap_pants"
+						id: "ftbfiltersystem:smart_filter"
 						tag: {
-							Damage: 0
+							"ftbfiltersystem:filter": "or(item(tfcambiental:burlap_shirt)item(tfcambiental:silk_shirt)item(tfc_textile:linen_shirt))"
 						}
 					}
+					title: "{quests.tasktype.item.any}"
 					type: "item"
 				}
 				{
-					id: "5215F2EAAE94C65D"
+					id: "60D7FAB286A2E931"
 					item: {
 						Count: 1
-						id: "tfcambiental:burlap_shirt"
+						id: "ftbfiltersystem:smart_filter"
 						tag: {
-							Damage: 0
+							"ftbfiltersystem:filter": "or(item(tfcambiental:burlap_pants)item(tfcambiental:silk_pants)item(tfc_textile:linen_pants))"
 						}
 					}
+					title: "{quests.tasktype.item.any}"
 					type: "item"
 				}
 				{
-					id: "066C17ADD5E122F9"
+					id: "2E9FC3B9DC6B0ABE"
 					item: {
 						Count: 1
-						id: "tfcambiental:burlap_cowl"
+						id: "ftbfiltersystem:smart_filter"
 						tag: {
-							Damage: 0
+							"ftbfiltersystem:filter": "or(item(tfcambiental:burlap_shoes)item(tfcambiental:silk_shoes)item(tfc_textile:linen_socks))"
 						}
 					}
+					title: "{quests.tasktype.item.any}"
 					type: "item"
 				}
 			]
-			title: "{quests.stone_age.burlap_clothes.title}"
+			title: "{quests.stone_age.cooling_clothes.title}"
 			x: -3.0d
 			y: 10.5d
 		}
 		{
-			dependencies: ["4521BB8892B386AF"]
-			description: ["{quests.stone_age.silk_clothes.desc}"]
+			dependencies: [
+				"4521BB8892B386AF"
+				"6B2ADEEEC2E9ED4B"
+				"777646123ED397D1"
+				"5D0B0B9E61C3DE75"
+			]
+			dependency_requirement: "one_completed"
+			description: ["{quests.stone_age.beneath_clothes.desc}"]
 			id: "37108D618CF60730"
 			optional: true
-			subtitle: "{quests.stone_age.silk_clothes.subtitle}"
+			subtitle: "{quests.stone_age.beneath_clothes.subtitle}"
 			tasks: [
 				{
-					id: "14755E375DF9CFE8"
+					id: "7FBD5CBDE6602EB1"
 					item: {
 						Count: 1
-						id: "tfcambiental:silk_shoes"
+						id: "ftbfiltersystem:smart_filter"
 						tag: {
-							Damage: 0
+							"ftbfiltersystem:filter": "or(item(tfc_textile:phantom_silk_hat)item(tfc_textile:red_elk_hat))"
 						}
 					}
+					title: "{quests.tasktype.item.any}"
 					type: "item"
 				}
 				{
-					id: "3EE94A168421AF71"
+					id: "5F6036E2D00258B7"
 					item: {
 						Count: 1
-						id: "tfcambiental:silk_pants"
+						id: "ftbfiltersystem:smart_filter"
 						tag: {
-							Damage: 0
+							"ftbfiltersystem:filter": "or(item(tfc_textile:phantom_silk_shirt)item(tfc_textile:red_elk_shirt))"
 						}
 					}
+					title: "{quests.tasktype.item.any}"
 					type: "item"
 				}
 				{
-					id: "0A66FF7B455E781F"
+					id: "7DD82D2930E72F43"
 					item: {
 						Count: 1
-						id: "tfcambiental:silk_shirt"
+						id: "ftbfiltersystem:smart_filter"
 						tag: {
-							Damage: 0
+							"ftbfiltersystem:filter": "or(item(tfc_textile:red_elk_pants)item(tfc_textile:phantom_silk_pants))"
 						}
 					}
+					title: "{quests.tasktype.item.any}"
 					type: "item"
 				}
 				{
-					id: "4738C7E29F42C181"
+					id: "1F235D9F075989AF"
 					item: {
 						Count: 1
-						id: "tfcambiental:silk_cowl"
+						id: "ftbfiltersystem:smart_filter"
 						tag: {
-							Damage: 0
+							"ftbfiltersystem:filter": "or(item(tfc_textile:phantom_silk_socks)item(tfc_textile:red_elk_boots))"
 						}
 					}
+					title: "{quests.tasktype.item.any}"
 					type: "item"
 				}
 			]
-			title: "{quests.stone_age.silk_clothes.title}"
+			title: "{quests.stone_age.beneath_clothes.title}"
 			x: -1.0d
 			y: 10.5d
 		}
@@ -2369,18 +2147,56 @@
 			id: "615A5EBBA87D37CF"
 			optional: true
 			subtitle: "{quests.stone_age.furs.subtitle}"
-			tasks: [{
-				id: "55CF144A279A1F0D"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc_textile:animal_furs)"
+			tasks: [
+				{
+					id: "0C34FB20A2F6BA0A"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(tfc_textile:direwolf_hat)item(tfc_textile:panther_hat)item(tfc_textile:cougar_hat)item(tfc_textile:black_bear_hat)item(tfc_textile:grizzly_bear_hat)item(tfc_textile:caribou_hat)item(tfc_textile:polar_bear_hat)item(tfc_textile:sabertooth_hat))"
+						}
 					}
+					title: "{quests.tasktype.item.any}"
+					type: "item"
 				}
-				title: "{quests.tasktype.item.any} #tfc_textile:animal_furs"
-				type: "item"
-			}]
+				{
+					id: "4DBF8A3A0E6C31C0"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(tfc_textile:direwolf_shirt)item(tfc_textile:panther_shirt)item(tfc_textile:cougar_shirt)item(tfc_textile:black_bear_shirt)item(tfc_textile:grizzly_bear_shirt)item(tfc_textile:sabertooth_shirt)item(tfc_textile:caribou_shirt)item(tfc_textile:polar_bear_shirt))"
+						}
+					}
+					title: "{quests.tasktype.item.any}"
+					type: "item"
+				}
+				{
+					id: "64149616B5B78B90"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(tfc_textile:direwolf_pants)item(tfc_textile:panther_pants)item(tfc_textile:cougar_pants)item(tfc_textile:black_bear_pants)item(tfc_textile:grizzly_bear_pants)item(tfc_textile:sabertooth_pants)item(tfc_textile:caribou_pants)item(tfc_textile:polar_bear_pants))"
+						}
+					}
+					title: "{quests.tasktype.item.any}"
+					type: "item"
+				}
+				{
+					id: "7985B2EF16641719"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(tfc_textile:direwolf_boots)item(tfc_textile:panther_boots)item(tfc_textile:cougar_boots)item(tfc_textile:black_bear_boots)item(tfc_textile:grizzly_bear_boots)item(tfc_textile:sabertooth_boots)item(tfc_textile:caribou_boots)item(tfc_textile:polar_bear_boots))"
+						}
+					}
+					title: "{quests.tasktype.item.any}"
+					type: "item"
+				}
+			]
 			title: "{quests.stone_age.furs.title}"
 			x: -7.0d
 			y: 10.5d
@@ -2451,57 +2267,61 @@
 		}
 		{
 			dependencies: ["4521BB8892B386AF"]
-			description: ["{quests.stone_age.linen_clothes.desc}"]
+			description: ["{quests.stone_age.cooling_hides.desc}"]
 			id: "746FEC2C802A19DC"
 			optional: true
-			subtitle: "{quests.stone_age.linen_clothes.subtitle}"
+			subtitle: "{quests.stone_age.cooling_hides.subtitle}"
 			tasks: [
 				{
-					id: "27D454F758947D65"
+					id: "56FD30244724F16F"
 					item: {
 						Count: 1
-						id: "tfc_textile:linen_hat"
+						id: "ftbfiltersystem:smart_filter"
 						tag: {
-							Damage: 0
+							"ftbfiltersystem:filter": "or(item(tfc_textile:crocodile_hat)item(tfc_textile:lion_hat)item(tfc_textile:tiger_hat))"
 						}
 					}
+					title: "{quests.tasktype.item.any}"
 					type: "item"
 				}
 				{
-					id: "4E4D4EA89F64D90B"
+					id: "750043A57C9B19BD"
 					item: {
 						Count: 1
-						id: "tfc_textile:linen_shirt"
+						id: "ftbfiltersystem:smart_filter"
 						tag: {
-							Damage: 0
+							"ftbfiltersystem:filter": "or(item(tfc_textile:crocodile_shirt)item(tfc_textile:lion_shirt)item(tfc_textile:tiger_shirt))"
 						}
 					}
+					title: "{quests.tasktype.item.any}"
 					type: "item"
 				}
 				{
-					id: "0963F721D7221EC6"
+					id: "0611F561EE8976E3"
 					item: {
 						Count: 1
-						id: "tfc_textile:linen_pants"
+						id: "ftbfiltersystem:smart_filter"
 						tag: {
-							Damage: 0
+							"ftbfiltersystem:filter": "or(item(tfc_textile:crocodile_pants)item(tfc_textile:lion_pants)item(tfc_textile:tiger_pants))"
 						}
 					}
+					title: "{quests.tasktype.item.any}"
 					type: "item"
 				}
 				{
-					id: "5AD716024E07A48E"
+					id: "0DCAF0344103913B"
 					item: {
 						Count: 1
-						id: "tfc_textile:linen_socks"
+						id: "ftbfiltersystem:smart_filter"
 						tag: {
-							Damage: 0
+							"ftbfiltersystem:filter": "or(item(tfc_textile:crocodile_boots)item(tfc_textile:lion_boots)item(tfc_textile:tiger_boots))"
 						}
 					}
+					title: "{quests.tasktype.item.any}"
 					type: "item"
 				}
 			]
-			title: "{quests.stone_age.linen_clothes.title}"
+			title: "{quests.stone_age.cooling_hides.title}"
 			x: -2.0d
 			y: 10.5d
 		}
@@ -2789,7 +2609,7 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.burlap_cloth.title}"
-			x: 5.0d
+			x: 4.5d
 			y: 18.5d
 		}
 		{
@@ -2804,7 +2624,7 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.wool_cloth.title}"
-			x: 6.0d
+			x: 5.5d
 			y: 18.5d
 		}
 		{
@@ -2819,7 +2639,7 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.silk_cloth.title}"
-			x: 7.0d
+			x: 6.5d
 			y: 18.5d
 		}
 		{
@@ -2834,7 +2654,7 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.phantom_silk.title}"
-			x: 8.0d
+			x: 7.5d
 			y: 18.5d
 		}
 		{
@@ -2842,6 +2662,7 @@
 				"740004F06AD6D8DD"
 				"429AA29197BB853E"
 				"594A9BBC8873C043"
+				"0AFCF743447DBA57"
 			]
 			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.bed.desc}"]
@@ -2934,6 +2755,41 @@
 			title: "{quests.stone_age.barrelrack.title}"
 			x: 6.5d
 			y: 15.0d
+		}
+		{
+			dependencies: ["4D1CD95482EE2CDD"]
+			description: [
+				"{quests.stone_age.fuel_temperatures.desc.1}"
+				"{@pagebreak}"
+				"{quests.stone_age.fuel_temperatures.desc.2}"
+			]
+			id: "57492E368B7CDF68"
+			optional: true
+			shape: "heart"
+			subtitle: "{quests.stone_age.fuel_temperatures.subtitle}"
+			tasks: [{
+				id: "7D2EEAB28E7E8F1F"
+				item: "tfg:dried_peat_brick"
+				type: "item"
+			}]
+			title: "{quests.stone_age.fuel_temperatures.title}"
+			x: 25.5d
+			y: 13.5d
+		}
+		{
+			dependencies: ["1C7D0D967C6142EA"]
+			description: ["{quests.tfg_tips.cotton_cloth.desc}"]
+			id: "0AFCF743447DBA57"
+			optional: true
+			subtitle: "{quests.tfg_tips.cotton_cloth.subtitle}"
+			tasks: [{
+				id: "7A2C00FDFD69ED2D"
+				item: "tfc_textile:cotton_cloth"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.cotton_cloth.title}"
+			x: 8.5d
+			y: 18.5d
 		}
 	]
 	subtitle: ["{quests.stone_age.subtitle}"]
