@@ -490,4 +490,11 @@ const registerGTCEURecipes = (event) => {
 		.chancedOutput(Item.of('gtceu:neodymium_dust', 1), 2000, 0)
 		.duration(2.5*20)
 		.EUt(GTValues.VA[GTValues.MV])
+
+	event.remove({ id: 'gtceu:electrolyzer/decomposition_electrolyzing_tarkianite' })
+	event.recipes.gtceu.centrifuge('tfg:decomposition_centrifuging_tarkianite')
+		.itemInputs(Item.of('gtceu:tarkianite_dust', 18))
+		.itemOutputs(Item.of('gtceu:copper_dust', 1), Item.of('gtceu:iron_dust'), Item.of('gtceu:rhenium_dust', 4), Item.of('gtceu:molybdenite_dust', 4), Item.of('gtceu:sulfur_dust', 8))
+		.duration(20*65)
+		.EUt(GTValues.VA[GTValues.MV])
 }
