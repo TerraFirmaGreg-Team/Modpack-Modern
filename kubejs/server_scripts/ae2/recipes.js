@@ -1012,7 +1012,7 @@ const registerAE2Recipes = (event) => {
 			'2x ae2:cell_component_64k')
 		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 2304))
 		.itemOutputs('ae2:cell_component_256k')
-		.duration(20*10)
+		.duration(20*400)
 		.EUt(GTValues.VA[GTValues.IV])
 		.dimension('ad_astra:moon')
 		.cleanroom(CleanroomType.CLEANROOM)
