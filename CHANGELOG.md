@@ -3,6 +3,7 @@
 ## Unreleased
 ### Changes
 - Added a new model and texture for pineapple bushes (#4776) @eggyplantsu
+- Tarkianite dust is now centrifuged and give Molybdenite so you can't bypass Molybdenum line @TomPlop
 ### Bug fixes
 - Fixed a freeze when pressing U on items that had a lot of recipes or tags (#4837) @Pyritie
 - Fixed a bunch of missing crop models (#4838) @Pyritie
