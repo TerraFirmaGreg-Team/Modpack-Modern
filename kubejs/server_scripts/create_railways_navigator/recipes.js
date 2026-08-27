@@ -11,7 +11,7 @@ const registerRailwaysNavigatorRecipes = (event) => {
 
         //Display Board
         event.shaped(
-            Item.Of('createrailwaysnavigator:advanced_display'),
+            Item.of('createrailwaysnavigator:advanced_display', 2),
             [
                 "AAA",
                 "CBE",
@@ -27,7 +27,7 @@ const registerRailwaysNavigatorRecipes = (event) => {
 
         //Navigator
         event.shaped(
-            Item.Of('createrailwaysnavigator:navigator'),
+            Item.of('createrailwaysnavigator:navigator'),
             [
                 "ABA",
                 "CDC",
