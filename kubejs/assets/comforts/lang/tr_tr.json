@@ -50,7 +50,5 @@
   "gui.comforts.config.sleepingBagsStopPhantoms.name": "Uyku tulumları phantom'ları durdurur",
   "item.comforts.hammock.placement.tooltip": "Yerleştirmek için %s gerektirir.",
   "item.comforts.rope_and_nail.placement.tooltip": "Hamakları yerleştirmek için kullanılır.",
-  "item.comforts.sleeping_bag.auto_use.tooltip": "Otomatik olarak uyumayı dener.\nYerleştirmek için çömelirken kullanın.",
-  "itemGroup.comforts": "Comforts",
-  "itemGroup.comforts.general": "Comforts"
+  "item.comforts.sleeping_bag.auto_use.tooltip": "Otomatik olarak uyumayı dener.\nYerleştirmek için çömelirken kullanın."
 }

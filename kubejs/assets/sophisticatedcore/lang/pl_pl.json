@@ -148,14 +148,12 @@
 	"gui.sophisticatedcore.upgrades.void.tooltip": "Ustawienia usuwania",
 	"gui.sophisticatedcore.upgrades.xp_pump": "Pompa PD",
 	"gui.sophisticatedcore.upgrades.xp_pump.tooltip": "Pompa doświadczenia",
-	"item.sophisticatedcore.storage.tooltip.energy": "%s FE",
 	"item.sophisticatedcore.storage.tooltip.fluid": "%s mW %s",
 	"item.sophisticatedcore.storage.tooltip.fluid_empty": "Pusty zbiornik",
 	"item.sophisticatedcore.storage.tooltip.inventory": "Ekwipunek",
 	"item.sophisticatedcore.storage.tooltip.shift": "Lewy Shift",
 	"item.sophisticatedcore.storage.tooltip.stack_multiplier": "Mnożnik rozmiaru stosu: %s",
 	"item.sophisticatedcore.storage.tooltip.upgrades": "Ulepszenia",
-	"key.category.sophisticatedcore.main": "Sophisticated Mods",
 	"upgrade_group.sophisticatedcore.cooking_upgrades": "Ulepszenia pieca",
 	"upgrade_group.sophisticatedcore.jukebox_upgrades": "Ulepszenia szafy grającej"
 }

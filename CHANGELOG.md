@@ -2,7 +2,14 @@
 
 ## Unreleased
 ### Changes
+- Added a new model and texture for pineapple bushes (#4776) @eggyplantsu
 ### Bug fixes
+- Fixed a freeze when pressing U on items that had a lot of recipes or tags (#4837) @Pyritie
+- Fixed a bunch of missing crop models (#4838) @Pyritie
+- Fixed slashed and riveted locometal dye recipes being the wrong way around (#4844) @pehala
+- Fixed negative durability on leather apron (#4843) @Pyritie
+- Fixed missing Jade information on tree taps @Pyritie
+- Fixed teleporting to the beneath not clearing out gravel above your spawn point, which caused damage/death (#4795) @Pyritie
 
 ## [0.13.8] - 25-08-2026
 ### Breaking changes
@@ -21,6 +28,7 @@
 - The Gas Well now depletes fluid vein way slower (same as the MV Fluid Rig) @TomPlop
 - Fixed being able to get wraptor/sniffer/glacian sheep shearable items from earth shearable animals via the pastoral rancher (#4813) @TomPlop
 - Fixed the wraptor/sniffer/glacian sheep output amounts in the pastoral rancher to better match their manual shearing amounts (#4814) @TomPlop
+- Fixed not being able to fully process garnet sands in a normal chemical reactor (#4686) @TomPlop
 #### Other changes
 - Added combustion engines for generating SU from combustible fuels. You can use any fluid that works in a GregTech combustion generator or gas turbine (#4766) @Pyritie
 - Added two more "start room" variations to mineshafts, and added monsters to it @Pyritie

@@ -12,6 +12,9 @@ function registerTFGMoonBlockTags(event) {
 	event.add('minecraft:rabbits_spawnable_on', '#ad_astra:moon_stone_replaceables')
 	event.add('species:limpet_spawnable_on', '#ad_astra:moon_stone_replaceables')
 
+	event.add('buildinggadgets2:deny', '#forge:budding')
+	event.add('create:non_movable', '#forge:budding')
+
 	event.add('ad_astra:moon_stone_replaceables', 'ad_astra:moon_sand')
 	event.add('ad_astra:moon_stone_replaceables', 'tfg:rock/hardened_moon_stone')
 	event.add('ad_astra:moon_stone_replaceables', 'tfc:sand/white')

@@ -1,6 +1,6 @@
 {
   "__comment__": "This file was automatically created by mcresources",
-  "parent": "tfc:block/crop_cross",
+  "parent": "tfc:block/crop/vexxed_crop_cross",
   "textures": {
     "crop": "tfc:block/crop/yellow_bell_pepper_1"
   }
