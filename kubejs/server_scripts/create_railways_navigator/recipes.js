@@ -4,7 +4,7 @@
  * 
  * @param {Internal.RecipesEventJS} event 
  */
-const registerChimesRecipes = (event) => {
+const registerRailwaysNavigatorRecipes = (event) => {
 	if (Platform.isLoaded("createrailwaysnavigator")) {
         //Display variants and train station clock items already have default
         //recipes. No need to change them.
