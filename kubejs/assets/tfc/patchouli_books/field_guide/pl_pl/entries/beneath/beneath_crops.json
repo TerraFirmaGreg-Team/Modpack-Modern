@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Zawartość",
-			"text": "$(li)$(l:tfc:beneath/beneath_crops#cassava)Cassava$()$(li)$(l:tfc:beneath/beneath_crops#peanut)Peanut$()$(li)$(l:tfc:beneath/beneath_crops#beans)Blackstone Beans$()$(li)$(l:tfc:beneath/beneath_crops#ghost_pepper)Ghost Pepper$()"
+			"text": "$(li)$(l:tfc:beneath/beneath_crops#cassava)Cassava$()$(li)$(l:tfc:beneath/beneath_crops#peanut)Peanut$()$(li)$(l:tfc:beneath/beneath_crops#beans)Blackstone Beans$()$(li)$(l:tfc:beneath/beneath_crops#ghost_pepper)Ghost Pepper$()$(li)$(l:tfc:beneath/beneath_crops#cotton)Cotton$()"
 		},
 		{
 			"type": "patchouli:text",
@@ -133,7 +133,7 @@
 					}
 				}
 			],
-			"text": "$(thing)Wild Cassava$() grow between Y=203 and Y=80.",
+			"text": "$(thing)Dzika maniok$() rośnie między Y=203, a Y=80.",
 			"enable_visualize": false
 		},
 		{
@@ -248,7 +248,7 @@
 					}
 				}
 			],
-			"text": "$(thing)Wild Peanuts$() grow between Y=203 and Y=80.",
+			"text": "$(thing)Dzikie orzechy ziemne$() rośną między Y=203, a Y=80.",
 			"enable_visualize": false
 		},
 		{
@@ -363,7 +363,7 @@
 					}
 				}
 			],
-			"text": "$(thing)Wild Blackstone Beans$() grow between Y=158 and Y=32.",
+			"text": "$(thing)Dzikie czernitowe fasolki$() rosną między Y=158 a Y=32.",
 			"enable_visualize": false
 		},
 		{
@@ -478,8 +478,167 @@
 					}
 				}
 			],
-			"text": "$(thing)Wild Ghost Peppers$() grow between Y=158 and Y=32.",
+			"text": "$(thing)Dzika Naga Jolokia$() rośnie między Y=158 a Y=32.",
 			"enable_visualize": false
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "cotton",
+			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 10 - 80 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 40 - 100 %$(br)$(bold)Nutrient$(): Nitrogen$(br2)Cotton is a two block tall crop. Cotton seeds can be planted on farmland, will grow two blocks tall, and will produce $(item)Cotton Balls$() which can be processed into $(thing)Cotton String$() or $(thing)Cloth$().",
+			"title": "Bawełna"
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "minecraft:air",
+						"Y": "tfg:cotton[age=0,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "minecraft:air",
+						"Y": "tfg:cotton[age=1,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfg:cotton[age=2,part=top]",
+						"Y": "tfg:cotton[age=2,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfg:cotton[age=3,part=top]",
+						"Y": "tfg:cotton[age=3,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfg:cotton[age=4,part=top]",
+						"Y": "tfg:cotton[age=4,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfg:cotton[age=5,part=top]",
+						"Y": "tfg:cotton[age=5,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfg:cotton[age=6,part=top]",
+						"Y": "tfg:cotton[age=6,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				}
+			],
+			"text": "$(thing)Wild Cotton$() grows between Y=158 and Y=32."
 		}
 	],
 	"read_by_default": true,
@@ -491,6 +650,8 @@
 		"tfg:beans_seeds": 8,
 		"tfg:beans_product": 8,
 		"tfg:ghost_pepper_seeds": 10,
-		"beneath:ghost_pepper": 10
+		"beneath:ghost_pepper": 10,
+		"tfg:cotton_seeds": 12,
+		"tfg:cotton_product": 12
 	}
 }

@@ -1,0 +1,13 @@
+{
+	"carryon.category.blacklist": "Lista negra",
+	"carryon.category.custompickupconditions": "Customizar condiciones de recoger (Avanzado)",
+	"carryon.category.custompickupconditions.custompickupconditionsblocks": "Customizar condiciones para recoger bloques",
+	"carryon.category.custompickupconditions.custompickupconditionsentities": "Customizar condiciones para recoger entidades",
+	"carryon.category.modeloverrides": "Reescribir modelo (Avanzado)",
+	"carryon.category.settings": "Configuración",
+	"carryon.category.whitelist": "Lista blanca",
+	"carryon.general.blacklist.forbiddenentities": "Entidades que el jugador no puede recoger",
+	"carryon.general.blacklist.forbiddentiles": "Bloques que el jugador no puede recoger",
+	"carryon.general.modeloverrides.modeloverrides": "Reescribir modelo",
+	"key.carry.desc": "Agarrar"
+}

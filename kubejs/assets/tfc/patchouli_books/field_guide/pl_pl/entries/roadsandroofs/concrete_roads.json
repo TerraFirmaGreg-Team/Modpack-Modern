@@ -18,16 +18,16 @@
     {
       "type": "patchouli:spotlight",
       "anchor": "liquid_concrete",
-      "item": "gtceu:concrete_bucket",
       "title": "Wytwarzanie betonu",
-      "text": "The first step in making a concrete road is mixing the liquid concrete. Use a $(thing)Mixer$() to combine water with any two stone dusts, one of either calcite or marble dust, and gypsum dust, or any three stone dusts with clay dust to make $(thing)Liquid Concrete$()."
+      "text": "The first step in making a concrete road is mixing the liquid concrete. Use a $(thing)Mixer$() to combine water with any two stone dusts, one of either calcite or marble dust, and gypsum dust, or any three stone dusts with clay dust to make $(thing)Liquid Concrete$().",
+      "item": "gtceu:concrete_bucket"
     },
     {
       "type": "patchouli:spotlight",
       "anchor": "wet_concrete",
-      "item": "rnr:bucket/concrete",
       "title": "Wytwarzanie betonu",
-      "text": "Then add the liquid concrete in a $(thing)Mixer$() set to $(thing)Programmed Circuit #7$() with more water to dilute it into $(thing)Wet Concrete Mix$()."
+      "text": "Then add the liquid concrete in a $(thing)Mixer$() set to $(thing)Programmed Circuit #7$() with more water to dilute it into $(thing)Wet Concrete Mix$().",
+      "item": "rnr:bucket/concrete"
     },
     {
       "type": "patchouli:text",

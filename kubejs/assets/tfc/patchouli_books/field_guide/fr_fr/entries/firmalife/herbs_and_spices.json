@@ -1,5 +1,4 @@
 {
-	"__comment__": "This file was automatically created by mcresources",
 	"name": "Herbes et épices",
 	"category": "tfc:firmalife",
 	"icon": "firmalife:spice/basil_leaves",
@@ -10,6 +9,7 @@
 		},
 		{
 			"type": "tfc:multimultiblock",
+			"text": "Le $(thing)basilic$() pousse entre 12 et 25 °C, et entre 300 et 500 mm de précipitations.",
 			"multiblocks": [
 				{
 					"pattern": [
@@ -39,11 +39,13 @@
 				}
 			],
 			"name": "Basilic",
-			"text": "Le $(thing)basilic$() pousse entre 12 et 25 °C, et entre 300 et 500 mm de précipitations.",
 			"enable_visualize": false
 		},
 		{
 			"type": "tfc:multimultiblock",
+			"name": "Laurier",
+			"text": "Le $(thing)laurier sauvage$() pousse entre 8 et 14 °C, et entre 25 et 225 mm de précipitations.",
+			"enable_visualize": false,
 			"multiblocks": [
 				{
 					"pattern": [
@@ -71,13 +73,11 @@
 						"X": "firmalife:plant/bay_laurel[stage=1]"
 					}
 				}
-			],
-			"name": "Laurier",
-			"text": "Le $(thing)laurier sauvage$() pousse entre 8 et 14 °C, et entre 25 et 225 mm de précipitations.",
-			"enable_visualize": false
+			]
 		},
 		{
 			"type": "tfc:multimultiblock",
+			"text": "La $(thing)cardamome sauvage$() pousse entre 18 et 30 °C, et entre 350 et 550 mm de précipitations.",
 			"multiblocks": [
 				{
 					"pattern": [
@@ -107,11 +107,13 @@
 				}
 			],
 			"name": "Cardamome",
-			"text": "La $(thing)cardamome sauvage$() pousse entre 18 et 30 °C, et entre 350 et 550 mm de précipitations.",
 			"enable_visualize": false
 		},
 		{
 			"type": "tfc:multimultiblock",
+			"name": "Coriandre",
+			"text": "La $(thing)coriandre sauvage$() pousse entre 5 et 15 °C, et entre 0 et 150 mm de précipitations.",
+			"enable_visualize": false,
 			"multiblocks": [
 				{
 					"pattern": [
@@ -139,13 +141,11 @@
 						"X": "firmalife:plant/cilantro[stage=1]"
 					}
 				}
-			],
-			"name": "Coriandre",
-			"text": "La $(thing)coriandre sauvage$() pousse entre 5 et 15 °C, et entre 0 et 150 mm de précipitations.",
-			"enable_visualize": false
+			]
 		},
 		{
 			"type": "tfc:multimultiblock",
+			"text": "Le $(thing)cumin sauvage$() pousse entre 6 et 20 °C, et entre 50 et 250 mm de précipitations.",
 			"multiblocks": [
 				{
 					"pattern": [
@@ -175,7 +175,6 @@
 				}
 			],
 			"name": "Cumin",
-			"text": "Le $(thing)cumin sauvage$() pousse entre 6 et 20 °C, et entre 50 et 250 mm de précipitations.",
 			"enable_visualize": false
 		},
 		{
@@ -306,7 +305,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "L'herbe à papillon poussera au fil du temps. Une fois mûre, elle a une chance de se propager aux blocs environnants ou de devenir quelque chose de nouveau. Les blocs d'herbe à papillon qui furent créés par un autre bloc ne se répandront plus.$(br)Une fois que l'herbe à papillon devienne une autre herbe, vous pouvez ramasser celle-ci avec des $(item)Cisailles$()."
+			"text": "L'herbe à papillon poussera au fil du temps. Une fois mûre, elle a une chance de se propager aux blocs environnants ou de devenir quelque chose de nouveau. Les blocs d'herbe à papillon créés par un autre bloc ne se répandent pas.$(br)Une fois l'herbe à papillon transformée en une autre herbe, vous pouvez ramasser celle-ci avec des $(item)Cisailles$()."
 		}
 	],
 	"read_by_default": true,

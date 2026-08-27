@@ -1,5 +1,4 @@
 {
-  "__comment__": "This file was automatically created by mcresources",
   "name": "Питомцы ",
   "category": "tfc:mechanics",
   "icon": "minecraft:lead",
@@ -24,11 +23,12 @@
     },
     {
       "type": "patchouli:text",
-      "title": "Варианты собак",
-      "text": "Собаки бывают нескольких разновидностей, которые зависят от того, какой тип волка был приручён. $(br2)На следующих страницах показана таблица климатов, где можно найти определённые разновидности волков."
+      "text": "Собаки бывают нескольких разновидностей, которые зависят от того, какой тип волка был приручён. $(br2)На следующих страницах показана таблица климатов, где можно найти определённые разновидности волков.",
+      "title": "Варианты собак"
     },
     {
       "type": "patchouli:image",
+      "text": "Кошки — это питомцы, которые едят злаки, приготовленное мясо и молочные продукты. Они помогут тебе охотиться на наземную добычу и мелкую рыбу. Находясь дома, они будут сами убивать вредителей. Кошки не всегда слушаются команды сидеть.",
       "images": [
         "tfg:textures/gui/field_guide/dog_variants.png"
       ],
@@ -36,6 +36,7 @@
     },
     {
       "type": "tfc:table",
+      "text": "Responsible pet owners must learn to control their pet. Luckily, this is easy. By pressing $(item)$(k:key.use)$() while holding $(item)$(k:key.sneak)$() with an empty hand, the $(thing)Pet Screen$() may be opened. This screen contains a number of commands that can be used to tell the pet what to do: $(thing)Relax$(), $(thing)We're Home$(), $(thing)Sit$(), $(thing)Follow Me$(), and $(thing)Hunt With Me$().",
       "strings": [
         {
           "text": "Разновидность",
@@ -100,7 +101,6 @@
           "text": "Умеренный (Леса)"
         }
       ],
-      "text": "",
       "title": "Окрас волков",
       "legend": [],
       "columns": 1,
@@ -113,13 +113,14 @@
     },
     {
       "type": "patchouli:empty",
+      "text": "$(thing)Отдых$() — это стандартное состояние питомца, и эта команда вернёт его к этому состоянию. Если питомец дома, то он будет ходить по территории, но не будет покидать её и будет спать раз в день. Если он далеко от дома, то питомец будет ходить бесцельно.",
       "draw_filler": false
     },
     {
       "type": "patchouli:entity",
+      "text": "Кошка.",
       "entity": "tfc:cat{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
-      "scale": 0.7,
-      "text": "Кошка."
+      "scale": 0.7
     },
     {
       "type": "patchouli:text",

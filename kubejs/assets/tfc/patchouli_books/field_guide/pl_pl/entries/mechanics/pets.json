@@ -1,5 +1,4 @@
 {
-  "__comment__": "This file was automatically created by mcresources",
   "name": "Zwierzęta domowe",
   "category": "tfc:mechanics",
   "icon": "minecraft:lead",
@@ -24,11 +23,12 @@
     },
     {
       "type": "patchouli:text",
-      "title": "Warianty psów",
-      "text": "Dogs come in multiple variants that depend on what type of wolf it was domesticated from.$(br2)The next pages show a table of the climates where specific wolf variants can be found."
+      "text": "Dogs come in multiple variants that depend on what type of wolf it was domesticated from.$(br2)The next pages show a table of the climates where specific wolf variants can be found.",
+      "title": "Warianty psów"
     },
     {
       "type": "patchouli:image",
+      "text": "Cats are a pet that eats grains, cooked meats, and dairy products. They will help you hunt land prey and small fish. When at home, they will kill pests without being asked to. Cats do not always listen when being told to sit.",
       "images": [
         "tfg:textures/gui/field_guide/dog_variants.png"
       ],
@@ -36,6 +36,7 @@
     },
     {
       "type": "tfc:table",
+      "text": "Responsible pet owners must learn to control their pet. Luckily, this is easy. By pressing $(item)$(k:key.use)$() while holding $(item)$(k:key.sneak)$() with an empty hand, the $(thing)Pet Screen$() may be opened. This screen contains a number of commands that can be used to tell the pet what to do: $(thing)Relax$(), $(thing)We're Home$(), $(thing)Sit$(), $(thing)Follow Me$(), and $(thing)Hunt With Me$().",
       "strings": [
         {
           "text": "Wariant",
@@ -49,7 +50,7 @@
           "text": "Blady"
         },
         {
-          "text": "Cold Desert, Temperate, Humid Oceanic (Plains)"
+          "text": "Zimna pustynia, umiarkowana, wilgotny oceaniczny (równiny)"
         },
         {
           "text": "Popiołowy"
@@ -73,7 +74,7 @@
           "text": "Rdzwy"
         },
         {
-          "text": "Humid Subtropical, Tropical Rainforest (Plains)"
+          "text": "Wilgotny subtropikalny, tropikalny las deszczowy (równiny)"
         },
         {
           "text": "Śnieżny"
@@ -85,13 +86,13 @@
           "text": "Cętkowany"
         },
         {
-          "text": "Hot Desert, Subtropical, Tropical Savanna (Forests)"
+          "text": "Gorąca pustynia, subtropikalny, tropikalna sawanna (Lasy)"
         },
         {
           "text": "W paski"
         },
         {
-          "text": "Hot Desert, Subtropical, Tropical Savanna (Plains)"
+          "text": "Gorąca pustynia, subtropikalny, tropikalna sawanna (równiny)"
         },
         {
           "text": "Leśny"
@@ -100,7 +101,6 @@
           "text": "Umiarkowany (Lasy)"
         }
       ],
-      "text": "",
       "title": "Lokalizacje wariantów wilka",
       "legend": [],
       "columns": 1,
@@ -113,13 +113,14 @@
     },
     {
       "type": "patchouli:empty",
+      "text": "$(thing)Relax$() is the default state of pets, and commanding them returns them to this state. If a pet it at home, it will wander around the property, but not leave, and sleep once a day. If it is too far from home, it will walk aimlessly.",
       "draw_filler": false
     },
     {
       "type": "patchouli:entity",
+      "text": "Kot.",
       "entity": "tfc:cat{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
-      "scale": 0.7,
-      "text": "Kot."
+      "scale": 0.7
     },
     {
       "type": "patchouli:text",

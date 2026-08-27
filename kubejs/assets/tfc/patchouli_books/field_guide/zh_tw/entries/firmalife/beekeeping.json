@@ -1,0 +1,58 @@
+{
+  "name": "養蜂",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:beehive",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)蜂箱$()是容納蜜蜂的住所。蜂箱內部需要放置$(thing)巢脾$()以供蜜蜂居住。從活躍的蜂箱中取出巢脾會招致蜜蜂攻擊，除非在夜間操作，或在蜂箱下方點燃$(thing)篝火$()。蜂箱可以共享花朵，但其收益在花朵數量超過60朵後會遞減。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/beehive",
+      "recipe2": "firmalife:crafting/beehive_frame"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "蜂箱會探測以其為中心、半徑為5格內的區域。如果蜂箱周圍至少有10朵花，則空的巢脾有一定幾率被$(thing)蜂王$()入駐。蜂箱周圍出現蜜蜂粒子效果即表示此過程正在進行。一個蜂箱內放置4個空巢脾能極大提高蜜蜂入駐的幾率。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "如果一個蜂箱內有兩個帶有蜂王的巢脾以及一個空巢脾，兩個蜂群有可能進行$(thing)繁殖$()，並在空巢脾中產生一隻新蜂王。這會將親代的$(thing)特性$()傳遞給後代。特性是蜜蜂所具有的不同特質，會影響它們對周圍環境的作用效果。特性等級範圍為1到10，10為最高。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/honey_jar_open",
+      "text": "蜜蜂還會產出$(thing)蜂蜜$()。手持空罐子對一個存有蜂蜜的蜂箱使用$(item)$(k:key.use)$()，可以獲得一個$(thing)蜂蜜罐$()。打開蜂蜜罐可獲得$(thing)生蜂蜜$()，它是$(thing)糖$()的替代品。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "手持$(thing)刀$()在物品欄中對一個滿的巢脾按下$(item)$(k:key.use)$()，可以獲得$(thing)蜂蠟$()，其用途廣泛。但請注意，這會殺死巢脾內的蜂王，務必小心操作！"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/treated_lumber",
+      "text": "蜂蠟最重要的用途是製作$(thing)防腐木材$()。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(li)蜜蜂可以幫種植盆施肥！$()$(li)刮取巢脾會犧牲其中的蜂王。請明智操作！$()$(li)身體處於潮溼狀態可以防止蜜蜂攻擊你。$()",
+      "title": "養蜂提示"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(li)$(thing)耐寒性$()：使蜜蜂能在更低的溫度下產蜜。耐寒性10允許低至-16°C，而耐寒性1僅允許低至2°C。$()$(li)$(thing)生產力$()：提升蜂蜜的產出速度。$()$(li)$(thing)突變性$()：增加繁殖過程中特性遺傳的變異性。$()",
+      "title": "性狀列表"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(li)$(thing)生育力$()：增加成功繁殖的幾率。$()$(li)$(thing)作物親和力$()：有一定幾率為作物播撒少量營養。$()$(li)$(thing)自然親和力$()：使蜂箱周圍生成新的花朵和睡蓮。$()$(li)$(thing)冷靜度$()：降低蜜蜂攻擊你的可能性。$()"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "具有高突變性特性的蜜蜂有可能患上$(thing)遺傳病$()。患病的蜜蜂會將疾病遺傳給後代，並且不會產蜜。"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 10
+}

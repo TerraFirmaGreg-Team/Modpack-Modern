@@ -1,5 +1,4 @@
 {
-  "__comment__": "This file was automatically created by mcresources",
   "name": "梁と崩落",
   "category": "tfc:mechanics",
   "icon": "tfc:wood/support/oak",
@@ -229,7 +228,8 @@
     },
     {
       "type": "patchouli:text",
-      "text": "$(bold)TFG$()では$(thing)木製の梁$()にだけでなく、さらに上位の支柱も追加されます。$(thing)石の梁$()や$(thing)コンクリートの梁$()、$(thing)鋼鉄製の梁$()などがあり、上位のものほど支えられる範囲も広がります。最上位の梁は、水平の梁を中心に$(bold)33 x 13 x 33$()という非常に広い範囲を支えてくれます！"
+      "text": "$(bold)TFG$()では$(thing)木製の梁$()にだけでなく、さらに上位の支柱も追加されます。$(thing)石の梁$()や$(thing)コンクリートの梁$()、$(thing)鋼鉄製の梁$()などがあり、上位のものほど支えられる範囲も広がります。最上位の梁は、水平の梁を中心に$(bold)33 x 13 x 33$()という非常に広い範囲を支えてくれます！",
+      "title": "彫刻"
     },
     {
       "type": "patchouli:text",

@@ -135,16 +135,16 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Karsinojenler",
+			"title": "Carcinogens",
 			"item": "gtceu:benzene_bucket",
-			"anchor": "Karsinojenler",
+			"anchor": "Carcinogens",
 			"text": "$(thing)Karsinojenler$(), doğrudan $(item)Kanser$()'e yol açan belalı maddelerdir. Aralarında $(thing)Krom Tozu$()'nun yanı sıra $(thing)Benzen ve Ürünleri$() gibi bazı organik bileşikler de yer alır. Bu $(thing)Karsinojenler$() öyle $(item)kendi kendine geçip gitmez$(), ama esaslı bir darbe vurmadan önce sana bol bol uyarı çakar. İş önce $(item)Halsizlik$() ile başlar, ardından $(item)Açlık$() bastırır, peşinden $(item)Yavaşlık$() ve ilerleyen safhada $(item)Madencilik Yorgunluğu$() çöker. Yalnızca bünyede yeterince birikip doz aşımı yaptığında $(item)Ölüm$()'le işini bitirir."
 		},
 		{
 			"type": "patchouli:spotlight",
 			"title": "Karsinojenler",
 			"item": "gtceu:chromium_dust",
-			"anchor": "Karsinojenler",
+			"anchor": "Carcinogens",
 			"text": "The $(l:tfg_ores/hazards#mask)Face Mask$() protects from inhalation of harmful chemicals, while the $(l:tfg_ores/hazards#gloves)Gloves$() protect from contact with $(thing)Chromium Dust$().$(br2)The $(l:tfg_ores/hazards#hazmat)Hazmat Suit$() protects from both.$(br2)In case of severe exposure, it is advised to take some $(l:tfg_ores/hazards#medicine)Medicines$() to $(thing)Prevent$() any possible damage."
 		},
 		{

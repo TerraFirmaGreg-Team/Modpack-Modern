@@ -1,6 +1,8 @@
 {
   "ftbchunks.map_mode.none": "Yok",
-  "ftbchunks.minimap.compass": "Compass",
+  "ftbchunks.minimap.blur_mode.off": "Kapalı",
+  "ftbchunks.minimap.blur_mode.on": "Açık",
   "ftbchunks.minimap.position": "Konum",
-  "ftbchunks.minimap.position.none": "Yok"
+  "ftbchunks.minimap.position.none": "Yok",
+  "minimap.info.ftbchunks.real_time.title": "Gerçek Zamanlı"
 }

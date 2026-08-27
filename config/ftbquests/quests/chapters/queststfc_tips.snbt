@@ -6,7 +6,12 @@
 	icon: "minecraft:apple"
 	id: "5D74D1A68158F29E"
 	order_index: 0
-	quest_links: [ ]
+	quest_links: [{
+		id: "73EE47579DB5928E"
+		linked_quest: "43CC656CB7D0F813"
+		x: 4.0d
+		y: -5.0d
+	}]
 	quests: [
 		{
 			dependencies: ["427814F6E9386772"]
@@ -1355,7 +1360,7 @@
 			}]
 			title: "{quests.tfg_tips.composter.title}"
 			x: 2.0d
-			y: -4.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["264D138DFFE13BD0"]
@@ -1391,7 +1396,37 @@
 			]
 			title: "{quests.tfg_tips.universal_compost.title}"
 			x: 4.0d
-			y: -4.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["0FCB88A64D3FBF0F"]
+			description: ["{quests.tfg_tips.tools_tips.cheese_rack.desc}"]
+			guide_page: "tfc:field_guide tfc:mechanics/barrels"
+			id: "7B09F8757A210F1A"
+			optional: true
+			subtitle: "{quests.tfg_tips.tools_tips.cheese_rack.subtitle}"
+			tasks: [{
+				id: "15FF9378F8DA33D8"
+				item: "tfc:barrel_rack"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.tools_tips.cheese_rack.title}"
+			x: 1.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["264D138DFFE13BD0"]
+			description: ["{quests.tfg_tips.compost_tumbler.desc}"]
+			guide_page: "tfc:field_guide tfc:firmalife/more_fertilizer"
+			id: "4E950ADF626B4D94"
+			subtitle: "{quests.tfg_tips.compost_tumbler.subtitle}"
+			tasks: [{
+				id: "3FC56DCD9F6EE3C2"
+				item: "firmalife:compost_tumbler"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -2.0d
 		}
 	]
 	subtitle: ["{quests.tfg_tips.subtitle}"]

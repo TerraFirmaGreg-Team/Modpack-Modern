@@ -1,0 +1,97 @@
+{
+	"credit": "Made by @vexxel with Blockbench - https://github.com/vexxel",
+	"parent": "block/block",
+	"textures": {
+		"0": "firmalife:block/devices/jarring_station/base",
+		"1": "firmalife:block/devices/jarring_station/side",
+		"2": "firmalife:block/devices/jarring_station/top",
+		"3": "firmalife:block/devices/jarring_station/grate",
+		"particle": "firmalife:block/devices/jarring_station/base"
+	},
+	"elements": [
+		{
+			"name": "base",
+			"from": [0, 0, 0],
+			"to": [16, 1, 16],
+			"faces": {
+				"north": {"uv": [0, 15, 16, 16], "texture": "#0"},
+				"east": {"uv": [0, 15, 16, 16], "texture": "#0"},
+				"south": {"uv": [0, 15, 16, 16], "texture": "#0"},
+				"west": {"uv": [0, 15, 16, 16], "texture": "#0"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#0"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#0"}
+			}
+		},
+		{
+			"name": "body",
+			"from": [1, 1, 1],
+			"to": [15, 11, 15],
+			"faces": {
+				"north": {"uv": [0, 0, 14, 10], "texture": "#1"},
+				"east": {"uv": [0, 0, 14, 10], "texture": "#1"},
+				"south": {"uv": [0, 0, 14, 10], "texture": "#1"},
+				"west": {"uv": [0, 0, 14, 10], "texture": "#1"},
+				"up": {"uv": [0, 0, 14, 14], "texture": "#2"}
+			}
+		},
+		{
+			"name": "bodyinverse",
+			"from": [1, 11, 1],
+			"to": [15, 1, 15],
+			"faces": {
+				"north": {"uv": [0, 0, 14, 10], "rotation": 180, "texture": "#1"},
+				"east": {"uv": [0, 0, 14, 10], "rotation": 180, "texture": "#1"},
+				"south": {"uv": [0, 0, 14, 10], "rotation": 180, "texture": "#1"},
+				"west": {"uv": [0, 0, 14, 10], "rotation": 180, "texture": "#1"},
+				"down": {"uv": [0, 0, 14, 14], "texture": "#2"}
+			}
+		},
+		{
+			"name": "grate",
+			"from": [3, 11, 3],
+			"to": [13, 9, 13],
+			"faces": {
+				"north": {"uv": [2, 12, 12, 14], "rotation": 180, "texture": "#2"},
+				"east": {"uv": [2, 12, 12, 14], "rotation": 180, "texture": "#2"},
+				"south": {"uv": [2, 12, 12, 14], "rotation": 180, "texture": "#2"},
+				"west": {"uv": [2, 12, 12, 14], "rotation": 180, "texture": "#2"}
+			}
+		},
+		{
+			"name": "gratebottom",
+			"from": [1, 9, 1],
+			"to": [15, 10, 15],
+			"faces": {
+				"up": {"uv": [0, 0, 14, 14], "texture": "#3"},
+				"down": {"uv": [0, 0, 14, 14], "texture": "#3"}
+			}
+		},
+		{
+			"name": "spoutbottom",
+			"from": [6, 10.999, -1],
+			"to": [10, 10.999, 1],
+			"faces": {
+				"up": {"uv": [0, 11, 4, 13], "rotation": 180, "texture": "#1"},
+				"down": {"uv": [0, 11, 4, 13], "rotation": 180, "texture": "#1"}
+			}
+		},
+		{
+			"name": "spoutside",
+			"from": [6, 10.999, -1],
+			"to": [6, 11.999, 3],
+			"faces": {
+				"east": {"uv": [4, 11, 8, 12], "rotation": 180, "texture": "#1"},
+				"west": {"uv": [4, 11, 8, 12], "texture": "#1"}
+			}
+		},
+		{
+			"name": "spoutside",
+			"from": [10, 10.999, -1],
+			"to": [10, 11.999, 3],
+			"faces": {
+				"east": {"uv": [4, 11, 8, 12], "rotation": 180, "texture": "#1"},
+				"west": {"uv": [4, 11, 8, 12], "texture": "#1"}
+			}
+		}
+	]
+}

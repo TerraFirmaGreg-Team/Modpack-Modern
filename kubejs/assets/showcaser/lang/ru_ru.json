@@ -1,0 +1,17 @@
+{
+	"key.showcaser.share_item_in_chat": "Поделиться ресурсом",
+	"showcaser.chat.banned": "Сервер запретил вам делиться предметами в чате",
+	"showcaser.chat.share_message": "%s поделился %s",
+	"showcaser.chat.share_message.patchouli_book": "%s поделился книгой %s",
+	"showcaser.chat.share_message.patchouli_book_entry": "%s поделился записью в книге %s",
+	"showcaser.chat.share_message.quest": "%s поделился квестом %s",
+	"showcaser.chat.share_message.quest.not_visible": "Квест не может быть открыт, так как он невидим для вас",
+	"showcaser.chat.share_message.recipe": "%s поделился рецептом %s",
+	"showcaser.chat.share_message.tooltip.unverified": "Не подтверждено сервером",
+	"showcaser.chat.share_message.tooltip.verified": "Подтверждено сервером",
+	"showcaser.commands.reload": "Хранилище и конфигурация Showcaser успешно перезагружена",
+	"showcaser.commands.sharing.ban.player_already_banned": "Игрок %s уже заблокирован",
+	"showcaser.commands.sharing.ban.success": "Игрок %s больше не может делиться в чате",
+	"showcaser.commands.sharing.unban.player_not_banned": "Игрок %s не заблокирован",
+	"showcaser.commands.sharing.unban.success": "Игрок %s снова может делиться в чате"
+}

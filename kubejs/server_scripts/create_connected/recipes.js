@@ -59,7 +59,7 @@ const registerCreateConnectedRecipes = (event) => {
 		'EEE'
 	], {
 		A: 'create:electron_tube',
-		C: '#forge:plates/bronze',
+		C: '#forge:plates/brass',
 		D: 'minecraft:redstone_torch',
 		E: '#forge:stone'
 	}).id('create_connected:crafting/kinetics/sequenced_pulse_generator')

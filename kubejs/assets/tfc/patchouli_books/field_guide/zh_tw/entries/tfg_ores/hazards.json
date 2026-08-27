@@ -109,21 +109,21 @@
 			"type": "patchouli:spotlight",
 			"title": "砷中毒",
 			"item": "gtceu:arsenic_dust",
-			"anchor": "砷中毒",
+			"anchor": "Arsenicosis",
 			"text": "$(thing)砷中毒$()是因吸入 $(thing)砷$() 或 $(thing)雄黄$() 產生的粉、蒸氣而引起的疾病。它會逐漸造成 $(item)飢餓$()、 $(item)恶心$() ，最终 $(item)死亡$()。$(br2)$(l:tfg_ores/hazards#mask)口罩$()和$(l:tfg_ores/hazards#hazmat)防護服$()可以防護$(thing)砷中毒$()。"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"title": "石棉肺",
 			"item": "gtceu:asbestos_dust",
-			"anchor": "石棉肺",
+			"anchor": "Asbestosis",
 			"text": "$(thing)石棉肺$()是由吸入$(thing)石棉粉$()引起的疾病。長時間攜帶會導致 $(item)飢餓$()。$(br2)$(l:tfg_ores/hazards#mask)口罩$()和$(l:tfg_ores/hazards#hazmat)防護服$()對$(thing)石棉肺$()提供防護。"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"title": "鈹中毒",
 			"item": "gtceu:beryllium_dust",
-			"anchor": "鈹中毒",
+			"anchor": "Berylliosis",
 			"text": "$(thing)鈹中毒$()是由皮膚接觸 $(thing)鈹粉$() 或 $(thing)液態鈹$() 引起的疾病。起初看似影響不大。隨著接觸時間越長，它 $(item)致死$() 的速度就越快。$(br2)$(l:tfg_ores/hazards#gloves)手套$()和$(l:tfg_ores/hazards#hazmat)防護服$()可以對 $(thing)鈹中毒$() 提供防護。"
 		},
 		{
@@ -135,16 +135,16 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "致癌物",
+			"title": "Carcinogens",
 			"item": "gtceu:benzene_bucket",
-			"anchor": "致癌物",
+			"anchor": "Carcinogens",
 			"text": "$(thing)致癌物$()是導致 $(item)癌症$() 的物質。包括 $(thing)鉻粉$()以及部分有機化合物，例如$(thing)苯及其產物$()。$(thing)致癌物$()$(item) 不會主動消失$()，但在實際造成危害前會出現大量警告。一開始會 $(item)虛弱$() ，接著是 $(item)飢餓$() ，再來是 $(item)緩慢$() ，最後后是$(item)挖掘疲勞$() 。當累積足夠的曝露量時，才會導致 $(item)死亡$()。"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"title": "致癌物",
 			"item": "gtceu:chromium_dust",
-			"anchor": "致癌物",
+			"anchor": "Carcinogens",
 			"text": "$(l:tfg_ores/hazards#mask)口罩$()可以防止吸入有害物質，而$(l:tfg_ores/hazards#gloves)手套$()可以防止接觸$(thing)鉻粉$()。$(br2)$(l:tfg_ores/hazards#hazmat)防護服$()可以同时防護兩者。$(br2)在嚴重暴露的情况下，建議服用一些$(l:tfg_ores/hazards#medicine)藥物$()以 $(thing)預防$() 任何可能的危害。"
 		},
 		{
@@ -156,9 +156,9 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "刺激",
+			"title": "Irritants",
 			"item": "gtceu:chromite_dust",
-			"anchor": "刺激",
+			"anchor": "Irritants",
 			"text": "$(thing)刺激物$()是由吸入$(thing)甲酸胺$()或接觸$(thing)鉻鐵礦粉$()所引起。短暫接觸導致 $(item)虛弱$()，但長時間忽略，則會引發 $(item)隨機造成危害$()。$(br2)$(l:tfg_ores/hazards#mask)口罩$()可以防止吸入，而$(l:tfg_ores/hazards#gloves)手套$()可以防止直接接觸。$(br2)$(l:tfg_ores/hazards#hazmat)防護服$()可以同时防護兩者。"
 		},
 		{
@@ -199,7 +199,7 @@
 			"type": "patchouli:spotlight",
 			"title": "矽肺",
 			"item": "gtceu:silicon_dioxide_dust",
-			"anchor": "矽肺",
+			"anchor": "Silicosis",
 			"text": "$(thing)矽肺$()是由吸入$(thing)二氧化矽粉$()所引起。接觸會導致 $(item)生命值$() 和 $(thing)下潛時$() 的 $(item)空氣值$() $(item) 减少$()。$(br2) $(l:tfg_ores/hazards#mask)口罩$() 和 $(l:tfg_ores/hazards#hazmat)防護服$() 可以防止吸入二氧化矽。"
 		}
 	]

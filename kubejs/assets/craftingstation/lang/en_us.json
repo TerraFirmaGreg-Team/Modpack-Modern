@@ -1,0 +1,8 @@
+{
+	"text.crafting_station.clear": "Clear crafting grid\n(Hold shift to prefer\nside inventories)",
+	"text.crafting_station.connected_resources.false": "Use Connected Resources: False",
+	"text.crafting_station.connected_resources.true": "Use Connected Resources: True",
+	"text.crafting_station.error": "Bad recipe %s found, see log for details",
+	"text.crafting_station.jei_nopull_output": "Locked Slots in this container!\nJEI can no longer pull resources from output-only slots, e.g. a furnace's output result slot.\n\nPlease move those items to normal storage slots to use!",
+	"title.crafting_station": "Crafting Station"
+}

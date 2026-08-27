@@ -65,10 +65,10 @@
   "block.simplylight.illuminant_lime_block_on": "Jasnozielony blok oświetleniowy (odwrócony)",
   "block.simplylight.illuminant_lime_block_on.info": "Prosty blok oświetleniowy,",
   "block.simplylight.illuminant_lime_block_on.info2": "Deaktywuje się przez %s.",
-  "block.simplylight.illuminant_magenta_block": "Karmazynowy blok oświetleniowy",
+  "block.simplylight.illuminant_magenta_block": "Purpurowy blok oświetleniowy",
   "block.simplylight.illuminant_magenta_block.info": "Prosty blok oświetleniowy,",
   "block.simplylight.illuminant_magenta_block.info2": "Aktywuje się przez %s.",
-  "block.simplylight.illuminant_magenta_block_on": "Karmazynowy blok oświetleniowy (odwrócony)",
+  "block.simplylight.illuminant_magenta_block_on": "Purpurowy blok oświetleniowy (odwrócony)",
   "block.simplylight.illuminant_magenta_block_on.info": "Prosty blok oświetleniowy,",
   "block.simplylight.illuminant_magenta_block_on.info2": "Deaktywuje się przez %s.",
   "block.simplylight.illuminant_orange_block": "Pomarańczowy blok oświetleniowy",
@@ -118,8 +118,5 @@
   "block.simplylight.rodlamp.info2": "Można umieścić w dowolnym kierunku.",
   "block.simplylight.wall_lamp": "Oświetlenie",
   "block.simplylight.wall_lamp.info": "Wisi ze ścian lub przyczepia się do sufitów i podłogi.",
-  "itemGroup.simplylight": "Simply Light",
-  "simplylight.key.shift": "Shift",
-  "simplylight.redstone": "Redstone",
   "simplylight.shift": "Naciśnij <%s> po więcej informacji."
 }

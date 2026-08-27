@@ -1,5 +1,4 @@
 {
-  "__comment__": "This file was automatically created by mcresources",
   "name": "玻璃製品",
   "category": "tfc:mechanics",
   "icon": "minecraft:glass",
@@ -19,6 +18,8 @@
     },
     {
       "type": "patchouli:multiblock",
+      "text": "等玻璃冷卻後就能用$(l:mechanics/glassworking#saw)寶石鋸$()將其從平台上收集下來。",
+      "border": true,
       "multiblock": {
         "mapping": {
           "C": "#tfc:glass_pouring_table",
@@ -32,9 +33,7 @@
             "CCCC"
           ]
         ]
-      },
-      "text": "等玻璃冷卻後就能用$(l:mechanics/glassworking#saw)寶石鋸$()將其從平台上收集下來。",
-      "border": true
+      }
     },
     {
       "type": "patchouli:text",
@@ -43,6 +42,8 @@
     },
     {
       "type": "patchouli:multiblock",
+      "text": "等玻璃冷卻後就能用$(l:mechanics/glassworking#saw)寶石鋸$()將其從平台上收集下來。",
+      "border": true,
       "multiblock": {
         "mapping": {
           "C": "#tfc:glass_basin_blocks",
@@ -60,20 +61,18 @@
             "   "
           ]
         ]
-      },
-      "text": "等玻璃冷卻後就能用$(l:mechanics/glassworking#saw)寶石鋸$()將其從平台上收集下來。",
-      "border": true
+      }
     },
     {
       "type": "patchouli:crafting",
+      "text": "$(thing)鍍黃銅塊$()手持$(thing)黃銅板$()並$(item)$(k:key.use)$()任意 $(thing)石磚$()製作。",
       "title": "玻璃工藝方塊",
-      "recipe": "tfc:crafting/white_kaolin_clay",
-      "text": "$(thing)鍍黃銅塊$()手持$(thing)黃銅板$()並$(item)$(k:key.use)$()任意 $(thing)石磚$()製作。"
+      "recipe": "tfc:crafting/white_kaolin_clay"
     },
     {
       "type": "patchouli:text",
-      "anchor": "coloring",
       "text": "根據$(l:mechanics/glassworking)玻璃原料$()性質，玻璃會擁有一種原色。要染成其他顏色，需要準備$(l:mechanics/bowls)碗$()。$(br2)將$(l:mechanics/bowls)碗$()放地上，$(item)$(k:key.use)$()加入所需的$(thing)粉末$()，$(thing)澆鑄$()前用裝有玻璃原料的$(thing)吹管$()沾取粉末。",
+      "anchor": "coloring",
       "title": "玻璃染色"
     },
     {

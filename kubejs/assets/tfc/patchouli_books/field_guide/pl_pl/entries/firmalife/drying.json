@@ -1,5 +1,4 @@
 {
-  "__comment__": "This file was automatically created by mcresources",
   "name": "Suszenie",
   "category": "tfc:firmalife",
   "icon": "firmalife:drying_mat",
@@ -20,7 +19,7 @@
     {
       "type": "patchouli:crafting",
       "recipe": "firmalife:crafting/solar_drier",
-      "text": "The solar drier functions the same as the drying mat, but 12x as fast."
+      "text": "Suszarka słoneczna działa tak samo jak mata do suszenia, ale 12 razy szybciej."
     },
     {
       "type": "patchouli:text",

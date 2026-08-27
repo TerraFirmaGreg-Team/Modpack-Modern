@@ -25,7 +25,9 @@ global.TFC_HIDDEN_ITEMS = /** @type {const} */ ([
     "tfc:wild_crop/squash",
     "tfc:wild_crop/sugarcane",
     "tfc:wild_crop/tomato",
-    "tfc:wild_crop/jute"
+    "tfc:wild_crop/jute",
+    "tfc:food/cheese",
+    "tfc:thatch_bed"
 ]);
 
 /**
@@ -238,7 +240,8 @@ global.TFC_GREENHOUSE_VEGETABLE_RECIPE_COMPONENTS = /** @type {const} */ ([
     { input: "tfg:peanut_seeds", output: "tfg:peanut_product"},
     { input: "tfg:cucumber_seeds", output: "tfg:cucumber_product"},
     { input: "tfg:cassava_seeds", output: "tfg:cassava_product"},
-    { input: "tfg:ghost_pepper_seeds", output: "beneath:ghost_pepper"}
+    { input: "tfg:ghost_pepper_seeds", output: "beneath:ghost_pepper"},
+    { input: "tfg:cotton_seeds", output: "tfg:cotton_product"}
 ]);
 
 global.TFC_GREENHOUSE_BERRY_RECIPE_COMPONENTS = /** @type {const} */ ([

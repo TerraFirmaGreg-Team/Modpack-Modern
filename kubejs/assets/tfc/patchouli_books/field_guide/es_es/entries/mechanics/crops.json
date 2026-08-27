@@ -1,5 +1,4 @@
 {
-	"__comment__": "This file was automatically created by mcresources",
 	"name": "Cultivos",
 	"category": "tfc:mechanics",
 	"icon": "tfc:textures/item/food/wheat.png",
@@ -14,8 +13,8 @@
 		},
 		{
 			"type": "patchouli:text",
-			"title": "Contenido",
-			"text": "$(li)$(l:tfc:mechanics/crops#barley)Barley$()$(li)$(l:tfc:mechanics/crops#beet)Beet$()$(li)$(l:tfc:mechanics/crops#cabbage)Cabbage$()$(li)$(l:tfc:mechanics/crops#canola)Canola$()$(li)$(l:tfc:mechanics/crops#carrot)Carrot$()$(li)$(l:tfc:mechanics/crops#cucumber)Cucumber$()$(li)$(l:tfc:mechanics/crops#flax)Flax$()$(li)$(l:tfc:mechanics/crops#garlic)Garlic$()$(li)$(l:tfc:mechanics/crops#green_bean)Green Bean$()$(li)$(l:tfc:mechanics/crops#jute)Jute$()$(li)$(l:tfc:mechanics/crops#lentil)Lentil$()$(li)$(l:tfc:mechanics/crops#maize)Maize$()$(li)$(l:tfc:mechanics/crops#melon)Melon$()"
+			"text": "$(li)$(l:tfc:mechanics/crops#barley)Barley$()$(li)$(l:tfc:mechanics/crops#beet)Beet$()$(li)$(l:tfc:mechanics/crops#cabbage)Cabbage$()$(li)$(l:tfc:mechanics/crops#canola)Canola$()$(li)$(l:tfc:mechanics/crops#carrot)Carrot$()$(li)$(l:tfc:mechanics/crops#cucumber)Cucumber$()$(li)$(l:tfc:mechanics/crops#flax)Flax$()$(li)$(l:tfc:mechanics/crops#garlic)Garlic$()$(li)$(l:tfc:mechanics/crops#green_bean)Green Bean$()$(li)$(l:tfc:mechanics/crops#jute)Jute$()$(li)$(l:tfc:mechanics/crops#lentil)Lentil$()$(li)$(l:tfc:mechanics/crops#maize)Maize$()$(li)$(l:tfc:mechanics/crops#melon)Melon$()",
+			"title": "Contenido"
 		},
 		{
 			"type": "patchouli:text",
@@ -23,15 +22,16 @@
 		},
 		{
 			"type": "tfc:rock_knapping_recipe",
+			"text": "Para empezar, una $(thing)Azada de Piedra$() puede $(thing)tallarse$() como se vio anteriormente.",
+			"title": "Growing Crops",
 			"recipes": [
 				"tfg:rock_knapping/stone_hoe_head_1"
-			],
-			"text": "Para empezar, una $(thing)Azada de Piedra$() puede $(thing)tallarse$() como se vio anteriormente."
+			]
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "gtceu:shaped/hoe_stone",
-			"text": "Una vez el cabezal de la azada esté tallado, puede craftearse en una Azada.$(br2)Las Azadas funcionan como en Vanilla, haciendo clic derecho en bloques de tierra para convertirlos en $(thing)Tierra de Cultivo$(). También se pueden usar para convertir $(thing)Tierra Enraizada$() en $(thing)Tierra$()."
+			"text": "Una vez el cabezal de la azada esté tallado, puede craftearse en una Azada.$(br2)Las Azadas funcionan como en Vanilla, haciendo clic derecho en bloques de tierra para convertirlos en $(thing)Tierra de Cultivo$(). También se pueden usar para convertir $(thing)Tierra Enraizada$() en $(thing)Tierra$().",
+			"recipe": "gtceu:shaped/hoe_stone"
 		},
 		{
 			"type": "patchouli:text",
@@ -632,7 +632,7 @@
 		},
 		{
 			"type": "tfc:multimultiblock",
-			"text": "",
+			"text": "Note: in order to grow, the rice block must be $(thing)Waterlogged$().",
 			"multiblocks": [
 				{
 					"pattern": [
@@ -1253,7 +1253,7 @@
 		},
 		{
 			"type": "tfc:multimultiblock",
-			"text": "",
+			"text": "The stick is required in order for the crop to fully grow.",
 			"multiblocks": [
 				{
 					"pattern": [
@@ -2677,7 +2677,7 @@
 		},
 		{
 			"type": "tfc:multimultiblock",
-			"text": "",
+			"text": "The stick is required in order for the crop to fully grow.",
 			"multiblocks": [
 				{
 					"pattern": [

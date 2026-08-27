@@ -56,7 +56,7 @@ function registerTFGOverworldItemTags(event) {
 	event.add('tfc:makes_white_dye', 'tfg:plant/bear_grass')
 	event.add('tfc:makes_light_gray_dye', 'tfg:plant/silver_bromeliad')
 	event.add('tfc:makes_light_gray_dye', 'tfg:plant/eyeblossom')
-	event.add('tfc:makes_light_gray_dye', 'tfg:plant/pale_hanging_moss')
+	event.add('tfc:makes_gray_dye', 'tfg:plant/pale_hanging_moss')
 
 	event.add('minecraft:flowers', 'tfg:plant/azalea')
 	event.add('minecraft:flowers', 'tfg:plant/buttercup')
@@ -142,6 +142,7 @@ function registerTFGOverworldBlockTags(event) {
 	event.add("tfc:monster_spawns_on", "tfg:pelitic_hornfels");
 	event.add("tfc:monster_spawns_on", "minecraft:packed_ice");
 	event.add("tfc:monster_spawns_on", "minecraft:blue_ice");
+    event.add("tfc:monster_spawns_on", "#forge:sand");
 
 	event.add('tfg:camel_faster_on', 'tfg:coarse_dirt/silty_loam')
 	event.add('tfg:camel_faster_on', 'tfg:coarse_dirt/sandy_loam')
@@ -160,6 +161,10 @@ function registerTFGOverworldBlockTags(event) {
 	event.add('tfg:camel_faster_on', 'tfc:raw_sandstone/yellow')
 	event.add('tfg:camel_faster_on', 'tfc:raw_sandstone/green')
 	event.add('tfg:camel_faster_on', 'tfc:raw_sandstone/pink')
+	
+	event.add("tfg:hornfels", "tfg:mafic_hornfels");
+	event.add("tfg:hornfels", "tfg:carbonate_hornfels");
+	event.add("tfg:hornfels", "tfg:pelitic_hornfels");
 }
 
 function registerTFGOverworldBiomeTags(event) {
@@ -606,6 +611,7 @@ function registerTFGOverworldEntityTypeTags(event) {
 
 	event.add('tfc:amphibious_creatures', 'tfg:leopard_seal')
 	event.add('tfc:spawns_on_cold_blocks', 'tfg:leopard_seal')
+	event.add('tfc:land_predators', 'tfg:leopard_seal')
 
 	event.add('tfc:hunted_by_ocean_predators', 'tfg:leopard_seal')
 	event.add('tfc:hunted_by_ocean_predators', 'tfc:penguin')
@@ -622,6 +628,12 @@ function registerTFGOverworldEntityTypeTags(event) {
 	event.add('tfc:hunted_by_cats', 'tfg:jerboa')
 	event.add('tfc:hunted_by_cats', 'tfg:lemming')
 	event.add('tfc:hunted_by_cats', 'tfg:mongoose')
+	event.add('tfc:land_prey', 'tfg:jerboa')
+	event.add('tfc:land_prey', 'tfg:lemming')
+	event.add('tfc:land_prey', 'tfg:mongoose')
+	event.add('tfc:pests', 'tfg:jerboa')
+	event.add('tfc:pests', 'tfg:lemming')
+	event.add('tfc:pests', 'tfg:mongoose')
 
 	event.add('tfg:not_rammed_by_rammers', '#tfc:bubble_column_immune')
 	event.add('tfg:not_rammed_by_rammers', '#tfc:pests')

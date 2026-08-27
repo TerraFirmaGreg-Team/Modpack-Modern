@@ -1,0 +1,22 @@
+{
+	"block.etched.album_jukebox": "Szafa grająca do albumów",
+	"container.etched.album_jukebox": "Szafa grająca do albumów",
+	"container.etched.etching_table.url": "URL muzyki",
+	"container.etched.radio.url": "URL radia",
+	"entity.etched.jukebox_minecart": "Wagonik z szafą grającą",
+	"item.etched.album_cover": "Okładka albumu",
+	"item.etched.blank_music_disc": "Pusta płyta muzyczna",
+	"item.etched.boombox.pause": "%s + %s, żeby zapauzować",
+	"item.etched.boombox.paused": "Wstrzymano",
+	"item.etched.boombox.records": "Nagrania:",
+	"item.etched.jukebox_minecart": "Wagonik z szafą grającą",
+	"item.etched.music_label": "Etykieta muzyki",
+	"record.etched.downloadFail": "Nie udało się pobrać %s",
+	"record.etched.downloadProgress": "Pobieranie (%s MB / %s MB): %s",
+	"record.etched.loading": "Ładowanie %s",
+	"screen.etched.album_jukebox.now_playing": "Teraz odtwarzane",
+	"screen.etched.edit_music_label.author": "Autor",
+	"screen.etched.edit_music_label.title": "Tytuł",
+	"screen.etched.etching_table.error.invalid_url": "Nieprawidłowy URL",
+	"sound_source.etched.radio": "Stacja radiowa"
+}

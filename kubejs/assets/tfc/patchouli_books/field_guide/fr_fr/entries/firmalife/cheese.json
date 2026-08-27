@@ -1,22 +1,21 @@
 {
-  "__comment__": "This file was automatically created by mcresources",
   "name": "Fromage",
   "category": "tfc:firmalife",
   "icon": "firmalife:textures/item/food/gouda.png",
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "Making $(thing)cheese$() in Firmalife is a little more involved than in vanilla TFC. There are two new kinds of milk: $(thing)Yak Milk$(), and $(thing)Goat Milk$(). These are obtained from milking the $(l:mechanics/animal_husbandry#yak)Yak$() and $(l:mechanics/animal_husbandry#goat)Goat$(), respectively. Milking the $(l:mechanics/animal_husbandry#cow)Cow$() still produces the old kind of milk."
+      "text": "Faire du $(thing)fromage$() dans Firmalife est un peu plus complexe que dans TFC vanilla. Il y a de nouveaux types de lait tels que le $(thing)lait de yak$() ou le $(thing)lait de chèvre$(). On peut les obtenir en trayant respectivement une $(l:mechanics/animal_husbandry#yak)Yak$() et une $(l:mechanics/animal_husbandry#goat)Chèvre$(). Traire une $(l:mechanics/animal_husbandry#cow)Vache$() donne l'ancien type de lait."
     },
     {
       "type": "patchouli:text",
-      "text": "Like usual, milk must be $(thing)curdled$() first. To curdle milk, you need $(thing)Rennet$(). Rennet comes from the stomach of $(thing)Ruminant$() animals. This includes $(l:mechanics/animal_husbandry#yak)Yaks$(), $(l:mechanics/animal_husbandry#cow)Cows$(), $(l:mechanics/animal_husbandry#sheep)Sheep$(), $(l:mechanics/animal_husbandry#goat)Goats$(), and $(l:mechanics/animal_husbandry#musk_ox)Musk Oxen$(). To curdle milk, seal it in a $(l:mechanics/barrels)Barrel$() with Rennet for 4 hours."
+      "text": "Comme d'habitude, le lait doit d'abord être $(thing)caillé$(). Pour cailler du lait, vous aurez besoin de $(thing)présure$(). Celle-ci provient de l'estomac d'un animal $(thing)ruminant$() tel qu'un $(l:mechanics/animal_husbandry#yak)Yaks$(), une $(l:mechanics/animal_husbandry#cow)Vache$(), un  $(l:mechanics/animal_husbandry#sheep)Mouton$(), une $(l:mechanics/animal_husbandry#goat)Chèvre$(), ou un  $(l:mechanics/animal_husbandry#musk_ox)Boeuf musqué$(). Pour faire cailler le lait, scellez-le dans un $(l:mechanics/barrels)tonneau$() avec de la présure pendant 4 heures."
     },
     {
       "type": "patchouli:crafting",
       "anchor": "cheesecloth",
       "recipe": "firmalife:crafting/cheesecloth",
-      "text": "Curdled milk must be converted to $(thing)Curds$() by sealing it in a barrel with $(thing)Cheesecloth$(). Cheesecloth is not reusable."
+      "text": "Le lait caillé doit ensuite être converti en $(thing)Caillé$() en le scellant dans un tonneau avec une $(thing)étamine$(). Celle-ci n'est pas réutilisable."
     },
     {
       "type": "patchouli:crafting",
@@ -35,11 +34,11 @@
     {
       "type": "patchouli:text",
       "anchor": "aging",
-      "text": "Cheese wheels are blocks that should be placed in order to help them last. To improve their quality and shelf life, cheese wheels should be $(thing)Aged$() in a $(l:firmalife/cellar)Cellar$(). In order to obtain edible cheese from a cheese wheel, it should be sliced off the wheel by clicking $(item)$(k:key.use)$() with a $(thing)Knife$(). If the block is simply broken, the aging is lost!"
+      "text": "Les meules de fromage sont des blocs devant être placés pour pouvoir être conservés. Pour améliorer leur qualité et les conserver plus longtemps, les meules de fromages doivent être $(thing)âgés$() dans un $(l:firmalife/cellar)cellier$(). Afin d'obtenir du fromage comestible à partir d'une meule, il faut en découper un morceau de fromage avec $(item)$(k:key.use)$() avec un $(thing)Couteau$(). Si le bloc est simplement miné, le veillissement est perdu !"
     },
     {
       "type": "tfc:multimultiblock",
-      "text": "The aging stages of a wheel of Gouda: $(thing)Fresh$(), $(thing)Aged$(), and $(thing)Vintage$().",
+      "text": "Les stades de vieillissement d'une meule de gouda : $(thing)Jeune$(), $(thing)Affiné$(), et $(thing)Vieux$().",
       "multiblocks": [
         {
           "pattern": [

@@ -1,0 +1,21 @@
+{
+	"gui.sophisticatedcore.buttons.confirm": "Confirmer",
+	"gui.sophisticatedcore.settings.buttons.rotate": "Tourner",
+	"gui.sophisticatedcore.settings.buttons.z_offset": "Profondeur",
+	"gui.sophisticatedcore.upgrades.buttons.allow": "Autoriser",
+	"gui.sophisticatedcore.upgrades.buttons.block": "Interdire",
+	"gui.sophisticatedcore.upgrades.buttons.ignore_nbt": "Ignorer les NBT",
+	"gui.sophisticatedcore.upgrades.buttons.next_disc": "Page Suivante",
+	"gui.sophisticatedcore.upgrades.buttons.next_result": "Page Suivante",
+	"gui.sophisticatedcore.upgrades.buttons.previous_disc": "Page Précédente",
+	"gui.sophisticatedcore.upgrades.buttons.previous_result": "Page Précédente",
+	"gui.sophisticatedcore.upgrades.chipped_loom_table": "Métier à Tisser",
+	"gui.sophisticatedcore.upgrades.controls.xp_level_select.tooltip.controls": "Faites défiler pour changer",
+	"gui.sophisticatedcore.upgrades.crafting": "Fabrication",
+	"gui.sophisticatedcore.upgrades.filter": "Filtre",
+	"gui.sophisticatedcore.upgrades.smelting": "Cuisson",
+	"gui.sophisticatedcore.upgrades.smelting.tooltip": "Cuisson",
+	"gui.sophisticatedcore.upgrades.smoking": "Fumage",
+	"gui.sophisticatedcore.upgrades.smoking.tooltip": "Fumage",
+	"item.sophisticatedcore.storage.tooltip.inventory": "Inventaire"
+}

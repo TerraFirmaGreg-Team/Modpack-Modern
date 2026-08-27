@@ -1,0 +1,13 @@
+{
+  "name": "Bread",
+  "category": "tfc:mechanics",
+  "icon": "tfc:textures/item/food/wheat_bread.png",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Bread is the processed form of the various grain crops, such as $(l:mechanics/crops#barley)Barley$(). Breaking a grain crop drops a raw, unprocessed grain item, which is not useful on its own. It must be processed into $(thing)Bread$(), which can then be eaten or used in $(l:mechanics/sandwiches)Sandwiches$().",
+      "title": "Bread"
+    }
+  ],
+  "read_by_default": true
+}

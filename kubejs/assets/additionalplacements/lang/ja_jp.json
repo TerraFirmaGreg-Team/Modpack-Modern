@@ -4,7 +4,6 @@
 	"additionalplacements.stairs.connections_type.no_vertical_connections": "垂直接続を禁止",
 	"commands.ap_stairs_state_debug.wrong_block": "%s は無効なブロックです。追加のステータスを持つ階段ブロックである必要があります。",
 	"key.additionalplacements.placement_toggle": "設置ロジックの切り替え",
-	"key.categories.additionalplacements": "Additional Placements",
 	"msg.additionalplacements.disconnected": "Additional Placements の設定の競合",
 	"msg.additionalplacements.errors.client": "クライアント側が拒否しました:",
 	"msg.additionalplacements.errors.server": "サーバー側が拒否しました:",

@@ -1,5 +1,4 @@
 {
-	"__comment__": "This file was automatically created by mcresources",
 	"name": "Wild Animals",
 	"category": "tfc:the_world",
 	"icon": "tfc:medium_raw_hide",
@@ -22,21 +21,21 @@
 			"type": "patchouli:entity",
 			"entity": "tfc:polar_bear",
 			"scale": 0.55,
-			"name": "Polar Bear",
+			"name": "Poliarinė meška",
 			"text": "The polar bear spawns in only the coldest regions, $(l:the_world/climate#temperature)temperature$() at most 10°C, with a $(l:the_world/climate#rainfall)rainfall$() of at least 100mm."
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "tfc:grizzly_bear",
 			"scale": 0.55,
-			"name": "Grizzly Bear",
+			"name": "Grizlis",
 			"text": "The grizzly bear spawns in forests of moderate climates, with a $(l:the_world/climate#temperature)temperature$() range of -15 to 15°C and at least 200mm of $(l:the_world/climate#rainfall)rainfall$()."
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "tfc:black_bear",
 			"scale": 0.55,
-			"name": "Black Bear",
+			"name": "Juodoji meška",
 			"text": "The black bear spawns in forests of warmer, wetter climates, of $(l:the_world/climate#temperature)temperature$() 5 to 20°C and at least 250mm of $(l:the_world/climate#rainfall)rainfall$()."
 		},
 		{
@@ -96,7 +95,7 @@
 			"type": "patchouli:entity",
 			"entity": "tfc:crocodile",
 			"scale": 0.7,
-			"name": "Crocodile",
+			"name": "Krokodilas",
 			"text": "The crocodile spawns near rivers, lakes, and marshes at any $(l:the_world/climate#temperature)temperature$() warmer than 15°C, and at any $(l:the_world/climate#rainfall)rainfall$(). They are nocturnal, and most dangerous in the water."
 		},
 		{
@@ -115,45 +114,49 @@
 			"type": "patchouli:entity",
 			"entity": "tfc:boar",
 			"scale": 0.7,
-			"name": "Boar",
+			"name": "Šernas",
 			"text": "The boar spawns at $(l:the_world/climate#temperature)temperature$() below 25°C and above -5°C, and $(l:the_world/climate#rainfall)rainfall$() between 130 and 400mm."
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "tfc:moose",
 			"scale": 0.7,
-			"name": "Briedis",
-			"text": "The moose spawns in forests at $(l:the_world/climate#temperature)temperature$() below 10°C and above -15°C, and $(l:the_world/climate#rainfall)rainfall$() between 150 and 300mm."
+			"text": "The moose spawns in forests at $(l:the_world/climate#temperature)temperature$() below 10°C and above -15°C, and $(l:the_world/climate#rainfall)rainfall$() between 150 and 300mm.",
+			"name": "Briedis"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "tfc:wildebeest",
 			"scale": 0.7,
-			"name": "Wildebeest",
-			"text": "The wildebeest spawns in open plains at any $(l:the_world/climate#temperature)temperature$() above 13°C, and $(l:the_world/climate#rainfall)rainfall$() between 90 and 380mm."
+			"text": "The wildebeest spawns in open plains at any $(l:the_world/climate#temperature)temperature$() above 13°C, and $(l:the_world/climate#rainfall)rainfall$() between 90 and 380mm.",
+			"name": "Gnu"
 		},
 		{
 			"type": "patchouli:entity",
+			"text": "The bison spawns in open plains at $(l:the_world/climate#temperature)temperature$() below 15°C and above -10°C, and $(l:the_world/climate#rainfall)rainfall$() between 160 and 420mm.",
+			"title": "Prey",
 			"entity": "tfg:bison",
 			"scale": 0.7,
-			"name": "Bison",
-			"text": "The bison spawns in open plains at $(l:the_world/climate#temperature)temperature$() below 15°C and above -10°C, and $(l:the_world/climate#rainfall)rainfall$() between 160 and 420mm."
+			"name": "Bison"
 		},
 		{
-			"type": "patchouli:empty"
+			"type": "patchouli:empty",
+			"name": "Triušis",
+			"text": "The rabbit is known to chew on carrots and cabbage. They are ubiquitous in the world, changing their coat based on climate. They only need 15mm of $(l:the_world/climate#rainfall)rainfall$() to spawn."
 		},
 		{
 			"type": "patchouli:text",
-			"anchor": "prey",
+			"name": "Lapė",
 			"text": "$(thing)Prey$() animals fear players and predators. They are adept at fleeing from danger, but generally cannot fight back. Some prey animals enjoy snacking on crops.",
+			"anchor": "prey",
 			"title": "Prey"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "tfc:rabbit",
 			"scale": 0.7,
-			"name": "Triušis",
-			"text": "The rabbit is known to chew on carrots and cabbage. They are ubiquitous in the world, changing their coat based on climate. They only need 15mm of $(l:the_world/climate#rainfall)rainfall$() to spawn."
+			"text": "The rabbit is known to chew on carrots and cabbage. They are ubiquitous in the world, changing their coat based on climate. They only need 15mm of $(l:the_world/climate#rainfall)rainfall$() to spawn.",
+			"name": "Triušis"
 		},
 		{
 			"type": "patchouli:entity",
@@ -172,7 +175,7 @@
 			"type": "patchouli:entity",
 			"entity": "tfc:caribou",
 			"scale": 0.6,
-			"name": "Caribou",
+			"name": "Šiaurinis elnias",
 			"text": "The caribou spawns at any $(l:the_world/climate#temperature)temperature$() below -9°C, and $(l:the_world/climate#rainfall)rainfall$() between 110 and 500mm."
 		},
 		{
@@ -185,8 +188,8 @@
 			"type": "patchouli:entity",
 			"entity": "tfc:bongo",
 			"scale": 0.9,
-			"name": "Bongo",
-			"text": "The bongo spawns in forests at any $(l:the_world/climate#temperature)temperature$() above 15°C, and $(l:the_world/climate#rainfall)rainfall$() between 230 and 500mm."
+			"text": "The bongo spawns in forests at any $(l:the_world/climate#temperature)temperature$() above 15°C, and $(l:the_world/climate#rainfall)rainfall$() between 230 and 500mm.",
+			"name": "Bongas"
 		},
 		{
 			"type": "patchouli:entity",
@@ -198,6 +201,7 @@
 			"type": "patchouli:entity",
 			"entity": "tfc:pheasant",
 			"scale": 0.7,
+			"name": "Povas",
 			"text": "The pheasant spawns in forests at any $(l:the_world/climate#temperature)temperature$() below 17°C and above -5°C, and $(l:the_world/climate#rainfall)rainfall$() between 100 and 300mm."
 		},
 		{
@@ -208,18 +212,19 @@
 		},
 		{
 			"type": "patchouli:entity",
+			"text": "The peafowl spawns in forests at any $(l:the_world/climate#temperature)temperature$() above 14°C, and $(l:the_world/climate#rainfall)rainfall$() between 190 and 500mm.",
+			"title": "Aquatic Animals",
 			"entity": "tfc:peafowl",
 			"scale": 0.6,
-			"name": "Povas",
-			"text": "The peafowl spawns in forests at any $(l:the_world/climate#temperature)temperature$() above 14°C, and $(l:the_world/climate#rainfall)rainfall$() between 190 and 500mm."
+			"name": "Povas"
 		},
 		{
 			"type": "patchouli:entity",
+			"text": "The lemming spawns at any $(l:the_world/climate#temperature)temperature$() below -3°C and above -12°C, and $(l:the_world/climate#rainfall)rainfall$() between 160 and 500mm.",
 			"entity": "tfg:lemming",
 			"scale": 1.5,
 			"offset": -0.2,
-			"name": "Lemming",
-			"text": "The lemming spawns at any $(l:the_world/climate#temperature)temperature$() below -3°C and above -12°C, and $(l:the_world/climate#rainfall)rainfall$() between 160 and 500mm."
+			"name": "Lemming"
 		},
 		{
 			"type": "patchouli:entity",
@@ -237,12 +242,13 @@
 		},
 		{
 			"type": "patchouli:text",
-			"anchor": "aquatic",
 			"text": "$(thing)Aquatic Animals$() are a broad category which covers a number of different behaviors. They may be $(thing)Shore Dwellers$(), $(thing)Fish$(), $(thing)Shellfish$(), or $(thing)Large Aquatic Creatures$()",
-			"title": "Aquatic Animals"
+			"title": "Aquatic Animals",
+			"anchor": "aquatic"
 		},
 		{
 			"type": "patchouli:text",
+			"name": "Menkė",
 			"text": "$(thing)Shore Animals$() only spawn on sea shores and spend some of their day swimming, and some walking on the beach. They are curious creatures, and will follow the player around, but cannot be tamed."
 		},
 		{
@@ -261,6 +267,7 @@
 		},
 		{
 			"type": "patchouli:text",
+			"name": "Tropinė žuvis",
 			"text": "$(thing)Fish$() are small creatures that swim in water. Most of them can be $(l:mechanics/fishing)fished$(). Some prefer oceans, rivers, or lakes.",
 			"title": "Žuvis"
 		},
@@ -268,22 +275,23 @@
 			"type": "patchouli:entity",
 			"entity": "tfc:cod",
 			"scale": 0.7,
-			"name": "Cod",
+			"name": "Menkė",
 			"text": "Cod prefer colder oceans, $(l:the_world/climate#temperature)temperature$() at most 18°C. They can be fished."
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "tfc:pufferfish",
 			"scale": 0.7,
-			"name": "Pufferfish",
+			"name": "Pūsliažuvė",
 			"text": "Pufferfish live in any ocean with at least a $(l:the_world/climate#temperature)temperature$() of 10°C."
 		},
 		{
 			"type": "patchouli:entity",
+			"text": "Jellyfish live in warmer oceans, with a $(l:the_world/climate#temperature)temperature$() of at least 18°C.",
+			"title": "Shellfish",
 			"entity": "tfc:jellyfish",
 			"scale": 0.7,
-			"name": "Medūza",
-			"text": "Jellyfish live in warmer oceans, with a $(l:the_world/climate#temperature)temperature$() of at least 18°C."
+			"name": "Medūza"
 		},
 		{
 			"type": "patchouli:entity",
@@ -303,17 +311,19 @@
 			"type": "patchouli:entity",
 			"entity": "tfc:bluegill",
 			"scale": 0.7,
-			"name": "Bluegill",
+			"name": "Mėlynžandė saulažuvė",
 			"text": "Bluegill spawn in any river or lake with a $(l:the_world/climate#temperature)temperature$() of at least -10°C and at most 26°C."
 		},
 		{
-			"type": "patchouli:empty"
+			"type": "patchouli:empty",
+			"name": "Pasaginis krabas",
+			"text": "Horseshoe crabs spawn in oceans of moderate climate, $(l:the_world/climate#temperature)temperature$() between 10 and 21°C and with a $(l:the_world/climate#rainfall)rainfall$() of at most 400mm."
 		},
 		{
 			"type": "patchouli:text",
-			"anchor": "shellfish",
 			"text": "$(thing)Shellfish$() are small animals that live on the floor of bodies of water. They cannot be fished, but drop shells that can be eaten or made into $(l:mechanics/flux)flux$(). Shellfish can be $(l:mechanics/fishing)bait$() for fish.",
-			"title": "Shellfish"
+			"title": "Shellfish",
+			"anchor": "shellfish"
 		},
 		{
 			"type": "patchouli:entity",
@@ -333,15 +343,16 @@
 			"type": "patchouli:entity",
 			"entity": "tfc:crayfish",
 			"scale": 0.7,
-			"name": "Crayfish",
+			"name": "Vėžys",
 			"text": "Crayfish are like lobster, but spawn in rivers and lakes. They need a $(l:the_world/climate#temperature)temperature$() of at least 5°C and a $(l:the_world/climate#rainfall)rainfall$() of at least 125mm."
 		},
 		{
 			"type": "patchouli:entity",
+			"text": "Horseshoe crabs spawn in oceans of moderate climate, $(l:the_world/climate#temperature)temperature$() between 10 and 21°C and with a $(l:the_world/climate#rainfall)rainfall$() of at most 400mm.",
+			"title": "Kalmaras",
 			"entity": "tfc:horseshoe_crab",
 			"scale": 0.7,
-			"name": "Horseshoe Crab",
-			"text": "Horseshoe crabs spawn in oceans of moderate climate, $(l:the_world/climate#temperature)temperature$() between 10 and 21°C and with a $(l:the_world/climate#rainfall)rainfall$() of at most 400mm."
+			"name": "Pasaginis krabas"
 		},
 		{
 			"type": "patchouli:empty"

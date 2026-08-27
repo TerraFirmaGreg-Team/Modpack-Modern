@@ -1,5 +1,4 @@
 {
-  "__comment__": "This file was automatically created by mcresources",
   "name": "Enclumes Primitives",
   "category": "tfc:getting_started",
   "icon": "tfc:rock/anvil/granite",
@@ -42,7 +41,7 @@
     {
       "type": "patchouli:text",
       "anchor": "raw_rock",
-      "text": "Afin d'obtenir un bloc de pierre brute sans la briser en plusieurs morceaux, elle doit être $(thing)extraite$(). Vous devez miner les six blocs adjacents à ce bloc de pierre brut. Une fois qu'elle sera entourée d'air de tous les côtés, elle se changera en item récupérable.",
+      "text": "Afin d'obtenir un bloc de pierre brute sans la briser en plusieurs morceaux, elle doit être $(thing)extraite$(). Vous devez miner les six blocs adjacents à ce bloc de pierre brute. Une fois qu'elle sera entourée d'air de tous les côtés, elle se changera en item récupérable.",
       "title": "Obtenir de la Pierre brute"
     },
     {
@@ -220,7 +219,7 @@
     },
     {
       "type": "patchouli:text",
-      "text": "Vous aurez besoin d'au moins un $(l:mechanics/flux)Flux$() dans l'enclume pour faciliter le processus de soudage. Ensuite, pendant que les deux items sont $(l:mechanics/heating)suffisamment chauds$() pour être soudés - l'infobulle dira \"Peut Souder\" - vous devrez utiliser n'importe lequel des $(thing)Marteaux$() sur l'enclume. Vous entendrez un son de marteau and les items seront soudés ensemble."
+      "text": "Vous aurez besoin d'au moins une $(l:mechanics/flux)Pudre de flux$() dans l'enclume pour faciliter le processus de soudage. Ensuite, pendant que les deux items sont $(l:mechanics/heating)suffisamment chauds$() pour être soudés - l'infobulle dira \"Peut Souder\" - vous devrez utiliser n'importe lequel des $(thing)Marteaux$() sur l'enclume. Vous entendrez un son de marteau and les items seront soudés ensemble."
     }
   ],
   "read_by_default": true,

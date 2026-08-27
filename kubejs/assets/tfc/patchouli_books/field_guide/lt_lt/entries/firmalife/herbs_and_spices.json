@@ -1,5 +1,4 @@
 {
-	"__comment__": "This file was automatically created by mcresources",
 	"name": "Žolelės ir prieskoniai",
 	"category": "tfc:firmalife",
 	"icon": "firmalife:spice/basil_leaves",
@@ -10,6 +9,7 @@
 		},
 		{
 			"type": "tfc:multimultiblock",
+			"text": "$(thing)Laukinis bazilikas$() auga esant 12–25 °C temperatūrai ir 300–500 mm kritulių kiekiui.",
 			"multiblocks": [
 				{
 					"pattern": [
@@ -39,11 +39,13 @@
 				}
 			],
 			"name": "Bazilikas",
-			"text": "$(thing)Laukinis bazilikas$() auga esant 12–25 °C temperatūrai ir 300–500 mm kritulių kiekiui.",
 			"enable_visualize": false
 		},
 		{
 			"type": "tfc:multimultiblock",
+			"name": "Laurų lapas",
+			"text": "$(thing)Laukiniai lauras$() auga esant 8–14 °C temperatūrai ir 25–225 mm kritulių kiekiui.",
+			"enable_visualize": false,
 			"multiblocks": [
 				{
 					"pattern": [
@@ -71,13 +73,11 @@
 						"X": "firmalife:plant/bay_laurel[stage=1]"
 					}
 				}
-			],
-			"name": "Laurų lapas",
-			"text": "$(thing)Laukiniai lauras$() auga esant 8–14 °C temperatūrai ir 25–225 mm kritulių kiekiui.",
-			"enable_visualize": false
+			]
 		},
 		{
 			"type": "tfc:multimultiblock",
+			"text": "$(thing)Laukinis kardamonas$() auga esant 18–30 °C temperatūrai ir 350–500 mm kritulių kiekiui.",
 			"multiblocks": [
 				{
 					"pattern": [
@@ -107,11 +107,13 @@
 				}
 			],
 			"name": "Kardamonas",
-			"text": "$(thing)Laukinis kardamonas$() auga esant 18–30 °C temperatūrai ir 350–500 mm kritulių kiekiui.",
 			"enable_visualize": false
 		},
 		{
 			"type": "tfc:multimultiblock",
+			"name": "Kalendros",
+			"text": "$(thing)Laukinė kalendros$() auga esant 5–15 °C temperatūrai ir 0–150 mm kritulių kiekiui.",
+			"enable_visualize": false,
 			"multiblocks": [
 				{
 					"pattern": [
@@ -139,13 +141,11 @@
 						"X": "firmalife:plant/cilantro[stage=1]"
 					}
 				}
-			],
-			"name": "Kalendros",
-			"text": "$(thing)Laukinė kalendros$() auga esant 5–15 °C temperatūrai ir 0–150 mm kritulių kiekiui.",
-			"enable_visualize": false
+			]
 		},
 		{
 			"type": "tfc:multimultiblock",
+			"text": "$(thing)Laukinis kmynas$() auga esant 6–20 °C temperatūrai ir 50–250 mm kritulių kiekiui.",
 			"multiblocks": [
 				{
 					"pattern": [
@@ -175,7 +175,6 @@
 				}
 			],
 			"name": "Kmynas",
-			"text": "$(thing)Laukinis kmynas$() auga esant 6–20 °C temperatūrai ir 50–250 mm kritulių kiekiui.",
 			"enable_visualize": false
 		},
 		{
@@ -306,7 +305,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Drugelių žolė laikui bėgant subręsta. Subrendusi, ji gali išplisti į aplinkinius blokus arba virsti kuo nors nauju. Drugelių žolės blokai, kuriuos išplatino kitas žolės blokas, daugiau nebeplinta.$(br)Kai Drugelių žolė virsta kita žole, ją galima nupjauti naudojant $(item)Žirkles$()."
+			"text": "Drugelių žolė laikui bėgant subręsta. Subrendusi, ji gali išplisti į aplinkinius blokus arba virsti kuo nors nauju. Drugelių žolės blokai, kuriuos išplatino kitas žolės blokas daugiau nebeplinta.$(br)Kai Drugelių žolė virsta kita žole, ją galima nupjauti naudojant $(item)Žirkles$()."
 		}
 	],
 	"read_by_default": true,

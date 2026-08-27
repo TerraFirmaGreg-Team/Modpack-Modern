@@ -14,6 +14,7 @@ on:
       - 'CHANGELOG.md'
       - 'pakku-lock.json'
       - 'pakku.json'
+      - '.github/workflows/build.yml'
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -574,8 +575,8 @@ jobs:
           project-id: ${{ vars.CURSEFORGE_ID }}
           display-name: ${{ needs.info.outputs.project_full_name }}
           modpack-path: ${{ needs.info.outputs.project_full_name }}-curseforge.zip
-          server-display-name: ${{ needs.info.outputs.project_full_name }}-serverpack
-          modpack-server-path: ${{ needs.info.outputs.project_full_name }}-serverpack.zip
+          # server-display-name: ${{ needs.info.outputs.project_full_name }}-serverpack
+          # modpack-server-path: ${{ needs.info.outputs.project_full_name }}-serverpack.zip
           changelog: |
             ${{ needs.info.outputs.changelog }}
             ${{ needs.info.outputs.diff }}
@@ -651,7 +652,7 @@ jobs:
             **Release Type**: `${{ needs.info.outputs.release_type }}`
             **Game Version**: `${{ needs.info.outputs.mc_version }}`
 
-            [CurseForge](https://www.curseforge.com/minecraft/modpacks/terrafirmagreg-modern/files/${{ needs.release-curseforge.outputs.id }}) • [GitHub](${{ needs.release-github.outputs.url }}) • [Issues](https://github.com/${{ github.repository }}/issues)
+            [CurseForge](https://www.curseforge.com/minecraft/modpacks/terrafirmagreg-modern/files/${{ needs.release-curseforge.outputs.id }}) • [ServerPack](https://github.com/${{ github.repository }}/releases/download/${{ needs.info.outputs.project_version }}/${{ needs.info.outputs.project_full_name }}-serverpack.zip) • [GitHub](${{ needs.release-github.outputs.url }}) • [Issues](https://github.com/${{ github.repository }}/issues)
             ```markdown
             ${{ steps.truncated.outputs.text  }}
             - ...```

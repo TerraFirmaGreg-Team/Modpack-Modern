@@ -5,7 +5,7 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "Iron Age already? Well, I guess it's high time you built yourself a proper ship. The sloop is 4 blocks wide and over 8 blocks long, an impressive upgrade from the rowboat! It holds up to 13 containers and up to 7 passengers, and, depending on the wind, can sail extremely fast. It can also carry up to 6 cannons!"
+      "text": "Déjà à l'Âge de fer ? Eh bien, il est grand temps de vous fabriquer un vrai vaisseau. Le sloop est large de 4 blocs et long de 8, une amélioration impressive du canot ! Il contient jusqu'à 13 contenants et 7 passagers, et, en fonction du vent, peut naviguer extrêmement rapidement. Il peut aussi transporter jusqu'à 6 canons !"
     },
     {
       "type": "patchouli:image",
@@ -15,17 +15,17 @@
     },
     {
       "type": "patchouli:text",
-      "text": "The sloop is expensive, however, requiring a wealth of wrought iron, copper, wool, and other materials. But materials aren't the only cost! You'll have to learn how to sail, as well, and it can take some practice! You'll also likely want to build docks and other infrastructure if you plan on bringing your ship in close to shore."
+      "text": "Cependant, le sloop coûte cher et demande énormément de fer forgé, cuivre, laine et autres matériaux. Mais les matériaux ne représentent pas le seul coût ! Vous devrez également apprendre à naviguer à voile, ce qui demande un peu d'entraînement ! Vous aurez probablement également besoin de construire des quais et autres infrastructures si vous souhaitez accoster près du rivage."
     },
     {
       "type": "patchouli:text",
-      "text": "Here is bill of materials for constructing the sloop:$(br2)12 Wrought Iron Ingots$(br)24 Copper Ingots$(br)648 Lumber$(br)34 Logs$(br)24 Wool Cloth$(br)6 String$(br)72 Jute Fiber"
+      "text": "Voici la liste des matériaux pour construire le sloop :$(br2)12 Lingots de fer forgé$(br)24 Lingots de cuivre$(br)648 Planches$(br)34 Bûches$(br)24 Étoffes de laine$(br)6 Fils$(br)72 Fibres de jute"
     },
     {
       "type": "patchouli:crafting",
-      "title": "Scaffolding",
+      "title": "Échafaudage",
       "recipe": "firmaciv:crafting/watercraft_frame_flat",
-      "text": "Much like a rowboat, you'll start with Shipwright's Scaffolding. However, you'll also need a new flat variant for larger ships."
+      "text": "Tout comme pour un canot, vous devrez commencer par les échafaudages de construction navale. Cependant, vous devrez ajouter une variante plate pour bateaux plus gros."
     },
     {
       "type": "patchouli:multiblock",
@@ -64,13 +64,13 @@
           "a": "firmaciv:watercraft_frame_flat"
         }
       },
-      "name": "Sloop Scaffolding",
-      "text": "Shipwright's Scaffolding arranged in order to construct a sloop hull.",
+      "name": "Échafaudage de sloop",
+      "text": "Échafaudage de construction navale arrangé pour la construction d'une coque de sloop.",
       "enable_visualize": true
     },
     {
       "type": "patchouli:text",
-      "text": "Next, you'll need to add planks of suitably a strong hardwood:$(br2)Acacia$(br)Ash$(br)Aspen$(br)Birch$(br)Blackwood$(br)Chestnut$(br)Hickory$(br)Maple$(br)Oak$(br)Rosewood$(br)Sycamore"
+      "text": "Vous aurez ensuite besoin d'ajouter des planches d'un bois dur et fort convenable :$(br2)Acacia$(br)Frêne$(br)Tremble$(br)Bouleau$(br)Mimosa$(br)Châtaignier$(br)Caryer$(br)Érable $(br)Chêne$(br)Palissandre$(br)Sycomore"
     },
     {
       "type": "patchouli:multiblock",
@@ -109,8 +109,8 @@
           "a": "firmaciv:wood/watercraft_frame/flat/oak[frame_processed=3]"
         }
       },
-      "name": "Sloop Scaffolding",
-      "text": "Four planks have been added to each scaffold.",
+      "name": "Échafaudage de sloop",
+      "text": "Quatre planches ont été ajoutées à chaque échafaudage.",
       "enable_visualize": true
     },
     {
@@ -150,8 +150,8 @@
           "a": "firmaciv:wood/watercraft_frame/flat/oak[frame_processed=7]"
         }
       },
-      "name": "Sloop Scaffolding",
-      "text": "Using a hammer in your offhand, add four copper bolts to each scaffold. Copper bolts are smithed from copper ingots.",
+      "name": "Échafaudage de sloop",
+      "text": "Avec un marteau dans votre main secondaire, ajoutez quatre boulons en cuivre à chaque échafaudage. Les boulons en cuivre se fabriquent dans une enclume à partir de lingots de cuivre.",
       "enable_visualize": true
     },
     {
@@ -193,13 +193,13 @@
           "R": "alekiships:cleat[facing=south]"
         }
       },
-      "name": "Sloop Scaffolding",
-      "text": "Finally, add the cleats to the hull. These are smithed from wrought iron double ingots.",
+      "name": "Échafaudage de sloop",
+      "text": "Enfin, ajoutez les taquets à la coque. Ceux-ci sont forgés à partir de doubles lingots de fer forgé.",
       "enable_visualize": true
     },
     {
       "type": "patchouli:text",
-      "text": "Building the hull is only the first step of sloop construction, however! After the hull is complete, look for the blue hammer icon and use $(item)$(k:key.use)$() to add the items that show next to your crosshair, building out the rest of the ship.$(br2)The following pages contain recipes for unique items you'll need to complete the construction."
+      "text": "Assembler la coque n'est en revanche que la première partie de la construction du sloop ! Après avoir complété la coque, repérez l'icône de marteau bleue et utilisez $(item)$(k:key.use)$() pour rajouter les items affichés près de votre viseur pour construire le reste du bateau.$(br2)Les pages suivantes contiennent des recettes pour les différents items dont vous aurez besoin pour finaliser la construction."
     },
     {
       "type": "patchouli:crafting",
@@ -209,7 +209,7 @@
     {
       "type": "patchouli:crafting",
       "recipe2": "firmaciv:crafting/rope_coil",
-      "text": "You'll also need to add an anchor, which is smithed from a Wrought Iron Double Sheet."
+      "text": "Vous aurez également besoin d'ajouter une ancre, forgée à partir d'une double plaque de fer forgé."
     }
   ],
   "read_by_default": true,

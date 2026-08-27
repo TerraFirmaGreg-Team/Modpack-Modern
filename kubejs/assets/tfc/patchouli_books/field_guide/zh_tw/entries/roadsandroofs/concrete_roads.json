@@ -18,16 +18,16 @@
     {
       "type": "patchouli:spotlight",
       "anchor": "liquid_concrete",
-      "item": "gtceu:concrete_bucket",
       "title": "製作混凝土",
-      "text": "建造混凝土道路的第一步混合濕混凝土。用$(thing)攪拌機$()將水與任兩種石粉方解/大理石粉以及石膏粉混合；或用三種石粉加黏土粉，來製作$(thing)液態混凝土$()。"
+      "text": "建造混凝土道路的第一步混合濕混凝土。用$(thing)攪拌機$()將水與任兩種石粉方解/大理石粉以及石膏粉混合；或用三種石粉加黏土粉，來製作$(thing)液態混凝土$()。",
+      "item": "gtceu:concrete_bucket"
     },
     {
       "type": "patchouli:spotlight",
       "anchor": "wet_concrete",
-      "item": "rnr:bucket/concrete",
       "title": "製作混凝土",
-      "text": "把$(thing)攪拌機$()設為$(thing)程式電路 #7$()，加入更多水稀釋液態混凝土，得到$(thing)濕混凝土混合物$()。"
+      "text": "把$(thing)攪拌機$()設為$(thing)程式電路 #7$()，加入更多水稀釋液態混凝土，得到$(thing)濕混凝土混合物$()。",
+      "item": "rnr:bucket/concrete"
     },
     {
       "type": "patchouli:text",

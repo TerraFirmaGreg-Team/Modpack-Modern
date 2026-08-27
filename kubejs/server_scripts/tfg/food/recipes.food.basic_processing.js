@@ -295,6 +295,6 @@ function registerTFGBasicProcessingFoodRecipes(event) {
 	//#endregion
 		
 	event.recipes.firmalife.stomping('minecraft:sugar', 'firmalife:raw_honey',
-		'minecraft:block/honey_block', 'minecraft:block/snow', 'minecraft:entity.slime.squish')
+		'minecraft:block/honey_block_bottom', 'minecraft:block/snow', 'minecraft:entity.slime.squish')
 		.id('tfg:stomping/honey_to_sugar')
 };

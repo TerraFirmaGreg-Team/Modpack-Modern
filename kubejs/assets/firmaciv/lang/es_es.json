@@ -1,9 +1,11 @@
 {
-	"east": "East",
+	"block.firmaciv.watercraft_frame_angled": "Andamio inclinado",
+	"block.firmaciv.watercraft_frame_flat": "Andamio plano",
+	"eject_passengers": "Expulsar",
+	"entity.firmaciv.cannon": "Cañón",
 	"entity.firmaciv.compartment_large_vessel": "Recipiente grande",
-	"firmaciv.advancements.kayak_paddle.title": "Double Trouble",
+	"entity.firmaciv.compartment_tfc_chest": "Compartimiento de cofre",
+	"item.firmaciv.cannon": "Cañón",
 	"meters": "Metros",
-	"north": "North",
-	"south": "South",
-	"west": "West"
+	"press_button": "Presionar"
 }

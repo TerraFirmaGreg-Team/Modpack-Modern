@@ -1,5 +1,4 @@
 {
-  "__comment__": "This file was automatically created by mcresources",
   "name": "Atraminės sijos ir griūvimai",
   "category": "tfc:mechanics",
   "icon": "tfc:wood/support/oak",
@@ -229,7 +228,8 @@
     },
     {
       "type": "patchouli:text",
-      "text": "In addition to $(thing)Wooden Support Beams$() $(bold)TFG$() also adds higher tiers of support beams. Including $(thing)Stone Support Beams$(), $(thing)Concrete Support Beams$(), and $(thing)Steel Support Beams$(). With the highest tier of supports holding an area of $(bold)33 x 13 x 33$() blocks centered on the horizontal support beam!"
+      "text": "In addition to $(thing)Wooden Support Beams$() $(bold)TFG$() also adds higher tiers of support beams. Including $(thing)Stone Support Beams$(), $(thing)Concrete Support Beams$(), and $(thing)Steel Support Beams$(). With the highest tier of supports holding an area of $(bold)33 x 13 x 33$() blocks centered on the horizontal support beam!",
+      "title": "Chiseling"
     },
     {
       "type": "patchouli:text",

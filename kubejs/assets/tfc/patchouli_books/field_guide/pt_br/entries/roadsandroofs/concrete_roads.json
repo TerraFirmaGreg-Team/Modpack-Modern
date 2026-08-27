@@ -18,16 +18,16 @@
     {
       "type": "patchouli:spotlight",
       "anchor": "liquid_concrete",
-      "item": "gtceu:concrete_bucket",
       "title": "Fabricação de Concreto",
-      "text": "O primeiro passo na criação de uma estrada de concreto consiste em misturar o concreto líquido. Use um $(thing)Misturador$() para combinar a água com quaiquer dois pós de pedra, um pó de calcita ou de mármore, e pó de gesso ou quaisquer três poeiras de pedra com pó de argila para fazer $(thing)Concreto Líquido$()."
+      "text": "O primeiro passo na criação de uma estrada de concreto consiste em misturar o concreto líquido. Use um $(thing)Misturador$() para combinar a água com quaiquer dois pós de pedra, um pó de calcita ou de mármore, e pó de gesso ou quaisquer três poeiras de pedra com pó de argila para fazer $(thing)Concreto Líquido$().",
+      "item": "gtceu:concrete_bucket"
     },
     {
       "type": "patchouli:spotlight",
       "anchor": "wet_concrete",
-      "item": "rnr:bucket/concrete",
       "title": "Fabricação de Concreto",
-      "text": "Then add the liquid concrete in a $(thing)Mixer$() set to $(thing)Programmed Circuit #7$() with more water to dilute it into $(thing)Wet Concrete Mix$()."
+      "text": "Then add the liquid concrete in a $(thing)Mixer$() set to $(thing)Programmed Circuit #7$() with more water to dilute it into $(thing)Wet Concrete Mix$().",
+      "item": "rnr:bucket/concrete"
     },
     {
       "type": "patchouli:text",
