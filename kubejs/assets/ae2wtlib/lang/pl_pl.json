@@ -1,4 +1,5 @@
 {
+	"gui.ae2wtlib.Magnet": "Filtr magnesu",
 	"gui.ae2wtlib.blacklist": "Czarna lista",
 	"gui.ae2wtlib.craft_if_missing.text": "Wytwórz, jeśli brakuje",
 	"gui.ae2wtlib.cycle_terminal.desc": "Otwórz następny terminal",
@@ -22,5 +23,7 @@
 	"item.ae2wtlib.wireless_universal_terminal": "Bezprzewodowy terminal uniwersalny",
 	"item.ae2wtlib.wireless_universal_terminal.desc": "Zainstalowane terminale:",
 	"key.ae2.ae2wtlib_magnet": "Przełącz kartę magnetyczną",
-	"text.autoconfig.de/mari_023/ae2wtlib.option.magnetCardRange": "Zasięg karty magnetycznej"
+	"key.ae2.ae2wtlib_restock": "Przełącz uzupełnianie",
+	"text.autoconfig.de/mari_023/ae2wtlib.option.magnetCardRange": "Zasięg karty magnetycznej",
+	"text.autoconfig.de/mari_023/ae2wtlib.title": "Terminale bezprzewodowe AE2"
 }

@@ -8,5 +8,8 @@
     "uiTheme": "intellij-dark",
     "localVersion": "DEV",
     "requiresRestart": false,
-    "checkStopModReposts": false
+    "checkStopModReposts": false,
+    "pakku": {
+        "promptConfigCreate": false
+    }
 }

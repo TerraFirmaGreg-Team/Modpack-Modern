@@ -446,10 +446,10 @@ const registerTooltips = (event) => {
 	event.addAdvanced(['tfc:hematitic_glass_bottle', 'tfc:volcanic_glass_bottle', 'tfc:olivine_glass_bottle'], (item, advanced, text) => {
 		text.add(1, Text.translate("gtceu.universal.tooltip.fluid_storage_capacity", "400"))
 	})
-	event.addAdvanced(['#tfc:lamps'], (item, advanced, text) => {
+	event.addAdvanced(['#tfc:lamps', 'firmalife:hollow_shell'], (item, advanced, text) => {
 		text.add(1, Text.translate("gtceu.universal.tooltip.fluid_storage_capacity", "250"))
 	})
-	event.addAdvanced(['tfc:ceramic/jug', 'firmalife:hollow_shell'], (item, advanced, text) => {
+	event.addAdvanced(['tfc:ceramic/jug'], (item, advanced, text) => {
 		text.add(1, Text.translate("gtceu.universal.tooltip.fluid_storage_capacity", "100"))
 	})
 	event.addAdvanced(['#tfcastikorcarts:supply_cart'], (item, advanced, text) => {

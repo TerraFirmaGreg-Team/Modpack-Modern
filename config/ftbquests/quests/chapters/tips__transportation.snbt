@@ -432,6 +432,114 @@
 			x: 4.5d
 			y: -3.5d
 		}
+		{
+			alpha: 100
+			height: 3.0d
+			image: "minecraft:block/rail"
+			rotation: 0.0d
+			width: 3.0d
+			x: 6.5d
+			y: 9.0d
+		}
+		{
+			alpha: 100
+			height: 3.0d
+			image: "minecraft:block/rail_corner"
+			rotation: 180.0d
+			width: 3.0d
+			x: 6.5d
+			y: 21.5d
+		}
+		{
+			alpha: 100
+			height: 3.0d
+			image: "minecraft:block/rail_corner"
+			rotation: -90.0d
+			width: 3.0d
+			x: 9.0d
+			y: 19.0d
+		}
+		{
+			alpha: 100
+			height: 3.0d
+			image: "minecraft:block/rail"
+			rotation: 90.0d
+			width: 3.0d
+			x: 4.0d
+			y: 21.5d
+		}
+		{
+			alpha: 100
+			height: 3.0d
+			image: "minecraft:block/rail"
+			rotation: 0.0d
+			width: 3.0d
+			x: 6.5d
+			y: 11.5d
+		}
+		{
+			alpha: 100
+			height: 3.0d
+			image: "minecraft:block/rail"
+			rotation: 0.0d
+			width: 3.0d
+			x: 6.5d
+			y: 14.0d
+		}
+		{
+			alpha: 100
+			height: 3.0d
+			image: "minecraft:block/rail"
+			rotation: 0.0d
+			width: 3.0d
+			x: 6.5d
+			y: 16.5d
+		}
+		{
+			alpha: 100
+			height: 3.0d
+			image: "minecraft:block/rail"
+			rotation: 0.0d
+			width: 3.0d
+			x: 6.5d
+			y: 19.0d
+		}
+		{
+			alpha: 100
+			height: 3.0d
+			image: "minecraft:block/rail"
+			rotation: 0.0d
+			width: 3.0d
+			x: 9.0d
+			y: 16.5d
+		}
+		{
+			alpha: 100
+			height: 3.0d
+			image: "minecraft:block/rail"
+			rotation: 90.0d
+			width: 3.0d
+			x: 1.5d
+			y: 21.5d
+		}
+		{
+			alpha: 100
+			height: 3.0d
+			image: "minecraft:block/rail"
+			rotation: 90.0d
+			width: 3.0d
+			x: 11.5d
+			y: 19.0d
+		}
+		{
+			alpha: 100
+			height: 3.0d
+			image: "minecraft:block/rail"
+			rotation: 90.0d
+			width: 3.0d
+			x: 14.0d
+			y: 19.0d
+		}
 	]
 	order_index: 1
 	quest_links: [{
@@ -1550,6 +1658,450 @@
 			title: "{quests.tfg_tips.transportation_tips.rnr_plow.title}"
 			x: 8.5d
 			y: -1.5d
+		}
+		{
+			dependencies: ["60497014785301EB"]
+			dependency_requirement: "one_completed"
+			description: ["{quests.tfg_tips.create_steam_n_rails.desc}"]
+			icon: "railways:white_conductor_cap"
+			id: "24F55AFE2EC875F2"
+			shape: "octagon"
+			size: 2.0d
+			subtitle: "{quests.tfg_tips.create_steam_n_rails.subtitle}"
+			tasks: [{
+				id: "0175333225F43F08"
+				title: "{quests.tasktype.checkmark}"
+				type: "checkmark"
+			}]
+			title: "{quests.tfg_tips.create_steam_n_rails.title}"
+			x: 6.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["24F55AFE2EC875F2"]
+			description: ["{quests.tfg_tips.train_tracks.desc}"]
+			id: "50AE05306D3F6F0D"
+			subtitle: "{quests.tfg_tips.train_tracks.subtitle}"
+			tasks: [{
+				count: 32L
+				id: "0CA3970908FE6ACF"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(create:tracks)"
+					}
+				}
+				title: "{quests.tfg_tips.train_tracks.task}"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.train_tracks.title}"
+			x: 6.5d
+			y: 11.5d
+		}
+		{
+			dependencies: ["50AE05306D3F6F0D"]
+			description: ["{quests.tfg_tips.your_first_train.desc}"]
+			id: "65194B2DC42B3E07"
+			size: 2.0d
+			subtitle: "{quests.tfg_tips.your_first_train.subtitle}"
+			tasks: [
+				{
+					id: "5369E6FB96F52926"
+					item: "create:track_station"
+					type: "item"
+				}
+				{
+					id: "18AB80143A289829"
+					item: "create:controls"
+					type: "item"
+				}
+				{
+					id: "5FC320F221ABD24A"
+					item: "create:railway_casing"
+					type: "item"
+				}
+			]
+			title: "{quests.tfg_tips.your_first_train.title}"
+			x: 6.5d
+			y: 14.0d
+		}
+		{
+			dependencies: ["65194B2DC42B3E07"]
+			description: ["{quests.tfg_tips.train_limitations.desc}"]
+			icon: "createdeco:decal_warning"
+			id: "13C368BE21161068"
+			shape: "diamond"
+			subtitle: "{quests.tfg_tips.train_limitations.subtitle}"
+			tasks: [{
+				id: "2C7B422B2A1DFD50"
+				title: "{quests.tasktype.checkmark}"
+				type: "checkmark"
+			}]
+			title: "{quests.tfg_tips.train_limitations.title}"
+			x: 9.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["42E33D1E45BFE93B"]
+			description: ["{quests.tfg_tips.hard_stop.desc}"]
+			id: "630446139085B8A1"
+			subtitle: "{quests.tfg_tips.hard_stop.subtitle}"
+			tasks: [{
+				id: "436178FDB6972602"
+				item: "railways:buffer"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.hard_stop.title}"
+			x: 4.0d
+			y: 21.5d
+		}
+		{
+			dependencies: ["6D7248BFB6FFFCE9"]
+			description: ["{quests.tfg_tips.collision_prevention.desc}"]
+			icon: "railways:semaphore"
+			id: "4868CD0A3946C201"
+			subtitle: "{quests.tfg_tips.collision_prevention.subtitle}"
+			tasks: [
+				{
+					id: "3A7A68E9092E56FA"
+					item: "create:track_signal"
+					type: "item"
+				}
+				{
+					id: "7B28C5B637C8860B"
+					item: "railways:semaphore"
+					type: "item"
+				}
+			]
+			title: "{quests.tfg_tips.collision_prevention.title}"
+			x: 6.5d
+			y: 19.0d
+		}
+		{
+			dependencies: ["65194B2DC42B3E07"]
+			description: ["{quests.tfg_tips.steam_immersion.desc}"]
+			id: "39EFFFDC11B3CD64"
+			subtitle: "{quests.tfg_tips.steam_immersion.subtitle}"
+			tasks: [
+				{
+					id: "0E4C3A126793D5A5"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfg:smokestacks)"
+						}
+					}
+					title: "{quests.tfg_tips.steam_immersion.task.1}"
+					type: "item"
+				}
+				{
+					id: "65557D761EC57130"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(railways:palettes/dye_groups/boiler)"
+						}
+					}
+					title: "{quests.tfg_tips.steam_immersion.task.2}"
+					type: "item"
+				}
+			]
+			title: "{quests.tfg_tips.steam_immersion.title}"
+			x: 4.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["65194B2DC42B3E07"]
+			description: ["{quests.tfg_tips.handcar.desc}"]
+			id: "2BC0719E8FF1613A"
+			subtitle: "{quests.tfg_tips.handcar.subtitle}"
+			tasks: [{
+				id: "3A7AB8A34963ACE3"
+				item: "railways:handcar"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.handcar.title}"
+			x: 4.0d
+			y: 15.5d
+		}
+		{
+			dependencies: ["65194B2DC42B3E07"]
+			description: ["{quests.tfg_tips.seats.desc}"]
+			id: "0B79E10AB35FDB82"
+			subtitle: "{quests.tfg_tips.seats.subtitle}"
+			tasks: [{
+				id: "0E26552E6336BB32"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(create:seats)"
+					}
+				}
+				title: "{quests.tfg_tips.seats.task}"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.seats.title}"
+			x: 3.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["65194B2DC42B3E07"]
+			description: ["{quests.tfg_tips.train_cargo.desc}"]
+			id: "624DBB15C2B3C8E3"
+			subtitle: "{quests.tfg_tips.train_cargo.subtitle}"
+			tasks: [
+				{
+					id: "73D0FE82D3588DB1"
+					item: "create:fluid_tank"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "4518F01795121E7B"
+					item: "create:item_vault"
+					type: "item"
+				}
+				{
+					id: "61366CF93761C8FB"
+					item: "createaddition:modular_accumulator"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "{quests.tfg_tips.train_cargo.title}"
+			x: 9.0d
+			y: 16.5d
+		}
+		{
+			dependencies: ["65194B2DC42B3E07"]
+			dependency_requirement: "one_completed"
+			description: ["{quests.tfg_tips.switching_tracks.desc}"]
+			id: "6D7248BFB6FFFCE9"
+			subtitle: "{quests.tfg_tips.switching_tracks.subtitle}"
+			tasks: [
+				{
+					id: "5660F88D800B2086"
+					item: "railways:track_switch_andesite"
+					type: "item"
+				}
+				{
+					id: "5C094B6F7FA80333"
+					item: "railways:track_switch_brass"
+					type: "item"
+				}
+			]
+			title: "{quests.tfg_tips.switching_tracks.title}"
+			x: 6.5d
+			y: 16.5d
+		}
+		{
+			dependencies: ["4868CD0A3946C201"]
+			description: ["{quests.tfg_tips.splitting_carriages.desc}"]
+			id: "42E33D1E45BFE93B"
+			subtitle: "{quests.tfg_tips.splitting_carriages.subtitle}"
+			tasks: [{
+				id: "5DE55F0DCA4214C1"
+				item: "railways:track_coupler"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.splitting_carriages.title}"
+			x: 6.5d
+			y: 21.5d
+		}
+		{
+			dependencies: ["624DBB15C2B3C8E3"]
+			description: ["{quests.tfg_tips.detecting_cargo.desc}"]
+			id: "69F5BB121E93A5A5"
+			subtitle: "{quests.tfg_tips.detecting_cargo.subtitle}"
+			tasks: [{
+				id: "0DEE5A0E718DDC29"
+				item: "create:track_observer"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.detecting_cargo.title}"
+			x: 9.0d
+			y: 19.0d
+		}
+		{
+			dependencies: [
+				"69F5BB121E93A5A5"
+				"0E26552E6336BB32"
+			]
+			description: [
+				"{quests.tfg_tips.automated_deliveries.desc.1}"
+				"{@pagebreak}"
+				"{quests.tfg_tips.automated_deliveries.desc.2}"
+			]
+			icon: "create:schedule"
+			id: "374304894C62001B"
+			size: 2.0d
+			subtitle: "{quests.tfg_tips.automated_deliveries.subtitle}"
+			tasks: [
+				{
+					id: "62146AF093CB06F4"
+					item: "create:schedule"
+					type: "item"
+				}
+				{
+					id: "375D0EB7DF147A96"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(railways:conductor_caps)"
+						}
+					}
+					optional_task: true
+					title: "{quests.tfg_tips.automated_deliveries.task}"
+					type: "item"
+				}
+				{
+					id: "1D6A767AC7A77A49"
+					item: "minecraft:lead"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "{quests.tfg_tips.automated_deliveries.title}"
+			x: 12.0d
+			y: 19.0d
+		}
+		{
+			dependencies: ["624DBB15C2B3C8E3"]
+			description: ["{quests.tfg_tips.cargo_management.desc}"]
+			id: "2EC917FB326D5A58"
+			subtitle: "{quests.tfg_tips.cargo_management.subtitle}"
+			tasks: [
+				{
+					count: 2L
+					id: "3230B77BBA6CC3A3"
+					item: "create:portable_fluid_interface"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "35379EA5912DC4D8"
+					item: { Count: 2, id: "create:portable_storage_interface" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "52E5F55725F5804A"
+					item: "createaddition:portable_energy_interface"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "{quests.tfg_tips.cargo_management.title}"
+			x: 11.0d
+			y: 17.0d
+		}
+		{
+			dependencies: ["624DBB15C2B3C8E3"]
+			description: ["{quests.tfg_tips.efficient_trips.desc}"]
+			id: "5CD2605615A0AA20"
+			subtitle: "{quests.tfg_tips.efficient_trips.subtitle}"
+			tasks: [
+				{
+					id: "32DBE62198A0299F"
+					item: "fluidlogistics:multi_fluid_tank"
+					type: "item"
+				}
+				{
+					id: "6506463434B5035F"
+					item: "fluidlogistics:horizontal_multi_fluid_tank"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "{quests.tfg_tips.efficient_trips.title}"
+			x: 11.0d
+			y: 15.5d
+		}
+		{
+			dependencies: ["374304894C62001B"]
+			description: ["{quests.tfg_tips.fueling_your_train.desc}"]
+			icon: "minecraft:charcoal"
+			id: "31B91C1FF958CEC3"
+			subtitle: "{quests.tfg_tips.fueling_your_train.subtitle}"
+			tasks: [{
+				id: "4BCB9F78ADFD3693"
+				title: "{quests.tasktype.checkmark}"
+				type: "checkmark"
+			}]
+			title: "{quests.tfg_tips.fueling_your_train.title}"
+			x: 11.0d
+			y: 21.0d
+		}
+		{
+			dependencies: ["374304894C62001B"]
+			description: ["{quests.tfg_tips.liquid_train_fuel.desc}"]
+			id: "41E8E1F8E7ACFD36"
+			subtitle: "{quests.tfg_tips.liquid_train_fuel.subtitle}"
+			tasks: [
+				{
+					id: "2DF381C73A33328D"
+					item: "railways:fuel_tank"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "3A0AE2C22E32C834"
+					item: { Count: 2, id: "railways:portable_fuel_interface" }
+					type: "item"
+				}
+			]
+			title: "{quests.tfg_tips.liquid_train_fuel.title}"
+			x: 13.0d
+			y: 21.0d
+		}
+		{
+			dependencies: ["374304894C62001B"]
+			description: ["{quests.tfg_tips.conductor_whistle.desc}"]
+			id: "48138F7AFC3B8611"
+			subtitle: "{quests.tfg_tips.conductor_whistle.subtitle}"
+			tasks: [{
+				id: "1134B4D5982EC316"
+				item: "railways:conductor_whistle"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.conductor_whistle.title}"
+			x: 13.0d
+			y: 17.0d
+		}
+		{
+			dependencies: ["374304894C62001B"]
+			description: ["{quests.tfg_tips.remote_lens.desc}"]
+			icon: "create:goggles"
+			id: "0A9A54599EE46D5F"
+			subtitle: "{quests.tfg_tips.remote_lens.subtitle}"
+			tasks: [{
+				id: "3D1B33716D5CF073"
+				item: "railways:remote_lens"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.remote_lens.title}"
+			x: 14.5d
+			y: 19.0d
+		}
+		{
+			dependencies: ["630446139085B8A1"]
+			description: ["{quests.tfg_tips.back_on_tracks.desc}"]
+			icon: "create:wrench"
+			id: "5655D6E5228A467E"
+			subtitle: "{quests.tfg_tips.back_on_tracks.subtitle}"
+			tasks: [{
+				id: "7842A67897C575D4"
+				type: "checkmark"
+			}]
+			title: "{quests.tfg_tips.back_on_tracks.title}"
+			x: 1.5d
+			y: 21.5d
 		}
 	]
 	subtitle: ["{quests.tfg_tips.transportation_tips.subtitle}"]

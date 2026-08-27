@@ -56,7 +56,7 @@ function registerTFGOverworldItemTags(event) {
 	event.add('tfc:makes_white_dye', 'tfg:plant/bear_grass')
 	event.add('tfc:makes_light_gray_dye', 'tfg:plant/silver_bromeliad')
 	event.add('tfc:makes_light_gray_dye', 'tfg:plant/eyeblossom')
-	event.add('tfc:makes_light_gray_dye', 'tfg:plant/pale_hanging_moss')
+	event.add('tfc:makes_gray_dye', 'tfg:plant/pale_hanging_moss')
 
 	event.add('minecraft:flowers', 'tfg:plant/azalea')
 	event.add('minecraft:flowers', 'tfg:plant/buttercup')
@@ -142,6 +142,7 @@ function registerTFGOverworldBlockTags(event) {
 	event.add("tfc:monster_spawns_on", "tfg:pelitic_hornfels");
 	event.add("tfc:monster_spawns_on", "minecraft:packed_ice");
 	event.add("tfc:monster_spawns_on", "minecraft:blue_ice");
+    event.add("tfc:monster_spawns_on", "#forge:sand");
 
 	event.add('tfg:camel_faster_on', 'tfg:coarse_dirt/silty_loam')
 	event.add('tfg:camel_faster_on', 'tfg:coarse_dirt/sandy_loam')

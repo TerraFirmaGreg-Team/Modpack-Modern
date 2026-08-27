@@ -102,7 +102,8 @@
     "balm",
     "wakes",
     "sound_physics_remastered",
-    "alekiroofs"
+    "alekiroofs",
+    "autopack"
   ],
   "include_namespaces": [],
   "nested_jars": true,
@@ -114,8 +115,10 @@
   "log_dir": ".github/script/extract_lang/logs",
   "keep_namespaces": ["tfg"],
   "reliable_remover_dir": "config/reliable_remover",
+  "reliable_remover_lang_prefixes": ["item", "block", "fluid", "entity"],
   "drop_empty_en_keys": true,
   "drop_nontranslatable_values": true,
+  "drop_same_as_en": true,
   "drop_nontranslatable_exceptions": ["tfg"],
   "drop_key_patterns": [
     "_{1,3}comment_{0,2}\\d?",
@@ -126,8 +129,10 @@
     "item\\.firmaciv\\.(canoe(?:_with_paddle)?|kayak_with_paddle|rowboat|sloop)_icon_only",
     "block.firmalife.ore.*",
     "block\\.beneath\\.wood\\.(windmill|water_wheel|clutch)\\..+",
-    "block\\.(tfc|afc|beneath)\\.wood\\.(axle|encased_axle|bladed_axle|gear_box)\\..*",
+    "block\\.(tfc|afc|beneath)\\.wood\\.(axle|encased_axle|bladed_axle|gear_box|gearbox)\\..*",
     "(item|entity)\\.tfcastikorcarts\\.(plow|animal_cart|supply_cart|wheel)\\.(african_padauk|alder|angelim|argyle_eucalyptus|bald_cypress|baobab|beech|black_walnut|black_willow|brazilwood|butternut|buxus|cocobolo|common_oak|cypress|ebony|fever|ghaf|ginkgo|greenheart|hawthorn|hazel|hemlock|holly|hornbeam|iroko|ironwood|jabuticabeira|joshua|juniper|kauri|larch|laurel|limba|locust|logwood|maclura|mahoe|mahogany|marblewood|medlar|messmate|mountain_ash|mulberry|nordmann_fir|norway_spruce|pear|persimmon|pink_cherry_blossom|pink_ipe|pink_ivory|poplar|purple_ipe|purple_jacaranda|purpleheart|quince|rainbow_eucalyptus|red_cedar|red_cypress|red_elm|red_mangrove|redwood|rowan|rubber_fig|sloe|snow_gum_eucalyptus|sorb|sweetgum|syzygium|teak|walnut|wenge|white_cherry_blossom|white_elm|white_ipe|white_jacaranda|white_mangrove|whitebeam|yellow_ipe|yellow_jacaranda|yellow_meranti|yew|zebrawood)",
-    "block\\.tfc\\.ore\\..*\\.prospected"
+    "block\\.tfc\\.ore\\..*\\.prospected",
+    "block\\.gtceu\\.lp_.*",
+    "block\\.mcw_tfc_aio\\..*_railing_gate"
   ]
 }

@@ -1,1 +1,4 @@
-{"parent":"tfc:block/crop_cross","textures":{"crop":"tfc:block/crop/maize_0"}}
+{
+	"parent": "tfc:block/crop/vexxed_crop_cross",
+	"textures": { "crop": "tfc:block/crop/maize_0" }
+}
