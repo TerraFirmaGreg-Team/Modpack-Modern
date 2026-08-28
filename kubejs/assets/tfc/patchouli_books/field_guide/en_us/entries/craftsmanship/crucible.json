@@ -1,0 +1,90 @@
+{
+    "name": "Crucible",
+    "category": "tfc:craftsmanship",
+    "icon": "tfc:crucible",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "A $(thing)Crucible$() is an advanced device used for the creation of $(l:craftsmanship/metallurgy#alloying)Alloys$(). It is a more precise method than using a $(l:craftsmanship/pottery#vessel)Small Vessel$() to make alloys.$(br2)To obtain a crucible, you will first need to obtain some $(l:craftsmanship/pottery#fire_clay)Fire Clay$(), which is a stronger material than clay. This fire clay can then be knapped to shape it into an $()Unfired Crucible$()."
+        },
+        {
+            "type": "tfc:knapping_recipe",
+            "recipe": "tfc:fire_clay_knapping/crucible",
+            "text": "Knapping an $(thing)Unfired Crucible$()."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "After the crucible is knapped, it will need to be $(l:craftsmanship/pottery#vessel)Fired$(), like any piece of pottery.$(br2)In order to use the crucible, it needs a source of heat. The crucible can be heated by any heatable block below, preferably a $(l:craftsmanship/charcoal_forge)Charcoal Forge$().$(br)Importantly, crucibles transfer their heat to items much faster than forges. This can be good or bad. If low-melting-point items like $(item)Tin$() are being troublesome for working. Consider sticking to the forge for heating."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "   ",
+                        " C ",
+                        "   "
+                    ],
+                    [
+                        "GGG",
+                        "G0G",
+                        "GGG"
+                    ]
+                ],
+                "mapping": {
+                    "0": "tfc:charcoal_forge[heat_level=7]",
+                    "C": "tfc:crucible",
+                    "G": "tfc:rock/bricks/granite"
+                }
+            },
+            "name": "",
+            "text": "A crucible heated by a charcoal forge below it.",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "advanced_alloying",
+            "text": "Now, you are ready to use the crucible. When you interact with it, you will see the $(thing)Crucible Interface$(), shown on the next page. The top region shows the current metal content of the crucible. The first metal shown is what would be produced, if it were to be extracted right now. Other metals shown are the makeup of the current alloy in the crucible.",
+            "title": "Advanced Alloying"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/gui/crucible.png"
+            ],
+            "text": "The Crucible Interface",
+            "border": false
+        },
+        {
+            "type": "patchouli:text",
+            "text": "The crucible has nine slots where items can be added to be melted, and their liquefied contents will be directly added to the crucible. Molten metal containers such as $(l:craftsmanship/pottery#mold)Molds$() can also be placed here, and they will be drained into the crucible, allowing for precise control over your alloy's content. Holding $(item)$(k:key.sneak)$() while hovering over a draining mold or vessel makes it drain faster.$(br)Molds or other fluid containers can also be placed in the output slot, and will be slowly filled with the contents of the crucible."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "The temperature indicator on the left will rise based on external sources of heat, such as a $(l:craftsmanship/charcoal_forge)Charcoal Forge$() below or heat from a $(l:craftsmanship/blast_furnace)Blast Furnace$() above. Metal can be extracted from the crucible as long as it is still molten.$(br2)The crucible will also keep its contents when broken, allowing you to transport the alloy container around if you wish."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "You will have successfully alloyed when the text at the top of the crucible says the name of your alloy.$(br)If you accidentally mix the wrong type of metal into your molten alloy then you unfortunately have lost the whole batch. Even a small amount of foreign metal can ruin an alloy. You may also find yourself running out of room in your crucible before hitting your perfect ratio, and you may worry you have wasted the metal. But, luckily you can sacrifice some product by decanting a bit of metal to make room for more material. An alloy is only permanent when cast."
+        },
+        {
+            "type": "patchouli:image",
+            "width": 1024,
+            "texture_width": 1024,
+            "height": 1024,
+            "texture_height": 1024,
+            "images": [
+                "tfg:textures/gui/field_guide/prospecting/crucible_alloying.png"
+            ],
+            "text": "$(4)◼$() - Alloyed result.$(br)$(3)◼$() - List of contributing metal fractions.",
+            "border": false,
+            "title": "Molten Alloy"
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 7,
+    "extra_recipe_mappings": {
+        "tfc:ceramic/unfired_crucible": 1,
+        "tfc:crucible": 2
+    }
+}
