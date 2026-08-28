@@ -493,8 +493,5 @@ const registerGTCEURecipes = (event) => {
 
 	//Buff treated wood stick output for lathe
 
-	global.modifyRecipe(event, "gtceu:lathe/treated_wood_sticks", {
-		newId: "tfg:treated_planks_to_sticks",
-		itemOutputs: { "gtceu:treated_wood_rod": 8 }
-	})
+	event.replaceOutput({id: 'gtceu:lathe/treated_wood_sticks'}, 'gtceu:treated_wood_rod', '8x gtceu:treated_wood_rod')
 }
