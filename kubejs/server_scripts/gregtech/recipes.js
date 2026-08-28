@@ -490,4 +490,8 @@ const registerGTCEURecipes = (event) => {
 		.chancedOutput(Item.of('gtceu:neodymium_dust', 1), 2000, 0)
 		.duration(2.5*20)
 		.EUt(GTValues.VA[GTValues.MV])
+
+	//Buff treated wood stick output for lathe
+
+	event.replaceOutput({id: 'gtceu:lathe/treated_wood_sticks'}, 'gtceu:treated_wood_rod', '8x gtceu:treated_wood_rod')
 }
