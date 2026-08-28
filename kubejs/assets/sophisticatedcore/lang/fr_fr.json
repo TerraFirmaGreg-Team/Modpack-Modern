@@ -1,5 +1,7 @@
 {
 	"gui.sophisticatedcore.buttons.confirm": "Confirmer",
+	"gui.sophisticatedcore.buttons.upgrade_switch_disabled": "OFF",
+	"gui.sophisticatedcore.buttons.upgrade_switch_enabled": "ON",
 	"gui.sophisticatedcore.settings.buttons.rotate": "Tourner",
 	"gui.sophisticatedcore.settings.buttons.z_offset": "Profondeur",
 	"gui.sophisticatedcore.upgrades.buttons.allow": "Autoriser",
@@ -17,5 +19,6 @@
 	"gui.sophisticatedcore.upgrades.smelting.tooltip": "Cuisson",
 	"gui.sophisticatedcore.upgrades.smoking": "Fumage",
 	"gui.sophisticatedcore.upgrades.smoking.tooltip": "Fumage",
+	"gui.sophisticatedcore.upgrades.tag_list.title": "Tags",
 	"item.sophisticatedcore.storage.tooltip.inventory": "Inventaire"
 }

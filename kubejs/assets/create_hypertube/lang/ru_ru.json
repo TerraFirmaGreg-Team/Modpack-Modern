@@ -39,6 +39,8 @@
   "item.create_hypertube.hypertube_funnel": "Шлюз гипертрубы",
   "item.create_hypertube.redstone_detector_tube_attachment": "Трубный датчик редстоуна",
   "item.create_hypertube.tube_scanner_attachment": "Трубный сканер",
+  "itemGroup.create_hypertube": "Create: Hypertube",
+  "key.categories.hypertube": "Create: Hypertube",
   "key.hypertube.tube_escape": "Кнопка выхода из гипертрубы",
   "placement.create_hypertube.angle_too_high": "Угол между точками слишком велик",
   "placement.create_hypertube.block_collision": "Обнаружено столкновение с блоком",

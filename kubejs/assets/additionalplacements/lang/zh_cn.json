@@ -5,6 +5,7 @@
 	"commands.ap_stairs_state_debug.wrong_block": "%s 不是有效方块，必须为具有附加状态的楼梯方块。",
 	"key.additionalplacements.placement_toggle": "切换放置逻辑",
 	"key.categories.additionalplacements": "额外放置",
+	"msg.additionalplacements.configurationerrors": "尝试连接服务器时，检测到额外放置配置错误。",
 	"msg.additionalplacements.disconnected": "额外放置配置冲突",
 	"msg.additionalplacements.errors.client": "客户端拒绝：",
 	"msg.additionalplacements.errors.server": "服务端拒绝：",

@@ -5,6 +5,8 @@
 	"gui.sophisticatedcore.buttons.sort_by_count": "個数順",
 	"gui.sophisticatedcore.buttons.sort_by_name": "五十音順",
 	"gui.sophisticatedcore.buttons.sort_by_tags": "タグ順",
+	"gui.sophisticatedcore.buttons.upgrade_switch_disabled": "OFF",
+	"gui.sophisticatedcore.buttons.upgrade_switch_enabled": "ON",
 	"gui.sophisticatedcore.error.add.battery_energy_high": "バッテリ機能を追加できません。リュックのグレードを上げるか、スタック数を%s倍以上にしてください。",
 	"gui.sophisticatedcore.error.add.battery_exists": "バッテリ機能は既に追加されています。",
 	"gui.sophisticatedcore.error.add.needs_occupied_inventory_slots": "%sスロットの空きがないと%sを追加できません。",

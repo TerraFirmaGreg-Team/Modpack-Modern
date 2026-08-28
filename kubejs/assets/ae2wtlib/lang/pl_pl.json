@@ -1,4 +1,5 @@
 {
+	"chat.ae2wtlib.NetworkNotPowered": "Sieć nie jest zasilona",
 	"gui.ae2wtlib.Magnet": "Filtr magnesu",
 	"gui.ae2wtlib.blacklist": "Czarna lista",
 	"gui.ae2wtlib.craft_if_missing.text": "Wytwórz, jeśli brakuje",
@@ -12,6 +13,7 @@
 	"gui.ae2wtlib.magnetcard.hotkey": "Karta magnetyczna:",
 	"gui.ae2wtlib.off": "Wyłączony",
 	"gui.ae2wtlib.on": "Włączony",
+	"gui.ae2wtlib.pick_block.text": "Włącz wybieranie bloku",
 	"gui.ae2wtlib.pickup_to_me.text": "Podnoś przedmioty do systemu ME",
 	"gui.ae2wtlib.restock": "Uzupełnianie: ",
 	"gui.ae2wtlib.restock.text": "Uzupełnianie",
