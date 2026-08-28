@@ -27,6 +27,7 @@
   "item.sns.straw_basket": "Słomiany koszyk",
   "item.sns.unfinished_leather_sack": "Niewykończony worek skórzany",
   "pack.sns.description": "Zasoby Sacks 'N Such",
+  "sns.creative_tab.sacks": "Sacks 'N Such",
   "sns.disabled": "Wyłączone",
   "sns.enabled": "Włączony",
   "sns.extra_fall_distance": "Odległość upadku",
@@ -48,5 +49,6 @@
   "sns.tooltip.item_container.tooltip.inventory_interaction": "Interakcja w ekwipunku: %s",
   "sns.tooltip.item_container.tooltip.pickup": "Podnoszenie przedmiotów: %s",
   "sns.tooltip.item_container.tooltip.shift": "Przytrzymaj (shift), by zobaczyć więcej informacji",
-  "sns.tooltip.item_container.tooltip.void": "Usuwanie przedmiotów: %s"
+  "sns.tooltip.item_container.tooltip.void": "Usuwanie przedmiotów: %s",
+  "sns.tooltip.lunchbox.selected_slot": "Wybrany slot: %s"
 }

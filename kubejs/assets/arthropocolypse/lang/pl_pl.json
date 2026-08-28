@@ -53,7 +53,7 @@
 	"item.arthropocolypse.cooked_ice_crawler_meat": "Upieczony chrząszcz obsydianowy",
 	"item.arthropocolypse.energy_bar": "Robacze przekąski",
 	"item.arthropocolypse.field_cricket_egg": "Jajko skoczka Glisachaemusa",
-	"item.arthropocolypse.field_cricket_spawn_egg": "Jajo przywołujące świerszcza",
+	"item.arthropocolypse.field_cricket_spawn_egg": "Jajo przyzywające świerszcza",
 	"item.arthropocolypse.gilded_double_head_axe": "Pozłocone podwójne ostrze topora",
 	"item.arthropocolypse.gilded_organ": "Pozłacany narząd",
 	"item.arthropocolypse.gilded_scale": "Pozłacana łuska",
@@ -62,7 +62,7 @@
 	"item.arthropocolypse.ice_crawler_spawn_egg": "Jajo przyzywające lodowego pełzacza",
 	"item.arthropocolypse.mandible_dagger": "Żuwaczkowy sztylet",
 	"item.arthropocolypse.mandible_part": "Kawałek żuchwy",
-	"item.arthropocolypse.mandible_shear": "Kawałek żuchwy",
+	"item.arthropocolypse.mandible_shear": "Ścinek żuchwy",
 	"item.arthropocolypse.mealworm": "Larwa pchełki",
 	"item.arthropocolypse.mealworm_beetle_spawn_egg": "Jajo przyzywające mącznika",
 	"item.arthropocolypse.mealworm_egg": "Jajko pchełki",
@@ -76,5 +76,6 @@
 	"item.arthropocolypse.stag_beetle_larva": "Larwa chrząszcza rogatego",
 	"item.arthropocolypse.stag_beetle_spawn_egg": "Jajo przyzywające chrząszcza jelonka",
 	"item.arthropocolypse.wharf_roach_spawn_egg": "Jajo przyzywające ligię egzotyczną",
-	"item.arthropocolypse.worker_ant_spawn_egg": "Jajo przyzywające mrówkę robotnicę"
+	"item.arthropocolypse.worker_ant_spawn_egg": "Jajo przyzywające mrówkę robotnicę",
+	"itemGroup.creative_tab.arthropocolypse": "Arthropocolypse"
 }

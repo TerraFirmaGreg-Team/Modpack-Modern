@@ -219,7 +219,7 @@
       "type": "patchouli:text",
       "anchor": "malachite",
       "text": "Malachite is an ore of $(thing)Copper$() metal. It can be found primarily in $(thing)Marble$() or $(thing)Limestone$(), $(thing)Chalk$(), and $(thing)Dolomite$(). It can be found at most elevations, however deeper veins are often larger and richer.",
-      "title": "Malachite"
+      "title": "Malachit"
     },
     {
       "type": "tfc:multimultiblock",
@@ -790,7 +790,7 @@
       "type": "patchouli:spotlight",
       "anchor": "cinnabar",
       "item": "tfc:ore/cinnabar",
-      "title": "Cinnabar",
+      "title": "Cinóber",
       "link_recipes": false,
       "text": "Cinnabar is a $(thing)Mineral$() which can be ground in the $(l:mechanics/quern)Quern$() to obtain $(thing)Redstone Dust$(). It can be found in veins deep underground, in $(thing)Quartzite$(), $(thing)Gneiss$(), $(thing)Phyllite$(), and $(thing)Schist$()."
     },
@@ -898,7 +898,7 @@
       "type": "patchouli:spotlight",
       "anchor": "sylvite",
       "item": "tfc:ore/sylvite",
-      "title": "Sylvite",
+      "title": "Szilvin",
       "link_recipes": false,
       "text": "Sylvite is a $(thing)Mineral$() which can be ground in the $(l:mechanics/quern)Quern$(), and then used as a $(l:mechanics/fertilizers)Fertilizer$(). It can be found in very large flat deposits near the surface in $(thing)Shale$(), $(thing)Claystone$() and $(thing)Chert$()."
     },
@@ -1006,7 +1006,7 @@
       "type": "patchouli:spotlight",
       "anchor": "emerald",
       "item": "tfc:ore/emerald",
-      "title": "Emerald",
+      "title": "Smaragd",
       "link_recipes": false,
       "text": "Emerald is a decorative $(l:mechanics/gems)Gemstone$(). It looks quite pretty, maybe if you could find someone else in this incredibly lonely world you could trade it with them...$(br2)It appears in thin vertical ore formations which can be up to a hundred blocks tall. It can be found in $(l:the_world/geology#igneous_intrusive)Igneous Intrusive$() rocks."
     },
@@ -1087,7 +1087,7 @@
       "type": "patchouli:spotlight",
       "anchor": "amethyst",
       "item": "tfc:ore/amethyst",
-      "title": "Amethyst",
+      "title": "Ametiszt",
       "link_recipes": false,
       "text": "Amethyst is a decorative $(thing)Mineral$() which can be used to make $(l:mechanics/glassworking)Glass$(). It can be found in $(thing)Sedimentary$() and $(thing)Metamorphic$() rock beneath rivers above y=40."
     },
@@ -1114,7 +1114,7 @@
       "type": "patchouli:spotlight",
       "anchor": "opal",
       "item": "tfc:ore/opal",
-      "title": "Opal",
+      "title": "Opál",
       "link_recipes": false,
       "text": "Opal is a decorative $(thing)Mineral$(). It can be found in $(thing)Sedimentary) and $(thing)Igneous Extrusive$() rock beneath rivers above y=40."
     },
