@@ -603,7 +603,7 @@ const registerAE2Recipes = (event) => {
 	event.recipes.gtceu.me_assembler('tfg:ae2/dense_energy_cell')
 		.itemInputs('8x ae2:energy_cell', '8x gtceu:silver_quadruple_wire', '4x #gtceu:circuits/ev')
 		.itemOutputs('ae2:dense_energy_cell')
-		.duration(20*20)
+		.duration(20*60)
 		.EUt(GTValues.VA[GTValues.HV])
 		.dimension('ad_astra:moon')
 		.cleanroom(CleanroomType.CLEANROOM)
@@ -933,7 +933,7 @@ const registerAE2Recipes = (event) => {
 			'3x ae2:cell_component_1k')
 		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 288))
 		.itemOutputs('ae2:cell_component_4k')
-		.duration(20*30)
+		.duration(20*60)
 		.EUt(GTValues.VA[GTValues.HV])
 		.cleanroom(CleanroomType.CLEANROOM)
 		.circuit(2)
@@ -947,7 +947,7 @@ const registerAE2Recipes = (event) => {
 			'1x ae2:cell_component_1k')
 		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 288))
 		.itemOutputs('ae2:cell_component_4k')
-		.duration(20*10)
+		.duration(20*60)
 		.EUt(GTValues.VA[GTValues.MV])
 		.dimension('ad_astra:moon')
 		.circuit(2)
@@ -963,7 +963,7 @@ const registerAE2Recipes = (event) => {
 			'3x ae2:cell_component_4k')
 		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 576))
 		.itemOutputs('ae2:cell_component_16k')
-		.duration(20*30)
+		.duration(20*120)
 		.EUt(GTValues.VA[GTValues.EV])
 		.cleanroom(CleanroomType.CLEANROOM)
 		.circuit(3)
@@ -977,7 +977,7 @@ const registerAE2Recipes = (event) => {
 			'1x ae2:cell_component_4k')
 		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 576))
 		.itemOutputs('ae2:cell_component_16k')
-		.duration(20*10)
+		.duration(20*120)
 		.EUt(GTValues.VA[GTValues.HV])
 		.dimension('ad_astra:moon')
 		.circuit(3)
@@ -993,7 +993,7 @@ const registerAE2Recipes = (event) => {
 			'2x ae2:cell_component_16k')
 		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 1152))
 		.itemOutputs('ae2:cell_component_64k')
-		.duration(20*10)
+		.duration(20*240)
 		.EUt(GTValues.VA[GTValues.EV])
 		.dimension('ad_astra:moon')
 		.cleanroom(CleanroomType.CLEANROOM)
@@ -1031,7 +1031,7 @@ const registerAE2Recipes = (event) => {
 			'2x ae2:cell_component_4k')
 		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 576))
 		.itemOutputs('ae2:spatial_cell_component_2')
-		.duration(20*30)
+		.duration(20*60)
 		.EUt(GTValues.VA[GTValues.EV])
 		.dimension('ad_astra:moon')
 		.cleanroom(CleanroomType.CLEANROOM)
@@ -1048,7 +1048,7 @@ const registerAE2Recipes = (event) => {
 			'4x ae2:spatial_cell_component_2')
 		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 576*4))
 		.itemOutputs('ae2:spatial_cell_component_16')
-		.duration(20*60)
+		.duration(20*120)
 		.EUt(GTValues.VA[GTValues.LuV])
 		.dimension('ad_astra:moon')
 		.cleanroom(CleanroomType.CLEANROOM)
@@ -1065,7 +1065,7 @@ const registerAE2Recipes = (event) => {
 			'4x ae2:spatial_cell_component_16')
 		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 576*16))
 		.itemOutputs('ae2:spatial_cell_component_128')
-		.duration(20*60)
+		.duration(20*240)
 		.EUt(GTValues.VA[GTValues.ZPM])
 		.dimension('ad_astra:moon')
 		.cleanroom(CleanroomType.CLEANROOM)
@@ -1127,7 +1127,7 @@ const registerAE2Recipes = (event) => {
 			'2x gtceu:mv_electric_piston',
 			'#ae2:smart_cable')
 		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144))
-		.itemOutputs('2x ae2:storage_bus')
+		.itemOutputs('1x ae2:storage_bus')
 		.duration(20*10)
 		.EUt(GTValues.VA[GTValues.HV])
 		.dimension('ad_astra:moon')
@@ -1139,8 +1139,8 @@ const registerAE2Recipes = (event) => {
 			'2x gtceu:hv_electric_piston',
 			'#ae2:smart_cable')
 		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144))
-		.itemOutputs('4x ae2:storage_bus')
-		.duration(20*10)
+		.itemOutputs('8x ae2:storage_bus')
+		.duration(20*60)
 		.EUt(GTValues.VA[GTValues.HV])
 		.dimension('ad_astra:moon')
 		.cleanroom(CleanroomType.CLEANROOM)
@@ -1155,7 +1155,7 @@ const registerAE2Recipes = (event) => {
 			'#ae2:smart_cable')
 		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144))
 		.itemOutputs('ae2:import_bus')
-		.duration(20*5)
+		.duration(20*15)
 		.EUt(GTValues.VA[GTValues.HV])
 		.dimension('ad_astra:moon')
 		.addMaterialInfo(true)
@@ -1170,7 +1170,7 @@ const registerAE2Recipes = (event) => {
 			'#ae2:smart_cable')
 		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144))
 		.itemOutputs('ae2:export_bus')
-		.duration(20*5)
+		.duration(20*15)
 		.EUt(GTValues.VA[GTValues.HV])
 		.dimension('ad_astra:moon')
 		.addMaterialInfo(true)
@@ -1186,7 +1186,7 @@ const registerAE2Recipes = (event) => {
 			'6x #forge:plates/stainless_steel')
 		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144 * 5))
 		.itemOutputs('ae2:crafting_unit')
-		.duration(20*10)
+		.duration(20*30)
 		.EUt(GTValues.VA[GTValues.HV])
 		.dimension('ad_astra:moon')
 		.circuit(4)
@@ -1200,11 +1200,10 @@ const registerAE2Recipes = (event) => {
 			'6x #forge:plates/titanium')
 		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144 * 5))
 		.itemOutputs('2x ae2:crafting_unit')
-		.duration(20*10)
+		.duration(20*30)
 		.EUt(GTValues.VA[GTValues.HV])
 		.cleanroom(CleanroomType.CLEANROOM)
 		.dimension('ad_astra:moon')
-		.addMaterialInfo(true)
 		.circuit(2)
 
 	//#region Molecular Assembler
@@ -1235,7 +1234,7 @@ const registerAE2Recipes = (event) => {
 			'6x #forge:plates/stainless_steel')
 		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144))
 		.itemOutputs('2x ae2:molecular_assembler')
-		.duration(100)
+		.duration(20*30)
 		.EUt(GTValues.VA[GTValues.EV])
 		.dimension('ad_astra:moon')
 		.circuit(1)
@@ -1251,7 +1250,7 @@ const registerAE2Recipes = (event) => {
 			'6x #forge:plates/tungsten_steel')
 		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144 * 8))
 		.itemOutputs('8x ae2:molecular_assembler')
-		.duration(100)
+		.duration(20*60)
 		.EUt(GTValues.VA[GTValues.IV])
 		.dimension('ad_astra:moon')
 		.cleanroom(CleanroomType.CLEANROOM)
@@ -1310,11 +1309,11 @@ const registerAE2Recipes = (event) => {
 		.itemInputs(
 			'gtceu:mv_conveyor_module',
 			'1x gtceu:aluminium_crate',
-			'4x #forge:plates/aluminium',
-			'4x ae2:annihilation_core',
-			'4x ae2:formation_core')
+			'2x #forge:plates/aluminium',
+			'2x ae2:annihilation_core',
+			'2x ae2:formation_core')
 		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144))
-		.itemOutputs('4x ae2:interface')
+		.itemOutputs('1x ae2:interface')
 		.duration(20 * 10)
 		.EUt(GTValues.VA[GTValues.MV])
 		.dimension('ad_astra:moon')
@@ -1329,8 +1328,8 @@ const registerAE2Recipes = (event) => {
 			'4x ae2:annihilation_core',
 			'4x ae2:formation_core')
 		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144 * 8), Fluid.of('gtceu:argon', 144))
-		.itemOutputs('32x ae2:interface')
-		.duration(20 * 10)
+		.itemOutputs('16x ae2:interface')
+		.duration(20 * 120)
 		.EUt(GTValues.VA[GTValues.HV])
 		.cleanroom(CleanroomType.CLEANROOM)
 		.dimension('ad_astra:moon')
@@ -1360,10 +1359,10 @@ const registerAE2Recipes = (event) => {
 			'gtceu:mv_robot_arm',
 			'1x gtceu:aluminium_crate',
 			'4x #forge:plates/aluminium',
-			'4x ae2:annihilation_core',
-			'4x ae2:formation_core')
+			'2x ae2:annihilation_core',
+			'2x ae2:formation_core')
 		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144))
-		.itemOutputs('4x ae2:pattern_provider')
+		.itemOutputs('1x ae2:pattern_provider')
 		.duration(20 * 10)
 		.EUt(GTValues.VA[GTValues.MV])
 		.dimension('ad_astra:moon')
@@ -1378,8 +1377,8 @@ const registerAE2Recipes = (event) => {
 			'4x ae2:annihilation_core',
 			'4x ae2:formation_core')
 		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144 * 8), Fluid.of('gtceu:argon', 144))
-		.itemOutputs('32x ae2:pattern_provider')
-		.duration(20 * 10)
+		.itemOutputs('16x ae2:pattern_provider')
+		.duration(20 * 120)
 		.EUt(GTValues.VA[GTValues.HV])
 		.cleanroom(CleanroomType.CLEANROOM)
 		.dimension('ad_astra:moon')
@@ -1545,14 +1544,14 @@ const registerAE2Recipes = (event) => {
 
 	event.recipes.gtceu.me_assembler('ae2:logic_processor_cr')
 		.itemInputs(
-			'ae2:printed_silicon',
-			'ae2:printed_logic_processor',
+			'8x ae2:printed_silicon',
+			'8x ae2:printed_logic_processor',
 			'#gtceu:circuits/lv',
 			'gtceu:advanced_smd_resistor',
 			'1x minecraft:redstone')
 		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144))
-		.itemOutputs('6x ae2:logic_processor')
-		.duration(20 * 5)
+		.itemOutputs('16x ae2:logic_processor')
+		.duration(20 * 60)
 		.EUt(GTValues.VA[GTValues.HV])
 		.dimension('ad_astra:moon')
 		.cleanroom(CleanroomType.CLEANROOM)
@@ -1569,21 +1568,21 @@ const registerAE2Recipes = (event) => {
 			'1x minecraft:redstone')
 		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144))
 		.itemOutputs('2x ae2:calculation_processor')
-		.duration(20 * 5)
+		.duration(20 * 10)
 		.EUt(GTValues.VA[GTValues.HV])
 		.dimension('ad_astra:moon')
 		.circuit(1)
 
 	event.recipes.gtceu.me_assembler('ae2:calculation_processor_cr')
 		.itemInputs(
-			'ae2:printed_silicon',
-			'ae2:printed_calculation_processor',
+			'8x ae2:printed_silicon',
+			'8x ae2:printed_calculation_processor',
 			'#gtceu:circuits/lv',
 			'gtceu:advanced_smd_resistor',
 			'1x minecraft:redstone')
 		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144))
-		.itemOutputs('6x ae2:calculation_processor')
-		.duration(20 * 5)
+		.itemOutputs('16x ae2:calculation_processor')
+		.duration(20 * 60)
 		.EUt(GTValues.VA[GTValues.HV])
 		.dimension('ad_astra:moon')
 		.cleanroom(CleanroomType.CLEANROOM)
@@ -1600,21 +1599,21 @@ const registerAE2Recipes = (event) => {
 			'1x minecraft:redstone')
 		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144))
 		.itemOutputs('2x ae2:engineering_processor')
-		.duration(20 * 5)
+		.duration(20 * 10)
 		.EUt(GTValues.VA[GTValues.HV])
 		.dimension('ad_astra:moon')
 		.circuit(1)
 
 	event.recipes.gtceu.me_assembler('ae2:engineering_processor_cr')
 		.itemInputs(
-			'ae2:printed_silicon',
-			'ae2:printed_engineering_processor',
+			'8x ae2:printed_silicon',
+			'8x ae2:printed_engineering_processor',
 			'#gtceu:circuits/lv',
 			'gtceu:advanced_smd_resistor',
 			'1x minecraft:redstone')
 		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144))
-		.itemOutputs('6x ae2:engineering_processor')
-		.duration(20 * 5)
+		.itemOutputs('16x ae2:engineering_processor')
+		.duration(20 * 60)
 		.EUt(GTValues.VA[GTValues.HV])
 		.dimension('ad_astra:moon')
 		.cleanroom(CleanroomType.CLEANROOM)

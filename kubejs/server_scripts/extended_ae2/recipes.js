@@ -32,6 +32,7 @@ const registerExtendedAE2Recipes = (event) => {
 		.duration(20*80)
 		.EUt(GTValues.VA[GTValues.EV])
 		.dimension('ad_astra:moon')
+		.cleanroom(CleanroomType.CLEANROOM)
 		.circuit(5)
 
 	// ZPM CR
@@ -47,7 +48,7 @@ const registerExtendedAE2Recipes = (event) => {
 			'8x #ae2:interface')
 		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144 * 32))
 		.itemOutputs('8x expatternprovider:ex_interface')
-		.duration(20*320)
+		.duration(20*1600)
 		.EUt(GTValues.VA[GTValues.LuV])
 		.cleanroom(CleanroomType.CLEANROOM)
 		.circuit(6)
@@ -69,6 +70,7 @@ const registerExtendedAE2Recipes = (event) => {
 		.itemOutputs('1x expatternprovider:interface_upgrade')
 		.duration(20*80)
 		.EUt(GTValues.VA[GTValues.EV])
+		.cleanroom(CleanroomType.CLEANROOM)
 		.dimension('ad_astra:moon')
 		.circuit(6)
 
@@ -84,7 +86,7 @@ const registerExtendedAE2Recipes = (event) => {
 			'1x megacells:accumulation_processor')
 		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144 * 32))
 		.itemOutputs('8x expatternprovider:interface_upgrade')
-		.duration(20*320)
+		.duration(20*1600)
 		.EUt(GTValues.VA[GTValues.LuV])
 		.cleanroom(CleanroomType.CLEANROOM)
 		.dimension('ad_astra:moon')
@@ -108,6 +110,7 @@ const registerExtendedAE2Recipes = (event) => {
 		.itemOutputs("1x expatternprovider:oversize_interface")
 		.duration(20*160)
 		.EUt(GTValues.VA[GTValues.LuV])
+		.cleanroom(CleanroomType.CLEANROOM)
 		.dimension('ad_astra:moon')
 		.circuit(7)
 
@@ -123,7 +126,7 @@ const registerExtendedAE2Recipes = (event) => {
 			'#gtceu:circuits/zpm')
 		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144 * 18))
 		.itemOutputs("8x expatternprovider:oversize_interface")
-		.duration(20*640)
+		.duration(20*480)
 		.EUt(GTValues.VA[GTValues.ZPM])
 		.cleanroom(CleanroomType.CLEANROOM)
 		.dimension('ad_astra:moon')
@@ -150,6 +153,7 @@ const registerExtendedAE2Recipes = (event) => {
 		.EUt(GTValues.VA[GTValues.EV])
 		.circuit(5)
 		.dimension('ad_astra:moon')
+		.cleanroom(CleanroomType.CLEANROOM)
 
 	// ZPM
 
@@ -164,7 +168,7 @@ const registerExtendedAE2Recipes = (event) => {
 			'8x #ae2:pattern_provider')
 		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144 * 32))
 		.itemOutputs('8x expatternprovider:ex_pattern_provider')
-		.duration(20*320)
+		.duration(20*160)
 		.EUt(GTValues.VA[GTValues.LuV])
 		.cleanroom(CleanroomType.CLEANROOM)
 		.dimension('ad_astra:moon')
@@ -188,6 +192,7 @@ const registerExtendedAE2Recipes = (event) => {
 		.EUt(GTValues.VA[GTValues.EV])
 		.circuit(6)
 		.dimension('ad_astra:moon')
+		.cleanroom(CleanroomType.CLEANROOM)
 
 	// ZPM CR
 
@@ -201,7 +206,7 @@ const registerExtendedAE2Recipes = (event) => {
 			'1x megacells:accumulation_processor')
 		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144 * 32))
 		.itemOutputs('8x expatternprovider:pattern_provider_upgrade')
-		.duration(20*320)
+		.duration(20*160)
 		.EUt(GTValues.VA[GTValues.LuV])
 		.cleanroom(CleanroomType.CLEANROOM)
 		.dimension('ad_astra:moon')
@@ -223,6 +228,7 @@ const registerExtendedAE2Recipes = (event) => {
 		.duration(20*60)
 		.EUt(GTValues.VA[GTValues.EV])
 		.dimension('ad_astra:moon')
+		.cleanroom(CleanroomType.CLEANROOM)
 		.circuit(1)
 		.addMaterialInfo(true, true)
 
@@ -238,6 +244,7 @@ const registerExtendedAE2Recipes = (event) => {
 		.duration(20*60)
 		.EUt(GTValues.VA[GTValues.EV])
 		.dimension('ad_astra:moon')
+		.cleanroom(CleanroomType.CLEANROOM)
 		.circuit(2)
 		.addMaterialInfo(true, true)
 
@@ -251,6 +258,7 @@ const registerExtendedAE2Recipes = (event) => {
 		.duration(20*60)
 		.EUt(GTValues.VA[GTValues.EV])
 		.dimension('ad_astra:moon')
+		.cleanroom(CleanroomType.CLEANROOM)
 		.circuit(1)
 		.addMaterialInfo(true, true)
 
@@ -264,6 +272,7 @@ const registerExtendedAE2Recipes = (event) => {
 		.duration(20*60)
 		.EUt(GTValues.VA[GTValues.EV])
 		.dimension('ad_astra:moon')
+		.cleanroom(CleanroomType.CLEANROOM)
 		.circuit(2)
 		.addMaterialInfo(true, true)
 
@@ -277,6 +286,7 @@ const registerExtendedAE2Recipes = (event) => {
 		.duration(20*60)
 		.EUt(GTValues.VA[GTValues.EV])
 		.dimension('ad_astra:moon')
+		.cleanroom(CleanroomType.CLEANROOM)
 		.circuit(3)
 		.addMaterialInfo(true, true)
 
@@ -290,6 +300,7 @@ const registerExtendedAE2Recipes = (event) => {
 		.duration(20*60)
 		.EUt(GTValues.VA[GTValues.EV])
 		.dimension('ad_astra:moon')
+		.cleanroom(CleanroomType.CLEANROOM)
 		.circuit(3)
 		.addMaterialInfo(true, true)
 
@@ -303,6 +314,7 @@ const registerExtendedAE2Recipes = (event) => {
 		.duration(20*60)
 		.EUt(GTValues.VA[GTValues.EV])
 		.dimension('ad_astra:moon')
+		.cleanroom(CleanroomType.CLEANROOM)
 		.circuit(4)
 		.addMaterialInfo(true, true)
 
@@ -316,6 +328,7 @@ const registerExtendedAE2Recipes = (event) => {
 		.duration(20*60)
 		.EUt(GTValues.VA[GTValues.EV])
 		.dimension('ad_astra:moon')
+		.cleanroom(CleanroomType.CLEANROOM)
 		.circuit(4)
 		.addMaterialInfo(true, true)
 
@@ -329,6 +342,7 @@ const registerExtendedAE2Recipes = (event) => {
 		.duration(20*60)
 		.EUt(GTValues.VA[GTValues.EV])
 		.dimension('ad_astra:moon')
+		.cleanroom(CleanroomType.CLEANROOM)
 		.circuit(4)
 		.addMaterialInfo(true, true)
 
@@ -344,6 +358,7 @@ const registerExtendedAE2Recipes = (event) => {
 		.duration(20*60)
 		.EUt(GTValues.VA[GTValues.EV])
 		.dimension('ad_astra:moon')
+		.cleanroom(CleanroomType.CLEANROOM)
 		.circuit(8)
 		.addMaterialInfo(true, true)
 
@@ -368,6 +383,7 @@ const registerExtendedAE2Recipes = (event) => {
 		.duration(20*30)
 		.EUt(GTValues.VA[GTValues.HV])
 		.dimension('ad_astra:moon')
+		.cleanroom(CleanroomType.CLEANROOM)
 		.circuit(9)
 		.addMaterialInfo(true, true)
 
@@ -408,6 +424,7 @@ const registerExtendedAE2Recipes = (event) => {
 		.duration(20*120)
 		.EUt(GTValues.VA[GTValues.EV])
 		.dimension('ad_astra:moon')
+		.cleanroom(CleanroomType.CLEANROOM)
 		.circuit(9)
 		.addMaterialInfo(true, true)
 
@@ -484,6 +501,7 @@ const registerExtendedAE2Recipes = (event) => {
 		.duration(20*180)
 		.EUt(GTValues.VA[GTValues.IV])
 		.dimension('ad_astra:moon')
+		.cleanroom(CleanroomType.CLEANROOM)
 		.circuit(5)
 		.cleanroom(CleanroomType.CLEANROOM)
 
@@ -500,6 +518,7 @@ const registerExtendedAE2Recipes = (event) => {
 		.itemOutputs('8x expatternprovider:ex_molecular_assembler')
 		.duration(20*740)
 		.EUt(GTValues.VA[GTValues.ZPM])
+		.cleanroom(CleanroomType.CLEANROOM)
 		.dimension('ad_astra:moon')
 		.cleanroom(CleanroomType.CLEANROOM)
 		.circuit(6)
@@ -519,6 +538,7 @@ const registerExtendedAE2Recipes = (event) => {
 		.duration(20*120)
 		.EUt(GTValues.VA[GTValues.EV])
 		.dimension('ad_astra:moon')
+		.cleanroom(CleanroomType.CLEANROOM)
 		.circuit(8)
 		.addMaterialInfo(true, true)
 
@@ -534,6 +554,7 @@ const registerExtendedAE2Recipes = (event) => {
 		.duration(20*60)
 		.EUt(GTValues.VA[GTValues.EV])
 		.dimension('ad_astra:moon')
+		.cleanroom(CleanroomType.CLEANROOM)
 		.circuit(9)
 		.addMaterialInfo(true, true)
 
@@ -548,6 +569,7 @@ const registerExtendedAE2Recipes = (event) => {
 		.duration(20*60)
 		.EUt(GTValues.VA[GTValues.EV])
 		.dimension('ad_astra:moon')
+		.cleanroom(CleanroomType.CLEANROOM)
 		.circuit(8)
 		.addMaterialInfo(true, true)
 
@@ -557,6 +579,7 @@ const registerExtendedAE2Recipes = (event) => {
 		.duration(20*45)
 		.EUt(GTValues.VA[GTValues.EV])
 		.dimension('ad_astra:moon')
+		.cleanroom(CleanroomType.CLEANROOM)
 		.circuit(8)
 		.addMaterialInfo(true, true)
 
@@ -597,6 +620,7 @@ const registerExtendedAE2Recipes = (event) => {
 		.duration(20*100)
 		.EUt(GTValues.VA[GTValues.LuV])
 		.dimension('ad_astra:moon')
+		.cleanroom(CleanroomType.CLEANROOM)
 		.circuit(1)
 		.addMaterialInfo(true, true)
 
@@ -613,6 +637,7 @@ const registerExtendedAE2Recipes = (event) => {
 		.duration(20*100)
 		.EUt(GTValues.VA[GTValues.LuV])
 		.dimension('ad_astra:moon')
+		.cleanroom(CleanroomType.CLEANROOM)
 		.circuit(2)
 		.addMaterialInfo(true, true)
 
