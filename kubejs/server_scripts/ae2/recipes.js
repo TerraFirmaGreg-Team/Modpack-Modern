@@ -1124,7 +1124,7 @@ const registerAE2Recipes = (event) => {
 	event.recipes.gtceu.me_assembler('ae2:storage_bus_moon')
 		.itemInputs(
 			'#ae2:interface',
-			'2x gtceu:mv_electric_piston',
+			'1x gtceu:mv_electric_piston',
 			'#ae2:smart_cable')
 		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144))
 		.itemOutputs('1x ae2:storage_bus')
@@ -1136,7 +1136,7 @@ const registerAE2Recipes = (event) => {
 	event.recipes.gtceu.me_assembler('ae2:storage_bus_moon_cr')
 		.itemInputs(
 			'#ae2:interface',
-			'2x gtceu:hv_electric_piston',
+			'1x gtceu:ev_electric_piston',
 			'#ae2:smart_cable')
 		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144))
 		.itemOutputs('8x ae2:storage_bus')
@@ -1310,8 +1310,8 @@ const registerAE2Recipes = (event) => {
 			'gtceu:mv_conveyor_module',
 			'1x gtceu:aluminium_crate',
 			'2x #forge:plates/aluminium',
-			'2x ae2:annihilation_core',
-			'2x ae2:formation_core')
+			'1x ae2:annihilation_core',
+			'1x ae2:formation_core')
 		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144))
 		.itemOutputs('1x ae2:interface')
 		.duration(20 * 10)
@@ -1325,8 +1325,8 @@ const registerAE2Recipes = (event) => {
 			'gtceu:iv_conveyor_module',
 			'1x gtceu:tungsten_steel_crate',
 			'4x #forge:plates/tungsten_steel',
-			'4x ae2:annihilation_core',
-			'4x ae2:formation_core')
+			'2x ae2:annihilation_core',
+			'2x ae2:formation_core')
 		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144 * 8), Fluid.of('gtceu:argon', 144))
 		.itemOutputs('16x ae2:interface')
 		.duration(20 * 120)
@@ -1694,7 +1694,6 @@ const registerAE2Recipes = (event) => {
 		.notConsumable('ae2:silicon_press')
 		.itemOutputs('2x ae2:printed_silicon')
 		.duration(20)
-		.dimension('ad_astra:moon')
 		.circuit(2)
 		.EUt(480)
 		.dimension('ad_astra:moon')

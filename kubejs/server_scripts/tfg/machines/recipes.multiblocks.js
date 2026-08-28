@@ -367,5 +367,32 @@ function registerTFGMultiblockRecipes(event) {
 		F: Item.of('gtceu:bronze_normal_fluid_pipe'),
 		G: Item.of('gtceu:tin_single_cable')
 	}).addMaterialInfo().id('tfg:shaped/ore_processing_beneath')
+
+	// ME Assembler
+
+	event.recipes.gtceu.shaped('tfg:me_assembler', [
+		'ABA',
+		'DED',
+		'ABA'
+	], {
+		A: Item.of('ae2:charged_certus_quartz_crystal'),
+		B: Item.of('ae2:spatial_pylon'),
+		C: Item.of('gtceu:lv_macerator'),
+		D: '#gtceu:circuits/hv',
+		E: Item.of('tfg:casings/machine_casing_ptfe_black')
+	}).addMaterialInfo().id('tfg:shaped/me_assembler')
+
+	// Budding Charger
+
+	event.recipes.gtceu.shaped('tfg:budding_charge', [
+		'DAD',
+		'BCB',
+		'DAD'
+	], {
+		A: Item.of('ae2:cell_component_1k'),
+		B: Item.of('ae2:spatial_pylon'),
+		D: '#gtceu:circuits/hv',
+		C: Item.of('tfg:casings/machine_casing_ptfe_black')
+	}).addMaterialInfo().id('tfg:shaped/budding_charge')
 	
 }

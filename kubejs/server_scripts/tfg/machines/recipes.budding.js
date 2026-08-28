@@ -23,7 +23,7 @@ function registerTFGBuddingRecipes(event) {
 
     event.recipes.gtceu.budding_charger('tfg:tier_4')
         .itemInputs(Item.of('ae2:fluix_crystal', 5))
-        .addData("budding_charge", 5)
+        .addData("budding_charge", 1)
         .addData("budding_max_tier", 4)
         .EUt(GTValues.VHA[GTValues.IV])
         .duration(20*30)
