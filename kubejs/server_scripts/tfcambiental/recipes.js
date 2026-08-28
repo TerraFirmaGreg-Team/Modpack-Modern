@@ -61,7 +61,7 @@ function registerTFCAmbientalRecipes(event) {
 		'BBB'
 	], {
 		A: "minecraft:leather_chestplate",
-		B: ['#forge:string', 'minecraft:feather', 'tfg:wraptor_wool', 'wan_ancient_beasts:glider_feather']
+		B: ['#forge:string', 'minecraft:feather', 'tfg:wraptor_wool', 'wan_ancient_beasts:glider_feather', 'tfc:wool']
 	}).id('tfg:shaped/insulated_leather_tunic')
 
 	event.shaped("tfcambiental:insulated_leather_hat", [
@@ -70,7 +70,7 @@ function registerTFCAmbientalRecipes(event) {
 		'BBB'
 	], {
 		A: "minecraft:leather_helmet",
-		B: ['#forge:string', 'minecraft:feather', 'tfg:wraptor_wool', 'wan_ancient_beasts:glider_feather']
+		B: ['#forge:string', 'minecraft:feather', 'tfg:wraptor_wool', 'wan_ancient_beasts:glider_feather', 'tfc:wool']
 	}).id('tfg:shaped/insulated_leather_hat')
 
 	event.shaped("tfcambiental:insulated_leather_pants", [
@@ -79,7 +79,7 @@ function registerTFCAmbientalRecipes(event) {
 		'BBB'
 	], {
 		A: "minecraft:leather_leggings",
-		B: ['#forge:string', 'minecraft:feather', 'tfg:wraptor_wool', 'wan_ancient_beasts:glider_feather']
+		B: ['#forge:string', 'minecraft:feather', 'tfg:wraptor_wool', 'wan_ancient_beasts:glider_feather', 'tfc:wool']
 	}).id('tfg:shaped/insulated_leather_pants')
 
 	event.shaped("tfcambiental:insulated_leather_boots", [
@@ -88,7 +88,7 @@ function registerTFCAmbientalRecipes(event) {
 		'BBB'
 	], {
 		A: "minecraft:leather_boots",
-		B: ['#forge:string', 'minecraft:feather', 'tfg:wraptor_wool', 'wan_ancient_beasts:glider_feather']
+		B: ['#forge:string', 'minecraft:feather', 'tfg:wraptor_wool', 'wan_ancient_beasts:glider_feather', 'tfc:wool']
 	}).id('tfg:shaped/insulated_leather_boots')
 
 

@@ -165,7 +165,7 @@ function registerTFCTextileRecipes(event) {
 			A: '#forge:string',
 			B: `tfc_textile:${hide}_fur`,
 			C: ['tfcambiental:wool_hat', 'tfc_textile:cotton_hat'],
-			D: ['minecraft:feather', 'tfg:wraptor_wool', 'wan_ancient_beasts:glider_feather']
+			D: ['minecraft:feather', 'tfg:wraptor_wool', 'wan_ancient_beasts:glider_feather', 'tfc:wool']
 		}).id(`tfg:shaped/${hide}_hat`)
 
 		event.shaped(`tfc_textile:${hide}_shirt`, [
@@ -176,7 +176,7 @@ function registerTFCTextileRecipes(event) {
 			A: '#forge:string',
 			B: `tfc_textile:${hide}_fur`,
 			C: ['tfcambiental:wool_sweater', 'tfc_textile:cotton_shirt'],
-			D: ['minecraft:feather', 'tfg:wraptor_wool', 'wan_ancient_beasts:glider_feather']
+			D: ['minecraft:feather', 'tfg:wraptor_wool', 'wan_ancient_beasts:glider_feather', 'tfc:wool']
 		}).id(`tfg:shaped/${hide}_shirt`)
 
 		event.shaped(`tfc_textile:${hide}_pants`, [
@@ -187,7 +187,7 @@ function registerTFCTextileRecipes(event) {
 			A: '#forge:string',
 			B: `tfc_textile:${hide}_fur`,
 			C: ['tfcambiental:wool_pants', 'tfc_textile:cotton_pants'],
-			D: ['minecraft:feather', 'tfg:wraptor_wool', 'wan_ancient_beasts:glider_feather']
+			D: ['minecraft:feather', 'tfg:wraptor_wool', 'wan_ancient_beasts:glider_feather', 'tfc:wool']
 		}).id(`tfg:shaped/${hide}_pants`)
 
 		event.shaped(`tfc_textile:${hide}_boots`, [
@@ -198,7 +198,7 @@ function registerTFCTextileRecipes(event) {
 			A: '#forge:string',
 			B: `tfc_textile:${hide}_fur`,
 			C: ['tfcambiental:wool_boots', 'tfc_textile:cotton_socks'],
-			D: ['minecraft:feather', 'tfg:wraptor_wool', 'wan_ancient_beasts:glider_feather']
+			D: ['minecraft:feather', 'tfg:wraptor_wool', 'wan_ancient_beasts:glider_feather', 'tfc:wool']
 		}).id(`tfg:shaped/${hide}_boots`)
 	})
 

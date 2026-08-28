@@ -39,6 +39,7 @@ function registerTFGPrimitiveMaterials(event) {
 		.secondaryColor(0x3d8021)
 		.iconSet(GTMaterialIconSet.getByName('monoclinic_gem_horizontal'))
 		.addOreByproducts('sulfur', 'rhenium', 'molybdenite')
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
 	// Metals/minerals
 	event.create('aluminium_silicate')

@@ -186,35 +186,6 @@
             ]
         },
         {
-            "pakku_id": "tIIGT85PQd5pJGf0",
-            "type": "RESOURCE_PACK",
-            "side": "CLIENT",
-            "slug": {
-                "github": "Frontiers-PackForge/AE2-Midnight-and-Daybreak"
-            },
-            "name": {
-                "github": "AE2-Midnight-and-Daybreak"
-            },
-            "id": {
-                "github": "1083466923"
-            },
-            "files": [
-                {
-                    "type": "github",
-                    "file_name": "midnight-ae2-30e7823.zip",
-                    "release_type": "release",
-                    "url": "https://github.com/Frontiers-PackForge/AE2-Midnight-and-Daybreak/releases/download/midnight-ae2-latest/midnight-ae2-30e7823.zip",
-                    "id": "394148872",
-                    "parent_id": "1083466923",
-                    "hashes": {
-                        "sha256": "0e1436fe51f6f6a33fcae3106482e1042f622e1431aa4c4d056d17d540c7506b"
-                    },
-                    "size": 5653589,
-                    "date_published": "2026-04-11T15:08:44Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "f1zNCW1T31PKFnSo",
             "type": "MOD",
             "side": "BOTH",
@@ -4449,32 +4420,8 @@
             },
             "files": [
                 {
-                    "type": "curseforge",
-                    "file_name": "copycats-3.0.7+mc.1.20.1-forge.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge",
-                        "neoforge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7634/682/copycats-3.0.7+mc.1.20.1-forge.jar",
-                    "id": "7634682",
-                    "parent_id": "968398",
-                    "hashes": {
-                        "sha1": "5d0f497695fc2ee4ef89f1898458882b9d2d3aad",
-                        "md5": "47e13c8058d400e4a6316d00f451b29c"
-                    },
-                    "required_dependencies": [
-                        "328085"
-                    ],
-                    "size": 1996097,
-                    "date_published": "2026-02-16T17:37:39.993Z"
-                },
-                {
                     "type": "modrinth",
-                    "file_name": "copycats-3.0.7+mc.1.20.1-forge.jar",
+                    "file_name": "copycats-3.0.8+mc.1.20.1-forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -4483,18 +4430,42 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/UT2M39wf/versions/z7s54cjL/copycats-3.0.7+mc.1.20.1-forge.jar",
-                    "id": "z7s54cjL",
+                    "url": "https://cdn.modrinth.com/data/UT2M39wf/versions/qFxYcLc0/copycats-3.0.8+mc.1.20.1-forge.jar",
+                    "id": "qFxYcLc0",
                     "parent_id": "UT2M39wf",
                     "hashes": {
-                        "sha512": "163499b08adb6198630019b74c32465c569145ad36e956c5b4d1e6537c0eb52fd9217ebd90b7f05f5efaf084d71533481e46738295609f31e50bec6b7941c91b",
-                        "sha1": "5d0f497695fc2ee4ef89f1898458882b9d2d3aad"
+                        "sha512": "32b8777f9a5404db7d72a6ef9e2b7cee6cf71e6b3e11a217a57d20611ae450936df0c6e8cc3c0aaf698c86440c7804260328a676a0bf0db973b8496f7933df42",
+                        "sha1": "d30a7bc854d0b414155fc6e8dedbd7a82d452465"
                     },
                     "required_dependencies": [
                         "LNytGWDc"
                     ],
-                    "size": 1996097,
-                    "date_published": "2026-02-16T17:37:41.323792Z"
+                    "size": 2003578,
+                    "date_published": "2026-08-20T15:14:57.099896Z"
+                },
+                {
+                    "type": "curseforge",
+                    "file_name": "copycats-3.0.8+mc.1.20.1-forge.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8692/227/copycats-3.0.8+mc.1.20.1-forge.jar",
+                    "id": "8692227",
+                    "parent_id": "968398",
+                    "hashes": {
+                        "sha1": "d30a7bc854d0b414155fc6e8dedbd7a82d452465",
+                        "md5": "c8b104debd963337f98b76eb2964b387"
+                    },
+                    "required_dependencies": [
+                        "328085"
+                    ],
+                    "size": 2003578,
+                    "date_published": "2026-08-20T15:14:56.320Z"
                 }
             ]
         },
@@ -4722,32 +4693,8 @@
             },
             "files": [
                 {
-                    "type": "curseforge",
-                    "file_name": "Steam_Rails-1.7.2+forge-mc1.20.1.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge",
-                        "neoforge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7758/640/Steam_Rails-1.7.2+forge-mc1.20.1.jar",
-                    "id": "7758640",
-                    "parent_id": "688231",
-                    "hashes": {
-                        "sha1": "15d317afd2459368b19c23f2bdfefdeb87708bdd",
-                        "md5": "ec91d63c97ff08beb324f34399f1bf1a"
-                    },
-                    "required_dependencies": [
-                        "328085"
-                    ],
-                    "size": 16819720,
-                    "date_published": "2026-03-14T22:41:35.783Z"
-                },
-                {
                     "type": "modrinth",
-                    "file_name": "Steam_Rails-1.7.2+forge-mc1.20.1.jar",
+                    "file_name": "Steam_Rails-1.7.3+forge-mc1.20.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -4756,18 +4703,42 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/ZzjhlDgM/versions/I6GhUCyk/Steam_Rails-1.7.2+forge-mc1.20.1.jar",
-                    "id": "I6GhUCyk",
+                    "url": "https://cdn.modrinth.com/data/ZzjhlDgM/versions/7Uk6lWkU/Steam_Rails-1.7.3+forge-mc1.20.1.jar",
+                    "id": "7Uk6lWkU",
                     "parent_id": "ZzjhlDgM",
                     "hashes": {
-                        "sha512": "f97597d15e82286dd6425795c49b53b85f2cad7e97d8103cb21b4fa6375c4db6df34b2a732097bd451963790d6bad53bdc11b427a7d5d20bd9f03ed708443973",
-                        "sha1": "15d317afd2459368b19c23f2bdfefdeb87708bdd"
+                        "sha512": "c46bd5e48e64914433157e8cb92f5679d3407fc6e3e3b40a1a41b043efa6f32a2eb9c486313358e92f9e4cf169710ab161bbfa86a2763afcadff3b6e92021175",
+                        "sha1": "5f904126d942cdbd272a5254ec6145851e5e1e7a"
                     },
                     "required_dependencies": [
                         "LNytGWDc"
                     ],
-                    "size": 16819720,
-                    "date_published": "2026-03-14T22:41:36.839407Z"
+                    "size": 17042037,
+                    "date_published": "2026-08-27T09:52:44.279434Z"
+                },
+                {
+                    "type": "curseforge",
+                    "file_name": "Steam_Rails-1.7.3+forge-mc1.20.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8745/475/Steam_Rails-1.7.3+forge-mc1.20.1.jar",
+                    "id": "8745475",
+                    "parent_id": "688231",
+                    "hashes": {
+                        "sha1": "5f904126d942cdbd272a5254ec6145851e5e1e7a",
+                        "md5": "d7ea85c0106f481b8d2e30189e3565a8"
+                    },
+                    "required_dependencies": [
+                        "328085"
+                    ],
+                    "size": 17042037,
+                    "date_published": "2026-08-27T09:52:42.600Z"
                 }
             ]
         },
@@ -8445,7 +8416,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "greate-0.0.78.jar",
+                    "file_name": "greate-0.0.79.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -8454,23 +8425,23 @@
                         "neoforge"
                     ],
                     "release_type": "alpha",
-                    "url": "https://cdn.modrinth.com/data/8wDcQuht/versions/2klr8QsL/greate-0.0.78.jar",
-                    "id": "2klr8QsL",
+                    "url": "https://cdn.modrinth.com/data/8wDcQuht/versions/HQOwOHl7/greate-0.0.79.jar",
+                    "id": "HQOwOHl7",
                     "parent_id": "8wDcQuht",
                     "hashes": {
-                        "sha512": "acadde41ab8f4bec4d44477632f712e0947605a9ea1a82d59a3d3a71b0e97b07bfb6d94f04fdd3342a8c0606c9c81695660bfef80addbde111c79b5792ce4543",
-                        "sha1": "f2828504c054545bb5ad2e489cb7a95998e3b684"
+                        "sha512": "320c7f3ddb43b30d5b2f35f37e5b0e90619c8c0f0d901be137fbdb01387286877682915a9e4e1d12f58310cd7f95920d5f837ba8078cbd93807e2127948877ca",
+                        "sha1": "0a49283f16e25e2fb82b4d9b1c2c83221912c8de"
                     },
                     "required_dependencies": [
-                        "LNytGWDc",
-                        "7tG215v7"
+                        "7tG215v7",
+                        "LNytGWDc"
                     ],
-                    "size": 1323428,
-                    "date_published": "2026-05-31T01:52:43.685775Z"
+                    "size": 1326512,
+                    "date_published": "2026-08-27T20:47:09.029840Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "greate-0.0.78.jar",
+                    "file_name": "greate-0.0.79.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -8479,19 +8450,19 @@
                         "neoforge"
                     ],
                     "release_type": "alpha",
-                    "url": "https://edge.forgecdn.net/files/8172/424/greate-0.0.78.jar",
-                    "id": "8172424",
+                    "url": "https://edge.forgecdn.net/files/8749/587/greate-0.0.79.jar",
+                    "id": "8749587",
                     "parent_id": "901996",
                     "hashes": {
-                        "sha1": "f2828504c054545bb5ad2e489cb7a95998e3b684",
-                        "md5": "f83da9e2242400e874c0ce8224292c81"
+                        "sha1": "0a49283f16e25e2fb82b4d9b1c2c83221912c8de",
+                        "md5": "2819cdf86e51090e1da4a950180f3178"
                     },
                     "required_dependencies": [
-                        "328085",
-                        "890405"
+                        "890405",
+                        "328085"
                     ],
-                    "size": 1323428,
-                    "date_published": "2026-05-31T01:52:41.423Z"
+                    "size": 1326512,
+                    "date_published": "2026-08-27T20:47:06.303Z"
                 }
             ]
         },

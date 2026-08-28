@@ -21,7 +21,7 @@
 	"sodium.options.brightness.tooltip": "Визначає яскравість (гаму) гри.",
 	"sodium.options.buttons.apply": "Застосувати",
 	"sodium.options.buttons.donate": "Підтримай Sodium!",
-	"sodium.options.buttons.undo": "Скасувати дію",
+	"sodium.options.buttons.undo": "Скасувати",
 	"sodium.options.chunk_update_threads.name": "Потоки оновлення чанків",
 	"sodium.options.chunk_update_threads.tooltip": "Вказує кількість потоків, які використовуватимуться для побудови чанків. Використання більшої кількості потоків може прискорити завантаження чанків та швидкість їхнього оновлення, але може негативно вплинути на плавність кадрів.",
 	"sodium.options.clouds_quality.tooltip": "Визначає наявність відображуваних хмар у небі.",
