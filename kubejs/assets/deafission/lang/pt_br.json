@@ -9,11 +9,11 @@
 	"block.deafission.redstone_port": "Conexão de Redstone",
 	"config.jade.plugin_deafission.battery": "Exibir informações de Bateria Térmica",
 	"config.jade.plugin_deafission.reactor": "Exibir informações de Reator de Fissão",
-	"deafission.fission_reactor.gui.fuel_throttle": "Combustível: %s de desgaste (%s%% de reação)",
 	"deafission.fission_reactor_coolant": "Reator de Fissão",
 	"deafission.fission_reactor_coolant_smr": "Reator de Fissão Pequeno",
 	"deafission.fission_reactor_fuel": "Produto de Fissão",
 	"deafission.fission_reactor_processing": "Processamento Térmico de Fissão",
+	"deafission.fission_reactor.gui.fuel_throttle": "Combustível: %s de desgaste (%s%% de reação)",
 	"emi.deafission.throttle_component_key": "Potência:",
 	"tooltip.deafission.fuelcell.rodcount": "Hastes: %s"
 }

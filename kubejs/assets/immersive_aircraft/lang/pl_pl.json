@@ -102,11 +102,10 @@
 	"option.immersive_aircraft.damagePerHealthPoint": "Wyższe wartości sprawiają, że samolot jest bardziej wytrzymały.",
 	"option.immersive_aircraft.dropInventory": "Upuść ekwipunek, zamiast zapisywać go w elemencie samolotu.",
 	"option.immersive_aircraft.dropUpgrades": "Usuń ulepszenia i personalizację, zamiast zapisywać je w samolocie.",
-	"option.immersive_aircraft.enableAnimatedSails": "Żagle z falami.",
+	"option.immersive_aircraft.enableAnimatedSails": "Falujące żagle.",
 	"option.immersive_aircraft.enableCrashBlockDestruction": "Włącz niszczycielskie wybuchy.",
 	"option.immersive_aircraft.enableCrashExplosion": "Włącz wybuchy.",
 	"option.immersive_aircraft.enableCrashFire": "Włącz ogniste wybuchy.",
-	"option.immersive_aircraft.enableTrails": "Fantazyjne szlaki parowe.",
 	"option.immersive_aircraft.fuelConsumption": "Szybkość spalania paliwa.",
 	"option.immersive_aircraft.general": "Opcje ogólne",
 	"option.immersive_aircraft.healthBarRow": "Przesuń pasek zdrowia pojazdów.",
@@ -121,7 +120,7 @@
 	"option.immersive_aircraft.useCustomKeybindSystem": "Użycie wielu powiązań między kluczami może spowodować uszkodzenie niektórych modów.",
 	"option.immersive_aircraft.useThirdPersonByDefault": "Domyślnie kamera z trzeciej osoby w samolocie.",
 	"option.immersive_aircraft.weaponsAreDestructive": "Pozwól niektórym broniom niszczyć bloki.",
-	"option.immersive_aircraft.windClearWeather": "Efekt wiatru bazowego.",
+	"option.immersive_aircraft.windClearWeather": "Bazowy efekt wiatru.",
 	"option.immersive_aircraft.windRainWeather": "Wiatr podczas opadów.",
 	"option.immersive_aircraft.windThunderWeather": "Dodatkowy wiatr przy grzmotach."
 }

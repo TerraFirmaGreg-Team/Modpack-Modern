@@ -18,6 +18,7 @@
 	"entity.exposure.photograph_frame": "Fotoğraf Kareleri",
 	"exposure.configuration.camera": "Kamera",
 	"exposure.configuration.lightroom": "Işık Odası",
+	"exposure.configuration.ui": "UI",
 	"exposure.jei.info.photograph_frame": "Üç boyutu vardır: 1x1, 2x2 ve 3x3. Bir Tablo gibi yerleştirilir, aynı zamanda zemin ve tavanlara da yerleştirilebilir. Parlayan Mürekkep Kesesi parlamasını sağlar. Balta çerçeveyi çıkarmak için kullanılabilir, Çubuk onu eski haline getirir. İnce Cam çerçeveyi görünmez yapar, Ahşap Tahtalar çerçeveyi eski haline getirir.",
 	"gui.exposure.album.add_photograph": "Fotoğraf Ekle",
 	"gui.exposure.album.by_author": "%1$s tarafından",

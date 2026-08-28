@@ -18,7 +18,7 @@
     {
       "type": "patchouli:text",
       "text": "These are the $(thing)Greenhouse Types$() available, with the block types they can age into:$(br)$(br)$(li)Treated Wood: Weathered $()$(li)Copper: Exposed, Weathered, Oxidized$()$(li)Iron: Rusted$() $(li)Stainless Steel (does not age)$()",
-      "title": "Greenhouse Types"
+      "title": "Typy szklarni"
     },
     {
       "type": "patchouli:text",

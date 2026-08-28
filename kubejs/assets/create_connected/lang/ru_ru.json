@@ -155,11 +155,11 @@
 	"create_connected.battery.charge": "Заряд:",
 	"create_connected.battery.rotation_direction": "Направление вращения",
 	"create_connected.battery.status": "Статус накопителя: %1$s",
-	"create_connected.battery.status.charging": "заряжается",
-	"create_connected.battery.status.discharging": "разряжается",
-	"create_connected.battery.status.empty": "разряжен",
-	"create_connected.battery.status.full": "заряжен",
-	"create_connected.battery.status.power_saving": "разряжается (холостой ход)",
+	"create_connected.battery.status.charging": "Заряжается",
+	"create_connected.battery.status.discharging": "Разряжается",
+	"create_connected.battery.status.empty": "Разряжен",
+	"create_connected.battery.status.full": "Заряжен",
+	"create_connected.battery.status.power_saving": "Разряжается (энергосбережение)",
 	"create_connected.centrifugal_clutch.max_speed": "Максимальная",
 	"create_connected.centrifugal_clutch.min_speed": "Минимальная",
 	"create_connected.centrifugal_clutch.speed_threshold": "Порог скорости в оборотах в минуту",
@@ -354,5 +354,6 @@
 	"item.create_connected.music_disc_interlude": "Пластинка",
 	"item.create_connected.music_disc_interlude.desc": "Kevin MacLeod — Local Forecast - Elevator",
 	"item.create_connected.redstone_link_wildcard": "Заглушка частоты редстоунового передатчика сигнала",
-	"item.create_connected.redstone_link_wildcard.tooltip.summary": "Подстановочный элемент, заменяющий любой предмет в слоте передатчика."
+	"item.create_connected.redstone_link_wildcard.tooltip.summary": "Подстановочный элемент, заменяющий любой предмет в слоте передатчика.",
+	"itemGroup.create_connected.main": "Create: Connected"
 }
