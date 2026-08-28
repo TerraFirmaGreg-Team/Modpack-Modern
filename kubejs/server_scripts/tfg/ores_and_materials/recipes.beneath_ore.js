@@ -35,6 +35,13 @@ function registerTFGBeneathOreProcRecipes(event) {
 		.duration(14 * 20)
         .EUt(GTValues.VA[GTValues.MV])
 
+	// Not part of the line but it involves Mo so it can live here
+	event.recipes.gtceu.centrifuge('tfg:decomposition_centrifuging_tarkianite')
+		.itemInputs('18x gtceu:tarkianite_dust')
+		.itemOutputs('gtceu:copper_dust', 'gtceu:iron_dust', '4x gtceu:rhenium_dust', '4x gtceu:molybdenite_dust')
+		.duration(20*65)
+		.EUt(GTValues.VA[GTValues.MV])
+
 	// Powellite
 
 	event.recipes.gtceu.chemical_reactor('tfg:molybdenum_trioxide_dust_from_powellite_dust')

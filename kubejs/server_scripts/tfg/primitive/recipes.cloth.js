@@ -37,7 +37,7 @@ function registerTFGClothRecipes(event) {
 		'tfg:block/phantom_silk_block'
 	)
 
-	event.recipes.vintageimprovements.coiling('16x tfg:phantom_thread', 'minecraft:phantom_membrane')
+	event.recipes.vintageimprovements.coiling('8x tfg:phantom_thread', 'minecraft:phantom_membrane')
 		.processingTime(100 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
 		.id(`tfg:vi/coiling/phantom_thread`)
 		.springColor('E1C4C4')
@@ -473,7 +473,10 @@ function registerTFGClothRecipes(event) {
 		.EUt(GTValues.VA[GTValues.ULV]);
 	//#endregion
 
-	global.MINECRAFT_DYE_NAMES.forEach(dye => {
-		event.replaceInput({ id: `tfc:barrel/dye/${dye}_wool` }, 'minecraft:white_wool', '#forge:wools/white')
-	})
+	event.shapeless('minecraft:white_wool', 'tfg:silk_block')
+	event.shapeless('minecraft:brown_wool', 'tfg:burlap_block')
+	event.shapeless('minecraft:white_wool', 'tfg:phantom_silk_block')
+	event.shapeless('minecraft:white_wool', 'tfg:cotton_block')
+	event.shapeless('minecraft:black_wool', 'tfg:polycaprolactam_block')
+	event.shapeless('minecraft:white_wool', 'tfg:linen_block')
 }

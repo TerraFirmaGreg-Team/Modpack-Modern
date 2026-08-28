@@ -66,6 +66,7 @@ function registerTFGPrimitiveItemTags(event) {
     event.add('tfg:lightweight_cloth', 'tfg:phantom_silk')
     event.add('tfg:lightweight_cloth', 'tfg:polycaprolactam_fabric')
 	event.add('forge:cloth', 'tfg:phantom_silk')
+	event.add('forge:cloth', 'tfc_textile:cotton_cloth')
 	event.add('forge:cloth', 'tfg:polycaprolactam_fabric')
 	event.add('tfc:high_quality_cloth', 'tfg:phantom_silk')
 	event.add('tfc:high_quality_cloth', 'tfg:polycaprolactam_fabric')
