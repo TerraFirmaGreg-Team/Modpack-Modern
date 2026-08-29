@@ -206,7 +206,13 @@
             "anchor": "relations",
             "entries": [
                 "tfc:the_world/geology",
-                "tfc:the_world/climate"
+                "tfc:the_world/climate",
+                "tfc:craftsmanship/metallurgy",
+                "tfc:craftsmanship/blast_furnace",
+                "tfc:craftsmanship/pit_kiln",
+                "tfc:craftsmanship/charcoal_forge",
+                "tfc:craftsmanship/charcoal_pit",
+                "tfc:craftsmanship/glassworking"
             ]
         }
     ],
