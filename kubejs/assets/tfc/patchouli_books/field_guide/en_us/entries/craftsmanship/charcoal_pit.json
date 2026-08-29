@@ -256,7 +256,11 @@
             "entries": [
                 "tfc:craftsmanship/pit_kiln",
                 "tfc:craftsmanship/metallurgy",
-                "tfc:craftsmanship/charcoal_forge"
+                "tfc:craftsmanship/charcoal_forge",
+                "tfc:craftsmanship/crucible",
+                "tfc:craftsmanship/blast_furnace",
+                "tfc:craftsmanship/bloomery",
+                "tfc:craftsmanship/anvils"
             ]
         }
     ],

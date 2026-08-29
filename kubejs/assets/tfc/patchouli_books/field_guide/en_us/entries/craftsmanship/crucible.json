@@ -79,12 +79,49 @@
             "text": "$(4)◼$() - Alloyed result.$(br)$(3)◼$() - List of contributing metal fractions.",
             "border": false,
             "title": "Molten Alloy"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tfcchannelcasting:unfired_channel,tfcchannelcasting:channel,tfcchannelcasting:unfired_mold_table,tfcchannelcasting:mold_table",
+            "title": "Channel Casting",
+            "anchor": "channel_casting",
+            "text": "You can cast from a $(thing)Crucible$() to more than one mold at a time using $(thing)Channels$() and $(thing)Mold Tables$(). Simply connect the $(thing)Mold Tables$() to the $(thing)Crucible$() using $(thing)Channels$() and $(item)$(k:key.use)$() on the $(thing)Channel$() next to the $(thing)Crucible$(). $(item)$(k:key.sneak)-$(k:key.use)$() the $(thing)Mold Table$() with a $(l:craftsmanship/pottery#mold)Mold$() to place it or remove it. Channels and molds are knapped from $(l:craftsmanship/pottery#fire_clay)Fire Clay$() and fired."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock_id": "tfcchannelcasting:example",
+            "name": "A casting set up",
+            "text": "Channels will evenly distribute molten metal to all connected tables. Tables will not have a chance to break the mold inside.",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)Using a $(l:craftsmanship/charcoal_forge#bellows)Bellows$() on a $(thing)Mold Table$() will cool the metal faster.$()$(li)Activating a $(thing)Channel$() with a redstone pulse will start pouring the metal.$()$(li)$(thing)Mold Tables$() output a comparator signal.$(li)Metal can be directly pumped in from things like fluid pipes or a draining $(l:craftsmanship/blast_furnace)Blast Furnace$().$(li)Hoppers can extract cooled metal items from molds while leaving the mold behind.",
+            "title": "Automation"
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Further Reading",
+            "anchor": "relations",
+            "entries": [
+                "tfc:craftsmanship/pit_kiln",
+                "tfc:craftsmanship/pottery",
+                "tfc:craftsmanship/metallurgy",
+                "tfc:craftsmanship/charcoal_forge",
+                "tfc:craftsmanship/blast_furnace",
+                "tfc:craftsmanship/bloomery",
+                "tfc:craftsmanship/anvils"
+            ]
         }
     ],
     "read_by_default": true,
     "sortnum": 7,
     "extra_recipe_mappings": {
         "tfc:ceramic/unfired_crucible": 1,
-        "tfc:crucible": 2
+        "tfc:crucible": 1,
+        "tfcchannelcasting:unfired_channel": 11,
+        "tfcchannelcasting:channel": 11,
+        "tfcchannelcasting:unfired_mold_table": 11,
+        "tfcchannelcasting:mold_table": 11
     }
 }

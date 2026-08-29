@@ -1,0 +1,396 @@
+{
+    "name": "Blast Furnace",
+    "category": "tfc:craftsmanship",
+    "icon": "tfc:blast_furnace",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "A $(thing)Blast Furnace$() is an advanced device which is used in the creation of $(thing)Steel$(). By mixing $(l:craftsmanship/metallurgy)Iron Ores$(), $(l:craftsmanship/charcoal_pit#coke_oven)Coke$() or $(l:beneath/beneath_vein_index)Anthracite$(), and $(item)Flux$() in a controlled, hot environment, you can create a stronger metal than cast or wrought iron.$(br2)To obtain a blast furnace, you will first need a $(l:craftsmanship/crucible)Crucible$() and a lot of $(l:craftsmanship/bloomery)Wrought Iron Plates$()."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Crafting a blast furnace itself requires a $(thing)Crucible$(), along with some of the $(thing)Double Wrought Iron Plates$() you will need.$(br)You will then need to construct the blast furnace, along with its $(thing)Chimney$(). The chimney must be composed out of $(l:craftsmanship/pottery#fire_clay)Fire Bricks$(), as they are strong enough to withstand the intense heat."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "The fire brick blocks, must be surrounded by either $(item)$(italic)cast iron or wrought iron plates$(). The plates can be applied to each exposed face of the bricks by $(item)$(k:key.sneak)-$(k:key.use)$() with the plate in hand$(br2)$(item)Blast Furnace Insulation$() may be applied instead of physical plates for a more compact structure."
+        },
+        {
+            "type": "tfc:multimultiblock",
+            "text": "Blast furnace structure from sizes 1-5 using $(item)Insulated Fire Bricks$()",
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ],
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ],
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ],
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ],
+                        [
+                            " F ",
+                            "F0F",
+                            " F "
+                        ],
+                        [
+                            "   ",
+                            " B ",
+                            "   "
+                        ]
+                    ],
+                    "mapping": {
+                        "B": "tfc:blast_furnace[lit=true]",
+                        "F": "tfcbetterbf:insulated_fire_bricks"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ],
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ],
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ],
+                        [
+                            " F ",
+                            "F F",
+                            " F "
+                        ],
+                        [
+                            " F ",
+                            "F0F",
+                            " F "
+                        ],
+                        [
+                            "   ",
+                            " B ",
+                            "   "
+                        ]
+                    ],
+                    "mapping": {
+                        "B": "tfc:blast_furnace[lit=true]",
+                        "F": "tfcbetterbf:insulated_fire_bricks"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ],
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ],
+                        [
+                            " F ",
+                            "F F",
+                            " F "
+                        ],
+                        [
+                            " F ",
+                            "F F",
+                            " F "
+                        ],
+                        [
+                            " F ",
+                            "F0F",
+                            " F "
+                        ],
+                        [
+                            "   ",
+                            " B ",
+                            "   "
+                        ]
+                    ],
+                    "mapping": {
+                        "B": "tfc:blast_furnace[lit=true]",
+                        "F": "tfcbetterbf:insulated_fire_bricks"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ],
+                        [
+                            " F ",
+                            "F F",
+                            " F "
+                        ],
+                        [
+                            " F ",
+                            "F F",
+                            " F "
+                        ],
+                        [
+                            " F ",
+                            "F F",
+                            " F "
+                        ],
+                        [
+                            " F ",
+                            "F0F",
+                            " F "
+                        ],
+                        [
+                            "   ",
+                            " B ",
+                            "   "
+                        ]
+                    ],
+                    "mapping": {
+                        "B": "tfc:blast_furnace[lit=true]",
+                        "F": "tfcbetterbf:insulated_fire_bricks"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            " F ",
+                            "F F",
+                            " F "
+                        ],
+                        [
+                            " F ",
+                            "F F",
+                            " F "
+                        ],
+                        [
+                            " F ",
+                            "F F",
+                            " F "
+                        ],
+                        [
+                            " F ",
+                            "F F",
+                            " F "
+                        ],
+                        [
+                            " F ",
+                            "F0F",
+                            " F "
+                        ],
+                        [
+                            "   ",
+                            " B ",
+                            "   "
+                        ]
+                    ],
+                    "mapping": {
+                        "B": "tfc:blast_furnace[lit=true]",
+                        "F": "tfcbetterbf:insulated_fire_bricks"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "patchouli:text",
+            "text": "The blast furnace's chimney can be up to $(italic)five layers$(). Each layer requiring $(thing)4 $(item)Fire Bricks and $(thing)12 $(item)Wrought/Cast Iron Plates$() to complete. Having more layers increases the total capacity of the blast furnace by 4 steel per-layer.$(br)In order to use the blast furnace, you must drop items in the top of the chimney. For steel production, you must add an equal number of items of $(l:craftsmanship/metallurgy)Iron Ores$() and $(item)Flux$()."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "For every 144mb of iron added, 1 flux must pair with it. Any iron ores or items that are able to melt into $(thing)Cast Iron$() will do. You will also need to add $(l:craftsmanship/charcoal_pit#coke_oven)Coke$() or $(l:beneath/beneath_vein_index)Anthracite$(), which will be consumed as the blast furnace works.$(br)As a basic guide you will need 576mb of iron, and 4 flux per layer. And about 4-8 coke. Fuel usage does not increase with layers."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(item)$(k:key.use)$() the blast furnace will open the blast furnace interface, seen in the next image. In this interface, you will see meters for both ore and fuel contents of the blast furnace. The top right slot must have a $(thing)Tuyere$(), which is a metal pipe used to funnel air into the blast furnace, required to reach the hottest temperatures to smelt steel. A tuyere can be smithed on an $(l:craftsmanship/anvils)Anvil$()."
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/gui/blast_furnace.png"
+            ],
+            "text": "The Blast Furnace Interface",
+            "border": false
+        },
+        {
+            "type": "patchouli:text",
+            "text": "You will also need a $(l:craftsmanship/charcoal_forge#bellows)Bellows$() in order for the Blast Furnace to reach a temperature which will melt iron (unless using anthracite as fuel). This can be placed on any of the four sides of the blast furnace.$(br)Using the bellows will degrade the durability of your Tuyere, so it is recommended to only activate it every minute or so."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "enable_visualize": true,
+            "text": "A full size blast furnace with bellows and a mold table.",
+            "multiblock": {
+                "pattern": [
+                    [
+                        " F ",
+                        "F F",
+                        " F "
+                    ],
+                    [
+                        " F ",
+                        "F F",
+                        " F "
+                    ],
+                    [
+                        " F ",
+                        "F F",
+                        " F "
+                    ],
+                    [
+                        " F ",
+                        "F F",
+                        " F "
+                    ],
+                    [
+                        " F ",
+                        "F0F",
+                        " F "
+                    ],
+                    [
+                        "   ",
+                        " BW",
+                        "   "
+                    ],
+                    [
+                        "   ",
+                        " M ",
+                        "   "
+                    ]
+                ],
+                "mapping": {
+                    "B": "tfc:blast_furnace",
+                    "F": "tfcbetterbf:insulated_fire_bricks",
+                    "W": "tfc:bellows[facing=north]",
+                    "M": "tfcchannelcasting:mold_table"
+                }
+            }
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Finally, to get started, light the blast furnace with a $(l:craftsmanship/firepit#firestarter)Fire Starter$() or a $(item)Flint and Steel$(). It will begin to heat the ores inside. Make sure that the blast furnace continues to have fuel, and use the bellows to add air to the blast furnace until its internal temperature has reached the melting point for steel. After the ores inside heat up, they will melt and convert into liquid $(item)Pig Iron$()."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "This liquid metal will drip into any metal fluid container placed immediately below the blast furnace, such as a $(item)Drum$(), $(l:craftsmanship/crucible)Crucible$() or $(l:craftsmanship/crucible#channel_casting)Mold Table$(). Once cooled, the pig iron ingots must be worked on an anvil or $(l:craftsmanship/anvils#helve_hammer)Helve Hammer$() into $(item)High Carbon Steel$() and then again into $(item)Steel$()."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "tips",
+            "title": "Blast Furnace Tips",
+            "text": "Before you use all your fire clay on 20 fire bricks, note that once you get into the steam age, you can craft it for significantly cheaper. A full-size blast furnace is not required to get started. In fact, a 4-layer tall blast furnace uses better ratios of materials. As it uses 16 flux and 16 iron per run."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "Preheating Metal",
+            "anchor": "preheating",
+            "item": "tfc:firepit",
+            "text": "To convert the iron to steel, the blast furnace must heat the iron inside to $(d)$(bold)Brilliant White$(). On the first operation, the metal warms up along with the blast furnace. However, subsequent operations will take a similar amount of time despite the furnace being at temp already, as it needs to heat the metal from cold."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "If the metal is hot when added into the blast furnace, it will take less time to reach brilliant white. Consider heating your metal in a $(l:tfc:mechanics/charcoal_forge)Charcoal Forge$() before putting it into an already-hot furnace to save time, especially with smaller blast furnaces that process less at a time."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "Automation",
+            "item": "greate:steel_mechanical_pump",
+            "text": "You'll need lots of $(item)Steel$() for the $(thing)Steam$() and $(thing)LV$() ages. Lots of steel. The $(thing)Electric Blast Furnace$() is far off, so maybe think about optimizing your steel production.$(br2)You can automate the $(l:craftsmanship/charcoal_forge#bellows)Bellows$() by supplying mechanical power to their back. Just be careful, as using the bellows consumes more fuel and breaks your $(thing)tuyere$() faster."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "You can automatically replace broken tuyeres with a hopper or item pipe facing into the blast furnace.$(br2)You can pump liquid incredibly quickly out of the blast furnace using a Create $(item)Mechanical Pump$(). Pump into a $(l:tfc:craftsmanship/crucible#channel_casting)Mold Table$() and extract the ingots with a hopper or chute: Easy automation!$(br2)You can process the resulting $(item)Pig Iron$() and $(item)High Carbon Steel$() in a $(thing)Forge Hammer$() or $(l:craftsmanship/anvils#helve_hammer)Helve Hammer$()."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "enable_visualize": true,
+            "text": "For a very cheap and fast setup; place a drum below the blast furnace with it auto-outputting into a mold table below it.",
+            "multiblock": {
+                "pattern": [
+                    [
+                        " F ",
+                        "F F",
+                        " F "
+                    ],
+                    [
+                        " F ",
+                        "F F",
+                        " F "
+                    ],
+                    [
+                        " F ",
+                        "F F",
+                        " F "
+                    ],
+                    [
+                        " F ",
+                        "F0F",
+                        " F "
+                    ],
+                    [
+                        "   ",
+                        " BW",
+                        "   "
+                    ],
+                    [
+                        "   ",
+                        " D ",
+                        "   "
+                    ],
+                    [
+                        "   ",
+                        " M ",
+                        "   "
+                    ]
+                ],
+                "mapping": {
+                    "B": "tfc:blast_furnace",
+                    "F": "tfcbetterbf:insulated_fire_bricks",
+                    "W": "tfc:bellows[facing=north]",
+                    "M": "tfcchannelcasting:mold_table",
+                    "D": "gtceu:gold_drum"
+                }
+            }
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Further Reading",
+            "anchor": "relations",
+            "entries": [
+                "tfc:craftsmanship/pottery",
+                "tfc:craftsmanship/metallurgy",
+                "tfc:craftsmanship/charcoal_forge",
+                "tfc:craftsmanship/crucible",
+                "tfc:craftsmanship/charcoal_pit",
+                "tfc:craftsmanship/bloomery"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 10,
+    "extra_recipe_mappings": {
+        "tfc:blast_furnace": 1,
+        "tfc:fire_bricks": 1,
+        "tfcbetterbf:insulated_fire_bricks": 1,
+        "tag:tfc:tuyeres": 1
+    }
+}

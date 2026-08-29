@@ -151,7 +151,7 @@
             "item": "tag:tfc:propicks",
             "title": "Pro-Pick",
             "link_recipes": false,
-            "text": "If you're looking for ore veins, and you can't find the vein by guessing, it's time to pull out the $(item)prospector's pick$(). If you are familiar with base prospector's picks in $(thing)TFC$() you may be suprised to learn that they function very differently in $(bold)$(#ff0fb7)TerraFirma$(#595959)Greg$()"
+            "text": "If you're looking for ore veins, and you can't find the vein by guessing, it's time to pull out the $(item)prospector's pick$(). If you are familiar with base prospector's picks in $(thing)TFC$() you may be suprised to learn that they function very differently in $(bold)$(#ff0fb7)TerraFirma$(#595959)Greg$()."
         },
         {
             "type": "patchouli:text",
@@ -207,7 +207,11 @@
                 "tfc:the_world/earth_vein_index",
                 "tfc:craftsmanship/pottery",
                 "tfc:craftsmanship/pit_kiln",
-                "tfc:craftsmanship/charcoal_forge"
+                "tfc:craftsmanship/charcoal_forge",
+                "tfc:craftsmanship/crucible",
+                "tfc:craftsmanship/blast_furnace",
+                "tfc:craftsmanship/bloomery",
+                "tfc:craftsmanship/anvils"
             ]
         }
     ],
@@ -216,7 +220,6 @@
 	"extra_recipe_mappings": {
 		"tag:tfc:small_ore_pieces": 1,
 		"tag:tfc:propicks": 20,
-		"gtceu:glass_plate": "propick",
         "gtceu:prospector.lv": 26,
         "gtceu:prospector.hv": 26,
         "gtceu:prospector.luv": 26

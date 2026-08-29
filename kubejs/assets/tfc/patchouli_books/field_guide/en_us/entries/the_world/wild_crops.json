@@ -5,7 +5,7 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "$(li)$(bold)$(l:tfc:the_world/wild_crops#wild_crops)Wild Crops$()$(li)$(bold)$(l:tfc:the_world/wild_crops#crops)Crops$()$(li2)$(l:tfc:the_world/wild_crops#barley)Barley$()$(li2)$(l:tfc:the_world/wild_crops#beet)Beet$()$(li2)$(l:tfc:the_world/wild_crops#cabbage)Cabbage$()$(li2)$(l:tfc:the_world/wild_crops#canola)Canola$()$(li2)$(l:tfc:the_world/wild_crops#carrot)Carrot$()$(li2)$(l:tfc:the_world/wild_crops#cucumber)Cucumber$()$(li2)$(l:tfc:the_world/wild_crops#flax)Flax$()$(li2)$(l:tfc:the_world/wild_crops#garlic)Garlic$()$(li2)$(l:tfc:the_world/wild_crops#green_bean)Green Bean$()$(li2)$(l:tfc:the_world/wild_crops#jute)Jute$()$(li2)$(l:tfc:the_world/wild_crops#lentil)Lentil$()$(li2)$(l:tfc:the_world/wild_crops#maize)Maize$()"
+            "text": "$(li)$(bold)$(l:tfc:the_world/wild_crops#wild_crops)Wild Crops$()$(li)$(bold)$(#0000eb)Crops$()$(li2)$(l:tfc:the_world/wild_crops#barley)Barley$()$(li2)$(l:tfc:the_world/wild_crops#beet)Beet$()$(li2)$(l:tfc:the_world/wild_crops#cabbage)Cabbage$()$(li2)$(l:tfc:the_world/wild_crops#canola)Canola$()$(li2)$(l:tfc:the_world/wild_crops#carrot)Carrot$()$(li2)$(l:tfc:the_world/wild_crops#cucumber)Cucumber$()$(li2)$(l:tfc:the_world/wild_crops#flax)Flax$()$(li2)$(l:tfc:the_world/wild_crops#garlic)Garlic$()$(li2)$(l:tfc:the_world/wild_crops#green_bean)Green Bean$()$(li2)$(l:tfc:the_world/wild_crops#jute)Jute$()$(li2)$(l:tfc:the_world/wild_crops#lentil)Lentil$()$(li2)$(l:tfc:the_world/wild_crops#maize)Maize$()"
         },
         {
             "type": "patchouli:text",
