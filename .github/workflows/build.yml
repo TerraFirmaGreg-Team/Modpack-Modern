@@ -638,7 +638,7 @@ jobs:
         uses: cisox/read-more-action@v1.0.2
         with:
           text: '${{ needs.info.outputs.changelog }}'
-          max_chars: '1450'
+          max_chars: '1400'
 
       - name: Send Discord message
         uses: hugoalh/send-discord-webhook-ghaction@v7.0.5
