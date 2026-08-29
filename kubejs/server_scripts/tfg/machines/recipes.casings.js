@@ -111,7 +111,7 @@ function registerTFGCasingRecipes(event) {
 
 	event.recipes.gtceu.assembler('tfg:reflector_from_lens')
 		.itemInputs(
-			'24x #forge:lenses',
+			'24x gtceu:glass_lens',
 			ChemicalHelper.get(TagPrefix.frameGt, GTMaterials.BlackSteel, 1)
 		)
 		.inputFluids(Fluid.of('gtceu:silver', 1296))
