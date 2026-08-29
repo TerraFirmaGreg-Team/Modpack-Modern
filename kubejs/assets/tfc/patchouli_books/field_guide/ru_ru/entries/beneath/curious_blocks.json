@@ -5,7 +5,7 @@
 	"pages": [
 		{
 			"type": "patchouli:crafting",
-			"name": "Soul Clay",
+			"name": "Глина душ",
 			"text": "Aqueducts can also move lava and other fluids around, which may be useful when building the $(l:beneath/hellforge)Hellforge$().",
 			"anchor": "blackstone_aqueduct",
 			"recipe": "tfg:shaped/blackstone_aqueduct"

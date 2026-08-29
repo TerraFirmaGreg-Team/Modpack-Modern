@@ -40,7 +40,7 @@
         },
         {
             "type": "patchouli:multiblock",
-            "text": "Unikaj słonej i błotnistej wody, szukaj rzek, jezior i słodkowodnych roślin, takich jak $(thing)Pałka wodna$().",
+            "text": "Unikaj słonej i błotnistej wody, szukaj rzek, jezior i słodkowodnych roślin, takich jak $(thing)pałka wodna$().",
             "multiblock": {
                 "pattern": [
                     [

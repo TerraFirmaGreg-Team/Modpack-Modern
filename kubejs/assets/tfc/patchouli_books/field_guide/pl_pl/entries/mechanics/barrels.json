@@ -22,7 +22,7 @@
     {
       "type": "patchouli:text",
       "text": "$(li)Barrels can be filled by clicking an empty one on a fluid block in the world.$()$(li)Barrels will slowly fill up with water in the rain.$()$(li)Icicles melting above barrels also adds water to them.$()$(li)Sealing a barrel will eject items that are not in the center slot.$()",
-      "title": "Barrel Tips"
+      "title": "Wskazówki dotyczące beczek"
     },
     {
       "type": "patchouli:text",

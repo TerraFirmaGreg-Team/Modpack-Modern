@@ -1,6 +1,8 @@
 {
+	"key.showcaser.category": "Showcaser",
 	"key.showcaser.share_item_in_chat": "Udostępnij zasób",
 	"showcaser.chat.share_message.tooltip.unverified": "Nie zweryfikowany przez serwer",
+	"showcaser.chat.share_message.tooltip.verified": "Zweryfikowane przez serwer",
 	"showcaser.commands.sharing.ban.player_already_banned": "Gracz %s jest już zbanowany",
 	"showcaser.commands.sharing.unban.player_not_banned": "Gracz %s nie jest zbanowany"
 }
