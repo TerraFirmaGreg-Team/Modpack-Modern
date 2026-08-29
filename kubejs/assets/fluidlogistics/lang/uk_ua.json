@@ -11,7 +11,7 @@
 	"block.fluidlogistics.fluid_repackager": "Розпаковувач",
 	"block.fluidlogistics.horizontal_multi_fluid_tank": "Горизонтальний багаторідинний бак",
 	"block.fluidlogistics.mechanical_fluid_gun": "Механічна рідинна гармата",
-	"block.fluidlogistics.multi_fluid_access_port": "Порт доступу до кількох рідин",
+	"block.fluidlogistics.multi_fluid_access_port": "Порт доступу до багаторідинного бака",
 	"block.fluidlogistics.multi_fluid_access_port.filter_back": "Задній фільтр рідини",
 	"block.fluidlogistics.multi_fluid_access_port.filter_left": "Лівий фільтр рідини",
 	"block.fluidlogistics.multi_fluid_access_port.filter_right": "Правий фільтр рідини",
@@ -235,6 +235,7 @@
 	"fluidlogistics.ponder.smart_hopper.text_3": "Розумні лійки також можна з’єднувати в ланцюжок",
 	"fluidlogistics.ponder.smart_hopper.text_4": "Розумні лійки можуть переміщувати як предмети, так і рідину",
 	"fluidlogistics.ponder.smart_hopper.text_5": "Розумні лійки також можуть використовувати фільтри, щоб обмежити, які предмети та рідини дозволено пропускати",
+	"gui.fluidlogistics.creative_banner.title": "FL",
 	"item.fluidlogistics.compressed_storage_tank": "Стиснений бак для зберігання",
 	"item.fluidlogistics.compressed_storage_tank.tooltip.summary": "Натисніть ПКМ на рідинному баку, щоб перемістити рідину та витратити стиснений бак для зберігання",
 	"item.fluidlogistics.fluid_package": "Пакунок із рідиною",
@@ -248,8 +249,9 @@
 	"item.fluidlogistics.hand_pointer.tooltip.behaviour1": "Пакувальники / перепакувальники / пакувальні жаб’ячі порти / поштові скриньки / механічні руки / механічні збирачі / механічні рідинні гармати / пороговий перемикач / зважені викидачі / дисплейні зв’язки / компоненти логістичної мережі / будь-який фільтр",
 	"item.fluidlogistics.hand_pointer.tooltip.condition1": "Доступні цілі",
 	"item.fluidlogistics.hand_pointer.tooltip.summary": "Багатофункціональний інструмент для налаштування точок взаємодії на механічних компонентах",
-	"item.fluidlogistics.phantom_chain": "Фантомний ланцюг",
+	"item.fluidlogistics.phantom_chain": "Примарний ланцюг",
 	"item.fluidlogistics.phantom_chain.tooltip.summary": "Під час з’єднання ланцюгових конвеєрів їхні ланцюги видно лише тоді, коли ви тримаєте фантомний ланцюг",
+	"itemGroup.fluidlogistics.fluidlogistics_tab": "Create: Fluid Logistics",
 	"logistically_linked.protected": "Ця логістична мережа захищена",
 	"resourcepack.fluidlogistics.cu_again_for_fluidlogistics": "Застарілі мідні текстури для логістики рідин"
 }

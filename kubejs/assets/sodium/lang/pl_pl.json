@@ -10,10 +10,13 @@
 	"sodium.options.buttons.apply": "Zastosuj",
 	"sodium.options.buttons.donate": "Wesprzyj Sodium!",
 	"sodium.options.buttons.undo": "Cofnij",
+	"sodium.options.chunk_update_threads.name": "Wątki aktualizacji chunków",
 	"sodium.options.cpu_render_ahead_limit.value": "%s klatek",
 	"sodium.options.leaves_quality.name": "Liście",
 	"sodium.options.pages.advanced": "Zaawansowany",
 	"sodium.options.pages.performance": "Wydajność",
 	"sodium.options.pages.quality": "Jakość",
+	"sodium.options.performance_impact_string": "Wpływ na wydajność: %s",
+	"sodium.options.use_entity_culling.name": "Użyj Entity Culling",
 	"sodium.options.vignette.name": "Winieta"
 }

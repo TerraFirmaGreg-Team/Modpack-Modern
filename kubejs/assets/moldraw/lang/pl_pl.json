@@ -1,12 +1,18 @@
 {
 	"config.moldraw.option.alloy": "Stopy",
+	"config.moldraw.option.aromanticBenzene": "Aromantyczny benzen",
 	"config.moldraw.option.benzeneCircle": "Tryb renderowania benzenu",
 	"config.moldraw.option.color": "Kolory",
 	"config.moldraw.option.debugMode": "Tryb debugowania",
+	"config.moldraw.option.defaultColor": "Domyślny kolor pierwiastka",
 	"config.moldraw.option.enabled": "Włącz moda",
 	"config.moldraw.option.fun": "Zabawa",
+	"config.moldraw.option.minimumBrightness": "Minimalna jasność dla kolorowych elementów",
 	"config.moldraw.option.molecule": "Cząsteczki",
 	"config.moldraw.option.moleculeScale": "Rozmiar cząsteczki",
+	"config.moldraw.option.showMolecules": "Pokaż rysunki cząsteczek",
+	"config.moldraw.option.spinMolecules": "Pozwól cząsteczkom na kręcenie się",
+	"config.moldraw.option.spinSpeedMultiplier": "Mnożnik prędkości obracania",
 	"tooltip.moldraw.shift_view_alloy": "§7§oPrzytrzymaj (Shift), aby zobaczyć skład stopu§r",
 	"tooltip.moldraw.shift_view_molecule": "§7§oPrzytrzymaj (Shift), aby zobaczyć strukturę molekularną§r"
 }

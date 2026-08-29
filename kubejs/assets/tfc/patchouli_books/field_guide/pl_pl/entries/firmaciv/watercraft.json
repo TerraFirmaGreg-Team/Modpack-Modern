@@ -1,5 +1,5 @@
 {
-  "name": "Getting Started: Boats",
+  "name": "Pierwsze kroki: Łodzie",
   "category": "tfc:firmaciv",
   "icon": "firmaciv:anchor",
   "pages": [
@@ -128,7 +128,7 @@
     },
     {
       "type": "patchouli:text",
-      "title": "Damage and Repair",
+      "title": "Uszkodzenia i naprawa",
       "text": "A damaged boat will start to show cracks. For any boat built using Shipwright's Scaffolding, use the appropriate type of planks to repair it. For canoes, use lumber. At 90% damage, a boat will appear to take on water, and at 100% damage, it will sink! This does not apply to Kayaks."
     }
   ],

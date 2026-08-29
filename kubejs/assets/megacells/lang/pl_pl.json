@@ -7,6 +7,7 @@
   "block.megacells.mega_crafting_unit": "Jednostka rzemieślnicza MEGA",
   "block.megacells.mega_emc_interface": "Interfejs transmutacji MEGA",
   "block.megacells.mega_energy_cell": "Supergęste ogniwo energetyczne",
+  "gui.megacells.ModName": "MEGA Cells",
   "gui.tooltips.megacells.ALot": "Dużo.",
   "gui.tooltips.megacells.AcceleratorThreads": "Dostarcza 4 wątki przetwarzania równoległego na blok.",
   "gui.tooltips.megacells.Compression": "Kompresja: %s",
@@ -83,5 +84,6 @@
   "item.megacells.source_storage_cell_4m": "Magazyn źródła MEGA 4M",
   "item.megacells.source_storage_cell_64m": "Magazyn źródła MEGA 64M",
   "text.autoconfig.megacells.option.AllowSpentWaste": "(AppMek) Zezwalaj na zużyte odpady jądrowe",
-  "text.autoconfig.megacells.option.CompressionChainLimit": "Limit długości łańcucha masowej kompresji"
+  "text.autoconfig.megacells.option.CompressionChainLimit": "Limit długości łańcucha masowej kompresji",
+  "text.autoconfig.megacells.title": "MEGA Cells"
 }

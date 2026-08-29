@@ -84,7 +84,7 @@
           "X": "tfc:plant/moss[down=true]"
         }
       },
-      "name": "Creeping",
+      "name": "Pnącza",
       "text": "Creeping plants take the shape of the surrounding block faces. They mostly spawn in blobs on the ground",
       "enable_visualize": false
     },
@@ -188,7 +188,7 @@
           "Y": "tfc:plant/liana"
         }
       },
-      "name": "Weeping Vines",
+      "name": "Lamentorośle",
       "text": "Weeping vines grow downward from an anchoring block.",
       "enable_visualize": false
     },
@@ -211,14 +211,14 @@
           "Y": "tfc:plant/arundo_plant"
         }
       },
-      "name": "Twisting Vines",
+      "name": "Krętorośle",
       "text": "Twisting vines twist upward from the Earth. They can come in a solid variant.",
       "enable_visualize": false
     },
     {
       "type": "patchouli:text",
       "text": "Water plants are restricted to either spawn in fresh or salty water. Otherwise, they grow and act much like the plants you see on the surface. Some water plants can be cooked for food.",
-      "title": "Water Plants"
+      "title": "Rośliny wodne"
     },
     {
       "type": "patchouli:multiblock",
@@ -235,7 +235,7 @@
           "X": "tfc:plant/sago[fluid=water]"
         }
       },
-      "name": "Standard Water",
+      "name": "Standardowa woda",
       "text": "Standard water plants can be broken with a $(thing)$()Knife$() to get $(thing)Seaweed$().",
       "enable_visualize": false
     },
@@ -254,7 +254,7 @@
           "X": "tfc:plant/manatee_grass[fluid=salt_water]"
         }
       },
-      "name": "Water Grass",
+      "name": "Trawa wodna",
       "text": "Water grasses are grasses that grow under the water.",
       "enable_visualize": false
     },
@@ -346,7 +346,7 @@
           "Y": "tfc:plant/giant_kelp_plant[down=true,up=true,fluid=salt_water]"
         }
       },
-      "name": "Tree Kelp",
+      "name": "Wielkomorszcz",
       "text": "Tree kelp grow into intricate trees underwater. The flowers can be harvested with a $(thing)Knife$().",
       "enable_visualize": false
     }

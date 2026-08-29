@@ -235,6 +235,7 @@
 	"fluidlogistics.ponder.smart_hopper.text_3": "Умные воронки можно ставить друг за другом",
 	"fluidlogistics.ponder.smart_hopper.text_4": "Механизмы способны перемещать как предметы, так и жидкости",
 	"fluidlogistics.ponder.smart_hopper.text_5": "Они также могут использовать фильтры для ограничения типов пропускаемых предметов и жидкостей",
+	"gui.fluidlogistics.creative_banner.title": "FL",
 	"item.fluidlogistics.compressed_storage_tank": "Сжатый резервуар для хранения",
 	"item.fluidlogistics.compressed_storage_tank.tooltip.summary": "Нажми ПКМ по резервуару для жидкостей, чтобы _переместить жидкость_ и _потратить_ сжатый резервуар для хранения",
 	"item.fluidlogistics.fluid_package": "Банка для жидкостей",
@@ -250,6 +251,7 @@
 	"item.fluidlogistics.hand_pointer.tooltip.summary": "Многофункциональный инструмент для настройки точек взаимодействия на механических компонентах",
 	"item.fluidlogistics.phantom_chain": "Фантомная цепь",
 	"item.fluidlogistics.phantom_chain.tooltip.summary": "При _подключении_ Цепных конвейеров их цепи видны только тогда, когда ты _держишь_ Фантомную цепь в руке",
+	"itemGroup.fluidlogistics.fluidlogistics_tab": "Create: Fluid Logistics",
 	"logistically_linked.protected": "Эта логистическая сеть защищена",
 	"resourcepack.fluidlogistics.cu_again_for_fluidlogistics": "Старые медные текстуры для Fluid Logistics"
 }

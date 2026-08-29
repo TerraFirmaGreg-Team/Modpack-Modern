@@ -81,10 +81,12 @@
   "ftbteams.team_type.server": "Equipo de servidor",
   "ftbteamsconfig": "Propiedades del equipo",
   "ftbteamsconfig.ftbteams": "Propiedades básicas del equipo",
+  "ftbteamsconfig.ftbteams.color": "Color",
   "ftbteamsconfig.ftbteams.description": "Descripción",
   "ftbteamsconfig.ftbteams.display_name": "Mostrar nombre",
   "ftbteamsconfig.ftbteams.free_to_join": "Libre para unirse",
   "ftbteamsconfig.ftbteams.max_msg_history_size": "Tamaño máximo del historial de mensajes",
+  "key.categories.ftbteams": "FTB Teams",
   "key.ftbteams.open_gui": "Abrir interfaz de equipos",
   "sidebar_button.ftbteams.my_team": "Mi equipo"
 }
