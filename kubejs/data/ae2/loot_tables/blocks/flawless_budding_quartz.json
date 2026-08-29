@@ -1,0 +1,20 @@
+{
+	"type": "minecraft:block",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "ae2:damaged_budding_quartz"
+				}
+			],
+			"conditions": [
+				{
+					"condition": "minecraft:survives_explosion"
+				}
+			]
+		}
+	],
+	"random_sequence": "ae2:blocks/flawless_budding_quartz"
+}

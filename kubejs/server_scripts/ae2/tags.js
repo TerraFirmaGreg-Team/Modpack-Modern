@@ -6,6 +6,8 @@ const registerAE2ItemTags = (event) => {
 	event.add('c:hidden_from_recipe_viewers', 'ae2:creative_item_cell')
 	event.add('c:hidden_from_recipe_viewers', 'ae2:creative_fluid_cell')
 	event.add('c:hidden_from_recipe_viewers', "ae2:creative_energy_cell")
+	event.add('c:hidden_from_recipe_viewers', "ae2:color_applicator")
+	event.add('c:hidden_from_recipe_viewers', "ae2:matter_cannon")
 
 	event.remove('forge:storage_blocks', 'ae2:quartz_block')
 	event.remove('forge:storage_blocks/certus_quartz', 'ae2:quartz_block')

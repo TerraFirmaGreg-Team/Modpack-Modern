@@ -1,1 +1,6 @@
-{"parent":"tfc:block/crop_cross","textures":{"crop":"tfc:block/crop/green_bean_6_bottom"}}
+{
+	"parent": "tfc:block/crop/vexxed_crop_cross",
+	"textures": {
+		"crop": "tfc:block/crop/green_bean_6_bottom"
+	}
+}

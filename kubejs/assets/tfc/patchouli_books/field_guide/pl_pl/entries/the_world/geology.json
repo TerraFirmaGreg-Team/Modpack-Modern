@@ -32,7 +32,7 @@
     {
       "type": "patchouli:text",
       "text": "Ocean floors are composed of $(l:the_world/geology#igneous_extrusive)igneous extrusive$() rock - rocks that are formed by magma which cools quickly. Underneath igneous extrusive rock will likely be a $(l:the_world/geology)igneous intrusive$() rock of the same $(item)grade$().$(br2)For example, under $(thing)Basalt$() (a mafic, igneous extrusive rock), will likely be $(thing)Gabbro$() (a mafic, igneous intrusive rock).",
-      "title": "Ocean Floors"
+      "title": "Dno oceaniczne"
     },
     {
       "type": "patchouli:text",

@@ -111,7 +111,7 @@ function registerTFGCasingRecipes(event) {
 
 	event.recipes.gtceu.assembler('tfg:reflector_from_lens')
 		.itemInputs(
-			'24x #forge:lenses',
+			'24x gtceu:glass_lens',
 			ChemicalHelper.get(TagPrefix.frameGt, GTMaterials.BlackSteel, 1)
 		)
 		.inputFluids(Fluid.of('gtceu:silver', 1296))
@@ -242,5 +242,23 @@ function registerTFGCasingRecipes(event) {
 		.circuit(6)
 		.duration(2.5 * 20)
 		.EUt(GTValues.VA[GTValues.EV])
+		.addMaterialInfo(true, true)
+
+	event.recipes.gtceu.assembler('tfg:casings/machine_casing_ptfe_black')
+		.itemInputs('6x #forge:plates/black_steel', Item.of('gtceu:black_steel_frame'))
+		.inputFluids(Fluid.of('gtceu:polytetrafluoroethylene', 216))
+		.itemOutputs(Item.of('tfg:casings/machine_casing_ptfe_black', 2))
+		.circuit(6)
+		.duration(2.5 * 20)
+		.EUt(GTValues.VA[GTValues.LV])
+		.addMaterialInfo(true, true)
+
+	event.recipes.gtceu.assembler('tfg:casings/machine_casing_ae2')
+		.itemInputs('6x #forge:plates/certus_quartz', Item.of('gtceu:stainless_steel_frame'))
+		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144))
+		.itemOutputs(Item.of('tfg:casings/machine_casing_ae2', 2))
+		.circuit(6)
+		.duration(2.5 * 20)
+		.EUt(GTValues.VA[GTValues.LV])
 		.addMaterialInfo(true, true)
 }

@@ -1,0 +1,18 @@
+{
+	"block.tfcgroomer.bismuth_bronze_grooming_station": "Bizmutbronz etetővályú ",
+	"block.tfcgroomer.black_bronze_grooming_station": "Fekete bronz etetővályú ",
+	"block.tfcgroomer.black_steel_grooming_station": "Fekete acél etetővályú ",
+	"block.tfcgroomer.blue_steel_grooming_station": "Kék acél etetővályú ",
+	"block.tfcgroomer.bronze_grooming_station": "Bronz etetővályú ",
+	"block.tfcgroomer.copper_grooming_station": "Réz etetővályú ",
+	"block.tfcgroomer.grooming_station": "Állatgondozó állomás",
+	"block.tfcgroomer.red_steel_grooming_station": "Vörös acél etetővályú ",
+	"block.tfcgroomer.steel_grooming_station": "Acél etetővályú ",
+	"block.tfcgroomer.wrought_iron_grooming_station": "Kovácsoltvas etetővályú ",
+	"config.jade.plugin_tfcgroomer.grooming_station": "Állatgondozó állomás",
+	"gui.tfcgroomer.enable_breeding": "Tenyésztés engedélyezése",
+	"tfcgroomer.grooming_station.range": "Hatótáv: %s",
+	"tfcgroomer.tooltip.breedDisabled": "Tenyésztés kikapcsolva",
+	"tfcgroomer.tooltip.breedEnabled": "Tenyésztés engedélyezve",
+	"tfcgroomer.tooltip.toggleBreeding": "Tenyésztés ki-/bekapcsolása"
+}

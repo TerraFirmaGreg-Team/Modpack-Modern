@@ -61,13 +61,21 @@
     "curseForgeHash": 2107440881,
     "modrinthHash": "632208b88322cb4985a45cf1448d5dce7b12a7cb"
   },
-  "AdvancedLootInfo-forge-1.20.1-1.12.0.jar": {
-    "jarName": "AdvancedLootInfo-forge-1.20.1-1.12.0.jar",
+  "AdvancedCoreInfo-forge-1.20.1-1.1.0.jar": {
+    "jarName": "AdvancedCoreInfo-forge-1.20.1-1.1.0.jar",
+    "modId": "aci",
+    "name": "AdvancedCoreInfo",
+    "version": "1.1.0",
+    "curseForgeHash": 3168723157,
+    "modrinthHash": "60678f23787cb57649f778892e81c20bf5d0b671"
+  },
+  "AdvancedLootInfo-forge-1.20.1-2.1.0.jar": {
+    "jarName": "AdvancedLootInfo-forge-1.20.1-2.1.0.jar",
     "modId": "ali",
     "name": "AdvancedLootInfo",
-    "version": "1.12.0",
-    "curseForgeHash": 1730954885,
-    "modrinthHash": "bbf7742a49e6cbe90c5d805538ec46ce223e6e0b"
+    "version": "2.1.0",
+    "curseForgeHash": 3498863139,
+    "modrinthHash": "b8fdbd732b3d16c894fd35528668758a65f8211e"
   },
   "AdvancedPeripherals-1.20.1-0.7.48r.jar": {
     "jarName": "AdvancedPeripherals-1.20.1-0.7.48r.jar",
@@ -205,13 +213,13 @@
     "curseForgeHash": 3762486546,
     "modrinthHash": "76d6b2d0f2a3c9842587ad20666ba419cd8c1efa"
   },
-  "baguettelib-1.20.1-Forge-1.1.6.jar": {
-    "jarName": "baguettelib-1.20.1-Forge-1.1.6.jar",
+  "baguettelib-1.20.1-Forge-2.0.5.jar": {
+    "jarName": "baguettelib-1.20.1-Forge-2.0.5.jar",
     "modId": "baguettelib",
     "name": "BaguetteLib",
-    "version": "1.1.6",
-    "curseForgeHash": 2947245849,
-    "modrinthHash": "8d3c9551bbed4c2f2e8cb2b9a10d31bad4edb52d"
+    "version": "2.0.5",
+    "curseForgeHash": 4260674330,
+    "modrinthHash": "1e9e700ac26d6c6e2070a2ae64aacbdc19cd0fd0"
   },
   "balm-forge-1.20.1-7.3.42.jar": {
     "jarName": "balm-forge-1.20.1-7.3.42.jar",
@@ -421,13 +429,13 @@
     "curseForgeHash": 2144346557,
     "modrinthHash": "f6d3cdd3ec68c5590cf5b2e89c38dbf031824bfd"
   },
-  "copycats-3.0.7+mc.1.20.1-forge.jar": {
-    "jarName": "copycats-3.0.7+mc.1.20.1-forge.jar",
+  "copycats-3.0.8+mc.1.20.1-forge.jar": {
+    "jarName": "copycats-3.0.8+mc.1.20.1-forge.jar",
     "modId": "copycats",
     "name": "Create: Copycats+",
-    "version": "3.0.7+mc.1.20.1-forge",
-    "curseForgeHash": 3504964036,
-    "modrinthHash": "5d0f497695fc2ee4ef89f1898458882b9d2d3aad"
+    "version": "3.0.8+mc.1.20.1-forge",
+    "curseForgeHash": 4129266584,
+    "modrinthHash": "d30a7bc854d0b414155fc6e8dedbd7a82d452465"
   },
   "corpse-forge-1.20.1-1.0.23.jar": {
     "jarName": "corpse-forge-1.20.1-1.0.23.jar",
@@ -1029,13 +1037,13 @@
     "curseForgeHash": 3324262533,
     "modrinthHash": "aa53625ab5e145c6aa196645335b062b37ae82da"
   },
-  "greate-0.0.78.jar": {
-    "jarName": "greate-0.0.78.jar",
+  "greate-0.0.79.jar": {
+    "jarName": "greate-0.0.79.jar",
     "modId": "greate",
     "name": "Greate",
-    "version": "0.0.78",
-    "curseForgeHash": 1018448777,
-    "modrinthHash": "f2828504c054545bb5ad2e489cb7a95998e3b684"
+    "version": "0.0.79",
+    "curseForgeHash": 1787505664,
+    "modrinthHash": "0a49283f16e25e2fb82b4d9b1c2c83221912c8de"
   },
   "gregtechterminals-6.8.5-fix.jar": {
     "jarName": "gregtechterminals-6.8.5-fix.jar",
@@ -1762,13 +1770,13 @@
     "curseForgeHash": 4174736090,
     "modrinthHash": "b4d924f4faf6eb201db04205b61fa1524a8b0178"
   },
-  "Steam_Rails-1.7.2+forge-mc1.20.1.jar": {
-    "jarName": "Steam_Rails-1.7.2+forge-mc1.20.1.jar",
+  "Steam_Rails-1.7.3+forge-mc1.20.1.jar": {
+    "jarName": "Steam_Rails-1.7.3+forge-mc1.20.1.jar",
     "modId": "railways",
     "name": "Create: Steam \u0027n\u0027 Rails",
-    "version": "1.7.2+forge-mc1.20.1",
-    "curseForgeHash": 3883819242,
-    "modrinthHash": "15d317afd2459368b19c23f2bdfefdeb87708bdd"
+    "version": "1.7.3+forge-mc1.20.1",
+    "curseForgeHash": 2310714255,
+    "modrinthHash": "5f904126d942cdbd272a5254ec6145851e5e1e7a"
   },
   "steampowered-1.20.1-3.1.0.jar": {
     "jarName": "steampowered-1.20.1-3.1.0.jar",
@@ -1834,13 +1842,13 @@
     "curseForgeHash": 649713790,
     "modrinthHash": "e1b65ace1199044a982377d27438c63a4418a744"
   },
-  "TerraFirmaGreg-Core-Modern-0.9.21.jar": {
-    "jarName": "TerraFirmaGreg-Core-Modern-0.9.21.jar",
+  "TerraFirmaGreg-Core-Modern-0.9.22.jar": {
+    "jarName": "TerraFirmaGreg-Core-Modern-0.9.22.jar",
     "modId": "tfg",
     "name": "TerraFirmaGreg-Core",
-    "version": "0.9.21",
-    "curseForgeHash": 4090819687,
-    "modrinthHash": "1645c49e95a4a1534dfc1a71f4402a852ec33fde"
+    "version": "0.9.22",
+    "curseForgeHash": 656118510,
+    "modrinthHash": "d240bc38ae168d126c9e6275e5b5038a6497f14d"
   },
   "TFC_punishment_for_death-1.20.1-1.0.0.16.jar": {
     "jarName": "TFC_punishment_for_death-1.20.1-1.0.0.16.jar",
@@ -2002,13 +2010,13 @@
     "curseForgeHash": 155110247,
     "modrinthHash": "486038e2b0e075c48f325a7665ad0f3149f7632c"
   },
-  "toomanyrecipeviewers-0.9.0+mc.20.1.jar": {
-    "jarName": "toomanyrecipeviewers-0.9.0+mc.20.1.jar",
+  "toomanyrecipeviewers-0.8.1+mc.20.1.jar": {
+    "jarName": "toomanyrecipeviewers-0.8.1+mc.20.1.jar",
     "modId": "toomanyrecipeviewers",
     "name": "TooManyRecipeViewers",
-    "version": "0.9.0+mc.20.1",
-    "curseForgeHash": 625854406,
-    "modrinthHash": "68b17e577526582ac22611d412433022647fc674"
+    "version": "0.8.1+mc.20.1",
+    "curseForgeHash": 2729210785,
+    "modrinthHash": "c83ea731d2977c178ac98502a79013bdbba916be"
   },
   "Tumbleweed-forge-1.20.1-0.5.5.jar": {
     "jarName": "Tumbleweed-forge-1.20.1-0.5.5.jar",

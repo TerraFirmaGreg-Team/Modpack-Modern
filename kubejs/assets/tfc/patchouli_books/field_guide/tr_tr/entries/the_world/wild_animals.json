@@ -156,7 +156,7 @@
 			"entity": "tfc:rabbit",
 			"scale": 0.7,
 			"text": "The rabbit is known to chew on carrots and cabbage. They are ubiquitous in the world, changing their coat based on climate. They only need 15mm of $(l:the_world/climate#rainfall)rainfall$() to spawn.",
-			"name": "Rabbit"
+			"name": "Davşan"
 		},
 		{
 			"type": "patchouli:entity",
@@ -175,7 +175,7 @@
 			"type": "patchouli:entity",
 			"entity": "tfc:caribou",
 			"scale": 0.6,
-			"name": "Caribou",
+			"name": "Ren Geyiği",
 			"text": "The caribou spawns at any $(l:the_world/climate#temperature)temperature$() below -9°C, and $(l:the_world/climate#rainfall)rainfall$() between 110 and 500mm."
 		},
 		{
@@ -216,7 +216,7 @@
 			"title": "Aquatic Animals",
 			"entity": "tfc:peafowl",
 			"scale": 0.6,
-			"name": "Peafowl"
+			"name": "Tavus Kuşu"
 		},
 		{
 			"type": "patchouli:entity",
@@ -269,7 +269,7 @@
 			"type": "patchouli:text",
 			"name": "Tropik balık",
 			"text": "$(thing)Fish$() are small creatures that swim in water. Most of them can be $(l:mechanics/fishing)fished$(). Some prefer oceans, rivers, or lakes.",
-			"title": "Fish"
+			"title": "Balık"
 		},
 		{
 			"type": "patchouli:entity",
@@ -311,7 +311,7 @@
 			"type": "patchouli:entity",
 			"entity": "tfc:bluegill",
 			"scale": 0.7,
-			"name": "Bluegill",
+			"name": "Çipura",
 			"text": "Bluegill spawn in any river or lake with a $(l:the_world/climate#temperature)temperature$() of at least -10°C and at most 26°C."
 		},
 		{
@@ -393,7 +393,7 @@
 		{
 			"type": "patchouli:text",
 			"text": "Squid can spawn in any deep ocean. They drop $(thing)Ink Sacs$(), and ink any player that gets too close. Some say that squids in deep, unexplored caves have strange properties.",
-			"title": "Squid"
+			"title": "Kalamar"
 		}
 	],
 	"read_by_default": true,

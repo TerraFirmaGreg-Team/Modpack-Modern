@@ -109,21 +109,21 @@
 			"type": "patchouli:spotlight",
 			"title": "砷中毒",
 			"item": "gtceu:arsenic_dust",
-			"anchor": "Arsenicosis",
+			"anchor": "砷中毒",
 			"text": "$(thing)砷中毒$()是一种因吸入$(thing)砷$()粉、蒸气或$(thing)雄黄$()而引起的疾病。它会逐渐增加$(item)饥饿$()，随后是$(item)恶心$()，最终$(item)死亡$()。$(br2)$(l:tfg_ores/hazards#mask)面罩$()和$(l:tfg_ores/hazards#hazmat)防化服$()可以提供对$(thing)砷中毒$()的防护。"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"title": "石棉肺",
 			"item": "gtceu:asbestos_dust",
-			"anchor": "Asbestosis",
+			"anchor": "石棉肺",
 			"text": "$(thing)石棉肺$()是一种因吸入$(thing)石棉$()粉尘而引起的疾病。如果携带时间足够长，会导致$(item)饥饿$()。$(br2)$(l:tfg_ores/hazards#mask)面罩$()和$(l:tfg_ores/hazards#hazmat)防化服$()可以提供对$(thing)石棉肺$()的防护。"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"title": "铍中毒",
 			"item": "gtceu:beryllium_dust",
-			"anchor": "Berylliosis",
+			"anchor": "铍中毒",
 			"text": "$(thing)铍中毒$()是一种因皮肤接触$(thing)铍粉$()或$(thing)液态铍$()而引起的疾病。起初可能看起来影响不大。然而，接触时间越长，它$(item)杀死$()你的速度就越快。$(br2)$(l:tfg_ores/hazards#gloves)手套$()和$(l:tfg_ores/hazards#hazmat)防化服$()可以提供对$(thing)铍中毒$()的防护。"
 		},
 		{
@@ -199,7 +199,7 @@
 			"type": "patchouli:spotlight",
 			"title": "矽肺病",
 			"item": "gtceu:silicon_dioxide_dust",
-			"anchor": "Silicosis",
+			"anchor": "硅肺病",
 			"text": "$(thing)矽肺病$()是一种因吸入$(thing)二氧化硅粉尘$()而引起的疾病。接触会导致$(item)生命值$()和$(item)潜水时的空气供应$()$(item)减少$()。$(br2)$(l:tfg_ores/hazards#mask)面罩$()和$(l:tfg_ores/hazards#hazmat)防化服$()可以防止吸入二氧化硅。"
 		}
 	]

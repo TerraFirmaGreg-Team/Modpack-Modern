@@ -1,4 +1,5 @@
 {
+	autofocus_id: "6CF08AFB924905F0"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "applied_energistics_2"
@@ -11,7 +12,7 @@
 			image: "ae2:block/mysterious_cube_end_emissive"
 			rotation: 0.0d
 			width: 1.5d
-			x: -3.5d
+			x: -5.0d
 			y: 2.0d
 		}
 		{
@@ -109,6 +110,7 @@
 				{
 					id: "01CB170E98F09DCB"
 					item: "gtceu:hv_polarizer"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -183,51 +185,31 @@
 		{
 			dependencies: ["673433C6D5A451F8"]
 			description: ["{quests.ae2.extractor.desc}"]
-			icon: "gtceu:hv_extractor"
+			icon: "tfg:cryogenized_fluix_bucket"
 			id: "0DE253C8F7F37FB6"
 			subtitle: "{quests.ae2.extractor.subtitle}"
-			tasks: [{
-				id: "0AE307B47D2589BA"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "or(item(gtceu:lv_extractor)item(gtceu:mv_extractor)item(gtceu:hv_extractor)item(gtceu:ev_extractor))"
-					}
-				}
-				title: "{quests.ae2.extractor.task}"
-				type: "item"
-			}]
-			title: "{quests.ae2.extractor.title}"
-			x: -5.0d
-			y: -0.5d
-		}
-		{
-			dependencies: ["0DE253C8F7F37FB6"]
-			description: ["{quests.ae2.fluix_liquid.desc}"]
-			icon: "tfg:fluix_bucket"
-			id: "5C98FE05CAE3DFD8"
-			subtitle: "{quests.ae2.fluix_liquid.subtitle}"
 			tasks: [
 				{
-					id: "7C0B612DC3D05042"
-					item: "tfg:fluix_bucket"
-					optional_task: true
+					id: "0AE307B47D2589BA"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(gtceu:lv_extractor)item(gtceu:mv_extractor)item(gtceu:hv_extractor)item(gtceu:ev_extractor))"
+						}
+					}
+					title: "{quests.ae2.extractor.task}"
 					type: "item"
 				}
 				{
-					id: "0E980936F9D1D703"
+					id: "2B4CAE0A11C32BB8"
 					item: "tfg:cryogenized_fluix_bucket"
 					optional_task: true
 					type: "item"
 				}
-				{
-					id: "432E105A84AEA630"
-					type: "checkmark"
-				}
 			]
-			title: "{quests.ae2.fluix_liquid.title}"
-			x: -3.5d
+			title: "{quests.ae2.extractor.title}"
+			x: -5.0d
 			y: -0.5d
 		}
 		{
@@ -284,7 +266,7 @@
 				type: "item"
 			}]
 			title: "{quests.ae2.forming_press.title}"
-			x: -3.5d
+			x: -5.0d
 			y: 0.5d
 		}
 		{
@@ -315,7 +297,7 @@
 				}
 			]
 			title: "{quests.ae2.ae_press.title}"
-			x: -3.5d
+			x: -5.0d
 			y: 2.0d
 		}
 		{
@@ -478,10 +460,7 @@
 			y: -9.0d
 		}
 		{
-			dependencies: [
-				"5C98FE05CAE3DFD8"
-				"674ACE84D9EA6FB9"
-			]
+			dependencies: ["3CD0A43CE62CF618"]
 			description: ["{quests.ae2.ae_processor.desc}"]
 			id: "0C0B09D66D0CFFBA"
 			subtitle: "{quests.ae2.ae_processor.subtitle}"
@@ -624,6 +603,7 @@
 				title: "{quests.ae2.extended_pattern_access.task}"
 				type: "item"
 			}]
+			title: "{item.expatternprovider.ex_pattern_access_part}"
 			x: 7.0d
 			y: -1.5d
 		}
@@ -644,6 +624,7 @@
 				title: "{quests.ae2.extended_interface.task}"
 				type: "item"
 			}]
+			title: "{block.expatternprovider.ex_interface}"
 			x: 5.0d
 			y: 1.0d
 		}
@@ -730,24 +711,10 @@
 			icon_scale: 2.0d
 			id: "3C3C21482E31267B"
 			size: 1.0d
-			tasks: [
-				{
-					dimension: "minecraft:overworld"
-					icon: "gtceu:overworld_marker"
-					id: "7632E64D3F85FAB3"
-					optional_task: true
-					title: "{quests.stone_age.temperature.task}"
-					type: "dimension"
-				}
-				{
-					dimension: "ad_astra:moon"
-					icon: "tfg:marker/moon"
-					id: "41D7488FFB99889C"
-					optional_task: true
-					title: "{quests.stone_age.temperature.task}"
-					type: "dimension"
-				}
-			]
+			tasks: [{
+				id: "0E1A4ED67854D838"
+				type: "checkmark"
+			}]
 			title: "{quests.ae2.hv.title}"
 			x: 0.5d
 			y: -2.5d
@@ -968,6 +935,7 @@
 				title: "{quests.ae2.extended_patprov.task}"
 				type: "item"
 			}]
+			title: "{block.expatternprovider.ex_pattern_provider}"
 			x: 7.0d
 			y: 1.5d
 		}
@@ -988,6 +956,7 @@
 				title: "{quests.ae2.extended_drive.task}"
 				type: "item"
 			}]
+			title: "{block.expatternprovider.ex_drive}"
 			x: 6.0d
 			y: -1.5d
 		}
@@ -1358,6 +1327,89 @@
 			title: "{quests.ae2.stock_bridge.title}"
 			x: 5.0d
 			y: -8.0d
+		}
+		{
+			dependencies: [
+				"0DE253C8F7F37FB6"
+				"674ACE84D9EA6FB9"
+			]
+			description: [
+				"{quests.ae2.me_assembler.desc.1}"
+				"{@pagebreak}"
+				"{quests.ae2.me_assembler.desc.2}"
+			]
+			id: "3CD0A43CE62CF618"
+			subtitle: "{quests.ae2.me_assembler.subtitle}"
+			tasks: [{
+				id: "4A843E81F70775D3"
+				item: "tfg:me_assembler"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5187909B66DF2D43"]
+			description: ["{quests.ae2.mega_pattern.desc}"]
+			id: "57C98F43A9818B49"
+			tasks: [{
+				id: "5BF54D9D2CC6E900"
+				item: "megacells:mega_pattern_provider"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["3CD0A43CE62CF618"]
+			description: ["{quests.ae2.budding_charger.desc}"]
+			id: "31F7F3379D17FFD6"
+			optional: true
+			shape: "heart"
+			subtitle: "{quests.ae2.budding_charger.subtitle}"
+			tasks: [{
+				id: "10D66F620CA33F35"
+				item: "tfg:budding_charge"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3CD0A43CE62CF618"]
+			description: [
+				"{quests.ae2.me_guide.desc_1}"
+				""
+				"{image:tfg:textures/quests/me_setup.png width:375 height:225 align:center}"
+				"{@pagebreak}"
+				"{quests.ae2.me_guide.desc_2}"
+				""
+				"{image:tfg:textures/quests/sender.png width:375 height:225 align:center}"
+				"{@pagebreak}"
+				"{quests.ae2.me_guide.desc_3}"
+				""
+				"{image:tfg:textures/quests/receiver.png width:375 height:225 align:center}"
+				"{@pagebreak}"
+				"{quests.ae2.me_guide.desc_4}"
+				""
+				"{image:tfg:textures/quests/me_logistics.png width:250 height:150 align:center}"
+				"{@pagebreak}"
+				"{quests.ae2.me_guide.desc_5}"
+				""
+				"{image:tfg:textures/quests/me_assembler_moon.png width:375 height:225 align:center}"
+			]
+			icon: "tfg:railgun_ammo_shell"
+			id: "48185B7AD3FB70A5"
+			shape: "circle"
+			subtitle: "{quests.ae2.me_guide.subtitle}"
+			tasks: [{
+				id: "2D1899FF556E6AD8"
+				title: "{quests.ae2.me_guide.task}"
+				type: "checkmark"
+			}]
+			title: "{quests.ae2.me_guide.title}"
+			x: -3.5d
+			y: 1.5d
 		}
 	]
 	subtitle: ["{quests.ae2.subtitle}"]

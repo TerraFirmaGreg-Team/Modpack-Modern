@@ -1,4 +1,5 @@
 {
+  "grapplecustomization.angle": "Angle",
   "grapplemod.upgradecategories.double": "Double grappin",
   "grapplemod.upgradecategories.forcefield": "Champ de force",
   "grapplemod.upgradecategories.limits": "Limites",
@@ -18,6 +19,7 @@
   "grappletooltip.climbdown.desc": "- Descendre",
   "grappletooltip.climbup.desc": "- Monter",
   "grappletooltip.controlconfiguration.desc": "(Maintenir Control pour voir la configuration complète)",
+  "grappletooltip.double.desc": "Double-",
   "grappletooltip.jump.desc": "-  Relâcher et sauter (pendant que vous êtes en l'air)",
   "grappletooltip.launcheritem.desc": "Lance le joueur dans les airs",
   "grappletooltip.launcheritemaim.desc": "Utiliser le réticule pour viser",
@@ -56,6 +58,7 @@
   "key.climb.desc": "Grimper",
   "key.climbdown.desc": "Monter",
   "key.climbup.desc": "Descendre",
+  "key.grapplemod.category": "Grappling Hook Mod",
   "key.jumpanddetach.desc": "Sauter et se détacher",
   "key.leftthrow.desc": "Lancer le grappin de gauche",
   "key.motoronoff.desc": "Moteur allumé/éteint",
@@ -63,7 +66,9 @@
   "key.rocket.desc": "Fusée",
   "key.slide.desc": "Glisser",
   "key.slow.desc": "Ralentir / Arrêter de se balancer",
+  "tabs.grapplemod.main_tab": "Grappling Hook Mod",
   "text.autoconfig.grapplemod.option.clientOptions.@Tooltip": "Options qui n'acceptent que le client (afin que vous n'ayez pas besoin d'être synchronisé au serveur)",
   "text.autoconfig.grapplemod.option.clientOptions.camera": "caméra",
-  "text.autoconfig.grapplemod.option.clientOptions.camera.@Tooltip": "Paramètres de la caméra"
+  "text.autoconfig.grapplemod.option.clientOptions.camera.@Tooltip": "Paramètres de la caméra",
+  "text.autoconfig.grapplemod.option.options.grapplinghook.custom.doublehook.angle": "Angle"
 }

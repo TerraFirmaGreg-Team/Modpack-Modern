@@ -52,7 +52,6 @@ function registerGTCEUItemTags(event) {
         event.add("gtceu:extruder_molds", mold);
     });
 
-    // @ts-expect-error According to KJS docs adding tags to tags is supported.
     event.add("gtceu:molds", "#gtceu:casting_molds", "#gtceu:extruder_molds", "gtceu:empty_mold");
 
     // Groups up concrete blocks into tags.
@@ -142,6 +141,16 @@ function registerGTCEUItemTags(event) {
     drums.forEach(drum => {
         event.add('gtceu:drums', drum);
     });
+
+    const wafers = [
+        'gtceu:silicon_wafer',
+        'gtceu:phosphorus_wafer',
+        'gtceu:naquadah_wafer',
+        'gtceu:neutronium_wafer'
+    ];
+    wafers.forEach(wafer => {
+        event.add('tfg:wafers', wafer);
+    });
 };
 
 /** @param {TagEvent.Block} event  */
@@ -178,11 +187,6 @@ function registerGTCEUBlockTags(event) {
     event.add("gtceu:cleanroom_doors", "ad_astra:airlock");
 
     event.remove("forge:needs_netherite_tool", "gtceu:incoloy_ma_956_frame");
-
-    event.add("c:hidden_from_recipe_viewers", "gtceu:bronze_large_boiler")
-    event.add("c:hidden_from_recipe_viewers", "gtceu:steel_large_boiler")
-    event.add("c:hidden_from_recipe_viewers", "gtceu:titanium_large_boiler")
-    event.add("c:hidden_from_recipe_viewers", "gtceu:tungstensteel_large_boiler")
 
     // Groups up concrete blocks into tags.
     Object.entries(global.GTCEU_CONCRETE_BLOCKS).forEach(([type, ids]) => {

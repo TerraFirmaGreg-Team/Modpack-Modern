@@ -53,8 +53,8 @@
   "gui.comforts.config.dayWakeTimeOffset.name": "Зміщення часу пробудження при переході з ночі в день",
   "gui.comforts.config.hammockUse.description": "Час доби, в який можна використовувати гамаки.",
   "gui.comforts.config.hammockUse.name": "Час доби, щоб використати гамак",
-  "gui.comforts.config.hammocksStopPhantoms.description": "Якщо увімкнено, спроба заснути у гамаку запобігає появі фантомів.",
-  "gui.comforts.config.hammocksStopPhantoms.name": "Гамаки зупиняють фантомів",
+  "gui.comforts.config.hammocksStopPhantoms.description": "Якщо увімкнено, спроба заснути у гамаку запобігає появі примар.",
+  "gui.comforts.config.hammocksStopPhantoms.name": "Гамаки зупиняють примар",
   "gui.comforts.config.nightWakeTimeOffset.description": "Кількість часу у тактах, яку потрібно додати або відняти від нового часу після того, як ви проспали весь день.",
   "gui.comforts.config.nightWakeTimeOffset.name": "Зміщення часу пробудження при переході з дня в ніч",
   "gui.comforts.config.restMultiplier.description": "Якщо параметр restrictSleeping увімкнено (true), це значення визначатиме тривалість очікування (що більше число, то раніше можна лягти спати).",
@@ -69,9 +69,11 @@
   "gui.comforts.config.sleepingBagEffects.name": "Ефекти спального мішка",
   "gui.comforts.config.sleepingBagUse.description": "Час доби, протягом якого можна використовувати спальні мішки.",
   "gui.comforts.config.sleepingBagUse.name": "Час доби для використання спальних мішків",
-  "gui.comforts.config.sleepingBagsStopPhantoms.description": "Якщо увімкнено, спроба заснути у спальному мішку запобігає появі фантомів.",
-  "gui.comforts.config.sleepingBagsStopPhantoms.name": "Спальні мішки зупиняють фантомів",
+  "gui.comforts.config.sleepingBagsStopPhantoms.description": "Якщо увімкнено, спроба заснути у спальному мішку запобігає появі примар.",
+  "gui.comforts.config.sleepingBagsStopPhantoms.name": "Спальні мішки зупиняють примар",
   "item.comforts.hammock.placement.tooltip": "Для розміщення потрібен %s.",
   "item.comforts.rope_and_nail.placement.tooltip": "Використовується для розміщення гамаків.",
-  "item.comforts.sleeping_bag.auto_use.tooltip": "Автоматично лягаєте спати.\nЩоб просто розмістити, використовуйте присівши."
+  "item.comforts.sleeping_bag.auto_use.tooltip": "Автоматично лягаєте спати.\nЩоб просто розмістити, використовуйте присівши.",
+  "itemGroup.comforts": "Comforts",
+  "itemGroup.comforts.general": "Comforts"
 }

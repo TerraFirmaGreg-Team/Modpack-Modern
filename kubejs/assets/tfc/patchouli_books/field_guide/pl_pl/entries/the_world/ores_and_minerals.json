@@ -223,7 +223,7 @@
     },
     {
       "type": "tfc:multimultiblock",
-      "text": "Malachite Ores in Marble.",
+      "text": "Rudy malachitu w marmurze.",
       "multiblocks": [
         {
           "pattern": [
@@ -321,7 +321,7 @@
       "type": "patchouli:text",
       "anchor": "bismuthinite",
       "text": "Bismuthinite is an ore of $(thing)Bismuth$() metal. It can be found in $(l:the_world/geology#sedimentary)Sedimentary$() rocks near the surface, or larger and richer veins in $(l:the_world/geology#igneous_intrusive)Igneous Intrusive$() rocks deep underground.",
-      "title": "Przypuszczalny bizmutynit"
+      "title": "Bizmutynit"
     },
     {
       "type": "tfc:multimultiblock",
@@ -647,7 +647,7 @@
         }
       },
       "name": "",
-      "text": "Lignite in Dolomite.",
+      "text": "Węgiel brunatny w dolomicie.",
       "enable_visualize": false
     },
     {
@@ -783,7 +783,7 @@
         }
       },
       "name": "",
-      "text": "Graphite in Gneiss.",
+      "text": "Grafit w gnejsie.",
       "enable_visualize": false
     },
     {
@@ -810,14 +810,14 @@
         }
       },
       "name": "",
-      "text": "Cinnabar in Quartzite.",
+      "text": "Cinnabar w kwarcycie.",
       "enable_visualize": false
     },
     {
       "type": "patchouli:spotlight",
       "anchor": "cryolite",
       "item": "tfc:ore/cryolite",
-      "title": "Przypuszczalny kryolit",
+      "title": "Kryolit",
       "link_recipes": false,
       "text": "Cryolite is a $(thing)Mineral$() which can be ground in the $(l:mechanics/quern)Quern$() to obtain $(thing)Redstone Dust$(). It can be found in veins deep underground, in $(thing)Granite$(), and $(thing)Diorite$()."
     },
@@ -837,7 +837,7 @@
         }
       },
       "name": "",
-      "text": "Cryolite in Granite.",
+      "text": "Kryolit w granicie.",
       "enable_visualize": false
     },
     {
@@ -864,7 +864,7 @@
         }
       },
       "name": "",
-      "text": "Saltpeter in Shale.",
+      "text": "Saletra w łupku ilastym.",
       "enable_visualize": false
     },
     {
@@ -891,7 +891,7 @@
         }
       },
       "name": "",
-      "text": "Sulfur in Gabbro.",
+      "text": "Siarka w gabro.",
       "enable_visualize": false
     },
     {
@@ -918,7 +918,7 @@
         }
       },
       "name": "",
-      "text": "Sylvite in Chert.",
+      "text": "Sylwin w czercie.",
       "enable_visualize": false
     },
     {
@@ -945,7 +945,7 @@
         }
       },
       "name": "",
-      "text": "Borax in Shale.",
+      "text": "Boraks w łupku ilastym.",
       "enable_visualize": false
     },
     {
@@ -972,14 +972,14 @@
         }
       },
       "name": "",
-      "text": "Gypsum in Chalk.",
+      "text": "Gips w kredzie.",
       "enable_visualize": false
     },
     {
       "type": "patchouli:spotlight",
       "anchor": "halite",
       "item": "tfc:ore/halite",
-      "title": "Halityt",
+      "title": "Halit",
       "link_recipes": false,
       "text": "Halite is a $(thing)Mineral$() which can be ground in the $(l:mechanics/quern)Quern$() to make $(thing)Salt$(), which is an important $(l:mechanics/decay#salting)Preservative$(). It can be found in very large flat deposits near the surface in $(l:the_world/geology#sedimentary)Sedimentary$() rocks."
     },
@@ -999,7 +999,7 @@
         }
       },
       "name": "",
-      "text": "Halite in Chalk.",
+      "text": "Halit w kredzie.",
       "enable_visualize": false
     },
     {
@@ -1026,14 +1026,14 @@
         }
       },
       "name": "",
-      "text": "Emerald in Diorite.",
+      "text": "Szmaragd w diorycie.",
       "enable_visualize": false
     },
     {
       "type": "patchouli:spotlight",
       "anchor": "diamond",
       "item": "tfc:ore/diamond",
-      "title": "Przypuszczalny kimberlit",
+      "title": "Kimberlit",
       "link_recipes": false,
       "text": "Kimberlite is a decorative and priceless $(l:mechanics/gems)Gemstone$(). It appears in thin vertical ore formations called $(l:https://en.wikipedia.org/wiki/Volcanic_pipe)Kimberlite Pipes$() which can be up to a hundred blocks tall. It can only be found in $(thing)Gabbro$()."
     },
@@ -1080,7 +1080,7 @@
         }
       },
       "name": "",
-      "text": "Lapis Lazuli in Marble.",
+      "text": "Lazuryt w marmurze.",
       "enable_visualize": false
     },
     {
@@ -1107,7 +1107,7 @@
         }
       },
       "name": "",
-      "text": "Amethyst in Marble.",
+      "text": "Ametyst w marmurze.",
       "enable_visualize": false
     },
     {
@@ -1134,7 +1134,7 @@
         }
       },
       "name": "",
-      "text": "Opal in Basalt.",
+      "text": "Opal w bazalcie.",
       "enable_visualize": false
     }
   ],
