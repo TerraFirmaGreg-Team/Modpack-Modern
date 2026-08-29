@@ -10,6 +10,8 @@
     "abyssalcraft": 1,
     "ad_astra_mars": 1,
     "ad_astra_mercury": 1,
+    "ad_astra_moon": 1,
+    "ad_astra_orbit": 1,
     "ad_astra_venus": 1,
     "betweenlands": 1,
     "cave": 1,
@@ -31,9 +33,13 @@
       "overall": 1,
       "wind.light-wind": 1
     },
-    "ad_astra_mercury_unknown": {
+    "ad_astra_mercury_suspense": {
       "overall": 1,
-      "suspense.suspense": 1
+      "nether": 1
+    },
+    "ad_astra_orbit_suspense": {
+      "overall": 1,
+      "nether": 1
     },
     "end_unknown": {
       "overall": 1,
@@ -46,6 +52,10 @@
     "nether_suspense": {
       "overall": 1,
       "nether": 1
+    },
+    "nether_nether_caves": {
+      "overall": 1,
+      "nether-cave": 1
     },
     "twilightforest_unknown": {
       "overall": 1,
@@ -88,12 +98,12 @@
     },
     "cold": {
       "overall": 1,
-      "wind.light-wind": 1
+      "wind.light-wind": 0.75
     },
     "desert": {
       "overall": 1,
       "cicadas-desert": 1,
-      "wind.light-wind": 1
+      "wind.light-wind": 0.75
     },
     "forest_cold": {
       "overall": 1,
@@ -122,8 +132,8 @@
     },
     "highland": {
       "overall": 1,
-      "heavy-wind": 1,
-      "wind-in-leaves": 1
+      "heavy-wind": 0.75,
+      "wind-in-leaves": 0.85
     },
     "jungle": {
       "overall": 1,
@@ -134,11 +144,28 @@
     },
     "lake": {
       "overall": 1,
+      "ocean": 1,
+      "frog": 1
+    },
+    "lower_nether": {
+      "overall": 1,
+      "suspense-nether": 1
+    },
+    "lush_hollow": {
+      "overall": 1,
+      "frog": 1
+    },
+    "martian_lake": {
+      "overall": 1,
       "ocean": 1
     },
     "mesa": {
       "overall": 1,
       "wind-mesa": 1
+    },
+    "muggy_bog": {
+      "overall": 1,
+      "frog": 1
     },
     "mushroom_fields": {
       "overall": 1,
@@ -148,11 +175,16 @@
     "ocean": {
       "overall": 1,
       "ocean": 1,
-      "wind.light-wind": 1
+      "wind.light-wind": 0.65
     },
     "ocean_deep": {
       "overall": 1,
       "whale": 1
+    },
+    "pale-garden": {
+      "overall": 1,
+      "pale-garden-ambience": 1,
+      "owl": 1
     },
     "plains": {
       "overall": 1,
@@ -163,6 +195,10 @@
     "rain": {
       "overall": 1,
       "rain": 1
+    },
+    "river": {
+      "overall": 1,
+      "ocean": 1
     },
     "savanna": {
       "overall": 1,
@@ -176,11 +212,11 @@
     },
     "sky": {
       "overall": 1,
-      "wind.light-wind": 1
+      "wind.light-wind": 0.65
     },
     "snow": {
       "overall": 1,
-      "wind.light-wind": 1
+      "wind.light-wind": 0.5
     },
     "space": {
       "overall": 1
@@ -233,6 +269,10 @@
     "warden": {
       "overall": 1,
       "warden": 1
+    },
+    "webbed_lair": {
+      "overall": 1,
+      "pale-garden-ambience": 1
     }
   },
   "categories": {
@@ -251,6 +291,7 @@
       }
     },
     "cave": 1,
+    "suspense": 1,
     "weather": 1,
     "wind": 0.65
   },

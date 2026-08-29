@@ -2,17 +2,10 @@
 	"type": "minecraft:geode",
 	"config": {
 		"blocks": {
-			"alternate_inner_layer_provider": {
-				"type": "minecraft:simple_state_provider",
-				"state": {
-					"Name": "gtceu:raw_barite_block"
-				}
-			},
-			"cannot_replace": "#minecraft:features_cannot_replace",
 			"filling_provider": {
 				"type": "minecraft:simple_state_provider",
 				"state": {
-					"Name": "minecraft:air"
+					"Name": "gtceu:raw_barite_block"
 				}
 			},
 			"inner_layer_provider": {
@@ -21,16 +14,16 @@
 					"Name": "gtceu:quartzite_barite_ore"
 				}
 			},
-			"inner_placements": [
-				{
-					"Name": "minecraft:air"
+			"alternate_inner_layer_provider": {
+				"type": "minecraft:simple_state_provider",
+				"state": {
+					"Name": "gtceu:quartzite_quartzite_ore"
 				}
-			],
-			"invalid_blocks": "#minecraft:geode_invalid_blocks",
+			},
 			"middle_layer_provider": {
 				"type": "minecraft:simple_state_provider",
 				"state": {
-					"Name": "tfc:rock/hardened/quartzite"
+					"Name": "minecraft:calcite"
 				}
 			},
 			"outer_layer_provider": {
@@ -38,12 +31,19 @@
 				"state": {
 					"Name": "tfc:rock/hardened/andesite"
 				}
-			}
+			},
+			"inner_placements": [
+				{
+					"Name": "gtceu:quartzite_barite_ore"
+				}
+			],
+			"cannot_replace": "#minecraft:features_cannot_replace",
+			"invalid_blocks": "#minecraft:geode_invalid_blocks"
 		},
 		"crack": {
-			"base_crack_size": 2,
-			"crack_point_offset": 2,
-			"generate_crack_chance": 0.95
+			"base_crack_size": 0,
+			"crack_point_offset": 0,
+			"generate_crack_chance": 0
 		},
 		"distribution_points": {
 			"type": "minecraft:uniform",
@@ -54,8 +54,8 @@
 		},
 		"invalid_blocks_threshold": 1,
 		"layers": {
-			"filling": 1.7,
-			"inner_layer": 2.2,
+			"filling": 0.4,
+			"inner_layer": 2.1,
 			"middle_layer": 3.2,
 			"outer_layer": 4.2
 		},
@@ -77,7 +77,7 @@
 				"min_inclusive": 1
 			}
 		},
-		"use_alternate_layer0_chance": 0.3,
-		"use_potential_placements_chance": 0.35
+		"use_alternate_layer0_chance": 0.4,
+		"use_potential_placements_chance": 0.30
 	}
 }

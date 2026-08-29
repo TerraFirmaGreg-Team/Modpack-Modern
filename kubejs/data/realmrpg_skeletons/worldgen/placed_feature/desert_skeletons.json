@@ -1,0 +1,37 @@
+{
+	"feature": "realmrpg_skeletons:desert_skeletons",
+	"placement": [
+		{
+			"type": "tfc:climate",
+			"max_rainfall": 100
+		},
+		{
+			"type": "minecraft:count",
+			"count": {
+				"type": "uniform",
+				"value": {
+					"min_inclusive": 1,
+					"max_inclusive": 4
+				}
+			}
+		},
+		{
+			"type": "minecraft:in_square"
+		},
+		{
+			"type": "minecraft:height_range",
+			"height": {
+				"type": "minecraft:uniform",
+				"min_inclusive": {
+					"absolute": 60
+				},
+				"max_inclusive": {
+					"below_top": 5
+				}
+			}
+		},
+		{
+			"type": "minecraft:biome"
+		}
+	]
+}

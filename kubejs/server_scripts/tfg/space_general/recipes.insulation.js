@@ -90,9 +90,9 @@ function registerTFGInsulationRecipes(event) {
 	}).id('tfg:shaped/aes_insulation_roll')
 
 	event.recipes.gtceu.assembler('tfg:aes_insulation_sheet')
-		.itemInputs('9x tfg:aes_insulation_sheet')
-		.itemOutputs('tfg:aes_insulation_roll')
-		.circuit(0)
+		.itemInputs('tfg:aes_insulation_roll')
+	    .itemOutputs('9x tfg:aes_insulation_sheet')
+		.circuit(1)
 		.duration(20)
 		.EUt(GTValues.VA[GTValues.LV])
 
@@ -221,12 +221,14 @@ function registerTFGInsulationRecipes(event) {
 		.inputFluids(Fluid.of('tfg:tmos', 1000), Fluid.of('gtceu:distilled_water', 2000))
 		.outputFluids(Fluid.of('gtceu:methanol', 4000))
 		.itemOutputs('3x #forge:dusts/silicon_dioxide')
+		.circuit(1)
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.MV])
 	event.recipes.gtceu.large_chemical_reactor('tfg:silica_gel_synthesis')
 		.inputFluids(Fluid.of('tfg:tmos', 1000), Fluid.of('gtceu:ethanol', 2000), Fluid.of('gtceu:distilled_water', 500),
 			Fluid.of('gtceu:hydrochloric_acid', 100))
 		.outputFluids(Fluid.of('tfg:silica_gel', 1000))
+		.circuit(2)
 		.duration(300)
 		.EUt(GTValues.VA[GTValues.IV])
 	event.recipes.gtceu.chemical_reactor('tfg:silica_gel_soaking')

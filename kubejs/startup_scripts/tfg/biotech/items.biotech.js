@@ -36,4 +36,9 @@ function registerTFGBiotechItems(event) {
 	event.create('tfg:alpha_keratin')
 
 	//#endregion
+	//#region Medicine
+
+	event.create('tfg:empty_capsule');
+
+	//#endregion
 }

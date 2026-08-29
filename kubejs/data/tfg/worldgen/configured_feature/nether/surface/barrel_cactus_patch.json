@@ -1,0 +1,32 @@
+{
+	"type": "minecraft:random_patch",
+	"config": {
+		"feature": {
+			"feature": "tfc:plant/barrel_cactus",
+			"placement": [
+				{
+					"type": "minecraft:block_predicate_filter",
+					"predicate": {
+						"type": "minecraft:matching_blocks",
+						"blocks": "minecraft:air"
+					}
+				},
+				{
+					"type": "block_predicate_filter",
+					"predicate": {
+						"type": "would_survive",
+						"state": {
+							"Name": "tfc:plant/barrel_cactus",
+							"Properties": {
+								"part": "lower"
+							}
+						}
+					}
+				}
+			]
+		},
+		"tries": 16,
+		"xz_spread": 8,
+		"y_spread": 2
+	}
+}

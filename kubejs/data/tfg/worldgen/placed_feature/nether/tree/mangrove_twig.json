@@ -1,0 +1,27 @@
+{
+	"feature": "tfg:nether/tree/mangrove_twig",
+	"placement": [
+		{
+			"type": "minecraft:count",
+			"count": 20
+		},
+		{
+			"type": "minecraft:in_square"
+		},
+		{
+			"type": "minecraft:height_range",
+			"height": {
+				"type": "minecraft:uniform",
+				"max_inclusive": {
+					"below_top": 6
+				},
+				"min_inclusive": {
+					"above_bottom": 120
+				}
+			}
+		},
+		{
+			"type": "minecraft:biome"
+		}
+	]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Стеллажи для банок",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:wood/jarbnet/pine",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Стеллаж для банок — это декоративный блок для хранения $(l:tfc:mechanics/jarring)банок$(), свечей и кувшинов. Его можно открывать и закрывать, щелкнув пустой рукой и нажав $(item)$(k:key.sneak)$(). Если внутри находятся свечи, его можно зажечь, чтобы получить небольшое количество света."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/wood/acacia_jarbnet"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 6
+}

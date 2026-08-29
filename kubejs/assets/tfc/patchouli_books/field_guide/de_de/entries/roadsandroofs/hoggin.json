@@ -1,0 +1,20 @@
+{
+  "name": "Hoggin Paths",
+  "category": "tfc:roadsandroofs",
+  "icon": "rnr:hoggin",
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "anchor": "hoggin_mix",
+      "recipe": "rnr:crafting/hoggin_mix",
+      "title": "Hoggin Mix",
+      "text": "Hoggin is a compactible groundcover made from a mixture of clay, gravel, and sand. It can be applied on a base course to produce a simple path that offers a modest 10% boost to walking speed."
+    },
+    {
+      "type": "patchouli:text",
+      "text": ""
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 4
+}

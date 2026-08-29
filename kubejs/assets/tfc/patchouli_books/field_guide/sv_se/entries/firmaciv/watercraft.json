@@ -1,0 +1,137 @@
+{
+  "name": "Getting Started: Boats",
+  "category": "tfc:firmaciv",
+  "icon": "firmaciv:anchor",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Creating and using a boat may be slightly more involved than you're used to, but there's nothing quite like building the perfect craft and setting off on the high seas. Peruse this manual and learn the ins and outs of carving, crafting, constructing, rowing, paddling, piloting, and customizing to your delight."
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "firmaciv:textures/gui/book/boats.png"
+      ],
+      "border": true,
+      "text": "Travelling the world, or just your locality, is often best done by navigable waterways."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Customization",
+      "text": "You can add blocks to boats! As if you're placing a block on land, press $(item)$(k:key.use)$() while holding a chest, an anvil, or a workbench, to add it to the boat. Press $(item)$(k:key.use)$() to access them. If you can't place a block in a particular place, that's probably because it's the pilot seat! You can't pilot the boat if there's a block in the way! You can remove the blocks by breaking them, like normal."
+    },
+    {
+      "type": "patchouli:image",
+      "border": true,
+      "images": [
+        "firmaciv:textures/gui/book/customization.png"
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Boats as Items",
+      "text": "They don't exist! With the exception of the kayak, if you break a boat, it will only drop some of its ingredients! This means you'll need a kayak if you want to carry a boat over land, and it also means you might want to build a dock for your larger vessels."
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "firmaciv:textures/gui/book/items.png"
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Transporting Animals",
+      "text": "Like always, you can move animals around using boats! However, be aware that larger animals, like horses, will only fit in boats that are big enough. If an animal is riding a boat and is in your way, you only have to crouch and press $(item)$(k:key.use)$() to eject it from the boat. Animals will get restless after 2 days in the boat and will leave the boat on their own in 3 days."
+    },
+    {
+      "type": "patchouli:image",
+      "title": "Piloting",
+      "images": [
+        "firmaciv:textures/gui/book/piloting.png"
+      ],
+      "text": "Each boat has a specific seat that you need to be riding in order to control the boat."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Paddles and Oars",
+      "text": "If you feel like your boat is moving slowly, double check that you're holding the appropriate paddle item, or, if your boat requires oars, that the oars have been equipped to the oarlocks. In some boats, multiple players are able to paddle or row to make the boat go faster."
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "firmaciv:textures/gui/book/paddles.png"
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Cleats and Leads",
+      "text": "Most boats have at least one cleat on them. You can attach a lead to the cleat and use it to pull the boat, and pull small boats up onto the shoreline and up slabs. Leads can also be used to attach boats to fences, and attaching two cleats each to a fence will allow you to easily dock larger boats. You'll find yourself wanting to use leads extensively to stop your boats from drifting away!"
+    },
+    {
+      "type": "patchouli:image",
+      "border": true,
+      "images": [
+        "firmaciv:textures/gui/book/leads.png"
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Anchors and Windlasses",
+      "text": "Large boats have anchors, which can be used to completely stop the boat, provided the anchor is seated in the seafloor and no sails are deployed. The boat will still turn in the wind while it's at anchor. Look for the anchor icon located at the windlass (anchor winch) and press $(item)$(k:key.use)$() to lower and raise the anchor."
+    },
+    {
+      "type": "patchouli:image",
+      "border": true,
+      "images": [
+        "firmaciv:textures/gui/book/anchor.png"
+      ],
+      "text": "The anchor and windlass on a sloop."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Sails",
+      "text": "Sailing vessels, of course, have sails. You'll need to deploy them in order to properly control your boat. Look for the triangular sail icon and press $(item)$(k:key.use)$() to deploy each sail. Since most boats have multiple sails, you can use different combinations of sail deployment to control your speed."
+    },
+    {
+      "type": "patchouli:image",
+      "border": true,
+      "images": [
+        "firmaciv:textures/gui/book/sails.png"
+      ],
+      "text": "Both the jibsail (left) and mainsail (right) have been deployed on this sloop."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Sailing",
+      "text": "Unlike ships that you may be used to, sailing is a skill with Firma: Civilization. When you're piloting a sailing vessel, a new UI element will appear showing the wind speed and direction, as well as the boat's speed. The color of the wind arrow will indicate the difficulty of sailing in that direction. Use your forward and backward movement keys to set the angle of the sails, and experiment to find the best one for the wind angle."
+    },
+    {
+      "type": "patchouli:image",
+      "border": false,
+      "images": [
+        "firmaciv:textures/gui/book/sailing.png"
+      ],
+      "text": "The sailing UI will help you control your vessel."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Painting and Dyeing",
+      "text": "Any boat constructed using Shipwright's Scaffolding can be painted, and any sail can be individually dyed. Simply hold a dye item in your hand and press $(item)$(k:key.use)$() when you see the paint brush icon to either paint a hull or dye a sail. Larger boats have unique patterns for each paint color."
+    },
+    {
+      "type": "patchouli:image",
+      "border": true,
+      "images": [
+        "firmaciv:textures/gui/book/painting.png"
+      ],
+      "text": "A sloop has been painted yellow and its sails have been dyed."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Damage and Repair",
+      "text": "A damaged boat will start to show cracks. For any boat built using Shipwright's Scaffolding, use the appropriate type of planks to repair it. For canoes, use lumber. At 90% damage, a boat will appear to take on water, and at 100% damage, it will sink! This does not apply to Kayaks."
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 0
+}

@@ -13,7 +13,6 @@ const registerTFGRecipes = (event) => {
 
 	registerTFGFoodRecipes(event)
 	registerTFGRefrigeratorRecipes(event)
-	registerTFGMealBagRecipes(event)
 	registerTFGBiomassRecipes(event)
 	// Greenhouse needs to register before pisciculture.
 	registerTFGGreenhouseRecipes(event)
@@ -26,6 +25,7 @@ const registerTFGRecipes = (event) => {
 	registerTFGCollapseRecipes(event)
 	registerTFGStoneDustRecipes(event)
 	registerTFGConcreteRecipes(event)
+	registerTFGAsphaltRoadRecipes(event)
 	registerTFGAlabasterRecipes(event)
 	registerTFGDirtRecipes(event)
 	registerTFGSandRecipes(event)
@@ -44,17 +44,30 @@ const registerTFGRecipes = (event) => {
 	registerTFGWaxRecipes(event)
 	registerTFGRubberRecipes(event)
 	registerTFGWoodRecipes(event)
+	registerTFGWoodenRecipes(event)
 	registerTFGKnappingRecipes(event)
 	registerTFGLeatherRecipes(event)
 	registerTFGClayRecipes(event)
+	registerTFGGlassRecipes(event)
 	registerTFGEquipmentRecipes(event)
 	registerTFGDyeRecipes(event)
+	registerTFGArtisanTableRecipes(event)
+	registerTFGKineticRecipes(event)
+
+	registerTFGHVMaterialRecipes(event)
+	registerTFGMoSiBRecipes(event)
+
+	registerTFGBeneathOreProcRecipes(event)
 
 	registerTFGCasingRecipes(event)
+	registerTFGCircuitRecipes(event)
 	registerTFGEnderPearlRecipes(event)
 	registerTFGMultiblockRecipes(event)
 	registerTFGSteamBloomeryRecipes(event)
 	registerTFGElectronicComponentsRecipes(event)
+	registerTFGBakeliteRecipes(event)
+	registerTFGCoilRecipes(event)
+	registerTFGBouleRecipes(event)
 
 	registerTFGEarlyGasRecipes(event)
 	registerTFGBoilerRecipes(event)
@@ -64,6 +77,9 @@ const registerTFGRecipes = (event) => {
 	registerTFGNuclearComponentsRecipes(event)
 	registerTFGSolarRecipes(event)
 	registerTFGCoalRecipes(event)
+	registerTFGPowerGenBalance(event)
+	registerTFGGarnetSandLine(event)
+	registerTFGBuddingRecipes(event)
 
 	registerTFGZirconiumRecipes(event)
 	registerTFGBromineRecipes(event)
@@ -77,6 +93,8 @@ const registerTFGRecipes = (event) => {
 	registerTFGSpaceSuitRecipes(event)
 	registerTFGInsulationRecipes(event)
 
+	registerTFGBeneathRecipes(event)
+
 	registerTFGMoonRecipes(event)
 	registerTFGMoonPlantRecipes(event)
 	registerTFGMoonRegolithRecipes(event)
@@ -87,4 +105,15 @@ const registerTFGRecipes = (event) => {
 
 	registerTFGVenusRecipes(event)
 	registerTFGBiochemRecipes(event)
+
+	registerTFGEtchingRecipes(event)
+	registerTFGMVMaterialRecipes(event)
+	registerTFGGemSlurriesProcessing(event)
+	registerTFGChromiumProcessing(event)
+
+	registerTFGRepairRecipes(event)
+
+	registerTFGMaterialRemovePipesRecipes(event)
+
+	registerTFGPastoralRecipes(event)
 }

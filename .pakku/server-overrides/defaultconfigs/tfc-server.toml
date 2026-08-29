@@ -139,7 +139,7 @@ familiarityDecayLimit = 0.3
 		#
 		# Number of ticks required for a candle to burn out (1000 = 1 in game hour = 50 seconds), default is 264 hours. Set to -1 to disable candle burnout.
 		#Range: > -1
-		candleTicks = 264000
+		candleTicks = 744000
 
 	[blocks.dryingBricks]
 		#
@@ -167,7 +167,7 @@ familiarityDecayLimit = 0.3
 		#
 		# Tank capacity of a crucible (in mB).
 		#Range: 0 ~ 2147483645
-		crucibleCapacity = 4032
+		crucibleCapacity = 4608
 		#
 		# A modifier for how fast fluid containers empty into crucibles. Containers will empty 1 mB every (this) number of ticks.
 		#Range: > 1
@@ -514,7 +514,7 @@ familiarityDecayLimit = 0.3
 	[blocks.mud]
 		#
 		# If TFC dirt blocks are able to be created into mud blocks using a water-filled fluid container.
-		enableDirtToMudCreation = true
+		enableDirtToMudCreation = false
 
 	[blocks.quern]
 		#
@@ -658,7 +658,7 @@ familiarityDecayLimit = 0.3
 		#
 		# A multiplier for how fast items cool. Higher = faster.
 		#Range: 0.0 ~ 1.7976931348623157E308
-		itemCoolingModifier = 0.8
+		itemCoolingModifier = 0.5
 		#
 		# Should hot item entities cool off when in contact with blocks like water or snow?
 		coolHotItemEntities = true
@@ -750,7 +750,7 @@ familiarityDecayLimit = 0.3
 		# Setting this to zero will cause decay not to apply.
 		# Note that if you set this to zero **food items will lose their creation dates!!**. This is not reversible!
 		#Range: 0.0 ~ 1000.0
-		foodDecayModifier = 0.25
+		foodDecayModifier = 0.5
 		#
 		# Enables negative effects from carrying too many very heavy items, including potion effects.
 		enableOverburdening = true

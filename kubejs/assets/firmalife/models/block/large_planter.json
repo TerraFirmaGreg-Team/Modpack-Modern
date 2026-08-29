@@ -1,0 +1,36 @@
+{
+	"credit": "Made by @vexxel with Blockbench - https://github.com/vexxel",
+	"parent": "block/block",
+	"textures": {
+		"particle": "firmalife:block/devices/planter/bottom",
+		"bottom": "firmalife:block/devices/planter/bottom",
+		"top": "firmalife:block/devices/planter/large_top",
+		"side": "firmalife:block/devices/planter/large_side",
+		"soil": "firmalife:block/potting_soil_dry"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 8, 16],
+			"faces": {
+				"north": {"uv": [0, 8, 16, 16], "texture": "#side"},
+				"east": {"uv": [0, 8, 16, 16], "texture": "#side"},
+				"south": {"uv": [0, 8, 16, 16], "texture": "#side"},
+				"west": {"uv": [0, 8, 16, 16], "texture": "#side"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#top"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#bottom"}
+			}
+		},
+		{
+			"from": [2, 8, 2],
+			"to": [14, 5, 14],
+			"faces": {
+				"north": {"uv": [2, 10, 14, 13], "rotation": 180, "texture": "#side"},
+				"east": {"uv": [2, 10, 14, 13], "rotation": 180, "texture": "#side"},
+				"south": {"uv": [2, 10, 14, 13], "rotation": 180, "texture": "#side"},
+				"west": {"uv": [2, 10, 14, 13], "rotation": 180, "texture": "#side"},
+				"up": {"uv": [2, 2, 14, 14], "texture": "#soil"}
+			}
+		}
+	]
+}

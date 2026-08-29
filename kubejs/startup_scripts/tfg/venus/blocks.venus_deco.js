@@ -34,6 +34,7 @@ function registerTFGWorldGenVenusDecoBlocks(event) {
 		.box(3, 0, 3, 13, 10, 13)
 		.resistance(6)
 		.hardness(1.5)
+		.tagBlock('tfcambiental:warm_stuff')
 		.particles(a => a
 			.range(0.3, 1, 0.3)
 			.velocity(0, 0.05, 0)
@@ -47,10 +48,23 @@ function registerTFGWorldGenVenusDecoBlocks(event) {
 		.box(3, 0, 3, 13, 10, 13)
 		.resistance(6)
 		.hardness(1.5)
+		.tagBlock('tfcambiental:warm_stuff')
 		.particles(a => a
 			.range(0.3, 0.5, 0.3)
 			.velocity(0, 0, 0)
-			.particle('lava')
+			.particle('minecraft:lava')
+			.count(1)
+			.forced(false));
+			
+	event.create('betterend:sulphur_crystal', 'tfg:particle_emitter_decoration')
+		.soundType('deepslate')
+		.mapColor('gold')
+		.box(3, 0, 3, 13, 6, 13)
+		.effect('minecraft:nausea')
+		.particles(a => a
+			.range(1.0, 0.2, 1.0)
+			.velocity(0, 0.07, 0)
+			.particle('tfg:noxious_gas')
 			.count(1)
 			.forced(false));
 
@@ -75,17 +89,6 @@ function registerTFGWorldGenVenusDecoBlocks(event) {
 		.resistance(0.8)
 		.requiresTool(true)
 		.tagBlock('minecraft:mineable/pickaxe')
-
-	// Halite
-	event.create('tfg:rock/halite')
-		.mapColor('quartz')
-		.soundType('deepslate')
-		.hardness(0.8)
-		.resistance(0.8)
-		.requiresTool(true)
-		.tagBlock('minecraft:mineable/pickaxe')
-		.fullBlock(true)
-		.opaque(true)
 
 	//Stromatolite
 	event.create('tfg:rock/raw/stromatolite', 'tfc:raw_rock')
@@ -120,8 +123,7 @@ function registerTFGWorldGenVenusDecoBlocks(event) {
 		.box(3, 0, 3, 13, 14, 13)
 
 	//#region Fluorapatite
-	const fluorapatite_colors = ['blue', 'green', 'brown', 'orange', 'white', 'yellow'];
-	fluorapatite_colors.forEach(color => {
+	global.FLUORAPATITE_COLORS.forEach(color => {
 		const mapColor = color === 'white' ? 'quartz' : `color_${color}`;
 
 		//Sand
@@ -230,6 +232,8 @@ function registerTFGWorldGenVenusDecoBlocks(event) {
 		.mapColor('podzol')
 		.requiresTool(true)
 		.tagBlock('minecraft:mineable/pickaxe')
+		.tagBoth('tfc:rock/raw')
+		.tagBoth('forge:stone')
 
 	event.create('betterend:lucernia_bark')
 		.soundType('netherrack')
@@ -237,19 +241,13 @@ function registerTFGWorldGenVenusDecoBlocks(event) {
 		.requiresTool(true)
 		.tagBlock('minecraft:mineable/pickaxe')
 
-	event.create('betterend:sulphur_crystal', 'tfg:decorative_plant')
-		.soundType('deepslate')
-		.mapColor('gold')
-		.box(3, 0, 3, 13, 6, 13)
 
-	const flavolite = [ 'flavolite', 'flavolite_bricks', 'flavolite_polished', 'flavolite_tiles' ];
-	flavolite.forEach(f => {
-		event.create(`betterend:${f}`)
-			.soundType('deepslate')
-			.mapColor('sand')
-			.requiresTool(true)
-			.tagBlock('minecraft:mineable/pickaxe')
-	})
+	event.create(`betterend:flavolite`, 'tfc:raw_rock')
+		.soundType('deepslate')
+		.mapColor('sand')
+		.requiresTool(true)
+		.tagBlock('minecraft:mineable/pickaxe')
+		.naturallySupported(false)
 
 	event.create(`betterend:flavolite_pillar`)
 		.property(BlockProperties.AXIS)
@@ -259,28 +257,36 @@ function registerTFGWorldGenVenusDecoBlocks(event) {
 		.requiresTool(true)
 		.tagBlock('minecraft:mineable/pickaxe')
 
-	const jadestone = [ 'sandy_jadestone', 'sandy_jadestone_bricks', 'sandy_jadestone_polished', 'sandy_jadestone_tiles' ];
-	jadestone.forEach(j => {
-		event.create(`betterend:${j}`)
-			.soundType('stone')
-			.mapColor('color_light_green')
+	const flavolite = [ 'flavolite_bricks', 'flavolite_polished', 'flavolite_tiles' ];
+	flavolite.forEach(f => {
+		event.create(`betterend:${f}`)
+			.soundType('deepslate')
+			.mapColor('sand')
 			.requiresTool(true)
 			.tagBlock('minecraft:mineable/pickaxe')
 	})
+
+
+	event.create(`betterend:sandy_jadestone`, 'tfc:raw_rock')
+		.soundType('stone')
+		.mapColor('grass')
+		.requiresTool(true)
+		.tagBlock('minecraft:mineable/pickaxe')
+		.naturallySupported(false)
 
 	event.create(`betterend:sandy_jadestone_pillar`)
 		.property(BlockProperties.AXIS)
 		.placementState((event) => event.set(BlockProperties.AXIS, event.clickedFace.axis))
 		.soundType('stone')
-		.mapColor('color_light_green')
+		.mapColor('grass')
 		.requiresTool(true)
 		.tagBlock('minecraft:mineable/pickaxe')
 
-	const sulphuric_rock = [ 'sulphuric_rock', 'sulphuric_rock_bricks', 'sulphuric_rock_polished', 'sulphuric_rock_tiles' ];
-	sulphuric_rock.forEach(s => {
-		event.create(`betterend:${s}`)
-			.soundType('dripstone_block')
-			.mapColor('terracotta_light_gray')
+	const jadestone = [ 'sandy_jadestone_bricks', 'sandy_jadestone_polished', 'sandy_jadestone_tiles' ];
+	jadestone.forEach(j => {
+		event.create(`betterend:${j}`)
+			.soundType('stone')
+			.mapColor('grass')
 			.requiresTool(true)
 			.tagBlock('minecraft:mineable/pickaxe')
 	})
@@ -292,6 +298,15 @@ function registerTFGWorldGenVenusDecoBlocks(event) {
 		.mapColor('terracotta_light_gray')
 		.requiresTool(true)
 		.tagBlock('minecraft:mineable/pickaxe')
+
+	const sulphuric_rock = [ 'sulphuric_rock', 'sulphuric_rock_bricks', 'sulphuric_rock_polished', 'sulphuric_rock_tiles' ];
+	sulphuric_rock.forEach(s => {
+		event.create(`betterend:${s}`)
+			.soundType('dripstone_block')
+			.mapColor('terracotta_light_gray')
+			.requiresTool(true)
+			.tagBlock('minecraft:mineable/pickaxe')
+	})
 
 	// Plants
 
@@ -306,7 +321,7 @@ function registerTFGWorldGenVenusDecoBlocks(event) {
 		.soundType('nether_wart')
 		.mapColor('green_terracotta')
 		.box(3, 0, 3, 13, 16, 13)
-		.tagItem('tfg:venus_plants')
+		.tagBoth('tfg:venus_plants')
 		.tagBlock('tfg:do_not_destroy_in_space')
 
 	event.create('betterend:hydralux_large', 'tfg:tall_decorative_plant')
@@ -314,22 +329,18 @@ function registerTFGWorldGenVenusDecoBlocks(event) {
 		.soundType('nether_wart')
 		.mapColor('green_terracotta')
 		.box(3, 0, 3, 13, 16, 13)
-		.tagItem('tfg:venus_plants')
+		.tagBoth('tfg:venus_plants')
 		.tagBlock('tfg:do_not_destroy_in_space')
 
-	event.create('betterend:shadow_plant', 'tfg:decorative_plant')
-		.soundType('crop')
-		.mapColor('color_black')
+	createPlant(event, "shadow_plant", "venus")
 		.box(3, 0, 3, 13, 10, 13)
-		.tagItem('tfg:venus_plants')
-		.tagBlock('tfg:do_not_destroy_in_space')
 
 	event.create('betterend:twisted_vine', 'tfg:tall_decorative_plant')
 		.height(3)
 		.soundType('crop')
-		.mapColor('color_black')
+		.mapColor('none')
 		.box(3, 0, 3, 13, 16, 13)
-		.tagItem('tfg:venus_plants')
+		.tagBoth('tfg:venus_plants')
 		.tagBlock('tfg:do_not_destroy_in_space')
 
 	event.create('tfg:tall_fused_pillar', 'tfg:tall_decorative_plant')

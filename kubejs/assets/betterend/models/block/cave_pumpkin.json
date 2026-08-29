@@ -8,11 +8,13 @@
 		"top": "betterend:block/cave_pumpkin_top",
 		"side": "betterend:block/cave_pumpkin_side"
 	},
-	"elements": [ 	 
+	"elements": [ 
 		{
 			"__comment": "Box1",
 			"from": [ 1, 0, 1 ],
 			"to": [ 15, 13, 15 ],
+			"forge_data": { "block_light": 15, "sky_light": 15 },
+			"shade": false,
 			"faces": {
 				"down": { "uv": [ 1, 1, 15, 15 ], "texture": "#lantern_bottom" },
 				"north": { "uv": [ 1, 3, 15, 16 ], "texture": "#lantern_side" },

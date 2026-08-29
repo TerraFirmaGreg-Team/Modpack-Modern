@@ -1,0 +1,12 @@
+{
+	"feature": "tfg:venus/terrain/sulfur_fumes_spring",
+	"placement": [
+		{
+			"type": "minecraft:rarity_filter",
+			"chance": 30
+		},
+		{
+			"type": "minecraft:biome"
+		}
+	]
+}

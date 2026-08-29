@@ -6,10 +6,10 @@
 	"effects": {
 		"additions_sound": {
 			"sound": "tfg:ambient.venus_surface.additions",
-			"tick_chance": 0.0111
+			"tick_chance": 0.0015
 		},
-		"sky_color": 5450003,
-		"fog_color": 5450003,
+		"sky_color": 7687245,
+		"fog_color": 7687245,
 		"water_color": 8241044,
 		"water_fog_color": 10866612,
 		"ambient_sound": "tfg:ambient.venus_surface.loop",
@@ -24,23 +24,30 @@
 				"type": "minecraft:ash"
 			},
 			"probability": 0.1
+		},
+		"music": {
+			"max_delay": 24000,
+			"min_delay": 12000,
+			"replace_current_music": false,
+			"sound": {
+				"sound_id": "tfg:music.venus"
+			}
 		}
 	},
 	"features": [
-		[
-			"tfc:erosion"
-		],
 		[
 			"tfg:venus/terrain/lava_spring",
 			"tfg:venus/terrain/lava_delta",
 			"tfg:venus/terrain/lava_lake",
 			"tfg:venus/terrain/lava_fissure",
 			"tfg:venus/terrain/lava_rivulet",
-			"tfg:venus/terrain/magma_rivulet"
-		],
-		[
+			"tfg:venus/terrain/magma_rivulet",
 			"tfg:venus/terrain/basalt_pillar"
 		],
+		[
+			"tfc:erosion"
+		],
+		[],
 		[],
 		[
 			"tfg:venus/terrain/basalt_columns_small",
@@ -60,7 +67,9 @@
 			"tfg:venus/surface/twisted_vine",
 			"tfg:venus/surface/shadow_plant_patch",
 			"tfg:venus/surface/pile_volcanic_ash",
-			"tfg:venus/surface/pile_black_sand"
+			"tfg:venus/surface/pile_black_sand",
+			"tfg:venus/surface/loose_scorchia",
+			"tfg:venus/surface/loose_crackrack"
 		],
 		[
 			"tfg:venus/terrain/lava_fill"
@@ -70,24 +79,20 @@
 	"has_precipitation": true,
 	"spawn_costs": {
 		"endermanoverhaul:desert_enderman": {
-			"energy_budget": 0.05,
-			"charge": 0.9
+			"energy_budget": 0.15,
+			"charge": 0.7
 		},
 		"endermanoverhaul:savanna_enderman": {
-			"energy_budget": 0.05,
-			"charge": 0.9
+			"energy_budget": 0.15,
+			"charge": 0.7
 		},
 		"endermanoverhaul:nether_wastes_enderman": {
-			"energy_budget": 0.05,
-			"charge": 0.9
+			"energy_budget": 0.15,
+			"charge": 0.7
 		},
 		"minecraft:enderman": {
-			"energy_budget": 0.05,
-			"charge": 0.9
-		},
-		"species:cliff_hanger": {
-			"energy_budget": 0.3,
-			"charge": 0.3
+			"energy_budget": 0.15,
+			"charge": 0.7
 		},
 		"ad_astra:sulfur_creeper": {
 			"energy_budget": 0.15,
@@ -115,6 +120,12 @@
 		"ambient": [],
 		"axolotls": [],
 		"creature": [
+			{
+				"type": "minecraft:strider",
+				"maxCount": 5,
+				"minCount": 3,
+				"weight": 100
+			},
 			{
 				"type": "arthropocolypse:ice_crawler",
 				"maxCount": 2,
@@ -174,12 +185,6 @@
 			},
 			{
 				"type": "primitive_creatures:golem_2",
-				"maxCount": 3,
-				"minCount": 1,
-				"weight": 100
-			},
-			{
-				"type": "species:cliff_hanger",
 				"maxCount": 3,
 				"minCount": 1,
 				"weight": 100

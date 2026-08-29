@@ -66,6 +66,8 @@ function registerTFGElectronicComponentsRecipes(event) {
 		.duration(50)
 		.EUt(7)
 
+	TFGHelpers.registerMaterialInfo('create:electron_tube', [GTMaterials.Air, 1])
+
 	// Vacuum Tubes
 	event.remove({ id: 'gtceu:shaped/vacuum_tube' })
 	event.replaceInput({ id: 'gtceu:assembler/vacuum_tube_plain' }, 'gtceu:steel_bolt', 'gtceu:resin_circuit_board')
@@ -87,7 +89,7 @@ function registerTFGElectronicComponentsRecipes(event) {
 		'gtceu:ulv_voltage_coil',
 	], 'gtceu:magnetic_iron_rod', [
 		event.recipes.createDeploying('gtceu:magnetic_iron_rod', ['gtceu:magnetic_iron_rod', '#forge:fine_wires/lead'])
-	]).transitionalItem('gtceu:magnetic_iron_rod').loops(32).id('tfg:sequenced_assembly/ulv_voltage_coil')
+	]).transitionalItem('gtceu:magnetic_iron_rod').loops(16).id('tfg:sequenced_assembly/ulv_voltage_coil')
 
 	// LV basic circuit
 	event.remove({ id: 'gtceu:shaped/electronic_circuit_lv' })
@@ -169,44 +171,6 @@ function registerTFGElectronicComponentsRecipes(event) {
 		.EUt(GTValues.VA[GTValues.EV])
 		.cleanroom(CleanroomType.CLEANROOM)
 
-	// Change components of IV mainframe to nano chip
-	event.remove({ id: 'gtceu:circuit_assembler/mainframe_iv_asmd_soldering_alloy'})
-	event.remove({ id: 'gtceu:circuit_assembler/mainframe_iv'})
-	event.remove({ id: 'gtceu:circuit_assembler/mainframe_iv_soldering_alloy'})
-	event.remove({ id: 'gtceu:circuit_assembler/mainframe_iv_asmd'})
-
-	event.recipes.gtceu.circuit_assembler('tfg:circuit_assembler/mainframe_iv')
-		.itemInputs('2x gtceu:aluminium_frame', '2x gtceu:micro_processor_computer', '8x #gtceu:inductors', '16x #gtceu:capacitors', 'gtceu:nano_cpu_chip', '16x gtceu:annealed_copper_single_wire')
-		.inputFluids(Fluid.of('gtceu:tin', 576))
-		.itemOutputs('gtceu:micro_processor_mainframe')
-		.duration(20 * 40)
-		.EUt(GTValues.VA[GTValues.HV])
-		.cleanroom(CleanroomType.CLEANROOM)
-
-	event.recipes.gtceu.circuit_assembler('tfg:circuit_assembler/mainframe_iv_soldering_alloy')
-		.itemInputs('2x gtceu:aluminium_frame', '2x gtceu:micro_processor_computer', '8x #gtceu:inductors', '16x #gtceu:capacitors', 'gtceu:nano_cpu_chip', '16x gtceu:annealed_copper_single_wire')
-		.inputFluids(Fluid.of('gtceu:soldering_alloy', 288))
-		.itemOutputs('gtceu:micro_processor_mainframe')
-		.duration(20 * 40)
-		.EUt(GTValues.VA[GTValues.HV])
-		.cleanroom(CleanroomType.CLEANROOM)
-
-	event.recipes.gtceu.circuit_assembler('tfg:circuit_assembler/mainframe_iv_asmd')
-		.itemInputs('2x gtceu:aluminium_frame', '2x gtceu:micro_processor_computer', '2x gtceu:advanced_smd_inductor', '4x gtceu:advanced_smd_capacitor', 'gtceu:nano_cpu_chip', '16x gtceu:annealed_copper_single_wire')
-		.inputFluids(Fluid.of('gtceu:tin', 576))
-		.itemOutputs('gtceu:micro_processor_mainframe')
-		.duration(20 * 20)
-		.EUt(GTValues.VA[GTValues.HV])
-		.cleanroom(CleanroomType.CLEANROOM)
-
-	event.recipes.gtceu.circuit_assembler('tfg:circuit_assembler/mainframe_iv_asmd_soldering_alloy')
-		.itemInputs('2x gtceu:aluminium_frame', '2x gtceu:micro_processor_computer', '2x gtceu:advanced_smd_inductor', '4x gtceu:advanced_smd_capacitor', 'gtceu:nano_cpu_chip', '16x gtceu:annealed_copper_single_wire')
-		.inputFluids(Fluid.of('gtceu:soldering_alloy', 288))
-		.itemOutputs('gtceu:micro_processor_mainframe')
-		.duration(20 * 20)
-		.EUt(GTValues.VA[GTValues.HV])
-		.cleanroom(CleanroomType.CLEANROOM)
-
 	// Quantum Eye
 	event.replaceInput({ id: 'gtceu:assembler/field_generator_ev' }, 'minecraft:nether_star', 'gtceu:quantum_eye')
 
@@ -251,4 +215,14 @@ function registerTFGElectronicComponentsRecipes(event) {
 		.inputFluids(Fluid.of('gtceu:neon', 1000))
 		.duration(700)
 		.EUt(2720)
+
+	event.shaped('tfg:steel_drill_head', [
+		'ABA',
+		'ABA',
+		'BCB'
+	], {
+		A: '#forge:plates/wrought_iron',
+		B: '#forge:plates/steel',
+		C: '#forge:tools/hammers'
+	}).id('tfg:shaped/steel_drill_head')
 }

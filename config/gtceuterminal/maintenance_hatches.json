@@ -1,0 +1,34 @@
+{
+  "version": "2.1",
+  "description": "GTCEu Terminal - Maintenance Hatch Configuration",
+  "hatches": [
+    {
+      "blockId": "gtceu:maintenance_hatch",
+      "displayName": "Maintenance Hatch",
+      "tierName": "LV",
+      "tier": 1,
+      "maintenanceType": "STANDARD"
+    },
+    {
+      "blockId": "gtceu:auto_maintenance_hatch",
+      "displayName": "Auto-Maintenance Hatch",
+      "tierName": "HV",
+      "tier": 3,
+      "maintenanceType": "AUTO"
+    },
+    {
+      "blockId": "gtceu:configurable_maintenance_hatch",
+      "displayName": "Configurable Maintenance Hatch",
+      "tierName": "HV",
+      "tier": 3,
+      "maintenanceType": "CONFIGURABLE"
+    },
+    {
+      "blockId": "gtceu:cleaning_maintenance_hatch",
+      "displayName": "Cleaning Maintenance Hatch",
+      "tierName": "HV",
+      "tier": 3,
+      "maintenanceType": "CLEANING"
+    }
+  ]
+}

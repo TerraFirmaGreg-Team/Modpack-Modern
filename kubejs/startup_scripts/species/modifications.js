@@ -13,3 +13,9 @@ function registerSpeciesBlockModifications(event) {
 		block.lightEmission = 0
 	})
 }
+
+function registerSpeciesItemModifications(event) {
+	event.modify('species:harpoon', item => {
+		item.maxDamage = 1024
+	})
+}

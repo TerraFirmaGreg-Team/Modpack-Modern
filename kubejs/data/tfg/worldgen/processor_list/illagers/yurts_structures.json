@@ -22,7 +22,7 @@
 						"predicate_type": "minecraft:block_match"
 					},
 					"location_predicate": {
-						"block": "tfc:river_water",
+						"block": "tfc:fluid/river_water",
 						"predicate_type": "minecraft:block_match"
 					},
 					"output_state": {

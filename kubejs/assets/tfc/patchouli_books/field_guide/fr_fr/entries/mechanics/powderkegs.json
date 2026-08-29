@@ -1,0 +1,49 @@
+{
+    "name": "Poudrières",
+    "category": "tfc:mechanics",
+    "icon": "tfc:powderkeg",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Les $(thing)Poudrières() sont des appareils servant à créer des explosions. Elles possèdent un inventaire de 12 emplacements, qui ne peuvent contenir que de la $(thing)poudre à canon$(). La force de l'explosion est proportionnelle à la quantité de poudre utilisée."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfc:powderkeg[sealed=true]"
+                }
+            },
+            "name": "La poudrière",
+            "text": "Tout comme les $(l:mechanics/barrels)Tonneaux$(), les poudrières peuvent être scellées et descellées avec $(item)$(k:key.use)$(). Seules les poudrières scellées peuvent être détonées.",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:text",
+            "text": "L'explosion d'une poudrière provoque la détonation d'autres poudrières. Tous les blocs détruits dans l'explosion tomberont au sol, mais pas nécessairement à l'endroit d'où ils viennent."
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "tfc:crafting/powderkeg",
+            "text": "Les poudrières sont fabriquées en ajoutant du $(l:mechanics/dye)Colorant rouge$() et de la ficelle à la fabrication d'un tonneau."
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "tfg:shapeless/gunpowder_tfc_style",
+            "recipe2": "tfg:shapeless/gunpowder_graphite"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "On peut créer de la poudre à canon de deux manières : la première formulation demande de la poudre de $(l:the_world/ores_and_minerals#saltpeter)Salpêtre$(), $(l:the_world/ores_and_minerals#saltpeter)Soufre$(), et $(l:mechanics/charcoal_pit)Charbon$(). Les poudres se font à l'aide d'une $(l:mechanics/quern)Meule$(). Si vous avez accès au $(l:the_world/ores_and_minerals#graphite)Graphite$(), une recette plus productive peut être utilisée."
+        }
+    ],
+    "read_by_default": true
+}

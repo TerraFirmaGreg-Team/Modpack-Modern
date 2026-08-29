@@ -1,0 +1,64 @@
+{
+    "name": "Matériaux avancés",
+    "category": "tfc:mechanics",
+    "icon": "tfc:brick/rhyolite",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "En plus des $(l:getting_started/building_materials)matériaux de construction$() primitifs de l'âge de pierre, l'acquisition d'outils en métal offre la possibilité d'obtenir des matériaux plus avancés."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br) 1. $(l:mechanics/advanced_building_materials#alabaster)Albâtre$()$(br) 2. $(l:mechanics/advanced_building_materials#bricks_and_mortar)Briques et mortier$()$(br)",
+            "title": "Contenu"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "alabaster",
+            "text": "L'albâtre est un bloc de construction fabriqué à partir de $(l:the_world/ores_and_minerals#gypsum)Gypse$(). Bien qu'on puisse directement transformer le $(l:the_world/ores_and_minerals#gypsum)Gypse$() en albâtre, il est plus efficace de sceller un peu de $(l:the_world/ores_and_minerals#gypsum)Gypse$() dans tonneau contenant 100 mB d'eau de chaux.",
+            "title": "Albâtre"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "tfc:crafting/alabaster_brick/raw_gypsum",
+            "recipe2": "tfc:crafting/alabaster_bricks",
+            "title": "Briques d'albâtre"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "L'albâtre peut être $(l:mechanics/dye)teint$() dans un $(l:mechanics/barrels)tonneau$() de teinture de n'importe quelle couleur. Les blocs d'albâtre brut peuvent également être $(l:mechanics/chisel)ciselé$() en $(thing)Albâtre poli$() grâce au mode $(thing)Polissage$() du ciseau, ou bien transformé escaliers, dalles et murets.",
+            "title": "Décorations d'albâtre"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "tfc:crafting/alabaster/magenta_bricks_stairs",
+            "recipe2": "tfc:crafting/alabaster/magenta_polished_slab",
+            "title": "Escaliers et dalles"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "bricks_and_mortar",
+            "text": "Des $(thing)Briques de pierre$() peuvent être fabriquées grâce à un $(l:mechanics/chisel)Ciseau$() et quelques cailloux. Elles ont ensuite besoin de $(thing)Mortier$() afin de former un bloc de construction résistant.$(br2)On peut créer du mortier en ajoutant du $(thing)sable$() dans un tonneau d'$(l:mechanics/barrels#limewater)eau de chaux$().",
+            "title": "Briques et mortier"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "tfc:crafting/rock/gneiss_brick",
+            "recipe2": "tfc:crafting/rock/gneiss_bricks"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "On peut aussi créer d'autres blocs de décoration, comme les $(thing)Briques craquelées$() et la $(thing)Pierre sculptée$(). Des blocs de pierre $(thing)moussus$() peuvent aussi être créés en plaçant des pierres ou des briques sous l'eau, près de pierres ou briques moussues existantes. La mousse va alors se propager aux blocs proches."
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "tfc:crafting/rock/gneiss_chiseled",
+            "recipe2": "tfc:crafting/rock/gneiss_cracked"
+        }
+    ],
+    "read_by_default": true,
+    "extra_recipe_mappings": {
+        "tfc:alabaster/raw": 2,
+        "tfc:alabaster/polished": 2
+    }
+}

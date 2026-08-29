@@ -7,5 +7,11 @@ function registerBeneathItemModifications(event) {
 	event.modify('beneath:cursed_hide', item => {
 		item.fireResistant = true
 	})
+}
 
+function registerBeneathBlockModifications(event) {
+
+	event.modify('beneath:gleamflower', block => {
+		block.lightEmission = 8
+	})
 }

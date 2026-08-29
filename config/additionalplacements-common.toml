@@ -4,7 +4,7 @@
 	#Show tooltip when a block has additional placements
 	tooltip = true
 	#Check for and notify of mismatching tags. Only works when the same option in the server/world config is true.
-	check_tags = true
+	check_tags = false
 	#Automatically rebuild and reload the generated tags datapack when a tagging mismatch is detected. Only works when the same option in the server/world config is true.
 	auto_rebuild_tags = true
 	#Log missing or additional tags on generated blocks.

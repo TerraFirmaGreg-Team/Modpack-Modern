@@ -5,13 +5,28 @@ function registerTFGNuclearItems(event) {
 	// Empty Fission Rod
 
 	event.create('tfg:empty_rod')
-		.translationKey('item.tfg.empty_road')
-		.texture('tfg:item/fuel_rod_empty')
+		.translationKey('item.tfg.empty_rod')
+		.texture('tfg:item/fission_rod/fuel_rod_empty')
+		.tag('tfg:fission_rods')
+
+	event.create('tfg:empty_rod_t2')
+		.translationKey('item.tfg.empty_rod_t2')
+		.texture('tfg:item/fission_rod/fuel_rod_empty_t2')
+		.tag('tfg:fission_rods')
+
+	event.create('tfg:empty_rod_t3')
+		.translationKey('item.tfg.empty_rod_t3')
+		.texture('tfg:item/fission_rod/fuel_rod_empty_t3')
 		.tag('tfg:fission_rods')
 
 	event.create('tfg:refrigerant_pellet')
 		.translationKey('item.tfg.refrigerant_pellet')
 		.texture('tfg:item/refrigerant_pellet')
+		.tag('tfg:fission_coolant')
+
+	event.create('tfg:terrafirmaguard_pa6')
+		.translationKey('item.tfg.terrafirmaguard_pa6')
+		.texture('tfg:item/terrafirmaguard_pa6')
 		.tag('tfg:fission_coolant')
 
 	// Moderator Line

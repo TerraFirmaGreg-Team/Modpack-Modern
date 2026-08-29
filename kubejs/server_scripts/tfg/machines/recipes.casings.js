@@ -9,6 +9,25 @@ function registerTFGCasingRecipes(event) {
 		.duration(2.5 * 20)
 		.EUt(16)
 
+	event.shaped('2x tfg:casings/sterling_silver_casing', [
+		'ABA',
+		'ACA',
+		'ADA'
+	], {
+		A: '#forge:plates/sterling_silver',
+		B: '#forge:tools/hammers',
+		C: '#forge:frames/invar',
+		D: '#forge:tools/wrenches'
+	}).id('tfg:shaped/sterling_silver_casing')
+
+	event.recipes.gtceu.assembler('sterling_silver_casing')
+		.itemInputs('6x #forge:plates/sterling_silver', '#forge:frames/invar')
+		.itemOutputs('2x tfg:casings/sterling_silver_casing')
+		.circuit(6)
+		.duration(2.5 * 20)
+		.EUt(16)
+		.addMaterialInfo(true)
+
 	// Railgun
 	global.GTCEU_SUPERCONDUCTORS.forEach((type, index) => {
 		const multiplier = index + 1
@@ -22,7 +41,7 @@ function registerTFGCasingRecipes(event) {
 			)
 			.inputFluids(Fluid.of('gtceu:epoxy', 144))
 			.itemOutputs(Item.of('tfg:superconductor_coil_small', 4 * multiplier))
-			.circuit(4)
+			.circuit(6)
 			.duration(400)
 			.EUt(GTValues.VA[GTValues.MV])
 
@@ -34,7 +53,7 @@ function registerTFGCasingRecipes(event) {
 				ChemicalHelper.get(TagPrefix.wireGtSingle, GTMaterials[type.materialId], 4))
 			.inputFluids(Fluid.of('gtceu:epoxy', 144))
 			.itemOutputs(Item.of('tfg:superconductor_coil_large', 4 * multiplier))
-			.circuit(7)
+			.circuit(6)
 			.duration(600)
 			.EUt(GTValues.VA[GTValues.MV])
 	})
@@ -51,6 +70,7 @@ function registerTFGCasingRecipes(event) {
 		.circuit(4)
 		.duration(800)
 		.EUt(GTValues.VA[GTValues.MV])
+		.addMaterialInfo(true)
 
 	event.recipes.gtceu.assembler('tfg:assembler/machine_casing_aluminium_plated_steel')
 		.itemInputs(
@@ -62,6 +82,7 @@ function registerTFGCasingRecipes(event) {
 		.circuit(6)
 		.duration(20 * (2.5))
 		.EUt(GTValues.VH[GTValues.LV])
+		.addMaterialInfo(true, true)
 
 	// Solar
 	event.recipes.gtceu.assembler('basic_solar_casing')
@@ -75,7 +96,7 @@ function registerTFGCasingRecipes(event) {
 	event.recipes.gtceu.assembler('advanced_solar_casing')
 		.itemInputs('8x tfg:casings/machine_casing_blue_solar_panel', 'ad_astra:photovoltaic_etrium_cell')
 		.itemOutputs('8x tfg:casings/machine_casing_green_solar_panel')
-		.inputFluids(Fluid.of('gtceu:soldering_alloy', 288))
+		.inputFluids(Fluid.of('tfg:woods_metal', 288))
 		.circuit(6)
 		.duration(2.5 * 20)
 		.EUt(16)
@@ -83,14 +104,14 @@ function registerTFGCasingRecipes(event) {
 	event.recipes.gtceu.assembler('elite_solar_casing')
 		.itemInputs('8x tfg:casings/machine_casing_green_solar_panel', 'ad_astra:photovoltaic_vesnium_cell')
 		.itemOutputs('8x tfg:casings/machine_casing_red_solar_panel')
-		.inputFluids(Fluid.of('gtceu:soldering_alloy', 288))
+		.inputFluids(Fluid.of('tfg:bi_pb_sn_cd_in_tl', 288))
 		.circuit(6)
 		.duration(2.5 * 20)
 		.EUt(16)
 
 	event.recipes.gtceu.assembler('tfg:reflector_from_lens')
 		.itemInputs(
-			'24x #forge:lenses',
+			'24x gtceu:glass_lens',
 			ChemicalHelper.get(TagPrefix.frameGt, GTMaterials.BlackSteel, 1)
 		)
 		.inputFluids(Fluid.of('gtceu:silver', 1296))
@@ -118,6 +139,7 @@ function registerTFGCasingRecipes(event) {
 		.circuit(6)
 		.duration(2.5 * 20)
 		.EUt(16)
+		.addMaterialInfo(true)
 
 	// Evaporation
 	event.recipes.gtceu.assembler('tfg:casings/machine_casing_stainless_evaporation')
@@ -127,15 +149,17 @@ function registerTFGCasingRecipes(event) {
 		.circuit(6)
 		.duration(2.5 * 20)
 		.EUt(GTValues.VA[GTValues.HV])
+		.addMaterialInfo(true, true)
 
 	// Ostrum Linear Acclerator
 	event.recipes.gtceu.assembler('tfg:casings/machine_casing_mars')
 		.itemInputs('gtceu:clean_machine_casing', '4x #forge:double_wires/kanthal')
-		.inputFluids(Fluid.of('gtceu:polybenzimidazole', 288))
+		.inputFluids(Fluid.of('gtceu:polytetrafluoroethylene', 288))
 		.itemOutputs('tfg:casings/machine_casing_mars')
 		.circuit(6)
 		.duration(2.5 * 20)
 		.EUt(GTValues.VA[GTValues.HV])
+		.addMaterialInfo(true, true)
 
 	event.recipes.gtceu.assembler('gtceu:atomic_casing')
 		.itemInputs('4x #forge:dense_plates/lead', '2x #forge:plates/rtm_alloy', '#forge:frames/titanium')
@@ -144,6 +168,47 @@ function registerTFGCasingRecipes(event) {
 		.circuit(6)
 		.duration(2.5 * 20)
 		.EUt(GTValues.VA[GTValues.HV])
+		.addMaterialInfo(true, true)
+
+	// Heat Battery deafission:battery_heat_port_ev
+
+	event.recipes.gtceu.assembler('tfg:battery_heat_port_ev')
+		.itemInputs(Item.of('gtceu:ev_machine_hull', 1), Item.of('gtceu:rtm_alloy_coil_block'), Item.of('gtceu:silicon_plate', 6))
+		.inputFluids(Fluid.of('gtceu:mercury', 4000))
+		.itemOutputs('deafission:battery_heat_port_ev')
+		//.circuit(6)
+		.duration(2.5 * 20)
+		.EUt(GTValues.VA[GTValues.EV])
+		.addMaterialInfo(true, true)
+
+	event.recipes.gtceu.assembler('tfg:heat_input_hatch_ev')
+		.itemInputs(Item.of('gtceu:ev_machine_hull', 1), Item.of('gtceu:rtm_alloy_coil_block'), Item.of('gtceu:beryllium_plate', 6))
+		.inputFluids(Fluid.of('gtceu:mercury', 4000))
+		.itemOutputs(Item.of('deafission:heat_input_hatch_ev', 1))
+		//.circuit(6)
+		.duration(2.5 * 20)
+		.EUt(GTValues.VA[GTValues.EV])
+		.addMaterialInfo(true, true)
+
+	// Small Modular Turbine 
+
+	event.recipes.gtceu.assembler('tfg:machine_casing_desh_ptfe')
+		.itemInputs('4x #forge:dense_plates/desh', '2x #forge:dense_plates/lead', Item.of('gtceu:hsla_steel_frame'))
+		.inputFluids(Fluid.of('gtceu:polytetrafluoroethylene', 288))
+		.itemOutputs('tfg:casings/machine_casing_desh_ptfe')
+		.circuit(6)
+		.duration(2.5 * 20)
+		.EUt(GTValues.VA[GTValues.HV])
+		.addMaterialInfo(true, true)
+
+	event.recipes.gtceu.assembler('tfg:uv_smr_fluid_import_hatch')
+		.itemInputs('4x #forge:dense_plates/desh', '2x #forge:dense_plates/lead', Item.of('gtceu:iv_input_hatch', 1))
+		.inputFluids(Fluid.of('gtceu:polytetrafluoroethylene', 288))
+		.itemOutputs('tfg:uv_smr_fluid_import_hatch')
+		//.circuit(6)
+		.duration(2.5 * 20)
+		.EUt(GTValues.VA[GTValues.EV])
+		.addMaterialInfo(true, true)
 
 	// Vacuum Intake
 	event.shaped('tfg:casings/machine_casing_vacuum_engine_intake', [
@@ -167,13 +232,33 @@ function registerTFGCasingRecipes(event) {
 		.duration(50)
 		.EUt(GTValues.VH[GTValues.LV])
 		.circuit(2)
+		.addMaterialInfo(true)
 
 	event.recipes.gtceu.assembler('tfg:casings/machine_casing_power_casing')
 		.itemInputs('gtceu:ostrum_frame', '4x #forge:plates/titanium_tungsten_carbide', '16x #forge:fine_wires/copper',
 					'16x #forge:fine_wires/tungsten_bismuth_oxide_composite')
 		.inputFluids(Fluid.of('gtceu:reinforced_epoxy_resin', 288))
-		.itemOutputs('2x tfg:machine_casing_power_casing')
+		.itemOutputs('4x tfg:machine_casing_power_casing')
 		.circuit(6)
 		.duration(2.5 * 20)
 		.EUt(GTValues.VA[GTValues.EV])
+		.addMaterialInfo(true, true)
+
+	event.recipes.gtceu.assembler('tfg:casings/machine_casing_ptfe_black')
+		.itemInputs('6x #forge:plates/black_steel', Item.of('gtceu:black_steel_frame'))
+		.inputFluids(Fluid.of('gtceu:polytetrafluoroethylene', 216))
+		.itemOutputs(Item.of('tfg:casings/machine_casing_ptfe_black', 2))
+		.circuit(6)
+		.duration(2.5 * 20)
+		.EUt(GTValues.VA[GTValues.LV])
+		.addMaterialInfo(true, true)
+
+	event.recipes.gtceu.assembler('tfg:casings/machine_casing_ae2')
+		.itemInputs('6x #forge:plates/certus_quartz', Item.of('gtceu:stainless_steel_frame'))
+		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144))
+		.itemOutputs(Item.of('tfg:casings/machine_casing_ae2', 2))
+		.circuit(6)
+		.duration(2.5 * 20)
+		.EUt(GTValues.VA[GTValues.LV])
+		.addMaterialInfo(true, true)
 }

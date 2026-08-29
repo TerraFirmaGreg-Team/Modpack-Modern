@@ -1,0 +1,58 @@
+{
+  "name": "舗装車",
+  "category": "tfc:roadsandroofs",
+  "icon": "tfg:rnr_plow",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)舗装車$()は、道路を素早く効率よく敷設するための専用カートです。\n道路用の素材や$(thing)砕石路盤材$()を入れることで、道路を作ることができます。\nまた、すでに設置されている路盤を舗装することも可能です"
+    },
+    {
+      "type": "patchouli:image",
+      "title": "舗装車",
+      "images": [
+        "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart.png"
+      ],
+      "border": true
+    },
+    {
+      "type": "patchouli:image",
+      "title": "幅調整スライダー",
+      "images": [
+        "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_gui_width.png"
+      ],
+      "border": true,
+      "text": "GUIで道幅を調整できます"
+    },
+    {
+      "type": "patchouli:image",
+      "title": "道幅の変化",
+      "images": [
+        "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_path_width.png"
+      ],
+      "border": true
+    },
+    {
+      "type": "patchouli:image",
+      "title": "ランダムモード",
+      "images": [
+        "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_gui_random.png"
+      ],
+      "border": true,
+      "text": "ランダムなパターンで道の素材を設置するモードがあります。"
+    },
+    {
+      "type": "patchouli:image",
+      "title": "ランダムモードで舗装された道",
+      "images": [
+        "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_path_random.png"
+      ],
+      "border": true
+    }
+  ],
+  "read_by_default": true,
+  "extra_recipe_mappings": {
+    "tfg:rnr_plow": 0
+  },
+  "sortnum": 23
+}

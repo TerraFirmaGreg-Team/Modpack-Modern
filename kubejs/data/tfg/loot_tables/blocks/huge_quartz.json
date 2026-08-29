@@ -1,0 +1,65 @@
+{
+    "type": "minecraft:block",
+    "pools": [
+        {
+            "name": "loot_pool",
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:alternatives",
+                    "children": [
+                        {
+                            "type": "minecraft:item",
+                            "name": "tfg:huge_quartz",
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:match_tool",
+                                    "predicate": {
+                                        "items": [
+                                            "tfc:gem_saw"
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "minecraft:alternatives",
+                            "children": [
+                                {
+                                    "type": "minecraft:item",
+                                    "name": "gtceu:exquisite_nether_quartz_gem",
+                                    "conditions": [
+                                        {
+                                            "condition": "minecraft:random_chance",
+                                            "chance": 0.01
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "minecraft:item",
+                                    "name": "gtceu:flawless_nether_quartz_gem",
+                                    "conditions": [
+                                        {
+                                            "condition": "minecraft:random_chance",
+                                            "chance": 0.04
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "minecraft:item",
+                                    "name": "minecraft:quartz",
+                                    "conditions": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "conditions": [
+                {
+                    "condition": "minecraft:survives_explosion"
+                }
+            ]
+        }
+    ]
+}

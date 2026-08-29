@@ -1,0 +1,18 @@
+{
+    "variants" : {
+        "default" : "model:0"
+    },
+    
+    "modelConfigs" : [
+        {
+            "baseScale" : 0.35,
+            "modelMainPartFieldAliases" : [
+                "su.terrafirmagreg.core.common.entity.animals.tfcbison.TFCBisonModel;head",
+                "su.terrafirmagreg.core.common.entity.animals.tfcbison.TFCBisonModel;horn_1",
+                "su.terrafirmagreg.core.common.entity.animals.tfcbison.TFCBisonModel;horn_2"
+            ]
+        }
+    ],
+
+    "variantMethod" : "xaero.hud.minimap.radar.icon.definition.BuiltInRadarIconDefinitions.getVariant"
+}

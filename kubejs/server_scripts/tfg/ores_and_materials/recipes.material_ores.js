@@ -92,38 +92,62 @@ function processPoorRawOre(event, material) {
 		.EUt(16)
 
 	if (material.hasProperty(PropertyKey.GEM)) {
-		const gemItem = ChemicalHelper.get(TagPrefix.gem, material, crushedOreItem.getCount());
-		hammerRecipe.chancedOutput(gemItem, 7500, 950)
+		const half = crushedOreItem.getCount() / 2;
+		if (half >= 1) {
+			const gemItem = ChemicalHelper.get(TagPrefix.gem, material, half);
+			hammerRecipe.itemOutputs(gemItem);
 
-		event.recipes.greate.pressing(Item.of(gemItem).withChance(0.75), poorOreItem)
-			.recipeTier(1)
-			.id(`greate:pressing/poor_raw_${materialName}_to_gem`)
+			event.recipes.greate.pressing(gemItem, poorOreItem)
+				.recipeTier(1)
+				.id(`greate:pressing/poor_raw_${materialName}_to_gem`)
 
-		let polishingCount = Math.max(crushedOreItem.getCount() / 2, 1);
-		event.recipes.create.sandpaper_polishing(gemItem.copyWithCount(polishingCount), poorOreItem)
-			.id(`tfg:polishing/poor_raw_${materialName}_to_gem`)
+			event.recipes.create.sandpaper_polishing(gemItem, poorOreItem)
+				.id(`tfg:polishing/poor_raw_${materialName}_to_gem`)
+		}
+		else {
+			const gemItem = ChemicalHelper.get(TagPrefix.gem, material, 1);
+			hammerRecipe.chancedOutput(gemItem, 5000, 0)
+
+			event.recipes.greate.pressing(Item.of(gemItem).withChance(0.50), poorOreItem)
+				.recipeTier(1)
+				.id(`greate:pressing/poor_raw_${materialName}_to_gem`)
+
+			event.recipes.create.sandpaper_polishing(ChemicalHelper.get(TagPrefix.gemFlawed, material, 1), poorOreItem)
+				.id(`tfg:polishing/poor_raw_${materialName}_to_gem`)
+		}
+		
 	} else {
-		hammerRecipe.chancedOutput(crushedOreItem, 7500, 950)
+		const half = crushedOreItem.getCount() / 2;
+		if (half >= 1) {
+			hammerRecipe.itemOutputs(crushedOreItem.withCount(half))
 
-		event.recipes.greate.pressing(Item.of(crushedOreItem).withChance(0.75), poorOreItem)
-			.recipeTier(1)
-			.id(`greate:pressing/poor_raw_${materialName}_to_crushed_ore`)
+			event.recipes.greate.pressing(crushedOreItem.withCount(half), poorOreItem)
+				.recipeTier(1)
+				.id(`greate:pressing/poor_raw_${materialName}_to_crushed_ore`)
+		}
+		else {
+			hammerRecipe.chancedOutput(crushedOreItem, 5000, 0)
+
+			event.recipes.greate.pressing(Item.of(crushedOreItem).withChance(0.50), poorOreItem)
+				.recipeTier(1)
+				.id(`greate:pressing/poor_raw_${materialName}_to_crushed_ore`)
+		}
 	}
 
 	// Macerator
 	let maceratorRecipe = event.recipes.gtceu.macerator(`macerate_poor_raw_${materialName}_ore_to_crushed_ore`)
 		.itemInputs(poorOreItem)
 		.category(GTRecipeCategories.ORE_CRUSHING)
-		.duration(400)
+		.duration(40)
 		.EUt(2)
 
 	if (multiplier > 1) {
 		maceratorRecipe.itemOutputs(crushedOreItem.copyWithCount(multiplier / 2))
 	} else {
-		maceratorRecipe.chancedOutput(crushedOreItem, 5000, 750)
+		maceratorRecipe.chancedOutput(crushedOreItem, 5000, 0)
 	}
-	maceratorRecipe.chancedOutput(crushedOreItem.copyWithCount(1), 2500, 500)
-	maceratorRecipe.chancedOutput(crushedOreItem.copyWithCount(1), 1250, 250)
+	maceratorRecipe.chancedOutput(crushedOreItem.copyWithCount(1), 2500, 0)
+	maceratorRecipe.chancedOutput(crushedOreItem.copyWithCount(1), 1250, 0)
 
 	// Quern
 	if (multiplier > 1) {
@@ -189,16 +213,17 @@ function processNormalRawOre(event, material) {
 	}
 
 	event.remove({ id: `greate:milling/integration/gtceu/macerator/macerate_raw_${materialName}_ore_to_crushed_ore` })
+	event.remove({ id: `greate:crushing/integration/gtceu/macerator/macerate_raw_${materialName}_ore_to_crushed_ore` })
 
 	// Macerator
 	event.recipes.gtceu.macerator(`macerate_raw_${materialName}_ore_to_crushed_ore`)
 		.itemInputs(normalOreItem)
 		.itemOutputs(crushedOreItem)
-		.chancedOutput(crushedOreItem.copyWithCount(1), 5000, 500)
-		.chancedOutput(crushedOreItem.copyWithCount(1), 2500, 250)
-		.chancedOutput(crushedOreItem.copyWithCount(1), 1250, 250)
+		.chancedOutput(crushedOreItem.copyWithCount(1), 5000, 0)
+		.chancedOutput(crushedOreItem.copyWithCount(1), 2500, 0)
+		.chancedOutput(crushedOreItem.copyWithCount(1), 1250, 0)
 		.category(GTRecipeCategories.ORE_CRUSHING)
-		.duration(400)
+		.duration(40)
 		.EUt(2)
 
 	// Quern
@@ -263,11 +288,11 @@ function processRichRawOre(event, material) {
 	event.recipes.gtceu.macerator(`macerate_rich_raw_${materialName}_ore_to_crushed_ore`)
 		.itemInputs(richOreItem)
 		.itemOutputs(crushedOreItem)
-		.chancedOutput(crushedOreItem.copyWithCount(1), 5000, 750)
-		.chancedOutput(crushedOreItem.copyWithCount(1), 2500, 500)
-		.chancedOutput(crushedOreItem.copyWithCount(1), 1250, 250)
+		.chancedOutput(crushedOreItem.copyWithCount(1), 5000, 0)
+		.chancedOutput(crushedOreItem.copyWithCount(1), 2500, 0)
+		.chancedOutput(crushedOreItem.copyWithCount(1), 1250, 0)
 		.category(GTRecipeCategories.ORE_CRUSHING)
-		.duration(400)
+		.duration(40)
 		.EUt(2)
 
 	// Quern
@@ -292,15 +317,55 @@ function processCrushedOre(event, material) {
 	const crushedOreItem = ChemicalHelper.get(TagPrefix.crushed, material, 1)
 	const impureDustItem = ChemicalHelper.get(TagPrefix.dustImpure, material, 1)
 	const pureOreItem = ChemicalHelper.get(TagPrefix.crushedPurified, material, 1)
-
 	const materialName = material.getName();
+
 	if (crushedOreItem !== null && pureOreItem !== null) {
-		// Bulk washing
 		let byproductMaterial = material.getProperty(PropertyKey.ORE).getOreByProduct(0, material);
 		const byproductItem = ChemicalHelper.get(TagPrefix.dust, byproductMaterial, 1)
+		
+		// GT machines
+		event.recipes.gtceu.ore_washer(`wash_${materialName}_crushed_ore_to_purified_ore_distilled`)
+			.itemInputs(crushedOreItem)
+			.inputFluids("gtceu:distilled_water 50")
+			.itemOutputs(pureOreItem, 'gtceu:stone_dust')
+			.chancedOutput(byproductItem, 3333, 0)
+			.duration(20)
+			.EUt(GTValues.VHA[GTValues.LV])
 
-		event.recipes.greate.splashing([pureOreItem, Item.of(byproductItem).withChance(0.333), 'gtceu:stone_dust'], crushedOreItem)
-			.id(`tfg:splashing/${materialName}_purified_ore`)
+		event.recipes.gtceu.ore_washer(`wash_${materialName}_crushed_ore_to_purified_ore`)
+			.itemInputs(crushedOreItem)
+			.inputFluids("minecraft:water 100")
+			.itemOutputs(pureOreItem, 'gtceu:stone_dust')
+			.chancedOutput(byproductItem, 3333, 0)
+			.circuit(1)
+			.duration(40)
+			.EUt(GTValues.VHA[GTValues.LV])
+
+		event.recipes.gtceu.macerator(`macerate_${materialName}_crushed_ore_to_impure_dust`)
+			.itemInputs(crushedOreItem)
+			.itemOutputs(impureDustItem)
+			.chancedOutput(byproductItem, 1400, 0)
+			.category(GTRecipeCategories.ORE_CRUSHING)
+			.duration(20)
+			.EUt(2)
+
+		// Bulk washing
+		
+		event.recipes.greate.splashing(
+			[pureOreItem, Item.of(byproductItem).withChance(0.14), 'gtceu:stone_dust'],
+			[crushedOreItem, Fluid.of('minecraft:water', 100)]
+		)
+		.recipeTier(1)
+		.circuitNumber(1)
+		.id(`tfg:splashing/${materialName}_purified_ore_water`)
+
+		event.recipes.greate.splashing(
+			[pureOreItem, Item.of(byproductItem).withChance(0.333), 'gtceu:stone_dust'],
+			[crushedOreItem, Fluid.of('gtceu:distilled_water', 50)]
+		)
+		.recipeTier(1)
+		.circuitNumber(2)
+		.id(`tfg:splashing/${materialName}_purified_ore_distilled`)
 
 		// Dropping in water
 		event.custom({
@@ -344,6 +409,20 @@ function processPurifiedOre(event, material) {
 	const pureDustItem = ChemicalHelper.get(TagPrefix.dustPure, material, 1)
 
 	if (pureOreItem !== null && pureDustItem !== null) {
+		const materialName = material.getName();		
+		let byproductMaterial = material.getProperty(PropertyKey.ORE).getOreByProduct(1, material);
+		const byproductItem = ChemicalHelper.get(TagPrefix.dust, byproductMaterial, 1)
+
+		// With byproducts
+		event.recipes.gtceu.macerator(`macerate_${materialName}_crushed_ore_to_dust`)
+			.itemInputs(pureOreItem)
+			.itemOutputs(pureDustItem)
+			.chancedOutput(byproductItem, 1400, 0)
+			.category(GTRecipeCategories.ORE_CRUSHING)
+			.duration(20)
+			.EUt(GTValues.VHA[GTValues.LV])
+
+		// Without byproducts
 		event.recipes.greate.pressing(pureDustItem, pureOreItem)
 			.recipeTier(1)
 			.id(`greate:pressing/pure_crushed_${material.getName()}_to_pure_dust`)
@@ -364,6 +443,20 @@ function processRefinedOre(event, material) {
 	const dustItem = ChemicalHelper.get(TagPrefix.dust, material, 1)
 
 	if (refinedOreItem !== null && dustItem !== null) {
+		const materialName = material.getName();
+		let byproductMaterial = material.getProperty(PropertyKey.ORE).getOreByProduct(2, material);
+		const byproductItem = ChemicalHelper.get(TagPrefix.dust, byproductMaterial, 1)
+
+		// With byproducts
+		event.recipes.gtceu.macerator(`macerate_${materialName}_refined_ore_to_dust`)
+			.itemInputs(refinedOreItem)
+			.itemOutputs(dustItem)
+			.chancedOutput(byproductItem, 1400, 0)
+			.category(GTRecipeCategories.ORE_CRUSHING)
+			.duration(20)
+			.EUt(GTValues.VHA[GTValues.LV])
+
+		// Without byproducts
 		event.recipes.greate.pressing(dustItem, refinedOreItem)
 			.recipeTier(1)
 			.id(`greate:pressing/refined_${material.getName()}_to_dust`)
@@ -388,8 +481,21 @@ function processImpureDust(event, material) {
 		const materialName = material.getName();
 
 		// Bulk washing
-		event.recipes.greate.splashing(dustItem, impureDustItem)
-			.id(`tfg:splashing/${materialName}_dust_from_impure`)
+		event.recipes.greate.splashing(
+			[dustItem],
+			[impureDustItem, Fluid.of('minecraft:water', 100)]
+		)
+		.recipeTier(1)		
+		.circuitNumber(1)
+		.id(`tfg:splashing/${materialName}_dust_from_impure_water`)
+
+		event.recipes.greate.splashing(
+			[dustItem],
+			[impureDustItem, Fluid.of('gtceu:distilled_water', 50)]
+		)
+		.recipeTier(1)
+		.circuitNumber(2)
+		.id(`tfg:splashing/${materialName}_dust_from_impure_distilled`)
 
 		event.recipes.tfc.barrel_instant()
 			.inputItem(impureDustItem)
@@ -404,6 +510,7 @@ function processImpureDust(event, material) {
 			[dustItem, Item.of(ChemicalHelper.get(TagPrefix.dust, byproductMaterial, 1)).withChance(0.111)],
 			impureDustItem)
 			.processingTime(material.getMass() * 10 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
+			.minimalRPM(32)
 			.id(`tfg:vi/centrifuge/${materialName}_dust_from_impure`)
 
 		// Dropping in water
@@ -439,8 +546,21 @@ function processPureDust(event, material) {
 		const materialName = material.getName();
 
 		// Bulk washing
-		event.recipes.greate.splashing(dustItem, pureDustItem)
-			.id(`tfg:splashing/${materialName}_dust_from_pure`)
+		event.recipes.greate.splashing(
+			[dustItem],
+			[pureDustItem, Fluid.of('minecraft:water', 100)]
+		)
+		.recipeTier(1)
+		.circuitNumber(1)
+		.id(`tfg:splashing/${materialName}_dust_from_pure_water`)
+
+		event.recipes.greate.splashing(
+			[dustItem],
+			[pureDustItem, Fluid.of('gtceu:distilled_water', 50)]
+		)
+		.recipeTier(1)
+		.circuitNumber(2)
+		.id(`tfg:splashing/${materialName}_dust_from_pure_distilled`)
 
 		event.recipes.tfc.barrel_instant()
 			.inputItem(pureDustItem)
@@ -455,6 +575,7 @@ function processPureDust(event, material) {
 			[dustItem, Item.of(ChemicalHelper.get(TagPrefix.dust, byproductMaterial, 1)).withChance(0.111)],
 			pureDustItem)
 			.processingTime(material.getMass() * 10 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
+			.minimalRPM(32)
 			.id(`tfg:vi/centrifuge/${materialName}_dust_from_pure`)
 
 		// Dropping in water
@@ -508,12 +629,12 @@ function processGems(event, material) {
 	}
 
 	const amount = getMaterialAmount(TagPrefix.block, material);
-	event.recipes.greate.pressing(ChemicalHelper.get(TagPrefix.gem, material, amount), ChemicalHelper.get(TagPrefix.block, material, 1))
-		.recipeTier(0)
-		.id(`greate:pressing/unpacking_${materialName}_block`)
-
-	event.recipes.tfc.quern(ChemicalHelper.get(TagPrefix.dust, material, 1), gemItem)
-		.id(`tfg:quern/${materialName}_gem_to_dust`)
+	const block = ChemicalHelper.get(TagPrefix.block, material, 1);
+	if (!block.isEmpty()) {
+		event.recipes.greate.pressing(ChemicalHelper.get(TagPrefix.gem, material, amount), block)
+			.recipeTier(0)
+			.id(`greate:pressing/unpacking_${materialName}_block`)
+	}
 
 	// Melting
 	const tfcProperty = material.getProperty(TFGPropertyKey.TFC_PROPERTY);

@@ -1,0 +1,34 @@
+{
+	"type": "minecraft:entity",
+	"pools": [
+		{
+			"bonus_rolls": 0,
+			"conditions": [
+				{
+					"condition": "minecraft:killed_by_player"
+				}
+			],
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "tfc:candle"
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:wax_nugget",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"max": 5,
+								"min": 2,
+								"type": "minecraft:uniform"
+							}
+						}
+					]
+				}
+			],
+			"rolls": 1
+		}
+	]
+}

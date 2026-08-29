@@ -1,0 +1,15 @@
+{
+	"item.toolbelt.belt": "Ремінь з інструментами",
+	"item.toolbelt.pouch": "Поясний чохол",
+	"key.toolbelt.category": "Ремінь з інструментами",
+	"key.toolbelt.cycle.left": "Перемкнути інструмент ліворуч",
+	"key.toolbelt.cycle.right": "Перемкнути інструмент праворуч",
+	"key.toolbelt.open": "Замінити інструмент",
+	"key.toolbelt.slot": "Відкрити інвентар слота пояса",
+	"text.toolbelt": "Ремінь з інструментами",
+	"text.toolbelt.empty": "ПОРОЖНЬО",
+	"text.toolbelt.extract": "ВИЛУЧИТИ",
+	"text.toolbelt.insert": "ВСТАВИТИ",
+	"text.toolbelt.swap": "ЗАМІНИТИ",
+	"text.toolbelt.tooltip": "Покращення: %s (%s слотів)"
+}

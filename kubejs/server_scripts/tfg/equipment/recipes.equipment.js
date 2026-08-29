@@ -51,4 +51,45 @@ function registerTFGEquipmentRecipes(event) {
 
 	// #endregion
 
+	event.shaped("tfg:snowshoes", [
+		"RSR",
+		"WSW",
+		"LSL"
+	], {
+		S: "#forge:string",
+		R: "#forge:rods",
+		W: "#forge:rods/long",
+		L: ['#tfg:rubber_foils', 'sns:leather_strip'],
+	}).id('tfg:shaped/snowshoes');
+
+	event.shaped("tfg:flippers", [
+		"L L", 
+		"LKL", 
+		"B B"
+	], {
+		K: "#forge:tools/knives",
+		L: "#tfg:rubber_plates",
+		B: "#tfg:rubber_foils"
+	}).id('tfg:shaped/flippers_rubber');
+
+	event.shaped("tfg:flippers", [
+		" K ", 
+		"BHB"
+	], {
+		K: "#forge:tools/knives",
+		H: "firmaciv:large_waterproof_hide",
+		B: "sns:leather_strip"
+	}).id('tfg:shaped/flippers_leather');
+
+	event.shaped('tfg:snorkel', [
+		'BC ',
+		'BLE',
+		'LGL'
+	], {
+		B: ['#forge:tiny_fluid_pipes', 'minecraft:bamboo'],
+		L: ['#tfg:rubber_foils', 'sns:leather_strip'],
+		E: '#forge:tools/hammers',
+		G: "#forge:glass_panes",
+		C: '#tfg:water_breathing_ingredients'
+	}).id('tfg:shaped/snorkel')
 }

@@ -3,11 +3,6 @@
 
 const registerBeneathRecipes = (event) => {
 
-	global.BENEATH_DISABLED_ITEMS.forEach(item => {
-		event.remove({ input: item })
-		event.remove({ output: item })
-	})
-
 	event.remove({ id: 'beneath:collapse/basalt' })
 	event.remove({ id: 'beneath:collapse/nether_bricks' })
 	event.remove({ id: 'beneath:crafting/nether_bricks' })
@@ -22,21 +17,9 @@ const registerBeneathRecipes = (event) => {
 	event.remove({ id: 'beneath:crafting/hellbricks' })
 	event.remove({ id: 'beneath:crafting/nether_brick' })
 	event.remove({ id: 'beneath:quern/slime' })
-	event.remove({ id: 'beneath:crafting/wood/crimson_planks' })
-	event.remove({ id: 'beneath:crafting/wood/crimson_slab' })
-	event.remove({ id: 'beneath:crafting/wood/crimson_button' })
-	event.remove({ id: 'beneath:crafting/wood/crimson_pressure_plate' })
-	event.remove({ id: 'beneath:crafting/wood/crimson_lumber_log' })
-	event.remove({ id: 'beneath:crafting/wood/crimson_lumber_planks' })
-	event.remove({ id: 'beneath:crafting/wood/crimson_slab_undo' })
-	event.remove({ id: 'beneath:crafting/wood/warped_planks' })
-	event.remove({ id: 'beneath:crafting/wood/warped_slab' })
-	event.remove({ id: 'beneath:crafting/wood/warped_button' })
-	event.remove({ id: 'beneath:crafting/wood/warped_pressure_plate' })
-	event.remove({ id: 'beneath:crafting/wood/warped_lumber_log' })
-	event.remove({ id: 'beneath:crafting/wood/warped_lumber_planks' })
-	event.remove({ id: 'beneath:crafting/wood/warped_slab_undo' })
-	
+	event.remove({ id: 'beneath:crafting/ancient_altar' })
+	event.remove({ id: 'beneath:crafting/cursed_hide_change' })
+
 	event.shaped('beneath:unposter', [
 		'ABA',
 		'AAA',
@@ -48,18 +31,11 @@ const registerBeneathRecipes = (event) => {
 	}).id('beneath:crafting/unposter')
 
 	event.shapeless('beneath:hellbricks', [
-		'#forge:stone_bricks',
-		'minecraft:magma_cream',
+		'minecraft:nether_bricks',
+		['minecraft:magma_cream', 'minecraft:slime_ball'],
 		'tfc:powder/sulfur',
-		'tfc:soot'
-	]).id('tfg:shapeless/hellbricks_from_soot')
-
-	event.shapeless('beneath:hellbricks', [
-		'#forge:stone_bricks',
-		'minecraft:magma_cream',
-		'tfc:powder/sulfur',
-		'tfc:powder/wood_ash'
-	]).id('tfg:shapeless/hellbricks_from_wood_ash')
+		['tfc:soot', 'tfc:powder/wood_ash']
+	]).id('tfg:shapeless/hellbricks')
 
 	event.recipes.tfc.landslide('beneath:soul_clay', 'beneath:soul_clay')
 
@@ -84,4 +60,27 @@ const registerBeneathRecipes = (event) => {
 		C: 'beneath:wood/planks/warped',
 		D: 'beneath:wood/log/warped'
 	}).id('tfg:shaped/warped_sewing_table')
+
+	event.shaped(`4x beneath:wood/fallen_leaves/crimson`, [
+		'AA',
+		'AA'
+	], {
+		A: `beneath:wood/leaves/crimson`
+	}).id(`tfg:shaped/beneath/crimson_leaves_to_fallen_leaves`);
+
+	event.shaped(`4x beneath:wood/fallen_leaves/warped`, [
+		'AA',
+		'AA'
+	], {
+		A: `beneath:wood/leaves/warped`
+	}).id(`tfg:shaped/beneath/warped_leaves_to_fallen_leaves`);
+
+	event.shaped('beneath:juicer', [
+		'ABA',
+		' C '
+	], {
+		A: 'waterflasks:leather_side',
+		B: '#forge:rods/wooden',
+		C: '#forge:tools/knives'
+	}).id('beneath:crafting/juicer')
 }

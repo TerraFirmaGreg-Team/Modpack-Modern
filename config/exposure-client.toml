@@ -1,73 +1,142 @@
 
-[UI]
-	#Photographer name will be shown in Photograph's tooltip.
-	PhotographPhotographerNameTooltip = false
-	#Crosshair will not get in the way when holding a photograph.
-	PhotographInHandHideCrosshair = true
+[ui]
 	#Tooltips for Developing Film Rolls and Copying Photographs will be shown on Film Rolls and Photographs respectively, describing the crafting recipe. 
 	#Only when JEI is not installed. (Only JEI shows these recipes, not REI or EMI)
-	RecipeTooltipsWithoutJei = true
-	#Album will show how many photographs they contain in a tooltip.
-	AlbumShowPhotosCount = true
-	#Signed Album item will have an enchantment glint.
-	SignedAlbumGlint = true
+	recipe_tooltips_without_jei = true
 	#Details about Camera configuring will be shown in Camera item tooltip.
-	CameraDetailsInTooltip = true
+	camera_details_tooltip = true
 	#Film Roll Frames will be shown in the camera tooltip.
 	#Default: true
-	CameraFilmFramesTooltip = true
-	#Film Roll fullness bar will be shown on the Camera item. Same as it does on Film Roll item.
+	camera_film_frames_tooltip = true
+	#Film Roll fullness bar will be shown on the Camera item.
 	#Default: false
-	CameraShowsFilmBar = false
+	camera_shows_film_bar = false
+	#Photographer name will be shown in Photograph's tooltip.
+	photograph_photographer_name_tooltip = false
+	#Crosshair will not get in the way when holding a photograph.
+	photograph_in_hand_hide_crosshair = true
+	#When looking at the Camera Stand, in-world tooltip will show information about the camera on it. Default: true
+	camera_stand_tooltip = true
+	#Album will show how many photographs it contains in a tooltip.
+	album_show_photos_count = true
 
-	[UI.Viewfinder]
-		#Mouse sensitivity modifier per 5 degrees of fov. Set to 0 to disable sensitivity changes.
-		#Range: 0.0 ~ 1.0
-		ZoomSensitivityModifier = 0.048
-		BackgroundColorHex = "FA1F1D1B"
-		FontMainColorHex = "FF2B2622"
-		FontSecondaryColorHex = "FF7A736C"
-		#Clicking middle mouse button will open Viewfinder Controls. This is independent of Open Camera Controls keybind.
-		#Allows opening camera controls without dismounting from a vehicle - and keeping controls on sneak as well.
-		#Default: true
-		MiddleClickOpensControls = true
+	[ui.album]
+		#Color in hex format. AARRGGBB.
+		font_main_color = "FFB59774"
+		#Color in hex format. AARRGGBB.
+		font_secondary_color = "FFEFE4CA"
+		#Color in hex format. AARRGGBB.
+		selection_color = "FF8888FF"
+		#Color in hex format. AARRGGBB.
+		selection_unfocused_color = "FFBBBBFF"
 
-[Capture]
+[viewfinder]
+	#Clicking middle mouse button will open Viewfinder Controls. This is independent of Open Camera Controls keybind.
+	#Allows opening camera controls without dismounting from a vehicle - and keeping controls on sneak or other button as well.
+	#Default: true
+	middle_click_controls = true
+	#How much zooming influences mouse sensitivity.
+	#0 - no change to sensitivity. 1 - full effect.
+	#Range: 0.0 ~ 1.0
+	zoom_sensitivity_influence = 1.0
+	#Color in hex format. AARRGGBB.
+	background_color = "FA1F1D1B"
+	#Color in hex format. AARRGGBB.
+	font_main_color = "FF2B2622"
+	#Color in hex format. AARRGGBB.
+	font_secondary_color = "FF7A736C"
+	#HUD will be hidden while looking through viewfinder. Default: true
+	hide_hud_while_in_viewfinder = true
+	#X offset of a viewfinder status icon. Default: 0
+	#Range: -999 ~ 999
+	status_icon_offset_x = 0
+	#Y offset of a viewfinder status icon. Default: 0
+	#Range: -999 ~ 999
+	status_icon_offset_y = 0
+
+[capture]
+	#Keep Post Effect (vanilla shader) when capturing an image.
+	#It is sometimes used by mods to change how player sees the world. (Cold Sweat's overheating blur, Supplementaries mob heads, for example).
+	#In vanilla, it's only used when spectating a creeper/enderman/etc.
+	#Default: false
+	keep_post_effect = false
 	#Delay in ticks before capturing an image when shooting with flash.
 	#If you experience flash synchronization issues (Flash having no effect on the image) - try increasing the value.
-	#Range: 1 ~ 7
-	FlashCaptureDelayTicks = 3
-	#Delay in frames before capturing an image.
+	#Range: 1 ~ 8
+	flash_capture_delay_ticks = 4
+	#Force legacy (pre 1.21) capturing method for taking images. Enable if you experiencing issues with resulting images.
+	#Direct method will be used regardless of this setting if mods defined in 'force_direct_capture_default_mods' is installed.
+	#Default: false
+	force_direct_capture = false
+	#Direct capture will be used if any of these mods is installed.
+	#Format: '["mod_id", "mod_id"]'. Default: [veil, pmweather]
+	force_direct_capture_default_mods = ["veil", "pmweather"]
+	#Delay in frames before capturing an image if 'direct_capture' method is in use.
 	#Set to higher value when leftovers of GUI elements (such as nameplates) are visible on the images
 	#(some shaders have temporal effects that take several frames to disappear fully)
 	#Range: 0 ~ 100
-	CaptureDelayFrames = 0
+	direct_capture_delay_frames = 0
+	#Sets the game to 'panoramic mode' when capturing the image with background capture method (default).
+	#Enabling this might fix some graphical issues, such as water being invisible.
+	#If captured images are still not looking properly - enable 'force_direct_capture'.
+	#Default: false
+	background_capture_use_panoramic_mode = false
 
-[FileSaving]
-	#When the Photograph is viewed in UI, image will be saved to 'exposures' folder as a png.
-	SavePhotographs = true
-	#When saving, exposures will be placed into folder corresponding to current world name.
-	WorldNameSubfolder = true
-	#Saved exposures will be enlarged by this multiplier.
-	#Given the default exposure size of 320 - this will produce:
-	#320/640/960/1280px png image. Be careful with larger frame sizes.
-	#Default: X2
-	#Allowed Values: X1, X2, X3, X4
-	Size = "X2"
+	[capture.loading]
+		#Loading from file will only accept a path relative to game directory, when on the dedicated server (multiplayer).
+		#This option is for protection against malicious actions using Projector or load commands.
+		#Default: false
+		multiplayer_file_loading_only_from_game_dir = false
+		#How loading from URL should behave when on the dedicated server (multiplayer).
+		#This option is for protection against malicious actions using Projector or load commands.
+		#Default: ONLY_ALLOWED_DOMAINS
+		#Allowed Values: ALL, ONLY_ALLOWED_DOMAINS, NONE
+		multiplayer_url_loading = "ONLY_ALLOWED_DOMAINS"
+		#List of allowed domains for loading from URl, if 'multiplayer_url_loading' is set to ONLY_ALLOWED_DOMAINS.
+		multiplayer_url_loading_allowed_domains = ["i.imgur.com", "cdn.discordapp.com", "media.discordapp.net", "raw.githubusercontent.com"]
+		#List of allowed domains for loading from URl, if 'multiplayer_url_loading' is set to ONLY_ALLOWED_DOMAINS.
+		multiplayer_url_loading_allowed_subdomains = [".imgur.com", ".discordapp.com"]
 
-[Render]
+[render]
+	#Makes photos in Photograph Frame render with alignment to 16 pixel grid (like paintings). Just for fun. Default: false
+	pixel_perfect_photograph_frame = false
+	#Photographs in Item Frame will be rendered as image instead of an item icon. Default: false
+	photograph_renders_in_item_frame = false
+	#Projected photographs (using Interplanar Projector) made by other players will be censored (pixelated). Default: false
+	censor_projected_photographs_made_by_others = false
+	#All photographs made by other players will will be censored (pixelated). Default: false
+	censor_all_photographs_made_by_others = false
 	#Distance from the player beyond which Photograph Frame would not be rendered. Default: 64
-	#Note: this number may not relate to distance in blocks exactly. It's influenced by onRender distance and entity distance settings.
+	#Note: this number may not relate to distance in blocks exactly. It's influenced by render distance and entity distance settings.
 	#Range: 8 ~ 128
-	PhotographFrameCullingDistance = 64
-	#Projected photographs (using Interplanar Projector) made by other players will not be rendered.
-	HideProjectedPhotographsMadeByOthers = false
-	#All photographs made by other players will not be rendered.
-	HideAllPhotographsMadeByOthers = false
+	photograph_frame_culling_distance = 64
+	#Depth offset to Photograph in Photograph Frame. Can be used to fix issues with some 3D resourcepacks. Value of 0.015 is good for 'Classic 3D' resourcepack. Default: 0.0
+	#Range: -1.0 ~ 1.0
+	photograph_frame_image_offset = 0.0
 
-[Integration]
+[integration]
 	#Useful information about some items will be shown in JEI description category. Default: true
-	JeiInformation = true
+	jei_information = true
 	#[Real Camera] Disable player model rendering when looking through viewfinder. Default: true
-	RealCameraDisableInViewfinder = true
+	real_camera_disable_in_viewfinder = true
+
+[export]
+	#When the Photograph you took is viewed in UI (by using a Photograph), image will be exported to '<instance>/exposures' folder as a png.
+	export_viewed_photographs = true
+	#When exporting, exposures will be organized to subfolders with world name.
+	export_organize_by_world = true
+	#Exported exposures will be scaled by this multiplier.
+	#Given the default exposure size of 320 pixels - this will produce:
+	#320/640/960/1280/etc image. Be careful with larger frame sizes.
+	#Default: 2
+	#Range: 1 ~ 10
+	export_size_multiplier = 2
+
+[tutorial]
+	#Toast that teaches hovering mouse over camera parts will be shown when attachments menu is first opened. Default: true.
+	#*This setting will be automatically set to false on first show.*
+	attachments_show_info_toast = true
+	#Toast that teaches wiki opening will be shown when attachments menu is first opened, after info toast. Default: true.
+	#*This setting will be automatically set to false on first show.*
+	attachments_show_wiki_toast = true
 

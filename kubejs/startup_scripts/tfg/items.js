@@ -13,13 +13,13 @@ const registerTFGItems = (event) => {
 	registerTFGWoodItems(event);
 	registerTFGAircraftItems(event);
 	registerTFGSpaceItems(event);
-	registerTFGMarsItems(event);
 	registerTFGDimensionMarkerItems(event);
 	registerTFGBiotechItems(event);
 	registerTFGWeaponItems(event);
 	registerTFGRockItems(event);
 	registerTFGAquaponicsItems(event);
-	
+	registerTFGAsphaltRoadItems(event);
+
 	event.create('tfg:terra_firma_greg')
 		.tag('c:hidden_from_recipe_viewers')
 
@@ -33,6 +33,10 @@ const registerTFGItems = (event) => {
 	event.create('tfg:cryo_fluix_pearl')
 	event.create('tfg:uv_led')
 	event.create('tfg:smd_uv_led')
+	event.create('tfg:blue_alloy_desh_foil')
+	event.create('tfg:chorus_ceramic_insulation')
+	event.create('tfg:fired_chorus_ceramic_insulation')
+	event.create('tfg:steel_drill_head')
 
 	// Molds
 	global.TFG_EXTRUDER_MOLDS.forEach(id => event.create(id))
@@ -49,38 +53,51 @@ const registerTFGItems = (event) => {
     event.create('tfg:zpm_universal_circuit')
     event.create('tfg:uv_universal_circuit')
     event.create('tfg:uhv_universal_circuit')
-
-
-	// Temporary
-	event.create('gtceu:rose_quartz_dust').texture('tfg:item/deprecated')
-	event.create('gtceu:tiny_rose_quartz_dust').texture('tfg:item/deprecated')
-	event.create('gtceu:small_rose_quartz_dust').texture('tfg:item/deprecated')
-	event.create('gtceu:poor_raw_rose_quartz').texture('tfg:item/deprecated')
-	event.create('gtceu:raw_rose_quartz').texture('tfg:item/deprecated')
-	event.create('gtceu:rich_raw_rose_quartz').texture('tfg:item/deprecated')
-	event.create('gtceu:chipped_rose_quartz_gem').texture('tfg:item/deprecated')
-	event.create('gtceu:flawed_rose_quartz_gem').texture('tfg:item/deprecated')
-	event.create('gtceu:flawless_rose_quartz_gem').texture('tfg:item/deprecated')
-	event.create('gtceu:exquisite_rose_quartz_gem').texture('tfg:item/deprecated')
-	event.create('gtceu:pure_rose_quartz_dust').texture('tfg:item/deprecated')
-	event.create('gtceu:impure_rose_quartz_dust').texture('tfg:item/deprecated')
-	event.create('gtceu:purified_rose_quartz_ore').texture('tfg:item/deprecated')
-	event.create('gtceu:crushed_rose_quartz_ore').texture('tfg:item/deprecated')
-	event.create('gtceu:refined_rose_quartz_ore').texture('tfg:item/deprecated')
-	event.create('gtceu:rose_quartz_lens').texture('tfg:item/deprecated')
-	event.create('gtceu:rose_quartz_plate').texture('tfg:item/deprecated')
-
+	
 	// Add item for BTX Fuel
-
 	event.create('tfg:catalyser_pt_re_zsm')
-		.translationKey('item.tfg.catalyser_pt_re_zsm')
 		.texture('tfg:item/btx/catalyser_zsm')
 
 	event.create('tfg:used_catalyser')
-		.translationKey('item.tfg.used_catalyser')
 		.texture('tfg:item/btx/used_catalyser')
 
 	event.create('tfg:loaded_resin')
-		.translationKey('item.tfg.loaded_resin')
 		.texture('tfg:item/btx/loaded_resin')
+
+	// Add New Ceramic Circuit Board
+
+	event.create('tfg:mo_activated_sic_substrate')
+		.texture('tfg:item/mo_activated_sic_substrate')
+	
+	event.create('tfg:copper_bonded_al2o3_pcb')
+		.texture('tfg:item/copper_bonded_al2o3_pcb')
+
+	event.create('tfg:chromium_bonded_beo_pcb')
+		.texture('tfg:item/chromium_bonded_beo_pcb')
+
+	// Add New Lenses Support
+
+	event.create('tfg:optical_borosilicate_blank')
+		.texture('tfg:item/optical_borosilicate_blank')
+
+	event.create('tfg:worked_optical_borosilicate_blank')
+		.texture('tfg:item/worked_optical_borosilicate_blank')
+		.tag('tfg:precision_fabricator_dipped_items')
+
+	// Prismatic Related Stuff (Spray Can)
+
+	event.create('tfg:chemical_prismatic_dye')
+		.texture('tfg:item/chemical_prismatic_dye')
+		.tag('forge:dyes/prismatic')
+
+	// Item for Garnet Line
+
+	event.create('tfg:garnet_fusion_clinker')
+		.texture('tfg:item/fusion_clinker')
+		.tag('forge:fusion_clinker/garnet')
+
+	event.create('tfg:al_cr_y_hydroxide_cake')
+		.texture('tfg:item/al_cr_y_hydroxide_cake')
+		.tag('forge:cake/al_cr_y_hydroxide')
+
 }

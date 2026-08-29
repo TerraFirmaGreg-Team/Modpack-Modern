@@ -1,8 +1,0 @@
-{
-	"type": "beneath:nether_spikes",
-	"config": {
-		"raw": "tfc:rock/hardened/gabbro",
-		"spike": "tfc:rock/spike/gabbro",
-		"anchor_blocks": "minecraft:base_stone_nether"
-	}
-}

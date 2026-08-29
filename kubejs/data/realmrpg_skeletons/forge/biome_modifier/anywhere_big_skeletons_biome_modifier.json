@@ -1,0 +1,6 @@
+{
+	"type": "forge:add_features",
+	"biomes": "#realmrpg_skeletons:has_anywhere_skeletons",
+	"features": "realmrpg_skeletons:anywhere_big_skeletons",
+	"step": "vegetal_decoration"
+}

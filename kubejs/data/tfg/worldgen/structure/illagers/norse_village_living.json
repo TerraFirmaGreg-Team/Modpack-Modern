@@ -5,7 +5,7 @@
 	"max_distance_from_center": 116,
 	"biomes": "#tfg:has_structure/illages",
 	"step": "surface_structures",
-	"terrain_adaptation": "beard_thin",
+	"terrain_adaptation": "beard_box",
 	"start_height": {
 		"absolute": -1
 	},

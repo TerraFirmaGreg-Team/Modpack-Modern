@@ -1,0 +1,44 @@
+{
+	"credit": "Adapted from Ad Astra",
+	"parent": "builtin/entity",
+	"gui_light": "front",
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [180, 0, -90],
+			"translation": [-35, 4.5, -14],
+			"scale": [0.8, 0.8, 0.8]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [180, 0, -90],
+			"translation": [-35, -7, -14],
+			"scale": [0.8, 0.8, 0.8]
+		},
+		"firstperson_righthand": {
+			"rotation": [80, 180, 90],
+			"translation": [-25, 20, 6],
+			"scale": [0.5, 0.5, 0.5]
+		},
+		"firstperson_lefthand": {
+			"rotation": [80, 180, 90],
+			"translation": [-25, 18, 0],
+			"scale": [0.5, 0.5, 0.5]
+		},
+		"ground": {
+			"translation": [2, 2, 2],
+			"scale": [0.2, 0.2, 0.2]
+		},
+		"gui": {
+			"rotation": [-41, -170, 26],
+			"translation": [0, -4.8, 0],
+			"scale": [0.17, 0.17, 0.17]
+		},
+		"head": {
+			"translation": [2.5, 9, 2.25],
+			"scale": [0.3, 0.3, 0.3]
+		},
+		"fixed": {
+			"translation": [1, -2.5, 0],
+			"scale": [0.2, 0.2, 0.2]
+		}
+	}
+}

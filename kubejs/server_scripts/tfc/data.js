@@ -28,10 +28,27 @@ const registerTFCHeats = (event) => {
 
 	// Soybean
 	event.itemHeat('tfc:food/soybean', 1.0, null, null)
+
+	event.itemHeat('#tfc:kaolin_blocks', 3.0, null, null)
 }
 
 
 const registerTFCFuels = (event) => {
+	event.fuel('tfg:dried_peat_brick', 627, 750, 0.7)
+
+	event.fuel('patchouli:guide_book', 50, 199, 0.7)
+	event.fuel('ftbquests:book', 50, 199, 0.7)
+	event.fuel('tfc:wool', 150, 199, 0.7)
+	event.fuel('primitive_creatures:grh', 150, 199, 0.7)
+	event.fuel('tfc:straw', 150, 199, 0.7)
+	event.fuel('#tfc:moss', 150, 199, 0.7)
+	event.fuel('beneath:crimson_straw', 150, 199, 0.7)
+	event.fuel('beneath:warped_straw', 150, 199, 0.7)
+	event.fuel('tfg:groundcover/palm_husk', 150, 199, 0.7)
+	event.fuel('tfg:plant/moss_campion', 150, 199, 0.7)
+	event.fuel('tfg:plant/elegant_sunburst_lichen', 150, 199, 0.7)
+	event.fuel('tfc:blubber', 400, 650, 0.4)
+
 	event.fuel('gtceu:coke_gem', 1415, 4400, 1.0)
 	event.fuel('gtceu:coke_dust', 1415, 1200, 0.95)
 
@@ -40,30 +57,45 @@ const registerTFCFuels = (event) => {
 	event.fuel('gtceu:charcoal_block', 1350, 1800 * 9, 1.0)
 	event.fuel('gtceu:charcoal_dust', 1350, 600, 1.0)
 
-	event.fuel('minecraft:coal', 1415, 1900 / 2, 1.0)
 	event.fuel('minecraft:coal_block', 1415, 1900 * 4.5, 1.0)
 	event.fuel('gtceu:flawless_coal_gem', 1415, 1900 * 2, 1.0)
 	event.fuel('gtceu:exquisite_coal_gem', 1415, 1900 * 4, 1.0)
 	event.fuel('gtceu:flawed_coal_gem', 1415, 1900 / 2, 1.0)
 	event.fuel('gtceu:chipped_coal_gem', 1415, 1900 / 4, 1.0)
 
-	event.fuel('gtceu:crushed_coal_ore', 1415, 1000, 0.8)
-	event.fuel('gtceu:purified_coal_ore', 1415, 1000, 1.0)
-	event.fuel('gtceu:refined_coal_ore', 1415, 1000, 1.0)
-	event.fuel('gtceu:impure_coal_dust', 1415, 500, 0.8)
-
-	event.fuel('gtceu:rich_raw_coal', 1415, 2200, 0.95)
-	event.fuel('gtceu:raw_coal', 1415, 1900, 0.95)
-	event.fuel('gtceu:poor_raw_coal', 1415, 1600, 0.95)
 	event.fuel('gtceu:coal_dust', 1415, 600, 0.85)
 	event.fuel('gtceu:small_coal_dust', 1415, 600 / 4, 0.85)
 	event.fuel('gtceu:tiny_coal_dust', 1415, 600 / 9, 0.85)
+
+	event.fuel('tfg:wood/wood/beech', 720, 3000, 0.95)
+    event.fuel('tfg:wood/log/beech', 720, 3000, 0.95)
+	event.fuel('tfg:wood/stripped_wood/beech', 720, 3000, 0.95)
+    event.fuel('tfg:wood/stripped_log/beech', 720, 3000, 0.95)
+    event.fuel('tfg:wood/wood/araucaria', 627, 3000, 0.95)
+    event.fuel('tfg:wood/log/araucaria', 627, 3000, 0.95)
+    event.fuel('tfg:wood/stripped_wood/araucaria', 627, 3000, 0.95)
+    event.fuel('tfg:wood/stripped_log/araucaria', 627, 3000, 0.95)
+	event.fuel('tfg:wood/wood/mahoe', 651, 3000, 0.95)
+    event.fuel('tfg:wood/log/mahoe', 651, 3000, 0.95)
+	event.fuel('tfg:wood/stripped_wood/mahoe', 651, 3000, 0.95)
+    event.fuel('tfg:wood/stripped_log/mahoe', 651, 3000, 0.95)
+    event.fuel('wan_ancient_beasts:ginkgo_wood', 690, 3000, 0.95)
+    event.fuel('wan_ancient_beasts:ginkgo_log', 690, 3000, 0.95)
+    event.fuel('wan_ancient_beasts:stripped_ginkgo_wood', 690, 3000, 0.95)
+    event.fuel('wan_ancient_beasts:stripped_ginkgo_log', 690, 3000, 0.95)
 }
 
 
 const registerTFCLampFuels = (event) => {
 	event.lampFuel('gtceu:creosote', '#tfc:lamps', 1000)
+	event.lampFuel('gtceu:oil', '#tfc:lamps', 1000)
+	event.lampFuel('gtceu:oil_light', '#tfc:lamps', 1000)
+	event.lampFuel('gtceu:oil_medium', '#tfc:lamps', 1000)
+	event.lampFuel('gtceu:oil_heavy', '#tfc:lamps', 1000)
 	event.lampFuel('gtceu:seed_oil', '#tfc:lamps', 7000)
+	event.lampFuel('gtceu:fish_oil', '#tfc:lamps', 7000)
+	event.lampFuel('tfg:peanut_oil', '#tfc:lamps', 7000)
+	event.lampFuel('tfg:palm_oil', '#tfc:lamps', 7000)
 	event.lampFuel("gtceu:glowstone", "#tfc:lamps", -1)
 }
 
@@ -71,13 +103,13 @@ const registerTFCLampFuels = (event) => {
 const registerTFCFertilizers = (event) => {
 	event.fertilizer('gtceu:fertilizer', 0.15, 0.15, 0.15)
 
-	event.fertilizer('gtceu:tiny_potassium_dust', null, null, 0.016)
-	event.fertilizer('gtceu:small_potassium_dust', null, null, 0.037)
-	event.fertilizer('gtceu:potassium_dust', null, null, 0.15)
+	event.fertilizer('gtceu:tiny_potassium_dust', null, null, 0.055)
+	event.fertilizer('gtceu:small_potassium_dust', null, null, 0.125)
+	event.fertilizer('gtceu:potassium_dust', null, null, 0.5)
 
-	event.fertilizer('gtceu:tiny_phosphorus_dust', null, 0.016, null)
-	event.fertilizer('gtceu:small_phosphorus_dust', null, 0.037, null)
-	event.fertilizer('gtceu:phosphorus_dust', null, 0.15, null)
+	event.fertilizer('gtceu:tiny_phosphorus_dust', null, 0.055, null)
+	event.fertilizer('gtceu:small_phosphorus_dust', null, 0.125, null)
+	event.fertilizer('gtceu:phosphorus_dust', null, 0.5, null)
 
 	event.fertilizer('gtceu:tiny_bone_dust', null, 0.01, null)
 	event.fertilizer('gtceu:small_bone_dust', null, 0.025, null)
@@ -94,13 +126,13 @@ const registerTFCFertilizers = (event) => {
 	event.fertilizer('gtceu:small_phosphate_dust', null, 0.05, null)
 	event.fertilizer('gtceu:phosphate_dust', null, 0.2, null)
 
-	event.fertilizer('gtceu:tiny_saltpeter_dust', 0.01, null, 0.038)
-	event.fertilizer('gtceu:small_saltpeter_dust', 0.025, null, 0.0875)
-	event.fertilizer('gtceu:saltpeter_dust', 0.10, null, 0.35)
+	event.fertilizer('gtceu:tiny_saltpeter_dust', 0.02, null, 0.06)
+	event.fertilizer('gtceu:small_saltpeter_dust', 0.05, null, 0.15)
+	event.fertilizer('gtceu:saltpeter_dust', 0.2, null, 0.6)
 
-	event.fertilizer('gtceu:tiny_rock_salt_dust', null, null, 0.025)
-	event.fertilizer('gtceu:small_rock_salt_dust', null, null, 0.0625)
-	event.fertilizer('gtceu:rock_salt_dust', null, null, 0.25)
+	event.fertilizer('gtceu:tiny_rock_salt_dust', null, null, 0.09)
+	event.fertilizer('gtceu:small_rock_salt_dust', null, null, 0.2)
+	event.fertilizer('gtceu:rock_salt_dust', null, null, 0.8)
 
 	event.fertilizer('gtceu:tiny_potassium_sulfate_dust', null, null, 0.03)
 	event.fertilizer('gtceu:small_potassium_sulfate_dust', null, null, 0.075)
@@ -108,13 +140,23 @@ const registerTFCFertilizers = (event) => {
 
 	event.fertilizer('gtceu:tiny_ammonium_chloride_dust', 0.03, null, null)
 	event.fertilizer('gtceu:small_ammonium_chloride_dust', 0.075, null, null)
-	event.fertilizer('gtceu:ammonium_chloride_dust', 0.3, null, null)
+	event.fertilizer('gtceu:ammonium_chloride_dust', 0.30, null, null)
+	
+	event.fertilizer('gtceu:tiny_ash_dust', null, 0.01, 0.03)
+	event.fertilizer('gtceu:small_ash_dust', null, 0.025, 0.075)
+	event.fertilizer('gtceu:ash_dust', null, 0.1, 0.3)
 
+	event.fertilizer('gtceu:tiny_dark_ash_dust', null, 0.01, 0.03)
+	event.fertilizer('gtceu:small_dark_ash_dust', null, 0.025, 0.075)
+	event.fertilizer('gtceu:dark_ash_dust', null, 0.1, 0.3)
 
+	event.fertilizer('gtceu:tiny_ender_pearl_dust', 0.055, null, 0.055)
+	event.fertilizer('gtceu:small_ender_pearl_dust', 0.125, null, 0.125)
+	event.fertilizer('ae2:ender_dust', 0.5, null, 0.5)
 }
 
 
 const registerTFCKnappingTypes = (event) => {
-	event.knappingType('minecraft:flint', 1, 1, 'tfc:item.knapping.stone', true, false, true, 'minecraft:flint', 'tfg:flint')
-	event.knappingType('tfc:straw', 4, 4, 'tfc:item.knapping.leather', false, false, false, 'tfc:straw', 'tfg:straw')
+	event.knappingType('minecraft:flint', 2, 1, 'tfc:item.knapping.stone', false, false, true, 'minecraft:flint', 'tfg:flint')
+	event.knappingType('tfc:straw', 4, 4, 'tfc:item.knapping.leather', true, false, false, 'tfc:straw', 'tfg:straw')
 }

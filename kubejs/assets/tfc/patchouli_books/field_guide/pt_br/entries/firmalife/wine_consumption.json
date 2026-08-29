@@ -1,0 +1,31 @@
+{
+  "name": "Consumo de Vinho",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:textures/item/olivine_wine_bottle.png",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "O sommelier criterioso será capaz de detectar sutilezas no vinho produzido sob diferentes condições. De fato, isso também é possível no mundo do Firmalife. Começa nos campos onde as uvas foram cultivadas -- uma fileira de uvas é profundamente afetada pelo ambiente e pelo solo."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "As uvas podem apresentar três características relacionadas ao terreno -- 'Cultivada em Cascalho', 'Cultivada em Declive' e 'Cultivada em Terra', dependendo do ambiente próximo. O vinho também registra a Classificação Climática de Koppen da área em que é engarrafado. Uvas cultivadas perto de abelhas apresentam a característica 'Polinização por Abelhas'."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "O vinho começa a envelhecer assim que é engarrafado e para de envelhecer quando a rolha é removida. A rolha pode ser removida por $(item)$(k:key.use)$() no item da garrafa com uma faca. Caso contrário, garrafas de vinho funcionam um pouco como baldes e podem ser esvaziadas em barris ou outros dispositivos."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/wood/pine_keg",
+      "text": "A $(thing)Barrica$() é um bloco de barril de 2x2x2 que pode conter muitos itens ou fluidos. Perfeito para sua vinícola!"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/wood/hickory_wine_shelf",
+      "text": "A $(thing)Prateleira de Vinho$() é o acessório perfeito para sua vinícola, permitindo que você exiba e armazene suas garrafas de vinho com estilo."
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 24
+}

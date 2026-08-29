@@ -6,6 +6,7 @@ services:
     stdin_open: true
     ports:
       - "25565:25565"
+      - "24454:24454/udp" # simple voice chat
     environment:
       EULA: "true"
       ENABLE_RCON: "false"

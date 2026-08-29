@@ -1,0 +1,43 @@
+{
+	"type": "minecraft:random_patch",
+	"config": {
+		"feature": {
+			"feature": {
+				"type": "minecraft:simple_block",
+				"config": {
+					"to_place": {
+						"type": "tfc:random_property",
+						"property": "flower_amount",
+						"state": {
+							"Name": "wan_ancient_beasts:moonflower",
+							"Properties": {
+								"flower_amount": "1"
+							}
+						}
+					}
+				}
+			},
+			"placement": [
+				{
+					"type": "minecraft:block_predicate_filter",
+					"predicate": {
+						"type": "minecraft:matching_blocks",
+						"blocks": "minecraft:air"
+					}
+				},
+				{
+					"type": "block_predicate_filter",
+					"predicate": {
+						"type": "would_survive",
+						"state": {
+							"Name": "wan_ancient_beasts:moonflower"
+						}
+					}
+				}
+			]
+		},
+		"tries": 36,
+		"xz_spread": 6,
+		"y_spread": 2
+	}
+}

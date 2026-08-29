@@ -1,0 +1,24 @@
+{
+	"name": "tfg:beneath/tower_start_pool",
+	"fallback": "minecraft:empty",
+	"elements": [
+		{
+			"weight": 60,
+			"element": {
+				"location": "tfg:beneath/tower/3/gilded",
+				"processors": "tfg:beneath/tower/3/gilded",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 40,
+			"element": {
+				"location": "tfg:beneath/tower/3/basalt",
+				"processors": "tfg:beneath/tower/3/basalt",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		}
+	]
+}

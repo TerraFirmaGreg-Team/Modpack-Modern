@@ -1,0 +1,8 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "parent": "firmalife:block/oven/brick_oven_bottom_insulated",
+  "textures": {
+		"coals": "firmalife:block/oven/bottom/brick/coals_lit",
+		"inside": "firmalife:block/oven/bottom/brick/inside_lit"
+	}
+}

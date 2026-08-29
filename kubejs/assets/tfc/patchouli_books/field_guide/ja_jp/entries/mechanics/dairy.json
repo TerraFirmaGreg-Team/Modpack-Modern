@@ -1,0 +1,13 @@
+{
+  "name": "乳製品",
+  "category": "tfc:mechanics",
+  "icon": "tfc:textures/item/food/cheese.png",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)乳製品$()は、$(l:mechanics/animal_husbandry#dairy_animals)乳用動物$()によって生産されたミルクから摂取できる$(l:getting_started/food_and_water#nutrients)栄養素$()です。飲むことも、$(thing)チーズ$()に加工することもできます。飲むには水差しを使い、$(l:getting_started/food_and_water#thirst)喉の渇き$()を回復します。ただし、栄養価が高まるのは食後に飲む場合だけです。実際には、これは牛乳を2回続けて飲んでも効果がないことを意味します。食事はその前に行わなければなりません。",
+      "title": "乳製品"
+    }
+  ],
+  "read_by_default": true
+}

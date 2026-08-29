@@ -8,6 +8,20 @@
         "salt_marsh",
         "lowlands"
     ],
+    "bad-biomes": [
+        "sangnum_edge",
+        "sangnum_plains",
+        "sangnum_hills",
+        "rusticus_edge",
+        "rusticus_plains",
+        "rusticus_hills",
+        "amber_edge",
+        "amber_plains",
+        "amber_hills",
+        "martian_river",
+        "martian_mountains",
+        "martian_dune_edge"
+    ],
     "sounds": [
         {
             "name": "cricket-swamp",

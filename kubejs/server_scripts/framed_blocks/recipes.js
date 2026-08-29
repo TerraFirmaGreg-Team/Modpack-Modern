@@ -7,6 +7,8 @@ const registerFramedBlocksRecipes = (event) => {
 	event.remove({ id: 'framedblocks:framing_saw/framed_torch' })
 	event.remove({ id: 'framedblocks:framed_soul_torch' })
 	event.remove({ id: 'framedblocks:framing_saw/framed_soul_torch' })
+	event.remove({ id: 'framedblocks:framed_obsidian_pressure_plate' })
+	event.remove({ id: 'framedblocks:framing_saw/framed_obsidian_pressure_plate' })
 
 	//#region Framed Iron Door
 	event.shaped('framedblocks:framed_iron_door', [
@@ -82,7 +84,7 @@ const registerFramedBlocksRecipes = (event) => {
 	}).id('framedblocks:framing_saw/framed_pressure_plate')
 	//#endregion
 
-	//#region Framed Pressure Plate
+	//#region Framed Stone Pressure Plate
 	event.shapeless(
 		Item.of('framedblocks:framed_stone_pressure_plate', 1),
 		[
@@ -109,13 +111,13 @@ const registerFramedBlocksRecipes = (event) => {
 	//#endregion
 
 	//#region Framed Gold Pressure Plate
-	event.shaped('framedblocks:framed_gold_pressure_plate', [
-		'AA',
-		'BB'
-	], {
-		A: '#forge:plates/gold',
-		B: 'framedblocks:framed_cube'
-	}).id('framedblocks:framed_gold_pressure_plate')
+	event.shapeless(
+		Item.of('framedblocks:framed_gold_pressure_plate', 1),
+		[
+			'minecraft:light_weighted_pressure_plate',
+			'framedblocks:framed_cube',
+		]
+	).id('framedblocks:framed_gold_pressure_plate')
 
 	event.custom({
 		type: "framedblocks:frame",
@@ -123,7 +125,7 @@ const registerFramedBlocksRecipes = (event) => {
 			{
 				count: 1,
 				ingredient: {
-					tag: "forge:plates/gold"
+					item: "minecraft:light_weighted_pressure_plate"
 				}
 			}
 		],
@@ -135,13 +137,13 @@ const registerFramedBlocksRecipes = (event) => {
 	//#endregion
 
 	//#region Framed Iron Pressure Plate
-	event.shaped('framedblocks:framed_iron_pressure_plate', [
-		'AA',
-		'BB'
-	], {
-		A: '#forge:plates/iron',
-		B: 'framedblocks:framed_cube'
-	}).id('framedblocks:framed_iron_pressure_plate')
+	event.shapeless(
+		Item.of('framedblocks:framed_iron_pressure_plate', 1),
+		[
+			'minecraft:heavy_weighted_pressure_plate',
+			'framedblocks:framed_cube',
+		]
+	).id('framedblocks:framed_iron_pressure_plate')
 
 	event.custom({
 		type: "framedblocks:frame",
@@ -149,7 +151,7 @@ const registerFramedBlocksRecipes = (event) => {
 			{
 				count: 1,
 				ingredient: {
-					tag: "forge:plates/iron"
+					item: "minecraft:heavy_weighted_pressure_plate"
 				}
 			}
 		],
@@ -385,6 +387,13 @@ const registerFramedBlocksRecipes = (event) => {
 		A: '#minecraft:planks',
 		B: '#forge:rods/wooden'
 	}).id('framedblocks:framed_cube')
+	
+	event.recipes.gtceu.assembler('tfg:assembler/framedblocks/framed_cube')
+		.itemInputs('4x #minecraft:planks', '4x #forge:rods/wooden')
+		.circuit(8)
+		.itemOutputs('4x framedblocks:framed_cube')
+		.duration(40)
+		.EUt(GTValues.VA[GTValues.ULV])
 
 	// Framed Fence
 	event.shaped('3x framedblocks:framed_fence', [
@@ -405,7 +414,7 @@ const registerFramedBlocksRecipes = (event) => {
 	}).id('framedblocks:framed_fence_gate')
 
 	// Framed Ladder
-	event.shaped('3x framedblocks:framed_ladder', [
+	event.shaped('8x framedblocks:framed_ladder', [
 		'A A',
 		'ABA',
 		'A A'
@@ -416,24 +425,26 @@ const registerFramedBlocksRecipes = (event) => {
 
 	// Framing Saw
 	event.shaped('framedblocks:framing_saw', [
-		' B ',
-		'AAA',
+		' E ',
+		'CAC',
+		'BDB'
 	], {
-		A: 'framedblocks:framed_cube',
-		B: 'gtceu:wrought_iron_buzz_saw_blade'
-	}).id('framedblocks:framing_saw')
+		A: '#forge:plates/wrought_iron',
+		B: 'framedblocks:framed_cube',
+		C: '#forge:plates/brass',
+		D: '#forge:small_gears/brass',
+		E: '#forge:buzz_saw_heads'
+	}).id('framedblocks:framing_saw');
 
 	// Powered Framing Saw
 	event.shaped('framedblocks:powered_framing_saw', [
-		'ABA',
-		'CAD',
-		'EEE'
+		'A',
+		'B',
+		'C'
 	], {
 		A: '#forge:glass',
-		B: 'gtceu:wrought_iron_buzz_saw_blade',
-		C: 'gtceu:lv_electric_motor',
-		D: 'gtceu:lv_electric_motor',
-		E: 'framedblocks:framed_cube'
+		B: 'framedblocks:framing_saw',
+		C: 'gtceu:lv_electric_motor'
 	}).id('framedblocks:powered_framing_saw')
 
 	// Framed Chest

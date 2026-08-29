@@ -1,0 +1,161 @@
+{
+    "name": "製紙",
+    "category": "tfc:mechanics",
+    "icon": "tfc:unrefined_paper",
+    "pages": [
+      {
+        "type": "patchouli:text",
+        "text": "$(thing)紙$()は、$(l:mechanics/crops#papyrus)パピルス茎を加工$()するか、$(l:mechanics/papermaking#parchment)動物の皮を加工$()するか、あるいは$(l:mechanics/papermaking#paperfromwood)特定の木材を手間のかかる工程で加工$()することによって作られます。紙は$(thing)本$()や$(thing)地図$()といった記録・筆記用途によく利用されます。"
+      },
+      {
+        "type": "patchouli:crafting",
+        "recipe": "tfc:crafting/papyrus_strips",
+        "text": "まずパピルスを$(thing)ナイフ$()で、細長い帯状に切ります。"
+      },
+      {
+        "type": "tfc:sealed_barrel_recipe",
+        "recipe": "tfc:barrel/soaked_papyrus_strip",
+        "text": "次に、パピルスの帯を水が入った$(l:mechanics/barrels)樽$()に入れて$(thing)浸し$()ます。"
+      },
+      {
+        "type": "tfc:loom_recipe",
+        "recipe": "tfc:loom/unrefined_paper",
+        "text": "次に、浸したパピルスの帯を織機で織り合わせて$(thing)未精製の紙$()を作成します。最後に、それを丸太の上に置き、$(l:mechanics/leather_making#scraping)剥ぐ$()ことで、$(thing)紙$()が完成します。"
+      },
+      {
+        "type": "patchouli:crafting",
+        "recipe": "tfc:crafting/vanilla/map",
+        "recipe2": "tfc:crafting/vanilla/name_tag"
+      },
+      {
+        "type": "patchouli:crafting",
+        "recipe": "minecraft:writable_book",
+        "recipe2": "minecraft:book_from_glue"
+      },
+      {
+        "type": "patchouli:crafting",
+        "recipe": "tfc:crafting/wood/pine_lectern",
+        "recipe2": "tfc:crafting/wood/kapok_bookshelf"
+      },
+      {
+        "type": "patchouli:text",
+        "text": "次のページでは、羊皮紙の製造プロセスが確認できます。"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "parchment",
+        "text": "$(thing)羊皮紙$()は、剥がれた皮から作られます。その作り方については$(l:mechanics/leather_making)革作りの章$()で確認してください。羊皮紙の加工には複数の工程と材料が必要です。まず最初に$(thing)軽石$()が必要となります。軽石は$(l:the_world/geology)火山$()の周辺の地表で拾うことができるほか、安山岩、流紋岩、またはデイサイトを含む鉱床を$(l:mechanics/sluices)流し樋$()や$(l:mechanics/panning)ふるい$()で処理することでも入手可能です。",
+        "title": "羊皮紙"
+      },
+      {
+        "type": "patchouli:multiblock",
+        "multiblock": {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:groundcover/pumice"
+          }
+        },
+        "name": "軽石",
+        "text": "地面に置かれた軽石。",
+        "enable_visualize": false
+      },
+      {
+        "type": "patchouli:crafting",
+        "recipe": "tfc:crafting/large_treated_hide",
+        "text": "軽石、ハンマー、剥がれた皮を組み合わせてクラフトすることで、$(thing)加工された皮$()を作成できます。"
+      },
+      {
+        "type": "patchouli:crafting",
+        "recipe": "tfc:crafting/parchment",
+        "text": "加工された皮と、$(l:mechanics/glassworking#lime)石灰の粉$()、小麦粉系の粉、新鮮な卵を組み合わせて加工することで、紙$が完成します。"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "paperfromwood",
+        "text": "$(thing)木材からの製紙$()は、古くから伝わる方法で、硬い木材をシート状に加工し、それをパルプ状になるまで粉砕した後、さらに分解し、圧縮、乾燥、削りの工程を経て紙へと仕上げる工程です。$(br2)ただし、柔らかい木材は製紙に適していないため使用できません。",
+        "title": "木材からの製紙"
+      },
+      {
+        "type": "patchouli:text",
+        "text": "まず初めに、以下の堅木を見つける必要があります：$(br2)アカシア$(br)トネリコ$(br)ヤマナラシ$(br)シラカバ$(br)ブラックウッド$(br)トチノキ$(br)ヒッコリー$(br)カエデ$(br)オーク$(br)ローズウッド$(br)スズカケノキ"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "title": "樹皮を剥いだ堅木",
+        "item": {
+          "tag": "tfg:stripped_hardwood"
+        },
+        "text": "この工程はまず、$(thing)堅木$()の丸太から樹皮を取り除き、内部の繊維質を露出させるところから始まります。丸太を設置して斧をで右クリックすることで、樹皮を剥ぐことができます。"
+      },
+      {
+        "type": "patchouli:crafting",
+        "title": "剥いだ堅木",
+        "recipe": "tfg:crafting/strip_hardwood",
+        "text": "次に、樹皮を剥いだ木材を斧で削ることで$(item)剥いだ堅木$()を入手します。この作業は斧、もしくはより高性能な道具で実行可能です。"
+      },
+      {
+        "type": "tfc:sealed_barrel_recipe",
+        "title": "剥いで浸した堅木",
+        "recipe": "tfg:barrel/soak_hardwood_strip",
+        "text": "次に、剥いだ堅木を$(thing)水の入った$()$(l:mechanics/barrels)樽$()に浸します。これによって$(thing)木材$()の構造的な強度が脆くなり、より細かく$(thing)分解できる状態$()になります。"
+      },
+      {
+        "type": "tfc:quern_recipe",
+        "recipe": "tfg:quern/soaked_hardwood_strip",
+        "title": "堅木のパルプ",
+        "text": "その後、$(l:mechanics/quern)臼$()を使って、剥いで浸した堅木をすり潰し、$(item)堅木のパルプ$()へと加工します。"
+      },
+      {
+        "type": "patchouli:crafting",
+        "recipe": "gtceu:shaped/small_dust_assembling_hardwood",
+        "title": "パルプをまとめる",
+        "text": "臼ではパルプが少量ずつ出てくるため、それらを$(thing)作業台$()でまとめる必要があります。なお、より高度な粉砕手段を用いることで、より多くのパルプを効率的に得ることができるようになります。"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "item": "gtceu:thermochemically_treated_hardwood_dust",
+        "title": "パルプの熱処理",
+        "text": "パルプを最終的に紙へ加工する前に、灰汁で煮沸する$(thing)熱処理$()によってさらに分解する必要があります。この処理は$(l:firmalife/oven_appliances#vat)釜$()または$(l:mechanics/pot)鍋$()を用いて行います。"
+      },
+      {
+        "type": "patchouli:empty"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "item": "tfg:soaked_unrefined_paper",
+        "title": "パルプを潰す",
+        "text": "灰汁で煮沸し分解された後の$(item)熱処理済み堅木のパルプ$()は、潰すことで$(item)濡れた未精製の紙$()へと加工できます。"
+      },
+      {
+        "type": "tfc:anvil_recipe",
+        "recipe": "tfg:anvil/soaked_unrefined_paper",
+        "text": "$(l:mechanics/anvils)金床$()で、パルプを叩き伸ばし、シート状の濡れた未精製の紙に加工することが可能です。"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "title": "踏み桶",
+        "item": {
+          "tag": "firmalife:stomping_barrels"
+        },
+        "text": "また別の方法として、$(l:firmalife/wine)踏み桶$()を使い、熱処理済み堅木のパルプを踏み潰すことで加工することもできます。"
+      },
+      {
+        "type": "tfc:drying_recipe",
+        "recipe": "tfg:drying/unrefined_paper",
+        "text": "最終工程は$(l:firmalife/drying)乾燥$()工程です。$(item)濡れた未精製の紙$()を乾かして$(item)未精製の紙$()へと仕上げます。その後は先述の通り、削り加工を行うことで$(item)紙$()が完成します。"
+      },
+      {
+        "type": "patchouli:text",
+        "title": "もうちょっと楽にならない...？",
+        "text": "技術の発達により、木材から紙を作る際の工程数を減らすことができます。木材を用いた製紙の別のアプローチについては$(thing)EMI$()を参照してください。"
+      }
+    ],
+    "read_by_default": true
+}

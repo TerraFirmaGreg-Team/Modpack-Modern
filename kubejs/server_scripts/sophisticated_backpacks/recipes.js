@@ -251,8 +251,8 @@ const registerSophisticatedBackpacksRecipes = (event) => {
         'CDE',
         'FGF'
     ], {
-        A: '#forge:screws/steel',
-        B: 'gtceu:item_detector_cover',
+        A: '#forge:screws/wrought_iron',
+        B: '#forge:small_gears/red_alloy',
         C: '#forge:tools/screwdrivers',
         D: 'sophisticatedbackpacks:upgrade_base',
         E: '#forge:tools/wrenches',
@@ -262,7 +262,7 @@ const registerSophisticatedBackpacksRecipes = (event) => {
 
     event.shapeless('sophisticatedbackpacks:advanced_void_upgrade', [
         'sophisticatedbackpacks:void_upgrade',
-        '#gtceu:circuits/mv'
+        '#gtceu:circuits/ulv'
     ]).id('tfg:sophisticated_backpacks/shapeless/advanced_void_upgrade')
 
     event.shaped('sophisticatedbackpacks:deposit_upgrade', [

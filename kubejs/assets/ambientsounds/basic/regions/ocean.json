@@ -2,7 +2,8 @@
 	"name": "ocean",
 	"biomes": [
 		"ocean",
-		"ocean_reef"
+		"ocean_reef",
+		"subglacial_lake"
 	],
 	"features": [
 		"water"

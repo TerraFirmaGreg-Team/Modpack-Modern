@@ -1,0 +1,30 @@
+{
+	"type": "tfc:pipe_vein",
+	"config": {
+		"height": 120,
+		"radius": 4,
+		"min_skew": 0,
+		"max_skew": 2,
+		"min_slant": 0,
+		"max_slant": 2,
+		"sign": 0,
+		"rarity": 80,
+		"density": 0.99,
+		"min_y": 60,
+		"max_y": 180,
+		"random_name": "adakite_column",
+		"blocks": [
+			{
+				"replace": [
+					"minecraft:air"
+				],
+				"with": [
+					{
+						"block": "betterend:lacugrove_bark",
+						"weight": 1
+					}
+				]
+			}
+		]
+	}
+}

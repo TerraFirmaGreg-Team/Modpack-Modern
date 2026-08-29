@@ -8,6 +8,9 @@
     "min_y": 10,
     "max_y": 100,
     "random_name": "moon_quartz",
+    "project": false,
+    "project_offset": false,
+    "near_lava": false,
     "blocks": [
       {
         "replace": [

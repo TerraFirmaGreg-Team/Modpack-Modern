@@ -1,0 +1,12 @@
+{
+	"feature": "tfg:venus/surface/loose_scoria",
+	"placement": [
+		{
+			"type": "minecraft:count",
+			"count": 2
+		},
+		{
+			"type": "minecraft:in_square"
+		}
+	]
+}

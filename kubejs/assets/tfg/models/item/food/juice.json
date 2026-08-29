@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "tfg:item/food/juice_0",
+    "layer1": "tfg:item/food/juice_1"
+  }
+}

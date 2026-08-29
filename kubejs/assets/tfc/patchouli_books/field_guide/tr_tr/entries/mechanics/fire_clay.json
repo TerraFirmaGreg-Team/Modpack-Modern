@@ -1,0 +1,39 @@
+{
+  "name": "Ateşe Dayanıklı Kil",
+  "category": "tfc:mechanics",
+  "icon": "tfc:fire_clay",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Ateşe Dayanıklı Kilin kullanım yerleri az ama kullanıldığı yerler bayağı önemlidir Kilin ateşe dayanıklı versiyonu olduğu için senin ateşli işlerini çözmek için bire bir!"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/fire_clay",
+      "text": "Ateşe Dayanıklı Kilin yapımı şöyledir : $(l:tfg_ores/earth_vein_index#normal_graphite)Grafit$() tozu,$(l:mechanics/quern)quern$()içinde ezilmesi lazım, bide $(l:tfg_ores/surface_kaolin#powder)Kaolin$() tozunu unutmamak gerek"
+    },
+    {
+      "type": "tfc:heat_recipe",
+      "recipe": "tfc:heating/kaolin_clay",
+      "text": "Kaolin tozunun yapımı şansa dayalıdır $(l:mechanics/surface_kaolin)Kaolin kili$().ni Isıttığında yüzde %20 ihtimalle kaolin tozu elde edersin"
+    },
+    {
+      "type": "tfc:knapping_recipe",
+      "anchor": "crucible",
+      "recipe": "tfc:fire_clay_knapping/crucible",
+      "text": " $(l:mechanics/crucible)Pot$()u yaptıktan sonra Isıtmayı unutma ancak öyle kullanılabilir olur!"
+    },
+    {
+      "type": "tfc:knapping_recipe",
+      "anchor": "fire_bricks",
+      "recipe": "tfc:fire_clay_knapping/brick",
+      "text": "$(l:mechanics/blast_furnace)Maden fırını$() sadece ama sadece Ateşe dayanıklı tuğla ile kullanıla bilir"
+    },
+    {
+      "type": "tfc:knapping_recipe",
+      "recipe": "tfc:fire_clay_knapping/fire_ingot_mold",
+      "text": "$(thing)Ateşe dayanıklı Kültçe kalıbı$() $(l:getting_started/pottery#mold)Kültçe kalıbı$()nın aksine 10 da 1 ihtimalle değil 100 de 1 ihtimalle kırılır"
+    }
+  ],
+  "read_by_default": true
+}

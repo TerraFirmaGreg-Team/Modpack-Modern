@@ -40,7 +40,7 @@
 
 #Crusher Attributes
 [crusher]
-	#Crusher health [default: 50]
+	#Crusher health [default: 40]
 	#Range: 1.0 ~ 1024.0
 	health = 90.0
 	#Crusher attack damage [default: 10]
@@ -73,4 +73,40 @@
 	#Surfer health [default: 30]
 	#Range: 1.0 ~ 1024.0
 	health = 80.0
+
+#Charger Attributes
+[charger]
+	#Charger health [default: 80]
+	#Range: 1.0 ~ 1024.0
+	health = 200.0
+	#Charger armor [default: 4]
+	#Range: 0.0 ~ 30.0
+	armor = 6.0
+	#Charger armor toughness [default: 2]
+	#Range: 0.0 ~ 20.0
+	armorToughness = 4.0
+	#Charger attack damage [default: 15]
+	#Range: 0.0 ~ 1024.0
+	damage = 15.0
+
+#Raider Attributes
+[raider]
+	#Raider health [default: 60]
+	#Range: 1.0 ~ 1024.0
+	health = 200.0
+	#Raider armor [default: 4]
+	#Range: 0.0 ~ 30.0
+	armor = 6.0
+	#Raider armor toughness [default: 2]
+	#Range: 0.0 ~ 20.0
+	armorToughness = 4.0
+	#Raider attack damage [default: 12]
+	#Range: 0.0 ~ 1024.0
+	damage = 15.0
+
+#Snatcher Attributes
+[snatcher]
+	#Snatcher health [default: 10]
+	#Range: 1.0 ~ 1024.0
+	health = 60.0
 

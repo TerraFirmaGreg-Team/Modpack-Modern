@@ -1,0 +1,17 @@
+{
+	"type": "tfg:large_lake",
+	"config": {
+		"barrier": {
+			"type": "minecraft:simple_state_provider",
+			"state": {
+				"Name": "tfc:mud/silt"
+			}
+		},
+		"fluid": {
+			"type": "minecraft:simple_state_provider",
+			"state": {
+				"Name": "tfc:fluid/salt_water"
+			}
+		}
+	}
+}

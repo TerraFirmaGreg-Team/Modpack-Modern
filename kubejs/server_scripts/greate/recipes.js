@@ -88,7 +88,6 @@ function registerGreateRecipes(event) {
 	// #region Gearboxes
 
 	global.AVAILABLE_GREATE_MATERIAL_TIERS.forEach(tier => {
-
 		event.shaped(`greate:${tier}_gearbox`, [
 			' A ',
 			'ABA',
@@ -237,7 +236,7 @@ function registerGreateRecipes(event) {
 		'DCE',
 		'AGA'
 	], {
-		A: '#forge:smooth_stone',
+		A: '#forge:plates/wrought_iron',
 		B: 'gtceu:treated_wood_slab',
 		C: '#forge:small_gears/steel',
 		D: '#forge:tools/hammers',
@@ -247,7 +246,7 @@ function registerGreateRecipes(event) {
 	}).id('greate:shaped/steel_millstone')
 
 	event.recipes.gtceu.assembler('greate:steel_millstone')
-		.itemInputs('2x #forge:smooth_stone', 'gtceu:treated_wood_slab', '#forge:small_gears/steel', '2x #forge:dusts/diamond', 'greate:steel_shaft')
+		.itemInputs('2x #forge:plates/wrought_iron', 'gtceu:treated_wood_slab', '#forge:small_gears/steel', '2x #forge:dusts/diamond', 'greate:steel_shaft')
 		.itemOutputs('greate:steel_millstone')
 		.duration(200)
 		.EUt(GTValues.VA[GTValues.ULV])
@@ -579,7 +578,7 @@ function registerGreateRecipes(event) {
 		'CDE',
 		' AB'
 	], {
-		A: '#forge:rings/rubber',
+		A: '#tfg:rubber_rings',
 		B: '#forge:screws/aluminium',
 		C: '#forge:tools/wrenches',
 		D: 'create:fluid_pipe',
@@ -587,7 +586,7 @@ function registerGreateRecipes(event) {
 	}).id('greate:shaped/aluminium_mechanical_pump')
 
 	event.recipes.gtceu.assembler('greate:aluminium_mechanical_pump')
-		.itemInputs('2x #forge:rings/rubber', '2x #forge:screws/aluminium', 'create:fluid_pipe', 'greate:aluminium_cogwheel')
+		.itemInputs('2x #tfg:rubber_rings', '2x #forge:screws/aluminium', 'create:fluid_pipe', 'greate:aluminium_cogwheel')
 		.itemOutputs('greate:aluminium_mechanical_pump')
 		.duration(200)
 		.EUt(GTValues.VA[GTValues.ULV])
@@ -674,7 +673,7 @@ function registerGreateRecipes(event) {
 	removeMaceratorRecipe(event, 'macerate_stone_belt_connector')
 	event.remove({ id: 'greate:shaped/stone_belt_connector' })
 
-	TFGHelpers.registerMaterialInfo('greate:stone_belt_connector', [GTMaterials.Air, 1]);
+	TFGHelpers.clearMaterialInfo('greate:stone_belt_connector');
 	
 	// Rubber
 	event.shaped('greate:rubber_belt_connector', [
@@ -757,7 +756,7 @@ function registerGreateRecipes(event) {
 		'FEG'
 	], {
 		A: '#gtceu:circuits/ulv',
-		B: 'greate:steel_shaft',
+		B: '#forge:small_gears/blue_steel',
 		C: 'gtceu:ulv_machine_hull',
 		D: '#forge:plates/black_steel',
 		E: 'gtceu:steel_whisk',
@@ -766,7 +765,7 @@ function registerGreateRecipes(event) {
 	}).id('greate:shaped/steel_mechanical_mixer')
 
 	event.recipes.gtceu.assembler('greate:steel_mechanical_mixer')
-		.itemInputs('greate:steel_shaft', '2x #gtceu:circuits/ulv', 'gtceu:ulv_machine_hull', 'gtceu:steel_whisk', '2x #forge:plates/black_steel')
+		.itemInputs('#forge:small_gears/blue_steel', '2x #gtceu:circuits/ulv', 'gtceu:ulv_machine_hull', 'gtceu:steel_whisk', '2x #forge:plates/black_steel')
 		.itemOutputs('greate:steel_mechanical_mixer')
 		.duration(200)
 		.EUt(GTValues.VA[GTValues.ULV])
@@ -859,9 +858,9 @@ function registerGreateRecipes(event) {
 		.itemOutputs('gtceu:steel_whisk')
 		.duration(GTMaterials.Steel.getMass() * 4)
 		.EUt(GTValues.VA[GTValues.MV])
-		.removePreviousMaterialInfo()
-		.addMaterialInfo(true)
-
+		
+	TFGHelpers.clearMaterialInfo('gtceu:steel_whisk');
+	TFGHelpers.registerMaterialInfo('gtceu:steel_whisk', [GTMaterials.Steel, 4]);
 	event.remove({ id: 'gtceu:extractor/extract_steel_whisk' })
 	
 	event.shaped('gtceu:aluminium_whisk', [
@@ -881,9 +880,9 @@ function registerGreateRecipes(event) {
 		.itemOutputs('gtceu:aluminium_whisk')
 		.duration(GTMaterials.Aluminium.getMass() * 4)
 		.EUt(GTValues.VA[GTValues.MV])
-		.removePreviousMaterialInfo()
-		.addMaterialInfo(true)
-
+		
+	TFGHelpers.clearMaterialInfo('gtceu:aluminium_whisk');
+	TFGHelpers.registerMaterialInfo('gtceu:aluminium_whisk', [GTMaterials.Aluminium, 4]);
 	event.remove({ id: 'gtceu:extractor/extract_aluminium_whisk' })
 	
 	event.shaped('gtceu:stainless_steel_whisk', [
@@ -903,9 +902,9 @@ function registerGreateRecipes(event) {
 		.itemOutputs('gtceu:stainless_steel_whisk')
 		.duration(GTMaterials.StainlessSteel.getMass() * 4)
 		.EUt(GTValues.VA[GTValues.MV])
-		.removePreviousMaterialInfo()
-		.addMaterialInfo(true)
-
+		
+	TFGHelpers.clearMaterialInfo('gtceu:stainless_steel_whisk');
+	TFGHelpers.registerMaterialInfo('gtceu:stainless_steel_whisk', [GTMaterials.StainlessSteel, 4]);
 	event.remove({ id: 'gtceu:extractor/extract_stainless_steel_whisk' })
 	
 	event.shaped('gtceu:titanium_whisk', [
@@ -925,9 +924,9 @@ function registerGreateRecipes(event) {
 		.itemOutputs('gtceu:titanium_whisk')
 		.duration(GTMaterials.Titanium.getMass() * 4)
 		.EUt(GTValues.VA[GTValues.MV])
-		.removePreviousMaterialInfo()
-		.addMaterialInfo(true)
-
+		
+	TFGHelpers.clearMaterialInfo('gtceu:titanium_whisk');
+	TFGHelpers.registerMaterialInfo('gtceu:titanium_whisk', [GTMaterials.Titanium, 4]);
 	event.remove({ id: 'gtceu:extractor/extract_titanium_whisk' })
 		
 	event.shaped('gtceu:tungsten_steel_whisk', [
@@ -947,9 +946,9 @@ function registerGreateRecipes(event) {
 		.itemOutputs('gtceu:tungsten_steel_whisk')
 		.duration(GTMaterials.TungstenSteel.getMass() * 4)
 		.EUt(GTValues.VA[GTValues.MV])
-		.removePreviousMaterialInfo()
-		.addMaterialInfo(true)
-
+		
+	TFGHelpers.clearMaterialInfo('gtceu:tungsten_steel_whisk');
+	TFGHelpers.registerMaterialInfo('gtceu:tungsten_steel_whisk', [GTMaterials.TungstenSteel, 4]);
 	event.remove({ id: 'gtceu:extractor/extract_tungsten_steel_whisk' })
 		
 	event.shaped('gtceu:rhodium_plated_palladium_whisk', [
@@ -969,9 +968,9 @@ function registerGreateRecipes(event) {
 		.itemOutputs('gtceu:rhodium_plated_palladium_whisk')
 		.duration(GTMaterials.RhodiumPlatedPalladium.getMass() * 4)
 		.EUt(GTValues.VA[GTValues.MV])
-		.removePreviousMaterialInfo()
-		.addMaterialInfo(true)
-
+		
+	TFGHelpers.clearMaterialInfo('gtceu:rhodium_plated_palladium_whisk');
+	TFGHelpers.registerMaterialInfo('gtceu:rhodium_plated_palladium_whisk', [GTMaterials.RhodiumPlatedPalladium, 4]);
 	event.remove({ id: 'gtceu:extractor/extract_rhodium_plated_palladium_whisk' })
 		
 	event.shaped('gtceu:naquadah_alloy_whisk', [
@@ -991,9 +990,9 @@ function registerGreateRecipes(event) {
 		.itemOutputs('gtceu:naquadah_alloy_whisk')
 		.duration(GTMaterials.NaquadahAlloy.getMass() * 4)
 		.EUt(GTValues.VA[GTValues.MV])
-		.removePreviousMaterialInfo()
-		.addMaterialInfo(true)
-
+		
+	TFGHelpers.clearMaterialInfo('gtceu:naquadah_alloy_whisk');
+	TFGHelpers.registerMaterialInfo('gtceu:naquadah_alloy_whisk', [GTMaterials.NaquadahAlloy, 4]);
 	event.remove({ id: 'gtceu:extractor/extract_naquadah_alloy_whisk' })
 		
 	event.shaped('gtceu:darmstadtium_whisk', [
@@ -1013,9 +1012,9 @@ function registerGreateRecipes(event) {
 		.itemOutputs('gtceu:darmstadtium_whisk')
 		.duration(GTMaterials.Darmstadtium.getMass() * 4)
 		.EUt(GTValues.VA[GTValues.MV])
-		.removePreviousMaterialInfo()
-		.addMaterialInfo(true)
-
+		
+	TFGHelpers.clearMaterialInfo('gtceu:darmstadtium_whisk');
+	TFGHelpers.registerMaterialInfo('gtceu:darmstadtium_whisk', [GTMaterials.Darmstadtium, 4]);
 	event.remove({ id: 'gtceu:extractor/extract_darmstadtium_whisk' })
 
 	// #endregion
@@ -1121,8 +1120,7 @@ function registerGreateRecipes(event) {
 		.removePreviousMaterialInfo().addMaterialInfo(true)
 
 	// #endregion
-
-	event.recipes.gtceu.shaped('greate:wire_coating_factory', [
+		event.recipes.gtceu.shaped('greate:wire_coating_factory', [
 		'ABA',
 		'CDC',
 		'ABA'
@@ -1132,4 +1130,24 @@ function registerGreateRecipes(event) {
 		C: 'gtceu:iv_electric_pump',
 		D: 'create:spout'
 	}).addMaterialInfo().id('tfg:shaped/toms_favourite_block')
+
+	event.shaped(`2x greate:treated_wood_window`, [
+		'BAB',
+		' B '
+	], {
+		A: '#forge:glass',
+		B: 'gtceu:treated_wood_planks'
+	}).id(`tfg:greate/shaped/treated_wood_window`)
+
+	event.shapeless(`2x greate:treated_wood_window_pane`,
+	[
+		`greate:treated_wood_window`,
+		'#forge:tools/saws'
+	]).id('tfg:greate/shapeless/treated_wood_window_pane')
+
+	event.recipes.gtceu.cutter(`tfg:treated_wood_window_pane`)
+		.itemInputs(`3x greate:treated_wood_window`)
+		.itemOutputs(`8x greate:treated_wood_window_pane`)
+		.duration(40)
+		.EUt(7)
 }

@@ -1,0 +1,204 @@
+{
+	"name": "地球の樹木一覧",
+	"category": "tfc:arborfirmacraft",
+	"icon": "afc:wood/sapling/flame_of_the_forest",
+	"read_by_default": true,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "この世界に存在するすべての木と、その生息環境の一覧です。$(br2)家の建材などで特定の木材を使いたいと思ったときは、ここにある一覧を見て、どんな環境に生えているかを確認できます。なお、並び順は樹木の名前のアルファベット順です。$(br2)興味があれば、$(l:tfc:tfg_tips/mars_tree_index)火星の菌性樹木一覧$()もぜひご覧ください。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "アカシア、アラビアゴムノキ",
+			"item": "tag:tfc:acacia_logs",
+			"text": "$(bold)アカシア$()$(br)$(thing)降水量$(): 90 — 275mm$(br)$(thing)温度$(): 13.4 — 40°C$(br2)$(bold)コア$()$(br)$(thing)降水量$(): 350 — 500mm$(br)$(thing)温度$(): 15.3 — 24.4°C$(br2)$(bold)アラビアゴムノキ$()$(br)$(thing)降水量$(): 90 — 275mm$(br)$(thing)温度$(): 11.6 — 40°C"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "トネリコ",
+			"item": "tag:tfc:ash_logs",
+			"text": "$(bold)トネリコ$()$(br)$(thing)降水量$(): 60 — 240mm$(br)$(thing)温度$(): -13.9 — 0.7°C"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "ヤマナラシ、ポプラ",
+			"item": "tag:tfc:aspen_logs",
+			"text": "$(bold)ヤマナラシ$()$(br)$(thing)降水量$(): 350 — 500mm$(br)$(thing)温度$(): -15.7 — -1.1°C$(br2)$(bold)ポプラ$()$(br)$(thing)降水量$(): 170 — 310mm$(br)$(thing)温度$(): -15.7 — -6.6°C"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "バオバブ",
+			"item": "tag:afc:baobab_logs",
+			"text": "$(bold)バオバブ$()$(br)$(thing)降水量$(): 30 — 190mm$(br)$(thing)温度$(): 15.3 — 26.2°C"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "シラカバ",
+			"item": "tag:tfc:birch_logs",
+			"text": "$(bold)シラカバ$()$(br)$(thing)降水量$(): 125 — 310mm$(br)$(thing)温度$(): -13.9 — 2.5°C"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "ブラックウッド",
+			"item": "tag:tfc:blackwood_logs",
+			"text": "$(bold)ブラックウッド$()$(br)$(thing)降水量$(): 85 — 285mm$(br)$(thing)温度$(): 13.4 — 22.5°C$(br2)$(bold)ムルガノキ$()$(br)$(thing)降水量$(): 35 — 150mm$(br)$(thing)温度$(): 9.8 — 20.7°C"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "スギ",
+			"item": "tag:tfc:white_cedar_logs",
+			"text": "$(bold)ホワイトシダー$()$(br)$(thing)降水量$(): 100 — 220mm$(br)$(thing)温度$(): -13.9 — 4.3°C$(br2)$(bold)アトラススギ$()$(br)$(thing)降水量$(): 165 — 500mm$(br)$(thing)温度$(): 8.0 — 13.4°C"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "トチノキ",
+			"item": "tag:tfc:chestnut_logs",
+			"text": "$(bold)トチノキ$()$(br)$(thing)降水量$(): 150 — 300mm$(br)$(thing)温度$(): -6.6 — 11.6°C"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "イトスギ、レッドシダー",
+			"item": "tag:afc:cypress_logs",
+			"text": "$(bold)タチラクウショウ$()$(br)$(thing)降水量$(): 100 — 260mm$(br)$(thing)温度$(): 2.5 — 15.3°C$(br2)$(bold)ラクウショウ$()$(br)$(thing)降水量$(): 360 — 500mm$(br)$(thing)温度$(): -1.1 — 15.3°C$(br2)$(bold)シダレイトスギ$()$(br)$(thing)降水量$(): 290 — 415mm$(br)$(thing)温度$(): -8.4 — 4.3°C"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(bold)レッドシダー$()$(br)$(thing)降水量$(): 410 — 500mm$(br)$(thing)温度$(): -4.8 — 9.8°C"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "ユーカリ",
+			"item": "tag:afc:eucalyptus_logs",
+			"text": "$(bold)ブルーガム$()$(br)$(thing)降水量$(): 170 — 325mm$(br)$(thing)温度$(): 8.0 — 18.9°C$(br2)$(bold)ナナカマド$()$(br)$(thing)降水量$(): 390 — 500mm$(br)$(thing)温度$(): 9.8 — 18.9°C$(br2)$(bold)レインボーユーカリ$()$(br)$(thing)降水量$(): 300 — 450mm$(br)$(thing)温度$(): 15.3 — 24.4°C"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "ゴムノキ",
+			"item": "tag:afc:fig_logs",
+			"text": "$(bold)フランスゴムノキ$()$(br)$(thing)降水量$(): 340 — 500mm$(br)$(thing)温度$(): 18.9 — 26.2°C$(br2)$(bold)インドゴムノキ$()$(br)$(thing)降水量$(): 290 — 400mm$(br)$(thing)温度$(): 9.8 — 20.7°C"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "モミ",
+			"item": "tag:tfc:douglas_fir_logs",
+			"text": "$(bold)ベイマツ$()$(br)$(thing)降水量$(): 305 — 500mm$(br)$(thing)温度$(): -10.3 — 6.1°C$(br2)$(bold)コウザンモミ$()$(br)$(thing)降水量$(): 220 — 345mm$(br)$(thing)温度$(): -1.1 — 11.6°C$(br2)$(bold)バルサムモミ$()$(br)$(thing)降水量$(): 210 — 500mm$(br)$(thing)温度$(): -13.9 — -1.1°C"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "パラゴムノキ",
+			"item": "tag:afc:hevea_logs",
+			"text": "$(bold)パラゴムノキ$()$(br)$(thing)降水量$(): 390 — 500mm$(br)$(thing)温度$(): 17.1 — 26.2°C"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "ヒッコリー",
+			"item": "tag:tfc:hickory_logs",
+			"text": "$(bold)ヒッコリー$()$(br)$(thing)降水量$(): 210 — 400mm$(br)$(thing)温度$(): -6.6 — 11.6°C$(br2)$(bold)フロリダヒッコリー$()$(br)$(thing)降水量$(): 400 — 475mm$(br)$(thing)温度$(): 11.6 — 17.1°C"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "イペ",
+			"item": "tag:afc:ipe_logs",
+			"text": "$(bold)イエローイペ$()$(br)$(thing)降水量$(): 340 — 500mm$(br)$(thing)温度$(): 11.6 — 20.7°C"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "アイアンウッド",
+			"item": "tag:afc:ironwood_logs",
+			"text": "$(bold)キングアイアンウッド$()$(br)$(thing)降水量$(): 320 — 430mm$(br)$(thing)温度$(): 20.7 — 40.0°C$(br2)$(bold)レボンボアイアンウッド$()$(br)$(thing)降水量$(): 150 — 230mm$(br)$(thing)温度$(): 20.7 — 40.0°C$(br2)$(bold)トクサバモクマオウ$()$(br)$(thing)降水量$(): 340 — 500mm$(br)$(thing)温度$(): 9.8 — 20.7°C"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "カポック",
+			"item": "tag:tfc:kapok_logs",
+			"text": "$(bold)カポック$()$(br)$(thing)降水量$(): 360 — 500mm$(br)$(thing)温度$(): 13.4 — 24.4°C$(br2)$(bold)キワタ$()$(br)$(thing)降水量$(): 250 — 350mm$(br)$(thing)温度$(): 20.7 — 40.0°C"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "マホガニー",
+			"item": "tag:afc:mahogany_logs",
+			"text": "$(bold)マホガニー$()$(br)$(thing)降水量$(): 300 — 430mm$(br)$(thing)温度$(): 15.3 — 26.2°C$(br2)$(bold)キューバマホガニー$()$(br)$(thing)降水量$(): 320 — 500mm$(br)$(thing)温度$(): 11.6 — 18.9°C$(br2)$(bold)サペリマホガニー$()$(br)$(thing)降水量$(): 330 — 500mm$(br)$(thing)温度$(): 13.4 — 26.2°C"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "マングローブ",
+			"item": "tag:tfc:mangrove_logs",
+			"text": "$(bold)マングローブ$()$(br)$(thing)降水量$(): 220mm+$(br)$(thing)温度$(): 18.0°C+$(br)注: 塩性湿地バイオームにのみ生成されます"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "カエデ",
+			"item": "tag:tfc:maple_logs",
+			"text": "$(bold)カエデ$()$(br)$(thing)降水量$(): 260 — 360mm$(br)$(thing)温度$(): -8.4 — 8.0°C$(br2)$(bold)ヒロハカエデ$()$(br)$(thing)降水量$(): 405 — 500mm$(br)$(thing)温度$(): -4.8 — 11.6°C$(br2)$(bold)イロハモミジ$()$(br)$(thing)降水量$(): 240 — 320mm$(br)$(thing)温度$(): 0.7 — 4.3°C"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "オーク、クロガシワ",
+			"item": "tag:tfc:oak_logs",
+			"text": "$(bold)オーク$()$(br)$(thing)降水量$(): 210 — 320mm$(br)$(thing)温度$(): -8.4 — 6.1°C$(br2)$(bold)ジョウリョクカシ$()$(br)$(thing)降水量$(): 390 — 500mm$(br)$(thing)温度$(): 0.7 — 13.4°C$(br2)$(bold)クロガシワ$()$(br)$(thing)降水量$(): 150 — 330mm$(br)$(thing)温度$(): 11.6 — 20.7°C"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "ヤシ",
+			"item": "tag:tfc:palm_logs",
+			"text": "$(bold)ヤシ$()$(br)$(thing)降水量$(): 0 — 250mm$(br)$(thing)温度$(): 17.1 — 40.0°C$(br2)$(bold)クジャクヤシ$()$(br)$(thing)降水量$(): 400 — 500mm$(br)$(thing)温度$(): 20.7 — 26.2°C"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "マツ",
+			"item": "tag:tfc:pine_logs",
+			"text": "$(bold)マツ$()$(br)$(thing)降水量$(): 60 — 270mm$(br)$(thing)温度$(): -19.4 — -3.0°C$(br2)$(bold)カサマツ$()$(br)$(thing)降水量$(): 140 — 290mm$(br)$(thing)温度$(): 2.5 — 18.9°C$(br2)$(bold)アカマツ$()$(br)$(thing)降水量$(): 185 — 320mm$(br)$(thing)温度$(): -8.4 — 4.3°C"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(bold)アメリカカラマツ$()$(br)$(thing)降水量$(): 150 — 500mm$(br)$(thing)温度$(): -17.5 — -1.1°C"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "シタン",
+			"item": "tag:tfc:rosewood_logs",
+			"text": "$(bold)インドシタン$()$(br)$(thing)降水量$(): 245 — 360mm$(br)$(thing)温度$(): 15.3 — 24.4°C$(br2)$(bold)シタン$()$(br)$(thing)降水量$(): 340 — 440mm$(br)$(thing)温度$(): 15.3 — 22.5°C"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "セコイア",
+			"item": "tag:tfc:sequoia_logs",
+			"text": "$(bold)セコイア$()$(br)$(thing)降水量$(): 320 — 500mm$(br)$(thing)温度$(): 0.7 — 8.0°C$(br2)$(bold)センペルセコイア$()$(br)$(thing)降水量$(): 320 — 500mm$(br)$(thing)温度$(): 4.3 — 9.8°C"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "トウヒ",
+			"item": "tag:tfc:spruce_logs",
+			"text": "$(bold)トウヒ$()$(br)$(thing)降水量$(): 330 — 500mm$(br)$(thing)温度$(): -19.4 — 2.5°C$(br2)$(bold)コーストスプルース$()$(br)$(thing)降水量$(): 320 — 390mm$(br)$(thing)温度$(): -12.1 — 6.1°C$(br2)$(bold)ベイトウヒ$()$(br)$(thing)降水量$(): 370 — 500mm$(br)$(thing)温度$(): 2.5 — 8.0°C"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(bold)クロトウヒ$()$(br)$(thing)降水量$(): 220 — 360mm$(br)$(thing)温度$(): -17.5 — -1.1°C"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "スズカケノキ",
+			"item": "tag:tfc:sycamore_logs",
+			"text": "$(bold)スズカケノキ$()$(br)$(thing)降水量$(): 330 — 480mm$(br)$(thing)温度$(): -6.6 — 11.6°C"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "チーク",
+			"item": "tag:afc:teak_logs",
+			"text": "$(bold)チーク$()$(br)$(thing)降水量$(): 215 — 330mm$(br)$(thing)温度$(): 13.4 — 26.2°C$(br2)$(bold)イロコチーク$()$(br)$(thing)降水量$(): 210 — 320mm$(br)$(thing)温度$(): 17.1 — 40.0°C$(br2)$(bold)カエンジュ$()$(br)$(thing)降水量$(): 340 — 500mm$(br)$(thing)温度$(): 13.4 — 24.4°C"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "トゥアラン",
+			"item": "tag:afc:tualang_logs",
+			"text": "$(bold)トゥアラン$()$(br)$(thing)降水量$(): 360 — 500mm$(br)$(thing)温度$(): 20.7 — 40.0°C"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "ヤナギ",
+			"item": "tag:tfc:willow_logs",
+			"text": "$(bold)ヤナギ$()$(br)$(thing)降水量$(): 330 — 500mm$(br)$(thing)温度$(): -6.6 — 9.8°C$(br2)$(bold)シダレヤナギ$()$(br)$(thing)降水量$(): 355 — 500mm$(br)$(thing)温度$(): 9.8 — 17.1°C"
+		}
+	]
+}

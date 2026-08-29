@@ -1,0 +1,17 @@
+{
+  "name": "Skórzany worek",
+  "category": "tfc:sacks_n_such",
+  "icon": "sns:leather_sack",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "sns:leather_sack",
+      "text": "The $(item)Leather Sack$() is a type of $(l:sns/item_containers)Item Container$() and is like a vessel with slightly more storage. By default these can hold up to $(thing)Normal$() Items"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "sns:crafting/leather_sack"
+    }
+  ],
+  "read_by_default": true
+}

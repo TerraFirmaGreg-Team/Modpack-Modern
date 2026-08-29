@@ -1,0 +1,151 @@
+{
+  "name": "Canots",
+  "category": "tfc:firmaciv",
+  "icon": "firmaciv:rowboat_icon_only",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Alors comme ça, vous avez atteint l'Âge de bronze et vous voulez une amélioration ? Eh bien, c'est un canot qu'il vous faut. Il possède 3 places, et peut donc contenir 3 joueurs, ou jusqu'à 2 animaux, y compris des chevaux ! Comme toujours, vous pouvez remplacer des sièges (sauf celui de pilote), par un contenant de votre choix. Vous pouvez également placer 2 contenants de plus à la poupe."
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "firmaciv:textures/gui/book/rowboat_isometric.png"
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Contrairement aux autres bateaux, vous vous asseyez à l'envers pour diriger le canot. Cela vous donne un avantage mécanique pour bien faire travailler votre dos pour ramer ! Vous pouvez évidemment pilot en 1ère personne mais vous trouverez probablement plus intuitif de piloter 3ème personne en regardant en arrière."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmaciv:crafting/watercraft_frame_angled",
+      "text": "Pour construire un canot, vous aurez besoin de commencer par des échafaudages de construction navale. Ceux-ci vous permettront de maintenir vos matériaux pendant la construction. $(br2)Vous aurez besoin de les placer vers l'intérieur dans une zone de 2 par 3."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "   ",
+            "   ",
+            "   "
+          ],
+          [
+            " 12",
+            " 04",
+            " 56"
+          ]
+        ],
+        "mapping": {
+          "1": "firmaciv:watercraft_frame_angled[facing=west,shape=inner_right]",
+          "2": "firmaciv:watercraft_frame_angled[facing=west,shape=inner_left]",
+          "0": "firmaciv:watercraft_frame_angled[facing=north,shape=straight]",
+          "4": "firmaciv:watercraft_frame_angled[facing=south,shape=straight]",
+          "5": "firmaciv:watercraft_frame_angled[facing=east,shape=inner_left]",
+          "6": "firmaciv:watercraft_frame_angled[facing=east,shape=inner_right]"
+        }
+      },
+      "name": "Échafaudage de barque",
+      "text": "Échafaudage de construction navale arrangé pour contruire un canot.",
+      "enable_visualize": true
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Vous aurez ensuite besoin d'ajouter des planches d'un bois dur et fort convenable :$(br2)Acacia$(br)Frêne$(br)Tremble$(br)Bouleau$(br)Mimosa$(br)Châtaignier$(br)Caryer$(br)Érable $(br)Chêne$(br)Palissandre$(br)Sycomore"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "   ",
+            "   ",
+            "   "
+          ],
+          [
+            " 12",
+            " 04",
+            " 56"
+          ]
+        ],
+        "mapping": {
+          "1": "firmaciv:wood/watercraft_frame/angled/hickory[facing=west,shape=inner_right,frame_processed=3]",
+          "2": "firmaciv:wood/watercraft_frame/angled/hickory[facing=west,shape=inner_left,frame_processed=3]",
+          "0": "firmaciv:wood/watercraft_frame/angled/hickory[facing=north,shape=straight,frame_processed=3]",
+          "4": "firmaciv:wood/watercraft_frame/angled/hickory[facing=south,shape=straight,frame_processed=3]",
+          "5": "firmaciv:wood/watercraft_frame/angled/hickory[facing=east,shape=inner_left,frame_processed=3]",
+          "6": "firmaciv:wood/watercraft_frame/angled/hickory[facing=east,shape=inner_right,frame_processed=3]"
+        }
+      },
+      "name": "Échafaudage de barque",
+      "text": "Quatre planches ont été ajoutées à chaque échafaudage.",
+      "enable_visualize": true
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "   ",
+            "   ",
+            "   "
+          ],
+          [
+            " 12",
+            " 04",
+            " 56"
+          ]
+        ],
+        "mapping": {
+          "1": "firmaciv:wood/watercraft_frame/angled/hickory[facing=west,shape=inner_right,frame_processed=7]",
+          "2": "firmaciv:wood/watercraft_frame/angled/hickory[facing=west,shape=inner_left,frame_processed=7]",
+          "0": "firmaciv:wood/watercraft_frame/angled/hickory[facing=north,shape=straight,frame_processed=7]",
+          "4": "firmaciv:wood/watercraft_frame/angled/hickory[facing=south,shape=straight,frame_processed=7]",
+          "5": "firmaciv:wood/watercraft_frame/angled/hickory[facing=east,shape=inner_left,frame_processed=7]",
+          "6": "firmaciv:wood/watercraft_frame/angled/hickory[facing=east,shape=inner_right,frame_processed=7]"
+        }
+      },
+      "name": "Échafaudage de barque",
+      "text": "Avec un marteau dans votre main secondaire, ajoutez quatre boulons en cuivre à chaque échafaudage. Les boulons en cuivre se fabriquent dans une enclume à partir de lingots de cuivre.",
+      "enable_visualize": true
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "   ",
+            " LR",
+            "   "
+          ],
+          [
+            " 12",
+            " 04",
+            " 56"
+          ]
+        ],
+        "mapping": {
+          "1": "firmaciv:wood/watercraft_frame/angled/hickory[facing=west,shape=inner_right,frame_processed=7]",
+          "2": "firmaciv:wood/watercraft_frame/angled/hickory[facing=west,shape=inner_left,frame_processed=7]",
+          "0": "firmaciv:wood/watercraft_frame/angled/hickory[facing=north,shape=straight,frame_processed=7]",
+          "4": "firmaciv:wood/watercraft_frame/angled/hickory[facing=south,shape=straight,frame_processed=7]",
+          "5": "firmaciv:wood/watercraft_frame/angled/hickory[facing=east,shape=inner_left,frame_processed=7]",
+          "6": "firmaciv:wood/watercraft_frame/angled/hickory[facing=east,shape=inner_right,frame_processed=7]",
+          "L": "alekiships:oarlock[facing=north]",
+          "R": "alekiships:oarlock[facing=south]"
+        }
+      },
+      "name": "Échafaudage de barque",
+      "text": "Enfin, ajoutez les tolets au centre du bateau. Ceux-ci sont forgés à partir de n'importe quel double lingot de bronze.",
+      "enable_visualize": true
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe2": "alekiships:crafting/oar",
+      "text": "Enfin, ajoutez des rames avec $(item)$(k:key.use)$() et prenez le large !"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 3
+}

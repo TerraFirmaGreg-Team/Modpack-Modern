@@ -31,6 +31,7 @@ const registerAdAstraFluidTags = (event) => {
 	event.add('ad_astra:freezes_in_space', 'tfc:spring_water')
 	event.add('ad_astra:evaporates_in_space', 'tfc:salt_water')
 	event.add('ad_astra:evaporates_in_space', 'tfc:spring_water')
+	event.add('ad_astra:evaporates_in_space', 'tfg:muddy_water')
 	event.add('ad_astra:evaporates_in_space', '#tfg:alcohols')
 	event.add('ad_astra:evaporates_in_space', '#tfc:milks')
 	event.add('ad_astra:evaporates_in_space', '#tfc:dyes')
@@ -51,6 +52,10 @@ const registerAdAstraItemTags = (event) => {
 	event.add('c:hidden_from_recipe_viewers', 'ad_astra:aeronos_mushroom')
 	event.add('c:hidden_from_recipe_viewers', 'ad_astra:strophar_mushroom')
 	
+	event.add('c:hidden_from_recipe_viewers', 'tfg:tier_3_double_rocket')
+	event.add('c:hidden_from_recipe_viewers', 'tfg:tier_4_double_rocket')
+
+	
 	// Deco blocks
 	const DECO_BLOCKS = [ 'iron', 'steel', 'desh', 'calorite', 'ostrum' ];
 	DECO_BLOCKS.forEach(block => {
@@ -68,6 +73,12 @@ const registerAdAstraItemTags = (event) => {
 	event.add('tfg:ad_astra_etrium_blocks', 'ad_astra:etrium_plateblock')
 	event.add('tfg:ad_astra_etrium_blocks', 'ad_astra:etrium_panel')
 		
+	event.add('ad_astra:held_over_head', 'tfg:tier_1_double_rocket')	
+	event.add('ad_astra:held_over_head', 'tfg:tier_2_double_rocket')
+	event.add('ad_astra:held_over_head', 'tfg:tier_3_double_rocket')
+	event.add('ad_astra:held_over_head', 'tfg:tier_4_double_rocket')
+	
+	
 	global.AD_ASTRA_WOOD.forEach(wood => {
 
 		if (wood.log) {

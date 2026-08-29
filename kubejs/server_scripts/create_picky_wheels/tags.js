@@ -3,7 +3,8 @@
 
 function registerCreatePickyWheelsBiomeTags(event) {
 
-	event.add('createpickywheels:waterwheels_boosted', '#tfc:is_river')
+	event.add('createpickywheels:waterwheels_boosted', 'tfc:river')
+	event.add('createpickywheels:waterwheels_boosted', 'tfg:earth/river')
 
 	event.add('createpickywheels:waterwheels_whitelist', '#tfg:overworld_biomes')
 	event.add('createpickywheels:waterwheels_whitelist', '#tfg:nether_biomes')

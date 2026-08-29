@@ -1,0 +1,47 @@
+{
+  "name": "书写桌",
+  "category": "tfc:mechanics",
+  "icon": "minecraft:black_dye",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)书写桌$()是用来给物品重命名的。重命名需要消耗$(thing)黑色染料$()。可以直接用染料物品，也可以用一桶黑色染液代替。"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "0"
+          ]
+        ],
+        "mapping": {
+          "X": "tfc:wood/scribing_table/kapok"
+        }
+      },
+      "name": "",
+      "text": "书写桌",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/wood/birch_scribing_table",
+      "text": "书写桌的合成配方"
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "tfc:textures/gui/book/gui/scribing.png"
+      ],
+      "text": "在书写桌的上方输入文字，将要重命名的物品放在左侧，中间放置染料。右侧的格子就会输出物品。",
+      "border": false
+    }
+  ],
+  "read_by_default": true,
+  "extra_recipe_mappings": {
+    "tag:tfc:scribing_tables": 2
+  }
+}

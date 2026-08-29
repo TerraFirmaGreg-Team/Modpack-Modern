@@ -1,0 +1,31 @@
+{
+  "name": "馅饼",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:textures/item/food/cooked_pie.png",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Firmalife 允许制作各式各样的美味烘焙食品。本章将为你提供所需的一切知识，让你开始为早餐、午餐和晚餐享用美味而富有创意的餐点。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)黄油$()是许多这类食品的基础。使用一个$(l:firmalife/mixing_bowl)搅拌碗$()，将1000 mB的$(thing)奶油$()与一份$(thing)盐$()混合。奶油是通过将1000 mB牛奶与一块$(l:mechanics/firmalife#cheesecloth)奶酪布$()一同密封在桶中制成的。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "一种实用的餐点是$(thing)馅饼$()。在你的搅拌碗中，混合黄油、面粉和一种甜味剂（糖、蜂蜜）来制作$(thing)馅饼面团$()。若要直接制作$(thing)南瓜馅饼$()，则需混合一个鸡蛋、两块南瓜块、面粉和甜味剂。将其与一个$(thing)馅饼烤盘$()合成，然后在$(l:firmalife/ovens)烤炉$()中烘烤，即可完成配方。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/raw_pumpkin_pie",
+      "text": "$(thing)馅饼烤盘$()可以在砧上用$(thing)铸铁$()锻造而成。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/filled_pie",
+      "text": "面团、果酱和一个馅饼烤盘可以让你获得一个$(thing)已填充的馅饼$()，随后放入烤炉完成制作，即可得到一个美味的馅饼。"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 25
+}

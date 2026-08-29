@@ -21,3 +21,8 @@ The config files shipped with the server pack should be a good starting point fo
  
 * defaultconfigs/ftbranks/ranks.snbt
    * Depending on how powerful of a server you're using, you may want to change the amount of force-loaded chunks each player is allowed to have. Note that players on the same team will combine their total allowance, so small numbers can encourage team play.
+ 
+* config/ftbbackups2.json
+   * Backup frequency is set with cron time info.
+   * By default for servers this is every morning at 10:15AM: `"backup_cron": "0 15 10 * * ? *"`
+   * If you want it hourly like singleplayer worlds, use `"backup_cron": "0 0 0/1 1/1 * ? *"`

@@ -1,0 +1,17 @@
+{
+	"type": "minecraft:lake",
+	"config": {
+		"barrier": {
+			"type": "minecraft:simple_state_provider",
+			"state": {
+				"Name": "tfg:raw_oil_tar"
+			}
+		},
+		"fluid": {
+			"type": "minecraft:simple_state_provider",
+			"state": {
+				"Name": "gtceu:oil_medium"
+			}
+		}
+	}
+}

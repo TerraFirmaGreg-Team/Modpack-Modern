@@ -25,10 +25,10 @@ const pisciculture_base_duration = Math.max(1, greenhouse_base_duration * greenh
 /** @type {DimensionIndex[]} - Dimension settings array */
 const pisciculture_dimension_index = [
 	// Overworld settings are also used as the default when no dimension is specified.
-	{id: 'minecraft:overworld', fluid: '#tfg:clean_water', fluid_chance: 15, fluid_out: 'tfg:nitrate_rich_water', eut: GTValues.VA[GTValues.LV], oxygenated: true},
-	{id: 'minecraft:the_nether', fluid: '#tfg:clean_water', fluid_chance: 15, fluid_out: 'tfg:nitrate_rich_water', eut: GTValues.VA[GTValues.LV], oxygenated: true},
+	{id: 'minecraft:overworld', fluid: '#tfg:clean_water', fluid_chance: 10, fluid_out: 'tfg:nitrate_rich_water', eut: GTValues.VHA[GTValues.LV], oxygenated: true},
+	{id: 'minecraft:the_nether', fluid: '#tfg:clean_water', fluid_chance: 10, fluid_out: 'tfg:nitrate_rich_water', eut: GTValues.VHA[GTValues.LV], oxygenated: true},
 	// The moon has no fish yet :(
-	{id: 'ad_astra:mars', fluid: 'tfg:semiheavy_ammoniacal_water', fluid_chance: 15, fluid_out: 'tfg:nitrate_rich_semiheavy_ammoniacal_water', eut: GTValues.VA[GTValues.HV], oxygenated: null}
+	{id: 'ad_astra:mars', fluid: 'tfg:semiheavy_ammoniacal_water', fluid_chance: 10, fluid_out: 'tfg:nitrate_rich_semiheavy_ammoniacal_water', eut: GTValues.VHA[GTValues.HV], oxygenated: null}
 ];
 
 //#endregion
@@ -48,11 +48,22 @@ const pisciculture_dimension_index = [
 	function generatePiscicultureRecipe(event, dimension, input, output, id) {
 
 		// Resolve dimension based modifier defaults by comparing to the `pisciculture_dimension_index` array.
+		/** @type {DimensionIndex|null} */
 		const dimMods = dimension ? pisciculture_dimension_index.find(d => d.id === dimension) : null;
+
+		/** @type {Internal.FluidStackIngredient_} - Resolved fluid ID or tag. Defaults to `#tfg:clean_water` */
 		const resolvedFluid = dimMods?.fluid ?? '#tfg:clean_water';
+
+		/** @type {Internal.FluidStackIngredient_} - Resolved aquaponic loop fluid ID or tag. Defaults to `tfg:nitrate_rich_water` */
 		const resolvedFluidOut = dimMods?.fluid_out ?? 'tfg:nitrate_rich_water';
-		const resolvedEUt = dimMods ? dimMods.eut : GTValues.VA[GTValues.LV];
-		const resolvedChance = dimMods ? (dimMods.fluid_chance * 100) : 5000;
+
+		/** @type {GTValues.EUt} - Resolved EUt value. Defaults to LV EUt. */
+		const resolvedEUt = dimMods ? dimMods.eut : GTValues.VHA[GTValues.LV];
+
+		/** @type {number} - Resolved fluid chance multiplied by 100. Defaults to 1000. */
+		const resolvedChance = dimMods ? (dimMods.fluid_chance * 100) : 1000;
+
+		/** @type {boolean|null} - Whether the recipe requires an oxygenated environment. Defaults to true. */
 		const requiresOxygen = dimMods ? dimMods.oxygenated : true;
 
 		// Collect errors.
@@ -76,8 +87,8 @@ const pisciculture_dimension_index = [
 	let a = event.recipes.gtceu.pisciculture_fishery(`tfg:${id}`)
 		.itemInputs(input)
 		.perTick(true)
-		.chancedFluidInput(`${resolvedFluid} 5`, resolvedChance, 0)
-		.chancedFluidOutput(`${resolvedFluidOut} 5`, resolvedChance, 0)
+		.chancedFluidInput(`${resolvedFluid} 8`, resolvedChance, 0)
+		.chancedFluidOutput(`${resolvedFluidOut} 8`, resolvedChance, 0)
 		.perTick(false)
 		.itemOutputs(output)
 		.duration(pisciculture_base_duration)
@@ -110,7 +121,7 @@ const registerTFGPiscicultureRecipes = (event) => {
 	], {
 		A: 'gtceu:hv_machine_hull',
 		B: 'tfg:machine_casing_aluminium_plated_steel',
-		C: '#gtceu:circuits/hv',
+		C: '#gtceu:circuits/ev',
 		D: 'gtceu:stainless_steel_small_fluid_pipe',
 		E: 'gtceu:hv_electric_pump',
 		F: 'gtceu:fluid_filter'
@@ -145,7 +156,7 @@ const registerTFGPiscicultureRecipes = (event) => {
 					Item.of(`3x tfg:fish_roe`, {"mob_type": fish.id}).strongNBT(),
 					'2x minecraft:bucket'
 				],
-				`${linuxUnfucker(fish.id)}/basic_food/bucket_to_roe`
+				`${global.linuxUnfucker(fish.id)}/basic_food/bucket_to_roe`
 			);
 
 			generatePiscicultureRecipe(event,
@@ -158,7 +169,7 @@ const registerTFGPiscicultureRecipes = (event) => {
 					Item.of(`4x tfg:fish_roe`, {"mob_type": fish.id}).strongNBT(),
 					'2x minecraft:bucket'
 				],
-				`${linuxUnfucker(fish.id)}/advanced_food/bucket_to_roe`
+				`${global.linuxUnfucker(fish.id)}/advanced_food/bucket_to_roe`
 			);
 		} else {
 			generatePiscicultureRecipe(event,
@@ -170,7 +181,7 @@ const registerTFGPiscicultureRecipes = (event) => {
 					`6x ${fish.item}`,
 					Item.of(`3x tfg:fish_roe`, {"mob_type": fish.id}).strongNBT()
 				],
-				`${linuxUnfucker(fish.id)}/basic_food/parent_to_roe`
+				`${global.linuxUnfucker(fish.id)}/basic_food/parent_to_roe`
 			);
 
 			generatePiscicultureRecipe(event,
@@ -182,7 +193,7 @@ const registerTFGPiscicultureRecipes = (event) => {
 					`12x ${fish.item}`,
 					Item.of(`4x tfg:fish_roe`, {"mob_type": fish.id}).strongNBT()
 				],
-				`${linuxUnfucker(fish.id)}/advanced_food/parent_to_roe`
+				`${global.linuxUnfucker(fish.id)}/advanced_food/parent_to_roe`
 			);
 		};
 
@@ -196,7 +207,7 @@ const registerTFGPiscicultureRecipes = (event) => {
 				`10x ${fish.item}`,
 				Item.of(`4x tfg:fish_roe`, {"mob_type": fish.id}).strongNBT()
 			],
-			`${linuxUnfucker(fish.id)}/basic_food/roe_to_roe`
+			`${global.linuxUnfucker(fish.id)}/basic_food/roe_to_roe`
 		);
 
 		generatePiscicultureRecipe(event,
@@ -208,7 +219,7 @@ const registerTFGPiscicultureRecipes = (event) => {
 				`24x ${fish.item}`,
 				Item.of(`5x tfg:fish_roe`, {"mob_type": fish.id}).strongNBT()
 			],
-			`${linuxUnfucker(fish.id)}/advanced_food/roe_to_roe`
+			`${global.linuxUnfucker(fish.id)}/advanced_food/roe_to_roe`
 		);	
 		
 	});

@@ -1,0 +1,87 @@
+{
+  "name": "Fromage",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:textures/item/food/gouda.png",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Faire du $(thing)fromage$() dans Firmalife est un peu plus complexe que dans TFC vanilla. Il y a de nouveaux types de lait tels que le $(thing)lait de yak$() ou le $(thing)lait de chèvre$(). On peut les obtenir en trayant respectivement une $(l:mechanics/animal_husbandry#yak)Yak$() et une $(l:mechanics/animal_husbandry#goat)Chèvre$(). Traire une $(l:mechanics/animal_husbandry#cow)Vache$() donne l'ancien type de lait."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Comme d'habitude, le lait doit d'abord être $(thing)caillé$(). Pour cailler du lait, vous aurez besoin de $(thing)présure$(). Celle-ci provient de l'estomac d'un animal $(thing)ruminant$() tel qu'un $(l:mechanics/animal_husbandry#yak)Yaks$(), une $(l:mechanics/animal_husbandry#cow)Vache$(), un  $(l:mechanics/animal_husbandry#sheep)Mouton$(), une $(l:mechanics/animal_husbandry#goat)Chèvre$(), ou un  $(l:mechanics/animal_husbandry#musk_ox)Boeuf musqué$(). Pour faire cailler le lait, scellez-le dans un $(l:mechanics/barrels)tonneau$() avec de la présure pendant 4 heures."
+    },
+    {
+      "type": "patchouli:crafting",
+      "anchor": "cheesecloth",
+      "recipe": "firmalife:crafting/cheesecloth",
+      "text": "Le lait caillé doit ensuite être converti en $(thing)Caillé$() en le scellant dans un tonneau avec une $(thing)étamine$(). Celle-ci n'est pas réutilisable."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfg:crafting/cheddar_wheel",
+      "text": "You are ready to make $(thing)Dry Cheese$() if you wish. You can make $(thing)Rajya Metok$() from $(thing)Yak Curds$(), $(thing)Chevre$() from $(thing)Goat Curds$(), and $(thing)Cheddar$() from $(thing)Milk Curds$()."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfg:crafting/chevre_wheel",
+      "recipe2": "tfg:crafting/rajya_metok_wheel"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Your other option is to make $(thing)Wet Cheeses$(). These are made by sealing the curds in a barrel of $(thing)Salt Water$(). You can make $(thing)Shosha$() from $(thing)Yak Curds$(), $(thing)Feta$() from $(thing)Goat Curds$(), and $(thing)Gouda$() from $(thing)Milk Curds$()."
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "aging",
+      "text": "Les meules de fromage sont des blocs devant être placés pour pouvoir être conservés. Pour améliorer leur qualité et les conserver plus longtemps, les meules de fromages doivent être $(thing)âgés$() dans un $(l:firmalife/cellar)cellier$(). Afin d'obtenir du fromage comestible à partir d'une meule, il faut en découper un morceau de fromage avec $(item)$(k:key.use)$() avec un $(thing)Couteau$(). Si le bloc est simplement miné, le veillissement est perdu !"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "Les stades de vieillissement d'une meule de gouda : $(thing)Jeune$(), $(thing)Affiné$(), et $(thing)Vieux$().",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "firmalife:gouda_wheel[age=fresh]"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "firmalife:gouda_wheel[age=aged]"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "firmalife:gouda_wheel[age=vintage]"
+          }
+        }
+      ]
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 1
+}

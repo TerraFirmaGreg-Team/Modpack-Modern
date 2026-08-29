@@ -1,0 +1,17 @@
+{
+	"type": "tfc:random_tree",
+	"config": {
+		"structures": [
+			"tfg:trees/araucaria_normal1",
+			"tfg:trees/araucaria_normal2",
+			"tfg:trees/araucaria_normal3",
+			"tfg:trees/araucaria_normal4",
+			"tfg:trees/araucaria_normal5",
+			"tfg:trees/araucaria_normal6"
+		],
+		"placement": {
+			"width": 1,
+			"height": 3
+		}
+	}
+}

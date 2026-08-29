@@ -5,25 +5,34 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "У Безодні є повний набір нових біомів для дослідження! Більшість із них поділяється на дві категорії: $(thing)верхні$() та $(thing)нижні$(). Верхні біоми зустрічаються лише на вищих рівнях, а нижні розташовані ближче до лави."
+			"text": "У Безодні на тебе чекає цілий набір нових біомів для дослідження! безодню можна розділити на три вертикальні шари, кожен з яких має власні біоми. Чим нижче ти спускаєшся, тим спекотнішим і небезпечнішим стає!"
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Пишна западина",
+			"title": "Соляні печери",
 			"images": [
-				"tfg:textures/gui/field_guide/nether/lush_hollow.png"
+				"tfg:textures/gui/field_guide/nether/salt_caves.png"
 			],
 			"border": true,
-			"text": "Вологий і повний зелені! Найгостинніший регіон для облаштування підземної бази."
+			"text": "Схожий на теплий океанський бриз, цей біом переповнений $(item)галітом$(). Чудове місце для створення бази!"
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Гнилісні печери",
+			"title": "Вогке болото",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/muggy_bog.png"
+			],
+			"border": true,
+			"text": "Вологий і схожий на болото. Безпечне джерело деревини, якщо ти зможеш уникнути зустрічі з $(thing)крокодилами$()."
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Гнилі печери",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/decaying_caverns.png"
 			],
 			"border": true,
-			"text": "Природні утилізатори активно працюють у цьому вологому регіоні, наповненому гнилизною."
+			"text": "Природні утилізатори невпинно працюють у цьому вогкому регіоні, що повністю просякнутий гниллю."
 		},
 		{
 			"type": "patchouli:image",
@@ -32,7 +41,43 @@
 				"tfg:textures/gui/field_guide/nether/webbed_lair.png"
 			],
 			"border": true,
-			"text": "Тут легко здогадатися, хто мешкає! Місце також прикрашене величезними $(thing)травертиновими$() стовпами."
+			"text": "Ніяких призів за здогадку, хто тут живе! Також тут є величезні $(thing)травертинові$() колони."
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Дігтярні затони",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/tar_pools.png"
+			],
+			"border": true,
+			"text": "Піщана, наче маленька пустеля, ця територія містить липкі $(thing)дьогтяні ями$(), повні нафти."
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Геотермальні джерела",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/geothermal_springs.png"
+			],
+			"border": true,
+			"text": "Тут немає сірчаних кубів, але цей затягнутий парою біом може стати чудовим місцем, щоб знайти $(thing)джерельну воду$() для лікування."
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Терновий гай",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/thorny_brambles.png"
+			],
+			"border": true,
+			"text": "Важкий для проходження біом із рослинами, які діють на тебе, якщо на них наступити. Бережись!"
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Буйна улоговина",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/lush_hollow.png"
+			],
+			"border": true,
+			"text": "Спекотно і повно зелені! Густа папороть ховає під собою $(thing)каолінітову глину$()."
 		},
 		{
 			"type": "patchouli:image",
@@ -41,16 +86,16 @@
 				"tfg:textures/gui/field_guide/nether/ash_forest.png"
 			],
 			"border": true,
-			"text": "Залишки Пишної западини після частих пожеж, викликаних спекою."
+			"text": "Що залишається від буйної улоговини після частих пожеж, викликаних спекою."
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Лавові потоки",
+			"title": "Лавові пласти",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/lava_floes.png"
 			],
 			"border": true,
-			"text": "Регіон, багатий на руду $(thing)Піроксеніт$(), переплетений річками лави."
+			"text": "Багата на руду зона з $(thing)піроксеніту$(), яку перетинають лавові річки."
 		},
 		{
 			"type": "patchouli:image",
@@ -59,16 +104,7 @@
 				"tfg:textures/gui/field_guide/nether/basalt_deltas.png"
 			],
 			"border": true,
-			"text": "Улюблений біом Нижнього світу повертається і залишається таким же небезпечним для подорожей, як і завжди."
-		},
-		{
-			"type": "patchouli:image",
-			"title": "Глибокі печери",
-			"images": [
-				"tfg:textures/gui/field_guide/nether/deep_caves.png"
-			],
-			"border": true,
-			"text": "Між іншими біомами розташовані більш рівнинні області, Шиферний сланець, сланцю, граніту, діориту і гнейсу.$(br)"
+			"text": "Улюблений біом пекла повертається, і орієнтуватися в ньому так само небезпечно, як і раніше."
 		}
 	],
 	"read_by_default": true

@@ -1,0 +1,16 @@
+{
+	"type": "lithostitched:set_structure_spawn_condition",
+	"structures": [
+		"tfg:illagers/malay_village_living"
+	],
+	"spawn_condition": {
+		"type": "lithostitched:grid",
+		"condition": {
+			"type": "lithostitched:in_biome",
+			"biomes": "#tfg:never_has_structure/malay_illage"
+		},
+		"radius": 80,
+		"distance_between_points": 8,
+		"allowed_count": 0
+	}
+}

@@ -1,0 +1,11 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "parent": "firmalife:block/oven/template_oven_top",
+  "textures": {
+		"side": "firmalife:block/oven/top/clay/side",
+		"top": "firmalife:block/oven/top/clay/top",
+		"inside": "firmalife:block/oven/top/clay/inside",
+		"front": "firmalife:block/oven/top/clay/front",
+		"bottom": "firmalife:block/oven/top/clay/bottom"
+	}
+}

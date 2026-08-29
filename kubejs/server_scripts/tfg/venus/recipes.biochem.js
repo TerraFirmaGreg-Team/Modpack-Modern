@@ -5,7 +5,7 @@
  * @param {Internal.RecipesEventJS} event 
  */
 function registerTFGBiochemRecipes(event) {
-	const $ISPRecipeLogic = Java.loadClass("su.terrafirmagreg.core.common.data.tfgt.machine.trait.ISPOutputRecipeLogic")
+	const $ISPRecipeLogic = Java.loadClass("su.terrafirmagreg.core.common.tfgt.machine.trait.ISPOutputRecipeLogic")
 	const $SizedIngredient = Java.loadClass("com.gregtechceu.gtceu.api.recipe.ingredient.SizedIngredient")
 	const Sized = (ing, amount) => $SizedIngredient.create(ing, amount)
 
@@ -229,7 +229,7 @@ function registerTFGBiochemRecipes(event) {
 	event.recipes.gtceu.assembler('tfg:casings/machine_casing_sterilizing_pipes')
 		.itemInputs(
 			ChemicalHelper.get(TagPrefix.frameGt, GTMaterials.get('ostrum'), 1),
-			ChemicalHelper.get(TagPrefix.pipeQuadrupleFluid, GTMaterials.get('ostrum'), 1),
+			ChemicalHelper.get(TagPrefix.pipeQuadrupleFluid, GTMaterials.TungstenSteel, 1),
 			Ingredient.of('#tfg:components/uv_leds').withCount(16)
 		)
 		.inputFluids(Fluid.of('gtceu:borosilicate_glass', 144))
@@ -331,7 +331,7 @@ function registerTFGBiochemRecipes(event) {
 	];
 
 	lab_casting.forEach(entry => {
-		event.recipes.gtceu.fluid_solidifier(`tfg:lab_casting/${linuxUnfucker(entry.output)}`)
+		event.recipes.gtceu.fluid_solidifier(`tfg:lab_casting/${global.linuxUnfucker(entry.output)}`)
 			.inputFluids(Fluid.of('gtceu:borosilicate_glass', entry.fluid_qty))
 			.notConsumable(entry.mold)
 			.itemOutputs(entry.output)
@@ -429,7 +429,7 @@ function registerTFGBiochemRecipes(event) {
 	 * @param {number} organicAmount - Amount of the organic input.
 	 */
 	function deccellularizationRecipe(event, organicType, organicId, organicAmount) {
-		let recipe = event.recipes.gtceu.bioreactor(`tfg:decellularization/${linuxUnfucker(organicId)}`)
+		let recipe = event.recipes.gtceu.bioreactor(`tfg:decellularization/${global.linuxUnfucker(organicId)}`)
 			.inputFluids(
 				Fluid.of('tfg:sodium_dodecyl_sulfate', 200),
 				Fluid.of('gtceu:acetone', 1000),
@@ -530,7 +530,7 @@ function registerTFGBiochemRecipes(event) {
 		'gtceu:acetone'
 	];
 	gramStainSolvents.forEach(solvent => {
-		event.recipes.gtceu.large_chemical_reactor(`tfg:gram_stain_solvent_${linuxUnfucker(solvent)}`)
+		event.recipes.gtceu.large_chemical_reactor(`tfg:gram_stain_solvent_${global.linuxUnfucker(solvent)}`)
 			.inputFluids(
 				Fluid.of('tfg:crystal_violet', 1000),
 				Fluid.of('tfc:red_dye', 1000),

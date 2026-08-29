@@ -14,11 +14,17 @@ function registerTFGEarlyGasRecipes(event) {
 		.heated()
 		.id('tfg:vi/vacuumizing/syngas_from_charcoal')
 
-	event.recipes.vintageimprovements.vacuumizing(Fluid.of('tfg:syngas', 200), ['minecraft:coal', Fluid.of('gtceu:creosote', 250)])
+	event.recipes.vintageimprovements.vacuumizing(Fluid.of('tfg:syngas', 200), ['tfc:ore/lignite', Fluid.of('gtceu:creosote', 250)])
 		.secondaryFluidOutput(0)
 		.processingTime(4000)
 		.heated()
-		.id('tfg:vi/vacuumizing/syngas_from_coal')
+		.id('tfg:vi/vacuumizing/syngas_from_lignite')
+
+	event.recipes.vintageimprovements.vacuumizing(Fluid.of('tfg:syngas', 400), ['tfc:ore/bituminous_coal', Fluid.of('gtceu:creosote', 250)])
+		.secondaryFluidOutput(0)
+		.processingTime(4000)
+		.heated()
+		.id('tfg:vi/vacuumizing/syngas_from_bituminous_coal')
 	
 	event.recipes.vintageimprovements.vacuumizing(Fluid.of('tfg:syngas', 400), ['gtceu:coke_gem', Fluid.of('gtceu:creosote', 250)])
 		.secondaryFluidOutput(0)
@@ -39,10 +45,17 @@ function registerTFGEarlyGasRecipes(event) {
 		.duration(20*15)
 		.EUt(GTValues.VHA[GTValues.LV])
 
-	event.recipes.gtceu.brewery('tfg:syngas_from_coal')
-		.itemInputs('minecraft:coal')
+	event.recipes.gtceu.brewery('tfg:syngas_from_lignite')
+		.itemInputs('tfc:ore/lignite')
 		.inputFluids('gtceu:creosote 250')
 		.outputFluids('tfg:syngas 200')
+		.duration(20*15)
+		.EUt(GTValues.VHA[GTValues.LV])
+
+	event.recipes.gtceu.brewery('tfg:syngas_from_bituminous_coal')
+		.itemInputs('tfc:ore/bituminous_coal')
+		.inputFluids('gtceu:creosote 250')
+		.outputFluids('tfg:syngas 400')
 		.duration(20*15)
 		.EUt(GTValues.VHA[GTValues.LV])
 
@@ -85,23 +98,44 @@ function registerTFGEarlyGasRecipes(event) {
 		.circuit(2)
 		.EUt(GTValues.VHA[GTValues.MV])
 
-	// Coal
+	// Lignite
 
-	event.recipes.gtceu.coal_liquefaction_tower('tfg:raw_aromatic_mix_coal')
-		.itemInputs(Item.of('minecraft:coal', 10))
+	event.recipes.gtceu.coal_liquefaction_tower('tfg:raw_aromatic_mix_lignite')
+		.itemInputs(Item.of('tfc:ore/lignite', 10))
 		.inputFluids(Fluid.of('gtceu:creosote', 4000))
 		.outputFluids(Fluid.of('gtceu:coal_tar', 1000), Fluid.of('tfg:syngas', 6400), Fluid.of('tfg:raw_aromatic_mix', 4000))
 		.duration(20*64)
 		.circuit(1)
 		.EUt(GTValues.VHA[GTValues.MV])
 
-	event.recipes.gtceu.coal_liquefaction_tower('tfg:raw_aromatic_mix_coal_hydrogen')
-		.itemInputs(Item.of('minecraft:coal', 10))
+	event.recipes.gtceu.coal_liquefaction_tower('tfg:raw_aromatic_mix_lignite_hydrogen')
+		.itemInputs(Item.of('tfc:ore/lignite', 10))
 		.inputFluids(Fluid.of('gtceu:creosote', 4000))
 		.perTick(true)
 		.chancedFluidInput(Fluid.of('gtceu:hydrogen', 1), 1000, 0)
 		.perTick(false)
 		.outputFluids(Fluid.of('gtceu:coal_tar', 1000), Fluid.of('tfg:syngas', 6400), Fluid.of('tfg:raw_aromatic_mix', 4000))
+		.duration(20*32)
+		.circuit(2)
+		.EUt(GTValues.VHA[GTValues.MV])
+
+	// Bituminous Coal
+		
+	event.recipes.gtceu.coal_liquefaction_tower('tfg:raw_aromatic_mix_bituminous')
+		.itemInputs(Item.of('tfc:ore/bituminous_coal', 10))
+		.inputFluids(Fluid.of('gtceu:creosote', 4000))
+		.outputFluids(Fluid.of('gtceu:coal_tar', 1000), Fluid.of('tfg:syngas', 9600), Fluid.of('tfg:raw_aromatic_mix', 4000))
+		.duration(20*64)
+		.circuit(1)
+		.EUt(GTValues.VHA[GTValues.MV])
+
+	event.recipes.gtceu.coal_liquefaction_tower('tfg:raw_aromatic_mix_bituminous_hydrogen')
+		.itemInputs(Item.of('tfc:ore/bituminous_coal', 10))
+		.inputFluids(Fluid.of('gtceu:creosote', 4000))
+		.perTick(true)
+		.chancedFluidInput(Fluid.of('gtceu:hydrogen', 1), 1000, 0)
+		.perTick(false)
+		.outputFluids(Fluid.of('gtceu:coal_tar', 1000), Fluid.of('tfg:syngas', 9600), Fluid.of('tfg:raw_aromatic_mix', 4000))
 		.duration(20*32)
 		.circuit(2)
 		.EUt(GTValues.VHA[GTValues.MV])
@@ -169,13 +203,13 @@ function registerTFGEarlyGasRecipes(event) {
 		.inputFluids(Fluid.of('tfg:reformed_aromatic_feedstock', 2000), Fluid.of('gtceu:steam', 4000))
 		.outputFluids(Fluid.of('tfg:reformate_gas', 8000))
 		.outputFluids(Fluid.of('tfg:cracker_off_gas', 1000))
-		.duration(20*30)
+		.duration(20*16)
 		.EUt(GTValues.VA[GTValues.MV])
 
 	event.recipes.gtceu.chemical_reactor('tfg:reformate_gas')
 		.inputFluids(Fluid.of('tfg:reformed_aromatic_feedstock', 2000), Fluid.of('gtceu:steam', 1000))
 		.outputFluids(Fluid.of('tfg:reformate_gas', 3000))
-		.duration(20*30)
+		.duration(20*16)
 		.EUt(GTValues.VA[GTValues.MV])
 
 	// Recycling
@@ -183,32 +217,42 @@ function registerTFGEarlyGasRecipes(event) {
 	event.recipes.gtceu.electrolyzer('tfg:cracker_off_gas_recycling')
 		.inputFluids(Fluid.of('tfg:cracker_off_gas', 1000))
 		.outputFluids(Fluid.of('gtceu:carbon_dioxide', 500), Fluid.of('gtceu:hydrogen', 500))
-		.chancedOutput(Item.of('gtceu:tiny_rhenium_dust'), 1000, 0) // 10% chance
+		.chancedOutput(Item.of('gtceu:tiny_rhenium_dust'), 1000, 0) // 10% chance SWITCH TO 5% when new platline is out
 		.duration(20*4.5)
 		.EUt(GTValues.VA[GTValues.HV])
 
 	// Modify Recipe to balance new line
 
 	event.remove({ id: 'gtceu:extractor/charcoal_extraction' })
+	/*
 	event.recipes.gtceu.extractor('tfg:charcoal_extraction')
 		.itemInputs(Item.of('minecraft:charcoal'))
 		.outputFluids(Fluid.of('gtceu:wood_tar', 100))
 		.duration(20*6.4)
-		.EUt(GTValues.VA[GTValues.MV])
+		.EUt(GTValues.VA[GTValues.MV])*/
 
 	//#endregion
 
 	// Increase Pyrolyse Oven duration
-
-	event.forEachRecipe({ id: /gtceu:pyrolyse_oven\/(log_to_creosote|log_to_creosote_nitrogen)/ }, recipe => {
-        var newDuration = recipe.get("duration")
-        recipe.set("duration", newDuration*2)
+	
+	function modifyRecipes(recipeIds, duration) {
+	recipeIds.forEach(id => {
+		global.modifyRecipe(event, id, {
+		newId: `tfg:${global.linuxUnfucker(id)}`,
+		duration: duration
+		})
 	})
+	}
 
-	event.forEachRecipe({ id: /gtceu:pyrolyse_oven\/(log_to_wood_tar|log_to_wood_tar_nitrogen)/ }, recipe => {
-        var newDuration = recipe.get("duration")
-        recipe.set("duration", newDuration*2)
-	})
+	modifyRecipes([
+	"gtceu:pyrolyse_oven/log_to_creosote_nitrogen",
+	"gtceu:pyrolyse_oven/log_to_wood_tar_nitrogen"
+	], 20 * 32)
+
+	modifyRecipes([
+	"gtceu:pyrolyse_oven/log_to_creosote",
+	"gtceu:pyrolyse_oven/log_to_wood_tar"
+	], 20 * 64)
 
 	//#region Power Gen
 	
@@ -235,7 +279,7 @@ function registerTFGEarlyGasRecipes(event) {
 	event.recipes.gtceu.gas_turbine('tfg:btx_fuel') // Gas Turbine
 		.inputFluids(Fluid.of('tfg:btx_fuel', 1))
 		.EUt(-(32))
-		.duration(20*2.6)
+		.duration(20*2.86)
 		.dimension('minecraft:overworld')
 		.dimension('minecraft:the_nether')
 
@@ -246,7 +290,7 @@ function registerTFGEarlyGasRecipes(event) {
 	event.recipes.gtceu.chemical_reactor('tfg:electrolyze_syngas')
 		.notConsumable(Item.of('gtceu:copper_dust', 1))
 		.inputFluids(Fluid.of('tfg:syngas', 1000))
-		.outputFluids(Fluid.of('gtceu:methanol', 4000), Fluid.of('minecraft:water', 2000))
+		.outputFluids(Fluid.of('gtceu:methanol', 3000), Fluid.of('minecraft:water', 2000))
 		.duration(20*12)
 		.EUt(GTValues.VA[GTValues.MV])
 
@@ -265,15 +309,15 @@ function registerTFGEarlyGasRecipes(event) {
 		.itemInputs(Item.of('#forge:dusts/aluminium'))
 		.inputFluids(Fluid.of('tfc:lye', 1000))
 		.itemOutputs(Item.of('#forge:dusts/sodium_aluminium', 1))
-		.duration(20*26)
-		.EUt(GTValues.VA[GTValues.LV])
+		.duration(8)
+		.EUt(GTValues.VA[GTValues.EV])
 
 	event.recipes.gtceu.chemical_reactor('tfg:tpaoh')
 		.itemInputs(Item.of('2x #forge:dusts/sodium'))
 		.inputFluids(Fluid.of('gtceu:ammonia', 1000), Fluid.of('gtceu:ethanol', 1000))
 		.outputFluids(Fluid.of('tfg:tpaoh', 1000))
 		.duration(20*8)
-		.EUt(GTValues.VA[GTValues.EV])
+		.EUt(GTValues.VA[GTValues.MV])
 
 	event.recipes.gtceu.chemical_reactor('tfg:zsm_5_gel')
 		.itemInputs(Item.of('#forge:dusts/sodium_aluminium'))
@@ -284,7 +328,7 @@ function registerTFGEarlyGasRecipes(event) {
 		.EUt(GTValues.VA[GTValues.HV])
 
 	event.recipes.gtceu.chemical_reactor('tfg:catalyser_zsm')
-		.itemInputs(Item.of('#forge:dusts/platinum'), Item.of('10x #forge:dusts/rhenium'))
+		.itemInputs(Item.of('#forge:dusts/platinum'), Item.of('60x #forge:dusts/rhenium'))
 		.inputFluids(Fluid.of('gtceu:hydrogen', 1000))
 		.inputFluids(Fluid.of('tfg:zsm5_gel', 1000))
 		.itemOutputs(Item.of('tfg:catalyser_pt_re_zsm', 1))
@@ -303,6 +347,7 @@ function registerTFGEarlyGasRecipes(event) {
 		.itemInputs(Item.of('tfg:catalyser_pt_re_zsm'))
 		.inputFluids(Fluid.of('tfg:reformate_gas', 8000))
 		.inputFluids(Fluid.of('gtceu:propene', 2000))
+		.itemOutputs(Item.of('tfg:used_catalyser', 1))
 		.outputFluids(Fluid.of('tfg:crude_mixed_gas', 10000))
 		.duration(20*240)
 		.EUt(GTValues.VA[GTValues.LV])
@@ -312,8 +357,7 @@ function registerTFGEarlyGasRecipes(event) {
 		.inputFluids(Fluid.of('gtceu:benzene', 20000))
 		.inputFluids(Fluid.of('gtceu:toluene', 6000))
 		.inputFluids(Fluid.of('gtceu:dimethylbenzene', 12000))
-		.itemOutputs(Item.of('tfg:used_catalyser', 1))
-		.outputFluids(Fluid.of('tfg:btx_fuel', 48000))
+		.outputFluids(Fluid.of('tfg:btx_fuel', 54000))
 		.duration(20*6)
 		.EUt(GTValues.VA[GTValues.IV])
 		.circuit(24)
@@ -328,7 +372,7 @@ function registerTFGEarlyGasRecipes(event) {
 
 	event.recipes.gtceu.chemical_reactor('tfg:clean_powder')
 		.itemInputs(Item.of('tfg:catalyser_powder_dust', 1))
-		.inputFluids(Fluid.of('gtceu:hydrogen_peroxide', 2000))
+		.inputFluids(Fluid.of('gtceu:hydrogen_peroxide', 200))
 		.itemOutputs(Item.of('tfg:clean_powder_dust', 1), Item.of('gtceu:sodium_dust', 1))
 		.duration(20*14)
 		.EUt(GTValues.VA[GTValues.MV])
@@ -358,7 +402,7 @@ function registerTFGEarlyGasRecipes(event) {
 	event.recipes.gtceu.distillery('tfg:rhenium_dust')
 		.inputFluids(Fluid.of('gtceu:sulfuric_acid', 100))
 		.itemInputs(Item.of('tfg:loaded_resin', 1))
-		.itemOutputs(Item.of('gtceu:rhenium_dust', 1))
+		.itemOutputs(Item.of('gtceu:rhenium_dust', 6))
 		.duration(20*8)
 		.EUt(GTValues.VA[GTValues.MV])
 

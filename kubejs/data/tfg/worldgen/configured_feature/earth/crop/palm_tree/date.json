@@ -1,0 +1,19 @@
+{
+	"type": "tfc:random_tree",
+	"config": {
+		"structures": [
+			"tfg:palm_tree/date_0",
+			"tfg:palm_tree/date_1",
+			"tfg:palm_tree/date_2",
+			"tfg:palm_tree/date_3"
+		],
+		"radius": 1,
+		"placement": {
+			"width": 1,
+			"height": 13,
+			"allow_submerged": true,
+			"allow_deeply_submerged": false,
+			"ground_type": "sand"
+		}
+	}
+}

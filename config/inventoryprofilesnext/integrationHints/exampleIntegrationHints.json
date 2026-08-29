@@ -1,0 +1,47 @@
+{
+    "package.name.className":         {
+        "ignore":         false,
+        "playerSideOnly": false,
+        "force":          false,
+        "buttonHints":    {
+            "SORT":                {
+                "horizontalOffset": 0,
+                "top":              0,
+                "bottom":           0
+            },
+            "SORT_COLUMNS":        {
+                "horizontalOffset": 0,
+                "top":              0,
+                "bottom":           0
+            },
+            "SORT_ROWS":           {
+                "horizontalOffset": 0,
+                "top":              0,
+                "bottom":           0
+            },
+            "MOVE_TO_CONTAINER":   {
+                "horizontalOffset": 0,
+                "top":              0,
+                "bottom":           0
+            },
+            "MOVE_TO_PLAYER":      {
+                "horizontalOffset": 0,
+                "top":              0,
+                "bottom":           0
+            },
+            "CONTINUOUS_CRAFTING": {
+                "horizontalOffset": 0,
+                "top":              0,
+                "bottom":           0
+            },
+            "PROFILE_SELECTOR":    {
+                "horizontalOffset": 0,
+                "top":              0,
+                "bottom":           0,
+                "hide":             true
+            }
+        }
+    },
+    "another.package.name.className": {
+    }
+}

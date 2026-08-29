@@ -1,0 +1,20 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "variants": {
+    "facing=east": {
+      "model": "firmalife:block/oven/clay_oven_top",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "firmalife:block/oven/clay_oven_top"
+    },
+    "facing=south": {
+      "model": "firmalife:block/oven/clay_oven_top",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "firmalife:block/oven/clay_oven_top",
+      "y": 270
+    }
+  }
+}

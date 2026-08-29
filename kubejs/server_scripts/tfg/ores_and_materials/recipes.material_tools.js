@@ -36,15 +36,10 @@ function processToolMortar(event, toolType, material) {
 /**
  * @param {Internal.RecipesEventJS} event 
  * @param {GTToolType} toolType 
- * @param {String} tagPrefixName
  * @param {TagPrefix} headTagPrefix 
- * @param {Internal.ItemStack} extruderMold 
- * @param {Internal.ItemStack} ceramicMold
- * @param {number} circuitMeta 
- * Used for the laser engraver recipes for gem tools.
  * @param {com.gregtechceu.gtceu.api.data.chemical.material.Material_} material 
  */
-function processGTToolHead(event, toolType, tagPrefixName, headTagPrefix, extruderMold, ceramicMold, circuitMeta, material) {
+function processGTToolHead(event, toolType, headTagPrefix, material) {
 	const toolItem = ToolHelper.get(toolType, material);
 	const toolHeadItem = ChemicalHelper.get(headTagPrefix, material, 1);
 
@@ -84,7 +79,7 @@ function processGTToolHead(event, toolType, tagPrefixName, headTagPrefix, extrud
 	} else {
 		event.recipes.tfc.advanced_shapeless_crafting(
 			TFC.itemStackProvider.of(toolItem).copyForgingBonus().copyHeat(),
-			[toolHeadItem, '#forge:rods/wooden'],
+			[toolHeadItem, '#forge:rods'],
 			toolHeadItem
 		)
 		.id(`gtceu:shaped/${toolType.name}_${materialName}`);
@@ -95,8 +90,6 @@ function processGTToolHead(event, toolType, tagPrefixName, headTagPrefix, extrud
 		const materialAmount = getMaterialAmount(headTagPrefix, material);
 		addTFCMelting(event, toolItem, material, materialAmount * 144, toolType.name);
 	}
-
-	processToolHead(event, headTagPrefix, tagPrefixName, extruderMold, ceramicMold, circuitMeta, material);
 }
 
 /** 
@@ -105,16 +98,23 @@ function processGTToolHead(event, toolType, tagPrefixName, headTagPrefix, extrud
  * @param {String} tagPrefixName
  * @param {Internal.ItemStack} extruderMold 
  * @param {Internal.ItemStack} ceramicMold
- * @param {number} circuitMeta 
  * Used for the laser engraver recipes for gem tools.
  * @param {com.gregtechceu.gtceu.api.data.chemical.material.Material_} material 
  */
-function processToolHead(event, headTagPrefix, tagPrefixName, extruderMold, ceramicMold, circuitMeta, material) {
+function processToolHead(event, headTagPrefix, tagPrefixName, extruderMold, ceramicMold, material) {
 	const toolHeadItem = ChemicalHelper.get(headTagPrefix, material, 1);
 	if (toolHeadItem.isEmpty())
 		return;
 
 	event.remove({ mod: 'gtceu', type: 'minecraft:crafting_shaped', output: toolHeadItem })
+
+	addMaterialRecycling(event, toolHeadItem, material, tagPrefixName, headTagPrefix);
+
+	const EXCLUDED_MATERIALS = [
+        'diamond_tipped_mo_50_re',
+    ];
+    if (EXCLUDED_MATERIALS.includes(material.getName()))
+		return;
 
 	const materialName = material.getName();
 	const materialAmount = getMaterialAmount(headTagPrefix, material);
@@ -132,34 +132,20 @@ function processToolHead(event, headTagPrefix, tagPrefixName, extruderMold, cera
 			.duration(material.getMass() * 6)
 			.EUt(GTValues.VA[GTValues.LV])
 
-		let input_array = [];
-		for (let i = 0; i < materialAmount; i++) {
-			input_array.push(ingotItem);
+		if (material.hasProperty(TFGPropertyKey.TFC_PROPERTY)) {
+			let input_array = [];
+			for (let i = 0; i < materialAmount; i++) {
+				input_array.push(ingotItem);
+			}
+			event.recipes.vintageimprovements.curving(toolHeadItem, input_array)
+				.head(extruderMold)
+				.id(`tfg:vi/curving/${materialName}_ingot_to_${tagPrefixName}`)
 		}
-		event.recipes.vintageimprovements.curving(toolHeadItem, input_array)
-			.head(extruderMold)
-			.id(`tfg:vi/curving/${materialName}_ingot_to_${tagPrefixName}`)
 
 		if (material.hasFlag(TFGMaterialFlags.CAN_BE_UNMOLDED) && ceramicMold !== null) {
-			addMaterialCasting(event, toolHeadItem, ceramicMold, false, null, material, tagPrefixName, materialAmount * 144);
+			addMaterialCasting(event, toolHeadItem, ceramicMold, false, null, material, tagPrefixName, materialAmount * 144, false);
 		}
 	}
-	// Gem tools
-	else if (material.hasProperty(PropertyKey.GEM)) {
-		const gemItem = ChemicalHelper.get(TagPrefix.gem, material, materialAmount)
-		if (gemItem.isEmpty() || gemItem.hasTag('c:hidden_from_recipe_viewers'))
-			return
-
-		event.recipes.gtceu.laser_engraver(`tfg:engrave_${materialName}_gem_to_${tagPrefixName}`)
-			.itemInputs(gemItem)
-			.notConsumable(ChemicalHelper.get(TagPrefix.lens, GTMaterials.Glass, 1))
-			.circuit(circuitMeta)
-			.itemOutputs(toolHeadItem)
-			.duration(material.getMass() * 6)
-			.EUt(GTValues.VA[GTValues.LV])
-	}
-
-	addMaterialRecycling(event, toolHeadItem, material, tagPrefixName, headTagPrefix);
 }
 
 
@@ -168,7 +154,6 @@ function processToolHead(event, headTagPrefix, tagPrefixName, extruderMold, cera
  */
 function modifyRecyclingAmounts(material) {
 	TagPrefix.toolHeadWrench.modifyMaterialAmount(material, 2);
-	TagPrefix.toolHeadBuzzSaw.modifyMaterialAmount(material, 2);
 	TagPrefix.toolHeadScrewdriver.modifyMaterialAmount(material, 1);
 	TagPrefix.toolHeadWireCutter.modifyMaterialAmount(material, 2);
 	TFGTagPrefix.toolHeadSword.modifyMaterialAmount(material, 2);
@@ -183,4 +168,34 @@ function modifyRecyclingAmounts(material) {
 	TFGTagPrefix.toolHeadSaw.modifyMaterialAmount(material, 1);
 	TFGTagPrefix.toolHeadFile.modifyMaterialAmount(material, 1);
 	TFGTagPrefix.toolHeadKnife.modifyMaterialAmount(material, 1);
+	TFGTagPrefix.toolHeadScythe.modifyMaterialAmount(material, 1);
+
+	// TODO: uncomment out if this are ever modifiable
+	//GTToolType.SWORD.modifyMaterialAmount(material, 2);
+	//GTToolType.PICKAXE.modifyMaterialAmount(material, 1);
+	//GTToolType.AXE.modifyMaterialAmount(material, 1);
+	//GTToolType.SHOVEL.modifyMaterialAmount(material, 1);
+	//GTToolType.HOE.modifyMaterialAmount(material, 1);
+	//GTToolType.KNIFE.modifyMaterialAmount(material, 1);
+	//GTToolType.FILE.modifyMaterialAmount(material, 1);
+	//GTToolType.SAW.modifyMaterialAmount(material, 1);
+	//GTToolType.SPADE.modifyMaterialAmount(material, 2);
+	//GTToolType.MINING_HAMMER.modifyMaterialAmount(material, 2);
+	//GTToolType.SCYTHE.modifyMaterialAmount(material, 1);
+	//GTToolType.HARD_HAMMER.modifyMaterialAmount(material, 1);
+	//GTToolType.BUTCHERY_KNIFE.modifyMaterialAmount(material, 1);
+	//GTToolType.SCREWDRIVER.modifyMaterialAmount(material, 1);
+	//GTToolType.SCREWDRIVER_LV.modifyMaterialAmount(material, 1);
+	//GTToolType.SCREWDRIVER_HV.modifyMaterialAmount(material, 1);
+	//GTToolType.SCREWDRIVER_IV.modifyMaterialAmount(material, 1);
+	//GTToolType.WRENCH.modifyMaterialAmount(material, 2);
+	//GTToolType.WRENCH_LV.modifyMaterialAmount(material, 2);
+	//GTToolType.WRENCH_HV.modifyMaterialAmount(material, 2);
+	//GTToolType.WRENCH_IV.modifyMaterialAmount(material, 2);
+	//GTToolType.WIRE_CUTTER.modifyMaterialAmount(material, 2);
+	//GTToolType.WIRE_CUTTER_LV.modifyMaterialAmount(material, 2);
+	//GTToolType.WIRE_CUTTER_HV.modifyMaterialAmount(material, 2);
+	//GTToolType.WIRE_CUTTERIV.modifyMaterialAmount(material, 2);
+	//GTToolType.MORTAR.modifyMaterialAmount(material, 1);
+	//GTToolType.BUZZSAW.modifyMaterialAmount(material, 2);
 }

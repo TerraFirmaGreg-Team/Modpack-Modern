@@ -1,0 +1,49 @@
+{
+	"name": "Processando Látex",
+	"category": "tfc:arborfirmacraft",
+	"icon": "gtceu:sticky_resin",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Então você conseguiu um pouco de $(thing)látex$() sangrando árvores tropicais específicas... parabéns! Látex só por si não faz muito, mas ao processá-lo, podemos conseguir alguns subprodutos muito úteis!$(br2)Se você ainda não encontrou nenhuma árvore que produza látex, você pode ver a entrada do $(l:arborfirmacraft/tapping_index)Índice de Sangria$() para mais informações!"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "gtceu:sticky_resin",
+			"title": "Uma substância pegajosa",
+			"link_recipe": true,
+			"text": "Uma das maneiras que o $(thing)Látex$() pode ser usado é na produção de $(item)Resina Pegajosa$(). A resina pegajosa precisa ser produzida processando o látex em uma $(l:firmalife/oven_appliances#vat)Cuba$() ou numa $(l:mechanics/pot)Panela$() com um pouco de $(thing)Cinzas de Madeira$() para coagulá-lo."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Negócio Grudento",
+			"item": "gtceu:resin_circuit_board,gtceu:resistor,gtceu:basic_tape",
+			"text": "$(thing)Resina Pegajosa$() tem vários usos, graças a ela ser bem... pegajosa. Ela pode ser usada para criar vários itens como a $(item)Fita$() que permite você mover caixotes sem soltar o que está dentro, mas mais importante, ela pode ser usada para criar $(item)Placas de Circuito de Resina$() e $(item)Resistores$(), que serão alguns dos seus primeiros componentes elétricos."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tfg:vulcanized_latex_bucket",
+			"title": "Eu sou borracha...",
+			"text": "O outro uso principal do $(thing)Látex$() é fazer borracha. Para tornar o látex mais forte e mais durável para usos industriais, ele precisa ser aquecido (seja em uma $(l:firmalife/oven_appliances#vat)Cuba$() ou em uma $(l:mechanics/pot)Panela$()) junto a $(thing)Enxofre Triturado$() para produzir $(thing)Látex Vulcanizado$(). Na verdade, todo esse processo chama-se vulcanização!"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Extração",
+			"item": "gtceu:raw_rubber_dust",
+			"text": "Usando um $(thing)Extrator$() ou $(thing)Câmara de Vácuo$(), o $(thing)Látex Vulcanizado$() pode ser seco em $(item)Polpa de Borracha Bruta$(). Essa polpa precisa ser tratada com $(thing)Pó de Enxofre$() em um $(thing)Fundidor de Ligas$() para criar $(thing)Lingotes de Borracha$()."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "gtceu:rubber_ingot",
+			"text": "$(thing)Lingotes de Borracha$() têm várias aplicações bem úteis, tais como para criar $(thing)Esteiras$() para sua fábrica ou para $(bold)isolar$() $(thing)fios elétricos$(). Fios isolados tornam-se seguros para tocar sem acidentalmente te eletrocutar, e possuem menor perda de tensão."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Piche de Conífera",
+			"item": "tfg:conifer_pitch_bucket",
+			"text": "Resina Pegajosa também pode ser obtida através de $(thing)Piche de Conífera$() extraído de certas $(thing)Árvores Coníferas$(), mas essas ávores não podem ser usadas para Borracha."
+		}
+	],
+	"read_by_default": true,
+	"sortnum": 3
+}

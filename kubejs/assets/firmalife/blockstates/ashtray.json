@@ -1,0 +1,23 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "variants": {
+    "stage=0": {
+      "model": "firmalife:block/oven/ashtray_0"
+    },
+	"stage=1": {
+      "model": "firmalife:block/oven/ashtray_1"
+    },
+	"stage=2": {
+      "model": "firmalife:block/oven/ashtray_2"
+    },
+	"stage=3": {
+      "model": "firmalife:block/oven/ashtray_3"
+    },
+	"stage=4": {
+      "model": "firmalife:block/oven/ashtray_4"
+    },
+	"stage=5": {
+      "model": "firmalife:block/oven/ashtray_5"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+	"feature": "tfg:earth/fluid_vein/oil_light_ocean",
+	"placement": [
+		{
+			"type": "minecraft:rarity_filter",
+			"chance": 30
+		},
+		{
+			"type": "minecraft:in_square"
+		},
+		{
+			"type": "minecraft:heightmap",
+			"heightmap": "MOTION_BLOCKING_NO_LEAVES"
+		},
+		{
+			"type": "minecraft:block_predicate_filter",
+			"predicate": {
+				"type": "minecraft:matching_blocks",
+				"offset": [ 0, -1, 0 ],
+				"blocks": [
+					"tfc:fluid/salt_water",
+					"tfc:sea_ice",
+					"minecraft:ice",
+					"minecraft:packed_ice",
+					"minecraft:blue_ice"
+				]
+			}
+		},
+		{
+			"type": "tfg:fluid_vein",
+			"vein_ids": [
+				"tfg:light_oil_spill_ocean"
+			]
+		}
+	]
+}

@@ -4,19 +4,19 @@
 		"config": {
 			"features": [
 				{
-					"feature": "tfg:venus/terrain/ignimbrite_disk",
+					"feature": "tfg:venus/terrain/thermal_disk",
 					"placement": []
 				},
 				{
-					"feature": "tfg:venus/terrain/ignimbrite_columns",
+					"feature": "tfg:venus/terrain/thermal_columns",
 					"placement": []
 				},
 				{
-					"feature": "tfg:venus/terrain/ignimbrite_vents",
+					"feature": "tfg:venus/terrain/thermal_vents",
 					"placement": []
 				},
 				{
-					"feature": "tfg:venus/terrain/ignimbrite_tube_worms",
+					"feature": "tfg:venus/terrain/thermal_tube_worms",
 					"placement": []
 				}
 			]

@@ -1,0 +1,15 @@
+{
+  "block.createstockbridge.ae_bridge": "Puente de acciones AE",
+  "gui.createstockbridge.address": "Dirección del paquete:",
+  "gui.stockbridge.remote_items": "Sistema de almacenamiento de objetos de create",
+  "tooltip.stockbridge.remote_item": "Objetos en almacenamiento remoto",
+  "item.createstockbridge.request_pattern": "Pedir plantilla",
+  "createstockbridge.ponder.ae_stockbridge.header": "Conectando el almacenamiento al sistema AE",
+  "createstockbridge.ponder.ae_stockbridge.text_1": "El sistema AE vincula el almacenamiento de create con el sistema",
+  "createstockbridge.ponder.ae_stockbridge.text_2": "Clic derecho para vincular la red de almacenamiento antes de colocarlo",
+  "createstockbridge.ponder.ae_stockbridge.text_3": "Configura la dirección puente AE para que sea la misma que la dirección en los Frogports",
+  "createstockbridge.ponder.ae_stockbridge.text_4": "AE",
+  "createstockbridge.ponder.ae_stockbridge.text_5": "AE",
+  "createstockbridge.ponder.ae_stockbridge.text_6": "AE puede pedir objetos mediante \"construcciones\" o \"recetas\"",
+  "createstockbridge.ponder.ae_stockbridge.text_7": "Create puede pedir objetos almacenados en el sistema AE"
+}

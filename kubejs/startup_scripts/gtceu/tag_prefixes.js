@@ -86,6 +86,9 @@ const registerGTCEuTagPrefixes = (event) => {
 	TagPrefix.toolHeadScrewdriver.defaultTagPath("screwdriver_tips/%s")
 	TagPrefix.toolHeadScrewdriver.unformattedTagPath("screwdriver_tips")
 
+	TagPrefix.toolHeadWireCutter.defaultTagPath("wire_cutter_heads/%s")
+	TagPrefix.toolHeadWireCutter.unformattedTagPath("wire_cutter_heads")
+
 	TagPrefix.turbineBlade.defaultTagPath("turbine_blades/%s")
 	TagPrefix.turbineBlade.unformattedTagPath("turbine_blades")
 

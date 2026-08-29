@@ -6,7 +6,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Extraterrestrial Fauna",
-			"text": "Space is home to many other kinds of animals than those you'd find on Earth. A few animals are hostile and will attack the player, but most are passive. Only a few of them are $(l:mechanics/animal_husbandry)domesticatable$() like the livestock on Earth.$(br)Animals you find on other worlds can be divided into two categories: $(item)hot$() and $(item)cold$(). Animals can only survive on planets that either have a similar climate to where they came from, or on $(thing)temperate$() planets like Earth."
+			"text": "Space is home to many other kinds of animals than those you'd find on Earth. A few animals are hostile and will attack the player, but most are passive. Only a few of them are $(l:mechanics/animal_husbandry)domesticatable$().$(br)Animals you find on other worlds can be divided into two categories: $(item)hot$() and $(item)cold$(). Animals can only survive on planets that either have a similar climate to where they came from, or on $(thing)temperate$() planets like Earth."
 		},
 		{
 			"type": "patchouli:text",
@@ -106,12 +106,44 @@
 			"text": "A glacian ram/ewe."
 		},
 		{
+			"type": "patchouli:text",
+			"title": "Snatcher",
+			"text": "$(thing)Snatchers$() are passive animals that like to steal your stuff! Attack them to retrieve your items, or feed them $(item)Raw Fish$() to tame them.$(br2)Once tamed, you can carry them on your back and equip them with a wooden chest. Press $(k:key.wan_ancient_beasts.special_ability)$() to throw them, and they will steal the contents of a nearby chest and bring it to you."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "wan_ancient_beasts:snatcher",
+			"scale": 0.35,
+			"name": " ",
+			"text": "A snatcher."
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Charger",
+			"text": "$(thing)Chargers$() are semipassive animals. You can tame them with $(item)any Mars crop$() to use them as a combat land mount.$(br2)Press $(k:key.wan_ancient_beasts.special_ability)$() for a headbutt attack, or press and hold $(item)Spacebar$() for a charge attack.$(br2)They can also be equipped with $(item)dyeable armor$()."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "wan_ancient_beasts:charger",
+			"scale": 0.45,
+			"name": " ",
+			"text": "Chargers have a natural rivalry with $(thing)Raiders$(). They will attack each other on sight."
+		},
+		{
 			"type": "patchouli:entity",
 			"entity": "wan_ancient_beasts:surfer",
-			"scale": 0.35,
+			"scale": 0.4,
 			"offset": 0.2,
 			"name": "Surfer",
 			"text": "$(thing)Surfers$() are semiaquatic passive animals. You can tame them with $(item)Raw Fish$() to ride them underwater. They can also be eaten."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "wan_ancient_beasts:soarer",
+			"scale": 0.4,
+			"offset": 1.0,
+			"name": "Soarer",
+			"text": "$(thing)Soarers$() are passive animals found above -106°C. You can tame them with $(item)Raw Fish$() to use them as a flying mount. They can also be eaten."
 		},
 		{
 			"type": "patchouli:entity",
@@ -126,14 +158,6 @@
 			"scale": 0.7,
 			"name": "Cruncher",
 			"text": "$(thing)Crunchers$() are territorial $(item)miniboss$() predators. Feed them meat to stop their regeneration. They can also be eaten."
-		},
-		{
-			"type": "patchouli:entity",
-			"entity": "wan_ancient_beasts:soarer",
-			"scale": 0.4,
-			"offset": 1.0,
-			"name": "Soarer",
-			"text": "$(thing)Soarers$() are passive animals found above -106°C. You can tame them with $(item)Raw Fish$() to use them as a flying mount. They can also be eaten."
 		},
 		{
 			"type": "patchouli:entity",
@@ -172,6 +196,13 @@
 			"offset": 2.2,
 			"name": "Walker",
 			"text": "The gigantic $(thing)Walkers$() inhabit areas above -97°C. They are passive and can be eaten."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "wan_ancient_beasts:raider",
+			"scale": 0.5,
+			"name": "Raider",
+			"text": "$(thing)Raiders$() are hostile animals found above -109°C. They have a natural rivalry with $(thing)Chargers$(). You can make them neutral by feeding them $(item)Raw Meat$()."
 		},
 		{
 			"type": "patchouli:entity",

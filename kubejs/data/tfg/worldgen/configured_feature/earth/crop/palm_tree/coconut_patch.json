@@ -1,0 +1,7 @@
+{
+	"type": "tfc:dynamic_random_patch",
+	"config": {
+		"feature": "tfg:earth/crop/palm_tree/coconut",
+		"tries": 3
+	}
+}

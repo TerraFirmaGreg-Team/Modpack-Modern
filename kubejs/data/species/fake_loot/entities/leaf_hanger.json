@@ -1,0 +1,15 @@
+{
+	"type": "minecraft:entity",
+	"pools": [
+		{
+			"name": "loot_pool",
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "species:coil"
+				}
+			]
+		}
+	]
+}

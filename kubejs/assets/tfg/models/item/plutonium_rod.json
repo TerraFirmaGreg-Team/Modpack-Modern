@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "tfg:item/fuel_rod_p_1"
+    "layer0": "tfg:item/fission_rod/plutonium_rod"
   }
 }

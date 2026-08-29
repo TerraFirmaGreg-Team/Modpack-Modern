@@ -1,0 +1,18 @@
+{
+  "category.deathpunishment.general": "Genel Ayarlar",
+  "category.deathpunishment.penalties": "Ölüm Cezaları",
+  "title.deathpunishment.config": "Ölüm Ceza Ayarları",
+  "message.deathpunishment.corpse_cooldown": "Ceset hala sıcak. %s dakika sonra tekrar dene!",
+  "config.deathpunishment.general.hunger_mode": "Açlık Modu",
+  "config.deathpunishment.general.thirst_mode": "Susuzluk Modu",
+  "config.deathpunishment.general.health_mode": "Sağlık Modu",
+  "config.deathpunishment.general.food_level": "Yemek Seviyesi",
+  "config.deathpunishment.general.thirst_level": "Hidrasyon Seviyesi",
+  "config.deathpunishment.general.health": "Sağlık Seviyesi",
+  "enum.deathpunishment.hunger_mode.MANUAL": "Manüel ",
+  "enum.deathpunishment.hunger_mode.KEEP": "Ölümden Sonra Sakla",
+  "enum.deathpunishment.thirst_mode.MANUAL": "Manüel ",
+  "enum.deathpunishment.thirst_mode.KEEP": "Ölümden Sonra Sakla",
+  "enum.deathpunishment.health_mode.MANUAL": "Manüel ",
+  "enum.deathpunishment.health_mode.KEEP": "Ölümden Sonra Sakla"
+}

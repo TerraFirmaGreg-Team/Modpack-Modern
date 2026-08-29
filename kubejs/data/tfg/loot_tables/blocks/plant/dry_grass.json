@@ -1,0 +1,45 @@
+{
+	"pools": [
+		{
+			"entries": [
+				{
+					"children": [
+						{
+							"type": "minecraft:item",
+							"name": "tfg:plant/dry_grass",
+							"conditions": [
+								{
+									"predicate": {
+										"tag": "forge:shears"
+									},
+									"condition": "minecraft:match_tool"
+								}
+							]
+						},
+						{
+							"type": "minecraft:item",
+							"name": "tfc:straw",
+							"conditions": [
+								{
+									"predicate": {
+										"tag": "tfc:sharp_tools"
+									},
+									"condition": "minecraft:match_tool"
+								}
+							]
+						}
+					],
+					"type": "minecraft:alternatives"
+				}
+			],
+			"name": "loot_pool",
+			"rolls": 1,
+			"conditions": [
+				{
+					"condition": "minecraft:survives_explosion"
+				}
+			]
+		}
+	],
+	"type": "minecraft:block"
+}

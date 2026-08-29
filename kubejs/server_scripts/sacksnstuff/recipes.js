@@ -1,11 +1,6 @@
 "use strict";
 
 const registerSNSRecipes = (event) => {
-	global.SNS_DISABLED_ITEMS.forEach(item => {
-		event.remove({ input: item })
-		event.remove({ output: item })
-	})
-	
 	event.remove({ mod: 'sns', type: 'tfc:heating' })
 	event.remove({ output: 'sns:buckle'})
 	
@@ -36,6 +31,16 @@ const registerSNSRecipes = (event) => {
 		-1,  -1, 0, 0, 0, 0, 0, 0
 		]
 	).id('sns:sewing/burlap_sack')
+	
+	event.recipes.gtceu.assembler('sns:assembler/burlap_sack')
+		.itemInputs(
+			'3x #tfc:sewing_dark_cloth',
+			'1x #forge:string'
+		)
+		.itemOutputs('sns:burlap_sack')
+		.duration(100)
+		.circuit(4)
+		.EUt(GTValues.VA[GTValues.LV])
 	
 	event.recipes.tfc.sewing(
 		'sns:seed_pouch',
@@ -247,10 +252,11 @@ const registerSNSRecipes = (event) => {
 		.circuit(4)
 		.duration(40)
 		.EUt(GTValues.VA[GTValues.LV])
+
 	event.custom({
 		type: "createaddition:rolling",
 		input: ChemicalHelper.get(TagPrefix.rod, GTMaterials.Steel, 1),
-		result: 'sns:metal/horseshoe/steel'
+		result: { item: 'sns:metal/horseshoe/steel' }
 	}).id(`tfg:rolling/steel_horseshoe`)
 
 	event.recipes.gtceu.bender('sns:horseshoe_black_steel_electric_only')
@@ -262,7 +268,7 @@ const registerSNSRecipes = (event) => {
 	event.custom({
 		type: "createaddition:rolling",
 		input: ChemicalHelper.get(TagPrefix.rod, GTMaterials.BlackSteel, 1),
-		result: 'sns:metal/horseshoe/black_steel'
+		result: { item: 'sns:metal/horseshoe/black_steel' }
 	}).id(`tfg:rolling/black_steel_horseshoe`)
 
 	event.recipes.gtceu.bender('sns:horseshoe_blue_steel_electric_only')
@@ -274,7 +280,7 @@ const registerSNSRecipes = (event) => {
 	event.custom({
 		type: "createaddition:rolling",
 		input: ChemicalHelper.get(TagPrefix.rod, GTMaterials.BlueSteel, 1),
-		result: 'sns:metal/horseshoe/blue_steel'
+		result: { item: 'sns:metal/horseshoe/blue_steel' }
 	}).id(`tfg:rolling/blue_steel_horseshoe`)
 
 	event.recipes.gtceu.bender('sns:horseshoe_red_steel_electric_only')
@@ -286,6 +292,29 @@ const registerSNSRecipes = (event) => {
 	event.custom({
 		type: "createaddition:rolling",
 		input: ChemicalHelper.get(TagPrefix.rod, GTMaterials.RedSteel, 1),
-		result: 'sns:metal/horseshoe/red_steel'
+		result: { item: 'sns:metal/horseshoe/red_steel' }
 	}).id(`tfg:rolling/red_steel_horseshoe`)
+
+	const BOOT_TIERS = [
+		{ id: 'hiking_boots', resource: 'sns:bound_leather_strip' },
+		{ id: 'steel_toe_hiking_boots', resource: '#forge:plates/steel' },
+		{ id: 'black_steel_toe_hiking_boots', resource: '#forge:plates/black_steel' },
+		{ id: 'blue_steel_toe_hiking_boots', resource: '#forge:plates/blue_steel' },
+		{ id: 'red_steel_toe_hiking_boots', resource: '#forge:plates/red_steel' }
+	]
+
+	BOOT_TIERS.slice(0, 3).forEach((baseTier, i) => {
+        BOOT_TIERS.slice(i + 1).forEach(upgradedTier => {
+
+            event.shaped(`sns:${upgradedTier.id}`, [
+				' C ',
+				'BAB',
+				'   '
+			], {
+				A: `sns:${baseTier.id}`,
+				B: `${upgradedTier.resource}`,
+				C: '#forge:tools/hammers'
+			}).id(`sns:shaped/${baseTier.id}_to_${upgradedTier.id}`)
+		})
+	})
 }

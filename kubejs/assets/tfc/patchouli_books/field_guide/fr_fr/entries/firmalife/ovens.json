@@ -1,0 +1,137 @@
+{
+  "name": "Fours",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:cured_oven_top",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Les $(thing)Fours$() sont une bonne manière de cuisiner beaucoup de nourriture en allongeant leur durée de vie. Les aliments cuits au four pourrissent 90% plus lentement que les autres. Un four est une structure multibloc composée d'une $(thing)Sole de four$(), une $(thing)Voûte de four$(), et éventuellement d'une $(thing)Cheminée$(). Ces blocs sont fait d'argile $(thing)durcie$() en augmentant sa température pendant suffisamment longtemps. Des $(l:firmalife/oven_appliances)Instruments de four$() étendent les possibilités de celui-ci."
+    },
+    {
+      "type": "tfc:knapping_recipe",
+      "recipe": "firmalife:clay_knapping/oven_top",
+      "text": "Recette d'une voûte de four."
+    },
+    {
+      "type": "tfc:knapping_recipe",
+      "recipe": "firmalife:clay_knapping/oven_bottom",
+      "text": "Recette d'une sole de four."
+    },
+    {
+      "type": "tfc:knapping_recipe",
+      "recipe": "firmalife:clay_knapping/oven_chimney",
+      "text": "Recette d'une cheminée de four."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/bricks",
+      "text": "Les fours sont isolés à l'aide de $(thing)Briques$(), d'autres blocs de four, ou tout ce qui peut isoler une forge. Vous pouvez donc utiliser des blocs de pierre si vous voulez !"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfchotornot:crafting/tongs/wood",
+      "text": "Les $(thing)Pinces$() sont un moyen simple d'extraire les items brûlants d'un four. Pressez simplement $(item)$(k:key.use)$() pour retirer les items du four. Sinon vous risquez de vous brûler !"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Le four consiste d'abord d'une Voûte placée sur une Sole. Chaque côté du four à part l'avant doit être couvert de blocs d'isolation de four, comme vu deux pages auparavant. Vous pouvez utiliser des $(thing)Chrminées de four$() comme isolation. Placer une cheminée juste derrière le four pousse la fumée du four à voyager vers le haut et en sortir. Si vous ne faites pas ça, de la fumée remplira rapidement votre maison, ce qui peut être très distrayant !"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "Une structure de four en exemple, durcie et non durcie.",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "     ",
+              "  C  "
+            ],
+            [
+              "     ",
+              "  C  "
+            ],
+            [
+              "WT0TW",
+              "WWCWW"
+            ],
+            [
+              "WBBBW",
+              "WWCWW"
+            ]
+          ],
+          "mapping": {
+            "0": "firmalife:cured_oven_top[facing=north]",
+            "T": "firmalife:cured_oven_top[facing=north]",
+            "B": "firmalife:cured_oven_bottom[facing=north]",
+            "W": "minecraft:bricks",
+            "C": "firmalife:cured_oven_chimney"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "     ",
+              "  C  "
+            ],
+            [
+              "     ",
+              "  C  "
+            ],
+            [
+              "WT0TW",
+              "WWCWW"
+            ],
+            [
+              "WBBBW",
+              "WWCWW"
+            ]
+          ],
+          "mapping": {
+            "0": "firmalife:oven_top[facing=north]",
+            "T": "firmalife:oven_top[facing=north]",
+            "B": "firmalife:oven_bottom[facing=north]",
+            "W": "minecraft:bricks",
+            "C": "firmalife:oven_chimney"
+          }
+        }
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "text": "La sole de four sert à stocker le combustible, ici seulement des bûches. Pressez $(item)$(k:key.use)$() pour en rajouter ou en retirer.  La sole est la partie du four qui doit être allumée à l'aide d'un $(thing)allume-feu$() ou autre outil. Il transfère de la chaleur à la voûte."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "La voûte de four contient les items à cuire. Elle utilise la chaleur produite dans la sole petit à petit, ce qui signifie que même si vous êtes à court de combustible, la voûte continuera de fonctionner encore un peu. Il suffit d'appuyer sur $(item)$(k:key.use)$() pour y ajouter des items. N'oubliez pas d'utiliser des $(thing)pinces$() pour en retirer les items."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Durcir les blocs de four est facile, mais demande de la patience. Faites simplement fonctionner votre sole normalement et attendez. Si un bloc de four est au-dessus de 600°C pendant 80 secondes, il sera durci avec tous les blocs adjacents. Le durcissement est transmis à toutes les cheminées à proximité."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/oven_insulation",
+      "text": "Fabriquer des isolations de four pour votre sole vous permet de vous passer d'isolation sur les côtés et derrière. Cela ne supprime pas le besoin en cheminée. Utilisez $(item)$(k:key.use)$() pour l'appliquer."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/brick_countertop",
+      "text": "Les comptoirs sont des blocs esthétiques qui comptent comme une isolation de four, et possèdent une apparence similaire aux blocs de four. Ils représentent un bon choic esthétique pour votre cuisine."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Les fours ont aussi des $(thing)Finitions$(), utilisées pour changer leur apparence. Ces finitions sont appliquées à la brique du four (ou aux blocs de brique directement), et sont cosmétiques. Les finitions peuvent être appliquées. Elles sont appliquées avec $(item)$(k:key.use)$()."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/rustic_finish",
+      "recipe2": "firmalife:crafting/stone_finish"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/tile_finish"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 14
+}

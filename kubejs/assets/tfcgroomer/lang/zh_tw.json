@@ -1,0 +1,18 @@
+{
+	"block.tfcgroomer.bismuth_bronze_grooming_station": "鉍青銅飼料槽",
+	"block.tfcgroomer.black_bronze_grooming_station": "黑青銅飼料槽",
+	"block.tfcgroomer.black_steel_grooming_station": "黑鋼飼料槽",
+	"block.tfcgroomer.blue_steel_grooming_station": "藍鋼飼料槽",
+	"block.tfcgroomer.bronze_grooming_station": "青銅飼料槽",
+	"block.tfcgroomer.copper_grooming_station": "銅飼料槽",
+	"block.tfcgroomer.grooming_station": "飼料槽",
+	"block.tfcgroomer.red_steel_grooming_station": "紅鋼飼料槽",
+	"block.tfcgroomer.steel_grooming_station": "鋼飼料槽",
+	"block.tfcgroomer.wrought_iron_grooming_station": "鍛鐵飼料槽",
+	"config.jade.plugin_tfcgroomer.grooming_station": "飼料槽",
+	"gui.tfcgroomer.enable_breeding": "啟用育種",
+	"tfcgroomer.grooming_station.range": "範圍： %s",
+	"tfcgroomer.tooltip.breedDisabled": "停用育種",
+	"tfcgroomer.tooltip.breedEnabled": "啟用育種",
+	"tfcgroomer.tooltip.toggleBreeding": "育種開關"
+}

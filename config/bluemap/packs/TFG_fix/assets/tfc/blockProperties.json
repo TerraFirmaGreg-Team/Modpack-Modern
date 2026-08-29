@@ -1,0 +1,1793 @@
+{
+  "tfc:fluid/river_water": {
+    "alwaysWaterlogged": true
+  },
+  "tfc:fluid/salt_water": {
+    "alwaysWaterlogged": true
+  },
+  "tfc:fluid/spring_water": {
+    "alwaysWaterlogged": true
+  },
+  "tfc:plant/eel_grass[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:plant/water_taro[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:plant/leafy_kelp_plant[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:plant/leafy_kelp[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:plant/giant_kelp_plant[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:plant/giant_kelp_flower[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:plant/winged_kelp_plant[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:plant/winged_kelp[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:plant/star_grass[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:plant/gutweed[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:plant/phragmite[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:plant/cattail[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:plant/coontail[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:plant/arrowhead[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:plant/sago[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:plant/marigold[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:plant/pickerelweed[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:plant/milfoil[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/leaves/acacia[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/leaves/ash[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/leaves/aspen[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/leaves/birch[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/leaves/blackwood[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/leaves/chestnut[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/leaves/douglas_fir[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/leaves/hickory[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/leaves/kapok[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/leaves/mangrove[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/leaves/maple[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/leaves/oak[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/leaves/palm[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/leaves/pine[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/leaves/rosewood[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/leaves/sequoia[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/leaves/spruce[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/leaves/sycamore[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/leaves/white_cedar[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/twig/acacia[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/twig/ash[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/twig/aspen[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/twig/birch[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/twig/blackwood[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/twig/chestnut[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/twig/douglas_fir[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/twig/hickory[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/twig/kapok[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/twig/mangrove[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/twig/maple[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/twig/oak[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/twig/palm[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/twig/pine[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/twig/rosewood[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/twig/sequoia[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/twig/spruce[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/twig/sycamore[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/twig/white_cedar[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/twig/willow[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/leaves/willow[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:ore/small_bismuthinite[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:ore/small_cassiterite[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:ore/small_garnierite[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:ore/small_hematite[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:ore/small_magnetite[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:ore/small_malachite[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:ore/small_native_copper[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:ore/small_native_gold[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:ore/small_native_silver[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:ore/small_sphalerite[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:ore/small_tetrahedrite[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:ore/small_limonite[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc_ie_addon:ore/small_galena[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc_ie_addon:ore/small_bauxite[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc_ie_addon:ore/small_uraninite[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc_ie_addon:ore/small_galena[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc_ie_addon:ore/small_bauxite[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc_ie_addon:ore/small_uraninite[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:groundcover/bone[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:groundcover/clam[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:groundcover/driftwood[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:groundcover/flint[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:groundcover/mollusk[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:groundcover/mussel[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:groundcover/pinecone[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:groundcover/pumice[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:groundcover/sea_urchin[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:groundcover/stick[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:groundcover/seaweed[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:rock/loose/andesite[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:rock/loose/basalt[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:rock/loose/chalk[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:rock/loose/chert[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:rock/loose/claystone[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:rock/loose/conglomerate[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:rock/loose/dacite[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:rock/loose/diorite[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:rock/loose/dolomite[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:rock/loose/gabbro[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:rock/loose/gneiss[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:rock/loose/granite[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:rock/loose/limestone[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:rock/loose/marble[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:rock/loose/phyllite[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:rock/loose/quartzite[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:rock/loose/rhyolite[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:rock/loose/schist[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:rock/loose/shale[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:rock/loose/slate[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:rock/mossy_loose/andesite[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:rock/mossy_loose/basalt[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:rock/mossy_loose/chalk[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:rock/mossy_loose/chert[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:rock/mossy_loose/claystone[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:rock/mossy_loose/conglomerate[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:rock/mossy_loose/dacite[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:rock/mossy_loose/diorite[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:rock/mossy_loose/dolomite[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:rock/mossy_loose/gabbro[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:rock/mossy_loose/gneiss[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:rock/mossy_loose/granite[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:rock/mossy_loose/limestone[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:rock/mossy_loose/marble[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:rock/mossy_loose/phyllite[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:rock/mossy_loose/quartzite[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:rock/mossy_loose/rhyolite[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:rock/mossy_loose/schist[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:rock/mossy_loose/shale[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:rock/mossy_loose/slate[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:plant/eel_grass[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:plant/salt_water_taro[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:plant/leafy_kelp_plant[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:plant/leafy_kelp[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:plant/giant_kelp_plant[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:plant/giant_kelp_flower[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:plant/winged_kelp_plant[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:plant/winged_kelp[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:plant/star_grass[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:plant/gutweed[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:plant/phragmite[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:plant/cattail[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:plant/coontail[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:plant/arrowhead[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:plant/sago[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:plant/marigold[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:plant/pickerelweed[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:plant/milfoil[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/leaves/acacia[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/leaves/ash[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/leaves/aspen[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/leaves/birch[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/leaves/blackwood[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/leaves/chestnut[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/leaves/douglas_fir[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/leaves/hickory[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/leaves/kapok[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/leaves/mangrove[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/leaves/maple[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/leaves/oak[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/leaves/palm[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/leaves/pine[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/leaves/rosewood[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/leaves/sequoia[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/leaves/spruce[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/leaves/sycamore[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/leaves/white_cedar[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/twig/acacia[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/twig/ash[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/twig/aspen[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/twig/birch[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/twig/blackwood[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/twig/chestnut[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/twig/douglas_fir[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/twig/hickory[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/twig/kapok[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/twig/mangrove[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/twig/maple[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/twig/oak[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/twig/palm[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/twig/pine[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/twig/rosewood[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/twig/sequoia[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/twig/spruce[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/twig/sycamore[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/twig/white_cedar[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/twig/willow[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/leaves/willow[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:ore/small_bismuthinite[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:ore/small_cassiterite[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:ore/small_garnierite[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:ore/small_hematite[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:ore/small_magnetite[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:ore/small_malachite[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:ore/small_native_copper[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:ore/small_native_gold[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:ore/small_native_silver[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:ore/small_sphalerite[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:ore/small_tetrahedrite[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:ore/small_limonite[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:groundcover/bone[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:groundcover/clam[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:groundcover/driftwood[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:groundcover/flint[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:groundcover/mollusk[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:groundcover/mussel[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:groundcover/pinecone[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:groundcover/pumice[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:groundcover/sea_urchin[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:groundcover/stick[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:groundcover/seaweed[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:rock/loose/andesite[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:rock/loose/basalt[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:rock/loose/chalk[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:rock/loose/chert[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:rock/loose/claystone[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:rock/loose/conglomerate[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:rock/loose/dacite[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:rock/loose/diorite[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:rock/loose/dolomite[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:rock/loose/gabbro[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:rock/loose/gneiss[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:rock/loose/granite[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:rock/loose/limestone[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:rock/loose/marble[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:rock/loose/phyllite[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:rock/loose/quartzite[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:rock/loose/rhyolite[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:rock/loose/schist[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:rock/loose/shale[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:rock/loose/slate[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:rock/mossy_loose/andesite[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:rock/mossy_loose/basalt[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:rock/mossy_loose/chalk[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:rock/mossy_loose/chert[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:rock/mossy_loose/claystone[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:rock/mossy_loose/conglomerate[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:rock/mossy_loose/dacite[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:rock/mossy_loose/diorite[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:rock/mossy_loose/dolomite[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:rock/mossy_loose/gabbro[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:rock/mossy_loose/gneiss[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:rock/mossy_loose/granite[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:rock/mossy_loose/limestone[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:rock/mossy_loose/marble[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:rock/mossy_loose/phyllite[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:rock/mossy_loose/quartzite[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:rock/mossy_loose/rhyolite[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:rock/mossy_loose/schist[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:rock/mossy_loose/shale[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:rock/mossy_loose/slate[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "firmalife:hollow_shell[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/fallen_leaves/acacia[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/fallen_leaves/acacia[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/fallen_leaves/ash[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/fallen_leaves/ash[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/fallen_leaves/aspen[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/fallen_leaves/aspen[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/fallen_leaves/birch[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/fallen_leaves/birch[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/fallen_leaves/blackwood[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/fallen_leaves/blackwood[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/fallen_leaves/chestnut[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/fallen_leaves/chestnut[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/fallen_leaves/douglas_fir[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/fallen_leaves/douglas_fir[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/fallen_leaves/hickory[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/fallen_leaves/hickory[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/fallen_leaves/kapok[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/fallen_leaves/kapok[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/fallen_leaves/mangrove[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/fallen_leaves/mangrove[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/fallen_leaves/maple[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/fallen_leaves/maple[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/fallen_leaves/oak[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/fallen_leaves/oak[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/fallen_leaves/palm[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/fallen_leaves/palm[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/fallen_leaves/pine[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/fallen_leaves/pine[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/fallen_leaves/rosewood[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/fallen_leaves/rosewood[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/fallen_leaves/sequoia[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/fallen_leaves/sequoia[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/fallen_leaves/spruce[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/fallen_leaves/spruce[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/fallen_leaves/sycamore[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/fallen_leaves/sycamore[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/fallen_leaves/white_cedar[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/fallen_leaves/white_cedar[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/fallen_leaves/willow[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:wood/fallen_leaves/willow[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "tfc:peat_grass": {
+    "culling": true,
+    "occluding": true
+  },
+  "tfc:kaolin_clay_grass": {
+    "culling": true,
+    "occluding": true
+  },
+  "tfc:grass/silt": {
+    "culling": true,
+    "occluding": true
+  },
+  "tfc:clay_grass/silt": {
+    "culling": true,
+    "occluding": true
+  },
+  "tfc:grass_path/silt": {
+    "culling": true,
+    "occluding": true
+  },
+  "tfc:grass/loam": {
+    "culling": true,
+    "occluding": true
+  },
+  "tfc:clay_grass/loam": {
+    "culling": true,
+    "occluding": true
+  },
+  "tfc:grass_path/loam": {
+    "culling": true,
+    "occluding": true
+  },
+  "tfc:grass/sandy": {
+    "culling": true,
+    "occluding": true
+  },
+  "tfc:clay_grass/sandy": {
+    "culling": true,
+    "occluding": true
+  },
+  "tfc:grass_path/sandy": {
+    "culling": true,
+    "occluding": true
+  },
+  "tfc:grass/silty_loam": {
+    "culling": true,
+    "occluding": true
+  },
+  "tfc:clay_grass/silty_loam": {
+    "culling": true,
+    "occluding": true
+  },
+  "tfc:grass_path/silty_loam": {
+    "culling": true,
+    "occluding": true
+  },
+  "tfc:grass/sandy_loam": {
+    "culling": true,
+    "occluding": true
+  },
+  "tfc:clay_grass/sandy_loam": {
+    "culling": true,
+    "occluding": true
+  },
+  "tfc:grass_path/sandy_loam": {
+    "culling": true,
+    "occluding": true
+  },
+  "tfc:plant/allium": {
+    "randomOffset": true
+  },
+  "tfc:plant/anthurium": {
+    "randomOffset": true
+  },
+  "tfc:plant/arrowhead": {
+    "randomOffset": true
+  },
+  "tfc:plant/artists_conk": {
+    "randomOffset": true
+  },
+  "tfc:plant/arundo": {
+    "randomOffset": true
+  },
+  "tfc:plant/arundo_plant": {
+    "randomOffset": true
+  },
+  "tfc:plant/aspen_krummholz": {
+    "randomOffset": true
+  },
+  "tfc:plant/athyrium_fern": {
+    "randomOffset": true
+  },
+  "tfc:plant/badderlocks": {
+    "randomOffset": true
+  },
+  "tfc:plant/banana_plant": {
+    "randomOffset": true
+  },
+  "tfc:plant/banana_sapling": {
+    "randomOffset": true
+  },
+  "tfc:plant/barrel_cactus": {
+    "randomOffset": true
+  },
+  "tfc:plant/beachgrass": {
+    "randomOffset": true
+  },
+  "tfc:plant/blackberry_bush": {
+    "randomOffset": true
+  },
+  "tfc:plant/blackberry_bush_cane": {
+    "randomOffset": true
+  },
+  "tfc:plant/black_orchid": {
+    "randomOffset": true
+  },
+  "tfc:plant/blood_lily": {
+    "randomOffset": true
+  },
+  "tfc:plant/blueberry_bush": {
+    "randomOffset": true
+  },
+  "tfc:plant/blueberry_bush_cane": {
+    "randomOffset": true
+  },
+  "tfc:plant/bluegrass": {
+    "randomOffset": true
+  },
+  "tfc:plant/blue_ginger": {
+    "randomOffset": true
+  },
+  "tfc:plant/blue_orchid": {
+    "randomOffset": true
+  },
+  "tfc:plant/bromegrass": {
+    "randomOffset": true
+  },
+  "tfc:plant/bunchberry_bush": {
+    "randomOffset": true
+  },
+  "tfc:plant/bur_reed": {
+    "randomOffset": true
+  },
+  "tfc:plant/butterfly_milkweed": {
+    "randomOffset": true
+  },
+  "tfc:plant/calendula": {
+    "randomOffset": true
+  },
+  "tfc:plant/canna": {
+    "randomOffset": true
+  },
+  "tfc:plant/cattail": {
+    "randomOffset": true
+  },
+  "tfc:plant/cherry_branch": {
+    "randomOffset": true
+  },
+  "tfc:plant/cherry_growing_branch": {
+    "randomOffset": true
+  },
+  "tfc:plant/cherry_leaves": {
+    "randomOffset": true
+  },
+  "tfc:plant/cherry_sapling": {
+    "randomOffset": true
+  },
+  "tfc:plant/cloudberry_bush": {
+    "randomOffset": true
+  },
+  "tfc:plant/cobblestone_lichen": {
+    "randomOffset": true
+  },
+  "tfc:plant/coontail": {
+    "randomOffset": true
+  },
+  "tfc:plant/cordgrass": {
+    "randomOffset": true
+  },
+  "tfc:plant/cranberry_bush": {
+    "randomOffset": true
+  },
+  "tfc:plant/dandelion": {
+    "randomOffset": true
+  },
+  "tfc:plant/dead_banana_plant": {
+    "randomOffset": true
+  },
+  "tfc:plant/dead_berry_bush": {
+    "randomOffset": true
+  },
+  "tfc:plant/dead_bush": {
+    "randomOffset": true
+  },
+  "tfc:plant/dead_cane": {
+    "randomOffset": true
+  },
+  "tfc:plant/desert_flame": {
+    "randomOffset": true
+  },
+  "tfc:plant/douglas_fir_krummholz": {
+    "randomOffset": true
+  },
+  "tfc:plant/dry_phragmite": {
+    "randomOffset": true
+  },
+  "tfc:plant/dry_phragmite_plant": {
+    "randomOffset": true
+  },
+  "tfc:plant/duckweed": {
+    "randomOffset": true
+  },
+  "tfc:plant/eel_grass": {
+    "randomOffset": true
+  },
+  "tfc:plant/elderberry_bush": {
+    "randomOffset": true
+  },
+  "tfc:plant/elderberry_bush_cane": {
+    "randomOffset": true
+  },
+  "tfc:plant/field_horsetail": {
+    "randomOffset": true
+  },
+  "tfc:plant/fountain_grass": {
+    "randomOffset": true
+  },
+  "tfc:plant/foxglove": {
+    "randomOffset": true
+  },
+  "tfc:plant/giant_kelp_flower": {
+    "randomOffset": true
+  },
+  "tfc:plant/giant_kelp_plant": {
+    "randomOffset": true
+  },
+  "tfc:plant/goldenrod": {
+    "randomOffset": true
+  },
+  "tfc:plant/gooseberry_bush": {
+    "randomOffset": true
+  },
+  "tfc:plant/grape_hyacinth": {
+    "randomOffset": true
+  },
+  "tfc:plant/green_algae": {
+    "randomOffset": true
+  },
+  "tfc:plant/green_apple_branch": {
+    "randomOffset": true
+  },
+  "tfc:plant/green_apple_growing_branch": {
+    "randomOffset": true
+  },
+  "tfc:plant/green_apple_leaves": {
+    "randomOffset": true
+  },
+  "tfc:plant/green_apple_sapling": {
+    "randomOffset": true
+  },
+  "tfc:plant/gutweed": {
+    "randomOffset": true
+  },
+  "tfc:plant/guzmania": {
+    "randomOffset": true
+  },
+  "tfc:plant/hanging_vines": {
+    "randomOffset": true
+  },
+  "tfc:plant/hanging_vines_plant": {
+    "randomOffset": true
+  },
+  "tfc:plant/heather": {
+    "randomOffset": true
+  },
+  "tfc:plant/heliconia": {
+    "randomOffset": true
+  },
+  "tfc:plant/hibiscus": {
+    "randomOffset": true
+  },
+  "tfc:plant/houstonia": {
+    "randomOffset": true
+  },
+  "tfc:plant/ivy": {
+    "randomOffset": true
+  },
+  "tfc:plant/jungle_vines": {
+    "randomOffset": true
+  },
+  "tfc:plant/kangaroo_paw": {
+    "randomOffset": true
+  },
+  "tfc:plant/king_fern": {
+    "randomOffset": true
+  },
+  "tfc:plant/labrador_tea": {
+    "randomOffset": true
+  },
+  "tfc:plant/lady_fern": {
+    "randomOffset": true
+  },
+  "tfc:plant/laminaria": {
+    "randomOffset": true
+  },
+  "tfc:plant/leafy_kelp": {
+    "randomOffset": true
+  },
+  "tfc:plant/leafy_kelp_plant": {
+    "randomOffset": true
+  },
+  "tfc:plant/lemon_branch": {
+    "randomOffset": true
+  },
+  "tfc:plant/lemon_growing_branch": {
+    "randomOffset": true
+  },
+  "tfc:plant/lemon_leaves": {
+    "randomOffset": true
+  },
+  "tfc:plant/lemon_sapling": {
+    "randomOffset": true
+  },
+  "tfc:plant/liana": {
+    "randomOffset": true
+  },
+  "tfc:plant/liana_plant": {
+    "randomOffset": true
+  },
+  "tfc:plant/licorice_fern": {
+    "randomOffset": true
+  },
+  "tfc:plant/lilac": {
+    "randomOffset": true
+  },
+  "tfc:plant/lily_of_the_valley": {
+    "randomOffset": true
+  },
+  "tfc:plant/lotus": {
+    "randomOffset": true
+  },
+  "tfc:plant/maiden_pink": {
+    "randomOffset": true
+  },
+  "tfc:plant/manatee_grass": {
+    "randomOffset": true
+  },
+  "tfc:plant/marigold": {
+    "randomOffset": true
+  },
+  "tfc:plant/meads_milkweed": {
+    "randomOffset": true
+  },
+  "tfc:plant/milfoil": {
+    "randomOffset": true
+  },
+  "tfc:plant/morning_glory": {
+    "randomOffset": true
+  },
+  "tfc:plant/moss": {
+    "randomOffset": true
+  },
+  "tfc:plant/nasturtium": {
+    "randomOffset": true
+  },
+  "tfc:plant/olive_branch": {
+    "randomOffset": true
+  },
+  "tfc:plant/olive_growing_branch": {
+    "randomOffset": true
+  },
+  "tfc:plant/olive_leaves": {
+    "randomOffset": true
+  },
+  "tfc:plant/olive_sapling": {
+    "randomOffset": true
+  },
+  "tfc:plant/orange_branch": {
+    "randomOffset": true
+  },
+  "tfc:plant/orange_growing_branch": {
+    "randomOffset": true
+  },
+  "tfc:plant/orange_leaves": {
+    "randomOffset": true
+  },
+  "tfc:plant/orange_sapling": {
+    "randomOffset": true
+  },
+  "tfc:plant/orchard_grass": {
+    "randomOffset": true
+  },
+  "tfc:plant/ostrich_fern": {
+    "randomOffset": true
+  },
+  "tfc:plant/oxeye_daisy": {
+    "randomOffset": true
+  },
+  "tfc:plant/pampas_grass": {
+    "randomOffset": true
+  },
+  "tfc:plant/peach_branch": {
+    "randomOffset": true
+  },
+  "tfc:plant/peach_growing_branch": {
+    "randomOffset": true
+  },
+  "tfc:plant/peach_leaves": {
+    "randomOffset": true
+  },
+  "tfc:plant/peach_sapling": {
+    "randomOffset": true
+  },
+  "tfc:plant/perovskia": {
+    "randomOffset": true
+  },
+  "tfc:plant/philodendron": {
+    "randomOffset": true
+  },
+  "tfc:plant/phragmite": {
+    "randomOffset": true
+  },
+  "tfc:plant/pickerelweed": {
+    "randomOffset": true
+  },
+  "tfc:plant/pine_krummholz": {
+    "randomOffset": true
+  },
+  "tfc:plant/pistia": {
+    "randomOffset": true
+  },
+  "tfc:plant/plum_branch": {
+    "randomOffset": true
+  },
+  "tfc:plant/plum_growing_branch": {
+    "randomOffset": true
+  },
+  "tfc:plant/plum_leaves": {
+    "randomOffset": true
+  },
+  "tfc:plant/plum_sapling": {
+    "randomOffset": true
+  },
+  "tfc:plant/poppy": {
+    "randomOffset": true
+  },
+  "tfc:plant/primrose": {
+    "randomOffset": true
+  },
+  "tfc:plant/pulsatilla": {
+    "randomOffset": true
+  },
+  "tfc:plant/raddia_grass": {
+    "randomOffset": true
+  },
+  "tfc:plant/raspberry_bush": {
+    "randomOffset": true
+  },
+  "tfc:plant/raspberry_bush_cane": {
+    "randomOffset": true
+  },
+  "tfc:plant/red_algae": {
+    "randomOffset": true
+  },
+  "tfc:plant/red_apple_branch": {
+    "randomOffset": true
+  },
+  "tfc:plant/red_apple_growing_branch": {
+    "randomOffset": true
+  },
+  "tfc:plant/red_apple_leaves": {
+    "randomOffset": true
+  },
+  "tfc:plant/red_apple_sapling": {
+    "randomOffset": true
+  },
+  "tfc:plant/red_sealing_wax_palm": {
+    "randomOffset": true
+  },
+  "tfc:plant/reindeer_lichen": {
+    "randomOffset": true
+  },
+  "tfc:plant/rose": {
+    "randomOffset": true
+  },
+  "tfc:plant/ryegrass": {
+    "randomOffset": true
+  },
+  "tfc:plant/sacred_datura": {
+    "randomOffset": true
+  },
+  "tfc:plant/sagebrush": {
+    "randomOffset": true
+  },
+  "tfc:plant/sago": {
+    "randomOffset": true
+  },
+  "tfc:plant/saguaro": {
+    "randomOffset": true
+  },
+  "tfc:plant/saguaro_fruit": {
+    "randomOffset": true
+  },
+  "tfc:plant/saguaro_plant": {
+    "randomOffset": true
+  },
+  "tfc:plant/sapphire_tower": {
+    "randomOffset": true
+  },
+  "tfc:plant/sargassum": {
+    "randomOffset": true
+  },
+  "tfc:plant/scutch_grass": {
+    "randomOffset": true
+  },
+  "tfc:plant/sea_lavender": {
+    "randomOffset": true
+  },
+  "tfc:plant/sea_palm": {
+    "randomOffset": true
+  },
+  "tfc:plant/silver_spurflower": {
+    "randomOffset": true
+  },
+  "tfc:plant/snapdragon_pink": {
+    "randomOffset": true
+  },
+  "tfc:plant/snapdragon_red": {
+    "randomOffset": true
+  },
+  "tfc:plant/snapdragon_white": {
+    "randomOffset": true
+  },
+  "tfc:plant/snapdragon_yellow": {
+    "randomOffset": true
+  },
+  "tfc:plant/snowberry_bush": {
+    "randomOffset": true
+  },
+  "tfc:plant/spanish_moss": {
+    "randomOffset": true
+  },
+  "tfc:plant/spanish_moss_plant": {
+    "randomOffset": true
+  },
+  "tfc:plant/spruce_krummholz": {
+    "randomOffset": true
+  },
+  "tfc:plant/star_grass": {
+    "randomOffset": true
+  },
+  "tfc:plant/strawberry_bush": {
+    "randomOffset": true
+  },
+  "tfc:plant/strelitzia": {
+    "randomOffset": true
+  },
+  "tfc:plant/switchgrass": {
+    "randomOffset": true
+  },
+  "tfc:plant/sword_fern": {
+    "randomOffset": true
+  },
+  "tfc:plant/tall_fescue_grass": {
+    "randomOffset": true
+  },
+  "tfc:plant/timothy_grass": {
+    "randomOffset": true
+  },
+  "tfc:plant/toquilla_palm": {
+    "randomOffset": true
+  },
+  "tfc:plant/tree_fern": {
+    "randomOffset": true
+  },
+  "tfc:plant/tree_fern_plant": {
+    "randomOffset": true
+  },
+  "tfc:plant/trillium": {
+    "randomOffset": true
+  },
+  "tfc:plant/tropical_milkweed": {
+    "randomOffset": true
+  },
+  "tfc:plant/tulip_orange": {
+    "randomOffset": true
+  },
+  "tfc:plant/tulip_pink": {
+    "randomOffset": true
+  },
+  "tfc:plant/tulip_red": {
+    "randomOffset": true
+  },
+  "tfc:plant/tulip_white": {
+    "randomOffset": true
+  },
+  "tfc:plant/turtle_grass": {
+    "randomOffset": true
+  },
+  "tfc:plant/vriesea": {
+    "randomOffset": true
+  },
+  "tfc:plant/water_canna": {
+    "randomOffset": true
+  },
+  "tfc:plant/water_lily": {
+    "randomOffset": true
+  },
+  "tfc:plant/water_taro": {
+    "randomOffset": true
+  },
+  "tfc:plant/white_cedar_krummholz": {
+    "randomOffset": true
+  },
+  "tfc:plant/winged_kelp": {
+    "randomOffset": true
+  },
+  "tfc:plant/winged_kelp_plant": {
+    "randomOffset": true
+  },
+  "tfc:plant/wintergreen_berry_bush": {
+    "randomOffset": true
+  },
+  "tfc:plant/yucca": {
+    "randomOffset": true
+  }
+}

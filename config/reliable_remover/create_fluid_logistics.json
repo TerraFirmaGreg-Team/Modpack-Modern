@@ -1,0 +1,15 @@
+[
+	{
+		"action": "remove",
+		"items": [
+            "fluidlogistics:fluid_transporter",
+            "fluidlogistics:infinite_fluid_tank",
+            "fluidlogistics:fluid_pump",
+            "fluidlogistics:water_containing_copper_casing",
+			"fluidlogistics:copper_basin",
+			"fluidlogistics:copper_bucket",
+			"fluidlogistics:copper_schematicannon",
+			"fluidlogistics:empty_fluid_schematic"
+		]
+	}
+]

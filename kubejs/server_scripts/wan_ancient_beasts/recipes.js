@@ -1,4 +1,3 @@
-	
 // priority: 0
 "use strict";
 
@@ -37,6 +36,7 @@ const registerWABRecipes = (event) => {
 		.itemOutputs('32x #forge:dusts/bone')
 		.duration(400)
 		.EUt(30)
+		.category(GTRecipeCategories.MACERATOR_RECYCLING)
 
 	event.shaped('wan_ancient_beasts:reinforced_shield', [
 		'BAB',
@@ -48,37 +48,91 @@ const registerWABRecipes = (event) => {
 		C: '#tfc:shields',
 		D: '#forge:plates/titanium'
 	}).id('tfg:shaped/reinforced_shield_from_shield')
-}
 
-const registerWABData = (event) => {
-	
-	event.foodItem('wan_ancient_beasts:toxlacanth', food => {
-		food.hunger(2)
-		food.protein(1.5)
-		food.decayModifier(3)
+	event.shapeless('wan_ancient_beasts:fearsome_horn', [
+		'wan_ancient_beasts:raider_horn',
+		'wan_ancient_beasts:eater_tooth',
+		'wan_ancient_beasts:crusher_spike',
+		'endermanoverhaul:enderman_tooth'
+	]).id('tfg:shapeless/fearsome_horn')
+
+	event.shaped('wan_ancient_beasts:white_charger_armor', [
+		'ABA',
+		'CCC'
+	], {
+		A: 'firmaciv:rope_coil',
+		B: 'minecraft:leather_horse_armor',
+		C: '#forge:double_plates/steel'
+	}).id('tfg:shaped/white_charger_armor')
+
+	global.MINECRAFT_DYE_NAMES.forEach(dye => {
+		event.recipes.tfc.barrel_sealed(1000)
+			.inputs('#wan_ancient_beasts:charger_armors', Fluid.of(`tfc:${dye}_dye`, 288))
+			.outputItem(`wan_ancient_beasts:${dye}_charger_armor`)
+			.id(`tfg:barrel/dyeing/charger_armor_${dye}`)
+
+		event.recipes.gtceu.chemical_bath(`tfg:wan_ancient_beasts/${dye}_charger_armor`)
+			.itemInputs('#wan_ancient_beasts:charger_armors')
+			.inputFluids(Fluid.of(`tfc:${dye}_dye`, 288))
+			.itemOutputs(`wan_ancient_beasts:${dye}_charger_armor`)
+			.duration(200)
+			.EUt(4)
+			.category(GTRecipeCategories.CHEM_DYES)
 	})
 
-	event.foodItem('wan_ancient_beasts:cooked_toxlacanth', food => {
-		food.hunger(4)
-		food.saturation(2)
-		food.protein(2.5)
-		food.decayModifier(2.25)
-	})
-	
-	// Eater meat
-	event.foodItem('wan_ancient_beasts:raw_ancient_meat', food => {
-		food.hunger(2)
-		food.protein(2)
-		food.decayModifier(3)
-	})
+	event.recipes.tfc.sewing('wan_ancient_beasts:sniff_armor_trim_smithing_template',[
+			0, 0, 1, 1, 1, 0, 1, 0, 0,
+			0, 0, 0, 0, 0, 0, 0, 0, 0,
+			0, 0, 0, 0, 1, 1, 0, 0, 0,
+			0, 0, 0, 0, 0, 0, 0, 0, 0,
+			0, 0, 1, 1, 1, 0, 1, 0, 0
+		], [
+			0, 0, 1, 0, 1, 1, 0, 0,
+			0, 0, 1, 0, 1, 0, 0, 0,
+			0, 0, 1, 0, 1, 0, 0, 0,
+			0, 0, 1, 0, 1, 1, 0, 0
+		]
+	)
 
-	event.foodItem('wan_ancient_beasts:cooked_ancient_meat', food => {
-		food.hunger(4)
-		food.saturation(3)
-		food.protein(5)
-		food.decayModifier(2.25)
-	})
+	event.recipes.tfc.sewing('wan_ancient_beasts:spike_armor_trim_smithing_template',[
+			0, 0, 1, 0, 0, 0, 1, 0, 0,
+			0, 0, 1, 0, 0, 1, 0, 1, 0,
+			0, 0, 0, 0, 0, 0, 0, 0, 0,
+			0, 0, 1, 0, 0, 1, 0, 1, 0,
+			0, 0, 1, 0, 0, 0, 1, 0, 0
+		], [
+			0, 0, 1, 1, 1, 1, 0, 0,
+			0, 0, 0, 0, 0, 1, 1, 0,
+			0, 0, 0, 0, 0, 1, 1, 0,
+			0, 0, 1, 1, 1, 1, 0, 0
+		]
+	)
 
+	event.recipes.tfc.sewing('wan_ancient_beasts:bones_banner_pattern',[
+			0, 0, 0, 0, 0, 1, 0, 0, 0,
+			0, 0, 0, 0, 1, 0, 0, 0, 0,
+			0, 1, 0, 0, 1, 0, 0, 1, 0,
+			0, 0, 0, 0, 1, 0, 0, 0, 0,
+			0, 0, 0, 1, 0, 0, 0, 0, 0
+		], [
+			0, 0, 0, 0, 0, 1, 0, 0,
+			0, 0, 0, 0, 1, 1, 1, 0,
+			0, 1, 1, 1, 0, 0, 0, 0,
+			0, 0, 1, 0, 0, 0, 0, 0
+		]
+	)
 
-	event.itemSize('wan_ancient_beasts:reinforced_shield', 'very_large', 'very_heavy')
+	event.recipes.tfc.sewing('wan_ancient_beasts:dino_banner_pattern',[
+			0, 0, 0, 0, 0, 0, 1, 0, 0,
+			0, 1, 0, 0, 0, 0, 0, 0, 0,
+			0, 0, 1, 0, 0, 0, 1, 0, 0,
+			0, 0, 0, 0, 0, 0, 0, 0, 0,
+			0, 0, 1, 0, 0, 0, 0, 1, 0
+		], [
+			0, 0, 0, 0, 0, 1, 1, 0,
+			0, 1, 1, 1, 1, 1, 0, 0,
+			0, 0, 1, 1, 1, 1, 1, 0,
+			0, 0, 1, 0, 0, 0, 1, 0
+		]
+	)
 }

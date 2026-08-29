@@ -1,0 +1,12 @@
+{
+	"text.trender.name": "Трендер",
+	"text.trender.sendstacktraces": "Надсилати трасування стека",
+	"text.trender.sendstacktraces.tooltip": "Якщо ввімкнено, трасування стека в журналі або збої в грі, які містять посилання модів на моди від tr7zw, надсилатимуться автору модів через Sentry (Sentry.io), щоб швидше виправляти помилки. Особиста інформація не збирається та не надсилається. (Перезапустіть гру, ввімкнувши це).",
+	"text.trender.style": "Стиль інтерфейсу",
+	"text.trender.style.MODERN": "Сучасний",
+	"text.trender.style.MODERN_DARK": "Сучасний темний",
+	"text.trender.style.VANILLA_MODERN": "Сучасний стандарт",
+	"text.trender.style.VANILLA_OLD": "Старий стандарт",
+	"text.trender.style.tooltip": "Змінює стиль інтерфейсу для всіх модів tr7zw.",
+	"text.trender.tab.general_options": "Налаштування"
+}

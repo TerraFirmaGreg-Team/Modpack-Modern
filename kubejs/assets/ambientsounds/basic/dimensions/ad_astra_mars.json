@@ -6,6 +6,13 @@
 	"biome-selector": {
 		"always": true
 	},
+	"rain": false,
+	"storm": false,
+	"surface-selector": {
+		"regions": [
+			"surface"
+		]
+	},
 	"regions": [
 		{
 			"name": "wind",

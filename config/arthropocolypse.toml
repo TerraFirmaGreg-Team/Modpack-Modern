@@ -8,7 +8,7 @@
 	"Millipede Spawn Chance" = 1.0
 	#Max World Y Level to spawning
 	#Range: -64 ~ 128
-	"Millipede Spawn Height" = 200
+	"Millipede Spawn Height" = 128
 	#Spawn Weight, 0 to disable spawn
 	#Range: 0 ~ 1000
 	"Field Cricket Spawn Weight" = 100

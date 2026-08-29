@@ -1,6 +1,6 @@
-name: "[🪡]: Enhancement"
-description: "Provide supporting details for a feature in development"
-title: "[🪡]: "
+name: "[💎]: Enhancement"
+description: "Provide details for a gameplay enhancement or improvement."
+title: "[💎]: "
 labels: [ "Status: Backlog" ]
 projects: ["TerraFirmaGreg-Team/10"]
 type: "Enhancement"
@@ -9,8 +9,8 @@ body:
   - type: checkboxes
     id: exists
     attributes:
-      label: "Was this enhancement asked before?"
-      description: "Please search open/closed issues before submitting, as the issue may have already been reported/addressed."
+      label: "Was this enhancement suggested before?"
+      description: "Please search OPEN/CLOSED issues before submitting, as the enhancement may have already been reported/addressed."
       options:
         - label: "No, it was not."
           required: true
@@ -20,8 +20,8 @@ body:
     validations:
       required: true
     attributes:
-      label: What would you like to be added?
-      description: Feature requests are unlikely to make progress as issues.
+      label: What would you like to be added/ changed?
+      description: Enhancement requests should focus on gameplay improvements or additions that can be achieved without completely new features. Ex. Rebalancing the energy cost of a recipe.
 
   - type: textarea
     id: rationale
@@ -32,4 +32,4 @@ body:
 
   - type: markdown
     attributes:
-      value: "Thanks for taking the time to fill out this request enhancement."
+      value: "Thanks for taking the time to fill out this enhancement request."

@@ -41,7 +41,7 @@ function registerTFGMarsIodineRecipes(event) {
 		.EUt(GTValues.VA[GTValues.LV])
 
 	event.recipes.firmalife.vat()
-		.inputs('10x tfg:dry_ice', Fluid.of('tfg:crimsene', 200))
+		.inputs('tfg:dry_ice', Fluid.of('tfg:crimsene', 200))
 		.outputItem('tfg:crimsene_gem')
 		.length(300)
 		.temperature(100)
@@ -55,7 +55,7 @@ function registerTFGMarsIodineRecipes(event) {
 		.EUt(GTValues.VA[GTValues.LV])
 
 	event.recipes.firmalife.vat()
-		.inputs('10x tfg:dry_ice', Fluid.of('tfg:warpane', 200))
+		.inputs('tfg:dry_ice', Fluid.of('tfg:warpane', 200))
 		.outputItem('tfg:warpane_gem')
 		.length(300)
 		.temperature(100)
@@ -102,6 +102,15 @@ function registerTFGMarsIodineRecipes(event) {
 			Fluid.of('gtceu:hydrogen', 1000))
 		.itemOutputs('#forge:dusts/iodine')
 		.outputFluids(Fluid.of('gtceu:methane', 1000))
+		.duration(20 * 5)
+		.EUt(GTValues.VA[GTValues.MV])
+
+	event.recipes.gtceu.chemical_reactor('tfg:iodomethane_synthesis')
+		.itemInputs('#forge:dusts/iodine')
+		.inputFluids(Fluid.of('gtceu:methane', 1000))
+		.outputFluids(
+			Fluid.of('tfg:iodomethane', 1000),
+			Fluid.of('gtceu:hydrogen', 1000))
 		.duration(20 * 5)
 		.EUt(GTValues.VA[GTValues.MV])
 

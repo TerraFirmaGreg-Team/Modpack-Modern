@@ -5,16 +5,22 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "那么，已经进入了铁器时代后，你想升级吗？好吧，划艇就是为你量身定制的。它有三个座位，可以容纳3名玩家，或者最多容纳2只动物，包括马！和往常一样，您也可以用一些容器更换座椅（驾驶员座椅除外）。您也可以在船尾放置另外两个容器。"
+      "text": "那么，你已经进入青铜时代，想要升级一下？划艇正是为你准备的。它有三个座位，可以容纳三名玩家，或最多两只动物，包括马！与以往一样，你也可以用你选择的容器替换座位（驾驶员座位除外）。你还可以在船尾放置两个额外的容器。"
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "firmaciv:textures/gui/book/rowboat_isometric.png"
+      ]
     },
     {
       "type": "patchouli:text",
-      "text": "在划艇中，与其他船只不同，当你驾驶船只时，你会凡着做。这将能让你借力，以更方便的使用桨！当然，你可以用第一人称视角驾驶划艇，但你肯定会认为第三人称看着更舒服。"
+      "text": "与其他船不同，你驾驶划艇时是反着坐的。这给你带来了机械优势，让你能真正发挥臂力划桨！当然，你可以以第一人称视角驾驶，但如果你以第三人称视角面对自己，可能会觉得更直观。"
     },
     {
       "type": "patchouli:crafting",
       "recipe": "firmaciv:crafting/watercraft_frame_angled",
-      "text": "要建造一艘划艇，你需要先造出造船厂的脚手架。脚手架可以让你在建造时将船的材料维持在原位而不掉下来。$(br2)然后，将它们面朝内放置在一个2乘3的区域中。"
+      "text": "要建造划艇，你需要先制作造船工脚手架。这些脚手架可以让你在建造过程中固定船的材料。$(br2)然后，将它们面朝内放置在一个2x3的区域中。"
     },
     {
       "type": "patchouli:multiblock",
@@ -41,13 +47,12 @@
         }
       },
       "name": "划艇脚手架",
-      "text": "造船者为建造划艇而设置的脚手架。",
+      "text": "按此排列的造船工脚手架，用于建造划艇。",
       "enable_visualize": true
     },
-
     {
       "type": "patchouli:text",
-      "text": "下一步，你需要放上合适的结实的硬木木板:$(br2)金合欢木$(br)梣木$(br)山杨木$(br)桦木$(br)黑木$(br)栗木$(br)山胡桃木$(br)枫木$(br)橡木$(br)红木$(br)悬铃木"
+      "text": "接下来，你需要添加足够坚固的硬木板材：$(br2)金合欢木$(br)黑梣木$(br)山杨木$(br)桦木$(br)黑檀木$(br)栗木$(br)山核桃木$(br)枫木$(br)橡木$(br)蔷薇木$(br)悬铃木"
     },
     {
       "type": "patchouli:multiblock",
@@ -73,8 +78,8 @@
           "6": "firmaciv:wood/watercraft_frame/angled/hickory[facing=east,shape=inner_right,frame_processed=3]"
         }
       },
-      "name": "搭建划艇的脚手架",
-      "text": "每个脚手架上放了四块木板。",
+      "name": "划艇脚手架",
+      "text": "每个脚手架已添加四块木板。",
       "enable_visualize": true
     },
     {
@@ -101,8 +106,8 @@
           "6": "firmaciv:wood/watercraft_frame/angled/hickory[facing=east,shape=inner_right,frame_processed=7]"
         }
       },
-      "name": "搭建划艇的脚手架",
-      "text": "在你的副手中拿一把锤子，在每个脚手架上打进四个铜螺栓。铜螺栓是用铜棒锻造而成的。",
+      "name": "划艇脚手架",
+      "text": "在副手手持锤子的情况下，为每个脚手架添加四个铜螺栓。铜螺栓由铜锭锻造而成。",
       "enable_visualize": true
     },
     {
@@ -131,22 +136,14 @@
           "R": "alekiships:oarlock[facing=south]"
         }
       },
-      "name": "搭建划艇的脚手架",
-      "text": "最后，在划艇的正中央放入桨架。",
+      "name": "划艇脚手架",
+      "text": "最后，在船中央添加桨架。这些桨架由任何青铜双锭锻造而成。",
       "enable_visualize": true
     },
     {
       "type": "patchouli:crafting",
-      "recipe2": "firmaciv:crafting/oar",
-      "text": "现在，用$(item)$(k:key.use)$()把桨安装到划艇上，划艇就可以下水啦！"
-    },
-    {
-      "type": "patchouli:image",
-      "title": "划艇",
-      "images": [
-        "firmaciv:textures/gui/book/rowboat_isometric.png"
-      ],
-      "text": "一只建造完成的划艇。"
+      "recipe2": "alekiships:crafting/oar",
+      "text": "现在，使用$(item)$(k:key.use)$()添加船桨，你就可以出发了！"
     }
   ],
   "read_by_default": true,

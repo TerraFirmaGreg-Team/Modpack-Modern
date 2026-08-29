@@ -38,7 +38,6 @@ const materials = [
     {materialName: 'quartzite_tfc', nameColor: '#b8bab8', itemName: 'gtceu:exquisite_quartzite_gem', indexNumber: 0.186},
     {materialName: 'realgar_tfc', nameColor: '#c22e28', itemName: 'gtceu:exquisite_realgar_gem', indexNumber: 0.187},
     {materialName: 'malachite_tfc', nameColor: '#00b789', itemName: 'gtceu:exquisite_malachite_gem', indexNumber: 0.188},
-    {materialName: 'glass_tfc', nameColor: '#c2c2c6', itemName: 'gtceu:exquisite_glass_gem', indexNumber: 0.189},
     {materialName: 'olivine_tfc', nameColor: '#7fad03', itemName: 'gtceu:exquisite_olivine_gem', indexNumber: 0.171},
     {materialName: 'opal_tfc', nameColor: '#bdadb6', itemName: 'gtceu:exquisite_opal_gem', indexNumber: 0.172},
     {materialName: 'amethyst_tfc', nameColor: '#9b78ba', itemName: 'gtceu:exquisite_amethyst_gem', indexNumber: 0.173},

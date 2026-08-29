@@ -5,97 +5,67 @@
  * @param {Internal.RecipesEventJS} event 
  */
 function registerTFGCollapseRecipes(event) {
+	
+	const SHAPES = ['stair', 'slab', 'wall'];
 
-	// #region Nether
-	event.recipes.tfc.collapse('minecraft:cobbled_deepslate', 'minecraft:deepslate')
-	event.recipes.tfc.collapse('minecraft:cobbled_deepslate', 'tfg:rock/hardened_deepslate')
-	event.recipes.tfc.collapse('tfg:rock/cobble_blackstone', 'minecraft:blackstone')
-	event.recipes.tfc.collapse('tfg:rock/cobble_blackstone', 'tfg:rock/hardened_blackstone')
-	event.recipes.tfc.collapse('tfg:rock/cobble_dripstone', 'minecraft:dripstone_block')
-	event.recipes.tfc.collapse('tfg:rock/cobble_dripstone', 'tfg:rock/hardened_dripstone')
-	event.recipes.tfc.collapse('tfg:rock/cobble_crackrack', 'beneath:crackrack')
+	// Rocks
+	for (let [rockId, rock] of Object.entries(global.BIG_ROCK_TABLE)) {
+
+		if (rock.cobble != null) {
+			if (rock.raw != null && rock.collapsible) {
+				event.recipes.tfc.collapse(rock.cobble.block, rock.raw.block);
+
+				SHAPES.forEach(shape => {
+					if (rock.raw[shape] != null) {
+						event.recipes.tfc.collapse(rock.cobble[shape], rock.raw[shape]);
+					}
+				})
+			}
+			if (rock.hardened != null) {
+				event.recipes.tfc.collapse(rock.cobble.block, rock.hardened);
+			}
+			if (rock.polished != null && rock.collapsible) {
+				event.recipes.tfc.collapse(rock.cobble.block, rock.polished.block);
+
+				SHAPES.forEach(shape => {
+					if (rock.polished[shape] != null) {
+						event.recipes.tfc.collapse(rock.cobble[shape], rock.polished[shape]);
+					}
+				})
+			}
+
+			if (Ingredient.of(`#forge:ores_in_ground/${rockId}`).itemIds.toArray().length > 0) {
+				event.recipes.tfc.collapse(rock.cobble.block, `#forge:ores_in_ground/${rockId}`)
+			}
+
+			event.recipes.tfc.landslide(rock.cobble.block, rock.cobble.block);
+
+			if (rock.cobble.mossy != null) {
+				event.recipes.tfc.landslide(rock.cobble.mossy.block, rock.cobble.mossy.block);
+			}
+		}
+
+		if (rock.gravel != null) {
+			event.recipes.tfc.landslide(rock.gravel, rock.gravel);
+		}
+	}
+
+	event.recipes.tfc.collapse('#tfg:rock_slabs').id('tfg:collapse/rock_slabs')
+	event.recipes.tfc.collapse('#tfg:rock_stairs').id('tfg:collapse/rock_stairs')
+	event.recipes.tfc.collapse('#tfg:rock_walls').id('tfg:collapse/rock_walls')
+
+	event.recipes.tfc.collapse('tfg:carbonate_hornfels').id('tfg:collapse/carbonate_hornfels')
+	event.recipes.tfc.collapse('tfg:mafic_hornfels').id('tfg:collapse/mafic_hornfels')
+	event.recipes.tfc.collapse('tfg:pelitic_hornfels').id('tfg:collapse/pelitic_hornfels')
+
+	// Nether
 	event.recipes.tfc.collapse('tfc:rock/cobble/basalt', 'minecraft:basalt')
-
-	event.recipes.tfc.collapse('minecraft:cobbled_deepslate', '#forge:ores_in_ground/deepslate')
-	event.recipes.tfc.collapse('tfg:rock/cobble_blackstone', '#forge:ores_in_ground/pyroxenite')
-	event.recipes.tfc.collapse('tfg:rock/cobble_dripstone', '#forge:ores_in_ground/dripstone')
-		
 	event.recipes.tfc.landslide('tfg:ash_pile', 'tfg:ash_pile')
-	event.recipes.tfc.landslide('minecraft:cobbled_deepslate', 'minecraft:cobbled_deepslate')
-	event.recipes.tfc.landslide('tfg:rock/mossy_cobble_deepslate', 'tfg:rock/mossy_cobble_deepslate')
-	event.recipes.tfc.landslide('tfg:rock/cobble_blackstone', 'tfg:rock/cobble_blackstone')
-	event.recipes.tfc.landslide('tfg:rock/mossy_cobble_blackstone', 'tfg:rock/mossy_cobble_blackstone')
-	event.recipes.tfc.landslide('tfg:rock/cobble_dripstone', 'tfg:rock/cobble_dripstone')
-	event.recipes.tfc.landslide('tfg:rock/mossy_cobble_dripstone', 'tfg:rock/mossy_cobble_dripstone')
-	event.recipes.tfc.landslide('tfg:rock/cobble_crackrack', 'tfg:rock/cobble_crackrack')
-	event.recipes.tfc.landslide('tfg:rock/mossy_cobble_crackrack', 'tfg:rock/mossy_cobble_crackrack')
 
-	event.recipes.tfc.landslide('tfg:rock/gravel_deepslate', 'tfg:rock/gravel_deepslate')
-	event.recipes.tfc.landslide('tfg:rock/gravel_blackstone', 'tfg:rock/gravel_blackstone')
-	event.recipes.tfc.landslide('tfg:rock/gravel_dripstone', 'tfg:rock/gravel_dripstone')
-	event.recipes.tfc.landslide('tfg:rock/gravel_crackrack', 'tfg:rock/gravel_crackrack')
-
-	// #endregion Nether
-
-	// #region Space
-	event.recipes.tfc.collapse('ad_astra:moon_cobblestone', 'ad_astra:moon_stone')
-	event.recipes.tfc.collapse('ad_astra:moon_cobblestone', 'tfg:rock/hardened_moon_stone')
-	event.recipes.tfc.landslide('ad_astra:moon_cobblestone', 'ad_astra:moon_cobblestone')
-	event.recipes.tfc.collapse('ad_astra:moon_cobblestone', '#forge:ores_in_ground/moon_stone')
-	event.recipes.tfc.landslide('tfg:rock/mossy_cobble_moon', 'tfg:rock/mossy_cobble_moon')
-	event.recipes.tfc.landslide('tfg:rock/gravel_moon', 'tfg:rock/gravel_moon')
-
-	event.recipes.tfc.collapse('ad_astra:moon_deepslate', 'ad_astra:moon_deepslate')
-	event.recipes.tfc.collapse('ad_astra:moon_deepslate', 'tfg:rock/hardened_moon_deepslate')
-	event.recipes.tfc.collapse('ad_astra:moon_deepslate', '#forge:ores_in_ground/moon_deepslate')
-	event.recipes.tfc.landslide('tfg:rock/cobble_moon_deepslate', 'tfg:rock/cobble_moon_deepslate')
-	event.recipes.tfc.landslide('tfg:rock/mossy_cobble_moon_deepslate', 'tfg:rock/mossy_cobble_moon_deepslate')
-	event.recipes.tfc.landslide('tfg:rock/gravel_moon_deepslate', 'tfg:rock/gravel_moon_deepslate')
-
+	// Space
 	event.recipes.tfc.landslide('ad_astra:moon_sand', 'ad_astra:moon_sand')
-
-	event.recipes.tfc.collapse('ad_astra:glacio_cobblestone', 'ad_astra:glacio_stone')
-	event.recipes.tfc.collapse('ad_astra:glacio_cobblestone', 'tfg:rock/hardened_glacio_stone')
-	event.recipes.tfc.collapse('ad_astra:glacio_cobblestone', '#forge:ores_in_ground/glacio_stone')
-	event.recipes.tfc.landslide('ad_astra:glacio_cobblestone', 'ad_astra:glacio_cobblestone')
-	event.recipes.tfc.landslide('tfg:rock/mossy_cobble_glacio', 'tfg:rock/mossy_cobble_glacio')
-	event.recipes.tfc.landslide('tfg:rock/gravel_glacio', 'tfg:rock/gravel_glacio')
-
-	event.recipes.tfc.collapse('ad_astra:mars_cobblestone', 'ad_astra:mars_stone')
-	event.recipes.tfc.collapse('ad_astra:mars_cobblestone', 'tfg:rock/hardened_mars_stone')
-	event.recipes.tfc.collapse('ad_astra:mars_cobblestone', '#forge:ores_in_ground/mars_stone')
-	event.recipes.tfc.landslide('ad_astra:mars_cobblestone', 'ad_astra:mars_cobblestone')
-	event.recipes.tfc.landslide('tfg:rock/mossy_cobble_mars', 'tfg:rock/mossy_cobble_mars')
-	event.recipes.tfc.landslide('tfg:rock/gravel_mars', 'tfg:rock/gravel_mars')
 	event.recipes.tfc.landslide('ad_astra:mars_sand', 'ad_astra:mars_sand')
-
-	event.recipes.tfc.collapse('ad_astra:venus_cobblestone', 'ad_astra:venus_stone')
-	event.recipes.tfc.collapse('ad_astra:venus_cobblestone', 'tfg:rock/hardened_venus_stone')
-	event.recipes.tfc.collapse('ad_astra:venus_cobblestone', '#forge:ores_in_ground/venus_stone')
-	event.recipes.tfc.landslide('ad_astra:venus_cobblestone', 'ad_astra:venus_cobblestone')
-	event.recipes.tfc.landslide('tfg:rock/mossy_cobble_venus', 'tfg:rock/mossy_cobble_venus')
-	event.recipes.tfc.landslide('tfg:rock/gravel_venus', 'tfg:rock/gravel_venus')
 	event.recipes.tfc.landslide('ad_astra:venus_sand', 'ad_astra:venus_sand')
-
-	event.recipes.tfc.collapse('ad_astra:mercury_cobblestone', 'ad_astra:mercury_stone')
-	event.recipes.tfc.collapse('ad_astra:mercury_cobblestone', 'tfg:rock/hardened_mercury_stone')
-	event.recipes.tfc.collapse('ad_astra:mercury_cobblestone', '#forge:ores_in_ground/mercury_stone')
-	event.recipes.tfc.landslide('ad_astra:mercury_cobblestone', 'ad_astra:mercury_cobblestone')
-	event.recipes.tfc.landslide('tfg:rock/mossy_cobble_mercury', 'tfg:rock/mossy_cobble_mercury')
-	event.recipes.tfc.landslide('tfg:rock/gravel_mercury', 'tfg:rock/gravel_mercury')
-
-	event.recipes.tfc.collapse('tfg:rock/cobble_permafrost', 'ad_astra:permafrost')
-	event.recipes.tfc.collapse('tfg:rock/cobble_permafrost', '#forge:ores_in_ground/permafrost')
-	event.recipes.tfc.landslide('tfg:rock/cobble_permafrost', 'tfg:rock/cobble_permafrost')
-	event.recipes.tfc.landslide('tfg:rock/mossy_cobble_permafrost', 'tfg:rock/mossy_cobble_permafrost')
-	event.recipes.tfc.landslide('tfg:rock/gravel_permafrost', 'tfg:rock/gravel_permafrost')	
-
-	event.recipes.tfc.collapse('gtceu:red_granite_cobblestone', 'gtceu:red_granite')
-	event.recipes.tfc.collapse('gtceu:red_granite_cobblestone', 'tfg:rock/hardened_red_granite')
-	event.recipes.tfc.collapse('gtceu:red_granite_cobblestone', '#forge:ores_in_ground/red_granite')
-	event.recipes.tfc.landslide('gtceu:red_granite_cobblestone', 'gtceu:red_granite_cobblestone')
-	event.recipes.tfc.landslide('tfg:rock/mossy_cobble_red_granite', 'tfg:rock/mossy_cobble_red_granite')
-	event.recipes.tfc.landslide('tfg:rock/gravel_red_granite', 'tfg:rock/gravel_red_granite')
 	event.recipes.tfc.landslide('minecraft:red_sand', 'minecraft:red_sand')
 	
 	event.recipes.tfc.landslide('tfg:grass/mars_dirt', 'tfg:grass/mars_dirt')
@@ -119,15 +89,36 @@ function registerTFGCollapseRecipes(event) {
 	event.recipes.tfc.landslide('tfg:sand/fluorapatite/orange', 'tfg:sand/fluorapatite/orange')
 	event.recipes.tfc.landslide('tfg:sand/fluorapatite/white', 'tfg:sand/fluorapatite/white')
 	event.recipes.tfc.landslide('tfg:sand/fluorapatite/yellow', 'tfg:sand/fluorapatite/yellow')
-	// #endregion
+	
+	// Dirt
+	event.recipes.tfc.landslide('tfg:coarse_dirt/sandy_loam', 'tfg:coarse_dirt/sandy_loam')
+	event.recipes.tfc.landslide('tfg:coarse_dirt/silty_loam', 'tfg:coarse_dirt/silty_loam')
+	event.recipes.tfc.landslide('tfg:coarse_dirt/silt', 'tfg:coarse_dirt/silt')
+	event.recipes.tfc.landslide('tfg:coarse_dirt/loam', 'tfg:coarse_dirt/loam')
+	
+	event.recipes.tfc.landslide('tfc:dirt/sandy_loam', 'tfg:duff/sandy_loam')
+	event.recipes.tfc.landslide('tfc:dirt/silty_loam', 'tfg:duff/silty_loam')
+	event.recipes.tfc.landslide('tfc:dirt/silt', 'tfg:duff/silt')
+	event.recipes.tfc.landslide('tfc:dirt/loam', 'tfg:duff/loam')
 
-	// #region Other
-	event.recipes.tfc.collapse('#tfg:rock_slabs').id('tfg:collapse/rock_slabs')
-	event.recipes.tfc.collapse('#tfg:rock_stairs').id('tfg:collapse/rock_stairs')
-	event.recipes.tfc.collapse('#tfg:rock_walls').id('tfg:collapse/rock_walls')
+	global.TFG_MUD_TYPES.forEach(dirt => {
+		event.recipes.tfc.landslide(`tfg:dirt/${dirt}`, `tfg:dirt/${dirt}`)
+		event.recipes.tfc.landslide(`tfg:dirt/${dirt}`, `tfg:grass/${dirt}`)
+		event.recipes.tfc.landslide(`tfg:dirt/${dirt}`, `tfg:duff/${dirt}`)
+		event.recipes.tfc.landslide(`tfg:mud/${dirt}`, `tfg:mud/${dirt}`)
+		event.recipes.tfc.landslide(`tfg:dirt/${dirt}`, `tfg:farmland/${dirt}`)
+		event.recipes.tfc.landslide(`tfg:dirt/${dirt}`, `tfg:grass_path/${dirt}`)
+		event.recipes.tfc.landslide(`tfg:clay/${dirt}`, `tfg:clay/${dirt}`)
+		event.recipes.tfc.landslide(`tfg:clay/${dirt}`, `tfg:clay_grass/${dirt}`)
+		event.recipes.tfc.landslide(`tfg:coarse_dirt/${dirt}`, `tfg:coarse_dirt/${dirt}`)
+		event.recipes.tfc.landslide(`tfg:tamped/dirt/${dirt}`, `tfg:tamped/dirt/${dirt}`)
+		event.recipes.tfc.landslide(`tfg:tamped/mud/${dirt}`, `tfg:tamped/mud/${dirt}`)
+	})
 
-	event.recipes.tfc.collapse('minecraft:cobblestone', 'minecraft:stone')
-	event.recipes.tfc.landslide('minecraft:cobblestone', 'minecraft:cobblestone')
-	event.recipes.tfc.landslide('minecraft:mossy_cobblestone', 'minecraft:mossy_cobblestone')
-	// #endregion
+	// Other Ores
+	event.recipes.tfc.collapse("#forge:raw_ore_blocks");
+
+	global.SAND_COLORS.forEach(color => {
+		event.recipes.tfc.landslide(`tfc:sand/${color}`, `#forge:ores_in_ground/${color}_sand`)
+	});
 }

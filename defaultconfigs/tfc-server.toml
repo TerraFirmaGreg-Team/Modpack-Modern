@@ -6,7 +6,7 @@ familiarityDecayLimit = 0.3
 [general]
 	#
 	# Enable nether portal creation
-	enableNetherPortals = false
+	enableNetherPortals = true
 	#
 	# Forces a number of game rules to specific values.
 	#   naturalRegeneration = false (Health regen is much slower and not tied to extra saturation)
@@ -139,7 +139,7 @@ familiarityDecayLimit = 0.3
 		#
 		# Number of ticks required for a candle to burn out (1000 = 1 in game hour = 50 seconds), default is 264 hours. Set to -1 to disable candle burnout.
 		#Range: > -1
-		candleTicks = 264000
+		candleTicks = 744000
 
 	[blocks.dryingBricks]
 		#
@@ -658,7 +658,7 @@ familiarityDecayLimit = 0.3
 		#
 		# A multiplier for how fast items cool. Higher = faster.
 		#Range: 0.0 ~ 1.7976931348623157E308
-		itemCoolingModifier = 0.8
+		itemCoolingModifier = 0.5
 		#
 		# Should hot item entities cool off when in contact with blocks like water or snow?
 		coolHotItemEntities = true

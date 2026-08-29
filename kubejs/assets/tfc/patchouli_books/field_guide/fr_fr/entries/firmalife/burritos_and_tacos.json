@@ -1,0 +1,37 @@
+{
+  "name": "Burritos et Tacos",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:textures/item/food/burrito.png",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "La fabrication de $(thing)tortillas$() est un processus long mais gratifiant. Commencez par faire bouillir du $(thing)Grain de maïs$() dans un pot d'$(thing)Eau de chaux$(), puis scellez le produit dans un tonneau d'eau pour faire du $(thing)Nixtamal$(). Broyez-le ensuite dans une $(thing)meule$() pour faire de la $(thing)Farine de masa$()"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Combiner la farine de masa avec un seau d'eau donne de la $(thing)Masa$(), la pâte à tortilla. Celle-ci peut être cuite pour faire une $(thing)Tortilla de maïs$(). Placer une tortilla dans un four donne une $(thing)Coquille de tacos$()."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/tortilla_chips",
+      "recipe2": "firmalife:crafting/nachos"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfg:crafting/salsa",
+      "text": "De la tomate, du sel, de la coriandre avec un couteau donne de la $(thing)Salsa$()."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/burrito",
+      "text": "Un $(thing)burrito$() est fabriqué à partir de viande cuite, $(l:firmalife/pizza#shredded_cheese)fromage râpé$(), $(l:firmalife/pizza#tomato_sauce)sauce tomate$(), légume et Salsa."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/taco",
+      "text": "Un $(thing)Tacos$() est fabriqué à partir des mêmes garnitures mais avec une $(thing)Coquille de tacos$()."
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 28
+}

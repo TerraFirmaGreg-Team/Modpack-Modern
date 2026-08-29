@@ -1,23 +1,6 @@
 "use strict";
 
 function registerTFGVenusItemTags(event) {
-	event.add('tfg:leucitite_blocks', 'betterend:flavolite')
-	event.add('tfg:leucitite_blocks', 'betterend:flavolite_bricks')
-	event.add('tfg:leucitite_blocks', 'betterend:flavolite_pillar')
-	event.add('tfg:leucitite_blocks', 'betterend:flavolite_polished')
-	event.add('tfg:leucitite_blocks', 'betterend:flavolite_tiles')
-
-	event.add('tfg:lamproite_blocks', 'betterend:sandy_jadestone')
-	event.add('tfg:lamproite_blocks', 'betterend:sandy_jadestone_bricks')
-	event.add('tfg:lamproite_blocks', 'betterend:sandy_jadestone_pillar')
-	event.add('tfg:lamproite_blocks', 'betterend:sandy_jadestone_polished')
-	event.add('tfg:lamproite_blocks', 'betterend:sandy_jadestone_tiles')
-
-	event.add('tfg:ignimbrite_blocks', 'betterend:sulphuric_rock')
-	event.add('tfg:ignimbrite_blocks', 'betterend:sulphuric_rock_bricks')
-	event.add('tfg:ignimbrite_blocks', 'betterend:sulphuric_rock_pillar')
-	event.add('tfg:ignimbrite_blocks', 'betterend:sulphuric_rock_polished')
-	event.add('tfg:ignimbrite_blocks', 'betterend:sulphuric_rock_tiles')
 }
 
 
@@ -78,6 +61,12 @@ function registerTFGVenusBlockTags(event) {
 	event.add('ad_astra:venus_stone_replaceables', 'tfc:rock/raw/quartzite')
 	event.add('ad_astra:venus_stone_replaceables', 'tfc:rock/hardened/quartzite')
 	event.add('ad_astra:venus_stone_replaceables', 'tfc:rock/gravel/quartzite')
+	event.add('ad_astra:venus_stone_replaceables', 'betterend:flavolite')
+	event.add('ad_astra:venus_stone_replaceables', 'tfg:rock/hardened_flavolite')
+	event.add('ad_astra:venus_stone_replaceables', 'tfg:rock/gravel_flavolite')
+	event.add('ad_astra:venus_stone_replaceables', 'betterend:sandy_jadestone')
+	event.add('ad_astra:venus_stone_replaceables', 'tfg:rock/hardened_sandy_jadestone')
+	event.add('ad_astra:venus_stone_replaceables', 'tfg:rock/gravel_sandy_jadestone')
 	event.add('ad_astra:venus_stone_replaceables', 'tfg:sand/fluorapatite/blue')
 	event.add('ad_astra:venus_stone_replaceables', 'tfg:sandstone/raw/fluorapatite/blue')
 	event.add('ad_astra:venus_stone_replaceables', 'tfg:sand/fluorapatite/green')
@@ -96,6 +85,8 @@ function registerTFGVenusBlockTags(event) {
 	event.add('ad_astra:venus_stone_replaceables', 'tfc:raw_sandstone/black')
 	event.add('ad_astra:venus_stone_replaceables', 'create:scoria')
 	event.add('ad_astra:venus_stone_replaceables', 'create:scorchia')
+	event.add('ad_astra:venus_stone_replaceables', 'ad_astra:conglomerate')
+	event.add('ad_astra:venus_stone_replaceables', 'tfg:rock/halite')
 	event.add('ad_astra:venus_stone_replaceables', 'minecraft:tuff')
 	event.add('ad_astra:venus_stone_replaceables', 'minecraft:basalt')
 	event.add('ad_astra:venus_stone_replaceables', 'minecraft:smooth_basalt')
@@ -108,16 +99,17 @@ function registerTFGVenusBlockTags(event) {
 	event.add('ad_astra:venus_stone_replaceables', 'betterend:lucernia_bark')
 
 	event.add('tfc:can_carve', '#ad_astra:venus_stone_replaceables')
-
-    event.add("tfc:monster_spawns_on", "create:scorchia");
-    event.add("tfc:monster_spawns_on", "minecraft:basalt");
-    event.add("tfc:monster_spawns_on", "minecraft:smooth_basalt");
+	event.add('minecraft:animals_spawnable_on', '#ad_astra:venus_stone_replaceables')
 
 	event.add("minecraft:strider_warm_blocks", "create:scorchia");
+	event.add("minecraft:strider_warm_blocks", "tfg:rock/hardened_scorchia");
 	event.add("minecraft:strider_warm_blocks", "minecraft:basalt");
 	event.add("minecraft:strider_warm_blocks", "minecraft:smooth_basalt");
 	event.add("minecraft:strider_warm_blocks", 'tfc:rock/raw/basalt');
 	event.add("minecraft:strider_warm_blocks", 'tfc:rock/magma/basalt');
+	event.add("minecraft:strider_warm_blocks", 'tfc:rock/hardened/basalt');
+	event.add("minecraft:strider_warm_blocks", 'beneath:crackrack');
+	event.add("minecraft:strider_warm_blocks", '#minecraft:infiniburn_nether');
 
 	event.add('tfc:can_landslide', 'tfg:sand/fluorapatite/blue')
 	event.add('tfc:can_landslide', 'tfg:sand/fluorapatite/green')
@@ -146,7 +138,6 @@ function registerTFGVenusEntityTypeTags(event) {
 		"endermanoverhaul:savanna_enderman",
 		"endermanoverhaul:nether_wastes_enderman",
 		"ad_astra:sulfur_creeper",
-		'species:cliff_hanger',
 		'species:trooper',
 		'primitive_creatures:golem_2',
 		'arthropocolypse:scarab',
@@ -178,7 +169,6 @@ function registerTFGVenusEntityTypeTags(event) {
 	event.add('tfc:deals_slashing_damage', 'endermanoverhaul:desert_enderman')
 	event.add('tfc:deals_slashing_damage', 'endermanoverhaul:savanna_enderman')
 	event.add('tfc:deals_slashing_damage', 'endermanoverhaul:nether_wastes_enderman')
-	event.add('tfc:deals_slashing_damage', 'species:cliff_hanger')
 	event.add('tfc:deals_crushing_damage', 'minecraft:magma_cube')
 	event.add('tfc:deals_crushing_damage', 'primitive_creatures:golem_2')
 	event.add('tfc:deals_piercing_damage', 'arthropocolypse:scarab')

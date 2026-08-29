@@ -4,82 +4,178 @@
   "config": {
     "height": 60,
     "radius": 10,
-    "min_skew": 6,
-    "max_skew": 18,
-    "min_slant": 0,
-    "max_slant": 4,
+    "min_skew": 7,
+    "max_skew": 20,
+    "min_slant": 2,
+    "max_slant": 5,
     "sign": 0,
-    "rarity": 140,
-    "density": 0.35,
-    "min_y": 20,
-    "max_y": 120,
+    "rarity": 170,
+    "density": 0.28,
+    "min_y": 10,
+    "max_y": 70,
     "random_name": "normal_tarkianite",
+    "project": false,
+    "project_offset": false,
+    "near_lava": false,
     "blocks": [
       {
         "replace": [
-          "tfc:rock/raw/gabbro"
+          "tfc:rock/raw/rhyolite"
         ],
         "with": [
           {
-            "block": "gtceu:gabbro_tarkianite_ore",
+            "block": "gtceu:rhyolite_tarkianite_ore",
             "weight": 35
           },
           {
-            "block": "gtceu:gabbro_oilsands_ore",
-            "weight": 35
+            "block": "gtceu:raw_tarkianite_block",
+            "weight": 1
           },
           {
-            "block": "gtceu:gabbro_borax_ore",
+            "block": "gtceu:rhyolite_borax_ore",
             "weight": 20
           },
           {
-            "block": "gtceu:gabbro_trona_ore",
+            "block": "gtceu:rhyolite_trona_ore",
             "weight": 10
           }
         ]
       },
       {
         "replace": [
-          "tfc:rock/raw/granite"
+          "tfc:rock/raw/basalt",
+          "minecraft:basalt"
         ],
         "with": [
           {
-            "block": "gtceu:granite_tarkianite_ore",
+            "block": "gtceu:basalt_tarkianite_ore",
             "weight": 35
           },
           {
-            "block": "gtceu:granite_oilsands_ore",
-            "weight": 35
+            "block": "gtceu:raw_tarkianite_block",
+            "weight": 1
           },
           {
-            "block": "gtceu:granite_borax_ore",
+            "block": "gtceu:basalt_borax_ore",
             "weight": 20
           },
           {
-            "block": "gtceu:granite_trona_ore",
+            "block": "gtceu:basalt_trona_ore",
             "weight": 10
           }
         ]
       },
       {
         "replace": [
-          "tfc:rock/raw/diorite"
+          "tfc:rock/raw/andesite"
         ],
         "with": [
           {
-            "block": "gtceu:diorite_tarkianite_ore",
+            "block": "gtceu:andesite_tarkianite_ore",
             "weight": 35
           },
           {
-            "block": "gtceu:diorite_oilsands_ore",
-            "weight": 35
+            "block": "gtceu:raw_tarkianite_block",
+            "weight": 1
           },
           {
-            "block": "gtceu:diorite_borax_ore",
+            "block": "gtceu:andesite_borax_ore",
             "weight": 20
           },
           {
-            "block": "gtceu:diorite_trona_ore",
+            "block": "gtceu:andesite_trona_ore",
+            "weight": 10
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/dacite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:dacite_tarkianite_ore",
+            "weight": 35
+          },
+          {
+            "block": "gtceu:raw_tarkianite_block",
+            "weight": 1
+          },
+          {
+            "block": "gtceu:dacite_borax_ore",
+            "weight": 20
+          },
+          {
+            "block": "gtceu:dacite_trona_ore",
+            "weight": 10
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/quartzite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:quartzite_tarkianite_ore",
+            "weight": 35
+          },
+          {
+            "block": "gtceu:raw_tarkianite_block",
+            "weight": 1
+          },
+          {
+            "block": "gtceu:quartzite_borax_ore",
+            "weight": 20
+          },
+          {
+            "block": "gtceu:quartzite_trona_ore",
+            "weight": 10
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/slate"
+        ],
+        "with": [
+          {
+            "block": "gtceu:slate_tarkianite_ore",
+            "weight": 35
+          },
+          {
+            "block": "gtceu:raw_tarkianite_block",
+            "weight": 1
+          },
+          {
+            "block": "gtceu:slate_borax_ore",
+            "weight": 20
+          },
+          {
+            "block": "gtceu:slate_trona_ore",
+            "weight": 10
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/phyllite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:phyllite_tarkianite_ore",
+            "weight": 35
+          },
+          {
+            "block": "gtceu:raw_tarkianite_block",
+            "weight": 1
+          },
+          {
+            "block": "gtceu:phyllite_borax_ore",
+            "weight": 20
+          },
+          {
+            "block": "gtceu:phyllite_trona_ore",
             "weight": 10
           }
         ]
@@ -94,8 +190,8 @@
             "weight": 35
           },
           {
-            "block": "gtceu:schist_oilsands_ore",
-            "weight": 35
+            "block": "gtceu:raw_tarkianite_block",
+            "weight": 1
           },
           {
             "block": "gtceu:schist_borax_ore",
@@ -117,8 +213,8 @@
             "weight": 35
           },
           {
-            "block": "gtceu:gneiss_oilsands_ore",
-            "weight": 35
+            "block": "gtceu:raw_tarkianite_block",
+            "weight": 1
           },
           {
             "block": "gtceu:gneiss_borax_ore",
@@ -126,75 +222,6 @@
           },
           {
             "block": "gtceu:gneiss_trona_ore",
-            "weight": 10
-          }
-        ]
-      },
-      {
-        "replace": [
-          "tfc:rock/raw/quartzite"
-        ],
-        "with": [
-          {
-            "block": "gtceu:quartzite_tarkianite_ore",
-            "weight": 35
-          },
-          {
-            "block": "gtceu:quartzite_oilsands_ore",
-            "weight": 35
-          },
-          {
-            "block": "gtceu:quartzite_borax_ore",
-            "weight": 20
-          },
-          {
-            "block": "gtceu:quartzite_trona_ore",
-            "weight": 10
-          }
-        ]
-      },
-      {
-        "replace": [
-          "tfc:rock/raw/phyllite"
-        ],
-        "with": [
-          {
-            "block": "gtceu:phyllite_tarkianite_ore",
-            "weight": 35
-          },
-          {
-            "block": "gtceu:phyllite_oilsands_ore",
-            "weight": 35
-          },
-          {
-            "block": "gtceu:phyllite_borax_ore",
-            "weight": 20
-          },
-          {
-            "block": "gtceu:phyllite_trona_ore",
-            "weight": 10
-          }
-        ]
-      },
-      {
-        "replace": [
-          "tfc:rock/raw/slate"
-        ],
-        "with": [
-          {
-            "block": "gtceu:slate_tarkianite_ore",
-            "weight": 35
-          },
-          {
-            "block": "gtceu:slate_oilsands_ore",
-            "weight": 35
-          },
-          {
-            "block": "gtceu:slate_borax_ore",
-            "weight": 20
-          },
-          {
-            "block": "gtceu:slate_trona_ore",
             "weight": 10
           }
         ]
@@ -209,8 +236,8 @@
             "weight": 35
           },
           {
-            "block": "gtceu:marble_oilsands_ore",
-            "weight": 35
+            "block": "gtceu:raw_tarkianite_block",
+            "weight": 1
           },
           {
             "block": "gtceu:marble_borax_ore",
@@ -221,274 +248,16 @@
             "weight": 10
           }
         ]
-      },
-      {
-        "replace": [
-          "tfc:rock/raw/dacite"
-        ],
-        "with": [
-          {
-            "block": "gtceu:dacite_tarkianite_ore",
-            "weight": 35
-          },
-          {
-            "block": "gtceu:dacite_oilsands_ore",
-            "weight": 35
-          },
-          {
-            "block": "gtceu:dacite_borax_ore",
-            "weight": 20
-          },
-          {
-            "block": "gtceu:dacite_trona_ore",
-            "weight": 10
-          }
-        ]
-      },
-      {
-        "replace": [
-          "tfc:rock/raw/rhyolite"
-        ],
-        "with": [
-          {
-            "block": "gtceu:rhyolite_tarkianite_ore",
-            "weight": 35
-          },
-          {
-            "block": "gtceu:rhyolite_oilsands_ore",
-            "weight": 35
-          },
-          {
-            "block": "gtceu:rhyolite_borax_ore",
-            "weight": 20
-          },
-          {
-            "block": "gtceu:rhyolite_trona_ore",
-            "weight": 10
-          }
-        ]
-      },
-      {
-        "replace": [
-          "tfc:rock/raw/andesite"
-        ],
-        "with": [
-          {
-            "block": "gtceu:andesite_tarkianite_ore",
-            "weight": 35
-          },
-          {
-            "block": "gtceu:andesite_oilsands_ore",
-            "weight": 35
-          },
-          {
-            "block": "gtceu:andesite_borax_ore",
-            "weight": 20
-          },
-          {
-            "block": "gtceu:andesite_trona_ore",
-            "weight": 10
-          }
-        ]
-      },
-      {
-        "replace": [
-          "tfc:rock/raw/basalt",
-          "minecraft:basalt"
-        ],
-        "with": [
-          {
-            "block": "gtceu:basalt_tarkianite_ore",
-            "weight": 35
-          },
-          {
-            "block": "gtceu:basalt_oilsands_ore",
-            "weight": 35
-          },
-          {
-            "block": "gtceu:basalt_borax_ore",
-            "weight": 20
-          },
-          {
-            "block": "gtceu:basalt_trona_ore",
-            "weight": 10
-          }
-        ]
-      },
-      {
-        "replace": [
-          "tfc:rock/raw/shale"
-        ],
-        "with": [
-          {
-            "block": "gtceu:shale_tarkianite_ore",
-            "weight": 35
-          },
-          {
-            "block": "gtceu:shale_oilsands_ore",
-            "weight": 35
-          },
-          {
-            "block": "gtceu:shale_borax_ore",
-            "weight": 20
-          },
-          {
-            "block": "gtceu:shale_trona_ore",
-            "weight": 10
-          }
-        ]
-      },
-      {
-        "replace": [
-          "tfc:rock/raw/claystone"
-        ],
-        "with": [
-          {
-            "block": "gtceu:claystone_tarkianite_ore",
-            "weight": 35
-          },
-          {
-            "block": "gtceu:claystone_oilsands_ore",
-            "weight": 35
-          },
-          {
-            "block": "gtceu:claystone_borax_ore",
-            "weight": 20
-          },
-          {
-            "block": "gtceu:claystone_trona_ore",
-            "weight": 10
-          }
-        ]
-      },
-      {
-        "replace": [
-          "tfc:rock/raw/limestone"
-        ],
-        "with": [
-          {
-            "block": "gtceu:limestone_tarkianite_ore",
-            "weight": 35
-          },
-          {
-            "block": "gtceu:limestone_oilsands_ore",
-            "weight": 35
-          },
-          {
-            "block": "gtceu:limestone_borax_ore",
-            "weight": 20
-          },
-          {
-            "block": "gtceu:limestone_trona_ore",
-            "weight": 10
-          }
-        ]
-      },
-      {
-        "replace": [
-          "tfc:rock/raw/conglomerate"
-        ],
-        "with": [
-          {
-            "block": "gtceu:conglomerate_tarkianite_ore",
-            "weight": 35
-          },
-          {
-            "block": "gtceu:conglomerate_oilsands_ore",
-            "weight": 35
-          },
-          {
-            "block": "gtceu:conglomerate_borax_ore",
-            "weight": 20
-          },
-          {
-            "block": "gtceu:conglomerate_trona_ore",
-            "weight": 10
-          }
-        ]
-      },
-      {
-        "replace": [
-          "tfc:rock/raw/dolomite"
-        ],
-        "with": [
-          {
-            "block": "gtceu:dolomite_tarkianite_ore",
-            "weight": 35
-          },
-          {
-            "block": "gtceu:dolomite_oilsands_ore",
-            "weight": 35
-          },
-          {
-            "block": "gtceu:dolomite_borax_ore",
-            "weight": 20
-          },
-          {
-            "block": "gtceu:dolomite_trona_ore",
-            "weight": 10
-          }
-        ]
-      },
-      {
-        "replace": [
-          "tfc:rock/raw/chert"
-        ],
-        "with": [
-          {
-            "block": "gtceu:chert_tarkianite_ore",
-            "weight": 35
-          },
-          {
-            "block": "gtceu:chert_oilsands_ore",
-            "weight": 35
-          },
-          {
-            "block": "gtceu:chert_borax_ore",
-            "weight": 20
-          },
-          {
-            "block": "gtceu:chert_trona_ore",
-            "weight": 10
-          }
-        ]
-      },
-      {
-        "replace": [
-          "tfc:rock/raw/chalk"
-        ],
-        "with": [
-          {
-            "block": "gtceu:chalk_tarkianite_ore",
-            "weight": 35
-          },
-          {
-            "block": "gtceu:chalk_oilsands_ore",
-            "weight": 35
-          },
-          {
-            "block": "gtceu:chalk_borax_ore",
-            "weight": 20
-          },
-          {
-            "block": "gtceu:chalk_trona_ore",
-            "weight": 10
-          }
-        ]
       }
     ],
     "indicator": {
-      "rarity": 15,
-      "depth": 20,
+      "rarity": 18,
+      "depth": 70,
       "underground_rarity": 40,
       "underground_count": 200,
       "blocks": [
         {
           "block": "gtceu:tarkianite_indicator",
-          "weight": 35
-        },
-        {
-          "block": "gtceu:oilsands_indicator",
           "weight": 35
         },
         {

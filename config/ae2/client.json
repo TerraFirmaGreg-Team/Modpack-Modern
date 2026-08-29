@@ -20,6 +20,8 @@
     "notifyForFinishedCraftingJobs": true,
     "fancyPatternTooltips_comment": "Show fancy tooltips for encoded patterns.",
     "fancyPatternTooltips": true,
+    "screenColor_comment": "Custom hex color code to apply to all AE2 screens.",
+    "screenColor": 16777215,
     "clearGridOnClose_comment": "Automatically clear the crafting/encoding grid when closing the terminal",
     "clearGridOnClose": false,
     "terminalMargin_comment": "The vertical margin to apply when sizing terminals. Used to make room for centered item mod search bars",

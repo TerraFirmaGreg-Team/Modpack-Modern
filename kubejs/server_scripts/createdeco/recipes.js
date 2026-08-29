@@ -34,47 +34,12 @@ const registerCreatedecoRecipes = (event) => {
 	//#endregion
 
 	//#region Recipe Removal
-	event.remove({ output: 'createdeco:zinc_sheet' })
-	event.remove({ output: 'createdeco:industrial_iron_sheet' })
-	event.remove({ output: 'createdeco:industrial_iron_nugget' })
-	event.remove({ output: 'createdeco:industrial_iron_ingot' })
-	event.remove({ id: 'createdeco:andesite_bars_overlay' })
-	event.remove({ id: 'createdeco:andesite_bars' })
-	event.remove({ id: 'createdeco:brass_bars_overlay' })
-	event.remove({ id: 'createdeco:brass_bars' })
-	event.remove({ id: 'createdeco:iron_bars_overlay' })
-	event.remove({ id: 'createdeco:copper_bars_overlay' })
-	event.remove({ id: 'createdeco:copper_bars' })
-	event.remove({ id: 'createdeco:industrial_iron_bars_overlay' })
-	event.remove({ id: 'createdeco:industrial_iron_bars' })
-	event.remove({ id: 'createdeco:zinc_bars_overlay' })
-	event.remove({ id: 'createdeco:zinc_bars' })
-	event.remove({ id: 'createdeco:industrial_iron_block' })
-	event.remove({ id: 'createdeco:netherite_ingot' })
+	
 	event.remove({ id: 'gtceu:assembler/bricks' })
-	event.remove({ type: 'minecraft:stonecutting', input: '#forge:storage_blocks/tin_alloy' })
-	event.remove({ type: 'minecraft:stonecutting', input: '#forge:storage_blocks/brass' })
-	event.remove({ type: 'minecraft:stonecutting', input: '#forge:storage_blocks/wrought_iron' })
-	event.remove({ type: 'minecraft:stonecutting', input: '#forge:storage_blocks/copper' })
-	event.remove({ type: 'minecraft:stonecutting', input: '#forge:storage_blocks/steel' })
-	event.remove({ type: 'minecraft:stonecutting', input: '#forge:storage_blocks/zinc' })
-	event.remove({ id: 'createdeco:andesite_sheet_metal' })
-	event.remove({ id: 'createdeco:brass_sheet_metal' })
-	event.remove({ id: 'createdeco:iron_sheet_metal' })
-	event.remove({ id: 'createdeco:copper_sheet_metal' })
-	event.remove({ id: 'createdeco:industrial_iron_sheet_metal' })
-	event.remove({ id: 'createdeco:zinc_sheet_metal' })
+	
 	//#endregion
 
 	//#region Lamp Recipes
-	const lampColors = ['blue', 'green', 'red', 'yellow'];
-	const lampTypes = ['zinc', 'brass', 'iron', 'industrial_iron', 'copper', 'andesite'];
-
-	lampTypes.forEach(type => {
-		lampColors.forEach(color => {
-			event.remove({ output: `createdeco:${color}_${type}_lamp` });
-		});
-	});
 
 	function lampRecipe(output, lampType, lampColor) {
 
@@ -121,7 +86,7 @@ const registerCreatedecoRecipes = (event) => {
 
 		// Create the shaped recipe
 
-		event.shaped(output, [
+		return event.shaped(output, [
 			'XN ',
 			'DTX',
 			'XP '
@@ -129,51 +94,41 @@ const registerCreatedecoRecipes = (event) => {
 	}
 
 	// Loop through each lamp type and color to create the recipes
+	const lampColors = ['blue', 'green', 'red', 'yellow'];
+	const lampTypes = ['zinc', 'brass', 'iron', 'industrial_iron', 'copper', 'andesite'];
 	lampTypes.forEach(lampType => {
 		lampColors.forEach(lampColor => {
 			let output = `2x createdeco:${lampColor}_${lampType}_lamp`; // Define the output item ID
-			lampRecipe(output, lampType, lampColor); // Call the lampRecipe function for each combination
+			lampRecipe(output, lampType, lampColor) // Call the lampRecipe function for each combination
+				.id(`tfg:shaped/cdeco_${lampColor}_${lampType}_lamp`)
 		});
 	});
 	//#endregion
 
 	//#region Brick Recipes
-	const brickTypes = ['blue', 'verdant', 'pearl', 'dean', 'dusk', 'scarlet', 'umber']
-	const powderTypes = ['lapis_lazuli', 'malachite', 'soda_ash', 'limonite', 'charcoal', 'hematite', 'cassiterite']
-
-	event.recipes.gtceu.assembler(`assembler_bricks`)
-			.itemInputs('5x minecraft:brick')
-			.inputFluids(Fluid.of('gtceu:concrete', 144))
-			.itemOutputs(`4x minecraft:bricks`)
-			.duration(50)
-			.circuit(2)
-			.EUt(7)
-
-	brickTypes.forEach(type => {
-		event.remove({ output: `createdeco:${type}_bricks` });
-	});
-
-	brickTypes.forEach((type, index) => {
-		const powder = `tfc:powder/${powderTypes[index]}`;
-		event.shaped(Item.of(`createdeco:${type}_bricks`, 4),
-			[
+	const dyeTypes = ['black', 'red', 'gray', 'green', 'blue', 'white', 'brown']
+	
+	global.CREATE_DECO_BRICK_TYPES.forEach((type, index) => {
+		if (type !== "red") {
+			const dye = `#forge:dyes/${dyeTypes[index]}`;
+			event.shaped(`4x createdeco:${type}_bricks`, [
 				'BDB',
 				'MBM',
 				'BMB'
-			],
-			{
+			], {
 				B: `minecraft:brick`,
-				D: powder,
+				D: dye,
 				M: `tfc:mortar`
-			});
+			}).id(`tfg:shaped/cdeco_${type}_bricks`);
 
-		event.recipes.gtceu.assembler(`createdeco:${type}_bricks`)
-			.itemInputs('5x minecraft:brick', powder)
-			.inputFluids(Fluid.of('gtceu:concrete', 144))
-			.itemOutputs(`4x createdeco:${type}_bricks`)
-			.circuit(3)
-			.duration(50)
-			.EUt(7)
+			event.recipes.gtceu.assembler(`tfg:createdeco_${type}_bricks`)
+				.itemInputs('5x minecraft:brick', dye)
+				.inputFluids(Fluid.of('gtceu:concrete', 144))
+				.itemOutputs(`4x createdeco:${type}_bricks`)
+				.circuit(3)
+				.duration(50)
+				.EUt(7)
+		}
 	});
 	//#endregion
 
@@ -370,54 +325,39 @@ const registerCreatedecoRecipes = (event) => {
 
 	//#region Coins
 
-	event.recipes.gtceu.forming_press('createdeco:gold_coin')
-		.itemInputs('#forge:nuggets/gold')
-		.notConsumable('gtceu:cylinder_casting_mold')
-		.itemOutputs('4x createdeco:gold_coin')
-		.duration(50)
-		.EUt(16)
+	const coins = [
+		{ material: GTMaterials.Gold, coin: 'createdeco:gold_coin' },
+		{ material: GTMaterials.BlueSteel, coin: 'createdeco:netherite_coin' },
+		{ material: GTMaterials.Brass, coin: 'createdeco:brass_coin' },
+		{ material: GTMaterials.Iron, coin: 'createdeco:iron_coin' },
+		{ material: GTMaterials.Copper, coin: 'createdeco:copper_coin' },
+		{ material: GTMaterials.Steel, coin: 'createdeco:industrial_iron_coin' },
+		{ material: GTMaterials.Zinc, coin: 'createdeco:zinc_coin' },
+	];
 
-	event.recipes.gtceu.forming_press('createdeco:netherite_coin')
-		.itemInputs('#forge:nuggets/blue_steel')
-		.notConsumable('gtceu:cylinder_casting_mold')
-		.itemOutputs('4x createdeco:netherite_coin')
-		.duration(50)
-		.EUt(16)
+	coins.forEach(coin => {
+		let tfcProperty = coin.material.getProperty(TFGPropertyKey.TFC_PROPERTY);
 
-	event.recipes.gtceu.forming_press('createdeco:brass_coin')
-		.itemInputs('#forge:nuggets/brass')
-		.notConsumable('gtceu:cylinder_casting_mold')
-		.itemOutputs('4x createdeco:brass_coin')
-		.duration(50)
-		.EUt(16)
+		event.recipes.gtceu.forming_press(coin.coin)
+			.itemInputs(ChemicalHelper.get(TagPrefix.nugget, coin.material, 1))
+			.notConsumable('gtceu:cylinder_casting_mold')
+			.itemOutputs(coin.coin)
+			.duration(50)
+			.EUt(16)
 
-	event.recipes.gtceu.forming_press('createdeco:iron_coin')
-		.itemInputs('#forge:nuggets/wrought_iron')
-		.notConsumable('gtceu:cylinder_casting_mold')
-		.itemOutputs('4x createdeco:iron_coin')
-		.duration(50)
-		.EUt(16)
+		let meltMaterial = (tfcProperty.getOutputMaterial() === null) ? coin.material : tfcProperty.getOutputMaterial();
 
-	event.recipes.gtceu.forming_press('createdeco:copper_coin')
-		.itemInputs('#forge:nuggets/copper')
-		.notConsumable('gtceu:cylinder_casting_mold')
-		.itemOutputs('4x createdeco:copper_coin')
-		.duration(50)
-		.EUt(16)
+		event.recipes.tfc.heating(coin.coin, tfcProperty.getMeltTemp())
+			.resultFluid(Fluid.of(meltMaterial.getFluid(), 144 * 1/9))
+			.id(`tfg:heating/${coin.material.getName()}_coin`)
 
-	event.recipes.gtceu.forming_press('createdeco:industrial_iron_coin')
-		.itemInputs('#forge:nuggets/steel')
-		.notConsumable('gtceu:cylinder_casting_mold')
-		.itemOutputs('createdeco:industrial_iron_coin')
-		.duration(50)
-		.EUt(16)
+		event.recipes.tfc.heating(`${coin.coin}stack`, tfcProperty.getMeltTemp())
+			.resultFluid(Fluid.of(meltMaterial.getFluid(), 144 * 4/9))
+			.id(`tfg:heating/${coin.material.getName()}_coinstack`)
 
-	event.recipes.gtceu.forming_press('createdeco:zinc_coin')
-		.itemInputs('#forge:nuggets/zinc')
-		.notConsumable('gtceu:cylinder_casting_mold')
-		.itemOutputs('createdeco:zinc_coin')
-		.duration(50)
-		.EUt(16)
+		TFGHelpers.registerMaterialInfo(coin.coin, [coin.material, 1/9])
+		TFGHelpers.registerMaterialInfo(`${coin.coin}stack`, [coin.material, 4/9])
+	})
 
 	// #region
 

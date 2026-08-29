@@ -20,7 +20,7 @@ function processTFCArmor(event, material) {
 	addAnvilRecipe(event, unfinishedHelmet, doublePlateItem, ['hit_last', 'bend_second_last', 'bend_third_last'], true, material, 'unfinished_helmet');
 	addTFCMelting(event, unfinishedHelmet, material, 144 * 2, 'unfinished_helmet');
 	addTFCMelting(event, finishedHelmet, material, 144 * 3, 'helmet');
-	addMaterialWelding(event, finishedHelmet, unfinishedHelmet, plateItem, material, 4, 0);
+	addMaterialWelding(event, finishedHelmet, unfinishedHelmet, plateItem, material, 4, 0, "helmet", 2);
 
 	// Chestplate
 	const unfinishedChestplate = `tfc:metal/unfinished_chestplate/${materialName}`;
@@ -29,7 +29,7 @@ function processTFCArmor(event, material) {
 	addAnvilRecipe(event, unfinishedChestplate, doublePlateItem, ['hit_last', 'hit_second_last', 'upset_third_last'], true, material, 'unfinished_chestplate');
 	addTFCMelting(event, unfinishedChestplate, material, 144 * 2, 'unfinished_chestplate');
 	addTFCMelting(event, finishedChestplate, material, 144 * 4, 'chestplate');
-	addMaterialWelding(event, finishedChestplate, unfinishedChestplate, doublePlateItem, material, 4, 0);
+	addMaterialWelding(event, finishedChestplate, unfinishedChestplate, doublePlateItem, material, 4, 0, "chestplate", 2);
 
 	// Greaves
 	const unfinishedGreaves = `tfc:metal/unfinished_greaves/${materialName}`;
@@ -38,7 +38,7 @@ function processTFCArmor(event, material) {
 	addAnvilRecipe(event, unfinishedGreaves, doublePlateItem, ['bend_any', 'draw_any', 'hit_any'], true, material, 'unfinished_greaves');
 	addTFCMelting(event, unfinishedGreaves, material, 144 * 2, 'unfinished_greaves');
 	addTFCMelting(event, finishedGreaves, material, 144 * 3, 'greaves');
-	addMaterialWelding(event, finishedGreaves, unfinishedGreaves, plateItem, material, 4, 0);
+	addMaterialWelding(event, finishedGreaves, unfinishedGreaves, plateItem, material, 4, 0, "greaves", 2);
 
 	// Boots
 	const unfinishedBoots = `tfc:metal/unfinished_boots/${materialName}`;
@@ -47,9 +47,22 @@ function processTFCArmor(event, material) {
 	addAnvilRecipe(event, unfinishedBoots, plateItem, ['bend_last', 'bend_second_last', 'shrink_third_last'], true, material, 'unfinished_boots');
 	addTFCMelting(event, unfinishedBoots, material, 144, 'unfinished_boots');
 	addTFCMelting(event, finishedBoots, material, 144 * 2, 'boots');
-	addMaterialWelding(event, finishedBoots, unfinishedBoots, plateItem, material, 4, 0);
+	addMaterialWelding(event, finishedBoots, unfinishedBoots, plateItem, material, 4, 0, "boots", 2);
 }
 
+// Helper methods
+function addToolExtruderRecipe(event, material, outputItem, inputItem, mold, id) {
+	event.recipes.vintageimprovements.curving(outputItem, inputItem)
+		.head(mold)
+		.id(`tfg:vi/curving/${material.getName()}_${id}`)
+
+	event.recipes.gtceu.extruder(`tfg:${material.getName()}_${id}`)
+		.itemInputs(inputItem)
+		.notConsumable(mold)
+		.itemOutputs(outputItem)
+		.duration(material.getMass() * 6)
+		.EUt(GTValues.VA[GTValues.LV])
+}
 
 /**
  * Processes the TFC items for the TFC "tool material" metals
@@ -64,19 +77,7 @@ function processTFCTool(event, material) {
 	const doublePlateItem = ChemicalHelper.get(TagPrefix.plateDouble, material, 1);
 	const knifeHead = ChemicalHelper.get(TFGTagPrefix.toolHeadKnife, material, 1)
 
-	// Helper methods
-	function addExtruderRecipe(outputItem, inputItem, mold, id) {
-		event.recipes.vintageimprovements.curving(outputItem, inputItem)
-			.head(mold)
-			.id(`tfg:vi/curving/${materialName}_${id}`)
 
-		event.recipes.gtceu.extruder(`tfg:${materialName}_${id}`)
-			.itemInputs(inputItem)
-			.notConsumable(mold)
-			.itemOutputs(outputItem)
-			.duration(material.getMass() * 6)
-			.EUt(GTValues.VA[GTValues.LV])
-	}
 
 	// For tools that are pure TFC
 
@@ -84,13 +85,13 @@ function processTFCTool(event, material) {
 		// Tuyere
 		let tuyere = `tfc:metal/tuyere/${materialName}`;
 		addTFCMelting(event, tuyere, material, 144 * 2, 'tuyere');
-		addExtruderRecipe(tuyere, doublePlateItem, 'gtceu:bottle_extruder_mold', 'tuyere');
+		addToolExtruderRecipe(event, material, tuyere, doublePlateItem, 'gtceu:bottle_extruder_mold', 'tuyere');
 		addAnvilRecipe(event, tuyere, doublePlateItem, ['bend_last', 'bend_second_last'], true, material, 'tuyere');
 
 		// Shield
 		let shield = `tfc:metal/shield/${materialName}`;
 		addTFCMelting(event, shield, material, 144 * 2, 'shield');
-		addExtruderRecipe(shield, doublePlateItem, 'gtceu:plate_extruder_mold', 'shield');
+		addToolExtruderRecipe(event, material, shield, doublePlateItem, 'gtceu:plate_extruder_mold', 'shield');
 		addAnvilRecipe(event, shield, doublePlateItem, ['upset_last', 'bend_second_last', 'bend_third_last'], true, material, 'shield');
 
 		// Horse armor
@@ -114,7 +115,7 @@ function processTFCTool(event, material) {
 
 		// Shears
 		let shears = `tfc:metal/shears/${materialName}`;
-		addMaterialWelding(event, shears, knifeHead, knifeHead, material, 4, 1);
+		addMaterialWelding(event, shears, knifeHead, knifeHead, material, 4, 1, "shears", 0);
 		addTFCMelting(event, shears, material, 144 * 2, 'shears');
 
 		event.recipes.gtceu.forge_hammer(`tfg:shears/${materialName}`)
@@ -141,33 +142,7 @@ function processTFCTool(event, material) {
 		addAnvilRecipe(event, scrapingKnifeBlade, doubleIngotItem, ['hit_last','draw_not_last', 'draw_second_last'], true, material, 'scraping_knife_blade');
 		addTFCMelting(event, scrapingKnife, material, 144 * 2, 'scraping_knife');
 		addMaterialRecyclingNoTagPrefix(event, scrapingKnifeBlade, material, 'scraping_knife_blade', 2);
-		addMaterialCasting(event, scrapingKnifeBlade, 'tfcscraping:ceramic/scraping_knife_blade_mold', false, null, material, 'scraping_knife_blade', 144 * 2);
-		
-		// Tongs
-		let tongPart = `tfchotornot:tong_part/${materialName}`;
-		let tong = `tfchotornot:tongs/${materialName}`;
-		addExtruderRecipe(tongPart, ChemicalHelper.get(TagPrefix.rodLong, material, 1), 'gtceu:rod_extruder_mold', 'tong_part');
-		addMaterialRecyclingNoTagPrefix(event, tongPart, material, 'tong_part', 1);
-		addTFCMelting(event, tong, material, 144 * 2, 'tong');
-
-		event.recipes.tfc.advanced_shaped_crafting(
-			TFC.isp.of(tong).copyForgingBonus(), [
-				'AA',
-				'BC'
-			], {
-				A: tongPart,
-				B: Ingredient.of('#forge:bolts').subtract('gtceu:wood_bolt'),
-				C: '#forge:tools/hammers'
-			}, 0, 0).id(`tfchotornot:crafting/tongs/${materialName}`)
-
-		event.recipes.gtceu.forge_hammer(tong)
-			.itemInputs(`2x ${tongPart}`)
-			.itemOutputs(tong)
-			.duration(material.getMass())
-			.EUt(GTValues.VA[GTValues.ULV])
-
-		event.remove({ id: `tfchotornot:heating/tongs/${materialName}` })
-		event.remove({ id: `tfchotornot:heating/tong_part/${materialName}` })
+		addMaterialCasting(event, scrapingKnifeBlade, 'tfcscraping:ceramic/scraping_knife_blade_mold', false, null, material, 'scraping_knife_blade', 144 * 2, false);
 	}
 
 	// Sword
@@ -295,4 +270,40 @@ function processPlatedBlock(event, material) {
 		.EUt(GTValues.VA[GTValues.ULV])
 
 	addMaterialRecycling(event, platedStair, material, 'plated_stair', TFGTagPrefix.stairPlated);
+}
+
+/**
+ * @param {Internal.RecipesEventJS} event 
+ * @param {GTMaterial} material 
+ */
+function processTongs(event, material) {
+	// Skip cast iron
+	if (material === GTMaterials.Iron)
+		return;
+
+	const materialName = material.getName();
+	let tongPart = `tfchotornot:tong_part/${materialName}`;
+	let tong = `tfchotornot:tongs/${materialName}`;
+	addToolExtruderRecipe(event, material, tongPart, ChemicalHelper.get(TagPrefix.rodLong, material, 1), 'gtceu:rod_extruder_mold', 'tong_part');
+	addMaterialRecyclingNoTagPrefix(event, tongPart, material, 'tong_part', 1);
+	addTFCMelting(event, tong, material, 144 * 2, 'tong');
+
+	event.recipes.tfc.advanced_shaped_crafting(
+		TFC.isp.of(tong).copyForgingBonus(), [
+			'AA',
+			'BC'
+		], {
+			A: tongPart,
+			B: Ingredient.of('#forge:bolts').subtract('gtceu:wood_bolt'),
+			C: '#forge:tools/hammers'
+		}, 0, 0).id(`tfchotornot:crafting/tongs/${materialName}`)
+
+	event.recipes.gtceu.forge_hammer(tong)
+		.itemInputs(`2x ${tongPart}`)
+		.itemOutputs(tong)
+		.duration(material.getMass())
+		.EUt(GTValues.VA[GTValues.ULV])
+
+	event.remove({ id: `tfchotornot:heating/tongs/${materialName}` })
+	event.remove({ id: `tfchotornot:heating/tong_part/${materialName}` })
 }

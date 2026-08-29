@@ -5,17 +5,13 @@ function registerDomumOrnamentumItemTags(event) {
     global.DOMUM_ORNAMENTUM_FLOATING_CARPETS.forEach((carpet) => {
         event.add("domum_ornamentum:floating_carpet", carpet);
     });
+
+    event.add('minecraft:fences', 'domum_ornamentum:vanilla_fence_compat')
+    event.add('minecraft:fence_gates', 'domum_ornamentum:vanilla_fence_gate_compat')
 }
 
 /** @param {TagEvent.Block} event */
 function registerDomumOrnamentumBlockTags(event) {
-    //#region Hidden Items
-    global.DOMUM_ORNAMENTUM_DISABLED_ITEMS.forEach((item) => {
-        event.removeAllTagsFrom(item);
-        event.add("c:hidden_from_recipe_viewers", item);
-    });
-    //#endregion
-
     //#region Assign Tags
     const materials = [
         //tags
@@ -160,6 +156,26 @@ function registerDomumOrnamentumBlockTags(event) {
         "#tfg:ad_astra_desh_block",
         "#tfg:ad_astra_ostrum_block",
         "#tfg:ad_astra_calorite_block",
+        // Create blocks
+        "#create:stone_types/diorite",
+        "#create:stone_types/andesite",
+        "#create:stone_types/limestone",
+        "#create:stone_types/granite",
+        "#create:stone_types/deepslate",
+        "#create:stone_types/dripstone",
+        "#tfg:stone_types/keratophyre",
+        "#create:stone_types/calcite",
+        "#create:stone_types/tuff",
+        "#tfg:stone_types/suevite",
+        "#tfg:stone_types/certus",
+        "#tfg:stone_types/thermal_vent_deposit",
+        "#tfg:stone_types/reconstituted_stone",
+        "#create:stone_types/asurine",
+        "#create:stone_types/ochrum",
+        "#create:stone_types/crimsite",
+        "#create:stone_types/veridium",
+        "#create:stone_types/scoria",
+        "#create:stone_types/scorchia",
     ];
 
     materials.forEach((material) => {

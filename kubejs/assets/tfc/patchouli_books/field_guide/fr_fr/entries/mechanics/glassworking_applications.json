@@ -1,0 +1,433 @@
+{
+  "name": "Produits verriers",
+  "category": "tfc:mechanics",
+  "icon": "minecraft:glass",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Les $(thing)Vitres$() et $(thing)Blocs de verre$() sont les produits verriers les plus simples. Afin de les fabriquer, vous devez commencer avec une $(l:mechanics/glassworking#blowpipe)Canne de verrier$() et un $(thing)Mélange verrier$(), puis effectuer un $(thing)Versement$().$(br)$(li)Les $(bold)Versements sur table$() servent à créer des $(thing)Vitres$()$(li)Les $(bold)Versements en bassin$() servent à créer des $(thing)Blocs de verre$()"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Le verre peut aussi être $(thing)coloré$() avant d'être versé, pour créer du verre coloré. La couleur dépend du type de mélange verrier et toute poudre qui y aurait été ajoutée.$(br2)Chaque type de $(thing)Mélange verrier$() possède une couleur différente une fois transformé en verre. Les mélange verrier $(thing)siliceux$() peuvent être teint en de nombreuses couleurs, contrairement aux mélanges $(thing)Olivine$() et $(thing)Volcanique$()."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Les $(thing)Vitres$() sont fabriquées via un $(thing)Versement sur table$(). Une table de versement se fait en plaçant seize $(thing)Blocs de Kaolin$() ou $(thing)Blocs plaqués en laiton$() dans une zone continue.$(br2) 1. Ajoutez un $(l:mechanics/glassworking)Mélange verrier$() à une $(thing)Canne de verrier$().$(br) 2. Chauffez celle-ci à $(4)$(bold)Rouge pâle$().$(br) 3. Actionnez $()$(item)$(k:key.use)$() avec la $(thing)canne$() sur la table.$(br) 4. Enfin $()$(item)$(k:key.use)$() avec une $(l:mechanics/glassworking#paddle)Palette$() pour aplatir le verre.",
+      "title": "Versement sur table"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "text": "Une fois le verre refroidi, il peut être récupéré à l'aide d'une $(l:mechanics/glassworking#saw)Scie à gemme$().",
+      "border": true,
+      "multiblock": {
+        "mapping": {
+          "C": "#tfc:glass_pouring_table",
+          "0": "#tfc:glass_pouring_table"
+        },
+        "pattern": [
+          [
+            "CCCC",
+            "CCC0",
+            "CCCC",
+            "CCCC"
+          ]
+        ]
+      }
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Les $(thing)Blocs de verre$() sont fabriqués via un $(thing)Versement en bassin$(). Un bassin se fait en entourant tous les côtés d'un blocs d'air, sauf le haut, par des $(thing)Blocs de Kaolin$() ou des $(thing)Blocs plaqués en laiton$().$(br2) 1. Ajoutez un $(l:mechanics/glassworking)Mélange verrier$() à une $(thing)Canne de verrier$().$(br) 2. Chauffez celle-ci à $(4)$(bold)Rouge pâle$().$(br) 3. Actionnez $()$(item)$(k:key.use)$() avec la $(thing)canne$() dans le bassin.",
+      "title": "Versement en bassin"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "text": "Une fois le verre refroidi, il peut être récupéré à l'aide d'une $(l:mechanics/glassworking#saw)Scie à gemme$().",
+      "border": true,
+      "multiblock": {
+        "mapping": {
+          "C": "#tfc:glass_basin_blocks",
+          "0": "#tfc:glass_basin_blocks"
+        },
+        "pattern": [
+          [
+            " C ",
+            "C C",
+            " C "
+          ],
+          [
+            "   ",
+            " 0 ",
+            "   "
+          ]
+        ]
+      }
+    },
+    {
+      "type": "patchouli:crafting",
+      "text": "Vous pouvez créer des $(thing)Blocs plaqués en laiton$() en tenant une $(thing)plaque$() de laiton puis en faisant $(item)$(k:key.use)$() sur n'importe quel bloc de $(thing)briques de pierre$().",
+      "title": "Blocs de travail du verre",
+      "recipe": "tfc:crafting/white_kaolin_clay"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Le verre possède une coleur naturelle dépendant du $(l:mechanics/glassworking)Mélange verrier$() utilisé. D'autres couleurs peuvent être créées en utilisant un $(l:mechanics/bowls)Bol$().$(br2)Pour l'utiliser, placez le $(l:mechanics/bowls)Bol$() au sol, puis faites $(item)$(k:key.use)$() avec la $(thing)Poudre$() requise. Avant de $(thing)verser$(), utilisez la $(thing)canne$() sur le bol pour ajouter la poudre au mélange.",
+      "anchor": "coloring",
+      "title": "Colorer le verre"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(li)$(bold)$(7)Blanc$() : Verre siliceux ou hématitique + $(thing)Poudre de soude$()$(li)$(bold)$(0)Noir$() : Tout verre + $(thing)Graphite$()$(li)$(bold)$(8)Gris$() : Tout + $(thing)Graphite$() + $(thing)Poudre de soude$()$(li)$(bold)$(7)Gris clair$() : Tout + $(thing)Graphite$() + 2x $(thing)Poudre de soude$()$(li)$(bold)$(5)Violet$() : Tout + $(thing)Fer$() + $(thing)Cuivre$()$(li)$(bold)$(#964b00)Marron$() : Tout + $(thing)Nickel$()$(li)$(bold)$(3)Cyan$() : Verre non-volcanique + $(thing)Cuivre$() + $(thing)Saphir$()$(li)$(bold)$(2)Vert$() : Verre siliceux ou hématitique + $(thing)Fer$()",
+      "title": "Couleurs"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(li)$(bold)$(a)Vert clair$() : Verre siliceux ou hématitique + $(thing)Fer$() + $(thing)Poudre de soude$()$(li)$(bold)$(b)Bleu clair$() : Verre siliceux + $(thing)Lapis-lazuli$()$(li)$(bold)$(1)Bleu$() : Verre siliceux + $(thing)Cuivre$()$(li)$(bold)$(4)Rouge$() : Verre siliceux ou hématitique + $(thing)Étain$()$(li)$(bold)$(6)Jaune$() : Verre siliceux ou hématitique + $(thing)Argent$()$(li)$(bold)$(#ef8e38)Orange$() : Verre siliceux + $(thing)Pyrite$()$(li)$(bold)$(5)Magenta$() : Verre siliceux ou hématitique + $(thing)Rubis$()$(li)$(bold)$(d)Rose$() : Verre siliceux + $(thing)Or$()$(li)$(bold)$(0)Teinté$() : Verre non-siliceux + $(thing)Améthyste$()"
+    },
+    {
+      "type": "tfc:table_small",
+      "strings": [
+        {
+          "text": ""
+        },
+        {
+          "text": "C"
+        },
+        {
+          "text": "T"
+        },
+        {
+          "fill": "0xff42f2"
+        },
+        {
+          "fill": "0x8af3ff"
+        },
+        {
+          "fill": "0x526cff"
+        },
+        {
+          "fill": "0xe3e3e3"
+        },
+        {
+          "fill": "0xe69407"
+        },
+        {
+          "fill": "0xc738c9"
+        },
+        {
+          "fill": "0xffe81c"
+        },
+        {
+          "fill": "0x48ff1f"
+        },
+        {
+          "fill": "0xe01414"
+        },
+        {
+          "fill": "0x0c9400"
+        },
+        {
+          "fill": "0x188a9e"
+        },
+        {
+          "fill": "0x7d4f00"
+        },
+        {
+          "fill": "0x6e059c"
+        },
+        {
+          "fill": "0x7d7d7d"
+        },
+        {
+          "fill": "0xbdbdbd"
+        },
+        {
+          "fill": "0x000000"
+        },
+        {
+          "text": "Siliceux"
+        },
+        {
+          "fill": "0x3d42a8"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "text": "Hématitique"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3d42a8"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "text": "Olivine"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0x3d42a8"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "text": "Volcanique"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0x3d42a8"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        }
+      ],
+      "text": "The availability of glass colors. 'C' is clear, 'T' is tinted. Colors can only be crafted with certain glass batches.",
+      "title": "Glass Color Availability",
+      "legend": [
+        {
+          "text": "Can be Crafted",
+          "color": "0x3eb340"
+        },
+        {
+          "text": "Cannot be Crafted",
+          "color": "0xb33e3e"
+        },
+        {
+          "text": "Default Color",
+          "color": "0x3d42a8"
+        }
+      ],
+      "columns": 18,
+      "first_column_width": 35,
+      "column_width": 10,
+      "row_height": 10,
+      "left_buffer": 5,
+      "top_buffer": 15,
+      "draw_background": true
+    },
+    {
+      "type": "patchouli:empty",
+      "draw_filler": false
+    },
+    {
+      "type": "tfc:glassworking_recipe",
+      "anchor": "lamp_glass",
+      "recipe": "tfg:glassworking/lamp_glass",
+      "text": "$(thing)Lamp Glass$() is a necessary component to craft $(l:mechanics/lamps)Lamps$()."
+    },
+    {
+      "type": "tfc:glassworking_recipe",
+      "anchor": "jar",
+      "recipe": "tfc:glassworking/jar",
+      "text": "$(l:mechanics/jarring)Jars$() are also made from blown glass, but only silica or hematitic glass."
+    },
+    {
+      "type": "tfc:glassworking_recipe",
+      "anchor": "glass_bottle",
+      "recipe": "tfc:glassworking/silica_bottle",
+      "text": "$(thing)Glass Bottles$() can also be made. The quality of the glass bottle depends on the type of glass used to make it."
+    },
+    {
+      "type": "tfc:glassworking_recipe",
+      "recipe": "tfc:glassworking/lens",
+      "text": "The $(thing)lens$() is used for crafting the $(thing)spyglass$(), $(thing)compass$(), and other things."
+    }
+  ],
+  "read_by_default": true,
+  "extra_recipe_mappings": {
+    "tag:tfc:glass_batches": 1,
+    "tag:forge:glass": 2
+  }
+}

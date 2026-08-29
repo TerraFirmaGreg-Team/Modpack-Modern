@@ -65,13 +65,14 @@ const registerAdAstraRecipes = (event) => {
 	event.recipes.gtceu.shaped('ad_astra:oxygen_sensor', [
 		'AEA',
 		'BDC',
-		'AAA'
+		'FFF'
 	], {
 		A: '#forge:plates/red_alloy',
 		B: 'gtceu:activity_detector_cover',
 		C: 'gtceu:fluid_detector_cover',
 		D: 'gtceu:mv_machine_hull',
-		E: '#gtceu:circuits/mv'
+		E: '#gtceu:circuits/mv',
+		F: 'vintageimprovements:redstone_module'
 	}).addMaterialInfo().id('tfg:oxygen_sensor')
 
 	event.recipes.gtceu.laser_engraver('ad_astra:photovoltaic_etrium_cell_silicon')
@@ -195,14 +196,14 @@ const registerAdAstraRecipes = (event) => {
 		.inputFluids(Fluid.of('minecraft:water', 100))
 		.itemOutputs('#forge:ingots/desh')
 		.duration(400)
-		.EUt(120)
+		.EUt(GTValues.VA[GTValues.HV])
 
 	event.recipes.gtceu.chemical_bath('tfg:desh_cool_down_distilled_water')
 		.itemInputs('#forge:hot_ingots/desh')
 		.inputFluids(Fluid.of('gtceu:distilled_water', 100))
 		.itemOutputs('#forge:ingots/desh')
 		.duration(250)
-		.EUt(120)
+		.EUt(GTValues.VA[GTValues.HV])
 
 	// #endregion
 
@@ -410,6 +411,9 @@ const registerAdAstraRecipes = (event) => {
 			.EUt(2)
 
 		// Buttons
+		event.shapeless(`3x ad_astra:${x.type}_plating_button`, [`ad_astra:${x.type}_plating_pressure_plate`, '#forge:tools/saws'])
+			.id(`tfg:shapeless/saw_${x.type}_pressure_plate_to_button`)
+
 		generateCutterRecipe(event, `ad_astra:${x.type}_plating_pressure_plate`, `6x ad_astra:${x.type}_plating_button`, 50, 7, `ad_astra_${x.type}_button`)
 
 		// Doors
@@ -450,7 +454,7 @@ const registerAdAstraRecipes = (event) => {
 		.itemOutputs('ad_astra:steel_door')
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.LV])
-		.addMaterialInfo(true, true)
+	TFGHelpers.registerMaterialInfo('ad_astra:steel_door', [GTMaterials.Steel, 2, GTMaterials.Glass, 3/4, GTMaterials.Polyethylene, 1/4])
 
 	event.recipes.gtceu.assembler(`tfg:ad_astra_steel_trapdoor`)
 		.itemInputs('tfc:metal/trapdoor/steel', '#forge:glass_panes')
@@ -458,7 +462,7 @@ const registerAdAstraRecipes = (event) => {
 		.itemOutputs('ad_astra:steel_trapdoor')
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.LV])
-		.addMaterialInfo(true, true)
+	TFGHelpers.registerMaterialInfo('ad_astra:steel_trapdoor', [GTMaterials.Steel, 1, GTMaterials.Glass, 3/4, GTMaterials.Polyethylene, 1/4])
 
 	// Etrium only has factory block, encased block, plateblock, panel, and (storage) block
 

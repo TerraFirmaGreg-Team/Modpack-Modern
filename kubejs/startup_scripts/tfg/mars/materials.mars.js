@@ -1,6 +1,7 @@
 "use strict";
 
 function registerTFGMarsMaterials(event) {
+	const $BlastProperty = Java.loadClass("com.gregtechceu.gtceu.api.data.chemical.material.properties.BlastProperty")
 
 	event.create('liquid_carbon_dioxide')
 		.liquid(100) //Not realistic but I want it to be cryogenic
@@ -22,10 +23,15 @@ function registerTFGMarsMaterials(event) {
 	event.create('residual_radioactive_concoction')
 		.liquid(new GTFluidBuilder().customStill().temperature(450))
 
+	// New OLA Materials
+
+	event.create('tfg:radioactive_effluent')
+		.liquid(new GTFluidBuilder().customStill().temperature(293))
+
 	// Atmosphere
 
 	event.create('tfg:mars_air')
-        .gas(new GTFluidBuilder().state(GTFluidState.GAS).temperature(208))
+		.gas(new GTFluidBuilder().state(GTFluidState.GAS).temperature(208))
 		.color('0xD08957')
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 		.components('94x carbon_dioxide', '3x nitrogen', '2x argon', '1x oxygen')
@@ -38,7 +44,7 @@ function registerTFGMarsMaterials(event) {
 		.components('80x carbon_dioxide', '7x nitrogen', '5x argon', '3x oxygen', '1x neon', '1x krypton', '1x xenon')
 
 	// Mars sap
-	
+
 	event.create('tfg:crimsene')
 		.liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).temperature(220))
 		.gem()
@@ -81,26 +87,34 @@ function registerTFGMarsMaterials(event) {
 		.components('2x pitchblende', '1x tricalcium_phosphate', '1x bauxite', '1x silver', '1x beryllium')
 		.color(0xbd7980)
 		.secondaryColor(0xA66C8D)
-		.iconSet(GTMaterialIconSet.getByName('tfc_cassiterite'))
+		.iconSet(GTMaterialIconSet.getByName('cereal_box'))
 		.ingot()
 		.liquid()
-		.blastTemp(3700, 'mid', GTValues.VA[GTValues.EV])
+		.blastTemp(3700, $BlastProperty.GasTier.MID, GTValues.VA[GTValues.EV])
 		.flags(
 			GTMaterialFlags.DISABLE_DECOMPOSITION,
-			GTMaterialFlags.FORCE_GENERATE_BLOCK, 
+			GTMaterialFlags.FORCE_GENERATE_BLOCK,
 			GTMaterialFlags.GENERATE_PLATE,
 			GTMaterialFlags.GENERATE_ROD,
 			GTMaterialFlags.GENERATE_FRAME,
+			GTMaterialFlags.GENERATE_FOIL,
 			GTMaterialFlags.DISABLE_ALLOY_BLAST
-		)	
+		)
+
+
+	// Alloys
 
 	event.create("ostrum_iodide")
 		.ingot()
 		.liquid()
 		.components('2x ostrum', 'iodine')
-		.blastTemp(3700, 'mid', GTValues.VA[GTValues.IV], (20*120))
-		.iconSet(GTMaterialIconSet.BRIGHT)
-		.flags(GTMaterialFlags.GENERATE_GEAR)
+		.blastTemp(3700, $BlastProperty.GasTier.MID, GTValues.VA[GTValues.IV], (20 * 120))
+		.iconSet(GTMaterialIconSet.getByName('cereal_box'))
+		.flags(
+			GTMaterialFlags.GENERATE_GEAR,
+			GTMaterialFlags.GENERATE_FOIL,
+			GTMaterialFlags.GENERATE_ROD,
+			GTMaterialFlags.GENERATE_LONG_ROD)
 		.color(0xc696f2)
 		.secondaryColor(0x9b99ff)
 }

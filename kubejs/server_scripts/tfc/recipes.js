@@ -21,7 +21,7 @@ const registerTFCRecipes = (event) => {
 	], {
 		A: '#forge:double_plates/wrought_iron',
 		B: 'tfc:crucible'
-	}).addMaterialInfo().id('tfc:crafting/blast_furnace')
+	}).id('tfc:crafting/blast_furnace')
 
 	// Тыква -> Кусочки тыквы
 	event.recipes.tfc.advanced_shapeless_crafting(
@@ -101,16 +101,23 @@ const registerTFCRecipes = (event) => {
 	event.recipes.tfc.heating('tfc:plant/winged_kelp', 200)
 		.resultItem('tfc:food/dried_kelp')
 
-	// Burning Bread
-	event.recipes.tfc.heating('#tfc:foods/breads', 850)
-
 	// Soda Ash
 	event.smelting('3x tfc:powder/soda_ash', 'tfc:food/dried_seaweed').id('tfg:smelting/dried_seaweed_to_soda')
 	event.smelting('3x tfc:powder/soda_ash', 'tfc:food/dried_kelp').id('tfg:smelting/dried_kelp_to_soda')
+	event.smelting('3x tfc:powder/soda_ash', 'tfc:food/fresh_seaweed').id('tfg:smelting/fresh_seaweed_to_soda')
+	event.smelting('3x tfc:powder/soda_ash', 'tfc:groundcover/seaweed').id('tfg:smelting/seaweed_to_soda')
+	event.smelting('3x tfc:powder/soda_ash', 'tfc:plant/winged_kelp').id('tfg:smelting/winged_kelp_to_soda')
+	event.smelting('3x tfc:powder/soda_ash', 'tfc:plant/leafy_kelp').id('tfg:smelting/leafy_kelp_to_soda')
+	event.smelting('3x tfc:powder/soda_ash', 'tfc:plant/giant_kelp_flower').id('tfg:smelting/giant_kelp_to_soda')
 
 	//More accesible solar drier
 	event.replaceInput({ id: 'firmalife:crafting/solar_drier' }, 'gtceu:stainless_steel_rod', 'gtceu:silver_rod')
 
+	// Kaolinte blocks to powder
+	event.recipes.tfc.heating('#tfc:kaolin_blocks', 500)
+		.chance(0.8)
+		.resultItem('tfc:powder/kaolinite')
+		.id('tfg:tfc/heating/kaolinite_blocks')
 
 	//Lye
 	generateMixerRecipe(event, 'tfc:powder/wood_ash', "#tfg:clean_water 200",
@@ -149,12 +156,24 @@ const registerTFCRecipes = (event) => {
 		.EUt(16)
 
 	// LimeWater + Sand -> Mortar
-	event.recipes.gtceu.mixer('mortar')
+	event.recipes.gtceu.mixer('tfg:mortar_from_sand')
 		.itemInputs('#forge:sand')
 		.inputFluids(Fluid.of('tfc:limewater', 100))
 		.itemOutputs('16x tfc:mortar')
-		.duration(800)
+		.duration(600)
 		.EUt(8)
+
+	event.recipes.tfc.barrel_sealed(8000)
+		.inputs('#tfg:stone_dusts', TFC.fluidStackIngredient('tfc:limewater', 25))
+		.outputItem('tfc:mortar')
+		.id('tfg:barrel/mortar_from_dusts');
+
+	event.recipes.gtceu.mixer('tfg:mortar_from_dusts')
+		.itemInputs('#tfg:stone_dusts')
+		.inputFluids(Fluid.of('tfc:limewater', 25))
+		.itemOutputs('tfc:mortar')
+		.duration(30)
+		.EUt(8);
 
 	// Jar lids
 
@@ -166,9 +185,15 @@ const registerTFCRecipes = (event) => {
 
 	event.replaceInput({ mod: 'tfc' }, 'minecraft:sugar', '#tfg:sugars')
 
+	event.replaceInput(
+		{ type: 'tfc:pot_jam' },
+		'#tfg:sugars',
+		'#tfc:sweetener'
+	)
 
 	// jute net -> burlap net
 	event.replaceInput({ id: 'tfc:crafting/jute_net' }, 'tfc:jute_fiber', '#tfg:burlap_fiber')
+	event.replaceInput({ input: 'minecraft:slime_ball' }, 'minecraft:slime_ball', 'tfc:glue')
 
 	// horse armor to use burlap
 	global.TFC_EQUIPMENT_METALS.forEach(material => {
@@ -240,4 +265,104 @@ const registerTFCRecipes = (event) => {
 		.inputs('#tfc:foods/fruits', TFC.fluidStackIngredient('#tfg:alcohols', 250))
 		.outputFluid(Fluid.of('tfc:vinegar', 250))
 		.id('tfc:barrel/vinegar')
+
+	// Clay dust to balls
+	event.recipes.tfc.barrel_sealed(8000)
+		.inputs('gtceu:clay_dust',TFC.fluidStackIngredient('minecraft:water', 250))
+		.outputItem('1x minecraft:clay_ball')
+		.id('tfc:barrel/clay_ball')
+
+	// Borax to flux
+	event.recipes.tfc.quern('4x tfc:powder/flux', 'gtceu:borax_dust')
+		.id(`tfg:quern/borax`)
+
+	event.recipes.gtceu.macerator('borax_to_flux')
+		.itemInputs("#forge:dusts/borax")
+		.itemOutputs("4x tfc:powder/flux")
+		.duration(50)
+		.EUt(2);
+
+	event.shapeless('4x tfc:fire_clay', ['tfc:fire_clay_block'])
+	
+	event.shapeless('4x tfc:kaolin_clay', ['tfc:white_kaolin_clay'])
+	event.shapeless('4x tfc:kaolin_clay', ['tfc:pink_kaolin_clay'])
+	event.shapeless('4x tfc:kaolin_clay', ['tfc:red_kaolin_clay'])
+
+	global.TFC_WOOD_TYPES.forEach(element => {
+		event.shaped(`4x tfc:wood/fallen_leaves/${element}`,[
+			'AA',
+			'AA'
+		], {
+			A: `tfc:wood/leaves/${element}`
+		}).id(`tfg:shaped/tfc/${element}_leaves_to_fallen_leaves`);
+	});
+	
+	/**
+	 * @property {string[]} krummholz_types - List of krummholz wood types.
+	 */
+	const krummholz_types = [
+		'aspen',
+		'douglas_fir',
+		'pine',
+		'spruce',
+		'white_cedar'
+	];
+	krummholz_types.forEach(type => {
+		event.shaped(`1x tfc:plant/${type}_krummholz`,[
+			'A',
+			'A'
+		], {
+			A: `tfc:wood/sapling/${type}`
+		}).id(`tfg:shaped/tfc/${type}_krummholz`);
+	});
+
+	event.shapeless('minecraft:stick', ['tfc:groundcover/driftwood'])
+		.id('tfg:shapeless/driftwood_to_stick')
+
+	// Buff Lamp Glass for easier early game
+	event.remove({ id: 'tfc:glassworking/lamp_glass'})
+	event.recipes.tfc.glassworking(
+        '4x tfc:lamp_glass',
+        '#tfc:glass_batches',
+        [
+            'blow',
+            'flatten',
+			'blow',
+			'saw'
+        ]
+    ).id('tfg:glassworking/lamp_glass')
+
+	event.recipes.gtceu.macerator('tfg:candle')
+		.itemInputs("#minecraft:candles")
+		.itemOutputs("gtceu:small_wax_dust")
+		.duration(50)
+		.EUt(2)
+		.category(GTRecipeCategories.MACERATOR_RECYCLING);
+	
+	event.recipes.tfc.quern("gtceu:small_wax_dust", "#minecraft:candles")
+		.id("tfg:quern/candles")
+	event.recipes.tfc.quern("gtceu:tiny_wax_dust", "gtceu:wax_nugget")
+		.id("tfg:quern/wax_nugget")
+
+	// Hot item cooling
+	event.recipes.tfc.barrel_instant()
+		.inputItem(TFC.ingredient.heatable(1, null))
+		.inputFluid(Fluid.of('gtceu:ice', 1))
+		.outputItem(TFC.isp.copyInput().addHeat(-20))
+		.sound('minecraft:block.fire.extinguish')
+		.id('tfg:barrel/ice_slush_cooling')
+	
+	event.recipes.tfc.barrel_instant()
+		.inputItem(TFC.ingredient.heatable(1, null))
+		.inputFluid(TFC.fluidStackIngredient('#firmalife:oils', 1))
+		.outputItem(TFC.isp.copyInput().addHeat(-40))
+		.sound('minecraft:block.fire.extinguish')
+		.id('tfg:barrel/oils_cooling')
+	
+	event.recipes.tfc.barrel_instant()
+		.inputItem(TFC.ingredient.heatable(1, null))
+		.inputFluid(TFC.fluidStackIngredient('#tfc:any_water', 1))
+		.outputItem(TFC.isp.copyInput().addHeat(-5))
+		.sound('minecraft:block.fire.extinguish')
+		.id('tfg:barrel/waters_cooling')
 }

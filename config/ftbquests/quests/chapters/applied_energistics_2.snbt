@@ -1,4 +1,5 @@
 {
+	autofocus_id: "6CF08AFB924905F0"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "applied_energistics_2"
@@ -11,7 +12,7 @@
 			image: "ae2:block/mysterious_cube_end_emissive"
 			rotation: 0.0d
 			width: 1.5d
-			x: -3.5d
+			x: -5.0d
 			y: 2.0d
 		}
 		{
@@ -72,8 +73,8 @@
 	quest_links: [{
 		id: "6845144F7EA1081D"
 		linked_quest: "24158DEE63DAEB41"
-		x: 5.0d
-		y: -4.5d
+		x: 6.0d
+		y: -3.5d
 	}]
 	quests: [
 		{
@@ -109,6 +110,7 @@
 				{
 					id: "01CB170E98F09DCB"
 					item: "gtceu:hv_polarizer"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -141,15 +143,22 @@
 					type: "item"
 				}
 				{
-					id: "31CD18493D0D65BC"
-					item: "gtceu:hv_sifter"
+					id: "52F9B7116D01F7F8"
+					item: "gtceu:hv_autoclave"
 					optional_task: true
 					type: "item"
 				}
 				{
-					id: "52F9B7116D01F7F8"
-					item: "gtceu:hv_autoclave"
+					id: "394F7CEA050D785B"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(vintageimprovements:vibrating_table)item(gtceu:lv_sifter)item(gtceu:mv_sifter)item(gtceu:hv_sifter)item(gtceu:ev_sifter)item(gtceu:iv_sifter)item(gtceu:luv_sifter)item(gtceu:zpm_sifter)item(gtceu:uv_sifter))"
+						}
+					}
 					optional_task: true
+					title: "{quests.ore_proc.sifter.task}"
 					type: "item"
 				}
 			]
@@ -176,58 +185,37 @@
 		{
 			dependencies: ["673433C6D5A451F8"]
 			description: ["{quests.ae2.extractor.desc}"]
-			icon: "gtceu:hv_extractor"
+			icon: "tfg:cryogenized_fluix_bucket"
 			id: "0DE253C8F7F37FB6"
 			subtitle: "{quests.ae2.extractor.subtitle}"
-			tasks: [{
-				id: "0AE307B47D2589BA"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "or(item(gtceu:lv_extractor)item(gtceu:mv_extractor)item(gtceu:hv_extractor)item(gtceu:ev_extractor))"
+			tasks: [
+				{
+					id: "0AE307B47D2589BA"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(gtceu:lv_extractor)item(gtceu:mv_extractor)item(gtceu:hv_extractor)item(gtceu:ev_extractor))"
+						}
 					}
+					title: "{quests.ae2.extractor.task}"
+					type: "item"
 				}
-				title: "{quests.ae2.extractor.task}"
-				type: "item"
-			}]
+				{
+					id: "2B4CAE0A11C32BB8"
+					item: "tfg:cryogenized_fluix_bucket"
+					optional_task: true
+					type: "item"
+				}
+			]
 			title: "{quests.ae2.extractor.title}"
 			x: -5.0d
 			y: -0.5d
 		}
 		{
-			dependencies: ["0DE253C8F7F37FB6"]
-			description: ["{quests.ae2.fluix_liquid.desc}"]
-			icon: "tfg:fluix_bucket"
-			id: "5C98FE05CAE3DFD8"
-			subtitle: "{quests.ae2.fluix_liquid.subtitle}"
-			tasks: [
-				{
-					id: "7C0B612DC3D05042"
-					item: "tfg:fluix_bucket"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "0E980936F9D1D703"
-					item: "tfg:cryogenized_fluix_bucket"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "432E105A84AEA630"
-					type: "checkmark"
-				}
-			]
-			title: "{quests.ae2.fluix_liquid.title}"
-			x: -3.5d
-			y: -0.5d
-		}
-		{
-			can_repeat: true
 			dependencies: ["0C0B09D66D0CFFBA"]
 			description: ["{quests.ae2.ae_guide.desc}"]
-			icon: "ae2:guide"
+			icon: "ae2:singularity"
 			id: "6CF08AFB924905F0"
 			rewards: [{
 				id: "34825A998EA88DB4"
@@ -278,7 +266,7 @@
 				type: "item"
 			}]
 			title: "{quests.ae2.forming_press.title}"
-			x: -3.5d
+			x: -5.0d
 			y: 0.5d
 		}
 		{
@@ -309,7 +297,7 @@
 				}
 			]
 			title: "{quests.ae2.ae_press.title}"
-			x: -3.5d
+			x: -5.0d
 			y: 2.0d
 		}
 		{
@@ -362,6 +350,7 @@
 					type: "item"
 				}
 			]
+			title: "{quests.ae2.cables.title}"
 			x: 0.5d
 			y: -6.0d
 		}
@@ -400,7 +389,7 @@
 				item: "ae2:crafting_unit"
 				type: "item"
 			}]
-			x: -1.0d
+			x: -2.0d
 			y: -6.0d
 		}
 		{
@@ -412,7 +401,7 @@
 				item: "ae2:crafting_accelerator"
 				type: "item"
 			}]
-			x: -2.5d
+			x: -3.5d
 			y: -6.5d
 		}
 		{
@@ -431,7 +420,8 @@
 				title: "{quests.ae2.crafting_storage.task}"
 				type: "item"
 			}]
-			x: -2.5d
+			title: "{quests.ae2.crafting_storage.title}"
+			x: -3.5d
 			y: -5.5d
 		}
 		{
@@ -452,6 +442,7 @@
 				title: "{quests.ae2.pattern_provider.task}"
 				type: "item"
 			}]
+			title: "{quests.ae2.pattern_provider.title}"
 			x: 0.5d
 			y: -9.0d
 		}
@@ -469,10 +460,7 @@
 			y: -9.0d
 		}
 		{
-			dependencies: [
-				"5C98FE05CAE3DFD8"
-				"674ACE84D9EA6FB9"
-			]
+			dependencies: ["3CD0A43CE62CF618"]
 			description: ["{quests.ae2.ae_processor.desc}"]
 			id: "0C0B09D66D0CFFBA"
 			subtitle: "{quests.ae2.ae_processor.subtitle}"
@@ -507,7 +495,7 @@
 				item: "ae2:interface"
 				type: "item"
 			}]
-			x: 2.0d
+			x: 3.0d
 			y: -6.0d
 		}
 		{
@@ -526,7 +514,8 @@
 				title: "{quests.ae2.export_bus.task}"
 				type: "item"
 			}]
-			x: 3.5d
+			title: "{quests.ae2.export_bus.title}"
+			x: 5.0d
 			y: -7.0d
 		}
 		{
@@ -537,8 +526,16 @@
 			id: "0F1104DEEB22EF86"
 			size: 1.0d
 			tasks: [{
-				id: "6D9B9EAFE680B768"
-				type: "checkmark"
+				id: "6CBA077E634222BC"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:circuits/iv)"
+					}
+				}
+				title: "{quests.tasktype.item.any} #gtceu:circuits/iv"
+				type: "item"
 			}]
 			title: "{quests.ae2.iv.title}"
 			x: 3.0d
@@ -606,6 +603,7 @@
 				title: "{quests.ae2.extended_pattern_access.task}"
 				type: "item"
 			}]
+			title: "{item.expatternprovider.ex_pattern_access_part}"
 			x: 7.0d
 			y: -1.5d
 		}
@@ -626,6 +624,7 @@
 				title: "{quests.ae2.extended_interface.task}"
 				type: "item"
 			}]
+			title: "{block.expatternprovider.ex_interface}"
 			x: 5.0d
 			y: 1.0d
 		}
@@ -637,8 +636,16 @@
 			id: "1F3621FABA32DC6B"
 			size: 1.0d
 			tasks: [{
-				id: "4CE3EF0D1FAC1B6C"
-				type: "checkmark"
+				id: "7D229D57EB72CF9E"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:circuits/luv)"
+					}
+				}
+				title: "{quests.tasktype.item.any} #gtceu:circuits/luv"
+				type: "item"
 			}]
 			title: "{quests.ae2.luv.title}"
 			x: 0.5d
@@ -653,7 +660,7 @@
 				item: "ae2:import_bus"
 				type: "item"
 			}]
-			x: 3.5d
+			x: 5.0d
 			y: -5.0d
 		}
 		{
@@ -680,7 +687,7 @@
 					type: "item"
 				}
 			]
-			x: 3.5d
+			x: 5.0d
 			y: -6.0d
 		}
 		{
@@ -693,18 +700,19 @@
 				type: "checkmark"
 			}]
 			title: "{quests.ae2.interface_automation.title}"
-			x: 5.0d
+			x: 6.5d
 			y: -6.0d
 		}
 		{
 			dependencies: ["6CF08AFB924905F0"]
 			description: ["{quests.ae2.hv.desc}"]
+			disable_toast: true
 			icon: "tfg:hv_universal_circuit"
 			icon_scale: 2.0d
 			id: "3C3C21482E31267B"
 			size: 1.0d
 			tasks: [{
-				id: "1D4A01B75676146B"
+				id: "0E1A4ED67854D838"
 				type: "checkmark"
 			}]
 			title: "{quests.ae2.hv.title}"
@@ -927,6 +935,7 @@
 				title: "{quests.ae2.extended_patprov.task}"
 				type: "item"
 			}]
+			title: "{block.expatternprovider.ex_pattern_provider}"
 			x: 7.0d
 			y: 1.5d
 		}
@@ -947,6 +956,7 @@
 				title: "{quests.ae2.extended_drive.task}"
 				type: "item"
 			}]
+			title: "{block.expatternprovider.ex_drive}"
 			x: 6.0d
 			y: -1.5d
 		}
@@ -1094,6 +1104,7 @@
 				{
 					id: "270F842BF5012A13"
 					item: "ae2:io_port"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1282,6 +1293,123 @@
 			title: "{quests.ae2.universal_circuits.title}"
 			x: -2.0d
 			y: -9.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["6CF08AFB924905F0"]
+			description: ["{quests.ae2.books_again.desc}"]
+			icon: "ae2:guide"
+			id: "21ED71AAA4EE4890"
+			optional: true
+			rewards: [{
+				id: "0507786BBEF1A6C9"
+				item: "ae2:guide"
+				type: "item"
+			}]
+			shape: "none"
+			tasks: [{
+				id: "26C00F0A52235B5D"
+				type: "checkmark"
+			}]
+			title: "{quests.ae2.books_again.title}"
+			x: -0.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["25007C5E43D28DB2"]
+			description: ["{quests.ae2.stock_bridge.desc}"]
+			id: "349620A86711E263"
+			tasks: [{
+				id: "2117A53364A22BA6"
+				item: "createstockbridge:ae_bridge"
+				type: "item"
+			}]
+			title: "{quests.ae2.stock_bridge.title}"
+			x: 5.0d
+			y: -8.0d
+		}
+		{
+			dependencies: [
+				"0DE253C8F7F37FB6"
+				"674ACE84D9EA6FB9"
+			]
+			description: [
+				"{quests.ae2.me_assembler.desc.1}"
+				"{@pagebreak}"
+				"{quests.ae2.me_assembler.desc.2}"
+			]
+			id: "3CD0A43CE62CF618"
+			subtitle: "{quests.ae2.me_assembler.subtitle}"
+			tasks: [{
+				id: "4A843E81F70775D3"
+				item: "tfg:me_assembler"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5187909B66DF2D43"]
+			description: ["{quests.ae2.mega_pattern.desc}"]
+			id: "57C98F43A9818B49"
+			tasks: [{
+				id: "5BF54D9D2CC6E900"
+				item: "megacells:mega_pattern_provider"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["3CD0A43CE62CF618"]
+			description: ["{quests.ae2.budding_charger.desc}"]
+			id: "31F7F3379D17FFD6"
+			optional: true
+			shape: "heart"
+			subtitle: "{quests.ae2.budding_charger.subtitle}"
+			tasks: [{
+				id: "10D66F620CA33F35"
+				item: "tfg:budding_charge"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3CD0A43CE62CF618"]
+			description: [
+				"{quests.ae2.me_guide.desc_1}"
+				""
+				"{image:tfg:textures/quests/me_setup.png width:375 height:225 align:center}"
+				"{@pagebreak}"
+				"{quests.ae2.me_guide.desc_2}"
+				""
+				"{image:tfg:textures/quests/sender.png width:375 height:225 align:center}"
+				"{@pagebreak}"
+				"{quests.ae2.me_guide.desc_3}"
+				""
+				"{image:tfg:textures/quests/receiver.png width:375 height:225 align:center}"
+				"{@pagebreak}"
+				"{quests.ae2.me_guide.desc_4}"
+				""
+				"{image:tfg:textures/quests/me_logistics.png width:250 height:150 align:center}"
+				"{@pagebreak}"
+				"{quests.ae2.me_guide.desc_5}"
+				""
+				"{image:tfg:textures/quests/me_assembler_moon.png width:375 height:225 align:center}"
+			]
+			icon: "tfg:railgun_ammo_shell"
+			id: "48185B7AD3FB70A5"
+			shape: "circle"
+			subtitle: "{quests.ae2.me_guide.subtitle}"
+			tasks: [{
+				id: "2D1899FF556E6AD8"
+				title: "{quests.ae2.me_guide.task}"
+				type: "checkmark"
+			}]
+			title: "{quests.ae2.me_guide.title}"
+			x: -3.5d
+			y: 1.5d
 		}
 	]
 	subtitle: ["{quests.ae2.subtitle}"]

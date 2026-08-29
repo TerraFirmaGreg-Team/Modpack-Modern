@@ -1,0 +1,22 @@
+{
+	"ingredient": "rnr:concrete",
+	"thirst": 0,
+	"may_drink_when_full": true,
+	"effects": [
+		{
+			"type": "minecraft:slowness",
+			"duration": 12000,
+			"amplifier": 2
+		},
+		{
+			"type": "species:tanked",
+			"duration": 12000,
+			"amplifier": 0
+		},
+		{
+			"type": "minecraft:mining_fatigue",
+			"duration": 1200,
+			"amplifier": 0
+		}
+	]
+}

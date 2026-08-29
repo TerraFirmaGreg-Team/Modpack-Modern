@@ -1,0 +1,32 @@
+{
+	"type": "minecraft:random_patch",
+	"config": {
+		"feature": {
+			"feature": {
+				"type": "tfc:tall_plant",
+				"config": { "block": "tfg:plant/palash" }
+			},
+			"placement": [
+				{
+					"type": "minecraft:block_predicate_filter",
+					"predicate": {
+						"type": "minecraft:matching_blocks",
+						"blocks": "minecraft:air"
+					}
+				},
+				{
+					"type": "block_predicate_filter",
+					"predicate": {
+						"type": "would_survive",
+						"state": {
+							"Name": "tfg:plant/palash"
+						}
+					}
+				}
+			]
+		},
+		"tries": 24,
+		"xz_spread": 6,
+		"y_spread": 2
+	}
+}

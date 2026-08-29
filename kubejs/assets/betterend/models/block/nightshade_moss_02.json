@@ -1,63 +1,263 @@
 {
 	"__comment": "Designed by Paulevs with Cubik Studio - https://cubik.studio",
+	"render_type": "cutout_mipped",
+	"ambientocclusion": "false",
 	"textures": {
 		"texture": "betterend:block/nightshade_moss",
+		"emissive": "betterend:block/nightshade_moss_e",
 		"particle": "#texture"
 	},
-	"elements": [ 	 
+	"elements": [
 		{
 			"__comment": "PlaneY1",
 			"from": [ 3, 15, 0 ],
 			"to": [ 19, 15.001, 16 ],
-			"rotation": { "origin": [ 3, 15, 0 ], "axis": "x", "angle": 45 },
+			"rotation": {
+				"origin": [ 3, 15, 0 ],
+				"axis": "x",
+				"angle": 45
+			},
+			"light_emission": 5,
 			"shade": false,
 			"faces": {
-				"down": { "uv": [ 16, 0, 0, 16 ], "texture": "#texture" },
-				"up": { "uv": [ 0, 0, 16, 16 ], "texture": "#texture", "rotation": 180 }
+				"down": {
+					"uv": [ 16, 0, 0, 16 ],
+					"texture": "#texture"
+				},
+				"up": {
+					"uv": [ 0, 0, 16, 16 ],
+					"texture": "#texture",
+					"rotation": 180
+				}
 			}
 		},
 		{
 			"__comment": "PlaneY1",
 			"from": [ 0, -15, 0 ],
 			"to": [ 16, 1, 0.001 ],
-			"rotation": { "origin": [ 0, 1, 0 ], "axis": "x", "angle": -22.5 },
+			"rotation": {
+				"origin": [ 0, 1, 0 ],
+				"axis": "x",
+				"angle": -22.5
+			},
+			"light_emission": 5,
 			"shade": false,
 			"faces": {
-				"north": { "uv": [ 0, 16, 16, 0 ], "texture": "#texture" },
-				"south": { "uv": [ 0, 0, 16, 16 ], "texture": "#texture", "rotation": 180 }
+				"north": {
+					"uv": [ 0, 16, 16, 0 ],
+					"texture": "#texture"
+				},
+				"south": {
+					"uv": [ 0, 0, 16, 16 ],
+					"texture": "#texture",
+					"rotation": 180
+				}
 			}
 		},
 		{
 			"__comment": "PlaneY1",
 			"from": [ -2, -12, 0 ],
 			"to": [ 14, 4, 0.001 ],
-			"rotation": { "origin": [ -2, 4, 0 ], "axis": "x", "angle": -45 },
+			"rotation": {
+				"origin": [ -2, 4, 0 ],
+				"axis": "x",
+				"angle": -45
+			},
+			"light_emission": 5,
 			"shade": false,
 			"faces": {
-				"north": { "uv": [ 0, 16, 16, 0 ], "texture": "#texture" },
-				"south": { "uv": [ 0, 0, 16, 16 ], "texture": "#texture", "rotation": 180 }
+				"north": {
+					"uv": [ 0, 16, 16, 0 ],
+					"texture": "#texture"
+				},
+				"south": {
+					"uv": [ 0, 0, 16, 16 ],
+					"texture": "#texture",
+					"rotation": 180
+				}
 			}
 		},
 		{
 			"__comment": "PlaneY1",
 			"from": [ 0, -9, 0 ],
 			"to": [ 16, 7, 0.001 ],
-			"rotation": { "origin": [ 0, 7, 0 ], "axis": "x", "angle": -45 },
+			"rotation": {
+				"origin": [ 0, 7, 0 ],
+				"axis": "x",
+				"angle": -45
+			},
+			"light_emission": 5,
 			"shade": false,
 			"faces": {
-				"north": { "uv": [ 0, 16, 16, 0 ], "texture": "#texture" },
-				"south": { "uv": [ 0, 0, 16, 16 ], "texture": "#texture", "rotation": 180 }
+				"north": {
+					"uv": [ 0, 16, 16, 0 ],
+					"texture": "#texture"
+				},
+				"south": {
+					"uv": [ 0, 0, 16, 16 ],
+					"texture": "#texture",
+					"rotation": 180
+				}
 			}
 		},
 		{
 			"__comment": "PlaneY1",
 			"from": [ 0, -3, 0 ],
 			"to": [ 16, 13, 0.001 ],
-			"rotation": { "origin": [ 0, 13, 0 ], "axis": "x", "angle": -22.5 },
+			"rotation": {
+				"origin": [ 0, 13, 0 ],
+				"axis": "x",
+				"angle": -22.5
+			},
+			"light_emission": 5,
 			"shade": false,
 			"faces": {
-				"north": { "uv": [ 0, 16, 16, 0 ], "texture": "#texture" },
-				"south": { "uv": [ 0, 0, 16, 16 ], "texture": "#texture", "rotation": 180 }
+				"north": {
+					"uv": [ 0, 16, 16, 0 ],
+					"texture": "#texture"
+				},
+				"south": {
+					"uv": [ 0, 0, 16, 16 ],
+					"texture": "#texture",
+					"rotation": 180
+				}
+			}
+		},
+
+
+		{
+			"__comment": "PlaneY1",
+			"from": [ 3, 15, 0 ],
+			"to": [ 19, 15.001, 16 ],
+			"rotation": {
+				"origin": [ 3, 15, 0 ],
+				"axis": "x",
+				"angle": 45
+			},
+			"light_emission": 5,
+			"shade": false,
+			"forge_data": {
+				"block_light": 15,
+				"sky_light": 15
+			},
+			"faces": {
+				"down": {
+					"uv": [ 16, 0, 0, 16 ],
+					"texture": "#emissive"
+				},
+				"up": {
+					"uv": [ 0, 0, 16, 16 ],
+					"texture": "#emissive",
+					"rotation": 180
+				}
+			}
+		},
+		{
+			"__comment": "PlaneY1",
+			"from": [ 0, -15, 0 ],
+			"to": [ 16, 1, 0.001 ],
+			"rotation": {
+				"origin": [ 0, 1, 0 ],
+				"axis": "x",
+				"angle": -22.5
+			},
+			"light_emission": 5,
+			"shade": false,
+			"forge_data": {
+				"block_light": 15,
+				"sky_light": 15
+			},
+			"faces": {
+				"north": {
+					"uv": [ 0, 16, 16, 0 ],
+					"texture": "#emissive"
+				},
+				"south": {
+					"uv": [ 0, 0, 16, 16 ],
+					"texture": "#emissive",
+					"rotation": 180
+				}
+			}
+		},
+		{
+			"__comment": "PlaneY1",
+			"from": [ -2, -12, 0 ],
+			"to": [ 14, 4, 0.001 ],
+			"rotation": {
+				"origin": [ -2, 4, 0 ],
+				"axis": "x",
+				"angle": -45
+			},
+			"light_emission": 5,
+			"shade": false,
+			"forge_data": {
+				"block_light": 15,
+				"sky_light": 15
+			},
+			"faces": {
+				"north": {
+					"uv": [ 0, 16, 16, 0 ],
+					"texture": "#emissive"
+				},
+				"south": {
+					"uv": [ 0, 0, 16, 16 ],
+					"texture": "#emissive",
+					"rotation": 180
+				}
+			}
+		},
+		{
+			"__comment": "PlaneY1",
+			"from": [ 0, -9, 0 ],
+			"to": [ 16, 7, 0.001 ],
+			"rotation": {
+				"origin": [ 0, 7, 0 ],
+				"axis": "x",
+				"angle": -45
+			},
+			"light_emission": 5,
+			"shade": false,
+			"forge_data": {
+				"block_light": 15,
+				"sky_light": 15
+			},
+			"faces": {
+				"north": {
+					"uv": [ 0, 16, 16, 0 ],
+					"texture": "#emissive"
+				},
+				"south": {
+					"uv": [ 0, 0, 16, 16 ],
+					"texture": "#emissive",
+					"rotation": 180
+				}
+			}
+		},
+		{
+			"__comment": "PlaneY1",
+			"from": [ 0, -3, 0 ],
+			"to": [ 16, 13, 0.001 ],
+			"rotation": {
+				"origin": [ 0, 13, 0 ],
+				"axis": "x",
+				"angle": -22.5
+			},
+			"light_emission": 5,
+			"shade": false,
+			"forge_data": {
+				"block_light": 15,
+				"sky_light": 15
+			},
+			"faces": {
+				"north": {
+					"uv": [ 0, 16, 16, 0 ],
+					"texture": "#emissive"
+				},
+				"south": {
+					"uv": [ 0, 0, 16, 16 ],
+					"texture": "#emissive",
+					"rotation": 180
+				}
 			}
 		}
 	]

@@ -1,6 +1,7 @@
 "use strict";
 
 function registerTFGRocketMaterials(event) {
+	const $BlastProperty = Java.loadClass("com.gregtechceu.gtceu.api.data.chemical.material.properties.BlastProperty")
 
 	// Space Rocket Materials
 
@@ -9,29 +10,29 @@ function registerTFGRocketMaterials(event) {
 		.components('6x aluminium', '2x stainless_steel', '1x red_steel')
 		.color(0x333e47)
 		.iconSet('metallic')
-		.flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_DENSE, GTMaterialFlags.GENERATE_GEAR)
-		.blastTemp(1760, 'low', 256, 900)
+		.flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_DENSE, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_BOLT_SCREW)
+		.blastTemp(1760, $BlastProperty.GasTier.MID, 256, 900)
 
 	event.create('rocket_alloy_t2')
 		.ingot()
 		.components('19x titanium', '4x vanadium', '3x aluminium', '3x chromium', '3x tin')
 		.color(0x3c253d)
 		.iconSet('metallic')
-		.flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_DENSE, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.DISABLE_ALLOY_BLAST)
-		.blastTemp(3200, 'mid', 1024, 1100)
+		.flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_DENSE, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.DISABLE_ALLOY_BLAST)
+		.blastTemp(3200, $BlastProperty.GasTier.MID, 1024, 1100)
 		.liquid()
-	
-/*	event.create('rocket_alloy_t3')
-		.ingot()
-		.components('8x titanium', '9x tungsten_steel', '2x tantalum', '2x radon')
-		.color(0x6c678b)
-		//.secondaryColor(0xa59fc6)
-		.liquid()
-		.removeHazard()
-		.iconSet('metallic')
-		.flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_DENSE, GTMaterialFlags.GENERATE_GEAR)
-		.blastTemp(4200, 'high', 4096, 1300)
-	*/
+
+	/*	event.create('rocket_alloy_t3')
+			.ingot()
+			.components('8x titanium', '9x tungsten_steel', '2x tantalum', '2x radon')
+			.color(0x6c678b)
+			//.secondaryColor(0xa59fc6)
+			.liquid()
+			.removeHazard()
+			.iconSet('metallic')
+			.flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_DENSE, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_BOLT_SCREW)
+			.blastTemp(4200, $BlastProperty.GasTier.MID, 4096, 1300)
+		*/
 
 	// Insulation
 	event.create('vitrified_asbestos')
@@ -89,7 +90,7 @@ function registerTFGRocketMaterials(event) {
 		.color(0xCCE3E3)
 		.secondaryColor(0xCCE3E3)
 	//#endregion
-	
+
 	//#region polyurethane
 	event.create('tfg:aniline')
 		.liquid()
@@ -103,20 +104,20 @@ function registerTFGRocketMaterials(event) {
 	event.create('tfg:methyl_phenylcarbamate')
 		.liquid()
 		.flags(GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING)
-		.components('8x carbon','9x hydrogen','1x nitrogen', '2x oxygen')
+		.components('8x carbon', '9x hydrogen', '1x nitrogen', '2x oxygen')
 		.color(0xB4EDB4)
 	event.create('tfg:methylene_diphenyl_dicarbamate')
 		.liquid()
 		.flags(GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING)
-		.components('17x carbon','18x hydrogen','2x nitrogen', '4x oxygen')
+		.components('17x carbon', '18x hydrogen', '2x nitrogen', '4x oxygen')
 		.color(0x69C2C1)
 	event.create('tfg:methylene_diphenyl_diisocyanate')
 		.dust()
 		.flags(GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING)
-		.components('13x carbon','10x hydrogen','2x nitrogen', '2x oxygen')
+		.components('13x carbon', '10x hydrogen', '2x nitrogen', '2x oxygen')
 		.color(0xFFFFBA)
 	//#endregion
-	
+
 	//#region aerogel
 	event.create('tfg:tmos')
 		.liquid()
@@ -159,4 +160,44 @@ function registerTFGRocketMaterials(event) {
 		.gas()
 		.components('5x nitrogen', '3x oxygen', '2x helium_3')
 		.color(0xa3ed95)
+
+	//#region Basalt Insulation Pannel
+
+	event.create('tfg:basalt_fiber')
+		.ingot()
+		.components('1x basalt')
+		.flags(
+			GTMaterialFlags.DISABLE_DECOMPOSITION,
+			GTMaterialFlags.GENERATE_PLATE,
+			GTMaterialFlags.GENERATE_FOIL,
+			GTMaterialFlags.GENERATE_FINE_WIRE,
+			GTMaterialFlags.DISABLE_MATERIAL_RECIPES
+		)
+		.color(0x525D6B)
+
+	event.create('tfg:dichloropropane')
+		.liquid()
+		.components('3x carbon', '6x hydrogen', '2x chlorine')
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.color(0xC2C6CC)
+
+	event.create('tfg:3_chloropropylamine')
+		.liquid()
+		.components('3x carbon', '8x hydrogen', '1x chlorine', '1x nitrogen')
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.color(0xFFF8C6)
+
+	event.create('tfg:aminopropyl_chlorosilane')
+		.liquid()
+		.components('3x carbon', '8x hydrogen', '3x chlorine', '1x nitrogen', '1x silicon')
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.color(0xC6E2FF)
+
+	event.create('tfg:3_aminopropyltriethoxysilane')
+		.liquid()
+		.components('9x carbon', '23x hydrogen', '1x nitrogen', '3x oxygen', '1x silicon')
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.color(0xFFE8C2)
+
+
 }

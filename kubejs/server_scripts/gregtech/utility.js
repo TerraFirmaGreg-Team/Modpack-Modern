@@ -17,11 +17,11 @@ const addJsonElement = (jsonArray, jsonElement) => {
  * Adding a circuit is optional.
  *
  * @param {*} event 
- * @param {string} input -Item
- * @param {string} fluid_input -Fluid
+ * @param {string|string[]} input -Item
+ * @param {string|string[]} fluid_input -Fluid
  * @param {string} output -Item
- * @param {number} circuit -0-32
- * @param {string} fluid_output -Fluid
+ * @param {number|null} circuit -0-32
+ * @param {string|string[]} fluid_output -Fluid
  * @param {number} duration -Ticks
  * @param {number} EUt -GTValues.VA[]
  * @param {number} rpm -Depreciated
@@ -134,7 +134,7 @@ function addCircuitToRecipe(event, recipeId, circuitNumber) {
 		let hasCircuit = false;
 		for (let i = 0; i < itemArray.size(); i++) {
 			const el = itemArray.get(i);
-			if (!el.isJsonObject()) {continue;}
+			if (!el.isJsonObject()) { continue; }
 			const obj = el.getAsJsonObject();
 			const content = obj.get("content");
 			if (content && content.isJsonObject()) {
@@ -155,186 +155,6 @@ function addCircuitToRecipe(event, recipeId, circuitNumber) {
 		recipe.json.add("inputs", inputsObj);
 	});
 }
-//#endregion
-
-//#region Wood Builder
-
-/**
- * Generates most basic wooden recipes. 
- * 
- * All parameters are optional. Name is used for the ID.
- *
- * @param {*} event 
- * @param {string} name -Name of the wood.
- * @param {string} lumber -ID for the lumber.
- * @param {string} logs -Tag or ID for all the logs.
- * @param {string} log -ID for the regular log.
- * @param {string} stripped_log -ID for the stripped log.
- * @param {string} plank -ID for planks.
- * @param {string} stair -ID for stairs.
- * @param {string} slab -ID for slabs.
- * @param {string} door -ID for the door.
- * @param {string} trapdoor -ID for the trapdoor.
- * @param {string} fence -ID for the fence.
- * @param {string} fence_gate -ID for the fence gate.
- * @param {string} support -ID for the support.
- * @param {string} pressure_plate -ID for the pressure plate.
- * @param {string} button -ID for the button.
- */
-function woodBuilder(event, name, lumber, logs, log, stripped_log, plank, stair, slab, door, trapdoor, fence, fence_gate, support, pressure_plate, button) {
-
-	if (log && stripped_log && name) {
-		event.recipes.gtceu.lathe(`tfg:cutter/${name}_stripped_log_from_log`)
-			.itemInputs(log)
-			.itemOutputs(stripped_log)
-			.duration(50)
-			.EUt(GTValues.VA[GTValues.ULV])
-
-		event.recipes.vintageimprovements.polishing(stripped_log, log)
-			.speedLimits(0)
-			.processingTime(50 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
-			.id(`tfg:vi/lathe/stripping_${name}_log`)
-	}
-
-	if (logs && lumber && name) {
-		event.shapeless(`8x ${lumber}`,
-			[logs, '#forge:tools/saws']
-		).id(`tfg:shapeless/${name}_lumber_from_log`)
-
-		generateCutterRecipe(event, logs, `16x ${lumber}`, 50, 7, `cutter_${name}_lumber_from_log`)
-	}
-
-	if (plank && lumber && name) {
-		event.shapeless(`4x ${lumber}`,
-			[plank, '#forge:tools/saws']
-		).id(`tfg:shapeless/${name}_lumber_from_plank`)
-
-		generateCutterRecipe(event, plank, `4x ${lumber}`, 50, 7, `cutter_${name}_lumber_from_plank`)
-
-		event.shaped(plank, [
-			'AA',
-			'AA'
-		], {
-			A: lumber
-		}).id(`tfg:shaped/${name}_plank_from_lumber`)
-	}
-
-	if (slab && lumber && name) {
-		event.shapeless(`2x ${lumber}`,
-			[slab, '#forge:tools/saws']
-		).id(`tfg:shapeless/${name}_lumber_from_slab`)
-
-		generateCutterRecipe(event, slab, `2x ${lumber}`, 50, 7, `cutter_${name}_lumber_from_slab`)
-	}
-
-	if (slab && plank && name) {
-		event.shaped(`6x ${slab}`, [
-			'AAA'
-		], {
-			A: plank
-		}).id(`tfg:shaped/${name}_slab_from_plank`)
-	}
-
-	if (stair && lumber && name) {
-		event.shapeless(`3x ${lumber}`,
-			[stair, '#forge:tools/saws']
-		).id(`tfg:shapeless/${name}_lumber_from_stair`)
-
-		generateCutterRecipe(event, stair, `3x ${lumber}`, 50, 7, `cutter_${name}_lumber_from_stair`)
-	}
-
-	if (stair && plank && name) {
-		event.shaped(`8x ${stair}`, [
-			'A  ',
-			'AA ',
-			'AAA'
-		], {
-			A: plank
-		}).id(`tfg:shaped/${name}_stair_from_plank`)
-	}
-
-	if (door && lumber && name) {
-		event.shaped(`2x ${door}`, [
-			'AA',
-			'AA',
-			'AA'
-		], {
-			A: lumber
-		}).id(`tfg:shaped/${name}_door_from_lumber`)
-	}
-
-	if (trapdoor && lumber && name) {
-		event.shaped(`3x ${trapdoor}`, [
-			'AAA',
-			'AAA'
-		], {
-			A: lumber
-		}).id(`tfg:shaped/${name}_trapdoor_from_lumber_and_plank`)
-	}
-
-	if (fence && lumber && plank && name) {
-		event.shaped(`8x ${fence}`, [
-			'ABA',
-			'ABA'
-		], {
-			A: lumber,
-			B: plank
-		}).id(`tfg:shaped/${name}_fence_from_lumber_and_plank`)
-	}
-
-	if (fence_gate && lumber && plank && name) {
-		event.shaped(`2x ${fence_gate}`, [
-			'ABA',
-			'ABA'
-		], {
-			A: plank,
-			B: lumber
-		}).id(`tfg:shaped/${name}_fence_gate_from_lumber_and_plank`)
-	}
-
-	if (support && logs && name) {
-		event.shapeless(`8x ${support}`,
-			[`2x ${logs}`, '#forge:tools/saws']
-		).id(`tfg:shapeless/${name}_support_from_logs`)
-
-		event.recipes.gtceu.assembler(`tfg:assembler/${name}_support_from_logs`)
-			.itemInputs(`2x ${logs}`)
-			.itemOutputs(`8x ${support}`)
-			.duration(50)
-			.circuit(4)
-			.EUt(GTValues.VA[GTValues.ULV])
-	}
-
-	if (pressure_plate && slab && name) {
-		event.shaped(pressure_plate, [
-			' B ',
-			'ACA',
-			' D '
-		], {
-			A: slab,
-			B: '#forge:tools/hammers',
-			C: '#forge:springs',
-			D: '#forge:tools/screwdrivers'
-		}).id(`tfg:shaped/${name}_pressure_plate`)
-
-		event.recipes.gtceu.assembler(`tfg:assembler/${name}_pressure_plate`)
-			.itemInputs(`2x ${slab}`, '#forge:small_springs')
-			.itemOutputs(`2x ${pressure_plate}`)
-			.duration(50)
-			.circuit(3)
-			.EUt(GTValues.VA[GTValues.ULV])
-	}
-
-	if (button && pressure_plate && name) {
-		event.recipes.gtceu.cutter(`tfg:cutter/${name}_button_from_pressure_plate`)
-			.itemInputs(pressure_plate)
-			.itemOutputs(`6x ${button}`)
-			.duration(50)
-			.EUt(GTValues.VA[GTValues.ULV])
-	}
-}
-//#endregion
-
 //#region Sterilization
 /**
  * Creates recipes for sterilizing an item using chemicals or the autoclave.
@@ -348,21 +168,21 @@ function woodBuilder(event, name, lumber, logs, log, stripped_log, plank, stair,
  * @throws {TypeError} Throws an error if input, output, or multiplier is invalid.
  */
 function sterilizeItem(event, input, output, multiplier, cleanroom) {
-    // Collect errors.
-    const errors = [];
+	// Collect errors.
+	const errors = [];
 
 	if (input === undefined || (Array.isArray(input) && input.length !== 1) || output === undefined || (Array.isArray(output) && output.length !== 1)) {
 		errors.push("input or output is undefined or not equal to one item");
 	};
-    if (multiplier <= 0) {
-        errors.push(`invalid multiplier (${multiplier})`);
-    };
+	if (multiplier <= 0) {
+		errors.push(`invalid multiplier (${multiplier})`);
+	};
 
-    // If there are any errors, log them all and throw once.
-    if (errors.length > 0) {
-        const message = `sterilizeItem errors:\n - ${ errors.join("\n - ")}`;
-        throw new TypeError(message);
-    };
+	// If there are any errors, log them all and throw once.
+	if (errors.length > 0) {
+		const message = `sterilizeItem errors:\n - ${errors.join("\n - ")}`;
+		throw new TypeError(message);
+	};
 
 	// Set default multiplier.
 	let recipe_multiplier = 1;
@@ -371,34 +191,34 @@ function sterilizeItem(event, input, output, multiplier, cleanroom) {
 	}
 
 	// Create recipes.
-	const ethanol_recipe = event.recipes.gtceu.chemical_bath(`tfg:ethanol_cleaning/${linuxUnfucker(input)}_to_${linuxUnfucker(output)}`)
+	const ethanol_recipe = event.recipes.gtceu.chemical_bath(`tfg:ethanol_cleaning/${global.linuxUnfucker(input)}_to_${global.linuxUnfucker(output)}`)
 		.itemInputs(input)
-		.inputFluids(Fluid.of('gtceu:ethanol', 500*recipe_multiplier))
+		.inputFluids(Fluid.of('gtceu:ethanol', 500 * recipe_multiplier))
 		.itemOutputs(output)
-		.duration(10*20*recipe_multiplier)
+		.duration(10 * 20 * recipe_multiplier)
 		.EUt(GTValues.VA[GTValues.MV]);
 
-	const hydrogen_peroxide_recipe = event.recipes.gtceu.chemical_bath(`tfg:hydrogen_peroxide_cleaning/${linuxUnfucker(input)}_to_${linuxUnfucker(output)}`)
+	const hydrogen_peroxide_recipe = event.recipes.gtceu.chemical_bath(`tfg:hydrogen_peroxide_cleaning/${global.linuxUnfucker(input)}_to_${global.linuxUnfucker(output)}`)
 		.itemInputs(input)
-		.inputFluids(Fluid.of('gtceu:hydrogen_peroxide', 200*recipe_multiplier))
+		.inputFluids(Fluid.of('gtceu:hydrogen_peroxide', 200 * recipe_multiplier))
 		.itemOutputs(output)
-		.duration(10*20*recipe_multiplier)
+		.duration(10 * 20 * recipe_multiplier)
 		.EUt(GTValues.VA[GTValues.MV]);
 
-	const sodium_dodecyl_sulfate_recipe = event.recipes.gtceu.chemical_bath(`tfg:sodium_dodecyl_sulfate_cleaning/${linuxUnfucker(input)}_to_${linuxUnfucker(output)}`)
+	const sodium_dodecyl_sulfate_recipe = event.recipes.gtceu.chemical_bath(`tfg:sodium_dodecyl_sulfate_cleaning/${global.linuxUnfucker(input)}_to_${global.linuxUnfucker(output)}`)
 		.itemInputs(input)
-		.inputFluids(Fluid.of('tfg:sodium_dodecyl_sulfate', 50*recipe_multiplier))
+		.inputFluids(Fluid.of('tfg:sodium_dodecyl_sulfate', 50 * recipe_multiplier))
 		.itemOutputs(output)
-		.duration(10*20*recipe_multiplier)
+		.duration(10 * 20 * recipe_multiplier)
 		.EUt(GTValues.VA[GTValues.MV]);
 
-	const autoclave_recipe = event.recipes.gtceu.autoclave(`tfg:autoclave_cleaning/${linuxUnfucker(input)}_to_${linuxUnfucker(output)}`)
+	const autoclave_recipe = event.recipes.gtceu.autoclave(`tfg:autoclave_cleaning/${global.linuxUnfucker(input)}_to_${global.linuxUnfucker(output)}`)
 		.itemInputs(input)
 		.perTick(true)
-		.inputFluids(Fluid.of('gtceu:steam', 100*recipe_multiplier))
+		.inputFluids(Fluid.of('gtceu:steam', 100 * recipe_multiplier))
 		.perTick(false)
 		.itemOutputs(output)
-		.duration(240*20*recipe_multiplier)
+		.duration(240 * 20 * recipe_multiplier)
 		.EUt(GTValues.VA[GTValues.MV]);
 
 	if (cleanroom) {

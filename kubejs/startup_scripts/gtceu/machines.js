@@ -207,6 +207,7 @@ const registerGTCEuMachines = (event) => {
 				.or(Predicates.abilities(PartAbility.EXPORT_ITEMS).setPreviewCount(1))
 				.or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1))
 				.or(Predicates.abilities(PartAbility.IMPORT_FLUIDS).setPreviewCount(1))
+				.or(Predicates.abilities(PartAbility.EXPORT_FLUIDS).setPreviewCount(1))
 				.or(Predicates.abilities(PartAbility.INPUT_ENERGY).setExactLimit(1))
 				.or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1)))
 			.where('#', Predicates.air())
@@ -218,7 +219,7 @@ const registerGTCEuMachines = (event) => {
 			'gtceu:block/machines/fermenter')
 
 	// Nuclear Heat Exchanger
-
+/*
 	event.create('heat_exchanger', 'multiblock')
 		.rotationState(RotationState.NON_Y_AXIS)
 		.recipeType('heat_exchanger')
@@ -226,9 +227,9 @@ const registerGTCEuMachines = (event) => {
 		.appearanceBlock(() => Block.getBlock('gtceu:high_temperature_smelting_casing'))
 		.pattern(definition => FactoryBlockPattern.start()
 			.aisle('       ','BBBBBBB','BCCCCCB','BBBBBBB','       ')
-			.aisle('AAAAAAA','A#####A','BDDDDDB','A#####A','AAAAAAA')
+			.aisle('AAAAAAA','A#####A','ZDDDDDZ','A#####A','AAAAAAA')
 			.aisle('AFFFFFA','B#####B','LEEEEEL','B#####B','AFFFFFA')
-			.aisle('AAAAAAA','A#####A','BDDDDDB','A#####A','AAAAAAA')
+			.aisle('AAAAAAA','A#####A','ZDDDDDZ','A#####A','AAAAAAA')
 			.aisle('       ','BBBXBBB','BCCCCCB','BBBMBBB','       ')
 			.where('X', Predicates.controller(Predicates.blocks(definition.get())))
 			.where('A', Predicates.blocks('gtceu:atomic_casing'))
@@ -243,6 +244,9 @@ const registerGTCEuMachines = (event) => {
 				.or(Predicates.abilities(PartAbility.EXPORT_FLUIDS_4X).setExactLimit(1)))
 			.where('M', Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1)
 				.or(Predicates.blocks('gtceu:high_temperature_smelting_casing')))
+			.where('Z', Predicates.blocks('gtceu:high_temperature_smelting_casing')
+				.or(Predicates.abilities(PartAbility.IMPORT_FLUIDS_4X).setMaxGlobalLimited(2))
+				.or(Predicates.abilities(PartAbility.EXPORT_FLUIDS_4X).setMaxGlobalLimited(2)))
 			.where('#', Predicates.air())
 			.where(' ', Predicates.any())
 			.build()
@@ -250,6 +254,7 @@ const registerGTCEuMachines = (event) => {
 		.workableCasingModel(
 			"gtceu:block/casings/gcym/high_temperature_smelting_casing",
 			"gtceu:block/machines/fluid_heater")
+*/
 
 	// Nuclear Fission Reactor - Just keeping it in case we got mod issues
 /*
@@ -380,7 +385,7 @@ const registerGTCEuMachines = (event) => {
 				.or(Predicates.abilities(PartAbility.IMPORT_ITEMS).setPreviewCount(1)))
 			.where('C', Predicates.blocks('gtceu:solid_machine_casing')
 				.or(Predicates.abilities(PartAbility.EXPORT_FLUIDS).setPreviewCount(2))
-				.or(Predicates.abilities(PartAbility.INPUT_ENERGY).setExactLimit(1).setPreviewCount(1))
+				.or(Predicates.abilities(PartAbility.INPUT_ENERGY).setMinGlobalLimited(1).setMaxGlobalLimited(2).setPreviewCount(2))
 				.or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1).setPreviewCount(1)))
 			.where('D', Predicates.blocks('create:metal_girder'))
 			.where('E', Predicates.blocks('gtceu:steam_machine_casing'))

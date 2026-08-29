@@ -1,0 +1,15 @@
+{
+	"item.toolbelt.belt": "Tool Belt",
+	"item.toolbelt.pouch": "Belt Pouch",
+	"key.toolbelt.category": "Tool Belt",
+	"key.toolbelt.cycle.left": "Cycle Tool Left",
+	"key.toolbelt.cycle.right": "Cycle Tool Right",
+	"key.toolbelt.open": "Swap Tool",
+	"key.toolbelt.slot": "Open Belt Slot Inventory",
+	"text.toolbelt": "Tool Belt",
+	"text.toolbelt.empty": "EMPTY",
+	"text.toolbelt.extract": "EXTRACT",
+	"text.toolbelt.insert": "INSERT",
+	"text.toolbelt.swap": "SWAP",
+	"text.toolbelt.tooltip": "Upgrades: %s (%s slots)"
+}

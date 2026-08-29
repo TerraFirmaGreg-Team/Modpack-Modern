@@ -1,0 +1,29 @@
+{
+	"type": "minecraft:random_patch",
+	"config": {
+		"feature": {
+			"feature": "tfg:earth/plant/dry_grass",
+			"placement": [
+				{
+					"type": "minecraft:block_predicate_filter",
+					"predicate": {
+						"type": "minecraft:matching_blocks",
+						"blocks": "minecraft:air"
+					}
+				},
+				{
+					"type": "block_predicate_filter",
+					"predicate": {
+						"type": "would_survive",
+						"state": {
+							"Name": "tfg:plant/dry_grass"
+						}
+					}
+				}
+			]
+		},
+		"tries": 64,
+		"xz_spread": 12,
+		"y_spread": 2
+	}
+}

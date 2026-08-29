@@ -1,0 +1,13 @@
+{
+  "ingredient": "tfg:vintage_corn_whiskey",
+  "thirst": 5,
+  "intoxication": 4000,
+  "may_drink_when_full": true,
+  "effects": [
+    {
+      "type": "minecraft:haste",
+      "duration": 9600,
+      "amplifier": 1
+    }
+  ]
+}

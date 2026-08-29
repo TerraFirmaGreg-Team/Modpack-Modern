@@ -1,0 +1,23 @@
+{
+  "version": "2.0",
+  "description": "GTCEu Terminal - Bus Configuration (Item I/O)",
+  "buses": [],
+  "patterns": [
+    {
+      "blockIdPattern": "gtceu:*_input_bus",
+      "componentType": "INPUT_BUS"
+    },
+    {
+      "blockIdPattern": "gtceu:*_output_bus",
+      "componentType": "OUTPUT_BUS"
+    },
+    {
+      "blockIdPattern": "gtceu:*steam*input_bus*",
+      "componentType": "STEAM_INPUT_BUS"
+    },
+    {
+      "blockIdPattern": "gtceu:*steam*output_bus*",
+      "componentType": "STEAM_OUTPUT_BUS"
+    }
+  ]
+}

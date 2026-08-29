@@ -70,6 +70,12 @@ function registerTFGEquipmentData(event) {
 		13,
 		15
 	)
+		event.itemDamageResistance(
+		'minecraft:netherite_boots',
+		13,
+		13,
+		15
+	)
 	event.itemDamageResistance(
 		'create:netherite_diving_boots',
 		13,

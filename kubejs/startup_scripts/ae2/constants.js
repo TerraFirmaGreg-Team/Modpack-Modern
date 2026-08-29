@@ -1,50 +1,6 @@
 // priority: -100
 "use strict";
 
-global.AE2_DISABLED_ITEMS = [
-    // Инструменты
-    'ae2:certus_quartz_sword',
-    'ae2:nether_quartz_sword',
-    'ae2:fluix_sword',
-    'ae2:certus_quartz_wrench',
-    'ae2:nether_quartz_wrench',
-    'ae2:fluix_upgrade_smithing_template',
-    'ae2:certus_quartz_axe',
-    'ae2:nether_quartz_axe',
-    'ae2:fluix_axe',
-    'ae2:certus_quartz_hoe',
-    'ae2:nether_quartz_hoe',
-    'ae2:fluix_hoe',
-    'ae2:certus_quartz_shovel',
-    'ae2:nether_quartz_shovel',
-    'ae2:fluix_shovel',
-    'ae2:certus_quartz_pickaxe',
-    'ae2:nether_quartz_pickaxe',
-    'ae2:fluix_pickaxe',
-    'ae2:entropy_manipulator',
-    'ae2:charged_staff',
-    'ae2:name_press',
-    'ae2:charger',
-    'ae2:fe_p2p_tunnel',
-
-    // Блоки
-    'ae2:vibration_chamber',
-    'ae2:crank',
-    'ae2:spatial_anchor',
-    'ae2:inscriber',
-    'ae2:growth_accelerator',
-    'ae2:sky_stone_chest',
-    'ae2:smooth_sky_stone_chest',
-    'ae2:sky_stone_tank',
-    
-    // Другое
-    'ae2:meteorite_compass',
-    'ae2:silicon',
-    'ae2:creative_energy_cell',
-    'ae2:tiny_tnt',
-    'ae2:crystal_resonance_generator'
-];
-
 // Glass Cable
 global.AE2_GLASS_CABLES = [
     'ae2:white_glass_cable',

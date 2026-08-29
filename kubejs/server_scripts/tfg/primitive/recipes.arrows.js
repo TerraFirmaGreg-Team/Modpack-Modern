@@ -1,6 +1,26 @@
 "use strict";
 
 function registerTFGArrowRecipes(event) {
+
+	event.shaped('tfg:unstrung_bow', [
+		'AA',
+		'AB'
+	], {
+		A: '#forge:rods/wooden',
+		B: '#forge:tools/knives'
+	}).id('tfg:shaped/unstrung_bow')
+
+	event.shaped('minecraft:bow', [
+		'AB',
+		'BB'
+	], {
+		A: 'tfg:unstrung_bow',
+		B: '#forge:string'
+	}).id('tfg:shaped/bow')
+
+	event.shapeless('4x minecraft:stick', ['tfc:tree_roots', '#forge:tools/knives'])
+		.id('tfg:shapeless/roots_to_stick')
+
 	// Arrow Parts
 	event.recipes.tfc.knapping(
 		'4x tfg:flint_arrow_head',
@@ -21,64 +41,46 @@ function registerTFGArrowRecipes(event) {
 		.duration(20)
 		.EUt(GTValues.VA[GTValues.ULV])
 
+	// Feathers
 	event.recipes.tfc.damage_inputs_shapeless_crafting(
 		event.shapeless('4x tfg:fletching', [
-			'minecraft:feather',
+			['minecraft:feather', 'tfg:wraptor_wool', 'wan_ancient_beasts:glider_feather'],
 			'#forge:tools/knives'
 		]).id('tfg:shapeless/fletching'))
 
-	event.recipes.gtceu.assembler('tfg:assembler/fletching')
+	event.recipes.gtceu.cutter('tfg:assembler/fletching')
 		.itemInputs('1x minecraft:feather')
 		.itemOutputs('4x tfg:fletching')
 		.duration(20)
-		.circuit(4)
 		.EUt(GTValues.VA[GTValues.ULV])
 
-	event.shaped('minecraft:arrow', [
-		' A ',
-		' B ',
-		' C '
-	], {
-		A: 'tfg:flint_arrow_head',
-		B: '#forge:rods/wooden',
-		C: 'tfg:fletching'
-	}).id('tfg:shaped/arrow')
-
-	event.shaped('minecraft:arrow', [
-		' A ',
-		' B ',
-		' C '
-	], {
-		A: 'primitive_creatures:tt_5',
-		B: '#forge:rods/wooden',
-		C: 'tfg:fletching'
-	}).id('tfg:shaped/arrow_shard')
-
-	// Wraptor feathers
-	event.recipes.tfc.damage_inputs_shapeless_crafting(
-		event.shapeless('4x tfg:fletching', [
-			'tfg:wraptor_wool',
-			'#forge:tools/knives'
-		]).id('tfg:shapeless/wraptor_feather_fletching'))
-
-	event.recipes.gtceu.assembler('tfg:assembler/wraptor_feather_fletching')
+	event.recipes.gtceu.cutter('tfg:assembler/wraptor_feather_fletching')
 		.itemInputs('1x tfg:wraptor_wool')
 		.itemOutputs('4x tfg:fletching')
 		.duration(20)
-		.circuit(4)
 		.EUt(GTValues.VA[GTValues.ULV])
 
-	// Glider feathers
-	event.recipes.tfc.damage_inputs_shapeless_crafting(
-		event.shapeless('4x tfg:fletching', [
-			'wan_ancient_beasts:glider_feather',
-			'#forge:tools/knives'
-		]).id('tfg:shapeless/glider_feather_fletching'))
-
-	event.recipes.gtceu.assembler('tfg:assembler/glider_feather_fletching')
+	event.recipes.gtceu.cutter('tfg:assembler/glider_feather_fletching')
 		.itemInputs('1x wan_ancient_beasts:glider_feather')
 		.itemOutputs('4x tfg:fletching')
 		.duration(20)
-		.circuit(4)
 		.EUt(GTValues.VA[GTValues.ULV])
+
+	// Arrows
+	event.shapeless('minecraft:arrow', [
+		['tfg:flint_arrow_head', 'primitive_creatures:tt_5', 'species:werefang'],
+		'#forge:rods/wooden',
+		['tfg:fletching', 'tfg:hardwood_strip']
+	]).id('tfg:shaped/arrow')
+
+	event.shapeless('minecraft:arrow', [
+		'minecraft:bone',
+		'#forge:rods/wooden', 
+		['tfg:fletching', 'tfg:hardwood_strip'],
+		'#forge:tools/knives'
+	]).id('tfg:shaped/arrow_bone')
+
+	event.recipes.tfc.no_remainder_shapeless_crafting(
+		event.shapeless('minecraft:arrow', ['tfc:bone_needle', '#forge:rods/wooden', ['tfg:fletching', 'tfg:hardwood_strip']]))
+			.id('tfg:shaped/arrow_bone_needle')
 }

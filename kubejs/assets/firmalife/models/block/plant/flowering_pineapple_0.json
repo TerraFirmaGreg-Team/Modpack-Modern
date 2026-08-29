@@ -1,0 +1,8 @@
+{
+"parent": "firmalife:block/plant/pineapple_0",
+	"textures": {
+		"0": "firmalife:block/berry_bush/pineapple_flowering",
+		"1": "firmalife:block/berry_bush/pineapple_leaves",
+		"particle": "firmalife:block/berry_bush/flowering_pineapple_bush"
+	}
+}

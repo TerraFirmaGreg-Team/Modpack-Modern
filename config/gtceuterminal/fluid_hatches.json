@@ -1,0 +1,57 @@
+{
+  "version": "2.0",
+  "description": "GTCEu Terminal - Fluid Hatch Configuration",
+  "hatches": [],
+  "patterns": [
+    {
+      "blockIdPattern": "gtceu:*_input_hatch",
+      "componentType": "INPUT_HATCH",
+      "capacity": "1x"
+    },
+    {
+      "blockIdPattern": "gtceu:*_input_hatch_1x",
+      "componentType": "INPUT_HATCH_1X",
+      "capacity": "1x"
+    },
+    {
+      "blockIdPattern": "gtceu:*_input_hatch_4x",
+      "componentType": "QUAD_INPUT_HATCH",
+      "capacity": "4x"
+    },
+    {
+      "blockIdPattern": "gtceu:*_input_hatch_9x",
+      "componentType": "NONUPLE_INPUT_HATCH",
+      "capacity": "9x"
+    },
+    {
+      "blockIdPattern": "gtceu:*_output_hatch",
+      "componentType": "OUTPUT_HATCH",
+      "capacity": "1x"
+    },
+    {
+      "blockIdPattern": "gtceu:*_output_hatch_1x",
+      "componentType": "OUTPUT_HATCH_1X",
+      "capacity": "1x"
+    },
+    {
+      "blockIdPattern": "gtceu:*_output_hatch_4x",
+      "componentType": "QUAD_OUTPUT_HATCH",
+      "capacity": "4x"
+    },
+    {
+      "blockIdPattern": "gtceu:*_output_hatch_9x",
+      "componentType": "NONUPLE_OUTPUT_HATCH",
+      "capacity": "9x"
+    },
+    {
+      "blockIdPattern": "gtceu:*_pump_fluid_hatch",
+      "componentType": "PUMP_FLUID_HATCH",
+      "capacity": "1x"
+    },
+    {
+      "blockIdPattern": "gtceu:*_tank_valve",
+      "componentType": "TANK_VALVE",
+      "capacity": "1x"
+    }
+  ]
+}

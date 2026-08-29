@@ -3,13 +3,13 @@
 	"config": {
 		"hole_count": 1,
 		"requires_block_below": true,
-		"rock_count": 4,
+		"rock_count": 3,
 		"state": {
 			"Name": "minecraft:lava",
 			"Properties": {
 				"falling": "true"
 			}
 		},
-		"valid_blocks": "#base_stone_nether"
+		"valid_blocks": "#minecraft:base_stone_nether"
 	}
 }

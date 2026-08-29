@@ -1,0 +1,51 @@
+colors:
+  # Whether named bracket codes are case-sensitive.
+  # true  -> &[Phoenix] and &[phoenix] are two completely different codes.
+  # false -> &[Phoenix] and &[phoenix] both resolve to whichever was registered first (lowercased).
+  # Requires a game restart to take effect.
+  # Default: true
+  namedCodesCaseSensitive: true
+
+  # Add custom single-character color codes here.
+  # Format: 'char:hex' (e.g., 'z:BF00FF')
+  # Do NOT use vanilla codes (0-9, a-f, k-o, r) as keys.
+  customColors:
+    - z:BF00FF
+
+  # Add custom single-character gradient/effect codes here.
+  # Format: 'char:colorSpeed:moveSpeed:movementId:hex1,hex2...'
+  # Movement IDs: wave, shake, pulse, static_rainbow, glitch, discord, breath, stretch, none, mirror, vertical, spacing, slant, rainbow_wave, chroma, shear, chroma_wave, wobble, compress, fade, 3d, matrix_rain, 3d_spin, liquid_plasma
+  # Do NOT use vanilla codes (0-9, a-f, k-o, r) as keys.
+  customGradients:
+    - w:1.0:1.0:wave:rainbow
+    - s:0.0:2.5:shake:FFFFFF
+    - p:1.0:2.0:pulse:FF0000,990000
+    - *:1.5:0.0:static_rainbow:rainbow
+    - g:1.0:3.0:glitch:00FF00,005500
+    - y:2.5:0.0:none:FF0000,FFFF00,00FF00
+    - ^:1.0:0.0:discord:FC8EAC,8F00FF
+    - u:0.0:2.0:breath:FF00FF
+    - %:0.0:2.0:stretch:FF00FF
+    - ~:1.0:1.0:wave:FF0000,8B0000
+
+  # Named color codes using bracket syntax: '[name]:hex'
+  # Use as &[name] or §[name] in text.
+  # Example: '[phoenix]:BF00FF'  ->  use as &[phoenix] in chat
+  # Named codes are completely separate from single-char codes — no overlap ever.
+  namedColors:
+    - [phoenix]:BF00FF
+
+  # Named gradient/effect codes using bracket syntax.
+  # Format: '[name]:colorSpeed:moveSpeed:movementId:hex1,hex2...'
+  # Use as &[name] or §[name] in text.
+  # Movement IDs: wave, shake, pulse, static_rainbow, glitch, discord, breath, stretch, none, mirror, vertical, spacing, slant, rainbow_wave, chroma, shear, chroma_wave, wobble, compress, fade, 3d, matrix_rain, 3d_spin, liquid_plasma
+  # SPECIAL MODIFIERS GUIDE:
+  #  - 'size': 'moveSpeed' acts as a text scaling multiplier. (e.g., [big]:0.0:1.5:size:FFFFFF)
+  #  - 'spacing': 'moveSpeed' adds horizontal pixel padding gaps between characters. (e.g., [spaced]:0.0:4.0:spacing:FFFFFF)
+  #  - 'slant': 'moveSpeed' defines custom italic angle parameters. Vanilla is 0.25f. (e.g., [speed]:0.0:0.45:slant:FFFFFF)
+  #  - 'shear': 'moveSpeed' controls vertical progressive staircase step ratios. (e.g., [uphill]:0.0:0.2:shear:FFFFFF)
+  #  - '3d': 'moveSpeed' specifies the number of stacked structural extrusion layers. (e.g., [3d_block]:0.0:5.0:3d:FFCC00,443300)
+  namedGradients:
+    - [rainbow]:1.0:1.0:wave:rainbow
+    - [matrix]:1.0:3.0:glitch:00FF00,005500
+

@@ -8,7 +8,7 @@ function registerTFGVenusMaterials(event) {
 		//.components('2x mercury', '1x tungsten', '1x rhodium', '2x sulfur')
 		.color(0xC94D4E)
 		.secondaryColor(0x9A296A)
-		.iconSet(GTMaterialIconSet.getByName('tfc_copper'))
+		.iconSet(GTMaterialIconSet.getByName('botryoidal'))
 		.ingot()
 		.flags(
 			GTMaterialFlags.FORCE_GENERATE_BLOCK,

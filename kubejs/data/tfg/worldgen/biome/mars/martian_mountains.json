@@ -17,13 +17,15 @@
 		},
 		"additions_sound": {
 			"sound": "tfg:ambient.mars_land.additions",
-			"tick_chance": 0.0111
+			"tick_chance": 0.0015
 		},
 		"music": {
 			"max_delay": 24000,
 			"min_delay": 12000,
 			"replace_current_music": false,
-			"sound": "minecraft:music.overworld.badlands"
+			"sound": {
+				"sound_id": "tfg:music.mars"
+			}
 		},
 		"sky_color": 15117444,
 		"water_color": 4159204,
@@ -109,7 +111,14 @@
 	},
 	"spawners": {
 		"ambient": [],
-		"axolotls": [],
+		"axolotls": [
+			{
+				"type": "jellies:pentetic",
+				"maxCount": 2,
+				"minCount": 1,
+				"weight": 100
+			}
+		],
 		"creature": [
 			{
 				"type": "tfg:wraptor",
@@ -146,6 +155,24 @@
 				"maxCount": 3,
 				"minCount": 2,
 				"weight": 50
+			},
+			{
+				"type": "wan_ancient_beasts:charger",
+				"maxCount": 4,
+				"minCount": 3,
+				"weight": 40
+			},
+			{
+				"type": "wan_ancient_beasts:raider",
+				"maxCount": 4,
+				"minCount": 3,
+				"weight": 40
+			},
+			{
+				"type": "wan_ancient_beasts:snatcher",
+				"maxCount": 4,
+				"minCount": 2,
+				"weight": 20
 			}
 		],
 		"misc": [],

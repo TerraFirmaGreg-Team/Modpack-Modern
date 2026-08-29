@@ -1,0 +1,12 @@
+{
+  "ingredient": {
+    "item": "firmalife:food/cooked_pasta"
+  },
+  "category": "other",
+  "hunger": 4,
+  "saturation": 2,
+  "grain": 1,
+  "protein": 1.5,
+  "decay_modifier": 2.8,
+  "dairy": 0.5
+}

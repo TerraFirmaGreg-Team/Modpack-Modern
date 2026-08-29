@@ -1,0 +1,14 @@
+{
+  "ingredient": {
+    "item": "firmalife:food/cookie_dough_ice_cream"
+  },
+  "category": "other",
+  "hunger": 4,
+  "saturation": 1,
+  "water": 1,
+  "decay_modifier": 5,
+  "grain": 0.5,
+  "dairy": 1.0,
+  "cooling": 8,
+  "sugary": 3
+}

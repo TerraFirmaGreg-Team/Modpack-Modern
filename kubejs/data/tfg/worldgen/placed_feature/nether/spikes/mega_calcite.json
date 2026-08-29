@@ -16,9 +16,12 @@
 					"absolute": 42
 				},
 				"max_inclusive": {
-					"absolute": 128
+					"below_top": 6
 				}
 			}
+		},
+		{
+			"type": "minecraft:biome"
 		},
 		{
 			"type": "minecraft:block_predicate_filter",
@@ -36,9 +39,6 @@
 					}
 				]
 			}
-		},
-		{
-			"type": "minecraft:biome"
 		}
 	]
 }

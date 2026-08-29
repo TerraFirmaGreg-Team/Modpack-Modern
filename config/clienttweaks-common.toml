@@ -1,15 +1,73 @@
 
-[tweaks]
+[customization]
+	#Items that count as torches for the offhand-torch tweak options.
+	torchItems = ["minecraft:torch", "minecraft:soul_torch", "tconstruct:stone_torch"]
+	#Items that are allowed to place torches from the offhand if offhandTorchWithToolOnly is enabled.
+	torchTools = ["minecraft:wooden_pickaxe", "minecraft:stone_pickaxe", "minecraft:iron_pickaxe", "minecraft:golden_pickaxe", "minecraft:diamond_pickaxe", "minecraft:netherite_pickaxe", "tconstruct:pickaxe", "tconstruct:hammer"]
+	#Additional items that count as weapons for the offhand-shield hiding tweak options.
+	shieldWeapons = ["tetra:modular_sword"]
+	#Additional items that count as shields for the offhand-shield hiding tweak options.
+	shieldItems = ["basicshields:wooden_shield", "basicshields:golden_shield", "basicshields:diamond_shield", "basicshields:netherite_shield"]
+	#Items that count as fireworks for the offhand-firework tweak options.
+	fireworkItems = ["minecraft:firework_rocket"]
+	#Blocks that should be protected in the prevent accidental mining tweak.
+	fragileBlocks = ["minecraft:large_amethyst_bud", "minecraft:medium_amethyst_bud", "minecraft:small_amethyst_bud", "minecraft:budding_amethyst"]
+	#Additional items that count as food for the offhand-torch and -use tweak options.
+	foodItems = ["supplementaries:lunch_basket"]
+
+[mobility]
 	#This option will let you climb ladders automatically by just looking upwards, rather than requiring a key to be held down.
 	autoClimbLadder = false
-	#This prevents the last torch in the offhand from being placed.
-	doNotUseLastTorch = false
-	#This option will hide your offhand item. It can be toggled via an optional key binding.
-	hideOffhandItem = false
-	#This option will hide your own potion particle effects for your client (other players will still see them).
-	hideOwnParticleEffects = false
+	#This option will disable step assist added by other mods.
+	disableStepAssist = false
+
+[recipeBook]
+	#This option makes the recipe book not shift the inventory when opened. Works best with smaller GUI scales / bigger resolutions.
+	noRecipeBookShifting = false
+	#This option makes right clicking the recipe book search bar clear it.
+	clearRecipeBookOnRightClick = true
+	#This option makes clicking ghost ingredients in the crafting grid navigate to it in the recipe book.
+	navigateToGhostIngredients = true
+	#This option retains recipe book search text when reopening the recipe book.
+	retainRecipeBookSearch = true
+
+[ui]
+	#This adds back the master volume slider to the options screen. Saves you a click!
+	masterVolumeSlider = true
+	#This adds back the music volume slider to the options screen. Saves you a click!
+	musicVolumeSlider = true
+
+[rendering]
 	#This option will hide your shield unless you are holding a weapon.
 	hideShieldUnlessHoldingWeapon = true
+	#This option will hide your shield unless you are actively blocking.
+	hideShieldUnlessBlocking = false
+	#This option will hide your offhand item. It can be toggled via an optional key binding.
+	hideOffhandItem = false
+	#This option will hide your empty main hand in first person.
+	hideEmptyMainHand = false
+	#This option will hide both first person hands. It can be toggled via an optional key binding.
+	hideHands = false
+	#This option will hide your own potion particle effects for your client (other players will still see them).
+	hideOwnParticleEffects = false
+
+[creativeMode]
+	#This option will increase the hitbox of random-offset blocks in creative mode, making it easier to break them quickly.
+	creativeBreakingSupport = true
+	#This option makes right clicking the creative menu search bar clear it.
+	clearCreativeMenuSearchOnRightClick = true
+	#This option retains creative menu search text when reopening the creative menu search tab.
+	retainCreativeMenuSearch = true
+
+[mining]
+	#This prevents the last durability from being used up.
+	doNotUseLastMending = false
+	#Prevents accidental mining of certain fragile blocks like budding amethysts.
+	preventAccidentalMining = false
+
+[torches]
+	#This prevents the last torch in the offhand from being placed.
+	doNotUseLastTorch = false
 	#This prevents torches from being placed from your offhand at all.
 	noOffhandTorchAtAll = false
 	#This prevents torches from being placed from your offhand if you have a block in your main hand.
@@ -20,42 +78,24 @@
 	noOffhandTorchWithEmptyHand = false
 	#This restricts torches to be placed from the offhand only when you're holding a tool in your main hand.
 	offhandTorchWithToolOnly = false
-	#This prevents fireworks from being launched from your offhand if you are wearing an Elytra, unless you're flying.
-	noOffhandFireworksWithElytra = true
-	#This option will disable step assist added by other mods.
-	disableStepAssist = false
-	#This option will disable log stripping.
-	disableLogStripping = false
-	#This adds back the master volume slider to the options screen. Saves you a click!
-	masterVolumeSlider = true
-	#This adds back the music volume slider to the options screen. Saves you a click!
-	musicVolumeSlider = true
+
+[building]
 	#This option will make iron fences and glass panes have a bigger hitbox while placing them, making it easier to aim.
 	paneBuildingSupport = true
-	#This option makes the recipe book not shift the inventory when opened. Works best with smaller GUI scales / bigger resolutions.
-	noRecipeBookShifting = false
+	#This option will make chains have a bigger hitbox while placing them, making it easier to aim.
+	chainBuildingSupport = true
+
+[interactions]
+	#This option will disable log stripping.
+	disableLogStripping = false
+	#This option will disable log stripping unless the player is holding shift.
+	logStrippingRequiresShift = false
 	#This option will disable paving when holding a block in your offhand.
 	disablePavingWithBlockInOffhand = true
-	#This prevents the last durability from being used up.
-	doNotUseLastMending = false
 	#This prevents items from being used from your offhand if you have food in your main hand.
 	noOffhandUseWithFood = false
-	#Prevents accidental mining of certain fragile blocks like budding amethysts.
-	preventAccidentalMining = false
-
-[customization]
-	#Items that count as torches for the offhand-torch tweak options.
-	torchItems = ["minecraft:torch", "minecraft:soul_torch", "tconstruct:stone_torch"]
-	#Items that are allowed to place torches from the offhand if offhandTorchWithToolOnly is enabled.
-	torchTools = ["minecraft:wooden_pickaxe", "minecraft:stone_pickaxe", "minecraft:iron_pickaxe", "minecraft:golden_pickaxe", "minecraft:diamond_pickaxe", "minecraft:netherite_pickaxe", "tconstruct:pickaxe", "tconstruct:hammer"]
-	#Items that count as weapons for the offhand-shield hiding tweak options.
-	shieldWeapons = ["tetra:modular_sword"]
-	#Items that count as shields for the offhand-shield hiding tweak options.
-	shieldItems = ["basicshields:wooden_shield", "basicshields:golden_shield", "basicshields:diamond_shield", "basicshields:netherite_shield"]
-	#Items that count as fireworks for the offhand-firework tweak options.
-	fireworkItems = ["minecraft:firework_rocket"]
-	#Blocks that should be protected in the prevent accidental mining tweak.
-	fragileBlocks = ["minecraft:large_amethyst_bud", "minecraft:medium_amethyst_bud", "minecraft:small_amethyst_bud", "minecraft:budding_amethyst"]
-	#Items that count as food for the offhand-torch and -use tweak options.
-	foodItems = ["supplementaries:lunch_basket"]
+	#This prevents fireworks from being launched from your offhand if you are wearing an Elytra, unless you're flying.
+	noOffhandFireworksWithElytra = true
+	#This prevents sweet berries from being placed unless the player is holding shift or placing them on dirt or farmland.
+	berryPlacementRequiresShiftOrDirt = false
 

@@ -8,6 +8,9 @@
     "min_y": 80,
     "max_y": 180,
     "random_name": "mars_surface_nickel_galena",
+    "project": false,
+    "project_offset": false,
+    "near_lava": false,
     "blocks": [
       {
         "replace": [
@@ -411,6 +414,33 @@
           },
           {
             "block": "gtceu:dacite_cobaltite_ore",
+            "weight": 10
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/quartzite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:quartzite_sphalerite_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:quartzite_nickel_ore",
+            "weight": 20
+          },
+          {
+            "block": "gtceu:quartzite_galena_ore",
+            "weight": 30
+          },
+          {
+            "block": "gtceu:quartzite_silver_ore",
+            "weight": 10
+          },
+          {
+            "block": "gtceu:quartzite_cobaltite_ore",
             "weight": 10
           }
         ]

@@ -19,6 +19,13 @@
 	#Multiplier used for calculating exhaustion from speed when a handcar is used.
 	#Range: 0.0 ~ 1.0
 	handcarHungerMultiplier = 0.009999999776482582
+	#.
+	#Rollers clear snow-encased tracks when rolling over them.
+	rollersClearSnow = true
+	#.
+	#Allow creative mode players to relocate trains without distance restrictions.
+	#[@cui:RequiresRelog]
+	unlimitedCreativeRelocation = false
 
 #.
 #Semaphore settings

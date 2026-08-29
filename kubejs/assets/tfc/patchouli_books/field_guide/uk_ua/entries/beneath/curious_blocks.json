@@ -5,17 +5,26 @@
 	"pages": [
 		{
 			"type": "patchouli:crafting",
-			"recipe": "beneath:crafting/blackstone_aqueduct",
-			"text": "Піроксенітовий акведук дозволяє проводити лаву на будь-яку відстань."
+			"name": "Глина душ",
+			"text": "Акведуки також можуть переносити лаву та інші рідини, що може бути корисним під час будівництва $(l:beneath/hellforge)пекельної кузні$().",
+			"anchor": "blackstone_aqueduct",
+			"recipe": "tfg:shaped/blackstone_aqueduct"
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "tfg:shapeless/hellbricks_from_soot",
-			"text": "Пекельні цеглини - це будівельні блоки, які також використовуються для Пекельної кузні."
+			"name": "Сірка",
+			"text": "Пекельна цегла — це будівельний блок, який також використовується для $(l:beneath/hellforge)пекельної кузні$().",
+			"recipe": "tfg:shapeless/hellbricks"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"name": "Тюк соломи",
+			"text": "П’єдестал із піроксеніту можна використати, щоб виставити предмети, якими хочеш похвалитися!",
+			"item": "beneath:ancient_altar"
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "beneath:crafting/blackstone_brick",
+			"recipe": "tfg:shaped/blackstone_brick_to_bricks",
 			"text": "Мігматитова та піроксенітова цегла виготовляється як звичайна цегла, і це включає необхідність створення цегляного виробу."
 		}
 	],

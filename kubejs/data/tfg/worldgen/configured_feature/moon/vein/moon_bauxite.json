@@ -8,6 +8,9 @@
     "min_y": 0,
     "max_y": 80,
     "random_name": "moon_bauxite",
+    "project": false,
+    "project_offset": false,
+    "near_lava": false,
     "blocks": [
       {
         "replace": [

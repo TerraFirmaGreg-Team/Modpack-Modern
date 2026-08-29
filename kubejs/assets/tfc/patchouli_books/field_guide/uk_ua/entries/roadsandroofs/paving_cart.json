@@ -1,17 +1,17 @@
 {
-  "name": "Візок для мощення",
+  "name": "Асфальтувальний візок",
   "category": "tfc:roadsandroofs",
   "icon": "tfg:rnr_plow",
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "$(thing)Асфальтувальний візок$() — це спеціалізований візок, який використовується для швидкого та ефективного укладання дорожнього покриття. Його можна заповнити дорожніми матеріалами та $(thing)Подрібненою основою$() для створення доріг. Візок також може заповнювати вже наявні блоки основи"
+      "text": "$(thing)Асфальтувальний візок$() — це спеціалізований візок, який використовується для швидкого та ефективного укладання дорожнього покриття. Його можна заповнити дорожніми матеріалами та $(thing)подрібненою основою$() для створення доріг. Візок також може заповнювати вже наявні блоки основи"
     },
     {
       "type": "patchouli:image",
-      "title": "Візок для мощення",
+      "title": "Асфальтувальний візок",
       "images": [
-      "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart.png"
+        "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart.png"
       ],
       "border": true
     },
@@ -19,7 +19,7 @@
       "type": "patchouli:image",
       "title": "Повзунок регулювання ширини",
       "images": [
-      "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_gui_width.png"
+        "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_gui_width.png"
       ],
       "border": true,
       "text": "Візок дозволяє регулювати ширину шляху через GUI"
@@ -28,7 +28,7 @@
       "type": "patchouli:image",
       "title": "Шлях змінної ширини",
       "images": [
-      "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_path_width.png"
+        "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_path_width.png"
       ],
       "border": true
     },
@@ -36,7 +36,7 @@
       "type": "patchouli:image",
       "title": "Кнопка випадкового вибору",
       "images": [
-      "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_gui_random.png"
+        "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_gui_random.png"
       ],
       "border": true,
       "text": "Візок має режим, у якому матеріали укладаються у випадковий візерунок."
@@ -45,7 +45,7 @@
       "type": "patchouli:image",
       "title": "Шлях із випадкових матеріалів",
       "images": [
-      "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_path_random.png"
+        "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_path_random.png"
       ],
       "border": true
     }
@@ -54,5 +54,5 @@
   "extra_recipe_mappings": {
     "tfg:rnr_plow": 0
   },
-  "sortnum": 20
+  "sortnum": 23
 }

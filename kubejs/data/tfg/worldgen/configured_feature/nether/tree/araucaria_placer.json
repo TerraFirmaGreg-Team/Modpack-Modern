@@ -1,0 +1,10 @@
+{
+	"type": "tfc:multiple",
+	"__comment__": "Workaround to make these trees embedded in the ground. Set a block to air, set the block below as moss, then place the tree.",
+	"config": {
+		"features": [
+			"tfg:nether/tree/araucaria_empty",
+			"tfg:nether/tree/araucaria"
+		]
+	}
+}

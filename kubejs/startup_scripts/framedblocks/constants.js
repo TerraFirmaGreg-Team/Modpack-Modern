@@ -1,12 +1,6 @@
 // priority: -100
 "use strict";
 
-global.FRAMEDBLOCKS_DISABLED_ITEMS = [
-    "framedblocks:framed_soul_torch",
-    "framedblocks:framed_torch",
-    "framedblocks:framed_obsidian_pressure_plate"
-];
-
 /** @satisfies {Special.Item[]} */
 global.FRAMED_HALF_BLOCKS = /** @type {const} */ ([
     "framedblocks:framed_slope",
