@@ -52,7 +52,6 @@ function registerGTCEUItemTags(event) {
         event.add("gtceu:extruder_molds", mold);
     });
 
-    // @ts-expect-error According to KJS docs adding tags to tags is supported.
     event.add("gtceu:molds", "#gtceu:casting_molds", "#gtceu:extruder_molds", "gtceu:empty_mold");
 
     // Groups up concrete blocks into tags.
@@ -141,6 +140,16 @@ function registerGTCEUItemTags(event) {
     ];
     drums.forEach(drum => {
         event.add('gtceu:drums', drum);
+    });
+
+    const wafers = [
+        'gtceu:silicon_wafer',
+        'gtceu:phosphorus_wafer',
+        'gtceu:naquadah_wafer',
+        'gtceu:neutronium_wafer'
+    ];
+    wafers.forEach(wafer => {
+        event.add('tfg:wafers', wafer);
     });
 };
 
