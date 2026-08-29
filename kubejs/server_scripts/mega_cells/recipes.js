@@ -245,7 +245,6 @@ const registerMegaCellsRecipes = (event) => {
 			'64x gtceu:uhpic_chip',
 			'64x ae2:engineering_processor',
 			'64x ae2:logic_processor',
-			'64x ae2:logic_processor',
 			'64x ae2:calculation_processor',
             '64x megacells:accumulation_processor',
             '64x megacells:accumulation_processor',
