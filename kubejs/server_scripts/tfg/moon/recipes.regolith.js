@@ -100,7 +100,8 @@ function registerTFGMoonRegolithRecipes(event) {
 	const DUSTY_ORE_EXCEPTIONS = [
 		GTMaterials.Goethite,
 		GTMaterials.Cassiterite,
-		GTMaterials.Bauxite
+		GTMaterials.Bauxite,
+		GTMaterials.CertusQuartz
 	]
 
 	// Otherwise everything else just centrifuges into its dust version
