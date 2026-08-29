@@ -17,6 +17,7 @@
 - Fixed teleporting to the beneath not clearing out gravel above your spawn point, which caused damage/death (#4795) @Pyritie
 - Fixed the AE2 Midnight resource pack so it actually works when requesting items @ArkeHD
 - Fixed inconsistent phantom membrane into thread recipes, and fixed repair recipes for all clothes (#4860) @Pyritie
+- Fixed inconsistent wood planks to sticks lathe recipe for treated wood (#4629) @NeonNoise
 ### Mods
 #### Greate
 - Fix mechanical presses not being placed correctly on belts, depots, and weighted ejectors
@@ -24,6 +25,8 @@
 - Fix crash when placing saws next to two kinetic sources with different rotation directions
 - Add tooltips to kinetic pumps to show mB/t
 - Fix crash when viewing the ponder for mechanical belts
+#### Create: Railways Navigator
+- Added as an optional mod
 
 ## [0.13.8] - 25-08-2026
 ### Breaking changes
