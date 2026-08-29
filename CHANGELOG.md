@@ -1,6 +1,12 @@
 # Changelog
 
 ## Unreleased
+### Breaking Changes
+- Many AE2-related recipes have been changed. Everything outside of very basic components (such as interfaces and pattern providers) must be crafted on the moon in a new multiblock @TomPlop
+- This multiblock is also significantly easier to set up with railgun automation, which is also very highly encouraged so you can get easy crafts without leaving your earth base @TomPlop
+- The multiblock starts out pretty easy to use but more advanced components require interacting with a new mechanic involving budding certus quartz blocks @TomPlop
+- New quests have been added to the AE2 chapter explaining how to set up the railgun automation with the multiblock and how the certus quartz blocks mechanic works @TomPlop
+- Added MEGA pattern providers (2 rows) as an intermediate between regular pattern providers (1 row) and Extended pattern providers (4 rows) @TomPlop
 ### Changes
 - Added a new model and texture for pineapple bushes (#4776) @eggyplantsu
 - Added new textures for the red steel flask @NaharaSabrea
