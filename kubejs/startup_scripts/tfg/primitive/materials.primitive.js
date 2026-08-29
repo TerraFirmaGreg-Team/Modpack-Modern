@@ -39,6 +39,7 @@ function registerTFGPrimitiveMaterials(event) {
 		.secondaryColor(0x3d8021)
 		.iconSet(GTMaterialIconSet.getByName('monoclinic_gem_horizontal'))
 		.addOreByproducts('sulfur', 'rhenium', 'molybdenite')
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
 	// Metals/minerals
 	event.create('aluminium_silicate')
@@ -106,7 +107,14 @@ function registerTFGPrimitiveMaterials(event) {
 		.color(0xB49AA2)
 		.secondaryColor(0x60545F)
 
-	// Weak colored steel
+	// Weak steel
+    event.create('tfg:weak_steel')
+        .ingot()
+        .liquid()
+        .components('1x nickel', '1x black_bronze', '2x steel')
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.NO_SMELTING, GTMaterialFlags.DISABLE_ALLOY_BLAST)
+		.iconSet(GTMaterialIconSet.METALLIC)
+
 	event.create('tfg:weak_blue_steel')
 		.dust()
 		.ingot()

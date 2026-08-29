@@ -145,11 +145,32 @@ function registerTFGTagPrefixes(event) {
 	TFGTagPrefix.toolHeadSaw.setIgnored(GTMaterials.get('tfg:arsenic_bronze'))
 	TFGTagPrefix.toolHeadScythe.setIgnored(GTMaterials.get('tfg:arsenic_bronze'))
 	TFGTagPrefix.toolHeadKnife.setIgnored(GTMaterials.get('tfg:arsenic_bronze'))
-}
 
-function excludeAllGemsButNormal(material) {
-	TagPrefix.gemChipped.setIgnored(material);
-	TagPrefix.gemFlawed.setIgnored(material);
-	TagPrefix.gemFlawless.setIgnored(material);
-	TagPrefix.gemExquisite.setIgnored(material);
+	TagPrefix.dustSmall.setIgnored(GTMaterials.get('tfg:enriched_cr_y_residue'))
+	TagPrefix.dustSmall.setIgnored(GTMaterials.get('tfg:cr_y_residue'))
+	TagPrefix.dustTiny.setIgnored(GTMaterials.get('tfg:enriched_cr_y_residue'))
+	TagPrefix.dustTiny.setIgnored(GTMaterials.get('tfg:cr_y_residue'))
+
+	excludeAllButFlawedGem(GTMaterials.get('tfg:garnet_residual_slag'));
+	excludeAllButFlawedGem(GTMaterials.get('tfg:inert_slag'));
+
+	function excludeAllButFlawedGem(material) {
+		TagPrefix.dustTiny.setIgnored(material)
+		TagPrefix.dustSmall.setIgnored(material)
+		TagPrefix.dust.setIgnored(material)
+		TagPrefix.gemChipped.setIgnored(material);
+		TagPrefix.gem.setIgnored(material)
+		TagPrefix.gemFlawless.setIgnored(material);
+		TagPrefix.gemExquisite.setIgnored(material);
+		TagPrefix.block.setIgnored(material);
+	}
+
+
+	function excludeAllGemsButNormal(material) {
+		TagPrefix.gemChipped.setIgnored(material);
+		TagPrefix.gemFlawed.setIgnored(material);
+		TagPrefix.gemFlawless.setIgnored(material);
+		TagPrefix.gemExquisite.setIgnored(material);
+	}
+
 }

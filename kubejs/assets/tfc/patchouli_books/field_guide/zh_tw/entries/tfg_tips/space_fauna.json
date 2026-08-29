@@ -158,8 +158,8 @@
 			"type": "patchouli:entity",
 			"entity": "species:cruncher",
 			"scale": 0.7,
-			"name": "Cruncher",
-			"text": "$(thing)Crunchers$() are territorial $(item)miniboss$() predators. Feed them meat to stop their regeneration. They can also be eaten."
+			"name": "巨嘴獸",
+			"text": "$(thing)巨嘴獸$()是有領地意識的$(item)小Boss$()，餵食肉類阻止牠們回血。他們能食用。"
 		},
 		{
 			"type": "patchouli:entity",

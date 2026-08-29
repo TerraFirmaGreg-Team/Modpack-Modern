@@ -1,15 +1,19 @@
 // Priority: 0
 "use strict";
 /*
- * Some Crops Are Originally from [TerraFirmaCraft] (https://github.com/TerraFirmaCraft/TerraFirmaCraft)
+ * Some Crops Are Originally from [TerraFirmaCraft](https://github.com/TerraFirmaCraft/TerraFirmaCraft)
  * Licensed under the EUPL, Version 1.2.
  * You may obtain a copy of the Licence at:
  * https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12
  * 
- * Some Crops Are Originally from [Beneath] (https://github.com/eerussianguy/Beneath)
+ * Some Crops Are Originally from [Beneath](https://github.com/eerussianguy/Beneath)
  * Licensed under the MIT License.
  * Copyright (c) 2022 eerussianguy
  * https://github.com/eerussianguy/Beneath/blob/1.21.x/LICENSE
+ * 
+ * Cotton is from [TFC Textile](https://github.com/AtobaAzul/tfc-textile/)
+ * Licensed under the MIT License.
+ * Copyright (c) 2025 oatobaazul
  */
 
 const registerTFGCrops = (event) => {
@@ -26,13 +30,17 @@ const registerTFGCrops = (event) => {
 		.stages(4)
 		.doubleStages(2)
 		.hardness(0.4)
-		.growthModifier(0.8)
+		.growthModifier(1.2)
+		.tagBlock('tfc:plants')
 		.tagBlock('minecraft:mineable/hoe')
+		.tagBlock('tfc:mineable_with_sharp_tool')
 		.tagBlock('minecraft:flowers')
 		.tagBlock('tfc:crops')
 		.existingProductItem('tfg:sunflower_product')
 		.seedItem(seed => {
 			seed.texture('tfg:item/sunflower_seed')
+			seed.tag('tfc:seeds')
+			seed.tag('forge:seeds')
 		})
 		.deadBlock(dead => {
 			dead.hardness(0.2)
@@ -47,8 +55,9 @@ const registerTFGCrops = (event) => {
 		.food('tfg:sunflower_product')
 		.hardness(0.2)
 		.tagBoth('tfc:wild_crops')
+		.tagBlock('tfc:plants')
 		.tagBlock('minecraft:mineable/hoe')
-		.tagBlock('minecraft:flowers')
+		.tagBlock('tfc:mineable_with_sharp_tool')
 		.tagBlock('tfc:can_be_snow_piled')
 		.tagItem('c:hidden_from_recipe_viewers')
 
@@ -61,9 +70,15 @@ const registerTFGCrops = (event) => {
 		.stages(3)
 		.doubleStages(3)
 		.hardness(0.4)
+		.tagBlock('tfc:plants')
 		.tagBlock('minecraft:mineable/hoe')
+		.tagBlock('tfc:mineable_with_sharp_tool')
 		.tagBlock('minecraft:flowers')
 		.tagBlock('tfc:crops')
+		.seedItem(seed => {
+			seed.tag('tfc:seeds')
+			seed.tag('forge:seeds')
+		})
 		.deadBlock(dead => {
 			dead.hardness(0.2)
 			dead.soundType('crop')
@@ -77,8 +92,9 @@ const registerTFGCrops = (event) => {
 		.food('tfg:rapeseed_product')
 		.hardness(0.2)
 		.tagBoth('tfc:wild_crops')
+		.tagBlock('tfc:plants')
 		.tagBlock('minecraft:mineable/hoe')
-		.tagBlock('minecraft:flowers')
+		.tagBlock('tfc:mineable_with_sharp_tool')
 		.tagBlock('tfc:can_be_snow_piled')
 		.tagItem('c:hidden_from_recipe_viewers')
 
@@ -93,7 +109,9 @@ const registerTFGCrops = (event) => {
 		.hardness(0.4)
 		.growthModifier(1.2)
 		.expiryModifier(1.2)
+		.tagBlock('tfc:plants')
 		.tagBlock('minecraft:mineable/hoe')
+		.tagBlock('tfc:mineable_with_sharp_tool')
 		.tagBlock('minecraft:flowers')
 		.tagBlock('tfc:crops')
 		.productItem(product => {
@@ -102,6 +120,8 @@ const registerTFGCrops = (event) => {
 		})
 		.seedItem(seed => {
 			seed.texture('tfg:item/flax_seed')
+			seed.tag('tfc:seeds')
+			seed.tag('forge:seeds')
 		})
 		.deadBlock(dead => {
 			dead.hardness(0.2)
@@ -116,8 +136,48 @@ const registerTFGCrops = (event) => {
 		.food('tfg:flax_product')
 		.hardness(0.2)
 		.tagBoth('tfc:wild_crops')
-		.tagBlock('minecraft:flowers')
+		.tagBlock('tfc:plants')
 		.tagBlock('minecraft:mineable/hoe')
+		.tagBlock('tfc:mineable_with_sharp_tool')
+		.tagBlock('tfc:can_be_snow_piled')
+		.tagItem('c:hidden_from_recipe_viewers')
+
+	// Cotton
+	event.create('tfg:cotton', 'tfc:double_crop')
+		.mapColor('plant')
+		.soundType('crop')
+		.nutrient($FarmlandBlockEntity.NutrientType.NITROGEN)
+		.stages(1)
+		.doubleStages(4)
+		.hardness(0.4)
+		.tagBlock('tfc:plants')
+		.tagBlock('minecraft:mineable/hoe')
+		.tagBlock('tfc:mineable_with_sharp_tool')
+		.tagBlock('tfc:crops')
+		.productItem(product => {
+			product.texture('tfg:item/cotton_product')
+		})
+		.seedItem(seed => {
+			seed.texture('tfg:item/cotton_seed')
+			seed.tag('tfc:seeds')
+			seed.tag('forge:seeds')
+		})
+		.deadBlock(dead => {
+			dead.hardness(0.2)
+			dead.soundType('crop')
+			dead.tagBlock('minecraft:mineable/hoe')
+			dead.tagBlock('tfg:dead_crops')
+		})
+	event.create('tfg:cotton_wild', 'tfc:wild_crop')
+		.type('double')
+		.soundType('crop')
+		.seeds('tfg:cotton_seeds')
+		.food('tfg:cotton_product')
+		.hardness(0.2)
+		.tagBoth('tfc:wild_crops')
+		.tagBlock('tfc:plants')
+		.tagBlock('minecraft:mineable/hoe')
+		.tagBlock('tfc:mineable_with_sharp_tool')
 		.tagBlock('tfc:can_be_snow_piled')
 		.tagItem('c:hidden_from_recipe_viewers')
 
@@ -128,7 +188,9 @@ const registerTFGCrops = (event) => {
 		.nutrient($FarmlandBlockEntity.NutrientType.PHOSPHOROUS)
 		.stages(5)
 		.hardness(0.4)
+		.tagBlock('tfc:plants')
 		.tagBlock('minecraft:mineable/hoe')
+		.tagBlock('tfc:mineable_with_sharp_tool')
 		.tagBlock('tfc:crops')
 		.existingProductItem('tfg:lentil_product')
 		.seedItem(seed => {
@@ -149,7 +211,9 @@ const registerTFGCrops = (event) => {
 		.food('tfg:lentil_product')
 		.hardness(0.2)
 		.tagBoth('tfc:wild_crops')
+		.tagBlock('tfc:plants')
 		.tagBlock('minecraft:mineable/hoe')
+		.tagBlock('tfc:mineable_with_sharp_tool')
 		.tagBlock('tfc:can_be_snow_piled')
 		.tagItem('c:hidden_from_recipe_viewers')
 
@@ -160,7 +224,9 @@ const registerTFGCrops = (event) => {
 		.nutrient($FarmlandBlockEntity.NutrientType.POTASSIUM)
 		.stages(5)
 		.hardness(0.4)
+		.tagBlock('tfc:plants')
 		.tagBlock('minecraft:mineable/hoe')
+		.tagBlock('tfc:mineable_with_sharp_tool')
 		.tagBlock('tfc:crops')
 		.existingProductItem('tfg:radish_product')
 		.seedItem(seed => {
@@ -181,7 +247,9 @@ const registerTFGCrops = (event) => {
 		.food('tfg:radish_product')
 		.hardness(0.2)
 		.tagBoth('tfc:wild_crops')
+		.tagBlock('tfc:plants')
 		.tagBlock('minecraft:mineable/hoe')
+		.tagBlock('tfc:mineable_with_sharp_tool')
 		.tagBlock('tfc:can_be_snow_piled')
 		.tagItem('c:hidden_from_recipe_viewers')
 
@@ -193,7 +261,9 @@ const registerTFGCrops = (event) => {
 		.stages(1)
 		.doubleStages(4)
 		.hardness(0.4)
+		.tagBlock('tfc:plants')
 		.tagBlock('minecraft:mineable/hoe')
+		.tagBlock('tfc:mineable_with_sharp_tool')
 		.tagBlock('tfc:crops')
         .requiresStick(true)
 		.existingProductItem('tfg:cucumber_product')
@@ -214,7 +284,9 @@ const registerTFGCrops = (event) => {
 		.food('tfg:cucumber_product')
 		.hardness(0.2)
 		.tagBoth('tfc:wild_crops')
+		.tagBlock('tfc:plants')
 		.tagBlock('minecraft:mineable/hoe')
+		.tagBlock('tfc:mineable_with_sharp_tool')
 		.tagBlock('tfc:can_be_snow_piled')
 		.tagItem('c:hidden_from_recipe_viewers')
 
@@ -228,7 +300,9 @@ const registerTFGCrops = (event) => {
 		.nutrient($FarmlandBlockEntity.NutrientType.POTASSIUM)
 		.stages(5)
 		.hardness(0.4)
+		.tagBlock('tfc:plants')
 		.tagBlock('minecraft:mineable/hoe')
+		.tagBlock('tfc:mineable_with_sharp_tool')
 		.tagBlock('tfc:crops')
 		.existingProductItem('tfg:peanut_product')
 		.seedItem(seed => {
@@ -249,7 +323,9 @@ const registerTFGCrops = (event) => {
 		.food('tfg:peanut_product')
 		.hardness(0.2)
 		.tagBoth('tfc:wild_crops')
+		.tagBlock('tfc:plants')
 		.tagBlock('minecraft:mineable/hoe')
+		.tagBlock('tfc:mineable_with_sharp_tool')
 		.tagBlock('tfc:can_be_snow_piled')
 		.tagItem('c:hidden_from_recipe_viewers')
 
@@ -260,7 +336,9 @@ const registerTFGCrops = (event) => {
 		.nutrient($FarmlandBlockEntity.NutrientType.NITROGEN)
 		.stages(5)
 		.hardness(0.4)
+		.tagBlock('tfc:plants')
 		.tagBlock('minecraft:mineable/hoe')
+		.tagBlock('tfc:mineable_with_sharp_tool')
 		.tagBlock('tfc:crops')
 		.existingProductItem('tfg:cassava_product')
 		.seedItem(seed => {
@@ -281,7 +359,9 @@ const registerTFGCrops = (event) => {
 		.food('tfg:cassava_product')
 		.hardness(0.2)
 		.tagBoth('tfc:wild_crops')
+		.tagBlock('tfc:plants')
 		.tagBlock('minecraft:mineable/hoe')
+		.tagBlock('tfc:mineable_with_sharp_tool')
 		.tagBlock('tfc:can_be_snow_piled')
 		.tagItem('c:hidden_from_recipe_viewers')
 
@@ -292,7 +372,9 @@ const registerTFGCrops = (event) => {
 		.nutrient($FarmlandBlockEntity.NutrientType.POTASSIUM)
 		.stages(5)
 		.hardness(0.4)
+		.tagBlock('tfc:plants')
 		.tagBlock('minecraft:mineable/hoe')
+		.tagBlock('tfc:mineable_with_sharp_tool')
 		.tagBlock('tfc:crops')
 		.existingProductItem('tfg:beans_product')
 		.seedItem(seed => {
@@ -313,7 +395,9 @@ const registerTFGCrops = (event) => {
 		.food('tfg:beans_product')
 		.hardness(0.2)
 		.tagBoth('tfc:wild_crops')
+		.tagBlock('tfc:plants')
 		.tagBlock('minecraft:mineable/hoe')
+		.tagBlock('tfc:mineable_with_sharp_tool')
 		.tagBlock('tfc:can_be_snow_piled')
 		.tagItem('c:hidden_from_recipe_viewers')
 
@@ -324,7 +408,9 @@ const registerTFGCrops = (event) => {
 		.nutrient($FarmlandBlockEntity.NutrientType.NITROGEN)
 		.stages(5)
 		.hardness(0.4)
+		.tagBlock('tfc:plants')
 		.tagBlock('minecraft:mineable/hoe')
+		.tagBlock('tfc:mineable_with_sharp_tool')
 		.tagBlock('tfc:crops')
 		.existingProductItem('beneath:ghost_pepper')
 		.seedItem(seed => {
@@ -345,7 +431,9 @@ const registerTFGCrops = (event) => {
 		.food('beneath:ghost_pepper')
 		.hardness(0.2)
 		.tagBoth('tfc:wild_crops')
+		.tagBlock('tfc:plants')
 		.tagBlock('minecraft:mineable/hoe')
+		.tagBlock('tfc:mineable_with_sharp_tool')
 		.tagBlock('tfc:can_be_snow_piled')
 		.tagItem('c:hidden_from_recipe_viewers')
 
@@ -359,7 +447,9 @@ const registerTFGCrops = (event) => {
 		.nutrient($FarmlandBlockEntity.NutrientType.PHOSPHOROUS)
 		.stages(3)
 		.hardness(0.4)
+		.tagBlock('tfc:plants')
 		.tagBlock('minecraft:mineable/hoe')
+		.tagBlock('tfc:mineable_with_sharp_tool')
 		.tagBlock('tfc:crops')
 		.existingProductItem('betterend:amber_root_product')
 		.seedItem(seed => {
@@ -380,7 +470,9 @@ const registerTFGCrops = (event) => {
 		.food('betterend:amber_root_product')
 		.hardness(0.2)
 		.tagBoth('tfc:wild_crops')
+		.tagBlock('tfc:plants')
 		.tagBlock('minecraft:mineable/hoe')
+		.tagBlock('tfc:mineable_with_sharp_tool')
 		.tagBlock('tfc:can_be_snow_piled')
 		.tagItem('c:hidden_from_recipe_viewers')
 
@@ -391,7 +483,9 @@ const registerTFGCrops = (event) => {
 		.nutrient($FarmlandBlockEntity.NutrientType.POTASSIUM)
 		.stages(3)
 		.hardness(0.4)
+		.tagBlock('tfc:plants')
 		.tagBlock('minecraft:mineable/hoe')
+		.tagBlock('tfc:mineable_with_sharp_tool')
 		.tagBlock('tfc:crops')
 		.existingProductItem('betterend:blossom_berry_product')
 		.seedItem(seed => {
@@ -412,7 +506,9 @@ const registerTFGCrops = (event) => {
 		.food('betterend:blossom_berry_product')
 		.hardness(0.2)
 		.tagBoth('tfc:wild_crops')
+		.tagBlock('tfc:plants')
 		.tagBlock('minecraft:mineable/hoe')
+		.tagBlock('tfc:mineable_with_sharp_tool')
 		.tagBlock('tfc:can_be_snow_piled')
 		.tagItem('c:hidden_from_recipe_viewers')
 
@@ -437,7 +533,9 @@ const registerTFGCrops = (event) => {
 		.nutrient($FarmlandBlockEntity.NutrientType.NITROGEN)
 		.stages(3)
 		.hardness(0.4)
+		.tagBlock('tfc:plants')
 		.tagBlock('minecraft:mineable/hoe')
+		.tagBlock('tfc:mineable_with_sharp_tool')
 		.tagBlock('tfc:crops')
 		.deadBlock(dead => {
 			dead.hardness(0.2)
@@ -463,7 +561,9 @@ const registerTFGCrops = (event) => {
 		.seeds('betterend:cave_pumpkin_plant_seeds')
 		.hardness(0.2)
 		.tagBoth('tfc:wild_crops')
+		.tagBlock('tfc:plants')
 		.tagBlock('minecraft:mineable/hoe')
+		.tagBlock('tfc:mineable_with_sharp_tool')
 		.tagBlock('tfc:can_be_snow_piled')
 		.tagItem('c:hidden_from_recipe_viewers')
 
@@ -475,7 +575,9 @@ const registerTFGCrops = (event) => {
 		.nutrient($FarmlandBlockEntity.NutrientType.PHOSPHOROUS)
 		.stages(3)
 		.hardness(0.4)
+		.tagBlock('tfc:plants')
 		.tagBlock('minecraft:mineable/hoe')
+		.tagBlock('tfc:mineable_with_sharp_tool')
 		.tagBlock('tfc:crops')
 		.box(2, 0, 2, 14, 4, 14)
 		.existingProductItem('betterend:chorus_mushroom_product')
@@ -499,7 +601,9 @@ const registerTFGCrops = (event) => {
 		.food('betterend:chorus_mushroom_product')
 		.hardness(0.2)
 		.tagBoth('tfc:wild_crops')
+		.tagBlock('tfc:plants')
 		.tagBlock('minecraft:mineable/hoe')
+		.tagBlock('tfc:mineable_with_sharp_tool')
 		.tagBlock('tfc:can_be_snow_piled')
 		.tagItem('c:hidden_from_recipe_viewers')
 
@@ -511,7 +615,9 @@ const registerTFGCrops = (event) => {
 		.nutrient($FarmlandBlockEntity.NutrientType.POTASSIUM)
 		.stages(3)
 		.hardness(0.4)
+		.tagBlock('tfc:plants')
 		.tagBlock('minecraft:mineable/hoe')
+		.tagBlock('tfc:mineable_with_sharp_tool')
 		.tagBlock('tfc:crops')
 		.existingProductItem('betterend:shadow_berry_product')
 		.seedItem(seed => {
@@ -533,7 +639,9 @@ const registerTFGCrops = (event) => {
 		.food('betterend:shadow_berry_product')
 		.hardness(0.2)
 		.tagBoth('tfc:wild_crops')
+		.tagBlock('tfc:plants')
 		.tagBlock('minecraft:mineable/hoe')
+		.tagBlock('tfc:mineable_with_sharp_tool')
 		.tagBlock('tfc:can_be_snow_piled')
 		.tagItem('c:hidden_from_recipe_viewers')
 
@@ -545,7 +653,9 @@ const registerTFGCrops = (event) => {
 		.nutrient($FarmlandBlockEntity.NutrientType.PHOSPHOROUS)
 		.stages(3)
 		.hardness(0.4)
+		.tagBlock('tfc:plants')
 		.tagBlock('minecraft:mineable/hoe')
+		.tagBlock('tfc:mineable_with_sharp_tool')
 		.tagBlock('tfc:crops')
 		.existingProductItem('betterend:bolux_mushroom_product')
 		.seedItem(seed => {
@@ -567,7 +677,9 @@ const registerTFGCrops = (event) => {
 		.food('betterend:bolux_mushroom_product')
 		.hardness(0.2)
 		.tagBoth('tfc:wild_crops')
+		.tagBlock('tfc:plants')
 		.tagBlock('minecraft:mineable/hoe')
+		.tagBlock('tfc:mineable_with_sharp_tool')
 		.tagBlock('tfc:can_be_snow_piled')
 		.tagItem('c:hidden_from_recipe_viewers')
 

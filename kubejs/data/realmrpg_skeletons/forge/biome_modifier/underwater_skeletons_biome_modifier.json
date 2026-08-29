@@ -1,0 +1,6 @@
+{
+	"type": "forge:add_features",
+	"biomes": "#realmrpg_skeletons:has_underwater_skeletons",
+	"features": "realmrpg_skeletons:underwater_skeletons",
+	"step": "vegetal_decoration"
+}

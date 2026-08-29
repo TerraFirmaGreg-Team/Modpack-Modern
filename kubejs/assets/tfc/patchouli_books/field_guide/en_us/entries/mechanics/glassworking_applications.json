@@ -1,5 +1,4 @@
 {
-  "__comment__": "This file was automatically created by mcresources",
   "name": "Glass Products",
   "category": "tfc:mechanics",
   "icon": "minecraft:glass",
@@ -19,12 +18,22 @@
     },
     {
       "type": "patchouli:multiblock",
-      "multiblock": {
-        "mapping": { "C": "#tfc:glass_pouring_table", "0": "#tfc:glass_pouring_table" },
-        "pattern": [ [ "CCCC", "CCC0", "CCCC", "CCCC" ] ]
-      },
       "text": "Once the glass is cooled, it can be broken with a $(l:mechanics/glassworking#saw)Gem Saw$() to obtain.",
-      "border": true
+      "border": true,
+      "multiblock": {
+        "mapping": {
+          "C": "#tfc:glass_pouring_table",
+          "0": "#tfc:glass_pouring_table"
+        },
+        "pattern": [
+          [
+            "CCCC",
+            "CCC0",
+            "CCCC",
+            "CCCC"
+          ]
+        ]
+      }
     },
     {
       "type": "patchouli:text",
@@ -33,23 +42,37 @@
     },
     {
       "type": "patchouli:multiblock",
-      "multiblock": {
-        "mapping": { "C": "#tfc:glass_basin_blocks", "0": "#tfc:glass_basin_blocks" },
-        "pattern": [ [ " C ", "C C", " C " ], [ "   ", " 0 ", "   " ] ]
-      },
       "text": "Once the glass is cooled, it can be broken with a $(l:mechanics/glassworking#saw)Gem Saw$() to obtain.",
-      "border": true
+      "border": true,
+      "multiblock": {
+        "mapping": {
+          "C": "#tfc:glass_basin_blocks",
+          "0": "#tfc:glass_basin_blocks"
+        },
+        "pattern": [
+          [
+            " C ",
+            "C C",
+            " C "
+          ],
+          [
+            "   ",
+            " 0 ",
+            "   "
+          ]
+        ]
+      }
     },
     {
       "type": "patchouli:crafting",
+      "text": "$(thing)Brass plated blocks$() can be created by holding a $(thing)brass plate$() and $(item)$(k:key.use)$() on any $(thing)stone brick$().",
       "title": "Glassworking Blocks",
-      "recipe": "tfc:crafting/white_kaolin_clay",
-      "text": "$(thing)Brass plated blocks$() can be created by holding a $(thing)brass plate$() and $(item)$(k:key.use)$() on any $(thing)stone brick$()."
+      "recipe": "tfc:crafting/white_kaolin_clay"
     },
     {
       "type": "patchouli:text",
-      "anchor": "coloring",
       "text": "Glass has a natural color based on the type of $(l:mechanics/glassworking)Glass Batch$() that was used. Other colors can be made using a $(l:mechanics/bowls)Bowl$().$(br2)To use, place the $(l:mechanics/bowls)Bowl$() on the ground, then $(item)$(k:key.use)$() the required $(thing)Powder$(). Before $(thing)Pouring$(), use the $(thing)Blowpipe$() on the bowl to add the powder to the batch.",
+      "anchor": "coloring",
       "title": "Coloring Glass"
     },
     {
@@ -64,108 +87,307 @@
     {
       "type": "tfc:table_small",
       "strings": [
-        { "text": "" },
-        { "text": "C" },
-        { "text": "T" },
-        { "fill": "0xff42f2" },
-        { "fill": "0x8af3ff" },
-        { "fill": "0x526cff" },
-        { "fill": "0xe3e3e3" },
-        { "fill": "0xe69407" },
-        { "fill": "0xc738c9" },
-        { "fill": "0xffe81c" },
-        { "fill": "0x48ff1f" },
-        { "fill": "0xe01414" },
-        { "fill": "0x0c9400" },
-        { "fill": "0x188a9e" },
-        { "fill": "0x7d4f00" },
-        { "fill": "0x6e059c" },
-        { "fill": "0x7d7d7d" },
-        { "fill": "0xbdbdbd" },
-        { "fill": "0x000000" },
-        { "text": "Silica" },
-        { "fill": "0x3d42a8" },
-        { "fill": "0xb33e3e" },
-        { "fill": "0x3eb340" },
-        { "fill": "0x3eb340" },
-        { "fill": "0x3eb340" },
-        { "fill": "0x3eb340" },
-        { "fill": "0x3eb340" },
-        { "fill": "0x3eb340" },
-        { "fill": "0x3eb340" },
-        { "fill": "0x3eb340" },
-        { "fill": "0x3eb340" },
-        { "fill": "0x3eb340" },
-        { "fill": "0x3eb340" },
-        { "fill": "0x3eb340" },
-        { "fill": "0x3eb340" },
-        { "fill": "0x3eb340" },
-        { "fill": "0x3eb340" },
-        { "fill": "0x3eb340" },
-        { "text": "Hematitic" },
-        { "fill": "0xb33e3e" },
-        { "fill": "0x3eb340" },
-        { "fill": "0xb33e3e" },
-        { "fill": "0xb33e3e" },
-        { "fill": "0xb33e3e" },
-        { "fill": "0x3eb340" },
-        { "fill": "0x3d42a8" },
-        { "fill": "0x3eb340" },
-        { "fill": "0x3eb340" },
-        { "fill": "0x3eb340" },
-        { "fill": "0x3eb340" },
-        { "fill": "0x3eb340" },
-        { "fill": "0x3eb340" },
-        { "fill": "0x3eb340" },
-        { "fill": "0x3eb340" },
-        { "fill": "0x3eb340" },
-        { "fill": "0x3eb340" },
-        { "fill": "0x3eb340" },
-        { "text": "Olivine" },
-        { "fill": "0xb33e3e" },
-        { "fill": "0x3eb340" },
-        { "fill": "0xb33e3e" },
-        { "fill": "0xb33e3e" },
-        { "fill": "0xb33e3e" },
-        { "fill": "0xb33e3e" },
-        { "fill": "0xb33e3e" },
-        { "fill": "0xb33e3e" },
-        { "fill": "0xb33e3e" },
-        { "fill": "0xb33e3e" },
-        { "fill": "0xb33e3e" },
-        { "fill": "0x3d42a8" },
-        { "fill": "0x3eb340" },
-        { "fill": "0x3eb340" },
-        { "fill": "0x3eb340" },
-        { "fill": "0x3eb340" },
-        { "fill": "0x3eb340" },
-        { "fill": "0x3eb340" },
-        { "text": "Volcanic" },
-        { "fill": "0xb33e3e" },
-        { "fill": "0x3eb340" },
-        { "fill": "0xb33e3e" },
-        { "fill": "0xb33e3e" },
-        { "fill": "0x3d42a8" },
-        { "fill": "0xb33e3e" },
-        { "fill": "0xb33e3e" },
-        { "fill": "0xb33e3e" },
-        { "fill": "0xb33e3e" },
-        { "fill": "0xb33e3e" },
-        { "fill": "0xb33e3e" },
-        { "fill": "0xb33e3e" },
-        { "fill": "0xb33e3e" },
-        { "fill": "0x3eb340" },
-        { "fill": "0x3eb340" },
-        { "fill": "0x3eb340" },
-        { "fill": "0x3eb340" },
-        { "fill": "0x3eb340" }
+        {
+          "text": ""
+        },
+        {
+          "text": "C"
+        },
+        {
+          "text": "T"
+        },
+        {
+          "fill": "0xff42f2"
+        },
+        {
+          "fill": "0x8af3ff"
+        },
+        {
+          "fill": "0x526cff"
+        },
+        {
+          "fill": "0xe3e3e3"
+        },
+        {
+          "fill": "0xe69407"
+        },
+        {
+          "fill": "0xc738c9"
+        },
+        {
+          "fill": "0xffe81c"
+        },
+        {
+          "fill": "0x48ff1f"
+        },
+        {
+          "fill": "0xe01414"
+        },
+        {
+          "fill": "0x0c9400"
+        },
+        {
+          "fill": "0x188a9e"
+        },
+        {
+          "fill": "0x7d4f00"
+        },
+        {
+          "fill": "0x6e059c"
+        },
+        {
+          "fill": "0x7d7d7d"
+        },
+        {
+          "fill": "0xbdbdbd"
+        },
+        {
+          "fill": "0x000000"
+        },
+        {
+          "text": "Silica"
+        },
+        {
+          "fill": "0x3d42a8"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "text": "Hematitic"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3d42a8"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "text": "Olivine"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0x3d42a8"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "text": "Volcanic"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0x3d42a8"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0xb33e3e"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        },
+        {
+          "fill": "0x3eb340"
+        }
       ],
       "text": "The availability of glass colors. 'C' is clear, 'T' is tinted. Colors can only be crafted with certain glass batches.",
       "title": "Glass Color Availability",
       "legend": [
-        { "text": "Can be Crafted", "color": "0x3eb340" },
-        { "text": "Cannot be Crafted", "color": "0xb33e3e" },
-        { "text": "Default Color", "color": "0x3d42a8" }
+        {
+          "text": "Can be Crafted",
+          "color": "0x3eb340"
+        },
+        {
+          "text": "Cannot be Crafted",
+          "color": "0xb33e3e"
+        },
+        {
+          "text": "Default Color",
+          "color": "0x3d42a8"
+        }
       ],
       "columns": 18,
       "first_column_width": 35,
@@ -175,7 +397,10 @@
       "top_buffer": 15,
       "draw_background": true
     },
-    { "type": "patchouli:empty", "draw_filler": false },
+    {
+      "type": "patchouli:empty",
+      "draw_filler": false
+    },
     {
       "type": "tfc:glassworking_recipe",
       "anchor": "lamp_glass",

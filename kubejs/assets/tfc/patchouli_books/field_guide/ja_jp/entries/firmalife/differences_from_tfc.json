@@ -1,0 +1,28 @@
+{
+  "name": "TFCとの違い",
+  "category": "tfc:firmalife",
+  "icon": "tfc:textures/item/food/wheat_bread.png",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Firmalifeは、通常のTFCでの操作方法にいくつかの変更を加えます。$(br2)この章では、TFCと大きく異なる部分を説明します。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l:tfc:firmalife/cheese)チーズ$()はより複雑な工程を経て作られます。$(br2)チーズを設置し、$(l:tfc:firmalife/cellar)貯蔵庫$()で熟成させることも可能です。",
+      "title": "チーズの熟成"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l:tfc:firmalife/bread)パン$()はより複雑な工程を経て作られ、イーストと甘味料が必要になります。$(br2)通常のTFCのパンのレシピではフラットブレッドが作れますが、これはあまり栄養がありません。",
+      "title": "パンの製造"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Firmalifeは砂糖に重点を置いています。$(br2)サトウキビから砂糖を得ることもできますが、ハチミツ（ミツバチから採れる）を使ったり、ビーツから砂糖を作ることもできます！",
+      "title": "甘味料"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 0
+}

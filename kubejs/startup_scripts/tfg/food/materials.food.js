@@ -43,5 +43,8 @@ function registerTFGFoodMaterials(event) {
 	event.create('tfg:peanut_oil')
 		.liquid(new GTFluidBuilder().customStill().state(GTFluidState.LIQUID).temperature(300));
 
+	event.create('tfg:palm_oil')
+		.liquid(new GTFluidBuilder().customStill().state(GTFluidState.LIQUID).temperature(300));
+
 	//#endregion
 };

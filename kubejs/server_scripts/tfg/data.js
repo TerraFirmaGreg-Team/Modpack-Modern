@@ -9,7 +9,8 @@ function registerTFCDataForTFG(event) {
 	registerTFGFoodData(event);
 	registerTFGCropRanges(event);
 	registerTFGFLPlanters(event);
-	registerTFGFauna(event);
+	registerOverworldFauna(event);
+	registerMarsFauna(event);
 	registerTFGEquipmentData(event);
 	registerTFGAquaponicsData(event);
 }
@@ -37,6 +38,8 @@ function registerTFGHeatData(event) {
 	event.itemHeat("tfc:powder/limonite", 1, null, null);
 	event.itemHeat("tfc:powder/sphalerite", 1, null, null);
 	event.itemHeat("tfc:powder/tetrahedrite", 1, null, null);
+	event.itemHeat("tfc:powder/pyrite", 1, null, null);
+	event.itemHeat("tfc:powder/lapis_lazuli", 1, null, null);
 
 	event.itemHeat('tfg:unfired_rod_mold', 1.0, null, null);
 	event.itemHeat('tfg:unfired_spindle_head_mold', 1.0, null, null);
@@ -50,7 +53,6 @@ function registerTFGHeatData(event) {
 	event.itemHeat('betterend:charnia_light_blue', 0.25, null, null)
 	event.itemHeat('betterend:charnia_purple', 0.25, null, null)
 	event.itemHeat('betterend:charnia_red', 0.25, null, null)
-
 }
 
 //#endregion
@@ -204,7 +206,10 @@ function registerTFGItemSize(event) {
 	event.itemSize("gtceu:huge_duct_pipe", "normal", "medium", "huge_duct_pipe");
 
 	// Nuclear Rod
-	event.itemSize(Ingredient.of("#tfg:fission_rods"), "very_large", "heavy");
+	event.itemSize(Ingredient.of("#tfg:fission_rods"), "very_large", "very_heavy");
+
+	// Repair Kit
+	event.itemSize(Ingredient.of("#forge:repair_kit_materials"), "small", "medium");
 
 	// Cables
 	event.itemSize(Ingredient.of("#forge:single_cables").or("#forge:single_wires"), "tiny", "very_light", "cables_1x");
@@ -327,8 +332,8 @@ function registerTFGItemSize(event) {
 	)
 
 	//Universal Compost Bags
-	event.itemSize("tfg:universal_compost_browns_bag", "tiny", "medium")
-	event.itemSize("tfg:universal_compost_greens_bag", "tiny", "medium")
+	event.itemSize("tfg:universal_compost_browns_bag", "tiny", "light");
+	event.itemSize("tfg:universal_compost_greens_bag", "tiny", "light");
 
 
 	//Crafting Station

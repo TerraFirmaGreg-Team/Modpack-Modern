@@ -1,4 +1,7 @@
 {
   "gui.ae2insertexportcard.blacklist": "ブラックリスト",
-  "gui.ae2insertexportcard.whitelist": "ホワイトリスト"
+  "gui.ae2insertexportcard.whitelist": "ホワイトリスト",
+  "item.ae2insertexportcard.export_card": "エクスポートカード",
+  "item.ae2insertexportcard.insert_card": "インポートカード",
+  "itemGroup.ae2insertexportcard": "AE2 Insert Export Card"
 }

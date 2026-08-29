@@ -1,3 +1,15 @@
 {
-  "gui.createstockbridge.address": "Endereço do Pacote:"
+  "block.createstockbridge.ae_bridge": "Ponte de Estoque AE",
+  "gui.createstockbridge.address": "Endereço do Pacote:",
+  "gui.stockbridge.remote_items": "Sistema de Estoque de Itens do Create",
+  "tooltip.stockbridge.remote_item": "Item no Sistema Remoto",
+  "item.createstockbridge.request_pattern": "Padrão de Pedido",
+  "createstockbridge.ponder.ae_stockbridge.header": "Conectando o Sistema de Estoque ao AE",
+  "createstockbridge.ponder.ae_stockbridge.text_1": "A Ponte de Estoque AE interliga o Sistema de Estoque do Create com o AE",
+  "createstockbridge.ponder.ae_stockbridge.text_2": "Clique Direito para vincular a rede de estoque antes de colocar",
+  "createstockbridge.ponder.ae_stockbridge.text_3": "Defina o endereço da Ponte de Estoque AE para coincidir com o endereço Frogport",
+  "createstockbridge.ponder.ae_stockbridge.text_4": "AE",
+  "createstockbridge.ponder.ae_stockbridge.text_5": "AE",
+  "createstockbridge.ponder.ae_stockbridge.text_6": "O AE pode solicitar itens através de 'crafting'",
+  "createstockbridge.ponder.ae_stockbridge.text_7": "O Create pode solicitar itens armazenados a partir do AE"
 }

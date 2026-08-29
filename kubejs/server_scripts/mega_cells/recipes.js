@@ -9,66 +9,96 @@ const registerMegaCellsRecipes = (event) => {
         {id: 'megacells:network/mega_interface_part'},
         {id: 'megacells:network/mega_pattern_provider_part'},
     ], mod: 'megacells' })
+
+    // Energy Cell
     
-    event.recipes.gtceu.assembler('megacells:mega_energy_cell')
+    event.recipes.gtceu.me_assembler('megacells:mega_energy_cell')
         .itemInputs('8x ae2:dense_energy_cell', '8x gtceu:nichrome_quadruple_wire', '4x #gtceu:circuits/iv')
         .itemOutputs('megacells:mega_energy_cell')
-        .circuit(1)
-        .duration(960)
-        .EUt(2048)
+        .duration(20*240)
+        .EUt(GTValues.VA[GTValues.EV])
+		.dimension('ad_astra:moon')
+		.cleanroom(CleanroomType.CLEANROOM)
 		.addMaterialInfo(true)
+        .circuit(9)
+
+    // Pattern Provider
+
+    event.recipes.gtceu.me_assembler('tfg:mega_pattern_provider')
+		.itemInputs(
+			'gtceu:ev_robot_arm',
+			'gtceu:stainless_steel_crate',
+			'4x #forge:plates/stainless_steel',
+			'4x ae2:annihilation_core',
+			'4x ae2:formation_core')
+		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144*10))
+		.itemOutputs(Item.of('megacells:mega_pattern_provider', 1))
+        ["scannerResearch(java.util.function.UnaryOperator)"](b => b
+                .researchStack(Item.of('ae2:pattern_provider'))
+                .duration(20*30)
+                .EUt(GTValues.VA[GTValues.HV]))
+		.duration(20 * 80)
+		.EUt(GTValues.VA[GTValues.EV])
+		.dimension('ad_astra:moon')
+		.circuit(3)
 
     //printed accumulation circuit
-    event.recipes.gtceu.forming_press('megacells:printed_accumulation_processor')
+    event.recipes.gtceu.forming_press('megacells:printed_accumulation_processor_moon')
         .itemInputs('#forge:dense_plates/silicon')
         .notConsumable('megacells:accumulation_processor_press')
         .itemOutputs('megacells:printed_accumulation_processor')
         .duration(20)
         .circuit(1)
-        .EUt(1920)
+        .EUt(GTValues.VA[GTValues.IV])
+        .dimension('ad_astra:moon')
 
-    event.recipes.gtceu.forming_press('megacells:printed_accumulation_processor_moon')
+    event.recipes.gtceu.forming_press('megacells:printed_accumulation_processor_cr')
         .itemInputs('#forge:dense_plates/silicon')
         .notConsumable('megacells:accumulation_processor_press')
         .itemOutputs('2x megacells:printed_accumulation_processor')
         .duration(20)
         .circuit(2)
-        .EUt(1920)
+        .EUt(GTValues.VA[GTValues.IV])
         .dimension('ad_astra:moon')
+		.cleanroom(CleanroomType.CLEANROOM)
 
 	// Accumulation Processor
 
-	event.recipes.gtceu.circuit_assembler('ae2:accumulation_processor_moon')
+	event.recipes.gtceu.me_assembler('ae2:accumulation_processor')
 		.itemInputs(
 			'ae2:printed_silicon',
 			'megacells:printed_accumulation_processor',
 			'#gtceu:circuits/iv',
 			'2x #gtceu:resistors',
 			'1x minecraft:redstone')
-		.inputFluids(Fluid.of('tfg:fluix', 144*5))
+		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144*5))
 		.itemOutputs('megacells:accumulation_processor')
-		.duration(20*5)
-		.EUt(GTValues.VA[GTValues.IV])
-		.cleanroom(CleanroomType.CLEANROOM)
+		.duration(20*40)
+		.EUt(GTValues.VA[GTValues.EV])
+		.dimension('ad_astra:moon')
+        .circuit(1)
 
-	event.recipes.gtceu.circuit_assembler('ae2:accumulation_processor')
+	event.recipes.gtceu.me_assembler('ae2:accumulation_processor_cr')
 		.itemInputs(
 			'ae2:printed_silicon',
 			'megacells:printed_accumulation_processor',
 			'#gtceu:circuits/iv',
+			'gtceu:advanced_smd_resistor',
 			'1x minecraft:redstone')
 		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144*5))
-		.itemOutputs('2x megacells:accumulation_processor')
-		.duration(20*5)
+		.itemOutputs('4x megacells:accumulation_processor')
+		.duration(20*80)
 		.EUt(GTValues.VA[GTValues.EV])
 		.dimension('ad_astra:moon')
+		.cleanroom(CleanroomType.CLEANROOM)
+        .circuit(2)
 
     // Inscriber Silicon Press
     event.recipes.gtceu.laser_engraver('ae2:accumulation_processor_press')
         .itemInputs('tfg:unfinished_inscriber_accumulation_press')
         .notConsumable('#forge:lenses/black')
         .itemOutputs('megacells:accumulation_processor_press')
-        .duration(4000)
+        .duration(20*200)
         .EUt(GTValues.VA[GTValues.IV])
         .cleanroom(CleanroomType.CLEANROOM)
 
@@ -83,28 +113,46 @@ const registerMegaCellsRecipes = (event) => {
 		.EUt(GTValues.VA[GTValues.IV])
 
     //Mega Item Cell Housing
-    event.recipes.gtceu.shaped('megacells:mega_item_cell_housing', [
-        'ABA',
-        'CDC',
-        'BBB'
-    ], {
-        A: 'ae2:quartz_vibrant_glass',
-        B: '#forge:plates/maraging_steel_300',
-        C: '#forge:fine_wires/niobium_titanium',
-        D: '#gtceu:circuits/iv',
-    }).addMaterialInfo().id('tfg:crafting/mega_item_cell_housing')
+
+    event.recipes.gtceu.me_assembler('megacells:mega_item_cell_housing')
+        .itemInputs(
+ 			'1x #gtceu:circuits/iv',
+			'2x #forge:fine_wires/niobium_titanium',
+			'2x #forge:plates/maraging_steel_300',
+			'ae2:quartz_vibrant_glass')
+        .inputFluids(Fluid.of('tfg:cryogenized_fluix', 144*6))
+        .itemOutputs('megacells:mega_item_cell_housing')
+        ["scannerResearch(java.util.function.UnaryOperator)"](b => b
+                .researchStack(Item.of('ae2:item_cell_housing'))
+                .duration(20*60)
+                .EUt(GTValues.VA[GTValues.EV]))
+        .duration(20*60)
+        .EUt(GTValues.VA[GTValues.IV])
+		.dimension('ad_astra:moon')
+        .cleanroom(CleanroomType.CLEANROOM)
+        .addMaterialInfo(true)
+        .circuit(6)
     
     //Mega Fluid Cell Housing
-    event.recipes.gtceu.shaped('megacells:mega_fluid_cell_housing', [
-        'ABA',
-        'CDC',
-        'BBB'
-    ], {
-        A: 'ae2:quartz_vibrant_glass',
-        B: '#forge:plates/incoloy_ma_956',
-        C: '#forge:fine_wires/niobium_titanium',
-        D: '#gtceu:circuits/iv',
-    }).addMaterialInfo().id('tfg:crafting/mega_fluid_cell_housing')
+    
+    event.recipes.gtceu.me_assembler('megacells:mega_fluid_cell_housing')
+        .itemInputs(
+ 			'1x #gtceu:circuits/iv',
+			'2x #forge:fine_wires/niobium_titanium',
+			'2x #forge:plates/incoloy_ma_956',
+			'ae2:quartz_vibrant_glass')
+        .inputFluids(Fluid.of('tfg:cryogenized_fluix', 144*6))
+        .itemOutputs('megacells:mega_fluid_cell_housing')
+        ["scannerResearch(java.util.function.UnaryOperator)"](b => b
+                .researchStack(Item.of('ae2:fluid_cell_housing'))
+                .duration(20*60)
+                .EUt(GTValues.VA[GTValues.EV]))
+        .duration(20*60)
+        .EUt(GTValues.VA[GTValues.IV])
+		.dimension('ad_astra:moon')
+        .cleanroom(CleanroomType.CLEANROOM)
+        .addMaterialInfo(true)
+        .circuit(6)
 
     //cell dock
     event.recipes.gtceu.shaped('megacells:cell_dock', [
@@ -120,7 +168,7 @@ const registerMegaCellsRecipes = (event) => {
     //#region Storage Components
 
     // 1m storage components
-    event.recipes.gtceu.assembly_line('megacells:cell_component_1m')
+    event.recipes.gtceu.me_assembler('megacells:cell_component_1m')
         .itemInputs(
  			'4x #gtceu:circuits/zpm',
 			'32x gtceu:hpic_chip',
@@ -132,28 +180,18 @@ const registerMegaCellsRecipes = (event) => {
         .inputFluids(Fluid.of('tfg:cryogenized_fluix', 4608))
         .inputFluids(Fluid.of('gtceu:polyphenylene_sulfide', 9216))
         .itemOutputs('megacells:cell_component_1m')
-        .duration(2000)
+        ["scannerResearch(java.util.function.UnaryOperator)"](b => b
+                .researchStack(Item.of('ae2:cell_component_256k'))
+                .duration(20*60)
+                .EUt(GTValues.VA[GTValues.LuV]))
+        .duration(20*100)
         .EUt(GTValues.VA[GTValues.LuV])
 		.dimension('ad_astra:moon')
-
-    event.recipes.gtceu.assembly_line('megacells:cell_component_1m_256k')
-        .itemInputs(
- 			'4x #gtceu:circuits/uv',
-			'32x gtceu:hpic_chip',
-			'64x ae2:engineering_processor',
-			'64x ae2:logic_processor',
-			'64x ae2:logic_processor',
-            '16x megacells:accumulation_processor',
-            '2x ae2:cell_component_256k')
-        .inputFluids(Fluid.of('tfg:fluix', 4608))
-        .inputFluids(Fluid.of('gtceu:polyphenylene_sulfide', 9216))
-        .itemOutputs('megacells:cell_component_1m')
-        .duration(4000)
-        .EUt(GTValues.VA[GTValues.ZPM])
         .cleanroom(CleanroomType.CLEANROOM)
+        .circuit(6)
 
     // 4m storage components
-    event.recipes.gtceu.assembly_line('megacells:cell_component_4m')
+    event.recipes.gtceu.me_assembler('megacells:cell_component_4m')
         .itemInputs(
  			'4x #gtceu:circuits/uv',
 			'64x gtceu:advanced_soc',
@@ -165,28 +203,18 @@ const registerMegaCellsRecipes = (event) => {
         .inputFluids(Fluid.of('tfg:cryogenized_fluix', 9216))
         .inputFluids(Fluid.of('gtceu:polyphenylene_sulfide', 18432))
         .itemOutputs('megacells:cell_component_4m')
-        .duration(2000)
-        .EUt(GTValues.VA[GTValues.ZPM])
+        ["scannerResearch(java.util.function.UnaryOperator)"](b => b
+                .researchStack(Item.of('megacells:cell_component_1m'))
+                .duration(20*30)
+                .EUt(GTValues.VA[GTValues.LuV]))
+        .duration(20*200)
+        .EUt(GTValues.VA[GTValues.LuV])
 		.dimension('ad_astra:moon')
-
-    event.recipes.gtceu.assembly_line('megacells:cell_component_4m_256k')
-        .itemInputs(
- 			'4x #gtceu:circuits/uhv',
-			'64x gtceu:advanced_soc',
-			'64x ae2:engineering_processor',
-			'64x ae2:logic_processor',
-			'64x ae2:logic_processor',
-            '64x megacells:accumulation_processor',
-            '2x megacells:cell_component_1m')
-        .inputFluids(Fluid.of('tfg:fluix', 9216))
-        .inputFluids(Fluid.of('gtceu:polyphenylene_sulfide', 18432))
-        .itemOutputs('megacells:cell_component_4m')
-        .duration(4000)
-        .EUt(GTValues.VA[GTValues.UV])
         .cleanroom(CleanroomType.CLEANROOM)
+        .circuit(7)
 
     // 16m storage components
-    event.recipes.gtceu.assembly_line('megacells:cell_component_16m')
+    event.recipes.gtceu.me_assembler('megacells:cell_component_16m')
         .itemInputs(
  			'4x #gtceu:circuits/uhv',
 			'64x gtceu:uhpic_chip',
@@ -200,19 +228,22 @@ const registerMegaCellsRecipes = (event) => {
         .inputFluids(Fluid.of('tfg:fluix', 18432))
         .inputFluids(Fluid.of('gtceu:polyphenylene_sulfide', 36864))
         .itemOutputs('megacells:cell_component_16m')
-        .duration(8000)
-        .stationResearch(b => b.researchStack(Item.of('megacells:cell_component_4m')).EUt(GTValues.VA[GTValues.LuV]).CWUt(32))
-        .EUt(GTValues.VA[GTValues.UV])
+        .duration(20*400)
+        .stationResearch(b => b
+            .researchStack(Item.of('megacells:cell_component_4m'))
+            .EUt(GTValues.VA[GTValues.ZPM])
+            .CWUt(32))
+        .EUt(GTValues.VA[GTValues.ZPM])
         .dimension('ad_astra:moon')
         .cleanroom(CleanroomType.CLEANROOM)
+        .circuit(8)
 
     // 64m storage components
-    event.recipes.gtceu.assembly_line('megacells:cell_component_64m')
+    event.recipes.gtceu.me_assembler('megacells:cell_component_64m')
         .itemInputs(
  			'8x #gtceu:circuits/uhv',
 			'64x gtceu:uhpic_chip',
 			'64x ae2:engineering_processor',
-			'64x ae2:logic_processor',
 			'64x ae2:logic_processor',
 			'64x ae2:calculation_processor',
             '64x megacells:accumulation_processor',
@@ -222,11 +253,15 @@ const registerMegaCellsRecipes = (event) => {
         .inputFluids(Fluid.of('tfg:fluix', 36864))
         .inputFluids(Fluid.of('gtceu:polyphenylene_sulfide', 73728))
         .itemOutputs('megacells:cell_component_64m')
-        .duration(8000)
-        .stationResearch(b => b.researchStack(Item.of('megacells:cell_component_16m')).EUt(GTValues.VA[GTValues.LuV]).CWUt(64))
-        .EUt(GTValues.VA[GTValues.UHV])
+        .duration(20*800)
+        .stationResearch(b => b
+            .researchStack(Item.of('megacells:cell_component_16m'))
+            .EUt(GTValues.VA[GTValues.UV])
+            .CWUt(64))
+        .EUt(GTValues.VA[GTValues.UV])
         .dimension('ad_astra:moon')
         .cleanroom(CleanroomType.CLEANROOM)
+        .circuit(9)
 
     // greater energy card
     event.recipes.gtceu.assembler('megacells:greater_energy_card')
@@ -386,7 +421,7 @@ const registerMegaCellsRecipes = (event) => {
 
     //#region Crafting Unit
 
-    event.recipes.gtceu.assembler('megacells:mega_crafting_unit')
+    event.recipes.gtceu.me_assembler('megacells:mega_crafting_unit')
         .itemInputs(
             '4x megacells:accumulation_processor',
             '4x ae2:logic_processor',
@@ -395,26 +430,14 @@ const registerMegaCellsRecipes = (event) => {
             '#gtceu:circuits/luv',
             '6x #forge:plates/titanium_tungsten_carbide',
             'ae2:crafting_unit')
-        .inputFluids(Fluid.of('tfg:fluix', 144*8))
+        .inputFluids(Fluid.of('tfg:cryogenized_fluix', 144*8))
         .itemOutputs('megacells:mega_crafting_unit')
-        .duration(20*15)
-        .EUt(GTValues.VA[GTValues.IV])
-        .cleanroom(CleanroomType.CLEANROOM)
-
-    event.recipes.gtceu.assembler('megacells:mega_crafting_unit_moon')
-        .itemInputs(
-            '4x megacells:accumulation_processor',
-            '4x ae2:logic_processor',
-            '4x ae2:calculation_processor',
-            '4x ae2:engineering_processor',
-            '#gtceu:circuits/luv',
-            '6x #forge:plates/titanium_tungsten_carbide',
-            'ae2:crafting_unit')
-        .inputFluids(Fluid.of('tfg:cryogenized_fluix', 144*4))
-        .itemOutputs('2x megacells:mega_crafting_unit')
-        .duration(20*15)
+        .duration(20*160)
         .EUt(GTValues.VA[GTValues.IV])
         .dimension('ad_astra:moon')
+        .cleanroom(CleanroomType.CLEANROOM)
+        .circuit(3)
+
 
     // Mega Crafting  Storage
 
@@ -533,7 +556,7 @@ const registerMegaCellsRecipes = (event) => {
         'megacells:mega_energy_cell',
         '#gtceu:batteries/luv',
         'megacells:mega_item_cell_housing')
-    .inputFluids(Fluid.of('gtceu:polytetrafluoroethylene', 144))
+    .inputFluids(Fluid.of('tfg:cryogenized_fluix', 144))
     .itemOutputs('megacells:portable_item_cell_1m')
     .duration(200)
     .EUt(30720)
@@ -547,7 +570,7 @@ const registerMegaCellsRecipes = (event) => {
             'megacells:mega_energy_cell',
             '#gtceu:batteries/luv',
             'megacells:mega_item_cell_housing')
-        .inputFluids(Fluid.of('gtceu:polytetrafluoroethylene', 144))
+        .inputFluids(Fluid.of('tfg:cryogenized_fluix', 144))
         .itemOutputs('megacells:portable_item_cell_4m')
         .duration(200)
         .EUt(122880)
@@ -561,7 +584,7 @@ const registerMegaCellsRecipes = (event) => {
              'megacells:mega_energy_cell',
              '#gtceu:batteries/luv',
              'megacells:mega_item_cell_housing')
-         .inputFluids(Fluid.of('gtceu:polytetrafluoroethylene', 144))
+         .inputFluids(Fluid.of('tfg:cryogenized_fluix', 144))
          .itemOutputs('megacells:portable_item_cell_16m')
          .duration(200)
          .EUt(491520)
@@ -575,7 +598,7 @@ const registerMegaCellsRecipes = (event) => {
              'megacells:mega_energy_cell',
              '#gtceu:batteries/luv',
              'megacells:mega_item_cell_housing')
-         .inputFluids(Fluid.of('gtceu:polytetrafluoroethylene', 144))
+         .inputFluids(Fluid.of('tfg:cryogenized_fluix', 144))
          .itemOutputs('megacells:portable_item_cell_64m')
          .duration(200)
          .EUt(1966080)
@@ -608,7 +631,7 @@ const registerMegaCellsRecipes = (event) => {
             'megacells:mega_energy_cell',
             '#gtceu:batteries/luv',
             'megacells:mega_fluid_cell_housing')
-        .inputFluids(Fluid.of('gtceu:polytetrafluoroethylene', 144))
+        .inputFluids(Fluid.of('tfg:cryogenized_fluix', 144))
         .itemOutputs('megacells:portable_fluid_cell_1m')
         .duration(200)
         .EUt(30720)
@@ -622,7 +645,7 @@ const registerMegaCellsRecipes = (event) => {
             'megacells:mega_energy_cell',
             '#gtceu:batteries/luv',
             'megacells:mega_fluid_cell_housing')
-        .inputFluids(Fluid.of('gtceu:polytetrafluoroethylene', 144))
+        .inputFluids(Fluid.of('tfg:cryogenized_fluix', 144))
         .itemOutputs('megacells:portable_fluid_cell_4m')
         .duration(200)
         .EUt(122880)
@@ -636,7 +659,7 @@ const registerMegaCellsRecipes = (event) => {
             'megacells:mega_energy_cell',
             '#gtceu:batteries/luv',
             'megacells:mega_fluid_cell_housing')
-        .inputFluids(Fluid.of('gtceu:polytetrafluoroethylene', 144))
+        .inputFluids(Fluid.of('tfg:cryogenized_fluix', 144))
         .itemOutputs('megacells:portable_fluid_cell_16m')
         .duration(200)
         .EUt(491520)
@@ -650,7 +673,7 @@ const registerMegaCellsRecipes = (event) => {
             'megacells:mega_energy_cell',
             '#gtceu:batteries/luv',
             'megacells:mega_fluid_cell_housing')
-        .inputFluids(Fluid.of('gtceu:polytetrafluoroethylene', 144))
+        .inputFluids(Fluid.of('tfg:cryogenized_fluix', 144))
         .itemOutputs('megacells:portable_fluid_cell_64m')
         .duration(200)
         .EUt(1966080)

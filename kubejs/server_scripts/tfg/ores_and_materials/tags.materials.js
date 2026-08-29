@@ -5,11 +5,14 @@ function registerTFGMaterialItemTags(event) {
 	
 	// Platline
 	event.add('tfg:platinum_ore_group', 'gtceu:purified_pentlandite_ore')
+	event.add('tfg:platinum_ore_group', 'gtceu:purified_irarsite_ore')
 	event.add('tfg:platinum_ore_group', 'gtceu:purified_chalcopyrite_ore')
 	event.add('tfg:platinum_ore_group', 'gtceu:purified_tetrahedrite_ore')
+	event.add('tfg:platinum_ore_group', 'gtceu:purified_ruarsite_ore')
 	event.add('tfg:platinum_ore_group', 'gtceu:purified_bornite_ore')
 	event.add('tfg:platinum_ore_group', 'gtceu:purified_cooperite_ore')
 	event.add('tfg:platinum_ore_group', 'gtceu:purified_chalcocite_ore')
+	event.add('tfg:platinum_ore_group', 'gtceu:purified_ferhodsite_ore')
 	
 	// Crafting components
 	event.add('tfg:aluminium_oxide', '#forge:dusts/alumina')

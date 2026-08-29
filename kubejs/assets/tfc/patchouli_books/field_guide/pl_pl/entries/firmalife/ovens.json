@@ -1,5 +1,4 @@
 {
-  "__comment__": "This file was automatically created by mcresources",
   "name": "Piece",
   "category": "tfc:firmalife",
   "icon": "firmalife:cured_oven_top",
@@ -16,7 +15,7 @@
     {
       "type": "tfc:knapping_recipe",
       "recipe": "firmalife:clay_knapping/oven_bottom",
-      "text": "The recipe for the bottom oven."
+      "text": "Przepis na dół pieca."
     },
     {
       "type": "tfc:knapping_recipe",
@@ -39,7 +38,7 @@
     },
     {
       "type": "tfc:multimultiblock",
-      "text": "An example oven structure, uncured and cured.",
+      "text": "Przykładowa konstrukcja pieca, niewypalona i wypalona.",
       "multiblocks": [
         {
           "pattern": [

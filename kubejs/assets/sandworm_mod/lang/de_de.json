@@ -4,5 +4,8 @@
 	"entity.sandworm_mod.worm_chain": "Sandwurm",
 	"entity.sandworm_mod.worm_head_segment": "Sandwurm-Kopf",
 	"entity.sandworm_mod.worm_segment": "Sandwurm-Körper",
-	"item.sandworm_mod.sandworm_tooth": "Sandwurm-Zahn"
+	"item.sandworm_mod.sandworm_tooth": "Sandwurm-Zahn",
+	"msg.sandworm_mod.spawn": "§4ER KOMMT!!!",
+	"msg.sandworm_mod.stage_1": "§eDer Sandwurm spürt dich...",
+	"msg.sandworm_mod.stage_2": "§cDer Sandwurm erwacht gleich!"
 }

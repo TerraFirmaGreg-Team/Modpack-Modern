@@ -105,7 +105,7 @@
 			"images": [
 				"tfg:textures/gui/field_guide/tapping_index/aspen_tree.png"
 			],
-			"text": "$(thing)Produces$(): Conifer Pitch$(br)$(thing)Processes Into$(): Sticky Resin & Conifer Rosin",
+			"text": "$(thing)產物$()：松脂$(br)$(thing)加工物$()：黏性樹脂&松香",
 			"border": true
 		},
 		{
@@ -121,7 +121,7 @@
 			"images": [
 				"tfg:textures/gui/field_guide/tapping_index/spruce_tree.png"
 			],
-			"text": "$(thing)Produces$(): Conifer Pitch$(br)$(thing)Processes Into$(): Sticky Resin & Conifer Rosin",
+			"text": "$(thing)產物$()：松脂$(br)$(thing)加工物$()：黏性樹脂&松香",
 			"border": true
 		},
 		{
@@ -137,7 +137,7 @@
 			"images": [
 				"tfg:textures/gui/field_guide/tapping_index/white_cedar_tree.png"
 			],
-			"text": "$(thing)Produces$(): Conifer Pitch$(br)$(thing)Processes Into$(): Sticky Resin & Conifer Rosin",
+			"text": "$(thing)產物$()：松脂$(br)$(thing)加工物$()：黏性樹脂&松香",
 			"border": true
 		},
 		{
@@ -153,7 +153,7 @@
 			"images": [
 				"tfg:textures/gui/field_guide/tapping_index/douglas_fir_tree.png"
 			],
-			"text": "$(thing)Produces$(): Conifer Pitch$(br)$(thing)Processes Into$(): Sticky Resin & Conifer Rosin",
+			"text": "$(thing)產物$()：松脂$(br)$(thing)加工物$()：黏性樹脂&松香",
 			"border": true
 		}
 	]

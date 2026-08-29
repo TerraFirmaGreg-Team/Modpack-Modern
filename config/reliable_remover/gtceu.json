@@ -22,6 +22,12 @@
 			"gtceu:charcoal_pile_igniter",
 			"gtceu:hp_steam_extractor",
 
+			"gtceu:bronze_large_boiler",
+			"gtceu:steel_large_boiler",
+			"gtceu:titanium_large_boiler",
+			"gtceu:tungstensteel_large_boiler",
+			"gtceu:steam_large_turbine",
+
 			"gtceu:lv_fisher",
 			"gtceu:mv_fisher",
 			"gtceu:hv_fisher",
@@ -50,7 +56,6 @@
 			"gtceu:brittle_charcoal",
 
 			"gtceu:wood_screwdriver_tip",
-			"gtceu:wood_wrench_tip",
 			"gtceu:wood_drill_head",
 			"gtceu:wood_chainsaw_head",
 
@@ -134,7 +139,6 @@
 			"gtceu:damascus_steel_dust",
 			"gtceu:small_damascus_steel_dust",
 			"gtceu:tiny_damascus_steel_dust",
-			"gtceu:lv_damascus_steel_drill",
 			"gtceu:mv_damascus_steel_drill",
 			"gtceu:hv_damascus_steel_drill",
 			"gtceu:ev_damascus_steel_drill",

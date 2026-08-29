@@ -1,0 +1,18 @@
+{
+  "name": "悬挂架",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:wood/hanger/pine",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)悬挂架$()是用于存放肉类或大蒜的设备。它只能在有效的$(l:firmalife/cellar)地窖$()中使用。悬挂架可以容纳整整一组的单一物品。通过$(item)$(k:key.use)$()可以放入或取出物品。存放在有效悬挂架中的物品会获得比食物架或小缸更好的防腐效果。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/wood/acacia_hanger",
+      "text": "悬挂架由木板和线制成。"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 5
+}

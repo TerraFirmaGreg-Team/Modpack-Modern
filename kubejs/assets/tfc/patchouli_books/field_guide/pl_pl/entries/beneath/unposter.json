@@ -13,7 +13,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"title": "Dodatkowe notatki",
+			"title": "Dodatkowe uwagi",
 			"text": "The $(thing)Unposter$() searches for and duplicates mushrooms in a 11x11 square area centered on itself.$(br2)Note that mushrooms, once picked up, cannot be placed back down. You will need to find naturally spawned mushrooms for the unposter to work."
 		},
 		{

@@ -19,7 +19,10 @@ global.AD_ASTRA_DISABLED_ITEMS =
 	
 	'ad_astra:tier_4_rocket',
 	'ad_astra:calorite_engine',
-	'ad_astra:calorite_tank'
+	'ad_astra:calorite_tank',
+
+    // quest reward
+    'ad_astra:cheese_block'
 ];
 
 global.AD_ASTRA_DISABLED_FLUIDS =

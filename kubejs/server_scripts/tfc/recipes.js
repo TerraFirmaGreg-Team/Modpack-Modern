@@ -101,9 +101,6 @@ const registerTFCRecipes = (event) => {
 	event.recipes.tfc.heating('tfc:plant/winged_kelp', 200)
 		.resultItem('tfc:food/dried_kelp')
 
-	// Burning Bread
-	event.recipes.tfc.heating('#tfc:foods/breads', 850)
-
 	// Soda Ash
 	event.smelting('3x tfc:powder/soda_ash', 'tfc:food/dried_seaweed').id('tfg:smelting/dried_seaweed_to_soda')
 	event.smelting('3x tfc:powder/soda_ash', 'tfc:food/dried_kelp').id('tfg:smelting/dried_kelp_to_soda')
@@ -159,12 +156,24 @@ const registerTFCRecipes = (event) => {
 		.EUt(16)
 
 	// LimeWater + Sand -> Mortar
-	event.recipes.gtceu.mixer('mortar')
+	event.recipes.gtceu.mixer('tfg:mortar_from_sand')
 		.itemInputs('#forge:sand')
 		.inputFluids(Fluid.of('tfc:limewater', 100))
 		.itemOutputs('16x tfc:mortar')
-		.duration(800)
+		.duration(600)
 		.EUt(8)
+
+	event.recipes.tfc.barrel_sealed(8000)
+		.inputs('#tfg:stone_dusts', TFC.fluidStackIngredient('tfc:limewater', 25))
+		.outputItem('tfc:mortar')
+		.id('tfg:barrel/mortar_from_dusts');
+
+	event.recipes.gtceu.mixer('tfg:mortar_from_dusts')
+		.itemInputs('#tfg:stone_dusts')
+		.inputFluids(Fluid.of('tfc:limewater', 25))
+		.itemOutputs('tfc:mortar')
+		.duration(30)
+		.EUt(8);
 
 	// Jar lids
 
@@ -307,7 +316,7 @@ const registerTFCRecipes = (event) => {
 		}).id(`tfg:shaped/tfc/${type}_krummholz`);
 	});
 
-	event.shapeless('minecraft:stick', ['tfc:groundcover/driftwood', '#forge:tools/knives'])
+	event.shapeless('minecraft:stick', ['tfc:groundcover/driftwood'])
 		.id('tfg:shapeless/driftwood_to_stick')
 
 	// Buff Lamp Glass for easier early game
@@ -334,4 +343,26 @@ const registerTFCRecipes = (event) => {
 		.id("tfg:quern/candles")
 	event.recipes.tfc.quern("gtceu:tiny_wax_dust", "gtceu:wax_nugget")
 		.id("tfg:quern/wax_nugget")
+
+	// Hot item cooling
+	event.recipes.tfc.barrel_instant()
+		.inputItem(TFC.ingredient.heatable(1, null))
+		.inputFluid(Fluid.of('gtceu:ice', 1))
+		.outputItem(TFC.isp.copyInput().addHeat(-20))
+		.sound('minecraft:block.fire.extinguish')
+		.id('tfg:barrel/ice_slush_cooling')
+	
+	event.recipes.tfc.barrel_instant()
+		.inputItem(TFC.ingredient.heatable(1, null))
+		.inputFluid(TFC.fluidStackIngredient('#firmalife:oils', 1))
+		.outputItem(TFC.isp.copyInput().addHeat(-40))
+		.sound('minecraft:block.fire.extinguish')
+		.id('tfg:barrel/oils_cooling')
+	
+	event.recipes.tfc.barrel_instant()
+		.inputItem(TFC.ingredient.heatable(1, null))
+		.inputFluid(TFC.fluidStackIngredient('#tfc:any_water', 1))
+		.outputItem(TFC.isp.copyInput().addHeat(-5))
+		.sound('minecraft:block.fire.extinguish')
+		.id('tfg:barrel/waters_cooling')
 }

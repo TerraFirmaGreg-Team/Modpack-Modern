@@ -19,8 +19,8 @@ function registerTFGRockBlocks(event) {
 				.requiresTool(true)
 				.fullBlock(true)
 				.opaque(true)
-				.hardness(5)
-				.resistance(8)
+				.hardness(rock.hardness === undefined ? 5 : rock.hardness)
+				.resistance(rock.resistance === undefined ? 8 : rock.resistance)
 
 			if (rock.tfcTag != null) {
 				block.tagBoth(rock.tfcTag);
@@ -37,8 +37,8 @@ function registerTFGRockBlocks(event) {
 					.requiresTool(true)
 					.fullBlock(true)
 					.opaque(true)
-					.hardness(5)
-					.resistance(8)
+					.hardness(rock.hardness === undefined ? 5 : rock.hardness)
+					.resistance(rock.resistance === undefined ? 8 : rock.resistance)
 
 				if (rock.tfcTag != null) {
 					block.tagBoth(rock.tfcTag);
@@ -64,8 +64,8 @@ function registerTFGRockBlocks(event) {
 					.fullBlock(true)
 					.opaque(true)
 					.naturallySupported(false)
-					.hardness(5)
-					.resistance(8)
+					.hardness(rock.hardness === undefined ? 5 : rock.hardness)
+					.resistance(rock.resistance === undefined ? 8 : rock.resistance)
 
 				if (rock.tfcTag != null) {
 					block.tagBoth(rock.tfcTag);
@@ -83,8 +83,8 @@ function registerTFGRockBlocks(event) {
 						.requiresTool(true)
 						.fullBlock(true)
 						.opaque(true)
-						.hardness(5)
-						.resistance(8)
+						.hardness(rock.hardness === undefined ? 5 : rock.hardness)
+						.resistance(rock.resistance === undefined ? 8 : rock.resistance)
 
 					if (rock.tfcTag != null) {
 						block.tagBoth(rock.tfcTag);
@@ -130,8 +130,8 @@ function registerTFGRockBlocks(event) {
 				.requiresTool(true)
 				.fullBlock(true)
 				.opaque(true)
-				.hardness(5)
-				.resistance(8)
+				.hardness(rock.hardness === undefined ? 5 : rock.hardness)
+				.resistance(rock.resistance === undefined ? 8 : rock.resistance)
 
 			if (rock.tfcTag != null) {
 				hardened.tagBoth(rock.tfcTag);
@@ -221,8 +221,8 @@ function registerTFGRockBlocks(event) {
 				.horizontal(horizontal => {
 					horizontal.textureAll(rawTexture)
 					horizontal.soundType(rock.sound ?? 'stone')
-					horizontal.hardness(5)
-					horizontal.resistance(8)
+					horizontal.hardness(rock.hardness === undefined ? 5 : rock.hardness)
+					horizontal.resistance(rock.resistance === undefined ? 8 : rock.resistance)
 					horizontal.mapColor(rock.mapColor)
 					horizontal.tagBlock('minecraft:mineable/pickaxe')
 					horizontal.requiresTool(true)

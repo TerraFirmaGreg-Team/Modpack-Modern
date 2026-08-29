@@ -56,7 +56,7 @@ function registerTFGOverworldItemTags(event) {
 	event.add('tfc:makes_white_dye', 'tfg:plant/bear_grass')
 	event.add('tfc:makes_light_gray_dye', 'tfg:plant/silver_bromeliad')
 	event.add('tfc:makes_light_gray_dye', 'tfg:plant/eyeblossom')
-	event.add('tfc:makes_light_gray_dye', 'tfg:plant/pale_hanging_moss')
+	event.add('tfc:makes_gray_dye', 'tfg:plant/pale_hanging_moss')
 
 	event.add('minecraft:flowers', 'tfg:plant/azalea')
 	event.add('minecraft:flowers', 'tfg:plant/buttercup')
@@ -119,9 +119,12 @@ function registerTFGOverworldBlockTags(event) {
 	event.add('firmalife:butterfly_grass_mutants', 'tfc:plant/ryegrass')
 	event.add('firmalife:butterfly_grass_mutants', 'tfc:plant/scutch_grass')
 	event.add('firmalife:butterfly_grass_mutants', 'tfc:plant/switchgrass')
-	event.add('firmalife:butterfly_grass_mutants', 'tfc:plant/fall_fescue_grass')
+	event.add('firmalife:butterfly_grass_mutants', 'tfc:plant/tall_fescue_grass')
 	event.add('firmalife:butterfly_grass_mutants', 'tfc:plant/timothy_grass')
 	event.add('firmalife:butterfly_grass_mutants', 'tfg:plant/red_oat_grass')
+
+	event.add('tfg:unposter_growable', '#beneath:mushrooms')
+	event.add('tfg:unposter_growable', '#minecraft:flowers')
 
 	event.add('tfc:kaolin_clay_replaceable', '#tfc:mud');
 
@@ -139,6 +142,29 @@ function registerTFGOverworldBlockTags(event) {
 	event.add("tfc:monster_spawns_on", "tfg:pelitic_hornfels");
 	event.add("tfc:monster_spawns_on", "minecraft:packed_ice");
 	event.add("tfc:monster_spawns_on", "minecraft:blue_ice");
+    event.add("tfc:monster_spawns_on", "#forge:sand");
+
+	event.add('tfg:camel_faster_on', 'tfg:coarse_dirt/silty_loam')
+	event.add('tfg:camel_faster_on', 'tfg:coarse_dirt/sandy_loam')
+	event.add('tfg:camel_faster_on', 'tfg:coarse_dirt/silt')
+	event.add('tfg:camel_faster_on', 'tfg:coarse_dirt/loam')
+	event.add('tfg:camel_faster_on', 'tfg:coarse_dirt/alfisol')
+	event.add('tfg:camel_faster_on', 'tfg:coarse_dirt/mollisol')
+	event.add('tfg:camel_faster_on', 'tfg:coarse_dirt/oxisol')
+	event.add('tfg:camel_faster_on', 'tfg:coarse_dirt/podzol')
+	event.add('tfg:camel_faster_on', '#forge:gravel')
+	event.add('tfg:camel_faster_on', '#forge:sand')
+	event.add('tfg:camel_faster_on', 'tfc:raw_sandstone/brown')
+	event.add('tfg:camel_faster_on', 'tfc:raw_sandstone/white')
+	event.add('tfg:camel_faster_on', 'tfc:raw_sandstone/black')
+	event.add('tfg:camel_faster_on', 'tfc:raw_sandstone/red')
+	event.add('tfg:camel_faster_on', 'tfc:raw_sandstone/yellow')
+	event.add('tfg:camel_faster_on', 'tfc:raw_sandstone/green')
+	event.add('tfg:camel_faster_on', 'tfc:raw_sandstone/pink')
+	
+	event.add("tfg:hornfels", "tfg:mafic_hornfels");
+	event.add("tfg:hornfels", "tfg:carbonate_hornfels");
+	event.add("tfg:hornfels", "tfg:pelitic_hornfels");
 }
 
 function registerTFGOverworldBiomeTags(event) {
@@ -252,14 +278,12 @@ function registerTFGOverworldBiomeTags(event) {
 	event.add('tfg:has_structure/illager_camp', 'tfc:highlands')
 	event.add('tfg:has_structure/illager_camp', 'tfc:hills')
 	event.add('tfg:has_structure/illager_camp', 'tfc:inverted_badlands')
-	event.add('tfg:has_structure/illager_camp', 'tfc:lowlands')
 	event.add('tfg:has_structure/illager_camp', 'tfc:mountains')
 	event.add('tfg:has_structure/illager_camp', 'tfc:oceanic_mountains')
 	event.add('tfg:has_structure/illager_camp', 'tfc:old_mountains')
 	event.add('tfg:has_structure/illager_camp', 'tfc:plains')
 	event.add('tfg:has_structure/illager_camp', 'tfc:plateau')
 	event.add('tfg:has_structure/illager_camp', 'tfc:rolling_hills')
-	event.add('tfg:has_structure/illager_camp', 'tfc:salt_marsh')
 	event.add('tfg:has_structure/illager_camp', 'tfc:shore')
 	event.add('tfg:has_structure/illager_camp', 'tfc:tidal_flats')
 	event.add('tfg:has_structure/illager_camp', 'tfc:volcanic_mountains')
@@ -318,6 +342,7 @@ function registerTFGOverworldBiomeTags(event) {
 	event.add('tfg:has_structure/illager_camp', 'tfg:earth/whorled_canyons')
 
 	event.add('tfg:has_structure/illager_roaming', '#tfg:has_structure/illager_camp')
+	event.add('tfg:has_structure/mineshaft', '#tfg:has_structure/illager_camp')
 
 	event.add('tfg:never_has_structure/water', '#tfc:is_lake')
 	event.add('tfg:never_has_structure/water', '#tfc:is_ocean')
@@ -468,7 +493,7 @@ function registerTFGOverworldPlacedFeatures(event) {
 	event.add("tfc:in_biome/veins", "tfg:earth/geode/gypsum");
 	event.add("tfc:in_biome/veins", "tfg:earth/geode/opal");
 	event.add("tfc:in_biome/veins", "tfg:earth/geode/pyrite");
-	event.add("tfc:in_biome/veins", "tfg:earth/geode/quartzite");
+	event.add("tfc:in_biome/veins", "tfg:earth/geode/red_garnet");
 
 	// Crops
 	event.add("tfc:feature/crops", "tfg:earth/crop/sunflower_patch");
@@ -531,6 +556,27 @@ function registerTFGOverworldPlacedFeatures(event) {
 	event.remove("tfc:in_biome/large_features/old_mountains", "tfc:random_active_hot_spring")
 	event.remove("tfc:in_biome/large_features/volcanic_mountains", "tfc:random_active_hot_spring")
 	event.remove("tfc:in_biome/large_features/canyons", "tfc:random_active_hot_spring")
+
+	// Palm Fruits
+	/** @param {{Biome[]}} */
+	const palmFruitBiomes = [
+		//TFG
+		'tfg:in_biome/large_features/coastal_dunes',
+		'tfg:in_biome/large_features/embayments',
+		'tfg:in_biome/large_features/old_shield_volcano_shore',
+		'tfg:in_biome/large_features/sea_stacks',
+		'tfg:in_biome/large_features/setback_cliffs',
+		'tfg:in_biome/large_features/shore',
+		'tfg:in_biome/large_features/tidal_flats',
+		// TFC
+		'tfc:in_biome/large_features/shore',
+		'tfc:in_biome/large_features/tidal_flats'
+	];
+
+	palmFruitBiomes.forEach(biome => {
+		event.add(biome, 'tfg:earth/crop/palm_tree/coconut_patch');
+		event.add(biome, 'tfg:earth/crop/palm_tree/date_patch');
+	});
 }
 
 function registerTFGOverworldEntityTypeTags(event) {
@@ -552,7 +598,7 @@ function registerTFGOverworldEntityTypeTags(event) {
 
 	event.add('tfg:slimes', 'minecraft:slime')
 	event.add('tfg:slimes', 'minecraft:magma_cube')
-	event.add('tfg:slimes', 'tfg:slime')
+	event.add('tfg:slimes', '#jellies:jellie')
 
 	// Takes no damage from the new 1.21 cacti
 	event.add('tfg:ignores_cacti', 'waves:waves')
@@ -560,15 +606,21 @@ function registerTFGOverworldEntityTypeTags(event) {
 	event.add('tfg:ignores_cacti', 'tfc:horse')
 	event.add('tfg:ignores_cacti', 'tfc:donkey')
 	event.add('tfg:ignores_cacti', 'tfc:mule')
+	event.add('tfg:ignores_cacti', 'tfg:dromedary_camel')
+	event.add('tfg:ignores_cacti', 'tfg:bactrian_camel')
 
 	event.add('tfc:amphibious_creatures', 'tfg:leopard_seal')
 	event.add('tfc:spawns_on_cold_blocks', 'tfg:leopard_seal')
+	event.add('tfc:land_predators', 'tfg:leopard_seal')
 
 	event.add('tfc:hunted_by_ocean_predators', 'tfg:leopard_seal')
 	event.add('tfc:hunted_by_ocean_predators', 'tfc:penguin')
 	event.add('tfc:hunted_by_ocean_predators', 'tfc:turtle')
 
 	event.add('tfc:land_prey', 'tfg:leopard_seal')
+	event.add('tfc:land_prey', 'tfg:dromedary_camel')
+	event.add('tfc:land_prey', 'tfg:bactrian_camel')
+	event.add('tfc:land_prey', '#jellies:jellie')
 
 	event.add('tfc:hunted_by_dogs', 'tfg:jerboa')
 	event.add('tfc:hunted_by_dogs', 'tfg:lemming')
@@ -576,8 +628,19 @@ function registerTFGOverworldEntityTypeTags(event) {
 	event.add('tfc:hunted_by_cats', 'tfg:jerboa')
 	event.add('tfc:hunted_by_cats', 'tfg:lemming')
 	event.add('tfc:hunted_by_cats', 'tfg:mongoose')
+	event.add('tfc:land_prey', 'tfg:jerboa')
+	event.add('tfc:land_prey', 'tfg:lemming')
+	event.add('tfc:land_prey', 'tfg:mongoose')
+	event.add('tfc:pests', 'tfg:jerboa')
+	event.add('tfc:pests', 'tfg:lemming')
+	event.add('tfc:pests', 'tfg:mongoose')
 
 	event.add('tfg:not_rammed_by_rammers', '#tfc:bubble_column_immune')
 	event.add('tfg:not_rammed_by_rammers', '#tfc:pests')
 	event.add('tfg:not_rammed_by_rammers', 'tfc:frog')
+
+	event.add('tfg:ramming_animals', 'tfc:boar')
+	event.add('tfg:ramming_animals', 'tfc:moose')
+	event.add('tfg:ramming_animals', 'tfc:wildebeest')
+	event.add('tfg:ramming_animals', 'tfg:bison')
 }

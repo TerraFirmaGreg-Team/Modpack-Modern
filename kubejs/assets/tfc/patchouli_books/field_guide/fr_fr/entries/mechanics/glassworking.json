@@ -1,74 +1,73 @@
 {
-  "__comment__": "This file was automatically created by mcresources",
   "name": "Travail du verre",
   "category": "tfc:mechanics",
   "icon": "tfc:silica_glass_bottle",
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "Glassworking is the process of turning sand into glass. To start, you must create a $(thing)Glass Batch$(), of which there are four types:$(br)$(br) 1. $(thing)Silica$(), from white sand.$(br) 2. $(thing)Hematitic$(), from yellow, red, or pink sand.$(br) 3. $(thing)Olivine$(), from green or brown sand.$(br) 4. $(thing)Volcanic$(), from black sand."
+      "text": "Le travail du verre représente le processus de transformation de sable en verre. Pour commencer, vous devez créer l'un des 4 types de $(thing)Mélange verrier$() :$(br)$(br) 1. $(thing)Siliceux$(), de sable blanc.$(br) 2. $(thing)Hématitique$(), de sable jaune, rouge, ou rose.$(br) 3. $(thing)Olivine$(), de sable vert ou brun.$(br) 4. $(thing)Volcanique$(), de sable noir."
     },
     {
       "type": "patchouli:crafting",
-      "title": "Silica Glass Batch",
       "recipe": "tfc:crafting/silica_glass_batch",
-      "text": "Glass batches can then be crafted using one of the aforementioned colors of sand, plus $(l:mechanics/glassworking#lime)Lime$() and a type of $(l:mechanics/glassworking#potash)Potash$()."
+      "text": "Les mélanges verriers peuvent alors être fabriqués en utilisant une des couleurs de sable, avec de la $(l:mechanics/glassworking#lime)Chaux$() et un type de $(l:mechanics/glassworking#potash)Potasse$().",
+      "title": "Mélange verrier siliceux"
     },
     {
       "type": "patchouli:smelting",
       "anchor": "lime",
       "recipe": "tfg:smelting/lime",
-      "text": "$(thing)Lime$() is one of the ingredients required to make glass batches. It is a powder obtained by $(l:mechanics/heating)heating$() $(l:mechanics/flux)Flux$()."
+      "text": "La $(thing)Chaux$() est un des ingrédients nécessaire à la fabrication de mélanges verrier. C'est une poudre obtenue en $(l:mechanics/heating)chauffant$() de la  $(l:mechanics/flux)Poudre de flux$()."
     },
     {
       "type": "patchouli:smelting",
       "anchor": "potash",
       "recipe": "tfg:smelting/dried_seaweed_to_soda",
-      "recipe2": "tfg:smelting/dried_kelp_to_soda",
-      "text": "A type of $(thing)Potash$() or equivalent is also required for glass batches. $(thing)Soda Ash$() can be used, which is a powder made from heating $(thing)Dried Seaweed$() or $(thing)Kelp$(). $(l:tfg_ores/earth_vein_index#normal_saltpeter)Saltpeter$() can be used as well."
+      "text": "Un type de $(thing)Potasse$() ou un équivalent est également requis pour faire des mélanges verriers. De la $(thing)Poudre de soude$() peut être utilisée, c'est une poudre obtenue en chauffant de l'$(thing)Algue séchée$() ou du $(thing)Varech$(). Du $(l:tfg_ores/earth_vein_index#normal_saltpeter)Salpêtre$() peut également être utilisée.",
+      "recipe2": "tfg:smelting/dried_kelp_to_soda"
     },
     {
       "type": "patchouli:text",
-      "text": "Glassworking is done by starting with a glass batch, and then completing a series of steps. These steps may require specific tools:$(br)$(li)A $(l:mechanics/glassworking#blowpipe)Blowpipe$(), to $(thing)Blow$() and $(thing)Stretch$()$(li)A $(l:mechanics/glassworking#paddle)Paddle$(), to $(thing)Flatten$()$(li)$(l:mechanics/glassworking#jacks)Jacks$(), to $(thing)Pinch$()$(li)A $(l:mechanics/glassworking#saw)Gem Saw$(), to $(thing)Saw$()",
-      "title": "Tools of the Trade"
+      "text": "Le travail du verre commence à un mélange verrier, auquel on fait subir diverses opérations. Ces étapes peuvent demander des outils spécifiques :$(br)$(li)Une $(l:mechanics/glassworking#blowpipe)Canne de verrier$(), pour $(thing)Souffler$() et $(thing)Étirer$()$(li)Une $(l:mechanics/glassworking#paddle)Palette$(), pour $(thing)Aplatir$()$(li)Des $(l:mechanics/glassworking#jacks)Pinces de verrier$(), pour $(thing)Pincer$()$(li)Une $(l:mechanics/glassworking#saw)Scie à gemme$(), pour $(thing)Scier$()",
+      "title": "Outils du métier"
     },
     {
       "type": "tfc:knapping_recipe",
       "anchor": "blowpipe",
       "recipe": "tfc:clay_knapping/blowpipe",
-      "text": "The most important tool is the $(thing)Blowpipe$(). It can be $(thing)knapped$() from clay, and then fired into a $(thing)Ceramic Blowpipe$()."
+      "text": "L'outil le plus important est la $(thing)Canne de verrier$(). Elle peut être $(thing)modelée$() à partir d'argile, puis cuite en une $(thing)Canne de verrier en céramique$()."
     },
     {
       "type": "tfc:anvil_recipe",
       "recipe": "tfc:anvil/blowpipe",
-      "text": "Ceramic blowpipes are brittle, and have a chance to to break when used. A more sturdy blowpipe can be $(l:mechanics/anvils#working)worked$() from a $(thing)Brass Rod$() on an anvil."
+      "text": "Les cannes de verrier en céramique sont fragiles, et peuvent se casser en les utilisant. Une canne plus solide peut être $(l:mechanics/anvils#working)forgée$() à partir d'une $(thing)barre de laiton$() à une enclume."
     },
     {
       "type": "patchouli:crafting",
       "anchor": "paddle",
       "recipe": "tfc:crafting/paddle",
-      "text": "The $(thing)Flatten$() operation can be done with a $(thing)Paddle$(), which is crafted from wood."
+      "text": "L'opération $(thing)Aplatir$() s'effectue à l'aide d'une $(thing)Palette$(), fabriquée à partir de bois."
     },
     {
       "type": "tfc:welding_recipe",
       "anchor": "jacks",
       "recipe": "tfc:welding/jacks",
-      "text": "The $(thing)Pinch$() operation can be done with $(thing)Jacks$(), made from welding two brass rods together."
+      "text": "L'opération $(thing)Pincer$() s'effectue à l'aide de $(thing)Pinces de verrier$(), fabriquées en soudant deux barres de laiton ensemble."
     },
     {
       "type": "patchouli:crafting",
       "anchor": "saw",
       "recipe": "tfc:crafting/gem_saw",
-      "text": "The $(thing)Saw$() operation can be done with a $(thing)Gem Saw$(). The gem saw is also used to break both $(thing)Glass Blocks$() and $(thing)Glass Panes$() and obtain them."
+      "text": "L'opération $(thing)Scier$() s'effectue à l'aide d'une $(thing)Scie à gemme$(). La scie à gemme sert aussi à miner des $(thing)Blocs de verre$() et des $(thing)Vitres$() pour les récupérer."
     },
     {
       "type": "patchouli:text",
-      "text": "First, glass on the blowpipe must be heated to $(4)$(bold)Faint Red$(). Then, hold the blowpipe in your $(thing)offhand$() and hold $(item)$(k:key.use)$() to perform each step$().$(br)Use $(item)$(k:key.swapOffhand)$() to pick up a hot blowpipe into your offhand.$(br2)$(bold)Blow$()$(br)Use the $(thing)Blowpipe$() while facing straight ahead.$(br2)$(bold)Stretch$()$(br)Use the $(thing)Blowpipe$() while facing straight down.",
-      "title": "How to Glass"
+      "text": "Tout d'abord, le verre sur la canne doit être chauffé à $(4)$(bold)Rouge pâle$(). Ensuite, tenez la canne dans votre $(thing)main secondaire$() et maintenez $(item)$(k:key.use)$() pour effectuer chaque étape.$(br)Utilisez $(item)$(k:key.use)$() pour prendre un item dans votre main secondaire. $(br2)$(bold)Souffler$()$(br)Utilisez une $(thing)Canne de verrier$() en regardant droit devant.$(br2)$(bold)Étirer$()$(br)Utilisez une $(thing)Canne de verrier$() en regardant droit vers le sol.",
+      "title": "Comment devenir verrier"
     },
     {
       "type": "patchouli:text",
-      "text": "$(bold)Flatten$()$(br)Use the $(thing)Blowpipe$() while holding a $(l:mechanics/glassworking#paddle)Paddle$() in your main hand.$(br2)$(bold)Pinch$()$(br)Use the $(thing)Blowpipe$() while holding $(l:mechanics/glassworking#jacks)Jacks$() in your main hand.$(br2)$(bold)Saw$()$(br)Use the $(thing)Blowpipe$() while holding a $(l:mechanics/glassworking#saw)Gem Saw$() in your main hand.$(br2)$(bold)Roll$()$(br)Use the $(thing)Blowpipe$() with a $(l:mechanics/weaving#wool_cloth)Wool Cloth$() in your main hand."
+      "text": "$(bold)Aplatir$()$(br)Utilisez une $(thing)Canne de verrier$() en tenant une $(l:mechanics/glassworking#paddle)Palette$() dans votre main principale.$(br2)$(bold)Pincer$()$(br)Utilisez une $(thing)Canne de verrier$() en tenant des $(l:mechanics/glassworking#jacks)Pinces de verrier$() Dans votre main principale.$(br2)$(bold)Scier$()$(br)Utilisez une $(thing)Canne de verrier$() en tenant une $(l:mechanics/glassworking#saw)Scie à gemme$() dans votre main principale.$(br2)$(bold)Rouler$()$(br)Utilisez une $(thing)Canne à verre$() avec une $(l:mechanics/weaving#wool_cloth)Étoffe de laine$() dans votre main principale."
     }
   ],
   "read_by_default": true,

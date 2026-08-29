@@ -1,26 +1,26 @@
 {
-  "name": "Beneath Wild Fruits",
+  "name": "Fruits Sauvages du Beneath",
   "category": "tfc:beneath",
   "icon": "tfg:textures/item/fruit_trees/magmango_sapling.png",
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "The $(l:beneath)Beneath$() hosts its own unique selection of wild fruits, which have adapted to the extreme conditions underground. Wild fruits can be cultivated in all the same ways as regular $(l:the_world/wild_fruits)wild fruits$() in the Overworld."
+      "text": "Le $(l:beneath)Beneath$() possède sa propre sélection unique de fruits sauvages, qui se sont adaptés aux conditions extrêmes sous terre. Ces fruits sauvages peuvent être cultivés de la même manière que les $(l:the_world/wild_fruits)fruits sauvages$() de l'Overworld."
     },
     {
       "type": "patchouli:text",
       "title": "Contenu",
-      "text": "$(li)$(l:tfc:beneath/beneath_wild_fruits#lavacado)Lavacado$()$(li)$(l:tfc:beneath/beneath_wild_fruits#magmango)Magmango$()"
+      "text": "$(li)$(l:tfc:beneath/beneath_wild_fruits#lavacado)Lavocat$()$(li)$(l:tfc:beneath/beneath_wild_fruits#magmango)Magmangue$()"
     },
     {
       "type": "patchouli:text",
       "anchor": "lavacado",
-      "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 8 - 80 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 20 - 100 %$(br2)Lavacado trees grow in the months of December through April, start flowering in May and June, and bear fruit in July.",
-      "title": "Lavacado"
+      "text": "$(bold)$(l:the_world/climate#temperature)Température$() : 8 - 80 °C$(br)$(bold)$(l:mechanics/hydration)Hydratation$() : 20 - 100 %$(br2)Les arbres de lavocat poussent entre Décembre et Avril, commencent à fleurir en Mai, et portent leurs fruits en Juillet.",
+      "title": "Lavocat"
     },
     {
       "type": "tfc:multimultiblock",
-      "text": "Wild Lavacado trees can be found between Y=198 and Y=60.",
+      "text": "Des arbres sauvages de lavocat peuvent être trouvés entre Y=198 et Y=60",
       "multiblocks": [
         {
           "pattern": [
@@ -80,12 +80,12 @@
     {
       "type": "patchouli:text",
       "anchor": "magmango",
-      "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 8 - 80 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 30 - 100 %$(br2)Magmango trees grow in the months of October through February, start flowering in March and April, and bear fruit in May.",
-      "title": "Magmango"
+      "text": "$(bold)$(l:the_world/climate#temperature)Température$() : 8 - 80 °C$(br)$(bold)$(l:mechanics/hydration)Hydratation$() : 30 - 100 %$(br2)Les arbres de magmangue poussent  entre Octobre et Février, commencent à fleurir en Mars, et portent leurs fruits en Mai.",
+      "title": "Magmangue"
     },
     {
       "type": "tfc:multimultiblock",
-      "text": "Wild Magmango trees can be found between Y=198 and Y=60.",
+      "text": "Des arbres sauvages de magmangue peuvent être trouvés entre Y=198 et Y=60.",
       "multiblocks": [
         {
           "pattern": [
@@ -152,16 +152,16 @@
           "text": "Jan"
         },
         {
-          "text": "Feb"
+          "text": "Fev"
         },
         {
           "text": "Mar"
         },
         {
-          "text": "Apr"
+          "text": "Avr"
         },
         {
-          "text": "May"
+          "text": "Mai"
         },
         {
           "text": "Jun"
@@ -170,7 +170,7 @@
           "text": "Jul"
         },
         {
-          "text": "Aug"
+          "text": "Aou"
         },
         {
           "text": "Sep"
@@ -182,10 +182,10 @@
           "text": "Nov"
         },
         {
-          "text": "Dec"
+          "text": "Déc"
         },
         {
-          "text": "Lavacado"
+          "text": "Lavocat"
         },
         {
           "fill": "0x6ab553"
@@ -224,7 +224,7 @@
           "fill": "0x6ab553"
         },
         {
-          "text": "Magmango"
+          "text": "Magmangue"
         },
         {
           "fill": "0x6ab553"
@@ -263,23 +263,23 @@
           "fill": "0x6ab553"
         }
       ],
-      "text": "The fruiting calendar for fruit trees.",
-      "title": "Fruit Trees",
+      "text": "Le calendrier de fructification des arbres fruitiers.",
+      "title": "Arbres fruitiers",
       "legend": [
         {
           "text": "Dormant",
           "color": "0xa8986a"
         },
         {
-          "text": "Healthy",
+          "text": "Sain",
           "color": "0x6ab553"
         },
         {
-          "text": "Flowering",
+          "text": "Fleuri",
           "color": "0xcca0db"
         },
         {
-          "text": "Fruiting",
+          "text": "Fructifiant",
           "color": "0xa217ff"
         }
       ],

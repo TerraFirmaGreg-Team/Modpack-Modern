@@ -41,4 +41,9 @@ function removeGreateRecipes(event) {
 	event.remove({ mod: 'greate', type: 'gtceu:assembler' });
 
 	event.remove({ id: "gtceu:shaped/andesite_alloy_shaft" });
+
+	// Not sure why reliable remover isn't picking these up
+	event.remove({ id: "greate:milling/integration/gtceu/macerator/macerate_coal_refined_ore_to_dust" });
+	event.remove({ id: "greate:crushing/integration/gtceu/macerator/macerate_coal_refined_ore_to_dust" });
+	event.remove({ id: "greate:mixing/integration/gtceu/mixer/fire_charge" });
 }

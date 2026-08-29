@@ -41,7 +41,7 @@
 			"tfg:earth/geode/gypsum",
 			"tfg:earth/geode/opal",
 			"tfg:earth/geode/pyrite",
-			"tfg:earth/geode/quartzite"
+			"tfg:earth/geode/red_garnet"
 		],
 		[
 			"tfc:vein/gabbro_dike",
@@ -73,11 +73,22 @@
 		"species:limpet": {
 			"energy_budget": 0.15,
 			"charge": 0.7
+		},
+		"jellies:certus": {
+			"energy_budget": 0.15,
+			"charge": 0.9
 		}
 	},
 	"spawners": {
 		"ambient": [],
-		"axolotls": [],
+		"axolotls": [
+			{
+				"type": "jellies:certus",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 100
+			}
+		],
 		"creature": [
 			{
 				"type": "tfg:moon_rabbit",

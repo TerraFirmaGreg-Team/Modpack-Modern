@@ -1,0 +1,77 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "multipart": [
+    {
+      "when": {
+        "axis": "x"
+      },
+      "apply": {
+        "model": "firmalife:block/pipe_inventory",
+        "x": 90,
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "axis": "z"
+      },
+      "apply": {
+        "model": "firmalife:block/pipe_inventory",
+        "x": 90
+      }
+    },
+	{
+      "when": {
+        "axis": "x"
+      },
+      "apply": {
+        "model": "firmalife:block/pipe_support_exposed_copper",
+		"y": 90
+      }
+    },
+    {
+      "when": {
+        "axis": "z"
+      },
+      "apply": {
+        "model": "firmalife:block/pipe_support_exposed_copper"
+      }
+    },
+    {
+      "when": {
+        "down": false,
+        "up": false
+      },
+      "apply": {
+        "model": "firmalife:block/greenhouse/exposed_copper_wall"
+      }
+    },
+    {
+      "when": {
+        "down": true,
+        "up": false
+      },
+      "apply": {
+        "model": "firmalife:block/greenhouse/exposed_copper_wall_down"
+      }
+    },
+    {
+      "when": {
+        "down": false,
+        "up": true
+      },
+      "apply": {
+        "model": "firmalife:block/greenhouse/exposed_copper_wall_up"
+      }
+    },
+    {
+      "when": {
+        "down": true,
+        "up": true
+      },
+      "apply": {
+        "model": "firmalife:block/greenhouse/exposed_copper_wall_both"
+      }
+    }
+  ]
+}

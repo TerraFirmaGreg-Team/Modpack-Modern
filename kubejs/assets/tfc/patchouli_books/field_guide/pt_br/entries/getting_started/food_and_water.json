@@ -5,9 +5,9 @@
     "pages": [
         {
             "type": "patchouli:text",
+            "text": "$(li)$(bold)$(l:getting_started/food_and_water#basics)Basics$()$(li)$(bold)$(l:getting_started/food_and_water#thirst)Thirst$()$(li)$(bold)$(l:getting_started/food_and_water#nutrition_screen)The Nutrition Screen$()$(li)$(bold)$(l:getting_started/food_and_water#nutrients)Nutrients$()$(li2)$(l:getting_started/food_and_water#fruit)Fruit$()$(li2)$(l:getting_started/food_and_water#vegetables)Vegetables$()$(li2)$(l:getting_started/food_and_water#protein)Protein$()$(li2)$(l:getting_started/food_and_water#grain)Grain$()$(li2)$(l:getting_started/food_and_water#dairy)Dairy$()$(li)$(bold)$(l:getting_started/food_and_water#contaminants)Contaminants$()$(li2)$(l:getting_started/food_and_water#toxins)Toxins$()$(li2)$(l:getting_started/food_and_water#parasites)Parasites$()$(li2)$(l:getting_started/food_and_water#microplastics)Microplastics$()",
             "title": "Index",
-            "anchor": "index",
-            "text": "$(li)$(bold)$(l:getting_started/food_and_water#basics)Basics$()$(li)$(bold)$(l:getting_started/food_and_water#thirst)Thirst$()$(li)$(bold)$(l:getting_started/food_and_water#nutrition_screen)The Nutrition Screen$()$(li)$(bold)$(l:getting_started/food_and_water#nutrients)Nutrients$()$(li2)$(l:getting_started/food_and_water#fruit)Fruit$()$(li2)$(l:getting_started/food_and_water#vegetables)Vegetables$()$(li2)$(l:getting_started/food_and_water#protein)Protein$()$(li2)$(l:getting_started/food_and_water#grain)Grain$()$(li2)$(l:getting_started/food_and_water#dairy)Dairy$()$(li)$(bold)$(l:getting_started/food_and_water#contaminants)Contaminants$()$(li2)$(l:getting_started/food_and_water#toxins)Toxins$()$(li2)$(l:getting_started/food_and_water#parasites)Parasites$()$(li2)$(l:getting_started/food_and_water#microplastics)Microplastics$()"
+            "anchor": "index"
         },
         {
             "type": "patchouli:text",
@@ -15,9 +15,9 @@
         },
         {
             "type": "patchouli:text",
+            "text": "In TerraFirmaCraft, not only must you manage your hunger, but you must manage your thirst. Hunger works similar to vanilla. Most pieces of food restore about a fifth of your hunger bar. Some pieces of food may restore a bit less, such as $(thing)Cattail Roots$(). Eating food also restores $(thing)Saturation$(), which can be thought of as how full you are. Depleting food or water results in sluggish movement and taking damage. Dying does not reset your nutrients or contaminants.",
             "title": "Basics",
-            "anchor": "basics",
-            "text": "In TerraFirmaCraft, not only must you manage your hunger, but you must manage your thirst. Hunger works similar to vanilla. Most pieces of food restore about a fifth of your hunger bar. Some pieces of food may restore a bit less, such as $(thing)Cattail Roots$(). Eating food also restores $(thing)Saturation$(), which can be thought of as how full you are. Depleting food or water results in sluggish movement and taking damage. Dying does not reset your nutrients or contaminants."
+            "anchor": "basics"
         },
         {
             "type": "patchouli:text",
@@ -29,16 +29,18 @@
         },
         {
             "type": "patchouli:text",
-            "text": "A food tooltip may look like:$(br2)$(bold)Orange$()$(br)  $(2)$(bold)Expires on: 11:59 July 6, 1004 (in 1 month(s) and 1 day(s))$()$(br)  $(8)Nutrition:$(br)  - Saturation: 2%$(br)  - Water: 10%$(br)$(a)  - Fruit: 0.5"
+            "text": "A food tooltip may look like:$(br2)$(bold)Orange$()$(br)  $(2)$(bold)Expires on: 11:59 July 6, 1004 (in 1 month(s) and 1 day(s))$()$(br)  $(8)Nutrition:$(br)  - Saturation: 2%$(br)  - Water: 10%$(br)$(a)  - Fruit: 0.5",
+            "title": "Nutrients"
         },
         {
             "type": "patchouli:text",
-            "anchor": "thirst",
             "text": "Thirst is the level of water in your body. It depletes at a similar rate to hunger. At high temperatures or levels of high hunger usage, your thirst will deplete faster. Luckily, drinking $(thing)Fresh Water$() replenishes thirst. This can be done by clicking $(item)$(k:key.use)$() on a water block. Drinking saltwater causes you to lose thirst, and even has a chance of giving you the $(thing)Thirst$() effect, which will drain you even more.",
+            "anchor": "thirst",
             "title": "Sede"
         },
         {
             "type": "patchouli:multiblock",
+            "text": "To avoid saltwater or muddy water, look for rivers, lakes, and freshwater plants like $(thing)Cattails$().",
             "multiblock": {
                 "pattern": [
                     [
@@ -57,30 +59,31 @@
                 }
             },
             "name": "Water Safety",
-            "text": "To avoid saltwater or muddy water, look for rivers, lakes, and freshwater plants like $(thing)Cattails$().",
             "enable_visualize": false
         },
         {
             "type": "tfc:knapping_recipe",
-            "recipe": "tfc:clay_knapping/jug",
-            "text": "$(l:getting_started/pottery)Knapping$() and firing a $(l:getting_started/pottery#jug)jug$() is a way to carry water with you. Fill it like a bucket with $(item)$(k:key.use)$(). Holding $(item)$(k:key.use)$() drinks the water."
+            "text": "$(l:getting_started/pottery)Knapping$() and firing a $(l:getting_started/pottery#jug)jug$() is a way to carry water with you. Fill it like a bucket with $(item)$(k:key.use)$(). Holding $(item)$(k:key.use)$() drinks the water.",
+            "title": "Sede",
+            "recipe": "tfc:clay_knapping/jug"
         },
         {
             "type": "patchouli:text",
+            "name": "Water Safety",
             "text": "You can also drink out of other containers such as $(l:waterflasks)Flasks$() or $(l:mechanics/glassworking)Glass Bottles$(). Read more about drinking containers and drink effects $(l:mechanics/drinks#containers)Here$()"
         },
         {
             "type": "patchouli:text",
-            "anchor": "nutrition_screen",
             "text": "In $(bold)$(#ff0fb7)TerraFirma$()$()$(bold)$(#595959)Greg$()$() the nutrition screen displays vast information about your health. $(li)There is a main graph displaying your $(l:getting_started/food_and_water#nutrients)Nutrients$()$()$(li)A side graph showing your $(l:getting_started/food_and_water#contaminants)Contaminants$()$()$(li)A table displaying your health stats.$()$(li)And a toggleable view for checking on your teams nutrition.$()$(br)$(item)Hold-$(k:key.sneak)$() over an element on the screen to view more information.$()",
+            "anchor": "nutrition_screen",
             "title": "Nutrition Screen"
         },
         {
             "type": "patchouli:image",
+            "text": "The nutrition screen, with graphs showing the levels of each nutrient.",
             "images": [
                 "tfg:textures/gui/field_guide/nutrition/tfg_nutrition_screen.png"
             ],
-            "text": "The nutrition screen, with graphs showing the levels of each nutrient.",
             "border": false
         },
         {
@@ -132,25 +135,25 @@
             "type": "patchouli:text",
             "anchor": "contaminants",
             "text": "In addition to nutrients $(bold)$(#ff0fb7)TerraFirma$()$()$(bold)$(#595959)Greg$()$() also adds contaminants. There are three contaminants, all obtainable from food: $(l)$(d)Toxins$()$(), $(l)$(4)Parasites$()$(), and $(l)$(3)Microplastics$()$(). Contaminants can be passed into meal items and build up within the player.",
-            "title": "Contaminants"
+            "title": "Contaminantes"
         },
         {
-            "title": "Toxins",
+            "title": "Toxinas",
             "type": "patchouli:text",
             "anchor": "toxins",
             "text": "$(l)$(d)Toxins$()$() come from specifically dangerous crops and meats. Toxins decrease naturally at a rate of 3%/day. Consume $(item)Detox Capsules$() to actively $(l:tfg_tips/mob_effects_glossary#cure_toxins)Cure Toxins$().$(br2)Increasing your toxins value gives the following effects:$()$(li)$(bold)Value >0% → $()$()$(italic)On any new increase: 25% chance to get a random hazardous effect for 10sec.$()$(li)$(bold)Value >99% → $()$()$(italic)$(l:tfg_tips/mob_effects_glossary#final_moments)Death.$()"
         },
         {
-            "title": "Parasites",
+            "title": "Parasitas.",
             "type": "patchouli:text",
             "anchor": "parasites",
             "text": "$(l)$(4)Parasites$()$() come from eating certain raw meats or drinking muddy water. Consume $(item)Parasiticide Capsules$() to actively $(l:tfg_tips/mob_effects_glossary#cure_parasites)Cure Parasites$().$(br2)Increasing your parasites value gives the following effects:$()$(li)$(bold)Value >10% → $()$()$(italic)20% chance to increase by 10% each day to a max of 60%.$()$(li)$(bold)Value >33% → $()$()$(italic)Increases passive exhaustion by 25%.$()$(li)$(bold)Value >66% → $()$()$(italic)Increases passive exhaustion by 50%.$()"
         },
         {
-            "title": "Microplastics",
+            "title": "Microplásticos",
             "type": "patchouli:text",
             "anchor": "microplastics",
-            "text": "$(l)$(3)Microplastics$()$() come from consuming food packaged in plastic. Microplastics decrease naturally at a rate of 1%/day. Consume $(item)Nanofiltration Capsules$() to actively $(l:tfg_tips/mob_effects_glossary#cure_microplastics)Cure Microplastics$().$(br)Increasing your microplastics value gives the following effects:$()$(li)$(bold)Value >33% → $()$()$(italic)Increase high-temp thirst decay multiplier by 25%$()$(li)$(bold)Value >66% ↴$()$()$(italic)$(li2)Increase high-temp thirst decay multiplier by 50%.$()$()$(italic)$(li2)On any new increase: 5% chance to get $(l:tfg_ores/hazards#Carcinogens)Cancer$().$()$()"
+            "text": "$(l)$(3)Microplásticos$()$() provêm do consumo de alimentos embalados em plástico. Os níveis de microplásticos diminuem naturalmente a uma taxa de 1%/dia. Consuma $(item)Cápsulas de Nanofiltração$() para ativamente $(l:tfg_tips/mob_effects_glossary#cure_microplastics)Curar Microplásticos$().$(br)Aumentar os valores de microplásticos causa os seguintes efeitos:$()$(li)$(bold)Valor >33% → $()$()$(italic)Aumenta em 25% o multiplicador de desidratação em altas temperaturas.$()$(li)$(bold)Valor >66% ↴$()$()$(italic)$(li2)Aumenta em 50% o multiplicador de desidratação em altas temperaturas.$()$()$(italic)$(li2)A qualquer novo aumento: 5% de chance de contrair $(l:tfg_ores/hazards#Carcinogens)Câncer$().$()$()"
         },
         {
             "type": "patchouli:text",

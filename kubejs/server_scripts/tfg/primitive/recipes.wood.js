@@ -41,7 +41,7 @@ function registerTFGWoodRecipes(event) {
 
 	const TREATED_WOOD_ITEMS = [
 		{ output: 'gtceu:treated_wood_plate', input: '#tfc:lumber', multiplier: 1 },
-		{ output: 'gtceu:treated_wood_dust', input: 'tfg:wood_dusts', multiplier: 1 },
+		{ output: 'gtceu:treated_wood_dust', input: '#tfg:wood_dusts', multiplier: 1 },
 		{ output: 'gtceu:treated_wood_rod', input: '#forge:rods/wooden', multiplier: 2 },
 		{ output: 'gtceu:long_treated_wood_rod', input: '#forge:rods/long/wood', multiplier: 4 },
 		{ output: 'gtceu:treated_wood_planks', input: '#minecraft:planks', multiplier: 4 },

@@ -1,0 +1,36 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "block/block",
+	"textures": {
+		"0": "firmalife:block/devices/planter/hydroponic_side",
+		"1": "firmalife:block/devices/planter/hydroponic_bottom",
+		"2": "firmalife:block/devices/planter/hydroponic_top",
+		"3": "firmalife:block/devices/planter/hydroponic_inside",
+		"particle": "firmalife:block/devices/planter/hydroponic_inside"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 6, 16],
+			"faces": {
+				"north": {"uv": [0, 10, 16, 16], "texture": "#0"},
+				"east": {"uv": [0, 10, 16, 16], "texture": "#0"},
+				"south": {"uv": [0, 10, 16, 16], "texture": "#0"},
+				"west": {"uv": [0, 10, 16, 16], "texture": "#0"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#2"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#1"}
+			}
+		},
+		{
+			"from": [1, 6, 1],
+			"to": [15, 2, 15],
+			"faces": {
+				"north": {"uv": [1, 10, 15, 14], "rotation": 180, "texture": "#0"},
+				"east": {"uv": [1, 10, 15, 14], "rotation": 180, "texture": "#0"},
+				"south": {"uv": [1, 10, 15, 14], "rotation": 180, "texture": "#0"},
+				"west": {"uv": [1, 10, 15, 14], "rotation": 180, "texture": "#0"},
+				"up": {"uv": [1, 1, 15, 15], "texture": "#3"}
+			}
+		}
+	]
+}

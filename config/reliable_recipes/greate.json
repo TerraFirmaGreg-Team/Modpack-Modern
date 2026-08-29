@@ -2,6 +2,8 @@
 	{
 		"action": "remove_recipe",
 		"id": [
+			"greate:mixing/integration/gtceu/mixer/mossy_cobblestone_from_moss_block",
+			"greate:mixing/integration/gtceu/mixer/mossy_cobblestone_from_vine",
 			"greate:cutting/integration/create/cutting/runtime_generated/compat/minecraft/bamboo_planks_to_bamboo_button",
 			"greate:mixing/integration/gtceu/mixer/fire_charge",
 			"greate:milling/integration/gtceu/macerator/macerate_coal_crushed_ore_to_dust",
@@ -76,7 +78,7 @@
 	},
 	{
 		"action": "remove_recipe",
-		"pattern": "/^greate:(compacting|pressing)\/integration\/.*/"
+		"pattern": "/^greate:(compacting|pressing)/integration/.*/"
 	},
 	{
 		"action": "remove_recipe",

@@ -1,6 +1,5 @@
 {
-	"__comment__": "This file was automatically created by mcresources",
-	"name": "Primitive Alloys",
+	"name": "Aleaciones Primitivas",
 	"category": "tfc:getting_started",
 	"icon": "tfc:ceramic/ingot_mold{tank:{\"Amount\":100,\"FluidName\":\"tfc:metal/bronze\"}}",
 	"pages": [
@@ -28,14 +27,14 @@
 			"item": "gtceu:bismuth_bronze_ingot",
 			"title": "Bismuth Bronze",
 			"link_recipes": false,
-			"text": "$(br)$(bold)Requirements:$()$(br)$(li)20 - 30 % : $(thing)Zinc$()$(li)50 - 65 % : $(thing)Copper$()$(li)10 - 20 % : $(thing)Bismuth$()$(br2)"
+			"text": "$(br)$(bold)Requisitos:$()$(br)$(li)20 - 30 % : $(thing)Zinc$()$(li)50 - 65 % : $(thing)Cobre$()$(li)10 - 20 % : $(thing)Bismuto$()$(br2)"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:black_bronze_ingot",
-			"title": "Black Bronze",
+			"title": "Bronce Negro",
 			"link_recipes": false,
-			"text": "$(br)$(bold)Requirements:$()$(br)$(li)50 - 70 % : $(thing)Copper$()$(li)10 - 25 % : $(thing)Silver$()$(li)10 - 25 % : $(thing)Gold$()$(br2)"
+			"text": "$(br)$(bold)Requisitos:$()$(br)$(li)50 - 70 % : $(thing)Cobre$()$(li)10 - 25 % : $(thing)Plata$()$(li)10 - 25 % : $(thing)Oro$()$(br2)"
 		},
 		{
 			"type": "patchouli:text",

@@ -25,7 +25,7 @@
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Kasybos pla",
+            "title": "Kasybos plaktukas",
             "text": "These are basically a pickaxe with a 3x3 range, and will yield $(thing)raw ores$() as well. Also good for quarrying stone!$(br2)Holding $(thing)sneak$() will only break a single block at a time.",
             "item": {
                 "tag": "forge:tools/mining_hammers"
@@ -36,7 +36,7 @@
             "title": "Pagrindinis rūdos apdorojimas",
             "anchor": "processing",
             "item": "gtceu:crushed_copper_ore",
-            "text": "Processing ores will result in much greater amounts of usable metal. The first step is to use a $(l:mechanics/quern)Quern$() to crush the raw ore. This step can be automated in the future with improved machines such as the $(thing)Millstone$(), $(thing)Crushing Wheel$(), $(thing)Macerator$(), and $(thing)Forge Hammer$()."
+            "text": "Perdirbant rūdas bus gaunama žymiai daugiau naudingo metalo. Pirmasis žingsnis – susmulkinti žalią rūdą naudojant $(l:mechanics/quern)rankinės girnas$(). Ateityje šį procesą bus galima automatizuoti naudojant patobulintas mašinas, pavyzdžiui, $(thing)statgirnės$(), $(thing)trupinimo ratas$(), $(thing)smulkintuvas$() ir $(thing)kalvės plaktukas$()."
         },
         {
             "type": "patchouli:crafting",

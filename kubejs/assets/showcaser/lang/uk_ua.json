@@ -1,0 +1,18 @@
+{
+	"key.showcaser.category": "Демонстратор",
+	"key.showcaser.share_item_in_chat": "Поділитися ресурсом",
+	"showcaser.chat.banned": "Сервер обмежив для тебе обмін ресурсами",
+	"showcaser.chat.share_message": "%s поділитись %s",
+	"showcaser.chat.share_message.patchouli_book": "%s поділився книгою %s",
+	"showcaser.chat.share_message.patchouli_book_entry": "%s поділився записом книги %s»",
+	"showcaser.chat.share_message.quest": "%s поділився квестом %s",
+	"showcaser.chat.share_message.quest.not_visible": "Квест неможливо відкрити, оскільки він для тебе невидимий",
+	"showcaser.chat.share_message.recipe": "%s поділився рецептом %s",
+	"showcaser.chat.share_message.tooltip.unverified": "Не підтверджено сервером",
+	"showcaser.chat.share_message.tooltip.verified": "Підтверджено сервером",
+	"showcaser.commands.reload": "Сховище та конфігурацію Showcaser успішно перезавантажено",
+	"showcaser.commands.sharing.ban.player_already_banned": "Гравець %s вже заблокований",
+	"showcaser.commands.sharing.ban.success": "Гравцю %s тепер заборонено ділитися речами",
+	"showcaser.commands.sharing.unban.player_not_banned": "Гравець %s не заблокований",
+	"showcaser.commands.sharing.unban.success": "Гравець %s знову може ділитися речами"
+}

@@ -1,0 +1,68 @@
+{
+  "name": "Теплиця",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:sealed_bricks",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)Теплиця$() — це мультиблокова структура, яка керується $(l:firmalife/climate_station)кліматичною станцією$(). Вона дозволяє вирощувати сільськогосподарську культуру цілий рік. Теплиця має безліч типів і блоків на вибір. Проте побудувати теплицю досить просто. Як і $(l:firmalife/cellar)льох$(), вона має бути замкнутим простором із блоків, що належать до одного й того самого $(thing)типу теплиці$(). Підлогою теплиці може слугувати будь-який блок, крім пустого простору."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Стіна теплиці повинна мати суцільну поверхню. Панельну стіну слід розміщувати так, щоб сторона, яка є зовнішньою для блока (наприклад, сторона, на яку можна поставити смолоскип), була обернена всередину теплиці. Те саме стосується й даху, за винятком того, що плита завжди вважається відповідним блоком для даху. Люк і двері також завжди підходять і не вимагають особливого розміщення."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)Тип теплиці$() — це сімейство тепличної сировини, блоки якої можна взаємозамінно використовувати в будівництві. Більшість тепличних блоків $(thing)старіють$(). Наприклад, тепличний блок з $(thing)обробленої деревини$() з часом стає блоком із $(thing)вивітреної обробленої деревини$(). Оскільки обидва ці блоки належать до одного типу теплиці, твоя споруда продовжить функціонувати."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Ось доступний $(thing)тип теплиці$() та варіант блока, на який він може перетворитися в процесі старіння:$(br)$(br)$(li)Оброблена деревина: вивітрена$()$(li)Мідь: полагоджена, вивітрена, окиснена$()$(li)Залізо: іржаве$()$(li)Нержавійна сталь (не старіє)$()",
+      "title": "Тип теплиці"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Існує чотири види звичайного $(thing)тепличного блока$(): стіна, двері, дах та верхівка даху. Дах і верхівка даху — це сходи та плити відповідно. Також існують тонші версії цих блоків, відомі як панельна стіна, люк та панельний дах. Їх можна комбінувати як завгодно, щоб сформувати структуру теплиці."
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "Приклад теплиці в кожному основному типі.",
+      "multiblocks": [
+        "firmalife:treated_wood_greenhouse",
+        "firmalife:copper_greenhouse",
+        "firmalife:iron_greenhouse",
+        "firmalife:stainless_steel_greenhouse"
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Існує багато блоків, які функціонують усередині теплиці:$(br)$(li)$(l:firmalife/planters)Лоток для рослин$() для вирощування сільськогосподарських культур та$(br)$(li)$(l:firmalife/irrigation)Розприскувач$() — різноманітний пристрій, який додає воду в плантатор."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "На наступних чотирьох сторінках наведено рецепти для основних видів тепличного блока. Хоча вони показані лише для залізної теплиці, залізне пруття в рецепті можна замінити на $(thing)оброблений пиломатеріал$(), $(thing)мідне пруття$() або $(thing)пруття з нержавійної сталі$(). Для отримання інформації про нержавійну сталь див. $(l:firmalife/stainless_steel)цю пов'язану сторінку$()."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/greenhouse/iron_greenhouse_wall",
+      "recipe2": "firmalife:crafting/greenhouse/iron_greenhouse_roof"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/greenhouse/iron_greenhouse_door",
+      "recipe2": "firmalife:crafting/greenhouse/iron_greenhouse_roof_top"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/greenhouse/iron_greenhouse_trapdoor",
+      "recipe2": "firmalife:crafting/greenhouse/iron_greenhouse_panel_roof"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/greenhouse/iron_greenhouse_panel_wall",
+      "recipe2": "firmalife:crafting/greenhouse/iron_greenhouse_port"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 7
+}

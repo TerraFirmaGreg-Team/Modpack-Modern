@@ -66,9 +66,12 @@ function registerTFGPrimitiveItemTags(event) {
     event.add('tfg:lightweight_cloth', 'tfg:phantom_silk')
     event.add('tfg:lightweight_cloth', 'tfg:polycaprolactam_fabric')
 	event.add('forge:cloth', 'tfg:phantom_silk')
+	event.add('forge:cloth', 'tfc_textile:cotton_cloth')
 	event.add('forge:cloth', 'tfg:polycaprolactam_fabric')
 	event.add('tfc:high_quality_cloth', 'tfg:phantom_silk')
 	event.add('tfc:high_quality_cloth', 'tfg:polycaprolactam_fabric')
+	event.add('tfc:high_quality_cloth', 'tfc_textile:cotton_cloth')
+	event.add('tfc:sewing_light_cloth', 'tfc_textile:cotton_cloth')
 	event.add('tfc:sewing_dark_cloth', 'tfg:phantom_silk')
 	event.add('tfc:sewing_dark_cloth', 'tfg:polycaprolactam_fabric')
 	event.add('forge:string', 'tfg:phantom_thread')
@@ -141,6 +144,9 @@ function registerTFGPrimitiveFluidTags(event) {
 	})
 	
 	event.add('tfg:usable_in_spindle_head_mold', 'gtceu:copper');
+	event.add('tfg:usable_in_spindle_head_mold', 'gtceu:bronze');
+	event.add('tfg:usable_in_spindle_head_mold', 'gtceu:bismuth_bronze');
+	event.add('tfg:usable_in_spindle_head_mold', 'gtceu:black_bronze');
 }
 
 function registerTFGPrimitiveEntityTags(event) {

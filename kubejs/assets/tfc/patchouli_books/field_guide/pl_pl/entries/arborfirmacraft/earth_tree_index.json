@@ -58,7 +58,7 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Cyprys, Żywotnik olbrzymi",
+			"title": "Cyprys, żywotnik olbrzymi",
 			"item": "tag:afc:cypress_logs",
 			"text": "$(bold)Slender Cypress$()$(br)$(thing)Rainfall$(): 100 — 260mm$(br)$(thing)Temperature$(): 2.5 — 15.3°C$(br2)$(bold)Bald Cypress$()$(br)$(thing)Rainfall$(): 360 — 500mm$(br)$(thing)Temperature$(): -1.1 — 15.3°C$(br2)$(bold)Weeping Cypress$()$(br)$(thing)Rainfall$(): 290 — 415mm$(br)$(thing)Temperature$(): -8.4 — 4.3°C"
 		},
@@ -158,7 +158,7 @@
 			"type": "patchouli:spotlight",
 			"title": "Dalbergia",
 			"item": "tag:tfc:rosewood_logs",
-			"text": "$(bold)Shisham Rosewood$()$(br)$(thing)Rainfall$(): 245 — 360mm$(br)$(thing)Temperature$(): 15.3 — 24.4°C$(br2)$(bold)Giant Rosewood$()$(br)$(thing)Rainfall$(): 340 — 440mm$(br)$(thing)Temperature$(): 15.3 — 22.5°C"
+			"text": "$(bold)Palisander shisham$()$(br)$(thing)Opady$(): 245 — 360mm$(br)$(thing)Temperatura$(): 15.3 — 24.4°C$(br2)$(bold)Palisander olbrzymi$()$(br)$(thing)Opady$(): 340 — 440mm$(br)$(thing)Temperatura$(): 15.3 — 22.5°C"
 		},
 		{
 			"type": "patchouli:spotlight",

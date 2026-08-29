@@ -39,7 +39,7 @@
 			"entity": "ad_astra:star_crawler",
 			"scale": 0.4,
 			"name": "Gwiezdny pełzacz",
-			"text": "$(thing)Star Crawlers$() are a type of starfish. They are hostile and can be eaten."
+			"text": "$(thing)Gwiezdne pełzacze$() to rodzaj rozgwiazdy. Są wrogie i mogą być zjedzone."
 		},
 		{
 			"type": "patchouli:entity",
@@ -105,7 +105,7 @@
 			"entity": "tfg:glacian_ram{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
 			"scale": 0.7,
 			"name": " ",
-			"text": "A glacian ram/ewe."
+			"text": "Lodowcowy baran/owca"
 		},
 		{
 			"type": "patchouli:text",
@@ -181,7 +181,7 @@
 			"type": "patchouli:entity",
 			"entity": "species:springling",
 			"scale": 0.9,
-			"name": "Springling",
+			"name": "Skoczek",
 			"text": "$(thing)Springlings$() are wild animals found above -108°C. Feeding them $(item)Saplings$() will let you ride them and extend their extremely long necks. They can also be eaten."
 		},
 		{
@@ -197,7 +197,7 @@
 			"scale": 0.6,
 			"offset": 2.2,
 			"name": "Piechur",
-			"text": "The gigantic $(thing)Walkers$() inhabit areas above -97°C. They are passive and can be eaten."
+			"text": "Gigantyczne $(thing)piechury$() zamieszkują obszary powyżej -97°C. Są pasywne i mogą być jedzone."
 		},
 		{
 			"type": "patchouli:entity",
@@ -217,7 +217,7 @@
 			"type": "patchouli:entity",
 			"entity": "species:stackatick",
 			"scale": 0.4,
-			"name": "Stackatick",
+			"name": "Tragarz",
 			"text": "One of the few animals that can survive the Martian desert, $(thing)Stackaticks$() are passive prey animals. They can also be eaten."
 		}
 	],

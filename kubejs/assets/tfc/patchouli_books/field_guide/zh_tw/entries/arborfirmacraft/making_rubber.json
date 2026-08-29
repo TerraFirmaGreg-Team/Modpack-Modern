@@ -41,7 +41,7 @@
 			"type": "patchouli:spotlight",
 			"title": "松脂",
 			"item": "tfg:conifer_pitch_bucket",
-			"text": "黏性樹脂也能藉由從特定$(thing)針葉樹$()採集$(thing)松脂$()，但這些樹不能用於製作橡膠。"
+			"text": "從某些$(thing)針葉樹$()採集$(thing)松脂$()也能製作成黏性樹脂，但這些樹不能製作橡膠。"
 		}
 	],
 	"read_by_default": true,

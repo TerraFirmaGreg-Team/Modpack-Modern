@@ -1,39 +1,38 @@
 {
-  "__comment__": "This file was automatically created by mcresources",
-  "name": "Berry Bushes",
+  "name": "Buissons de baies",
   "category": "tfc:firmalife",
   "icon": "firmalife:plant/pineapple_bush",
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "Firmalife adds some berry bushes. For information on wild grape bushes, see $(l:firmalife/wine)winemaking$()."
+      "text": "Firmalife rajoute quelques buissons de baies. Pour plus d'infos sur les buissins de raisin sauvage, consultez $(l:firmalife/wine)viticulture$()."
     },
     {
       "type": "patchouli:spotlight",
       "item": "firmalife:food/nightshade_berry",
       "link_recipes": false,
-      "text": "First is nightshade. Nightshade is a poisonous berry. When put into soup, it makes poisonous $(thing)Stinky Soup$(). It is found between 200-400mm of rain and 7-24 C temperature in forests."
+      "text": "Il y a tout d'abord la morelle. La morelle est une baie empoisonnée. Quand rajoutée à de la soupe, elle fait de la $(thing)Soupe puante$() toxique. Elle se trouve entre 200-400mm de précipitations et 7-24°C dans les forêts."
     },
     {
       "type": "patchouli:spotlight",
       "item": "firmalife:food/pineapple",
       "link_recipes": false,
-      "text": "Pineapple bushes are found 250-500mm of rainfall and 20-32 C temperature in forests. Pineapples are like any other fruit, except that they can be made into $(thing)Pineapple Leather$()."
+      "text": "Des buissons d'ananas se trouvent à 250-500mm de précipitations et 20-32°C dans des forêts. Les ananas sont similaires à d'autres fruits, mais peuvent être transformés en $(thing)Cuir d'ananas$()."
     },
     {
       "type": "patchouli:crafting",
       "recipe": "firmalife:crafting/pineapple_fiber",
-      "text": "Pineapples that have been $(l:firmalife/drying)Dried$() can be crafted into pineapple fiber."
+      "text": "Des ananas $(l:firmalife/drying)séchés$() peuvent être transformés en fibre d'ananas."
     },
     {
       "type": "patchouli:crafting",
       "recipe": "tfc:kjs/damage/shapeless/pineapple_yarn",
-      "text": "Pineapple yarn is made by crafting a $(thing)Spindle$() with the fiber."
+      "text": "Du fil d'ananas peut être fait en combinant un $(thing)Fuseau$() avec la fibre."
     },
     {
       "type": "tfc:loom_recipe",
       "recipe": "firmalife:loom/pineapple_leather",
-      "text": "Finally, pineapple leather can be me woven in a $(l:tfc:mechanics/weaving)Loom$(). It is a plant substitute for regular leather than can be used for knapping, crafting, and other uses!"
+      "text": "Enfin, le cuir d'ananas peut être tissé dans un $(l:tfc:mechanics/weaving)Métier à tisser$(). C'est un substitut végétal au cuir normal qui peut être utilisé pour la fabrication, le taillage et autre !"
     }
   ],
   "read_by_default": true,

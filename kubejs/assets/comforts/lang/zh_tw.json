@@ -57,7 +57,7 @@
   "gui.comforts.config.hammocksStopPhantoms.name": "吊床阻止夜魅生成",
   "gui.comforts.config.nightWakeTimeOffset.description": "一早好眠後，要增減的時間量，以 tick 為單位。",
   "gui.comforts.config.nightWakeTimeOffset.name": "白天到夜晚醒來的時間偏移",
-  "gui.comforts.config.restMultiplier.description": "若啟用睡眠限制，該值將決定等待時間的長度(數值越大冷卻越短）。",
+  "gui.comforts.config.restMultiplier.description": "若啟用睡眠限制，該值將決定等待時間的長度(數值越大冷卻越短)。",
   "gui.comforts.config.restMultiplier.name": "睏倦係數",
   "gui.comforts.config.restrictSleeping.description": "若啟用，玩家不能馬上再次睡覺。",
   "gui.comforts.config.restrictSleeping.name": "睡眠限制",

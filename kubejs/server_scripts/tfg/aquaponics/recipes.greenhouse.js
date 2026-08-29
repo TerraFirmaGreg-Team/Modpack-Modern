@@ -422,6 +422,9 @@ function generateTreeGreenHouseRecipe(event, dimension, input, output, leaves, c
  */
 const registerTFGGreenhouseRecipes = (event) => {
 
+	const $PalmTree = Java.loadClass('su.terrafirmagreg.core.common.data.PalmTrees');
+	const PALMS = $PalmTree.values().map(palm => palm.getSerializedName());
+
     //#region Multiblock Parts
 
 	/** @type {string[]} - Tier names of greenhouse casings. */
@@ -521,6 +524,14 @@ const registerTFGGreenhouseRecipes = (event) => {
 	});
 	global.TFC_GREENHOUSE_BERRY_RECIPE_COMPONENTS.forEach(element => {
 		generateCropGreenHouseRecipe(event, null, element.input, element.output, null, 1);
+	});
+
+	PALMS.forEach(palm => {
+		if (palm !== 'coconut') {
+			generateCropGreenHouseRecipe(event, null, `tfg:palm_tree/${palm}_sapling`, `tfg:food/${palm}`, null, 1);
+		} else {
+			generateCropGreenHouseRecipe(event, null, `tfg:palm_tree/${palm}_sapling`, 'tfg:palm_tree/coconut_fruit_brown', 'tfg:palm_tree/coconut_fruit_green', 1);
+		};
 	});
 
 	// Wood

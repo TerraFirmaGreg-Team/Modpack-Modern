@@ -1,5 +1,4 @@
 {
-  "__comment__": "This file was automatically created by mcresources",
   "name": "臼",
   "category": "tfc:mechanics",
   "icon": "tfc:quern",
@@ -52,28 +51,28 @@
     },
     {
       "type": "tfc:quern_recipe",
-      "title": "砕いた鉱石",
       "recipe": "tfg:quern/copper_crushed_ore_from_normal_raw_ore",
-      "text": "$(l:tfg_ores/ore_basics#processing)鉱石$()は粉砕処理を行うことで、より多くの金属を得ることができます。"
+      "text": "$(l:tfg_ores/ore_basics#processing)鉱石$()は粉砕処理を行うことで、より多くの金属を得ることができます。",
+      "title": "砕いた鉱石"
     },
     {
       "type": "tfc:quern_recipe",
-      "title": "粉末",
       "recipe": "tfg:quern/sulfur",
-      "text": "臼は、$(thing)硫黄$()などの粉をさらに細かく砕いて各種$(thing)粉末$()を生成するためにも使用されます。また、$(thing)宝石$()を粉末にすることも可能です。"
+      "text": "臼は、$(thing)硫黄$()などの粉をさらに細かく砕いて各種$(thing)粉末$()を生成するためにも使用されます。また、$(thing)宝石$()を粉末にすることも可能です。",
+      "title": "粉末"
     },
     {
       "type": "tfc:quern_recipe",
-      "title": "染料",
       "recipe": "tfc:quern/red_dye",
-      "text": "$(l:mechanics/dye)染料$()は、各種の花をすり潰すことで入手できます。"
+      "text": "$(l:mechanics/dye)染料$()は、各種の花をすり潰すことで入手できます。",
+      "title": "染料"
     },
     {
       "type": "patchouli:spotlight",
+      "text": "$(thing)穀物系の作物$()はナイフとクラフトすることで$(thing)穀物の粒$()にすることができ、さらにそれを臼で挽くことで$(thing)穀物の粉（小麦粉など）$()へと加工できます。",
       "item": {
         "tag": "tfc:foods/flour"
-      },
-      "text": "$(thing)穀物系の作物$()はナイフとクラフトすることで$(thing)穀物の粒$()にすることができ、さらにそれを臼で挽くことで$(thing)穀物の粉（小麦粉など）$()へと加工できます。"
+      }
     }
   ],
   "read_by_default": true

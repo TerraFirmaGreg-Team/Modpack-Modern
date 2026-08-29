@@ -558,6 +558,9 @@ function registerTFGRockRecipes(event) {
 				.duration(50)
 				.EUt(2)
 				.category(GTRecipeCategories.MACERATOR_RECYCLING);
+
+			event.recipes.tfc.quern('5x gtceu:small_brick_dust', `#tfg:stone_composition/${compositionId}`)
+				.id(`tfg:quern_${compositionId}`);
 		} else {
 			event.recipes.gtceu.macerator(`tfg:macerate_${compositionId}`)
 				.itemInputs(`#tfg:stone_composition/${compositionId}`)
@@ -565,6 +568,9 @@ function registerTFGRockRecipes(event) {
 				.duration(50)
 				.EUt(2)
 				.category(GTRecipeCategories.MACERATOR_RECYCLING);
+
+			event.recipes.tfc.quern(ChemicalHelper.getDust(material, GTValues.M), `#tfg:stone_composition/${compositionId}`)
+				.id(`tfg:quern_${compositionId}`);
 		}
 
 
@@ -577,6 +583,9 @@ function registerTFGRockRecipes(event) {
 				.duration(50)
 				.EUt(2)
 				.category(GTRecipeCategories.MACERATOR_RECYCLING);
+				
+			event.recipes.tfc.quern(ChemicalHelper.getDust(material, GTValues.M / 2), `#tfg:stone_composition/${compositionId}_half`)
+				.id(`tfg:quern_${compositionId}_half`);
 		}
 	})
 
@@ -648,7 +657,6 @@ function registerTFGRockRecipes(event) {
 		.EUt(GTValues.VA[GTValues.LV])
 
 	// Sedimentary carbonate into flux
-
 	event.recipes.gtceu.macerator('tfg:sedimentary_carbonate_to_flux')
 		.itemInputs('#forge:dusts/sedimentary_carbonate')
 		.itemOutputs('2x tfc:powder/flux')
@@ -659,4 +667,16 @@ function registerTFGRockRecipes(event) {
 		.id(`tfg:quern/sedimentary_carbonate_to_flux`)
 
 	event.shapeless('2x tfc:powder/flux', ['#forge:dusts/sedimentary_carbonate', '#forge:tools/hammers'])
+
+	// And calcite
+	event.recipes.gtceu.macerator('tfg:calcite_to_flux')
+		.itemInputs('#forge:dusts/calcite')
+		.itemOutputs('2x tfc:powder/flux')
+		.duration(20)
+		.EUt(2)
+
+	event.recipes.tfc.quern('2x tfc:powder/flux', '#forge:dusts/calcite')
+		.id(`tfg:quern/calcite_to_flux`)
+
+	event.shapeless('2x tfc:powder/flux', ['#forge:dusts/calcite', '#forge:tools/hammers'])
 }

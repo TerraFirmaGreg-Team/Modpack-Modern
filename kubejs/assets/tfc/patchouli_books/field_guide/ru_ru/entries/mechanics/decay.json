@@ -1,20 +1,20 @@
 {
-    "name": "Preservation",
+    "name": "Консервация",
     "category": "tfc:mechanics",
     "icon": "minecraft:rotten_flesh",
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "In TerraFirmaCraft, no food will last forever! Food will $(thing)expire$() over time, turning rotten. Rotten food will not restore any hunger, and has the potential to give you unhelpful effects such as $(thing)Hunger$() or $(thing)Poison$()!$(br2)Fortunately, there are a number of ways to make your food last longer by $(thing)Preserving$() it."
+            "text": "В TerraFirmaCraft ни одна еда не хранится вечно! Со временем продукты $(thing)портятся$() и гниют. Испорченная еда не восстанавливает голод и может наложить такие вредные эффекты, как $(thing)голод$() или $(thing)отравление$()!$(br2)К счастью, существует множество способов продлить срок годности продуктов путем их $(thing)консервации$()."
         },
         {
             "type": "patchouli:text",
-            "text": "When you hover over a piece of food, you will see a tooltip which shows how long the food has until it will rot. It might look something like:$(br2)$(bold)$(2)Expires on: 5:30 July 5, 1000 (in 5 day(s))$()$(br2)By using various preservation mechanics, that date can be extended, giving you more time before your food rots."
+            "text": "Когда вы наводите курсор на еду, появляется подсказка, которая показывает, сколько времени осталось до того, как она испортится. Это может выглядеть примерно так:$(br2)$(bold)$(2)Съедобно до: 5:30 5 июля, 1000 (через 5 дней)$()$(br2)Используя различные механики консервации, эту дату можно отсрочить, что даст вам больше времени до того, как еда сгниёт."
         },
         {
             "type": "patchouli:text",
             "anchor": "small_vessels",
-            "text": "One of the easiest ways to preserve food is to use a $(thing)Vessel$(). $(thing)Large Vessels$() are a block which can store up to nine items, and when $(thing)sealed$() the items inside will gain the $(5)$(bold)Preserved$() status, which extends their remaining lifetime by 2x.$(br2)$(thing)Small Vessels$() are a item which can store up to four other items, and will also apply the $(5)$(bold)Preserved$() status to their contents.",
+            "text": "Один из самых простых способов сохранить еду это использовать $(thing)сосуд$(). $(thing)Большие сосуды$() это блоки, которые могут хранить до девяти предметов, и если их $(thing)запечатать$(), предметы внутри получат статус $(5)$(bold)законсервировано$(), что продлевает их срок хранения в 2 раза.$(br2)$(thing)Малые сосуды$() это предметы, которые могут вмещать до четырёх других предметов, и они также применяют статус $(5)$(bold)законсервировано$() к своему содержимому.",
             "title": "Сосуды"
         },
         {
@@ -39,24 +39,24 @@
         },
         {
             "type": "patchouli:text",
-            "text": "One other way to easily preserve certain types of food is to cook them. $(thing)Meats$() will all expire slower when they are cooked than when they are raw.$(br2)It is also important to use the correct device for cooking. Certain devices that heat very hot, such as a $(l:mechanics/charcoal_forge)Charcoal Forge$() or a $(l:mechanics/crucible)Crucible$() are $(bold)bad$() for cooking food, which will make them expire faster!",
+            "text": "Ещё один простой способ сохранить определённые виды еды это приготовить их. Всё $(thing)мясо$() портится медленнее, когда оно приготовлено, а не сырое.$(br2)Также важно использовать правильное устройство для готовки. Некоторые устройства, которые нагреваются очень сильно, такие как $(l:mechanics/charcoal_forge)угольная кузница$() или  $(l:mechanics/crucible)тигель$(), являются $(bold)плохими$() для приготовления еды и только заставят её испортиться быстрее!",
             "title": "Готовка"
         },
         {
             "type": "tfc:heat_recipe",
             "recipe": "tfc:heating/mutton",
-            "text": "Instead, a $(l:getting_started/firepit)Firepit$() or a $(l:mechanics/grill)Grill$() can even provide a buff for using it! For example, cooking mutton (pictured above) in a $(thing)Firepit$() will increase its lifetime by 1.33x, and cooking in a $(thing)Grill$() will increase its lifetime by 1.66x!"
+            "text": "Вместо этого использование $(l:getting_started/firepit)костра$() или $(l:mechanics/grill)гриля$() может дать бонус! Например, приготовление баранины (на картинке выше) на $(thing)костре$() увеличит строк её хранения в 1,33 раза, а приготовление на $(thing)гриле$() в 1,66 раза!"
         },
         {
             "type": "patchouli:text",
             "anchor": "salting",
-            "text": "$(thing)Salting$() is a way to make meat last longer. To salt meat, it must be crafted with $(thing)Salt$() in a crafting grid. Only raw meat can be salted. Afterwards, cooking or otherwise preserving the meat does not take away the salted property.",
+            "text": "$(thing)Засаливание$() это способ продлить строк годности мяса. Чтобы засолить мясо, его нужно объединить с $(thing)солью$() в сетке крафта. Засолить можно только сырое мясо. В дальнейшем приготовление или иная консервация мяса не лишает его свойства засоленности.",
             "title": "Засаливание"
         },
         {
             "type": "tfc:quern_recipe",
             "recipe": "tfg:quern/salt",
-            "text": "One way of getting salt is through $(l:mechanics/quern)grinding$() $(l:the_world/ores_and_minerals#halite)Halite$(), which is a mineral."
+            "text": "Один из способов получения соли это $(l:mechanics/quern)измельчение$() $(l:the_world/ores_and_minerals#halite)галита$(), который является минералом."
         },
         {
             "type": "patchouli:multiblock",
@@ -74,22 +74,22 @@
                 }
             },
             "name": "Самосадочная соль",
-            "text": "Salt can be found naturally in forests. It can be placed and picked back up.",
+            "text": "Соль можно найти в дикой природе в лесах. Её можно размещать и снова подпирать.",
             "enable_visualize": false
         },
         {
             "type": "patchouli:text",
             "anchor": "vinegar",
-            "text": "$(thing)Vinegar Preservation$() is a way of making fruits, veggies, and meat last longer.$(br2)$(thing)Vinegar$() is made in a $(l:mechanics/barrels)Barrel$(), by sealing a fruit with 250mB of Alcohol. To preserve food in vinegar it must first be $(thing)Pickled$() in $(thing)Brine$(). Brine is made in a barrel with 1 part $(thing)Vinegar$() and 9 parts $(thing)Salt Water$()."
+            "text": "$(thing)Консервация в уксусе$() это способ продлить срок годности фруктов, овощей и мяса.$(br2)$(thing)Уксус$() изготавливается в $(l:mechanics/barrels)бочке$() путём запечатывания фрукта с 250 мБ алгоколя. Чтобы законсервировать еду в уксусе, её сначала нужно $(thing)замариновать$() в $(thing)рассоле$(). Рассол готовится в бочке из 1 части $(thing)уксуса$() и 9 частей $(thing)солёной воды$()."
         },
         {
             "type": "patchouli:text",
-            "text": "Once food is pickled, it can be sealed in a Barrel of Vinegar. If there is 125mB of Vinegar per pickled food item, the food will last longer."
+            "text": "После того как еда замаринована, её можно запечатать в бочке с уксусом. Если на каждую единицу маринованной еды приходится 125 мБ уксуса, она будет храниться значительно дольше."
         },
         {
             "type": "patchouli:text",
             "anchor": "pests",
-            "text": "Food should be stored in either sealed large vessels or in $(l:getting_started/pottery#vessel)Small Vessels$(). Food that is left sitting in chests or other devices can attract $(thing)Rats$(). Rats are able to open containers and eat the food out of them, but will despawn if they can't find something for a few minutes. You will be alerted to a rat's presence by the message $(thing)'This container has a foul smell'$(). It is important to note that unsealing and resealing a large vessel before you leave the screen will never attract pests."
+            "text": "Еду следует хранить либо в запечатанных больших сосудах, либо в $(l:getting_started/pottery#vessel)малых сосудах$(). Еда, оставленная в сундуках или других устройствах, может привлечь $(thing)крыс$(). Крысы способны открывать контейнеры и съедать из них еду, но они исчезнут, если не смогут ничего найти в течение нескольких минут. О присутствии крысы вас предупредит сообщение $(thing)\"Этот контейнер имееет неприятный запах\"$(). Важно отметить: если вы распечатываете и снова запечатываете большой сосуд перед тем, как отойти от экрана, это никогда не привлечет вредителей."
         }
     ],
     "read_by_default": true

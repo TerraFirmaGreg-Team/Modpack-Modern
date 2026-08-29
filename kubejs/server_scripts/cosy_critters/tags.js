@@ -1,0 +1,85 @@
+// priority: 0
+"use strict";
+
+function registerCosyCrittersBiomeTags(event) {
+
+	const moth_biomes = [
+		'tfc:badlands',
+		'tfc:canyons',
+		'tfc:highlands',
+		'tfc:hills',
+		'tfc:inverted_badlands',
+		"tfc:lowlands",
+		'tfc:mountains',
+		'tfc:oceanic_mountains',
+		'tfc:old_mountains',
+		'tfc:plains',
+		'tfc:plateau',
+		'tfc:rolling_hills',
+		"tfc:salt_marsh",
+		'tfc:shore',
+		'tfc:tidal_flats',
+		'tfc:volcanic_mountains',
+		'tfc:volcanic_oceanic_mountains',
+
+		'tfg:earth/ancient_shield_volcano',
+		'tfg:earth/badlands',
+		'tfg:earth/burren_badlands',
+		'tfg:earth/burren_badlands_tall',
+		'tfg:earth/burren_plains',
+		'tfg:earth/burren_plateau',
+		'tfg:earth/burren_roche_moutonee',
+		'tfg:earth/canyons',
+		'tfg:earth/cenote_canyons',
+		'tfg:earth/cenote_highlands',
+		'tfg:earth/cenote_hills',
+		'tfg:earth/cenote_plains',
+		'tfg:earth/cenote_plateau',
+		'tfg:earth/cenote_rolling_hills',
+		'tfg:earth/coastal_dunes',
+		'tfg:earth/doline_canyons',
+		'tfg:earth/doline_highlands',
+		'tfg:earth/doline_hills',
+		'tfg:earth/doline_plains',
+		'tfg:earth/doline_plateau',
+		'tfg:earth/doline_rolling_hills',
+		'tfg:earth/dormant_shield_volcano',
+		'tfg:earth/drumlins',
+		'tfg:earth/embayments',
+		'tfg:earth/extinct_shield_volcano',
+		'tfg:earth/extreme_doline_plateau',
+		'tfg:earth/grassy_dunes',
+		'tfg:earth/highlands',
+		'tfg:earth/hills',
+		'tfg:earth/inverted_patterned_ground',
+		"tfg:earth/lowlands",
+		'tfg:earth/mountains',
+		'tfg:earth/mud_flats',
+		'tfg:earth/oceanic_mountains',
+		'tfg:earth/old_mountains',
+		'tfg:earth/old_shield_volcano_shore',
+		'tfg:earth/patterned_ground',
+		'tfg:earth/plains',
+		'tfg:earth/plateau',
+		'tfg:earth/plateau_wide',
+		'tfg:earth/rocky_plateau',
+		'tfg:earth/rolling_hills',
+		'tfg:earth/salt_flats',
+		"tfg:earth/salt_marsh",
+		'tfg:earth/setback_cliffs',
+		'tfg:earth/shield_volcano_shore',
+		'tfg:earth/shore',
+		'tfg:earth/stone_circles',
+		'tfg:earth/tidal_flats',
+		'tfg:earth/tuyas',
+		'tfg:earth/volcanic_mountains',
+		'tfg:earth/volcanic_oceanic_mountains',
+		'tfg:earth/whorled_canyons'
+	];
+
+	// c:is_overworld isn't used for anything else.
+	// I don't know why they insist on using this tag instead of just making their own "has moths" one
+	moth_biomes.forEach(biome => {
+		event.add('c:is_overworld', biome);
+	})
+}

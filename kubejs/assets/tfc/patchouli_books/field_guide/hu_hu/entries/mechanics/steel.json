@@ -21,7 +21,7 @@
         {
             "type": "patchouli:spotlight",
             "item": "tfc:metal/ingot/weak_steel",
-            "title": "Weak Steel",
+            "title": "Gyenge acél",
             "link_recipes": false,
             "text": "$(br)$(bold)Requirements:$()$(br)$(li)50 - 70 % : $(thing)Steel$()$(li)15 - 25 % : $(thing)Nickel$()$(li)15 - 25 % : $(thing)Black Bronze$()$(br2)Molten $(thing)Weak Steel$() can be cast into ingots."
         },

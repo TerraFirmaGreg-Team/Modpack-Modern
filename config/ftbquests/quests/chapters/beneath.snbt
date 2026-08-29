@@ -21,13 +21,13 @@
 			}
 			id: "6C3E8E1974A07479"
 			linked_quest: "061116CF508D54F6"
-			x: 2.5d
+			x: 3.0d
 			y: 2.5d
 		}
 		{
 			id: "50806ED6BC26A04A"
 			linked_quest: "2DB82986FE176CD7"
-			x: 2.5d
+			x: 3.0d
 			y: 5.0d
 		}
 		{
@@ -36,6 +36,12 @@
 			shape: "heart"
 			x: -1.0d
 			y: 7.0d
+		}
+		{
+			id: "4F69D75A27802ED9"
+			linked_quest: "37108D618CF60730"
+			x: -7.0d
+			y: 5.0d
 		}
 	]
 	quests: [
@@ -153,7 +159,11 @@
 			y: -6.0d
 		}
 		{
-			dependencies: ["6694C656C4D4792B"]
+			dependencies: [
+				"6694C656C4D4792B"
+				"45B3A5C226C0EC9F"
+			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.piglin_disguise.desc}"]
 			id: "2EE6A09A11BFC0EE"
 			optional: true
@@ -284,23 +294,13 @@
 			dependencies: [
 				"5D0B0B9E61C3DE75"
 				"6B2ADEEEC2E9ED4B"
+				"2E3C021FEAE6A490"
 			]
 			description: ["{quests.tfg_tips.blue_steel_diving.desc}"]
 			id: "1371C0F8BFDEE0FC"
 			size: 1.0d
 			subtitle: "{quests.tfg_tips.blue_steel_diving.subtitle}"
 			tasks: [
-				{
-					id: "429B22DC3DA3C04F"
-					item: {
-						Count: 1
-						id: "create:netherite_diving_boots"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
 				{
 					id: "0FB3C9125058EFD0"
 					item: {
@@ -334,9 +334,21 @@
 					}
 					type: "item"
 				}
+				{
+					id: "240F301920DD2E3D"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(minecraft:netherite_boots)item(create:netherite_diving_boots))"
+						}
+					}
+					title: "{quests.tasktype.item.any}"
+					type: "item"
+				}
 			]
 			title: "{quests.tfg_tips.blue_steel_diving.title}"
-			x: -3.0d
+			x: -5.0d
 			y: 5.0d
 		}
 		{
@@ -476,7 +488,7 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfg:rope_ladders)"
 					}
 				}
-				title: "Any #tfg:rope_ladders"
+				title: "{quests.tasktype.item.any} #tfg:rope_ladders"
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.rope_ladders.title}"
@@ -495,7 +507,7 @@
 				value: 1L
 			}]
 			title: "{quests.tfg_tips.red_elk.title}"
-			x: -3.0d
+			x: -5.0d
 			y: 2.5d
 		}
 		{
@@ -546,12 +558,12 @@
 							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:rock/aqueducts)"
 						}
 					}
-					title: "Any #tfc:rock/aqueducts"
+					title: "{quests.tasktype.item.any} #tfc:rock/aqueducts"
 					type: "item"
 				}
 			]
 			title: "{quests.tfg_tips.hellforge.title}"
-			x: 2.5d
+			x: 3.0d
 			y: 0.0d
 		}
 		{
@@ -593,46 +605,31 @@
 				"{@pagebreak}"
 				"{quests.tfg_tips.top_slimes.desc.2}"
 			]
-			icon: "tfg:slime/slime_ball/plant"
+			icon: "jellies:jellie/slime_ball/plant"
 			id: "5C8E47A086DF5EC0"
 			subtitle: "{quests.tfg_tips.top_slimes.subtitle}"
 			tasks: [
 				{
-					biome: "tfg:nether/salt_caves"
-					disable_toast: true
-					icon: "tfg:halite"
-					id: "2BF170444922B465"
-					optional_task: true
-					title: "{quests.tfg_tips.top_slimes.task.1}"
-					type: "biome"
-				}
-				{
-					biome: "tfg:nether/muggy_bog"
-					disable_toast: true
-					icon: "tfg:hardened_clay"
-					id: "523005C4670A439D"
-					optional_task: true
-					title: "{quests.tfg_tips.top_slimes.task.2}"
-					type: "biome"
-				}
-				{
-					icon: "tfg:spawn_egg/slime"
-					id: "6FC962ECC223F799"
+					icon: "jellies:jellie/slime_ball/certus"
+					id: "66E888B92EADA8E8"
 					observe_type: 5
 					timer: 0L
-					title: "{quests.tfg_tips.top_slimes.task.3}"
-					to_observe: "tfg:slime"
+					title: "{quests.tfg_tips.top_slimes.task.1}"
+					to_observe: "jellies:ice"
 					type: "observation"
 				}
 				{
-					id: "78C8CDC154866808"
-					item: "tfg:slime/slime_ball/plant"
-					optional_task: true
-					type: "item"
+					icon: "jellies:jellie/slime_ball/plant"
+					id: "32122FC385AA2A20"
+					observe_type: 5
+					timer: 0L
+					title: "{quests.tfg_tips.top_slimes.task.2}"
+					to_observe: "jellies:plant"
+					type: "observation"
 				}
 			]
 			title: "{quests.tfg_tips.top_slimes.title}"
-			x: -5.0d
+			x: -3.0d
 			y: 0.0d
 		}
 		{
@@ -643,56 +640,41 @@
 			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.middle_slimes.desc}"]
 			disable_toast: true
-			icon: "tfg:slime/slime_ball/glowberry"
+			icon: "jellies:jellie/slime_ball/glowberry"
 			id: "743E9861F32E84A5"
 			subtitle: "{quests.tfg_tips.middle_slimes.subtitle}"
 			tasks: [
 				{
-					biome: "tfg:nether/lush_hollow"
-					disable_toast: true
-					icon: "minecraft:moss_block"
-					id: "2E9F5A0EB4118661"
-					optional_task: true
-					title: "{quests.tfg_tips.middle_slimes.task.1}"
-					type: "biome"
-				}
-				{
-					biome: "tfg:nether/geothermal_springs"
-					disable_toast: true
-					icon: "minecraft:calcite"
-					id: "212039DCF5896DEF"
-					optional_task: true
-					title: "{quests.tfg_tips.middle_slimes.task.2}"
-					type: "biome"
-				}
-				{
-					biome: "tfg:nether/thorny_brambles"
-					disable_toast: true
-					icon: "wan_ancient_beasts:olden_moss_block"
-					id: "0B964D9767632BD7"
-					optional_task: true
-					title: "{quests.tfg_tips.middle_slimes.task.3}"
-					type: "biome"
-				}
-				{
-					disable_toast: true
-					icon: "tfg:spawn_egg/slime"
+					icon: "jellies:jellie/slime_ball/glowberry"
 					id: "68EB0510ADE6DA59"
 					observe_type: 5
 					timer: 0L
-					title: "{quests.tfg_tips.middle_slimes.task.4}"
-					to_observe: "tfg:slime"
+					title: "{quests.tfg_tips.middle_slimes.task.1}"
+					to_observe: "jellies:glowberry"
 					type: "observation"
 				}
 				{
-					id: "19E226F88A0F9391"
-					item: "tfg:slime/slime_ball/glowberry"
-					optional_task: true
-					type: "item"
+					icon: "jellies:jellie/slime_ball/spring"
+					id: "347E4BC5895EAE24"
+					observe_type: 5
+					timer: 0L
+					title: "{quests.tfg_tips.middle_slimes.task.2}"
+					to_observe: "jellies:spring"
+					type: "observation"
+				}
+				{
+					disable_toast: true
+					icon: "jellies:jellie/slime_ball/plant"
+					id: "6C8AB8F252D12A82"
+					observe_type: 5
+					timer: 0L
+					title: "{quests.tfg_tips.middle_slimes.task.3}"
+					to_observe: "jellies:plant"
+					type: "observation"
 				}
 			]
 			title: "{quests.tfg_tips.middle_slimes.title}"
-			x: -5.0d
+			x: -3.0d
 			y: 2.5d
 		}
 		{
@@ -706,32 +688,39 @@
 				"{@pagebreak}"
 				"{quests.tfg_tips.bottom_slimes.desc.2}"
 			]
-			icon: "tfg:slime/slime_ball/latex"
+			icon: "jellies:jellie/slime_ball/latex"
 			id: "4E98FB76D9AF0205"
 			subtitle: "{quests.tfg_tips.bottom_slimes.subtitle}"
 			tasks: [
 				{
-					disable_toast: true
-					icon: "tfg:spawn_egg/slime"
-					id: "2336B8B00B823EFF"
+					icon: "jellies:jellie/slime_ball/phosphorum"
+					id: "65784A1CBB8727D9"
 					observe_type: 5
 					timer: 0L
-					title: "{quests.tfg_tips.bottom_slimes.task}"
-					to_observe: "tfg:slime"
+					title: "{quests.tfg_tips.bottom_slimes.task.1}"
+					to_observe: "jellies:lava"
 					type: "observation"
 				}
 				{
-					id: "230B0F0E83D54EAF"
-					item: "tfg:slime/slime_ball/latex"
-					type: "item"
+					icon: "jellies:jellie/slime_ball/latex"
+					id: "681A467944EDF999"
+					observe_type: 5
+					timer: 0L
+					title: "{quests.tfg_tips.bottom_slimes.task.2}"
+					to_observe: "jellies:latex"
+					type: "observation"
 				}
 			]
 			title: "{quests.tfg_tips.bottom_slimes.title}"
-			x: -5.0d
+			x: -3.0d
 			y: 5.0d
 		}
 		{
-			dependencies: ["604E10FF2A87C62F"]
+			dependencies: [
+				"604E10FF2A87C62F"
+				"264D138DFFE13BD0"
+			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.unposter.desc}"]
 			guide_page: "tfc:field_guide tfc:beneath/unposter"
 			id: "43CC656CB7D0F813"
@@ -742,8 +731,24 @@
 				item: "beneath:unposter"
 				type: "item"
 			}]
-			x: 4.0d
+			x: 5.0d
 			y: 0.0d
+		}
+		{
+			dependencies: ["3A7EAA08E124010D"]
+			description: ["{quests.tfg_tips.phantoms.desc}"]
+			icon: "minecraft:phantom_membrane"
+			id: "777646123ED397D1"
+			tasks: [{
+				entity: "minecraft:phantom"
+				icon: "minecraft:phantom_membrane"
+				id: "64F275A6F9439869"
+				type: "kill"
+				value: 1L
+			}]
+			title: "{quests.tfg_tips.phantoms.title}"
+			x: -7.0d
+			y: 2.5d
 		}
 	]
 	subtitle: ["{quests.beneath.subtitle}"]

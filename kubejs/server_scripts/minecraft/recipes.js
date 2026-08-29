@@ -491,7 +491,8 @@ const registerMinecraftRecipes = (event) => {
 		.itemOutputs('minecraft:cauldron')
 		.duration(700)
 		.EUt(4)
-		.addMaterialInfo(true)
+
+	TFGHelpers.registerMaterialInfo('minecraft:cauldron', [GTMaterials.Iron, 5]);
 
 	//#endregion
 
@@ -520,7 +521,7 @@ const registerMinecraftRecipes = (event) => {
 	//#region Выход: Поршень, piston
 
 	event.recipes.gtceu.assembler('piston')
-		.itemInputs(ChemicalHelper.get(TagPrefix.rod, GTMaterials.WroughtIron, 1),ChemicalHelper.get(TagPrefix.gearSmall, GTMaterials.Brass, 1) , '3x #tfc:lumber', '4x #forge:cobblestone')
+		.itemInputs(ChemicalHelper.get(TagPrefix.rod, GTMaterials.WroughtIron, 1), ChemicalHelper.get(TagPrefix.gearSmall, GTMaterials.Brass, 1), '3x #tfc:lumber', '4x #forge:cobblestone')
 		.itemOutputs('2x minecraft:piston')
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.LV])
@@ -531,7 +532,7 @@ const registerMinecraftRecipes = (event) => {
 	//#region Выход: Шерсть, wool
 
 	event.recipes.gtceu.assembler('wool_from_string')
-		.itemInputs('8x #forge:string')
+		.itemInputs('8x tfc:wool_yarn')
 		.circuit(4)
 		.itemOutputs('minecraft:white_wool')
 		.duration(100)
@@ -790,14 +791,14 @@ const registerMinecraftRecipes = (event) => {
 
 	event.recipes.tfc.advanced_shaped_crafting(
 		TFC.itemStackProvider.of('minecraft:netherite_leggings').copyForgingBonus(), [
-			'ABA',
-			'CDC'
-		], {
-			A: '#forge:screws/blue_steel',
-			B: 'tfc:metal/greaves/blue_steel',
-			C: '#forge:plates/blue_steel',
-			D: 'beneath:cursed_hide'
-		}, 0, 1).id('tfg:minecraft/shaped/netherite_leggings')
+		'ABA',
+		'CDC'
+	], {
+		A: '#forge:screws/blue_steel',
+		B: 'tfc:metal/greaves/blue_steel',
+		C: '#forge:plates/blue_steel',
+		D: 'beneath:cursed_hide'
+	}, 0, 1).id('tfg:minecraft/shaped/netherite_leggings')
 
 	//#endregion
 
@@ -805,14 +806,14 @@ const registerMinecraftRecipes = (event) => {
 
 	event.recipes.tfc.advanced_shaped_crafting(
 		TFC.itemStackProvider.of('minecraft:netherite_boots').copyForgingBonus(), [
-			'ABA',
-			'CDC'
-		], {
-			A: '#forge:screws/blue_steel',
-			B: 'tfc:metal/boots/blue_steel',
-			C: '#forge:plates/blue_steel',
-			D: 'beneath:cursed_hide'
-		}, 0, 1).id('tfg:minecraft/shaped/netherite_boots')
+		'ABA',
+		'CDC'
+	], {
+		A: '#forge:screws/blue_steel',
+		B: 'tfc:metal/boots/blue_steel',
+		C: '#forge:plates/blue_steel',
+		D: 'beneath:cursed_hide'
+	}, 0, 1).id('tfg:minecraft/shaped/netherite_boots')
 
 	//#endregion
 
@@ -906,12 +907,19 @@ const registerMinecraftRecipes = (event) => {
 		'AA '
 	], {
 		A: '#minecraft:planks',
-		B: ChemicalHelper.get(TagPrefix.plate, GTMaterials.Lead, 1),
+		B: ['#forge:plates/lead', '#forge:plates/iron'],
 		C: '#forge:tools/hammers'
-	}).id('minecraft:shapeless/smithing_table')
+	}).id('minecraft:shaped/smithing_table')
 
-	event.recipes.gtceu.assembler('minecraft:assembler/smithing_table')
+	event.recipes.gtceu.assembler('minecraft:assembler/smithing_table_lead')
 		.itemInputs('2x #minecraft:planks', ChemicalHelper.get(TagPrefix.plate, GTMaterials.Lead, 2))
+		.circuit(4)
+		.itemOutputs('minecraft:smithing_table')
+		.duration(60)
+		.EUt(GTValues.VA[GTValues.ULV])
+
+	event.recipes.gtceu.assembler('minecraft:assembler/smithing_table_iron')
+		.itemInputs('2x #minecraft:planks', ChemicalHelper.get(TagPrefix.plate, GTMaterials.Iron, 2))
 		.circuit(4)
 		.itemOutputs('minecraft:smithing_table')
 		.duration(60)
@@ -954,10 +962,10 @@ const registerMinecraftRecipes = (event) => {
 		.EUt(GTValues.VA[GTValues.LV])
 
 	event.shapeless("minecraft:glow_ink_sac", [
-      "minecraft:glowstone_dust",
-      "minecraft:glowstone_dust",
-      "#forge:dyes"])
-    .id("tfg:shapeless/glow_ink_sac");
+		"minecraft:glowstone_dust",
+		"minecraft:glowstone_dust",
+		"#forge:dyes"])
+		.id("tfg:shapeless/glow_ink_sac");
 
 	//#endregion
 
@@ -998,9 +1006,9 @@ const registerMinecraftRecipes = (event) => {
 	//#region Pressure Plates
 
 	const PRESSURE_PLATES = [
-		{type: 'polished_blackstone', material: 'minecraft:polished_blackstone_slab', recycle: GTMaterials.get('tfg:igneous_ultramafic'), yield: 0.5 },
-		{type: 'light_weighted', material: '#forge:plates/gold', recycle: GTMaterials.Gold, yield: 2 },
-		{type: 'heavy_weighted', material: '#forge:plates/iron', recycle: GTMaterials.Iron, yield: 2 }
+		{ type: 'polished_blackstone', material: 'minecraft:polished_blackstone_slab', recycle: GTMaterials.get('tfg:igneous_ultramafic'), yield: 0.5 },
+		{ type: 'light_weighted', material: '#forge:plates/gold', recycle: GTMaterials.Gold, yield: 2 },
+		{ type: 'heavy_weighted', material: '#forge:plates/iron', recycle: GTMaterials.Iron, yield: 2 }
 	]
 	PRESSURE_PLATES.forEach(x => {
 		event.shaped(`minecraft:${x.type}_pressure_plate`, [
@@ -1009,12 +1017,12 @@ const registerMinecraftRecipes = (event) => {
 			' E '
 		], {
 			B: '#tfc:hammers',
-			C:  x.material,
+			C: x.material,
 			D: '#forge:small_springs',
 			E: '#forge:tools/screwdrivers'
 		}).id(`minecraft:shaped/${x.type}_pressure_plate`)
 
-		event.recipes.gtceu.assembler(`minecraft:${x.type}_pressure_plate`)
+		event.recipes.gtceu.assembler(`tfg:${x.type}_pressure_plate`)
 			.itemInputs('#forge:small_springs', `2x ${x.material}`)
 			.itemOutputs(`minecraft:${x.type}_pressure_plate`)
 			.circuit(3)

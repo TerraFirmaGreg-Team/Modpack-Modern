@@ -1,0 +1,28 @@
+{
+  "name": "Diferenças do TFC",
+  "category": "tfc:firmalife",
+  "icon": "tfc:textures/item/food/wheat_bread.png",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "O Firmalife faz algumas mudanças em como as coisas funcionam no TFC tradicional. Este capítulo existe para ajudar você a identificar áreas em que isso é muito diferente."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l:firmalife/cheese)Queijo$() é feito através de um processo mais complexo. Ele pode ser colocado no mundo e tem a opção de envelhecer em uma $(l:firmalife/cellar)Adega$().",
+      "title": "Envelhecimento de Queijo"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l:firmalife/bread)Pão$() é feito através de um processo mais complexo que requer fermento e um adoçante. A receita tradicional de pão do TFC produz pão ázimo, que é pior em termos nutricionais.",
+      "title": "Fabricação de Pão"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "O Firmalife dá maior ênfase ao açúcar. Embora ainda possa ser obtido através da cana-de-açúcar, considere usar mel (de abelhas) ou produzir açúcar a partir de beterraba!",
+      "title": "Adoçantes"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 0
+}

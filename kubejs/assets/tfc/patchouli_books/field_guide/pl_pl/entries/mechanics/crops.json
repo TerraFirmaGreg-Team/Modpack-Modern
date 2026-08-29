@@ -1,5 +1,4 @@
 {
-	"__comment__": "This file was automatically created by mcresources",
 	"name": "Uprawy",
 	"category": "tfc:mechanics",
 	"icon": "tfc:textures/item/food/wheat.png",
@@ -14,8 +13,8 @@
 		},
 		{
 			"type": "patchouli:text",
-			"title": "Zawartość",
-			"text": "$(li)$(l:tfc:mechanics/crops#barley)Barley$()$(li)$(l:tfc:mechanics/crops#beet)Beet$()$(li)$(l:tfc:mechanics/crops#cabbage)Cabbage$()$(li)$(l:tfc:mechanics/crops#canola)Canola$()$(li)$(l:tfc:mechanics/crops#carrot)Carrot$()$(li)$(l:tfc:mechanics/crops#cucumber)Cucumber$()$(li)$(l:tfc:mechanics/crops#flax)Flax$()$(li)$(l:tfc:mechanics/crops#garlic)Garlic$()$(li)$(l:tfc:mechanics/crops#green_bean)Green Bean$()$(li)$(l:tfc:mechanics/crops#jute)Jute$()$(li)$(l:tfc:mechanics/crops#lentil)Lentil$()$(li)$(l:tfc:mechanics/crops#maize)Maize$()$(li)$(l:tfc:mechanics/crops#melon)Melon$()"
+			"text": "$(li)$(l:tfc:mechanics/crops#barley)Barley$()$(li)$(l:tfc:mechanics/crops#beet)Beet$()$(li)$(l:tfc:mechanics/crops#cabbage)Cabbage$()$(li)$(l:tfc:mechanics/crops#canola)Canola$()$(li)$(l:tfc:mechanics/crops#carrot)Carrot$()$(li)$(l:tfc:mechanics/crops#cucumber)Cucumber$()$(li)$(l:tfc:mechanics/crops#flax)Flax$()$(li)$(l:tfc:mechanics/crops#garlic)Garlic$()$(li)$(l:tfc:mechanics/crops#green_bean)Green Bean$()$(li)$(l:tfc:mechanics/crops#jute)Jute$()$(li)$(l:tfc:mechanics/crops#lentil)Lentil$()$(li)$(l:tfc:mechanics/crops#maize)Maize$()$(li)$(l:tfc:mechanics/crops#melon)Melon$()",
+			"title": "Zawartość"
 		},
 		{
 			"type": "patchouli:text",
@@ -23,15 +22,16 @@
 		},
 		{
 			"type": "tfc:rock_knapping_recipe",
+			"text": "To get started, a $(thing)Stone Hoe$() can be $(thing)knapped$() as seen above.",
+			"title": "Uprawy rolne",
 			"recipes": [
 				"tfg:rock_knapping/stone_hoe_head_1"
-			],
-			"text": "To get started, a $(thing)Stone Hoe$() can be $(thing)knapped$() as seen above."
+			]
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "gtceu:shaped/hoe_stone",
-			"text": "Once the hoe head is knapped, it can be crafted into a Hoe.$(br2)Hoes function as in Vanilla, by right clicking dirt blocks to turn them into $(thing)Farmland$(). They can also be used to convert $(thing)Rooted Dirt$() into $(thing)Dirt$()."
+			"text": "Once the hoe head is knapped, it can be crafted into a Hoe.$(br2)Hoes function as in Vanilla, by right clicking dirt blocks to turn them into $(thing)Farmland$(). They can also be used to convert $(thing)Rooted Dirt$() into $(thing)Dirt$().",
+			"recipe": "gtceu:shaped/hoe_stone"
 		},
 		{
 			"type": "patchouli:text",
@@ -632,7 +632,7 @@
 		},
 		{
 			"type": "tfc:multimultiblock",
-			"text": "",
+			"text": "Note: in order to grow, the rice block must be $(thing)Waterlogged$().",
 			"multiblocks": [
 				{
 					"pattern": [
@@ -780,7 +780,7 @@
 		},
 		{
 			"type": "tfc:multimultiblock",
-			"text": "Note: in order to grow, the rice block must be $(thing)Waterlogged$().",
+			"text": "Uwaga: By rosnąć, ryż musi być $(thing)otoczony wodą$().",
 			"multiblocks": [
 				{
 					"pattern": [
@@ -1253,7 +1253,7 @@
 		},
 		{
 			"type": "tfc:multimultiblock",
-			"text": "",
+			"text": "The stick is required in order for the crop to fully grow.",
 			"multiblocks": [
 				{
 					"pattern": [
@@ -2677,7 +2677,7 @@
 		},
 		{
 			"type": "tfc:multimultiblock",
-			"text": "",
+			"text": "The stick is required in order for the crop to fully grow.",
 			"multiblocks": [
 				{
 					"pattern": [
@@ -3462,7 +3462,7 @@
 					}
 				}
 			],
-			"text": "$(thing)Wild Sunflowers$() grow between 5 and 40C, and 100 to 450mm of rainfall. Their seeds can also be roasted and eaten!"
+			"text": "$(thing)Dziki słonecznik$() rośnie w temp. od 5 do 40 C oraz przy opadach między 100 do 450 mm. Jego nasiona mogą być prażone i zjedzone!"
 		},
 		{
 			"type": "patchouli:text",
@@ -3781,7 +3781,7 @@
 					}
 				}
 			],
-			"text": "$(thing)Wild Flax$() grows between -5 and 23C, and 175 to 475mm of rainfall."
+			"text": "$(thing)Dzikie len$() rośnie w temp. od -5 do 23 C oraz przy opadach między 175 do 475 mm."
 		},
 		{
 			"type": "patchouli:text",
@@ -3919,7 +3919,7 @@
 					}
 				}
 			],
-			"text": "$(thing)Wild Cucumber$() grows between 15 and 40C, and 350 to 500mm of rainfall.",
+			"text": "$(thing)Dziki ogórek$() rośnie w temp. od 15 do 40 C oraz przy opadach między 350 a 500 mm.",
 			"enable_visualize": false
 		},
 		{
@@ -4034,7 +4034,7 @@
 					}
 				}
 			],
-			"text": "$(thing)Wild Radishes$() grow between -16 and 4C, and 75 to 325mm of rainfall.",
+			"text": "$(thing)Dzika rzodkiewka$() rośnie w temp. od -16 do 4 C oraz przy opadach między 75 a 325 mm.",
 			"enable_visualize": false
 		},
 		{
@@ -4149,7 +4149,7 @@
 					}
 				}
 			],
-			"text": "$(thing)Wild Lentils$() grow between -18 and 2C, and 250 to 425mm of rainfall.",
+			"text": "$(thing)Dzika soczewica$() rośnie w temp. od -18 do 2 C oraz przy opadach między 250 a 425 mm.",
 			"enable_visualize": false
 		}
 	],

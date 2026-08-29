@@ -1,5 +1,5 @@
 {
-    "name": "Weaving",
+    "name": "札札弄機杼",
     "category": "tfc:mechanics",
     "icon": "tfc:spindle",
     "pages": [
@@ -36,7 +36,7 @@
                 "tfc:textures/gui/book/tutorial/loom_working.png",
                 "tfc:textures/gui/book/tutorial/loom_done.png"
             ],
-            "text": "The stages of the loom working.",
+            "text": "織布機的工作原理。",
             "border": true
         },
         {

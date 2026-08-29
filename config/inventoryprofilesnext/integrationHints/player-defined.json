@@ -2,23 +2,8 @@
     "com.lowdragmc.lowdraglib.gui.modular.ModularUIGuiContainer": {
         "buttonHints": {
             "MOVE_TO_CONTAINER": {
-                "horizontalOffset": -19,
-                "bottom": 69
-            },
-            "SORT": {
-                "horizontalOffset": -43,
-                "bottom": 120
-            },
-            "SORT_COLUMNS": {
-                "horizontalOffset": -31,
-                "bottom": 107
-            },
-            "SORT_ROWS": {
-                "horizontalOffset": -19,
-                "bottom": 94
-            },
-            "SETTINGS": {
-                "top": 1
+                "horizontalOffset": 36,
+                "bottom": -12
             }
         }
     },
@@ -50,6 +35,15 @@
         }
     },
     "su.terrafirmagreg.core.client.screen.TFGNutritionScreen": {
+        "ignore": true
+    },
+    "com.simibubi.create.content.logistics.factoryBoard.FactoryPanelSetItemScreen": {
+        "ignore": true
+    },
+    "com.yision.fluidlogistics.content.logistics.factoryGauge.client.ResourceFactoryGaugeSetFilterScreen": {
+        "ignore": true
+    },
+    "net.dries007.tfc.client.screen.BarrelScreen": {
         "ignore": true
     }
 }

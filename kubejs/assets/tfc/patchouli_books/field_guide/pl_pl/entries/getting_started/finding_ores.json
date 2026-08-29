@@ -1,5 +1,4 @@
 {
-  "__comment__": "This file was automatically created by mcresources",
   "name": "Rudy, metal i odlewanie",
   "category": "tfc:getting_started",
   "icon": "tfc:ore/normal_native_copper",
@@ -73,15 +72,15 @@
     },
     {
       "type": "patchouli:crafting",
-      "recipe": "tfchotornot:crafting/tongs/wood",
-      "text": "Careful, the vessel will be hot! Craft $(thing)Wooden Tongs$() with two sticks and a knife and hold them in your off hand to handle the hot vessel safely."
+      "text": "Careful, the vessel will be hot! Craft $(thing)Wooden Tongs$() with two sticks and a knife and hold them in your off hand to handle the hot vessel safely.",
+      "recipe": "tfchotornot:crafting/tongs/wood"
     },
     {
       "type": "patchouli:image",
+      "text": "Hold the vessel and $(item)$(k:key.use)$() to open the $(thing)Casting$() interface.",
       "images": [
         "tfc:textures/gui/book/gui/casting.png"
       ],
-      "text": "Hold the vessel and $(item)$(k:key.use)$() to open the $(thing)Casting$() interface.",
       "border": false
     },
     {
@@ -91,7 +90,7 @@
     {
       "type": "patchouli:crafting",
       "recipe": "gtceu:shaped/pickaxe_copper",
-      "text": "You are now able to craft your first pickaxe! Find enough copper to make a pickaxe head, fire a pickaxe mold and melt the ore using a pit kiln, then cast a head. Slap it on a stick, and voila! You can now dig for $(l:tfg_ores/index)ore$()."
+      "text": "Teraz możesz wytworzyć swój pierwszy kilof! Znajdź wystarczająco dużo miedzi, aby utworzyć głowicę kilofa, przepal forme na kilof i roztop rude używając pieca jamowego, a następnie wyjmij głowice. Włóż ją na kijek i włala! Możesz teraz kopać $(l:tfg_ores/index)rudy$()."
     },
     {
       "type": "patchouli:spotlight",

@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "目录",
-			"text": "$(li)$(l:tfc:beneath/beneath_crops#cassava)木薯$()$(li)$(l:tfc:beneath/beneath_crops#peanut)花生$()$(li)$(l:tfc:beneath/beneath_crops#beans)黑石豆$()$(li)$(l:tfc:beneath/beneath_crops#ghost_pepper)鬼椒$()"
+			"text": "$(li)$(l:tfc:beneath/beneath_crops#cassava)木薯$()$(li)$(l:tfc:beneath/beneath_crops#peanut)花生$()$(li)$(l:tfc:beneath/beneath_crops#beans)黑石豆$()$(li)$(l:tfc:beneath/beneath_crops#ghost_pepper)鬼椒$()$(li)$(l:tfc:beneath/beneath_crops#cotton)棉花$()"
 		},
 		{
 			"type": "patchouli:text",
@@ -480,6 +480,165 @@
 			],
 			"text": "$(thing)野生鬼椒$()生长于Y=32至Y=158之间。",
 			"enable_visualize": false
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "cotton",
+			"text": "$(bold)$(l:the_world/climate#temperature)温度$(): 10 - 80 °C$(br)$(bold)$(l:mechanics/hydration)湿度$(): 40 - 100 %$(br)$(bold)营养物质$(): 氮$(br2)棉花是一种两格高的作物。棉花种子可种植在耕地上，生长至两格高后会产出$(item)棉球$()，可加工成$(thing)棉线$()或$(thing)布料$()。",
+			"title": "棉花"
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "minecraft:air",
+						"Y": "tfg:cotton[age=0,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "minecraft:air",
+						"Y": "tfg:cotton[age=1,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfg:cotton[age=2,part=top]",
+						"Y": "tfg:cotton[age=2,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfg:cotton[age=3,part=top]",
+						"Y": "tfg:cotton[age=3,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfg:cotton[age=4,part=top]",
+						"Y": "tfg:cotton[age=4,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfg:cotton[age=5,part=top]",
+						"Y": "tfg:cotton[age=5,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfg:cotton[age=6,part=top]",
+						"Y": "tfg:cotton[age=6,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				}
+			],
+			"text": "$(thing)野生棉花$()生长于Y=32至Y=158之间。"
 		}
 	],
 	"read_by_default": true,
@@ -491,6 +650,8 @@
 		"tfg:beans_seeds": 8,
 		"tfg:beans_product": 8,
 		"tfg:ghost_pepper_seeds": 10,
-		"beneath:ghost_pepper": 10
+		"beneath:ghost_pepper": 10,
+		"tfg:cotton_seeds": 12,
+		"tfg:cotton_product": 12
 	}
 }

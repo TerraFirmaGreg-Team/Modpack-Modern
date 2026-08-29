@@ -5,19 +5,22 @@
 	"pages": [
 		{
 			"type": "patchouli:crafting",
+			"name": "Soul Clay",
+			"text": "Aqueducts can also move lava and other fluids around, which may be useful when building the $(l:beneath/hellforge)Hellforge$().",
 			"anchor": "blackstone_aqueduct",
-			"recipe": "tfg:shaped/blackstone_aqueduct",
-			"text": "Aqueducts can also move lava and other fluids around, which may be useful when building the $(l:beneath/hellforge)Hellforge$()."
+			"recipe": "tfg:shaped/blackstone_aqueduct"
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "tfg:shapeless/hellbricks",
-			"text": "Hellbricks are a building block that is also used for the $(l:beneath/hellforge)Hellforge$()."
+			"name": "Siera",
+			"text": "Hellbricks are a building block that is also used for the $(l:beneath/hellforge)Hellforge$().",
+			"recipe": "tfg:shapeless/hellbricks"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"item": "beneath:ancient_altar",
-			"text": "The Pyroxenite Pedestal can be used to display items you want to show off!"
+			"name": "Šiaudai",
+			"text": "The Pyroxenite Pedestal can be used to display items you want to show off!",
+			"item": "beneath:ancient_altar"
 		},
 		{
 			"type": "patchouli:crafting",

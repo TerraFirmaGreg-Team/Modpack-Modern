@@ -1,0 +1,56 @@
+{
+  "name": "Navigation",
+  "category": "tfc:firmaciv",
+  "icon": "firmaciv:textures/item/nav_toolkit.png",
+  "pages": [
+    {
+      "type": "patchouli:image",
+      "title": "Navigation",
+      "images": [
+        "firmaciv:textures/gui/book/navigation.png"
+      ],
+      "border": true
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Navigating the world is not an easy task. In order to build a successful civilization, you must have a good grasp of your location, and a good record of important places! No longer are there magic numbers that tell you exactly where you are. Instead, you must make technological advancements and acquire precise instruments to determine your position."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Longitude",
+      "text": "To find your Longitude, that is, your distance from the Prime Meridian, you need a clock! Specifically, you need a precise timepiece that keeps itself synchronized with the solar time at the Prime Meridian.$(br2) Smith an Unfinished Navigator's Timepiece from a Brass Double Sheet before completing it with recipe on the right."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmaciv:crafting/nav_clock",
+      "text": "Once you craft your Navigator's Timepiece, you can hold it and press $(item)$(k:key.use)$() to determine your Longitude. Remember that your Longitude is measured in Degrees East or West, meaning 0 Degrees at the Prime Meridian, and 360 Degrees for an identical climate."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Latitude",
+      "text": "To find your Latitude, that is, your distance from the Equator, you need to determine the degrees at which you view either Polaris, the North Star, or the Sun. Specifically, you need a precise mechanism for viewing astronomical features and measuring their angular distance from the horizon.$(br2) Smith an Unfinished Sextant from a Brass Double Ingot before completing it with recipe on the right."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmaciv:crafting/sextant",
+      "text": "Once you craft your Sextant, you can hold it and press $(item)$(k:key.use)$() to determine your Latitude. Remember that your Latitude is measured in Degrees North or South, meaning 0 Degrees at the Equator, and 90 Degrees North or South for a polar region."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Altitude",
+      "text": "To find your Altitude, that is, your vertical distance from the Sea Level datum, you need to measure atmospheric pressure. Specifically, you need a device containing a compressible fluid, and you need to measure the volume of that fluid to determine the pressure.$(br2) Smith an Unfinished Barometer from a Brass Sheet before completing it with recipe on the right."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmaciv:crafting/barometer",
+      "text": "Once you craft your Barometer, you can hold it and press $(item)$(k:key.use)$() to determine your Altitude. Remember that your Altitude is measured in distance from the Sea Level datum."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Footnotes",
+      "text": "Because you will be measuring distance in Degrees, it might be helpful to know the block conversions. Every 90 Degrees is 20,000 blocks, and every single degree is about 222 blocks.$(br2)In Firma: Civilization, Compasses will always point North, but are crafted with the original TerraFirmaCraft recipe."
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 20
+}

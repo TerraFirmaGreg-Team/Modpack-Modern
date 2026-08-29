@@ -115,13 +115,26 @@ global.modifyRecipe = function(event, recipeId, options) {
         // Override blast furnace temperature
         if (options.blastFurnaceTemp) recipeJson.blastFurnaceTemp = options.blastFurnaceTemp
 
-        // Override circuit
-        if (options.circuit !== undefined) recipeJson.inputs.item = recipeJson.inputs.item.map(slot => {
-            if (slot.content.type === "gtceu:circuit") {
-                slot.content.configuration = options.circuit
+        // Override or add circuit
+        if (options.circuit !== undefined) {
+            if (!recipeJson.inputs) recipeJson.inputs = {}
+            if (!recipeJson.inputs.item) recipeJson.inputs.item = []
+            var circuitSlot = null
+            for (var cs = 0; cs < recipeJson.inputs.item.length; cs++) {
+                if (recipeJson.inputs.item[cs].content.type === "gtceu:circuit") {
+                    circuitSlot = recipeJson.inputs.item[cs]
+                    break
+                }
             }
-            return slot
-        })
+            if (circuitSlot) {
+                circuitSlot.content.configuration = options.circuit
+            } else {
+                recipeJson.inputs.item.push({
+                    content: { type: "gtceu:circuit", configuration: options.circuit },
+                    chance: 0, maxChance: 10000, tierChanceBoost: 0
+                })
+            }
+        }
 
         // Replace a fluid
         if (options.fluidReplacements && recipeJson.inputs && recipeJson.inputs.fluid) {
@@ -260,7 +273,7 @@ global.modifyRecipe = function(event, recipeId, options) {
             }
         }
 
-        // Temperature via data.ebf_temp — only applied if not recipeConditions
+        // Temperature via data.ebf_temp only applied if not recipeConditions unsure about that part
         if (recipeJson.blastFurnaceTemp && (!recipeJson.recipeConditions || !recipeJson.recipeConditions.some(function(c) { return c.type === "blastFurnaceTemp" }))) {
             newRecipe.blastFurnaceTemp(recipeJson.blastFurnaceTemp)
         }

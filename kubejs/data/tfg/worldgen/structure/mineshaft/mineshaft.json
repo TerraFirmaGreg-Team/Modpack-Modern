@@ -3,7 +3,7 @@
 	"start_pool": "tfg:mineshaft/mineshaft_start_pool",
 	"size": 15,
 	"max_distance_from_center": 116,
-	"biomes": "#tfg:has_structure/illager_camp",
+	"biomes": "#tfg:has_structure/mineshaft",
 	"step": "raw_generation",
 	"terrain_adaptation": "none",
 	"start_height": {

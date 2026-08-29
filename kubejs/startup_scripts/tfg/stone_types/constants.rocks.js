@@ -9,6 +9,7 @@
  * @property {string?} wall
  * @property {BlockForms?} mossy - If this block has a mossy variant
  * @property {BlockForms?} cracked - If this block has a cracked variant
+ * @property {string?} texture - If this block has a texture that isn't in a default location
  */
 
 /**
@@ -241,8 +242,12 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 		material: 'tfg:igneous_mafic',
 		tfcTag: 'tfc:igneous_extrusive_items',
 		gravelTag: 'tfc:black_gravel',
-		pillar: 'minecraft:polished_basalt',
-		pillar2: 'minecraft:smooth_basalt'
+		stonecutterTag: 'tfg:stone_types/basalt',
+		stonecutting: [
+			{ block: 'minecraft:basalt' },
+			{ block: 'minecraft:smooth_basalt' },
+			{ block: 'minecraft:polished_basalt' }
+		]
 	}),
 	"andesite": generateTFC('andesite', {
 		material: 'tfg:igneous_intermediate',
@@ -362,6 +367,22 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 		tfcTag: 'tfc:metamorphic_items',
 		gravelTag: 'tfc:white_gravel'
 	}),
+	"obsidian": {
+		material: "obsidian",
+		stonecutterTag: 'tfg:stone_types/obsidian',
+		isTFC: false,
+		collapsible: false,
+		hardness: 10,
+		resistance: 1200,
+		mapColor: 'color_black',
+		raw: generateFormsExisting('obsidian', 'tfg:rock/%s', {
+			block: 'minecraft:obsidian',
+			texture: 'minecraft:block/obsidian'
+		}),
+		bricks: generateForms('obsidian', 'tfg:rock/%s_bricks'),
+		polished: generateForms('obsidian', 'tfg:rock/smooth_%s'),
+		chiseled: generateForms('obsidian', 'tfg:rock/chiseled_%s'),
+	},
 
 	/////////////////////////////////////////////////////////////////////////////////////////////
 	// BENEATH ROCKS
@@ -568,6 +589,21 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 		bricks: generateForms('aragonite', 'tfg:rock/bricks_%s'),
 		polished: generateForms('aragonite', 'tfg:rock/polished_%s'),
 		chiseled: { block: 'tfg:rock/chiseled_aragonite' }
+	},
+	"gilsonite": {
+		material: "tfg:gilsonite",
+		stonecutterTag: 'tfg:stone_types/gilsonite',
+		isTFC: false,
+		collapsible: false,
+		sound: 'bone_block',
+		mapColor: 'color_black',
+		raw: generateFormsExisting('gilsonite', 'tfg:rock/%s', { 
+			block: 'tfg:gilsonite',
+			texture: 'tfg:block/fluid_vein/gilsonite'
+		}),
+		bricks: generateForms('gilsonite', 'tfg:rock/%s_bricks'),
+		polished: generateForms('gilsonite', 'tfg:rock/smooth_%s'),
+		chiseled: generateForms('gilsonite', 'tfg:rock/chiseled_%s_bricks')
 	},
 
 	/////////////////////////////////////////////////////////////////////////////////////////////

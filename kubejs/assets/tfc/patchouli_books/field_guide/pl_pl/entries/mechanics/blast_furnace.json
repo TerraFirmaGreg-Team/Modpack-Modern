@@ -1,5 +1,4 @@
 {
-  "__comment__": "This file was automatically created by mcresources",
   "name": "Piec hutniczy",
   "category": "tfc:mechanics",
   "icon": "tfc:blast_furnace",
@@ -52,7 +51,7 @@
       "type": "patchouli:multiblock",
       "multiblock_id": "tfc:full_blast_furnace",
       "name": "",
-      "text": "A full size blast furnace with bellows and crucible attached.",
+      "text": "Pełnowymiarowy piec hutniczy z miechami i tygiem.",
       "enable_visualize": true
     },
     {

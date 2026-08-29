@@ -483,12 +483,12 @@
 						}
 					}
 					optional_task: true
-					title: "Any #tfg:platinum_ore_group"
+					title: "{quests.tasktype.item.any} #tfg:platinum_ore_group"
 					type: "item"
 				}
 			]
 			title: "{quests.ore_proc.platline.title}"
-			x: -3.5d
+			x: -3.0d
 			y: -0.5d
 		}
 		{
@@ -965,7 +965,7 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:circuits/lv)"
 					}
 				}
-				title: "Any #gtceu:circuits/lv"
+				title: "{quests.tasktype.item.any} #gtceu:circuits/lv"
 				type: "item"
 			}]
 			title: "{quests.ore_proc.lv_tier.title}"
@@ -1055,7 +1055,7 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:circuits/mv)"
 					}
 				}
-				title: "Any #gtceu:circuits/mv"
+				title: "{quests.tasktype.item.any} #gtceu:circuits/mv"
 				type: "item"
 			}]
 			title: "{quests.ore_proc.mv_tier.title}"
@@ -1079,7 +1079,7 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:circuits/hv)"
 					}
 				}
-				title: "Any #gtceu:circuits/hv"
+				title: "{quests.tasktype.item.any} #gtceu:circuits/hv"
 				type: "item"
 			}]
 			title: "{quests.ore_proc.hv_tier.title}"
@@ -1103,7 +1103,7 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:circuits/iv)"
 					}
 				}
-				title: "Any #gtceu:circuits/iv"
+				title: "{quests.tasktype.item.any} #gtceu:circuits/iv"
 				type: "item"
 			}]
 			title: "{quests.ore_proc.iv_tier.title}"
@@ -1127,7 +1127,7 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:circuits/ev)"
 					}
 				}
-				title: "Any #gtceu:circuits/ev"
+				title: "{quests.tasktype.item.any} #gtceu:circuits/ev"
 				type: "item"
 			}]
 			title: "{quests.ore_proc.ev_tier.title}"
@@ -1151,7 +1151,7 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:circuits/luv)"
 					}
 				}
-				title: "Any #gtceu:circuits/luv"
+				title: "{quests.tasktype.item.any} #gtceu:circuits/luv"
 				type: "item"
 			}]
 			title: "{quests.ore_proc.luv_tier.title}"
@@ -1235,7 +1235,7 @@
 					}
 				}
 				match_nbt: false
-				title: "Any #tfc:bronze_anvils"
+				title: "{quests.tasktype.item.any} #tfc:bronze_anvils"
 				type: "item"
 				weak_nbt_match: true
 			}]
@@ -1339,29 +1339,16 @@
 			y: -2.5d
 		}
 		{
-			dependencies: ["00004BE1D77EA003"]
-			description: ["{quests.ore_proc.gem_slurry.desc}"]
-			id: "12C0BC3514FCEF96"
-			subtitle: "{quests.ore_proc.gem_slurry.subtitle}"
-			tasks: [{
-				id: "730EA57B64DE54C0"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "or(item(gtceu:crushed_ruby_ore)item(gtceu:crushed_sapphire_ore)item(gtceu:crushed_green_sapphire_ore)item(gtceu:purified_ruby_ore)item(gtceu:purified_sapphire_ore)item(gtceu:purified_green_sapphire_ore))"
-					}
-				}
-				title: "{quests.ore_proc.gem_slurry.task}"
-				type: "item"
-			}]
-			title: "{quests.ore_proc.gem_slurry.title}"
-			x: -2.5d
-			y: -0.5d
-		}
-		{
 			dependencies: ["05A072877CA01773"]
-			description: ["{quests.ore_proc.chromium.desc}"]
+			description: [
+				"{quests.ore_proc.chromium.desc.1}"
+				"{@pagebreak}"
+				"{quests.ore_proc.chromium.desc.2}"
+				"{@pagebreak}"
+				"{quests.ore_proc.chromium.desc.3}"
+				"{@pagebreak}"
+				"{quests.ore_proc.chromium.desc.4}"
+			]
 			id: "3AF4B19564593C89"
 			subtitle: "{quests.ore_proc.chromium.subtitle}"
 			tasks: [{
@@ -1374,13 +1361,15 @@
 			y: -4.5d
 		}
 		{
-			dependencies: ["0F0525A70047EEB2"]
+			dependencies: ["701BCADAE5CF6CA5"]
 			description: [
 				"{quests.low_voltage.geologic_vulcanizer.desc.1}"
 				"{@pagebreak}"
 				"{quests.low_voltage.geologic_vulcanizer.desc.2}"
 			]
 			id: "2D40F76DFA41D747"
+			optional: true
+			shape: "heart"
 			size: 1.0d
 			subtitle: "{quests.low_voltage.geologic_vulcanizer.subtitle}"
 			tasks: [{
@@ -1390,6 +1379,24 @@
 			}]
 			x: -6.0d
 			y: -6.5d
+		}
+		{
+			dependencies: ["05A072877CA01773"]
+			description: [
+				"{quests.ore_proc.molybdenum.desc.1}"
+				"{@pagebreak}"
+				"{quests.ore_proc.molybdenum.desc.2}"
+			]
+			id: "78001BB24E7F1D1F"
+			subtitle: "{quests.ore_proc.molybdenum.subtitle}"
+			tasks: [{
+				id: "65B94783606A42D8"
+				item: "gtceu:molybdenum_dust"
+				type: "item"
+			}]
+			title: "{quests.ore_proc.molybdenum.title}"
+			x: 3.0d
+			y: -4.5d
 		}
 	]
 	subtitle: ["{quests.ore_proc.subtitle}"]

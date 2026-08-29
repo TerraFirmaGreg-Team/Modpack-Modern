@@ -100,7 +100,8 @@ function registerTFGMoonRegolithRecipes(event) {
 	const DUSTY_ORE_EXCEPTIONS = [
 		GTMaterials.Goethite,
 		GTMaterials.Cassiterite,
-		GTMaterials.Bauxite
+		GTMaterials.Bauxite,
+		GTMaterials.CertusQuartz
 	]
 
 	// Otherwise everything else just centrifuges into its dust version
@@ -137,6 +138,14 @@ function registerTFGMoonRegolithRecipes(event) {
 	event.recipes.gtceu.centrifuge('tfg:dusty_to_dust_tin')
 		.itemInputs('#forge:dusty_raw_materials/cassiterite')
 		.itemOutputs('#forge:dusts/tin')
+		.duration(20 * 45)
+		.EUt(GTValues.VA[GTValues.MV])
+
+	event.recipes.gtceu.centrifuge('tfg:dusty_to_dust_certus_quartz')
+		.itemInputs('#forge:dusty_raw_materials/certus_quartz')
+		.chancedItemOutputLogic($ChanceLogic.XOR)
+		.chancedOutput('#forge:dusts/certus_quartz', 5000, 0)
+		.chancedOutput('#forge:dusts/zinc', 5000, 0)
 		.duration(20 * 45)
 		.EUt(GTValues.VA[GTValues.MV])
 	// #endregion

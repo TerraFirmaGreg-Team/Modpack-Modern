@@ -25,7 +25,7 @@
             ],
             "border": false,
             "anchor": "ui_explained",
-            "tile": "Interfejs i Ty",
+            "title": "Interfejs i Ty",
             "text": "The UI for the Anvil with TFC Anvil Helper Enabled, Color Coded."
         },
         {
@@ -77,7 +77,7 @@
                 "tfg:textures/gui/field_guide/anvil_working_guide/perfectly_forged_item.png"
             ],
             "border": false,
-            "text": "A Perfectly Forged Wrought Iron Pickaxe Head"
+            "text": "Idealnie wykuta żelazna głowica kilofa"
         },
         {
             "type": "patchouli:spotlight",
@@ -157,7 +157,7 @@
         },
         {
             "type": "patchouli:text",
-            "title": "Other Tidbits",
+            "title": "Dodatkowe informacje",
             "text": "If one of the Required Steps is Empty, it means it's a Wild Card, any Step can be used.$(br2)If you fail your calculations, you can always melt and cast your item back into an ingot, this will remove the \"worked\" tag for the item, letting you try again to perfectly forge it."
         },
         {

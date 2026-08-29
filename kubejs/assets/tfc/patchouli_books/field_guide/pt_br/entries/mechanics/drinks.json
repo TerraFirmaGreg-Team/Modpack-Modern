@@ -43,7 +43,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"title": "Vintage Alcohol",
-			"text": "$(thing)Vintage Alcohols$() are prepared by further ageing aged alcohol in sealed barrels for another 3 months. These alcohols provide a stronger effect and a longer duration.",
+			"text": "$(thing)Álcoois Vintage$() são preparados envelhecendo álcoois selados em barris por mais outros 3 meses. Esses álcoois fornecem efeitos mais fortes e de maior duração.",
 			"item": "tfg:vintage_beer_bucket,tfg:vintage_cider_bucket,tfg:vintage_rum_bucket,tfg:vintage_sake_bucket,tfg:vintage_vodka_bucket,tfg:vintage_whiskey_bucket,tfg:vintage_corn_whiskey_bucket,tfg:vintage_rye_whiskey_bucket",
 			"anchor": "vintage_alcohol"
 		},

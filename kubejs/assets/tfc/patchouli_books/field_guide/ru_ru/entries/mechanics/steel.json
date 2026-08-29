@@ -5,17 +5,17 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "Steel is an advanced material which can be used to create tools and $(l:mechanics/armor)Armor$(), and comes in a few different varieties: $(thing)Steel$(), $(thing)Black Steel$(), $(thing)Red Steel$(), and $(thing)Blue Steel$().$(br2)In order to create steel, you must first create $(thing)Pig Iron$() in a $(l:mechanics/blast_furnace)Blast Furnace$(), and cast it into $(thing)Ingots$()."
+            "text": "Сталь это продвинутый материал, который используется для создания инструментов и $(l:mechanics/armor)брони$(), и бывает нескольких видов: $(thing)сталь$(), $(thing)чёрная сталь$(), $(thing)красная сталь$() и $(thing)синяя сталь$(). $(br2)Чтобы создать сталь, сначала необходимо получить $(thing)белый чугун$() в $(l:mechanics/blast_furnace)доменной печи$() и отлить его в $(thing)слитки$(). "
         },
         {
             "type": "tfc:anvil_recipe",
             "recipe": "tfc:anvil/high_carbon_steel_ingot",
-            "text": "A $(thing)Pig Iron Ingot$() can then be worked in an anvil to create a $(thing)High Carbon Steel$() ingot, which can be worked again to create a $(thing)Steel Ingot$()"
+            "text": "$(thing)Слиток белого чугуна$() можно обработать на наковальне, чтобы получить слиток $(thing)высокоуглеродистой стали$(), который можно обработать ещё раз, чтобы получить $(thing)слиток стали."
         },
         {
             "type": "patchouli:text",
             "anchor": "black_steel",
-            "text": "$(thing)Black Steel$() is an advanced form of steel formed from an alloy of steel and some other metals. In order to create it, you will need to create an alloy called $(thing)Weak Steel$() in a $(l:mechanics/crucible)Crucible$().",
+            "text": "$(thing)Чёрная сталь$() это улучшенная форма стали, которая получается из сплава стали и некоторых других материалов. Чтобы создать её, вам сначала понадобится выплавить сплав под названием $(thing)сырая сталь$() в $(l:mechanics/crucible)тигле$().",
             "title": "Чёрная сталь"
         },
         {
@@ -23,21 +23,21 @@
             "item": "tfc:metal/ingot/weak_steel",
             "title": "Сырая сталь",
             "link_recipes": false,
-            "text": "$(br)$(bold)Requirements:$()$(br)$(li)50 - 70 % : $(thing)Steel$()$(li)15 - 25 % : $(thing)Nickel$()$(li)15 - 25 % : $(thing)Black Bronze$()$(br2)Molten $(thing)Weak Steel$() can be cast into ingots."
+            "text": "$(br)$(bold)Требования:$()$(br)$(li)50 - 70 % : $(thing)Сталь$()$(li)15 - 25 % : $(thing)Никель$()$(li)15 - 25 % : $(thing)Чёрная бронза$()$(br2)Расплавленную $(thing)сырую сталь$() можно разлить по слиткам."
         },
         {
             "type": "tfc:welding_recipe",
             "recipe": "tfg:welding/high_carbon_black_steel_ingot",
-            "text": "$(thing)Weak Steel Ingots$() can then be welded with $(thing)Pig Iron Ingots$() to create $(thing)High Carbon Black Steel Ingots$(). Finally, these can be worked on an $(l:mechanics/anvils)Anvil$() to create $(thing)Black Steel Ingots$()."
+            "text": "$(thing)Слитки сырой стали$() можно сварить с $(thing)слитками белого чугуна$(), чтобы получить $(thing)слитки высокоуглеродистой чёрной стали$(). Наконец, их можно обработать на $(l:mechanics/anvils)наковальне$(), чтобы получить $(thing)слитки чёрной стали$()."
         },
         {
             "type": "patchouli:text",
-            "text": "$(thing)Black Steel$() can be used to craft tools and $(l:mechanics/armor)Armor$(), and also is used as a key ingredient in the creation of $(l:mechanics/steel#blue_steel)Blue Steel$() and $(l:mechanics/steel#red_steel)Red Steel$()."
+            "text": "$(thing)Чёрную сталь$() можно использовать для создания инструментов и $(l:mechanics/armor)брони$(), а так же она является ключевым ингредиентом для создания $(l:mechanics/steel#blue_steel)синей стали$() и $(l:mechanics/steel#red_steel)красной стали$()."
         },
         {
             "type": "patchouli:text",
             "anchor": "blue_steel",
-            "text": "$(thing)Blue Steel$() is one of the two highest tier metals, along with $(l:mechanics/steel#red_steel)Red Steel$(). Similar to $(l:mechanics/steel#black_steel)Black Steel$(), the first step is to create an alloy of $(thing)Weak Blue Steel$() in a $(l:mechanics/crucible)Crucible$().",
+            "text": "$(thing)Синяя сталь$() это один из двух металлов высшего уровня, наравне с $(l:mechanics/steel#red_steel)красной сталью$(). Подобно $(l:mechanics/steel#black_steel)чёрной сталиl$(), первым шагом является создание сплава $(thing)сырой синей стали$() в $(l:mechanics/crucible)тигле$().",
             "title": "Синяя сталь"
         },
         {
@@ -45,21 +45,21 @@
             "item": "tfc:metal/ingot/weak_blue_steel",
             "title": "Сырая синяя сталь",
             "link_recipes": false,
-            "text": "$(br)$(bold)Requirements:$()$(br)$(li)50 - 55 % : $(thing)Black Steel$()$(li)20 - 25 % : $(thing)Steel$()$(li)10 - 15 % : $(thing)Bismuth Bronze$()$(li)10 - 15 % : $(thing)Sterling Silver$()$(br2)"
+            "text": "$(br)$(bold)Требования:$()$(br)$(li)50 - 55 % : $(thing)Чёрная сталь$()$(li)20 - 25 % : $(thing)Сталь$()$(li)10 - 15 % : $(thing)Висмутовая бронза$()$(li)10 - 15 % : $(thing)Стерлинговое серебро$()$(br2)"
         },
         {
             "type": "tfc:welding_recipe",
             "recipe": "tfg:welding/high_carbon_blue_steel_ingot",
-            "text": "$(thing)Weak Blue Steel Ingots$() can be welded with $(l:mechanics/steel#black_steel)Black Steel Ingots$() to create $(thing)High Carbon Blue Steel Ingots$(). Finally, these can be worked on an $(l:mechanics/anvils)Anvil$() to create $(thing)Blue Steel Ingots$()."
+            "text": "$(thing)Слитки сырой синей стали$() можно сварить с $(l:mechanics/steel#black_steel)слитками чёрной стали$(), чтобы получить $(thing)слитки высокоуглеродистой синей стали$(). Наконец, их можно обработать на $(l:mechanics/anvils)наковальне$(), чтобы получить $(thing)слитки синей стали$()."
         },
         {
             "type": "patchouli:text",
-            "text": "$(thing)Blue Steel$() can be used to create tools and $(l:mechanics/armor)Armor$(), and a $(thing)Blue Steel Bucket$(), which can be used to transport 1000 mB of both liquid fluids, and $(6)Lava$()."
+            "text": "$(thing)Синюю сталь$() можно использовать для создания инструментов и $(l:mechanics/armor)брони$(), а также $(thing)ведра из синей стали$(), которое способно транспортировать 1000 мБ как обычную жидкость, так и $(6)лаву$()."
         },
         {
             "type": "patchouli:text",
             "anchor": "red_steel",
-            "text": "$(thing)Red Steel$() is one of the two highest tier metals, along with $(l:mechanics/steel#blue_steel)Blue Steel$(). Similar to $(l:mechanics/steel#black_steel)Black Steel$(), the first step is to create an alloy of $(thing)Weak Red Steel$() in a $(l:mechanics/crucible)Crucible$().",
+            "text": "$(thing)Красная сталь$() это один из двух металлов высшего уровня, наравне с $(l:mechanics/steel#red_steel)синей сталью$(). Подобно $(l:mechanics/steel#black_steel)чёрной сталиl$(), первым шагом является создание сплава $(thing)сырой красной стали$() в $(l:mechanics/crucible)тигле$().",
             "title": "Красная сталь"
         },
         {
@@ -67,16 +67,16 @@
             "item": "tfc:metal/ingot/weak_red_steel",
             "title": "Сырая красная сталь",
             "link_recipes": false,
-            "text": "$(br)$(bold)Requirements:$()$(br)$(li)50 - 55 % : $(thing)Black Steel$()$(li)20 - 25 % : $(thing)Steel$()$(li)10 - 15 % : $(thing)Brass$()$(li)10 - 15 % : $(thing)Rose Gold$()$(br2)"
+            "text": "$(br)$(bold)Требования:$()$(br)$(li)50 - 55 % : $(thing)Чёрная сталь$()$(li)20 - 25 % : $(thing)Сталь$()$(li)10 - 15 % : $(thing)Латунь$()$(li)10 - 15 % : $(thing)Розовое золото$()$(br2)"
         },
         {
             "type": "tfc:welding_recipe",
             "recipe": "tfg:welding/high_carbon_red_steel_ingot",
-            "text": "$(thing)Weak Red Steel Ingots$() can be welded with $(l:mechanics/steel#black_steel)Black Steel Ingots$() to create $(thing)High Carbon Red Steel Ingots$(). Finally, these can be worked on an $(l:mechanics/anvils)Anvil$() to create $(thing)Red Steel Ingots$()."
+            "text": "$(thing)Слитки сырой красной стали$() можно сварить с $(l:mechanics/steel#black_steel)слитками чёрной стали$(), чтобы получить $(thing)слитки высокоуглеродистой красной стали$(). Наконец, их можно обработать на $(l:mechanics/anvils)наковальне$(), чтобы получить $(thing)слитки красной стали$()."
         },
         {
             "type": "patchouli:text",
-            "text": "$(thing)Red Steel$() can be used to create tools and $(l:mechanics/armor)Armor$(), and a $(thing)Red Steel Bucket$(), which can be used to transport 1000 mB of both liquid fluids, and $(6)Lava$()"
+            "text": "$(thing)Красную сталь$() можно использовать для создания инструментов и $(l:mechanics/armor)брони$(), а также $(thing)ведра из красной стали$(), которое способно транспортировать 1000 мБ как обычную жидкость, так и $(6)лаву$()."
         }
     ],
     "read_by_default": true,

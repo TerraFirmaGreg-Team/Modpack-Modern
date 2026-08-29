@@ -1,0 +1,42 @@
+{
+	"name": "tfg:beneath/tower/basalt_4",
+	"fallback": "minecraft:empty",
+	"elements": [
+		{
+			"weight": 10,
+			"element": {
+				"location": "tfg:beneath/tower/4/basalt_blackstone",
+				"processors": "tfg:beneath/tower/4/basalt_blackstone",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 30,
+			"element": {
+				"location": "tfg:beneath/tower/4/basalt_basalt",
+				"processors": "tfg:beneath/tower/4/basalt_basalt",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 30,
+			"element": {
+				"location": "tfg:beneath/tower/4/basalt_blk_moss",
+				"processors": "tfg:beneath/tower/4/basalt_blk_moss",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 30,
+			"element": {
+				"location": "tfg:beneath/tower/4/basalt_bst_moss",
+				"processors": "tfg:beneath/tower/4/basalt_bst_moss",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		}
+	]
+}

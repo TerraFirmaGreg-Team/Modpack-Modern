@@ -1,0 +1,13 @@
+{
+  "name": "Хліб",
+  "category": "tfc:mechanics",
+  "icon": "tfc:textures/item/food/wheat_bread.png",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Хліб можна випікати з різних зернових культур, таких як $(l:mechanics/crops#barley)ячмінь$(). Збери врожай зерна. Отримай сире, необроблене зерно, яке саме по собі не має користі. Його потрібно переробити на $(thing)хліб$() для вживання в їжу окремо, або ж у вигляді $(l:mechanics/sandwiches)бутербродів$().",
+      "title": "Хліб"
+    }
+  ],
+  "read_by_default": true
+}

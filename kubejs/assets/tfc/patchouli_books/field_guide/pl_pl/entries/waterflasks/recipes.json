@@ -1,5 +1,4 @@
 {
-  "__comment__": "This file was automatically created by mcresources",
   "name": "Przepisy na bukłak",
   "category": "tfc:waterflasks",
   "icon": "waterflasks:leather_flask",
@@ -24,7 +23,7 @@
       "recipe": "waterflasks:crafting/repair_broken_leather",
       "recipe2": "tfg:shaped/repair_broken_iron",
       "title": "Przepisy odbudowujące",
-      "text": "Flasks can also be repaired when completely broken."
+      "text": "Manierki można również naprawić po całkowitym zniszczeniu."
     },
     {
       "type": "patchouli:crafting",

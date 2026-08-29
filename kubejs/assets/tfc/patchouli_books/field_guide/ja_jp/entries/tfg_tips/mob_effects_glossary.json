@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "index",
-			"text": "この章では、$(bold)$(#ff0fb7)TerraFirma$()$()$(bold)$(#595959)Greg$()$()での独自の状態効果について説明します。$(li)$(bold)$(9)$(l:tfg_tips/mob_effects_glossary#cooling)冷却$()$(li)$(bold)$(9)$(l:tfg_tips/mob_effects_glossary#warming)温もり$()$(li)$(bold)$(9)$(l:tfg_tips/mob_effects_glossary#quenched)潤い$()$(li)$(bold)$(9)$(l:tfg_tips/mob_effects_glossary#cure_parasites)駆虫$()$(li)$(bold)$(9)$(l:tfg_tips/mob_effects_glossary#cure_toxins)デトックス$()$(li)$(bold)$(9)$(l:tfg_tips/mob_effects_glossary#cure_microplastics)マイクロプラスチック排出$()$(li)$(bold)$(c)$(l:tfg_tips/mob_effects_glossary#freezing)凍結$()$(li)$(bold)$(c)$(l:tfg_tips/mob_effects_glossary#blazing)灼熱$()$(li)$(bold)$(c)$(l:tfg_tips/mob_effects_glossary#instant_radiation)急性被爆$()$(li)$(bold)$(c)$(l:tfg_tips/mob_effects_glossary#final_moments)余命僅か$()"
+			"text": "この章では、$(bold)$(#ff0fb7)TerraFirma$()$()$(bold)$(#595959)Greg$()$()での独自の状態効果について説明します。$(li)$(bold)$(9)$(l:tfg_tips/mob_effects_glossary#cooling)冷却$()$(li)$(bold)$(9)$(l:tfg_tips/mob_effects_glossary#warming)温もり$()$(li)$(bold)$(9)$(l:tfg_tips/mob_effects_glossary#quenched)潤い$()$(li)$(bold)$(9)$(l:tfg_tips/mob_effects_glossary#cure_parasites)駆虫$()$(li)$(bold)$(9)$(l:tfg_tips/mob_effects_glossary#cure_toxins)デトックス$()$(li)$(bold)$(9)$(l:tfg_tips/mob_effects_glossary#cure_microplastics)マイクロプラスチック排出$()$(li)$(bold)$(c)$(l:tfg_tips/mob_effects_glossary#freezing)凍結$()$(li)$(bold)$(c)$(l:tfg_tips/mob_effects_glossary#blazing)灼熱$()$(li)$(bold)$(c)$(l:tfg_tips/mob_effects_glossary#instant_radiation)急性被爆$()$(li)$(bold)$(c)$(l:tfg_tips/mob_effects_glossary#final_moments)危篤状態$()"
 		},
 		{
 			"type": "patchouli:empty"
@@ -30,7 +30,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "cure_parasites",
-			"text": "$(bold)$(9)寄生虫治療$()$(li)この効果が有効な間、$(l:getting_started/food_and_water#parasites)寄生虫汚染$()が徐々に除去されます。基本レベルでは約10秒ごとに1%ずつ減少します。$()"
+			"text": "$(bold)$(9)駆虫$()$(li)この効果が有効な間、$(l:getting_started/food_and_water#parasites)寄生虫$()による汚染が徐々に除去されます。基本レベルでは約10秒ごとに1%ずつ減少します。$()"
 		},
 		{
 			"type": "patchouli:text",
@@ -60,7 +60,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "final_moments",
-			"text": "$(bold)$(c)余命僅か$()$(li)この効果は、残された最後の数分を数えるタイマーを開始します。時間切れになると死亡します。"
+			"text": "$(bold)$(c)危篤状態$()$(li)この効果は、残された最後の数分を数えるタイマーを開始します。時間切れになると死亡します。"
 		},
 		{
 			"type": "patchouli:relations",

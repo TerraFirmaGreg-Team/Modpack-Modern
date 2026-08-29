@@ -85,7 +85,11 @@ function registerTFCItemTags(event) {
 		"primitive_creatures:reh",
 		"species:harpoon",
 		"species:crankbow",
-		"tfg:trowel"
+		"tfg:trowel",
+		"tfc:ceramic/pot",
+		"minecraft:lead",
+		"gtceu:brick_wooden_form",
+		"firmalife:watering_can"
 	];
 	usableOnToolRack.forEach((entry) => {
 		event.add("tfc:usable_on_tool_rack", entry);
@@ -209,6 +213,7 @@ function registerTFCItemTags(event) {
 	event.add("tfc:forge_fuel", "gtceu:small_coal_dust");
 	event.add("tfc:forge_fuel", "gtceu:tiny_coal_dust");
 
+	event.add("tfc:forge_fuel", "tfg:dried_peat_brick");
 	event.add("tfc:forge_fuel", "beneath:cursecoal");
 
 	event.add("tfc:forge_fuel", "gtceu:coke_gem");
@@ -490,9 +495,22 @@ function registerTFCItemTags(event) {
 
     event.add('tfc:starts_fires_with_items', 'gtceu:matches');
     event.add('tfc:starts_fires_with_durability', 'gtceu:matchbox');
-    event.add('tfc:starts_fires_with_durability', 'gtceu:invar_lighter');
-    event.add('tfc:starts_fires_with_durability', 'gtceu:platinum_lighter');
     event.add('forge:tools/igniter', 'tfc:firestarter');
+
+	event.add('tfc:firepit_fuel', 'tfc:groundcover/driftwood');
+	event.add('tfc:firepit_logs', 'tfc:groundcover/driftwood');
+	event.add('tfc:pit_kiln_logs', 'tfc:groundcover/driftwood');
+	event.add('firmalife:oven_fuel', 'tfc:groundcover/driftwood');
+	event.add('tfc:firepit_kindling', '#tfc:moss');
+	event.add('tfc:firepit_kindling', 'tfc:wool');
+	event.add('tfc:firepit_kindling', 'tfc:blubber');
+	event.add('tfc:firepit_kindling', 'tfg:plant/moss_campion');
+	event.add('tfc:firepit_kindling', 'tfg:plant/elegant_sunburst_lichen');
+	event.add('tfc:firepit_kindling', 'primitive_creatures:grh');
+	event.add('tfc:firepit_kindling', 'patchouli:guide_book');
+	event.add('tfc:firepit_kindling', 'ftbquests:book');
+	event.add('tfc:firepit_logs', '#tfc:firepit_kindling');
+	event.add('tfc:firepit_fuel', '#tfc:firepit_kindling');
 
     //TODO: properly allow GT fluid containers to work with TFC crafting recipes.
     /** @type {{Item[]}} */
@@ -625,6 +643,8 @@ function registerTFCBlockTags(event) {
 	event.add('tfg:dead_crops', "tfc:dead_crop/melon");
 	event.add('tfg:dead_crops', "tfc:dead_crop/red_bell_pepper");
 	event.add('tfg:dead_crops', "tfc:dead_crop/yellow_bell_pepper");
+
+	event.add('minecraft:logs', '#tfc:fruit_tree_branch');
 
 	// Glass
 	event.add('tfc:mineable_with_glass_saw', 'ae2:quartz_glass');

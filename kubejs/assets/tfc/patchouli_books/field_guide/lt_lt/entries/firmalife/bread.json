@@ -1,5 +1,4 @@
 {
-  "__comment__": "This file was automatically created by mcresources",
   "name": "Bread",
   "category": "tfc:firmalife",
   "icon": "tfc:textures/item/food/barley_bread.png",
@@ -23,7 +22,7 @@
       "type": "patchouli:crafting",
       "recipe": "firmalife:crafting/toast_with_butter",
       "recipe2": "firmalife:crafting/toast_with_jam",
-      "title": "Toast"
+      "title": "Skrudinta duona"
     }
   ],
   "read_by_default": true,

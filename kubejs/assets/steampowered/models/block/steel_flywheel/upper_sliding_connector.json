@@ -1,0 +1,29 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"1": "steampowered:block/steam_engine/steel_linkage",
+		"particle": "steampowered:block/flywheel/steel_steam_engine_wheel"
+	},
+	"elements": [
+		{
+			"from": [5, 5, 18.5],
+			"to": [11, 11, 31.5],
+			"rotation": {"angle": 0, "axis": "x", "origin": [8, 8, 28]},
+			"faces": {
+				"north": {"uv": [4, 3.5, 7, 6.5], "rotation": 180, "texture": "#1"},
+				"east": {"uv": [1, 6.5, 4, 13], "rotation": 90, "texture": "#1"},
+				"west": {"uv": [1, 6.5, 4, 13], "rotation": 270, "texture": "#1"},
+				"up": {"uv": [4, 6.5, 7, 13], "texture": "#1"},
+				"down": {"uv": [4, 6.5, 7, 13], "rotation": 180, "texture": "#1"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "transmission",
+			"origin": [-8, 8, 8],
+			"color": 0,
+			"children": [0]
+		}
+	]
+}

@@ -165,6 +165,36 @@ function registerTFGLoots(event) {
 
 	})
 
+	const LOCO_PREFIX = 'railways:'
+	const LOCO_GLASSES = [
+		'round_pane_locometal_window',
+		'single_pane_locometal_window',
+		'two_pane_locometal_window',
+		'four_pane_locometal_window'
+	]
+	
+	LOCO_GLASSES.forEach(glass => {
+		const loco_glass = `${LOCO_PREFIX}${glass}`
+		event.addBlockLootModifier(loco_glass)
+			.removeLoot(Ingredient.all)
+			.or((or) => {
+            	or.matchMainHand("#forge:tools/wrench").matchMainHand(Item.of('tfc:gem_saw'))
+        	})
+			.addLoot(loco_glass)
+
+		global.LOCOMETAL_COLORS.forEach(tfc_dye => {
+			tfc_dye.colors.forEach(color => {
+				const loco_glass_dyed = `${LOCO_PREFIX}${color}_${glass}`
+				event.addBlockLootModifier(loco_glass_dyed)
+					.removeLoot(Ingredient.all)
+					.or((or) => {
+						or.matchMainHand("#forge:tools/wrench").matchMainHand(Item.of('tfc:gem_saw'))
+					})
+					.addLoot(loco_glass_dyed)
+			})
+		})
+	})
+
 	global.TFC_WOOD_TYPES.forEach(wood => {
 		const id = `everycomp:c/tfc/${wood}_window_pane`
 		event.addBlockLootModifier(id)
@@ -246,6 +276,30 @@ function registerTFGLoots(event) {
 	event.addEntityLootModifier('tfg:mongoose')
 		.addWeightedLoot([1, 3], ['minecraft:bone'])
 		.addLoot(LootEntry.of('tfc:small_raw_hide', 1))
+
+	// Bactrian camel normal loot table
+	event.addEntityLootModifier('tfg:bactrian_camel')
+		.addWeightedLoot([13, 19], ['tfc:food/camelidae'])
+		.addWeightedLoot([1, 4], ['minecraft:bone'])
+		.addLoot(LootEntry.of('tfc:large_sheepskin_hide', 1))
+		.addSequenceLoot(LootEntry.of('waterflasks:bladder').when(c => c.randomChance(0.5)))
+
+	// Bactrian camel drop extra with butchery knife
+	event.addEntityLootModifier('tfg:bactrian_camel')
+		.matchMainHand('#forge:tools/butchery_knives')
+		.addWeightedLoot([3, 5], ['tfc:food/camelidae'])
+
+	// Dromedary camel normal loot table
+	event.addEntityLootModifier('tfg:dromedary_camel')
+		.addWeightedLoot([13, 19], ['tfc:food/camelidae'])
+		.addWeightedLoot([1, 4], ['minecraft:bone'])
+		.addLoot(LootEntry.of('tfc:large_raw_hide', 1))
+		.addSequenceLoot(LootEntry.of('waterflasks:bladder').when(c => c.randomChance(0.5)))
+
+	// Dromedary camel drop extra with butchery knife
+	event.addEntityLootModifier('tfg:dromedary_camel')
+		.matchMainHand('#forge:tools/butchery_knives')
+		.addWeightedLoot([3, 5], ['tfc:food/camelidae'])
 
 	// Tamed Fox normal loot table
 	event.addEntityLootModifier('tfg:fox')

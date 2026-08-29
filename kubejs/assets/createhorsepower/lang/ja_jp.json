@@ -1,4 +1,23 @@
 {
 	"block.createhorsepower.horse_crank": "アニマルクランク",
-	"item.createhorsepower.horse_crank": "アニマルクランク"
+	"createhorsepower.ponder.horse_crank.header": "アニマルクランクの使いかた",
+	"createhorsepower.ponder.horse_crank.text_1": "これはアニマルクランクです。",
+	"createhorsepower.ponder.horse_crank.text_2": "アニマルクランクを使用するには、まずその下に有効なブロックが必要です。",
+	"createhorsepower.ponder.horse_crank.text_3": "素材によって性能が変わることがあります。",
+	"createhorsepower.ponder.horse_crank.text_4": "有効なワーカーが接続されると、クランクは応力を生み出します。",
+	"createhorsepower.ponder.horse_crank.text_5": "コンフィグで指定された任意のモブを接続すればワーカーにできます。",
+	"createhorsepower.ponder.horse_crank.text_6": "横の歯車を回転させることができるほか…",
+	"createhorsepower.ponder.horse_crank.text_7": "…下側のシャフトも回せますが…",
+	"createhorsepower.ponder.horse_crank.text_8": "…上側はできません。",
+	"createhorsepower.ponder.tag.path_types": "道ブロック",
+	"createhorsepower.ponder.tag.path_types.description": "ワーカーが歩けるブロック",
+	"createhorsepower.ponder.tag.viable_workers": "ワーカーにできる動物",
+	"createhorsepower.ponder.tag.viable_workers.description": "アニマルクランクを動かすのに使用できる動物",
+	"entity.createhorsepower.chp_leash_knot": "(CHP) リードの結び目",
+	"item.createhorsepower.horse_crank": "アニマルクランク",
+	"tooltip.createhorsepower.horse_crank.alreadyHasWorker": "クランクには既にワーカーがいます",
+	"tooltip.createhorsepower.horse_crank.attached": "ワーカーが接続されました",
+	"tooltip.createhorsepower.horse_crank.detached": "ワーカーが切り離されました",
+	"tooltip.createhorsepower.horse_crank.maximumMobs": "接続できるモブは１体だけです",
+	"tooltip.createhorsepower.horse_crank.notValidWorker": "そのモブは有効なワーカーではありません"
 }

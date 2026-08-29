@@ -1,0 +1,68 @@
+{
+  "name": "Теплица",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:sealed_bricks",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)Теплица$() — это многоблочное устройство, управляемое $(l:firmalife/climate_station)климатической станцией$(). Она позволяет выращивать урожай круглый год. Теплица имеет множество типов и блоков на выбор. Однако постройка теплицы довольно проста. Как и $(l:firmalife/cellar)погреб$(), это должна быть замкнутая область из блоков, принадлежащих к одному и тому же типу теплицы $(thing)Тип теплицы$(). Пол теплицы может быть невоздушным блоком."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Стены теплиц должны быть сплошными. Панельные стены должны быть размещены так, чтобы внешняя сторона блока (например, сторона, на которую можно поставить факел) была обращена внутрь теплицы. То же самое относится к крышам, за исключением того, что плиты всегда считаются допустимыми блоками крыши.  Люки и двери также всегда допустимы и не требуют специального размещения."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)Типы теплиц$() — это семейства блоков теплиц, которые могут использоваться взаимозаменяемо. Большинство блоков теплиц $(thing)стареют$(). Например, блоки теплицы из $(thing)обработанной древесины$() становятся блоками из $(thing)выветренной обработанной древесины$(). Поскольку оба типа блоков принадлежат к одному типу теплицы, ваша теплица будет продолжать функционировать."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Вот доступные $(thing)типы теплиц$() и типы блоков, в которые они могут превратиться:$(br)$(br)$(li)Обработанная древесина: Выветренная$(li)Медь: Выставленная, Выветренная, Окисленная$(li)Железо: Ржавое$(li)Нержавеющая сталь (не стареет)$()",
+      "title": "Типы теплиц"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Существует четыре типа обычных $(thing)блоков теплицы$(): стены, двери, крыши и верхушки крыш. Крыши и верхушки крыш — это лестницы и плиты, соответственно.  Также существуют более тонкие версии этих блоков, также известных как панельные стены, люки и панельные крыши. Их можно комбинировать по вашему выбору для формирования структуры теплицы."
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "Пример теплицы из каждого основного типа.",
+      "multiblocks": [
+        "firmalife:treated_wood_greenhouse",
+        "firmalife:copper_greenhouse",
+        "firmalife:iron_greenhouse",
+        "firmalife:stainless_steel_greenhouse"
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "text": "В теплицах работает много блоков:$(br)$(li)$(l:firmalife/planters)Лотки$(), для выращивания культур, и $(br)$(li)$(l:firmalife/irrigation)Оросители$(), различные устройства, которые добавляют воду в вазоны."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "На следующих четырех страницах приведены рецепты для основных типов блоков теплицы. Хотя они показаны только для железных теплиц, железные прутья в рецепте можно заменить на $(thing)обработанные бревна$(), $(thing)медную проволоку$() или $(thing)прутья из нержавеющей стали$().  Для получения информации о нержавеющей стали см. $(l:firmalife/stainless_steel)эту страницу$()."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/greenhouse/iron_greenhouse_wall",
+      "recipe2": "firmalife:crafting/greenhouse/iron_greenhouse_roof"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/greenhouse/iron_greenhouse_door",
+      "recipe2": "firmalife:crafting/greenhouse/iron_greenhouse_roof_top"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/greenhouse/iron_greenhouse_trapdoor",
+      "recipe2": "firmalife:crafting/greenhouse/iron_greenhouse_panel_roof"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/greenhouse/iron_greenhouse_panel_wall",
+      "recipe2": "firmalife:crafting/greenhouse/iron_greenhouse_port"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 7
+}

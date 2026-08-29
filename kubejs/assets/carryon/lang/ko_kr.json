@@ -1,0 +1,13 @@
+{
+	"carryon.category.blacklist": "블랙리스트",
+	"carryon.category.custompickupconditions": "커스텀 들기 컨디션 (고급)",
+	"carryon.category.custompickupconditions.custompickupconditionsblocks": "커스텀 블록 들기 컨디션",
+	"carryon.category.custompickupconditions.custompickupconditionsentities": "커스텀 엔티티 들기 컨디션",
+	"carryon.category.modeloverrides": "모델 오버라이딩 (고급)",
+	"carryon.category.settings": "설정",
+	"carryon.category.whitelist": "화이트리스트",
+	"carryon.general.blacklist.forbiddenentities": "플레이어가 들 수 없는 엔티티",
+	"carryon.general.blacklist.forbiddentiles": "플레이어가 들 수 없는 블록",
+	"carryon.general.modeloverrides.modeloverrides": "모델 오버라이딩",
+	"key.carry.desc": "들고 나르기"
+}

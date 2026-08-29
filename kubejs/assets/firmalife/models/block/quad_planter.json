@@ -1,0 +1,36 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "block/block",
+	"textures": {
+		"particle": "firmalife:block/devices/planter/bottom",
+		"side": "firmalife:block/devices/planter/quad_side",
+		"top": "firmalife:block/devices/planter/quad_top",
+		"soil": "firmalife:block/potting_soil_dry",
+		"bottom": "firmalife:block/devices/planter/bottom"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 6, 16],
+			"faces": {
+				"north": {"uv": [0, 10, 16, 16], "texture": "#side"},
+				"east": {"uv": [0, 10, 16, 16], "texture": "#side"},
+				"south": {"uv": [0, 10, 16, 16], "texture": "#side"},
+				"west": {"uv": [0, 10, 16, 16], "texture": "#side"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#top"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#bottom"}
+			}
+		},
+		{
+			"from": [1, 6, 1],
+			"to": [15, 5, 15],
+			"faces": {
+				"north": {"uv": [1, 10, 15, 11], "rotation": 180, "texture": "#side"},
+				"east": {"uv": [1, 10, 15, 11], "rotation": 180, "texture": "#side"},
+				"south": {"uv": [1, 10, 15, 11], "rotation": 180, "texture": "#side"},
+				"west": {"uv": [1, 10, 15, 11], "rotation": 180, "texture": "#side"},
+				"up": {"uv": [1, 1, 15, 15], "texture": "#soil"}
+			}
+		}
+	]
+}

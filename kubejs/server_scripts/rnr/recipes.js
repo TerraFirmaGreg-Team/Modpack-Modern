@@ -17,6 +17,11 @@ const registerRnrRecipes = (event) => {
 		.circuit(7)
 		.duration(20)
 		.EUt(GTValues.VA[GTValues.ULV])
+		
+	event.shapeless('rnr:crushed_base_course', [
+		'#tfc:rock_knapping',
+		'#tfg:stone_dusts'])
+		.id('tfg:shapeless/crushed_base_course_from_dusts');
 
 	//hoggin roads
 	event.recipes.gtceu.forming_press('tfg:hoggin')
@@ -438,7 +443,8 @@ const registerRnrRecipes = (event) => {
 		"clay",
 		"clay_grass",
 		"coarse_dirt",
-		"duff"
+		"duff",
+		"grass_path"
 	]
 
 	const MUD_VARIATIONS = [

@@ -2,6 +2,7 @@
 	"name": "Gestione dell'inventario",
 	"category": "tfc:tfg_tips",
 	"icon": "minecraft:chest",
+	"read_by_default": true,
 	"pages": [
 		{
 			"type": "patchouli:text",

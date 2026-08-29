@@ -3,6 +3,7 @@
   "gui.createstockbridge.address": "Adres paczki:",
   "gui.stockbridge.remote_items": "System produktów magazynowych Create",
   "tooltip.stockbridge.remote_item": "Element w zdalnym systemie",
+  "item.createstockbridge.request_pattern": "Wzorzec żądania",
   "createstockbridge.ponder.ae_stockbridge.header": "Połączenie systemu magazynowego z AE",
   "createstockbridge.ponder.ae_stockbridge.text_1": "Most magazynowy AE łączy system produktów magazynowych Create z AE",
   "createstockbridge.ponder.ae_stockbridge.text_2": "Kliknij prawym przyciskiem myszy, aby powiązać z domyślną siecią przed umieszczeniem",

@@ -10,15 +10,6 @@ function registerTFGEnderPearlRecipes(event) {
 		.duration(20 * 10)
 		.EUt(GTValues.VA[GTValues.HV])
 
-	event.recipes.gtceu.chemical_reactor('kaolinite_ruby')
-		.itemInputs('6x #forge:dusts/ruby', '2x #forge:dusts/silicon')
-		.inputFluids(Fluid.of('gtceu:distilled_water', 6000), Fluid.of('gtceu:chlorine', 8000))
-		.itemOutputs('17x tfc:powder/kaolinite', '1x #forge:dusts/chromium')
-		.outputFluids(Fluid.of('gtceu:hydrochloric_acid', 8000))
-		.circuit(3)
-		.duration(20 * 10)
-		.EUt(GTValues.VA[GTValues.HV])
-
 	event.recipes.gtceu.pyrolyse_oven('vitrified_ender_dust')
 		.itemInputs('minecraft:ender_pearl', '2x tfc:powder/kaolinite', '4x #forge:insulation_t1')
 		.inputFluids(Fluid.of('gtceu:nitrogen', 100))

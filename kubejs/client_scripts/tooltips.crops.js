@@ -18,6 +18,7 @@ const registerCropTooltips = (event) => {
 	const $FLStationaryBush = Java.loadClass('com.eerussianguy.firmalife.common.blocks.plant.FLFruitBlocks$StationaryBush');
 	const $FLClimateRanges = Java.loadClass('com.eerussianguy.firmalife.common.util.FLClimateRanges');
 	const $TFGFruitTree = Java.loadClass('su.terrafirmagreg.core.common.data.TFGFruitTree$FruitTreeType');
+	const $PalmTrees = Java.loadClass('su.terrafirmagreg.core.common.data.PalmTrees');
 
 	//#region Helper Functions.
 	// =======================================================================================
@@ -148,6 +149,17 @@ const registerCropTooltips = (event) => {
 				crop.minHydration, crop.maxHydration, crop.minTemp, crop.maxTemp,
 				null, resolvedDimension, getFruitingMonths(stages), crop.moreInfo
 			);
+		} else if (crop.id.includes('palm_tree')) {
+			let entry = $PalmTrees.valueOf(crop.id.split('/').pop().toUpperCase());
+			let name = entry.getSerializedName();
+			let stages = entry.getStages();
+			let resolvedDimension = dimensionNames[crop.dimension] || crop.dimension || undefined;
+
+			plantTooltip(event, `tfg:palm_tree/${name}_sapling`,
+				crop.minHydration, crop.maxHydration, crop.minTemp, crop.maxTemp,
+				null, resolvedDimension, getFruitingMonths(stages), crop.moreInfo
+			);
+
 		} else {
 			const resolvedDimension = dimensionNames[crop.dimension] || crop.dimension || undefined;
 			const resolvedFertilizer = fertilizerNames[crop.fertilizer] || undefined;

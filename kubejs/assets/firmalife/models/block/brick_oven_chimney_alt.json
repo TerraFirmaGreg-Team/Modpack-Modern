@@ -1,0 +1,8 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "parent": "firmalife:block/oven_chimney_alt",
+  "textures": {
+    "side": "firmalife:block/oven/chimney/bricks_side",
+	"top": "firmalife:block/oven/chimney/bricks_top"
+  }
+}

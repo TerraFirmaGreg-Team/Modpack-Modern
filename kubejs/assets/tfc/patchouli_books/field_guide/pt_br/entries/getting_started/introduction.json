@@ -1,5 +1,4 @@
 {
-	"__comment__": "This file was automatically created by mcresources",
 	"name": "Introdução",
 	"category": "tfc:getting_started",
 	"icon": "tfc:rock/loose/granite",
@@ -36,7 +35,7 @@
 					"5": "tfc:wood/twig/ash"
 				}
 			},
-			"name": "Exemplo ",
+			"name": "Exemplo",
 			"text": "Um punhado de gravetos e rochas comuns.",
 			"enable_visualize": false
 		},
@@ -49,7 +48,7 @@
 			"images": [
 				"tfc:textures/gui/book/gui/rock_knapping.png"
 			],
-			"text": "A Interface de Talhar.",
+			"text": "A Interface de Lascagem.",
 			"border": false
 		},
 		{
@@ -65,7 +64,7 @@
 				"tfg:rock_knapping/stone_knife_head_2",
 				"tfg:rock_knapping/stone_knife_head_3"
 			],
-			"text": "Uma lâmina de faca, feita de vários tipos diferentes de pedra."
+			"text": "Uma lâmina de faca, feita de vários tipos diferentes de rocha."
 		},
 		{
 			"type": "patchouli:crafting",

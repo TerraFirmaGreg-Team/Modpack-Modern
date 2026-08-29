@@ -1,5 +1,4 @@
 {
-  "__comment__": "This file was automatically created by mcresources",
   "name": "Poszukiwanie rud",
   "category": "tfc:mechanics",
   "icon": "tfc:metal/propick/wrought_iron",
@@ -30,22 +29,22 @@
     },
     {
       "type": "patchouli:image",
+      "text": "Using a prospector's pick looks like this. The large $(bold)\"!\"$() mark particle is from per-vein style x-ray. And the smaller ones are from per-block style x-ray.",
       "title": "Widok kilofa geologicznego",
       "images": [
         "tfg:textures/gui/field_guide/prospecting/tfg_prospectors_pick_xray.png"
       ],
-      "border": true,
-      "text": "Using a prospector's pick looks like this. The large $(bold)\"!\"$() mark particle is from per-vein style x-ray. And the smaller ones are from per-block style x-ray."
+      "border": true
     },
     {
       "type": "tfc:knapping_recipe",
-      "recipe": "tfc:clay_knapping/propick_head_mold",
-      "text": "To make a prospector's pick, you can $(l:getting_started/pottery)knapp$() an unfired mold out of clay as shown above."
+      "text": "To make a prospector's pick, you can $(l:getting_started/pottery)knapp$() an unfired mold out of clay as shown above.",
+      "recipe": "tfc:clay_knapping/propick_head_mold"
     },
     {
       "type": "tfc:heat_recipe",
-      "recipe": "tfc:heating/propick_head_mold",
-      "text": "Once the mold has been $(l:getting_started/pottery)knapped$(), it needs to be $(l:mechanics/heating)fired$() to create a $(item)propick head mold.$()$(br2)To create the tool head, $(l:getting_started/finding_ores#casting)cast$() liquid metal into the mold."
+      "text": "Once the mold has been $(l:getting_started/pottery)knapped$(), it needs to be $(l:mechanics/heating)fired$() to create a $(item)propick head mold.$()$(br2)To create the tool head, $(l:getting_started/finding_ores#casting)cast$() liquid metal into the mold.",
+      "recipe": "tfc:heating/propick_head_mold"
     },
     {
       "type": "tfc:anvil_recipe",
@@ -54,7 +53,7 @@
     },
     {
       "type": "patchouli:text",
-      "text": "The majority of the stats and charecteristics of the prospector's picks can be adjustable in your server config file."
+      "text": "Większość statystyk i cech kilofów geologicznych można dostosować w pliku konfiguracyjnym serwera."
     },
     {
       "type": "patchouli:spotlight",

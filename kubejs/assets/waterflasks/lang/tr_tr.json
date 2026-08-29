@@ -1,5 +1,15 @@
 {
+  "item.waterflasks.bladder": "Mesane",
+  "item.waterflasks.broken_iron_flask": "Kırık Demir Matara",
+  "item.waterflasks.broken_leather_flask": "Kırık Deri Matara",
   "item.waterflasks.iron_flask": "Demir Matara",
+  "item.waterflasks.iron_flask.filled": "%s Demir Matara",
   "item.waterflasks.leather_flask": "Deri Matara",
-  "item.waterflasks.red_steel_flask": "Kırmızı Çelik Matara"
+  "item.waterflasks.leather_flask.filled": "%s Deri Matara",
+  "item.waterflasks.leather_side": "Deri Matara Yanı",
+  "item.waterflasks.red_steel_flask": "Kırmızı Çelik Matara",
+  "item.waterflasks.red_steel_flask.filled": "%s Kırmızı Çelik Matara",
+  "item.waterflasks.unfinished_iron_flask": "Bitmemiş Demir Matara",
+  "item.waterflasks.unfinished_red_steel_flask": "Bitmemiş Kırmızı Çelik Matara",
+  "waterflasks.item.flaskbreak": "Matara Kırma"
 }

@@ -25,5 +25,13 @@
   "item.tfcchannelcasting.unfired_mold_table": "未焼成の鋳型台",
   "metal.tfcchannelcasting.dark_chocolate": "ダークチョコレート",
   "metal.tfcchannelcasting.milk_chocolate": "ミルクチョコレート",
-  "metal.tfcchannelcasting.white_chocolate": "ホワイトチョコレート"
+  "metal.tfcchannelcasting.white_chocolate": "ホワイトチョコレート",
+  "tfc.recipe.barrel.tfcchannelcasting.barrel.fill_with_strong_liquor": "ストロングリキュール漬け",
+  "tfc.recipe.barrel.tfcchannelcasting.barrel.fill_with_sweet_liquor": "スイートリキュール漬け",
+  "tfc.recipe.barrel.tfcchannelcasting.barrel.fill_with_whiskey": "ウイスキー漬け",
+  "tfcchannelcasting.tooltip.food_trait.filled_with_jam": "ジャム入り",
+  "tfcchannelcasting.tooltip.food_trait.filled_with_strong_liquor": "ストロングリキュール漬け",
+  "tfcchannelcasting.tooltip.food_trait.filled_with_sweet_liquor": "スイートリキュール漬け",
+  "tfcchannelcasting.tooltip.food_trait.filled_with_whiskey": "ウイスキー漬け",
+  "tfcchannelcasting.tooltip.food_trait.romantic": "ロマンチック"
 }

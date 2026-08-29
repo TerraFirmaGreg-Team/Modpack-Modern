@@ -169,7 +169,7 @@
 							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(computercraft:disks)"
 						}
 					}
-					title: "Any #computercraft:disks"
+					title: "{quests.tasktype.item.any} #computercraft:disks"
 					type: "item"
 				}
 			]
@@ -669,7 +669,7 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(create:table_cloths)"
 					}
 				}
-				title: "Any #create:table_cloths"
+				title: "{quests.tasktype.item.any} #create:table_cloths"
 				type: "item"
 			}]
 			title: "{quests.computer.table_cover.title}"
@@ -690,7 +690,7 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(create:postboxes)"
 					}
 				}
-				title: "Any #create:postboxes"
+				title: "{quests.tasktype.item.any} #create:postboxes"
 				type: "item"
 			}]
 			title: "{quests.computer.postbox.title}"

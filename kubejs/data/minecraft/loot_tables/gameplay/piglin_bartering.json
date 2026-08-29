@@ -162,13 +162,13 @@
 				},
 				{
 					"type": "minecraft:item",
-					"name": "gtceu:ruby_gem",
+					"name": "gtceu:flawless_ruby_gem",
 					"functions": [
 						{
 							"function": "minecraft:set_count",
 							"count": {
-								"min": 2,
-								"max": 3,
+								"min": 1,
+								"max": 2,
 								"type": "minecraft:uniform"
 							}
 						}
@@ -177,13 +177,13 @@
 				},
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:emerald",
+					"name": "gtceu:flawless_emerald_gem",
 					"functions": [
 						{
 							"function": "minecraft:set_count",
 							"count": {
-								"min": 2,
-								"max": 3,
+								"min": 1,
+								"max": 2,
 								"type": "minecraft:uniform"
 							}
 						}
@@ -192,13 +192,13 @@
 				},
 				{
 					"type": "minecraft:item",
-					"name": "gtceu:sapphire_gem",
+					"name": "gtceu:flawless_sapphire_gem",
 					"functions": [
 						{
 							"function": "minecraft:set_count",
 							"count": {
-								"min": 2,
-								"max": 3,
+								"min": 1,
+								"max": 2,
 								"type": "minecraft:uniform"
 							}
 						}
@@ -207,13 +207,13 @@
 				},
 				{
 					"type": "minecraft:item",
-					"name": "gtceu:green_sapphire_gem",
+					"name": "gtceu:flawless_green_sapphire_gem",
 					"functions": [
 						{
 							"function": "minecraft:set_count",
 							"count": {
-								"min": 2,
-								"max": 3,
+								"min": 1,
+								"max": 2,
 								"type": "minecraft:uniform"
 							}
 						}

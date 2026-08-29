@@ -1,6 +1,5 @@
 {
-  "__comment__": "This file was automatically created by mcresources",
-  "name": "Blast Furnace",
+  "name": "Aukštakrosnė",
   "category": "tfc:mechanics",
   "icon": "tfc:blast_furnace",
   "pages": [
@@ -20,7 +19,7 @@
     {
       "type": "patchouli:multiblock",
       "multiblock_id": "tfc:blast_furnace",
-      "name": "A Blast Furnace",
+      "name": "Aukštakrosnė",
       "text": "A blast furnace with a minimum height chimney.",
       "enable_visualize": true
     },
@@ -41,7 +40,7 @@
       "images": [
         "tfc:textures/gui/book/gui/blast_furnace.png"
       ],
-      "text": "The Blast Furnace Interface",
+      "text": "Aukštakrosnės sąsaja",
       "border": false
     },
     {

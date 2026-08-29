@@ -1,28 +1,27 @@
 {
-  "__comment__": "This file was automatically created by mcresources",
   "name": "Pizza",
   "category": "tfc:firmalife",
   "icon": "firmalife:textures/item/food/cooked_pizza.png",
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "To make $(thing)Pizza$(), mix Dough, Salt, Basil Leaves, and 100 mB of oil in a $(l:firmalife/mixing_bowl)Mixing Bowl$(). Oil can be olive oil, or soybean oil (the product of soybean paste sealed in a barrel of water)."
+      "text": "Pour faire une $(thing)pizza$(), mélangez de la pâte, du sel, des feuilles de basilic et 100 mB d'huile  dans un $(l:firmalife/mixing_bowl)Bol à mélange$(). L'huile en question peut être d'olive ou de soja (le produit de la pâte de soja scellée dans un tonneau d'eau)."
     },
     {
       "type": "patchouli:crafting",
       "anchor": "shredded_cheese",
       "recipe": "firmalife:crafting/shredded_cheese",
-      "text": "You'll need some shredded cheese to start with."
+      "text": "Vous aurez besoin de fromage râpé pour commencer."
     },
     {
       "type": "patchouli:text",
       "anchor": "tomato_sauce",
-      "text": "To make $(thing)Tomato Sauce$(), boil a tomato, salt, garlic, and water all together in a pot. Alternatively, using a $(l:firmalife/oven_appliances#vat)Vat$(), boil the crafted version of those ingredients, also known as $(thing)Tomato Sauce Mix$()."
+      "text": "Pour faire de la $(thing)Sauce tomate$(), faites bouillir des tomates, du sel, de l'ail et de l'eau ensemble dans un pot. Autrement, vous pouvez utiliser une $(l:firmalife/oven_appliances#vat)Cuve$() et faire bouillir la version combinée de ces ingrédients, connue sous le nom de $(thing)Mélange à sauce tomate$()."
     },
     {
       "type": "patchouli:crafting",
       "recipe": "tfg:shapeless/raw_pizza_2",
-      "text": "Pizza is made from 1-3 of vegetables, cooked meats, or fruits, one shredded cheese, and one tomato sauce."
+      "text": "La pizza est faite à partir de 1-3 légumes, viandes cuites, ou fruits, ainsi que d'un fromage râpé et une sauce tomate."
     }
   ],
   "read_by_default": true,

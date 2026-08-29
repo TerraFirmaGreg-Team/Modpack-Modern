@@ -1,0 +1,289 @@
+{
+	"processors": [
+		{
+			"processor_type": "lithostitched:condition",
+			"random_mode": {
+				"mode": "per_block",
+				"name": "palette:basalt_mid"
+			},
+			"if_true": [
+				{
+					"type": "lithostitched:matching_blocks",
+					"blocks": "ae2:quartz_bricks",
+					"match_type": "input"
+				}
+			],
+			"then": {
+				"processor_type": "lithostitched:set_block",
+				"state_provider": {
+					"type": "minecraft:noise_provider",
+					"seed": 52,
+					"noise": {
+						"firstOctave": -4,
+						"amplitudes": [ 1, 0 ]
+					},
+					"scale": 6,
+					"states": [
+						{ "Name": "tfc:rock/bricks/basalt" },
+						{ "Name": "tfc:rock/bricks/basalt" },
+						{ "Name": "tfc:rock/bricks/basalt" },
+						{ "Name": "tfc:rock/bricks/basalt" },
+						{ "Name": "tfc:rock/bricks/basalt" },
+						{ "Name": "tfc:rock/bricks/basalt" },
+						{ "Name": "tfc:rock/bricks/basalt" },
+						{ "Name": "tfc:rock/bricks/basalt" },
+						{ "Name": "tfc:rock/bricks/basalt" },
+						{ "Name": "tfc:rock/bricks/basalt" },
+						{ "Name": "tfc:rock/bricks/basalt" },
+						{ "Name": "tfc:rock/raw/basalt" },
+						{ "Name": "tfc:rock/bricks/basalt" },
+						{ "Name": "tfc:rock/bricks/basalt" },
+						{ "Name": "tfc:rock/bricks/basalt" },
+						{ "Name": "tfc:rock/bricks/basalt" },
+						{ "Name": "tfc:rock/bricks/basalt" },
+						{ "Name": "tfc:rock/bricks/basalt" },
+						{ "Name": "tfc:rock/bricks/basalt" },
+						{ "Name": "tfc:rock/bricks/basalt" },
+						{ "Name": "tfc:rock/bricks/basalt" },
+						{ "Name": "tfc:rock/bricks/basalt" },
+						{ "Name": "tfc:rock/bricks/basalt" }
+					]
+				},
+				"preserve_state": true,
+				"random_mode": "per_block",
+				"block_entity_modifier": {
+					"type": "minecraft:passthrough"
+				}
+			}
+		},
+
+		{
+			"processor_type": "lithostitched:condition",
+			"random_mode": {
+				"mode": "per_block",
+				"name": "palette:basalting_mid"
+			},
+			"if_true": [
+				{
+					"type": "lithostitched:matching_blocks",
+					"blocks": "tfc:rock/raw/basalt",
+					"match_type": "input"
+				}
+			],
+			"then": {
+				"processor_type": "lithostitched:set_block",
+				"state_provider": {
+					"type": "minecraft:weighted_state_provider",
+					"entries": [
+						{
+							"weight": 6,
+							"data": {
+								"Name": "tfg:rock/hardened/basalt"
+							}
+						},
+						{
+							"weight": 1,
+							"data": {
+								"Name": "minecraft:smooth_basalt"
+							}
+						}
+					]
+				},
+				"preserve_state": true,
+				"random_mode": "per_block",
+				"block_entity_modifier": {
+					"type": "minecraft:passthrough"
+				}
+			}
+		},
+		{
+            "processor_type": "lithostitched:condition",
+            "random_mode": {
+                "mode": "per_block",
+                "name": "palette:blackstone_moss"
+            },
+            "if_true": [
+                {
+                    "type": "lithostitched:matching_blocks",
+                    "blocks": "minecraft:bricks",
+                    "match_type": "input"
+                }
+                ],
+            "then": {
+                "processor_type": "lithostitched:set_block",
+                "state_provider": {
+                    "type": "minecraft:noise_provider",
+                    "seed": 52,
+                    "noise": {
+                        "firstOctave": -4,
+                        "amplitudes": [ 10, 0, 0, 0 ]
+                    },
+                    "scale": 5,
+                    "states": [
+                        { "Name": "tfg:rock/mossy_bricks_blackstone" },
+                        { "Name": "tfg:rock/mossy_bricks_blackstone" },
+                        { "Name": "tfg:rock/mossy_bricks_blackstone" },
+                        { "Name": "tfg:rock/mossy_bricks_blackstone" },
+                        { "Name": "tfg:rock/mossy_cobble_blackstone" },
+                        { "Name": "tfg:rock/mossy_cobble_blackstone" },
+                        { "Name": "tfg:rock/mossy_cobble_blackstone" },
+                        { "Name": "tfg:rock/mossy_cobble_blackstone" },
+                        { "Name": "minecraft:polished_blackstone_bricks" },
+                        { "Name": "minecraft:polished_blackstone_bricks" },
+                        { "Name": "minecraft:moss_block" },
+                        { "Name": "minecraft:polished_blackstone_bricks" },
+                        { "Name": "minecraft:polished_blackstone_bricks" },
+                        { "Name": "tfg:rock/mossy_cobble_blackstone" },
+                        { "Name": "minecraft:moss_block" },
+                        { "Name": "minecraft:moss_block" },
+                        { "Name": "minecraft:moss_block" },
+                        { "Name": "minecraft:moss_block" },
+                        { "Name": "minecraft:polished_blackstone_bricks" },
+                        { "Name": "minecraft:polished_blackstone_bricks" },
+                        { "Name": "minecraft:moss_block" },
+                        { "Name": "tfg:rock/mossy_cobble_blackstone" },
+                        { "Name": "tfg:rock/mossy_cobble_blackstone" },
+                        { "Name": "minecraft:polished_blackstone_bricks" },
+                        { "Name": "minecraft:polished_blackstone_bricks" },
+                        { "Name": "minecraft:moss_block" },
+                        { "Name": "minecraft:cracked_polished_blackstone_bricks" }
+                    ]
+                },
+                "preserve_state": true,
+                "random_mode": "per_block",
+                "block_entity_modifier": {
+                    "type": "minecraft:passthrough"
+                }
+            }
+            },
+            {
+            "processor_type": "lithostitched:condition",
+            "random_mode": {
+                "mode": "per_block",
+                "name": "palette:pillar_blk_moss"
+            },
+            "if_true": [
+                {
+                    "type": "lithostitched:matching_blocks",
+                    "blocks": "minecraft:smooth_red_sandstone",
+                    "match_type": "input"
+                }
+                ],
+            "then": {
+                "processor_type": "lithostitched:set_block",
+                "state_provider": {
+                    "type": "minecraft:noise_provider",
+                    "seed": 52,
+                    "noise": {
+                        "firstOctave": -4,
+                        "amplitudes": [ 10, 0, 0, 0 ]
+                    },
+                    "scale": 5,
+                    "states": [
+                        { "Name": "tfg:rock/mossy_bricks_deepslate" },
+                        { "Name": "tfg:rock/mossy_bricks_deepslate" },
+                        { "Name": "tfg:rock/mossy_bricks_deepslate" },
+                        { "Name": "tfg:rock/mossy_bricks_deepslate" },
+                        { "Name": "tfg:rock/mossy_bricks_deepslate" },
+                        { "Name": "tfg:rock/mossy_bricks_deepslate" },
+                        { "Name": "tfg:rock/mossy_bricks_deepslate" },
+                        { "Name": "tfg:rock/mossy_bricks_deepslate" },
+                        { "Name": "minecraft:polished_deepslate_bricks" },
+                        { "Name": "minecraft:polished_deepslate_bricks" },
+                        { "Name": "minecraft:moss_block" },
+                        { "Name": "minecraft:polished_deepslate_bricks" },
+                        { "Name": "minecraft:polished_deepslate_bricks" },
+                        { "Name": "tfg:rock/mossy_bricks_deepslate" },
+                        { "Name": "minecraft:moss_block" },
+                        { "Name": "minecraft:moss_block" },
+                        { "Name": "minecraft:moss_block" },
+                        { "Name": "minecraft:moss_block" },
+                        { "Name": "minecraft:polished_deepslate_bricks" },
+                        { "Name": "minecraft:polished_deepslate_bricks" },
+                        { "Name": "minecraft:moss_block" },
+                        { "Name": "tfg:rock/mossy_bricks_deepslate" },
+                        { "Name": "tfg:rock/mossy_bricks_deepslate" },
+                        { "Name": "minecraft:polished_deepslate_bricks" },
+                        { "Name": "minecraft:polished_deepslate_bricks" },
+                        { "Name": "minecraft:moss_block" },
+                        { "Name": "minecraft:cracked_polished_deepslate_bricks" }
+                    ]
+                },
+                "preserve_state": true,
+                "random_mode": "per_block",
+                "block_entity_modifier": {
+                    "type": "minecraft:passthrough"
+                }
+            }
+            },
+            {
+            "processor_type": "lithostitched:condition",
+            "random_mode": {
+                "mode": "per_block",
+                "name": "palette:wall_blk_moss"
+            },
+            "if_true": [
+                {
+                    "type": "lithostitched:matching_blocks",
+                    "blocks": "minecraft:brick_wall",
+                    "match_type": "input"
+                }
+                ],
+            "then": {
+                "processor_type": "lithostitched:set_block",
+                "state_provider": {
+                    "type": "minecraft:noise_provider",
+                    "seed": 52,
+                    "noise": {
+                        "firstOctave": -4,
+                        "amplitudes": [ 10, 0, 0, 0 ]
+                    },
+                    "scale": 5,
+                    "states": [
+                        { "Name": "tfg:rock/mossy_bricks_blackstone_wall" },
+                        { "Name": "tfg:rock/mossy_bricks_blackstone_wall" },
+                        { "Name": "tfg:rock/mossy_bricks_blackstone_wall" },
+                        { "Name": "tfg:rock/mossy_bricks_blackstone_wall" },
+                        { "Name": "tfg:rock/mossy_bricks_blackstone_wall" },
+                        { "Name": "tfg:rock/mossy_bricks_blackstone_wall" },
+                        { "Name": "tfg:rock/mossy_bricks_blackstone_wall" },
+                        { "Name": "tfg:rock/mossy_bricks_blackstone_wall" },
+                        { "Name": "tfg:rock/mossy_cobble_blackstone_wall" },
+                        { "Name": "tfg:rock/mossy_cobble_blackstone_wall" },
+                        { "Name": "tfg:rock/mossy_bricks_blackstone_wall" },
+                        { "Name": "tfg:rock/mossy_cobble_blackstone_wall" },
+                        { "Name": "tfg:rock/mossy_cobble_blackstone_wall" },
+                        { "Name": "tfg:rock/mossy_bricks_blackstone_wall" },
+                        { "Name": "tfg:rock/mossy_bricks_blackstone_wall" },
+                        { "Name": "tfg:rock/mossy_bricks_blackstone_wall" },
+                        { "Name": "tfg:rock/mossy_bricks_blackstone_wall" },
+                        { "Name": "tfg:rock/mossy_bricks_blackstone_wall" },
+                        { "Name": "tfg:rock/mossy_cobble_blackstone_wall" },
+                        { "Name": "tfg:rock/mossy_cobble_blackstone_wall" },
+                        { "Name": "tfg:rock/mossy_bricks_blackstone_wall" },
+                        { "Name": "tfg:rock/mossy_bricks_blackstone_wall" },
+                        { "Name": "tfg:rock/mossy_bricks_blackstone_wall" },
+                        { "Name": "tfg:rock/mossy_cobble_blackstone_wall" },
+                        { "Name": "tfg:rock/mossy_cobble_blackstone_wall" },
+                        { "Name": "tfg:rock/mossy_bricks_blackstone_wall" },
+                        { "Name": "tfg:rock/cracked_bricks_blackstone_wall" }
+                    ]
+                },
+                "preserve_state": true,
+                "random_mode": "per_block",
+                "block_entity_modifier": {
+                    "type": "minecraft:passthrough"
+                }
+            }
+	    },
+        {
+			"processor_type": "lithostitched:block_swap",
+			"blocks": {
+				"minecraft:smooth_quartz": "minecraft:basalt",
+				"ae2:quartz_brick_wall": "tfc:rock/bricks/basalt_wall",
+				"tfc:smooth_sandstone/red": "minecraft:deepslate_bricks",
+				"minecraft:brick_wall": "polished_blackstone_brick_wall"
+            }
+		}
+	]
+}

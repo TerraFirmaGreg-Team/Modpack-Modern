@@ -1,5 +1,5 @@
 {
-    "name": "Mining in TFG",
+    "name": "TFG de maden yapmak",
     "icon": "minecraft:diamond_pickaxe",
     "category": "tfc:tfg_ores",
     "priority": true,
@@ -8,7 +8,7 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "You will need a $(thing)pickaxe$() or $(thing)mining hammer$() to mine ores.$(br2)A regular $(thing)hammer$() can also break stone type blocks quickly, but will not result in dropped ores. It can still be useful for $(l:getting_started/primitive_anvils#raw_rock)extracting$() stone blocks however."
+            "text": "Sana bir $(thing)pickaxe$() or $(thing)mining hammer$() to mine ores.$(br2)A regular $(thing)hammer$() can also break stone type blocks quickly, but will not result in dropped ores. It can still be useful for $(l:getting_started/primitive_anvils#raw_rock)extracting$() stone blocks however."
         },
         {
             "type": "patchouli:crafting",
@@ -17,7 +17,7 @@
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Pickaxe",
+            "title": "Kazma",
             "text": "Breaking an ore block with a pickaxe will yield $(thing)raw ores$() (poor, normal, or rich), as well as some stone dust. These are not worth much mB each and you will need multiple to make a single ingot, however some other minerals are only useable in this state, such as $(thing)coal$().",
             "item": {
                 "tag": "minecraft:pickaxes"
@@ -26,7 +26,7 @@
         {
             "type": "patchouli:spotlight",
             "title": "Mining Hammer",
-            "text": "These are basically a pickaxe with a 3x3 range, and will yield $(thing)raw ores$() as well. Also good for quarrying stone!$(br2)Holding $(thing)sneak$() will only break a single block at a time.",
+            "text": "Bu şey bir canavar! 3x3 lük bir kazma hemde normal çekiç gibi maden düşürmeme gibi bişeyde yok yani  $(thing)ham maden$() kazabilirsin$(br2)Basılı tut $(thing)sneak$()",
             "item": {
                 "tag": "forge:tools/mining_hammers"
             }

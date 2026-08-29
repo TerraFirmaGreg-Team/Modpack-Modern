@@ -1,0 +1,8 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "firmalife:block/oven/bottom/stone/top",
+    "side": "firmalife:block/oven/bottom/stone/side"
+  }
+}

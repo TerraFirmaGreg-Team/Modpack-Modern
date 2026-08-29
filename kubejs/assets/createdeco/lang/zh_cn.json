@@ -400,7 +400,6 @@
 	"block.createdeco.zinc_trapdoor": "锌活板门",
 	"block.createdeco.zinc_window": "锌窗户",
 	"block.createdeco.zinc_window_pane": "锌窗户板",
-	"item.createdeco.andesite_sheet": "锡铁合金板",
 	"item.createdeco.brass_coin": "黄铜硬币",
 	"item.createdeco.brass_coinstack": "黄铜硬币堆",
 	"item.createdeco.copper_coin": "铜硬币",
@@ -409,16 +408,10 @@
 	"item.createdeco.gold_coinstack": "金硬币堆",
 	"item.createdeco.industrial_iron_coin": "钢硬币",
 	"item.createdeco.industrial_iron_coinstack": "钢硬币堆",
-	"item.createdeco.industrial_iron_ingot": "钢锭",
-	"item.createdeco.industrial_iron_nugget": "钢粒",
-	"item.createdeco.industrial_iron_sheet": "钢板",
 	"item.createdeco.iron_coin": "锻铁硬币",
 	"item.createdeco.iron_coinstack": "锻铁硬币堆",
 	"item.createdeco.netherite_coin": "蓝钢硬币",
 	"item.createdeco.netherite_coinstack": "蓝钢硬币堆",
-	"item.createdeco.netherite_nugget": "下界合金粒",
-	"item.createdeco.netherite_sheet": "下界合金板",
 	"item.createdeco.zinc_coin": "锌硬币",
-	"item.createdeco.zinc_coinstack": "锌硬币堆",
-	"item.createdeco.zinc_sheet": "锌板"
+	"item.createdeco.zinc_coinstack": "锌硬币堆"
 }

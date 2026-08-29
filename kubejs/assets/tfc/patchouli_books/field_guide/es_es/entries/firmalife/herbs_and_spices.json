@@ -1,5 +1,4 @@
 {
-	"__comment__": "This file was automatically created by mcresources",
 	"name": "Hierbas y Especias",
 	"category": "tfc:firmalife",
 	"icon": "firmalife:spice/basil_leaves",
@@ -10,6 +9,7 @@
 		},
 		{
 			"type": "tfc:multimultiblock",
+			"text": "La $(thing)Albahaca Silvestre$() crece entre los 12 y 25 °C, y una precipitación entre 300 y 500 mm.",
 			"multiblocks": [
 				{
 					"pattern": [
@@ -39,11 +39,13 @@
 				}
 			],
 			"name": "Albahaca",
-			"text": "La $(thing)Albahaca Silvestre$() crece entre los 12 y 25 °C, y una precipitación entre 300 y 500 mm.",
 			"enable_visualize": false
 		},
 		{
 			"type": "tfc:multimultiblock",
+			"name": "Laurel",
+			"text": "El $(thing)Laurel Silvestre$() crece entre los 8 y 14 °C, y una precipitación entre 25 y 225 mm. ",
+			"enable_visualize": false,
 			"multiblocks": [
 				{
 					"pattern": [
@@ -71,13 +73,11 @@
 						"X": "firmalife:plant/bay_laurel[stage=1]"
 					}
 				}
-			],
-			"name": "Laurel",
-			"text": "El $(thing)Laurel Silvestre$() crece entre los 8 y 14 °C, y una precipitación entre 25 y 225 mm. ",
-			"enable_visualize": false
+			]
 		},
 		{
 			"type": "tfc:multimultiblock",
+			"text": "El $(thing)Cardamomo Silvestre$() crece entre los 18 y 30 °C, y una precipitación entre 350 y 500 mm.",
 			"multiblocks": [
 				{
 					"pattern": [
@@ -107,11 +107,13 @@
 				}
 			],
 			"name": "Cadramomo",
-			"text": "El $(thing)Cardamomo Silvestre$() crece entre los 18 y 30 °C, y una precipitación entre 350 y 500 mm.",
 			"enable_visualize": false
 		},
 		{
 			"type": "tfc:multimultiblock",
+			"name": "Cilantro",
+			"text": "El $(thing)Cilantro Silvestre$() crece entre los 5 y 15 °C, y una precipitación entre 0 y 150 mm.",
+			"enable_visualize": false,
 			"multiblocks": [
 				{
 					"pattern": [
@@ -139,13 +141,11 @@
 						"X": "firmalife:plant/cilantro[stage=1]"
 					}
 				}
-			],
-			"name": "Cilantro",
-			"text": "El $(thing)Cilantro Silvestre$() crece entre los 5 y 15 °C, y una precipitación entre 0 y 150 mm.",
-			"enable_visualize": false
+			]
 		},
 		{
 			"type": "tfc:multimultiblock",
+			"text": "El $(thing)Comino Silvestre$() crece entre los 6 y 20 °C, y una precipitación entre 50 y 250 mm.",
 			"multiblocks": [
 				{
 					"pattern": [
@@ -175,7 +175,6 @@
 				}
 			],
 			"name": "Comino",
-			"text": "El $(thing)Comino Silvestre$() crece entre los 6 y 20 °C, y una precipitación entre 50 y 250 mm.",
 			"enable_visualize": false
 		},
 		{
@@ -242,8 +241,8 @@
 					}
 				}
 			],
-			"name": "Pimento",
-			"text": "$(thing)Wild Pimento$() grows between 15 and 30C, and 200 to 450mm of rainfall.",
+			"name": "Pimiento",
+			"text": "$(thing)Los pimientos salvajes$() crecen entre 15 y 30º C, con una precipitación entre 200 y 450 mm.",
 			"enable_visualize": false
 		},
 		{
@@ -283,7 +282,7 @@
 		{
 			"type": "patchouli:crafting",
 			"recipe": "firmalife:crafting/seed_ball",
-			"text": "$(item)Seed Balls$() can be used to plant different types of Grass. This can be useful after clearing your base for building. The recipe for the seed ball requires $(item)Compost$() and 4 $(thing)Seeds$()."
+			"text": "$(item)Las bolas de semillas$() pueden ser usadas para plantar diferentes tipos de césped. Esto puede ser útil después de despejar tu base para construir. La recepta para la bola de semillas necesita $(item)Abonot$() y 4 $(thing)Semillas$()."
 		},
 		{
 			"type": "patchouli:multiblock",
@@ -301,12 +300,12 @@
 				}
 			},
 			"name": "",
-			"text": "A butterfly grass plant.",
+			"text": "Una planta de césped de mariposa.",
 			"enable_visualize": false
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Butterfly grass will mature over time. When one reaches maturity, it has a chance to spread to surrounding blocks, or turn into something new. Butterfly grass blocks that have been spread by another grass block do not spread anymore.$(br)After Butterfly grass turns into another grass, you can pick them up with $(item)Shears$()."
+			"text": "La hierba de mariposa madurará con el tiempo. Cuando uno alcance la madurez, tiene la posibilidad de propagarse a los bloques de alrededor, o convertirse en algo nuevo. Los bloques de césped que han sido propagados por otro bloque de césped ya no se propagan.$(br)Después de que el césped de mariposa se convierta en otra hierba, puedes recogerlos con $(item)Tijeras()."
 		}
 	],
 	"read_by_default": true,

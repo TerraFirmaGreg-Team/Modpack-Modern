@@ -1,0 +1,177 @@
+{
+  "name": "Frutas Firmalife",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:plant/fig_sapling",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "A Firmalife adiciona algumas plantas frutíferas além daquelas adicionadas pelo TFC."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Para melhorar a legibilidade, as entradas começam na próxima página."
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "cocoa",
+      "text": "$(bold)$(l:the_world/climate#temperature)Temperatura$(): 20 - 35 °C$(br)$(bold)$(l:mechanics/hydration)Precipitação$(): 220 - 400mm$(br2)Árvores de cacau são usadas para fazer $(l:firmalife/chocolate)Chocolate$().",
+      "title": "Árvore de Cacau"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "Os estágios mensais de uma árvore de cacau",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "firmalife:plant/cocoa_leaves[lifecycle=dormant]",
+            "Y": "firmalife:plant/cocoa_branch[up=true,down=true]"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "firmalife:plant/cocoa_leaves[lifecycle=healthy]",
+            "Y": "firmalife:plant/cocoa_branch[up=true,down=true]"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "firmalife:plant/cocoa_leaves[lifecycle=flowering]",
+            "Y": "firmalife:plant/cocoa_branch[up=true,down=true]"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "firmalife:plant/cocoa_leaves[lifecycle=fruiting]",
+            "Y": "firmalife:plant/cocoa_branch[up=true,down=true]"
+          }
+        }
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "fig",
+      "text": "$(bold)$(l:the_world/climate#temperature)Temperatura$(): 20 - 35°C$(br)$(bold)$(l:mechanics/hydration)Precipitação$(): 125 - 215mm$(br2)",
+      "title": "Figueira"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "Os estágios mensais de uma Figueira",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "firmalife:plant/fig_leaves[lifecycle=dormant]",
+            "Y": "firmalife:plant/fig_branch[up=true,down=true]"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "firmalife:plant/fig_leaves[lifecycle=healthy]",
+            "Y": "firmalife:plant/fig_branch[up=true,down=true]"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "firmalife:plant/fig_leaves[lifecycle=flowering]",
+            "Y": "firmalife:plant/fig_branch[up=true,down=true]"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "firmalife:plant/fig_leaves[lifecycle=fruiting]",
+            "Y": "firmalife:plant/fig_branch[up=true,down=true]"
+          }
+        }
+      ]
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 20
+}

@@ -1,0 +1,6 @@
+{
+    "type": "forge:add_features",
+    "biomes": "#realmrpg_skeletons:has_cave_skeletons",
+    "features": "realmrpg_skeletons:cave_skeletons",
+    "step": "vegetal_decoration"
+}

@@ -1,0 +1,12 @@
+{
+  "ingredient": {
+    "tag": "firmalife:foods/chocolate"
+  },
+  "category": "other",
+  "hunger": 4,
+  "saturation": 1,
+  "decay_modifier": 0.3,
+  "grain": 0.5,
+  "dairy": 0.5,
+  "sugary": 1.5
+}

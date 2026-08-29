@@ -22,7 +22,45 @@ function registerTFGEquipmentItemTags(event) {
     event.add('minecraft:trimmable_armor', 'tfcambiental:insulated_leather_tunic')
     event.add('minecraft:trimmable_armor', 'tfcambiental:insulated_leather_pants')
     event.add('minecraft:trimmable_armor', 'tfcambiental:insulated_leather_boots')
-    event.add('minecraft:trimmable_armor', '#firmalife:beekeeper_armor')	
+    event.add('minecraft:trimmable_armor', '#firmalife:beekeeper_armor')
+
+	const textiles = [
+		"crocodile",
+		"caribou",
+		"polar_bear",
+		"cougar",
+		"tiger",
+		"panther",
+		"sabertooth",
+		"black_bear",
+		"grizzly_bear",
+		"direwolf",
+		"lion",
+		"red_elk"
+	];
+	const textile_parts = [
+		"hat", "shirt", "pants", "boots"
+	];
+	textiles.forEach(textile => {
+		textile_parts.forEach(part => {
+			event.add('minecraft:trimmable_armor', `tfc_textile:${textile}_${part}`)
+		})
+	})
+
+	const clothes = [
+		"raw",
+		"linen",
+		"cotton",
+		"phantom_silk"
+	];
+	const cloth_parts = [
+		"hat", "shirt", "pants", "socks"
+	];
+	clothes.forEach(cloth => {
+		cloth_parts.forEach(part => {
+			event.add('minecraft:trimmable_armor', `tfc_textile:${cloth}_${part}`)
+		})
+	})
 
 	event.add('minecraft:freeze_immune_wearables', 'tfc:metal/helmet/red_steel')
 	event.add('minecraft:freeze_immune_wearables', 'tfc:metal/chestplate/red_steel')

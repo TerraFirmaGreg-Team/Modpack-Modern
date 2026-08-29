@@ -149,8 +149,8 @@ function registerTFGBeneathBlockTags(event) {
 	event.add('minecraft:base_stone_nether', "#minecraft:sand");
 	event.add('minecraft:base_stone_nether', "#forge:sandstone");
 
-	event.add('tfc:creeping_plantable_on', '#minecraft:base_stone_nether')
-	event.add('tfc:creeping_stone_plantable_on', '#minecraft:base_stone_nether')
+	event.add('tfc:creeping_plantable_on', '#forge:stone')
+	event.add('tfc:creeping_stone_plantable_on', '#forge:stone')
 	event.add('minecraft:axolotls_spawnable_on', '#minecraft:base_stone_nether')
 	event.add('minecraft:frogs_spawnable_on', '#minecraft:base_stone_nether')
 	event.add('beneath:nether_bush_plantable_on', '#minecraft:base_stone_nether')
@@ -256,6 +256,12 @@ function registerTFGBeneathPlacedFeatures(event) {
 	event.add('tfg:nether_lakes_and_geodes', "tfg:nether/terrain/spring_water_lake");
 	event.add('tfg:nether_lakes_and_geodes', "minecraft:basalt_pillar");
 	event.add('tfg:nether_lakes_and_geodes', "tfg:earth/geode/amethyst");
+	event.add('tfg:nether_lakes_and_geodes', "tfg:earth/geode/barite")
+	event.add('tfg:nether_lakes_and_geodes', "tfg:earth/geode/calcite")
+	event.add('tfg:nether_lakes_and_geodes', "tfg:earth/geode/gypsum")
+	event.add('tfg:nether_lakes_and_geodes', "tfg:earth/geode/opal")
+	event.add('tfg:nether_lakes_and_geodes', "tfg:earth/geode/pyrite")
+	event.add('tfg:nether_lakes_and_geodes', "tfg:earth/geode/red_garnet")
 	event.add('tfg:nether_lakes_and_geodes', 'tfg:nether/terrain/cave_column')
 	event.add('tfg:nether_lakes_and_geodes', 'tfg:nether/terrain/large_cave_spike')
 	event.add('tfg:nether_lakes_and_geodes', 'tfg:nether/terrain/huge_column');
@@ -281,6 +287,7 @@ function registerTFGBeneathPlacedFeatures(event) {
 	event.add('tfg:nether_crops', "tfg:nether/crop/cassava");
 	event.add('tfg:nether_crops', "tfg:nether/crop/ghost_pepper");
 	event.add('tfg:nether_crops', "tfg:nether/crop/peanut");
+	event.add('tfg:nether_crops', "tfg:nether/crop/cotton");
 	event.add('tfg:nether_crops', "tfg:nether/crop/magmango");
 	event.add('tfg:nether_crops', "tfg:nether/crop/lavacado");
 

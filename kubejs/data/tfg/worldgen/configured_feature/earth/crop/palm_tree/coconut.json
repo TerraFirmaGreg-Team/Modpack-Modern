@@ -1,0 +1,19 @@
+{
+	"type": "tfc:random_tree",
+	"config": {
+		"structures": [
+			"tfg:palm_tree/coconut_0",
+			"tfg:palm_tree/coconut_1",
+			"tfg:palm_tree/coconut_2",
+			"tfg:palm_tree/coconut_3"
+		],
+		"radius": 1,
+		"placement": {
+			"width": 1,
+			"height": 14,
+			"allow_submerged": true,
+			"allow_deeply_submerged": false,
+			"ground_type": "sand"
+		}
+	}
+}

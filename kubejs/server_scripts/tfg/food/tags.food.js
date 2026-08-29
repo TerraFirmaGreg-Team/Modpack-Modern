@@ -3,13 +3,10 @@
 function registerTFGFoodItemTags(event) {
 
 	// Crops
-	event.add('tfc:seeds', 'tfg:sunflower_seeds')
-	event.add('tfc:seeds', 'tfg:rapeseed_seeds')
-	event.add('tfc:seeds', 'tfg:flax_seeds')
-
 	event.add('tfc:compost_greens_high', 'tfg:rapeseed_product')
 	event.add('tfc:compost_greens_high', 'tfg:sunflower_product')
 	event.add('tfc:compost_greens_high', 'tfg:flax_product')
+	event.add('tfc:compost_greens_high', 'tfg:cotton_product')
 	event.add('tfc:compost_greens_high', 'tfg:lunar_chorus_flower')
 
 	event.add("tfg:sugars", "minecraft:sugar");
@@ -40,11 +37,6 @@ function registerTFGFoodItemTags(event) {
 		event.add('tfc:foods/meats', meat)
 		event.add('tfc:foods/cooked_meats', meat)
 	})
-
-	//These tags are used to add the tooltips and for searchability
-	global.COOLING_FOODS.forEach(food => { event.add('tfg:cooling_foods', food) })
-
-	event.add('tfg:cooling_foods_strong', 'tfg:food/ice_soup')
 
 	global.WARMING_FOODS.forEach(food => { event.add('tfg:warming_foods', food) })
 
@@ -319,6 +311,7 @@ function registerTFGFoodItemTags(event) {
 	event.add('tfc:foods/usable_in_soup', 'minecraft:glow_berries')
 	event.add('tfc:foods/usable_in_soup', 'minecraft:chorus_fruit')
 	event.add('tfc:foods/usable_in_soup', 'minecraft:popped_chorus_fruit')
+	event.add('tfc:foods/usable_in_soup', '#tfg:martian_herbivore_foods')
 	
 	// Make eggs not useless
     event.add('tfc:foods/usable_in_salad', 'firmalife:food/pickled_egg')
@@ -337,6 +330,9 @@ function registerTFGFoodItemTags(event) {
 
 	event.add('tfc:rabbit_food', 'minecraft:chorus_fruit')
 	event.add('tfc:rabbit_food', 'minecraft:popped_chorus_fruit')
+
+	event.add('tfg:camel_food', '#tfc:foods/grains')
+	event.add('tfg:camel_food', '#tfc:foods/fruits')
 
 	event.add('tfc:foods', 'ad_astra:cheese')
 	event.add('tfc:foods/dairy', 'ad_astra:cheese')
@@ -365,6 +361,9 @@ function registerTFGFoodBlockTags(event) {
 	
 	event.add('tfc:crops', 'tfg:flax')
 	event.add('tfc:mineable_with_sharp_tool', 'tfg:flax')
+	
+	event.add('tfc:crops', 'tfg:cotton')
+	event.add('tfc:mineable_with_sharp_tool', 'tfg:cotton')
 
 	event.add('ad_astra:destroyed_in_space', '#tfc:wild_fruits')
 	event.add('ad_astra:destroyed_in_space', '#minecraft:saplings')

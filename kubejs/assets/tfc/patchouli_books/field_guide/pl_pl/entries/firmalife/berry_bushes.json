@@ -1,12 +1,11 @@
 {
-  "__comment__": "This file was automatically created by mcresources",
   "name": "Krzew owocowe",
   "category": "tfc:firmalife",
   "icon": "firmalife:plant/pineapple_bush",
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "Firmalife adds some berry bushes. For information on wild grape bushes, see $(l:firmalife/wine)winemaking$()."
+      "text": "Firmalife dodaje kilka krzewów jagodowych. Aby uzyskać informacje o dzikich winogronach, zobacz $(l:firmalife/wino)winarstwo$()."
     },
     {
       "type": "patchouli:spotlight",

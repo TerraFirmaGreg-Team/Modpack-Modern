@@ -27,10 +27,10 @@ function registerSpeciesRecipes(event) {
 		'CBC',
 		'DED'
 	], {
-		A: '#forge:rods/steel',
+		A: '#forge:rods/wrought_iron',
 		B: 'minecraft:crossbow',
 		C: '#forge:small_gears/wrought_iron',
-		D: 'tfc:metal/chain/steel',
+		D: '#tfg:metal_chains',
 		E: 'create:hand_crank'
 	}).id('tfg:shaped/crankbow')
 
@@ -57,10 +57,14 @@ function registerSpeciesRecipes(event) {
 
 	event.shaped('species:harpoon', [
 		'A',
-		'B',
 		'B'
 	], {
-		A: 'tfc:metal/javelin_head/wrought_iron',
+		A: [
+			'tfc:metal/javelin_head/bronze', 
+			'tfc:metal/javelin_head/bismuth_bronze',
+			'tfc:metal/javelin_head/black_bronze', 
+			'tfc:metal/javelin_head/wrought_iron'
+		],
 		B: 'firmaciv:rope_coil'
 	}).id('tfg:shaped/harpoon')
 
@@ -168,12 +172,12 @@ function registerSpeciesRecipes(event) {
 
 	event.recipes.gtceu.macerator('tfg:werefang')
 		.itemInputs("species:werefang")
-		.itemOutputs("minecraft:bone_meal")
+		.itemOutputs("3x minecraft:bone_meal")
 		.duration(50)
 		.EUt(2)
 		.category(GTRecipeCategories.MACERATOR_RECYCLING);
 
-	event.recipes.tfc.quern("minecraft:bone_meal", "species:werefang")
+	event.recipes.tfc.quern("3x minecraft:bone_meal", "species:werefang")
 		.id("tfg:quern/werefang")
 
 	event.recipes.gtceu.macerator('tfg:bone_spike')

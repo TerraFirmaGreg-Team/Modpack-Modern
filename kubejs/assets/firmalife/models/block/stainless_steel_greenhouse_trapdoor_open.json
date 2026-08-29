@@ -1,0 +1,8 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "parent": "block/vex_template_orientable_trapdoor_open",
+  "textures": {
+    "top": "firmalife:block/greenhouse/stainless_steel_glass",
+	"sides": "firmalife:block/greenhouse/stainless_steel_trapdoor_sides"
+  }
+}

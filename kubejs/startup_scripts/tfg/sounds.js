@@ -3,8 +3,6 @@
 
 function registerTFGSounds(event) {
 
-    event.create('tfg:ambient.upper_nether_lush.loop')
-    event.create('tfg:ambient.upper_nether_cave.loop')
     event.create('tfg:ambient.upper_nether.additions')
     event.create('tfg:ambient.upper_nether.mood')
     event.create('tfg:ambient.lower_nether.loop')

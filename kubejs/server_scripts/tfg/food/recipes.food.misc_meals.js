@@ -53,7 +53,7 @@ function registerTFGMiscMealFoodRecipes(event) {
 		fluidInputs: ['tfg:brown_gravy 50'],
 		itemOutputs: ['2x tfg:food/poutine'],
 		itemOutputProvider: TFC.isp.of('2x tfg:food/poutine').simpleModifier('tfg:add_bowl').meal(
-            (food) => food.hunger(5).water(5).saturation(1).decayModifier(1).grain(1).protein(0.5).dairy(1.5),
+            (food) => food.hunger(5).water(5).saturation(1).decayModifier(1).grain(1).protein(0.5).dairy(1.5).warming(5),
 			[(portion) => portion.nutrientModifier(0.8).saturationModifier(1)]
 		)
 	});

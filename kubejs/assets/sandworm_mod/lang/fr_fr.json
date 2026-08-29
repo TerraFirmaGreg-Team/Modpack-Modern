@@ -4,5 +4,8 @@
 	"entity.sandworm_mod.worm_chain": "Vers des sables",
 	"entity.sandworm_mod.worm_head_segment": "Tête de vers des sables",
 	"entity.sandworm_mod.worm_segment": "Corps de vers des sables",
-	"item.sandworm_mod.sandworm_tooth": "Dent de vers des sables"
+	"item.sandworm_mod.sandworm_tooth": "Dent de vers des sables",
+	"msg.sandworm_mod.spawn": "§4IL ARRIVE !!!",
+	"msg.sandworm_mod.stage_1": "§eLe ver des sables te sent...",
+	"msg.sandworm_mod.stage_2": "§cLe ver des sables va bientôt s'éveiller !"
 }

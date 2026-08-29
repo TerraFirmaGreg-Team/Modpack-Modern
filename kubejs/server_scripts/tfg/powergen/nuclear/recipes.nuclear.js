@@ -5,7 +5,7 @@ function registerTFGNuclearRecipes(event) {
 	// Fission blocks
 
 	event.recipes.gtceu.assembler('tfg:redstone_port')
-		.itemInputs('gtceu:ev_machine_hull', 'gtceu:activity_detector_cover')
+		.itemInputs('gtceu:atomic_casing', 'gtceu:activity_detector_cover')
 		.itemOutputs('deafission:redstone_port')
 		.duration(20*30)
 		.circuit(1)
@@ -1219,8 +1219,8 @@ function registerTFGNuclearRecipes(event) {
 		.inputFluids(Fluid.of('gtceu:ethanol', 2000))
 		.inputFluids(Fluid.of('gtceu:toluene', 3000))
 		.itemOutputs('8x tfg:organic_stabilizer_dust')
-		.duration(20 * 5)
-		.EUt(GTValues.VA[GTValues.IV])
+		.duration(20 * 120)
+		.EUt(GTValues.VA[GTValues.MV])
 
 	event.recipes.gtceu.chemical_reactor('tfg:sodium_fluoride')
 		.itemInputs('#forge:dusts/sodium')
@@ -1298,6 +1298,12 @@ function registerTFGNuclearRecipes(event) {
 		.EUt(GTValues.VA[GTValues.MV])
 	event.recipes.gtceu.distillery('tfg:linolenic_from_peanut')
 		.inputFluids(Fluid.of('tfg:peanut_oil', 1000))
+		.outputFluids(Fluid.of('tfg:linolenic_acid', 10))
+		.circuit(2)
+		.duration(100)
+		.EUt(GTValues.VA[GTValues.MV])
+	event.recipes.gtceu.distillery('tfg:linolenic_from_palm')
+		.inputFluids(Fluid.of('tfg:palm_oil', 1000))
 		.outputFluids(Fluid.of('tfg:linolenic_acid', 10))
 		.circuit(2)
 		.duration(100)
@@ -1422,8 +1428,8 @@ function registerTFGNuclearRecipes(event) {
 		.inputFluids(Fluid.of('gtceu:carbon_dioxide', 1000))
 		.outputFluids(Fluid.of('tfg:supercritical_co2', 10))
 		.circuit(1)
-		.duration(20*58)
-		.EUt(GTValues.VA[GTValues.HV])
+		.duration(20*30)
+		.EUt(GTValues.VA[GTValues.LV])
 
 	event.recipes.gtceu.chemical_reactor('tfg:ticl_doped')
 		.inputFluids(Fluid.of('gtceu:titanium_tetrachloride', 1000), Fluid.of('tfg:supercritical_co2', 1000))

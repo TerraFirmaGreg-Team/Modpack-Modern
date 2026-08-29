@@ -5,7 +5,7 @@ function registerTFGSupportBlocks(event) {
 	event.create(`tfg:aeronos_support`, 'tfc:support')
 		.textureAll(`ad_astra:block/aeronos_cap`)
 		.horizontal(horizontal => {
-			horizontal.textureAll(`ad_astra:block/aeronos_stem`)
+			horizontal.textureAll(`ad_astra:block/stripped_aeronos_stem`)
 			horizontal.soundType('wood')
 			horizontal.hardness(2)
 			horizontal.resistance(2)
@@ -23,7 +23,7 @@ function registerTFGSupportBlocks(event) {
 	event.create(`tfg:strophar_support`, 'tfc:support')
 		.textureAll(`ad_astra:block/strophar_cap`)
 		.horizontal(horizontal => {
-			horizontal.textureAll(`ad_astra:block/strophar_stem`)
+			horizontal.textureAll(`ad_astra:block/stripped_strophar_stem`)
 			horizontal.soundType('wood')
 			horizontal.hardness(2)
 			horizontal.resistance(2)

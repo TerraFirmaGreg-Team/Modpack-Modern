@@ -1,5 +1,4 @@
 {
-  "__comment__": "This file was automatically created by mcresources",
   "name": "Minérios, Metal e Fundição",
   "category": "tfc:getting_started",
   "icon": "tfc:ore/normal_native_copper",
@@ -73,15 +72,15 @@
     },
     {
       "type": "patchouli:crafting",
-      "recipe": "tfchotornot:crafting/tongs/wood",
-      "text": "Cuidado, o vaso estará quente! Fabrique um $(thing)Tenaz de Madeira$() com dois gravetos e uma faca e coloque-o na sua mão secundária para segurar o vaso quente com segurança."
+      "text": "Cuidado, o vaso estará quente! Fabrique um $(thing)Tenaz de Madeira$() com dois gravetos e uma faca e coloque-o na sua mão secundária para segurar o vaso quente com segurança.",
+      "recipe": "tfchotornot:crafting/tongs/wood"
     },
     {
       "type": "patchouli:image",
+      "text": "Hold the vessel and $(item)$(k:key.use)$() to open the $(thing)Casting$() interface.",
       "images": [
         "tfc:textures/gui/book/gui/casting.png"
       ],
-      "text": "Hold the vessel and $(item)$(k:key.use)$() to open the $(thing)Casting$() interface.",
       "border": false
     },
     {

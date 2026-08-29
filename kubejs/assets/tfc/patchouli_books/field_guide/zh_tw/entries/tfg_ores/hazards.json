@@ -20,7 +20,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "預防與治療",
-			"text": "$(li)$(l:tfg_ores/hazards#rocks)石頭？$()$()\n$(li)$(l:tfg_ores/hazards#containers)容器$()\n$(li)$(l:tfg_ores/hazards#mask)口罩$()\n$(li)$(l:tfg_ores/hazards#gloves)橡膠手套$()\n$(li)$(l:tfg_ores/hazards#hazmat)防護服$()\n$(li)$(l:tfg_ores/hazards#medicine)藥片、藥丸與藥膏$()\n$(li)$(l:tfg_ores/hazards#rad_away)消輻寧™藥片$()\n$(li)$(l:tfg_ores/hazards#respawn)不願設想的方法……$()"
+			"text": "$(li)$(l:tfg_ores/hazards#rocks)石頭？$()$()\n$(li)$(l:tfg_ores/hazards#containers)容器$()\n$(li)$(l:tfg_ores/hazards#mask)口罩$()\n$(li)$(l:tfg_ores/hazards#gloves)橡膠手套$()\n$(li)$(l:tfg_ores/hazards#hazmat)防護服$()\n$(li)$(l:tfg_ores/hazards#medicine)藥片、膠囊與藥膏$()\n$(li)$(l:tfg_ores/hazards#rad_away)消輻寧™藥片$()\n$(li)$(l:tfg_ores/hazards#respawn)安心地去吧...$()"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -87,7 +87,7 @@
 				"tag": "tfg:medicine"
 			},
 			"anchor": "medicine",
-			"text": "遭受危險物質的危害時，透過一些$(thing)藥物$()可以幫助恢復。$(br2)基礎 $(thing)藥片$() 是最原始且容易製作，但大多都有$(item)副作用$()。 $(thing)藥丸$() 和 $(thing)藥膏$() 效果更好，副作用更少，但製作它們需要 $(thing)LV設備$() 和更高級的材料。"
+			"text": "受危險物質危害時，透過$(thing)藥物$()治療。原始又容易製作的是$(br2)基礎 $(thing)藥片$()，但大多都有$(item)副作用$()。 $(thing)膠囊$()與$(thing)藥膏$()更強效，副作用也更少，但需要$(thing)LV設備$()和更高級的材料才能製作。"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -135,16 +135,16 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "致癌物",
+			"title": "Carcinogens",
 			"item": "gtceu:benzene_bucket",
-			"anchor": "致癌物",
+			"anchor": "Carcinogens",
 			"text": "$(thing)致癌物$()是導致 $(item)癌症$() 的物質。包括 $(thing)鉻粉$()以及部分有機化合物，例如$(thing)苯及其產物$()。$(thing)致癌物$()$(item) 不會主動消失$()，但在實際造成危害前會出現大量警告。一開始會 $(item)虛弱$() ，接著是 $(item)飢餓$() ，再來是 $(item)緩慢$() ，最後后是$(item)挖掘疲勞$() 。當累積足夠的曝露量時，才會導致 $(item)死亡$()。"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"title": "致癌物",
 			"item": "gtceu:chromium_dust",
-			"anchor": "致癌物",
+			"anchor": "Carcinogens",
 			"text": "$(l:tfg_ores/hazards#mask)口罩$()可以防止吸入有害物質，而$(l:tfg_ores/hazards#gloves)手套$()可以防止接觸$(thing)鉻粉$()。$(br2)$(l:tfg_ores/hazards#hazmat)防護服$()可以同时防護兩者。$(br2)在嚴重暴露的情况下，建議服用一些$(l:tfg_ores/hazards#medicine)藥物$()以 $(thing)預防$() 任何可能的危害。"
 		},
 		{
@@ -156,9 +156,9 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "刺激",
+			"title": "Irritants",
 			"item": "gtceu:chromite_dust",
-			"anchor": "刺激",
+			"anchor": "Irritants",
 			"text": "$(thing)刺激物$()是由吸入$(thing)甲酸胺$()或接觸$(thing)鉻鐵礦粉$()所引起。短暫接觸導致 $(item)虛弱$()，但長時間忽略，則會引發 $(item)隨機造成危害$()。$(br2)$(l:tfg_ores/hazards#mask)口罩$()可以防止吸入，而$(l:tfg_ores/hazards#gloves)手套$()可以防止直接接觸。$(br2)$(l:tfg_ores/hazards#hazmat)防護服$()可以同时防護兩者。"
 		},
 		{
@@ -193,7 +193,7 @@
 			"type": "patchouli:spotlight",
 			"title": "放射性物質",
 			"item": "gtceu:plutonium_ingot",
-			"text": "只有$(l:tfg_ores/hazards#hazmat)防護服$()以及部份高級盔甲能提供全面的輻射防護。$(br2)遭受輻射，只有$(l:tfg_ores/hazards#rad_away)消輻寧™藥片$()可以治療你。"
+			"text": "只有$(l:tfg_ores/hazards#hazmat)防護服$()與部份高級盔甲能完全抵禦輻射。$(br2)只有$(l:tfg_ores/hazards#rad_away)消輻寧™藥片$()可以治療輻射。"
 		},
 		{
 			"type": "patchouli:spotlight",

@@ -1,0 +1,12 @@
+{
+  "ingredient": {
+    "item": "firmalife:food/sugar_cookie"
+  },
+  "category": "other",
+  "hunger": 4,
+  "saturation": 0.5,
+  "decay_modifier": 4.5,
+  "grain": 0.8,
+  "dairy": 0.1,
+  "sugary": 3
+}

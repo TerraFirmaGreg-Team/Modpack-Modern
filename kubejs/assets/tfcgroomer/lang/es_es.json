@@ -1,0 +1,18 @@
+{
+	"block.tfcgroomer.bismuth_bronze_grooming_station": "Comedero de  bronce de bismuto",
+	"block.tfcgroomer.black_bronze_grooming_station": "Comedero de bronce negro",
+	"block.tfcgroomer.black_steel_grooming_station": "Comedero de acero negro",
+	"block.tfcgroomer.blue_steel_grooming_station": "Comedero de acero azul",
+	"block.tfcgroomer.bronze_grooming_station": "Comedero de bronce",
+	"block.tfcgroomer.copper_grooming_station": "Comedero de cobre",
+	"block.tfcgroomer.grooming_station": "Estación de retocados",
+	"block.tfcgroomer.red_steel_grooming_station": "Comedero de acero rojo",
+	"block.tfcgroomer.steel_grooming_station": "Comedero de acero",
+	"block.tfcgroomer.wrought_iron_grooming_station": "Comedero de hierro",
+	"config.jade.plugin_tfcgroomer.grooming_station": "Estación de retocados",
+	"gui.tfcgroomer.enable_breeding": "Permitir la crianza",
+	"tfcgroomer.grooming_station.range": "Rango: %s",
+	"tfcgroomer.tooltip.breedDisabled": "No permitir la crianza",
+	"tfcgroomer.tooltip.breedEnabled": "Permitir la crianza",
+	"tfcgroomer.tooltip.toggleBreeding": "Activar la crianza"
+}

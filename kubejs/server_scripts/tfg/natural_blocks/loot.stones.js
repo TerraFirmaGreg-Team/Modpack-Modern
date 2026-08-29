@@ -90,19 +90,11 @@ function registerTFGRockLoots(event) {
 	})
 
 	// Other rocks
-	event.addBlockLootModifier('minecraft:gilded_blackstone')
-		.matchMainHand('#forge:tools/hammers')
-		.removeLoot(ItemFilter.ALWAYS_TRUE)
-		.addSequenceLoot(
-			LootEntry.of('tfg:rock/cobble_blackstone'),
-			LootEntry.of('tfc:powder/native_gold')
-		)
-
 	event.addBlockLootModifier('tfg:halite')
 		.removeLoot(ItemFilter.ALWAYS_TRUE)
 		.addWeightedLoot([
-			Item.of('gtceu:rich_raw_salt').withChance(20),
-			Item.of('gtceu:raw_salt').withChance(60),
-			Item.of('gtceu:poor_raw_salt').withChance(30)
+			Item.of('gtceu:poor_raw_salt').withChance(40),
+			Item.of('gtceu:poor_raw_rock_salt').withChance(10),
+			Item.of('tfc:powder/salt').withChance(50)
 		])
 }

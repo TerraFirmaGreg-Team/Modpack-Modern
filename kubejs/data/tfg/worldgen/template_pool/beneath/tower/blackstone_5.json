@@ -1,0 +1,15 @@
+{
+	"name": "tfg:beneath/tower/blackstone_5",
+	"fallback": "minecraft:empty",
+	"elements": [
+		{
+			"weight": 40,
+			"element": {
+				"location": "tfg:beneath/tower/5/blackstone",
+				"processors": "tfg:beneath/tower/5/blackstone",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		}
+	]
+}

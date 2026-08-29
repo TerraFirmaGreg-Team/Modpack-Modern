@@ -1,0 +1,77 @@
+{
+  "name": "Sprzęty kuchenne",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:vat",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l:firmalife/ovens)Ovens$() have a number of devices that interact with them, that extend their functionality. This is because ovens are modular in nature."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/oven_hopper",
+      "text": "The $(thing)Oven Hopper$() will input logs into any Bottom Oven that it is facing. It holds 16 logs (4 stacks of 4, like a log pile), and its inventory is fed by dropping items in the top. It can also be fed via automation from other mods."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/ashtray",
+      "text": "The $(thing)Ashtray$() collects $(thing)Wood Ash$() when placed below a $(thing)Bottom Oven Block$(). There is a 0.5 chance it gains ash when fuel is consumed. Ash is extracted with $(item)$(k:key.use)$() and inserted via attacking it."
+    },
+    {
+      "type": "patchouli:crafting",
+      "anchor": "vat",
+      "recipe": "firmalife:crafting/vat",
+      "text": "The $(thing)Vat$() produces some select boiling recipes in bulk. It has one slot for items, and 10,000mB of fluid space, similar to a barrel."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "For example, the vat can be used to make $(thing)Olive Oil Water$() using a ratio of 1 Olive Paste to 200 mB Water. To use a vat, $(item)$(k:key.use)$() it with fluids and items to add them to the inventory. With an empty hand and $(item)$(k:key.sneak)$() held, click to seal and unseal the vat. A vat will not boil until it is sealed."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Vats should be placed on the block above a $(thing)Bottom Oven$(). If the vat would overflow on completion of the recipe, it will not boil, so be sure not to overfill it -- especially with recipes that produce more fluid than they consume! Vats can be opened and closed with $(thing)Redstone$()."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "Y"
+          ],
+          [
+            "0"
+          ]
+        ],
+        "mapping": {
+          "X": "firmalife:vat",
+          "Y": "firmalife:cured_oven_bottom"
+        }
+      },
+      "name": "",
+      "text": "",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/jarring_station",
+      "text": "The $(thing)Jarring Station$() is used to fill jars from the vat. The jarring station has a spout on one side that should point to the station."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Using the Vat, Sugar Water can be made by adding sweetener to water. Then, adding fruit causes $(thing)Fruity Fluid$() to be made. Clicking it with an $(thing)Empty Jar With Lid$() will fill it. Be careful: trying to pipe or transport fruity fluid through too many transfers could ruin it!"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "With $(item)$(k:key.use)$(), add empty jars with lids to the jarring station. When it detects fruity fluid, it will automatically fill the jars with $(thing)Jam$() and seal them, requiring 500 mB of fruity fluid per jar."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Pots and Grills from TFC can be placed on top of a $(thing)Bottom Oven$(). These devices will get heat automatically from the bottom oven. The pot is only able to be used for making soup. It cannot execute regular pot recipes."
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 15
+}

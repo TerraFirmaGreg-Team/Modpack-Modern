@@ -14,6 +14,7 @@ on:
       - 'CHANGELOG.md'
       - 'pakku-lock.json'
       - 'pakku.json'
+      - '.github/workflows/build.yml'
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -351,15 +352,23 @@ jobs:
           sed -i -e "s/MINECRAFT_VERSION/${MINECRAFT_VERSION}/g" .pakku/server-overrides/forge-auto-install.txt
           sed -i -e "s/MINECRAFT_VERSION/${MINECRAFT_VERSION}/g" .pakku/docker-overrides/docker-compose.yml
 
-          cp -vf ./config/fancymenu/assets/icons/icon32x32.png .pakku/server-overrides/server-icon.png
+          cp -vf ./config/fancymenu/assets/icons/icon64x64.png .pakku/server-overrides/server-icon.png
 
       - name: Cache Pakku
-        uses: actions/cache@v5
+        uses: actions/cache@v6
         id: cache
         with:
           path: build/.cache
           key: pakku-cache-${{ hashFiles('pakku-lock.json') }}
           restore-keys: pakku-cache-
+
+      - name: Cache Mods
+        uses: actions/cache@v6
+        id: cache_mods
+        with:
+          path: mods
+          key: mods-${{ hashFiles('pakku-lock.json') }}
+          restore-keys: mods-
 
       - name: Export Modpack
         run: |
@@ -507,7 +516,7 @@ jobs:
 
       - name: Create release
         id: release
-        uses: softprops/action-gh-release@v3.0.1
+        uses: softprops/action-gh-release@v3.0.2
         with:
           name: ${{ needs.info.outputs.project_version }}
           tag_name: ${{ needs.info.outputs.project_version }}
@@ -566,8 +575,8 @@ jobs:
           project-id: ${{ vars.CURSEFORGE_ID }}
           display-name: ${{ needs.info.outputs.project_full_name }}
           modpack-path: ${{ needs.info.outputs.project_full_name }}-curseforge.zip
-          server-display-name: ${{ needs.info.outputs.project_full_name }}-serverpack
-          modpack-server-path: ${{ needs.info.outputs.project_full_name }}-serverpack.zip
+          # server-display-name: ${{ needs.info.outputs.project_full_name }}-serverpack
+          # modpack-server-path: ${{ needs.info.outputs.project_full_name }}-serverpack.zip
           changelog: |
             ${{ needs.info.outputs.changelog }}
             ${{ needs.info.outputs.diff }}
@@ -629,7 +638,7 @@ jobs:
         uses: cisox/read-more-action@v1.0.2
         with:
           text: '${{ needs.info.outputs.changelog }}'
-          max_chars: '1450'
+          max_chars: '1400'
 
       - name: Send Discord message
         uses: hugoalh/send-discord-webhook-ghaction@v7.0.5
@@ -643,7 +652,7 @@ jobs:
             **Release Type**: `${{ needs.info.outputs.release_type }}`
             **Game Version**: `${{ needs.info.outputs.mc_version }}`
 
-            [CurseForge](https://www.curseforge.com/minecraft/modpacks/terrafirmagreg-modern/files/${{ needs.release-curseforge.outputs.id }}) • [GitHub](${{ needs.release-github.outputs.url }}) • [Issues](https://github.com/${{ github.repository }}/issues)
+            [CurseForge](https://www.curseforge.com/minecraft/modpacks/terrafirmagreg-modern/files/${{ needs.release-curseforge.outputs.id }}) • [ServerPack](https://github.com/${{ github.repository }}/releases/download/${{ needs.info.outputs.project_version }}/${{ needs.info.outputs.project_full_name }}-serverpack.zip) • [GitHub](${{ needs.release-github.outputs.url }}) • [Issues](https://github.com/${{ github.repository }}/issues)
             ```markdown
             ${{ steps.truncated.outputs.text  }}
             - ...```

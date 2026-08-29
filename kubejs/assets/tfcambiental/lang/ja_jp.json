@@ -34,7 +34,6 @@
 	"tfcambiental.message.is_outside": "ここは室外だ",
 	"tfcambiental.message.is_outside_alt": "你的内部在外面",
 	"tfcambiental.tooltip.insulation": "断熱値:%s",
-	"tfcambiental.tooltip.snowshoes": "雪に埋まるのを防ぎます",
 	"tfcambiental.tooltip.sun_protection": "直射日光を防ぐ",
-	"tfcambiental.tooltip.warmth": "保温値:%s"
+	"tfcambiental.tooltip.warmth": "保温値: %s℃"
 }

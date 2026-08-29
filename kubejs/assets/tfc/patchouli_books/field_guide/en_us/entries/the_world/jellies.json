@@ -1,0 +1,123 @@
+{
+	"name": "Jellies",
+	"category": "tfc:the_world",
+	"icon": "jellies:jellie/slime_ball/plant",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "$(thing)Jellies$() are friendly blobs of slime that appear on various planets and environments. $(br2)They have a variety of uses, but most commonly, they produce type-specific $(thing)slime balls$(). $(br2)Did I mention they are very friendly? If you raise their familiarity high enough, they will become pets and happily follow you around!"
+		},
+		{
+			"type": "patchouli:image",
+			"images": [
+				"tfg:textures/gui/field_guide/jellies.png"
+			],
+			"text": "$(thing)Jellies$() are hermaphroditic and can reproduce with any other $(thing)jellie$()!",
+			"border": true
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Produce",
+			"text": "$(thing)Jellies$() are quite picky and will refuse to produce anything outside of their natural habitat; however, they will breed just fine in any environment. $(br2)They also dislike machines and will only give their produce when fed manually by a player.$(br2)$(#B0B0B0)$(o)Or maybe they just want attention..."
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "tfg:shaped/jellies_nutritional_mash",
+			"text": "$(thing)Nutritional Mash$() is the main food of all $(thing)jellies$(), primarily made from grains, fruits, and some dimension-specific ingredients. $(br2)$(#B0B0B0)$(o)Why is it moving..."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "jellies:herbal",
+			"scale": 1.0,
+			"name": "Herbal Jellie",
+			"text": "$(thing)Herbal$() jellies spawn on Earth in warm forests, with $(l:the_world/climate#temperature)temperature$() between 1-10°C and $(l:the_world/climate#rainfall)rainfall$() of at least 150mm. They produce $(thing)Herbal Slime Balls$()."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "jellies:phosphorum",
+			"scale": 1.0,
+			"name": "Phosphorum Jellie",
+			"text": "$(thing)Phosphorum$() jellies spawn on Earth in cold forests, with $(l:the_world/climate#temperature)temperature$() between -10-0°C and $(l:the_world/climate#rainfall)rainfall$() of at least 150mm. They produce $(thing)Phosphorum Slime Balls$() and additionally eat $(thing)rotten flesh$()."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "jellies:rock",
+			"scale": 1.0,
+			"name": "Rock Jellie",
+			"text": "$(thing)Rock$() jellies rarely spawn on Earth in caves of mountainous biomes. Currently, they do nothing."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "jellies:spring",
+			"scale": 1.0,
+			"name": "Spring Jellie",
+			"text": "$(thing)Spring$() jellies spawn in Beneath's geothermal spring biome. They produce $(thing)Spring Slime Balls$()."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "jellies:plant",
+			"scale": 1.0,
+			"name": "Plant Jellie",
+			"text": "$(thing)Plant$() jellies spawn in Beneath's muggy bog and thorny brambles biomes. They produce $(thing)Plant Slime Balls$()."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "jellies:glowberry",
+			"scale": 1.0,
+			"name": "Glowberry Jellie",
+			"text": "$(thing)Glowberry$() jellies spawn in Beneath's lush hollow biome. They produce $(thing)Glowberry Slime Balls$()."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "jellies:biotite",
+			"scale": 1.0,
+			"name": "Biotite Jellie",
+			"text": "$(thing)Biotite$() jellies spawn at the bottom of the Beneath. They produce $(thing)Biotite Slime Balls$()."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "jellies:ice",
+			"scale": 1.0,
+			"name": "Ice Jellie",
+			"text": "$(thing)Ice$() jellies spawn in Beneath's salt caves. They passively reduce player's temperature by 10°C."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "jellies:lava",
+			"scale": 1.0,
+			"name": "Lava Jellie",
+			"text": "$(thing)Lava$() jellies spawn at the bottom of the Beneath. They passively increase player's temperature by 10°C."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "jellies:latex",
+			"scale": 1.0,
+			"name": "Latex Jellie",
+			"text": "$(thing)Latex$() jellies are made by breeding $(thing)Lava$() and $(thing)Plant$() jellies. They produce $(thing)Latex Slime Balls$()."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "jellies:certus",
+			"scale": 1.0,
+			"name": "Certus Jellie",
+			"text": "$(thing)Certus$() jellies spawn in Moon's asurine biomes. They produce $(thing)Large Certus Quartz Buds$()."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "jellies:pentetic",
+			"scale": 1.0,
+			"name": "Pentetic Jellie",
+			"text": "$(thing)Pentetic$() jellies spawn in Mars' martian deep desert and martian mountain biomes. They passively absorbs radiation from players."
+		},
+		{
+			"type": "patchouli:image",
+			"images": [
+				"tfg:textures/gui/field_guide/jellies_secret.png"
+			],
+			"text": "$(#B0B0B0)$(o)The following pages are too faded to be read...$()",
+			"border": false
+		}
+	],
+	"read_by_default": true,
+	"sortnum": 7
+}

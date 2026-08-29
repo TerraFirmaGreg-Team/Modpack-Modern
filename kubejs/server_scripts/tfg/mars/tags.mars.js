@@ -17,9 +17,7 @@ function registerTFGMarsItemTags(event) {
 
 	event.add('tfg:mineral_rich_wool', 'tfg:wraptor_wool')
 	event.add('tfg:mineral_rich_wool', 'tfg:sniffer_wool')
-
-	event.add('buildinggadgets2:deny', 'tfg:spice')
-
+	
 	// these are log tags
 	event.remove('ad_astra:aeronos_caps', 'ad_astra:aeronos_cap')
 	event.remove('ad_astra:strophar_caps', 'ad_astra:strophar_cap')
@@ -55,7 +53,9 @@ function registerTFGMarsItemTags(event) {
 }
 
 function registerTFGMarsBlockTags(event) {
-
+	
+	// gtceu terminals has its blacklist in its config file
+	event.add('create:non_movable', 'tfg:spice')
 	event.add('buildinggadgets2:deny', 'tfg:spice')
 	event.add('ae2:blacklisted/spatial', 'tfg:spice')
 
@@ -341,7 +341,7 @@ function registerTFGMarsPlacedFeatures(event) {
 	event.add('tfg:mars_underground_decoration', "tfg:earth/geode/gypsum")
 	event.add('tfg:mars_underground_decoration', "tfg:earth/geode/opal")
 	event.add('tfg:mars_underground_decoration', "tfg:earth/geode/pyrite")
-	event.add('tfg:mars_underground_decoration', "tfg:earth/geode/quartzite")
+	event.add('tfg:mars_underground_decoration', "tfg:earth/geode/red_garnet")
 
 	// Vegetation
 	event.add("tfg:mars_global_small_plants", "tfg:mars/tree/lucernia")

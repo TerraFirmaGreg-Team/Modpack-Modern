@@ -400,7 +400,6 @@
 	"block.createdeco.zinc_trapdoor": "Цинковый люк",
 	"block.createdeco.zinc_window": "Цинковое окно",
 	"block.createdeco.zinc_window_pane": "Цинковая оконная панель",
-	"item.createdeco.andesite_sheet": "Андезитовый лист",
 	"item.createdeco.brass_coin": "Латунная монета",
 	"item.createdeco.brass_coinstack": "Стопка латунных монет",
 	"item.createdeco.copper_coin": "Медная монета",
@@ -409,16 +408,10 @@
 	"item.createdeco.gold_coinstack": "Стопка золотых монет",
 	"item.createdeco.industrial_iron_coin": "Монета из стали",
 	"item.createdeco.industrial_iron_coinstack": "Стопка монет из стали",
-	"item.createdeco.industrial_iron_ingot": "Слиток промышленного железа",
-	"item.createdeco.industrial_iron_nugget": "Кусочек промышленного железа",
-	"item.createdeco.industrial_iron_sheet": "Лист промышленного железа",
 	"item.createdeco.iron_coin": "Монета из кованого железа",
 	"item.createdeco.iron_coinstack": "Стопка монет из кованого железа",
 	"item.createdeco.netherite_coin": "Монета из синей стали",
 	"item.createdeco.netherite_coinstack": "Стопка монет из синей стали",
-	"item.createdeco.netherite_nugget": "Кусочек незерита",
-	"item.createdeco.netherite_sheet": "Незеритовый лист",
 	"item.createdeco.zinc_coin": "Цинковая монета",
-	"item.createdeco.zinc_coinstack": "Стопка цинковых монет",
-	"item.createdeco.zinc_sheet": "Цинковый лист"
+	"item.createdeco.zinc_coinstack": "Стопка цинковых монет"
 }

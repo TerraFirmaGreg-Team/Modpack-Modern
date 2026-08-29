@@ -1,4 +1,13 @@
 {
+	"emixx.emixx.configuration.disabledCreativeModeTabs.manage": "Configurer...",
+	"emixx.emixx.configuration.disabledStackGroups.manage": "Configurer...",
+	"stackgroup.emixx.beds": "Beds",
+	"stackgroup.emixx.buckets": "Seaux",
+	"stackgroup.emixx.candles": "Candles",
+	"stackgroup.emixx.concretes": "Béton",
+	"stackgroup.emixx.glass_blocks": "Glass Blocks",
+	"stackgroup.emixx.raw_materials": "Matériaux bruts",
+	"stackgroup.emixx.stairs": "Escalier",
 	"stackgroup.emixx.tfg_anvils": "Enclumes",
 	"stackgroup.emixx.tfg_barrels": "Barrels",
 	"stackgroup.emixx.tfg_conductor_caps": "Casquette du Conducteur",
@@ -32,5 +41,6 @@
 	"stackgroup.emixx.tfg_sluices": "Sluices",
 	"stackgroup.emixx.tfg_toolboxes": "Toolboxes",
 	"stackgroup.emixx.tfg_tools_fishing_nets": "Filets de Pêche",
-	"stackgroup.emixx.tfg_tools_wrenches": "Clés à molette"
+	"stackgroup.emixx.tfg_tools_wrenches": "Clés à molette",
+	"stackgroup.emixx.wool": "Laine"
 }

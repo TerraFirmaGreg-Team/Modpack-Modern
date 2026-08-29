@@ -34,7 +34,6 @@
 	"tfcambiental.message.is_outside": "Вы снаружи",
 	"tfcambiental.message.is_outside_alt": "Вы находитесь снаружи помещения",
 	"tfcambiental.tooltip.insulation": "Термоизоляция: %s",
-	"tfcambiental.tooltip.snowshoes": "Больше не нужно тонуть в рыхлом снегу",
 	"tfcambiental.tooltip.sun_protection": "-20% нагрева от прямого воздействия солнца",
-	"tfcambiental.tooltip.warmth": "Терморегуляция: %s"
+	"tfcambiental.tooltip.warmth": "Терморегуляция: %s°C"
 }

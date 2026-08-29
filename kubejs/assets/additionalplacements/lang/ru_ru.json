@@ -5,6 +5,7 @@
 	"commands.ap_stairs_state_debug.wrong_block": "%s не является допустимым блоком. Это должны быть ступеньки с дополнительными состояниями.",
 	"key.additionalplacements.placement_toggle": "Переключить логику размещения",
 	"key.categories.additionalplacements": "Расширенное размещение",
+	"msg.additionalplacements.configurationerrors": "Обнаружены дополнительные ошибки конфигурации Additional Placement при попытке подключения к серверу",
 	"msg.additionalplacements.disconnected": "Конфликт в конфигурации расширенного размещения",
 	"msg.additionalplacements.errors.client": "Отказ на стороне клиента:",
 	"msg.additionalplacements.errors.server": "Отказ на стороне сервера:",

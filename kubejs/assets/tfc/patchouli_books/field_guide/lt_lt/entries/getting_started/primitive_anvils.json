@@ -1,12 +1,11 @@
 {
-  "__comment__": "This file was automatically created by mcresources",
   "name": "Primityvus priekalai",
   "category": "tfc:getting_started",
   "icon": "tfc:rock/anvil/granite",
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "Alternatyva įrankių liejimui ankstyvajame žaidime ir reikalavimas aukštesnio lygio metalams yra naudoti $(thing)priekalą$(). Priekalas yra blokas, kurį galima naudoti dviem skirtingiems vyksmams: $(l:mechanics/anvils#working)apdirbimas$() ir $(l:getting_started/primitive_anvils#welding)suvirinimas$(). Priekalas gali suvirinti dvigubas metalo plokštes, reikalingus norint sukurti kito lygio priekalą, kuris bus reikalingas norint apdirbti kitus daiktus iš to metalo."
+      "text": "Alternatyva įrankių liejimui ankstyvajame žaidime ir reikalavimas aukštesnio lygio metalams yra naudoti $(thing)priekalą$(). Priekalas yra blokas, kurį galima naudoti dviem skirtingiems vyksmams: $(l:mechanics/anvils#working)apdirbimas$() ir $(l:getting_started/primitive_anvils#welding)suvirinimas$(). Priekalas gali suvirinti dvigubus metalo liejinius, reikalingus norint sukurti kito lygio priekalą, kuris bus reikalingas norint apdirbti kitus daiktus iš to metalo."
     },
     {
       "type": "patchouli:text",

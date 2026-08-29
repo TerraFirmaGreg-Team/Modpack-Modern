@@ -1,0 +1,12 @@
+{
+	"processors": [
+		{
+			"processor_type": "lithostitched:block_swap",
+			"blocks": {
+				"minecraft:bricks": "minecraft:polished_blackstone_bricks",
+				"tfc:smooth_sandstone/red": "minecraft:deepslate_bricks",
+				"minecraft:brick_wall": "polished_blackstone_brick_wall"
+            }
+		}
+	]
+}

@@ -23,6 +23,7 @@ const registerFirmaLifeItemTags = (event) => {
     event.add('tfg:oven_tops', 'firmalife:cured_tile_oven_top')
     event.add('tfg:oven_tops', 'firmalife:cured_stone_oven_top')
 
+    event.add('firmalife:cellar_insulation', 'firmalife:stone_countertop')
 }
 
 const registerFirmaLifeBlockTags = (event) => {
@@ -46,6 +47,7 @@ const registerFirmaLifeBlockTags = (event) => {
 	greenhouse_tiers.forEach(tier => {
 		event.add('firmalife:always_valid_greenhouse_wall', `firmalife:${  tier  }_greenhouse_door`)
 		event.add('firmalife:always_valid_greenhouse_wall', `firmalife:${  tier  }_greenhouse_trapdoor`)
+		event.add('firmalife:always_valid_greenhouse_wall', `firmalife:${  tier  }_greenhouse_roof`)
 	})
 
     //Allows any block with the word "brick" in its id to be used as oven insulation.
@@ -71,6 +73,10 @@ const registerFirmaLifeBlockTags = (event) => {
     event.add('firmalife:bee_restoration_plants', 'tfg:plant/ramirezella')
     event.add('firmalife:bee_restoration_plants', 'tfg:plant/ramunda')
     event.add('firmalife:bee_restoration_plants', 'tfg:plant/yellow_saxifrage')
+    
+    // this countertop can only be made from sealed bricks
+    event.add('firmalife:cellar_insulation', 'firmalife:stone_countertop')
+    event.add('tfc:forge_insulation', 'firmalife:stone_countertop')
 }
 
 const registerFirmaLifeFluidTags = (event) => {
@@ -94,4 +100,9 @@ const registerFirmaLifeFluidTags = (event) => {
     event.add('firmalife:oils', 'gtceu:fish_oil')
     event.add('firmalife:oils', 'tfg:triglyceride_oil')
     event.add('firmalife:oils', 'tfg:peanut_oil')
+    event.add('firmalife:oils', 'tfg:palm_oil');
+
+    event.remove('tfc:milks', 'firmalife:coconut_milk');
+    event.remove('tfc:drinkables', 'firmalife:coconut_milk');
+    event.remove('tfc:any_drinkables', 'firmalife:coconut_milk');
 }

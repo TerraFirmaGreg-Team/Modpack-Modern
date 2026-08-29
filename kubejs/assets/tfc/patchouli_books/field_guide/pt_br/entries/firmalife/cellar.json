@@ -1,0 +1,33 @@
+{
+  "name": "Adegas",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:sealed_bricks",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "A $(thing)Adega$() é uma construção multibloco controlado por uma $(l:firmalife/climate_station)Estação Climática$(). O único requisito do multibloco de Adega é que ele seja uma área fechada, cercada por $(thing)Tijolos Selados$() ou $(thing)Portas de Tijolos Selados$() em todos os lados. A Estação Climática deve ser colocada no primeiro andar da adega, encostada em uma parede."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock_id": "firmalife:cellar",
+      "name": "Um Exemplo de Adega",
+      "text": "Esta é apenas uma das muitas adegas que você pode fazer!",
+      "enable_visualize": true
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/sealed_bricks",
+      "recipe2": "firmalife:crafting/sealed_door"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)Cera de Abelha$() é obtida da $(l:firmalife/beekeeping)Apicultura$().$(br)Adegas são usadas na $(l:firmalife/cheese#aging)Maturação de Queijo$()."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "A adega é usada para conservação de alimentos, por exemplo usando $(l:firmalife/food_shelves)Prateleiras de Comida$() e $(l:firmalife/hangers)Ganchos$(). A adega tem melhor desempenho em ambientes com temperaturas médias masi baixas para a conservação de alimentos. Abaixo de 0 graus, modificadores de deterioração funcionam um pouco melhor. Abaixo de -12 graus, eles têm um desempenho muito melhor."
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 3
+}

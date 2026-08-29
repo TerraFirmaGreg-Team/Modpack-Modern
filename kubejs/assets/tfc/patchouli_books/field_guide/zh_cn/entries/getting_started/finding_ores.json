@@ -1,5 +1,4 @@
 {
-  "__comment__": "This file was automatically created by mcresources",
   "name": "矿石、金属和铸造",
   "category": "tfc:getting_started",
   "icon": "tfc:ore/normal_native_copper",
@@ -73,15 +72,15 @@
     },
     {
       "type": "patchouli:crafting",
-      "recipe": "tfchotornot:crafting/tongs/wood",
-      "text": "小心，小缸现在非常烫！用两根木棍和一把刀制作$(thing)木钳子$()，装备在副手中，才能安全处理高温的小缸。"
+      "text": "小心，小缸现在非常烫！用两根木棍和一把刀制作$(thing)木钳子$()，装备在副手中，才能安全处理高温的小缸。",
+      "recipe": "tfchotornot:crafting/tongs/wood"
     },
     {
       "type": "patchouli:image",
+      "text": "手持小缸并按下$(item)$(k:key.use)$()来打开$(thing)铸造$()界面。",
       "images": [
         "tfc:textures/gui/book/gui/casting.png"
       ],
-      "text": "手持小缸并按下$(item)$(k:key.use)$()来打开$(thing)铸造$()界面。",
       "border": false
     },
     {

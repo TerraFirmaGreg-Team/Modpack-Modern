@@ -7,25 +7,22 @@
   "secret": false,
   "pages": [
     {
-      "Type": "patchouli:text",
+      "type": "patchouli:text",
       "text": "Voici l'$(thing)Index des veines$() pour $(item)Venus$(). Chaque veine contient des détails concernant sa rareté, sa densité, son type de veine, la hauteur à laquelle on la trouve, sa taille, dans quelle pierre elle se génère, et plus.",
-      "title": "Index des veines de Vénus",
-      "type": "patchouli:text"
+      "title": "Index des veines de Vénus"
     },
     {
-      "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/venus_vein_index#venus_manual_salt)Halite, Sylvite, Lépidolite...$()$()$(li)$(l:tfg_ores/venus_vein_index#venus_manual_sulfur)Sulfur, Pyrite, Sphalerite$()$()",
-      "type": "patchouli:text"
+      "type": "patchouli:text",
+      "text": "$(li)$(l:tfg_ores/venus_vein_index#venus_manual_salt)Halite, Sylvite, Lépidolite...$()$()$(li)$(l:tfg_ores/venus_vein_index#venus_manual_sulfur)Sulfur, Pyrite, Sphalerite$()$()"
     },
     {
-      "Type": "patchouli:text",
+      "type": "patchouli:text",
       "text": "$(thing)$(t:La chance qu'une veine se génère par chunk. Les valeurs plancher basses sont plus communes.)Rareté$(/t)$(): 1/30 chunks$(br)$(thing)$(t:Le pourcentage de blocs dans une veine qui sont des minerais et pas de la pierre. Un plus gros pourcentage indique plus de minerais.)Densité$(/t)$(): 20%$(br)$(thing)$(t:La forme d'une veine.)Type$(/t)$(): $(t:Large et plate)Veine disque$(/t)$(br)$(thing)$(t:Les valeurs de Y entre lesquelles la veine peut se générer.)Y$(/t)$(): 40 — 65$(br)$(thing)$(t:Le diamètre moyen de la veine)Taille$(/t)$(): 20$(br)$(thing)Hauteur$(): 6$(br)$(thing)$(t:Si la distance entre la surface et la veine et minerai est plus grande que cette valeur, la veine de minerai ne génèrera d'indicateurs surfaciques.)Profondeur max d'indicatifs$(/t)$(): 30$(br)$(thing)Biomes$(): Sans ordre$(br2)$(thing)Types de pierre$(): Andésite, Basalte, Dacite, Ignimbrite, Lamproïte, Rhyolite, Trachyte, Travertin",
       "title": "Halite, Sylvite, Lépidolite...",
-      "type": "patchouli:text",
       "anchor": "venus_manual_salt"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "Halite",
       "multiblock": {
         "mapping": {
@@ -41,11 +38,10 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Pourcentage$(): 80%$(br)$(thing)Source de$() : Sodium, Chlore$(br)$(thing)Formule$(): NaCl",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Pourcentage$(): 80%$(br)$(thing)Source de$() : Sodium, Chlore$(br)$(thing)Formule$(): NaCl"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "Sylvite",
       "multiblock": {
         "mapping": {
@@ -61,11 +57,10 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Pourcentage$(): 10%$(br)$(thing)Source de$() : Potassium, Chlore, Engrais$(br)$(thing)Formule$(): KCl",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Pourcentage$(): 10%$(br)$(thing)Source de$() : Potassium, Chlore, Engrais$(br)$(thing)Formule$(): KCl"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "Lépidolite",
       "multiblock": {
         "mapping": {
@@ -81,11 +76,10 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Pourcentage$(): 5%$(br)$(thing)Source de$() : Potassium, Aluminium, Fluor$(br)$(thing)Formule$(): KLi₃Al₄F₂O₁₀",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Pourcentage$(): 5%$(br)$(thing)Source de$() : Potassium, Aluminium, Fluor$(br)$(thing)Formule$(): KLi₃Al₄F₂O₁₀"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "Spodumène",
       "multiblock": {
         "mapping": {
@@ -101,23 +95,20 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Pourcentage$(): 5%$(br)$(thing)Source de$() : Lithium, Aluminium$(br)$(thing)Formule$(): LiAlSi₂O₆",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Pourcentage$(): 5%$(br)$(thing)Source de$() : Lithium, Aluminium$(br)$(thing)Formule$(): LiAlSi₂O₆"
     },
     {
-      "Type": "patchouli:empty",
-      "draw_filler": true,
-      "type": "patchouli:empty"
+      "type": "patchouli:empty",
+      "draw_filler": true
     },
     {
-      "Type": "patchouli:text",
+      "type": "patchouli:text",
       "text": "$(thing)$(t:La chance qu'une veine se génère par chunk. Les valeurs plancher basses sont plus communes.)Rareté$(/t)$(): 1/30 chunks$(br)$(thing)$(t:Le pourcentage de blocs dans une veine qui sont des minerais et pas de la pierre. Un plus gros pourcentage indique plus de minerais.)Densité$(/t)$(): 20%$(br)$(thing)$(t:La forme d'une veine.)Type$(/t)$(): $(t:Essentiellement ronde)Veine en grappe$(/t)$(br)$(thing)$(t:Les valeurs de Y entre lesquelles la veine peut se générer.)Y$(/t)$(): 40 — 65$(br)$(thing)$(t:Le diamètre moyen de la veine)Taille$(/t)$(): 20$(br)$(thing)$(t:Si la distance entre la surface et la veine et minerai est plus grande que cette valeur, la veine de minerai ne génèrera d'indicateurs surfaciques.)Profondeur max d'indicatifs$(/t)$(): 30$(br)$(thing)Biomes$(): Sans ordre$(br2)$(thing)Types de pierre$(): Andésite, Basalte, Dacite, Ignimbrite, Lamproïte, Rhyolite, Trachyte, Travertin",
       "title": "Sulfur, Pyrite, Sphalerite",
-      "type": "patchouli:text",
       "anchor": "venus_manual_sulfur"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "Sulfur",
       "multiblock": {
         "mapping": {
@@ -133,11 +124,10 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Pourcentage$(): 80%$(br)$(thing)Source de$() : Soufre$(br)$(thing)Formule$(): S",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Pourcentage$(): 80%$(br)$(thing)Source de$() : Soufre$(br)$(thing)Formule$(): S"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "Pyrite",
       "multiblock": {
         "mapping": {
@@ -153,11 +143,10 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Pourcentage$(): 15%$(br)$(thing)Fond en$() : Fonte$(br)$(thing)Formule$(): FeS₂",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Pourcentage$(): 15%$(br)$(thing)Fond en$() : Fonte$(br)$(thing)Formule$(): FeS₂"
     },
     {
-      "Type": "patchouli:multiblock",
+      "type": "patchouli:multiblock",
       "name": "Sphalerite",
       "multiblock": {
         "mapping": {
@@ -173,8 +162,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Pourcentage$(): 5%$(br)$(thing)Fond en$() : Zinc$(br)$(thing)Formule$(): ZnS",
-      "type": "patchouli:multiblock"
+      "text": "$(thing)Pourcentage$(): 5%$(br)$(thing)Fond en$() : Zinc$(br)$(thing)Formule$(): ZnS"
     }
   ],
   "sortnum": 9

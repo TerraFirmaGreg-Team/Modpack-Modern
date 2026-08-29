@@ -1,32 +1,32 @@
 {
-    "name": "Weaving",
+    "name": "Ткачество",
     "category": "tfc:mechanics",
     "icon": "tfc:spindle",
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "$(thing)Weaving$() is the process of combining different kinds of string into $(thing)Cloth$(). While the last step of weaving is done in a $(thing)Loom$(), some cloths such as $(thing)Wool$(), obtained from $(l:mechanics/animal_husbandry#wooly_animals)Wooly Animals$(), requires a $(thing)Spindle$() to obtain $(thing)Wool Yarn$() in order to be woven."
+            "text": "$(thing)Ткачество$() это процесс соединения различных видов нитей в $(thing)ткань$(). Хотя финальный этап ткачества проходит на $(thing)ткацком станке$(), некоторые ткани, такие как $(thing)шерсть$(), получаемая от $(l:mechanics/animal_husbandry#wooly_animals)шерстяных животных$(), требуют использования $(thing)веретена$() для получения $(thing)шерстяной нити$()."
         },
         {
             "type": "tfc:knapping_recipe",
             "recipe": "tfc:clay_knapping/spindle_head",
-            "text": "The $(thing)Unfired Spindle Head$() is knapped from clay. It can then be $(l:mechanics/heating)fired$() to make a $(thing)Spindle Head$(). To complete the spindle, craft it with a $(thing)Stick$()."
+            "text": "$(thing)Необожжённая головка веретена$() лепится из глины. Затем её можно $(l:mechanics/heating)обжечь$(), чтобы получить $(thing)головку для веретена$(). Чтобы полностью собрать веретено, соедините её с $(thing)палкой$()."
         },
         {
             "type": "patchouli:crafting",
             "recipe": "tfc:kjs/damage/shapeless/wool_yarn",
-            "text": "Crafting $(thing)Wool$() with a Spindle yields $(thing)Wool Yarn$()."
+            "text": "Соединение $(thing)шерсти$() с веретеном даёт $(thing)шерстяную нить$()."
         },
         {
             "type": "patchouli:crafting",
             "recipe": "tfc:crafting/wood/acacia_loom",
-            "text": "The loom is crafted from just $(thing)Lumber$() and a $(thing)Stick$()."
+            "text": "Ткацкий станок создаётся всего лишь из $(thing)досок$() и $(thing)палки$()."
         },
         {
             "type": "tfc:loom_recipe",
             "anchor": "wool_cloth",
             "recipe": "tfc:loom/wool_cloth",
-            "text": "The recipe for $(thing)Wool Cloth$() takes 16 $(thing)Wool Yarn$(). Adding to the loom is done with $(item)$(k:key.use)$(). Then, hold down $(item)$(k:key.use)$() to begin working the loom. When it is done, press $(item)$(k:key.use)$() to retrieve the item."
+            "text": "Рецепт изготовления $(thing)шерстяной ткани$() требует 16 единиц $(thing)шерстяной нити$(). Добавление материала в ткацкий станок выполняется нажатием $(item)$(k:key.use)$(). Затем удерживайте $(item)$(k:key.use)$(), чтобы запустить работу станка. Когда процесс завершится, нажмите $(item)$(k:key.use)$(), чтобы забрать готовый предмет."
         },
         {
             "type": "patchouli:image",
@@ -36,24 +36,24 @@
                 "tfc:textures/gui/book/tutorial/loom_working.png",
                 "tfc:textures/gui/book/tutorial/loom_done.png"
             ],
-            "text": "The stages of the loom working.",
+            "text": "Этапы работы ткацкого станка.",
             "border": true
         },
         {
             "type": "tfc:loom_recipe",
             "recipe": "tfc:loom/wool_block",
-            "text": "$(thing)Wool Cloth$() can be re-woven into $(thing)Wool Blocks$(). Wool blocks can be $(l:mechanics/dye)dyed$()."
+            "text": "$(thing)Шерстяную ткань$() можно повторно переплести в $(thing)блоки шерсти$(). Блоки шерсти можно $(l:mechanics/dye)окрасить$()."
         },
         {
             "type": "tfc:loom_recipe",
             "recipe": "tfc:loom/silk_cloth",
-            "text": "$(thing)Silk Cloth$() can be made in the loom out of $(thing)String$(). It can be used as a wool cloth substitute in some cases."
+            "text": "$(thing)Шёлковую ткань$() можно изготовить на ткацком станке из $(thing)шёлковых ниток$(). В некоторых случаях её можно использовать в качестве замены шерстяной ткани."
         },
         {
             "type": "tfc:loom_recipe",
             "anchor": "burlap_cloth",
             "recipe": "tfc:loom/burlap_cloth",
-            "text": "$(thing)Burlap Cloth$() does not have a use, but it can be made from $(l:mechanics/crops#jute)Jute Fiber$()."
+            "text": "$(thing)Джутовая ткань$() не имеет практического применения, но её можно изготовить из $(l:mechanics/crops#jute)джутового волокна$()."
         },
         {
             "type": "patchouli:crafting",

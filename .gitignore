@@ -38,6 +38,7 @@ config/better_quest_popup/completed-cache/
 config/AppliedEnergistics2/items.csv
 config/AppliedEnergistics2/CustomRecipes.cfg
 config/cherishedworlds/favorites.dat
+config/emi-accelerator/stack-cache.emic
 config/jei/worldSettings.cfg
 config/JustEnoughCalculation/record.json
 config/splash.properties
@@ -65,11 +66,14 @@ defaultconfigs/ftbranks/players.snbt
 
 # .minecraft
 !bansoukou/**.zip
-
+!kubejs/**/*.zip
+!tacz/**/*.zip
+!resourcepacks/*.zip
 
 /.bobby
 /.mixin.out
 /tacz/tacz_default_gun
+/tacz/.export-state.json
 /tacz_backup
 /moonlight-global-datapacks
 /classOut
