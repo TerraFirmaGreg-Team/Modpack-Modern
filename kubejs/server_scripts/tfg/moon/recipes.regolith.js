@@ -139,6 +139,14 @@ function registerTFGMoonRegolithRecipes(event) {
 		.itemOutputs('#forge:dusts/tin')
 		.duration(20 * 45)
 		.EUt(GTValues.VA[GTValues.MV])
+
+	event.recipes.gtceu.centrifuge('tfg:dusty_to_dust_certus_quartz')
+		.itemInputs('#forge:dusty_raw_materials/certus_quartz')
+		.chancedItemOutputLogic($ChanceLogic.XOR)
+		.chancedOutput('#forge:dusts/certus_quartz', 5000, 0)
+		.chancedOutput('#forge:dusts/zinc', 5000, 0)
+		.duration(20 * 45)
+		.EUt(GTValues.VA[GTValues.MV])
 	// #endregion
 
 }
