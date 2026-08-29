@@ -696,25 +696,21 @@
             ]
         },
         {
-            "pakku_id": "vDd4XicVJIvQjgqc",
+            "pakku_id": "qYI6jpxygAxuE88e",
             "type": "MOD",
-            "side": "BOTH",
             "slug": {
-                "curseforge": "advanced-loot-info",
-                "modrinth": "advanced-loot-info"
+                "curseforge": "advanced-core-info"
             },
             "name": {
-                "curseforge": "Advanced Loot Info",
-                "modrinth": "Advanced Loot Info"
+                "curseforge": "Advanced Core Info (ACI)"
             },
             "id": {
-                "curseforge": "1205426",
-                "modrinth": "PEPVViac"
+                "curseforge": "1661923"
             },
             "files": [
                 {
-                    "type": "modrinth",
-                    "file_name": "AdvancedLootInfo-forge-1.20.1-1.12.0.jar",
+                    "type": "curseforge",
+                    "file_name": "AdvancedCoreInfo-forge-1.20.1-1.1.0.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -723,20 +719,38 @@
                         "neoforge"
                     ],
                     "release_type": "beta",
-                    "url": "https://cdn.modrinth.com/data/PEPVViac/versions/AtTRskSV/AdvancedLootInfo-forge-1.20.1-1.12.0.jar",
-                    "id": "AtTRskSV",
-                    "parent_id": "PEPVViac",
+                    "url": "https://edge.forgecdn.net/files/8759/787/AdvancedCoreInfo-forge-1.20.1-1.1.0.jar",
+                    "id": "8759787",
+                    "parent_id": "1661923",
                     "hashes": {
-                        "sha512": "09a3441c3c44b14a9414f4c6e808cd9a2803e72222588173b6716be5391a49a48b64dee4b136f439f445f66c9e176c823bd881eaff13eaf0ec73a495ef5a0090",
-                        "sha1": "bbf7742a49e6cbe90c5d805538ec46ce223e6e0b"
+                        "sha1": "60678f23787cb57649f778892e81c20bf5d0b671",
+                        "md5": "30a96110e68511a64a756a6578ca9fc9"
                     },
                     "required_dependencies": [],
-                    "size": 663089,
-                    "date_published": "2026-05-30T09:52:08.822414Z"
-                },
+                    "size": 100711,
+                    "date_published": "2026-08-29T09:45:35.983Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "0gDsI3hLZ1T08cOm",
+            "pakku_links": [
+                "qYI6jpxygAxuE88e"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "advanced-loot-info"
+            },
+            "name": {
+                "curseforge": "Advanced Loot Info (ALI)"
+            },
+            "id": {
+                "curseforge": "1205426"
+            },
+            "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "AdvancedLootInfo-forge-1.20.1-1.12.0.jar",
+                    "file_name": "AdvancedLootInfo-forge-1.20.1-2.1.0.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -745,16 +759,18 @@
                         "neoforge"
                     ],
                     "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/8168/726/AdvancedLootInfo-forge-1.20.1-1.12.0.jar",
-                    "id": "8168726",
+                    "url": "https://edge.forgecdn.net/files/8759/801/AdvancedLootInfo-forge-1.20.1-2.1.0.jar",
+                    "id": "8759801",
                     "parent_id": "1205426",
                     "hashes": {
-                        "sha1": "bbf7742a49e6cbe90c5d805538ec46ce223e6e0b",
-                        "md5": "1aeeb501450801d76fe4d301c48ec794"
+                        "sha1": "b8fdbd732b3d16c894fd35528668758a65f8211e",
+                        "md5": "1378c52c9c93be282dc79a6762793274"
                     },
-                    "required_dependencies": [],
-                    "size": 663089,
-                    "date_published": "2026-05-30T09:52:12.560Z"
+                    "required_dependencies": [
+                        "1661923"
+                    ],
+                    "size": 626256,
+                    "date_published": "2026-08-29T09:46:56.243Z"
                 }
             ]
         },
@@ -1535,29 +1551,8 @@
             },
             "files": [
                 {
-                    "type": "curseforge",
-                    "file_name": "baguettelib-1.20.1-Forge-1.1.6.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7544/807/baguettelib-1.20.1-Forge-1.1.6.jar",
-                    "id": "7544807",
-                    "parent_id": "1264423",
-                    "hashes": {
-                        "sha1": "8d3c9551bbed4c2f2e8cb2b9a10d31bad4edb52d",
-                        "md5": "f729a7d6d7b28ef14e4e8461a5396566"
-                    },
-                    "required_dependencies": [],
-                    "size": 31898,
-                    "date_published": "2026-01-29T08:20:07.737Z"
-                },
-                {
                     "type": "modrinth",
-                    "file_name": "baguettelib-1.20.1-Forge-1.1.6.jar",
+                    "file_name": "baguettelib-1.20.1-Forge-2.0.5.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -1565,16 +1560,37 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/OfKzpbRU/versions/vLbvKK04/baguettelib-1.20.1-Forge-1.1.6.jar",
-                    "id": "vLbvKK04",
+                    "url": "https://cdn.modrinth.com/data/OfKzpbRU/versions/xI0K5Zke/baguettelib-1.20.1-Forge-2.0.5.jar",
+                    "id": "xI0K5Zke",
                     "parent_id": "OfKzpbRU",
                     "hashes": {
-                        "sha512": "ef0b00bfee28289e709ddc8f13eae5be0e67d95908b55e4ba2445e7282d1eb97a88ee36a3a92e3c3f15787424ae8f53bf0fab371282157195679f6349f73da31",
-                        "sha1": "8d3c9551bbed4c2f2e8cb2b9a10d31bad4edb52d"
+                        "sha512": "22e7ed8d0ef067003f12db9330749dd4833f9feaa16619373d8fcc6756257e89085bd3cae183bf1819342cd835656c263bafbafb78c349acd7d49cbeec6ade69",
+                        "sha1": "1e9e700ac26d6c6e2070a2ae64aacbdc19cd0fd0"
                     },
                     "required_dependencies": [],
-                    "size": 31898,
-                    "date_published": "2026-02-12T14:03:37.429532Z"
+                    "size": 63106,
+                    "date_published": "2026-08-28T16:44:36.806136Z"
+                },
+                {
+                    "type": "curseforge",
+                    "file_name": "baguettelib-1.20.1-Forge-2.0.5.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8755/289/baguettelib-1.20.1-Forge-2.0.5.jar",
+                    "id": "8755289",
+                    "parent_id": "1264423",
+                    "hashes": {
+                        "sha1": "1e9e700ac26d6c6e2070a2ae64aacbdc19cd0fd0",
+                        "md5": "504fe0af52327238f3f36214c3904092"
+                    },
+                    "required_dependencies": [],
+                    "size": 63106,
+                    "date_published": "2026-08-28T16:42:38.093Z"
                 }
             ]
         },
@@ -16093,7 +16109,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "TerraFirmaGreg-Core-Modern-0.9.21.jar",
+                    "file_name": "TerraFirmaGreg-Core-Modern-0.9.22.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -16101,23 +16117,23 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/lNttW2Xl/versions/cXjZqQd4/TerraFirmaGreg-Core-Modern-0.9.21.jar",
-                    "id": "cXjZqQd4",
+                    "url": "https://cdn.modrinth.com/data/lNttW2Xl/versions/u3ntHqTc/TerraFirmaGreg-Core-Modern-0.9.22.jar",
+                    "id": "u3ntHqTc",
                     "parent_id": "lNttW2Xl",
                     "hashes": {
-                        "sha512": "31ed284492cfabfba328026f8178a4b060597522e2f9e8456177e827741ff0d4e647198c85dd3505c6eeeee98310f8b2c79ad52d78a2b47c1d60bd682325e477",
-                        "sha1": "1645c49e95a4a1534dfc1a71f4402a852ec33fde"
+                        "sha512": "fe26dc66e9d621714548cb222f6beba824a9b3fecde48965728edf8c9a2c661a1002d10dcabdb35c3a5d5a4b5fcbd997accf64eac4ddf62fb31f281cac0f54a4",
+                        "sha1": "d240bc38ae168d126c9e6275e5b5038a6497f14d"
                     },
                     "required_dependencies": [
-                        "vvuO3ImH",
-                        "1o7aFiY6"
+                        "1o7aFiY6",
+                        "vvuO3ImH"
                     ],
-                    "size": 14958652,
-                    "date_published": "2026-08-25T21:34:46.480459Z"
+                    "size": 14984305,
+                    "date_published": "2026-08-29T03:51:08.718031Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "TerraFirmaGreg-Core-Modern-0.9.21.jar",
+                    "file_name": "TerraFirmaGreg-Core-Modern-0.9.22.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -16125,18 +16141,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8734/669/TerraFirmaGreg-Core-Modern-0.9.21.jar",
-                    "id": "8734669",
+                    "url": "https://edge.forgecdn.net/files/8758/332/TerraFirmaGreg-Core-Modern-0.9.22.jar",
+                    "id": "8758332",
                     "parent_id": "513402",
                     "hashes": {
-                        "sha1": "1645c49e95a4a1534dfc1a71f4402a852ec33fde",
-                        "md5": "bd7febc54842842cd237dcf71325cd54"
+                        "sha1": "d240bc38ae168d126c9e6275e5b5038a6497f14d",
+                        "md5": "e097c67658541d9bc17a2ce86a5524b6"
                     },
                     "required_dependencies": [
                         "309927"
                     ],
-                    "size": 14958652,
-                    "date_published": "2026-08-25T21:34:43.357Z"
+                    "size": 14984305,
+                    "date_published": "2026-08-29T03:51:05.693Z"
                 }
             ]
         },
