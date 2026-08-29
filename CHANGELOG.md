@@ -19,6 +19,7 @@
 - Tarkianite dust is now centrifuged and give Molybdenite so you can't bypass Molybdenum line @TomPlop
 - Added new EMI art for block interaction recipes @Redeix
 - Added a field guide entry for jellies (#4871) @SakuraKitsurugi
+- Candles now last for 31 days by default instead of just 7
 ### Bug fixes
 - Fixed a freeze when pressing U on items that had a lot of recipes or tags (#4837) @Pyritie
 - Fixed a bunch of missing crop models (#4838) @Pyritie
