@@ -30,7 +30,10 @@
                 "minecraft:basalt",
                 "minecraft:fern",
                 "minecraft:large_fern",
-                "minecraft:cobweb",
+                "minecraft:clay",
+                "minecraft:brown_mushroom_block",
+                "minecraft:red_mushroom_block",
+                "minecraft:shroomlight",
                 "tfg:plant/dry_grass",
                 "tfg:plant/red_oat_grass",
                 "tfc:plant/bluegrass",
@@ -59,7 +62,11 @@
                 "minecraft:ice",
                 "minecraft:packed_ice",
                 "minecraft:blue_ice",
-                "tfc:sea_ice"
+                "tfc:sea_ice",
+                "ae2:flawless_budding_quartz",
+                "ae2:flawed_budding_quartz",
+                "ae2:chipped_budding_quartz",
+                "ae2:damaged_budding_quartz"
             ]
         }
     ],

@@ -2,6 +2,10 @@
 
 ## Unreleased
 ### Breaking Changes
+### Bug fixes
+
+## [0.13.9] - 29-08-2026
+### Breaking Changes
 - Many AE2-related recipes have been changed. Everything outside of very basic components (such as interfaces and pattern providers) must be crafted on the moon in a new multiblock @TomPlop
 - This multiblock is also significantly easier to set up with railgun automation, which is also very highly encouraged so you can get easy crafts without leaving your earth base @TomPlop
 - The multiblock starts out pretty easy to use but more advanced components require interacting with a new mechanic involving budding certus quartz blocks @TomPlop
@@ -14,6 +18,7 @@
 - The slider on the new combustion engines now only controls rotation direction instead of RPM (#4854) @Pyritie
 - Tarkianite dust is now centrifuged and give Molybdenite so you can't bypass Molybdenum line @TomPlop
 - Added new EMI art for block interaction recipes @Redeix
+- Added a field guide entry for jellies (#4871) @SakuraKitsurugi
 ### Bug fixes
 - Fixed a freeze when pressing U on items that had a lot of recipes or tags (#4837) @Pyritie
 - Fixed a bunch of missing crop models (#4838) @Pyritie

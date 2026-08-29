@@ -797,7 +797,6 @@ const registerAE2Recipes = (event) => {
 		.duration(20*10)
 		.EUt(GTValues.VA[GTValues.HV])
 		.dimension('ad_astra:moon')
-		.cleanroom(CleanroomType.CLEANROOM)
 		.circuit(2)
 
 	event.recipes.gtceu.me_assembler('ae2:blank_pattern_pbi')
@@ -1296,8 +1295,8 @@ const registerAE2Recipes = (event) => {
 			'gtceu:hv_conveyor_module',
 			'1x gtceu:stainless_steel_crate',
 			'4x #forge:plates/stainless_steel',
-			'8x ae2:annihilation_core',
-			'8x ae2:formation_core')
+			'2x ae2:annihilation_core',
+			'2x ae2:formation_core')
 		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144))
 		.itemOutputs('ae2:interface')
 		.duration(20 * 30)
@@ -1345,8 +1344,8 @@ const registerAE2Recipes = (event) => {
 			'gtceu:hv_robot_arm',
 			'1x gtceu:stainless_steel_crate',
 			'4x #forge:plates/stainless_steel',
-			'8x ae2:annihilation_core',
-			'8x ae2:formation_core')
+			'2x ae2:annihilation_core',
+			'2x ae2:formation_core')
 		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144))
 		.itemOutputs('ae2:pattern_provider')
 		.duration(20 * 30)
@@ -1359,8 +1358,8 @@ const registerAE2Recipes = (event) => {
 			'gtceu:mv_robot_arm',
 			'1x gtceu:aluminium_crate',
 			'4x #forge:plates/aluminium',
-			'2x ae2:annihilation_core',
-			'2x ae2:formation_core')
+			'1x ae2:annihilation_core',
+			'1x ae2:formation_core')
 		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144))
 		.itemOutputs('1x ae2:pattern_provider')
 		.duration(20 * 10)
@@ -1374,8 +1373,8 @@ const registerAE2Recipes = (event) => {
 			'gtceu:iv_robot_arm',
 			'1x gtceu:tungsten_steel_crate',
 			'4x #forge:plates/tungsten_steel',
-			'4x ae2:annihilation_core',
-			'4x ae2:formation_core')
+			'2x ae2:annihilation_core',
+			'2x ae2:formation_core')
 		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144 * 8), Fluid.of('gtceu:argon', 144))
 		.itemOutputs('16x ae2:pattern_provider')
 		.duration(20 * 120)
