@@ -393,5 +393,15 @@ function registerTFGMultiblockRecipes(event) {
 		D: '#gtceu:circuits/hv',
 		C: Item.of('tfg:casings/machine_casing_ptfe_black')
 	}).addMaterialInfo().id('tfg:shaped/budding_charge')
+
+	// ME Redstone Port
+
+	event.recipes.gtceu.assembler('tfg:me_assembler_redstone_port')
+		.itemInputs('tfg:casings/machine_casing_ptfe_black', 'gtceu:activity_detector_cover')
+		.itemOutputs('tfg:me_assembler_redstone_port')
+		.duration(20*30)
+		.circuit(1)
+		.EUt(GTValues.VA[GTValues.LV])
+		.addMaterialInfo(true)
 	
 }
