@@ -402,7 +402,7 @@ const registerExtendedAE2Recipes = (event) => {
 	//wireless tool
 	event.recipes.gtceu.assembler('expatternprovider:wireless_advanced_tool')
 		.itemInputs(
-			'expatternprovider:wireless_advanced_tool',
+			'expatternprovider:wireless_tool',
 			'#gtceu:circuits/iv',
 			'1x gtceu:iv_emitter',
 			Item.of('megacells:accumulation_processor'))
@@ -503,7 +503,6 @@ const registerExtendedAE2Recipes = (event) => {
 		.dimension('ad_astra:moon')
 		.cleanroom(CleanroomType.CLEANROOM)
 		.circuit(5)
-		.cleanroom(CleanroomType.CLEANROOM)
 
 	// ZPM CR
 	event.recipes.gtceu.me_assembler('expatternprovider:ex_molecular_assembler_zpm')
@@ -520,7 +519,6 @@ const registerExtendedAE2Recipes = (event) => {
 		.EUt(GTValues.VA[GTValues.ZPM])
 		.cleanroom(CleanroomType.CLEANROOM)
 		.dimension('ad_astra:moon')
-		.cleanroom(CleanroomType.CLEANROOM)
 		.circuit(6)
 
 	//#endregion

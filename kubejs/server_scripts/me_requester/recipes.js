@@ -6,7 +6,7 @@ const registerMERequesterRecipes = (event) => {
 	event.remove({ id: 'merequester:requester' })
 
 	// ME Requester
-	event.recipes.gtceu.assembler('tfg:merequester/merequester')
+	event.recipes.gtceu.me_assembler('tfg:merequester/merequester')
 		.itemInputs(
 			'expatternprovider:ex_pattern_provider',
 			'#expatternprovider:extended_interface',

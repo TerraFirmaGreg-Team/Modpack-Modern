@@ -372,14 +372,13 @@ function registerTFGMultiblockRecipes(event) {
 
 	event.recipes.gtceu.shaped('tfg:me_assembler', [
 		'ABA',
-		'DED',
+		'DCD',
 		'ABA'
 	], {
 		A: Item.of('ae2:charged_certus_quartz_crystal'),
 		B: Item.of('ae2:spatial_pylon'),
-		C: Item.of('gtceu:lv_macerator'),
-		D: '#gtceu:circuits/hv',
-		E: Item.of('tfg:casings/machine_casing_ptfe_black')
+		C: '#gtceu:circuits/hv',
+		D: Item.of('tfg:casings/machine_casing_ptfe_black')
 	}).addMaterialInfo().id('tfg:shaped/me_assembler')
 
 	// Budding Charger

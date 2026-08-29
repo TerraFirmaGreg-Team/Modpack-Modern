@@ -111,10 +111,10 @@ const registerAE2Recipes = (event) => {
 	// Crafting Card
 
 	event.recipes.gtceu.me_assembler('tfg:crafting_card')
-		.itemInputs('1x ae2:basic_card', '8x ae2:cell_component_16k', '4x #tfc:workbenches')
+		.itemInputs('1x ae2:basic_card', '4x ae2:cell_component_16k', '4x #tfc:workbenches')
 		.itemOutputs('ae2:crafting_card')
-		.duration(20*60)
-		.EUt(GTValues.VA[GTValues.EV])
+		.duration(20*120)
+		.EUt(GTValues.VA[GTValues.IV])
 		.dimension('ad_astra:moon')
 		.cleanroom(CleanroomType.CLEANROOM)
 		.addMaterialInfo(true)
@@ -1239,15 +1239,15 @@ const registerAE2Recipes = (event) => {
 		.dimension('ad_astra:moon')
 		.circuit(1)
 
-	// IV Moon
+	// EV Moon
 	event.recipes.gtceu.me_assembler('ae2:molecular_assembler_iv')
 		.itemInputs(
-			'2x #gtceu:circuits/iv',
+			'2x #gtceu:circuits/ev',
 			'ae2:quartz_glass',
 			'4x ae2:annihilation_core',
 			'4x ae2:formation_core',
-			'2x gtceu:iv_robot_arm',
-			'6x #forge:plates/tungsten_steel')
+			'2x gtceu:ev_robot_arm',
+			'6x #forge:plates/titanium')
 		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144 * 8))
 		.itemOutputs('8x ae2:molecular_assembler')
 		.duration(20*60)
