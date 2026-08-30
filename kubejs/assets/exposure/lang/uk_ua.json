@@ -61,7 +61,7 @@
 	"error.exposure.capture.url.no_http_prefix.casual": "Адреса має невідомий протокол.",
 	"error.exposure.capture.url.no_http_prefix.technical": "Неможливо завантажити з URL-адреси: немає префікса \"http://\" або \"https://\".",
 	"error.exposure.capture.url.timed_out.casual": "Джерело за адресою лежить поза часовими обмеженнями проектора.",
-	"error.exposure.capture.url.timed_out.technical": "Не вдається завантажити з URL: час очікування минув.",
+	"error.exposure.capture.url.timed_out.technical": "Не вдалося завантажити з URL: час очікування вичерпано.",
 	"error.exposure.exposure_retrieve.failed.casual": "Деякі експозиції були недоступні.",
 	"error.exposure.exposure_retrieve.failed.technical": "Не вдалося отримати експозиції: один або кілька запитів не виконано.",
 	"error.exposure.exposure_retrieve.timeout.casual": "Експозиції не поспішають бути доступними.",

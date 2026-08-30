@@ -13,10 +13,11 @@
 	"sodium.options.chunk_update_threads.name": "Wątki aktualizacji chunków",
 	"sodium.options.cpu_render_ahead_limit.value": "%s klatek",
 	"sodium.options.leaves_quality.name": "Liście",
-	"sodium.options.pages.advanced": "Zaawansowany",
+	"sodium.options.pages.advanced": "Zaawansowane",
 	"sodium.options.pages.performance": "Wydajność",
 	"sodium.options.pages.quality": "Jakość",
 	"sodium.options.performance_impact_string": "Wpływ na wydajność: %s",
 	"sodium.options.use_entity_culling.name": "Użyj Entity Culling",
+	"sodium.options.use_fog_occlusion.name": "Użyj okluzji mgły",
 	"sodium.options.vignette.name": "Winieta"
 }
