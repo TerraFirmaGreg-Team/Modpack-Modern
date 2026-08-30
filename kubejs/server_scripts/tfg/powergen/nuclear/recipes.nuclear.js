@@ -5,7 +5,7 @@ function registerTFGNuclearRecipes(event) {
 	// Fission blocks
 
 	event.recipes.gtceu.assembler('tfg:redstone_port')
-		.itemInputs('gtceu:ev_machine_hull', 'gtceu:activity_detector_cover')
+		.itemInputs('gtceu:atomic_casing', 'gtceu:activity_detector_cover')
 		.itemOutputs('deafission:redstone_port')
 		.duration(20*30)
 		.circuit(1)

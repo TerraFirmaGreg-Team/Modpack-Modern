@@ -1,11 +1,11 @@
 "use strict";
 
 /**
- * 
- * @param {Internal.RecipesEventJS} event 
+ *
+ * @param {Internal.RecipesEventJS} event
  */
 const registerAFCRecipes = (event) => {
-	
+
 	// #region Removes
 
 	event.remove({ id: "afc:pot/rubber" })
@@ -15,7 +15,18 @@ const registerAFCRecipes = (event) => {
 	event.remove({ id: "afc:crafting/1_maple_sugar" })
 	event.remove({ id: "afc:crafting/0_birch_sugar_bucket" })
 	event.remove({ id: "afc:crafting/0_maple_sugar_bucket" })
-	
+	event.remove({id: "afc:pot/maple_syrup_half_batch"})
+	event.remove({id: "afc:vat/maple_syrup_half_batch"})
+	event.remove({ id: "afc:pot/maple_concentrate" })
+	event.remove({ id: "afc:pot/birch_concentrate" })
+	event.remove({ id: "afc:vat/maple_concentrate" })
+	event.remove({ id: "afc:vat/birch_concentrate" })
+	event.remove({ id: "afc:pot/maple_syrup" })
+	event.remove({ id: "afc:pot/birch_syrup" })
+	event.remove({ id: "afc:vat/maple_syrup" })
+	event.remove({ id: "afc:vat/birch_syrup" })
+
+
 
 	// #endregion
 
@@ -103,21 +114,101 @@ const registerAFCRecipes = (event) => {
 
 	event.recipes.gtceu.centrifuge('maple_syrup_log_separation')
 		.itemInputs('#tfc:maple_logs')
-		.chancedOutput('afc:maple_sugar', 7500, 0)
+		.chancedOutput('afc:maple_sugar', 5000, 0)
 		.chancedOutput('gtceu:plant_ball', 3750, 0)
 		.chancedOutput('gtceu:hardwood_dust', 2500, 0)
-		.outputFluids(Fluid.of('gtceu:methane', 60), Fluid.of('afc:maple_syrup', 100))
+		.outputFluids(Fluid.of('gtceu:methane', 60), Fluid.of('afc:maple_syrup', 50))
 		.duration(20 * 20)
 		.EUt(GTValues.VA[GTValues.MV])
 
 	event.recipes.gtceu.centrifuge('birch_syrup_log_separation')
 		.itemInputs('#tfc:birch_logs')
-		.chancedOutput('afc:birch_sugar', 7500, 0)
+		.chancedOutput('afc:birch_sugar', 5000, 0)
 		.chancedOutput('gtceu:plant_ball', 3750, 0)
 		.chancedOutput('gtceu:hardwood_dust', 2500, 0)
-		.outputFluids(Fluid.of('gtceu:methane', 60), Fluid.of('afc:birch_syrup', 100))
+		.outputFluids(Fluid.of('gtceu:methane', 60), Fluid.of('afc:birch_syrup', 50))
 		.duration(20 * 20)
 		.EUt(GTValues.VA[GTValues.MV])
+
+	//#endregion
+
+	// Maple, Birch concentrates
+
+	event.recipes.firmalife.vat()
+		.inputs('minecraft:stick', Fluid.of('afc:birch_sap', 1000))
+		.outputItem('minecraft:stick')
+		.outputFluid(Fluid.of('afc:birch_sap_concentrate', 500))
+		.length(600)
+		.id('tfg:vat/birch_sap_to_concentrate')
+
+	event.recipes.firmalife.vat()
+		.inputs('minecraft:stick', Fluid.of('afc:maple_sap', 1000))
+		.outputItem('minecraft:stick')
+		.outputFluid(Fluid.of('afc:maple_sap_concentrate', 500))
+		.length(600)
+		.id('tfg:vat/maple_sap_to_concentrate')
+
+	event.recipes.tfc.pot(['minecraft:stick'], Fluid.of('afc:birch_sap', 1000), 30 * 20, 650)
+		.itemOutput('minecraft:stick')
+		.fluidOutput(Fluid.of('afc:birch_sap_concentrate', 500))
+		.id('tfg:pot/birch_sap_to_concentrate')
+
+	event.recipes.tfc.pot(['minecraft:stick'], Fluid.of('afc:maple_sap', 1000), 30 * 20, 650)
+		.itemOutput('minecraft:stick')
+		.fluidOutput(Fluid.of('afc:maple_sap_concentrate', 500))
+		.id('tfg:pot/maple_sap_to_concentrate')
+
+	//#endregion
+
+	// Concentrate to Syrup
+
+	event.recipes.tfc.pot(['minecraft:stick'], Fluid.of('afc:birch_sap_concentrate', 1000), 30 * 20, 650)
+		.itemOutput('minecraft:stick')
+		.fluidOutput(Fluid.of('afc:birch_syrup', 500))
+		.id('tfg:pot/birch_concentrate_to_syrup')
+
+	event.recipes.tfc.pot(['minecraft:stick'], Fluid.of('afc:maple_sap_concentrate', 1000), 30 * 20, 650)
+		.itemOutput('minecraft:stick')
+		.fluidOutput(Fluid.of('afc:maple_syrup', 500))
+		.id('tfg:pot/maple_concentrate_to_syrup')
+
+	event.recipes.tfc.pot(['minecraft:stick'], Fluid.of('afc:birch_sap_concentrate', 500), 30 * 20, 650)
+		.itemOutput('minecraft:stick')
+		.fluidOutput(Fluid.of('afc:birch_syrup', 250))
+		.id('tfg:pot/birch_concentrate_to_syrup_half')
+
+	event.recipes.tfc.pot(['minecraft:stick'], Fluid.of('afc:maple_sap_concentrate', 500), 30 * 20, 650)
+		.itemOutput('minecraft:stick')
+		.fluidOutput(Fluid.of('afc:maple_syrup', 250))
+		.id('tfg:pot/maple_concentrate_to_syrup_half')
+
+	event.recipes.firmalife.vat()
+		.inputs('minecraft:stick', Fluid.of('afc:birch_sap_concentrate', 1000))
+		.outputItem('minecraft:stick')
+		.outputFluid(Fluid.of('afc:birch_syrup', 500))
+		.length(600)
+		.id('tfg:vat/birch_concentrate_to_syrup')
+
+	event.recipes.firmalife.vat()
+		.inputs('minecraft:stick', Fluid.of('afc:maple_sap_concentrate', 1000))
+		.outputItem('minecraft:stick')
+		.outputFluid(Fluid.of('afc:maple_syrup', 500))
+		.length(600)
+		.id('tfg:vat/maple_concentrate_to_syrup')
+
+	event.recipes.firmalife.vat()
+		.inputs('minecraft:stick', Fluid.of('afc:birch_sap_concentrate', 500))
+		.outputItem('minecraft:stick')
+		.outputFluid(Fluid.of('afc:birch_syrup', 250))
+		.length(600)
+		.id('tfg:vat/birch_concentrate_to_syrup_half')
+
+	event.recipes.firmalife.vat()
+		.inputs('minecraft:stick', Fluid.of('afc:maple_sap_concentrate', 500))
+		.outputItem('minecraft:stick')
+		.outputFluid(Fluid.of('afc:maple_syrup', 250))
+		.length(600)
+		.id('tfg:vat/maple_concentrate_to_syrup_half')
 
 	//#endregion
 
@@ -125,13 +216,13 @@ const registerAFCRecipes = (event) => {
 
 	event.recipes.gtceu.fluid_heater('maple_sap_condense')
 		.inputFluids(Fluid.of('afc:maple_sap', 1000))
-		.outputFluids(Fluid.of('afc:maple_syrup', 100))
+		.outputFluids(Fluid.of('afc:maple_syrup', 250))
 		.duration(20 * 25)
 		.EUt(GTValues.VA[GTValues.ULV])
 
 	event.recipes.gtceu.fluid_heater('birch_sap_condense')
 		.inputFluids(Fluid.of('afc:birch_sap', 1000))
-		.outputFluids(Fluid.of('afc:birch_syrup', 100))
+		.outputFluids(Fluid.of('afc:birch_syrup', 250))
 		.duration(20 * 35)
 		.EUt(GTValues.VA[GTValues.ULV])
 
@@ -169,5 +260,5 @@ const registerAFCRecipes = (event) => {
 		], {
 			A: `afc:wood/leaves/${wood.sapling}`
 		}).id(`tfg:shaped/afc/${wood.sapling}_leaves_to_fallen_leaves`);
-	});		
+	});
 }

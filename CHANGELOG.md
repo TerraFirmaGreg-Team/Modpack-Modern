@@ -1,6 +1,16 @@
 # Changelog
 
 ## Unreleased
+### Breaking Changes
+### Bug fixes
+
+## [0.13.9] - 29-08-2026
+### Breaking Changes
+- Many AE2-related recipes have been changed. Everything outside of very basic components (such as interfaces and pattern providers) must be crafted on the moon in a new multiblock @TomPlop
+- This multiblock is also significantly easier to set up with railgun automation, which is also very highly encouraged so you can get easy crafts without leaving your earth base @TomPlop
+- The multiblock starts out pretty easy to use but more advanced components require interacting with a new mechanic involving budding certus quartz blocks @TomPlop
+- New quests have been added to the AE2 chapter explaining how to set up the railgun automation with the multiblock and how the certus quartz blocks mechanic works @TomPlop
+- Added MEGA pattern providers (2 rows) as an intermediate between regular pattern providers (1 row) and Extended pattern providers (4 rows) @TomPlop
 ### Changes
 - Added a new model and texture for pineapple bushes (#4776) @eggyplantsu
 - Added new textures for the red steel flask @NaharaSabrea
@@ -8,6 +18,9 @@
 - The slider on the new combustion engines now only controls rotation direction instead of RPM (#4854) @Pyritie
 - Tarkianite dust is now centrifuged and give Molybdenite so you can't bypass Molybdenum line @TomPlop
 - Added new EMI art for block interaction recipes @Redeix
+- Added a field guide entry for jellies (#4871) @SakuraKitsurugi
+- Buffed maple and birch sap into sugar ratios (#4858) @nixieeq
+- Candles now last for 31 days by default instead of just 7
 ### Bug fixes
 - Fixed a freeze when pressing U on items that had a lot of recipes or tags (#4837) @Pyritie
 - Fixed a bunch of missing crop models (#4838) @Pyritie
@@ -17,6 +30,7 @@
 - Fixed teleporting to the beneath not clearing out gravel above your spawn point, which caused damage/death (#4795) @Pyritie
 - Fixed the AE2 Midnight resource pack so it actually works when requesting items @ArkeHD
 - Fixed inconsistent phantom membrane into thread recipes, and fixed repair recipes for all clothes (#4860) @Pyritie
+- Fixed inconsistent wood planks to sticks lathe recipe for treated wood (#4629) @NeonNoise
 ### Mods
 #### Greate
 - Fix mechanical presses not being placed correctly on belts, depots, and weighted ejectors
@@ -24,6 +38,8 @@
 - Fix crash when placing saws next to two kinetic sources with different rotation directions
 - Add tooltips to kinetic pumps to show mB/t
 - Fix crash when viewing the ponder for mechanical belts
+#### Create: Railways Navigator
+- Added as an optional mod
 
 ## [0.13.8] - 25-08-2026
 ### Breaking changes
