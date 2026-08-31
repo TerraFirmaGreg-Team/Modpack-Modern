@@ -17,7 +17,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"title": "Produce",
+			"title": "Produkty",
 			"text": "$(thing)Jellies$() are quite picky and will refuse to produce anything outside of their natural habitat; however, they will breed just fine in any environment. $(br2)They also dislike machines and will only give their produce when fed manually by a player.$(br2)$(#B0B0B0)$(o)Or maybe they just want attention..."
 		},
 		{
@@ -64,14 +64,14 @@
 			"type": "patchouli:entity",
 			"entity": "jellies:glowberry",
 			"scale": 1,
-			"name": "Glowberry Jellie",
+			"name": "Świecąco-jagodowy żelek",
 			"text": "$(thing)Glowberry$() jellies spawn in Beneath's lush hollow biome. They produce $(thing)Glowberry Slime Balls$()."
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "jellies:biotite",
 			"scale": 1,
-			"name": "Biotite Jellie",
+			"name": "Biotytowy żelek",
 			"text": "$(thing)Biotite$() jellies spawn at the bottom of the Beneath. They produce $(thing)Biotite Slime Balls$()."
 		},
 		{
@@ -106,7 +106,7 @@
 			"type": "patchouli:entity",
 			"entity": "jellies:pentetic",
 			"scale": 1,
-			"name": "Pentetic Jellie",
+			"name": "Pentetynowy żelek",
 			"text": "$(thing)Pentetic$() jellies spawn in Mars' martian deep desert and martian mountain biomes. They passively absorbs radiation from players."
 		},
 		{
