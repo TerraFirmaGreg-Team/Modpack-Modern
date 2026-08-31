@@ -20,8 +20,8 @@ function registerTFGBeneathOreProcRecipes(event) {
 
 	event.recipes.gtceu.electric_blast_furnace('tfg:molybdenum_trioxide_dust_from_molybdenite_dust')
 		.itemInputs(Item.of('gtceu:molybdenite_dust', 6))
-		.inputFluids(Fluid.of('gtceu:oxygen', 14000))
-		.outputFluids(Fluid.of('gtceu:sulfur_dioxide', 4000))
+		.inputFluids(Fluid.of('gtceu:oxygen', 10000))
+		.outputFluids(Fluid.of('gtceu:sulfur_dioxide', 2000))
 		.itemOutputs(Item.of('tfg:molybdenum_trioxide_dust', 8))
 		.duration(32 * 20)
         .EUt(GTValues.VA[GTValues.MV])
