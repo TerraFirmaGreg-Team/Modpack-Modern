@@ -13,6 +13,10 @@ const registerExtendedAE2Recipes = (event) => {
 		], mod: 'expatternprovider'
 	});
 
+	function requiresOxygenation(recipe) {
+		TFGRecipeSchemaBindings.isOxygenated(recipe, true)
+	}
+
 
 	//#region Ext Interface
 
@@ -175,7 +179,6 @@ const registerExtendedAE2Recipes = (event) => {
 	// Pattern Provider Upgrade
 
 	// IV
-
 	requiresOxygenation(
 	event.recipes.gtceu.me_assembler('expatternprovider:pattern_provider_upgrade_iv_moon')
 		.itemInputs(
@@ -193,7 +196,6 @@ const registerExtendedAE2Recipes = (event) => {
 		.dimension('ad_astra:moon'))
 
 	// ZPM CR
-
 	requiresOxygenation(
 	event.recipes.gtceu.me_assembler('expatternprovider:pattern_provider_upgrade_zpm')
 		.itemInputs(
@@ -584,7 +586,6 @@ const registerExtendedAE2Recipes = (event) => {
 	//#region Matrix
 
 	//Frame
-
 	requiresOxygenation(
 	event.recipes.gtceu.me_assembler('expatternprovider:assembler_matrix_frame_moon')
 		.itemInputs(
@@ -604,7 +605,6 @@ const registerExtendedAE2Recipes = (event) => {
 		.circuit(9))
 
 	//Matrix Wall
-
 	requiresOxygenation(
 	event.recipes.gtceu.me_assembler('expatternprovider:assembler_matrix_wall_luv')
 		.itemInputs(
@@ -621,7 +621,6 @@ const registerExtendedAE2Recipes = (event) => {
 		.addMaterialInfo(true, true))
 
 	//Matrix Glass
-
 	requiresOxygenation(
 	event.recipes.gtceu.me_assembler("expatternprovider:assembler_matrix_glass")
 		.itemInputs(
@@ -638,7 +637,6 @@ const registerExtendedAE2Recipes = (event) => {
 		.addMaterialInfo(true, true))
 
 	//Matrix Pattern
-
 	requiresOxygenation(
 	event.recipes.gtceu.me_assembler("expatternprovider:assembler_matrix_pattern")
 		.itemInputs(
@@ -657,7 +655,6 @@ const registerExtendedAE2Recipes = (event) => {
 		.circuit(7))
 
 	//Matrix Crafter
-
 	requiresOxygenation(
 	event.recipes.gtceu.me_assembler("expatternprovider:assembler_matrix_crafter")
 		.itemInputs(
@@ -676,7 +673,6 @@ const registerExtendedAE2Recipes = (event) => {
 		.circuit(7))
 
 	//Matrix Speed
-
 	requiresOxygenation(
 	event.recipes.gtceu.me_assembler("expatternprovider:assembler_matrix_speed_luv")
 		.itemInputs(
