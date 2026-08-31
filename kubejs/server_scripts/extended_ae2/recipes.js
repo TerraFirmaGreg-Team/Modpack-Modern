@@ -25,7 +25,7 @@ const registerExtendedAE2Recipes = (event) => {
 	requiresOxygenation(
 	event.recipes.gtceu.me_assembler('tfg:ex_interface_iv_moon')
 		.itemInputs(
-			'gtceu:iv_electric_motor',
+			'gtceu:iv_conveyor_module',
 			'4x gtceu:laminated_glass',
 			'2x #forge:plates/tungsten_steel',
 			'2x ae2:annihilation_core',
@@ -44,7 +44,7 @@ const registerExtendedAE2Recipes = (event) => {
 	requiresOxygenation(
 	event.recipes.gtceu.me_assembler('tfg:ex_interface_zpm_cr')
 		.itemInputs(
-			'gtceu:zpm_electric_motor',
+			'gtceu:zpm_conveyor_module',
 			'4x gtceu:laminated_glass',
 			'2x #forge:plates/naquadah_alloy',
 			'2x ae2:annihilation_core',
@@ -65,7 +65,7 @@ const registerExtendedAE2Recipes = (event) => {
 	requiresOxygenation(
 	event.recipes.gtceu.me_assembler('expatternprovider:interface_upgrade_iv_moon')
 		.itemInputs(
-			'gtceu:iv_electric_motor',
+			'gtceu:iv_conveyor_module',
 			'4x gtceu:laminated_glass',
 			'2x #forge:plates/tungsten_steel',
 			'2x ae2:annihilation_core',
@@ -83,7 +83,7 @@ const registerExtendedAE2Recipes = (event) => {
 	requiresOxygenation(
 	event.recipes.gtceu.me_assembler('expatternprovider:interface_upgrade_zpm')
 		.itemInputs(
-			'gtceu:zpm_electric_motor',
+			'gtceu:zpm_conveyor_module',
 			'4x gtceu:laminated_glass',
 			'2x #forge:plates/naquadah_alloy',
 			'2x ae2:annihilation_core',
@@ -145,7 +145,7 @@ const registerExtendedAE2Recipes = (event) => {
 	requiresOxygenation(
 	event.recipes.gtceu.me_assembler('tfg:ex_pattern_provider_iv')
 		.itemInputs(
-			'gtceu:iv_conveyor_module',
+			'gtceu:iv_robot_arm',
 			'4x gtceu:laminated_glass',
 			'2x #forge:plates/tungsten_steel',
 			'2x ae2:annihilation_core',
@@ -164,7 +164,7 @@ const registerExtendedAE2Recipes = (event) => {
 	requiresOxygenation(
 	event.recipes.gtceu.me_assembler('tfg:ex_pattern_provider_zpm')
 		.itemInputs(
-			'gtceu:zpm_conveyor_module',
+			'gtceu:zpm_robot_arm',
 			'4x gtceu:laminated_glass',
 			'2x #forge:plates/naquadah_alloy',
 			'2x ae2:annihilation_core',
@@ -184,7 +184,7 @@ const registerExtendedAE2Recipes = (event) => {
 	requiresOxygenation(
 	event.recipes.gtceu.me_assembler('expatternprovider:pattern_provider_upgrade_iv_moon')
 		.itemInputs(
-			'gtceu:iv_conveyor_module',
+			'gtceu:iv_robot_arm',
 			'4x gtceu:laminated_glass',
 			'2x #forge:plates/tungsten_steel',
 			'2x ae2:annihilation_core',
@@ -201,7 +201,7 @@ const registerExtendedAE2Recipes = (event) => {
 	requiresOxygenation(
 	event.recipes.gtceu.me_assembler('expatternprovider:pattern_provider_upgrade_zpm')
 		.itemInputs(
-			'gtceu:zpm_conveyor_module',
+			'gtceu:zpm_robot_arm',
 			'4x gtceu:laminated_glass',
 			'2x #forge:plates/naquadah_alloy',
 			'2x ae2:annihilation_core',

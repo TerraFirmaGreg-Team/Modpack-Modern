@@ -1295,8 +1295,9 @@ const registerAE2Recipes = (event) => {
 	// Earth
 	event.recipes.gtceu.assembler('ae2:interface_earth')
 		.itemInputs(
-			'gtceu:hv_electric_motor',
+			'gtceu:hv_conveyor_module',
 			'1x gtceu:stainless_steel_crate',
+			'4x #forge:plates/stainless_steel',
 			'4x ae2:annihilation_core',
 			'4x ae2:formation_core')
 		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144))
@@ -1308,8 +1309,9 @@ const registerAE2Recipes = (event) => {
 	// MV Moon
 	event.recipes.gtceu.me_assembler('ae2:interface_mv_moon')
 		.itemInputs(
-			'gtceu:mv_electric_motor',
+			'gtceu:mv_conveyor_module',
 			'1x gtceu:aluminium_crate',
+			'2x #forge:plates/aluminium',
 			'1x ae2:annihilation_core',
 			'1x ae2:formation_core')
 		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144))
@@ -1323,8 +1325,9 @@ const registerAE2Recipes = (event) => {
 	requiresOxygenation(
 	event.recipes.gtceu.me_assembler('ae2:interface_iv_moon')
 		.itemInputs(
-			'gtceu:iv_electric_motor',
+			'gtceu:iv_conveyor_module',
 			'1x gtceu:tungsten_steel_crate',
+			'4x #forge:plates/tungsten_steel',
 			'2x ae2:annihilation_core',
 			'2x ae2:formation_core')
 		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144 * 8), Fluid.of('gtceu:argon', 144))
@@ -1341,8 +1344,9 @@ const registerAE2Recipes = (event) => {
 	// Earth
 	event.recipes.gtceu.assembler('ae2:pattern_provider_earth')
 		.itemInputs(
-			'gtceu:hv_conveyor_module',
+			'gtceu:hv_robot_arm',
 			'1x gtceu:stainless_steel_crate',
+			'4x #forge:plates/stainless_steel',
 			'4x ae2:annihilation_core',
 			'4x ae2:formation_core')
 		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144))
@@ -1354,8 +1358,9 @@ const registerAE2Recipes = (event) => {
 	// MV Moon
 	event.recipes.gtceu.me_assembler('ae2:pattern_provider_mv_moon')
 		.itemInputs(
-			'gtceu:mv_conveyor_module',
+			'gtceu:mv_robot_arm',
 			'1x gtceu:aluminium_crate',
+			'4x #forge:plates/aluminium',
 			'2x ae2:annihilation_core',
 			'2x ae2:formation_core')
 		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144))
@@ -1369,8 +1374,9 @@ const registerAE2Recipes = (event) => {
 	requiresOxygenation(
 	event.recipes.gtceu.me_assembler('ae2:pattern_provider_iv_moon')
 		.itemInputs(
-			'gtceu:iv_conveyor_module',
+			'gtceu:iv_robot_arm',
 			'1x gtceu:tungsten_steel_crate',
+			'4x #forge:plates/tungsten_steel',
 			'4x ae2:annihilation_core',
 			'4x ae2:formation_core')
 		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144 * 8), Fluid.of('gtceu:argon', 144))

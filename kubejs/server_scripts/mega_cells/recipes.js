@@ -29,7 +29,7 @@ const registerMegaCellsRecipes = (event) => {
     requiresOxygenation(
     event.recipes.gtceu.me_assembler('tfg:mega_pattern_provider')
 		.itemInputs(
-			'gtceu:ev_conveyor_module',
+			'gtceu:ev_robot_arm',
 			'gtceu:stainless_steel_crate',
 			'4x #forge:plates/stainless_steel',
 			'4x ae2:annihilation_core',
