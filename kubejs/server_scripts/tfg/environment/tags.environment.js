@@ -63,10 +63,7 @@ const registerTFGEnvironmentBlockTags = (event) => {
         'ad_astra:vent',
         'ad_astra:oxygen_distributor',
         'ad_astra:gravity_normalizer',
-        'gtceu:oxygen_distributor_10',
-        'gtceu:oxygen_distributor_50',
-        'gtceu:oxygen_distributor_200',
-        'gtceu:oxygen_distributor_1000',
+        'tfg:oxygen_distributor',
 
         // Frames, bars, fences
         'minecraft:iron_bars',
