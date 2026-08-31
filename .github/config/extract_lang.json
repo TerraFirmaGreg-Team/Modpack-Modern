@@ -135,6 +135,7 @@
     "block\\.gtceu\\.lp_.*",
     "(item|block)\\.gtceu\\.(opv|uev|uiv|uxv).*",
     "block\\.mcw_tfc_aio\\..*_railing_gate",
-    "(item|block)\\.railways\\.track_(?!tfc_|incomplete_tfc_)",
+    "(item|block)\\.railways\\.(track_incomplete|track)_(byg|biomesoplenty|blue_skies|hexcasting|natures|quark|twilightforest|create_dd).*",
+    "(item|block)\\.railways\\.(track_incomplete|track)_(dark_oak|oak|mangrove|ender)(_narrow|_wide)?"
   ]
 }
