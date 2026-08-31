@@ -2203,6 +2203,7 @@ const registerAE2Recipes = (event) => {
 		.itemOutputs('ae2:quantum_ring')
 		.duration(900)
 		.EUt(GTValues.VA[GTValues.ZPM])
+		.dimension('ad_astra:moon')
 		.cleanroom(CleanroomType.CLEANROOM)
 
 	// Quantum Link Chamber
