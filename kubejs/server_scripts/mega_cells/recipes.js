@@ -12,18 +12,19 @@ const registerMegaCellsRecipes = (event) => {
 
     // Energy Cell
     
+    requiresOxygenation(
     event.recipes.gtceu.me_assembler('megacells:mega_energy_cell')
         .itemInputs('8x ae2:dense_energy_cell', '8x gtceu:nichrome_quadruple_wire', '4x #gtceu:circuits/iv')
         .itemOutputs('megacells:mega_energy_cell')
         .duration(20*240)
         .EUt(GTValues.VA[GTValues.EV])
 		.dimension('ad_astra:moon')
-		.cleanroom(CleanroomType.CLEANROOM)
 		.addMaterialInfo(true)
-        .circuit(9)
+        .circuit(9))
 
     // Pattern Provider
 
+    requiresOxygenation(
     event.recipes.gtceu.me_assembler('tfg:mega_pattern_provider')
 		.itemInputs(
 			'gtceu:ev_robot_arm',
@@ -40,9 +41,9 @@ const registerMegaCellsRecipes = (event) => {
 		.duration(20 * 80)
 		.EUt(GTValues.VA[GTValues.EV])
 		.dimension('ad_astra:moon')
-		.circuit(3)
+		.circuit(3))
 
-    //printed accumulation circuit
+    //printed accumulation circuit - Try to make a better recipe
     event.recipes.gtceu.forming_press('megacells:printed_accumulation_processor_moon')
         .itemInputs('#forge:dense_plates/silicon')
         .notConsumable('megacells:accumulation_processor_press')
@@ -78,6 +79,7 @@ const registerMegaCellsRecipes = (event) => {
 		.dimension('ad_astra:moon')
         .circuit(1)
 
+    requiresOxygenation(
 	event.recipes.gtceu.me_assembler('ae2:accumulation_processor_cr')
 		.itemInputs(
 			'ae2:printed_silicon',
@@ -90,8 +92,7 @@ const registerMegaCellsRecipes = (event) => {
 		.duration(20*80)
 		.EUt(GTValues.VA[GTValues.EV])
 		.dimension('ad_astra:moon')
-		.cleanroom(CleanroomType.CLEANROOM)
-        .circuit(2)
+        .circuit(2))
 
     // Inscriber Silicon Press
     event.recipes.gtceu.laser_engraver('ae2:accumulation_processor_press')
@@ -114,6 +115,7 @@ const registerMegaCellsRecipes = (event) => {
 
     //Mega Item Cell Housing
 
+    requiresOxygenation(
     event.recipes.gtceu.me_assembler('megacells:mega_item_cell_housing')
         .itemInputs(
  			'1x #gtceu:circuits/iv',
@@ -129,12 +131,12 @@ const registerMegaCellsRecipes = (event) => {
         .duration(20*60)
         .EUt(GTValues.VA[GTValues.IV])
 		.dimension('ad_astra:moon')
-        .cleanroom(CleanroomType.CLEANROOM)
         .addMaterialInfo(true)
-        .circuit(6)
+        .circuit(6))
     
     //Mega Fluid Cell Housing
     
+    requiresOxygenation(
     event.recipes.gtceu.me_assembler('megacells:mega_fluid_cell_housing')
         .itemInputs(
  			'1x #gtceu:circuits/iv',
@@ -150,9 +152,8 @@ const registerMegaCellsRecipes = (event) => {
         .duration(20*60)
         .EUt(GTValues.VA[GTValues.IV])
 		.dimension('ad_astra:moon')
-        .cleanroom(CleanroomType.CLEANROOM)
         .addMaterialInfo(true)
-        .circuit(6)
+        .circuit(6))
 
     //cell dock
     event.recipes.gtceu.shaped('megacells:cell_dock', [
@@ -168,6 +169,7 @@ const registerMegaCellsRecipes = (event) => {
     //#region Storage Components
 
     // 1m storage components
+    requiresOxygenation(
     event.recipes.gtceu.me_assembler('megacells:cell_component_1m')
         .itemInputs(
  			'4x #gtceu:circuits/zpm',
@@ -187,10 +189,10 @@ const registerMegaCellsRecipes = (event) => {
         .duration(20*100)
         .EUt(GTValues.VA[GTValues.LuV])
 		.dimension('ad_astra:moon')
-        .cleanroom(CleanroomType.CLEANROOM)
-        .circuit(6)
+        .circuit(6))
 
     // 4m storage components
+    requiresOxygenation(
     event.recipes.gtceu.me_assembler('megacells:cell_component_4m')
         .itemInputs(
  			'4x #gtceu:circuits/uv',
@@ -210,10 +212,10 @@ const registerMegaCellsRecipes = (event) => {
         .duration(20*200)
         .EUt(GTValues.VA[GTValues.LuV])
 		.dimension('ad_astra:moon')
-        .cleanroom(CleanroomType.CLEANROOM)
-        .circuit(7)
+        .circuit(7))
 
     // 16m storage components
+    requiresOxygenation(
     event.recipes.gtceu.me_assembler('megacells:cell_component_16m')
         .itemInputs(
  			'4x #gtceu:circuits/uhv',
@@ -235,10 +237,10 @@ const registerMegaCellsRecipes = (event) => {
             .CWUt(32))
         .EUt(GTValues.VA[GTValues.ZPM])
         .dimension('ad_astra:moon')
-        .cleanroom(CleanroomType.CLEANROOM)
-        .circuit(8)
+        .circuit(8))
 
     // 64m storage components
+    requiresOxygenation(
     event.recipes.gtceu.me_assembler('megacells:cell_component_64m')
         .itemInputs(
  			'8x #gtceu:circuits/uhv',
@@ -260,8 +262,7 @@ const registerMegaCellsRecipes = (event) => {
             .CWUt(64))
         .EUt(GTValues.VA[GTValues.UV])
         .dimension('ad_astra:moon')
-        .cleanroom(CleanroomType.CLEANROOM)
-        .circuit(9)
+        .circuit(9))
 
     // greater energy card
     event.recipes.gtceu.assembler('megacells:greater_energy_card')
@@ -421,6 +422,7 @@ const registerMegaCellsRecipes = (event) => {
 
     //#region Crafting Unit
 
+    requiresOxygenation(
     event.recipes.gtceu.me_assembler('megacells:mega_crafting_unit')
         .itemInputs(
             '4x megacells:accumulation_processor',
@@ -435,8 +437,7 @@ const registerMegaCellsRecipes = (event) => {
         .duration(20*160)
         .EUt(GTValues.VA[GTValues.IV])
         .dimension('ad_astra:moon')
-        .cleanroom(CleanroomType.CLEANROOM)
-        .circuit(3)
+        .circuit(3))
 
 
     // Mega Crafting  Storage
