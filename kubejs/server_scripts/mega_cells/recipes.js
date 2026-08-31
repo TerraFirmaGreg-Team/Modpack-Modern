@@ -9,6 +9,10 @@ const registerMegaCellsRecipes = (event) => {
         {id: 'megacells:network/mega_interface_part'},
         {id: 'megacells:network/mega_pattern_provider_part'},
     ], mod: 'megacells' })
+    
+	function requiresOxygenation(recipe) {
+		TFGRecipeSchemaBindings.isOxygenated(recipe, true)
+	}
 
     // Energy Cell
     
@@ -23,7 +27,6 @@ const registerMegaCellsRecipes = (event) => {
         .circuit(9))
 
     // Pattern Provider
-
     requiresOxygenation(
     event.recipes.gtceu.me_assembler('tfg:mega_pattern_provider')
 		.itemInputs(
@@ -44,27 +47,19 @@ const registerMegaCellsRecipes = (event) => {
 		.circuit(3))
 
     //printed accumulation circuit - Try to make a better recipe
+    requiresOxygenation(
     event.recipes.gtceu.forming_press('megacells:printed_accumulation_processor_moon')
         .itemInputs('#forge:dense_plates/silicon')
         .notConsumable('megacells:accumulation_processor_press')
         .itemOutputs('megacells:printed_accumulation_processor')
         .duration(20)
-        .circuit(1)
-        .EUt(GTValues.VA[GTValues.IV])
-        .dimension('ad_astra:moon')
-
-    event.recipes.gtceu.forming_press('megacells:printed_accumulation_processor_cr')
-        .itemInputs('#forge:dense_plates/silicon')
-        .notConsumable('megacells:accumulation_processor_press')
-        .itemOutputs('2x megacells:printed_accumulation_processor')
-        .duration(20)
         .circuit(2)
         .EUt(GTValues.VA[GTValues.IV])
-        .dimension('ad_astra:moon')
-		.cleanroom(CleanroomType.CLEANROOM)
+        .dimension('ad_astra:moon'))
 
 	// Accumulation Processor
 
+    requiresOxygenation(
 	event.recipes.gtceu.me_assembler('ae2:accumulation_processor')
 		.itemInputs(
 			'ae2:printed_silicon',
@@ -77,7 +72,7 @@ const registerMegaCellsRecipes = (event) => {
 		.duration(20*40)
 		.EUt(GTValues.VA[GTValues.EV])
 		.dimension('ad_astra:moon')
-        .circuit(1)
+        .circuit(1))
 
     requiresOxygenation(
 	event.recipes.gtceu.me_assembler('ae2:accumulation_processor_cr')
@@ -114,7 +109,6 @@ const registerMegaCellsRecipes = (event) => {
 		.EUt(GTValues.VA[GTValues.IV])
 
     //Mega Item Cell Housing
-
     requiresOxygenation(
     event.recipes.gtceu.me_assembler('megacells:mega_item_cell_housing')
         .itemInputs(
