@@ -39,6 +39,8 @@
 	"subtitles.entity.bird.flap": "Trzepot skrzydeł",
 	"subtitles.entity.blue_jay.call": "Modrosójka nawołuje",
 	"subtitles.entity.blue_jay.hurt": "Modrosójka cierpi",
+	"subtitles.entity.canada_goose.call": "Bernikla kanadyjska gęga",
+	"subtitles.entity.canada_goose.hurt": "Bernikla kanadyjska cierpi",
 	"subtitles.entity.cardinal.call": "Kardynał ćwierka",
 	"subtitles.entity.cardinal.hurt": "Kardynał cierpi",
 	"subtitles.entity.cardinal.song": "Kardynał śpiewa",
@@ -71,6 +73,8 @@
 	"subtitles.entity.sparrow.call": "Wróbel ćwierka",
 	"subtitles.entity.sparrow.hurt": "Wróbel cierpi",
 	"subtitles.entity.sparrow.song": "Wróbel śpiewa",
+	"subtitles.entity.swan_goose.call": "Gęś łabędzionosa gęga",
+	"subtitles.entity.swan_goose.hurt": "Gęś łabędzionosa cierpi",
 	"tag.item.fowlplay.blue_jay_food": "Jedzenie dla modrosójek",
 	"tag.item.fowlplay.cardinal_food": "Jedzenie dla kardynałów",
 	"tag.item.fowlplay.chickadee_food": "Jedzenie dla sikorek",
@@ -84,5 +88,6 @@
 	"tag.item.fowlplay.raven_food": "Karma dla kruków",
 	"tag.item.fowlplay.robin_food": "Karma dla rudzików",
 	"tag.item.fowlplay.sparrow_food": "Jedzenie dla wróbli",
+	"text.betterf3.line.fowlplay_ambient_birds": "Ptaki otoczenia",
 	"text.betterf3.line.fowlplay_birds": "Ptaki"
 }
