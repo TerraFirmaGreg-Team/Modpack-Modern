@@ -24,10 +24,10 @@ function registerTFGSMRAdditives(event) {
 		.EUt(GTValues.VA[GTValues.HV])
 		
 	event.recipes.gtceu.chemical_reactor('tfg:cyclohexanone_add_oxime')
-		.itemInputs('#forge:dusts/tin')
 		.inputFluids(Fluid.of('tfg:cyclohexanone', 1000), Fluid.of('gtceu:ammonia', 1000), Fluid.of('gtceu:hydrogen_peroxide', 1000))
 		.itemOutputs('19x #forge:dusts/cyclohexanone_oxime')
 		.outputFluids(Fluid.of('minecraft:water', 2000))
+		.notConsumable('#forge:dusts/tin')
 		.duration(200)
 		.EUt(GTValues.VA[GTValues.HV])
 		
