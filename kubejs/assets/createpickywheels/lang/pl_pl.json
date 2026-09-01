@@ -1,7 +1,10 @@
 {
 	"create.hint.picky_biome_boost": "z biomu",
 	"create.hint.picky_biome_notice": "Umieszczony w optymalnym biomie",
+	"create.hint.picky_biome_warn": "Umieszczony w nieoptymalnym biomie",
 	"create.hint.picky_efficiency": "Wydajność",
+	"create.hint.picky_efficiency_pre": "Generacja przy",
+	"create.hint.picky_optimal_boost": "z warunków źródła zasilania",
 	"create.hint.waterwheel_infinite.title": "Za mało wody",
 	"create.hint.waterwheel_source.title": "Brakujące źródło zasilania",
 	"create.hint.windmill_biome.title": "Nieprawidłowy biom",

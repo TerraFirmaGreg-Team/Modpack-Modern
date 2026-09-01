@@ -13,11 +13,16 @@ const registerExtendedAE2Recipes = (event) => {
 		], mod: 'expatternprovider'
 	});
 
+	function requiresOxygenation(recipe) {
+		TFGRecipeSchemaBindings.isOxygenated(recipe, true)
+	}
+
 
 	//#region Ext Interface
 
 	// IV
 
+	requiresOxygenation(
 	event.recipes.gtceu.me_assembler('tfg:ex_interface_iv_moon')
 		.itemInputs(
 			'gtceu:iv_conveyor_module',
@@ -32,11 +37,11 @@ const registerExtendedAE2Recipes = (event) => {
 		.duration(20*80)
 		.EUt(GTValues.VA[GTValues.EV])
 		.dimension('ad_astra:moon')
-		.cleanroom(CleanroomType.CLEANROOM)
-		.circuit(5)
+		.circuit(5))
 
 	// ZPM CR
 
+	requiresOxygenation(
 	event.recipes.gtceu.me_assembler('tfg:ex_interface_zpm_cr')
 		.itemInputs(
 			'gtceu:zpm_conveyor_module',
@@ -50,14 +55,14 @@ const registerExtendedAE2Recipes = (event) => {
 		.itemOutputs('8x expatternprovider:ex_interface')
 		.duration(20*1600)
 		.EUt(GTValues.VA[GTValues.LuV])
-		.cleanroom(CleanroomType.CLEANROOM)
 		.circuit(6)
-		.dimension('ad_astra:moon')
+		.dimension('ad_astra:moon'))
 
 	// Interface Upgrade
 
 	// IV
 
+	requiresOxygenation(
 	event.recipes.gtceu.me_assembler('expatternprovider:interface_upgrade_iv_moon')
 		.itemInputs(
 			'gtceu:iv_conveyor_module',
@@ -70,12 +75,12 @@ const registerExtendedAE2Recipes = (event) => {
 		.itemOutputs('1x expatternprovider:interface_upgrade')
 		.duration(20*80)
 		.EUt(GTValues.VA[GTValues.EV])
-		.cleanroom(CleanroomType.CLEANROOM)
 		.dimension('ad_astra:moon')
-		.circuit(6)
+		.circuit(6))
 
 	// ZPM CR
 
+	requiresOxygenation(
 	event.recipes.gtceu.me_assembler('expatternprovider:interface_upgrade_zpm')
 		.itemInputs(
 			'gtceu:zpm_conveyor_module',
@@ -88,9 +93,8 @@ const registerExtendedAE2Recipes = (event) => {
 		.itemOutputs('8x expatternprovider:interface_upgrade')
 		.duration(20*1600)
 		.EUt(GTValues.VA[GTValues.LuV])
-		.cleanroom(CleanroomType.CLEANROOM)
 		.dimension('ad_astra:moon')
-		.circuit(5)
+		.circuit(5))
 
 	//#endregion
 
@@ -98,6 +102,7 @@ const registerExtendedAE2Recipes = (event) => {
 
 	// LuV
 
+	requiresOxygenation(
 	event.recipes.gtceu.me_assembler('expatternprovider:oversize_interface_iv_moon')
 		.itemInputs(
 			'1x #expatternprovider:extended_interface',
@@ -110,12 +115,12 @@ const registerExtendedAE2Recipes = (event) => {
 		.itemOutputs("1x expatternprovider:oversize_interface")
 		.duration(20*160)
 		.EUt(GTValues.VA[GTValues.LuV])
-		.cleanroom(CleanroomType.CLEANROOM)
 		.dimension('ad_astra:moon')
-		.circuit(7)
+		.circuit(7))
 
 	// ZPM CR
 
+	requiresOxygenation(
 	event.recipes.gtceu.me_assembler('expatternprovider:oversize_interface_zpm')
 		.itemInputs(
 			'8x #expatternprovider:extended_interface',
@@ -128,9 +133,8 @@ const registerExtendedAE2Recipes = (event) => {
 		.itemOutputs("8x expatternprovider:oversize_interface")
 		.duration(20*480)
 		.EUt(GTValues.VA[GTValues.ZPM])
-		.cleanroom(CleanroomType.CLEANROOM)
 		.dimension('ad_astra:moon')
-		.circuit(8)
+		.circuit(8))
 
 	//#endregion
 
@@ -138,6 +142,7 @@ const registerExtendedAE2Recipes = (event) => {
 
 	// IV
 
+	requiresOxygenation(
 	event.recipes.gtceu.me_assembler('tfg:ex_pattern_provider_iv')
 		.itemInputs(
 			'gtceu:iv_robot_arm',
@@ -152,11 +157,11 @@ const registerExtendedAE2Recipes = (event) => {
 		.duration(20*80)
 		.EUt(GTValues.VA[GTValues.EV])
 		.circuit(5)
-		.dimension('ad_astra:moon')
-		.cleanroom(CleanroomType.CLEANROOM)
+		.dimension('ad_astra:moon'))
 
 	// ZPM
 
+	requiresOxygenation(
 	event.recipes.gtceu.me_assembler('tfg:ex_pattern_provider_zpm')
 		.itemInputs(
 			'gtceu:zpm_robot_arm',
@@ -170,14 +175,13 @@ const registerExtendedAE2Recipes = (event) => {
 		.itemOutputs('8x expatternprovider:ex_pattern_provider')
 		.duration(20*160)
 		.EUt(GTValues.VA[GTValues.LuV])
-		.cleanroom(CleanroomType.CLEANROOM)
 		.dimension('ad_astra:moon')
-		.circuit(6)
+		.circuit(6))
 
 	// Pattern Provider Upgrade
 
 	// IV
-
+	requiresOxygenation(
 	event.recipes.gtceu.me_assembler('expatternprovider:pattern_provider_upgrade_iv_moon')
 		.itemInputs(
 			'gtceu:iv_robot_arm',
@@ -191,11 +195,10 @@ const registerExtendedAE2Recipes = (event) => {
 		.duration(20*80)
 		.EUt(GTValues.VA[GTValues.EV])
 		.circuit(6)
-		.dimension('ad_astra:moon')
-		.cleanroom(CleanroomType.CLEANROOM)
+		.dimension('ad_astra:moon'))
 
 	// ZPM CR
-
+	requiresOxygenation(
 	event.recipes.gtceu.me_assembler('expatternprovider:pattern_provider_upgrade_zpm')
 		.itemInputs(
 			'gtceu:zpm_robot_arm',
@@ -208,15 +211,15 @@ const registerExtendedAE2Recipes = (event) => {
 		.itemOutputs('8x expatternprovider:pattern_provider_upgrade')
 		.duration(20*160)
 		.EUt(GTValues.VA[GTValues.LuV])
-		.cleanroom(CleanroomType.CLEANROOM)
 		.dimension('ad_astra:moon')
-		.circuit(5)
+		.circuit(5))
 
 	//#endregion
 
 	//#region bus
 
 	//ex import bus part
+	requiresOxygenation(
 	event.recipes.gtceu.me_assembler('expatternprovider:ex_import_bus_part')
 		.itemInputs(
 			'1x #forge:plates/titanium',
@@ -228,11 +231,11 @@ const registerExtendedAE2Recipes = (event) => {
 		.duration(20*60)
 		.EUt(GTValues.VA[GTValues.EV])
 		.dimension('ad_astra:moon')
-		.cleanroom(CleanroomType.CLEANROOM)
 		.circuit(1)
-		.addMaterialInfo(true, true)
+		.addMaterialInfo(true, true))
 
 	//ex export bus part
+	requiresOxygenation(
 	event.recipes.gtceu.me_assembler('expatternprovider:ex_export_bus_part')
 		.itemInputs(
 			'1x #forge:plates/titanium',
@@ -244,11 +247,11 @@ const registerExtendedAE2Recipes = (event) => {
 		.duration(20*60)
 		.EUt(GTValues.VA[GTValues.EV])
 		.dimension('ad_astra:moon')
-		.cleanroom(CleanroomType.CLEANROOM)
 		.circuit(2)
-		.addMaterialInfo(true, true)
+		.addMaterialInfo(true, true))
 
 	//tag export bus
+	requiresOxygenation(
 	event.recipes.gtceu.me_assembler('expatternprovider:tag_export_bus')
 		.itemInputs(
 			'expatternprovider:ex_export_bus_part',
@@ -258,11 +261,11 @@ const registerExtendedAE2Recipes = (event) => {
 		.duration(20*60)
 		.EUt(GTValues.VA[GTValues.EV])
 		.dimension('ad_astra:moon')
-		.cleanroom(CleanroomType.CLEANROOM)
 		.circuit(1)
-		.addMaterialInfo(true, true)
+		.addMaterialInfo(true, true))
 
 	//tag storage bus
+	requiresOxygenation(
 	event.recipes.gtceu.me_assembler('expatternprovider:tag_storage_bus')
 		.itemInputs(
 			'ae2:storage_bus',
@@ -272,11 +275,11 @@ const registerExtendedAE2Recipes = (event) => {
 		.duration(20*60)
 		.EUt(GTValues.VA[GTValues.EV])
 		.dimension('ad_astra:moon')
-		.cleanroom(CleanroomType.CLEANROOM)
 		.circuit(2)
-		.addMaterialInfo(true, true)
+		.addMaterialInfo(true, true))
 
 	//mod export bus
+	requiresOxygenation(
 	event.recipes.gtceu.me_assembler('expatternprovider:mod_export_bus')
 		.itemInputs(
 			'ae2:export_bus',
@@ -286,11 +289,11 @@ const registerExtendedAE2Recipes = (event) => {
 		.duration(20*60)
 		.EUt(GTValues.VA[GTValues.EV])
 		.dimension('ad_astra:moon')
-		.cleanroom(CleanroomType.CLEANROOM)
 		.circuit(3)
-		.addMaterialInfo(true, true)
+		.addMaterialInfo(true, true))
 
 	//mod storage bus
+	requiresOxygenation(
 	event.recipes.gtceu.me_assembler('expatternprovider:mod_storage_bus')
 		.itemInputs(
 			'ae2:storage_bus',
@@ -300,11 +303,11 @@ const registerExtendedAE2Recipes = (event) => {
 		.duration(20*60)
 		.EUt(GTValues.VA[GTValues.EV])
 		.dimension('ad_astra:moon')
-		.cleanroom(CleanroomType.CLEANROOM)
 		.circuit(3)
-		.addMaterialInfo(true, true)
+		.addMaterialInfo(true, true))
 
 	//precise export bus
+	requiresOxygenation(
 	event.recipes.gtceu.me_assembler('expatternprovider:precise_export_bus')
 		.itemInputs(
 			'ae2:export_bus',
@@ -314,11 +317,11 @@ const registerExtendedAE2Recipes = (event) => {
 		.duration(20*60)
 		.EUt(GTValues.VA[GTValues.EV])
 		.dimension('ad_astra:moon')
-		.cleanroom(CleanroomType.CLEANROOM)
 		.circuit(4)
-		.addMaterialInfo(true, true)
+		.addMaterialInfo(true, true))
 
 	//precise storage bus
+	requiresOxygenation(
 	event.recipes.gtceu.me_assembler('expatternprovider:precise_storage_bus')
 		.itemInputs(
 			'ae2:storage_bus',
@@ -328,11 +331,11 @@ const registerExtendedAE2Recipes = (event) => {
 		.duration(20*60)
 		.EUt(GTValues.VA[GTValues.EV])
 		.dimension('ad_astra:moon')
-		.cleanroom(CleanroomType.CLEANROOM)
 		.circuit(4)
-		.addMaterialInfo(true, true)
+		.addMaterialInfo(true, true))
 
 	//threshold export bus
+	requiresOxygenation(
 	event.recipes.gtceu.me_assembler('expatternprovider:threshold_export_bus')
 		.itemInputs(
 			'ae2:export_bus',
@@ -342,13 +345,13 @@ const registerExtendedAE2Recipes = (event) => {
 		.duration(20*60)
 		.EUt(GTValues.VA[GTValues.EV])
 		.dimension('ad_astra:moon')
-		.cleanroom(CleanroomType.CLEANROOM)
 		.circuit(4)
-		.addMaterialInfo(true, true)
+		.addMaterialInfo(true, true))
 
 	//#endregion
 
 	//active formation plane
+	requiresOxygenation(
 	event.recipes.gtceu.me_assembler('expatternprovider:active_formation_plane')
 		.itemInputs(
 			'ae2:formation_plane',
@@ -358,9 +361,8 @@ const registerExtendedAE2Recipes = (event) => {
 		.duration(20*60)
 		.EUt(GTValues.VA[GTValues.EV])
 		.dimension('ad_astra:moon')
-		.cleanroom(CleanroomType.CLEANROOM)
 		.circuit(8)
-		.addMaterialInfo(true, true)
+		.addMaterialInfo(true, true))
 
 	//pattern modifier
 	event.recipes.gtceu.assembler('expatternprovider:pattern_modifier')
@@ -374,6 +376,7 @@ const registerExtendedAE2Recipes = (event) => {
 		.addMaterialInfo(true)
 
 	//threshold level emitter
+	requiresOxygenation(
 	event.recipes.gtceu.me_assembler('expatternprovider:threshold_level_emitter')
 		.itemInputs(
 			'ae2:level_emitter',
@@ -383,9 +386,8 @@ const registerExtendedAE2Recipes = (event) => {
 		.duration(20*30)
 		.EUt(GTValues.VA[GTValues.HV])
 		.dimension('ad_astra:moon')
-		.cleanroom(CleanroomType.CLEANROOM)
 		.circuit(9)
-		.addMaterialInfo(true, true)
+		.addMaterialInfo(true, true))
 
 	//wireless tool
 	event.recipes.gtceu.assembler('expatternprovider:wireless_tool')
@@ -411,6 +413,7 @@ const registerExtendedAE2Recipes = (event) => {
 		.EUt(1920)
 
 	//wireless tool
+	requiresOxygenation(
 	event.recipes.gtceu.me_assembler('expatternprovider:wireless_connect')
 		.itemInputs(
 			'2x gtceu:iv_machine_casing',
@@ -424,9 +427,8 @@ const registerExtendedAE2Recipes = (event) => {
 		.duration(20*120)
 		.EUt(GTValues.VA[GTValues.EV])
 		.dimension('ad_astra:moon')
-		.cleanroom(CleanroomType.CLEANROOM)
 		.circuit(9)
-		.addMaterialInfo(true, true)
+		.addMaterialInfo(true, true))
 
 	//me packing tape
 	event.recipes.gtceu.assembler('expatternprovider:me_packing_tape')
@@ -488,6 +490,7 @@ const registerExtendedAE2Recipes = (event) => {
 	//#region ex molecular assembler
 
 	// IV
+	requiresOxygenation(
 	event.recipes.gtceu.me_assembler('expatternprovider:ex_molecular_assembler_iv')
 		.itemInputs(
 			'2x #gtceu:circuits/iv',
@@ -501,10 +504,10 @@ const registerExtendedAE2Recipes = (event) => {
 		.duration(20*180)
 		.EUt(GTValues.VA[GTValues.IV])
 		.dimension('ad_astra:moon')
-		.cleanroom(CleanroomType.CLEANROOM)
-		.circuit(5)
+		.circuit(5))
 
 	// ZPM CR
+	requiresOxygenation(
 	event.recipes.gtceu.me_assembler('expatternprovider:ex_molecular_assembler_zpm')
 		.itemInputs(
 			'2x #gtceu:circuits/zpm',
@@ -517,13 +520,13 @@ const registerExtendedAE2Recipes = (event) => {
 		.itemOutputs('8x expatternprovider:ex_molecular_assembler')
 		.duration(20*740)
 		.EUt(GTValues.VA[GTValues.ZPM])
-		.cleanroom(CleanroomType.CLEANROOM)
 		.dimension('ad_astra:moon')
-		.circuit(6)
+		.circuit(6))
 
 	//#endregion
 
 	//ex io port
+	requiresOxygenation(
 	event.recipes.gtceu.me_assembler('expatternprovider:ex_io_port')
 		.itemInputs(
 			'gtceu:ev_machine_casing',
@@ -536,10 +539,10 @@ const registerExtendedAE2Recipes = (event) => {
 		.duration(20*120)
 		.EUt(GTValues.VA[GTValues.EV])
 		.dimension('ad_astra:moon')
-		.cleanroom(CleanroomType.CLEANROOM)
 		.circuit(8)
-		.addMaterialInfo(true, true)
+		.addMaterialInfo(true, true))
 
+	requiresOxygenation(
 	event.recipes.gtceu.me_assembler('expatternprovider:ex_drive')
 		.itemInputs(
 			'gtceu:ev_machine_casing',
@@ -552,10 +555,10 @@ const registerExtendedAE2Recipes = (event) => {
 		.duration(20*60)
 		.EUt(GTValues.VA[GTValues.EV])
 		.dimension('ad_astra:moon')
-		.cleanroom(CleanroomType.CLEANROOM)
 		.circuit(9)
-		.addMaterialInfo(true, true)
+		.addMaterialInfo(true, true))
 
+	requiresOxygenation(
 	event.recipes.gtceu.me_assembler('expatternprovider:drive_upgrade')
 		.itemInputs(
 			'gtceu:ev_machine_casing',
@@ -567,26 +570,25 @@ const registerExtendedAE2Recipes = (event) => {
 		.duration(20*60)
 		.EUt(GTValues.VA[GTValues.EV])
 		.dimension('ad_astra:moon')
-		.cleanroom(CleanroomType.CLEANROOM)
 		.circuit(8)
-		.addMaterialInfo(true, true)
+		.addMaterialInfo(true, true))
 
+	requiresOxygenation(
 	event.recipes.gtceu.me_assembler('expatternprovider:ingredient_buffer')
 		.itemInputs('gtceu:hv_buffer', 'ae2:cell_component_1k')
 		.itemOutputs('expatternprovider:ingredient_buffer')
 		.duration(20*45)
 		.EUt(GTValues.VA[GTValues.EV])
 		.dimension('ad_astra:moon')
-		.cleanroom(CleanroomType.CLEANROOM)
 		.circuit(8)
-		.addMaterialInfo(true, true)
+		.addMaterialInfo(true, true))
 
 	//#endregion
 
 	//#region Matrix
 
 	//Frame
-
+	requiresOxygenation(
 	event.recipes.gtceu.me_assembler('expatternprovider:assembler_matrix_frame_moon')
 		.itemInputs(
 			'8x gtceu:plascrete',
@@ -602,11 +604,10 @@ const registerExtendedAE2Recipes = (event) => {
 		.duration(20*120)
 		.EUt(GTValues.VA[GTValues.LuV])
 		.dimension('ad_astra:moon')
-		.cleanroom(CleanroomType.CLEANROOM)
-		.circuit(9)
+		.circuit(9))
 
 	//Matrix Wall
-
+	requiresOxygenation(
 	event.recipes.gtceu.me_assembler('expatternprovider:assembler_matrix_wall_luv')
 		.itemInputs(
 			'#forge:frames/polytetrafluoroethylene',
@@ -618,12 +619,11 @@ const registerExtendedAE2Recipes = (event) => {
 		.duration(20*100)
 		.EUt(GTValues.VA[GTValues.LuV])
 		.dimension('ad_astra:moon')
-		.cleanroom(CleanroomType.CLEANROOM)
 		.circuit(1)
-		.addMaterialInfo(true, true)
+		.addMaterialInfo(true, true))
 
 	//Matrix Glass
-
+	requiresOxygenation(
 	event.recipes.gtceu.me_assembler("expatternprovider:assembler_matrix_glass")
 		.itemInputs(
 			'#forge:frames/polytetrafluoroethylene',
@@ -635,12 +635,11 @@ const registerExtendedAE2Recipes = (event) => {
 		.duration(20*100)
 		.EUt(GTValues.VA[GTValues.LuV])
 		.dimension('ad_astra:moon')
-		.cleanroom(CleanroomType.CLEANROOM)
 		.circuit(2)
-		.addMaterialInfo(true, true)
+		.addMaterialInfo(true, true))
 
 	//Matrix Pattern
-
+	requiresOxygenation(
 	event.recipes.gtceu.me_assembler("expatternprovider:assembler_matrix_pattern")
 		.itemInputs(
 			'#expatternprovider:extended_pattern_provider',
@@ -655,11 +654,10 @@ const registerExtendedAE2Recipes = (event) => {
 		.duration(20 * 180)
 		.EUt(GTValues.VA[GTValues.LuV])
 		.dimension('ad_astra:moon')
-		.cleanroom(CleanroomType.CLEANROOM)
-		.circuit(7)
+		.circuit(7))
 
 	//Matrix Crafter
-
+	requiresOxygenation(
 	event.recipes.gtceu.me_assembler("expatternprovider:assembler_matrix_crafter")
 		.itemInputs(
 			"#expatternprovider:oversize_interface",
@@ -674,11 +672,10 @@ const registerExtendedAE2Recipes = (event) => {
 		.duration(20 * 180)
 		.EUt(GTValues.VA[GTValues.LuV])
 		.dimension('ad_astra:moon')
-		.cleanroom(CleanroomType.CLEANROOM)
-		.circuit(7)
+		.circuit(7))
 
 	//Matrix Speed
-
+	requiresOxygenation(
 	event.recipes.gtceu.me_assembler("expatternprovider:assembler_matrix_speed_luv")
 		.itemInputs(
 			"megacells:mega_crafting_accelerator",
@@ -693,8 +690,7 @@ const registerExtendedAE2Recipes = (event) => {
 		.duration(20 * 180)
 		.EUt(GTValues.VA[GTValues.LuV])
 		.dimension('ad_astra:moon')
-		.cleanroom(CleanroomType.CLEANROOM)
-		.circuit(7)
+		.circuit(7))
 
 	event.shaped('expatternprovider:fishbig', [
 		'CCC',

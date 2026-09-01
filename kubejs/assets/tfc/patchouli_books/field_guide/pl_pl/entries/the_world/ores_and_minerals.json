@@ -70,7 +70,7 @@
     },
     {
       "type": "tfc:multimultiblock",
-      "text": "Native Gold Ores in Diorite.",
+      "text": "Rudy złota rodzimego w diorycie.",
       "multiblocks": [
         {
           "pattern": [
@@ -172,7 +172,7 @@
     },
     {
       "type": "tfc:multimultiblock",
-      "text": "Tetrahedrite Ores in Schist.",
+      "text": "Rudy tetraedrytu w łupku metamorficznym.",
       "multiblocks": [
         {
           "pattern": [
@@ -274,7 +274,7 @@
     },
     {
       "type": "tfc:multimultiblock",
-      "text": "Cassiterite Ores in Diorite.",
+      "text": "Rudy kasyterytu w diorycie.",
       "multiblocks": [
         {
           "pattern": [
@@ -325,7 +325,7 @@
     },
     {
       "type": "tfc:multimultiblock",
-      "text": "Bismuthinite Ores in Shale.",
+      "text": "Rudy bizmutynitu w łupku.",
       "multiblocks": [
         {
           "pattern": [
@@ -376,7 +376,7 @@
     },
     {
       "type": "tfc:multimultiblock",
-      "text": "Garnierite Ores in Gabbro.",
+      "text": "Rudy garnierytu w gabro.",
       "multiblocks": [
         {
           "pattern": [
@@ -427,7 +427,7 @@
     },
     {
       "type": "tfc:multimultiblock",
-      "text": "Hematite Ores in Andesite.",
+      "text": "Rudy hematytu w andezycie.",
       "multiblocks": [
         {
           "pattern": [
@@ -478,7 +478,7 @@
     },
     {
       "type": "tfc:multimultiblock",
-      "text": "Magnetite Ores in Limestone.",
+      "text": "Rudy magnetytu w wapieniu.",
       "multiblocks": [
         {
           "pattern": [
@@ -529,7 +529,7 @@
     },
     {
       "type": "tfc:multimultiblock",
-      "text": "Limonite Ores in Chalk.",
+      "text": "Rudy limonitu w kredzie.",
       "multiblocks": [
         {
           "pattern": [
@@ -674,7 +674,7 @@
         }
       },
       "name": "",
-      "text": "Bituminous Coal in Chert.",
+      "text": "Węgiel kamienny w czercie.",
       "enable_visualize": false
     },
     {
@@ -687,7 +687,7 @@
     },
     {
       "type": "tfc:multimultiblock",
-      "text": "Variants of kaolin clay.",
+      "text": "Warianty gliny kaolinowej.",
       "multiblocks": [
         {
           "pattern": [
@@ -1053,7 +1053,7 @@
         }
       },
       "name": "",
-      "text": "Kimberlite in Gabbro.",
+      "text": "Kimberlit w gabro.",
       "enable_visualize": false
     },
     {

@@ -183,6 +183,8 @@
   "ftbchunks.waypoints.in_world_waypoints": "Pokaż punkty nawigacyjne w świecie",
   "ftbchunks.waypoints.waypoint_dot_fade_distance": "Min. odległość zanikania kropki",
   "ftbchunks.waypoints.waypoint_fade_distance": "Min. odległość zanikania nadajnika",
+  "ftbchunks.waypoints.waypoint_focus_distance": "Dystans wybranego punktu nawigacyjnego",
+  "ftbchunks.waypoints.waypoint_focus_scale": "Skalowanie wybranego punktu nawigacyjnego",
   "ftbchunks.waypoints.waypoint_max_distance": "Maksymalna odległość rysowania punktów nawigacyjnych",
   "ftbchunks.zoom_warning": "Maksymalne powiększenie ograniczone ze względu na ograniczenia pamięci",
   "ftbteamsconfig.ftbchunks": "Właściwości FTB Chunks",

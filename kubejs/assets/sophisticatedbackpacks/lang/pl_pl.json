@@ -52,6 +52,7 @@
 	"gui.sophisticatedbackpacks.status.backpack_cannot_be_open_by_another_player": "Ten plecak nie może być otwarty przez innego gracza",
 	"gui.sophisticatedbackpacks.status.mob_catcher_boss_blocked": "Boss nie może być złapany",
 	"gui.sophisticatedbackpacks.status.mob_catcher_captured": "Złapano %s",
+	"gui.sophisticatedbackpacks.status.mob_catcher_invalid_entity": "Nie można złapać tego moba",
 	"gui.sophisticatedbackpacks.status.mob_catcher_players_blocked": "Gracze nie mogą być złapani",
 	"gui.sophisticatedbackpacks.status.mob_catcher_released": "Wypuszczono %s",
 	"gui.sophisticatedbackpacks.status.no_space_for_mainhand_item": "Nie ma miejsca na przedmiot w plecaku ani w ekwipunku gracza.",
@@ -197,6 +198,8 @@
 	"key.sophisticatedbackpacks.toggle_upgrade_4": "Włączanie/wyłączanie ulepszenia w 4 slocie",
 	"key.sophisticatedbackpacks.toggle_upgrade_5": "Włączanie/wyłączanie ulepszenia w 5 slocie",
 	"key.sophisticatedbackpacks.tool_swap": "Zamień narzędzie na podstawie bieżącego bloku/przedmiotu",
+	"sophisticatedbackpacks.configuration.basicMaxSlotCost": "Podstawowy maks. koszt slotu",
+	"sophisticatedbackpacks.configuration.disallowInventoryEntities": "Blokuj moby z ekwipunkiem",
 	"sophisticatedbackpacks.configuration.entityBlockList": "Zablokowane typy bytów",
 	"sophisticatedbackpacks.configuration.hostileOverrides": "Zastąpienie wrogich bytów",
 	"sophisticatedbackpacks.configuration.passiveOverrides": "Zastąpienie pasywnych bytów"
