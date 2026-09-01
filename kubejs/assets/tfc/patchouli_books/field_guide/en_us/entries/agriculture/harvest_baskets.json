@@ -1,0 +1,42 @@
+{
+    "name": "Harvest Baskets",
+    "icon": "tfg:harvest_basket",
+    "category": "tfc:agriculture",
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "title": "Harvest Baskets",
+            "item": {
+                "tag": "tfg:harvester"
+            },
+            "text": "Made for those with a short stature―$(thing)Harvest Baskets$() are just the tool needed for plucking trees and bushes of fruit.$(br)To use a harvest basket, $(item)$(k:key.use)$() on a $(l:the_world/wild_fruits#fruit_trees)Fruit Tree$(), $(l:the_world/wild_fruits#tall_bushes)Fruit Bush$(), $(l:agriculture/growing_crops#growing_grapes)Grape Trellis$(), $(l:agriculture/greenhouse#bonsai_planter)Bonsai Planter$(), $(l:agriculture/greenhouse#trellis_planter)Trellis Planter$(), or $(l:agriculture/greenhouse#hanging_planter)Hanging Planter$() and all blocks within a $(thing)7-block radius$() will be picked."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "A regular harvest basket has a durability of $(thing)128$(), while the aluminium harvest basket does not take any damage on use. Harvest baskets can also be used by things like the $(thing)Create Deployer$() to automate harvesting. The baskets will use durability in the process."
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": "Harvest Basket",
+            "recipe": "tfg:shaped/harvest_basket_from_papyrus",
+            "text": "A basic $(item)Harvest Basket$() can be made of soaked papyrus or hardwood."
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Further Reading",
+            "anchor": "relations",
+            "entries": [
+                "tfc:agriculture/growing_crops",
+                "tfc:agriculture/greenhouse",
+                "tfc:agriculture/composting",
+                "tfc:the_world/wild_crops",
+                "tfc:the_world/wild_fruits"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 8,
+    "extra_recipe_mappings": {
+        "tag:tfg:harvester": 0
+    }
+}

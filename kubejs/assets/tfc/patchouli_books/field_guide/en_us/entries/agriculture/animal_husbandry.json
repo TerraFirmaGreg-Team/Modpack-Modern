@@ -1,0 +1,128 @@
+{
+    "name": "Animal Husbandry",
+    "category": "tfc:agriculture",
+    "icon": "minecraft:textures/item/egg.png",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "anchor": "index",
+            "text": "$(li)$(bold)$(l:agriculture/animal_husbandry#intro)Livestock$()$(li)$(bold)$(l:agriculture/animal_husbandry#familiarity)Familiarity$()$(li)$(bold)$(l:agriculture/animal_husbandry#mammals)Mammals$()$(li2)$(l:agriculture/animal_husbandry#wooly_animals)Wooly Mammals$()$(li2)$(l:agriculture/animal_husbandry#dairy_animals)Dairy Mammals$()$(li2)$(l:agriculture/animal_husbandry#equines)Equines$()$(li)$(bold)$(l:agriculture/animal_husbandry#oviparous_animals)Oviparous Animals$()$(li)$(bold)$(l:agriculture/animal_husbandry#feeding_trough)Feeding Troughs$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "intro",
+            "title": "Introduction",
+            "text": "$(thing)Livestock$() are animals that can be tamed and bred together by the player. Livestock can be either $(thing)male$() or $(thing)female$(). For some animals, it is possible to tell their sex visually. For example, male pigs have tusks."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Livestock experience $(thing)aging$(). They are born as babies, which are smaller and cannot provide things for the player. After a certain number of days, they grow into $(thing)adult$() animals, which are able to do things like breed or produce milk. After they breed or are used enough times, animals become $(thing)old$(), and are only useful for their meat."
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/old_cow.png"
+            ],
+            "text": "This bull is old and cannot breed, so it has a faded coat and grey, unseeing eyes.",
+            "border": true
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Familiarity",
+            "anchor": "familiarity",
+            "text": "Livestock can be fed to raise $(thing)familiarity$(). Each animal has foods that it prefers to eat. To feed an animal, $(item)$(k:key.sneak)$() and $(item)$(k:key.use)$() with food in your hand.$(br)Familiarity is required for most livestock interactions. Familiarity will be passed down to offspring from the mother's side―at a reduced level."
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/unfamiliarized_pig.png"
+            ],
+            "text": "Livestock have a $(thing)Familiarity Indicator$() that shows how familiar they are with you. Hold $(item)$(k:key.sneak)$() and look at the animal to reveal it.",
+            "border": true
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/no_familiarity_decay_pig.png"
+            ],
+            "text": "Familiarity decays a little each day if not fed. Raising the familiarity enough prevents decay, indicated by the white outlined heart.",
+            "border": true
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/familiarity_limit_pig.png"
+            ],
+            "text": "Adult livestock cannot be fully familiarized, indicated by the red outlined heart. Babies can reach 100% familiarity.",
+            "border": true
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Mammals",
+            "anchor": "mammals",
+            "text": "$(thing)Mammals$() are livestock that experience $(thing)Pregnancy$(). Adult mammals that are above 30% familiarity and have been fed that day will mate, given that they are of opposite genders and near each other. The female animal will become $(thing)pregnant$(), which causes it to have children a set number of days after fertilization.$(br)An example is $(l:the_world/wild_animals#pig)Pigs$()."
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Wooly Mammals",
+            "anchor": "wooly_animals",
+            "text": "$(thing)Wooly Animals$() are $(l:agriculture/animal_husbandry#mammals)Mammals$() that can be $(thing)Sheared$() if they are adults and familiar enough to you. Some examples are $(l:the_world/wild_animals#sheep)Sheep$(), $(l:the_world/wild_animals#alpaca)Alpacas$(), and $(l:the_world/wild_animals#musk_ox)Musk Oxen$()."
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Dairy Mammals",
+            "anchor": "dairy_animals",
+            "text": "$(thing)Dairy Animals$() are mammals that make $(thing)Milk$(). Female dairy animals can be clicked with a bucket to obtain milk. Some examples are $(l:the_world/wild_animals#goat)Goats$(), $(l:the_world/wild_animals#cow)Cows$(), and $(l:the_world/wild_animals#yak)Yaks$()."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "equines",
+            "title": "Equines",
+            "text": "$(thing)Equines$() are $(l:agriculture/animal_husbandry#mammals)Mammals$() that can be ridden when tamed. They become rideable after reaching 15% familiarity when equiped with a $(l:agriculture/leather_making)Saddle$().$(br)$(l:the_world/wild_animals#mule)Mules$() and $(l:the_world/wild_animals#donkey)Donkeys$() can hold any chest or barrel. If holding a barrel, $(item)$(k:key.use)$() while holding $(item)$(k:key.sneak)$() can be used to remove it. The same keys while holding a bucket can be used to drain fluid from the barrel."
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": "Oviparous Animals",
+            "anchor": "oviparous_animals",
+            "recipe": "tfc:crafting/nest_box",
+            "text": "$(thing)Oviparous Animals$() are not $(l:agriculture/animal_husbandry#mammals)Mammals$(), and instead produce children by laying $(thing)Eggs$(). They need a $(thing)Nest Box$() to lay eggs, which they are capable of locating on their own.$(br)Some examples are $(l:the_world/wild_animals#duck)Ducks$(), $(l:the_world/wild_animals#quail)Quails$(), and $(l:the_world/wild_animals#chicken)Chickens$()."
+        },
+        {
+            "type": "tfc:heat_recipe",
+            "recipe": "tfg:heating/forge_eggs_to_tfc_food_cooked_egg",
+            "text": "$(thing)Eggs$() can be cooked or boiled for food. Male oviparous animals can fertilize females, which causes the next egg laid in the nest box to be fertilized. Fertilized eggs will have a tooltip with how long until they are ready to hatch."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "Feeding Troughs",
+            "anchor": "feeding_trough",
+            "item": "tfcgroomer:bismuth_bronze_grooming_station,tfcgroomer:black_bronze_grooming_station,tfcgroomer:bronze_grooming_station,tfcgroomer:copper_grooming_station,tfcgroomer:wrought_iron_grooming_station,tfcgroomer:steel_grooming_station,tfcgroomer:black_steel_grooming_station,tfcgroomer:red_steel_grooming_station,tfcgroomer:blue_steel_grooming_station",
+            "text": "$(thing)Feeding Troughs$() can automatically feed animals in an area specified by its tooltip. Higher tier $(l:craftsmanship/metallurgy)Metals$() increase the feeding range.$(br)To add animal feed―and optionally enable automatic breeding―open the troughs interface with $(item)$(k:key.use)$()."
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Further Reading",
+            "anchor": "relations",
+            "entries": [
+                "tfc:agriculture/growing_crops",
+                "tfc:agriculture/weaving",
+                "tfc:the_world/wild_crops",
+                "tfc:the_world/wild_animals",
+                "tfc:agriculture/leather_making"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "priority": true,
+    "extra_recipe_mappings": {
+        "tfcgroomer:bismuth_bronze_grooming_station": 14,
+        "tfcgroomer:black_bronze_grooming_station": 14,
+        "tfcgroomer:bronze_grooming_station": 14,
+        "tfcgroomer:copper_grooming_station": 14,
+        "tfcgroomer:wrought_iron_grooming_station": 14,
+        "tfcgroomer:steel_grooming_station": 14,
+        "tfcgroomer:black_steel_grooming_station": 14,
+        "tfcgroomer:red_steel_grooming_station": 14,
+        "tfcgroomer:blue_steel_grooming_station": 14
+    }
+}

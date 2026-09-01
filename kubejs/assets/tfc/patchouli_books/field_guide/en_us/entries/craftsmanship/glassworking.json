@@ -31,7 +31,7 @@
         {
             "type": "patchouli:text",
             "anchor": "tools",
-            "text": "Glassworking is done by starting with a glass batch, and then completing a series of steps. These steps may require specific tools:$(br)$(li)A $(l:craftsmanship/glassworking#blowpipe)Blowpipe$(), to $(thing)Blow$() and $(thing)Stretch$().$(li)A $(l:craftsmanship/glassworking#paddle)Paddle$(), to $(thing)Flatten$().$(li)$(l:craftsmanship/glassworking#jacks)Jacks$(), to $(thing)Pinch$().$(li)A $(l:craftsmanship/glassworking#saw)Gem Saw$(), to $(thing)Saw$().$(li)And a $(l:craftsmanship/weaving)Wool Cloth$(), to $(thing)Roll$().",
+            "text": "Glassworking is done by starting with a glass batch, and then completing a series of steps. These steps may require specific tools:$(br)$(li)A $(l:craftsmanship/glassworking#blowpipe)Blowpipe$(), to $(thing)Blow$() and $(thing)Stretch$().$(li)A $(l:craftsmanship/glassworking#paddle)Paddle$(), to $(thing)Flatten$().$(li)$(l:craftsmanship/glassworking#jacks)Jacks$(), to $(thing)Pinch$().$(li)A $(l:craftsmanship/glassworking#saw)Gem Saw$(), to $(thing)Saw$().$(li)And a $(l:agriculture/weaving)Wool Cloth$(), to $(thing)Roll$().",
             "title": "Tools of the Trade"
         },
         {
@@ -70,7 +70,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "$(bold)Flatten$()$(br)Use the $(thing)Blowpipe$() while holding a $(l:craftsmanship/glassworking#paddle)Paddle$() in your main hand.$(br2)$(bold)Pinch$()$(br)Use the $(thing)Blowpipe$() while holding $(l:craftsmanship/glassworking#jacks)Jacks$() in your main hand.$(br2)$(bold)Saw$()$(br)Use the $(thing)Blowpipe$() while holding a $(l:craftsmanship/glassworking#saw)Gem Saw$() in your main hand.$(br2)$(bold)Roll$()$(br)Use the $(thing)Blowpipe$() with a $(l:craftsmanship/weaving)Wool Cloth$() in your main hand."
+            "text": "$(bold)Flatten$()$(br)Use the $(thing)Blowpipe$() while holding a $(l:craftsmanship/glassworking#paddle)Paddle$() in your main hand.$(br2)$(bold)Pinch$()$(br)Use the $(thing)Blowpipe$() while holding $(l:craftsmanship/glassworking#jacks)Jacks$() in your main hand.$(br2)$(bold)Saw$()$(br)Use the $(thing)Blowpipe$() while holding a $(l:craftsmanship/glassworking#saw)Gem Saw$() in your main hand.$(br2)$(bold)Roll$()$(br)Use the $(thing)Blowpipe$() with a $(l:agriculture/weaving)Wool Cloth$() in your main hand."
         },
         {
             "type": "patchouli:image",
@@ -524,7 +524,8 @@
                 "tfc:craftsmanship/charcoal_forge",
                 "tfc:craftsmanship/crucible",
                 "tfc:craftsmanship/charcoal_pit",
-                "tfc:craftsmanship/anvils"
+                "tfc:craftsmanship/anvils",
+                "tfc:agriculture/weaving"
             ]
         }
     ],

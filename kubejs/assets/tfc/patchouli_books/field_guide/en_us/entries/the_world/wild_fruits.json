@@ -6215,7 +6215,7 @@
         {
             "type": "patchouli:text",
             "anchor": "pineapple",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 20 - 32 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 30 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 250 - 500mm$(br2)Pineapple bushes grow from March to June, start flowering in July and August, and bear fruit in September.$(br2)They can be found in forests and are used to make $(item)Pineapple Leather$().",
+            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 20 - 32 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 30 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 250 - 500mm$(br2)Pineapple bushes grow from March to June, start flowering in July and August, and bear fruit in September.$(br2)They can be found in forests and are used to make $(l:agriculture/leather_making#pineapple_leather)Pineapple Leather$().",
             "title": "Pineapple Bush"
         },
         {

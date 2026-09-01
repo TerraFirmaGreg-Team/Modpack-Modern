@@ -1,11 +1,11 @@
 {
     "name": "Leather Making",
-    "category": "tfc:craftsmanship",
+    "category": "tfc:agriculture",
     "icon": "minecraft:leather",
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "$(item)Leather$() is a sturdy material formed from animal hides. It is required to craft $(item)Armor$(), $(item)Saddles$(), or a $(l:craftsmanship/charcoal_forge#bellows)Bellows$(). $(item)Raw Hides$() must be treated through several processes: $(l:craftsmanship/leather_making#soaking)soaking$(), $(l:craftsmanship/leather_making#scraping)scraping$(), $(l:craftsmanship/leather_making#preparing)preparing$(), and $(l:craftsmanship/leather_making#tanning)tanning$() to turn them into $(item)Leather$()."
+            "text": "$(item)Leather$() is a sturdy material formed from animal hides. It is required to craft $(item)Armor$(), $(item)Saddles$(), or a $(l:craftsmanship/charcoal_forge#bellows)Bellows$(). $(item)Raw Hides$() must be treated through several processes: $(l:agriculture/leather_making#soaking)soaking$(), $(l:agriculture/leather_making#scraping)scraping$(), $(l:agriculture/leather_making#preparing)preparing$(), and $(l:agriculture/leather_making#tanning)tanning$() to turn them into $(item)Leather$()."
         },
         {
             "type": "patchouli:spotlight",
@@ -30,7 +30,7 @@
             "item": "tfc:small_scraped_hide,tfc:medium_scraped_hide,tfc:large_scraped_hide",
             "title": "Scraping",
             "link_recipes": true,
-            "text": "After soaking, $(thing)Soaked Hides$() must be scraped which removes any excess material. In order to scrape hides, place the hide on the side of a $(thing)Log$(). With a $(item)Knife$() or $(item)Scrapping Knife$(), $(item)$(k:key.use)$() on each part of the hide and it will start to change texture."
+            "text": "After soaking, $(thing)Soaked Hides$() must be scraped which removes any excess material. In order to scrape hides, place the hide on the side of a $(thing)Log$(). With a $(item)Knife$() or $(item)Scrapping Knife$(), $(item)$(k:key.use)$() on each part of the hide, and it will start to change texture."
         },
         {
             "type": "patchouli:image",
@@ -56,10 +56,19 @@
             "text": "Finally, $(thing)Prepared Hides$() must be sealed in a $(l:craftsmanship/barrels#tannin)Barrel of Tannin$(), which is an acidic chemical compound that helps to convert the hide to $(thing)Leather$(). After another eight hours, you can remove the $(thing)Leather$() from the barrel."
         },
         {
+            "type": "patchouli:spotlight",
+            "anchor": "pineapple_leather",
+            "title": "Leather Alternative",
+            "item": "firmalife:pineapple_leather",
+            "text": "An alternative to animal leather is $(item)Pineapple Leather$(). Which can be produced by first drying $(l:the_world/wild_fruits#pineapple)Pineapples$(), stripping them into string, and then $(l:agriculture/weaving)Weaving$() the pineapple string into pineapple leather."
+        },
+        {
             "type": "patchouli:relations",
             "title": "Further Reading",
             "anchor": "relations",
             "entries": [
+                "tfc:agriculture/animal_husbandry",
+                "tfc:the_world/wild_animals",
                 "tfc:craftsmanship/sticks_and_stones",
                 "tfc:craftsmanship/metallurgy",
                 "tfc:craftsmanship/charcoal_forge",
@@ -69,7 +78,7 @@
         }
     ],
     "read_by_default": true,
-    "sortnum": 12,
+    "sortnum": 10,
     "extra_recipe_mappings": {
         "tfc:small_raw_hide": 1,
         "tfc:medium_raw_hide": 1,

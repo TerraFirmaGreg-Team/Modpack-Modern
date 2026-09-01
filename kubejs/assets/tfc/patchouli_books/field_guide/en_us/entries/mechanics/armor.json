@@ -5,12 +5,12 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "$(thing)Armor$() provides protection against attacks from predators and monsters. The quality of armor scales with the tier of the $(thing)Metal$(), with $(l:mechanics/leather_making)Leather$() being the weakest and $(l:mechanics/steel)Colored Steels$() being the strongest."
+      "text": "$(thing)Armor$() provides protection against attacks from predators and monsters. The quality of armor scales with the tier of the $(thing)Metal$(), with $(l:agriculture/leather_making)Leather$() being the weakest and $(l:mechanics/steel)Colored Steels$() being the strongest."
     },
     {
       "type": "tfc:knapping_recipe",
       "recipe": "tfc:leather_knapping/chestplate",
-      "text": "Leather armor is $(thing)Knapped$() from $(l:mechanics/leather_making)Leather$(). It does not last long, but provides some decent protection if you have a full suit."
+      "text": "Leather armor is $(thing)Knapped$() from $(l:agriculture/leather_making)Leather$(). It does not last long, but provides some decent protection if you have a full suit."
     },
     {
       "type": "tfc:anvil_recipe",

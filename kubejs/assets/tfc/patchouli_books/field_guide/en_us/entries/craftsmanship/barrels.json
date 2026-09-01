@@ -37,7 +37,7 @@
             "type": "tfc:instant_barrel_recipe",
             "anchor": "limewater",
             "recipe": "tfc:barrel/limewater",
-            "text": "$(bold)Limewater$() is made by adding $(item)Flux$() to a barrel of $(thing)Water$(). A single $(item)Flux$() is required for every $(thing) 500 mB$() of $(thing)Water$(). $(thing)Limewater$() is a reagent used in $(l:craftsmanship/leather_making)Leather Making$(), and is used to make $(thing)Mortar$()."
+            "text": "$(bold)Limewater$() is made by adding $(item)Flux$() to a barrel of $(thing)Water$(). A single $(item)Flux$() is required for every $(thing) 500 mB$() of $(thing)Water$(). $(thing)Limewater$() is a reagent used in $(l:agriculture/leather_making)Leather Making$(), and is used to make $(thing)Mortar$()."
         },
         {
             "type": "tfc:sealed_barrel_recipe",
@@ -117,7 +117,7 @@
                 "tfc:craftsmanship/sticks_and_stones",
                 "tfc:craftsmanship/metallurgy",
                 "tfc:craftsmanship/pottery",
-                "tfc:craftsmanship/leather_making",
+                "tfc:agriculture/leather_making",
                 "tfc:cooking/decay",
                 "tfc:cooking/cheese"
             ]

@@ -1,0 +1,69 @@
+{
+    "name": "Weaving",
+    "category": "tfc:agriculture",
+    "icon": "tfc:spindle",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(thing)Weaving$() is the process of combining different kinds of string into $(thing)Cloth$(). While the last step of weaving is done in a $(thing)Loom$(), some cloths such as $(thing)Wool$(), obtained from $(l:agriculture/animal_husbandry#wooly_animals)Wooly Animals$(), requires a $(thing)Spindle$() to obtain $(thing)Wool Yarn$() in order to be woven."
+        },
+        {
+            "type": "tfc:knapping_recipe",
+            "recipe": "tfc:clay_knapping/spindle_head",
+            "anchor": "spindle",
+            "text": "The $(thing)Unfired Spindle Head$() is knapped from clay. It can then be $(l:mechanics/heating)fired$() to make a $(thing)Spindle Head$(). To complete the spindle, craft it with a $(thing)Stick$(). Spindles can also be made from $(l:craftsmanship/metallurgy)Metal$()."
+        },
+        {
+            "type": "patchouli:crafting",
+            "anchor": "spinning",
+            "title": "Spinning",
+            "recipe": "tfc:kjs/damage/shapeless/wool_yarn",
+            "text": "Crafting $(thing)Wool$() with a Spindle yields $(thing)Wool Yarn$()."
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": "The Loom",
+            "anchor": "loom",
+            "recipe": "tfc:crafting/wood/acacia_loom",
+            "text": "The loom is crafted from just $(thing)Lumber$() and a $(thing)Stick$()."
+        },
+        {
+            "type": "tfc:loom_recipe",
+            "anchor": "wool_cloth",
+            "Title": "Cloth",
+            "recipe": "tfc:loom/wool_cloth",
+            "text": "The recipe for $(thing)Wool Cloth$() takes 16 $(thing)Wool Yarn$(). Adding to the loom is done with $(item)$(k:key.use)$(). Then, hold down $(item)$(k:key.use)$() to begin working the loom. When it is done, press $(item)$(k:key.use)$() to retrieve the item."
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/loom_empty.png",
+                "tfc:textures/gui/book/tutorial/loom_full.png",
+                "tfc:textures/gui/book/tutorial/loom_working.png",
+                "tfc:textures/gui/book/tutorial/loom_done.png"
+            ],
+            "text": "The stages of the loom working.",
+            "border": true
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Further Reading",
+            "anchor": "relations",
+            "entries": [
+                "tfc:agriculture/growing_crops",
+                "tfc:agriculture/animal_husbandry",
+                "tfc:the_world/wild_crops",
+                "tfc:the_world/wild_animals",
+                "tfc:craftsmanship/pottery",
+                "tfc:craftsmanship/glassworking"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 9,
+    "extra_recipe_mappings": {
+        "tag:tfg:tools/spindles": 1,
+        "tag:forge:string": 2,
+        "tag:tfc:looms": 3
+    }
+}
