@@ -1731,6 +1731,49 @@
             ]
         },
         {
+            "pakku_id": "kp36qbVHYNPX0bhN",
+            "pakku_links": [
+                "veH5npGnUXYc7pcO",
+                "PSBFsSgUJc0xSMbY"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "belroft-motor-company-iv-mts"
+            },
+            "name": {
+                "curseforge": "Belroft Transport Empire (IV / MTS) - Boats, cars, vans, motorcycles & accessories! (Belroft Motor Company)"
+            },
+            "id": {
+                "curseforge": "1618243"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "[1.16.5-1.20.1] Belroft Motors Mk 7-4.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8770/256/[1.16.5-1.20.1] Belroft Motors Mk 7-4.jar",
+                    "id": "8770256",
+                    "parent_id": "1618243",
+                    "hashes": {
+                        "sha1": "0f6da8c075ed57613fc79113d8b6bc7366097a40",
+                        "md5": "5a6f7b0acb111148649c36d6c2429a13"
+                    },
+                    "required_dependencies": [
+                        "292217",
+                        "286703"
+                    ],
+                    "size": 14674034,
+                    "date_published": "2026-08-30T15:10:19.113Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "jfrdEXIw393ydoyH",
             "pakku_links": [
                 "64uacGcEw697jVGs"
@@ -4345,6 +4388,77 @@
                     ],
                     "size": 177483,
                     "date_published": "2026-05-05T19:18:41.909874Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "E90TD7UTrPv6Gumc",
+            "pakku_links": [
+                "Nw8xTCQngHA15ilh",
+                "PSBFsSgUJc0xSMbY"
+            ],
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "curseforge": "create-automotives",
+                "modrinth": "create-automotives"
+            },
+            "name": {
+                "curseforge": "Create: Automotives",
+                "modrinth": "Create: Automotives"
+            },
+            "id": {
+                "curseforge": "1439308",
+                "modrinth": "yipFHNZ2"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "create-automotives-1.20.1-V2.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7985/7/create-automotives-1.20.1-V2.jar",
+                    "id": "7985007",
+                    "parent_id": "1439308",
+                    "hashes": {
+                        "sha1": "ab8452c17d5c3d5c27a2060079ae412a7bf0a978",
+                        "md5": "ab1b4386d95a19a07ded79067a863331"
+                    },
+                    "required_dependencies": [
+                        "286703",
+                        "328085"
+                    ],
+                    "size": 8191421,
+                    "date_published": "2026-04-25T22:41:56.357Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "create-automotives-1.20.1-V2.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/yipFHNZ2/versions/WTfgaLyF/create-automotives-1.20.1-V2.jar",
+                    "id": "WTfgaLyF",
+                    "parent_id": "yipFHNZ2",
+                    "hashes": {
+                        "sha512": "9b7d3db83562af1b33e92c360d587faf3c9776f5c06574210c4d05fec50555c1307f59595d7f9929da3f107816f588ab292904e8f5602b907953cb125aa59757",
+                        "sha1": "ab8452c17d5c3d5c27a2060079ae412a7bf0a978"
+                    },
+                    "required_dependencies": [
+                        "BCzBuhJ5",
+                        "LNytGWDc"
+                    ],
+                    "size": 8191421,
+                    "date_published": "2026-04-25T22:47:48.762066Z"
                 }
             ]
         },
@@ -9403,6 +9517,108 @@
                     "required_dependencies": [],
                     "size": 57631,
                     "date_published": "2026-07-14T07:06:40.157Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "PSBFsSgUJc0xSMbY",
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "curseforge": "minecraft-transport-simulator",
+                "modrinth": "immersive-vehicles"
+            },
+            "name": {
+                "curseforge": "Immersive Vehicles (MTS)",
+                "modrinth": "Immersive Vehicles"
+            },
+            "id": {
+                "curseforge": "286703",
+                "modrinth": "BCzBuhJ5"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "Immersive Vehicles-1.20.1-24.0.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7926/604/Immersive Vehicles-1.20.1-24.0.0.jar",
+                    "id": "7926604",
+                    "parent_id": "286703",
+                    "hashes": {
+                        "sha1": "efe6962bf0304eb7ac234daa75551bf8e30ef3b7",
+                        "md5": "96fd07315c988dff6e5dff255ec4ba79"
+                    },
+                    "required_dependencies": [],
+                    "size": 6254897,
+                    "date_published": "2026-04-14T17:17:22.003Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "Immersive Vehicles-1.20.1-24.0.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/BCzBuhJ5/versions/xBHmZvmC/Immersive Vehicles-1.20.1-24.0.0.jar",
+                    "id": "xBHmZvmC",
+                    "parent_id": "BCzBuhJ5",
+                    "hashes": {
+                        "sha512": "9f5acbef86883347a9a14f28efdbff29e8817e131bf2ef99897a90842f169dbd4a9428d35480fded1d8a5f0e4931d5711877244782d5cab59b5cbd903a960199",
+                        "sha1": "efe6962bf0304eb7ac234daa75551bf8e30ef3b7"
+                    },
+                    "required_dependencies": [],
+                    "size": 6254897,
+                    "date_published": "2026-04-16T02:58:50.087818Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "veH5npGnUXYc7pcO",
+            "pakku_links": [
+                "PSBFsSgUJc0xSMbY"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "transport-simulator-official-vehicle-set"
+            },
+            "name": {
+                "curseforge": "Immersive Vehicles (MTS/IV) - Official Content Pack - [OCP] - Planes, Cars, Helicopters & More!"
+            },
+            "id": {
+                "curseforge": "292217"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "MTS Official Pack-1.20.1-V29.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7933/733/MTS Official Pack-1.20.1-V29.jar",
+                    "id": "7933733",
+                    "parent_id": "292217",
+                    "hashes": {
+                        "sha1": "9307186fe7f109f0fcc8397bb4457cb956822b88",
+                        "md5": "f21a397cce53a4ef26c09c1c65a6a3d7"
+                    },
+                    "required_dependencies": [
+                        "286703"
+                    ],
+                    "size": 70997298,
+                    "date_published": "2026-04-16T03:41:42.160Z"
                 }
             ]
         },
