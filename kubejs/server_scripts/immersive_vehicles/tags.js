@@ -263,22 +263,13 @@ function registerImmersiveVehiclesItemTags(event) {
 		'mts:mtsofficialpack.propellerrotor',
 		'mts:mtsofficialpack.propellerrotor206'
 	]);
-	event.add('mts:road_props', [
+	event.add('mts:road_signs', [
 		'mts:mtsofficialpack.sign_speedlimit',
 		'mts:mtsofficialpack.sign_stop',
 		'mts:mtsofficialpack.sign_turn_left',
 		'mts:mtsofficialpack.sign_turn_right',
 		'mts:mtsofficialpack.sign_wrongway',
 		'mts:mtsofficialpack.sign_yield',
-		'mts:mtsofficialpack.crashbarrier',
-		'mts:mtsofficialpack.signalcontroller',
-		'mts:mtsofficialpack.pole_crossingsignal',
-		'mts:mtsofficialpack.pole_flashingsignal_red',
-		'mts:mtsofficialpack.pole_flashingsignal_yellow',
-		'mts:mtsofficialpack.pole_trafficsignal',
-		'mts:mtsofficialpack.trafficcone',
-		'mts:mtsofficialpack.pole_core',
-		'mts:mtsofficialpack.pole_streetlight',
 		'mts:mtsofficialpack.sign_bump',
 		'mts:mtsofficialpack.sign_cow',
 		'mts:mtsofficialpack.sign_crosswalk',
@@ -297,7 +288,18 @@ function registerImmersiveVehiclesItemTags(event) {
 		'mts:mtsofficialpack.sign_restrictionsend',
 		'mts:mtsofficialpack.sign_right_direction',
 		'mts:mtsofficialpack.sign_route',
-		'mts:mtsofficialpack.telephonebooth'
+	]);
+	event.add('mts:road_props', [
+		'mts:mtsofficialpack.signalcontroller',
+		'mts:mtsofficialpack.pole_crossingsignal',
+		'mts:mtsofficialpack.pole_flashingsignal_red',
+		'mts:mtsofficialpack.pole_flashingsignal_yellow',
+		'mts:mtsofficialpack.pole_trafficsignal',
+		'mts:mtsofficialpack.trafficcone',
+		'mts:mtsofficialpack.pole_core',
+		'mts:mtsofficialpack.pole_streetlight',
+		'mts:mtsofficialpack.telephonebooth',
+		'#mts:road_signs'
 	]);
 	event.add('mts:carseats', [
 		'mts:mtsofficialpack.carseat_black',
@@ -306,7 +308,9 @@ function registerImmersiveVehiclesItemTags(event) {
 		'mts:mtsofficialpack.carseat_maroon',
 		'mts:mtsofficialpack.carseat_red',
 		'mts:mtsofficialpack.carseat_tan', 
-		'mts:mtsofficialpack.carseat_white',
+		'mts:mtsofficialpack.carseat_white'
+	]);
+	event.add('mts:avseats', [
 		'mts:mtsofficialpack.seatblack', 
 		'mts:mtsofficialpack.seatblue',
 		'mts:mtsofficialpack.seatbrown',
@@ -318,6 +322,7 @@ function registerImmersiveVehiclesItemTags(event) {
 		'mts:mtsofficialpack.seatwhite',
 		'mts:mtsofficialpack.seatyellow'
 	]);
+	event.add('mts:vehicle_seats', ['#mts:carseats', '#mts:avseats'])
 	event.add('mts:indicators', [
 		'mts:mtsofficialpack.instrument_aircraft_adf', 
 		'mts:mtsofficialpack.instrument_aircraft_airspeed', 
@@ -410,4 +415,53 @@ function registerImmersiveVehiclesItemTags(event) {
 	silver.forEach(s => {
 		event.add('mts:silver', `mts:belroftmotors.silver_${s}`)
 	})
+}
+
+function registerImmersiveVehiclesBlockTags(event) {
+
+	event.add('gtceu:mineable/pickaxe_or_wrench', [
+		'mts:mtsofficialpack.sign_speedlimit',
+		'mts:mtsofficialpack.sign_stop',
+		'mts:mtsofficialpack.sign_turn_left',
+		'mts:mtsofficialpack.sign_turn_right',
+		'mts:mtsofficialpack.sign_wrongway',
+		'mts:mtsofficialpack.sign_yield',
+		'mts:mtsofficialpack.signalcontroller',
+		'mts:mtsofficialpack.pole_crossingsignal',
+		'mts:mtsofficialpack.pole_flashingsignal_red',
+		'mts:mtsofficialpack.pole_flashingsignal_yellow',
+		'mts:mtsofficialpack.pole_trafficsignal',
+		'mts:mtsofficialpack.trafficcone',
+		'mts:mtsofficialpack.pole_core',
+		'mts:mtsofficialpack.pole_streetlight',
+		'mts:mtsofficialpack.sign_bump',
+		'mts:mtsofficialpack.sign_cow',
+		'mts:mtsofficialpack.sign_crosswalk',
+		'mts:mtsofficialpack.sign_deadend',
+		'mts:mtsofficialpack.sign_donotenter',
+		'mts:mtsofficialpack.sign_entryforbidden',
+		'mts:mtsofficialpack.sign_highway',
+		'mts:mtsofficialpack.sign_highwayend',
+		'mts:mtsofficialpack.sign_left_direction',
+		'mts:mtsofficialpack.sign_mts',
+		'mts:mtsofficialpack.sign_noparking',
+		'mts:mtsofficialpack.sign_oneway_left',
+		'mts:mtsofficialpack.sign_oneway_right',
+		'mts:mtsofficialpack.sign_priority',
+		'mts:mtsofficialpack.sign_priorityend',
+		'mts:mtsofficialpack.sign_restrictionsend',
+		'mts:mtsofficialpack.sign_right_direction',
+		'mts:mtsofficialpack.sign_route',
+		'mts:mtsofficialpack.telephonebooth',
+		'mts:mtsofficialpack.beacon_top',
+		'mts:mtsofficialpack.beacon_tower_standard',
+		'mts:mtsofficialpack.beacon_tower_inverted',
+		'mts:mtsofficialpack.fluidloader',
+		'mts:mtsofficialpack.fluidunloader',
+		'mts:mtsofficialpack.itemloader',
+		'mts:mtsofficialpack.itemunloader',
+		'mts:mtsofficialpack.fuelpump',
+		'mts:mts.charger',
+		'mts:mts.fuelpump'
+	]);
 }

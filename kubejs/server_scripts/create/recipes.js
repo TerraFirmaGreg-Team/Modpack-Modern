@@ -1392,13 +1392,13 @@ const registerCreateRecipes = (event) => {
 	global.MINECRAFT_DYE_NAMES.forEach(dye => {
 		if (dye !== 'white') {
 			event.recipes.tfc.barrel_sealed(1000)
-				.inputs('create:white_table_cloth', Fluid.of(`tfc:${dye}_dye`, 288))
+				.inputs('create:white_table_cloth', Fluid.of(`tfc:${dye}_dye`, 144))
 				.outputItem(`create:${dye}_table_cloth`)
 				.id(`barrel/create/${dye}_table_cloth`)
 
 			event.recipes.gtceu.chemical_bath(`create/${dye}_table_cloth`)
 				.itemInputs('create:white_table_cloth')
-				.inputFluids(Fluid.of(`tfc:${dye}_dye`, 288))
+				.inputFluids(Fluid.of(`tfc:${dye}_dye`, 144))
 				.itemOutputs(`create:${dye}_table_cloth`)
 				.duration(200)
 				.EUt(4)
@@ -1900,13 +1900,14 @@ const registerCreateRecipes = (event) => {
 		A: '#tfc:high_quality_cloth',
 		B: '#minecraft:wooden_slabs',
 		C: '#forge:screws',
-		D: '#forge:tools/hammers'
+		D: '#forge:tools/screwdrivers'
 	}).id('tfg:create/shaped/white_seat')
 
 	event.recipes.gtceu.assembler('create:white_seat')
 		.itemInputs('#tfc:high_quality_cloth', '#minecraft:wooden_slabs', '2x #forge:screws')
 		.itemOutputs('create:white_seat')
 		.duration(50)
+		.circuit(1)
 		.EUt(GTValues.VA[GTValues.ULV])
 
 	event.shaped('create:brown_toolbox', [
@@ -2198,6 +2199,7 @@ const registerCreateRecipes = (event) => {
 		.itemOutputs('create:turntable')
 		.duration(50)
 		.EUt(GTValues.VA[GTValues.ULV])
+		.circuit(1)
 
 	event.shaped('create:gearshift', [
 		' C ',

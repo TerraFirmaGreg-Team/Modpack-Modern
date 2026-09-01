@@ -258,7 +258,7 @@ const registerSingleGroups = (event) => {
         '#mts:trimotor',
         '#mts:vulcanair',
         '#mts:brigtrailers',
-        '#mts:carseats',
+        '#mts:vehicle_seats',
         '#mts:vehicle_attachments',
         '#mts:road_props',
         '#mts:engine_big',
