@@ -114,7 +114,7 @@
 			"images": [
 				"tfg:textures/gui/field_guide/jellies_secret.png"
 			],
-			"text": "$(#B0B0B0)$(o)The following pages are too faded to be read...$()",
+			"text": "$(#B0B0B0)$(o)Następne strony są zbyt wyblakłe, aby je przeczytać...$()",
 			"border": false
 		}
 	],

@@ -43,7 +43,7 @@
 		},
 		{
 			"type": "tfc:multimultiblock",
-			"name": "Wawrzyn Szlachetny",
+			"name": "Wawrzyn szlachetny",
 			"text": "$(thing)Dziki wawrzyn szlachetny$() rośnie w temp. od 8 do 14 C oraz przy opadach między 25 do 225mm.",
 			"enable_visualize": false,
 			"multiblocks": [
