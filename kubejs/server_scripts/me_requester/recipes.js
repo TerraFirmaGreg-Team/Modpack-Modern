@@ -5,6 +5,10 @@ const registerMERequesterRecipes = (event) => {
 
 	event.remove({ id: 'merequester:requester' })
 
+	function requiresOxygenation(recipe) {
+		TFGRecipeSchemaBindings.isOxygenated(recipe, true)
+	}
+
 	// ME Requester
 	requiresOxygenation(
 	event.recipes.gtceu.me_assembler('tfg:merequester/merequester')
