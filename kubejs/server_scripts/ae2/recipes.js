@@ -1343,12 +1343,12 @@ const registerAE2Recipes = (event) => {
 	event.recipes.gtceu.me_assembler('ae2:interface_iv_moon')
 		.itemInputs(
 			'gtceu:ev_conveyor_module',
-			'4x #forge:rods/long/tungsten_steel',
-			'4x #forge:plates/tungsten_steel',
-			'2x ae2:annihilation_core',
-			'2x ae2:formation_core')
+			'4x #forge:rods/long/titanium',
+			'4x #forge:plates/titanium',
+			'1x ae2:annihilation_core',
+			'1x ae2:formation_core')
 		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144 * 8), Fluid.of('gtceu:argon', 144))
-		.itemOutputs('16x ae2:interface')
+		.itemOutputs('8x ae2:interface')
 		.duration(20 * 900)
 		.EUt(GTValues.VA[GTValues.EV])
 		.dimension('ad_astra:moon')
@@ -1395,10 +1395,10 @@ const registerAE2Recipes = (event) => {
 			'gtceu:ev_robot_arm',
 			'4x #forge:rods/long/tungsten_steel',
 			'4x #forge:plates/tungsten_steel',
-			'2x ae2:annihilation_core',
-			'2x ae2:formation_core')
+			'1x ae2:annihilation_core',
+			'1x ae2:formation_core')
 		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144 * 8), Fluid.of('gtceu:argon', 144))
-		.itemOutputs('16x ae2:pattern_provider')
+		.itemOutputs('8x ae2:pattern_provider')
 		.duration(20 * 900)
 		.EUt(GTValues.VA[GTValues.EV])
 		.dimension('ad_astra:moon')
