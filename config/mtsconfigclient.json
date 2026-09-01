@@ -1,0 +1,360 @@
+{
+  "renderingSettings": {
+    "renderHUD_1P": {
+      "value": true,
+      "comment": "If false, the HUD in vehicles will not render in 1st-person mode."
+    },
+    "renderHUD_3P": {
+      "value": true,
+      "comment": "If false, the HUD in vehicles will not render in 3rd-person mode."
+    },
+    "fullHUD_1P": {
+      "value": false,
+      "comment": "If true, the full-size HUD will render in 1st-person rather than the half-size HUD."
+    },
+    "fullHUD_3P": {
+      "value": false,
+      "comment": "If true, the full-size HUD will render in 3rd-person rather than the half-size HUD."
+    },
+    "transpHUD_1P": {
+      "value": false,
+      "comment": "If true, the background textures for the HUD will not be rendered in 1st-person."
+    },
+    "transpHUD_3P": {
+      "value": false,
+      "comment": "If true, the background textures for the HUD will not be rendered in 1st-person."
+    },
+    "renderWindows": {
+      "value": true,
+      "comment": "Should the glass on windows be rendered on vehicles?"
+    },
+    "innerWindows": {
+      "value": false,
+      "comment": "Should the glass on windows be rendered on the inside of the vehicle?  Note: if renderWindows is false, this config has no effect."
+    },
+    "freecam_3P": {
+      "value": false,
+      "comment": "If true, third-person camera rotation in vehicles is disconnected from vehicle rotation and uses only rider look rotation."
+    },
+    "renderFlares": {
+      "value": true,
+      "comment": "If false, flares on lights will not render."
+    },
+    "renderBeams": {
+      "value": true,
+      "comment": "If false, beams on lights will not render."
+    },
+    "brightLights": {
+      "value": true,
+      "comment": "If false, lights from vehicles and blocks will not make themselves bright and instead will render as if they were part of the model at that same brightness.  Useful if you have shaders and this is causing troubles."
+    },
+    "blendedLights": {
+      "value": true,
+      "comment": "If false, beam-based lights from vehicles and blocks will not do brightness blending.  This is different from the general brightness setting as this will do OpenGL blending on the world to make it brighter, not just the beams themselves."
+    },
+    "lightsTransp": {
+      "value": true,
+      "comment": "If true, textures that light up will be rendered on the transperent pass.  This is required for some shaders to prevent lit textures without alpha channels from becoming invible, but it may break rendering on non-shader builds."
+    },
+    "playerTweaks": {
+      "value": true,
+      "comment": "If true, player hands will be modified when holding guns, and hands and legs will be modified when riding in vehicles.  Set this to false (and restart the game) if mods cause issues, like two-hand rendering or player model issues.  Automatically set to false if some mods are detected."
+    },
+    "renderingMode": {
+      "value": 1,
+      "comment": "Internal rendering mode value, don't touch!"
+    }
+  },
+  "controlSettings": {
+    "kbOverride": {
+      "value": true,
+      "comment": "Should keyboard controls be ignored when a joystick control is mapped?  Leave true to free up the keyboard while using a joysick."
+    },
+    "north360": {
+      "value": false,
+      "comment": "If true, instruments will represent North as 360 degrees, instead of the Minecraft default of 180. Allows using the heading system that real-world pilots and militaries do."
+    },
+    "simpleThrottle": {
+      "value": true,
+      "comment": "If true, then vehicles will automatically go into reverse after stopped with the brake rather than staying stopped and waiting for you to shift.  When going in reverse, the opposite is true: the vehicle will shift into forwards when pressing forwards when stopped.  Additionally, the parking brake will automatically be set when leaving the vehicle."
+    },
+    "halfThrottle": {
+      "value": false,
+      "comment": "If true, then the gas key will only be a half-throttle, with the MOD+Throttle key becoming the full-speed control.  Useful if you want a more controlled vehicle experience.  Only valid on car/boat types with on-off throttles, and does not work in conjunction with simpleThrottle as that changes how the MOD key works with gas and brake keys."
+    },
+    "autostartEng": {
+      "value": true,
+      "comment": "If true, engines will automatically start when a driver enters a vehicle, and will turn off when they leave.  The parking brake will also be applied when leaving the vehicle.  Note: this does not bypass the fuel or electrical system."
+    },
+    "autoTrnSignals": {
+      "value": true,
+      "comment": "If true, turns signals will come on automatically when you start a turn, and will turn off when the turn completes.  If this is false, then they will only be able to be activated with the keybinds or via the panel."
+    },
+    "useShifter": {
+      "value": false,
+      "comment": "Set to true if you are using a physical shifter controller for shifting gears.  Required since IV doesn't know this automatically since a shifter in neutral won't press any buttons."
+    },
+    "heliAutoLevel": {
+      "value": false,
+      "comment": "If true, helicopters will automatically return to level flight when you let off the control stick.  However, this will prevent them from doing loops.  The realistic value for this config is false, but the one that's more player-freindly is true."
+    },
+    "mouseYoke": {
+      "value": false,
+      "comment": "If true, aircraft pitch and roll are controlled by an invisible on-screen mouse yoke.  Cursor center is neutral; window edges are full input."
+    },
+    "classicJystk": {
+      "value": false,
+      "comment": "If true, the classic controller code will be used.  Note: THIS CODE MAY CRASH MOBILE DEVICES!  Also note that switching will probably mess up your keybinds.  Only do this if you are having issues with a joystick or controller not being recognized.  After changing this setting, reboot the game to make it take effect."
+    },
+    "steeringControlRate": {
+      "value": 2.0,
+      "comment": "How many degrees to turn the wheels on vehicles for every tick the button is held down.  This is not used when using a joystick."
+    },
+    "steeringReturnRate": {
+      "value": 4.0,
+      "comment": "How many degrees to turn the wheels on vehicles for every tick the button is NOT held down.  This is not used when using a joystick."
+    },
+    "flightControlRate": {
+      "value": 0.6,
+      "comment": "How many degrees to move the elevators and ailerons on aircraft for every tick the button is held down.  This is not used when using a joystick."
+    },
+    "mouseYokeRate": {
+      "value": 0.1,
+      "comment": "How many degrees to move control surfaces for every 1 mouse unit change.  Used for mouse yoke controls."
+    },
+    "joystickDeadZone": {
+      "value": 0.03,
+      "comment": "Dead zone for joystick axis.  This is NOT joystick specific."
+    },
+    "soundVolume": {
+      "value": 0.8,
+      "comment": "Volume for all sounds in the mod.  This is used instead of the game's master volume."
+    },
+    "radioVolume": {
+      "value": 1.0,
+      "comment": "Volume for radios in the mod.  This is used instead of the game's master volume."
+    }
+  },
+  "controls": {
+    "keysetID": 16,
+    "keyboard": {
+      "general.custom9": {
+        "keyCode": 328,
+        "isMouseButton": false
+      },
+      "car.mod": {
+        "keyCode": 344,
+        "isMouseButton": false
+      },
+      "general.custom7": {
+        "keyCode": 326,
+        "isMouseButton": false
+      },
+      "general.custom8": {
+        "keyCode": 327,
+        "isMouseButton": false
+      },
+      "aircraft.js_inhibit": {
+        "keyCode": 281,
+        "isMouseButton": false
+      },
+      "aircraft.yaw_l": {
+        "keyCode": 74,
+        "isMouseButton": false
+      },
+      "car.turn_l": {
+        "keyCode": 65,
+        "isMouseButton": false
+      },
+      "aircraft.gun_switch": {
+        "keyCode": 86,
+        "isMouseButton": false
+      },
+      "car.camlock": {
+        "keyCode": 342,
+        "isMouseButton": false
+      },
+      "general.reload": {
+        "keyCode": 82,
+        "isMouseButton": false
+      },
+      "car.turn_r": {
+        "keyCode": 68,
+        "isMouseButton": false
+      },
+      "aircraft.yaw_r": {
+        "keyCode": 76,
+        "isMouseButton": false
+      },
+      "car.radio": {
+        "keyCode": 45,
+        "isMouseButton": false
+      },
+      "car.zoom_o": {
+        "keyCode": 267,
+        "isMouseButton": false
+      },
+      "aircraft.zoom_o": {
+        "keyCode": 267,
+        "isMouseButton": false
+      },
+      "aircraft.zoom_i": {
+        "keyCode": 266,
+        "isMouseButton": false
+      },
+      "car.js_inhibit": {
+        "keyCode": 281,
+        "isMouseButton": false
+      },
+      "car.zoom_i": {
+        "keyCode": 266,
+        "isMouseButton": false
+      },
+      "aircraft.park": {
+        "keyCode": 78,
+        "isMouseButton": false
+      },
+      "car.changeview": {
+        "keyCode": 88,
+        "isMouseButton": false
+      },
+      "general.custom5": {
+        "keyCode": 324,
+        "isMouseButton": false
+      },
+      "general.custom6": {
+        "keyCode": 325,
+        "isMouseButton": false
+      },
+      "general.custom3": {
+        "keyCode": 322,
+        "isMouseButton": false
+      },
+      "general.custom4": {
+        "keyCode": 323,
+        "isMouseButton": false
+      },
+      "general.custom1": {
+        "keyCode": 320,
+        "isMouseButton": false
+      },
+      "general.custom2": {
+        "keyCode": 321,
+        "isMouseButton": false
+      },
+      "aircraft.brake": {
+        "keyCode": 66,
+        "isMouseButton": false
+      },
+      "aircraft.throttle_u": {
+        "keyCode": 73,
+        "isMouseButton": false
+      },
+      "car.lights": {
+        "keyCode": 71,
+        "isMouseButton": false
+      },
+      "car.panel": {
+        "keyCode": 85,
+        "isMouseButton": false
+      },
+      "car.shift_u": {
+        "keyCode": 82,
+        "isMouseButton": false
+      },
+      "car.horn": {
+        "keyCode": 67,
+        "isMouseButton": false
+      },
+      "aircraft.radio": {
+        "keyCode": 45,
+        "isMouseButton": false
+      },
+      "aircraft.camlock": {
+        "keyCode": 342,
+        "isMouseButton": false
+      },
+      "car.park": {
+        "keyCode": 78,
+        "isMouseButton": false
+      },
+      "aircraft.changeview": {
+        "keyCode": 88,
+        "isMouseButton": false
+      },
+      "car.gas": {
+        "keyCode": 87,
+        "isMouseButton": false
+      },
+      "aircraft.throttle_d": {
+        "keyCode": 75,
+        "isMouseButton": false
+      },
+      "aircraft.gun_fire": {
+        "keyCode": 32,
+        "isMouseButton": false
+      },
+      "aircraft.roll_l": {
+        "keyCode": 65,
+        "isMouseButton": false
+      },
+      "aircraft.roll_r": {
+        "keyCode": 68,
+        "isMouseButton": false
+      },
+      "car.shift_d": {
+        "keyCode": 70,
+        "isMouseButton": false
+      },
+      "car.turnsignal_r": {
+        "keyCode": 46,
+        "isMouseButton": false
+      },
+      "car.gun_fire": {
+        "keyCode": 32,
+        "isMouseButton": false
+      },
+      "aircraft.pitch_d": {
+        "keyCode": 87,
+        "isMouseButton": false
+      },
+      "aircraft.flaps_d": {
+        "keyCode": 72,
+        "isMouseButton": false
+      },
+      "car.gun_switch": {
+        "keyCode": 86,
+        "isMouseButton": false
+      },
+      "aircraft.pitch_u": {
+        "keyCode": 83,
+        "isMouseButton": false
+      },
+      "aircraft.mouseyoke": {
+        "keyCode": 67,
+        "isMouseButton": false
+      },
+      "aircraft.flaps_u": {
+        "keyCode": 89,
+        "isMouseButton": false
+      },
+      "car.brake": {
+        "keyCode": 83,
+        "isMouseButton": false
+      },
+      "aircraft.panel": {
+        "keyCode": 85,
+        "isMouseButton": false
+      },
+      "car.turnsignal_l": {
+        "keyCode": 44,
+        "isMouseButton": false
+      },
+      "general.custom10": {
+        "keyCode": 329,
+        "isMouseButton": false
+      }
+    },
+    "joystick": {}
+  }
+}

@@ -504,4 +504,15 @@ const registerGTCEURecipes = (event) => {
 		.itemOutputs(Item.of('gtceu:basic_data_access_hatch', 1))
 		.duration(20*10)
 		.EUt(GTValues.VA[GTValues.HV])
+
+
+	event.shaped('gtceu:empty_spray_can', [
+		'A',
+		'B',
+		'C'
+	], {
+		A: '#forge:tools/screwdrivers',
+		B: 'minecraft:redstone',
+		C: 'gtceu:fluid_cell'
+	}).id('tfg:shaped/empty_spray_can')
 }

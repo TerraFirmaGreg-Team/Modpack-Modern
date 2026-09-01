@@ -32,6 +32,7 @@ ServerEvents.tags('item', event => {
 	registerFTBQuestsItemTags(event)
 	registerGreateItemTags(event)
 	registerGTCEUItemTags(event)
+	registerImmersiveVehiclesItemTags(event)
 	registerJelliesItemTags(event)
 	registerMacawsForTFCItemTags(event)
 	registerMinecraftItemTags(event)
@@ -164,10 +165,8 @@ TFCEvents.data(event => {
 	registerCreateDecoData(event);
 	registerTFCDataForFirmalife(event)
 	registerTFCDataForGTCEU(event)
-	registerTFCDataForImmersiveAircraft(event);
+	registerTFCDataForImmersiveVehicles(event);
 	registerTFCDataForMinecraft(event)
-	registerTFCDataForMTS(event)
-	registerTFCDataForMTSOCP(event)
 	registerTFCDataForSophisticatedBackpacks(event)
 	registerTFCDataForTACZ(event)
 	registerTFCDataForTFC(event)
@@ -265,7 +264,7 @@ ServerEvents.recipes(event => {
 	registerGTModernUtilitiesRecipes(event)
 	registerHandGliderRecipes(event)
 	registerHotOrNotRecipes(event)
-	registerImmersiveAircraftRecipes(event)
+	registerImmersiveVehiclesRecipes(event)
 	registerJelliesRecipes(event)
 	registerMacawsForTFCRecipes(event)
 	registerMeasurementsRecipes(event)
@@ -274,8 +273,6 @@ ServerEvents.recipes(event => {
 	registerMinecraftRecipes(event)
 	registerModernMarkingRecipes(event)
 	registerMoreRedRecipes(event)
-	registerMTSRecipes(event)
-	registerMTSOCPRecipes(event)
 	registerPrimitiveCreaturesRecipes(event)
 	registerRailWaysRecipes(event)
 	registerRailwaysNavigatorRecipes(event)

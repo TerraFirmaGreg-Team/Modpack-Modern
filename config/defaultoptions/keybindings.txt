@@ -134,3 +134,15 @@ key_key.voice_chat_toggle_recording:key.keyboard.unknown:NONE
 key_key.voice_chat_adjust_volumes:key.keyboard.unknown:NONE
 key_key.mute_microphone:key.keyboard.unknown:NONE
 key_desc.seasonhud.keybind.options:key.keyboard.unknown
+key_tfcgenviewer.key.open_viewer:key.keyboard.k:SHIFT
+key_key.do_a_barrel_roll.toggle_enabled:key.keyboard.unknown
+key_key.do_a_barrel_roll.toggle_thrust:key.keyboard.unknown
+key_key.do_a_barrel_roll.open_config:key.keyboard.unknown
+key_key.do_a_barrel_roll.pitch_up:key.keyboard.unknown
+key_key.do_a_barrel_roll.pitch_down:key.keyboard.unknown
+key_key.do_a_barrel_roll.yaw_left:key.keyboard.a
+key_key.do_a_barrel_roll.yaw_right:key.keyboard.d
+key_key.do_a_barrel_roll.roll_left:key.keyboard.unknown
+key_key.do_a_barrel_roll.roll_right:key.keyboard.unknown
+key_key.do_a_barrel_roll.thrust_forward:key.keyboard.w
+key_key.do_a_barrel_roll.thrust_backward:key.keyboard.unknown

@@ -116,6 +116,21 @@
         },
         {
             "category": "ad_astra:oxygen_loading"
+        },
+        {
+            "category": "mts:mts.decorbench"
+        },
+        {
+            "category": "mts:mts.vehiclebench"
+        },
+        {
+            "category": "mts:mts.gunbench"
+        },
+        {
+            "category": "mts:mts.custombench"
+        },
+        {
+            "category": "mts:mts.propellerbench"
         }
     ]
 }
