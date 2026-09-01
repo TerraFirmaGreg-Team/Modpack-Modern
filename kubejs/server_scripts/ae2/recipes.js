@@ -1388,11 +1388,11 @@ const registerAE2Recipes = (event) => {
 		.dimension('ad_astra:moon')
 		.circuit(3))
 
-	// IV Moon
+	// EV Moon
 	requiresOxygenation(
-	event.recipes.gtceu.me_assembler('ae2:pattern_provider_iv_moon')
+	event.recipes.gtceu.me_assembler('ae2:pattern_provider_ev_moon')
 		.itemInputs(
-			'gtceu:iv_robot_arm',
+			'gtceu:ev_robot_arm',
 			'4x #forge:rods/long/tungsten_steel',
 			'4x #forge:plates/tungsten_steel',
 			'2x ae2:annihilation_core',
