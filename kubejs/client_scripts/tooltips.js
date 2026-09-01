@@ -542,6 +542,19 @@ const registerTooltips = (event) => {
 		text.add(4, Text.translate('tfg.tooltip.wireless_card_4'));
 	})
 
+	event.addAdvanced('ae2:flawless_budding_quartz', (item, advanced, text) => {
+      text.add(1, Text.translate('block.ae2.flawless_budding_quartz.tooltip'));
+    })
+	event.addAdvanced('ae2:flawed_budding_quartz', (item, advanced, text) => {
+      text.add(1, Text.translate('block.ae2.flawed_budding_quartz.tooltip'));
+    })
+	event.addAdvanced('ae2:chipped_budding_quartz', (item, advanced, text) => {
+      text.add(1, Text.translate('block.ae2.chipped_budding_quartz.tooltip'));
+    })
+	event.addAdvanced('ae2:damaged_budding_quartz', (item, advanced, text) => {
+      text.add(1, Text.translate('block.ae2.damaged_budding_quartz.tooltip'));
+    })
+
 	// Deprecated Items
 	event.addAdvanced(['vintageimprovements:lathe', 'ae2:fe_p2p_tunnel', 'gtceu:steam_large_turbine', 'gtceu:bronze_large_boiler', 'gtceu:steel_large_boiler', 'gtceu:titanium_large_boiler', 'gtceu:tungstensteel_large_boiler'], (item, advanced, text) => {
 		text.add(1, Text.translate('tfg.tooltip.obsolete.depreciated'))
