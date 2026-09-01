@@ -3,12 +3,6 @@
 function registerImmersiveVehiclesItemTags(event) {
 	event.add('c:hidden_from_recipe_viewers', 'mts:mts.y2kbutton')
 
-	event.add('mts:vehicle_barrels', 'mts:mtsofficialpack.barrel')
-	event.add('mts:vehicle_barrels', 'mts:mtsofficialpack.barrel_black')
-	event.add('mts:vehicle_barrels', 'mts:mtsofficialpack.barrel_blank')
-	event.add('mts:vehicle_barrels', 'mts:mtsofficialpack.barrel_blue')
-	event.add('mts:vehicle_barrels', 'mts:mtsofficialpack.barrel_yellow')
-
 	event.add('automotives:dashornaments', 'mts:mtsofficialpack.mirrorornament')
 
 
@@ -27,6 +21,7 @@ function registerImmersiveVehiclesItemTags(event) {
 		'mts:mtsofficialpack.bell206_olive',
 		'mts:mtsofficialpack.bell206_orange',
 		'mts:mtsofficialpack.bell206_police']);
+
 	event.add('mts:bell47g', [
 		'mts:mtsofficialpack.bell47g',
 		'mts:mtsofficialpack.bell47g_black',
@@ -207,12 +202,51 @@ function registerImmersiveVehiclesItemTags(event) {
 		'mts:mtsofficialpack.brigbedtanker_blueorange',
 		'mts:mtsofficialpack.brigbedtanker_greenred'
 	]);
-	event.add('mts:vehicle_crates', [
+	event.add('mts:vehicle_attachments', [
 		'mts:mtsofficialpack.crate',
 		'mts:mtsofficialpack.crate_blue',
 		'mts:mtsofficialpack.crate_green',
 		'mts:mtsofficialpack.crate_red',
-		'mts:mtsofficialpack.crate_white'
+		'mts:mtsofficialpack.crate_white',
+		'mts:mtsofficialpack.barrel',
+		'mts:mtsofficialpack.barrel_black',
+		'mts:mtsofficialpack.barrel_blank',
+		'mts:mtsofficialpack.barrel_blue',
+		'mts:mtsofficialpack.barrel_yellow',
+		'mts:mtsofficialpack.scoutbedpickup',
+		'mts:mtsofficialpack.scouthardtop',
+		'mts:mtsofficialpack.scouthardtop_vinyl',
+		'mts:mtsofficialpack.scoutpickuproof',
+		'mts:mtsofficialpack.barrelbell47g',
+		'mts:mtsofficialpack.bumpersticker_roostair',
+		'mts:mtsofficialpack.camera_vulcanair',
+		'mts:mtsofficialpack.cratebell47g',
+		'mts:mtsofficialpack.auxiliary_tank',
+		'mts:mtsofficialpack.hoist_bell206',
+		'mts:mtsofficialpack.pontoon',
+		'mts:mtsofficialpack.salesign',
+		'mts:mtsofficialpack.skidhelicopter',
+		'mts:mtsofficialpack.spotlight_bell206',
+		'mts:mtsofficialpack.watercannon',
+		'mts:mtsofficialpack.watercannon_proj',
+		'mts:mtsofficialpack.grilleornament_cowskull',
+		'mts:belroftmotors.boat_trailer_tow_hitch',
+		'mts:belroftmotors.fifthwheel_brig',
+		'mts:belroftmotors.fifthwheel_harpy',
+		'mts:belroftmotors.keeper_bullbar',
+		'mts:belroftmotors.keeperroofrack',
+		'mts:automotives.upgrade_airhorn',
+		'mts:automotives.upgrade_cab',
+		'mts:automotives.upgrade_cakeloader',
+		'mts:automotives.upgrade_cowcatcher',
+		'mts:automotives.upgrade_fuel',
+		'mts:automotives.upgrade_navalhorn',
+		'mts:automotives.upgrade_nitro',
+		'mts:automotives.upgrade_pontoons',
+		'mts:automotives.upgrade_seat',
+		'mts:automotives.upgrade_storage',
+		'mts:automotives.upgrade_turbo',
+		'mts:automotives.upgrade_urlwings'
 	]);
 	event.add('mts:wheels', [
 		'mts:mtsofficialpack.ft17track',
@@ -228,12 +262,6 @@ function registerImmersiveVehiclesItemTags(event) {
 		'mts:mtsofficialpack.propellersmall3blade',
 		'mts:mtsofficialpack.propellerrotor',
 		'mts:mtsofficialpack.propellerrotor206'
-	]);
-	event.add('mts:scoutattach', [
-		'mts:mtsofficialpack.scoutbedpickup',
-		'mts:mtsofficialpack.scouthardtop',
-		'mts:mtsofficialpack.scouthardtop_vinyl',
-		'mts:mtsofficialpack.scoutpickuproof'
 	]);
 	event.add('mts:road_props', [
 		'mts:mtsofficialpack.sign_speedlimit',
@@ -268,7 +296,8 @@ function registerImmersiveVehiclesItemTags(event) {
 		'mts:mtsofficialpack.sign_priorityend',
 		'mts:mtsofficialpack.sign_restrictionsend',
 		'mts:mtsofficialpack.sign_right_direction',
-		'mts:mtsofficialpack.sign_route'
+		'mts:mtsofficialpack.sign_route',
+		'mts:mtsofficialpack.telephonebooth'
 	]);
 	event.add('mts:carseats', [
 		'mts:mtsofficialpack.carseat_black',
