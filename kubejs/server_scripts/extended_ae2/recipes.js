@@ -121,7 +121,7 @@ const registerExtendedAE2Recipes = (event) => {
 	requiresOxygenation(
 	event.recipes.gtceu.me_assembler('expatternprovider:oversize_interface_zpm')
 		.itemInputs(
-			'1x #expatternprovider:extended_interface',
+			'8x #expatternprovider:extended_interface',
 			'4x megacells:accumulation_processor',
 			'gtceu:zpm_robot_arm',
 			'gtceu:zpm_fluid_regulator',
