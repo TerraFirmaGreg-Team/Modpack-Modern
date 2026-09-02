@@ -23,7 +23,7 @@
             "item": "tfc:metal/ingot/weak_steel",
             "title": "Krucha stal",
             "link_recipes": false,
-            "text": "$(br)$(bold)Requirements:$()$(br)$(li)50 - 70 % : $(thing)Steel$()$(li)15 - 25 % : $(thing)Nickel$()$(li)15 - 25 % : $(thing)Black Bronze$()$(br2)Molten $(thing)Weak Steel$() can be cast into ingots."
+            "text": "$(br)$(bold)Wymagania:$()$(br)$(li)50 - 70 % : $(thing)Stal$()$(li)10 - 25 % : $(thing)Nikiel$()$(li)10 - 25 % : $(thing)Czarny brąz$()$(br2)Roztopiona $(thing)krucha stal$() może być odlewana w sztabki."
         },
         {
             "type": "tfc:welding_recipe",

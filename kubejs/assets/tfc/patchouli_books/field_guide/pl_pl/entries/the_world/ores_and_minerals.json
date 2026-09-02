@@ -19,7 +19,7 @@
     },
     {
       "type": "tfc:multimultiblock",
-      "text": "Native Copper Ores in Dacite.",
+      "text": "Rudy miedzi rodzimej w dacycie.",
       "multiblocks": [
         {
           "pattern": [
@@ -121,7 +121,7 @@
     },
     {
       "type": "tfc:multimultiblock",
-      "text": "Native Silver Ores in Granite.",
+      "text": "Ruda srebra rodzimego w granicie.",
       "multiblocks": [
         {
           "pattern": [
@@ -580,7 +580,7 @@
     },
     {
       "type": "tfc:multimultiblock",
-      "text": "Sphalerite Ores in Quartzite.",
+      "text": "Rudy sfalerytu w kwarcycie.",
       "multiblocks": [
         {
           "pattern": [
@@ -1060,7 +1060,7 @@
       "type": "patchouli:spotlight",
       "anchor": "lapis_lazuli",
       "item": "tfc:ore/lapis_lazuli",
-      "title": "Przypuszczalny lapis lazuli",
+      "title": "Lazuryt",
       "link_recipes": false,
       "text": "Lapis Lazuli is a decorative $(thing)Mineral$() which can be used to make $(l:mechanics/dye)Blue Dye$(). It can be found in large, but sparse veins in $(thing)Limestone$() and $(thing)Marble$(), between y=-20 and y=80."
     },
