@@ -9,5 +9,6 @@
 	"showcaser.chat.share_message.tooltip.unverified": "Nie zweryfikowany przez serwer",
 	"showcaser.chat.share_message.tooltip.verified": "Zweryfikowane przez serwer",
 	"showcaser.commands.sharing.ban.player_already_banned": "Gracz %s jest już zbanowany",
-	"showcaser.commands.sharing.unban.player_not_banned": "Gracz %s nie jest zbanowany"
+	"showcaser.commands.sharing.unban.player_not_banned": "Gracz %s nie jest zbanowany",
+	"showcaser.commands.sharing.unban.success": "Gracz %s może już udostępniać rzeczy"
 }

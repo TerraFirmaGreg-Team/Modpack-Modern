@@ -18,7 +18,7 @@
   "gui.xaero_box_close_players": "Zamknij menu śledzonych graczy",
   "gui.xaero_box_close_settings": "§2%s§r Zamknij ustawienia",
   "gui.xaero_box_close_waypoints": "Zamknij punkty nawigacyjne",
-  "gui.xaero_box_controls": "Sterowanie \n \n Kliknij i przeciągnij, aby przewijać mapę.\n Przewijaj kółko myszy, aby przybliżyć i oddalić (użyj CTRL dla zwiększonej precyzji).\n Kliknij PPM na mapie, aby otworzyć skróty klawiszowe. \n Niektóre przyciski mają dodatkowo przypisane skróty klawiszowe widoczne w podpowiedzi.\n \n Kliknij PPM w element mapy (np. punkt nawigacyjny), aby wyświetlić opcje.\n %1$sKliknij tutaj, aby zmienić przypisane klawisze.",
+  "gui.xaero_box_controls": "Sterowanie \n \n Kliknij i przeciągnij, aby przewijać mapę. \n Przewijaj kółko myszy, aby przybliżyć i oddalić (CTRL dla zwiększonej precyzji). \n Kliknij PPM na mapie, aby otworzyć skróty klawiszowe. \n Niektóre przyciski mają dodatkowo przypisane skróty klawiszowe widoczne w podpowiedzi. \n \n Kliknij PPM w element mapy (np. punkt nawigacyjny), aby wyświetlić opcje. \n %1$sKliknij tutaj, aby zmienić przypisane klawisze.",
   "gui.xaero_box_controls_minimap": "§2%s§r, aby stworzyć nowy punkt nawigacyjny. \n §2%s§r, aby stworzyć tymczasowy punkt nawigacyjny. \n §2%s§r, aby przełączyć zestaw punktów nawigacyjnych. \n §2%s§r, aby przełączyć renderowanie wszystkich zestawów punktów nawigacyjnych. \n §2%s§r, aby otworzyć pełne menu punktów nawigacyjnych. \n \n ",
   "gui.xaero_box_controls_pac": "§2%s§r, aby otworzyć menu Parties and Claims. \n \n ",
   "gui.xaero_box_export": "Eksportuj mapę jako plik PNG.",

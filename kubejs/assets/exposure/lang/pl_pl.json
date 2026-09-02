@@ -17,6 +17,7 @@
 	"entity.exposure.photograph_frame": "Ramka na fotografię",
 	"error.exposure.capture.file.no_extension.casual": "Adres nie jest wystarczająco szczegółowy.",
 	"error.exposure.capture.file.path_is_directory.casual": "Adres jest zbyt szeroki.",
+	"error.exposure.capture.url.no_http_prefix.casual": "Adres ma nieznany protokół.",
 	"exposure.configuration.album": "Album",
 	"exposure.configuration.background_color": "Kolor tła",
 	"exposure.configuration.camera": "Kamera",
@@ -113,8 +114,10 @@
 	"gui.exposure.lightroom.printing_mode.chromatic": "Tryb: chromatyczny",
 	"gui.exposure.lightroom.printing_mode.chromatic.info": "Drukowanie poszczególnych kanałów",
 	"gui.exposure.lightroom.printing_mode.regular": "Tryb: Zwykły",
+	"gui.exposure.lightroom.printing_mode.regular.info": "3 razy wolniej z powodu załamania",
 	"gui.exposure.lightroom.toast.develop_film.title": "Film wymaga wywołania",
 	"gui.exposure.next_page": "Następna strona",
+	"gui.exposure.photograph_screen.copy_saved_file_path_tooltip": "§7[§r%s§7]: skopiuj zapisaną ścieżkę pliku",
 	"gui.exposure.photograph_screen.copy_texture_path_tooltip": "§7[§r%s§7]: skopiuj ścieżkę tekstury",
 	"gui.exposure.photograph_screen.item_dropped_message": "§7Upuszczono: [§r%s§7]",
 	"gui.exposure.photograph_screen.open_saved_file_tooltip": "§7[§r%s§7]: otwórz zapisany plik",
@@ -123,7 +126,7 @@
 	"item.exposure.aged_photograph": "Stara fotografia",
 	"item.exposure.album": "Album fotograficzny",
 	"item.exposure.album.tooltip.photos_count": "§7Zdjęcia: %s",
-	"item.exposure.black_and_white_film": "Czarno-biały film",
+	"item.exposure.black_and_white_film": "Czarno-biały film fotograficzny",
 	"item.exposure.broken_interplanar_projector": "Zniszczony projektor międzyplanarny",
 	"item.exposure.broken_interplanar_projector.tooltip.broken": "Zepsute",
 	"item.exposure.broken_interplanar_projector.viewfinder.error_code": "Kod błędu:",
@@ -133,6 +136,7 @@
 	"item.exposure.camera_stand": "Stojak kamery",
 	"item.exposure.chromatic_sheet": "Chromatyczny arkusz",
 	"item.exposure.color_film": "Kolorowy film fotograficzny",
+	"item.exposure.developed_black_and_white_film": "Wywołany czarno-biały film fotograficzny",
 	"item.exposure.developed_color_film": "Wywołany film kolorowy",
 	"item.exposure.developed_film.tooltip.frame_count": "Klatki: %s",
 	"item.exposure.film_roll.tooltip.color_balance": "Balans kolorów: %s",
@@ -190,5 +194,6 @@
 	"task.exposure.export.not_running": "Eksport nie jest w toku.",
 	"task.exposure.export.status.exporting": "Eksportowanie '%s' - [%s/%s]",
 	"task.exposure.export.status.requesting": "Żądanie '%s' - [%s/%s]",
-	"task.exposure.export.stopped": "Eksportowanie zatrzymane."
+	"task.exposure.export.stopped": "Eksportowanie zatrzymane.",
+	"tooltip.exposure.hold_for_details": "§8Przytrzymaj [§7Shift§8], aby uzyskać szczegóły"
 }
