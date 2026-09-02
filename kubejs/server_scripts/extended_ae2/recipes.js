@@ -34,13 +34,12 @@ const registerExtendedAE2Recipes = (event) => {
 			'1x #ae2:interface')
 		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144 * 8))
 		.itemOutputs('1x expatternprovider:ex_interface')
-		.duration(20*80)
-		.EUt(GTValues.VA[GTValues.EV])
+		.duration(20*900)
+		.EUt(GTValues.VA[GTValues.IV])
 		.dimension('ad_astra:moon')
 		.circuit(5))
 
 	// ZPM CR
-
 	requiresOxygenation(
 	event.recipes.gtceu.me_assembler('tfg:ex_interface_zpm_cr')
 		.itemInputs(
@@ -51,9 +50,9 @@ const registerExtendedAE2Recipes = (event) => {
 			'2x ae2:formation_core',
 			'1x megacells:accumulation_processor',
 			'8x #ae2:interface')
-		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144 * 32))
+		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144 * 8))
 		.itemOutputs('8x expatternprovider:ex_interface')
-		.duration(20*1600)
+		.duration(20*3600)
 		.EUt(GTValues.VA[GTValues.LuV])
 		.circuit(6)
 		.dimension('ad_astra:moon'))
@@ -73,8 +72,8 @@ const registerExtendedAE2Recipes = (event) => {
 			'1x megacells:accumulation_processor')
 		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144 * 8))
 		.itemOutputs('1x expatternprovider:interface_upgrade')
-		.duration(20*80)
-		.EUt(GTValues.VA[GTValues.EV])
+		.duration(20*900)
+		.EUt(GTValues.VA[GTValues.IV])
 		.dimension('ad_astra:moon')
 		.circuit(6))
 
@@ -89,9 +88,9 @@ const registerExtendedAE2Recipes = (event) => {
 			'2x ae2:annihilation_core',
 			'2x ae2:formation_core',
 			'1x megacells:accumulation_processor')
-		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144 * 32))
+		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144 * 8))
 		.itemOutputs('8x expatternprovider:interface_upgrade')
-		.duration(20*1600)
+		.duration(20*3600)
 		.EUt(GTValues.VA[GTValues.LuV])
 		.dimension('ad_astra:moon')
 		.circuit(5))
@@ -113,13 +112,12 @@ const registerExtendedAE2Recipes = (event) => {
 			'#gtceu:circuits/luv')
 		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144 * 9))
 		.itemOutputs("1x expatternprovider:oversize_interface")
-		.duration(20*160)
+		.duration(20*1000)
 		.EUt(GTValues.VA[GTValues.LuV])
 		.dimension('ad_astra:moon')
 		.circuit(7))
 
 	// ZPM CR
-
 	requiresOxygenation(
 	event.recipes.gtceu.me_assembler('expatternprovider:oversize_interface_zpm')
 		.itemInputs(
@@ -129,9 +127,9 @@ const registerExtendedAE2Recipes = (event) => {
 			'gtceu:zpm_fluid_regulator',
 			'4x #forge:dense_plates/rhodium_plated_palladium',
 			'#gtceu:circuits/zpm')
-		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144 * 18))
+		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144 * 9))
 		.itemOutputs("8x expatternprovider:oversize_interface")
-		.duration(20*480)
+		.duration(20*4000)
 		.EUt(GTValues.VA[GTValues.ZPM])
 		.dimension('ad_astra:moon')
 		.circuit(8))
@@ -154,8 +152,8 @@ const registerExtendedAE2Recipes = (event) => {
 			'1x #ae2:pattern_provider')
 		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144 * 8))
 		.itemOutputs('expatternprovider:ex_pattern_provider')
-		.duration(20*80)
-		.EUt(GTValues.VA[GTValues.EV])
+		.duration(20*900)
+		.EUt(GTValues.VA[GTValues.IV])
 		.circuit(5)
 		.dimension('ad_astra:moon'))
 
@@ -173,7 +171,7 @@ const registerExtendedAE2Recipes = (event) => {
 			'8x #ae2:pattern_provider')
 		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144 * 32))
 		.itemOutputs('8x expatternprovider:ex_pattern_provider')
-		.duration(20*160)
+		.duration(20*3600)
 		.EUt(GTValues.VA[GTValues.LuV])
 		.dimension('ad_astra:moon')
 		.circuit(6))
@@ -192,8 +190,8 @@ const registerExtendedAE2Recipes = (event) => {
 			'1x megacells:accumulation_processor')
 		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144 * 8))
 		.itemOutputs('1x expatternprovider:pattern_provider_upgrade')
-		.duration(20*80)
-		.EUt(GTValues.VA[GTValues.EV])
+		.duration(20*900)
+		.EUt(GTValues.VA[GTValues.IV])
 		.circuit(6)
 		.dimension('ad_astra:moon'))
 
@@ -207,9 +205,9 @@ const registerExtendedAE2Recipes = (event) => {
 			'2x ae2:annihilation_core',
 			'2x ae2:formation_core',
 			'1x megacells:accumulation_processor')
-		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144 * 32))
+		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144 * 8))
 		.itemOutputs('8x expatternprovider:pattern_provider_upgrade')
-		.duration(20*160)
+		.duration(20*3600)
 		.EUt(GTValues.VA[GTValues.LuV])
 		.dimension('ad_astra:moon')
 		.circuit(5))
@@ -228,7 +226,7 @@ const registerExtendedAE2Recipes = (event) => {
 			'1x megacells:accumulation_processor')
 		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144))
 		.itemOutputs('expatternprovider:ex_import_bus_part')
-		.duration(20*60)
+		.duration(20*230)
 		.EUt(GTValues.VA[GTValues.EV])
 		.dimension('ad_astra:moon')
 		.circuit(1)
@@ -244,7 +242,7 @@ const registerExtendedAE2Recipes = (event) => {
 			'1x megacells:accumulation_processor')
 		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144))
 		.itemOutputs('expatternprovider:ex_export_bus_part')
-		.duration(20*60)
+		.duration(20*230)
 		.EUt(GTValues.VA[GTValues.EV])
 		.dimension('ad_astra:moon')
 		.circuit(2)
@@ -258,7 +256,7 @@ const registerExtendedAE2Recipes = (event) => {
 			'2x ae2:logic_processor',
 			'#gtceu:circuits/ev')
 		.itemOutputs('expatternprovider:tag_export_bus')
-		.duration(20*60)
+		.duration(20*230)
 		.EUt(GTValues.VA[GTValues.EV])
 		.dimension('ad_astra:moon')
 		.circuit(1)
@@ -286,7 +284,7 @@ const registerExtendedAE2Recipes = (event) => {
 			'2x ae2:calculation_processor',
 			'#gtceu:circuits/ev')
 		.itemOutputs('expatternprovider:mod_export_bus')
-		.duration(20*60)
+		.duration(20*230)
 		.EUt(GTValues.VA[GTValues.EV])
 		.dimension('ad_astra:moon')
 		.circuit(3)
@@ -314,7 +312,7 @@ const registerExtendedAE2Recipes = (event) => {
 			'2x ae2:engineering_processor',
 			'#gtceu:circuits/ev')
 		.itemOutputs('expatternprovider:precise_export_bus')
-		.duration(20*60)
+		.duration(20*230)
 		.EUt(GTValues.VA[GTValues.EV])
 		.dimension('ad_astra:moon')
 		.circuit(4)
@@ -342,7 +340,7 @@ const registerExtendedAE2Recipes = (event) => {
 			'2x megacells:accumulation_processor',
 			'ae2:level_emitter')
 		.itemOutputs('expatternprovider:threshold_export_bus')
-		.duration(20*60)
+		.duration(20*230)
 		.EUt(GTValues.VA[GTValues.EV])
 		.dimension('ad_astra:moon')
 		.circuit(4)
@@ -358,7 +356,7 @@ const registerExtendedAE2Recipes = (event) => {
 			'ae2:export_bus',
 			'2x megacells:accumulation_processor')
 		.itemOutputs('expatternprovider:active_formation_plane')
-		.duration(20*60)
+		.duration(20*230)
 		.EUt(GTValues.VA[GTValues.EV])
 		.dimension('ad_astra:moon')
 		.circuit(8)
@@ -383,7 +381,7 @@ const registerExtendedAE2Recipes = (event) => {
 			'2x minecraft:redstone_torch',
 			'2x ae2:calculation_processor')
 		.itemOutputs('expatternprovider:threshold_level_emitter')
-		.duration(20*30)
+		.duration(20*60)
 		.EUt(GTValues.VA[GTValues.HV])
 		.dimension('ad_astra:moon')
 		.circuit(9)
@@ -424,8 +422,8 @@ const registerExtendedAE2Recipes = (event) => {
 			'8x ae2:engineering_processor',
 			'4x megacells:accumulation_processor')
 		.itemOutputs('2x expatternprovider:wireless_connect')
-		.duration(20*120)
-		.EUt(GTValues.VA[GTValues.EV])
+		.duration(20*1500)
+		.EUt(GTValues.VA[GTValues.IV])
 		.dimension('ad_astra:moon')
 		.circuit(9)
 		.addMaterialInfo(true, true))
@@ -501,7 +499,7 @@ const registerExtendedAE2Recipes = (event) => {
 			'ae2:molecular_assembler')
 		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144 * 4))
 		.itemOutputs('expatternprovider:ex_molecular_assembler')
-		.duration(20*180)
+		.duration(20*1200)
 		.EUt(GTValues.VA[GTValues.IV])
 		.dimension('ad_astra:moon')
 		.circuit(5))
@@ -518,7 +516,7 @@ const registerExtendedAE2Recipes = (event) => {
 			'8x ae2:molecular_assembler')
 		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144 * 16))
 		.itemOutputs('8x expatternprovider:ex_molecular_assembler')
-		.duration(20*740)
+		.duration(20*3800)
 		.EUt(GTValues.VA[GTValues.ZPM])
 		.dimension('ad_astra:moon')
 		.circuit(6))
@@ -536,7 +534,7 @@ const registerExtendedAE2Recipes = (event) => {
 			'4x ae2:engineering_processor',
 			'4x ae2:speed_card')
 		.itemOutputs('expatternprovider:ex_io_port')
-		.duration(20*120)
+		.duration(20*250)
 		.EUt(GTValues.VA[GTValues.EV])
 		.dimension('ad_astra:moon')
 		.circuit(8)
@@ -552,7 +550,7 @@ const registerExtendedAE2Recipes = (event) => {
 			'4x ae2:engineering_processor',
 			'2x ae2:capacity_card')
 		.itemOutputs('expatternprovider:ex_drive')
-		.duration(20*60)
+		.duration(20*300)
 		.EUt(GTValues.VA[GTValues.EV])
 		.dimension('ad_astra:moon')
 		.circuit(9)
@@ -567,7 +565,7 @@ const registerExtendedAE2Recipes = (event) => {
 			'4x ae2:engineering_processor',
 			'2x ae2:capacity_card')
 		.itemOutputs('expatternprovider:drive_upgrade')
-		.duration(20*60)
+		.duration(20*300)
 		.EUt(GTValues.VA[GTValues.EV])
 		.dimension('ad_astra:moon')
 		.circuit(8)
@@ -577,7 +575,7 @@ const registerExtendedAE2Recipes = (event) => {
 	event.recipes.gtceu.me_assembler('expatternprovider:ingredient_buffer')
 		.itemInputs('gtceu:hv_buffer', 'ae2:cell_component_1k')
 		.itemOutputs('expatternprovider:ingredient_buffer')
-		.duration(20*45)
+		.duration(20*60)
 		.EUt(GTValues.VA[GTValues.EV])
 		.dimension('ad_astra:moon')
 		.circuit(8)
@@ -601,7 +599,7 @@ const registerExtendedAE2Recipes = (event) => {
 			Fluid.of('gtceu:concrete', 144 * 8),
 			Fluid.of('tfg:cryogenized_fluix', 144 * 16))
 		.itemOutputs('8x expatternprovider:assembler_matrix_frame')
-		.duration(20*120)
+		.duration(20*200)
 		.EUt(GTValues.VA[GTValues.LuV])
 		.dimension('ad_astra:moon')
 		.circuit(9))
@@ -651,7 +649,7 @@ const registerExtendedAE2Recipes = (event) => {
 			Fluid.of('tfg:cryogenized_fluix', 144 * 16),
 			Fluid.of('gtceu:polybenzimidazole', 1430))
 		.itemOutputs('expatternprovider:assembler_matrix_pattern')
-		.duration(20 * 180)
+		.duration(20 * 3600)
 		.EUt(GTValues.VA[GTValues.LuV])
 		.dimension('ad_astra:moon')
 		.circuit(7))
@@ -669,7 +667,7 @@ const registerExtendedAE2Recipes = (event) => {
 			Fluid.of('tfg:cryogenized_fluix', 144 * 16),
 			Fluid.of('gtceu:polybenzimidazole', 1430))
 		.itemOutputs('expatternprovider:assembler_matrix_crafter')
-		.duration(20 * 180)
+		.duration(20 * 3600)
 		.EUt(GTValues.VA[GTValues.LuV])
 		.dimension('ad_astra:moon')
 		.circuit(7))
@@ -687,7 +685,7 @@ const registerExtendedAE2Recipes = (event) => {
 			Fluid.of('tfg:cryogenized_fluix', 144 * 16),
 			Fluid.of('gtceu:polybenzimidazole', 1430))
 		.itemOutputs('expatternprovider:assembler_matrix_speed')
-		.duration(20 * 180)
+		.duration(20 * 3600)
 		.EUt(GTValues.VA[GTValues.LuV])
 		.dimension('ad_astra:moon')
 		.circuit(7))
