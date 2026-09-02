@@ -40,7 +40,7 @@
 	"deafission.overlay.hb_temp": "Temp: %s° / %s°",
 	"deafission.recipe.coolant_heat_per_tick": "Ciepło: -%s HU/t/°",
 	"deafission.recipe.hb_io_energy": "Ciepło: %s HU",
-	"deafission.recipe.heat": "Ciepło: %s HU",
+	"deafission.recipe.heat": "Ciepło: %s JC",
 	"deafission.recipe.heat_per_tick": "Ciepło: -%s HU/t",
 	"deafission.recipe.temp": "Temp: %s°",
 	"deafission.redstone_port.mode.heat": "Zwraca ciepło/maks",
