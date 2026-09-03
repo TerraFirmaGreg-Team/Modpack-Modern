@@ -53,7 +53,7 @@
     },
     {
       "type": "patchouli:text",
-      "title": "Pagaie i wiosła",
+      "title": "Pagaje i wiosła",
       "text": "If you feel like your boat is moving slowly, double check that you're holding the appropriate paddle item, or, if your boat requires oars, that the oars have been equipped to the oarlocks. In some boats, multiple players are able to paddle or row to make the boat go faster."
     },
     {
@@ -76,7 +76,7 @@
     },
     {
       "type": "patchouli:text",
-      "title": "Anchors and Windlasses",
+      "title": "Kotwice i kołowroty",
       "text": "Large boats have anchors, which can be used to completely stop the boat, provided the anchor is seated in the seafloor and no sails are deployed. The boat will still turn in the wind while it's at anchor. Look for the anchor icon located at the windlass (anchor winch) and press $(item)$(k:key.use)$() to lower and raise the anchor."
     },
     {

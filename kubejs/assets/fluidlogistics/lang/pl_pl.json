@@ -43,6 +43,7 @@
 	"create.fluidlogistics.hand_pointer.mailbox.removed": "Odznaczono skrzynkę pocztową",
 	"create.fluidlogistics.hand_pointer.mode_exited": "Konfiguracja anulowana",
 	"create.fluidlogistics.hand_pointer.packager.powered_off": "Ten pakowacz został przywrócony do ustawień domyślnych",
+	"create.fluidlogistics.hand_pointer.packager.powered_on": "Ten pakowacz jest teraz zasilony",
 	"create.fluidlogistics.hand_pointer.repackager.powered_off": "Ten przepakowywacz został przywrócony do ustawień domyślnych",
 	"create.fluidlogistics.hand_pointer.too_far": "Zbyt daleko",
 	"create.fluidlogistics.mechanical_fluid_gun.inject_block_target": "Wstrzyknij płyn do %s",
@@ -96,6 +97,8 @@
 	"fluidlogistics.ponder.fluid_packager_address.text_8": "-> Fabryka",
 	"fluidlogistics.ponder.fluid_packager_address.text_9": "Fabryka",
 	"fluidlogistics.ponder.fluid_repackager.header": "Łączenie i rozpakowywanie paczek",
+	"fluidlogistics.ponder.mechanical_fluid_gun_setup.header": "Ustawianie mechanicznych dział wodnych",
+	"fluidlogistics.ponder.multi_fluid_tank_sizes.header": "Rozmiary zbiornika na wiele płynów",
 	"fluidlogistics.ponder.multi_fluid_tank_storage.text_2": "Rury mogą zostać podłączone od dowolnej strony",
 	"fluidlogistics.ponder.multi_fluid_tank_storage.text_4": "W trybie przetrwania ciecze nie mogą być dodane lub zabrane manualnie",
 	"fluidlogistics.ponder.pump_flow.text_2": "Ich strzałka określa kierunek przepływu",
@@ -106,6 +109,7 @@
 	"fluidlogistics.ponder.pump_speed.text_3": "...oraz szybkość, z jaką przenoszone są płyny",
 	"fluidlogistics.ponder.pump_speed.text_4": "Pompy łączą swoją przepustowość w tym samym systemie rur",
 	"fluidlogistics.ponder.pump_speed.text_5": "Upewnij się, że wszystkie są zwrócone w tym samym kierunku",
+	"fluidlogistics.ponder.smart_faucet.header": "Wypełnianie przedmiotów  inteligentnymi kranami",
 	"gui.fluidlogistics.creative_banner.title": "FL",
 	"item.fluidlogistics.compressed_storage_tank": "Skompresowany zbiornik",
 	"item.fluidlogistics.fluid_package": "Paczka z płynem",
@@ -115,7 +119,7 @@
 	"item.fluidlogistics.fluid_schematic.tooltip.condition1": "Kiedy w ręce",
 	"item.fluidlogistics.fluid_schematic.tooltip.condition2": "Kliknięcie PPM w czasie skradania",
 	"item.fluidlogistics.hand_pointer": "Wskaźnik ręczny",
-	"item.fluidlogistics.hand_pointer.tooltip.condition1": "Obowiązujące cele",
+	"item.fluidlogistics.hand_pointer.tooltip.condition1": "Pasujące cele",
 	"item.fluidlogistics.phantom_chain": "Fantomowy łańcuch",
 	"itemGroup.fluidlogistics.fluidlogistics_tab": "Create: Fluid Logistics"
 }
