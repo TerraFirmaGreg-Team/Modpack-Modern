@@ -76,7 +76,7 @@
     },
     {
       "type": "patchouli:text",
-      "title": "Anchors and Windlasses",
+      "title": "Kotwice i kołowroty",
       "text": "Large boats have anchors, which can be used to completely stop the boat, provided the anchor is seated in the seafloor and no sails are deployed. The boat will still turn in the wind while it's at anchor. Look for the anchor icon located at the windlass (anchor winch) and press $(item)$(k:key.use)$() to lower and raise the anchor."
     },
     {
