@@ -3,6 +3,7 @@
   "ftbchunks.advanced": "Ustawienia zaawansowane",
   "ftbchunks.advanced.debug_info": "Debugowanie",
   "ftbchunks.advanced.memory": "Użycie pamięci",
+  "ftbchunks.advanced.memory.autorelease_on_map_close": "Automatyczne zwalnianie regionów po zamknięciu mapy",
   "ftbchunks.advanced.memory.max_zoom_constraint": "Ogranicz pomniejszenie mapy",
   "ftbchunks.ally_mode.default": "Domyślny",
   "ftbchunks.ally_mode.forced_all": "Wymuszono wszystko",
