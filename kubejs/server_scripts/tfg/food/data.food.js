@@ -136,11 +136,8 @@ function registerTFGFoodData(event) {
 	});
 
 	// Eggs
-	event.itemHeat('species:birt_egg', 1, null, null);
-	event.itemHeat('#tfg:martian_eggs', 1, null, null);
-
 	/**
-	 * Array of egg items to get food data. 
+	 * Array of egg items to get food and heat data.
 	 * Do not register eggs that can be fertilized here. Those items dynamically change expiration time.
 	 * @type {{String<Item>}}
 	 */
@@ -161,6 +158,7 @@ function registerTFGFoodData(event) {
 		'species:springling_egg'
 	];
 	eggItems.forEach(egg => {
+		event.itemHeat(egg, 1, null, null);
 		event.foodItem(egg, food => {
 			food.decayModifier(2)
 		});
