@@ -324,6 +324,7 @@ function processCrushedOre(event, material) {
 		const byproductItem = ChemicalHelper.get(TagPrefix.dust, byproductMaterial, 1)
 		
 		// GT machines
+		/*
 		event.recipes.gtceu.ore_washer(`wash_${materialName}_crushed_ore_to_purified_ore_distilled`)
 			.itemInputs(crushedOreItem)
 			.inputFluids("gtceu:distilled_water 50")
@@ -340,15 +341,21 @@ function processCrushedOre(event, material) {
 			.circuit(1)
 			.duration(40)
 			.EUt(GTValues.VHA[GTValues.LV])
-
-		event.recipes.gtceu.macerator(`macerate_${materialName}_crushed_ore_to_impure_dust`)
+		*/
+		/*
+		event.recipes.greate.crushing(`macerate_${materialName}_crushed_ore_to_impure_dust`)
 			.itemInputs(crushedOreItem)
 			.itemOutputs(impureDustItem)
 			.chancedOutput(byproductItem, 1400, 0)
 			.category(GTRecipeCategories.ORE_CRUSHING)
 			.duration(20)
 			.EUt(2)
-
+			*/
+		
+  		event.recipes.greate.crushing([impureDustItem, Item.of(byproductItem).withChance(0.14)], crushedOreItem)
+		.processingTime(500)
+		.id(`macerate_${materialName}_crushed_ore_to_impure_dust`)
+		
 		// Bulk washing
 		
 		event.recipes.greate.splashing(
