@@ -43,6 +43,7 @@
 	"create.fluidlogistics.hand_pointer.mailbox.removed": "Odznaczono skrzynkę pocztową",
 	"create.fluidlogistics.hand_pointer.mode_exited": "Konfiguracja anulowana",
 	"create.fluidlogistics.hand_pointer.packager.powered_off": "Ten pakowacz został przywrócony do ustawień domyślnych",
+	"create.fluidlogistics.hand_pointer.packager.powered_on": "Ten pakowacz jest teraz zasilony",
 	"create.fluidlogistics.hand_pointer.repackager.powered_off": "Ten przepakowywacz został przywrócony do ustawień domyślnych",
 	"create.fluidlogistics.hand_pointer.too_far": "Zbyt daleko",
 	"create.fluidlogistics.mechanical_fluid_gun.inject_block_target": "Wstrzyknij płyn do %s",
@@ -118,7 +119,7 @@
 	"item.fluidlogistics.fluid_schematic.tooltip.condition1": "Kiedy w ręce",
 	"item.fluidlogistics.fluid_schematic.tooltip.condition2": "Kliknięcie PPM w czasie skradania",
 	"item.fluidlogistics.hand_pointer": "Wskaźnik ręczny",
-	"item.fluidlogistics.hand_pointer.tooltip.condition1": "Obowiązujące cele",
+	"item.fluidlogistics.hand_pointer.tooltip.condition1": "Pasujące cele",
 	"item.fluidlogistics.phantom_chain": "Fantomowy łańcuch",
 	"itemGroup.fluidlogistics.fluidlogistics_tab": "Create: Fluid Logistics"
 }

@@ -14,6 +14,7 @@
 	"sodium.options.cpu_render_ahead_limit.name": "Limit renderowania klatek z wyprzedzeniem przez CPU",
 	"sodium.options.cpu_render_ahead_limit.value": "%s klatek",
 	"sodium.options.leaves_quality.name": "Liście",
+	"sodium.options.leaves_quality.tooltip": "Kontroluje jakość liści.",
 	"sodium.options.pages.advanced": "Zaawansowane",
 	"sodium.options.pages.performance": "Wydajność",
 	"sodium.options.pages.quality": "Jakość",
