@@ -136,6 +136,9 @@ function registerTFGFoodData(event) {
 	});
 
 	// Eggs
+	event.itemHeat('species:birt_egg', 1, null, null);
+	event.itemHeat('#tfg:martian_eggs', 1, null, null);
+
 	/**
 	 * Array of egg items to get food data. 
 	 * Do not register eggs that can be fertilized here. Those items dynamically change expiration time.
