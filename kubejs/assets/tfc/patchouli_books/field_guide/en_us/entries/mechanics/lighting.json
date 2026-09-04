@@ -45,7 +45,7 @@
     {
       "type": "tfc:sealed_barrel_recipe",
       "recipe": "tfc:barrel/candle",
-      "text": "Candles can be made by sealing $(thing)String$() in a $(l:mechanics/barrels)Barrel$() of $(l:mechanics/lamps#tallow)Tallow$()."
+      "text": "Candles can be made by sealing $(thing)String$() in a $(l:craftsmanship/barrels)Barrel$() of $(l:mechanics/lamps#tallow)Tallow$()."
     },
     {
       "type": "patchouli:multiblock",

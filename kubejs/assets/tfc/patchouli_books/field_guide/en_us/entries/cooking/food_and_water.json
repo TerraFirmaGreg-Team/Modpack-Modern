@@ -66,7 +66,7 @@
             "item": {
                 "tag": "tfg:drinking_vessels"
             },
-            "text": "$(l:getting_started/pottery)Knapping$() and firing a $(l:getting_started/pottery#jug)jug$() is an early way to carry water with you. Fill it like a bucket with $(item)$(k:key.use)$(). Holding $(item)$(k:key.use)$() drinks the water.$(br2)You can also drink out of other $(l:tfc:cooking/drinking_containers)Containers$() such as $(item)Flasks$() or $(l:mechanics/glassworking)Glass Bottles$()."
+            "text": "$(l:getting_started/pottery)Knapping$() and firing a $(l:getting_started/pottery#jug)jug$() is an early way to carry water with you. Fill it like a bucket with $(item)$(k:key.use)$(). Holding $(item)$(k:key.use)$() drinks the water.$(br2)You can also drink out of other $(l:tfc:cooking/drinking_containers)Containers$() such as $(item)Flasks$() or $(l:craftsmanship/glassworking)Glass Bottles$()."
         },
         {
             "type": "patchouli:text",

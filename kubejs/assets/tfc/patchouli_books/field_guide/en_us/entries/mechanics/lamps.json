@@ -33,7 +33,7 @@
     {
       "type": "patchouli:crafting",
       "recipe": "tfc:crafting/metal/lamp/bronze",
-      "text": "Lamps are smithed in the $(l:mechanics/anvils)Anvil$() and crafted with $(l:mechanics/glassworking_applications#lamp_glass)Lamp Glass$() to be completed."
+      "text": "Lamps are smithed in the $(l:mechanics/anvils)Anvil$() and crafted with $(l:craftsmanship/glassworking_applications#lamp_glass)Lamp Glass$() to be completed."
     },
     {
       "type": "tfc:quern_recipe",
@@ -48,7 +48,7 @@
     },
     {
       "type": "patchouli:text",
-      "text": "Boil the $(thing)Olive Paste$() with $(thing)Water$() in a $(l:mechanics/pot)Pot$() to make $(thing)Olive Oil Water$(). Seal that in a $(l:mechanics/barrels)Barrel$() with your $(thing)Jute Net$() to produce $(thing)Olive Oil$(). Olive oil burns for 8 in-game hours for every unit of fluid."
+      "text": "Boil the $(thing)Olive Paste$() with $(thing)Water$() in a $(l:mechanics/pot)Pot$() to make $(thing)Olive Oil Water$(). Seal that in a $(l:craftsmanship/barrels)Barrel$() with your $(thing)Jute Net$() to produce $(thing)Olive Oil$(). Olive oil burns for 8 in-game hours for every unit of fluid."
     },
     {
       "type": "patchouli:text",

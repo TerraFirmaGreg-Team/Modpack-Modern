@@ -1,0 +1,74 @@
+{
+    "name": "Sewing Table",
+    "category": "tfc:craftsmanship",
+    "icon": "tfc:wood/sewing_table/oak",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "The $(thing)Sewing Table$() is used to produce banner patterns, smithing templates, and other cloth items. It requires $(t:#tfc:sewing_light_cloth)$(6)Light Cloth$(), $(t:#tfc:sewing_dark_cloth)$(6)Burlap Cloth$(), $(t:#forge:string)$(6)String$(), as well as a $(item)Needle$().$(br)A needle for sewing can be made from a bone. An indestructable needle can be made later on out of stainless steel."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "The sewing table's inventory is similar to that of a crafting table. If you ever make a mistake, you can simply exit the inventory, and your items will be returned to you. There is a recipe book available in the GUI. Selecting the book opens a menu where you can select a recipe. This places small indicators of what steps to perform on the working surface."
+        },
+        {
+            "type": "patchouli:image",
+            "title": "Sewing Screen",
+            "anchor": "sewing_screen",
+            "width": 1024,
+            "texture_width": 1024,
+            "height": 1024,
+            "texture_height": 1024,
+            "images": [
+                "tfg:textures/gui/field_guide/sewing_preview.png",
+                "tfg:textures/gui/field_guide/sewing_table.png"
+            ],
+            "text": "Recipe preview and filled recipe.",
+            "border": true
+        },
+        {
+            "type": "patchouli:text",
+            "text": "The slots on the left are for the string and the needle. The two bottom slots can hold any combination of dark and light cloth. The slot on the right will show the result when it is ready to be taken. Taking the result from the result slot completes the craft, and uses the items."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Each cloth item allows placing 8 squares of that material on the sewing surface. Similarly, each string item allows placing 16 stitches. When you have selected a recipe, just use the buttons on the top right of the screen to place squares and stitch them together as shown by the guide. Want to remove stitches? Use the red 'X' button to get rid of squares."
+        },
+        {
+            "type": "patchouli:crafting",
+            "anchor": "banner_loom",
+            "title": "Banner Loom",
+            "recipe": "tfc:crafting/vanilla/loom",
+            "text": "The banner loom, for making things with banner patterns, can be crafted to do work with banner patterns."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tag:minecraft:trim_templates",
+            "anchor": "armor_trim",
+            "title": "Armor Trims",
+            "text": "Armor trims can be applied to any $(t:#minecraft:trimmable_armor)$(6)Trimmable Armor$() by sewing a $(item)Smithing Template$(). And combining it with a $(t:#minecraft:trim_materials)$(6)Trim Material$()―Like $(thing)Exquisite Gems$() or $(thing)Jewlery Metal$()―and combining it with the armor on a $(item)Smithing Table$()"
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Further Reading",
+            "anchor": "relations",
+            "entries": [
+                "tfc:craftsmanship/anvils",
+                "tfc:craftsmanship/barrels",
+                "tfc:craftsmanship/quern",
+                "tfc:craftsmanship/scribing_table",
+                "tfc:agriculture/weaving"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 19,
+    "extra_recipe_mappings": {
+        "tag:tfc:sewing_tables": 0,
+        "tag:tfc:sewing_needles": 0,
+        "minecraft:loom": 5,
+        "tag:minecraft:trim_templates": 6,
+        "tag:minecraft:trimmable_armor": 6,
+        "tag:minecraft:trim_materials": 6
+    }
+}

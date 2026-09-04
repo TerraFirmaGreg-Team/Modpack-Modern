@@ -33,7 +33,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "resin",
-			"text": "$(italic)How do I make rubber?$()$(br2)Sticky Resin is no longer what you are looking for! First, grow some $(thing)Latex$()-producing trees and make some $(thing)Tree Taps$(). Place a tree tap on the trunk of each tree (more taps on a tree just splits the output). You can collect the Latex that comes out with a $(l:mechanics/barrels)Barrel$()."
+			"text": "$(italic)How do I make rubber?$()$(br2)Sticky Resin is no longer what you are looking for! First, grow some $(thing)Latex$()-producing trees and make some $(thing)Tree Taps$(). Place a tree tap on the trunk of each tree (more taps on a tree just splits the output). You can collect the Latex that comes out with a $(l:craftsmanship/barrels)Barrel$()."
 		},
 		{
 			"type": "patchouli:text",

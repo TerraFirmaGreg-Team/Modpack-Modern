@@ -1,0 +1,323 @@
+{
+    "name": "Building Materials",
+    "category": "tfc:craftsmanship",
+    "icon": "tfc:wattle/white",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(li)$(bold)$(l:craftsmanship/building_materials#primitive_materials)Primitive Materials$()$(li2)$(l:craftsmanship/building_materials#thatch)Thatch$()$(li2)$(l:craftsmanship/building_materials#mud_bricks)Mud Bricks$()$(li2)$(l:craftsmanship/building_materials#wattle_and_daub)Wattle and Daub$()$(li)$(bold)$(l:craftsmanship/building_materials#advanced_materials)Advanced Materials$()$(li2)$(l:craftsmanship/building_materials#alabaster)Alabaster$()$(li2)$(l:craftsmanship/building_materials#bricks_and_mortar)Bricks and Mortar$()$(li)$(bold)$(l:craftsmanship/building_materials#block_interactions)Block Interactions$()$(li)$(bold)$(l:craftsmanship/building_materials#customizable_blocks)Customizable Blocks$()$(li)$(bold)$(l:craftsmanship/building_materials#roof_building)Roof Building$()",
+            "title": "Index",
+            "anchor": "index"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "primitive_materials",
+            "Title": "Primitive Materials",
+            "text": "In the early stages of the game, building can be a challenge as many sturdy building blocks require metal tools to obtain. However, there are a few building blocks that can be obtained with just stone tools.$(br2)More $(l:craftsmanship/building_materials#advanced_materials)Advanced Building Blocks$() are obtainable with metal tools."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "thatch",
+            "text": "With just a $(l:craftsmanship/sticks_and_stones)Stone Knife$(), you are able to obtain $(thing)Straw$() by breaking plant-like blocks. This can be used to craft a very simple building material: $(thing)Thatch$(). Thatch is a lightweight block that isn't affected by gravity, however players and other entities can pass right through it! It can also be crafted back into $(thing)Straw$() if needed.",
+            "title": "Thatch"
+        },
+        {
+            "type": "patchouli:crafting",
+            "anchor": "mud_bricks",
+            "recipe": "tfc:crafting/soil/loam_drying_bricks",
+            "title": "Mud Bricks",
+            "text": "$(thing)Mud$() can be found on the ground, underneath some water features, in low elevation swampy environments, or directly made by dropping dirt into water with $(item)$(k:key.drop)$(). With a little bit of $(thing)Straw$(), it can be crafted into $()Wet Mud Bricks$()."
+        },
+        {
+            "type": "tfc:multimultiblock",
+            "text": "These can be placed on the ground in a dry location, and after a day they will harden into $(thing)Mud Bricks$().",
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:drying_bricks/loam[count=4,dried=false]",
+                        "Y": "tfc:grass/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:drying_bricks/loam[count=4,dried=true]",
+                        "Y": "tfc:grass/loam"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "tfc:crafting/soil/loam_mud_bricks",
+            "title": "Mud Brick Blocks",
+            "text": "These dried mud bricks can then be crafted into $(thing)Mud Brick Blocks$(). They can also be made into $(thing)Stairs$(), $(thing)Slabs$(), or $(thing)Walls$(), if so desired. Mud brick blocks are mineable with shovels."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "wattle_and_daub",
+            "text": "$(thing)Wattle$() and $(thing)Daub$() is a versatile building and decoration block.$(br)$(thing)Wattle$() can be crafted and placed, however it is breakable and allows players and mobs to walk through it. It can be augmented with $(thing)Daub$(), to make it solid.$(br)In order to make $(thing)Wattle$() solid, it first must be woven, which requires adding sticks to the structure.",
+            "title": "Wattle and Daub"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/wattle_weave.png"
+            ],
+            "text": "Four sticks are required to $(thing)weave$() wattle.",
+            "border": true
+        },
+        {
+            "type": "patchouli:text",
+            "text": "At any time, sticks can be added on each diagonal, as well as the top and bottom. Hold a single $(thing)Stick$() in your hand and $(item)$(k:key.use)$() it to add a stick. Change what part of the wattle you're adding the stick to by selecting a different side of the face."
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/wattle_add_stick.png"
+            ],
+            "text": "Adding sticks to wattle.",
+            "border": true
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/wattle_add_daub.png"
+            ],
+            "text": "Using $(thing)Daub on $(thing)Woven Wattle$() creates a solid block.",
+            "border": true
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/wattle_stained.png"
+            ],
+            "text": "It can then be $(thing)stained$() by using $(thing)Dye$() on it.",
+            "border": true
+        },
+        {
+            "type": "tfc:multimultiblock",
+            "text": "Wattle and daub process.",
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "W"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "W": "tfc:wattle"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "W"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "W": "tfc:wattle[woven=true]"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "W"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "W": "tfc:wattle[woven=true,left=true]"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "W"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "W": "tfc:wattle[woven=true,left=true,right=true]"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "W"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "W": "tfc:wattle[woven=true,left=true,right=true,top=true]"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "W"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "W": "tfc:wattle[woven=true,left=true,right=true,top=true,bottom=true]"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "W"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "W": "tfc:wattle/unstained[left=true,right=true,top=true,bottom=true]"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "W"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "W": "tfc:wattle/white[left=true,right=true,top=true,bottom=true]"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "advanced_materials",
+            "title": "Advanced Materials",
+            "text": "In addition to the $(l:craftsmanship/building_materials#primitive_materials)primitive building materials$() of the Stone Age, the acquisition of metal tools allows the construction of more advanced building materials"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tfc:alabaster_brick,tfc:alabaster/raw,tfc:alabaster/bricks,tfc:alabaster/polished",
+            "anchor": "alabaster",
+            "text": "Alabaster is a building block made from $(thing)Gypsum$(). Alabaster can be made by directly crafting with gypsum, however it can be made more efficiently by sealing some gypsum with 100 mB of $(thing)Limewater$() in a $(l:craftsmanship/barrels#limewater)Barrel$().",
+            "title": "Alabaster"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tag:tfc:colored_raw_alabaster,tag:tfc:colored_bricks_alabaster,tag:tfc:colored_polished_alabaster",
+            "anchor": "alabaster_decor",
+            "text": "Alabaster can be $(thing)dyed$() in a $(l:craftsmanship/barrels)Barrel$() of dye into any color. Raw Alabaster blocks can also be $(l:craftsmanship/chisel)chiseled$() into $(thing)Polished Alabaster$() using the $(thing)Smooth$() chisel mode, or crafted into stairs, slabs, or walls.",
+            "title": "Decorative Alabaster"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "bricks_and_mortar",
+            "item": "tag:forge:stone_bricks",
+            "text": "$(thing)Stone Bricks$() can be made using a $(l:craftsmanship/chisel)Chisel$() with some individual loose rocks. It then requires $(thing)Mortar$() in order to form a strong building block.$(br2)Mortar can be made by adding $(thing)Sand$() to a barrel of $(l:craftsmanship/barrels#limewater)Limewater$().",
+            "title": "Bricks and Mortar"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Other decorative stone blocks can also be made, such as both $(thing)Cracked Bricks$(), and $(thing)Chiseled Stone$(). $(thing)Mossy$() stone blocks can also be created by placing cobblestone or bricks underwater, near existing mossy bricks or cobblestone. The moss will start to spread to these nearby blocks."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "block_interactions",
+            "title": "Block Interactions",
+            "text": "There are many in-world interactions that can be done to streamline building:$(li)Turn blocks mossy by $(item)$(k:key.sneak)-$(k:key.use)$() them with $(l:agriculture/composting#green_compost)Greens$().$(li)Crack stone bricks by $(item)$(k:key.sneak)-$(k:key.use)$() with a $(thing)Hammer$().$(li)Smooth stone bricks by $(item)$(k:key.sneak)-$(k:key.use)$() with $(thing)Sand Paper$().$(br)And more interactions can be viewed by browsing the block modifcations tab in $(d)E$(a)M$(b)I$()."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "customizable_blocks",
+            "title": "Customizable Blocks",
+            "text": "$(bold)$(#ff0fb7)TF$(#595959)G$() adds a few mods dedicated to adding customizable blocks for very intricate building.$(li)$(bold)Create: Copycats$() adds many blocks that can be $(item)$(k:key.use)$() with another block to copy its appearance. Made with a $(thing)Stonecutter$().$(li)$(bold)Framedblocks$() adds many blocks that can be $(item)$(k:key.use)$() with another block to copy its appearance. Mostly made with a $(thing)Framing Saw$().$(li)$(bold)Domum Ornamentum$() adds blocks that can copy the appearance of others. Made with an $(thing)Architect's Cutter$()."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "roof_building",
+            "title": "Roof Building",
+            "text": "Roof construction with $(bold)RNR$() begins with a frame. $(thing)Roof frame blocks$() can be crafted from lumber and sticks, and made into stair and slab variants. These blocks can be used to outline the shape of the roof and are the starting point for all roofs."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Once the roof frames are in place, they can be $(item)$(k:key.use)$() with any $(t:#rnr:shingles)$(6)Roofing Material$() to create the corresponding roof. Types of roof include thatch, made by adding straw to a roof frame, but also terracotta tiles, wooden shingles, and more.$(br2)Roofs are necessary to keep your machines dry! Think of the poor machines..."
+        },
+        {
+            "type": "patchouli:image",
+            "title": "Thatching a Roof",
+            "images": [
+                "rnr:textures/gui/book/thatching.png"
+            ],
+            "border": true
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Further Reading",
+            "anchor": "relations",
+            "entries": [
+                "tfc:agriculture/aqueducts",
+                "tfc:craftsmanship/barrels",
+                "tfc:craftsmanship/chisel",
+                "tfc:the_world/geology"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 20,
+    "extra_recipe_mappings": {
+        "tfc:thatch": 2,
+        "tfc:mud_bricks": 5,
+        "tfc:wattle": 6,
+        "tfc:daub": 6,
+        "tfc:alabaster_brick": 14,
+        "tfc:alabaster/raw": 14,
+        "tfc:alabaster/bricks": 14,
+        "tfc:alabaster/polished": 14,
+        "tag:tfc:colored_raw_alabaster": 15,
+        "tag:tfc:colored_bricks_alabaster": 15,
+        "tag:tfc:colored_polished_alabaster": 15,
+        "domum_ornamentum:architectscutter": 19,
+        "framedblocks:framing_saw": 19,
+        "framedblocks:powered_framing_saw": 19,
+        "minecraft:stonecutter": 19,
+        "tag:rnr:roof_blocks": 20,
+        "tag:rnr:shingles": 20
+    }
+}

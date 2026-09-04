@@ -75,6 +75,10 @@
         {
             "type": "patchouli:image",
             "anchor": "guide_pane",
+            "width": 1024,
+            "texture_width": 1024,
+            "height": 1024,
+            "texture_height": 1024,
             "images": [
                 "tfg:textures/gui/field_guide/glassworking/lens_0.png",
                 "tfg:textures/gui/field_guide/glassworking/lens_1.png",
@@ -92,6 +96,10 @@
         {
             "type": "patchouli:image",
             "anchor": "guide_lens",
+            "width": 1024,
+            "texture_width": 1024,
+            "height": 1024,
+            "texture_height": 1024,
             "images": [
                 "tfg:textures/gui/field_guide/glassworking/lens_0.png",
                 "tfg:textures/gui/field_guide/glassworking/lens_1.png",
@@ -110,6 +118,10 @@
         {
             "type": "patchouli:image",
             "anchor": "guide_glass",
+            "width": 1024,
+            "texture_width": 1024,
+            "height": 1024,
+            "texture_height": 1024,
             "images": [
                 "tfg:textures/gui/field_guide/glassworking/lens_0.png",
                 "tfg:textures/gui/field_guide/glassworking/lens_1.png",

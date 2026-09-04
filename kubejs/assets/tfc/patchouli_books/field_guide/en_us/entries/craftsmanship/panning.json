@@ -1,0 +1,109 @@
+{
+    "name": "Panning & Sluices",
+    "category": "tfc:craftsmanship",
+    "icon": "tfc:pan/empty",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "anchor": "panning",
+            "title": "Panning",
+            "text": "$(thing)Panning$() is a method of obtaining ore dusts of certain native ores by searching in rivers and other waterways.$(br2)Panning makes use of $(t:#tfc:ore_deposits)$(6)Ore Deposits$() which are found in gravel patches in the bottom of lakes and rivers.$(br2)In order to get started panning, you will need an $(item)Empty Pan$()."
+        },
+        {
+            "type": "tfc:knapping_recipe",
+            "recipe": "tfc:clay_knapping/pan",
+            "text": "Clay can be $(l:craftsmanship/pottery)knapped$() into a pan as shown above."
+        },
+        {
+            "type": "tfc:heat_recipe",
+            "recipe": "tfc:heating/ceramic_pan",
+            "text": "Once the pan has been $(thing)knapped$(), it needs to be $(l:mechanics/heating)fired$() to create a $(thing)Ceramic Pan$().$(br2)The next thing you will need to find is some sort of $(t:#tfc:ore_deposits)$(6)Ore Deposit$(). Ore deposits can come in several different ores: Native Copper, Native Silver, Native Gold, and Cassiterite."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "#tfc:ore_deposits"
+                }
+            },
+            "name": "Example Deposit",
+            "text": "Ore deposits in gravel.",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Now you can begin panning!$(br2)$(bold)1.$() With the pan in hand, $(item)$(k:key.use)$() it on the ore deposit block.$(br2)$(bold)2.$() While standing in water with the pan in your hand, hold down $(item)$(k:key.use)$() and you will start panning.$(br2)$(bold)3.$() After a few moments, if you are lucky, you may be rewarded with some ore dust in your inventory."
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/panning.png"
+            ],
+            "border": true
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "sluice",
+            "title": "Sluices",
+            "item": "tag:tfc:sluices",
+            "text": "The $(thing)Sluice$() is a device that is used to process $(thing)Ore Deposits$() automatically, producing the same results that $(l:craftsmanship/panning#panning)Panning$() does, with slightly higher probabilities."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "When placed, the sluice takes up two blocks. Water must flow through the top of the sluice and out the bottom in order for it to operate. The sluice is able to work when water appears to be flowing through it. The water flowing into the sluice must be the last block of a water stream. There must be an empty block below the bottom of the sluice for water to flow into."
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/sluice_cross.png"
+            ],
+            "text": "A sluice with the correct water setup.",
+            "border": true
+        },
+        {
+            "type": "patchouli:text",
+            "text": "To use the sluice, drop deposit items into the water stream and let them flow into it. They will appear on the sluice, and after some time, there is a chance of the processed items being spat out the bottom."
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/sluice_in_use.png"
+            ],
+            "text": "A working sluice with items inside of it.",
+            "border": true
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Panning and sluicing can give a few possible products: $(thing)Ore Dusts$(), $(thing)Small Piles of Ore Dust$(), $(thing)Loose Rocks$(), and $(thing)Gems$().$(br)The probabilities for obtaining certain drops can be viewed by looking at the ore deposit in $(d)E$(a)M$(b)I$().",
+            "title": "Expected Products"
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Further Reading",
+            "anchor": "relations",
+            "entries": [
+                "tfc:the_world/geology",
+                "tfc:craftsmanship/sticks_and_stones",
+                "tfc:craftsmanship/pottery",
+                "tfc:craftsmanship/metallurgy"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 15,
+    "extra_recipe_mappings": {
+        "tag:tfc:ore_deposits": 0,
+        "tfc:ceramic/unfired_pan": 1,
+        "tfc:pan/empty": 2,
+        "tfc:pan/filled": 4,
+        "tag:tfc:sluices": 6
+    }
+}

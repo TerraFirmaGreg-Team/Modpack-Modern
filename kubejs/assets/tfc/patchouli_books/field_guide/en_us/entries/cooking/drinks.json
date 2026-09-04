@@ -12,7 +12,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"title": "Alcohol",
-			"text": "$(thing)Base Alcohols$() provide no buff to the player. They can be produced by leaving various fruits, flours, or other ingredients in a $(l:mechanics/barrels)Barrel$() with water. As a bonus, when drunk any alcohol will effect your speech in chat!",
+			"text": "$(thing)Base Alcohols$() provide no buff to the player. They can be produced by leaving various fruits, flours, or other ingredients in a $(l:craftsmanship/barrels)Barrel$() with water. As a bonus, when drunk any alcohol will effect your speech in chat!",
 			"item": "tfc:bucket/beer,tfc:bucket/cider,tfc:bucket/rum,tfc:bucket/sake,tfc:bucket/vodka,tfc:bucket/whiskey,tfc:bucket/corn_whiskey,tfc:bucket/rye_whiskey,firmalife:bucket/mead",
 			"anchor": "alcohol"
 		},
