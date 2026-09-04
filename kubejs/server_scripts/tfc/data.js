@@ -153,6 +153,10 @@ const registerTFCFertilizers = (event) => {
 	event.fertilizer('gtceu:tiny_ender_pearl_dust', 0.055, null, 0.055)
 	event.fertilizer('gtceu:small_ender_pearl_dust', 0.125, null, 0.125)
 	event.fertilizer('ae2:ender_dust', 0.5, null, 0.5)
+	
+	event.fertilizer('tfg:tiny_ammonium_nitrate_dust', 0.055, null, null)
+	event.fertilizer('tfg:small_ammonium_nitrate_dust', 0.138, null, null)
+	event.fertilizer('tfg:ammonium_nitrate_dust', 0.55, null, null)
 }
 
 

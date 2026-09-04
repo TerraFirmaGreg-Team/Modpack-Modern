@@ -11,5 +11,9 @@ function registerTFGWeaponItems(event) {
 	event.create('tfg:shell_bullet_casing')
 	event.create('tfg:large_bullet_casing')
 	event.create('tfg:nitrocellulose')
+	
+	//IV Helper Region
+	event.create('tfg:hexotol')
+	event.create('tfg:prepackaged_rocket_motor')
 
 }

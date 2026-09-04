@@ -52,6 +52,7 @@ const registerTFGMaterials = (event) => {
 	registerTFGGarnetSandMaterials(event);
 	registerTFGBakeliteMaterials(event);
 	registerTFGRefrigerantMaterials(event);
+	registerTFGWeaponryMaterials(event);
 	registerTFGCoilMaterials(event);
 	registerTFGBouleMaterials(event);
 	registerTFGRotorMaterials(event);
