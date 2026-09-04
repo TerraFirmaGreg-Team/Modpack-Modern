@@ -8,6 +8,7 @@
 function registerImmersiveVehiclesRecipes(event) {
 
 	event.remove({ mod: 'mts' });
+	event.remove({ mod: 'mtsofficialpack' });
 	event.remove({ mod: 'automotives' });
 	event.remove({ mod: 'belroftmotors' });
 	// TODO: remove
@@ -23,7 +24,7 @@ function registerImmersiveVehiclesRecipes(event) {
 	event.shapeless('mts:automotives.biplane', 'man_of_many_planes:economy_plane')
 	event.shapeless('mts:mtsofficialpack.pzlp11', 'immersive_aircraft:biplane')
 	event.shapeless('mts:mtsofficialpack.e500_blackred', 'man_of_many_planes:scarlet_biplane')
-	event.shapeless('mts:mtsofficialpack.comanche_red', 'man_of_many_planes:bamboo_hopper')
+	event.shapeless('mts:mtsofficialpack.comanche_red', 'immersive_aircraft:bamboo_hopper')
 
 
 	// #region Tools
@@ -38,7 +39,7 @@ function registerImmersiveVehiclesRecipes(event) {
 		C: 'tfc:lens',
 		D: '#forge:tools/screwdrivers'
 	}).id('mts:shaped/partscanner')
-		
+
 	event.shaped('mts:mts.ticket', [
 		'ABC'
 	], {
@@ -46,7 +47,7 @@ function registerImmersiveVehiclesRecipes(event) {
 		B: 'minecraft:paper',
 		C: '#forge:dyes/black'
 	}).id('mts:mts.ticket')
-	
+
 	event.shaped('mts:mts.paintgun', [
 		' A',
 		'BC'
@@ -55,7 +56,7 @@ function registerImmersiveVehiclesRecipes(event) {
 		B: '#forge:small_fluid_pipes/potin',
 		C: 'gtceu:empty_spray_can'
 	}).id('mts:mts.paintgun')
-	
+
 	event.shaped('mts:mts.key', [
 		'A',
 		'B'
@@ -82,7 +83,7 @@ function registerImmersiveVehiclesRecipes(event) {
 		B: '#tfg:rubber_foils',
 		C: '#tfg:rubber_rings'
 	}).id('mts:mts.fuelhose')
-	
+
 	event.shaped('mts:mts.jerrycan', [
 		' AB',
 		'B B',
@@ -91,7 +92,7 @@ function registerImmersiveVehiclesRecipes(event) {
 		A: '#tfg:rubber_rings',
 		B: '#forge:foils/wrought_iron'
 	}).id('mts:mts.jerrycan')
-	
+
 	event.shaped('mts:mts.jerrycan', [
 		' AB',
 		'B B',
@@ -100,7 +101,7 @@ function registerImmersiveVehiclesRecipes(event) {
 		A: '#tfg:rubber_rings',
 		B: '#forge:plates/polyethylene'
 	}).id('mts:mts.jerrycan_pe')
-	
+
 	event.shaped('mts:mts.jerrycan', [
 		' AB',
 		'B B',
@@ -109,7 +110,7 @@ function registerImmersiveVehiclesRecipes(event) {
 		A: '#tfg:rubber_rings',
 		B: '#forge:plates/bakelite'
 	}).id('mts:mts.jerrycan_bakelite')
-	
+
 	event.recipes.gtceu.assembler('mts:mts.jumperpack')
 		.itemInputs('2x #forge:plates/wrought_iron', '1x #gtceu:circuits/lv', '1x mts:mts.jumpercable', '1x gtceu:lv_lithium_battery', '4x #forge:plates/rubber')
 		.itemOutputs('mts:mts.jumperpack')
@@ -179,20 +180,21 @@ function registerImmersiveVehiclesRecipes(event) {
 		.inputFluids(Fluid.of('gtceu:carbon_dioxide', 10000))
 		.itemOutputs('mts:mtsofficialpack.gunfireextinguisher')
 		.EUt(GTValues.VA[GTValues.ULV])
-		
+		.duration(100)
+
 	event.shaped('mts:mtsofficialpack.gunflaregun', [
 		' CD',
 		'AAE',
 		'FBG'
 	], {
-		A: '#forge:foils/steel',
+		A: '#forge:foils/wrought_iron',
 		B: 'gtceu:treated_wood_planks',
 		C: '#forge:small_springs',
 		D: '#forge:small_gears/brass',
 		E: '#forge:tools/wrenches',
 		F: '#forge:tools/hammers',
 		G: '#forge:tools/saws'
-	}).id('mts:mtsofficialpack.gunflaregun_steel')
+	}).id('mts:mtsofficialpack.gunflaregun_iron')
 
 	event.shaped('mts:mtsofficialpack.gunflaregun', [
 		' CD',
@@ -322,28 +324,28 @@ function registerImmersiveVehiclesRecipes(event) {
 
 	event.recipes.gtceu.assembler('mts:mtsofficialpack.smokecan_blue')
 		.itemInputs('5x tfg:large_bullet_casing', '#forge:dusts/saltpeter', '#tfg:sugars', '#forge:dusts/sodium_bicarbonate')
-		.inputFluids(Fluid.of('tfc:blue_dye', 144/2))
+		.inputFluids(Fluid.of('tfc:blue_dye', 144 / 2))
 		.itemOutputs('5x mts:mtsofficialpack.smokecan_blue')
 		.EUt(GTValues.VA[GTValues.ULV])
 		.duration(100)
 
 	event.recipes.gtceu.assembler('mts:mtsofficialpack.smokecan_green')
 		.itemInputs('5x tfg:large_bullet_casing', '#forge:dusts/saltpeter', '#tfg:sugars', '#forge:dusts/sodium_bicarbonate')
-		.inputFluids(Fluid.of('tfc:green_dye', 144/2))
+		.inputFluids(Fluid.of('tfc:green_dye', 144 / 2))
 		.itemOutputs('5x mts:mtsofficialpack.smokecan_green')
 		.EUt(GTValues.VA[GTValues.ULV])
 		.duration(100)
 
 	event.recipes.gtceu.assembler('mts:mtsofficialpack.smokecan_red')
 		.itemInputs('5x tfg:large_bullet_casing', '#forge:dusts/saltpeter', '#tfg:sugars', '#forge:dusts/sodium_bicarbonate')
-		.inputFluids(Fluid.of('tfc:red_dye', 144/2))
+		.inputFluids(Fluid.of('tfc:red_dye', 144 / 2))
 		.itemOutputs('5x mts:mtsofficialpack.smokecan_red')
 		.EUt(GTValues.VA[GTValues.ULV])
 		.duration(100)
 
 	event.recipes.gtceu.assembler('mts:mtsofficialpack.smokecan_white')
 		.itemInputs('5x tfg:large_bullet_casing', '#forge:dusts/saltpeter', '#tfg:sugars', '#forge:dusts/sodium_bicarbonate')
-		.inputFluids(Fluid.of('tfc:white_dye', 144/2))
+		.inputFluids(Fluid.of('tfc:white_dye', 144 / 2))
 		.itemOutputs('5x mts:mtsofficialpack.smokecan_white')
 		.EUt(GTValues.VA[GTValues.ULV])
 		.duration(100)
@@ -369,7 +371,7 @@ function registerImmersiveVehiclesRecipes(event) {
 		D: 'mts:mts.fuelhose',
 		E: '#forge:glass_panes'
 	}).id('mts:mts.fuelpump')
-	
+
 	event.shaped('mts:mts.charger', [
 		' EB',
 		'ADA',
@@ -475,70 +477,70 @@ function registerImmersiveVehiclesRecipes(event) {
 	}).id('mts:mtsofficialpack.white')
 
 	event.recipes.tfc.no_remainder_shaped_crafting(
-	event.shaped('mts:mtsofficialpack.barrel', [
-		' C ',
-		'ABA'
-	], {
-		A: '#forge:plates/potin',
-		B: '#tfc:barrels',
-		C: '#forge:dyes/red'
-	})).id('mts:mtsofficialpack.barrel')
+		event.shaped('mts:mtsofficialpack.barrel', [
+			' C ',
+			'ABA'
+		], {
+			A: '#forge:plates/potin',
+			B: '#tfc:barrels',
+			C: '#forge:dyes/red'
+		})).id('mts:mtsofficialpack.barrel')
 
 	event.recipes.tfc.no_remainder_shaped_crafting(
-	event.shaped('mts:mtsofficialpack.barrel_black', [
-		' C ',
-		'ABA'
-	], {
-		A: '#forge:plates/potin',
-		B: '#tfc:barrels',
-		C: '#forge:dyes/black'
-	})).id('mts:mtsofficialpack.barrel_black')
+		event.shaped('mts:mtsofficialpack.barrel_black', [
+			' C ',
+			'ABA'
+		], {
+			A: '#forge:plates/potin',
+			B: '#tfc:barrels',
+			C: '#forge:dyes/black'
+		})).id('mts:mtsofficialpack.barrel_black')
 
 	event.recipes.tfc.no_remainder_shaped_crafting(
-	event.shaped('mts:mtsofficialpack.barrel_blank', [
-		' C ',
-		'ABA'
-	], {
-		A: '#forge:plates/potin',
-		B: '#tfc:barrels',
-		C: '#forge:dyes/white'
-	})).id('mts:mtsofficialpack.barrel_blank')
+		event.shaped('mts:mtsofficialpack.barrel_blank', [
+			' C ',
+			'ABA'
+		], {
+			A: '#forge:plates/potin',
+			B: '#tfc:barrels',
+			C: '#forge:dyes/white'
+		})).id('mts:mtsofficialpack.barrel_blank')
 
 	event.recipes.tfc.no_remainder_shaped_crafting(
-	event.shaped('mts:mtsofficialpack.barrel_blue', [
-		' C ',
-		'ABA'
-	], {
-		A: '#forge:plates/potin',
-		B: '#tfc:barrels',
-		C: '#forge:dyes/blue'
-	})).id('mts:mtsofficialpack.barrel_blue')
+		event.shaped('mts:mtsofficialpack.barrel_blue', [
+			' C ',
+			'ABA'
+		], {
+			A: '#forge:plates/potin',
+			B: '#tfc:barrels',
+			C: '#forge:dyes/blue'
+		})).id('mts:mtsofficialpack.barrel_blue')
 
 	event.recipes.tfc.no_remainder_shaped_crafting(
-	event.shaped('mts:mtsofficialpack.barrel_yellow', [
-		' C ',
-		'ABA'
-	], {
-		A: '#forge:plates/potin',
-		B: '#tfc:barrels',
-		C: '#forge:dyes/yellow'
-	})).id('mts:mtsofficialpack.barrel_yellow')
-		
+		event.shaped('mts:mtsofficialpack.barrel_yellow', [
+			' C ',
+			'ABA'
+		], {
+			A: '#forge:plates/potin',
+			B: '#tfc:barrels',
+			C: '#forge:dyes/yellow'
+		})).id('mts:mtsofficialpack.barrel_yellow')
+
 	event.recipes.tfc.no_remainder_shaped_crafting(
-	event.shaped('mts:mtsofficialpack.auxiliary_tank', [
-		'ABA'
-	], {
-		A: '#forge:plates/tin',
-		B: '#tfc:barrels',
-	})).id('mts:mtsofficialpack.auxiliary_tank')
-	
+		event.shaped('mts:mtsofficialpack.auxiliary_tank', [
+			'ABA'
+		], {
+			A: '#forge:plates/tin',
+			B: '#tfc:barrels',
+		})).id('mts:mtsofficialpack.auxiliary_tank')
+
 	event.recipes.tfc.no_remainder_shaped_crafting(
-	event.shaped('mts:mtsofficialpack.barrelbell47g', [
-		'ABA'
-	], {
-		A: '#forge:plates/potin',
-		B: '#tfc:barrels',
-	})).id('mts:mtsofficialpack.barrelbell47g')
+		event.shaped('mts:mtsofficialpack.barrelbell47g', [
+			'ABA'
+		], {
+			A: '#forge:plates/potin',
+			B: '#tfc:barrels',
+		})).id('mts:mtsofficialpack.barrelbell47g')
 
 	event.shaped('mts:mtsofficialpack.cratebell47g', [
 		'BBC',
@@ -694,11 +696,11 @@ function registerImmersiveVehiclesRecipes(event) {
 			0, 0, 1, 0, 0, 0, 1, 0, 0,
 			0, 0, 1, 1, 0, 1, 1, 0, 0
 		], [
-			 0,-1, 1, 1, 1, 1,-1, 0,
-			 0, 0, 1, 1, 1, 1, 0, 0,
-			-1, 0, 1, 1, 1, 1, 0,-1,
-			-1,-1, 0, 1, 1, 0,-1,-1
-		]).id('tfg:sewing/grilleornament_cowskull')
+		0, -1, 1, 1, 1, 1, -1, 0,
+		0, 0, 1, 1, 1, 1, 0, 0,
+		-1, 0, 1, 1, 1, 1, 0, -1,
+		-1, -1, 0, 1, 1, 0, -1, -1
+	]).id('tfg:sewing/grilleornament_cowskull')
 
 	event.recipes.tfc.sewing(
 		'1x mts:mtsofficialpack.mirrorornament',
@@ -709,11 +711,11 @@ function registerImmersiveVehiclesRecipes(event) {
 			1, 1, 1, 1, 0, 1, 0, 0, 1,
 			0, 0, 0, 0, 0, 1, 1, 1, 1,
 		], [
-			 1, 1, 1, -1, -1,-1,-1,-1,
-			 1, 1, 1, -1, -1, 0, 0, 0,
-			 1, 1, 1, -1, -1, 0, 0, 0,
-			-1,-1,-1, -1, -1, 0, 0, 0
-		]).id('tfg:sewing/mirrorornament')
+		1, 1, 1, -1, -1, -1, -1, -1,
+		1, 1, 1, -1, -1, 0, 0, 0,
+		1, 1, 1, -1, -1, 0, 0, 0,
+		-1, -1, -1, -1, -1, 0, 0, 0
+	]).id('tfg:sewing/mirrorornament')
 
 	event.recipes.tfc.sewing(
 		'1x mts:automotives.dashornament_frogport',
@@ -724,11 +726,11 @@ function registerImmersiveVehiclesRecipes(event) {
 			0, 1, 1, 1, 0, 1, 1, 1, 0,
 			0, 1, 0, 0, 0, 0, 0, 1, 0
 		], [
-			0, 0, 0, 0, 0, 0, 0, 0,
-			1, 1, 0, 0, 0, 0, 1, 1,
-			0, 0, 0, 1, 1, 0, 0, 0,
-			0, 1, 1, 1, 1, 1, 1, 0,
-		]).id('tfg:sewing/dashornament_frogport')
+		0, 0, 0, 0, 0, 0, 0, 0,
+		1, 1, 0, 0, 0, 0, 1, 1,
+		0, 0, 0, 1, 1, 0, 0, 0,
+		0, 1, 1, 1, 1, 1, 1, 0,
+	]).id('tfg:sewing/dashornament_frogport')
 
 	event.recipes.tfc.sewing(
 		'1x mts:automotives.dashornament_kiwi',
@@ -739,11 +741,11 @@ function registerImmersiveVehiclesRecipes(event) {
 			0, 1, 1, 0, 0, 0, 1, 1, 0,
 			0, 0, 0, 0, 0, 0, 0, 0, 0
 		], [
-			 1, 1, 1, 1, 1, 1, 1, 1,
-			 1, 0, 1, 0, 0, 1, 0, 1,
-			 1, 1, 1, 0, 0, 1, 1, 1,
-			-1, 0,-1, 0, 0,-1, 0,-1,
-		]).id('tfg:sewing/dashornament_kiwi')
+		1, 1, 1, 1, 1, 1, 1, 1,
+		1, 0, 1, 0, 0, 1, 0, 1,
+		1, 1, 1, 0, 0, 1, 1, 1,
+		-1, 0, -1, 0, 0, -1, 0, -1,
+	]).id('tfg:sewing/dashornament_kiwi')
 
 	event.recipes.tfc.sewing(
 		'1x mts:automotives.dashornament_smartobserver',
@@ -754,11 +756,11 @@ function registerImmersiveVehiclesRecipes(event) {
 			0, 0, 1, 1, 1, 1, 1, 0, 0,
 			0, 0, 0, 1, 0, 1, 0, 0, 0
 		], [
-			1, 1, 1, 1, 1, 1, 1, 1,
-			-1,0, 0, 0, 0, 0, 0,-1,
-			0, 0,-1, 0, 0,-1, 0, 0,
-			0, 0, 0,-1,-1, 0, 0, 0,
-		]).id('tfg:sewing/dashornament_smartobserver')
+		1, 1, 1, 1, 1, 1, 1, 1,
+		-1, 0, 0, 0, 0, 0, 0, -1,
+		0, 0, -1, 0, 0, -1, 0, 0,
+		0, 0, 0, -1, -1, 0, 0, 0,
+	]).id('tfg:sewing/dashornament_smartobserver')
 
 	event.recipes.tfc.sewing(
 		'1x mts:automotives.dashornament_snail',
@@ -769,11 +771,11 @@ function registerImmersiveVehiclesRecipes(event) {
 			0, 0, 0, 0, 1, 1, 1, 1, 0,
 			0, 0, 0, 0, 1, 0, 0, 0, 0
 		], [
-			1,-1, 1,-1, 0, 0, 0, 0,
-			1,-1, 1,-1, 0, 0, 0, 0,
-			-1,1, 1, 1, 0, 0, 0, 0,
-			-1,1, 1, 1, 0, 0, 0, 0,
-		]).id('tfg:sewing/dashornament_snail')
+		1, -1, 1, -1, 0, 0, 0, 0,
+		1, -1, 1, -1, 0, 0, 0, 0,
+		-1, 1, 1, 1, 0, 0, 0, 0,
+		-1, 1, 1, 1, 0, 0, 0, 0,
+	]).id('tfg:sewing/dashornament_snail')
 
 	event.shaped('mts:belroftmotors.boat_trailer_tow_hitch', [
 		'AC ',
@@ -866,7 +868,7 @@ function registerImmersiveVehiclesRecipes(event) {
 		'EAC',
 		'FCC'
 	], {
-		A: '#greate:belts',
+		A: '#tfg:rubber_belts',
 		B: '#tfg:any_bronze_crate',
 		C: '#forge:small_item_pipes/brass',
 		D: '#forge:tools/screwdrivers',
@@ -948,7 +950,7 @@ function registerImmersiveVehiclesRecipes(event) {
 	}).id('mts:automotives.upgrade_urlwings')
 
 	event.recipes.create.sequenced_assembly(
-		'4x mts:automotives.bullet_cakecapsule', 
+		'4x mts:automotives.bullet_cakecapsule',
 		'gtceu:fluid_cell',
 		[
 			event.recipes.create.deploying('gtceu:fluid_cell', ['gtceu:fluid_cell', '#create:blaze_burner_fuel/special']),
@@ -958,7 +960,7 @@ function registerImmersiveVehiclesRecipes(event) {
 		.loops(1)
 		.id('mts:automotives.bullet_cakecapsule')
 	// #endregion
-	
+
 	// #region Wheels	
 	event.shaped('mts:mtsofficialpack.wheelsmall', [
 		' B ',
@@ -998,7 +1000,7 @@ function registerImmersiveVehiclesRecipes(event) {
 	// #endregion
 
 	// #region Propellers
-		
+
 	event.shaped('mts:mtsofficialpack.propellersmall3blade', [
 		'BFB',
 		'CAE',
@@ -1017,7 +1019,7 @@ function registerImmersiveVehiclesRecipes(event) {
 		.itemOutputs('mts:mtsofficialpack.propellersmall3blade')
 		.EUt(GTValues.VA[GTValues.ULV])
 		.duration(100)
-	
+
 	event.shaped('mts:mtsofficialpack.propellersmall2blade', [
 		' FB',
 		'CAE',
@@ -1036,7 +1038,7 @@ function registerImmersiveVehiclesRecipes(event) {
 		.itemOutputs('mts:mtsofficialpack.propellersmall2blade')
 		.EUt(GTValues.VA[GTValues.ULV])
 		.duration(100)
-	
+
 	event.shaped('mts:mtsofficialpack.propellerlarge2blade', [
 		'AA ',
 		'CBD',
@@ -1053,7 +1055,7 @@ function registerImmersiveVehiclesRecipes(event) {
 		.itemOutputs('mts:mtsofficialpack.propellerlarge2blade')
 		.EUt(GTValues.VA[GTValues.ULV])
 		.duration(100)
-		
+
 	event.recipes.create.mechanical_crafting('mts:mtsofficialpack.propellerrotor', [
 		'   C   ',
 		'AAABAAA'
@@ -1062,13 +1064,13 @@ function registerImmersiveVehiclesRecipes(event) {
 		B: '#forge:rotors/steel',
 		C: '#forge:screws/steel'
 	}).id('mts:mtsofficialpack.propellerrotor')
-	
+
 	event.recipes.gtceu.assembler('mts:mtsofficialpack.propellerrotor')
 		.itemInputs('#forge:rotors/steel', '6x #forge:rods/long/black_steel', '#forge:screws/steel')
 		.itemOutputs('mts:mtsofficialpack.propellerrotor')
 		.EUt(GTValues.VA[GTValues.ULV])
 		.duration(100)
-		
+
 	event.recipes.create.mechanical_crafting('mts:mtsofficialpack.propellerrotor206', [
 		'    C    ',
 		'AAAABAAAA'
@@ -1084,13 +1086,13 @@ function registerImmersiveVehiclesRecipes(event) {
 		.EUt(GTValues.VA[GTValues.ULV])
 		.duration(100)
 
-	event.shapeless('mts:belroftmotors.tuna_propeller', 
+	event.shapeless('mts:belroftmotors.tuna_propeller',
 		['#forge:rotors/steel', '#forge:screws/steel', '#forge:tools/screwdrivers'])
-	.id('mts:belroftmotors.tuna_propeller')
-		
-	event.shapeless('mts:belroftmotors.barracuda_propeller', 
+		.id('mts:belroftmotors.tuna_propeller')
+
+	event.shapeless('mts:belroftmotors.barracuda_propeller',
 		['#forge:rotors/aluminium', '#forge:screws/steel', '#forge:tools/screwdrivers'])
-	.id('mts:belroftmotors.barracuda_propeller')
+		.id('mts:belroftmotors.barracuda_propeller')
 
 	// #endregion
 
@@ -1124,7 +1126,7 @@ function registerImmersiveVehiclesRecipes(event) {
 		.duration(200)
 		.EUt(4)
 		.category(GTRecipeCategories.CHEM_DYES)
-	
+
 	const car_seats = [
 		{ dye: 'black', mts: 'black' },
 		{ dye: 'gray', mts: 'grey' },
@@ -1149,16 +1151,16 @@ function registerImmersiveVehiclesRecipes(event) {
 	})
 
 	const av_seats = [
-		{ dye: 'white', mts: 'white'},
-		{ dye: 'yellow', mts: 'yellow'},
-		{ dye: 'red', mts: 'red'},
-		{ dye: 'purple', mts: 'pink'},
-		{ dye: 'gray', mts: 'grey'},
-		{ dye: 'green', mts: 'olive'},
-		{ dye: 'cyan', mts: 'cyan'},
-		{ dye: 'brown', mts: 'brown'},
-		{ dye: 'blue', mts: 'blue'},
-		{ dye: 'black', mts: 'black'}
+		{ dye: 'white', mts: 'white' },
+		{ dye: 'yellow', mts: 'yellow' },
+		{ dye: 'red', mts: 'red' },
+		{ dye: 'purple', mts: 'pink' },
+		{ dye: 'gray', mts: 'grey' },
+		{ dye: 'green', mts: 'olive' },
+		{ dye: 'cyan', mts: 'cyan' },
+		{ dye: 'brown', mts: 'brown' },
+		{ dye: 'blue', mts: 'blue' },
+		{ dye: 'black', mts: 'black' }
 	]
 	av_seats.forEach(seat => {
 		event.shaped(`mts:mtsofficialpack.seat${seat.mts}`, [
@@ -1253,7 +1255,7 @@ function registerImmersiveVehiclesRecipes(event) {
 
 	event.shapeless('mts:mtsofficialpack.beacon_tower_standard', ['mts:mtsofficialpack.beacon_tower_inverted'])
 		.id('mts:shapeless/beacon_standard')
-		
+
 	event.shapeless('mts:mtsofficialpack.beacon_tower_inverted', ['mts:mtsofficialpack.beacon_tower_standard'])
 		.id('mts:shapeless/beacon_inverted')
 
@@ -1298,7 +1300,7 @@ function registerImmersiveVehiclesRecipes(event) {
 		A: '#forge:rods/wrought_iron',
 		B: '#forge:tools/wrenches'
 	}).id('mts:mtsofficialpack.pole_core')
-	
+
 	event.shaped('4x mts:mtsofficialpack.pole_crossingsignal', [
 		' D ',
 		'AB ',
@@ -1327,7 +1329,7 @@ function registerImmersiveVehiclesRecipes(event) {
 		B: 'minecraft:yellow_stained_glass_pane',
 		D: 'create:electron_tube'
 	}).id('mts:mtsofficialpack.pole_flashingsignal_yellow')
-	
+
 	event.shaped('4x mts:mtsofficialpack.pole_trafficsignal', [
 		'AB ',
 		'ACE',
@@ -1348,7 +1350,7 @@ function registerImmersiveVehiclesRecipes(event) {
 		B: 'minecraft:glowstone',
 		D: 'create:electron_tube'
 	}).id('mts:mtsofficialpack.pole_streetlight')
-	
+
 	const road_signs = Ingredient.of('#mts:road_signs').itemIds.toArray().map(String);
 	road_signs.forEach(sign => {
 		event.stonecutting(Item.of(sign).withCount(8), '#forge:plates/invar')
@@ -1370,8 +1372,178 @@ function registerImmersiveVehiclesRecipes(event) {
 
 	// #region Engines
 
-	event.shapeless('mts:belroftmotors.engine_highlander_v8_snorkel', ['mts:belroftmotors.engine_highlander_v8', 'tfg:snorkel'])
+	// LV
+	event.recipes.gtceu.assembler('mts:mtsofficialpack.enginefranklin0335')
+		.itemInputs('#tfg:any_bronze_rotor', '4x mts:mtsofficialpack.sparkplug', '10x #forge:tiny_fluid_pipes/steel', '#forge:frames/invar', 'gtceu:lv_fluid_regulator', 'gtceu:lv_electric_piston', '8x #forge:foils/invar', '#tfg:rubber_belts')
+		.inputFluids(Fluid.of('gtceu:lubricant', 2000))
+		.itemOutputs('mts:mtsofficialpack.enginefranklin0335')
+		.EUt(GTValues.VA[GTValues.LV])
+		.duration(20 * 20)
+		.circuit(1)
+		.addMaterialInfo(true)
+
+	event.recipes.gtceu.assembler('mts:mtsofficialpack.enginebristolmercury')
+		.itemInputs('#tfg:any_bronze_rotor', '4x mts:mtsofficialpack.sparkplug', '9x #forge:tiny_fluid_pipes/steel', '2x #forge:frames/invar', 'gtceu:lv_fluid_regulator', '2x gtceu:lv_electric_piston', '8x #forge:foils/invar', '#tfg:rubber_belts')
+		.inputFluids(Fluid.of('gtceu:lubricant', 2000))
+		.itemOutputs('mts:mtsofficialpack.enginebristolmercury')
+		.EUt(GTValues.VA[GTValues.LV])
+		.duration(20 * 20)
+		.circuit(2)
+		.addMaterialInfo(true)
+
+	event.recipes.gtceu.assembler('mts:belroftmotors.engine_tuna')
+		.itemInputs('4x mts:mtsofficialpack.sparkplug', '4x #forge:tiny_fluid_pipes/steel', '#forge:frames/invar', 'gtceu:lv_fluid_regulator', 'gtceu:lv_electric_piston', '8x #forge:foils/invar', '8x #tfg:rubber_rings', '#tfg:rubber_belts')
+		.inputFluids(Fluid.of('gtceu:lubricant', 2000))
+		.itemOutputs('mts:belroftmotors.engine_tuna')
+		.EUt(GTValues.VA[GTValues.LV])
+		.duration(20 * 20)
+		.circuit(3)
+		.addMaterialInfo(true)
+
+	event.recipes.gtceu.assembler('mts:belroftmotors.engine_mahogany')
+		.itemInputs('2x mts:mtsofficialpack.sparkplug', '4x #forge:tiny_fluid_pipes/steel', '#forge:frames/invar', 'gtceu:lv_fluid_regulator', 'gtceu:lv_electric_piston', '8x #forge:foils/invar', '8x #tfg:rubber_rings', '#tfg:rubber_belts')
+		.inputFluids(Fluid.of('gtceu:lubricant', 2000))
+		.itemOutputs('mts:belroftmotors.engine_mahogany')
+		.EUt(GTValues.VA[GTValues.LV])
+		.duration(20 * 20)
+		.circuit(4)
+		.addMaterialInfo(true)
+
+	event.recipes.gtceu.assembler('mts:mtsofficialpack.enginequad')
+		.itemInputs('4x mts:mtsofficialpack.sparkplug', '2x #forge:tiny_fluid_pipes/steel', '#forge:frames/invar', 'gtceu:lv_electric_pump', 'gtceu:lv_electric_piston', '8x #forge:foils/invar', '8x #tfg:rubber_rings', '#tfg:rubber_plates')
+		.inputFluids(Fluid.of('gtceu:lubricant', 2000))
+		.itemOutputs('mts:mtsofficialpack.enginequad')
+		.EUt(GTValues.VA[GTValues.LV])
+		.duration(20 * 20)
+		.circuit(5)
+		.addMaterialInfo(true)
+
+	event.recipes.gtceu.assembler('mts:belroftmotors.bee_i3_engine')
+		.itemInputs('2x mts:mtsofficialpack.sparkplug', '4x #forge:tiny_fluid_pipes/steel', '#forge:frames/invar', 'gtceu:lv_fluid_regulator', 'gtceu:lv_electric_piston', '8x #forge:foils/invar', '8x #tfg:rubber_rings', '#tfg:rubber_belts')
+		.inputFluids(Fluid.of('gtceu:lubricant', 2000))
+		.itemOutputs('mts:belroftmotors.bee_i3_engine')
+		.EUt(GTValues.VA[GTValues.LV])
+		.duration(20 * 20)
+		.circuit(6)
+		.addMaterialInfo(true)
+
+	event.recipes.gtceu.assembler('mts:belroftmotors.enginepounderv8')
+		.itemInputs('4x mts:mtsofficialpack.sparkplug', '8x #forge:tiny_fluid_pipes/steel', '#forge:frames/invar', 'gtceu:lv_fluid_regulator', '2x gtceu:lv_electric_piston', '8x #forge:foils/invar', '8x #tfg:rubber_rings', '#tfg:rubber_belts')
+		.inputFluids(Fluid.of('gtceu:lubricant', 2000))
+		.itemOutputs('mts:belroftmotors.enginepounderv8')
+		.EUt(GTValues.VA[GTValues.LV])
+		.duration(20 * 20)
+		.circuit(7)
+		.addMaterialInfo(true)
+
+	event.recipes.gtceu.assembler('mts:mtsofficialpack.engineamci4')
+		.itemInputs('4x mts:mtsofficialpack.sparkplug', '8x #forge:tiny_fluid_pipes/steel', '#forge:frames/invar', 'gtceu:lv_fluid_regulator', '2x gtceu:lv_electric_piston', '8x #forge:foils/wrought_iron', '8x #tfg:rubber_rings', '#tfg:rubber_belts')
+		.inputFluids(Fluid.of('gtceu:lubricant', 2000))
+		.itemOutputs('mts:mtsofficialpack.engineamci4')
+		.EUt(GTValues.VA[GTValues.LV])
+		.duration(20 * 20)
+		.circuit(8)
+		.addMaterialInfo(true)
+
+	event.recipes.gtceu.assembler('mts:mtsofficialpack.enginedetroitdiesel')
+		.itemInputs('6x mts:mtsofficialpack.sparkplug', '8x #forge:tiny_fluid_pipes/steel', '#forge:frames/invar', 'gtceu:lv_fluid_regulator', '2x gtceu:lv_electric_piston', '8x #forge:foils/wrought_iron', '8x #tfg:rubber_rings', '#tfg:rubber_belts')
+		.inputFluids(Fluid.of('gtceu:lubricant', 2000))
+		.itemOutputs('mts:mtsofficialpack.enginedetroitdiesel')
+		.EUt(GTValues.VA[GTValues.LV])
+		.duration(20 * 20)
+		.circuit(9)
+		.addMaterialInfo(true)
+
+	// MV
+	event.recipes.gtceu.assembler('mts:mtsofficialpack.engineallison250')
+		.itemInputs('2x #forge:rotors/magnalium', '8x mts:mtsofficialpack.sparkplug', '12x #forge:tiny_fluid_pipes/aluminium', '2x #forge:frames/magnalium', '2x gtceu:mv_fluid_regulator', '3x gtceu:mv_electric_piston', '16x #forge:foils/magnalium', '16x #tfg:rubber_rings')
+		.inputFluids(Fluid.of('gtceu:lubricant', 4000))
+		.itemOutputs('mts:mtsofficialpack.engineallison250')
+		.EUt(GTValues.VA[GTValues.MV])
+		.duration(20 * 20)
+		.circuit(1)
+		.addMaterialInfo(true)
+
+	event.recipes.gtceu.assembler('mts:mtsofficialpack.enginelycomingo360')
+		.itemInputs('2x #forge:rotors/magnalium', '8x mts:mtsofficialpack.sparkplug', '12x #forge:tiny_fluid_pipes/aluminium', '2x #forge:frames/magnalium', '2x gtceu:mv_fluid_regulator', '3x gtceu:mv_electric_piston', '16x #forge:foils/magnalium', '16x #tfg:rubber_rings')
+		.inputFluids(Fluid.of('gtceu:lubricant', 4000))
+		.itemOutputs('mts:mtsofficialpack.enginelycomingo360')
+		.EUt(GTValues.VA[GTValues.MV])
+		.duration(20 * 20)
+		.circuit(2)
+		.addMaterialInfo(true)
+
+	event.recipes.gtceu.assembler('mts:belroftmotors.engine_barracuda')
+		.itemInputs('2x mts:mtsofficialpack.sparkplug', '6x #forge:tiny_fluid_pipes/aluminium', '#forge:frames/magnalium', 'gtceu:mv_fluid_regulator', '2x gtceu:mv_electric_piston', '16x #forge:foils/magnalium', '16x #tfg:rubber_rings', '#tfg:rubber_belts')
+		.inputFluids(Fluid.of('gtceu:lubricant', 2000))
+		.itemOutputs('mts:belroftmotors.engine_barracuda')
+		.EUt(GTValues.VA[GTValues.MV])
+		.duration(20 * 20)
+		.circuit(3)
+		.addMaterialInfo(true)
+
+	event.recipes.gtceu.assembler('mts:belroftmotors.engine_highlander_v8')
+		.itemInputs('4x mts:mtsofficialpack.sparkplug', '10x #forge:tiny_fluid_pipes/aluminium', '2x #forge:frames/magnalium', '2x gtceu:mv_fluid_regulator', '2x gtceu:mv_electric_piston', '16x #forge:foils/magnalium', '16x #tfg:rubber_rings', '#tfg:rubber_belts')
+		.inputFluids(Fluid.of('gtceu:lubricant', 2000))
+		.itemOutputs('mts:belroftmotors.engine_highlander_v8')
+		.EUt(GTValues.VA[GTValues.MV])
+		.duration(20 * 20)
+		.circuit(4)
+		.addMaterialInfo(true)
+
+	event.shapeless('mts:belroftmotors.engine_highlander_v8_snorkel', ['mts:belroftmotors.engine_highlander_v8', 'tfg:snorkel', '#forge:tools/wrenches'])
 		.id('tfg:shapeless/who_up_snorkeling_they_engine')
+
+	event.recipes.tfc.extra_products_shapeless_crafting(
+		'tfg:snorkel',
+		event.shapeless('mts:belroftmotors.engine_highlander_v8', ['mts:belroftmotors.engine_highlander_v8_snorkel', '#forge:tools/wrenches']))
+		.id('tfg:shapeless/unsnorkels_ur_engine')
+
+	event.recipes.gtceu.assembler('mts:belroftmotors.engine_granite')
+		.itemInputs('6x mts:mtsofficialpack.sparkplug', '12x #forge:tiny_fluid_pipes/aluminium', '2x #forge:frames/magnalium', '2x gtceu:mv_fluid_regulator', '2x gtceu:mv_electric_piston', '16x #forge:foils/magnalium', '16x #tfg:rubber_rings', '#tfg:rubber_belts')
+		.inputFluids(Fluid.of('gtceu:lubricant', 2000))
+		.itemOutputs('mts:belroftmotors.engine_granite')
+		.EUt(GTValues.VA[GTValues.MV])
+		.duration(20 * 20)
+		.circuit(5)
+		.addMaterialInfo(true)
+
+	event.recipes.gtceu.assembler('mts:belroftmotors.engine_turbo_hauler_v8')
+		.itemInputs('6x mts:mtsofficialpack.sparkplug', '10x #forge:tiny_fluid_pipes/aluminium', '2x #forge:frames/magnalium', '2x gtceu:mv_fluid_regulator', '2x gtceu:mv_electric_piston', '16x #forge:foils/magnalium', '16x #tfg:rubber_rings', '#tfg:rubber_belts')
+		.inputFluids(Fluid.of('gtceu:lubricant', 2000))
+		.itemOutputs('mts:belroftmotors.engine_turbo_hauler_v8')
+		.EUt(GTValues.VA[GTValues.MV])
+		.duration(20 * 20)
+		.circuit(6)
+		.addMaterialInfo(true)
+
+	// HV
+	event.recipes.gtceu.assembler('mts:mtsofficialpack.enginepw610f')
+		.itemInputs('4x #forge:rotors/chromium', '64x #forge:bolts/stainless_steel', '16x #forge:plates/stainless_steel', '20x #forge:tiny_fluid_pipes/stainless_steel', '4x #forge:frames/mo_50_re', '4x gtceu:hv_fluid_regulator', '32x #forge:foils/vanadium_steel', '32x #tfg:rubber_rings')
+		.inputFluids(Fluid.of('gtceu:lubricant', 8000))
+		.itemOutputs('mts:mtsofficialpack.enginepw610f')
+		.EUt(GTValues.VA[GTValues.HV])
+		.duration(20 * 20)
+		.circuit(1)
+		.addMaterialInfo(true)
+
+	event.recipes.gtceu.assembler('mts:mtsofficialpack.enginefordfe428')
+		.itemInputs('16x mts:mtsofficialpack.sparkplug', '16x #forge:tiny_fluid_pipes/stainless_steel', '2x #forge:frames/mo_50_re', '4x gtceu:hv_fluid_regulator', '4x gtceu:hv_electric_piston', '32x #forge:foils/vanadium_steel', '32x #tfg:rubber_rings', '#tfg:rubber_belts')
+		.inputFluids(Fluid.of('gtceu:lubricant', 8000))
+		.itemOutputs('mts:mtsofficialpack.enginefordfe428')
+		.EUt(GTValues.VA[GTValues.HV])
+		.duration(20 * 20)
+		.circuit(2)
+		.addMaterialInfo(true)
+
+	event.recipes.gtceu.assembler('mts:mtsofficialpack.enginemercedesm102')
+		.itemInputs('16x mts:mtsofficialpack.sparkplug', '16x #forge:tiny_fluid_pipes/stainless_steel', '2x #forge:frames/mo_50_re', '4x gtceu:hv_fluid_regulator', '4x gtceu:hv_electric_piston', '32x #forge:foils/vanadium_steel', '32x #tfg:rubber_rings', '#tfg:rubber_belts')
+		.inputFluids(Fluid.of('gtceu:lubricant', 8000))
+		.itemOutputs('mts:mtsofficialpack.enginemercedesm102')
+		.EUt(GTValues.VA[GTValues.HV])
+		.duration(20 * 20)
+		.circuit(3)
+		.addMaterialInfo(true)
 
 	// #endregion
 
@@ -1394,11 +1566,69 @@ function registerImmersiveVehiclesRecipes(event) {
 		F: 'create:fluid_tank',
 		G: 'mts:mtsofficialpack.wheelmedium',
 		H: '#create:seats'
-	}).id('tfg:man_of_many_planes/mechanical_crafter/economy_plane');
+	}).id('mts:automotives.biplane');
+
+	event.recipes.gtceu.automotive_workshop('mts:automotives.biplane')
+		.itemInputs('11x create:brass_casing', '9x tfg:aircraft_sail', '6x #forge:plates/black_steel',
+			'2x mts:mtsofficialpack.wheelmedium', 'tfg:generators/steel_combustion_engine', '#create:seats',
+			'create:fluid_tank', 'mts:mtsofficialpack.propellersmall3blade')
+		.itemOutputs('mts:automotives.biplane')
+		.EUt(GTValues.VA[GTValues.LV])
+		.duration(60 * 20)
+		.addMaterialInfo(true)
+		
+	const bell47s = [
+		{ suffix: '', dye: 'red' },
+		{ suffix: '_black', dye: 'black' },
+		{ suffix: '_blue', dye: 'blue' },
+		{ suffix: '_olive', dye: 'green' }
+	];
+	bell47s.forEach(bell => {
+		event.recipes.create.mechanical_crafting(`mts:mtsofficialpack.bell47g${bell.suffix}`, [
+			' BB      ',
+			'ACFB     ',
+			'AEFGGGGGH',
+			'ADFBI    ',
+			' BB      '
+		], {
+			A: '#forge:glass',
+			B: '#forge:rods/invar',
+			C: 'gtceu:lv_sensor',
+			D: 'create:precision_mechanism',
+			E: '#gtceu:batteries/lv',
+			F: '#forge:plates/invar',
+			G: '#forge:frames/invar',
+			H: '#tfg:any_bronze_rotor',
+			I: TFC.ingredient.fluid(TFC.fluidStackIngredient(`tfc:${bell.dye}_dye`, 1000))
+		}).id(`mts:mtsofficialpack.bell47g${bell.suffix}`);
+
+		event.recipes.gtceu.automotive_workshop(`mts:mtsofficialpack.bell47g${bell.suffix}`)
+			.itemInputs('3x #forge:glass', '6x #forge:rods/invar', '5x #forge:frames/invar', '3x #forge:plates/invar',
+				'gtceu:lv_sensor', 'create:precision_mechanism', '#gtceu:batteries/lv', '#tfg:any_bronze_rotor')
+			.inputFluids(Fluid.of(`tfc:${bell.dye}_dye`, 1152))
+			.itemOutputs(`mts:mtsofficialpack.bell47g${bell.suffix}`)
+			.EUt(GTValues.VA[GTValues.LV])
+			.duration(60 * 20)
+			.addMaterialInfo(true)
+	})
+	// TODO: add more dyes to the above? the red one has a yellow tail
+
+	//event.recipes.create.mechanical_crafting('mts:automotives.biplane', [
+	//	'         ',
+	//	'         ',
+	//	'         ',
+	//	'         ',
+	//	'         ',
+	//	'         ',
+	//	'         ',
+	//	'         '
+	//], {
+
+	//}).id('mts:automotives.biplane');
 
 	// #endregion Planes
 
-	// #region Custom stuff
+	// #region Parts
 
 	//Scaffolding Frame
 	event.shaped('tfg:scaffolding_frame', [
@@ -1454,5 +1684,54 @@ function registerImmersiveVehiclesRecipes(event) {
 		B: '#forge:cloth',
 		C: '#minecraft:trapdoors'
 	}).id('tfg:shaped/sail');
+
+	// Sparkplug
+
+	event.shaped('mts:mtsofficialpack.sparkplug', [
+		'BBG',
+		'FCE',
+		'DAD'
+	], {
+		A: 'tfg:spark_plug_casing',
+		B: '#forge:bolts/copper',
+		C: '#forge:rings/steel',
+		D: '#forge:foils/steel',
+		E: '#forge:single_cables/tin',
+		F: '#forge:rods/invar',
+		G: '#forge:tools/screwdrivers'
+	}).id('mts:mtsofficialpack.sparkplug')
+
+	event.recipes.gtceu.assembler('mts:mtsofficialpack.sparkplug_lv')
+		.itemInputs('tfg:spark_plug_casing', '2x #forge:bolts/copper', '2x #forge:foils/steel', '#forge:rings/steel', '#forge:single_cables/tin', '#forge:rods/invar')
+		.itemOutputs('mts:mtsofficialpack.sparkplug')
+		.duration(60)
+		.EUt(GTValues.VA[GTValues.LV])
+
+	event.recipes.gtceu.assembler('mts:mtsofficialpack.sparkplug_mv')
+		.itemInputs('tfg:spark_plug_casing', '2x #forge:bolts/chromium', '2x #forge:foils/aluminium', '#forge:rings/aluminium', '#forge:single_cables/copper', '#forge:rods/cupronickel')
+		.itemOutputs('2x mts:mtsofficialpack.sparkplug')
+		.duration(60)
+		.EUt(GTValues.VA[GTValues.MV])
+
+	event.recipes.gtceu.assembler('mts:mtsofficialpack.sparkplug_hv')
+		.itemInputs('tfg:spark_plug_casing', '2x #forge:bolts/platinum', '2x #forge:foils/stainless_steel', '#forge:rings/stainless_steel', '#forge:single_cables/gold', '#forge:rods/nichrome')
+		.itemOutputs('4x mts:mtsofficialpack.sparkplug')
+		.duration(60)
+		.EUt(GTValues.VA[GTValues.HV])
+
+	event.recipes.gtceu.alloy_smelter('tfg:spark_plug_casing_fireclay')
+		.itemImputs('tfc:fire_clay')
+		.notConsumable('gtceu:tiny_pipe_casting_mold')
+		.itemOutputs('tfg:spark_plug_casing')
+		.duration(100)
+		.EUt(GTValues.VA[GTValues.LV])
+
+	event.recipes.gtceu.alloy_smelter('tfg:spark_plug_casing_alumina')
+		.itemImputs('tfg:alumina_dust')
+		.notConsumable('gtceu:tiny_pipe_casting_mold')
+		.itemOutputs('tfg:spark_plug_casing')
+		.duration(100)
+		.EUt(GTValues.VA[GTValues.LV])
+
 	// #endregion
 }
