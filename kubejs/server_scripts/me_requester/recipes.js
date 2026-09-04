@@ -5,7 +5,12 @@ const registerMERequesterRecipes = (event) => {
 
 	event.remove({ id: 'merequester:requester' })
 
+	function requiresOxygenation(recipe) {
+		TFGRecipeSchemaBindings.isOxygenated(recipe, true)
+	}
+
 	// ME Requester
+	requiresOxygenation(
 	event.recipes.gtceu.me_assembler('tfg:merequester/merequester')
 		.itemInputs(
 			'expatternprovider:ex_pattern_provider',
@@ -18,10 +23,9 @@ const registerMERequesterRecipes = (event) => {
 		.itemOutputs('merequester:requester')
 		.duration(20*4800)
 		.EUt(GTValues.VA[GTValues.LuV])
-		.cleanroom(CleanroomType.CLEANROOM)
 		.dimension('ad_astra:moon')
 		.addMaterialInfo(true)
-		.circuit(9)
+		.circuit(9))
 
 	// ME Requester Terminal
 	event.shaped('merequester:requester_terminal', [
