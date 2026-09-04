@@ -90,5 +90,7 @@
   "text.autoconfig.megacells.option.AllowSpentWaste.@Tooltip": "Whether the MEGA Radioactive Cell should be able to store Spent Nuclear Waste.",
   "text.autoconfig.megacells.option.CompressionChainLimit": "Bulk Compression chain limit",
   "text.autoconfig.megacells.option.CompressionChainLimit.@Tooltip": "The maximum number of variants that a compression-enabled Bulk Cell may report as being stored.",
-  "text.autoconfig.megacells.title": "MEGA Cells"
+  "text.autoconfig.megacells.title": "MEGA Cells",
+  "block.megacells.mega_pattern_provider": "MEGA Pattern Provider",
+  "item.megacells.cable_mega_pattern_provider": "MEGA Pattern Provider"
 }

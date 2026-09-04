@@ -322,5 +322,10 @@
   "gui.xaero_worldmap_waypoints": "World Map Waypoints",
   "gui.xaero_zoom_buttons": "Zoom Buttons",
   "gui_xaero_wm_dropdown_dimension_select": "Dimension Selection",
-  "gui_xaero_wm_dropdown_map_select": "Map Selection"
+  "gui_xaero_wm_dropdown_map_select": "Map Selection",
+  "gui.xaero_pac_interrupt_claiming": "Interrupt Claim Actions",
+  "gui.xaero_pac_requested_large_claim": "Began claiming a large area... Use right-click option %1$s to cancel.",
+  "gui.xaero_pac_requested_large_unclaim": "Began unclaiming a large area... Use right-click option %1$s to cancel.",
+  "gui.xaero_pac_requested_large_forceload": "Began marking a large area for forceloading... Use right-click option %1$s to cancel.",
+  "gui.xaero_pac_requested_large_unforceload": "Began unmarking a large area for forceloading... Use right-click option %1$s to cancel."
 }

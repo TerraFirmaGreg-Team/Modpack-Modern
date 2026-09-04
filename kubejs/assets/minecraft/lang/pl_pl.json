@@ -48,12 +48,13 @@
 	"block.minecraft.iron_block": "Blok żeliwa",
 	"block.minecraft.large_fern": "Pióropusznik strusi",
 	"block.minecraft.light_blue_wool": "Blok jasnoniebieskiej tkaniny",
+	"block.minecraft.light_gray_wool": "Blok jasnoszarej tkaniny",
 	"block.minecraft.light_grey_wool": "Blok jasnoszarej tkaniny",
 	"block.minecraft.lime_wool": "Blok jasnozielonej tkaniny",
 	"block.minecraft.loom": "Krosno do sztandarów",
 	"block.minecraft.magenta_wool": "Blok purpurowej tkaniny",
 	"block.minecraft.magma_block": "Piroksenitowa magma",
-	"block.minecraft.mossy_cobblestone": "Zamszona bruk z odtworzonego kamienia",
+	"block.minecraft.mossy_cobblestone": "Zamszony bruk z odtworzonego kamienia",
 	"block.minecraft.mossy_cobblestone_slab": "Zamszona brukowa płyta z odtworzonego kamienia",
 	"block.minecraft.mossy_cobblestone_stairs": "Zamszone brukowe schody z odtworzonego kamienia",
 	"block.minecraft.mossy_cobblestone_wall": "Zamszony brukowy murek z odtworzonego kamienia",
@@ -150,5 +151,6 @@
 	"item.minecraft.smithing_template.armor_trim.additions_slot_description": "Dodaj płytkę lub wybitny klejnot",
 	"item.minecraft.string": "Jedwabna nić",
 	"material.tfg.dripstone": "Trawertyn",
-	"tag.item.minecraft.wool": "Bloki tkaniny"
+	"tag.item.minecraft.wool": "Bloki tkaniny",
+	"tag.item.minecraft.wool_carpets": "Dywany"
 }

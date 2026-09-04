@@ -139,5 +139,7 @@
 	"statusbar.createaddition.wire.long": "電線太長",
 	"statusbar.createaddition.wire.no_connection": "電線未連接到這裡",
 	"statusbar.createaddition.wire.removed": "電線已移除",
-	"statusbar.createaddition.wire.requires_high_current": "此連接需要高電流電線"
+	"statusbar.createaddition.wire.requires_high_current": "此連接需要高電流電線",
+	"block.createaddition.creative_energy": "創造模式發電機",
+	"block.createaddition.creative_energy.tooltip.summary": "產生無限的_⚡_電力供應。"
 }

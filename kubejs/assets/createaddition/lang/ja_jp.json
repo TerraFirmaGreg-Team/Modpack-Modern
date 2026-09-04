@@ -136,5 +136,7 @@
 	"statusbar.createaddition.wire.long": "ワイヤーが長すぎます",
 	"statusbar.createaddition.wire.no_connection": "ワイヤーがここに接続されていません",
 	"statusbar.createaddition.wire.removed": "ワイヤーを外しました",
-	"statusbar.createaddition.wire.requires_high_current": "この接続には高電流ワイヤーが必要です"
+	"statusbar.createaddition.wire.requires_high_current": "この接続には高電流ワイヤーが必要です",
+	"block.createaddition.creative_energy": "クリエイティブ発電機",
+	"block.createaddition.creative_energy.tooltip.summary": "無限の_FE_を供給します。"
 }

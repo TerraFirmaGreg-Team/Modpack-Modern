@@ -119,7 +119,6 @@
 	"effect.createaddition.shocking.description": "Викликає значне зниження швидкості руху",
 	"fluid.createaddition.bioethanol": "Біопаливо",
 	"fluid.createaddition.seed_oil": "Олія",
-	"item.createaddition.brass_figurine": "Brass Figurine",
 	"item.createaddition.brass_figurine.tooltip": "ЛАТУННА_ФІГУРКА",
 	"item.createaddition.bronze_rod": "Бронзовий стрижень",
 	"item.createaddition.cake_base": "Основа для торта",
@@ -147,5 +146,8 @@
 	"statusbar.createaddition.wire.long": "Дріт задовгий",
 	"statusbar.createaddition.wire.no_connection": "Дріт тут не підключений",
 	"statusbar.createaddition.wire.removed": "Дріт прибраний",
-	"statusbar.createaddition.wire.requires_high_current": "Це з'єднання вимагає високо струмовий дріт"
+	"statusbar.createaddition.wire.requires_high_current": "Це з'єднання вимагає високо струмовий дріт",
+	"block.createaddition.creative_energy": "Творчий генератор",
+	"block.createaddition.creative_energy.tooltip": "ТВОРЧИЙ ГЕНЕРАТОР",
+	"block.createaddition.creative_energy.tooltip.summary": "Генерує нескінченний запас _FE_."
 }

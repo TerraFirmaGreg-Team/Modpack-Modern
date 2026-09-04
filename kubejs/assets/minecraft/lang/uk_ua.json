@@ -48,6 +48,7 @@
 	"block.minecraft.iron_block": "Блок литого чавуна",
 	"block.minecraft.large_fern": "Страусове перо",
 	"block.minecraft.light_blue_wool": "Блок блакитної тканини",
+	"block.minecraft.light_gray_wool": "Блок світло-сірої тканини",
 	"block.minecraft.light_grey_wool": "Блок світло-сірої тканини",
 	"block.minecraft.lime_wool": "Блок лаймової тканини",
 	"block.minecraft.loom": "Верстат для стягів",
@@ -150,5 +151,6 @@
 	"item.minecraft.smithing_template.armor_trim.additions_slot_description": "Додай пластину або вишуканий дорогоцінний камінь",
 	"item.minecraft.string": "Шовкова нитка",
 	"material.tfg.dripstone": "Травертин",
-	"tag.item.minecraft.wool": "Блоки тканини"
+	"tag.item.minecraft.wool": "Блоки тканини",
+	"tag.item.minecraft.wool_carpets": "Килими"
 }

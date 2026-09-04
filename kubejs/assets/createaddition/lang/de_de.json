@@ -135,5 +135,6 @@
 	"statusbar.createaddition.wire.long": "Kabel ist zu lang",
 	"statusbar.createaddition.wire.no_connection": "Kabel ist hier nicht verbunden",
 	"statusbar.createaddition.wire.removed": "Kabel entfernt",
-	"statusbar.createaddition.wire.requires_high_current": "Diese Verbindung benötigt Hochspannung."
+	"statusbar.createaddition.wire.requires_high_current": "Diese Verbindung benötigt Hochspannung.",
+	"block.createaddition.creative_energy": "Kreativer Generator"
 }
