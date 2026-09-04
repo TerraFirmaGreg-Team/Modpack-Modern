@@ -30,11 +30,11 @@ global.GREATE_DISABLED_FLUIDS = /** @type {const} */ ([
 ]);
 
 global.GREATE_BELTS = /** @type {const} */ ([
+    "greate:andesite_alloy_belt_connector", // plank
+    "greate:stone_belt_connector", // leather
+    "greate:rubber_belt_connector",
     "greate:silicone_rubber_belt_connector",
-    "greate:polybenzimidazole_belt_connector",
-    "greate:polyethylene_belt_connector",
-    "greate:polytetrafluoroethylene_belt_connector",
-    "greate:rubber_belt_connector"
+    "greate:styrene_butadiene_rubber_belt_connector",
 ]);
 
 global.GREATE_CRUSHING_WHEELS = /** @type {const} */ ([

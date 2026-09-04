@@ -91,6 +91,10 @@ const registerTFGItemTags = (event) => {
 	event.add('forge:screws/any_bronze', '#forge:screws/bismuth_bronze')
 	event.add('forge:screws/any_bronze', '#forge:screws/black_bronze')
 
+	event.add('tfg:any_bronze_rotor', '#forge:rotors/bronze')
+	event.add('tfg:any_bronze_rotor', '#forge:rotors/bismuth_bronze')
+	event.add('tfg:any_bronze_rotor', '#forge:rotors/black_bronze')
+
 	// Steam Bloomery
     event.add("tfg:bloomery_basic_fuels", "minecraft:charcoal");
     event.add("tfg:bloomery_basic_fuels", "tfc:ore/bituminous_coal");

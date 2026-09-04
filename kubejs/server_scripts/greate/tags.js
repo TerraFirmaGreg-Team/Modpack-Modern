@@ -11,6 +11,12 @@ function registerGreateItemTags(event) {
     global.GREATE_MECHANICAL_PUMPS.forEach((pump) => event.add("greate:mechanical_pumps", pump));
     global.GREATE_MECHANICAL_SAWS.forEach((saw) => event.add("greate:mechanical_saws", saw));
     global.GREATE_MILLSTONES.forEach((millstone) => event.add("greate:millstones", millstone));
+
+    event.add('tfg:rubber_belts', [
+        'greate:rubber_belt_connector',
+        'greate:silicone_rubber_belt_connector',
+        'greate:styrene_butadiene_rubber_belt_connector'
+    ])
 }
 
 /** @param {TagEvent.Fluid} event */
