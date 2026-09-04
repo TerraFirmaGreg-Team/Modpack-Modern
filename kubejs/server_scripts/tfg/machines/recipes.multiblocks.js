@@ -403,5 +403,40 @@ function registerTFGMultiblockRecipes(event) {
 		.circuit(1)
 		.EUt(GTValues.VA[GTValues.LV])
 		.addMaterialInfo(true)
+
+	// Space Heater
+	event.recipes.gtceu.shaped('tfg:space_heater', [
+		'APA',
+		'PBP',
+		'CPC'
+	], {
+		A: 'gtceu:filter_casing',
+		P: 'gtceu:steel_pipe_casing',
+		B: 'gtceu:mv_machine_hull',
+		C: '#gtceu:circuits/hv'
+	}).addMaterialInfo().id('tfg:shaped/space_heater')
+
+	// Oxygen Distributor
+	event.recipes.gtceu.shaped('tfg:oxygen_distributor', [
+		'ABA',
+		'BCB',
+		'ABA'
+	], {
+		A: 'gtceu:hv_electric_pump',
+		B: 'gtceu:filter_casing',
+		C: 'gtceu:hv_machine_hull'
+	}).addMaterialInfo().id('tfg:shaped/oxygen_distributor')
+
+	// Higgs Emitter
+	event.recipes.gtceu.shaped('tfg:higgs_emitter', [
+		'ABA',
+		'CDC',
+		'ACA'
+	], {
+		A: 'gtceu:magnetic_neodymium_rod',
+		B: 'gtceu:mv_field_generator',
+		C: 'gtceu:desh_frame',
+		D: 'gtceu:hv_machine_hull'
+	}).addMaterialInfo().id('tfg:shaped/higgs_emitter')
 	
 }
