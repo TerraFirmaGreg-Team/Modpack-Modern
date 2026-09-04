@@ -78,7 +78,7 @@
 	"config.tacz.client.render.target_render_distance": "Odległość renderowania celów",
 	"config.tacz.client.render.target_render_distance.desc": "Najdalsza odległość renderowania celi, uwzględniająca typy wagonikowe",
 	"config.tacz.client.resource": "Zasób",
-	"config.tacz.client.resource.enable_lazy_client_asset_load": "Ładowanie Zasobów Leniwego Klienta",
+	"config.tacz.client.resource.enable_lazy_client_asset_load": "Leniwe ładowanie zasobów klienta",
 	"config.tacz.client.resource.enable_lazy_client_asset_load.desc": "Zbuduj zasoby ciężkiego klienta takie jak modele i stan maszyn animowanych na żądanie. Przedmioty w ekwipunku będą wstępnie załadowane w tle, kiedy możliwe.",
 	"config.tacz.client.sound": "Dźwięk",
 	"config.tacz.client.sound.default_sound_concurrency_limit": "Domyślny Limit Współbieżności Dźwięku",
