@@ -24,7 +24,6 @@
   "block.comforts.hammock_yellow": "Gelber Hängemattenstoff",
   "block.comforts.no_sleep": "Dies ist dekorativ, du kannst hier nicht schlafen",
   "block.comforts.rope_and_nail": "Seil und Nägel",
-  "block.comforts.sleeping_bag.broke": "The sleeping bag broke",
   "block.comforts.sleeping_bag.occupied": "Dieser Schlafsack ist besetzt",
   "block.comforts.sleeping_bag.too_far_away": "Du kannst nicht schlafen, der Schlafsack ist zu weit entfernt",
   "block.comforts.sleeping_bag_black": "Schwarzer Schlafsack",
@@ -54,7 +53,5 @@
   "gui.comforts.config.hammocksStopPhantoms.name": "Hängematten beenden Phantome",
   "gui.comforts.config.restMultiplier.name": "Müdigkeitsmultiplikator",
   "item.comforts.hammock.placement.tooltip": "Benötigt %s um platziert zu werden.",
-  "item.comforts.rope_and_nail.placement.tooltip": "Wird benutzt, um Hängematten aufzuhängen.",
-  "itemGroup.comforts": "Comforts",
-  "itemGroup.comforts.general": "Comforts"
+  "item.comforts.rope_and_nail.placement.tooltip": "Wird benutzt, um Hängematten aufzuhängen."
 }

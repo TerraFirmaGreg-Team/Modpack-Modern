@@ -64,7 +64,6 @@
   "tfcgenviewer.narration.info_pane.title": "Információs panel",
   "tfcgenviewer.narration.preview_pane.title": "Előnézeti panel",
   "tfcgenviewer.preview_world.invalid_generator": "A jelenlegi chunk generáció nem TFC, kérlek változtasd meg a világ tipusát",
-  "tfcgenviewer.preview_world.km": "%s km",
   "tfcgenviewer.preview_world.no_tooltip_available": "Nincs elérhető eszköztipp",
   "tfcgenviewer.preview_world.preview_info": "Generált %s régiót %s másodperc allat\nDimenzió: %s km x %s km\nKőzéppontja: (%s,%s)\nVizualizáció: %s\n\nSzínmagyarázat:\n%s",
   "tfcgenviewer.preview_world.preview_info.error": "Hiba lépett fel a generálás allat\n\nKérlek nézdmeg a naplófájlt (log), jelentsd a hibát és kezd újra a generálást egy másik seeddel",
