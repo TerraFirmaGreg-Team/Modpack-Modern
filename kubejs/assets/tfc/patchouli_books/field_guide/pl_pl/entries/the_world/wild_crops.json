@@ -5,7 +5,7 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "$(thing)Dzikie Uprawy$() można znaleźć rozproszone na całym świecie, rosnąc w małych grupkach. Można je zbierać na żywność i nasiona, które następnie mogą być uprawiane w postaci nie dzikiej.$(br2) Dzikie rośliny możesz zebac za pomocą twoich dłoni lub za pomocą $(thing)noża$() lub innego ostrego narzędzia. Po zniszczeniu wypadają nasiona $(thing)() i niektóre produkty $(thing)$()."
+      "text": "$(thing)Dzikie uprawy$() można znaleźć rozproszone na całym świecie, rosnąc w małych grupkach. Można je zbierać na żywność i nasiona, które następnie mogą być uprawiane w postaci nie dzikiej.$(br2) Dzikie rośliny możesz zebac za pomocą twoich dłoni lub za pomocą $(thing)noża$() lub innego ostrego narzędzia. Po zniszczeniu wypadają nasiona $(thing)() i niektóre produkty $(thing)$()."
     },
     {
       "type": "patchouli:multiblock",
