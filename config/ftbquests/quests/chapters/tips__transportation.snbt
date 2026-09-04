@@ -542,12 +542,20 @@
 		}
 	]
 	order_index: 1
-	quest_links: [{
-		id: "704C995D4B6CE874"
-		linked_quest: "46C92B938921A0AC"
-		x: 4.5d
-		y: 0.5d
-	}]
+	quest_links: [
+		{
+			id: "704C995D4B6CE874"
+			linked_quest: "46C92B938921A0AC"
+			x: 8.0d
+			y: -3.5d
+		}
+		{
+			id: "4C2F62D5F7254F2E"
+			linked_quest: "159A0DAEE55DCAC0"
+			x: 5.0d
+			y: -3.5d
+		}
+	]
 	quests: [
 		{
 			dependencies: ["2746958D3D4A0885"]
@@ -1614,8 +1622,8 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.horseshoes.title}"
-			x: 6.5196428571428555d
-			y: -2.6803571428571473d
+			x: 6.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["174DA15847665CF8"]
