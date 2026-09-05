@@ -145,8 +145,5 @@
 	"statusbar.createaddition.wire.long": "El alambre es demasiado largo",
 	"statusbar.createaddition.wire.no_connection": "No hay conexión de alambre aquí",
 	"statusbar.createaddition.wire.removed": "Alambre eliminado",
-	"statusbar.createaddition.wire.requires_high_current": "Esta conexión requiere un alambre de alta corriente",
-	"block.createaddition.creative_energy": "Generador creativo",
-	"block.createaddition.creative_energy.tooltip": "GENERADOR_CREATIVO",
-	"block.createaddition.creative_energy.tooltip.summary": "Genera una cantidad infinita de _⚡_."
+	"statusbar.createaddition.wire.requires_high_current": "Esta conexión requiere un alambre de alta corriente"
 }

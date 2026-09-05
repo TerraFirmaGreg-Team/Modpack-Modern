@@ -77,6 +77,7 @@
 	"tacztweaks.config.label.ETiltGun.NEVER": "Ніколи",
 	"tacztweaks.config.label.disabled": "Вимкнено",
 	"tacztweaks.config.label.enabled": "Увімкнено",
+	"tacztweaks.config.label.multiplier": "%1$sx",
 	"tacztweaks.config.label.synced": "Відображення серверної конфігурації",
 	"tacztweaks.config.modifier.addend.description": "Додає це значення.",
 	"tacztweaks.config.modifier.addend.name": "Доданок",
@@ -128,6 +129,8 @@
 	"tacztweaks.config.modifiers.standInaccuracy.name": "Модифікатори неточності стоячи",
 	"tacztweaks.config.modifiers.verticalRecoil.description": "Змінює вертикальну віддачу зброї.",
 	"tacztweaks.config.modifiers.verticalRecoil.name": "Модифікатори вертикальної віддачі",
+	"tacztweaks.config.title": "TaCZ Tweaks",
+	"tacztweaks.config.tweaks": "Tweaks",
 	"tacztweaks.config.tweaks.alwaysFilterByHand.description": "Завжди вмикати опцію фільтрації за предметом у руці в збройовому верстаті.",
 	"tacztweaks.config.tweaks.alwaysFilterByHand.name": "Завжди фільтрувати за предметом у руці",
 	"tacztweaks.config.tweaks.audibleFirstPersonGunSounds.description": "Дозволяє іншим гравцям у багатокористувацькій грі чути звуки зброї від першої особи (наприклад, перезаряджання або перемикання режиму вогню).",
@@ -153,6 +156,7 @@
 	"tacztweaks.config.tweaks.infiniteAmmoDisablesConsumption.description": "Вимикає витрату патронів, коли гравець має нескінченні боєприпаси (наприклад, із творчої коробки для набоїв).",
 	"tacztweaks.config.tweaks.infiniteAmmoDisablesConsumption.name": "Нескінченні набої без витрат",
 	"tacztweaks.config.tweaks.rps.description": "Замінює показник RPM (постріли за хвилину) в характеристиках зброї на RPS (постріли за секунду).",
+	"tacztweaks.config.tweaks.rps.name": "RPS",
 	"tacztweaks.config.tweaks.suppressFleshHitSounds.description": "Приглушує звук, який відтворюється при влучанні, якщо це не постріл у голову.",
 	"tacztweaks.config.tweaks.suppressFleshHitSounds.name": "Приглушувати звуки влучання по тілу",
 	"tacztweaks.config.tweaks.suppressHeadHitSounds.description": "Приглушує звук, який відтворюється при влучанні в голову.",
@@ -164,5 +168,6 @@
 	"tacztweaks.key.tiltGun": "Нахил зброї",
 	"tacztweaks.key.unload": "Розрядити",
 	"tacztweaks.packs.filter": "Фільтр",
+	"tacztweaks.property_diagrams.rps": "RPS",
 	"tacztweaks.search": "Пошук..."
 }

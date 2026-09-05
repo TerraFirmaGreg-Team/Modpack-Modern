@@ -9,5 +9,21 @@
 	"ali.property.value.name": "Nome: %s",
 	"ali.property.value.range": "Alcance: %s",
 	"ali.property.value.size": "Tamanho: %s",
-	"ali.util.advanced_loot_info.accepts": "Aceita:"
+	"ali.property.value.zoom": "Zoom: %s",
+	"ali.util.advanced_loot_info.accepts": "Aceita:",
+	"ali.enum.dye_color.brown": "Marrom",
+	"ali.enum.dye_color.cyan": "Ciano",
+	"ali.enum.dye_color.gray": "Cinza",
+	"ali.enum.dye_color.green": "Verde",
+	"ali.enum.dye_color.light_blue": "Azul Claro",
+	"ali.enum.dye_color.light_gray": "Cinza Claro",
+	"ali.enum.dye_color.lime": "Cal",
+	"ali.enum.dye_color.orange": "Laranja",
+	"ali.enum.dye_color.pink": "Rosa",
+	"ali.enum.dye_color.red": "Tinto",
+	"ali.enum.dye_color.white": "Branco",
+	"ali.enum.dye_color.yellow": "Amarelo",
+	"ali.enum.equipment_slot.chest": "Baú",
+	"ali.enum.game_type.creative": "Criativo",
+	"ali.type.entry.empty": "Vazio"
 }

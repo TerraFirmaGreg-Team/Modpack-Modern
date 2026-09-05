@@ -66,5 +66,7 @@
   "gui.comforts.config.sleepingBagsStopPhantoms.name": "Śpiwory powstrzymują fantomy",
   "item.comforts.hammock.placement.tooltip": "Wymaga %s, by położyć.",
   "item.comforts.rope_and_nail.placement.tooltip": "Używanie do powieszenia hamaka.",
-  "item.comforts.sleeping_bag.auto_use.tooltip": "Automatycznie próbuje spać.\nŻeby położyć śpiwór, użyj skradając się."
+  "item.comforts.sleeping_bag.auto_use.tooltip": "Automatycznie próbuje spać.\nŻeby położyć śpiwór, użyj skradając się.",
+  "itemGroup.comforts": "Comforts",
+  "itemGroup.comforts.general": "Comforts"
 }

@@ -8,6 +8,7 @@
   "gui.ae2netanalyser.network_analyser.mode.NODES": "節點",
   "gui.ae2netanalyser.network_analyser.mode.CHANNELS": "鏈結",
   "gui.ae2netanalyser.network_analyser.mode.NONUM": "不顯示數字",
+  "gui.ae2netanalyser.network_analyser.mode.P2P": "P2P",
   "gui.ae2netanalyser.network_analyser.LINK.NORMAL": "普通鏈結",
   "gui.ae2netanalyser.network_analyser.LINK.DENSE": "緻密鏈結",
   "gui.ae2netanalyser.network_analyser.LINK.COMPRESSED": "P2P 鏈結",

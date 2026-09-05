@@ -142,8 +142,5 @@
 	"statusbar.createaddition.wire.long": "Tel çok uzun",
 	"statusbar.createaddition.wire.no_connection": "Tel buraya bağlı değil",
 	"statusbar.createaddition.wire.removed": "Tel çıkarıldı",
-	"statusbar.createaddition.wire.requires_high_current": "Bu bağlantı yüksek akım bir tele ihtiyaç duyuyor",
-	"block.createaddition.creative_energy": "Yaratıcı Mod Jeneratörü",
-	"block.createaddition.creative_energy.tooltip": "YARATICI_JENERATÖR",
-	"block.createaddition.creative_energy.tooltip.summary": "Sınırsız _⚡_ üretir."
+	"statusbar.createaddition.wire.requires_high_current": "Bu bağlantı yüksek akım bir tele ihtiyaç duyuyor"
 }

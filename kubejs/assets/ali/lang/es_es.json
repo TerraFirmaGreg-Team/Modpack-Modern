@@ -6,6 +6,21 @@
 	"ali.property.value.id": "ID: %s",
 	"ali.property.value.name": "Nombre: %s",
 	"ali.property.value.range": "Rango: %s",
+	"ali.property.value.size": "Size: %s",
+	"ali.property.value.zoom": "Zoom: %s",
 	"ali.util.advanced_loot_info.accepts": "Admite:",
-	"emi.category.ali.entity_loot": "Objetos que sueltan las entidades"
+	"emi.category.ali.entity_loot": "Objetos que sueltan las entidades",
+	"ali.enum.dye_color.cyan": "Celeste",
+	"ali.enum.dye_color.gray": "Gris",
+	"ali.enum.dye_color.light_blue": "Azúl Claro",
+	"ali.enum.dye_color.light_gray": "Gris Claro",
+	"ali.enum.dye_color.lime": "Lime",
+	"ali.enum.dye_color.orange": "Naranja",
+	"ali.enum.dye_color.pink": "Rosa",
+	"ali.enum.dye_color.white": "Blanco",
+	"ali.enum.dye_color.yellow": "Amarillo",
+	"ali.enum.equipment_slot.chest": "Cofre",
+	"ali.enum.game_type.creative": "Creativo",
+	"ali.enum.map_decoration_type.player": "Jugador",
+	"ali.type.entry.group": "Grupo:"
 }

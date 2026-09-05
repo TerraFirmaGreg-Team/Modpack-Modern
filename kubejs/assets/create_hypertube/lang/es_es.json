@@ -30,6 +30,8 @@
   "hypertube.travel.too_short": "Tu hipertubo es demasiado corto para viajar en él",
   "item.create_hypertube.redstone_detector_tube_attachment": "Accesorio de tubo detector de redstone",
   "item.create_hypertube.tube_scanner_attachment": "Accesorio de tubo escáner",
+  "itemGroup.create_hypertube": "Create: Hypertube",
+  "key.categories.hypertube": "Create: Hypertube",
   "placement.create_hypertube.angle_too_high": "El ángulo entre los puntos es demasiado alto",
   "placement.create_hypertube.block_collision": "Se detectó colisión con bloques",
   "placement.create_hypertube.cant_conn_to_block": "No se puede conectar un hipertubo a este bloque",
