@@ -119,7 +119,7 @@ function registerTFGCoilRecipes(event) {
 
 	event.recipes.gtceu.gas_pressurizer('tfg:blue_alloy_desh_foil')
 		.itemInputs('2x #forge:foils/desh', '2x #forge:foils/blue_alloy', 'tfc:powder/flux')
-		.inputFluids('gtceu:regolith_vapor 100')
+		.inputFluids('gtceu:regolith_vapor 500')
 		.itemOutputs('tfg:blue_alloy_desh_foil')
 		.duration(5 * 20)
 		.EUt(GTValues.VA[GTValues.HV])
