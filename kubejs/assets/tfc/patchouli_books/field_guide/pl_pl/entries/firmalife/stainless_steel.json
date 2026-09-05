@@ -23,7 +23,7 @@
     {
       "type": "patchouli:text",
       "text": "$(li)Granite$()$(li)Diorite$()$(li)Gabbro$()$(li)Slate$()$(li)Phyllite$()$(li)Schist$()$(li)Gneiss$()$(li)Marble$()",
-      "title": "All Chromium Rocks"
+      "title": "Wszystkie skały chromowe"
     }
   ],
   "read_by_default": true,
