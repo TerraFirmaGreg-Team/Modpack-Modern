@@ -144,5 +144,7 @@
 	"statusbar.createaddition.wire.long": "Zbyt długie połączenie",
 	"statusbar.createaddition.wire.no_connection": "Drut nie podłączony",
 	"statusbar.createaddition.wire.removed": "Drut usunięty",
-	"statusbar.createaddition.wire.requires_high_current": "To połączenie wymaga drutu wysokiego natężenia"
+	"statusbar.createaddition.wire.requires_high_current": "To połączenie wymaga drutu wysokiego natężenia",
+	"block.createaddition.creative_energy": "Kreatywny generator",
+	"block.createaddition.creative_energy.tooltip": "KREATWNY GENERATOR"
 }

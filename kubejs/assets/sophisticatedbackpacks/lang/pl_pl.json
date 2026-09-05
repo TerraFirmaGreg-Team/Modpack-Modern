@@ -92,8 +92,8 @@
 	"gui.sophisticatedbackpacks.upgrades.buttons.only_swap_for_tools.detail": "Wkłada narzędzie w rękę tylko wtedy, gdy trzyma ona inne narzędzie, nie zamienia na broń.",
 	"gui.sophisticatedbackpacks.upgrades.buttons.refill_crafting_grid": "Uzupełnij siatkę wytwarzania",
 	"gui.sophisticatedbackpacks.upgrades.buttons.refill_input": "Uzupełnij wejście",
-	"gui.sophisticatedbackpacks.upgrades.buttons.shift_click_into_backpack": "Shift Click Wynik do\nplecaka",
-	"gui.sophisticatedbackpacks.upgrades.buttons.shift_click_into_inventory": "Shift Click Wynik do\ninwentarza gracza",
+	"gui.sophisticatedbackpacks.upgrades.buttons.shift_click_into_backpack": "Shift + LPM Wynik do\nplecaka",
+	"gui.sophisticatedbackpacks.upgrades.buttons.shift_click_into_inventory": "Shift + LPM Wynik do\nekwipunku gracza",
 	"gui.sophisticatedbackpacks.upgrades.buttons.swap_tools": "Zamień narzędzie",
 	"gui.sophisticatedbackpacks.upgrades.buttons.swap_tools.detail": "Zamienia odpowiednie narzędzie na rękę, gdy trzyma ona broń lub inne narzędzie",
 	"gui.sophisticatedbackpacks.upgrades.buttons.swap_weapon": "Zamień broń",
@@ -199,9 +199,12 @@
 	"key.sophisticatedbackpacks.toggle_upgrade_4": "Włączanie/wyłączanie ulepszenia w 4 slocie",
 	"key.sophisticatedbackpacks.toggle_upgrade_5": "Włączanie/wyłączanie ulepszenia w 5 slocie",
 	"key.sophisticatedbackpacks.tool_swap": "Zamień narzędzie na podstawie bieżącego bloku/przedmiotu",
-	"sophisticatedbackpacks.configuration.basicMaxSlotCost": "Podstawowy maks. koszt slotu",
+	"sophisticatedbackpacks.configuration.advancedMaxSlotCost": "Maks. koszt slotów (zaawansowany łapacz)",
+	"sophisticatedbackpacks.configuration.animalMultiplier": "Mnożnik kosztu slotów (zwierzęta)",
+	"sophisticatedbackpacks.configuration.basicMaxSlotCost": "Maks. koszt slotów (podstawowy łapacz)",
 	"sophisticatedbackpacks.configuration.disallowInventoryEntities": "Blokuj moby z ekwipunkiem",
 	"sophisticatedbackpacks.configuration.entityBlockList": "Zablokowane typy bytów",
-	"sophisticatedbackpacks.configuration.hostileOverrides": "Zastąpienie wrogich bytów",
-	"sophisticatedbackpacks.configuration.passiveOverrides": "Zastąpienie pasywnych bytów"
+	"sophisticatedbackpacks.configuration.hostileMultiplier": "Mnożnik kosztu slotów (wrogowie)",
+	"sophisticatedbackpacks.configuration.hostileOverrides": "Nadpisania bytów jako wrogie",
+	"sophisticatedbackpacks.configuration.passiveOverrides": "Nadpisania bytów jako pasywne"
 }

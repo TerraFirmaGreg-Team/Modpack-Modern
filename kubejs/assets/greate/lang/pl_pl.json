@@ -11,13 +11,9 @@
 	"block.greate.aluminium_millstone": "Aluminiowy kamień młyński",
 	"block.greate.aluminium_shaft": "Aluminiowy wał",
 	"block.greate.andesite_alloy_cogwheel": "Podstawowe koło zębate",
-	"block.greate.andesite_alloy_crushing_wheel": "Podstawowe koło kruszące",
 	"block.greate.andesite_alloy_crushing_wheel_controller": "Kontroler podstawowego koła kruszącego",
-	"block.greate.andesite_alloy_encased_fan": "Podstawowy zabudowany wiatrak",
 	"block.greate.andesite_alloy_gearbox": "Podstawowa przekładnia",
-	"block.greate.andesite_alloy_mechanical_mixer": "Podstawowa mikser mechaniczny",
 	"block.greate.andesite_alloy_mechanical_press": "Podstawowa prasa mechaniczna",
-	"block.greate.andesite_alloy_mechanical_pump": "Podstawowa pompa mechaniczna",
 	"block.greate.andesite_alloy_mechanical_saw": "Podstawowa piła mechaniczna",
 	"block.greate.andesite_alloy_millstone": "Podstawowy kamień młyński",
 	"block.greate.andesite_alloy_shaft": "Podstawowy wał",
@@ -276,5 +272,7 @@
 	"material.greate.rose_quartz": "Różowy kwarc",
 	"material.greate.shadow_steel": "Mroczna stal",
 	"tagprefix.alloy": "Stop (%s)",
-	"tagprefix.whisk": "Trzepaczka (%s)"
+	"tagprefix.whisk": "Trzepaczka (%s)",
+	"greate.tooltip.pump_pressure": "Ciśnienie pompy: ",
+	"greate.tooltip.pump_transfer": "Przesyłanie "
 }

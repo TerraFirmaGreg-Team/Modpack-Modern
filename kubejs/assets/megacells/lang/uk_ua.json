@@ -90,5 +90,7 @@
   "text.autoconfig.megacells.option.AllowSpentWaste.@Tooltip": "Чи має МЕГА комірка радіоактивного сховища зберігати відпрацьовані ядерні відходи.",
   "text.autoconfig.megacells.option.CompressionChainLimit": "Обмеження ланцюга масової компресії",
   "text.autoconfig.megacells.option.CompressionChainLimit.@Tooltip": "Максимальна кількість варіантів, які комірка масового сховища з компресією може повідомляти як збережені.",
-  "text.autoconfig.megacells.title": "МЕГА комірки"
+  "text.autoconfig.megacells.title": "МЕГА комірки",
+  "block.megacells.mega_pattern_provider": "МЕГА постачальник шаблонів",
+  "item.megacells.cable_mega_pattern_provider": "МЕГА постачальник шаблонів"
 }

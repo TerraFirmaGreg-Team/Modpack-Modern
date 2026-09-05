@@ -41,7 +41,7 @@
 	"commands.computercraft.generic.no": "N",
 	"commands.computercraft.generic.yes": "T",
 	"commands.computercraft.help.desc": "Wyświetla tę wiadomość pomocy",
-	"commands.computercraft.help.no_children": "%s nie ma pod-komend",
+	"commands.computercraft.help.no_children": "%s nie ma żadnych podpoleceń",
 	"commands.computercraft.help.no_command": "Nie odnaleziono polecenia '%s'",
 	"commands.computercraft.help.synopsis": "Uzyskaj pomoc do konkretnej komendy",
 	"commands.computercraft.shutdown.desc": "Wyłącz wszystkie, lub tylko wylistowane komputery. Możesz wybrać numer sesji komputera (np. 123), ID komputera (np. #123) lub jego etykietę (np. \"@Mój Komputer\").",

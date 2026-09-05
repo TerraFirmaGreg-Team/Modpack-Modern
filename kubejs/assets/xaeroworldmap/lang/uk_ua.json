@@ -322,5 +322,10 @@
   "gui.xaero_worldmap_waypoints": "Точки на мапі світу",
   "gui.xaero_zoom_buttons": "Клавіши масштабування",
   "gui_xaero_wm_dropdown_dimension_select": "Вибір виміру",
-  "gui_xaero_wm_dropdown_map_select": "Вибір мапи"
+  "gui_xaero_wm_dropdown_map_select": "Вибір мапи",
+  "gui.xaero_pac_interrupt_claiming": "Переривати дії привласнення",
+  "gui.xaero_pac_requested_large_claim": "Розпочато привласнення великої території... Використовуй опцію правої кнопки миші %1$s, щоб скасувати.",
+  "gui.xaero_pac_requested_large_unclaim": "Розпочато скасування привласнення великої території... Використовуй опцію правої кнопки миші %1$s, щоб скасувати.",
+  "gui.xaero_pac_requested_large_forceload": "Розпочато позначення великої території для примусового завантаження... Використовуй опцію правої кнопки миші %1$s, щоб скасувати.",
+  "gui.xaero_pac_requested_large_unforceload": "Розпочато зняття позначення великої території для примусового завантаження... Використовуй опцію правої кнопки миші %1$s, щоб скасувати."
 }

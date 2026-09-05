@@ -5,7 +5,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "The $(thing)Unposter$() is used to grow mushrooms.$(br2)You can deposit the same items as with the composter, except instead of making compost, when a mushroom is within its range, it will consume the items inside to multiply that mushroom in the area around it."
+			"text": "$(thing)Unposter$() используется для выращивания грибов. $(br2) Ты можешь класть те же предметы, что и в компостер, за исключением того, что вместо создания компоста, если в округе есть гриб, он потратит предметы внутри, чтобы размножить грибы в площади вокруг него."
 		},
 		{
 			"type": "patchouli:crafting",

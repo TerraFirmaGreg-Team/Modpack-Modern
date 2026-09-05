@@ -48,6 +48,7 @@
 	"block.minecraft.iron_block": "Серый чугун (Блок)",
 	"block.minecraft.large_fern": "Страусиный папоротник",
 	"block.minecraft.light_blue_wool": "Голубой блок ткани",
+	"block.minecraft.light_gray_wool": "Светло-серый блок ткани",
 	"block.minecraft.light_grey_wool": "Светло-серый блок ткани",
 	"block.minecraft.lime_wool": "Лаймовый блок ткани",
 	"block.minecraft.loom": "Ткацкий станок для баннеров",
@@ -150,5 +151,6 @@
 	"item.minecraft.smithing_template.armor_trim.additions_slot_description": "Добавьте пластину или изысканный драгоценный камень",
 	"item.minecraft.string": "Шёлковая нить",
 	"material.tfg.dripstone": "Травертин",
-	"tag.item.minecraft.wool": "Блоки ткани"
+	"tag.item.minecraft.wool": "Блоки ткани",
+	"tag.item.minecraft.wool_carpets": "Ковры"
 }

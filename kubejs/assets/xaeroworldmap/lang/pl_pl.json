@@ -115,11 +115,12 @@
   "gui.xaero_pac_unforceload_chunks": "Usuń ładowanie dla zaznaczonych",
   "gui.xaero_png_result_empty": "Eksportowany obszar jest pusty!",
   "gui.xaero_png_result_not_prepared": "Nie można jeszcze wyeksportować! Mapa świata nie została jeszcze przygotowana.",
-  "gui.xaero_png_result_success": "Pomyślnie eksportowano mapę!",
+  "gui.xaero_png_result_success": "Pomyślnie wyeksportowano mapę!",
   "gui.xaero_quick_confirm": "Szybkie ręczne potwierdzenie",
   "gui.xaero_reload_viewed_regions": "Przeładuj obejrzane regiony",
   "gui.xaero_rename": "Zmień nazwę",
   "gui.xaero_render_arrow": "Renderuj strzałkę gracza",
+  "gui.xaero_render_worldmap_waypoints": "Renderuj punkty nawigacyjne na mapie świata",
   "gui.xaero_right_click_box_map_export": "Eksportuj mapę jako PNG",
   "gui.xaero_right_click_box_map_settings": "§2%s§r Otwórz ustawienia",
   "gui.xaero_right_click_map_cant_create_waypoint": "§8Nie możesz tutaj ustawić punktu nawigacyjnego...",
@@ -249,5 +250,6 @@
   "gui.xaero_worldmap_waypoints": "Punkty nawigacyjne na mapie świata",
   "gui.xaero_zoom_buttons": "Przyciski powiększenia",
   "gui_xaero_wm_dropdown_dimension_select": "Wybór wymiaru",
-  "gui_xaero_wm_dropdown_map_select": "Wybór mapy"
+  "gui_xaero_wm_dropdown_map_select": "Wybór mapy",
+  "gui.xaero_pac_interrupt_claiming": "Przerwij akcje przejęcia"
 }

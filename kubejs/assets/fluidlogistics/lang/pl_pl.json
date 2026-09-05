@@ -121,5 +121,8 @@
 	"item.fluidlogistics.hand_pointer": "Wskaźnik ręczny",
 	"item.fluidlogistics.hand_pointer.tooltip.condition1": "Pasujące cele",
 	"item.fluidlogistics.phantom_chain": "Fantomowy łańcuch",
-	"itemGroup.fluidlogistics.fluidlogistics_tab": "Create: Fluid Logistics"
+	"itemGroup.fluidlogistics.fluidlogistics_tab": "Create: Fluid Logistics",
+	"fluidlogistics.configuration.advancedLogisticsNetworkEnabled": "System paczek z płynem",
+	"fluidlogistics.configuration.section.fluidlogistics.common.toml": "Konfiguracja pakowacza płynów",
+	"fluidlogistics.configuration.section.fluidlogistics.common.toml.title": "Konfiguracja pakowacza płynów"
 }

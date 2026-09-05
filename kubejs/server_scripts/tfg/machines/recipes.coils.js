@@ -119,9 +119,9 @@ function registerTFGCoilRecipes(event) {
 
 	event.recipes.gtceu.gas_pressurizer('tfg:blue_alloy_desh_foil')
 		.itemInputs('2x #forge:foils/desh', '2x #forge:foils/blue_alloy', 'tfc:powder/flux')
-		.inputFluids('gtceu:regolith_vapor 100')
+		.inputFluids('gtceu:regolith_vapor 500')
 		.itemOutputs('tfg:blue_alloy_desh_foil')
-		.duration(10 * 20)
+		.duration(5 * 20)
 		.EUt(GTValues.VA[GTValues.HV])
 
 	TFGHelpers.registerMaterialInfo('tfg:blue_alloy_desh_foil', [GTMaterials.BlueAlloy, 0.5, GTMaterials.get('gtceu:desh'), 0.25])
