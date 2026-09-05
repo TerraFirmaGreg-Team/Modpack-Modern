@@ -378,33 +378,34 @@ const registerRailWaysRecipes = (event) => {
 
 	SNR_SMOKESTACK_MATERIALS.forEach(mat => {
 		event.shaped(`railways:smokestack_long${mat.base_mat}`, [
-			'C  ',
+			'DCD',
 			'BAB'
 		], {
 			A: '#forge:storage_blocks/charcoal',
 			B: `#forge:bolts/${mat.craft_mat}`,
-			C: '#forge:tools/hammers'
+			C: '#forge:tools/hammers',
+			D: `#forge:plates/${mat.craft_mat}`
 		}).id(`tfg:railways/shaped/smokestack_long${mat.base_mat}`)
 
 		event.recipes.gtceu.assembler(`tfg:railways/smokestack_long${mat.base_mat}`)
-			.itemInputs('#forge:storage_blocks/charcoal', `2x #forge:bolts/${mat.craft_mat}`)
+			.itemInputs('#forge:storage_blocks/charcoal', `2x #forge:plates/${mat.craft_mat}`, `2x #forge:bolts/${mat.craft_mat}`)
 			.circuit(5)
 			.itemOutputs(`railways:smokestack_long${mat.base_mat}`)
 			.duration(200)
 			.EUt(28)
 			
 		event.shaped(`railways:smokestack_coalburner${mat.base_mat}`, [
-			'B B',
 			'BCB',
-			'BAB'
+			'DAD'
 		], {
 			A: '#forge:storage_blocks/charcoal',
 			B: `#forge:plates/${mat.craft_mat}`,
-			C: '#forge:tools/hammers'
+			C: '#forge:tools/hammers',
+			D: `#forge:bolts/${mat.craft_mat}`
 		}).id(`tfg:railways/shaped/smokestack_coalburner${mat.base_mat}`)
 
 		event.recipes.gtceu.assembler(`tfg:railways/smokestack_coalburner${mat.base_mat}`)
-			.itemInputs('#forge:storage_blocks/charcoal', `6x #forge:plates/${mat.craft_mat}`)
+			.itemInputs('#forge:storage_blocks/charcoal', `2x #forge:plates/${mat.craft_mat}`, `2x #forge:bolts/${mat.craft_mat}`)
 			.circuit(6)
 			.itemOutputs(`railways:smokestack_coalburner${mat.base_mat}`)
 			.duration(200)
@@ -428,15 +429,17 @@ const registerRailWaysRecipes = (event) => {
 
 		event.shaped(`railways:smokestack_streamlined${mat.base_mat}`, [
 			'C  ',
-			'BAB'
+			'BAB',
+			'D D'
 		], {
 			A: '#forge:storage_blocks/charcoal',
 			B: `#forge:plates/${mat.craft_mat}`,
-			C: '#forge:tools/hammers'
+			C: '#forge:tools/hammers',
+			D: `#forge:bolts/${mat.craft_mat}`
 		}).id(`tfg:railways/shaped/smokestack_streamlined${mat.base_mat}`)
 
 		event.recipes.gtceu.assembler(`tfg:railways/smokestack_streamlined${mat.base_mat}`)
-			.itemInputs('#forge:storage_blocks/charcoal', `2x #forge:plates/${mat.craft_mat}`)
+			.itemInputs('#forge:storage_blocks/charcoal', `2x #forge:plates/${mat.craft_mat}`, `2x #forge:bolts/${mat.craft_mat}`)
 			.circuit(8)
 			.itemOutputs(`railways:smokestack_streamlined${mat.base_mat}`)
 			.duration(200)

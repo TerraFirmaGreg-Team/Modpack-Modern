@@ -1686,7 +1686,7 @@ function registerImmersiveVehiclesRecipes(event) {
 		'   ADA   '
 	], {
 		A: 'tfg:aircraft_sail',
-		B: 'gtceu:black_steel_plate',
+		B: '#forge:plates/red_steel',
 		C: 'mts:mtsofficialpack.propellersmall3blade',
 		D: 'create:brass_casing',
 		E: 'tfg:generators/steel_combustion_engine',
@@ -1696,7 +1696,7 @@ function registerImmersiveVehiclesRecipes(event) {
 	}).id('mts:automotives.biplane');
 
 	event.recipes.gtceu.automotive_workshop('mts:automotives.biplane')
-		.itemInputs('11x create:brass_casing', '9x tfg:aircraft_sail', '6x #forge:plates/black_steel',
+		.itemInputs('11x create:brass_casing', '9x tfg:aircraft_sail', '6x #forge:plates/red_steel',
 			'2x mts:mtsofficialpack.wheelmedium', 'tfg:generators/steel_combustion_engine', '#create:seats',
 			'create:fluid_tank', 'mts:mtsofficialpack.propellersmall3blade')
 		.itemOutputs('mts:automotives.biplane')
@@ -1715,7 +1715,7 @@ function registerImmersiveVehiclesRecipes(event) {
 			' BB      ',
 			'ACFB     ',
 			'AEFGGGGGH',
-			'ADFBIJ   ',
+			'ADFBI    ',
 			' BB      '
 		], {
 			A: '#forge:glass',
@@ -1726,8 +1726,7 @@ function registerImmersiveVehiclesRecipes(event) {
 			F: '#forge:plates/invar',
 			G: '#forge:frames/invar',
 			H: '#forge:rotors/cobalt_brass',
-			I: TFC.ingredient.fluid(TFC.fluidStackIngredient(`tfc:${bell.dye}_dye`, 1000)),
-			J: TFC.ingredient.fluid(TFC.fluidStackIngredient(`tfc:${bell.dye}_dye`, 152)),
+			I: TFC.ingredient.fluid(TFC.fluidStackIngredient(`tfc:${bell.dye}_dye`, 1152))
 		}).id(`mts:mtsofficialpack.bell47g${bell.suffix}`);
 
 		event.recipes.gtceu.automotive_workshop(`mts:mtsofficialpack.bell47g${bell.suffix}`)
@@ -1754,6 +1753,42 @@ function registerImmersiveVehiclesRecipes(event) {
 	//}).id('mts:automotives.biplane');
 
 	// #endregion Planes
+
+	// #region Cars
+	
+	event.recipes.create.mechanical_crafting('mts:automotives.boilerbox', [
+		'        ',
+		' BJ JJA ',
+		'EHDDDIH ',
+		'EHLCGFHK',
+		'EHDDDIH ',
+		' BJ JJA ',
+		'        '
+	], {
+		A: 'create:flywheel',
+		B: 'mts:mtsofficialpack.wheelmedium',
+		C: '#create:seats',
+		D: 'create:brass_casing',
+		E: '#forge:glass_panes',
+		F: 'steampowered:bronze_steam_engine',
+		G: 'create:blaze_burner',
+		H: '#forge:shafts',
+		I: 'create:fluid_tank',
+		J: '#forge:plates/blue_steel',
+		K: '#tfg:smokestacks',
+		L: 'create:precision_mechanism'
+	}).id('mts:automotives.boilerbox');
+
+	event.recipes.gtceu.automotive_workshop('mts:automotives.boilerbox')
+		.itemInputs('6x create:brass_casing', '2x create:flywheel', '2x mts:mtsofficialpack.wheelmedium',
+			'6x #forge:plates/blue_steel', '#create:seats', '3x #forge:glass_panes', 'steampowered:bronze_steam_engine',
+			'create:blaze_burner', '6x #forge:shafts', '2x create:fluid_tank', '#tfg:smokestacks', 'create:precision_mechanism')
+		.itemOutputs('mts:automotives.boilerbox')
+		.EUt(GTValues.VA[GTValues.LV])
+		.duration(60 * 20)
+		.addMaterialInfo(true)
+
+	// #endregion
 
 	// #region Parts
 
@@ -1854,7 +1889,7 @@ function registerImmersiveVehiclesRecipes(event) {
 		.EUt(GTValues.VA[GTValues.LV])
 
 	event.recipes.gtceu.alloy_smelter('tfg:spark_plug_casing_alumina')
-		.itemInputs('tfg:alumina_dust')
+		.itemInputs('#tfg:aluminium_oxide')
 		.notConsumable('gtceu:tiny_pipe_casting_mold')
 		.itemOutputs('tfg:spark_plug_casing')
 		.duration(100)

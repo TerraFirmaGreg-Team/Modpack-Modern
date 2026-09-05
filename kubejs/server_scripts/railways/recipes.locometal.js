@@ -198,7 +198,7 @@ const registerRailwaysLocometalRecipes = (event) => {
 		'#forge:tools/screwdrivers'
 	]).id('tfg:shapeless/create_flywheel_to_snr_flywheel')
 	event.shapeless('create:flywheel', [
-		'railways:locometal_flywheel',
+		'#railways:palettes/dye_groups/flywheel',
 		'#forge:tools/screwdrivers'
 	]).id('tfg:shapeless/snr_flywheel_to_create_flywheel')
 
