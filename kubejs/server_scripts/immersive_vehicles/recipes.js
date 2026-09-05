@@ -465,7 +465,6 @@ function registerImmersiveVehiclesRecipes(event) {
 		.EUt(GTValues.VA[GTValues.MV])
 		.duration(240)
 
-
 	// #endregion
 
 	// #region ammonium nitrate sidebar
