@@ -130,21 +130,12 @@ const registerAdAstraRecipes = (event) => {
 
 	//#region Rover
 
-	event.recipes.gtceu.shaped('ad_astra:wheel', [
-		' A ',
-		'ABA',
-		' A '
-	], {
-		A: '#forge:plates/polyphenylene_sulfide',
-		B: '#forge:rings/stainless_steel',
-	}).addMaterialInfo().id('tfg:ad_astra_wheel')
-
 	event.recipes.gtceu.assembler('tfg:tier_1_rover')
 		.itemInputs(
 			'gtceu:mv_sensor',
 			'ad_astra:radio',
 			'ad_astra:gas_tank',
-			'4x ad_astra:wheel',
+			'4x mts:mtsofficialpack.wheellarge',
 			'2x gtceu:hv_electric_motor',
 			'4x #forge:plates/stainless_steel',
 			'4x #forge:frames/stainless_steel')

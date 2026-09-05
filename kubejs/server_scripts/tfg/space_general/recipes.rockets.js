@@ -74,7 +74,27 @@ function registerTFGRocketRecipes(event) {
 		.EUt(GTValues.VA[GTValues.HV])
 		.addMaterialInfo(true, true)
 
-	event.recipes.gtceu.assembler('ad_astra:assembler_tier_1_rocket')
+	event.recipes.create.mechanical_crafting('ad_astra:tier_1_rocket', [
+		'    A    ',
+		'  CBBBC  ',
+		'  CB BC  ',
+		'  CBFBC  ',
+		'  CBFBC  ',
+		'  CBFBC  ',
+		'  CBFBCG ',
+		'EECBBBCEE',
+		'   CDC   '
+	], {
+		A: 'ad_astra:rocket_nose_cone',
+		B: '#forge:dense_plates/rocket_alloy_t1',
+		C: '#forge:plates/basalt_fiber',
+		D: 'ad_astra:steel_engine',
+		E: 'ad_astra:rocket_fin',
+		F: '#gtceu:circuits/hv',
+		G: TFC.ingredient.fluid(TFC.fluidStackIngredient('gtceu:silicon', 144 * 16))
+	}).id('tfg:mech_crafting/t1_rocket');
+
+	event.recipes.gtceu.automotive_workshop('ad_astra:assembler_tier_1_rocket')
 		.itemInputs(
 			ChemicalHelper.get(TagPrefix.plateDense, TFGHelpers.getMaterial('rocket_alloy_t1'), 16),
 			'4x ad_astra:rocket_fin',
@@ -89,8 +109,28 @@ function registerTFGRocketRecipes(event) {
 		.circuit(2)
 		.EUt(GTValues.VA[GTValues.HV])
 		.addMaterialInfo(true, true)
+
+	event.recipes.create.mechanical_crafting('tfg:tier_1_double_rocket', [
+		'    A    ',
+		' CCBBBCC ',
+		' CCB BCC ',
+		' CBBFBBC ',
+		' CBBFBBC ',
+		' CBBFBBCG',
+		'CBBFFFBBC',
+		'ECCBBBCCE',
+		'E CCDCC E'
+	], {
+		A: 'ad_astra:rocket_nose_cone',
+		B: '#forge:dense_plates/rocket_alloy_t1',
+		C: '#forge:plates/basalt_fiber',
+		D: 'ad_astra:steel_engine',
+		E: 'ad_astra:rocket_fin',
+		F: '#gtceu:circuits/hv',
+		G: TFC.ingredient.fluid(TFC.fluidStackIngredient('gtceu:silicon', 144 * 24))
+	}).id('tfg:mech_crafting/t1_double_rocket');
 		
-	event.recipes.gtceu.assembler('ad_astra:assembler_tier_1_double_rocket')
+	event.recipes.gtceu.automotive_workshop('ad_astra:assembler_tier_1_double_rocket')
 		.itemInputs(
 			ChemicalHelper.get(TagPrefix.plateDense, TFGHelpers.getMaterial('rocket_alloy_t1'), 24),
 			'4x ad_astra:rocket_fin',
@@ -239,7 +279,27 @@ function registerTFGRocketRecipes(event) {
 		.EUt(GTValues.VA[GTValues.EV])
 		.addMaterialInfo(true, true)
 
-	event.recipes.gtceu.assembler('ad_astra:tier_2_rocket')
+	event.recipes.create.mechanical_crafting('ad_astra:tier_2_rocket', [
+		'    A    ',
+		'  CBBBC  ',
+		'  CB BC  ',
+		'  CBFBC  ',
+		'  CBFBCG ',
+		' CBBFBBC ',
+		' CBBFBBC ',
+		'EEBBBBBEE',
+		'   BDB   '
+	], {
+		A: 'tfg:rocket_cone_t2',
+		B: '#forge:dense_plates/rocket_alloy_t2',
+		C: '#forge:insulation_t2/roll',
+		D: 'ad_astra:desh_engine',
+		E: 'tfg:rocket_fin_t2',
+		F: '#gtceu:circuits/ev',
+		G: TFC.ingredient.fluid(TFC.fluidStackIngredient('gtceu:titanium', 144 * 16))
+	}).id('tfg:mech_crafting/t2_rocket');
+
+	event.recipes.gtceu.automotive_workshop('ad_astra:tier_2_rocket')
 		.itemInputs(
 			ChemicalHelper.get(TagPrefix.plateDense, TFGHelpers.getMaterial('rocket_alloy_t2'), 24),
 			'4x tfg:rocket_fin_t2',
@@ -254,8 +314,28 @@ function registerTFGRocketRecipes(event) {
 		.circuit(3)
 		.EUt(GTValues.VA[GTValues.EV])
 		.addMaterialInfo(true, true)
+
+	event.recipes.create.mechanical_crafting('tfg:tier_2_double_rocket', [
+		'   BAB   ',
+		' CBBBBBC ',
+		' CBB BBC ',
+		' CBBFBBC ',
+		' CBBFBBC ',
+		' CBBFBBC ',
+		' CBFFFBCG',
+		'ECBBBBBCE',
+		'ECCBDBCCE'
+	], {
+		A: 'tfg:rocket_cone_t2',
+		B: '#forge:dense_plates/rocket_alloy_t2',
+		C: '#forge:insulation_t2/roll',
+		D: 'ad_astra:desh_engine',
+		E: 'tfg:rocket_fin_t2',
+		F: '#gtceu:circuits/ev',
+		G: TFC.ingredient.fluid(TFC.fluidStackIngredient('gtceu:titanium', 144 * 24))
+	}).id('tfg:mech_crafting/t2_double_rocket');
 		
-	event.recipes.gtceu.assembler('ad_astra:tier_2_double_rocket')
+	event.recipes.gtceu.automotive_workshop('ad_astra:tier_2_double_rocket')
 		.itemInputs(
 			ChemicalHelper.get(TagPrefix.plateDense, TFGHelpers.getMaterial('rocket_alloy_t2'), 32),
 			'4x tfg:rocket_fin_t2',
