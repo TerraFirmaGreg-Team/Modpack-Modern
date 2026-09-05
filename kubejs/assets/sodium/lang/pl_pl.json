@@ -24,6 +24,7 @@
 	"sodium.options.use_compact_vertex_format.name": "Użyj kompaktowego formatu wierzchołków",
 	"sodium.options.use_entity_culling.name": "Użyj Entity Culling",
 	"sodium.options.use_fog_occlusion.name": "Użyj okluzji mgły",
+	"sodium.options.use_no_error_context.name": "Używaj braku kontekstu błędu",
 	"sodium.options.use_persistent_mapping.name": "Używaj trwałego mapowania",
 	"sodium.options.vignette.name": "Winieta"
 }

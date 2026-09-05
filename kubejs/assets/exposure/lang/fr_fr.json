@@ -43,6 +43,7 @@
 	"gui.exposure.composition_guide.none": "Aucun",
 	"gui.exposure.composition_guide.quads": "Quadrillages",
 	"gui.exposure.composition_guide.rule_of_thirds": "Règle des tiers",
+	"gui.exposure.film_rolls": "Film Rolls",
 	"gui.exposure.filters": "Filtres",
 	"gui.exposure.flash_mode.auto": "Automatique",
 	"gui.exposure.flash_mode.off": "Désactivé",
@@ -66,6 +67,7 @@
 	"gui.exposure.photograph_screen.drop_as_item_tooltip": "§7[§r%s§7] : lâcher comme item",
 	"gui.exposure.photograph_screen.item_dropped_message": "§7Lâché : [§r%s§7]",
 	"gui.exposure.previous_page": "Page précédente",
+	"gui.exposure.self_timer.off": "Off",
 	"item.exposure.aged_photograph": "Photographie ancienne",
 	"item.exposure.album": "Album photo",
 	"item.exposure.album.tooltip.photos_count": "§7Photos : %s",
@@ -129,6 +131,7 @@
 	"subtitle.exposure.photograph_frame.place": "Placement du cadre photo",
 	"subtitle.exposure.photograph_frame.remove_item": "Le cadre photo se vide",
 	"subtitle.exposure.photograph_frame.rotate_item": "Clic du cadre photo",
+	"tag.item.exposure.film_rolls": "Film Rolls",
 	"task.exposure.export.none_exported": "Aucune exposition n'a été exportée.",
 	"tooltip.exposure.hold_for_details": "§8Maintenez [§7Maj§8] pour les détails"
 }

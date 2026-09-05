@@ -147,8 +147,5 @@
 	"statusbar.createaddition.wire.long": "Провод слишком длинный",
 	"statusbar.createaddition.wire.no_connection": "Здесь нет соединения",
 	"statusbar.createaddition.wire.removed": "Соединение разорвано",
-	"statusbar.createaddition.wire.requires_high_current": "Для этого соединения требуется высоковольтный провод.",
-	"block.createaddition.creative_energy": "Творческий генератор",
-	"block.createaddition.creative_energy.tooltip": "ТВОРЧЕСКИЙ_ГЕНЕРАТОР",
-	"block.createaddition.creative_energy.tooltip.summary": "Генерирует бесконечное количество _FE_."
+	"statusbar.createaddition.wire.requires_high_current": "Для этого соединения требуется высоковольтный провод."
 }

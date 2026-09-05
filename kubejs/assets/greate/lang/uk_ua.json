@@ -305,11 +305,14 @@
 	"item.greate.stone_belt_connector": "Механічний ремінь зі шкіри",
 	"item.greate.styrene_butadiene_rubber_belt_connector": "Механічний ремінь зі стирол-бутадієнової гуми",
 	"item.greate.titanium_vertical_gearbox": "Вертикальна коробка передач з титану",
+	"itemGroup.greate": "Greate",
 	"material.greate.andesite_alloy": "Андезитвоий сплав",
 	"material.greate.chromatic_compound": "Кольорова сполука",
 	"material.greate.refined_radiance": "Очищене сяйво",
 	"material.greate.rose_quartz": "Рожевий кварц",
 	"material.greate.shadow_steel": "Тіньова сталь",
 	"tagprefix.alloy": "%s (сплав)",
-	"tagprefix.whisk": "%s Віничок"
+	"tagprefix.whisk": "%s Віничок",
+	"greate.tooltip.pump_pressure": "Тиск помпи: ",
+	"greate.tooltip.pump_transfer": "Переміщення "
 }

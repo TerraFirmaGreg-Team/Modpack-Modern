@@ -4,6 +4,7 @@
 	"additionalplacements.stairs.connections_type.no_vertical_connections": "Połączenia pionowe niedozwolone",
 	"commands.ap_stairs_state_debug.wrong_block": "%s nie jest prawidłowym blokiem, musi on być schodami posiadającymi dodatkowe stany.",
 	"key.additionalplacements.placement_toggle": "Przełącz logikę położeń",
+	"key.categories.additionalplacements": "Additional Placements",
 	"msg.additionalplacements.disconnected": "Konflikt konfiguracji moda Additional Placements",
 	"msg.additionalplacements.errors.client": "Odmowa po stronie klienta:",
 	"msg.additionalplacements.errors.server": "Odmowa po stronie serwera:",

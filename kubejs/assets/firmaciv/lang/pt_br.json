@@ -1,5 +1,6 @@
 {
 	"above": "Acima",
+	"altitude": "Altitude",
 	"below": "Abaixo",
 	"block.firmaciv.thatch_roofing": "Palha Angulada",
 	"block.firmaciv.thatch_roofing_slab": "Laje de Palha",
@@ -204,6 +205,8 @@
 	"item.firmaciv.unfinished_nav_clock": "Relógio do Navegador Inacabado",
 	"item.firmaciv.unfinished_sextant": "Sextante Inacabado",
 	"itemGroup.firmaciv": "Firma: Civilização",
+	"latitude": "Latitude",
+	"longitude": "Longitude",
 	"meters": "Metros",
 	"north": "Norte",
 	"press_button": "Pressione",

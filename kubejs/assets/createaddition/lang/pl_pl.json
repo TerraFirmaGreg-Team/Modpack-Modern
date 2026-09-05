@@ -89,6 +89,7 @@
 	"createaddition.recipe.rolling.sequence": "Walcowanie",
 	"createaddition.schedule.condition.energy_threshold": "Warunek ładunku energii",
 	"createaddition.schedule.condition.threshold.energy": "Energia",
+	"createaddition.schedule.condition.threshold.unit": "K⚡",
 	"createaddition.subtitle.little_zap": "Transformator Tesli iskrzy",
 	"createaddition.subtitle.loud_zap": "Transformator Tesli kopie",
 	"createaddition.tooltip.accumulator.info": "Informacje o akumulatorze:",
@@ -130,6 +131,7 @@
 	"item.createaddition.gold_goblet": "Zdobiony puchar",
 	"item.createaddition.gold_goblet.tooltip": "Zloty puchar",
 	"item.createaddition.gold_goblet.tooltip.summary": "Picie z tego _kielicha_ nasyci cię bardziej niż jakakolwiek zwykła butelka.",
+	"itemGroup.createaddition.main": "Create Crafts & Additions",
 	"statusbar.createaddition.wire.connect": "Złącze wybrane",
 	"statusbar.createaddition.wire.connect_in": "Złącze wejścia wybrane",
 	"statusbar.createaddition.wire.connect_out": "Złącze wyjścia wybrane",
@@ -144,6 +146,5 @@
 	"statusbar.createaddition.wire.removed": "Drut usunięty",
 	"statusbar.createaddition.wire.requires_high_current": "To połączenie wymaga drutu wysokiego natężenia",
 	"block.createaddition.creative_energy": "Kreatywny generator",
-	"block.createaddition.creative_energy.tooltip": "Kreatywny generator",
-	"block.createaddition.creative_energy.tooltip.summary": "Generuje nieskończoną ilość _⚡_."
+	"block.createaddition.creative_energy.tooltip": "KREATWNY GENERATOR"
 }

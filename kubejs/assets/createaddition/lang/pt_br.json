@@ -145,8 +145,5 @@
 	"statusbar.createaddition.wire.long": "Fio muito longo",
 	"statusbar.createaddition.wire.no_connection": "Fio não conectado aqui",
 	"statusbar.createaddition.wire.removed": "Fio removido",
-	"statusbar.createaddition.wire.requires_high_current": "Esta conexão requer um fio de alta corrente",
-	"block.createaddition.creative_energy": "Gerador Criativo",
-	"block.createaddition.creative_energy.tooltip": "GERADOR_CRIATIVO",
-	"block.createaddition.creative_energy.tooltip.summary": "Gera um suprimento infinito de _⚡_."
+	"statusbar.createaddition.wire.requires_high_current": "Esta conexão requer um fio de alta corrente"
 }

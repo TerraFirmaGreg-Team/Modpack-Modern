@@ -84,7 +84,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Wraptory",
-			"text": "$(thing)Wraptors$() are domesticatable animals found between -15 and -100°C. They require a Large Nest to lay their eggs and can be shorn for $(item)Wraptor Feathers$(). Their eggs can be cooked or extracted for Wraptor Sugar. They eat any Mars crop.",
+			"text": "$(thing)Wraptory$() są zwierzętami hodowlanymi, które można spotkać od -15 do -100°C. Składają jaja w dużych gniazdach i mogą być ustrzyżone, by otrzymać $(item)pióra raptora$(). Ich jajka można ugotować albo ekstraktować, by wyprodukować cukier. Jedzą wszystkie marsjańskie rośliny.",
 			"anchor": "wraptor"
 		},
 		{
@@ -197,7 +197,7 @@
 			"scale": 0.6,
 			"offset": 2.2,
 			"name": "Piechur",
-			"text": "Gigantyczne $(thing)piechury$() zamieszkują obszary powyżej -97°C. Są pasywne i mogą być jedzone."
+			"text": "Gigantyczne $(thing)piechury$() zamieszkują obszary powyżej -97°C. Są pasywne i mogą być zjedzone."
 		},
 		{
 			"type": "patchouli:entity",
