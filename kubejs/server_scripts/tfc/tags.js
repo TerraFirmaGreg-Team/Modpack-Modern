@@ -523,6 +523,9 @@ function registerTFCItemTags(event) {
     fluidItemIngredientHolders.forEach(item => {
         event.add('tfc:fluid_item_ingredient_empty_containers', item)
     });
+
+	// TFC's fence gates are in the wrong tag
+	event.add('minecraft:fence_gates', '#forge:fence_gates')
 }
 
 /** @param {TagEvent.Block} event */

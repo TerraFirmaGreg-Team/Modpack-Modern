@@ -1,4 +1,5 @@
 {
+  "block.buildinggadgets2.render_block": "Blok renderowania (NIE UŻYWAJ)",
   "block.buildinggadgets2.template_manager": "Menedżer szablonów",
   "buildinggadgets2.buttons.copy": "Kopiuj",
   "buildinggadgets2.buttons.load": "Załaduj",
@@ -107,6 +108,6 @@
   "key.buildinggadgets2.anchor": "Zakotwicz",
   "key.buildinggadgets2.category": "Building Gadgets 2",
   "key.buildinggadgets2.range": "Zasięg",
-  "key.buildinggadgets2.settings_menu": "Ustawienia",
+  "key.buildinggadgets2.settings_menu": "Menu ustawień",
   "key.buildinggadgets2.undo": "Cofnij"
 }

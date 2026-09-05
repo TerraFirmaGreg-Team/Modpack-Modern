@@ -1,5 +1,5 @@
 {
-  "name": "Wild Crops",
+  "name": "Wildpflanzen",
   "category": "tfc:the_world",
   "icon": "tfc:textures/gui/book/icons/wild_crops.png",
   "pages": [
@@ -32,7 +32,7 @@
     },
     {
       "type": "tfc:multimultiblock",
-      "text": "All different varieties of wild crop",
+      "text": "Alle verschiedenen Arten von Wildpflanzen",
       "multiblocks": [
         {
           "pattern": [
@@ -318,7 +318,7 @@
     },
     {
       "type": "patchouli:text",
-      "text": "Wild crops will spawn in climates near where the crop itself can be cultivated, so if looking for a specific crop, look in the climate where the crop can be cultivated. However, unlike $(l:mechanics/crops)Crops$() that the player has planted, wild crops do not require $(l:mechanics/hydration)Hydration$(). Instead, they are found in areas depending on the average $()Temperature$() and $()Rainfall$().",
+      "text": "Wildpflanzen spawnen in Klimas, in denen die Pflanzen selbst angebaut werden können, also wenn man nach einer bestimmten Pflanze Ausschau hält, prüfe in welchem Klima die Pflanze angebaut werden kann. Jedoch im Gegensatz zu $(l:mechanics/crops)Pflanzen$(), welche der Spieler angebaut hat, bracuehn Wildpflanzen keine $(l:mechanics/hydration)Hydration$(). Stattdessen werden diese in Regionen mit der durchschnittlichen $()Temperatur()$ und $()Niederschlagsmenge()$ gefunden.",
       "title": "Suche nach Wildpflanzen"
     },
     {
@@ -431,7 +431,7 @@
           "text": "60 - 310"
         },
         {
-          "text": "Green Bean"
+          "text": "Grüne Bohne"
         },
         {
           "text": "  2 - 35"
@@ -440,7 +440,7 @@
           "text": "150 - 410"
         },
         {
-          "text": "Melon"
+          "text": "Melone"
         },
         {
           "text": "  5 - 37"
@@ -450,7 +450,7 @@
         }
       ],
       "text": "",
-      "title": "Wild Crop Requirements",
+      "title": "Wilde Ernteanforderungen",
       "legend": [],
       "columns": 2,
       "first_column_width": 80,
@@ -480,7 +480,7 @@
           "bold": true
         },
         {
-          "text": "Potato"
+          "text": "Kartoffel"
         },
         {
           "text": " -1 - 37"
@@ -489,7 +489,7 @@
           "text": "200 - 410"
         },
         {
-          "text": "Pumpkin"
+          "text": "Kürbis"
         },
         {
           "text": "  0 - 30"
@@ -498,7 +498,7 @@
           "text": "120 - 390"
         },
         {
-          "text": "Onion"
+          "text": "Zwiebel"
         },
         {
           "text": "  0 - 30"
@@ -507,7 +507,7 @@
           "text": "100 - 390"
         },
         {
-          "text": "Soybean"
+          "text": "Sojabohne"
         },
         {
           "text": "  8 - 30"
@@ -516,7 +516,7 @@
           "text": "160 - 410"
         },
         {
-          "text": "Squash"
+          "text": "Speisekürbis"
         },
         {
           "text": "  5 - 33"
@@ -525,7 +525,7 @@
           "text": " 90 - 390"
         },
         {
-          "text": "Sugarcane"
+          "text": "Zuckerrohr"
         },
         {
           "text": " 12 - 38"
@@ -534,7 +534,7 @@
           "text": "160 - 500"
         },
         {
-          "text": "Tomato"
+          "text": "Tomate"
         },
         {
           "text": "  0 - 36"
@@ -561,7 +561,7 @@
           "text": "310 - 500"
         },
         {
-          "text": "Red Bell Pepper"
+          "text": "Rote Paprika"
         },
         {
           "text": " 16 - 30"
@@ -570,7 +570,7 @@
           "text": "190 - 400"
         },
         {
-          "text": "Yellow Bell Pepper"
+          "text": "Gelbe Paprika"
         },
         {
           "text": " 16 - 30"
@@ -579,7 +579,7 @@
           "text": "190 - 400"
         },
         {
-          "text": "Sunflower"
+          "text": "Sonnenblume"
         },
         {
           "text": "  5 - 40"
@@ -589,7 +589,7 @@
         }
       ],
       "text": "",
-      "title": "Wild Crop Requirements",
+      "title": "Wilde Ernteanforderungen",
       "legend": [],
       "columns": 2,
       "first_column_width": 80,
@@ -619,7 +619,7 @@
           "bold": true
         },
         {
-          "text": "Canola"
+          "text": "Raps"
         },
         {
           "text": " -5 - 25"
@@ -628,7 +628,7 @@
           "text": " 50 - 350"
         },
         {
-          "text": "Flax"
+          "text": "Flachs"
         },
         {
           "text": " -8 - 25"
@@ -637,7 +637,7 @@
           "text": "175 - 475"
         },
         {
-          "text": "Cucumber"
+          "text": "Gurke"
         },
         {
           "text": " 15 - 40"
@@ -646,7 +646,7 @@
           "text": "350 - 500"
         },
         {
-          "text": "Radish"
+          "text": "Radieschen"
         },
         {
           "text": " -16 - 4"
@@ -655,7 +655,7 @@
           "text": "75 - 325"
         },
         {
-          "text": "Lentil"
+          "text": "Linsen"
         },
         {
           "text": " -18 - 2"
@@ -665,7 +665,7 @@
         }
       ],
       "text": "",
-      "title": "Wild Crop Requirements",
+      "title": "Wilde Ernteanforderungen",
       "legend": [],
       "columns": 2,
       "first_column_width": 80,

@@ -152,7 +152,7 @@ function processBlock(event, material) {
 			ingotArray.push(ingotItem)
 
 		event.recipes.greate.compacting(blockItem, ingotArray)
-			.recipeTier(1)
+			.recipeTier(0)
 			.circuitNumber(9)
 			.heated()
 			.id(`greate:compacting/${materialName}_block`)
@@ -164,7 +164,7 @@ function processBlock(event, material) {
 			gemArray.push(gemItem)
 
 		event.recipes.greate.compacting(blockItem, gemArray)
-			.recipeTier(1)
+			.recipeTier(0)
 			.circuitNumber(9)
 			.id(`greate:compacting/${materialName}_block`)
 	}

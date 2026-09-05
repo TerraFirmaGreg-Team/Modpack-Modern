@@ -43,7 +43,7 @@
           "X": "beneath:ore/nether_cursecoal"
         }
       },
-      "name": "Cursecoal",
+      "name": "Antracyt",
       "text": "Cursecoal is a powerful $(l:beneath/hellforge)fuel$(). It replaces netherrack above level 80.",
       "enable_visualize": false
     },
@@ -103,7 +103,7 @@
           "X": "beneath:ore/slimed_netherrack"
         }
       },
-      "name": "Slimed Netherrack",
+      "name": "Szlamowy netherrack",
       "text": "Slimed Netherrack occasionally replaces Netherrack above lava level.",
       "enable_visualize": false
     }

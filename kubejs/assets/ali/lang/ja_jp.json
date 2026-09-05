@@ -13,5 +13,22 @@
 	"ali.property.value.size": "サイズ: %s",
 	"ali.property.value.zoom": "ズーム倍率: %s",
 	"ali.util.advanced_loot_info.accepts": "使用可能:",
-	"ali/loot_table/chests/abandoned_mineshaft": "放棄された坑道のチェスト"
+	"ali/loot_table/chests/abandoned_mineshaft": "放棄された坑道のチェスト",
+	"ali.enum.dye_color.brown": "茶色",
+	"ali.enum.dye_color.cyan": "空色",
+	"ali.enum.dye_color.gray": "灰色",
+	"ali.enum.dye_color.green": "緑",
+	"ali.enum.dye_color.light_blue": "水色",
+	"ali.enum.dye_color.light_gray": "薄灰色",
+	"ali.enum.dye_color.lime": "石灰の粉末",
+	"ali.enum.dye_color.magenta": "赤紫色",
+	"ali.enum.dye_color.orange": "オレンジ",
+	"ali.enum.dye_color.pink": "桃色",
+	"ali.enum.dye_color.red": "赤",
+	"ali.enum.dye_color.white": "白色",
+	"ali.enum.dye_color.yellow": "黄色",
+	"ali.enum.equipment_slot.chest": "チェスト",
+	"ali.enum.game_type.creative": "クリエイティブタブ",
+	"ali.property.value.weight": "割合: %s",
+	"ali.type.entry.empty": "空"
 }

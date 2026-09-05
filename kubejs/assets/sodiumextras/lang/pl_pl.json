@@ -1,7 +1,7 @@
 {
   "sodium.extras.options.clouds.height.desc": "Podnosi wysokość chmur.\nSkonfiguruj wysokość chmur",
   "sodium.extras.options.clouds.height.title": "Wysokość chmur",
-  "sodium.extras.options.common.advanced": "Zaawansowany",
+  "sodium.extras.options.common.advanced": "Zaawansowane",
   "sodium.extras.options.common.attach": "Podłącz",
   "sodium.extras.options.common.experimental": "[EXPERIMENTALNE]",
   "sodium.extras.options.common.fast": "Szybkie",
@@ -97,6 +97,7 @@
   "sodium.extras.options.zoom.min.title": "Minimalna wartość FOV",
   "sodium.extras.options.zoom.page": "Powiększenie",
   "sodium.extras.options.zoom.quadratics.title": "Użyj współczynników kwadratowych",
+  "sodium.extras.options.zoom.scrolling.title": "Powiększenie kółkiem myszy",
   "sodium.extras.options.zoom.sensitive.title": "Czułość myszy",
   "sodium.extras.options.zoom.smoothness.title": "Płynność zoomu w milisekundach",
   "sodium.extras.options.zoom.speed.title": "Szybkość przybliżania",

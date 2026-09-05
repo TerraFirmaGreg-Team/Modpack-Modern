@@ -20,7 +20,7 @@
     {
       "type": "tfc:welding_recipe",
       "recipe": "tfc:welding/bismuth_bronze_greaves",
-      "text": "Далі потрібно цей обладунок $(l:mechanics/anvils#welding)зварити$() із $(thing)листом металу$(), для завершення виробу. Для нагрудника потрібен подвійний лист."
+      "text": "Далі $(thing)лист$() потрібно $(l:mechanics/anvils#welding)зварити$() з елементом обладунків, щоб завершити його. Для нагрудників потрібен $(thing)подвійний лист$()."
     },
     {
       "type": "patchouli:text",

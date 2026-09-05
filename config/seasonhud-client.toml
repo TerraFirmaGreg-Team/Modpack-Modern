@@ -1,0 +1,102 @@
+
+[SeasonHUD]
+	#Enable the mod?
+	#(true/false)
+	#Default is true.
+	enable_mod = true
+
+	[SeasonHUD.HUD]
+		#Where to display the Hud when no minimap is installed.
+		#Default is TOP_LEFT.
+		#Allowed Values: TOP_LEFT, TOP_CENTER, TOP_RIGHT, BOTTOM_LEFT, BOTTOM_RIGHT, CUSTOM
+		hud_location = "TOP_LEFT"
+		#The horizontal offset of the HUD when no minimap is installed (in pixels)
+		#'hudLocation' must be set to 'CUSTOM' to take effect
+		#Default is 2.
+		hud_x_position = 2
+		#The vertical offset of the HUD when no minimap is installed (in pixels)
+		#'hudLocation' must be set to 'CUSTOM' to take effect
+		#Default is 2.
+		hud_y_position = 2
+		#The scale of the HUD when no minimap is installed.
+		#Default is 1.0.
+		#Range: 0.5 ~ 10.0
+		hud_scale = 1.0
+
+		[SeasonHUD.HUD.Colors]
+			#Display the season name in a color?
+			#(true/false)
+			#Default is true.
+			season_name_color = true
+			#The RGB color (decimal) for spring.
+			#(256 * 256 * r) + (256 * g) + (b) is the formula.
+			#Default is 16753595.
+			#Range: 0 ~ 16777215
+			spring_color = 16753595
+			#The RGB color (decimal) for summer.
+			#(256 * 256 * r) + (256 * g) + (b) is the formula.
+			#Default is 16705834.
+			#Range: 0 ~ 16777215
+			summer_color = 16705834
+			#The RGB color (decimal) for autumn.
+			#(256 * 256 * r) + (256 * g) + (b) is the formula.
+			#Default is 12344871.
+			#Range: 0 ~ 16777215
+			autumn_color = 12344871
+			#The RGB color (decimal) for winter.
+			#(256 * 256 * r) + (256 * g) + (b) is the formula.
+			#Default is 14679292.
+			#Range: 0 ~ 16777215
+			winter_color = 14679292
+			#The RGB color (decimal) for dry tropical season.
+			#(256 * 256 * r) + (256 * g) + (b) is the formula.
+			#Default is 16745216.
+			#Range: 0 ~ 16777215
+			dry_color = 16745216
+			#The RGB color (decimal) for wet tropical season.
+			#(256 * 256 * r) + (256 * g) + (b) is the formula.
+			#Default is 2068975.
+			#Range: 0 ~ 16777215
+			wet_color = 2068975
+
+	[SeasonHUD.Season]
+		#Show the Tropical season (Wet/Dry) while in Tropical Biomes.
+		#This will not change the season behavior in the biomes, just
+		#what is displayed on the Hud
+		#(true/false)
+		#Default is true.
+		enable_show_tropical_season = true
+		#Show sub-season instead of the basic season?
+		#i.e. Early Winter, Mid Autumn, Late Spring
+		#(true/false)
+		#
+		#If using Fabric Seasons: 
+		#You will want to change the 'seasonLength' options in the
+		#Fabric Seasons config (seasons.json) to be divisible by 3
+		#It defaults to 672000 ticks (28 days)
+		#
+		#Default is false.
+		enable_show_sub_season = false
+		#Show the current day of the season/sub-season?
+		#Default is SHOW_DAY.
+		#Allowed Values: NONE, SHOW_DAY, SHOW_WITH_TOTAL_DAYS
+		enable_show_day = "SHOW_DAY"
+		#Show the current fertility of the biome?
+		#Only shows if not the default fertility of the season
+		#Default is false.
+		enable_show_fertility = false
+		#If the season name should be replaced with the fertility
+		#value when it differs from the default of the biome
+		#Default is false.
+		enable_fertility_replaces_season = false
+
+	[SeasonHUD.Minimap]
+		#Enable integration with minimap mods?
+		#(true/false)
+		#Default is true.
+		enable_minimap_integration = true
+		#Show the default SeasonHUD when the minimap is hidden?
+		#(true/false)
+		#Default is false.
+		enable_show_minimap_hidden = false
+

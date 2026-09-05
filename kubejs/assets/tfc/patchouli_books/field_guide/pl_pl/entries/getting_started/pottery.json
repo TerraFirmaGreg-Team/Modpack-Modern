@@ -28,7 +28,7 @@
           "C": "#tfc:clay_indicators"
         }
       },
-      "name": "Clay Indicators",
+      "name": "Wskaźniki powierzchniowe gliny",
       "text": "Clay, with one of the plants that may indicate its presence.",
       "enable_visualize": false
     },
@@ -64,7 +64,7 @@
     {
       "type": "tfc:knapping_recipe",
       "recipe": "tfc:clay_knapping/jug",
-      "text": "Knapping a Clay Jug."
+      "text": "Rzeźbienie glinianego dzbanka"
     },
     {
       "type": "patchouli:text",
@@ -75,7 +75,7 @@
     {
       "type": "tfc:knapping_recipe",
       "recipe": "tfc:clay_knapping/ingot_mold",
-      "text": "Knapping a Clay Ingot Mold."
+      "text": "Rzeźbienie glinianej formy na sztabkę."
     },
     {
       "type": "tfc:heat_recipe",

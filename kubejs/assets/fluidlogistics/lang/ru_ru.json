@@ -253,5 +253,7 @@
 	"item.fluidlogistics.phantom_chain.tooltip.summary": "При _подключении_ Цепных конвейеров их цепи видны только тогда, когда ты _держишь_ Фантомную цепь в руке",
 	"itemGroup.fluidlogistics.fluidlogistics_tab": "Create: Fluid Logistics",
 	"logistically_linked.protected": "Эта логистическая сеть защищена",
-	"resourcepack.fluidlogistics.cu_again_for_fluidlogistics": "Старые медные текстуры для Fluid Logistics"
+	"resourcepack.fluidlogistics.cu_again_for_fluidlogistics": "Старые медные текстуры для Fluid Logistics",
+	"fluidlogistics.configuration.section.fluidlogistics.common.toml": "Конфигурация банок для жидкостей",
+	"fluidlogistics.configuration.section.fluidlogistics.common.toml.title": "Конфигурация банок для жидкостей"
 }
