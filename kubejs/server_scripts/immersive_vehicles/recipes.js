@@ -1646,7 +1646,7 @@ function registerImmersiveVehiclesRecipes(event) {
 
 	// HV
 	event.recipes.gtceu.assembler('mts:mtsofficialpack.enginepw610f')
-		.itemInputs('4x #forge:rotors/chromium', '64x #forge:bolts/stainless_steel', '16x #forge:plates/stainless_steel', '20x #forge:tiny_fluid_pipes/stainless_steel', '4x #forge:frames/mo_50_re', '4x gtceu:hv_fluid_regulator', '32x #forge:foils/vanadium_steel', '32x #tfg:rubber_rings')
+		.itemInputs('4x #forge:rotors/chromium', '64x #forge:bolts/stainless_steel', '16x #forge:plates/rene_41', '20x #forge:tiny_fluid_pipes/stainless_steel', '4x #forge:frames/mo_50_re', '4x gtceu:hv_fluid_regulator', '32x #forge:foils/vanadium_steel', '32x #tfg:rubber_rings')
 		.inputFluids(Fluid.of('gtceu:lubricant', 8000))
 		.itemOutputs('mts:mtsofficialpack.enginepw610f')
 		.EUt(GTValues.VA[GTValues.HV])
@@ -1686,7 +1686,7 @@ function registerImmersiveVehiclesRecipes(event) {
 		'   ADA   '
 	], {
 		A: 'tfg:aircraft_sail',
-		B: '#forge:plates/red_steel',
+		B: '#forge:plates/black_steel',
 		C: 'mts:mtsofficialpack.propellersmall3blade',
 		D: 'create:brass_casing',
 		E: 'tfg:generators/steel_combustion_engine',
@@ -1696,7 +1696,7 @@ function registerImmersiveVehiclesRecipes(event) {
 	}).id('mts:automotives.biplane');
 
 	event.recipes.gtceu.automotive_workshop('mts:automotives.biplane')
-		.itemInputs('11x create:brass_casing', '9x tfg:aircraft_sail', '6x #forge:plates/red_steel',
+		.itemInputs('11x create:brass_casing', '9x tfg:aircraft_sail', '6x #forge:plates/black_steel',
 			'2x mts:mtsofficialpack.wheelmedium', 'tfg:generators/steel_combustion_engine', '#create:seats',
 			'create:fluid_tank', 'mts:mtsofficialpack.propellersmall3blade')
 		.itemOutputs('mts:automotives.biplane')
@@ -1726,17 +1726,68 @@ function registerImmersiveVehiclesRecipes(event) {
 			F: '#forge:plates/invar',
 			G: '#forge:frames/invar',
 			H: '#forge:rotors/cobalt_brass',
-			I: TFC.ingredient.fluid(TFC.fluidStackIngredient(`tfc:${bell.dye}_dye`, 1152))
+			I: TFC.ingredient.fluid(TFC.fluidStackIngredient(`tfc:${bell.dye}_dye`, 8 * 144))
 		}).id(`mts:mtsofficialpack.bell47g${bell.suffix}`);
 
 		event.recipes.gtceu.automotive_workshop(`mts:mtsofficialpack.bell47g${bell.suffix}`)
 			.itemInputs('3x #forge:glass', '6x #forge:rods/invar', '5x #forge:frames/invar', '3x #forge:plates/invar',
 				'gtceu:lv_sensor', 'create:precision_mechanism', '#gtceu:batteries/lv', '#forge:rotors/cobalt_brass')
-			.inputFluids(Fluid.of(`tfc:${bell.dye}_dye`, 1152))
+			.inputFluids(Fluid.of(`tfc:${bell.dye}_dye`, 8 * 144))
 			.itemOutputs(`mts:mtsofficialpack.bell47g${bell.suffix}`)
 			.EUt(GTValues.VA[GTValues.LV])
 			.duration(60 * 20)
 			.addMaterialInfo(true)
+	})
+
+	const bell206s = [
+		{ suffix: 'black', dye1: 'black', dye2: 'orange' },
+		{ suffix: 'blackstripe', dye1: 'white', dye2: 'black' },
+		{ suffix: 'blue', dye1: 'white', dye2: 'blue' },
+		{ suffix: 'brown', dye1: 'brown', dye2: 'black' },
+		{ suffix: 'gray', dye1: 'light_gray', dye2: 'black' },
+		{ suffix: 'green', dye1: 'white', dye2: 'lime' },
+		{ suffix: 'olive', dye1: 'green', dye2: 'light_gray' },
+		{ suffix: 'orange', dye1: 'orange', dye2: 'white' },
+		{ suffix: 'police', dye1: 'light_gray', dye2: 'blue' },
+		{ suffix: 'red', dye1: 'red', dye2: 'white' },
+		{ suffix: 'seagreen', dye1: 'cyan', dye2: 'white' },
+		{ suffix: 'skyblue', dye1: 'light_blue', dye2: 'white' },
+		{ suffix: 'yellow', dye1: 'yellow', dye2: 'blue' }
+	];
+	bell206s.forEach(bell => {
+		event.recipes.create.mechanical_crafting(`mts:mtsofficialpack.bell206_${bell.suffix}`, [
+			' BBA     ',
+			'BAHHGG   ',
+			'ADIBBBBBF',
+			'ACIBEEEEE',
+			'BAHHGG   ',
+			' BBAJK   '
+		], {
+			A: 'gtceu:tempered_glass',
+			B: '#forge:plates/magnalium',
+			C: 'gtceu:computer_monitor_cover',
+			D: 'gtceu:mv_sensor',
+			E: '#forge:frames/aluminium',
+			F: '#forge:rotors/magnalium',
+			G: '#forge:plates/polyethylene',
+			H: '#forge:rods/long/aluminium',
+			I: '#gtceu:circuits/mv',
+			J: TFC.ingredient.fluid(TFC.fluidStackIngredient(`tfc:${bell.dye1}_dye`, 8 * 144)),
+			K: TFC.ingredient.fluid(TFC.fluidStackIngredient(`tfc:${bell.dye2}_dye`, 2 * 144))
+		}).id(`mts:mtsofficialpack.bell206_${bell.suffix}`);
+
+		event.recipes.gtceu.automotive_workshop(`mts:mtsofficialpack.bell206_${bell.suffix}`)
+			.itemInputs('4x gtceu:tempered_glass', '12x #forge:plates/magnalium', 'gtceu:computer_monitor_cover',
+				'gtceu:mv_sensor', '5x #forge:frames/aluminium', '#forge:rotors/magnalium', '4x #forge:rods/long/aluminium',
+				'2x #gtceu:circuits/mv')
+			.inputFluids(
+				Fluid.of('gtceu:polyethylene', 144 * 4),
+				Fluid.of(`tfc:${bell.dye1}_dye`, 8 * 144),
+				Fluid.of(`tfc:${bell.dye2}_dye`, 2 * 144))
+			.itemOutputs(`mts:mtsofficialpack.bell206_${bell.suffix}`)
+			.EUt(GTValues.VA[GTValues.MV])
+			.duration(60 * 20)
+			.addMaterialInfo(true, true)
 	})
 
 	//event.recipes.create.mechanical_crafting('mts:automotives.biplane', [
@@ -1774,14 +1825,14 @@ function registerImmersiveVehiclesRecipes(event) {
 		G: 'create:blaze_burner',
 		H: '#forge:shafts',
 		I: 'create:fluid_tank',
-		J: '#forge:plates/blue_steel',
+		J: '#forge:plates/black_steel',
 		K: '#tfg:smokestacks',
 		L: 'create:precision_mechanism'
 	}).id('mts:automotives.boilerbox');
 
 	event.recipes.gtceu.automotive_workshop('mts:automotives.boilerbox')
 		.itemInputs('6x create:brass_casing', '2x create:flywheel', '2x mts:mtsofficialpack.wheelmedium',
-			'6x #forge:plates/blue_steel', '#create:seats', '3x #forge:glass_panes', 'steampowered:bronze_steam_engine',
+			'6x #forge:plates/black_steel', '#create:seats', '3x #forge:glass_panes', 'steampowered:bronze_steam_engine',
 			'create:blaze_burner', '6x #forge:shafts', '2x create:fluid_tank', '#tfg:smokestacks', 'create:precision_mechanism')
 		.itemOutputs('mts:automotives.boilerbox')
 		.EUt(GTValues.VA[GTValues.LV])
