@@ -122,6 +122,7 @@ function registerGTCEUItemTags(event) {
     ];
     fluidCells.forEach(cell => {
         event.add('gtceu:fluid_cells', cell);
+        event.add('tfc:fluid_item_ingredient_empty_containers', cell);
     });
 
     /**

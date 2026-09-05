@@ -371,19 +371,19 @@ function registerImmersiveVehiclesRecipes(event) {
 		.EUt(GTValues.VA[GTValues.MV])
 		.duration(100)
 		
-	event.recipes.gtceu.assembler('mts:mtsofficialpack.ammocrate_500')
-		.itemInputs('12x #tfc:lumber', '16x #forge:screws/steel')
-		.inputFluids(Fluid.of('tfc:red_dye', 288))
-		.itemOutputs('mts:mtsofficialpack.ammocrate_bomb_500')
-		.EUt(GTValues.VA[GTValues.MV])
-		.duration(200)
+	//event.recipes.gtceu.assembler('mts:mtsofficialpack.ammocrate_500')
+	//	.itemInputs('12x #tfc:lumber', '16x #forge:screws/steel')
+	//	.inputFluids(Fluid.of('tfc:red_dye', 288))
+	//	.itemOutputs('mts:mtsofficialpack.ammocrate_bomb_500')
+	//	.EUt(GTValues.VA[GTValues.MV])
+	//	.duration(200)
 		
-	event.recipes.gtceu.assembler('mts:mtsofficialpack.ammocrate_bomblet')
-		.itemInputs('12x #tfc:lumber', '16x #forge:screws/steel')
-		.inputFluids(Fluid.of('tfc:blue_dye', 144))
-		.itemOutputs('mts:mtsofficialpack.ammocrate_bomblet')
-		.EUt(GTValues.VA[GTValues.MV])
-		.duration(200)
+	//event.recipes.gtceu.assembler('mts:mtsofficialpack.ammocrate_bomblet')
+	//	.itemInputs('12x #tfc:lumber', '16x #forge:screws/steel')
+	//	.inputFluids(Fluid.of('tfc:blue_dye', 144))
+	//	.itemOutputs('mts:mtsofficialpack.ammocrate_bomblet')
+	//	.EUt(GTValues.VA[GTValues.MV])
+	//	.duration(200)
 		
 	event.recipes.gtceu.assembler('mts:mtsofficialpack.ammocrate_rocket')
 		.itemInputs('12x #tfc:lumber', '16x #forge:screws/steel')
@@ -439,7 +439,7 @@ function registerImmersiveVehiclesRecipes(event) {
 		.itemOutputs('22x #forge:dusts/hexamine')
 		.outputFluids(Fluid.of('minecraft:water', 6000))
 		.EUt(GTValues.VA[GTValues.MV])
-		.duration(160)	
+		.duration(160)
 		
 	event.recipes.gtceu.chemical_reactor('tfg:rdx') 
 		.itemInputs('22x #forge:dusts/hexamine')
@@ -448,10 +448,18 @@ function registerImmersiveVehiclesRecipes(event) {
 		//needs ammonium nitrate
 		.outputFluids(Fluid.of('minecraft:water', 3000))
 		.EUt(GTValues.VA[GTValues.MV])
-		.duration(200)	
+		.duration(200)
 		
-	event.recipes.gtceu.mixer('tfg:hexotol')
+	event.recipes.gtceu.mixer('tfg:hexotol_tnt')
 		.itemInputs('32x #forge:dusts/rdx', '1x minecraft:tnt')
+		.inputFluids(Fluid.of('gtceu:wax', 72))
+		.itemOutputs('4x tfg:hexotol', '9x #forge:dusts/ammonium_nitrate')
+		.EUt(GTValues.VA[GTValues.MV])
+		.duration(240)
+		
+	// TODO: balance this
+	event.recipes.gtceu.mixer('tfg:hexotol_itnt')
+		.itemInputs('32x #forge:dusts/rdx', '1x gtceu:industrial_tnt')
 		.inputFluids(Fluid.of('gtceu:wax', 72))
 		.itemOutputs('4x tfg:hexotol', '9x #forge:dusts/ammonium_nitrate')
 		.EUt(GTValues.VA[GTValues.MV])
@@ -466,7 +474,7 @@ function registerImmersiveVehiclesRecipes(event) {
 		.inputFluids(Fluid.of('gtceu:nitric_acid', 1000), Fluid.of('gtceu:ammonia', 1000))
 		.itemOutputs('9x #forge:dusts/ammonium_nitrate')
 		.EUt(GTValues.VA[GTValues.MV])
-		.duration(400)	
+		.duration(400)
 	// #endregion
 
 	// #region Refuellers/automation
@@ -728,7 +736,17 @@ function registerImmersiveVehiclesRecipes(event) {
 		A: 'firmalife:treated_wood',
 		B: '#forge:screws/steel',
 		C: '#forge:tools/screwdrivers'
-	}).id('mts:automotives.upgrade_pontoons')
+	}).id('mts:automotives.upgrade_pontoons_wax')
+
+	event.shaped('mts:automotives.upgrade_pontoons', [
+		'BCB',
+		'AAA',
+		'AAA'
+	], {
+		A: '#tfg:rubber_plates',
+		B: '#forge:screws/steel',
+		C: '#forge:tools/screwdrivers'
+	}).id('mts:automotives.upgrade_pontoons_rubber')
 
 	event.shaped('mts:mtsofficialpack.skidhelicopter', [
 		'BCB',
@@ -1071,7 +1089,7 @@ function registerImmersiveVehiclesRecipes(event) {
 		.id('mts:automotives.bullet_cakecapsule')
 	// #endregion
 
-	// #region Wheels	
+	// #region Wheels
 	event.shaped('mts:mtsofficialpack.wheelsmall', [
 		' B ',
 		' A ',
@@ -1484,7 +1502,7 @@ function registerImmersiveVehiclesRecipes(event) {
 
 	// LV
 	event.recipes.gtceu.assembler('mts:mtsofficialpack.enginefranklin0335')
-		.itemInputs('#tfg:any_bronze_rotor', '4x mts:mtsofficialpack.sparkplug', '10x #forge:tiny_fluid_pipes/steel', '#forge:frames/invar', 'gtceu:lv_fluid_regulator', 'gtceu:lv_electric_piston', '8x #forge:foils/invar', '#tfg:rubber_belts')
+		.itemInputs('#forge:rotors/cobalt_brass', '4x mts:mtsofficialpack.sparkplug', '10x #forge:tiny_fluid_pipes/steel', '#forge:frames/invar', 'gtceu:lv_fluid_regulator', 'gtceu:lv_electric_piston', '8x #forge:foils/invar', '#tfg:rubber_belts')
 		.inputFluids(Fluid.of('gtceu:lubricant', 2000))
 		.itemOutputs('mts:mtsofficialpack.enginefranklin0335')
 		.EUt(GTValues.VA[GTValues.LV])
@@ -1493,7 +1511,7 @@ function registerImmersiveVehiclesRecipes(event) {
 		.addMaterialInfo(true)
 
 	event.recipes.gtceu.assembler('mts:mtsofficialpack.enginebristolmercury')
-		.itemInputs('#tfg:any_bronze_rotor', '4x mts:mtsofficialpack.sparkplug', '9x #forge:tiny_fluid_pipes/steel', '2x #forge:frames/invar', 'gtceu:lv_fluid_regulator', '2x gtceu:lv_electric_piston', '8x #forge:foils/invar', '#tfg:rubber_belts')
+		.itemInputs('#forge:rotors/cobalt_brass', '4x mts:mtsofficialpack.sparkplug', '9x #forge:tiny_fluid_pipes/steel', '2x #forge:frames/invar', 'gtceu:lv_fluid_regulator', '2x gtceu:lv_electric_piston', '8x #forge:foils/invar', '#tfg:rubber_belts')
 		.inputFluids(Fluid.of('gtceu:lubricant', 2000))
 		.itemOutputs('mts:mtsofficialpack.enginebristolmercury')
 		.EUt(GTValues.VA[GTValues.LV])
@@ -1698,7 +1716,7 @@ function registerImmersiveVehiclesRecipes(event) {
 			' BB      ',
 			'ACFB     ',
 			'AEFGGGGGH',
-			'ADFBI    ',
+			'ADFBIJ   ',
 			' BB      '
 		], {
 			A: '#forge:glass',
@@ -1708,20 +1726,20 @@ function registerImmersiveVehiclesRecipes(event) {
 			E: '#gtceu:batteries/lv',
 			F: '#forge:plates/invar',
 			G: '#forge:frames/invar',
-			H: '#tfg:any_bronze_rotor',
-			I: TFC.ingredient.fluid(TFC.fluidStackIngredient(`tfc:${bell.dye}_dye`, 1000))
+			H: '#forge:rotors/cobalt_brass',
+			I: TFC.ingredient.fluid(TFC.fluidStackIngredient(`tfc:${bell.dye}_dye`, 1000)),
+			J: TFC.ingredient.fluid(TFC.fluidStackIngredient(`tfc:${bell.dye}_dye`, 152)),
 		}).id(`mts:mtsofficialpack.bell47g${bell.suffix}`);
 
 		event.recipes.gtceu.automotive_workshop(`mts:mtsofficialpack.bell47g${bell.suffix}`)
 			.itemInputs('3x #forge:glass', '6x #forge:rods/invar', '5x #forge:frames/invar', '3x #forge:plates/invar',
-				'gtceu:lv_sensor', 'create:precision_mechanism', '#gtceu:batteries/lv', '#tfg:any_bronze_rotor')
+				'gtceu:lv_sensor', 'create:precision_mechanism', '#gtceu:batteries/lv', '#forge:rotors/cobalt_brass')
 			.inputFluids(Fluid.of(`tfc:${bell.dye}_dye`, 1152))
 			.itemOutputs(`mts:mtsofficialpack.bell47g${bell.suffix}`)
 			.EUt(GTValues.VA[GTValues.LV])
 			.duration(60 * 20)
 			.addMaterialInfo(true)
 	})
-	// TODO: add more dyes to the above? the red one has a yellow tail
 
 	//event.recipes.create.mechanical_crafting('mts:automotives.biplane', [
 	//	'         ',
@@ -1830,14 +1848,14 @@ function registerImmersiveVehiclesRecipes(event) {
 		.EUt(GTValues.VA[GTValues.HV])
 
 	event.recipes.gtceu.alloy_smelter('tfg:spark_plug_casing_fireclay')
-		.itemImputs('tfc:fire_clay')
+		.itemInputs('tfc:fire_clay')
 		.notConsumable('gtceu:tiny_pipe_casting_mold')
 		.itemOutputs('tfg:spark_plug_casing')
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.LV])
 
 	event.recipes.gtceu.alloy_smelter('tfg:spark_plug_casing_alumina')
-		.itemImputs('tfg:alumina_dust')
+		.itemInputs('tfg:alumina_dust')
 		.notConsumable('gtceu:tiny_pipe_casting_mold')
 		.itemOutputs('tfg:spark_plug_casing')
 		.duration(100)
