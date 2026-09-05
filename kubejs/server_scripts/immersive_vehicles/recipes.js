@@ -1711,28 +1711,10 @@ function registerImmersiveVehiclesRecipes(event) {
 		{ suffix: '_olive', dye: 'green' }
 	];
 	bell47s.forEach(bell => {
-		event.recipes.create.mechanical_crafting(`mts:mtsofficialpack.bell47g${bell.suffix}`, [
-			' BB      ',
-			'ACFB     ',
-			'AEFGGGGGH',
-			'ADFBI    ',
-			' BB      '
-		], {
-			A: '#forge:glass',
-			B: '#forge:rods/invar',
-			C: 'gtceu:lv_sensor',
-			D: 'create:precision_mechanism',
-			E: '#gtceu:batteries/lv',
-			F: '#forge:plates/invar',
-			G: '#forge:frames/invar',
-			H: '#forge:rotors/cobalt_brass',
-			I: TFC.ingredient.fluid(TFC.fluidStackIngredient(`tfc:${bell.dye}_dye`, 8 * 144))
-		}).id(`mts:mtsofficialpack.bell47g${bell.suffix}`);
-
 		event.recipes.gtceu.automotive_workshop(`mts:mtsofficialpack.bell47g${bell.suffix}`)
 			.itemInputs('3x #forge:glass', '6x #forge:rods/invar', '5x #forge:frames/invar', '3x #forge:plates/invar',
 				'gtceu:lv_sensor', 'create:precision_mechanism', '#gtceu:batteries/lv', '#forge:rotors/cobalt_brass')
-			.inputFluids(Fluid.of(`tfc:${bell.dye}_dye`, 8 * 144))
+			.inputFluids(Fluid.of('gtceu:soldering_alloy', 8 * 144), Fluid.of(`tfc:${bell.dye}_dye`, 8 * 144))
 			.itemOutputs(`mts:mtsofficialpack.bell47g${bell.suffix}`)
 			.EUt(GTValues.VA[GTValues.LV])
 			.duration(60 * 20)
@@ -1755,32 +1737,12 @@ function registerImmersiveVehiclesRecipes(event) {
 		{ suffix: 'yellow', dye1: 'yellow', dye2: 'blue' }
 	];
 	bell206s.forEach(bell => {
-		event.recipes.create.mechanical_crafting(`mts:mtsofficialpack.bell206_${bell.suffix}`, [
-			' BBA     ',
-			'BAHHGG   ',
-			'ADIBBBBBF',
-			'ACIBEEEEE',
-			'BAHHGG   ',
-			' BBAJK   '
-		], {
-			A: 'gtceu:tempered_glass',
-			B: '#forge:plates/magnalium',
-			C: 'gtceu:computer_monitor_cover',
-			D: 'gtceu:mv_sensor',
-			E: '#forge:frames/aluminium',
-			F: '#forge:rotors/magnalium',
-			G: '#forge:plates/polyethylene',
-			H: '#forge:rods/long/aluminium',
-			I: '#gtceu:circuits/mv',
-			J: TFC.ingredient.fluid(TFC.fluidStackIngredient(`tfc:${bell.dye1}_dye`, 8 * 144)),
-			K: TFC.ingredient.fluid(TFC.fluidStackIngredient(`tfc:${bell.dye2}_dye`, 2 * 144))
-		}).id(`mts:mtsofficialpack.bell206_${bell.suffix}`);
-
 		event.recipes.gtceu.automotive_workshop(`mts:mtsofficialpack.bell206_${bell.suffix}`)
 			.itemInputs('4x gtceu:tempered_glass', '12x #forge:plates/magnalium', 'gtceu:computer_monitor_cover',
 				'gtceu:mv_sensor', '5x #forge:frames/aluminium', '#forge:rotors/magnalium', '4x #forge:rods/long/aluminium',
-				'2x #gtceu:circuits/mv')
+				'#gtceu:batteries/mv', 'create:precision_mechanism')
 			.inputFluids(
+				Fluid.of('gtceu:soldering_alloy', 10 * 144),
 				Fluid.of('gtceu:polyethylene', 144 * 4),
 				Fluid.of(`tfc:${bell.dye1}_dye`, 8 * 144),
 				Fluid.of(`tfc:${bell.dye2}_dye`, 2 * 144))
@@ -1788,9 +1750,65 @@ function registerImmersiveVehiclesRecipes(event) {
 			.EUt(GTValues.VA[GTValues.MV])
 			.duration(60 * 20)
 			.addMaterialInfo(true, true)
+	})	
+
+	const pzlp11s = [
+		{ suffix: '', dye: 'gray' },
+		{ suffix: '_brown', dye: 'brown' },
+		{ suffix: '_green', dye: 'green' },
+		{ suffix: '_tan', dye: 'yellow' }
+	];
+	pzlp11s.forEach(pzlp11 => {
+		event.recipes.gtceu.automotive_workshop(`mts:mtsofficialpack.pzlp11${pzlp11.suffix}`)
+			.itemInputs('#forge:glass', '6x #forge:rods/steel', 'gtceu:lv_sensor', 'create:precision_mechanism',
+				'#gtceu:batteries/lv', '9x #forge:plates/invar', '5x #forge:frames/invar', '2x gtceu:lv_machine_hull',
+				'2x #forge:double_plates/invar', 'gtceu:steel_gearbox')
+			.inputFluids(Fluid.of('gtceu:soldering_alloy', 10 * 144), Fluid.of(`tfc:${pzlp11.dye}_dye`, 10 * 144))
+			.itemOutputs(`mts:mtsofficialpack.pzlp11${pzlp11.suffix}`)
+			.EUt(GTValues.VA[GTValues.LV])
+			.duration(60 * 20)
+			.addMaterialInfo(true)
+	})
+
+	const pzl37s = [
+		{ suffix: '', dye: 'gray' },
+		{ suffix: '_arctic', dye: 'light_gray' },
+		{ suffix: '_brown', dye: 'brown' },
+		{ suffix: '_green', dye: 'green' },
+		{ suffix: '_tan', dye: 'yellow' }
+	];
+	pzl37s.forEach(pzl37 => {
+		event.recipes.gtceu.automotive_workshop(`mts:mtsofficialpack.pzl37los${pzl37.suffix}`)
+			.itemInputs('3x #forge:glass', 'gtceu:lv_sensor', 'create:precision_mechanism',
+				'#gtceu:batteries/lv', '14x #forge:plates/invar', '4x #forge:frames/invar', '3x gtceu:lv_machine_hull',
+				'10x #forge:double_plates/invar', '2x gtceu:steel_gearbox')
+			.inputFluids(Fluid.of('gtceu:soldering_alloy', 14 * 144), Fluid.of(`tfc:${pzl37.dye}_dye`, 14 * 144))
+			.itemOutputs(`mts:mtsofficialpack.pzl37los${pzl37.suffix}`)
+			.EUt(GTValues.VA[GTValues.LV])
+			.duration(60 * 20)
+			.addMaterialInfo(true)
+	})
+	
+	const trimotors = [
+		{ suffix: 'black', dye: 'black' },
+		{ suffix: 'blue', dye: 'blue' },
+		{ suffix: 'red', dye: 'red' },
+		{ suffix: 'white', dye: 'white' }
+	];
+	trimotors.forEach(trimotor => {
+		event.recipes.gtceu.automotive_workshop(`mts:mtsofficialpack.trimotor_${trimotor.suffix}`)
+			.itemInputs('3x #forge:glass', '3x gtceu:steel_gearbox', 'gtceu:lv_sensor', 'create:precision_mechanism',
+				'#gtceu:batteries/lv', '3x #forge:plates/invar', '5x #forge:frames/invar', '4x gtceu:lv_machine_hull',
+				'16x #forge:double_plates/invar', '16x #forge:double_plates/invar', '2x #forge:double_plates/invar')
+			.inputFluids(Fluid.of('gtceu:soldering_alloy', 20 * 144), Fluid.of(`tfc:${trimotor.dye}_dye`, 4 * 144))
+			.itemOutputs(`mts:mtsofficialpack.trimotor_${trimotor.suffix}`)
+			.EUt(GTValues.VA[GTValues.LV])
+			.duration(60 * 20)
+			.addMaterialInfo(true)
 	})
 
 	//event.recipes.create.mechanical_crafting('mts:automotives.biplane', [
+	//	'         ',
 	//	'         ',
 	//	'         ',
 	//	'         ',
