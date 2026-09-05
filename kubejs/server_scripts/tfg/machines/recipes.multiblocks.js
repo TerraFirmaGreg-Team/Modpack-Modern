@@ -404,8 +404,8 @@ function registerTFGMultiblockRecipes(event) {
 		.EUt(GTValues.VA[GTValues.LV])
 		.addMaterialInfo(true)
 
-	// Space Heater
-	event.recipes.gtceu.shaped('tfg:space_heater', [
+	// Heat Pump
+	event.recipes.gtceu.shaped('tfg:heat_pump', [
 		'APA',
 		'PBP',
 		'CPC'
@@ -414,7 +414,7 @@ function registerTFGMultiblockRecipes(event) {
 		P: 'gtceu:steel_pipe_casing',
 		B: 'gtceu:mv_machine_hull',
 		C: '#gtceu:circuits/hv'
-	}).addMaterialInfo().id('tfg:shaped/space_heater')
+	}).addMaterialInfo().id('tfg:shaped/heat_pump')
 
 	// Oxygen Distributor
 	event.recipes.gtceu.shaped('tfg:oxygen_distributor', [
