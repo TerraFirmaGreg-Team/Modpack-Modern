@@ -77,6 +77,7 @@
 	"tacztweaks.config.label.ETiltGun.NEVER": "Никогда",
 	"tacztweaks.config.label.disabled": "Отключено",
 	"tacztweaks.config.label.enabled": "Включено",
+	"tacztweaks.config.label.multiplier": "%1$sx",
 	"tacztweaks.config.label.synced": "Отображается конфигурация со стороны сервера",
 	"tacztweaks.config.modifier.addend.description": "Добавляет это значение.",
 	"tacztweaks.config.modifier.addend.name": "Слагаемое",
@@ -155,6 +156,7 @@
 	"tacztweaks.config.tweaks.infiniteAmmoDisablesConsumption.description": "Отключает расход патронов, когда у игрока бесконечные патроны (например, из творческой коробки с патронами).",
 	"tacztweaks.config.tweaks.infiniteAmmoDisablesConsumption.name": "Бесконечные патроны без расхода",
 	"tacztweaks.config.tweaks.rps.description": "Заменяет RPM (выстрелов в минуту) на RPS (выстрелов в секунду) в характеристиках оружия.",
+	"tacztweaks.config.tweaks.rps.name": "RPS",
 	"tacztweaks.config.tweaks.suppressFleshHitSounds.description": "Подавляет звук, который воспроизводится при попадании, не являющемся выстрелом в голову.",
 	"tacztweaks.config.tweaks.suppressFleshHitSounds.name": "Подавить звуки попадания в тело",
 	"tacztweaks.config.tweaks.suppressHeadHitSounds.description": "Подавляет звук, который воспроизводится при попадании в голову.",
@@ -166,5 +168,6 @@
 	"tacztweaks.key.tiltGun": "Наклон оружия",
 	"tacztweaks.key.unload": "Разрядить",
 	"tacztweaks.packs.filter": "Фильтр",
+	"tacztweaks.property_diagrams.rps": "RPS",
 	"tacztweaks.search": "Поиск..."
 }

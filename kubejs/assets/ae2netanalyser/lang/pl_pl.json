@@ -1,4 +1,5 @@
 {
+  "itemGroup.ae2netanalyser": "AE2 Network Analyzer",
   "item.ae2netanalyser.network_analyser": "Analizator sieci ME",
   "gui.ae2netanalyser.network_analyser.mode": "Tryb",
   "gui.ae2netanalyser.network_analyser.node_size": "Wielkość",
@@ -7,6 +8,7 @@
   "gui.ae2netanalyser.network_analyser.mode.NODES": "Węzły",
   "gui.ae2netanalyser.network_analyser.mode.CHANNELS": "Łącza",
   "gui.ae2netanalyser.network_analyser.mode.NONUM": "Bez numeru",
+  "gui.ae2netanalyser.network_analyser.mode.P2P": "P2P",
   "gui.ae2netanalyser.network_analyser.LINK.NORMAL": "Zwykłe łącze",
   "gui.ae2netanalyser.network_analyser.LINK.DENSE": "Gęste łącze",
   "gui.ae2netanalyser.network_analyser.LINK.COMPRESSED": "Łącze P2P",

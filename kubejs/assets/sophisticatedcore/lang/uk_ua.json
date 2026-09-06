@@ -271,6 +271,7 @@
 	"gui.sophisticatedcore.upgrades.xp_pump.tooltip": "Помпа досвіду",
 	"item.sophisticatedcore.stack_upgrade_conversion.tooltip": "Клацніть правою кнопкою миші на встановлене покращення стаку, щоб конвертувати його",
 	"item.sophisticatedcore.storage.tooltip.empty": "Без оновлень або вмісту інвентарю",
+	"item.sophisticatedcore.storage.tooltip.energy": "%s FE",
 	"item.sophisticatedcore.storage.tooltip.fluid": "%s мБ %s",
 	"item.sophisticatedcore.storage.tooltip.fluid_empty": "Порожній резервуар",
 	"item.sophisticatedcore.storage.tooltip.inventory": "Інвентар",

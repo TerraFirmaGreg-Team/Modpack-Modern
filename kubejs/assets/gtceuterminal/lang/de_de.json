@@ -1,8 +1,11 @@
 {
+  "component.gtceuterminal.component_type.filter": "Filter",
   "gui.gtceuterminal.manager_settings.common.no": "§cAus",
   "gui.gtceuterminal.manager_settings.common.yes": "§aEin",
   "gui.gtceuterminal.material_list.source.none": "Nichts",
   "gui.gtceuterminal.theme_editor.preset.cyan": "Türkis",
+  "gui.gtceuterminal.theme_editor.preset.gold": "Gold",
+  "gui.gtceuterminal.theme_editor.preset.orange": "Orange",
   "item.gtceuterminal.dismantler": "Demontierer",
   "item.gtceuterminal.dismantler.tooltip": "Zerlege Multiblocks und erhalte die Komponenten zurück",
   "item.gtceuterminal.multi_structure_manager": "Multistruktur-Manager",

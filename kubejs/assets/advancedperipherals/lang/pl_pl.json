@@ -1,4 +1,5 @@
 {
+	"advancedperipherals.name": "Advanced Peripherals",
 	"block.advancedperipherals.ar_controller": "Kontroler AR",
 	"block.advancedperipherals.block_reader": "Czytnik bloków",
 	"block.advancedperipherals.chat_box": "Okienko czatu",
@@ -52,6 +53,7 @@
 	"text.advancedperipherals.automata_core_feed_by_player": "Próbujesz nakarmić byt duszą, lecz twoje ciało odmawia posłuszeństwa. Może coś bardziej mechanicznego może to zrobić?",
 	"text.advancedperipherals.removed_player": "Wyczyszczono kartę pamięci",
 	"turtle.advancedperipherals.chatty_turtle": "Gaduła",
+	"turtle.advancedperipherals.chunky_turtle": "Chunky",
 	"turtle.advancedperipherals.compass_turtle": "Kompas",
 	"turtle.advancedperipherals.end_automata": "Endowy automat",
 	"turtle.advancedperipherals.environment_turtle": "Środowisko",

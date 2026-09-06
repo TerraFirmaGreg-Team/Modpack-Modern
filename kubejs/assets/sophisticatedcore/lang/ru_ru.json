@@ -271,6 +271,8 @@
 	"gui.sophisticatedcore.upgrades.xp_pump.tooltip": "Помпа опыта",
 	"item.sophisticatedcore.stack_upgrade_conversion.tooltip": "Нажми ПКМ по установленному Улучшению стака для его преобразования",
 	"item.sophisticatedcore.storage.tooltip.empty": "Не содержит предметы или улучшения",
+	"item.sophisticatedcore.storage.tooltip.energy": "%s FE",
+	"item.sophisticatedcore.storage.tooltip.fluid": "%s mB %s",
 	"item.sophisticatedcore.storage.tooltip.fluid_empty": "Резервуар пуст",
 	"item.sophisticatedcore.storage.tooltip.inventory": "Инвентарь",
 	"item.sophisticatedcore.storage.tooltip.press_for_contents": "Зажмите <%s> для просмотра содержимого",

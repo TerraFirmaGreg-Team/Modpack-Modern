@@ -147,8 +147,5 @@
 	"statusbar.createaddition.wire.long": "线缆太长了",
 	"statusbar.createaddition.wire.no_connection": "这里没有线缆连接",
 	"statusbar.createaddition.wire.removed": "线缆已移除",
-	"statusbar.createaddition.wire.requires_high_current": "需要高电流线缆连接",
-	"block.createaddition.creative_energy": "创造发电机",
-	"block.createaddition.creative_energy.tooltip": "创造发电机",
-	"block.createaddition.creative_energy.tooltip.summary": "无限地供应 _FE_。"
+	"statusbar.createaddition.wire.requires_high_current": "需要高电流线缆连接"
 }

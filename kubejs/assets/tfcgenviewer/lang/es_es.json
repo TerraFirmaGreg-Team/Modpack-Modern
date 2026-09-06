@@ -17,6 +17,7 @@
   "tfcgenviewer.biome_altitude.low": "Bajo",
   "tfcgenviewer.biome_altitude.medium": "Medio",
   "tfcgenviewer.preview_world.invalid_generator": "El generador de regiones para este mundo no es del mod TFC, por favor cambia el tipo de mundo",
+  "tfcgenviewer.preview_world.km": "%s km",
   "tfcgenviewer.preview_world.no_tooltip_available": "Sin descripción",
   "tfcgenviewer.preview_world.preview_info": "Generadas %s regiones en %s segundos\nDimensiones: %s km x %s km\nCentrado en: (%s,%s)\nVisualizador: %s\nClave en color:\n%s",
   "tfcgenviewer.preview_world.preview_info.error": "Hubo un error en la generación\n\nRevisa el registro, reporta el error y reinicia el generador de mundo con una semilla distinta",

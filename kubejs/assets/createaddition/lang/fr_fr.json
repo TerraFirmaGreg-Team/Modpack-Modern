@@ -98,6 +98,7 @@
 	"createaddition.tooltip.energy.input": "Entrer",
 	"createaddition.tooltip.energy.none": "Aucun",
 	"createaddition.tooltip.energy.output": "Sortie",
+	"createaddition.tooltip.energy.passive": "Passive",
 	"createaddition.tooltip.energy.production": "Énergie générée:",
 	"createaddition.tooltip.energy.pull": "Récéption",
 	"createaddition.tooltip.energy.push": "Envoie",
@@ -139,8 +140,5 @@
 	"statusbar.createaddition.wire.long": "Le fil est trop long",
 	"statusbar.createaddition.wire.no_connection": "Fil non connecté ici",
 	"statusbar.createaddition.wire.removed": "Fil retiré",
-	"statusbar.createaddition.wire.requires_high_current": "Cette connexion nécessite un fil à courant élevé",
-	"block.createaddition.creative_energy": "Générateur Créatif",
-	"block.createaddition.creative_energy.tooltip": "GENERATEUR_CREATIF",
-	"block.createaddition.creative_energy.tooltip.summary": "Génère une quantité infinie de _FE_."
+	"statusbar.createaddition.wire.requires_high_current": "Cette connexion nécessite un fil à courant élevé"
 }

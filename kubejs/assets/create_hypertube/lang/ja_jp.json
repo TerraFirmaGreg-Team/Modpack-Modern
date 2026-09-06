@@ -30,6 +30,8 @@
   "hypertube.travel.too_short": "チューブ間の距離が短すぎて移動できません",
   "item.create_hypertube.redstone_detector_tube_attachment": "レッドストーン検出チューブアタッチメント",
   "item.create_hypertube.tube_scanner_attachment": "チューブスキャナーアタッチメント",
+  "itemGroup.create_hypertube": "Create: Hypertube",
+  "key.categories.hypertube": "Create: Hypertube",
   "placement.create_hypertube.angle_too_high": "ポイント間の角度が大きすぎます",
   "placement.create_hypertube.block_collision": "ブロックと衝突しています",
   "placement.create_hypertube.cant_conn_to_block": "このブロックにはチューブを接続することが出来ません",

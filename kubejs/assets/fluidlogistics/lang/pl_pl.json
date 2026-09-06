@@ -110,6 +110,7 @@
 	"fluidlogistics.ponder.pump_speed.text_4": "Pompy łączą swoją przepustowość w tym samym systemie rur",
 	"fluidlogistics.ponder.pump_speed.text_5": "Upewnij się, że wszystkie są zwrócone w tym samym kierunku",
 	"fluidlogistics.ponder.smart_faucet.header": "Wypełnianie przedmiotów  inteligentnymi kranami",
+	"gui.fluidlogistics.creative_banner.title": "FL",
 	"item.fluidlogistics.compressed_storage_tank": "Skompresowany zbiornik",
 	"item.fluidlogistics.fluid_package": "Paczka z płynem",
 	"item.fluidlogistics.fluid_schematic": "Schemat płynów",
@@ -119,5 +120,9 @@
 	"item.fluidlogistics.fluid_schematic.tooltip.condition2": "Kliknięcie PPM w czasie skradania",
 	"item.fluidlogistics.hand_pointer": "Wskaźnik ręczny",
 	"item.fluidlogistics.hand_pointer.tooltip.condition1": "Pasujące cele",
-	"item.fluidlogistics.phantom_chain": "Fantomowy łańcuch"
+	"item.fluidlogistics.phantom_chain": "Fantomowy łańcuch",
+	"itemGroup.fluidlogistics.fluidlogistics_tab": "Create: Fluid Logistics",
+	"fluidlogistics.configuration.advancedLogisticsNetworkEnabled": "System paczek z płynem",
+	"fluidlogistics.configuration.section.fluidlogistics.common.toml": "Konfiguracja pakowacza płynów",
+	"fluidlogistics.configuration.section.fluidlogistics.common.toml.title": "Konfiguracja pakowacza płynów"
 }

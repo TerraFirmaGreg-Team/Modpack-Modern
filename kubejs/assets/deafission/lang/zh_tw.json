@@ -36,6 +36,7 @@
 	"deafission.machine.material_holder.tooltip": "用於存放以熱輻射為基礎的裂變反應爐合成配方所需的輸入材料。",
 	"deafission.machine.redstone_port.tooltip": "使用扳手切換運作模式。",
 	"deafission.overlay.hb_capacity": "容量: %s HU/°",
+	"deafission.overlay.hb_energy": "%s HU",
 	"deafission.overlay.hb_load": "負載: %s%% // %s%%",
 	"deafission.overlay.hb_temp": "溫度: %s° / %s°",
 	"deafission.recipe.coolant_heat_per_tick": "熱量：-%s HU/t/°",

@@ -1537,6 +1537,7 @@
 	"railways.bogeys.styles.singleaxle": "Одновісний",
 	"railways.bogeys.styles.wide_comically_large": "Кумедно великі",
 	"railways.bogeys.styles.wide_default": "Широкі",
+	"railways.bogeys.styles.y25": "Y25",
 	"railways.buffer.invalid_shape": "Тупиковий упор потрібно розміщувати на прямій колії",
 	"railways.commands.count_paint.success": "Знайдено %s пофарбованих блоків.",
 	"railways.coupler.edge_spacing": "Міжвагонний інтервал",
@@ -2079,5 +2080,17 @@
 	"tfc.recipe.barrel.railways.barrel.dyeing.purple_conductor_cap": "Фарбування",
 	"tfc.recipe.barrel.railways.barrel.dyeing.red_conductor_cap": "Фарбування",
 	"tfc.recipe.barrel.railways.barrel.dyeing.white_conductor_cap": "Фарбування",
-	"tfc.recipe.barrel.railways.barrel.dyeing.yellow_conductor_cap": "Фарбування"
+	"tfc.recipe.barrel.railways.barrel.dyeing.yellow_conductor_cap": "Фарбування",
+	"block.railways.conductor_whistle.tooltip": "СВИСТОК КОНДУКТОРА",
+	"block.railways.conductor_whistle.tooltip.behaviour1": "_Прив'язує_ свисток і до _кондуктора_, і до його _потяга_.",
+	"block.railways.conductor_whistle.tooltip.behaviour2": "Наказує прив'язаному кондуктору прямувати до вибраної залізничної колії або станції.",
+	"block.railways.conductor_whistle.tooltip.behaviour3": "Наказує прив'язаному кондуктору прямувати до вибраної станції.",
+	"block.railways.conductor_whistle.tooltip.behaviour4": "Скасовує автоматичний розклад прив’язаного потяга.",
+	"block.railways.conductor_whistle.tooltip.condition1": "ПКМ по кондуктору, який їде в потязі",
+	"block.railways.conductor_whistle.tooltip.condition2": "ПКМ по залізничній колії або залізничній станції",
+	"block.railways.conductor_whistle.tooltip.condition3": "Використання деплоєром на залізничній станції",
+	"block.railways.conductor_whistle.tooltip.condition4": "Використання деплоєром у повітрі",
+	"block.railways.conductor_whistle.tooltip.summary": "Дмухни у свисток, і потяг невдовзі прибуде! Прив’язаний кондуктор попрямує до вибраного пункту призначення, ігноруючи свій розклад.",
+	"railways.whistle.tool.bound2": "§2Прив’язаний§r §6Кондуктор§r §e[%1$s]§r §6за кермом§r §e%2$s§r §9[%3$s]§r",
+	"railways.whistle.tool.not_bound2": "§4Не прив’язаний§r"
 }

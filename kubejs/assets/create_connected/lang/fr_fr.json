@@ -147,6 +147,8 @@
 	"create_connected.gui.sequenced_pulse_generator.instruction.wait_for": "Attendre",
 	"create_connected.gui.sequenced_pulse_generator.instruction.wait_for.descriptive": "Attendre jusqu'à ce que l'entrée change",
 	"create_connected.gui.sequenced_pulse_generator.instruction.wait_for.param": "État cible",
+	"create_connected.gui.sequenced_pulse_generator.off": "Off",
+	"create_connected.gui.sequenced_pulse_generator.on": "On",
 	"create_connected.gui.sequenced_pulse_generator.signal": "Force du signal",
 	"create_connected.gui.sequenced_pulse_generator.title": "Générateur d'impulsion séquencé",
 	"create_connected.kinetic_bridge.not_enough_space": "Nettoyez les blocs pour le placement",

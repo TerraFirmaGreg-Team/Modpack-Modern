@@ -90,7 +90,5 @@
   "text.autoconfig.megacells.option.AllowSpentWaste.@Tooltip": "Должна ли МЭГА Ячейка радиоактивного хранения иметь возможность хранить Отработанные ядерные отходы.",
   "text.autoconfig.megacells.option.CompressionChainLimit": "Предельный объем сжатия",
   "text.autoconfig.megacells.option.CompressionChainLimit.@Tooltip": "Максимальное количество вариантов, о которых ячейка массового хранения с поддержкой сжатия может сообщить как о сохраненных.",
-  "text.autoconfig.megacells.title": "МЭГА Ячейки",
-  "item.megacells.cable_mega_pattern_provider": "МЕГА поставщик шаблонов",
-  "block.megacells.mega_pattern_provider": "МЕГА поставщик шаблонов"
+  "text.autoconfig.megacells.title": "МЭГА Ячейки"
 }

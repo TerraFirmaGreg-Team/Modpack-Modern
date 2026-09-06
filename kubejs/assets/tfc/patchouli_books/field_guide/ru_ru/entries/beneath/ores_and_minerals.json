@@ -5,7 +5,7 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "Beneath the overworld, you will still find ore veins to exploit. It is important to note that $(thing)Netherrack$() does not collapse, like raw stone would. However, $(thing)Blackstone$(), $(thing)Nether Bricks$(), $(thing)Cobblerack$() and miscellaneous other blocks do. Prospecting will still work Beneath the overworld."
+      "text": "В Бездне, вы также сможете находить рудные жили для изучения. Важно знать, что $(thing)Netherrack$() не обваливается, как камни могли бы. Однако, $(thing)Blackstone$(), $(thing)Nether Bricks$(), $(thing)Cobblerack$() и другие разные блоки обваливаются. Разведка руд будет работать также и в Бездне."
     },
     {
       "type": "patchouli:multiblock",
@@ -24,7 +24,7 @@
         }
       },
       "name": "Адское золото",
-      "text": "Nether Gold replaces netherrack, and is common. Beneath lava, there is more gold, and richer.",
+      "text": "Незер-золото заменяет незерак и часто встречается. Под лавой золота больше и оно богаче.",
       "enable_visualize": false
     },
     {
@@ -44,7 +44,7 @@
         }
       },
       "name": "Cursecoal",
-      "text": "Cursecoal is a powerful $(l:beneath/hellforge)fuel$(). It replaces netherrack above level 80.",
+      "text": "Антрацит это мощное $(l:beneath/hellforge)fuel$(). Он заменяет незерак выше 80 высоты.",
       "enable_visualize": false
     },
     {
@@ -64,7 +64,7 @@
         }
       },
       "name": "Каменная соль",
-      "text": "Sylvite replaces basalt at any level.",
+      "text": "Каменная соль заменяет базальт на любом уровне.",
       "enable_visualize": false
     },
     {
@@ -84,7 +84,7 @@
         }
       },
       "name": "Незер-кварц",
-      "text": "Nether Quartz replaces netherrack at all levels, and is common.",
+      "text": "Незер-кварц заменяет незерак на любом уровне, и часто встречается.",
       "enable_visualize": false
     },
     {

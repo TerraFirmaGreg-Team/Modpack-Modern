@@ -328,6 +328,7 @@
   "tooltip.framedblocks.one_way_window.face_abbr.up": "上",
   "tooltip.framedblocks.one_way_window.face_abbr.west": "西",
   "tooltip.framedblocks.one_way_window.set_face": "使用框架扳手敲击以将透视面设为%s",
+  "tooltip.framedblocks.powered_saw.energy": "%s / %s FE",
   "tooltip.framedblocks.powered_saw.status.no_recipe": "未选择配方，点击目标格并放入任意框架方块以选择配方",
   "tooltip.framedblocks.prism_offset.false": "三角纹理未偏移。",
   "tooltip.framedblocks.prism_offset.true": "三角纹理偏移了半个方块。",

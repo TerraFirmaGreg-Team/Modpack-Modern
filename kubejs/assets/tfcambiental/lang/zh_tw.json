@@ -30,7 +30,9 @@
 	"item.tfcambiental.wool_sweater": "羊毛毛衣",
 	"tfcambiental.house_tester.description": "右鍵查看當前位置被視為室內或室外",
 	"tfcambiental.message.is_inside": "你在室內",
+	"tfcambiental.message.is_inside_alt": "Your outsides are inside",
 	"tfcambiental.message.is_outside": "你在室外",
+	"tfcambiental.message.is_outside_alt": "Your insides are outside",
 	"tfcambiental.tooltip.insulation": "隔熱值: %s",
 	"tfcambiental.tooltip.sun_protection": "保護免受陽光直射",
 	"tfcambiental.tooltip.warmth": "溫暖度: %s"

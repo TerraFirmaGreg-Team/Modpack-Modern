@@ -64,6 +64,7 @@
   "tfcgenviewer.narration.info_pane.title": "Painel de informações",
   "tfcgenviewer.narration.preview_pane.title": "Painel de pré-visualização",
   "tfcgenviewer.preview_world.invalid_generator": "O gerador de chunks atual para o mundo não é do TFC, por favor mude o tipo de mundo",
+  "tfcgenviewer.preview_world.km": "%s km",
   "tfcgenviewer.preview_world.no_tooltip_available": "Nenhuma dica disponível",
   "tfcgenviewer.preview_world.preview_info": "Gerou %s regiões em %s segundos\nDimensões: %s km x %s km\nCentralizado em: (%s,%s)\nVisualizador: %s\n\nChave de Cor:\n%s",
   "tfcgenviewer.preview_world.preview_info.error": "Ocorreu um erro durante a geração\n\nPor favor, verifique o log, reporte o erro e reinicie o gerador com uma semente diferente",

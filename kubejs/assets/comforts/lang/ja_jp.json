@@ -45,5 +45,7 @@
   "block.comforts.sleeping_bag_yellow": "黄色の寝袋",
   "capability.comforts.not_sleepy": "まだ眠気を感じていないので眠れません",
   "gui.comforts.config.autoUse.description": "有効な場合、寝袋を設置した際に自動で使用します。",
-  "gui.comforts.config.autoUse.name": "自動的に寝袋を使用"
+  "gui.comforts.config.autoUse.name": "自動的に寝袋を使用",
+  "itemGroup.comforts": "Comforts",
+  "itemGroup.comforts.general": "Comforts"
 }

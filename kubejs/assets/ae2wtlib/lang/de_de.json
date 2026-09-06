@@ -1,5 +1,6 @@
 {
 	"chat.ae2wtlib.NetworkNotPowered": "Netzwerk hat keine Energie",
+	"gui.ae2wtlib.blacklist": "Blacklist",
 	"gui.ae2wtlib.copy_insert": "Zu Einfügefilter kopieren",
 	"gui.ae2wtlib.copy_pickup": "Zu Aufsammelfilter kopieren",
 	"gui.ae2wtlib.creativetab": "AE2 Drahtlose Zugangskonsolen (AE2WTLib)",
@@ -22,6 +23,7 @@
 	"gui.ae2wtlib.slot.magnetcard.desc": "Magnet Karte",
 	"gui.ae2wtlib.switch": "Filter tauschen",
 	"gui.ae2wtlib.trash": "Müll",
+	"gui.ae2wtlib.whitelist": "Whitelist",
 	"gui.ae2wtlib.wireless_terminal_settings_title": "Drahtloskonsoleneinstellung",
 	"item.ae2wtlib.magnet_card": "Magnet Karte",
 	"item.ae2wtlib.magnet_card.desc": "Magnet Upgrade für die Drahtlose Fertigungskonsole",

@@ -2,5 +2,8 @@
   "ftblibrary.client_settings": "Client-Konfiguration",
   "ftblibrary.empty": "Leer",
   "ftblibrary.mb": "%d mB von %s",
-  "gui.inactive": "Inaktiv"
+  "gui.blacklist": "Blacklist",
+  "gui.inactive": "Inaktiv",
+  "gui.offline": "Offline",
+  "gui.whitelist": "Whitelist"
 }
