@@ -368,19 +368,19 @@ function registerImmersiveVehiclesRecipes(event) {
 	}).id('mts:mtsofficialpack.sparkplug')
 
 	event.recipes.gtceu.assembler('mts:mtsofficialpack.sparkplug_lv')
-		.itemInputs('tfg:spark_plug_casing', '2x #forge:bolts/copper', '2x #forge:foils/steel', '#forge:rings/steel', '#forge:single_cables/tin', '#forge:rods/invar')
+		.itemInputs('tfg:spark_plug_casing', '2x #forge:bolts/copper', '2x #forge:foils/steel', '#forge:rings/steel', '#forge:fine_wires/tin', '#forge:rods/invar')
 		.itemOutputs('mts:mtsofficialpack.sparkplug')
 		.duration(60)
 		.EUt(GTValues.VA[GTValues.LV])
 
 	event.recipes.gtceu.assembler('mts:mtsofficialpack.sparkplug_mv')
-		.itemInputs('2x tfg:spark_plug_casing', '2x #forge:bolts/chromium', '2x #forge:foils/aluminium', '#forge:rings/aluminium', '#forge:single_cables/copper', '#forge:rods/cupronickel')
+		.itemInputs('2x tfg:spark_plug_casing', '2x #forge:bolts/chromium', '2x #forge:foils/aluminium', '#forge:rings/aluminium', '#forge:fine_wires/copper', '#forge:rods/cupronickel')
 		.itemOutputs('2x mts:mtsofficialpack.sparkplug')
 		.duration(60)
 		.EUt(GTValues.VA[GTValues.MV])
 
 	event.recipes.gtceu.assembler('mts:mtsofficialpack.sparkplug_hv')
-		.itemInputs('4x tfg:spark_plug_casing', '2x #forge:bolts/platinum', '2x #forge:foils/stainless_steel', '#forge:rings/stainless_steel', '#forge:single_cables/gold', '#forge:rods/nichrome')
+		.itemInputs('4x tfg:spark_plug_casing', '2x #forge:bolts/platinum', '2x #forge:foils/stainless_steel', '#forge:rings/stainless_steel', '#forge:fine_wires/gold', '#forge:rods/nichrome')
 		.itemOutputs('4x mts:mtsofficialpack.sparkplug')
 		.duration(60)
 		.EUt(GTValues.VA[GTValues.HV])
