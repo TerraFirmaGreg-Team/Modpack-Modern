@@ -33,7 +33,7 @@ function registerImmersiveVehiclesRecipes(event) {
 	registerImmersiveVehiclesPartsRecipes(event);
 	registerImmersiveVehiclesGunsRecipes(event);
 
-	event.shaped('tfg:automotive_workshop', [
+	event.recipes.gtceu.shaped('tfg:automotive_workshop', [
 		'CDE',
 		'BAB',
 		'CDC'
@@ -44,6 +44,7 @@ function registerImmersiveVehiclesRecipes(event) {
 		D: '#gtceu:circuits/lv',
 		E: 'mts:mts.fuelhose'
 	}).id('tfg:shaped/automotive_workshop')
+	.addMaterialInfo(true)
 
 
 	// #region Refuellers/automation
@@ -345,13 +346,13 @@ function registerImmersiveVehiclesRecipes(event) {
 		.EUt(GTValues.VA[GTValues.LV])
 
 	event.recipes.gtceu.assembler('mts:mtsofficialpack.sparkplug_mv')
-		.itemInputs('tfg:spark_plug_casing', '2x #forge:bolts/chromium', '2x #forge:foils/aluminium', '#forge:rings/aluminium', '#forge:single_cables/copper', '#forge:rods/cupronickel')
+		.itemInputs('2x tfg:spark_plug_casing', '2x #forge:bolts/chromium', '2x #forge:foils/aluminium', '#forge:rings/aluminium', '#forge:single_cables/copper', '#forge:rods/cupronickel')
 		.itemOutputs('2x mts:mtsofficialpack.sparkplug')
 		.duration(60)
 		.EUt(GTValues.VA[GTValues.MV])
 
 	event.recipes.gtceu.assembler('mts:mtsofficialpack.sparkplug_hv')
-		.itemInputs('tfg:spark_plug_casing', '2x #forge:bolts/platinum', '2x #forge:foils/stainless_steel', '#forge:rings/stainless_steel', '#forge:single_cables/gold', '#forge:rods/nichrome')
+		.itemInputs('4x tfg:spark_plug_casing', '2x #forge:bolts/platinum', '2x #forge:foils/stainless_steel', '#forge:rings/stainless_steel', '#forge:single_cables/gold', '#forge:rods/nichrome')
 		.itemOutputs('4x mts:mtsofficialpack.sparkplug')
 		.duration(60)
 		.EUt(GTValues.VA[GTValues.HV])
@@ -372,13 +373,19 @@ function registerImmersiveVehiclesRecipes(event) {
 
 	// Headlights
 
-	event.recipes.gtceu.assembler('mts:mtsofficialpack.headlight')
+	event.recipes.gtceu.assembler('mts:mtsofficialpack.headlight_silver')
 		.itemInputs('2x #forge:foils/silver', '#forge:glass', '#forge:single_cables/tin')
 		.inputFluids(Fluid.of('gtceu:glowstone', 144))
 		.itemOutputs('mts:mtsofficialpack.headlight')
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.LV])
-		.addMaterialInfo(true)
+
+	event.recipes.gtceu.assembler('mts:mtsofficialpack.headlight_platinum')
+		.itemInputs('2x #forge:foils/platinum', '#forge:glass', '#forge:single_cables/gold')
+		.inputFluids(Fluid.of('gtceu:glowstone', 144))
+		.itemOutputs('4x mts:mtsofficialpack.headlight')
+		.duration(100)
+		.EUt(GTValues.VA[GTValues.LV])
 
 	// #endregion
 }
