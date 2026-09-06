@@ -33,6 +33,18 @@ function registerImmersiveVehiclesRecipes(event) {
 	registerImmersiveVehiclesPartsRecipes(event);
 	registerImmersiveVehiclesGunsRecipes(event);
 
+	event.shaped('tfg:automotive_workshop', [
+		'CDE',
+		'BAB',
+		'CDC'
+	], {
+		A: 'gtceu:lv_machine_hull',
+		B: 'gtceu:lv_robot_arm',
+		C: '#forge:single_cables/tin',
+		D: '#gtceu:circuits/lv',
+		E: 'mts:mts.fuelhose'
+	}).id('tfg:shaped/automotive_workshop')
+
 
 	// #region Refuellers/automation
 	event.shaped('mts:mts.fuelpump', [
@@ -357,6 +369,16 @@ function registerImmersiveVehiclesRecipes(event) {
 		.itemOutputs('tfg:spark_plug_casing')
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.LV])
+
+	// Headlights
+
+	event.recipes.gtceu.assembler('mts:mtsofficialpack.headlight')
+		.itemInputs('2x #forge:foils/silver', '#forge:glass', '#forge:single_cables/tin')
+		.inputFluids(Fluid.of('gtceu:glowstone', 144))
+		.itemOutputs('mts:mtsofficialpack.headlight')
+		.duration(100)
+		.EUt(GTValues.VA[GTValues.LV])
+		.addMaterialInfo(true)
 
 	// #endregion
 }
