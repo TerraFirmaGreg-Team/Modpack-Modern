@@ -6,7 +6,7 @@
 	"block.fluidlogistics.fluid_hatch.tooltip.behaviour2": "Спочатку заповнює рідинний контейнер у руці з бака. Якщо його неможливо заповнити, рідина з нього натомість зливається в бак.",
 	"block.fluidlogistics.fluid_hatch.tooltip.condition1": "Коли клацнута ПКМ",
 	"block.fluidlogistics.fluid_hatch.tooltip.condition2": "При натисканні ПКМ у присіданні",
-	"block.fluidlogistics.fluid_hatch.tooltip.summary": "Дає змогу легко взаємодіяти з вашим баком за допомогою рідинних контейнерів.",
+	"block.fluidlogistics.fluid_hatch.tooltip.summary": "_Дає змогу_ легко взаємодіяти з _твоїм_ баком за допомогою _контейнерів для рідин_ .",
 	"block.fluidlogistics.fluid_packager": "Пакувальник рідин",
 	"block.fluidlogistics.fluid_repackager": "Розпаковувач",
 	"block.fluidlogistics.horizontal_multi_fluid_tank": "Горизонтальний багаторідинний бак",

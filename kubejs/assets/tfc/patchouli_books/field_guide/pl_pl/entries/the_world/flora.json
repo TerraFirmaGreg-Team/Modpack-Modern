@@ -277,7 +277,7 @@
           "Y": "tfc:plant/cattail[part=lower,fluid=water]"
         }
       },
-      "name": "Tall Water Plant",
+      "name": "Wysoka roślina wodna",
       "text": "Tall water plants can grow with just the bottom block in water. $(thing)Water Taro$() and $()Cattail$() can be broken with a $(thing)Knife$() for $(thing)Roots$().",
       "enable_visualize": false
     },
