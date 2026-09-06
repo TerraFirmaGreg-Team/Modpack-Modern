@@ -405,16 +405,18 @@ function registerTFGMultiblockRecipes(event) {
 		.addMaterialInfo(true)
 
 	// Heat Pump
-	event.recipes.gtceu.shaped('tfg:heat_pump', [
-		'APA',
-		'PBP',
-		'CPC'
-	], {
-		A: 'gtceu:filter_casing',
-		P: 'gtceu:mv_electric_pump',
-		B: 'gtceu:mv_machine_hull',
-		C: '#gtceu:circuits/mv'
-	}).addMaterialInfo().id('tfg:shaped/heat_pump')
+	event.recipes.gtceu.assembler('tfg:assembler/heat_pump')
+		.itemInputs(
+			'2x gtceu:filter_casing',
+			'2x gtceu:mv_electric_pump',
+			'2x #gtceu:circuits/mv',
+			'gtceu:mv_machine_hull'
+		)
+		.inputFluids(Fluid.of('tfg:chlorodifluoromethane', 6000))
+		.itemOutputs('1x tfg:heat_pump')
+		.duration(200)
+		.addMaterialInfo(true)
+		.EUt(GTValues.VA[GTValues.LV])
 
 	// Oxygen Distributor
 	event.recipes.gtceu.shaped('tfg:oxygen_distributor', [
