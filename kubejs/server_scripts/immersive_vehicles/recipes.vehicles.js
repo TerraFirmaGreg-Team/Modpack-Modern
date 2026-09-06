@@ -827,4 +827,151 @@ function registerImmersiveVehiclesVehicleRecipes(event) {
 	})
 
 	// #endregion
+
+	// #region Trailers
+
+	event.recipes.gtceu.automotive_workshop('mts:mtsofficialpack.brigbedbox')
+		.itemInputs('16x #forge:plates/steel', '2x #forge:frames/steel', '2x #minecraft:doors')
+		.itemOutputs('mts:mtsofficialpack.brigbedbox')
+		.EUt(GTValues.VA[GTValues.LV])
+		.duration(20 * 20)
+		.circuit(20)
+		.addMaterialInfo(true)
+
+	event.recipes.gtceu.automotive_workshop('mts:mtsofficialpack.brigbeddump')
+		.itemInputs('6x #forge:plates/steel', '2x #forge:frames/steel')
+		.itemOutputs('mts:mtsofficialpack.brigbeddump')
+		.EUt(GTValues.VA[GTValues.LV])
+		.duration(20 * 20)
+		.circuit(21)
+		.addMaterialInfo(true)
+
+	event.recipes.gtceu.automotive_workshop('mts:mtsofficialpack.brigbedflat')
+		.itemInputs('8x #minecraft:planks', '4x #forge:plates/steel')
+		.itemOutputs('mts:mtsofficialpack.brigbedflat')
+		.EUt(GTValues.VA[GTValues.LV])
+		.duration(20 * 20)
+		.addMaterialInfo(true)
+		
+	event.recipes.gtceu.automotive_workshop('mts:mtsofficialpack.brigbedlogs')
+		.itemInputs('2x #forge:plates/steel', '4x #forge:rods/long/steel')
+		.itemOutputs('mts:mtsofficialpack.brigbedlogs')
+		.EUt(GTValues.VA[GTValues.LV])
+		.duration(20 * 20)
+		.circuit(22)
+		.addMaterialInfo(true)
+
+	event.recipes.gtceu.automotive_workshop('mts:mtsofficialpack.brigbedstake')
+		.itemInputs('mts:mtsofficialpack.brigbedflat', '16x #tfc:lumber')
+		.itemOutputs('mts:mtsofficialpack.brigbedstake')
+		.EUt(GTValues.VA[GTValues.LV])
+		.duration(10 * 20)
+		.addMaterialInfo(true)
+		
+	const brig_tankers = [
+		{ suffix: 'blackred', dye: 'black' },
+		{ suffix: 'blank', dye: 'white' },
+		{ suffix: 'blueorange', dye: 'blue' },
+		{ suffix: 'greenred', dye: 'green' },
+		{ suffix: 'grey', dye: 'gray' }
+	];
+	brig_tankers.forEach(tanker => {
+		event.recipes.gtceu.automotive_workshop(`mts:mtsofficialpack.brigbedtanker_${tanker.suffix}`)
+			.itemInputs('2x gtceu:steel_drum', '#forge:frames/steel')
+			.inputFluids(Fluid.of(`tfc:${tanker.dye}_dye`, 4 * 144))
+			.itemOutputs(`mts:mtsofficialpack.brigbedtanker_${tanker.suffix}`)
+			.EUt(GTValues.VA[GTValues.LV])
+			.duration(20 * 20)
+			.addMaterialInfo(true)
+	})
+
+	const brig_transports = [
+		{ suffix: '', dye: 'gray' },
+		{ suffix: '_brown', dye: 'white' },
+		{ suffix: '_green', dye: 'green' },
+		{ suffix: '_tan', dye: 'black' }
+	];
+	brig_transports.forEach(transport => {
+		event.recipes.gtceu.automotive_workshop(`mts:mtsofficialpack.brigbedtransport${transport.suffix}`)
+			.itemInputs('2x #forge:frames/steel', '2x #forge:plates/steel', '6x #forge:cloth')
+			.inputFluids(Fluid.of(`tfc:${transport.dye}_dye`, 4 * 144))
+			.itemOutputs(`mts:mtsofficialpack.brigbedtanker_${transport.suffix}`)
+			.EUt(GTValues.VA[GTValues.LV])
+			.duration(20 * 20)
+			.addMaterialInfo(true)
+	})
+	
+	event.recipes.gtceu.automotive_workshop('mts:belroftmotors.boat_trailer')
+		.itemInputs('8x #forge:rods/steel', '2x #forge:rods/long/steel', '2x #forge:plates/steel')
+		.itemOutputs('mts:belroftmotors.boat_trailer')
+		.EUt(GTValues.VA[GTValues.LV])
+		.duration(20 * 20)
+		.circuit(23)
+		.addMaterialInfo(true)
+	
+	event.recipes.gtceu.automotive_workshop('mts:belroftmotors.trailer_cars')
+		.itemInputs('8x #forge:rods/steel', '4x #forge:rods/long/steel', '4x #forge:plates/steel')
+		.itemOutputs('mts:belroftmotors.trailer_cars')
+		.EUt(GTValues.VA[GTValues.LV])
+		.duration(20 * 20)
+		.circuit(24)
+		.addMaterialInfo(true)
+	
+	event.recipes.gtceu.automotive_workshop('mts:belroftmotors.trailer_trucks')
+		.itemInputs('8x #forge:rods/steel', '6x #forge:rods/long/steel', '6x #forge:plates/steel')
+		.itemOutputs('mts:belroftmotors.trailer_trucks')
+		.EUt(GTValues.VA[GTValues.LV])
+		.duration(20 * 20)
+		.circuit(25)
+		.addMaterialInfo(true)
+		
+
+	const dry_vans = [
+		{ suffix: 'black', dye: 'black', alt: 0 },
+		{ suffix: 'blue', dye: 'blue', alt: 0 },
+		{ suffix: 'brown', dye: 'brown', alt: 0 },
+		{ suffix: 'cherry_red', dye: 'red', alt: 1 },
+		{ suffix: 'copper', dye: 'orange', alt: 0 },
+		{ suffix: 'cyan', dye: 'cyan', alt: 0 },
+		{ suffix: 'emerald', dye: 'green', alt: 0 },
+		{ suffix: 'gray', dye: 'gray', alt: 0 },
+		{ suffix: 'green', dye: 'lime', alt: 0 },
+		{ suffix: 'khaki', dye: 'light_gray', alt: 0 },
+		{ suffix: 'marine', dye: 'cyan', alt: 1 },
+		{ suffix: 'olive', dye: 'green', alt: 1 },
+		{ suffix: 'purple', dye: 'purple', alt: 0 },
+		{ suffix: 'red', dye: 'red', alt: 0 },
+		{ suffix: 'tan', dye: 'yellow', alt: 0 },
+		{ suffix: 'white', dye: 'white', alt: 0 },
+		{ suffix: 'yellow', dye: 'yellow', alt: 0 },
+	];
+	dry_vans.forEach(dry_van => {
+		event.recipes.gtceu.automotive_workshop(`mts:belroftmotors.trailer_dry_van_${dry_van.suffix}`)
+			.itemInputs(
+				'16x #forge:plates/aluminium', '16x #forge:plates/aluminium', '4x #forge:frames/aluminium',
+				'2x #minecraft:doors', '8x mts:mtsofficialpack.wheellarge')
+			.inputFluids(
+				Fluid.of('gtceu:soldering_alloy', 4 * 144),
+				Fluid.of(`tfc:${dry_van.dye}_dye`, 8 * 144))
+			.itemOutputs(`mts:belroftmotors.trailer_dry_van_${dry_van.suffix}`)
+			.EUt(GTValues.VA[GTValues.MV])
+			.duration(20 * 20)
+			.circuit(20 + dry_van.alt)
+			.addMaterialInfo(true)
+
+		event.recipes.gtceu.automotive_workshop(`mts:belroftmotors.trailer_tanker_${dry_van.suffix}`)
+			.itemInputs(
+				'2x gtceu:aluminium_drum', '16x #forge:plates/aluminium', '4x #forge:plates/aluminium',
+				'4x #forge:frames/aluminium', 'create:fluid_valve', '8x mts:mtsofficialpack.wheellarge')
+			.inputFluids(
+				Fluid.of('gtceu:soldering_alloy', 4 * 144),
+				Fluid.of(`tfc:${dry_van.dye}_dye`, 8 * 144))
+			.itemOutputs(`mts:belroftmotors.trailer_tanker_${dry_van.suffix}`)
+			.EUt(GTValues.VA[GTValues.MV])
+			.duration(20 * 20)
+			.circuit(22 + dry_van.alt)
+			.addMaterialInfo(true)
+	})
+
+	// #endregion
 }
