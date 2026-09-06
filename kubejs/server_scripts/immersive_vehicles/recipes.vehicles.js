@@ -832,6 +832,7 @@ function registerImmersiveVehiclesVehicleRecipes(event) {
 
 	event.recipes.gtceu.automotive_workshop('mts:mtsofficialpack.brigbedbox')
 		.itemInputs('16x #forge:plates/steel', '2x #forge:frames/steel', '2x #minecraft:doors')
+		.inputFluids(Fluid.of('gtceu:soldering_alloy', 4 * 144))
 		.itemOutputs('mts:mtsofficialpack.brigbedbox')
 		.EUt(GTValues.VA[GTValues.LV])
 		.duration(20 * 20)
@@ -877,11 +878,14 @@ function registerImmersiveVehiclesVehicleRecipes(event) {
 	];
 	brig_tankers.forEach(tanker => {
 		event.recipes.gtceu.automotive_workshop(`mts:mtsofficialpack.brigbedtanker_${tanker.suffix}`)
-			.itemInputs('2x gtceu:steel_drum', '#forge:frames/steel')
-			.inputFluids(Fluid.of(`tfc:${tanker.dye}_dye`, 4 * 144))
+			.itemInputs('16x #forge:plates/steel', '16x #forge:plates/steel', '2x #forge:frames/steel', 'create:fluid_valve')
+			.inputFluids(
+				Fluid.of('gtceu:soldering_alloy', 4 * 144),
+				Fluid.of(`tfc:${tanker.dye}_dye`, 4 * 144))
 			.itemOutputs(`mts:mtsofficialpack.brigbedtanker_${tanker.suffix}`)
 			.EUt(GTValues.VA[GTValues.LV])
 			.duration(20 * 20)
+			.circuit(23)
 			.addMaterialInfo(true)
 	})
 
@@ -894,8 +898,10 @@ function registerImmersiveVehiclesVehicleRecipes(event) {
 	brig_transports.forEach(transport => {
 		event.recipes.gtceu.automotive_workshop(`mts:mtsofficialpack.brigbedtransport${transport.suffix}`)
 			.itemInputs('2x #forge:frames/steel', '2x #forge:plates/steel', '6x #forge:cloth')
-			.inputFluids(Fluid.of(`tfc:${transport.dye}_dye`, 4 * 144))
-			.itemOutputs(`mts:mtsofficialpack.brigbedtanker_${transport.suffix}`)
+			.inputFluids(
+				Fluid.of('gtceu:soldering_alloy', 4 * 144),
+				Fluid.of(`tfc:${transport.dye}_dye`, 4 * 144))
+			.itemOutputs(`mts:mtsofficialpack.brigbedtransport${transport.suffix}`)
 			.EUt(GTValues.VA[GTValues.LV])
 			.duration(20 * 20)
 			.addMaterialInfo(true)
@@ -903,26 +909,29 @@ function registerImmersiveVehiclesVehicleRecipes(event) {
 	
 	event.recipes.gtceu.automotive_workshop('mts:belroftmotors.boat_trailer')
 		.itemInputs('8x #forge:rods/steel', '2x #forge:rods/long/steel', '2x #forge:plates/steel')
+		.inputFluids(Fluid.of('gtceu:soldering_alloy', 2 * 144))
 		.itemOutputs('mts:belroftmotors.boat_trailer')
-		.EUt(GTValues.VA[GTValues.LV])
-		.duration(20 * 20)
-		.circuit(23)
-		.addMaterialInfo(true)
-	
-	event.recipes.gtceu.automotive_workshop('mts:belroftmotors.trailer_cars')
-		.itemInputs('8x #forge:rods/steel', '4x #forge:rods/long/steel', '4x #forge:plates/steel')
-		.itemOutputs('mts:belroftmotors.trailer_cars')
 		.EUt(GTValues.VA[GTValues.LV])
 		.duration(20 * 20)
 		.circuit(24)
 		.addMaterialInfo(true)
 	
-	event.recipes.gtceu.automotive_workshop('mts:belroftmotors.trailer_trucks')
-		.itemInputs('8x #forge:rods/steel', '6x #forge:rods/long/steel', '6x #forge:plates/steel')
-		.itemOutputs('mts:belroftmotors.trailer_trucks')
+	event.recipes.gtceu.automotive_workshop('mts:belroftmotors.trailer_cars')
+		.itemInputs('8x #forge:rods/steel', '4x #forge:rods/long/steel', '4x #forge:plates/steel')
+		.inputFluids(Fluid.of('gtceu:soldering_alloy', 4 * 144))
+		.itemOutputs('mts:belroftmotors.trailer_cars')
 		.EUt(GTValues.VA[GTValues.LV])
 		.duration(20 * 20)
 		.circuit(25)
+		.addMaterialInfo(true)
+	
+	event.recipes.gtceu.automotive_workshop('mts:belroftmotors.trailer_trucks')
+		.itemInputs('8x #forge:rods/steel', '6x #forge:rods/long/steel', '6x #forge:plates/steel')
+		.inputFluids(Fluid.of('gtceu:soldering_alloy', 6 * 144))
+		.itemOutputs('mts:belroftmotors.trailer_trucks')
+		.EUt(GTValues.VA[GTValues.LV])
+		.duration(20 * 20)
+		.circuit(26)
 		.addMaterialInfo(true)
 		
 
@@ -961,7 +970,7 @@ function registerImmersiveVehiclesVehicleRecipes(event) {
 
 		event.recipes.gtceu.automotive_workshop(`mts:belroftmotors.trailer_tanker_${dry_van.suffix}`)
 			.itemInputs(
-				'2x gtceu:aluminium_drum', '16x #forge:plates/aluminium', '4x #forge:plates/aluminium',
+				'16x #forge:plates/aluminium', '16x #forge:plates/aluminium', '16x #forge:plates/aluminium',
 				'4x #forge:frames/aluminium', 'create:fluid_valve', '8x mts:mtsofficialpack.wheellarge')
 			.inputFluids(
 				Fluid.of('gtceu:soldering_alloy', 4 * 144),

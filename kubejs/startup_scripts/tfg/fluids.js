@@ -37,4 +37,9 @@ const registerTFGFluids = (event) => {
 		.temperature(236)
 		.noBlock();
 
+	// Vehicle fluid
+	event.create('tfg:universal_vehicle_fuel')
+		.thinTexture(0xf2dca0)
+		.bucketColor(0xf2dca0)
+		.noBlock();
 };

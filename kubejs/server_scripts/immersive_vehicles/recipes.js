@@ -44,7 +44,35 @@ function registerImmersiveVehiclesRecipes(event) {
 		D: '#gtceu:circuits/lv',
 		E: 'mts:mts.fuelhose'
 	}).id('tfg:shaped/automotive_workshop')
-	.addMaterialInfo(true)
+	.addMaterialInfo()
+
+	const fuels = [
+		{ name: 'syngas', fluid: 'tfg:syngas', eut: 128, makes_boosted: false },
+		{ name: 'lpg', fluid: 'gtceu:lpg', eut: 320, makes_boosted: false },
+		{ name: 'reformate', fluid: 'tfg:reformate_gas', eut: 384, makes_boosted: false },
+		{ name: 'btx', fluid: 'tfg:btx_fuel', eut: 1824, makes_boosted: true },
+		{ name: 'ethanol', fluid: 'gtceu:ethanol', eut: 192, makes_boosted: false },
+		{ name: 'diesel', fluid: 'gtceu:diesel', eut: 384, makes_boosted: false },
+		{ name: 'biodiesel', fluid: 'gtceu:bio_diesel', eut: 256, makes_boosted: false },
+		{ name: 'cetane', fluid: 'gtceu:cetane_boosted_diesel', eut: 1024, makes_boosted: true },
+		{ name: 'gasoline', fluid: 'gtceu:gasoline', eut: 1600, makes_boosted: true },
+		{ name: 'hog', fluid: 'gtceu:high_octane_gasoline', eut: 3200, makes_boosted: true },
+	];
+	fuels.forEach(fuel => {
+		event.recipes.gtceu.brewery(`tfg:${fuel.name}_to_vehicle_fuel`)
+			.inputFluids(Fluid.of(fuel.fluid, 100))
+			.outputFluids(Fluid.of('tfg:universal_vehicle_fuel', fuel.eut * 2))
+			.duration(50)
+			.EUt(16)
+
+		//if (fuel.makes_boosted) {
+		//	event.recipes.gtceu.brewery(`tfg:${fuel.name}_to_boosted_vehicle_fuel`)
+		//		.inputFluids(Fluid.of(fuel.fluid, 100))
+		//		.outputFluids(Fluid.of('tfg:universal_turbo_vehicle_fuel', fuel.eut * 1.2))
+		//		.duration(50)
+		//		.EUt(16)
+		//}
+	})
 
 
 	// #region Refuellers/automation
