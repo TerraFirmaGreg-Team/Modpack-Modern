@@ -399,6 +399,4 @@ const registerGTCEuMachines = (event) => {
 			'gtceu:block/casings/solid/machine_casing_solid_steel',
 			'gtceu:block/multiblock/distillation_tower')
 
-	//#endregion
-
 }

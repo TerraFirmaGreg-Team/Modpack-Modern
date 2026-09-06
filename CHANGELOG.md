@@ -2,6 +2,13 @@
 
 ## Unreleased
 ### Breaking Changes
+
+### Oxygen Rework
+- Completely reworked Ad Astra's oxygenation mechanics and replaced them with our own native system. (#4931) @Mqrius
+- Added the Oxygen Distributor multiblock to replace Ad Astra's Air Distributor. This one oxygenates an entire enclosed room instead of just a small area around it. @Mqrius
+- Added the Higgs Emitter multiblock to replace Ad Astra's Gravity Normalizer with a significantly larger area of effect. @ashleney
+- Added the Heat Pump multiblock, when built into an outer wall it will regulate the temperature of a large room. @ashleney
+
 ### Bug fixes
 
 ## [0.13.9] - 29-08-2026
