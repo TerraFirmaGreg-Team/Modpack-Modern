@@ -45,7 +45,7 @@
     },
     {
       "type": "patchouli:image",
-      "title": "Piloting",
+      "title": "Sterowanie",
       "images": [
         "firmaciv:textures/gui/book/piloting.png"
       ],
@@ -53,7 +53,7 @@
     },
     {
       "type": "patchouli:text",
-      "title": "Paddles and Oars",
+      "title": "Pagaje i wiosła",
       "text": "If you feel like your boat is moving slowly, double check that you're holding the appropriate paddle item, or, if your boat requires oars, that the oars have been equipped to the oarlocks. In some boats, multiple players are able to paddle or row to make the boat go faster."
     },
     {
@@ -64,7 +64,7 @@
     },
     {
       "type": "patchouli:text",
-      "title": "Cleats and Leads",
+      "title": "Knagi i smycze",
       "text": "Most boats have at least one cleat on them. You can attach a lead to the cleat and use it to pull the boat, and pull small boats up onto the shoreline and up slabs. Leads can also be used to attach boats to fences, and attaching two cleats each to a fence will allow you to easily dock larger boats. You'll find yourself wanting to use leads extensively to stop your boats from drifting away!"
     },
     {
@@ -76,7 +76,7 @@
     },
     {
       "type": "patchouli:text",
-      "title": "Anchors and Windlasses",
+      "title": "Kotwice i kołowroty",
       "text": "Large boats have anchors, which can be used to completely stop the boat, provided the anchor is seated in the seafloor and no sails are deployed. The boat will still turn in the wind while it's at anchor. Look for the anchor icon located at the windlass (anchor winch) and press $(item)$(k:key.use)$() to lower and raise the anchor."
     },
     {
@@ -115,7 +115,7 @@
     },
     {
       "type": "patchouli:text",
-      "title": "Painting and Dyeing",
+      "title": "Malowanie i barwienie",
       "text": "Any boat constructed using Shipwright's Scaffolding can be painted, and any sail can be individually dyed. Simply hold a dye item in your hand and press $(item)$(k:key.use)$() when you see the paint brush icon to either paint a hull or dye a sail. Larger boats have unique patterns for each paint color."
     },
     {

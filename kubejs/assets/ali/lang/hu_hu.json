@@ -1,5 +1,20 @@
 {
 	"ali.property.value.name": "Név: %s",
 	"ali.property.value.range": "Hatótáv: %s",
-	"ali.property.value.size": "Méret: %s"
+	"ali.property.value.size": "Méret: %s",
+	"ali.enum.dye_color.brown": "Barna",
+	"ali.enum.dye_color.cyan": "Türkizkék",
+	"ali.enum.dye_color.gray": "Szürke",
+	"ali.enum.dye_color.green": "Zöld",
+	"ali.enum.dye_color.light_blue": "Világoskék",
+	"ali.enum.dye_color.light_gray": "Világosszürke",
+	"ali.enum.dye_color.lime": "Égetett mész",
+	"ali.enum.dye_color.magenta": "Bíbor",
+	"ali.enum.dye_color.orange": "Narancs",
+	"ali.enum.dye_color.pink": "Rózsaszín",
+	"ali.enum.dye_color.red": "Vörös",
+	"ali.enum.dye_color.white": "Fehér",
+	"ali.enum.dye_color.yellow": "Sárgaizzás",
+	"ali.enum.equipment_slot.chest": "Láda",
+	"ali.type.entry.empty": "Üres"
 }

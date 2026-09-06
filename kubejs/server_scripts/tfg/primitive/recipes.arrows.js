@@ -42,26 +42,11 @@ function registerTFGArrowRecipes(event) {
 		.EUt(GTValues.VA[GTValues.ULV])
 
 	// Feathers
-	event.recipes.tfc.damage_inputs_shapeless_crafting(
-		event.shapeless('4x tfg:fletching', [
-			['minecraft:feather', 'tfg:wraptor_wool', 'wan_ancient_beasts:glider_feather'],
-			'#forge:tools/knives'
-		]).id('tfg:shapeless/fletching'))
+	event.shapeless('4x tfg:fletching', ['#tfg:feathers', '#forge:tools/knives'])
+		.id('tfg:shapeless/fletching')
 
 	event.recipes.gtceu.cutter('tfg:assembler/fletching')
-		.itemInputs('1x minecraft:feather')
-		.itemOutputs('4x tfg:fletching')
-		.duration(20)
-		.EUt(GTValues.VA[GTValues.ULV])
-
-	event.recipes.gtceu.cutter('tfg:assembler/wraptor_feather_fletching')
-		.itemInputs('1x tfg:wraptor_wool')
-		.itemOutputs('4x tfg:fletching')
-		.duration(20)
-		.EUt(GTValues.VA[GTValues.ULV])
-
-	event.recipes.gtceu.cutter('tfg:assembler/glider_feather_fletching')
-		.itemInputs('1x wan_ancient_beasts:glider_feather')
+		.itemInputs('1x #tfg:feathers')
 		.itemOutputs('4x tfg:fletching')
 		.duration(20)
 		.EUt(GTValues.VA[GTValues.ULV])

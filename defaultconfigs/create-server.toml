@@ -443,7 +443,7 @@
 		#.
 		#Amount of game ticks between shots of the cannon. Higher => Slower
 		#Range: > 1
-		schematicannonDelay = 10
+		schematicannonDelay = 2
 		#.
 		#Amount of blocks a Schematicannon can print per Gunpowder item provided.
 		#Range: > 1

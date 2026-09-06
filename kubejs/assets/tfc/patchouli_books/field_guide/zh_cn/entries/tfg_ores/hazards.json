@@ -135,16 +135,16 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Carcinogens",
+			"title": "致癌物",
 			"item": "gtceu:benzene_bucket",
-			"anchor": "Carcinogens",
+			"anchor": "致癌物",
 			"text": "$(thing)致癌物$()是导致$(item)癌症$()的物质。它们包括$(thing)铬粉$()以及一些有机化合物，例如$(thing)苯及其产物$()。$(thing)致癌物$()$(item)不会自行消失$()，但在造成实际伤害之前会给出大量警告。开始时是$(item)虚弱$()，接着是$(item)饥饿$()，然后是$(item)缓慢$()，之后是$(item)挖掘疲劳$()。只有当累积到足够的暴露量时，才会导致$(item)死亡$()。"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"title": "致癌物",
 			"item": "gtceu:chromium_dust",
-			"anchor": "Carcinogens",
+			"anchor": "致癌物",
 			"text": "$(l:tfg_ores/hazards#mask)面罩$()可以防止吸入有害化学物质，而$(l:tfg_ores/hazards#gloves)手套$()可以防止接触$(thing)铬粉$()。$(br2)$(l:tfg_ores/hazards#hazmat)防化服$()则可以同时防护两者。$(br2)在严重暴露的情况下，建议服用一些$(l:tfg_ores/hazards#medicine)药品$()以$(thing)预防$()任何可能的伤害。"
 		},
 		{
@@ -156,9 +156,9 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Irritants",
+			"title": "刺激性物质",
 			"item": "gtceu:chromite_dust",
-			"anchor": "Irritants",
+			"anchor": "刺激性物质",
 			"text": "$(thing)刺激$()是由吸入$(thing)甲酸铵$()或皮肤接触$(thing)铬铁矿粉$()引起的。短暂接触只会导致$(item)虚弱$()，但如果忽略较长时间，则会开始$(item)随机造成伤害$()。$(br2)$(l:tfg_ores/hazards#mask)面罩$()可以防止吸入，而$(l:tfg_ores/hazards#gloves)手套$()可以防止直接皮肤接触。$(br2)$(l:tfg_ores/hazards#hazmat)防化服$()可以同时防护两者。"
 		},
 		{

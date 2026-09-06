@@ -27,7 +27,7 @@
         }
       },
       "name": "Lampy",
-      "text": "A lit lamp hanging from a chain.",
+      "text": "Zapalona lampa wisząca na łańcuchu.",
       "enable_visualize": false
     },
     {
@@ -44,7 +44,7 @@
     {
       "type": "patchouli:crafting",
       "recipe": "tfc:crafting/jute_net",
-      "text": "You will also need a jute net."
+      "text": "Potrzebna będzie również jutowa siatka"
     },
     {
       "type": "patchouli:text",

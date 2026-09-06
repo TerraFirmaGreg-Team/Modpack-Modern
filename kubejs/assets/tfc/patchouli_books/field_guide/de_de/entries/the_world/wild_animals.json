@@ -1,5 +1,5 @@
 {
-	"name": "Wild Animals",
+	"name": "Wildtiere",
 	"category": "tfc:the_world",
 	"icon": "tfc:medium_raw_hide",
 	"pages": [
@@ -15,7 +15,7 @@
 			"type": "patchouli:text",
 			"anchor": "predators",
 			"text": "$(thing)Predators$() are animals that can attack the player. They are either $(thing)Nocturnal$(), only hunting at night, or $(thing)Diurnal$(), only hunting during the day. Predators can be neutral or hostile, depending on if they have killed a target recently. Predators have a home territory that they will defend - if you run far enough away, the predator will stop chasing and return home.",
-			"title": "Predators"
+			"title": "Raubtiere"
 		},
 		{
 			"type": "patchouli:entity",
@@ -288,7 +288,7 @@
 		{
 			"type": "patchouli:entity",
 			"text": "Jellyfish live in warmer oceans, with a $(l:the_world/climate#temperature)temperature$() of at least 18°C.",
-			"title": "Shellfish",
+			"title": "Schalentier",
 			"entity": "tfc:jellyfish",
 			"scale": 0.7,
 			"name": "Qualle"
@@ -322,7 +322,7 @@
 		{
 			"type": "patchouli:text",
 			"text": "$(thing)Shellfish$() are small animals that live on the floor of bodies of water. They cannot be fished, but drop shells that can be eaten or made into $(l:mechanics/flux)flux$(). Shellfish can be $(l:mechanics/fishing)bait$() for fish.",
-			"title": "Shellfish",
+			"title": "Schalentier",
 			"anchor": "shellfish"
 		},
 		{
@@ -360,7 +360,7 @@
 		{
 			"type": "patchouli:text",
 			"text": "$(thing)Large Water Creatures$() are larger animals that live in the bigger bodies of water. Some of them hunt fish. They drop $(l:mechanics/lamps#tallow)blubber$(), which can be made into lamp fuel.",
-			"title": "Large Water Creatures"
+			"title": "Große Wasserkreaturen"
 		},
 		{
 			"type": "patchouli:entity",

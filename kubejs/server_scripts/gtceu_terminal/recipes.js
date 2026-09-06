@@ -6,7 +6,7 @@ function registerGTCEUTerminalRecipes(event) {
 
     // Gregtech CEu Terminals Integration
 
-	//event.remove({ id : 'gtceuterminal:dismantler' })
+	event.remove({ id : 'gtceuterminal:dismantler' })
 	event.shaped('1x gtceuterminal:dismantler', [
 		'ABA',
 		'CDC',

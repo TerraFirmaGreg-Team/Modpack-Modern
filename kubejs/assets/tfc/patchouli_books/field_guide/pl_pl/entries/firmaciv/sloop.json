@@ -109,7 +109,7 @@
           "a": "firmaciv:wood/watercraft_frame/flat/oak[frame_processed=3]"
         }
       },
-      "name": "Szkielet sloopa",
+      "name": "Rusztowanie sloopa",
       "text": "Four planks have been added to each scaffold.",
       "enable_visualize": true
     },
@@ -150,7 +150,7 @@
           "a": "firmaciv:wood/watercraft_frame/flat/oak[frame_processed=7]"
         }
       },
-      "name": "Szkielet sloopa",
+      "name": "Rusztowanie sloopa",
       "text": "Using a hammer in your offhand, add four copper bolts to each scaffold. Copper bolts are smithed from copper ingots.",
       "enable_visualize": true
     },
@@ -193,7 +193,7 @@
           "R": "alekiships:cleat[facing=south]"
         }
       },
-      "name": "Szkielet sloopa",
+      "name": "Rusztowanie sloopa",
       "text": "Finally, add the cleats to the hull. These are smithed from wrought iron double ingots.",
       "enable_visualize": true
     },

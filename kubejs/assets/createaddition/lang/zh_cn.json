@@ -1,4 +1,8 @@
 {
+	"attack.death.createaddition.barbed_wire": "%1$s 试图穿过铁丝网",
+	"attack.death.createaddition.barbed_wire.player": "%1$s 在与 %2$s 的战斗时试图穿过铁丝网",
+	"attack.death.createaddition.tesla_coil": "%1$s 遭到了致命电击",
+	"attack.death.createaddition.tesla_coil.player": "%1$s 在与 %2$s战斗时遭到了致命电击",
 	"block.createaddition.accumulator": "蓄电池",
 	"block.createaddition.accumulator.tooltip": "蓄电池",
 	"block.createaddition.accumulator.tooltip.behaviour1": "从连接到标有上箭头的_连接器_的_线缆_输出 _FE_ 能量",

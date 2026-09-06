@@ -253,5 +253,7 @@
 	"item.fluidlogistics.phantom_chain.tooltip.summary": "当_连接_传动轮时，只有手持_幻缈锁链_才能看见_传动轮_上的_锁链_",
 	"itemGroup.fluidlogistics.fluidlogistics_tab": "机械动力：流体包裹",
 	"logistically_linked.protected": "该物流网络受保护",
-	"resourcepack.fluidlogistics.cu_again_for_fluidlogistics": "流体包裹旧版本铜材质补丁"
+	"resourcepack.fluidlogistics.cu_again_for_fluidlogistics": "流体包裹旧版本铜材质补丁",
+	"fluidlogistics.configuration.section.fluidlogistics.common.toml": "流体包裹配置",
+	"fluidlogistics.configuration.section.fluidlogistics.common.toml.title": "流体包裹配置"
 }

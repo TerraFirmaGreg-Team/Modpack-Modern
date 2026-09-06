@@ -1,5 +1,5 @@
 {
-  "name": "Pits of Fire",
+  "name": "Ogniste jamy",
   "category": "tfc:getting_started",
   "icon": "tfc:firepit",
   "pages": [
@@ -46,7 +46,7 @@
       "images": [
         "tfc:textures/gui/book/gui/firepit.png"
       ],
-      "text": "The Firepit Screen",
+      "text": "Ekran ogniska",
       "border": false
     },
     {

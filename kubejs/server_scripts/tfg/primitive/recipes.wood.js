@@ -56,8 +56,8 @@ function registerTFGWoodRecipes(event) {
 
 	TREATED_WOOD_ITEMS.forEach(item => {
 		event.recipes.tfc.barrel_sealed(1000 * item.multiplier)
-			.outputItem(`${item.output}`)
-			.inputs(`${item.input}`, TFC.fluidStackIngredient('#forge:creosote', 25 * item.multiplier))
+			.outputItem(item.output)
+			.inputs(Ingredient.of(item.input).subtract(item.output), TFC.fluidStackIngredient('#forge:creosote', 25 * item.multiplier))
 			.id(`tfg:barrel/${global.linuxUnfucker(item.output)}`)
 	})
 

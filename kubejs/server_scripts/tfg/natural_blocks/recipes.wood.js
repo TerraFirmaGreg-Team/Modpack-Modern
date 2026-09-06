@@ -385,7 +385,7 @@ function registerTFGWoodenRecipes(event) {
 				'CCC',
 				'D D'
 			], {
-				A: 'minecraft:feather',
+				A: '#tfg:feathers',
 				B: 'minecraft:black_dye',
 				C: slab,
 				D: plank

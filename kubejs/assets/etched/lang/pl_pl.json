@@ -13,7 +13,7 @@
 	"item.etched.album_cover": "Okładka albumu",
 	"item.etched.blank_music_disc": "Pusta płyta muzyczna",
 	"item.etched.boombox": "Boombox",
-	"item.etched.boombox.pause": "%s + %s, żeby zapauzować",
+	"item.etched.boombox.pause": "%s + %s, aby zapauzować",
 	"item.etched.boombox.paused": "Wstrzymano",
 	"item.etched.boombox.records": "Nagrania:",
 	"item.etched.complex_music_label": "Złożona etykieta muzyki",
@@ -31,8 +31,11 @@
 	"screen.etched.edit_music_label.title": "Tytuł",
 	"screen.etched.etching_table.error.cannot_create": "Nie można utworzyć płyty",
 	"screen.etched.etching_table.error.cannot_create.missing_disc": "Brakuje pustej płyty",
+	"screen.etched.etching_table.error.cannot_create.missing_label": "Brakuje etykiety muzyki",
 	"screen.etched.etching_table.error.invalid_url": "Nieprawidłowy URL",
 	"sound_source.etched.bandcamp": "Dostarczone przez Bandcamp",
 	"sound_source.etched.radio": "Stacja radiowa",
-	"sound_source.etched.sound_cloud": "Dostarczone przez SoundCloud"
+	"sound_source.etched.requesting": "Żądanie z %s...",
+	"sound_source.etched.sound_cloud": "Dostarczone przez SoundCloud",
+	"subtitles.etched.ui.etching_table.take_result": "Użyto stołu do wytrawiania"
 }

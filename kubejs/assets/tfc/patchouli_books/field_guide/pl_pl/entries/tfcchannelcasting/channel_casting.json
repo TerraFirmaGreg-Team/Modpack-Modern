@@ -1,5 +1,5 @@
 {
-    "name": "Casting with Channels",
+    "name": "Odlewanie za pomocą kanałów",
     "category": "tfc:tfcchannelcasting",
     "icon": "tfcchannelcasting:channel",
     "pages": [
@@ -25,7 +25,7 @@
         {
             "type": "patchouli:multiblock",
             "multiblock_id": "tfcchannelcasting:example",
-            "name": "A casting set up",
+            "name": "Układ odlewniczy",
             "text": "",
             "enable_visualize": false
         },

@@ -39,6 +39,7 @@
 	"item.fowlplay.robin_spawn_egg": "知更鸟刷怪蛋",
 	"item.fowlplay.scarecrow": "稻草人",
 	"item.fowlplay.sparrow_spawn_egg": "麻雀刷怪蛋",
+	"soundCategory.fowlplay_birds": "鸟群",
 	"subtitles.entity.bird.eat": "鸟：进食",
 	"subtitles.entity.bird.flap": "翅膀：拍打",
 	"subtitles.entity.blue_jay.call": "蓝松鸦：啾啾",
@@ -91,5 +92,7 @@
 	"tag.item.fowlplay.pigeon_food": "鸽子食物",
 	"tag.item.fowlplay.raven_food": "渡鸦食物",
 	"tag.item.fowlplay.robin_food": "知更鸟食物",
-	"tag.item.fowlplay.sparrow_food": "麻雀食物"
+	"tag.item.fowlplay.sparrow_food": "麻雀食物",
+	"text.betterf3.line.fowlplay_ambient_birds": "环境鸟群",
+	"text.betterf3.line.fowlplay_birds": "鸟群"
 }

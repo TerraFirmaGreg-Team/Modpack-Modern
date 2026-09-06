@@ -46,6 +46,7 @@
 	"block.minecraft.infested_deepslate": "虫蚀混合岩",
 	"block.minecraft.iron_block": "铸铁块",
 	"block.minecraft.light_blue_wool": "淡蓝色布方块",
+	"block.minecraft.light_gray_wool": "淡灰色布方块",
 	"block.minecraft.light_grey_wool": "淡灰色布方块",
 	"block.minecraft.lime_wool": "黄绿色布方块",
 	"block.minecraft.loom": "旗帜织机",
@@ -148,5 +149,6 @@
 	"item.minecraft.smithing_template.armor_trim.additions_slot_description": "添加板或精致宝石",
 	"item.minecraft.string": "丝线",
 	"material.tfg.dripstone": "石灰华",
-	"tag.item.minecraft.wool": "布料块"
+	"tag.item.minecraft.wool": "布料块",
+	"tag.item.minecraft.wool_carpets": "地毯"
 }

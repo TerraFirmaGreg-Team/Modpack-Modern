@@ -147,5 +147,8 @@
 	"statusbar.createaddition.wire.long": "Wire is too long",
 	"statusbar.createaddition.wire.no_connection": "Wire not connected here",
 	"statusbar.createaddition.wire.removed": "Wire removed",
-	"statusbar.createaddition.wire.requires_high_current": "This connection requires a high current wire"
+	"statusbar.createaddition.wire.requires_high_current": "This connection requires a high current wire",
+	"block.createaddition.creative_energy": "Creative Generator",
+	"block.createaddition.creative_energy.tooltip": "CREATIVE_GENERATOR",
+	"block.createaddition.creative_energy.tooltip.summary": "Generates an infinite supply of _⚡_."
 }

@@ -11,13 +11,9 @@
 	"block.greate.aluminium_millstone": "Жорна з алюмінію",
 	"block.greate.aluminium_shaft": "Вал з алюмінію",
 	"block.greate.andesite_alloy_cogwheel": "Базова шестірня",
-	"block.greate.andesite_alloy_crushing_wheel": "Базове дробильне колесо",
 	"block.greate.andesite_alloy_crushing_wheel_controller": "Контролер базового дробильного колеса",
-	"block.greate.andesite_alloy_encased_fan": "Базовий закритий вентилятор",
 	"block.greate.andesite_alloy_gearbox": "Базова коробка передач",
-	"block.greate.andesite_alloy_mechanical_mixer": "Базовий механічний міксер",
 	"block.greate.andesite_alloy_mechanical_press": "Базовий механічний прес",
-	"block.greate.andesite_alloy_mechanical_pump": "Базова механічна помпа",
 	"block.greate.andesite_alloy_mechanical_saw": "Базова механічна пила",
 	"block.greate.andesite_alloy_millstone": "Базові жорна",
 	"block.greate.andesite_alloy_shaft": "Базовий вал",
@@ -316,5 +312,7 @@
 	"material.greate.rose_quartz": "Рожевий кварц",
 	"material.greate.shadow_steel": "Тіньова сталь",
 	"tagprefix.alloy": "%s (сплав)",
-	"tagprefix.whisk": "%s Віничок"
+	"tagprefix.whisk": "%s Віничок",
+	"greate.tooltip.pump_pressure": "Тиск помпи: ",
+	"greate.tooltip.pump_transfer": "Переміщення "
 }

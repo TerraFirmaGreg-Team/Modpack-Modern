@@ -31,6 +31,10 @@ function registerFowlPlayItemTags(event) {
 	event.add('fowlplay:sparrow_food', '#forge:seeds')
 
 	event.add('c:hidden_from_recipe_viewers', 'fowlplay:bird_feeder')
+
+	event.add('fowlplay:pigeon_deliverable', 'sns:leather_sack')
+	event.add('fowlplay:pigeon_deliverable', 'sns:burlap_sack')
+	event.add('fowlplay:pigeon_deliverable', 'sns:seed_pouch')
 }
 
 function registerFowlPlayBlockTags(event) {

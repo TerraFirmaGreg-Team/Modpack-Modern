@@ -53,7 +53,7 @@
       "type": "patchouli:multiblock",
       "multiblock_id": "tfc:water_wheel",
       "name": "",
-      "text": "A $(thing)Water Wheel$()",
+      "text": "$(thing)Koła wodna$()",
       "enable_visualize": false
     },
     {

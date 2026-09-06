@@ -494,4 +494,14 @@ const registerGTCEURecipes = (event) => {
 	//Buff treated wood stick output for lathe
 
 	event.replaceOutput({id: 'gtceu:lathe/treated_wood_sticks'}, 'gtceu:treated_wood_rod', '8x gtceu:treated_wood_rod')
+
+	// Change Basic Data Access Hatch so it doesn't require Cleanroom
+
+	event.remove({ id: 'gtceu:assembler/basic_data_access_hatch' })
+	event.recipes.gtceu.assembler('tfg:basic_data_access_hatch')
+		.itemInputs(Item.of('gtceu:hv_input_bus', 1), '4x #gtceu:circuits/hv', Item.of('gtceu:cpu_chip', 8), Item.of('gtceu:ram_chip', 32), Item.of('gtceu:fine_red_alloy_wire', 16))
+		.inputFluids(Fluid.of('gtceu:polyethylene', 288))
+		.itemOutputs(Item.of('gtceu:basic_data_access_hatch', 1))
+		.duration(20*10)
+		.EUt(GTValues.VA[GTValues.HV])
 }

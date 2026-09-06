@@ -48,6 +48,7 @@
 	"block.minecraft.iron_block": "Cast Iron Block",
 	"block.minecraft.large_fern": "Shuttlecock Fern",
 	"block.minecraft.light_blue_wool": "Light Blue Cloth Block",
+	"block.minecraft.light_gray_wool": "Light Gray Cloth Block",
 	"block.minecraft.light_grey_wool": "Light Gray Cloth Block",
 	"block.minecraft.lime_wool": "Lime Cloth Block",
 	"block.minecraft.loom": "Banner Loom",
@@ -68,6 +69,7 @@
 	"block.minecraft.nether_bricks": "Keratophyre Bricks",
 	"block.minecraft.nether_wart_block": "Crimson Cap",
 	"block.minecraft.ochre_froglight": "Ochre Lightbloom",
+	"block.minecraft.orange_wool": "Orange Cloth Block",
 	"block.minecraft.pearlescent_froglight": "Pearlescent Lightbloom",
 	"block.minecraft.pink_wool": "Pink Cloth Block",
 	"block.minecraft.polished_basalt": "Polished Basalt Column",
@@ -150,5 +152,6 @@
 	"item.minecraft.smithing_template.armor_trim.additions_slot_description": "Add plate or exquisite gem",
 	"item.minecraft.string": "Silk Thread",
 	"material.tfg.dripstone": "Travertine",
-	"tag.item.minecraft.wool": "Cloth Blocks"
+	"tag.item.minecraft.wool": "Cloth Blocks",
+	"tag.item.minecraft.wool_carpets": "Carpets"
 }
