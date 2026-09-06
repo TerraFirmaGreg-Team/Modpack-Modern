@@ -23,4 +23,6 @@ const registerGTModernUtilitiesRecipes = (event) => {
 			{ id: 'gtceu:research_station/1x_gtceu_active_transformer' }
 		], mod: 'gtmutils'
 	});
+
+	event.replaceInput({ id: 'gtmutils:shaped/uhv_auto_charger_4x' }, 'gtceu:lv_robot_arm', 'gtceu:uv_robot_arm')
 }
