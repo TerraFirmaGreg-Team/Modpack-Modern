@@ -2,21 +2,12 @@
 
 /**
  * @param {Internal.TagEventJS} event
- * @param {string} tag
- * @param {string[]} entries
- */
-const addAll = (event, tag, entries) => {
-    entries.forEach(id => event.add(tag, id));
-};
-
-/**
- * @param {Internal.TagEventJS} event
  */
 const registerTFGEnvironmentBlockTags = (event) => {
 
     // --------- Impassable to atmosphere flood fill ---------
-    addAll(event, 'tfg:atmosphere_impassable', [
-        // Arke really wants railways:track_monorail in here
+    event.add('tfg:atmosphere_impassable', [
+        'railways:track_monorail', // Arke really wants railways:track_monorail in here
 
         'create:fluid_tank', // Pretends to be 3/4 block for smoke particles
         'create:creative_fluid_tank',
@@ -39,7 +30,7 @@ const registerTFGEnvironmentBlockTags = (event) => {
     ]);
 
     // --------- Passable to atmosphere flood fill ---------
-    addAll(event, 'tfg:atmosphere_passable', [
+    event.add('tfg:atmosphere_passable', [
         // Various block tags
         '#minecraft:leaves',
         '#minecraft:climbable',
@@ -152,7 +143,7 @@ const registerTFGEnvironmentBlockTags = (event) => {
     ]);
 
     // --------- getCollisionShape gives wrong result, use getShape instead ---------
-    addAll(event, 'tfg:atmosphere_use_outline', [
+    event.add('tfg:atmosphere_use_outline', [
         '#minecraft:walls',
 
         'domum_ornamentum:blockpillar',
@@ -165,7 +156,7 @@ const registerTFGEnvironmentBlockTags = (event) => {
     ]);
 
     // --------- GT facade covers can seal individual faces ---------
-    addAll(event, 'tfg:atmosphere_check_facades', [
+    event.add('tfg:atmosphere_check_facades', [
         // Pipes
         '#forge:tiny_fluid_pipes',
         '#forge:small_fluid_pipes',

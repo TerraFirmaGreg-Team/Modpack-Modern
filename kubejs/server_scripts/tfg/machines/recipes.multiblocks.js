@@ -411,9 +411,9 @@ function registerTFGMultiblockRecipes(event) {
 		'CPC'
 	], {
 		A: 'gtceu:filter_casing',
-		P: 'gtceu:steel_pipe_casing',
+		P: 'gtceu:mv_electric_pump',
 		B: 'gtceu:mv_machine_hull',
-		C: '#gtceu:circuits/hv'
+		C: '#gtceu:circuits/mv'
 	}).addMaterialInfo().id('tfg:shaped/heat_pump')
 
 	// Oxygen Distributor
@@ -434,9 +434,9 @@ function registerTFGMultiblockRecipes(event) {
 		'ACA'
 	], {
 		A: 'gtceu:magnetic_neodymium_rod',
-		B: 'gtceu:mv_field_generator',
+		B: 'gtceu:hv_field_generator',
 		C: 'gtceu:desh_frame',
-		D: 'gtceu:hv_machine_hull'
+		D: 'gtceu:ev_machine_hull'
 	}).addMaterialInfo().id('tfg:shaped/higgs_emitter')
 	
 }

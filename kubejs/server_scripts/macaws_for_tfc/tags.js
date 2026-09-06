@@ -118,7 +118,7 @@ function registerMacawsForTFCItemTags(event) {
 }
 
 function registerMacawsBlockTags(event) {
-    addAll(event, 'mcw_tfc_aio:attic_roofs', [
+    event.add('mcw_tfc_aio:attic_roofs', [
         'mcw_tfc_aio:roofs/acacia_roofs/acacia_attic_roof',
         'mcw_tfc_aio:roofs/acacia_roofs/acacia_planks_attic_roof',
         'mcw_tfc_aio:roofs/ash_roofs/ash_attic_roof',
