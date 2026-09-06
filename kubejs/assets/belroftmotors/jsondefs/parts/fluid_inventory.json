@@ -1,0 +1,128 @@
+{
+  "generic": {
+    "type": "interactable_barrel",
+    "destroyable": true,
+    "customType": "m160_fluid_inventory",
+    "forwardsDamageMultiplier": 0.25,
+    "mass": 1500,
+    "width": 2.0,
+    "height": 2.5
+  },
+  "collisionGroups": [
+    {
+	  "collisionTypes": [
+	  "block",
+	  "entity",
+	  "attack",
+	  "click",
+	  "vehicle"
+	  ],
+      "collisions": [
+        {
+          "pos": [0.0,1.8,-1.3125],
+          "width": 2.5,
+          "height": 2.5
+        },
+		{
+          "pos": [0.0,1.8,0.3125],
+          "width": 2.5,
+          "height": 2.5
+        },
+		{
+          "pos": [0.0,1.8,1.3125],
+          "width": 2.5,
+          "height": 2.5
+        },
+		{
+          "pos": [0.0,1.8,2.3125],
+          "width": 2.5,
+          "height": 2.5
+        },
+		{
+          "pos": [0.0,1.8,3.3125],
+          "width": 2.5,
+          "height": 2.5
+        },
+		{
+          "pos": [0.0,2.2,4.3125],
+          "width": 2.5,
+          "height": 1.8
+        },
+		{
+          "pos": [0.0,2.2,5.3125],
+          "width": 2.5,
+          "height": 1.8
+        },
+		{
+          "pos": [0.0,2.2,6.1125],
+          "width": 2.5,
+          "height": 1.8
+        }
+      ]
+    },
+    {
+    "isInterior": true,
+      "collisions": [
+      ]
+    }
+  ],
+  "interactable": {
+    "interactionType": "barrel",
+    "inventoryUnits": 10000.0
+  },
+  "definitions": [
+    {
+      "subName": "",
+      "name": "M160 Fluid Inventory",
+      "extraMaterialLists": [
+        [
+        ]
+      ]
+    }
+  ],
+  "rendering": {
+  "animatedObjects": [
+  	 {
+        "objectName": "#translucent_mudAcc_main",
+        "blendedAnimations": true,
+        "animations": [
+          {
+            "animationType": "visibility",
+            "variable": "parent_mudAcc",
+            "clampMin": 0,
+            "clampMax": 100
+          }
+        ]
+      },
+     {
+        "objectName": "$pointer",
+        "animations": [
+          {
+           "animationType": "rotation",
+            "variable": "interactable_percent",
+			"centerPoint": [1.0359375,0.55,2.65625],
+            "axis": [-270,0,0.0],
+            "offset": 0
+          }
+        ]
+      }
+    ],
+    "textObjects": [],
+    "lightObjects": [],
+    "particles": [],
+    "sounds": [
+    ],
+    "modelType": "obj"
+  },
+  "general": {
+    "hideOnCreativeTab": true,
+    "name": "Fluid Inventory M160",
+    "description": "How did you even get this item?!?!?",
+    "health": 50,
+    "materialLists": [
+      []
+    ],
+    "radarWidth": 0.0,
+    "radarRange": 0.0
+  }
+}

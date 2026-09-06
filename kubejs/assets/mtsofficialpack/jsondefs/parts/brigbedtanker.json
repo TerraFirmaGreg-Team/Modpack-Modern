@@ -1,0 +1,204 @@
+{
+  "generic": {
+    "type": "interactable_barrel",
+    "destroyable": true,
+    "customType": "brigbed",
+    "forwardsDamageMultiplier": 0.3,
+    "mass": 1500,
+    "width": 2.0,
+    "height": 2.5
+  },
+  "collisionGroups": [
+    {
+      "collisions": [
+        {
+          "pos": [0.0,1.8,0.7125],
+          "width": 1.9,
+          "height": 0.4
+        },
+        {
+          "pos": [0.0,1.8,-1.4375],
+          "width": 1.9,
+          "height": 0.4
+        }
+      ]
+    },
+    {
+    "isInterior": true,
+      "collisions": [
+      {
+          "pos": [0.0,0.075,0.8125],
+          "width": 2.25,
+          "height": 0.5
+        },
+        {
+          "pos": [0.0,0.075,-1.4375],
+          "width": 2.25,
+          "height": 0.5
+        }
+      ]
+    }
+  ],
+  "interactable": {
+    "interactionType": "barrel",
+    "inventoryUnits": 1000.0
+  },
+  "definitions": [
+    {
+      "subName": "_blank",
+      "name": "Blank Tanker Bed",
+      "extraMaterialLists": [
+        [
+        ]
+      ]
+    },
+    {
+      "subName": "_blackred",
+      "name": "Black Tanker Bed",
+      "extraMaterialLists": [
+        [
+          "tags:dyes/black:1",
+          "tags:dyes/red:1"
+        ]
+      ]
+    },
+    {
+      "subName": "_blueorange",
+      "name": "Blue Tanker Bed",
+      "extraMaterialLists": [
+        [
+          "tags:dyes/blue:1",
+          "tags:dyes/orange:1"
+        ]
+      ]
+    },
+    {
+      "subName": "_greenred",
+      "name": "Green Tanker Bed",
+      "extraMaterialLists": [
+        [
+          "tags:dyes/green:1",
+          "tags:dyes/red:1"
+        ]
+      ]
+    },
+    {
+      "subName": "_grey",
+      "name": "Gray Tanker Bed",
+      "extraMaterialLists": [
+        [
+          "tags:dyes/gray:2"
+        ]
+      ]
+    }
+  ],
+  "rendering": {
+  "animatedObjects": [
+  	 {
+        "objectName": "#translucent_mudAcc_main",
+        "blendedAnimations": true,
+        "animations": [
+          {
+            "animationType": "visibility",
+            "variable": "parent_mudAcc",
+            "clampMin": 0,
+            "clampMax": 100
+          }
+        ]
+      },
+     {
+        "objectName": "$pointer",
+        "animations": [
+          {
+           "animationType": "rotation",
+            "variable": "interactable_percent",
+			"centerPoint": [0,0.265625,1.515625],
+            "axis": [-270,0,0.0],
+            "offset": 0
+          }
+        ]
+      }
+    ],
+    "textObjects": [],
+    "lightObjects": [
+    {
+        "objectName": "&arselight",
+        "emissive": true,
+        "covered": false,
+        "isElectric": true,
+        "color": "FF0000",
+        "brightnessAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "parent_brake",
+            "clampMin": 0.01,
+            "clampMax": 1.0
+          }
+        ],
+        "blendableComponents": [
+          {
+            "pos": [0.53125,0.390625,-2.4008],
+            "axis": [0.0,0.0,-1.0],
+            "flareHeight": 0.4,
+            "flareWidth": 1
+          },
+          {
+            "pos": [-0.53125,0.390625,-2.4008],
+            "axis": [0.0,0.0,-1.0],
+            "flareHeight": 0.5,
+            "flareWidth": 1
+          }
+        ]
+      }
+    ],
+    "particles": [],
+    "sounds": [
+    //place-remove
+      	{
+        "name": "mtsofficialpack:placesound/gmcbed_place",
+        "activeAnimations": [
+        {
+            "animationType": "visibility",
+            "variable": "part_added_vehicle",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "minDistance": 0.0,
+        "minDistanceVolume": 1.0,
+        "maxDistance": 32.0,
+        "maxDistanceVolume": 0.0
+      },
+      	{
+        "name": "mtsofficialpack:placesound/gmcbed_remove",
+        "activeAnimations": [
+        {
+            "animationType": "visibility",
+            "variable": "part_removed_vehicle",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "minDistance": 0.0,
+        "minDistanceVolume": 1.0,
+        "maxDistance": 26.0,
+        "maxDistanceVolume": 0.0
+      }
+    ],
+    "modelType": "obj"
+  },
+  "general": {
+    "name": "Brigadier Tanker Bed",
+    "description": "A big tank for when just one barrel of industrial lubricant wont cut it.",
+    "health": 100,
+    "materialLists": [
+      [
+        "mts:mtsofficialpack.barrel_blank:10",
+        "mts:mtsofficialpack.plating:12",
+        "minecraft:iron_bars:16"
+      ]
+    ],
+    "radarWidth": 0.0,
+    "radarRange": 0.0
+  }
+}

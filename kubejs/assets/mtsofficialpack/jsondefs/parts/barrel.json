@@ -1,0 +1,170 @@
+{
+  "generic": {
+    "type": "interactable_barrel",
+    "forwardsDamageMultiplier": 1.0,
+    "canBePlacedOnGround": true,
+    "destroyable": true,
+    "mass": 20,
+    "width": 0.8,
+    "height": 1.0
+  },
+  "interactable": {
+    "interactionType": "barrel",
+    "inventoryUnits": 1.6
+  },
+  "definitions": [
+    {
+      "subName": "",
+      "name": "Barrel",
+      "extraMaterialLists": [
+        [
+          "tags:dyes/red:1"
+        ]
+      ]
+    },
+    {
+      "subName": "_black",
+      "name": "Black Barrel",
+      "extraMaterialLists": [
+        [
+          "tags:dyes/black:1"
+        ]
+      ]
+    },
+    {
+      "subName": "_blue",
+      "name": "Blue Barrel",
+      "extraMaterialLists": [
+        [
+          "tags:dyes/blue:1"
+        ]
+      ]
+    },
+    {
+      "subName": "_yellow",
+      "name": "Yellow Barrel",
+      "extraMaterialLists": [
+        [
+          "tags:dyes/yellow:1"
+        ]
+      ]
+    },
+    {
+      "subName": "_blank",
+      "name": "Blank Barrel",
+      "extraMaterialLists": [
+        [
+          "minecraft:sand:1"
+        ]
+      ]
+    }
+  ],
+   "collisionGroups": [
+    {
+      "isInterior": true,
+      "collisions": [
+        {
+          "pos": [0.0,0.65,0.0],
+          "width": 0.8,
+          "height": 1.2
+        }
+      ]
+    }
+  ],
+  "rendering": {
+    "sounds": [
+    	//place-remove
+    	{
+        "name": "mtsofficialpack:placesound/barrel_place0",
+        "soundVariations": [
+        	"mtsofficialpack:placesound/barrel_place0",
+        	"mtsofficialpack:placesound/barrel_place1"
+        ],
+        "activeAnimations": [
+        {
+            "animationType": "visibility",
+            "variable": "part_added_ground",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "minDistance": 0.0,
+        "minDistanceVolume": 1.0,
+        "maxDistance": 24.0,
+        "maxDistanceVolume": 0.0
+      },
+      	{
+        "name": "mtsofficialpack:placesound/barrel_remove0",
+        "soundVariations": [
+        	"mtsofficialpack:placesound/barrel_remove0",
+        	"mtsofficialpack:placesound/barrel_remove1"
+        ],
+        "activeAnimations": [
+        {
+            "animationType": "visibility",
+            "variable": "part_removed_ground",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "minDistance": 0.0,
+        "minDistanceVolume": 1.0,
+        "maxDistance": 16.0,
+        "maxDistanceVolume": 0.0
+      },
+      	{
+        "name": "mtsofficialpack:placesound/barrel_place0",
+        "soundVariations": [
+        	"mtsofficialpack:placesound/barrel_place0",
+        	"mtsofficialpack:placesound/barrel_place1"
+        ],
+        "activeAnimations": [
+        {
+            "animationType": "visibility",
+            "variable": "part_added_vehicle",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "minDistance": 0.0,
+        "minDistanceVolume": 1.0,
+        "maxDistance": 24.0,
+        "maxDistanceVolume": 0.0
+      },
+      	{
+        "name": "mtsofficialpack:placesound/barrel_remove0",
+        "soundVariations": [
+        	"mtsofficialpack:placesound/barrel_remove0",
+        	"mtsofficialpack:placesound/barrel_remove1"
+        ],
+        "activeAnimations": [
+        {
+            "animationType": "visibility",
+            "variable": "part_removed_vehicle",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "minDistance": 0.0,
+        "minDistanceVolume": 1.0,
+        "maxDistance": 16.0,
+        "maxDistanceVolume": 0.0
+      }
+    ],
+    "particles": [],
+    "modelType": "obj"
+  },
+  "general": {
+    "name": "Barrel",
+    "description": "A simple and trustworthy, all-purpose barrel. It can hold everything your heart desires, like ten buckets of industrial lubricant!",
+    "health": 50,
+    "materialLists": [
+      [
+        "mts:mtsofficialpack.plating:6",
+        "minecraft:cauldron:1"
+      ]
+    ],
+    "radarWidth": 0.0,
+    "radarRange": 0.0
+  }
+}
