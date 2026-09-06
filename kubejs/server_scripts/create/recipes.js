@@ -53,6 +53,9 @@ const registerCreateRecipes = (event) => {
 		], mod: 'create'
 	})
 
+	TFGHelpers.registerMaterialInfo('create:controls', [GTMaterials.Brass, 2, GTMaterials.Gold, 1.5,
+		GTMaterials.Steel, 1, GTMaterials.Redstone, 1, GTMaterials.Wood, 1, GTMaterials.WroughtIron, 0.25])
+
 	// Make Bound Cardboard craftable with all string
 	event.replaceInput({id: 'create:crafting/materials/bound_cardboard_block' }, 'minecraft:string', '#forge:string')
 	
@@ -1949,7 +1952,8 @@ const registerCreateRecipes = (event) => {
 		.duration(50)
 		.EUt(GTValues.VA[GTValues.ULV])
 		.circuit(18)
-		.addMaterialInfo(true)
+
+	TFGHelpers.registerMaterialInfo('create:contraption_controls', [GTMaterials.WroughtIron, 3, GTMaterials.Wood, 1])
 
 	event.shaped('create:wrench', [
 		' BB',

@@ -130,15 +130,31 @@ const registerAdAstraRecipes = (event) => {
 
 	//#region Rover
 
-	event.recipes.gtceu.assembler('tfg:tier_1_rover')
+	event.recipes.gtceu.automotive_workshop('tfg:rover_soldering_alloy')
 		.itemInputs(
 			'gtceu:mv_sensor',
 			'ad_astra:radio',
 			'ad_astra:gas_tank',
 			'4x mts:mtsofficialpack.wheellarge',
-			'2x gtceu:hv_electric_motor',
+			'4x gtceu:hv_electric_motor',
 			'4x #forge:plates/stainless_steel',
 			'4x #forge:frames/stainless_steel')
+		.inputFluids(Fluid.of('gtceu:polyethylene', 16 * 144), Fluid.of('gtceu:soldering_alloy', 10 * 144))
+		.itemOutputs('ad_astra:tier_1_rover')
+		.duration(400)
+		.EUt(GTValues.VA[GTValues.HV])
+		.addMaterialInfo(true)
+			
+	event.recipes.gtceu.automotive_workshop('tfg:rover_woods_metal')
+		.itemInputs(
+			'gtceu:mv_sensor',
+			'ad_astra:radio',
+			'ad_astra:gas_tank',
+			'4x mts:mtsofficialpack.wheellarge',
+			'4x gtceu:hv_electric_motor',
+			'4x #forge:plates/stainless_steel',
+			'4x #forge:frames/stainless_steel')
+		.inputFluids(Fluid.of('gtceu:polyethylene', 16 * 144), Fluid.of('tfg:woods_metal', 5 * 144))
 		.itemOutputs('ad_astra:tier_1_rover')
 		.duration(400)
 		.EUt(GTValues.VA[GTValues.HV])
