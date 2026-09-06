@@ -515,4 +515,52 @@ const registerGTCEURecipes = (event) => {
 		B: 'minecraft:redstone',
 		C: 'gtceu:fluid_cell'
 	}).id('tfg:shaped/empty_spray_can')
+
+	// Cells
+	event.recipes.tfc.anvil('gtceu:fluid_cell', '#forge:double_ingots/tin', ['hit_last', 'bend_not_last', 'bend_not_last'])
+		.tier(2)
+		.id('tfg:anvil/fluid_cell_tin')
+		
+	event.recipes.tfc.anvil('gtceu:fluid_cell', '#forge:ingots/steel', ['hit_last', 'bend_not_last', 'bend_not_last'])
+		.tier(4)
+		.id('tfg:anvil/fluid_cell_steel')
+
+	event.shaped('gtceu:steel_fluid_cell', [
+		'AAC',
+		'BBD'
+	], {
+		A: '#forge:rings/bronze',
+		B: '#forge:double_plates/steel',
+		C: '#forge:tools/screwdrivers',
+		D: '#forge:screws/steel'
+	}).id('tfg:shaped/steel_fluid_cell')
+
+	// Change the liquid fuel jetpack from LV to ULV
+	event.shaped('gtceu:liquid_fuel_jetpack', [
+		'ABC',
+		'DED',
+		'FGF'
+	], {
+		A: '#forge:tools/wire_cutters',
+		B: 'create:electron_tube',
+		C: '#forge:tools/wrenches',
+		D: 'gtceu:steel_fluid_cell',
+		E: 'gtceu:lv_electric_pump',
+		F: '#forge:rotors/lead',
+		G: '#forge:small_fluid_pipes/potin'
+	}).id('gtceu:shaped/fluid_jetpack')
+
+	event.shaped('gtceu:liquid_fuel_jetpack', [
+		'ABC',
+		'DED',
+		'FGF'
+	], {
+		A: '#forge:tools/wire_cutters',
+		B: 'create:electron_tube',
+		C: '#forge:tools/wrenches',
+		D: 'gtceu:steel_fluid_cell',
+		E: 'greate:steel_mechanical_pump',
+		F: '#forge:rotors/lead',
+		G: '#forge:small_fluid_pipes/potin'
+	}).id('tfg:shaped/fluid_jetpack_greate')
 }
