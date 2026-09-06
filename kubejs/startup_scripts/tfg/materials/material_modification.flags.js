@@ -172,7 +172,7 @@ function registerTFGFlagsMaterialModification(event) {
 	GTMaterials.Copper.addFlags(GENERATE_BOLT_SCREW);
 	GTMaterials.Duranium.addFlags(GENERATE_BOLT_SCREW);
 
-	GTMaterials.Magnalium.addFlags(GENERATE_FOIL, GENERATE_FRAME);
+	GTMaterials.Magnalium.addFlags(GENERATE_GEAR, GENERATE_FOIL, GENERATE_FRAME);
 
 	GTMaterials.Cupronickel.addFlags(GENERATE_BOLT_SCREW, GENERATE_RING);
 
