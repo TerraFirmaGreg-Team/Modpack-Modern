@@ -484,8 +484,8 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "cotton",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 10 - 80 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 40 - 100 %$(br)$(bold)Nutrient$(): Nitrogen$(br2)Cotton is a two block tall crop. Cotton seeds can be planted on farmland, will grow two blocks tall, and will produce $(item)Cotton Balls$() which can be processed into $(thing)Cotton String$() or $(thing)Cloth$().",
-			"title": "Cotton"
+			"text": "$(bold)$(l:the_world/climate#temperature)気温$(): 10 - 80 °C$(br)$(bold)$(l:mechanics/hydration)水分$(): 40 - 100 %$(br)$(bold)栄養素$(): 窒素$(br2)綿花は２ブロックの高さに成長する作物です。綿花の種は農地に植えることができ、２ブロックの高さに成長し、 $(thing)綿糸$()や$(thing)木綿の布$()に加工できる$(item)綿$()を生産します。",
+			"title": "綿花"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -638,7 +638,7 @@
 					}
 				}
 			],
-			"text": "$(thing)Wild Cotton$() grows between Y=158 and Y=32."
+			"text": "$(thing)野生の綿花$()はY=158からY=32の間で生育しています。"
 		}
 	],
 	"read_by_default": true,

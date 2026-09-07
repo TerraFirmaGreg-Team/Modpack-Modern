@@ -1,20 +1,20 @@
 {
-	"name": "Staying Hydrated",
+	"name": "潤いを保つ",
 	"category": "tfc:beneath",
 	"icon": "beneath:juicer",
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Unlike the Nether, water will not instantly evaporate when you are in the Beneath. However, there is also the option of crafting a $(thing)Juicer$()."
+			"text": "ネザーとは異なり、深界にいるときは水が即座に蒸発することはありません。ただし、$(thing)ジューサー$()をクラフトするという選択肢もあります。"
 		},
 		{
 			"type": "patchouli:crafting",
 			"recipe": "beneath:crafting/juicer",
-			"text": "The juicer is a drinking vessel that allows the compression of $(thing)Mushrooms$() and $(thing)Fruit$() into water. The single-slot user interface automatically processes inserted mushrooms into water."
+			"text": "ジューサーは、$(thing)キノコ$()や$(thing)果物$()を水に圧縮できる飲み物用容器です。1スロットのユーザーインターフェースで、挿入されたキノコを自動的に水に変換します。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "These mushrooms spawn all over the Beneath. Fresh fruits (such as $(thing)Glow Berries$()) may also be squeezed into water.$(br2)You can also find water and $(thing)Hot Springs$() in the upper and middle areas of the Beneath."
+			"text": "キノコは深界の至る所に生えています。新鮮な果実（$(thing)グロウベリー$()など）も、絞って飲み水にできます。$(br2)また、深界の上層部や中層部では、水や$(thing)温泉$()も見つけることができます。"
 		}
 	],
 	"read_by_default": true
