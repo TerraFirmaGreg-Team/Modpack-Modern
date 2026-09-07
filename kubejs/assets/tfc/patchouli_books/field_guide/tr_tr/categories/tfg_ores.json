@@ -1,6 +1,6 @@
 {
-    "name": "Ores in TFG",
-    "description": "TFG has its own ore generation system that's similar to TFC's with the huge but rare veins, but with multiple minerals per vein. This category lists all of the vein types and where to find them.$(br2)Veins are named after their most dominant ore, but most veins contain 3-5 minerals.$(br2)See also: $(l:the_world/geology)Geology$(), $(l:getting_started/finding_ores)Indicators$()",
+    "name": "TFG içindeki Cevherler",
+    "description": "TFG kendi cevher yatağı oluşumu var TFC ile benzerlik gösterse de daha nadir ama daha büyükler, ama cevher yatağının içinde birkaç tür cevher ile oluşurlar, bu kategori bütün cevherleri listeler ve nerede nasıl bulacağını açıklar, $(br2)Cevher yatakları genellikle baskın olan cevher ile adlandırılırlar, ama cevher yatakları genellikle 3 veya 5 cevher türü bulundurur, $(br2)aynı zamanda $(l:the_world/geology)Geology$(), $(l:getting_started/finding_ores)Indicators$() bakabilirsin",
     "icon": "tfc:ore/pyrite",
     "sortnum": 60
 }

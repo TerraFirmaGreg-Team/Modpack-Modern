@@ -1,12 +1,12 @@
 {
-	"name": "Earth Tree Index",
+	"name": "Erdbäume Index",
 	"category": "tfc:arborfirmacraft",
 	"icon": "afc:wood/sapling/flame_of_the_forest",
 	"read_by_default": true,
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "This is a list of every tree in the world, and what climates they grow in.$(br2)Looking for particular wood type to decorate your base? This should help you find it. The list is sorted alphabetically by wood type.$(br2)Also check out the $(l:tfc:tfg_tips/mars_tree_index)Mars Mushroom Index$()."
+			"text": "Hier findest du eine Liste aller Bäume der Welt und der Klimazonen, in denen sie wachsen.$(br2)Du suchst eine bestimmte Holzart, um deine Basis zu dekorieren? Diese Liste hilft dir dabei, sie zu finden. Die Liste ist alphabetisch nach Holzart sortiert.$(br2)Sieh dir auch den $(l:tfc:tfg_tips/mars_tree_index)Mars-Pilzindex$() an."
 		},
 		{
 			"type": "patchouli:spotlight",
