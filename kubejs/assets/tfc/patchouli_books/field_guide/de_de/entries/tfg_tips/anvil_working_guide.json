@@ -1,5 +1,5 @@
 {
-    "name": "Anvil Working Guide",
+    "name": "Amboss Arbeitsleitfaden",
     "icon": "gtceu:red_steel_hammer",
     "category": "tfc:tfg_tips",
     "read_by_default": true,
@@ -7,8 +7,8 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "title": "Working with Anvils",
-            "text": "$(l:mechanics/anvils#working)Working$() in $(l:mechanics/anvils)Anvils$() is a key process inside $(thing)TerraFirmaGreg$(), as most of your work towards the $(thing)Steam and Mechanical ages$() will require the usage of an Anvil.$(br)This guide is broken down into two parts, $(l:tfg_tips/anvil_working_guide#ui_explained)Understanding the UI$() and $(l:tfg_tips/anvil_working_guide#how_to_perfectly_forge)How to Perfectly Forge$().$(br2)The Modpack has a custom $(thing)Resource Pack$() called $(l:https://www.curseforge.com/minecraft/texture-packs/tfc-anvil-helper)TFC Anvil Helper$() that you need to enable for this guide to make sense.$()"
+            "title": "Arbeiten mit Amboss",
+            "text": "$(l:mechanics/anvils#working)Arbeiten$() an $(l:mechanics/anvils)Ambossen$() ist ein zentraler Prozess in $(thing)TerraFirmaGreg$(), da für einen Großteil deiner Arbeit auf dem Weg in das $(thing)Dampf- und Mechanische Zeitalter$() die Verwendung eines Ambosses erforderlich ist.$(br)Dieser Leitfaden ist in zwei Teile gegliedert: $(l:tfg_tips/anvil_working_guide#ui_explained)Die Benutzeroberfläche verstehen$() und $(l:tfg_tips/anvil_working_guide#how_to_perfectly_forge)Perfekt schmieden$().$(br2)Das Modpack verfügt über ein eigenes $(thing)Ressourcenpaket$() namens $(l:https://www.curseforge.com/minecraft/texture-packs/tfc-anvil-helper)TFC Anvil Helper$(), das du aktivieren musst, damit dieser Leitfaden verständlich ist.$()"
         },
         {
             "type": "patchouli:image",
@@ -16,7 +16,7 @@
                 "tfg:textures/gui/field_guide/anvil_working_guide/anvil_ui.png"
             ],
             "border": false,
-            "text": "The UI for the Anvil with TFC Anvil Helper Enabled"
+            "text": "Die UI für den Amboss mit TFC Amboss Helfer aktiviert"
         },
         {
             "type": "patchouli:image",
@@ -26,11 +26,11 @@
             "border": false,
             "anchor": "ui_explained",
             "title": "The UI and You",
-            "text": "The UI for the Anvil with TFC Anvil Helper Enabled, Color Coded."
+            "text": "Die UI für den Amboss mit TFC Amboss Helfer aktiviert und farblich codiert."
         },
         {
             "type": "patchouli:text",
-            "text": "$(#ff0000)1.$() The item you've selected to Create in the Anvil. Each item has a specific set of required $(#be00ff)Steps$() and $(#ff6b00)Work Amount$() $(br)$(#ff00c6)2.$() The Input item you're currently working. $(br)$(#be00ff)3.$() The required Steps in Order that must be completed before the Item is considered complete. There are a total of 4 different Orders (See next Page):"
+            "text": "$(#ff0000)1.$() Das Item, das du im Amboss ausgewählt hast, um es herzustellen. Jedes Item hat eine bestimmte Anzahl an erforderlichen $(#be00ff)Schritten$() und eine erforderliche $(#ff6b00)Arbeitsmenge$().$(br)$(#ff00c6)2.$() Das Input-Item, das du gerade bearbeitest.$(br)$(#be00ff)3.$() Die erforderlichen Schritte in der richtigen Reihenfolge, die abgeschlossen werden müssen, bevor das Item als fertiggestellt gilt. Es gibt insgesamt 4 verschiedene Reihenfolgen (siehe nächste Seite):"
         },
         {
             "type": "patchouli:image",

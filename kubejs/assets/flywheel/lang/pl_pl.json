@@ -1,5 +1,7 @@
 {
 	"argument.flywheel_backend.id.unknown": "Nieznany backend '%s'",
 	"command.flywheel.use_light_directions.get.off": "Nie używaj kierunków światła",
-	"command.flywheel.use_light_directions.get.on": "Używaj kierunków światła"
+	"command.flywheel.use_light_directions.get.on": "Używaj kierunków światła",
+	"command.flywheel.use_light_directions.set.off": "Wyłącz kierunki światła",
+	"command.flywheel.use_light_directions.set.on": "Włącz kierunki światła"
 }

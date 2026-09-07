@@ -1,35 +1,35 @@
 {
-	"name": "Temperature Management",
+	"name": "Temperaturreglung",
 	"category": "tfc:beneath",
 	"icon": "minecraft:ice",
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "The Beneath is hot! The temperature starts at 20°C at the very top, and only gets hotter as you descend.$(br2)$(item)Burlap$(), $(item)Linen$(), and $(item)Silk$() clothing will help, but here are some other ways to stay cool!"
+			"text": "Der Untergrund ist heiß! Die Temperatur beginnt ganz oben bei 20°C und wird mit der Tiefe immer heißer.$(br2)$(item)Burlap$(), $(item)Linen$(), und $(item)Silk$() Kleidung werden helfen, aber hier sind einige andere Möglichkeiten, um kühl zu bleiben!"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "minecraft:water_bucket",
-			"title": "Water",
-			"text": "Water can be found all over the upper levels of the Beneath. Taking a quick dip can cool you off fast!"
+			"title": "Wasser",
+			"text": "Wasser kann auf der oberen Ebene des Untergrunds gefunden werden. Ein kleines Bad kann dich abkühlen!"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Ice",
+			"title": "Eis",
 			"item": "minecraft:packed_ice",
-			"text": "Bring along some $(thing)Ice$()! Standing near it will lower the ambient temperature. Ice can be harvested on the surface using a $(item)Saw$(), and the resulting Ice Shavings can be turned into $(item)Packed Ice$(). $(thing)Packed$() and $(thing)Blue$() ice won't melt."
+			"text": "Bringe $(thing)Ice$() mit! Eis in deiner nähe wird die Umgebungstemperatur senken. Eis kann mit einer $(item)Säge$() auf der Oberfläche geerntet werden, und die daraus resultierenden Eis-Spähne können in $(item)verpackte Ice$() umgewandelt werden. $(thing)Packed$() und $(thing)Blue$() Eis werden nicht schmelzen."
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:ice_bucket",
-			"title": "Liquid Ice Slush",
-			"text": "Ahhhh, so refreshing! Cools you down by 4°C."
+			"title": "Flüssiges Slush-Eis",
+			"text": "Ahhhh, so erfrischend! Kühlt dich um 4° C."
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Blue Steel Equipment",
+			"title": "Blaustahlausrüstung",
 			"item": "create:netherite_diving_helmet,create:netherite_backtank,minecraft:netherite_leggings,create:netherite_diving_boots",
-			"text": "Looking for something more permanent? The $(thing)Blue Steel Diving Set$() will drastically lower your temperature, and lets you swim in lava too!$(br2)$(item)Lavaproof Hides$() can be obtained from the native $(thing)Red Elk$() or looted from Bastions."
+			"text": "Auf der Suche nach etwas Dauerhaftem? Die $(thing)Blue Steel Diving Set$() senkt deine Temperatur drastisch und lässt dich auch in der Lava schwimmen!$(br2)$(item)Lavaproof Hides$() kann von den einheimischen $(thing)Red Elk$() oder von Bastionen geplündert werden."
 		},
 		{
 			"type": "patchouli:crafting",
