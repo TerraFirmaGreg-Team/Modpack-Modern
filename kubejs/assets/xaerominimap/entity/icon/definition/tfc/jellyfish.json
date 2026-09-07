@@ -1,0 +1,10 @@
+{
+  "variants" : {
+    "default" : "outlined_sprite:tfc/jellyfish_blue.png",
+    "tfc:textures/entity/animal/jellyfish_blue.png" : "outlined_sprite:tfc/jellyfish_blue.png",
+    "tfc:textures/entity/animal/jellyfish_orange.png" : "outlined_sprite:tfc/jellyfish_orange.png",
+    "tfc:textures/entity/animal/jellyfish_purple.png" : "outlined_sprite:tfc/jellyfish_purple.png",
+    "tfc:textures/entity/animal/jellyfish_red.png" : "outlined_sprite:tfc/jellyfish_red.png",
+    "tfc:textures/entity/animal/jellyfish_yellow.png" : "outlined_sprite:tfc/jellyfish_yellow.png"
+  }
+}

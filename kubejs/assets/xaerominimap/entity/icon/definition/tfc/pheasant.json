@@ -1,0 +1,7 @@
+{
+  "variants" : {
+    "default" : "outlined_sprite:tfc/pheasant_female.png",
+    "tfc:textures/entity/animal/pheasant_female.png" : "outlined_sprite:tfc/pheasant_female.png",
+    "tfc:textures/entity/animal/pheasant_male.png" : "outlined_sprite:tfc/pheasant_male.png"
+  }
+}

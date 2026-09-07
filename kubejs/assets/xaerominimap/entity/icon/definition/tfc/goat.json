@@ -1,0 +1,7 @@
+{
+  "variants" : {
+    "default" : "outlined_sprite:tfc/goat_young.png",
+    "tfc:textures/entity/animal/goat_young.png" : "outlined_sprite:tfc/goat_young.png",
+    "tfc:textures/entity/animal/goat_old.png" : "outlined_sprite:tfc/goat_old.png"
+  }
+}

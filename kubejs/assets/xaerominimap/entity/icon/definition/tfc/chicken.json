@@ -1,0 +1,10 @@
+{
+  "variants" : {
+    "default" : "outlined_sprite:tfc/chicken_young.png",
+    "tfc:textures/entity/animal/chick.png" : "outlined_sprite:tfc/chick.png",
+    "tfc:textures/entity/animal/chicken_young.png" : "outlined_sprite:tfc/chicken_young.png",
+    "tfc:textures/entity/animal/chicken_old.png" : "outlined_sprite:tfc/chicken_old.png",
+    "tfc:textures/entity/animal/rooster_young.png" : "outlined_sprite:tfc/rooster_young.png",
+    "tfc:textures/entity/animal/rooster_old.png" : "outlined_sprite:tfc/rooster_old.png"
+  }
+}
