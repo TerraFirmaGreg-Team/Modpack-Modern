@@ -16,7 +16,8 @@ function registerImmersiveVehiclesRecipes(event) {
 	event.remove({ mod: 'immersive_aircraft' });
 
 
-	// TODO: airship
+	// TODO: make airship convert into the new balloon
+	event.shapeless('tfg:liquid_fuel_jetpack', 'immersive_aircraft:airship')
 	event.shapeless('mts:mtsofficialpack.bell47g', 'immersive_aircraft:quadrocopter')
 	event.shapeless('mts:mtsofficialpack.bell206_red', 'immersive_aircraft:cargo_airship')
 	event.shapeless('mts:mtsofficialpack.trimotor_white', 'immersive_aircraft:warship')
@@ -362,7 +363,7 @@ function registerImmersiveVehiclesRecipes(event) {
 		B: '#forge:bolts/copper',
 		C: '#forge:rings/steel',
 		D: '#forge:foils/steel',
-		E: '#forge:single_cables/tin',
+		E: '#forge:single_wires/tin',
 		F: '#forge:rods/invar',
 		G: '#forge:tools/screwdrivers'
 	}).id('mts:mtsofficialpack.sparkplug')

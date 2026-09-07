@@ -556,7 +556,16 @@ const registerTooltips = (event) => {
     })
 
 	// Deprecated Items
-	event.addAdvanced(['vintageimprovements:lathe', 'ae2:fe_p2p_tunnel', 'gtceu:steam_large_turbine', 'gtceu:bronze_large_boiler', 'gtceu:steel_large_boiler', 'gtceu:titanium_large_boiler', 'gtceu:tungstensteel_large_boiler'], (item, advanced, text) => {
+	event.addAdvanced([
+		'vintageimprovements:lathe',
+		'ae2:fe_p2p_tunnel',
+		'gtceu:steam_large_turbine',
+		'gtceu:bronze_large_boiler', 
+		'gtceu:steel_large_boiler',
+		'gtceu:titanium_large_boiler',
+		'gtceu:tungstensteel_large_boiler',
+		'gtceu:liquid_fuel_jetpack',
+	], (item, advanced, text) => {
 		text.add(1, Text.translate('tfg.tooltip.obsolete.depreciated'))
 	})
 
