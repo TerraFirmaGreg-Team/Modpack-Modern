@@ -3,5 +3,17 @@
 	"ali.property.value.count": "개수: %s",
 	"ali.property.value.levels": "레벨: %s",
 	"ali.property.value.size": "크기: %s",
-	"ali.property.value.zoom": "확대: %s"
+	"ali.property.value.zoom": "확대: %s",
+	"ali.enum.dye_color.cyan": "청록색",
+	"ali.enum.dye_color.gray": "회색",
+	"ali.enum.dye_color.light_blue": "하늘색",
+	"ali.enum.dye_color.light_gray": "밝은 회색",
+	"ali.enum.dye_color.lime": "라임",
+	"ali.enum.dye_color.magenta": "자홍색",
+	"ali.enum.dye_color.orange": "오렌지",
+	"ali.enum.dye_color.pink": "분홍색",
+	"ali.enum.dye_color.white": "하양",
+	"ali.enum.dye_color.yellow": "노랑",
+	"ali.enum.equipment_slot.chest": "상자",
+	"ali.type.entry.empty": "비어 있음"
 }

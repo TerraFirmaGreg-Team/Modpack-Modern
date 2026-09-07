@@ -11,13 +11,9 @@
 	"block.greate.aluminium_millstone": "Aluminium Millstone",
 	"block.greate.aluminium_shaft": "Aluminium Shaft",
 	"block.greate.andesite_alloy_cogwheel": "Basic Cogwheel",
-	"block.greate.andesite_alloy_crushing_wheel": "Basic Crushing Wheel",
 	"block.greate.andesite_alloy_crushing_wheel_controller": "Basic Crushing Wheel Controller",
-	"block.greate.andesite_alloy_encased_fan": "Basic Encased Fan",
 	"block.greate.andesite_alloy_gearbox": "Basic Gearbox",
-	"block.greate.andesite_alloy_mechanical_mixer": "Basic Mechanical Mixer",
 	"block.greate.andesite_alloy_mechanical_press": "Basic Mechanical Press",
-	"block.greate.andesite_alloy_mechanical_pump": "Basic Mechanical Pump",
 	"block.greate.andesite_alloy_mechanical_saw": "Basic Mechanical Saw",
 	"block.greate.andesite_alloy_millstone": "Basic Millstone",
 	"block.greate.andesite_alloy_shaft": "Basic Shaft",
@@ -316,5 +312,7 @@
 	"material.greate.rose_quartz": "Rose Quartz",
 	"material.greate.shadow_steel": "Shadow Steel",
 	"tagprefix.alloy": "%s Alloy",
-	"tagprefix.whisk": "%s Whisk"
+	"tagprefix.whisk": "%s Whisk",
+	"greate.tooltip.pump_pressure": "Pump Pressure: ",
+	"greate.tooltip.pump_transfer": "Transferring "
 }

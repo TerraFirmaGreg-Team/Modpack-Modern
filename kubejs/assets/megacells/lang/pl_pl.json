@@ -88,5 +88,7 @@
   "item.megacells.source_storage_cell_64m": "Magazyn źródła MEGA 64M",
   "text.autoconfig.megacells.option.AllowSpentWaste": "(AppMek) Zezwalaj na zużyte odpady jądrowe",
   "text.autoconfig.megacells.option.CompressionChainLimit": "Limit długości łańcucha masowej kompresji",
-  "text.autoconfig.megacells.title": "MEGA Cells"
+  "text.autoconfig.megacells.title": "MEGA Cells",
+  "block.megacells.mega_pattern_provider": "Dostawca wzorców MEGA",
+  "item.megacells.cable_mega_pattern_provider": "Dostawca wzorców MEGA"
 }

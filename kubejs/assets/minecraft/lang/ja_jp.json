@@ -46,6 +46,7 @@
 	"block.minecraft.infested_deepslate": "虫食いの混成岩",
 	"block.minecraft.iron_block": "鋳鉄ブロック",
 	"block.minecraft.light_blue_wool": "空色の布ブロック",
+	"block.minecraft.light_gray_wool": "薄灰色の布ブロック",
 	"block.minecraft.light_grey_wool": "薄灰色の布ブロック",
 	"block.minecraft.lime_wool": "黄緑色の布ブロック",
 	"block.minecraft.loom": "旗の加工台",
@@ -147,5 +148,6 @@
 	"item.minecraft.shield.yellow": "黄色の木製の盾",
 	"item.minecraft.string": "絹糸",
 	"material.tfg.dripstone": "鍾乳石",
-	"tag.item.minecraft.wool": "布ブロック"
+	"tag.item.minecraft.wool": "布ブロック",
+	"tag.item.minecraft.wool_carpets": "カーペット"
 }

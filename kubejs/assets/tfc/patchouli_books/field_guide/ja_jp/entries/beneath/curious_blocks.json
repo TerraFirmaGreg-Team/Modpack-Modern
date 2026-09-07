@@ -1,31 +1,31 @@
 {
-	"name": "Unique Blocks",
+	"name": "固有のブロック",
 	"category": "tfc:beneath",
 	"icon": "beneath:blackstone_aqueduct",
 	"pages": [
 		{
 			"type": "patchouli:crafting",
 			"name": "Soul Clay",
-			"text": "Aqueducts can also move lava and other fluids around, which may be useful when building the $(l:beneath/hellforge)Hellforge$().",
+			"text": "用水路は溶岩や他の流体を移動させることもできますが、$(l:beanth/hellforge)獄炎炉$()を構築するときにも使います。",
 			"anchor": "blackstone_aqueduct",
 			"recipe": "tfg:shaped/blackstone_aqueduct"
 		},
 		{
 			"type": "patchouli:crafting",
 			"name": "硫黄",
-			"text": "Hellbricks are a building block that is also used for the $(l:beneath/hellforge)Hellforge$().",
+			"text": "獄炎レンガは、$(l:beinth/hellforge)獄炎炉$()にも使われる建材ブロックです。",
 			"recipe": "tfg:shapeless/hellbricks"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"name": "藁ブロック",
-			"text": "The Pyroxenite Pedestal can be used to display items you want to show off!",
+			"text": "輝岩の台座は、見せたいアイテムを展示するのに使用できます！",
 			"item": "beneath:ancient_altar"
 		},
 		{
 			"type": "patchouli:crafting",
 			"recipe": "tfg:shaped/blackstone_brick_to_bricks",
-			"text": "Migmatite and Pyroxenite bricks are made like regular bricks, and that includes needing to create the brick item."
+			"text": "混成岩と輝岩のレンガブロックは通常のレンガブロックと同様の方法で作成できます。つまり、アイテムとしてのレンガに加工してから作成する工程が必要です。"
 		}
 	],
 	"read_by_default": true

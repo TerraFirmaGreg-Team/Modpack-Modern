@@ -1,4 +1,5 @@
 {
+	"block.minecraft.basalt": "Columna de basalto",
 	"block.minecraft.bell": "Golden Bell",
 	"block.minecraft.blackstone": "Piroxenita en bruto",
 	"block.minecraft.blackstone_slab": "Losa de piroxenita",
@@ -91,12 +92,16 @@
 	"block.minecraft.verdant_froglight": "Brilloluz verdante",
 	"block.minecraft.weeping_vines": "Enredaderas carmesí",
 	"block.minecraft.weeping_vines_plant": "Planta de enredaderas carmesí",
+	"death.attack.magic": "%1$s fue asesinado con veneno letal",
+	"death.attack.magic.player": "%1$s fue asesinado por un veneno letal tratando de escapar de %2$s",
+	"dimension.minecraft.overworld": "Tierra",
 	"entity.minecraft.furnace_minecart": "Vagoneta con caldera",
 	"item.minecraft.furnace_minecart": "Vagoneta con caldera",
 	"item.minecraft.glow_ink_sac": "Tinte brillante",
 	"item.minecraft.iron_block": "Bloque de hierro fundido",
 	"item.minecraft.iron_ingot": "Lingote de hierro fundido",
 	"item.minecraft.iron_nugget": "Pepita de hierro fundido",
+	"item.minecraft.milk_bucket": "Cubeta de leche de vaca",
 	"item.minecraft.nether_brick": "Ladrillo de queratofiro",
 	"item.minecraft.netherite_boots": "Botas de buceo de acero azul",
 	"item.minecraft.netherite_leggings": "Grebas de buceo de acero azul",
@@ -119,5 +124,6 @@
 	"item.minecraft.shield.yellow": "Yellow Wooden Shield",
 	"item.minecraft.string": "Hilo de seda",
 	"material.tfg.dripstone": "Travertino",
-	"tag.item.minecraft.wool": "Lana"
+	"tag.item.minecraft.wool": "Lana",
+	"tag.item.minecraft.wool_carpets": "Alfombras"
 }

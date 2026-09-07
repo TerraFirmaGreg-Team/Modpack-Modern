@@ -1,8 +1,46 @@
 # Changelog
 
 ## Unreleased
-### Breaking Changes
+### Changes
 ### Bug fixes
+
+## [0.13.10] - 05-09-2026
+### Breaking Changes
+- The new moon cleanroom recipes have been replaced with requiring oxygenation instead (#4896) @TomPlop
+(A new and improved oxygenation system will be coming soon!)
+### Changes
+#### Applied Energistics 2
+- Removed overclock from the ME Resonance Fabricator and made Batch Mode native @TomPlop
+- Adjusted the formulas for how much the budding certus can affect the recipe speeds, and how long the recipes take @TomPlop
+- Some GUI fixes on the new multis @TomPlop
+- Some recipe adjustments (#4896) @TomPlop
+- Changed the craft of the data hatch so a cleanroom isn't required @TomPlop
+#### Other Changes
+- Improved multiblock preview hatch/bus displays for a few multiblocks @TomPlop
+- Doubled the durability of all clothing @ashleney
+- Changed the blue alloy desh foil recipes to be less tedious @Pyritie
+- Reduced the cost of the Rail Buffer @Pyritie
+- Increased the speed of the schematicannon @Pyritie
+- Only a basic mechanical press is required to compress ingots into blocks now @Pyritie
+- Removed the calendar curios slot @Pyritie
+### Bug fixes
+- Fixed a crash with combustion engines when loading into a world with flywheel off @Pyritie
+- Fixed combustion engines consuming very little fuel (#4889) @Pyritie
+- Fixed one part of the moon dust harvester not allowing hatches/buses that should @TomPlop
+- Fixed current and average temperature desync in multiplayer (#3732) @ariedotme
+- Fixed fluid vein EMI tab showing old worldgen entries on servers (#3879) @ariedotme
+- Fixed treated wood barrel recipes accepting their own output as input (#4919) @ariedotme
+- Fixed tarkianite centrifuging into the wrong amount of Molybdenite @Pyritie
+- Fixed the dismantler recipe @TomPlop
+### Mods
+#### TerraFirmaCraft
+- Added an EMI category for lamp fuels @Redeix
+- Fixed rotten eggs hatching stuff
+- Fixed two worldgen-related crashes
+#### Greate
+- Fixed a crash involving mechanical presses
+#### Wan's Ancient Beasts
+- [Lots of bugfixes](https://www.curseforge.com/minecraft/mc-mods/wans-ancient-beasts/files/8761414), most of them either related to the Snatcher and its mechanics, but also the different tameables can sit down by sneak-right-clicking on them now. Press 'C' to access their inventory/equipment screen.
 
 ## [0.13.9] - 29-08-2026
 ### Breaking Changes

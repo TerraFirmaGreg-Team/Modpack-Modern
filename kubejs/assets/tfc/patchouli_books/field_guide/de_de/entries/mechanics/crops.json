@@ -1,42 +1,42 @@
 {
-	"name": "Crops",
+	"name": "Ernte",
 	"category": "tfc:mechanics",
 	"icon": "tfc:textures/item/food/wheat.png",
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Crops are a source of food and some other materials. While each crop is slightly different, crops all have some similar principles. In order to start growing crops, you will need some $(thing)Seeds$(), which can be obtained by searching for $(l:the_world/wild_crops)Wild Crops$() and breaking them.$(br2)Once you have obtained seeds, you will also need a $(thing)Hoe$(). Seeds are also useful as $(l:mechanics/fishing)bait$()."
+			"text": "Ernten sind eine Nahrungsquelle und andere Materialien. Während jede Ernte etwas anders ist, haben alle Pflanzen ähnliche Grundsätze. Um mit dem Anbau von Ernten zu beginnen, benötigen Sie $(thing)Samen$(), die durch die Suche nach $(l:the_world/wild_crops)Wildpflanzen$() erhalten werden können.$(br2)Sobald Sie Samen erhalten haben, benötigen Sie auch eine $(thing)Hacke$(). Samen sind auch nützlich als $(l:mechanics/fishing)Köder$()."
 		},
 		{
 			"type": "patchouli:text",
-			"text": "In addition to finding wild crops, seeds can also be produced from existing crops. When a fully mature crop dies - either by weather, or leaving it to rot - it will go to seed, dropping more seeds that can be used to grow even more crops next season."
+			"text": "Zusätzlich zum Finden wild wachsender Nutzpflanzen können Samen auch aus bereits vorhandenen Nutzpflanzen gewonnen werden. Wenn eine vollständig ausgewachsene Pflanze abstirbt – entweder durch das Wetter oder weil man sie verrotten lässt – bildet sie Samen und lässt zusätzliche Samen fallen, die verwendet werden können, um in der nächsten Saison noch mehr Nutzpflanzen anzubauen."
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(li)$(l:tfc:mechanics/crops#barley)Barley$()$(li)$(l:tfc:mechanics/crops#beet)Beet$()$(li)$(l:tfc:mechanics/crops#cabbage)Cabbage$()$(li)$(l:tfc:mechanics/crops#canola)Canola$()$(li)$(l:tfc:mechanics/crops#carrot)Carrot$()$(li)$(l:tfc:mechanics/crops#cucumber)Cucumber$()$(li)$(l:tfc:mechanics/crops#flax)Flax$()$(li)$(l:tfc:mechanics/crops#garlic)Garlic$()$(li)$(l:tfc:mechanics/crops#green_bean)Green Bean$()$(li)$(l:tfc:mechanics/crops#jute)Jute$()$(li)$(l:tfc:mechanics/crops#lentil)Lentil$()$(li)$(l:tfc:mechanics/crops#maize)Maize$()$(li)$(l:tfc:mechanics/crops#melon)Melon$()",
+			"text": "$(li)$(l:tfc:mechanics/crops#barley)Gerste$()$(li)$(l:tfc:mechanics/crops#beet)Rübe$()$(li)$(l:tfc:mechanics/crops#cabbage)Kohl$()$(li)$(l:tfc:mechanics/crops#canola)Raps$()$(li)$(l:tfc:mechanics/crops#carrot)Karotte$()$(li)$(l:tfc:mechanics/crops#cucumber)Gurke$()$(li)$(l:tfc:mechanics/crops#flax)Flachs$()$(li)$(l:tfc:mechanics/crops#garlic)Knoblauch$()$(li)$(l:tfc:mechanics/crops#green_bean)Grüne Bohne$()$(li)$(l:tfc:mechanics/crops#jute)Jute$()$(li)$(l:tfc:mechanics/crops#lentil)Linse$()$(li)$(l:tfc:mechanics/crops#maize)Mais$()$(li)$(l:tfc:mechanics/crops#melon)Melone$()",
 			"title": "Enthält"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(li)$(l:tfc:mechanics/crops#oat)Oat$()$(li)$(l:tfc:mechanics/crops#onion)Onion$()$(li)$(l:tfc:mechanics/crops#papyrus)Papyrus$()$(li)$(l:tfc:mechanics/crops#potato)Potato$()$(li)$(l:tfc:mechanics/crops#pumpkin)Pumpkin$()$(li)$(l:tfc:mechanics/crops#radish)Radish$()$(li)$(l:tfc:mechanics/crops#red_bell_pepper)Red Bell Pepper$()$(li)$(l:tfc:mechanics/crops#rice)Rice$()$(li)$(l:tfc:mechanics/crops#rye)Rye$()$(li)$(l:tfc:mechanics/crops#soybean)Soybean$()$(li)$(l:tfc:mechanics/crops#squash)Squash$()$(li)$(l:tfc:mechanics/crops#sugarcane)Sugarcane$()$(li)$(l:tfc:mechanics/crops#sunflower)Sunflower$()$(li)$(l:tfc:mechanics/crops#tomatoes)Tomato$()$(li)$(l:tfc:mechanics/crops#wheat)Wheat$()$(li)$(l:tfc:mechanics/crops#yellow_bell_pepper)Yellow Bell Pepper$()"
+			"text": "$(li)$(l:tfc:mechanics/crops#oat)Hafer$()$(li)$(l:tfc:mechanics/crops#onion)Zwiebel$()$(li)$(l:tfc:mechanics/crops#papyrus)Papyrus$()$(li)$(l:tfc:mechanics/crops#potato)Kartoffel$()$(li)$(l:tfc:mechanics/crops#pumpkin)Kürbis$()$(li)$(l:tfc:mechanics/crops#radish)Radieschen$()$(li)$(l:tfc:mechanics/crops#red_bell_pepper)Rote Paprika$()$(li)$(l:tfc:mechanics/crops#rice)Reis$()$(li)$(l:tfc:mechanics/crops#rye)Roggen$()$(li)$(l:tfc:mechanics/crops#soybean)Sojabohne$()$(li)$(l:tfc:mechanics/crops#squash)Kürbis$()$(li)$(l:tfc:mechanics/crops#sugarcane)Zuckerrohr$()$(li)$(l:tfc:mechanics/crops#sunflower)Sonnenblume$()$(li)$(l:tfc:mechanics/crops#tomatoes)Tomate$()$(li)$(l:tfc:mechanics/crops#wheat)Weizen$()$(li)$(l:tfc:mechanics/crops#yellow_bell_pepper)Gelbe Paprika$()"
 		},
 		{
 			"type": "tfc:rock_knapping_recipe",
-			"text": "To get started, a $(thing)Stone Hoe$() can be $(thing)knapped$() as seen above.",
-			"title": "Growing Crops",
+			"text": "Um anzufangen, eine $(thing)Steinhacke$() kann man durch $(thing)behauen$() von Steinen hergestellt werden, wie man oberhalb sieht.",
+			"title": "Wachsende Ernte",
 			"recipes": [
 				"tfg:rock_knapping/stone_hoe_head_1"
 			]
 		},
 		{
 			"type": "patchouli:crafting",
-			"text": "Once the hoe head is knapped, it can be crafted into a Hoe.$(br2)Hoes function as in Vanilla, by right clicking dirt blocks to turn them into $(thing)Farmland$(). They can also be used to convert $(thing)Rooted Dirt$() into $(thing)Dirt$().",
+			"text": "Sobald der Hackenkopf behauen wurde, kann er zu einer Hacke verarbeitet werden.$(br2)Hacken funktionieren wie in Vanilla, indem man mit einem Rechtsklick auf Erdblöcke diese in $(thing)Ackerboden$() umwandelt. Sie können außerdem verwendet werden, um $(thing)Wurzelerde$() in $(thing)Erde$() umzuwandeln.",
 			"recipe": "gtceu:shaped/hoe_stone"
 		},
 		{
 			"type": "patchouli:text",
 			"text": "All crops need to be planted on farmland in order to grow. Some crops have additional requirements such as being waterlogged or requiring a stick to grow on.$(br2)Crops do not need $(thing)nutrients$() to grow, but they certainly help. There are three nutrients: $(b)Nitrogen$(), $(6)Phosphorous$(), and $(d)Potassium$(). Each crop has a favorite nutrient.",
-			"title": "Growing Crops"
+			"title": "Wachsende Ernte"
 		},
 		{
 			"type": "patchouli:text",

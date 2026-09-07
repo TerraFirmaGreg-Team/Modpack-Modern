@@ -8,5 +8,21 @@
 	"ali.property.value.size": "Größe: %s",
 	"ali.property.value.variant": "Variante: %s",
 	"ali.property.value.zoom": "Zoom: %s",
-	"ali.util.advanced_loot_info.accepts": "Akzeptiert:"
+	"ali.util.advanced_loot_info.accepts": "Akzeptiert:",
+	"ali.enum.dye_color.brown": "Braun",
+	"ali.enum.dye_color.cyan": "Türkis",
+	"ali.enum.dye_color.gray": "Grau",
+	"ali.enum.dye_color.green": "Grün",
+	"ali.enum.dye_color.light_blue": "Hellblau",
+	"ali.enum.dye_color.light_gray": "Hellgrau",
+	"ali.enum.dye_color.lime": "Lime",
+	"ali.enum.dye_color.magenta": "Violett",
+	"ali.enum.dye_color.orange": "Orange",
+	"ali.enum.dye_color.pink": "Rosa",
+	"ali.enum.dye_color.red": "Rot",
+	"ali.enum.dye_color.white": "Weiß",
+	"ali.enum.dye_color.yellow": "Gelb",
+	"ali.enum.equipment_slot.chest": "Truhe",
+	"ali.type.entry.empty": "Leer",
+	"ali.type.entry.group": "Gruppe:"
 }
