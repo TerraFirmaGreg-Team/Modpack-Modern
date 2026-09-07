@@ -65,7 +65,7 @@
 	"config.tacz.client.render.first_person_bullet_tracer_enable.desc": "Czy renderować smugi pocisków w widoku z pierwszej osoby",
 	"config.tacz.client.render.gun_hud_enable": "Włącz HUD broni",
 	"config.tacz.client.render.gun_hud_enable.desc": "Czy wyświetlać HUD broni?",
-	"config.tacz.client.render.gun_lod_render_distance": "Odległość tenderowania lod broni",
+	"config.tacz.client.render.gun_lod_render_distance": "Odległość renderowania LOD broni",
 	"config.tacz.client.render.gun_lod_render_distance.desc": "Jak daleko wyświetlać model lod, 0 oznacza zawsze wyświetlaj",
 	"config.tacz.client.render.head_shot_debug_hitbox": "Hitbox debugowania strzału w głowę",
 	"config.tacz.client.render.head_shot_debug_hitbox.desc": "Czy wyświetlać hitbox strzału w głowę",

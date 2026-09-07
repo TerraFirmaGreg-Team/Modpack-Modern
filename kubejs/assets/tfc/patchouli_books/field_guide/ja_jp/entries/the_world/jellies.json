@@ -1,24 +1,24 @@
 {
-	"name": "Jellies",
+	"name": "ジェリー",
 	"category": "tfc:the_world",
 	"icon": "jellies:jellie/slime_ball/plant",
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "$(thing)Jellies$() are friendly blobs of slime that appear on various planets and environments. $(br2)They have a variety of uses, but most commonly, they produce type-specific $(thing)slime balls$(). $(br2)Did I mention they are very friendly? If you raise their familiarity high enough, they will become pets and happily follow you around!"
+			"text": "$(thing)ジェリー$()は、さまざまな惑星や環境に現れる、親しみやすいねばねばスライムです。$(br2)用途は多岐にわたりますが、最も一般的なのは、種類に応じた$(thing)スライムボール$()を作り出すことです。$(br2)彼らがとても親しみやすいことは、もうお伝えしましたっけ？親密度を十分に高めると、ペットになって、嬉しそうにあなたの後をついて回ってくれるようになります！"
 		},
 		{
 			"type": "patchouli:image",
 			"images": [
 				"tfg:textures/gui/field_guide/jellies.png"
 			],
-			"text": "$(thing)Jellies$() are hermaphroditic and can reproduce with any other $(thing)jellie$()!",
+			"text": "$(thing)ジェリー$()は雌雄同体であり、他のどの$(thing)ジェリー$()とも繁殖することができます！",
 			"border": true
 		},
 		{
 			"type": "patchouli:text",
-			"title": "Produce",
-			"text": "$(thing)Jellies$() are quite picky and will refuse to produce anything outside of their natural habitat; however, they will breed just fine in any environment. $(br2)They also dislike machines and will only give their produce when fed manually by a player.$(br2)$(#B0B0B0)$(o)Or maybe they just want attention..."
+			"title": "生産",
+			"text": "$(thing)ジェリー$()はかなり気難しく、本来の生息地以外では何も生産してくれません。しかし、どんな環境でも問題なく繁殖します。$(br2)また、機械を嫌うため、プレイヤーが手作業で餌を与えた場合にのみ、収穫物を提供してくれます。$(br2)$(#B0B0B0)$(o)あるいは、単に注目されたいだけなのかもしれません……"
 		},
 		{
 			"type": "patchouli:crafting",

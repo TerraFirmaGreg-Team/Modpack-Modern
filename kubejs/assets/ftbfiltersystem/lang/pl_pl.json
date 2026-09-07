@@ -33,7 +33,7 @@
   "ftbfiltersystem.gui.filter_bad": "Nie udało się przetworzyć filtra!",
   "ftbfiltersystem.gui.filter_ok": "Filtr poprawnie przetworzony",
   "ftbfiltersystem.gui.fuzzy_match": "Luźne dopasowanie NBT?",
-  "ftbfiltersystem.gui.item_source.creative": "Kreatywny",
+  "ftbfiltersystem.gui.item_source.creative": "Tryb kreatywny",
   "ftbfiltersystem.gui.item_source.inventory": "Ekw",
   "ftbfiltersystem.gui.item_source.mod": "Mod",
   "ftbfiltersystem.gui.nbt_bad": "Nie udało się przetworzyć SNBT!",
@@ -46,5 +46,5 @@
   "ftbfiltersystem.message.not_matched": "Filtr nie pasuje: %s",
   "ftbfiltersystem.message.parse_failed": "Nie udało się przetworzyć filtra: %s",
   "item.ftbfiltersystem.smart_filter": "Inteligentny filtr",
-  "item.ftbfiltersystem.smart_filter.tooltip.1": "PPM: konfiguruj filtr"
+  "item.ftbfiltersystem.smart_filter.tooltip.1": "Kliknij PPM: skonfiguruj filtr"
 }

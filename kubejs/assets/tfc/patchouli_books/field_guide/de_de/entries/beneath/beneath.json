@@ -1,25 +1,25 @@
 {
-	"name": "What is the Beneath?",
+	"name": "Was ist der Untergrund?",
 	"category": "tfc:beneath",
 	"icon": "minecraft:deepslate",
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "The $(thing)Beneath$() is a network of very deep caves, directly below the Overworld.$(br)This dimension is balanced around mid to late $(thing)Primitive Age$(). It's more dangerous than the surface, so we recommend a full set of bronze armor and a metal shield as a minimum, as well as plenty of food, water, and other tools."
+			"text": "Der $(thing)Beneath$() ist ein Netzwerk von sehr tiefen Höhlen, die direkt unter der Oberfläche liegen.$(br)Diese Dimension wird zwischen Mitte und Ende des $(thing)Primitive Alter$() ausgelegt. Sie ist gefährlicher als die Oberfläche, daher empfehlen wir mindestens ein vollständiges Set Bronzerüstung und einen Metallschild, sowie viele Lebensmittel, Wasser und andere Werkzeuge."
 		},
 		{
 			"type": "patchouli:text",
-			"text": "It differs from the usual Nether experience in a few ways:$(li)You enter it $(l:beneath/beneath#entering)differently$()$(li)Water doesn't instantly evaporate$(li)A bed works like normal$(li)Traveling Beneath is no faster than in the Overworld$(br2)In return, you can find resources like $(thing)Kaolin Clay$(), $(thing)Graphite$(), richer and more exposed $(thing)ore veins$(), as well as other treasures."
+			"text": "Es unterscheidet sich in einigen Punkten von der üblichen Nethererfahrung:$(li) Man betritt sie $(l:underath/underath#entering) anders $()$(li)Wasser verdampft nicht sofort$(li)Ein Bett funktioniert wie normal$(li)Reisen im Untergrund sind nicht schneller als an der Oberfläche.$(br2) Im Gegenzug können Ressourcenadern wie $(thing)Kaolin Clay$(), $(thing)Graphite$(), reicher und mehr aufgedeckte $(thing)Erzadern$(), sowie andere Schätze finden."
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "entering",
-			"title": "Entering the Beneath",
-			"text": "To travel Beneath, simply stand on overworld bedrock for a little while. To get down to the bedrock, you'll have to either break through the Hornfels layer with $(item)Explosives$() or $(item)Steel+ Tools$(), or find a cave with the more brittle $(thing)Keratophyre$()."
+			"title": "Den Untergrund betreten",
+			"text": "Um den Untergrund zu bereisen, bleibe für einige Zeit auf Grundgestein stehen. Um zum Grundgestein zu kommen, musst du entweder die Hornfels-Schicht mit $(item)Explosives$() durchbrechen oder $(item)Steel+ Werkzeuge$(), oder finde eine Höhle mit dem brüchigeren $(thing)Keratophyre$()."
 		},
 		{
 			"type": "patchouli:text",
-			"text": "To return, stand directly below ceiling bedrock in the same fashion.$(br2)It's a good idea to $(thing)make a note$() of where you entered, so you can return to the same place in the overworld whenever you're ready to leave."
+			"text": "Um zurückzukehren, stell dich auf die gleiche Art und Weise direkt unter den Deckenboden.$(br2) Es ist eine gute Idee, $(thing)eine Notiz$() zu machen, wo du gespawnt bist, sodass du an dem gleichen Ort in der Oberfläche zurückkehren kannst, wann immer du bereit bist zurückzukehren."
 		}
 	],
 	"read_by_default": true,

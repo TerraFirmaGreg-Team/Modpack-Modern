@@ -1,35 +1,35 @@
 {
-	"name": "Temperature Management",
+	"name": "温度管理",
 	"category": "tfc:beneath",
 	"icon": "minecraft:ice",
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "The Beneath is hot! The temperature starts at 20°C at the very top, and only gets hotter as you descend.$(br2)$(item)Burlap$(), $(item)Linen$(), and $(item)Silk$() clothing will help, but here are some other ways to stay cool!"
+			"text": "深界は暑いです！最上層の気温は20°Cから始まり、下へ降りるにつれてさらに暑くなります。$(br2)$(item)麻布$()、$(item)リネン$()、$(item)シルク$()の服が役立ちますが、他にも涼しく過ごす方法があります！"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "minecraft:water_bucket",
-			"title": "Water",
-			"text": "Water can be found all over the upper levels of the Beneath. Taking a quick dip can cool you off fast!"
+			"title": "水",
+			"text": "深界の上層部には至る所に水があります。さっと水に浸かれば、すぐに涼しくなれます！"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Ice",
+			"title": "氷",
 			"item": "minecraft:packed_ice",
-			"text": "Bring along some $(thing)Ice$()! Standing near it will lower the ambient temperature. Ice can be harvested on the surface using a $(item)Saw$(), and the resulting Ice Shavings can be turned into $(item)Packed Ice$(). $(thing)Packed$() and $(thing)Blue$() ice won't melt."
+			"text": "$(thing)氷$()をいくつか持っていきましょう！氷ブロックを設置すると、周囲の温度が下がります。氷は地表で$(item)のこぎり$()を使って採取でき、得られた氷の削りくずは$(item)氷塊$()に変えることができます。$(thing)氷塊$()や$(thing)B青氷$()は溶けません。"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:ice_bucket",
 			"title": "氷泥（アイススラッシュ）",
-			"text": "Ahhhh, so refreshing! Cools you down by 4°C."
+			"text": "スカッと爽快！ 4°Cも涼しくなります。"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Blue Steel Equipment",
+			"title": "青鋼の装備",
 			"item": "create:netherite_diving_helmet,create:netherite_backtank,minecraft:netherite_leggings,create:netherite_diving_boots",
-			"text": "Looking for something more permanent? The $(thing)Blue Steel Diving Set$() will drastically lower your temperature, and lets you swim in lava too!$(br2)$(item)Lavaproof Hides$() can be obtained from the native $(thing)Red Elk$() or looted from Bastions."
+			"text": "もっと長持ちするものをお探しですか？ $(thing)青鋼のダイビングセット$() を使えば、溶岩の中を泳ぐことが可能になります！$(br2)$(item)耐火毛皮$() は、この土地に生息する $(thing)アカゲシカ$() から入手するか、砦から略奪することができます。"
 		},
 		{
 			"type": "patchouli:crafting",

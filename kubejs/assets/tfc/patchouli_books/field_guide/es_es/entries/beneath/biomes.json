@@ -9,7 +9,7 @@
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Salt Caves",
+			"title": "Cuevas de sal",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/salt_caves.png"
 			],
@@ -54,7 +54,7 @@
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Geothermal Springs",
+			"title": "Aguas geo-termales",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/geothermal_springs.png"
 			],
@@ -99,7 +99,7 @@
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Basalt Deltas",
+			"title": "Deltas de basalto",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/basalt_deltas.png"
 			],

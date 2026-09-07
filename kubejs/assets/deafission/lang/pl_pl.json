@@ -42,6 +42,7 @@
 	"deafission.recipe.heat": "Ciepło: %s JC",
 	"deafission.recipe.heat_per_tick": "Ciepło: -%s HU/t",
 	"deafission.recipe.temp": "Temp: %s°",
+	"deafission.redstone_port.mode.fuels": "Zwraca paliwa/uchwyty",
 	"deafission.redstone_port.mode.heat": "Zwraca ciepło/maks",
 	"deafission.subtitles.reactor_loop": "Głośne brzęczenie",
 	"emi.category.deafission.component_fr": "Komponenty reaktora",
@@ -54,6 +55,8 @@
 	"emi.deafission.throttle_component_key": "Przepustnica:",
 	"material.deafission.flibe": "Chłodziwo FLiBe",
 	"material.deafission.flibe_hot": "Chłodziwo FLiBe (Gorące)",
+	"tooltip.deafission.fuelcell.avgheat": "Średnie ciepło w czasie życia: %s",
+	"tooltip.deafission.fuelcell.avgheat_none": "Średnie ciepło w czasie życia: §7--- §r",
 	"tooltip.deafission.fuelcell.heat": "Ciepło: %s%%",
 	"tooltip.deafission.fuelcell.rodcount": "Pręty: %s"
 }
