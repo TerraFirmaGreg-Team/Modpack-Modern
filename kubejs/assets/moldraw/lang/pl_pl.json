@@ -15,6 +15,7 @@
 	"config.moldraw.option.showMolecules": "Pokaż rysunki cząsteczek",
 	"config.moldraw.option.spinMolecules": "Pozwól cząsteczkom na kręcenie się",
 	"config.moldraw.option.spinSpeedMultiplier": "Mnożnik prędkości obracania",
+	"config.moldraw.option.useMaterialColors": "Używaj kolorów materiałów GregTech dla pierwiastków",
 	"tooltip.moldraw.shift_view_alloy": "§7§oPrzytrzymaj (Shift), aby zobaczyć skład stopu§r",
 	"tooltip.moldraw.shift_view_molecule": "§7§oPrzytrzymaj (Shift), aby zobaczyć strukturę molekularną§r"
 }

@@ -7,5 +7,9 @@
   "item.waterflasks.leather_flask": "Leere Lederflasche",
   "item.waterflasks.leather_flask.filled": "%s Lederflasche",
   "item.waterflasks.leather_side": "Lederflaschenseite",
-  "item.waterflasks.unfinished_iron_flask": "Unfertige Eisenflasche"
+  "item.waterflasks.red_steel_flask": "Rotstahlflasche",
+  "item.waterflasks.red_steel_flask.filled": "%s Rotstahlflasche",
+  "item.waterflasks.unfinished_iron_flask": "Unfertige Eisenflasche",
+  "item.waterflasks.unfinished_red_steel_flask": "Unfertige Flasche aus Rotstahl",
+  "waterflasks.item.flaskbreak": "Flaschenbruch"
 }
