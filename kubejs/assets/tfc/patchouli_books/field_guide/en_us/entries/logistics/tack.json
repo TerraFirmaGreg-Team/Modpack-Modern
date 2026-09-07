@@ -1,0 +1,125 @@
+{
+    "name": "Tack & Carts",
+    "category": "tfc:logistics",
+    "icon": "sns:metal/horseshoe/steel",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(li)$(bold)$(l:logistics/tack#saddle)Saddle$()$(li)$(bold)$(l:logistics/tack#armor)Horse Armor$()$(li)$(bold)$(l:logistics/tack#horseshoes)Horseshoes$()$(li)$(bold)$(l:logistics/tack#supply_cart)Supply Cart$()$(li)$(bold)$(l:logistics/tack#plow)Plow$()$(li)$(bold)$(l:logistics/tack#animal_cart)Animal Cart$()$(li)$(bold)$(l:logistics/tack#paving_cart)Paving Cart$()",
+            "title": "Index",
+            "anchor": "index"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "saddle",
+            "title": "Saddle",
+            "item": "minecraft:saddle",
+            "text": "A $(item)Saddle$() can be equipped on any adult $(l:agriculture/animal_husbandry#equines)Equine$() or $(l:agriculture/animal_husbandry#equines)Camilide Mammal$() when their maturity is at least above 15%. Saddles are crafted from $(l:agriculture/leather_making)Leather$() and allow you to ride suitable animals to direct their movements."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "armor",
+            "title": "Horse Armor",
+            "item": "minecraft:leather_horse_armor,tfc:metal/horse_armor/bismuth_bronze,tfc:metal/horse_armor/black_bronze,tfc:metal/horse_armor/bronze,tfc:metal/horse_armor/copper,tfc:metal/horse_armor/wrought_iron,tfc:metal/horse_armor/steel,tfc:metal/horse_armor/black_steel,tfc:metal/horse_armor/red_steel,tfc:metal/horse_armor/blue_steel",
+            "text": "$(item)Horse Armor$() can be equipped on any adult $(l:agriculture/animal_husbandry#equines)Horse$() when their maturity is at least above 15%. Horse armor can be made from $(l:agriculture/leather_making)Leather$() and $(l:craftsmanship/metallurgy)Metal$() and provide extra protection to your mount. Leather armor may also be dyed."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "horseshoes",
+            "title": "Horseshoes",
+            "item": "sns:metal/horseshoes/steel,sns:metal/horseshoes/black_steel,sns:metal/horseshoes/blue_steel,sns:metal/horseshoes/red_steel",
+            "text": "$(item)Horseshoes$() are smithed individually from types of steel and then combined into sets. When equiped on any $(l:agriculture/animal_husbandry#equines)Equine$() or $(l:agriculture/animal_husbandry#equines)Camilide Mammal$() they provide great benefits to their stats which can be viewed in the item description.$(br)$(bold)TIP:$() It's a good idea to tie up your mount properly when using a higher tier horseshoes."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "supply_cart",
+            "title": "Supply Cart",
+            "item": "tag:tfcastikorcarts:supply_cart",
+            "text": "$(item)Supply Carts$() can be attached to ridden animals with $(item)$(k:key.astikorcarts.desc)$() or pulled manually. Supply carts can hold a large amount of items in their storage, accessed with $(item)$(k:key.sneak)-$(k:key.use)$(). However, too many items, or a few very heavy items will cause your mount to slow down considerably."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfcastikorcarts:supply_cart/oak",
+            "scale": 0.5,
+            "name": " ",
+            "text": "The supply cart will physically display the first few items in its inventory."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "plow",
+            "title": "Plow",
+            "item": "tag:tfcastikorcarts:plow",
+            "text": "A $(item)Plow$() can be attached to ridden animals with $(item)$(k:key.astikorcarts.desc)$() or pulled manually. Plows can hold 3 tools, accessed with $(item)$(k:key.sneak)-$(k:key.use)$(). The plow will attempt to use these tools on blocks below them when engaged with $(item)$(k:key.use)$(). Meaning that they can use $(thing)Hoes and Scythes$() to till soil, use $(thing)Shovels and Spades$() to pave paths, and even use $(thing)Axes$() to strip logs."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfcastikorcarts:plow/oak",
+            "scale": 0.5,
+            "name": " ",
+            "text": "The plow will display its tools. It will be engaged when its arms are lowered."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "animal_cart",
+            "title": "Animal Cart",
+            "item": "tag:tfcastikorcarts:animal_cart",
+            "text": "An $(item)Animal Cart$() can be attached to ridden animals with $(item)$(k:key.astikorcarts.desc)$() or pulled manually. Animal carts can hold up to $(thing)2 animals$(), which automatically enter the cart when run over with it."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfcastikorcarts:animal_cart/oak",
+            "scale": 0.5,
+            "name": " ",
+            "text": "The animal cart can even hold other players."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "Paving Cart",
+            "anchor": "paving_cart",
+            "item": "tfg:rnr_plow",
+            "text": "The $(thing)Paving Cart$() is a specialized cart used for laying down road surfaces quickly and efficiently. Read more about them in the entry for $(l:logistics/roads#paving_cart)Roads$()."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfg:rnr_plow",
+            "scale": 0.5,
+            "name": "Paving Cart",
+            "text": "The paving cart will be engaged when its blades are lowered."
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Further Reading",
+            "anchor": "relations",
+            "entries": [
+                "tfc:craftsmanship/metallurgy",
+                "tfc:the_world/wild_animals",
+                "tfc:agriculture/animal_husbandry",
+                "tfc:agriculture/leather_making",
+                "tfc:logistics/roads",
+                "tfc:logistics/exploration_gear"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 3,
+    "extra_recipe_mappings": {
+      "minecraft:saddle": 1,
+      "minecraft:leather_horse_armor": 2,
+      "tfc:metal/horse_armor/bismuth_bronze": 2,
+      "tfc:metal/horse_armor/black_bronze": 2,
+      "tfc:metal/horse_armor/bronze": 2,
+      "tfc:metal/horse_armor/copper": 2,
+      "tfc:metal/horse_armor/wrought_iron": 2,
+      "tfc:metal/horse_armor/steel": 2,
+      "tfc:metal/horse_armor/black_steel": 2,
+      "tfc:metal/horse_armor/red_steel": 2,
+      "tfc:metal/horse_armor/blue_steel": 2,
+      "sns:metal/horseshoes/steel": 3,
+      "sns:metal/horseshoes/black_steel": 3,
+      "sns:metal/horseshoes/blue_steel": 3,
+      "sns:metal/horseshoes/red_steel": 3,
+      "tag:tfcastikorcarts:supply_cart": 4,
+      "tag:tfcastikorcarts:plow": 6,
+      "tag:tfcastikorcarts:animal_cart": 8
+    }
+}

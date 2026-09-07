@@ -1,0 +1,137 @@
+{
+    "name": "Exploration Gear",
+    "category": "tfc:logistics",
+    "icon": "sns:hiking_boots",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(li)$(bold)$(l:logistics/exploration_gear#hiking_boots)Hiking Boots$()$(li2)$(l:logistics/exploration_gear#safety_boots)Safety Boots$()$(li)$(bold)$(l:logistics/exploration_gear#canes)Canes$()$(li)$(bold)$(l:logistics/exploration_gear#snowshoes)Snowshoes$()$(li)$(bold)$(l:logistics/exploration_gear#snorkel)Snorkel$()$(li)$(bold)$(l:logistics/exploration_gear#flippers)Flippers$()$(li)$(bold)$(l:logistics/exploration_gear#diving_suit)Diving Suit$()$(li2)$(l:logistics/exploration_gear#lava_diving_suit)Lava Diving Suit$()$(li)$(bold)$(l:logistics/exploration_gear#digger_helmet)Digger Helmet$()$(li)$(bold)$(l:logistics/exploration_gear#grappling_hook)Grappling Hook$()$(li2)$(l:logistics/exploration_gear#harpoon)Harpoon$()",
+            "title": "Index",
+            "anchor": "index"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "Hiking Boots",
+            "anchor": "hiking_boots",
+            "item": "sns:hiking_boots",
+            "text": "Every explorer needs a good pair of boots.$(br)$(thing)Hiking Boots$() allow you to:$(li)Quickly walk through shrubbery.$(li)Obtain a minor speed boost.$(li)Obtain a minor increase in safe fall height.$(li)Auto-walk up blocks, enabled with $(item)$(k:sns.key.stepUpToggle)$()"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "safety_boots",
+            "title": "Safety Boots",
+            "item": "sns:steel_toe_hiking_boots,sns:black_steel_toe_hiking_boots,sns:red_steel_toe_hiking_boots,sns:blue_steel_toe_hiking_boots",
+            "text": "Various steels can be integrated into your hiking boots to give them an increase in protection. $(thing)Blue and Red Steel$() hiking boots provide additional environmental protection from extreme temperatures."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "canes",
+            "title": "Canes",
+            "item": "tfccanes:walking_cane,tfccanes:refined_walking_cane",
+            "text": "$(thing)Walking Canes$() provide a similar effect to hiking boots but must be held in the hand. Their step height effect can even stack with hiking boots, allowing you to auto-step up even 2-block tall walls."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "snowshoes",
+            "title": "Snowshoes",
+            "item": "tfg:snowshoes",
+            "text": "When worn on the feet, $(thing)Snowshoes$() remove the slowdown penalty when walking on snow and allow you to travel on powdered snow."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "snorkel",
+            "title": "Snorkel",
+            "item": "tfg:snorkel",
+            "text": "When worn on the face, a $(thing)Snorkel$() allows you to breathe for an extra $(item)15 seconds$() underwater."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "flippers",
+            "title": "Flippers",
+            "item": "tfg:flippers",
+            "text": "When worn on the feet, $(thing)Flippers$() improves your agility and speed when swimming underwater."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "diving_suit",
+            "title": "Diving Suit",
+            "item": "create:copper_diving_helmet,create:copper_diving_boots,create:copper_backtank",
+            "text": "The $(item)Copper Diving Helmet and Backtank$() allow the wearer to stay underwater indefinitely until the backtank runs out of air. You can refill the tank by supplying it with $(thing)mechanical power$(). Wearing $(item)Copper Diving Boots$() allows you to move better on the ocean floor and prevents $(thing)mechanical belts$() and $(thing)lighter-than-air gases$() from effecting you."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "lava_diving_suit",
+            "title": "Lava Diving Suit",
+            "item": "create:netherite_diving_helmet,create:netherite_diving_boots,create:netherite_backtank,minecraft:netherite_leggings",
+            "text": "The $(thing)Blue Steel Diving Suit$() works similarly to the $(l:logistics/exploration_gear#diving_suit)Diving Suit$() but instead of allowing you to breath underwater, it allows you to breath under lava. To work, the whole set must be worn to protect you from the intense heat."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "digger_helmet",
+            "title": "Digger Helmets",
+            "item": "diggerhelmet:digger_helmet,diggerhelmet:copper_digger_helmet,diggerhelmet:bismuth_bronze_digger_helmet,diggerhelmet:black_bronze_digger_helmet,diggerhelmet:bronze_digger_helmet,diggerhelmet:wrought_iron_digger_helmet,diggerhelmet:steel_digger_helmet,diggerhelmet:black_steel_digger_helmet,diggerhelmet:red_steel_digger_helmet,diggerhelmet:blue_steel_digger_helmet,diggerhelmet:wool_lining,diggerhelmet:silk_lining,diggerhelmet:mining_speed_modifier,diggerhelmet:auto_drink_modifier",
+            "text": "$(thing)Digger Helmets$() provide a permanent ambient lightsource around the player thanks to the candle on your head. They also come with some helpful modifier upgrades such as the $(item)Mining Speed Modifier$(), $(item)Auto Drink Modifier$(), or the $(thing)Temperature Insulation Linings$()."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "grappling_hook",
+            "title": "Grappling Hook",
+            "item": "grapplemod:grapplinghook",
+            "text": "The $(thing)Grappling Hook$() fires off a line of rope with $(item)$(k:key.attack)$() and anchors against blocks to let you swing around and traverse vertically very quickly. You can craft the grappling hook with various items to upgrade it."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "harpoon",
+            "title": "Harpoon",
+            "item": "species:harpoon",
+            "text": "The $(thing)Harpoon$() is very similar to the $(l:logistics/exploration_gear#grappling_hook)Grappling Hook$() but is much more restrictive, having no upgrades and being able to only be launched straight upwards with $(item)$(k:key.use)$(). However, It does allow you to directly ascend up the rope with $(item)$(k:key.jump)$()."
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Further Reading",
+            "anchor": "relations",
+            "entries": [
+                "tfc:agriculture/weaving",
+                "tfc:agriculture/leather_making",
+                "tfc:logistics/roads"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 2,
+    "extra_recipe_mappings": {
+      "sns:hiking_boots": 1,
+      "sns:steel_toe_hiking_boots": 2,
+      "sns:black_steel_toe_hiking_boots": 2,
+      "sns:red_steel_toe_hiking_boots": 2,
+      "sns:blue_steel_toe_hiking_boots": 2,
+      "tfccanes:walking_cane": 3,
+      "tfccanes:refined_walking_cane": 3,
+      "tfg:snowshoes": 4,
+      "tfg:snorkel": 5,
+      "tfg:flippers": 6,
+      "create:copper_diving_helmet": 7,
+      "create:copper_diving_boots": 7,
+      "create:copper_backtank": 7,
+      "create:netherite_diving_helmet": 8,
+      "create:netherite_diving_boots": 8,
+      "create:netherite_backtank": 8,
+      "minecraft:netherite_legging": 8,
+      "diggerhelmet:digger_helmet": 9,
+      "diggerhelmet:copper_digger_helmet": 9,
+      "diggerhelmet:bismuth_bronze_digger_helmet": 9,
+      "diggerhelmet:black_bronze_digger_helmet": 9,
+      "diggerhelmet:bronze_digger_helmet": 9,
+      "diggerhelmet:wrought_iron_digger_helmet": 9,
+      "diggerhelmet:steel_digger_helmet": 9,
+      "diggerhelmet:black_steel_digger_helmet": 9,
+      "diggerhelmet:red_steel_digger_helmet": 9,
+      "diggerhelmet:blue_steel_digger_helmet": 9,
+      "diggerhelmet:wool_lining": 9,
+      "diggerhelmet:silk_lining": 9,
+      "diggerhelmet:mining_speed_modifier": 9,
+      "diggerhelmet:auto_drink_modifier": 9,
+      "grapplemod:grapplinghook": 10,
+      "species:harpoon": 11
+    }
+}

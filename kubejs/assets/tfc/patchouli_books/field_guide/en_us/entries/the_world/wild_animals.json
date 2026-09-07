@@ -11,11 +11,11 @@
         },
         {
             "type": "patchouli:text",
-            "text": "$(li2)$(l:the_world/wild_animals#donkey)Donkey$()$(li2)$(l:the_world/wild_animals#mule)Mule$()$(li2)$(l:the_world/wild_animals#horse)Horse$()$(li)$(bold)$(l:the_world/wild_animals#predators)Predators$()$(li2)$(l:the_world/wild_animals#polar_bear)Polar Bear$()$(li2)$(l:the_world/wild_animals#black_bear)Black Bear$()$(li2)$(l:the_world/wild_animals#grizzly_bear)Grizzly Bear$()$(li2)$(l:the_world/wild_animals#cougar)Cougar$()$(li2)$(l:the_world/wild_animals#panther)Panther$()$(li2)$(l:the_world/wild_animals#lion)Lion$()$(li2)$(l:the_world/wild_animals#tiger)Tiger$()$(li2)$(l:the_world/wild_animals#sabertooth)Sabertooth$()$(li2)$(l:the_world/wild_animals#wolf)Wolf$()$(li2)$(l:the_world/wild_animals#direwolf)Direwolf$()"
+            "text": "$(li2)$(l:the_world/wild_animals#donkey)Donkey$()$(li2)$(l:the_world/wild_animals#mule)Mule$()$(li2)$(l:the_world/wild_animals#horse)Horse$()$(li2)$(l:the_world/wild_animals#dromedary_camel)Dromedary Camel$()$(li2)$(l:the_world/wild_animals#bactrian_camel)Bactrian Camel$()$(li)$(bold)$(l:the_world/wild_animals#predators)Predators$()$(li2)$(l:the_world/wild_animals#polar_bear)Polar Bear$()$(li2)$(l:the_world/wild_animals#black_bear)Black Bear$()$(li2)$(l:the_world/wild_animals#grizzly_bear)Grizzly Bear$()$(li2)$(l:the_world/wild_animals#cougar)Cougar$()$(li2)$(l:the_world/wild_animals#panther)Panther$()$(li2)$(l:the_world/wild_animals#lion)Lion$()$(li2)$(l:the_world/wild_animals#tiger)Tiger$()$(li2)$(l:the_world/wild_animals#sabertooth)Sabertooth$()$(li2)$(l:the_world/wild_animals#wolf)Wolf$()"
         },
         {
             "type": "patchouli:text",
-            "text": "$(li2)$(l:the_world/wild_animals#hyena)Hyena$()$(li2)$(l:the_world/wild_animals#crocodile)Crocodile$()$(li2)$(l:the_world/wild_animals#ocelot)Ocelot$()$(bold)$(li)$(l:the_world/wild_animals#ramming_prey)Ramming Prey$()$(li2)$(l:the_world/wild_animals#boar)Boar$()$(li2)$(l:the_world/wild_animals#moose)Moose$()$(li2)$(l:the_world/wild_animals#wildebeest)Wildebeest$()$(li2)$(l:the_world/wild_animals#bison)Bison$()$(bold)$(li)$(l:the_world/wild_animals#prey)Prey$()$(li2)$(l:the_world/wild_animals#rabbit)Rabbit$()$(li2)$(l:the_world/wild_animals#fox)Fox$()$(li2)$(l:the_world/wild_animals#deer)Deer$()$(li2)$(l:the_world/wild_animals#caribou)Caribou$()$(li2)$(l:the_world/wild_animals#gazelle)Gazelle$()"
+            "text": "$(li2)$(l:the_world/wild_animals#direwolf)Direwolf$()$(li2)$(l:the_world/wild_animals#hyena)Hyena$()$(li2)$(l:the_world/wild_animals#crocodile)Crocodile$()$(li2)$(l:the_world/wild_animals#ocelot)Ocelot$()$(bold)$(li)$(l:the_world/wild_animals#ramming_prey)Ramming Prey$()$(li2)$(l:the_world/wild_animals#boar)Boar$()$(li2)$(l:the_world/wild_animals#moose)Moose$()$(li2)$(l:the_world/wild_animals#wildebeest)Wildebeest$()$(li2)$(l:the_world/wild_animals#bison)Bison$()$(bold)$(li)$(l:the_world/wild_animals#prey)Prey$()$(li2)$(l:the_world/wild_animals#rabbit)Rabbit$()$(li2)$(l:the_world/wild_animals#fox)Fox$()$(li2)$(l:the_world/wild_animals#deer)Deer$()$(li2)$(l:the_world/wild_animals#caribou)Caribou$()$(li2)$(l:the_world/wild_animals#gazelle)Gazelle$()"
         },
         {
             "type": "patchouli:text",
@@ -209,6 +209,32 @@
             "scale": 0.6,
             "name": " ",
             "text": "A horse."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "dromedary_camel",
+            "text": "$(bold)$(l:the_world/climate#temperature)Spawn Temp:$()  > -5°C$(br)$(bold)$(l:the_world/climate#rainfall)Spawn Rainfall:$()  < 100mm$(br)$(bold)Category:$()  $(l:agriculture/animal_husbandry#camelides)Camelide$()$(br)$(bold)Diet:$()  $(l:cooking/food_and_water#grain)Grain$() and $(l:cooking/food_and_water#fruit)Fruits$()$(br)$(bold)Max Children:$()  1$(br)$(bold)Gestation Time:$()  19 days$(br)$(bold)Growth Time:$()  80 days$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Max Uses:$()  60",
+            "title": "Dromedary Camel"
+        },
+        {
+            "type": "patchouli:entity",
+			"entity": "tfg:dromedary_camel{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
+            "scale": 0.6,
+            "name": " ",
+            "text": "A dromedary camel."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "bactrian_camel",
+            "text": "$(bold)$(l:the_world/climate#temperature)Spawn Temp:$()  > -5°C$(br)$(bold)$(l:the_world/climate#rainfall)Spawn Rainfall:$()  < 100mm$(br)$(bold)Category:$()  $(l:agriculture/animal_husbandry#camelides)Camelide$() / $(l:agriculture/animal_husbandry#wooly_animals)Wooly$()$(br)$(bold)Diet:$()  $(l:cooking/food_and_water#grain)Grain$() and $(l:cooking/food_and_water#fruit)Fruits$()$(br)$(bold)Max Children:$()  1$(br)$(bold)Gestation Time:$()  24 days$(br)$(bold)Growth Time:$()  80 days$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Max Uses:$()  80$(br)$(bold)Product:$()  $(l:agriculture/weaving)Wool$()$(br)$(bold)Produce Cycle:$()  7 days",
+            "title": "Bactrian Camel"
+        },
+        {
+            "type": "patchouli:entity",
+			"entity": "tfg:bactrian_camel{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
+            "scale": 0.6,
+            "name": " ",
+            "text": "A bactrian camel."
         },
 		{
 			"type": "patchouli:text",
@@ -630,7 +656,10 @@
                 "tfc:the_world/wild_crops",
                 "tfc:the_world/flora",
                 "tfc:the_world/wild_fruits",
-                "tfc:the_world/climate"
+                "tfc:the_world/climate",
+                "tfc:agriculture/animal_husbandry",
+                "tfc:agriculture/weaving",
+                "tfc:agriculture/leather_making"
             ]
         }
 	],
