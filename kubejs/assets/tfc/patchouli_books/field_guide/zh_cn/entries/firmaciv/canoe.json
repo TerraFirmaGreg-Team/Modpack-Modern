@@ -23,7 +23,23 @@
     },
     {
       "type": "patchouli:multiblock",
-      "text": "制作独木舟的第一步"
+      "multiblock": {
+        "pattern": [
+          [
+            " F ",
+            " 0 ",
+            " B "
+          ]
+        ],
+        "mapping": {
+          "F": "tfc:wood/stripped_log/douglas_fir[axis=x]",
+          "0": "tfc:wood/stripped_log/douglas_fir[axis=x]",
+          "B": "tfc:wood/stripped_log/douglas_fir[axis=x]"
+        }
+      },
+      "name": "原木",
+      "text": "制作独木舟的第一步。",
+      "enable_visualize": false
     },
     {
       "type": "patchouli:multiblock",
