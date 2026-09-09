@@ -1,5 +1,5 @@
 {
-    "name": "Martian Boats",
+    "name": "火星のボート",
     "category": "tfc:firmaciv",
     "icon": "beneath:wood/sapling/crimson",
     "flag": "mod:beneath",
@@ -8,14 +8,14 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "Way off on the far reaches of Mars, you can find both Crimson and Warped wood to create some rather flashy $(l:firmaciv/watercraft)Boats$()."
+            "text": "遥か彼方の火星では、真紅と歪んだ木材の両方が手に入り、かなり派手な $(l:firmaciv/watercraft)ボート$() を作ることができます。"
         },
         {
             "type": "patchouli:empty"
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Softwoods",
+            "title": "軟木",
             "text": "Softwoods have sufficiently soft enough pulp and bark that they're perfect for creating $(l:firmaciv/canoe)Dugout Canoes$()",
             "item": "beneath:wood/stripped_log/crimson"
         },

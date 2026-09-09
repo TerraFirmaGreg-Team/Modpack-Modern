@@ -5,7 +5,7 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "Руды и минералы в TFC редки - в отличие от Vanilla, они находятся в огромных, редких, но масштабных жилах, которые требуют $(l:mechanics/prospecting)поиска$(). Разные руды также появляются в разных типах пород и на разных высотах, что означает, что нахождение правильного типа породы на правильной высоте ключевое для поиска нужной вам руды."
+      "text": "Ores and Minerals in TFC are rare - unlike Vanilla, ores are found in massive, sparse, yet rare veins that require some $(l:mechanics/prospecting)prospecting$() to locate. Different ores will also appear in different rock types, and at different elevations, meaning finding the right rock type at the right elevation is key to locating the ore you are looking for."
     },
     {
       "type": "patchouli:text",

@@ -31,7 +31,7 @@
     },
     {
       "type": "patchouli:text",
-      "text": "Чтобы получить саженцы с фруктового дерева, сломайте 'локтевые' блоки (ветвистые блоки, прикрепленные к блоку с одной стороны и сверху) дерева с помощью $(thing)Топора$(). Саженцы также могут быть посажены на эти 'локтевые' секции, если они не слишком высоко на дереве. Это позволяет одному фруктовому дереву выращивать несколько фруктов. Сбор фруктов производится с помощью $(item)$(k:key.use)$(), когда листовой блок несет плод. Это даст один фрукт и вернет растение к его растущей стадии, пока оно не впадет в состояние покоя на зиму."
+      "text": "To get saplings from a fruit tree, break the 'elbow' blocks (branch blocks that are attached to a block on one side and above) tree with an $(thing)Axe$(). Saplings can also be placed on these 'elbow' sections, if they are not too high up in the tree. This allows one fruit tree to grow multiple fruits. Harvesting fruit is done with $(item)$(k:key.use)$() when the leaf block is bearing fruit. This will give one fruit, and revert the plant back to its growing stage, until it goes dormant for the winter."
     },
     {
       "type": "patchouli:text",

@@ -1,24 +1,24 @@
 {
-	"name": "Harvest Baskets",
+	"name": "Cestas de cosecha",
 	"icon": "tfg:harvest_basket",
 	"category": "tfc:mechanics",
 	"read_by_default": true,
 	"pages": [
 		{
 			"type": "patchouli:spotlight",
-			"title": "Harvest Baskets",
+			"title": "Cestas de cosecha",
 			"item": {
 				"tag": "tfg:harvester"
 			},
-			"text": "Made for those with a short stature--$(thing)Harvest Baskets$() are just the tool needed for plucking trees and bushes of fruit.$(br)To use a harvest basket; right click on a fruit tree or fruit bush and all blocks within a $(thing)7-block radius$() will be picked."
+			"text": "Hecho para aquellos de corta estatura-- $(thing) Las cestas de cosecha$() son la herramienta que necesitas para dejar todos los árboles y arbustos vacíos.$(br) Para usarla; haz click derecho en un árbol o arbusto y todos los bloques en un radio de$(thing)7 de distancia$() se recogeran"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "A regular harvest basket has a durability of $(thing)128$(), while the aluminium harvest basket does not take any damage on use. Harvest baskets can also be used by things like the $(thing)Create Deployer$() to automate harvesting. The baskets will use durability in the process."
+			"text": "Una cesta de cosecha normal tiene una durabilidad de $(thing)128$(), mientras que la cesta de cosecha de aluminio no sufre ningún daño durante su uso. Las cestas de cosecha también pueden ser utilizadas por cosas como el $(thing)Colocador de create para automatizar la recogida. Las cestas gastarán durabilidad en el proceso (si tienen)"
 		},
 		{
 			"type": "patchouli:crafting",
-			"title": "Harvest Basket",
+			"title": "Cesta de cosecha",
 			"recipe": "tfg:shaped/harvest_basket_from_papyrus",
 			"text": "A basic $(item)Harvest Basket$() can be made of soaked papyrus or hardwood."
 		}

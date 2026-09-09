@@ -10,65 +10,65 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Acacia, Gum Arabic",
+			"title": "Akazie, Gummi arabicum",
 			"item": "tag:tfc:acacia_logs",
-			"text": "$(bold)Umbrella Thorn Acacia$()$(br)$(thing)Rainfall$(): 90 — 275mm$(br)$(thing)Temperature$(): 13.4 — 40°C$(br2)$(bold)Acacia Koa$()$(br)$(thing)Rainfall$(): 350 — 500mm$(br)$(thing)Temperature$(): 15.3 — 24.4°C$(br2)$(bold)Gum Arabic$()$(br)$(thing)Rainfall$(): 90 — 275mm$(br)$(thing)Temperature$(): 11.6 — 40°C"
+			"text": "$(bold)Schirmdorn-Akazie$()$(br)$(thing)Niederschlag$(): 90 — 275mm$(br)$(thing)Temperatur$(): 13.4 — 40°C$(br2)$(bold)Koa-Akazie$()$(br)$(thing)Niederschlag$(): 350 — 500mm$(br)$(thing)Temperatur$(): 15.3 — 24.4°C$(br2)$(bold)Gummi arabicum$()$(br)$(thing)Niederschlag$(): 90 — 275mm$(br)$(thing)Temperatur$(): 11.6 — 40°C"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Ash",
+			"title": "Esche",
 			"item": "tag:tfc:ash_logs",
-			"text": "$(bold)White Ash$()$(br)$(thing)Rainfall$(): 60 — 240mm$(br)$(thing)Temperature$(): -13.9 — 0.7°C"
+			"text": "$(bold)Weiße Esche$()$(br)$(thing)Niederschlag$(): 60 — 240mm$(br)$(thing)Temperatur$(): -13.9 — 0.7°C"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"title": "Aspen, Poplar",
 			"item": "tag:tfc:aspen_logs",
-			"text": "$(bold)Quaking Aspen$()$(br)$(thing)Rainfall$(): 350 — 500mm$(br)$(thing)Temperature$(): -15.7 — -1.1°C$(br2)$(bold)Poplar$()$(br)$(thing)Rainfall$(): 170 — 310mm$(br)$(thing)Temperature$(): -15.7 — -6.6°C"
+			"text": "$(bold)Zitterpappel$()$(br)$(thing)Niederschlag$(): 350 — 500mm$(br)$(thing)Temperatur$(): -15.7 — -1.1°C$(br2)$(bold)Pappel$()$(br)$(thing)Niederschlag$(): 170 — 310mm$(br)$(thing)Temperatur$(): -15.7 — -6.6°C"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"title": "Baobab",
 			"item": "tag:afc:baobab_logs",
-			"text": "$(bold)Baobab$()$(br)$(thing)Rainfall$(): 30 — 190mm$(br)$(thing)Temperature$(): 15.3 — 26.2°C"
+			"text": "$(bold)Baobab$()$(br)$(thing)Niederschlag$(): 30 — 190mm$(br)$(thing)Temperatur$(): 15.3 — 26.2°C"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Birch",
+			"title": "Birke",
 			"item": "tag:tfc:birch_logs",
-			"text": "$(bold)Birch$()$(br)$(thing)Rainfall$(): 125 — 310mm$(br)$(thing)Temperature$(): -13.9 — 2.5°C"
+			"text": "$(bold)Birke$()$(br)$(thing)Niederschlag$(): 125 — 310mm$(br)$(thing)Temperatur$(): -13.9 — 2.5°C"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"title": "Blackwood",
 			"item": "tag:tfc:blackwood_logs",
-			"text": "$(bold)Mpingo Blackwood$()$(br)$(thing)Rainfall$(): 85 — 285mm$(br)$(thing)Temperature$(): 13.4 — 22.5°C$(br2)$(bold)Mulga Blackwood$()$(br)$(thing)Rainfall$(): 35 — 150mm$(br)$(thing)Temperature$(): 9.8 — 20.7°C"
+			"text": "$(bold)Mpingo Blackwood$()$(br)$(thing)Niederschlag$(): 85 — 285mm$(br)$(thing)Temperatur$(): 13.4 — 22.5°C$(br2)$(bold)Mulga Blackwood$()$(br)$(thing)Niederschlag$(): 35 — 150mm$(br)$(thing)Temperatur$(): 9.8 — 20.7°C"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Cedar",
+			"title": "Zeder",
 			"item": "tag:tfc:white_cedar_logs",
-			"text": "$(bold)White Cedar$()$(br)$(thing)Rainfall$(): 100 — 220mm$(br)$(thing)Temperature$(): -13.9 — 4.3°C$(br2)$(bold)Atlas Cedar$()$(br)$(thing)Rainfall$(): 165 — 500mm$(br)$(thing)Temperature$(): 8.0 — 13.4°C"
+			"text": "$(bold)Weiße Zeder$()$(br)$(thing)Niederschlag$(): 100 — 220mm$(br)$(thing)Temperatur$(): -13.9 — 4.3°C$(br2)$(bold)Atlas Zeder$()$(br)$(thing)Niederschlag$(): 165 — 500mm$(br)$(thing)Temperatur$(): 8.0 — 13.4°C"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Chestnut",
+			"title": "Edelkastanie",
 			"item": "tag:tfc:chestnut_logs",
-			"text": "$(bold)Chestnut$()$(br)$(thing)Rainfall$(): 150 — 300mm$(br)$(thing)Temperature$(): -6.6 — 11.6°C"
+			"text": "$(bold)Edelkastanie$()$(br)$(thing)Niederschlag$(): 150 — 300mm$(br)$(thing)Temperatur$(): -6.6 — 11.6°C"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Cypress, Redcedar",
+			"title": "Zypress, Rote Zeder",
 			"item": "tag:afc:cypress_logs",
-			"text": "$(bold)Slender Cypress$()$(br)$(thing)Rainfall$(): 100 — 260mm$(br)$(thing)Temperature$(): 2.5 — 15.3°C$(br2)$(bold)Bald Cypress$()$(br)$(thing)Rainfall$(): 360 — 500mm$(br)$(thing)Temperature$(): -1.1 — 15.3°C$(br2)$(bold)Weeping Cypress$()$(br)$(thing)Rainfall$(): 290 — 415mm$(br)$(thing)Temperature$(): -8.4 — 4.3°C"
+			"text": "$(bold)Schlanke Zypresse$()$(br)$(thing)Niederschlag$(): 100 — 260mm$(br)$(thing)Temperatur$(): 2.5 — 15.3°C$(br2)$(bold)Sumpfzypresse$()$(br)$(thing)Niederschlag$(): 360 — 500mm$(br)$(thing)Temperatur$(): -1.1 — 15.3°C$(br2)$(bold)Trauerzypresse$()$(br)$(thing)Niederschlag$(): 290 — 415mm$(br)$(thing)Temperatur$(): -8.4 — 4.3°C"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(bold)Redcedar$()$(br)$(thing)Rainfall$(): 410 — 500mm$(br)$(thing)Temperature$(): -4.8 — 9.8°C"
+			"text": "$(bold)Rote Zeder$()$(br)$(thing)Niederschlag$(): 410 — 500mm$(br)$(thing)Temperatur$(): -4.8 — 9.8°C"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "(Rainbow) Eucalyptus",
+			"title": "(Regenbogen) Eukalyptus",
 			"item": "tag:afc:eucalyptus_logs",
 			"text": "$(bold)Blue Gum$()$(br)$(thing)Rainfall$(): 170 — 325mm$(br)$(thing)Temperature$(): 8.0 — 18.9°C$(br2)$(bold)Mountain Ash$()$(br)$(thing)Rainfall$(): 390 — 500mm$(br)$(thing)Temperature$(): 9.8 — 18.9°C$(br2)$(bold)Rainbow Eucalyptus$()$(br)$(thing)Rainfall$(): 300 — 450mm$(br)$(thing)Temperature$(): 15.3 — 24.4°C"
 		},

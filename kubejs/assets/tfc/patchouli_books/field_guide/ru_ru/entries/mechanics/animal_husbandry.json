@@ -21,14 +21,14 @@
     },
     {
       "type": "patchouli:text",
-      "text": "Домашний скот можно кормить, чтобы повысить $(thing)привязанность$(). У каждого животного есть предпочтительная еда. Чтобы покормить животное, $(item)$(k:key.sneak)$() и $(item)$(k:key.use)$() с едой в руке."
+      "text": "Livestock can be fed to raise $(thing)familiarity$(). Each animal has foods that it prefers to eat. To feed an animal, $(item)$(k:key.sneak)$() and $(item)$(k:key.use)$() with food in your hand."
     },
     {
       "type": "patchouli:image",
       "images": [
         "tfc:textures/gui/book/tutorial/unfamiliarized_pig.png"
       ],
-      "text": "У домашнего скота есть $(thing)Индикатор привязанности$(), который показывает, насколько они привыкли к вам. Держите $(item)$(k:key.sneak)$() и смотрите на животное, чтобы его увидеть.",
+      "text": "Livestock have a $(thing)Familiarity Indicator$() that shows how familiar they are with you. Hold $(item)$(k:key.sneak)$() and look at the animal to reveal it.",
       "border": true
     },
     {
@@ -50,39 +50,39 @@
     {
       "type": "patchouli:text",
       "anchor": "mammals",
-      "text": "$(thing)Млекопитающие$() - это домашний скот, который испытывает $(thing)беременность$(). Взрослые млекопитающие, привязанность которых выше 30% и которые были накормлены в этот день, будут спариваться, если они противоположного пола и находятся рядом друг с другом. Самка становится $(thing)беременной$(), что приводит к рождению детенышей через определенное количество дней после оплодотворения.$(br)Пример - $(l:mechanics/animal_husbandry#pig)Свиньи$()."
+      "text": "$(thing)Mammals$() are livestock that experience $(thing)Pregnancy$(). Adult mammals that are above 30% familiarity and have been fed that day will mate, given that they are of opposite genders and near each other. The female animal will become $(thing)pregnant$(), which causes it to have children a set number of days after fertilization.$(br)An example is $(l:mechanics/animal_husbandry#pig)Pigs$()."
     },
     {
       "type": "patchouli:text",
       "anchor": "wooly_animals",
-      "text": "$(thing)Шерстные животные$() - это $(l:mechanics/animal_husbandry#mammals)Млекопитающие$(), которых можно $(thing)стричь$(), если они взрослые и достаточно привыкли к вам. Некоторые примеры - $(l:mechanics/animal_husbandry#sheep)Овцы$(), $(l:mechanics/animal_husbandry#alpaca)Альпаки$() и $(l:mechanics/animal_husbandry#musk_ox)Мускусные быки$()."
+      "text": "$(thing)Wooly Animals$() are $(l:mechanics/animal_husbandry#mammals)Mammals$() that can be $(thing)Sheared$() if they are adults and familiar enough to you. Some examples are $(l:mechanics/animal_husbandry#sheep)Sheep$(), $(l:mechanics/animal_husbandry#alpaca)Alpacas$(), and $(l:mechanics/animal_husbandry#musk_ox)Musk Oxen$()."
     },
     {
       "type": "patchouli:text",
       "anchor": "dairy_animals",
-      "text": "$(thing)Молочные животные$() - это млекопитающие, которые производят $(thing)Молоко$(). Самок молочных животных можно доить, кликнув по ним ведром. Некоторые примеры - $(l:mechanics/animal_husbandry#goat)Козы$(), $(l:mechanics/animal_husbandry#cow)Коровы$() и $(l:mechanics/animal_husbandry#yak)Яки$()."
+      "text": "$(thing)Dairy Animals$() are mammals that make $(thing)Milk$(). Female dairy animals can be clicked with a bucket to obtain milk. Some examples are $(l:mechanics/animal_husbandry#goat)Goats$(), $(l:mechanics/animal_husbandry#cow)Cows$(), and $(l:mechanics/animal_husbandry#yak)Yaks$()."
     },
     {
       "type": "patchouli:crafting",
       "anchor": "oviparous_animals",
       "recipe": "tfc:crafting/nest_box",
-      "title": "Гнездовой ящик",
-      "text": "$(thing)Яйцекладущие животные$() - это не $(l:mechanics/animal_husbandry#mammals)Млекопитающие$(), а животные, производящие потомство, откладывая $(thing)Яйца$(). Им нужен $(thing)Гнездовой ящик$(), чтобы откладывать яйца, который они могут найти самостоятельно.$(br)Некоторые примеры - $(l:mechanics/animal_husbandry#duck)Утки$(), $(l:mechanics/animal_husbandry#quail)Перепела$() и $(l:mechanics/animal_husbandry#chicken)Куры$()."
+      "title": "Насест",
+      "text": "$(thing)Oviparous Animals$() are not $(l:mechanics/animal_husbandry#mammals)Mammals$(), and instead produce children by laying $(thing)Eggs$(). They need a $(thing)Nest Box$() to lay eggs, which they are capable of locating on their own.$(br)Some examples are $(l:mechanics/animal_husbandry#duck)Ducks$(), $(l:mechanics/animal_husbandry#quail)Quails$(), and $(l:mechanics/animal_husbandry#chicken)Chickens$()."
     },
     {
       "type": "tfc:heat_recipe",
       "recipe": "tfc:heating/cooked_egg",
-      "text": "$(thing)Яйца$() можно варить или жарить для еды. Самцы яйцекладущих животных могут оплодотворять самок, что приводит к тому, что следующее яйцо, отложенное в гнездовом ящике, будет оплодотворенным. Оплодотворенные яйца будут иметь подсказку с указанием времени до вылупления."
+      "text": "$(thing)Eggs$() can be cooked or boiled for food. Male oviparous animals can fertilize females, which causes the next egg laid in the nest box to be fertilized. Fertilized eggs will have a tooltip with how long until they are ready to hatch."
     },
     {
       "type": "tfc:knapping_recipe",
       "anchor": "horses",
       "recipe": "tfc:leather_knapping/saddle",
-      "text": "$(thing)Однокопытные$() - это $(l:mechanics/animal_husbandry#mammals)Млекопитающие$(), которых можно ездить, когда они приручены. Они становятся пригодными для верховой езды после достижения 15% привязанности."
+      "text": "$(thing)Equines$() are $(l:mechanics/animal_husbandry#mammals)Mammals$() that can be ridden when tamed. They become rideable after reaching 15% familiarity."
     },
     {
       "type": "patchouli:text",
-      "text": "Для верховой езды им нужно $(thing)Седло$(), которое можно $(thing)высечь$(). Это включает $(l:mechanics/animal_husbandry#mule)Мулов$(), $(l:mechanics/animal_husbandry#donkey)Ослов$() и $(l:mechanics/animal_husbandry#horses)Лошадей$(). Мулы и ослы могут нести любой сундук или бочку. Если нести бочку, $(item)$(k:key.use)$() при удержании $(item)$(k:key.sneak)$() можно использовать для ее снятия. Те же клавиши при удержании ведра можно использовать для слива жидкости из бочки. $(br2)На следующих страницах будут рассмотрены все типы домашнего скота."
+      "text": "They need a $(thing)Saddle$() to ride, which can be $(thing)Knapped$(). This includes $(l:mechanics/animal_husbandry#mule)Mules$(), $(l:mechanics/animal_husbandry#donkey)Donkeys$(), and $(l:mechanics/animal_husbandry#horses)Horses$(). Mules and Donkeys can hold any chest or barrel. If holding a barrel, $(item)$(k:key.use)$() while holding $(item)$(k:key.sneak)$() can be used to remove it. The same keys while holding a bucket can be used to drain fluid from the barrel. $(br2)The next few pages will go over all livestock types."
     },
     {
       "type": "patchouli:text",
@@ -165,33 +165,33 @@
     {
       "type": "patchouli:text",
       "anchor": "musk_ox",
-      "text": "$(thing)Мускусные быки$() обитают в холодных климатах, при $(l:the_world/climate#temperature)температуре$() от -25 до 0°C и как минимум 100 мм $(l:the_world/climate#rainfall)осадков$(). Они являются $(l:mechanics/animal_husbandry#wooly_animals)Шерстными животными$(). Они питаются $(thing)зерновыми$(). У них всегда 1 детеныш, беременность длится 64 дня, и они достигают зрелости за 168 дней. Они могут иметь потомство 16 раз, если их никогда не стригли, или быть подстрижены 160 раз, если их никогда не разводили. Шерсть растет каждые 96 часов.",
-      "title": "Мускусный бык"
+      "text": "$(thing)Musk Oxen$() spawn in cold climates, with $(l:the_world/climate#temperature)temperature$() between -25 and 0°C, and at least 100mm of $(l:the_world/climate#rainfall)rainfall$(). They are $(l:mechanics/animal_husbandry#wooly_animals)Wooly Animals$(). They eat $(thing)grains$(). They always have 1 child, are pregnant for 64 days, and reach adulthood in 168 days. They can have children 16 times, if they are never sheared, or be sheared 160 times if they are never bred. They grow wool every 96 hours.",
+      "title": "Овцебык"
     },
     {
       "type": "patchouli:entity",
       "entity": "tfc:musk_ox{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
       "scale": 0.75,
       "name": " ",
-      "text": "Мускусный бык."
+      "text": "A musk ox."
     },
     {
       "type": "patchouli:text",
       "anchor": "chicken",
-      "text": "$(thing)Куры$() обитают в теплых лесах, при $(l:the_world/climate#temperature)температуре$() как минимум 14°C и как минимум 225 мм $(l:the_world/climate#rainfall)осадков$(). Они являются $(l:mechanics/animal_husbandry#oviparous_animals)Яйцекладущими животными$(). Они питаются $(thing)зерновыми$(), $(thing)фруктами$(), $(thing)овощами$() и $(thing)семенами$(), которые могут быть испорчены. Их яйца вылупляются за 8 дней, и они становятся взрослыми за 24 дня. Они могут нести яйца 100 раз. Производят яйца каждые 30 часов.",
-      "title": "Куры"
+      "text": "$(thing)Chickens$() spawn in warm forests, with $(l:the_world/climate#temperature)temperature$() of at least 14°C, and at least 225mm of $(l:the_world/climate#rainfall)rainfall$(). They are $(l:mechanics/animal_husbandry#oviparous_animals)Oviparous Animals$(). They eat $(thing)grains$(), $(thing)fruits$(), $(thing)vegetables$(), and $(thing)seeds$(), which can be rotten. Their eggs hatch in 8 days, and become adults in 24 days. They can lay eggs 100 times. They produce eggs every 30 hours.",
+      "title": "Chickens"
     },
     {
       "type": "patchouli:entity",
       "entity": "tfc:chicken{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
       "scale": 0.7,
       "name": " ",
-      "text": "Курица."
+      "text": "A chicken."
     },
     {
       "type": "patchouli:text",
       "anchor": "duck",
-      "text": "$(thing)Утки$() появляются на большинстве равнин, при $(l:the_world/climate#temperature)температуре$() от -25 до 30°C и как минимум 100 мм $(l:the_world/climate#rainfall)осадков$(). Они являются $(l:mechanics/animal_husbandry#oviparous_animals)Яйцекладущими животными$(). Они питаются $(thing)зерновыми$(), $(thing)фруктами$(), $(thing)овощами$(), $(thing)хлебом$() и $(thing)семенами$(). Их яйца вылупляются за 8 дней, и они становятся взрослыми за 32 дня. Они могут нести яйца 72 раза. Производят яйца каждые 32 часа.",
+      "text": "$(thing)Ducks$() spawn in most plains, with $(l:the_world/climate#temperature)temperature$() between -25 and 30°C, and at least 100mm of $(l:the_world/climate#rainfall)rainfall$(). They are $(l:mechanics/animal_husbandry#oviparous_animals)Oviparous Animals$(). They eat $(thing)grains$(), $(thing)fruits$(), $(thing)vegetables$(), $(thing)bread$(), and $(thing)seeds$(). Their eggs hatch in 8 days, and become adults in 32 days. They can lay eggs 72 times. They produce eggs every 32 hours.",
       "title": "Утки"
     },
     {
@@ -204,7 +204,7 @@
     {
       "type": "patchouli:text",
       "anchor": "quail",
-      "text": "$(thing)Перепела$() обитают в более холодных климатах, при $(l:the_world/climate#temperature)температуре$() от -15 до 15°C и как минимум 200 мм $(l:the_world/climate#rainfall)осадков$(). Они являются $(l:mechanics/animal_husbandry#oviparous_animals)Яйцекладущими животными$(). Они питаются $(thing)зерновыми$(), $(thing)фруктами$(), $(thing)овощами$() и $(thing)семенами$(), которые могут быть испорчены. Их яйца вылупляются за 8 дней, и они становятся взрослыми за 22 дня. Они могут нести яйца 48 раз. Производят яйца каждые 28 часов.",
+      "text": "$(thing)Quails$() spawn in colder climates, with $(l:the_world/climate#temperature)temperature$() between -15 and 15°C, and at least 200mm of  $(l:the_world/climate#rainfall)rainfall$(). They are $(l:mechanics/animal_husbandry#oviparous_animals)Oviparous Animals$(). They eat $(thing)grains$(), $(thing)fruits$(), $(thing)vegetables$(), and $(thing)seeds$(), which can be rotten. Their eggs hatch in 8 days, and become adults in 22 days. They can lay eggs 48 times. They produce eggs every 28 hours.",
       "title": "Перепел"
     },
     {
@@ -212,7 +212,7 @@
       "entity": "tfc:quail{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
       "scale": 0.7,
       "name": " ",
-      "text": "Перепел."
+      "text": "A quail."
     },
     {
       "type": "patchouli:text",

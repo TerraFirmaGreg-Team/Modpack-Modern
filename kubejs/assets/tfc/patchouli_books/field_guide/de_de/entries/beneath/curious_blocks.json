@@ -1,31 +1,31 @@
 {
-	"name": "Unique Blocks",
+	"name": "Einzigartige Blocks",
 	"category": "tfc:beneath",
 	"icon": "beneath:blackstone_aqueduct",
 	"pages": [
 		{
 			"type": "patchouli:crafting",
 			"name": "Soul Clay",
-			"text": "Aqueducts can also move lava and other fluids around, which may be useful when building the $(l:beneath/hellforge)Hellforge$().",
+			"text": "Aquädukte können auch Lava und andere Flüssigkeiten bewegen, was nützlich sein kann, wenn man die $(l:beneath/ hellforge)Höllenschmiede$() baut.",
 			"anchor": "blackstone_aqueduct",
 			"recipe": "tfg:shaped/blackstone_aqueduct"
 		},
 		{
 			"type": "patchouli:crafting",
 			"name": "Sulfur",
-			"text": "Hellbricks are a building block that is also used for the $(l:beneath/hellforge)Hellforge$().",
+			"text": "Höllensteine sind Baublöcke, die für $(l:beneath/hellforge)Höllenschmiede$() benutzt werden können.",
 			"recipe": "tfg:shapeless/hellbricks"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"name": "Stroh",
-			"text": "The Pyroxenite Pedestal can be used to display items you want to show off!",
+			"text": "Der Pyroxenit Sockel kann dafür genutzt werden, um Items zu zeigen!",
 			"item": "beneath:ancient_altar"
 		},
 		{
 			"type": "patchouli:crafting",
 			"recipe": "tfg:shaped/blackstone_brick_to_bricks",
-			"text": "Migmatite and Pyroxenite bricks are made like regular bricks, and that includes needing to create the brick item."
+			"text": "Migmatit und Pyroxenit Brickblöcke werden wie normaler Ziegelblöcke gemacht und das benötigt das Erschaffen der Ziegel Items."
 		}
 	],
 	"read_by_default": true

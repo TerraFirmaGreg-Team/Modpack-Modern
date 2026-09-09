@@ -5,7 +5,7 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "$(thing)Вешалка$() — это устройство для хранения мяса или чеснока. Она может использоваться только в $(l:firmalife/cellar)погребе$(). На вешалках может храниться полный стек одного предмета. Добавление и удаление предметов осуществляется с помощью $(item)$(k:key.use)$(). Предметы на валидных вешалках получают модификатор порчи, который лучше, чем у полок или сосудов."
+      "text": "The $(thing)Hanger$() is a device for storing meat or garlic. It can only be used in a valid $(l:firmalife/cellar)Cellar$(). Food shelves can contain a full stack of one item. Adding and removing the item can be done with $(item)$(k:key.use)$(). Items in valid food shelves receive a decay modifier that is better than shelves or vessels."
     },
     {
       "type": "patchouli:crafting",

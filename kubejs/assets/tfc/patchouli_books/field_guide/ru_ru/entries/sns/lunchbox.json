@@ -6,7 +6,7 @@
     {
       "type": "patchouli:spotlight",
       "item": "sns:lunchbox",
-      "text": "$(item)Ланчбокс$() — один из самых интересных $(l:sns/item_containers)предметных контейнеров$(). Как следует из названия, он хранит еду и даже позволяет её есть прямо из него. Используйте $(k:sneak) и $(k:use), чтобы открыть ланчбокс, $(k:sneak) и колёсико мыши для выбора слота для употребления и $(k:use), чтобы съесть выбранную еду."
+      "text": "The $(item)Lunchbox$() is one of the more interesting $(l:sns/item_containers)Item Container$()s. As you might expect from the name these hold food items and even allow you to consume food out of them. $(k:sneak) and $(k:use) to open the lunchbox, $(k:sneak) and scroll wheel to select the consumed stack and $(k:use) to eat the selected stack"
     },
     {
       "type": "patchouli:crafting",
