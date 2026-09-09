@@ -72,7 +72,8 @@
 	   *path/contains*                 Any files who's path contains
 	*/
 	"excluded": [
-		"DistantHorizons.sqlite"
+		"DistantHorizons.sqlite",
+		"*voxy*"
 	],
 	// The dimension used when creating backup preview image, specify "all" to enable automatic detection of primary dimension (can be very slow)
 	"preview_dimension": "minecraft:overworld"
