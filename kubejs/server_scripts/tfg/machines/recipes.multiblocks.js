@@ -403,5 +403,46 @@ function registerTFGMultiblockRecipes(event) {
 		.circuit(1)
 		.EUt(GTValues.VA[GTValues.LV])
 		.addMaterialInfo(true)
+
+	// Ore Grinder
+
+	event.recipes.gtceu.shaped(Item.of('tfg:ore_grinder'), [
+		'ABC',
+		'DDE',
+		'FFD'
+	], {
+		A: Item.of('gtceu:lv_electric_piston'),
+		B: Item.of('gtceu:lv_electric_motor'),
+		C: Item.of('minecraft:emerald'),
+		D: Item.of('gtceu:tin_single_cable'),
+		E: Item.of('gtceu:lv_machine_hull'),
+		F: '#gtceu:circuits/lv',
+	}).addMaterialInfo().id('tfg:shaped/ore_grinder')
+
+	event.recipes.gtceu.shaped(Item.of('tfg:ore_bath'), [
+		'ABA',
+		'CDC',
+		'EFG'
+	], {
+		A: Item.of('gtceu:tin_rotor'),
+		B: Item.of('minecraft:glass'),
+		C: '#gtceu:circuits/lv',
+		D: Item.of('gtceu:lv_machine_hull'),
+		E: Item.of('gtceu:lv_pump'),
+		F: Item.of('gtceu:tin_single_cable'),
+		G: Item.of('gtceu:lv_conveyor_module'),
+	}).addMaterialInfo().id('tfg:shaped/ore_bath')
+
+	event.recipes.gtceu.shaped(Item.of('tfg:ore_thermal_centrifuge'), [
+		'ABA',
+		'CDC',
+		'EBE'
+	], {
+		A: '#gtceu:circuits/lv',
+		B: Item.of('gtceu:lv_electric_motor'),
+		C: Item.of('gtceu:nickel_quadruple_wire'),
+		D: Item.of('gtceu:lv_machine_hull'),
+		E: Item.of('gtceu:tin_single_cable')
+	}).addMaterialInfo().id('tfg:shaped/ore_thermal_centrifuge')
 	
 }

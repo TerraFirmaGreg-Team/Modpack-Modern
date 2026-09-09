@@ -1110,7 +1110,7 @@
 				type: "item"
 			}]
 			title: "{quests.high_voltage.cetane_diesel.title}"
-			x: -9.0d
+			x: -9.5d
 			y: -3.0d
 		}
 		{
@@ -1154,7 +1154,6 @@
 				"7AF726555D721DFC"
 				"5FA09DA68D309548"
 			]
-			dependency_requirement: "one_completed"
 			description: [
 				"{quests.gregtech_energy.large_solar_t2.desc.1}"
 				"{@pagebreak}"
@@ -1405,10 +1404,7 @@
 			y: -1.0d
 		}
 		{
-			dependencies: [
-				"0C718329245D9619"
-				"7AF726555D721DFC"
-			]
+			dependencies: ["0C718329245D9619"]
 			description: ["{quests.gregtech_energy.gasoline.desc}"]
 			id: "27E9DAF9F578A3E8"
 			subtitle: "{quests.gregtech_energy.gasoline.subtitle}"
@@ -1418,8 +1414,8 @@
 				type: "item"
 			}]
 			title: "{quests.gregtech_energy.gasoline.title}"
-			x: -9.0d
-			y: -1.0d
+			x: -8.5d
+			y: -3.0d
 		}
 		{
 			dependencies: [
