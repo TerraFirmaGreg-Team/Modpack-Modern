@@ -43,7 +43,7 @@
 	"createaddition.ponder.cc_electric_motor.header": "Używanie ComputerCraft do kontroli silników elektrycznych",
 	"createaddition.ponder.cc_electric_motor.text_1": "Silnik elektryczny może być kontrolowany z użyciem ComputerCraft",
 	"createaddition.ponder.cc_electric_motor.text_2": "Połącz się z silnikiem korzystając z polecenia 'peripheral.wrap(side)'",
-	"createaddition.ponder.cc_electric_motor.text_3": "Uzyskaj dostęp do dokumentacji API korzystając z komendy '/cca_api'",
+	"createaddition.ponder.cc_electric_motor.text_3": "Uzyskaj dostęp do dokumentacji API korzystając z polecenia '/cca_api'",
 	"createaddition.ponder.electric_motor.header": "Generowanie siły obrotowej z użyciem silników elektrycznych",
 	"createaddition.ponder.electric_motor.text_1": "Silniki elektryczne to kompatkowe i łatwe do ustawienia źródło siły obrotowej",
 	"createaddition.ponder.electric_motor.text_2": "Korzystając z tylnego panelu możesz zmienić prędkość obrotową silnika",
