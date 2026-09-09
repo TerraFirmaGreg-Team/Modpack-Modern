@@ -90,6 +90,7 @@
   "ftbchunks.map_mode.topography": "Topografia",
   "ftbchunks.max_claimed_chunks": "Maksymalna ilość zajętych chunków na gracza",
   "ftbchunks.max_force_loaded_chunks": "Maksymalna ilość załadowanych chunków na gracza",
+  "ftbchunks.max_idle_days_before_unclaim": "Maks. dni bezczynności przed przejęciem chunku",
   "ftbchunks.message.no_pvp": "Walka PvP jest tutaj wyłączona",
   "ftbchunks.minimap": "Minimapa",
   "ftbchunks.minimap.biome": "Biom",

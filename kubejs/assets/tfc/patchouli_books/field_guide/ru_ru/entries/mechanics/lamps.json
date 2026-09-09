@@ -5,7 +5,7 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "Лампы - это долговременный источник света. Они горят на жидком топливе. Лампы сохраняют своё содержимое топлива при разборке. Используя ведро, $(item)$(k:key.use)$() на лампе, чтобы добавить в неё топливо. Затем её можно зажечь с помощью $(thing)кресала$() или чего-либо, способного поджигать. $(thing)Оливковое масло$() и $(thing)Сало$() являются топливом для ламп. Выстрел из лука по зажжённой лампе может вызвать пожар."
+      "text": "Lamps are a long term source of light. They burn liquid fuel. Lamps retain their fuel content when broken. Using a bucket, $(item)$(k:key.use)$() on a lamp to add fuel to it. It can then be lit with a $(thing)firestarter$() or anything capable of lighting fires. $(thing)Olive Oil$() and $(thing)Tallow$() are lamp fuels. Shooting a lit lamp with an arrow can cause a fire."
     },
     {
       "type": "patchouli:multiblock",
@@ -44,16 +44,16 @@
     {
       "type": "patchouli:crafting",
       "recipe": "tfc:crafting/jute_net",
-      "text": "Вам также понадобится сеть из джута."
+      "text": "You will also need a jute net."
     },
     {
       "type": "patchouli:text",
-      "text": "Вскипятите $(thing)Оливковую пасту$() с $(thing)Водой$() в $(l:mechanics/pot)Котле$(), чтобы сделать $(thing)Воду с оливковым маслом$(). Запечатайте это в $(l:mechanics/barrels)Бочке$() с вашей $(thing)Сетью из джута$(), чтобы произвести $(thing)Оливковое масло$(). Оливковое масло горит 8 игровых часов на каждую единицу жидкости."
+      "text": "Boil the $(thing)Olive Paste$() with $(thing)Water$() in a $(l:mechanics/pot)Pot$() to make $(thing)Olive Oil Water$(). Seal that in a $(l:mechanics/barrels)Barrel$() with your $(thing)Jute Net$() to produce $(thing)Olive Oil$(). Olive oil burns for 8 in-game hours for every unit of fluid."
     },
     {
       "type": "patchouli:text",
       "anchor": "tallow",
-      "text": "Другим видом топлива для ламп является $(thing)Сало$(). Чтобы сделать его, приготовьте 5 $(thing)Жира$() в $(l:mechanics/pot)Котле$() с водой. Сало горит менее 2 игровых часов на единицу. Его можно использовать для изготовления $(l:mechanics/lighting#сandles)Свечей$()"
+      "text": "Another lamp fuel is $(thing)Tallow$(). To make it, cook 5 $(thing)Blubber$(), in a $(l:mechanics/pot)Pot$() of water. Tallow burns for less than 2 in-game hours per unit. It can be used to make $(l:mechanics/lighting#candles)Candles$()"
     },
     {
       "type": "patchouli:multiblock",
@@ -77,7 +77,7 @@
     {
       "type": "tfc:anvil_recipe",
       "recipe": "tfc:anvil/black_steel_chain",
-      "text": "$(thing)Цепи$() - отличный способ повесить ваши лампы, и их можно ковать на $(l:mechanics/anvils)Наковальне$()."
+      "text": "$(thing)Chains$() are a great way to hang your lamps, and can be smithed in an $(l:mechanics/anvils)Anvil$()."
     }
   ],
   "read_by_default": true,

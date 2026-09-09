@@ -5,7 +5,7 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "$(thing)Виноделие$() — это наука превращения винограда в алкоголь.  Требуется время на сбор ресурсов, их обработку, а также на $(thing)наслаждение$() результатом. Обратите внимание, что вино в Firmalife (само по себе) не имеет особого применения помимо обычного алкоголя TFC. Вы должны делать его только если хотите $(thing)повеселиться$()."
+      "text": "$(thing)Winemaking$() is the science of turning grapes into alcohol. There is time spent gathering resources, and spending time crafting those resources together, as well as time spent $(thing)enjoying$() the product. Please note that wine in Firmalife (on its own) has no special use beyond regular TFC alcohol. You should make it only if you want to have $(thing)fun$()."
     },
     {
       "type": "patchouli:spotlight",
@@ -22,15 +22,15 @@
     {
       "type": "patchouli:crafting",
       "recipe": "firmalife:crafting/grape_trellis_post",
-      "text": "Виноград должен выращиваться на шпалерах, построенных из этих специальных столбов и джутового волокна."
+      "text": "Grapes must be grown on trellises constructed from these special posts and jute fiber."
     },
     {
       "type": "patchouli:text",
-      "text": "Чтобы построить шпалеру, установите два столба друг на друга. Переместитесь на два блока влево или вправо и повторите действие. Затем, $(item)$(k:key.use)$() боковую сторону одного из верхних и нижних столбов с помощью $(thing)джутового волокна$(), чтобы натянуть между столбами линии. Виноградные шпалеры могут быть соединены горизонтально, чтобы создать ряды винограда."
+      "text": "To construct a trellis, place two posts on top of each other. Move two blocks to the left or right and repeat the action. Then, $(item)$(k:key.use)$() the side of one of the top and bottom posts with $(thing)Jute Fiber$() to string lines between the posts. Grape trellises can be chained horizontally to create rows of grapes."
     },
     {
       "type": "tfc:multimultiblock",
-      "text": "Виноградная шпалера.",
+      "text": "A grape trellis.",
       "multiblocks": [
         {
           "pattern": [
@@ -67,16 +67,16 @@
     },
     {
       "type": "patchouli:text",
-      "text": "При соблюдении климатических требований виноград будет расти и оплетать шпалеру в течение нескольких месяцев. Он будет плодоносить в июле, цветя в предыдущем месяце. Затем виноград можно собирать. Виноград также можно выращивать в теплицах на шпалерах."
+      "text": "Provided the climate requirements are satisfied, the grape will grow up and over the trellis over the course of a few months. It will fruit in the month of July, flowering the month prior. Grapes can the be harvested. Grapes can also be grown in greenhouses on trellises."
     },
     {
       "type": "patchouli:crafting",
       "recipe": "firmalife:crafting/wood/acacia_stomping_barrel",
-      "text": "Топчальная бочка используется для раздавливания винограда. Можно также использовать жернова."
+      "text": "The stomping barrel is used to smash grapes. A quern may also be used."
     },
     {
       "type": "patchouli:text",
-      "text": "Чтобы использовать топчальную бочку, $(item)$(k:key.use)$() со свежим виноградом. Затем подпрыгивайте на бочке 16 раз. $(item)$(k:key.use)$() пустой рукой, чтобы забрать предметы.$(br2)Затем запечатайте виноград в бочке на 5 дней, чтобы $(thing)сбродить$() его."
+      "text": "To use a stomping barrel, $(item)$(k:key.use)$() with fresh grapes. Then, jump up and down on the barrel 16 times. $(item)$(k:key.use)$() with an empty hand to retrieve the items.$(br2)Then, seal the grapes in a barrel for 5 days to $(thing)ferment$() them."
     },
     {
       "type": "patchouli:crafting",

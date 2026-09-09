@@ -38,7 +38,7 @@
     },
     {
       "type": "patchouli:text",
-      "text": "Затем вы можете начать промывку!$(br2)$(bold)1.$() Держа лоток в руке, $(thing)используйте$() её на блоке рудного месторождения.$(br2)$(bold)2.$() Стоя в воде с лотком в руках, удерживайте $(item)$(k:key.use)$(), и вы начнёте промывку.$(br2)$(bold)3.$() Через некоторое время, если повезёт, вы можете быть вознаграждены маленьким кусочком руды в вашем инвентаре."
+      "text": "Then you can begin panning!$(br2)$(bold)1.$() With the pan in hand, $(thing)use$() it on the ore deposit block.$(br2)$(bold)2.$() While standing in water with the pan in your hand, hold down $(item)$(k:key.use)$() and you will start panning.$(br2)$(bold)3.$() After a few moments, if you are lucky, you may be rewarded with a small piece of ore in your inventory."
     },
     {
       "type": "patchouli:image",
@@ -49,7 +49,7 @@
     },
     {
       "type": "patchouli:text",
-      "text": "Промывка в лотке может дать три возможных продукта: $(thing)руда$(), $(thing)сыпучие камни$() и $(l:mechanics/gems)драгоценные камни$(). Вероятности следующие: $(br)$(li)Руда: 50%%$(li)Сыпучий камень: 25%%$(li)Драгоценный камень: 1%%$()Каждый тип руды даст определённый драгоценный камень, который эксклюзивен для этого типа породы.",
+      "text": "Panning can give three possible products: $(thing)Ore$(), $(thing)Loose Rocks$(), and $(l:mechanics/gems)Gems$(). The probabilities are as follows:$(br)$(li)Ore: 50%%$(li)Loose Rock: 25%%$(li)Gem: 1%%$()Each rock type has a specific gem that it will drop, that is exclusive to that rock type.",
       "title": "Продукты промывки"
     }
   ],

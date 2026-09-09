@@ -23,7 +23,7 @@
 		{
 			"type": "patchouli:crafting",
 			"recipe": "tfg:shaped/jellies_nutritional_mash",
-			"text": "$(thing)Nutritional Mash$() is the main food of all $(thing)jellies$(), primarily made from grains, fruits, and some dimension-specific ingredients. $(br2)$(#B0B0B0)$(o)Why is it moving..."
+			"text": "$(thing)Nutritional Mash$()は、すべての$(thing)ジェリー$()の主食であり、主に穀物、果物、そしてディメンションごとに異なるいくつかの素材から作られています。$(br2)$(#B0B0B0)$(o)なぜ動いているんだ……"
 		},
 		{
 			"type": "patchouli:entity",
