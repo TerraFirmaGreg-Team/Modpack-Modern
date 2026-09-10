@@ -6,7 +6,7 @@
     {
       "type": "patchouli:spotlight",
       "item": "sns:quiver",
-      "text": "$(item)Колчан$() — это тип $(l:sns/item_containers)предметного контейнера$() и лучший друг любого любителя дальнего боя, будь то тот, кто любит $(item)копья$(), или предпочитающий лук. $(br)При использовании лука предметы для \"боеприпасов\" берутся сначала из колчана, а также он заменяет метаемые копья."
+      "text": "The $(item)Quiver$() is a type of $(l:sns/item_containers)Item Container$() every ranged warriors best friend, be it one with love for the $(item)Javalin$() or those who prefer the bow. $(br)Quivers will be drawn from first for \"ammo\", when using the bow and will replace thrown Javelins."
     },
     {
       "type": "tfc:knapping_recipe",

@@ -45,6 +45,7 @@
   "commands.ftbquests.command.feedback.table_imported": "Pomyślnie zaimportowano tabelę nagród '%s' z %s przedmiotem/przedmiotami!",
   "commands.ftbquests.editing_mode.disabled": "Tryb edycji dla '%s' wyłączony",
   "commands.ftbquests.editing_mode.enabled": "Tryb edycji dla '%s' włączony",
+  "commands.ftbquests.export_rewards_to_chest.text": "Wyeksportowano  %s / %s przedmiotów z \"%s\"",
   "commands.ftbquests.export_rewards_to_chest.usage": "/ftbquests export_rewards_to_chest <reward_table>",
   "commands.ftbquests.import_rewards_from_chest.invalid_id": "Nieprawidłowy ID tabeli nagród!",
   "commands.ftbquests.import_rewards_from_chest.text": "Zaimportowano %d przedmioty do %s",

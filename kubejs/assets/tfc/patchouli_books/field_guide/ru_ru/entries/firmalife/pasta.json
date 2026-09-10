@@ -5,7 +5,7 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "Существует два типа $(thing)Лапши$(): Яичная и Рисовая. Рисовая мука, кукурузная мука, соль и 1000 мБ молока вместе в $(l:firmalife/mixing_bowl)Миска для смешивания$() создают $(thing)Рисовую лапшу$(). Мука, яйцо, соль и 1000 мБ молока создают $(thing)Яичную лапшу$()."
+      "text": "There are two types of $(thing)Noodles$(): Egg and Rice. Rice flour, maize flour, salt, and 1000 mB of milk together in a $(l:firmalife/mixing_bowl)Mixing Bowl$() makes $(thing)Rice Noodles$(). Flour, an egg, salt, and 1000 mB of milk makes $(thing)Egg Noodles$()."
     },
     {
       "type": "patchouli:crafting",

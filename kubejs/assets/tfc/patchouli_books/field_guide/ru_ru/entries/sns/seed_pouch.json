@@ -6,7 +6,7 @@
     {
       "type": "patchouli:spotlight",
       "item": "sns:seed_pouch",
-      "text": "$(item)Мешочек для семян$() — это тип $(l:sns/item_containers)предметного контейнера$(), предназначенный для хранения большого разнообразия семян, что делает его очень полезным при фермерстве. $(br2)По умолчанию в нём 27 слотов, каждый из которых может вмещать до 64 семян."
+      "text": "The $(item)Seed Pouch$() is a type of $(l:sns/item_containers)Item Container$() intended for holding a large variety of seeds making it very useful when farming. $(br2)By default these have 27 slots holding up to 64 seeds each"
     },
     {
       "type": "patchouli:crafting",

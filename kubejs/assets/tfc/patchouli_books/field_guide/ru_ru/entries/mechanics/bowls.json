@@ -1,22 +1,22 @@
 {
-  "name": "Чаши",
+  "name": "Bowls",
   "category": "tfc:mechanics",
   "icon": "tfc:ceramic/bowl",
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "$(thing)Чаши$() - это универсальный инструмент, который может быть использован для создания $(l:mechanics/salad)салатов$(), для приготовления $(l:mechanics/pot)супов$(), для $(l:mechanics/decay#salting)соления$() мяса или для нанесения $(thing)порошка$() на $(l:mechanics/glassworking_applications#coloring)стекло$(), чтобы изменить результирующий цвет стекла.$(br2)Чаши могут быть изготовлены из $(thing)керамики$() путем вылепливания из глины, а затем обжигая."
+      "text": "$(thing)Bowls$() are a versatile tool which can be used to make $(l:mechanics/salad)Salads$(), to make $(l:mechanics/pot)Soups$(), to $(l:mechanics/decay#salting)Salt$() meat, or to apply $(thing)Powder$() to $(l:mechanics/glassworking_applications#coloring)Glass$() in order to change the resulting glass's color.$(br2)Bowls can be made both from $(thing)Ceramic$(), by knapping a bowl out of clay, and then firing them."
     },
     {
       "type": "tfc:knapping_recipe",
       "recipe": "tfc:clay_knapping/bowl_4",
-      "text": "За одну лепку может быть сделано несколько необожженных чаш."
+      "text": "Multiple unfired bowls can be made from one knapping."
     },
     {
       "type": "patchouli:crafting",
       "recipe": "tfc:crafting/vanilla/bowl",
-      "title": "Деревянные чаши",
-      "text": "Чаши также могут быть сделаны из дерева путем их соединения вместе с $(thing)Клеем$().$(br2)$(thing)Клей$() может быть сделан путем замачивания $(thing)Костной муки$() в бочке с $(l:mechanics/barrels#limewater)Известковой водой$()."
+      "title": "Wooden Bowls",
+      "text": "Bowls can also be made out of wood via crafting them together with $(thing)Glue$()$(br2)$(thing)Glue$() can be made by soaking $(thing)Bone Meal$() in a barrel of $(l:mechanics/barrels#limewater)Limewater$()."
     },
     {
       "type": "tfc:sealed_barrel_recipe",

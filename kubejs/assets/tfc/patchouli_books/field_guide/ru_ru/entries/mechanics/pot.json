@@ -1,11 +1,11 @@
 {
-  "name": "Кострище и котелок",
+  "name": "Firepit And Pot",
   "category": "tfc:mechanics",
   "icon": "tfc:pot",
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "$(thing)Котелок$() - это предмет, который можно добавить к кострищу для приготовления новых видов пищи и также производства некоторых других полезных предметов.$(br2)Чтобы создать кострище с котелком, сначала создайте $(l:getting_started/firepit)Кострище$(), затем используйте $(thing)Керамический котелок$() на кострище."
+      "text": "A $(thing)Pot$() is an item that can be added to the firepit to cook new types of food and also produce some other useful items.$(br2)In order to create a firepit with a pot, first create a $(l:getting_started/firepit)Firepit$(), then use a $(thing)Ceramic Pot$() on the firepit."
     },
     {
       "type": "patchouli:multiblock",
@@ -23,29 +23,29 @@
         }
       },
       "name": "",
-      "text": "Кострище с прикрепленным котелком.",
+      "text": "A firepit with a pot attached.",
       "enable_visualize": false
     },
     {
       "type": "tfc:knapping_recipe",
       "recipe": "tfc:clay_knapping/pot",
-      "text": "Керамический котелок сначала должен быть $(l:getting_started/pottery)Выколочен$() из глины."
+      "text": "A ceramic pot must be $(l:getting_started/pottery)Knapped$() out of clay first."
     },
     {
       "type": "tfc:heat_recipe",
       "recipe": "tfc:heating/fired_pot",
-      "text": "Затем его необходимо $(l:mechanics/heating)обжечь$(), чтобы создать $(thing)Керамический котелок$(), который можно использовать на кострище."
+      "text": "It then must be $(l:mechanics/heating)fired$() to create a $(thing)Ceramic Pot$() which can be used on the firepit."
     },
     {
       "type": "patchouli:text",
-      "text": "Как и кострище, котелок имеет четыре слота для топлива, которые должны быть добавлены в верхний слот, и индикатор температуры. Котелок также содержит пять слотов для предметов и вмещает до $(thing)1000 мБ$() любой жидкости.$(br2)Чтобы что-то приготовить в котелке, сначала нужно добавить жидкость, используя любой контейнер для жидкости, например ведро, на котелок. Затем добавьте предметы и зажгите котелок. Он будет кипеть некоторое время, пока рецепт не будет завершен."
+      "text": "Like the firepit, the pot has four slots for fuel which must be added in the top slot, and a temperature indicator. The pot also contains five item slots and holds up to $(thing)1000 mB$() of any fluid.$(br2)In order to cook something in the pot, first the fluid must be added by using any type of fluid container, such as a bucket, on the pot. Then add items and light the pot. It will begin boiling for a while until the recipe is completed."
     },
     {
       "type": "patchouli:image",
       "images": [
         "tfc:textures/gui/book/gui/pot.png"
       ],
-      "text": "Интерфейс котелка, активно кипящего и готовящего вид супа.",
+      "text": "The pot interface, actively boiling and making a type of soup.",
       "border": false
     },
     {
@@ -54,14 +54,14 @@
       "item": "tfc:food/fruit_soup",
       "title": "Рецепты супов",
       "link_recipes": false,
-      "text": "Суп готовится из 3-5 $(thing)фруктов$(), $(thing)овощей$() или $(thing)мяса$() в котелке с $(thing)водой$(). Когда рецепт готов, вода в котелке станет красной. Используйте $(item)$(k:key.use)$() с $(l:mechanics/bowls)миской$(), чтобы забрать его. Суп объединяет несколько питательных веществ в одно блюдо."
+      "text": "Soup is made from 3-5 $(thing)fruits$(), $(thing)vegetables$(), or $(thing)meats$() in a pot of $(thing)water$(). When the recipe is done, the water in the pot will turn red. $(item)$(k:key.use)$() with a $(l:mechanics/bowls)bowl$() to retrieve it. Soup combines multiple nutrients into a single meal."
     },
     {
       "type": "patchouli:spotlight",
       "item": "tfc:bucket/red_dye",
       "title": "Простые рецепты",
       "link_recipes": false,
-      "text": "Другие рецепты в котелке превращают предметы и жидкость в котелке во что-то другое. Например, кипячение пяти $(thing)золы$() в $(thing)воде$() делает $(thing)щелок$()."
+      "text": "Other pot recipes transform the items and fluid in the pot into something else. For example, boiling five $(thing)ash$() in $(thing)water$() makes $(thing)lye$()."
     }
   ],
   "read_by_default": true,

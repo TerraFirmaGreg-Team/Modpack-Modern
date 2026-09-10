@@ -8,7 +8,7 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "Если во время своих путешествий вы встретите деревья Компассии или Инжира, вам будет приятно узнать, что из них можно создавать $(l:firmaciv/watercraft)Лодки$() так же, как и из любого другого вида древесины."
+      "text": "If you see Tualang or Fig trees in your travels, you'll be pleased to know that you'll be able to create $(l:firmaciv/watercraft)Boats$() with them just like any other kind of Wood"
     },
     {
       "type": "patchouli:empty"

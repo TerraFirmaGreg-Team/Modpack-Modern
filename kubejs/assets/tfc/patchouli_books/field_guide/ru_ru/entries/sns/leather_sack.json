@@ -6,7 +6,7 @@
     {
       "type": "patchouli:spotlight",
       "item": "sns:leather_sack",
-      "text": "$(item)Кожаный мешок$() — это тип $(l:sns/item_containers)предметного контейнера$() и похож на сосуд с немного большей вместимостью. По умолчанию он может вмещать предметы максимум $(thing)обычного$() размера."
+      "text": "The $(item)Leather Sack$() is a type of $(l:sns/item_containers)Item Container$() and is like a vessel with slightly more storage. By default these can hold up to $(thing)Normal$() Items"
     },
     {
       "type": "patchouli:crafting",

@@ -6,7 +6,7 @@
     {
       "type": "patchouli:spotlight",
       "item": "sns:ore_sack",
-      "text": "$(item)Мешок для руды$() — это тип $(l:sns/item_containers)предметного контейнера$(), предназначенный для хранения больших количеств одного вида руды или подобных предметов, что делает его чрезвычайно полезным при добыче руды. $(br2)По умолчанию он вмещает ошеломляющие 512 предметов."
+      "text": "The $(item)Ore Sack$() is a type of $(l:sns/item_containers)Item Container$() intended for holding large amounts of a single ore like item making it extremely useful when going mining. $(br2)By default these hold a staggering 512 items"
     },
     {
       "type": "patchouli:crafting",

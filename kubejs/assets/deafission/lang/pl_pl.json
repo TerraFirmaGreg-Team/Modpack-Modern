@@ -14,7 +14,7 @@
 	"deafission.fission_reactor_fuel": "Produkt rozszczepialny",
 	"deafission.fission_reactor_processing": "Przetwarzanie ciepła reaktora",
 	"deafission.fission_reactor.gui.coolant": "Chłodziwo %s mW/t",
-	"deafission.fission_reactor.gui.coolant_missing": "Chłodziwo: %s (potrzebuje %s%%)",
+	"deafission.fission_reactor.gui.coolant_missing": "Chłodziwo: %s (było %s%%)",
 	"deafission.fission_reactor.gui.cooling": "Chłodzenie: %s HU/t",
 	"deafission.fission_reactor.gui.fuel": "Paliwo: %s dmg",
 	"deafission.fission_reactor.gui.fuel_throttle": "Paliwo: %s zużycia @ %s%%",

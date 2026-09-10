@@ -100,7 +100,7 @@
   "tfcgenviewer.rock_editor.error.cannot_have_empty_layer_definition_id": "Definicja warstwy nie może mieć pustego id",
   "tfcgenviewer.rock_editor.error.cannot_map_empty_values": "Nie można mapować pomiędzy pustymi wartościami",
   "tfcgenviewer.rock_editor.error.cannot_map_rock_to_multiple_layers": "Nie można mapować skał do wielu warstw: %s",
-  "tfcgenviewer.rock_editor.error.circular_layer_definition_reference": "Wykryto odwołanie cykliczne między „%s” a „%s”",
+  "tfcgenviewer.rock_editor.error.circular_layer_definition_reference": "Wykryto odwołanie cykliczne między \"%s\" a \"%s\"",
   "tfcgenviewer.rock_editor.error.editor_is_occupied": "Edytor jest zajęty",
   "tfcgenviewer.rock_editor.error.empty_rock_name": "Nazwa skały nie może być pusta",
   "tfcgenviewer.rock_editor.error.invalid_id": "'%s' nie jest prawidłowym id rejestru",
