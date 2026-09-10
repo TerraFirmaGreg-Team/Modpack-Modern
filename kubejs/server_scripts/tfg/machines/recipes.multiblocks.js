@@ -403,5 +403,42 @@ function registerTFGMultiblockRecipes(event) {
 		.circuit(1)
 		.EUt(GTValues.VA[GTValues.LV])
 		.addMaterialInfo(true)
+
+	// Heat Pump
+	event.recipes.gtceu.assembler('tfg:assembler/heat_pump')
+		.itemInputs(
+			'2x gtceu:filter_casing',
+			'2x gtceu:mv_electric_pump',
+			'2x #gtceu:circuits/mv',
+			'gtceu:mv_machine_hull'
+		)
+		.inputFluids(Fluid.of('tfg:chlorodifluoromethane', 6000))
+		.itemOutputs('1x tfg:heat_pump')
+		.duration(200)
+		.addMaterialInfo(true)
+		.EUt(GTValues.VA[GTValues.LV])
+
+	// Oxygen Distributor
+	event.recipes.gtceu.shaped('tfg:oxygen_distributor', [
+		'ABA',
+		'BCB',
+		'ABA'
+	], {
+		A: 'gtceu:hv_electric_pump',
+		B: 'gtceu:filter_casing',
+		C: 'gtceu:hv_machine_hull'
+	}).addMaterialInfo().id('tfg:shaped/oxygen_distributor')
+
+	// Higgs Emitter
+	event.recipes.gtceu.shaped('tfg:higgs_emitter', [
+		'ABA',
+		'CDC',
+		'ACA'
+	], {
+		A: 'gtceu:magnetic_neodymium_rod',
+		B: 'gtceu:hv_field_generator',
+		C: 'gtceu:desh_frame',
+		D: 'gtceu:ev_machine_hull'
+	}).addMaterialInfo().id('tfg:shaped/higgs_emitter')
 	
 }
