@@ -152,6 +152,12 @@
 			x: 2.0d
 			y: 0.0d
 		}
+		{
+			id: "1643781B0305ACC6"
+			linked_quest: "317C71249EBA0F15"
+			x: 0.5d
+			y: -3.0d
+		}
 	]
 	quests: [
 		{
@@ -320,27 +326,6 @@
 			y: 0.0d
 		}
 		{
-			dependencies: [
-				"5826EC76931359B8"
-				"2274463277151EF2"
-			]
-			description: [
-				"{quests.space_survival.air_distributor.desc.1}"
-				"{@pagebreak}"
-				"{quests.space_survival.air_distributor.desc.2}"
-			]
-			id: "3F785579F13B0F46"
-			subtitle: "{quests.space_survival.air_distributor.subtitle}"
-			tasks: [{
-				id: "051E9A1C97179DAE"
-				item: "ad_astra:oxygen_distributor"
-				type: "item"
-			}]
-			title: "{quests.space_survival.air_distributor.title}"
-			x: 2.0d
-			y: -3.0d
-		}
-		{
 			dependencies: ["5826EC76931359B8"]
 			description: [
 				"{quests.space_survival.stone_dust_centrifuging.desc.1}"
@@ -403,35 +388,6 @@
 			title: "{quests.space_survival.zip_gun.title}"
 			x: 2.0d
 			y: -5.5d
-		}
-		{
-			dependencies: ["3F785579F13B0F46"]
-			description: ["{quests.space_survival.oxygen_info.desc}"]
-			icon: "ad_astra:gravity_normalizer"
-			id: "75CC6B5DFC2454D4"
-			optional: true
-			shape: "heart"
-			subtitle: "{quests.space_survival.oxygen_info.subtitle}"
-			tasks: [
-				{
-					id: "08A02C7DA788283C"
-					item: "ad_astra:oxygen_sensor"
-					type: "item"
-				}
-				{
-					id: "2571D7A114D3F5EC"
-					item: "ad_astra:vent"
-					type: "item"
-				}
-				{
-					id: "6CC21FB252C9D8BA"
-					item: "ad_astra:gravity_normalizer"
-					type: "item"
-				}
-			]
-			title: "{quests.space_survival.oxygen_info.title}"
-			x: 5.0d
-			y: -3.0d
 		}
 		{
 			dependencies: ["00A2566109144D7F"]
@@ -713,10 +669,7 @@
 			y: 4.5d
 		}
 		{
-			dependencies: [
-				"3F785579F13B0F46"
-				"038B204DAC9C863D"
-			]
+			dependencies: ["71C57667932EDD58"]
 			dependency_requirement: "one_completed"
 			description: [
 				"{quests.space_survival.soulbound.desc.1}"
@@ -736,8 +689,53 @@
 				type: "item"
 			}]
 			title: "{quests.space_survival.soulbound.title}"
-			x: 5.0d
-			y: 0.0d
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"493D733A5438DD7E"
+				"317C71249EBA0F15"
+			]
+			dependency_requirement: "one_completed"
+			description: ["{quests.space_survival.air_distributor.desc}"]
+			id: "71C57667932EDD58"
+			subtitle: "{quests.space_survival.air_distributor.subtitle}"
+			tasks: [{
+				id: "5348B954C0856C01"
+				item: "tfg:oxygen_distributor"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["71C57667932EDD58"]
+			description: ["{quests.space_survival.higgs_emitter.desc}"]
+			id: "6C5DE33F08E8442F"
+			optional: true
+			subtitle: "{quests.space_survival.higgs_emitter.subtitle}"
+			tasks: [{
+				id: "155587B160363F52"
+				item: "tfg:higgs_emitter"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["71C57667932EDD58"]
+			description: ["{quests.space_survival.vent.desc}"]
+			id: "0350D09B2EA89C3F"
+			optional: true
+			subtitle: "{quests.space_survival.vent.subtitle}"
+			tasks: [{
+				id: "49A6FB1A48DA5323"
+				item: "ad_astra:vent"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -1.5d
 		}
 	]
 	subtitle: ["{quests.moon.subtitle}"]
