@@ -6,7 +6,7 @@
     {
       "type": "patchouli:text",
       "anchor": "planters",
-      "text": "$(thing)种植盆$()用于在$(l:firmalife/greenhouse)温室$()内种植$(thing)作物$()。要查看种植盆的状态，你可以手持一把$(thing)锄$()观察它。种植盆中的作物会消耗$(l:mechanics/fertilizers)营养$()，其方式类似于$(l:mechanics/crops)作物$()。种植盆应放置在有效的温室内，并由一个$(l:firmalife/climate_station)气象站$()激活。种植盆需要至少一些阳光才能工作。"
+      "text": "$(thing)种植盆$()用于在$(l:firmalife/greenhouse)温室$()内种植作物。要查看种植盆的状态，你可以手持一把$(thing)锄$()观察它。种植盆中的作物会消耗$(l:mechanics/fertilizers)营养$()，其方式类似于$(l:mechanics/crops)作物$()。种植盆应放置在有效的温室内，并由一个$(l:firmalife/climate_station)气象站$()激活。种植盆需要至少一些阳光才能工作。"
     },
     {
       "type": "patchouli:crafting",

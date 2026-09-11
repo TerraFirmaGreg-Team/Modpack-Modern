@@ -12,53 +12,53 @@
 			"type": "patchouli:spotlight",
 			"title": "Acácia, Goma-arábica",
 			"item": "tag:tfc:acacia_logs",
-			"text": "$(bold)Umbrella Thorn Acacia$()$(br)$(thing)Rainfall$(): 90 — 275mm$(br)$(thing)Temperature$(): 13.4 — 40°C$(br2)$(bold)Acacia Koa$()$(br)$(thing)Rainfall$(): 350 — 500mm$(br)$(thing)Temperature$(): 15.3 — 24.4°C$(br2)$(bold)Gum Arabic$()$(br)$(thing)Rainfall$(): 90 — 275mm$(br)$(thing)Temperature$(): 11.6 — 40°C"
+			"text": "$(bold)Acácia-guarda-chuva$()$(br)$(thing)Precipitação$(): 90  — 275mm$(br)$(thing)Temperatura$(): 13,4 —40°C$(br2)$(bold)Acácia Koa$()$(br)$(thing)Precipitação$(): 350 — 500mm$(br)$(thing)Temperatura$(): 15,3 — 24,4°C$(br2)$(bold)Goma-Arábica$()$(br)$(thing)Precipitação$(): 90 — 275mm$(br)$(thing)Temperatura$(): 11,6 — 40°C"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"title": "Freixo",
 			"item": "tag:tfc:ash_logs",
-			"text": "$(bold)White Ash$()$(br)$(thing)Rainfall$(): 60 — 240mm$(br)$(thing)Temperature$(): -13.9 — 0.7°C"
+			"text": "$(bold)Freixo-Branco$()$(br)$(thing)Precipitação$(): 60 — 240mm$(br)$(thing)Temperatura$(): -13,9 — 0,7 °C"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"title": "Álamo, Choupo",
 			"item": "tag:tfc:aspen_logs",
-			"text": "$(bold)Quaking Aspen$()$(br)$(thing)Rainfall$(): 350 — 500mm$(br)$(thing)Temperature$(): -15.7 — -1.1°C$(br2)$(bold)Poplar$()$(br)$(thing)Rainfall$(): 170 — 310mm$(br)$(thing)Temperature$(): -15.7 — -6.6°C"
+			"text": "$(bold)Álamo-Trêmulo$()$(br)$(thing)Precipitação$(): 350 — 500mm$(br)$(thing)Temperatura$(): -15,7 — -1,1°C$(br2)$(bold)Choupo$()$(br)$(thing)Precipitação$(): 170 — 310mm$(br)$(thing)Temperatura$(): -15,7 — -6,6°C"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"title": "Baobá",
 			"item": "tag:afc:baobab_logs",
-			"text": "$(bold)Baobab$()$(br)$(thing)Rainfall$(): 30 — 190mm$(br)$(thing)Temperature$(): 15.3 — 26.2°C"
+			"text": "$(bold)Baobá$()$(br)$(thing)Precipitação$(): 30 — 190mm$(br)$(thing)Temperatura$(): 15,3 — 26,2°C"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"title": "Bétula",
 			"item": "tag:tfc:birch_logs",
-			"text": "$(bold)Birch$()$(br)$(thing)Rainfall$(): 125 — 310mm$(br)$(thing)Temperature$(): -13.9 — 2.5°C"
+			"text": "$(bold)Bétula$(br)$(thing)Precipitação$(): 125 — 310mm$(br)$(thing)Temperatura$(): -13,9 — 2,5°C"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"title": "Ébano",
 			"item": "tag:tfc:blackwood_logs",
-			"text": "$(bold)Mpingo Blackwood$()$(br)$(thing)Rainfall$(): 85 — 285mm$(br)$(thing)Temperature$(): 13.4 — 22.5°C$(br2)$(bold)Mulga Blackwood$()$(br)$(thing)Rainfall$(): 35 — 150mm$(br)$(thing)Temperature$(): 9.8 — 20.7°C"
+			"text": "$(bold)Ébano-Africano$()$(br)$(thing)Precipitação$(): 85 — 285mm$(br)$(thing)Temperature$(): 13,4 — 22,5°C$(br2)$(bold)Acácia-Negra$()$(br)$(thing)Precipitação$(): 35 — 150mm$(br)$(thing)Temperature$(): 9,8 — 20,7°C"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"title": "Cedro",
 			"item": "tag:tfc:white_cedar_logs",
-			"text": "$(bold)White Cedar$()$(br)$(thing)Rainfall$(): 100 — 220mm$(br)$(thing)Temperature$(): -13.9 — 4.3°C$(br2)$(bold)Atlas Cedar$()$(br)$(thing)Rainfall$(): 165 — 500mm$(br)$(thing)Temperature$(): 8.0 — 13.4°C"
+			"text": "$(bold)Cedro-Branco$()$(br)$(thing)Precipitação$(): 100 — 220mm$(br)$(thing)Temperatura$(): -13,9 — 4.3°C$(br2)$(bold)Cedro-do-Atlas$()$(br)$(thing)Precipitação$(): 165 — 500mm$(br)$(thing)Temperatura$(): 8,0 — 13,4°C"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"title": "Castanheira",
 			"item": "tag:tfc:chestnut_logs",
-			"text": "$(bold)Chestnut$()$(br)$(thing)Rainfall$(): 150 — 300mm$(br)$(thing)Temperature$(): -6.6 — 11.6°C"
+			"text": "$(bold)Castanheira$()$(br)$(thing)Precipitação$(): 150 — 300mm$(br)$(thing)Temperatura$(): -6,6 — 11,6°C"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Cipreste",
+			"title": "Cipreste, Cedro-vermelho",
 			"item": "tag:afc:cypress_logs",
 			"text": "$(bold)Slender Cypress$()$(br)$(thing)Rainfall$(): 100 — 260mm$(br)$(thing)Temperature$(): 2.5 — 15.3°C$(br2)$(bold)Bald Cypress$()$(br)$(thing)Rainfall$(): 360 — 500mm$(br)$(thing)Temperature$(): -1.1 — 15.3°C$(br2)$(bold)Weeping Cypress$()$(br)$(thing)Rainfall$(): 290 — 415mm$(br)$(thing)Temperature$(): -8.4 — 4.3°C"
 		},
@@ -68,13 +68,13 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Eucalípto (Arco-Íris)",
+			"title": "Eucalipto (Arco-Íris)",
 			"item": "tag:afc:eucalyptus_logs",
 			"text": "$(bold)Blue Gum$()$(br)$(thing)Rainfall$(): 170 — 325mm$(br)$(thing)Temperature$(): 8.0 — 18.9°C$(br2)$(bold)Mountain Ash$()$(br)$(thing)Rainfall$(): 390 — 500mm$(br)$(thing)Temperature$(): 9.8 — 18.9°C$(br2)$(bold)Rainbow Eucalyptus$()$(br)$(thing)Rainfall$(): 300 — 450mm$(br)$(thing)Temperature$(): 15.3 — 24.4°C"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Figueira, Figueira de Borracha",
+			"title": "Ficus, Fícus Elástica",
 			"item": "tag:afc:fig_logs",
 			"text": "$(bold)Rusty Fig$()$(br)$(thing)Rainfall$(): 340 — 500mm$(br)$(thing)Temperature$(): 18.9 — 26.2°C$(br2)$(bold)Rubber Fig$()$(br)$(thing)Rainfall$(): 290 — 400mm$(br)$(thing)Temperature$(): 9.8 — 20.7°C"
 		},

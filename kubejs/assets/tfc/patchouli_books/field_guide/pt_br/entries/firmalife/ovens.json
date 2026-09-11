@@ -1,5 +1,5 @@
 {
-  "name": "Ovens",
+  "name": "Fornos",
   "category": "tfc:firmalife",
   "icon": "firmalife:cured_oven_top",
   "pages": [
@@ -10,17 +10,17 @@
     {
       "type": "tfc:knapping_recipe",
       "recipe": "firmalife:clay_knapping/oven_top",
-      "text": "The recipe for the top oven."
+      "text": "A receita para o forno superior."
     },
     {
       "type": "tfc:knapping_recipe",
       "recipe": "firmalife:clay_knapping/oven_bottom",
-      "text": "The recipe for the bottom oven."
+      "text": "A receita para o forno inferior"
     },
     {
       "type": "tfc:knapping_recipe",
       "recipe": "firmalife:clay_knapping/oven_chimney",
-      "text": "The recipe for the oven chimney    ."
+      "text": "A receita para a chaminé do forno."
     },
     {
       "type": "patchouli:crafting",
@@ -38,7 +38,7 @@
     },
     {
       "type": "tfc:multimultiblock",
-      "text": "An example oven structure, uncured and cured.",
+      "text": "Um exemplo de uma estrutura de forno, crua e curada.",
       "multiblocks": [
         {
           "pattern": [

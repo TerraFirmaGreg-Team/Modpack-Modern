@@ -1,25 +1,25 @@
 {
-  "name": "Stone Roads",
+  "name": "石の道",
   "category": "tfc:roadsandroofs",
   "icon": "rnr:rock/flagstones/basalt",
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "A variety of different stone walking surfaces can be applied over a base course, and all provide a 20% speed bonus. Cobbled roads are created by adding loose rocks over the base course. Sett roads can be constructed from stone or ceramic bricks."
+      "text": "路盤の上にはさまざまな種類の石の道を敷設することができ、どの種類でも移動速度の20％上昇効果があります。石畳の道は、路盤の上に小石を敷き詰めることで作られます。舗石道\nは、石レンガや陶製レンガを使って作ることができます。"
     },
     {
       "type": "patchouli:crafting",
       "anchor": "gneiss_flagstones",
       "recipe": "rnr:crafting/flagstone/gneiss",
-      "title": "Flagstone Crafting",
-      "text": "Flagstones can be crafted from smooth stone or sandstone blocks."
+      "title": "敷石の作成",
+      "text": "敷石は滑らかな石や砂岩のブロックから作ることができます。"
     },
     {
       "type": "patchouli:crafting",
       "anchor": "pink_sandstone_flagstones",
       "recipe": "rnr:crafting/flagstone/pink_sandstone",
-      "title": "Flagstone Crafting",
-      "text": "Flagstones can be crafted from smooth stone or sandstone blocks."
+      "title": "敷石の作成",
+      "text": "敷石は滑らかな石や砂岩のブロックから作ることができます。"
     },
     {
       "type": "patchouli:image",

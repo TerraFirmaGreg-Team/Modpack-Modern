@@ -6,7 +6,7 @@
     {
       "type": "patchouli:spotlight",
       "item": "sns:frame_pack",
-      "text": "The $(item)Frame Pack$() is a type of $(l:sns/item_containers)Item Container$(), essentially a TFC chest on your back. Like the TFC chest it respects TFC's $(l:getting_started/size_and_weight)Size system$()."
+      "text": "$(item)Каркасный рюкзак$() это тип $(l:sns/item_containers)Предметных контейнеров$(). По сути, это сундук из TFC прямо на твоей спине. Как и сундук из TFC, он учитывает $(l:getting_started/size_and_weight)систему размеров$() TFC."
     },
     {
       "type": "patchouli:crafting",

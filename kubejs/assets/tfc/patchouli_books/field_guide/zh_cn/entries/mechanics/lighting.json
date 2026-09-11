@@ -9,7 +9,7 @@
     },
     {
       "type": "patchouli:text",
-      "text": "$(li)1. $(l:mechanics/lighting#torches)火把$()$(li)2. $(l:mechanics/lighting#candles)蜡烛$()$(li)3. $(l:mechanics/lighting#jack_o_lanterns)南瓜灯$()",
+      "text": "$(br)1. $(l:mechanics/lighting#torches)火把$()$(br)2. $(l:mechanics/lighting#candles)蜡烛$()$(br)3. $(l:mechanics/lighting#jack_o_lanterns)南瓜灯$()",
       "title": "目录"
     },
     {
@@ -20,7 +20,7 @@
     },
     {
       "type": "patchouli:text",
-      "text": "火把在$(thing)燃尽$()前可以燃烧 3 天。手持另一根火把或起火器并点击$(item)$(k:key.use)$()就能重新点燃燃尽的火把。"
+      "text": "火把在$(thing)燃尽$()前可以燃烧 3 天。手持另一根火把或起火器并点击就能重新点燃燃尽的火把。手持木棍点击火把可将其点燃。将火把投入水中会变成$(thing)草木灰$()和$(thing)木棍$()。"
     },
     {
       "type": "patchouli:multiblock",
@@ -45,7 +45,7 @@
     {
       "type": "tfc:sealed_barrel_recipe",
       "recipe": "tfc:barrel/candle",
-      "text": "将$(thing)线$()封入装有$(thing)蜡脂$()的$(thing)大桶$()中凝固就能制成蜡烛。"
+      "text": "将$(thing)线$()封入装有$(l:mechanics/lamps#tallow)蜡脂$()的$(l:mechanics/barrels)大桶$()中凝固就能制成蜡烛。"
     },
     {
       "type": "patchouli:multiblock",
