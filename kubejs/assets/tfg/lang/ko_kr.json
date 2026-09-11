@@ -324,5 +324,7 @@
 	"quests.tfg_tips.oven.title": "오븐",
 	"quests.tfg_tips.brine_something.title": "소금물절임 중",
 	"quests.tfg_tips.bacon.title": "베이컨",
-	"quests.tfg_tips.composter.title": "퇴비통"
+	"quests.tfg_tips.composter.title": "퇴비통",
+	"tfg.machine.oxygen_distributor.idle": "멈춤",
+	"tfg.machine.oxygen_distributor.status.sealed": "밀봉된"
 }

@@ -4,5 +4,8 @@
 	"entity.sandworm_mod.worm_chain": "サンドワーム",
 	"entity.sandworm_mod.worm_head_segment": "サンドワームの頭",
 	"entity.sandworm_mod.worm_segment": "サンドワームの体",
-	"item.sandworm_mod.sandworm_tooth": "サンドワームのキバ"
+	"item.sandworm_mod.sandworm_tooth": "サンドワームのキバ",
+	"msg.sandworm_mod.spawn": "§4ヤツが来るぞ！",
+	"msg.sandworm_mod.stage_1": "§eサンドワームが気配を感じている...",
+	"msg.sandworm_mod.stage_2": "§cサンドワームがまもなく目覚める！"
 }

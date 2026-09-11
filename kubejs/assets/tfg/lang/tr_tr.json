@@ -834,5 +834,7 @@
 	"quests.tfg_tips.remote_lens.title": "Uzaktan Kontrollü Lens",
 	"quests.tfg_tips.brine_something.title": "Salamura Ediliyor",
 	"quests.tfg_tips.composter.title": "Gübre Varili",
-	"quests.tfg_tips.tools_tips.concrete_roads.title": "Beton Yollar"
+	"quests.tfg_tips.tools_tips.concrete_roads.title": "Beton Yollar",
+	"tfg.machine.oxygen_distributor.idle": "Boşta",
+	"tfg.machine.oxygen_distributor.status.sealed": "Sealed"
 }

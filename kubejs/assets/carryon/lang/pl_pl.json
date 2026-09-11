@@ -1,9 +1,12 @@
 {
 	"carryon.category.blacklist": "Czarna lista",
 	"carryon.category.custompickupconditions.custompickupconditionsblocks": "Niestandardowe warunki podnoszenia bloku",
+	"carryon.category.custompickupconditions.custompickupconditionsentities": "Niestandardowe warunki podnoszenia bytu",
 	"carryon.category.modeloverrides": "Zastąpienie modelu (Zaawansowane)",
 	"carryon.category.settings": "Ustawienia",
 	"carryon.category.whitelist": "Biała lista",
+	"carryon.general.blacklist.forbiddenentities": "Byty, których Gracz nie może podnieść",
+	"carryon.general.blacklist.forbiddentiles": "Bloki, których Gracz nie może podnieść",
 	"carryon.general.modeloverrides.modeloverrides": "Zastąpienie modelu",
 	"key.carry.category": "Carry On",
 	"key.carry.desc": "Podnieś"
