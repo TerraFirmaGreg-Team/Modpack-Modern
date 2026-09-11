@@ -53,7 +53,7 @@
       "type": "patchouli:multiblock",
       "multiblock_id": "tfc:water_wheel",
       "name": "",
-      "text": "$(thing)Koła wodna$()",
+      "text": "$(thing)Koło wodne$()",
       "enable_visualize": false
     },
     {
@@ -88,7 +88,7 @@
     },
     {
       "type": "tfc:multimultiblock",
-      "text": "An example of a $(thing)Clutch$() in use.",
+      "text": "Przykład użycia $(thing)sprzęgła$().",
       "multiblocks": [
         "tfc:clutch_off",
         "tfc:clutch_on"

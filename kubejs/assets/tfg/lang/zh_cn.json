@@ -6353,7 +6353,7 @@
 	"quests.medium_voltage.mv_second_hv.desc": "恭喜完成&bMV章节&r的一个重要里程碑。\n\n更优质&6HV&r电路——制作成本&d更低廉&r，工艺更简单。\n\n现在你应该&a准备好进入&rHV章节了，除非你尚未提升发电产能。",
 	"quests.medium_voltage.mv_circuit_assembler.title": "你的第二台电路组装机",
 	"quests.medium_voltage.mv_circuit_assembler.subtitle": "耶，呀呼",
-	"quests.medium_voltage.mv_circuit_assembler.desc": "&3电路组装机&r作为每个等级的核心进阶设备，总会为你开启新等级的电路。\n\n在这个时候，建议你在电路组装机旁边放一个&3桶&r，把它灌满锡焊，这样很长一段时间你都不用担心补充问题了。",
+	"quests.medium_voltage.mv_circuit_assembler.desc": "&3电路组装机&r作为每个等级的核心进阶设备，总会为你开启新等级的电路。\n\n在这个时候，建议你在电路组装机旁边放一个&3桶&r，把它灌满焊锡，这样很长一段时间你都不用担心补充问题了。",
 	"quests.medium_voltage.mv_more_lv.title": "更多LV电路",
 	"quests.medium_voltage.mv_more_lv.subtitle": "你解锁了一个新的电路等级！",
 	"quests.medium_voltage.mv_more_lv.desc.1": "集成逻辑电路是&7LV&a电路&r的一种替代方案，更易实现量产，并且可以升级到&bMV&r（继而升级至&6HV&r）。\n\n&9注：&r这并非严格意义上的电路成本优化——需达到下一阶段方可实现。但它仍是重要的升级环节，并且是获得&6HV电路&r的必要步骤。",
@@ -6772,13 +6772,7 @@
 	"quests.space_survival.zip_gun.title": "喷气枪",
 	"quests.space_survival.zip_gun.subtitle": "就像掌中的喷气背包",
 	"quests.space_survival.zip_gun.desc": "喷气枪可以填充以下任何压缩气体来喷射空气，在低重力环境中推动你。如果你想在轨道上建造任何东西，它们是必不可少的！",
-	"quests.space_survival.air_distributor.title": "建立永久基地",
 	"quests.space_survival.air_distributor.subtitle": "一个度假屋",
-	"quests.space_survival.air_distributor.desc.1": "目前你可能得以生存，但难道不想真正&o繁荣发展&r吗？如果你希望建立更永久的基地，&6空气分配器&r正是你的不二之选！向其注入先前制备的任意压缩气体，即可为大型密闭空间\"充氧\"，使你能够卸下头盔种植作物，并且放置水源而不会结冰。\n\n任何实心方块都可用于建造基地，但你需要一个适当的气闸以确保气体不会全部在&c涡流&r中逃逸。",
-	"quests.space_survival.air_distributor.desc.2": "充氧区域将恒温于15℃，适宜各类作物生长（虽然电力温室不受影响），且保持液态的水源也能通过电解轻松获取&b氧气&r。你还可以使用二极管方块在保持墙壁密封的同时传输电力，就像在超净间里一样。",
-	"quests.space_survival.oxygen_info.title": "更多月球基地机器",
-	"quests.space_survival.oxygen_info.subtitle": "家的舒适",
-	"quests.space_survival.oxygen_info.desc": "氧气探测器是一个简单的机器，当它处于充氧区域时会发出红石信号。\n\n通风口是一个实心块，也可以让可呼吸空气通过而不会引起涡流。\n\n重力发生器可以改变封闭空间内区域的重力，类似于空气分配器的工作方式，但目前有点太昂贵了。",
 	"quests.space_survival.railgun.title": "星际物流",
 	"quests.space_survival.railgun.subtitle": "末影箱？从来没听说过她！",
 	"quests.space_survival.railgun.desc.1": "&7在&b群峦格雷&r整合包中，跨维度或长距离运输物品需要建造特殊的&6多方块结构&r。\n\n该系统具备&a强大而灵活&r的特性，提供多种设置选项，可让你根据需求自定义物流方案。\n\n这套完美系统能将所有&a被动产出&r的资源精准输送至其他行星的所需之处！更配备强大的&d配置系统&r，让你可从单一控制点全面掌控运输网络。",
@@ -8148,5 +8142,9 @@
 	"quests.tfg_tips.tools_tips.swim_gear.desc": "&6通气管&r能让你在水下额外获得15秒的“呼吸”时间，而&a脚蹼&r则会大幅提升你的游泳速度。",
 	"quests.tfg_tips.tools_tips.cheese_rack.title": "奶酪架",
 	"quests.tfg_tips.tools_tips.cheese_rack.subtitle": "等等，那不是桶……",
-	"quests.tfg_tips.tools_tips.cheese_rack.desc": "桶架也可以用来把奶酪轮叠放在其他奶酪轮上，就像叠桶一样，更加节省空间！\n\n更多关于如何使用奶酪架的详细信息，请查阅《野外指南》。"
+	"quests.tfg_tips.tools_tips.cheese_rack.desc": "桶架也可以用来把奶酪轮叠放在其他奶酪轮上，就像叠桶一样，更加节省空间！\n\n更多关于如何使用奶酪架的详细信息，请查阅《野外指南》。",
+	"tfg.machine.oxygen_distributor.idle": "空闲",
+	"tfg.machine.oxygen_distributor.active": "工作中",
+	"tfg.machine.oxygen_distributor.status.sealed": "密封",
+	"tfg.machine.oxygen_distributor.status": "状态："
 }

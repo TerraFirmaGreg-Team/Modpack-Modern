@@ -1,38 +1,38 @@
 {
-  "name": "Berry Bushes",
+  "name": "Arbustos frutíferos",
   "category": "tfc:firmalife",
   "icon": "firmalife:plant/pineapple_bush",
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "Firmalife adds some berry bushes. For information on wild grape bushes, see $(l:firmalife/wine)winemaking$()."
+      "text": "Firmalife adiciona alguns arbustos frutíferos. Para mais informações sobre arbustos de uvas selvagens, veja $(l:firmalife/wine)vinicultura$()"
     },
     {
       "type": "patchouli:spotlight",
       "item": "firmalife:food/nightshade_berry",
       "link_recipes": false,
-      "text": "First is nightshade. Nightshade is a poisonous berry. When put into soup, it makes poisonous $(thing)Stinky Soup$(). It is found between 200-400mm of rain and 7-24 C temperature in forests."
+      "text": "A primeira é a beladona. Beladona é uma baga venenosa. Quanto adicionada em uma sopa, produz a venenosa  $(thing)Sopa Fedorenta$(). Ela é encontrada em florestas com precipitação entre 200-400mm e temperaturas entre 7-24 C."
     },
     {
       "type": "patchouli:spotlight",
       "item": "firmalife:food/pineapple",
       "link_recipes": false,
-      "text": "Pineapple bushes are found 250-500mm of rainfall and 20-32 C temperature in forests. Pineapples are like any other fruit, except that they can be made into $(thing)Pineapple Leather$()."
+      "text": "Abacaxizeiros são encontrados em florestas com precipitação entre 250-500mm e temperaturas entre  20-30 C. Abacaxis são como qualquer fruta, exceto que podem ser transformados em  $(thing)Couro de Abacaxi$()."
     },
     {
       "type": "patchouli:crafting",
       "recipe": "firmalife:crafting/pineapple_fiber",
-      "text": "Pineapples that have been $(l:firmalife/drying)Dried$() can be crafted into pineapple fiber."
+      "text": "Abacaxis que foram $(l:firmalife/drying)Desidratado$() podem ser transformados em fibra de abacaxi."
     },
     {
       "type": "patchouli:crafting",
       "recipe": "tfc:kjs/damage/shapeless/pineapple_yarn",
-      "text": "Pineapple yarn is made by crafting a $(thing)Spindle$() with the fiber."
+      "text": "O fio de abacaxi pode ser feito combinando um  $(thing)Fuso$() com a fibra."
     },
     {
       "type": "tfc:loom_recipe",
       "recipe": "firmalife:loom/pineapple_leather",
-      "text": "Finally, pineapple leather can be me woven in a $(l:tfc:mechanics/weaving)Loom$(). It is a plant substitute for regular leather than can be used for knapping, crafting, and other uses!"
+      "text": "Por fim, o couro do abacaxi pode ser tecido em um $(l:tfc:mechanics/weaving)Tear$(). É um substituto vegetal para o couro comum que pode ser usado para fabricar, lascar e outros usos!"
     }
   ],
   "read_by_default": true,

@@ -1,3 +1,9 @@
 {
-	"item.measurements.tape_measure": "メジャー"
+	"item.measurements.tape_measure": "メジャー",
+	"text.autoconfig.measurements.option.client": "クライアント",
+	"text.autoconfig.measurements.option.client.lineColor": "線の色",
+	"text.autoconfig.measurements.option.client.lineWidth": "線の幅",
+	"text.autoconfig.measurements.option.client.lineWidthMax": "線の最大幅",
+	"text.autoconfig.measurements.option.client.textColor": "文字の色",
+	"text.autoconfig.measurements.option.client.textSize": "文字サイズ"
 }

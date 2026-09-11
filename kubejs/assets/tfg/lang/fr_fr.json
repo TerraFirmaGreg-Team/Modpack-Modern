@@ -4965,13 +4965,7 @@
 	"quests.space_survival.zip_gun.title": "Zip Gun",
 	"quests.space_survival.zip_gun.subtitle": "Like a jetpack in the palm of your hand",
 	"quests.space_survival.zip_gun.desc": "A Zip Gun can be filled up with any of the below Compressed Gases to shoot out air, pushing you around in low gravity environments. They're essential if you want to build anything in orbit!",
-	"quests.space_survival.air_distributor.title": "Setting up a permanent base",
 	"quests.space_survival.air_distributor.subtitle": "A holiday home",
-	"quests.space_survival.air_distributor.desc.1": "So far you may be surviving, but do you want to truly &othrive&r? If you're wanting to set up a more permanent base, look no further than the &6Air Distributor&r! Feed it one of the compressed gases from earlier and it will \"oxygenate\" a large enclosed area, letting you take your helmet off, grow crops, and place a water source without it freezing.\n\nAny solid block will work to build your base out of, but you'll want a proper airlock to ensure the gas doesn't all escape in a &cvortex&r.",
-	"quests.space_survival.air_distributor.desc.2": "The oxygenated area will be at a constant 15C for any crops you'd like to grow (though the Electric Greenhouse doesn't mind), and the water source staying liquid will also let you easily electrolyze it for a source of &bOxygen&r. You can also use a Diode block to transfer power through the walls while keeping them sealed, just like in a cleanroom.",
-	"quests.space_survival.oxygen_info.title": "More Moon base machines",
-	"quests.space_survival.oxygen_info.subtitle": "Home comforts",
-	"quests.space_survival.oxygen_info.desc": "The Oxygen Detector is a simple machine that emits a redstone signal whenever it's in an oxygenated area.\n\nThe Vent is a solid block that can also let breathable air through without causing a vortex.\n\nThe Gravity Normalizer can change the gravity of an area within an enclosed space similar to how an Air Distributor works, but is a little too expensive at the moment.",
 	"quests.space_survival.railgun.title": "Interplanetary Logistics",
 	"quests.space_survival.railgun.subtitle": "Ender chest? Never heard of her!",
 	"quests.space_survival.railgun.desc.1": "&7In &bTerraFirmaGreg&r, transporting items across dimensions or over long distances requires you to build special &6multiblock structures&r.\n\nThis system is &apowerful and flexible&r, offering multiple settings that let you customize logistics to perfectly suit your needs.\n\nThis is the perfect system to transport all of your &apassively-produced&r resources to exactly where they're needed on other planets! And it comes with a powerful &dconfiguration system&r to let you control everything from a single place.",
@@ -6069,5 +6063,8 @@
 	"quests.tfg_tips.tools_tips.harvest_basket.title": "Harvest Baskets",
 	"quests.tfg_tips.tools_tips.harvest_basket.subtitle": "For competitive pie bakers.",
 	"quests.tfg_tips.tools_tips.harvest_basket.task": "Any #tfg:harvester",
-	"quests.tfg_tips.tools_tips.harvest_basket.desc": "&l&2Harvest Baskets&r&r are a new tool made just for &5TFG&r! These baskets can be used to harvest whole trees and bushes of fruit in one right-click! A regular &6Harvest Basket&r has a base durability of &n128&r. But an &3Aluminium Harvest Basket&r takes no damage on use."
+	"quests.tfg_tips.tools_tips.harvest_basket.desc": "&l&2Harvest Baskets&r&r are a new tool made just for &5TFG&r! These baskets can be used to harvest whole trees and bushes of fruit in one right-click! A regular &6Harvest Basket&r has a base durability of &n128&r. But an &3Aluminium Harvest Basket&r takes no damage on use.",
+	"tfg.machine.oxygen_distributor.idle": "Inactive",
+	"tfg.machine.oxygen_distributor.active": "Actif",
+	"tfg.machine.oxygen_distributor.status.sealed": "Scellé"
 }

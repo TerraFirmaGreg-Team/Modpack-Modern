@@ -10,7 +10,7 @@
     {
       "type": "patchouli:crafting",
       "recipe": "tfc:crafting/wooden_bucket",
-      "text": "The wooden bucket is made of $(thing)Lumber$()."
+      "text": "Drewniane wiadro jest wytwarzane z $(thing)desek$()."
     }
   ],
   "read_by_default": true

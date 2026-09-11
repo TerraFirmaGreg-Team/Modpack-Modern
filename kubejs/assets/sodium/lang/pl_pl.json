@@ -1,4 +1,6 @@
 {
+	"sodium.console.core_shaders_info": "Sprawdź dziennik gry, aby uzyskać szczegółowe informacje.",
+	"sodium.console.game_restart": "Gra musi zostać zrestartowana, aby przełączyć jedno lub więcej ustawień graficznych!",
 	"sodium.option_impact.extreme": "Ekstremalny",
 	"sodium.option_impact.high": "Wysoki",
 	"sodium.option_impact.low": "Niski",
@@ -7,12 +9,15 @@
 	"sodium.options.always_defer_chunk_updates.name": "Zawsze opóźniaj aktualizacje chunków",
 	"sodium.options.animate_only_visible_textures.name": "Animuj tylko widoczne tekstury",
 	"sodium.options.biome_blend.value": "%s blok(ów)",
+	"sodium.options.brightness.tooltip": "Kontroluje jasność (gamma) gry.",
 	"sodium.options.buttons.apply": "Zastosuj",
 	"sodium.options.buttons.donate": "Wesprzyj Sodium!",
 	"sodium.options.buttons.undo": "Cofnij",
 	"sodium.options.chunk_update_threads.name": "Wątki aktualizacji chunków",
+	"sodium.options.clouds_quality.tooltip": "Kontroluje prezentacje wyrenderowanych chmur na niebie.",
 	"sodium.options.cpu_render_ahead_limit.name": "Limit renderowania klatek z wyprzedzeniem przez CPU",
 	"sodium.options.cpu_render_ahead_limit.value": "%s klatek",
+	"sodium.options.fullscreen.tooltip": "Jeśli włączone, gra będzie wyświetlana w trybie pełnoekranowym (Jeśli opcja jest wspierana).",
 	"sodium.options.leaves_quality.name": "Liście",
 	"sodium.options.leaves_quality.tooltip": "Kontroluje jakość liści.",
 	"sodium.options.pages.advanced": "Zaawansowane",
@@ -26,5 +31,6 @@
 	"sodium.options.use_fog_occlusion.name": "Użyj okluzji mgły",
 	"sodium.options.use_no_error_context.name": "Używaj braku kontekstu błędu",
 	"sodium.options.use_persistent_mapping.name": "Używaj trwałego mapowania",
-	"sodium.options.vignette.name": "Winieta"
+	"sodium.options.vignette.name": "Winieta",
+	"sodium.options.weather_quality.tooltip": "Kontroluje jakość efektów deszczu i śniegu."
 }

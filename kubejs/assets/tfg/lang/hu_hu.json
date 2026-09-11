@@ -61,6 +61,12 @@
 	"block.gtceu.gas_pressurizer": "Gázkompresszor",
 	"block.gtceu.moon_dust_harvester": "Holdportermelő",
 	"block.gtceu.coal_liquefaction_tower": "Cseppfolyósítási torony",
+	"block.gtceu.ev_1024a_laser_source_hatch": "§5EF§r 1.024§eA§r lézerforrás",
+	"block.gtceu.ev_1024a_laser_target_hatch": "§5EF§r 1.024§eA§r lézercélpont",
+	"block.gtceu.ev_256a_laser_source_hatch": "§5EF§r 256§eA§r lézerforrás",
+	"block.gtceu.ev_256a_laser_target_hatch": "§5EF§r 256§eA§r lézercélpont",
+	"block.gtceu.ev_4096a_laser_source_hatch": "§5EF§r 4.096§eA§r lézerforrás",
+	"block.gtceu.ev_4096a_laser_target_hatch": "§5EF§r 4.096§eA§r lézercélpont",
 	"block.tfg.large_bronze_boiler": "Nagy bronz kazán",
 	"block.tfg.lentil": "Lencse",
 	"block.tfg.cucumber": "Uborka",
@@ -499,6 +505,7 @@
 	"quests.space_survival.snatcher.title": "Rabló",
 	"quests.steam_age.helve_hammer.title": "Farkaskalapács",
 	"quests.steam_age.red_alloy.title": "Vörösötvözet",
+	"quests.steam_age.crushing_wheel.title": "Zúzókerék",
 	"quests.steam_age.vacuum_chamber.title": "Vákuumkamra",
 	"quests.steam_age.curving_press.title": "Hajlítóprés",
 	"quests.steam_age.vibrating_table.title": "Rázóasztal",
@@ -532,5 +539,7 @@
 	"quests.tfg_tips.brine_something.title": "Sós vizes pácolás",
 	"quests.tfg_tips.bacon.title": "Szalonna",
 	"quests.tfg_tips.composter.title": "Komposztáló",
-	"quests.tfg_tips.lunchbox.title": "Uzsonnásdoboz"
+	"quests.tfg_tips.lunchbox.title": "Uzsonnásdoboz",
+	"tfg.machine.oxygen_distributor.idle": "Tétlen",
+	"tfg.machine.oxygen_distributor.status.sealed": "Lezárva"
 }

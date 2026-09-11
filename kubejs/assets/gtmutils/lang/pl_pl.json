@@ -26,7 +26,9 @@
   "block.gtmutils.opv_64a_energy_converter": "Konwerter energii §9§lObN§r 64§eA§r",
   "block.gtmutils.opv_auto_charger_4x": "Automatyczna turbo ładowarka §9§lobezwładniającego napięcia§r 4x",
   "block.gtmutils.tag_enlarged_stocking_bus.desc.0": "Pobiera przedmioty bezpośrednio z sieci ME",
+  "block.gtmutils.tag_enlarged_stocking_bus.desc.1": "Powiększony znacznikowy bufor",
   "block.gtmutils.tag_enlarged_stocking_hatch.desc.0": "Pobiera płyny bezpośrednio z sieci ME",
+  "block.gtmutils.tag_enlarged_stocking_hatch.desc.1": "Powiększony znacznikowy bufor",
   "block.gtmutils.tag_stocking_bus.desc.0": "Pobiera przedmioty bezpośrednio z sieci ME",
   "block.gtmutils.tag_stocking_bus.desc.2": "Automatycznie przechowuje pasujące przedmioty w buforze",
   "block.gtmutils.tag_stocking_hatch.desc.0": "Pobiera płyny bezpośrednio z sieci ME",
@@ -41,6 +43,7 @@
   "block.gtmutils.uv_auto_charger_4x": "Automatyczna turbo ładowarka §3ostatecznego napięcia§r 4x",
   "block.gtmutils.uxv_64a_energy_converter": "Konwerter energii §eUXN§r 64§eA§r",
   "block.gtmutils.web_hub": "Bezprzewodowy hub mostu energetycznego",
+  "block.gtmutils.web_receiver": "Bezprzewodowy odbiornik mostu energetycznego",
   "block.gtmutils.zpm_64a_energy_converter": "Konwerter energii §cMPZ§r 64§eA§r",
   "block.gtmutils.zpm_auto_charger_4x": "Automatyczna turbo ładowarka §cMPZ§r 4x",
   "config.gtmutils.option.autoChargersEnabled": "Włącz automatyczne ładowarki",
@@ -75,6 +78,7 @@
   "gtceu.placeholder_info.watfrequency.1": "Użycie:",
   "gtceu.placeholder_info.watfrequency.2": "  {watfrequency} -> Obecna częstotliwość: (wstaw tutaj częstotliwość)",
   "gtceu.placeholder_info.webfrequency.1": "Użycie:",
+  "gtceu.placeholder_info.webfrequency.2": "  {webfrequency} -> Obecna częstotliwość: (wstaw tutaj częstotliwość)",
   "gtmutils.gui.pterb.wireless_configurator.title": "Częstotliwość",
   "gtmutils.gui.web_hub.wireless_configurator.title": "Częstotliwość",
   "gtmutils.multiblock.pterb_machine.coolant_usage": "§cZużywa %smW %s na sekundę",
@@ -125,6 +129,7 @@
   "key.categories.gtmutils": "GTM Utils",
   "key.gtmutils.spray_can_menu": "Otwórz obrotowe menu spraya",
   "material.gtmutils.quantum_coolant": "Chłodziwo kwantowe",
+  "tooltip.omnibreaker.can_break_anything": "Omni-breaker może błyskawicznie niszczyć DOWOLNY blok!",
   "tooltip.omnibreaker.charge_status": "Energia: %s EU / %s EU",
   "tooltip.omnibreaker.modern_vajra": "Nowoczesna Vajra",
   "tooltip.omnibreaker.right_click_function": "Niszczy pojedyncze bloki za pomocą PPM!",
@@ -140,5 +145,6 @@
   "tooltip.pterb_machine.uses_coolant": "Używa %s do funkcjonowania!",
   "tooltip.web_hub_machine.input_coolant_before_use": "Zawsze wprowadź chłodziwo przed włączeniem!",
   "tooltip.web_hub_machine.purpose": "Most Einsteina–Rosena do przesyłu energii (PTERB)",
-  "tooltip.web_hub_machine.uses_coolant": "Używa %s do funkcjonowania!"
+  "tooltip.web_hub_machine.uses_coolant": "Używa %s do funkcjonowania!",
+  "tooltip.web_receiver_machine.only_output": "Otrzymuje energię z huba WEB"
 }

@@ -751,5 +751,7 @@
 	"quests.tfg_tips.conductor_whistle.title": "Silbato de maquinista",
 	"quests.tfg_tips.brine_something.title": "Brining",
 	"quests.tfg_tips.composter.title": "Compostador",
-	"quests.tfg_tips.tools_tips.harvest_basket.title": "Cestas de cosecha"
+	"quests.tfg_tips.tools_tips.harvest_basket.title": "Cestas de cosecha",
+	"tfg.machine.oxygen_distributor.idle": "Inactivo",
+	"tfg.machine.oxygen_distributor.status.sealed": "Sealed"
 }

@@ -70,7 +70,7 @@
     },
     {
       "type": "patchouli:text",
-      "text": "Next, you'll need to add planks of suitably a strong hardwood:$(br2)Acacia$(br)Ash$(br)Aspen$(br)Birch$(br)Blackwood$(br)Chestnut$(br)Hickory$(br)Maple$(br)Oak$(br)Rosewood$(br)Sycamore"
+      "text": "Następnie musisz dodać deski odpowiednio twardego drewna: $(br2)Akacja$(br)Jesion$(br)Topola$(br)Brzoza$(br)Czarnodrzew$(br)Kasztan$(br)Hikora$(br)Klon$(br)Dąb$(br)Palisander$(br)Jawor"
     },
     {
       "type": "patchouli:multiblock",
@@ -110,7 +110,7 @@
         }
       },
       "name": "Rusztowanie sloopa",
-      "text": "Four planks have been added to each scaffold.",
+      "text": "Do każdego rusztowania dodano cztery deski.",
       "enable_visualize": true
     },
     {

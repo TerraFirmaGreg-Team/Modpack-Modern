@@ -5,35 +5,35 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "The $(thing)Drying Mat$() is used to dry items. It is made with $(thing)Fruit Leaves$(), which are obtained from breaking the leaves of $(thing)Fruit Trees$()."
+      "text": "A $(thing)Esteira de Desidratação$() é usada para desidratar itens. É feita com $(thing)Folhas Frutíferas$() que são obtidas ao quebrar as folhas de $(thing)Árvores Frutíferas$()."
     },
     {
       "type": "patchouli:crafting",
       "recipe": "firmalife:crafting/drying_mat",
-      "text": "The recipe for the drying mat."
+      "text": "A receita para a esteira de desidratação"
     },
     {
       "type": "patchouli:text",
-      "text": "To use the drying mat, place it out on the sun and add an item to it with $(item)$(k:key.use)$(). After a half day, it will be dried. If it rains, the drying process must start over."
+      "text": "Para usar a esteira de desidratação, coloque-a no sol e adicione um item nela com $(item)$(k:key.use)$(). Após meio dia, o item estará desidratado. Se chover, o processo de desidratação precisará recomeçar."
     },
     {
       "type": "patchouli:crafting",
       "recipe": "firmalife:crafting/solar_drier",
-      "text": "The solar drier functions the same as the drying mat, but 12x as fast."
+      "text": "O desidratador solar funciona da mesma maneira que a esteira de desidratação, mas 12x mais rápido."
     },
     {
       "type": "patchouli:text",
-      "text": "Drying mats can be automated. Pushing a piston head against a drying mat will pop the item off. Dropping an item onto a drying mat will place it on the mat."
+      "text": "Esteiras de desidratação podem ser automatizadas. Empurrar a cabeça de um pistão contra a esteira de desidratação fará o item saltar. Soltar um item em cima de uma esteira de desidratação irá colocar o item na esteira."
     },
     {
       "type": "tfc:drying_recipe",
       "recipe": "firmalife:drying/drying_fruit",
-      "text": "Drying fruit is a common use of the drying mat. Dried fruit is used in some recipes, and lasts longer."
+      "text": "Desidratar frutas é um uso comum da esteira de desidratação. Frutas desidratadas são utilizadas em algumas receitas e duram mais tempo."
     },
     {
       "type": "tfc:drying_recipe",
       "recipe": "firmalife:drying/tofu",
-      "text": "Tofu is made using a drying mat."
+      "text": "Tofu é feito usando a esteira de desidratação."
     }
   ],
   "read_by_default": true,
