@@ -1,0 +1,7 @@
+{
+    "variants" : {
+        "default" : "outlined_sprite:tfg/bactrian_camel_young.png",
+        "tfg:textures/entity/animal/young.png" : "outlined_sprite:tfc/bactrian_camel_young.png",
+        "tfg:textures/entity/animal/old.png" : "outlined_sprite:tfc/bactrian_camel_old.png"
+    }
+}

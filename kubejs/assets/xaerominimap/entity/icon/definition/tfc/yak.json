@@ -1,0 +1,7 @@
+{
+  "variants" : {
+    "default" : "outlined_sprite:tfc/yak_young.png",
+    "tfc:textures/entity/animal/yak_young.png" : "outlined_sprite:tfc/yak_young.png",
+    "tfc:textures/entity/animal/yak_old.png" : "outlined_sprite:tfc/yak_old.png"
+  }
+}
