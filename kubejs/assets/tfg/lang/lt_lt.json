@@ -604,8 +604,6 @@
 	"quests.ore_proc.electrolyzer.task": "Bet koks elektrolizatorius",
 	"quests.ore_proc.chromium.desc.4": "Galiausiai, paskutinis metodas naudoja &6chromo dulkės&r, kurias galima gauti apdorojant &6rubino rūdą&r arba vėliau &dMėnulyje&r.\n\nČia galimos dvi pavertimo parinktys. Jei viena atrodo daug naudingesnė už kitą, atminkite, kad &6volastonitas&r bus naudingas vėliau.",
 	"quests.space_survival.compressed_gases.subtitle": "Nes grynas deguonis yra pernelyg pavojingas",
-	"quests.space_survival.oxygen_info.title": "Daugiau Mėnulio bazės mašinų",
-	"quests.space_survival.oxygen_info.subtitle": "Namų patogumai",
 	"quests.space_survival.redstone_railgun.title": "Raudonakmenio valdymas",
 	"quests.steam_age.steam_macerator.title": "Garinis smulkintuvas",
 	"quests.steam_age.steam_macerator.subtitle": "Garinis smulkintuvas smulkina...",
@@ -645,5 +643,6 @@
 	"quests.tfg_tips.brine_something.title": "Sūrosi",
 	"quests.tfg_tips.composter.title": "Kompostavimo dežė",
 	"quests.tfg_tips.tools_tips.mattocks.subtitle": "Kastuvas tiesiog netiks.",
-	"quests.tfg_tips.tools_tips.concrete_roads.title": "Betono keliai"
+	"quests.tfg_tips.tools_tips.concrete_roads.title": "Betono keliai",
+	"tfg.machine.oxygen_distributor.status.sealed": "Užsandarintas"
 }

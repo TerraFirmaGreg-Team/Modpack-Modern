@@ -1,5 +1,6 @@
 {
 	"text.crafting_station.connected_resources.false": "Użyj połączonych zasobów: Fałsz",
 	"text.crafting_station.connected_resources.true": "Użyj połączonych zasobów: Prawda",
+	"text.crafting_station.error": "Znaleziono błędny przepis %s, zobacz szczegóły w dzienniku",
 	"title.crafting_station": "Stacja rzemieślnicza"
 }

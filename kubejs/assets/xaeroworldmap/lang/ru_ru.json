@@ -322,5 +322,10 @@
   "gui.xaero_worldmap_waypoints": "Точки на карте мира",
   "gui.xaero_zoom_buttons": "Кнопки масштабирования",
   "gui_xaero_wm_dropdown_dimension_select": "Выбор измерения",
-  "gui_xaero_wm_dropdown_map_select": "Выбор карты"
+  "gui_xaero_wm_dropdown_map_select": "Выбор карты",
+  "gui.xaero_pac_interrupt_claiming": "Прервать действия по присвоению",
+  "gui.xaero_pac_requested_large_claim": "Началось присвоение большой территории... Нажми ПКМ на %1$s, чтобы отменить.",
+  "gui.xaero_pac_requested_large_unclaim": "Началась отмена присвоения большой территории... Нажми ПКМ на %1$s, чтобы отменить.",
+  "gui.xaero_pac_requested_large_forceload": "Началась разметка большой территории для принудительной загрузки... Нажми ПКМ на %1$s, чтобы отменить.",
+  "gui.xaero_pac_requested_large_unforceload": "Началось снятие разметки принудительной загрузки с большой территории... Нажми ПКМ на %1$s, чтобы отменить."
 }

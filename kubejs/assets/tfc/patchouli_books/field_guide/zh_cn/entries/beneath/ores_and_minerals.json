@@ -43,8 +43,8 @@
           "X": "beneath:ore/nether_cursecoal"
         }
       },
-      "name": "Cursecoal",
-      "text": "在较湿地区，你可能发现 $(thing)石灰华$()。这是一种沉积岩，可含有与混合岩相似类型的矿藏。",
+      "name": "无烟煤",
+      "text": "无烟煤是一种强大的 $(l:beneath/hellforge)燃料$()。可在幽冥之地上层区y<80的混合岩中找到。",
       "enable_visualize": false
     },
     {
@@ -64,7 +64,7 @@
         }
       },
       "name": "钾石盐",
-      "text": "在幽冥之地最深处，不同岩性逐渐变为 $(thing)辉石岩$()。这种超镁铁质火成岩富含矿石，但也伴随着极端高温，做好准备再深入！",
+      "text": "钾石盐能在任何区域的玄武岩中找到。",
       "enable_visualize": false
     },
     {
@@ -84,7 +84,7 @@
         }
       },
       "name": "无烟煤",
-      "text": "无烟煤是一种强大的 $(l:beneath/hellforge)燃料$()。可在幽冥之地上层区的混合岩中找到。",
+      "text": "下界石英在所有区域都能找到，一种常见的矿物。",
       "enable_visualize": false
     },
     {
@@ -104,7 +104,7 @@
         }
       },
       "name": "史莱姆下界岩",
-      "text": "Slimed Netherrack occasionally replaces Netherrack above lava level.",
+      "text": "史莱姆下界岩会在岩浆层生成。",
       "enable_visualize": false
     }
   ],

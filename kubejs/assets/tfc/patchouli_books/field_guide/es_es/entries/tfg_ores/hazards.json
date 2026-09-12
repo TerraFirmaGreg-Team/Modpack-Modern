@@ -91,7 +91,7 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "The RadAwayᵗᵐ pill",
+			"title": "La pastilla RadAway™",
 			"item": "tfg:rad_away_pill",
 			"anchor": "rad_away",
 			"text": "This is $(item)The Ultimate$() cure for $(item)ALL$() the hazards and the $(item)ONLY$() effective cure to $(item)Radiation$(). However, it is also the most $(thing)Expensive$() and $(thing)Difficult$() to make, requiring $(thing)HV tier$() equipment and advanced materials."
@@ -121,44 +121,44 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Berylliosis",
+			"title": "Berilosis",
 			"item": "gtceu:beryllium_dust",
 			"anchor": "Berylliosis",
 			"text": "$(thing)Berylliosis$() is an illness caused by skin contact with $(thing)Beryllium dust$() or $(thing)Liquid Beryllium$(). At first it might seem that it doesn't do much. However, the longer the exposure, the faster it $(item)kills$() you.$(br2)$(l:tfg_ores/hazards#gloves)Gloves$() and the $(l:tfg_ores/hazards#hazmat)Hazmat Suit$() provide protection from $(thing)Berylliosis$()."
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Carbon Monoxide poisoning",
+			"title": "Envenenamiento por monóxido de carbono",
 			"item": "gtceu:carbon_monoxide_bucket",
 			"anchor": "Carbon_Monoxide_poisoning",
 			"text": "$(thing)Carbon Monoxide poisoning$() is an illness caused by inhaling $(thing)Carbon Monoxide$() gas. Prolonged exposure causes $(item)nausea$() and quick $(item)death$().$(br2)The $(l:tfg_ores/hazards#mask)Face Mask$() and the $(l:tfg_ores/hazards#hazmat)Hazmat Suit$() provide protection from $(thing)Carbon Monoxide$()."
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Carcinogens",
+			"title": "Carcinogenos",
 			"item": "gtceu:benzene_bucket",
-			"anchor": "Carcinogens",
+			"anchor": "Carcinogenos",
 			"text": "$(thing)Carcinogens$() are substances that cause $(item)Cancer$(). They include $(thing)Chromium Dust$() aswell as some organic compounds, such as $(thing)Benzene and its products$(). $(thing)Carcinogens$() $(item)don't go away on their own$(), but they give plenty of warnings before doing any real harm. It starts off with $(item)Weakness$(), followed by $(item)Hunger$(), then $(item)Slowness$() and later on $(item)Mining Fatique$(). Only when substantial enough exposure is accumulated it causes $(item)Death$()."
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Carcinogens",
+			"title": "Carcinogenos",
 			"item": "gtceu:chromium_dust",
-			"anchor": "Carcinogens",
+			"anchor": "Carcinogenos",
 			"text": "The $(l:tfg_ores/hazards#mask)Face Mask$() protects from inhalation of harmful chemicals, while the $(l:tfg_ores/hazards#gloves)Gloves$() protect from contact with $(thing)Chromium Dust$().$(br2)The $(l:tfg_ores/hazards#hazmat)Hazmat Suit$() protects from both.$(br2)In case of severe exposure, it is advised to take some $(l:tfg_ores/hazards#medicine)Medicines$() to $(thing)Prevent$() any possible damage."
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Chemical burns",
+			"title": "Quemaduras quimicas",
 			"item": "gtceu:fluorine_bucket",
 			"anchor": "Chemical_burns",
 			"text": "$(thing)Chemical burns$() are caused by inhalation or skin contact with certain $(thing)Gases$(), $(thing)Acids$(), $(thing)Bases$() or $(thing)Dusts$(). Exposure causes $(item)Weakness$().$(br2)The $(l:tfg_ores/hazards#mask)Face Mask$() protects from inhalation, while the $(l:tfg_ores/hazards#gloves)Gloves$() protects from direct skin contact.$(br2)The $(l:tfg_ores/hazards#hazmat)Hazmat Suit$() protects from everything."
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Irritants",
+			"title": "Irritantes",
 			"item": "gtceu:chromite_dust",
-			"anchor": "Irritants",
+			"anchor": "Irritantes",
 			"text": "$(thing)Irritation$() is caused by inhalation of $(thing)Ammonium Formate$() or skin contact with $(thing)Chromite Dust$(). Short contact only causes $(item)Weakness$(), but if ignored for longer it starts $(item)Damaging Randomly$().$(br2)The $(l:tfg_ores/hazards#mask)Face Mask$() protects from inhalation, while the $(l:tfg_ores/hazards#gloves)Gloves$() protects from direct skin contact.$(br2)The $(l:tfg_ores/hazards#hazmat)Hazmat Suit$() protects from both."
 		},
 		{

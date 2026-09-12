@@ -10,12 +10,12 @@
         {
             "type": "tfc:knapping_recipe",
             "recipe": "tfcchannelcasting:fire_clay_knapping/unfired_channel_4",
-            "text": "Knapping several $(thing)Unfired Channels$()."
+            "text": "Rzeźbienie kilku $(thing)niewypalonych kanałów$()."
         },
         {
             "type": "tfc:knapping_recipe",
             "recipe": "tfcchannelcasting:fire_clay_knapping/unfired_mold_table",
-            "text": "Knapping an $(thing)Unfired Mold Table$()."
+            "text": "Rzeźbienie $(thing)niewypalonego stołu do form$()."
         },
         {
             "type": "tfc:heat_recipe",

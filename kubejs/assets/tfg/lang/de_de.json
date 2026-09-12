@@ -2121,6 +2121,7 @@
 	"quests.ae2.certus_quartz.title": "Certus Quarz",
 	"quests.ae2.extractor.title": "Kyrogenischer Fluix",
 	"quests.ae2.stock_bridge.title": "AE Börsenbrücke",
+	"quests.tfg_tips.hellforge.title": "Die Höllenschmiede",
 	"quests.tfg_tips.red_elk.title": "Roter Elch",
 	"quests.combat_tips.flintlock_mechanism.title": "Steinschloss Mechanismus",
 	"quests.combat_tips.potato_cannon.title": "Kartoffelkanone",
@@ -2217,5 +2218,7 @@
 	"quests.tfg_tips.bacon.title": "Schinken",
 	"quests.tfg_tips.composter.title": "Komposter",
 	"quests.tfg_tips.transportation_tips.rnr_plow.title": "Pflasterwagen",
-	"quests.tfg_tips.tools_tips.concrete_roads.title": "Betonstraßen"
+	"quests.tfg_tips.tools_tips.concrete_roads.title": "Betonstraßen",
+	"tfg.machine.oxygen_distributor.idle": "Inaktiv",
+	"tfg.machine.oxygen_distributor.status.sealed": "Sealed"
 }

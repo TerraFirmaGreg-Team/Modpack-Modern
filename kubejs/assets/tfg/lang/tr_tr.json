@@ -96,6 +96,8 @@
 	"block.tfg.flax": "Keten",
 	"block.gtceu.black_bronze_crate": "Kara Bronz Kasa",
 	"block.gtceu.black_bronze_drum": "Kara Bronz Varil",
+	"block.gtceu.bismuth_bronze_crate": "Bizmut Bronz Gürz",
+	"block.gtceu.bismuth_bronze_drum": "Bizmut Bronz Varil",
 	"block.gtceu.ulv_super_tank": "Basit Süper Tank",
 	"block.gtceu.ulv_super_chest": "Basit Süper Sandık",
 	"block.gtceu.ulv_hermetic_casing": "Basit Hava Geçirmez Kaplama",
@@ -832,5 +834,7 @@
 	"quests.tfg_tips.remote_lens.title": "Uzaktan Kontrollü Lens",
 	"quests.tfg_tips.brine_something.title": "Salamura Ediliyor",
 	"quests.tfg_tips.composter.title": "Gübre Varili",
-	"quests.tfg_tips.tools_tips.concrete_roads.title": "Beton Yollar"
+	"quests.tfg_tips.tools_tips.concrete_roads.title": "Beton Yollar",
+	"tfg.machine.oxygen_distributor.idle": "Boşta",
+	"tfg.machine.oxygen_distributor.status.sealed": "Sealed"
 }

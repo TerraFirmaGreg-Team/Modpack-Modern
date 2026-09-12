@@ -185,6 +185,7 @@
 	"tfg.gui.spawn_condition.tundra": "Tundra",
 	"tfg.gui.spawn_condition.temperate": "Templado",
 	"item.tfg.food.juice": "Agua salada",
+	"item.tfg.harvest_basket": "Cesta de cosecha",
 	"item.tfg.cucumber_product": "Pepino",
 	"item.tfg.radish_product": "Rábano",
 	"ali/loot_table/panning/deposits/native_copper_granite": "Depósito de cobre nativo de granito",
@@ -749,5 +750,8 @@
 	"quests.tfg_tips.seats.title": "Asiento",
 	"quests.tfg_tips.conductor_whistle.title": "Silbato de maquinista",
 	"quests.tfg_tips.brine_something.title": "Brining",
-	"quests.tfg_tips.composter.title": "Compostador"
+	"quests.tfg_tips.composter.title": "Compostador",
+	"quests.tfg_tips.tools_tips.harvest_basket.title": "Cestas de cosecha",
+	"tfg.machine.oxygen_distributor.idle": "Inactivo",
+	"tfg.machine.oxygen_distributor.status.sealed": "Sealed"
 }

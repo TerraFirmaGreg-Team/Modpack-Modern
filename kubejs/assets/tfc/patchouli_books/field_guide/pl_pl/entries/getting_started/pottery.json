@@ -29,7 +29,7 @@
         }
       },
       "name": "Wskaźniki powierzchniowe gliny",
-      "text": "Clay, with one of the plants that may indicate its presence.",
+      "text": "Glina wraz z jedną z roślin, która może wskazywać na jej obecność.",
       "enable_visualize": false
     },
     {
@@ -97,7 +97,7 @@
     {
       "type": "tfc:knapping_recipe",
       "recipe": "tfc:clay_knapping/pickaxe_head_mold",
-      "text": "A $(thing)Pickaxe$()! The bread and butter tool for mining."
+      "text": "$(thing)Kilof$()! Podstawowe narzędzie do wydobywania."
     },
     {
       "type": "tfc:knapping_recipe",

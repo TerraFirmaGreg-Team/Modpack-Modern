@@ -19,7 +19,7 @@
     },
     {
       "type": "patchouli:text",
-      "text": "Инвентарь швейного стола похож на инвентарь верстака. Если вы допустите ошибку, просто выйдите из инвентаря, и ваши предметы вернутся к вам. В интерфейсе доступна книга рецептов. Выбор книги открывает меню, где можно выбрать рецепт. Это размещает небольшие указатели шагов, которые нужно выполнить на рабочей поверхности."
+      "text": "The sewing table's inventory is similar to that of a crafting table. If you ever make a mistake, you can simply exit the inventory, and your items will be returned to you. There is a recipe book available in the GUI. Selecting the book opens a menu where you can select a recipe. This places small indicators of what steps to perform on the working surface."
     },
     {
       "type": "patchouli:image",
@@ -35,7 +35,7 @@
     },
     {
       "type": "patchouli:text",
-      "text": "Одина ткань позволяет разместить 8 квадратов этого материала на швейной поверхности. Точно так же одна нить позволяет сделать 16 стежков. Когда вы выбрали рецепт, просто используйте кнопки в верхнем правом углу экрана, чтобы разместить квадраты и сшить их вместе, как показано в руководстве. Хотите убрать стежки? Используйте красную кнопку 'X', чтобы избавиться от квадратов."
+      "text": "Each cloth item allows placing 8 squares of that material on the sewing surface. Similarly, each yarn item allows placing 16 stitches. When you have selected a recipe, just use the buttons on the top right of the screen to place squares and stitch them together as shown by the guide. Want to remove stitches? Use the red 'X' button to get rid of squares."
     },
     {
       "type": "patchouli:crafting",

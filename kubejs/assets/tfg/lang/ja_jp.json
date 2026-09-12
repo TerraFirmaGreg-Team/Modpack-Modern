@@ -6586,13 +6586,7 @@
 	"quests.space_survival.zip_gun.title": "宇宙銃",
 	"quests.space_survival.zip_gun.subtitle": "手持ちのジェットパックといったところ",
 	"quests.space_survival.zip_gun.desc": "宇宙銃は圧縮ガスを撃ち出す銃です。低重力環境において、この銃は移動に必要な推進力を生みだします。宇宙で何か建設をするには、欠かせないアイテムです。",
-	"quests.space_survival.air_distributor.title": "活動拠点をつくろう",
 	"quests.space_survival.air_distributor.subtitle": "休日はのんびり別荘で",
-	"quests.space_survival.air_distributor.desc.1": "たまには贅沢がしたくありませんか？地球外で常時使える拠点を作りたいのならば、&6酸素分配機&rを作りましょう。これに空気を搬入すると、密閉空間をその気体で満たしてくれます。この中では、宇宙服がなくとも生存でき、植物も育ち、設置した水が凍ることもありません。\n\n固体ブロックであれば、いかなるブロックも拠点の材料として使用することができます。ただし、エアロックを作成しなければ、出入りの際に空気が逃げてしまいます。",
-	"quests.space_survival.air_distributor.desc.2": "効果範囲内の空間内部は、常時15℃に保たれるため、あらゆる植物が生育できます(電気温室があるなら無関係)。水源も凍結しないので、電気分解によりたやすく酸素を作成することができます。ダイオードのブロックを使えば、内外で電力をやり取りすることもできます。ちょうどクリーンルームと同じような挙動です。",
-	"quests.space_survival.oxygen_info.title": "月面拠点の設備",
-	"quests.space_survival.oxygen_info.subtitle": "快適な生活を求めて",
-	"quests.space_survival.oxygen_info.desc": "酸素センサーは、呼吸可能なエリア内ではレッドストーン信号を発生させる装置です。\n\n通気口は、酸素分配機から出た気体を安全に別の部屋にも流せる装置です。\n\n重力制御機は、密閉空間内における重力の大きさを変化させる機械です。ただし、重力制御機は現時点ではやや高コストです。",
 	"quests.space_survival.railgun.title": "星間物資輸送",
 	"quests.space_survival.railgun.subtitle": "エンダーチェスト？知らない子ですね……",
 	"quests.space_survival.railgun.desc.1": "&7&bTerraFirmaGreg&rでは、ディメンション間または超長距離の物資輸送に専用のマルチブロック機械が要求されます。\n\nこれらマルチブロック機械は汎用性に優れており、用途に応じて設定を切り替えることで、様々なニーズに応えることができます。\n\n必要とあらば、他の惑星に都度必要な資源を輸送できるうえ、それら機械の管理も一か所で一元管理することができます。",
@@ -7954,5 +7948,8 @@
 	"quests.tfg_tips.tools_tips.swim_gear.title": "水泳用品",
 	"quests.tfg_tips.tools_tips.swim_gear.subtitle": "水着はありません",
 	"quests.tfg_tips.tools_tips.swim_gear.desc": "&6シュノーケル&rを装備すると、水中で息が続く時間が15秒延長されます。&a足ヒレ&rは泳ぐスピードを大きく向上させます。",
-	"quests.tfg_tips.tools_tips.cheese_rack.subtitle": "待て、これは樽じゃないぞ…"
+	"quests.tfg_tips.tools_tips.cheese_rack.subtitle": "待て、これは樽じゃないぞ…",
+	"tfg.machine.oxygen_distributor.idle": "停止中",
+	"tfg.machine.oxygen_distributor.active": "アクティブ",
+	"tfg.machine.oxygen_distributor.status.sealed": "密封"
 }

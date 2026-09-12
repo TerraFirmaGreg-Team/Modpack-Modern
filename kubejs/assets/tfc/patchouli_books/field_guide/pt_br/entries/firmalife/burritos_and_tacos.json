@@ -1,15 +1,15 @@
 {
-  "name": "Burritos and Tacos",
+  "name": "Burritos e Tacos",
   "category": "tfc:firmalife",
   "icon": "firmalife:textures/item/food/burrito.png",
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "The journey of making a $(thing)Tortilla$() is a long process, but rewarding. Start with $(thing)Maize Grain$(). Boil it in a pot of $(thing)Limewater$(), and seal it in a barrel of water to make $(thing)Nixtamal$(). Then crush it in a $(thing)Quern$() to make $(thing)Masa Flour$()."
+      "text": "A jornada para fazer uma $(thing)Tortilla$() é um processo longo. Comece com o $(thing)Grão de Milho$(). Ferva em uma panela com $(thing)Água de Cal$() e sele-o em um barril com água para fazer $(thing)Nixtamal$(). Em seguida triture-o em um $(thing)Moinho Manual$() para fazer $(thing)Farinha de Masa$()."
     },
     {
       "type": "patchouli:text",
-      "text": "Crafting the Masa Flour with a bucket of water makes $(thing)Masa$(), the dough of a tortilla. This can be heated to make a $(thing)Corn Tortilla$(). Baking a Tortilla in an oven makes a $(thing)Taco Shell$()."
+      "text": "Combinar a Farinha de Masa com um balde de água resulta em $(thing)Masa$(), a massa de uma tortilha. Ela pode ser aquecida para fazer uma $(thing)Tortilha de Milho$(). Assar uma Tortilha no forno faz uma $(thing)Concha de Taco$()."
     },
     {
       "type": "patchouli:crafting",
@@ -19,17 +19,17 @@
     {
       "type": "patchouli:crafting",
       "recipe": "tfg:crafting/salsa",
-      "text": "A tomato, cilantro, salt, and a knife will yield you $(thing)Salsa$()."
+      "text": "Um tomate, coentro, sal e uma faca resultarão em $(thing)Vinagrete$()."
     },
     {
       "type": "patchouli:crafting",
       "recipe": "firmalife:crafting/burrito",
-      "text": "The $(thing)Burrito$() is made from cooked meat, $(l:firmalife/pizza#shredded_cheese)Shredded Cheese$(), $(l:firmalife/pizza#tomato_sauce)Tomato Sauce$(), a vegetable, and Salsa."
+      "text": "O $(thing)Burrito$() é feito de carne cozida, $(l:firmalife/pizza#shredded_cheese)Queijo Ralado$(), $(l:firmalife/pizza#tomato_sauce)Molho de Tomate$(), um vegetal e Vinagrete"
     },
     {
       "type": "patchouli:crafting",
       "recipe": "firmalife:crafting/taco",
-      "text": "The $(thing)Taco$() is made from the same ingredients, except with a $(thing)Taco Shell$()."
+      "text": "O $(thing)Taco$() é feito dos mesmos ingredientes, porém com uma $(thing)Concha de Taco$()."
     }
   ],
   "read_by_default": true,

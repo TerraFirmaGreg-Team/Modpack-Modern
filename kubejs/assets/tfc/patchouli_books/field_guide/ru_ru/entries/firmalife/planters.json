@@ -6,21 +6,21 @@
     {
       "type": "patchouli:text",
       "anchor": "planters",
-      "text": "$(thing)Лотки для рассады$() используются для выращивания культур внутри $(l:firmalife/greenhouse)теплицы$(). Чтобы увидеть состояние лотка, вы можете посмотреть на него, держа в руках $(thing)мотыгу$(). Культуры в лотках потребляют $(l:mechanics/fertilizers)питательные вещества$() аналогично $(l:mechanics/crops)культурам$(). Лотки должны быть размещены внутри действующей теплицы и активированы с помощью $(l:firmalife/climate_station)климатической станции$(). Лоткам необходимо хотя бы некоторое количество естественного солнечного света для работы."
+      "text": "$(thing)Planters$() are used to grow crops inside a $(l:firmalife/greenhouse)Greenhouse$(). To see the status of a planter, you can look at it while holding a $(thing)Hoe$(). Crops in planters consume $(l:mechanics/fertilizers)Nutrients$() in a similar way to $(l:mechanics/crops)Crops$(). Planters should be placed inside a valid Greenhouse and activated with a $(l:firmalife/climate_station)Climate Station$(). Planters need at least some natural sunlight to work."
     },
     {
       "type": "patchouli:crafting",
       "recipe": "firmalife:crafting/watering_can",
-      "text": "Лотки для рассады должны быть $(thing)увлажнены$() для роста. Это делается с помощью $(thing)лейки$(), изготовленной из $(thing)деревянного ведра$(), емкости с $(thing)водой$() и $(thing)древесины$(). Нажмите $(item)$(k:key.use)$() с ней, чтобы полить близлежащие лотки. Заполните ее, нажав $(item)$(k:key.use)$() на источнике воды."
+      "text": "Planters must be $(thing)Watered$() to grow. This is done with a $(thing)Watering Can$(), crafted from a $(thing)Wooden Bucket$(), a container of $(thing)Water$() and $(thing)Lumber$(). Press $(item)$(k:key.use)$() with it to water nearby planters. Refill it by pressing $(item)$(k:key.use)$() on a water source."
     },
     {
       "type": "patchouli:crafting",
       "recipe": "firmalife:crafting/large_planter",
-      "text": "$(thing)Большие лотки$() — самый простой тип лотков. Они выращивают один урожай из семян и собираются с помощью $(item)$(k:key.use)$() после созревания."
+      "text": "$(thing)Large Planters$() are the most simple kind of planter. They grow a single crop from seed, and are harvested with $(item)$(k:key.use)$() when mature."
     },
     {
       "type": "patchouli:text",
-      "text": "В больших лотках можно выращивать $(thing)зеленую фасоль$(), $(thing)томаты$(), $(thing)сахарный тростник$(), $(thing)джут$() и $(thing)зерна$(). Однако для выращивания зерна вам нужна теплица из $(thing)меди$() или лучше."
+      "text": "В больших лотках можно выращивать $(thing)зеленую фасоль$(), $(thing)томаты$(), $(thing)сахарный тростник$(), $(thing)джут$() и $(thing)зерна$(). Однако для выращивания зерна нужна теплица из $(thing)меди$() или лучше."
     },
     {
       "type": "patchouli:crafting",

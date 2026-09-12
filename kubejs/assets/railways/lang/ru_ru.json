@@ -2080,5 +2080,17 @@
 	"tfc.recipe.barrel.railways.barrel.dyeing.purple_conductor_cap": "Окрашивание",
 	"tfc.recipe.barrel.railways.barrel.dyeing.red_conductor_cap": "Окрашивание",
 	"tfc.recipe.barrel.railways.barrel.dyeing.white_conductor_cap": "Окрашивание",
-	"tfc.recipe.barrel.railways.barrel.dyeing.yellow_conductor_cap": "Окрашивание"
+	"tfc.recipe.barrel.railways.barrel.dyeing.yellow_conductor_cap": "Окрашивание",
+	"block.railways.conductor_whistle.tooltip": "СВИСТОК МАШИНИСТА",
+	"block.railways.conductor_whistle.tooltip.behaviour1": "_Привязывает_ Свисток как к _Машинисту_, так и к его _поезду_.",
+	"block.railways.conductor_whistle.tooltip.behaviour2": "_Приказывает привязанному Машинисту_ ехать к выбранному _Железнодорожному пути_ или _Железнодорожной станции_.",
+	"block.railways.conductor_whistle.tooltip.behaviour3": "_Приказывает привязанному Машинисту_ ехать к выбранной _Железнодорожной станции_.",
+	"block.railways.conductor_whistle.tooltip.behaviour4": "_Сбрасывает_ автоматическое расписание _привязанного поезда_.",
+	"block.railways.conductor_whistle.tooltip.condition1": "ПКМ по Машинисту, управляющему поездом",
+	"block.railways.conductor_whistle.tooltip.condition2": "ПКМ по Железнодорожному пути или Железнодорожной станции",
+	"block.railways.conductor_whistle.tooltip.condition3": "Использование Автономного активатора на Железнодорожной станции",
+	"block.railways.conductor_whistle.tooltip.condition4": "Использование Автономного активатора по воздуху",
+	"block.railways.conductor_whistle.tooltip.summary": "Подуй в свисток, и поезд прибудет в ближайшее время! _Привязанный Машинист поедет_ к выбранному пункту назначения, _игнорируя_ своё расписание.",
+	"railways.whistle.tool.bound2": "§2Привязанный§r §6Машинист§r §e[%1$s]§r §6управляет§r §e%2$s§r §9[%3$s]§r",
+	"railways.whistle.tool.not_bound2": "§4Не привязан§r"
 }

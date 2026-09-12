@@ -1,4 +1,6 @@
 {
+	"playerrevive.chat.bleeding": "%s wykrwawia się i może potrzebować twojej pomocy",
+	"playerrevive.chat.no_commands": "Nie można używać poleceń, gdy krwawisz",
 	"playerrevive.gui.label.time_left": "Pozostały czas: %s",
 	"playerrevive.revive.item": "Potrzebujesz %s"
 }

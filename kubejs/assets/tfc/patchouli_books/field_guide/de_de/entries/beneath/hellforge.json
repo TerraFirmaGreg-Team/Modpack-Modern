@@ -1,5 +1,5 @@
 {
-	"name": "The Hellforge",
+	"name": "Die Höllenschmiede",
 	"category": "tfc:beneath",
 	"icon": "beneath:cursecoal",
 	"pages": [
@@ -33,13 +33,13 @@
 					"X": "beneath:hellbricks"
 				}
 			},
-			"name": "Hellforge",
+			"name": "Höllenschmiede",
 			"text": "",
 			"enable_visualize": false
 		},
 		{
 			"type": "patchouli:text",
-			"text": "The Hellforge requires lava to flow in aqueducts in its four corners, as well as 21 hellbricks. The 3x3 center must be filled with $(l:mechanics/charcoal_pit)Charcoal Piles$() with 7 charcoal each, which then may be lit to start the forge."
+			"text": "Die Höllschmiede benötigt einen Lavastrom in ihren vier Ecken und 21 Höllenziegeln. Das 3x3-Zentrum muss mit $(l:mechanics/charcoal_pit)Holzkohle Stapeln$() mit je 7 Holzkohle gefüllt werden, die dann beleuchtet werden können, um die Schmiede zu starten."
 		},
 		{
 			"type": "patchouli:text",

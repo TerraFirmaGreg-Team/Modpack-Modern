@@ -5,7 +5,7 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "制作$(thing)三明治$()能将最多三种$(thing)蔬菜$()、$(thing)熟肉$()、或$(l:mechanics/dairy)奶酪$()，和两片$(l:mechanics/bread)面包$()组合成一顿$(thing)餐点$()。"
+      "text": "制作$(thing)三明治$()能将最多三种$(l:mechanics/bread)蔬菜$()、$(thing)熟肉$()、或$(l:mechanics/dairy)奶酪$()，和两片$(l:mechanics/bread)面包$()组合成一顿餐点。"
     },
     {
       "type": "patchouli:crafting",

@@ -23,98 +23,98 @@
 		{
 			"type": "patchouli:crafting",
 			"recipe": "tfg:shaped/jellies_nutritional_mash",
-			"text": "$(thing)Nutritional Mash$() is the main food of all $(thing)jellies$(), primarily made from grains, fruits, and some dimension-specific ingredients. $(br2)$(#B0B0B0)$(o)Why is it moving..."
+			"text": "$(thing)Nutritional Mash$()は、すべての$(thing)ジェリー$()の主食であり、主に穀物、果物、そしてディメンションごとに異なるいくつかの素材から作られています。$(br2)$(#B0B0B0)$(o)なぜ動いているんだ……"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "jellies:herbal",
 			"scale": 1,
-			"name": "Herbal Jellie",
-			"text": "$(thing)Herbal$() jellies spawn on Earth in warm forests, with $(l:the_world/climate#temperature)temperature$() between 1-10°C and $(l:the_world/climate#rainfall)rainfall$() of at least 150mm. They produce $(thing)Herbal Slime Balls$()."
+			"name": "薬草ジェリー",
+			"text": "$(thing)Herbal$() Jelliesは、$(l:the_world/climate#temperature)気温ure$() 1～10°C、$(l:the_world/climate#rainfall)降水量$() 150mm以上の、地球上の温暖な森林にスポーンします。$(thing)Herbal Slime Balls$() を生産します。"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "jellies:phosphorum",
 			"scale": 1,
-			"name": "Phosphorum Jellie",
-			"text": "$(thing)Phosphorum$() jellies spawn on Earth in cold forests, with $(l:the_world/climate#temperature)temperature$() between -10-0°C and $(l:the_world/climate#rainfall)rainfall$() of at least 150mm. They produce $(thing)Phosphorum Slime Balls$() and additionally eat $(thing)rotten flesh$()."
+			"name": "燐ジェリー",
+			"text": "$(thing)Phosphorum$() jelliesは、$(l:the_world/climate#temperature)気温ure$() -10～0°C、$(l:the_world/climate#rainfall)降水量$() 150mm以上の、地球上の寒冷な森林にスポーンします。 $(thing)Phosphorum Slime Balls$() を生産し、 $(thing)腐った肉$() を食べることもできます。"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "jellies:rock",
 			"scale": 1,
-			"name": "Rock Jellie",
-			"text": "$(thing)Rock$() jellies rarely spawn on Earth in caves of mountainous biomes. Currently, they do nothing."
+			"name": "石ジェリー",
+			"text": "$(thing)Rock$() jelliesは、地球上の山岳バイームの洞窟内でまれにスポーンします。現在は何も生産しません"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "jellies:spring",
 			"scale": 1,
-			"name": "Spring Jellie",
-			"text": "$(thing)Spring$() jellies spawn in Beneath's geothermal spring biome. They produce $(thing)Spring Slime Balls$()."
+			"name": "温泉ジェリー",
+			"text": "$(thing)Spring$() jelliesは、深界の熱水泉バイオームにスポーンします。$(thing)Spring Slime Balls$()を生産します。"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "jellies:plant",
 			"scale": 1,
-			"name": "Plant Jellie",
-			"text": "$(thing)Plant$() jellies spawn in Beneath's muggy bog and thorny brambles biomes. They produce $(thing)Plant Slime Balls$()."
+			"name": "プラントジェリー",
+			"text": "$(thing)Plant$() jelliesは、深界の泥だらけの沼地バイオームと茨の茂み\nバイオームにスポーンします。$(thing)Plant Slime Balls$()を生産します。"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "jellies:glowberry",
 			"scale": 1,
-			"name": "Glowberry Jellie",
-			"text": "$(thing)Glowberry$() jellies spawn in Beneath's lush hollow biome. They produce $(thing)Glowberry Slime Balls$()."
+			"name": "グロウベリージェリー",
+			"text": "$(thing)Glowberry$() jelliesは、深界の繁茂した空洞バイオームにスポーンします。$(thing)Glowberry Slime Balls$()を生産します。"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "jellies:biotite",
 			"scale": 1,
-			"name": "Biotite Jellie",
-			"text": "$(thing)Biotite$() jellies spawn at the bottom of the Beneath. They produce $(thing)Biotite Slime Balls$()."
+			"name": "黒雲母ジェリー",
+			"text": "$(thing)Biotite$() jelliesは、深界の下層でスポーンします。$(thing)Biotite Slime Balls$()を生産します。"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "jellies:ice",
 			"scale": 1,
-			"name": "Ice Jellie",
-			"text": "$(thing)Ice$() jellies spawn in Beneath's salt caves. They passively reduce player's temperature by 10°C."
+			"name": "氷ジェリー",
+			"text": "$(thing)Ice$() jelliesは、深界の塩の洞窟バイオームにスポーンします。そばにいるプレイヤーの体温を10°C下げます。"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "jellies:lava",
 			"scale": 1,
-			"name": "Lava Jellie",
-			"text": "$(thing)Lava$() jellies spawn at the bottom of the Beneath. They passively increase player's temperature by 10°C."
+			"name": "ラヴァジェリー",
+			"text": "$(thing)Lava$() jelliesは、深界の下層でスポーンします。そばにいるプレイヤーの体温を10°C上げます"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "jellies:latex",
 			"scale": 1,
-			"name": "Latex Jellie",
-			"text": "$(thing)Latex$() jellies are made by breeding $(thing)Lava$() and $(thing)Plant$() jellies. They produce $(thing)Latex Slime Balls$()."
+			"name": "ラテックスジェリー",
+			"text": "$(thing)Latex$() jelliesは $(thing)Lava$() jelliesと $(thing)Plant$() jelliesを繁殖させることで生み出すことができ、 $(thing)Latex Slime Balls$() を生産します。"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "jellies:certus",
 			"scale": 1,
-			"name": "Certus Jellie",
-			"text": "$(thing)Certus$() jellies spawn in Moon's asurine biomes. They produce $(thing)Large Certus Quartz Buds$()."
+			"name": "ケルタスジェリー",
+			"text": "$(thing)Certus$() jelliesは、月の瑠璃岩系バイオームにスポーンします。$(thing)大きなケルタスクォーツの芽$()を生産します。"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "jellies:pentetic",
 			"scale": 1,
-			"name": "Pentetic Jellie",
-			"text": "$(thing)Pentetic$() jellies spawn in Mars' martian deep desert and martian mountain biomes. They passively absorbs radiation from players."
+			"name": "ペンテトジェリー",
+			"text": "$(thing)Pentetic$() jelliesは、火星の砂海と山岳バイオームにスポーンします。プレイヤーから放射能汚染を受動的に吸収します。"
 		},
 		{
 			"type": "patchouli:image",
 			"images": [
 				"tfg:textures/gui/field_guide/jellies_secret.png"
 			],
-			"text": "$(#B0B0B0)$(o)The following pages are too faded to be read...$()",
+			"text": "$(#B0B0B0)$(o)以降のページは色あせがひどくて読めないようだ……$()",
 			"border": false
 		}
 	],
