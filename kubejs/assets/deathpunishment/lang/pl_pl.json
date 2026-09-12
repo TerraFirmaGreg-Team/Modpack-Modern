@@ -37,6 +37,7 @@
   "tooltip.deathpunishment.thirst_level": "Początkowe pragnienie po odrodzeniu (aktywne w trybie ręcznym)",
   "tooltip.deathpunishment.health": "Początkowe zdrowie po odrodzeniu (aktywne w trybie ręcznym)",
   "tooltip.deathpunishment.effect_amplifier": "Podstawowy poziom wszystkich negatywnych efektów (0-5)",
+  "tooltip.deathpunishment.corpse_cooldown": "Czas odnowienia przed interakcją ze zwłokami",
   "tooltip.deathpunishment.thirst_duration": "Czas trwania efektu pragnienia (sekundy)",
   "tooltip.deathpunishment.exhausted_duration": "Czas trwania efektu wykończenia (sekundy)",
   "tooltip.deathpunishment.blindness_duration": "Czas trwania efektu oślepienia (sekundy)",
@@ -48,5 +49,6 @@
   "tooltip.deathpunishment.raw_meat_enabled": "Zastosuj efekt głodu podczas jedzenia surowego mięsa TFC (szansa jest ustawiona z góry)",
   "tooltip.deathpunishment.raw_meat_hunger_duration": "Czas trwania efektu głodu podczas jedzenia surowego mięsa TFC (sekundy)",
   "tooltip.deathpunishment.raw_meat_hunger_amplifier": "Poziom efektu głodu podczas jedzenia surowego mięsa TFC (0-4)",
-  "message.deathpunishment.reload_config": "Przeładuj konfigurację, by zastosować zmiany"
+  "message.deathpunishment.reload_config": "Przeładuj konfigurację, by zastosować zmiany",
+  "tooltip.deathpunishment.reload_config": "Kliknij 'Gotowe' i otwórz ponownie konfigurację, aby zaktualizować pola"
 }

@@ -1008,7 +1008,7 @@
       "item": "tfc:ore/emerald",
       "title": "祖母绿",
       "link_recipes": false,
-      "text": "祖母绿是一种装饰性的$(thing)宝石$()。它看起来相当漂亮，要是这个孤苦伶仃的世界上有其他人愿意用它和你交易就好了……$(br2)它的矿脉形状细长，垂直方向可达60方块。它只会在$(l:the_world/geology#igneous_intrusive)侵入岩$()中出现。"
+      "text": "祖母绿是一种装饰性的$(l:mechanics/gems)宝石$()。它看起来相当漂亮，要是这个孤苦伶仃的世界上有其他人愿意用它和你交易就好了……$(br2)它的矿脉形状细长，垂直方向可达60方块。它只会在$(l:the_world/geology#igneous_intrusive)侵入岩$()中出现。"
     },
     {
       "type": "patchouli:multiblock",
@@ -1035,7 +1035,7 @@
       "item": "tfc:ore/diamond",
       "title": "金伯利岩",
       "link_recipes": false,
-      "text": "金伯利岩是一种装饰性的$(thing)无价之宝$()。它只会形成于一种被称为$(l:https://zh.wikipedia.org/wiki/%E7%81%AB%E5%B1%B1%E7%AD%92)火山筒$()的矿脉结构中，其垂直方向可达 60 方块。金伯利岩只能在$(thing)辉长岩$()中生成。"
+      "text": "金伯利岩是一种装饰性的$(l:mechanics/gems)无价之宝$()。它只会形成于一种被称为$(l:https://zh.wikipedia.org/wiki/%E7%81%AB%E5%B1%B1%E7%AD%92)火山筒$()的矿脉结构中，其垂直方向可达 60 方块。金伯利岩只能在$(thing)辉长岩$()中生成。"
     },
     {
       "type": "patchouli:multiblock",

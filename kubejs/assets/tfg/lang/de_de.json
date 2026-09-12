@@ -2218,5 +2218,7 @@
 	"quests.tfg_tips.bacon.title": "Schinken",
 	"quests.tfg_tips.composter.title": "Komposter",
 	"quests.tfg_tips.transportation_tips.rnr_plow.title": "Pflasterwagen",
-	"quests.tfg_tips.tools_tips.concrete_roads.title": "Betonstraßen"
+	"quests.tfg_tips.tools_tips.concrete_roads.title": "Betonstraßen",
+	"tfg.machine.oxygen_distributor.idle": "Inaktiv",
+	"tfg.machine.oxygen_distributor.status.sealed": "Sealed"
 }

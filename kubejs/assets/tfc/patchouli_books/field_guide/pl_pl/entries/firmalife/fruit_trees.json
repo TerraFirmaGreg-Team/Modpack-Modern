@@ -5,7 +5,7 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "Firmalife adds some fruiting plants on top of those added by TFC."
+      "text": "Firmalife dodaje kilka owocujących roślin do tych dodanych przez TFC."
     },
     {
       "type": "patchouli:text",
@@ -99,7 +99,7 @@
     },
     {
       "type": "tfc:multimultiblock",
-      "text": "The monthly stages of a Fig tree",
+      "text": "Miesięczne etapy wzrostu figowca",
       "multiblocks": [
         {
           "pattern": [

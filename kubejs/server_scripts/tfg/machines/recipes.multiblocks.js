@@ -158,7 +158,7 @@ function registerTFGMultiblockRecipes(event) {
 			'1x gtceu:hv_machine_hull',
 			'4x #gtceu:circuits/hv',
 			'4x gtceu:hv_electric_motor',
-			'4x #forge:rotors/titanium',
+			'4x #forge:rotors/stainless_steel',
 			'4x gtceu:hv_electric_pump',
 			'4x #forge:gears/rocket_alloy_t1')
 		.itemOutputs('gtceu:moon_dust_harvester')
