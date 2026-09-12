@@ -28,7 +28,7 @@ const registerTFGRocksTagPrefixes = (event) => {
 	global.TFC_STONE_TYPES.forEach(stoneTypeName => {
 
 		event.create(`${stoneTypeName}`, 'ore')
-			.stateSupplier(() => Block.getBlock(`tfc:rock/raw/${stoneTypeName}`).defaultBlockState())
+			.stateSupplier(() => Block.getBlock('minecraft:stone').defaultBlockState())
 			.baseModelLocation(`tfc:block/rock/raw/${stoneTypeName}`)
 			.unificationEnabled(true)
 			.materialIconType(GTMaterialIconType.ore)
@@ -152,7 +152,7 @@ const registerTFGRocksTagPrefixes = (event) => {
 
 	global.SAND_COLORS.forEach(color => {
 		event.create(`${color}_sand`, 'ore')
-			.stateSupplier(() => Block.getBlock(`tfc:sand/${color}`).defaultBlockState())
+			.stateSupplier(() => Block.getBlock('minecraft:red_sand').defaultBlockState())
 			.baseModelLocation(`tfc:block/sand/${color}`)
 			.unificationEnabled(true)
 			.materialIconType(GTMaterialIconType.ore)
