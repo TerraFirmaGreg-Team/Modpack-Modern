@@ -679,6 +679,9 @@ function registerTFCBlockTags(event) {
     event.add("tfg:metal_bars", "tfc:metal/bars/black_steel");
     event.add("tfg:metal_bars", "tfc:metal/bars/blue_steel");
     event.add("tfg:metal_bars", "tfc:metal/bars/red_steel");
+
+	// Prevent Snow Accumulation on following
+	event.add('minecraft:snow_layer_cannot_survive_on','tfc:molten') //Prevents Bloomery and Blast Furnace voiding when snowing
 }
 
 /** @param {TagEvent.Fluid} event */
