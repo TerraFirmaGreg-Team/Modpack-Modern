@@ -9,8 +9,8 @@
             "type": "minecraft:in_square"
         },
         {
-            "distance": 0.7,
-            "type": "tfc:tuya"
+            "min_easing": 0.8,
+            "type": "tfc:stratovolcano"
         },
         {
             "type": "minecraft:heightmap",

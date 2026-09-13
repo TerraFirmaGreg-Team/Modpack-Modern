@@ -24,7 +24,13 @@
 		"ice_sheet_shield_volcano",
 		"ice_sheet_tuyas",
 		"ice_sheet_tuyas_edge",
-		"stone_circles"
+		"stone_circles",
+		"ice_sheet_volcanic_mountains",
+		"ice_sheet_volcanic_oceanic_mountains",
+		"glaciated_volcanic_mountains",
+		"glaciated_volcanic_oceanic_mountains",
+		"glacially_carved_volcanic_mountains",
+		"glacially_carved_volcanic_oceanic_mountains"
 	],
 	"sounds": [
 		{

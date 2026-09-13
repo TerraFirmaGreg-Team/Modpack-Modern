@@ -2,8 +2,10 @@
     "feature": "tfg:earth/volcano/volcano_smoke",
     "placement": [
         {
+            "type": "tfc:stratovolcano",
             "center": true,
-            "type": "tfc:volcano"
+            "variant": "fuji",
+            "hash_max": 0.6
         },
         {
             "type": "minecraft:random_offset",

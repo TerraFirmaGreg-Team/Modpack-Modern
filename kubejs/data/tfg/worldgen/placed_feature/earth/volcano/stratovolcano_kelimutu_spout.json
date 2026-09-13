@@ -2,12 +2,12 @@
 	"feature": "tfg:earth/volcano/lava_spout",
 	"placement": [
 		{
-			"type": "minecraft:rarity_filter",
-			"chance": 2
-		},
-		{
-			"type": "tfc:volcano",
-			"center": true
+			"type": "tfc:stratovolcano",
+			"center": true,
+			"variant": "kelimutu",
+			"hash_max": 0.25,
+			"hash_min": 0,
+			"use_offset_center": true
 		},
 		{
 			"type": "minecraft:height_range",

@@ -1,0 +1,48 @@
+{
+	"__comment__": "This file was automatically created by mcresources",
+	"type": "tfg:mapped_rivulet",
+	"config": {
+		"states": [
+			{
+				"replace": "tfc:rock/raw/andesite",
+				"with": "gtceu:andesite_sulfur_ore"
+			},
+			{
+				"replace": "tfc:rock/raw/dacite",
+				"with": "gtceu:dacite_sulfur_ore"
+			},
+			{
+				"replace": "tfc:rock/raw/basalt",
+				"with": "gtceu:basalt_sulfur_ore"
+			},
+			{
+				"replace": "tfc:rock/raw/rhyolite",
+				"with": "gtceu:rhyolite_sulfur_ore"
+			},
+			{
+				"replace": "minecraft:tuff",
+				"with": "gtceu:tuff_sulfur_ore"
+			},
+			{
+				"replace": "tfc:rock/hardened/andesite",
+				"with": "gtceu:andesite_sulfur_ore"
+			},
+			{
+				"replace": "tfc:rock/hardened/dacite",
+				"with": "gtceu:dacite_sulfur_ore"
+			},
+			{
+				"replace": "tfc:rock/hardened/basalt",
+				"with": "gtceu:basalt_sulfur_ore"
+			},
+			{
+				"replace": "tfc:rock/hardened/rhyolite",
+				"with": "gtceu:rhyolite_sulfur_ore"
+			},
+			{
+				"replace": "tfg:rock/hardened_tuff",
+				"with": "gtceu:tuff_sulfur_ore"
+			}
+		]
+	}
+}

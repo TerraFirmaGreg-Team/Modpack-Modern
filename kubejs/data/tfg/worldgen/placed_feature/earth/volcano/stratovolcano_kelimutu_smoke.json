@@ -2,8 +2,12 @@
     "feature": "tfg:earth/volcano/volcano_smoke",
     "placement": [
         {
+            "type": "tfc:stratovolcano",
             "center": true,
-            "type": "tfc:volcano"
+            "variant": "kelimutu",
+            "hash_max": 0.25,
+            "hash_min": 0,
+            "use_offset_center": true
         },
         {
             "type": "minecraft:random_offset",

@@ -74,7 +74,10 @@ function registerCosyCrittersBiomeTags(event) {
 		'tfg:earth/tuyas',
 		'tfg:earth/volcanic_mountains',
 		'tfg:earth/volcanic_oceanic_mountains',
-		'tfg:earth/whorled_canyons'
+		'tfg:earth/whorled_canyons',
+		"tfg:earth/rift_lake",
+		"tfg:earth/rift_valley",
+		"tfg:earth/river_valley"
 	];
 
 	// c:is_overworld isn't used for anything else.

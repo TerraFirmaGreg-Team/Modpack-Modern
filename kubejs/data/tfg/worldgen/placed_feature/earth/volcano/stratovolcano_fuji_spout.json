@@ -2,12 +2,10 @@
 	"feature": "tfg:earth/volcano/lava_spout",
 	"placement": [
 		{
-			"type": "minecraft:rarity_filter",
-			"chance": 2
-		},
-		{
-			"type": "tfc:volcano",
-			"center": true
+			"type": "tfc:stratovolcano",
+			"center": true,
+			"variant": "fuji",
+			"hash_max": 0.6
 		},
 		{
 			"type": "minecraft:height_range",
