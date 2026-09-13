@@ -10,17 +10,17 @@
 			"type": "patchouli:spotlight",
 			"title": "Materiales peligrosos",
 			"item": "gtceu:cobaltite_dust",
-			"text": "Some $(thing)ores$(), $(thing)dusts$() and $(thing)chemicals$() are hazardous and can cause $(item)negative effects$() or even $(item)kill$() you if they are carried in your inventory. When carried, they are displayed on screen with a $(item)Status Effect$().$(br2)Certain equipment such as $(thing)masks$(), $(thing)gloves$(), and the $(thing)hazardous material suit$() can be used to counter these effects."
+			"text": "Algunos $(thing)minerales$(), $(thing)polvos$() y $(thing)químicos$() son peligrosos y pueden causar $(item)efectos negativos$() o incluso $(item)matarte$() si son llevados en tu inventario. Cuando se transportan, se muestran en pantalla con un efecto de  $(item)estado$().$(br2)Ciertos equipos como $(thing)máscaras$(), $(thing)guantes$(), y el $(thing)traje de Hazmat$() pueden utilizarse para contrarrestar estos efectos."
 		},
 		{
 			"type": "patchouli:text",
 			"title": "Todos los efectos",
-			"text": "$(li)$(l:tfg_ores/hazards#Arsenicosis)Arsenicosis$()$()$(li)$(l:tfg_ores/hazards#Asbestosis)Asbestosis$()$()$(li)$(l:tfg_ores/hazards#Berylliosis)Berylliosis$()$(li)$(l:tfg_ores/hazards#Carbon_Monoxide_poisoning)Carbon Monoxide poisoning$()$(li)$(l:tfg_ores/hazards#Carcinogens)Carcinogens$()$(li)$(l:tfg_ores/hazards#Chemical_burns)Chemical burns$()$(li)$(l:tfg_ores/hazards#Irritants)Irritants$()$(li)$(l:tfg_ores/hazards#Methanol_poisoning)Methanol poisoning$()$(li)$(l:tfg_ores/hazards#Nauseating_chemicals)Nauseating chemicals$()$(li)$(l:tfg_ores/hazards#Poisons)Poisonous materials$()$(li)$(l:tfg_ores/hazards#Radioactive_materials)Radioactive materials$()$(li)$(l:tfg_ores/hazards#Silicosis)Silicosis$()$()$(br2)The next page will provide information on how to deal with these effects."
+			"text": "$(li)$(l:tfg_ores/hazards#Arsenicosis)Arsenicosis$()$()$(li)$(l:tfg_ores/hazards#Asbestosis)Asbestosis$()$()$(li)$(l:tfg_ores/hazards#Berylliosis)Beriliosis$()$(li)$(l:tfg_ores/hazards#Carbon_Monoxide_poisoning)Intoxicación por monóxido de carbono$()$(li)$(l:tfg_ores/hazards#Carcinogens)Sustancias cancerígenas$()$(li)$(l:tfg_ores/hazards#Chemical_burns)Quemaduras químicas$()$(li)$(l:tfg_ores/hazards#Irritants)Irritantes$()$(li)$(l:tfg_ores/hazards#Methanol_poisoning)Intoxcicación por metanol$()$(li)$(l:tfg_ores/hazards#Nauseating_chemicals)Sustancias químicas nauseabundas$()$(li)$(l:tfg_ores/hazards#Poisons)Materiales venenosos$()$(li)$(l:tfg_ores/hazards#Radioactive_materials)Materiales radioactivos$()$(li)$(l:tfg_ores/hazards#Silicosis)Silicosis$()$()$(br2)En la siguiente página encontrarás información sobre cómo tratar estos efectos."
 		},
 		{
 			"type": "patchouli:text",
 			"title": "Prevención y Curas",
-			"text": "$(li)$(l:tfg_ores/hazards#rocks)Rocks?$()$()$(li)$(l:tfg_ores/hazards#containers)Containers$()$(li)$(l:tfg_ores/hazards#mask)The Face Mask$()$(li)$(l:tfg_ores/hazards#gloves)The Rubber Gloves$()$(li)$(l:tfg_ores/hazards#hazmat)The Hazmat Suit$()$(li)$(l:tfg_ores/hazards#medicine)Pills, Tablets and Salvos$()$(li)$(l:tfg_ores/hazards#rad_away)The RadAwayᵗᵐ pill$()$(li)$(l:tfg_ores/hazards#respawn)The Unthinkable...$()"
+			"text": "$(li)$(l:tfg_ores/hazards#rocks)¿Rocas?$()$()$(li)$(l:tfg_ores/hazards#containers)Contenedores$()$(li)$(l:tfg_ores/hazards#mask)La mascarilla$()$(li)$(l:tfg_ores/hazards#gloves)Los guantes de goma$()$(li)$(l:tfg_ores/hazards#hazmat)El traje de Hazmat$()$(li)$(l:tfg_ores/hazards#medicine)Pildoras, tabletas y ungüentos$()$(li)$(l:tfg_ores/hazards#rad_away)La pastillaRadAwayᵗᵐ$()$(li)$(l:tfg_ores/hazards#respawn)Lo impensable...$()"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -29,20 +29,20 @@
 				"tag": "tfc:rock_knapping"
 			},
 			"anchor": "rocks",
-			"text": "$(thing)The easiest way$() to $(thing)prevent$() hazardous effects is to $(item)not pick up the dangerous items at all$().$(br2)Filling your inventory with $(thing)Rocks$(), for example, will let you pick and choose which items you want to pick up, letting you deal with the hazardous ones later."
+			"text": "$(thing)La forma más sencilla$() de $(thing)evitar$() los efectos peligrosos es $(item)no recoger los objetos peligrosos en primer lugar$().$(br2)Llenar tu inventario de $(thing)Rocas$(), por ejemplo, te permitirá elegir qué objetos quieres recoger, para poder ocuparte de los peligrosos más adelante."
 		},
 		{
 			"type": "patchouli:spotlight",
 			"title": "Contenedores",
 			"anchor": "containers",
-			"text": "Hazardous materials only deal damage while they are in your $(thing)inventory$(), but that doesn't apply to other containers!$(br)Hazardous materials will not deal damage while they are in another container such as a $(l:tfg_tips/inventory_management)Backpack$() or $(l:getting_started/pottery#vessel)Vessel$(). $(thing)Right-clicking$() while holding a vessel will allow direct transfer of its contents to and from containers.",
+			"text": "Los materiales peligrosos solo causan daño mientras están en tu $(thing)inventario$(), pero esto no se aplica a otros contenedores!$(br)Los materiales peligrosos no causarán daño mientras estén en otro contenedor, como una $(l:tfg_tips/inventory_management)mochila$() o un $(l:getting_started/pottery#vessel)recipiente$(). $(thing)Hacer clic derecho$() mientras sostienes un recipiente te permitirá transferir directamente su contenido hacia y desde otros contenedores.",
 			"item": "sophisticatedbackpacks:backpack,tfc:ceramic/vessel,tfc:ceramic/large_vessel"
 		},
 		{
 			"type": "patchouli:crafting",
 			"title": "Máscara",
 			"recipe": "gtceu:shaped/face_mask",
-			"text": "The $(thing)Face Mask$() provides protection from any $(item)Inhalation$() hazards, such as Arsenicosis.",
+			"text": "La $(thing)Mascarilla$() proporciona protección contra cualquier peligro de $(item)inhalación$(), como la arsenicosis.",
 			"anchor": "mask"
 		},
 		{
@@ -51,33 +51,33 @@
 			"title": "Guantes de goma",
 			"link_recipes": true,
 			"anchor": "gloves",
-			"text": "The $(thing)Rubber gloves$() can either be made from $(l:mechanics/leather_making)Leather$() and $(l:arborfirmacraft/making_rubber)Latex$(), or out of $(thing)Rubber Sheets$(). They provide protection from any $(item)Skin Contact$() hazards, such as $(thing)Beryllium Dust$()."
+			"text": "Los $(thing)guantes de goma$() pueden fabricarse con $(l:mechanics/leather_making)cuero$() y $(l:arborfirmacraft/making_rubber)látex$(), o a partir de $(thing)láminas de goma$(). Proporcionan protección contra cualquier peligro de $(item)contacto con la piel$(), como el $(thing)polvo de berilio$()."
 		},
 		{
 			"type": "tfc:knapping_recipe",
 			"recipe": "tfchotornot:leather_knapping/mittens",
-			"text": "First, knap the leather into mittens."
+			"text": "Primero, trabaja el cuero para convertirlo en manoplas."
 		},
 		{
 			"type": "tfc:sealed_barrel_recipe",
 			"recipe": "tfg:sealed_barrel/prepared_leather_gloves",
-			"text": "$(thing)Mittens$() are then soaked in $(thing)Vinegar$(), a mixture of fruit and alcohol."
+			"text": "Las $(thing)manoplas$() se sumergen luego en $(thing)vinagre$(), una mezcla de fruta y alcohol."
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "tfg:latex_soaked_gloves",
-			"text": "Prepared $(thing)leather gloves$() are then heated in a $(thing)vat$() with $(thing)Vulcanized Latex$(), one step away from rubber."
+			"text": "Los $(thing)guantes de cuero preparados$() se calientan luego en una $(thing)tina$() con $(thing)látex vulcanizado$(), a un paso de convertirse en goma."
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:rubber_gloves",
-			"text": "Finally, the latex-soaked gloves are heated in an $(l:firmalife/ovens)Oven$()."
+			"text": "Por último, los guantes empapados en látex se calientan en un $(l:firmalife/ovens)horno$()."
 		},
 		{
 			"type": "patchouli:spotlight",
 			"title": "Traje de residuos peligrosos",
 			"item": "gtceu:hazmat_headpiece,gtceu:hazmat_chestpiece,gtceu:hazmat_leggings,gtceu:hazmat_boots",
-			"text": "A completed $(thing)Hazmat suit $()provides $(item)immunity $()from $(item)every$() hazard, even $(item)radiation$(). It is made in an $(thing)LV Assembler$() from $(thing)Polyethylene$() and $(thing)Polyvinyl Chloride$().$(br2)Fun fact! You can also look up $(thing)#ppe_armor$() in JEI for more equipment that provides protection from hazardous materials.",
+			"text": "Un $(thing)traje Hazmat$() completo proporciona $(item)inmunidad$() contra $(item)cualquier$() peligro, incluso la $(item)radiación$(). Se fabrica en un $(thing)ensamblador LV$() a partir de $(thing)polietileno$() y $(thing)cloruro de polivinilo$().$(br2)¡Dato curioso! También puedes buscar $(thing)#ppe_armor$() en JEI para encontrar más equipos que ofrecen protección contra materiales peligrosos.",
 			"anchor": "hazmat"
 		},
 		{
@@ -87,14 +87,14 @@
 				"tag": "tfg:medicine"
 			},
 			"anchor": "medicine",
-			"text": "In case you do get heavily exposed to a hazard, there are some $(thing)Medicines$() that can help you recover.$(br2)Basic $(thing)Pills$() are the most primitive and easy to make, but most come with $(item)Negative Side Effects$(). $(thing)Tablets$() and $(thing)Salvos$() are more effective and have less side effects, but they require $(thing)LV equipment$() and more advanced resources to make."
+			"text": "En caso de que te expongas demasiado a un peligro, existen algunos $(thing)medicamentos$() que pueden ayudarte a recuperarte.$(br2)Las $(thing)pastillas$() básicas son las más primitivas y fáciles de fabricar, pero la mayoría tienen $(item)efectos secundarios negativos$(). Las $(thing)tabletas$() y los $(thing)ungüentos$() son más eficaces y tienen menos efectos secundarios, pero requieren $(thing)equipamiento LV$() y recursos más avanzados para fabricarlos."
 		},
 		{
 			"type": "patchouli:spotlight",
 			"title": "La pastilla RadAway™",
 			"item": "tfg:rad_away_pill",
 			"anchor": "rad_away",
-			"text": "This is $(item)The Ultimate$() cure for $(item)ALL$() the hazards and the $(item)ONLY$() effective cure to $(item)Radiation$(). However, it is also the most $(thing)Expensive$() and $(thing)Difficult$() to make, requiring $(thing)HV tier$() equipment and advanced materials."
+			"text": "Esta es $(item)la cura definitiva$() para $(item)TODOS$() los peligros y la $(item)ÚNICA$() cura eficaz contra la $(item)radiación$(). Sin embargo, también es la más $(thing)Costosa$() y $(thing)Difícil$() de fabricar, ya que requiere $(thing)equipamiento de nivel HV$() y materiales avanzados."
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -103,104 +103,104 @@
 				"tag": "minecraft:beds"
 			},
 			"anchor": "respawn",
-			"text": "If all else fails, bringing along a bed to respawn is a good idea.$(br2)If you don't have access to $(thing)Wool$() or $(thing)String$(), you can also make a $(l:getting_started/a_place_to_sleep)Thatch Bed$()."
+			"text": "Si todo lo demás falla, llevar una cama para reaparecer es una buena idea.$(br2)Si no tienes acceso a $(thing)lana$() o $(thing)hilo$(), también puedes fabricar una $(l:getting_started/a_place_to_sleep)cama de paja$()."
 		},
 		{
 			"type": "patchouli:spotlight",
 			"title": "Arsenicosis",
 			"item": "gtceu:arsenic_dust",
 			"anchor": "Arsenicosis",
-			"text": "$(thing)Arsenicosis$() is an illness caused by inhaling $(thing)Arsenic$() from its dust, vapor or $(thing)Realgar$(). It slowly increases $(item)hunger$(), followed by $(item)nausea$(), and eventually $(item)death$().$(br2)The $(l:tfg_ores/hazards#mask)Face Mask$() and the $(l:tfg_ores/hazards#hazmat)Hazmat Suit$() provide protection from $(thing)Arsenicosis$()."
+			"text": "La $(thing)arsenicosis$() es una enfermedad causada por inhalar $(thing)arsénico$() proveniente de su polvo, vapor o $(thing)rejalgar$(). Aumenta lentamente el nivel de $(item)hambre$(), seguido de $(item)náuseas$() y, finalmente, $(item)la muerte$().$(br2)La $(l:tfg_ores/hazards#mask)Mascarilla$() y el $(l:tfg_ores/hazards#hazmat)traje Hazmat$() proporcionan protección contra la $(thing)arsenicosis$()."
 		},
 		{
 			"type": "patchouli:spotlight",
 			"title": "Asbestosis",
 			"item": "gtceu:asbestos_dust",
 			"anchor": "Asbestosis",
-			"text": "$(thing)Asbestosis$() is an illness caused by inhaling $(thing)Asbestos$() dust. If carried for long enough, it causes $(item)hunger$().$(br2)The $(l:tfg_ores/hazards#mask)Face Mask$() and the $(l:tfg_ores/hazards#hazmat)Hazmat Suit$() provide protection from $(thing)Asbestosis$()."
+			"text": "$(thing)Asbestosis$() es una enfermedad causada por inhalar polvo de $(thing)Asbesto$(). Si se lleva encima durante demasiado tiempo, provoca $(item)hambre$().$(br2)La $(l:tfg_ores/hazards#mask)Mascarilla$() y el $(l:tfg_ores/hazards#hazmat)Traje Hazmat$() proporcionan protección contra la $(thing)Asbestosis$().\n"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"title": "Berilosis",
 			"item": "gtceu:beryllium_dust",
 			"anchor": "Berylliosis",
-			"text": "$(thing)Berylliosis$() is an illness caused by skin contact with $(thing)Beryllium dust$() or $(thing)Liquid Beryllium$(). At first it might seem that it doesn't do much. However, the longer the exposure, the faster it $(item)kills$() you.$(br2)$(l:tfg_ores/hazards#gloves)Gloves$() and the $(l:tfg_ores/hazards#hazmat)Hazmat Suit$() provide protection from $(thing)Berylliosis$()."
+			"text": "$(thing)Beriliosis$() es una enfermedad causada por el contacto de la piel con $(thing)polvo de berilio$() o $(thing)berilio líquido$(). Al principio puede parecer que no hace mucho. Sin embargo, cuanto más tiempo dure la exposición, más rápido te $(item)matará$().$(br2)Los $(l:tfg_ores/hazards#gloves)guantes$() y el $(l:tfg_ores/hazards#hazmat)traje Hazmat$() proporcionan protección contra la $(thing)Beriliosis$().\n"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"title": "Envenenamiento por monóxido de carbono",
 			"item": "gtceu:carbon_monoxide_bucket",
 			"anchor": "Carbon_Monoxide_poisoning",
-			"text": "$(thing)Carbon Monoxide poisoning$() is an illness caused by inhaling $(thing)Carbon Monoxide$() gas. Prolonged exposure causes $(item)nausea$() and quick $(item)death$().$(br2)The $(l:tfg_ores/hazards#mask)Face Mask$() and the $(l:tfg_ores/hazards#hazmat)Hazmat Suit$() provide protection from $(thing)Carbon Monoxide$()."
+			"text": "$(thing)Intoxicación por monóxido de carbono$() es una enfermedad causada por inhalar gas de $(thing)monóxido de carbono$(). La exposición prolongada provoca $(item)náuseas$() y $(item)muerte$() rápida.$(br2)La $(l:tfg_ores/hazards#mask)mascarilla$() y el $(l:tfg_ores/hazards#hazmat)traje Hazmat$() proporcionan protección contra el $(thing)monóxido de carbono$().\n"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"title": "Carcinogenos",
 			"item": "gtceu:benzene_bucket",
 			"anchor": "Carcinogenos",
-			"text": "$(thing)Carcinogens$() are substances that cause $(item)Cancer$(). They include $(thing)Chromium Dust$() aswell as some organic compounds, such as $(thing)Benzene and its products$(). $(thing)Carcinogens$() $(item)don't go away on their own$(), but they give plenty of warnings before doing any real harm. It starts off with $(item)Weakness$(), followed by $(item)Hunger$(), then $(item)Slowness$() and later on $(item)Mining Fatique$(). Only when substantial enough exposure is accumulated it causes $(item)Death$()."
+			"text": "$(thing)Las sustancias cancerígenas$() son sustancias que causan $(item)cáncer$(). Incluyen $(thing)polvo de cromo$(), así como algunos compuestos orgánicos, como $(thing)benceno y sus derivados$(). Las $(thing)sustancias cancerígenas$() $(item)no desaparecen por sí solas$(), pero dan muchas señales de advertencia antes de causar daños graves. Los efectos comienzan con $(item)debilidad$(), seguidos de $(item)hambre$(), luego $(item)lentitud$() y, más adelante, $(item)fatiga minera$(). Solo cuando se acumula una exposición suficientemente alta se produce la $(item)muerte$().\n"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"title": "Carcinogenos",
 			"item": "gtceu:chromium_dust",
 			"anchor": "Carcinogenos",
-			"text": "The $(l:tfg_ores/hazards#mask)Face Mask$() protects from inhalation of harmful chemicals, while the $(l:tfg_ores/hazards#gloves)Gloves$() protect from contact with $(thing)Chromium Dust$().$(br2)The $(l:tfg_ores/hazards#hazmat)Hazmat Suit$() protects from both.$(br2)In case of severe exposure, it is advised to take some $(l:tfg_ores/hazards#medicine)Medicines$() to $(thing)Prevent$() any possible damage."
+			"text": "La $(l:tfg_ores/hazards#mask)mascarilla$() protege contra la inhalación de productos químicos nocivos, mientras que los $(l:tfg_ores/hazards#gloves)guantes$() protegen del contacto con $(thing)polvo de cromo$().$(br2)El $(l:tfg_ores/hazards#hazmat)traje Hazmat$() protege contra ambos.$(br2)En caso de una exposición grave, se recomienda tomar algunos $(l:tfg_ores/hazards#medicine)medicamentos$() para $(thing)prevenir$() cualquier posible daño.\n"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"title": "Quemaduras quimicas",
 			"item": "gtceu:fluorine_bucket",
 			"anchor": "Chemical_burns",
-			"text": "$(thing)Chemical burns$() are caused by inhalation or skin contact with certain $(thing)Gases$(), $(thing)Acids$(), $(thing)Bases$() or $(thing)Dusts$(). Exposure causes $(item)Weakness$().$(br2)The $(l:tfg_ores/hazards#mask)Face Mask$() protects from inhalation, while the $(l:tfg_ores/hazards#gloves)Gloves$() protects from direct skin contact.$(br2)The $(l:tfg_ores/hazards#hazmat)Hazmat Suit$() protects from everything."
+			"text": "$(thing)Las quemaduras químicas$() son causadas por la inhalación o el contacto con la piel de ciertos $(thing)gases$(), $(thing)ácidos$(), $(thing)bases$() o $(thing)polvos$(). La exposición provoca $(item)debilidad$().$(br2)La $(l:tfg_ores/hazards#mask)mascarilla$() protege contra la inhalación, mientras que los $(l:tfg_ores/hazards#gloves)guantes$() protegen del contacto directo con la piel.$(br2)El $(l:tfg_ores/hazards#hazmat)traje Hazmat$() protege contra todo.\n"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"title": "Irritantes",
 			"item": "gtceu:chromite_dust",
 			"anchor": "Irritantes",
-			"text": "$(thing)Irritation$() is caused by inhalation of $(thing)Ammonium Formate$() or skin contact with $(thing)Chromite Dust$(). Short contact only causes $(item)Weakness$(), but if ignored for longer it starts $(item)Damaging Randomly$().$(br2)The $(l:tfg_ores/hazards#mask)Face Mask$() protects from inhalation, while the $(l:tfg_ores/hazards#gloves)Gloves$() protects from direct skin contact.$(br2)The $(l:tfg_ores/hazards#hazmat)Hazmat Suit$() protects from both."
+			"text": "$(thing)La irritación$() es causada por la inhalación de $(thing)formiato de amonio$() o por el contacto de la piel con $(thing)polvo de cromita$(). Un contacto breve solo provoca $(item)debilidad$(), pero si se ignora durante más tiempo, comienza a $(item)causar daño aleatoriamente$().$(br2)La $(l:tfg_ores/hazards#mask)mascarilla$() protege contra la inhalación, mientras que los $(l:tfg_ores/hazards#gloves)guantes$() protegen del contacto directo con la piel.$(br2)El $(l:tfg_ores/hazards#hazmat)traje Hazmat$() protege contra ambos.\n"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"title": "Envenenamiento por Metanol",
 			"item": "gtceu:methanol_bucket",
 			"anchor": "Methanol_poisoning",
-			"text": "$(thing)Methanol poisoning$() is caused by inhalation of $(thing)Methanol$(). It causes a strong $(item)Blindness$() effect.$(br2)The $(l:tfg_ores/hazards#mask)Face Mask$() and the $(l:tfg_ores/hazards#hazmat)Hazmat Suit$() protects from inhalation."
+			"text": "$(thing)La intoxicación por metanol$() es causada por la inhalación de $(thing)metanol$(). Provoca un fuerte efecto de $(item)ceguera$().$(br2)La $(l:tfg_ores/hazards#mask)mascarilla$() y el $(l:tfg_ores/hazards#hazmat)traje Hazmat$() protegen contra la inhalación.\n"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"title": "Productos químicos nauseantes",
 			"item": "gtceu:butyraldehyde_bucket",
 			"anchor": "Nauseating_chemicals",
-			"text": "$(thing)Nauseating chemicals$(), such as $(thing)Butyraldehyde$(), are substances that cause $(item)Nausea$() when inhaled.$(br2)The $(l:tfg_ores/hazards#mask)Face Mask$() and the $(l:tfg_ores/hazards#hazmat)Hazmat Suit$() protect from inhalation."
+			"text": "$(thing)Las sustancias químicas nauseabundas$(), como $(thing)butiraldehído$(), son sustancias que provocan $(item)náuseas$() al inhalarlas.$(br2)La $(l:tfg_ores/hazards#mask)mascarilla$() y el $(l:tfg_ores/hazards#hazmat)traje Hazmat$() protegen contra la inhalación.\n"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"title": "Materiales venenosos",
 			"item": "gtceu:lead_dust",
 			"anchor": "Poisons",
-			"text": "There are two types of $(thing)Poisonous materials$(). Weak include $(thing)Lead Dust$(), while the stronger poisons include $(thing)Nitrogen Dioxide$(). $(thing)Weak poisons$() cause a $(item)Progressively Worsening Poison$() effect, while $(thing)Regular poisons$() cause $(item)Weakness$() and a $(item)Stronger Poison$() effect.$(br2)The $(l:tfg_ores/hazards#mask)Face Mask$() protects from inhalation, while the $(l:tfg_ores/hazards#gloves)Gloves$() protects from direct skin contact.$(br2)The $(l:tfg_ores/hazards#hazmat)Hazmat Suit$() protects from any contact."
+			"text": "Hay dos tipos de $(thing)materiales venenosos$(). Entre los más débiles se encuentra el $(thing)polvo de plomo$(), mientras que entre los venenos más fuertes se encuentra el $(thing)dióxido de nitrógeno$(). Los $(thing)venenos débiles$() provocan un efecto de $(item)envenenamiento progresivamente más grave$(), mientras que los $(thing)venenos normales$() provocan $(item)debilidad$() y un efecto de $(item)envenenamiento más fuerte$().$(br2)La $(l:tfg_ores/hazards#mask)mascarilla$() protege contra la inhalación, mientras que los $(l:tfg_ores/hazards#gloves)guantes$() protegen del contacto directo con la piel.$(br2)El $(l:tfg_ores/hazards#hazmat)traje Hazmat$() protege contra cualquier tipo de contacto.\n"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"title": "Materiales radioactivos",
 			"item": "gtceu:uranium_ingot",
 			"anchor": "Radioactive_materials",
-			"text": "Most $(thing)Radioactive substances $()like $(thing)Uranium 238$() you will only meet at $(thing)EV tier$() or above. They will $(item)Permanently Irradiate$() you. Small exposure causes $(item)glowing$(), but prolonged contact triggers a quick $(item)Death$().$(br2)We know it looks tasty and has a billion calories, but $(#ff0000)PLEASE DO NOT EAT URANIUM!$()"
+			"text": "La mayoría de las $(thing)sustancias radiactivas$(), como el $(thing)uranio-238$(), solo las encontrarás a partir del $(thing)nivel EV$(). Estas sustancias te $(item)irradiarán permanentemente$(). Una exposición breve provoca $(item)luminosidad$(), pero el contacto prolongado desencadena una rápida $(item)muerte$().$(br2)Sabemos que parece sabroso y que tiene mil millones de calorías, pero $(#ff0000)¡POR FAVOR, NO COMAS URANIO!$()\n"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"title": "Materiales radioactivos",
 			"item": "gtceu:plutonium_ingot",
-			"text": "Only the $(l:tfg_ores/hazards#hazmat)Hazmat Suit$(), as well as some advanced armors provide full protection from radiation.$(br2)In the case you do get irradiated, only the $(l:tfg_ores/hazards#rad_away)RadAwayᵗᵐ pill$() can cure you."
+			"text": "Solo el $(l:tfg_ores/hazards#hazmat)traje Hazmat$(), así como algunas armaduras avanzadas, proporcionan protección total contra la radiación.$(br2)Si llegas a irradiarte, solo la $(l:tfg_ores/hazards#rad_away)pastilla RadAwayᵗᵐ$() puede curarte.\n"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"title": "Silicosis",
 			"item": "gtceu:silicon_dioxide_dust",
 			"anchor": "Silicosis",
-			"text": "$(thing)Silicosis$() is an illness caused by inhaling $(thing)Silicon Dioxide Dust$(). Exposure causes a $(item)Reduction$() in both $(item)Health$() and the $(item)Air Supply$() you have while diving $(thing)Under Water$().$(br2)The $(l:tfg_ores/hazards#mask)Face Mask$() and the $(l:tfg_ores/hazards#hazmat)Hazmat Suit$() provide protection from inhalation of silicon dioxide."
+			"text": "$(thing)La silicosis$() es una enfermedad causada por inhalar $(thing)polvo de dióxido de silicio$(). La exposición provoca una $(item)reducción$() tanto de la $(item)salud$() como del $(item)tiempo de respiración$() disponible mientras buceas $(thing)bajo el agua$().$(br2)La $(l:tfg_ores/hazards#mask)mascarilla$() y el $(l:tfg_ores/hazards#hazmat)traje Hazmat$() proporcionan protección contra la inhalación de dióxido de silicio.\n"
 		}
 	]
 }

@@ -54,7 +54,7 @@
     {
       "type": "patchouli:spotlight",
       "item": "tfg:asphalt_road_stairs,tfg:asphalt_road_slab",
-      "text": "$(thing)Asphalt Roads$() can be turned into $(thing)Asphalt Road Slabs$() and $(thing)Asphalt Road Stairs$() using a $(thing)Mattock$() or a stonecutter."
+      "text": "$(thing)Asfaltowe drogi$() można przerobić na $(thing)płyty asfaltowej drogi$() i $(thing)schody asfaltowej drogi$() za pomocą $(thing)oskardu$() lub przecinarki."
     },
     {
       "type": "patchouli:spotlight",

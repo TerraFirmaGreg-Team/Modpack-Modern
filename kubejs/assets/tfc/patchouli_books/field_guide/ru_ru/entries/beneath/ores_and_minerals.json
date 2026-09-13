@@ -1,5 +1,5 @@
 {
-  "name": "Руды и минералы",
+  "name": "Ores and Minerals",
   "category": "tfc:beneath",
   "icon": "beneath:ore/normal_nether_gold",
   "pages": [
@@ -23,7 +23,7 @@
           "X": "beneath:ore/normal_nether_gold"
         }
       },
-      "name": "Адское золото",
+      "name": "Nether Gold",
       "text": "Nether Gold replaces netherrack, and is common. Beneath lava, there is more gold, and richer.",
       "enable_visualize": false
     },
@@ -63,8 +63,8 @@
           "X": "beneath:ore/blackstone_sylvite"
         }
       },
-      "name": "Каменная соль",
-      "text": "Каменная соль заменяет базальт на любом уровне.",
+      "name": "Сильвин",
+      "text": "Sylvite replaces basalt at any level.",
       "enable_visualize": false
     },
     {
@@ -83,8 +83,8 @@
           "X": "minecraft:nether_quartz_ore"
         }
       },
-      "name": "Незер-кварц",
-      "text": "Незер-кварц заменяет незерак на любом уровне, и часто встречается.",
+      "name": "Nether Quartz",
+      "text": "Nether Quartz replaces netherrack at all levels, and is common.",
       "enable_visualize": false
     },
     {
