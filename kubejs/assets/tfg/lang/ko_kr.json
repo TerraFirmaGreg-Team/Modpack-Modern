@@ -237,6 +237,8 @@
 	"trim_material.tfc.nickel_tfc": "녹은 니켈",
 	"trim_material.tfc.bismuth_tfc": "녹은 비스무트",
 	"trim_material.tfc.pyrite_tfc": "황철석",
+	"tfg.machine.oxygen_distributor.idle": "멈춤",
+	"tfg.machine.oxygen_distributor.status.sealed": "밀봉된",
 	"tfg.food_recipe.brining": "소금물절임 중",
 	"tfg.food_recipe.smoking": "훈연",
 	"tfg.food_recipe.drying": "건조",
@@ -324,7 +326,5 @@
 	"quests.tfg_tips.oven.title": "오븐",
 	"quests.tfg_tips.brine_something.title": "소금물절임 중",
 	"quests.tfg_tips.bacon.title": "베이컨",
-	"quests.tfg_tips.composter.title": "퇴비통",
-	"tfg.machine.oxygen_distributor.idle": "멈춤",
-	"tfg.machine.oxygen_distributor.status.sealed": "밀봉된"
+	"quests.tfg_tips.composter.title": "퇴비통"
 }

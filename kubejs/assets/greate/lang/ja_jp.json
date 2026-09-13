@@ -294,6 +294,8 @@
 	"greate.tooltip.circuit_number": "回路番号",
 	"greate.tooltip.max_capacity": "最大許容応力: ",
 	"greate.tooltip.networkStatistics": "ライン全体の状態: ",
+	"greate.tooltip.pump_pressure": "ポンプ圧力: ",
+	"greate.tooltip.pump_transfer": "転送中: ",
 	"gtceu.wire_coating": "ワイヤー被覆",
 	"item.greate.aluminium_vertical_gearbox": "アルミニウム製垂直ギアボックス",
 	"item.greate.andesite_alloy_belt_connector": "板材ベルト",
@@ -312,7 +314,5 @@
 	"material.greate.rose_quartz": "Rose Quartz",
 	"material.greate.shadow_steel": "シャドウスチール",
 	"tagprefix.alloy": "%sの合金",
-	"tagprefix.whisk": "%s製泡立て器",
-	"greate.tooltip.pump_pressure": "ポンプ圧力: ",
-	"greate.tooltip.pump_transfer": "転送中: "
+	"tagprefix.whisk": "%s製泡立て器"
 }

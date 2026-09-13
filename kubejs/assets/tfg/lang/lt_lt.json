@@ -355,6 +355,7 @@
 	"trim_material.tfc.pyrite_tfc": "Piritas",
 	"trim_material.tfc.redx_tfc": "„RedX“",
 	"tfg.machine.gas_well.output_full": "Išvesties anga ya pilna!",
+	"tfg.machine.oxygen_distributor.status.sealed": "Užsandarintas",
 	"tfg.food_recipe.brining": "Sūrosi",
 	"tfg.recipe.macerator_warning": "Išveda tik pirmąjį lizdą iki „HV“",
 	"stackgroup.emixx.tfg_powders": "Milteliai",
@@ -643,6 +644,5 @@
 	"quests.tfg_tips.brine_something.title": "Sūrosi",
 	"quests.tfg_tips.composter.title": "Kompostavimo dežė",
 	"quests.tfg_tips.tools_tips.mattocks.subtitle": "Kastuvas tiesiog netiks.",
-	"quests.tfg_tips.tools_tips.concrete_roads.title": "Betono keliai",
-	"tfg.machine.oxygen_distributor.status.sealed": "Užsandarintas"
+	"quests.tfg_tips.tools_tips.concrete_roads.title": "Betono keliai"
 }

@@ -3239,6 +3239,10 @@
 	"tfg.machine.gas_well.output_full": "输出仓已满！",
 	"tfg.machine.gas_well.output_full.tooltip": "只要矿脉还未枯竭，炸药和水（或蒸汽）就会持续消耗。",
 	"tfg.machine.gas_well.fluid.tooltip": "只能抽取天然气。",
+	"tfg.machine.oxygen_distributor.active": "工作中",
+	"tfg.machine.oxygen_distributor.idle": "空闲",
+	"tfg.machine.oxygen_distributor.status": "状态：",
+	"tfg.machine.oxygen_distributor.status.sealed": "密封",
 	"tfg.machine.pastoral_engine.animals_total": "区域内动物: %s",
 	"tfg.machine.pastoral_engine.animals_ready": "可收获: %s",
 	"tfg.machine.pastoral_engine.animals_old": "老年动物: %s",
@@ -8142,9 +8146,5 @@
 	"quests.tfg_tips.tools_tips.swim_gear.desc": "&6通气管&r能让你在水下额外获得15秒的“呼吸”时间，而&a脚蹼&r则会大幅提升你的游泳速度。",
 	"quests.tfg_tips.tools_tips.cheese_rack.title": "奶酪架",
 	"quests.tfg_tips.tools_tips.cheese_rack.subtitle": "等等，那不是桶……",
-	"quests.tfg_tips.tools_tips.cheese_rack.desc": "桶架也可以用来把奶酪轮叠放在其他奶酪轮上，就像叠桶一样，更加节省空间！\n\n更多关于如何使用奶酪架的详细信息，请查阅《野外指南》。",
-	"tfg.machine.oxygen_distributor.idle": "空闲",
-	"tfg.machine.oxygen_distributor.active": "工作中",
-	"tfg.machine.oxygen_distributor.status.sealed": "密封",
-	"tfg.machine.oxygen_distributor.status": "状态："
+	"quests.tfg_tips.tools_tips.cheese_rack.desc": "桶架也可以用来把奶酪轮叠放在其他奶酪轮上，就像叠桶一样，更加节省空间！\n\n更多关于如何使用奶酪架的详细信息，请查阅《野外指南》。"
 }
