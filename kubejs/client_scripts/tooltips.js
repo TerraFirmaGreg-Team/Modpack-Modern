@@ -192,7 +192,7 @@ const registerTooltips = (event) => {
 		"slash_l", "slash_r", "slash_rl",
         "num_0", "num_1", "num_2", "num_3", "num_4",
         "num_5", "num_6", "num_7", "num_8", "num_9",
-        "number"
+        "number", "diagonal_line", "fullcorner", "angled_edge_l", "angled_edge_r", "cat", "creeper"
     ];
 	roadMaskIds.forEach(mask => {
 		event.addAdvanced([`tfg:asphalt_road_stencil_${mask}`], (item, advanced, text) => {

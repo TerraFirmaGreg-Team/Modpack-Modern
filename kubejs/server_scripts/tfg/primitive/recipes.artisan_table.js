@@ -956,4 +956,88 @@ function registerTFGArtisanTableRecipes(event) {
 		"type": "tfg:artisan"
 	}).id(`tfg:artisan_table/asphalt_road_stencil_number`);
 
+	event.custom({
+		"result": {"item": "tfg:asphalt_road_stencil_fullcorner"},
+		"pattern": [
+			"XXX   ",
+			"XXXX  ",
+			"XXXXX ",
+			"XXXXXX",
+			"XXXXXX",
+			"XXXXXX"
+		],
+		"artisanType": "tfg:road_marking_stencil",
+		"type": "tfg:artisan"
+	}).id(`tfg:artisan_table/asphalt_road_stencil_fullcorner`);
+
+	event.custom({
+		"result": {"item": "tfg:asphalt_road_stencil_diagonal_line"},
+		"pattern": [
+			"  XXXX",
+			"   XXX",
+			"X   XX",
+			"XX   X",
+			"XXX   ",
+			"XXXX  "
+		],
+		"artisanType": "tfg:road_marking_stencil",
+		"type": "tfg:artisan"
+	}).id(`tfg:artisan_table/asphalt_road_stencil_diagonal_line`);
+
+	event.custom({
+		"result": {"item": "tfg:asphalt_road_stencil_cat"},
+		"pattern": [
+			"X XX X",
+			"XXXXXX",
+			"  XX  ",
+			"XXXXXX",
+			"XX  XX",
+			"XXXXXX"
+		],
+		"artisanType": "tfg:road_marking_stencil",
+		"type": "tfg:artisan"
+	}).id(`tfg:artisan_table/asphalt_road_stencil_cat`);
+
+	event.custom({
+		"result": {"item": "tfg:asphalt_road_stencil_creeper"},
+		"pattern": [
+			"XXXXXX",
+			"  XX  ",
+			"  XX  ",
+			"XX  XX",
+			"X    X",
+			"X XX X"
+		],
+		"artisanType": "tfg:road_marking_stencil",
+		"type": "tfg:artisan"
+	}).id(`tfg:artisan_table/asphalt_road_stencil_creeper`);
+
+	event.custom({
+		"result": {"item": "tfg:asphalt_road_stencil_angled_edge_l"},
+		"pattern": [
+			" XXXXX",
+			"  XXXX",
+			"X  XXX",
+			"X  XXX",
+			"X  XXX",
+			"X  XXX"
+		],
+		"artisanType": "tfg:road_marking_stencil",
+		"type": "tfg:artisan"
+	}).id(`tfg:artisan_table/asphalt_road_stencil_angled_edge_l`);
+
+	event.custom({
+		"result": {"item": "tfg:asphalt_road_stencil_angled_edge_r"},
+		"pattern": [
+			"XXXX  ",
+			"XXX   ",
+			"XX   X",
+			"XX  XX",
+			"XX  XX",
+			"XX  XX"
+		],
+		"artisanType": "tfg:road_marking_stencil",
+		"type": "tfg:artisan"
+	}).id(`tfg:artisan_table/asphalt_road_stencil_angled_edge_r`);
+
 }
