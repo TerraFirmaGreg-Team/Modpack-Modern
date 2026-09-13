@@ -443,15 +443,15 @@ const registerTFGGreenhouseRecipes = (event) => {
 
 	// Cultivation Monitor
 	event.recipes.gtceu.shaped('tfg:cultivation_monitor', [
-		'CEC',
+		'CAC',
 		'DBD',
-		'CAC'
+		'CEC'
 	], {
 		A: 'gtceu:ev_scanner',
 		B: 'gtceu:computer_monitor_cover',
 		C: ChemicalHelper.get(TagPrefix.plateDense, GTMaterials.TungstenSteel, 1),
 		D: '#gtceu:circuits/luv',
-		E: '#forge:lenses/emerald'
+		E: 'gtceu:glass_lens'
 	}).addMaterialInfo().id('tfg:shaped/cultivation_monitor');
 	
 	// Hydroponics Facility Controller
