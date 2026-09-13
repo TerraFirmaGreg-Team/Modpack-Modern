@@ -411,8 +411,8 @@ function registerTFGOverworldBiomeTags(event) {
 	event.add("tfc:kaolin_clay_spawns_in", "tfg:earth/glaciated_shield_volcano");
 	event.add("tfc:kaolin_clay_spawns_in", "tfg:earth/sunken_shield_volcano");
 	event.add("tfc:kaolin_clay_spawns_in", "tfg:earth/rift_valley");
-	event.add("tfc:kaolin_clay_spawns_in", "tfg:earth/rift_lake");
 	event.add("tfc:kaolin_clay_spawns_in", "tfg:earth/volcanic_mountain_islands");
+	event.add("tfc:kaolin_clay_spawns_in", "tfg:earth/volcanic_island");
 
 	event.add("tfc:has_predictable_winds", "#tfg:earth/is_ocean")
 	event.add('waves:has_waves', '#tfg:earth/is_ocean');
@@ -440,8 +440,6 @@ function registerTFGOverworldPlacedFeatures(event) {
 	event.add('tfg:in_biome/surface_decoration/ice_sheet_volcanic_oceanic_mountains', 'tfg:earth/rose_quartz/rose_quartz')
 	event.add('tfg:in_biome/surface_decoration/glaciated_volcanic_mountains', 'tfg:earth/rose_quartz/rose_quartz')
 	event.add('tfg:in_biome/surface_decoration/glaciated_volcanic_oceanic_mountains', 'tfg:earth/rose_quartz/rose_quartz')
-	event.add('tfg:in_biome/surface_decoration/glacially_carved_volcanic_mountains', 'tfg:earth/rose_quartz/rose_quartz')
-	event.add('tfg:in_biome/surface_decoration/glacially_carved_volcanic_oceanic_mountains', 'tfg:earth/rose_quartz/rose_quartz')
 
 	// Tarkianite
 	event.add('tfc:in_biome/veins', 'tfg:earth/vein/normal_tarkianite')
