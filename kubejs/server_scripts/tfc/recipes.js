@@ -393,6 +393,12 @@ const registerTFCRecipes = (event) => {
 		G: '#forge:glass_panes',
 		D: '#forge:tools/screwdrivers'
 	}).id('tfg:shaped/calendar_clock')
+
+	event.recipes.gtceu.assembler('tfc:calendar_clock')
+		.itemInputs('minecraft:clock', '#forge:small_gears/brass', '#forge:small_springs', '#forge:glass_panes')
+		.itemOutputs('tfc:calendar_clock')
+		.EUt(GTValues.VA[GTValues.ULV])
+		.duration(100)
 		
 	event.recipes.tfc.heating('tfc:calendar_clock', 930)
 		.resultFluid(Fluid.of('gtceu:brass', 144 * 3))
