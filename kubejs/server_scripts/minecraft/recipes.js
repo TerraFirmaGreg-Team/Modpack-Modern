@@ -1057,5 +1057,12 @@ const registerMinecraftRecipes = (event) => {
 		D: '#forge:tools/wrenches'
 	}).id('tfc:crafting/vanilla/clock')
 
+	event.recipes.gtceu.assembler('minecraft:clock')
+		.itemInputs('#forge:plates/brass', '#forge:small_gears/brass', 'minecraft:redstone')
+		.itemOutputs('minecraft:clock')
+		.circuit(9)
+		.duration(100)
+		.EUt(4)
+
 	TFGHelpers.registerMaterialInfo('minecraft:clock', [GTMaterials.Brass, 2, GTMaterials.Redstone, 1])
 }
