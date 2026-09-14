@@ -47,7 +47,7 @@
     {
       "type": "patchouli:text",
       "anchor": "vessel",
-      "text": "Маленький сосуд - один из таких предметов. Как и все гончарные изделия, его необходимо $(l:https://en.wikipedia.org/wiki/Pottery)обжигать$(), прежде чем он сможет быть использован. Обжиг - это процесс $(l:mechanics/heating)нагревания$() предмета до точки, когда глина превратится в твёрдый $(thing)Керамический$() материал, который требует нагрева до 1400 °C, или $(e)$(bold)$(t:Yellow White)Жёлто-Белый$().$(br2)Чтобы сделать это на раннем этапе игры, вам понадобится использовать $(l:getting_started/pit_kiln)Земляную печь$().",
+      "text": "The small vessel is one such item. Like all pottery items, it must be $(l:https://en.wikipedia.org/wiki/Pottery)fired$() before it can be used. Firing is a process of $(l:mechanics/heating)heating$() the item up to a point where the clay will turn into a hard $(thing)Ceramic$() material, which requires heating to 1400 °C, or $(e)$(bold)$(t:Yellow White)Yellow White$().$(br2)In order to do this in the early game, you will need to use a $(l:getting_started/pit_kiln)Pit Kiln$().",
       "title": "Маленький сосуд"
     },
     {
@@ -58,7 +58,7 @@
     {
       "type": "patchouli:text",
       "anchor": "jug",
-      "text": "Ещё один полезный гончарный предмет - это $(thing)Кувшин$(). Его можно использовать для того, чтобы набирать и $(thing)пить$() жидкости, такие как пресная вода.$(br2)Чтобы использовать его, просто $(item)$(k:key.use)$() кувшин на жидкость в мире. Затем используйте кувшин, чтобы пить из него. Кувшин может вместить $(thing)100 мБ$() жидкости за раз.",
+      "text": "Another useful pottery item is the $(thing)Jug$(). It can be used to pick up and $(thing)drink$() fluids, such as fresh water.$(br2)In order to use it, simply $(item)$(k:key.use)$() the jug on the fluid in the world. Then use the jug in order to drink from it. The jug can hold $(thing)100 mB$() of fluid at a time.",
       "title": "Кувшин"
     },
     {
@@ -92,7 +92,7 @@
     {
       "type": "tfc:knapping_recipe",
       "recipe": "tfc:clay_knapping/propick_head_mold",
-      "text": "$(l:mechanics/prospecting#propick)Разведывательная кирка$() - необходимый инструмент для поиска больших количеств руды."
+      "text": "A $(l:mechanics/prospecting#propick)Prospector's Pick$() is an essential tool for locating large quantities of ore."
     },
     {
       "type": "tfc:knapping_recipe",
@@ -107,7 +107,7 @@
     {
       "type": "tfc:knapping_recipe",
       "recipe": "tfc:clay_knapping/scythe_blade_mold",
-      "text": "$(thing)Серп$() - инструмент, который может собирать растения и листья на площади 3x3x3!"
+      "text": "A $(thing)Scythe$() is a tool that can harvest plants and leaves in a 3x3x3 area!"
     },
     {
       "type": "tfc:knapping_recipe",

@@ -5,24 +5,24 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "$(thing)Теплица$() — это многоблочное устройство, управляемое $(l:firmalife/climate_station)климатической станцией$(). Она позволяет выращивать урожай круглый год. Теплица имеет множество типов и блоков на выбор. Однако постройка теплицы довольно проста. Как и $(l:firmalife/cellar)погреб$(), это должна быть замкнутая область из блоков, принадлежащих к одному и тому же типу теплицы $(thing)Тип теплицы$(). Пол теплицы может быть невоздушным блоком."
+      "text": "The $(thing)Greenhouse$() is a multiblock device controlled by a $(l:firmalife/climate_station)Climate Station$(). It allows growing crops year round. The Greenhouse has an array of types and blocks to choose from. However, building a greenhouse is quite simple. Like the $(l:firmalife/cellar)Cellar$(), it should be an enclosed area of blocks belonging to the same $(thing)Greenhouse Type$(). The floor of the greenhouse may be non-air block."
     },
     {
       "type": "patchouli:text",
-      "text": "Стены теплиц должны быть сплошными. Панельные стены должны быть размещены так, чтобы внешняя сторона блока (например, сторона, на которую можно поставить факел) была обращена внутрь теплицы. То же самое относится к крышам, за исключением того, что плиты всегда считаются допустимыми блоками крыши.  Люки и двери также всегда допустимы и не требуют специального размещения."
+      "text": "The walls of greenhouses must be solid faces. Panel walls should be placed so that the face that is on the exterior of the block (eg. the face you can place a torch on) faces into the greenhouse. The same applies for roofs, except that slabs are always considered valid roof blocks. Trapdoors and doors are also always valid and require no special placement."
     },
     {
       "type": "patchouli:text",
-      "text": "$(thing)Типы теплиц$() — это семейства блоков теплиц, которые могут использоваться взаимозаменяемо. Большинство блоков теплиц $(thing)стареют$(). Например, блоки теплицы из $(thing)обработанной древесины$() становятся блоками из $(thing)выветренной обработанной древесины$(). Поскольку оба типа блоков принадлежат к одному типу теплицы, ваша теплица будет продолжать функционировать."
+      "text": "$(thing)Greenhouse Types$() are families of greenhouse blocks that can be used interchangeably in a greenhouse. Most greenhouse blocks $(thing)age$(). For example, $(thing)Treated Wood$() greenhouse blocks become $(thing)Weathered Treated Wood$() blocks. Since both of those block types belong to the same greenhouse type, your greenhouse will continue to function."
     },
     {
       "type": "patchouli:text",
-      "text": "Вот доступные $(thing)типы теплиц$() и типы блоков, в которые они могут превратиться:$(br)$(br)$(li)Обработанная древесина: Выветренная$(li)Медь: Выставленная, Выветренная, Окисленная$(li)Железо: Ржавое$(li)Нержавеющая сталь (не стареет)$()",
+      "text": "These are the $(thing)Greenhouse Types$() available, with the block types they can age into:$(br)$(br)$(li)Treated Wood: Weathered $()$(li)Copper: Exposed, Weathered, Oxidized$()$(li)Iron: Rusted$() $(li)Stainless Steel (does not age)$()",
       "title": "Типы теплиц"
     },
     {
       "type": "patchouli:text",
-      "text": "Существует четыре типа обычных $(thing)блоков теплицы$(): стены, двери, крыши и верхушки крыш. Крыши и верхушки крыш — это лестницы и плиты, соответственно.  Также существуют более тонкие версии этих блоков, также известных как панельные стены, люки и панельные крыши. Их можно комбинировать по вашему выбору для формирования структуры теплицы."
+      "text": "There are four types of regular $(thing)Greenhouse Blocks$(): Walls, Doors, Roofs, and Roof Tops. Roofs and Roof Tops are stairs and slabs, respectively. There are also thinner versions of these blocks, also known as panel walls, trapdoors, and panel roofs. These can be combined however you choose to form the structure of the greenhouse."
     },
     {
       "type": "tfc:multimultiblock",
@@ -36,11 +36,11 @@
     },
     {
       "type": "patchouli:text",
-      "text": "В теплицах работает много блоков:$(br)$(li)$(l:firmalife/planters)Лотки$(), для выращивания культур, и $(br)$(li)$(l:firmalife/irrigation)Оросители$(), различные устройства, которые добавляют воду в вазоны."
+      "text": "There are many blocks that operate inside Greenhouses:$(br)$(li)$(l:firmalife/planters)Planters$(), for growing crops$(), and $(br)$(li)$(l:firmalife/irrigation)Sprinklers$(), various devices that add water to planters."
     },
     {
       "type": "patchouli:text",
-      "text": "На следующих четырех страницах приведены рецепты для основных типов блоков теплицы. Хотя они показаны только для железных теплиц, железные прутья в рецепте можно заменить на $(thing)обработанные бревна$(), $(thing)медную проволоку$() или $(thing)прутья из нержавеющей стали$().  Для получения информации о нержавеющей стали см. $(l:firmalife/stainless_steel)эту страницу$()."
+      "text": "The next four pages contain recipes for the main greenhouse block types. While they are only shown for Iron greenhouses, the iron rods in the recipe can be replaced with $(thing)Treated Lumber$(), $(thing)Copper Rods$(), or $(thing)Stainless Steel Rods$(). For information on Stainless Steel, see $(l:firmalife/stainless_steel)this linked page$()."
     },
     {
       "type": "patchouli:crafting",

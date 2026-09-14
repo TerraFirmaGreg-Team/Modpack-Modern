@@ -1,11 +1,11 @@
 {
-  "name": "Navigation",
+  "name": "XYZ座標の特定",
   "category": "tfc:firmaciv",
   "icon": "firmaciv:textures/item/nav_toolkit.png",
   "pages": [
     {
       "type": "patchouli:image",
-      "title": "Navigation",
+      "title": "XYZ座標の特定",
       "images": [
         "firmaciv:textures/gui/book/navigation.png"
       ],
@@ -13,42 +13,42 @@
     },
     {
       "type": "patchouli:text",
-      "text": "Navigating the world is not an easy task. In order to build a successful civilization, you must have a good grasp of your location, and a good record of important places! No longer are there magic numbers that tell you exactly where you are. Instead, you must make technological advancements and acquire precise instruments to determine your position."
+      "text": "この世界で座標を特定するのは簡単なことではありません。文明を発展させるためには、自分の位置を正確に把握し、重要な場所をしっかりと記録しておく必要があります！もはや、自分がどこにいるかを正確に教えてくれる「魔法の数字」など存在しません。その代わりに、技術を進歩させ、正確な位置を特定するための精密な機器を手に入れなければなりません。"
     },
     {
       "type": "patchouli:text",
       "title": "経度",
-      "text": "To find your Longitude, that is, your distance from the Prime Meridian, you need a clock! Specifically, you need a precise timepiece that keeps itself synchronized with the solar time at the Prime Meridian.$(br2) Smith an Unfinished Navigator's Timepiece from a Brass Double Sheet before completing it with recipe on the right."
+      "text": "経度、つまり本初子午線からの距離を測定するには、時計が必要です！具体的には、本初子午線における太陽時と常に同期している高精度な時計が必要です。$(br2) 右側のレシピに従って完成させる前に、二重真鍮プレートから未完成の航海士の時辰儀を鍛造してください。"
     },
     {
       "type": "patchouli:crafting",
       "recipe": "firmaciv:crafting/nav_clock",
-      "text": "Once you craft your Navigator's Timepiece, you can hold it and press $(item)$(k:key.use)$() to determine your Longitude. Remember that your Longitude is measured in Degrees East or West, meaning 0 Degrees at the Prime Meridian, and 360 Degrees for an identical climate."
+      "text": "航海士の時辰儀を製作したら、それを手に持ち、$(item)$(k:key.use)$() を押すことで、経度を確認できます。経度は東経または西経の度数で表され、本初子午線が0度、同じ気候帯では360度となることに注意してください。"
     },
     {
       "type": "patchouli:text",
       "title": "緯度",
-      "text": "To find your Latitude, that is, your distance from the Equator, you need to determine the degrees at which you view either Polaris, the North Star, or the Sun. Specifically, you need a precise mechanism for viewing astronomical features and measuring their angular distance from the horizon.$(br2) Smith an Unfinished Sextant from a Brass Double Ingot before completing it with recipe on the right."
+      "text": "緯度、つまり赤道からの距離を求めるには、北極星または太陽をどの角度で見ているかを特定する必要があります。具体的には、天体を観測し、地平線からの角度距離を測定するための精密な装置が必要となります。$(br2) 右側のレシピに従って完成させる前に、真鍮のダブルインゴットから未完了の六分儀を鍛造してください。"
     },
     {
       "type": "patchouli:crafting",
       "recipe": "firmaciv:crafting/sextant",
-      "text": "Once you craft your Sextant, you can hold it and press $(item)$(k:key.use)$() to determine your Latitude. Remember that your Latitude is measured in Degrees North or South, meaning 0 Degrees at the Equator, and 90 Degrees North or South for a polar region."
+      "text": "六分儀を製作したら、それを手に持ち、$(item)$(k:key.use)$() を押すことで、緯度を測定できます。緯度は北または南の度数で表されることに注意してください。つまり、赤道が0度、極域が北または南の90度となります。"
     },
     {
       "type": "patchouli:text",
       "title": "高度",
-      "text": "To find your Altitude, that is, your vertical distance from the Sea Level datum, you need to measure atmospheric pressure. Specifically, you need a device containing a compressible fluid, and you need to measure the volume of that fluid to determine the pressure.$(br2) Smith an Unfinished Barometer from a Brass Sheet before completing it with recipe on the right."
+      "text": "標高、すなわち海面基準面からの垂直距離を求めるには、気圧を測定する必要があります。具体的には、圧縮可能な流体が入った装置を用意し、その流体の体積を測定して気圧を算出する必要があります。$(br2) 右側のレシピに従って完成させる前に、真鍮プレートから未完成の高度計を鍛造してください。"
     },
     {
       "type": "patchouli:crafting",
       "recipe": "firmaciv:crafting/barometer",
-      "text": "Once you craft your Barometer, you can hold it and press $(item)$(k:key.use)$() to determine your Altitude. Remember that your Altitude is measured in distance from the Sea Level datum."
+      "text": "気圧計を作成したら、それを手に持ち、$(item)$(k:key.use)$() を押すことで、高度を確認できます。高度は海面基準からの距離で測定されることに注意してください。"
     },
     {
       "type": "patchouli:text",
-      "title": "Footnotes",
-      "text": "Because you will be measuring distance in Degrees, it might be helpful to know the block conversions. Every 90 Degrees is 20,000 blocks, and every single degree is about 222 blocks.$(br2)In Firma: Civilization, Compasses will always point North, but are crafted with the original TerraFirmaCraft recipe."
+      "title": "脚注",
+      "text": "距離を度単位で測定することになるので、ブロック換算を知っておくと役立つかもしれません。90度ごとに20,000ブロック、1度ごとに約222ブロックです。$(br2)Firma: Civilizationでは、コンパスは常に北を指しますが、作成にはオリジナルのTerraFirmaCraftのレシピが使用されます。"
     }
   ],
   "read_by_default": true,

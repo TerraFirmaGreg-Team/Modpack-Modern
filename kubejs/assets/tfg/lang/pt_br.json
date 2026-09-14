@@ -1340,6 +1340,8 @@
 	"tfg.toast.ore_prospector_message": "Minérios encontrados dentro de %s §6blocos nessa direção: %s",
 	"tfg.hangglider.disabled_dimension": "Você não pode usar uma asa delta aqui!",
 	"tfg.clientmessage.nether_contraption_created": "§cAs Profundezas são §~quentes!§c Mecanismos com Brocas Mecânicas não vão minerar abaixo de Y=%s.",
+	"tfg.machine.oxygen_distributor.idle": "Ocioso",
+	"tfg.machine.oxygen_distributor.status.sealed": "Selado",
 	"tfg.machine.ore_processing_beneath.gas_critical": "Nível Crítico de Gás Natural: %s%%",
 	"tfg.machine.ore_processing_beneath.gas_level": "Gás Natural: %s%%",
 	"tfg.machine.ore_processing_beneath.output_modifier": "Eficiência de saída: %s%%",

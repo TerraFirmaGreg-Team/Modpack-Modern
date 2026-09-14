@@ -5,7 +5,7 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "在群峦传说中，存在着许许多多、各式各样的植物。$(br2)不同的植物会出现在不同的$(l:the_world/climate)气候$()中，并且它们会随着四季变化经历从开花到休眠的生长循环，其外观也会相应改变。它们也会随着当地温度的变化而变色。颜色艳丽的花朵通常可以在$(l:mechanics/quern)手推磨$()中碾碎，用于制作$(l:mechanics/dye)染料$()。"
+      "text": "在群峦传说中，存在着$(italic)许许多多$()、各式各样的植物。$(br2)不同的植物会出现在不同的$(l:the_world/climate)气候$()中，并且它们会随着四季变化经历从开花到休眠的生长循环，其外观也会相应改变。它们也会随着当地温度的变化而变色。颜色艳丽的花朵通常可以在$(l:mechanics/quern)手推磨$()中碾碎，用于制作$(l:mechanics/dye)染料$()。"
     },
     {
       "type": "patchouli:multiblock",

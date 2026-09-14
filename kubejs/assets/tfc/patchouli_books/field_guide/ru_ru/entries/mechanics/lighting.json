@@ -5,11 +5,11 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "В TFC существует множество способов получения света. Один из способов — использование $(l:mechanics/lamps)Ламп$(), но они требуют топлива. Некоторые источники света требуют только искры."
+      "text": "There are a number of ways to produce light in TFC. One way is the use of $(l:mechanics/lamps)Lamps$(), but they require fuel. Some light sources only require a spark."
     },
     {
       "type": "patchouli:text",
-      "text": "$(br) 1. $(l:mechanics/lighting#torches)Факелы$()$(br) 2. $(l:mechanics/lighting#candles)Свечи$()$(br) 3. $(l:mechanics/lighting#jack_o_lanterns)Тыквы-фонари$()",
+      "text": "$(br) 1. $(l:mechanics/lighting#torches)Torches$()$(br) 2. $(l:mechanics/lighting#candles)Candles$()$(br) 3. $(l:mechanics/lighting#jack_o_lanterns)Jack 'o Lanterns$()",
       "title": "Содержание"
     },
     {
@@ -63,8 +63,8 @@
           "X": "tfc:jack_o_lantern"
         }
       },
-      "name": "Тыквы-фонари",
-      "text": "Тыквы-фонари — это освещённая версия $(thing)Вырезанных тыкв$(), и горят они 4,5 дня, прежде чем снова превратиться в вырезанные тыквы.",
+      "name": "Jack 'o Lanterns",
+      "text": "Jack 'o Lanterns are the lit version of $(thing)Carved Pumpkins$(), and last for 4.5 days, before reverting to carved pumpkins.",
       "enable_visualize": false
     },
     {

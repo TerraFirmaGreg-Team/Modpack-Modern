@@ -5,11 +5,11 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "$(thing)Климатическая станция$() — это блок, который управляет $(l:firmalife/greenhouse)теплицей$() и $(l:firmalife/cellar)погребом$(). Когда соответствующий многоблочный комплекс построен правильно, на его сторонах будет отображаться вода. Если он неисправен, будет отображаться лед."
+      "text": "The $(thing)Climate Station$() is a block that manages the $(l:firmalife/greenhouse)Greenhouse$() and the $(l:firmalife/cellar)Cellar$(). When its corresponding multiblock is built correctly, it will show water on its sides. When it is invalid, it will show ice. The Climate Station must be placed on the first level of the multiblock, touching a wall. If it is not touching a wall, you may $(item)$(k:key.use)$() it with a block that is part of the multiblock you are trying to make to tell it what to look for."
     },
     {
       "type": "tfc:multimultiblock",
-      "text": "Климатическая станция должна быть установлена на первом уровне многоблочного комплекса, примыкая к стене. Если она не примыкает к стене, вы можете $(item)$(k:key.use)$() использовать ее с блоком, который является частью многоблочного комплекса, который вы пытаетесь создать, чтобы указать, что искать.",
+      "text": "The climate station in its valid and invalid state.",
       "multiblocks": [
         {
           "pattern": [
@@ -41,17 +41,17 @@
     },
     {
       "type": "patchouli:text",
-      "text": "Климатическая станция в рабочем и нерабочем состоянии.",
-      "title": "Климатическая станция"
+      "text": "$(li)It updates periodically on its own, or when placed/broken.$()$(li)When a climate station updates, it tells all the blocks inside the multiblock that they can operate. For example, it lets $(l:firmalife/cheese)Cheese$() begin aging.$()$(li)Press $(item)$(k:key.use)$() to force update the Climate Station and the blocks inside the multiblock.",
+      "title": "Climate Station Tips"
     },
     {
       "type": "patchouli:crafting",
       "recipe": "firmalife:crafting/climate_station",
-      "text": "$(li)Она периодически обновляется сама по себе.$()$(li)Когда климатическая станция обновляется, она сообщает всем блокам внутри многоблочного комплекса, что они могут работать. Например, она позволяет начать $(l:firmalife/cheese)созревание сыра$().$(li)Нажмите $(item)$(k:key.use)$(), чтобы принудительно обновить климатическую станцию и блоки внутри многоблочного комплекса."
+      "text": "The climate station is crafted like this."
     },
     {
       "type": "patchouli:text",
-      "text": "Климатическая станция создается так."
+      "text": "A note about greenhouse construction: The largest greenhouse is 31x31x31, centered on the climate station, or 15 blocks in each direction. Centering the climate station in the greenhouse will allow you to take advantage of the full size range. You can also internally subdivide a greenhouse into multiple by using walls and multiple climate stations to make it larger."
     }
   ],
   "read_by_default": true,

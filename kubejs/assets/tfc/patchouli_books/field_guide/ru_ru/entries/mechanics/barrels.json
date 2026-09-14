@@ -43,7 +43,7 @@
       "type": "tfc:sealed_barrel_recipe",
       "anchor": "tannin",
       "recipe": "tfc:barrel/tannin",
-      "text": "$(bold)Дубильная жидкость$() - это кислая жидкость, получаемая путём растворения коры определённых $(thing)Брёвен$() в бочке с $(thing)Водой$(). $(thing)Дуб$(), $(thing)Берёза$(), $(thing)Каштан$(), $(thing)Дугласова пихта$(), $(thing)Гикори$(), $(thing)Клен$() и $(thing)Секвойя$() все могут быть использованы для создания $(thing)Дубильной жидкости$()."
+      "text": "$(bold)Tannin$() is an acidic fluid, made by dissolving bark from certain $(thing)Logs$() in a barrel of $(thing)Water$(). $(thing)Oak$(), $(thing)Birch$(), $(thing)Chestnut$(), $(thing)Douglas Fir$(), $(thing)Hickory$(), $(thing)Maple$(), and $()Sequoia$() are all able to be used to create $(thing)Tannin$()."
     },
     {
       "type": "patchouli:text",

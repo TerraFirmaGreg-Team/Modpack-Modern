@@ -296,6 +296,7 @@ ServerEvents.recipes(event => {
 	registerTFCTextileRecipes(event)
 	registerToolBeltRecipes(event)
 	registerVintageImprovementsRecipes(event)
+	registerViaRomanaRecipes(event)
 	registerWaterFlasksRecipes(event)
 	registerWABRecipes(event)
 	registerTFCScrapingKnivesRecipes(event)

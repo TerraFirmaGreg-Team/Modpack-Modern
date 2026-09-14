@@ -1,38 +1,38 @@
 {
-  "name": "Berry Bushes",
+  "name": "ベリーの茂み",
   "category": "tfc:firmalife",
   "icon": "firmalife:plant/pineapple_bush",
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "Firmalife adds some berry bushes. For information on wild grape bushes, see $(l:firmalife/wine)winemaking$()."
+      "text": "Firmalifeでは、ベリーの茂みがいくつか追加されています。野生のブドウの茂みに関する情報は、$(l:firmalife/wine)ワイン作り$()の項目をご覧ください。"
     },
     {
       "type": "patchouli:spotlight",
       "item": "firmalife:food/nightshade_berry",
       "link_recipes": false,
-      "text": "First is nightshade. Nightshade is a poisonous berry. When put into soup, it makes poisonous $(thing)Stinky Soup$(). It is found between 200-400mm of rain and 7-24 C temperature in forests."
+      "text": "まずはイヌホオズキです。イヌホオズキは有毒なベリーです。スープに入れると、有毒な$(thing)臭いスープ$()になります。降水量が200～400mm、気温が7～24℃の森林で見られます。"
     },
     {
       "type": "patchouli:spotlight",
       "item": "firmalife:food/pineapple",
       "link_recipes": false,
-      "text": "Pineapple bushes are found 250-500mm of rainfall and 20-32 C temperature in forests. Pineapples are like any other fruit, except that they can be made into $(thing)Pineapple Leather$()."
+      "text": "パイナップルの茂みは、降水量250～500mm、気温20～32℃の森林地帯に見られます。パイナップルは他の果物と変わりませんが、$(thing)人工皮革$()に加工できる点が異なります。"
     },
     {
       "type": "patchouli:crafting",
       "recipe": "firmalife:crafting/pineapple_fiber",
-      "text": "Pineapples that have been $(l:firmalife/drying)Dried$() can be crafted into pineapple fiber."
+      "text": "$(l:firmalife/drying)乾燥させた$()パイナップルは、パイナップル繊維に加工することができます。"
     },
     {
       "type": "patchouli:crafting",
       "recipe": "tfc:kjs/damage/shapeless/pineapple_yarn",
-      "text": "Pineapple yarn is made by crafting a $(thing)Spindle$() with the fiber."
+      "text": "パイナップル繊維を $(thing)紡錘$()で加工することで、パイナップルの織り糸を作れます。"
     },
     {
       "type": "tfc:loom_recipe",
       "recipe": "firmalife:loom/pineapple_leather",
-      "text": "Finally, pineapple leather can be me woven in a $(l:tfc:mechanics/weaving)Loom$(). It is a plant substitute for regular leather than can be used for knapping, crafting, and other uses!"
+      "text": "最後に、$(l:tfc:mechanics/weaving)織機$() で人工皮革を織り上げることができます。これは通常の革の代わりに使える植物由来の素材で、革装備などの革の加工やクラフトなど、さまざまな用途に活用できます！"
     }
   ],
   "read_by_default": true,
