@@ -1,20 +1,20 @@
 {
-  "name": "Primitive Anvils",
+  "name": "Yunques primitivos",
   "category": "tfc:getting_started",
   "icon": "tfc:rock/anvil/granite",
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "An alternative to casting tools directly in the early game, and a requirement for higher tier metals, is to use an $(thing)Anvil$(). An anvil is a block which can be used for two different processes: $(l:mechanics/anvils#working)working$() and $(l:getting_started/primitive_anvils#welding)welding$(). An anvil can weld double ingots of the metal type needed to create the next tier anvil above it, which will be necessary to work other items from that metal."
+      "text": "Una alternativa a fundir herramientas directamente durante las primeras etapas del juego, y un requisito para los metales de niveles superiores, es utilizar un $(thing)yunque$(). Un yunque es un bloque que puede utilizarse para dos procesos diferentes: $(l:mechanics/anvils#working)trabajar$() y $(l:getting_started/primitive_anvils#welding)soldar$(). Un yunque puede soldar lingotes dobles del tipo de metal necesario para crear el siguiente nivel de yunque, que será necesario para trabajar otros objetos de ese metal.\n"
     },
     {
       "type": "patchouli:text",
-      "text": "First, you need to acquire a block of $(thing)raw rock$(), that is $(thing)igneous extrusive$() (Rhyolite, Basalt, Andesite, or Dacite) or $(thing)igneous intrusive$() (Granite, Diorite, or Gabbro). You could find and use an exposed block in the world, or you could $(l:getting_started/primitive_anvils#raw_rock)extract one$() from the surrounding rock."
+      "text": "Primero, necesitas conseguir un bloque de $(thing)roca en bruto$(), que sea $(thing)ígnea extrusiva$() (riolita, basalto, andesita o dacita) o $(thing)ígnea intrusiva$() (granito, diorita o gabro). Puedes encontrar y utilizar un bloque expuesto en el mundo, o puedes $(l:getting_started/primitive_anvils#raw_rock)extraer uno$() de la roca circundante.\n"
     },
     {
       "type": "patchouli:text",
       "anchor": "stone_anvils",
-      "text": "You will also need any material of $(thing)hammer$(). In order to make the anvil, simply right click the exposed $(thing)top$() face of one of those raw rock blocks with your $(thing)hammer$(), and voila! An anvil will be formed.$(br2)Anvils have $(l:mechanics/anvils#tiers)tiers$() and the rock anvil is tier 0 - the lowest tier. It is only able to $(l:getting_started/primitive_anvils#welding)weld$() tier I ingots.",
+      "text": "También necesitarás un $(thing)martillo$() de cualquier material. Para fabricar el yunque, simplemente haz clic derecho con tu $(thing)martillo$() sobre la cara $(thing)superior$() expuesta de uno de esos bloques de roca en bruto y, ¡voilà! Se formará un yunque.$(br2)Los yunques tienen $(l:mechanics/anvils#tiers)niveles$(), y el yunque de roca es de nivel 0, el más bajo. Solo puede $(l:getting_started/primitive_anvils#welding)soldar$() lingotes de nivel I.\n",
       "title": "Yunque de Piedra"
     },
     {
@@ -41,12 +41,12 @@
     {
       "type": "patchouli:text",
       "anchor": "raw_rock",
-      "text": "In order to obtain a raw rock block without breaking it into smaller rocks, it needs to be $(thing)extracted$(). You must mine the blocks on all six sides of a raw rock block - once it is surrounded by air on all sides - it will pop off as a item which can be picked up.",
+      "text": "Para obtener un bloque de roca en bruto sin romperlo en rocas más pequeñas, es necesario $(thing)extraerlo$(). Debes minar los bloques de las seis caras de un bloque de roca en bruto; una vez que esté rodeado de aire por todos sus lados, se desprenderá como un objeto que podrás recoger.\n",
       "title": "Obteniendo Roca Natural"
     },
     {
       "type": "tfc:multimultiblock",
-      "text": "Mining all six sides of a piece of raw stone - once complete, the center block will pop off as an item.",
+      "text": "Extraer las seis caras de un bloque de piedra en bruto; una vez completado, el bloque central se desprenderá como un objeto.\n",
       "multiblocks": [
         {
           "pattern": [
@@ -214,12 +214,12 @@
     {
       "type": "patchouli:text",
       "anchor": "welding",
-      "text": "Welding is a process through which two items are fused together to create a new item. Welding works the same whether on a $(l:getting_started/primitive_anvils)stone anvil$() or a $(l:mechanics/anvils)metal anvil$().$(br2)First, you must place the two items you want to weld on the anvil. You can do this either by using the items on the anvil, or by opening the anvil interface and inserting them in the two leftmost slots.",
+      "text": "La soldadura es un proceso mediante el cual se fusionan dos objetos para crear uno nuevo. La soldadura funciona de la misma manera tanto en un $(l:getting_started/primitive_anvils)yunque de piedra$() como en un $(l:mechanics/anvils)yunque de metal$().$(br2)Primero, debes colocar en el yunque los dos objetos que quieres soldar. Puedes hacerlo usando los objetos sobre el yunque o abriendo la interfaz del yunque e introduciéndolos en las dos ranuras de la izquierda.\n",
       "title": "Soldando"
     },
     {
       "type": "patchouli:text",
-      "text": "You also need to have at least one $(l:mechanics/flux)flux$() in the anvil to aid the welding process. Then, while both items are $(l:mechanics/heating)hot enough$() to weld - the tooltip will say \"Can Weld\" - you must use any $(thing)hammer$() on the anvil or press the weld button on the anvil interface. You will hear a hammering sound and the items will be welded together."
+      "text": "También necesitas tener al menos un $(l:mechanics/flux)fundente$() en el yunque para facilitar el proceso de soldadura. Luego, cuando ambos objetos estén $(l:mechanics/heating)suficientemente calientes$() para soldarse —el tooltip mostrará «Se puede soldar»—, debes usar cualquier $(thing)martillo$() sobre el yunque o pulsar el botón de soldadura en la interfaz del yunque. Escucharás un sonido de martilleo y los objetos se soldarán.\n"
     }
   ],
   "read_by_default": true,

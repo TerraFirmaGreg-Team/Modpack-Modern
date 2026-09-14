@@ -1,5 +1,5 @@
 {
-    "name": "Martian Boats",
+    "name": "Botes marcianos",
     "category": "tfc:firmaciv",
     "icon": "beneath:wood/sapling/crimson",
     "flag": "mod:beneath",
@@ -8,15 +8,15 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "Way off on the far reaches of Mars, you can find both Crimson and Warped wood to create some rather flashy $(l:firmaciv/watercraft)Boats$()."
+            "text": "En la lejanía de los terrenos marcianos puedes encontrar madera carmín y deformada que te permitirán crear unos llamativos $(l:firmaciv/watercraft)barcos$()"
         },
         {
             "type": "patchouli:empty"
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Softwoods",
-            "text": "Softwoods have sufficiently soft enough pulp and bark that they're perfect for creating $(l:firmaciv/canoe)Dugout Canoes$()",
+            "title": "Maderas suaves",
+            "text": "Las maderas suaves tienen una pulpa y corteza lo suficientemente blanda para poder hacer $(l:firmaciv/canoe)Canoas$()",
             "item": "beneath:wood/stripped_log/crimson"
         },
         {

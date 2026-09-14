@@ -3179,6 +3179,9 @@
 	"tfg.machine.gas_well.output_full": "出力ハッチがいっぱい!",
 	"tfg.machine.gas_well.output_full.tooltip": "鉱脈が枯渇していない間、爆薬と水または蒸気は消費され続けます。",
 	"tfg.machine.gas_well.fluid.tooltip": "天然ガスのみを汲み上げられます。",
+	"tfg.machine.oxygen_distributor.active": "アクティブ",
+	"tfg.machine.oxygen_distributor.idle": "停止中",
+	"tfg.machine.oxygen_distributor.status.sealed": "密封",
 	"tfg.machine.pastoral_engine.animals_total": "領域内の動物: %s",
 	"tfg.machine.pastoral_engine.animals_ready": "採取可能: %s",
 	"tfg.machine.pastoral_engine.animals_old": "老いた動物: %s",
@@ -7948,8 +7951,5 @@
 	"quests.tfg_tips.tools_tips.swim_gear.title": "水泳用品",
 	"quests.tfg_tips.tools_tips.swim_gear.subtitle": "水着はありません",
 	"quests.tfg_tips.tools_tips.swim_gear.desc": "&6シュノーケル&rを装備すると、水中で息が続く時間が15秒延長されます。&a足ヒレ&rは泳ぐスピードを大きく向上させます。",
-	"quests.tfg_tips.tools_tips.cheese_rack.subtitle": "待て、これは樽じゃないぞ…",
-	"tfg.machine.oxygen_distributor.idle": "停止中",
-	"tfg.machine.oxygen_distributor.active": "アクティブ",
-	"tfg.machine.oxygen_distributor.status.sealed": "密封"
+	"quests.tfg_tips.tools_tips.cheese_rack.subtitle": "待て、これは樽じゃないぞ…"
 }

@@ -1739,6 +1739,8 @@
 	"tfg.machine.aux_echanger.output.title": "=== Ausgabe ===",
 	"tfg.multiblock.turbine.obstructed": "Deine Turbine ist blockiert, schau unter und in dem Kamin, dass er nicht blockiert ist",
 	"tfg.clientmessage.spatialioblocked.claimedchunks": "Spatial IO blockiert: Region beeinhaltet Chunks, die von einem anderen Team beansprucht sind",
+	"tfg.machine.oxygen_distributor.idle": "Inaktiv",
+	"tfg.machine.oxygen_distributor.status.sealed": "Sealed",
 	"key.categories.tfg": "TerraFirmaGreg",
 	"tfc.recipe.barrel.tfc.barrel.dye.black_wool": "Färben",
 	"tfc.recipe.barrel.tfc.barrel.dye.blue_wool": "Färben",
@@ -2218,7 +2220,5 @@
 	"quests.tfg_tips.bacon.title": "Schinken",
 	"quests.tfg_tips.composter.title": "Komposter",
 	"quests.tfg_tips.transportation_tips.rnr_plow.title": "Pflasterwagen",
-	"quests.tfg_tips.tools_tips.concrete_roads.title": "Betonstraßen",
-	"tfg.machine.oxygen_distributor.idle": "Inaktiv",
-	"tfg.machine.oxygen_distributor.status.sealed": "Sealed"
+	"quests.tfg_tips.tools_tips.concrete_roads.title": "Betonstraßen"
 }

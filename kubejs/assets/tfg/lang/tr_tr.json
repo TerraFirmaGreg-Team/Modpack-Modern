@@ -335,6 +335,8 @@
 	"trim_material.tfc.neutronium_tfc": "Nötronyum",
 	"trim_material.tfc.pyrite_tfc": "Pirit",
 	"trim_material.tfc.redx_tfc": "RedX",
+	"tfg.machine.oxygen_distributor.idle": "Boşta",
+	"tfg.machine.oxygen_distributor.status.sealed": "Sealed",
 	"tfg.food_recipe.brining": "Salamura Ediliyor",
 	"stackgroup.emixx.tfg_plates": "Levha",
 	"stackgroup.emixx.tfg_axes": "Baltalar",
@@ -460,6 +462,7 @@
 	"quests.computer.postbox.title": "Posta kutusu",
 	"quests.computer.packager.title": "Paketleyici",
 	"quests.computer.stock_ticker.title": "Stok sayacı",
+	"quests.computer.central_monitor.title": "Merkezî Monitör",
 	"quests.create_logistics.packager.title": "Paketleyici",
 	"quests.create_logistics.packager.subtitle": "Koy Pakete",
 	"quests.create_logistics.postbox.title": "Posta kutusu",
@@ -834,7 +837,5 @@
 	"quests.tfg_tips.remote_lens.title": "Uzaktan Kontrollü Lens",
 	"quests.tfg_tips.brine_something.title": "Salamura Ediliyor",
 	"quests.tfg_tips.composter.title": "Gübre Varili",
-	"quests.tfg_tips.tools_tips.concrete_roads.title": "Beton Yollar",
-	"tfg.machine.oxygen_distributor.idle": "Boşta",
-	"tfg.machine.oxygen_distributor.status.sealed": "Sealed"
+	"quests.tfg_tips.tools_tips.concrete_roads.title": "Beton Yollar"
 }

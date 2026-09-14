@@ -11,7 +11,7 @@
     {
       "type": "patchouli:crafting",
       "recipe": "sns:crafting/burlap_sack",
-      "text": "By default these can hold up to $(thing)Small$() Items"
+      "text": "Domyślnie może przechowywać maks. $(thing)małe$() przedmioty"
     }
   ],
   "read_by_default": true

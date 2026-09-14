@@ -2783,6 +2783,9 @@
 	"tfg.machine.gas_well.fluid_consumption": "Fluide : %s Eau ou %s Steam",
 	"tfg.machine.gas_well.next_explosive": "Prochain explosif dans : %s",
 	"tfg.machine.gas_well.vein_remaining": "Veine restante : %s",
+	"tfg.machine.oxygen_distributor.active": "Actif",
+	"tfg.machine.oxygen_distributor.idle": "Inactive",
+	"tfg.machine.oxygen_distributor.status.sealed": "Scellé",
 	"tfg.machine.pastoral_engine.animals_total": "Animaux dans la zone : %s",
 	"tfg.machine.pastoral_engine.animals_ready": "Prêt à récolter : %s",
 	"tfg.machine.pastoral_engine.animals_old": "Vieux animaux : %s",
@@ -6063,8 +6066,5 @@
 	"quests.tfg_tips.tools_tips.harvest_basket.title": "Harvest Baskets",
 	"quests.tfg_tips.tools_tips.harvest_basket.subtitle": "For competitive pie bakers.",
 	"quests.tfg_tips.tools_tips.harvest_basket.task": "Any #tfg:harvester",
-	"quests.tfg_tips.tools_tips.harvest_basket.desc": "&l&2Harvest Baskets&r&r are a new tool made just for &5TFG&r! These baskets can be used to harvest whole trees and bushes of fruit in one right-click! A regular &6Harvest Basket&r has a base durability of &n128&r. But an &3Aluminium Harvest Basket&r takes no damage on use.",
-	"tfg.machine.oxygen_distributor.idle": "Inactive",
-	"tfg.machine.oxygen_distributor.active": "Actif",
-	"tfg.machine.oxygen_distributor.status.sealed": "Scellé"
+	"quests.tfg_tips.tools_tips.harvest_basket.desc": "&l&2Harvest Baskets&r&r are a new tool made just for &5TFG&r! These baskets can be used to harvest whole trees and bushes of fruit in one right-click! A regular &6Harvest Basket&r has a base durability of &n128&r. But an &3Aluminium Harvest Basket&r takes no damage on use."
 }

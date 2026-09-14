@@ -11,7 +11,7 @@
     {
       "type": "patchouli:crafting",
       "recipe": "sns:crafting/frame_pack",
-      "text": "By default these can hold up to $(thing)Large$() Items"
+      "text": "Domyślnie może przechowywać maks. $(thing)duże$() przedmioty"
     }
   ],
   "read_by_default": true

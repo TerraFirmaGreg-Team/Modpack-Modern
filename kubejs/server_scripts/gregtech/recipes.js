@@ -503,5 +503,15 @@ const registerGTCEURecipes = (event) => {
 		.inputFluids(Fluid.of('gtceu:polyethylene', 288))
 		.itemOutputs(Item.of('gtceu:basic_data_access_hatch', 1))
 		.duration(20*10)
-		.EUt(GTValues.VA[GTValues.HV])
+		.EUt(GTValues.VA[GTValues.HV]);
+
+    // Make the laser hatches use lenses that can be easily automated
+
+    ['ev', 'iv', 'luv', 'zpm', 'uv', 'uhv'].forEach(tier => {
+        [256, 1024, 4096].forEach(amperage => {
+            ['source', 'output', 'target'].forEach(kind => {
+                event.replaceInput({ id: `gtceu:assembler/${tier}_${amperage}a_laser_${kind}_hatch` }, 'gtceu:diamond_lens', 'gtceu:glass_lens')
+            })
+        })
+    })
 }
