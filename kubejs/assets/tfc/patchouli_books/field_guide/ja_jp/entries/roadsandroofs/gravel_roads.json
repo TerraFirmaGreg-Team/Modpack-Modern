@@ -1,5 +1,5 @@
 {
-  "name": "Gravel and Macadam Roads",
+  "name": "砂利道とマカダム道",
   "category": "tfc:roadsandroofs",
   "icon": "rnr:rock/gravel_road/chert",
   "pages": [
@@ -8,11 +8,11 @@
       "anchor": "gravel_fill",
       "recipe": "rnr:crafting/gravel_fill/chert",
       "title": "ホギンミックス",
-      "text": "A small amount of gravel can be applied to a base course to produce a simple path that offers a modest 10% boost to walking speed. Additional gravel fill can be added and tamped with the mattock to create a Macadam road that gives a 20% speed boost."
+      "text": "路盤に少量の砂利を敷くだけで、歩行速度をわずか10％向上させるシンプルな小道を作ることができます。さらに砂利を補充し、マトックで突き固めれば、歩行速度を20％向上させるマカダム道を作ることができます。"
     },
     {
       "type": "patchouli:image",
-      "title": "Macadam Construction",
+      "title": "マカダムの構築方法",
       "images": [
         "rnr:textures/gui/book/macadam.png"
       ],

@@ -1,7 +1,10 @@
 {
   "component.gtceuterminal.component_type.computation_data_reception": "Számitási adatfogadó csatlakozó",
   "component.gtceuterminal.component_type.computation_data_transmission": "Számitási adatátviteli csatlakozó",
+  "component.gtceuterminal.component_type.data_access": "Adatelérési nyilás",
   "component.gtceuterminal.component_type.filter": "Szűrő",
+  "component.gtceuterminal.component_type.optical_data_reception": "Optikai adatfogadó csatlakozó",
+  "component.gtceuterminal.component_type.optical_data_transmission": "Optikai adatátviteli csatlakozó",
   "gui.gtceuterminal.material_list.source.none": "Nincs",
   "gui.gtceuterminal.theme_editor.preset.cyan": "Türkizkék",
   "gui.gtceuterminal.theme_editor.preset.orange": "Narancs"

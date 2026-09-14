@@ -1,11 +1,11 @@
 {
-  "name": "Firepit And Grill",
+  "name": "Гриль на костре",
   "category": "tfc:mechanics",
   "icon": "tfc:grill",
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "A $(thing)Grill$() is an item that can be added to a firepit to cook foods more efficiently. The grill is able to cook five items at once, and also gives these items the $(thing)Wood Grilled$() trait when cooking food, which provides a minor buff to the item's $(l:mechanics/decay)expiration date$(). In order to create a firepit with grill, first create a $(l:getting_started/firepit)Firepit$(), then use a $(thing)Wrought Iron Grill$() on the firepit."
+      "text": "$(thing)Гриль$() это предмет, который можно установить на костёр для более эффективной готовки еды. Гриль позволяет готовить до пяти предметов за раз и наделяет еду свойством $(thing)Жаренный на брёвнах$(), что немного продлевает их $(l:mechanics/decay)срок годности$(). Чтобы создать гриль на костре, сначала создай $(l:getting_started/firepit)Костёр$(), а затем кликни по нему $(thing)Грилем из кованого железа$()."
     },
     {
       "type": "patchouli:multiblock",
@@ -22,14 +22,14 @@
           "X": "tfc:grill"
         }
       },
-      "name": "A Firepit with Grill",
+      "name": "Костёр с грилем",
       "text": "",
       "enable_visualize": false
     },
     {
       "type": "tfc:anvil_recipe",
       "recipe": "tfc:anvil/wrought_iron_grill",
-      "text": "The grill is created by working a $(thing)Wrought Iron Double Sheet$() on an $(l:mechanics/anvils)Anvil$().$(br2)On the next page, you can see the grill interface. Like the firepit, it has four slots for fuel which must be added in the top slot, a temperature indicator, and five slots for heating items instead of one."
+      "text": "Гриль создаётся путём обработки $(thing)Двойного листа кованого железа$() на $(l:mechanics/anvils)Наковальне$().$(br2) На следующей странице показан интерфейс гриля. Как и у костра, здесь есть четыре слота для топлива, которое нужно помещать в верхний слот, индикатор температуры, а также пять слотов для нагрева предметов вместо одного."
     },
     {
       "type": "patchouli:image",

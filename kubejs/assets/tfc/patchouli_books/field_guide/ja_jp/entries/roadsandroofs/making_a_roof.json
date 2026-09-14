@@ -1,26 +1,26 @@
 {
-	"name": "Making a Roof",
+	"name": "屋根を作る",
 	"category": "tfc:roadsandroofs",
 	"icon": "rnr:terracotta_roof_stairs",
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Roof construction begins with a frame. Roof frame blocks can be crafted from lumber and sticks, and made into stair and slab variants. These blocks can be used to outline the shape of the roof."
+			"text": "屋根の建設は、骨組みから始まります。屋根のフレームブロックは、木材や棒を使ってクラフトでき、階段型やハーフブロック型のバリエーションに加工できます。まずはこれらのブロックを使って、屋根の形状の輪郭を作りましょう。"
 		},
 		{
 			"type": "patchouli:crafting",
 			"anchor": "roof_frame",
 			"recipe": "rnr:crafting/roof_framing",
-			"title": "Roof Frame",
-			"text": "Roof frames are the starting point for all roofs."
+			"title": "屋根のフレーム",
+			"text": "屋根のフレームは、すべての屋根の出発点です。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Once the roof frames are in place, they can be right clicked with any roofing material to create the corresponding roof. Types of roof include thatch, made by adding straw to a roof frame, but also terracotta tiles, wooden shingles, and more."
+			"text": "屋根のフレームを設置したら、任意の屋根材でそのフレームを右クリックすることで、対応する屋根を作成できます。屋根の種類には、屋根のフレームに藁を追加して作る茅葺き屋根のほか、テラコッタ瓦、木製屋根板などがあります。"
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Thatching a Roof",
+			"title": "屋根張り",
 			"images": [
 				"rnr:textures/gui/book/thatching.png"
 			],

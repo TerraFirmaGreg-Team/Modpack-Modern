@@ -5,23 +5,23 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "To make $(thing)Pizza$(), mix Dough, Salt, Basil Leaves, and 100 mB of oil in a $(l:firmalife/mixing_bowl)Mixing Bowl$(). Oil can be olive oil, or soybean oil (the product of soybean paste sealed in a barrel of water)."
+      "text": "Para fazer  $(thing)Pizza$(), misture Massa, Sal, Folhas de Manjericão e 100 mB de óleo em uma $(l:firmalife/mixing_bowl)Tigela de Mistura$(). O óleo pode ser azeite de oliva ou óleo de soja (obtido selando pasta de soja em um barril com água)."
     },
     {
       "type": "patchouli:crafting",
       "anchor": "shredded_cheese",
       "recipe": "firmalife:crafting/shredded_cheese",
-      "text": "You'll need some shredded cheese to start with."
+      "text": "Você vai precisar de queijo ralado para começar."
     },
     {
       "type": "patchouli:text",
       "anchor": "tomato_sauce",
-      "text": "To make $(thing)Tomato Sauce$(), boil a tomato, salt, garlic, and water all together in a pot. Alternatively, using a $(l:firmalife/oven_appliances#vat)Vat$(), boil the crafted version of those ingredients, also known as $(thing)Tomato Sauce Mix$()."
+      "text": "Para fazer $(thing)Molho de Tomate$(), ferva um tomate, sal, alho e água juntos em uma panela. Como alternativa, usando uma $(l:firmalife/oven_appliances#vat)Tina$(), ferva a versão combinada desses ingredientes, também conhecido como $(thing)Mistura para Molho de Tomate$()."
     },
     {
       "type": "patchouli:crafting",
       "recipe": "tfg:shapeless/raw_pizza_2",
-      "text": "Pizza is made from 1-3 of vegetables, cooked meats, or fruits, one shredded cheese, and one tomato sauce."
+      "text": "Pizza é feita de 1-3 ingredientes entre vegetais, carnes cozidas ou frutas, um queijo ralado e molho de tomate"
     }
   ],
   "read_by_default": true,

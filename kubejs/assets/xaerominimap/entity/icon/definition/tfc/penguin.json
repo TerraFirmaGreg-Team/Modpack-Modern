@@ -1,0 +1,7 @@
+{
+  "variants" : {
+    "default" : "outlined_sprite:tfc/penguin.png",
+    "tfc:textures/entity/animal/penguin.png" : "outlined_sprite:tfc/penguin.png",
+    "tfc:textures/entity/animal/penguin_young.png" : "outlined_sprite:tfc/penguin_young.png"
+  }
+}

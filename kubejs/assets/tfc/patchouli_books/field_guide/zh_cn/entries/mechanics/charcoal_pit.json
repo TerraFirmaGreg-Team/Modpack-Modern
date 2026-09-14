@@ -5,7 +5,7 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "搭建$(thing)木炭坑$()是一种烧制$(thing)木炭$()的方法。木炭坑是用$(thing)原木堆$()构成的。手持$(thing)原木$()时按住$(item)$(k:key.sneak)$()并按$(item)$(k:key.use)$()就能在地上放置一个原木堆。手持原木对准原木堆按$(item)$(k:key.use)$()，或直接打开原木堆界面就能放入更多原木。"
+      "text": "搭建$(thing)木炭坑$()是一种烧制$(thing)木炭$()的方法。木炭坑是用$(thing)原木堆$()构成的。手持$(thing)原木$()时按住$(item)$(k:key.sneak)$()并按$(item)$(k:key.use)$()就能在地上放置一个原木堆。手持原木对准原木堆按$(item)$(k:key.use)$()，或直接按$(item)$(k:key.use)$()打开原木堆界面就能放入更多原木。"
     },
     {
       "type": "patchouli:multiblock",

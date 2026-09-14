@@ -1,6 +1,7 @@
 {
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
+	disable_toast: true
 	filename: "queststfg"
 	group: "3C4612A920658A7E"
 	icon: "tfg:terra_firma_greg"

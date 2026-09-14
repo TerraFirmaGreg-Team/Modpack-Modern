@@ -8,6 +8,10 @@
 - Added the Higgs Emitter multiblock to replace Ad Astra's Gravity Normalizer with a significantly larger area of effect. @ashleney
 - Added the Heat Pump multiblock, when built into an outer wall it will regulate the temperature of a large room. @ashleney
 ### Changes
+- Added more mob icons to xaeros minimap (#4941) @Nezumi-Remis
+- Made it easier to find peat by giving it a unique grass texture (#4964) @applenper
+- Axes no longer veinmine manually placed logs @ashleney
+- Laser hatches now need a glass lens instead of a diamond lens @ashleney
 ### Bug fixes
 
 ## [0.13.10] - 05-09-2026
