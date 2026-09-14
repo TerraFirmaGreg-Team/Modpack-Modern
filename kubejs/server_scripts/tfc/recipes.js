@@ -410,7 +410,7 @@ const registerTFCRecipes = (event) => {
 		' B ',
 		' S '
 	], {
-		B:  TFC.fluidStackIngredient('gtceu:mercury', 576),
+		B: TFC.ingredient.fluid('gtceu:glass_vial', TFC.fluidStackIngredient('gtceu:mercury', 1000)),
 		S: '#forge:plates/brass'
 	}).id('tfg:shaped/thermometer')
 
