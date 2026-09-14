@@ -525,38 +525,45 @@ const registerGTCEURecipes = (event) => {
 		.tier(4)
 		.id('tfg:anvil/fluid_cell_steel')
 
-	event.shaped('gtceu:steel_fluid_cell', [
-		'AAC',
-		'BBD'
-	], {
-		A: '#forge:rings/bronze',
-		B: '#forge:double_plates/steel',
-		C: '#forge:tools/screwdrivers',
-		D: '#forge:screws/steel'
-	}).id('tfg:shaped/steel_fluid_cell')
+	event.recipes.create.sequenced_assembly('gtceu:steel_fluid_cell', 'gtceu:double_steel_plate', [
+		event.recipes.create.deploying('gtceu:double_steel_plate', ['gtceu:double_steel_plate', 'gtceu:double_steel_plate']),
+		event.recipes.create.deploying('gtceu:double_steel_plate', ['gtceu:double_steel_plate', '#tfg:any_bronze_ring']),
+		event.recipes.create.deploying('gtceu:double_steel_plate', ['gtceu:double_steel_plate', '#tfg:any_bronze_ring']),
+		event.recipes.greate.pressing('gtceu:double_steel_plate', 'gtceu:double_steel_plate')
+	]).transitionalItem('gtceu:double_steel_plate')
+	.loops(0)
+	.id('tfg:sequenced_assembly/steel_fluid_cell');
+
+	event.replaceInput({ id: 'gtceu:assembler/fluid_cell_large_steel' }, 'gtceu:bronze_ring', '2x #tfg:any_bronze_ring');
+	TFGHelpers.registerMaterialInfo('gtceu:steel_fluid_cell', [GTMaterials.Steel, 4])
 
 	// Change the liquid fuel jetpack from LV to ULV
-	event.shaped('gtceu:liquid_fuel_jetpack', [
+	event.remove({ id: 'gtceu:shaped/fluid_jetpack' })
+	event.remove({ id: 'gtceu:shapeless/fluid_jetpack_clear' })
+	event.shapeless('tfg:liquid_fuel_jetpack', 'gtceu:liquid_fuel_jetpack')
+	event.shapeless('tfg:liquid_fuel_jetpack', 'tfg:liquid_fuel_jetpack')
+
+	event.shaped('tfg:liquid_fuel_jetpack', [
 		'ABC',
 		'DED',
 		'FGF'
 	], {
 		A: '#forge:tools/wire_cutters',
-		B: 'create:electron_tube',
+		B: 'mts:mtsofficialpack.sparkplug',
 		C: '#forge:tools/wrenches',
 		D: 'gtceu:steel_fluid_cell',
 		E: 'gtceu:lv_electric_pump',
 		F: '#forge:rotors/lead',
 		G: '#forge:small_fluid_pipes/potin'
-	}).id('gtceu:shaped/fluid_jetpack')
+	}).id('tfg:shaped/fluid_jetpack')
 
-	event.shaped('gtceu:liquid_fuel_jetpack', [
+	event.shaped('tfg:liquid_fuel_jetpack', [
 		'ABC',
 		'DED',
 		'FGF'
 	], {
 		A: '#forge:tools/wire_cutters',
-		B: 'create:electron_tube',
+		B: 'mts:mtsofficialpack.sparkplug',
 		C: '#forge:tools/wrenches',
 		D: 'gtceu:steel_fluid_cell',
 		E: 'greate:steel_mechanical_pump',

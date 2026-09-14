@@ -19,7 +19,8 @@ global.GTCEU_HIDED_ITEMS = /** @type {const} */ ([
 	"gtceu:creative_computation_provider",
 	"gtceu:creative_tank",
 	"gtceu:creative_chest",
-	"gtceu:creative_data_access_hatch"
+	"gtceu:creative_data_access_hatch",
+	'gtceu:fluid_fuel_jetpack'
 ]);
 //#endregion
 
