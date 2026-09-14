@@ -1045,4 +1045,17 @@ const registerMinecraftRecipes = (event) => {
 		.itemOutputs('minecraft:furnace_minecart')
 		.duration(100)
 		.EUt(4)
+
+	event.shaped('minecraft:clock', [
+		' A ',
+		' BD',
+		' C '
+	], {
+		A: '#forge:plates/brass',
+		B: '#forge:small_gears/brass',
+		C: 'minecraft:redstone',
+		D: '#forge:tools/wrenches'
+	}).id('tfc:crafting/vanilla/clock')
+
+	TFGHelpers.registerMaterialInfo('minecraft:clock', [GTMaterials.Brass, 2, GTMaterials.Redstone, 1])
 }

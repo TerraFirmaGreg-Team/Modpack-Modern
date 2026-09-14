@@ -504,4 +504,13 @@ const registerGTCEURecipes = (event) => {
 		.itemOutputs(Item.of('gtceu:basic_data_access_hatch', 1))
 		.duration(20*10)
 		.EUt(GTValues.VA[GTValues.HV])
+
+	event.recipes.tfc.glassworking(
+		'4x gtceu:glass_vial',
+		'#tfc:glass_batches_tier_3',
+		[
+			'stretch',
+			'stretch',
+			'blow'
+		]).id('tfg:glassworking/glass_vial')
 }
