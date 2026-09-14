@@ -17,6 +17,7 @@
 - Changed the recipe for blue alloy desh foil again @Pyritie
 - Fixed jerboas, mongeese, and lemmings sometimes spawning outside of their correct climate (#4929) @Pyritie
 - Added some more gem plates to gregtech filter crafting recipes @Pyritie
+- Made signs and doors stack to 16 @ashleney
 ### Bug fixes
 - Fixed some worldgen crashes (#4905, #4900) @Pyritie
 - Fix to repair scrambled pack order at level data which was affecting a few random world-related things such as not being able to collect glass with a gem saw (#4152) @ariedotme
