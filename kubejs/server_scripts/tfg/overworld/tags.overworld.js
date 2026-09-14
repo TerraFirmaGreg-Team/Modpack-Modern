@@ -631,12 +631,13 @@ function registerTFGOverworldEntityTypeTags(event) {
 	event.add('tfc:land_prey', 'tfg:jerboa')
 	event.add('tfc:land_prey', 'tfg:lemming')
 	event.add('tfc:land_prey', 'tfg:mongoose')
-	event.add('tfc:pests', 'tfg:jerboa')
-	event.add('tfc:pests', 'tfg:lemming')
-	event.add('tfc:pests', 'tfg:mongoose')
+	event.add('tfg:tiny_animals', 'tfc:rat')
+	event.add('tfg:tiny_animals', 'tfg:jerboa')
+	event.add('tfg:tiny_animals', 'tfg:lemming')
+	event.add('tfg:tiny_animals', 'tfg:mongoose')
 
 	event.add('tfg:not_rammed_by_rammers', '#tfc:bubble_column_immune')
-	event.add('tfg:not_rammed_by_rammers', '#tfc:pests')
+	event.add('tfg:not_rammed_by_rammers', '#tfg:tiny_animals')
 	event.add('tfg:not_rammed_by_rammers', 'tfc:frog')
 
 	event.add('tfg:ramming_animals', 'tfc:boar')
