@@ -634,7 +634,6 @@ const registerGTCEURecipes = (event) => {
             })
         })
     })
-		.EUt(GTValues.VA[GTValues.HV])
 
 	event.recipes.tfc.glassworking(
 		'4x gtceu:glass_vial',
