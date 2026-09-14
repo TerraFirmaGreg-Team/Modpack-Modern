@@ -137,7 +137,7 @@
     {
       "type": "tfc:knapping_recipe",
       "recipe": "tfc:clay_knapping/shovel_head_mold",
-      "text": "A $(thing)Shovel$() for all your digging purposes."
+      "text": "$(thing)Łopata$() do wszelkich prac ziemnych."
     }
   ],
   "read_by_default": true,

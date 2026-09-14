@@ -2541,6 +2541,9 @@
 	"trim_material.tfc.redx_tfc": "紅石X",
 	"emi.category.tfg.artisan_table": "工匠桌",
 	"tfg.nuclear.skip": "§8按住SHIFT顯示修復詳情",
+	"tfg.machine.oxygen_distributor.idle": "閒置",
+	"tfg.machine.oxygen_distributor.status": "狀態：",
+	"tfg.machine.oxygen_distributor.status.sealed": "密封",
 	"key.categories.tfg": "群巒格雷",
 	"tfg.food_recipe.brining": "鹽浸",
 	"tfg.food_recipe.smoking": "熏製中",
@@ -3182,8 +3185,5 @@
 	"quests.tfg_tips.transportation_tips.rnr_plow.title": "鋪路車",
 	"quests.tfg_tips.transportation_tips.rnr_plow.subtitle": "羅馬人感到自豪",
 	"quests.tfg_tips.transportation_tips.rnr_plow.desc": "道路如此美妙！但難免疲於反覆右鍵鋪路。與其幫馬匹鋪路，不如&3讓馬為你舖路&r！\n&d鋪路車&r是由&cAstikor Cart&r專為群巒傳說開發而來，鋪路車可以自動鋪設&c道路與屋頂的道路(RnR roads)&可支援調整路寬，更甚至是隨機建造模式。",
-	"quests.tfg_tips.tools_tips.concrete_roads.title": "混凝土道路",
-	"tfg.machine.oxygen_distributor.idle": "閒置",
-	"tfg.machine.oxygen_distributor.status.sealed": "密封",
-	"tfg.machine.oxygen_distributor.status": "狀態："
+	"quests.tfg_tips.tools_tips.concrete_roads.title": "混凝土道路"
 }

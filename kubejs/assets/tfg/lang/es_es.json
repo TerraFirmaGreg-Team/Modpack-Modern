@@ -447,6 +447,8 @@
 	"trim_material.tfc.neutronium_tfc": "Neutronio",
 	"trim_material.tfc.pyrite_tfc": "Pirita",
 	"trim_material.tfc.redx_tfc": "RedX",
+	"tfg.machine.oxygen_distributor.idle": "Inactivo",
+	"tfg.machine.oxygen_distributor.status.sealed": "Sealed",
 	"tfg.food_recipe.brining": "Brining",
 	"gtceu.food_oven": "Horno Alimenticio",
 	"gtceu.food_processor": "Procesador Alimenticio",
@@ -751,7 +753,5 @@
 	"quests.tfg_tips.conductor_whistle.title": "Silbato de maquinista",
 	"quests.tfg_tips.brine_something.title": "Brining",
 	"quests.tfg_tips.composter.title": "Compostador",
-	"quests.tfg_tips.tools_tips.harvest_basket.title": "Cestas de cosecha",
-	"tfg.machine.oxygen_distributor.idle": "Inactivo",
-	"tfg.machine.oxygen_distributor.status.sealed": "Sealed"
+	"quests.tfg_tips.tools_tips.harvest_basket.title": "Cestas de cosecha"
 }

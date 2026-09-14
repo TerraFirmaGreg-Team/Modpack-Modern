@@ -1,0 +1,7 @@
+{
+  "variants" : {
+    "default" : "outlined_sprite:tfc/rat.png",
+    "tfc:textures/entity/animal/rat.png" : "outlined_sprite:tfc/rat.png",
+    "tfc:textures/entity/animal/rat_young.png" : "outlined_sprite:tfc/rat_young.png"
+  }
+}

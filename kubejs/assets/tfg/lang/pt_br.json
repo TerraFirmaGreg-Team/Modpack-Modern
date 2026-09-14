@@ -1340,6 +1340,8 @@
 	"tfg.toast.ore_prospector_message": "Minérios encontrados dentro de %s §6blocos nessa direção: %s",
 	"tfg.hangglider.disabled_dimension": "Você não pode usar uma asa delta aqui!",
 	"tfg.clientmessage.nether_contraption_created": "§cAs Profundezas são §~quentes!§c Mecanismos com Brocas Mecânicas não vão minerar abaixo de Y=%s.",
+	"tfg.machine.oxygen_distributor.idle": "Ocioso",
+	"tfg.machine.oxygen_distributor.status.sealed": "Selado",
 	"tfg.machine.ore_processing_beneath.gas_critical": "Nível Crítico de Gás Natural: %s%%",
 	"tfg.machine.ore_processing_beneath.gas_level": "Gás Natural: %s%%",
 	"tfg.machine.ore_processing_beneath.output_modifier": "Eficiência de saída: %s%%",
@@ -3271,7 +3273,5 @@
 	"quests.tfg_tips.tools_tips.brick_roads.desc": "Esses materiais — quando aplicados sobre a camada base — formam estradas que concedem um aumento de &b&l20%%&r&r na velocidade de caminhada.",
 	"quests.tfg_tips.tools_tips.concrete_roads.title": "Estradas de Concreto",
 	"quests.tfg_tips.tools_tips.concrete_roads.subtitle": "Quase vale todo o esforço.",
-	"quests.tfg_tips.tools_tips.concrete_roads.desc": "&6Mistura de concreto úmida&r pode ser aplicada sobre a camada base para criar estradas que proporcionam um bônus de &b&l30%%&r&r na velocidade de movimentação.\n\n&4Cuidado&r ao criar estradas de concreto. Há muitas regras a seguir para garantir que você não acabe com superfícies rachadas ou arruinadas. Consulte o &3Guia de Campo&r para instruções detalhadas.",
-	"tfg.machine.oxygen_distributor.idle": "Ocioso",
-	"tfg.machine.oxygen_distributor.status.sealed": "Selado"
+	"quests.tfg_tips.tools_tips.concrete_roads.desc": "&6Mistura de concreto úmida&r pode ser aplicada sobre a camada base para criar estradas que proporcionam um bônus de &b&l30%%&r&r na velocidade de movimentação.\n\n&4Cuidado&r ao criar estradas de concreto. Há muitas regras a seguir para garantir que você não acabe com superfícies rachadas ou arruinadas. Consulte o &3Guia de Campo&r para instruções detalhadas."
 }
