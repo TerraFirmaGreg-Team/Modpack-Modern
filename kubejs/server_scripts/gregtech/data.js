@@ -138,6 +138,7 @@ const registerGTCEUMetals = (event) => {
 	event.metal('gtceu:cobalt', 1495, 0.00857, '#forge:ingots/cobalt', '#forge:double_ingots/cobalt', '#forge:plates/cobalt', 3, 'tfg:cobalt')
 	event.metal('gtceu:cobalt_brass', 1060, 0.00857, '#forge:ingots/cobalt_brass', '#forge:double_ingots/cobalt_brass', '#forge:plates/cobalt_brass', 3, 'tfg:cobalt_brass')
 	event.metal('gtceu:aluminium_silicate', 1540, 0.00857, '#forge:ingots/aluminium_silicate', null, null, 3, 'tfg:aluminium_silicate')
+	event.metal('gtceu:mercury', -38, 0.02143, null, null, null, 0, 'tfg:mercury')
 }
 
 function registerGTCEUBedrockFluidVeins(event) {
