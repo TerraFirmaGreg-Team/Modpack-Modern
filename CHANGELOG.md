@@ -29,6 +29,11 @@
 - Reactor heat level is now saved when the block is broken
 - Redstone ports better remember their level when the chunk is unloaded
 - Fixed metrics incorrectly tracking incomplete multiblocks
+#### Create: Fluid Logistics
+- Separated fluid gauges out from factory gauges. Existing gauges will automatically convert
+- Added Fluid Inventory Access Port
+- Removed waterproof cardboard
+- More bugfixes
 
 ## [0.13.10] - 05-09-2026
 ### Breaking Changes
