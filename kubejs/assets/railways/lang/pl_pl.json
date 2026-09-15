@@ -149,6 +149,8 @@
 	"block.railways.chartreuse_wrapped_locometal_smokebox": "Żółto-zielona lokometalowa dymnica pokryta mosiądzem",
 	"block.railways.conductor_whistle": "Gwizdek konduktora",
 	"block.railways.conductor_whistle.tooltip": "GWIZDEK KONDUKTORA",
+	"block.railways.conductor_whistle.tooltip.behaviour1": "_Łączy_ gwizdek do _konduktora_ i jego _pociągu_.",
+	"block.railways.conductor_whistle.tooltip.behaviour4": "_Odrzuca_ automatyczny harmonogram _powiązanego pociągu_.",
 	"block.railways.conductor_whistle.tooltip.condition1": "Kliknij PPM na konduktora jeżdżącego pociągiem",
 	"block.railways.conductor_whistle.tooltip.condition2": "Kliknij PPM na tor lub stację",
 	"block.railways.conductor_whistle.tooltip.condition3": "Użycie przez aplikator na stacji",

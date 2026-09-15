@@ -14,6 +14,7 @@
   "filter.ftbfiltersystem.nbt.name": "NBT",
   "filter.ftbfiltersystem.not.name": "Nie",
   "filter.ftbfiltersystem.only_one.name": "Tylko jeden z",
+  "filter.ftbfiltersystem.only_one.tooltip": "Filtr złożony: ten filtr pasuje, jeśli dokładnie JEDEN filtr podrzędny pasuje.",
   "filter.ftbfiltersystem.or.name": "Dowolny z",
   "filter.ftbfiltersystem.or.tooltip": "Filtr złożony: ten filtr pasuje, jeśli DOWOLNY filtr podrzędny pasuje.",
   "filter.ftbfiltersystem.root.name": "Wszystkie z (Root)",
@@ -46,5 +47,6 @@
   "ftbfiltersystem.message.not_matched": "Filtr nie pasuje: %s",
   "ftbfiltersystem.message.parse_failed": "Nie udało się przetworzyć filtra: %s",
   "item.ftbfiltersystem.smart_filter": "Inteligentny filtr",
-  "item.ftbfiltersystem.smart_filter.tooltip.1": "Kliknij PPM: skonfiguruj filtr"
+  "item.ftbfiltersystem.smart_filter.tooltip.1": "Kliknij PPM: skonfiguruj filtr",
+  "item.ftbfiltersystem.smart_filter.tooltip.2": "Kucnięcie + PPM: Przetestuj filtr z przedmiotem w dłoni"
 }

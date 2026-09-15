@@ -5,6 +5,8 @@
   "component.gtceuterminal.component_type.filter": "Szűrő",
   "component.gtceuterminal.component_type.optical_data_reception": "Optikai adatfogadó csatlakozó",
   "component.gtceuterminal.component_type.optical_data_transmission": "Optikai adatátviteli csatlakozó",
+  "component.gtceuterminal.component_type.steam_input_bus": "Gőzgép tárgyadagoló",
+  "component.gtceuterminal.component_type.steam_output_bus": "Gőzgép tárgyaürítő",
   "gui.gtceuterminal.material_list.source.none": "Nincs",
   "gui.gtceuterminal.theme_editor.preset.cyan": "Türkizkék",
   "gui.gtceuterminal.theme_editor.preset.orange": "Narancs"

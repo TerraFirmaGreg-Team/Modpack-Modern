@@ -704,6 +704,7 @@
 	"tag.minecraft.turtle_food": "Jedzenie dla żółwi",
 	"tag.minecraft.wolf_food": "Jedzenie dla wilków",
 	"tooltip.emi.accepts": "Akceptuje:",
+	"tooltip.emi.bom.batch_size": "Rozmiar wsadu: %s\nPrzewiń, aby dostosować\nPrzytrzymaj §6[shift]§r, aby dostosować o 16",
 	"tooltip.emi.bom.batch_size.ideal": "Naciśnij %s, by zminimalizować pozostałości",
 	"tooltip.emi.bom.mode.view": "§6Przeglądanie§r drzewa przepisu",
 	"tooltip.emi.chance.consume": "Szansa na zużycie: %s%%",

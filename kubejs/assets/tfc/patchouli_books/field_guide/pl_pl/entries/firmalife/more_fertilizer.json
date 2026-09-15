@@ -10,7 +10,7 @@
     {
       "type": "tfc:drying_recipe",
       "recipe": "firmalife:drying/dry_grass",
-      "text": "Thatch can be $(l:firmalife/drying)Dried$() into $(thing)Dry Grass$(), which can be used in a Composter as a brown item."
+      "text": "Strzechę można $(l:firmalife/drying)wysuszyć$() na $(thing)wysuszoną trawę$(), którą można użyć w kompostowniku jako brązowinę."
     },
     {
       "type": "patchouli:text",
