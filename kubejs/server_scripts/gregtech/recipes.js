@@ -435,7 +435,7 @@ const registerGTCEURecipes = (event) => {
 		.duration(20*20)
 		.EUt(GTValues.VA[GTValues.MV])
 
-	// Change Sterling Silver Turbine Rotor to be craftable at MV
+	// Change Rene-41 Rotor to be craftable at MV
 
 	// modifyRecipe doesn't work for turbine blades
 	event.recipes.gtceu.assembler('tfg:assemble_rene_41_turbine_blade')
