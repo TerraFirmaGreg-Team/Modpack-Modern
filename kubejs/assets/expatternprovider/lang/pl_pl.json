@@ -78,6 +78,7 @@
 	"gui.expatternprovider.pattern_modifier.blank": "Puste wzorce",
 	"gui.expatternprovider.pattern_modifier.change": "Zmień tryb",
 	"gui.expatternprovider.pattern_modifier.clear": "Wyczyść",
+	"gui.expatternprovider.pattern_modifier.clear.desc": "Wyczyść zawartość wszystkich wzorców, zamieniając je w puste wzorce",
 	"gui.expatternprovider.pattern_modifier.clone": "Tryb klonowania",
 	"gui.expatternprovider.pattern_modifier.clone.desc": "Klonuj wzorzec docelowy",
 	"gui.expatternprovider.pattern_modifier.div.desc": "Podziel wartość wejścia i wyjścia przez %s",
