@@ -18,7 +18,7 @@
       "type": "patchouli:spotlight",
       "item": "minecraft:bone_meal",
       "link_recipes": false,
-      "text": "Bonemeal is made of crushed bones. $(br)$(li)$(6)Phosphorous: 10$()"
+      "text": "Mączka kostna jest wykonany z pokruszonych kości. $(br)$(li)$(6)Fosfor: 10$()"
     },
     {
       "type": "patchouli:spotlight",
@@ -42,7 +42,7 @@
       "type": "patchouli:spotlight",
       "item": "tfc:powder/sylvite",
       "link_recipes": false,
-      "text": "Sylvite is made from its ore. $(br)$(li)$(d)Potassium: 50$()"
+      "text": "Sylwin jest wykonany z rudy. $(br)$(li)$(d)Potas: 50$()"
     }
   ],
   "read_by_default": true

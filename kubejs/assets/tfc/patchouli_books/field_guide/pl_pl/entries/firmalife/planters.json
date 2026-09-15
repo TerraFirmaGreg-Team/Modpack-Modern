@@ -52,7 +52,7 @@
     {
       "type": "patchouli:crafting",
       "recipe": "firmalife:crafting/trellis_planter",
-      "text": "$(thing)Trellis Planters$() grow berry bushes. Berries can be picked with $(item)$(k:key.use)$()."
+      "text": "$(thing)Doniczki z kratką$() uprawiają krzewy owocowe. Jagody można zbierać za pomocą $(item)$(k:key.use)$()."
     },
     {
       "type": "patchouli:text",

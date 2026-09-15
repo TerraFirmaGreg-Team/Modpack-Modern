@@ -21,7 +21,7 @@
       "images": [
         "tfc:textures/gui/book/tutorial/sluice_cross.png"
       ],
-      "text": "A sluice with the correct water setup.",
+      "text": "Prawidłowo ustawiona płuczka.",
       "border": true
     },
     {
@@ -33,7 +33,7 @@
       "images": [
         "tfc:textures/gui/book/tutorial/sluice_in_use.png"
       ],
-      "text": "A working sluice with items inside of it.",
+      "text": "Pracująca płuczka z przedmiotami w środku.",
       "border": true
     },
     {

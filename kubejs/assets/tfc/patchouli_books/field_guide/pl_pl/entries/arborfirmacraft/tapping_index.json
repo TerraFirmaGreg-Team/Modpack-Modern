@@ -57,7 +57,7 @@
 			"images": [
 				"tfg:textures/gui/field_guide/tapping_index/hevea_tree.png"
 			],
-			"text": "$(thing)Produces$(): Latex$(br)$(thing)Processes Into$(): Sticky Resin & Rubber",
+			"text": "$(thing)Produkuje$(): Lateks$(br)$(thing)Można przetworzyć na$(): Lepka żywica i guma",
 			"border": true
 		},
 		{
@@ -89,7 +89,7 @@
 			"images": [
 				"tfg:textures/gui/field_guide/tapping_index/kapok_tree.png"
 			],
-			"text": "$(thing)Produces$(): Latex$(br)$(thing)Processes Into$(): Sticky Resin & Rubber",
+			"text": "$(thing)Produkuje$(): Lateks$(br)$(thing)Można przetworzyć na$(): Lepka żywica i guma",
 			"border": true
 		},
 		{
@@ -105,7 +105,7 @@
 			"images": [
 				"tfg:textures/gui/field_guide/tapping_index/aspen_tree.png"
 			],
-			"text": "$(thing)Produces$(): Conifer Pitch$(br)$(thing)Processes Into$(): Sticky Resin & Conifer Rosin",
+			"text": "$(thing)Produkuje$(): Pak drzewny$(br)$(thing)Można przetworzyć na$(): lepka żywica i kalafonia",
 			"border": true
 		},
 		{
@@ -121,7 +121,7 @@
 			"images": [
 				"tfg:textures/gui/field_guide/tapping_index/spruce_tree.png"
 			],
-			"text": "$(thing)Produces$(): Conifer Pitch$(br)$(thing)Processes Into$(): Sticky Resin & Conifer Rosin",
+			"text": "$(thing)Produkuje$(): Pak drzewny$(br)$(thing)Można przetworzyć na$(): lepka żywica i kalafonia",
 			"border": true
 		},
 		{
@@ -137,7 +137,7 @@
 			"images": [
 				"tfg:textures/gui/field_guide/tapping_index/white_cedar_tree.png"
 			],
-			"text": "$(thing)Produces$(): Conifer Pitch$(br)$(thing)Processes Into$(): Sticky Resin & Conifer Rosin",
+			"text": "$(thing)Produkuje$(): Pak drzewny$(br)$(thing)Można przetworzyć na$(): lepka żywica i kalafonia",
 			"border": true
 		},
 		{
@@ -153,7 +153,7 @@
 			"images": [
 				"tfg:textures/gui/field_guide/tapping_index/douglas_fir_tree.png"
 			],
-			"text": "$(thing)Produces$(): Conifer Pitch$(br)$(thing)Processes Into$(): Sticky Resin & Conifer Rosin",
+			"text": "$(thing)Produkuje$(): Pak drzewny$(br)$(thing)Można przetworzyć na$(): lepka żywica i kalafonia",
 			"border": true
 		}
 	]
