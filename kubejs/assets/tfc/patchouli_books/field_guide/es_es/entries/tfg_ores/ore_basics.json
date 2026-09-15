@@ -8,7 +8,7 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "You will need a $(thing)pickaxe$() or $(thing)mining hammer$() to mine ores.$(br2)A regular $(thing)hammer$() can also break stone type blocks quickly, but will not result in dropped ores. It can still be useful for $(l:getting_started/primitive_anvils#raw_rock)extracting$() stone blocks however."
+            "text": "Necesitarás un $(thing)pico$() o un $(thing)martillo de minería$() para extraer minerales.$(br2)Un $(thing)martillo$() normal también puede romper rápidamente los bloques de piedra, pero no hará que los minerales sean soltados. Aun así, puede ser útil para $(l:getting_started/primitive_anvils#raw_rock)extraer$() bloques de piedra.\n"
         },
         {
             "type": "patchouli:crafting",
@@ -18,7 +18,7 @@
         {
             "type": "patchouli:spotlight",
             "title": "Pico",
-            "text": "Breaking an ore block with a pickaxe will yield $(thing)raw ores$() (poor, normal, or rich), as well as some stone dust. These are not worth much mB each and you will need multiple to make a single ingot, however some other minerals are only useable in this state, such as $(thing)coal$().",
+            "text": "Romper un bloque de mineral con un pico producirá $(thing)minerales en bruto$() (pobres, normales o ricos), además de algo de polvo de piedra. Estos no tienen mucho valor en mB cada uno y necesitarás varios para fabricar un solo lingote; sin embargo, algunos otros minerales solo se pueden utilizar en este estado, como el $(thing)carbón$().\n",
             "item": {
                 "tag": "minecraft:pickaxes"
             }
@@ -26,7 +26,7 @@
         {
             "type": "patchouli:spotlight",
             "title": "Martillo de minería",
-            "text": "These are basically a pickaxe with a 3x3 range, and will yield $(thing)raw ores$() as well. Also good for quarrying stone!$(br2)Holding $(thing)sneak$() will only break a single block at a time.",
+            "text": "Básicamente, son un pico con un alcance de 3x3 y también permiten obtener $(thing)minerales en bruto$(). ¡También son excelentes para extraer grandes cantidades de piedra!$(br2)Mantener $(thing)agacharse$() permitirá romper solo un bloque a la vez.\n",
             "item": {
                 "tag": "forge:tools/mining_hammers"
             }
@@ -36,13 +36,13 @@
             "title": "Procesamiento de mineral básico",
             "anchor": "processing",
             "item": "gtceu:crushed_copper_ore",
-            "text": "Processing ores will result in much greater amounts of usable metal. The first step is to use a $(l:mechanics/quern)Quern$() to crush the raw ore. This step can be automated in the future with improved machines such as the $(thing)Millstone$(), $(thing)Crushing Wheel$(), $(thing)Macerator$(), and $(thing)Forge Hammer$()."
+            "text": "Procesar los minerales permitirá obtener una cantidad mucho mayor de metal utilizable. El primer paso es utilizar una $(l:mechanics/quern)muela$() para triturar el mineral en bruto. Este proceso podrá automatizarse más adelante con máquinas mejoradas, como la $(thing)muela de molino$(), la $(thing)rueda trituradora$(), el $(thing)macerador$() y el $(thing)martillo de forja$().\n"
         },
         {
             "type": "patchouli:crafting",
-            "title": "Purifying dust",
+            "title": "Purificando polvo",
             "recipe": "gtceu:shapeless/crushed_ore_to_dust_copper",
-            "text": "To make your crushed ores melt into even more mB, first place them in a crafting grid along with a $(thing)Hammer$(). This will produce $(thing)Impure Dust$(). To purify the dust, throw it in water or $(item)$(k:key.use)$() a $(thing)Cauldron$() filled with water."
+            "text": "Para que tus minerales triturados se fundan en una cantidad aún mayor de mB, primero colócalos en una cuadrícula de fabricación junto con un $(thing)martillo$(). Esto producirá $(thing)polvo impuro$(). Para purificar el polvo, échalo al agua o $(item)$(k:key.use)$() usa un $(thing)caldero$() lleno de agua.\n"
         }
     ]
 }

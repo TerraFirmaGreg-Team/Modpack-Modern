@@ -399,6 +399,15 @@
 	"material.gtceu.caesium_137": "Cesio-137",
 	"material.tfg.weak_red_steel": "Acero Rojo Débil Fundido",
 	"material.tfg.weak_blue_steel": "Acero Azul Débil Fundido",
+	"metal.tfg.redstone": "Redstone",
+	"metal.tfg.red_alloy": "Aleación Roja",
+	"metal.tfg.tin_alloy": "Aleación de estaño",
+	"metal.tfg.lead": "Plomo",
+	"metal.tfg.invar": "Invar",
+	"metal.tfg.potin": "Potín",
+	"metal.tfg.cobalt": "Cobalto",
+	"metal.tfg.cobalt_brass": "Latón de cobalto",
+	"metal.tfg.aluminium_silicate": "Silicato de Aluminio",
 	"tfg.ore_vein.high_bismuth_mountain": "Bismuto fundido",
 	"tfg.ore_vein.beneath_coal_lignite": "Lignito",
 	"trim_material.tfc.almandine_tfc": "Almadina",
@@ -447,6 +456,8 @@
 	"trim_material.tfc.neutronium_tfc": "Neutronio",
 	"trim_material.tfc.pyrite_tfc": "Pirita",
 	"trim_material.tfc.redx_tfc": "RedX",
+	"tfg.machine.oxygen_distributor.idle": "Inactivo",
+	"tfg.machine.oxygen_distributor.status.sealed": "Sealed",
 	"tfg.food_recipe.brining": "Brining",
 	"gtceu.food_oven": "Horno Alimenticio",
 	"gtceu.food_processor": "Procesador Alimenticio",
@@ -751,7 +762,5 @@
 	"quests.tfg_tips.conductor_whistle.title": "Silbato de maquinista",
 	"quests.tfg_tips.brine_something.title": "Brining",
 	"quests.tfg_tips.composter.title": "Compostador",
-	"quests.tfg_tips.tools_tips.harvest_basket.title": "Cestas de cosecha",
-	"tfg.machine.oxygen_distributor.idle": "Inactivo",
-	"tfg.machine.oxygen_distributor.status.sealed": "Sealed"
+	"quests.tfg_tips.tools_tips.harvest_basket.title": "Cestas de cosecha"
 }

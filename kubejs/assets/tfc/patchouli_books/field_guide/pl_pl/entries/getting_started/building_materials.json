@@ -117,7 +117,7 @@
             "images": [
                 "tfc:textures/gui/book/tutorial/wattle_weave.png"
             ],
-            "text": "Four sticks are required to $(thing)weave$() wattle.",
+            "text": "Do $(thing)zaplatania$() szachulca potrzebne są cztery patyki.",
             "border": true
         },
         {
@@ -129,7 +129,7 @@
             "images": [
                 "tfc:textures/gui/book/tutorial/wattle_add_stick.png"
             ],
-            "text": "Dodawanie patyków do plecionki.",
+            "text": "Dodawanie patyków do szachulca.",
             "border": true
         },
         {

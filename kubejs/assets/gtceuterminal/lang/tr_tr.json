@@ -1,5 +1,10 @@
 {
+  "component.gtceuterminal.component_type.computation_data_reception": "Hesaplama Verileri Alım Bölmesi ",
+  "component.gtceuterminal.component_type.computation_data_transmission": "Hesaplama Verileri Aktarım Bölmesi",
+  "component.gtceuterminal.component_type.data_access": "Veri Erişim Haznesi",
   "component.gtceuterminal.component_type.filter": "Filtre",
+  "component.gtceuterminal.component_type.optical_data_reception": "Optik Veri Alım Haznesi",
+  "component.gtceuterminal.component_type.optical_data_transmission": "Optik Veri Aktarım Haznesi",
   "component.gtceuterminal.component_type.steam_input_bus": "Buhar Eşya Girişi",
   "gui.gtceuterminal.autocraft.ingredients_total": "Malzemeler",
   "gui.gtceuterminal.coil_tier.naquadah": "O.H.M(Olmayan Harikamsı Maden)",
