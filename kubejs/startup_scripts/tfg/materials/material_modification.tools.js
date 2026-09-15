@@ -320,6 +320,7 @@ function registerTFGToolMaterialModification(event) {
 	// Remove all the Turbine Rotors we don't want anymore
 	const noRotorMaterials = [
 		GTMaterials.Bronze,
+		GTMaterials.SterlingSilver,
 		GTMaterials.BlackBronze,
 		GTMaterials.CobaltBrass,
 		GTMaterials.Manganese,
