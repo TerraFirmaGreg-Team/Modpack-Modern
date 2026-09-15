@@ -22,7 +22,21 @@
 			"sophisticatedbackpacks:infinity_upgrade",
 			"sophisticatedbackpacks:survival_infinity_upgrade",
 			"sophisticatedbackpacks:alchemy_upgrade",
-			"sophisticatedbackpacks:advanced_alchemy_upgrade"
+			"sophisticatedbackpacks:advanced_alchemy_upgrade",
+			"sophisticatedbackpacks:mob_catcher_upgrade",
+			"sophisticatedbackpacks:advanced_mob_catcher_upgrade",
+			"sophisticatedbackpacks:stack_upgrade_starter_tier_to_tier_1_conversion",
+			"sophisticatedbackpacks:stack_upgrade_starter_tier_to_tier_2_conversion",
+			"sophisticatedbackpacks:stack_upgrade_starter_tier_to_tier_3_conversion",
+			"sophisticatedbackpacks:stack_upgrade_starter_tier_to_tier_4_conversion",
+			"sophisticatedbackpacks:stack_upgrade_tier_1_to_tier_2_conversion",
+			"sophisticatedbackpacks:stack_upgrade_tier_1_to_tier_3_conversion",
+			"sophisticatedbackpacks:stack_upgrade_tier_1_to_tier_4_conversion",
+			"sophisticatedbackpacks:stack_upgrade_tier_2_to_tier_3_conversion",
+			"sophisticatedbackpacks:stack_upgrade_tier_2_to_tier_4_conversion",
+			"sophisticatedbackpacks:stack_upgrade_tier_3_to_tier_4_conversion",
+			"sophisticatedcore:xp_bucket",
+			"sophisticatedcore:ender_linker"
 		]
 	}
 ]

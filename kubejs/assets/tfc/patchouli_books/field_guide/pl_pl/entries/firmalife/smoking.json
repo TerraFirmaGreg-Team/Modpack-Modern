@@ -27,7 +27,7 @@
         }
       },
       "name": "Wędzenie",
-      "text": "A piece of string above a firepit.",
+      "text": "Kawałek nici nad ogniskiem.",
       "enable_visualize": false
     },
     {
@@ -40,7 +40,7 @@
     },
     {
       "type": "patchouli:text",
-      "text": "The smoking process takes 8 in-game hours. Happy smoking!"
+      "text": "Proces wędzenia zajmuje 8 godzin w grze. Szczęśliwego wędzenia!"
     }
   ],
   "read_by_default": true,

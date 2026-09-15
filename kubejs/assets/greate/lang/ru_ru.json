@@ -11,9 +11,13 @@
 	"block.greate.aluminium_millstone": "Жёрнов (Алюминий)",
 	"block.greate.aluminium_shaft": "Вал (Алюминий)",
 	"block.greate.andesite_alloy_cogwheel": "Шестерня",
+	"block.greate.andesite_alloy_crushing_wheel": "Дробильное колесо",
 	"block.greate.andesite_alloy_crushing_wheel_controller": "Контроллер дробильного колеса",
+	"block.greate.andesite_alloy_encased_fan": "Вентилятор в корпусе",
 	"block.greate.andesite_alloy_gearbox": "Коробка передач",
+	"block.greate.andesite_alloy_mechanical_mixer": "Механический смешиватель",
 	"block.greate.andesite_alloy_mechanical_press": "Механический пресс",
+	"block.greate.andesite_alloy_mechanical_pump": "Механическая помпа",
 	"block.greate.andesite_alloy_mechanical_saw": "Механическая пила",
 	"block.greate.andesite_alloy_millstone": "Жёрнов",
 	"block.greate.andesite_alloy_shaft": "Вал",
@@ -294,6 +298,8 @@
 	"greate.tooltip.circuit_number": "Номер схемы",
 	"greate.tooltip.max_capacity": "Максимальная кинетическая ёмкость: ",
 	"greate.tooltip.networkStatistics": "Статистика сети: ",
+	"greate.tooltip.pump_pressure": "Давление помпы: ",
+	"greate.tooltip.pump_transfer": "Перекачка ",
 	"gtceu.wire_coating": "Изоляция проводов",
 	"item.greate.aluminium_vertical_gearbox": "Вертикальная коробка передач (Алюминий)",
 	"item.greate.andesite_alloy_belt_connector": "Ремень (Дерево)",
@@ -312,7 +318,5 @@
 	"material.greate.rose_quartz": "Розовый кварц",
 	"material.greate.shadow_steel": "Теневая сталь",
 	"tagprefix.alloy": "%s (Сплав)",
-	"tagprefix.whisk": "Венчик (%s)",
-	"greate.tooltip.pump_pressure": "Давление помпы: ",
-	"greate.tooltip.pump_transfer": "Перекачка "
+	"tagprefix.whisk": "Венчик (%s)"
 }

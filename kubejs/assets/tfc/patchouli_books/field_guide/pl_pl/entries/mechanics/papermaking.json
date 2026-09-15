@@ -136,7 +136,7 @@
       {
         "type": "tfc:anvil_recipe",
         "recipe": "tfg:anvil/soaked_unrefined_paper",
-        "text": "You can utilize an $(l:mechanics/anvils)Anvil$() to beat down the pulp into a sheet"
+        "text": "Możesz użyć $(l:mechanics/anvils)kowadła$(), aby zbić pulpę w arkusz"
       },
       {
         "type": "patchouli:spotlight",

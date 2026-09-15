@@ -51,14 +51,14 @@
 			"entity": "jellies:spring",
 			"scale": 1,
 			"name": "Źródlany żelek",
-			"text": "$(thing)Spring$() jellies spawn in Beneath's geothermal spring biome. They produce $(thing)Spring Slime Balls$()."
+			"text": "$(thing)Źródlane$() żelki pojawiają się w źródłach geotermalnych Głębin. Produkują $(thing)źródlane kule szlamu$()."
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "jellies:plant",
 			"scale": 1,
 			"name": "Żelek roślinny",
-			"text": "$(thing)Plant$() jellies spawn in Beneath's muggy bog and thorny brambles biomes. They produce $(thing)Plant Slime Balls$()."
+			"text": "$(thing)Roślinne$() żelki pojawiają się w dusznym bagnie i cierniowym gaju w Głębinach. Produkują $(thing)roślinne kule szlamu$()."
 		},
 		{
 			"type": "patchouli:entity",
@@ -72,7 +72,7 @@
 			"entity": "jellies:biotite",
 			"scale": 1,
 			"name": "Biotytowy żelek",
-			"text": "$(thing)Biotite$() jellies spawn at the bottom of the Beneath. They produce $(thing)Biotite Slime Balls$()."
+			"text": "$(thing)Biotytowe$() żelki pojawiają się na dnie Głębin. Produkują $(thing)biotytowe kule szlamu$()."
 		},
 		{
 			"type": "patchouli:entity",
@@ -100,7 +100,7 @@
 			"entity": "jellies:certus",
 			"scale": 1,
 			"name": "Certusowy żelek",
-			"text": "$(thing)Certus$() jellies spawn in Moon's asurine biomes. They produce $(thing)Large Certus Quartz Buds$()."
+			"text": "$(thing)Certusowe$() żelki pojawiają się na azurynowych biomach Księżyca. Produkują $(thing)duże zarodki certusowego kwarcu$()."
 		},
 		{
 			"type": "patchouli:entity",

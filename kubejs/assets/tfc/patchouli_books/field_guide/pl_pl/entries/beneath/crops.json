@@ -39,14 +39,14 @@
         }
       },
       "name": "Błyszczyk",
-      "text": "The Gleamflower (Flame) can be grown as a crop, and also found in the world as a plant. It is useful as an infinite light source.",
+      "text": "Błyszczyk (Płomienie) można uprawiać jako roślinę uprawną, a także znaleźć w świecie jako roślinę. Przydaje się jako nieskończone źródło światła.",
       "enable_visualize": false
     },
     {
       "type": "patchouli:spotlight",
       "item": "beneath:ghost_pepper",
       "link_recipes": false,
-      "text": "Ghost Peppers (Sorrow) are an edible vegetable that can be grown in the Beneath!"
+      "text": "Naga Jolokia (Smutek) to jadalne warzywo, które może być uprawiane w Głębinach!"
     }
   ],
   "read_by_default": true

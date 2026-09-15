@@ -220,6 +220,15 @@
 	"material.gtceu.rocket_alloy_t2": "ASM 4914 티타늄 로켓 합금",
 	"material.tfg.weak_red_steel": "녹은 약한 적강",
 	"material.tfg.weak_blue_steel": "녹은 약한 청강",
+	"metal.tfg.redstone": "레드스톤",
+	"metal.tfg.red_alloy": "레드 합금",
+	"metal.tfg.tin_alloy": "주석 합금",
+	"metal.tfg.lead": "리드",
+	"metal.tfg.invar": "인바르",
+	"metal.tfg.potin": "포탱",
+	"metal.tfg.cobalt": "코발트",
+	"metal.tfg.cobalt_brass": "코발트 황동",
+	"metal.tfg.aluminium_silicate": "알류니늄 실리케이트",
 	"tfg.ore_vein.high_bismuth_mountain": "녹은 비스무트",
 	"tfg.ore_vein.beneath_coal_lignite": "갈탄",
 	"trim_material.tfc.cinnabar_tfc": "진사",
@@ -237,6 +246,8 @@
 	"trim_material.tfc.nickel_tfc": "녹은 니켈",
 	"trim_material.tfc.bismuth_tfc": "녹은 비스무트",
 	"trim_material.tfc.pyrite_tfc": "황철석",
+	"tfg.machine.oxygen_distributor.idle": "멈춤",
+	"tfg.machine.oxygen_distributor.status.sealed": "밀봉된",
 	"tfg.food_recipe.brining": "소금물절임 중",
 	"tfg.food_recipe.smoking": "훈연",
 	"tfg.food_recipe.drying": "건조",
@@ -324,7 +335,5 @@
 	"quests.tfg_tips.oven.title": "오븐",
 	"quests.tfg_tips.brine_something.title": "소금물절임 중",
 	"quests.tfg_tips.bacon.title": "베이컨",
-	"quests.tfg_tips.composter.title": "퇴비통",
-	"tfg.machine.oxygen_distributor.idle": "멈춤",
-	"tfg.machine.oxygen_distributor.status.sealed": "밀봉된"
+	"quests.tfg_tips.composter.title": "퇴비통"
 }

@@ -898,7 +898,7 @@
       "type": "patchouli:spotlight",
       "anchor": "sylvite",
       "item": "tfc:ore/sylvite",
-      "title": "Сильвит",
+      "title": "Сильвин",
       "link_recipes": false,
       "text": "Сильвит - это $(thing)минерал$(), который может быть измельчен в $(l:mechanics/quern)жернове$(), а затем использован как $(l:mechanics/fertilizers)удобрение$(). Его можно найти в очень больших плоских месторождениях у поверхности в $(thing)сланце$(), $(thing)аргиллите$() и $(thing)кремнистом сланце$()."
     },
@@ -918,7 +918,7 @@
         }
       },
       "name": "",
-      "text": "Сильвит в кремнистом сланце.",
+      "text": "Сильвин в кремнистом сланце.",
       "enable_visualize": false
     },
     {

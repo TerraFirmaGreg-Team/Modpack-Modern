@@ -1,6 +1,8 @@
 {
 	"attack.death.createaddition.barbed_wire": "%1$s próbował przekroczyć drut kolczasty",
 	"attack.death.createaddition.barbed_wire.player": "%1$s próbował przekroczyć drut kolczasty, walcząc z %2$s",
+	"attack.death.createaddition.tesla_coil": "%1$s otrzymał śmiertelne porażenie prądem",
+	"attack.death.createaddition.tesla_coil.player": "%1$s otrzymał śmiertelne porażenie prądem, walcząc z %2$s",
 	"block.createaddition.accumulator": "Akumulator",
 	"block.createaddition.accumulator.tooltip": "AKUMULATOR",
 	"block.createaddition.accumulator.tooltip.behaviour1": "Dostarcza _⚡_ do _przewodów_ podłączonych do _łącznika_ oznaczonego strzałką skierowaną w górę.",

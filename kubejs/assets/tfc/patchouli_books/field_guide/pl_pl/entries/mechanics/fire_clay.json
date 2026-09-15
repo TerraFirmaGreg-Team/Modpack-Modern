@@ -27,7 +27,7 @@
       "type": "tfc:knapping_recipe",
       "anchor": "fire_bricks",
       "recipe": "tfc:fire_clay_knapping/brick",
-      "text": "The $(l:mechanics/blast_furnace)Blast Furnace$() only accepts fire bricks as insulation."
+      "text": "$(l:mechanics/blast_furnace)Piec hutniczy$() akceptuje tylko cegły ogniotrwałe jako izolację."
     },
     {
       "type": "tfc:knapping_recipe",
