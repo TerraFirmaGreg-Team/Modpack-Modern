@@ -30,13 +30,13 @@
 			"type": "patchouli:spotlight",
 			"title": "Baobab",
 			"item": "tag:afc:baobab_logs",
-			"text": "$(bold)Baobab$()$(br)$(thing)Rainfall$(): 30 — 190mm$(br)$(thing)Temperature$(): 15.3 — 26.2°C"
+			"text": "$(bold)Baobab$()$(br)$(thing)Opady$(): 30 — 190mm$(br)$(thing)Temperatura$(): 15.3 — 26.2°C"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"title": "Brzoza",
 			"item": "tag:tfc:birch_logs",
-			"text": "$(bold)Birch$()$(br)$(thing)Rainfall$(): 125 — 310mm$(br)$(thing)Temperature$(): -13.9 — 2.5°C"
+			"text": "$(bold)Brzoza$()$(br)$(thing)Opady$(): 125 — 310mm$(br)$(thing)Temperatura$(): -13.9 — 2.5°C"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -88,7 +88,7 @@
 			"type": "patchouli:spotlight",
 			"title": "Kauczukowiec",
 			"item": "tag:afc:hevea_logs",
-			"text": "$(bold)Hevea$()$(br)$(thing)Rainfall$(): 390 — 500mm$(br)$(thing)Temperature$(): 17.1 — 26.2°C"
+			"text": "$(bold)Kauczukowiec$()$(br)$(thing)Opady$(): 390 — 500mm$(br)$(thing)Temperatura$(): 17.1 — 26.2°C"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -100,7 +100,7 @@
 			"type": "patchouli:spotlight",
 			"title": "Ipe",
 			"item": "tag:afc:ipe_logs",
-			"text": "$(bold)Yellow Ipe$()$(br)$(thing)Rainfall$(): 340 — 500mm$(br)$(thing)Temperature$(): 11.6 — 20.7°C"
+			"text": "$(bold)Żółte ipe$()$(br)$(thing)Opady$(): 340 — 500mm$(br)$(thing)Temperatura$(): 11.6 — 20.7°C"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -124,7 +124,7 @@
 			"type": "patchouli:spotlight",
 			"title": "Namorzyny",
 			"item": "tag:tfc:mangrove_logs",
-			"text": "$(bold)Mangrove$()$(br)$(thing)Rainfall$(): 220mm+$(br)$(thing)Temperature$(): 18.0°C+$(br)Note: only spawns in Salt Marsh biomes"
+			"text": "$(bold)Namorzyny$()$(br)$(thing)Opady$(): 220mm+$(br)$(thing)Temperatura$(): 18.0°C+$(br)Uwaga: pojawiają się tylko na słonych bagnach"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -152,7 +152,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(bold)Tamarack$()$(br)$(thing)Rainfall$(): 150 — 500mm$(br)$(thing)Temperature$(): -17.5 — -1.1°C"
+			"text": "$(bold)Modrzew amerykański$()$(br)$(thing)Opady$(): 150 — 500mm$(br)$(thing)Temperatura$(): -17.5 — -1.1°C"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -174,7 +174,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(bold)Black Spruce$()$(br)$(thing)Rainfall$(): 220 — 360mm$(br)$(thing)Temperature$(): -17.5 — -1.1°C"
+			"text": "$(bold)Świerk czarny$()$(br)$(thing)Opady$(): 220 — 360mm$(br)$(thing)Temperatura$(): -17.5 — -1.1°C"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -192,7 +192,7 @@
 			"type": "patchouli:spotlight",
 			"title": "Tualang",
 			"item": "tag:afc:tualang_logs",
-			"text": "$(bold)Tualang$()$(br)$(thing)Rainfall$(): 360 — 500mm$(br)$(thing)Temperature$(): 20.7 — 40.0°C"
+			"text": "$(bold)Tualang$()$(br)$(thing)Opady$(): 360 — 500mm$(br)$(thing)Temperatura$(): 20.7 — 40.0°C"
 		},
 		{
 			"type": "patchouli:spotlight",

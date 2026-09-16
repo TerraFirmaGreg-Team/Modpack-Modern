@@ -77,7 +77,7 @@
     },
     {
       "type": "patchouli:image",
-      "text": "Hold the vessel and $(item)$(k:key.use)$() to open the $(thing)Casting$() interface.",
+      "text": "Przytrzymaj naczynie i $(item)$(k:key.use)$(), aby otworzyć interfejs $(thing)odlewania$().",
       "images": [
         "tfc:textures/gui/book/gui/casting.png"
       ],

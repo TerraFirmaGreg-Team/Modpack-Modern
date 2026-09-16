@@ -43,7 +43,7 @@
     },
     {
       "type": "patchouli:text",
-      "text": "The list of sacrifices is detailed in the $(l:beneath/list_of_sacrifices)List of Sacrifices$() chapter for easy reading."
+      "text": "Lista ofiar jest opisana w rozdziale $(l:beneath/list_of_sacrifices)lista ofiar$() w celu łatwego czytania."
     }
   ],
   "read_by_default": true
