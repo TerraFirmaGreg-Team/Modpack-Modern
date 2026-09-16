@@ -33,7 +33,7 @@
     {
       "type": "tfc:sealed_barrel_recipe",
       "recipe": "tfcchannelcasting:barrel/fill_with_whiskey",
-      "text": "Eating chocolates filled with $(thing)Whiskey$() gives haste."
+      "text": "Jedzenie czekoladek wypełnionych $(thing)whisky$() daje pośpiech."
     }
   ],
   "read_by_default": true

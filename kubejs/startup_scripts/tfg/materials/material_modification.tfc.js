@@ -75,4 +75,5 @@ function registerTFCMaterialModification(event) {
 	GTMaterials.Lapis.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1540, 1540, 1540, AlSi, 1, 10))
 	GTMaterials.Lazurite.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1540, 1540, 1540, AlSi, 1, 10))
 	GTMaterials.Sodalite.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1540, 1540, 1540, AlSi, 1, 10))
+	GTMaterials.Cinnabar.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(344, 344, 344, GTMaterials.Mercury, 0, 100))
 }

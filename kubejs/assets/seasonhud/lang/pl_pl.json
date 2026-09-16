@@ -93,6 +93,7 @@
 	"menu.seasonhud.season.hudLocation.button": "Lokalizacja HUD",
 	"menu.seasonhud.season.hudLocation.tooltip": "Gdzie wyświetlić HUD, gdy nie zainstalowano minimapy",
 	"menu.seasonhud.season.needCalendar.button": "Potrzebuje przedmiotu kalendarza",
+	"menu.seasonhud.season.needCalendar.tooltip": "Wymagaj, aby przedmiot kalendarza znajdował się w ekwipunku gracza, by pokazać interfejs",
 	"menu.seasonhud.season.scale.slider": "Skala: ",
 	"menu.seasonhud.season.serverSide.tooltip": "Ta opcja jest kontrolowana przez serwer",
 	"menu.seasonhud.season.showDay.button": "Pokaż wartość dnia",
