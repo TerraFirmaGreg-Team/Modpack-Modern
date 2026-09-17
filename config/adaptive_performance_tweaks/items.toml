@@ -5,10 +5,10 @@
 	optimizeItems = true
 	#Defines the max. number of items / item stacks per type which are allowed to lay around in the world.
 	#Range: 16 ~ 128
-	maxNumberOfItemsPerType = 64
+	maxNumberOfItemsPerType = 128
 	#Defines the max. number of items / item stacks which are allowed to lay around in a single world.
 	#Range: 16 ~ 1000
-	maxNumberOfItems = 128
+	maxNumberOfItems = 1000
 	#Defines the radius in blocks which items / item stacks will be clustered together.
 	#Range: 1 ~ 16
 	itemsClusterRange = 4
