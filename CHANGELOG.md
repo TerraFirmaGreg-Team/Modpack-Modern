@@ -23,6 +23,9 @@
 - Fixed some worldgen crashes (#4905, #4900) @Pyritie
 - Fix to repair scrambled pack order at level data which was affecting a few random world-related things such as not being able to collect glass with a gem saw (#4152) @ariedotme
 - Fixed being able to recraft your space suit to repair it instead of just emptying it (#4930) @Pyritie
+- Snow can't accumulate in the Bloomery anormore @NeonNoise
+- Fix TMRV crashing when existing right after world join @Redeix
+- Building Gadget and Spatial IO issues with FTBChunks compatibilities @ashleney
 ### Mods
 #### TerraFirmaCraft
 - Has been forked! This shouldn't affect you at all, but it ensures long-term stability for the future development of the modpack. Please read [here](https://www.reddit.com/r/TerraFirmaGreg/comments/1wbv1o3/the_future_of_terrafirmacraft_in_tfg/) for more information.
