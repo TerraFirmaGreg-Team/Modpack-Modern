@@ -25,7 +25,8 @@
 - Fixed being able to recraft your space suit to repair it instead of just emptying it (#4930) @Pyritie
 - Snow can't accumulate in the Bloomery anormore @NeonNoise
 - Fix TMRV crashing when existing right after world join @Redeix
-- Building Gadget and Spatial IO issues with FTBChunks compatibilities @ashleney
+- Building gadgets now respect ftbchunk claims so they can't be used in order to grief @ashleney
+- The Spatial IO Port now works in claimed chunks even if the server thinks it was not placed by a player @ashleney
 ### Mods
 #### TerraFirmaCraft
 - Has been forked! This shouldn't affect you at all, but it ensures long-term stability for the future development of the modpack. Please read [here](https://www.reddit.com/r/TerraFirmaGreg/comments/1wbv1o3/the_future_of_terrafirmacraft_in_tfg/) for more information.
