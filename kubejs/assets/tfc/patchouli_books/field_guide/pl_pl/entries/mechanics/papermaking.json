@@ -15,7 +15,7 @@
       {
         "type": "tfc:sealed_barrel_recipe",
         "recipe": "tfc:barrel/soaked_papyrus_strip",
-        "text": "Then, papyrus strips are soaked in a $(l:mechanics/barrels)Barrel$() of $(thing)Water$()."
+        "text": "Następnie paski papirusu muszą być nasączone w $(l:mechanics/beczki)beczce$() z $(thing)wodą$()."
       },
       {
         "type": "tfc:loom_recipe",
