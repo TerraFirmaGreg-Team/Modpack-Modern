@@ -33,6 +33,7 @@
   "gui.xaero_box_map_switching": "Opcje zmiany mapy",
   "gui.xaero_box_minimap_radar": "%s Radar bytów minimapy jest wyświetlany (wymaga Xaero's Minimap)",
   "gui.xaero_box_no_minimap_radar": "%s Radar bytów minimapy nie jest wyświetlany",
+  "gui.xaero_box_not_closing_menu_when_hopping": "Nie zamykaj menu podczas przeskakiwania do punktu (klikając LPM w menu)",
   "gui.xaero_box_not_rendering_waypoints": "%s Bez renderowania punktów nawigacyjnych",
   "gui.xaero_box_open_players": "Menu śledzonych graczy",
   "gui.xaero_box_open_settings": "§2%s§r Otwórz ustawienia",
@@ -122,7 +123,9 @@
   "gui.xaero_pac_forceload_chunks": "Wymuś ładowanie dla zaznaczonych",
   "gui.xaero_pac_unclaim_chunks": "Zwolnij wybrane",
   "gui.xaero_pac_unforceload_chunks": "Usuń ładowanie dla zaznaczonych",
+  "gui.xaero_png_result_bad_fbo": "Eksport nie powiódł się, ponieważ mod nie mógł utworzyć bufora ramki OpenGL.",
   "gui.xaero_png_result_empty": "Eksportowany obszar jest pusty!",
+  "gui.xaero_png_result_image_too_big": "Rozmiar obrazu przekracza limit możliwy do zapisania w obiekcie BufferedImage!",
   "gui.xaero_png_result_not_prepared": "Nie można jeszcze wyeksportować! Mapa świata nie została jeszcze przygotowana.",
   "gui.xaero_png_result_out_of_memory": "Eksport nie powiódł się z powodu braku pamięci w stercie Java! Spróbuj ponownie lub przydziel więcej pamięci.",
   "gui.xaero_png_result_success": "Pomyślnie wyeksportowano mapę!",
@@ -233,6 +236,7 @@
   "gui.xaero_wm_red": "Czerwony",
   "gui.xaero_wm_reset_config_profile_default": "Zresetuj ustawienia profilu",
   "gui.xaero_wm_reset_config_profile_default_message": "Czy na pewno chcesz przywrócić domyślne wartości w profilu konfiguracji?",
+  "gui.xaero_wm_reset_config_profile_default_message2": "Tej akcji nie można cofnąć! Opcje niezwiązane z profilem nie zostaną zmienione",
   "gui.xaero_wm_reset_defaults": "Przywróć ustawienia domyślne",
   "gui.xaero_wm_reset_message": "Czy na pewno chcesz przywrócić ustawienia domyślne?",
   "gui.xaero_wm_reset_message2": "Tej akcji nie da się cofnąć!",
@@ -274,5 +278,6 @@
   "gui.xaero_zoom_buttons": "Przyciski powiększenia",
   "gui_xaero_wm_dropdown_dimension_select": "Wybór wymiaru",
   "gui_xaero_wm_dropdown_map_select": "Wybór mapy",
-  "gui.xaero_pac_interrupt_claiming": "Przerwij akcje zajęcia"
+  "gui.xaero_pac_interrupt_claiming": "Przerwij akcje zajęcia",
+  "gui.xaero_pac_requested_large_claim": "Rozpoczęto zajmowanie dużego obszaru... Użyj opcji %1$s dostępnej pod PPM, aby anulować."
 }

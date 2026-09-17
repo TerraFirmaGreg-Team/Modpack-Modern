@@ -110,6 +110,7 @@
   "tfcgenviewer.rock_editor.error.layer_already_exists": "Warstwa '%s' już istnieje",
   "tfcgenviewer.rock_editor.error.layer_already_has": "%s posiada już wartość o nazwie '%s'",
   "tfcgenviewer.rock_editor.error.layer_definition_cycle": "Cykl napotkany między definicjami warstwy:\n%s",
+  "tfcgenviewer.rock_editor.error.no_bottom_rocks": "Musisz mieć co najmniej jedną dolną skałę",
   "tfcgenviewer.rock_editor.error.no_land_layer_definitions": "Musisz mieć co najmniej jedną definicję warstwy lądowej",
   "tfcgenviewer.rock_editor.error.no_layer_definitions": "Musisz mieć co najmniej jedną istniejącą definicję warstwy",
   "tfcgenviewer.rock_editor.error.no_ocean_layer_definitions": "Musisz mieć co najmniej jedną definicję warstwy oceanicznej",
