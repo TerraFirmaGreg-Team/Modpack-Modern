@@ -30,7 +30,7 @@
       "images": [
         "tfc:textures/gui/book/tutorial/quern_add_item.png"
       ],
-      "text": "Use $(item)$(k:key.use)$() on the top of the handstone to add items.",
+      "text": "Użyj $(item)$(k:key.use)$() na wierzchu rozcieracza, aby dodać przedmioty.",
       "border": true
     },
     {

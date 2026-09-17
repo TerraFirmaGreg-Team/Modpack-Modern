@@ -276,14 +276,14 @@
 			"entity": "tfc:cod",
 			"scale": 0.7,
 			"name": "Dorsz",
-			"text": "Cod prefer colder oceans, $(l:the_world/climate#temperature)temperature$() at most 18°C. They can be fished."
+			"text": "Dorsz preferuje zimniejsze oceany, gdzie $(l:the_world/climate#temperature)temperatura$() jest co najwyżej 18°C. Można go złowić."
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "tfc:pufferfish",
 			"scale": 0.7,
 			"name": "Rozdymka",
-			"text": "Pufferfish live in any ocean with at least a $(l:the_world/climate#temperature)temperature$() of 10°C."
+			"text": "Rozdymki żyją w oceanach, gdzie $(l:the_world/climate#temperature)temperatura$() jest co najmniej 10°C."
 		},
 		{
 			"type": "patchouli:entity",
@@ -298,7 +298,7 @@
 			"entity": "tfc:tropical_fish",
 			"scale": 0.7,
 			"name": "Ryba tropikalna",
-			"text": "Tropical fish prefer warmer oceans, with a $(l:the_world/climate#temperature)temperature$() of at least 18°C."
+			"text": "Tropikalne ryby wolą cieplejsze oceany, gdzie $(l:the_world/climate#temperature)temperatura$() jest co najmniej 18°C."
 		},
 		{
 			"type": "patchouli:entity",
@@ -330,7 +330,7 @@
 			"entity": "tfc:isopod",
 			"scale": 0.7,
 			"name": "Równonóg",
-			"text": "Isopods spawn in deeper sections of oceans of $(l:the_world/climate#temperature)temperature$() at most 14°C."
+			"text": "Równonogi pojawiają się w głębszych regionach oceanów, gdzie $(l:the_world/climate#temperature)temperatura$() jest co najwyżej 14°C."
 		},
 		{
 			"type": "patchouli:entity",

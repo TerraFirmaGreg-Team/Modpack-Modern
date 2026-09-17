@@ -12,7 +12,7 @@
 			"images": [
 				"tfg:textures/gui/field_guide/jellies.png"
 			],
-			"text": "$(thing)Jellies$() are hermaphroditic and can reproduce with any other $(thing)jellie$()!",
+			"text": "$(thing)Żelki$() są hermafrodytami i mogą się rozmnażać z jakimkolwiek innym $(thing)żelkiem$()!",
 			"border": true
 		},
 		{
@@ -44,7 +44,7 @@
 			"entity": "jellies:rock",
 			"scale": 1,
 			"name": "Żelek kamienny",
-			"text": "$(thing)Rock$() jellies rarely spawn on Earth in caves of mountainous biomes. Currently, they do nothing."
+			"text": "$(thing)Kamienne$() żelki rzadko pojawiają się na Ziemi w jaskiniach biomów górskich. Obecnie nic nie robią."
 		},
 		{
 			"type": "patchouli:entity",
@@ -65,7 +65,7 @@
 			"entity": "jellies:glowberry",
 			"scale": 1,
 			"name": "Świecąco-jagodowy żelek",
-			"text": "$(thing)Glowberry$() jellies spawn in Beneath's lush hollow biome. They produce $(thing)Glowberry Slime Balls$()."
+			"text": "$(thing)Świecąco-jagodowe$() żelki pojawiają się w bujnych jaskiniach Głębin. Produkują $(thing)świecąco-jagodowe kule szlamu$()."
 		},
 		{
 			"type": "patchouli:entity",
@@ -79,7 +79,7 @@
 			"entity": "jellies:ice",
 			"scale": 1,
 			"name": "Żelek lodowy",
-			"text": "$(thing)Ice$() jellies spawn in Beneath's salt caves. They passively reduce player's temperature by 10°C."
+			"text": "$(thing)Lodowe$() żelki pojawiają się w jaskiniach solnych Głębin. Biernie obniżają temperaturę gracza o 10°C."
 		},
 		{
 			"type": "patchouli:entity",
