@@ -22,7 +22,7 @@
   "block.comforts.hammock_red": "Czerwona tkanina hamaka",
   "block.comforts.hammock_white": "Biała tkanina hamaka",
   "block.comforts.hammock_yellow": "Żółta tkanina hamaka",
-  "block.comforts.no_sleep": "To dekoracja — nie możesz tu spać",
+  "block.comforts.no_sleep": "To dekoracja, nie możesz tu spać",
   "block.comforts.rope_and_nail": "Lina i gwóźdź",
   "block.comforts.sleeping_bag.broke": "Śpiwór się popsuł!",
   "block.comforts.sleeping_bag.occupied": "Ten śpiwór jest już zajęty",
@@ -68,7 +68,7 @@
   "gui.comforts.config.sleepingBagsStopPhantoms.description": "Jeśli opcja jest włączona, próba spania w śpiworze powstrzymuje pojawianie się fantomów.",
   "gui.comforts.config.sleepingBagsStopPhantoms.name": "Śpiwory powstrzymują fantomy",
   "item.comforts.hammock.placement.tooltip": "Wymaga %s, by położyć.",
-  "item.comforts.rope_and_nail.placement.tooltip": "Używanie do powieszenia hamaka.",
+  "item.comforts.rope_and_nail.placement.tooltip": "Używane do powieszenia hamaka.",
   "item.comforts.sleeping_bag.auto_use.tooltip": "Automatycznie próbuje spać.\nŻeby położyć śpiwór, użyj skradając się.",
   "itemGroup.comforts": "Comforts",
   "itemGroup.comforts.general": "Comforts"
