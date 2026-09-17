@@ -884,7 +884,7 @@ const registerAE2Recipes = (event) => {
 		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144))
 		.itemOutputs('8x ae2:formation_core')
 		.duration(20*600)
-		.EUt(GTValues.VA[GTValues.MV])
+		.EUt(GTValues.VA[GTValues.EV])
 		.dimension('ad_astra:moon')
 		.circuit(2))
 

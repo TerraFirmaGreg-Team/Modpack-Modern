@@ -104,25 +104,25 @@ const registerExposureRecipes = (event) => {
 	// Creating the developer
 
 	// Pyrogallol
-	event.recipes.tfc.pot(['tfc:powder/saltpeter'], Fluid.of('tfc:tannin', 500), 30 * 20, 650)
+	event.recipes.tfc.pot(['tfc:powder/saltpeter'], Fluid.of('tfc:tannin', 500), 30 * 20, 450)
 		.itemOutput('tfg:pyrogallol_dust')
 		.id('tfg:pot/tannin_to_pyrogallol_saltpeter')
 
-	event.recipes.tfc.pot(['tfc:powder/soda_ash'], Fluid.of('tfc:tannin', 500), 30 * 20, 650)
+	event.recipes.tfc.pot(['tfc:powder/soda_ash'], Fluid.of('tfc:tannin', 500), 30 * 20, 450)
 		.itemOutput('tfg:pyrogallol_dust')
 		.id('tfg:pot/tannin_to_pyrogallol_soda_ash')
 
 	event.recipes.firmalife.vat()
 		.inputs('tfc:powder/saltpeter', Fluid.of('tfc:tannin', 500))
 		.length(30 * 20)
-		.temperature(650)
+		.temperature(450)
 		.outputItem('tfg:pyrogallol_dust')
 		.id('tfg:vat/tannin_to_pyrogallol_saltpeter')
 
 	event.recipes.firmalife.vat()
 		.inputs('tfc:powder/soda_ash', Fluid.of('tfc:tannin', 500))
 		.length(30 * 20)
-		.temperature(650)
+		.temperature(450)
 		.outputItem('tfg:pyrogallol_dust')
 		.id('tfg:vat/tannin_to_soda_ash')
 
@@ -141,7 +141,7 @@ const registerExposureRecipes = (event) => {
 		.EUt(7)
 
 	// Developer
-	event.recipes.tfc.pot(['#forge:dusts/pyrogallol', 'tfc:powder/soda_ash', 'tfc:powder/sulfur', '#exposure:black_printing_dyes'], Fluid.of('tfc:lye', 1000), 30 * 20, 550)
+	event.recipes.tfc.pot(['#forge:dusts/pyrogallol', 'tfc:powder/soda_ash', 'tfc:powder/sulfur', '#exposure:black_printing_dyes'], Fluid.of('tfc:lye', 1000), 30 * 20, 450)
 		.fluidOutput(Fluid.of('tfg:bw_photographic_developer', 1000))
 		.id('tfg:pot/bw_developer')
 

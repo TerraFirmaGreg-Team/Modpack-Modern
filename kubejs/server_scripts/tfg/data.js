@@ -1,4 +1,4 @@
-// priority: 0
+﻿// priority: 0
 "use strict";
 
 /** @param {Internal.TFCDataEventJS} event */
@@ -102,6 +102,9 @@ function registerTFGItemSize(event) {
 	event.itemSize("tfg:aluminium_harvest_basket", "large", "medium", "aluminium_harvest_basket");
 
 	event.itemSize(Ingredient.of("#minecraft:buttons"), "very_small", "very_light", "buttons");
+    event.itemSize(Ingredient.of("#minecraft:signs"), "very_small", "medium", "signs");
+    event.itemSize(Ingredient.of("#minecraft:hanging_signs"), "very_small", "medium", "hanging_signs");
+    event.itemSize(Ingredient.of("#minecraft:doors"), "very_large", "medium", "doors");
 	event.itemSize(Ingredient.of("#forge:buzz_saw_heads"), "large", "heavy", "buzz_saw_blades");
 	event.itemSize(
 		Ingredient.of("#minecraft:wool_carpets").or("#domum_ornamentum:floating_carpet"),

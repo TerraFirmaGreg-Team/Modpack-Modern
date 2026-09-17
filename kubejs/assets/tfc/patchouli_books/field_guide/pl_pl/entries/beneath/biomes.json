@@ -14,7 +14,7 @@
 				"tfg:textures/gui/field_guide/nether/salt_caves.png"
 			],
 			"border": true,
-			"text": "Like a warm ocean breeze, this biome is full of $(item)Halite$(). Makes for a great base location!"
+			"text": "Jak ciepła oceaniczna bryza, ten biom jest pełen $(item)halitu$(). Świetne miejsce na bazę!"
 		},
 		{
 			"type": "patchouli:image",
@@ -23,7 +23,7 @@
 				"tfg:textures/gui/field_guide/nether/muggy_bog.png"
 			],
 			"border": true,
-			"text": "Humid and swamp-like. A safe source of wood, if you can avoid the $(thing)Crocodiles$()."
+			"text": "Wilgotny i bagienny. Bezpieczne źródło drewna, jeśli umiesz unikać $(thing)krokodyli$()."
 		},
 		{
 			"type": "patchouli:image",
@@ -32,7 +32,7 @@
 				"tfg:textures/gui/field_guide/nether/decaying_caverns.png"
 			],
 			"border": true,
-			"text": "Nature's recyclers are hard at work in this damp region full of rot."
+			"text": "W tym wilgotnym regionie pełnym zgnilizny natura ciężko pracuje nad rozkładem."
 		},
 		{
 			"type": "patchouli:image",
@@ -41,7 +41,7 @@
 				"tfg:textures/gui/field_guide/nether/webbed_lair.png"
 			],
 			"border": true,
-			"text": "No prizes for guessing what lives here! Also features huge $(thing)Travertine$() pillars."
+			"text": "Brak nagród za odgadnięcie, co tu żyje! Zawiera również ogromne $(thing)trawertynowe$() filary."
 		},
 		{
 			"type": "patchouli:image",
@@ -50,7 +50,7 @@
 				"tfg:textures/gui/field_guide/nether/tar_pools.png"
 			],
 			"border": true,
-			"text": "Sandy like a small desert, this area contains sticky $(thing)Tar Pits$() full of oil."
+			"text": "Piaszczysty jak mała pustynia, ten obszar zawiera lepkie $(thing)doły ze smołą$() pełne oleju."
 		},
 		{
 			"type": "patchouli:image",
@@ -77,7 +77,7 @@
 				"tfg:textures/gui/field_guide/nether/lush_hollow.png"
 			],
 			"border": true,
-			"text": "Hot and full of greenery! The dense ferns hides the underlying $(thing)Kaolin Clay$()."
+			"text": "Gorąco i pełno zieleni! Gęste paprocie skrywają leżącą pod nimi $(thing)glinkę porcelanową$()."
 		},
 		{
 			"type": "patchouli:image",
@@ -90,7 +90,7 @@
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Kry lawowe",
+			"title": "Potoki lawy",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/lava_floes.png"
 			],

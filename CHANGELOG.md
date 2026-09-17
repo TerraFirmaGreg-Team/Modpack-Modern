@@ -17,10 +17,16 @@
 - Changed the recipe for blue alloy desh foil again @Pyritie
 - Fixed jerboas, mongeese, and lemmings sometimes spawning outside of their correct climate (#4929) @Pyritie
 - Added some more gem plates to gregtech filter crafting recipes @Pyritie
+- Backported some [redstone devices](https://terrafirmacraft.github.io/Field-Guide/en_us/mechanics/redstone_devices.html) from 1.21 TFC - the clock, thermometer, anemometer, and wind vane (#4979) @Pyritie
+- Made signs and doors stack to 16 @ashleney
 ### Bug fixes
 - Fixed some worldgen crashes (#4905, #4900) @Pyritie
 - Fix to repair scrambled pack order at level data which was affecting a few random world-related things such as not being able to collect glass with a gem saw (#4152) @ariedotme
 - Fixed being able to recraft your space suit to repair it instead of just emptying it (#4930) @Pyritie
+- Snow can't accumulate in the Bloomery anormore @NeonNoise
+- Fix TMRV crashing when existing right after world join @Redeix
+- Building gadgets now respect ftbchunk claims so they can't be used in order to grief @ashleney
+- The Spatial IO Port now works in claimed chunks even if the server thinks it was not placed by a player @ashleney
 ### Mods
 #### TerraFirmaCraft
 - Has been forked! This shouldn't affect you at all, but it ensures long-term stability for the future development of the modpack. Please read [here](https://www.reddit.com/r/TerraFirmaGreg/comments/1wbv1o3/the_future_of_terrafirmacraft_in_tfg/) for more information.

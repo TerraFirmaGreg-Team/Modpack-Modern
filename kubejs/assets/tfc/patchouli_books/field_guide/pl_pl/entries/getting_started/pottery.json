@@ -92,7 +92,7 @@
     {
       "type": "tfc:knapping_recipe",
       "recipe": "tfc:clay_knapping/propick_head_mold",
-      "text": "A $(l:mechanics/prospecting#propick)Prospector's Pick$() is an essential tool for locating large quantities of ore."
+      "text": "$(l:mechanics/prospecting#propick)Kilof geologiczny$() to niezbędne narzędzie do lokalizowania dużych ilości rudy."
     },
     {
       "type": "tfc:knapping_recipe",
@@ -107,7 +107,7 @@
     {
       "type": "tfc:knapping_recipe",
       "recipe": "tfc:clay_knapping/scythe_blade_mold",
-      "text": "A $(thing)Scythe$() is a tool that can harvest plants and leaves in a 3x3x3 area!"
+      "text": "$(thing)Kosa$() jest narzędziem, które może zbierać rośliny i liście na obszarze 3x3x3!"
     },
     {
       "type": "tfc:knapping_recipe",
@@ -127,12 +127,12 @@
     {
       "type": "tfc:knapping_recipe",
       "recipe": "tfc:clay_knapping/knife_blade_mold",
-      "text": "A $(thing)Knife$() can be used as a weapon, or as a cutting tool for plant type blocks."
+      "text": "$(thing)Nóż$() może być użyty jako broń lub jako narzędzie do cięcia roślin."
     },
     {
       "type": "tfc:knapping_recipe",
       "recipe": "tfc:clay_knapping/hoe_head_mold",
-      "text": "A $(thing)Hoe$() used for planting and maintaining $(l:mechanics/crops)Crops$()."
+      "text": "$(thing)Motyki$() są używane do sadzenia i pielęgnacji $(l:mechanics/crops)upraw$()."
     },
     {
       "type": "tfc:knapping_recipe",

@@ -523,8 +523,6 @@ function registerTFCItemTags(event) {
     fluidItemIngredientHolders.forEach(item => {
         event.add('tfc:fluid_item_ingredient_empty_containers', item)
     });
-	event.add('tfc:fluid_item_ingredient_empty_containers', 'gtceu:glass_vial')
-	event.add('tfc:glass_bottles', 'gtceu:glass_vial')
 
 	// TFC's fence gates are in the wrong tag
 	event.add('minecraft:fence_gates', '#forge:fence_gates')
@@ -666,6 +664,9 @@ function registerTFCBlockTags(event) {
     event.add("tfg:metal_bars", "tfc:metal/bars/black_steel");
     event.add("tfg:metal_bars", "tfc:metal/bars/blue_steel");
     event.add("tfg:metal_bars", "tfc:metal/bars/red_steel");
+
+	// Prevent Snow Accumulation on following
+	event.add('minecraft:snow_layer_cannot_survive_on','tfc:molten') //Prevents Bloomery and Blast Furnace voiding when snowing
 
     // Add small ore block tag to all small ores.
     const small_ores = [
