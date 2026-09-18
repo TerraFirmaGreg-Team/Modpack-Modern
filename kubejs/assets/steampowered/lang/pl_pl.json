@@ -21,6 +21,7 @@
 	"steampowered.ponder.dynamo.header": "Generowanie energii elektrycznej z użyciem dynama",
 	"steampowered.ponder.dynamo.text_1": "Dynamo wytwarza energię elektryczną (FE) z siły obrotowej",
 	"steampowered.ponder.dynamo.text_2": "Wymaga przynajmniej 32 obr/min, aby działać",
+	"steampowered.ponder.dynamo.text_3": "Produkcja energii zależy od wprowadzanej prędkości obrotowej",
 	"steampowered.ponder.dynamo.text_4": "Wydajność konwersji wynosi 75 %",
 	"steampowered.ponder.flywheel.header": "Generowanie siły obrotowej przy użyciu koła zamachowego",
 	"steampowered.ponder.flywheel.text_5": "Możesz zbudować konstrukcję, w której koła zamachowe same napędzają pompy.",

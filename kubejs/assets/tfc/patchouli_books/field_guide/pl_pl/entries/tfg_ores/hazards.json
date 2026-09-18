@@ -42,7 +42,7 @@
 			"type": "patchouli:crafting",
 			"title": "Maseczka",
 			"recipe": "gtceu:shaped/face_mask",
-			"text": "The $(thing)Face Mask$() provides protection from any $(item)Inhalation$() hazards, such as Arsenicosis.",
+			"text": "$(thing)Maseczka() zapewnia ochronę przed jakimikolwiek $(item)wdychanymi$() zagrożeniami, takimi jak zatrucie arszenikiem.",
 			"anchor": "mask"
 		},
 		{

@@ -5,6 +5,7 @@
   "filter.ftbfiltersystem.block.tooltip": "Prosty filtr, który pasuje, jeśli przedmiot jest blokiem możliwym do położenia.",
   "filter.ftbfiltersystem.custom.name": "Niestandardowa",
   "filter.ftbfiltersystem.durability.name": "Wytrzymałość",
+  "filter.ftbfiltersystem.durability.tooltip": "Dopasuje przedmiot na podstawie jego pozostałej wytrzymałości.\nPrzedmioty bez wytrzymałości traktuje się, jakby posiadały wytrzymałość 0.",
   "filter.ftbfiltersystem.expression.name": "Wyrażenie",
   "filter.ftbfiltersystem.food_value.name": "Wartość żywności",
   "filter.ftbfiltersystem.item.name": "Przedmiot",

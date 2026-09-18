@@ -22,6 +22,7 @@
 	"gui.sophisticatedcore.error.add.no_upgrade_can_be_added": "Nie można dodać ulepszenia",
 	"gui.sophisticatedcore.error.add.only_single_upgrade_allowed": "Tylko jedno %s może być użyte w %s",
 	"gui.sophisticatedcore.error.add.only_x_upgrades_allowed": "Tylko %dx %s można użyć w: %s",
+	"gui.sophisticatedcore.error.add.two_tank_upgrades_present": "W innych slotach ulepszeń są już dwa ulepszenia zbiornika",
 	"gui.sophisticatedcore.error.add.upgrade_not_allowed": "%s nie może być użyty w %s",
 	"gui.sophisticatedcore.error.remove.banned_item": "Ten przedmiot musi zostać usunięty, zanim będzie można usunąć ulepszenie",
 	"gui.sophisticatedcore.error.remove.infinity_upgrade_only_admin": "Tylko administratorzy mogą usunąć ulepszenie nieskończoności",

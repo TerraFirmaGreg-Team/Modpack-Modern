@@ -23,7 +23,7 @@
 				"tfg:textures/gui/field_guide/nether/muggy_bog.png"
 			],
 			"border": true,
-			"text": "Humid and swamp-like. A safe source of wood, if you can avoid the $(thing)Crocodiles$()."
+			"text": "Wilgotny i bagienny. Bezpieczne źródło drewna, jeśli umiesz unikać $(thing)krokodyli$()."
 		},
 		{
 			"type": "patchouli:image",
@@ -32,7 +32,7 @@
 				"tfg:textures/gui/field_guide/nether/decaying_caverns.png"
 			],
 			"border": true,
-			"text": "Nature's recyclers are hard at work in this damp region full of rot."
+			"text": "W tym wilgotnym regionie pełnym zgnilizny natura ciężko pracuje nad rozkładem."
 		},
 		{
 			"type": "patchouli:image",
@@ -50,7 +50,7 @@
 				"tfg:textures/gui/field_guide/nether/tar_pools.png"
 			],
 			"border": true,
-			"text": "Sandy like a small desert, this area contains sticky $(thing)Tar Pits$() full of oil."
+			"text": "Piaszczysty jak mała pustynia, ten obszar zawiera lepkie $(thing)doły ze smołą$() pełne oleju."
 		},
 		{
 			"type": "patchouli:image",

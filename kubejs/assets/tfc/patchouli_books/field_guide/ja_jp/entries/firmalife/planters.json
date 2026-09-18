@@ -61,21 +61,21 @@
     {
       "type": "patchouli:crafting",
       "recipe": "firmalife:crafting/hydroponic_planter",
-      "text": "$(thing)Hydroponic Planters$() grow rice and cranberry bushes. They work the same as a quad planter, except that they do not need to be watered."
+      "text": "$(thing)水耕プランター$()では、米やクランベリーを育てることができます。これらは4種のプランターと同じように機能しますが、水やりをする必要がない点が異なります。"
     },
     {
       "type": "patchouli:text",
-      "text": "Hydroponic Planters must instead, have a $(li)$(l:firmalife/irrigation)Sprinkler Pipe$() below them that is supplying water. Without the pipe they will not grow. There is no hard limit to how many hydroponic planters may be fed by one station."
+      "text": "その代わり、水耕プランターの下には、水を供給する $(li)$(l:firmalife/irrigation)液体パイプ$() が設置されている必要があります。パイプがなければ植物は育ちません。1つのステーションから給水できる水耕栽培用プランターの数に、厳格な上限はありません。"
     },
     {
       "type": "patchouli:crafting",
       "recipe": "firmalife:crafting/sweeper",
-      "text": "$(thing)Sweepers$() are used to harvest planters other than Quad and Hydroponic planters. They must be connected to a rotating $(thing)Axle$() on their bottom face."
+      "text": "$(thing)Sweepers$() は、4種のプランターおよび水耕プランター以外のプランターから\n収穫するために使用されます。これらは、底面に回転する $(thing)シャフト$() を接続する必要があります。"
     },
     {
       "type": "patchouli:crafting",
       "recipe": "firmalife:crafting/picker",
-      "text": "$(thing)Pickers$() can be powered via redstone signal from above. They extend down to pick the crops from Quad and Hydroponic planters."
+      "text": "$(thing)Pickers$() は、上からのレッドストーン信号によって作動させることができます。これらは下方に伸びて、4種のプランターや水耕プランターから作物を収穫します。"
     }
   ],
   "read_by_default": true,
