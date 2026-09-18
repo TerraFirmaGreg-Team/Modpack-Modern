@@ -43,6 +43,8 @@
 - Added Fluid Inventory Access Port
 - Removed waterproof cardboard
 - More bugfixes
+#### Greate
+- Mechanical saws now have a switch to toggle between "stonecutter" and "GregTech Cutter" recipes, so you don't have to worry about accidentally crafting decoration blocks again
 
 ## [0.13.10] - 05-09-2026
 ### Breaking Changes
