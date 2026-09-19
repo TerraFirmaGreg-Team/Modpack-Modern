@@ -291,7 +291,7 @@ const registerSingleGroups = (event) => {
         'fluid:forge:liquid',
         'fluid:forge:gaseous',
         'fluid:forge:plasmatic',
-        'fluid:tfg:alcohols'
+        'fluid:tfg:alcohols',
 
         // Immersive Vehicles
         'mts:bell206',
@@ -326,7 +326,7 @@ const registerSingleGroups = (event) => {
         'mts:nugget',
         'mts:silver',
         'automotives:dashornaments',
-        'mts:indicators'
+        'mts:indicators',
     ]
 
     SINGLE_GROUPS_TO_REGISTER.forEach(x => {
