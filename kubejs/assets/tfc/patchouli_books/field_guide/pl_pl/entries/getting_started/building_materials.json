@@ -137,7 +137,7 @@
             "images": [
                 "tfc:textures/gui/book/tutorial/wattle_add_daub.png"
             ],
-            "text": "Using $(thing)Daub on $(thing)Woven Wattle$() creates a solid block.",
+            "text": "Nałożenie $(thing)gliny szachulcowej$() na $(thing)pleciony szachulec$() pozwala utworzyć pełny blok.",
             "border": true
         },
         {
@@ -145,7 +145,7 @@
             "images": [
                 "tfc:textures/gui/book/tutorial/wattle_stained.png"
             ],
-            "text": "It can then be $(thing)stained$() by using $(l:mechanics/dye)Dye$() on it.",
+            "text": "Można je następnie $(thing)zabarwić$(), używając $(l:mechanics/dye)barwnika$() na nim.",
             "border": true
         },
         {
