@@ -7,7 +7,7 @@ function registerTFCDataForCreateAddition(event) {
 	event.itemHeat('createaddition:cake_base_baked', 1.0, null, null)
 
 	event.foodItem('createaddition:cake_base', food => {
-		food.hunger(1)
+		food.hunger(4)
 		food.saturation(0)
 		food.decayModifier(3)
 	})

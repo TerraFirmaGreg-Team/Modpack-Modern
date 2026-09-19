@@ -20,7 +20,7 @@
 			"type": "patchouli:crafting",
 			"title": "Koszyk zbieracza",
 			"recipe": "tfg:shaped/harvest_basket_from_papyrus",
-			"text": "A basic $(item)Harvest Basket$() can be made of soaked papyrus or hardwood."
+			"text": "Podstawowy $(item)koszyk zbieracza$() można wykonać z namoczonego papirusu lub twardego drewna."
 		}
 	]
 }

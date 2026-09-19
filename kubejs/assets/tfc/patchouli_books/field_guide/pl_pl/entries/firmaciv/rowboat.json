@@ -143,7 +143,7 @@
     {
       "type": "patchouli:crafting",
       "recipe2": "alekiships:crafting/oar",
-      "text": "Now, add oars with $(item)$(k:key.use)$() and you'll be on your way!"
+      "text": "Teraz dodaj wiosła za pomocą $(item)$(k:key.use)$() i ruszaj w drogę!"
     }
   ],
   "read_by_default": true,
