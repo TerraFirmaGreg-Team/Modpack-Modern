@@ -11,7 +11,7 @@
 		},
 		{
 			"type": "tfc:multimultiblock",
-			"text": "Generally, go $(thing)South East$() to increase temperature and humidity.",
+			"text": "Zazwyczaj powinieneś kierować się na $(thing)południowy wschód$(), aby zwiększyć temperaturę i wilgotność.",
 			"multiblocks": [
 				{
 					"pattern": [

@@ -24,7 +24,7 @@
       "type": "patchouli:spotlight",
       "item": "tfc:powder/saltpeter",
       "link_recipes": false,
-      "text": "Saltpeter is made from its ore. $(br)$(li)$(b)Nitrogen: 10$()$(li)$(d)Potassium: 40$()"
+      "text": "Saletra jest wydobywana z rudy. $(br)$(li)$(b)Azot: 10$()$(li)$(d)Potas: 40$()"
     },
     {
       "type": "patchouli:spotlight",
@@ -42,7 +42,7 @@
       "type": "patchouli:spotlight",
       "item": "tfc:powder/sylvite",
       "link_recipes": false,
-      "text": "Sylwin jest wykonany z rudy. $(br)$(li)$(d)Potas: 50$()"
+      "text": "Sylwin jest wydobywany z rudy. $(br)$(li)$(d)Potas: 50$()"
     }
   ],
   "read_by_default": true
