@@ -117,7 +117,7 @@ const registerAdAstraRecipes = (event) => {
 	event.recipes.gtceu.automotive_workshop('tfg:rover_soldering_alloy')
 		.itemInputs(
 			'gtceu:mv_sensor',
-			'ad_astra:radio',
+			'#tfg:radios',
 			'ad_astra:gas_tank',
 			'4x mts:mtsofficialpack.wheellarge',
 			'4x gtceu:hv_electric_motor',
@@ -127,12 +127,11 @@ const registerAdAstraRecipes = (event) => {
 		.itemOutputs('ad_astra:tier_1_rover')
 		.duration(400)
 		.EUt(GTValues.VA[GTValues.HV])
-		.addMaterialInfo(true)
 			
 	event.recipes.gtceu.automotive_workshop('tfg:rover_woods_metal')
 		.itemInputs(
 			'gtceu:mv_sensor',
-			'ad_astra:radio',
+			'#tfg:radios',
 			'ad_astra:gas_tank',
 			'4x mts:mtsofficialpack.wheellarge',
 			'4x gtceu:hv_electric_motor',
@@ -142,7 +141,6 @@ const registerAdAstraRecipes = (event) => {
 		.itemOutputs('ad_astra:tier_1_rover')
 		.duration(400)
 		.EUt(GTValues.VA[GTValues.HV])
-		.addMaterialInfo(true)
 
 	//#endregion
 

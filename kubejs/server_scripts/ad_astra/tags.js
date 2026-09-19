@@ -97,6 +97,9 @@ const registerAdAstraItemTags = (event) => {
 			event.add('tfg:softwood', wood.logs)
 		}
 	})
+
+	event.add('tfg:radios', 'ad_astra:radio')
+	event.add('tfg:radios', 'etched:radio')
 }
 
 const registerAdAstraBlockTags = (event) => {
