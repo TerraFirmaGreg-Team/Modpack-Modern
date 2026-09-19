@@ -98,7 +98,6 @@ function processGTToolHead(event, toolType, headTagPrefix, material) {
  * @param {String} tagPrefixName
  * @param {Internal.ItemStack} extruderMold 
  * @param {Internal.ItemStack} ceramicMold
- * Used for the laser engraver recipes for gem tools.
  * @param {com.gregtechceu.gtceu.api.data.chemical.material.Material_} material 
  */
 function processToolHead(event, headTagPrefix, tagPrefixName, extruderMold, ceramicMold, material) {
@@ -143,7 +142,7 @@ function processToolHead(event, headTagPrefix, tagPrefixName, extruderMold, cera
 		}
 
 		if (material.hasFlag(TFGMaterialFlags.CAN_BE_UNMOLDED) && ceramicMold !== null) {
-			addMaterialCasting(event, toolHeadItem, ceramicMold, false, null, material, tagPrefixName, materialAmount * 144, false);
+			addMaterialCasting(event, toolHeadItem, ceramicMold, false, null, material, tagPrefixName, materialAmount * 144, false, 1);
 		}
 	}
 }
@@ -156,6 +155,7 @@ function modifyRecyclingAmounts(material) {
 	TagPrefix.toolHeadWrench.modifyMaterialAmount(material, 2);
 	TagPrefix.toolHeadScrewdriver.modifyMaterialAmount(material, 1);
 	TagPrefix.toolHeadWireCutter.modifyMaterialAmount(material, 2);
+	TagPrefix.toolHeadDrill.modifyMaterialAmount(material, 9);
 	TFGTagPrefix.toolHeadSword.modifyMaterialAmount(material, 2);
 	TFGTagPrefix.toolHeadButcheryKnife.modifyMaterialAmount(material, 1);
 	TFGTagPrefix.toolHeadMiningHammer.modifyMaterialAmount(material, 2);

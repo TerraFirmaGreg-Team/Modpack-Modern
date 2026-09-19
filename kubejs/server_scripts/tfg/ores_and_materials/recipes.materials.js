@@ -138,9 +138,11 @@ const getFillingNBT = (material, amount) => {
  * @param {String} tagPrefixName
  * @param {number} mbAmount
  * @param {boolean} lowerTierAlloySmelting 
- * Forces the alloy smelter recipe to be LV, but at the cost of twice the inputs
+ * Forces the alloy smelter recipe to be LV
+ * @param {number} alloySmelterMultiplier
+ * If the item has an extruder recipe, this should be 2, otherwise use 1
  */
-function addMaterialCasting(event, outputItem, ceramicMold, isFireMold, gtMold, material, tagPrefixName, mbAmount, lowerTierAlloySmelting) {
+function addMaterialCasting(event, outputItem, ceramicMold, isFireMold, gtMold, material, tagPrefixName, mbAmount, lowerTierAlloySmelting, alloySmelterMultiplier) {
 	const materialName = material.getName();
 
 	// If it's a TFC material, add ceramic mold casting + create spouting
@@ -167,14 +169,14 @@ function addMaterialCasting(event, outputItem, ceramicMold, isFireMold, gtMold, 
 
 	// If there's a gregtech mold, add alloy smelter/fluid solidifier recipes.
 	if (gtMold !== null) {
-		const ingotAmount = mbAmount / 144;
+		const ingotAmount = (mbAmount * alloySmelterMultiplier) / 144;
 
 		if (lowerTierAlloySmelting) {
 			event.recipes.gtceu.alloy_smelter(`tfg:cast_${materialName}_${tagPrefixName}`)
-				.itemInputs(ChemicalHelper.get(TagPrefix.ingot, material, ingotAmount * 2))
+				.itemInputs(ChemicalHelper.get(TagPrefix.ingot, material, ingotAmount))
 				.notConsumable(gtMold)
 				.itemOutputs(outputItem)
-				.duration(material.getMass() * 2 * ingotAmount)
+				.duration(material.getMass() * ingotAmount)
 				.EUt(GTValues.VA[GTValues.LV])
 				.category(GTRecipeCategories.INGOT_MOLDING)
 		}
@@ -183,7 +185,7 @@ function addMaterialCasting(event, outputItem, ceramicMold, isFireMold, gtMold, 
 				.itemInputs(ChemicalHelper.get(TagPrefix.ingot, material, ingotAmount))
 				.notConsumable(gtMold)
 				.itemOutputs(outputItem)
-				.duration(material.getMass() * 2 * ingotAmount)
+				.duration(material.getMass() * ingotAmount)
 				.EUt(getFluidRecipeEUt(material))
 				.category(GTRecipeCategories.INGOT_MOLDING)
 		}
@@ -192,7 +194,7 @@ function addMaterialCasting(event, outputItem, ceramicMold, isFireMold, gtMold, 
 			.inputFluids(Fluid.of(material.getFluid(), mbAmount))
 			.notConsumable(gtMold)
 			.itemOutputs(outputItem)
-			.duration(material.getMass() * 2 * ingotAmount)
+			.duration(material.getMass() * ingotAmount)
 			.EUt(getFluidRecipeEUt(material))
 	}
 }
@@ -328,9 +330,10 @@ function registerTFGMaterialRecipes(event) {
 			processNugget(event, material)
 			processSmallGear(event, material)
 			processLargeGear(event, material)
-
+			processDrill(event, material);
 			processBuzzsawBlade(event, material)
 			processPlatedBlock(event, material)
+			processAnvil(event, material)
 		}
 
 		if (material.hasProperty(PropertyKey.GEM)) {
@@ -346,7 +349,6 @@ function registerTFGMaterialRecipes(event) {
 		}
 
 		if (material.hasProperty(TFGPropertyKey.TFC_PROPERTY)) {
-			processAnvil(event, material)
 			processLamp(event, material)
 			processTrapdoor(event, material)
 			processChain(event, material)

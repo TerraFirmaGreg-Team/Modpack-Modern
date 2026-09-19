@@ -439,7 +439,16 @@
 				"3AF4B19564593C89"
 			]
 			description: ["{quests.medium_voltage.mv_steel_alloy.desc}"]
-			icon: "gtceu:vanadium_steel_ingot"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "gtceu:vanadium_steel_ingot"
+			}
 			id: "682C26579EDDCA76"
 			shape: "square"
 			size: 1.0d
