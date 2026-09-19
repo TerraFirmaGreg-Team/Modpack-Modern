@@ -31,6 +31,10 @@ function registerFowlPlayItemTags(event) {
 	event.add('fowlplay:sparrow_food', '#forge:seeds')
 
 	event.add('c:hidden_from_recipe_viewers', 'fowlplay:bird_feeder')
+
+	event.add('fowlplay:pigeon_deliverable', 'sns:leather_sack')
+	event.add('fowlplay:pigeon_deliverable', 'sns:burlap_sack')
+	event.add('fowlplay:pigeon_deliverable', 'sns:seed_pouch')
 }
 
 function registerFowlPlayBlockTags(event) {
@@ -76,13 +80,13 @@ function registerFowlPlayEntityTags(event) {
 	event.add('tfc:amphibious_creatures', 'fowlplay:gull')
 	event.add('tfc:amphibious_creatures', 'fowlplay:penguin')
 
-	event.add('fowlplay:gull_hunt_targets', '#tfc:pests')
+	event.add('fowlplay:gull_hunt_targets', '#tfg:tiny_animals')
 	event.add('fowlplay:gull_hunt_targets', '#tfc:hunted_by_ocean_predators')
 	event.add('fowlplay:gull_baby_hunt_targets', 'tfc:chicken')
 	event.add('fowlplay:gull_baby_hunt_targets', 'tfc:duck')
 	event.add('fowlplay:gull_baby_hunt_targets', 'tfc:quail')
 
-	event.add('fowlplay:hawk_hunt_targets', '#tfc:pests')
+	event.add('fowlplay:hawk_hunt_targets', '#tfg:tiny_animals')
 	event.add('fowlplay:hawk_baby_hunt_targets', 'tfc:chicken')
 	event.add('fowlplay:hawk_baby_hunt_targets', 'tfc:duck')
 	event.add('fowlplay:hawk_baby_hunt_targets', 'tfc:quail')

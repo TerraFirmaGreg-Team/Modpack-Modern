@@ -5,7 +5,7 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "$(thing)Тигель$() - это продвинутое устройство, используемое для создания $(l:mechanics/crucible#advanced_alloying)Сплавов$(). Это более точный метод, чем использование $(l:getting_started/primitive_alloys)Малого сосуда$() для изготовления сплавов.$(br2)Чтобы получить тигель, сначала вам нужно будет получить некоторое количество $(l:mechanics/fire_clay)Огнеупорной глины$(), которая является более прочным материалом, чем обычная глина. Из этой огнеупорной глины затем можно выколотить $()необожженный тигель$()."
+      "text": "A $(thing)Crucible$() is an advanced device used for the creation of $(l:mechanics/crucible#advanced_alloying)Alloys$(). It is a more precise method than using a $(l:getting_started/primitive_alloys)Small Vessel$() to make alloys.$(br2)To obtain a crucible, you will first need to obtain some $(l:mechanics/fire_clay)Fire Clay$(), which is a stronger material than clay. This fire clay can then be knapped to shape it into an $()Unfired Crucible$()."
     },
     {
       "type": "tfc:knapping_recipe",
@@ -15,7 +15,7 @@
     {
       "type": "tfc:heat_recipe",
       "recipe": "tfc:heating/crucible",
-      "text": "После того как тигель выколочен, его необходимо $(thing)обжечь$(), как любой керамический предмет - подойдет $(l:getting_started/pit_kiln)Ямочная печь$() или $(l:mechanics/charcoal_forge)Угольная кузница$().$(br2)Чтобы использовать тигель, ему нужен источник тепла. Тигель можно нагревать любым нагреваемым блоком снизу, обычно это $(l:mechanics/charcoal_forge)Угольная кузница$()"
+      "text": "After the crucible is knapped, it will need to be $(thing)fired$(), like any piece of pottery - a $(l:getting_started/pit_kiln)Pit Kiln$() or $(l:mechanics/charcoal_forge)Charcoal Forge$() would do.$(br2)In order to use the crucible, it needs a source of heat. The crucible can be heated by any heatable block below, usually a $(l:mechanics/charcoal_forge)Charcoal Forge$()"
     },
     {
       "type": "patchouli:multiblock",
@@ -45,8 +45,8 @@
     {
       "type": "patchouli:text",
       "anchor": "advanced_alloying",
-      "text": "Теперь вы готовы использовать тигель. Когда вы его используете, вы увидите $(thing)Интерфейс тигля$(), показанный справа. Верхняя часть показывает текущее содержание металла в тигле. Первый показанный металл - это то, что будет произведено, если его извлечь прямо сейчас. Другие показанные металлы - это состав текущего сплава в тигле.",
-      "title": "Продвинутое сплавление"
+      "text": "Now, you are ready to use the crucible. When you use it, you will see the $(thing)Crucible Interface$(), shown to the right. The top region shows the current metal content of the crucible. The first metal shown is what would be produced, if it were to be extracted right now. Other metals shown are the makeup of the current alloy in the crucible.",
+      "title": "Advanced Alloying"
     },
     {
       "type": "patchouli:image",
@@ -58,11 +58,11 @@
     },
     {
       "type": "patchouli:text",
-      "text": "Тигель имеет девять слотов, куда можно добавлять предметы для плавления, и их расплавленное содержимое будет напрямую добавлено в тигель. Контейнеры для расплавленного металла, такие как $(l:getting_started/pottery#mold)Формы$(), также могут быть помещены сюда, и они будут медленно опустошаться в тигель, позволяя точно контролировать содержание вашего сплава. Удерживая $(item)$(k:key.sneak)$() при наведении на опустошающуюся форму или сосуд, можно ускорить их опустошение. $(br2)Формы или другие контейнеры для жидкости также могут быть помещены в выходной слот и будут медленно наполняться текущим содержимым тигля."
+      "text": "The crucible has nine slots where items can be added to be melted, and their liquefied contents will be directly added to the crucible. Molten metal containers such as $(l:getting_started/pottery#mold)Molds$() can also be placed here and they will be slowly drained into the crucible, allowing for precise control over your alloy's content. Holding $(item)$(k:key.sneak)$() while hovering over a draining mold or vessel makes it drain faster. $(br2)Molds or other fluid containers can also be placed in the output slot, and will be slowly filled with the current content of the crucible."
     },
     {
       "type": "patchouli:text",
-      "text": "Индикатор температуры слева будет подниматься в зависимости от внешних источников тепла, таких как $(l:mechanics/charcoal_forge)Угольная кузница$() снизу или тепло от $(l:mechanics/blast_furnace)Доменной печи$() сверху. Металл можно извлекать из тигля, пока он остается расплавленным.$(br2)Наконец, тигель сохранит свое содержимое при разрушении, позволяя вам транспортировать контейнер со сплавом, если вы хотите."
+      "text": "The temperature indicator on the left will rise based on external sources of heat, such as a $(l:mechanics/charcoal_forge)Charcoal Forge$() below or heat from a $(l:mechanics/blast_furnace)Blast Furnace$() from above. Metal can be extracted from the crucible as long as it is still molten.$(br2)Finally, the crucible will keep its contents when broken, allowing you to transport the alloy container around if you wish."
     }
   ],
   "read_by_default": true,

@@ -2,7 +2,87 @@
 
 ## Unreleased
 ### Breaking Changes
+#### Oxygen Rework
+- Completely reworked Ad Astra's oxygenation mechanics and replaced them with our own native system. (#4931) @Mqrius
+- Added the Oxygen Distributor multiblock to replace Ad Astra's Air Distributor. This one oxygenates an entire enclosed room instead of just a small area around it. @Mqrius
+- Added the Higgs Emitter multiblock to replace Ad Astra's Gravity Normalizer with a significantly larger area of effect. @ashleney
+- Added the Heat Pump multiblock, when built into an outer wall it will regulate the temperature of a large room. @ashleney
+#### Other changes
+- Added more mob icons to xaeros minimap (#4941) @Nezumi-Remis
+- Made it easier to find peat by giving it a unique grass texture (#4964) @applenper
+- Added more asphalt road markings, especially for diagonal lines (#4961) @Sacarbeus123
+- Axes no longer veinmine manually placed logs @ashleney
+- Laser hatches now need a glass lens instead of a diamond lens @ashleney
+- Moon harvester now doesn't need titanium (#4960) @TomPlop
+- Changed the recipe for blue alloy desh foil again @Pyritie
+- Fixed jerboas, mongeese, and lemmings sometimes spawning outside of their correct climate (#4929) @Pyritie
+- Added some more gem plates to gregtech filter crafting recipes @Pyritie
+- Backported some [redstone devices](https://terrafirmacraft.github.io/Field-Guide/en_us/mechanics/redstone_devices.html) from 1.21 TFC - the clock, thermometer, anemometer, and wind vane (#4979) @Pyritie
+- Made signs and doors stack to 16 @ashleney
 ### Bug fixes
+- Fixed some worldgen crashes (#4905, #4900) @Pyritie
+- Fix to repair scrambled pack order at level data which was affecting a few random world-related things such as not being able to collect glass with a gem saw (#4152) @ariedotme
+- Fixed being able to recraft your space suit to repair it instead of just emptying it (#4930) @Pyritie
+- Snow can't accumulate in the Bloomery anormore @NeonNoise
+- Fix TMRV crashing when existing right after world join @Redeix
+- Building gadgets now respect ftbchunk claims so they can't be used in order to grief @ashleney
+- The Spatial IO Port now works in claimed chunks even if the server thinks it was not placed by a player @ashleney
+### Mods
+#### TerraFirmaCraft
+- Has been forked! This shouldn't affect you at all, but it ensures long-term stability for the future development of the modpack. Please read [here](https://www.reddit.com/r/TerraFirmaGreg/comments/1wbv1o3/the_future_of_terrafirmacraft_in_tfg/) for more information.
+- ⚠ **Important note**: in an upcoming version (planned for 0.14), we will be backporting more overworld worldgen changes. As this update introduces plate tectonics, it shifts continents around, which unfortunately means everyone will be getting ugly chunk borders. We suggest exploring your continent before this update if this is something you care about. We will also be dropping support for old worldgen (pre-0.12) if you're still using it.
+- Entities (including items) in midair are no longer slowed by snow (#4656) @Therighthon
+#### Dea's Fission
+- The fission reactor's dimension restrictions now actually work (#3359)
+- Multiblocks can no only be rotated along the Y axis
+- Reactor heat level is now saved when the block is broken
+- Redstone ports better remember their level when the chunk is unloaded
+- Fixed metrics incorrectly tracking incomplete multiblocks
+#### Create: Fluid Logistics
+- Separated fluid gauges out from factory gauges. Existing gauges will automatically convert
+- Added Fluid Inventory Access Port
+- Removed waterproof cardboard
+- More bugfixes
+#### Greate
+- Mechanical saws now have a switch to toggle between "stonecutter" and "GregTech Cutter" recipes, so you don't have to worry about accidentally crafting decoration blocks again! Right-click it with a screwdriver to change modes.
+
+## [0.13.10] - 05-09-2026
+### Breaking Changes
+- The new moon cleanroom recipes have been replaced with requiring oxygenation instead (#4896) @TomPlop
+(A new and improved oxygenation system will be coming soon!)
+### Changes
+#### Applied Energistics 2
+- Removed overclock from the ME Resonance Fabricator and made Batch Mode native @TomPlop
+- Adjusted the formulas for how much the budding certus can affect the recipe speeds, and how long the recipes take @TomPlop
+- Some GUI fixes on the new multis @TomPlop
+- Some recipe adjustments (#4896) @TomPlop
+- Changed the craft of the data hatch so a cleanroom isn't required @TomPlop
+#### Other Changes
+- Improved multiblock preview hatch/bus displays for a few multiblocks @TomPlop
+- Doubled the durability of all clothing @ashleney
+- Changed the blue alloy desh foil recipes to be less tedious @Pyritie
+- Reduced the cost of the Rail Buffer @Pyritie
+- Increased the speed of the schematicannon @Pyritie
+- Only a basic mechanical press is required to compress ingots into blocks now @Pyritie
+- Removed the calendar curios slot @Pyritie
+### Bug fixes
+- Fixed a crash with combustion engines when loading into a world with flywheel off @Pyritie
+- Fixed combustion engines consuming very little fuel (#4889) @Pyritie
+- Fixed one part of the moon dust harvester not allowing hatches/buses that should @TomPlop
+- Fixed current and average temperature desync in multiplayer (#3732) @ariedotme
+- Fixed fluid vein EMI tab showing old worldgen entries on servers (#3879) @ariedotme
+- Fixed treated wood barrel recipes accepting their own output as input (#4919) @ariedotme
+- Fixed tarkianite centrifuging into the wrong amount of Molybdenite @Pyritie
+- Fixed the dismantler recipe @TomPlop
+### Mods
+#### TerraFirmaCraft
+- Added an EMI category for lamp fuels @Redeix
+- Fixed rotten eggs hatching stuff
+- Fixed two worldgen-related crashes
+#### Greate
+- Fixed a crash involving mechanical presses
+#### Wan's Ancient Beasts
+- [Lots of bugfixes](https://www.curseforge.com/minecraft/mc-mods/wans-ancient-beasts/files/8761414), most of them either related to the Snatcher and its mechanics, but also the different tameables can sit down by sneak-right-clicking on them now. Press 'C' to access their inventory/equipment screen.
 
 ## [0.13.9] - 29-08-2026
 ### Breaking Changes

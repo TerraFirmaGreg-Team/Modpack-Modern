@@ -5,7 +5,7 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "$(thing)Dzikie Uprawy$() można znaleźć rozproszone na całym świecie, rosnąc w małych grupkach. Można je zbierać na żywność i nasiona, które następnie mogą być uprawiane w postaci nie dzikiej.$(br2) Dzikie rośliny możesz zebac za pomocą twoich dłoni lub za pomocą $(thing)noża$() lub innego ostrego narzędzia. Po zniszczeniu wypadają nasiona $(thing)() i niektóre produkty $(thing)$()."
+      "text": "$(thing)Dzikie uprawy$() można znaleźć rozproszone na całym świecie, rosnąc w małych grupkach. Można je zbierać na żywność i nasiona, które następnie mogą być uprawiane w postaci nie dzikiej.$(br2) Dzikie rośliny możesz zebac za pomocą twoich dłoni lub za pomocą $(thing)noża$() lub innego ostrego narzędzia. Po zniszczeniu wypadają nasiona $(thing)() i niektóre produkty $(thing)$()."
     },
     {
       "type": "patchouli:multiblock",
@@ -318,7 +318,7 @@
     },
     {
       "type": "patchouli:text",
-      "text": "Dzikie plony występują w klimatach, w których mona je uprawiać, więc konkretnych upraw, przyjrzyj się klimatowi, w którym można uprawiać.\nW przeciwieństwie $(l:mechaniki/Plony)Plonów$() zasadzonych przez gracza dzikie plony nie wymagają $(l:mechaniki/nawodnienie)Nawodnienia$().Zmiast tego znajdują się w zależności od średniej $()Temperatury$() i $()opadów$().",
+      "text": "Dzikie uprawy pojawiają się w klimatach zbliżonych do tych, w których można je uprawiać, więc jeśli szukasz konkretnej rośliny, sprawdź klimat, w którym może być ona uprawiana. Jednak w przeciwieństwie do $(l:mechanics/crops)upraw$(), które zasadził gracz, dzikie uprawy nie wymagają $(l:mechanics/hydration)nawodnienia$(). Zamiast tego występują w obszarach zależnych od średniej temperatury i opadów.",
       "title": "Znajdowanie dzikich roślin"
     },
     {

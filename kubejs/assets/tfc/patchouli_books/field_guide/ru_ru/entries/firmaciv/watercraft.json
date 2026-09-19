@@ -41,7 +41,7 @@
     {
       "type": "patchouli:text",
       "title": "Перевозка животных",
-      "text": "Как и всегда, вы можете перемещать животных с помощью лодок! Однако имейте в виду, что более крупные животные, такие как лошади, поместятся только в достаточно большие лодки. Если животное находится в лодке и мешает вам, вам достаточно присесть и нажать $(item)$(k:key.use)$(), чтобы выбросить его из лодки. Животные становятся беспокойными через 2 дня в лодке и покидают ее самостоятельно через 3 дня."
+      "text": "Like always, you can move animals around using boats! However, be aware that larger animals, like horses, will only fit in boats that are big enough. If an animal is riding a boat and is in your way, you only have to crouch and press $(item)$(k:key.use)$() to eject it from the boat. Animals will get restless after 2 days in the boat and will leave the boat on their own in 3 days."
     },
     {
       "type": "patchouli:image",
@@ -54,7 +54,7 @@
     {
       "type": "patchouli:text",
       "title": "Весла",
-      "text": "Если вам кажется, что ваша лодка движется медленно, проверьте, держите ли вы в руках подходящее весло или установлены ли весла в держателях для весел. В некоторых лодках несколько игроков могут грести, чтобы лодка двигалась быстрее."
+      "text": "If you feel like your boat is moving slowly, double check that you're holding the appropriate paddle item, or, if your boat requires oars, that the oars have been equipped to the oarlocks. In some boats, multiple players are able to paddle or row to make the boat go faster."
     },
     {
       "type": "patchouli:image",
@@ -65,7 +65,7 @@
     {
       "type": "patchouli:text",
       "title": "Шварт-ые утки и поводки",
-      "text": "Большинство лодок имеют хотя бы одну швартовую утку. Вы можете прикрепить поводок к швартовой утке и использовать его, чтобы тянуть лодку, а также подтягивать небольшие лодки к берегу или тоскать по плитам. Поводки также можно использовать для прикрепления лодок к заборам, а прикрепление двух швартовых уток к забору позволит вам легко швартовать большие лодки. Как вы поняли, вам придется активно использовать поводки, чтобы ваши лодки не уплыли!"
+      "text": "Most boats have at least one cleat on them. You can attach a lead to the cleat and use it to pull the boat, and pull small boats up onto the shoreline and up slabs. Leads can also be used to attach boats to fences, and attaching two cleats each to a fence will allow you to easily dock larger boats. You'll find yourself wanting to use leads extensively to stop your boats from drifting away!"
     },
     {
       "type": "patchouli:image",
@@ -77,7 +77,7 @@
     {
       "type": "patchouli:text",
       "title": "Якори",
-      "text": "Большие лодки имеют якоря, которые можно использовать для полной остановки лодки, при условии, что якорь закреплен на дне и паруса не развернуты. Лодка все равно будет поворачиваться под воздействием ветра, пока она стоит на якоре. Найдите значок якоря, расположенный на лебедке (якорной лебедке), и нажмите $(item)$(k:key.use)$(), чтобы опустить и поднять якорь."
+      "text": "Large boats have anchors, which can be used to completely stop the boat, provided the anchor is seated in the seafloor and no sails are deployed. The boat will still turn in the wind while it's at anchor. Look for the anchor icon located at the windlass (anchor winch) and press $(item)$(k:key.use)$() to lower and raise the anchor."
     },
     {
       "type": "patchouli:image",
@@ -90,7 +90,7 @@
     {
       "type": "patchouli:text",
       "title": "Паруса",
-      "text": "Парусные суда, конечно же, имеют паруса. Вам нужно будет развернуть их, чтобы правильно управлять лодкой. Найдите треугольную иконку паруса и нажмите $(item)$(k:key.use)$(), чтобы развернуть каждый парус. Поскольку большинство лодок имеют несколько парусов, вы можете комбинировать их для контроля скорости."
+      "text": "Sailing vessels, of course, have sails. You'll need to deploy them in order to properly control your boat. Look for the triangular sail icon and press $(item)$(k:key.use)$() to deploy each sail. Since most boats have multiple sails, you can use different combinations of sail deployment to control your speed."
     },
     {
       "type": "patchouli:image",
@@ -103,7 +103,7 @@
     {
       "type": "patchouli:text",
       "title": "Плавание под парусами",
-      "text": "В отличие от кораблей, к которым вы, возможно, привыкли, плавание под парусами — это навык в Firma: Civilization. Когда вы управляете парусным судном, появится новый элемент интерфейса, отображающий скорость и направление ветра, а также скорость лодки. Цвет стрелки ветра будет указывать на сложность плавания в данном направлении. Используйте клавиши движения вперед и назад, чтобы установить угол парусов, и экспериментируйте, чтобы найти наилучший угол ветра."
+      "text": "Unlike ships that you may be used to, sailing is a skill with Firma: Civilization. When you're piloting a sailing vessel, a new UI element will appear showing the wind speed and direction, as well as the boat's speed. The color of the wind arrow will indicate the difficulty of sailing in that direction. Use your forward and backward movement keys to set the angle of the sails, and experiment to find the best one for the wind angle."
     },
     {
       "type": "patchouli:image",
@@ -111,12 +111,12 @@
       "images": [
         "firmaciv:textures/gui/book/sailing.png"
       ],
-      "text": "Интерфейс парусов поможет вам контролировать судно."
+      "text": "The sailing UI will help you control your vessel."
     },
     {
       "type": "patchouli:text",
       "title": "Покраска",
-      "text": "Любая лодка, построенная с помощью корабельной обшивки, может быть окрашена, а любой парус может быть окрашен индивидуально. Просто держите краситель в руке и нажмите $(item)$(k:key.use)$(), когда увидите значок кисти, чтобы покрасить корпус или окрасить парус. Более крупные лодки имеют уникальные узоры для каждого цвета краски."
+      "text": "Any boat constructed using Shipwright's Scaffolding can be painted, and any sail can be individually dyed. Simply hold a dye item in your hand and press $(item)$(k:key.use)$() when you see the paint brush icon to either paint a hull or dye a sail. Larger boats have unique patterns for each paint color."
     },
     {
       "type": "patchouli:image",
@@ -129,7 +129,7 @@
     {
       "type": "patchouli:text",
       "title": "Повреждения и ремонт",
-      "text": "Поврежденная лодка начнет покрываться трещинами. Для любой лодки, построенной из корабельной обшивки, используйте соответствующие доски для ремонта. При 90% повреждении лодка начнет набирать воду, а при 100% — утонет! Это не относится к каякам."
+      "text": "A damaged boat will start to show cracks. For any boat built using Shipwright's Scaffolding, use the appropriate type of planks to repair it. For canoes, use lumber. At 90% damage, a boat will appear to take on water, and at 100% damage, it will sink! This does not apply to Kayaks."
     }
   ],
   "read_by_default": true,

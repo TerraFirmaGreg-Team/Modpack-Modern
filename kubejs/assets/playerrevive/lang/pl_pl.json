@@ -1,4 +1,7 @@
 {
-	"playerrevive.gui.label.time_left": "Zostało czasu: %s",
+	"playerrevive.chat.bleeding": "%s wykrwawia się i może potrzebować twojej pomocy",
+	"playerrevive.chat.no_commands": "Nie można używać poleceń, gdy krwawisz",
+	"playerrevive.gui.hold": "Poczekaj na pomoc albo przytrzymaj „%s” przez %s s, aby się poddać",
+	"playerrevive.gui.label.time_left": "Pozostały czas: %s",
 	"playerrevive.revive.item": "Potrzebujesz %s"
 }

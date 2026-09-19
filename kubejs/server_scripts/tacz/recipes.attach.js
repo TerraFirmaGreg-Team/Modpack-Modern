@@ -178,7 +178,7 @@ function registerTACZAttachRecipes(event){
 		.duration(20)
 		
 	event.recipes.gtceu.assembler('tfg_tacz:laser_a_grip')
-		.itemInputs('2x #forge:ingots/tungsten', '8x #forge:screws/tungsten', '#forge:lenses/light_blue',
+		.itemInputs('2x #forge:ingots/tungsten', '8x #forge:screws/tungsten', 'gtceu:glass_lens',
 					'#gtceu:batteries/ev', '8x #forge:fine_wires/aluminium')
 		.inputFluids(Fluid.of('gtceu:polytetrafluoroethylene', 144*4))
 		.itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:grip_lf11"}'))
@@ -186,7 +186,7 @@ function registerTACZAttachRecipes(event){
 		.EUt(GTValues.VA[GTValues.EV])
 		.duration(20)
 	event.recipes.gtceu.assembler('tfg_tacz:laser_b_grip')
-		.itemInputs('3x #forge:ingots/tungsten', '10x #forge:screws/tungsten', '#forge:lenses/light_blue',
+		.itemInputs('3x #forge:ingots/tungsten', '10x #forge:screws/tungsten', 'gtceu:glass_lens',
 					'2x #gtceu:batteries/ev', '16x #forge:fine_wires/aluminium')
 		.inputFluids(Fluid.of('gtceu:polytetrafluoroethylene', 144*8))
 		.itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:grip_sl_2"}'))

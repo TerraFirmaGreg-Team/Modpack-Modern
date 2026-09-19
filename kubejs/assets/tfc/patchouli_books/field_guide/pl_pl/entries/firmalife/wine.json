@@ -30,7 +30,7 @@
     },
     {
       "type": "tfc:multimultiblock",
-      "text": "A grape trellis.",
+      "text": "Kratka słupkowa do winorośli.",
       "multiblocks": [
         {
           "pattern": [
@@ -81,7 +81,7 @@
     {
       "type": "patchouli:crafting",
       "recipe": "firmalife:crafting/wood/acacia_barrel_press",
-      "text": "The barrel press is the last step in grape processing."
+      "text": "Prasa beczkowa jest ostatnim etapem przetwarzania winogron."
     },
     {
       "type": "patchouli:text",
@@ -90,7 +90,7 @@
     {
       "type": "tfc:glassworking_recipe",
       "recipe": "firmalife:glassworking/olivine_wine_bottle",
-      "text": "Wine must be bottled in a proper wine bottle, made of non-silica glass."
+      "text": "Wino należy butelkować w odpowiednią butelkę do wina, wykonaną ze szkła bezkrzemowego."
     },
     {
       "type": "patchouli:crafting",

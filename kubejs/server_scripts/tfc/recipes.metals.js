@@ -107,6 +107,7 @@ function registerTFCMetalsRecipes(event) {
 		['tfc:metal/ingot/weak_steel', 'tfc:metal/ingot/pig_iron', 'tfc:powder/flux'])
 		.heated()
 		.recipeTier(1)
+		.circuit(2)
 		.id(`greate:compacting/high_carbon_black_steel`)
 
 	event.recipes.gtceu.alloy_smelter('tfg/high_carbon_black_steel')
@@ -123,6 +124,7 @@ function registerTFCMetalsRecipes(event) {
 		['tfc:metal/ingot/weak_blue_steel', 'tfc:metal/ingot/black_steel', 'tfc:powder/flux'])
 		.heated()
 		.recipeTier(1)
+		.circuit(2)
 		.id(`greate:compacting/high_carbon_blue_steel`)
 
 	event.recipes.gtceu.alloy_smelter('tfg/high_carbon_blue_steel')
@@ -139,6 +141,7 @@ function registerTFCMetalsRecipes(event) {
 		['tfc:metal/ingot/weak_red_steel', 'tfc:metal/ingot/black_steel', 'tfc:powder/flux'])
 		.heated()
 		.recipeTier(1)
+		.circuit(2)
 		.id(`greate:compacting/high_carbon_red_steel`)
 
 	event.recipes.gtceu.alloy_smelter('tfg/high_carbon_red_steel')
@@ -213,6 +216,7 @@ function registerTFCMetalsRecipes(event) {
 	event.recipes.greate.compacting('tfc:jacks', ['#forge:rods/brass', '#forge:plates/brass', 'tfc:powder/flux'])
 		.heated()
 		.recipeTier(0)
+		.circuit(3)
 		.id('greate:compacting/jacks')
 
 	// Декрафт Jacks

@@ -5,7 +5,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "The $(thing)Sprinkler$() is a device that sprinkles water in a 5x6x5 area centered on the block below the sprinkler block. You know it is working when it drips out water particles. Sprinklers placed facing up irrigate the same 5x6x5 area above."
+			"text": "El $(thing)Aspersor$() es un dispositivo que rocía agua en un área de 5x6x5 centrada en el bloque debajo del bloque del aspersor. Sabes que está funcionando cuando gotea partículas de agua. Los aspersores colocados"
 		},
 		{
 			"type": "tfc:anvil_recipe",
@@ -20,7 +20,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "You can right-click a pipe with a GregTech Frame (such as a $(thing)Copper Frame$()) to make them flush with the wall, or use a Greenhouse Port. You can then attach your sprinkler directly to the pipe! Right-click fluid pipes with a wrench to change their direction, and sneak-right-click them with an $(thing)empty offhand$() to make them one-way."
+			"text": "Puedes hacer clic con el botón derecho en una tubería con un marco GregTech (como un $(thing)Marco de Cobre$()) para que quede al ras con la pared, o usar un puerto de invernadero. Luego puedes conectar tu aspersor directamente a la tubería. Haz click derecho a una tubería de fluidos para cambiar la dirección, después agacharse y click derecho con la $(thing) mano vacía $() para hacer que sean de una sola dirección."
 		}
 	],
 	"read_by_default": true,

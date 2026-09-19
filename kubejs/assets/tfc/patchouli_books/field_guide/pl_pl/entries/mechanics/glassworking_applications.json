@@ -422,7 +422,7 @@
     {
       "type": "tfc:glassworking_recipe",
       "recipe": "tfc:glassworking/lens",
-      "text": "The $(thing)lens$() is used for crafting the $(thing)spyglass$(), $(thing)compass$(), and other things."
+      "text": "$(thing)Soczewka$() jest używana do tworzenia $(thing)lunety$(), $(thing)kompasu$() i innych rzeczy."
     }
   ],
   "read_by_default": true,

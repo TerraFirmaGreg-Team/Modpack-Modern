@@ -12,9 +12,24 @@ TFGServerEvents.dimensionalPowerConsumption(event => {
     event.add("ad_astra:venus_orbit", 200000);
 });
 
+// LLM Google Gemini search tool was used to find these because Kubsejs docs sux hard
+
+function linkOf(key, url) {
+  return Text.translate(key)
+    .aqua()
+    .underlined()
+    .click(url)
+    .hover(Text.translate('tfg.clientmessage.welcome.3'))
+}
+
 PlayerEvents.loggedIn(event => {
-	event.player.tell(Text.translate("tfg.clientmessage.welcome.1"));
-	event.player.tell(Text.translate("tfg.clientmessage.welcome.2"));
+    event.player.tell(Text.translate('tfg.clientmessage.welcome.1'))
+    event.player.tell(Text.translate('tfg.clientmessage.welcome.2',
+      linkOf('tfg.clientmessage.link.website', 'https://terrafirmagreg.team'),
+      linkOf('tfg.clientmessage.link.field_guide', 'https://wiki.terrafirmagreg.team/modern/field-guide'),
+      linkOf('tfg.clientmessage.link.recipe_book', 'https://wiki.terrafirmagreg.team/modern/recipe-book'),
+      linkOf('tfg.clientmessage.link.quest_book', 'https://wiki.terrafirmagreg.team/modern/quest-book')
+    ))
 })
 
 // Vase Sounds

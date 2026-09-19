@@ -16,7 +16,7 @@ on:
         required: true
   schedule:
     # Run daily at 3 AM UTC
-    - cron: '0 3 * * *'
+    - cron: '0 3 */2 * *'
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -39,7 +39,7 @@ jobs:
         uses: actions/checkout@v7
 
       - name: "Crowdin"
-        uses: crowdin/github-action@v2
+        uses: crowdin/github-action@v3
         with:
           upload_sources: true
           download_translations: ${{ github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' }}
@@ -64,7 +64,7 @@ jobs:
         uses: actions/checkout@v7
 
       - name: "Crowdin"
-        uses: crowdin/github-action@v2
+        uses: crowdin/github-action@v3
         with:
           upload_sources: true
           download_translations: ${{ github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' }}

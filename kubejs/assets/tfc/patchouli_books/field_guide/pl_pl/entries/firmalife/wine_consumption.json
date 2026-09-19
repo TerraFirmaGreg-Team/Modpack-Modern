@@ -23,7 +23,7 @@
     {
       "type": "patchouli:crafting",
       "recipe": "firmalife:crafting/wood/hickory_wine_shelf",
-      "text": "The $(thing)Wine Shelf$() is the perfect accessory for your vinery, allowing you to display and store your wine bottles in style."
+      "text": "$(thing)Półka na wino$() to idealny dodatek do twojej winiarni. Pozwala stylowo wystawiać i przechowywać butelki wina."
     }
   ],
   "read_by_default": true,

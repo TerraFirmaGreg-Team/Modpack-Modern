@@ -1,36 +1,36 @@
 {
-  "name": "Выделка кожи",
+  "name": "Leather Making",
   "category": "tfc:mechanics",
   "icon": "minecraft:leather",
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "$(thing)Кожа$() - это прочный материал, получаемый из шкур животных. Она необходима для изготовления $(l:mechanics/armor)Доспехов$(), $(thing)Седел$() или $(l:mechanics/bellows)Меха$(). $()Сырые шкуры$() должны быть обработаны несколькими процессами: $(l:mechanics/leather_making#soaking)замачиванием$(), $(l:mechanics/leather_making#scraping)скоблением$(), $(l:mechanics/leather_making#preparing)подготовкой$() и $(l:mechanics/leather_making#tanning)дублением$(), чтобы превратить их в $(thing)Кожу$()."
+      "text": "$(thing)Leather$() is a sturdy material formed from animal hides. It is required to craft $(l:mechanics/armor)Armor$(), $(thing)Saddles$(), or a $(l:mechanics/bellows)Bellows$(). $()Raw Hides$() must be treated through several processes: $(l:mechanics/leather_making#soaking)soaking$(), $(l:mechanics/leather_making#scraping)scraping$(), $(l:mechanics/leather_making#preparing)preparing$(), and $(l:mechanics/leather_making#tanning)tanning$() to turn them into $(thing)Leather$()."
     },
     {
       "type": "patchouli:spotlight",
       "item": "tfc:small_raw_hide,tfc:medium_raw_hide,tfc:large_raw_hide",
       "title": "Сырая шкура",
       "link_recipes": true,
-      "text": "Для начала вам нужно будет получить $(thing)Сырую шкуру$(), которая выпадает при убийстве многих различных $(l:the_world/wild_animals)Животных$(). Разные животные дают шкуры разного размера."
+      "text": "To get started you will first need to obtain $(thing)Raw Hide$(), which is dropped when slaughtering many different $(l:the_world/wild_animals)Animals$(). Different animals will drop different sizes of $(thing)Raw Hide$()."
     },
     {
       "type": "patchouli:text",
-      "text": "Для выделки кожи потребуются различные материалы и инструменты. Вам понадобится: $(br)$(li)$(l:mechanics/barrels#limewater)Известковая вода$() - раствор $(l:mechanics/flux)флюса$() в $(thing)Воде$()$(li)Вода$(li)$(l:mechanics/barrels#tannin)Дубильная кислота$() - кислый раствор, сделанный из коры некоторых деревьев.$(li)$(thing)Сырые шкуры$()$(br2)Имея все это под рукой, вы готовы начать процесс выделки кожи."
+      "text": "Leather making will require several materials and tools. You will need:$(br)$(li)$(l:mechanics/barrels#limewater)Limewater$() - a solution of $(l:mechanics/flux)Flux$() in $(thing)Water$()$(li)Water$(li)$(l:mechanics/barrels#tannin)Tannin$() - an acidic solution made from the bark of some trees.$(li)$(thing)Raw Hides$()$(br2)With all that on hand, you are ready to begin the leather working process."
     },
     {
       "type": "tfc:sealed_barrel_recipe",
       "anchor": "soaking",
       "recipe": "tfc:barrel/medium_soaked_hide",
-      "text": "Сначала сырые шкуры должны быть $(thing)замочены$(), чтобы очистить их и размягчить ненужный материал перед обработкой. Это можно сделать, запечатав некоторые $(thing)Сырые шкуры$() в $(l:mechanics/barrels#limewater)Бочке с известковой водой$() как минимум на восемь часов."
+      "text": "First, raw hides must be $(thing)soaked$() to clean them and loosen unwanted material before processing. This can be done by sealing some $(thing)Raw Hide$() in a $(l:mechanics/barrels#limewater)Barrel of Limewater$() for at least eight hours."
     },
     {
       "type": "patchouli:spotlight",
       "anchor": "scraping",
       "item": "tfc:small_scraped_hide,tfc:medium_scraped_hide,tfc:large_scraped_hide",
-      "title": "Скобление",
+      "title": "Соскабливание",
       "link_recipes": true,
-      "text": "После замачивания $(thing)Замоченные шкуры$() должны быть очищены от лишнего материала. Для скобления шкур поместите шкуру на бок $(thing)Бревна$(). С помощью $(thing)Ножа$(), $(item)$(k:key.use)$() по каждой части шкуры, и она начнет менять текстуру."
+      "text": "After soaking, $(thing)Soaked Hides$() must be scraped which removes any excess material. In order to scrape hides, place the hide on the side of a $(thing)Log$(). With a $(thing)Knife$(), $(item)$(k:key.use)$() on each part of the hide and it will start to change texture."
     },
     {
       "type": "patchouli:image",
@@ -40,20 +40,20 @@
         "tfc:textures/gui/book/tutorial/soaked_hide_3.png",
         "tfc:textures/gui/book/tutorial/soaked_hide_4.png"
       ],
-      "text": "Как только шкура полностью очищена, ее можно разбить, чтобы поднять $(thing)Очищенную шкуру$().",
+      "text": "Once the hide is fully scraped, it can be broken to pick up a $(thing)Scraped Hide$().",
       "border": true
     },
     {
       "type": "tfc:sealed_barrel_recipe",
       "anchor": "preparing",
       "recipe": "tfc:barrel/medium_prepared_hide",
-      "text": "После скобления $(thing)Очищенные шкуры$() должны быть запечатаны в $(l:mechanics/barrels)Бочке$() с $(thing)Водой$() как минимум на восемь часов для последней очистки перед дублением."
+      "text": "After scraping, $(thing)Scraped Hides$() must be sealed in a $(l:mechanics/barrels)Barrel$() of $(thing)Water$() for at least eight hours, for one final cleaning before tanning."
     },
     {
       "type": "tfc:sealed_barrel_recipe",
       "anchor": "tanning",
       "recipe": "tfc:barrel/medium_leather",
-      "text": "Наконец, $(thing)Подготовленные шкуры$() должны быть запечатаны в $(l:mechanics/barrels#tannin)Бочке с дубильной кислотой$(), которая является кислым химическим соединением, помогающим превратить шкуру в $(thing)Кожу$(). После еще восьми часов вы можете извлечь $(thing)Кожу$() из бочки."
+      "text": "Finally, $(thing)Prepared Hides$() must be sealed in a $(l:mechanics/barrels#tannin)Barrel of Tannin$(), which is an acidic chemical compound that helps to convert the hide to $(thing)Leather$(). After another eight hours, you can remove the $(thing)Leather$() from the barrel."
     }
   ],
   "read_by_default": true,

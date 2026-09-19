@@ -5,12 +5,12 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "$(thing)Физические типы урона$() описывают природу урона, который может быть нанесен игроками и мобами. Существует три типа: $(thing)Проникающий$(), $(thing)Режущий$() и $(thing)Дробящий$(). Некоторые сущности могут сопротивляться определенным типам урона, делая их убийство трудным или невозможным определенными методами."
+      "text": "$(thing)Physical Damage Types$() describe the nature of the damage that can be dealt by players and mobs. There are three types: $(thing)Piercing$(), $(thing)Slashing$(), and $(thing)Crushing$(). Some entities are able to resist certain damage types, making it difficult or impossible to kill them with certain methods."
     },
     {
       "type": "patchouli:text",
-      "text": "$(thing)Проникающий$() урон наносится острыми оружиями, такими как $(thing)Ножи$(), снарядами, такими как $(thing)Стрелы$() и $(thing)Дротики$(), клыкастыми монстрами, такими как $(thing)Пауки$(), и $(l:the_world/flora#cacti)Кактусами$(). $(thing)Скелеты$() невосприимчивы к проникающему урону, а $(thing)Зомби$() слегка уязвимы к нему.",
-      "title": "Проникающий"
+      "text": "$(thing)Piercing$() damage is dealt by pointy weapons such as $(thing)Knives$(), projectiles like $(thing)Arrows$() and $(thing)Javelins$(), fanged monsters like $(thing)Spiders$(), and $(l:the_world/flora#cacti)Cacti$(). $(thing)Skeletons$() are invulnerable to piercing damage, and $(thing)Zombies$() are slightly vulnerable to it.",
+      "title": "Piercing"
     },
     {
       "type": "patchouli:text",
@@ -25,11 +25,11 @@
     {
       "type": "patchouli:text",
       "anchor": "armor",
-      "text": "$(l:mechanics/armor)Броня$() имеет свой набор сопротивлений урону. Эти сопротивления изменяются в зависимости от качества брони, но могут отличаться среди брони одного и того же уровня. Среди бронз $(thing)висмутовая бронза$() лучше всего сопротивляется $(thing)Дробящему$() урону, $(thing)Черная бронза$() лучше всего сопротивляется $(thing)Проникающему$() урону, а обычная $(thing)Бронза$() неплохо справляется с любым уроном."
+      "text": "$(l:mechanics/armor)Armor$() has its own set of damage resistances. These resistances scale with the quality of armor, but may differ among armors of the same tier. Among bronzes, $(thing)Bismuth Bronze$() armor is best at resisting $(thing)Crushing$(), $(thing)Black Bronze$() is best at resisting $(thing)Piercing$() and regular $(thing)Bronze$() does moderately well with any damage."
     },
     {
       "type": "patchouli:text",
-      "text": "Для $(thing)Цветной стали$(), $(thing)Синяя сталь$() лучше сопротивляется $(thing)Дробящему$() урону, в то время как $(thing)Красная сталь$() лучше сопротивляется $(thing)Проникающему$() урону."
+      "text": "For $(thing)Colored Steel$(), $(thing)Blue Steel$() is better at resisting $(thing)Crushing$() damage, whereas $(thing)Red Steel$() is better at resisting $(thing)Piercing$() damage."
     }
   ],
   "read_by_default": true

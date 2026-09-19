@@ -16,7 +16,7 @@
       "type": "patchouli:crafting",
       "recipe": "tfc:crafting/vanilla/bowl",
       "title": "木碗",
-      "text": "$(thing)木碗$()是通过将木材与$(thing)胶水$()合成得到的。$(br2)$(thing)胶水$()可通过将$(thing)骨粉$()浸入装有$(l:mechanics/barrels#limewater)石灰水$()的大桶中获得。"
+      "text": "木碗是通过将木材与$(thing)胶水$()合成得到的。$(br2)$(thing)胶水$()可通过将$(thing)骨粉$()浸入装有$(l:mechanics/barrels#limewater)石灰水$()的大桶中获得。"
     },
     {
       "type": "tfc:sealed_barrel_recipe",

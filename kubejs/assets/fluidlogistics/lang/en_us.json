@@ -253,5 +253,8 @@
 	"item.fluidlogistics.phantom_chain.tooltip.summary": "When _connecting_ Chain Conveyors, their _chains_ are only visible while _holding_ a _Phantom Chain_",
 	"itemGroup.fluidlogistics.fluidlogistics_tab": "Create: Fluid Logistics",
 	"logistically_linked.protected": "This logistics network is protected",
-	"resourcepack.fluidlogistics.cu_again_for_fluidlogistics": "Legacy Copper Textures for Fluid Logistics"
+	"resourcepack.fluidlogistics.cu_again_for_fluidlogistics": "Legacy Copper Textures for Fluid Logistics",
+	"fluidlogistics.configuration.advancedLogisticsNetworkEnabled": "Fluid Package System",
+	"fluidlogistics.configuration.section.fluidlogistics.common.toml": "Fluid Package Configuration",
+	"fluidlogistics.configuration.section.fluidlogistics.common.toml.title": "Fluid Package Configuration"
 }

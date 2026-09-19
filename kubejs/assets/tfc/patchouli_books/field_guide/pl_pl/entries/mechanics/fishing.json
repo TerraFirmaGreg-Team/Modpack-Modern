@@ -10,13 +10,13 @@
     {
       "type": "tfc:anvil_recipe",
       "recipe": "tfc:anvil/bismuth_bronze_fish_hook",
-      "text": "First, you have to forge a fishing hook in an $(l:mechanics/anvils)Anvil$()."
+      "text": "Najpierw musisz wykuć haczyk na $(l:mechanics/anvils)kowadle$()."
     },
     {
       "type": "patchouli:crafting",
       "recipe": "tfc:crafting/metal/fishing_rod/bismuth_bronze",
       "title": "Wędka",
-      "text": "The fishing rod is crafted with a fishing hook."
+      "text": "Wędkę można wytworzyć z haczyka."
     },
     {
       "type": "patchouli:text",
@@ -31,7 +31,7 @@
       "images": [
         "tfc:textures/gui/book/tutorial/fishing.png"
       ],
-      "text": "The fishing bar replaces the experience bar when active.",
+      "text": "Pasek łowienia zastępuje pasek doświadczenia, gdy jest aktywny.",
       "border": true
     }
   ],

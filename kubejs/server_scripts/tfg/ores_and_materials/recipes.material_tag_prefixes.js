@@ -119,7 +119,7 @@ function processIngotDouble(event, material) {
 	const doubleIngotItem = ChemicalHelper.get(TFGTagPrefix.ingotDouble, material, 1);
 
 	addMaterialRecycling(event, doubleIngotItem, material, "double_ingot", TFGTagPrefix.ingotDouble);
-	addMaterialWelding(event, doubleIngotItem, ingotItem, ingotItem, material, 5, 1, TFGTagPrefix.ingotDouble, 1);
+	addMaterialWelding(event, doubleIngotItem, ingotItem, ingotItem, material, 5, 1, TFGTagPrefix.ingotDouble, 0);
 
 	event.recipes.gtceu.bender(`tfg:bend_${material.getName()}_double_ingot_electric_only`)
 		.itemInputs(ingotItem.withCount(2))
@@ -152,7 +152,7 @@ function processBlock(event, material) {
 			ingotArray.push(ingotItem)
 
 		event.recipes.greate.compacting(blockItem, ingotArray)
-			.recipeTier(1)
+			.recipeTier(0)
 			.circuitNumber(9)
 			.heated()
 			.id(`greate:compacting/${materialName}_block`)
@@ -164,7 +164,7 @@ function processBlock(event, material) {
 			gemArray.push(gemItem)
 
 		event.recipes.greate.compacting(blockItem, gemArray)
-			.recipeTier(1)
+			.recipeTier(0)
 			.circuitNumber(9)
 			.id(`greate:compacting/${materialName}_block`)
 	}

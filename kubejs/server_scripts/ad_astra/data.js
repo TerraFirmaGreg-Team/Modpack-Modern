@@ -13,7 +13,7 @@ function registerTFCDataForAdAstra(event) {
 	event.itemSize('ad_astra:launch_pad', 'very_large', 'very_heavy')
 
 	event.foodItem('ad_astra:cheese', food => {
-		food.hunger(3)
+		food.hunger(4)
 		food.saturation(2)
 		food.dairy(3)
 		food.decayModifier(0.9)

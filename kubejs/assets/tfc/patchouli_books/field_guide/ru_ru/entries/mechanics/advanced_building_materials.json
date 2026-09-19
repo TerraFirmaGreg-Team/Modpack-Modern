@@ -26,14 +26,14 @@
         },
         {
             "type": "patchouli:text",
-            "text": "Алебастр можно $(l:mechanics/dye)окрасить$() в любой цвет в $(l:mechanics/barrels)бочке$() с красителем. Блоки необработанного алебастра также можно $(l:mechanics/chisel)обтесать$() в $(thing)гладкий алебастр$(), используя режим зубила (долота) $(thing)\"Сглаживание\"$(), или сделать из них ступени, плиты и ограды.",
+            "text": "Алебастр можно $(l:mechanics/dye)окрасить$() в любой цвет в $(l:mechanics/barrels)бочке$() с красителем. Блоки необработанного алебастра также можно $(l:mechanics/chisel)обтесать$() в $(thing)гладкий алебастр$(), используя режим зубила (долота) $(thing)\"Сглаживание\"$(), или сделать из них ступеньки, плиты и ограды.",
             "title": "Декорации из алебастра"
         },
         {
             "type": "patchouli:crafting",
             "recipe": "tfc:crafting/alabaster/magenta_bricks_stairs",
             "recipe2": "tfc:crafting/alabaster/magenta_polished_slab",
-            "title": "Ступени и плиты"
+            "title": "Ступеньки и плиты"
         },
         {
             "type": "patchouli:text",

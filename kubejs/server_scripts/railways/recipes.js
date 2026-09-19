@@ -139,13 +139,13 @@ const registerRailWaysRecipes = (event) => {
 		'AAA',
 		'ACA'
 		], {
-		A: '#forge:rods/long/steel',
+		A: '#forge:rods/long/wood',
 		B: 'railways:small_buffer',
 		C: '#forge:tools/hammers'
 	}).id('railways:shaped/buffer')
 
 	event.recipes.gtceu.assembler(`tfg:railways/buffer`)
-		.itemInputs(`6x #forge:rods/long/steel`, `2x railways:small_buffer`)
+		.itemInputs(`6x #forge:rods/long/wood`, `2x railways:small_buffer`)
 		.circuit(1)
 		.itemOutputs(`railways:buffer`)
 		.duration(200)

@@ -1,26 +1,26 @@
 {
-  "name": "Beneath Wild Fruits",
+  "name": "深界の野生のフルーツ",
   "category": "tfc:beneath",
   "icon": "tfg:textures/item/fruit_trees/magmango_sapling.png",
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "The $(l:beneath)Beneath$() hosts its own unique selection of wild fruits, which have adapted to the extreme conditions underground. Wild fruits can be cultivated in all the same ways as regular $(l:the_world/wild_fruits)wild fruits$() in the Overworld."
+      "text": "$(l:beanth)深界$()には、地下の過酷な環境に適応した、この場所ならではの野生の果物が自生しています。これらの野生の果物は、オーバーワールドにある通常の$(l:the_world/wild_fruits)野生の果物$()とまったく同じ方法で栽培することができます。"
     },
     {
       "type": "patchouli:text",
       "title": "内容物",
-      "text": "$(li)$(l:tfc:beneath/beneath_wild_fruits#lavacado)Lavacado$()$(li)$(l:tfc:beneath/beneath_wild_fruits#magmango)Magmango$()"
+      "text": "$(li)$(l:tfc:beneath/beneath_wild_fruits#lavacado)ラヴァボカド$()$(li)$(l:tfc:beneath/beneath_wild_fruits#magmango)マグマンゴー$()"
     },
     {
       "type": "patchouli:text",
       "anchor": "lavacado",
-      "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 8 - 80 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 20 - 100 %$(br2)Lavacado trees grow in the months of December through April, start flowering in May and June, and bear fruit in July.",
+      "text": "$(bold)$(l:the_world/climate#temperature)気温$(): 8 - 80°C$(br)$(bold)$(l:mechanics/hydration)水分$(): 20 - 100%$(br2)ラヴァボカドの木は12月から4月にかけて成長し、5月から6月に開花、7月に果実をつけます。",
       "title": "ラヴァボカド"
     },
     {
       "type": "tfc:multimultiblock",
-      "text": "Wild Lavacado trees can be found between Y=198 and Y=60.",
+      "text": "野生のラヴァボカドの木はY=198とY=60の間で見られます。",
       "multiblocks": [
         {
           "pattern": [
@@ -80,12 +80,12 @@
     {
       "type": "patchouli:text",
       "anchor": "magmango",
-      "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 8 - 80 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 30 - 100 %$(br2)Magmango trees grow in the months of October through February, start flowering in March and April, and bear fruit in May.",
+      "text": "$(bold)$(l:the_world/climate#temperature)気温$(): 8 - 80°C$(br)$(bold)$(l:mechanics/hydration)水分$(): 30 - 100%$(br2)マグマンゴーの木は10月から2月にかけて成長し、3月から4月に開花、5月に果実をつけます。",
       "title": "マグマンゴー"
     },
     {
       "type": "tfc:multimultiblock",
-      "text": "Wild Magmango trees can be found between Y=198 and Y=60.",
+      "text": "野生のマグマンゴーの木はY=198とY=60の間で見られます。",
       "multiblocks": [
         {
           "pattern": [

@@ -15,12 +15,12 @@
         {
             "type": "patchouli:crafting",
             "recipe": "tfc:kjs/damage/shapeless/wool_yarn",
-            "text": "Crafting $(thing)Wool$() with a Spindle yields $(thing)Wool Yarn$()."
+            "text": "Przetwarzanie $(thing)wełny$() z wrzecionem daje $(thing)wełnianą przędzę$()."
         },
         {
             "type": "patchouli:crafting",
             "recipe": "tfc:crafting/wood/acacia_loom",
-            "text": "The loom is crafted from just $(thing)Lumber$() and a $(thing)Stick$()."
+            "text": "Krosno można wykonać tylko z $(thing)desek$() i $(thing)patyka$()."
         },
         {
             "type": "tfc:loom_recipe",
@@ -47,13 +47,13 @@
         {
             "type": "tfc:loom_recipe",
             "recipe": "tfc:loom/silk_cloth",
-            "text": "$(thing)Silk Cloth$() can be made in the loom out of $(thing)String$(). It can be used as a wool cloth substitute in some cases."
+            "text": "$(thing)Jedwabną tkaninę$() można wytworzyć na krośnie z $(thing)jedwabnej nici$(). W niektórych przypadkach może ona zastępować wełnianą tkaninę."
         },
         {
             "type": "tfc:loom_recipe",
             "anchor": "burlap_cloth",
             "recipe": "tfc:loom/burlap_cloth",
-            "text": "$(thing)Burlap Cloth$() does not have a use, but it can be made from $(l:mechanics/crops#jute)Jute Fiber$()."
+            "text": "$(thing)Jutowa tkanina$() nie ma zastosowania, ale można ją wytworzyć z $(l:mechanics/crops#jute)jutowego włókna$()."
         },
         {
             "type": "patchouli:crafting",

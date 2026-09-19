@@ -2152,6 +2152,20 @@
 			x: 10.0d
 			y: 1.0d
 		}
+		{
+			dependencies: ["26394C1290D70AB6"]
+			description: ["{quests.medium_voltage.heat_pump.desc}"]
+			id: "317C71249EBA0F15"
+			optional: true
+			subtitle: "{quests.medium_voltage.heat_pump.subtitle}"
+			tasks: [{
+				id: "4FA36821493DFA40"
+				item: "tfg:heat_pump"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 19.5d
+		}
 	]
 	subtitle: ["{quests.medium_voltage.subtitle}"]
 	title: "{quests.medium_voltage}"

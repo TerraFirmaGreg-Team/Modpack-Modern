@@ -1,11 +1,11 @@
 {
-	"name": "Biomes",
+	"name": "バイオーム",
 	"category": "tfc:beneath",
 	"icon": "minecraft:spyglass",
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "The Beneath has a full set of new biomes to explore! The Beneath can be split into three vertical layers, each with their own set of biomes. Each one is more hot and dangerous as you descend!"
+			"text": "深界には、探検しがいのある新しいバイオームがたくさんあります! 深界はそれぞれ独自のバイオームを持つ3つの垂直層に分割することができます。 下に行けば行くほど、より暑く、より危険になっていきます！"
 		},
 		{
 			"type": "patchouli:image",
@@ -14,7 +14,7 @@
 				"tfg:textures/gui/field_guide/nether/salt_caves.png"
 			],
 			"border": true,
-			"text": "Like a warm ocean breeze, this biome is full of $(item)Halite$(). Makes for a great base location!"
+			"text": "暖かい海風のように、このバイオームは $(item)岩塩$()でいっぱいです。"
 		},
 		{
 			"type": "patchouli:image",
@@ -23,16 +23,16 @@
 				"tfg:textures/gui/field_guide/nether/muggy_bog.png"
 			],
 			"border": true,
-			"text": "Humid and swamp-like. A safe source of wood, if you can avoid the $(thing)Crocodiles$()."
+			"text": "湿気の多い湿地帯。 $(thing)ワニ$()を避けることができれば、安全な木材の供給源となります。"
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Decaying Caverns",
+			"title": "腐食洞窟",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/decaying_caverns.png"
 			],
 			"border": true,
-			"text": "Nature's recyclers are hard at work in this damp region full of rot."
+			"text": "自然の分解者たちは、腐敗に満ちたこの湿った地域で一生懸命に働いています。"
 		},
 		{
 			"type": "patchouli:image",
@@ -41,16 +41,16 @@
 				"tfg:textures/gui/field_guide/nether/webbed_lair.png"
 			],
 			"border": true,
-			"text": "No prizes for guessing what lives here! Also features huge $(thing)Travertine$() pillars."
+			"text": "ここに住んでいるのが何か、当てても賞品は出ませんよ！また、巨大な $(thing)鍾乳石$() の柱も特徴です。"
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Tar Pools",
+			"title": "タールピット",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/tar_pools.png"
 			],
 			"border": true,
-			"text": "Sandy like a small desert, this area contains sticky $(thing)Tar Pits$() full of oil."
+			"text": "小さな砂漠みたいに砂まみれのこのエリアには、ねばつく石油でいっぱいの $(thing)タールピット$()があります。"
 		},
 		{
 			"type": "patchouli:image",
@@ -59,7 +59,7 @@
 				"tfg:textures/gui/field_guide/nether/geothermal_springs.png"
 			],
 			"border": true,
-			"text": "No Sulfur Cubes here, but this steamy biome can be a great place to find $(thing)Spring Water$() for healing."
+			"text": "サルファーキューブは存在しませんが、この湯気まみれのバイオームは癒しのための $(thing)温泉$()を見つけるのに最適な場所です。"
 		},
 		{
 			"type": "patchouli:image",
@@ -68,43 +68,43 @@
 				"tfg:textures/gui/field_guide/nether/thorny_brambles.png"
 			],
 			"border": true,
-			"text": "A difficult to traverse biome with plants that affect you when stepped on. Watch out!"
+			"text": "踏むと影響を受ける植物が生えている、移動が難しいバイオームです。気をつけて！"
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Lush Hollow",
+			"title": "繁茂した空洞",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/lush_hollow.png"
 			],
 			"border": true,
-			"text": "Hot and full of greenery! The dense ferns hides the underlying $(thing)Kaolin Clay$()."
+			"text": "暑くて緑あふれる場所です！生い茂ったシダが、その下にある$(thing)カオリン粘土$()を覆い隠しています。"
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Ash Forest",
+			"title": "灰の森",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/ash_forest.png"
 			],
 			"border": true,
-			"text": "What remains of the Lush Hollow after the frequent fires caused by the heat."
+			"text": "暑さによって頻繁に発生した火災の後、繁茂した空洞には何が残っているのでしょうか。"
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Lava Floes",
+			"title": "溶岩床",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/lava_floes.png"
 			],
 			"border": true,
-			"text": "An ore-rich $(thing)Pyroxenite$() area crisscrossed with rivers of lava."
+			"text": "鉱物資源が豊富な$(thing)輝岩$()のエリアには、溶岩流が縦横に走っています。"
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Basalt Deltas",
+			"title": "玄武岩の三角州",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/basalt_deltas.png"
 			],
 			"border": true,
-			"text": "Everyone's favourite nether biome returns, and is just as dangerous to navigate as ever."
+			"text": "みんなが大好きなネザーバイオームが返ってきました！相変わらず、ここを渡り歩くのは危険極まりないです。"
 		}
 	],
 	"read_by_default": true

@@ -1,37 +1,37 @@
 {
-    "name": "Литьё с помощью каналов",
+    "name": "Casting with Channels",
     "category": "tfc:tfcchannelcasting",
     "icon": "tfcchannelcasting:channel",
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "Вы можете отливать металл из $(thing)тигля$() сразу в несколько форм, используя $(thing)литейные каналы$() и $(thing)столы для форм$(). Просто соедините $(thing)столы для форм$() с $(thing)тиглем$() при помощи $(thing)каналов$(), затем щёлкните правой кнопкой мыши по $(thing)каналу$(), расположенному рядом с $(thing)тиглем$(). Shift + ПКМ по $(thing)столу для форм$() с $(l:getting_started/pottery#mold)формой$(), чтобы установить или убрать её."
+            "text": "You can cast from a $(thing)Crucible$() to more than one mold at a time using $(thing)Channels$() and $(thing)Mold Tables$(). Simply connect the $(thing)Mold Tables$() to the $(thing)Crucible$() using $(thing)Channels$() and right-click on the $(thing)Channel$() next to the $(thing)Crucible$(). Shift-right-click the $(thing)Mold Table$() with a $(l:getting_started/pottery#mold)Mold$() to place it or remove it."
         },
         {
             "type": "tfc:knapping_recipe",
             "recipe": "tfcchannelcasting:fire_clay_knapping/unfired_channel_4",
-            "text": "Лепка $(thing)необожжённых литейных каналов$()."
+            "text": "Knapping several $(thing)Unfired Channels$()."
         },
         {
             "type": "tfc:knapping_recipe",
             "recipe": "tfcchannelcasting:fire_clay_knapping/unfired_mold_table",
-            "text": "Лепка $(thing)необожжённого стола для форм$()."
+            "text": "Knapping an $(thing)Unfired Mold Table$()."
         },
         {
             "type": "tfc:heat_recipe",
             "recipe": "tfcchannelcasting:heating/channel",
-            "text": "После лепки литейных каналы и стола для форм их необходимо $(thing)обжечь$(), как и любую другую керамику."
+            "text": "After the channels and mold table are knapped, they will need to be $(thing)fired$(), like any piece of pottery."
         },
         {
             "type": "patchouli:multiblock",
             "multiblock_id": "tfcchannelcasting:example",
-            "name": "Пример литейной установки",
+            "name": "A casting set up",
             "text": "",
             "enable_visualize": false
         },
         {
             "type": "patchouli:text",
-            "text": "$(li)Использование мехов на $(thing)литейном столе$() ускоряет охлаждение металла.$()$(li)Активация $(thing)канала$() импульсом редстоуна запускает процесс заливки металла.$()$(li)$(thing)литейные столы$() выдают сигнал компаратора.",
+            "text": "$(li)Using a bellow on a $(thing)Mold Table$() will cool the metal faster.$()$(li)Activating a $(thing)Channel$() with a redstone pulse will start pouring the metal.$()$(li)$(thing)Mold Tables$() output a comparator signal.",
             "title": "Автоматизация"
         }
     ],

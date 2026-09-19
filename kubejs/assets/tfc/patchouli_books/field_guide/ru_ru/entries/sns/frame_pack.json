@@ -6,7 +6,7 @@
     {
       "type": "patchouli:spotlight",
       "item": "sns:frame_pack",
-      "text": "$(item)Каркасный рюкзак$() — это тип $(l:sns/item_containers)предметного контейнера$(), по сути являющийся TFC сундуком на вашей спине. Как и TFC сундук, он учитывает $(l:getting_started/size_and_weight)систему размеров$() TFC."
+      "text": "$(item)Каркасный рюкзак$() это тип $(l:sns/item_containers)Предметных контейнеров$(). По сути, это сундук из TFC прямо на твоей спине. Как и сундук из TFC, он учитывает $(l:getting_started/size_and_weight)систему размеров$() TFC."
     },
     {
       "type": "patchouli:crafting",

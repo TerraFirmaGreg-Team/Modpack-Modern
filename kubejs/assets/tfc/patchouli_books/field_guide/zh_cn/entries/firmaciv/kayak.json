@@ -1,16 +1,16 @@
 {
-  "name": "橡皮艇",
+  "name": "皮划艇",
   "category": "tfc:firmaciv",
   "icon": "firmaciv:kayak_with_paddle_icon_only",
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "你最好的单人冒险伴侣。当然，这是因为它只用一个物品栏就能存放了。它是单人海上载具中最快的，并且有很强的机动性。如果要搬运皮划艇，把它敲碎就行了。",
-      "title": "橡皮艇"
+      "text": "你最好的单人冒险伴侣。当然，这是因为它只用一个物品栏就能存放了。它是单人海上载具中最快的，并且有很强的机动性。$(br2)如果要搬运皮划艇，把它敲碎就行了。",
+      "title": "皮划艇"
     },
     {
       "type": "patchouli:image",
-      "title": "橡皮艇",
+      "title": "皮划艇",
       "images": [
         "firmaciv:textures/gui/book/kayak_isometric.png"
       ],

@@ -41,8 +41,8 @@
           "B": "tfc:wood/stripped_log/douglas_fir[axis=x]"
         }
       },
-      "name": "Zwykła kłoda",
-      "text": "The first step in making a Dugout Canoe.",
+      "name": "Zwykły pień",
+      "text": "Pierwszy krok do utworzenia kanoe.",
       "enable_visualize": false
     },
     {
@@ -61,8 +61,8 @@
           "B": "firmaciv:wood/canoe_component_block/douglas_fir[canoe_carved=5,facing=east,end=true]"
         }
       },
-      "name": "Weird Slabs",
-      "text": "The top of the log has been removed using a saw.",
+      "name": "Dziwne płyty",
+      "text": "Góra pnia została usunięta za pomocą piły.",
       "enable_visualize": false
     },
     {
@@ -88,7 +88,7 @@
     {
       "type": "patchouli:crafting",
       "recipe": "firmaciv:crafting/canoe_paddle",
-      "text": "Don't forget to craft a paddle or two!"
+      "text": "Nie zapomnij stworzyć pagaj lub dwa!"
     }
   ],
   "read_by_default": true,

@@ -109,7 +109,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"title": "Snatcher",
+			"title": "Rabló",
 			"text": "$(thing)Snatchers$() are passive animals that like to steal your stuff! Attack them to retrieve your items, or feed them $(item)Raw Fish$() to tame them.$(br2)Once tamed, you can carry them on your back and equip them with a wooden chest. Press $(k:key.wan_ancient_beasts.special_ability)$() to throw them, and they will steal the contents of a nearby chest and bring it to you."
 		},
 		{
@@ -121,7 +121,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"title": "Charger",
+			"title": "Rohamozó",
 			"text": "$(thing)Chargers$() are semipassive animals. You can tame them with $(item)any Mars crop$() to use them as a combat land mount.$(br2)Press $(k:key.wan_ancient_beasts.special_ability)$() for a headbutt attack, or press and hold $(item)Spacebar$() for a charge attack.$(br2)They can also be equipped with $(item)dyeable armor$()."
 		},
 		{
@@ -136,7 +136,7 @@
 			"entity": "wan_ancient_beasts:surfer",
 			"scale": 0.4,
 			"offset": 0.2,
-			"name": "Surfer",
+			"name": "Hullámlovas",
 			"text": "$(thing)Surfers$() are semiaquatic passive animals. You can tame them with $(item)Raw Fish$() to ride them underwater. They can also be eaten."
 		},
 		{
@@ -144,14 +144,14 @@
 			"entity": "wan_ancient_beasts:soarer",
 			"scale": 0.4,
 			"offset": 1,
-			"name": "Soarer",
+			"name": "Szárnyaló",
 			"text": "$(thing)Soarers$() are passive animals found above -106°C. You can tame them with $(item)Raw Fish$() to use them as a flying mount. They can also be eaten."
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "wan_ancient_beasts:eater",
 			"scale": 0.5,
-			"name": "Eater",
+			"name": "Faló",
 			"text": "A top predator, $(thing)Eaters$() are hostile animals found above -109°C. If you can manage to take one down, they can be eaten."
 		},
 		{
@@ -166,7 +166,7 @@
 			"entity": "wan_ancient_beasts:glider",
 			"scale": 0.4,
 			"offset": 0.2,
-			"name": "Glider",
+			"name": "Sikló",
 			"text": "Despite their name, $(thing)Gliders$() cannot be tamed or ridden. They are passive and live in areas above -105°C. They enjoy music and can be eaten."
 		},
 		{
@@ -174,7 +174,7 @@
 			"entity": "wan_ancient_beasts:crusher",
 			"scale": 0.5,
 			"offset": 0.5,
-			"name": "Crusher",
+			"name": "Zúzó",
 			"text": "$(thing)Crushers$() are semihostile animals found in herds in areas above -100°C. They can be killed for their meat and hard spikes."
 		},
 		{
@@ -196,21 +196,21 @@
 			"entity": "wan_ancient_beasts:walker",
 			"scale": 0.6,
 			"offset": 2.2,
-			"name": "Walker",
+			"name": "Járkáló",
 			"text": "The gigantic $(thing)Walkers$() inhabit areas above -97°C. They are passive and can be eaten."
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "wan_ancient_beasts:raider",
 			"scale": 0.5,
-			"name": "Raider",
+			"name": "Fosztogató",
 			"text": "$(thing)Raiders$() are hostile animals found above -109°C. They have a natural rivalry with $(thing)Chargers$(). You can make them neutral by feeding them $(item)Raw Meat$()."
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "wan_ancient_beasts:toxlacanth",
 			"scale": 0.35,
-			"name": "Toxlacanth",
+			"name": "Toxlakant",
 			"text": "$(thing)Toxlacanths$() are aquatic prey animals. It is recommended to kill them from a distance and cook their meat before eating."
 		},
 		{

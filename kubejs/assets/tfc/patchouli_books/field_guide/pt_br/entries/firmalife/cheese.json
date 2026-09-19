@@ -5,22 +5,22 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "Making $(thing)cheese$() in Firmalife is a little more involved than in vanilla TFC. There are two new kinds of milk: $(thing)Yak Milk$(), and $(thing)Goat Milk$(). These are obtained from milking the $(l:mechanics/animal_husbandry#yak)Yak$() and $(l:mechanics/animal_husbandry#goat)Goat$(), respectively. Milking the $(l:mechanics/animal_husbandry#cow)Cow$() still produces the old kind of milk."
+      "text": "Fazer $(thing)queijo$() em Firmalife é um pouco mais complexo do que no TFC vanilla. Existem dois novos tipos de leite: $(thing)Leite de Iaque$() e $(thing)Leite de Cabra$(). Eles são obtidos ao ordenhar o $(l:mechanics/animal_husbandry#yak)Iaque$() e a $(l:mechanics/animal_husbandry#goat)Cabra$(), respectivamente. Ordenhar a $(l:mechanics/animal_husbandry#cow)Vaca$() ainda produz o leite tradicional."
     },
     {
       "type": "patchouli:text",
-      "text": "Like usual, milk must be $(thing)curdled$() first. To curdle milk, you need $(thing)Rennet$(). Rennet comes from the stomach of $(thing)Ruminant$() animals. This includes $(l:mechanics/animal_husbandry#yak)Yaks$(), $(l:mechanics/animal_husbandry#cow)Cows$(), $(l:mechanics/animal_husbandry#sheep)Sheep$(), $(l:mechanics/animal_husbandry#goat)Goats$(), and $(l:mechanics/animal_husbandry#musk_ox)Musk Oxen$(). To curdle milk, seal it in a $(l:mechanics/barrels)Barrel$() with Rennet for 4 hours."
+      "text": "Como de costume, leite deve ser $(thing)coalhado$() primeiro. Para coalhar o leite, você precisa de $(thing)Coalho$(). O coalho vem do estômago de animais $(thing)Ruminantes$(). Isso inclui $(l:mechanics/animal_husbandry#yak)Iaques$(), $(l:mechanics/animal_husbandry#cow)Vacass$(), $(l:mechanics/animal_husbandry#sheep)Ovelhas$(), $(l:mechanics/animal_husbandry#goat)Cabras$() e $(l:mechanics/animal_husbandry#musk_ox)Bois-almiscarados$(). Para coalhar o leite, sele-o em um $(l:mechanics/barrels)Barrill$() com o Coalho por 4 horas."
     },
     {
       "type": "patchouli:crafting",
       "anchor": "cheesecloth",
       "recipe": "firmalife:crafting/cheesecloth",
-      "text": "Curdled milk must be converted to $(thing)Curds$() by sealing it in a barrel with $(thing)Cheesecloth$(). Cheesecloth is not reusable."
+      "text": "O leite coalhado deve ser transformado em $(thing)Coalhada$() selando em um barril com $(thing)Morim$(). O Morim não pode ser reutilizado."
     },
     {
       "type": "patchouli:crafting",
       "recipe": "tfg:crafting/cheddar_wheel",
-      "text": "You are ready to make $(thing)Dry Cheese$() if you wish. You can make $(thing)Rajya Metok$() from $(thing)Yak Curds$(), $(thing)Chevre$() from $(thing)Goat Curds$(), and $(thing)Cheddar$() from $(thing)Milk Curds$()."
+      "text": "Você está pronto para fazer $(thing)Queijo Curado$() se desejar. Você pode fazer $(thing)Rajya Metok$() a partir de $(thing)Coalhada de Iaque$(), $(thing)Chevre$() a partir de $(thing)Coalhada de Cabra$() e $(thing)Cheddar$() a partir de $(thing)Coalhada de Vaca$()."
     },
     {
       "type": "patchouli:crafting",
@@ -29,16 +29,16 @@
     },
     {
       "type": "patchouli:text",
-      "text": "Your other option is to make $(thing)Wet Cheeses$(). These are made by sealing the curds in a barrel of $(thing)Salt Water$(). You can make $(thing)Shosha$() from $(thing)Yak Curds$(), $(thing)Feta$() from $(thing)Goat Curds$(), and $(thing)Gouda$() from $(thing)Milk Curds$()."
+      "text": "Sua outra opção é fazer $(thing)Queijos Frescos$(). Eles são feitos selando a coalhada em um barril com $(thing)Água Salgada$(). Você pode fazer $(thing)Shosha$() a partir de $(thing)Coalhada de Iaque$(), $(thing)Feta$() a partir de $(thing)Coalhada de Cabra$() e $(thing)Gouda$() a partir de $(thing)Coalhada de Vaca$()."
     },
     {
       "type": "patchouli:text",
       "anchor": "aging",
-      "text": "Cheese wheels are blocks that should be placed in order to help them last. To improve their quality and shelf life, cheese wheels should be $(thing)Aged$() in a $(l:firmalife/cellar)Cellar$(). In order to obtain edible cheese from a cheese wheel, it should be sliced off the wheel by clicking $(item)$(k:key.use)$() with a $(thing)Knife$(). If the block is simply broken, the aging is lost!"
+      "text": "Rodas de queijo são blocos que devem ser colocados no chão para durarem mais. Para melhorar sua qualidade e tempo de conservação, as rodas de queijo devem ser $(thing)Aged$() em um  $(l:firmalife/cellar)Porão$(). Para obter queijo comestível de uma roda de queijo, ele deve ser fatiado da roda usando $(item)$(k:key.use)$() com uma $(thing)Faca$(). Se o bloco for simplesmente quebrado, a maturação é perdida!"
     },
     {
       "type": "tfc:multimultiblock",
-      "text": "The aging stages of a wheel of Gouda: $(thing)Fresh$(), $(thing)Aged$(), and $(thing)Vintage$().",
+      "text": "As fases de envelhecimento de uma roda de Gouda:  $(thing)Fresco$(), $(thing)Envelhecido$(), e $(thing)Reserva$().",
       "multiblocks": [
         {
           "pattern": [

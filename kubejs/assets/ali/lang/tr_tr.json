@@ -4,5 +4,11 @@
 	"ali.property.value.id": "Kimlik: %s",
 	"ali.property.value.name": "İsim: %s",
 	"ali.property.value.size": "Büyüklük: %s",
-	"ali.property.value.zoom": "Yakınlaştırma: %s"
+	"ali.property.value.zoom": "Yakınlaştırma: %s",
+	"ali.enum.dye_color.lime": "Lime",
+	"ali.enum.dye_color.orange": "Portakal",
+	"ali.enum.dye_color.white": "Beyaz",
+	"ali.enum.dye_color.yellow": "Sarı",
+	"ali.enum.equipment_slot.chest": "Sandık",
+	"ali.enum.merge_strategy.replace": "Yerine geçir"
 }

@@ -1,15 +1,15 @@
 {
-	"name": "Making a Road",
+	"name": "道を作る",
 	"category": "tfc:roadsandroofs",
 	"icon": "rnr:metal/mattock/bismuth_bronze",
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Road construction consists of three basic steps: tamping the native soil with a mattock, laying a base course, and laying the surface material. Different varietis of road use different ingredients, as described on their respective pages of this manual."
+			"text": "道の建設は、マトックを使って地盤を突き固める、路盤を敷設する、そして表層材を敷設するという、3つの基本的な工程から成ります。道路の種類によって使用する材料が異なりますが、その詳細については、本マニュアルの各ページに記載されています。"
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Building a Path",
+			"title": "道を構築する",
 			"images": [
 				"rnr:textures/gui/book/path_building.png"
 			],
@@ -17,15 +17,15 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "A mattock can be used on dirt-type blocks similarly to a chisel. When used in the default mode, a mattock will tamp these blocks. If the mattock was used to tamp mud or muddy roots, the resulting tamped mud must be remediated by applying crushed base course."
+			"text": "マトックは、ノミと同じような方法で土タイプのブロックに使用できます。デフォルトモードで使用すると、マトックはこれらのブロックを突き固めます。マトックを使って泥や泥まみれの根を突き固めた場合、突き固められた泥は、砕石路盤材を敷き詰めることで修復する必要があります。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "After the local soil has been tamped down, the next step is to lay a base course for the road. Crushed base course can be crafted with gravel, loose rocks, and a hammer, and can be applied to tamped blocks via right-clicking. This base course of crushed rocks creates a sturdy base for the final walking surface to rest upon."
+			"text": "現場の土を突き固めた後、次のステップは道路の路盤を敷設することです。砕石路盤材は、砂利、石の粉、そしてハンマーを使って作成でき、突き固めたブロックの上に右クリックすることで敷設できます。この砕石路盤材は、最終的な歩行面を支える頑丈な土台となります。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "The final step in creating a road is laying the road surface. Different items, including bricks, hoggin, and loose rocks can be applied via right-clicking on top of a base course to form a walkable road. Different items result in different varieties of road, and different varieties of road allow for various walking speeds. For more details on different types of road, refer to their respective pages in this manual."
+			"text": "道路を作る最後の工程は、路面を敷設することです。基層の上を右クリックすることで、レンガ、ホギン、小石などのさまざまなアイテムを敷設し、歩行可能な道路を作ることができます。使用するアイテムによって道路の種類が変わり、道路の種類によって歩行速度も異なります。各道路の種類に関する詳細については、本マニュアルの各ページを参照してください。"
 		}
 	],
 	"read_by_default": true,

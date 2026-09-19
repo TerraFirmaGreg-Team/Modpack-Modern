@@ -1,6 +1,6 @@
 {
-    "name": "Ores in TFG",
-    "description": "TFG has its own ore generation system that's similar to TFC's with the huge but rare veins, but with multiple minerals per vein. This category lists all of the vein types and where to find them.$(br2)Veins are named after their most dominant ore, but most veins contain 3-5 minerals.$(br2)See also: $(l:the_world/geology)Geology$(), $(l:getting_started/finding_ores)Indicators$()",
+    "name": "Erze in TFG",
+    "description": "TFG verfügt über ein eigenes System zur Erzgenerierung, das dem von TFC ähnelt. Es gibt große, aber seltene Erzadern, wobei jede Ader mehrere verschiedene Mineralien enthält. In dieser Kategorie werden alle Adertypen und die Orte, an denen sie zu finden sind, aufgelistet.\n$(br2)Erzadern werden nach dem Erz benannt, das in ihnen am häufigsten vorkommt. Die meisten Adern enthalten jedoch 3–5 verschiedene Mineralien.\n$(br2)Siehe auch: $(l:the_world/geology)Geologie$(), $(l:getting_started/finding_ores)Anzeichen$()",
     "icon": "tfc:ore/pyrite",
     "sortnum": 60
 }

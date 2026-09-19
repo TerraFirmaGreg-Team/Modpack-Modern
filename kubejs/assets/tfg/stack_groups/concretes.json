@@ -1,0 +1,9 @@
+{
+	"id": "tfg:concretes",
+	"type": "remi:group",
+	"name": "stackgroup.remi.tfg_concretes",
+	"contents": [
+		"#forge:concretes",
+		"#forge:concrete_powders"
+	]
+}

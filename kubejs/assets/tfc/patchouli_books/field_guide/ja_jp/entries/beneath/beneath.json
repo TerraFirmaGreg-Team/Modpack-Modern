@@ -1,25 +1,25 @@
 {
-	"name": "What is the Beneath?",
+	"name": "深界とは何ぞや？",
 	"category": "tfc:beneath",
 	"icon": "minecraft:deepslate",
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "The $(thing)Beneath$() is a network of very deep caves, directly below the Overworld.$(br)This dimension is balanced around mid to late $(thing)Primitive Age$(). It's more dangerous than the surface, so we recommend a full set of bronze armor and a metal shield as a minimum, as well as plenty of food, water, and other tools."
+			"text": "$(thing)深界$()は、オーバーワールドの真下に広がる、非常に深い洞窟のネットワークです。$(br)このディメンションは、$(thing)原始時代$()の中盤から後半にかけてのレベルにバランス調整されています。地表よりも危険なため、最低でも青銅製の鎧一式と金属製の盾を装備し、食料や水、その他の道具も十分に用意しておくことをお勧めします。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "It differs from the usual Nether experience in a few ways:$(li)You enter it $(l:beneath/beneath#entering)differently$()$(li)Water doesn't instantly evaporate$(li)A bed works like normal$(li)Traveling Beneath is no faster than in the Overworld$(br2)In return, you can find resources like $(thing)Kaolin Clay$(), $(thing)Graphite$(), richer and more exposed $(thing)ore veins$(), as well as other treasures."
+			"text": "これは、通常のネザーとはいくつかの点で異なります：$(li)入り方が $(l:beneath/beneath#entering)異なる$()$(li)水が即座に蒸発しない$(li)ベッドは通常通り機能する$(li)深界の移動距離はオーバーワールドと同じである$(br2)その代わり、$(thing)カオリン粘土$()や$(thing)グラファイト$()といった資源、より豊富で発見しやすい$(thing)鉱脈$()、そしてその他の宝物を見つけることができます。"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "entering",
-			"title": "Entering the Beneath",
-			"text": "To travel Beneath, simply stand on overworld bedrock for a little while. To get down to the bedrock, you'll have to either break through the Hornfels layer with $(item)Explosives$() or $(item)Steel+ Tools$(), or find a cave with the more brittle $(thing)Keratophyre$()."
+			"title": "深界への行き方",
+			"text": "深界へ移動するには、地上世界の岩盤の上にしばらく立っているだけでOKです。岩盤まで降りるには、$(item)爆発物$()や$(item)鋼鉄製の道具$()を使ってホルンフェルス層を突き破るか、より脆い$(thing)角斑岩$()でできた洞窟を見つける必要があります。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "To return, stand directly below ceiling bedrock in the same fashion.$(br2)It's a good idea to $(thing)make a note$() of where you entered, so you can return to the same place in the overworld whenever you're ready to leave."
+			"text": "戻るには、同じ要領で天井の岩盤の真下に立ちましょう。$(br2)入った場所を $(thing)メモ$() しておくと、地上に戻りたいと思った時にいつでも同じ場所に戻れるので便利です。"
 		}
 	],
 	"read_by_default": true,

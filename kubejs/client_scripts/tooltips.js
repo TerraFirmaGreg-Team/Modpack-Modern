@@ -192,7 +192,7 @@ const registerTooltips = (event) => {
 		"slash_l", "slash_r", "slash_rl",
         "num_0", "num_1", "num_2", "num_3", "num_4",
         "num_5", "num_6", "num_7", "num_8", "num_9",
-        "number"
+        "number", "diagonal_line", "fullcorner", "angled_edge_l", "angled_edge_r", "cat", "creeper"
     ];
 	roadMaskIds.forEach(mask => {
 		event.addAdvanced([`tfg:asphalt_road_stencil_${mask}`], (item, advanced, text) => {
@@ -541,6 +541,19 @@ const registerTooltips = (event) => {
 		text.add(3, Text.translate('tfg.tooltip.wireless_card_3'));
 		text.add(4, Text.translate('tfg.tooltip.wireless_card_4'));
 	})
+
+	event.addAdvanced('ae2:flawless_budding_quartz', (item, advanced, text) => {
+      text.add(1, Text.translate('block.ae2.flawless_budding_quartz.tooltip'));
+    })
+	event.addAdvanced('ae2:flawed_budding_quartz', (item, advanced, text) => {
+      text.add(1, Text.translate('block.ae2.flawed_budding_quartz.tooltip'));
+    })
+	event.addAdvanced('ae2:chipped_budding_quartz', (item, advanced, text) => {
+      text.add(1, Text.translate('block.ae2.chipped_budding_quartz.tooltip'));
+    })
+	event.addAdvanced('ae2:damaged_budding_quartz', (item, advanced, text) => {
+      text.add(1, Text.translate('block.ae2.damaged_budding_quartz.tooltip'));
+    })
 
 	// Deprecated Items
 	event.addAdvanced(['vintageimprovements:lathe', 'ae2:fe_p2p_tunnel', 'gtceu:steam_large_turbine', 'gtceu:bronze_large_boiler', 'gtceu:steel_large_boiler', 'gtceu:titanium_large_boiler', 'gtceu:tungstensteel_large_boiler'], (item, advanced, text) => {

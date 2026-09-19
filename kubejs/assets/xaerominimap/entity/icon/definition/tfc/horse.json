@@ -1,0 +1,18 @@
+{
+  "variants": {
+    "default": "model:0"
+  },
+  "modelConfigs": [
+    {
+      "baseScale": 0.9,
+      "rotationY": 90,
+      "rotationX": -45,
+      "rotationZ": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "renderingFullModel": false,
+      "modelPartsRotationReset": true
+    }
+  ],
+  "variantMethod": "xaero.hud.minimap.radar.icon.definition.BuiltInRadarIconDefinitions.getVariant"
+}

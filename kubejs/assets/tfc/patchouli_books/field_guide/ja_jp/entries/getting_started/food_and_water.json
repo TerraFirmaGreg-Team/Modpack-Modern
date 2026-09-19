@@ -164,77 +164,77 @@
         {
             "type": "patchouli:text",
             "anchor": "cooling_transient_effect",
-            "text": "$(#12d7ff)❅$()$(bold) Cooling$()$(li)Gives the player the $(l:tfg_tips/mob_effects_glossary#cooling)Cooling$() effect with 1 minute of duration per 1 nutrient point. With a max duration of 30min.$()"
+            "text": "$(#12d7ff)❅$()$(bold) 冷却$()$(li)プレイヤーに $(l:tfg_tips/mob_effects_glossary#cooling)冷却$() 効果を付与します。持続時間は１栄養ポイントにつき1分です。最大持続時間は30分です。$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "warming_transient_effect",
-            "text": "$(#ff7700)🔆$()$(bold) Warming$()$(li)Gives the player the $(l:tfg_tips/mob_effects_glossary#warming)Warming$() effect with 1 minute of duration per 1 nutrient point. With a max duration of 30min.$()"
+            "text": "$(#ff7700)🔆$()$(bold) 温もり$()$(li)プレイヤーに $(l:tfg_tips/mob_effects_glossary#warming)温もり$()効果を付与します。持続時間は１栄養ポイントにつき1分です。最大持続時間は30分です。$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "quenching_transient_effect",
-            "text": "$(#00c792)🍹$()$(bold) Quenching$()$(li)Gives the player the $(l:tfg_tips/mob_effects_glossary#quenched)Quenched$() effect with 1 minute of duration per 1 nutrient point. With a max duration of 30min.$()"
+            "text": "$(#00c792)🍹$()$(bold) 潤い$()$(li)プレイヤーに $(l:tfg_tips/mob_effects_glossary#quenched)潤い$()効果を付与します。持続時間は１栄養ポイントにつき1分です。最大持続時間は30分です。$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "bolstering_transient_effect",
-            "text": "$(#ffe417)♡$()$(bold) Bolstering$()$(li)Gives the player the $(n)Absorption$() effect for 8 minutes. With its amplifier scaled based on the amount of nutrient points with a max amplifier of 5.$()"
+            "text": "$(#ffe417)♡$()$(bold) 強化$()$(li)プレイヤーに8分間、$(n)衝撃吸収$()の効果を付与します。そのレベルは栄養ポイントの量に基づいて決定され、最大レベルは5です。$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "hearty_transient_effect",
-            "text": "$(#ff171b)♡$()$(bold) Hearty$()$(li)Gives the player the $(n)Health Boost$() effect for 8 minutes. With its amplifier scaled based on the amount of nutrient points with a max amplifier of 5.$()"
+            "text": "$(#ff171b)♡$()$(bold) 十分な食事$()$(li)プレイヤーに8分間、$(n)体力増強$()の効果を付与します。そのレベルは栄養ポイントの量に基づいて決定され、最大レベルは5です。$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "rejuvenating_transient_effect",
-            "text": "$(#ff178f)💕$()$(bold) Rejuvenating$()$(li)Gives the player the $(n)Regeneration$() effect with 1 minute of duration per 1 nutrient point. With a max duration of 3min.$()"
+            "text": "$(#ff178f)💕$()$(bold) リフレッシュ$()$(li)プレイヤーに $(n)再生能力$()効果を付与します。持続時間は１栄養ポイントにつき1分です。最大持続時間は3分です。$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "freezing_transient_effect",
-            "text": "$(#12d7ff)⛇$()$(bold) Freezing$()$(li)Gives the player the $(l:tfg_tips/mob_effects_glossary#freezing)Freezing$() effect with 5 seconds of duration per 1 nutrient point. With a max duration of 30sec.$()"
+            "text": "$(#12d7ff)⛇$()$(bold) 凍結$()$(li)プレイヤーに $(l:tfg_tips/mob_effects_glossary#Freezing)凍結$()効果を付与します。持続時間は１栄養ポイントにつき5秒です。最大持続時間は30秒です。$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "blazing_transient_effect",
-            "text": "$(#ff7700)🔥$()$(bold) Blazing$()$(li)Gives the player the $(l:tfg_tips/mob_effects_glossary#blazing)Blazing$() effect with 5 seconds of duration per 1 nutrient point. With a max duration of 30sec.$()"
+            "text": "$(#ff7700)🔥$()$(bold) 灼熱$()$(li)プレイヤーに $(l:tfg_tips/mob_effects_glossary#blazing)灼熱$()効果を付与します。持続時間は１栄養ポイントにつき5秒です。最大持続時間は30秒です。$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "radiating_transient_effect",
-            "text": "$(#9fc700)☢$()$(bold) Radiating$()$(li)Gives the player the $(n)Glowing$() effect for 24 seconds.$()$(li)Gives the player the $(l:tfg_tips/mob_effects_glossary#instant_radiation)Radiation$() effect for 24 seconds. With its amplifier scaled based on the amount of nutrient points with a max amplifier of 5.$()"
+            "text": "$(#9fc700)☢$()$(bold) 急性被曝$()$(li)プレイヤーに24秒間、$(n)発光()の効果を付与します。$()$(li)プレイヤーに24秒間、$(l:tfg_tips/mob_effects_glossary#instant_radiation)急性被曝$() の効果を付与します。そのレベルは栄養ポイントの量に基づいて決定され、最大レベルは5です。$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "nauseating_transient_effect",
-            "text": "$(#078f00)🤢$()$(bold) Nauseating$()$(li)Gives the player the $(n)Nausea$() effect with 5 seconds of duration per 1 nutrient point. With a max duration of 12sec.$()$(li)Gives the player the $(n)Hunger VI$() effect with 10 seconds of duration per 1 nutrient point. With a max duration of 30sec.$()"
+            "text": "$(#078f00)🤢$()$(bold) 吐き気$()$(li)プレイヤーに $(n)吐き気$()効果を付与します。持続時間は１栄養ポイントにつき5秒です。最大持続時間は12秒です。$()$(li)プレイヤーに $(n)空腹VI$()効果を付与します。持続時間は１栄養ポイントにつき10秒です。最大持続時間は30秒です。$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "parching_transient_effect",
-            "text": "🧂$(bold) Parching$()$(li)Gives the player the $(n)Thirsty$() effect with 1 minute of duration per 1 nutrient point. With a max duration of 8min.$()"
+            "text": "🧂$(bold) 渇き$()$(li)プレイヤーに $(n)渇き$()効果を付与します。持続時間は１栄養ポイントにつき1分です。最大持続時間は8分です。$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "deadly_transient_effect",
-            "text": "$(#470275)💀$()$(bold) Deadly$()$(li)Gives the player the $(l:tfg_tips/mob_effects_glossary#final_moments)Final Moments$() effect for 8min. With every additional nutrient point halving the duration.$()"
+            "text": "$(#470275)💀$()$(bold) 危篤状態$()$(li)プレイヤーに$(l:tfg_tips/mob_effects_glossary#final_moments)危篤状態$() 効果を付与します。追加で栄養ポイントを得るたびに効果時間が半減します$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "fulfilling_transient_effect",
-            "text": "$(#551913)🍖$()$(bold) Fulfilling$()$(li)Gives the player the $(n)Resistance$() effect with 1 minute of duration per 1 nutrient point. With a max duration of 15min.$()$(li)Gives the player the $(n)Instant Health$() effect. With its amplifier scaled based on the amount of nutrient points with a max amplifier of 2.$()"
+            "text": "$(#551913)🍖$()$(bold) 満腹$()$(li)プレイヤーに $(n)耐性$()効果を付与します。持続時間は１栄養ポイントにつき1分です。最大持続時間は15分です。$()$(li)プレイヤーに$(n)即時回復$()の効果を付与します。そのレベルは栄養ポイントの量に基づいて決定され、最大レベルは2です。$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "sugary_transient_effect",
-            "text": "$(#837447)🍰$()$(bold) Sugary$()$(li)Gives the player the $(n)Weakness$() effect with 15 seconds of duration per 1 nutrient point. With a max duration of 5min.$()$(li)Gives the player the $(n)Speed$() effect with 1 minute of duration per 1 nutrient point. With a max duration of 30min.$()"
+            "text": "$(#837447)🍰$()$(bold) 激甘$()$(li)プレイヤーに $(n)弱体化$()効果を付与します。持続時間は１栄養ポイントにつき15秒です。最大持続時間は5分です。$()$(li)プレイヤーに $(n)移動速度上昇$()効果を付与します。持続時間は１栄養ポイントにつき1分です。最大持続時間は30分です。$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "spicy_transient_effect",
-            "text": "$(#8F0000)🌶 $()$(bold) Spicy$()$(li)Gives the player the $(n)Thirsty$() effect with 15 seconds of duration per 1 nutrient point. With a max duration of 5min.$()$(li)Gives the player the $(l:tfg_tips/mob_effects_glossary#warming)Warming$() mob effect with 1 minute of duration per 1 nutrient point. With a max duration of 30min.$()"
+            "text": "$(#8F0000)🌶 $()$(bold) 激辛$()$(li)プレイヤーに $(n)渇き$()効果を付与します。持続時間は１栄養ポイントにつき15秒です。最大持続時間は5分です。$()$(li)プレイヤーに $(l:tfg_tips/mob_effects_glossary#warming)温もり$()効果を付与します。持続時間は１栄養ポイントにつき1分です。最大持続時間は30分"
         },
         {
             "type": "patchouli:relations",

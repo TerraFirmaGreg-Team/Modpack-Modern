@@ -5,7 +5,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "$(thing)Alloys$() are a method of mixing two or more metals together, to create a new, stronger metal. During the early game, while copper is a useful metal for creating tools, the next tier of metal is one of three types of $(thing)Bronze$(). An alloy is made up of component $(thing)metals$() which must each satisfy a specific percentage of the overall whole."
+			"text": "Las $(thing)aleaciones$() son una forma de mezclar dos o más metales para crear un metal nuevo y más resistente. Durante las primeras etapas del juego, aunque el cobre es un metal útil para fabricar herramientas, el siguiente nivel de metal corresponde a uno de los tres tipos de $(thing)bronce$(). Una aleación está compuesta por $(thing)metales$() que deben cumplir con un porcentaje específico del total.\n"
 		},
 		{
 			"type": "patchouli:text",
@@ -25,7 +25,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:bismuth_bronze_ingot",
-			"title": "Bismuth Bronze",
+			"title": "Bronce de Bismuto",
 			"link_recipes": false,
 			"text": "$(br)$(bold)Requisitos:$()$(br)$(li)20 - 30 % : $(thing)Zinc$()$(li)50 - 65 % : $(thing)Cobre$()$(li)10 - 20 % : $(thing)Bismuto$()$(br2)"
 		},

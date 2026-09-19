@@ -142,45 +142,21 @@ const registerAFCRecipes = (event) => {
 		.id('tfg:vat/birch_sap_to_concentrate')
 
 	event.recipes.firmalife.vat()
-		.inputs('minecraft:stick', Fluid.of('afc:birch_sap', 500))
-		.outputItem('minecraft:stick')
-		.outputFluid(Fluid.of('afc:birch_sap_concentrate', 250))
-		.length(600)
-		.id('tfg:vat/birch_sap_to_concentrate_2')
-
-	event.recipes.firmalife.vat()
 		.inputs('minecraft:stick', Fluid.of('afc:maple_sap', 1000))
 		.outputItem('minecraft:stick')
 		.outputFluid(Fluid.of('afc:maple_sap_concentrate', 500))
 		.length(600)
 		.id('tfg:vat/maple_sap_to_concentrate')
 
-	event.recipes.firmalife.vat()
-		.inputs('minecraft:stick', Fluid.of('afc:maple_sap', 500))
-		.outputItem('minecraft:stick')
-		.outputFluid(Fluid.of('afc:maple_sap_concentrate', 250))
-		.length(600)
-		.id('tfg:vat/maple_sap_to_concentrate_2')
-
 	event.recipes.tfc.pot(['minecraft:stick'], Fluid.of('afc:birch_sap', 1000), 30 * 20, 650)
 		.itemOutput('minecraft:stick')
 		.fluidOutput(Fluid.of('afc:birch_sap_concentrate', 500))
 		.id('tfg:pot/birch_sap_to_concentrate')
 
-	event.recipes.tfc.pot(['minecraft:stick'], Fluid.of('afc:birch_sap', 500), 30 * 20, 650)
-		.itemOutput('minecraft:stick')
-		.fluidOutput(Fluid.of('afc:birch_sap_concentrate', 250))
-		.id('tfg:pot/birch_sap_to_concentrate_2')
-
 	event.recipes.tfc.pot(['minecraft:stick'], Fluid.of('afc:maple_sap', 1000), 30 * 20, 650)
 		.itemOutput('minecraft:stick')
 		.fluidOutput(Fluid.of('afc:maple_sap_concentrate', 500))
 		.id('tfg:pot/maple_sap_to_concentrate')
-
-	event.recipes.tfc.pot(['minecraft:stick'], Fluid.of('afc:maple_sap', 500), 30 * 20, 650)
-		.itemOutput('minecraft:stick')
-		.fluidOutput(Fluid.of('afc:maple_sap_concentrate', 250))
-		.id('tfg:pot/maple_sap_to_concentrate_2')
 
 	//#endregion
 
@@ -196,6 +172,16 @@ const registerAFCRecipes = (event) => {
 		.fluidOutput(Fluid.of('afc:maple_syrup', 500))
 		.id('tfg:pot/maple_concentrate_to_syrup')
 
+	event.recipes.tfc.pot(['minecraft:stick'], Fluid.of('afc:birch_sap_concentrate', 500), 30 * 20, 650)
+		.itemOutput('minecraft:stick')
+		.fluidOutput(Fluid.of('afc:birch_syrup', 250))
+		.id('tfg:pot/birch_concentrate_to_syrup_half')
+
+	event.recipes.tfc.pot(['minecraft:stick'], Fluid.of('afc:maple_sap_concentrate', 500), 30 * 20, 650)
+		.itemOutput('minecraft:stick')
+		.fluidOutput(Fluid.of('afc:maple_syrup', 250))
+		.id('tfg:pot/maple_concentrate_to_syrup_half')
+
 	event.recipes.firmalife.vat()
 		.inputs('minecraft:stick', Fluid.of('afc:birch_sap_concentrate', 1000))
 		.outputItem('minecraft:stick')
@@ -209,6 +195,20 @@ const registerAFCRecipes = (event) => {
 		.outputFluid(Fluid.of('afc:maple_syrup', 500))
 		.length(600)
 		.id('tfg:vat/maple_concentrate_to_syrup')
+
+	event.recipes.firmalife.vat()
+		.inputs('minecraft:stick', Fluid.of('afc:birch_sap_concentrate', 500))
+		.outputItem('minecraft:stick')
+		.outputFluid(Fluid.of('afc:birch_syrup', 250))
+		.length(600)
+		.id('tfg:vat/birch_concentrate_to_syrup_half')
+
+	event.recipes.firmalife.vat()
+		.inputs('minecraft:stick', Fluid.of('afc:maple_sap_concentrate', 500))
+		.outputItem('minecraft:stick')
+		.outputFluid(Fluid.of('afc:maple_syrup', 250))
+		.length(600)
+		.id('tfg:vat/maple_concentrate_to_syrup_half')
 
 	//#endregion
 

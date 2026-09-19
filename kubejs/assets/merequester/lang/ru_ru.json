@@ -1,8 +1,8 @@
 {
-  "block.merequester.requester": "МЭ заказчик",
-  "gui.merequester.no_requesters": "Не найдено ни одного запросчика МЭ!",
-  "gui.merequester.requester_terminal": "МЭ терминал запросов",
-  "item.merequester.requester_terminal": "МЭ терминал запроса",
+  "block.merequester.requester": "МЭ Заказчик",
+  "gui.merequester.no_requesters": "Не найдено ни одного МЭ Заказчика!",
+  "gui.merequester.requester_terminal": "Терминал МЭ Заказчика",
+  "item.merequester.requester_terminal": "Терминал МЭ Заказчика",
   "itemGroup.merequester.tab": "ME Requester",
   "tooltip.merequester.amount": "Сумма к запасам",
   "tooltip.merequester.batch": "Размер пакета",

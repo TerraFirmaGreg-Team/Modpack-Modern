@@ -1,5 +1,5 @@
 {
-  "name": "List of Sacrifices",
+  "name": "Lista ofiar",
   "category": "tfc:beneath",
   "icon": "tfc:gem/diamond",
   "pages": [
@@ -9,7 +9,7 @@
     },
     {
       "type": "patchouli:text",
-      "text": "$(li)Raw Slime$() -> Rich Garnierite$()$(li)Cursed Hide -> Large Raw Hide$()$(li)Cobblestone -> Blackstone$()"
+      "text": "$(li)Surowy szlam$() -> Bogaty garnieryt$()$(li)Lawoodporna skóra -> Wielka niewyprawiona skóra$()$(li)Bruk -> Surowy piroksenit$()"
     }
   ],
   "read_by_default": true

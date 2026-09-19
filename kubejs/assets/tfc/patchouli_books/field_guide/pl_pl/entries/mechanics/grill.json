@@ -1,5 +1,5 @@
 {
-  "name": "Firepit And Grill",
+  "name": "Ognisko z rusztem",
   "category": "tfc:mechanics",
   "icon": "tfc:grill",
   "pages": [
@@ -22,7 +22,7 @@
           "X": "tfc:grill"
         }
       },
-      "name": "Ognisko z grillem",
+      "name": "Ognisko z rusztem",
       "text": "",
       "enable_visualize": false
     },
@@ -36,7 +36,7 @@
       "images": [
         "tfc:textures/gui/book/gui/grill.png"
       ],
-      "text": "Interfejs grilla.",
+      "text": "Interfejs rusztu.",
       "border": false
     }
   ],

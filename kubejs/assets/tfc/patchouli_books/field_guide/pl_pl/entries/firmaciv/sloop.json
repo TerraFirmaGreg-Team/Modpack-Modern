@@ -70,7 +70,7 @@
     },
     {
       "type": "patchouli:text",
-      "text": "Next, you'll need to add planks of suitably a strong hardwood:$(br2)Acacia$(br)Ash$(br)Aspen$(br)Birch$(br)Blackwood$(br)Chestnut$(br)Hickory$(br)Maple$(br)Oak$(br)Rosewood$(br)Sycamore"
+      "text": "Następnie musisz dodać deski odpowiednio twardego drewna: $(br2)Akacja$(br)Jesion$(br)Topola$(br)Brzoza$(br)Czarnodrzew$(br)Kasztan$(br)Hikora$(br)Klon$(br)Dąb$(br)Palisander$(br)Jawor"
     },
     {
       "type": "patchouli:multiblock",
@@ -109,8 +109,8 @@
           "a": "firmaciv:wood/watercraft_frame/flat/oak[frame_processed=3]"
         }
       },
-      "name": "Szkielet sloopa",
-      "text": "Four planks have been added to each scaffold.",
+      "name": "Rusztowanie sloopa",
+      "text": "Do każdego rusztowania dodano cztery deski.",
       "enable_visualize": true
     },
     {
@@ -150,7 +150,7 @@
           "a": "firmaciv:wood/watercraft_frame/flat/oak[frame_processed=7]"
         }
       },
-      "name": "Szkielet sloopa",
+      "name": "Rusztowanie sloopa",
       "text": "Using a hammer in your offhand, add four copper bolts to each scaffold. Copper bolts are smithed from copper ingots.",
       "enable_visualize": true
     },
@@ -193,7 +193,7 @@
           "R": "alekiships:cleat[facing=south]"
         }
       },
-      "name": "Szkielet sloopa",
+      "name": "Rusztowanie sloopa",
       "text": "Finally, add the cleats to the hull. These are smithed from wrought iron double ingots.",
       "enable_visualize": true
     },
@@ -209,7 +209,7 @@
     {
       "type": "patchouli:crafting",
       "recipe2": "firmaciv:crafting/rope_coil",
-      "text": "You'll also need to add an anchor, which is smithed from a Wrought Iron Double Sheet."
+      "text": "Będziesz również musiał dodać kotwicę, którą należy wykuć z podwójnego arkusza kutego żelaza."
     }
   ],
   "read_by_default": true,

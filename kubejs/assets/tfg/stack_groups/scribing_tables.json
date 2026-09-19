@@ -1,0 +1,9 @@
+{
+	"id": "tfg:scribing_tables",
+	"type": "remi:group",
+	"name": "stackgroup.remi.tfg_scribing_tables",
+	"contents": [
+		"#tfc:scribing_tables",
+		"#beneath:scribing_tables"
+	]
+}
