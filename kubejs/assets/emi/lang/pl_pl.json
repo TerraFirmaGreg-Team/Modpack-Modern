@@ -713,6 +713,7 @@
 	"tooltip.emi.config": "Konfiguracja %s",
 	"tooltip.emi.config.global": "Przełącz używanie globalnej konfiguracji EMI dla wszystkich instancji gry zamiast osobnej konfiguracji dla każdej instancji",
 	"tooltip.emi.current_defaults": "Obecnie domyślny przepis dla:",
+	"tooltip.emi.default_resolution": "Kliknij §6przycisk domyślnego przepisu§r, aby przypisać go do §awszystkich§r drzew przepisów",
 	"tooltip.emi.fill_recipe": "Wypełnij przepis",
 	"tooltip.emi.fill_recipe_no_server": "Nie można wypełnić przepisu bez EMI na serwerze",
 	"tooltip.emi.fluid_interaction.basalt.blue_ice": "Obok lawy",
