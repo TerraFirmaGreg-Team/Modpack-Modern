@@ -5,7 +5,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "The $(thing)Unposter$() is used to grow mushrooms.$(br2)You can deposit the same items as with the composter, except instead of making compost, when a mushroom is within its range, it will consume the items inside to multiply that mushroom in the area around it."
+			"text": "$(thing)アンポスター$() は、キノコを育てるために使用されます。$(br2)コンポスターと同じアイテムを投入できますが、堆肥を作る代わりに、キノコが範囲内に存在している場合、内部のアイテムを消費して、その周辺にキノコを増やします。"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -13,8 +13,8 @@
 		},
 		{
 			"type": "patchouli:text",
-			"title": "Extra Notes",
-			"text": "The $(thing)Unposter$() searches for and duplicates mushrooms in a 11x11 square area centered on itself.$(br2)Note that mushrooms, once picked up, cannot be placed back down. You will need to find naturally spawned mushrooms for the unposter to work."
+			"title": "注意事項",
+			"text": "$(thing)アンポスター$()は、自身を中心とする11×11の正方形エリア内でキノコを探し出し、複製します。$(br2)なお、一度拾ったキノコは元の場所に戻すことはできません。アンポスターを機能させるには、自然に生成されたキノコを見つける必要があります。"
 		},
 		{
 			"type": "patchouli:image",

@@ -49,7 +49,7 @@
       "images": [
         "firmaciv:textures/gui/book/piloting.png"
       ],
-      "text": "Each boat has a specific seat that you need to be riding in order to control the boat."
+      "text": "Każda łódź ma specjalne siedzenie, na którym musisz siedzieć, aby sterować łodzią."
     },
     {
       "type": "patchouli:text",
@@ -85,7 +85,7 @@
       "images": [
         "firmaciv:textures/gui/book/anchor.png"
       ],
-      "text": "The anchor and windlass on a sloop."
+      "text": "Kotwica i kołowrót na slupie."
     },
     {
       "type": "patchouli:text",
@@ -111,7 +111,7 @@
       "images": [
         "firmaciv:textures/gui/book/sailing.png"
       ],
-      "text": "The sailing UI will help you control your vessel."
+      "text": "Interfejs żeglarski pomoże Ci kontrolować twój statek."
     },
     {
       "type": "patchouli:text",
@@ -124,7 +124,7 @@
       "images": [
         "firmaciv:textures/gui/book/painting.png"
       ],
-      "text": "A sloop has been painted yellow and its sails have been dyed."
+      "text": "Slup został pomalowany na żółto, a jego żagle zostały zabarwione."
     },
     {
       "type": "patchouli:text",

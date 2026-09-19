@@ -10,7 +10,7 @@
     {
       "type": "tfc:knapping_recipe",
       "recipe": "tfc:fire_clay_knapping/crucible",
-      "text": "Knapping an $(thing)Unfired Crucible$()."
+      "text": "Rzeźbienie $(thing)niewypalonego tygla$()."
     },
     {
       "type": "tfc:heat_recipe",
@@ -39,7 +39,7 @@
         }
       },
       "name": "",
-      "text": "A crucible heated by a charcoal forge below it.",
+      "text": "Tygiel podgrzewany przez kuźnię węglową pod nim.",
       "enable_visualize": false
     },
     {

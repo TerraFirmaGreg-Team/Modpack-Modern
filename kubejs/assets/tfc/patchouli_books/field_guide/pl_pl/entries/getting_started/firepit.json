@@ -11,7 +11,7 @@
     {
       "type": "patchouli:crafting",
       "recipe": "tfc:crafting/firestarter",
-      "text": "Crafting a firestarter can be done with two sticks."
+      "text": "Rozpałkę można wytworzyć z dwóch patyków."
     },
     {
       "type": "patchouli:text",
@@ -34,7 +34,7 @@
         }
       },
       "name": "",
-      "text": "If you were successful, a firepit will be created.",
+      "text": "Jeśli ci się uda, utworzysz ognisko.",
       "enable_visualize": false
     },
     {
@@ -65,7 +65,7 @@
     },
     {
       "type": "tfc:multimultiblock",
-      "text": "A firepit, with either a grill or pot added.",
+      "text": "Ognisko z dodanym rusztem lub garnkiem.",
       "multiblocks": [
         {
           "pattern": [

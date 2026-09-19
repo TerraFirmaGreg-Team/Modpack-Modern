@@ -365,4 +365,66 @@ const registerTFCRecipes = (event) => {
 		.outputItem(TFC.isp.copyInput().addHeat(-5))
 		.sound('minecraft:block.fire.extinguish')
 		.id('tfg:barrel/waters_cooling')
+
+	// Devices
+	event.shaped('tfc:anemometer', [
+		' A ',
+		'ABA',
+		' A '
+	], {
+		A: '#forge:rods/brass',
+		B: '#forge:small_gears/brass'
+	}).id('tfg:shaped/anemometer')
+
+	event.recipes.tfc.heating('tfc:anemometer', 930)
+		.resultFluid(Fluid.of('gtceu:brass', 144 * 3))
+		.id('tfg:heating/anemometer')
+
+	TFGHelpers.registerMaterialInfo('tfc:anemometer', [GTMaterials.Brass, 3])
+
+	event.shaped('tfc:calendar_clock', [
+		' G ',
+		'BCS',
+		' D '
+	], {
+		C: 'minecraft:clock',
+		B: '#forge:small_gears/brass',
+		S: '#forge:small_springs',
+		G: '#forge:glass_panes',
+		D: '#forge:tools/screwdrivers'
+	}).id('tfg:shaped/calendar_clock')
+
+	event.recipes.gtceu.assembler('tfc:calendar_clock')
+		.itemInputs('minecraft:clock', '#forge:small_gears/brass', '#forge:small_springs', '#forge:glass_panes')
+		.itemOutputs('tfc:calendar_clock')
+		.EUt(GTValues.VA[GTValues.ULV])
+		.duration(100)
+		
+	event.recipes.tfc.heating('tfc:calendar_clock', 930)
+		.resultFluid(Fluid.of('gtceu:brass', 144 * 3))
+		.id('tfg:heating/calendar_clock')
+
+	TFGHelpers.registerMaterialInfo('tfc:calendar_clock', [GTMaterials.Brass, 3, GTMaterials.Redstone, 1])
+
+	event.shaped('tfc:thermometer', [
+		' B ',
+		' S '
+	], {
+		B: TFC.ingredient.fluid('gtceu:glass_vial', TFC.fluidStackIngredient('gtceu:mercury', 1000)),
+		S: '#forge:plates/brass'
+	}).id('tfg:shaped/thermometer')
+
+	TFGHelpers.registerMaterialInfo('tfc:thermometer', [GTMaterials.Brass, 1, GTMaterials.Redstone, 1, GTMaterials.Glass, 1/4])
+
+	event.shaped('tfc:vane', [
+		' S ',
+		'WBW',
+		' W '
+	], {
+		B: '#forge:small_gears/brass',
+		S: '#forge:plates/wrought_iron',
+		W: '#forge:rods/wrought_iron'
+	}).id('tfg:shaped/vane')
+
+	TFGHelpers.registerMaterialInfo('tfc:vane', [GTMaterials.Brass, 1, GTMaterials.WroughtIron, 2.5])
 }

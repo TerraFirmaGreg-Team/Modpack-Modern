@@ -9,7 +9,7 @@
     },
     {
       "type": "tfc:multimultiblock",
-      "text": "The climate station in its valid and invalid state.",
+      "text": "Stacja klimatyczna w stanie aktywnym i nieaktywnym.",
       "multiblocks": [
         {
           "pattern": [
@@ -47,7 +47,7 @@
     {
       "type": "patchouli:crafting",
       "recipe": "firmalife:crafting/climate_station",
-      "text": "The climate station is crafted like this."
+      "text": "Stację klimatyczną tworzy się w ten sposób."
     },
     {
       "type": "patchouli:text",

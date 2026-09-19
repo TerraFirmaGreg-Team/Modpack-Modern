@@ -5,35 +5,35 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "The $(thing)Drying Mat$() is used to dry items. It is made with $(thing)Fruit Leaves$(), which are obtained from breaking the leaves of $(thing)Fruit Trees$()."
+      "text": "$(thing)乾燥マット$()は、アイテムを乾かすために使われます。これは、$(thing)果樹$()の葉部分を壊すことで入手できる$(thing)果樹の葉$()で作ることができます。"
     },
     {
       "type": "patchouli:crafting",
       "recipe": "firmalife:crafting/drying_mat",
-      "text": "The recipe for the drying mat."
+      "text": "乾燥マットのレシピ。"
     },
     {
       "type": "patchouli:text",
-      "text": "To use the drying mat, place it out on the sun and add an item to it with $(item)$(k:key.use)$(). After a half day, it will be dried. If it rains, the drying process must start over."
+      "text": "乾燥マットを使用するには、日の当たる場所に設置し、$(item)$(k:key.use)$() でその上にアイテムを置きます。半日ほど経つと乾燥します。雨が降った場合は乾燥プロセスを最初からやり直す必要があります。"
     },
     {
       "type": "patchouli:crafting",
       "recipe": "firmalife:crafting/solar_drier",
-      "text": "The solar drier functions the same as the drying mat, but 12x as fast."
+      "text": "太陽光乾燥機は乾燥マットと同じように機能しますが、12倍速く乾燥できます。"
     },
     {
       "type": "patchouli:text",
-      "text": "Drying mats can be automated. Pushing a piston head against a drying mat will pop the item off. Dropping an item onto a drying mat will place it on the mat."
+      "text": "乾燥マットの操作は自動化できます。ピストンで乾燥マットを押すと、アイテムがマットから飛び出します。アイテムを乾燥マットの上に落とすと、マットの上に置かれます。"
     },
     {
       "type": "tfc:drying_recipe",
       "recipe": "firmalife:drying/drying_fruit",
-      "text": "Drying fruit is a common use of the drying mat. Dried fruit is used in some recipes, and lasts longer."
+      "text": "ドライフルーツの作成は、乾燥マットの一般的な用途の一つです。ドライフルーツは料理に使われることもあり、保存期間も長くなります。"
     },
     {
       "type": "tfc:drying_recipe",
       "recipe": "firmalife:drying/tofu",
-      "text": "Tofu is made using a drying mat."
+      "text": "豆腐は乾燥マットを使用して作れます。"
     }
   ],
   "read_by_default": true,

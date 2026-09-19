@@ -5,6 +5,7 @@
   "filter.ftbfiltersystem.block.tooltip": "Prosty filtr, który pasuje, jeśli przedmiot jest blokiem możliwym do położenia.",
   "filter.ftbfiltersystem.custom.name": "Niestandardowa",
   "filter.ftbfiltersystem.durability.name": "Wytrzymałość",
+  "filter.ftbfiltersystem.durability.tooltip": "Dopasuje przedmiot na podstawie jego pozostałej wytrzymałości.\nPrzedmioty bez wytrzymałości traktuje się, jakby posiadały wytrzymałość 0.",
   "filter.ftbfiltersystem.expression.name": "Wyrażenie",
   "filter.ftbfiltersystem.food_value.name": "Wartość żywności",
   "filter.ftbfiltersystem.item.name": "Przedmiot",
@@ -14,6 +15,7 @@
   "filter.ftbfiltersystem.nbt.name": "NBT",
   "filter.ftbfiltersystem.not.name": "Nie",
   "filter.ftbfiltersystem.only_one.name": "Tylko jeden z",
+  "filter.ftbfiltersystem.only_one.tooltip": "Filtr złożony: ten filtr pasuje, jeśli dokładnie JEDEN filtr podrzędny pasuje.",
   "filter.ftbfiltersystem.or.name": "Dowolny z",
   "filter.ftbfiltersystem.or.tooltip": "Filtr złożony: ten filtr pasuje, jeśli DOWOLNY filtr podrzędny pasuje.",
   "filter.ftbfiltersystem.root.name": "Wszystkie z (Root)",
@@ -33,7 +35,7 @@
   "ftbfiltersystem.gui.filter_bad": "Nie udało się przetworzyć filtra!",
   "ftbfiltersystem.gui.filter_ok": "Filtr poprawnie przetworzony",
   "ftbfiltersystem.gui.fuzzy_match": "Luźne dopasowanie NBT?",
-  "ftbfiltersystem.gui.item_source.creative": "Kreatywny",
+  "ftbfiltersystem.gui.item_source.creative": "Tryb kreatywny",
   "ftbfiltersystem.gui.item_source.inventory": "Ekw",
   "ftbfiltersystem.gui.item_source.mod": "Mod",
   "ftbfiltersystem.gui.nbt_bad": "Nie udało się przetworzyć SNBT!",
@@ -46,5 +48,6 @@
   "ftbfiltersystem.message.not_matched": "Filtr nie pasuje: %s",
   "ftbfiltersystem.message.parse_failed": "Nie udało się przetworzyć filtra: %s",
   "item.ftbfiltersystem.smart_filter": "Inteligentny filtr",
-  "item.ftbfiltersystem.smart_filter.tooltip.1": "PPM: konfiguruj filtr"
+  "item.ftbfiltersystem.smart_filter.tooltip.1": "Kliknij PPM: skonfiguruj filtr",
+  "item.ftbfiltersystem.smart_filter.tooltip.2": "Kucnięcie + PPM: Przetestuj filtr z przedmiotem w dłoni"
 }

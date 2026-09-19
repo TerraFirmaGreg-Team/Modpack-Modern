@@ -85,7 +85,7 @@
 		},
 		{
 			"title": "Mętna woda",
-			"text": "Drinking $(thing)Muddy Water$() is not recommended. Doing so will make you nauseous and give you parasites.",
+			"text": "Picie $(thing)mętnej wody$() nie jest zalecane. Dostaniesz od niej nudności i pasożyty.",
 			"type": "patchouli:spotlight",
 			"item": "tfg:muddy_water_bucket",
 			"anchor": "muddy_water"

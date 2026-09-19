@@ -5,14 +5,14 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "$(thing)Салаты$() - это блюдо, приготовленное в $(thing)Чаше$() из до пяти $(thing)фруктов$(), $(thing)Овощей$() или $(thing)Приготовленного мяса$().$(br2)Салаты - одно из самых простых блюд для приготовления, требующее только $(l:mechanics/bowls)Чашу$(). Сначала держите $(thing)Чашу$() и нажмите $(item)$(k:key.use)$(), удерживая $(item)$(k:key.sneak)$(). Это откроет экран салата."
+      "text": "$(thing)Salads$() are a meal prepared in a $(thing)Bowl$() from up to five $(thing)Fruits$(), $(thing)Vegetables$(), or $(thing)Cooked Meats$().$(br2)Salads are one of the simplest meals to make, and just require a $(l:mechanics/bowls)Bowl$(). First, hold the $(thing)Bowl$() and press $(item)$(k:key.use)$() while holding $(item)$(k:key.sneak)$(). This will open the salad screen."
     },
     {
       "type": "patchouli:spotlight",
       "item": "tag:tfc:salads",
       "title": "",
       "link_recipes": false,
-      "text": "В верхние слоты можно добавить до пяти ингредиентов. $(thing)Чаши$() можно добавить в нижний левый слот. Когда вы закончите, салат можно взять из нижнего правого слота."
+      "text": "Up to five ingredients can be added in the top slots. $(thing)Bowls$() can be added in the left bottom slot. When you are done, the salad can be taken out from the right bottom slot."
     }
   ],
   "read_by_default": true,

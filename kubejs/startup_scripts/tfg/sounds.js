@@ -2,9 +2,13 @@
 "use strict";
 
 function registerTFGSounds(event) {
-
+    
+    event.create('tfg:ambient.upper_nether.loop')
     event.create('tfg:ambient.upper_nether.additions')
     event.create('tfg:ambient.upper_nether.mood')
+    event.create('tfg:ambient.middle_nether.loop')
+    event.create('tfg:ambient.middle_nether.additions')
+    event.create('tfg:ambient.middle_nether.mood')
     event.create('tfg:ambient.lower_nether.loop')
     event.create('tfg:ambient.lower_nether.additions')
     event.create('tfg:ambient.lower_nether.mood')

@@ -177,9 +177,6 @@ TFCEvents.registerClimateModel(event => {
 
 	event.register('tfg:orbit_climate', builder => {
 		builder.setCurrentTemperatureCalculation((level, pos, calendarTicks, daysInMonth) => {
-			if (OxygenAPI.hasOxygen(level, pos.above())) {
-				return OXYGENATED_TEMP;
-			}
 			return -270;
 		})
 		builder.setAverageTemperatureCalculation((level, pos) => -270)
@@ -192,9 +189,6 @@ TFCEvents.registerClimateModel(event => {
 	event.register('tfg:moon_climate', builder => {
 		// A source says the moon's equator is 120c at day and -130c at night
 		builder.setCurrentTemperatureCalculation((level, pos, calendarTicks, daysInMonth) => {
-			if (OxygenAPI.hasOxygen(level, pos.above())) {
-				return OXYGENATED_TEMP;
-			}
 			return calcCurrentTemp(-5, 60, pos.y, calendarTicks, 125, 0, 0)
 		})
 
@@ -208,10 +202,6 @@ TFCEvents.registerClimateModel(event => {
 	event.register('tfg:mars_climate', builder => {
 
 		builder.setCurrentTemperatureCalculation((level, pos, calendarTicks, daysInMonth) => {
-			if (OxygenAPI.hasOxygen(level, pos.above())) {
-				return OXYGENATED_TEMP;
-			}
-
 			// average of -110 at night, -15 at day
 			let avgTemp = calcAverage(pos.z, global.MARS_PLANET_SIZE, global.MARS_MIN_AVG_TEMP, global.MARS_MAX_AVG_TEMP);
 			// +- 45 based on latitude, down to -10 at bedrock
@@ -239,10 +229,6 @@ TFCEvents.registerClimateModel(event => {
 	event.register('tfg:venus_climate', builder => {
 
 		builder.setCurrentTemperatureCalculation((level, pos, calendarTicks, daysInMonth) => {
-			if (OxygenAPI.hasOxygen(level, pos.above())) {
-				return OXYGENATED_TEMP;
-			}
-			
 			let avgTemp = calcAverage(pos.z, global.VENUS_PLANET_SIZE, global.VENUS_MIN_AVG_TEMP, global.VENUS_MAX_AVG_TEMP);
 			return calcCurrentTemp(avgTemp, 58, pos.y, calendarTicks, 10, 670, 1);
 		})

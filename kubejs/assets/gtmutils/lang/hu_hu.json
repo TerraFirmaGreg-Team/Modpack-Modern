@@ -1,3 +1,7 @@
 {
-  "tooltip.omnibreaker.tool_mode_1": "Csavarkulcs"
+  "item.gtceu.tool.ev_wirecutter": "%s csípőfogó (EF)",
+  "item.gtceu.tool.mv_wirecutter": "%s csípőfogó (KÖF)",
+  "item.gtceu.tool.zpm_wirecutter": "%s csípőfogó (NPM)",
+  "tooltip.omnibreaker.tool_mode_1": "Csavarkulcs",
+  "tooltip.omnibreaker.tool_mode_2": "Csavarhúzó"
 }

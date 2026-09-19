@@ -6,7 +6,7 @@
 		{
 			"type": "patchouli:crafting",
 			"name": "Глина душ",
-			"text": "Акведуки также могут двигать лаву и другие жидкости вокруг, что может быть полезным при строительстве $(l:beneath/hellforge)Hellforge$().",
+			"text": "Акведуки могут перемещать лаву и другие жидкости. Это может быть полезно при строительстве $(l:beneath/hellforge)Адской кузни$().",
 			"anchor": "blackstone_aqueduct",
 			"recipe": "tfg:shaped/blackstone_aqueduct"
 		},

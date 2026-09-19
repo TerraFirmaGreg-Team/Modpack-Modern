@@ -5,7 +5,7 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "$(thing)书写桌$()是用来给物品重命名的。重命名需要消耗$(thing)黑色染料$()。可以直接用染料物品，也可以用一桶黑色染液代替。"
+      "text": "$(thing)书写桌$()是用来给物品重命名的。重命名需要消耗$(l:mechanics/dye)黑色染料$()。可以直接用染料物品，也可以用一桶黑色染液代替。"
     },
     {
       "type": "patchouli:multiblock",

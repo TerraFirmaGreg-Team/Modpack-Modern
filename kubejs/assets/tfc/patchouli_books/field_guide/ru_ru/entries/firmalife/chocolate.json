@@ -9,7 +9,7 @@
     },
     {
       "type": "patchouli:text",
-      "text": "Для начала обработки какао-бобы сначала должны быть $(thing)обжарены$() в $(l:firmalife/ovens)печи$(), чтобы получить $(thing)обжаренные какао-бобы$(). Затем измельчите обжаренные бобы с помощью $(thing)ножа$(), чтобы разделить бобы на $(thing)какао-порошок$() и $(thing)какао-масло$()."
+      "text": "To start chocolate processing, cocoa beans must first be $(thing)roasted$() in an $(l:firmalife/ovens)Oven$() to make $(thing)Roasted Cocoa Beans$(). Then, craft the roasted beans with a $(thing)Knife$() to split the beans into $(thing)Cocoa Powder$() and $(thing)Cocoa Butter$()."
     },
     {
       "type": "patchouli:text",

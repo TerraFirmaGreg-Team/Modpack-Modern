@@ -12,7 +12,7 @@
 			"images": [
 				"tfg:textures/gui/field_guide/jellies.png"
 			],
-			"text": "$(thing)Jellies$() are hermaphroditic and can reproduce with any other $(thing)jellie$()!",
+			"text": "$(thing)Żelki$() są hermafrodytami i mogą się rozmnażać z jakimkolwiek innym $(thing)żelkiem$()!",
 			"border": true
 		},
 		{
@@ -44,42 +44,42 @@
 			"entity": "jellies:rock",
 			"scale": 1,
 			"name": "Żelek kamienny",
-			"text": "$(thing)Rock$() jellies rarely spawn on Earth in caves of mountainous biomes. Currently, they do nothing."
+			"text": "$(thing)Kamienne$() żelki rzadko pojawiają się na Ziemi w jaskiniach biomów górskich. Obecnie nic nie robią."
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "jellies:spring",
 			"scale": 1,
 			"name": "Źródlany żelek",
-			"text": "$(thing)Spring$() jellies spawn in Beneath's geothermal spring biome. They produce $(thing)Spring Slime Balls$()."
+			"text": "$(thing)Źródlane$() żelki pojawiają się w źródłach geotermalnych Głębin. Produkują $(thing)źródlane kule szlamu$()."
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "jellies:plant",
 			"scale": 1,
 			"name": "Żelek roślinny",
-			"text": "$(thing)Plant$() jellies spawn in Beneath's muggy bog and thorny brambles biomes. They produce $(thing)Plant Slime Balls$()."
+			"text": "$(thing)Roślinne$() żelki pojawiają się w dusznym bagnie i cierniowym gaju w Głębinach. Produkują $(thing)roślinne kule szlamu$()."
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "jellies:glowberry",
 			"scale": 1,
 			"name": "Świecąco-jagodowy żelek",
-			"text": "$(thing)Glowberry$() jellies spawn in Beneath's lush hollow biome. They produce $(thing)Glowberry Slime Balls$()."
+			"text": "$(thing)Świecąco-jagodowe$() żelki pojawiają się w bujnych jaskiniach Głębin. Produkują $(thing)świecąco-jagodowe kule szlamu$()."
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "jellies:biotite",
 			"scale": 1,
 			"name": "Biotytowy żelek",
-			"text": "$(thing)Biotite$() jellies spawn at the bottom of the Beneath. They produce $(thing)Biotite Slime Balls$()."
+			"text": "$(thing)Biotytowe$() żelki pojawiają się na dnie Głębin. Produkują $(thing)biotytowe kule szlamu$()."
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "jellies:ice",
 			"scale": 1,
 			"name": "Żelek lodowy",
-			"text": "$(thing)Ice$() jellies spawn in Beneath's salt caves. They passively reduce player's temperature by 10°C."
+			"text": "$(thing)Lodowe$() żelki pojawiają się w jaskiniach solnych Głębin. Biernie obniżają temperaturę gracza o 10°C."
 		},
 		{
 			"type": "patchouli:entity",
@@ -100,7 +100,7 @@
 			"entity": "jellies:certus",
 			"scale": 1,
 			"name": "Certusowy żelek",
-			"text": "$(thing)Certus$() jellies spawn in Moon's asurine biomes. They produce $(thing)Large Certus Quartz Buds$()."
+			"text": "$(thing)Certusowe$() żelki pojawiają się na azurynowych biomach Księżyca. Produkują $(thing)duże zarodki certusowego kwarcu$()."
 		},
 		{
 			"type": "patchouli:entity",

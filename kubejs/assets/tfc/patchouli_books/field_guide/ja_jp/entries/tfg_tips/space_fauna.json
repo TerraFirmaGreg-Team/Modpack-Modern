@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"item": "tfg:marker/moon",
-			"title": "Moon Animals",
+			"title": "月の動物",
 			"text": "$(item)The Moon$() may be pretty barren, but it still has a few animals that call it home.$(br2)It's considered a $(thing)Cold$() world despite the pretty extreme temperature swings.",
 			"anchor": "moon"
 		},
@@ -55,7 +55,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"item": "tfg:marker/mars",
-			"title": "Mars Animals",
+			"title": "火星の動物",
 			"text": "$(item)Mars$() is the planet with an environment closest to Earth's, featuring a wide variety of animals to interact with and crops to feed them (and yourself) with... outside of the huge desert, where almost nothing lives.$(br2)Mars is a $(thing)Cold$() planet.",
 			"anchor": "mars"
 		},
@@ -65,13 +65,13 @@
 				"tfg:textures/gui/field_guide/sandworm.png"
 			],
 			"border": true,
-			"title": "The Sandworm",
-			"text": "$(thing)Sandworms$() are alerted by player footsteps. They are the reason almost nothing else lives in the desert.$(br)"
+			"title": "サンドワーム",
+			"text": "$(thing)サンドワーム$()は、プレイヤーの足音に反応して警戒態勢に入ります。砂漠に他の生き物がほとんど生息していないのは、奴らがいるからです。$(br)"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "Sniffers",
-			"text": "$(thing)Sniffers$() are domesticatable animals found between -30 and -102°C. They require a Large Nest to lay their eggs and can be shorn for $(item)Sniffer Tufts$(). Their eggs can be cooked or extracted for Cream. They eat any Mars crop.",
+			"title": "スニッファー",
+			"text": "$(thing)スニッファー$()は、-30～-102°Cの環境に生息する家畜化可能な動物です。産卵には大型の巣が必要で、毛を刈ると$(item)スニッファーの毛$()が得られます。卵は調理したり、クリームを抽出したりすることができます。火星産の作物なら何でも食べます。",
 			"anchor": "sniffer"
 		},
 		{
@@ -79,7 +79,7 @@
 			"entity": "tfg:sniffer{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
 			"scale": 0.45,
 			"name": " ",
-			"text": "A sniffer."
+			"text": "スニッファー。"
 		},
 		{
 			"type": "patchouli:text",

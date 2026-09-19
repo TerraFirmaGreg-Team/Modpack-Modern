@@ -10,7 +10,7 @@
     {
       "type": "patchouli:crafting",
       "recipe": "firmalife:crafting/mixing_bowl",
-      "text": "Requires a $(thing)Spoon$() to use."
+      "text": "Wymaga $(thing)łyżki$(), aby użyć."
     }
   ],
   "read_by_default": true,

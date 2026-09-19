@@ -1,11 +1,11 @@
 {
-	"name": "The Hellforge",
+	"name": "獄炎炉",
 	"category": "tfc:beneath",
 	"icon": "beneath:cursecoal",
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "The $(thing)Hellforge$() is a gratuitously large forge, with high capacity for fuel, products, and heating. It can heat up to nine $(l:mechanics/crucible)Crucibles$() at a time, and doesn't require sky access either!"
+			"text": "$(thing)獄炎炉$()は、燃料、製品、加熱能力のすべてにおいて非常に大容量な、必要以上に巨大な炉です。一度に最大9つの$(l:mechanics/crucible)るつぼ$()を加熱することができ、さらに上空が開けている必要もありませんす！"
 		},
 		{
 			"type": "patchouli:multiblock",
@@ -33,17 +33,17 @@
 					"X": "beneath:hellbricks"
 				}
 			},
-			"name": "Hellforge",
+			"name": "獄炎炉",
 			"text": "",
 			"enable_visualize": false
 		},
 		{
 			"type": "patchouli:text",
-			"text": "The Hellforge requires lava to flow in aqueducts in its four corners, as well as 21 hellbricks. The 3x3 center must be filled with $(l:mechanics/charcoal_pit)Charcoal Piles$() with 7 charcoal each, which then may be lit to start the forge."
+			"text": "獄炎炉を稼働させるには、四隅の水路に溶岩を流し、さらに21個の獄炎レンガが必要です。中央の3×3のエリアには、それぞれ7個の木炭が入った$(l:mechanics/charcoal_pit)木炭の山$()を配置し、それらに火をつけて炉に点火します。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "The item slots of the Hellforge may contain fuel, or things to be smelted; there is no distinction. Be careful what you put in! There are also slots for melting things, as with the charcoal forge. The lava meter on the screen indicates temperature."
+			"text": "獄炎炉のアイテムスロットには、燃料や精錬対象のアイテムを入れることができます。区別はありません。入れるものには注意してください！また、通常の炉と同様に、物を溶かすためのスロットもあります。画面上の溶岩メーターは温度を示しています。"
 		}
 	],
 	"read_by_default": true

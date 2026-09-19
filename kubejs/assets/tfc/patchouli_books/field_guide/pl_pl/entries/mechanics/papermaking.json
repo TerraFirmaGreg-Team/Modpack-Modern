@@ -15,7 +15,7 @@
       {
         "type": "tfc:sealed_barrel_recipe",
         "recipe": "tfc:barrel/soaked_papyrus_strip",
-        "text": "Then, papyrus strips are soaked in a $(l:mechanics/barrels)Barrel$() of $(thing)Water$()."
+        "text": "Następnie paski papirusu muszą być nasączone w $(l:mechanics/beczki)beczce$() z $(thing)wodą$()."
       },
       {
         "type": "tfc:loom_recipe",
@@ -84,7 +84,7 @@
       },
       {
         "type": "patchouli:text",
-        "text": "First you need to find Hardwood:$(br2)Acacia$(br)Ash$(br)Aspen$(br)Birch$(br)Blackwood$(br)Chestnut$(br)Hickory$(br)Maple$(br)Oak$(br)Rosewood$(br)Sycamore"
+        "text": "Najpierw musisz znaleźć twarde drewno: $(br2)Akacja$(br)Jesion$(br)Topola$(br)Brzoza$(br)Czarnodrzew$(br)Kasztan$(br)Hikora$(br)Klon$(br)Dąb$(br)Palisander$(br)Jawor"
       },
       {
         "type": "patchouli:spotlight",
@@ -136,7 +136,7 @@
       {
         "type": "tfc:anvil_recipe",
         "recipe": "tfg:anvil/soaked_unrefined_paper",
-        "text": "You can utilize an $(l:mechanics/anvils)Anvil$() to beat down the pulp into a sheet"
+        "text": "Możesz użyć $(l:mechanics/anvils)kowadła$(), aby zbić pulpę w arkusz"
       },
       {
         "type": "patchouli:spotlight",

@@ -1846,6 +1846,7 @@ const registerCreateRecipes = (event) => {
 		.duration(150)
 		.EUt(16)
 		.addMaterialInfo(true)
+		.circuit(1)
 	
 	//#endregion
 

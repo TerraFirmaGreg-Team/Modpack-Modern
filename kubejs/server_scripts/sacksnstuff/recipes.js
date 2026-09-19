@@ -39,7 +39,7 @@ const registerSNSRecipes = (event) => {
 		)
 		.itemOutputs('sns:burlap_sack')
 		.duration(100)
-		.circuit(4)
+		.circuit(6)
 		.EUt(GTValues.VA[GTValues.LV])
 	
 	event.recipes.tfc.sewing(

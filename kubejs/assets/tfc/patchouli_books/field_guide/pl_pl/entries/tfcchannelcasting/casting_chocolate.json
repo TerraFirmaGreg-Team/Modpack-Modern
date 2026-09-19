@@ -23,7 +23,7 @@
     {
       "type": "tfc:sealed_barrel_recipe",
       "recipe": "tfcchannelcasting:barrel/fill_with_sweet_liquor",
-      "text": "Eating chocolates filled with $(thing)Sweet Liquor$() gives a speed buff."
+      "text": "Jedzenie czekoladek wypełnionych $(thing)słodkim alkoholem$() zapewnia efekt szybkości."
     },
     {
       "type": "tfc:sealed_barrel_recipe",
@@ -33,7 +33,7 @@
     {
       "type": "tfc:sealed_barrel_recipe",
       "recipe": "tfcchannelcasting:barrel/fill_with_whiskey",
-      "text": "Eating chocolates filled with $(thing)Whiskey$() gives haste."
+      "text": "Jedzenie czekoladek wypełnionych $(thing)whisky$() daje pośpiech."
     }
   ],
   "read_by_default": true

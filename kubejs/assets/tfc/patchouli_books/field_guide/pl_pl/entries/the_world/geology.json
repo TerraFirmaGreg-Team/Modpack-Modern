@@ -5,14 +5,14 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "The world of TerraFirmaCraft is divided into large continents - landmasses many kilometers wide and separated by oceans. In these, you may find mountain ranges, rivers, and many other environments."
+      "text": "Świat TerraFirmaCraft podzielony jest na wielkie kontynenty — lądy szerokie na wiele kilometrów i oddzielone oceanami. Na nich znajdziesz pasma górskie, rzeki i wiele innych środowisk."
     },
     {
       "type": "patchouli:image",
       "images": [
         "tfc:textures/gui/book/biomes/regions.png"
       ],
-      "text": "A typical TFC world viewed at a large scale.",
+      "text": "Typowy świat TFC oglądany w dużej skali.",
       "border": true
     },
     {
@@ -26,7 +26,7 @@
       "images": [
         "tfc:textures/gui/book/biomes/rock_layers.png"
       ],
-      "text": "The cross-section of a TFC world.",
+      "text": "Przekrój świata TFC.",
       "border": true
     },
     {

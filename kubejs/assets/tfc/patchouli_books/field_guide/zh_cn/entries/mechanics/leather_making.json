@@ -5,14 +5,14 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "$(thing)皮革$()是一种由兽皮制成的结实耐用的材料。它可以用来制作$(thing)皮革盔甲$()、$(thing)鞍$()、以及$(l:mechanics/bellows)风箱$()。$()兽皮$()必须经过一系列复杂的工序之后才能变成$(thing)皮革$()。首先是$(l:mechanics/leather_making#soaking)浸灰$()，然后是$(l:mechanics/leather_making#scraping)剖层$()，接着要$(l:mechanics/leather_making#preparing)脱灰$()，最后还要$(l:mechanics/leather_making#tanning)浸酸$()。"
+      "text": "$(thing)皮革$()是一种由兽皮制成的结实耐用的材料。它可以用来制作$(l:mechanics/armor)盔甲$()、$(thing)鞍$()、以及$(l:mechanics/bellows)风箱$()。$()兽皮$()必须经过一系列复杂的工序之后才能变成$(thing)皮革$()。首先是$(l:mechanics/leather_making#soaking)浸灰$()，然后是$(l:mechanics/leather_making#scraping)刮削$()，接着要$(l:mechanics/leather_making#preparing)脱灰$()，最后还要$(l:mechanics/leather_making#tanning)鞣制$()。"
     },
     {
       "type": "patchouli:spotlight",
       "item": "tfc:small_raw_hide,tfc:medium_raw_hide,tfc:large_raw_hide",
       "title": "兽皮",
       "link_recipes": true,
-      "text": "制皮的第一步自然是得先找到$(thing)兽皮$()。世界各地的$(l:the_world/wild_animals)野生动物$()都会掉落兽皮。不同的动物掉落的兽皮大小会有所不同。"
+      "text": "制皮的第一步自然是得先找到$(thing)兽皮$()。世界各地的$(l:the_world/wild_animals)野生动物$()都会掉落兽皮。不同的动物掉落的$(thing)兽皮$()大小会有所不同。"
     },
     {
       "type": "patchouli:text",
@@ -28,9 +28,9 @@
       "type": "patchouli:spotlight",
       "anchor": "scraping",
       "item": "tfc:small_scraped_hide,tfc:medium_scraped_hide,tfc:large_scraped_hide",
-      "title": "剖层",
+      "title": "刮削",
       "link_recipes": true,
-      "text": "$(thing)浸泡$()好了的皮革还需要剖层，以此来移除皮革上残留的杂质。将一根原木横放在地上，然后再将皮革放置在原木上方。接着手持$(thing)小刀$()对准皮革的每一个部分按$(item)$(k:key.use)$()。已经刮好了的部分会改变其外观。"
+      "text": "$(thing)浸泡$()好了的皮革还需要刮削，以此来移除皮革上残留的杂质。将一根原木横放在地上，然后再将皮革放置在$(thing)原木$()上方。接着手持$(thing)小刀$()对准皮革的每一个部分按$(item)$(k:key.use)$()。已经刮好了的部分会改变其外观。"
     },
     {
       "type": "patchouli:image",

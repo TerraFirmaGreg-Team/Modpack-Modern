@@ -15,8 +15,8 @@
     },
     {
       "type": "patchouli:spotlight",
-      "title": "Softwoods",
-      "text": "Softwoods have sufficiently soft enough pulp and bark that they're perfect for creating $(l:firmaciv/canoe)Dugout Canoes$()",
+      "title": "Maderas suaves",
+      "text": "Las maderas suaves tienen una pulpa y corteza lo suficientemente blanda para poder hacer $(l:firmaciv/canoe)Canoas$()",
       "item": "afc:wood/stripped_log/tualang,afc:wood/stripped_log/fig,afc:wood/stripped_log/cypress"
     },
     {

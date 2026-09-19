@@ -5,7 +5,7 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "Шерстяная верёвка используется для подвешивания предметов для $(thing)копчения$(). Чтобы разместить её, просто используйте $(item)$(k:key.use)$()."
+      "text": "Wool string is used to hang items for $(thing)Smoking$(). To place it, just use $(item)$(k:key.use)$()."
     },
     {
       "type": "patchouli:multiblock",
@@ -32,11 +32,11 @@
     },
     {
       "type": "patchouli:text",
-      "text": "Копчение используется для консервации $(thing)мяса$() и $(l:mechanics/dairy)сыра$(). Чтобы закоптить мясо, его сначала необходимо $(thing)засолить$(), запечатав в $(thing)бочке$() с $(thing)рассолом$(). Вы также можете сначала посолить его. Для сыра это требование не обязательно."
+      "text": "Smoking is used to preserve $(thing)Meat$() and $(l:mechanics/dairy)Cheese$(). To smoke meat, it must have first been $(thing)Brined$() by sealing it in a $(thing)Barrel$() with $(thing)Brine$(). You may also salt it first. Cheese does not have this requirement."
     },
     {
       "type": "patchouli:text",
-      "text": "Чтобы начать процесс копчения, добавьте предмет на верёвку над костром. Костёр должен находиться в пределах четырёх блоков, прямо под верёвкой. Если всё работает, верёвка начнёт выделять дым. Важно отметить, что костёр должен быть разведён только с помощью $(thing)поленьев$(). Использование чего-то вроде $(thing)торфа$() мгновенно придаст вашей еде признак $(thing)отвратительности$()!"
+      "text": "To start the smoking process, add the item to the string above a firepit. The firepit must be within four blocks, directly underneath the string. The string should begin to generate some smoke if it is working. It is important to note that the firepit must only be burned with $(thing)Logs$(). Using something like $(thing)Peat$() will instantly give your food the $(thing)Disgusting$() trait!"
     },
     {
       "type": "patchouli:text",

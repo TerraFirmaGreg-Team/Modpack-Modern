@@ -1,39 +1,39 @@
 {
-	"name": "Piglins",
+	"name": "ピグリン",
 	"category": "tfc:beneath",
 	"icon": "minecraft:gold_ingot",
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"title": "Piglin Bartering",
-			"text": "Like you'd expect, you can trade with $(thing)Piglins$() in the same way you trade with them in vanilla, with $(item)Gold Ingots$()."
+			"title": "ピグリンとの物々交換",
+			"text": "ご想像の通り、$(thing)ピグリン$()とは、バニラと同じように、$(item)金のインゴット$()を使って取引することができます。"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "minecraft:piglin",
 			"scale": 0.9,
-			"name": "Piglin",
-			"text": "You can find Piglins in almost every biome throughout the Beneath."
+			"name": "ピグリン",
+			"text": "深界のほぼすべてのバイオームで、ピグリンを見かけることができます。"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "Trade Results",
-			"text": "$(li)1 Copper Ingot$(li)1 Tin Ingot$(li)1 Silver Ingot$(li)1 Bronze Ingot$(li)1 Bismuth Bronze Ingot$(li)1 Cast Iron Ingot$(li)1 Zinc Ingot$(li)1 Brass Ingot$(li)1 Bismuth Ingot$(li)1 Nickel Ingot$(li)2-4 Redstone Dust"
+			"title": "取引結果",
+			"text": "$(li)1 銅インゴット$(li)1 錫インゴット$(li)1銀インゴット$(li)1青銅インゴット$(li)1蒼鉛青銅インゴット$(li)1 鋳鉄インゴット$(li)1 亜鉛インゴット$(li)1 真鍮インゴット$(li)1 ビスマスインゴット$(li)1 ニッケルインゴット$(li)2-4 レッドストーンの粉"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(li)1-2 Leather$(li)6-12 Silk Thread$(li)4-6 Nether Quartz$(li)4-6 Cooked Venison$(li)4-6 Ghost Peppers$(li)4-6 Gunpowder$(li)4-8 Charcoal$(li)6-12 Arrows$(li)6-12 Flux$(li)2-3 Ruby Gems$(li)2-3 Emerald Gems$(li)2-3 Sapphire Gems$(li)2-3 Green Sapphire Gems$(li)1 Ender Dust"
+			"text": "$(li)1-2 革$(li)6-12 絹の繊維$(li)4-6 ネザークォーツ$(li)4-6 焼いた鹿肉$(li)4-6 ゴーストペッパー$(li)4-6 火薬$(li)4-8 石炭$(li)6-12 矢$(li)6-12 融材$(li)2-3 ルビーの宝石$(li)2-3 エメラルドの宝石$(li)2-3 サファイアの宝石$(li)2-3 グリーンサファイアの宝石$(li)1エンダーダスト"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "Bastions",
-			"text": "Raiding a $(thing)Bastion$() might be very dangerous, but they can also be very rewarding! You can find things like:$(li)Gold, Rose Gold, Pig Iron, Black Bronze, and Silver ingots$(li)Black Bronze weapons, tools, and armor$(li)Kaolin clay and graphite$(li)Lanterns$(li)Cloth, leather, seeds, and food$(li)And other treasures!"
+			"title": "砦",
+			"text": "$(thing)砦$()への襲撃は極めて危険ですが、その分、大きな見返りが得られることもあります！以下のようなものが手に入ります：$(li)金、ローズゴールド、銑鉄、黒青銅、銀のインゴット$(li)黒青銅製の武器、道具、防具$(li)カオリン粘土と黒鉛$(li)ランタン$(li)布、革、種、食料$(li)その他、さまざまな宝物！"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "tfg:piglin_disguise",
-			"title": "Piglin Disguise",
-			"text": "If you want to ensure an easy time trading--or simply mingling with the locals--Put on a $(thing)Piglin Disguise$() to prevent $(thing)Piglins$() from being hostile with you on first sight. But beware! They only put up with so much..."
+			"title": "ピグリンの変装マスク",
+			"text": "取引をスムーズに進めたい場合、あるいは単に地元の人たちと交流したい場合は、$(thing)ピグリンの変装マスク$()を身につければ、$(thing)ピグリン$()が初対面で敵対的になるのを防げます。ただし、注意してください！ 彼らにも我慢の限界があります……"
 		}
 	],
 	"read_by_default": true

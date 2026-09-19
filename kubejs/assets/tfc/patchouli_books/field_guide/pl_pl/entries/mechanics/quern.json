@@ -30,7 +30,7 @@
       "images": [
         "tfc:textures/gui/book/tutorial/quern_add_item.png"
       ],
-      "text": "Use $(item)$(k:key.use)$() on the top of the handstone to add items.",
+      "text": "Użyj $(item)$(k:key.use)$() na wierzchu rozcieracza, aby dodać przedmioty.",
       "border": true
     },
     {
@@ -38,7 +38,7 @@
       "images": [
         "tfc:textures/gui/book/tutorial/quern_handle.png"
       ],
-      "text": "Use $(item)$(k:key.use)$() the handle to spin the handstone.",
+      "text": "Użyj $(item)$(k:key.use)$() na uchwycie, aby obracać rozcieraczem.",
       "border": true
     },
     {
@@ -46,7 +46,7 @@
       "images": [
         "tfc:textures/gui/book/tutorial/quern_result.png"
       ],
-      "text": "The output should appear on the base of the quern. $(item)$(k:key.use)$() anywhere on the base to retrieve it.",
+      "text": "Produkt powinien pojawić się na podstawie rozcieracza. Kliknij $(item)$(k:key.use)$() w dowolnym miejscu podstawy, aby go odebrać.",
       "border": true
     },
     {
@@ -58,7 +58,7 @@
     {
       "type": "tfc:quern_recipe",
       "recipe": "tfg:quern/sulfur",
-      "text": "The quern is used to make various $(thing)Powders$() from dust, like $(thing)Sulfur$(). $(thing)Gems$() can also be ground into powder.",
+      "text": "Żarno służy do wytwarzania różnych $(thing)proszków$() z pyłów, takich jak $(thing)siarka$(). Można w nim również zmielić $(thing)klejnoty$().",
       "title": "Proszki"
     },
     {

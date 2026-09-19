@@ -109,6 +109,15 @@ function registerTFGSpaceSuitRecipes(event) {
 
 	event.shapeless('ad_astra:space_suit', ['ad_astra:space_suit'])
 		.id('tfg:empty_space_suit')
+		.modifyResult((grid, result) => {
+			let orig = grid.find(Item.of('ad_astra:space_suit').ignoreNBT());
+			result = result.withNBT(orig.nbt);
+
+			if (orig.nbt != null) {
+				result.nbt.put('BotariumData', [])
+			}
+			return result;
+		})
 
 	event.recipes.gtceu.assembler('ad_astra:netherite_space_suit')
 		.itemInputs(
@@ -124,6 +133,15 @@ function registerTFGSpaceSuitRecipes(event) {
 
 	event.shapeless('ad_astra:netherite_space_suit', ['ad_astra:netherite_space_suit'])
 		.id('tfg:empty_netherite_space_suit')
+		.modifyResult((grid, result) => {
+			let orig = grid.find(Item.of('ad_astra:netherite_space_suit').ignoreNBT());
+			result = result.withNBT(orig.nbt);
+
+			if (orig.nbt != null) {
+				result.nbt.put('BotariumData', [])
+			}
+			return result;
+		})
 
 	event.recipes.gtceu.shaped('ad_astra:space_pants', [
 		'BAB',

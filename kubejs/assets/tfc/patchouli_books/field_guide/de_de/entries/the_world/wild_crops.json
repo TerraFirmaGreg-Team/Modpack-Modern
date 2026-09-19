@@ -5,7 +5,7 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "$(thing)Wild Crops$() can be found scattered around the world, growing in small patches. They can be harvested for food and seeds, which can then be cultivated themselves in the not-wild form.$(br2)Harvesting wild crops can be done with your fists, or with a $(thing)Knife$() or other sharp tool. When broken, they will drop $(thing)Seeds$() and some $(thing)Products$()."
+      "text": "$(thing)Wildpflanzen$() sind überall auf der Welt verteilt und wachsen in kleinen Gruppen. Sie können geerntet werden, um Nahrung und Samen zu erhalten, die anschließend selbst in ihrer nicht-wilden Form angebaut werden können.$(br2)Wildpflanzen können mit bloßen Händen oder mit einem $(thing)Messer$() bzw. einem anderen scharfen Werkzeug geerntet werden. Beim Abbau lassen sie $(thing)Samen$() und einige $(thing)Produkte$() fallen."
     },
     {
       "type": "patchouli:multiblock",
@@ -28,7 +28,7 @@
     },
     {
       "type": "patchouli:text",
-      "text": "Every $(l:mechanics/crops)crop$() that can be cultivated can also be found in the wild. Wild crops will look similar to their cultivated counterparts, but are more hidden within the grass. Wild crops are only mature from June to October. Otherwise, they appear dead until the next Summer."
+      "text": "Jede $(l:mechanics/crops)Kulturpflanze$(), die angebaut werden kann, ist auch in der Wildnis zu finden. Wildpflanzen sehen ihren angebauten Gegenstücken ähnlich, sind jedoch stärker im Gras verborgen. Wildpflanzen sind nur von Juni bis Oktober reif. Außerhalb dieser Zeit erscheinen sie abgestorben, bis der nächste Sommer beginnt."
     },
     {
       "type": "tfc:multimultiblock",

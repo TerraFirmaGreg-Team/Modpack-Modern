@@ -28,7 +28,7 @@
 			"type": "patchouli:entity",
 			"entity": "tfc:grizzly_bear",
 			"scale": 0.55,
-			"name": "Ведмідь грізлі",
+			"name": "Ведмідь гризлі",
 			"text": "Ведмідь гризлі з'являється в лісах помірного клімату з діапазоном $(l:the_world/climate#temperature)температур$() від -15 до 15°C та рівнем $(l:the_world/climate#rainfall)опадів$() щонайменше 200 мм."
 		},
 		{

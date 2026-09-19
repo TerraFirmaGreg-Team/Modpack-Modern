@@ -1,5 +1,8 @@
 {
 	"attack.death.createaddition.barbed_wire": "%1$s próbował przekroczyć drut kolczasty",
+	"attack.death.createaddition.barbed_wire.player": "%1$s próbował przekroczyć drut kolczasty, walcząc z %2$s",
+	"attack.death.createaddition.tesla_coil": "%1$s otrzymał śmiertelne porażenie prądem",
+	"attack.death.createaddition.tesla_coil.player": "%1$s otrzymał śmiertelne porażenie prądem, walcząc z %2$s",
 	"block.createaddition.accumulator": "Akumulator",
 	"block.createaddition.accumulator.tooltip": "AKUMULATOR",
 	"block.createaddition.accumulator.tooltip.behaviour1": "Dostarcza _⚡_ do _przewodów_ podłączonych do _łącznika_ oznaczonego strzałką skierowaną w górę.",
@@ -14,7 +17,7 @@
 	"block.createaddition.chocolate_cake": "Ciasto czekoladowe",
 	"block.createaddition.digital_adapter": "Cyfrowy adapter",
 	"block.createaddition.digital_adapter.tooltip": "Cyfrowy adapter",
-	"block.createaddition.digital_adapter.tooltip.summary": "_Urządzenie peryferyjne Computercraft_ pozwalające komputerom na łączność z _tablicami wyświetlającymi_, _prędkościomierzami_, _miernikami obciążenia_, _krążkami linowymi_, _krążkami z wężem_, _krążkami windowymi_, _mechanicznymi tłokami_, _mechanicznymi łożyskami_ i _sterownikami prędkości obrotów_.",
+	"block.createaddition.digital_adapter.tooltip.summary": "Urządzenie peryferyjne Computercraft pozwalające komputerom współpracować z _tablicami wyświetlającymi_, _prędkościomierzami_, _miernikami obciążenia_, _krążkami z liną_, _krążkami z wężem_, _krążkami windy_, _mechanicznymi tłokami_, _mechanicznymi łożyskami_ i _kontrolerami prędkości obrotowej_.",
 	"block.createaddition.electric_motor": "Silnik elektryczny",
 	"block.createaddition.honey_cake": "Miodownik",
 	"block.createaddition.liquid_blaze_burner": "Płomienny palnik ze słomką",
@@ -43,7 +46,7 @@
 	"createaddition.ponder.cc_electric_motor.header": "Używanie ComputerCraft do kontroli silników elektrycznych",
 	"createaddition.ponder.cc_electric_motor.text_1": "Silnik elektryczny może być kontrolowany z użyciem ComputerCraft",
 	"createaddition.ponder.cc_electric_motor.text_2": "Połącz się z silnikiem korzystając z polecenia 'peripheral.wrap(side)'",
-	"createaddition.ponder.cc_electric_motor.text_3": "Uzyskaj dostęp do dokumentacji API korzystając z komendy '/cca_api'",
+	"createaddition.ponder.cc_electric_motor.text_3": "Uzyskaj dostęp do dokumentacji API korzystając z polecenia '/cca_api'",
 	"createaddition.ponder.electric_motor.header": "Generowanie siły obrotowej z użyciem silników elektrycznych",
 	"createaddition.ponder.electric_motor.text_1": "Silniki elektryczne to kompatkowe i łatwe do ustawienia źródło siły obrotowej",
 	"createaddition.ponder.electric_motor.text_2": "Korzystając z tylnego panelu możesz zmienić prędkość obrotową silnika",
@@ -61,7 +64,7 @@
 	"createaddition.ponder.modular_accumulator.text_5": "Dla lepszej kompatybilności z modami, akumulator będzie bezpośrednio dostarczał energię do bloków znajdujących się na nim i pod nim",
 	"createaddition.ponder.pei_redstone.header": "Kontrola redstone",
 	"createaddition.ponder.pei_redstone.text_1": "Zasilenie redstonem zapobiegnie połączeniu się interfejsów",
-	"createaddition.ponder.pei_transfer.header": "Używanie przenośnych interfejsów energii",
+	"createaddition.ponder.pei_transfer.header": "Wymiana energii w maszynach",
 	"createaddition.ponder.pei_transfer.text_1": "Poruszające się akumulatory nie mogą się połączyć z nieruchomymi złączami",
 	"createaddition.ponder.pei_transfer.text_2": "Ten komponent może obsługiwać akumulatory bez konieczności zatrzymywania maszyny",
 	"createaddition.ponder.pei_transfer.text_3": "Postaw drugi w odstępie od 1 do 2 bloków",
@@ -146,5 +149,6 @@
 	"statusbar.createaddition.wire.removed": "Drut usunięty",
 	"statusbar.createaddition.wire.requires_high_current": "To połączenie wymaga drutu wysokiego natężenia",
 	"block.createaddition.creative_energy": "Kreatywny generator",
-	"block.createaddition.creative_energy.tooltip": "KREATWNY GENERATOR"
+	"block.createaddition.creative_energy.tooltip": "KREATYWNY GENERATOR",
+	"block.createaddition.creative_energy.tooltip.summary": "Generuje nieskończoną ilość _⚡_."
 }

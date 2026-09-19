@@ -92,7 +92,7 @@
 	"block.create_connected.fluid_vessel": "Жидкостный сосуд",
 	"block.create_connected.fluid_vessel.tooltip.behaviour1": "_Меняет_ форму окна.",
 	"block.create_connected.fluid_vessel.tooltip.condition1": "При нажатии ПКМ гаечным ключом",
-	"block.create_connected.fluid_vessel.tooltip.summary": "_Горизонтальный_ жидкостный бак. Менее эффективен в качестве бойлера.",
+	"block.create_connected.fluid_vessel.tooltip.summary": "_Горизонтальный_ жидкостный резервуар. Менее эффективен в качестве котла.",
 	"block.create_connected.freewheel_clutch": "Сцепление свободного хода",
 	"block.create_connected.freewheel_clutch.tooltip.summary": "Сцепление, _разрывающее соединение_ в случае, если _направление_ входящего вращения _не соответствует настроенному_.",
 	"block.create_connected.gray_fan_dyeing_catalyst": "Серый вентиляторный катализатор окрашивания",

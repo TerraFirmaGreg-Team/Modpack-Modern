@@ -1,4 +1,5 @@
 {
+	"ae2.emi_integration.category_charger": "Charger",
 	"ae2.permission_denied": "Du hast nicht die nötigen Rechte, um auf dies zuzugreifen.",
 	"ae2.rei_jei_integration.budding_quartz_creation_and_worldgen": "Budding-Quarz kann in Meteoriten gefunden werden oder mit aufgeladenen Quarz im Wasser hergestellt werden.",
 	"ae2.rei_jei_integration.buds_drop_dust_when_not_fully_grown": "Quarzbuds zerfallen zu Staub, wenn sie nicht vollständig gewachsen sind.",
@@ -229,6 +230,7 @@
 	"gui.ae2.Facade": "Fassade (%s)",
 	"gui.ae2.FacadeCrafting": "Fassadenfertigung",
 	"gui.ae2.Fluids": "Flüssigkeiten",
+	"gui.ae2.Fluix": "Fluix",
 	"gui.ae2.FromStorage": "Verfügbar: %s",
 	"gui.ae2.Fuzzy": "Ungenau",
 	"gui.ae2.Gray": "Grau",
