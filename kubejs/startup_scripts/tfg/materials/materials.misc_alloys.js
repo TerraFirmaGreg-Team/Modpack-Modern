@@ -49,7 +49,8 @@ function registerTFGMiscAlloyMaterials(event) {
 			GTMaterialFlags.GENERATE_ROD,
 			GTMaterialFlags.GENERATE_LONG_ROD,
 			TFGMaterialFlags.HAS_GT_TOOL,
-			TFGMaterialFlags.GENERATE_DOUBLE_INGOTS)
+			TFGMaterialFlags.GENERATE_DOUBLE_INGOTS,
+			TFGMaterialFlags.CAN_BE_UNMOLDED)
 
 
 	// Material for MV

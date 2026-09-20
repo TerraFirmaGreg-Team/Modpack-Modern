@@ -302,10 +302,12 @@ function registerTFGMaterialRecipes(event) {
 			processGTToolHead(event, GTToolType.WIRE_CUTTER, TagPrefix.toolHeadWireCutter, material)
 			processToolHead(event, TagPrefix.toolHeadWireCutter, "wire_cutter_head", 'tfg:wire_cutter_head_extruder_mold', null, material)
 
-			// chainsaw, drill, buzzsaw
+			processToolHead(event, TagPrefix.toolHeadChainsaw, "chainsaw_head", "tfg:chainsaw_head_extruder_mold", null, material);
 
+			// Misc
 			processToolMortar(event, GTToolType.MORTAR, material);
 
+			// TFC-only
 			processToolHead(event, TFGTagPrefix.toolHeadPropick, "propick_head", 'tfg:propick_head_extruder_mold', 'tfc:ceramic/propick_head_mold', material)
 			processToolHead(event, TFGTagPrefix.toolHeadJavelin, "javelin_head", 'tfg:javelin_head_extruder_mold', 'tfc:ceramic/javelin_head_mold', material)
 			processToolHead(event, TFGTagPrefix.toolHeadChisel, "chisel_head", 'tfg:chisel_head_extruder_mold', 'tfc:ceramic/chisel_head_mold', material)

@@ -185,9 +185,13 @@ function registerTFGFlagsMaterialModification(event) {
 	GTMaterials.Magnalium.addFlags(GENERATE_ROTOR)
 	GTMaterials.VanadiumSteel.addFlags(GENERATE_ROTOR)
 
-	GTMaterials.VanadiumSteel.addFlags(HAS_GT_TOOL, GENERATE_DOUBLE_INGOTS)
-	GTMaterials.Ultimet.addFlags(HAS_GT_TOOL, GENERATE_DOUBLE_INGOTS)
-	GTMaterials.TungstenCarbide.addFlags(HAS_GT_TOOL, GENERATE_DOUBLE_INGOTS)
+	// electric tools
+	GTMaterials.VanadiumSteel.addFlags(HAS_GT_TOOL, GENERATE_DOUBLE_INGOTS, CAN_BE_UNMOLDED)
+	GTMaterials.Ultimet.addFlags(HAS_GT_TOOL, GENERATE_DOUBLE_INGOTS, CAN_BE_UNMOLDED)
+	GTMaterials.TungstenCarbide.addFlags(HAS_GT_TOOL, GENERATE_DOUBLE_INGOTS, CAN_BE_UNMOLDED)
+	// anvils
+	GTMaterials.StainlessSteel.addFlags(CAN_BE_UNMOLDED)
+	GTMaterials.Tungsten.addFlags(CAN_BE_UNMOLDED)
 
 	GTMaterials.HSLASteel.addFlags(GENERATE_BOLT_SCREW, GENERATE_DENSE)
 

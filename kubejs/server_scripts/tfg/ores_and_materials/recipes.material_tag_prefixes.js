@@ -13,7 +13,7 @@ function processDust(event, material) {
 
 	// Melting
 	const tfcProperty = material.getProperty(TFGPropertyKey.TFC_PROPERTY);
-	if (tfcProperty !== null) {
+	if (tfcProperty !== null && tfcProperty.getTier() <= 6) {
 		const tinyDust = ChemicalHelper.get(TagPrefix.dustTiny, material, 1);
 		addTFCMelting(event, tinyDust, material, global.calcAmountOfMetalProcessed(144 / 9, tfcProperty.getPercentOfMaterial()), 'tiny_dust');
 		const smallDust = ChemicalHelper.get(TagPrefix.dustSmall, material, 1);
@@ -326,8 +326,8 @@ function processBolt(event, material) {
 	if (tfcProperty !== null) {
 		addTFCMelting(event, boltItem, material, getMaterialAmount(TagPrefix.bolt, material) * 144, 'bolt');
 
-		const rodItem = ChemicalHelper.get(TagPrefix.rod, material, 1)
-		addAnvilRecipe(event, boltItem.withCount(4), rodItem, ['punch_last', 'draw_second_last', 'draw_third_last'], false, material, 'bolt');
+		addAnvilRecipe(event, boltItem.withCount(4), ChemicalHelper.get(TagPrefix.rod, material, 1), ['punch_last', 'draw_second_last', 'draw_third_last'], false, material, 'bolt_from_rod');
+		addAnvilRecipe(event, boltItem.withCount(8), ChemicalHelper.get(TagPrefix.ingot, material, 1), ['punch_last', 'draw_second_last', 'draw_third_last'], false, material, 'bolt_from_ingot');
 	}
 }
 
@@ -347,8 +347,8 @@ function processScrew(event, material) {
 	if (tfcProperty !== null) {
 		addTFCMelting(event, screwItem, material, getMaterialAmount(TagPrefix.screw, material) * 144, 'screw');
 
-		const rodItem = ChemicalHelper.get(TagPrefix.rod, material, 1);
-		addAnvilRecipe(event, screwItem.withCount(4), rodItem, ['punch_last', 'punch_second_last', 'shrink_third_last'], false, material, 'screw');
+		addAnvilRecipe(event, screwItem.withCount(4), ChemicalHelper.get(TagPrefix.rod, material, 1), ['punch_last', 'punch_second_last', 'shrink_third_last'], false, material, 'screw_from_rod');
+		addAnvilRecipe(event, screwItem.withCount(8), ChemicalHelper.get(TagPrefix.ingot, material, 1), ['punch_last', 'punch_second_last', 'shrink_third_last'], false, material, 'screw_from_ingot');
 	}
 }
 
@@ -361,8 +361,8 @@ function processRing(event, material) {
 	if (tfcProperty !== null) {
 		addTFCMelting(event, ringItem, material, getMaterialAmount(TagPrefix.ring, material) * 144, 'ring');
 
-		const rodItem = ChemicalHelper.get(TagPrefix.rod, material, 1);
-		addAnvilRecipe(event, ringItem.withCount(2), rodItem, ['hit_last', 'hit_second_last', 'hit_third_last'], false, material, 'ring');
+		addAnvilRecipe(event, ringItem.withCount(2), ChemicalHelper.get(TagPrefix.rod, material, 1), ['hit_last', 'hit_second_last', 'hit_third_last'], false, material, 'ring_from_rod');
+		addAnvilRecipe(event, ringItem.withCount(4), ChemicalHelper.get(TagPrefix.ingot, material, 1), ['hit_last', 'hit_second_last', 'hit_third_last'], false, material, 'ring_from_ingot');
 	}
 }
 
@@ -489,6 +489,7 @@ function processBuzzsawBlade(event, material) {
 	addMaterialRecycling(event, buzzsawBladeItem, material, 'buzz_saw_blade', TagPrefix.toolHeadBuzzSaw);
 
 	event.remove({ id: `gtceu:shaped/buzzsaw_blade_${materialName}` })
+	event.remove({ id: `gtceu:lathe/buzzsaw_gear_${materialName}` })
 
 	if (doublePlateItem.isEmpty())
 		return;
@@ -496,19 +497,19 @@ function processBuzzsawBlade(event, material) {
 	const tfcProperty = material.getProperty(TFGPropertyKey.TFC_PROPERTY);
 	const materialName = material.getName();
 
-	event.recipes.gtceu.lathe(`buzzsaw_gear_${materialName}`)
+	event.recipes.gtceu.extruder(`tfg:extrude_${materialName}_buzzsaw_blade`)
 		.itemInputs(doublePlateItem)
 		.itemOutputs(buzzsawBladeItem)
+		.notConsumable('tfg:buzzsaw_blade_extruder_mold')
 		.duration(material.getMass() * 6)
 		.EUt(GTValues.VA[tfcProperty !== null ? GTValues.LV : GTValues.MV])
 
+	event.recipes.vintageimprovements.curving(buzzsawBladeItem, doublePlateItem)
+		.head('tfg:buzzsaw_blade_extruder_mold')
+		.id(`tfg:vi/curving/${materialName}_block_to_buzzsaw_blade`)
+
 	if (tfcProperty !== null) {
 		addAnvilRecipe(event, buzzsawBladeItem, doublePlateItem, ['bend_last', 'hit_second_last', 'draw_third_last'], false, material, 'buzzsaw_blade');
-
-		event.recipes.vintageimprovements.polishing(buzzsawBladeItem, doublePlateItem)
-			.speedLimits(0)
-			.processingTime(material.getMass() * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
-			.id(`tfg:vi/lathe/${materialName}_buzzsaw`)
 	}
 }
 
@@ -624,7 +625,6 @@ function processDrill(event, material) {
 	const blockItem = ChemicalHelper.get(TagPrefix.block, material, 1);
 	const tfcProperty = material.getProperty(TFGPropertyKey.TFC_PROPERTY)
 	if (tfcProperty !== null) {
-		addTFCMelting(event, drillItem, material, 144 * 9, 'drill');
 		addAnvilRecipe(event, drillItem, blockItem, ['draw_last', 'punch_not_last', 'bend_not_last'], true, material, 'drill');
 	}
 

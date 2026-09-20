@@ -156,6 +156,7 @@ function modifyRecyclingAmounts(material) {
 	TagPrefix.toolHeadScrewdriver.modifyMaterialAmount(material, 1);
 	TagPrefix.toolHeadWireCutter.modifyMaterialAmount(material, 2);
 	TagPrefix.toolHeadDrill.modifyMaterialAmount(material, 9);
+	TagPrefix.toolHeadChainsaw.modifyMaterialAmount(material, 2);
 	TFGTagPrefix.toolHeadSword.modifyMaterialAmount(material, 2);
 	TFGTagPrefix.toolHeadButcheryKnife.modifyMaterialAmount(material, 1);
 	TFGTagPrefix.toolHeadMiningHammer.modifyMaterialAmount(material, 2);

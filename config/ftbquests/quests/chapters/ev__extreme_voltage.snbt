@@ -2070,16 +2070,7 @@
 				"00202200344F3456"
 			]
 			description: ["{quests.extreme_voltage.ostrum_dust.desc}"]
-			icon: {
-				Count: 1
-				ForgeCaps: {
-					"tfc:item_heat": {
-						heat: 0.0f
-						ticks: 0L
-					}
-				}
-				id: "gtceu:ostrum_iodide_dust"
-			}
+			icon: "gtceu:ostrum_iodide_dust"
 			id: "5FA09DA68D309548"
 			subtitle: "{quests.extreme_voltage.ostrum_dust.subtitle}"
 			tasks: [
