@@ -2,6 +2,7 @@
     "parent": "item/generated",
     "textures": {
         "layer0": "gtceu:item/material_sets/cereal_box/ingot_double",
-        "layer1": "gtceu:item/material_sets/cereal_box/ingot_double_secondary"
+        "layer1": "gtceu:item/material_sets/cereal_box/ingot_double_secondary",
+        "layer2": "gtceu:item/material_sets/cereal_box/ingot_double_overlay"
     }
 }
