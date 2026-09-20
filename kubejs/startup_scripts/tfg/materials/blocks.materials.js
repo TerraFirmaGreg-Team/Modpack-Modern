@@ -9,6 +9,7 @@ function registerTFGMaterialBlocks(event) {
 		.mapColor('crimson_stem')
 		.noItem()
 		.tagBlock('tfc:anvils')
+		.tagBlock('minecraft:mineable/pickaxe')
 
 	event.create('tfg:blackstone_anvil', 'tfc:anvil')
 		.tier(0)
@@ -16,6 +17,7 @@ function registerTFGMaterialBlocks(event) {
 		.mapColor('color_black')
 		.noItem()
 		.tagBlock('tfc:anvils')
+		.tagBlock('minecraft:mineable/pickaxe')
 
 	// MV
 	event.create('tfg:vanadium_steel_anvil', 'tfc:anvil')
@@ -23,6 +25,7 @@ function registerTFGMaterialBlocks(event) {
 		.soundType('anvil')
 		.mapColor('ice')
 		.tagBoth('tfc:anvils')
+		.tagBlock('minecraft:mineable/pickaxe')
 
 	// HV
 	event.create('tfg:stainless_steel_anvil', 'tfc:anvil')
@@ -30,6 +33,7 @@ function registerTFGMaterialBlocks(event) {
 		.soundType('anvil')
 		.mapColor('quartz')
 		.tagBoth('tfc:anvils')
+		.tagBlock('minecraft:mineable/pickaxe')
 
 	// EV
 	event.create('tfg:tungsten_anvil', 'tfc:anvil')
@@ -37,4 +41,5 @@ function registerTFGMaterialBlocks(event) {
 		.soundType('anvil')
 		.mapColor('color_black')
 		.tagBoth('tfc:anvils')
+		.tagBlock('minecraft:mineable/pickaxe')
 }
