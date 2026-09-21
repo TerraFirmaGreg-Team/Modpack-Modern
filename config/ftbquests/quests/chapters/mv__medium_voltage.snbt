@@ -1952,18 +1952,26 @@
 			optional: true
 			shape: "heart"
 			subtitle: "{quests.medium_voltage.vanadium_tools.subtitle}"
-			tasks: [{
-				id: "2089A49DEBDB9A7C"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "or(item(gtceu:mv_vanadium_steel_drill)item(gtceu:mv_vanadium_steel_wrench)item(gtceu:mv_vanadium_steel_screwdriver)item(gtceu:mv_vanadium_steel_buzzsaw)item(gtceu:mv_vanadium_steel_wire_cutter)item(gtceu:mv_vanadium_steel_chainsaw)item(gtceu:vanadium_steel_knife)item(gtceu:vanadium_steel_hoe)item(gtceu:vanadium_steel_scythe)item(gtceu:vanadium_steel_hammer)item(gtceu:vanadium_steel_file)item(gtceu:vanadium_steel_sword)item(gtceu:vanadium_steel_butchery_knife)item(gtceu:vanadium_steel_crowbar))"
+			tasks: [
+				{
+					id: "2089A49DEBDB9A7C"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(gtceu:mv_vanadium_steel_drill)item(gtceu:mv_vanadium_steel_wrench)item(gtceu:mv_vanadium_steel_screwdriver)item(gtceu:mv_vanadium_steel_buzzsaw)item(gtceu:mv_vanadium_steel_wire_cutter)item(gtceu:mv_vanadium_steel_chainsaw)item(gtceu:vanadium_steel_knife)item(gtceu:vanadium_steel_hoe)item(gtceu:vanadium_steel_scythe)item(gtceu:vanadium_steel_hammer)item(gtceu:vanadium_steel_file)item(gtceu:vanadium_steel_sword)item(gtceu:vanadium_steel_butchery_knife)item(gtceu:vanadium_steel_crowbar))"
+						}
 					}
+					title: "{quests.medium_voltage.vanadium_tools.task}"
+					type: "item"
 				}
-				title: "{quests.medium_voltage.vanadium_tools.task}"
-				type: "item"
-			}]
+				{
+					id: "37B2EA14E5E2063E"
+					item: "tfg:vanadium_steel_anvil"
+					optional_task: true
+					type: "item"
+				}
+			]
 			title: "{quests.medium_voltage.vanadium_tools.title}"
 			x: 8.5d
 			y: -0.5d

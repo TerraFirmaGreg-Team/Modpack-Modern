@@ -1779,6 +1779,12 @@
 					optional_task: true
 					type: "item"
 				}
+				{
+					id: "195F971960F976EF"
+					item: "tfg:stainless_steel_anvil"
+					optional_task: true
+					type: "item"
+				}
 			]
 			title: "{quest.high_voltage.ultimet.title}"
 			x: 3.5d
@@ -1822,6 +1828,12 @@
 					}
 					optional_task: true
 					title: "{quests.high_voltage.boron_tools.task}"
+					type: "item"
+				}
+				{
+					id: "1C79B9431FFDA07E"
+					item: "tfg:stainless_steel_anvil"
+					optional_task: true
 					type: "item"
 				}
 			]
