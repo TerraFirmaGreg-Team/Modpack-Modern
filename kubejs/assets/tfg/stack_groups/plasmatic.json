@@ -1,6 +1,8 @@
 {
 	"id": "tfg:plasmatic",
-	"type": "remi:tag",
+	"type": "remi:group",
 	"name": "stackgroup.remi.tfg_plasmatic",
-	"tag": "forge:plasmatic"
+	"contents": [
+		"#fluid:forge:plasmatic"
+	]
 }
