@@ -1082,7 +1082,7 @@
 		{
 			dependencies: ["04DE7C58F20B535A"]
 			description: ["{quests.metal_age.steel_goodies.desc}"]
-			icon: "greate:steel_mechanical_pump"
+			icon: "gtceu:steel_hammer"
 			id: "0C9B7745D812555A"
 			shape: "circle"
 			size: 1.5d
@@ -2321,6 +2321,7 @@
 			id: "09D913288896A67A"
 			size: 1.5d
 			subtitle: "{quests.steam_age.steel_greate.subtitle}"
+			shape: "circle"
 			tasks: [
 				{
 					id: "23DE370285589CB4"
@@ -2462,6 +2463,7 @@
 			description: ["{quests.steam_age.create_tools.desc}"]
 			id: "2F81902C6B1D4902"
 			subtitle: "{quests.steam_age.create_tools.subtitle}"
+			icon: "gtceu:bismuth_bronze_wrench"
 			tasks: [
 				{
 					id: "12C909F6EB4BB615"
@@ -2843,7 +2845,7 @@
 						ticks: 0L
 					}
 				}
-				id: "gtceu:small_brass_gear"
+				id: "gtceu:black_bronze_hammer"
 			}
 			id: "68F1232DD918BBC2"
 			shape: "circle"
@@ -3123,7 +3125,7 @@
 						ticks: 0L
 					}
 				}
-				id: "tfchotornot:tongs/brass"
+				id: "tfchotornot:tongs/bronze"
 				tag: {
 					Damage: 0
 				}
