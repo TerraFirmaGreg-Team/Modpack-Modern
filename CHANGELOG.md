@@ -25,6 +25,7 @@
 - Changed a performance mod's voiding behaviour for item stacks on the ground to only void when there's more than 1000 stacks instead of 128 - server owners are encouraged to [tweak this number](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/commit/8559274a130efb86fe24c0dde38732698475fe4f) if they wish @ashleney
 - Added an EMI category for lamp fuels @Redeix
 - Changed recipes of almost all More Red items and blocks, making them available a lot earlier @Pyritie
+- Merged a lot of the "early automation" quest chapter into the "metallurgy age" one, and added lots of links to things that are unlocked at each tier @Pyritie
 ### Bug fixes
 - Fixed some worldgen crashes (#4905, #4900) @Pyritie
 - Fix to repair scrambled pack order at level data which was affecting a few random world-related things such as not being able to collect glass with a gem saw (#4152) @ariedotme
