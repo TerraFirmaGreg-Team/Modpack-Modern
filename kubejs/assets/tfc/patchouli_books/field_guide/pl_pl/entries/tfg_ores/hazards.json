@@ -10,12 +10,12 @@
 			"type": "patchouli:spotlight",
 			"title": "Materiały niebezpieczne",
 			"item": "gtceu:cobaltite_dust",
-			"text": "Some $(thing)ores$(), $(thing)dusts$() and $(thing)chemicals$() are hazardous and can cause $(item)negative effects$() or even $(item)kill$() you if they are carried in your inventory. When carried, they are displayed on screen with a $(item)Status Effect$().$(br2)Certain equipment such as $(thing)masks$(), $(thing)gloves$(), and the $(thing)hazardous material suit$() can be used to counter these effects."
+			"text": "Niektóre $(thing)rudy$(), $(thing)pyły$() i $(thing)substancje chemiczne$() są niebezpieczne. Noszenie ich w ekwipunku może wywoływać $(item)szkodliwe efekty$(), a nawet $(item)doprowadzić do śmierci$(). Gdy masz je przy sobie, zagrożenie jest sygnalizowane na ekranie odpowiednim $(item)efektem$().$(br2)Przed ich działaniem chroni odpowiednie wyposażenie, takie jak $(thing)maseczki$(), $(thing)rękawice$() czy $(thing)kombinezon Hazmat$()."
 		},
 		{
 			"type": "patchouli:text",
 			"title": "Wszystkie efekty",
-			"text": "$(li)$(l:tfg_ores/hazards#Arsenicosis)Arsenicosis$()$()$(li)$(l:tfg_ores/hazards#Asbestosis)Asbestosis$()$()$(li)$(l:tfg_ores/hazards#Berylliosis)Berylliosis$()$(li)$(l:tfg_ores/hazards#Carbon_Monoxide_poisoning)Carbon Monoxide poisoning$()$(li)$(l:tfg_ores/hazards#Carcinogens)Carcinogens$()$(li)$(l:tfg_ores/hazards#Chemical_burns)Chemical burns$()$(li)$(l:tfg_ores/hazards#Irritants)Irritants$()$(li)$(l:tfg_ores/hazards#Methanol_poisoning)Methanol poisoning$()$(li)$(l:tfg_ores/hazards#Nauseating_chemicals)Nauseating chemicals$()$(li)$(l:tfg_ores/hazards#Poisons)Poisonous materials$()$(li)$(l:tfg_ores/hazards#Radioactive_materials)Radioactive materials$()$(li)$(l:tfg_ores/hazards#Silicosis)Silicosis$()$()$(br2)The next page will provide information on how to deal with these effects."
+			"text": "$(li)$(l:tfg_ores/hazards#Arsenicosis)Zatrucie arszenikiem$()$()$(li)$(l:tfg_ores/hazards#Asbestosis)Azbestoza$()$()$(li)$(l:tfg_ores/hazards#Berylliosis)Beryloza$()$(li)$(l:tfg_ores/hazards#Carbon_Monoxide_poisoning)Zatrucie tlenkiem węgla$()$(li)$(l:tfg_ores/hazards#Carcinogens)Substancje rakotwórcze$()$(li)$(l:tfg_ores/hazards#Chemical_burns)Oparzenia chemiczne$()$(li)$(l:tfg_ores/hazards#Irritants)Substancje drażniące$()$(li)$(l:tfg_ores/hazards#Methanol_poisoning)Zatrucie metanolem$()$(li)$(l:tfg_ores/hazards#Nauseating_chemicals)Substancje wywołujące nudności$()$(li)$(l:tfg_ores/hazards#Poisons)Materiały trujące$()$(li)$(l:tfg_ores/hazards#Radioactive_materials)Materiały promieniotwórcze$()$(li)$(l:tfg_ores/hazards#Silicosis)Krzemica$()$()$(br2)Na następnej stronie znajdziesz informacje o tym, jak radzić sobie z tymi zagrożeniami."
 		},
 		{
 			"type": "patchouli:text",
@@ -114,9 +114,9 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Abestoza",
+			"title": "Azbestoza",
 			"item": "gtceu:asbestos_dust",
-			"anchor": "Abestoza",
+			"anchor": "Azbestoza",
 			"text": "$(thing)Asbestosis$() is an illness caused by inhaling $(thing)Asbestos$() dust. If carried for long enough, it causes $(item)hunger$().$(br2)The $(l:tfg_ores/hazards#mask)Face Mask$() and the $(l:tfg_ores/hazards#hazmat)Hazmat Suit$() provide protection from $(thing)Asbestosis$()."
 		},
 		{

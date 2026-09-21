@@ -1,5 +1,5 @@
 {
-	"name": "Frequently Asked Questions",
+	"name": "Sıkça Sorulan Sorular",
 	"icon": "minecraft:spyglass",
 	"category": "tfc:tfg_tips",
 	"read_by_default": true,
@@ -7,8 +7,8 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"title": "FAQs",
-			"text": "Stuck on something? Try looking through this book first and in the quests, but if you're still stumped, you can ask on our $(l:https://discord.com/invite/AEaCzCTUwQ)Discord$() or $(l:https://www.reddit.com/r/TerraFirmaGreg)Subreddit$()!"
+			"title": "SSS",
+			"text": "Bir şeyde mi takıldın ? Önce bu kitaba ve Görevlere bakmayı dene, ama hâlâ sıkıştıysan, Bizim $(l:https://discord.com/invite/AEaCzCTUwQ)Discord'umuz$() ya da $(l:https://www.reddit.com/r/TerraFirmaGreg)Subreddit'imizde$() sorabilirsin !"
 		},
 		{
 			"type": "patchouli:text",

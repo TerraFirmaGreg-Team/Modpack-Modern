@@ -104,7 +104,7 @@
       "type": "patchouli:multiblock",
       "multiblock_id": "tfc:rotating_quern",
       "name": "",
-      "text": "A $(thing)Quern$() connected to an $(l:mechanics/mechanical_power#axle)Axle$().",
+      "text": "$(thing)Żarna$() połączona z $(l:mechanics/mechanical_power#axle)osią$().",
       "enable_visualize": false
     },
     {

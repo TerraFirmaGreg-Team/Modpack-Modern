@@ -6,7 +6,7 @@
     {
       "type": "patchouli:spotlight",
       "item": "sns:seed_pouch",
-      "text": "$(item)種袋$()は、様々な種類の種を収納するための$(l:sns/item_containers)アイテムコンテナ$()です。農業を行う際に非常に役立ちます。$(br2)基本的には27のスロットを持ち、それぞれ64個の種を収納できます。"
+      "text": "$(item)種袋$()は、様々な種類の種を収納するための$(l:sns/item_containers)アイテムコンテナ$()です。農業を行う際に非常に役立ちます。$(br2)基本的には27のスロットを持ち、それぞれ128個の種を収納できます。"
     },
     {
       "type": "patchouli:crafting",
