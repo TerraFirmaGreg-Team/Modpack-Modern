@@ -12,7 +12,7 @@
 	"config.jade.plugin_deafission.reactor": "Показать информацию о Ядерном реакторе",
 	"deafission.fission_reactor_coolant": "Ядерный реактор",
 	"deafission.fission_reactor_coolant_smr": "Малый ядерный реактор",
-	"deafission.fission_reactor_fuel": "Ядерное сырье",
+	"deafission.fission_reactor_fuel": "Ядерное сырьё",
 	"deafission.fission_reactor_processing": "Обработка ядерного тепла",
 	"deafission.fission_reactor.gui.coolant": "Теплоноситель: %s мБ/t",
 	"deafission.fission_reactor.gui.coolant_missing": "Теплоноситель: %s (имел %s%%)",

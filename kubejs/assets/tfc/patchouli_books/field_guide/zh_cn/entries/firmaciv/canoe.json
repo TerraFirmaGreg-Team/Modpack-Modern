@@ -41,7 +41,7 @@
           "B": ""
         }
       },
-      "name": "一个原木",
+      "name": "一根原木",
       "text": "制作独木舟的第一步",
       "enable_visualize": false
     },
@@ -61,7 +61,7 @@
           "B": ""
         }
       },
-      "name": "一个奇怪的台阶",
+      "name": "奇怪的板条",
       "text": "原木的顶部已经用锯子锯掉了。",
       "enable_visualize": false
     },
@@ -81,7 +81,7 @@
           "B": "firmaciv:wood/canoe_component_block/douglas_fir[canoe_carved=11,facing=east,end=true]"
         }
       },
-      "name": "一个奇怪的雕像",
+      "name": "奇怪的木雕",
       "text": "一个完全雕刻好的独木舟，准备挖空船体。",
       "enable_visualize": false
     },

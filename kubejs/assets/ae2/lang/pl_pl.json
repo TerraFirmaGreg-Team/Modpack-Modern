@@ -153,6 +153,7 @@
 	"chat.ae2.DeviceNotLinked": "Urządzenie nie jest połączone.",
 	"chat.ae2.DeviceNotPowered": "Urządzenie ma za mało energii.",
 	"chat.ae2.HighlightedBlock": "Podświetlony blok na: %s §rw: %s",
+	"chat.ae2.InvalidMachine": "Nie można przywrócić konfiguracji dla niekompatybilnego urządzenia.",
 	"chat.ae2.InvalidMachinePartiallyRestored": "Częściowo przywrócono konfigurację dla niekompatybilnego urządzenia: %s.",
 	"chat.ae2.isNowLocked": "Monitor jest teraz zablokowany.",
 	"chat.ae2.isNowUnlocked": "Monitor jest teraz odblokowany.",

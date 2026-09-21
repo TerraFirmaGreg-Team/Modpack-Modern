@@ -1,5 +1,5 @@
 {
-    "name": "TFG de maden yapmak",
+    "name": "TFG de maden kazmak",
     "icon": "minecraft:diamond_pickaxe",
     "category": "tfc:tfg_ores",
     "priority": true,
@@ -25,7 +25,7 @@
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Mining Hammer",
+            "title": "Maden Çekici",
             "text": "Bu şey bir canavar! 3x3 lük bir kazma hemde normal çekiç gibi maden düşürmeme gibi bişeyde yok yani  $(thing)ham maden$() kazabilirsin$(br2)Basılı tut $(thing)sneak$()",
             "item": {
                 "tag": "forge:tools/mining_hammers"
@@ -40,7 +40,7 @@
         },
         {
             "type": "patchouli:crafting",
-            "title": "Purifying dust",
+            "title": "Tozları saflaştırmak",
             "recipe": "gtceu:shapeless/crushed_ore_to_dust_copper",
             "text": "To make your crushed ores melt into even more mB, first place them in a crafting grid along with a $(thing)Hammer$(). This will produce $(thing)Impure Dust$(). To purify the dust, throw it in water or $(item)$(k:key.use)$() a $(thing)Cauldron$() filled with water."
         }

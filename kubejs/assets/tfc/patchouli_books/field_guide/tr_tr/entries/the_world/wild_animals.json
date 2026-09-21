@@ -1,11 +1,11 @@
 {
-	"name": "Wild Animals",
+	"name": "Vahşi Hayvanlar",
 	"category": "tfc:the_world",
 	"icon": "tfc:medium_raw_hide",
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "The world of TFC is full of animal life. Some animals are here to help, and some are incredibly dangerous. This section is about wild animals. For information on livestock, animals that can give you items you need, see the $(l:mechanics/animal_husbandry)Animal Husbandry$() page."
+			"text": "TFC dünyası hayvan hayatı ile doludur. Bazı hayvanlar sana yardımcıdır, Bazıları ise çok tehlikelidir. Bu bölüm vahşi hayvanlarla ilgili. Çiftlik hayvanları, size gerekli eşyaları veren hayvanlar, için $(l:mechanics/animal_husbandry)Hayvancılık$() bölümüne bakınız."
 		},
 		{
 			"type": "patchouli:text",
@@ -15,7 +15,7 @@
 			"type": "patchouli:text",
 			"anchor": "predators",
 			"text": "$(thing)Predators$() are animals that can attack the player. They are either $(thing)Nocturnal$(), only hunting at night, or $(thing)Diurnal$(), only hunting during the day. Predators can be neutral or hostile, depending on if they have killed a target recently. Predators have a home territory that they will defend - if you run far enough away, the predator will stop chasing and return home.",
-			"title": "Predators"
+			"title": "Avcılar"
 		},
 		{
 			"type": "patchouli:entity",
@@ -262,7 +262,7 @@
 			"type": "patchouli:entity",
 			"entity": "tfc:turtle",
 			"scale": 0.7,
-			"name": "Sea Turtle",
+			"name": "Deniz Kaplumbağası",
 			"text": "The sea turtle likes warm water. It spawns in $(l:the_world/climate#temperature)temperature$() of at least 21°C and $(l:the_world/climate#rainfall)rainfall$() of at least 250mm."
 		},
 		{

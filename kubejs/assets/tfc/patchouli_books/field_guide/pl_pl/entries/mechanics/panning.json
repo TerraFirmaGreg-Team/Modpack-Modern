@@ -10,7 +10,7 @@
     {
       "type": "tfc:knapping_recipe",
       "recipe": "tfc:clay_knapping/pan",
-      "text": "Clay can be $(l:getting_started/pottery)knapped$() into a pan as shown above."
+      "text": "Glina może zostać $(l:getting_started/pottery)wyrzeźbiona$() do formy miski, jak pokazano powyżej."
     },
     {
       "type": "tfc:heat_recipe",
