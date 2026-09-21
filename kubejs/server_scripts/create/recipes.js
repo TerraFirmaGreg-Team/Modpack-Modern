@@ -741,7 +741,7 @@ const registerCreateRecipes = (event) => {
 		.addMaterialInfo(true)
 
 	// Наблюдатель за поездом
-	event.shapeless('create:track_observer', [
+	event.shapeless('2x create:track_observer', [
 		'create:railway_casing',
 		'#minecraft:stone_pressure_plates'
 	]).id('tfg:create/shapeless/track_observer')
