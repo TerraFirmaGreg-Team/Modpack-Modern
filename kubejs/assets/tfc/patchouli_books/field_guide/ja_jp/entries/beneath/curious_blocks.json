@@ -5,7 +5,7 @@
 	"pages": [
 		{
 			"type": "patchouli:crafting",
-			"name": "Soul Clay",
+			"name": "ソウルクレイ",
 			"text": "用水路は溶岩や他の流体を移動させることもできますが、$(l:beanth/hellforge)獄炎炉$()を構築するときにも使います。",
 			"anchor": "blackstone_aqueduct",
 			"recipe": "tfg:shaped/blackstone_aqueduct"

@@ -22,7 +22,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "dried_fruit",
-			"text": "$(italic)イーストスターターや人工繊維はどうやって作るの？$()$(br2)まず、$(item)乾燥マット$()を使って果物を乾燥させてください。その後は、$(l:firmalife/bread)パン作り$()または$(l:firmalife/berry_bushes)人工皮革$()の手順に従って進めれば作れます。"
+			"text": "$(italic)イーストスターターや人工繊維はどうやって作るの？$()$(br2)まず、$(item)乾燥マット$()を使って果物を乾燥させてください。その後は、$(l:firmalife/bread)パン作り$()または$(l:firmalife/berry_bushes)パイナップルレザー$()の手順に従って進めれば作れます。"
 		},
 		{
 			"type": "patchouli:text",

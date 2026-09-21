@@ -1,5 +1,6 @@
 {
 	"fluid_type.sophisticatedcore.experience": "Doświadczenie",
+	"gui.sophisticatedcore.buttons.browse_results": "Otwórz rozszerzoną listę wyników z wyszukiwaniem",
 	"gui.sophisticatedcore.buttons.cancel": "Anuluj",
 	"gui.sophisticatedcore.buttons.confirm": "Potwierdź",
 	"gui.sophisticatedcore.buttons.sort_action": "Sortuj ekwipunek",
@@ -19,6 +20,7 @@
 	"gui.sophisticatedcore.buttons.upgrade_switch_inactive": "NIEAKTYWNE",
 	"gui.sophisticatedcore.error.add.any_upgrade_exists": "Wszystkie sloty ulepszeń muszą być puste",
 	"gui.sophisticatedcore.error.add.battery_exists": "Ulepszenie baterii jest już w innym slocie ulepszeń",
+	"gui.sophisticatedcore.error.add.needs_occupied_inventory_slots": "Co najmniej jeden z ostatnich %s slotów wymaganych przez %s jest zajęty.",
 	"gui.sophisticatedcore.error.add.no_upgrade_can_be_added": "Nie można dodać ulepszenia",
 	"gui.sophisticatedcore.error.add.only_single_upgrade_allowed": "Tylko jedno %s może być użyte w %s",
 	"gui.sophisticatedcore.error.add.only_x_upgrades_allowed": "Tylko %dx %s można użyć w: %s",
