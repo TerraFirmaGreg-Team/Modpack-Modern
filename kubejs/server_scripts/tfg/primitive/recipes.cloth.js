@@ -5,14 +5,14 @@ function registerTFGClothRecipes(event) {
 	// Phantom Silk
 	
 	event.recipes.tfc.damage_inputs_shapeless_crafting(
-		event.shapeless('8x tfg:phantom_thread', [
+		event.shapeless('16x tfg:phantom_thread', [
 			'minecraft:phantom_membrane',
 			'#tfg:tools/spindles'
 		]).id('tfg:shapeless/phantom_thread'))
 
 	event.recipes.gtceu.wiremill('tfg:wiremill/phantom_thread')
 		.itemInputs('1x minecraft:phantom_membrane')
-		.itemOutputs('8x tfg:phantom_thread')
+		.itemOutputs('16x tfg:phantom_thread')
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.ULV])
 
@@ -37,7 +37,7 @@ function registerTFGClothRecipes(event) {
 		'tfg:block/phantom_silk_block'
 	)
 
-	event.recipes.vintageimprovements.coiling('8x tfg:phantom_thread', 'minecraft:phantom_membrane')
+	event.recipes.vintageimprovements.coiling('16x tfg:phantom_thread', 'minecraft:phantom_membrane')
 		.processingTime(100 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
 		.id(`tfg:vi/coiling/phantom_thread`)
 		.springColor('E1C4C4')

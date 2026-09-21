@@ -17,7 +17,7 @@
       "type": "patchouli:spotlight",
       "item": "firmalife:food/pineapple",
       "link_recipes": false,
-      "text": "パイナップルの茂みは、降水量250～500mm、気温20～32℃の森林地帯に見られます。パイナップルは他の果物と変わりませんが、$(thing)人工皮革$()に加工できる点が異なります。"
+      "text": "パイナップルの茂みは、降水量250～500mm、気温20～32℃の森林地帯に見られます。パイナップルは他の果物と変わりませんが、$(thing)パイナップルレザー$()という革の代用品に加工できる点が異なります。"
     },
     {
       "type": "patchouli:crafting",
@@ -32,7 +32,7 @@
     {
       "type": "tfc:loom_recipe",
       "recipe": "firmalife:loom/pineapple_leather",
-      "text": "最後に、$(l:tfc:mechanics/weaving)織機$() で人工皮革を織り上げることができます。これは通常の革の代わりに使える植物由来の素材で、革装備などの革の加工やクラフトなど、さまざまな用途に活用できます！"
+      "text": "最後に、$(l:tfc:mechanics/weaving)織機$() でパイナップルレザーを織り上げることができます。これは通常の革の代わりに使える植物由来の素材で、革装備などの革の加工やクラフトなど、さまざまな用途に活用できます！"
     }
   ],
   "read_by_default": true,

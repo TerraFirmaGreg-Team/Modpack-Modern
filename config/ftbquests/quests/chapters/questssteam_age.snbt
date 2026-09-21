@@ -17,32 +17,11 @@
 	order_index: 3
 	quest_links: [
 		{
-			id: "39027CF4DC307D33"
-			linked_quest: "5E186CD5E83BFDF0"
-			x: -27.0d
-			y: 2.0d
-		}
-		{
-			id: "1F1E7097C015BE33"
-			linked_quest: "48A8E3210B2BAE1C"
-			shape: "octagon"
-			size: 2.0d
-			x: -27.0d
-			y: 0.0d
-		}
-		{
 			id: "7C03FE015586C652"
 			linked_quest: "55213ACBF5F5D398"
 			shape: "heart"
 			x: -11.0d
 			y: 16.0d
-		}
-		{
-			id: "65E0B13E245D2E5F"
-			linked_quest: "379F434116632A89"
-			shape: "heart"
-			x: -24.5d
-			y: 1.0d
 		}
 		{
 			id: "68F5E521F2DB0A86"
@@ -67,13 +46,6 @@
 			y: 13.5d
 		}
 		{
-			id: "56FD630E00C6BF1A"
-			linked_quest: "031F9DC9BD21FA16"
-			shape: "diamond"
-			x: -8.5d
-			y: 11.5d
-		}
-		{
 			id: "0ED2F015B1ABE9E0"
 			linked_quest: "34055D52D947FD7A"
 			x: -11.5d
@@ -81,186 +53,6 @@
 		}
 	]
 	quests: [
-		{
-			dependencies: [
-				"7B045998769930F0"
-				"55FDF06AC0C01D0B"
-			]
-			description: [
-				"{quests.steam_age.basic_millstone.desc.1}"
-				"{@pagebreak}"
-				"{quests.steam_age.basic_millstone.desc.2}"
-			]
-			id: "48C1E980F7D64317"
-			size: 1.0d
-			subtitle: "{quests.steam_age.basic_millstone.subtitle}"
-			tasks: [{
-				id: "486DE7D228F3589B"
-				item: "greate:andesite_alloy_millstone"
-				type: "item"
-			}]
-			title: "{quests.steam_age.basic_millstone.title}"
-			x: -19.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["6F1BC99BE641B671"]
-			description: [
-				"{quests.steam_age.horse_crank.desc.1}"
-				"{@pagebreak}"
-				"{quests.steam_age.horse_crank.desc.2}"
-			]
-			id: "1059288C22CB56BB"
-			optional: true
-			subtitle: "{quests.steam_age.horse_crank.subtitle}"
-			tasks: [{
-				id: "1F3EE2CB3B8875EC"
-				item: "createhorsepower:horse_crank"
-				type: "item"
-			}]
-			title: "{quests.steam_age.horse_crank.title}"
-			x: -23.0d
-			y: -2.0d
-		}
-		{
-			dependencies: ["7B045998769930F0"]
-			description: [
-				"{quests.steam_age.helve_hammer.desc.1}"
-				"{@pagebreak}"
-				"{quests.steam_age.helve_hammer.desc.2}"
-			]
-			id: "611EB6284CA7119C"
-			size: 1.0d
-			subtitle: "{quests.steam_age.helve_hammer.subtitle}"
-			tasks: [{
-				id: "340B4B4665295100"
-				item: "vintageimprovements:helve_hammer"
-				type: "item"
-			}]
-			title: "{quests.steam_age.helve_hammer.title}"
-			x: -19.0d
-			y: -4.0d
-		}
-		{
-			dependencies: ["6F1BC99BE641B671"]
-			description: ["{quests.steam_age.basic_greate.desc}"]
-			id: "7B045998769930F0"
-			subtitle: "{quests.steam_age.basic_greate.subtitle}"
-			tasks: [
-				{
-					id: "53E8B404D5233367"
-					item: "greate:andesite_alloy_cogwheel"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "54B5DC1982F4D816"
-					item: "greate:large_andesite_alloy_cogwheel"
-					type: "item"
-				}
-				{
-					id: "59AD69460AE89682"
-					item: "greate:andesite_alloy_shaft"
-					optional_task: true
-					type: "item"
-				}
-			]
-			title: "{quests.steam_age.basic_greate.title}"
-			x: -19.0d
-			y: -2.0d
-		}
-		{
-			dependencies: ["0D0D461AE3A3F7BF"]
-			description: ["{quests.steam_age.water_wheel.desc}"]
-			id: "61DDB00751D1E7CB"
-			optional: true
-			subtitle: "{quests.steam_age.water_wheel.subtitle}"
-			tasks: [{
-				id: "1D82D22878EE6D21"
-				item: "create:water_wheel"
-				type: "item"
-			}]
-			title: "{quests.steam_age.water_wheel.title}"
-			x: -13.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["0D0D461AE3A3F7BF"]
-			description: ["{quests.steam_age.windmill.desc}"]
-			id: "617E0AFB7BA3D7A8"
-			optional: true
-			subtitle: "{quests.steam_age.windmill.subtitle}"
-			tasks: [
-				{
-					id: "26EA0D8EDFCF3727"
-					item: "create:windmill_bearing"
-					type: "item"
-				}
-				{
-					count: 8L
-					id: "3095A44065C9F130"
-					item: "create:white_sail"
-					type: "item"
-				}
-			]
-			title: "{quests.steam_age.windmill.title}"
-			x: -13.0d
-			y: -4.0d
-		}
-		{
-			dependencies: ["6E8CEE02CB5B678B"]
-			description: ["{quests.steam_age.metal_casing.desc}"]
-			id: "7F14D2A34F480ACA"
-			size: 1.5d
-			subtitle: "{quests.steam_age.metal_casing.subtitle}"
-			tasks: [{
-				id: "1554B18D816C3549"
-				item: "create:andesite_casing"
-				type: "item"
-			}]
-			title: "{quests.steam_age.metal_casing.title}"
-			x: -8.0d
-			y: -2.0d
-		}
-		{
-			dependencies: [
-				"09D913288896A67A"
-				"05A39719B66B8F76"
-			]
-			description: ["{quests.steam_age.steel_encased_fan.desc}"]
-			id: "616E28977F3216D9"
-			optional: true
-			shape: "heart"
-			subtitle: "{quests.steam_age.steel_encased_fan.subtitle}"
-			tasks: [{
-				id: "32279C21D7553637"
-				item: { Count: 32, id: "greate:steel_encased_fan" }
-				type: "item"
-			}]
-			title: "{quests.steam_age.steel_encased_fan.title}"
-			x: -4.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["09D913288896A67A"]
-			description: [
-				"{quests.steam_age.steel_pump.desc.1}"
-				"{@pagebreak}"
-				"{quests.steam_age.steel_pump.desc.2}"
-				"{@pagebreak}"
-				"{quests.steam_age.steel_pump.desc.3}"
-			]
-			id: "51CBF7378FFAD514"
-			subtitle: "{quests.steam_age.steel_pump.subtitle}"
-			tasks: [{
-				id: "1E7DD1C4FCCFD937"
-				item: "greate:steel_mechanical_pump"
-				type: "item"
-			}]
-			title: "{quests.steam_age.steel_pump.title}"
-			x: -2.0d
-			y: 2.0d
-		}
 		{
 			dependencies: ["209958FE2EEA5D72"]
 			description: [
@@ -287,157 +79,6 @@
 			title: "{quests.steam_age.boilers.title}"
 			x: -19.5d
 			y: 7.75d
-		}
-		{
-			dependencies: ["32046292AA5B0E30"]
-			description: [
-				"{quests.steam_age.blaze_burner.desc.1}"
-				"{@pagebreak}"
-				"{quests.steam_age.blaze_burner.desc.2}"
-			]
-			id: "183D47F04CAEBFA7"
-			optional: true
-			shape: "heart"
-			subtitle: "{quests.steam_age.blaze_burner.subtitle}"
-			tasks: [{
-				id: "4655500474F4236C"
-				item: "create:blaze_burner"
-				type: "item"
-			}]
-			x: -6.0d
-			y: -2.0d
-		}
-		{
-			dependencies: ["7F14D2A34F480ACA"]
-			description: ["{quests.steam_age.mechanical_saw.desc}"]
-			id: "069825FBCFB0FB9C"
-			optional: true
-			rewards: [{
-				id: "64CA1397D201AF37"
-				item: "create:filter"
-				type: "item"
-			}]
-			shape: "heart"
-			subtitle: "{quests.steam_age.mechanical_saw.subtitle}"
-			tasks: [{
-				id: "5005121E0361DBD2"
-				item: "greate:andesite_alloy_mechanical_saw"
-				type: "item"
-			}]
-			title: "{quests.steam_age.mechanical_saw.title}"
-			x: -8.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["7F14D2A34F480ACA"]
-			description: ["{quests.steam_age.mechanical_harvester.desc}"]
-			id: "76871B4CEEEC70B8"
-			optional: true
-			shape: "heart"
-			subtitle: "{quests.steam_age.mechanical_harvester.subtitle}"
-			tasks: [{
-				id: "34092F5FBDFB9761"
-				item: "create:mechanical_harvester"
-				type: "item"
-			}]
-			title: "{quests.steam_age.mechanical_harvester.title}"
-			x: -8.0d
-			y: -4.0d
-		}
-		{
-			dependencies: ["6E8CEE02CB5B678B"]
-			description: ["{quests.steam_age.chute.desc}"]
-			id: "05CC8C5E63CD1DB8"
-			subtitle: "{quests.steam_age.chute.subtitle}"
-			tasks: [
-				{
-					id: "7CB1E90EAF7861FB"
-					item: "create:chute"
-					type: "item"
-				}
-				{
-					id: "66E04B6A41557709"
-					item: "create:andesite_funnel"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "6E500B14003B937D"
-					item: "minecraft:hopper"
-					optional_task: true
-					type: "item"
-				}
-			]
-			title: "{quests.steam_age.chute.title}"
-			x: -10.5d
-			y: 0.0d
-		}
-		{
-			dependencies: ["51CBF7378FFAD514"]
-			description: [
-				"{quests.steam_age.mold_table.desc.1}"
-				"{@pagebreak}"
-				"{quests.steam_age.mold_table.desc.2}"
-			]
-			id: "66DBF1C68493A406"
-			subtitle: "{quests.steam_age.mold_table.subtitle}"
-			tasks: [{
-				id: "7258D0D474B6F26E"
-				item: "tfcchannelcasting:mold_table"
-				type: "item"
-			}]
-			title: "{quests.steam_age.mold_table.title}"
-			x: -2.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["32046292AA5B0E30"]
-			dependency_requirement: "one_completed"
-			description: ["{quests.steam_age.steel_greate.desc}"]
-			id: "09D913288896A67A"
-			size: 1.5d
-			subtitle: "{quests.steam_age.steel_greate.subtitle}"
-			tasks: [
-				{
-					id: "23DE370285589CB4"
-					item: "greate:steel_shaft"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "4FDD99090C920E21"
-					item: "greate:steel_cogwheel"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "5569D0030FB45C5D"
-					item: "greate:large_steel_cogwheel"
-					type: "item"
-				}
-			]
-			title: "{quests.steam_age.steel_greate.title}"
-			x: -4.0d
-			y: 2.0d
-		}
-		{
-			dependencies: [
-				"09D913288896A67A"
-				"05A39719B66B8F76"
-			]
-			description: ["{quests.steam_age.steel_millstone.desc}"]
-			hide_dependent_lines: true
-			id: "5E4FC017E09ACF44"
-			optional: true
-			subtitle: "{quests.steam_age.steel_millstone.subtitle}"
-			tasks: [{
-				id: "3E3D4CD3283461DE"
-				item: "greate:steel_millstone"
-				type: "item"
-			}]
-			title: "{quests.steam_age.steel_millstone.title}"
-			x: -6.0d
-			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -635,40 +276,9 @@
 			y: 7.5d
 		}
 		{
-			dependencies: ["05CC8C5E63CD1DB8"]
-			description: [
-				"{quests.steam_age.item_pipes.desc.1}"
-				"{@pagebreak}"
-				"{quests.steam_age.item_pipes.desc.2}"
-				"{@pagebreak}"
-				"{quests.steam_age.item_pipes.desc.3}"
-				"{@pagebreak}"
-				"{quests.steam_age.item_pipes.desc.4}"
-			]
-			icon: "gtceu:tin_small_item_pipe"
-			id: "08672B3000450F14"
-			size: 1.0d
-			subtitle: "{quests.steam_age.item_pipes.subtitle}"
-			tasks: [{
-				id: "153F8811183001E5"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "or(item(gtceu:tin_small_item_pipe)item(gtceu:brass_small_item_pipe)item(gtceu:cobalt_small_item_pipe)item(gtceu:tin_normal_item_pipe)item(gtceu:brass_normal_item_pipe)item(gtceu:cobalt_normal_item_pipe))"
-					}
-				}
-				title: "{quests.steam_age.item_pipes.task}"
-				type: "item"
-			}]
-			title: "{quests.steam_age.item_pipes.title}"
-			x: -10.5d
-			y: 2.0d
-		}
-		{
 			dependencies: [
 				"05BE9FE74E4F1AE9"
-				"031F9DC9BD21FA16"
+				"37F9CB2837DD3FB6"
 			]
 			description: ["{quests.steam_age.circuit_boards.desc}"]
 			icon: "gtceu:resin_printed_circuit_board"
@@ -778,7 +388,7 @@
 		{
 			dependencies: [
 				"16CF5A9012EF4B27"
-				"031F9DC9BD21FA16"
+				"37F9CB2837DD3FB6"
 			]
 			dependency_requirement: "one_completed"
 			description: ["{quests.steam_age.resistors.desc}"]
@@ -1057,69 +667,6 @@
 			y: 12.5d
 		}
 		{
-			dependencies: ["51CBF7378FFAD514"]
-			description: [
-				"{quests.steam_age.fluid_pipes.desc.1}"
-				"{@pagebreak}"
-				"{quests.steam_age.fluid_pipes.desc.2}"
-			]
-			icon: "gtceu:bronze_normal_fluid_pipe"
-			id: "0109231F33296868"
-			optional: true
-			size: 1.0d
-			subtitle: "{quests.steam_age.fluid_pipes.subtitle}"
-			tasks: [
-				{
-					id: "59512A7A04D517E6"
-					item: {
-						Count: 1
-						id: "ftbfiltersystem:smart_filter"
-						tag: {
-							"ftbfiltersystem:filter": "or(item(gtceu:bronze_tiny_fluid_pipe)item(gtceu:bronze_quadruple_fluid_pipe)item(gtceu:bronze_nonuple_fluid_pipe)item(gtceu:bronze_huge_fluid_pipe)item(gtceu:bronze_large_fluid_pipe)item(gtceu:bronze_normal_fluid_pipe)item(gtceu:bronze_small_fluid_pipe))"
-						}
-					}
-					title: "{quests.tasktype.item.any} Bronze Pipe"
-					type: "item"
-				}
-				{
-					id: "143EA7ABC19B6AFC"
-					item: "gtceu:wood_normal_fluid_pipe"
-					optional_task: true
-					type: "item"
-				}
-			]
-			title: "{quests.steam_age.fluid_pipes.title}"
-			x: -2.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["51CBF7378FFAD514"]
-			description: [
-				"{quests.steam_age.fluid_drums.desc.1}"
-				"{@pagebreak}"
-				"{quests.steam_age.fluid_drums.desc.2}"
-			]
-			icon: "gtceu:bronze_drum"
-			id: "499D24AFADC25AA9"
-			size: 1.0d
-			subtitle: "{quests.steam_age.fluid_drums.subtitle}"
-			tasks: [{
-				id: "73A31AC2888A851E"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "or(item(gtceu:bronze_drum)item(gtceu:steel_drum)item(gtceu:aluminium_drum)item(gtceu:stainless_steel_drum)item(gtceu:gold_drum)item(gtceu:titanium_drum)item(gtceu:tungsten_steel_drum)item(gtceu:bismuth_bronze_drum)item(gtceu:black_bronze_drum))"
-					}
-				}
-				title: "{quests.steam_age.fluid_drums.task}"
-				type: "item"
-			}]
-			title: "{quests.steam_age.fluid_drums.title}"
-			x: 0.0d
-			y: 2.0d
-		}
-		{
 			dependencies: ["12CB3B9ADC586521"]
 			description: [
 				"{quests.steam_age.potin.desc.1}"
@@ -1149,36 +696,11 @@
 			y: 13.5d
 		}
 		{
-			dependencies: ["6F1BC99BE641B671"]
-			description: ["{quests.steam_age.create_tools.desc}"]
-			id: "2F81902C6B1D4902"
-			subtitle: "{quests.steam_age.create_tools.subtitle}"
-			tasks: [
-				{
-					id: "12C909F6EB4BB615"
-					item: "create:goggles"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "2792584EC8F6BCF0"
-					item: {
-						Count: 1
-						id: "ftbfiltersystem:smart_filter"
-						tag: {
-							"ftbfiltersystem:filter": "item_tag(forge:tools/wrenches)"
-						}
-					}
-					title: "{quests.steam_age.create_tools.task}"
-					type: "item"
-				}
+			dependencies: [
+				"6AA07588374B59AB"
+				"0C9B7745D812555A"
 			]
-			title: "{quests.steam_age.create_tools.title}"
-			x: -21.0d
-			y: -4.0d
-		}
-		{
-			dependencies: ["6AA07588374B59AB"]
+			dependency_requirement: "one_completed"
 			description: ["{quests.steam_age.trains.desc}"]
 			hide_dependency_lines: false
 			id: "02854A3E8A5D5043"
@@ -1248,163 +770,6 @@
 			y: 4.0d
 		}
 		{
-			dependencies: ["1059288C22CB56BB"]
-			dependency_requirement: "one_completed"
-			description: ["{quests.steam_age.poor_paths.desc}"]
-			icon: "tfc:dirt/loam"
-			id: "6356072A435EFE81"
-			optional: true
-			shape: "diamond"
-			subtitle: "{quests.steam_age.poor_paths.subtitle}"
-			tasks: [
-				{
-					disable_toast: true
-					id: "4F3DE27E5A72D7BD"
-					item: {
-						Count: 1
-						id: "ftbfiltersystem:smart_filter"
-						tag: {
-							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:dirt)"
-						}
-					}
-					optional_task: true
-					title: "{quests.tasktype.item.any} #tfc:dirt"
-					type: "item"
-				}
-				{
-					disable_toast: true
-					id: "2A6A80CC908180C5"
-					item: {
-						Count: 1
-						id: "ftbfiltersystem:smart_filter"
-						tag: {
-							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:grass)"
-						}
-					}
-					optional_task: true
-					title: "{quests.tasktype.item.any} #tfc:grass"
-					type: "item"
-				}
-				{
-					id: "63E8E70536A0E327"
-					type: "checkmark"
-				}
-			]
-			title: "{quests.steam_age.poor_paths.title}"
-			x: -24.5d
-			y: -3.5d
-		}
-		{
-			dependencies: ["1059288C22CB56BB"]
-			dependency_requirement: "one_completed"
-			description: ["{quests.steam_age.normal_paths.desc}"]
-			icon: "tfc:grass_path/silty_loam"
-			id: "494E81202B0F36A7"
-			optional: true
-			shape: "diamond"
-			subtitle: "{quests.steam_age.normal_paths.subtitle}"
-			tasks: [
-				{
-					id: "0E4FF871FD6313B1"
-					item: {
-						Count: 1
-						id: "ftbfiltersystem:smart_filter"
-						tag: {
-							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:paths)"
-						}
-					}
-					optional_task: true
-					title: "{quests.tasktype.item.any} #tfc:paths"
-					type: "item"
-				}
-				{
-					disable_toast: true
-					id: "5F38585D28010C6C"
-					item: {
-						Count: 1
-						id: "ftbfiltersystem:smart_filter"
-						tag: {
-							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:rock/gravel)"
-						}
-					}
-					optional_task: true
-					title: "{quests.tasktype.item.any} #tfc:rock/gravel"
-					type: "item"
-				}
-				{
-					id: "2ED43D8943143635"
-					item: "rnr:hoggin"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "4CBEBCFBCB80C624"
-					type: "checkmark"
-				}
-			]
-			title: "{quests.steam_age.normal_paths.title}"
-			x: -25.0d
-			y: -2.0d
-		}
-		{
-			dependencies: [
-				"1059288C22CB56BB"
-				"379F434116632A89"
-			]
-			dependency_requirement: "one_completed"
-			description: ["{quests.steam_age.good_paths.desc}"]
-			icon: "rnr:rock/sett_road/granite"
-			id: "52A82511A64B0A5B"
-			optional: true
-			shape: "diamond"
-			subtitle: "{quests.steam_age.good_paths.subtitle}"
-			tasks: [
-				{
-					id: "17BE9908916FD48D"
-					item: "rnr:rock/sett_road/granite"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "276FE934DBA46B50"
-					item: "rnr:rock/cobbled_road/granite"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "3ED818D7E317850A"
-					item: "rnr:rock/flagstones/granite"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "781B70D87BB8051D"
-					item: "rnr:pink_sandstone_flagstones"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "3A58D37BC4DA80A9"
-					item: "rnr:rock/gravel_road/granite"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "11F7E8FFE4575FF8"
-					item: "rnr:rock/macadam_road/granite"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "5782F5692D6AF00A"
-					type: "checkmark"
-				}
-			]
-			title: "{quests.steam_age.good_paths.title}"
-			x: -24.5d
-			y: -0.5d
-		}
-		{
 			dependencies: [
 				"69BDD31A69062B6C"
 				"43D0B4F2ACB9931B"
@@ -1440,77 +805,6 @@
 			title: "{quests.steam_age.paper.title}"
 			x: -2.5d
 			y: 11.5d
-		}
-		{
-			description: ["{quests.metal_age.bronze_goodies.desc}"]
-			disable_toast: true
-			id: "6F1BC99BE641B671"
-			shape: "octagon"
-			size: 2.0d
-			subtitle: "{quests.metal_age.bronze_goodies.subtitle}"
-			tasks: [{
-				id: "5B891E7A5DB66813"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:bronze_anvils)"
-					}
-				}
-				title: "{quests.tasktype.item.any} #tfc:bronze_anvils"
-				type: "item"
-			}]
-			title: "{quests.metal_age.bronze_goodies.title}"
-			x: -21.0d
-			y: -2.0d
-		}
-		{
-			description: ["{quests.metal_age.wrought_iron_goodies.desc}"]
-			id: "6E8CEE02CB5B678B"
-			shape: "octagon"
-			size: 2.0d
-			subtitle: "{quests.metal_age.wrought_iron_goodies.subtitle}"
-			tasks: [{
-				id: "14980AA2D20804BA"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"tfc:item_heat": {
-							heat: 0.0f
-							ticks: 0L
-						}
-					}
-					id: "tfc:metal/anvil/wrought_iron"
-				}
-				type: "item"
-			}]
-			title: "{quests.metal_age.wrought_iron_goodies.title}"
-			x: -10.5d
-			y: -2.0d
-		}
-		{
-			description: ["{quests.metal_age.steel_goodies.desc}"]
-			id: "32046292AA5B0E30"
-			shape: "octagon"
-			size: 2.0d
-			subtitle: "{quests.metal_age.steel_goodies.subtitle}"
-			tasks: [{
-				id: "6D4629A2C1063653"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"tfc:item_heat": {
-							heat: 0.0f
-							ticks: 0L
-						}
-					}
-					id: "tfc:metal/anvil/steel"
-				}
-				type: "item"
-			}]
-			title: "{quests.metal_age.steel_goodies.title}"
-			x: -4.0d
-			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -1580,23 +874,9 @@
 			y: 8.5d
 		}
 		{
-			dependencies: ["32046292AA5B0E30"]
-			description: ["{quests.steam_age.rotation_speed_controller.desc}"]
-			id: "414835BADD34513F"
-			subtitle: "{quests.steam_age.rotation_speed_controller.subtitle}"
-			tasks: [{
-				id: "74770DF964D26059"
-				item: "create:rotation_speed_controller"
-				type: "item"
-			}]
-			title: "{quests.steam_age.rotation_speed_controller.title}"
-			x: -6.0d
-			y: 0.0d
-		}
-		{
 			dependencies: [
 				"3E175E20C91F168B"
-				"031F9DC9BD21FA16"
+				"37F9CB2837DD3FB6"
 			]
 			description: ["{quests.steam_age.resin_boards.desc}"]
 			id: "05BE9FE74E4F1AE9"
@@ -1609,40 +889,6 @@
 			title: "{quests.steam_age.resin_boards.title}"
 			x: -10.0d
 			y: 11.5d
-		}
-		{
-			dependencies: ["6E8CEE02CB5B678B"]
-			description: [
-				"{quests.metal_age.coke_oven.desc.1}"
-				"{@pagebreak}"
-				"{quests.metal_age.coke_oven.desc.2}"
-				"{@pagebreak}"
-				""
-				"{image:tfg:textures/quests/auto_coke.png width:100 height:100 align:center}"
-			]
-			id: "0D0D461AE3A3F7BF"
-			size: 1.5d
-			subtitle: "{quests.metal_age.coke_oven.subtitle}"
-			tasks: [
-				{
-					id: "1D22CEA76A676434"
-					item: "gtceu:coke_oven"
-					type: "item"
-				}
-				{
-					id: "7C2595BA70CBB39E"
-					item: "gtceu:coke_oven_bricks"
-					type: "item"
-				}
-				{
-					id: "11981B2183C67CE0"
-					item: "gtceu:coke_oven_hatch"
-					type: "item"
-				}
-			]
-			title: "{quests.metal_age.coke_oven.title}"
-			x: -13.0d
-			y: -2.0d
 		}
 		{
 			dependencies: ["033E74BC588E7EAD"]
@@ -1659,64 +905,6 @@
 			title: "{quests.steam_age.packager.title}"
 			x: -19.5d
 			y: 17.5d
-		}
-		{
-			dependencies: [
-				"7B045998769930F0"
-				"55FDF06AC0C01D0B"
-			]
-			description: ["{quests.steam_age.basic_mech_press.desc}"]
-			id: "14710C5B4981CECC"
-			optional: true
-			shape: "heart"
-			subtitle: "{quests.steam_age.basic_mech_press.subtitle}"
-			tasks: [{
-				id: "2F89D6D6745465DC"
-				item: "greate:andesite_alloy_mechanical_press"
-				type: "item"
-			}]
-			title: "{quests.steam_age.basic_mech_press.title}"
-			x: -17.0d
-			y: -2.0d
-		}
-		{
-			dependencies: [
-				"09D913288896A67A"
-				"05A39719B66B8F76"
-			]
-			description: [
-				"{quests.steam_age.steel_mech_press.desc.1}"
-				"{@pagebreak}"
-				"{quests.steam_age.steel_mech_press.desc.2}"
-			]
-			id: "0D39D83AA5F9D543"
-			optional: true
-			shape: "heart"
-			subtitle: "{quests.steam_age.steel_mech_press.subtitle}"
-			tasks: [{
-				id: "32E30B6AC780CAF1"
-				item: "greate:steel_mechanical_press"
-				type: "item"
-			}]
-			title: "{quests.steam_age.steel_mech_press.title}"
-			x: -6.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["32046292AA5B0E30"]
-			description: ["{quests.steam_age.large_water_wheel.desc}"]
-			id: "56A068A5488CB273"
-			optional: true
-			shape: "heart"
-			subtitle: "{quests.steam_age.large_water_wheel.subtitle}"
-			tasks: [{
-				id: "5772AD3BB700FD84"
-				item: "create:large_water_wheel"
-				type: "item"
-			}]
-			title: "{quests.steam_age.large_water_wheel.title}"
-			x: -4.0d
-			y: -2.0d
 		}
 		{
 			dependencies: ["2C35D4E01AEC02AA"]
@@ -1739,36 +927,6 @@
 			title: "{quests.steam_age.supers.title}"
 			x: -6.0d
 			y: 13.0d
-		}
-		{
-			dependencies: ["0D0D461AE3A3F7BF"]
-			description: ["{quests.steam_age.multiblock_tank.desc}"]
-			icon: "gtceu:wooden_multiblock_tank"
-			id: "636B13A7B9755F2A"
-			optional: true
-			shape: "heart"
-			subtitle: "{quests.steam_age.multiblock_tank.subtitle}"
-			tasks: [
-				{
-					id: "0522DC5B9C4560B3"
-					item: "gtceu:wooden_multiblock_tank"
-					type: "item"
-				}
-				{
-					count: 24L
-					id: "6AE2B07A7FEA130F"
-					item: { Count: 24, id: "gtceu:wood_wall" }
-					type: "item"
-				}
-				{
-					id: "1580633542EB6DFB"
-					item: "gtceu:wooden_tank_valve"
-					type: "item"
-				}
-			]
-			title: "{quests.steam_age.multiblock_tank.title}"
-			x: -15.0d
-			y: -2.0d
 		}
 		{
 			dependencies: ["59F7F7A8C76DE31C"]
@@ -2038,30 +1196,7 @@
 			}]
 			title: "{quests.tfg_tips.tablets.title}"
 			x: -2.5d
-			y: 15.5d
-		}
-		{
-			dependencies: ["0D0D461AE3A3F7BF"]
-			description: ["{quests.tfg_tips.salvo.desc}"]
-			id: "1F1C8CD694E233E4"
-			optional: true
-			shape: "heart"
-			subtitle: "{quests.tfg_tips.salvo.subtitle}"
-			tasks: [{
-				id: "051F16E4D540ADE8"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "or(item(tfg:absorption_salvo)item(tfg:fire_resistance_salvo)item(tfg:invisibility_salvo)item(tfg:luck_salvo)item(tfg:resistance_salvo)item(tfg:instant_health_salvo))"
-					}
-				}
-				title: "{quests.tfg_tips.salvo.task}"
-				type: "item"
-			}]
-			title: "{quests.tfg_tips.salvo.title}"
-			x: -15.0d
-			y: -4.0d
+			y: 14.75d
 		}
 		{
 			dependencies: ["46FA9DD4755A5548"]
@@ -2133,6 +1268,24 @@
 			title: "{quests.steel_combustion_engine.title}"
 			x: -11.5d
 			y: 17.0d
+		}
+		{
+			dependency_requirement: "one_completed"
+			description: ["{quests.tfg_tips.create_sticky_resin.desc}"]
+			disable_toast: true
+			id: "37F9CB2837DD3FB6"
+			shape: "diamond"
+			size: 1.0d
+			subtitle: "{quests.tfg_tips.create_sticky_resin.subtitle}"
+			tasks: [{
+				disable_toast: true
+				id: "7D419FE38D56EA98"
+				item: "gtceu:sticky_resin"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.create_sticky_resin.title}"
+			x: -8.5d
+			y: 11.5d
 		}
 	]
 	subtitle: ["{quests.steam_age.subtitle}"]

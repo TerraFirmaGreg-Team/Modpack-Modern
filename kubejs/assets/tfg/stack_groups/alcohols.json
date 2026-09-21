@@ -1,0 +1,9 @@
+{
+	"id": "tfg:alcohols",
+	"type": "remi:group",
+	"name": "stackgroup.remi.tfg_alcohols",
+	"priority": 10,
+	"contents": [
+		"#fluid:tfg:alcohols"
+	]
+}

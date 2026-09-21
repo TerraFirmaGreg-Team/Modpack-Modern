@@ -75,6 +75,13 @@
 			x: 2.0d
 			y: 8.0d
 		}
+		{
+			id: "66E5130B60FD9E37"
+			linked_quest: "2301E2248A3560C8"
+			shape: "heart"
+			x: 11.0d
+			y: 18.0d
+		}
 	]
 	quests: [
 		{
@@ -548,8 +555,8 @@
 		}
 		{
 			dependencies: [
-				"174DA15847665CF8"
 				"1D40CAE675C4BB91"
+				"76F88CCE8FEF27B4"
 			]
 			description: ["{quests.stone_age.iron_flask.desc}"]
 			guide_page: "tfc:field_guide tfc:waterflasks/recipes"
@@ -1066,6 +1073,21 @@
 				{
 					id: "1134C29F6FB4382E"
 					item: "tfg:decorative_vase"
+					type: "item"
+				}
+				{
+					id: "338A9BD12F85CE50"
+					item: "firmalife:cured_oven_bottom"
+					type: "item"
+				}
+				{
+					id: "0B5157E7F40A50EE"
+					item: "firmalife:cured_oven_top"
+					type: "item"
+				}
+				{
+					id: "77DC92DE1E2F120F"
+					item: "firmalife:cured_oven_chimney"
 					type: "item"
 				}
 			]
@@ -2757,7 +2779,11 @@
 			y: 15.0d
 		}
 		{
-			dependencies: ["4D1CD95482EE2CDD"]
+			dependencies: [
+				"4D1CD95482EE2CDD"
+				"3C48CA0DAB4EE71B"
+			]
+			dependency_requirement: "one_completed"
 			description: [
 				"{quests.stone_age.fuel_temperatures.desc.1}"
 				"{@pagebreak}"

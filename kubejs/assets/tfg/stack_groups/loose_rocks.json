@@ -1,0 +1,11 @@
+{
+	"id": "tfg:loose_rocks",
+	"type": "remi:group",
+	"name": "stackgroup.remi.tfg_loose_rocks",
+	"contents": [
+		"#tfc:igneous_intrusive_rock",
+		"#tfc:sedimentary_rock",
+		"#tfc:igneous_extrusive_rock",
+		"#tfc:metamorphic_rock"
+	]
+}

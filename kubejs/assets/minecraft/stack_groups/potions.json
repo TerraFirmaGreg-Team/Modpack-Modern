@@ -1,10 +1,4 @@
 {
-  "type": "emixx:group",
-  "contents": [
-    {
-      "type": "item",
-      "id": "minecraft:potion"
-    }
-  ],
-  "enabled": false
+	"enabled": false,
+	"contents": []
 }

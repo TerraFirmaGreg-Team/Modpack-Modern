@@ -101,6 +101,15 @@ function registerTFGPrimitiveItemTags(event) {
 	event.add('tfg:artisan_table_tools', '#create:sandpaper')
 
 	event.add('tfg:feathers', ['minecraft:feather', 'tfg:wraptor_wool', 'wan_ancient_beasts:glider_feather']);
+
+	event.add('tfg:quartz_gems', [
+		'minecraft:quartz',
+		'gtceu:quartzite_gem',
+		'ae2:certus_quartz_crystal',
+		'ae2:charged_certus_quartz_crystal',
+		'create:rose_quartz',
+		'minecraft:amethyst_shard'
+	])
 }
 
 function registerTFGPrimitiveBlockTags(event) {

@@ -27,7 +27,7 @@
     {
       "type": "patchouli:crafting",
       "recipe": "tfc:kjs/damage/shapeless/pineapple_yarn",
-      "text": "Pineapple yarn is made by crafting a $(thing)Spindle$() with the fiber."
+      "text": "Nić ananasowa powstaje przez połączenie $(thing)wrzeciona$() z włóknem."
     },
     {
       "type": "tfc:loom_recipe",

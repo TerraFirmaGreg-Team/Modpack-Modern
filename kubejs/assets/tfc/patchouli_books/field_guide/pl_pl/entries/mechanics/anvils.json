@@ -59,7 +59,7 @@
       "images": [
         "tfc:textures/gui/book/gui/anvil_in_use.png"
       ],
-      "text": "Interfejs po wybraniu opcji głowicy kilofa do wykucia.",
+      "text": "Interfejs po wybraniu opcji ostrza kilofa do wykucia.",
       "border": false
     },
     {
@@ -82,7 +82,7 @@
     },
     {
       "type": "patchouli:text",
-      "text": "Wykuwanie przedmiotu może być żmudne i posiadać wiele następujących po sobie kroków. Wszelako efektywna praca zostaje nagrodzona. Niektóre przedmioty, jak na przykład głowice narzędzi, będąc wykonanymi w niewielkiej, bądź minimalnej ilości kroków, otrzymują bonus zależny od tego, jak efektywnie zostały wykonane. Bonus będzie wtedy stosował się do głównej cechy docelowego narzędzia; na przykład głowica kilofu wykorzystana do jego wytworzenia.",
+      "text": "Wykuwanie przedmiotu może być żmudne i posiadać wiele następujących po sobie kroków. Wszelako efektywna praca zostaje nagrodzona. Niektóre przedmioty, jak na przykład głowice narzędzi, będąc wykonanymi w niewielkiej, bądź minimalnej ilości kroków, otrzymują bonus zależny od tego, jak efektywnie zostały wykonane. Bonus będzie wtedy stosował się do głównej cechy docelowego narzędzia; na przykład ostrze kilofu wykorzystana do jego wytworzenia.",
       "title": "Bonusy"
     },
     {

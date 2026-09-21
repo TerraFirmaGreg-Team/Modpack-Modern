@@ -86,7 +86,7 @@
 				"tfg:textures/gui/field_guide/nether/ash_forest.png"
 			],
 			"border": true,
-			"text": "What remains of the Lush Hollow after the frequent fires caused by the heat."
+			"text": "To, co pozostaje z bujnej jaskini po częstych pożarach wywołanych przez upał."
 		},
 		{
 			"type": "patchouli:image",
@@ -95,7 +95,7 @@
 				"tfg:textures/gui/field_guide/nether/lava_floes.png"
 			],
 			"border": true,
-			"text": "An ore-rich $(thing)Pyroxenite$() area crisscrossed with rivers of lava."
+			"text": "Obszar bogaty w rudę $(thing)piroksenitu$(), przecięty siecią rzek lawy."
 		},
 		{
 			"type": "patchouli:image",

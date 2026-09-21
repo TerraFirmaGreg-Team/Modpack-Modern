@@ -1,0 +1,15 @@
+{
+	"id": "tfg:bricks",
+	"type": "remi:group",
+	"name": "stackgroup.remi.tfg_bricks",
+	"contents": [
+		"#tfg:stone_brick",
+		"#tfc:wet_mud_bricks",
+		"#tfc:dry_mud_bricks",
+		"tfc:alabaster_brick",
+		"tfc:ceramic/unfired_brick",
+		"tfc:ceramic/unfired_fire_brick",
+		"tfc:ceramic/fire_brick",
+		"gtceu:coke_oven_brick"
+	]
+}
