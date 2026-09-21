@@ -2,7 +2,6 @@
 	{
 		"action": "remove",
 		"items": [
-			"greate:andesite_alloy_alloy",
 			"gtceu:steel_alloy",
 			"gtceu:aluminium_alloy",
 			"gtceu:stainless_steel_alloy",
@@ -17,9 +16,6 @@
 			"greate:rubber_window_pane",
 
 			"gtceu:neutronium_whisk",
-			"greate:polyethylene_belt_connector",
-			"greate:polytetrafluoroethylene_belt_connector",
-			"greate:polybenzimidazole_belt_connector",
 
 			"greate:andesite_alloy_crushing_wheel",
 			"greate:andesite_alloy_encased_fan",
@@ -107,12 +103,8 @@
 			"greate:andesite_alloy_rotor",
 			"greate:andesite_alloy_whisk",
 			"greate:andesite_alloy_bolt",
-			"greate:andesite_alloy_ingot",
 			"greate:andesite_alloy_rod",
 			"greate:andesite_alloy_screw",
-			"greate:andesite_alloy_buzz_saw_blade",
-			"greate:andesite_alloy_block",
-			"greate:andesite_alloy_buzzsaw",
 
 			"greate:refined_radiance_bucket",
 			"greate:tiny_refined_radiance_dust",
