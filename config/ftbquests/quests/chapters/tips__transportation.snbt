@@ -718,9 +718,14 @@
 			y: 7.0d
 		}
 		{
-			dependencies: ["2B84F34BFA37C828"]
+			dependencies: [
+				"2B84F34BFA37C828"
+				"61A8220EA30E7649"
+			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.kayak_materials.desc}"]
 			guide_page: "tfc:field_guide tfc:firmaciv/kayak"
+			icon: "firmaciv:kayak"
 			id: "03696C9BBC53AB26"
 			subtitle: "{quests.tfg_tips.kayak_materials.subtitle}"
 			tasks: [
@@ -962,6 +967,7 @@
 			dependencies: [
 				"78358ED2C6F6FCFD"
 				"611C053A562DA9F0"
+				"1AF194B74265872C"
 			]
 			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.warfare.desc}"]
@@ -1098,7 +1104,11 @@
 			y: 7.0d
 		}
 		{
-			dependencies: ["60497014785301EB"]
+			dependencies: [
+				"60497014785301EB"
+				"68F1232DD918BBC2"
+			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.astikorcarts.desc}"]
 			icon: "tfcastikorcarts:wheel/ash"
 			id: "05528D09F7EE6E33"
@@ -1209,7 +1219,7 @@
 		{
 			dependencies: [
 				"60497014785301EB"
-				"3C173357029AB649"
+				"68F1232DD918BBC2"
 			]
 			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.glider.desc}"]
@@ -1407,7 +1417,7 @@
 		{
 			dependencies: [
 				"62FD3E7A836D2E0A"
-				"174DA15847665CF8"
+				"76F88CCE8FEF27B4"
 			]
 			description: ["{quests.tfg_tips.airship.desc}"]
 			id: "598BD589D3C3057A"
@@ -1424,8 +1434,9 @@
 		{
 			dependencies: [
 				"62FD3E7A836D2E0A"
-				"04DE7C58F20B535A"
+				"0C9B7745D812555A"
 			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.quadrocopter.desc}"]
 			id: "5D7E9840A5A7AD7E"
 			subtitle: "{quests.tfg_tips.quadrocopter.subtitle}"
@@ -1604,7 +1615,11 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["1594C2564FC7982D"]
+			dependencies: [
+				"1594C2564FC7982D"
+				"0C9B7745D812555A"
+			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.horseshoes.desc}"]
 			guide_page: "tfc:field_guide tfc:sns/horseshoes"
 			id: "40566F6665A095C6"
@@ -1626,7 +1641,7 @@
 			y: -2.5d
 		}
 		{
-			dependencies: ["174DA15847665CF8"]
+			dependencies: ["76F88CCE8FEF27B4"]
 			description: ["{quests.tfg_tips.hiking_boots.desc}"]
 			guide_page: "tfc:field_guide tfc:sns/safety_toe_hiking_boots"
 			id: "598CA763D195C84E"

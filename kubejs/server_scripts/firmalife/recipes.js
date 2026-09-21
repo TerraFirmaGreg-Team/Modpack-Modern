@@ -357,16 +357,16 @@ const registerFirmaLifeRecipes = (event) => {
 
 	event.recipes.gtceu.shaped('2x firmalife:sweeper', [
 		'ABD',
-		'CB '
+		'C  '
 	], {
 		A: '#forge:saw_heads/wrought_iron',
 		B: '#forge:rods/wrought_iron',
-		C: '#forge:small_gears/red_alloy',
+		C: 'minecraft:redstone',
 		D: '#forge:tools/wrenches'
 	}).addMaterialInfo().id('tfg:crafting/sweeper');
 
 	event.recipes.gtceu.assembler('tfg:sweeper')
-		.itemInputs('#forge:saw_heads/wrought_iron', '2x #forge:rods/wrought_iron', '#forge:small_gears/red_alloy')
+		.itemInputs('#forge:saw_heads/wrought_iron', '#forge:rods/wrought_iron', 'minecraft:redstone')
 		.itemOutputs('2x firmalife:sweeper')
 		.circuit(3)
 		.duration(30)
@@ -377,18 +377,18 @@ const registerFirmaLifeRecipes = (event) => {
 
 	event.recipes.gtceu.shaped('4x firmalife:picker', [
 		'ABD',
-		'CC ',
-		'EE '
+		'C  ',
+		'E  '
 	], {
 		A: '#forge:plates/wrought_iron',
-		B: '#forge:small_gears/red_alloy',
+		B: 'minecraft:redstone',
 		C: '#forge:rods/wrought_iron',
 		D: '#forge:tools/wrenches',
 		E: '#forge:hoe_heads/wrought_iron'
 	}).addMaterialInfo().id('tfg:crafting/picker');
 
 	event.recipes.gtceu.assembler('tfg:picker')
-		.itemInputs('2x #forge:hoe_heads/wrought_iron', '#forge:plates/wrought_iron', '#forge:small_gears/red_alloy', '2x #forge:rods/wrought_iron')
+		.itemInputs('#forge:hoe_heads/wrought_iron', '#forge:plates/wrought_iron', 'minecraft:redstone', '#forge:rods/wrought_iron')
 		.itemOutputs('4x firmalife:picker')
 		.circuit(3)
 		.duration(30)

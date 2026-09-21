@@ -74,10 +74,14 @@
 			y: -21.0d
 		}
 		{
-			dependencies: ["2EFB241490502DB3"]
+			dependencies: [
+				"2EFB241490502DB3"
+				"3C48CA0DAB4EE71B"
+			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.beekeeping.desc}"]
 			guide_page: "tfc:field_guide tfc:firmalife/beekeeping"
-			icon: "firmalife:beeswax"
+			icon: "firmalife:raw_honey"
 			id: "1071B804483BB882"
 			shape: "circle"
 			subtitle: "{quests.tfg_tips.beekeeping.subtitle}"
@@ -151,7 +155,7 @@
 				}
 			]
 			title: "{quests.tfg_tips.not_the_bees.title}"
-			x: -2.5d
+			x: -3.5d
 			y: -10.5d
 		}
 		{
@@ -183,9 +187,10 @@
 			y: -9.0d
 		}
 		{
-			dependencies: ["0FB14699D7BE5D4B"]
+			dependencies: ["76E0058A4DDF3CFB"]
 			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.beeswax.desc}"]
+			icon: "firmalife:beeswax"
 			id: "79FA776C414AE8E5"
 			subtitle: "{quests.tfg_tips.beeswax.subtitle}"
 			tasks: [
@@ -223,7 +228,7 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.honey.title}"
-			x: -3.0d
+			x: -3.5d
 			y: -12.0d
 		}
 		{
@@ -343,7 +348,11 @@
 			y: -5.0d
 		}
 		{
-			dependencies: ["029264BCA5477837"]
+			dependencies: [
+				"029264BCA5477837"
+				"76F88CCE8FEF27B4"
+			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.oven_appliances.desc}"]
 			guide_page: "tfc:field_guide tfc:firmalife/oven_appliances"
 			id: "73D5ED4099F99A47"
@@ -1075,7 +1084,11 @@
 			y: -8.5d
 		}
 		{
-			dependencies: ["79FA776C414AE8E5"]
+			dependencies: [
+				"79FA776C414AE8E5"
+				"61A8220EA30E7649"
+			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.candles.desc}"]
 			guide_page: "tfc:field_guide tfc:mechanics/lighting"
 			id: "368E3C94EEDC11BB"
@@ -1284,7 +1297,11 @@
 			y: -20.0d
 		}
 		{
-			dependencies: ["07FBA022050DA24A"]
+			dependencies: [
+				"07FBA022050DA24A"
+				"76F88CCE8FEF27B4"
+			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.greenhouse_automation.desc}"]
 			guide_page: "tfc:field_guide tfc:firmalife/planters"
 			id: "30DD0DDF86C96926"
@@ -1415,7 +1432,11 @@
 			y: -12.0d
 		}
 		{
-			dependencies: ["264D138DFFE13BD0"]
+			dependencies: [
+				"264D138DFFE13BD0"
+				"76F88CCE8FEF27B4"
+			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.compost_tumbler.desc}"]
 			guide_page: "tfc:field_guide tfc:firmalife/more_fertilizer"
 			id: "4E950ADF626B4D94"

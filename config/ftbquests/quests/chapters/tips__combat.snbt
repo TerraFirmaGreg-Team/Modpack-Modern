@@ -317,6 +317,7 @@
 		}
 		{
 			dependencies: ["2E3C021FEAE6A490"]
+			description: ["{quests.combat_tips.lv_main.desc}"]
 			disable_toast: true
 			icon: "tfg:lv_universal_circuit"
 			id: "165215273D49B85B"
@@ -324,8 +325,15 @@
 			size: 1.5d
 			tasks: [{
 				disable_toast: true
-				id: "51331F413C1FDD10"
-				item: "gtceu:lv_assembler"
+				id: "719E92C53E0439A9"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:circuits/lv)"
+					}
+				}
+				title: "Any #gtceu:circuits/lv"
 				type: "item"
 			}]
 			title: "{quests.combat_tips.lv_main.title}"
@@ -340,11 +348,27 @@
 			shape: "octagon"
 			size: 1.5d
 			subtitle: "{quests.combat_tips.adv_clock_main.subtitle}"
-			tasks: [{
-				id: "35B435B79ECBE1C4"
-				item: "tfg:advanced_clockwork_mechanism"
-				type: "item"
-			}]
+			tasks: [
+				{
+					disable_toast: true
+					id: "6CE5CD02A08A7367"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:circuits/mv)"
+						}
+					}
+					title: "Any #gtceu:circuits/mv"
+					type: "item"
+				}
+				{
+					id: "7B0D312DE1053887"
+					item: "tfg:advanced_clockwork_mechanism"
+					optional_task: true
+					type: "item"
+				}
+			]
 			title: "{item.tfg.advanced_clockwork_mechanism}"
 			x: 13.0d
 			y: 0.0d
@@ -588,11 +612,27 @@
 			shape: "octagon"
 			size: 1.5d
 			subtitle: "{quests.combat_tips.certus_main.subtitle}"
-			tasks: [{
-				id: "3495E2D9731C0A6C"
-				item: "tfg:certus_mechanism"
-				type: "item"
-			}]
+			tasks: [
+				{
+					disable_toast: true
+					id: "6E0D3EA1CF08E7A9"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:circuits/ev)"
+						}
+					}
+					title: "Any #gtceu:circuits/ev"
+					type: "item"
+				}
+				{
+					id: "7ED4CB4AD29E78E5"
+					item: "tfg:certus_mechanism"
+					optional_task: true
+					type: "item"
+				}
+			]
 			title: "{item.tfg.certus_mechanism}"
 			x: 21.0d
 			y: 0.0d
@@ -1761,7 +1801,11 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["611C053A562DA9F0"]
+			dependencies: [
+				"611C053A562DA9F0"
+				"76F88CCE8FEF27B4"
+			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.combat_tips.flintlock_mechanism.description}"]
 			id: "46214D40FA69DA7B"
 			subtitle: "{quests.combat_tips.flintlock_mechanism.subtitle}"
@@ -1825,14 +1869,22 @@
 		}
 		{
 			dependencies: ["07A777BAAB2DBCFC"]
+			description: ["{quests.combat_tips.hv_main.desc}"]
 			icon: "tfg:hv_universal_circuit"
 			id: "1FF607647FA682B3"
 			shape: "octagon"
 			size: 1.5d
 			tasks: [{
 				disable_toast: true
-				id: "050C41DFAD456777"
-				item: "gtceu:hv_assembler"
+				id: "2B560E1E9F7165F2"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:circuits/hv)"
+					}
+				}
+				title: "Any #gtceu:circuits/hv"
 				type: "item"
 			}]
 			title: "{quests.combat_tips.hv_main.title}"
@@ -1847,8 +1899,15 @@
 			size: 1.5d
 			tasks: [{
 				disable_toast: true
-				id: "592B533C15CDA18D"
-				item: "gtceu:iv_assembler"
+				id: "4457DB5B10237D60"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:circuits/iv)"
+					}
+				}
+				title: "Any #gtceu:circuits/iv"
 				type: "item"
 			}]
 			title: "{quests.combat_tips.iv_main.title}"
@@ -1883,7 +1942,11 @@
 			y: -3.0d
 		}
 		{
-			dependencies: ["0EDFCD5F30AAE7D7"]
+			dependencies: [
+				"0EDFCD5F30AAE7D7"
+				"68F1232DD918BBC2"
+			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.combat_tips.trims.desc}"]
 			id: "0F1603CC9D7D41E3"
 			subtitle: "{quests.combat_tips.trims.subtitle}"
