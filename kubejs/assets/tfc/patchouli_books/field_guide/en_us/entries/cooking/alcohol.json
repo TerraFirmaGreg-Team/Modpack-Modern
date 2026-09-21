@@ -7,7 +7,7 @@
         "type": "patchouli:text",
         "title": "Index",
         "anchor": "index",
-        "text": "$(li)$(bold)$(l:cooking/drinks#alcohol)Alcohol$()$(li)$(bold)$(l:cooking/drinks#aged_alcohol)Aged Alcohol$()$(li)$(bold)$(l:cooking/drinks#vintage_alcohol)Vintage Alcohol$()$(li)$(bold)$(l:cooking/alcohol#wine_making)Wine Making$()$(li2)$(l:cooking/alcohol#wine_properties)Wine Properties$()$(li)$(bold)$(l:cooking/alcohol#keg)Keg$()$(li)$(bold)$(l:cooking/alcohol#wine_shelf)Wine Shelf$()"
+        "text": "$(li)$(bold)$(l:cooking/drinks#alcohol)Alcohol$()$(li)$(bold)$(l:cooking/drinks#aged_alcohol)Aged Alcohol$()$(li)$(bold)$(l:cooking/drinks#vintage_alcohol)Vintage Alcohol$()$(li)$(bold)$(l:cooking/alcohol#wine_making)Wine Making$()$(li2)$(l:cooking/alcohol#wine_properties)Wine Properties$()$(li)$(bold)$(l:cooking/alcohol#wine_shelf)Wine Shelf$()"
     },
     {
       "type": "patchouli:text",
@@ -64,13 +64,6 @@
     {
       "type": "patchouli:text",
       "text": "Wine begins aging as soon as it is bottled, and stops aging when the cork is removed. The cork can be removed by $(item)$(k:key.use)$() on the bottle item with a knife item. Otherwise, wine bottles work a little like buckets, and can be emptied into barrels or other devices."
-    },
-    {
-      "type": "patchouli:crafting",
-      "title": "Keg",
-      "anchor": "keg",
-      "recipe": "firmalife:crafting/wood/pine_keg",
-      "text": "The $(thing)Keg$() is a 2x2x2 barrel block that can contain loads of items or fluids. Perfect for your vinery!"
     },
     {
       "type": "patchouli:crafting",

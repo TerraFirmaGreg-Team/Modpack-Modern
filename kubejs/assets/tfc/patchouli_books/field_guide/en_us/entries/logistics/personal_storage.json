@@ -17,7 +17,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "$(li)$(thing)Item Pickup$(): If it can pickup item entities from the world. $(item)$(k:key.sneak)-$(k:key.use)$() or use $(item)$(k:sns.key.pickup)$() to toggle.$(li)$(thing)Item Voiding$(): If it can void excess items picked up from the world. To toggle $(item)$(k:key.sneak)-$(k:key.attack)$() slots.$(li)$(thing)Inventory interaction$(): If you can insert and extract from it by clicking on the stack like TFC vessels or vanilla bundles.$(li)$(thing)Restrictions$(): What type of items are allowed inside."
+            "text": "$(li)$(thing)Item Pickup$(): If it can pick up item entities from the world. $(item)$(k:key.sneak)-$(k:key.use)$() or use $(item)$(k:sns.key.pickup)$() to toggle.$(li)$(thing)Item Voiding$(): If it can void excess items picked up from the world. To toggle $(item)$(k:key.sneak)-$(k:key.attack)$() slots.$(li)$(thing)Inventory interaction$(): If you can insert and extract from it by clicking on the stack like TFC vessels or vanilla bundles.$(li)$(thing)Restrictions$(): What type of items are allowed inside."
         },
         {
             "type": "patchouli:spotlight",
@@ -97,7 +97,7 @@
         }
     ],
     "read_by_default": true,
-    "sortnum": 4,
+    "sortnum": 5,
     "extra_recipe_mappings": {
       "sns:straw_basket": 5,
       "sns:leather_sack": 6,
