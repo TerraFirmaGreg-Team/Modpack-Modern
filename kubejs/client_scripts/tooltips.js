@@ -533,6 +533,9 @@ const registerTooltips = (event) => {
 	event.addAdvanced(['minecraft:player_head'], (item, advanced, text) => {
 		text.add(1, Text.translate('tfg.tooltip.player_head'));
 	});
+	event.addAdvanced(['diggerhelmet:mining_speed_modifier'], (item, advanced, text) => {
+		text.add(1, Text.translate('tfg.tooltip.digger_helmet_mining_upgrade'));
+	});
 
 	// AE2
 	event.addAdvanced(['tfg:wireless_card'], (item, advanced, text) => {
