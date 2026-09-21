@@ -275,29 +275,18 @@ const registerMinecraftRecipes = (event) => {
 		'CCC'
 	], {
 		A: 'minecraft:redstone_torch',
-		B: '#forge:gems/certus_quartz',
-		C: '#tfc:rock/smooth'
+		B: '#tfg:quartz_gems',
+		C: '#forge:plates/stone'
 	}).id('tfg:shaped/comparator_certus');
 
-	event.shaped('minecraft:comparator', [
-		' A ',
+	event.shaped('minecraft:repeater', [
 		'ABA',
 		'CCC'
 	], {
 		A: 'minecraft:redstone_torch',
-		B: '#forge:gems/quartzite',
-		C: '#tfc:rock/smooth'
-	}).id('tfg:shaped/comparator_quartzite');
-
-	event.shaped('minecraft:comparator', [
-		' A ',
-		'ABA',
-		'CCC'
-	], {
-		A: 'minecraft:redstone_torch',
-		B: '#forge:gems/nether_quartz',
-		C: '#tfc:rock/smooth'
-	}).id('tfg:shaped/comparator_nether_quartz');
+		B: 'minecraft:redstone',
+		C: '#forge:plates/stone'
+	}).id('tfc:crafting/vanilla/redstone/repeater')
 
 	//#endregion
 
@@ -564,43 +553,11 @@ const registerMinecraftRecipes = (event) => {
 	], {
 		A: '#forge:cobblestone',
 		B: 'minecraft:redstone',
-		C: '#forge:gems/certus_quartz'
-	}).id('tfg:shaped/observer_certus_q')
-
-	event.shaped('minecraft:observer', [
-		'AAA',
-		'BBC',
-		'AAA'
-	], {
-		A: '#forge:cobblestone',
-		B: 'minecraft:redstone',
-		C: '#forge:gems/nether_quartz'
-	}).id('tfg:shaped/observer_nether_q')
-
-	event.shaped('minecraft:observer', [
-		'AAA',
-		'BBC',
-		'AAA'
-	], {
-		A: '#forge:cobblestone',
-		B: 'minecraft:redstone',
-		C: '#forge:gems/quartzite'
-	}).id('tfg:shaped/observer_quartzite')
+		C: '#tfg:quartz_gems'
+	}).id('tfg:shaped/observer')
 
 	event.recipes.gtceu.assembler('observer_certus_quartz')
-		.itemInputs('6x #forge:cobblestone', '2x minecraft:redstone', '#forge:gems/certus_quartz')
-		.itemOutputs('minecraft:observer')
-		.duration(100)
-		.EUt(30)
-
-	event.recipes.gtceu.assembler('observer_nether_quartz')
-		.itemInputs('6x #forge:cobblestone', '2x minecraft:redstone', '#forge:gems/nether_quartz')
-		.itemOutputs('minecraft:observer')
-		.duration(100)
-		.EUt(30)
-
-	event.recipes.gtceu.assembler('observer_quartzite')
-		.itemInputs('6x #forge:cobblestone', '2x minecraft:redstone', '#forge:gems/quartzite')
+		.itemInputs('6x #forge:cobblestone', '2x minecraft:redstone', '#tfg:quartz_gems')
 		.itemOutputs('minecraft:observer')
 		.duration(100)
 		.EUt(30)

@@ -25,8 +25,6 @@ const registerCreateRecipes = (event) => {
 			{ id: 'create:crafting/kinetics/placard' },
 			{ id: 'create:crafting/logistics/pulse_repeater' },
 			{ id: 'create:crafting/logistics/pulse_extender' },
-			{ id: 'create:crafting/logistics/powered_latch' },
-			{ id: 'create:crafting/logistics/powered_toggle_latch' },
 			{ id: 'create:crafting/kinetics/crafter_slot_cover' },
 			{ id: 'create:crafting/appliances/linked_controller' },
 			{ id: 'create:crafting/appliances/filter_clear' },
@@ -55,6 +53,9 @@ const registerCreateRecipes = (event) => {
 
 	// Make Bound Cardboard craftable with all string
 	event.replaceInput({id: 'create:crafting/materials/bound_cardboard_block' }, 'minecraft:string', '#forge:string')
+
+	event.replaceInput({ id: 'create:crafting/logistics/pulse_repeater' }, '#forge:stone', '#forge:plates/stone')
+	event.replaceInput({ id: 'create:crafting/logistics/pulse_extender' }, '#forge:stone', '#forge:plates/stone')
 	
 	// Remove Table Cloth recipes
 	global.MINECRAFT_DYE_NAMES.forEach(dye => {
@@ -2085,7 +2086,7 @@ const registerCreateRecipes = (event) => {
 		A: 'minecraft:redstone',
 		B: '#forge:plates/brass',
 		C: 'minecraft:redstone_torch',
-		D: '#forge:stone',
+		D: '#forge:plates/stone',
 		E: '#tfg:precision_fabricator_holder_rods'
 	}).id('tfg:shaped/pulse_timer')
 
