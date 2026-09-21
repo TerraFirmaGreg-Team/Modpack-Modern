@@ -504,11 +504,11 @@ function processBuzzsawBlade(event, material) {
 		.duration(material.getMass() * 6)
 		.EUt(GTValues.VA[tfcProperty !== null ? GTValues.LV : GTValues.MV])
 
-	event.recipes.vintageimprovements.curving(buzzsawBladeItem, doublePlateItem)
-		.head('tfg:buzzsaw_blade_extruder_mold')
-		.id(`tfg:vi/curving/${materialName}_block_to_buzzsaw_blade`)
-
 	if (tfcProperty !== null) {
+		event.recipes.vintageimprovements.curving(buzzsawBladeItem, doublePlateItem)
+			.head('tfg:buzzsaw_blade_extruder_mold')
+			.id(`tfg:vi/curving/${materialName}_block_to_buzzsaw_blade`)
+
 		addAnvilRecipe(event, buzzsawBladeItem, doublePlateItem, ['bend_last', 'hit_second_last', 'draw_third_last'], false, material, 'buzzsaw_blade');
 	}
 }
