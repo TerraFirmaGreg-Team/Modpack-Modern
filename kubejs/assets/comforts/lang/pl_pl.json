@@ -58,6 +58,7 @@
   "gui.comforts.config.nightWakeTimeOffset.description": "Ilość czasu, w tikach, która zostanie dodana lub odjęta od nowego czasu po przespaniu dnia.",
   "gui.comforts.config.nightWakeTimeOffset.name": "Przesunięcie przebudzenia z dnia na noc",
   "gui.comforts.config.restMultiplier.name": "Mnożnik senności",
+  "gui.comforts.config.restrictSleeping.description": "Jeśli ta opcja jest włączona, gracze nie mogą spać przez pewien czas po wcześniejszym śnie.",
   "gui.comforts.config.restrictSleeping.name": "Ogranicz ciągły sen",
   "gui.comforts.config.sleepingBagBreakChance.description": "Procentowa szansa, że śpiwór popsuje się przy użyciu",
   "gui.comforts.config.sleepingBagBreakChance.name": "Szansa na zniszczenie śpiwora",
