@@ -39,7 +39,7 @@
             "anchor": "blowpipe",
             "title": "Blowpipe",
             "item": "tfc:ceramic/unfired_blowpipe,tfc:ceramic_blowpipe,tfc:blowpipe",
-            "text": "The most important tool is the $(thing)Blowpipe$(). An $(item)Unfired Ceramic Blowpipe$() can be $(thing)knapped$() from clay, and then fired into a $(thing)Ceramic Blowpipe$().$(br)However, ceramic blowpipes are brittle, and have a chance to to break when used. An invulnerable $(item)Blowpipe$() can be $(l:craftsmanship/anvils#working)Worked$() from a $(thing)Brass Rod$() on an anvil."
+            "text": "The most important tool is the $(thing)Blowpipe$(). An $(item)Unfired Ceramic Blowpipe$() can be $(thing)knapped$() from clay, and then fired into a $(thing)Ceramic Blowpipe$().$(br)However, ceramic blowpipes are brittle, and have a chance to break when used. An invulnerable $(item)Blowpipe$() can be $(l:craftsmanship/anvils#working)Worked$() from a $(thing)Brass Rod$() on an anvil."
         },
         {
             "type": "patchouli:crafting",
@@ -135,7 +135,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "$(thing)Glass Panes$() are made with a $(thing)Table Pour$(). A pouring table is made by placing up to sixteen $(thing)Kaolin Clay Blocks$() or $(thing)Brass Plated Blocks$() in a continuous area.$(br2) 1. Add a $(l:craftsmanship/glassworking)Glass Batch$() to a $(thing)Blowpipe$().$(br) 2. Heat the blowpipe to $(4)$(bold)Faint Red$().$(br) 3. $()$(item)$(k:key.use)$() the $(thing)Blowpipe$() on the top of the table.$(br) 4. Finally $(item)$(k:key.use)$() with a $(l:craftsmanship/glassworking#paddle)Paddle$() to flatten the glass.",
+            "text": "$(thing)Glass Panes$() are made with a $(thing)Table Pour$(). A pouring table is made by placing up to sixteen $(thing)Kaolin Clay Blocks$() or $(thing)Brass Plated Blocks$() in a continuous area.$(br2) 1. Add a $(l:craftsmanship/glassworking)Glass Batch$() to a $(thing)Blowpipe$().$(br) 2. Heat the blowpipe to $(4)$(bold)Faint Red$().$(br) 3. $()$(item)$(k:key.use)$() the $(thing)Blowpipe$() on the top of the table.$(br) 4. Finally, $(item)$(k:key.use)$() with a $(l:craftsmanship/glassworking#paddle)Paddle$() to flatten the glass.",
             "title": "Table Pour",
             "anchor": "table_pour"
         },
