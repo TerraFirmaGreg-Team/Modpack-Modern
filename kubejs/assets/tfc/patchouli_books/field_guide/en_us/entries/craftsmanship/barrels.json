@@ -110,6 +110,11 @@
             "border": true
         },
         {
+            "type": "patchouli:text",
+            "title": "Redstone",
+            "text": "Barrels can be automated with $(thing)Redstone$(). Applying a redstone signal to a barrel will seal it. Unsealed barrels can have fluids and items inserted and extracted from their open face. Sealed barrels can safely be moved around with $(thing)Pistons$() or $(thing)Contraptions$(). A $(l:logistics/redstone_devices#clock)Precision Clock$() can detect when a barrel recipe has finished and output a signal."
+        },
+        {
             "type": "patchouli:relations",
             "title": "Further Reading",
             "anchor": "relations",
@@ -119,7 +124,8 @@
                 "tfc:craftsmanship/pottery",
                 "tfc:agriculture/leather_making",
                 "tfc:cooking/decay",
-                "tfc:cooking/cheese"
+                "tfc:cooking/cheese",
+                "tfc:logistics/redstone_devices"
             ]
         }
     ],

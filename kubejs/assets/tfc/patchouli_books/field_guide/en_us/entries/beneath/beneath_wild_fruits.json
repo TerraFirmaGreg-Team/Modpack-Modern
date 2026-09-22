@@ -453,7 +453,7 @@
         },
         {
             "type": "tfc:multimultiblock",
-            "text": "Oil palm trees can be found in $(thing)Salt Caves$() and $(thing)Tar Pools$() biomes between y=50 and y=190",
+            "text": "Oil palm trees can be found in $(thing)Salt Caves$() and $(thing)Tar Pools$() biomes between Y=50 and Y=190",
             "multiblocks": [
                 {
                     "pattern": [
@@ -1081,7 +1081,7 @@
         },
         {
             "type": "tfc:multimultiblock",
-            "text": "Açaí trees can be found in $(thing)Salt Caves$() and $(thing)Tar Pools$() biomes between y=50 and y=190",
+            "text": "Açaí trees can be found in $(thing)Salt Caves$() and $(thing)Tar Pools$() biomes between Y=50 and Y=190",
             "multiblocks": [
                 {
                     "pattern": [
@@ -1830,14 +1830,15 @@
             "title": "Further Reading",
             "anchor": "relations",
             "entries": [
-                "tfc:the_world/wild_fruits",
                 "tfc:the_world/climate",
-                "tfc:beneath/biomes"
+                "tfc:the_world/wild_fruits",
+                "tfc:beneath/beneath",
+                "tfc:beneath/beneath_crops",
+                "tfc:beneath/beneath_tree_index"
             ]
         }
     ],
     "read_by_default": true,
-    "sortnum": 3,
     "extra_recipe_mappings": {
         "tfg:food/lavacado": 5,
         "tfg:fruit_trees/lavacado_sapling": 5,
