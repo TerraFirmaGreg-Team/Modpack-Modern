@@ -15,12 +15,12 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "cooling",
-			"text": "$(bold)$(9)Cooling$()$(li)While active this effect continually $(l:beneath/cooling)Cools$() the player down to a minimum of $(n)5°C$()"
+			"text": "$(bold)$(9)Cooling$()$(li)While active this effect continually $(l:beneath/beneath_mechanics#cooling)Cools$() the player down to a minimum of $(n)5°C$()"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "warming",
-			"text": "$(bold)$(9)Warming$()$(li)While active this effect continually $(l:beneath/cooling)Warms$() the player up to a maximum of $(n)25°C$()"
+			"text": "$(bold)$(9)Warming$()$(li)While active this effect continually $(l:beneath/beneath_mechanics#cooling)Warms$() the player up to a maximum of $(n)25°C$()"
 		},
 		{
 			"type": "patchouli:text",
@@ -45,12 +45,12 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "freezing",
-			"text": "$(bold)$(c)Freezing$()$(li)While active this effect continually $(l:beneath/cooling)Cools$() the player down to a dangerously-low minimum of $(n)-20°C$(). Protective equipment is recommended to survive this condition."
+			"text": "$(bold)$(c)Freezing$()$(li)While active this effect continually $(l:beneath/beneath_mechanics#cooling)Cools$() the player down to a dangerously-low minimum of $(n)-20°C$(). Protective equipment is recommended to survive this condition."
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "blazing",
-			"text": "$(bold)$(c)Blazing$()$(li)While active this effect continually $(l:beneath/cooling)Warms$() the player up to a dangerously-high maximum of $(n)60°C$(). Protective equipment is recommended to survive this condition."
+			"text": "$(bold)$(c)Blazing$()$(li)While active this effect continually $(l:beneath/beneath_mechanics#cooling)Warms$() the player up to a dangerously-high maximum of $(n)60°C$(). Protective equipment is recommended to survive this condition."
 		},
 		{
 			"type": "patchouli:text",
@@ -68,7 +68,7 @@
             "anchor": "relations",
             "entries": [
                 "tfc:cooking/food_and_water",
-				"tfc:beneath/cooling",
+				"tfc:beneath/beneath_mechanics",
                 "tfc:tfg_ores/hazards"
             ]
         }
