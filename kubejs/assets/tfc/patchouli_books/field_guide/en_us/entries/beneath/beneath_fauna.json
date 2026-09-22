@@ -1,0 +1,225 @@
+{
+	"name": "Beneath Fauna",
+	"category": "tfc:beneath",
+	"icon": "tfc:textures/item/food/pork.png",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "index",
+			"text": "Life exists, deep below! There's quite a lot of life in the Beneath, some friendly, some foe.$(br2)This entry lists the more interesting creatures you can find.$(br)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(li)$(bold)Passive$()$(li2)$(l:tfc:beneath/beneath_fauna#axolotl)Axolotl$()$(li2)$(l:tfc:beneath/beneath_fauna#frog)Frog$()$(li2)$(l:tfc:beneath/beneath_fauna#mammutilation)Mammutilation$()$(li2)$(l:tfc:beneath/beneath_fauna#red_elk)Red Elk$()$(li2)$(l:tfc:beneath/beneath_fauna#zombie_horse)Zombie Horse$()$(li)$(bold)$(l:tfc:agriculture/jellies)Jellies$()$(li2)$(l:tfc:beneath/beneath_fauna#ice_jellie)Ice$()$(li2)$(l:tfc:beneath/beneath_fauna#plant_jellie)Plant$()$(li2)$(l:tfc:beneath/beneath_fauna#glowberry_jellie)Glowberry$()$(li2)$(l:tfc:beneath/beneath_fauna#spring_jellie)Spring$()$(li2)$(l:tfc:beneath/beneath_fauna#lava_jellie)Lava$()$(li2)$(l:tfc:beneath/beneath_fauna#biotite_jellie)Biotite$()$(li2)$(l:tfc:beneath/beneath_fauna#latex_jellie)Latex$()$(br)$(o)(Continued on next page...)$()"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(li)$(bold)Hostile$()$(li2)$(l:tfc:beneath/beneath_fauna#crocodile)Crocodile$()$(li2)$(l:tfc:beneath/beneath_fauna#piglin)Piglin$()$(li2)$(l:tfc:beneath/beneath_fauna#phantom)Phantom$()$(li2)$(l:tfc:beneath/beneath_fauna#kaolin_klayze)Kaolin Klayze$()$(li2)$(l:tfc:beneath/beneath_fauna#graphite_glayze)Graphite Glayze$()$(li2)$(l:tfc:beneath/beneath_fauna#cliff_hanger)Cliff Hanger$()$(li2)$(l:tfc:beneath/beneath_fauna#leaf_hanger)Leaf Hanger$()$(li2)$(l:tfc:beneath/beneath_fauna#endermen)Endermen$()$(li2)$(l:tfc:beneath/beneath_fauna#spectre)Spectre$()$(li2)$(l:tfc:beneath/beneath_fauna#wicked)Wicked$()$(li2)$(l:tfc:beneath/beneath_fauna#ghoul)Ghoul$()$(li2)$(l:tfc:beneath/beneath_fauna#bewereager)Bewereager$()"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "minecraft:axolotl",
+			"scale": 0.5,
+			"name": "Axolotl",
+			"anchor": "axolotl",
+			"text": "$(thing)Axolotls$() can be found in the top and middle layers, usually swimming around in pools of water."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfc:frog",
+			"scale": 1.0,
+			"name": "Frog",
+			"anchor": "frog",
+			"text": "$(thing)Frogs$() can be found in the top and middle layers. They can be tamed and eaten."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "species:mammutilation",
+			"scale": 0.5,
+			"name": "Mammutilation",
+			"anchor": "mammutilation",
+			"text": "$(thing)Mammutilations$() are undead Mammoths. You can put them out of their misery for some $(item)Wool$()."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "beneath:red_elk",
+			"scale": 0.7,
+			"name": "Red Elk",
+			"anchor": "red_elk",
+			"text": "$(thing)Red Elk$() are found near the bottom, usually swimming around in lava. They can be slain for $(item)Lavaproof Hides$()."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "minecraft:zombie_horse",
+			"scale": 0.7,
+			"name": "Zombie Horse",
+			"anchor": "zombie_horse",
+			"text": "$(thing)Zombie Horses$() can't be tamed or ridden, but they can pull an $(item)Animal Crank$()."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "jellies:ice",
+			"scale": 0.6,
+			"name": "Ice Jellie",
+			"anchor": "ice_jellie",
+			"text": "$(thing)Ice$() $(l:tfc:agriculture/jellies)Jellies$() are found in the $(thing)Salt Caves$() biome. They cool down nearby players."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "jellies:plant",
+			"scale": 0.6,
+			"name": "Plant Jellie",
+			"anchor": "plant_jellie",
+			"text": "$(thing)Plant$() $(l:tfc:agriculture/jellies)Jellies$() are found in the $(thing)Muggy Bog$() and $(thing)Thorny Grove$() biomes. Their slime balls can be used as $(thing)Green$() compost."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "jellies:glowberry",
+			"scale": 0.6,
+			"name": "Glowberry Jellie",
+			"anchor": "glowberry_jellie",
+			"text": "$(thing)Glowberry$() $(l:tfc:agriculture/jellies)Jellies$() are found in the $(thing)Lush Hollow$() biome. Their slime balls can be boiled into $(item)Sugar$()."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "jellies:spring",
+			"scale": 0.6,
+			"name": "Spring Jellie",
+			"anchor": "spring_jellie",
+			"text": "$(thing)Spring$() $(l:tfc:agriculture/jellies)Jellies$() are found in the $(thing)Geothermal Springs$() biome. Their slime balls are a renewable source of $(item)Spring Water$()."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "jellies:biotite",
+			"scale": 0.6,
+			"name": "Biotite Jellie",
+			"anchor": "biotite_jellie",
+			"text": "$(thing)Biotite$() $(l:tfc:agriculture/jellies)Jellies$() are found in the bottom layer. Their slime balls are a renewable source of $(item)Potassium$(), $(item)Magnesium$(), and $(item)Fluorine$()."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "jellies:lava",
+			"scale": 0.6,
+			"name": "Lava Jellie",
+			"anchor": "lava_jellie",
+			"text": "$(thing)Lava$() $(l:tfc:agriculture/jellies)Jellies$() are found in the bottom layer. They heat up nearby players, which may be useful if you live somewhere cold."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "jellies:latex",
+			"scale": 0.6,
+			"name": "Latex Jellie",
+			"anchor": "latex_jellie",
+			"text": "$(thing)Latex$() $(l:tfc:agriculture/jellies)Jellies$() can only be bred from a $(thing)Plant Jellie$() and $(thing)Lava Jellie$(). Their slime balls are a source of $(item)Latex$()."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "minecraft:piglin",
+			"scale": 0.9,
+			"name": "Piglin",
+			"anchor": "piglin",
+			"text": "You can find Piglins in almost every biome throughout the Beneath. They can be $(l:tfc:beneath/beneath_mechanics#piglins)traded with$() like in vanilla."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfc:crocodile",
+			"scale": 0.5,
+			"name": "Crocodile",
+			"anchor": "crocodile",
+			"text": "$(thing)Crocodiles$() can be found in the top and middle layers, waiting in ambush!"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "minecraft:phantom",
+			"scale": 0.4,
+			"name": "Phantom",
+			"anchor": "phantom",
+			"text": "$(thing)Phantoms$() naturally spawn in the middle and bottom layers, regardless of how much sleep you're getting. They can be turned into $(l:tfc:beneath/beneath_mechanics#clothes)Clothing$()."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "primitive_creatures:tfc",
+			"scale": 0.8,
+			"name": "Kaolin Klayze",
+			"anchor": "kaolin_klayze",
+			"text": "$(thing)Kaolin Klayzes$() can be found in the $(thing)Lush Hollow$() biome, guarding the $(item)Kaolin$()!"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "primitive_creatures:golem_2",
+			"scale": 1.0,
+			"name": "Graphite Glayze",
+			"anchor": "graphite_glayze",
+			"text": "$(thing)Graphite Glayzes$() can be found in the bottom layers. Careful they don't knock you into lava!"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "species:cliff_hanger",
+			"scale": 0.7,
+			"name": "Cliff Hanger",
+			"anchor": "cliff_hanger",
+			"text": "$(thing)Cliff Hangers$() can be found on various ceilings, hooking players who walk below them. Hit them with a ranged attack to make them let go!"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "species:leaf_hanger",
+			"scale": 0.7,
+			"name": "Leaf Hanger",
+			"anchor": "leaf_hanger",
+			"text": "$(thing)Leaf Hangers$() can be found in pools of Salt Water, hooking players who walk into their trap. Hit them to make them let go of you!"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "endermanoverhaul:nether_wastes_enderman",
+			"scale": 1.0,
+			"name": "Endermen",
+			"anchor": "endermen",
+			"text": "Various species of $(thing)Endermen$() appear all over. The $(item)mushroom$() one is completely passive, while the others are all neutral."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "species:spectre",
+			"scale": 0.7,
+			"name": "Spectres",
+			"anchor": "spectre",
+			"text": "$(thing)Spectres$() are ghosts of adventurers past, and come in three varieties. They are a source of $(item)Feathers$()."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "species:wicked",
+			"scale": 0.9,
+			"name": "Wicked",
+			"anchor": "wicked",
+			"text": "The $(thing)Wicked$() is a ghost that can posess nearby mobs to give them buffs! If no mob is nearby, they use a ranged attack. They drop wax."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "species:ghoul",
+			"scale": 0.7,
+			"name": "Ghoul",
+			"anchor": "ghoul",
+			"text": "$(thing)Ghouls$() are blind monsters that use echolocation to find prey. They are neutral unless you're within their 'scan' radius!"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "species:bewereager",
+			"scale": 0.8,
+			"name": "Bewereager",
+			"anchor": "bewereager",
+			"text": "The $(thing)Bewereager$() is an aggressive monster that can also jump up to you! It buffs itself and attacks in short bursts."
+		},
+		{
+			"type": "patchouli:relations",
+			"title": "Further Reading",
+			"anchor": "relations",
+			"entries": [
+				"tfc:the_world/wild_animals",
+				"tfc:agriculture/animal_husbandry",
+				"tfc:agriculture/jellies",
+				"tfc:the_moon/moon_fauna",
+				"tfc:mars/mars_fauna"
+			]
+		}
+	],
+	"read_by_default": true
+}
