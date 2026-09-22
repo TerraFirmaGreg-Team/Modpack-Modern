@@ -44,7 +44,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"title": "Milks",
-			"text": "$(thing)Milk$() can be aquired from most female livestock by simply right clicking them with a wood or metal bucket once familiarity is at a high enough level. (If it isn't working, make sure the buckets aren't stacked!)$(br)While it doesn't provide any buffs―And won't remove effects―It provides $(l:tfc:cooking/food_and_water#dairy)Dairy$() nutrition if drunk after eating.",
+			"text": "$(thing)Milk$() can be aquired from most female livestock by simply right clicking them with a wood or metal bucket once familiarity is at a high enough level. (If it isn't working, make sure the buckets aren't stacked!)$(br)While it doesn't provide any buffs―And won't remove effects―It provides $(l:cooking/food_and_water#dairy)Dairy$() nutrition if drunk after eating.",
 			"item": "minecraft:milk_bucket,firmalife:bucket/yak_milk,firmalife:bucket/goat_milk",
 			"anchor": "milk"
 		},

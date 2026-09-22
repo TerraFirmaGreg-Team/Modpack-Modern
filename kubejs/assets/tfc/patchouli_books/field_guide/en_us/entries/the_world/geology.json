@@ -40,7 +40,7 @@
         {
             "type": "patchouli:text",
             "anchor": "rocks",
-            "text": "The world is divided up into different types of $(thing)Rock$(). Rock regions can be over a kilometer across, and there will usually be two or three different rock layers under your feet at all times. As different ores are found in different rock types, locating specific rock types can be very important for finding resources such as $(l:the_world/earth_ore_index)Ores$(), which will often only appear in certain rock types.",
+            "text": "The world is divided up into different types of $(thing)Rock$(). Rock regions can be over a kilometer across, and there will usually be two or three different rock layers under your feet at all times. As different ores are found in different rock types, locating specific rock types can be very important for finding resources such as $(thing)Ores$(), which will often only appear in certain rock types.",
             "title": "Rock Layers"
         },
         {

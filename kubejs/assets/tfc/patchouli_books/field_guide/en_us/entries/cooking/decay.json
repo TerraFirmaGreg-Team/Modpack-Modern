@@ -185,7 +185,7 @@
             "type": "patchouli:text",
             "anchor": "smoking",
             "title": "Smoking",
-            "text": "Smoking is used to preserve $(thing)Meat$() and $(l:tfc:cooking/cheese)Cheese$() with a modifier of 0.7. To smoke meat, it must have first been $(thing)Brined$() by sealing it in a $(thing)Barrel$() with $(thing)Brine$(). Cheese does not have this requirement.$(br)To start smoking, add an item to wool yarn that is within four blocks above a firepit. The string should begin to generate some smoke if it is working.$(br)Note: The firepit may only be burned with $(thing)Logs$()!"
+            "text": "Smoking is used to preserve $(thing)Meat$() and $(l:cooking/cheese)Cheese$() with a modifier of 0.7. To smoke meat, it must have first been $(thing)Brined$() by sealing it in a $(thing)Barrel$() with $(thing)Brine$(). Cheese does not have this requirement.$(br)To start smoking, add an item to wool yarn that is within four blocks above a firepit. The string should begin to generate some smoke if it is working.$(br)Note: The firepit may only be burned with $(thing)Logs$()!"
         },
         {
             "type": "patchouli:multiblock",
@@ -258,7 +258,7 @@
             "type": "patchouli:text",
             "anchor": "oven_baked",
             "title": "Oven Baked",
-            "text": "Baking food items in a $(l:tfc:cooking/cooking_methods#top_oven)Top Oven$() is the second-best way to preserve your food items through cooking as it gives the $(7)$(bold)Oven Baked$() trait with a modifier of 0.9"
+            "text": "Baking food items in a $(l:cooking/cooking_methods#top_oven)Top Oven$() is the second-best way to preserve your food items through cooking as it gives the $(7)$(bold)Oven Baked$() trait with a modifier of 0.9"
         },
         {
             "type": "patchouli:text",
@@ -268,7 +268,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "The cellar is used for food preservation and $(l:tfc:cooking/cheese#cheese_wheel)Aging Cheese$() by using $(l:tfc:cooking/decay#shelf)Food Shelves$() and $(l:tfc:cooking/decay#shelf)Hangers$() to hold food items or by placing cheese on the ground or $(thing)Barrel Racks$().$(br)The cellar performs better in $(l:tfc:the_world/climate#temperature)Colder Environments$().$(li)$(2)Temp >= 0°C:$() Shelves 0.4, Hangers 0.35$(li)$(2)Temp < 0°C:$() Shelves 0.35, Hangers 0.3$(li)$(2)Temp < -12°C:$() Shelves Food 0.25, Hangers0.25"
+            "text": "The cellar is used for food preservation and $(l:cooking/cheese#cheese_wheel)Aging Cheese$() by using $(l:cooking/decay#shelf)Food Shelves$() and $(l:cooking/decay#shelf)Hangers$() to hold food items or by placing cheese on the ground or $(thing)Barrel Racks$().$(br)The cellar performs better in $(l:the_world/climate#temperature)Colder Environments$().$(li)$(2)Temp >= 0°C:$() Shelves 0.4, Hangers 0.35$(li)$(2)Temp < 0°C:$() Shelves 0.35, Hangers 0.3$(li)$(2)Temp < -12°C:$() Shelves Food 0.25, Hangers0.25"
         },
         {
             "type": "tfc:multimultiblock",

@@ -6,16 +6,16 @@
 		{
 			"type": "patchouli:text",
 			"title": "Mars Fauna",
-			"text": "$(item)Mars$() is the planet with an environment closest to Earth's, featuring a wide variety of animals to $(l:tfc:agriculture/animal_husbandry)interact with$() and $(l:tfc:mars/mars_crops)crops$() to feed them (and yourself) with... outside of the huge desert, where almost nothing lives.$(br2)Mars is a $(thing)Cold$() planet, meaning animals from Hot or Temperate planets will not normally survive."
+			"text": "$(item)Mars$() is the planet with an environment closest to Earth's, featuring a wide variety of animals to $(l:agriculture/animal_husbandry)interact with$() and $(l:mars/mars_crops)crops$() to feed them (and yourself) with... outside of the huge desert, where almost nothing lives.$(br2)Mars is a $(thing)Cold$() planet, meaning animals from Hot or Temperate planets will not normally survive."
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "index",
-			"text": "$(li)$(bold)$(l:tfc:mars/mars_fauna#sandworm)The Sandworm$()$(li)$(bold)Domesticatable$()$(li2)$(l:tfc:mars/mars_fauna#sniffer)Sniffer$()$(li2)$(l:tfc:mars/mars_fauna#wraptor)Wraptor$()$(li2)$(l:tfc:mars/mars_fauna#glacian_sheep)Glacian Sheep$()$(li2)$(l:tfc:mars/mars_fauna#snatcher)Snatcher$()$(li2)$(l:tfc:mars/mars_fauna#charger)Charger$()$(li2)$(l:tfc:mars/mars_fauna#soarer)Soarer$()$(li2)$(l:tfc:mars/mars_fauna#pentetic_jellie)Pentetic Jellie$()$(br2)$(o)(Continued on next page...)$()"
+			"text": "$(li)$(bold)$(l:mars/mars_fauna#sandworm)The Sandworm$()$(li)$(bold)Domesticatable$()$(li2)$(l:mars/mars_fauna#sniffer)Sniffer$()$(li2)$(l:mars/mars_fauna#wraptor)Wraptor$()$(li2)$(l:mars/mars_fauna#glacian_sheep)Glacian Sheep$()$(li2)$(l:mars/mars_fauna#snatcher)Snatcher$()$(li2)$(l:mars/mars_fauna#charger)Charger$()$(li2)$(l:mars/mars_fauna#soarer)Soarer$()$(li2)$(l:mars/mars_fauna#pentetic_jellie)Pentetic Jellie$()$(br2)$(o)(Continued on next page...)$()"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(li)$(bold)Wild$()$(li2)$(l:tfc:mars/mars_fauna#eater)Eater$()$(li2)$(l:tfc:mars/mars_fauna#cruncher)Cruncher$()$(li2)$(l:tfc:mars/mars_fauna#glider)Glider$()$(li2)$(l:tfc:mars/mars_fauna#crusher)Crusher$()$(li2)$(l:tfc:mars/mars_fauna#springling)Springling$()$(li2)$(l:tfc:mars/mars_fauna#goober)Goober$()$(li2)$(l:tfc:mars/mars_fauna#walker)Walker$()$(li2)$(l:tfc:mars/mars_fauna#raider)Raider$()$(li2)$(l:tfc:mars/mars_fauna#toxlacanth)Toxlacanth$()$(li2)$(l:tfc:mars/mars_fauna#stackatick)Stackatick$()"
+			"text": "$(li)$(bold)Wild$()$(li2)$(l:mars/mars_fauna#eater)Eater$()$(li2)$(l:mars/mars_fauna#cruncher)Cruncher$()$(li2)$(l:mars/mars_fauna#glider)Glider$()$(li2)$(l:mars/mars_fauna#crusher)Crusher$()$(li2)$(l:mars/mars_fauna#springling)Springling$()$(li2)$(l:mars/mars_fauna#goober)Goober$()$(li2)$(l:mars/mars_fauna#walker)Walker$()$(li2)$(l:mars/mars_fauna#raider)Raider$()$(li2)$(l:mars/mars_fauna#toxlacanth)Toxlacanth$()$(li2)$(l:mars/mars_fauna#stackatick)Stackatick$()"
 		},
 		{
 			"type": "patchouli:image",
@@ -114,7 +114,7 @@
 			"scale": 0.6,
 			"name": "Pentetic Jellie",
 			"anchor": "pentetic_jellie",
-			"text": "$(thing)Pentetic$() $(l:tfc:agriculture/jellies)Jellies$() spawn in Mars' $(item)Deep Desert$() and $(item)Martian Mountain$() biomes. They passively absorb radiation from players."
+			"text": "$(thing)Pentetic$() $(l:agriculture/jellies)Jellies$() spawn in Mars' $(item)Deep Desert$() and $(item)Martian Mountain$() biomes. They passively absorb radiation from players."
 		},
 		{
 			"type": "patchouli:entity",

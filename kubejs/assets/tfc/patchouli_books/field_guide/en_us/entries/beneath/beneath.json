@@ -16,7 +16,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "index",
-			"text": "$(li)$(bold)$(l:tfc:beneath/beneath#entering)Entering$() and $(bold)$(l:tfc:beneath/beneath#exiting)Exiting$()$(li)$(bold)$(l:tfc:beneath/beneath#biomes)Biomes$()$(li2)$(l:tfc:beneath/beneath#biomes_top)Top Layer$()$(li2)$(l:tfc:beneath/beneath#biomes_middle)Middle Layer$()$(li2)$(l:tfc:beneath/beneath#biomes_bottom)Bottom Layer$()$(li)$(bold)$(l:tfc:beneath/beneath#geology)Geology$()$(li2)$(l:tfc:beneath/beneath#more_rocks)More Rocks$()"
+			"text": "$(li)$(bold)$(l:beneath/beneath#entering)Entering$() and $(bold)$(l:beneath/beneath#exiting)Exiting$()$(li)$(bold)$(l:beneath/beneath#biomes)Biomes$()$(li2)$(l:beneath/beneath#biomes_top)Top Layer$()$(li2)$(l:beneath/beneath#biomes_middle)Middle Layer$()$(li2)$(l:beneath/beneath#biomes_bottom)Bottom Layer$()$(li)$(bold)$(l:beneath/beneath#geology)Geology$()$(li2)$(l:beneath/beneath#more_rocks)More Rocks$()"
 		},
 		{
 			"type": "patchouli:text",
@@ -173,7 +173,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(item)Gilsonite$(), a very dark building block and ingredient of $(l:tfc:logistics/roads#asphalt)Asphalt$(), can be found in large quantities in the $(thing)Tar Pools$() biome, along with $(item)Sandstone$().$(br2)Finally, $(item)Halite$() can be found in massive quantities in the $(thing)Salt Caves$() biome, which can be mined for Halite and Sylvite ores."
+			"text": "$(item)Gilsonite$(), a very dark building block and ingredient of $(l:logistics/roads#asphalt)Asphalt$(), can be found in large quantities in the $(thing)Tar Pools$() biome, along with $(item)Sandstone$().$(br2)Finally, $(item)Halite$() can be found in massive quantities in the $(thing)Salt Caves$() biome, which can be mined for Halite and Sylvite ores."
 		},
 		{
 			"type": "patchouli:relations",

@@ -10,11 +10,11 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "index",
-			"text": "$(li)$(bold)$(l:tfc:agriculture/jellies#produce)Produce$()$(li)$(bold)$(l:tfc:agriculture/jellies#food)Feeding$()$(li)$(bold)Earth Species$()$(li2)$(l:tfc:agriculture/jellies#herbal)Herbal$()$(li2)$(l:tfc:agriculture/jellies#phosphorum)Phosphorum$()$(li2)$(l:tfc:agriculture/jellies#rock)Rock$()$(li)$(bold)Beneath Species$()$(li2)$(l:tfc:beneath/beneath_fauna#ice_jellie)Ice$()$(li2)$(l:tfc:beneath/beneath_fauna#plant_jellie)Plant$()$(li2)$(l:tfc:beneath/beneath_fauna#glowberry_jellie)Glowberry$()$(li2)$(l:tfc:beneath/beneath_fauna#spring_jellie)Spring$()$(li2)$(l:tfc:beneath/beneath_fauna#lava_jellie)Lava$()$(li2)$(l:tfc:beneath/beneath_fauna#biotite_jellie)Biotite$()$(li2)$(l:tfc:beneath/beneath_fauna#latex_jellie)Latex$()$(br2)$(o)(Continued on next page...)$()"
+			"text": "$(li)$(bold)$(l:agriculture/jellies#produce)Produce$()$(li)$(bold)$(l:agriculture/jellies#feeding)Feeding$()$(li)$(bold)Earth Species$()$(li2)$(l:agriculture/jellies#herbal)Herbal$()$(li2)$(l:agriculture/jellies#phosphorum)Phosphorum$()$(li2)$(l:agriculture/jellies#rock)Rock$()$(li)$(bold)Beneath Species$()$(li2)$(l:beneath/beneath_fauna#ice_jellie)Ice$()$(li2)$(l:beneath/beneath_fauna#plant_jellie)Plant$()$(li2)$(l:beneath/beneath_fauna#glowberry_jellie)Glowberry$()$(li2)$(l:beneath/beneath_fauna#spring_jellie)Spring$()$(li2)$(l:beneath/beneath_fauna#lava_jellie)Lava$()$(li2)$(l:beneath/beneath_fauna#biotite_jellie)Biotite$()$(li2)$(l:beneath/beneath_fauna#latex_jellie)Latex$()$(br2)$(o)(Continued on next page...)$()"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(li)$(bold)Moon Species$()$(li2)$(l:tfc:the_moon/moon_fauna#certus_jellie)Certus$()$(li)$(bold)Mars Species$()$(li2)$(l:tfc:mars/mars_fauna#pentetic_jellie)Pentetic$()$(li2)$(l:tfc:agriculture/jellies#spoiler)???$()"
+			"text": "$(li)$(bold)Moon Species$()$(li2)$(l:the_moon/moon_fauna#certus_jellie)Certus$()$(li)$(bold)Mars Species$()$(li2)$(l:mars/mars_fauna#pentetic_jellie)Pentetic$()$(li2)$(l:agriculture/jellies#spoiler)???$()"
 		},
 		{
 			"type": "patchouli:image",
@@ -28,10 +28,11 @@
 			"type": "patchouli:text",
 			"title": "Produce",
 			"anchor": "produce",
-			"text": "$(thing)Jellies$() are quite picky and will refuse to produce anything outside of their natural habitat; however, they will breed just fine in any environment. $(br2)They also dislike machines and will only give their produce when fed manually by a player.$(br2)$(#B0B0B0)$(o)Or maybe they just want attention..."
+			"text": "$(thing)Jellies$() are quite picky and will refuse to produce anything outside their natural habitat; however, they will breed just fine in any environment. $(br2)They also dislike machines and will only give their produce when fed manually by a player.$(br2)$(#B0B0B0)$(o)Or maybe they just want attention..."
 		},
 		{
 			"type": "patchouli:crafting",
+			"title": "Feeding",
 			"recipe": "tfg:shaped/jellies_nutritional_mash",
 			"anchor": "feeding",
 			"text": "$(thing)Nutritional Mash$() is the main food of all $(thing)jellies$(), primarily made from grains, fruits, and some dimension-specific ingredients.$(br2)Unfortunately, they are quite picky and can only be fed by the $(thing)Player$() and not a $(l:agriculture/animal_husbandry#feeding_trough)Feeding Trough$().$(br)$(#B0B0B0)$(o)Why is it moving..."

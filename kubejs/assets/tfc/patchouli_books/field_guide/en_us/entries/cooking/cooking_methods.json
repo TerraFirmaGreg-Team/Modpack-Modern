@@ -7,13 +7,13 @@
             "type": "patchouli:text",
             "title": "Index",
             "anchor": "index",
-            "text": "$(li)$(bold)$(l:tfc:cooking/cooking_methods#firepit)Firepit$()$(li2)$(l:tfc:cooking/cooking_methods#grill)Grill$()$(li2)$(l:tfc:cooking/cooking_methods#pot)Pot$()$(li)$(bold)$(l:tfc:cooking/cooking_methods#oven)Ovens$()$(li2)$(l:tfc:cooking/cooking_methods#vat)Vat$()$(li2)$(l:tfc:cooking/cooking_methods#jarring_station)Jarring Station$()$(li)$(bold)$(l:tfc:cooking/cooking_methods#electric_oven)Electric Oven$()$(li)$(bold)$(l:tfc:cooking/cooking_methods#food_processor)Food Processor$()"
+            "text": "$(li)$(bold)$(l:cooking/cooking_methods#firepit)Firepit$()$(li2)$(l:cooking/cooking_methods#grill)Grill$()$(li2)$(l:cooking/cooking_methods#pot)Pot$()$(li)$(bold)$(l:cooking/cooking_methods#oven)Ovens$()$(li2)$(l:cooking/cooking_methods#vat)Vat$()$(li2)$(l:cooking/cooking_methods#jarring_station)Jarring Station$()$(li)$(bold)$(l:cooking/cooking_methods#electric_oven)Electric Oven$()$(li)$(bold)$(l:cooking/cooking_methods#food_processor)Food Processor$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "intro",
             "title": "Introduction",
-            "text": "Food is one of the most important elements to the mechanics of $(bold)$(#ff0fb7)TerraFirma$()$()$(bold)$(#595959)Greg$()$(). You will need to cook food to make it safe to eat and to boost its $(l:tfc:cooking/food_and_water#nutrients)Nutritional Properties$().$(br2)Some methods of cooking even offer benefits such as reduced decay times."
+            "text": "Food is one of the most important elements to the mechanics of $(bold)$(#ff0fb7)TerraFirma$()$()$(bold)$(#595959)Greg$()$(). You will need to cook food to make it safe to eat and to boost its $(l:cooking/food_and_water#nutrients)Nutritional Properties$().$(br2)Some methods of cooking even offer benefits such as reduced decay times."
         },
         {
             "type": "patchouli:text",
@@ -370,7 +370,7 @@
         },
         {
             "type": "tfc:multimultiblock",
-            "text": "Example of an oven with a $(l:tfc:cooking/cooking_methods#vat)Vat$() and $(l:tfc:cooking/cooking_methods#jarring_station)Jarring Station$().",
+            "text": "Example of an oven with a $(l:cooking/cooking_methods#vat)Vat$() and $(l:cooking/cooking_methods#jarring_station)Jarring Station$().",
             "multiblocks": [
                 {
                     "pattern": [
@@ -439,7 +439,7 @@
             "title": "Jarring Station",
             "anchor": "jarring_station",
             "item": "firmalife:jarring_station",
-            "text": "The $(thing)Jarring Station$() is used to automatically fill $(item)$(t:Empty Jar with Lid)Jars$() with the $(l:tfc:cooking/cooking_methods#vat)Vat$(). The jarring station has a spout on one side that should point to the vat.$(br)When it detects fruity fluid, it will automatically fill the jars with $(thing)Jam$() and seal them, requiring 500 mB of fruity fluid per jar."
+            "text": "The $(thing)Jarring Station$() is used to automatically fill $(item)$(t:Empty Jar with Lid)Jars$() with the $(l:cooking/cooking_methods#vat)Vat$(). The jarring station has a spout on one side that should point to the vat.$(br)When it detects fruity fluid, it will automatically fill the jars with $(thing)Jam$() and seal them, requiring 500 mB of fruity fluid per jar."
         },
         {
             "type": "patchouli:multiblock",

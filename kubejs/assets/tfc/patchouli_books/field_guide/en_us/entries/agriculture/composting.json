@@ -7,7 +7,7 @@
             "type": "patchouli:text",
             "title": "Index",
             "anchor": "index",
-            "text": "$(li)$(bold)$(l:tfc:agriculture/composting#compostables)Compostables$()$(li2)$(l:tfc:agriculture/composting#green_compost)Green Compost$()$(li2)$(l:tfc:agriculture/composting#brown_compost)Brown Compost$()$(li2)$(l:tfc:agriculture/composting#compost_poisons)Rotten Compost$()$(li)$(bold)$(l:tfc:agriculture/composting#compost_tumbler)Compost Tumbler$()"
+            "text": "$(li)$(bold)$(l:agriculture/composting#compostables)Compostables$()$(li2)$(l:agriculture/composting#green_compost)Green Compost$()$(li2)$(l:agriculture/composting#brown_compost)Brown Compost$()$(li2)$(l:agriculture/composting#compost_poisons)Rotten Compost$()$(li)$(bold)$(l:agriculture/composting#compost_tumbler)Compost Tumbler$()"
         },
         {
             "type": "patchouli:text",
@@ -66,13 +66,13 @@
         },
         {
             "type": "patchouli:text",
-            "text": "The composter takes 12 days to complete in average conditions. When it is ready, it will have a dirt-like color and gray particles will be emitted from the top of it. The compost can then be retrieved with $(item)$(k:key.sneak) + $(k:key.use)$() with an empty hand. Adding things like $(c)meat$() and $(c)bones$() to compost spoils it, turning it reddish and causing it to emit gross particles. When this rotten compost is used on a crop, it instantly kills it. Which can be helpful for $(l:tfc:agriculture/growing_crops)Duplicating Seeds$() from mature plants!"
+            "text": "The composter takes 12 days to complete in average conditions. When it is ready, it will have a dirt-like color and gray particles will be emitted from the top of it. The compost can then be retrieved with $(item)$(k:key.sneak) + $(k:key.use)$() with an empty hand. Adding things like $(c)meat$() and $(c)bones$() to compost spoils it, turning it reddish and causing it to emit gross particles. When this rotten compost is used on a crop, it instantly kills it. Which can be helpful for $(l:agriculture/growing_crops)Duplicating Seeds$() from mature plants!"
         },
         {
             "type": "patchouli:text",
             "title": "Compostables",
             "anchor": "compostables",
-            "text": "Compostables are seperated by quality. Lows provide a value of 1, Mediums 2, Highs 4.$(li)$(l)$(2)Green$():$(li2)$(l)Low:$() Basic plants and saplings.$(li2)$(l)Medium:$() $(l:tfc:cooking/food_and_water#grain)Grains$(), moss blocks, mushroom blocks.$(li2)$(l)High:$() $(l:tfc:cooking/food_and_water#vegetables)Vegetables$() and $(l:tfc:cooking/food_and_water#vegetables)Fruits$().$(li)$(l)$(4)Brown$():$(li2)$(l)Low:$() Vines.$(li2)$(l)Medium:$() Wood ash, fibers, anemone.$(li2)$(l)High:$() Humus, dead grass, driftwood."
+            "text": "Compostables are seperated by quality. Lows provide a value of 1, Mediums 2, Highs 4.$(li)$(l)$(2)Green$():$(li2)$(l)Low:$() Basic plants and saplings.$(li2)$(l)Medium:$() $(l:cooking/food_and_water#grain)Grains$(), moss blocks, mushroom blocks.$(li2)$(l)High:$() $(l:cooking/food_and_water#vegetables)Vegetables$() and $(l:cooking/food_and_water#vegetables)Fruits$().$(li)$(l)$(4)Brown$():$(li2)$(l)Low:$() Vines.$(li2)$(l)Medium:$() Wood ash, fibers, anemone.$(li2)$(l)High:$() Humus, dead grass, driftwood."
         },
         {
             "type": "patchouli:spotlight",

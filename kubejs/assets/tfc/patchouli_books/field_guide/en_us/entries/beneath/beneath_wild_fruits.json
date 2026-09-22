@@ -7,7 +7,7 @@
             "type": "patchouli:text",
             "anchor": "index",
             "title": "Index",
-            "text": "$(bold)$(li)$(l:tfc:beneath/beneath_wild_fruits#fruit_trees)Fruit Trees$()$(li2)$(l:tfc:beneath/beneath_wild_fruits#lavacado)Lavacado$()$(li2)$(l:tfc:beneath/beneath_wild_fruits#magmango)Magmango$()$(bold)$(li)$(l:tfc:beneath/beneath_wild_fruits#palm_fruit_trees)Palm Fruit Trees$()$(li2)$(l:tfc:beneath/beneath_wild_fruits#oil_palm)Oil Palm$()$(li2)$(l:tfc:beneath/beneath_wild_fruits#acai)Açaí$()"
+            "text": "$(bold)$(li)$(l:beneath/beneath_wild_fruits#fruit_trees)Fruit Trees$()$(li2)$(l:beneath/beneath_wild_fruits#lavacado)Lavacado$()$(li2)$(l:beneath/beneath_wild_fruits#magmango)Magmango$()$(bold)$(li)$(l:beneath/beneath_wild_fruits#palm_fruit_trees)Palm Fruit Trees$()$(li2)$(l:beneath/beneath_wild_fruits#oil_palm)Oil Palm$()$(li2)$(l:beneath/beneath_wild_fruits#acai)Açaí$()"
         },
         {
             "title": "Introduction",

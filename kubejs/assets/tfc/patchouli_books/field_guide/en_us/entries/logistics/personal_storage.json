@@ -13,7 +13,7 @@
             "type": "patchouli:text",
             "anchor": "intro",
             "title": "Introduction",
-            "text": "There are many $(item)Item Containers$() to help ease your inventory stress while playing. There are a few important stats to consider when choosing between them.$(li)$(thing)Slot count$(): The amount of slots it has.$(li)$(thing)Slot Capacity$(): How many items a slot can hold.$(li)$(thing)Allowed Size$(): What's the largest $(l:getting_started/size_and_weight)TFC Size$() allowed in the slots."
+            "text": "There are many $(item)Item Containers$() to help ease your inventory stress while playing. There are a few important stats to consider when choosing between them.$(li)$(thing)Slot count$(): The amount of slots it has.$(li)$(thing)Slot Capacity$(): How many items a slot can hold.$(li)$(thing)Allowed Size$(): What's the largest $(l:game_mechanics/size_and_weight)TFC Size$() allowed in the slots."
         },
         {
             "type": "patchouli:text",

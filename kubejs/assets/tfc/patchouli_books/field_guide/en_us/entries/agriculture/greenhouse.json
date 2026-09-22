@@ -5,7 +5,7 @@
   "pages": [
     {
         "type": "patchouli:text",
-        "text": "$(li)$(bold)$(l:tfc:agriculture/greenhouse#types)Greenhouse Types$()$(li)$(bold)$(l:tfc:agriculture/greenhouse#planters)Planters$()$(li2)$(l:tfc:agriculture/greenhouse#large_planter)Large Planter$()$(li2)$(l:tfc:agriculture/greenhouse#quad_planter)Quad Planter$()$(li2)$(l:tfc:agriculture/greenhouse#bonsai_planter)Bonsai Planter$()$(li2)$(l:tfc:agriculture/greenhouse#hanging_planter)Hanging Planter$()$(li2)$(l:tfc:agriculture/greenhouse#trellis_planter)Trellis Planter$()$(li2)$(l:tfc:agriculture/greenhouse#hydroponic_planter)Hydroponic Planter$()$(li)$(bold)$(l:tfc:agriculture/greenhouse#irrigation)Irrigation$()$(li)$(bold)$(l:tfc:agriculture/greenhouse#auto_harvesting)Auto-Harvesting$()"
+        "text": "$(li)$(bold)$(l:agriculture/greenhouse#types)Greenhouse Types$()$(li)$(bold)$(l:agriculture/greenhouse#planters)Planters$()$(li2)$(l:agriculture/greenhouse#large_planter)Large Planter$()$(li2)$(l:agriculture/greenhouse#quad_planter)Quad Planter$()$(li2)$(l:agriculture/greenhouse#bonsai_planter)Bonsai Planter$()$(li2)$(l:agriculture/greenhouse#hanging_planter)Hanging Planter$()$(li2)$(l:agriculture/greenhouse#trellis_planter)Trellis Planter$()$(li2)$(l:agriculture/greenhouse#hydroponic_planter)Hydroponic Planter$()$(li)$(bold)$(l:agriculture/greenhouse#irrigation)Irrigation$()$(li)$(bold)$(l:agriculture/greenhouse#auto_harvesting)Auto-Harvesting$()"
     },
     {
       "type": "patchouli:text",
@@ -45,7 +45,7 @@
       "type": "patchouli:text",
       "anchor": "planters",
       "title": "Planters",
-      "text": "$(thing)Planters$() are used to grow crops inside a Greenhouse. Crops in planters consume $(l:tfc:agriculture/growing_crops#intro)Nutrients$() similarly to crops. Planters should be placed inside a valid Greenhouse and activated with a $(item)Climate Station$(). Planters need at least some natural sunlight to work."
+      "text": "$(thing)Planters$() are used to grow crops inside a Greenhouse. Crops in planters consume $(l:agriculture/growing_crops#intro)Nutrients$() similarly to crops. Planters should be placed inside a valid Greenhouse and activated with a $(item)Climate Station$(). Planters need at least some natural sunlight to work."
     },
     {
       "type": "patchouli:spotlight",

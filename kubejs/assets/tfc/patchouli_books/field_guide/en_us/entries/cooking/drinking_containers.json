@@ -11,7 +11,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "Drinking from a container will also work for passing on drink effects from $(item)Alcohol$() or other fluids. As well as $(l:tfc:cooking/food_and_water#nutrients)Nutrient$() values.$(br2)$(o)$(7)Some drinking containers can even be played as a musical instrument when empty.$()"
+            "text": "Drinking from a container will also work for passing on drink effects from $(item)Alcohol$() or other fluids. As well as $(l:cooking/food_and_water#nutrients)Nutrient$() values.$(br2)$(o)$(7)Some drinking containers can even be played as a musical instrument when empty.$()"
         },
         {
             "type": "tfc:table",

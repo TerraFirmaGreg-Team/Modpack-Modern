@@ -29,12 +29,12 @@
         },
         {
             "type": "patchouli:text",
-            "text": "Fruit plants are seasonal. During their cold season, these plants will appear brown and lifeless. In the spring, they become green and healthy, getting ready to produce fruit and grow larger. The exact times this happen varies by the fruit. Fruit plants can die if kept outside the range of their $(l:tfc:the_world/climate#climate)Climate Conditions$()."
+            "text": "Fruit plants are seasonal. During their cold season, these plants will appear brown and lifeless. In the spring, they become green and healthy, getting ready to produce fruit and grow larger. The exact times this happen varies by the fruit. Fruit plants can die if kept outside the range of their $(l:the_world/climate#climate)Climate Conditions$()."
         },
         {
             "type": "patchouli:text",
             "anchor": "fruit_trees",
-            "text": "$(thing)Fruit trees$() grow from tiny saplings into large, flowering trees. The branches of fruit trees are their heart, and they will grow as long as the climate conditions are right. As fruit trees mature, they will grow $(thing)leaves$() all around their branches. The leaves can flower and fruit depending on the $(l:tfc:the_world/climate#season)Season$().",
+            "text": "$(thing)Fruit trees$() grow from tiny saplings into large, flowering trees. The branches of fruit trees are their heart, and they will grow as long as the climate conditions are right. As fruit trees mature, they will grow $(thing)leaves$() all around their branches. The leaves can flower and fruit depending on the $(l:the_world/climate#season)Season$().",
             "title": "Fruit Trees"
         },
         {

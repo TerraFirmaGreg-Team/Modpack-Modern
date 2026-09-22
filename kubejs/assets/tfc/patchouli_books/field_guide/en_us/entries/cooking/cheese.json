@@ -23,7 +23,7 @@
       "item": {
         "tag": "firmalife:cheese_wheels"
       },
-      "text": "Cheese wheels are blocks made from $(item)Cheese Curds$(). To improve their quality and shelf life, cheese wheels should be $(thing)Aged$() in a $(l:tfc:cooking/decay#cellar)Cellar$(). In order to obtain edible cheese from a cheese wheel, it should be sliced off the wheel by clicking $(item)$(k:key.use)$() with a $(thing)Knife$(). If the block is broken, the aging is lost!$(br)$(thing)Dry Cheeses$() are made from curds and salt, while $(thing)Wet Cheeses$() are aged in sea water."
+      "text": "Cheese wheels are blocks made from $(item)Cheese Curds$(). To improve their quality and shelf life, cheese wheels should be $(thing)Aged$() in a $(l:cooking/decay#cellar)Cellar$(). In order to obtain edible cheese from a cheese wheel, it should be sliced off the wheel by clicking $(item)$(k:key.use)$() with a $(thing)Knife$(). If the block is broken, the aging is lost!$(br)$(thing)Dry Cheeses$() are made from curds and salt, while $(thing)Wet Cheeses$() are aged in sea water."
     },
     {
       "type": "tfc:multimultiblock",

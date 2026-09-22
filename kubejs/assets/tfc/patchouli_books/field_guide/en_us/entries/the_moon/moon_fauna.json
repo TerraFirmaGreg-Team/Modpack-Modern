@@ -6,7 +6,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Extraterrestrial Fauna",
-			"text": "Space is home to many other kinds of animals than those you'd find on Earth. A few animals are hostile and will attack the player, but most are passive. Only a few of them are $(l:tfc:agriculture/animal_husbandry)domesticatable$().$(br)Animals you find on other worlds can be divided into two categories: $(item)hot$() and $(item)cold$(). Animals can only survive on planets that either have a similar climate to where they came from, or on $(thing)temperate$() planets like Earth."
+			"text": "Space is home to many other kinds of animals than those you'd find on Earth. A few animals are hostile and will attack the player, but most are passive. Only a few of them are $(l:agriculture/animal_husbandry)domesticatable$().$(br)Animals you find on other worlds can be divided into two categories: $(item)hot$() and $(item)cold$(). Animals can only survive on planets that either have a similar climate to where they came from, or on $(thing)temperate$() planets like Earth."
 		},
 		{
 			"type": "patchouli:text",
@@ -14,7 +14,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(li)$(bold)Domesticatable$()$(li2)$(l:tfc:the_moon/moon_fauna#moon_rabbit)Moon Rabbit$()$(li2)$(l:tfc:the_moon/moon_fauna#birt)Birt$()$(li2)$(l:tfc:the_moon/moon_fauna#certus_jellie)Certus Jellie$()$(li)$(bold)Wild$()$(li2)$(l:tfc:the_moon/moon_fauna#limpet)Limpet$()$(li2)$(l:tfc:the_moon/moon_fauna#star_crawler)Star Crawler$()$(li2)$(l:tfc:the_moon/moon_fauna#endermen)Endermen$()$(li2)$(l:tfc:the_moon/moon_fauna#shulker)Shulker$()"
+			"text": "$(li)$(bold)Domesticatable$()$(li2)$(l:the_moon/moon_fauna#moon_rabbit)Moon Rabbit$()$(li2)$(l:the_moon/moon_fauna#birt)Birt$()$(li2)$(l:the_moon/moon_fauna#certus_jellie)Certus Jellie$()$(li)$(bold)Wild$()$(li2)$(l:the_moon/moon_fauna#limpet)Limpet$()$(li2)$(l:the_moon/moon_fauna#star_crawler)Star Crawler$()$(li2)$(l:the_moon/moon_fauna#endermen)Endermen$()$(li2)$(l:the_moon/moon_fauna#shulker)Shulker$()"
 		},
 		{
 			"type": "patchouli:entity",
@@ -39,7 +39,7 @@
 			"scale": 0.6,
 			"name": "Certus Jellie",
 			"anchor": "certus_jellie",
-			"text": "$(thing)Certus$() $(l:tfc:agriculture/jellies)Jellies$() spawn in Moon's $(item)Asurine$() biomes. They produce $(thing)Large Certus Quartz Buds$()."
+			"text": "$(thing)Certus$() $(l:agriculture/jellies)Jellies$() spawn in Moon's $(item)Asurine$() biomes. They produce $(thing)Large Certus Quartz Buds$()."
 		},
 		{
 			"type": "patchouli:entity",

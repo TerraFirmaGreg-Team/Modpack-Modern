@@ -10,12 +10,12 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Crops in the beneath behave just the same as crops on the surface; they have hydration, temperature, and nutrient requirements. You can even plant them in $(thing)Greenhouses.$()$(br2)An important concern when planting crops in the Beneath is that crops require a light level of 12, which isn't provided by the Beneath's natural light. To solve this problem, you can utilize $(l:tfc:agriculture/aqueducts)Lava Aqueducts$() or any other available light source."
+			"text": "Crops in the beneath behave just the same as crops on the surface; they have hydration, temperature, and nutrient requirements. You can even plant them in $(thing)Greenhouses.$()$(br2)An important concern when planting crops in the Beneath is that crops require a light level of 12, which isn't provided by the Beneath's natural light. To solve this problem, you can utilize $(l:agriculture/aqueducts)Lava Aqueducts$() or any other available light source."
 		},
 		{
 			"type": "patchouli:text",
 			"title": "Contents",
-			"text": "$(li)$(l:tfc:beneath/beneath_crops#cassava)Cassava$()$(li)$(l:tfc:beneath/beneath_crops#peanut)Peanut$()$(li)$(l:tfc:beneath/beneath_crops#beans)Blackstone Beans$()$(li)$(l:tfc:beneath/beneath_crops#ghost_pepper)Ghost Pepper$()$(li)$(l:tfc:beneath/beneath_crops#cotton)Cotton$()"
+			"text": "$(li)$(l:beneath/beneath_crops#cassava)Cassava$()$(li)$(l:beneath/beneath_crops#peanut)Peanut$()$(li)$(l:beneath/beneath_crops#beans)Blackstone Beans$()$(li)$(l:beneath/beneath_crops#ghost_pepper)Ghost Pepper$()$(li)$(l:beneath/beneath_crops#cotton)Cotton$()"
 		},
 		{
 			"type": "patchouli:text",

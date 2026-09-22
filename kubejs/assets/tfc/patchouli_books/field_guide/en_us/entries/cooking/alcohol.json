@@ -13,7 +13,7 @@
       "type": "patchouli:text",
       "title": "Wine Making",
       "anchor": "wine_making",
-      "text": "$(thing)Wine-making$() is the science of turning $(thing)grapes$() into alcohol. You must first find $(l:tfc:the_world/wild_fruits#red_grapes)Red Grapes$() or $(l:tfc:the_world/wild_fruits#white_grapes)White Grapes$() in the wild and cultivate their seeds on $(thing)Trellises$() to obtain $(item)Grapes$(). Wine effects can be viewed $(l:tfc:cooking/drinks#wine)Here$()"
+      "text": "$(thing)Wine-making$() is the science of turning $(thing)grapes$() into alcohol. You must first find $(l:the_world/wild_fruits#red_grapes)Red Grapes$() or $(l:the_world/wild_fruits#white_grapes)White Grapes$() in the wild and cultivate their seeds on $(thing)Trellises$() to obtain $(item)Grapes$(). Wine effects can be viewed $(l:cooking/drinks#wine)Here$()"
     },
     {
       "type": "patchouli:spotlight",
@@ -22,7 +22,7 @@
       "item": {
         "tag": "firmalife:stomping_barrels"
       },
-      "text": "Grapes must then be smashed in a $(thing)Stomping Barrel$(), $(thing)Quern$(), or $(l:tfc:cooking/cooking_methods#food_processor)Food Processor$() to obtain smashed grapes. To use a stomping barrel, $(item)$(k:key.use)$() with fresh grapes. Then, jump up and down on the barrel 16 times. $(item)$(k:key.use)$() with an empty hand to retrieve the items.$(br2)Then, seal the smashed grapes in a barrel for 5 days to $(thing)ferment$() them."
+      "text": "Grapes must then be smashed in a $(thing)Stomping Barrel$(), $(thing)Quern$(), or $(l:cooking/cooking_methods#food_processor)Food Processor$() to obtain smashed grapes. To use a stomping barrel, $(item)$(k:key.use)$() with fresh grapes. Then, jump up and down on the barrel 16 times. $(item)$(k:key.use)$() with an empty hand to retrieve the items.$(br2)Then, seal the smashed grapes in a barrel for 5 days to $(thing)ferment$() them."
     },
     {
       "type": "patchouli:crafting",

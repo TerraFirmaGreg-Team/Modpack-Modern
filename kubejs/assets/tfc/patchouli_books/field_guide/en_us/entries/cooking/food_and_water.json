@@ -21,11 +21,11 @@
         },
         {
             "type": "patchouli:text",
-            "text": "Some foods are very filling, so they keep you from losing hunger for longer, while some foods have a short-lived effect.$(br2)You will lose hunger just from regular gameplay. Hunger drains faster if you do things like sprint, swim, or become $(l:getting_started/size_and_weight#overburdening)Overburdened$(). Information about the $(thing)Saturation$(), $(thing)Water$(), as well as $(thing)Nutrients$() available from a food is available by hovering over it in your inventory. Using $(item)$(k:key.sneak)$() reveals the full tooltip."
+            "text": "Some foods are very filling, so they keep you from losing hunger for longer, while some foods have a short-lived effect.$(br2)You will lose hunger just from regular gameplay. Hunger drains faster if you do things like sprint, swim, or become $(l:game_mechanics/size_and_weight#overburdening)Overburdened$(). Information about the $(thing)Saturation$(), $(thing)Water$(), as well as $(thing)Nutrients$() available from a food is available by hovering over it in your inventory. Using $(item)$(k:key.sneak)$() reveals the full tooltip."
         },
         {
             "type": "patchouli:text",
-            "text": "All foods have a tooltip with this information. The tooltip includes the $(l:tfc:cooking/decay#decay)Decay Date$() of the food, which may be extended with preservation. When viewing this information, it's important to realize that not all foods have nutritional value. For example, $(l:mechanics/bread)Dough$() is a food, but it has no Nutrition, Saturation, or Water value. Eating it would not do much good."
+            "text": "All foods have a tooltip with this information. The tooltip includes the $(l:cooking/decay#decay)Decay Date$() of the food, which may be extended with preservation. When viewing this information, it's important to realize that not all foods have nutritional value. For example, $(l:mechanics/bread)Dough$() is a food, but it has no Nutrition, Saturation, or Water value. Eating it would not do much good."
         },
         {
             "type": "patchouli:text",
@@ -66,11 +66,11 @@
             "item": {
                 "tag": "tfg:drinking_vessels"
             },
-            "text": "$(l:getting_started/pottery)Knapping$() and firing a $(l:getting_started/pottery#jug)jug$() is an early way to carry water with you. Fill it like a bucket with $(item)$(k:key.use)$(). Holding $(item)$(k:key.use)$() drinks the water.$(br2)You can also drink out of other $(l:tfc:cooking/drinking_containers)Containers$() such as $(item)Flasks$() or $(l:craftsmanship/glassworking)Glass Bottles$()."
+            "text": "$(l:getting_started/pottery)Knapping$() and firing a $(l:getting_started/pottery#jug)jug$() is an early way to carry water with you. Fill it like a bucket with $(item)$(k:key.use)$(). Holding $(item)$(k:key.use)$() drinks the water.$(br2)You can also drink out of other $(l:cooking/drinking_containers)Containers$() such as $(item)Flasks$() or $(l:craftsmanship/glassworking)Glass Bottles$()."
         },
         {
             "type": "patchouli:text",
-            "text": "$(br)Some fluids like $(thing)Milk$() even give $(l:tfc:cooking/food_and_water#nutrients)Nutrients$() when consumed.$(br2)The amount of thirst gained by drinking fluids is not standard. However, water and milk both give 10 points of water. Which is 1 $(9)💧$()-haunch."
+            "text": "$(br)Some fluids like $(thing)Milk$() even give $(l:cooking/food_and_water#nutrients)Nutrients$() when consumed.$(br2)The amount of thirst gained by drinking fluids is not standard. However, water and milk both give 10 points of water. Which is 1 $(9)💧$()-haunch."
         },
         {
             "type": "patchouli:text",
@@ -121,7 +121,7 @@
             "title": "Protein",
             "type": "patchouli:text",
             "anchor": "protein",
-            "text": "$(l)$(c)Protein$()$() can be sourced from the meat of $(l:the_world/wild_animals)Animals$(). It can also be obtained from some crops like $(thing)legumes$().$(br2)Increasing your protein value gives the following effects:$()$(li)$(bold)Value >55% → $()$()$(italic)Decrease exhaustion multiplier by 25%.$()$(li)$(bold)Value >85% → $()$()$(italic)Allows you to carry an additional huge & heavy item without being $(l:getting_started/size_and_weight#overburdening)Overburdened$() (like a sealed barrel).$()"
+            "text": "$(l)$(c)Protein$()$() can be sourced from the meat of $(l:the_world/wild_animals)Animals$(). It can also be obtained from some crops like $(thing)legumes$().$(br2)Increasing your protein value gives the following effects:$()$(li)$(bold)Value >55% → $()$()$(italic)Decrease exhaustion multiplier by 25%.$()$(li)$(bold)Value >85% → $()$()$(italic)Allows you to carry an additional huge & heavy item without being $(l:game_mechanics/size_and_weight#overburdening)Overburdened$() (like a sealed barrel).$()"
         },
         {
             "title": "Grain",

@@ -60,7 +60,7 @@
         {
             "type": "tfc:knapping_recipe",
             "recipe": "tfc:clay_knapping/vessel",
-            "text": "Small Vessels can store items to save space in your inventory as well as $(l:cooking/decay#vessels)Preserving Food Items$(). Small vessels have a limit of 16 items per-slot and cannot fit items larger than $(l:getting_started/size_and_weight)\"small\"$()."
+            "text": "Small Vessels can store items to save space in your inventory as well as $(l:cooking/decay#vessels)Preserving Food Items$(). Small vessels have a limit of 16 items per-slot and cannot fit items larger than $(l:game_mechanics/size_and_weight)\"small\"$()."
         },
         {
             "type": "patchouli:text",
@@ -193,7 +193,7 @@
         {
             "type": "patchouli:crafting",
             "recipe": "tfc:crafting/fire_clay",
-            "text": "Fire clay is made from $(l:the_world/earth_vein_index#deep_graphite)Graphite$() crushed in a $(l:craftsmanship/quern)Quern$(), as well as $(l:craftsmanship/pottery#kaolinite_powder)Kaolinite Powder$()."
+            "text": "Fire clay is made from $(thing#deep_graphite)Graphite$() crushed in a $(l:craftsmanship/quern)Quern$(), as well as $(l:craftsmanship/pottery#kaolinite_powder)Kaolinite Powder$()."
         },
         {
             "type": "tfc:knapping_recipe",

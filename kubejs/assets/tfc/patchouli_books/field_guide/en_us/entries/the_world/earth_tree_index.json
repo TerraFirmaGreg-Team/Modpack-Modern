@@ -147,7 +147,7 @@
 			"title": "Mangrove",
 			"anchor": "mangrove",
 			"item": "tag:tfc:mangrove_logs",
-			"text": "$(bold)Mangrove$()$(br)$(thing)Rainfall$(): 220mm+$(br)$(thing)Temperature$(): 18.0°C+$(br)$(thing)Growth Days$(): 7$(br)Note: only spawns in Salt Marsh biomes. Can also be found in $(l:tfc:beneath/beneath_tree_index#mangrove)the Beneath$()."
+			"text": "$(bold)Mangrove$()$(br)$(thing)Rainfall$(): 220mm+$(br)$(thing)Temperature$(): 18.0°C+$(br)$(thing)Growth Days$(): 7$(br)Note: only spawns in Salt Marsh biomes. Can also be found in $(l:beneath/beneath_tree_index#mangrove)the Beneath$()."
 		},
 		{
 			"type": "patchouli:spotlight",

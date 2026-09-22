@@ -11,21 +11,21 @@
         },
         {
             "type": "patchouli:text",
-            "text": "Consuming its favorite nutrient causes a crop to grow faster, and improves the yield of the crop at harvest time. That means that crops that consumed more nutrients drop more food when broken! Consuming a nutrient also has the effect of replenishing the other nutrients around it a small amount.$(br)Every crop has a different $(l:tfc:the_world/climate#temperature)Temperature$() and $(l:tfc:agriculture/growing_crops#hydration)Hydration$() requirement. You can find each crops climate range in $(l:tfc:the_world/wild_crops)[Wild Crops]$() or in its item tooltip."
+            "text": "Consuming its favorite nutrient causes a crop to grow faster, and improves the yield of the crop at harvest time. That means that crops that consumed more nutrients drop more food when broken! Consuming a nutrient also has the effect of replenishing the other nutrients around it a small amount.$(br)Every crop has a different $(l:the_world/climate#temperature)Temperature$() and $(l:agriculture/growing_crops#hydration)Hydration$() requirement. You can find each crops climate range in $(l:the_world/wild_crops)[Wild Crops]$() or in its item tooltip."
         },
         {
             "type": "patchouli:text",
-            "text": "When crops are planted without sufficient hydration or outside their temperature range the crop will die. If a crop reaches full maturity before dying it will yield excess seeds. You can kill a crop with $(l:tfc:agriculture/composting#rotten_compost)Rotten Compost$() to purposefully duplicate its seeds. Crops planted in $(l:tfc:agriculture/greenhouse#planters)Greenhouse Planters$() are not capable of dying and will automatically provide bonus seeds."
+            "text": "When crops are planted without sufficient hydration or outside their temperature range the crop will die. If a crop reaches full maturity before dying it will yield excess seeds. You can kill a crop with $(l:agriculture/composting#rotten_compost)Rotten Compost$() to purposefully duplicate its seeds. Crops planted in $(l:agriculture/greenhouse#planters)Greenhouse Planters$() are not capable of dying and will automatically provide bonus seeds."
         },
         {
             "type": "patchouli:text",
             "anchor": "hydration",
-            "text": "Hydration is a measure of the % water available for the crop. Different crop types calculate their hydration differently.$(li)$(l:tfc:the_world/wild_crops)Crop$() and $(l:tfc:the_world/wild_fruits#tall_bushes)Berry Bush$() hydration is affected by both local rainfall and proximity to fresh water.$(li2)To be very specific you can calculate crop hydration by following: $(o)$(2)(60 * rainfall / $(t:500 is the maximum rainfall allowed. If you used configs to change the max rainfall replace 500 with that number.)500$()$(o)$(2)) + 20 * (5 - waterCost)$() where $(t:Distance from water is calculated as a 3D grid.)waterCost is the distance to fresh water from 1-5$()",
+            "text": "Hydration is a measure of the % water available for the crop. Different crop types calculate their hydration differently.$(li)$(l:the_world/wild_crops)Crop$() and $(l:the_world/wild_fruits#tall_bushes)Berry Bush$() hydration is affected by both local rainfall and proximity to fresh water.$(li2)To be very specific you can calculate crop hydration by following: $(o)$(2)(60 * rainfall / $(t:500 is the maximum rainfall allowed. If you used configs to change the max rainfall replace 500 with that number.)500$()$(o)$(2)) + 20 * (5 - waterCost)$() where $(t:Distance from water is calculated as a 3D grid.)waterCost is the distance to fresh water from 1-5$()",
             "title": "Hydration"
         },
         {
             "type": "patchouli:text",
-            "text": "$(li)Hydration for $(l:tfc:the_world/wild_fruits#fruit_trees)Fruit Trees$(), $(l:tfc:the_world/wild_fruits#palm_fruit_trees)Palm Fruit Trees$(), and $(l:tfc:the_world/wild_fruits#banana)Bananas$() is calculated with: $(o)$(2)rainfall / 5$()$(br2)Grapes do not have a hydration requirement. Submerged crops like rice and cranberries also have no hydration requirement since... well... they are submerged in water."
+            "text": "$(li)Hydration for $(l:the_world/wild_fruits#fruit_trees)Fruit Trees$(), $(l:the_world/wild_fruits#palm_fruit_trees)Palm Fruit Trees$(), and $(l:the_world/wild_fruits#banana)Bananas$() is calculated with: $(o)$(2)rainfall / 5$()$(br2)Grapes do not have a hydration requirement. Submerged crops like rice and cranberries also have no hydration requirement since... well... they are submerged in water."
         },
         {
             "type": "patchouli:text",
@@ -82,7 +82,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "Provided the $(l:tfc:the_world/climate#temperature)Temperature$() requirements are satisfied, the grape vine will grow up and over the trellis over the course of a few months. It will fruit in the month of July, flowering the month prior. Grapes can then be harvested and used to produce $(l:tfc:cooking/alcohol#wine_making)Wine$().$(br2)Grape plants will not die even when they are outside their temperature range. But they will go dormant and won't produce any fruit until they are back to the right temperature."
+            "text": "Provided the $(l:the_world/climate#temperature)Temperature$() requirements are satisfied, the grape vine will grow up and over the trellis over the course of a few months. It will fruit in the month of July, flowering the month prior. Grapes can then be harvested and used to produce $(l:cooking/alcohol#wine_making)Wine$().$(br2)Grape plants will not die even when they are outside their temperature range. But they will go dormant and won't produce any fruit until they are back to the right temperature."
         },
         {
             "type": "patchouli:relations",

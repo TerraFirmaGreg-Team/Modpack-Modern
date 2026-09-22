@@ -94,7 +94,7 @@
         {
             "type": "patchouli:crafting",
             "recipe": "gtceu:shaped/pickaxe_copper",
-            "text": "You are now able to craft your first pickaxe! Find enough copper to make a pickaxe head, fire a pickaxe mold and melt the ore using a pit kiln, then cast a head. Slap it on a stick, and voilà! You can now dig for $(l:the_world/earth_vein_index)Ore$()."
+            "text": "You are now able to craft your first pickaxe! Find enough copper to make a pickaxe head, fire a pickaxe mold and melt the ore using a pit kiln, then cast a head. Slap it on a stick, and voilà! You can now dig for $(thing)Ore$()."
         },
         {
             "type": "patchouli:spotlight",
@@ -144,7 +144,7 @@
             "type": "patchouli:text",
             "anchor": "propick",
             "title": "Prospector's Pick",
-            "text": "You remembered where you picked up those indicator ores, right? Finding additional ores may require extensive exploration and mining. You should become very familiar with $(l:the_world/earth_ore_index)Ores and Minerals$(). If you need a specific resource, you must find the rock type it spawns in either under your feet or across the world."
+            "text": "You remembered where you picked up those indicator ores, right? Finding additional ores may require extensive exploration and mining. You should become very familiar with $(thing)Ores and Minerals$(). If you need a specific resource, you must find the rock type it spawns in either under your feet or across the world."
         },
         {
             "type": "patchouli:spotlight",
@@ -204,7 +204,6 @@
             "title": "Further Reading",
             "anchor": "relations",
             "entries": [
-                "tfc:the_world/earth_vein_index",
                 "tfc:craftsmanship/pottery",
                 "tfc:craftsmanship/pit_kiln",
                 "tfc:craftsmanship/charcoal_forge",

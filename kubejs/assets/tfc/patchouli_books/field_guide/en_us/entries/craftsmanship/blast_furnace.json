@@ -308,7 +308,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "If the metal is hot when added into the blast furnace, it will take less time to reach brilliant white. Consider heating your metal in a $(l:tfc:mechanics/charcoal_forge)Charcoal Forge$() before putting it into an already-hot furnace to save time, especially with smaller blast furnaces that process less at a time."
+            "text": "If the metal is hot when added into the blast furnace, it will take less time to reach brilliant white. Consider heating your metal in a $(l:mechanics/charcoal_forge)Charcoal Forge$() before putting it into an already-hot furnace to save time, especially with smaller blast furnaces that process less at a time."
         },
         {
             "type": "patchouli:spotlight",
@@ -318,7 +318,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "You can automatically replace broken tuyeres with a hopper or item pipe facing into the blast furnace.$(br2)You can pump liquid incredibly quickly out of the blast furnace using a Create $(item)Mechanical Pump$(). Pump into a $(l:tfc:craftsmanship/crucible#channel_casting)Mold Table$() and extract the ingots with a hopper or chute: Easy automation!$(br2)You can process the resulting $(item)Pig Iron$() and $(item)High Carbon Steel$() in a $(thing)Forge Hammer$() or $(l:craftsmanship/anvils#helve_hammer)Helve Hammer$()."
+            "text": "You can automatically replace broken tuyeres with a hopper or item pipe facing into the blast furnace.$(br2)You can pump liquid incredibly quickly out of the blast furnace using a Create $(item)Mechanical Pump$(). Pump into a $(l:craftsmanship/crucible#channel_casting)Mold Table$() and extract the ingots with a hopper or chute: Easy automation!$(br2)You can process the resulting $(item)Pig Iron$() and $(item)High Carbon Steel$() in a $(thing)Forge Hammer$() or $(l:craftsmanship/anvils#helve_hammer)Helve Hammer$()."
         },
         {
             "type": "patchouli:multiblock",

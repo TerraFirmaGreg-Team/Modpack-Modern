@@ -10,7 +10,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "index",
-			"text": "$(li)$(bold)$(l:tfc:beneath/beneath_mechanics#temperature)Temperature Management$()$(li2)$(l:tfc:beneath/beneath_mechanics#ice)Ice$()$(li2)$(l:tfc:beneath/beneath_mechanics#clothes)Clothing$()$(li2)$(l:tfc:beneath/beneath_mechanics#other_cooling)Other$()$(li)$(bold)$(l:tfc:beneath/beneath_mechanics#hellforge)The Hellforge$()$(li)$(bold)$(l:tfc:beneath/beneath_mechanics#rope_ladders)Vertical Navigation$()$(li2)$(l:tfc:beneath/beneath_mechanics#rope_ladder)Rope Ladder$()$(li2)$(l:tfc:logistics/exploration_gear#hang_glider)Hang Glider$()$(li2)$(l:tfc:logistics/exploration_gear#grappling_hook)Grappling Hook$()$(li2)$(l:tfc:logistics/exploration_gear#harpoon)Harpoon & Coil$()$(li)$(bold)$(l:tfc:beneath/beneath_mechanics#piglins)Piglins$()$(li2)$(l:tfc:beneath/beneath_mechanics#disguise)Disguising$()$(li2)$(l:tfc:beneath/beneath_mechanics#towers)Towers$()$(li2)$(l:tfc:beneath/beneath_mechanics#bastions)Bastions$()"
+			"text": "$(li)$(bold)$(l:beneath/beneath_mechanics#temperature)Temperature Management$()$(li2)$(l:beneath/beneath_mechanics#ice)Ice$()$(li2)$(l:beneath/beneath_mechanics#clothes)Clothing$()$(li2)$(l:beneath/beneath_mechanics#other_cooling)Other$()$(li)$(bold)$(l:beneath/beneath_mechanics#hellforge)The Hellforge$()$(li)$(bold)$(l:beneath/beneath_mechanics#rope_ladder)Vertical Navigation$()$(li2)$(l:beneath/beneath_mechanics#rope_ladder)Rope Ladder$()$(li2)$(l:logistics/exploration_gear#hang_glider)Hang Glider$()$(li2)$(l:logistics/exploration_gear#grappling_hook)Grappling Hook$()$(li2)$(l:logistics/exploration_gear#harpoon)Harpoon & Coil$()$(li)$(bold)$(l:beneath/beneath_mechanics#piglins)Piglins$()$(li2)$(l:beneath/beneath_mechanics#disguise)Disguising$()$(li2)$(l:beneath/beneath_mechanics#towers)Towers$()$(li2)$(l:beneath/beneath_mechanics#bastions)Bastions$()"
 		},
 		{
 			"type": "patchouli:text",
@@ -28,7 +28,7 @@
 			"type": "patchouli:text",
 			"anchor": "clothes",
 			"title": "Clothing",
-			"text": "$(item)Burlap$(), $(item)Linen$(), and $(item)Silk$() clothing will help provide a little heat resistance.$(br)$(item)Crocodile$(), $(item)Tiger$(), and $(item)Lion$() clothing provide a stronger cooling effect.$(br)Lastly, $(item)Phantom$() and $(item)Red Elk$() clothes are the strongest cooling clothes, and last a long time too.$(br2)All clothing can be repaired. Press $(thing)U$() to check the repair recipes in EMI."
+			"text": "$(item)Burlap$(), $(item)Linen$(), and $(item)Silk$() clothing will help provide a little heat resistance.$(br)$(item)Crocodile$(), $(item)Tiger$(), and $(item)Lion$() clothing provide a stronger cooling effect.$(br)Lastly, $(item)Phantom$() and $(item)Red Elk$() clothes are the strongest cooling clothes, and last a long time too.$(br2)All clothing can be repaired. Press $(thing)U$() to check the repair recipes in $(d)E$(a)M$(b)I$()."
 		},
 		{
 			"type": "patchouli:crafting",
@@ -44,13 +44,13 @@
 			"type": "patchouli:crafting",
 			"anchor": "other_cooling",
 			"recipe": "tfg:crafting/smoothie/magmango",
-			"text": "Other ways to stay cool include standing next to $(l:tfc:beneath/beneath_fauna#ice_jellie)Ice Jellies$() and eating cooling foods such as $(item)Ice Soup$() and $(item)Fruit Smoothies$()!"
+			"text": "Other ways to stay cool include standing next to $(l:beneath/beneath_fauna#ice_jellie)Ice Jellies$() and eating cooling foods such as $(item)Ice Soup$() and $(item)Fruit Smoothies$()!"
 		},
 		{
 			"type": "patchouli:text",
 			"title": "The Hellforge",
 			"anchor": "hellforge",
-			"text": "Due to the lack of sky access, the $(l:tfc:craftsmanship/charcoal_forge)Charcoal Forge$() does not work in the Beneath!$(br2)The $(thing)Hellforge$() is a gratuitously large forge, with high capacity for fuel, products, and heating. It can heat up to nine $(l:craftsmanship/crucible)Crucibles$() at a time, and doesn't require sky access either!$(br2)It works in the overworld too."
+			"text": "Due to the lack of sky access, the $(l:craftsmanship/charcoal_forge)Charcoal Forge$() does not work in the Beneath!$(br2)The $(thing)Hellforge$() is a gratuitously large forge, with high capacity for fuel, products, and heating. It can heat up to nine $(l:craftsmanship/crucible)Crucibles$() at a time, and doesn't require sky access either!$(br2)It works in the overworld too."
 		},
 		{
 			"type": "patchouli:multiblock",
@@ -79,7 +79,7 @@
 				}
 			},
 			"name": "Hellforge",
-			"text": "Any type of $(l:tfc:agriculture/aqueducts)Aqueduct$() will work.",
+			"text": "Any type of $(l:agriculture/aqueducts)Aqueduct$() will work.",
 			"enable_visualize": false
 		},
 		{
@@ -95,14 +95,14 @@
 			"title": "Rope Ladder",
 			"anchor": "rope_ladder",
 			"item": "tag:tfg:rope_ladders",
-			"text": "$(thing)Rope Ladders$() are a great way to get up and down in the Beneath. Unlike regular ladders, they can hang over the edge of cliffs without needing any supporting blocks on the side, and a whole stack can be placed or picked up at once.$(br2)$(item)Burlap Fiber$() can be obtained from $(l:tfc:beneath/beneath_wild_fruits#oil_palm)Oil Palms$(), and $(item)Rope Coils$() can be crafted out of $(thing)Coils$() or $(thing)other cloth$()."
+			"text": "$(thing)Rope Ladders$() are a great way to get up and down in the Beneath. Unlike regular ladders, they can hang over the edge of cliffs without needing any supporting blocks on the side, and a whole stack can be placed or picked up at once.$(br2)$(item)Burlap Fiber$() can be obtained from $(l:beneath/beneath_wild_fruits#oil_palm)Oil Palms$(), and $(item)Rope Coils$() can be crafted out of $(thing)Coils$() or $(thing)other cloth$()."
 		},
 		{
 			"type": "patchouli:spotlight",
 			"title": "Piglin Bartering",
 			"anchor": "piglins",
 			"item": "minecraft:gold_ingot",
-			"text": "Like you'd expect, you can trade with $(thing)Piglins$() in the same way you trade with them in vanilla, with $(item)Gold Ingots$().$(br2)A full list of trades can be found in EMI - simply press $(thing)U$() on a Gold Ingot to see it."
+			"text": "Like you'd expect, you can trade with $(thing)Piglins$() in the same way you trade with them in vanilla, with $(item)Gold Ingots$().$(br2)A full list of trades can be found in $(d)E$(a)M$(b)I$() - simply press $(thing)U$() on a Gold Ingot to see it."
 		},
 		{
 			"type": "patchouli:spotlight",

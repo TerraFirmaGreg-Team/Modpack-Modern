@@ -20,7 +20,7 @@
             "title": "Chests",
             "anchor": "chests",
             "item": "tag:forge:chests",
-            "text": "Chest can store 18 items or 36 items for double chests. Chests can hold item sized up to $(l:getting_started/size_and_weight)Large$().$(br)If $(thing)Food Items$() are present in chests then it will attract rodents. So it is best to store them in $(item)Vessels$()."
+            "text": "Chest can store 18 items or 36 items for double chests. Chests can hold item sized up to $(l:game_mechanics/size_and_weight)Large$().$(br)If $(thing)Food Items$() are present in chests then it will attract rodents. So it is best to store them in $(item)Vessels$()."
         },
         {
             "type": "patchouli:multiblock",
@@ -201,7 +201,7 @@
             "title": "Kegs",
             "anchor": "kegs",
             "item": "tag:firmalife:big_barrels",
-            "text": "$(item)Kegs$() have the unique ability to store large amounts of items $(italics)and$() fluids.$(br)Kegs can hold any fluid a barrel can, up to 80,000 mB worth. And can hold up to 36 stacks of $(l:getting_started/size_and_weight)Large$() items.$(br2)Kegs cannot process recipes or age alcohol like barrels."
+            "text": "$(item)Kegs$() have the unique ability to store large amounts of items $(italics)and$() fluids.$(br)Kegs can hold any fluid a barrel can, up to 80,000 mB worth. And can hold up to 36 stacks of $(l:game_mechanics/size_and_weight)Large$() items.$(br2)Kegs cannot process recipes or age alcohol like barrels."
         },
         {
             "type": "patchouli:multiblock",
@@ -567,7 +567,7 @@
             "entries": [
                 "tfc:craftsmanship/barrels",
                 "tfc:logistics/personal_storage",
-                "tfc:getting_started/size_and_weight"
+                "tfc:game_mechanics/size_and_weight"
             ]
         }
     ],

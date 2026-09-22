@@ -5,7 +5,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Despite the lack of sunlight, several species of trees grow in the Beneath, most of which can only be found here!$(br2)Trees grow in the Beneath the same way they do in the overworld, but they do require a light level of 12, which isn't provided by the Beneath's natural light. To solve this problem, you can utilize $(l:tfc:agriculture/aqueducts)Lava Aqueducts$() or any other available light source."
+			"text": "Despite the lack of sunlight, several species of trees grow in the Beneath, most of which can only be found here!$(br2)Trees grow in the Beneath the same way they do in the overworld, but they do require a light level of 12, which isn't provided by the Beneath's natural light. To solve this problem, you can utilize $(l:agriculture/aqueducts)Lava Aqueducts$() or any other available light source."
 		},
 		{
 			"type": "patchouli:spotlight",
