@@ -39,7 +39,7 @@
 		{
 			id: "70D405A6CF1B048B"
 			linked_quest: "7178843BCD50A012"
-			x: 7.5d
+			x: 8.5d
 			y: -21.0d
 		}
 		{
@@ -53,7 +53,7 @@
 			id: "572FD8B81A8B7255"
 			linked_quest: "7EE13BE102F323F3"
 			shape: "heart"
-			x: 4.5d
+			x: 5.5d
 			y: -17.0d
 		}
 		{
@@ -80,7 +80,7 @@
 			id: "54DB3BC997AE05F2"
 			linked_quest: "36B64597F76625ED"
 			shape: "heart"
-			x: 4.5d
+			x: 6.5d
 			y: -22.5d
 		}
 		{
@@ -112,46 +112,46 @@
 		{
 			id: "6486A795C39453F6"
 			linked_quest: "22E604DB7E7E87FB"
-			x: 9.0d
+			x: 9.5d
 			y: -19.0d
 		}
 		{
 			id: "556D78EE46298EAF"
 			linked_quest: "382FC8824F311665"
-			x: 12.0d
+			x: 12.5d
 			y: -19.0d
 		}
 		{
 			id: "7A8638AB1E3F4AC6"
 			linked_quest: "2D959136A5FC5F46"
-			x: 10.5d
+			x: 11.0d
 			y: -19.0d
 		}
 		{
 			id: "6AC01D56F7FD8035"
 			linked_quest: "037CDA933FBE2CBE"
-			x: 10.5d
+			x: 11.0d
 			y: -17.5d
 		}
 		{
 			id: "12A3385CA71DCA30"
 			linked_quest: "5443F4F5AE53B91A"
 			shape: "heart"
-			x: 7.5d
+			x: 8.5d
 			y: -22.5d
 		}
 		{
 			id: "0F4990ABCB76BACD"
 			linked_quest: "0F1603CC9D7D41E3"
 			shape: "heart"
-			x: 6.5d
+			x: 7.5d
 			y: -17.0d
 		}
 		{
 			id: "60E01A84A47DDC76"
 			linked_quest: "05528D09F7EE6E33"
 			shape: "heart"
-			x: 4.5d
+			x: 6.5d
 			y: -21.0d
 		}
 		{
@@ -170,7 +170,7 @@
 			id: "060F9F1B0F53041C"
 			linked_quest: "66FDACC7E7F9180C"
 			shape: "heart"
-			x: 7.5d
+			x: 8.5d
 			y: -15.5d
 		}
 		{
@@ -209,14 +209,14 @@
 			id: "7C664644B941316E"
 			linked_quest: "78374FC41EFCFD9B"
 			shape: "heart"
-			x: 6.5d
+			x: 7.5d
 			y: -21.0d
 		}
 		{
 			id: "190A3AFECB6CA8F0"
 			linked_quest: "3876C12655AE6E3C"
 			shape: "heart"
-			x: 6.5d
+			x: 7.5d
 			y: -22.5d
 		}
 		{
@@ -1082,7 +1082,20 @@
 		{
 			dependencies: ["04DE7C58F20B535A"]
 			description: ["{quests.metal_age.steel_goodies.desc}"]
-			icon: "greate:steel_mechanical_pump"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "gtceu:steel_hammer"
+				tag: {
+					Damage: 0
+					GT.Tool: { }
+				}
+			}
 			id: "0C9B7745D812555A"
 			shape: "circle"
 			size: 1.5d
@@ -1526,7 +1539,7 @@
 				}
 			]
 			title: "{quests.metal_age.copper_diving.title}"
-			x: 12.0d
+			x: 12.5d
 			y: -20.5d
 		}
 		{
@@ -1825,7 +1838,7 @@
 				}
 			]
 			title: "{quests.tfg_tips.rowboat_materials.title}"
-			x: 5.5d
+			x: 6.5d
 			y: -17.0d
 		}
 		{
@@ -2319,6 +2332,7 @@
 			description: ["{quests.steam_age.steel_greate.desc}"]
 			icon: "greate:steel_cogwheel"
 			id: "09D913288896A67A"
+			shape: "octagon"
 			size: 1.5d
 			subtitle: "{quests.steam_age.steel_greate.subtitle}"
 			tasks: [
@@ -2460,6 +2474,20 @@
 		{
 			dependencies: ["7B045998769930F0"]
 			description: ["{quests.steam_age.create_tools.desc}"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "gtceu:bismuth_bronze_wrench"
+				tag: {
+					Damage: 0
+					GT.Tool: { }
+				}
+			}
 			id: "2F81902C6B1D4902"
 			subtitle: "{quests.steam_age.create_tools.subtitle}"
 			tasks: [
@@ -2843,7 +2871,11 @@
 						ticks: 0L
 					}
 				}
-				id: "gtceu:small_brass_gear"
+				id: "gtceu:black_bronze_hammer"
+				tag: {
+					Damage: 0
+					GT.Tool: { }
+				}
 			}
 			id: "68F1232DD918BBC2"
 			shape: "circle"
@@ -2855,7 +2887,7 @@
 				type: "checkmark"
 			}]
 			title: "{quests.metal_age.bronze_goodies.title}"
-			x: 6.0d
+			x: 7.0d
 			y: -19.0d
 		}
 		{
@@ -2923,7 +2955,7 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.first_backpack.title}"
-			x: 8.5d
+			x: 9.5d
 			y: -22.5d
 		}
 		{
@@ -2945,7 +2977,7 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.camera.title}"
-			x: 12.0d
+			x: 12.5d
 			y: -17.5d
 		}
 		{
@@ -2966,7 +2998,7 @@
 				type: "item"
 			}]
 			title: "{quests.metal_age.climate_station.title}"
-			x: 14.0d
+			x: 14.5d
 			y: -19.0d
 		}
 		{
@@ -3012,7 +3044,7 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.blank_disc.title}"
-			x: 13.5d
+			x: 14.0d
 			y: -17.5d
 		}
 		{
@@ -3036,7 +3068,7 @@
 				type: "item"
 			}]
 			title: "{quests.metal_age.redstone_devices.title}"
-			x: 7.5d
+			x: 8.5d
 			y: -17.0d
 		}
 		{
@@ -3123,7 +3155,7 @@
 						ticks: 0L
 					}
 				}
-				id: "tfchotornot:tongs/brass"
+				id: "tfchotornot:tongs/bronze"
 				tag: {
 					Damage: 0
 				}
@@ -3338,7 +3370,7 @@
 				}
 			]
 			title: "{quests.metal_age.stonecutters.title}"
-			x: 8.5d
+			x: 9.5d
 			y: -17.0d
 		}
 		{
