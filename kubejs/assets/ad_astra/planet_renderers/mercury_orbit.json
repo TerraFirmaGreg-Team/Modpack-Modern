@@ -8,7 +8,7 @@
 	"render_in_rain": true,
 	"sky_renderables": [
 		{
-			"back_light_color": -39,
+			"back_light_color": -750495,
 			"back_light_scale": 66.0,
 			"blend": false,
 			"global_rotation": [
@@ -23,7 +23,7 @@
 			],
 			"movement_type": "TIME_OF_DAY",
 			"scale": 22.0,
-			"texture": "ad_astra:textures/environment/sun.png"
+			"texture": "ad_astra:textures/environment/red_sun.png"
 		},
 		{
 			"back_light_color": -5543543,
@@ -42,6 +42,24 @@
 			"movement_type": "STATIC",
 			"scale": 80.0,
 			"texture": "ad_astra:textures/environment/mercury.png"
+		},
+		{
+			"back_light_color": -801674,
+			"back_light_scale": 1.2,
+			"blend": true,
+			"global_rotation": [
+				-15.0,
+				0.0,
+				140.0
+			],
+			"local_rotation": [
+				0.0,
+				100.0,
+				0.0
+			],
+			"movement_type": "TIME_OF_DAY",
+			"scale": 0.4,
+			"texture": "ad_astra:textures/environment/venus.png"
 		}
 	],
 	"star_brightness": 0.6,

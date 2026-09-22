@@ -60,6 +60,132 @@
 			"movement_type": "STATIC",
 			"scale": 8.0,
 			"texture": "ad_astra:textures/environment/moon.png"
+		},
+		{
+			"back_light_color": 15118501,
+			"back_light_scale": 2.4,
+			"blend": true,
+			"global_rotation": [
+				15.0,
+				0.0,
+				200.0
+			],
+			"local_rotation": [
+				0.0,
+				25.0,
+				0.0
+			],
+			"movement_type": "TIME_OF_DAY",
+			"scale": 0.8,
+			"texture": "ad_astra:textures/environment/mars.png"
+		},
+		{
+			"back_light_color": 15134116,
+			"back_light_scale": 2.25,
+			"blend": true,
+			"global_rotation": [
+				80.0,
+				-20.0,
+				190.0
+			],
+			"local_rotation": [
+				0.0,
+				-3.0,
+				0.0
+			],
+			"movement_type": "TIME_OF_DAY_REVERSED",
+			"scale": 0.75,
+			"texture": "ad_astra:textures/environment/venus.png"
+		},
+		{
+			"back_light_color": -1714771,
+			"back_light_scale": 1.2,
+			"blend": true,
+			"global_rotation": [
+				-40.0,
+				0.0,
+				160.0
+			],
+			"local_rotation": [
+				0.0,
+				45.0,
+				0.0
+			],
+			"movement_type": "TIME_OF_DAY_REVERSED",
+			"scale": 0.4,
+			"texture": "tfg:textures/gui/jupiter_planet.png"
+		},
+		{
+			"back_light_color": 11588853,
+			"back_light_scale": 0.2,
+			"blend": true,
+			"global_rotation": [
+				-38.8,
+				0.0,
+				160.7
+			],
+			"local_rotation": [
+				0.0,
+				-8.0,
+				0.0
+			],
+			"movement_type": "TIME_OF_DAY_REVERSED",
+			"scale": 0.08,
+			"texture": "ad_astra:textures/environment/glacio.png"
+		},
+		{
+			"back_light_color": -1714771,
+			"back_light_scale": 0.2,
+			"blend": true,
+			"global_rotation": [
+				-39.1,
+				0.2,
+				160.4
+			],
+			"local_rotation": [
+				0.0,
+				-12.0,
+				0.0
+			],
+			"movement_type": "TIME_OF_DAY_REVERSED",
+			"scale": 0.1,
+			"texture": "ad_astra:textures/block/moon_stone.png"
+		},
+		{
+			"back_light_color": 12233686,
+			"back_light_scale": 0.2,
+			"blend": true,
+			"global_rotation": [
+				-40.9,
+				0.4,
+				159.1
+			],
+			"local_rotation": [
+				0.0,
+				45.0,
+				0.0
+			],
+			"movement_type": "TIME_OF_DAY_REVERSED",
+			"scale": 0.09,
+			"texture": "ad_astra:textures/block/moon_deepslate.png"
+		},
+		{
+			"back_light_color": 15129641,
+			"back_light_scale": 0.2,
+			"blend": true,
+			"global_rotation": [
+				-41.5,
+				-0.6,
+				159.4
+			],
+			"local_rotation": [
+				0.0,
+				20.0,
+				0.0
+			],
+			"movement_type": "TIME_OF_DAY_REVERSED",
+			"scale": 0.09,
+			"texture": "tfg:textures/block/rock/glauberite.png"
 		}
 	],
 	"star_brightness": 0.6,
