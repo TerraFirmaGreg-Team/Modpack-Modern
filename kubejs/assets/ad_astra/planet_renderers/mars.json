@@ -80,6 +80,24 @@
 			"texture": "ad_astra:textures/environment/earth.png"
 		},
 		{
+			"back_light_color": 15134116,
+			"back_light_scale": 0.9,
+			"blend": true,
+			"global_rotation": [
+				80.0,
+				-20.0,
+				190.0
+			],
+			"local_rotation": [
+				0.0,
+				-3.0,
+				0.0
+			],
+			"movement_type": "TIME_OF_DAY_REVERSED",
+			"scale": 0.3,
+			"texture": "ad_astra:textures/environment/venus.png"
+		},
+		{
 			"back_light_color": -1714771,
 			"back_light_scale": 1.2,
 			"blend": true,
@@ -212,7 +230,7 @@
 			"weight": 1
 		}
 	],
-	"stars": 1500,
-	"sunrise_angle": 0,
+	"stars": 9000,
+	"sunrise_angle": 0.001,
 	"sunrise_color": 2079743
 }

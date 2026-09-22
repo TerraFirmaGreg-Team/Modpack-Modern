@@ -44,8 +44,26 @@
 			"texture": "ad_astra:textures/environment/venus.png"
 		},
 		{
+			"back_light_color": -12813094,
+			"back_light_scale": 1.5,
+			"blend": true,
+			"global_rotation": [
+				-20.0,
+				0.0,
+				160.0
+			],
+			"local_rotation": [
+				0.0,
+				100.0,
+				0.0
+			],
+			"movement_type": "TIME_OF_DAY_REVERSED",
+			"scale": 0.5,
+			"texture": "ad_astra:textures/environment/earth.png"
+		},
+		{
 			"back_light_color": -1714771,
-			"back_light_scale": 1.2,
+			"back_light_scale": 0.6,
 			"blend": true,
 			"global_rotation": [
 				-40.0,
@@ -63,7 +81,7 @@
 		},
 		{
 			"back_light_color": 11588853,
-			"back_light_scale": 0.2,
+			"back_light_scale": 0.12,
 			"blend": true,
 			"global_rotation": [
 				-38.8,
@@ -81,7 +99,7 @@
 		},
 		{
 			"back_light_color": -1714771,
-			"back_light_scale": 0.2,
+			"back_light_scale": 0.15,
 			"blend": true,
 			"global_rotation": [
 				-39.1,
@@ -99,7 +117,7 @@
 		},
 		{
 			"back_light_color": 12233686,
-			"back_light_scale": 0.2,
+			"back_light_scale": 0.15,
 			"blend": true,
 			"global_rotation": [
 				-40.9,
@@ -117,7 +135,7 @@
 		},
 		{
 			"back_light_color": 15129641,
-			"back_light_scale": 0.2,
+			"back_light_scale": 0.12,
 			"blend": true,
 			"global_rotation": [
 				-41.5,

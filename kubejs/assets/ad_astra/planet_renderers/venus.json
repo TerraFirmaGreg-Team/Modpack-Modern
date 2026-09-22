@@ -24,42 +24,6 @@
 			"movement_type": "TIME_OF_DAY_REVERSED",
 			"scale": 14.0,
 			"texture": "ad_astra:textures/environment/red_sun.png"
-		},
-		{
-			"back_light_color": -12813094,
-			"back_light_scale": 1.5,
-			"blend": true,
-			"global_rotation": [
-				-20.0,
-				0.0,
-				160.0
-			],
-			"local_rotation": [
-				0.0,
-				100.0,
-				0.0
-			],
-			"movement_type": "TIME_OF_DAY_REVERSED",
-			"scale": 0.5,
-			"texture": "ad_astra:textures/environment/earth.png"
-		},
-		{
-			"back_light_color": -5543543,
-			"back_light_scale": 0.90000004,
-			"blend": true,
-			"global_rotation": [
-				10.0,
-				0.0,
-				-10.0
-			],
-			"local_rotation": [
-				0.0,
-				100.0,
-				0.0
-			],
-			"movement_type": "TIME_OF_DAY_REVERSED",
-			"scale": 0.3,
-			"texture": "ad_astra:textures/environment/mercury.png"
 		}
 	],
 	"star_colors": [

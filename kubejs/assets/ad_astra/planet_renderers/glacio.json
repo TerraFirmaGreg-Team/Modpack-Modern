@@ -8,9 +8,9 @@
 	"render_in_rain": false,
 	"sky_renderables": [
 		{
-			"back_light_color": -39,
-			"back_light_scale": 27.0,
-			"blend": true,
+			"back_light_color": -3081481,
+			"back_light_scale": 2.25,
+			"blend": false,
 			"global_rotation": [
 				0.0,
 				0.0,
@@ -22,11 +22,65 @@
 				0.0
 			],
 			"movement_type": "TIME_OF_DAY",
-			"scale": 9.0,
-			"texture": "ad_astra:textures/environment/sun.png"
+			"scale": 0.75,
+			"texture": "ad_astra:textures/environment/blue_sun.png"
 		},
 		{
-			"back_light_color": -6861640,
+			"back_light_color": 15118501,
+			"back_light_scale": 6.0,
+			"blend": true,
+			"global_rotation": [
+				15.0,
+				70.0,
+				200.0
+			],
+			"local_rotation": [
+				0.0,
+				25.0,
+				0.0
+			],
+			"movement_type": "TIME_OF_DAY",
+			"scale": 2.0,
+			"texture": "ad_astra:textures/block/moon_stone.png"
+		},
+		{
+			"back_light_color": 15134116,
+			"back_light_scale": 4.5,
+			"blend": true,
+			"global_rotation": [
+				80.0,
+				-20.0,
+				230.0
+			],
+			"local_rotation": [
+				0.0,
+				10.0,
+				0.0
+			],
+			"movement_type": "TIME_OF_DAY_REVERSED",
+			"scale": 1.5,
+			"texture": "ad_astra:textures/block/moon_deepslate.png"
+		},
+		{
+			"back_light_color": -1714771,
+			"back_light_scale": 6.0,
+			"blend": true,
+			"global_rotation": [
+				-40.0,
+				300.0,
+				160.0
+			],
+			"local_rotation": [
+				0.0,
+				-45.0,
+				0.0
+			],
+			"movement_type": "TIME_OF_DAY_REVERSED",
+			"scale": 2.0,
+			"texture": "tfg:textures/block/rock/glauberite.png"
+		},
+		{
+			"back_light_color": -1714771,
 			"back_light_scale": 150.0,
 			"blend": false,
 			"global_rotation": [
@@ -41,16 +95,52 @@
 			],
 			"movement_type": "STATIC",
 			"scale": 50.0,
-			"texture": "ad_astra:textures/environment/vicinus.png"
+			"texture": "tfg:textures/gui/jupiter_planet.png"
 		}
 	],
 	"star_colors": [
 		{
-			"data": -1,
+			"data": -1447239681,
+			"weight": 3
+		},
+		{
+			"data": -1143472129,
+			"weight": 5
+		},
+		{
+			"data": -726785,
+			"weight": 100
+		},
+		{
+			"data": -3038977,
+			"weight": 80
+		},
+		{
+			"data": -7697665,
+			"weight": 150
+		},
+		{
+			"data": -12254977,
+			"weight": 10
+		},
+		{
+			"data": -2817,
+			"weight": 60
+		},
+		{
+			"data": -464897,
+			"weight": 40
+		},
+		{
+			"data": -256,
+			"weight": 20
+		},
+		{
+			"data": -65536,
 			"weight": 1
 		}
 	],
-	"stars": 1500,
-	"sunrise_angle": 0,
-	"sunrise_color": 14180147
+	"stars": 13000,
+	"sunrise_angle": 0.001,
+	"sunrise_color": 2367800
 }

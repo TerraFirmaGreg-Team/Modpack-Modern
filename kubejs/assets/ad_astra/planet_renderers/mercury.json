@@ -42,6 +42,114 @@
 			"movement_type": "TIME_OF_DAY",
 			"scale": 0.4,
 			"texture": "ad_astra:textures/environment/venus.png"
+		},
+		{
+			"back_light_color": -12813094,
+			"back_light_scale": 0.75,
+			"blend": true,
+			"global_rotation": [
+				-20.0,
+				0.0,
+				160.0
+			],
+			"local_rotation": [
+				0.0,
+				100.0,
+				0.0
+			],
+			"movement_type": "TIME_OF_DAY_REVERSED",
+			"scale": 0.25,
+			"texture": "ad_astra:textures/environment/earth.png"
+		},
+		{
+			"back_light_color": -1714771,
+			"back_light_scale": 0.6,
+			"blend": true,
+			"global_rotation": [
+				-40.0,
+				0.0,
+				160.0
+			],
+			"local_rotation": [
+				0.0,
+				45.0,
+				0.0
+			],
+			"movement_type": "TIME_OF_DAY_REVERSED",
+			"scale": 0.2,
+			"texture": "tfg:textures/gui/jupiter_planet.png"
+		},
+		{
+			"back_light_color": 11588853,
+			"back_light_scale": 0.12,
+			"blend": true,
+			"global_rotation": [
+				-38.8,
+				0.0,
+				160.7
+			],
+			"local_rotation": [
+				0.0,
+				-8.0,
+				0.0
+			],
+			"movement_type": "TIME_OF_DAY_REVERSED",
+			"scale": 0.04,
+			"texture": "ad_astra:textures/environment/glacio.png"
+		},
+		{
+			"back_light_color": -1714771,
+			"back_light_scale": 0.15,
+			"blend": true,
+			"global_rotation": [
+				-39.1,
+				0.2,
+				160.4
+			],
+			"local_rotation": [
+				0.0,
+				-12.0,
+				0.0
+			],
+			"movement_type": "TIME_OF_DAY_REVERSED",
+			"scale": 0.05,
+			"texture": "ad_astra:textures/block/moon_stone.png"
+		},
+		{
+			"back_light_color": 12233686,
+			"back_light_scale": 0.15,
+			"blend": true,
+			"global_rotation": [
+				-40.9,
+				0.4,
+				159.1
+			],
+			"local_rotation": [
+				0.0,
+				45.0,
+				0.0
+			],
+			"movement_type": "TIME_OF_DAY_REVERSED",
+			"scale": 0.045,
+			"texture": "ad_astra:textures/block/moon_deepslate.png"
+		},
+		{
+			"back_light_color": 15129641,
+			"back_light_scale": 0.12,
+			"blend": true,
+			"global_rotation": [
+				-41.5,
+				-0.6,
+				159.4
+			],
+			"local_rotation": [
+				0.0,
+				20.0,
+				0.0
+			],
+			"movement_type": "TIME_OF_DAY_REVERSED",
+			"scale": 0.045,
+			"texture": "tfg:textures/block/rock/glauberite.png"
 		}
 	],
 	"star_brightness": 0.6,
