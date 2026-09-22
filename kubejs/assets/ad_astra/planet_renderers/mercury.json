@@ -2,14 +2,14 @@
 	"custom_clouds": true,
 	"custom_sky": true,
 	"custom_weather": false,
-	"dimension": "ad_astra:mars",
+	"dimension": "ad_astra:mercury",
 	"has_fog": true,
 	"has_thick_fog": false,
-	"render_in_rain": false,
+	"render_in_rain": true,
 	"sky_renderables": [
 		{
-			"back_light_color": -3081481,
-			"back_light_scale": 21.0,
+			"back_light_color": -750495,
+			"back_light_scale": 66.0,
 			"blend": false,
 			"global_rotation": [
 				0.0,
@@ -22,53 +22,17 @@
 				0.0
 			],
 			"movement_type": "TIME_OF_DAY",
-			"scale": 7.0,
-			"texture": "ad_astra:textures/environment/blue_sun.png"
+			"scale": 22.0,
+			"texture": "ad_astra:textures/environment/red_sun.png"
 		},
 		{
-			"back_light_color": -4943731,
-			"back_light_scale": 6.0,
-			"blend": true,
-			"global_rotation": [
-				20.0,
-				20.0,
-				180.0
-			],
-			"local_rotation": [
-				0.0,
-				0.0,
-				0.0
-			],
-			"movement_type": "TIME_OF_DAY_REVERSED",
-			"scale": 2.0,
-			"texture": "ad_astra:textures/environment/phobos.png"
-		},
-		{
-			"back_light_color": -1714771,
-			"back_light_scale": 4.5,
-			"blend": true,
-			"global_rotation": [
-				0.0,
-				0.0,
-				180.0
-			],
-			"local_rotation": [
-				0.0,
-				20.0,
-				0.0
-			],
-			"movement_type": "TIME_OF_DAY",
-			"scale": 1.5,
-			"texture": "ad_astra:textures/environment/deimos.png"
-		},
-		{
-			"back_light_color": -12813094,
+			"back_light_color": -801674,
 			"back_light_scale": 1.2,
 			"blend": true,
 			"global_rotation": [
-				-40.0,
+				-15.0,
 				0.0,
-				160.0
+				140.0
 			],
 			"local_rotation": [
 				0.0,
@@ -77,9 +41,10 @@
 			],
 			"movement_type": "TIME_OF_DAY",
 			"scale": 0.4,
-			"texture": "ad_astra:textures/environment/earth.png"
+			"texture": "ad_astra:textures/environment/venus.png"
 		}
 	],
+	"star_brightness": 0.6,
 	"star_colors": [
 		{
 			"data": -1447239681,
@@ -122,7 +87,7 @@
 			"weight": 1
 		}
 	],
-	"stars": 1500,
+	"stars": 9000,
 	"sunrise_angle": 0,
-	"sunrise_color": 2079743
+	"sunrise_color": 14039563
 }
