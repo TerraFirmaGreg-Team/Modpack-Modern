@@ -180,5 +180,9 @@
                 "tfc:game_mechanics/mob_effects"
             ]
         }
-	]
+	],
+    "extra_recipe_mappings": {
+        "tag:gtceu:ppe_armor": 0,
+        "tag:tfg:medicine": 0
+    }
 }

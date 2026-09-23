@@ -13,7 +13,7 @@
             "type": "patchouli:spotlight",
             "item": "tfc:compost",
             "link_recipes": false,
-            "text": "Compost is the product of the $(l:agriculture/composter)Composter$(). $(br)$(li)$(b)Nitrogen: 40$()$(li)$(6)Phosphorous: 20$()$(li)$(d)Potassium: 40$()"
+            "text": "Compost is the product of the $(l:agriculture/composting)Composter$(). $(br)$(li)$(b)Nitrogen: 40$()$(li)$(6)Phosphorous: 20$()$(li)$(d)Potassium: 40$()"
         },
         {
             "type": "patchouli:spotlight",
