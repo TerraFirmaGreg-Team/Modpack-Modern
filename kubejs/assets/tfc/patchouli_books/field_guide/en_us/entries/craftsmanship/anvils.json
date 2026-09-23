@@ -226,7 +226,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "You also need to have at least one $(item)Flux$() in the anvil to aid the welding process. Then, while both items are $(l:mechanics/heating)hot enough$() to weld (the tooltip will say \"Can Weld\") you must use any $(thing)hammer$() on the anvil or press the weld button on the anvil interface. You will hear a hammering sound and the items will be welded together."
+            "text": "You also need to have at least one $(item)Flux$() in the anvil to aid the welding process. Then, while both items are $(l:game_mechanics/heating)hot enough$() to weld (the tooltip will say \"Can Weld\") you must use any $(thing)hammer$() on the anvil or press the weld button on the anvil interface. You will hear a hammering sound and the items will be welded together."
         },
         {
             "type": "patchouli:spotlight",
@@ -306,7 +306,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "Your last three actions are shown right underneath the rules. When a rule is satisfied, its outline will change to green. Success occurs when all rules are satisfied.$(br2)Finally, you have to be mindful of your item's $(l:mechanics/heating)temperature$(). Metals can only be worked when they are above a certain temperature where the tooltip shows \"Can Work\". You may take an item out and re-heat it during the working process."
+            "text": "Your last three actions are shown right underneath the rules. When a rule is satisfied, its outline will change to green. Success occurs when all rules are satisfied.$(br2)Finally, you have to be mindful of your item's $(l:game_mechanics/heating)temperature$(). Metals can only be worked when they are above a certain temperature where the tooltip shows \"Can Work\". You may take an item out and re-heat it during the working process."
         },
         {
             "type": "patchouli:text",

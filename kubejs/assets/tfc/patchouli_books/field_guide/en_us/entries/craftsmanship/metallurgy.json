@@ -39,7 +39,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "These indicator pieces can serve two purposes: They can provide a source of metal, and more importantly, they indicate the presence of a larger vein of ore somewhere below them. Be sure to note where indicators are on your map so you may return to excavate the vein later.$(br2)⚠ Be careful when picking up mineral dusts as some of them may be $(l:tfg_ores/hazards)Hazardous$(), like Cobaltite or Galena for example."
+            "text": "These indicator pieces can serve two purposes: They can provide a source of metal, and more importantly, they indicate the presence of a larger vein of ore somewhere below them. Be sure to note where indicators are on your map so you may return to excavate the vein later.$(br2)⚠ Be careful when picking up mineral dusts as some of them may be $(l:game_mechanics/hazards)Hazardous$(), like Cobaltite or Galena for example."
         },
         {
             "type": "patchouli:text",

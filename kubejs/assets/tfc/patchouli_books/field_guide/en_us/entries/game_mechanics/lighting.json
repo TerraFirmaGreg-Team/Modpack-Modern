@@ -1,0 +1,165 @@
+{
+    "name": "Light Sources",
+    "category": "tfc:game_mechanics",
+    "sortnum": 6,
+    "icon": "tfc:candle",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(li)$(bold)$(l:game_mechanics/lighting#torches)Torches$()$(li)$(bold)$(l:game_mechanics/lighting#candles)Candles$()$(li)$(bold)$(l:game_mechanics/lighting#jack_o_lanterns)Jack 'o Lanterns$()$(li)$(bold)$(l:game_mechanics/lighting#lamps)Lamps$()$(li)$(bold)$(l:game_mechanics/lighting#permanent_light)Permanent Light$()",
+            "title": "Index",
+            "anchor": "index"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "intro",
+            "title": "Introduction",
+            "text": "There are a number of ways to produce light in TFC. However, nearly all light sources do not last forever!$(br)Unlike vanilla Minecraft, you will need to keep an eye on your lights to re-ignite them when they burn out. The higher quality the light source is, the longer it will last.$(br)Permanent lightsources aren't available until much later, unless you get creative."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "torches",
+            "title": "Torches",
+            "item": "tfc:torch,tfc:dead_torch",
+            "text": "Torches can be made by heating sticks or stick bunches in a $(l:craftsmanship/firepit)Firepit$() or other heating device.$(br)Torches last for 3 days, and then become $(thing)Dead Torches$(), which may be relit by clicking them with a torch, or by using a fire starting tool on them. Sticks can also be clicked on torches to light them. Torches dropped in water turn into $(thing)Wood Ash$() or $(thing)Sticks$()."
+        },
+        {
+            "type": "tfc:multimultiblock",
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:torch"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:dead_torch"
+                    }
+                }
+            ],
+            "name": "",
+            "text": "Torches may be tossed on log piles or $(l:craftsmanship/pit_kiln)Pit Kilns$() to ignite them.",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "candles",
+            "title": "Candles",
+            "item": "tag:tfc:candles",
+            "text": "Candles are made from $(thing)Wax$() or $(thing)Tallow$() and last for 11 days before needing to be relit.$(br)Candles may be placed and lit on the ground or in $(l:cooking/jam#jarbnet)Jarbnets$(). The amount of candles placed effects the light-level they emit."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "#tfc:candles[candles=1,lit=true]"
+                }
+            },
+            "text": "Candles can be $(thing)dyed$() into all 16 colors!.",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "jack_o_lanterns",
+            "title": "Jack 'o Lanterns",
+            "item": "tag:tfg:carved_pumpkins,tag:tfg:carved_pumpkins/lit",
+            "text": "Jack 'o Lanterns are the lit version of $(thing)Carved Pumpkins$(), and last for 4.5 days, before reverting to carved pumpkins.$(br)Pumpkins are carved by holding them in hand and $(l:craftsmanship/sticks_and_stones)Knapping$()."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "#tfg:carved_pumpkins/lit"
+                }
+            },
+            "name": "",
+            "text": "There are many fun designs of Jack 'o Lanterns to choose from!",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "lamps",
+            "title": "Lamps",
+            "item": "tag:tfc:lamps",
+            "text": "Lamps are a long term source of light that burn liquid fuels. Lamps retain their fuel content when broken. You can fuel lamps automatically with $(thing)Pipes$() or manually with $(l:cooking/drinking_containers)Fluid Containers$().$(br)You can check capable lamp fuels in $(d)E$(a)M$(b)I$() by viewing a lamp. $(thing)Lava$() will burn forever but must be in a $(item)Blue Steel Lamp$(). $(thing)Liquid Glowstone$() is the same, but works in any lamp."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "Y"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "Y": "#tfc:lamps[hanging=true,lit=true]"
+                }
+            },
+            "text": "Lamps can hang from blocks. $(thing)Chains$() and $(thing)Pipes$() are particularly nice choices.",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "permanent_light",
+            "title": "Permanent Light",
+            "item": "minecraft:glowstone",
+            "text": "By the time you make an $(item)Extractor$() and $(item)Fluid Solidifier$() you can begin producing a variety of decorative permanent light sources with $(thing)Liquid Glowstone$() and $(thing)Glowstone Blocks$().$(br)Besides advancing in tech, there are some creative ways to light up an area. Such as $(l:agriculture/aqueducts)Lava Aqueducts$()."
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Further Reading",
+            "anchor": "relations",
+            "entries": [
+                "tfc:craftsmanship/sticks_and_stones",
+                "tfc:craftsmanship/barrels",
+                "tfc:craftsmanship/firepit",
+                "tfc:craftsmanship/building_materials",
+                "tfc:cooking/jam",
+                "tfc:agriculture/aqueducts"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "extra_recipe_mappings": {
+        "tag:tfc:candles": 4,
+        "tag:tfg:carved_pumpkins": 6,
+        "tag:tfg:carved_pumpkins/lit": 6,
+        "tag:tfc:lamps": 8,
+        "minecraft:glowstone": 10
+    }
+}

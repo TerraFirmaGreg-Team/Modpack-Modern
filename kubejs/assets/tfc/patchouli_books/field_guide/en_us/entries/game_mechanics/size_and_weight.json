@@ -11,7 +11,7 @@
         {
             "type": "patchouli:text",
             "anchor": "size",
-            "text": "Size determines what $(l:logistics/storage)Storage$() blocks an item can fit inside.$(br)$(li)$(thing)Tiny$() items fit in anything.$(li)$(thing)Very Small$() items fit in anything.$(li)$(thing)Small$() items are the largest item that will fit in $(l:cooking/decay#small_vessels)Small Vessels$()$().$(li)$(thing)Normal$() items are the largest that will fit in $(l:cooking/decay#small_vessels)Large Vessels$().",
+            "text": "Size determines what $(l:logistics/storage)Storage$() blocks an item can fit inside.$(br)$(li)$(thing)Tiny$() items fit in anything.$(li)$(thing)Very Small$() items fit in anything.$(li)$(thing)Small$() items are the largest item that will fit in $(l:craftsmanship/pottery)Small Vessels$()$().$(li)$(thing)Normal$() items are the largest that will fit in $(l:craftsmanship/pottery)Large Vessels$().",
             "title": "Size ⇲"
         },
         {

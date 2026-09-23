@@ -54,7 +54,7 @@
         {
             "type": "patchouli:text",
             "anchor": "vessel",
-            "text": "The small vessel is one such item. Like all pottery items, it must be $(l:https://en.wikipedia.org/wiki/Pottery)fired$() before it can be used. Firing is a process of $(l:mechanics/heating)heating$() the item up to a point where the clay will turn into a hard $(thing)Ceramic$() material, which requires heating to 1400 °C, or $(e)$(bold)$(t:Yellow White)Yellow White$().$(br2)In order to do this in the early game, you will need to use a $(l:craftsmanship/pit_kiln)Pit Kiln$().",
+            "text": "The small vessel is one such item. Like all pottery items, it must be $(l:https://en.wikipedia.org/wiki/Pottery)fired$() before it can be used. Firing is a process of $(l:game_mechanics/heating)heating$() the item up to a point where the clay will turn into a hard $(thing)Ceramic$() material, which requires heating to 1400 °C, or $(e)$(bold)$(t:Yellow White)Yellow White$().$(br2)In order to do this in the early game, you will need to use a $(l:craftsmanship/pit_kiln)Pit Kiln$().",
             "title": "Small Vessel"
         },
         {
@@ -83,7 +83,7 @@
         {
             "type": "tfc:heat_recipe",
             "recipe": "tfc:heating/ingot_mold",
-            "text": "The mold then needs to be fired―like all clay items―to be usable. Likely in a $(l:getting_started/pit_kiln)Pit Kiln$().$(br2)Once it is fired, molten metal can be poured in. Once the metal has cooled enough, it can be extracted."
+            "text": "The mold then needs to be fired―like all clay items―to be usable. Likely in a $(l:craftsmanship/pit_kiln)Pit Kiln$().$(br2)Once it is fired, molten metal can be poured in. Once the metal has cooled enough, it can be extracted."
         },
         {
             "type": "patchouli:spotlight",
@@ -198,7 +198,7 @@
         {
             "type": "tfc:knapping_recipe",
             "recipe": "tfc:fire_clay_knapping/fire_ingot_mold",
-            "text": "$(thing)Fire Ingot Molds$() are a stronger type of $(l:getting_started/pottery#mold)Ingot Mold$() that has just a 1 in 100 chance of breaking, compared to 1 in 10 for a regular ingot mold."
+            "text": "$(thing)Fire Ingot Molds$() are a stronger type of $(l:craftsmanship/pottery#mold)Ingot Mold$() that has just a 1 in 100 chance of breaking, compared to 1 in 10 for a regular ingot mold."
         },
         {
             "type": "patchouli:relations",

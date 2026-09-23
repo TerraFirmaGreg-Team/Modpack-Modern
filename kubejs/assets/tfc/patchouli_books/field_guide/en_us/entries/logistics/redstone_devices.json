@@ -5,7 +5,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "$(li)$(bold)$(l:logistics/redstone_devices#clock)Precision Clock$()$(li)$(bold)$(l:logistics/redstone_devices#thermometer)Thermometer$()$(li)$(bold)$(l:logistics/redstone_devices#anemometer)Anemometer$()$(li)$(bold)$(l:logistics/redstone_devices#vane)Weather Vane$()$(li)$(bold)$(l:logistics/redstone_devices#morered)Other Devices$()$(li2)$(l:logistics/redstone_devices#more_comparators)More Comparators$()$(li2)$(l:logistics/redstone_devices#pulse_timer)Pulse Timer$()$(li2)$(l:logistics/redstone_devices#pulse_generator)Sequenced Pulse Generator$()$(li2)$(l:logistics/redstone_devices#analog_lever)Analog Lever$()$(li)$(bold)$(l:logistics/redstone_devices#stockpile_switch)Threshold Switch$()$(li)$(bold)$(l:logistics/redstone_devices#smart_observer)Smart Observer$()$(li)$(bold)$(l:logistics/redstone_devices#link)Wireless Redstone$()$(li)$(bold)$(l:logistics/redstone_devices#cover)Machine Covers$()"
+			"text": "$(li)$(bold)$(l:logistics/redstone_devices#clock)Precision Clock$()$(li)$(bold)$(l:logistics/redstone_devices#thermometer)Thermometer$()$(li)$(bold)$(l:logistics/redstone_devices#anemometer)Anemometer$()$(li)$(bold)$(l:logistics/redstone_devices#vane)Weather Vane$()$(li)$(bold)$(l:logistics/redstone_devices#morered)Other Devices$()$(li2)$(l:logistics/redstone_devices#more_comparators)More Comparators$()$(li2)$(l:logistics/redstone_devices#pulse_timer)Pulse Timer$()$(li2)$(l:logistics/redstone_devices#pulse_generator)Sequenced Pulse Generator$()$(li2)$(l:logistics/redstone_devices#analog_lever)Analog Lever$()$(li)$(bold)$(l:logistics/redstone_devices#threshold_switch)Threshold Switch$()$(li)$(bold)$(l:logistics/redstone_devices#smart_observer)Smart Observer$()$(li)$(bold)$(l:logistics/redstone_devices#link)Wireless Redstone$()$(li)$(bold)$(l:logistics/redstone_devices#cover)Machine Covers$()"
 		},
 		{
 			"type": "patchouli:image",
@@ -71,14 +71,14 @@
 			"anchor": "morered",
 			"item": "morered:red_alloy_wire,morered:bundled_network_cable",
 			"title": "More Redstone",
-			"text": "Want to do more with redstone? Check out what the $(item)More Red$() mod has to offer, such as a wire that attaches to walls and ceilings and doesn't lose signal strength.$(br2)Type $(thing)@morered$() into $(d)E$(a)M$(b)I$() to see them all."
+			"text": "Want to do more with redstone? Check out what the $(item)More Red$() mod has to offer, such as a wire that attaches to walls and ceilings and doesn't lose signal strength.$(br2)Type $(6)@morered$() into $(d)E$(a)M$(b)I$() to see them all."
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "tag:morered:redstone_devices",
 			"anchor": "more_comparators",
 			"title": "Gates and Latches",
-			"text": "There's many other kinds of blocks that can control redstone. Most of them can be crafted by $(thing)stonecutting$() a $(item)Comparator$(), and can then be stonecut themselves, so you won't have to make lots of different devices to experiment."
+			"text": "There are many other kinds of blocks that can control redstone. Most of them can be crafted by $(thing)stonecutting$() a $(item)Comparator$(), and can then be stonecut themselves, so you won't have to make lots of different devices to experiment."
 		},
 		{
 			"type": "patchouli:crafting",

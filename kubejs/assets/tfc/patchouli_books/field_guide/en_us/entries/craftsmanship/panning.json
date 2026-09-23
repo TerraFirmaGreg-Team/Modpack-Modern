@@ -17,7 +17,7 @@
         {
             "type": "tfc:heat_recipe",
             "recipe": "tfc:heating/ceramic_pan",
-            "text": "Once the pan has been $(thing)knapped$(), it needs to be $(l:mechanics/heating)fired$() to create a $(thing)Ceramic Pan$().$(br2)The next thing you will need to find is some sort of $(t:#tfc:ore_deposits)$(6)Ore Deposit$(). Ore deposits can come in several different ores: Native Copper, Native Silver, Native Gold, and Cassiterite."
+            "text": "Once the pan has been $(thing)knapped$(), it needs to be $(l:game_mechanics/heating)fired$() to create a $(thing)Ceramic Pan$().$(br2)The next thing you will need to find is some sort of $(t:#tfc:ore_deposits)$(6)Ore Deposit$(). Ore deposits can come in several different ores: Native Copper, Native Silver, Native Gold, and Cassiterite."
         },
         {
             "type": "patchouli:multiblock",

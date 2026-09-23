@@ -55,7 +55,7 @@
             "type": "patchouli:text",
             "title": "Quenching",
             "anchor": "quenching",
-            "text": "Barrels have the ability to cool $(l:mechanics/heating)hot$() items. Put a hot item in a barrel of $(thing)Water$(), $(thing)Cooking Oil$(), or $(thing)Ice Slush$(), and it will quickly bring its temperature down.$(br)You can even directly throw items into the barrel with $(item)$(k:key.drop)$()."
+            "text": "Barrels have the ability to cool $(l:game_mechanics/heating)hot$() items. Put a hot item in a barrel of $(thing)Water$(), $(thing)Cooking Oil$(), or $(thing)Ice Slush$(), and it will quickly bring its temperature down.$(br)You can even directly throw items into the barrel with $(item)$(k:key.drop)$()."
         },
         {
             "type": "patchouli:text",

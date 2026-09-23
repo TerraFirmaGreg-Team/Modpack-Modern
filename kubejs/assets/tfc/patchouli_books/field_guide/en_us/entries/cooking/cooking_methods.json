@@ -44,7 +44,7 @@
             "type": "patchouli:text",
             "anchor": "grill",
             "title": "Grill",
-            "text": "A $(thing)Grill$() is an item that can be added to a $(item)Firepit$() or $(item)Oven$() to cook foods more efficiently. The grill is able to cook five items at once, and also gives these items the $(thing)Wood Grilled$() trait when cooking food, which provides a minor buff to the item's $(l:mechanics/decay)expiration date$(). In order to create a firepit with grill, first create a $(l:getting_started/firepit)Firepit$(), then use a $(thing)Wrought Iron Grill$() on the firepit."
+            "text": "A $(thing)Grill$() is an item that can be added to a $(item)Firepit$() or $(item)Oven$() to cook foods more efficiently. The grill is able to cook five items at once, and also gives these items the $(thing)Wood Grilled$() trait when cooking food, which provides a minor buff to the item's $(l:mechanics/decay)expiration date$(). In order to create a firepit with grill, first create a $(l:craftsmanship/firepit)Firepit$(), then use a $(thing)Wrought Iron Grill$() on the firepit."
         },
         {
             "type": "patchouli:multiblock",
@@ -69,7 +69,7 @@
             "type": "patchouli:text",
             "title": "Cooking Pot",
             "anchor": "pot",
-            "text": "A $(thing)Pot$() is an item that can be added to the $(item)Firepit$() or $(item)Oven$() to cook new types of food and also produce some other useful items.$(br2)In order to create a firepit with a pot, first create a $(l:getting_started/firepit)Firepit$(), then use a $(thing)Ceramic Pot$() on the firepit."
+            "text": "A $(thing)Pot$() is an item that can be added to the $(item)Firepit$() or $(item)Oven$() to cook new types of food and also produce some other useful items.$(br2)In order to create a firepit with a pot, first create a $(l:craftsmanship/firepit)Firepit$(), then use a $(thing)Ceramic Pot$() on the firepit."
         },
         {
             "type": "patchouli:multiblock",

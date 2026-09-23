@@ -308,7 +308,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "If the metal is hot when added into the blast furnace, it will take less time to reach brilliant white. Consider heating your metal in a $(l:mechanics/charcoal_forge)Charcoal Forge$() before putting it into an already-hot furnace to save time, especially with smaller blast furnaces that process less at a time."
+            "text": "If the metal is hot when added into the blast furnace, it will take less time to reach brilliant white. Consider heating your metal in a $(l:craftsmanship/charcoal_forge)Charcoal Forge$() before putting it into an already-hot furnace to save time, especially with smaller blast furnaces that process less at a time."
         },
         {
             "type": "patchouli:spotlight",

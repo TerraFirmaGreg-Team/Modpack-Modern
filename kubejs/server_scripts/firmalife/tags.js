@@ -24,6 +24,28 @@ const registerFirmaLifeItemTags = (event) => {
     event.add('tfg:oven_tops', 'firmalife:cured_stone_oven_top')
 
     event.add('firmalife:cellar_insulation', 'firmalife:stone_countertop')
+
+    /**
+     * @type {{String[]}}
+     */
+    const pumpkinCarvings = [
+        'none',
+        'circle',
+        'creeper',
+        'axe',
+        'hammer',
+        'pickaxe',
+        'left',
+        'right'
+    ];
+
+    pumpkinCarvings.forEach(carving => {
+        event.add('tfg:carved_pumpkins', `firmalife:carved_pumpkin/${carving}`);
+        event.add('tfg:carved_pumpkins/lit', `firmalife:lit_pumpkin/${carving}`);
+    });
+
+    event.add('tfg:carved_pumpkins', 'minecraft:carved_pumpkin');
+    event.add('tfg:carved_pumpkins/lit', 'tfc:jack_o_lantern');
 }
 
 const registerFirmaLifeBlockTags = (event) => {
@@ -73,6 +95,28 @@ const registerFirmaLifeBlockTags = (event) => {
     // this countertop can only be made from sealed bricks
     event.add('firmalife:cellar_insulation', 'firmalife:stone_countertop')
     event.add('tfc:forge_insulation', 'firmalife:stone_countertop')
+
+    /**
+     * @type {{String[]}}
+     */
+    const pumpkinCarvings = [
+        'none',
+        'circle',
+        'creeper',
+        'axe',
+        'hammer',
+        'pickaxe',
+        'left',
+        'right'
+    ];
+
+    pumpkinCarvings.forEach(carving => {
+        event.add('tfg:carved_pumpkins', `firmalife:carved_pumpkin/${carving}`);
+        event.add('tfg:carved_pumpkins/lit', `firmalife:lit_pumpkin/${carving}`);
+    });
+
+    event.add('tfg:carved_pumpkins', 'minecraft:carved_pumpkin');
+    event.add('tfg:carved_pumpkins/lit', 'tfc:jack_o_lantern');
 }
 
 const registerFirmaLifeFluidTags = (event) => {

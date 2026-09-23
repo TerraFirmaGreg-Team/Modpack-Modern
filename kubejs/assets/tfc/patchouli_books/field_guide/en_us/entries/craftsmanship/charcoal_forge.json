@@ -6,7 +6,7 @@
         {
             "type": "patchouli:text",
             "anchor": "charcoal_forge",
-            "text": "The $(thing)Charcoal Forge$() is a device used to $(l:mechanics/heating)heat$() and melt items like metals, pottery, and bricks.$(br)Forges are necessary to make a $(l:craftsmanship/crucible)Crucible$() work.$(br)It is constructed with 5 $(thing)stone$() blocks―like cobblestone, raw stone, or bricks―surrounding a $(l:craftsmanship/charcoal_pit#charcoal_pile)Charcoal Pile$() of 7 or 8 layers which is then lit."
+            "text": "The $(thing)Charcoal Forge$() is a device used to $(l:game_mechanics/heating)heat$() and melt items like metals, pottery, and bricks.$(br)Forges are necessary to make a $(l:craftsmanship/crucible)Crucible$() work.$(br)It is constructed with 5 $(thing)stone$() blocks―like cobblestone, raw stone, or bricks―surrounding a $(l:craftsmanship/charcoal_pit#charcoal_pile)Charcoal Pile$() of 7 or 8 layers which is then lit."
         },
         {
             "type": "patchouli:multiblock",

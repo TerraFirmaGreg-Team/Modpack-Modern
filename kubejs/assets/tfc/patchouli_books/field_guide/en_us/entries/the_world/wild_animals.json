@@ -607,7 +607,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "large_aquatic_animals",
-			"text": "$(thing)Large Water Creatures$() are larger animals that live in the bigger bodies of water. Some of them hunt fish. They drop $(l:mechanics/lamps#tallow)blubber$(), which can be made into lamp fuel.",
+			"text": "$(thing)Large Water Creatures$() are larger animals that live in the bigger bodies of water. Some of them hunt fish. They drop $(l:game_mechanics/lighting#tallow)blubber$(), which can be made into lamp fuel.",
 			"title": "Large Aquatic Animals"
 		},
 		{

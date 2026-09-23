@@ -11,7 +11,7 @@
             "type": "tfc:knapping_recipe",
             "recipe": "tfc:clay_knapping/spindle_head",
             "anchor": "spindle",
-            "text": "The $(thing)Unfired Spindle Head$() is knapped from clay. It can then be $(l:mechanics/heating)fired$() to make a $(thing)Spindle Head$(). To complete the spindle, craft it with a $(thing)Stick$(). Spindles can also be made from $(l:craftsmanship/metallurgy)Metal$()."
+            "text": "The $(thing)Unfired Spindle Head$() is knapped from clay. It can then be $(l:game_mechanics/heating)fired$() to make a $(thing)Spindle Head$(). To complete the spindle, craft it with a $(thing)Stick$(). Spindles can also be made from $(l:craftsmanship/metallurgy)Metal$()."
         },
         {
             "type": "patchouli:crafting",

@@ -66,7 +66,7 @@
             "item": {
                 "tag": "tfg:drinking_vessels"
             },
-            "text": "$(l:getting_started/pottery)Knapping$() and firing a $(l:getting_started/pottery#jug)jug$() is an early way to carry water with you. Fill it like a bucket with $(item)$(k:key.use)$(). Holding $(item)$(k:key.use)$() drinks the water.$(br2)You can also drink out of other $(l:cooking/drinking_containers)Containers$() such as $(item)Flasks$() or $(l:craftsmanship/glassworking)Glass Bottles$()."
+            "text": "$(l:craftsmanship/pottery)Knapping$() and firing a $(l:craftsmanship/pottery#jug)jug$() is an early way to carry water with you. Fill it like a bucket with $(item)$(k:key.use)$(). Holding $(item)$(k:key.use)$() drinks the water.$(br2)You can also drink out of other $(l:cooking/drinking_containers)Containers$() such as $(item)Flasks$() or $(l:craftsmanship/glassworking)Glass Bottles$()."
         },
         {
             "type": "patchouli:text",
@@ -99,11 +99,11 @@
         {
             "type": "patchouli:text",
             "anchor": "average_nutrients",
-            "text": "The total value of your nutrients determines your maximum HP. At max value you can achieve $(l)$(c)30 hearts$()$(). While the lowest is $(l)$(c)3 hearts$()$().$(br)Your average nutrients also effect the following:$()$(li)$(bold)Average >55% ↴$()$()$(italic)$(li2)Increase passive health regen by 50%.$()$()$(italic)$(li2)Decreases $(l:tfg_ores/hazards#medicine)Medical Condition$() progression rate by 25%.$()$()$(italic)$(li2)Increase medical condition passive healing rate by 50%.$()$()"
+            "text": "The total value of your nutrients determines your maximum HP. At max value you can achieve $(l)$(c)30 hearts$()$(). While the lowest is $(l)$(c)3 hearts$()$().$(br)Your average nutrients also effect the following:$()$(li)$(bold)Average >55% ↴$()$()$(italic)$(li2)Increase passive health regen by 50%.$()$()$(italic)$(li2)Decreases $(l:game_mechanics/hazards#medicine)Medical Condition$() progression rate by 25%.$()$()$(italic)$(li2)Increase medical condition passive healing rate by 50%.$()$()"
         },
         {
             "type": "patchouli:text",
-            "text": "$(li)$(bold)Average >85% ↴$()$()$(italic)$(li2)Increase passive health regen by 100%.$()$()$(italic)$(li2)Decreases $(l:tfg_ores/hazards#medicine)Medical Condition$() progression rate by 50%.$()$()$(italic)$(li2)Increase medical condition passive healing rate by 100%.$()$()"
+            "text": "$(li)$(bold)Average >85% ↴$()$()$(italic)$(li2)Increase passive health regen by 100%.$()$()$(italic)$(li2)Decreases $(l:game_mechanics/hazards#medicine)Medical Condition$() progression rate by 50%.$()$()$(italic)$(li2)Increase medical condition passive healing rate by 100%.$()$()"
         },
         {
             "title": "Fruit",
@@ -133,7 +133,7 @@
             "title": "Dairy",
             "type": "patchouli:text",
             "anchor": "dairy",
-            "text": "$(l)$(5)Dairy$()$() comes from $(thing)Milk$(), which is derived from $(l:mechanics/animal_husbandry#dairy_animals)Dairy Animals$(). Processing and drinking milk is covered on the $(l:firmalife/cheese)Dairy$() page.$(br2)Increasing your dairy value gives the following effects:$()$(li)$(bold)Value >55% → $()$()$(italic)Gives the $(thing)Feather Falling I$() effect.$()$(li)$(bold)Value >85% → $()$()$(italic)Gives the $(thing)Feather Falling IV$() effect.$()"
+            "text": "$(l)$(5)Dairy$()$() comes from $(thing)Milk$(), which is derived from $(l:agriculture/animal_husbandry#dairy_animals)Dairy Animals$(). Processing and drinking milk is covered on the $(l:firmalife/cheese)Dairy$() page.$(br2)Increasing your dairy value gives the following effects:$()$(li)$(bold)Value >55% → $()$()$(italic)Gives the $(thing)Feather Falling I$() effect.$()$(li)$(bold)Value >85% → $()$()$(italic)Gives the $(thing)Feather Falling IV$() effect.$()"
         },
         {
             "type": "patchouli:text",
@@ -145,19 +145,19 @@
             "title": "Toxins",
             "type": "patchouli:text",
             "anchor": "toxins",
-            "text": "$(l)$(d)Toxins$()$() come from specifically dangerous crops and meats. Toxins decrease naturally at a rate of 3%/day. Consume $(item)Detox Capsules$() to actively $(l:tfg_tips/mob_effects_glossary#cure_toxins)Cure Toxins$().$(br2)Increasing your toxins value gives the following effects:$()$(li)$(bold)Value >0% → $()$()$(italic)On any new increase: 25% chance to get a random hazardous effect for 10sec.$()$(li)$(bold)Value >99% → $()$()$(italic)$(l:tfg_tips/mob_effects_glossary#final_moments)Death.$()"
+            "text": "$(l)$(d)Toxins$()$() come from specifically dangerous crops and meats. Toxins decrease naturally at a rate of 3%/day. Consume $(item)Detox Capsules$() to actively $(l:game_mechanics/mob_effects#cure_toxins)Cure Toxins$().$(br2)Increasing your toxins value gives the following effects:$()$(li)$(bold)Value >0% → $()$()$(italic)On any new increase: 25% chance to get a random hazardous effect for 10sec.$()$(li)$(bold)Value >99% → $()$()$(italic)$(l:game_mechanics/mob_effects#final_moments)Death.$()"
         },
         {
             "title": "Parasites",
             "type": "patchouli:text",
             "anchor": "parasites",
-            "text": "$(l)$(4)Parasites$()$() come from eating certain raw meats or drinking muddy water. Consume $(item)Parasiticide Capsules$() to actively $(l:tfg_tips/mob_effects_glossary#cure_parasites)Cure Parasites$().$(br2)Increasing your parasites value gives the following effects:$()$(li)$(bold)Value >10% → $()$()$(italic)20% chance to increase by 10% each day to a max of 60%.$()$(li)$(bold)Value >33% → $()$()$(italic)Increases passive exhaustion by 25%.$()$(li)$(bold)Value >66% → $()$()$(italic)Increases passive exhaustion by 50%.$()"
+            "text": "$(l)$(4)Parasites$()$() come from eating certain raw meats or drinking muddy water. Consume $(item)Parasiticide Capsules$() to actively $(l:game_mechanics/mob_effects#cure_parasites)Cure Parasites$().$(br2)Increasing your parasites value gives the following effects:$()$(li)$(bold)Value >10% → $()$()$(italic)20% chance to increase by 10% each day to a max of 60%.$()$(li)$(bold)Value >33% → $()$()$(italic)Increases passive exhaustion by 25%.$()$(li)$(bold)Value >66% → $()$()$(italic)Increases passive exhaustion by 50%.$()"
         },
         {
             "title": "Microplastics",
             "type": "patchouli:text",
             "anchor": "microplastics",
-            "text": "$(l)$(3)Microplastics$()$() come from consuming food packaged in plastic. Microplastics decrease naturally at a rate of 1%/day. Consume $(item)Nanofiltration Capsules$() to actively $(l:tfg_tips/mob_effects_glossary#cure_microplastics)Cure Microplastics$().$(br)Increasing your microplastics value gives the following effects:$()$(li)$(bold)Value >33% → $()$()$(italic)Increase high-temp thirst decay multiplier by 25%$()$(li)$(bold)Value >66% ↴$()$()$(italic)$(li2)Increase high-temp thirst decay multiplier by 50%.$()$()$(italic)$(li2)On any new increase: 5% chance to get $(l:tfg_ores/hazards#Carcinogens)Cancer$().$()$()"
+            "text": "$(l)$(3)Microplastics$()$() come from consuming food packaged in plastic. Microplastics decrease naturally at a rate of 1%/day. Consume $(item)Nanofiltration Capsules$() to actively $(l:game_mechanics/mob_effects#cure_microplastics)Cure Microplastics$().$(br)Increasing your microplastics value gives the following effects:$()$(li)$(bold)Value >33% → $()$()$(italic)Increase high-temp thirst decay multiplier by 25%$()$(li)$(bold)Value >66% ↴$()$()$(italic)$(li2)Increase high-temp thirst decay multiplier by 50%.$()$()$(italic)$(li2)On any new increase: 5% chance to get $(l:game_mechanics/hazards#carcinogens)Cancer$().$()$()"
         },
         {
             "type": "patchouli:text",
@@ -168,17 +168,17 @@
         {
             "type": "patchouli:text",
             "anchor": "cooling_transient_effect",
-            "text": "$(#12d7ff)❅$()$(bold) Cooling$()$(li)Gives the player the $(l:tfg_tips/mob_effects_glossary#cooling)Cooling$() effect with 1 minute of duration per 1 nutrient point. With a max duration of 30min.$()"
+            "text": "$(#12d7ff)❅$()$(bold) Cooling$()$(li)Gives the player the $(l:game_mechanics/mob_effects#cooling)Cooling$() effect with 1 minute of duration per 1 nutrient point. With a max duration of 30min.$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "warming_transient_effect",
-            "text": "$(#ff7700)🔆$()$(bold) Warming$()$(li)Gives the player the $(l:tfg_tips/mob_effects_glossary#warming)Warming$() effect with 1 minute of duration per 1 nutrient point. With a max duration of 30min.$()"
+            "text": "$(#ff7700)🔆$()$(bold) Warming$()$(li)Gives the player the $(l:game_mechanics/mob_effects#warming)Warming$() effect with 1 minute of duration per 1 nutrient point. With a max duration of 30min.$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "quenching_transient_effect",
-            "text": "$(#00c792)🍹$()$(bold) Quenching$()$(li)Gives the player the $(l:tfg_tips/mob_effects_glossary#quenched)Quenched$() effect with 1 minute of duration per 1 nutrient point. With a max duration of 30min.$()"
+            "text": "$(#00c792)🍹$()$(bold) Quenching$()$(li)Gives the player the $(l:game_mechanics/mob_effects#quenched)Quenched$() effect with 1 minute of duration per 1 nutrient point. With a max duration of 30min.$()"
         },
         {
             "type": "patchouli:text",
@@ -198,17 +198,17 @@
         {
             "type": "patchouli:text",
             "anchor": "freezing_transient_effect",
-            "text": "$(#12d7ff)⛇$()$(bold) Freezing$()$(li)Gives the player the $(l:tfg_tips/mob_effects_glossary#freezing)Freezing$() effect with 5 seconds of duration per 1 nutrient point. With a max duration of 30sec.$()"
+            "text": "$(#12d7ff)⛇$()$(bold) Freezing$()$(li)Gives the player the $(l:game_mechanics/mob_effects#freezing)Freezing$() effect with 5 seconds of duration per 1 nutrient point. With a max duration of 30sec.$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "blazing_transient_effect",
-            "text": "$(#ff7700)🔥$()$(bold) Blazing$()$(li)Gives the player the $(l:tfg_tips/mob_effects_glossary#blazing)Blazing$() effect with 5 seconds of duration per 1 nutrient point. With a max duration of 30sec.$()"
+            "text": "$(#ff7700)🔥$()$(bold) Blazing$()$(li)Gives the player the $(l:game_mechanics/mob_effects#blazing)Blazing$() effect with 5 seconds of duration per 1 nutrient point. With a max duration of 30sec.$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "radiating_transient_effect",
-            "text": "$(#9fc700)☢$()$(bold) Radiating$()$(li)Gives the player the $(n)Glowing$() effect for 24 seconds.$()$(li)Gives the player the $(l:tfg_tips/mob_effects_glossary#instant_radiation)Radiation$() effect for 24 seconds. With its amplifier scaled based on the amount of nutrient points with a max amplifier of 5.$()"
+            "text": "$(#9fc700)☢$()$(bold) Radiating$()$(li)Gives the player the $(n)Glowing$() effect for 24 seconds.$()$(li)Gives the player the $(l:game_mechanics/mob_effects#instant_radiation)Radiation$() effect for 24 seconds. With its amplifier scaled based on the amount of nutrient points with a max amplifier of 5.$()"
         },
         {
             "type": "patchouli:text",
@@ -223,7 +223,7 @@
         {
             "type": "patchouli:text",
             "anchor": "deadly_transient_effect",
-            "text": "$(#470275)💀$()$(bold) Deadly$()$(li)Gives the player the $(l:tfg_tips/mob_effects_glossary#final_moments)Final Moments$() effect for 8min. With every additional nutrient point halving the duration.$()"
+            "text": "$(#470275)💀$()$(bold) Deadly$()$(li)Gives the player the $(l:game_mechanics/mob_effects#final_moments)Final Moments$() effect for 8min. With every additional nutrient point halving the duration.$()"
         },
         {
             "type": "patchouli:text",
@@ -238,7 +238,7 @@
         {
             "type": "patchouli:text",
             "anchor": "spicy_transient_effect",
-            "text": "$(#8F0000)🌶 $()$(bold) Spicy$()$(li)Gives the player the $(n)Thirsty$() effect with 15 seconds of duration per 1 nutrient point. With a max duration of 5min.$()$(li)Gives the player the $(l:tfg_tips/mob_effects_glossary#warming)Warming$() mob effect with 1 minute of duration per 1 nutrient point. With a max duration of 30min.$()"
+            "text": "$(#8F0000)🌶 $()$(bold) Spicy$()$(li)Gives the player the $(n)Thirsty$() effect with 15 seconds of duration per 1 nutrient point. With a max duration of 5min.$()$(li)Gives the player the $(l:game_mechanics/mob_effects#warming)Warming$() mob effect with 1 minute of duration per 1 nutrient point. With a max duration of 30min.$()"
         },
         {
             "type": "patchouli:relations",
