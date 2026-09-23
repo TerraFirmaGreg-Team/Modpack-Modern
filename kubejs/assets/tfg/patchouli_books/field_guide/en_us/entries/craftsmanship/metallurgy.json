@@ -1,0 +1,227 @@
+{
+    "name": "Metallurgy & Prospecting",
+    "category": "tfg:craftsmanship",
+    "icon": "tfc:ore/rich_hematite",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "anchor": "index",
+            "text": "$(li)$(bold)$(l:craftsmanship/metallurgy#intro)Surface Metal$()$(li)$(bold)$(l:craftsmanship/metallurgy#extraction)Extracting Metal$()$(li2)$(l:craftsmanship/metallurgy#casting)Casting$()$(li)$(bold)$(l:craftsmanship/metallurgy#alloying)Alloying$()$(li2)$(l:craftsmanship/metallurgy#utility_alloys)Utility Alloys$()$(li)$(bold)$(l:craftsmanship/metallurgy#propick)Prospector's Pick$()$(li2)$(l:craftsmanship/metallurgy#prospector)Digital Prospecting$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "intro",
+            "title": "Scattered Metal",
+            "text": "In addition to sticks, twigs, and stones on the ground, you may encounter small pieces of ores. These are important, as they are one of the few sources of ore and metal before obtaining a pickaxe. There are three types of these indicators: $(li)Mineral Dust$(li)Gem Buds$(li)Small Ores."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "ABC"
+                    ],
+                    [
+                        "X0X"
+                    ]
+                ],
+                "mapping": {
+                    "0": "tfc:grass/loam",
+                    "X": "tfc:grass/loam",
+                    "A": "#tfg:dust_ore_indicators",
+                    "B": "#tfg:bud_ore_indicators",
+                    "C": "#tfg:small_ore_indicators"
+                }
+            },
+            "name": "Float Ore",
+            "text": "When broken; dust indicators drop tiny piles of dust, gem buds drop chipped gems, and small ores give, well, small ores.",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:text",
+            "text": "These indicator pieces can serve two purposes: They can provide a source of metal, and more importantly, they indicate the presence of a larger vein of ore somewhere below them. Be sure to note where indicators are on your map so you may return to excavate the vein later.$(br2)⚠ Be careful when picking up mineral dusts as some of them may be $(l:game_mechanics/hazards)Hazardous$(), like Cobaltite or Galena for example."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "extraction",
+            "text": "Ores yield a specific $(thing)millibucket (mB)$() amount of actual metal which can be extracted through refining, melting, and casting. The amount obtained from an ore depends on the items \"richness\", chemical composition, and refinement.$(br2)Ore richness―from least to most rich―goes small, poor, normal, rich.",
+            "title": "Extraction"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Some ores go by names you may be unfamiliar with. For example, if you are looking for copper you shouldn't just look for copper ore. There are many different variates available. To understand what an ore piece will yield you can search its recipes in $(d)E$(a)M$(b)I$(), or look at its tooltip."
+        },
+        {
+            "type": "patchouli:image",
+            "width": 1024,
+            "texture_width": 1024,
+            "height": 1024,
+            "texture_height": 1024,
+            "images": [
+                "tfg:textures/gui/field_guide/prospecting/ore_item.png"
+            ],
+            "text": "$(2)◼$() - Chemical formula.$(br)$(4)◼$() - Metal yield when melted.$(br)$(3)◼$() - Melting temperature.",
+            "title": "Understanding Ore",
+            "border": false
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "casting",
+            "title": "Casting",
+            "text": "To begin casting your first metal you will use a $(l:craftsmanship/pottery#vessel)Small Vessel$(). Place enough meltable ore inside of it to fill your desired $(l:craftsmanship/pottery#mold)Mold$(). For example, to make a saw blade you will need at least 144mb of metal.$(br)You can view the amount of material in the vessel by looking at its tooltip.$(br)Be aware that a vessel has a max fluid capacity of 3,024mb!"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "You can mix and match the types of ore inside a vessel, however all the ore must yield the same fluid metal, or you will create an $(l:craftsmanship/metallurgy#alloying)Alloy$().$(br)Place your filled vessel into a $(l:craftsmanship/pit_kiln)Pit Kiln$() to melt its contents. Once finished you will have a brief window of time to cast, so keep an eye on your kiln!"
+        },
+        {
+            "type": "patchouli:crafting",
+            "text": "Careful, the vessel will be hot! Craft $(thing)Wooden Tongs$() with two sticks and a knife and hold them in your offhand to handle the hot vessel safely.",
+            "recipe": "tfchotornot:crafting/tongs/wood"
+        },
+        {
+            "type": "patchouli:image",
+            "text": "Hold the vessel and $(item)$(k:key.use)$() to open the $(thing)Casting$() interface.",
+            "images": [
+                "tfc:textures/gui/book/gui/casting.png"
+            ],
+            "border": false
+        },
+        {
+            "type": "patchouli:text",
+            "text": "With the casting interface open, place your empty fired mold in the center slot. It will fill up as long as the vessel remains liquid. (If the vessel solidifies, it can be reheated in another pit kiln.) Once the mold is full, it can be removed and left to cool. Once cool, the mold and its contents can be extracted by using the mold, or putting it in the crafting grid."
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "gtceu:shaped/pickaxe_copper",
+            "text": "You are now able to craft your first pickaxe! Find enough copper to make a pickaxe head, fire a pickaxe mold and melt the ore using a pit kiln, then cast a head. Slap it on a stick, and voilà! You can now dig for $(thing)Ore$()."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tfc:metal/chisel/copper",
+            "text": "A couple other important metal tools are available for progression as well. The $(l:craftsmanship/chisel)Chisel$() is useful for working with stone blocks for building and required for other recipes."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "gtceu:copper_saw",
+            "text": "The saw allows you turn wood logs into $(l:game_mechanics/mining#supports)support beams$() and $(thing)lumber$(), which can further be crafted into planks, the crafting bench, barrels, and chests, among other things. It is also useful to make a $(l:logistics/boats#canoe)canoe$()."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "alloying",
+            "title": "Alloying",
+            "text": "$(thing)Alloys$() are a method of mixing two or more metals together, to create a new, stronger metal. During the early game, while copper is a useful metal for creating tools, the next tier of metal is one of three types of $(thing)Bronze$(). They are each slightly different in regard to durability, efficiency, and attack damage. An alloy is made up of component $(thing)metals$() which must each satisfy a specific percentage of the overall whole."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "One method through which alloys can be made during the early game is through the usage of a $(thing)Small Vessel$(). The process is very similar to $(l:craftsmanship/metallurgy#casting)Casting$(). However, instead of using just a single metal, place enough ore pieces inside the vessel in the correct ratio to form a known alloy mix."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "You can find alloy ratios by looking at their liquid alloying recipe in $(d)E$(a)M$(b)I$(). Alloys will except a range of values, so percentages do not have to be perfect. For example, an idealized ratio for Bronze is 75% Copper, and 25% Tin. Which means that for 144mB of Bronze you will need 108mB of Copper and 36mB of Tin."
+        },
+        {
+            "type": "patchouli:image",
+            "width": 1024,
+            "texture_width": 1024,
+            "height": 1024,
+            "texture_height": 1024,
+            "images": [
+                "tfg:textures/gui/field_guide/prospecting/alloy.png"
+            ],
+            "text": "Example alloy recipe for bronze showing 70-80% Copper + 20-30% Tin = Bronze.",
+            "title": "Alloy Recipe",
+            "border": false
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tag:forge:ingots/brass,tag:forge:ingots/rose_gold,tag:forge:ingots/sterling_silver,tag:forge:ingots/tin_alloy,tag:forge:ingots/red_alloy,tag:forge:ingots/potin,tag:forge:ingots/cobalt_brass,tag:forge:ingots/invar,tag:forge:ingots/brass",
+            "anchor": "utility_alloys",
+            "text": "Many alloys are not suitable for creating tools but are still necessary for progression. Some of the most important utility alloys for early progression are $(thing)Brass$(), $(thing)Rose Gold$(), $(thing)Sterling Silver$(), $(thing)Tin Alloy$(), and $(thing)Red Alloy$().",
+            "title": "Utility Alloys"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "propick",
+            "title": "Prospector's Pick",
+            "text": "You remembered where you picked up those indicator ores, right? Finding additional ores may require extensive exploration and mining. You should become very familiar with $(thing)Ores and Minerals$(). If you need a specific resource, you must find the rock type it spawns in either under your feet or across the world."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tag:tfc:propicks",
+            "title": "Pro-Pick",
+            "link_recipes": false,
+            "text": "If you're looking for ore veins, and you can't find the vein by guessing, it's time to pull out the $(item)prospector's pick$(). If you are familiar with base prospector's picks in $(thing)TFC$() you may be suprised to learn that they function very differently in $(bold)$(#ff0fb7)TerraFirma$(#595959)Greg$()."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Right-clicking a prospector's pick in $(bold)$(#ff0fb7)TF$(#595959)G$() will cast a search ray in your views' direction. The rays width and depth is dependent on the tier of the pick noted in its tooltips. Depending on the tier of the prospector's pick can also give you a count of the ore quantities and even display an $(thing)X-Ray$() indicator of the ore vein."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "The prospector's pick can display the following information on use:$(li)In chat the pick can display the $(thing)total quantity$() of the ore vein, the $(thing)contents$() of the ore vein, and the $(thing)quantity per ore-type$() of the ore vein.$(li)$(thing)colored steel$() prospector's picks can also display either a large X-Ray particle in the $(thing)center$() of an ore vein, or $(thing)paricle's per ore block$()"
+        },
+        {
+            "type": "patchouli:image",
+            "width": 1024,
+            "texture_width": 1024,
+            "height": 1024,
+            "texture_height": 1024,
+            "text": "Colored steel pro-picks: The large $(bold)$(#D68400)❗$() is from per-vein style x-ray. And the smaller ones are from per-block style x-ray.",
+            "title": "Prospector View",
+            "images": [
+                "tfg:textures/gui/field_guide/prospecting/tfg_prospectors_pick_xray.png"
+            ],
+            "border": true
+        },
+        {
+            "type": "tfg:anvil_recipe",
+            "recipe": "tfc:anvil/copper_propick_head",
+            "text": "A prospector's pick head can be $(l:craftsmanship/anvils#working)smithed$() on an $(l:craftsmanship/anvils)Anvil$() or $(l:craftsmanship/metallurgy#casting)Cast$(), then affixed upon a stick like other tools.$(br2)Note: The majority of the stats and charecteristics of the prospector's picks can be adjusted in your server config file."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "prospector",
+            "item": "gtceu:prospector.lv,gtceu:prospector.hv,gtceu:prospector.luv",
+            "title": "Digital Ore Prospector's",
+            "link_recipes": false,
+            "text": "Technology is now! And with it comes new ways to find your ore veins!$(br)$(item)Ore Prospector's$() are $(thing)GregTech's$() solution to finding ore veins and fluid deposits in your world. The size and capabilities of the ore prospectors are determined by the $(#ff1100)voltage tier$()."
+        },
+        {
+            "type": "patchouli:image",
+            "width": 1024,
+            "texture_width": 1024,
+            "height": 1024,
+            "texture_height": 1024,
+            "images": [
+                "tfg:textures/gui/field_guide/prospecting/tfg_luv_ore_prospector.png"
+            ],
+            "border": true,
+            "text": "An example of what you may see using the $(#e373ff)LuV ore prospector$(). Keep your battery charged!"
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Further Reading",
+            "anchor": "relations",
+            "entries": [
+                "tfg:craftsmanship/pottery",
+                "tfg:craftsmanship/pit_kiln",
+                "tfg:craftsmanship/charcoal_forge",
+                "tfg:craftsmanship/crucible",
+                "tfg:craftsmanship/blast_furnace",
+                "tfg:craftsmanship/bloomery",
+                "tfg:craftsmanship/anvils",
+                "tfg:game_mechanics/mining"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 3,
+	"extra_recipe_mappings": {
+		"tag:tfc:small_ore_pieces": 1,
+		"tag:tfc:propicks": 20,
+        "gtceu:prospector.lv": 26,
+        "gtceu:prospector.hv": 26,
+        "gtceu:prospector.luv": 26
+	}
+}

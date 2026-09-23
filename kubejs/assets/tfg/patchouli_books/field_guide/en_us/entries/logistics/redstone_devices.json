@@ -1,0 +1,153 @@
+{
+	"name": "Redstone Devices",
+	"category": "tfg:logistics",
+	"icon": "minecraft:comparator",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "$(li)$(bold)$(l:logistics/redstone_devices#clock)Precision Clock$()$(li)$(bold)$(l:logistics/redstone_devices#thermometer)Thermometer$()$(li)$(bold)$(l:logistics/redstone_devices#anemometer)Anemometer$()$(li)$(bold)$(l:logistics/redstone_devices#vane)Weather Vane$()$(li)$(bold)$(l:logistics/redstone_devices#morered)Other Devices$()$(li2)$(l:logistics/redstone_devices#more_comparators)More Comparators$()$(li2)$(l:logistics/redstone_devices#pulse_timer)Pulse Timer$()$(li2)$(l:logistics/redstone_devices#pulse_generator)Sequenced Pulse Generator$()$(li2)$(l:logistics/redstone_devices#analog_lever)Analog Lever$()$(li)$(bold)$(l:logistics/redstone_devices#threshold_switch)Threshold Switch$()$(li)$(bold)$(l:logistics/redstone_devices#smart_observer)Smart Observer$()$(li)$(bold)$(l:logistics/redstone_devices#link)Wireless Redstone$()$(li)$(bold)$(l:logistics/redstone_devices#cover)Machine Covers$()"
+		},
+		{
+			"type": "patchouli:image",
+			"images": [
+				"tfg:textures/gui/field_guide/redstone_devices.png"
+			],
+			"text": "Once you advance far enough in your world, you may want to measure certain conditions, such as the wind speed or the time of the day.",
+			"border": true
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "clock",
+			"recipe": "tfg:shaped/calendar_clock",
+			"text": "The first is the $(thing)Precision Clock$(). The Clock detects the hour, or, when toggled with $(item)$(k:key.use)$(), the month."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "When in hour mode, the clock will output a strong analog signal where signal 0 means midnight or noon, and signal 11 means 11:00 or 23:00.$(br2)When in month mode, the clock will output a strong analog signal where signal 0 means January, and signal 11 means December.$(br2)You do not need a comparator to read the Clock's signal strength."
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "thermometer",
+			"recipe": "tfg:shaped/thermometer",
+			"text": "Next we have the $(thing)Thermometer$(), which detects the ambient temperature, or the temperature of the device it is placed onto."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "When reading ambient temperature, the Thermometer will output a strong analog signal where signal 0 means -40°C, and signal 15 means 40°C.$(br2)When reading device temperature, the Thermometer will output a weak analog signal where signal 0 means no heat, and signal 15 means Brilliant White.$(br2)You do not need a comparator to read the Thermometer's signal strength."
+		},
+		{
+			"type": "tfg:heat_recipe",
+			"recipe": "tfg:heating/metal/cinnabar_dust",
+			"text": "$(item)Mercury$() can be extracted from $(item)Cinnabar$().$(br2)If you're having trouble getting the Mercury into a vial, try using a $(l:craftsmanship/pottery#vessel)Vessel$() to transfer it into a $(l:craftsmanship/barrels)Barrel$(), and then $(item)$(k:key.use)$() the Vial on the barrel."
+		},
+		{
+			"type": "tfg:glassworking_recipe",
+			"recipe": "tfg:glassworking/glass_vial",
+			"text": "The glass vial is also able to carry around variable amounts of fluids like a $(item)Wooden Bucket$(), and can safely hold $(thing)Acids$()."
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "anemometer",
+			"recipe": "tfg:shaped/anemometer",
+			"title": ""
+		},
+		{
+			"type": "patchouli:text",
+			"text": "The $(thing)Anemometer$() detects the wind speed. It outputs a strong analog signal where signal 0 means 0kmh, and signal 15 means 115 kmh.$(br2)You do not need a comparator to read the Anemometer's signal strength."
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "vane",
+			"recipe": "tfg:shaped/vane_wrought",
+			"recipe2": "tfg:shaped/vane_lead",
+			"title": ""
+		},
+		{
+			"type": "patchouli:text",
+			"text": "The $(thing)Weather Vane$() detects the wind direction. It outputs a strong analog signal where signal 0 means North, and signal 8 means south. The signal increases as the wind direction proceeds clockwise.$(br2)You do not need a comparator to read the Weather Vane's signal strength."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "morered",
+			"item": "morered:red_alloy_wire,morered:bundled_network_cable",
+			"title": "More Redstone",
+			"text": "Want to do more with redstone? Check out what the $(item)More Red$() mod has to offer, such as a wire that attaches to walls and ceilings and doesn't lose signal strength.$(br2)Type $(6)@morered$() into $(d)E$(a)M$(b)I$() to see them all."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tag:morered:redstone_devices",
+			"anchor": "more_comparators",
+			"title": "Gates and Latches",
+			"text": "There are many other kinds of blocks that can control redstone. Most of them can be crafted by $(thing)stonecutting$() a $(item)Comparator$(), and can then be stonecut themselves, so you won't have to make lots of different devices to experiment."
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "tfg:shaped/pulse_timer",
+			"anchor": "pulse_timer",
+			"text": "A $(item)Pulse Timer$() can provide redstone pulses at arbitrary intervals, such as dropping items into a $(l:craftsmanship/blast_furnace)Blast Furnace$()."
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "create_connected:crafting/kinetics/sequenced_pulse_generator",
+			"anchor": "pulse_generator",
+			"text": "The $(item)Sequenced Pulse Generator$() can be configured to send a combination of redstone signals at varying time intervals."
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "tfg:create/shaped/analog_lever",
+			"anchor": "analog_lever",
+			"text": "Need to provide a constant signal strength? The $(item)Analog Lever$() is perfect for just that."
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "create:crafting/logistics/stockpile_switch",
+			"anchor": "threshold_switch",
+			"text": "A $(item)Threshold Switch$() outputs a redstone signal based on how full a container is. It works with both items and fluids."
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "create:crafting/logistics/content_observer",
+			"anchor": "smart_observer",
+			"text": "The $(item)Smart Observer$() is a more advanced version of a regular $(item)Observer$(). It can be filtered and can also detect changes in fluid levels."
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "tfg:create/shaped/redstone_link",
+			"anchor": "link",
+			"text": "The $(item)Redstone Link$() can transfer redstone signals wirelessly."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "cover",
+			"title": "Machine Covers",
+			"item": "gtceu:machine_controller_cover",
+			"text": "$(thing)GregTech Covers$() can be placed directly onto your machines, and a lot of them will interact with redstone in some way. For example, the $(item)Machine Controller Cover$() lets you turn a machine off when it has a redstone signal."
+		},
+		{
+			"type": "patchouli:relations",
+			"title": "Further Reading",
+			"anchor": "relations",
+			"entries": [
+				"tfg:logistics/storage",
+				"tfg:craftsmanship/barrels"
+			]
+		}
+	],
+	"read_by_default": true,
+	"sortnum": 8,
+	"extra_recipe_mappings": {
+		"tfc:calendar_clock": 2,
+		"tfc:thermometer": 4,
+		"tfc:anemometer": 8,
+		"tfc:vane": 10,
+		"morered:red_alloy_wire": 12,
+		"morered:bundled_network_cable": 12,
+		"tag:morered:redstone_devices": 13,
+		"create:pulse_timer": 14,
+		"create_connected:sequenced_pulse_generator": 15,
+		"create:analog_lever": 16,
+		"create:stockpile_switch": 17,
+		"create:content_observer": 18,
+		"create:redstone_link": 19
+	}
+}
