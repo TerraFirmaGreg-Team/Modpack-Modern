@@ -44,8 +44,8 @@
         {
             "type": "patchouli:text",
             "anchor": "pig",
-            "text": "$(thing)Pigs$() spawn in mild forests with $(l:the_world/climate#temperature)temperature$() between -10 and 35°C, and at least 200mm of $(l:the_world/climate#rainfall)rainfall$(). They are $(l:agriculture/animal_husbandry#mammals)Mammals$() with no special abilities. They will eat any food, even if it is rotten. They have 1-10 children, are pregnant for just 19 days, and reach adulthood in 80 days. They can have children 6 times.",
-            "title": "Pigs"
+            "text": "$(bold)$(l:the_world/climate#temperature)Spawn Temp$():  -10 - 35°C$(br)$(bold)$(l:the_world/climate#rainfall)Spawn Rainfall$():  > 200mm$(br)$(bold)Spawn Area$():  Mild Forests$(br)$(bold)Category$():  $(l:agriculture/animal_husbandry#mammals)Mammals$()$(br)$(bold)Diet$():  Anything, even if it's rotten.$(br)$(bold)Max Children$():  10$(br)$(bold)Gestation Time$():  19 days$(br)$(bold)Growth Time$():  80 Days$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Max Uses$():  60",
+			"title": "Pigs"
         },
         {
             "type": "patchouli:entity",
@@ -57,7 +57,7 @@
         {
             "type": "patchouli:text",
             "anchor": "cow",
-            "text": "$(thing)Cows$() spawn in most climates, between $(l:the_world/climate#temperature)temperature$() -10 and 35°C, and at least 250mm of $(l:the_world/climate#rainfall)rainfall$(). They are $(l:agriculture/animal_husbandry#dairy_animals)Dairy Animals$(). They only eat $(thing)grains$(), which may be rotten. They can have 1-2 children, are pregnant for 58 days, and reach adulthood in 192 days. They can have children 13 times, if they are never milked, or be milked 128 times, if they are never bred. They produce milk every day.",
+            "text": "$(bold)$(l:the_world/climate#temperature)Spawn Temp$():  -10 - 35°C$(br)$(bold)$(l:the_world/climate#rainfall)Spawn Rainfall$():  > 250mm$(br)$(bold)Spawn Area$():  Most Climates$(br)$(bold)Category$():  $(l:agriculture/animal_husbandry#dairy_animals)Dairy$()$(br)$(bold)Diet$():  $(l:cooking/food_and_water#grain)Grain$(), which may be rotten.$(br)$(bold)Max Children$():  2$(br)$(bold)Gestation Time$():  58 days$(br)$(bold)Growth Time$():  192 Days$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Max Uses$():  128$(br)$(bold)Product$():  $(l:cooking/cheese)Milk$()$(br)$(bold)Produce Cycle$():  1 Day",
             "title": "Cows"
         },
         {
@@ -70,7 +70,7 @@
         {
             "type": "patchouli:text",
             "anchor": "goat",
-            "text": "$(thing)Goats$() spawn in moderate climates, with $(l:the_world/climate#temperature)temperature$() between -12 and 25°C, and at least 300mm of $(l:the_world/climate#rainfall)rainfall$(). They are $(l:agriculture/animal_husbandry#dairy_animals)Dairy Animals$(). They eat $(thing)grains$(), $(thing)fruits$(), and $(thing)vegetables$(), which may be rotten. They can have 1-2 children, are pregnant for 32 days, and reach adulthood in 96 days. They can have children 6 times if they are never milked, or be milked 60 times if they are never bred. They produce milk every 3 days.",
+            "text": "$(bold)$(l:the_world/climate#temperature)Spawn Temp$():  -12 - 25°C$(br)$(bold)$(l:the_world/climate#rainfall)Spawn Rainfall$():  > 300mm$(br)$(bold)Spawn Area$():  Moderate Climates$(br)$(bold)Category$():  $(l:agriculture/animal_husbandry#dairy_animals)Dairy$()$(br)$(bold)Diet$():  $(l:cooking/food_and_water#grain)Grain$(), $(l:cooking/food_and_water#fruit)Fruit$(), and $(l:cooking/food_and_water#vegetables)Vegetables$(), which may be rotten.$(br)$(bold)Max Children$():  2$(br)$(bold)Gestation Time$():  32 Days$(br)$(bold)Growth Time$():  96 Days$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Max Uses$():  60$(br)$(bold)Product$():  $(l:cooking/cheese)Milk$()$(br)$(bold)Produce Cycle$():  3 Days",
             "title": "Goats"
         },
         {
@@ -83,7 +83,7 @@
         {
             "type": "patchouli:text",
             "anchor": "yak",
-            "text": "$(thing)Yaks$() spawn in cold climates, with $(l:the_world/climate#temperature)temperature$() of at most -11°C, and at least 100mm of $(l:the_world/climate#rainfall)rainfall$(). They are $(l:agriculture/animal_husbandry#dairy_animals)Dairy Animals$(). They eat only fresh $(thing)grains$(). They always have 1 child, are pregnant for 64 days, and reach adulthood in 180 days. They can have children 23 times, if they are never milked, or be milked 230 times, if they are never bred. They produce milk once a day.",
+            "text": "$(bold)$(l:the_world/climate#temperature)Spawn Temp$():  > -11°C$(br)$(bold)$(l:the_world/climate#rainfall)Spawn Rainfall$():  > 100mm$(br)$(bold)Spawn Area$():  Cold Climates$(br)$(bold)Category$():  $(l:agriculture/animal_husbandry#dairy_animals)Dairy$()$(br)$(bold)Diet$():  $(l:cooking/food_and_water#grain)Grain$()$(br)$(bold)Max Children$():  1$(br)$(bold)Gestation Time$():  64 Days$(br)$(bold)Growth Time$():  180 Days$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Max Uses$():  230$(br)$(bold)Product$():  $(l:cooking/cheese)Milk$()$(br)$(bold)Produce Cycle$():  23.5 Hours",
             "title": "Yak"
         },
         {
@@ -96,7 +96,7 @@
         {
             "type": "patchouli:text",
             "anchor": "alpaca",
-            "text": "$(thing)Alpacas$() spawn in moderate climates, with $(l:the_world/climate#temperature)temperature$() between -8 and 20°C, and at least 250mm of $(l:the_world/climate#rainfall)rainfall$(). They are $(l:agriculture/animal_husbandry#wooly_animals)Wooly Animals$(). They eat $(thing)grains$() and $(thing)fruits$(). They have 1-2 children, are pregnant for 36 days, and reach adulthood in 98 days. They can have children 13 times, if they are never sheared, or be sheared 128 times, if they are never bred. They grow wool every 6 days.",
+            "text": "$(bold)$(l:the_world/climate#temperature)Spawn Temp$():  -8 - 20°C$(br)$(bold)$(l:the_world/climate#rainfall)Spawn Rainfall$():  > 250mm$(br)$(bold)Spawn Area$():  Moderate Climates$(br)$(bold)Category$():  $(l:agriculture/animal_husbandry#wooly_animals)Wooly$()$(br)$(bold)Diet$():  $(l:cooking/food_and_water#grain)Grain$() and $(l:cooking/food_and_water#fruit)Fruit$()$(br)$(bold)Max Children$():  2$(br)$(bold)Gestation Time$():  36 Days$(br)$(bold)Growth Time$():  98 Days$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Max Uses$():  128$(br)$(bold)Product$():  $(l:agriculture/weaving)Wool$()$(br)$(bold)Produce Cycle$():  5 Days",
             "title": "Alpaca"
         },
         {
@@ -109,7 +109,7 @@
         {
             "type": "patchouli:text",
             "anchor": "sheep",
-            "text": "$(thing)Sheep$() spawn in drier climates, with $(l:the_world/climate#temperature)temperature$() between 0 and 35°C, and between 70 and 300mm of $(l:the_world/climate#rainfall)rainfall$(). They are $(l:agriculture/animal_husbandry#wooly_animals)Wooly Animals$(). They eat $(thing)grains$(). They have 1-2 children, are pregnant for 32 days, and reach adulthood in 56 days. They can have children 6 times, if they are never sheared, or be sheared 60 times, if they are never bred. They grow wool every 9 days.",
+            "text": "$(bold)$(l:the_world/climate#temperature)Spawn Temp$():  0 - 35°C$(br)$(bold)$(l:the_world/climate#rainfall)Spawn Rainfall$():  70 - 300mm$(br)$(bold)Spawn Area$():  Drier Climates$(br)$(bold)Category$():  $(l:agriculture/animal_husbandry#wooly_animals)Wooly$()$(br)$(bold)Diet$():  $(l:cooking/food_and_water#grain)Grain$()$(br)$(bold)Max Children$():  2$(br)$(bold)Gestation Time$():  32 Days$(br)$(bold)Growth Time$():  56 Days$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Max Uses$():  60$(br)$(bold)Product$():  $(l:agriculture/weaving)Wool$()$(br)$(bold)Produce Cycle$():  7 Days",
             "title": "Sheep"
         },
         {
@@ -122,7 +122,7 @@
         {
             "type": "patchouli:text",
             "anchor": "musk_ox",
-            "text": "$(thing)Musk Oxen$() spawn in cold climates, with $(l:the_world/climate#temperature)temperature$() between -25 and 0°C, and at least 100mm of $(l:the_world/climate#rainfall)rainfall$(). They are $(l:agriculture/animal_husbandry#wooly_animals)Wooly Animals$(). They eat $(thing)grains$(). They always have 1 child, are pregnant for 64 days, and reach adulthood in 168 days. They can have children 16 times, if they are never sheared, or be sheared 160 times if they are never bred. They grow wool every 96 hours.",
+            "text": "$(bold)$(l:the_world/climate#temperature)Spawn Temp$():  -25 - 0°C$(br)$(bold)$(l:the_world/climate#rainfall)Spawn Rainfall$():  > 100mm$(br)$(bold)Spawn Area$():  Cold Climates$(br)$(bold)Category$():  $(l:agriculture/animal_husbandry#wooly_animals)Wooly$()$(br)$(bold)Diet$():  $(l:cooking/food_and_water#grain)Grain$()$(br)$(bold)Max Children$():  1$(br)$(bold)Gestation Time$():  64 Days$(br)$(bold)Growth Time$():  168 Days$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Max Uses$():  160$(br)$(bold)Product$():  $(l:agriculture/weaving)Wool$()$(br)$(bold)Produce Cycle$():  4 Days",
             "title": "Musk Ox"
         },
         {
@@ -135,7 +135,7 @@
         {
             "type": "patchouli:text",
             "anchor": "chicken",
-            "text": "$(thing)Chickens$() spawn in warm forests, with $(l:the_world/climate#temperature)temperature$() of at least 14°C, and at least 225mm of $(l:the_world/climate#rainfall)rainfall$(). They are $(l:agriculture/animal_husbandry#oviparous_animals)Oviparous Animals$(). They eat $(thing)grains$(), $(thing)fruits$(), $(thing)vegetables$(), and $(thing)seeds$(), which can be rotten. Their eggs hatch in 8 days, and become adults in 24 days. They can lay eggs 100 times. They produce eggs every 30 hours.",
+            "text": "$(bold)$(l:the_world/climate#temperature)Spawn Temp$():  > 14°C$(br)$(bold)$(l:the_world/climate#rainfall)Spawn Rainfall$():  > 225mm$(br)$(bold)Spawn Area$():  Warm Forests$(br)$(bold)Category$():  $(l:agriculture/animal_husbandry#oviparous_animals)Oviparous Animals$()$(br)$(bold)Diet$():  $(l:cooking/food_and_water#grain)Grain$(), $(l:cooking/food_and_water#fruit)Fruits$(), $(l:cooking/food_and_water#vegetables)Vegetables$(), and $(l:agriculture/growing_crops)Seeds$() which may be rotten.$(br)$(bold)Egg Cycle$():  30 Hours$(br)$(bold)Growth Time$():  24 Days$(br)$(bold)Hatch Time$():  8 Days$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Max Uses$():  100$(br)$(bold)Product$():  Eggs and feathers.$()",
             "title": "Chickens"
         },
         {
@@ -148,7 +148,7 @@
         {
             "type": "patchouli:text",
             "anchor": "duck",
-            "text": "$(thing)Ducks$() spawn in most plains, with $(l:the_world/climate#temperature)temperature$() between -25 and 30°C, and at least 100mm of $(l:the_world/climate#rainfall)rainfall$(). They are $(l:agriculture/animal_husbandry#oviparous_animals)Oviparous Animals$(). They eat $(thing)grains$(), $(thing)fruits$(), $(thing)vegetables$(), $(thing)bread$(), and $(thing)seeds$(). Their eggs hatch in 8 days, and become adults in 32 days. They can lay eggs 72 times. They produce eggs every 32 hours.",
+            "text": "$(bold)$(l:the_world/climate#temperature)Spawn Temp$():  -25 - 30°C$(br)$(bold)$(l:the_world/climate#rainfall)Spawn Rainfall$():  > 100mm$(br)$(bold)Spawn Area$():  Plains$(br)$(bold)Category$():  $(l:agriculture/animal_husbandry#oviparous_animals)Oviparous Animals$()$(br)$(bold)Diet$():  $(l:cooking/food_and_water#grain)Grain$(), $(l:cooking/food_and_water#fruit)Fruits$(), $(l:cooking/food_and_water#vegetables)Vegetables$(), and $(l:agriculture/growing_crops)Seeds$().$(br)$(bold)Egg Cycle$():  32 Hours$(br)$(bold)Growth Time$():  32 Days$(br)$(bold)Hatch Time$():  8 Days$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Max Uses$():  72$(br)$(bold)Product$():  Eggs and feathers.$()",
             "title": "Ducks"
         },
         {
@@ -161,7 +161,7 @@
         {
             "type": "patchouli:text",
             "anchor": "quail",
-            "text": "$(thing)Quails$() spawn in colder climates, with $(l:the_world/climate#temperature)temperature$() between -15 and 15°C, and at least 200mm of  $(l:the_world/climate#rainfall)rainfall$(). They are $(l:agriculture/animal_husbandry#oviparous_animals)Oviparous Animals$(). They eat $(thing)grains$(), $(thing)fruits$(), $(thing)vegetables$(), and $(thing)seeds$(), which can be rotten. Their eggs hatch in 8 days, and become adults in 22 days. They can lay eggs 48 times. They produce eggs every 28 hours.",
+            "text": "$(bold)$(l:the_world/climate#temperature)Spawn Temp$():  -15 - 15°C$(br)$(bold)$(l:the_world/climate#rainfall)Spawn Rainfall$():  > 200mm$(br)$(bold)Spawn Area$():  Cold Climates$(br)$(bold)Category$():  $(l:agriculture/animal_husbandry#oviparous_animals)Oviparous Animals$()$(br)$(bold)Diet$():  $(l:cooking/food_and_water#grain)Grain$(), $(l:cooking/food_and_water#fruit)Fruits$(), $(l:cooking/food_and_water#vegetables)Vegetables$(), and $(l:agriculture/growing_crops)Seeds$() which may be rotten.$(br)$(bold)Egg Cycle$():  28 Hours$(br)$(bold)Growth Time$():  22 Days$(br)$(bold)Hatch Time$():  8 Days$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Max Uses$():  48$(br)$(bold)Product$():  Eggs and feathers.$()",
             "title": "Quail"
         },
         {
@@ -174,8 +174,8 @@
         {
             "type": "patchouli:text",
             "anchor": "donkey",
-            "text": "$(thing)Donkeys$() spawn in wetter plains, with $(l:the_world/climate#temperature)temperature$() of at least -15°C, and between 130 and 400mm of $(l:the_world/climate#rainfall)rainfall$(). They are a kind of $(l:agriculture/animal_husbandry#equines)Equine$() that can carry a $(thing)chest$(). They eat $(thing)grains$() and $(thing)fruits$(). They have 1 child, are pregnant for 19 days, and reach adulthood in 80 days. They can have children 6 times.",
-            "title": "Donkeys"
+            "text": "$(bold)$(l:the_world/climate#temperature)Spawn Temp$():  > -15°C$(br)$(bold)$(l:the_world/climate#rainfall)Spawn Rainfall$():  130 - 400mm$(br)$(bold)Spawn Area$():  Wet Plains$(br)$(bold)Category$():  $(l:agriculture/animal_husbandry#equines)Equine$()$(br)$(bold)Diet$():  $(l:cooking/food_and_water#grain)Grain$() and $(l:cooking/food_and_water#fruit)Fruits$()$(br)$(bold)Max Children$():  1$(br)$(bold)Gestation Time$():  19 Days$(br)$(bold)Growth Time$():  80 Days$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Max Uses$():  60",
+			"title": "Donkeys"
         },
         {
             "type": "patchouli:entity",
@@ -187,7 +187,7 @@
         {
             "type": "patchouli:text",
             "anchor": "mule",
-            "text": "$(thing)Mules$() spawn in plains with $(l:the_world/climate#temperature)temperature$() of at least -15°C, and between 130 and 400mm of $(l:the_world/climate#rainfall)rainfall$(). They are a kind of $(l:agriculture/animal_husbandry#equines)Equine$() that can carry a $(thing)chest$() and are the always-male product of a $(thing)horse$() and a $()donkey$(). They eat $(thing)grains$() and $(thing)fruits$(). They reach adulthood in 80 days.",
+            "text": "$(bold)$(l:the_world/climate#temperature)Spawn Temp$():  > -15°C$(br)$(bold)$(l:the_world/climate#rainfall)Spawn Rainfall$():  130 - 400mm$(br)$(bold)Spawn Area$():  Plains, bred from horses and donkeys.$(br)$(bold)Category$():  $(l:agriculture/animal_husbandry#equines)Equine$()$(br)$(bold)Diet$():  $(l:cooking/food_and_water#grain)Grain$() and $(l:cooking/food_and_water#fruit)Fruits$()$(br)$(bold)Max Children$():  1$(br)$(bold)Gestation Time$():  19 Days$(br)$(bold)Growth Time$():  80 Days$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Max Uses$():  60",
             "title": "Mules"
         },
         {
@@ -200,8 +200,8 @@
         {
             "type": "patchouli:text",
             "anchor": "horse",
-            "text": "$(thing)Horses$() spawn in plains with $(l:the_world/climate#temperature)temperature$() of at least -15°C, and between 130 and 400mm of $(l:the_world/climate#rainfall)rainfall$(). They are a kind of $(l:agriculture/animal_husbandry#equines)Equine$(). They eat $(thing)grains$() and $(thing)fruits$(). They have 1 child, are pregnant for 19 days, and reach adulthood in 80 days. They can have children 6 times.",
-            "title": "Horses"
+            "text": "$(bold)$(l:the_world/climate#temperature)Spawn Temp$():  > -15°C$(br)$(bold)$(l:the_world/climate#rainfall)Spawn Rainfall$():  130 - 400mm$(br)$(bold)Spawn Area$():  Plains$(br)$(bold)Category$():  $(l:agriculture/animal_husbandry#equines)Equine$()$(br)$(bold)Diet$():  $(l:cooking/food_and_water#grain)Grain$() and $(l:cooking/food_and_water#fruit)Fruits$()$(br)$(bold)Max Children$():  1$(br)$(bold)Gestation Time$():  19 Days$(br)$(bold)Growth Time$():  80 Days$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Max Uses$():  60",
+			"title": "Horses"
         },
         {
             "type": "patchouli:entity",
@@ -213,7 +213,7 @@
         {
             "type": "patchouli:text",
             "anchor": "dromedary_camel",
-            "text": "$(bold)$(l:the_world/climate#temperature)Spawn Temp:$()  > -5°C$(br)$(bold)$(l:the_world/climate#rainfall)Spawn Rainfall:$()  < 100mm$(br)$(bold)Category:$()  $(l:agriculture/animal_husbandry#camelides)Camelide$()$(br)$(bold)Diet:$()  $(l:cooking/food_and_water#grain)Grain$() and $(l:cooking/food_and_water#fruit)Fruits$()$(br)$(bold)Max Children:$()  1$(br)$(bold)Gestation Time:$()  19 days$(br)$(bold)Growth Time:$()  80 days$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Max Uses:$()  60",
+            "text": "$(bold)$(l:the_world/climate#temperature)Spawn Temp$():  > -5°C$(br)$(bold)$(l:the_world/climate#rainfall)Spawn Rainfall$():  < 100mm$(br)$(bold)Spawn Area$():  Hot and Dry Climates$(br)$(bold)Category$():  $(l:agriculture/animal_husbandry#camelides)Camelide$()$(br)$(bold)Diet$():  $(l:cooking/food_and_water#grain)Grain$() and $(l:cooking/food_and_water#fruit)Fruits$()$(br)$(bold)Max Children$():  1$(br)$(bold)Gestation Time$():  19 Days$(br)$(bold)Growth Time$():  80 Days$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Max Uses$():  60",
             "title": "Dromedary Camel"
         },
         {
@@ -226,7 +226,7 @@
         {
             "type": "patchouli:text",
             "anchor": "bactrian_camel",
-            "text": "$(bold)$(l:the_world/climate#temperature)Spawn Temp:$()  > -5°C$(br)$(bold)$(l:the_world/climate#rainfall)Spawn Rainfall:$()  < 100mm$(br)$(bold)Category:$()  $(l:agriculture/animal_husbandry#camelides)Camelide$() / $(l:agriculture/animal_husbandry#wooly_animals)Wooly$()$(br)$(bold)Diet:$()  $(l:cooking/food_and_water#grain)Grain$() and $(l:cooking/food_and_water#fruit)Fruits$()$(br)$(bold)Max Children:$()  1$(br)$(bold)Gestation Time:$()  24 days$(br)$(bold)Growth Time:$()  80 days$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Max Uses:$()  80$(br)$(bold)Product:$()  $(l:agriculture/weaving)Wool$()$(br)$(bold)Produce Cycle:$()  7 days",
+            "text": "$(bold)$(l:the_world/climate#temperature)Spawn Temp$():  > -5°C$(br)$(bold)$(l:the_world/climate#rainfall)Spawn Rainfall$():  < 100mm$(br)$(bold)Spawn Area$():  Cold and Dry Climates$(br)$(bold)Category$():  $(l:agriculture/animal_husbandry#camelides)Camelide$() / $(l:agriculture/animal_husbandry#wooly_animals)Wooly$()$(br)$(bold)Diet$():  $(l:cooking/food_and_water#grain)Grain$() and $(l:cooking/food_and_water#fruit)Fruits$()$(br)$(bold)Max Children$():  1$(br)$(bold)Gestation Time$():  24 Days$(br)$(bold)Growth Time$():  80 Days$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Max Uses$():  80$(br)$(bold)Product$():  $(l:agriculture/weaving)Wool$()$(br)$(bold)Produce Cycle$():  7 Days",
             "title": "Bactrian Camel"
         },
         {
