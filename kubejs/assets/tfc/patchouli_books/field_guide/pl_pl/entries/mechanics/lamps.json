@@ -77,7 +77,7 @@
     {
       "type": "tfc:anvil_recipe",
       "recipe": "tfc:anvil/black_steel_chain",
-      "text": "$(thing)Chains$() are a great way to hang your lamps, and can be smithed in an $(l:mechanics/anvils)Anvil$()."
+      "text": "$(thing)Łańcuchy$() świetnie nadają się do wieszania lamp i można je wykuć na $(l:mechanics/anvils)kowadle$()."
     }
   ],
   "read_by_default": true,

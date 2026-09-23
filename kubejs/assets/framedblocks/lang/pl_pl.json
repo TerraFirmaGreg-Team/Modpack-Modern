@@ -337,7 +337,7 @@
   "tooltip.framedblocks.reinforce_state.true": "wzmocniony",
   "tooltip.framedblocks.split_line.false": "Linia podziału zdeformowanej ściany biegnie wzdłuż stromej przekątnej.",
   "tooltip.framedblocks.split_line.true": "Linia podziału zdeformowanej ściany biegnie wzdłuż łagodnej przekątnej.",
-  "tooltip.framedblocks.y_slope": "Blok używa %s ścian dla pionowych skosów.\n",
+  "tooltip.framedblocks.y_slope": "Blok używa %s ścian dla pionowych skosów.",
   "tooltip.framedblocks.y_slope.horizontal": "poziom.",
   "tooltip.framedblocks.y_slope.toggle": "Uderz strukturalnym kluczem, aby przełączyć na %s ściany.",
   "tooltip.framedblocks.y_slope.vertical": "pion."

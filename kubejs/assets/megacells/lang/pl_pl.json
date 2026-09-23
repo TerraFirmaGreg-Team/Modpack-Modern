@@ -89,6 +89,7 @@
   "text.autoconfig.megacells.option.AllowSpentWaste": "(AppMek) Zezwalaj na zużyte odpady jądrowe",
   "text.autoconfig.megacells.option.AllowSpentWaste.@Tooltip": "Czy magazyn radioaktywny MEGA ma przechowywać zużyte odpady jądrowe.",
   "text.autoconfig.megacells.option.CompressionChainLimit": "Limit długości łańcucha masowej kompresji",
+  "text.autoconfig.megacells.option.CompressionChainLimit.@Tooltip": "Maksymalna liczba wariantów, które masowa komórka z włączoną kompresją może zgłaszać jako przechowywane.",
   "text.autoconfig.megacells.title": "MEGA Cells",
   "block.megacells.mega_pattern_provider": "Dostawca wzorców MEGA",
   "item.megacells.cable_mega_pattern_provider": "Dostawca wzorców MEGA"
