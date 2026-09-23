@@ -5,7 +5,7 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "$(thing)Bowls$() are a versatile tool which can be used to make $(l:mechanics/salad)Salads$(), to make $(l:mechanics/pot)Soups$(), to $(l:mechanics/decay#salting)Salt$() meat, or to apply $(thing)Powder$() to $(l:craftsmanship/glassworking_applications#coloring)Glass$() in order to change the resulting glass's color.$(br2)Bowls can be made both from $(thing)Ceramic$()―By knapping a bowl out of clay, and then firing them―Or out of wood."
+            "text": "$(thing)Bowls$() are a versatile tool which can be used to make $(l:cooking/salad)Salads$(), to make $(l:cooking/cooking_methods#pot)Soups$(), to $(l:cooking/decay#salting)Salt$() meat, or to apply $(thing)Powder$() to $(l:craftsmanship/glassworking#coloring)Glass$() in order to change the resulting glass's color.$(br2)Bowls can be made both from $(thing)Ceramic$()―By knapping a bowl out of clay, and then firing them―Or out of wood."
         },
         {
             "type": "patchouli:text",

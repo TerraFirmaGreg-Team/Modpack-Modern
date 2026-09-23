@@ -9,16 +9,16 @@
     },
     {
       "type": "patchouli:text",
-      "text": "To start chocolate processing, cocoa beans must first be $(thing)roasted$() in an $(l:firmalife/ovens)Oven$() to make $(thing)Roasted Cocoa Beans$(). Then, craft the roasted beans with a $(thing)Knife$() to split the beans into $(thing)Cocoa Powder$() and $(thing)Cocoa Butter$()."
+      "text": "To start chocolate processing, cocoa beans must first be $(thing)roasted$() in an $(l:cooking/cooking_methods#oven)Oven$() to make $(thing)Roasted Cocoa Beans$(). Then, craft the roasted beans with a $(thing)Knife$() to split the beans into $(thing)Cocoa Powder$() and $(thing)Cocoa Butter$()."
     },
     {
       "type": "patchouli:text",
-      "text": "The $(l:firmalife/mixing_bowl)Mixing Bowl$() is used to mix cocoa powder, butter, and sweetener (sugar or honey) to make $(thing)Chocolate Blends$(). The ratio of cocoa butter to powder determines what comes out:$(br)$(li)1 Powder, 1 Butter, 1 Sweetener: Milk Chocolate$()$(li)2 Powder, 1 Sweetener: Dark Chocolate$()$(li)2 Butter, 1 Sweetener: White Chocolate$()"
+      "text": "The $(l:cooking/mixing_bowl)Mixing Bowl$() is used to mix cocoa powder, butter, and sweetener (sugar or honey) to make $(thing)Chocolate Blends$(). The ratio of cocoa butter to powder determines what comes out:$(br)$(li)1 Powder, 1 Butter, 1 Sweetener: Milk Chocolate$()$(li)2 Powder, 1 Sweetener: Dark Chocolate$()$(li)2 Butter, 1 Sweetener: White Chocolate$()"
     },
     {
       "type": "tfc:drying_recipe",
       "recipe": "firmalife:drying/dark_chocolate",
-      "text": "Finally, chocolate is dried on a $(l:firmalife/drying)Drying Mat$() to make $(thing)Chocolate$()."
+      "text": "Finally, chocolate is dried on a $(l:cooking/decay#drying)Drying Mat$() to make $(thing)Chocolate$()."
     },
     {
       "title": "Casting Chocolate",

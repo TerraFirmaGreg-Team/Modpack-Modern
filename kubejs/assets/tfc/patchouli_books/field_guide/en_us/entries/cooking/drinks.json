@@ -12,7 +12,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"title": "Alcohol",
-			"text": "$(thing)Base Alcohols$() provide no buff to the player. They can be produced by leaving various fruits, flours, or other ingredients in a $(l:craftsmanship/barrels)Barrel$() with water. As a bonus, when drunk any alcohol will effect your speech in chat!",
+			"text": "$(thing)Base Alcohols$() provide no buff to the player. They can be produced by leaving various fruits, flours, or other ingredients in a $(l:craftsmanship/barrels)Barrel$() with water. As a bonus, when drunk any alcohol will affect your speech in chat!",
 			"item": "tfc:bucket/beer,tfc:bucket/cider,tfc:bucket/rum,tfc:bucket/sake,tfc:bucket/vodka,tfc:bucket/whiskey,tfc:bucket/corn_whiskey,tfc:bucket/rye_whiskey,firmalife:bucket/mead",
 			"anchor": "alcohol"
 		},
@@ -26,25 +26,25 @@
 		{
 			"type": "patchouli:spotlight",
 			"title": "Vintage Alcohol",
-			"text": "$(thing)Vintage Alcohols$() are prepared by further ageing aged alcohol in sealed barrels for another 3 months. These alcohols provide a stronger effect and a longer duration.",
+			"text": "$(thing)Vintage Alcohols$() are prepared by further ageing alcohol in sealed barrels for another 3 months. These alcohols provide a stronger effect and a longer duration.",
 			"item": "tfg:vintage_beer_bucket,tfg:vintage_cider_bucket,tfg:vintage_rum_bucket,tfg:vintage_sake_bucket,tfg:vintage_vodka_bucket,tfg:vintage_whiskey_bucket,tfg:vintage_corn_whiskey_bucket,tfg:vintage_rye_whiskey_bucket,tfg:vintage_mead_bucket",
 			"anchor": "vintage_alcohol"
 		},
 		{
 			"type": "patchouli:text",
 			"title": "Wine",
-			"text": "$(thing)Wine$() is another kind of alcohol that's made in a different way than the others. It's a complex but rewarding process that can't be automated in a machine. Check the $(l:firmalife/wine)Winemaking$() entry to learn how to craft it.$(br2)All wines also give $(item)Strength (5:20)$() in addition to another effect!",
+			"text": "$(thing)Wine$() is another kind of alcohol that's made differently than the others. It's a complex but rewarding process that can't be automated in a machine. Check the $(l:cooking/alcohol#wine_making)Winemaking$() entry to learn how to craft it.$(br2)All wines also give $(item)Strength (5:20)$() in addition to another effect!",
 			"item": "firmalife:bucket/red_wine,firmalife:bucket/white_wine,firmalife:bucket/rose_wine,firmalife:bucket/sparkling_wine,firmalife:bucket/dessert_wine",
 			"anchor": "wine"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(li)$(n)$(2)$(t:Haste 5:20)Red Wine$(li)$(t:Wither Resistance 5:20)White Wine$(li)$(t:Swim Speed 5:20)Rose Wine$(li)$(t:Jump Boost II 5:20)Sparkling Wine$(li)$(t:Knockback Resistance 5:20)Dessert Wine$()"
+			"text": "$(li)$(n)$(2)$(t:Haste 5:20)Red Wine$()$(li)$(n)$(2)$(t:Wither Resistance 5:20)White Wine$()$(li)$(n)$(2)$(t:Swim Speed 5:20)Rose Wine$()$(li)$(n)$(2)$(t:Jump Boost II 5:20)Sparkling Wine$()$(li)$(n)$(2)$(t:Knockback Resistance 5:20)Dessert Wine$()"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"title": "Milks",
-			"text": "$(thing)Milk$() can be aquired from most female livestock by simply right clicking them with a wood or metal bucket once familiarity is at a high enough level. (If it isn't working, make sure the buckets aren't stacked!)$(br)While it doesn't provide any buffs―And won't remove effects―It provides $(l:cooking/food_and_water#dairy)Dairy$() nutrition if drunk after eating.",
+			"text": "$(thing)Milk$() can be aquired from most female livestock by simply $(item)$(k:key.use)$() them with a wood or metal bucket once familiarity is at a high enough level. (If it isn't working, make sure the buckets aren't stacked!)$(br)While it doesn't provide any buffs―And won't remove effects―It provides $(l:cooking/food_and_water#dairy)Dairy$() nutrition if drunk after eating.",
 			"item": "minecraft:milk_bucket,firmalife:bucket/yak_milk,firmalife:bucket/goat_milk",
 			"anchor": "milk"
 		},
@@ -56,7 +56,7 @@
 			"anchor": "spring_water"
 		},
 		{
-			"title": "Sea Water",
+			"title": "Seawater",
 			"text": "Drinking $(thing)Sea Water$() does not hydrate you and will make you more thirsty instead. A hot body temperature can also make you more thirsty. Lost at sea? Look upwards when it's raining for some easy hydration!",
 			"type": "patchouli:spotlight",
 			"item": "tfc:bucket/salt_water",

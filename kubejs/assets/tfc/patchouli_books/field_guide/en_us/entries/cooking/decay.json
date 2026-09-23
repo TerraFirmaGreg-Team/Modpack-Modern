@@ -173,7 +173,7 @@
         {
             "type": "patchouli:text",
             "anchor": "cooking",
-            "text": "One other way to easily preserve certain types of food is to cook them. $(thing)Meats$() will all expire slower when they are cooked than when they are raw.$(br2)Certain devices that heat very hot, such as a $(l:craftsmanship/charcoal_forge)Charcoal Forge$() or a $(l:mechanics/crucible)Crucible$() are $(bold)bad$() for cooking food, which will make them expire faster!$(br)They give the $(c)$(bold)Burnt to a Crisp!$() trait with a modifier of 2.5",
+            "text": "One other way to easily preserve certain types of food is to cook them. $(thing)Meats$() will all expire slower when they are cooked than when they are raw.$(br2)Certain devices that heat very hot, such as a $(l:craftsmanship/charcoal_forge)Charcoal Forge$() or a $(l:craftsmanship/crucible)Crucible$() are $(bold)bad$() for cooking food, which will make them expire faster!$(br)They give the $(c)$(bold)Burnt to a Crisp!$() trait with a modifier of 2.5",
             "title": "Cooking"
         },
         {
@@ -474,7 +474,10 @@
             "anchor": "relations",
             "entries": [
                 "tfc:cooking/food_and_water",
-                "tfc:cooking/cooking_methods"
+                "tfc:cooking/cooking_methods",
+                "tfc:craftsmanship/pottery",
+                "tfc:craftsmanship/barrels",
+                "tfc:logistics/storage"
             ]
         }
     ],

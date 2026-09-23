@@ -16,7 +16,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "$(li)$(thing)Large$() items are the largest that will fit in $(l:logistics/storage#chests)Chests$(). $(l:mechanics/pit_kiln)Pit Kilns$() can hold four.$(li)$(thing)Very Large$() items are placed alone in Pit Kilns.$(li)$(thing)Huge$() items do not fit in any normal storage device. They also count towards overburdening."
+            "text": "$(li)$(thing)Large$() items are the largest that will fit in $(l:logistics/storage#chests)Chests$(). $(l:craftsmanship/pit_kiln)Pit Kilns$() can hold four.$(li)$(thing)Very Large$() items are placed alone in Pit Kilns.$(li)$(thing)Huge$() items do not fit in any normal storage device. They also count towards overburdening."
         },
         {
             "type": "patchouli:text",
