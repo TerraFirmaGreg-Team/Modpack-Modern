@@ -112,7 +112,7 @@
 	"gui.expatternprovider.tag_storage_bus.blacklist": "Filtr czarnej listy",
 	"gui.expatternprovider.tag_storage_bus.desc.01": "& = AND    | = OR",
 	"gui.expatternprovider.tag_storage_bus.desc.02": "^ = XOR",
-	"gui.expatternprovider.tag_storage_bus.desc.03": "() = priorytet    * = wieloznacznik\n",
+	"gui.expatternprovider.tag_storage_bus.desc.03": "() = priorytet    * = wieloznacznik",
 	"gui.expatternprovider.tag_storage_bus.tooltip": "Wprowadź tag tutaj",
 	"gui.expatternprovider.tag_storage_bus.whitelist": "Filtr białej listy",
 	"gui.expatternprovider.tank_amount": "%s mW / %s mW",

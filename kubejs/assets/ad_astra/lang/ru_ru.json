@@ -674,7 +674,7 @@
 	"tooltip.ad_astra.fluid_generation_per_iteration": "Генерирует %s mB за итерацию",
 	"tooltip.ad_astra.fluid_in": "Вход: %s mB/t",
 	"tooltip.ad_astra.fluid_out": "Выход: %s mB/t",
-	"tooltip.ad_astra.fluid_per_tick": "%s mB/т",
+	"tooltip.ad_astra.fluid_per_tick": "%s mB/t",
 	"tooltip.ad_astra.fluid_transfer_tick": "Передаёт: %s mB/t",
 	"tooltip.ad_astra.fluid_use_per_iteration": "Использует %s mB за итерацию",
 	"tooltip.ad_astra.gravity_amount": "%.1f/%.1f м/с²",
