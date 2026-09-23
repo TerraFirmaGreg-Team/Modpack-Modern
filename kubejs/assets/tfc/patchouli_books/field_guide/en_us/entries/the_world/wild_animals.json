@@ -311,7 +311,7 @@
 			"entity": "tfc:wolf",
 			"anchor": "wolf",
 			"scale": 0.7,
-			"text": "The wolf spawns at any $(l:the_world/climate#temperature)temperature$() below 22°C, and $(l:the_world/climate#rainfall)rainfall$() between 70 and 480mm. They hunt in packs. Feeding a wolf enough times will tame it into a $(l:mechanics/pets)Dog$()."
+			"text": "The wolf spawns at any $(l:the_world/climate#temperature)temperature$() below 22°C, and $(l:the_world/climate#rainfall)rainfall$() between 70 and 480mm. They hunt in packs. Feeding a wolf enough times will tame it into a $(l:game_mechanics/pets)Dog$()."
 		},
 		{
 			"type": "patchouli:entity",
@@ -340,7 +340,7 @@
 			"entity": "tfc:ocelot",
 			"anchor": "ocelot",
 			"scale": 0.7,
-			"text": "The ocelot attacks small animals. It spawns at any $(l:the_world/climate#temperature)temperature$() from 15 to 30°C, and $(l:the_world/climate#rainfall)rainfall$() between 300 and 500mm, in forests. Feeding an ocelot enough times will tame it into a $(l:mechanics/pets)Cat$(). Ocelots can eat raw fish"
+			"text": "The ocelot attacks small animals. It spawns at any $(l:the_world/climate#temperature)temperature$() from 15 to 30°C, and $(l:the_world/climate#rainfall)rainfall$() between 300 and 500mm, in forests. Feeding an ocelot enough times will tame it into a $(l:game_mechanics/pets)Cat$(). Ocelots can eat raw fish"
 		},
 		{
 			"type": "patchouli:text",
@@ -515,7 +515,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "fish",
-			"text": "$(thing)Fish$() are small creatures that swim in water. Most of them can be $(l:mechanics/fishing)fished$(). Some prefer oceans, rivers, or lakes.",
+			"text": "$(thing)Fish$() are small creatures that swim in water. Most of them can be $(l:agriculture/fishing)fished$(). Some prefer oceans, rivers, or lakes.",
 			"title": "Fish"
 		},
 		{
@@ -569,7 +569,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "shellfish",
-			"text": "$(thing)Shellfish$() are small animals that live on the floor of bodies of water. They cannot be fished, but drop shells that can be eaten or made into $(l:mechanics/flux)flux$(). Shellfish can be $(l:mechanics/fishing)bait$() for fish.",
+			"text": "$(thing)Shellfish$() are small animals that live on the floor of bodies of water. They cannot be fished, but drop shells that can be eaten or made into $(thing)flux$(). Shellfish can be $(l:agriculture/fishing)bait$() for fish.",
 			"title": "Shellfish"
 		},
 		{
@@ -607,7 +607,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "large_aquatic_animals",
-			"text": "$(thing)Large Water Creatures$() are larger animals that live in the bigger bodies of water. Some of them hunt fish. They drop $(l:game_mechanics/lighting#tallow)blubber$(), which can be made into lamp fuel.",
+			"text": "$(thing)Large Water Creatures$() are larger animals that live in the bigger bodies of water. Some of them hunt fish. They drop $(l:game_mechanics/lighting)blubber$(), which can be made into lamp fuel.",
 			"title": "Large Aquatic Animals"
 		},
 		{

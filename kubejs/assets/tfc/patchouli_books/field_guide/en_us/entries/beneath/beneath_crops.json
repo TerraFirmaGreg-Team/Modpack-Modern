@@ -25,7 +25,7 @@
 			"type": "patchouli:text",
 			"anchor": "cassava",
 			"title": "Cassava",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 10 - 80 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 70 - 100 %$(br)$(bold)Nutrient$(): Nitrogen$(br2)Cassava can be eaten for $(thing)Vegetable$() nutrition, although it is best $(thing)cooked$() before consumed.$(br)"
+			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 10 - 80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 70 - 100 %$(br)$(bold)Nutrient$(): Nitrogen$(br2)Cassava can be eaten for $(thing)Vegetable$() nutrition, although it is best $(thing)cooked$() before consumed.$(br)"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -140,7 +140,7 @@
 			"type": "patchouli:text",
 			"anchor": "peanut",
 			"title": "Peanut",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 10 - 80 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 20 - 80 %$(br)$(bold)Nutrient$(): Potassium$(br2)Peanuts can be eaten for $(thing)Vegetable$() and $(thing)Protein$() nutrition"
+			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 10 - 80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 20 - 80 %$(br)$(bold)Nutrient$(): Potassium$(br2)Peanuts can be eaten for $(thing)Vegetable$() and $(thing)Protein$() nutrition"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -255,7 +255,7 @@
 			"type": "patchouli:text",
 			"anchor": "beans",
 			"title": "Blackstone Beans",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 10 - 80 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 20 - 80 %$(br)$(bold)Nutrient$(): Potassium$(br2)Blackstone Beans can be eaten for $(thing)Vegetable$() and $(thing)Protein$() nutrition. However, they must be cooked first!"
+			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 10 - 80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 20 - 80 %$(br)$(bold)Nutrient$(): Potassium$(br2)Blackstone Beans can be eaten for $(thing)Vegetable$() and $(thing)Protein$() nutrition. However, they must be cooked first!"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -370,7 +370,7 @@
 			"type": "patchouli:text",
 			"anchor": "ghost_pepper",
 			"title": "Ghost Pepper",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 10 - 80 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 20 - 80 %$(br)$(bold)Nutrient$(): Nitrogen$(br2)Ghost Peppers can be eaten for $(thing)Vegetable$() nutrition. They are also a common snack among the inhabitants of the Beneath."
+			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 10 - 80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 20 - 80 %$(br)$(bold)Nutrient$(): Nitrogen$(br2)Ghost Peppers can be eaten for $(thing)Vegetable$() nutrition. They are also a common snack among the inhabitants of the Beneath."
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -484,7 +484,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "cotton",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 10 - 80 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 40 - 100 %$(br)$(bold)Nutrient$(): Nitrogen$(br2)Cotton is a two block tall crop. Cotton seeds can be planted on farmland, will grow two blocks tall, and will produce $(item)Cotton Balls$() which can be processed into $(thing)Cotton String$() or $(thing)Cloth$().",
+			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 10 - 80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 40 - 100 %$(br)$(bold)Nutrient$(): Nitrogen$(br2)Cotton is a two block tall crop. Cotton seeds can be planted on farmland, will grow two blocks tall, and will produce $(item)Cotton Balls$() which can be processed into $(thing)Cotton String$() or $(thing)Cloth$().",
 			"title": "Cotton"
 		},
 		{

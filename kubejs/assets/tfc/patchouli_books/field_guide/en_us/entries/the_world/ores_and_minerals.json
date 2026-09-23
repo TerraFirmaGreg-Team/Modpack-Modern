@@ -927,7 +927,7 @@
       "item": "tfc:ore/borax",
       "title": "Borax",
       "link_recipes": false,
-      "text": "Borax is a $(thing)Mineral$() which can be ground in the $(l:craftsmanship/quern)Quern$() to produce $(l:mechanics/flux)Flux$(). It can be found in very large flat deposits near the surface in $(thing)Claystone$(), $(thing)Limestone$(), and $(thing)Shale$()."
+      "text": "Borax is a $(thing)Mineral$() which can be ground in the $(l:craftsmanship/quern)Quern$() to produce $(thing)Flux$(). It can be found in very large flat deposits near the surface in $(thing)Claystone$(), $(thing)Limestone$(), and $(thing)Shale$()."
     },
     {
       "type": "patchouli:multiblock",
@@ -1062,7 +1062,7 @@
       "item": "tfc:ore/lapis_lazuli",
       "title": "Lapis Lazuli",
       "link_recipes": false,
-      "text": "Lapis Lazuli is a decorative $(thing)Mineral$() which can be used to make $(l:mechanics/dye)Blue Dye$(). It can be found in large, but sparse veins in $(thing)Limestone$() and $(thing)Marble$(), between y=-20 and y=80."
+      "text": "Lapis Lazuli is a decorative $(thing)Mineral$() which can be used to make $(thing)Blue Dye$(). It can be found in large, but sparse veins in $(thing)Limestone$() and $(thing)Marble$(), between y=-20 and y=80."
     },
     {
       "type": "patchouli:multiblock",

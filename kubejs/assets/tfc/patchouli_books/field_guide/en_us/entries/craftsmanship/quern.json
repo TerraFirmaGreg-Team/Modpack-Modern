@@ -64,7 +64,7 @@
         {
             "type": "tfc:quern_recipe",
             "recipe": "tfc:quern/red_dye",
-            "text": "$(l:mechanics/dye)Dye$() can be obtained from various flowers.",
+            "text": "$(thing)Dye$() can be obtained from various flowers.",
             "title": "Dyes"
         },
         {

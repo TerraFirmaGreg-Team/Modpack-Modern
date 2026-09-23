@@ -19,7 +19,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "Plants may be difficult to find during some $(l:the_world/climate#seasons)Seasons$() as they go through cycles of flowering and laying dormant, or changing color as the local temperature changes.$(br2)Colorful flowers can typically be crushed in a $(l:craftsmanship/quern)Quern$() for $(l:mechanics/dye)Dye$(). While some plants can be used for making $(l:the_world/flora#medicinal_plants)medicine$() or $(l:the_world/flora#spices)meals$()."
+            "text": "Plants may be difficult to find during some $(l:the_world/climate#seasons)Seasons$() as they go through cycles of flowering and laying dormant, or changing color as the local temperature changes.$(br2)Colorful flowers can typically be crushed in a $(l:craftsmanship/quern)Quern$() for $(thing)Dye$(). While some plants can be used for making $(l:the_world/flora#medicinal_plants)medicine$() or $(l:the_world/flora#spices)meals$()."
         },
         {
             "type": "patchouli:multiblock",
@@ -382,7 +382,7 @@
                 "tag": "tfg:foods/spice_plants"
             },
             "anchor": "spices",
-			"text": "With $(thing)Firmalife$(), there are a number of small plants you can collect and grow on your own, which have cooking properties. They can all be found in the wild, and once harvested, may be cultivated in a $(l:firmalife/greenhouse)Greenhouse$(), in which they consume 20 points of N, P, and K."
+			"text": "With $(thing)Firmalife$(), there are a number of small plants you can collect and grow on your own, which have cooking properties. They can all be found in the wild, and once harvested, may be cultivated in a $(l:agriculture/greenhouse)Greenhouse$(), in which they consume 20 points of N, P, and K."
 		},
         {
             "type": "tfc:table",
@@ -685,7 +685,8 @@
                 "tfc:the_world/wild_fruits",
                 "tfc:the_world/wild_animals",
                 "tfc:the_world/wild_crops",
-                "tfc:the_world/earth_tree_index"
+                "tfc:the_world/earth_tree_index",
+                "tfc:agriculture/greenhouse"
             ]
         }
     ],

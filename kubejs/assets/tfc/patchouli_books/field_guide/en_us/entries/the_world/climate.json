@@ -81,7 +81,7 @@
         {
             "type": "patchouli:text",
             "anchor": "rainfall",
-            "text": "Rainfall is another climate value that can vary depending on where you are in the world and determines flora growth.$(br2)Rainfall is one of the main contributors to $(l:mechanics/hydration)Hydration$(), which is an exact measure of how wet the soil is in a given location, and is used by $(l:mechanics/crops)Crops$(), $(l:the_world/wild_fruits#fruit_trees)Fruit Trees$(), and $(l:the_world/wild_fruits#tall_bushes)Berry Bushes$() to determine if they can grow.",
+            "text": "Rainfall is another climate value that can vary depending on where you are in the world and determines flora growth.$(br2)Rainfall is one of the main contributors to $(l:agriculture/growing_crops#hydration)Hydration$(), which is an exact measure of how wet the soil is in a given location, and is used by $(l:agriculture/growing_crops)Crops$(), $(l:the_world/wild_fruits#fruit_trees)Fruit Trees$(), and $(l:the_world/wild_fruits#tall_bushes)Berry Bushes$() to determine if they can grow.",
             "title": "Annual Rainfall"
         },
         {
@@ -104,7 +104,9 @@
                 "tfc:the_world/geology",
                 "tfc:the_world/wild_fruits",
                 "tfc:the_world/wild_crops",
-                "tfc:the_world/flora"
+                "tfc:the_world/flora",
+                "tfc:agriculture/growing_crops",
+                "tfc:craftsmanship/pottery"
             ]
         }
     ],
