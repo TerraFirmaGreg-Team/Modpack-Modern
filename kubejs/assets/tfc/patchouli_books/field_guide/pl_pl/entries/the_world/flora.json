@@ -41,7 +41,7 @@
           "X": "tfc:plant/sagebrush"
         }
       },
-      "name": "Klimat suchy",
+      "name": "Suche rośliny",
       "text": "Dry plants are like standard plants, but they can grow on sand. These generally only spawn in areas with low rainfall.",
       "enable_visualize": false
     },
@@ -124,7 +124,7 @@
         }
       },
       "name": "Niska trawa",
-      "text": "Short grass blocks grow taller with age. They also are able to grow on peat and mud.",
+      "text": "Bloki niskiej trawy z czasem zwiększają wysokość. Mogą także rosnąć na torfie i błocie.",
       "enable_visualize": false
     },
     {
@@ -147,7 +147,7 @@
         }
       },
       "name": "Wysoka trawa",
-      "text": "Wysokie bloki trawy są na tyle wysokie, aby zablokować twoje pole widzenia.",
+      "text": "Wysokie bloki trawy są na tyle wysokie, aby zasłonić twoje pole widzenia.",
       "enable_visualize": false
     },
     {
@@ -165,7 +165,7 @@
           "X": "tfc:plant/ivy[up=true,north=true]"
         }
       },
-      "name": "Winorośla",
+      "name": "Pnącza",
       "text": "Bloki pnączy rozprzestrzeniają się po świecie samodzielnie, jeśli jest wystarczająco ciepło.",
       "enable_visualize": false
     },
@@ -189,7 +189,7 @@
         }
       },
       "name": "Lamentorośle",
-      "text": "Płaczące pnącza rosną w dół.",
+      "text": "Lamentorośle rosną w dół od bloku, do którego są zaczepione.",
       "enable_visualize": false
     },
     {
@@ -235,8 +235,8 @@
           "X": "tfc:plant/sago[fluid=water]"
         }
       },
-      "name": "Standardowa woda",
-      "text": "Standard water plants can be broken with a $(thing)$()Knife$() to get $(thing)Seaweed$().",
+      "name": "Standardowe rośliny wodne",
+      "text": "Standardowe rośliny wodne można ścinać $(thing)$()nożem$(), aby pozyskać $(thing)wodorosty$().",
       "enable_visualize": false
     },
     {

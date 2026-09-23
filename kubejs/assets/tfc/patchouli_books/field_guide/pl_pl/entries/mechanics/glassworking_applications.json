@@ -77,12 +77,12 @@
     },
     {
       "type": "patchouli:text",
-      "text": "$(li)$(bold)$(7)White$(): Silica or Hematitic Glass + $(thing)Soda Ash$()$(li)$(bold)$(0)Black$(): Any Glass + $(thing)Graphite$()$(li)$(bold)$(8)Gray$(): Any + $(thing)Graphite$() + $(thing)Soda Ash$()$(li)$(bold)$(7)Light Gray$(): Any + $(thing)Graphite$() + 2x $(thing)Soda Ash$()$(li)$(bold)$(5)Purple$(): Any + $(thing)Iron$() + $(thing)Copper$()$(li)$(bold)$(#964b00)Brown$(): Any + $(thing)Nickel$()$(li)$(bold)$(3)Cyan$(): Non-Volcanic Glass + $(thing)Copper$() + $(thing)Sapphire$()$(li)$(bold)$(2)Green$(): Silica or Hematitic Glass + $(thing)Iron$()",
+      "text": "$(li)$(bold)$(7)Białe$(): szkło krzemionkowe lub hematytowe + $(thing)soda kalcynowana$()$(li)$(bold)$(0)Czarne$(): dowolne + $(thing)sproszkowany grafit$()$(li)$(bold)$(8)Szare$(): dowolne + $(thing)sproszkowany grafit$() + $(thing)soda kalcynowana$()$(li)$(bold)$(7)Jasnoszare$(): dowolne + $(thing)sproszkowany grafit$() + 2× $(thing)soda kalcynowana$()$(li)$(bold)$(5)Fioletowe$(): dowolne + $(thing)żelazo$() + $(thing)miedź$()$(li)$(bold)$(#964b00)Brązowe$(): dowolne + $(thing)nikiel$()$(li)$(bold)$(3)Jasnoniebieskie$(): szkło niewulkaniczne + $(thing)miedź$() + $(thing)szafir$()$(li)$(bold)$(2)Zielone$(): szkło krzemionkowe lub hematytowe + $(thing)żelazo$()",
       "title": "Kolory barwników"
     },
     {
       "type": "patchouli:text",
-      "text": "$(li)$(bold)$(a)Lime$(): Silica or Hematitic Glass + $(thing)Iron$() + $(thing)Soda Ash$()$(li)$(bold)$(b)Light Blue$(): Silica Glass + $(thing)Lapis Lazuli$()$(li)$(bold)$(1)Blue$(): Silica Glass + $(thing)Copper$()$(li)$(bold)$(4)Red$(): Silica or Hematitic Glass + $(thing)Tin$()$(li)$(bold)$(6)Yellow$(): Silica or Hematitic Glass + $(thing)Silver$()$(li)$(bold)$(#ef8e38)Orange$(): Silica Glass + $(thing)Pyrite$()$(li)$(bold)$(5)Magenta$(): Silica or Hematitic Glass + $(thing)Ruby$()$(li)$(bold)$(d)Pink$(): Silica Glass + $(thing)Gold$()$(li)$(bold)$(0)Tinted$(): Non-Silica Glass + $(thing)Amethyst$()"
+      "text": "$(li)$(bold)$(a)Jasnozielone$(): szkło krzemionkowe lub hematytowe + $(thing)żelazo$() + $(thing)soda kalcynowana$()$(li)$(bold)$(b)Jasnoniebieskie$(): szkło krzemionkowe + $(thing)lazuryt$()$(li)$(bold)$(1)Niebieskie$(): szkło krzemionkowe + $(thing)miedź$()$(li)$(bold)$(4)Czerwone$(): szkło krzemionkowe lub hematytowe + $(thing)cyna$()$(li)$(bold)$(6)Żółte$(): szkło krzemionkowe lub hematytowe + $(thing)srebro$()$(li)$(bold)$(#ef8e38)Pomarańczowe$(): szkło krzemionkowe + $(thing)piryt$()$(li)$(bold)$(5)Purpurowe$(): szkło krzemionkowe lub hematytowe + $(thing)rubin$()$(li)$(bold)$(d)Różowe$(): szkło krzemionkowe + $(thing)złoto$()$(li)$(bold)$(0)Przyciemnione$(): szkło inne niż krzemionkowe + $(thing)ametyst$()"
     },
     {
       "type": "tfc:table_small",
@@ -373,7 +373,7 @@
           "fill": "0x3eb340"
         }
       ],
-      "text": "Dostępność kolorów szkła. \"C\" - przezroczyste, \"T\" - barwione. Określone kolory mogą być wytwarzane tylko z niektórymi typami szklanych partii.",
+      "text": "Dostępność kolorów szkła. \"C\" - przezroczyste, \"T\" - przyciemniane. Określone kolory mogą być wytwarzane tylko z niektórych typów szkła.",
       "title": "Dostępność kolorów szkła",
       "legend": [
         {
@@ -405,24 +405,24 @@
       "type": "tfc:glassworking_recipe",
       "anchor": "lamp_glass",
       "recipe": "tfg:glassworking/lamp_glass",
-      "text": "$(thing)Lamp Glass$() is a necessary component to craft $(l:mechanics/lamps)Lamps$()."
+      "text": "$(thing)Szkło lampowe$() to niezbędny element do stworzenia $(l:mechanics/lamp)lamp$()."
     },
     {
       "type": "tfc:glassworking_recipe",
       "anchor": "jar",
       "recipe": "tfc:glassworking/jar",
-      "text": "$(l:mechanics/jarring)Jars$() are also made from blown glass, but only silica or hematitic glass."
+      "text": "$(l:mechanics/jarring)Słoiki$() są również robione z dmuchanego szkła, ale wyłącznie z krzemionkowego albo hematytowego."
     },
     {
       "type": "tfc:glassworking_recipe",
       "anchor": "glass_bottle",
       "recipe": "tfc:glassworking/silica_bottle",
-      "text": "$(thing)Glass Bottles$() can also be made. The quality of the glass bottle depends on the type of glass used to make it."
+      "text": "Szkło może posłużyć także do tworzenia $(thing)butelek$(). Jakość butelki zależy od rodzaju szkła użytego do jej wykonania."
     },
     {
       "type": "tfc:glassworking_recipe",
       "recipe": "tfc:glassworking/lens",
-      "text": "$(thing)Soczewka$() jest używana do tworzenia $(thing)lunety$(), $(thing)kompasu$() i innych rzeczy."
+      "text": "$(thing)Soczewki$() są używane do tworzenia $(thing)lunety$(), $(thing)kompasu$() i innych rzeczy."
     }
   ],
   "read_by_default": true,

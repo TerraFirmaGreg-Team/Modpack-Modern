@@ -35,7 +35,7 @@
       "type": "tfc:knapping_recipe",
       "anchor": "blowpipe",
       "recipe": "tfc:clay_knapping/blowpipe",
-      "text": "The most important tool is the $(thing)Blowpipe$(). It can be $(thing)knapped$() from clay, and then fired into a $(thing)Ceramic Blowpipe$()."
+      "text": "Najważniejszym narzędziem jest $(thing)dmuchawa$(). Można ją $(thing)wyrzeźbić$() z gliny, a następnie wypalić, aby otrzymać $(thing)ceramiczną dmuchawę$()."
     },
     {
       "type": "tfc:anvil_recipe",
@@ -46,7 +46,7 @@
       "type": "patchouli:crafting",
       "anchor": "paddle",
       "recipe": "tfc:crafting/paddle",
-      "text": "The $(thing)Flatten$() operation can be done with a $(thing)Paddle$(), which is crafted from wood."
+      "text": "Operację $(thing)rozpłaszczania$() można wykonać $(thing)łopatką$(), którą tworzy się z drewna."
     },
     {
       "type": "tfc:welding_recipe",

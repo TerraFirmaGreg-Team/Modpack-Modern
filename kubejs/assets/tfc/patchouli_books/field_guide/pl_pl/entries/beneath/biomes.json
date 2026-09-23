@@ -59,7 +59,7 @@
 				"tfg:textures/gui/field_guide/nether/geothermal_springs.png"
 			],
 			"border": true,
-			"text": "No Sulfur Cubes here, but this steamy biome can be a great place to find $(thing)Spring Water$() for healing."
+			"text": "Nie ma tu siarkowych kostek, ale w tym parnym biomie można znaleźć $(thing)wodę źródlaną$(), która przydaje się do leczenia."
 		},
 		{
 			"type": "patchouli:image",
@@ -68,7 +68,7 @@
 				"tfg:textures/gui/field_guide/nether/thorny_brambles.png"
 			],
 			"border": true,
-			"text": "A difficult to traverse biome with plants that affect you when stepped on. Watch out!"
+			"text": "Trudny do podróżowania biom z roślinami, które ranią ciebie po nadepnięciu. Uważaj!"
 		},
 		{
 			"type": "patchouli:image",
@@ -104,7 +104,7 @@
 				"tfg:textures/gui/field_guide/nether/basalt_deltas.png"
 			],
 			"border": true,
-			"text": "Everyone's favourite nether biome returns, and is just as dangerous to navigate as ever."
+			"text": "Twój ulubiony netherowy biom powraca i jest tak samo niebezpieczny do przechodzenia, jak zwykle."
 		}
 	],
 	"read_by_default": true

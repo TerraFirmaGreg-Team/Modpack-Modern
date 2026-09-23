@@ -11,22 +11,22 @@
       "type": "patchouli:spotlight",
       "item": "firmalife:plant/wild_red_grapes",
       "link_recipes": false,
-      "text": "Red grapes spawn from 0-30 C, and 125-500 rainfall, or almost the entire habitable area."
+      "text": "Czerwone winogrona występują przy temperaturze od 0 do 30°C i opadach od 125 do 500 mm, czyli niemal na całym obszarze nadającym się do zamieszkania."
     },
     {
       "type": "patchouli:spotlight",
       "item": "firmalife:plant/wild_white_grapes",
       "link_recipes": false,
-      "text": "White grapes spawn from 0-30 C, and 125-500 rainfall, or almost the entire habitable area."
+      "text": "Białe winogrona występują przy temperaturze od 0 do 30°C i opadach od 125 do 500 mm, czyli niemal na całym obszarze nadającym się do zamieszkania."
     },
     {
       "type": "patchouli:crafting",
       "recipe": "firmalife:crafting/grape_trellis_post",
-      "text": "Grapes must be grown on trellises constructed from these special posts and jute fiber."
+      "text": "Winogrona muszą rosnąć na podporach zbudowanych ze specjalnych słupków i włókna jutowego."
     },
     {
       "type": "patchouli:text",
-      "text": "To construct a trellis, place two posts on top of each other. Move two blocks to the left or right and repeat the action. Then, $(item)$(k:key.use)$() the side of one of the top and bottom posts with $(thing)Jute Fiber$() to string lines between the posts. Grape trellises can be chained horizontally to create rows of grapes."
+      "text": "Aby zbudować podporę, ustaw dwa słupki jeden na drugim. Przesuń się o dwa bloki w lewo lub w prawo i powtórz czynność. Następnie połóż $(thing)włókno jutowe$() na boku jednego z górnych albo dolnych słupków za pomocą $(item)$(k:key.use)$(), aby rozciągnąć między słupkami linki. Podpory winorośli można łączyć poziomo, tworząc rzędy winogron."
     },
     {
       "type": "tfc:multimultiblock",
@@ -72,7 +72,7 @@
     {
       "type": "patchouli:crafting",
       "recipe": "firmalife:crafting/wood/acacia_stomping_barrel",
-      "text": "The stomping barrel is used to smash grapes. A quern may also be used."
+      "text": "Beczka do deptania służy do rozgniatania winogron. Można też użyć żaren."
     },
     {
       "type": "patchouli:text",
