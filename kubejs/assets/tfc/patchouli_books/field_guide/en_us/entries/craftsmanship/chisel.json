@@ -32,7 +32,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "Be careful! Chiseling in a mineshaft is not safe. Each time you chisel, there is a chance of $(l:mechanics/support_beams)Collapse$()."
+            "text": "Be careful! Chiseling in a mineshaft is not safe. Each time you chisel, there is a chance of $(l:game_mechanics/mining#supports)Collapse$()."
         },
         {
             "type": "patchouli:relations",

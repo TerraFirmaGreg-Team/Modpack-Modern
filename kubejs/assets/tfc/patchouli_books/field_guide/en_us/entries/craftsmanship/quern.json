@@ -5,7 +5,7 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "The $(thing)Quern$() is a device for grinding items. It can crush raw ores for $(l:tfg_ores/ore_basics#processing)processing$(), as well as make powders, $(thing)dyes$(), and some other items. It is assembled from a $(thing)Base$() and $(thing)Handstone$().$(br)Querns can be automated by supplying $(thing)Mechanical Power$() to their top face at <32RPM."
+            "text": "The $(thing)Quern$() is a device for grinding items. It can crush raw ores for $(l:game_mechanics/mining#processing)processing$(), as well as make powders, $(thing)dyes$(), and some other items. It is assembled from a $(thing)Base$() and $(thing)Handstone$().$(br)Querns can be automated by supplying $(thing)Mechanical Power$() to their top face at <32RPM."
         },
         {
             "type": "patchouli:crafting",
@@ -52,7 +52,7 @@
         {
             "type": "tfc:quern_recipe",
             "recipe": "tfg:quern/copper_crushed_ore_from_normal_raw_ore",
-            "text": "$(l:tfg_ores/ore_basics#processing)Ores$() can be crushed to obtain more metal.",
+            "text": "$(l:game_mechanics/mining#processing)Ores$() can be crushed to obtain more metal.",
             "title": "Crushed Ore"
         },
         {
@@ -79,7 +79,8 @@
             "entries": [
                 "tfc:the_world/geology",
                 "tfc:cooking/bread",
-                "tfc:craftsmanship/metallurgy"
+                "tfc:craftsmanship/metallurgy",
+                "tfc:game_mechanics/mining"
             ]
         }
     ],

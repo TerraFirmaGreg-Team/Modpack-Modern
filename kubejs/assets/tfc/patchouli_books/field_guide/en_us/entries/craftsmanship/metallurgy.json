@@ -104,7 +104,7 @@
         {
             "type": "patchouli:spotlight",
             "item": "gtceu:copper_saw",
-            "text": "The saw allows you turn wood logs into $(l:mechanics/support_beams)support beams$() and $(thing)lumber$(), which can further be crafted into planks, the crafting bench, barrels, and chests, among other things. It is also useful to make a $(l:firmaciv/canoe)canoe$()."
+            "text": "The saw allows you turn wood logs into $(l:game_mechanics/mining#supports)support beams$() and $(thing)lumber$(), which can further be crafted into planks, the crafting bench, barrels, and chests, among other things. It is also useful to make a $(l:logistics/boats#canoe)canoe$()."
         },
         {
             "type": "patchouli:text",
@@ -211,7 +211,7 @@
                 "tfc:craftsmanship/blast_furnace",
                 "tfc:craftsmanship/bloomery",
                 "tfc:craftsmanship/anvils",
-                "tfc:craftsmanship/glassworking"
+                "tfc:game_mechanics/mining"
             ]
         }
     ],

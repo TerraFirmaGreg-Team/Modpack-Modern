@@ -5,7 +5,7 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "A $(thing)Blast Furnace$() is an advanced device which is used in the creation of $(thing)Steel$(). By mixing $(l:craftsmanship/metallurgy)Iron Ores$(), $(l:craftsmanship/charcoal_pit#coke_oven)Coke$() or $(l:beneath/beneath_vein_index)Anthracite$(), and $(item)Flux$() in a controlled, hot environment, you can create a stronger metal than cast or wrought iron.$(br2)To obtain a blast furnace, you will first need a $(l:craftsmanship/crucible)Crucible$() and a lot of $(l:craftsmanship/bloomery)Wrought Iron Plates$()."
+            "text": "A $(thing)Blast Furnace$() is an advanced device which is used in the creation of $(thing)Steel$(). By mixing $(l:craftsmanship/metallurgy)Iron Ores$(), $(l:craftsmanship/charcoal_pit#coke_oven)Coke$() or $(thing)Anthracite$(), and $(item)Flux$() in a controlled, hot environment, you can create a stronger metal than cast or wrought iron.$(br2)To obtain a blast furnace, you will first need a $(l:craftsmanship/crucible)Crucible$() and a lot of $(l:craftsmanship/bloomery)Wrought Iron Plates$()."
         },
         {
             "type": "patchouli:text",
@@ -217,7 +217,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "For every 144mb of iron added, 1 flux must pair with it. Any iron ores or items that are able to melt into $(thing)Cast Iron$() will do. You will also need to add $(l:craftsmanship/charcoal_pit#coke_oven)Coke$() or $(l:beneath/beneath_vein_index)Anthracite$(), which will be consumed as the blast furnace works.$(br)As a basic guide you will need 576mb of iron, and 4 flux per layer. And about 4-8 coke. Fuel usage does not increase with layers."
+            "text": "For every 144mb of iron added, 1 flux must pair with it. Any iron ores or items that are able to melt into $(thing)Cast Iron$() will do. You will also need to add $(l:craftsmanship/charcoal_pit#coke_oven)Coke$() or $(thing)Anthracite$(), which will be consumed as the blast furnace works.$(br)As a basic guide you will need 576mb of iron, and 4 flux per layer. And about 4-8 coke. Fuel usage does not increase with layers."
         },
         {
             "type": "patchouli:text",

@@ -195,7 +195,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "Glass has a natural color based on the type of $(l:craftsmanship/glassworking)Glass Batch$() that was used. Other colors can be made using a $(l:coooking/bowls#powder_bowl)Bowl$().$(br2)To use, place the $(l:cooking/bowls)Bowl$() on the ground, then $(item)$(k:key.use)$() the required $(thing)Powder$(). Before $(thing)Pouring$(), use the $(thing)Blowpipe$() on the bowl to add the powder to the batch.",
+            "text": "Glass has a natural color based on the type of $(l:craftsmanship/glassworking)Glass Batch$() that was used. Other colors can be made using a $(l:cooking/bowls#powder_bowl)Bowl$().$(br2)To use, place the $(l:cooking/bowls)Bowl$() on the ground, then $(item)$(k:key.use)$() the required $(thing)Powder$(). Before $(thing)Pouring$(), use the $(thing)Blowpipe$() on the bowl to add the powder to the batch.",
             "anchor": "coloring",
             "title": "Coloring Glass"
         },

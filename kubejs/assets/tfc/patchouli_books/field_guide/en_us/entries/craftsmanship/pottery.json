@@ -177,7 +177,7 @@
             "type": "patchouli:spotlight",
             "item": "tfc:powder/kaolinite",
             "anchor": "kaolinite_powder",
-            "text": "Kaolinite powder is made by heating $(l:craftsmanship/kaolin_clay)Kaolin Clay$(). However, the process is not perfect, and only 20% of clay will form powder!$(br2)In order to mass produce kaolinite powder early on, it is recommended to fill small vessels with kaolin clay blocks and then place these vessels in a $(l:craftsmanship/pit_kiln)Pit Kiln$() to cook on-site. With this method you can cook up to 1,024 kaolin clay at a time per pit kiln."
+            "text": "Kaolinite powder is made by heating $(l:craftsmanship/pottery#kaolin_clay)Kaolin Clay$(). However, the process is not perfect, and only 20% of clay will form powder!$(br2)In order to mass produce kaolinite powder early on, it is recommended to fill small vessels with kaolin clay blocks and then place these vessels in a $(l:craftsmanship/pit_kiln)Pit Kiln$() to cook on-site. With this method you can cook up to 1,024 kaolin clay at a time per pit kiln."
         },
         {
             "type": "patchouli:text",
