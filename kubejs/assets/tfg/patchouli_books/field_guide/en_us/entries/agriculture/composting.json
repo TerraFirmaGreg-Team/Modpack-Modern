@@ -150,7 +150,6 @@
     "read_by_default": true,
     "extra_recipe_mappings": {
           "tfc:composter": 1,
-          "tfc:compost": 1,
           "tfg:universal_compost_greens": 6,
           "tfg:universal_compost_greens_bag": 6,
           "tfg:universal_compost_browns": 7,
