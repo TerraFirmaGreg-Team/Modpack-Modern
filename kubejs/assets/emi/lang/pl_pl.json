@@ -140,6 +140,8 @@
 	"emi.cooking.time": "%s sekund(a)",
 	"emi.cost_per": "Koszt partii:",
 	"emi.delete_stack": "§cUsuń trzymany stos",
+	"emi.dev.null_input_or_output": "Wejścia lub wyjścia przepisu mają wartość §7null§r\nUżyj pustej listy, jeśli przepis nie ma wejść ani wyjść\nUżyj §7EmiStack.EMPTY§r, aby reprezentować pusty stos",
+	"emi.dev.null_recipe_id": "ID przepisu to §7null§r\nPrzepisy muszą mieć unikalne identyfikatory, aby można było je serializować\nWpłynie to tylko na ten przepis",
 	"emi.dev.severity.error": "Błąd",
 	"emi.dev.severity.warning": "Ostrzeżenie",
 	"emi.dev.suggest_id": "Użyj syntetycznego ID §7[namespace]§b:/§7[path]§r jak\n§7%s§b:/§7%s§r",
