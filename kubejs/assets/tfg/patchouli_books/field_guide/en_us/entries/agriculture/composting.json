@@ -17,7 +17,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "Composters operate better in certain conditions. Composters that have a block of snow on top work slightly faster. Composters in regions of $(6)>150mm$() or $(3)<350mm$() of rainfall operate much slower, with that effect getting stronger closer to the maximum and minimum rainfall. Also, composters that are touching other composters work slower."
+            "text": "Composters operate better in certain conditions. Composters that have a block of snow on top work slightly faster. Composters in regions of $(6)<150mm$() or $(3)>350mm$() of rainfall operate much slower, with that effect getting stronger closer to the maximum and minimum rainfall. Also, composters that are touching other composters work slower."
         },
         {
             "type": "tfg:multimultiblock",
@@ -93,7 +93,7 @@
             "title": "Compost Poisons",
             "anchor": "compost_poisons",
             "item": "tag:tfc:compost_poisons",
-            "text": "Some items will $(c)poison$() your compost. These include $(c)meat$() and $(c)bones$(). Poison compost, when used on a crop, instantly kills it. If the crop is fully mature when it dies it will yield multiple seeds. Crops that can be used in compost like grains and vegetables will work even when rotten. They are not compost poisons. "
+            "text": "Some items will $(c)poison$() your compost, turning it rotten. These include $(c)meat$() and $(c)bones$(). Rotten compost, when used on a crop, instantly kills it. If the crop is fully mature when it dies it will yield multiple seeds. Crops that can be used in compost like grains and vegetables will work even when rotten. They are not compost poisons. "
         },
         {
             "type": "patchouli:multiblock",
