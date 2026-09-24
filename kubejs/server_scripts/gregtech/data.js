@@ -146,7 +146,7 @@ const registerGTCEUMetals = (event) => {
 
 	event.metal('gtceu:vanadium_steel', 2073, 0.00857, '#forge:ingots/vanadium_steel', '#forge:double_ingots/vanadium_steel', '#forge:plates/vanadium_steel', 7, 'tfg:vanadium_steel')
 	event.metal('gtceu:ultimet', 1980, 0.005, '#forge:ingots/ultimet', '#forge:double_ingots/ultimet', '#forge:plates/ultimet', 8, 'tfg:ultimet')
-	event.metal('tfg:boron_carbide', 3041, 0.005, '#forge:ingots/boron_carbide', '#forge:double_ingots/boron_carbide', '#forge:plates/boron_carbide', 8, 'tfg:boron_carbide')
+	event.metal(null, 3041, 0.005, '#forge:ingots/boron_carbide', '#forge:double_ingots/boron_carbide', '#forge:plates/boron_carbide', 8, 'tfg:boron_carbide')
 	event.metal('gtceu:tungsten_carbide', 3058, 0.005, '#forge:ingots/tungsten_carbide', '#forge:double_ingots/tungsten_carbide', '#forge:plates/tungsten_carbide', 9, 'tfg:tungsten_carbide')
 	event.metal('gtceu:ostrum_iodide', 3700, 0.005, '#forge:ingots/ostrum_iodide', '#forge:double_ingots/ostrum_iodide', '#forge:plates/ostrum_iodide', 9, 'tfg:ostrum_iodide')
 }

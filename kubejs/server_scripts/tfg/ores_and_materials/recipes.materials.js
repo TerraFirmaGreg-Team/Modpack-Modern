@@ -155,16 +155,19 @@ function addMaterialCasting(event, outputItem, ceramicMold, isFireMold, gtMold, 
 		&& ceramicMold !== null
 		// Liquid wrought iron doesn't exist in the TFC era
 		&& material !== GTMaterials.WroughtIron) {
+
 		const outputMaterial = (tfcProperty.getOutputMaterial() === null) ? material : tfcProperty.getOutputMaterial();
 		const id = `${materialName}_${tagPrefixName}_${isFireMold ? 'fire' : 'ceramic'}`;
 
-		event.recipes.tfc.casting(outputItem, ceramicMold, Fluid.of(outputMaterial.getFluid(), mbAmount), isFireMold ? 0.01 : 0.1)
-			.id(`tfg:casting/${id}`);
+		if (outputMaterial.hasProperty(PropertyKey.FLUID)) {
+			event.recipes.tfc.casting(outputItem, ceramicMold, Fluid.of(outputMaterial.getFluid(), mbAmount), isFireMold ? 0.01 : 0.1)
+				.id(`tfg:casting/${id}`);
 
-		event.recipes.create.filling(Item.of(ceramicMold, getFillingNBT(outputMaterial, mbAmount)), [
-			Fluid.of(outputMaterial.getFluid(), mbAmount),
-			Item.of(ceramicMold).strongNBT()
-		]).id(`tfg:filling/${id}`);
+			event.recipes.create.filling(Item.of(ceramicMold, getFillingNBT(outputMaterial, mbAmount)), [
+				Fluid.of(outputMaterial.getFluid(), mbAmount),
+				Item.of(ceramicMold).strongNBT()
+			]).id(`tfg:filling/${id}`);
+		}
 	}
 
 	// If there's a gregtech mold, add alloy smelter/fluid solidifier recipes.
@@ -190,12 +193,14 @@ function addMaterialCasting(event, outputItem, ceramicMold, isFireMold, gtMold, 
 				.category(GTRecipeCategories.INGOT_MOLDING)
 		}
 
-		event.recipes.gtceu.fluid_solidifier(`tfg:solidify_${materialName}_${tagPrefixName}`)
-			.inputFluids(Fluid.of(material.getFluid(), mbAmount))
-			.notConsumable(gtMold)
-			.itemOutputs(outputItem)
-			.duration(material.getMass() * ingotAmount)
-			.EUt(getFluidRecipeEUt(material))
+		if (material.hasProperty(PropertyKey.FLUID)) {
+			event.recipes.gtceu.fluid_solidifier(`tfg:solidify_${materialName}_${tagPrefixName}`)
+				.inputFluids(Fluid.of(material.getFluid(), mbAmount))
+				.notConsumable(gtMold)
+				.itemOutputs(outputItem)
+				.duration(material.getMass() * ingotAmount)
+				.EUt(getFluidRecipeEUt(material))
+		}
 	}
 }
 
