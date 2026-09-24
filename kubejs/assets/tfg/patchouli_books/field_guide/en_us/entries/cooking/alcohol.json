@@ -55,7 +55,7 @@
       "type": "patchouli:text",
       "anchor": "wine_properties",
       "title": "Drinking Wine",
-      "text": "The discerning sommelier will be able to detect subtleties in the wine that is produced under different conditions. Indeed, this is possible in the world of Firmalife as well. It starts in the fields in which those grapes were grown -- a row of grapes is deeply affected by the ambient environment and soil."
+      "text": "The discerning sommelier will be able to detect subtleties in the wine that is produced under different conditions. Indeed, this is possible in the world of $(tfg_short) as well. It starts in the fields in which those grapes were grown -- a row of grapes is deeply affected by the ambient environment and soil."
     },
     {
       "type": "patchouli:text",

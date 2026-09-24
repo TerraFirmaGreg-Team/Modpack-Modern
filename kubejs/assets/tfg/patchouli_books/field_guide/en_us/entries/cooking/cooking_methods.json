@@ -131,7 +131,7 @@
             "type": "patchouli:text",
             "title": "Oven Building",
             "anchor": "oven_building",
-            "text": "The $(thing)Oven$() first consists of the Top Oven placed on top of the Bottom Oven. All sides of each oven part, besides the front face, should then be covered with $(thing)$(t:#firmalife:oven_insulation)Oven Insulation$() blocks. Placing a stack of chimneys directly behind the oven causes the smoke from the oven to travel up and out of it. If you don't do this, smoke will quickly fill up your house!"
+            "text": "The $(thing)Oven$() first consists of the Top Oven placed on top of the Bottom Oven. All sides of each oven part, besides the front face, should then be covered with $(thing)$(t:#firmalife:oven_insulation)Oven Insulation$() blocks. Placing a stack of three chimneys directly behind the oven causes the smoke from the oven to travel up and out of it, preventing fires. If you don't do this, smoke will quickly fill up your house and fire may spread from the oven!"
         },
         {
             "type": "patchouli:text",
@@ -284,7 +284,7 @@
             "title": "Oven Hopper",
             "anchor": "oven_hopper",
             "item": "firmalife:oven_hopper",
-            "text": "The $(thing)Oven Hopper$() will input logs into any Bottom Oven that it is facing. It holds 16 logs (4 stacks of 4, like a log pile), and its inventory is fed by dropping items in the top. However, it is pretty useless in $(tfg_short) since item pipes can do the same thing."
+            "text": "The $(thing)Oven Hopper$() will input logs into any Bottom Oven that it is facing. It holds 16 logs (4 stacks of 4, like a log pile), and its inventory is fed by dropping items in the top. Item pipes are capable of doing the same thing, but they cannot act as insulation."
         },
         {
             "type": "patchouli:spotlight",
@@ -439,7 +439,7 @@
             "title": "Jarring Station",
             "anchor": "jarring_station",
             "item": "firmalife:jarring_station",
-            "text": "The $(thing)Jarring Station$() is used to automatically fill $(item)$(t:Empty Jar with Lid)Jars$() with the $(l:cooking/cooking_methods#vat)Vat$(). The jarring station has a spout on one side that should point to the vat.$(br)When it detects fruity fluid, it will automatically fill the jars with $(thing)Jam$() and seal them, requiring 500 mB of fruity fluid per jar."
+            "text": "The $(thing)Jarring Station$() is used to automatically fill $(6)$(t:Empty Jar with Lid)Jars$() with the $(l:cooking/cooking_methods#vat)Vat$(). The jarring station has a spout on one side that should point to the vat.$(br)When the vat produces jam, it will automatically fill the jars with it and seal them."
         },
         {
             "type": "patchouli:multiblock",
