@@ -1,0 +1,59 @@
+{
+  "name": "气象站",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:climate_station",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)气象站$()是用于管理$(l:firmalife/greenhouse)温室$()和$(l:firmalife/cellar)地窖$()的方块。当其对应的多方块结构正确建造时，其侧面会显示水流的纹理；当结构无效时，则会显示冰霜纹理。气象站必须放置在该多方块结构的最底层，并紧贴墙面。如果它没有贴墙，你可以手持目标多方块结构的组成部分对其$(item)$(k:key.use)$()，以告知它需要检测的结构类型。"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "处于有效和无效状态的气象站。",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "firmalife:climate_station[stasis=true]"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "firmalife:climate_station[stasis=false]"
+          }
+        }
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(li)它会定期自动更新，或在被放置/破坏时更新。$()$(li)当气象站更新时，它会告知多方块结构内的所有方块可以开始运作。例如，它让$(l:firmalife/cheese)奶酪$()开始熟成。$()$(li)按下$(item)$(k:key.use)$()可以强制更新气象站及整个多方块结构内所有方块的状态。",
+      "title": "气象站使用技巧"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/climate_station",
+      "text": "气象站的合成方法。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "关于温室建造的说明：温室的最大尺寸为以气象站为中心的31x31x31区域，即向每个方向延伸15格。将气象站置于温室中心，可以充分利用最大尺寸范围。你也可以通过在内部使用墙壁和多个气象站将温室细分为多个区域，从而建造更大的温室。"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 2
+}

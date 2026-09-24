@@ -1,0 +1,20 @@
+{
+  "name": "How To Go Beneath",
+  "category": "tfc:beneath",
+  "icon": "minecraft:flint_and_steel",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "The sacrifice needed to go Beneath is great. First, hold a $(thing)Scythe$(). Find a Pig, Goat, or Sheep. Then, obtain seven offerings. Valid offerings are skulls, anvils, placed gold, pig iron, or black steel ingots, and gold or black steel plated blocks."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Kill the animal within a 5 block radius of the offerings. A portal will be created, but be warned! The Beneath will temporarily invade your world, wreaking havoc and causing confusion."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "For the more common types of sacrifices, that do not open portals to other realms, see the chapter on $(l:beneath/ancient_altar)Ancient Altars$()."
+    }
+  ],
+  "read_by_default": true
+}

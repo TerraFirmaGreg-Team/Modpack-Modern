@@ -1,0 +1,50 @@
+{
+  "name": "Ancient Altars",
+  "category": "tfc:beneath",
+  "icon": "beneath:lost_page",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "There are more routine types of $(thing)Sacrifices$() that can be done when you are Beneath. These require the obtaining of $(thing)Lost Pages$(), fragments of forbidden knowledge left behind. These are found in structures like the $(thing)Fortress$(), $(thing)Ruined Portal$(), and $(thing)Bastion remnant$()."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "beneath:crafting/ancient_altar",
+      "text": "The $(thing)Ancient Altar$() can hold and display up to a stack of any item. $(item)$(k:key.use)$() is used to insert or swap items in the altar."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "If $(thing)Blackstone$() is not readily available for crafting an Ancient Altar, it may be crafted from $(thing)Soot$() and regular stone."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "beneath:crafting/blackstone_from_soot",
+      "recipe2": "beneath:crafting/blackstone_bricks_from_soot"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Most sacrifices require a cut $(thing)Gem$() of any kind to activate, and consume the gem upon completion. The most basic sacrifice is that of reading the information on the Lost Page. To do this, place a blank page on the altar and $(item)$(k:key.use)$() with the gem. To open a page and read its contents, hold it and press $(item)$(k:key.use)$()."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Lost Pages have three items of interest: their $(thing)Cost$(), $(thing)Reward$(), and $(thing)Punishment$(). These values are fixed when the page is activated, but are randomized from a fixed set of values otherwise. This means that two pages which perform the same cost and reward may have different levels of utility."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "The $(thing)Cost$() of a sacrifice is a single ingredient, much like crafting, with an amount. This cost is to be placed on other ancient altars, placed on the same level within 5 blocks of the center altar, on which the lost page goes. Stacks containing items in excess of the total cost of the sacrifice may still be consumed, so be precise!"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "The $(thing)Reward$() of a sacrifice is obtained by $(item)$(k:key.use)$() on the altar with the page, if the cost is present. The reward is spawned as items above the altar. $(thing)Rewards are reduced by half$() if performed in the Overworld."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "The $(thing)Punishment$() of a sacrifice can range from 'No Punishment', to some extra items, to an attack from some dangerous monsters. The punishment is always known in advance, as it is written on the page. There is no detailed list of punishments, but feel free to experiment (also, it is not hard to figure out what the punishments are, if you know where to look)."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "The list of sacrifices is detailed in the $(l:beneath/list_of_sacrifices)List of Sacrifices$() chapter for easy reading."
+    }
+  ],
+  "read_by_default": true
+}

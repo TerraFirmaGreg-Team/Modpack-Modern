@@ -1,0 +1,13 @@
+{
+  "name": "烤麵包",
+  "category": "tfc:mechanics",
+  "icon": "tfc:textures/item/food/wheat_bread.png",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l:mechanics/crops#barley)大麥$()之類的農作物只會產出未加工的稻穀。直接收穫的穀物並沒有什麼營養價值，但若能把它們做成$(thing)麵包$()就好吃多了。麵包還能做成$(l:mechanics/sandwiches)三明治$()。",
+      "title": "麵包"
+    }
+  ],
+  "read_by_default": true
+}

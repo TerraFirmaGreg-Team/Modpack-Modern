@@ -1,0 +1,17 @@
+{
+	"name": "製作糖漿",
+	"category": "tfc:arborfirmacraft",
+	"icon": "afc:maple_sugar",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "當收集到一些樺樹/楓樹的樹液後，下一步就是將其濃縮到足夠有用的程度。方法是在陶鍋中煮兩次：第一次煮出樹液濃縮液，第二次煮成糖漿。別忘了往輸入槽放一根木棍來攪拌，否則陶鍋永遠不會沸腾。裝在陶鍋中的糖漿還能合成為糖，用於烘焙。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "每 50 桶楓樹液只能獲得 1 桶糖漿或每 100 桶樺樹樹液只能獲得 1 桶糖漿。因此批量生產糖漿時需要同時讓多個陶鍋保持沸騰。"
+		}
+	],
+	"read_by_default": true,
+	"sortnum": 2
+}

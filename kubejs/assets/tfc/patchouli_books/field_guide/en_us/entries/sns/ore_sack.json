@@ -1,0 +1,18 @@
+{
+  "name": "The Ore Sack",
+  "category": "tfc:sacks_n_such",
+  "icon": "sns:ore_sack",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "sns:ore_sack",
+      "text": "The $(item)Ore Sack$() is a type of $(l:sns/item_containers)Item Container$() intended for holding large amounts of a single ore like item making it extremely useful when going mining. $(br2)By default these hold a staggering 512 items"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "sns:crafting/ore_sack",
+      "text": "For modpack authors or simply people wishing to add extra ores see the item tag $(bold)sns:allowed_in_ore_sack$() most addons should be automatically supported"
+    }
+  ],
+  "read_by_default": true
+}

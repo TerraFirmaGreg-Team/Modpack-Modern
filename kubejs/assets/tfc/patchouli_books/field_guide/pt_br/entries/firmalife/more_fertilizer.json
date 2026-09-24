@@ -1,0 +1,44 @@
+{
+  "name": "Mais Opções de Fertilizantes",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:compost_tumbler",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Dada a maior necessidade de fertilização no Firmalife, há mais opções para obter $(l:mechanics/fertilizers)fertilizantes$()."
+    },
+    {
+      "type": "tfc:drying_recipe",
+      "recipe": "firmalife:drying/dry_grass",
+      "text": "A palha pode ser $(l:firmalife/drying)Seca$() e transformada em $(thing)Grama Seca$(), que pode ser usada em uma Composteira como um item marrom."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Os $(thing)Tambores de Compostagem$() são uma ótima maneira de produzir mais fertilizante. Eles precisam ser conectados à energia mecânica para funcionar. Só é possível interagir com eles quando não estão energizados, então considere conectá-los a uma embreagem!"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/compost_tumbler",
+      "text": "O tambor de compostagem é único porque aceita mais tipos de composto e não exige proporções precisas para funcionar."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "O tambor pode receber itens verdes e marrons como uma composteira comum. Também pode receber cacos de cerâmica, carvão, peixes e ossos em pequenas quantidades."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/pottery_sherd",
+      "text": "Quebrar cerâmica com um martelo produz cacos."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Itens verdes e marrons contam da mesma forma, estando na faixa de 1 a 4, mas as novas adições, como peixes, sempre contam como 1. Adicionar muita coisa estranha à composteira faz com que ela produza composto podre. Além disso, você só saberá que está podre no final! Se o composto tiver mais de quinze por cento de ossos, peixes ou cerâmica, ou mais de vinte por cento de carvão, ele apodrecerá. Ou, se houver 10 ou mais unidades verdes do que marrons, ele apodrecerá."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Quantidades favoráveis de certos aditivos podem estender ou encurtar o tempo necessário para a compostagem ficar pronta. Experimente e veja o que acontece.$(br) Se houver 32 unidades na composteira, serão produzidos 3 compostos. Se houver pelo menos 24, serão produzidos 2 compostos. Se houver 16 ou mais, será produzido 1 composto. Abaixo disso, não haverá compostagem."
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 17
+}

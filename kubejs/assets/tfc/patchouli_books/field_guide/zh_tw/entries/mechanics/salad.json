@@ -1,0 +1,26 @@
+{
+  "name": "沙拉",
+  "category": "tfc:mechanics",
+  "icon": "tfc:textures/item/food/protein_salad.png",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)沙拉$()是一種將至多五種$(thing)水果$()、$(thing)蔬菜$()或$(thing)熟肉$()在$(thing)碗$()中製作的餐點。$(br2)製作沙拉只需要一隻$(l:mechanics/bowls)碗$()就能製作，是一種製作非常方便的餐點。手持$(thing)碗$()時$(item)$(k:key.sneak)$()$(item)$(k:key.use)$()以開啟沙拉制作介面。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "tag:tfc:salads",
+      "title": "",
+      "link_recipes": false,
+      "text": "在介面上方的格子中放置最多五種食材。在左下角的格子中放置$(thing)碗$()。完成時，可以在右側格子中取出製作好的沙拉。"
+    }
+  ],
+  "read_by_default": true,
+  "extra_recipe_mappings": {
+    "tfc:food/fruit_salad": 0,
+    "tfc:food/dairy_salad": 0,
+    "tfc:food/vegetables_salad": 0,
+    "tfc:food/protein_salad": 0,
+    "tfc:food/grain_salad": 0
+  }
+}

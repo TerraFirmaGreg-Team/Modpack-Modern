@@ -1,0 +1,59 @@
+{
+  "name": "Estação Climática",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:climate_station",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "A $(thing)Estação CLimática$() é um bloco que gerencia a $(l:firmalife/greenhouse)Estufa$() e a $(l:firmalife/cellar)Adega$(). Quando o seu multibloco for construído corretamente, ele exibirá água em suas laterais. Quando estiver inválido, exibirá gelo. A Estação Climática deve ser colocada no primeiro nível do multibloco, encostada em uma parede. Se não estiver encostada em uma parede, você pode clicar $(item)$(k:key.use)$() nela com um bloco que é parte do multibloco que você está tentando criar, para indicar o que procurar."
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "A estação climática em seu estado válido e inválido.",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "firmalife:climate_station[stasis=true]"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "firmalife:climate_station[stasis=false]"
+          }
+        }
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(li)Ela é atualizada periodicamente por conta própria ou quando colocada/quebrada.$()$(li)Quando uma estação climática é atualizada, ela informa a todos os blocos dentro do multibloco que eles podem operar. Por exemplo, ela permite que $(l:firmalife/cheese)Queijo$() comece a maturar.$()$(li)Pressione $(item)$(k:key.use)$() para forçar a atualização da Estação Climática e dos blocos dentro do multibloco.",
+      "title": "Dicas da Estação Climática"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/climate_station",
+      "text": "A estação climática é criada assim."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Uma observação sobre a construção da estufa: A maior estufa tem 31x31x31, centralizada na estação climática, ou 15 blocos em cada direção. Centralizar a estação climática na estufa permitirá que você aproveite todo o espaço disponível. Você também pode subdividir internamente uma estufa em várias, usando paredes e várias estações climáticas para torná-la maior."
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 2
+}

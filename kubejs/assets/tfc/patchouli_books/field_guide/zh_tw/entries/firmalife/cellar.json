@@ -1,0 +1,33 @@
+{
+  "name": "地窖",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:sealed_bricks",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)地窖$()是一個由$(l:firmalife/climate_station)氣象站$()控制的多方塊結構。地窖多方塊結構唯一的要求是，它必須是一個由$(thing)密封磚$()或$(thing)密封門$()在所有側面完全封閉的空間。氣象站必須放置在地窖的第一層，並緊貼牆面。"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock_id": "firmalife:cellar",
+      "name": "地窖的一個示例",
+      "text": "這只是你可以建造的無數種地窖的一個例子!",
+      "enable_visualize": true
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/sealed_bricks",
+      "recipe2": "firmalife:crafting/sealed_door"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)蜂蠟$()可以通過$(l:firmalife/beekeeping)養蜂$()獲得。$(br)地窖可用於$(l:firmalife/cheese#aging)奶酪熟化$()。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "地窖可用於保存食物，例如配合$(l:firmalife/food_shelves)食物架$()和$(l:firmalife/hangers)懸掛架$()使用。在平均溫度較低的環境中，地窖的食物保存效果更好。在0度以下，防腐效果稍佳；在-12度以下，效果則顯著提升。"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 3
+}

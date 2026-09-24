@@ -1,0 +1,33 @@
+{
+  "name": "貯蔵庫",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:sealed_bricks",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)貯蔵庫$()は、$(l:tfc:firmalife/climate_station)空調機$()によって制御されるマルチブロック装置です。$(br2)貯蔵庫マルチブロックの唯一の条件は、四方を$(thing)密封レンガ$()または$(thing)密封レンガのドア$()で囲まれた密室を用意することです。$(br2)空調機が貯蔵庫の床に接していることが稼働の条件です。"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock_id": "firmalife:cellar",
+      "name": "貯蔵庫の作成例",
+      "text": "これは、作成できる貯蔵庫の一つに過ぎません！",
+      "enable_visualize": true
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/sealed_bricks",
+      "recipe2": "firmalife:crafting/sealed_door"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)蜜蝋$()は$(l:tfc:firmalife/beekeeping)養蜂$()から得られます。$(br2)そして、貯蔵庫は$(l:tfc:firmalife/cheese#aging)チーズの熟成$()にも適しています。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "貯蔵庫は食品保存のために使用され、例えば$(l:tfc:firmalife/food_shelves)食品棚$()や$(l:tfc:firmalife/hangers)吊るし棚$()を使います。$(br2)貯蔵庫は食品保存のために平均気温が低い環境でより良い性能を発揮します。$(br2)0度以下では鮮度を保つ効果が少し上がります。$(br2)-12度以下では、鮮度を保つ効果はより良い力を発揮します。"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 3
+}

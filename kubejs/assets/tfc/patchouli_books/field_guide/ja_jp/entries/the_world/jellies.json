@@ -1,0 +1,123 @@
+{
+	"name": "ジェリー",
+	"category": "tfc:the_world",
+	"icon": "jellies:jellie/slime_ball/plant",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "$(thing)ジェリー$()は、さまざまな惑星や環境に現れる、親しみやすいねばねばスライムです。$(br2)用途は多岐にわたりますが、最も一般的なのは、種類に応じた$(thing)スライムボール$()を作り出すことです。$(br2)彼らがとても人懐っこいことは、もうお伝えしましたっけ？親密度を十分に高めると、ペットになって、嬉しそうにあなたの後をついて回ってくれるようになります！"
+		},
+		{
+			"type": "patchouli:image",
+			"images": [
+				"tfg:textures/gui/field_guide/jellies.png"
+			],
+			"text": "$(thing)ジェリー$()は雌雄同体であり、他のどの$(thing)ジェリー$()とも繁殖することができます！",
+			"border": true
+		},
+		{
+			"type": "patchouli:text",
+			"title": "生産",
+			"text": "$(thing)ジェリー$()はかなり気難しく、本来の生息地以外では何も生産してくれません。しかし、どんな環境でも問題なく繁殖します。$(br2)また、機械を嫌うため、プレイヤーが手作業で餌を与えた場合にのみ、収穫物を提供してくれます。$(br2)$(#B0B0B0)$(o)あるいは、単にかまってもらいたいだけなのかもしれません……"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "tfg:shaped/jellies_nutritional_mash",
+			"text": "$(thing)Nutritional Mash$()は、すべての$(thing)ジェリー$()の主食であり、主に穀物、果物、そしてディメンションごとに異なるいくつかの素材から作られています。$(br2)$(#B0B0B0)$(o)なぜ動いているんだ……"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "jellies:herbal",
+			"scale": 1,
+			"name": "ハーブジェリー",
+			"text": "$(thing)Herbal$() Jelliesは、$(l:the_world/climate#temperature)気温ure$() 1～10°C、$(l:the_world/climate#rainfall)降水量$() 150mm以上の、地球上の温暖な森林にスポーンします。$(thing)Herbal Slime Balls$() を生産します。"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "jellies:phosphorum",
+			"scale": 1,
+			"name": "燐ジェリー",
+			"text": "$(thing)Phosphorum$() jelliesは、$(l:the_world/climate#temperature)気温ure$() -10～0°C、$(l:the_world/climate#rainfall)降水量$() 150mm以上の、地球上の寒冷な森林にスポーンします。 $(thing)Phosphorum Slime Balls$() を生産し、 $(thing)腐った肉$() を食べることもできます。"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "jellies:rock",
+			"scale": 1,
+			"name": "石ジェリー",
+			"text": "$(thing)Rock$() jelliesは、地球上の山岳バイームの洞窟内でまれにスポーンします。現在は何も生産しません"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "jellies:spring",
+			"scale": 1,
+			"name": "温泉ジェリー",
+			"text": "$(thing)Spring$() jelliesは、深界の熱水泉バイオームにスポーンします。$(thing)Spring Slime Balls$()を生産します。"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "jellies:plant",
+			"scale": 1,
+			"name": "プラントジェリー",
+			"text": "$(thing)Plant$() jelliesは、深界の泥だらけの沼地バイオームと茨の茂み\nバイオームにスポーンします。$(thing)Plant Slime Balls$()を生産します。"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "jellies:glowberry",
+			"scale": 1,
+			"name": "グロウベリージェリー",
+			"text": "$(thing)Glowberry$() jelliesは、深界の繁茂した空洞バイオームにスポーンします。$(thing)Glowberry Slime Balls$()を生産します。"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "jellies:biotite",
+			"scale": 1,
+			"name": "黒雲母ジェリー",
+			"text": "$(thing)Biotite$() jelliesは、深界の下層でスポーンします。$(thing)Biotite Slime Balls$()を生産します。"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "jellies:ice",
+			"scale": 1,
+			"name": "アイスジェリー",
+			"text": "$(thing)Ice$() jelliesは、深界の塩の洞窟バイオームにスポーンします。そばにいるプレイヤーの体温を10°C下げます。"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "jellies:lava",
+			"scale": 1,
+			"name": "マグマジェリー",
+			"text": "$(thing)Lava$() jelliesは、深界の下層でスポーンします。そばにいるプレイヤーの体温を10°C上げます"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "jellies:latex",
+			"scale": 1,
+			"name": "ラテックスジェリー",
+			"text": "$(thing)Latex$() jelliesは $(thing)Lava$() jelliesと $(thing)Plant$() jelliesを繁殖させることで生み出すことができ、 $(thing)Latex Slime Balls$() を生産します。"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "jellies:certus",
+			"scale": 1,
+			"name": "ケルタスジェリー",
+			"text": "$(thing)Certus$() jelliesは、月の瑠璃岩系バイオームにスポーンします。$(thing)大きなケルタスクォーツの芽$()を生産します。"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "jellies:pentetic",
+			"scale": 1,
+			"name": "ペンテトジェリー",
+			"text": "$(thing)Pentetic$() jelliesは、火星の砂海と山岳バイオームにスポーンします。プレイヤーから放射能汚染を受動的に吸収します。"
+		},
+		{
+			"type": "patchouli:image",
+			"images": [
+				"tfg:textures/gui/field_guide/jellies_secret.png"
+			],
+			"text": "$(#B0B0B0)$(o)以降のページは色あせがひどくて読めないようだ……$()",
+			"border": false
+		}
+	],
+	"read_by_default": true,
+	"sortnum": 7
+}

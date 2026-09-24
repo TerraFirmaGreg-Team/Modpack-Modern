@@ -1,0 +1,24 @@
+{
+	"name": "Harvest Baskets",
+	"icon": "tfg:harvest_basket",
+	"category": "tfc:mechanics",
+	"read_by_default": true,
+	"pages": [
+		{
+			"type": "patchouli:spotlight",
+			"title": "Harvest Baskets",
+			"item": { "tag": "tfg:harvester" },
+			"text": "Made for those with a short stature--$(thing)Harvest Baskets$() are just the tool needed for plucking trees and bushes of fruit.$(br)To use a harvest basket; right click on a fruit tree or fruit bush and all blocks within a $(thing)7-block radius$() will be picked."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "A regular harvest basket has a durability of $(thing)128$(), while the aluminium harvest basket does not take any damage on use. Harvest baskets can also be used by things like the $(thing)Create Deployer$() to automate harvesting. The baskets will use durability in the process."
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": "Harvest Basket",
+			"recipe": "tfg:shaped/harvest_basket_from_papyrus",
+			"text": "A basic $(item)Harvest Basket$() can be made of soaked papyrus or hardwood."
+		}
+	]
+}

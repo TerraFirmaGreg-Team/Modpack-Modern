@@ -1,0 +1,13 @@
+{
+  "name": "Хлеб",
+  "category": "tfc:mechanics",
+  "icon": "tfc:textures/item/food/wheat_bread.png",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l:firmalife/bread)Правильную информацию см. в записи Firmalife.$()",
+      "title": "Хлеб"
+    }
+  ],
+  "read_by_default": true
+}

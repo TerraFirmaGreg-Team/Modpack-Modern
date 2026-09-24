@@ -1,0 +1,33 @@
+{
+  "name": "Kayaks",
+  "category": "tfc:firmaciv",
+  "icon": "firmaciv:kayak_with_paddle_icon_only",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Your best overland solo-adventure friend. Of course, being the only boat that can be carried as an item helps. It's the fastest boat for a solo player, and very maneuverable!$(br2)To carry the kayak, just break it.",
+      "title": "Kayak"
+    },
+    {
+      "type": "patchouli:image",
+      "title": "Kayak",
+      "images": [
+        "firmaciv:textures/gui/book/kayak_isometric.png"
+      ],
+      "text": "Kayaks are the smallest and most portable boats."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmaciv:crafting/kayak",
+      "recipe2": "firmaciv:crafting/kayak_paddle"
+    },
+    {
+      "type": "tfc:sealed_barrel_recipe",
+      "anchor": "soaking",
+      "recipe": "firmaciv:barrel/large_waterproof_hide_olive",
+      "text": "Soak a Large Prepared Hide in either tallow or olive oil to make its surface impervious to water."
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 2
+}

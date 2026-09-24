@@ -1,0 +1,44 @@
+{
+  "name": "更多的肥料获取途径",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:compost_tumbler",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "鉴于 Firmalife 对施肥有更高的需求，这里提供了更多获取$(l:mechanics/fertilizers)肥料$()的途径。"
+    },
+    {
+      "type": "tfc:drying_recipe",
+      "recipe": "firmalife:drying/dry_grass",
+      "text": "茅草可以$(l:firmalife/drying)晒干$()成$(thing)干草$()，它可以在堆肥桶中作为一种棕色物品使用。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)堆肥滚筒$()是生产更多肥料的绝佳方式。它必须连接上动力才能工作，且只能在未供能时才能被玩家操作，因此可以考虑为其连接一个离合器！"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/compost_tumbler",
+      "text": "堆肥滚筒的独特之处在于它可以处理更多类型的堆肥原料，并且不需要精确的比例即可运作。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "滚筒可以像普通的堆肥桶一样接收绿色和棕色的物品。它也可以少量接收陶片、木炭、鱼和骨头。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/pottery_sherd",
+      "text": "用锤子砸碎陶器可获得碎片。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "绿色和棕色材料的计算方式相同，每份计为1-4个单位，但新增的鱼等材料每份始终计为1个单位。向堆肥中添加过多古怪材料会导致其产生腐烂堆肥。更糟的是，该结果直至完成时才会显现！如果堆肥中骨头、鱼或陶片的比例超过15%，或者木炭的比例超过20%，它就会腐坏。或者，如果绿色单位比棕色单位数量多出10个或以上，它也会腐坏。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "适当添加某些原料可以延长或缩短堆肥完成所需的时间。多加尝试，看看会发生什么。$(br)如果堆肥桶中有32个单位，将产出3份堆肥。如果至少有24个单位，将产出2份堆肥。如果有16个或更多单位，将产出1份堆肥。低于16则不会产生堆肥。"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 17
+}

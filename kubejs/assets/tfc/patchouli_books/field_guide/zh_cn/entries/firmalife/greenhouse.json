@@ -1,0 +1,68 @@
+{
+  "name": "温室",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:sealed_bricks",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)温室$()是一个由$(l:firmalife/climate_station)气象站$()控制的多方块结构。它允许作物全年生长。温室有多种类型和方块可供选择。然而，建造一个温室相当简单。与$(l:firmalife/cellar)地窖$()类似，它应该是一个由属于同一$(thing)温室类型$()的方块围成的封闭空间。温室的地板可以是任何非空气方块。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "温室的墙壁必须是完整的立面。板墙的放置应使方块外部的面（例如，可以放置火把的面）朝向温室内侧。这点同样适用于屋顶，不过半砖可以被视为有效的屋顶方块。活板门和门也始终有效，且无需特殊朝向。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "属于同一种$(thing)温室类型$()的建筑方块可以互相替换使用。大多数温室方块会随时间$(thing)老化$()。例如，$(thing)防腐木$()材质的温室方块会变成$(thing)风化的防腐木$()方块。由于这两种方块类型属于同一温室类型，你的温室将继续正常运作。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "以下是所有的$(thing)温室类型$()及其可能老化成的方块类型：$(br)$(br)$(li)防腐木：风化 的$()$(li)铜：斑驳的、风化的、氧化的$()$(li)铁：生锈的$() $(li)不锈钢（不会老化）$()",
+      "title": "温室类型"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "常规的$(thing)温室方块$()有四种：墙壁、门、屋檐和屋顶。屋檐和屋顶分别是楼梯和台阶。这些方块还有更薄的版本，也称为板墙、活板门和顶板。你可以随意组合这些方块来构成温室的结构。"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "每种类型的温室的一个范例。",
+      "multiblocks": [
+        "firmalife:treated_wood_greenhouse",
+        "firmalife:copper_greenhouse",
+        "firmalife:iron_greenhouse",
+        "firmalife:stainless_steel_greenhouse"
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "text": "有许多方块可以在温室内运作：$(br)$(li)$(l:firmalife/planters)种植盆$()，用于种植作物$()，以及$(br)$(li)$(l:firmalife/irrigation)洒水器$()，为种植盆供水的各种装置。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "接下来的四页包含了主要温室方块的配方。虽然它们仅以铁质温室为例展示，但配方中的铁杆可以替换为$(thing)防腐木材$()、$(thing)铜杆$()或$(thing)不锈钢杆$()。关于不锈钢的信息，请参阅$(l:firmalife/stainless_steel)此页$()。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/greenhouse/iron_greenhouse_wall",
+      "recipe2": "firmalife:crafting/greenhouse/iron_greenhouse_roof"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/greenhouse/iron_greenhouse_door",
+      "recipe2": "firmalife:crafting/greenhouse/iron_greenhouse_roof_top"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/greenhouse/iron_greenhouse_trapdoor",
+      "recipe2": "firmalife:crafting/greenhouse/iron_greenhouse_panel_roof"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/greenhouse/iron_greenhouse_panel_wall",
+      "recipe2": "firmalife:crafting/greenhouse/iron_greenhouse_port"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 7
+}

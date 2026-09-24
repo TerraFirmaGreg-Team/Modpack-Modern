@@ -1,0 +1,28 @@
+{
+	"name": "アンポスター",
+	"category": "tfc:beneath",
+	"icon": "beneath:unposter",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "$(thing)アンポスター$() は、キノコを育てるために使用されます。$(br2)コンポスターと同じアイテムを投入できますが、堆肥を作る代わりに、キノコが範囲内に存在している場合、内部のアイテムを消費して、その周辺にキノコを増やします。"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "beneath:crafting/unposter"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "注意事項",
+			"text": "$(thing)アンポスター$()は、自身を中心とする11×11の正方形エリア内でキノコを探し出し、複製します。$(br2)なお、一度拾ったキノコは元の場所に戻すことはできません。アンポスターを機能させるには、自然に生成されたキノコを見つける必要があります。"
+		},
+		{
+			"type": "patchouli:image",
+			"images": [
+				"tfg:textures/gui/field_guide/unposter_radius.png"
+			],
+			"border": true
+		}
+	],
+	"read_by_default": true
+}

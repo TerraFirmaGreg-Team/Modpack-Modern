@@ -1,0 +1,83 @@
+{
+  "name": "Canteiros",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:large_planter",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "anchor": "planters",
+      "text": "$(thing)Canteiros$() são usados para cultivar plantas dentro de uma $(l:firmalife/greenhouse)Estufa$(). Para ver o status de um canteiro, você pode observá-lo enquanto segura uma $(thing)Enxada$(). Plantações em Canteiros consomem $(l:mechanics/fertilizers)Nutrientes$() de forma semelhante a $(l:mechanics/crops)Plantações$() normais. Os canteiros devem ser colocados dentro de uma Estufa válida e ativada com uma $(l:firmalife/climate_station)Estação Climática$(). Os Canteiros precisam de pelo menos um pouco de luz solar natural para funcionar."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/watering_can",
+      "text": "Os canteiros precisam ser $(thing)Regados$() para crescer. Isso é feito com um $(thing)Regador$(), criado a partir de um $(thing)Balde de Madeira$(), um recipiente com $(thing)Água$() e $(thing)Madeira Serrada$(). Pressione $(item)$(k:key.use)$() com ele para regar os canteiros próximos. Reabasteça pressionando $(item)$(k:key.use)$() em uma fonte de água."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/large_planter",
+      "text": "$(thing)Canteiros Grandes$() são o tipo mais simples de canteiro. Eles produzem uma única colheita a partir de sementes e são colhidos com $(item)$(k:key.use)$() quando maduros."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Canteiros Grandes podem cultivar $(thing)Vagens$(), $(thing)Tomates$(), $(thing)Cana-de-Açúcar$(), $(thing)Juta$() e $(thing)Grãos$(). No entanto, para cultivar Grãos, você precisa de uma Estufa de $(thing)Cobre$() ou superior."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/quad_planter",
+      "text": "$(thing)Canteiro Quádruplo$() cultivam quatro plantações individuais ao mesmo tempo. Todas essas plantações utilizam o mesmo conjunto de nutrientes e podem ser colhidas individualmente $(item)$(k:key.use)$() quando maduras."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Canteiros Quádruplos podem cultivar $(thing)Beterrabas$(), $(thing)Repolho$(), $(thing)Cenouras$(), $(thing)Alho$(), $(thing)Cebolas$(), $(thing)Batatas$() e $(thing)Soja$(). Essas plantações podem ser cultivadas em qualquer tipo de estufa."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/bonsai_planter",
+      "text": "$(thing)Canteiros Bosai$() cultivam pequenas árvores frutíferas a partir de suas mudas. Os frutos podem ser colhidos com $(item)$(k:key.use)$()."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Canteiros Bonsai podem cultivar qualquer tipo de árvore frutífera, exceto $(thing)Bananas$(), que precisam de um $(thing)Canteiro Suspenso$(). Todas elas consomem Nitrogênio como principal nutriente. Elas precisam de uma Estufa de $(thing)Ferro$() ou superior."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/hanging_planter",
+      "text": "$(thing)Canteiros Suspensos$() cultivam as plantações de cabeça para baixo. Quando maduras, podem ser colhidas com $(item)$(k:key.use)$()."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Canteiros Pendurados cultivam $(thing)Abobrinha$(), a partir de suas sementes, e $(thing)Bananas$(), a partir de suas mudas. Abobrinhas podem ser cultivadas em qualquer estufa, mas bananas precisam de uma estufa de $(thing)Ferro$() ou superior para crescer. Canteiros pendurados precisam ser fixados a um bloco sólido acima deles."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/trellis_planter",
+      "text": "$(thing)Canteiros Treliçados$() cultivam arbustos de berries. Berries podem ser colhidas com $(item)$(k:key.use)$()."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Canteiros Treliçados têm a propriedade única de propagar arbustos de berries. Se um canteiro treliçado for colocado em cima de outro, e o de baixo tiver um arbusto de berries maduro, ele terá a chance de crescer para cima, em direção ao próximo. Canteiros Treliçados podem cultivar qualquer arbusto de berries, exceto $(thing)Cranberries$(), mas requerem uma estufa de $(thing)Ferro$() ou superior para funcionar. Os arbustos preferem Nitrogênio."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/hydroponic_planter",
+      "text": "$(thing)Canteiros Hidropônicos$() cultivam arroz e arbustos de cranberry. Funcionam da mesma forma que um canteiro quádruplo, exceto que não precisam ser regados."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Em vez disso, os canteiros hidropônicos devem ter um $(li)$(l:firmalife/irrigation)Tubo de Aspersor$() abaixo deles, que forneça água. Sem o tubo, eles não crescerão. Não há limite rígido para o número de canteiros hidropônicos que podem ser alimentados por uma estação."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/sweeper",
+      "text": "$(thing)Varredores$() são usados para colher canteiros que não sejam Quádruplos e Hidropônicos. Eles devem ser conectados a um $(thing)Eixo$() giratório em sua face inferior."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/picker",
+      "text": "$(thing)Colhedores$() podem ser alimentados por sinal de redstone vindo de cima. Eles se estendem para baixo para colher as plantações dos canteiros Quádruplos e Hidropônicos."
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 9
+}

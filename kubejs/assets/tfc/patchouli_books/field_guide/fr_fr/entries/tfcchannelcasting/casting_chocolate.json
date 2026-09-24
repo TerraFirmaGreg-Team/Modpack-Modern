@@ -1,0 +1,40 @@
+{
+  "name": "Casting Chocolate",
+  "category": "tfc:tfcchannelcasting",
+  "icon": "tfcchannelcasting:food/milk_chocolate_heart",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "The following content is only available if Firmalife is installed. $(thing)Chocolate$() does not need to come only in boring bars! Melt down $(thing)White$(), $(thing)Milk$(), or $(thing)Dark$() chocolate in a $(thing)Vessel$() or $(thing)Crucible$() and then cast it into a mold to obtain chocolate confections. There are three types of chocolate confections: $(thing)Hearts$(), $(thing)Bells$(), and $(thing)Knives$(). Each is obtained by casting chocolate into a different mold."
+    },
+    {
+      "type": "tfc:knapping_recipe",
+      "recipe": "tfcchannelcasting:clay_knapping/unfired_heart_mold",
+      "text": "Knapping a $(thing)Heart Mold$(), used to create $(thing)Heart$()-shaped chocolates."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Chocolate confections provide the same nutrition as chocolate bars, but they are faster to eat. However, if these confections are prepared at specific times of the year, they will gain a trait that doubles their nutrition. $(thing)Chocolate Hearts$() gain the $(thing)Romantic$() trait in Februrary, $(thing)Chocolate Winter Bells$() gain the $(thing)Festive$() trait in December, and $(thing)Chocolate Candy Knives$() gain the $(thing)Scary$() trait in October."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Moreover, confections can be $(thing)filled$() to gain additional benefits. Confections filled with $(thing)Jam$() have extra $(thing)Fruit$() nutrition. Confections filled with $(thing)Alcohol$() give positive potion effects."
+    },
+    {
+      "type": "tfc:sealed_barrel_recipe",
+      "recipe": "tfcchannelcasting:barrel/fill_with_sweet_liquor",
+      "text": "Eating chocolates filled with $(thing)Sweet Liquor$() gives a speed buff."
+    },
+    {
+      "type": "tfc:sealed_barrel_recipe",
+      "recipe": "tfcchannelcasting:barrel/fill_with_strong_liquor",
+      "text": "Eating chocolates filled with $(thing)Strong Liquor$() gives damange resistance."
+    },
+    {
+      "type": "tfc:sealed_barrel_recipe",
+      "recipe": "tfcchannelcasting:barrel/fill_with_whiskey",
+      "text": "Eating chocolates filled with $(thing)Whiskey$() gives haste."
+    }
+  ],
+  "read_by_default": true
+}

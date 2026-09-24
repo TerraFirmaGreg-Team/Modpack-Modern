@@ -1,0 +1,20 @@
+{
+  "name": "Item Containers",
+  "category": "tfc:sacks_n_such",
+  "icon": "sns:straw_basket",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)Item Containers$() are the primary items this mod adds. They have 6 main stats which can be seen by holding $(3)Shift$(clear) while hovering over the stack with your mouse. $(li)$(thing)Slot count$(): the amount of slots it has. $(li)$(thing)Slot Capacity$(): how many items a slot can hold $(li)$(thing)Allowed Size$(): what's the largest $(l:getting_started/size_and_weight)TFC Size$() allowed in the slots."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(li)$(thing)Item Pickup$() if it can pickup item entities from the world. Shift right click or use $(k:sns.key.pickup) to toggle. $(li)$(thing)Item Voiding$() if it can void excess items picked up from the world. To toggle Ctrl + Left Click slots. $(li)$(thing)Inventory interaction$() if you can insert and extract from it by clicking on the stack like TFC vessels or vanilla bundles. $(br)All $(thing)Item Containers$() support vanilla pick block via $(k:pickItem)"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "For modpack authors or simply people wanting to configure things. All$(thing) Item Containers$() have a \"blacklist\" tag which includes $(bold)sns:prevented_in_item_containers$(). The naming scheme is $(bold)prevented_in_<registry_name>$() for example the straw basket uses $(bold)sns:prevented_in_straw_basket$(). $(thing)Item Containers$() with special \"whitelist\" tags will have them listed in their book entry."
+    }
+  ],
+  "read_by_default": true
+}

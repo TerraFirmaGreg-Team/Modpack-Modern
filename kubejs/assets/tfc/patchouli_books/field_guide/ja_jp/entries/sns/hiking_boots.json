@@ -1,0 +1,17 @@
+{
+  "name": "登山靴",
+  "category": "tfc:sacks_n_such",
+  "icon": "sns:hiking_boots",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "すべての探検家には良い靴が必要です。この靴は茂みを素早く抜けることを可能にし、またわずかな移動速度増加と、安全に落下できる高さを少し増加します。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "sns:crafting/hiking_boots",
+      "text": "この靴は歩行用に作られました。"
+    }
+  ],
+  "read_by_default": true
+}

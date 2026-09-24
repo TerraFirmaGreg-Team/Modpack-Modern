@@ -1,0 +1,17 @@
+{
+  "name": "The Straw Basket",
+  "category": "tfc:sacks_n_such",
+  "icon": "sns:straw_basket",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "sns:straw_basket",
+      "text": "The $(item)Straw Basket$() is a type of $(l:sns/item_containers)Item Container$() and is basically a cheaper Vessel. By default these can hold up to $(thing)Small$() Items"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "sns:crafting/straw_basket"
+    }
+  ],
+  "read_by_default": true
+}

@@ -1,0 +1,111 @@
+{
+	"name": "Biome",
+	"category": "tfc:beneath",
+	"icon": "minecraft:spyglass",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Der Untergrund hat eine ganze Reihe neuer Biome zu erkunden! Der Untergrund kann in drei vertikale Schichten aufgeteilt werden, jede mit einem eigenen Satz an Biomen. Jede ist heißer und gefährlicher, wenn du absteigst!"
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Salzhöhlen",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/salt_caves.png"
+			],
+			"border": true,
+			"text": "Wie eine warme Meeresbrise ist dieses Biom voll von $(item)Halite$(). Großartig für eine Basisposition!"
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Schwüles Moor",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/muggy_bog.png"
+			],
+			"border": true,
+			"text": "Feucht und Moor-ähnlich. Eine sichere Quelle für Holz, wenn du die $(thing)Krokodil$() vermeiden kannst."
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Zerfallende Höhlen",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/decaying_caverns.png"
+			],
+			"border": true,
+			"text": "Die Recycler der Natur sind hier in der feuchten Region mit dem verfaulen beschäftigt."
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Verwebte Höhle",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/webbed_lair.png"
+			],
+			"border": true,
+			"text": "Keine Preise für die Erratung dessen, was hier lebt! Außerdem sind hier riesige $(thing)Travertine$() Säulen."
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Teerseen",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/tar_pools.png"
+			],
+			"border": true,
+			"text": "Sandig wie eine kleine Wüste enthält dieser Bereich klebrige $(thing)Tar Pits$() voll mit Öl."
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Geothermale Quellen",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/geothermal_springs.png"
+			],
+			"border": true,
+			"text": "Hier gibt es keine Schwefelwürfel, aber dieses Dampfbiom kann ein großartiger Ort sein, um $(thing)Spring Water$() zur Heilung zu finden."
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Dorniger Wald",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/thorny_brambles.png"
+			],
+			"border": true,
+			"text": "Ein schwer zu durchquerendes Biom mit Pflanzen, die dich beeinflussen, wenn du auftrittst. Pass auf!"
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Üppige Höhlen",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/lush_hollow.png"
+			],
+			"border": true,
+			"text": "Heiß und grün! Die dichten Farne verstecken den zugrunde liegenden $(thing)Kaolin Clay$()."
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Aschenwald",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/ash_forest.png"
+			],
+			"border": true,
+			"text": "Was von den üppigen Höhlen nach den häufigen Bränden bleibt, die durch die Hitze verursacht wurden."
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Lavaschollen",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/lava_floes.png"
+			],
+			"border": true,
+			"text": "Ein erzreicher $(thing)Pyroxenite$() Bereich durchquert mit Lavaflüssen."
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Basaltdeltas",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/basalt_deltas.png"
+			],
+			"border": true,
+			"text": "Jedermanns Lieblingsnetherbiom kehrt zurück und es ist genauso gefährlich wie eh und je."
+		}
+	],
+	"read_by_default": true
+}

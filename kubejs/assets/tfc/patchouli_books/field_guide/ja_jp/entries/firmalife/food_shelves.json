@@ -1,0 +1,18 @@
+{
+  "name": "食品棚",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:wood/food_shelf/pine",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)食品棚$()は食料を貯蔵するための器具です。$(br)有効な$(l:tfc:firmalife/cellar)貯蔵庫$()でのみ使用できます。$(br2)食品棚には1つの食品をスタックいっぱいに入れることができ、アイテムの追加と削除は$(item)$(k:key.use)$()を押すことでできます。$(br2)食品棚のアイテムは、壺よりも鮮度を保つ効果が優れています。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/wood/acacia_shelf",
+      "text": "食品棚は板と板材で作成できます。"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 4
+}

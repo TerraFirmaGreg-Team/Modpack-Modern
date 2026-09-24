@@ -1,0 +1,18 @@
+{
+  "name": "搅拌碗",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:mixing_bowl",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "搅拌碗是把物品和液体混合在一起的好方法。拿一个$(thing)勺子$()对它$(item)$(k:key.use)$()就可以把勺子放进碗里, 然后搅拌碗就可以使用了。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/mixing_bowl",
+      "text": "需要一个$(thing)勺子$()才能使用。"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 18
+}

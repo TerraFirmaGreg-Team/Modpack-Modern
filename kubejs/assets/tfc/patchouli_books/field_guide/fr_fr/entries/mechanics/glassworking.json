@@ -1,0 +1,81 @@
+{
+  "name": "Travail du verre",
+  "category": "tfc:mechanics",
+  "icon": "tfc:silica_glass_bottle",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Le travail du verre représente le processus de transformation de sable en verre. Pour commencer, vous devez créer l'un des 4 types de $(thing)Mélange verrier$() :$(br)$(br) 1. $(thing)Siliceux$(), de sable blanc.$(br) 2. $(thing)Hématitique$(), de sable jaune, rouge, ou rose.$(br) 3. $(thing)Olivine$(), de sable vert ou brun.$(br) 4. $(thing)Volcanique$(), de sable noir."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/silica_glass_batch",
+      "text": "Les mélanges verriers peuvent alors être fabriqués en utilisant une des couleurs de sable, avec de la $(l:mechanics/glassworking#lime)Chaux$() et un type de $(l:mechanics/glassworking#potash)Potasse$().",
+      "title": "Mélange verrier siliceux"
+    },
+    {
+      "type": "patchouli:smelting",
+      "anchor": "lime",
+      "recipe": "tfg:smelting/lime",
+      "text": "La $(thing)Chaux$() est un des ingrédients nécessaire à la fabrication de mélanges verrier. C'est une poudre obtenue en $(l:mechanics/heating)chauffant$() de la  $(l:mechanics/flux)Poudre de flux$()."
+    },
+    {
+      "type": "patchouli:smelting",
+      "anchor": "potash",
+      "recipe": "tfg:smelting/dried_seaweed_to_soda",
+      "text": "Un type de $(thing)Potasse$() ou un équivalent est également requis pour faire des mélanges verriers. De la $(thing)Poudre de soude$() peut être utilisée, c'est une poudre obtenue en chauffant de l'$(thing)Algue séchée$() ou du $(thing)Varech$(). Du $(l:tfg_ores/earth_vein_index#normal_saltpeter)Salpêtre$() peut également être utilisée.",
+      "recipe2": "tfg:smelting/dried_kelp_to_soda"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Le travail du verre commence à un mélange verrier, auquel on fait subir diverses opérations. Ces étapes peuvent demander des outils spécifiques :$(br)$(li)Une $(l:mechanics/glassworking#blowpipe)Canne de verrier$(), pour $(thing)Souffler$() et $(thing)Étirer$()$(li)Une $(l:mechanics/glassworking#paddle)Palette$(), pour $(thing)Aplatir$()$(li)Des $(l:mechanics/glassworking#jacks)Pinces de verrier$(), pour $(thing)Pincer$()$(li)Une $(l:mechanics/glassworking#saw)Scie à gemme$(), pour $(thing)Scier$()",
+      "title": "Outils du métier"
+    },
+    {
+      "type": "tfc:knapping_recipe",
+      "anchor": "blowpipe",
+      "recipe": "tfc:clay_knapping/blowpipe",
+      "text": "L'outil le plus important est la $(thing)Canne de verrier$(). Elle peut être $(thing)modelée$() à partir d'argile, puis cuite en une $(thing)Canne de verrier en céramique$()."
+    },
+    {
+      "type": "tfc:anvil_recipe",
+      "recipe": "tfc:anvil/blowpipe",
+      "text": "Les cannes de verrier en céramique sont fragiles, et peuvent se casser en les utilisant. Une canne plus solide peut être $(l:mechanics/anvils#working)forgée$() à partir d'une $(thing)barre de laiton$() à une enclume."
+    },
+    {
+      "type": "patchouli:crafting",
+      "anchor": "paddle",
+      "recipe": "tfc:crafting/paddle",
+      "text": "L'opération $(thing)Aplatir$() s'effectue à l'aide d'une $(thing)Palette$(), fabriquée à partir de bois."
+    },
+    {
+      "type": "tfc:welding_recipe",
+      "anchor": "jacks",
+      "recipe": "tfc:welding/jacks",
+      "text": "L'opération $(thing)Pincer$() s'effectue à l'aide de $(thing)Pinces de verrier$(), fabriquées en soudant deux barres de laiton ensemble."
+    },
+    {
+      "type": "patchouli:crafting",
+      "anchor": "saw",
+      "recipe": "tfc:crafting/gem_saw",
+      "text": "L'opération $(thing)Scier$() s'effectue à l'aide d'une $(thing)Scie à gemme$(). La scie à gemme sert aussi à miner des $(thing)Blocs de verre$() et des $(thing)Vitres$() pour les récupérer."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Tout d'abord, le verre sur la canne doit être chauffé à $(4)$(bold)Rouge pâle$(). Ensuite, tenez la canne dans votre $(thing)main secondaire$() et maintenez $(item)$(k:key.use)$() pour effectuer chaque étape.$(br)Utilisez $(item)$(k:key.use)$() pour prendre un item dans votre main secondaire. $(br2)$(bold)Souffler$()$(br)Utilisez une $(thing)Canne de verrier$() en regardant droit devant.$(br2)$(bold)Étirer$()$(br)Utilisez une $(thing)Canne de verrier$() en regardant droit vers le sol.",
+      "title": "Comment devenir verrier"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(bold)Aplatir$()$(br)Utilisez une $(thing)Canne de verrier$() en tenant une $(l:mechanics/glassworking#paddle)Palette$() dans votre main principale.$(br2)$(bold)Pincer$()$(br)Utilisez une $(thing)Canne de verrier$() en tenant des $(l:mechanics/glassworking#jacks)Pinces de verrier$() Dans votre main principale.$(br2)$(bold)Scier$()$(br)Utilisez une $(thing)Canne de verrier$() en tenant une $(l:mechanics/glassworking#saw)Scie à gemme$() dans votre main principale.$(br2)$(bold)Rouler$()$(br)Utilisez une $(thing)Canne à verre$() avec une $(l:mechanics/weaving#wool_cloth)Étoffe de laine$() dans votre main principale."
+    }
+  ],
+  "read_by_default": true,
+  "extra_recipe_mappings": {
+    "tfc:powder/lime": 2,
+    "tfc:powder/soda_ash": 3,
+    "tfc:paddle": 7,
+    "tfc:jacks": 8,
+    "tfc:gem_saw": 9
+  }
+}

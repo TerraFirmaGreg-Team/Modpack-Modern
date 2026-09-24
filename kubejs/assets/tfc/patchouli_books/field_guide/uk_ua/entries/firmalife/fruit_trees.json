@@ -1,0 +1,177 @@
+{
+  "name": "Фрукти FirmaLife",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:plant/fig_sapling",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "FirmaLife додає певну плодову рослину на додачу до тих, що вже є в TFC."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Для покращення читабельності запис починається з наступної сторінки."
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "cocoa",
+      "text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 20 - 35 °C$(br)$(bold)$(l:mechanics/hydration)Опади$(): 220 - 400 мм$(br2)Какао-дерево використовується для приготування $(l:firmalife/chocolate)шоколаду$().",
+      "title": "Какао-дерево"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "Щомісячна стадія росту какао-дерева",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "firmalife:plant/cocoa_leaves[lifecycle=dormant]",
+            "Y": "firmalife:plant/cocoa_branch[up=true,down=true]"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "firmalife:plant/cocoa_leaves[lifecycle=healthy]",
+            "Y": "firmalife:plant/cocoa_branch[up=true,down=true]"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "firmalife:plant/cocoa_leaves[lifecycle=flowering]",
+            "Y": "firmalife:plant/cocoa_branch[up=true,down=true]"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "firmalife:plant/cocoa_leaves[lifecycle=fruiting]",
+            "Y": "firmalife:plant/cocoa_branch[up=true,down=true]"
+          }
+        }
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "fig",
+      "text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 20 - 35 °C$(br)$(bold)$(l:mechanics/hydration)Опади$(): 125 - 215 мм$(br2)",
+      "title": "Інжирне дерево"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "Щомісячна стадія росту інжирного дерева",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "firmalife:plant/fig_leaves[lifecycle=dormant]",
+            "Y": "firmalife:plant/fig_branch[up=true,down=true]"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "firmalife:plant/fig_leaves[lifecycle=healthy]",
+            "Y": "firmalife:plant/fig_branch[up=true,down=true]"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "firmalife:plant/fig_leaves[lifecycle=flowering]",
+            "Y": "firmalife:plant/fig_branch[up=true,down=true]"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "firmalife:plant/fig_leaves[lifecycle=fruiting]",
+            "Y": "firmalife:plant/fig_branch[up=true,down=true]"
+          }
+        }
+      ]
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 20
+}

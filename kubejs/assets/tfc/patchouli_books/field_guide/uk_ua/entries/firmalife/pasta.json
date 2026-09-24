@@ -1,0 +1,27 @@
+{
+  "name": "Паста",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:textures/item/food/cooked_pasta.png",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Існує два види $(thing)локшини$(): яєчна та рисова. Рисове борошно, кукурудзяне борошно, сіль та 1000 мВ молока, змішані в $(l:firmalife/mixing_bowl)мисці для змішування$(), дають $(thing)рисову локшину$(). Борошно, яйце, сіль та 1000 мВ молока дають $(thing)яєчну локшину$()."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/lasagna",
+      "text": "$(thing)Лазанью$() можна приготувати безпосередньо з яєчної локшини з $(l:firmalife/pizza#tomato_sauce)томатним соусом$(), приготовленим м'ясом та орегано, а потім запекти в $(l:firmalife/ovens)печі$()."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Потім приготування пасти завершується її варінням у воді. Будь-який вид локшини необхідно діставати з казана, натиснувши на нього $(thing)мискою$()."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/tomato_pasta",
+      "text": "Поєднання приготовленої яєчної локшини (пасти) з томатним соусом дає смачну пасту з томатним соусом!"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 27
+}

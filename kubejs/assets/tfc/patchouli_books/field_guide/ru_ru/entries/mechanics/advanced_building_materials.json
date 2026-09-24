@@ -1,0 +1,64 @@
+{
+    "name": "Продвинутые материалы",
+    "category": "tfc:mechanics",
+    "icon": "tfc:brick/rhyolite",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "В дополнение к примитивным $(l:getting_started/building_materials)строительным материалам$() каменного века, получение металлических инструментов позволяет строить из более подвинутых строительных материалов "
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br) 1. $(l:mechanics/advanced_building_materials#alabaster)Алебастр$()$(br) 2. $(l:mechanics/advanced_building_materials#bricks_and_mortar)Кирпичи и строительный раствор$()$(br)",
+            "title": "Содержит"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "alabaster",
+            "text": "Алебастр это строительный блок, который изготавливается из $(l:the_world/ores_and_minerals#gypsum)гипса$(). Его можно получить путём прямого создания из $(l:the_world/ores_and_minerals#gypsum)гипса$(), однако более эффективным способом будет запечатать $(l:the_world/ores_and_minerals#gypsum)гипс$() со 100 мБ $(thing)известковой воды$() в бочке.",
+            "title": "Алебастр"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "tfc:crafting/alabaster_brick/raw_gypsum",
+            "recipe2": "tfc:crafting/alabaster_bricks",
+            "title": "Алебастровые кирпичи"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Алебастр можно $(l:mechanics/dye)окрасить$() в любой цвет в $(l:mechanics/barrels)бочке$() с красителем. Блоки необработанного алебастра также можно $(l:mechanics/chisel)обтесать$() в $(thing)гладкий алебастр$(), используя режим зубила (долота) $(thing)\"Сглаживание\"$(), или сделать из них ступеньки, плиты и ограды.",
+            "title": "Декорации из алебастра"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "tfc:crafting/alabaster/magenta_bricks_stairs",
+            "recipe2": "tfc:crafting/alabaster/magenta_polished_slab",
+            "title": "Ступеньки и плиты"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "bricks_and_mortar",
+            "text": "$(thing)Каменные кирпичи$() можно сделать с помощью $(l:mechanics/chisel)зубила (долота)$() и нескольких отдельных камешков. Затем для создания прочного строительного блока потребуется $(thing)строительный раствор$(). $(br2)Строительный раствор можно приготовить, добавив $(thing)песок$() в бочку с $(l:mechanics/barrels#limewater)известковой водой$().",
+            "title": "Кирпичи и строительный раствор"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "tfc:crafting/rock/gneiss_brick",
+            "recipe2": "tfc:crafting/rock/gneiss_bricks"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Также можно создавать другие декоративные каменные блоки, такие как $(thing)потрескавшиеся кирпичи$() и $(thing)резной камень$(). $(thing)Замшелые$() каменные блоки можно получить, разместив булыжник или кирпичи под водой рядом с уже замшелыми кирпичами или булыжником. Мох начнет распространяться на соседние блоки."
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "tfc:crafting/rock/gneiss_chiseled",
+            "recipe2": "tfc:crafting/rock/gneiss_cracked"
+        }
+    ],
+    "read_by_default": true,
+    "extra_recipe_mappings": {
+        "tfc:alabaster/raw": 2,
+        "tfc:alabaster/polished": 2
+    }
+}

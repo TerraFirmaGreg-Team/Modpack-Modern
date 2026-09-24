@@ -1,0 +1,48 @@
+{
+	"name": "Indeks marsjańskich grzybów",
+	"category": "tfc:tfg_tips",
+	"icon": "tfg:saplings/aeronos",
+	"read_by_default": true,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "This is a list of every huge mushroom on Mars, and what climates they grow in.$(br2)Looking for particular type of mushroom stem to decorate your base? This should help you find it. The list is sorted alphabetically by stem type.$(br2)Also check out the $(l:tfc:arborfirmacraft/earth_tree_index)Earth Tree Index$()."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Aeronosowe",
+			"item": "ad_astra:aeronos_stem",
+			"text": "$(bold)Grzyby aeronosowe$()$(br)$(thing)Temperatura$(): powyżej -100°C$(br)Pojawiają się częściej na wschodzie."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Alfacenowe",
+			"item": "species:alphacene_mushroom_block",
+			"text": "$(bold)Grzyby alfacenowe$()$(br)$(thing)Temperatura$(): -85°C i powyżej$(br)Pojawiają się zarówno na wschodzie, jak i na zachodzie."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Szkarłatne",
+			"item": "beneath:wood/log/crimson",
+			"text": "$(bold)Grzyby szkarłatne$()$(br)$(thing)Temperatura$(): -109 — -13°C$(br)Pojawiają się częściej na wschodzie."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Lodowcowe",
+			"item": "ad_astra:glacian_log",
+			"text": "$(bold)Grzyby lodowcowe$()$(br)$(thing)Temperatura$(): poniżej -107°C$(br)Pojawiają się zarówno na wschodzie, jak i na zachodzie."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Strofarowe",
+			"item": "ad_astra:strophar_stem",
+			"text": "$(bold)Grzyby strofarowe$()$(br)$(thing)Temperatura$(): powyżej -100°C$(br)Pojawiają się częściej na wschodzie."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Spaczone",
+			"item": "beneath:wood/log/warped",
+			"text": "$(bold)Grzyby spaczone$()$(br)$(thing)Temperatura$(): -109 — -13°C$(br)Pojawiają się częściej na wschodzie."
+		}
+	]
+}

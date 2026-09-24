@@ -1,0 +1,51 @@
+{
+  "name": "缝纫桌",
+  "category": "tfc:mechanics",
+  "icon": "tfc:wood/sewing_table/oak",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)缝纫桌$()是用来制作旗帜图案和锻造模板的工作站。除此之外，还需要$(l:mechanics/weaving#wool_cloth)羊毛布$()、$(l:mechanics/weaving#burlap_cloth)粗麻布$()、线或羊毛纱、以及一根缝衣针。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/bone_needle",
+      "text": "可以用骨头打磨一根骨针作为缝衣针。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/wood/oak_sewing_table",
+      "text": "缝纫桌是用木材、皮革和一把剪刀合成的。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "缝纫桌与工作台类似，如果不小心做错了，直接退出界面就会返还所有材料。缝纫桌的界面中有一本合成配方书。点击这本书会打开所有可合成的配方一览，点击某一种配方就会在缝纫界面出现虚化的提示。"
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "tfc:textures/gui/book/gui/sewing_table.png"
+      ],
+      "text": "缝纫界面。",
+      "border": true
+    },
+    {
+      "type": "patchouli:text",
+      "text": "左侧的两格是用来放置线和针的，底部的两格可以放置粗麻布或羊毛布。右侧的格子则会在缝纫可完成时出现产物。拿取产物后就会消耗相应的材料。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "每一份布匹的面积相当于界面中8块方格的用量，每一份线则可以用来缝制16只针脚。选择了某一种配方后，只需要根据提示使用右上角的按钮放置布料和针脚即可。用红色的 X 按钮即可移除不想要的布料或针脚。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/vanilla/loom",
+      "text": "旗帜织机可用来将旗帜图案织成旗帜。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "关于如何使用锻造模板，请参阅$(l:mechanics/armor_trims)锻造纹饰$()章节。"
+    }
+  ],
+  "read_by_default": true
+}

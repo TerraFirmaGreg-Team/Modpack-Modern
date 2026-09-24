@@ -1,0 +1,24 @@
+{
+  "name": "Гравійні та щебеневі дороги",
+  "category": "tfc:roadsandroofs",
+  "icon": "rnr:rock/gravel_road/chert",
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "anchor": "gravel_fill",
+      "recipe": "rnr:crafting/gravel_fill/chert",
+      "title": "Гарцована суміш",
+      "text": "Невелику кількість гравію можна нанести на базовий шар, щоб створити просту стежку, яка забезпечує скромний 10% бонус до швидкості ходьби. Потім можна додати додатковий шар гравію та утрамбувати його за допомогою універсальної мотики, щоб створити щебеневу дорогу, яка дає 20% бонус до швидкості."
+    },
+    {
+      "type": "patchouli:image",
+      "title": "Будівництво щебеневої дороги",
+      "images": [
+        "rnr:textures/gui/book/macadam.png"
+      ],
+      "border": true
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 8
+}

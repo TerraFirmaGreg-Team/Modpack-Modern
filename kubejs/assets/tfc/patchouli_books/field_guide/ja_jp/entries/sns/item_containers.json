@@ -1,0 +1,20 @@
+{
+  "name": "アイテムコンテナ",
+  "category": "tfc:sacks_n_such",
+  "icon": "sns:straw_basket",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)アイテムコンテナ$()はこのMODが追加する主要アイテムです。主に6つのステータスがあり、マウスカーソルを合わせて$(3)Shift$(clear)を押すことで確認できます。$(li)$(thing)スロット数$()：スロットの数。$(li)$(thing)スロット容量$()：1つのスロットに収容できるアイテム数。$(li)$(thing)許容サイズ$()：スロットに収められる最大の$(l:getting_started/size_and_weight)大きさと重さ$()。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(li)$(thing)アイテム拾得$()：もしアイテムを拾うことができる場合、右クリックを押しながらShift、または$(k:sns.key.pickup)を使って切り替え可能。$(li)$(thing)アイテム消去$()：拾ったアイテムを消去できる場合、スロット上でCtrl+左クリックで切り替え。$(li)$(thing)インベントリ操作$()：アイテムを右クリックしてTFCの容器やバニラのバンドルのように搬入や搬出ができる場。、$(br)すべての$(thing)アイテムコンテナ$()は、$(k:pickItem)を使用してバニラのアイテム選択をサポートします。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "MODパック作成者や設定を行いたい人向けの情報です。すべての$(thing)アイテムコンテナ$()には「ブラックリスト」タグがあり、$(bold)sns:prevented_in_item_containers$()が含まれています。命名規則は$(bold)prevented_in_<registry_name>$()です。例えば、藁のバスケットは$(bold)sns:prevented_in_straw_basket$()を使用しています。特別な「ホワイトリスト」タグを持つ$(thing)アイテムコンテナ$()は、そのブックエントリにリストされます。"
+    }
+  ],
+  "read_by_default": true
+}

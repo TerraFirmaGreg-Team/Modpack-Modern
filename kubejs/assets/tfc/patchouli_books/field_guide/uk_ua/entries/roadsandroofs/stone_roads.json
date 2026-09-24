@@ -1,0 +1,35 @@
+{
+  "name": "Кам'яні дороги",
+  "category": "tfc:roadsandroofs",
+  "icon": "rnr:rock/flagstones/basalt",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Поверх базового шару можна наносити найрізноманітніші варіанти кам'яного дорожнього покриття, і всі вони забезпечують 20% бонус до швидкості пересування. Бруковані дороги створюються шляхом додавання дрібних каменців поверх базового шару. Мощені дороги можна побудувати з кам'яної або керамічної цегли."
+    },
+    {
+      "type": "patchouli:crafting",
+      "anchor": "gneiss_flagstones",
+      "recipe": "rnr:crafting/flagstone/gneiss",
+      "title": "Виготовлення плитняку",
+      "text": "Плитняк можна створити з блоків гладкого каменю або пісковика."
+    },
+    {
+      "type": "patchouli:crafting",
+      "anchor": "pink_sandstone_flagstones",
+      "recipe": "rnr:crafting/flagstone/pink_sandstone",
+      "title": "Виготовлення плитняку",
+      "text": "Плитняк можна створити з блоків гладкого каменю або пісковика."
+    },
+    {
+      "type": "patchouli:image",
+      "title": "Дорожня базальтова бруківка",
+      "images": [
+        "rnr:textures/gui/book/sett_road.png"
+      ],
+      "border": true
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 12
+}

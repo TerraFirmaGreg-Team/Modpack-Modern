@@ -1,0 +1,32 @@
+{
+	"name": "Making a Roof",
+	"category": "tfc:roadsandroofs",
+	"icon": "rnr:terracotta_roof_stairs",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Roof construction begins with a frame. Roof frame blocks can be crafted from lumber and sticks, and made into stair and slab variants. These blocks can be used to outline the shape of the roof."
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "roof_frame",
+			"recipe": "rnr:crafting/roof_framing",
+			"title": "Roof Frame",
+			"text": "Roof frames are the starting point for all roofs."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Once the roof frames are in place, they can be right clicked with any roofing material to create the corresponding roof. Types of roof include thatch, made by adding straw to a roof frame, but also terracotta tiles, wooden shingles, and more."
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Thatching a Roof",
+			"images": [
+				"rnr:textures/gui/book/thatching.png"
+			],
+			"border": true
+		}
+	],
+	"read_by_default": true,
+	"sortnum": 30
+}

@@ -1,0 +1,30 @@
+{
+  "name": "Pão",
+  "category": "tfc:firmalife",
+  "icon": "tfc:textures/item/food/barley_bread.png",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Para fazer  $(thing)Pão$(), primeiro você precisa de $(thing)Fermento$(). Para obter o seu primeiro fermento, sele $(l:firmalife/drying)Fruta Desidratada$() em um Barril com $(thing)Água$(). Depois de três dias, o $(thing)Fermento Natural$() se formará.$(br) A partir dai, o seu fermento pode ser alimentado selando o Fermento Natural em um Barril com  $(thing)Farinha$(). Isso fará com que ele se multiplique. 1 farinha por 100mB de Fermento produz 600mb de Fermento. É um ótimo negócio! "
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfg:shapeless/barley_dough",
+      "text": "Fermento Natural, Adoçante e Farinha podem ser combinados para fazer $(thing)Massa$(). A Massa pode ser assada normalmente para produzir $(thing)Pão!$()."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfg:crafting/barley_slice",
+      "title": "Pão fatiado",
+      "text": "Após assado, você pode usar uma $(thing)faca$() para cortar o pão em $(thing)fatias$(). Estas podem ser usadas para $(l:tfc:mechanics/sandwiches)preparação de sanduíches$(), ou assadas até virar $(thing)torrada$(), que podem ser passadas com $(thing)manteiga$() ou conservas."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/toast_with_butter",
+      "recipe2": "firmalife:crafting/toast_with_jam",
+      "title": "Torrada"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 16
+}

@@ -1,0 +1,17 @@
+{
+  "name": "罐头柜",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:wood/jarbnet/pine",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "罐头柜是一种用于存储$(l:tfc:firmalife/jars)罐子$()、蜡烛和水壶的装饰性存储方块。空手并按住$(item)$(k:key.sneak)$()点击可将其打开或关闭。若内部放有蜡烛，可将其点燃以产生微弱的亮光。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/wood/acacia_jarbnet"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 6
+}

@@ -1,0 +1,225 @@
+{
+	"name": "Extraterrestrische Fauna",
+	"category": "tfc:tfg_tips",
+	"icon": "minecraft:sniffer_egg",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"title": "Extraterrestrische Fauna",
+			"text": "Im Weltraum gibt es viele andere Tierarten als die, die man auf der Erde findet. Einige wenige Tiere sind feindselig und greifen den Spieler an, die meisten sind jedoch friedlich. Nur wenige von ihnen können $(l:mechanics/animal_husbandry)domestiziert$() werden.$(br)Tiere, die man auf anderen Welten findet, lassen sich in zwei Kategorien einteilen: $(item)heiße$() und $(item)kalte$(). Tiere können nur auf Planeten überleben, die entweder ein ähnliches Klima wie ihre ursprüngliche Heimat haben oder $(thing)gemäßigte$() Planeten wie die Erde sind."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Weltraumtiere benötigen keine sauerstoffhaltige Umgebung, allerdings sorgt eine solche Umgebung dafür, dass das Gebiet für ihr Überleben als „gemäßigt“ zählt. Wenn du beispielsweise ein kältebewohnendes Tier (wie einen Schnüffler) auf einen heißen Planeten (wie die Venus) bringst, wird es Feuer fangen, sofern es sich nicht in einer sauerstoffhaltigen Umgebung befindet.$(br)Damit ist die Erde der ideale Ort, um einen Zoo zu bauen, falls du das möchtest.$(br)Du kannst Tiere mithilfe des Spatial-Storage-Systems von AE2 zwischen Planeten transportieren."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tfg:marker/moon",
+			"title": "Mondtiere",
+			"text": "$(item)Der Mond$() mag ziemlich karg sein, aber trotzdem gibt es dort einige Tiere, die ihn ihre Heimat nennen.$(br2)Er gilt trotz der ziemlich extremen Temperaturschwankungen als $(thing)kalte$() Welt.",
+			"anchor": "moon"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfg:moon_rabbit{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16,MoonRabbitType:5}",
+			"scale": 1.3,
+			"offset": -0.3,
+			"name": "Mondhase",
+			"text": "Abgesehen von ihrer Färbung haben $(thing)Mondkaninchen$() dieselben Werte wie Kaninchen auf der Erde. Sie fressen außerdem Chorusfrüchte."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "species:limpet",
+			"scale": 0.8,
+			"name": "Napfschnecken",
+			"text": "$(thing)Napfschnecken$() sind eine Schneckenart mit Erz auf ihrem Gehäuse. Du kannst das Erz mit jedem Bergbauwerkzeug abbauen. Sie sind friedlich und können gegessen werden."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "ad_astra:star_crawler",
+			"scale": 0.4,
+			"name": "Sternenkriecher",
+			"text": "$(thing)Sternenkrabbler$() sind eine Art Seestern. Sie sind feindselig und können gegessen werden."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "species:birt",
+			"scale": 0.9,
+			"name": "Birt",
+			"text": "$(thing)Birts$() sind eine Art Vogel? Sie legen Eier in ihren Nestern, sind friedlich, solange sie nicht angegriffen werden, und können gegessen werden. Ihre Eier können geworfen werden, um Ziele zu betäuben."
+		},
+		{
+			"type": "patchouli:empty",
+			"draw_filler": true
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tfg:marker/mars",
+			"title": "Marstiere",
+			"text": "$(item)Mars$() ist der Planet mit einer Umgebung, die der Erde am ähnlichsten ist. Er bietet eine große Vielfalt an Tieren, mit denen man interagieren kann, sowie Pflanzen, mit denen man sie (und sich selbst) ernähren kann … abgesehen von der riesigen Wüste, in der fast nichts lebt.$(br2)Mars ist ein $(thing)kalter$() Planet.",
+			"anchor": "mars"
+		},
+		{
+			"type": "patchouli:image",
+			"images": [
+				"tfg:textures/gui/field_guide/sandworm.png"
+			],
+			"border": true,
+			"title": "Der Sandwurm",
+			"text": "$(thing)Sandwürmer$() werden durch die Schritte von Spielern aufmerksam. Sie sind der Grund dafür, dass in der Wüste fast nichts anderes lebt.$(br)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Sniffers",
+			"text": "$(thing)Schnüffler$() sind domestizierbare Tiere, die bei Temperaturen zwischen -30 und -102 °C vorkommen. Sie benötigen ein Großes Nest, um ihre Eier zu legen, und können für $(item)Schnüffler-Flaum$() geschoren werden. Ihre Eier können gekocht oder zur Gewinnung von Sahne verarbeitet werden. Sie fressen jede Mars-Pflanze.",
+			"anchor": "sniffer"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfg:sniffer{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
+			"scale": 0.45,
+			"name": " ",
+			"text": "Ein Sniffer."
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Wraptoren",
+			"text": "$(thing)Wraptoren$() sind domestizierbare Tiere, die bei Temperaturen zwischen -15 und -100 °C vorkommen. Sie benötigen ein Großes Nest, um ihre Eier zu legen, und können für $(item)Wraptor-Federn$() geschoren werden. Ihre Eier können gekocht oder zur Gewinnung von Wraptor-Zucker verarbeitet werden. Sie fressen jede Mars-Pflanze.",
+			"anchor": "wraptor"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfg:wraptor{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
+			"scale": 0.8,
+			"name": " ",
+			"text": "Ein Wraptor."
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Gletscher Schaf",
+			"text": "$(thing)Glacian-Schafe$() bevorzugen extrem kalte Umgebungen unter -108 °C und sind domestizierbare Tiere. Sie können für $(item)Glacian-Wolle$() geschoren werden, die ein hervorragender Isolator ist. Sie fressen jede Mars-Pflanze.",
+			"anchor": "glacian_sheep"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfg:glacian_ram{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
+			"scale": 0.7,
+			"name": " ",
+			"text": "Ein Glacian-Widder/Auenweibchen"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Snatcher",
+			"text": "$(thing)Snatcher$() sind friedliche Tiere, die es lieben, deine Sachen zu stehlen! Greife sie an, um deine Gegenstände zurückzuerhalten, oder füttere sie mit $(item)rohem Fisch$(), um sie zu zähmen.$(br2)Nach dem Zähmen kannst du sie auf deinem Rücken tragen und mit einer Holzkiste ausrüsten. Drücke $(k:key.wan_ancient_beasts.special_ability)$(), um sie zu werfen. Sie stehlen dann den Inhalt einer nahegelegenen Kiste und bringen ihn zu dir."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "wan_ancient_beasts:snatcher",
+			"scale": 0.35,
+			"name": " ",
+			"text": "Ein Snatcher."
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Charger",
+			"text": "$(thing)Charger$() sind halb-friedliche Tiere. Du kannst sie mit $(item)einer beliebigen Mars-Pflanze$() zähmen und als Kampf-Reittier am Boden verwenden.$(br2)Drücke $(k:key.wan_ancient_beasts.special_ability)$() für einen Kopfstoßangriff oder halte $(item)Leertaste$() gedrückt, um einen Sturmangriff auszuführen.$(br2)Sie können außerdem mit $(item)färbbarer Rüstung$() ausgerüstet werden."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "wan_ancient_beasts:charger",
+			"scale": 0.45,
+			"name": " ",
+			"text": "Charger haben eine natürliche Rivalität mit $(thing)Raider$(). Sie greifen sich gegenseitig sofort an, sobald sie sich sehen."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "wan_ancient_beasts:surfer",
+			"scale": 0.4,
+			"offset": 0.2,
+			"name": "Surfer",
+			"text": "$(thing)Surfer$() sind halb-aquatische, friedliche Tiere. Du kannst sie mit $(item)rohem Fisch$() zähmen und unter Wasser auf ihnen reiten. Sie können außerdem gegessen werden."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "wan_ancient_beasts:soarer",
+			"scale": 0.4,
+			"offset": 1,
+			"name": "Segler",
+			"text": "$(thing)Soarer$() sind friedliche Tiere, die oberhalb von -106 °C vorkommen. Du kannst sie mit $(item)rohem Fisch$() zähmen und als fliegendes Reittier verwenden. Sie können außerdem gegessen werden."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "wan_ancient_beasts:eater",
+			"scale": 0.5,
+			"name": "Eater",
+			"text": "Als Spitzenprädatoren sind $(thing)Eater$() feindselige Tiere, die oberhalb von -109 °C vorkommen. Wenn es dir gelingt, einen zu erlegen, kann er gegessen werden."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "species:cruncher",
+			"scale": 0.7,
+			"name": "Cruncher",
+			"text": "$(thing)Cruncher$() sind territoriale $(item)Mini-Boss$()-Raubtiere. Füttere sie mit Fleisch, um ihre Regeneration zu stoppen. Sie können außerdem gegessen werden."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "wan_ancient_beasts:glider",
+			"scale": 0.4,
+			"offset": 0.2,
+			"name": "Glider",
+			"text": "Trotz ihres Namens können $(thing)Glider$() weder gezähmt noch geritten werden. Sie sind friedlich und leben in Gebieten oberhalb von -105 °C. Sie mögen Musik und können gegessen werden."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "wan_ancient_beasts:crusher",
+			"scale": 0.5,
+			"offset": 0.5,
+			"name": "Crusher",
+			"text": "$(thing)Crusher$() sind halbfeindselige Tiere, die in Herden in Gebieten oberhalb von -100 °C vorkommen. Sie können wegen ihres Fleisches und ihrer harten Stacheln getötet werden."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "species:springling",
+			"scale": 0.9,
+			"name": "Springling",
+			"text": "$(thing)Springling$() sind wilde Tiere, die oberhalb von -108 °C vorkommen. Wenn du sie mit $(item)Setzlingen$() fütterst, kannst du auf ihnen reiten und ihren extrem langen Hals verlängern. Sie können außerdem gegessen werden."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "species:goober",
+			"scale": 0.6,
+			"name": "Goober",
+			"text": "$(thing)Goober$() sind faule Wildtiere, die oberhalb von -109 °C vorkommen. Sie sind friedlich und können gegessen werden."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "wan_ancient_beasts:walker",
+			"scale": 0.6,
+			"offset": 2.2,
+			"name": "Läufer",
+			"text": "Die gigantischen $(thing)Walker$() bewohnen Gebiete oberhalb von -97 °C. Sie sind friedlich und können gegessen werden."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "wan_ancient_beasts:raider",
+			"scale": 0.5,
+			"name": "Raider",
+			"text": "$(thing)Raider$() sind feindselige Tiere, die oberhalb von -109 °C vorkommen. Sie haben eine natürliche Rivalität mit $(thing)Charger$(). Du kannst sie durch Füttern mit $(item)rohem Fleisch$() neutral machen."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "wan_ancient_beasts:toxlacanth",
+			"scale": 0.35,
+			"name": "Toxlacanth",
+			"text": "$(thing)Toxlacanth$() sind aquatische Beutetiere. Es wird empfohlen, sie aus sicherer Entfernung zu töten und ihr Fleisch vor dem Verzehr zu kochen."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "species:stackatick",
+			"scale": 0.4,
+			"name": "Stackatick",
+			"text": "Als eines der wenigen Tiere, die die marsianische Wüste überleben können, sind $(thing)Stackatick$() friedliche Beutetiere. Sie können außerdem gegessen werden."
+		}
+	],
+	"read_by_default": true
+}

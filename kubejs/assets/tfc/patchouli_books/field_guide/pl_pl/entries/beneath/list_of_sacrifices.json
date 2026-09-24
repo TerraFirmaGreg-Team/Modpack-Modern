@@ -1,0 +1,16 @@
+{
+  "name": "Lista ofiar",
+  "category": "tfc:beneath",
+  "icon": "tfc:gem/diamond",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "This entry details the possible costs and rewards for the different $(l:beneath/ancient_altar)Sacrifices$() one can make in Beneath."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(li)Surowy szlam$() -> Bogaty garnieryt$()$(li)Lawoodporna skóra -> Wielka niewyprawiona skóra$()$(li)Bruk -> Surowy piroksenit$()"
+    }
+  ],
+  "read_by_default": true
+}

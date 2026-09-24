@@ -1,0 +1,18 @@
+{
+  "name": "Tigela de Mistura",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:mixing_bowl",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "A tigela de mistura é uma maneira de misturar itens e fluidos de uma forma amigável. Pressione $(item)$(k:key.use)$() nela com uma $(thing)Colher$() para adicioná-la à tigela, o que permite que ela funcione."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/mixing_bowl",
+      "text": "Requer uma $(thing)Colher$() para usar."
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 18
+}

@@ -1,0 +1,55 @@
+{
+	"name": "Temperaturreglung",
+	"category": "tfc:beneath",
+	"icon": "minecraft:ice",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Der Untergrund ist heiß! Die Temperatur beginnt ganz oben bei 20°C und wird mit der Tiefe immer heißer.$(br2)$(item)Burlap$(), $(item)Linen$(), und $(item)Silk$() Kleidung werden helfen, aber hier sind einige andere Möglichkeiten, um kühl zu bleiben!"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "minecraft:water_bucket",
+			"title": "Wasser",
+			"text": "Wasser kann auf der oberen Ebene des Untergrunds gefunden werden. Ein kleines Bad kann dich abkühlen!"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Eis",
+			"item": "minecraft:packed_ice",
+			"text": "Bringe $(thing)Ice$() mit! Eis in deiner nähe wird die Umgebungstemperatur senken. Eis kann mit einer $(item)Säge$() auf der Oberfläche geerntet werden, und die daraus resultierenden Eis-Spähne können in $(item)verpackte Ice$() umgewandelt werden. $(thing)Packed$() und $(thing)Blue$() Eis werden nicht schmelzen."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "gtceu:ice_bucket",
+			"title": "Flüssiges Slush-Eis",
+			"text": "Ahhhh, so erfrischend! Kühlt dich um 4° C."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Blaustahlausrüstung",
+			"item": "create:netherite_diving_helmet,create:netherite_backtank,minecraft:netherite_leggings,create:netherite_diving_boots",
+			"text": "Auf der Suche nach etwas Dauerhaftem? Die $(thing)Blue Steel Diving Set$() senkt deine Temperatur drastisch und lässt dich auch in der Lava schwimmen!$(br2)$(item)Lavaproof Hides$() kann von den einheimischen $(thing)Red Elk$() oder von Bastionen geplündert werden."
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "tfg:create/shaped/netherite_diving_helmet",
+			"recipe2": "tfg:create/shaped/netherite_diving_helmet_upgrade"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "tfg:create/shaped/netherite_backtank",
+			"recipe2": "tfg:create/shaped/netherite_backtank_upgrade"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "tfg:minecraft/shaped/netherite_leggings"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "tfg:create/shaped/netherite_diving_boots",
+			"recipe2": "tfg:create/shaped/netherite_diving_boots_upgrade"
+		}
+	],
+	"read_by_default": true
+}

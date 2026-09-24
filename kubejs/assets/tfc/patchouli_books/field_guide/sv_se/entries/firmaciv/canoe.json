@@ -1,0 +1,96 @@
+{
+  "name": "Dugout Canoes",
+  "category": "tfc:firmaciv",
+  "icon": "firmaciv:canoe_with_paddle_icon_only",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "The Dugout Canoe will likely be the first step on your aquatic journey! If you're in the copper age, you can probably build a canoe."
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "firmaciv:textures/gui/book/canoe_isometric.png"
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "text": "You can put blocks or animals in the pilot seat, but be aware that there's no way to paddle the boat if you do this! It's most useful if you just want to send materials down a river on their own.$(br2)A canoe has two seats, and is piloted from the rear. You need to hold a canoe paddle in order to move at full speed, and if two players are holding paddles, you can go even faster."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "To build a Dugout Canoe, place 3 stripped logs in a row, horizontally, and cut off the tops with a saw. Then, carve out the canoe shape with an axe. Finally, light the inside of the canoe on fire to hollow out the hull. It will take the same amount of time as a pit kiln to complete the hollowing process."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Carving out a Dugout Canoe requires a softer wood, and as a result, only some logs are workable:$(br2)Douglas Fir$(br)Pine$(br)Palm$(br)Spruce$(br)Sequoia$(br)Kapok$(br)Mangrove$(br)White Cedar$(br)Willow"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            " F ",
+            " 0 ",
+            " B "
+          ]
+        ],
+        "mapping": {
+          "F": "tfc:wood/stripped_log/douglas_fir[axis=x]",
+          "0": "tfc:wood/stripped_log/douglas_fir[axis=x]",
+          "B": "tfc:wood/stripped_log/douglas_fir[axis=x]"
+        }
+      },
+      "name": "Just a Log",
+      "text": "The first step in making a Dugout Canoe.",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            " F ",
+            " 0 ",
+            " B "
+          ]
+        ],
+        "mapping": {
+          "F": "firmaciv:wood/canoe_component_block/douglas_fir[canoe_carved=5,facing=east,end=true]",
+          "0": "firmaciv:wood/canoe_component_block/douglas_fir[canoe_carved=5,facing=east,end=false]",
+          "B": "firmaciv:wood/canoe_component_block/douglas_fir[canoe_carved=5,facing=east,end=true]"
+        }
+      },
+      "name": "Weird Slabs",
+      "text": "The top of the log has been removed using a saw.",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            " F ",
+            " 0 ",
+            " B "
+          ]
+        ],
+        "mapping": {
+          "F": "firmaciv:wood/canoe_component_block/douglas_fir[canoe_carved=11,facing=west,end=true]",
+          "0": "firmaciv:wood/canoe_component_block/douglas_fir[canoe_carved=11,facing=east,end=false]",
+          "B": "firmaciv:wood/canoe_component_block/douglas_fir[canoe_carved=11,facing=east,end=true]"
+        }
+      },
+      "name": "A Strange Sculpture",
+      "text": "A fully carved Dugout Canoe, ready for hollowing out the hull.",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmaciv:crafting/canoe_paddle",
+      "text": "Don't forget to craft a paddle or two!"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 1
+}

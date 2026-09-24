@@ -1,0 +1,34 @@
+{
+  "name": "宝石",
+  "category": "tfc:mechanics",
+  "icon": "tfc:gem/opal",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "宝石是一类在各种环境，如$(thing)河低$()或$(l:the_world/geology)火山$()中，生成的特殊矿物。关于每种宝石生成的具体条件，请参阅$(l:the_world/ores_and_minerals)矿石与矿物$()章节。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "tag:tfc:gem_powders",
+      "link_recipes": false,
+      "text": "宝石可以在$(l:mechanics/quern)手推磨$()中磨制成粉，在玻璃加工中用于$(l:mechanics/glassworking_applications#coloring)染色$()。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "通过$(l:mechanics/sluices)洗矿$()和$(l:mechanics/panning)淘金$()可以获得$(thing)切制宝石$()。洗矿槽可能获得的宝石种类取决于所用的原材料的岩石种类。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Gems have higher $(thing)Hardness$() values than regular ore, requiring different strength tools to break them. This summarizes the minimum $(thing)Pickaxe$() tier required to break a gem ore block:$(br)$(li)Amethyst: Steel$(li)Diamond: Black Steel$(li)Emerald: Steel$(li)Lapis Lazuli: Bronze$(li)Opal: Bronze$(li)Pyrite: Copper$(li)Ruby: Black Steel$(li)Sapphire: Black Steel$(li)Topaz: Steel"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "要切制宝石，需要先制作一张$(thing)砂纸$()。砂纸是通过合成黑沙、助焊剂、任意宝石粉和纸得到的。将未切制的宝石与砂纸合成便能得到切制宝石。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/sandpaper"
+    }
+  ],
+  "read_by_default": true
+}

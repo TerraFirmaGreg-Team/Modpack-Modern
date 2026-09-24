@@ -1,0 +1,44 @@
+{
+  "name": "More Fertilizer Options",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:compost_tumbler",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Given a greater need for fertilization in Firmalife, there are more options for getting $(l:mechanics/fertilizers)fertilizers$()."
+    },
+    {
+      "type": "tfc:drying_recipe",
+      "recipe": "firmalife:drying/dry_grass",
+      "text": "Thatch can be $(l:firmalife/drying)Dried$() into $(thing)Dry Grass$(), which can be used in a Composter as a brown item."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)Compost Tumblers$() are a great way to produce more fertilizer. They must be connected to mechanical power in order to work. It can only be interacted with when not powered, so consider connecting it to a clutch!"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/compost_tumbler",
+      "text": "The compost tumbler is unique in that it takes more types of compost, and does not require precise ratios in order to work."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "The tumbler can take green and brown items like a regular composter. It can also take pottery sherds, charcoal, fish, and bones in small amounts."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/pottery_sherd",
+      "text": "Smashing pottery with a hammer yields sherds."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Green and brown items count the same, being on the range 1-4, but the new additions like fish always count for 1. Adding too much weird stuff to the composter causes it to produce rotten compost. Further, you will not know it is rotten until the very end! If the compost is more than fifteen percent bones, fish, or pottery, or more than twenty percent charcoal. it will rot. Or, if there are 10 or more green units than brown units, it will rot."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Favorable amounts of certain additions can extend or shorten the length of time it takes for the compost to complete. Play around with it and see what happens.$(br)If 32 units are in the composter, 3 compost will be produced. If at least 24, 2 compost will be made. If 16 or more, 1 will be made. Below that, and there will be no compost."
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 17
+}

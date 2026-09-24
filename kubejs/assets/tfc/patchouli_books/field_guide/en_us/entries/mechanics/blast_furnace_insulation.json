@@ -1,0 +1,17 @@
+{
+  "name": "Blast Furnace Insulation",
+  "category": "tfc:mechanics",
+  "icon": "tfcbetterbf:insulation",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)Blast Furnace Insulation$() is a more compact way to insulate your $(l:mechanics/blast_furnace)Blast Furnace$(). Rather than placing sheets around the chimney, $(thing)Blast Furnace Insulation$() is applied directly to the $(l:mechanics/fire_clay#fire_bricks)Fire Bricks$() using $(item)$(k:key.use)$(). When broken, the insulation and bricks drop separately."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfcbetterbf:crafting/insulation",
+      "text": "Crafting insulation requires the same number of $(thing)Wrought Iron Sheets$() that would be placed around a single fire brick block."
+    }
+  ],
+  "read_by_default": true
+}

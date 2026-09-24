@@ -1,0 +1,18 @@
+{
+  "name": "ランチボックス",
+  "category": "tfc:sacks_n_such",
+  "icon": "sns:lunchbox",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "sns:lunchbox",
+      "text": "$(item)ランチボックス$()は興味深い$(l:sns/item_containers)アイテムコンテナ$()の一つです。名前から予想できるように食べ物を収納可能で、さらに中身を食べることも可能です。$(k:sneak)と$(k:use)でランチボックスを開き、$(k:sneak)とスクロールホイールで食べるスタックを選択し、$(k:use)で選択したスタックを食べます。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "sns:crafting/lunchbox",
+      "text": "Modpack作成者や追加の食べ物を追加したい方は、アイテムタグ$(bold)sns:lunchbox_food$()を参照してください。ほとんどのアドオンは自動的にサポートされるはずです。"
+    }
+  ],
+  "read_by_default": true
+}

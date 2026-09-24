@@ -1,0 +1,48 @@
+{
+	"name": "火星の菌性樹木一覧",
+	"category": "tfc:tfg_tips",
+	"icon": "tfg:saplings/aeronos",
+	"read_by_default": true,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "これは火星に存在する菌性樹木（木っぽい巨大キノコ）と、それぞれが生育する気候の一覧です。$(br2)家の建材などで特定の木材を使いたいと思ったときは、ここにある一覧を見て、どんな環境に生えているかを確認できます。なお、並び順は樹木の名前のアルファベット順です。$(br2)興味があれば、$(l:tfc:arborfirmacraft/earth_tree_index)地球の樹木一覧$()もご覧ください。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "エアロノス",
+			"item": "ad_astra:aeronos_stem",
+			"text": "$(bold)エアロノス$()$(br)$(thing)気温$(): -100℃以上$(br)東側でより頻繁に見られます。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "アルファキノコ",
+			"item": "species:alphacene_mushroom_block",
+			"text": "$(bold)アルファキノコ$()$(br)$(thing)気温$(): -85℃以上$(br)西側と東側の両方で見られます。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "真紅",
+			"item": "beneath:wood/log/crimson",
+			"text": "$(bold)真紅$()$(br)$(thing)気温$(): -109 — -13℃以上$(br)東側でより頻繁に出現します。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "グラシアン",
+			"item": "ad_astra:glacian_log",
+			"text": "$(bold)グラシアン$()$(br)$(thing)気温$(): -107℃以下$(br)西側と東側の両方で見られます。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "ストロファ",
+			"item": "ad_astra:strophar_stem",
+			"text": "$(bold)ストロファ$()$(br)$(thing)気温$(): -100℃以上$(br)西側でより頻繁に見られます。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "歪み",
+			"item": "beneath:wood/log/warped",
+			"text": "$(bold)歪み$()$(br)$(thing)気温$(): -109 — -13℃以上$(br)西側でより頻繁に見られます。"
+		}
+	]
+}

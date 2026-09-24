@@ -1,0 +1,18 @@
+{
+  "name": "食物架",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:wood/food_shelf/pine",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)食物架$()是用於存放食物的設備。它只能在有效的$(l:firmalife/cellar)地窖$()中使用。食物架可以容納一整組的單一食品。通過$(item)$(k:key.use)$()可以放入或取出物品。存放在有效食物架中的物品會獲得比小缸更好的防腐效果。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/wood/acacia_shelf",
+      "text": "食物架由木板和木材製成。"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 4
+}

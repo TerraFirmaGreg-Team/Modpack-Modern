@@ -1,0 +1,18 @@
+{
+  "name": "Мішок",
+  "category": "tfc:sacks_n_such",
+  "icon": "sns:burlap_sack",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "sns:burlap_sack",
+      "text": "$(item)Мішок$() — це тип $(l:sns/item_containers)контейнера для предметів$(), який має трохи більше місця для зберігання, ніж $(item)шкіряний мішок$()."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "sns:crafting/burlap_sack",
+      "text": "За замовчуванням у них можна зберігати предмети розміром до $(thing)малий$() включно."
+    }
+  ],
+  "read_by_default": true
+}

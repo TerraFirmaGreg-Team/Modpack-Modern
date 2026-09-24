@@ -1,0 +1,24 @@
+{
+  "name": "砂利道とマカダム道",
+  "category": "tfc:roadsandroofs",
+  "icon": "rnr:rock/gravel_road/chert",
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "anchor": "gravel_fill",
+      "recipe": "rnr:crafting/gravel_fill/chert",
+      "title": "ホギンミックス",
+      "text": "路盤に少量の砂利を敷くだけで、歩行速度をわずか10％向上させるシンプルな小道を作ることができます。さらに砂利を補充し、マトックで突き固めれば、歩行速度を20％向上させるマカダム道を作ることができます。"
+    },
+    {
+      "type": "patchouli:image",
+      "title": "マカダムの構築方法",
+      "images": [
+        "rnr:textures/gui/book/macadam.png"
+      ],
+      "border": true
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 8
+}

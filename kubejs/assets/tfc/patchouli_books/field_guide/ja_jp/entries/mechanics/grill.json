@@ -1,0 +1,47 @@
+{
+  "name": "焚き火とグリル",
+  "category": "tfc:mechanics",
+  "icon": "tfc:grill",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)グリル$()は、食べ物をより効率的に調理するために焚き火に追加できるアイテムです。グリルは一度に5つのアイテムを調理することができ、また調理した食べ物に$(thing)焚き火焼き$()の特性を付与します。この特性は、アイテムの$(l:mechanics/decay)消費期限$()をわずかに延長します。グリル付きの焚き火を作るには、まず$(l:getting_started/firepit)焚き火$()を作成し、次に$(thing)鍛鉄のグリル$()を焚き火に使用します。"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "0"
+          ]
+        ],
+        "mapping": {
+          "X": "tfc:grill"
+        }
+      },
+      "name": "グリル付きの焚き火。",
+      "text": "",
+      "enable_visualize": false
+    },
+    {
+      "type": "tfc:anvil_recipe",
+      "recipe": "tfc:anvil/wrought_iron_grill",
+      "text": "グリルは、$(l:mechanics/anvils)金床$()を使用し$(thing)錬鉄のダブルプレート$()を鍛造することで作成されます。$(br2)グリルを使用するとグリルGUIが開きます。焚き火と同様に、上部のスロットに追加する必要がある燃料用のスロットが4つ、温度メーター、加熱するアイテム用のスロットが焚き火では1つですが、グリルは5つになります。"
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "tfc:textures/gui/book/gui/grill.png"
+      ],
+      "text": "グリルGUI。",
+      "border": false
+    }
+  ],
+  "read_by_default": true,
+  "extra_recipe_mappings": {
+    "tfc:wrought_iron_grill": 0
+  }
+}

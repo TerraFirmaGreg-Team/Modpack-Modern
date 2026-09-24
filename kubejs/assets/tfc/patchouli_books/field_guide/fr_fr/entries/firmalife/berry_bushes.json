@@ -1,0 +1,40 @@
+{
+  "name": "Buissons de baies",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:plant/pineapple_bush",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Firmalife rajoute quelques buissons de baies. Pour plus d'infos sur les buissins de raisin sauvage, consultez $(l:firmalife/wine)viticulture$()."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "firmalife:food/nightshade_berry",
+      "link_recipes": false,
+      "text": "Il y a tout d'abord la morelle. La morelle est une baie empoisonnée. Quand rajoutée à de la soupe, elle fait de la $(thing)Soupe puante$() toxique. Elle se trouve entre 200-400mm de précipitations et 7-24°C dans les forêts."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "firmalife:food/pineapple",
+      "link_recipes": false,
+      "text": "Des buissons d'ananas se trouvent à 250-500mm de précipitations et 20-32°C dans des forêts. Les ananas sont similaires à d'autres fruits, mais peuvent être transformés en $(thing)Cuir d'ananas$()."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/pineapple_fiber",
+      "text": "Des ananas $(l:firmalife/drying)séchés$() peuvent être transformés en fibre d'ananas."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:kjs/damage/shapeless/pineapple_yarn",
+      "text": "Du fil d'ananas peut être fait en combinant un $(thing)Fuseau$() avec la fibre."
+    },
+    {
+      "type": "tfc:loom_recipe",
+      "recipe": "firmalife:loom/pineapple_leather",
+      "text": "Enfin, le cuir d'ananas peut être tissé dans un $(l:tfc:mechanics/weaving)Métier à tisser$(). C'est un substitut végétal au cuir normal qui peut être utilisé pour la fabrication, le taillage et autre !"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 21
+}

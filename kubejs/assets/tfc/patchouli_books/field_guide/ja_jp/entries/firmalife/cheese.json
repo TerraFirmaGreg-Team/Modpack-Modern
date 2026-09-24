@@ -1,0 +1,87 @@
+{
+  "name": "チーズ",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:textures/item/food/gouda.png",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Firmalifeで $(thing)チーズ$() を作るのは、標準版の TFC よりも少し手間がかかります。新たに 2 種類のミルクが追加されています。$(thing)ヤクミルク$() と $ $(thing)ヤギミルク$()です。これらは、それぞれ $(l:mechanics/animal_husbandry#yak)ヤク$() と $(l:mechanics/animal_husbandry#goat)ヤギ$() から搾乳することで入手できます。$(l:mechanics/animal_husbandry#cow)ウシ$() から搾乳すると、従来通りの種類の牛乳が得られます。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "いつものように、まず牛乳を $(thing)凝乳$() させる必要があります。牛乳を凝固させるには、$(thing)レンネット$()が必要です。レンネットは、$(thing)反芻動物$()の胃から採取されます。これには、$(l:mechanics/animal_husbandry#yak)ヤク$()、$(l:mechanics/animal_husbandry#cow)牛$()、$(l:mechanics/animal_husbandry#sheep) ヒツジ$()、$(l:mechanics/animal_husbandry#goat)ヤギ$()、および$(l:mechanics/animal_husbandry#musk_ox)ジャコウウシ$()などが含まれます。牛乳を凝固させるには、レンネットを入れた$(l:mechanics/barrels)樽$()に牛乳を入れ、4時間密封してください。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "anchor": "cheesecloth",
+      "recipe": "firmalife:crafting/cheesecloth",
+      "text": "凝固した牛乳は、$(thing)チーズクロス$() と一緒に樽に密封することで、$(thing)チーズカード$() に変えなければなりません。チーズクロスは再利用できません。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfg:crafting/cheddar_wheel",
+      "text": "お好みで、$(thing)ドライチーズ$()を作ることができます。$(thing)ヤクミルクカード$()から$(thing)ラジャメトック$()を、$(thing)ヤギミルクカード$()から$(thing)シェーブル$()を、そして$(thing)ミルクカード$()から$(thing)チェダー$()を作ることができます。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfg:crafting/chevre_wheel",
+      "recipe2": "tfg:crafting/rajya_metok_wheel"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "もう一つの選択肢は、$(thing)ウェットチーズ$()を作ることです。これは、$(thing)塩水$()を入れた樽にミルクカードを密閉して作られます。$(thing)ヤクミルクカード$()からは$(thing)ショーシャ$()を、$(thing)ヤギミルクカード$()からは$(thing)フェタ$()を、そして$(thing)ミルクカード$()からは$(thing)ゴーダ$()を作ることができます。"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "aging",
+      "text": "チーズホイールは、保存期間を延ばすために適切な場所に置く必要があるブロックです。品質と保存期間を向上させるためには、チーズホイールを $(thing)熟成$() させる必要があります。これには $(l:firmalife/cellar)貯蔵庫$() を使用します。チーズホイールから食べられるチーズを得るには、$(thing)ナイフ$() 手に持って $(item)$(k:key.use)$() を押して、ホイールから切り取る必要があります。単にブロックを破壊してしまうと、熟成が失われてしまいます！"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "ゴーダチーズホイールの熟成段階：$(thing)新鮮$()、$(thing)熟成$()、$(thing)年代物$()。",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "firmalife:gouda_wheel[age=fresh]"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "firmalife:gouda_wheel[age=aged]"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "firmalife:gouda_wheel[age=vintage]"
+          }
+        }
+      ]
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 1
+}

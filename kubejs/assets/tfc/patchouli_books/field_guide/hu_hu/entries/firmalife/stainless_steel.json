@@ -1,0 +1,31 @@
+{
+  "name": "Rozsdamentes acél",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:metal/ingot/stainless_steel",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)Stainless Steel$() and $(thing)Chromium$() are $(thing)Steel-tier$() metals added by Firmalife. They are used in the construction of $(l:firmalife/greenhouse)Stainless Steel Greenhouses$()."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "firmalife:metal/ingot/stainless_steel",
+      "title": "Rozsdamentes acél",
+      "link_recipes": false,
+      "text": "$(br)$(bold)Requirements:$()$(br)$(li)20 - 30 % : $(thing)Chromium$()$(li)10 - 20 % : $(thing)Nickel$()$(li)60 - 80 % : $(thing)Steel$()$(br2)"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "firmalife:ore/small_chromite",
+      "link_recipes": false,
+      "text": "Chromite is an ore that is melted to obtain Chromium. It is found in $(thing)Igneous Intrusive$() and $(thing)Metamorphic$() rocks."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(li)Granite$()$(li)Diorite$()$(li)Gabbro$()$(li)Slate$()$(li)Phyllite$()$(li)Schist$()$(li)Gneiss$()$(li)Marble$()",
+      "title": "All Chromium Rocks"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 11
+}

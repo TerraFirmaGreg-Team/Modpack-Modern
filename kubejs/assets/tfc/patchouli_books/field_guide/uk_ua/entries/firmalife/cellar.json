@@ -1,0 +1,33 @@
+{
+  "name": "Льох",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:sealed_bricks",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)Льох$() — це багатоблокова структура, якою керує $(l:firmalife/climate_station)кліматична станція$(). Єдина вимога до структури льоха полягає в тому, щоб він був закритим приміщенням, оточеним $(thing)цеглою льоху$() або $(thing)цегляними льоховими дверми$() з усіх боків. Кліматична станція має бути розміщена на першому рівні льоха й торкатися стіни."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock_id": "firmalife:cellar",
+      "name": "Приклад льоха",
+      "text": "Це лише один із багатьох льохів, які ти можеш створити!",
+      "enable_visualize": true
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/sealed_bricks",
+      "recipe2": "firmalife:crafting/sealed_door"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)Бджолиний віск$() можна отримати завдяки $(l:firmalife/beekeeping)бджільництву$().$(br)Льох використовується для $(l:firmalife/cheese#aging)дозрівання сиру$()."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Льох використовується для збереження їжі, наприклад, за допомогою $(l:firmalife/food_shelves)полиці для їжі$() та $(l:firmalife/hangers)вішака$(). Для кращого збереження харчів льох працює ефективніше в середовищі з нижчою середньою температурою. За температури нижче 0 градусів модифікатори псування працюють трохи краще, а нижче -12 градусів — набагато краще."
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 3
+}

@@ -1,0 +1,48 @@
+{
+  "name": "燻製",
+  "category": "tfc:firmalife",
+  "icon": "tfc:textures/item/food/venison.png",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)燻製$()にしたいアイテムを吊るすには羊毛の糸を使います。$(br2)$(item)$(k:key.use)$()でアイテムが吊るせます。"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "Y"
+          ],
+          [
+            "0"
+          ]
+        ],
+        "mapping": {
+          "X": "firmalife:wool_string",
+          "Y": "tfc:firepit[lit=true]"
+        }
+      },
+      "name": "燻製",
+      "text": "焚き火の上に糸を張ります。",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:text",
+      "text": "燻製は$(thing)肉$()や$(l:mechanics/dairy)チーズ$()の保存のために行われます。$(br2)肉を燻製にするには、まず$(thing)塩水$()の入った樽に肉を入れて密閉し、$(thing)塩漬け$()にする必要があります。$(br2)チーズにはその必要はありません。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "燻製を始めるには、焚き火の上の紐にアイテムを吊るします。$(br)焚き火からは4ブロック以内、紐の下にアイテムが吊るされている必要があります。$(br)紐が機能していれば、煙が発生します。$(br)原木を使って燃えている焚き火のみが機能するので注意してください。$(br)泥炭のようなものを使うと、すぐに食べ物に気持ち悪さを与える特徴がつきます！"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "燻製にはゲーム内で8時間かかります。$(br2)素敵な燻製！"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 13
+}

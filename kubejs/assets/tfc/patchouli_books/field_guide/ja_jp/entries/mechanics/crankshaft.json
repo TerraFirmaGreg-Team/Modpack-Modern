@@ -1,0 +1,28 @@
+{
+  "name": "クランクシャフト",
+  "category": "tfc:mechanics",
+  "icon": "tfc:crankshaft",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)クランクシャフト$()は$(l:mechanics/mechanical_power)回転力$()を$(thing)前後動力$()に変換する方法です。これは$(l:mechanics/bellows)ふいご$()や$(l:mechanics/pumps)ポンプ$()などの装置に動力を供給するために役立ちます。$(br2)$(thing)クランクシャフト$()はベースとシャフトの2つの部分で構成されています。ベースは$(l:mechanics/mechanical_power#axle)軸$()に接続され、シャフトの端に装置を接続できます。"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock_id": "tfc:crankshaft",
+      "name": "",
+      "text": "$(thing)軸$()によって動力を供給される$(l:mechanics/mechanical_power#axle)クランクシャフト$()",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/crankshaft",
+      "text": "ベースは$(l:getting_started/primitive_alloys#brass)真鍮$()から作成できます。ベースが設置されたら、$(thing)鋼の棒$()を使用してシャフトを追加できます。クランクシャフトの横に空きスペースがある場合、棒が配置されます。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "クランクシャフトは$(l:mechanics/bellows)ふいご$()に接続できます。ふいごをシャフトの隣に配置するだけで、自動的にシャフトが伸び縮みするたびに押されます。クランクシャフトに接続されている場合、手動で操作することはできません。$(br2)クランクシャフトは$(l:mechanics/pumps)ポンプ$()にも接続でき、流体を輸送するために使用できます。"
+    }
+  ],
+  "read_by_default": true
+}

@@ -1,0 +1,96 @@
+{
+    "name": "Conservation",
+    "category": "tfc:mechanics",
+    "icon": "minecraft:rotten_flesh",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Dans TerraFirmaCraft, aucun n'aliment ne dure éternellement ! La nourriture $(thing)périme$() au cours du temps, et pourrit. La nourriture pourrie ne restaure pas de faim, et peut vous donner des effets néfastes comme $(thing)Faim$() ou $(thing)Poison$() !$(br2)Heureusement, il y a plusieurs moyens de faire durer votre nourriture plus longtemps en la $(thing)conservant$()."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Quand vous passez votre curseur sur un aliment, vous verrez une infobulle montrant le temps avant sa péremption. Elle peut ressembler à ceci :$(br2)$(bold)$(2)Périme le : 5 Juillet 1000, 5:30 (dans 5 jour(s))$()$(br2)En utilisant diverses techniques de conservation, cette date peut être repoussée, ce qui vous donne plus de temps avant que votre nourriture ne périme."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "small_vessels",
+            "text": "L'une des façons les plus simples de conserver de la nourriture est d'utiliser un $(thing)Récipient$(). Le $(thing)Grand récipient$() est un bloc pouvant stocker jusqu'à neuf items, et quand il est $(thing)scellé$(), les items à l'intérieur reçoivent le modificateur $(5)$(bold)Conservé$(), qui multiplie leur durée de vie restante par 2.$(br2)$(thing)Le $(thing)Petit récipient$() est un item pouvant stocker jusqu'à 4 items, et applique aussi le modificateur $(5)$(bold)Conservé$() à son contenu.",
+            "title": "Récipients"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "anchor": "large_vessels",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfc:ceramic/large_vessel[sealed=true]"
+                }
+            },
+            "name": "",
+            "text": "Un grand récipient scellé.",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Une autre façon de conserver certains types d'aliments est la cuisson. Les $(thing)Viandes$() périment moins vites cuites que crues.$(br2)Il est également important d'utiliser un équipement adapté pour cuisiner. Certains appareils qui chauffent fort, comme une $(l:mechanics/charcoal_forge)Forge à charbon$() ou un $(l:mechanics/crucible)Creuset$() sont $(bold)néfastes$() pour la cuisine, et feront périmer les aliments plus vite !",
+            "title": "Cuisine"
+        },
+        {
+            "type": "tfc:heat_recipe",
+            "recipe": "tfc:heating/mutton",
+            "text": "A lieu de cela, un $(l:getting_started/firepit)Foyer$() ou un $(l:mechanics/grill)Grill$() peuvent même donner un bonus en les utilisant ! Par exemple, faire cuire un mouton (comme ci-dessus) dans un $(thing)foyer$() multiplie sa durée de vie par 1.33, et le faire cuire dans un $(thing)grill$() multiplie sa durée de vie par 1.66 !"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "salting",
+            "text": "$(thing)Saler$() une viande la fera durer plus longtemps. Pour cela, la viande doit être combinée avec du $(thing)Sel$() dans une grille de fabrication. Seules des viandes crues peuvent être salées. Cuire ou préserver la viande d'une autre manière ne retire pas la salaison.",
+            "title": "Salaison"
+        },
+        {
+            "type": "tfc:quern_recipe",
+            "recipe": "tfg:quern/salt",
+            "text": "On peut également obtenir dur sel en $(l:mechanics/quern)broyant$() de la  $(l:the_world/ores_and_minerals#halite)Halite$(), qui est un minéral."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfc:groundcover/salt_lick"
+                }
+            },
+            "name": "Dépôts de sel",
+            "text": "Du sel peut être trouvé de manière naturelle dans les forêts. Il peut être placé et ramassé.",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "vinegar",
+            "text": "La $(thing)Conservation au vinaigre$() est un technique pour faire durer les fruits, légumes et viandes plus longtemps.$(br2)On peut faire du $(thing)Vinaigre$() dans un $(l:mechanics/barrels)tonneau$(), en scellant un fruit dans 250mB d'alcool. Pour conserver de la nourriture dans du vinaigre, elle doit d'abord être $(thing)marinée$() dans de la $(thing)Saumure$(). La saumure est fabriquée dans un tonneay avec une dose de $(thing)vinaigre$() pour 9 doses d'$(thing)eau salée$()."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Une fois qu'un aliment est mariné, il peut être scellé dans un tonneau de vinaigre. S'il y a 125mB de vinaigre par aliment mariné, ceux-ci dureront plus longtemps."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "pests",
+            "text": "Votre nourriture devrait être stockée dans de grands ou $(l:getting_started/pottery#vessel)petits récipients$(). De la nourriture laissée dans des coffres attire les $(thing)Rats$(). Les rats peuvent ouvrir les contenant et en manger la nourriture, mais disparaîtront au bout de quelques minutes s'il ne trouvent rien à manger. Vous serez alerté de la présence de rats par le message \"$(thing)Ce contenant sent fort mauvais$()\". Il est important de noter que désceller et resceller un grand récipient sans quitter son inventaire n'attire pas de nuisibles."
+        }
+    ],
+    "read_by_default": true
+}

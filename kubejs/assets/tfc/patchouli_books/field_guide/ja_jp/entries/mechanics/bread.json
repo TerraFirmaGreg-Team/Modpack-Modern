@@ -1,0 +1,13 @@
+{
+  "name": "パン",
+  "category": "tfc:mechanics",
+  "icon": "tfc:textures/item/food/wheat_bread.png",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l:firmalife/bread)正しい情報についてはFirmalifeの項目を参照してください。$()",
+      "title": "パン"
+    }
+  ],
+  "read_by_default": true
+}

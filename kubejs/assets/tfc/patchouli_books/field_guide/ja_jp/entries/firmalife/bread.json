@@ -1,0 +1,30 @@
+{
+  "name": "パン",
+  "category": "tfc:firmalife",
+  "icon": "tfc:textures/item/food/barley_bread.png",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)パン$()を作るには、まず$(thing)イースト$()を入手する必要があります。最初の酵母を入手するには、$(l:firmalife/drying)乾燥フルーツ$()を$(thing)水$()の入った樽に密封してください。3日後、$(thing)イーストスターター$()が形成されます。$(br)これ以降、イーストスターターを $(thing)穀物の粉$() が入った樽に封入することで、イーストに栄養を与えることができます。これによりイーストが増殖します。イースト 100mB につき小麦粉 1 個を与えると、600mB のイーストが得られます。とってもお得！"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfg:shapeless/barley_dough",
+      "text": "イーストスターター、甘味料、小麦粉を混ぜ合わせると、$(thing)パン生地$()を作ることができます。この生地は通常通り焼くことで、$(thing)パン$()を作ることができます！"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfg:crafting/barley_slice",
+      "title": "パンスライス",
+      "text": "焼き上がったパンは、$(thing)ナイフ$()でスライスすることで$(thing)スライスパン$()にすることができます。スライスパンは、$(l:tfc:mechanics/sandwiches)サンドイッチ作り$()に使ったり、$(thing)トースト$()にして、$(thing)バター$()やジャムを塗って食べたりすることができます。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/toast_with_butter",
+      "recipe2": "firmalife:crafting/toast_with_jam",
+      "title": "トースト"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 16
+}

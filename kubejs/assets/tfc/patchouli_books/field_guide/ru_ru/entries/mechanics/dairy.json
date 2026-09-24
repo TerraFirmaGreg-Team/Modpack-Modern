@@ -1,0 +1,13 @@
+{
+  "name": "Молочные продукты",
+  "category": "tfc:mechanics",
+  "icon": "tfc:textures/item/food/cheese.png",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l:firmalife/cheese)Проверь соответствующую главу в Firmalife для актуальной информации.$()",
+      "title": "Молочные продукты"
+    }
+  ],
+  "read_by_default": true
+}

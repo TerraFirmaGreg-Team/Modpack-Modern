@@ -1,0 +1,46 @@
+{
+  "name": "碗",
+  "category": "tfc:mechanics",
+  "icon": "tfc:ceramic/bowl",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)碗$()是一種用途廣泛的工具，可以用來製作$(l:mechanics/salad)色拉$()、盛$(l:mechanics/pot)湯$()、製作$(l:mechanics/decay#salting)鹹肉$()或在$(l:mechanics/glassworking_applications#coloring)玻璃染色$()的工藝中為玻璃原料$(thing)參雜$()。$(br2)$(thing)陶碗$()可以透過黏土塑形，再燒製獲得。"
+    },
+    {
+      "type": "tfc:knapping_recipe",
+      "recipe": "tfc:clay_knapping/bowl_4",
+      "text": "可以在一次黏土塑形中製作數只碗。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/vanilla/bowl",
+      "title": "木碗",
+      "text": "$(thing)木碗$()是透過將木材與$(thing)膠水$()合成得到的。$(br2)$(thing)膠水$()可透過將$(thing)骨粉$()浸入裝有$(l:mechanics/barrels#limewater)石灰水$()的大桶中獲得。"
+    },
+    {
+      "type": "tfc:sealed_barrel_recipe",
+      "recipe": "tfc:barrel/glue",
+      "text": "可以將碗放置在地上。放在地上的碗可以盛裝各種$(thing)粉末$()——$(l:mechanics/quern)手推磨$()中得到的各種礦石、礦物或寶石的粉末都可以。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "tag:tfc:powders",
+      "title": "粉末",
+      "link_recipes": false,
+      "text": "放置的碗可以盛裝最多16份單一粉末。手持粉末$(item)$(k:key.use)$()點選以放入。空手$(item)$(k:key.use)$()以取出。$(br2)按住$(item)$(k:key.sneak)$()可以一次裝滿或清空碗中的所有粉末。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "tfc:powder/salt",
+      "link_recipes": false,
+      "text": "手持生肉點選裝有鹽的碗可以製作出鹹肉。這與直接在合成格中製作效果相同。"
+    }
+  ],
+  "read_by_default": true,
+  "extra_recipe_mappings": {
+    "tfc:ceramic/unfired_bowl": 1,
+    "tfc:ceramic/bowl": 1,
+    "minecraft:bowl": 2
+  }
+}

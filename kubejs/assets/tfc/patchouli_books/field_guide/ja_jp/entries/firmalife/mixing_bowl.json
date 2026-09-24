@@ -1,0 +1,18 @@
+{
+  "name": "ミキシングボウル",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:mixing_bowl",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "ミキシングボウルは、物や液体を混ぜ合わせるための道具です。$(br)$(br)$(k:key.use)$()を押し、スプーンをボウルの中へ配置することでボウルが使えるようになります。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/mixing_bowl",
+      "text": "使用にはスプーンが必要です。"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 18
+}

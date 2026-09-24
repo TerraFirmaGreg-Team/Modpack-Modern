@@ -1,0 +1,27 @@
+{
+  "name": "Massa",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:textures/item/food/cooked_pasta.png",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Existem dois tipos de $(thing)Macarrão$(): Ovo e Arroz. Farinha de arroz, farinha de milho, sal e 1000 mB de leite juntos em uma $(l:firmalife/mixing_bowl)Tigela de Mistura$() fazem $(thing)Macarrão de Arroz$(). Farinha, um ovo, sal e 1000 mB de leite fazem $(thing)Macarrão de Ovo$()."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/lasagna",
+      "text": "A $(thing)Lasanha$() pode ser feita diretamente com macarrão de ovo com $(l:firmalife/pizza#tomato_sauce)Molho de Tomate$(), carne cozida e orégano, que pode então ser assada em um $(l:firmalife/ovens)Forno$()."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "A massa é então finalizada fervendo-a em água. Para qualquer tipo de macarrão, ele deve ser retirado da panela clicando com uma $(thing)Tigela$()."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/tomato_pasta",
+      "text": "Preparar macarrão cozido com molho de tomate rende uma deliciosa massa com molho de tomate!"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 27
+}

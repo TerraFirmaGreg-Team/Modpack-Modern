@@ -1,0 +1,33 @@
+{
+  "name": "Каяк",
+  "category": "tfc:firmaciv",
+  "icon": "firmaciv:kayak_with_paddle_icon_only",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Твій найкращий друг для самостійних сухопутних пригод. Звісно, те, що це єдиний човен, який можна носити з собою як предмет, неабияк допомагає. Це найшвидший човен для одного гравця, і він дуже маневровий!$(br2)Щоб переносити каяк, просто зламай його.",
+      "title": "Байдарка"
+    },
+    {
+      "type": "patchouli:image",
+      "title": "Байдарка",
+      "images": [
+        "firmaciv:textures/gui/book/kayak_isometric.png"
+      ],
+      "text": "Каяк — це найменший та найкомпактніший човен."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmaciv:crafting/kayak",
+      "recipe2": "firmaciv:crafting/kayak_paddle"
+    },
+    {
+      "type": "tfc:sealed_barrel_recipe",
+      "anchor": "soaking",
+      "recipe": "firmaciv:barrel/large_waterproof_hide_olive",
+      "text": "Вимочи велику оброблену шкіру у тваринному жирі або оливковій олії, щоб зробити її поверхню водонепроникною."
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 2
+}

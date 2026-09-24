@@ -1,0 +1,17 @@
+{
+	"name": "Making Syrups",
+	"category": "tfc:arborfirmacraft",
+	"icon": "afc:maple_sugar",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Once you've collected some birch or maple sap, the next step is concentrating it enough to be useful. To do this, you must boil the sap in the pot twice, once to create a sap concentrate, and a second time to create the syrup. Don't forget to stir the pot by putting a stick in an input slot, or the pot will never boil. Syrup in a jug can be crafted into a solid sugar for use in baking."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "You will only produce bucket of syrup for every 50 buckets of maple sap, or one for every 100 buckets of birch sap, so you will need to keep multiple pots boiling at the same time if you want to make any amount of syrup."
+		}
+	],
+	"read_by_default": true,
+	"sortnum": 2
+}

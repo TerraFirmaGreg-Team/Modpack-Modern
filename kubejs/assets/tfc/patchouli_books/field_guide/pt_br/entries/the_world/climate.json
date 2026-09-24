@@ -1,0 +1,63 @@
+{
+  "name": "Calendário e clima",
+  "category": "tfc:the_world",
+  "icon": "tfc:textures/gui/book/icons/thermometer.png",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "anchor": "calendar",
+      "text": "Em Terrafirmacraft, o clima e o tempo são fatores muito importantes. Vamos começar com o $(thing)Calendário$().$(br2)A qualquer momento, você pode ver o calendário pressionando $(item)$(k:key.inventory)$(), e clicando na guia Calendário. Isso mostrará o $(thing)Temporada$(), o $(thing)Dia$(), e a $(thing)Data$()."
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "tfc:textures/gui/book/gui/calendar.png"
+      ],
+      "text": "A tela do calendário",
+      "border": false
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Há estações, e o clima e o clima mudarão junto com eles! Há quatro temporadas em Terrafirmacraft, cada uma dividida em $(thing)Cedo$(), $(thing)MID$() e $(thing)Tarde$() meses. As quatro estações são:$(br)$(li)$(bold)Primavera$(): Março - Maio$(li)$(bold)Verão$(): Junho -Agostot$(li)$(bold)Outono$(): Setembro - Novembro(li)$(bold)Inverno$(): Dezembro - Fevereiro"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "A estação atual pode influenciar a temperatura da área, a precipitação (se vai chover ou nevar), entre outras coisas. Preste atenção à aba do calendário, será útil!$(br2)Agora, no clima..."
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "climate",
+      "text": "Outra aba na tela principal de inventário é a tela de $(thing)Clima$(). Esta mostra informações sobre o local atual.$(br2)A primeira linha mostra o $(l:https://pt.wikipedia.org/wiki/Classifica%C3%A7%C3%A3o_clim%C3%A1tica_de_K%C3%B6ppen-Geiger)Clima$() geral.$(br2)A segunda linha mostra a $(l:the_world/geology)Província Geológica$().$(br2)A terceira linha mostra a $(thing)Temperatura Média Anual$().",
+      "title": "Clima"
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "tfc:textures/gui/book/gui/climate.png"
+      ],
+      "text": "A Tela do Clima",
+      "border": false
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "temperature",
+      "text": "A temperatura em Terrafirmacraft é influenciada por uma série de fatores:$(br)$(li)Em primeiro lugar, a região, especialmente a latitude (Coordenada Z) desempenhará o maior papel.$(li)Em segundo lugar, a estação atual influenciará a temperatura - será mais quente durante o verão e mais frio durante o inverno.$(li)Finalmente, a temperatura pode ser diferente de um dia para o outro, bem como variar de hora para hora."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "A última linha mostra a temperatura atual, incluindo todos esses fatores mencionados acima.$(br2)A temperatura pode influenciar muitas coisas: se as colheitas e as plantas crescerão, se a neve e o gelo irão formar ou derreter e muito mais."
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "rainfall",
+      "text": "A precipitação é outro valor climático que pode variar dependendo de onde você está no mundo. A precipitação anual é medida em milímetros (mm) e pode estar entre 0 mm e 500 mm. A precipitação afeta os tipos de flora que são encontrados em uma área e também os tipos de solo, de areia e cactos, até barro, ou lodo e árvores sumaúma.",
+      "title": "Precipitação"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "As chuvas também são importantes, pois afeta o que as coisas podem ser cultivadas em uma área. As chuvas são um dos principais contribuintes para $(l:mechanics/hydration)Hidratação$(), que é uma medida exata de quão molhado o solo está em um determinado local e é usado por $(l:mechanics/crops)Plantações$(), $(l:the_world/wild_fruits#fruit_trees)Árvores frutiferas$(), e $(l:the_world/wild_fruits#tall_bushes)Arbustos de bagas$() para determinar se eles podem crescer."
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 2
+}

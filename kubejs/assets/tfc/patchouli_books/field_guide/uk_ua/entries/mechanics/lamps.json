@@ -1,0 +1,87 @@
+{
+  "name": "Ліхтарі",
+  "category": "tfc:mechanics",
+  "icon": "tfc:metal/lamp/bismuth_bronze",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Лампи є довготривалим джерелом світла. Вони спалюють рідке паливо. Лампи зберігають свій вміст палива, коли ламаєш. Використовуючи відро, натисни $(item)$(k:key.use)$() на лампу, щоб додати до неї палива. Потім її можна запалити за допомогою $(thing)кресала$() або будьчого, що здатне розпалювати вогонь. $(thing)Оливкова олія$() та $(thing)топлений жир$() є паливом для ламп. Постріл з лука по запаленій лампі може спричинити пожежу."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "Y"
+          ],
+          [
+            "0"
+          ]
+        ],
+        "mapping": {
+          "X": "tfc:metal/chain/copper[axis=y]",
+          "Y": "tfc:metal/lamp/copper[hanging=true,lit=true]"
+        }
+      },
+      "name": "Ліхтарі",
+      "text": "Запалена лампа, що висить на ланцюгу.",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/metal/lamp/bronze",
+      "text": "Лампи виковуються на $(l:mechanics/anvils)ковадлі$() і для їхнього завершення потрібне $(l:mechanics/glassworking_applications#lamp_glass)лампове скло$()."
+    },
+    {
+      "type": "tfc:quern_recipe",
+      "anchor": "olives",
+      "recipe": "tfc:quern/olive",
+      "text": "Паливом звичайного ліхтаря є $(thing)оливкова олія$(). Першим кроком її виробництва є виготовлення оливкової пасти. Її можна отриамти млином."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/jute_net",
+      "text": "Також знадобиться джутовий фільтр."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Відвари $(thing)оливкову пасту$() з $(thing)водою$() у $(l:mechanics/pot)казані$(), та отримай $(thing)оливкову олійну воду$(). Запечатай цю воду у $(l:mechanics/barrels)діжці$() разом з $(thing)джутовим фільтром$() для отримання $(thing)оливкової олії$(). Оливкова олія горить 8 годин у грі на кожну одиницю палива."
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "tallow",
+      "text": "Також, у якості палива можна використовувати $(thing)сало$(). Треба відварити 5 шматків  $(thing)сала$(), у $(l:mechanics/pot)казані$() з водою. Сало горить менше, 2 години у грі на одиницю. З сала також можна виготовляти $(l:mechanics/lighting#candles)свічки$()."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "0"
+          ]
+        ],
+        "mapping": {
+          "X": "tfc:metal/lamp/blue_steel[lit=true]"
+        }
+      },
+      "name": "Лавова лампа",
+      "text": "Лава буде світити вічно, але її можна утримувати лише у ліхтарі з $(l:mechanics/steel#blue_steel)синьої сталі$().",
+      "enable_visualize": false
+    },
+    {
+      "type": "tfc:anvil_recipe",
+      "recipe": "tfc:anvil/black_steel_chain",
+      "text": "$(thing)Ланцюг$() - це чудовий пристрій, щоб повісити ліхтар. Ланцюг можна виготовити на $(l:mechanics/anvils)ковадлі$()."
+    }
+  ],
+  "read_by_default": true,
+  "extra_recipe_mappings": {
+    "tag:tfc:lamps": 1
+  }
+}

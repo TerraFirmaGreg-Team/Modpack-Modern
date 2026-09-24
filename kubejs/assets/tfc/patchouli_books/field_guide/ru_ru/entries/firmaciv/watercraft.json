@@ -1,0 +1,137 @@
+{
+  "name": "Начало пути: Лодки",
+  "category": "tfc:firmaciv",
+  "icon": "firmaciv:anchor",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Создание и использование лодки может оказаться сложнее, чем вы привыкли, но нет ничего лучше, чем построить идеальное судно и отправиться в открытые моря. Внимательно прочитайте это руководство и узнайте все тонкости резьбы, крафта, сооружения, гребли, управления и кастомизации лодки по своему усмотрению."
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "firmaciv:textures/gui/book/boats.png"
+      ],
+      "border": true,
+      "text": "Путешествовать по миру или просто по своей местности часто лучше всего осуществлять по судоходным водным путям."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Кастомизация",
+      "text": "На лодки можно устанавливать блоки! Как и при размещении блока на суше, нажмите $(item)$(k:key.use)$(), удерживая сундук, наковальню или верстак, чтобы добавить его на лодку. Нажмите $(item)$(k:key.use)$(), чтобы получить к нему доступ. Если вы не можете разместить блок в определенном месте, вероятно, это место пилота! Вы не сможете управлять лодкой, если на пути стоит блок! Вы можете убрать блоки, разбив их, как обычно."
+    },
+    {
+      "type": "patchouli:image",
+      "border": true,
+      "images": [
+        "firmaciv:textures/gui/book/customization.png"
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Лодки как предметы",
+      "text": "Они больше не существуют, за исключением каяка! Если вы сломаете лодку, то она уронит только некоторые свои компоненты! Это означает, что вам понадобится каяк, если вы хотите переносить лодку через сушу, а также то, что вам может понадобиться построить доки для более крупных судов."
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "firmaciv:textures/gui/book/items.png"
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Перевозка животных",
+      "text": "Like always, you can move animals around using boats! However, be aware that larger animals, like horses, will only fit in boats that are big enough. If an animal is riding a boat and is in your way, you only have to crouch and press $(item)$(k:key.use)$() to eject it from the boat. Animals will get restless after 2 days in the boat and will leave the boat on their own in 3 days."
+    },
+    {
+      "type": "patchouli:image",
+      "title": "Управление",
+      "images": [
+        "firmaciv:textures/gui/book/piloting.png"
+      ],
+      "text": "Каждая лодка имеет специальное сиденье, на котором нужно сидеть, чтобы управлять лодкой."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Весла",
+      "text": "If you feel like your boat is moving slowly, double check that you're holding the appropriate paddle item, or, if your boat requires oars, that the oars have been equipped to the oarlocks. In some boats, multiple players are able to paddle or row to make the boat go faster."
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "firmaciv:textures/gui/book/paddles.png"
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Шварт-ые утки и поводки",
+      "text": "Most boats have at least one cleat on them. You can attach a lead to the cleat and use it to pull the boat, and pull small boats up onto the shoreline and up slabs. Leads can also be used to attach boats to fences, and attaching two cleats each to a fence will allow you to easily dock larger boats. You'll find yourself wanting to use leads extensively to stop your boats from drifting away!"
+    },
+    {
+      "type": "patchouli:image",
+      "border": true,
+      "images": [
+        "firmaciv:textures/gui/book/leads.png"
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Якори",
+      "text": "Large boats have anchors, which can be used to completely stop the boat, provided the anchor is seated in the seafloor and no sails are deployed. The boat will still turn in the wind while it's at anchor. Look for the anchor icon located at the windlass (anchor winch) and press $(item)$(k:key.use)$() to lower and raise the anchor."
+    },
+    {
+      "type": "patchouli:image",
+      "border": true,
+      "images": [
+        "firmaciv:textures/gui/book/anchor.png"
+      ],
+      "text": "Якорь с лебедкой на шлюпе."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Паруса",
+      "text": "Sailing vessels, of course, have sails. You'll need to deploy them in order to properly control your boat. Look for the triangular sail icon and press $(item)$(k:key.use)$() to deploy each sail. Since most boats have multiple sails, you can use different combinations of sail deployment to control your speed."
+    },
+    {
+      "type": "patchouli:image",
+      "border": true,
+      "images": [
+        "firmaciv:textures/gui/book/sails.png"
+      ],
+      "text": "На этом шлюпе развернуты как стаксель (слева), так и грот (справа)."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Плавание под парусами",
+      "text": "Unlike ships that you may be used to, sailing is a skill with Firma: Civilization. When you're piloting a sailing vessel, a new UI element will appear showing the wind speed and direction, as well as the boat's speed. The color of the wind arrow will indicate the difficulty of sailing in that direction. Use your forward and backward movement keys to set the angle of the sails, and experiment to find the best one for the wind angle."
+    },
+    {
+      "type": "patchouli:image",
+      "border": false,
+      "images": [
+        "firmaciv:textures/gui/book/sailing.png"
+      ],
+      "text": "The sailing UI will help you control your vessel."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Покраска",
+      "text": "Any boat constructed using Shipwright's Scaffolding can be painted, and any sail can be individually dyed. Simply hold a dye item in your hand and press $(item)$(k:key.use)$() when you see the paint brush icon to either paint a hull or dye a sail. Larger boats have unique patterns for each paint color."
+    },
+    {
+      "type": "patchouli:image",
+      "border": true,
+      "images": [
+        "firmaciv:textures/gui/book/painting.png"
+      ],
+      "text": "Покрашенные паруса и корпус."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Повреждения и ремонт",
+      "text": "A damaged boat will start to show cracks. For any boat built using Shipwright's Scaffolding, use the appropriate type of planks to repair it. For canoes, use lumber. At 90% damage, a boat will appear to take on water, and at 100% damage, it will sink! This does not apply to Kayaks."
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 0
+}

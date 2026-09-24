@@ -1,0 +1,165 @@
+{
+    "name": "Matériaux de construction",
+    "category": "tfc:getting_started",
+    "icon": "tfc:wattle/unstained",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Au début du jeu, construire peut être difficile étant donné que beaucoup de blocs solides nécessitent des outils en métal pour être obtenus. Cependant, il y a quelques blocs de construction pouvant être obtenus avec des outils en pierre.$(br2)Plus de $(l:mechanics/advanced_building_materials)blocs de construction$() peuvent être obtenus avec des outils en métal."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)  1. $(l:getting_started/building_materials#thatch)Chaume$()$(br)  2. $(l:getting_started/building_materials#mud_bricks)Briques de terre crue$()$(br)  3. $(l:getting_started/building_materials#wattle_and_daub)Torchis$()$(br)  4. $(l:getting_started/building_materials#clay_and_peat)Blocs d'argile et tourbe$()$(br)",
+            "title": "Contenu"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "thatch",
+            "text": "Vous pouvez obtenir de la $(thing)Paille$() en coupant des plantes rien qu'avec un $(l:getting_started/introduction#knife)Couteau en pierre$(). Celle-ci peut être utilisée pour fabriquer un bloc de construction très simple : le $(thing)Chaume$(). Le chaume est un bloc léger non affecté par la gravité, mais les joueurs et autres entités passent au travers ! Il peut aussi être reconverti en $(thing)paille$() au besoin.",
+            "title": "Chaume"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "tfc:crafting/thatch",
+            "recipe2": "tfc:crafting/straw"
+        },
+        {
+            "type": "patchouli:crafting",
+            "anchor": "mud_bricks",
+            "recipe": "tfc:crafting/soil/loam_drying_bricks",
+            "title": "Briques de terre crue",
+            "text": "De la $(thing)boue$() peut être trouvée au sol, sous les rivières et les lacs, ou dans des environnements marécageux de basse élévation. Avec un peu de $(thing)Paille$(), elle peut être combinée en $(thing)Briques de terre crue humide$()."
+        },
+        {
+            "type": "tfc:multimultiblock",
+            "text": "Ces briques doivent être placées au sol dans un endroit sec, et durciront au bout d'un jour en $(thing)Briques de terre crue$().",
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:drying_bricks/loam[count=4,dried=false]",
+                        "Y": "tfc:grass/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:drying_bricks/loam[count=4,dried=true]",
+                        "Y": "tfc:grass/loam"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "tfc:crafting/soil/loam_mud_bricks",
+            "title": " ",
+            "text": "Ces briques peuven être transformées en $(thing)Blocs de briques de terre crue$(). On peut aussi en faire des $(thing)escaliers$(), $(thing)dalles$() ou $(thing)murets$(), si vous voulez."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "#tfc:mud_bricks"
+                }
+            },
+            "name": "",
+            "text": "Tous les différents types de briques de terre crue.",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "wattle_and_daub",
+            "text": "Le $(thing)torchis$() et l'$(thing)enduit de torchis$() est un bloc de construction et décoration versatile.$(br2)Le$(thing)torchis$() peut être fabriqué et placé, mais il est fragile et les joueurs et entités marchent au travers. Il peut être amélioré avec de l'$(thing)enduit de torchis$() pour le rendre plus solide.",
+            "title": "Torchis"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "tfc:crafting/wattle",
+            "text": "Afin de rendre le $(thing)torchis$() plus solide, il doit d'abord être tressé, ce qui demande d'y ajouter des bâtons."
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "tfc:crafting/daub",
+            "recipe2": "tfc:crafting/daub_from_mud",
+            "text": ""
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/wattle_weave.png"
+            ],
+            "text": "Quatre bâtons sont nécessaires pour $(thing)tresser$() le torchis.",
+            "border": true
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Des bâtons peuvent être ajoutés à tout moment sur les diagonales, ainsi qu'au-dessus et en dessous. Tenez simplement un $(thing)bâton$() dans votre main et $(item)$(k:key.use)$() pour ajouter le bâton. Changez à quelle partie du torchis vous ajoutez le bâton en sélectionnant une différente partie de la face."
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/wattle_add_stick.png"
+            ],
+            "text": "Ajout de bâtons au torchis.",
+            "border": true
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/wattle_add_daub.png"
+            ],
+            "text": "Ajouter de l'$(thing)enduit de torchis$() à du $(thing)torchis tressé$() crée un bloc solide.",
+            "border": true
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/wattle_stained.png"
+            ],
+            "text": "Il peut alors être $(thing)coloré$() en y ajoutant de la $(l:mechanics/dye)teinture$().",
+            "border": true
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "clay_and_peat",
+            "text": "De l'argile obtenue au sol peut être transformée en blocs d'argile. S'ils sont placés et minés à nouveau, ils redeviendront de l'argile. Bien que peu plaisants, ils sont simples à obtenir.$(br2)La tourbe apparaît dans le monde au bord de plans d'eau et est minable avec des outils en pierre. Certaines plantes poussent dessus.$(br2)Cependant, la tourbe est inflammable.",
+            "title": "Blocs d'argile et tourbe"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "tfg:shaped/clay_balls_to_block",
+            "title": "Blocs d'argile"
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 7
+}

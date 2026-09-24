@@ -1,0 +1,17 @@
+{
+  "name": "収納棚",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:wood/jarbnet/pine",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "収納棚は、$(l:tfc:mechanics/jarring)瓶$()、ろうそく、水差し用の収納ブロックです。$(br2)素手でクリック、$(item)$(k:key.sneak)$()+クリックで開閉できます。$(br)$(br)中にろうそくが入っている場合は、火をつけて少量の光を出すことができます。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/wood/acacia_jarbnet"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 6
+}

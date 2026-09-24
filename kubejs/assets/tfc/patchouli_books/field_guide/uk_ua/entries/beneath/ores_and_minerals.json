@@ -1,0 +1,112 @@
+{
+  "name": "Руди та Мінерали",
+  "category": "tfc:beneath",
+  "icon": "beneath:ore/normal_nether_gold",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Під Основним світом у Безодні ти й надалі знайдеш жили руди для видобутку. Важливо зазначити, що $(thing)незерак$() не обвалюється, як необроблений камінь. Однак $(thing)чорнокамінь$(), $(thing)цегла Незеру$(), $(thing)Коблерак$() та інші різноманітні блоки — обвалюються. Розвідка родовищ усе ще працюватиме в Безодні."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "anchor": "nether_gold",
+      "multiblock": {
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "0"
+          ]
+        ],
+        "mapping": {
+          "X": "beneath:ore/normal_nether_gold"
+        }
+      },
+      "name": "Незерське золото",
+      "text": "Незерське золото замінює незерак і трапляється часто. Під лавою його ще більше, і воно багатше.",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:multiblock",
+      "anchor": "cursecoal",
+      "multiblock": {
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "0"
+          ]
+        ],
+        "mapping": {
+          "X": "beneath:ore/nether_cursecoal"
+        }
+      },
+      "name": "Прокляте вугілля",
+      "text": "Прокляте вугілля є потужним $(l:beneath/hellforge)паливом$(). Воно замінює незерак вище рівня 80.",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:multiblock",
+      "anchor": "sylvite",
+      "multiblock": {
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "0"
+          ]
+        ],
+        "mapping": {
+          "X": "beneath:ore/blackstone_sylvite"
+        }
+      },
+      "name": "Сильвін",
+      "text": "Сильвін замінює базальт на будь‑якому рівні.",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:multiblock",
+      "anchor": "quartz",
+      "multiblock": {
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "0"
+          ]
+        ],
+        "mapping": {
+          "X": "minecraft:nether_quartz_ore"
+        }
+      },
+      "name": "Незерський кварц",
+      "text": "Незерський кварц замінює незерак на всіх рівнях і трапляється часто.",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:multiblock",
+      "anchor": "slimed_netherrack",
+      "multiblock": {
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "0"
+          ]
+        ],
+        "mapping": {
+          "X": "beneath:ore/slimed_netherrack"
+        }
+      },
+      "name": "Слимаковий незерак",
+      "text": "Слимаковий незерак іноді замінює незерак вище рівня лави.",
+      "enable_visualize": false
+    }
+  ],
+  "read_by_default": true
+}

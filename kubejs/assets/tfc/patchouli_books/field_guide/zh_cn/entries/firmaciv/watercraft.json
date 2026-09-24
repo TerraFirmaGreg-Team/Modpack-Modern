@@ -1,0 +1,137 @@
+{
+  "name": "新手入门：船只",
+  "category": "tfc:firmaciv",
+  "icon": "firmaciv:anchor",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "建造并使用一艘船将比你曾经习惯的稍微复杂一些，但是如果要向大海进发，没有什么比先建造一艘完美的船更重要的了。仔细阅读本手册，学习雕刻、手工制作、建造、划船、划水、驾驶和自定义的所有操作方法。"
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "firmaciv:textures/gui/book/boats.png"
+      ],
+      "border": true,
+      "text": "要环游世界，或者只在你所在的区域通勤，最好走那些可通航的水道。"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Customization",
+      "text": "你可以为船只添加自己的方块！像你放置一个方块那样，当你手中拿着一个箱子时，按住$(item)$(k:key.use)$()就可以将它安装到船只上。按$(item)$(k:key.use)$() 键以与它们交互。如果你不能在某个地方放置一个方块，那可能是因为那个地方是驾驶位！你怎么驾驶一辆没有驾驶位的船？你能像平常一样撸掉你想拆的方块，就能把它从船上拆下来了。"
+    },
+    {
+      "type": "patchouli:image",
+      "border": true,
+      "images": [
+        "firmaciv:textures/gui/book/customization.png"
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "title": "能放进物品栏的船",
+      "text": "根本就不存在！除了独木舟。如果你把一艘船撸掉，它就只能掉落一些原材料！这意味着当你需要带着船穿越大陆时，最好带一艘独木舟。这也意味着，如果想建造大型船只，需要建造一个港口来停泊它们！"
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "firmaciv:textures/gui/book/items.png"
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Transporting Animals",
+      "text": "和往常一样，你可以用船来移动动物！不过，要注意，像马这样的大型动物只适合乘坐足够大的船。如果船上做了一只动物，而且挡住了你的路，你可以通过shift+ $(item)$(k:key.use)$()以让它从载具上下来。动物在船上呆2天后会坐立不安，呆3天后会自己下船。"
+    },
+    {
+      "type": "patchouli:image",
+      "title": "驾驶",
+      "images": [
+        "firmaciv:textures/gui/book/piloting.png"
+      ],
+      "text": "每只船都有一个特定的驾驶位，你需要坐在上面才能驾船。"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "桨",
+      "text": "如果你感觉到你的船太慢了，请检查一下你握着的是不是正确的桨；如果你的船是需要桨架上的固定桨的，请检查桨架上的桨是否正确安装。在一些船上，多名玩家一起划船会让船的速度更快哦！"
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "firmaciv:textures/gui/book/paddles.png"
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Cleats and Leads",
+      "text": "大多数船都至少配备一个用来绑栓神的固定桩。你可以用一根引绳来绑住它，并且牵着船移动。你也可以把船拉上海岸线，或是把它拉上一个半砖。"
+    },
+    {
+      "type": "patchouli:image",
+      "border": true,
+      "images": [
+        "firmaciv:textures/gui/book/leads.png"
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Anchors and Windlasses",
+      "text": "Large boats have anchors, which can be used to completely stop the boat, provided the anchor is seated in the seafloor and no sails are deployed. The boat will still turn in the wind while it's at anchor. Look for the anchor icon located at the windlass (anchor winch) and press $(item)$(k:key.use)$() to lower and raise the anchor."
+    },
+    {
+      "type": "patchouli:image",
+      "border": true,
+      "images": [
+        "firmaciv:textures/gui/book/anchor.png"
+      ],
+      "text": "The anchor and windlass on a sloop."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Sails",
+      "text": "Sailing vessels, of course, have sails. You'll need to deploy them in order to properly control your boat. Look for the triangular sail icon and press $(item)$(k:key.use)$() to deploy each sail. Since most boats have multiple sails, you can use different combinations of sail deployment to control your speed."
+    },
+    {
+      "type": "patchouli:image",
+      "border": true,
+      "images": [
+        "firmaciv:textures/gui/book/sails.png"
+      ],
+      "text": "Both the jibsail (left) and mainsail (right) have been deployed on this sloop."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Sailing",
+      "text": "Unlike ships that you may be used to, sailing is a skill with Firma: Civilization. When you're piloting a sailing vessel, a new UI element will appear showing the wind speed and direction, as well as the boat's speed. The color of the wind arrow will indicate the difficulty of sailing in that direction. Use your forward and backward movement keys to set the angle of the sails, and experiment to find the best one for the wind angle."
+    },
+    {
+      "type": "patchouli:image",
+      "border": false,
+      "images": [
+        "firmaciv:textures/gui/book/sailing.png"
+      ],
+      "text": "The sailing UI will help you control your vessel."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Painting and Dyeing",
+      "text": "Any boat constructed using Shipwright's Scaffolding can be painted, and any sail can be individually dyed. Simply hold a dye item in your hand and press $(item)$(k:key.use)$() when you see the paint brush icon to either paint a hull or dye a sail. Larger boats have unique patterns for each paint color."
+    },
+    {
+      "type": "patchouli:image",
+      "border": true,
+      "images": [
+        "firmaciv:textures/gui/book/painting.png"
+      ],
+      "text": "A sloop has been painted yellow and its sails have been dyed."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Damage and Repair",
+      "text": "A damaged boat will start to show cracks. For any boat built using Shipwright's Scaffolding, use the appropriate type of planks to repair it. For canoes, use lumber. At 90% damage, a boat will appear to take on water, and at 100% damage, it will sink! This does not apply to Kayaks."
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 0
+}

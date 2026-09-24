@@ -1,0 +1,17 @@
+{
+	"name": "Preparando Xaropes",
+	"category": "tfc:arborfirmacraft",
+	"icon": "afc:maple_sugar",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Depois de coletar seiva de bétula ou bordo, o próximo passo é concentrá-la o suficiente para ser útil. Para isso, você deve ferver a seiva na panela duas vezes: uma vez para criar seiva concentrada e outra vez para criar o xarope. Não se esqueça de mexer a panela colocando um graveto em um dos orifícios de entrada, ou a água não ferverá. O xarope em uma jarra pode ser transformado em açúcar sólido para uso em receitas de bolos e doces."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Você só conseguirá produzir um balde de xarope para cada 50 baldes de seiva de bordo, ou um para cada 100 baldes de seiva de bétula, então precisará manter várias panelas fervendo ao mesmo tempo se quiser produzir qualquer quantidade de xarope."
+		}
+	],
+	"read_by_default": true,
+	"sortnum": 2
+}

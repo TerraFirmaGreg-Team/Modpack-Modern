@@ -1,0 +1,68 @@
+{
+  "name": "Estufa",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:sealed_bricks",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "A $(thing)Estufa$() é um dispositivo multibloco controlado por uma $(l:firmalife/climate_station)Estação Climática$(). Ela permite o cultivo de plantas durante todo o ano. A estufa possui uma variedade de tipos e blocos para escolher. No entanto, construir uma estufa é bastante simples. Assim como a $(l:firmalife/cellar)Adega$(), ela deve ser uma área fechada com blocos pertencentes ao mesmo $(thing)Tipo de Estufa$(). O piso da estufa pode ser um bloco sólido."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "As paredes das estufas devem ser sólidas. As paredes de painéis devem ser posicionadas de forma que a face externa do bloco (por exemplo, a face onde se pode colocar uma tocha) fique voltada para a estufa. O mesmo se aplica aos telhados, exceto que lajes são sempre consideradas blocos de telhado válidos. Alçapões e portas também são sempre válidos e não requerem posicionamento especial."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)Tipos de Estufas$() são famílias de blocos de estufa que podem ser usados indistintamente em uma estufa. A maioria dos blocos de estufa $(thing)envelhece$(). Por exemplo, blocos de estufa de $(thing)Madeira Tratada$() se tornam blocos de $(thing)Madeira Tratada Desgastada$(). Como ambos os tipos de blocos pertencem ao mesmo tipo de estufa, sua estufa continuará funcionando."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Estes são os $(thing)Tipos de Estufa$() disponíveis, com os tipos de blocos em que podem envelhecer:$(br)$(br)$(li)Madeira Tratada: Desgastada $()$(li)Cobre: Exposto, Desgastado, Oxidado$()$(li)Ferro: Enferrujado$() $(li)Aço Inoxidável (não envelhece)$()",
+      "title": "Tipos de Estufas"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Existem quatro tipos de $(thing)Blocos de Estufa$() comuns: Paredes, Portas, Telhados e Coberturas. Telhados e Coberturas são escadas e lajes, respectivamente. Existem também versões mais finas desses blocos, também conhecidas como paredes de painéis, alçapões e telhados de painéis. Eles podem ser combinados da maneira que você preferir para formar a estrutura da estufa."
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "Um exemplo de estufa, em cada tipo principal.",
+      "multiblocks": [
+        "firmalife:treated_wood_greenhouse",
+        "firmalife:copper_greenhouse",
+        "firmalife:iron_greenhouse",
+        "firmalife:stainless_steel_greenhouse"
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Existem muitos blocos que operam dentro de Estufas:$(br)$(li)$(l:firmalife/planters)Canteiros$(), para cultivo de plantações$(), e $(br)$(li)$(l:firmalife/irrigation)Aspersores$(), vários dispositivos que adicionam água aos canteiros."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "As próximas quatro páginas contêm receitas para os principais tipos de blocos de estufa. Embora sejam mostradas apenas para estufas de Ferro, as hastes de ferro na receita podem ser substituídas por $(thing)Madeira Serrada Tratada$(), $(thing)Hastes de Cobre$() ou $(thing)Hastes de Aço Inoxidável$(). Para obter informações sobre Aço Inoxidável, consulte $(l:firmalife/stainless_steel)esta página vinculada$()."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/greenhouse/iron_greenhouse_wall",
+      "recipe2": "firmalife:crafting/greenhouse/iron_greenhouse_roof"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/greenhouse/iron_greenhouse_door",
+      "recipe2": "firmalife:crafting/greenhouse/iron_greenhouse_roof_top"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/greenhouse/iron_greenhouse_trapdoor",
+      "recipe2": "firmalife:crafting/greenhouse/iron_greenhouse_panel_roof"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/greenhouse/iron_greenhouse_panel_wall",
+      "recipe2": "firmalife:crafting/greenhouse/iron_greenhouse_port"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 7
+}

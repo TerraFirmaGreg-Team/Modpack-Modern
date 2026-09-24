@@ -1,0 +1,258 @@
+{
+  "name": "牧畜",
+  "category": "tfc:mechanics",
+  "icon": "minecraft:egg",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)家畜$()は、プレイヤーが飼いならして繁殖させることができる動物です。家畜は$(thing)オス$()または$(thing)メス$()のいずれかになります。一部の動物では、性別を視覚的に判断することができます。たとえば、雄のブタには牙があります。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "家畜は$(thing)老化$()を経験します。彼らは赤ちゃんとして生まれますが、赤ちゃんは体が小さく、プレイヤーに資源を与えることができません。一定の日数が経過すると、繁殖したり乳を生産したりできる$(thing)大人$()の動物に成長します。動物は繁殖したり、十分な回数使用されると$(thing)老いた動物$()になり肉としてのみ役に立ちます。"
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "tfc:textures/gui/book/tutorial/old_cow.png"
+      ],
+      "text": "この雄牛は高齢で繁殖ができません。色褪せた毛並みと灰色の目をしています。",
+      "border": true
+    },
+    {
+      "type": "patchouli:text",
+      "text": "家畜に餌を与えて$(thing)親密度$()を高めることができます。それぞれの動物には好んで食べる食べ物があります。動物に餌をやるには、手に餌を持って$(item)$(k:key.sneak)$()と$(item)$(k:key.use)$()をします。"
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "tfc:textures/gui/book/tutorial/unfamiliarized_pig.png"
+      ],
+      "text": "家畜には、$(thing)親密度$()があり、$(item)$(k:key.sneak)$()を押しながら動物を見ると、頭の上にそれが現れます。",
+      "border": true
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "tfc:textures/gui/book/tutorial/no_familiarity_decay_pig.png"
+      ],
+      "text": "餌を与えないと親密度は毎日少しずつ減少します。十分に高めると、白い輪郭のハートで示された分以下への減少が防げます。",
+      "border": true
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "tfc:textures/gui/book/tutorial/familiarity_limit_pig.png"
+      ],
+      "text": "大人の家畜は、完全には慣れず赤い枠線のハートで示されます。赤ちゃんは100%の親密度にできます。",
+      "border": true
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "mammals",
+      "text": "$(thing)哺乳類$()は$(thing)妊娠$()を経験する家畜です。30%以上の親密度があり、その日に餌を与えられた成体の哺乳類は、異性で近くにいる場合、交尾します。雌の動物は$(thing)妊娠$()し、受精後の一定の日数が経過すると子供を産みます。$(br)例えば、$(l:mechanics/animal_husbandry#pig)ブタ$()がそうです。"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "wooly_animals",
+      "text": "$(thing)羊毛を持つ動物$()は、十分に親密であり、大人であれば$(thing)毛を刈る$()ことができる$(l:mechanics/animal_husbandry#mammals)哺乳類$()です。例えば、$(l:mechanics/animal_husbandry#sheep)羊$()、$(l:mechanics/animal_husbandry#alpaca)アルパカ$()、および$(l:mechanics/animal_husbandry#musk_ox)ジャコウウシ$()がいます。"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "dairy_animals",
+      "text": "$(thing)乳用動物$()は、$(thing)ミルク$()を作る哺乳類です。雌の乳用動物は、バケツを使ってミルクを入手できます。例えば、$(l:mechanics/animal_husbandry#goat)ヤギ$()、$(l:mechanics/animal_husbandry#cow)牛$()、および$(l:mechanics/animal_husbandry#yak)ヤク$()がいます。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "anchor": "oviparous_animals",
+      "recipe": "tfc:crafting/nest_box",
+      "title": "巣箱",
+      "text": "$(thing)卵生動物$()は$(l:mechanics/animal_husbandry#mammals)哺乳類$()ではなく、$(thing)卵$()を産んで子供を得ます。卵を産むには$(thing)巣箱$()が必要で、自力でそれを見つけることができます。$(br)例としては、$(l:mechanics/animal_husbandry#duck)アヒル$()、$(l:mechanics/animal_husbandry#quail)ウズラ$()、および$(l:mechanics/animal_husbandry#chicken)ニワトリ$()がいます。"
+    },
+    {
+      "type": "tfc:heat_recipe",
+      "recipe": "tfc:heating/cooked_egg",
+      "text": "$(thing)卵$()は料理やゆでることで食べられます。雄の卵生動物は雌を受精させることができ、その結果、巣箱に産みつけられた次の卵が受精卵となります。受精卵には、孵化までの時間がツールチップで表示されます。"
+    },
+    {
+      "type": "tfc:knapping_recipe",
+      "anchor": "horses",
+      "recipe": "tfc:leather_knapping/saddle",
+      "text": "$(thing)馬類$()は、飼いならすと乗ることができる$(l:mechanics/animal_husbandry#mammals)哺乳類$()です。親密度が15%に達すると、乗れるようになります。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "乗るためには$(thing)鞍$()が必要で、革の$(thing)加工$()で作れます。これには$(l:mechanics/animal_husbandry#mule)ラバ$()、$(l:mechanics/animal_husbandry#donkey)ロバ$()、および$(l:mechanics/animal_husbandry#horses)ウマ$()が含まれます。ラバとロバはチェストや樽を運ぶことができます。樽を持っている場合、$(item)$(k:key.sneak)$()を押しながら$(item)$(k:key.use)$()を押すと取り外すことができます。同じキーを使ってバケツを持っている場合、樽から液体を排出することができます。$(br2)次の数ページでは、すべての家畜の種類について説明します。"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "pig",
+      "text": "$(thing)ブタ$()は、$(l:the_world/climate#temperature)気温$()-10〜35°C、$(l:the_world/climate#rainfall)降水量$()200mm以上の温暖な森林に生息しています。$(l:mechanics/animal_husbandry#mammals)哺乳類$()で、特別な能力はありません。食べ物は、腐っていてもあらゆる食べます。一度に1〜10匹の子供を産み、妊娠期間はわずか19日で、80日で大人になります。彼らは6回の出産が可能です。",
+      "title": "ブタ"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "tfc:pig{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
+      "scale": 0.6,
+      "name": " ",
+      "text": "ブタ。"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "cow",
+      "text": "$(thing)ウシ$()は、$(l:the_world/climate#temperature)気温$()-10～35°C、$(l:the_world/climate#rainfall)降水量$()250mm以上のほとんどの気候に生息してる$(l:mechanics/animal_husbandry#dairy_animals)乳用動物$()です。食べ物は、$(thing)穀物$()しか食べず、穀物が腐っていても構いません。一度に1～2匹の子供を産み、妊娠期間は58日で、192日で大人になります。ミルクを一度も絞られなければ13回の出産が可能で、一度も繁殖しなければ128回ミルクを絞ることができます。毎日ミルクを生産します。",
+      "title": "ウシ"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "tfc:cow{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
+      "scale": 0.75,
+      "name": " ",
+      "text": "ウシ。"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "goat",
+      "text": "$(thing)ヤギ$()は、$(l:the_world/climate#temperature)気温$()-12～25°C、$(l:the_world/climate#rainfall)降水量$()300mm以上の温暖な気候に生息している$(l:mechanics/animal_husbandry#dairy_animals)乳用動物$()です。食べ物は、$(thing)穀物$()、$(thing)果物$()、および$(thing)野菜$()を食べ、腐っていても構いません。一度に1～2匹の子供を産み、妊娠期間は32日で、96日で大人になります。ミルクを一度も絞られなければ6回の出産が可能で、一度も繁殖しなければ60回ミルクを絞ることができます。3日ごとにミルクを生産します。",
+      "title": "ヤギ"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "tfc:goat{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
+      "scale": 0.75,
+      "name": " ",
+      "text": "ヤギ。"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "yak",
+      "text": "$(thing)ヤク$()は、$(l:the_world/climate#temperature)気温$()-11°C以下、$(l:the_world/climate#rainfall)降水量$()100mm以上の寒冷な気候に生息している$(l:mechanics/animal_husbandry#dairy_animals)乳用動物$()です。食べ物は、新鮮な$(thing)穀物$()しか食べません。一度に1匹の子供を産み、妊娠期間は64日で、180日で大人になります。ミルクを一度も絞られなければ23回の出産が可能で、一度も繁殖しなければ230回ミルクを絞ることができます。毎日1回ミルクを生産します。",
+      "title": "ヤク"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "tfc:yak{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
+      "scale": 0.75,
+      "name": " ",
+      "text": "ヤク。"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "alpaca",
+      "text": "$(thing)アルパカ$()は、$(l:the_world/climate#temperature)気温$()-8～20°C、$(l:the_world/climate#rainfall)降水量$()250mm以上の温暖な気候に生息している$(l:mechanics/animal_husbandry#wooly_animals)羊毛を持つ動物$()です。食べ物は、$(thing)穀物$()と$(thing)果物$()を食べます。一度に1～2匹の子供を持ち、妊娠期間は36日で、98日で大人になります。毛を一度も刈らなければ13回の出産が可能で、一度も繁殖しなければ128回毛を刈ることができます。6日ごとに毛を伸ばします。",
+      "title": "アルパカ"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "tfc:alpaca{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
+      "scale": 0.75,
+      "name": " ",
+      "text": "アルパカ。"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "sheep",
+      "text": "$(thing)ヒツジ$()は、$(l:the_world/climate#temperature)気温$()0～35°C、$(l:the_world/climate#rainfall)降水量$()70～300mmの乾燥した気候に生息している$(l:mechanics/animal_husbandry#wooly_animals)羊毛を持つ動物$()です。食べ物は、$(thing)穀物$()を食べます。一度に1～2匹の子供を産み、妊娠期間は32日で、56日で大人になります。毛を一度も刈らなければ6回の出産が可能で、一度も繁殖しなければ60回毛を刈ることができます。9日ごとに毛を伸ばします。",
+      "title": "ヒツジ"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "tfc:sheep{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
+      "scale": 0.75,
+      "name": " ",
+      "text": "ヒツジ。"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "musk_ox",
+      "text": "$(thing)ジャコウウシ$()は、$(l:the_world/climate#temperature)気温$()-25～0°C、$(l:the_world/climate#rainfall)降水量$()100mm以上の寒冷な気候に生息している$(l:mechanics/animal_husbandry#wooly_animals)羊毛を持つ動物$()です。食べ物は、$(thing)穀物$()を食べます。一度に1匹の子供を産み、妊娠期間は64日で、168日で大人になります。毛を一度も刈らなければ16回の出産が可能で、一度も繁殖しなければ160回毛を刈ることができます。4日ごとに毛を伸ばします。",
+      "title": "ジャコウウシ"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "tfc:musk_ox{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
+      "scale": 0.75,
+      "name": " ",
+      "text": "ジャコウウシ。"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "chicken",
+      "text": "$(thing)ニワトリ$()は、$(l:the_world/climate#temperature)気温$()14°C以上、$(l:the_world/climate#rainfall)降雨量$()225mm以上の暖かい森林に生息している$(l:mechanics/animal_husbandry#oviparous_animals)卵生動物$()です。食べ物は、$(thing)穀物$()、$(thing)果物$()、$(thing)野菜$()、および$(thing)種子$()を食べます。腐っていても構いません。卵は8日で孵化し、24日で大人になります。100回卵を産むことができ、30時間ごとに卵を産みます。",
+      "title": "ニワトリ"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "tfc:chicken{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
+      "scale": 0.7,
+      "name": " ",
+      "text": "ニワトリ。"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "duck",
+      "text": "$(thing)アヒル$()は、$(l:the_world/climate#temperature)気温$()-25～30°C、$(l:the_world/climate#rainfall)降雨量$()100mm以上のほとんどの平原に生息している$(l:mechanics/animal_husbandry#oviparous_animals)卵生動物$()です。食べ物は、$(thing)穀物$()、$(thing)果物$()、$(thing)野菜$()、$(thing)パン$()、および$(thing)種子$()を食べます。卵は8日で孵化し、32日で大人になります。72回卵を産むことができ、32時間ごとに卵を産みます。",
+      "title": "アヒル"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "tfc:duck{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
+      "scale": 0.7,
+      "name": " ",
+      "text": "アヒル。"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "quail",
+      "text": "$(thing)ウズラ$()は、$(l:the_world/climate#temperature)気温$()-15～15°C、$(l:the_world/climate#rainfall)降雨量$()200mm以上の寒冷な気候に生息している$(l:mechanics/animal_husbandry#oviparous_animals)卵生動物$()です。食べ物は、$(thing)穀物$()、$(thing)果物$()、$(thing)野菜$()、および$(thing)種子$()を食べます。腐っていても構いません。卵は8日で孵化し、22日で大人になります。48回卵を産むことができ、28時間ごとに卵を産みます。",
+      "title": "ウズラ"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "tfc:quail{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
+      "scale": 0.7,
+      "name": " ",
+      "text": "ウズラ。"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "donkey",
+      "text": "$(thing)ロバ$()は、$(l:the_world/climate#temperature)気温$()-15°C以上、$(l:the_world/climate#rainfall)降雨量$()130～400mmの湿った平原に生息している$(l:mechanics/animal_husbandry#horses)馬類$()の一種で、$(thing)チェスト$()を運ぶことができます。食べ物は、$(thing)穀物$()と$(thing)果物$()を食べます。一度に1匹の子供を産み、妊娠期間は19日で、80日で大人になります。6回の出産が可能です。",
+      "title": "ロバ"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "tfc:donkey{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
+      "scale": 0.6,
+      "name": " ",
+      "text": "ロバ。"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "mule",
+      "text": "$(thing)ラバ$()は、$(l:the_world/climate#temperature)気温$()-15°C以上、$(l:the_world/climate#rainfall)降雨量$()130～400mmの平原に生息している$(l:mechanics/animal_husbandry#horses)馬類$()の一種で、$(thing)チェスト$()を運ぶことができ、$(thing)馬$()と$(thing)ロバ$()の交配によって生まれる常に雄の動物です。食べ物は、$(thing)穀物$()と$(thing)果物$()を食べます。80日で大人になります。",
+      "title": "ラバ"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "tfc:mule{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
+      "scale": 0.6,
+      "name": " ",
+      "text": "ラバ。"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "horse",
+      "text": "$(thing)ウマ$()は、$(l:the_world/climate#temperature)気温$()-15°C以上、$(l:the_world/climate#rainfall)降雨量$()130～400mmの平原に生息している$(l:mechanics/animal_husbandry#horses)馬類$()の一種です。食べ物は、$(thing)穀物$()と$(thing)果物$()を食べます。一度に1匹の子供を産み、妊娠期間は19日で、80日で大人になります。彼らは6回の出産が可能です。",
+      "title": "ウマ"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "tfc:horse{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
+      "scale": 0.6,
+      "name": " ",
+      "text": "ウマ。"
+    }
+  ],
+  "read_by_default": true
+}

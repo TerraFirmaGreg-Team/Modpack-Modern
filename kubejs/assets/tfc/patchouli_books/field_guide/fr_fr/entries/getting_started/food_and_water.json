@@ -1,0 +1,259 @@
+{
+    "name": "Nourriture et eau",
+    "category": "tfc:getting_started",
+    "icon": "tfc:textures/item/food/orange.png",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(li)$(bold)$(l:getting_started/food_and_water#basics)Bases$()$(li)$(bold)$(l:getting_started/food_and_water#thirst)Soif$()$(li)$(bold)$(l:getting_started/food_and_water#nutrition_screen)L'écran de nutrition$()$(li)$(bold)$(l:getting_started/food_and_water#nutrients)Nutriments$()$(li2)$(l:getting_started/food_and_water#fruit)Fruits$()$(li2)$(l:getting_started/food_and_water#vegetables)Légumes$()$(li2)$(l:getting_started/food_and_water#protein)Protéines$()$(li2)$(l:getting_started/food_and_water#grain)Céréales$()$(li2)$(l:getting_started/food_and_water#dairy)Produits laitiers$()$(li)$(bold)$(l:getting_started/food_and_water#contaminants)Contaminants$()$(li2)$(l:getting_started/food_and_water#toxins)Toxines$()$(li2)$(l:getting_started/food_and_water#parasites)Parasites$()$(li2)$(l:getting_started/food_and_water#microplastics)Microplastiques$()",
+            "title": "Index",
+            "anchor": "index"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)$(bold)$(l:getting_started/food_and_water#transient_effects)Effets transitoires$()$(li2)$(l:getting_started/food_and_water#cooling_transient_effect)Refroidissant$()$(li2)$(l:getting_started/food_and_water#warming_transient_effect)Réchauffant$()$(li2)$(l:getting_started/food_and_water#quenching_transient_effect)Désaltérant$()$(li2)$(l:getting_started/food_and_water#bolstering_transient_effect)Renforçant$()$(li2)$(l:getting_started/food_and_water#hearty_transient_effect)Gourmand$()$(li2)$(l:getting_started/food_and_water#rejuvenating_transient_effect)Régénérant$()$(li2)$(l:getting_started/food_and_water#freezing_transient_effect)Glacé$()$(li2)$(l:getting_started/food_and_water#blazing_transient_effect)Brûlant$()$(li2)$(l:getting_started/food_and_water#radiating_transient_effect)Irradié$()$(li2)$(l:getting_started/food_and_water#nauseating_transient_effect)Nauséabond$()$(li2)$(l:getting_started/food_and_water#parching_transient_effect)Desséchant$()$(li2)$(l:getting_started/food_and_water#deadly_transient_effect)Mortel$()$(li2)$(l:getting_started/food_and_water#fulfilling_transient_effect)Rassasiant$()$(li2)$(l:getting_started/food_and_water#sugary_transient_effect)Sucré$()$(li2)$(l:getting_started/food_and_water#spicy_transient_effect)Épicé$()"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Dans TerraFirmaCraft, vous ne devez pas seulement gérer vitre faim, mais aussi votre soif. La faim fonctionne presque comme en Vanilla. La plupart des aliments remplissent un cinquième de votre barre de faim. Certains aliments comme les $(thing)Racines de roseau$() remplissent un peu moins. Manger restaure aussi de la $(thing)Saturation, qui correspond à votre niveau de satiété. Être bas en nourriture ou en eau résulte en des mouvements plus lents et une prise de dégâts. Mourrir ne réinitialise pas vos nutriments ou contaminants.",
+            "title": "Bases",
+            "anchor": "basics"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Certains aliments rassasient beaucoup, et vous empêchent de perdre de la faim pendant plus longtemps, tandis que d'autres ont un effet plus court.$(br2)Vous perdez de la faim en jouant normalement. Votre faim se vide plus vide si vous faites des choses telles que courir, nager, ou être $(l:getting_started/size_and_weight#overburdening)Surchargé$(). Des informations sur la $(thing)Saturation$(), l'$(thing)Eau$(), ainsi que sur les $(thing)Nutriments$() disponibles dans un aliment sont accessibles en passant votre curseur dessus dans l'inventaire. Utiliser $(item)$(k:key.sneak)$() révèle l'infobulle complète."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Tous les aliments ont une infobulle avec cette information. L'infobulle inclut la $(l:mechanics/decay)Date de péremption$() de l'aliment, qui peut être repoussée avec une conservation. En regardant cette information, il est important de noter que tous les aliments ne possèdent pas de valeur nutritionnelle. Par exemple, la $(l:mechanics/bread)Pâte$() est un aliment, mais n'a aucune valeur de Nutrition, Saturation ou Eau. La manger ferait peu de bien."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Une infobulle d'aliment peut ressembler à ceci :$(br2)$(bold)Orange$()$(br)$(2)$(bold)Périme le : 6 Juillet 1004, 11:59 (Dans un mois et 1 jour(s))$()$(br) $(8)Nutrition :$(br) - Saturation : 2%$(br) - Eau : 10%$(br)$(a) - Fruits : 0.5",
+            "title": "Nutriments"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "La soif représente le niveau d'eau de votre corps. Elle se vide à un taux similaire à la faim. À des températures plus élevées ou une haute utilisation de faim, votre soif se videra plus vite. Heureusement, boire de l'$(thing)Eau douce$() remplit la soif. Cela peut se faire en utilisant $(item)$(k:key.use)$() sur un bloc d'eau. Boire de l'eau salée vous fait perdre de l'eau, et peut même vous donner l'effet $(thing)Soif$(), qui la videra encore plus vite.",
+            "anchor": "thirst",
+            "title": "Soif"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "text": "Afin d'éviter de boire de l'eau salée ou boueuse, cherchez des rivières, des lacs ou des plantes d'eau douce comme les $(thing)roseaux$().",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "Y"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "minecraft:air",
+                    "Y": "tfc:plant/cattail[part=lower,fluid=water]"
+                }
+            },
+            "name": "Sécurité aquatique",
+            "enable_visualize": false
+        },
+        {
+            "type": "tfc:knapping_recipe",
+            "text": "$(l:getting_started/pottery)Modeler$() et cuire une $(l:getting_started/pottery#jug)cruche$() est un moyen de transporter de l'eau avec vous. Remplissez-la comme un seau avec $(item)$(k:key.use)$(). Maintenir $(item)$(k:key.use)$() vous fait boire.",
+            "title": "Soif",
+            "recipe": "tfc:clay_knapping/jug"
+        },
+        {
+            "type": "patchouli:text",
+            "name": "Sécurité aquatique",
+            "text": "Vous pouvez également boire depuis d'autres contenants tels que les $(l:waterflasks)Gourdes$() ou les $(l:mechanics/glassworking)Bouteilles de verre$(). Lisez plus d'infos sur les contenants à boissons et effet de boissons $(l:mechanics/drinks#containers)Ici$()."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Dans $(bold)$(#ff0fb7)TerraFirma$()$()$(bold)$(#595959)Greg$()$(), l'écran de nutrition affiche de nombreuses informations sur votre santé. $(li)Il y a un graphique principal affichant vos $(l:getting_started/food_and_water#nutrients)Nutriments$()$()$(li)Un graphique adjacent affiche vos $(l:getting_started/food_and_water#contaminants)Contaminants$()$()$(li)Un tableau affiche vos stats de santé.$()$(li)Et un écran désactivable montre la nutrition de votre équipe. $()$(br)$(item)Maintenez $(k:key.sneak)$() sur un élément de l'écran pour afficher plus d'infos.$()",
+            "anchor": "nutrition_screen",
+            "title": "Écran de nutrition"
+        },
+        {
+            "type": "patchouli:image",
+            "text": "L'écran de nutrition, avec des graphes affichant le niveau de chaque nutriment.",
+            "images": [
+                "tfg:textures/gui/field_guide/nutrition/tfg_nutrition_screen.png"
+            ],
+            "border": false
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "nutrients",
+            "text": "Il y a 5 nutriments, tous obtenables dans votre nourriture : $(l)$(a)Fruits$()$(), $(l)$(2)Légumes$()$(), $(l)$(c)Protéines$()$(), $(l)$(6)Céréales$()$(), et $(l)$(5)Produits laitiers$()$(). Manger un aliment vous donne ses nutriments. Certains comme la $(l:mechanics/pot#soup)Soupe$() combinent plusieurs nutriments en un aliment. Le plus souvent, les nutriments des aliment correspondent à ceux de ses ingrédient. Cela est important, puisque des repas mangés il y a longtemps ne comptent plus pour votre nutrition.",
+            "title": "Nutriments"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "average_nutrients",
+            "text": "La valeur totale de vos nutriments détermine vos PV maximum. Vous pouvez atteindre au maximum $(l)$(c)30 cœurs$()$() et descendre jusqu'à $(l)$(c)3 cœurs$()$().$(br)Votre nutrition moyenne affecte également les suivants :$()$(li)$(bold)Moyenne >55% ↴$()$()$(italic)$(li2)Accélère la régénération passive de 50%.$()$()$(italic)$(li2)Réduit la progression des $(l:tfg_ores/hazards#medicine)Maladies$() de 25%.$()$()$(italic)$(li2)Accélère la guérison passive des maladies de 50%.$()$()"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)$(bold)Moyenne >85% ↴$()$()$(italic)$(li2)Accélère la régénération passive de 100%.$()$()$(italic)$(li2)Réduit la progression des $(l:tfg_ores/hazards#medicine)Maladies$() de 50%.$()$()$(italic)$(li2)Accélère la guérison passive des maladies de 100%.$()$()"
+        },
+        {
+            "title": "Fruits",
+            "type": "patchouli:text",
+            "anchor": "fruit",
+            "text": "Les nutriments de $(l)$(a)Fruits$()$() se trouvent principalement dans les $(l:the_world/wild_fruits)Plantes à fruits$(), telles que les buissons de baies et les arbres fruitiers. Des exceptions notables sont les $(l:mechanics/crops#pumpkin)Citrouilles$() et les $(l:mechanics/crops#pumpkin)Pastèques$(), qui sont nutritionnellement des fruits.$(br2)Combler vos besoins en fruits octroie les effets suivants :$()$(li)$(bold)Valeur >55% → $()$()$(italic)Réduit la soif de 25%.$()$(li)$(bold)Valeur >85% → $()$()$(italic)Accélère la vitesse de minage de 30%.$()"
+        },
+        {
+            "title": "Légumes",
+            "type": "patchouli:text",
+            "anchor": "vegetables",
+            "text": "Les $(l)$(2)Légumes$()$() représentent la plupart des $(l:mechanics/crops)Cultures$().$(br2)Combler vos besoins en légumes octroie les effets suivants :$()$(li)$(bold)Valeur >55% → $()$()$(italic)Retire les pénalités de minage sous l'eau.$()$(li)$(bold)Valeur >85% → $()$()$(italic)Octroie l'effet respiration.$()"
+        },
+        {
+            "title": "Protéines",
+            "type": "patchouli:text",
+            "anchor": "protein",
+            "text": "Les $(l)$(c)Protéines$()$() peuvent provenir de la viande d'$(l:the_world/wild_animals)Animaux$(). Elle peut aussi provenir des $(thing)légumineuses$().$(br2)Combler vos besoins en protéines octroie les effets suivants :$()$(li)$(bold)Valeur >55% → $()$()$(italic)Réduit le multiplicateur de fatigue de 25%.$()$(li)$(bold)Valeur >85% → $()$()$(italic)Vous permet de transporter un autre item énorme sans être $(l:getting_started/size_and_weight#overburdening)Surchargé$() (comme un tonneau scellé).$()"
+        },
+        {
+            "title": "Céréales",
+            "type": "patchouli:text",
+            "anchor": "grain",
+            "text": "Les $(l)$(6)Céréales$()$() proviennent des cultures correspondantes telles que l'$(l:mechanics/crops#barley)Orge$(). Le traitement des céréales se trouve sur la page du $(l:firmalife/bread)Pain$(). Certaines racines comptent aussi comme des céréales.$(br2)Combler vos besoins en céréales octroie les effets suivants :$(li)$(bold)Valeur >55% → $()$()$(italic)Augmente votre vitesse de 5%.$()$(li)$(bold)Value >85% → $()$()$(italic)Augmente votre vitesse de 15%.$()"
+        },
+        {
+            "title": "Produits laitiers",
+            "type": "patchouli:text",
+            "anchor": "dairy",
+            "text": "Les $(l)$(5)Produits laitiers$()$() sont faits à partir de $(thing)Lait$(), qui s'obtient en trayant $(l:mechanics/animal_husbandry#dairy_animals)certains animaux$(). La transformation et la consommation du lait sont couvertes sur la page des $(l:firmalife/cheese)Produits laitiers$().$(br2)Combler vos besoins en produits laitiers octroie les effets suivants :$()$(li)$(bold)Valeur >55% → $()$()$(italic)$(thing)Chute amortie I$() $()$(li)$(bold)Valeur >85% → $()$()$(italic)$(thing)Chute amortie IV$().$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "contaminants",
+            "text": "En plus des nutriments, $(bold)$(#ff0fb7)TerraFirma$()$()$(bold)$(#595959)Greg$()$() ajoute aussi des contaminants, pouvant tous être obtenus en mangeant :$(l)$(d)Toxines$()$(), $(l)$(4)Parasites$()$(), et $(l)$(3)Microplastiques$()$(). Les contaminants peuvent être transmis au sein des aliments et s'accumuler dans le joueur.",
+            "title": "Contaminants"
+        },
+        {
+            "title": "Toxines",
+            "type": "patchouli:text",
+            "anchor": "toxins",
+            "text": "Les $(l)$(d)Toxines$()$() proviennent de plantes et viandes dangereuses. Les toxines sont éliminées naturellement à un taux de 3%/jour. Consommez des $(item)Capsules detox$() pour activement $(l:tfg_tips/mob_effects_glossary#cure_toxins)éliminer les toxines$().$(br2)Accumuler des toxines octroie les effets suivants :$()$(li)$(bold)Valeur >0% → $()$()$(italic)25 % de chances de recevoir un effet néfaste aléatoire pendant 10sec à chaque augmentation.$()$(li)$(bold)Valueur >99% → $()$()$(italic)$(l:tfg_tips/mob_effects_glossary#final_moments)Décès.$()"
+        },
+        {
+            "title": "Parasites",
+            "type": "patchouli:text",
+            "anchor": "parasites",
+            "text": "Les $(l)$(4)Parasites$()$() proviennent de la consommation de certaines viandes crues ou d'eau boueuse. Avalez des $(item)Capsules de parasiticide$() pour activement $(l:tfg_tips/mob_effects_glossary#cure_parasites)éliminer les parasites$().$(br2)Accumuler des parasites octroie les effets suivants :$()$(li)$(bold)Valeur >10% → $()$()$(italic)20% de  chances d'augmenter chaque jour jusqu'à un max de 60%.$()$(li)$(bold)Valeur >33% → $()$()$(italic)Augmente la fatigue passive de  25%.$()$(li)$(bold)Valeur >66% → $()$()$(italic)Augmente la fatigue passive de 50%.$()"
+        },
+        {
+            "title": "Microplastiques",
+            "type": "patchouli:text",
+            "anchor": "microplastics",
+            "text": "Les $(l)$(3)Microplastiques$()$() proviennent de certains aliments emballés dans du plastique. Les microplastiques sont élminiés naturellement à un taux de 1%/jour. Consommez des $(item)Capsules de nanofiltration$() pour activement $(l:tfg_tips/mob_effects_glossary#cure_microplastics)éliminer les microplastiques$().$(br)Accumuler des microplastiques octroie les effets suivants :$()$(li)$(bold)Valeur >33% → $()$()$(italic)Augmente la déshydratation à température élevée de 25%$()$(li)$(bold)Valeur >66% ↴$()$()$(italic)$(li2)Augmente la déshydratation à température élevée de 50%.$()$()$(italic)$(li2)5% de chances de recevoir le $(l:tfg_ores/hazards#Carcinogens)Cancer$() à chaque augmentation.$()$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "transient_effects",
+            "text": "$(bold)$(#ff0fb7)TerraFirma$()$()$(bold)$(#595959)Greg$()$() rajoute également des $(item)Effets transitoires$(). Ces effets transitoires existent dans le but de transférer des bonus/malus des ingrédients à un plat. Les effets transitoires peuvent être combinés et consommés. Cependant, il ne s'accumulent pas au sein du joueur et sont immédiatement consommés.$(br)La force de ces effets dépend de la valeur des nutriments. Cependant, la manière dont la force est déterminée n'est pas uniforme pour chaque type.$()",
+            "title": "Effets transitoires"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "cooling_transient_effect",
+            "text": "$(#12d7ff)❅$()$(bold) Refroidissant$()$(li)Donne au joueur l'effet $(l:tfg_tips/mob_effects_glossary#cooling)Refroidi$() avec une durée d'1 minute par point de nutriment. Avec une durée max de 30min.$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "warming_transient_effect",
+            "text": "$(#ff7700)🔆$()$(bold) Réchauffant$()$(li)Donne au joueur l'effet $(l:tfg_tips/mob_effects_glossary#warming)Réchauffé$() avec une durée d'1 minute par point de nutriment. Avec une durée max de 30min.$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "quenching_transient_effect",
+            "text": "$(#00c792)🍹$()$(bold) Désaltérant$()$(li)Donne au joueur l'effet $(l:tfg_tips/mob_effects_glossary#quenched)Désaltéré$() avec une durée de'1 minute par point de nutriment. Avec une durée max de 30min.$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "bolstering_transient_effect",
+            "text": "$(#ffe417)♡$()$(bold) Renforçant$()$(li)Donne au joueur l'effet $(n)Absorption$() pendant 8 minutes. Amplifié en fonction du nombre de points de nutriments jusqu'à un amplificateur max de 5.$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "hearty_transient_effect",
+            "text": "$(#ff171b)♡$()$(bold) Gourmand$()$(li)Donne au joueur l'effet $(n)Bonus de vie$() pendant 8 minutes. Amplifié en fonction du nombre de points de nutriments jusqu'à un amplificateur max de 5.$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "rejuvenating_transient_effect",
+            "text": "$(#ff178f)💕$()$(bold) Régénérant$()$(li)Donne au joueur l'effet $(n)Régénération$() avec une durée d'1 minute par point de nutriment. Avec une durée max de 3min.$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "freezing_transient_effect",
+            "text": "$(#12d7ff)⛇$()$(bold) Glacé$()$(li)Donne au joueur l'effet  $(l:tfg_tips/mob_effects_glossary#freezing)Glacé$() avec une durée de 5 secondes par point de nutriment. Avec une durée max de 30sec.$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "blazing_transient_effect",
+            "text": "$(#ff7700)🔥$()$(bold) Brûlant$()$(li)Donne au joueur l'effet $(l:tfg_tips/mob_effects_glossary#blazing)Brûlant$() avec une durée de 5 secondes par point de nutriment. Avec une durée max de 30sec.$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "radiating_transient_effect",
+            "text": "$(#9fc700)☢$()$(bold) Irradié$()$(li)Donne au joueur l'effet $(n)Surbrillance$() pendant 24 secondes.$()$(li)Donne au joueur l'effet $(l:tfg_tips/mob_effects_glossary#instant_radiation)Radiation$() pendant 24 secondes. Amplifié en fonction du nombre de points de nutriments jusqu'à un amplificateur max de 5.$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "nauseating_transient_effect",
+            "text": "$(#078f00)🤢$()$(bold) Écœurant$()$(li)Donne au joueur l'effet $(n)Nausée$() avec une durée de 5 secondes par point de nutriment? Avec une durée max de 12sec.$()$(li)Donne au joueur l'effet $(n)Faim VI$() avec une durée de 10 secondes par point de nutriment. Avec une durée max de 30sec$()."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "parching_transient_effect",
+            "text": "🧂$(bold) Desséchant$()$(li)Donne au joueur l'effet $(n)Soif$() avec une durée de 1 minute par point de nutriment. Avec une durée max de 8min$()."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "deadly_transient_effect",
+            "text": "$(#470275)💀$()$(bold) Mortel$()$(li)Donne au joueur l'effet $(l:tfg_tips/mob_effects_glossary#final_moments)Derniers instants$() pendant 8 min. Chaque point de nutriment réduit de moitié la durée.$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "fulfilling_transient_effect",
+            "text": "$(#551913)🍖$()$(bold) Rassasiant$()$(li)Donne au joueur l'effet $(n)Résistance$() avec une durée d'1 minute par point de nutriment. Avec une durée max de 15min.$()$(li)Donne au joueur l'effet $(n)Soin instantané$().Amplifié en fonction du nombre de points de nutriments jusqu'à un amplificateur max de 2.$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "sugary_transient_effect",
+            "text": "$(#837447)🍰$()$(bold) Sucré$()$(li)Donne au joueur l'effet $(n)Faiblesse$() avec une durée de 15 secondes par point de nutriment. Avec une durée max de 5min.$()$(li)Donne au joueur l'effet $(n)Rapidité$() avec une durée d'1 minute par point de nutriment. Avec une durée max de 30min.$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "spicy_transient_effect",
+            "text": "$(#8F0000)🌶 $()$(bold) Épicé$()$(li)Donne au joueur l'effet $(n)Soif$() avec une durée de 15 secondes par point de nutriment. Avec une durée max de 5min.$()$(li)Donne au joueur l'effet $(l:tfg_tips/mob_effects_glossary#warming)Réchauffé$() avec une durée d'1 minute par point de nutriment. Avec une durée max de 30min.$()"
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Pour aller plus loin",
+            "anchor": "relations",
+            "entries": [
+                "tfc:getting_started/size_and_weight",
+                "tfc:mechanics/animal_husbandry",
+                "tfc:mechanics/crops",
+                "tfc:the_world/wild_fruits",
+                "tfc:mechanics/drinks",
+                "tfc:mechanics/decay",
+                "tfc:firmalife/differences_from_tfc",
+                "tfc:beneath/beneath_crops",
+                "tfc:beneath/beneath_wild_fruits",
+                "tfc:tfg_ores/hazards"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 10
+}

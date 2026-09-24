@@ -1,0 +1,165 @@
+{
+    "name": "Yapı Malzemeleri",
+    "category": "tfc:getting_started",
+    "icon": "tfc:wattle/unstained",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Oyunun erken safhalarında inşaat yapmak tam bir çile olabilir çünkü çoğu sağlam blok için metal aletler şart. Ama neyse ki sadece taş aletlerle bile söküp alabileceğin birkaç blok var.$(br2)Metal aletleri kapınca çok daha fazla $(l:mechanics/advanced_building_materials)inşa bloğunun$() önü açılıyor."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)  1.$(l:getting_started/building_materials#thatch)Amanizm / Saman$()$(br)  2. $(l:getting_started/building_materials#mud_bricks)Çamur Tuğlalar$()$(br)  3.$(l:getting_started/building_materials#wattle_and_daub)Çit ve Harç (Wattle & Daub)$()$(br)  4.$(l:getting_started/building_materials#clay_and_peat)Kil Blokları ve Torf$()$(br)",
+            "title": "İçindekiler"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "thatch",
+            "text": "Sadece bir $(l:getting_started/introduction#knife)Taş Bıçak$() kullanarak bitki benzeri blokları kırdığında $(thing)Saman$() elde edebilirsin. Bu malzemeyle son derece basit bir yapı bloğu olan $(thing)Saman Balyası$() craft edilebilir. Saman Balyası yerçekiminden etkilenmeyen hafif bir bloktur; ancak oyuncular ve diğer varlıklar içinden patır patır geçebilir! Ayrıca gerekirse tekrar $(thing)Saman$() haline dönüştürülebilir.",
+            "title": "Saman"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "tfc:crafting/thatch",
+            "recipe2": "tfc:crafting/straw"
+        },
+        {
+            "type": "patchouli:crafting",
+            "anchor": "mud_bricks",
+            "recipe": "tfc:crafting/soil/loam_drying_bricks",
+            "title": "Çamur Tuğlalar",
+            "text": "$(thing)Çamur$() yerde, nehir ve göllerin altında ya da alçak rakımlı bataklık alanlarda parça parça bulunabilir. Birazcık $(thing)Saman$() ekleyerek bunu $()Islak Çamur Tuğlası$() haline getirebilirsin."
+        },
+        {
+            "type": "tfc:multimultiblock",
+            "text": "Bunlar kuru bir zemine koyulabilir ve bir gün geçtikten sonra sertleşerek $(thing)Çamur Tuğla$() haline gelir.",
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:drying_bricks/loam[count=4,dried=false]",
+                        "Y": "tfc:grass/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:drying_bricks/loam[count=4,dried=true]",
+                        "Y": "tfc:grass/loam"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "tfc:crafting/soil/loam_mud_bricks",
+            "title": " ",
+            "text": "Bu kurumuş çamur tuğlaları daha sonra $(thing)Çamur Tuğla Blokları$() haline getirebilirsin. Hatta istersen bunlardan $(thing)Merdiven$(), $(thing)Basamak$() veya $(thing)Duvar$() da yapabilirsin."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "#tfc:mud_bricks"
+                }
+            },
+            "name": "",
+            "text": "Çamur tuğlaların tüm farklı çeşitleri.",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "wattle_and_daub",
+            "text": "$(thing)Örme Çit$() ve $(thing)Harç$() oldukça çok yönlü bir yapı ve dekorasyon bloğudur.$(br2)$(thing)Örme Çit$() craft edilip yerleştirilebilir, fakat kırılgan bir yapısı vardır; oyuncular ve yaratıklar içinden patır patır geçebilir. Onu sağlamlaştırmak ve katı bir bloğa dönüştürmek için $(thing)Killi Harç$() ile takviye edebilirsin.",
+            "title": "Örme Çit ve Harç"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "tfc:crafting/wattle",
+            "text": "$(thing)Örme Çit$() bloğunu katı hale getirmek için önce onu örmen gerekir; bu da yapıya çubuk eklemeyi gerektirir."
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "tfc:crafting/daub",
+            "recipe2": "tfc:crafting/daub_from_mud",
+            "text": ""
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/wattle_weave.png"
+            ],
+            "text": "Örme çiti $(thing)örmek$() için dört adet çubuk gerekir.",
+            "border": true
+        },
+        {
+            "type": "patchouli:text",
+            "text": "İstediğin zaman köşegenlere, ayrıca üst ve alt kısımlara çubuk ekleyebilirsin. Elinde tek bir $(thing)Çubuk$() tut ve çubuk eklemek için $(item)$(k:key.use)$() yap. Yüzeyin farklı bir tarafını seçerek örme çitin hangi kısmına çubuk ekleyeceğini değiştirebilirsin."
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/wattle_add_stick.png"
+            ],
+            "text": "Örme Çite Çubuk Ekleme.",
+            "border": true
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/wattle_add_daub.png"
+            ],
+            "text": "$(thing)Örülmüş Örme Çit$() üzerine $(thing)Harç$() kullanmak katı bir blok oluşturur.",
+            "border": true
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/wattle_stained.png"
+            ],
+            "text": "Daha sonra üzerine $(l:mechanics/dye)Boya$() kullanarak bloğu $(thing)renklendirebilirsin$().",
+            "border": true
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "clay_and_peat",
+            "text": "Topraktan elde edilen kil, kil bloğuna dönüştürülebilir. Yerleştirilip tekrar kazıldığında tekrardan kile dönüşürler. Görünüşü pek açıcı olmasa da elde etmesi acayip kolaydır.$(br2)Turba, dünyada su kenarlarında öbekler halinde oluşur ve taş aletlerle kazılabilir. Bazı bitkiler üzerinde yetişebilir.$(br2)Yalnız dikkat et, turba bayağı kolay alev alır.",
+            "title": "Kil Blokları ve Turba"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "tfg:shaped/clay_balls_to_block",
+            "title": "Kil Blokları"
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 7
+}

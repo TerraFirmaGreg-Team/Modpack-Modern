@@ -1,0 +1,76 @@
+{
+	"name": "Глоссарий эффектов живых существ",
+	"category": "tfc:tfg_tips",
+	"icon": "minecraft:splash_potion",
+	"read_by_default": true,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "index",
+			"text": "Этот раздел посвящён описанию личных эффектов существ в $(bold)$(#ff0fb7)TerraFirma$()$()$(bold)$(#595959)Greg$()$().$(li)$(bold)$(9)$(l:tfg_tips/mob_effects_glossary#cooling)Охлаждение$()$(li)$(bold)$(9)$(l:tfg_tips/mob_effects_glossary#warming)Согревание$()$(li)$(bold)$(9)$(l:tfg_tips/mob_effects_glossary#quenched)Утоление$()$(li)$(bold)$(9)$(l:tfg_tips/mob_effects_glossary#cure_parasites)Лечение от паразитов$()$(li)$(bold)$(9)$(l:tfg_tips/mob_effects_glossary#cure_toxins)Детоксикация$()$(li)$(bold)$(9)$(l:tfg_tips/mob_effects_glossary#cure_microplastics)Фильтрация микропластика$()$(li)$(bold)$(c)$(l:tfg_tips/mob_effects_glossary#freezing)Замерзание$()$(li)$(bold)$(c)$(l:tfg_tips/mob_effects_glossary#blazing)Обжигание$()$(li)$(bold)$(c)$(l:tfg_tips/mob_effects_glossary#instant_radiation)Мгновенная радиация$()$(li)$(bold)$(c)$(l:tfg_tips/mob_effects_glossary#final_moments)Последние минуты$()"
+		},
+		{
+			"type": "patchouli:empty"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "cooling",
+			"text": "$(bold)$(9)Охлаждение$()$(li)Пока этот эффект активен, он непрерывно $(l:beneath/cooling)Охлаждает$() вас до минимальной температуры $(n)5°C$()"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "warming",
+			"text": "$(bold)$(9)Согревание$()$(li)Пока этот эффект активен, он непрерывно $(l:beneath/cooling)Согревает$() вас до максимальной температуры $(n)25°C$()"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "quenched",
+			"text": "$(bold)$(9)Утоление$()$(li)Пока этот эффект активен, он предотвращает естественное снижение $(l:getting_started/food_and_water#thirst)Жажды$(). Однако он не предотвращает уменьшение шкалы от эффекта \"Жажда\".$()"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "cure_parasites",
+			"text": "$(bold)$(9)Уничтожение паразитов$()$(li)Пока этот эффект активен, он постепенно выводит $(l:getting_started/food_and_water#parasites)Паразитов$() со скоростью примерно 1% каждые 10 секунд на базовом уровне.$()"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "cure_toxins",
+			"text": "$(bold)$(9)Детоксикация$()$(li)Пока этот эффект активен, он постепенно выводит $(l:getting_started/food_and_water#toxins)Токсины$() со скоростью примерно 1% каждые 10 секунд на базовом уровне.$()"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "cure_microplastics",
+			"text": "$(bold)$(9)Фильтрация микропластика$()$(li)Пока этот эффект активен, он постепенно выводит $(l:getting_started/food_and_water#microplastics)Микропластик$() со скоростью примерно 1% каждые 10 секунд на базовом уровне.$()"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "freezing",
+			"text": "$(bold)$(c)Замерзание$()$(li)Пока этот эффект активен, он непрерывно $(l:beneath/cooling)Охлаждает$() вас до опасно низкой минимальной температуры $(n)-20°C$(). Чтобы выжить в таких условиях, рекомендуется использовать защитное снаряжение."
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "blazing",
+			"text": "$(bold)$(c)Обжигание$()$(li)Пока этот эффект активен, он непрерывно $(l:beneath/cooling)Согревает$() вас до опасно высокой максимальной температуры $(n)60°C$(). Чтобы выжить в таких условиях, рекомендуется использовать защитное снаряжение."
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "instant_radiation",
+			"text": "$(bold)$(c)Мгновенная радиация$()$(li)Этот эффект быстро наносит вам $(l:tfg_ores/hazards#Radioactive_materials)Радиационный урон$()"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "final_moments",
+			"text": "$(bold)$(c)Последние минуты$()$(li)Этот эффект запускает таймер, отсчитывающий ваши последние несколько минут. Когда время истечёт, вы умрёте."
+		},
+		{
+			"type": "patchouli:relations",
+			"title": "Читать дальше",
+			"anchor": "relations",
+			"entries": [
+                "tfc:getting_started/food_and_water",
+                "tfc:beneath/cooling",
+                "tfc:tfg_ores/hazards"
+			]
+		}
+	]
+}

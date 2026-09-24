@@ -1,0 +1,59 @@
+{
+  "name": "空調機",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:climate_station",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)空調機$()は、$(l:firmalife/greenhouse)温室$()と$(l:firmalife/cellar)貯蔵庫$()を管理するブロックです。その対応するマルチブロックが正しく構築されている場合、側面に水が表示され、無効な場合は氷が表示されます。空調機は、マルチブロックの床に設置し壁にも接触するように設置する必要があります。壁に接触させない場合、マルチブロックの一部となるブロックを持ち、$(item)$(k:key.use)$()を使用すると認識させられます。"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "空調機の有効な状態と無効な状態。",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "firmalife:climate_station[stasis=true]"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "firmalife:climate_station[stasis=false]"
+          }
+        }
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(li)定期的に更新されるか、あるいは配置されたり壊れたりしたときに更新されます。$()$(li)空調機が更新されると、マルチブロック内のすべてのブロックに、それらが動作可能であることを伝えます。例えば、$(l:tfc:firmalife/cheese)チーズ$()の熟成が始まります。$()$(li)$(item)$(k:key.use)$()を押すと、空調機とマルチブロック内のブロックが強制的に更新されます。",
+      "title": "空調機について"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/climate_station",
+      "text": "空調機はこのように作成できます。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "温室の建設についての注意事項: 最大の温室は31x31x31であり、空調機を中心とし、各方向に15ブロック広がる形となります。温室の中心に空調機を配置することで、最大サイズを活用することができます。また、壁と複数の空調機を使用することで、温室を内部で区切り、複数に分割することでより大きくすることも可能です。"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 2
+}

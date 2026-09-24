@@ -1,0 +1,13 @@
+{
+  "name": "烤面包",
+  "category": "tfc:mechanics",
+  "icon": "tfc:textures/item/food/wheat_bread.png",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l:mechanics/crops#barley)大麦$()之类的农作物只会产出未加工的稻谷。直接收获的谷物并没有什么营养价值，但若能把它们做成$(thing)面包$()就好吃多了。面包还能做成$(l:mechanics/sandwiches)三明治$()。",
+      "title": "面包"
+    }
+  ],
+  "read_by_default": true
+}

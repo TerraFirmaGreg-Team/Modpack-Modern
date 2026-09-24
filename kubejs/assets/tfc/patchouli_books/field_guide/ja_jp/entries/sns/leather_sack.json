@@ -1,0 +1,17 @@
+{
+  "name": "皮革袋",
+  "category": "tfc:sacks_n_such",
+  "icon": "sns:leather_sack",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "sns:leather_sack",
+      "text": "$(item)皮革袋$()は$(l:sns/item_containers)アイテムコンテナ$()の一種で、少しだけ多く収納ができる容器のようなものです。基本的に$(thing)通常$()サイズまでのアイテムを収納できます。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "sns:crafting/leather_sack"
+    }
+  ],
+  "read_by_default": true
+}

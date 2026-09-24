@@ -1,0 +1,49 @@
+{
+	"name": "ラテックス処理",
+	"category": "tfc:arborfirmacraft",
+	"icon": "gtceu:sticky_resin",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "$(thing)ラテックス$()は特定の熱帯の木から採取できます。...もうご存じでした？　ラテックスは、そのままでは使い道ありませんが、加工することで非常に有用な素材にすることができます！$(br2)まだラテックスを生産する木を見つけていない場合、詳細を$(l:arborfirmacraft/tapping_index)樹液採取一覧$()の項目で確認してみてください！"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "gtceu:sticky_resin",
+			"title": "べたつくなにか",
+			"link_recipe": true,
+			"text": "$(thing)ラテックス$()の用途のひとつとして、$(item)粘性樹脂$()の生産があります。\n粘性樹脂を作るには、$(l:firmalife/oven_appliances#vat)釜$()か$(l:mechanics/pot)鍋$()にラテックスと$(thing)木の灰$()を投入し、加熱して凝固させる必要があります。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "粘り強い働き",
+			"item": "gtceu:resin_circuit_board,gtceu:resistor,gtceu:basic_tape",
+			"text": "$(thing)粘性樹脂$()は、その名の通り粘性があるため、いろんなものをくっつけるのに役立ちます。\nたとえば、木箱の中身を保持して持ち運ぶための$(item)テープ$()などが作れます。そして、なんといっても、初期の電気部品である$(item)樹脂回路基板$()や$(item)抵抗器$()の作成に必要になります。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tfg:vulcanized_latex_bucket",
+			"title": "ゴムゴムの",
+			"text": "$(thing)ラテックス$()にはもうひとつ重要な用途があります。それはゴムの製造です。\nゴムを作るには、ラテックスと$(thing)硫黄の粉$()を$(l:firmalife/oven_appliances#vat)釜$()か$(l:mechanics/pot)鍋$()に投入して加熱し、$(thing)加硫処理ラテックス$()を作る必要があります。\nこれが、工業用途向けにラテックスをより強く硬くするための「加硫処理」になります！"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "抽出",
+			"item": "gtceu:raw_rubber_dust",
+			"text": "$(thing)抽出機$()または$(thing)Vacuum Chamber$()で$(thing)加硫ラテックス$()を乾燥させることで$(item)粗ゴムパルプ$()ができます。\nこのパルプを$(thing)硫黄の粉$()と一緒に$(thing)合金精錬炉$()で処理することで、$(thing)ゴムインゴット$()ができあがります。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "gtceu:rubber_ingot",
+			"text": "$(thing)ゴムインゴット$()は非常に有用な素材です。たとえば、ベルトコンベアー用の$(thing)ゴムベルト$()をクラフトしたり、$(thing)ワイヤー$()を被覆することで$(bold)絶縁$()するためなどに使用できます。\n被覆したケーブルは、触れても感電しないため安全性が増し、電力損失も減少します。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "針葉樹液",
+			"item": "tfg:conifer_pitch_bucket",
+			"text": "粘性樹脂は、特定の$(thing)針葉樹$()から採取できる$(thing)針葉樹脂$()からも入手できます。\nただし、この樹液ではゴムの生産には利用できません。"
+		}
+	],
+	"read_by_default": true,
+	"sortnum": 3
+}

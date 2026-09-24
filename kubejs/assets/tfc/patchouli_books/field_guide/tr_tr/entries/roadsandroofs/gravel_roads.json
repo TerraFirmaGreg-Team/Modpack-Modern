@@ -1,0 +1,24 @@
+{
+  "name": "Gravel and Macadam Roads",
+  "category": "tfc:roadsandroofs",
+  "icon": "rnr:rock/gravel_road/chert",
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "anchor": "gravel_fill",
+      "recipe": "rnr:crafting/gravel_fill/chert",
+      "title": "Hoggin Mix",
+      "text": "A small amount of gravel can be applied to a base course to produce a simple path that offers a modest 10% boost to walking speed. Additional gravel fill can be added and tamped with the mattock to create a Macadam road that gives a 20% speed boost."
+    },
+    {
+      "type": "patchouli:image",
+      "title": "Macadam Construction",
+      "images": [
+        "rnr:textures/gui/book/macadam.png"
+      ],
+      "border": true
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 8
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Шкіряний мішок",
+  "category": "tfc:sacks_n_such",
+  "icon": "sns:leather_sack",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "sns:leather_sack",
+      "text": "$(item)Шкіряний мішок$() — це тип $(l:sns/item_containers)контейнера для предметів$(), який схожий на корчагу але має трохи більше місця для зберігання. За замовчуванням у них можна зберігати предмети розміром до $(thing)звичайний$() включно."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "sns:crafting/leather_sack"
+    }
+  ],
+  "read_by_default": true
+}

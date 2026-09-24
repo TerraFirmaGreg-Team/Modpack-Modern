@@ -1,0 +1,77 @@
+{
+  "name": "烤爐配件",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:vat",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l:firmalife/ovens)烤爐$()有多種設備可以與其交互，從而擴展其功能。這是因為烤爐在現實中本就是模塊化的。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/oven_hopper",
+      "text": "$(thing)烤爐漏斗$()會向其朝向的任何$(thing)烤爐底$()輸入原木。它最多可容納16根原木（4組，每組4根，類似一個原木堆），通過從頂部丟入物品來填充其物品欄，也可以通過其他模組的自動化設備輸入。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/ashtray",
+      "text": "$(thing)爐灰收集器$()放置在$(thing)烤爐底$()下方時，會收集$(thing)草木灰$()。當燃料消耗時，有50%的幾率獲得草木灰。通過$(item)$(k:key.use)$()可以取出草木灰，通過攻擊（左鍵點擊）可以放入草木灰。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "anchor": "vat",
+      "recipe": "firmalife:crafting/vat",
+      "text": "$(thing)不鏽鋼鍋$()能夠批量製作某些特定的煮沸配方。它有一個物品槽位和10,000mB的流體存儲空間，類似於一個大木桶。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "例如，不鏽鋼鍋可以用1份橄欖醬與200mB水的比例製作$(thing)橄欖油/水$()。要使用不鏽鋼鍋，手持流體與物品對其$(item)$(k:key.use)$()，將其添加到鍋中。空手並按住$(item)$(k:key.sneak)$()點擊，可以密封或解封不鏽鋼鍋。不鏽鋼鍋在被密封之前不會沸騰。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "不鏽鋼鍋應放置在$(thing)烤爐底$()上方。如果配方完成時鍋中的流體會溢出，則會停止沸騰，因此請確保不要裝得太滿——尤其是那些產出流體多於消耗的配方！不鏽鋼鍋可以用$(thing)紅石$()控制打開或關閉。"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "Y"
+          ],
+          [
+            "0"
+          ]
+        ],
+        "mapping": {
+          "X": "firmalife:vat",
+          "Y": "firmalife:cured_oven_bottom"
+        }
+      },
+      "name": "",
+      "text": "",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/jarring_station",
+      "text": "$(thing)裝罐臺$()用於將不鏽鋼鍋中的流體裝入罐子中。裝罐臺側面的注嘴必須對準裝罐臺方向放置。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "使用不鏽鋼鍋時，將甜味劑加入水中可製成糖水。隨後加入水果便能生產$(thing)果醬$()。用$(thing)帶蓋空罐$()點擊即可完成裝罐。注意：若通過管道進行多次轉移，可能導致果醬變質！"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "使用$(item)$(k:key.use)$()將帶蓋的空罐添加到裝罐臺。當檢測到果醬時，它會自動將空罐子填充為$(thing)果醬$()並密封，每罐需要消耗500mB果醬。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "群巒傳說模組的陶鍋與烤架可放置於$(thing)烤爐底$()上方，它們會自動從烤爐底獲取熱量。不過，放置在此的陶鍋僅能用於製作湯，無法執行常規的陶鍋配方。"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 15
+}

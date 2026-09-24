@@ -1,0 +1,18 @@
+{
+  "name": "矢筒",
+  "category": "tfc:sacks_n_such",
+  "icon": "sns:quiver",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "sns:quiver",
+      "text": "$(item)矢筒$()は、すべての射手の相棒です。$(item)槍$()を愛する者でも、弓を好む者でも。$(br)矢筒は弓を使う際には最初に「弾薬」として引き出され、槍の場合投げた後に即座に次の槍を補充します。"
+    },
+    {
+      "type": "tfc:knapping_recipe",
+      "recipe": "sns:leather_knapping/quiver",
+      "text": "Modpack作成者や追加の「弾薬」をサポートしたい方は、アイテムタグ$(bold)sns:allowed_in_quiver$()を参照してください。槍の補充は、TFC（またはアドオン）槍以外では機能しないことに注意してください。"
+    }
+  ],
+  "read_by_default": true
+}

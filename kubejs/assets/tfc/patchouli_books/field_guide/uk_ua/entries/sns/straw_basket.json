@@ -1,0 +1,17 @@
+{
+  "name": "Солом'яний кошик",
+  "category": "tfc:sacks_n_such",
+  "icon": "sns:straw_basket",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "sns:straw_basket",
+      "text": "$(item)Солом'яний кошик$() — це тип $(l:sns/item_containers)контейнера для предметів$(), який, по суті, є дешевшим аналогом корчаги. За замовчуванням у ньому можна зберігати предмети розміром до $(thing)малий$() включно."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "sns:crafting/straw_basket"
+    }
+  ],
+  "read_by_default": true
+}

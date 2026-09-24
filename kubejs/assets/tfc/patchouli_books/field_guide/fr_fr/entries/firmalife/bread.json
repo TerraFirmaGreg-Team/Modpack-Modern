@@ -1,0 +1,30 @@
+{
+  "name": "Pain",
+  "category": "tfc:firmalife",
+  "icon": "tfc:textures/item/food/barley_bread.png",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Pour faire du $(thing)Pain$(), vous devez d'abord faire de la $(thing)Levure$(). Pour obtenir votre première levure, scellez dans un tonneau d'$(thing)eau$() de $(l:firmalife/drying)fruit séché$(). De la $(thing)Levure mère$() se forme au bout de 3 jours.$(br)Votre levure peut alors être nourrie en scellant votre levure mère avec de la $(thing)Farine$() dans un tonneau, ce qui la fera se multiplier. 1 de farine pour 100mB de levure produit 600 mB de levure. Une bonne affaire !"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfg:shapeless/barley_dough",
+      "text": "De la levure mère, un édulcorant, et de la farine peuvent être combinées pour créer de la $(thing)Pâte$(). Celle-ci peut être cuite pour produire de $(thing)Pain$() !"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfg:crafting/barley_slice",
+      "title": "Pain tranché",
+      "text": "Une fois cuit, vous pouvez utiliser un $(thing)couteau$() pour couper le pain en $(thing)tranches$(). Elles peuvent être utilisées pour $(l:tfc:mechanics/sandwiches)faire un sandwich$(), ou dorées en $(thing)toast$(), sur lequel on peut tartiner du $(thing)beurre$() ou de la confiture."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/toast_with_butter",
+      "recipe2": "firmalife:crafting/toast_with_jam",
+      "title": "Toast"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 16
+}

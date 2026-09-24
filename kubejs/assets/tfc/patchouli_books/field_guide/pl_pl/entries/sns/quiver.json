@@ -1,0 +1,18 @@
+{
+  "name": "Kołczan",
+  "category": "tfc:sacks_n_such",
+  "icon": "sns:quiver",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "sns:quiver",
+      "text": "The $(item)Quiver$() is a type of $(l:sns/item_containers)Item Container$() every ranged warriors best friend, be it one with love for the $(item)Javalin$() or those who prefer the bow. $(br)Quivers will be drawn from first for \"ammo\", when using the bow and will replace thrown Javelins."
+    },
+    {
+      "type": "tfc:knapping_recipe",
+      "recipe": "sns:leather_knapping/quiver",
+      "text": "For modpack authors or simply people wishing to support extra \"ammo\" see the item tag $(bold)sns:allowed_in_quiver$(). Do note the Javalin refill will not work with anything but TFC (or addon) Javelins"
+    }
+  ],
+  "read_by_default": true
+}

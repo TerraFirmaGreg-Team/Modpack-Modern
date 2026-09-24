@@ -1,0 +1,17 @@
+{
+  "name": "高炉保温板",
+  "category": "tfc:mechanics",
+  "icon": "tfcbetterbf:insulation",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)高炉保温板$()是一种更紧凑的$(l:mechanics/blast_furnace)高炉$()保温方案。与传统在烟囱周围铺设铁板的方式不同，$(thing)高炉保温板$()可直接通过$(item)$(k:key.use)$()键施加于$(l:mechanics/fire_clay#fire_bricks)耐火砖$()表面。当其被破坏时，保温板与砖块会分别掉落。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfcbetterbf:crafting/insulation",
+      "text": "制作单个保温板所需的$(thing)锻铁板$()数量，与包裹单个耐火砖块的传统方案用量相同。"
+    }
+  ],
+  "read_by_default": true
+}

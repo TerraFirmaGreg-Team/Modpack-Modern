@@ -1,0 +1,137 @@
+{
+  "name": "オーブン",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:cured_oven_top",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)オーブン$()は、食品の保存期間を延ばしながら大量に調理するのに最適な方法です。オーブンで焼いた食品の腐敗速度は、通常の食品の90%になります。オーブンは、$(thing)オーブンかまど$()、$(thing)オーブン$()本体、およびオプションで $(thing)煙突$() から構成されるマルチブロック構造です。これらのブロックは当初粘土の状態ですが、温度を一定値以上に上げ、十分な時間加熱することで $(thing)硬化$() させる必要があります。$(br)$(l:firmalife/oven_appliances)オーブン機器$() は、オーブンの機能を拡張します。"
+    },
+    {
+      "type": "tfc:knapping_recipe",
+      "recipe": "firmalife:clay_knapping/oven_top",
+      "text": "オーブン本体のレシピ。"
+    },
+    {
+      "type": "tfc:knapping_recipe",
+      "recipe": "firmalife:clay_knapping/oven_bottom",
+      "text": "オーブンかまどのレシピ。"
+    },
+    {
+      "type": "tfc:knapping_recipe",
+      "recipe": "firmalife:clay_knapping/oven_chimney",
+      "text": "オーブンの煙突のレシピ。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/bricks",
+      "text": "オーブンは、$(thing)レンガ$()や他のオーブンブロック、あるいは炉で使える断熱効果のあるものなら何でも使って断熱できます。つまり、必要に応じて石ブロックを使ってもいいんです！"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfchotornot:crafting/tongs/wood",
+      "text": "$(thing)トング$() を使えば、オーブンから熱い食材を安全に取り出すことができます。トングを手で持って $(item)$(k:key.use)$() を押すだけで、食材を取り出すことができます。トングを使わないと火傷をする恐れがあります！"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "オーブンは、まずオーブンかまどの上にオーブン本体を載せて構成します。各オーブンパーツの前面を除くすべての側面は、2ページ前に説明したように、オーブン用断熱ブロックで覆う必要があります。断熱材として$(thing)オーブンの煙突$()を使用することも可能です。オーブンの真後ろに煙突を積み重ねて設置すると、オーブンからの煙が上方に流れ、外へ排出されます。これをしないと、家の中がすぐに煙で充満してしまい、作業の邪魔になります！"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "オーブン構造の例、未硬化と硬化済み",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "     ",
+              "  C  "
+            ],
+            [
+              "     ",
+              "  C  "
+            ],
+            [
+              "WT0TW",
+              "WWCWW"
+            ],
+            [
+              "WBBBW",
+              "WWCWW"
+            ]
+          ],
+          "mapping": {
+            "0": "firmalife:cured_oven_top[facing=north]",
+            "T": "firmalife:cured_oven_top[facing=north]",
+            "B": "firmalife:cured_oven_bottom[facing=north]",
+            "W": "minecraft:bricks",
+            "C": "firmalife:cured_oven_chimney"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "     ",
+              "  C  "
+            ],
+            [
+              "     ",
+              "  C  "
+            ],
+            [
+              "WT0TW",
+              "WWCWW"
+            ],
+            [
+              "WBBBW",
+              "WWCWW"
+            ]
+          ],
+          "mapping": {
+            "0": "firmalife:oven_top[facing=north]",
+            "T": "firmalife:oven_top[facing=north]",
+            "B": "firmalife:oven_bottom[facing=north]",
+            "W": "minecraft:bricks",
+            "C": "firmalife:oven_chimney"
+          }
+        }
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "text": "オーブンかまどは燃料を入れることができますが、使用できるのは原木のみです。$(item)$(k:key.use)$() で原木を追加または取り出すことができます。また、オーブンかまどは、$(thing)火起こし器$() やその他の道具を使って火をつけることができる部分でもあります。ここで発生した熱は、オーブン本体へと伝わります。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "オーブン本体には、調理するアイテムを入れます。オーブン本体はオーブンかまどから熱を取り込み、時間をかけてゆっくりと放出します。つまり、燃料が尽きてしまっても、オーブン本体はしばらくの間動作し続けることができます。アイテムを追加するには、$(item)$(k:key.use)$() を押すだけです。その後、アイテムを取り出す際には、$(thing)トングなど$() を使用することを忘れないでください。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "オーブンブロックの硬化は簡単ですが、根気が必要です。普段通りオーブンかまどを稼働させ、あとは待つだけです。オーブンブロックが約80秒間600度以上を維持すれば、そのブロック自体と周囲のオーブンブロックが自動的に硬化します。この硬化効果は、近くの煙突を伝って上まで広がっていきます。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/oven_insulation",
+      "text": "オーブンかまど用の断熱材を作成すると、側面や背面の断熱処理が不要になります。ただし煙突の設置は必要です。$(item)$(k:key.use)$() で適用してください。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/brick_countertop",
+      "text": "カウンターは、オーブンの断熱材としても機能する装飾用ブロックで、オーブンブロックと調和する外観を備えています。キッチンのインテリアとして、見た目にも優れた選択肢です。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "オーブンには、外観を変更するために使用できる $(thing)仕上げ材$() もあります。これらの仕上げは、オーブンの基本的なレンガのステージ（またはレンガブロック自体）に適用されるもので、見た目を変えるためのものです。仕上げは自由に組み合わせて使用できます。適用するには、$(item)$(k:key.use)$() です。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/rustic_finish",
+      "recipe2": "firmalife:crafting/stone_finish"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/tile_finish"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 14
+}

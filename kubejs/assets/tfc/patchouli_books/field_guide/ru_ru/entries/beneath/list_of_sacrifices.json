@@ -1,0 +1,16 @@
+{
+  "name": "List of Sacrifices",
+  "category": "tfc:beneath",
+  "icon": "tfc:gem/diamond",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "This entry details the possible costs and rewards for the different $(l:beneath/ancient_altar)Sacrifices$() one can make in Beneath."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(li)Raw Slime$() -> Rich Garnierite$()$(li)Cursed Hide -> Large Raw Hide$()$(li)Cobblestone -> Blackstone$()"
+    }
+  ],
+  "read_by_default": true
+}

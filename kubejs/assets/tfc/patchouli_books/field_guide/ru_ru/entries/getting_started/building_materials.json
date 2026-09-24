@@ -1,0 +1,165 @@
+{
+    "name": "Строительные материалы",
+    "category": "tfc:getting_started",
+    "icon": "tfc:wattle/unstained",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "На ранних стадиях игры строительство может стать проблемой, так как для добычи многих прочных строительных блоков требуются металлические инструменты. Однако есть несколько строительных блоков, которые можно получить с помощью одних лишь каменных инструментов.$(br2)Ещё больше $(l:mechanics/advanced_building_materials)строительных блоков$() станет доступно с металлическими инструментами."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)  1. $(l:getting_started/building_materials#thatch)Сноп соломы$()$(br)  2. $(l:getting_started/building_materials#mud_bricks)Саманные кирпичи$()$(br)  3. $(l:getting_started/building_materials#wattle_and_daub)Дом из грязи и палок$()$(br)  4. $(l:getting_started/building_materials#clay_and_peat)Глиняные блоки и Торф$()$(br)",
+            "title": "Содержит"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "thatch",
+            "text": "Имея всего лишь $(l:getting_started/introduction#knife)Каменный нож$(), вы можете добыть $(thing)Солому$(), ломая растительность. Её можно использовать для создания очень простого строительного материала: $(thing)Снопа соломы$(). Сноп соломы это лёгкий блок, на который не действует гравитация, однако игроки и другие существа могут проходить сквозь него насквозь! При необходимости его также можно переработать обратно в $(thing)Солому$().",
+            "title": "Сноп соломы"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "tfc:crafting/thatch",
+            "recipe2": "tfc:crafting/straw"
+        },
+        {
+            "type": "patchouli:crafting",
+            "anchor": "mud_bricks",
+            "recipe": "tfc:crafting/soil/loam_drying_bricks",
+            "title": "Саманные кирпичи",
+            "text": "$(thing)Грязь$() можно найти на земле, под реками и озёрами или отдельными участками в низинных болотистых биомах. Добавив немного $(thing)Соломы$(), из неё можно сделать $()Влажные саманные кирпичи$()."
+        },
+        {
+            "type": "tfc:multimultiblock",
+            "text": "Их можно разместить на земле в сухом месте, и через день они затвердеют в $(thing)Саманные кирпичи$().",
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:drying_bricks/loam[count=4,dried=false]",
+                        "Y": "tfc:grass/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:drying_bricks/loam[count=4,dried=true]",
+                        "Y": "tfc:grass/loam"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "tfc:crafting/soil/loam_mud_bricks",
+            "title": " ",
+            "text": "Затем из этих высушенных грязевых кирпичей можно сделать $(thing)Блоки грязевых кирпичей$(). Из них также можно сделать $(thing)Ступени$(), $(thing)Плиты$() или $(thing)Ограды$(), при желании."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "#tfc:mud_bricks"
+                }
+            },
+            "name": "",
+            "text": "Все разновидности грязевых кирпичей.",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "wattle_and_daub",
+            "text": "$(thing)Обрешётка$() и $(thing)Глиняно-соломенная смесь$() это универсальный строительный декоративный блок.$(br2)$(thing)Обрешётку$() можно скрафтить и разместить, однако она хрупка и позволяет игрокам и мобам проходить сквозь неё. Её можно укрепить с помощью $(thing)Глиняно-соломенной смеси$(), чтобы сделать твёрдой.",
+            "title": "Дом из грязи и палок"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "tfc:crafting/wattle",
+            "text": "Чтобы сделать $(thing)Обрешётку$() твёрдой, её сначала нужно заплести, для чего требуется добавить палки к структуре."
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "tfc:crafting/daub",
+            "recipe2": "tfc:crafting/daub_from_mud",
+            "text": ""
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/wattle_weave.png"
+            ],
+            "text": "Требуется четыре палки, чтобы $(thing)заплести$() обрешётку.",
+            "border": true
+        },
+        {
+            "type": "patchouli:text",
+            "text": "В любое время палки можно добавить по каждой диагонали, а также сверху и снизу. Возьмите в руку одну $(thing)Палку$() и нажмите $(item)$(k:key.use)$(), чтобы добавить её. Изменяйте часть обрешётки, к которой добавляете палку, выбирая соответствующую часть грани блока."
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/wattle_add_stick.png"
+            ],
+            "text": "Добавление палок к обрешётке.",
+            "border": true
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/wattle_add_daub.png"
+            ],
+            "text": "Использование $(thing)Глиняно-соломенной смеси на $(thing)Заплетённой обрешётке$() создаёт твёрдый блок.",
+            "border": true
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/wattle_stained.png"
+            ],
+            "text": "Затем его можно $(thing)окрасить$(), используя на нём $(l:mechanics/dye)Краситель$().",
+            "border": true
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "clay_and_peat",
+            "text": "Комки глины, добытые из земли, можно объединить в глиняные блоки. При размещении и повторном выкапывании они снова превратятся в комки глины. Хотя они и выглядят невзрачно, их легко получить.$(br2)Торф генерируется в мире участками вдоль водоёмов, и его можно добывать каменными инструментами. На нём могут расти некоторые растения.$(br2)Однако торф весьма горюч.",
+            "title": "Глиняные блоки и Торф"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "tfg:shaped/clay_balls_to_block",
+            "title": "Глиняные блоки"
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 7
+}

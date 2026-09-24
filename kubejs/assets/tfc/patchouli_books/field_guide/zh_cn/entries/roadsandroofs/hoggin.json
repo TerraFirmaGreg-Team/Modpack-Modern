@@ -1,0 +1,20 @@
+{
+  "name": "碎石小道",
+  "category": "tfc:roadsandroofs",
+  "icon": "rnr:hoggin",
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "anchor": "hoggin_mix",
+      "recipe": "rnr:crafting/hoggin_mix",
+      "title": "碎石混合物",
+      "text": "碎石料是一种由黏土、沙砾和沙子混合制成的压实型地面覆盖材料。铺设于基层上可形成简易路径，提供10%的行走速度加成。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": ""
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 4
+}

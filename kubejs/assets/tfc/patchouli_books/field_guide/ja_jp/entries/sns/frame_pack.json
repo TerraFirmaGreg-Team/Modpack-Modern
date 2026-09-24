@@ -1,0 +1,18 @@
+{
+  "name": "フレーム付きバックパック",
+  "category": "tfc:sacks_n_such",
+  "icon": "sns:frame_pack",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "sns:frame_pack",
+      "text": "$(item)フレーム付きバックパック$()は、$(l:sns/item_containers)アイテムコンテナ$()の一種で、実質的にTFCのチェストを背負っているようなものです。TFCのチェストと同様に、TFCの$(l:getting_started/size_and_weight)大きさと重さ$()に従います。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "sns:crafting/frame_pack",
+      "text": "基本的には$(thing)大きな$()サイズまでのアイテムを収納できます。"
+    }
+  ],
+  "read_by_default": true
+}

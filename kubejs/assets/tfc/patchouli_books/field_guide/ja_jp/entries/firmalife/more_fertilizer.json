@@ -1,0 +1,44 @@
+{
+  "name": "肥料オプション",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:compost_tumbler",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Firmalifeでは$(l:mechanics/fertilizers)肥料$()を必要とすることが多いため、入手するための選択肢が増えました。"
+    },
+    {
+      "type": "tfc:drying_recipe",
+      "recipe": "firmalife:drying/dry_grass",
+      "text": "藁ブロックは$(l:tfc:firmalife/drying)乾燥$()させて$(thing)枯草$()にすることができ、コンポスターで茶のアイテムとして使用できます。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)鉄のコンポスター$()は、肥料をより多く生産するための素晴らしい装置です。$(br2)作動させるには、機械的動力に接続する必要があります。$(br)動力がないときにしか操作ができないので、クラッチを接続することを検討してください！"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/compost_tumbler",
+      "text": "鉄のコンポストは、より多くの種類の堆肥を使用でき、正確な比率を必要としないという点で新しい装置です。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "鉄のコンポストは、通常のコンポスターのように緑や茶のアイテムを入れることができます。$(br2)また、陶器の破片、炭、魚、骨なども少量なら入れることが可能です。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/pottery_sherd",
+      "text": "ハンマーで陶器を砕くと、破片になります。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "緑と茶のアイテムは同じようにカウントされ、1～4の範囲に入りますが、魚のような新しい追加物は常に1とカウントされます。$(br2)コンポスターに奇妙なものを入れすぎると、腐った堆肥が生成されます。$(br)さらに、それが腐っていることは最後までわかりません！$(br)堆肥の15%以上が骨、魚、陶器、または20%以上が木炭の場合、腐ります。また、緑のアイテムが茶のアイテムより10以上多い場合も腐ります。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "堆肥が完成するまでの時間は、特定の添加物の量を調節することで長くなったり短くなったりします。$(br2)コンポスターに32個入っていれば、3個の堆肥ができます。$(br)少なくとも24個あれば、2個の堆肥ができます。16個なら、1個の堆肥ができます。$(br)それ以下だと堆肥はできません。"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 17
+}

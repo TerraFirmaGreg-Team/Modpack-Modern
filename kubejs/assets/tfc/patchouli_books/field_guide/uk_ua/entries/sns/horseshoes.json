@@ -1,0 +1,30 @@
+{
+  "name": "Підкови",
+  "category": "tfc:sacks_n_such",
+  "icon": "sns:metal/horseshoe/steel",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(item)Підкови$() виковуються окремо, а потім об'єднуються разом у сітці створення. Що, ти не знав, що у коней 4 ноги? $(br)$(br)До речі, це справді чудова ідея — прив'язати свого коня, якщо на ньому підкови вищого рівня, адже звичайна яма для утримування коня тут не спрацює!"
+    },
+    {
+      "type": "tfc:sns/better_anvil_recipe",
+      "recipe": "sns:anvil/metal/horseshoe/steel",
+      "recipe2": "sns:anvil/metal/horseshoe/black_steel",
+      "recipe3": "sns:anvil/metal/horseshoe/blue_steel",
+      "recipe4": "sns:anvil/metal/horseshoe/red_steel",
+      "text4": "Кожен кінь заслуговує на підкови"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "sns:crafting/metal/horseshoes/steel",
+      "recipe2": "sns:crafting/metal/horseshoes/black_steel"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "sns:crafting/metal/horseshoes/blue_steel",
+      "recipe2": "sns:crafting/metal/horseshoes/red_steel"
+    }
+  ],
+  "read_by_default": true
+}

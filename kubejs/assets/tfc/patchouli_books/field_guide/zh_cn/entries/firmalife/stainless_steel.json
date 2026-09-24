@@ -1,0 +1,31 @@
+{
+  "name": "不锈钢",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:metal/ingot/stainless_steel",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)不锈钢$()和$(thing)铬$()是Firmalife模组添加的$(thing)钢级$()金属。它们用于建造$(l:firmalife/greenhouse)不锈钢温室$()。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "firmalife:metal/ingot/stainless_steel",
+      "title": "不锈钢",
+      "link_recipes": false,
+      "text": "$(br)$(bold)成分：$()$(br)$(li)20 - 30 % : $(thing)铬$()$(li)10 - 20 % : $(thing)镍$()$(li)60 - 80 % : $(thing)钢$()$(br2)"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "firmalife:ore/small_chromite",
+      "link_recipes": false,
+      "text": "铬铁矿是一种熔炼后可获得铬的矿石。它存在于$(thing)侵入岩$()和$(thing)变质岩$()中。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(li)花岗岩$()$(li)闪长岩$()$(li)辉长岩$()$(li)板岩$()$(li)千枚岩$()$(li)片岩$()$(li)片麻岩$()$(li)大理岩$()",
+      "title": "所有可能含铬的岩石种类"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 11
+}

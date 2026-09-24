@@ -1,0 +1,39 @@
+{
+    "name": "Лиття через канали",
+    "category": "tfc:tfcchannelcasting",
+    "icon": "tfcchannelcasting:channel",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Ти можеш розливати метал із $(thing)тигля$() у кілька форм одночасно за допомогою $(thing)каналів$() і $(thing)ливарних столів$(). Просто з'єднай $(thing)ливарні столи$() з $(thing)тиглем$() за допомогою $(thing)каналів$() і натисни правою кнопкою миші на $(thing)канал$() поруч із $(thing)тиглем$(). Натисни Shift + права кнопка миші на $(thing)ливарний стіл$() із $(l:getting_started/pottery#mold)формою$() в руці, щоб установити або забрати її."
+        },
+        {
+            "type": "tfc:knapping_recipe",
+            "recipe": "tfcchannelcasting:fire_clay_knapping/unfired_channel_4",
+            "text": "Виліпи кілька $(thing)невипалених каналів$()."
+        },
+        {
+            "type": "tfc:knapping_recipe",
+            "recipe": "tfcchannelcasting:fire_clay_knapping/unfired_mold_table",
+            "text": "Виліпи $(thing)невипалений ливарний стіл$()."
+        },
+        {
+            "type": "tfc:heat_recipe",
+            "recipe": "tfcchannelcasting:heating/channel",
+            "text": "Після того як канали та ливарний стіл будуть виліплені, їх потрібно буде $(thing)випалити$(), як і будь-який інший керамічний виріб."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock_id": "tfcchannelcasting:example",
+            "name": "Конструкція для лиття",
+            "text": "",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)Використання міха на $(thing)ливарному столі$() пришвидшить охолодження металу.$()$(li)Активація $(thing)каналу$() сигналом редстоуну почне розлив металу.$()$(li)$(thing)Ливарний стіл$() видає сигнал компаратора.",
+            "title": "Автоматизація"
+        }
+    ],
+    "read_by_default": true
+}

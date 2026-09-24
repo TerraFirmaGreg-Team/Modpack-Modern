@@ -1,0 +1,13 @@
+{
+  "name": "§l빵",
+  "category": "tfc:mechanics",
+  "icon": "tfc:textures/item/food/wheat_bread.png",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "빵은 $(l:mechanics/crops#barley)보리$() 등의 여러 곡물을 가공한 음식입니다. 곡식 작물을 부수면 날것의 곡물 아이템이 나오는데, 이 자체로는 쓸모가 없습니다. 곡물로는 $(thing)빵$()을 만들어서, 먹거나 $(l:mechanics/sandwiches)샌드위치$()를 만들 수 있습니다.",
+      "title": "Bread"
+    }
+  ],
+  "read_by_default": true
+}

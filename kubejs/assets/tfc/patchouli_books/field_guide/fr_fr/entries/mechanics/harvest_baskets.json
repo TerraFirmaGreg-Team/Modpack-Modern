@@ -1,0 +1,26 @@
+{
+	"name": "Paniers de cueillette",
+	"icon": "tfg:harvest_basket",
+	"category": "tfc:mechanics",
+	"read_by_default": true,
+	"pages": [
+		{
+			"type": "patchouli:spotlight",
+			"title": "Paniers de cueillette",
+			"item": {
+				"tag": "tfg:harvester"
+			},
+			"text": "Parfait pour les gens de petite taille, le $(thing)Panier de cueillette$() est l'outil idéal pour cueillir les fruits des arbres et buissons.$(br)Pour utiliser un panier de cueillette, cliquez droit sur un arbre ou buisson fruitier et tous les blocs dans un $(thing)rayon de 7 blocs$() seront cueillis."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Un panier de récolte normal possède $(thing)128$() de durabilité, tandis qu'un en aluminium ne casse pas. Les paniers de récolte sont utilisables par certaines machines comme le $(thing)Déployeur de Create$() pour automatiser la récolte. Les paniers utiliseront de la durabilité."
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": "Panier de cueillette",
+			"recipe": "tfg:shaped/harvest_basket_from_papyrus",
+			"text": "Un $(item)Panier de cueillette$() de base peut être fait à partir de papyrus trempé ou de bois dur."
+		}
+	]
+}

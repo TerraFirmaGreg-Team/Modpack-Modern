@@ -1,0 +1,21 @@
+{
+	"name": "潤いを保つ",
+	"category": "tfc:beneath",
+	"icon": "beneath:juicer",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "ネザーとは異なり、深界にいるときは水が即座に蒸発することはありません。ただし、$(thing)ジューサー$()をクラフトするという選択肢もあります。"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "beneath:crafting/juicer",
+			"text": "ジューサーは、$(thing)キノコ$()や$(thing)果物$()から水を圧搾できる飲み物用容器です。1スロットのユーザーインターフェースで、挿入されたキノコを自動的に水に変換します。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "キノコは深界の至る所に生えています。新鮮な果実（$(thing)グロウベリー$()など）も、絞って飲み水にできます。$(br2)また、深界の上層部や中層部では、水や$(thing)温泉$()も見つけることができます。"
+		}
+	],
+	"read_by_default": true
+}

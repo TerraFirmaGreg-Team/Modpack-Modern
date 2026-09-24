@@ -1,0 +1,31 @@
+{
+  "name": "ワインの消費",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:textures/item/olivine_wine_bottle.png",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "目の肥えたソムリエは、異なる条件下で生産されたワインの微妙な違いを見分けることができます。Firmalifeの世界でも同様です。それは、ブドウが育った畑から始まります。ブドウの列は、周囲の環境や土壌の影響を大きく受けます。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "ブドウには、周囲の環境に基づいて「砂利栽培」、「傾斜地栽培」、「土壌栽培」という3つの地形関連の特性があります。ワインには、ボトル詰めされた地域の気候区分も記録されます。ミツバチの近くで育ったブドウには「ミツバチ受粉」という特性があります。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "ワインは瓶詰めされるとすぐに熟成が始まり、コルクを外すと熟成が止まります。$(item)$(k:key.use)$()を押してナイフを使うことで、ボトルのコルクを取り外すことができます。それ以外の場合、ワインボトルはバケツのように機能し、樽や他の装置に中身を移すことができます。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/wood/pine_keg",
+      "text": "$(thing)大樽$()は、2x2x2サイズの樽ブロックで、多くのアイテムや液体を収納できます。ワイナリーに最適です！"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/wood/hickory_wine_shelf",
+      "text": "$(thing)ワイン棚$()は、ワイナリーに最適なアクセサリーで、ワインボトルをスタイリッシュに展示・保管できます。"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 24
+}

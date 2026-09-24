@@ -1,0 +1,111 @@
+{
+	"name": "Биомы",
+	"category": "tfc:beneath",
+	"icon": "minecraft:spyglass",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "В Бездне есть полный набор новых биомов для исследования! Бездну можно поделить на три вертикальных уровня, каждый из которых имеют свои биомы. Каждый из них лишь горячее и опаснее, пока вы спускаетесь!"
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Соляные пещеры",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/salt_caves.png"
+			],
+			"border": true,
+			"text": "Как тёплый океанский бриз, этот биом полон $(item)Галита$(). Отличное место для базы!"
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Знойная трясина",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/muggy_bog.png"
+			],
+			"border": true,
+			"text": "Влажная и болотная. Безопасный источник дерева, если ты умеешь уклоняться от $(thing)Крокодилов$()."
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Гниющие пещеры",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/decaying_caverns.png"
+			],
+			"border": true,
+			"text": "Природные переработчики усердно трудятся в этом влажном регионе, полном гниения."
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Паучье логово",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/webbed_lair.png"
+			],
+			"border": true,
+			"text": "Ни за что не угадаете, кто тут обитает! А, и в этом месте можно найти огромные $(thing)Травертиновые$() колонны."
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Битумные озёра",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/tar_pools.png"
+			],
+			"border": true,
+			"text": "Песочная, словно небольшая пустыня, эта область полна липких $(thing)Дёгтевых ям$(), полных нефти."
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Геотермальные источники",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/geothermal_springs.png"
+			],
+			"border": true,
+			"text": "Обойдёмся без Серных кубов, но этот горячий биом отличное место, чтобы найти $(thing)Родниковую воду$() для лечения."
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Терновая роща",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/thorny_brambles.png"
+			],
+			"border": true,
+			"text": "Труднопроходимый биом с растениями, которые влияют на тебя при наступании на них. Берегись!"
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Пышная лощина",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/lush_hollow.png"
+			],
+			"border": true,
+			"text": "Жаркое и полное зелени! Густые заросли папоротника скрывают под собой $(thing)Каолиновую глину$()."
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Пепельный лес",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/ash_forest.png"
+			],
+			"border": true,
+			"text": "То, что осталось от Пышной Лощины после частых пожаров, вызванных жарой и магмой."
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Магмовые пустоши",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/lava_floes.png"
+			],
+			"border": true,
+			"text": "Богатая рудами область $(thing)пироксенита$(), пересеченная реками лавы и покрытая пластами магмы."
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Базальтовые дельты",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/basalt_deltas.png"
+			],
+			"border": true,
+			"text": "Любимый всеми адский биом возвращается и по-прежнему так же опасен для исследования."
+		}
+	],
+	"read_by_default": true
+}

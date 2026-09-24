@@ -1,0 +1,26 @@
+{
+	"name": "Cestas de cosecha",
+	"icon": "tfg:harvest_basket",
+	"category": "tfc:mechanics",
+	"read_by_default": true,
+	"pages": [
+		{
+			"type": "patchouli:spotlight",
+			"title": "Cestas de cosecha",
+			"item": {
+				"tag": "tfg:harvester"
+			},
+			"text": "Hecho para aquellos de corta estatura-- $(thing) Las cestas de cosecha$() son la herramienta que necesitas para dejar todos los árboles y arbustos vacíos.$(br) Para usarla; haz click derecho en un árbol o arbusto y todos los bloques en un radio de$(thing)7 de distancia$() se recogeran"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Una cesta de cosecha normal tiene una durabilidad de $(thing)128$(), mientras que la cesta de cosecha de aluminio no sufre ningún daño durante su uso. Las cestas de cosecha también pueden ser utilizadas por cosas como el $(thing)Colocador de create para automatizar la recogida. Las cestas gastarán durabilidad en el proceso (si tienen)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": "Cesta de cosecha",
+			"recipe": "tfg:shaped/harvest_basket_from_papyrus",
+			"text": "A basic $(item)Harvest Basket$() can be made of soaked papyrus or hardwood."
+		}
+	]
+}

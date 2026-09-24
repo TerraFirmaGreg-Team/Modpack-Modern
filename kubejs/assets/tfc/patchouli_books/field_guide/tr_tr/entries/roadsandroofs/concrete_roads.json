@@ -1,0 +1,71 @@
+{
+  "name": "Beton Yollar",
+  "category": "tfc:roadsandroofs",
+  "icon": "rnr:concrete_road_panel",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Beton yollar, düzgün şekilde yapıldığında %30 hareket hızı bonusu sağlar. Ancak yol yapımcıları, beton yolları oluştururken dikkatli olmalıdır. Betonun çatlamasını veya ıslakken üzerine basılmasını önlemek gerekir; aksi hâlde hız bonusu ortadan kalkar."
+    },
+    {
+      "type": "patchouli:image",
+      "title": "Beton Yol",
+      "images": [
+        "rnr:textures/gui/book/concrete_road.png"
+      ],
+      "border": true
+    },
+    {
+      "type": "patchouli:spotlight",
+      "anchor": "liquid_concrete",
+      "title": "Beton Yapımı",
+      "text": "Beton yol yapımının ilk adımı sıvı betonun karıştırılmasıdır. Bir $(thing)Mikser$() kullanarak suyu; herhangi iki taş tozu, kalsit veya mermer tozundan biri ve alçıtaşı tozuyla ya da herhangi üç taş tozu ve kil tozuyla birleştirerek $(thing)Sıvı Beton$() elde edin.",
+      "item": "gtceu:concrete_bucket"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "anchor": "wet_concrete",
+      "title": "Beton Yapımı",
+      "text": "Ardından sıvı betonu, $(thing)Programlanmış Devre #7$() ayarına getirilmiş bir $(thing)Mikser$() içine ekleyin ve daha fazla su ekleyerek $(thing)Islak Beton Karışımı$() hâline getirin.",
+      "item": "rnr:bucket/concrete"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)Islak Beton$() karıştırıldıktan sonra bir kovayla alınabilir ve $(thing)Temel tabaka Bloğu$() üzerine yerleştirilebilir; burada bitişik bloklara doğru yayılacaktır. Beton bir gün sonra sertleşir ve sertleşene kadar ıslak betonun üzerinden geçilmemesine dikkat edilmelidir; aksi hâlde hız bonusu sağlamayan düzensiz bir yüzey oluşur. Ayak izleri bir $(thing)Mattock$() ile düzeltilebilir."
+    },
+    {
+      "type": "patchouli:image",
+      "title": "Beton yol döşeme",
+      "images": [
+        "rnr:textures/gui/book/wet_concrete.png"
+      ],
+      "border": true
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Beton sertleşirken büzülme çatlakları da oluşabilir. Beton dört bloktan daha geniş alanlara dökülürse, en yakın $(thing)Kenar$(), $(thing)Kontrol Derzi$() veya $(thing)Dokulu Kaplama$() noktasından iki bloktan daha uzakta bulunan bloklar sertleşirken çatlayacaktır. Bu durum, betonu daha küçük alanlara dökerek, $(thing)Kazma-Çapa$() kullanarak $(thing)Kontrol Derzleri$() oluşturarak veya $(thing)Dokulu Kaplama$() uygulayarak önlenebilir."
+    },
+    {
+      "type": "patchouli:image",
+      "title": "Kontrol Derzleri",
+      "images": [
+        "rnr:textures/gui/book/control_joints.png"
+      ],
+      "border": true
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)Dokulu Yüzeyler$(), kuruyan betonun üzerine $(thing)Tuğla$(), $(thing)Kesme Taşı$() veya $(thing)Düzgün Taş Blokları$() bastırılarak mimari bir yüzey görünümü oluşturulur. Bu bloklar ayrıca çatlamayı önlemek için $(thing)Kontrol Derzleri$() görevi görür. Beton tamamen kuruduktan sonra $(thing)Keski$() kullanılarak döşemeler ve merdivenler oluşturulabilir."
+    },
+    {
+      "type": "patchouli:image",
+      "title": "Parke Taş Görünümlü Yol",
+      "images": [
+        "rnr:textures/gui/book/faux_sett.png"
+      ],
+      "border": true
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 20
+}

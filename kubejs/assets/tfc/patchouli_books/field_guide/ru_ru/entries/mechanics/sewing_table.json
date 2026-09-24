@@ -1,0 +1,51 @@
+{
+  "name": "Швейный стол",
+  "category": "tfc:mechanics",
+  "icon": "tfc:wood/sewing_table/oak",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)Швейный стол$() используется для создания узоров для баннеров и шаблонов для кузнечного дела. Он требует $(l:mechanics/weaving#wool_cloth)шерстяную ткань$(), $(l:mechanics/weaving#burlap_cloth)джутовую ткань$(), нить или пряжу, а также иглу."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/bone_needle",
+      "text": "Иглу для шитья можно сделать из кости."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/wood/oak_sewing_table",
+      "text": "Швейный стол можно сделать из дерева, кожи и ножниц."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "The sewing table's inventory is similar to that of a crafting table. If you ever make a mistake, you can simply exit the inventory, and your items will be returned to you. There is a recipe book available in the GUI. Selecting the book opens a menu where you can select a recipe. This places small indicators of what steps to perform on the working surface."
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "tfc:textures/gui/book/gui/sewing_table.png"
+      ],
+      "text": "Экран шитья.",
+      "border": true
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Ячейки слева предназначены для нити и иглы. Две нижние ячейки могут содержать любую комбинацию джутовой и шерстяной ткани. Ячейка справа покажет результат, когда он будет готов. Взятие результата из ячейки результата завершает создание и использует предметы."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Each cloth item allows placing 8 squares of that material on the sewing surface. Similarly, each yarn item allows placing 16 stitches. When you have selected a recipe, just use the buttons on the top right of the screen to place squares and stitch them together as shown by the guide. Want to remove stitches? Use the red 'X' button to get rid of squares."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/vanilla/loom",
+      "text": "Ткацкий станок для создания вещей с узорами на баннерах можно создать для работы с узорами на баннерах."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Для информации о использовании шаблонов для кузнечного дела, смотрите главу $(l:mechanics/armor_trims)отделка брони$()."
+    }
+  ],
+  "read_by_default": true
+}

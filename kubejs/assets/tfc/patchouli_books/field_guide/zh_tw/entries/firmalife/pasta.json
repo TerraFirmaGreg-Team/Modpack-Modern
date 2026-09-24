@@ -1,0 +1,27 @@
+{
+  "name": "意大利麵",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:textures/item/food/cooked_pasta.png",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)麵條$()有兩種：雞蛋麵和米線。將米粉、玉米粉、鹽和1000 mB牛奶在$(l:firmalife/mixing_bowl)攪拌碗$()中混合，可以製成$(thing)米線$()。而將麵粉、一個雞蛋、鹽和1000 mB牛奶混合，則可以製成$(thing)雞蛋麵$()。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/lasagna",
+      "text": "$(thing)千層麵$()可以直接用雞蛋麵製作，配料需要$(l:firmalife/pizza#tomato_sauce)番茄醬$()、熟肉和牛至，然後放入$(l:firmalife/ovens)烤爐$()中烘烤。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "製作完成的意大利麵需要在水中煮熟。無論是哪種麵條，都必須用$(thing)碗$()點擊鍋才能取出。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/tomato_pasta",
+      "text": "將煮熟的雞蛋麵（意麵）與番茄醬一起合成，就能做出美味的番茄醬意麵了！"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 27
+}

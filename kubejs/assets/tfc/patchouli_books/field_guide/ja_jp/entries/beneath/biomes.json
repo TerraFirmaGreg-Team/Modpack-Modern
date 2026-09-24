@@ -1,0 +1,111 @@
+{
+	"name": "バイオーム",
+	"category": "tfc:beneath",
+	"icon": "minecraft:spyglass",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "深界には、探検しがいのある新しいバイオームがたくさんあります！ 深界は3層に分かれており、それぞれに独自のバイオームがあります。 下に行けば行くほど、より暑く、より危険になっていきます！"
+		},
+		{
+			"type": "patchouli:image",
+			"title": "塩の洞窟",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/salt_caves.png"
+			],
+			"border": true,
+			"text": "暖かい海風のように、このバイオームは $(item)岩塩$()でいっぱいです。"
+		},
+		{
+			"type": "patchouli:image",
+			"title": "泥だらけの沼地",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/muggy_bog.png"
+			],
+			"border": true,
+			"text": "湿気の多い湿地帯。 $(thing)ワニ$()を避けることができれば、安全な木材の供給源となります。"
+		},
+		{
+			"type": "patchouli:image",
+			"title": "腐食洞窟",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/decaying_caverns.png"
+			],
+			"border": true,
+			"text": "自然の分解者たちは、腐敗に満ちたこの湿った地域で一生懸命に働いています。"
+		},
+		{
+			"type": "patchouli:image",
+			"title": "クモの巣窟",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/webbed_lair.png"
+			],
+			"border": true,
+			"text": "ここに住んでいるのが何か、当てても賞品は出ませんよ！また、巨大な $(thing)鍾乳石$() の柱も特徴です。"
+		},
+		{
+			"type": "patchouli:image",
+			"title": "タールピット",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/tar_pools.png"
+			],
+			"border": true,
+			"text": "小さな砂漠みたいに砂まみれのこのエリアには、ねばつく石油でいっぱいの $(thing)タールピット$()があります。"
+		},
+		{
+			"type": "patchouli:image",
+			"title": "熱水泉",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/geothermal_springs.png"
+			],
+			"border": true,
+			"text": "サルファーキューブは存在しませんが、この湯気まみれのバイオームは癒しのための $(thing)温泉$()を見つけるのに最適な場所です。"
+		},
+		{
+			"type": "patchouli:image",
+			"title": "茨の茂み",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/thorny_brambles.png"
+			],
+			"border": true,
+			"text": "踏むと影響を受ける植物が生えている、移動が難しいバイオームです。足元には気をつけてください！"
+		},
+		{
+			"type": "patchouli:image",
+			"title": "繁茂した空洞",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/lush_hollow.png"
+			],
+			"border": true,
+			"text": "暑くて緑あふれる場所です！生い茂ったシダが、その下にある$(thing)カオリン粘土$()を覆い隠しています。"
+		},
+		{
+			"type": "patchouli:image",
+			"title": "灰の森",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/ash_forest.png"
+			],
+			"border": true,
+			"text": "この環境では頻繁に火災が発生します。かつて繁茂していた空洞は燃え尽き、今は何が残っているのでしょうか。"
+		},
+		{
+			"type": "patchouli:image",
+			"title": "溶岩床",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/lava_floes.png"
+			],
+			"border": true,
+			"text": "鉱物資源が豊富な$(thing)輝岩$()のエリアには、溶岩流が縦横に走っています。"
+		},
+		{
+			"type": "patchouli:image",
+			"title": "玄武岩の三角州",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/basalt_deltas.png"
+			],
+			"border": true,
+			"text": "みんなが大好きなネザーバイオームが返ってきました！相変わらず、ここを渡り歩くのは危険極まりないです。"
+		}
+	],
+	"read_by_default": true
+}

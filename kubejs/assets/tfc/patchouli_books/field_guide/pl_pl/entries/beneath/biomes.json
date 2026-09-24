@@ -1,0 +1,111 @@
+{
+	"name": "Biomy",
+	"category": "tfc:beneath",
+	"icon": "minecraft:spyglass",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "The Beneath has a full set of new biomes to explore! The Beneath can be split into three vertical layers, each with their own set of biomes. Each one is more hot and dangerous as you descend!"
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Jaskinie solne",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/salt_caves.png"
+			],
+			"border": true,
+			"text": "Jak ciepła oceaniczna bryza, ten biom jest pełen $(item)halitu$(). Świetne miejsce na bazę!"
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Duszne bagno",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/muggy_bog.png"
+			],
+			"border": true,
+			"text": "Wilgotny i bagienny. Bezpieczne źródło drewna, jeśli umiesz unikać $(thing)krokodyli$()."
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Rozpadające się jaskinie",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/decaying_caverns.png"
+			],
+			"border": true,
+			"text": "W tym wilgotnym regionie pełnym zgnilizny natura ciężko pracuje nad rozkładem."
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Leże pająków",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/webbed_lair.png"
+			],
+			"border": true,
+			"text": "Brak nagród za odgadnięcie, co tu żyje! Zawiera również ogromne $(thing)trawertynowe$() filary."
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Doły ze smołą",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/tar_pools.png"
+			],
+			"border": true,
+			"text": "Piaszczysty jak mała pustynia, ten obszar zawiera lepkie $(thing)doły ze smołą$() pełne oleju."
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Źródła geotermalne",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/geothermal_springs.png"
+			],
+			"border": true,
+			"text": "Nie ma tu siarkowych kostek, ale w tym parnym biomie można znaleźć $(thing)wodę źródlaną$(), która przydaje się do leczenia."
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Cierniowy gaj",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/thorny_brambles.png"
+			],
+			"border": true,
+			"text": "Trudny do podróżowania biom z roślinami, które ranią ciebie po nadepnięciu. Uważaj!"
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Bujna jaskinia",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/lush_hollow.png"
+			],
+			"border": true,
+			"text": "Gorąco i pełno zieleni! Gęste paprocie skrywają leżącą pod nimi $(thing)glinkę porcelanową$()."
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Popiołowy las",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/ash_forest.png"
+			],
+			"border": true,
+			"text": "To, co pozostaje z bujnej jaskini po częstych pożarach wywołanych przez upał."
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Potoki lawy",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/lava_floes.png"
+			],
+			"border": true,
+			"text": "Obszar bogaty w rudę $(thing)piroksenitu$(), przecięty siecią rzek lawy."
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Bazaltowe delty",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/basalt_deltas.png"
+			],
+			"border": true,
+			"text": "Twój ulubiony netherowy biom powraca i jest tak samo niebezpieczny do przechodzenia, jak zwykle."
+		}
+	],
+	"read_by_default": true
+}

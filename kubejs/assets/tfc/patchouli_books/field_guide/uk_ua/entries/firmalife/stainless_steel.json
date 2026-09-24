@@ -1,0 +1,31 @@
+{
+  "name": "Нержавійна сталь",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:metal/ingot/stainless_steel",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)Нержавійна сталь$() та $(thing)хром$() — це метал $(thing)сталевого рівня$(), доданий FirmaLife. Вони використовуються в будівництві $(l:firmalife/greenhouse)теплиці з нержавійної сталі$()."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "firmalife:metal/ingot/stainless_steel",
+      "title": "Нержавійна сталь",
+      "link_recipes": false,
+      "text": "$(br)$(bold)Вимоги:$()$(br)$(li)20 - 30 % : $(thing)Хром$()$(li)10 - 20 % : $(thing)Нікель$()$(li)60 - 80 % : $(thing)Сталь$()$(br2)"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "firmalife:ore/small_chromite",
+      "link_recipes": false,
+      "text": "Хроміт — це руда, яка виплавляється для отримання хрому. Він зустрічається в $(thing)інтрузивній магматичній$() та $(thing)метаморфічній$() гірській породі."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(li)Граніт$()$(li)Діорит$()$(li)Габро$()$(li)Шиферний сланець$()$(li)Філіт$()$(li)Аспідний сланець$()$(li)Гнейс$()$(li)Мармур$()",
+      "title": "Уся хромовмісна гірська порода"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 11
+}
