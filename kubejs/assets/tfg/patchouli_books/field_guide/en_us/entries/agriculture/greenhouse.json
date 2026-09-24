@@ -122,8 +122,8 @@
   "read_by_default": true,
   "sortnum": 2,
   "extra_recipe_mappings": {
-        "#tfg:all_greenhouse_casings": 2,
-        "#firmalife:greenhouse": 2,
+        "tag:tfg:all_greenhouse_casings": 2,
+        "tag:firmalife:greenhouse": 2,
         "firmalife:large_planter": 9,
         "firmalife:quad_planter": 10,
         "firmalife:bonsai_planter": 11,

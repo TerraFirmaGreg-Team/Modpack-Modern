@@ -594,48 +594,6 @@
 						"Y": "tfg:cotton[age=4,part=bottom]",
 						"Z": "tfc:farmland/loam"
 					}
-				},
-				{
-					"pattern": [
-						[
-							"X"
-						],
-						[
-							"Y"
-						],
-						[
-							"Z"
-						],
-						[
-							"0"
-						]
-					],
-					"mapping": {
-						"X": "tfg:cotton[age=5,part=top]",
-						"Y": "tfg:cotton[age=5,part=bottom]",
-						"Z": "tfc:farmland/loam"
-					}
-				},
-				{
-					"pattern": [
-						[
-							"X"
-						],
-						[
-							"Y"
-						],
-						[
-							"Z"
-						],
-						[
-							"0"
-						]
-					],
-					"mapping": {
-						"X": "tfg:cotton[age=6,part=top]",
-						"Y": "tfg:cotton[age=6,part=bottom]",
-						"Z": "tfc:farmland/loam"
-					}
 				}
 			],
 			"text": "$(thing)Wild Cotton$() grows between Y=158 and Y=32."

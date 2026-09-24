@@ -304,7 +304,7 @@
     "sortnum": 20,
     "extra_recipe_mappings": {
         "tfc:thatch": 2,
-        "tfc:mud_bricks": 5,
+        "tag:tfc:mud_bricks": 5,
         "tfc:wattle": 6,
         "tfc:daub": 6,
         "tfc:alabaster_brick": 14,
