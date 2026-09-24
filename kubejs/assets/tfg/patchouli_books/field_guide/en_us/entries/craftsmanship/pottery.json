@@ -193,7 +193,7 @@
         {
             "type": "patchouli:crafting",
             "recipe": "tfc:crafting/fire_clay",
-            "text": "Fire clay is made from $(thing#deep_graphite)Graphite$() crushed in a $(l:craftsmanship/quern)Quern$(), as well as $(l:craftsmanship/pottery#kaolinite_powder)Kaolinite Powder$()."
+            "text": "Fire clay is made from $(thing)Graphite$() crushed in a $(l:craftsmanship/quern)Quern$(), as well as $(l:craftsmanship/pottery#kaolinite_powder)Kaolinite Powder$()."
         },
         {
             "type": "tfg:knapping_recipe",

@@ -53,7 +53,7 @@
             "type": "tfg:sealed_barrel_recipe",
             "anchor": "tanning",
             "recipe": "tfc:barrel/medium_leather",
-            "text": "Finally, $(thing)Prepared Hides$() must be sealed in a $(l:craftsmanship/barrels#tannin)Barrel of Tannin$(), which is an acidic chemical compound that helps to convert the hide to $(thing)Leather$(). After another eight hours, you can remove the $(thing)Leather$() from the barrel."
+            "text": "Finally, $(thing)Prepared Hides$() must be sealed in a $(l:craftsmanship/barrels#tannin)Barrel of Tannin$(), which is an acidic chemical compound―made from $(t:#tfc:makes_tannin)$(6)Tannin Rich Logs$()―that helps to convert the hide to $(thing)Leather$(). After another eight hours, you can remove the $(thing)Leather$() from the barrel."
         },
         {
             "type": "patchouli:spotlight",

@@ -43,7 +43,7 @@
             "type": "tfg:sealed_barrel_recipe",
             "anchor": "tannin",
             "recipe": "tfc:barrel/tannin",
-            "text": "$(bold)Tannin$() is an acidic fluid, made by dissolving bark from certain $(t:#tfc:makes_tannin)$(6)Logs$() in a barrel of $(thing)Water$(). $(thing)Oak$(), $(thing)Birch$(), $(thing)Chestnut$(), $(thing)Douglas Fir$(), $(thing)Hickory$(), $(thing)Maple$(), and $()Sequoia$() are all able to be used to create $(thing)Tannin$()."
+            "text": "$(bold)Tannin$() is an acidic fluid, made by dissolving bark from certain $(t:#tfc:makes_tannin)$(6)Logs$() in a barrel of $(thing)Water$(). $(thing)Oak$(), $(thing)Birch$(), $(thing)Chestnut$(), $(thing)Douglas Fir$(), $(thing)Hickory$(), $(thing)Maple$(), and $()Sequoia$() are all able to be used to create $(thing)Tannin$().$(br)$(bold)TIP$(): Search $(emi) for $(6)#makes_tannin$() for a full list of useable logs."
         },
         {
             "type": "patchouli:text",
