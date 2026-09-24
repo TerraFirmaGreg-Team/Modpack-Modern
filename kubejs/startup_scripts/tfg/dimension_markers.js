@@ -23,6 +23,7 @@ function registerTFGDimensionMarkerBlocks(event) {
 
 	// Marker Blocks
 	markerDimensions.forEach(dimension => {
+		if (dimension === 'earth') return;
 		event.create(`tfg:marker/${dimension}`)
 			.stoneSoundType()
 			.item(item => {
@@ -52,20 +53,19 @@ function registerTFGDimensionMarkers(event) {
 		event.create(`ad_astra:${dimension}_orbit`)
 			.iconSupplier(() => Item.of(`tfg:marker/${dimension}_orbit`).getItem())
 			.tier(1)
-			.overrideName(`${dimension.replace(/^./, firstLetter => firstLetter.toUpperCase())} Orbit`);
 
 		// Main Dimensions
+		if (dimension === 'earth') return;
+
 		if (dimension === 'moon') {
 			// Moon has a different override name.
 			event.create('ad_astra:moon')
 				.iconSupplier(() => Item.of('tfg:marker/moon').getItem())
 				.tier(1)
-				.overrideName('The Moon');
 		} else {
 			event.create(`ad_astra:${dimension}`)
 				.iconSupplier(() => Item.of(`tfg:marker/${dimension}`).getItem())
 				.tier(2)
-				.overrideName(dimension.replace(/^./, firstLetter => firstLetter.toUpperCase()));
 		};
 	});
 
