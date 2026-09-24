@@ -18,7 +18,7 @@
             "type": "patchouli:text",
             "anchor": "uses",
             "title": "Uses",
-            "text": "Livestock each have a maximum number of $(item)Uses$() before they $(thing)become old$(). They are born as babies, which are smaller and cannot provide things for the player. After a certain number of days, they grow into $(thing)adult$() animals, which are able to do things like breed or produce milk. After they breed or are used enough times, animals become $(thing)old$(), and are only useful for their meat."
+            "text": "Livestock each have a maximum number of $(item)Uses$()―indicated by their \"Wear & Tear\"―before they $(thing)become old$(). They are born as babies, which are smaller and cannot provide things for the player. After a certain number of days, they grow into $(thing)adult$() animals, which are able to do things like breed or produce milk. After they breed or are used enough times, animals become $(thing)old$(), and are only useful for their meat."
         },
         {
             "type": "patchouli:image",
