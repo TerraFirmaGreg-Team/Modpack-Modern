@@ -261,13 +261,13 @@
             "type": "patchouli:text",
             "anchor": "block_interactions",
             "title": "Block Interactions",
-            "text": "There are many in-world interactions that can be done to streamline building:$(li)Turn blocks mossy by $(item)$(k:key.sneak)-$(k:key.use)$() them with $(l:agriculture/composting#green_compost)Greens$().$(li)Crack stone bricks by $(item)$(k:key.sneak)-$(k:key.use)$() with a $(thing)Hammer$().$(li)Smooth stone bricks by $(item)$(k:key.sneak)-$(k:key.use)$() with $(thing)Sand Paper$().$(br)And more interactions can be viewed by browsing the block modifcations tab in $(d)E$(a)M$(b)I$()."
+            "text": "There are many in-world interactions that can be done to streamline building:$(li)Turn blocks mossy by $(item)$(k:key.sneak)-$(k:key.use)$() them with $(l:agriculture/composting#green_compost)Greens$().$(li)Crack stone bricks by $(item)$(k:key.sneak)-$(k:key.use)$() with a $(thing)Hammer$().$(li)Smooth stone bricks by $(item)$(k:key.sneak)-$(k:key.use)$() with $(thing)Sand Paper$().$(br)And more interactions can be viewed by browsing the block modifcations tab in $(emi)."
         },
         {
             "type": "patchouli:text",
             "anchor": "customizable_blocks",
             "title": "Customizable Blocks",
-            "text": "$(bold)$(#ff0fb7)TF$(#595959)G$() adds a few mods dedicated to adding customizable blocks for very intricate building.$(li)$(bold)Create: Copycats$() adds many blocks that can be $(item)$(k:key.use)$() with another block to copy its appearance. Made with a $(thing)Stonecutter$().$(li)$(bold)Framedblocks$() adds many blocks that can be $(item)$(k:key.use)$() with another block to copy its appearance. Mostly made with a $(thing)Framing Saw$().$(li)$(bold)Domum Ornamentum$() adds blocks that can copy the appearance of others. Made with an $(thing)Architect's Cutter$()."
+            "text": "$(tfg_short) adds a few mods dedicated to adding customizable blocks for very intricate building.$(li)$(bold)Create: Copycats$() adds many blocks that can be $(item)$(k:key.use)$() with another block to copy its appearance. Made with a $(thing)Stonecutter$().$(li)$(bold)Framedblocks$() adds many blocks that can be $(item)$(k:key.use)$() with another block to copy its appearance. Mostly made with a $(thing)Framing Saw$().$(li)$(bold)Domum Ornamentum$() adds blocks that can copy the appearance of others. Made with an $(thing)Architect's Cutter$()."
         },
         {
             "type": "patchouli:text",

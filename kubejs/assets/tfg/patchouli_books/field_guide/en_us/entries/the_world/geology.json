@@ -6,7 +6,7 @@
         {
             "type": "patchouli:text",
             "anchor": "intro",
-            "text": "The world of $(bold)$(#ff0fb7)TerraFirma$()$()$(bold)$(#595959)Greg$()$() is divided into large continents - landmasses many kilometers wide and seperated by oceans. In these, you may find mountain ranges, rivers, and many other formations. Here you will learn about the geology of Earth and how rock layers are determined."
+            "text": "The world of $(tfg) is divided into large continents - landmasses many kilometers wide and seperated by oceans. In these, you may find mountain ranges, rivers, and many other formations. Here you will learn about the geology of Earth and how rock layers are determined."
         },
         {
             "type": "patchouli:text",

@@ -396,7 +396,7 @@
             "type": "patchouli:text",
             "anchor": "anvil_helper",
             "title": "Anvil Helper Guide",
-            "text": "$(l:craftsmanship/anvils#working)Working$() in $(l:craftsmanship/anvils#metal_anvil)Anvils$() is a key process inside $(bold)$(#ff0fb7)TerraFirma$(#595959)Greg$(), as most of your work towards the $(thing)Steam and Mechanical ages$() will require the usage of an Anvil.$(br)This guide is broken down into two parts, $(l:craftsmanship/anvils#ui_explained)Understanding the UI$() and $(l:craftsmanship/anvils#how_to_perfectly_forge)How to Perfectly Forge$().$(br2)The Modpack has a custom $(thing)Resource Pack$() called $(l:https://www.curseforge.com/minecraft/texture-packs/tfc-anvil-helper)TFC Anvil Helper$() that you need to enable for this guide to make sense.$()"
+            "text": "$(l:craftsmanship/anvils#working)Working$() in $(l:craftsmanship/anvils#metal_anvil)Anvils$() is a key process inside $(tfg), as most of your work towards the $(thing)Steam and Mechanical ages$() will require the usage of an Anvil.$(br)This guide is broken down into two parts, $(l:craftsmanship/anvils#ui_explained)Understanding the UI$() and $(l:craftsmanship/anvils#how_to_perfectly_forge)How to Perfectly Forge$().$(br2)The Modpack has a custom $(thing)Resource Pack$() called $(l:https://www.curseforge.com/minecraft/texture-packs/tfc-anvil-helper)TFC Anvil Helper$() that you need to enable for this guide to make sense.$()"
         },
         {
             "type": "patchouli:image",
@@ -471,7 +471,7 @@
             "type": "patchouli:spotlight",
             "title": "Guide to Forging",
             "item": "gtceu:wrought_iron_pickaxe_head",
-            "text": "This part of the guide will cover how to Perfectly Forge anything, starting with a Wrought Iron Pickaxe Head.$(br2)$(bold)$(italic)DISCLAIMER:$()$(br)While the Required Steps and Orders for an Item are universal within all worlds in $(bold)$(#ff0fb7)TF$(#595959)G$(), the Target Work value differs because it's derived from your world's Seed, as such, this Guide ASSUMES the Target Work value for the Wrought Iron Pickaxe Head is $(bold)83$()"
+            "text": "This part of the guide will cover how to Perfectly Forge anything, starting with a Wrought Iron Pickaxe Head.$(br2)$(bold)$(italic)DISCLAIMER:$()$(br)While the Required Steps and Orders for an Item are universal within all worlds in $(tfg_short), the Target Work value differs because it's derived from your world's Seed, as such, this Guide ASSUMES the Target Work value for the Wrought Iron Pickaxe Head is $(bold)83$()"
         },
         {
             "type": "patchouli:empty"

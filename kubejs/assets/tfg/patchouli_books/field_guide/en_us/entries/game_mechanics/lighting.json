@@ -113,7 +113,7 @@
             "anchor": "lamps",
             "title": "Lamps",
             "item": "tag:tfc:lamps",
-            "text": "Lamps are a long term source of light that burn liquid fuels. Lamps retain their fuel content when broken. You can fuel lamps automatically with $(thing)Pipes$() or manually with $(l:cooking/drinking_containers)Fluid Containers$().$(br)You can check capable lamp fuels in $(d)E$(a)M$(b)I$() by viewing a lamp. $(thing)Lava$() will burn forever but must be in a $(item)Blue Steel Lamp$(). $(thing)Liquid Glowstone$() is the same, but works in any lamp."
+            "text": "Lamps are a long term source of light that burn liquid fuels. Lamps retain their fuel content when broken. You can fuel lamps automatically with $(thing)Pipes$() or manually with $(l:cooking/drinking_containers)Fluid Containers$().$(br)You can check capable lamp fuels in $(emi) by viewing a lamp. $(thing)Lava$() will burn forever but must be in a $(item)Blue Steel Lamp$(). $(thing)Liquid Glowstone$() is the same, but works in any lamp."
         },
         {
             "type": "patchouli:multiblock",

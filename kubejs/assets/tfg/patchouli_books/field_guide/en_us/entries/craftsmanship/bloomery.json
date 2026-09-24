@@ -200,7 +200,7 @@
 			"anchor": "steam_bloomery",
 			"title": "Steam Bloomery",
 			"item": "tfg:steam_bloomery",
-			"text": "Available with the creation of $(item)Black Steel$()―is the Steam Bloomery. This structure―added by $(bold)$(#ff0fb7)TerraFirma$(#595959)Greg$()―is capable of producing blooms automatically, on top of being faster and more efficently than the traditional bloomery by using high-pressure steam."
+			"text": "Available with the creation of $(item)Black Steel$()―is the Steam Bloomery. This structure―added by $(tfg)―is capable of producing blooms automatically, on top of being faster and more efficently than the traditional bloomery by using high-pressure steam."
 		},
         {
             "type": "patchouli:multiblock",

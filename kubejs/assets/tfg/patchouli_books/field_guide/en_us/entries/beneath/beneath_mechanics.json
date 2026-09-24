@@ -28,7 +28,7 @@
 			"type": "patchouli:text",
 			"anchor": "clothes",
 			"title": "Clothing",
-			"text": "$(item)Burlap$(), $(item)Linen$(), and $(item)Silk$() clothing will help provide a little heat resistance.$(br)$(item)Crocodile$(), $(item)Tiger$(), and $(item)Lion$() clothing provide a stronger cooling effect.$(br)Lastly, $(item)Phantom$() and $(item)Red Elk$() clothes are the strongest cooling clothes, and last a long time too.$(br2)All clothing can be repaired. Press $(thing)U$() to check the repair recipes in $(d)E$(a)M$(b)I$()."
+			"text": "$(item)Burlap$(), $(item)Linen$(), and $(item)Silk$() clothing will help provide a little heat resistance.$(br)$(item)Crocodile$(), $(item)Tiger$(), and $(item)Lion$() clothing provide a stronger cooling effect.$(br)Lastly, $(item)Phantom$() and $(item)Red Elk$() clothes are the strongest cooling clothes, and last a long time too.$(br2)All clothing can be repaired. Press $(thing)U$() to check the repair recipes in $(emi)."
 		},
 		{
 			"type": "patchouli:crafting",
@@ -102,7 +102,7 @@
 			"title": "Piglin Bartering",
 			"anchor": "piglins",
 			"item": "minecraft:gold_ingot",
-			"text": "Like you'd expect, you can trade with $(thing)Piglins$() in the same way you trade with them in vanilla, with $(item)Gold Ingots$().$(br2)A full list of trades can be found in $(d)E$(a)M$(b)I$() - simply press $(thing)U$() on a Gold Ingot to see it."
+			"text": "Like you'd expect, you can trade with $(thing)Piglins$() in the same way you trade with them in vanilla, with $(item)Gold Ingots$().$(br2)A full list of trades can be found in $(emi) - simply press $(thing)U$() on a Gold Ingot to see it."
 		},
 		{
 			"type": "patchouli:spotlight",

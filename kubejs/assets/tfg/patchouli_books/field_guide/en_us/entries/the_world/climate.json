@@ -6,7 +6,7 @@
         {
             "type": "patchouli:text",
             "anchor": "intro",
-            "text": "In $(bold)$(#ff0fb7)TerraFirma$()$()$(bold)$(#595959)Greg$()$(), the climate and the time are both very important factors in the way you experience the world. $(l:the_world/climate#seasons)Seasons$() will pass on a cycle affecting local weather and crop growth. As well as your own ambient temperature. Be careful to understand the climate and the geography of your area before deciding to settle down."
+            "text": "In $(tfg), the climate and the time are both very important factors in the way you experience the world. $(l:the_world/climate#seasons)Seasons$() will pass on a cycle affecting local weather and crop growth. As well as your own ambient temperature. Be careful to understand the climate and the geography of your area before deciding to settle down."
         },
         {
             "type": "patchouli:text",

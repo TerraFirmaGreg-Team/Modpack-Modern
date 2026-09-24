@@ -68,7 +68,7 @@
         {
             "type": "patchouli:text",
             "title": "Footnotes",
-            "text": "Because you will be measuring distance in Degrees, it might be helpful to know the block conversions. Every 90 Degrees is 20,000 blocks, and every single degree is about 222 blocks.$(br2)In $(bold)$(#ff0fb7)TerraFirma$(#595959)Greg$(), Compasses will always point North."
+            "text": "Because you will be measuring distance in Degrees, it might be helpful to know the block conversions. Every 90 Degrees is 20,000 blocks, and every single degree is about 222 blocks.$(br2)In $(tfg), Compasses will always point North."
         },
         {
             "type": "patchouli:relations",

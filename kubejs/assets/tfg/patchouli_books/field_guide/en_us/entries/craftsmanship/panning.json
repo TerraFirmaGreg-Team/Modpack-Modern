@@ -82,7 +82,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "Panning and sluicing can give a few possible products: $(thing)Ore Dusts$(), $(thing)Small Piles of Ore Dust$(), $(thing)Loose Rocks$(), and $(thing)Gems$().$(br)The probabilities for obtaining certain drops can be viewed by looking at the ore deposit in $(d)E$(a)M$(b)I$().",
+            "text": "Panning and sluicing can give a few possible products: $(thing)Ore Dusts$(), $(thing)Small Piles of Ore Dust$(), $(thing)Loose Rocks$(), and $(thing)Gems$().$(br)The probabilities for obtaining certain drops can be viewed by looking at the ore deposit in $(emi).",
             "title": "Expected Products"
         },
         {

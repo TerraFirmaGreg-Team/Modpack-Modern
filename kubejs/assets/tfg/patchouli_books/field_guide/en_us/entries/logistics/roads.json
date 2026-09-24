@@ -373,7 +373,7 @@
             "type": "patchouli:text",
             "anchor": "asphalt",
             "title": "Asphalt",
-            "text": "Asphalt roads are an advanced road type relying on oil and $(bold)$(#ff0fb7)TF$(#595959)G$() production lines.$(br)After preparing the base course, you can pour $(thing)Asphalt Mixture$() over it. It will briefly become $(thing)Hot Asphalt$() before solidifying into a durable $(item)Asphalt Road$().$(br)A properly built asphalt road gives a $(thing)$(bold)40% Movement Speed Bonus$()."
+            "text": "Asphalt roads are an advanced road type relying on oil and $(tfg_short) production lines.$(br)After preparing the base course, you can pour $(thing)Asphalt Mixture$() over it. It will briefly become $(thing)Hot Asphalt$() before solidifying into a durable $(item)Asphalt Road$().$(br)A properly built asphalt road gives a $(thing)$(bold)40% Movement Speed Bonus$()."
         },
         {
             "type": "patchouli:image",

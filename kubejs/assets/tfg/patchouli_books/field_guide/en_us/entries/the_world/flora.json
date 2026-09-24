@@ -15,7 +15,7 @@
             "item": {
                 "tag": "tfc:plants"
             },
-            "text": "Earth is an incredibly diverse planet when it comes to flora. Unlike in vanilla $(thing)Minecraft$()--Plants in $(bold)$(#ff0fb7)TerraFirma$()$()$(bold)$(#595959)Greg$()$() spawn based on local $(l:the_world/climate#climate)Climate Conditions$()."
+            "text": "Earth is an incredibly diverse planet when it comes to flora. Unlike in vanilla $(thing)Minecraft$()--Plants in $(tfg) spawn based on local $(l:the_world/climate#climate)Climate Conditions$()."
         },
         {
             "type": "patchouli:text",
@@ -373,7 +373,7 @@
                 "tag": "tfg:medicinal_ingredients/plants"
             },
             "title": "Medicinal Plants",
-            "text": "Many plants in $(bold)$(#ff0fb7)TerraFirma$()$()$(bold)$(#595959)Greg$()$() hold medicinal value and can be used for creating phytotherapeutic medicine. You can combine these ingredients in a mixing bowl with wax, binders, and spring water to make pills. Or more advanced medications."
+            "text": "Many plants in $(tfg) hold medicinal value and can be used for creating phytotherapeutic medicine. You can combine these ingredients in a mixing bowl with wax, binders, and spring water to make pills. Or more advanced medications."
         },
         {
             "title": "Spices",

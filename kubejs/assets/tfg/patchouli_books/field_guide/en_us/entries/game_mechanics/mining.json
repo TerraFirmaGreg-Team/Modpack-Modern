@@ -27,7 +27,7 @@
         {
             "type": "patchouli:text",
             "anchor": "collapses",
-            "text": "In $(bold)$(#ff0fb7)TerraFirma$(#595959)Greg$(), raw rock is unstable and susceptible to $(thing)Collapsing$(). Many rock blocks, including $(thing)Raw Rock$(), $(thing)Ores$(), and $(thing)Spikes$() can all rain down on your head under the right circumstances.$(br2)$(thing)Support Beams$() can be used to prevent collapses from occurring.$(br)When $(thing)Ore$() blocks collapse, they will degrade into cobblestone.",
+            "text": "In $(tfg), raw rock is unstable and susceptible to $(thing)Collapsing$(). Many rock blocks, including $(thing)Raw Rock$(), $(thing)Ores$(), and $(thing)Spikes$() can all rain down on your head under the right circumstances.$(br2)$(thing)Support Beams$() can be used to prevent collapses from occurring.$(br)When $(thing)Ore$() blocks collapse, they will degrade into cobblestone.",
             "title": "Collapses"
         },
         {
@@ -305,7 +305,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "In addition to basic $(thing)Wooden and stone Support Beams$() $(bold)$(#ff0fb7)TF$(#595959)G$() also adds higher tiers of support beams. Including $(thing)Concrete Support Beams$(), $(thing)Steel Support Beams$(), and $(thing)Reinforced Concrete Support Beams$(). With the highest tier of supports holding an area of $(bold)33 x 13 x 33$() blocks centered on the horizontal support beam!$(br)Support area can be viewed in the support beams tooltip.",
+            "text": "In addition to basic $(thing)Wooden and stone Support Beams$() $(tfg_short) also adds higher tiers of support beams. Including $(thing)Concrete Support Beams$(), $(thing)Steel Support Beams$(), and $(thing)Reinforced Concrete Support Beams$(). With the highest tier of supports holding an area of $(bold)33 x 13 x 33$() blocks centered on the horizontal support beam!$(br)Support area can be viewed in the support beams tooltip.",
             "title": "Higher Tiers",
             "anchor": "higher_tiers"
         },
@@ -320,7 +320,7 @@
             "title": "Explosives",
             "anchor": "explosives",
             "item": "tfc:powderkeg,minecraft:tnt,gtceu:powderbarrel,gtceu:dynamite",
-            "text": "There are multiple forms of explosives in $(bold)$(#ff0fb7)TF$(#595959)G$() for various purposes.$(li)$(bold)TNT$(): Medium sized explosive.$(li)$(bold)Dynamite$(): Throwable, low-power explosive.$(li)$(bold)Powderbarrel$(): Large explosive.$(li)$(bold)Powderkeg$(): Extremely powerful explosive at full strength. Scales with the quantity of stored gunpowder."
+            "text": "There are multiple forms of explosives in $(tfg_short) for various purposes.$(li)$(bold)TNT$(): Medium sized explosive.$(li)$(bold)Dynamite$(): Throwable, low-power explosive.$(li)$(bold)Powderbarrel$(): Large explosive.$(li)$(bold)Powderkeg$(): Extremely powerful explosive at full strength. Scales with the quantity of stored gunpowder."
         },
         {
             "type": "patchouli:spotlight",

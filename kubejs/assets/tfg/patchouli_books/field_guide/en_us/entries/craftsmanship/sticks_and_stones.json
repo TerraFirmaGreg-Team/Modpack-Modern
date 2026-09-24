@@ -5,7 +5,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "In $(bold)$(#ff0fb7)TerraFirma$()$(bold)$(#595959)Greg$(), the first things you can obtain are sticks, twigs, flint, and loose rocks. They can be found in almost every climate, lying scattered on the ground. $(item)$(k:key.use)$() or break these to pick them up."
+			"text": "In $(tfg), the first things you can obtain are sticks, twigs, flint, and loose rocks. They can be found in almost every climate, lying scattered on the ground. $(item)$(k:key.use)$() or break these to pick them up."
 		},
 		{
 			"type": "patchouli:multiblock",

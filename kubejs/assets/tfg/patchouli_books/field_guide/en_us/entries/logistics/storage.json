@@ -13,7 +13,7 @@
             "type": "patchouli:text",
             "title": "Introduction",
             "anchor": "intro",
-            "text": "There are a vast amount of items, materials, and fluids that you will accumulate in $(bold)$(#ff0fb7)TerraFirma$(#595959)Greg$(). It will be important to set up vast storage systems to organize everything. Some of the most important aspects of storage is its $(thing)capacity$() and $(thing)restrictions$(). For on-the-go inventory management you should read up on $(l:logistics/personal_storage)Personal Storage$()."
+            "text": "There are a vast amount of items, materials, and fluids that you will accumulate in $(tfg). It will be important to set up vast storage systems to organize everything. Some of the most important aspects of storage is its $(thing)capacity$() and $(thing)restrictions$(). For on-the-go inventory management you should read up on $(l:logistics/personal_storage)Personal Storage$()."
         },
         {
             "type": "patchouli:spotlight",

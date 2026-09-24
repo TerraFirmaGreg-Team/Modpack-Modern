@@ -177,7 +177,7 @@
             "type": "patchouli:text",
             "anchor": "canoe",
             "title": "Canoe",
-            "text": "The Dugout Canoe will likely be the first step on your aquatic journey! If you're in the copper age, you can build a canoe with the help of a saw.$(br)Canoes require a $(item)Canoe Paddle$() and three $(n)Softwood$() logs. Search \"$(6)#softwood$()\" in $(d)E$(a)M$(b)I$() to view all useable logs. As a tip, all coniferous trees are softwood."
+            "text": "The Dugout Canoe will likely be the first step on your aquatic journey! If you're in the copper age, you can build a canoe with the help of a saw.$(br)Canoes require a $(item)Canoe Paddle$() and three $(n)Softwood$() logs. Search \"$(6)#softwood$()\" in $(emi) to view all useable logs. As a tip, all coniferous trees are softwood."
         },
         {
             "type": "patchouli:image",
@@ -269,7 +269,7 @@
             "type": "patchouli:crafting",
             "title": "Scaffolding",
             "recipe": "firmaciv:crafting/watercraft_frame_angled",
-            "text": "To build a rowboat, you'll need to start with Shipwright's Scaffolding. You'll place them facing inward in a 2 by 3 area.$(br)Scaffolding are then filled in with $(n)hardwood$() planks. Search \"$(6)#hardwood$()\" in $(d)E$(a)M$(b)I$() to view all useable log types."
+            "text": "To build a rowboat, you'll need to start with Shipwright's Scaffolding. You'll place them facing inward in a 2 by 3 area.$(br)Scaffolding are then filled in with $(n)hardwood$() planks. Search \"$(6)#hardwood$()\" in $(emi) to view all useable log types."
         },
         {
             "type": "patchouli:multiblock",
@@ -405,7 +405,7 @@
             "type": "patchouli:crafting",
             "title": "Scaffolding",
             "recipe": "firmaciv:crafting/watercraft_frame_flat",
-            "text": "Much like a rowboat, you'll start with Shipwright's Scaffolding.$(br)Scaffolding are then filled in with $(n)hardwood$() planks. Search \"$(6)#hardwood$()\" in $(d)E$(a)M$(b)I$() to view all useable log types."
+            "text": "Much like a rowboat, you'll start with Shipwright's Scaffolding.$(br)Scaffolding are then filled in with $(n)hardwood$() planks. Search \"$(6)#hardwood$()\" in $(emi) to view all useable log types."
         },
         {
             "type": "patchouli:multiblock",

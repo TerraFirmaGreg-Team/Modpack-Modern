@@ -71,7 +71,7 @@
 			"anchor": "morered",
 			"item": "morered:red_alloy_wire,morered:bundled_network_cable",
 			"title": "More Redstone",
-			"text": "Want to do more with redstone? Check out what the $(item)More Red$() mod has to offer, such as a wire that attaches to walls and ceilings and doesn't lose signal strength.$(br2)Type $(6)@morered$() into $(d)E$(a)M$(b)I$() to see them all."
+			"text": "Want to do more with redstone? Check out what the $(item)More Red$() mod has to offer, such as a wire that attaches to walls and ceilings and doesn't lose signal strength.$(br2)Type $(6)@morered$() into $(emi) to see them all."
 		},
 		{
 			"type": "patchouli:spotlight",

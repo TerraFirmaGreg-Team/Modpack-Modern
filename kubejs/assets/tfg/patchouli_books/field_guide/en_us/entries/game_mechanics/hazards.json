@@ -47,7 +47,7 @@
 			"type": "patchouli:spotlight",
 			"title": "The Hazmat Suit",
 			"item": "gtceu:hazmat_headpiece,gtceu:hazmat_chestpiece,gtceu:hazmat_leggings,gtceu:hazmat_boots",
-			"text": "A completed $(thing)Hazmat suit $()provides $(item)immunity $()from $(item)every$() hazard, even $(item)radiation$(). It is made mostly from $(thing)Rubber$() and $(thing)Polyvinyl Chloride$().$(br2)$(bold)TIP$(): You can also look up $(6)#ppe_armor$() in $(d)E$(a)M$(b)I$() for more equipment that provides protection from hazardous materials.",
+			"text": "A completed $(thing)Hazmat suit $()provides $(item)immunity $()from $(item)every$() hazard, even $(item)radiation$(). It is made mostly from $(thing)Rubber$() and $(thing)Polyvinyl Chloride$().$(br2)$(bold)TIP$(): You can also look up $(6)#ppe_armor$() in $(emi) for more equipment that provides protection from hazardous materials.",
 			"anchor": "hazmat"
 		},
 		{

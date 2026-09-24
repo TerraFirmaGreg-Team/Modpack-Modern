@@ -453,14 +453,14 @@
             "anchor": "refrigerator",
             "title": "Refrigerators",
             "item": "tfg:mv_food_refrigerator,tfg:hv_food_refrigerator,tfg:ev_food_refrigerator,tfg:iv_food_refrigerator",
-            "text": "Refrigerators are added by $(bold)$(#ff0fb7)TF$()$()$(bold)$(#595959)G$()$() and consume $(2)EU$() to provide the $(3)$(bold)Refrigerating$() trait with a modifier of 0.125$(br)Increasing tiers of the fridge does not affect the preservation buff―Only the storage space available. Fridges can also combine food stacks by merging expiration dates."
+            "text": "Refrigerators are added by $(tfg_short) and consume $(2)EU$() to provide the $(3)$(bold)Refrigerating$() trait with a modifier of 0.125$(br)Increasing tiers of the fridge does not affect the preservation buff―Only the storage space available. Fridges can also combine food stacks by merging expiration dates."
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "freeze_dry",
             "title": "Freeze Drying",
             "item": "tfg:food/meal_bag,tfg:food/freeze_dried_fruit,tfg:food/calorie_paste",
-            "text": "$(bold)$(#ff0fb7)TF$()$()$(bold)$(#595959)G$()$() adds the ability to freeze dry select food items in $(item)Food Processors$() to greatly increase shelf life. Freeze drying gives the $(7)$(bold)Cryodessicated$() trait with a modifier of 0.02"
+            "text": "$(tfg_short) adds the ability to freeze dry select food items in $(item)Food Processors$() to greatly increase shelf life. Freeze drying gives the $(7)$(bold)Cryodessicated$() trait with a modifier of 0.02"
         },
         {
             "type": "patchouli:text",

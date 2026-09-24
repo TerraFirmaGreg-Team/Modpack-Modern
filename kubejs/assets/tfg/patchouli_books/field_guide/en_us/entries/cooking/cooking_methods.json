@@ -13,7 +13,7 @@
             "type": "patchouli:text",
             "anchor": "intro",
             "title": "Introduction",
-            "text": "Food is one of the most important elements to the mechanics of $(bold)$(#ff0fb7)TerraFirma$()$()$(bold)$(#595959)Greg$()$(). You will need to cook food to make it safe to eat and to boost its $(l:cooking/food_and_water#nutrients)Nutritional Properties$().$(br2)Some methods of cooking even offer benefits such as reduced decay times."
+            "text": "Food is one of the most important elements to the mechanics of $(tfg). You will need to cook food to make it safe to eat and to boost its $(l:cooking/food_and_water#nutrients)Nutritional Properties$().$(br2)Some methods of cooking even offer benefits such as reduced decay times."
         },
         {
             "type": "patchouli:text",
@@ -284,7 +284,7 @@
             "title": "Oven Hopper",
             "anchor": "oven_hopper",
             "item": "firmalife:oven_hopper",
-            "text": "The $(thing)Oven Hopper$() will input logs into any Bottom Oven that it is facing. It holds 16 logs (4 stacks of 4, like a log pile), and its inventory is fed by dropping items in the top. However, it is pretty useless in $(bold)$(#ff0fb7)TF$()$()$(bold)$(#595959)G$()$() since item pipes can do the same thing."
+            "text": "The $(thing)Oven Hopper$() will input logs into any Bottom Oven that it is facing. It holds 16 logs (4 stacks of 4, like a log pile), and its inventory is fed by dropping items in the top. However, it is pretty useless in $(tfg_short) since item pipes can do the same thing."
         },
         {
             "type": "patchouli:spotlight",
@@ -445,7 +445,7 @@
             "type": "patchouli:multiblock",
             "name": "Electric Oven",
             "anchor": "electric_oven",
-            "text": "The $(item)Electric Oven$() is a machine added by $(bold)$(#ff0fb7)TerraFirma$()$()$(bold)$(#595959)Greg$()$() to automatically cook food items using $(thing)EU$().",
+            "text": "The $(item)Electric Oven$() is a machine added by $(tfg) to automatically cook food items using $(thing)EU$().",
             "enable_visualize": false,
             "multiblock": {
                 "pattern": [
@@ -465,7 +465,7 @@
             "type": "patchouli:multiblock",
             "name": "Food Processor",
             "anchor": "food_processor",
-            "text": "The $(item)Food Processor$() is another machine added by $(bold)$(#ff0fb7)TF$()$()$(bold)$(#595959)G$()$() to automatically create meals or process food ingredients using $(thing)EU$().",
+            "text": "The $(item)Food Processor$() is another machine added by $(tfg_short) to automatically create meals or process food ingredients using $(thing)EU$().",
             "enable_visualize": false,
             "multiblock": {
                 "pattern": [
