@@ -23,11 +23,11 @@
       "item": {
         "tag": "firmalife:cheese_wheels"
       },
-      "text": "Cheese wheels are blocks made from $(item)Cheese Curds$(). To improve their quality and shelf life, cheese wheels should be $(thing)Aged$() in a $(l:cooking/decay#cellar)Cellar$(). In order to obtain edible cheese from a cheese wheel, it should be sliced off the wheel by clicking $(item)$(k:key.use)$() with a $(thing)Knife$(). If the block is broken, the aging is lost!$(br)$(thing)Dry Cheeses$() are made from curds and salt, while $(thing)Wet Cheeses$() are aged in sea water."
+      "text": "Cheese wheels are blocks made from $(item)Cheese Curds$(). To improve their shelf life, cheese wheels should be $(thing)Aged$() in a $(l:cooking/decay#cellar)Cellar$(). In order to obtain edible cheese from a cheese wheel, it should be sliced off the wheel by clicking $(item)$(k:key.use)$() with a $(thing)Knife$(). If the wheel is sliced or broken, the aging is lost!$(br)$(thing)Dry Cheeses$() are made from curds and salt, while $(thing)Wet Cheeses$() are aged in seawater."
     },
     {
       "type": "tfg:multimultiblock",
-      "text": "The aging stages of a wheel of Gouda: $(thing)Fresh$(), $(thing)Aged$(), and $(thing)Vintage$().",
+      "text": "The aging stages of a wheel of cheese: $(thing)Fresh$() + 28 Days → $(thing)Aged$() + 112 Days → $(thing)Vintage$().",
       "multiblocks": [
         {
           "pattern": [
@@ -76,6 +76,7 @@
         "anchor": "relations",
         "entries": [
             "tfg:cooking/food_and_water",
+            "tfg:cooking/decay",
             "tfg:the_world/wild_animals"
         ]
     }
