@@ -213,7 +213,7 @@
         {
             "type": "patchouli:text",
             "anchor": "dromedary_camel",
-            "text": "$(bold)$(l:the_world/climate#temperature)Spawn Temp$():  > -5°C$(br)$(bold)$(l:the_world/climate#rainfall)Spawn Rainfall$():  < 100mm$(br)$(bold)Spawn Area$():  Hot and Dry Climates$(br)$(bold)Category$():  $(l:agriculture/animal_husbandry#camelides)Camelide$()$(br)$(bold)Diet$():  $(l:cooking/food_and_water#grain)Grain$() and $(l:cooking/food_and_water#fruit)Fruits$()$(br)$(bold)Max Children$():  1$(br)$(bold)Gestation Time$():  19 Days$(br)$(bold)Growth Time$():  80 Days$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Max Uses$():  60",
+            "text": "$(bold)$(l:the_world/climate#temperature)Spawn Temp$():  > -5°C$(br)$(bold)$(l:the_world/climate#rainfall)Spawn Rainfall$():  < 100mm$(br)$(bold)Spawn Area$():  Hot and Dry Climates$(br)$(bold)Category$():  $(l:agriculture/animal_husbandry#camelides)Camel$()$(br)$(bold)Diet$():  $(l:cooking/food_and_water#grain)Grain$() and $(l:cooking/food_and_water#fruit)Fruits$()$(br)$(bold)Max Children$():  1$(br)$(bold)Gestation Time$():  19 Days$(br)$(bold)Growth Time$():  80 Days$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Max Uses$():  60",
             "title": "Dromedary Camel"
         },
         {
@@ -226,7 +226,7 @@
         {
             "type": "patchouli:text",
             "anchor": "bactrian_camel",
-            "text": "$(bold)$(l:the_world/climate#temperature)Spawn Temp$():  > -5°C$(br)$(bold)$(l:the_world/climate#rainfall)Spawn Rainfall$():  < 100mm$(br)$(bold)Spawn Area$():  Cold and Dry Climates$(br)$(bold)Category$():  $(l:agriculture/animal_husbandry#camelides)Camelide$() / $(l:agriculture/animal_husbandry#wooly_animals)Wooly$()$(br)$(bold)Diet$():  $(l:cooking/food_and_water#grain)Grain$() and $(l:cooking/food_and_water#fruit)Fruits$()$(br)$(bold)Max Children$():  1$(br)$(bold)Gestation Time$():  24 Days$(br)$(bold)Growth Time$():  80 Days$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Max Uses$():  80$(br)$(bold)Product$():  $(l:agriculture/weaving)Wool$()$(br)$(bold)Produce Cycle$():  7 Days",
+            "text": "$(bold)$(l:the_world/climate#temperature)Spawn Temp$():  > -5°C$(br)$(bold)$(l:the_world/climate#rainfall)Spawn Rainfall$():  < 100mm$(br)$(bold)Spawn Area$():  Cold and Dry Climates$(br)$(bold)Category$():  $(l:agriculture/animal_husbandry#camelides)Camel$() / $(l:agriculture/animal_husbandry#wooly_animals)Wooly$()$(br)$(bold)Diet$():  $(l:cooking/food_and_water#grain)Grain$() and $(l:cooking/food_and_water#fruit)Fruits$()$(br)$(bold)Max Children$():  1$(br)$(bold)Gestation Time$():  24 Days$(br)$(bold)Growth Time$():  80 Days$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Max Uses$():  80$(br)$(bold)Product$():  $(l:agriculture/weaving)Wool$()$(br)$(bold)Produce Cycle$():  7 Days",
             "title": "Bactrian Camel"
         },
         {

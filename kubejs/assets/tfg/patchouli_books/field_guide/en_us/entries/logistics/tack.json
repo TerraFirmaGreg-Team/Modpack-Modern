@@ -14,7 +14,7 @@
             "anchor": "saddle",
             "title": "Saddle",
             "item": "minecraft:saddle",
-            "text": "A $(item)Saddle$() can be equipped on any adult $(l:agriculture/animal_husbandry#equines)Equine$() or $(l:agriculture/animal_husbandry#equines)Camilide Mammal$() when their maturity is at least above 15%. Saddles are crafted from $(l:agriculture/leather_making)Leather$() and allow you to ride suitable animals to direct their movements."
+            "text": "A $(item)Saddle$() can be equipped on any adult $(l:agriculture/animal_husbandry#equines)Equine$() or $(l:agriculture/animal_husbandry#camelides)Camel$() when their maturity is at least above 15%. Saddles are crafted from $(l:agriculture/leather_making)Leather$() and allow you to ride suitable animals to direct their movements."
         },
         {
             "type": "patchouli:spotlight",
