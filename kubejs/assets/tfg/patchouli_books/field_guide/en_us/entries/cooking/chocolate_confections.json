@@ -5,7 +5,7 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "$(thing)Chocolate-making$() takes a few processing steps, for not much of a reward... It's important to remember, when playing Firmalife, that being a chocolatier is for your personal enjoyment and pleasure, rather than for trying to extract maximum value from any given input."
+      "text": "$(thing)Chocolate-making$() takes a few processing steps, and is intended to be an immersive way to experience cooking.$(br)Chocolate items contain $(l:cooking/food_and_water#grain)Grain$() and $(l:cooking/food_and_water#dairy)Dairy$() nutrients while also providing the $(l:cooking/food_and_water#sugary_transient_effect)Sugary$() effect when eaten. Making them a strong choice for meal ingredients."
     },
     {
       "type": "patchouli:text",
@@ -58,10 +58,17 @@
         "title": "Further Reading",
         "anchor": "relations",
         "entries": [
-            "tfg:cooking/alcohol"
+            "tfg:cooking/alcohol",
+            "tfg:cooking/jam",
+            "tfg:the_world/wild_fruits"
         ]
     }
   ],
     "read_by_default": true,
-    "sortnum": 11
+    "sortnum": 11,
+    "extra_recipe_mappings": {
+        "tag:firmalife:foods/chocolate": 0,
+        "tag:firmalife:chocolate_blends": 2,
+        "tag:tfcchannelcasting:foods/chocolate_sweet": 6
+    }
 }
