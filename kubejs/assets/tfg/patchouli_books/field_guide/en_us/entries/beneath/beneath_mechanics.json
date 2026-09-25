@@ -136,12 +136,8 @@
 	"extra_recipe_mappings": {
 		"beneath:hellbricks": 8,
 		"tag:tfg:rope_ladders": 12,
-		"hangglider:hang_glider": 13,
-		"grapplemod:grapplinghook": 14,
-		"species:harpoon": 15,
-		"species:coil": 16,
-		"minecraft:gold_ingot": 17,
-		"tfg:piglin_disguise": 18
+		"minecraft:gold_ingot": 13,
+		"tfg:piglin_disguise": 14
 	},
 	"read_by_default": true
 }
