@@ -46,6 +46,7 @@
 	"gui.sophisticatedcore.settings.buttons.export_template.enter_file_name": "Wprowadź nazwę pliku",
 	"gui.sophisticatedcore.settings.buttons.keep_search_phrase.off": "Zachowaj frazę wyszukiwania: WYŁ",
 	"gui.sophisticatedcore.settings.buttons.keep_search_phrase.on": "Zachowaj frazę wyszukiwania: WŁ",
+	"gui.sophisticatedcore.settings.buttons.keep_search_phrase.on.tooltip": "Interfejs plecaka/magazynu zachowuje frazę wyszukiwania, a po ponownym otwarciu uzupełnia nią pole i stosuje ją jako filtr",
 	"gui.sophisticatedcore.settings.buttons.keep_tab_open.off": "Zachowaj otwartą zakładkę: WYŁ",
 	"gui.sophisticatedcore.settings.buttons.keep_tab_open.on": "Zachowaj otwartą zakładkę: WŁ",
 	"gui.sophisticatedcore.settings.buttons.load_template": "Załaduj ustawienia ze slotu %s",

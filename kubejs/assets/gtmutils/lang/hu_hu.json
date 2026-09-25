@@ -1,7 +1,19 @@
 {
+  "item.gtceu.tool.ev_buzzsaw": "%s körfűrész (EF)",
+  "item.gtceu.tool.ev_chainsaw": "%s láncfűrész (EF)",
   "item.gtceu.tool.ev_wirecutter": "%s csípőfogó (EF)",
+  "item.gtceu.tool.ev_wrench": "%s csavarkulcs (EF)",
+  "item.gtceu.tool.hv_buzzsaw": "%s körfűrész (NAF)",
+  "item.gtceu.tool.iv_buzzsaw": "%s körfűrész (RNF)",
+  "item.gtceu.tool.mv_buzzsaw": "%s körfűrész (KÖF)",
+  "item.gtceu.tool.mv_chainsaw": "%s láncfűrész (KÖF)",
   "item.gtceu.tool.mv_wirecutter": "%s csípőfogó (KÖF)",
+  "item.gtceu.tool.mv_wrench": "%s csavarkulcs (KÖF)",
+  "item.gtceu.tool.zpm_buzzsaw": "%s körfűrész (NPM)",
+  "item.gtceu.tool.zpm_chainsaw": "%s láncfűrész (NPM)",
+  "item.gtceu.tool.zpm_drill": "%s fúrógép (NPM)",
   "item.gtceu.tool.zpm_wirecutter": "%s csípőfogó (NPM)",
+  "item.gtceu.tool.zpm_wrench": "%s csavarkulcs (NPM)",
   "tooltip.omnibreaker.tool_mode_1": "Csavarkulcs",
   "tooltip.omnibreaker.tool_mode_2": "Csavarhúzó"
 }
