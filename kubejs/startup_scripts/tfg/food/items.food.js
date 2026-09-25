@@ -58,7 +58,7 @@ function registerTFGFoodItems(event) {
 	 * Each generated food item is tagged appropriately for use in recipes and other mechanics.
 	 */
 	global.FOOD_FRUIT.forEach(fruit => {
-		
+
 		const GEN_JAM_MODELS = false;
 		// Jams
 		if (fruit.genJam && fruit.color) {
