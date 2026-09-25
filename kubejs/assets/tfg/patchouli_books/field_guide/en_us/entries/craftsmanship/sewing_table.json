@@ -5,7 +5,7 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "The $(thing)Sewing Table$() is used to produce banner patterns, smithing templates, and other cloth items. It requires $(t:#tfc:sewing_light_cloth)$(6)Light Cloth$(), $(t:#tfc:sewing_dark_cloth)$(6)Burlap Cloth$(), $(t:#forge:string)$(6)String$(), as well as a $(item)Needle$().$(br)A needle for sewing can be made from a bone. An indestructable needle can be made later on out of stainless steel."
+            "text": "The $(thing)Sewing Table$() is used to produce banner patterns, smithing templates, and other cloth items. It requires $(t:#tfc:sewing_light_cloth)$(6)Light Cloth$(), $(t:#tfc:sewing_dark_cloth)$(6)Dark Cloth$(), $(t:#forge:string)$(6)String$(), as well as a $(item)Needle$().$(br)A needle for sewing can be made from a bone. An indestructable needle can be made later on out of stainless steel."
         },
         {
             "type": "patchouli:text",
@@ -46,7 +46,7 @@
             "item": "tag:minecraft:trim_templates",
             "anchor": "armor_trim",
             "title": "Armor Trims",
-            "text": "Armor trims can be applied to any $(t:#minecraft:trimmable_armor)$(6)Trimmable Armor$() by sewing a $(item)Smithing Template$(). And combining it with a $(t:#minecraft:trim_materials)$(6)Trim Material$()―Like $(thing)Exquisite Gems$() or $(thing)Jewlery Metal$()―and combining it with the armor on a $(item)Smithing Table$()"
+            "text": "Armor trims can be applied to any $(t:#minecraft:trimmable_armor)$(6)Trimmable Armor$() by sewing a $(item)Smithing Template$(). Combine it with a $(t:#minecraft:trim_materials)$(6)Trim Material$() (like $(thing)Exquisite Gems$() or $(thing)Jewlery Metal$()) and the armor on a $(item)Smithing Table$()."
         },
         {
             "type": "patchouli:relations",

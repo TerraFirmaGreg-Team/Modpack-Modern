@@ -217,11 +217,11 @@
         },
         {
             "type": "patchouli:text",
-            "text": "For every 144mb of iron added, 1 flux must pair with it. Any iron ores or items that are able to melt into $(thing)Cast Iron$() will do. You will also need to add $(l:craftsmanship/charcoal_pit#coke_oven)Coke$() or $(thing)Anthracite$(), which will be consumed as the blast furnace works.$(br)As a basic guide you will need 576mb of iron, and 4 flux per layer. And about 4-8 coke. Fuel usage does not increase with layers."
+            "text": "For every 144mB of iron added, 1 flux must pair with it. Any iron ores or items that are able to melt into $(thing)Cast Iron$() will do. You will also need to add $(l:craftsmanship/charcoal_pit#coke_oven)Coke$() or $(thing)Anthracite$(), which will be consumed as the blast furnace works.$(br2)As a basic guide, you will need $(t:144 x 4)$(6)576mB$() of iron and 4 flux per layer, and about 4-8 coke. Fuel usage does not increase with layers."
         },
         {
             "type": "patchouli:text",
-            "text": "$(item)$(k:key.use)$() the blast furnace will open the blast furnace interface, seen in the next image. In this interface, you will see meters for both ore and fuel contents of the blast furnace. The top right slot must have a $(thing)Tuyere$(), which is a metal pipe used to funnel air into the blast furnace, required to reach the hottest temperatures to smelt steel. A tuyere can be smithed on an $(l:craftsmanship/anvils)Anvil$()."
+            "text": "$(item)$(k:key.use)$() the blast furnace to open the blast furnace interface, seen in the next image. In this interface, you will see meters for both ore and fuel contents of the blast furnace. The top right slot must have a $(thing)Tuyere$(), which is a metal pipe used to funnel air into the blast furnace, required to reach the hottest temperatures to smelt steel. A tuyere can be smithed on an $(l:craftsmanship/anvils)Anvil$()."
         },
         {
             "type": "patchouli:image",
@@ -297,7 +297,7 @@
             "type": "patchouli:text",
             "anchor": "tips",
             "title": "Blast Furnace Tips",
-            "text": "Before you use all your fire clay on 20 fire bricks, note that once you get into the steam age, you can craft it for significantly cheaper. A full-size blast furnace is not required to get started. In fact, a 4-layer tall blast furnace uses better ratios of materials. As it uses 16 flux and 16 iron per run."
+            "text": "Before you use all your fire clay on 20 fire bricks, note that once you get into the steam age, you can craft it for significantly cheaper. A full-size blast furnace is not required to get started. In fact, a 4-layer tall blast furnace uses better ratios of materials, as it uses 16 flux and 16 iron per run."
         },
         {
             "type": "patchouli:spotlight",

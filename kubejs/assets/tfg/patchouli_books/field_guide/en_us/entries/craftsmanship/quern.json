@@ -10,7 +10,7 @@
         {
             "type": "patchouli:crafting",
             "recipe": "tfc:crafting/quern",
-            "text": "The base of the quern can be crafted with three $(thing)smooth stone$() and three of any other $(thing)Stone$() blocks.$(br2)Stone blocks can be acquired via $(l:craftsmanship/anvils#raw_rock)extraction$(), and smooth blocks with the $(l:craftsmanship/chisel)chisel$()."
+            "text": "The base of the quern can be crafted with three $(t:#forge:smooth_stone)$(6)smooth stone$() and three of any other $(t:#forge:stone)$(6)stone$() blocks.$(br2)Raw stone blocks can be acquired via $(l:craftsmanship/anvils#raw_rock)extraction$(), and smooth blocks with the $(l:craftsmanship/chisel)chisel$()."
         },
         {
             "type": "patchouli:crafting",

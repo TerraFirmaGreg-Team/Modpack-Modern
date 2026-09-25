@@ -35,9 +35,9 @@
 				],
 				"mapping": {
 					"G": "tfc:grass/sandy_loam",
-					"1": "#tfc:loose_rocks[count=1]",
-					"2": "#tfc:loose_rocks[count=2]",
-					"3": "#tfc:loose_rocks[count=3]",
+					"1": "tfc:rock/loose/limestone[count=1]",
+					"2": "tfc:rock/loose/limestone[count=2]",
+					"3": "tfc:rock/loose/dolomite[count=3]",
 					"4": "tfc:groundcover/stick",
 					"5": "#tfc:twigs",
 					"6": "tfc:groundcover/flint"
@@ -49,7 +49,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "In addition to gathering sticks and twigs on the ground, sticks can also be obtained by breaking leaves with your fist. Once you have a number of rocks and sticks, you are ready to start $(thing)Knapping$(). Knapping is a process where two rocks are hit together, to form a particular shape. In order to knap, first hold at least two rocks in your hand, then right click in the air, which will open up the $(thing)Knapping Interface$()."
+			"text": "In addition to gathering sticks and twigs on the ground, sticks can also be obtained by breaking leaves with your fist. Once you have a number of rocks and sticks, you are ready to start $(thing)Knapping$(). Knapping is a process where two rocks are hit together to form a particular shape. In order to knap, first hold at least two rocks in your hand, then right click in the air, which will open up the $(thing)Knapping Interface$()."
 		},
 		{
 			"type": "patchouli:image",
@@ -61,7 +61,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "In order to knap a particular item, you want to remove squares until you form the desired pattern by $(item)$(k:key.use)$() them. For example, create a knife blade by matching the recipe shown to the right.$(br2)Like crafting recipes, the location of the desired pattern doesn't matter for the output, and some recipes have multiple variants that are valid."
+			"text": "In order to knap a particular item, you want to remove squares until you form the desired pattern by $(item)$(k:key.attack)$() them. For example, create a knife blade by matching the recipe shown to the right.$(br2)Like crafting recipes, the location of the desired pattern doesn't matter for the output, and some recipes have multiple variants that are valid."
 		},
 		{
 			"type": "tfg:rock_knapping_recipe",
@@ -79,12 +79,12 @@
 			"anchor": "flint",
 			"title": "Flint Knapping",
 			"item": "gtceu:flint_hoe_head,gtceu:flint_knife_head,gtceu:flint_shovel_head,gtceu:flint_axe_head,gtceu:flint_sword_head,tfg:flint_club_head,tfg:flint_arrow_head",
-			"text": "Flint can be used to craft many of the same items that can be knapped by stone as well as unique items like arrow heads. Flint items are often far superior to stone items stat-wise. You can easily locate flint by checking the bottom of rivers and lakes for loose flint groundcover."
+			"text": "Flint can be used to craft many of the same items that can be knapped by stone, as well as unique items like arrow heads. Flint items are often far superior to stone items stat-wise. You can easily locate flint by checking the bottom of rivers and lakes for loose flint groundcover."
 		},
 		{
 			"type": "patchouli:crafting",
 			"recipe": "gtceu:shaped/knife_stone",
-			"text": "All stone tool heads can be crafted with a stick or twig to assemble them into a tool.$(br2)The stone knife can be used to harvest $(thing)Straw$() by breaking plants."
+			"text": "All stone tool heads can be crafted with a stick, twig, bone, or other rod to assemble them into a tool.$(br2)The stone knife can be used to harvest $(thing)Straw$() by breaking grasses."
 		},
 		{
 			"type": "tfg:rock_knapping_recipe",
@@ -140,7 +140,7 @@
             ]
         }
 	],
-	"read_by_default": true,
+	"read_by_default": false,
 	"sortnum": 0,
 	"extra_recipe_mappings": {
 		"tfc:stone/knife_head/sedimentary": 6,

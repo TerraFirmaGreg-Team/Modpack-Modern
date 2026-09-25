@@ -230,7 +230,7 @@
             "type": "patchouli:text",
             "anchor": "advanced_materials",
             "title": "Advanced Materials",
-            "text": "In addition to the $(l:craftsmanship/building_materials#primitive_materials)primitive building materials$() of the Stone Age, the acquisition of metal tools allows the construction of more advanced building materials"
+            "text": "In addition to the $(l:craftsmanship/building_materials#primitive_materials)primitive building materials$() of the Stone Age, the acquisition of metal tools allows the construction of more advanced building materials."
         },
         {
             "type": "patchouli:spotlight",
@@ -261,19 +261,19 @@
             "type": "patchouli:text",
             "anchor": "block_interactions",
             "title": "Block Interactions",
-            "text": "There are many in-world interactions that can be done to streamline building:$(li)Turn blocks mossy by $(item)$(k:key.sneak)-$(k:key.use)$() them with $(l:agriculture/composting#green_compost)Greens$().$(li)Crack stone bricks by $(item)$(k:key.sneak)-$(k:key.use)$() with a $(thing)Hammer$().$(li)Smooth stone bricks by $(item)$(k:key.sneak)-$(k:key.use)$() with $(thing)Sand Paper$().$(br)And more interactions can be viewed by browsing the block modifcations tab in $(emi)."
+            "text": "There are many in-world interactions that can be done to streamline building:$(li)Turn blocks mossy by $(item)$(k:key.sneak)-$(k:key.use)$() them with $(l:agriculture/composting#green_compost)Greens$().$(li)Crack stone bricks by $(item)$(k:key.sneak)-$(k:key.use)$() with a $(thing)Hammer$().$(li)Smooth stone bricks by $(item)$(k:key.sneak)-$(k:key.use)$() with $(thing)Sand Paper$().$(br)All interactions can be viewed by browsing the block modifications tab in $(emi)."
         },
         {
             "type": "patchouli:text",
             "anchor": "customizable_blocks",
             "title": "Customizable Blocks",
-            "text": "$(tfg_short) adds a few mods dedicated to adding customizable blocks for very intricate building.$(li)$(bold)Create: Copycats$() adds many blocks that can be $(item)$(k:key.use)$() with another block to copy its appearance. Made with a $(thing)Stonecutter$().$(li)$(bold)Framedblocks$() adds many blocks that can be $(item)$(k:key.use)$() with another block to copy its appearance. Mostly made with a $(thing)Framing Saw$().$(li)$(bold)Domum Ornamentum$() adds blocks that can copy the appearance of others. Made with an $(thing)Architect's Cutter$()."
+            "text": "$(tfg_short) adds a few mods dedicated to adding customizable blocks for very intricate building.$(li)$(bold)Create: Copycats$() adds many blocks that can be $(item)$(k:key.use)$() with another block to copy its appearance. Made with a $(thing)Stonecutter$().$(li)$(bold)Framed Blocks$() adds many blocks that can be $(item)$(k:key.use)$() with another block to copy its appearance. Mostly made with a $(thing)Framing Saw$().$(li)$(bold)Domum Ornamentum$() adds blocks that can copy the appearance of others. Made with an $(thing)Architect's Cutter$()."
         },
         {
             "type": "patchouli:text",
             "anchor": "roof_building",
             "title": "Roof Building",
-            "text": "Roof construction with $(bold)RNR$() begins with a frame. $(thing)Roof frame blocks$() can be crafted from lumber and sticks, and made into stair and slab variants. These blocks can be used to outline the shape of the roof and are the starting point for all roofs."
+            "text": "Roof construction with the $(bold)Roads and Roofs$() mod begins with a frame. $(thing)Roof frame blocks$() can be crafted from lumber and sticks, and made into stair and slab variants. These blocks can be used to outline the shape of the roof and are the starting point for all roofs."
         },
         {
             "type": "patchouli:text",

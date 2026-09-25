@@ -19,24 +19,36 @@
             "multiblock": {
                 "pattern": [
                     [
-                        "   ",
-                        " C ",
-                        "   "
+                        "    ",
+                        "    ",
+                        "T   "
                     ],
                     [
-                        "XXX",
-                        "X0X",
-                        "XXX"
+                        "1 2 ",
+                        " 3 6",
+                        "4 5 "
+                    ],
+                    [
+                        "XXXW",
+                        "X0XW",
+                        "XXXW"
                     ]
                 ],
                 "mapping": {
                     "0": "tfc:clay_grass/sandy_loam",
                     "X": "tfc:clay_grass/sandy_loam",
-                    "C": "#tfc:clay_indicators"
+                    "W": "minecraft:water",
+                    "1": "tfc:plant/athyrium_fern",
+                    "2": "tfc:plant/canna[stage=3]",
+                    "3": "tfc:plant/goldenrod[stage=2]",
+                    "4": "tfc:plant/pampas_grass[age=2,part=lower]",
+                    "T": "tfc:plant/pampas_grass[age=2,part=upper]",
+                    "5": "tfc:plant/perovskia[stage=3]",
+                    "6": "tfc:plant/water_canna[stage=3]"
                 }
             },
             "name": "Clay Indicators",
-            "text": "Clay, with one of the plants that may indicate its presence.",
+            "text": "Clay, with the plants that may indicate its presence.",
             "enable_visualize": false
         },
         {
@@ -71,26 +83,26 @@
         {
             "type": "patchouli:text",
             "anchor": "mold",
-            "text": "Clay is also necessary for making $(thing)Molds$(). Molds can have molten metal poured into them, which will eventually solidify into the shape of a mold. The item and potentially the mold can then be retrieved by using $(item)$(k:key.use)$() on the mold.$(br2)All molds have a limit of not being able to contain molten metal past the bronze-age. Except ingot molds.",
+            "text": "Clay is also necessary for making $(thing)Molds$(). Molds can have molten metal poured into them, which will eventually solidify into the shape of a mold. The item and potentially the mold can then be retrieved by using $(item)$(k:key.use)$() on the mold or putting it in your crafting grid.$(br2)All molds have a limit of not being able to contain molten metal past the bronze-age, $(thing)except ingot molds$().",
             "title": "Molds"
         },
         {
             "type": "patchouli:spotlight",
             "title": "Mold Types",
             "item": "tag:tfc:unfired_molds,tag:tfc:fired_molds",
-            "text": "There are many different types of molds. The most useful of which are the $(item)Ingot$() and $(item)Tool Head$() molds.$(br)Ingot molds require $(thing)144mb$() of molten metal to produce one ingot.$(br)Tool head molds replace traditional stone knapping for tools and usually require $(thing)144mb$() of fluid, however some tool types may require less or more."
+            "text": "There are many different types of molds. The most useful of which are the $(item)Ingot$() and $(item)Tool Head$() molds.$(br)Ingot molds require $(thing)144mb$() of molten metal to produce one ingot.$(br)Tool head molds replace traditional stone knapping for tools and usually require $(thing)144mB$() of fluid, however some tool types may require less or more."
         },
         {
             "type": "tfg:heat_recipe",
             "recipe": "tfc:heating/ingot_mold",
-            "text": "The mold then needs to be fired―like all clay items―to be usable. Likely in a $(l:craftsmanship/pit_kiln)Pit Kiln$().$(br2)Once it is fired, molten metal can be poured in. Once the metal has cooled enough, it can be extracted."
+            "text": "The mold then needs to be fired―like all clay items―to be usable, such as in a $(l:craftsmanship/pit_kiln)Pit Kiln$().$(br2)Once it is fired, molten metal can be poured in. Once the metal has cooled enough, it can be extracted."
         },
         {
             "type": "patchouli:spotlight",
-            "item": "tfc:ceramic/ingot_mold{tank:{\"Amount\":100,\"FluidName\":\"tfc:metal/copper\"}}",
+            "item": "tfc:ceramic/ingot_mold{tank:{\"Amount\":100,\"FluidName\":\"gtceu:copper\"}}",
             "title": "Casting",
             "link_recipes": false,
-            "text": "You will very likely run into scenarios where you produce tiny amounts of excess melted metal. It is recommended to pour it into an ingot mold and save for the next time you need to cast that metal. Trying to produce perfect 144mb ratios of alloys is not feasible or worth the effort until you reach steam-age processing."
+            "text": "You will very likely run into scenarios where you produce tiny amounts of excess melted metal. It is recommended to pour it into an ingot mold and save for the next time you need to cast that metal. Trying to produce perfect 144mB ratios of alloys is not feasible or worth the effort until you reach steam-age processing."
         },
         {
             "type": "patchouli:spotlight",
@@ -101,7 +113,7 @@
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "Generally, go $(thing)South East$() to increase temperature and humidity.",
+            "text": "If you see the flower but there's no clay on the surface, dig deeper!",
             "multiblocks": [
                 {
                     "pattern": [
@@ -174,6 +186,14 @@
             ]
         },
         {
+            "type": "patchouli:text",
+            "text": "Unless you selected the $(item)Tropical$() climate when creating your world, the journey to obtaining Kaolin Clay may be long but is always a memorable part of TerraFirmaCraft. It is important to prepare for the trip, such as through $(l:logistics/exploration_gear)equipment$(), a $(l:logistics/boats)boat$(), $(l:logistics/personal_storage)extra storage$(), $(l:cooking/food_and_water)food and drink$(), and a $(item)Spade$() to dig it all up with.$(br2)Generally, go $(thing)South East$() to increase temperature and humidity to reach the ideal climates."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "If you're not a fan of long journeys, get seasick easily, or are very unlucky, $(tfg_short) has another option for obtaining Kaolin Clay: visiting $(l:beneath/beneath)The Beneath$()! It requires less traveling but is far more dangerous... with the potential for even greater riches!"
+        },
+        {
             "type": "patchouli:spotlight",
             "item": "tfc:powder/kaolinite",
             "anchor": "kaolinite_powder",
@@ -181,7 +201,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "The amount of kaolinite powder you will need is enormous. If you have traveled very far to acquire kaolin clay and wish to make the most of your trip it is recommended to not return until you have at least 7 stacks (448 items) of $(n)kaolinite dust$(). This will ensure you have enough for a full-size $(l:craftsmanship/blast_furnace)Blast Furnace$(), $(l:craftsmanship/crucible)Crucibles$(), and molds. You should also bring back at least 20 blocks of kaolin clay for $(l:craftsmanship/glassworking)Glassworking$()."
+            "text": "The amount of kaolinite powder you will need is enormous. If you have traveled very far to acquire kaolin clay and wish to make the most of your trip it is recommended to not return until you have at least 7 stacks (448 items) of $(n)Kaolinite Powder$(). This will ensure you have enough for a full-size $(l:craftsmanship/blast_furnace)Blast Furnace$(), $(l:craftsmanship/crucible)Crucibles$(), and molds. You should also bring back at least 20 blocks of kaolin clay for $(l:craftsmanship/glassworking)Glassworking$()."
         },
         {
             "type": "patchouli:spotlight",
@@ -193,7 +213,7 @@
         {
             "type": "patchouli:crafting",
             "recipe": "tfc:crafting/fire_clay",
-            "text": "Fire clay is made from $(thing)Graphite$() crushed in a $(l:craftsmanship/quern)Quern$(), as well as $(l:craftsmanship/pottery#kaolinite_powder)Kaolinite Powder$()."
+            "text": "Fire clay is made from $(thing)Graphite$() crushed in a $(l:craftsmanship/quern)Quern$(), as well as $(l:craftsmanship/pottery#kaolinite_powder)Kaolinite Powder$().$(br2)Steam machines unlock more efficient ways to craft fire clay, so you may want to save some of your ingredients for later."
         },
         {
             "type": "tfg:knapping_recipe",
@@ -208,6 +228,7 @@
                 "tfg:the_world/geology",
                 "tfg:the_world/climate",
                 "tfg:craftsmanship/metallurgy",
+                "tfg:craftsmanship/crucible",
                 "tfg:craftsmanship/blast_furnace",
                 "tfg:craftsmanship/pit_kiln",
                 "tfg:craftsmanship/charcoal_forge",
@@ -224,7 +245,7 @@
         "tfg:tfc:molds": 8,
         "tfc:kaolin_clay": 12,
         "tfc:plant/blood_lily": 13,
-        "tfc:powder/kaolinite": 14,
-        "tfc:fire_clay": 16
+        "tfc:powder/kaolinite": 16,
+        "tfc:fire_clay": 18
     }
 }

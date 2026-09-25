@@ -10,7 +10,7 @@
         {
             "type": "patchouli:crafting",
             "recipe": "tfc:crafting/bloomery",
-            "text": "The bloomery is made from 8 $(thing)Bronze Double Plates$(). Which is a total of 32 bronze ingots.$(br)The bloomery will also need $(t:#tfc:bloomery_insulation)22 stone blocks$() such as stone bricks."
+            "text": "The bloomery is made from 8 $(thing)Bronze Double Plates$(), which is a total of 32 bronze ingots.$(br)The bloomery will also need $(t:#tfc:bloomery_insulation)$(6)22 stone blocks$() such as stone bricks."
         },
         {
             "type": "patchouli:multiblock",
@@ -44,7 +44,7 @@
                 ],
                 "mapping": {
                     "B": "tfc:bloomery[facing=north]",
-                    "A": "#tfc:bloomery_insulation"
+                    "A": "tfc:rock/smooth/dacite"
                 }
             },
             "name": "Bloomery Structure",
@@ -192,7 +192,7 @@
         {
             "type": "patchouli:text",
 			"anchor": "tips",
-            "text": "$(li)If the bloomery finds contains more items than it can handle it will try to spit them out the front.$(li)To retrieve your items from a bloomery that is not lit; break the bloomery block.$(li)Blooms will only melt into cast iron, not wrought iron. They must be worked!$(li)Snow accumulation can ruin a bloomerys process.",
+            "text": "$(li)If the bloomery finds contains more items than it can handle it will try to spit them out the front.$(li)To retrieve your items from a bloomery that is not lit, break the bloomery block.$(li)Blooms will only melt into cast iron, not wrought iron. They must be worked!",
             "title": "Bloomery Tips"
         },
 		{
@@ -200,7 +200,7 @@
 			"anchor": "steam_bloomery",
 			"title": "Steam Bloomery",
 			"item": "tfg:steam_bloomery",
-			"text": "Available with the creation of $(item)Black Steel$()―is the Steam Bloomery. This structure―added by $(tfg)―is capable of producing blooms automatically, on top of being faster and more efficently than the traditional bloomery by using high-pressure steam."
+			"text": "Available with the creation of $(item)Black Steel$() is the $(thing)Steam Bloomery$(). This structure is capable of producing blooms automatically, on top of being faster and more efficent than the traditional bloomery by using high-pressure steam."
 		},
         {
             "type": "patchouli:multiblock",
@@ -234,7 +234,7 @@
                 ],
                 "mapping": {
                     "B": "tfg:steam_bloomery[facing=north]",
-                    "A": "#tfc:bloomery_insulation",
+                    "A": "tfc:rock/smooth/dacite",
                     "F": "gtceu:bronze_firebox_casing",
                     "S": "gtceu:steam_input_hatch[facing=north]",
                     "I": "gtceu:steam_input_bus[facing=north]",
@@ -242,7 +242,7 @@
                 }
             },
             "name": "Structure",
-            "text": "A steam bloomery requires item input and item output buses, and a steam input hatch.",
+            "text": "A steam bloomery requires item input and item output buses, a steam input hatch, and three Bronze Firebox Casings.",
             "enable_visualize": true
         },
         {

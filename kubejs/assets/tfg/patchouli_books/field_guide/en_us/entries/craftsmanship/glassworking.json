@@ -25,7 +25,7 @@
             "anchor": "lime_and_potash",
             "title": "Lime & Potash",
             "recipe": "tfg:smelting/dried_seaweed_to_soda",
-            "text": "$(item)Soda Ash$() or $(item)Saltpeter$() can be used as a source of $(thing)Potash$(). Soda ash is a powder made from heating $(thing)Dried Seaweed$() or $(thing)Kelp$().$(br2)While $(item)Lime$() is produced by heating $(item)Flux$().",
+            "text": "$(item)Soda Ash$() or $(item)Saltpeter$() can be used as a source of $(thing)Potash$(). Soda ash is a powder made from heating $(thing)Dried Seaweed$() or $(thing)Kelp$().$(br2)$(item)Lime$() is produced by heating $(item)Flux$().",
             "recipe2": "tfg:smelting/lime"
         },
         {
@@ -189,9 +189,9 @@
         },
         {
             "type": "patchouli:crafting",
-            "text": "$(thing)Brass plated blocks$() can be created by holding a $(thing)brass plate$() and $(item)$(k:key.use)$() on any $(thing)stone brick$().",
             "title": "Glassworking Blocks",
-            "recipe": "tfc:crafting/white_kaolin_clay"
+            "recipe": "tfc:crafting/white_kaolin_clay",
+            "recipe2": "tfg:shapeless/brass_plated_block"
         },
         {
             "type": "patchouli:text",

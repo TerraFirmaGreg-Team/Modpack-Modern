@@ -61,11 +61,11 @@
                             "     "
                         ],
                         [
-                            "     ",
-                            "     ",
-                            "     ",
-                            "     ",
-                            "     "
+                            "XXXXX",
+                            "X   X",
+                            "X   X",
+                            "X   X",
+                            "XXXXX"
                         ],
                         [
                             "XXXXX",
@@ -241,13 +241,13 @@
                     "C": "gtceu:coke_oven[facing=north]"
                 }
             },
-            "text": "An example coke oven with three hatches. Fit for item input, item output, and fluid output.",
+            "text": "An example coke oven with three hatches, suitable for item input, item output, and fluid output.",
             "enable_visualize": true
         },
         {
             "type": "patchouli:text",
             "title": "Coke Oven Tips",
-            "text": "$(li)Coke ovens can have up to 4 hatches, replacing any coke oven brick.$(li)Coke ovens must be hollow in the center.$(li)The coke oven input hatch may get clogged with the output item. To avoid this have an item pipe facing the input hatch with its flow direction set. You can use a hopper or chute to push into that pipe.$(li)Crates are able to hold logs, unlike chests.$(li)Save all your creosote!"
+            "text": "$(li)Coke ovens can have up to 4 hatches, replacing any coke oven brick.$(li)Coke ovens must be hollow in the center.$(li)The coke oven input hatch may get clogged with the output item. To avoid this, have an item pipe facing the input hatch with its flow direction set. You can use a hopper or chute to push into that pipe.$(li)Crates are able to hold logs, unlike chests.$(li)Save all your creosote!"
         },
         {
             "type": "patchouli:relations",

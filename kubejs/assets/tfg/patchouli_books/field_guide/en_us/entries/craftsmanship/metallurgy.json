@@ -12,7 +12,7 @@
             "type": "patchouli:text",
             "anchor": "intro",
             "title": "Scattered Metal",
-            "text": "In addition to sticks, twigs, and stones on the ground, you may encounter small pieces of ores. These are important, as they are one of the few sources of ore and metal before obtaining a pickaxe. There are three types of these indicators: $(li)Mineral Dust$(li)Gem Buds$(li)Small Ores."
+            "text": "In addition to sticks, twigs, and stones on the ground, you may encounter small pieces of ores. These are important, as they are one of the few sources of ore and metal before obtaining a pickaxe. There are three types of these indicators: $(li)Mineral Dust$(li)Gem Buds$(li)Small Ores"
         },
         {
             "type": "patchouli:multiblock",
@@ -30,16 +30,16 @@
                     "X": "tfc:grass/loam",
                     "A": "#tfg:dust_ore_indicators",
                     "B": "#tfg:bud_ore_indicators",
-                    "C": "#tfg:small_ore_indicators"
+                    "C": "tfc:ore/small_native_copper"
                 }
             },
             "name": "Float Ore",
-            "text": "When broken; dust indicators drop tiny piles of dust, gem buds drop chipped gems, and small ores give, well, small ores.",
+            "text": "When broken: dust indicators drop tiny piles of dust, gem buds drop $(t:Unless broken with a Gem Saw!)chipped gems$(), and small ores give, well, small ores.",
             "enable_visualize": false
         },
         {
             "type": "patchouli:text",
-            "text": "These indicator pieces can serve two purposes: They can provide a source of metal, and more importantly, they indicate the presence of a larger vein of ore somewhere below them. Be sure to note where indicators are on your map so you may return to excavate the vein later.$(br2)⚠ Be careful when picking up mineral dusts as some of them may be $(l:game_mechanics/hazards)Hazardous$(), like Cobaltite or Galena for example."
+            "text": "These indicator pieces can serve two purposes: they can provide a source of metal, and more importantly, they indicate the presence of a larger vein of ore somewhere below them. Be sure to note where indicators are on your map so you may return to excavate the vein later.$(br2)⚠ Be careful when picking up mineral dusts as some of them may be $(l:game_mechanics/hazards)Hazardous$(), like Cobaltite or Galena for example."
         },
         {
             "type": "patchouli:text",
@@ -49,7 +49,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "Some ores go by names you may be unfamiliar with. For example, if you are looking for copper you shouldn't just look for copper ore. There are many different variates available. To understand what an ore piece will yield you can search its recipes in $(emi), or look at its tooltip."
+            "text": "Some ores go by names you may be unfamiliar with. For example, if you are looking for copper you shouldn't just look for \"copper ore\". There are many different variates available. To understand what an ore piece will yield you can search its recipes in $(emi), or look at its tooltip.$(br2)For example, searching $(emi) for \"melts into Copper\" will show every source of copper."
         },
         {
             "type": "patchouli:image",
@@ -68,11 +68,11 @@
             "type": "patchouli:text",
             "anchor": "casting",
             "title": "Casting",
-            "text": "To begin casting your first metal you will use a $(l:craftsmanship/pottery#vessel)Small Vessel$(). Place enough meltable ore inside of it to fill your desired $(l:craftsmanship/pottery#mold)Mold$(). For example, to make a saw blade you will need at least 144mb of metal.$(br)You can view the amount of material in the vessel by looking at its tooltip.$(br)Be aware that a vessel has a max fluid capacity of 3,024mb!"
+            "text": "To begin casting your first metal you will use a $(l:craftsmanship/pottery#vessel)Small Vessel$(). Place enough meltable ore inside of it to fill your desired $(l:craftsmanship/pottery#mold)Mold$(). For example, to make a saw blade you will need at least 144mB of metal.$(br)You can view the amount of material in the vessel by looking at its tooltip.$(br2)Be aware that a vessel has a max fluid capacity of $(t:21 x 144)$(6)3,024mB$()!"
         },
         {
             "type": "patchouli:text",
-            "text": "You can mix and match the types of ore inside a vessel, however all the ore must yield the same fluid metal, or you will create an $(l:craftsmanship/metallurgy#alloying)Alloy$().$(br)Place your filled vessel into a $(l:craftsmanship/pit_kiln)Pit Kiln$() to melt its contents. Once finished you will have a brief window of time to cast, so keep an eye on your kiln!"
+            "text": "You can mix and match the types of ore inside a vessel, however all the ore must yield the same fluid metal, or you will create an $(l:craftsmanship/metallurgy#alloying)Alloy$().$(br2)Place your filled vessel into a $(l:craftsmanship/pit_kiln)Pit Kiln$() to melt its contents. Once finished you will have a brief window of time to cast, so keep an eye on your kiln!"
         },
         {
             "type": "patchouli:crafting",
@@ -89,7 +89,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "With the casting interface open, place your empty fired mold in the center slot. It will fill up as long as the vessel remains liquid. (If the vessel solidifies, it can be reheated in another pit kiln.) Once the mold is full, it can be removed and left to cool. Once cool, the mold and its contents can be extracted by using the mold, or putting it in the crafting grid."
+            "text": "With the casting interface open, place your empty fired mold in the center slot. It will fill up as long as the vessel remains liquid. (If the vessel solidifies, it can be reheated in another pit kiln.) Once the mold is full, it can be removed and left to cool. Once cool, the mold and its contents can be extracted by $(item)$(k:key.use)$() the mold, or putting it in the crafting grid."
         },
         {
             "type": "patchouli:crafting",
@@ -99,7 +99,7 @@
         {
             "type": "patchouli:spotlight",
             "item": "tfc:metal/chisel/copper",
-            "text": "A couple other important metal tools are available for progression as well. The $(l:craftsmanship/chisel)Chisel$() is useful for working with stone blocks for building and required for other recipes."
+            "text": "A couple other important metal tools are available for progression as well. The $(l:craftsmanship/chisel)Chisel$() is useful for working with stone blocks for building, and is required for other recipes."
         },
         {
             "type": "patchouli:spotlight",
@@ -114,11 +114,11 @@
         },
         {
             "type": "patchouli:text",
-            "text": "One method through which alloys can be made during the early game is through the usage of a $(thing)Small Vessel$(). The process is very similar to $(l:craftsmanship/metallurgy#casting)Casting$(). However, instead of using just a single metal, place enough ore pieces inside the vessel in the correct ratio to form a known alloy mix."
+            "text": "One method through which alloys can be made during the early game is through the usage of a $(thing)Small Vessel$(). The process is very similar to $(l:craftsmanship/metallurgy#casting)Casting$(). However, instead of using just a single metal, place enough ore pieces inside the vessel in the correct ratio to form a known alloy mix.$(br2)A vessel's tooltip will also tell you what its contents will alloy into, so you can use it to check your alloying ratios - no external calculator needed!"
         },
         {
             "type": "patchouli:text",
-            "text": "You can find alloy ratios by looking at their liquid alloying recipe in $(emi). Alloys will except a range of values, so percentages do not have to be perfect. For example, an idealized ratio for Bronze is 75% Copper, and 25% Tin. Which means that for 144mB of Bronze you will need 108mB of Copper and 36mB of Tin."
+            "text": "You can find alloy ratios by looking at their liquid alloying recipe in $(emi). Alloys will accept a range of values, so percentages do not have to be perfect. For example, an idealized ratio for Bronze is 75% Copper, and 25% Tin, which means that for 144mB of Bronze you will need 108mB of Copper and 36mB of Tin.$(br2)If you can't find Tin, $(thing)Black Bronze$() and $(thing)Bismuth Bronze$() are also options! Tin is not required until steam machines."
         },
         {
             "type": "patchouli:image",
@@ -135,7 +135,7 @@
         },
         {
             "type": "patchouli:spotlight",
-            "item": "tag:forge:ingots/brass,tag:forge:ingots/rose_gold,tag:forge:ingots/sterling_silver,tag:forge:ingots/tin_alloy,tag:forge:ingots/red_alloy,tag:forge:ingots/potin,tag:forge:ingots/cobalt_brass,tag:forge:ingots/invar,tag:forge:ingots/brass",
+            "item": "tag:forge:ingots/brass,tag:forge:ingots/rose_gold,tag:forge:ingots/sterling_silver,tag:forge:ingots/tin_alloy,tag:forge:ingots/red_alloy,tag:forge:ingots/potin,tag:forge:ingots/cobalt_brass,tag:forge:ingots/invar",
             "anchor": "utility_alloys",
             "text": "Many alloys are not suitable for creating tools but are still necessary for progression. Some of the most important utility alloys for early progression are $(thing)Brass$(), $(thing)Rose Gold$(), $(thing)Sterling Silver$(), $(thing)Tin Alloy$(), and $(thing)Red Alloy$().",
             "title": "Utility Alloys"
@@ -144,7 +144,7 @@
             "type": "patchouli:text",
             "anchor": "propick",
             "title": "Prospector's Pick",
-            "text": "You remembered where you picked up those indicator ores, right? Finding additional ores may require extensive exploration and mining. You should become very familiar with $(thing)Ores and Minerals$(). If you need a specific resource, you must find the rock type it spawns in either under your feet or across the world."
+            "text": "You remembered where you picked up those indicator ores, right? Finding additional ores may require extensive exploration and mining. You should become very familiar with $(thing)Geology$(). If you need a specific resource, you must find the rock type it spawns in either under your feet or across the world."
         },
         {
             "type": "patchouli:spotlight",
@@ -155,11 +155,11 @@
         },
         {
             "type": "patchouli:text",
-            "text": "Right-clicking a prospector's pick in $(tfg_short) will cast a search ray in your views' direction. The rays width and depth is dependent on the tier of the pick noted in its tooltips. Depending on the tier of the prospector's pick can also give you a count of the ore quantities and even display an $(thing)X-Ray$() indicator of the ore vein."
+            "text": "Right-clicking a prospector's pick in $(tfg_short) will cast a search ray in your views' direction. The rays width and depth is dependent on the tier of the pick as noted in its tooltip. Depending on the tier, the prospector's pick can also give you a count of the ore quantities and even display an $(thing)X-Ray$() indicator of the ore vein."
         },
         {
             "type": "patchouli:text",
-            "text": "The prospector's pick can display the following information on use:$(li)In chat the pick can display the $(thing)total quantity$() of the ore vein, the $(thing)contents$() of the ore vein, and the $(thing)quantity per ore-type$() of the ore vein.$(li)$(thing)colored steel$() prospector's picks can also display either a large X-Ray particle in the $(thing)center$() of an ore vein, or $(thing)paricle's per ore block$()"
+            "text": "The prospector's pick can display the following information on use:$(li)In chat, the $(thing)total quantity$() of the ore vein, the $(thing)contents$() of the ore vein, and the $(thing)quantity per ore-type$() of the ore vein.$(li)The $(thing)colored steel$() prospector's picks can also display either a large X-Ray particle in the $(thing)center$() of an ore vein, or $(thing)paricles per ore block$()."
         },
         {
             "type": "patchouli:image",
@@ -167,7 +167,7 @@
             "texture_width": 1024,
             "height": 1024,
             "texture_height": 1024,
-            "text": "Colored steel pro-picks: The large $(bold)$(#D68400)❗$() is from per-vein style x-ray. And the smaller ones are from per-block style x-ray.",
+            "text": "Colored steel pro-picks: The large $(bold)$(#D68400)❗$() is from per-vein style x-ray, and the smaller ones are from per-block style x-ray.",
             "title": "Prospector View",
             "images": [
                 "tfg:textures/gui/field_guide/prospecting/tfg_prospectors_pick_xray.png"
@@ -183,9 +183,9 @@
             "type": "patchouli:spotlight",
             "anchor": "prospector",
             "item": "gtceu:prospector.lv,gtceu:prospector.hv,gtceu:prospector.luv",
-            "title": "Digital Ore Prospector's",
+            "title": "Digital Ore Prospectors",
             "link_recipes": false,
-            "text": "Technology is now! And with it comes new ways to find your ore veins!$(br)$(item)Ore Prospector's$() are $(thing)GregTech's$() solution to finding ore veins and fluid deposits in your world. The size and capabilities of the ore prospectors are determined by the $(#ff1100)voltage tier$()."
+            "text": "Technology is now! And with it comes new ways to find your ore veins!$(br)$(item)Ore Prospectors$() are $(thing)GregTech's$() solution to finding ore veins and fluid deposits in your world. The size and capabilities of the ore prospectors are determined by the $(#ff1100)voltage tier$()."
         },
         {
             "type": "patchouli:image",

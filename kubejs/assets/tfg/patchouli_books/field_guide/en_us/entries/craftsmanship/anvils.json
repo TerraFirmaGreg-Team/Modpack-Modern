@@ -12,13 +12,13 @@
             "type": "patchouli:text",
             "anchor": "intro",
             "title": "Introduction",
-            "text": "An alternative to casting tools directly and a requirement for higher tier metals, is to use an $(thing)Anvil$(). An anvil is a block which can be used for two different processes: $(l:craftsmanship/anvils#working)Working$() and $(l:craftsmanship/anvils#welding)Welding$(). An anvil can weld double ingots of the metal type needed to create the next tier anvil above it, which will be necessary to work other items from that metal."
+            "text": "An alternative to casting tools directly (and a requirement for higher tier metals) is to use an $(thing)Anvil$(). An anvil is a block which can be used for two different processes: $(l:craftsmanship/anvils#working)Working$() and $(l:craftsmanship/anvils#welding)Welding$(). An anvil can weld double ingots of the metal type needed to create the next tier anvil above it, which will be necessary to work other items from that metal."
         },
         {
             "type": "patchouli:text",
             "anchor": "stone_anvil",
             "title": "Stone Anvil",
-            "text": "First, you need to acquire a block of $(thing)raw rock$(), that is $(l:the_world/geology#igneous_extrusive)igneous extrusive$() (Rhyolite, Basalt, Andesite, or Dacite) or $(l:the_world/geology#igneous_intrusive)igneous intrusive$() (Granite, Diorite, or Gabbro). You could find and use an exposed block in the world, or you could $(l:craftsmanship/anvils#raw_rock)extract one$() from the surrounding rock."
+            "text": "First, you need to acquire a block of $(thing)raw igneous rock$(), that is $(l:the_world/geology#igneous_extrusive)igneous extrusive$() (Rhyolite, Basalt, Andesite, or Dacite) or $(l:the_world/geology#igneous_intrusive)igneous intrusive$() (Granite, Diorite, Gabbro, Pyroxenite, or Keratophyre). You could find and use an exposed block in the world, or you could $(l:craftsmanship/anvils#raw_rock)extract one$() from the surrounding rock."
         },
         {
             "type": "patchouli:text",
@@ -240,14 +240,21 @@
             "multiblock": {
                 "pattern": [
                     [
-                        "X"
-                    ],
-                    [
-                        "0"
+                        "ABC",
+                        "D0F",
+                        "GHI"
                     ]
                 ],
                 "mapping": {
-                    "X": "#tfc:anvils"
+                    "A": "tfc:metal/anvil/copper",
+                    "B": "tfc:metal/anvil/bronze",
+                    "C": "tfc:metal/anvil/black_bronze",
+                    "D": "tfc:metal/anvil/bismuth_bronze",
+                    "0": "tfc:metal/anvil/wrought_iron",
+                    "F": "tfc:metal/anvil/steel",
+                    "G": "tfc:metal/anvil/black_steel",
+                    "H": "tfc:metal/anvil/red_steel",
+                    "I": "tfc:metal/anvil/blue_steel"
                 }
             },
             "name": "",
@@ -310,16 +317,20 @@
         },
         {
             "type": "patchouli:text",
-            "text": "Working can be tedious, and take many steps to get correct. However, there is a reward for being efficient. Some items―such as tool heads―when they are worked in a low or minimal amount of steps, receive a Forging Bonus based on how efficiently they were forged. This bonus will then apply to tools that the item is used in, for example, a pickaxe head used to make a pickaxe.",
+            "text": "Confused? That's ok, it's a lot to take in, but it's actually just a simple bit of addition and subtraction. Check our $(l:craftsmanship/anvils#anvil_helper)step-by-step guide$() on how to use the \"anvil helper\" resource pack, which makes smithing easy!"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Working can be tedious, and take many steps to get correct. However, there is a reward for being efficient. Some items―such as tool heads―when they are worked in a low or minimal amount of steps, receive a $(thing)Forging Bonus$() based on how efficiently they were forged. This bonus will then apply to tools that the item is used in, for example, a pickaxe head used to make a pickaxe.$(br)We also have $(l:craftsmanship/anvils#how_to_perfectly_forge)a step-by-step guide$() on how to perfectly forge anything!",
             "title": "Forging Bonuses",
             "anchor": "forging_bonus"
         },
         {
             "type": "patchouli:spotlight",
-            "item": "tfc:metal/pickaxe/wrought_iron{\"tfc:forging_bonus\":4}",
+            "item": "gtceu:wrought_iron_pickaxe{\"tfc:forging_bonus\":4}",
             "title": "Perfectly Forged",
             "link_recipes": false,
-            "text": "There are four tiers of forging bonus:$(li)Poorly Forged$(li)Well Forged$(li)Expertly Forged$(li)Perfectly Forged$(br2)These bonuses increase the power of your tool - making it break less often, mine faster, and/or do more damage in combat, depending on the tool."
+            "text": "There are four tiers of forging bonus:$(li)Modestly Forged$(li)Well Forged$(li)Expertly Forged$(li)Perfectly Forged$(br2)These bonuses increase the power of your tool - making it $(t:Like the Unbreaking enchant)$(6)break less often$(), $(t:Like the Efficiency enchant)$(6)mine faster$(), and/or $(t:Like the Sharpness enchant)$(6)do more damage in combat$(), depending on the tool."
         },
         {
             "type": "patchouli:spotlight",
@@ -345,7 +356,7 @@
                     "0": "vintageimprovements:helve_structure[facing=north]",
                     "B": "vintageimprovements:helve_kinetic[facing=north]",
                     "H": "vintageimprovements:helve_hammer[facing=north]",
-                    "A": "tfc:metal/anvil/wrought_iron[facing=west]"
+                    "A": "tfc:metal/anvil/black_bronze[facing=west]"
                 }
             }
         },
@@ -375,7 +386,7 @@
                     ],
                     [
                         "   ",
-                        "   ",
+                        "R  ",
                         "A  ",
                         "XC "
                     ]
@@ -385,18 +396,23 @@
                     "S": "vintageimprovements:helve_structure[facing=north]",
                     "B": "vintageimprovements:helve_kinetic[facing=north]",
                     "H": "vintageimprovements:helve_hammer[facing=north]",
-                    "A": "tfc:metal/anvil/wrought_iron[facing=west]",
+                    "A": "tfc:metal/anvil/bismuth_bronze[facing=west]",
                     "F": "create:andesite_funnel[facing=east,extracting=true]",
                     "X": "minecraft:hopper[facing=south]",
-                    "C": "#forge:chests[facing=north]"
+                    "C": "#forge:chests[facing=north]",
+                    "R": "#minecraft:planks"
                 }
             }
+        },
+        {
+            "type": "patchouli:empty",
+            "draw_filler": false
         },
         {
             "type": "patchouli:text",
             "anchor": "anvil_helper",
             "title": "Anvil Helper Guide",
-            "text": "$(l:craftsmanship/anvils#working)Working$() in $(l:craftsmanship/anvils#metal_anvil)Anvils$() is a key process inside $(tfg), as most of your work towards the $(thing)Steam and Mechanical ages$() will require the usage of an Anvil.$(br)This guide is broken down into two parts, $(l:craftsmanship/anvils#ui_explained)Understanding the UI$() and $(l:craftsmanship/anvils#how_to_perfectly_forge)How to Perfectly Forge$().$(br2)The Modpack has a custom $(thing)Resource Pack$() called $(l:https://www.curseforge.com/minecraft/texture-packs/tfc-anvil-helper)TFC Anvil Helper$() that you need to enable for this guide to make sense.$()"
+            "text": "$(l:craftsmanship/anvils#working)Working$() in $(l:craftsmanship/anvils#metal_anvil)Anvils$() is a key process inside $(tfg), as most of your work towards the $(thing)Steam and Mechanical ages$() will require the usage of an Anvil.$(br)This guide is broken down into two parts, $(l:craftsmanship/anvils#ui_explained)Understanding the UI$() and $(l:craftsmanship/anvils#how_to_perfectly_forge)How to Perfectly Forge$().$(br2)The Modpack has a custom $(thing)Resource Pack$() called $(l:https://www.curseforge.com/minecraft/texture-packs/tfc-anvil-helper-patched)TFC Anvil Helper$() that you need to enable for this guide to make sense.$()"
         },
         {
             "type": "patchouli:image",
@@ -471,10 +487,11 @@
             "type": "patchouli:spotlight",
             "title": "Guide to Forging",
             "item": "gtceu:wrought_iron_pickaxe_head",
-            "text": "This part of the guide will cover how to Perfectly Forge anything, starting with a Wrought Iron Pickaxe Head.$(br2)$(bold)$(italic)DISCLAIMER:$()$(br)While the Required Steps and Orders for an Item are universal within all worlds in $(tfg_short), the Target Work value differs because it's derived from your world's Seed, as such, this Guide ASSUMES the Target Work value for the Wrought Iron Pickaxe Head is $(bold)83$()"
+            "text": "This part of the guide will cover how to Perfectly Forge anything, starting with a Wrought Iron Pickaxe Head."
         },
         {
-            "type": "patchouli:empty"
+            "type": "patchouli:text",
+            "text": "$(bold)$(italic)DISCLAIMER:$()$(br)While the Required Steps and Orders for an Item are universal within all worlds in $(tfg_short), the Target Work value differs because it's derived from your world's Seed, as such, this Guide ASSUMES the Target Work value for the Wrought Iron Pickaxe Head is $(bold)83$()."
         },
         {
             "type": "patchouli:text",
@@ -549,6 +566,10 @@
             "text": "If one of the Required Steps is Empty, it means it's a Wild Card, any Step can be used.$(br2)If you fail your calculations, you can always melt and cast your item back into an ingot, this will remove the \"worked\" tag for the item, letting you try again to perfectly forge it."
         },
         {
+            "type": "patchouli:text",
+            "text": "Congratulations on reaching the end! If you want to follow along in a creative world, the seed used during its writing is $(bold)-7291708953208913102$()."
+        },
+        {
             "type": "patchouli:relations",
             "title": "Further Reading",
             "anchor": "relations",
@@ -563,13 +584,6 @@
                 "tfg:craftsmanship/glassworking"
 
             ]
-        },
-        {
-            "type": "patchouli:empty"
-        },
-        {
-            "type": "patchouli:text",
-            "text": "Congratulations on Reaching the End, if you're a contributor looking to re-take the pictures in this guide, the seed used during its writing is $(bold)-7291708953208913102$(), You could also create a creative world to test the algorithm yourself!"
         }
     ],
     "read_by_default": true,

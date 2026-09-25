@@ -5,11 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "A pit kiln is an early game method of $(l:game_mechanics/heating)heating$() items up. It can be used to $(thing)fire$() clay into ceramic, for example. The pit kiln, over the time period of about eight hours, will heat its contents up to 1400 °C, or $(bold)$(e)$(t:Yellow White)Yellow White$()."
+            "text": "A pit kiln is an early game method of $(l:game_mechanics/heating)heating$() items up. It can be used to $(thing)fire$() clay into ceramic, for example. The pit kiln, over the time period of about eight hours (in-game), will heat its contents up to 1400 °C, or $(bold)$(e)$(t:Yellow White)Yellow White$()."
         },
         {
             "type": "patchouli:text",
-            "text": "To build a pit kiln, you will need:$(br)$(li)Up to four items to be fired.$(li)Eight pieces of $(thing)Straw$()$(li)Eight $(thing)Logs$()$(li)An item capable of lighting fires, like a $(l:craftsmanship/firepit#firestarter)Firestarter$(), or a $(thing)Torch$().$(br2)$(bold)Tip:$() Torches can start fires simply by tossing the torch on the pit kiln and waiting a few seconds."
+            "text": "To build a pit kiln, you will need:$(br)$(li)A hole in some dirt, sand, or stone$(li)Up to four items to be fired$(li)Eight pieces of $(thing)Straw$()$(li)Eight $(thing)Logs$()$(li)An item capable of lighting fires, like a $(l:craftsmanship/firepit#firestarter)Firestarter$(), or a $(thing)Torch$().$(br2)$(bold)Tip:$() Torches can start fires simply by tossing the torch on the pit kiln and waiting a few seconds."
         },
         {
             "type": "patchouli:text",

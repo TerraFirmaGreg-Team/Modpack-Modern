@@ -14,7 +14,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "After the crucible is knapped, it will need to be $(l:craftsmanship/pottery#vessel)Fired$(), like any piece of pottery.$(br2)In order to use the crucible, it needs a source of heat. The crucible can be heated by any heatable block below, preferably a $(l:craftsmanship/charcoal_forge)Charcoal Forge$().$(br)Importantly, crucibles transfer their heat to items much faster than forges. This can be good or bad. If low-melting-point items like $(item)Tin$() are being troublesome for working. Consider sticking to the forge for heating."
+            "text": "After the crucible is knapped, it will need to be $(l:craftsmanship/pottery#vessel)Fired$(), like any piece of pottery.$(br2)In order to use the crucible, it needs a source of heat. The crucible can be heated by any heatable block below, preferably a $(l:craftsmanship/charcoal_forge)Charcoal Forge$().$(br)Importantly, crucibles transfer their heat to items much faster than forges. This can be good or bad. If low-melting-point items like $(item)Tin$() are being troublesome for working, consider sticking to the forge for heating."
         },
         {
             "type": "patchouli:multiblock",
@@ -44,7 +44,7 @@
         {
             "type": "patchouli:text",
             "anchor": "advanced_alloying",
-            "text": "Now, you are ready to use the crucible. When you interact with it, you will see the $(thing)Crucible Interface$(), shown on the next page. The top region shows the current metal content of the crucible. The first metal shown is what would be produced, if it were to be extracted right now. Other metals shown are the makeup of the current alloy in the crucible.",
+            "text": "Now you are ready to use the crucible. When you interact with it, you will see the $(thing)Crucible Interface$(), shown on the next page. The top region shows the current metal content of the crucible. The first metal shown is what would be produced, if it were to be extracted right now. Other metals shown are the makeup of the current alloy in the crucible.",
             "title": "Advanced Alloying"
         },
         {
@@ -65,7 +65,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "You will have successfully alloyed when the text at the top of the crucible says the name of your alloy.$(br)If you accidentally mix the wrong type of metal into your molten alloy then you unfortunately have lost the whole batch. Even a small amount of foreign metal can ruin an alloy. You may also find yourself running out of room in your crucible before hitting your perfect ratio, and you may worry you have wasted the metal. But, luckily you can sacrifice some product by decanting a bit of metal to make room for more material. An alloy is only permanent when cast."
+            "text": "You will have successfully alloyed when the text at the top of the crucible says the name of your alloy.$(br)If you accidentally mix the wrong type of metal into your molten alloy, then unfortunately you have lost the whole batch. Even a small amount of foreign metal can ruin an alloy. You may also find yourself running out of room in your crucible before hitting your perfect ratio, and you may worry you have wasted the metal. Luckily, you can sacrifice some product by decanting a bit of metal to make room for more material. An alloy is only permanent when cast!"
         },
         {
             "type": "patchouli:image",
@@ -85,7 +85,7 @@
             "item": "tfcchannelcasting:unfired_channel,tfcchannelcasting:channel,tfcchannelcasting:unfired_mold_table,tfcchannelcasting:mold_table",
             "title": "Channel Casting",
             "anchor": "channel_casting",
-            "text": "You can cast from a $(thing)Crucible$() to more than one mold at a time using $(thing)Channels$() and $(thing)Mold Tables$(). Simply connect the $(thing)Mold Tables$() to the $(thing)Crucible$() using $(thing)Channels$() and $(item)$(k:key.use)$() on the $(thing)Channel$() next to the $(thing)Crucible$(). $(item)$(k:key.sneak)-$(k:key.use)$() the $(thing)Mold Table$() with a $(l:craftsmanship/pottery#mold)Mold$() to place it or remove it. Channels and molds are knapped from $(l:craftsmanship/pottery#fire_clay)Fire Clay$() and fired."
+            "text": "You can cast from a $(thing)Crucible$() to more than one mold at a time using $(thing)Channels$() and $(thing)Mold Tables$(). Simply connect the $(thing)Mold Tables$() to the $(thing)Crucible$() using $(thing)Channels$() and $(item)$(k:key.use)$() on the $(thing)Channel$() next to the $(thing)Crucible$(). $(item)$(k:key.sneak)-$(k:key.use)$() the $(thing)Mold Table$() with a $(l:craftsmanship/pottery#mold)Mold$() to place it or remove it."
         },
         {
             "type": "patchouli:multiblock",
@@ -96,7 +96,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "$(li)Using a $(l:craftsmanship/charcoal_forge#bellows)Bellows$() on a $(thing)Mold Table$() will cool the metal faster.$()$(li)Activating a $(thing)Channel$() with a redstone pulse will start pouring the metal.$()$(li)$(thing)Mold Tables$() output a comparator signal.$(li)Metal can be directly pumped in from things like fluid pipes or a draining $(l:craftsmanship/blast_furnace)Blast Furnace$().$(li)Hoppers can extract cooled metal items from molds while leaving the mold behind.",
+            "text": "$(li)Using a $(l:craftsmanship/charcoal_forge#bellows)Bellows$() on a $(thing)Mold Table$() will cool the metal faster.$()$(li)Activating a $(thing)Channel$() with a redstone pulse will also start pouring the metal.$()$(li)$(thing)Mold Tables$() output a comparator signal.$(li)Metal can be directly pumped in from things like fluid pipes or a draining $(l:craftsmanship/blast_furnace)Blast Furnace$().$(li)Hoppers can extract cooled metal items from molds while leaving the mold behind.",
             "title": "Automation"
         },
         {
