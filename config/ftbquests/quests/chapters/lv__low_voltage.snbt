@@ -78,7 +78,7 @@
 			linked_quest: "2D2CB8104E40E808"
 			shape: "heart"
 			x: 7.0d
-			y: 4.5d
+			y: 5.0d
 		}
 		{
 			id: "258922881D3BAB94"
@@ -677,7 +677,7 @@
 			}]
 			title: "{quests.low_voltage.lv_ore_prospector.title}"
 			x: 7.0d
-			y: 6.5d
+			y: 7.0d
 		}
 		{
 			dependencies: [
@@ -1237,6 +1237,7 @@
 				"4B4F052F00435AFE"
 				"2D2CB8104E40E808"
 				"07EDEA9613D6F02D"
+				"37F316C0599B52DE"
 			]
 			dependency_requirement: "one_completed"
 			description: ["{quests.low_voltage.lv_turbo_charge.desc}"]
@@ -1390,7 +1391,7 @@
 				type: "item"
 			}]
 			x: 7.0d
-			y: 5.5d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -2078,7 +2079,7 @@
 			}]
 			title: "{quests.tfg_tips.magnets.title}"
 			x: 7.0d
-			y: 7.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["292938760AB9A12B"]
@@ -2167,6 +2168,29 @@
 			}]
 			x: 4.5d
 			y: 10.0d
+		}
+		{
+			dependencies: ["3E6DC423FE4A99F7"]
+			description: ["{quests.low_voltage.electric_lunchbox.desc}"]
+			id: "37F316C0599B52DE"
+			optional: true
+			shape: "heart"
+			subtitle: "{quests.tfg_tips.lunchbox.subtitle}"
+			tasks: [{
+				id: "4CF58456659145B5"
+				item: {
+					Count: 1
+					id: "tfclunchbox:electric_lunchbox"
+					tag: {
+						LunchboxType: "electric"
+						LunchboxUUID: "5b4c3bf9-48e0-4da1-a4d9-ef655a642918"
+						SelectedSlot: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 7.0d
+			y: 4.0d
 		}
 	]
 	subtitle: ["{quests.low_voltage.subtitle}"]

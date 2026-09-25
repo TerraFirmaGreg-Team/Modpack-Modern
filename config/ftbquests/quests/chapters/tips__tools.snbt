@@ -133,7 +133,11 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["1B0C58B15E7F62B3"]
+			dependencies: [
+				"1B0C58B15E7F62B3"
+				"0C9B7745D812555A"
+			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.crafting_upgrade.desc}"]
 			id: "384B4517EB4F2687"
 			subtitle: "{quests.tfg_tips.crafting_upgrade.subtitle}"
@@ -362,7 +366,11 @@
 			y: 4.5d
 		}
 		{
-			dependencies: ["7FA5B6354A49C396"]
+			dependencies: [
+				"7FA5B6354A49C396"
+				"76F88CCE8FEF27B4"
+			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.toolbelt.desc}"]
 			id: "4433748B4DA986B0"
 			subtitle: "{quests.tfg_tips.toolbelt.subtitle}"
@@ -416,7 +424,7 @@
 		{
 			dependencies: [
 				"7FA5B6354A49C396"
-				"3C173357029AB649"
+				"68F1232DD918BBC2"
 			]
 			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.backpack_materials.desc}"]
@@ -608,7 +616,7 @@
 		{
 			dependencies: [
 				"02FDECC931B5E8EF"
-				"3C173357029AB649"
+				"68F1232DD918BBC2"
 			]
 			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.crates.desc}"]
@@ -1118,29 +1126,6 @@
 			y: 15.0d
 		}
 		{
-			dependencies: ["037CDA933FBE2CBE"]
-			description: ["{quests.tfg_tips.olive_oil.desc}"]
-			id: "13FC17F88DFEB8A8"
-			optional: true
-			size: 1.5d
-			subtitle: "{quests.tfg_tips.olive_oil.subtitle}"
-			tasks: [{
-				id: "41B624CA79C96356"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "only_one(item(tfc:bucket/olive_oil)nbt(fuzzy:{fluid:{Amount:1000,FluidName:\"tfc:olive_oil\"}}))"
-					}
-				}
-				title: "{quests.tfg_tips.olive_oil.task}"
-				type: "item"
-			}]
-			title: "{quests.tfg_tips.olive_oil.title}"
-			x: -6.0d
-			y: 15.75d
-		}
-		{
 			dependencies: ["2D959136A5FC5F46"]
 			description: ["{quests.tfg_tips.lamps.desc}"]
 			guide_page: "tfc:field_guide tfc:mechanics/lamps"
@@ -1182,170 +1167,6 @@
 			title: "{quests.tfg_tips.lamps.title}"
 			x: -6.5d
 			y: 12.0d
-		}
-		{
-			dependencies: [
-				"037CDA933FBE2CBE"
-				"5B2696206205CB2E"
-			]
-			description: ["{quests.tfg_tips.glowstone_lamp.desc}"]
-			id: "61F58B402F1AE40B"
-			optional: true
-			shape: "heart"
-			size: 2.0d
-			subtitle: "{quests.tfg_tips.glowstone_lamp.subtitle}"
-			tasks: [{
-				id: "71D52011F8BE66F0"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "only_one(item(gtceu:glowstone_bucket)nbt(fuzzy:{fluid:{Amount:1000,FluidName:\"gtceu:glowstone\"}}))"
-					}
-				}
-				type: "item"
-			}]
-			title: "{quests.tfg_tips.glowstone_lamp.title}"
-			x: -2.42d
-			y: 15.75d
-		}
-		{
-			dependencies: ["037CDA933FBE2CBE"]
-			description: ["{quests.tfg_tips.tallow.desc}"]
-			id: "54E6994D5CC693A7"
-			optional: true
-			size: 1.15d
-			subtitle: "{quests.tfg_tips.tallow.subtitle}"
-			tasks: [{
-				id: "07D0D54839A9A725"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "only_one(nbt(fuzzy:{fluid:{Amount:1000,FluidName:\"tfc:tallow\"}})item(tfc:bucket/tallow))"
-					}
-				}
-				title: "{quests.tfg_tips.tallow.task}"
-				type: "item"
-			}]
-			title: "{quests.tfg_tips.tallow.title}"
-			x: -10.0d
-			y: 15.82d
-		}
-		{
-			dependencies: ["037CDA933FBE2CBE"]
-			description: ["{quests.tfg_tips.creosote.desc}"]
-			id: "72C1E430FF6D2DD8"
-			optional: true
-			size: 1.0d
-			subtitle: "{quests.tfg_tips.creosote.subtitle}"
-			tasks: [
-				{
-					id: "6980AF89760133FD"
-					item: {
-						Count: 1
-						id: "ftbfiltersystem:smart_filter"
-						tag: {
-							"ftbfiltersystem:filter": "only_one(item(gtceu:creosote_bucket)nbt(fuzzy:{fluid:{Amount:1000,FluidName:\"gtceu:creosote\"}}))"
-						}
-					}
-					optional_task: true
-					title: "{quests.tfg_tips.creosote.task_creosote}"
-					type: "item"
-				}
-				{
-					id: "44D9566297A3D4E2"
-					item: {
-						Count: 1
-						id: "ftbfiltersystem:smart_filter"
-						tag: {
-							"ftbfiltersystem:filter": "only_one(item(gtceu:oil_bucket)nbt(fuzzy:{fluid:{Amount:1000,FluidName:\"gtceu:oil\"}}))"
-						}
-					}
-					optional_task: true
-					title: "{quests.tfg_tips.creosote.task_oil}"
-					type: "item"
-				}
-				{
-					id: "77ECE0485E20212F"
-					item: {
-						Count: 1
-						id: "ftbfiltersystem:smart_filter"
-						tag: {
-							"ftbfiltersystem:filter": "only_one(item(gtceu:oil_light_bucket)nbt(fuzzy:{fluid:{Amount:1000,FluidName:\"gtceu:oil_light\"}}))"
-						}
-					}
-					optional_task: true
-					title: "{quests.tfg_tips.creosote.task_light_oil}"
-					type: "item"
-				}
-				{
-					id: "65018DAF63ED6217"
-					item: {
-						Count: 1
-						id: "ftbfiltersystem:smart_filter"
-						tag: {
-							"ftbfiltersystem:filter": "only_one(item(gtceu:oil_medium_bucket)nbt(fuzzy:{fluid:{Amount:1000,FluidName:\"gtceu:oil_medium\"}}))"
-						}
-					}
-					optional_task: true
-					title: "{quests.tfg_tips.creosote.task_raw_oil}"
-					type: "item"
-				}
-				{
-					id: "2A5159D95817D555"
-					item: {
-						Count: 1
-						id: "ftbfiltersystem:smart_filter"
-						tag: {
-							"ftbfiltersystem:filter": "only_one(item(gtceu:oil_heavy_bucket)nbt(fuzzy:{fluid:{Amount:1000,FluidName:\"gtceu:oil_heavy\"}}))"
-						}
-					}
-					optional_task: true
-					title: "{quests.tfg_tips.creosote.task_heavy_oil}"
-					type: "item"
-				}
-			]
-			title: "{quests.tfg_tips.creosote.title}"
-			x: -11.2d
-			y: 15.84d
-		}
-		{
-			dependencies: [
-				"037CDA933FBE2CBE"
-				"56CA2EB7812529C5"
-			]
-			description: ["{quests.tfg_tips.lava_lamp.desc}"]
-			icon: "minecraft:lava_bucket"
-			id: "4EBABACAB444244D"
-			optional: true
-			shape: "square"
-			size: 1.75d
-			subtitle: "{quests.tfg_tips.lava_lamp.subtitle}"
-			tasks: [
-				{
-					id: "50C7B060CC8E91AA"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "tfc:metal/lamp/blue_steel"
-					}
-					type: "item"
-				}
-				{
-					id: "5A61ADFCB2AE868E"
-					item: "minecraft:lava_bucket"
-					type: "item"
-				}
-			]
-			title: "{quests.tfg_tips.lava_lamp.title}"
-			x: -4.375d
-			y: 15.75d
 		}
 		{
 			dependencies: ["2D959136A5FC5F46"]
@@ -1405,7 +1226,11 @@
 			y: 12.0d
 		}
 		{
-			dependencies: ["205E3ACA10A16C23"]
+			dependencies: [
+				"205E3ACA10A16C23"
+				"68F1232DD918BBC2"
+			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.glassblowing.desc}"]
 			guide_page: "tfc:field_guide tfc:mechanics/glassworking"
 			icon: {
@@ -1483,6 +1308,8 @@
 			y: 9.0d
 		}
 		{
+			dependencies: ["3C48CA0DAB4EE71B"]
+			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.fishing_net.desc}"]
 			guide_page: "tfc:field_guide tfc:mechanics/fishing_nets"
 			id: "2A57C41D681E4611"
@@ -1507,7 +1334,9 @@
 			dependencies: [
 				"0B140885C77A752D"
 				"205E3ACA10A16C23"
+				"76F88CCE8FEF27B4"
 			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.cane.desc}"]
 			id: "75C6BF1C9405B4C7"
 			subtitle: "{quests.tfg_tips.cane.subtitle}"
@@ -2028,7 +1857,7 @@
 		{
 			dependencies: [
 				"72B3EA6588E18CCC"
-				"174DA15847665CF8"
+				"76F88CCE8FEF27B4"
 			]
 			description: ["{quests.tfg_tips.grappling_hook.desc}"]
 			id: "7A200766AAC1EE19"
@@ -2334,6 +2163,7 @@
 			dependencies: [
 				"205E3ACA10A16C23"
 				"00D957B20B4A12F3"
+				"368E3C94EEDC11BB"
 			]
 			dependency_requirement: "one_completed"
 			description: [
@@ -2456,64 +2286,6 @@
 			y: 4.0d
 		}
 		{
-			dependencies: ["037CDA933FBE2CBE"]
-			description: ["{quests.tfg_tips.tools_tips.seed_oil.desc}"]
-			id: "30B9137740247627"
-			optional: true
-			size: 1.25d
-			subtitle: "{quests.tfg_tips.tools_tips.seed_oil.subtitle}"
-			tasks: [
-				{
-					id: "795A37FA87569C51"
-					item: {
-						Count: 1
-						id: "ftbfiltersystem:smart_filter"
-						tag: {
-							"ftbfiltersystem:filter": "item(gtceu:seed_oil_bucket)"
-						}
-					}
-					title: "{quests.tfg_tips.tools_tips.seed_oil.task}"
-					type: "item"
-				}
-				{
-					id: "62C27C8AC16CBE20"
-					item: "tfg:peanut_oil_bucket"
-					type: "item"
-				}
-				{
-					id: "2C316D9814153B6F"
-					item: "tfg:palm_oil_bucket"
-					type: "item"
-				}
-			]
-			title: "{quests.tfg_tips.tools_tips.seed_oil.title}"
-			x: -8.72d
-			y: 15.8d
-		}
-		{
-			dependencies: ["037CDA933FBE2CBE"]
-			description: ["{quests.tfg_tips.tools_tips.soybean_oil.desc}"]
-			id: "6C0A087006DF8679"
-			optional: true
-			size: 1.25d
-			subtitle: "{quests.tfg_tips.tools_tips.soybean_oil.subtitle}"
-			tasks: [{
-				id: "627EFBAAD0A86E02"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "item(firmalife:bucket/soybean_oil)"
-					}
-				}
-				title: "{quests.tfg_tips.tools_tips.soybean_oil.task}"
-				type: "item"
-			}]
-			title: "{quests.tfg_tips.tools_tips.soybean_oil.title}"
-			x: -7.4d
-			y: 15.8d
-		}
-		{
 			dependencies: ["72B3EA6588E18CCC"]
 			description: ["{quests.tfg_tips.tools_tips.markings.desc}"]
 			icon: "ags_modernmarkings:wall_marking_hazard_diamond"
@@ -2558,6 +2330,8 @@
 			y: 10.0d
 		}
 		{
+			dependencies: ["68F1232DD918BBC2"]
+			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.harpoon.desc}"]
 			id: "78374FC41EFCFD9B"
 			subtitle: "{quests.tfg_tips.harpoon.subtitle}"
@@ -2967,7 +2741,11 @@
 			y: -8.5d
 		}
 		{
-			dependencies: ["205E3ACA10A16C23"]
+			dependencies: [
+				"205E3ACA10A16C23"
+				"3C48CA0DAB4EE71B"
+			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.feeding_troughs.desc}"]
 			id: "343A712E8869482A"
 			subtitle: "{quests.tfg_tips.feeding_troughs.subtitle}"
@@ -2988,7 +2766,10 @@
 			y: 6.5d
 		}
 		{
-			dependencies: ["205E3ACA10A16C23"]
+			dependencies: [
+				"205E3ACA10A16C23"
+				"29AF4F77D67F91D8"
+			]
 			description: ["{quests.tfg_tips.scraping_knives.desc}"]
 			id: "2301E2248A3560C8"
 			subtitle: "{quests.tfg_tips.scraping_knives.subtitle}"

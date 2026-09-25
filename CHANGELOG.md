@@ -7,23 +7,27 @@
 - Added the Oxygen Distributor multiblock to replace Ad Astra's Air Distributor. This one oxygenates an entire enclosed room instead of just a small area around it. @Mqrius
 - Added the Higgs Emitter multiblock to replace Ad Astra's Gravity Normalizer with a significantly larger area of effect. @ashleney
 - Added the Heat Pump multiblock, when built into an outer wall it will regulate the temperature of a large room. @ashleney
-#### Other changes
+#### Recipes
+- Laser hatches now need a glass lens instead of a diamond lens @ashleney
+- GregTech covers are now crafting table recipes instead of assembler recipes (#4997) @ashleney
+- Changed mechanical press double ingot/double plate recipes to use circuit 0 (#4991) @Pyritie
+- Changed recipes of almost all More Red items and blocks, making them available a lot earlier @Pyritie
+- Chorus-Infused Ceramic Insulation now uses chorus flowers instead of popped chorus fruit @Pyritie
+### Changes
 - Added more mob icons to xaeros minimap (#4941) @Nezumi-Remis
 - Made it easier to find peat by giving it a unique grass texture (#4964) @applenper
 - Added more asphalt road markings, especially for diagonal lines (#4961) @Sacarbeus123
 - Axes no longer veinmine manually placed logs @ashleney
-- Laser hatches now need a glass lens instead of a diamond lens @ashleney
 - Moon harvester now doesn't need titanium (#4960) @TomPlop
 - Changed the recipe for blue alloy desh foil again @Pyritie
 - Fixed jerboas, mongeese, and lemmings sometimes spawning outside of their correct climate (#4929) @Pyritie
 - Added some more gem plates to gregtech filter crafting recipes @Pyritie
-- GregTech covers are now crafting table recipes instead of assembler recipes (#4997) @ashleney
 - Backported some [redstone devices](https://terrafirmacraft.github.io/Field-Guide/en_us/mechanics/redstone_devices.html) from 1.21 TFC - the clock, thermometer, anemometer, and wind vane (#4979) @Pyritie
 - Made signs and doors stack to 16 @ashleney
 - Increased the amount of silk thread from cobwebs and spiders, and increased how much phantom thread each phantom membrane crafts into @Pyritie
-- Changed mechanical press double ingot/double plate recipes to use circuit 0 (#4991) @Pyritie
 - Changed a performance mod's voiding behaviour for item stacks on the ground to only void when there's more than 1000 stacks instead of 128 - server owners are encouraged to [tweak this number](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/commit/8559274a130efb86fe24c0dde38732698475fe4f) if they wish @ashleney
 - Added an EMI category for lamp fuels @Redeix
+- Merged a lot of the "early automation" quest chapter into the "metallurgy age" one, and added lots of links to things that are unlocked at each tier @Pyritie
 ### Bug fixes
 - Fixed some worldgen crashes (#4905, #4900) @Pyritie
 - Fix to repair scrambled pack order at level data which was affecting a few random world-related things such as not being able to collect glass with a gem saw (#4152) @ariedotme

@@ -651,10 +651,10 @@ function registerTFGRockRecipes(event) {
 
 	// Misc
 	event.recipes.gtceu.cutter('tfg:vanilla_stone_slab_to_plate')
-		.itemInputs('minecraft:stone_slab')
+		.itemInputs('#tfg:rock_slabs')
 		.itemOutputs('#forge:plates/stone')
 		.duration(20)
-		.EUt(GTValues.VA[GTValues.LV])
+		.EUt(GTValues.VA[GTValues.ULV])
 
 	// Sedimentary carbonate into flux
 	event.recipes.gtceu.macerator('tfg:sedimentary_carbonate_to_flux')
