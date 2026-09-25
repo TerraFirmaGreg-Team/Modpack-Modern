@@ -40,7 +40,7 @@
         {
             "type": "patchouli:entity",
             "entity": "tfcastikorcarts:supply_cart/oak",
-            "scale": 0.5,
+            "scale": 0.4,
             "name": " ",
             "text": "The supply cart will physically display the first few items in its inventory."
         },
@@ -54,7 +54,7 @@
         {
             "type": "patchouli:entity",
             "entity": "tfcastikorcarts:plow/oak",
-            "scale": 0.5,
+            "scale": 0.4,
             "name": " ",
             "text": "The plow will display its tools. It will be engaged when its arms are lowered."
         },
@@ -68,7 +68,7 @@
         {
             "type": "patchouli:entity",
             "entity": "tfcastikorcarts:animal_cart/oak",
-            "scale": 0.5,
+            "scale": 0.4,
             "name": " ",
             "text": "The animal cart can even hold other players."
         },
@@ -82,7 +82,7 @@
         {
             "type": "patchouli:entity",
             "entity": "tfg:rnr_plow",
-            "scale": 0.5,
+            "scale": 0.4,
             "name": "Paving Cart",
             "text": "The paving cart will be engaged when its blades are lowered."
         },

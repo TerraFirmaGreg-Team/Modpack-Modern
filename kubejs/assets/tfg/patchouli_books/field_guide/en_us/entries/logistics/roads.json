@@ -13,7 +13,7 @@
             "type": "patchouli:text",
             "anchor": "intro",
             "title": "Introduction",
-            "text": "Road construction is vital for increasing land-transport efficiency and consists of three basic steps:$(li)$(bold)1:$() Tamping the native soil with a $(l:logistics/roads#mattock)Mattock$().$(li)$(bold)2:$() Laying down $(l:logistics/roads#base_course)Crushed Base Course$().$(li)$(bold)3:$() Laying the surface $(l:logistics/roads#pavers)Paving Material$().$(br)Different variety's of road use different ingredients."
+            "text": "Road construction is vital for increasing land-transport efficiency and consists of three basic steps:$(li)$(bold)1:$() Tamping the native soil with a $(l:logistics/roads#mattock)Mattock$().$(li)$(bold)2:$() Laying down $(l:logistics/roads#base_course)Crushed Base Course$().$(li)$(bold)3:$() Laying the surface $(l:logistics/roads#pavers)Paving Material$().$(br)Different varieties of road use different ingredients."
         },
         {
             "type": "patchouli:spotlight",
@@ -167,7 +167,7 @@
             "anchor": "stone",
             "item": "tag:rnr:flagstone_road_items,tag:rnr:cobble_road_items,tag:rnr:brick_road_items",
             "title": "Stone Pavers",
-            "text": "A variety of different stone walking surfaces can be applied over a base course, and all provide a $(thing)$(bold)20% Speed Bonus$().$(li)$(thing)Cobbled Roads$() are created by adding $(item)Loose Rocks$() over the base course.$(li)$(thing)$(bold)Sett Roads$() can be constructed from stone or ceramic $(item)Bricks$().$(li)$(thing)$(bold)Flagstone Roads$() can be constructed from stone or sandstone $(item)Flagstones$()."
+            "text": "A variety of different stone walking surfaces can be applied over a base course, and all provide a $(thing)$(bold)20% Speed Bonus$().$(li)$(thing)$(bold)Cobbled Roads$() are created by adding $(item)Loose Rocks$() over the base course.$(li)$(thing)$(bold)Sett Roads$() can be constructed from stone or ceramic $(item)Bricks$().$(li)$(thing)$(bold)Flagstone Roads$() can be constructed from stone or sandstone $(item)Flagstones$()."
         },
         {
             "type": "tfg:multimultiblock",

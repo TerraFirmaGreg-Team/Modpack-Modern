@@ -38,42 +38,42 @@
             "anchor": "straw_basket",
             "title": "Straw Basket",
             "item": "sns:straw_basket",
-            "text": "$(bold)Slots$(): 4$(br)$(bold)Stack Size$(): 16$(br)$(bold)Largest Size$(): Small$(br)$(bold)Item Pickup$(): $(a)True$()$(br)$(bold)Slot Voiding$(): $(c)False$()$(br)$(bold)Restricted To$(): N/A"
+            "text": "$(bold)Slots$(): 4$(br)$(bold)Stack Size$(): 16$(br)$(bold)Largest Size$(): Small$(br)$(bold)Item Pickup$(): $(2)True$()$(br)$(bold)Slot Voiding$(): $(c)False$()$(br)$(bold)Restricted To$(): N/A"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "leather_sack",
             "title": "Leather Sack",
             "item": "sns:leather_sack",
-            "text": "$(bold)Slots$(): 4$(br)$(bold)Stack Size$(): 64$(br)$(bold)Largest Size$(): Normal$(br)$(bold)Item Pickup$(): $(a)True$()$(br)$(bold)Slot Voiding$(): $(a)True$()$(br)$(bold)Restricted To$(): N/A"
+            "text": "$(bold)Slots$(): 4$(br)$(bold)Stack Size$(): 64$(br)$(bold)Largest Size$(): Normal$(br)$(bold)Item Pickup$(): $(2)True$()$(br)$(bold)Slot Voiding$(): $(2)True$()$(br)$(bold)Restricted To$(): N/A"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "ore_sack",
             "title": "Ore Sack",
             "item": "sns:ore_sack",
-            "text": "$(bold)Slots$(): 9$(br)$(bold)Stack Size$(): 512$(br)$(bold)Largest Size$(): Small$(br)$(bold)Item Pickup$(): $(a)True$()$(br)$(bold)Slot Voiding$(): $(a)True$()$(br)$(bold)Restricted To$(): $(6)$(t:#sns:allowed_in_ore_sack)Loose Stone, Ore, Gems, Clay$()"
+            "text": "$(bold)Slots$(): 9$(br)$(bold)Stack Size$(): 512$(br)$(bold)Largest Size$(): Small$(br)$(bold)Item Pickup$(): $(2)True$()$(br)$(bold)Slot Voiding$(): $(2)True$()$(br)$(bold)Restricted To$(): $(6)$(t:#sns:allowed_in_ore_sack)Loose Stone, Ore, Gems, Clay$()"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "seed_pouch",
             "title": "Seed Pouch",
             "item": "sns:seed_pouch",
-            "text": "$(bold)Slots$(): 27$(br)$(bold)Stack Size$(): 128$(br)$(bold)Largest Size$(): Small$(br)$(bold)Item Pickup$(): $(a)True$()$(br)$(bold)Slot Voiding$(): $(c)False$()$(br)$(bold)Restricted To$(): $(6)$(t:#sns:allowed_in_seed_pouch)Seeds, Saplings, Bushes$()"
+            "text": "$(bold)Slots$(): 27$(br)$(bold)Stack Size$(): 128$(br)$(bold)Largest Size$(): Small$(br)$(bold)Item Pickup$(): $(2)True$()$(br)$(bold)Slot Voiding$(): $(c)False$()$(br)$(bold)Restricted To$(): $(6)$(t:#sns:allowed_in_seed_pouch)Seeds, Saplings, Bushes$()"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "frame_pack",
             "title": "Frame Pack",
             "item": "sns:frame_pack",
-            "text": "$(bold)Slots$(): 18$(br)$(bold)Stack Size$(): 64$(br)$(bold)Largest Size$(): Very Large$(br)$(bold)Item Pickup$(): $(a)True$()$(br)$(bold)Slot Voiding$(): $(a)True$()$(br)$(bold)Restricted To$(): N/A"
+            "text": "$(bold)Slots$(): 18$(br)$(bold)Stack Size$(): 64$(br)$(bold)Largest Size$(): Very Large$(br)$(bold)Item Pickup$(): $(2)True$()$(br)$(bold)Slot Voiding$(): $(2)True$()$(br)$(bold)Restricted To$(): N/A"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "quiver",
             "title": "Quiver",
             "item": "sns:quiver",
-            "text": "$(bold)Slots$(): 8$(br)$(bold)Stack Size$(): 32$(br)$(bold)Largest Size$(): Very Large$(br)$(bold)Item Pickup$(): $(a)True$()$(br)$(bold)Slot Voiding$(): $(c)False$()$(br)$(bold)Restricted To$(): $(6)$(t:#sns:allowed_in_quiver)Arrows, Javelins$()"
+            "text": "$(bold)Slots$(): 8$(br)$(bold)Stack Size$(): 32$(br)$(bold)Largest Size$(): Very Large$(br)$(bold)Item Pickup$(): $(2)True$()$(br)$(bold)Slot Voiding$(): $(c)False$()$(br)$(bold)Restricted To$(): $(6)$(t:#sns:allowed_in_quiver)Arrows, Javelins$()"
         },
         {
             "type": "patchouli:spotlight",

@@ -5,7 +5,7 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "$(li)$(bold)$(9)Item Storage$()$(li2)$(l:logistics/storage#chests)Chests$()$(li2)$(l:logistics/storage#crates)Crates$()$(li2)$(l:logistics/storage#vaults)Vaults$()$(li2)$(l:logistics/storage#super_chests)Super Chests$()$(li)$(bold)$(9)Item & Fluid Storage$()$(li2)$(l:logistics/storage#ae2)ME Storage$()$(li2)$(l:logistics/storage#kegs)Kegs$()$(li)$(bold)$(9)Fluid Storage$()$(li2)$(l:logistics/storage#barrels)Barrels$()$(li2)$(l:logistics/storage#drums)Drums$()$(li2)$(l:logistics/storage#fluid_tanks)Fluid Tanks$()$(li2)$(l:logistics/storage#multiblock_tanks)Multiblock Tanks$()$(li2)$(l:logistics/storage#super_tanks)Super Tanks$()",
+            "text": "$(li)$(bold)Item Storage$()$(li2)$(l:logistics/storage#chests)Chests$()$(li2)$(l:logistics/storage#crates)Crates$()$(li2)$(l:logistics/storage#vaults)Vaults$()$(li2)$(l:logistics/storage#super_chests)Super Chests$()$(li)$(bold)Item & Fluid Storage$()$(li2)$(l:logistics/storage#ae2)ME Storage$()$(li2)$(l:logistics/storage#kegs)Kegs$()$(li)$(bold)Fluid Storage$()$(li2)$(l:logistics/storage#barrels)Barrels$()$(li2)$(l:logistics/storage#drums)Drums$()$(li2)$(l:logistics/storage#fluid_tanks)Fluid Tanks$()$(li2)$(l:logistics/storage#multiblock_tanks)Multiblock Tanks$()$(li2)$(l:logistics/storage#super_tanks)Super Tanks$()",
             "title": "Index",
             "anchor": "index"
         },
@@ -69,7 +69,7 @@
             "type": "patchouli:spotlight",
             "title": "Vaults",
             "anchor": "vaults",
-            "item": "create:item_vault",
+            "item": "create:item_vault,create_connected:item_silo",
             "text": "Create $(item)Vaults$() are a great method for consolidating a large amount of items, or for adding storage to $(thing)moving contraptions$().$(br)Vaults can be built into large 3D structures to expand their storage by 20 slots per vault. You cannot add/remove items to vaults manually, you will need to use item logistics such as hoppers."
         },
         {
@@ -201,12 +201,12 @@
             "title": "Kegs",
             "anchor": "kegs",
             "item": "tag:firmalife:big_barrels",
-            "text": "$(item)Kegs$() have the unique ability to store large amounts of items $(italics)and$() fluids.$(br)Kegs can hold any fluid a barrel can, up to 80,000 mB worth. And can hold up to 36 stacks of $(l:game_mechanics/size_and_weight)Large$() items.$(br2)Kegs cannot process recipes or age alcohol like barrels."
+            "text": "$(item)Kegs$() have the unique ability to store large amounts of items $(italics)and$() fluids.$(br)Kegs can hold any fluid a barrel can, up to 80,000 mB worth, and can hold up to 36 stacks of $(l:game_mechanics/size_and_weight)Large$() items.$(br2)Kegs cannot process recipes or age alcohol like barrels."
         },
         {
             "type": "patchouli:multiblock",
             "enable_visualize": false,
-            "text": "$(bold)TIP$(): You can insert and extract automatically from the front-bottom-left block of the keg.",
+            "text": "$(bold)TIP$(): You can insert and extract automatically from any block of the keg.",
             "multiblock": {
                 "pattern": [
                     [
@@ -235,7 +235,7 @@
             "title": "Barrels",
             "anchor": "barrels",
             "item": "tag:tfc:barrels",
-            "text": "$(l:craftsmanship/barrels)Barrels$() aren't just useful for recipes. They are a very cheap way of holding plenty of fluid. Up to 10,000 mB per barrel.$(br)When placed on their side, barrels can drip fluid from their tap into containers bellow. Allowing them to auto-ouput at a steady rate.$(br)You can carry a filled barrel on your back to transport its contents."
+            "text": "$(l:craftsmanship/barrels)Barrels$() aren't just useful for recipes. They are a very cheap way of holding plenty of fluid, up to 10,000 mB per barrel.$(br)When placed on their side, barrels can drip fluid from their tap into containers below, allowing them to auto-ouput at a steady rate.$(br)You can carry a filled barrel on your back to transport its contents."
         },
         {
             "type": "patchouli:multiblock",
@@ -284,8 +284,8 @@
             "type": "patchouli:spotlight",
             "title": "Fluid Tanks",
             "anchor": "fluid_tanks",
-            "item": "create:fluid_tank,fluidlogistics:multi_fluid_tank",
-            "text": "$(item)Fluid Tanks$() can be seen as the fluid version of $(l:logistics/storage#vaults)Vaults$(). Individual tanks hold 32,000 mB each. And can be formed into structures to expand their capacity.$(br2)$(item)Multi-Fluid Tanks$() can hold multiple fluid types at a time. But cannot be interacted with manually."
+            "item": "create:fluid_tank,create_connected:fluid_vessel,fluidlogistics:multi_fluid_tank",
+            "text": "$(item)Fluid Tanks$() can be seen as the fluid version of $(l:logistics/storage#vaults)Vaults$(). Individual tanks hold 32,000 mB each, and can be formed into structures to expand their capacity.$(br2)$(item)Multi-Fluid Tanks$() can hold multiple fluid types at a time, but cannot be interacted with manually."
         },
         {
             "type": "tfg:multimultiblock",
