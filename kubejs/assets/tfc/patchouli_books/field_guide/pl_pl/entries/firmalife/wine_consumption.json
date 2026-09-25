@@ -18,7 +18,7 @@
     {
       "type": "patchouli:crafting",
       "recipe": "firmalife:crafting/wood/pine_keg",
-      "text": "The $(thing)Keg$() is a 2x2x2 barrel block that can contain loads of items or fluids. Perfect for your vinery!"
+      "text": "$(thing)Keg$() to beczka 2x2x2, który może przechowywać dużo przedmiotów i płynów. Idealny dla twojej winiarni!\n"
     },
     {
       "type": "patchouli:crafting",

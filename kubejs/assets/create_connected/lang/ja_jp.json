@@ -1,6 +1,8 @@
 {
 	"block.create_connected.brake": "ブレーキ",
 	"block.create_connected.brake.tooltip.summary": "信号を受けると_膨大な応力_を生み出し、ネットワークに_応力超過_を起こして停止させるデバイス。",
+	"block.create_connected.brass_chute": "真鍮のシュート",
+	"block.create_connected.brass_chute.tooltip.summary": "アイテムの運搬量を改善したシュート。一度に_64個のアイテム_まで運搬する。",
 	"block.create_connected.centrifugal_clutch": "遠心クラッチ",
 	"block.create_connected.centrifugal_clutch.tooltip.summary": "入力されたRPMが設定したしきい値より_高速_な場合にのみ、_結合_されるクラッチ。",
 	"block.create_connected.copycat_beam": "コピー梁",
@@ -40,6 +42,7 @@
 	"block.create_connected.copycat_wall.tooltip.condition1": "右クリックしたとき",
 	"block.create_connected.copycat_wall.tooltip.summary": "任意のフルブロックを装飾用の塀に変換する。",
 	"block.create_connected.creative_fluid_vessel": "クリエイティブ液体ベッセル",
+	"block.create_connected.dashboard": "ダッシュボード",
 	"block.create_connected.empty_fan_catalyst": "空のファンの触媒",
 	"block.create_connected.empty_fan_catalyst.tooltip.summary": "_ファンの加工方法_を変更するために_挿入_できる触媒。",
 	"block.create_connected.fan_blasting_catalyst": "ファンの精錬触媒",

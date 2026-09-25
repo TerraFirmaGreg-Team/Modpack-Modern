@@ -1,6 +1,6 @@
 {
 	"block.exposure.lightroom": "現像台",
-	"category.exposure": "exposure",
+	"category.exposure": "Exposure",
 	"command.exposure.debug.chromatic_from_last_three.fail.error": "画像の作成に失敗しました: %s",
 	"command.exposure.debug.chromatic_from_last_three.fail.not_enough_frames": "キャプチャされたフレームが不足しています。3フレーム必要です",
 	"command.exposure.debug.chromatic_from_last_three.success.created": "RGB合成画像を作成しました: ",
