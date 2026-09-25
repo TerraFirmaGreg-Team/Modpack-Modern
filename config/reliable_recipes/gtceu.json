@@ -460,7 +460,10 @@
 			"gtceu:centrifuge/ender_air_separation",
 			"gtceu:vacuum_freezer/liquid_ender_air",
 			"gtceu:distillation_tower/distill_liquid_ender_air",
-			"gtceu:extractor/fish_oil_from_pufferfish"
+			"gtceu:extractor/fish_oil_from_pufferfish",
+			"gtceu:alloy_blast_smelter/boron_carbide",
+			"gtceu:alloy_blast_smelter/boron_carbide_gas",
+			"gtceu:vacuum_freezer/boron_carbide"
 		]
 	},
 	{

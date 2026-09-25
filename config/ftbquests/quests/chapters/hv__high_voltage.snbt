@@ -1733,7 +1733,16 @@
 		{
 			dependencies: ["05ABC370D7153350"]
 			description: ["{quest.high_voltage.ultimet.desc}"]
-			icon: "gtceu:ultimet_ingot"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "gtceu:ultimet_ingot"
+			}
 			id: "4C25552DC291F49A"
 			subtitle: "{quest.high_voltage.ultimet.subtitle}"
 			tasks: [
@@ -1767,6 +1776,12 @@
 						}
 					}
 					match_nbt: true
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "195F971960F976EF"
+					item: "tfg:stainless_steel_anvil"
 					optional_task: true
 					type: "item"
 				}
@@ -1813,6 +1828,12 @@
 					}
 					optional_task: true
 					title: "{quests.high_voltage.boron_tools.task}"
+					type: "item"
+				}
+				{
+					id: "1C79B9431FFDA07E"
+					item: "tfg:stainless_steel_anvil"
+					optional_task: true
 					type: "item"
 				}
 			]

@@ -170,12 +170,12 @@ function registerVintageImprovementsRecipes(event) {
 	]
 
 	HAMMERING_MATERIALS.forEach(x => {
-		generateHammeringRecipe(event, x.material, x.blows, 'copper');
+		generateHammeringRecipe(event, x.material, x.blows, 'tfc:metal/anvil/copper');
 		x.blows--;
 	})
 
 	HAMMERING_ITEMS.forEach(x => {
-		generateHammeringRecipeFromItem(event, x.input, x.output, x.blows, 'copper');
+		generateHammeringRecipeFromItem(event, x.input, x.output, x.blows, 'tfc:metal/anvil/copper');
 		x.blows--;
 	})
 
@@ -191,15 +191,15 @@ function registerVintageImprovementsRecipes(event) {
 	HAMMERING_ITEMS.push({ input: 'tfc:refined_iron_bloom', output: 'gtceu:wrought_iron_ingot', blows: STARTING_BLOWS })
 
 	HAMMERING_MATERIALS.forEach(x => {
-		generateHammeringRecipe(event, x.material, x.blows, 'bronze');
-		generateHammeringRecipe(event, x.material, x.blows, 'black_bronze');
-		generateHammeringRecipe(event, x.material, x.blows, 'bismuth_bronze');
+		generateHammeringRecipe(event, x.material, x.blows, 'tfc:metal/anvil/bronze');
+		generateHammeringRecipe(event, x.material, x.blows, 'tfc:metal/anvil/black_bronze');
+		generateHammeringRecipe(event, x.material, x.blows, 'tfc:metal/anvil/bismuth_bronze');
 		x.blows--;
 	})
 	HAMMERING_ITEMS.forEach(x => {
-		generateHammeringRecipeFromItem(event, x.input, x.output, x.blows, 'bronze');
-		generateHammeringRecipeFromItem(event, x.input, x.output, x.blows, 'black_bronze');
-		generateHammeringRecipeFromItem(event, x.input, x.output, x.blows, 'bismuth_bronze');
+		generateHammeringRecipeFromItem(event, x.input, x.output, x.blows, 'tfc:metal/anvil/bronze');
+		generateHammeringRecipeFromItem(event, x.input, x.output, x.blows, 'tfc:metal/anvil/black_bronze');
+		generateHammeringRecipeFromItem(event, x.input, x.output, x.blows, 'tfc:metal/anvil/bismuth_bronze');
 		x.blows--;
 	})
 
@@ -214,11 +214,11 @@ function registerVintageImprovementsRecipes(event) {
 	HAMMERING_ITEMS.push({ input: 'tfc:metal/ingot/high_carbon_steel', output: 'gtceu:steel_ingot', blows: STARTING_BLOWS })
 
 	HAMMERING_MATERIALS.forEach(x => {
-		generateHammeringRecipe(event, x.material, x.blows, 'wrought_iron');
+		generateHammeringRecipe(event, x.material, x.blows, 'tfc:metal/anvil/wrought_iron');
 		x.blows--;
 	})
 	HAMMERING_ITEMS.forEach(x => {
-		generateHammeringRecipeFromItem(event, x.input, x.output, x.blows, 'wrought_iron');
+		generateHammeringRecipeFromItem(event, x.input, x.output, x.blows, 'tfc:metal/anvil/wrought_iron');
 		x.blows--;
 	})
 
@@ -227,11 +227,11 @@ function registerVintageImprovementsRecipes(event) {
 	HAMMERING_ITEMS.push({ input: 'tfc:metal/ingot/high_carbon_black_steel', output: 'tfc:metal/ingot/black_steel', blows: STARTING_BLOWS })
 
 	HAMMERING_MATERIALS.forEach(x => {
-		generateHammeringRecipe(event, x.material, x.blows, 'steel');
+		generateHammeringRecipe(event, x.material, x.blows, 'tfc:metal/anvil/steel');
 		x.blows--;
 	})
 	HAMMERING_ITEMS.forEach(x => {
-		generateHammeringRecipeFromItem(event, x.input, x.output, x.blows, 'steel');
+		generateHammeringRecipeFromItem(event, x.input, x.output, x.blows, 'tfc:metal/anvil/steel');
 		x.blows--;
 	})
 
@@ -241,11 +241,11 @@ function registerVintageImprovementsRecipes(event) {
 	HAMMERING_ITEMS.push({ input: 'tfc:metal/ingot/high_carbon_blue_steel', output: 'tfc:metal/ingot/blue_steel', blows: STARTING_BLOWS })
 
 	HAMMERING_MATERIALS.forEach(x => {
-		generateHammeringRecipe(event, x.material, x.blows, 'black_steel');
+		generateHammeringRecipe(event, x.material, x.blows, 'tfc:metal/anvil/black_steel');
 		x.blows--;
 	})
 	HAMMERING_ITEMS.forEach(x => {
-		generateHammeringRecipeFromItem(event, x.input, x.output, x.blows, 'black_steel');
+		generateHammeringRecipeFromItem(event, x.input, x.output, x.blows, 'tfc:metal/anvil/black_steel');
 		x.blows--;
 	})
 
@@ -254,13 +254,51 @@ function registerVintageImprovementsRecipes(event) {
 	HAMMERING_MATERIALS.push({ material: GTMaterials.BlueSteel, blows: STARTING_BLOWS })
 
 	HAMMERING_MATERIALS.forEach(x => {
-		generateHammeringRecipe(event, x.material, x.blows, 'red_steel');
-		generateHammeringRecipe(event, x.material, x.blows, 'blue_steel');
+		generateHammeringRecipe(event, x.material, x.blows, 'tfc:metal/anvil/red_steel');
+		generateHammeringRecipe(event, x.material, x.blows, 'tfc:metal/anvil/blue_steel');
 		x.blows--;
 	})
 	HAMMERING_ITEMS.forEach(x => {
-		generateHammeringRecipeFromItem(event, x.input, x.output, x.blows, 'red_steel');
-		generateHammeringRecipeFromItem(event, x.input, x.output, x.blows, 'blue_steel');
+		generateHammeringRecipeFromItem(event, x.input, x.output, x.blows, 'tfc:metal/anvil/red_steel');
+		generateHammeringRecipeFromItem(event, x.input, x.output, x.blows, 'tfc:metal/anvil/blue_steel');
+		x.blows--;
+	})
+
+	// Tier 7
+	HAMMERING_MATERIALS.push({ material: GTMaterials.VanadiumSteel, blows: STARTING_BLOWS })
+
+	HAMMERING_MATERIALS.forEach(x => {
+		generateHammeringRecipe(event, x.material, x.blows, 'tfg:vanadium_steel_anvil');
+		x.blows--;
+	})
+	HAMMERING_ITEMS.forEach(x => {
+		generateHammeringRecipeFromItem(event, x.input, x.output, x.blows, 'tfg:vanadium_steel_anvil');
+		x.blows--;
+	})
+
+	// Tier 8
+	HAMMERING_MATERIALS.push({ material: GTMaterials.get('tfg:boron_carbide'), blows: STARTING_BLOWS })
+	HAMMERING_MATERIALS.push({ material: GTMaterials.Ultimet, blows: STARTING_BLOWS })
+
+	HAMMERING_MATERIALS.forEach(x => {
+		generateHammeringRecipe(event, x.material, x.blows, 'tfg:stainless_steel_anvil');
+		x.blows--;
+	})
+	HAMMERING_ITEMS.forEach(x => {
+		generateHammeringRecipeFromItem(event, x.input, x.output, x.blows, 'tfg:stainless_steel_anvil');
+		x.blows--;
+	})
+
+	// Tier 9
+	HAMMERING_MATERIALS.push({ material: GTMaterials.get('ostrum_iodide'), blows: STARTING_BLOWS })
+	HAMMERING_MATERIALS.push({ material: GTMaterials.TungstenCarbide, blows: STARTING_BLOWS })
+
+	HAMMERING_MATERIALS.forEach(x => {
+		generateHammeringRecipe(event, x.material, x.blows, 'tfg:tungsten_anvil');
+		x.blows--;
+	})
+	HAMMERING_ITEMS.forEach(x => {
+		generateHammeringRecipeFromItem(event, x.input, x.output, x.blows, 'tfg:tungsten_anvil');
 		x.blows--;
 	})
 	// #endregion
@@ -554,14 +592,14 @@ function generateHammeringRecipe(event, material, blows, anvil) {
 	event.recipes.vintageimprovements.hammering(
 		ChemicalHelper.get(TagPrefix.plate, material, 1),
 		ChemicalHelper.get(TFGTagPrefix.ingotDouble, material, 1))
-		.anvilBlock(`tfc:metal/anvil/${anvil}`)
+		.anvilBlock(anvil)
 		.hammerBlows(Math.max(blows, 1))
-		.id(`tfg:vi/hammer/${material.getName()}_plate_on_${anvil}_anvil`)
+		.id(`tfg:vi/hammer/${material.getName()}_plate_on_${global.linuxUnfucker(anvil)}_anvil`)
 }
 
 function generateHammeringRecipeFromItem(event, input, output, blows, anvil) {
 	event.recipes.vintageimprovements.hammering(output, input)
-		.anvilBlock(`tfc:metal/anvil/${anvil}`)
+		.anvilBlock(anvil)
 		.hammerBlows(Math.max(blows, 1))
-		.id(`tfg:vi/hammer/${global.linuxUnfucker(input)}_on_${anvil}_anvil`)
+		.id(`tfg:vi/hammer/${global.linuxUnfucker(input)}_on_${global.linuxUnfucker(anvil)}_anvil`)
 }
