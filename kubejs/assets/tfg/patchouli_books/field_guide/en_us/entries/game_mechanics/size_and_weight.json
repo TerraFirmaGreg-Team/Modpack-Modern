@@ -16,7 +16,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "$(li)$(thing)Large$() items are the largest that will fit in $(l:logistics/storage#chests)Chests$(). $(l:craftsmanship/pit_kiln)Pit Kilns$() can hold four.$(li)$(thing)Very Large$() items are placed alone in Pit Kilns.$(li)$(thing)Huge$() items do not fit in any normal storage device. They also count towards overburdening."
+            "text": "$(li)$(thing)Large$() items are the largest that will fit in $(l:logistics/storage#chests)Chests$(). $(l:craftsmanship/pit_kiln)Pit Kilns$() can hold four.$(li)$(thing)Very Large$() items are placed alone in Pit Kilns.$(li)$(thing)Huge$() items do not fit in most storage devices. They also count towards overburdening."
         },
         {
             "type": "patchouli:text",
@@ -32,7 +32,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "Items that count towards overburdening include $(thing)Anvils$(), $(thing)Sealed Barrels$(), $(thing)Crucibles$() (with contents)$(br2)Note: $(l:agriculture/animal_husbandry#equines)Horses$() can also be overburdened.$(br)Raising your $(l:cooking/food_and_water#protein)Protein$() stat allows you to carry an additional item without being overburdened."
+            "text": "Items that count towards overburdening include $(thing)Anvils$(), $(thing)Sealed Barrels$(), and $(thing)Crucibles$() (with contents).$(br2)Note: $(l:agriculture/animal_husbandry#equines)Horses$() can also be overburdened.$(br2)Raising your $(l:cooking/food_and_water#protein)Protein$() stat allows you to carry an additional item without being overburdened."
         },
         {
             "type": "patchouli:relations",

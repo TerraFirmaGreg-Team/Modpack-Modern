@@ -72,7 +72,7 @@
             "type": "patchouli:text",
             "title": "Compostables",
             "anchor": "compostables",
-            "text": "Compostables are seperated by quality. Lows provide a value of 1, Mediums 2, Highs 4.$(li)$(l)$(2)Green$():$(li2)$(l)Low:$() Basic plants and saplings.$(li2)$(l)Medium:$() $(l:cooking/food_and_water#grain)Grains$(), moss blocks, mushroom blocks.$(li2)$(l)High:$() $(l:cooking/food_and_water#vegetables)Vegetables$() and $(l:cooking/food_and_water#vegetables)Fruits$().$(li)$(l)$(4)Brown$():$(li2)$(l)Low:$() Vines.$(li2)$(l)Medium:$() Wood ash, fibers, anemone.$(li2)$(l)High:$() Humus, dead grass, driftwood."
+            "text": "Compostables are seperated by quality. Lows provide a value of 1, Mediums 2, Highs 4.$(li)$(l)$(2)Green$():$(li2)$(l)$(t:#tfc:compost_greens_low)Low:$() Basic plants and saplings.$(li2)$(l)$(t:#tfc:compost_greens)Medium:$() $(l:cooking/food_and_water#grain)Grains$(), moss blocks, mushroom blocks.$(li2)$(l)$(t:#tfc:compost_greens_high)High:$() $(l:cooking/food_and_water#vegetables)Vegetables$() and $(l:cooking/food_and_water#vegetables)Fruits$().$(li)$(l)$(4)Brown$():$(li2)$(l)$(t:#tfc:compost_browns_low)Low:$() Vines.$(li2)$(l)$(t:#tfc:compost_browns)Medium:$() Wood ash, fibers, anemone.$(li2)$(l)$(t:#tfc:compost_browns_high)High:$() Humus, dead grass, driftwood."
         },
         {
             "type": "patchouli:spotlight",

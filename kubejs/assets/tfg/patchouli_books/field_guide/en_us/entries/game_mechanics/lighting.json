@@ -14,7 +14,7 @@
             "type": "patchouli:text",
             "anchor": "intro",
             "title": "Introduction",
-            "text": "There are a number of ways to produce light in TFC. However, nearly all light sources do not last forever!$(br)Unlike vanilla Minecraft, you will need to keep an eye on your lights to re-ignite them when they burn out. The higher quality the light source is, the longer it will last.$(br)Permanent lightsources aren't available until much later, unless you get creative."
+            "text": "There are a number of ways to produce light in $(tfg_short). However, nearly all light sources do not last forever!$(br)Unlike vanilla Minecraft, you will need to keep an eye on your lights to re-ignite them when they burn out. The higher quality the light source is, the longer it will last.$(br)Permanent lightsources aren't available until much later, unless you get creative."
         },
         {
             "type": "patchouli:spotlight",
@@ -62,7 +62,7 @@
             "anchor": "candles",
             "title": "Candles",
             "item": "tag:tfc:candles",
-            "text": "Candles are made from $(thing)Wax$() or $(thing)Tallow$() and last for 11 days before needing to be relit.$(br)Candles may be placed and lit on the ground or in $(l:cooking/jam#jarbnet)Jarbnets$(). The amount of candles placed effects the light-level they emit."
+            "text": "Candles are made from $(thing)Wax$() or $(thing)Tallow$() and last for 30 days before needing to be relit.$(br)Candles may be placed and lit on the ground or in $(l:cooking/jam#jarbnet)Jarbnets$(). The amount of candles placed effects the light-level they emit."
         },
         {
             "type": "patchouli:multiblock",
@@ -138,7 +138,7 @@
             "anchor": "permanent_light",
             "title": "Permanent Light",
             "item": "minecraft:glowstone",
-            "text": "By the time you make an $(item)Extractor$() and $(item)Fluid Solidifier$() you can begin producing a variety of decorative permanent light sources with $(thing)Liquid Glowstone$() and $(thing)Glowstone Blocks$().$(br)Besides advancing in tech, there are some creative ways to light up an area. Such as $(l:agriculture/aqueducts)Lava Aqueducts$()."
+            "text": "By the time you make an $(item)Extractor$() and $(item)Fluid Solidifier$() you can begin producing a variety of decorative permanent light sources with $(thing)Liquid Glowstone$() and $(thing)Glowstone Blocks$().$(br)Besides advancing in tech, there are some creative ways to light up an area, such as $(l:agriculture/aqueducts)Lava Aqueducts$()."
         },
         {
             "type": "patchouli:relations",

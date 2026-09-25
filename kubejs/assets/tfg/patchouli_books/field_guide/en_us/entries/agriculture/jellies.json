@@ -5,7 +5,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "$(thing)Jellies$() are friendly blobs of slime that appear on various planets and environments. $(br2)They have a variety of uses, but most commonly, they produce type-specific $(thing)slime balls$(). $(br2)Did I mention they are very friendly? If you raise their familiarity high enough, they will become pets and happily follow you around!"
+			"text": "$(thing)Jellies$() are friendly blobs of slime that appear on various planets and environments. $(br2)They have a variety of uses, but most commonly, they produce type-specific $(thing)slime balls$(). $(br2)Did I mention they are very friendly? If you raise their familiarity high enough, they will become $(l:game_mechanics/pets)pets$() and happily follow you around!"
 		},
 		{
 			"type": "patchouli:text",
@@ -14,7 +14,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(li)$(bold)Moon Species$()$(li2)$(l:the_moon/moon_fauna#certus_jellie)Certus$()$(li)$(bold)Mars Species$()$(li2)$(l:mars/mars_fauna#pentetic_jellie)Pentetic$()$(li2)$(l:agriculture/jellies#spoiler)???$()"
+			"text": "$(li)$(bold)Moon Species$()$(li2)$(l:the_moon/moon_fauna#certus_jellie)Certus$()$(li)$(bold)Mars Species$()$(li2)$(l:mars/mars_fauna#pentetic_jellie)Pentetic$()$(li)$(bold)$(l:agriculture/jellies#spoiler)???$()"
 		},
 		{
 			"type": "patchouli:image",

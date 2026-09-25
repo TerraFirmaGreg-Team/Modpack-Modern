@@ -26,7 +26,7 @@
             "type": "patchouli:text",
             "anchor": "calculation",
             "title": "Calculating Decay",
-            "text": "When a food item is created in a world it is marked with a creation date time stamp internally. $(thing)TFC$() calculates the spoil rate by referencing that time stamp and the food's inherent decay modifier. Any preservation traits are added on top to shift the creation date back; allowing the item to last longer.$(br)Decay modifiers are a value from 0 to ∞. When 0 the food lasts forever, when ∞ the food spoils instantly. Therefore, the lower the modifier the better."
+            "text": "When a food item is created in a world it is marked with a creation date time stamp internally. $(thing)TFC$() calculates the spoil rate by referencing that time stamp and the food's inherent decay modifier. Any preservation traits are added on top to shift the creation date back, allowing the item to last longer.$(br)Decay modifiers are a value from 0 to ∞. When 0, the food lasts forever, when ∞ the food spoils instantly. Therefore, the lower the modifier the better."
         },
         {
             "type": "patchouli:text",
@@ -173,13 +173,13 @@
         {
             "type": "patchouli:text",
             "anchor": "cooking",
-            "text": "One other way to easily preserve certain types of food is to cook them. $(thing)Meats$() will all expire slower when they are cooked than when they are raw.$(br2)Certain devices that heat very hot, such as a $(l:craftsmanship/charcoal_forge)Charcoal Forge$() or a $(l:craftsmanship/crucible)Crucible$() are $(bold)bad$() for cooking food, which will make them expire faster!$(br)They give the $(c)$(bold)Burnt to a Crisp!$() trait with a modifier of 2.5",
+            "text": "One other way to easily preserve certain types of food is to cook them. $(thing)Meats$() will all expire slower when they are cooked than when they are raw.$(br2)Certain devices that heat very hot, such as a $(l:craftsmanship/charcoal_forge)Charcoal Forge$() or a $(l:craftsmanship/crucible)Crucible$() are $(bold)bad$() for cooking food, which will make them expire faster!$(br)They give the $(c)$(bold)Burnt to a Crisp!$() trait with a modifier of 2.5.",
             "title": "Cooking"
         },
         {
             "type": "tfg:heat_recipe",
             "recipe": "tfc:heating/mutton",
-            "text": "Instead, a $(l:cooking/cooking_methods#firepit)Firepit$() or a $(l:cooking/cooking_methods#grill)Grill$() can even provide a buff for using it! For example, cooking mutton (pictured above) in a $(thing)Firepit$() will increase its lifetime by about +42%, and cooking in a $(thing)Grill$() will give the $(5)$(bold)Wood Grill$() trait with a modifier of 0.8"
+            "text": "Instead, a $(l:cooking/cooking_methods#firepit)Firepit$() or a $(l:cooking/cooking_methods#grill)Grill$() can even provide a buff for using it! For example, cooking mutton (pictured above) in a $(thing)Firepit$() will increase its lifetime by about +42%, and cooking in a $(thing)Grill$() will give the $(5)$(bold)Wood Grilled$() trait with a modifier of 0.8."
         },
         {
             "type": "patchouli:text",
@@ -216,7 +216,7 @@
         {
             "type": "patchouli:text",
             "anchor": "salting",
-            "text": "$(thing)Salting$() is a way to make meat last longer. To salt meat, it must be crafted with $(thing)Salt$() in a crafting grid. Only raw meat can be salted. Afterward, cooking or otherwise preserving the meat does not take away the salted property.$(7)$(bold)Salted$() food gain a modifier of 0.5",
+            "text": "$(thing)Salting$() is a way to make meat last longer. To salt meat, it must be crafted with $(thing)Salt$() in a crafting grid. Only raw meat can be salted. Afterward, cooking or otherwise preserving the meat does not take away the salted property.$(7)$(bold)Salted$() food gain a modifier of 0.5.",
             "title": "Salting"
         },
         {
@@ -235,20 +235,20 @@
                 }
             },
             "name": "Salt Licks",
-            "text": "Salt can be found naturally in forests in the form of salt licks or ground from salt ores like halite.",
+            "text": "Salt can be found naturally in forests in the form of salt licks, or ground from salt ores like halite.",
             "enable_visualize": false
         },
         {
             "type": "patchouli:text",
             "anchor": "vinegar",
             "title": "Vinegar Preservation",
-            "text": "$(thing)Vinegar Preservation$() is a way of making fruits, veggies, and meat last longer. To preserve food in vinegar it must first be $(thing)Pickled$() in $(thing)Brine$(). Once food is pickled, it can be sealed in a Barrel of Vinegar. If there is 125mB of Vinegar per pickled food item, the food will last longer. $(7)$(bold)Pickled$() food gain a modifier of 0.5 while $(7)$(bold)Submerged in Vinegar$() food gain a modifier of 0.1"
+            "text": "$(thing)Vinegar Preservation$() is a way of making fruits, veggies, and meat last longer. To preserve food in vinegar it must first be $(thing)Pickled$() in $(thing)Brine$(). Once food is pickled, it can be sealed in a Barrel of Vinegar. If there is 125mB of Vinegar per pickled food item, the food will last longer. $(7)$(bold)Pickled$() food gain a modifier of 0.5 while $(7)$(bold)Submerged in Vinegar$() food gain a modifier of 0.1."
         },
         {
             "type": "patchouli:text",
             "anchor": "drying",
             "title": "Drying",
-            "text": "The $(thing)Drying Mat$() is used to dry items. It is made with $(thing)Fruit Leaves$(), which are obtained from breaking the leaves of $(thing)Fruit Trees$(). To use the drying mat, place it out in the sun and add an item to it with $(item)$(k:key.use)$(). If it rains, the drying process must start over. Some food items―Like fruits―Will gain the $(7)$(bold)Dried$() trait which gives a modifier of 0.8"
+            "text": "The $(thing)Drying Mat$() is used to dry items. It is made with $(thing)Fruit Leaves$(), which are obtained from breaking the leaves of $(thing)Fruit Trees$(). To use the drying mat, place it out in the sun and add an item to it with $(item)$(k:key.use)$(). If it rains, the drying process must start over. Some food items―Like fruits―Will gain the $(7)$(bold)Dried$() trait which gives a modifier of 0.8."
         },
         {
             "type": "patchouli:text",
@@ -258,7 +258,7 @@
             "type": "patchouli:text",
             "anchor": "oven_baked",
             "title": "Oven Baked",
-            "text": "Baking food items in a $(l:cooking/cooking_methods#top_oven)Top Oven$() is the second-best way to preserve your food items through cooking as it gives the $(7)$(bold)Oven Baked$() trait with a modifier of 0.9"
+            "text": "Baking food items in a $(l:cooking/cooking_methods#top_oven)Top Oven$() is the second-best way to preserve your food items through cooking as it gives the $(7)$(bold)Oven Baked$() trait with a modifier of 0.9."
         },
         {
             "type": "patchouli:text",
@@ -268,7 +268,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "The cellar is used for food preservation and $(l:cooking/cheese#cheese_wheel)Aging Cheese$() by using $(l:cooking/decay#shelf)Food Shelves$() and $(l:cooking/decay#shelf)Hangers$() to hold food items or by placing cheese on the ground or $(thing)Barrel Racks$().$(br)The cellar performs better in $(l:the_world/climate#temperature)Colder Environments$().$(li)$(2)Temp >= 0°C:$() Shelves 0.4, Hangers 0.35$(li)$(2)Temp < 0°C:$() Shelves 0.35, Hangers 0.3$(li)$(2)Temp < -12°C:$() Shelves Food 0.25, Hangers0.25"
+            "text": "The cellar is used for food preservation and $(l:cooking/cheese#cheese_wheel)Aging Cheese$() by using $(l:cooking/decay#shelf)Food Shelves$() and $(l:cooking/decay#shelf)Hangers$() to hold food items or by placing cheese on the ground or $(thing)Barrel Racks$().$(br2)The cellar performs better in $(l:the_world/climate#temperature)Colder Environments$().$(li)$(2)Temp >= 0°C:$() Shelves 0.4, Hangers 0.35$(li)$(2)Temp < 0°C:$() Shelves 0.35, Hangers 0.3$(li)$(2)Temp < -12°C:$() Shelves 0.25, Hangers 0.25"
         },
         {
             "type": "tfg:multimultiblock",
@@ -439,34 +439,34 @@
             "anchor": "shelf",
             "title": "Cellar Storage",
             "item": "tag:firmalife:food_shelves,tag:firmalife:hangers",
-            "text": "$(item)Food shelves$() and $(item)Hangers$() can contain a full stack of one food item. Adding and removing the item can be done with $(item)$(k:key.use)$() or $(item)$(k:key.sneak)$(k:key.use)$() for full stacks. Items in valid food shelves and hangers receive a decay modifier that is better than vessels and increases with declining $(thing)Average Temperature$()."
+            "text": "$(item)Food shelves$() and $(item)Hangers$() can contain a full stack of one food item. Adding and removing the item can be done with $(item)$(k:key.use)$() or $(item)$(k:key.sneak) + $(k:key.use)$() for full stacks. Items in valid food shelves and hangers receive a decay modifier that is better than vessels and increases with declining $(thing)Average Temperature$()."
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "lunch_box",
             "title": "Lunch Boxes",
             "item": "tfclunchbox:lunchbox,tfclunchbox:cooling_lunchbox,tfclunchbox:electric_lunchbox",
-            "text": "Lunch boxes provide a convenient method to transport and consume food items. The basic lunchbox provides the $(5)$(bold)Preserved$() trait while the $(item)Cooling$() and $(item)Electric Lunchboxes$() give the $(9)$(bold)Cooled$() trait with a modifier of 0.3$(br2)Cooling lunchboxes consume $(item)Ice$() to preserve food, while the electric lunchbox consumes $(2)EU$() energy."
+            "text": "Lunch boxes provide a convenient method to transport and consume food items. The basic lunchbox provides the $(5)$(bold)Preserved$() trait while the $(item)Cooling$() and $(item)Electric Lunchboxes$() give the $(9)$(bold)Cooled$() trait with a modifier of 0.3.$(br2)Cooling lunchboxes consume $(item)Ice$() to preserve food, while the electric lunchbox consumes $(2)EU$() energy."
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "refrigerator",
             "title": "Refrigerators",
             "item": "tfg:mv_food_refrigerator,tfg:hv_food_refrigerator,tfg:ev_food_refrigerator,tfg:iv_food_refrigerator",
-            "text": "Refrigerators are added by $(tfg_short) and consume $(2)EU$() to provide the $(3)$(bold)Refrigerating$() trait with a modifier of 0.125$(br)Increasing tiers of the fridge does not affect the preservation buff―Only the storage space available. Fridges can also combine food stacks by merging expiration dates."
+            "text": "Refrigerators are added by $(tfg_short) and consume $(2)EU$() to provide the $(3)$(bold)Refrigerating$() trait with a modifier of 0.125.$(br)Higher tiers of the fridge do not affect the preservation buff―only the storage space available. Fridges can also combine food stacks by merging expiration dates."
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "freeze_dry",
             "title": "Freeze Drying",
             "item": "tfg:food/meal_bag,tfg:food/freeze_dried_fruit,tfg:food/calorie_paste",
-            "text": "$(tfg_short) adds the ability to freeze dry select food items in $(item)Food Processors$() to greatly increase shelf life. Freeze drying gives the $(7)$(bold)Cryodessicated$() trait with a modifier of 0.02"
+            "text": "$(tfg_short) adds the ability to freeze-dry select food items in $(item)Food Processors$() to greatly increase shelf life. Freeze drying gives the $(7)$(bold)Cryodessicated$() trait with a modifier of 0.02."
         },
         {
             "type": "patchouli:text",
             "anchor": "pest",
             "title": "Pests",
-            "text": "Food that is left sitting in chests can attract $(thing)Rats$(). So remember to store food properly in vessels, cellars or fridges. Rats are able to open containers and eat the food out of them. You will be alerted to a rat's presence by the message $(thing)'This container has a foul smell'$(). It is important to note that unsealing and resealing a large vessel before you leave the screen will never attract pests."
+            "text": "Food that is left sitting in chests can attract $(thing)Rats$(), so remember to store food properly in vessels, cellars, or fridges. Rats are able to open containers and eat the food out of them. You will be alerted to a rat's presence by the message $(thing)'This container has a foul smell'$(). It is important to note that unsealing and resealing a large vessel before you leave the screen will never attract pests."
         },
         {
             "type": "patchouli:relations",

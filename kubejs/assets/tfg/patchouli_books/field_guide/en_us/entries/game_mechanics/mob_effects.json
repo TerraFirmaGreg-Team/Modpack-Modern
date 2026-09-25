@@ -62,13 +62,13 @@
             "type": "patchouli:text",
             "anchor": "instant_radiation",
             "title": "Instant Radiation",
-            "text": "This effect quickly damages the player with $(l:game_mechanics/hazards#radioactive_materials)Radiation Damage$()"
+            "text": "This effect quickly damages the player with $(l:game_mechanics/hazards#radioactive_materials)Radiation Damage$()."
         },
         {
             "type": "patchouli:text",
             "anchor": "final_moments",
             "title": "Final Moments",
-            "text": "This effect starts a timer that counts down your last few minutes. When the clock ends you die."
+            "text": "This effect starts a timer that counts down your last few minutes. When the clock ends, you die."
         },
         {
             "type": "patchouli:relations",

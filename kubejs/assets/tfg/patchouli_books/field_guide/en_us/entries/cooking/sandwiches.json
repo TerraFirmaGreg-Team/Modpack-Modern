@@ -6,14 +6,14 @@
         {
             "type": "patchouli:text",
             "anchor": "sandwich",
-            "text": "$(thing)Sandwiches$() are a meal allowing the combination of two $(thing)$(n)$(t:Bread, Flat Bread, or Bread Slice)Bread$() items and three $(n)$(thing)$(t:tfc:#usable_in_sandwich)Sandwich Ingredients$().$(br2)Sandwich ingredients may not be rotten, but once the sandwich is created, it is considered fresh, and decays like it is new."
+            "text": "$(thing)Sandwiches$() are a meal allowing the combination of two $(thing)$(n)$(t:Bread, Flat Bread, or Bread Slice)Bread$() items and three $(n)$(thing)$(t:tfc:#usable_in_sandwich)Sandwich Ingredients$().$(br2)Sandwich ingredients must not be rotten, but once the sandwich is created, it is considered fresh, and decays like it is new."
         },
         {
             "type": "patchouli:spotlight",
             "item": "tfc:food/barley_bread_sandwich",
             "title": "Sandwich",
             "link_recipes": false,
-            "text": "Sandwiches are dynamic meal items. The ingrediants used will determine the $(l:cooking/food_and_water#nutrients)Nutrients$() it contains.$(br2)$(t:§70.8§r§l∑§r§7Ingredients §r+ §70.5§r§l∑§r§7Bread§r)To calculate the nutritional value; take the sum of each ingredient's nutrition and multiply by 0.8 except the bread which is multiplied by 0.5$()"
+            "text": "Sandwiches are dynamic meal items. The ingrediants used will determine the $(l:cooking/food_and_water#nutrients)Nutrients$() it contains.$(br2)$(t:§70.8§r§l∑§r§7Ingredients §r+ §70.5§r§l∑§r§7Bread§r)To calculate the nutritional value; take the sum of each ingredient's nutrition and multiply by 0.8 except the bread which is multiplied by 0.5$()."
         },
         {
             "type": "patchouli:spotlight",
@@ -21,7 +21,7 @@
             "anchor": "jam_sandwich",
             "title": "Jam Sandwich",
             "link_recipes": false,
-            "text": "Jam Sandwiches are also dynamic meal items that use the same calculation as regular sandwiches.$(br)Crafting a jam sandwich will leave an empty jar behind."
+            "text": "Jam Sandwiches are also dynamic meal items that use the same calculation as regular sandwiches.$(br)Crafting a jam sandwich will leave an empty jar behind.$(br2)Jam can only be combined with $(thing)cooked meat and fish$() or $(thing)cheese$() to make a jam sandwich."
         },
         {
             "type": "patchouli:relations",

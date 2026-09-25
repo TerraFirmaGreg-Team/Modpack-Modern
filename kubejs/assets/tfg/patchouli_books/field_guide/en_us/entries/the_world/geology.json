@@ -22,7 +22,7 @@
             "images": [
                 "tfg:textures/gui/field_guide/maps/terrain_map.png"
             ],
-            "text": "A 65.5km² map displaying average continental formations and mainstream rivers with their tributaries in $(thing)TerraFirmaCraft$().",
+            "text": "A 65.5km² map displaying average continental formations and mainstream rivers with their tributaries.",
             "border": true
         },
         {
@@ -34,7 +34,7 @@
             "images": [
                 "tfg:textures/gui/field_guide/maps/biomes_map.png"
             ],
-            "text": "A 65.5km² map displaying average biome distribution based on local $(l:the_world/climate#climate)Climate$() in $(thing)TerraFirmaCraft$().",
+            "text": "A 65.5km² map displaying average biome distribution based on local $(l:the_world/climate#climate)Climate$().",
             "border": true
         },
         {
@@ -77,7 +77,7 @@
             "type": "patchouli:text",
             "anchor": "rock_devisions",
             "title": "Rock Devisions",
-            "text": "Rocks in $(thing)TerraFirmaCraft$() are typically classified among four devisions: $(l:the_world/geology#sedimentary)Sedimentary$(), $(l:the_world/geology#metamorphic)Metamorphic$(), $(l:the_world/geology#igneous_extrusive)Igneous Extrusive$(), and $(l:the_world/geology#igneous_intrusive)Igneous Intrusive$(). These categories determine where the rock can spawn, and also what ores may spawn in this rock."
+            "text": "Rocks in $(tfg_short) are typically classified among four devisions: $(l:the_world/geology#sedimentary)Sedimentary$(), $(l:the_world/geology#metamorphic)Metamorphic$(), $(l:the_world/geology#igneous_extrusive)Igneous Extrusive$(), and $(l:the_world/geology#igneous_intrusive)Igneous Intrusive$(). These categories determine where the rock can spawn, and also what ores may spawn in this rock."
         },
         {
             "title": "Sedimentary",
@@ -155,7 +155,7 @@
                 "tag": "tfg:stone_composition/raw/igneous_felsic"
             },
             "anchor": "igneous_felsic",
-            "text": "$(l:https://en.wikipedia.org/wiki/Felsic)Igneous-Felsic$() rocks contain a rich presence of elements that form feldspar and quartz. Generally a rock must contain more than 75% of felsic minerals to be classified as $(thing)Felsic$()"
+            "text": "$(l:https://en.wikipedia.org/wiki/Felsic)Igneous-Felsic$() rocks contain a rich presence of elements that form feldspar and quartz. Generally a rock must contain more than 75% of felsic minerals to be classified as $(thing)Felsic$()."
         },
         {
             "title": "Igneous-Intermediate",
@@ -164,7 +164,7 @@
                 "tag": "tfg:stone_composition/raw/igneous_intermediate"
             },
             "anchor": "igneous_intermediate",
-            "text": "$(l:https://en.wikipedia.org/wiki/Intermediate_composition)Igneous-Intermediate$() rocks contain 51.5 - 63.0 wt% SiO₂. Putting them in-between $(l:the_world/geology#igneous_felsic)Felsic$() and $(l:the_world/geology#igneous_mafic)Mafic$() compositions."
+            "text": "$(l:https://en.wikipedia.org/wiki/Intermediate_composition)Igneous-Intermediate$() rocks contain 51.5 - 63.0 wt% SiO₂, putting them in between $(l:the_world/geology#igneous_felsic)Felsic$() and $(l:the_world/geology#igneous_mafic)Mafic$() compositions."
         },
         {
             "title": "Igneous-Mafic",

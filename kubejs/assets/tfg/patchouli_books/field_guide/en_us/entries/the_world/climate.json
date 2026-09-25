@@ -6,7 +6,7 @@
         {
             "type": "patchouli:text",
             "anchor": "intro",
-            "text": "In $(tfg), the climate and the time are both very important factors in the way you experience the world. $(l:the_world/climate#seasons)Seasons$() will pass on a cycle affecting local weather and crop growth. As well as your own ambient temperature. Be careful to understand the climate and the geography of your area before deciding to settle down."
+            "text": "In $(tfg), the climate and the time are both very important factors in the way you experience the world. $(l:the_world/climate#seasons)Seasons$() will pass on a cycle affecting local weather and crop growth, as well as your own ambient temperature. Be careful to understand the climate and the geography of your area before deciding to settle down."
         },
         {
             "type": "patchouli:text",
@@ -18,7 +18,7 @@
             "type": "patchouli:text",
             "title": "Calendar",
             "anchor": "calendar",
-            "text": "The $(thing)Calendar$() can be viewed at any time by pressing $(item)$(k:key.inventory)$(), and clicking on the calendar tab. It is important to note that the effects of seasons will be inverted when crossing equator lines."
+            "text": "The $(thing)Calendar$() can be viewed at any time by pressing $(item)$(k:key.inventory)$(), and clicking on the calendar tab. It is important to note that the effects of seasons will be inverted when crossing equator lines, such as at $(thing)Z=10000$()."
         },
         {
             "type": "patchouli:image",

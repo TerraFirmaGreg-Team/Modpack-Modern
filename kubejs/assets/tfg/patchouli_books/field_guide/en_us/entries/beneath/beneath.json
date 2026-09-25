@@ -19,8 +19,14 @@
 			"text": "$(li)$(bold)$(l:beneath/beneath#entering)Entering$() and $(bold)$(l:beneath/beneath#exiting)Exiting$()$(li)$(bold)$(l:beneath/beneath#biomes)Biomes$()$(li2)$(l:beneath/beneath#biomes_top)Top Layer$()$(li2)$(l:beneath/beneath#biomes_middle)Middle Layer$()$(li2)$(l:beneath/beneath#biomes_bottom)Bottom Layer$()$(li)$(bold)$(l:beneath/beneath#geology)Geology$()$(li2)$(l:beneath/beneath#more_rocks)More Rocks$()"
 		},
 		{
-			"type": "patchouli:text",
-			"text": ""
+			"type": "patchouli:image",
+			"title": "",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/portal.png",
+				"tfg:textures/gui/field_guide/nether/aether.png"
+			],
+			"border": true,
+			"text": "Not like this"
 		},
 		{
 			"type": "patchouli:text",

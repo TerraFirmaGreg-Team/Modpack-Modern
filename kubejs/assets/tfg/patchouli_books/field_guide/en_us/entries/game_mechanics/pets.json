@@ -18,11 +18,11 @@
             "type": "patchouli:text",
             "anchor": "dogs",
             "title": "Dogs",
-            "text": "Dogs are a pet that eats grains, vegetables, and meat, rotten or not rotten. They will help you hunt almost any land predator or prey.$(br)Dogs come in multiple variants that depend on what type of wolf it was domesticated from."
+            "text": "Dogs are a pet that eats grains, vegetables, and meat, rotten or not rotten. They will help you hunt almost any land predator or prey.$(br)Dogs come in multiple variants that depend on what type of $(l:the_world/wild_animals#wolf)wolf$() it was domesticated from."
         },
         {
             "type": "patchouli:image",
-            "text": "",
+            "text": "Backported from $(item)Minecraft 1.20.5$()!",
             "images": [
                 "tfg:textures/gui/field_guide/dog_variants.png"
             ],
@@ -117,8 +117,9 @@
         },
         {
             "type": "patchouli:entity",
-            "text": "A cat.",
+            "text": "As villages do not exist, taming an $(l:the_world/wild_animals#ocelot)Ocelot$() is the only way to obtain a cat.",
             "entity": "tfc:cat{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
+            "title": " ",
             "scale": 0.7
         },
         {
@@ -131,13 +132,14 @@
             "type": "patchouli:entity",
             "entity": "tfg:fox{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,FoxType:1}",
             "scale": 0.7,
+            "title": " ",
             "text": "A fox."
         },
         {
             "type": "patchouli:text",
             "anchor": "pigeons",
             "title": "Pigeons",
-            "text": "Pigeons are capable of being tamed and delivering packages, but do not follow standard commands. You can feed $(t:#fowlplay:pigeon_food)$(6)Pigeon Food$(), such as grains and vegetables, to a pigeon to tame it.$(br)Once tamed a pigeon can deliver $(t:#fowlplay:pigeon_deliverable)$(6)Sacks$() to other players by naming the pouch with the players name before handing it over. "
+            "text": "Pigeons are capable of being tamed and delivering packages, but do not follow standard commands. You can feed $(t:#fowlplay:pigeon_food)$(6)Pigeon Food$(), such as grains and vegetables, to a pigeon to tame it.$(br)Once tamed a pigeon can deliver $(t:#fowlplay:pigeon_deliverable)$(6)Sacks$() to other players by $(l:craftsmanship/scribing_table)naming the pouch$() with the player's name before handing it over. "
         },
         {
             "type": "patchouli:entity",
@@ -188,7 +190,7 @@
             "anchor": "lead",
             "title": "Lead",
             "item": "minecraft:lead",
-            "text": "A $(thing)Lead$() can be crafted from burlap fiber or string, and a metal ring.$(br)You can $(item)$(k:key.use)$() an animal with a lead to pull them around. Much more efficient than baiting them with food!"
+            "text": "A $(thing)Lead$() can be crafted from burlap fiber or string, and a metal ring.$(br)You can $(item)$(k:key.use)$() an animal with a lead to pull them around. Much more efficient than baiting them with food!$(br2)You can also pick up some smaller animals with $(item)$(k:key.sneak) + $(k:key.use)$() with empty hands."
         },
         {
             "type": "patchouli:relations",
@@ -197,7 +199,8 @@
             "entries": [
                 "tfg:agriculture/animal_husbandry",
                 "tfg:craftsmanship/scribing_table",
-                "tfg:cooking/food_and_water"
+                "tfg:cooking/food_and_water",
+                "tfg:agriculture/jellies"
             ]
         }
     ],

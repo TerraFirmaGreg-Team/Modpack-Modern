@@ -326,7 +326,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "If a beehive has two frames with queens, and an empty frame, the two colonies have a chance of $(thing)Breeding$() and producing a new queen in the empty frame. This has the effect of passing on the $(thing)Abilities$() of each parent to the offspring. Abilities are different traits bees have that change how they affect the world around them. They are on a scale of 1-10, with 10 being the max."
+            "text": "If a beehive has two frames with queens, and an empty frame, the two colonies have a chance of $(thing)Breeding$() and producing a new queen in the empty frame. This has the effect of passing on the $(thing)Abilities$() of each parent to the offspring. Abilities are different traits bees have that change how they affect the world around them. They are on a scale of 1-10, with 10 being the max.$(br)Bees can have up to $(thing)four$() abilities."
         },
         {
             "title": "Honey & Wax",

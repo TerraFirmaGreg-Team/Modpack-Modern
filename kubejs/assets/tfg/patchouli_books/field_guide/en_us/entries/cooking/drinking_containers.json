@@ -7,11 +7,11 @@
             "type": "patchouli:text",
             "title": "Introduction",
             "anchor": "intro",
-            "text": "If you are tired of drinking directly out of streams and ponds like a wild horse then consider making a $(item)Drinking Vessel!$()$(br2)Everytime you drink from a vessel you will consume 100mb of fluid and damage the vessel 1 durability (If applicable) or has a chance of breaking (If applicable. Can be changed in TFC server config)."
+            "text": "If you are tired of drinking directly out of streams and ponds like a wild horse then consider making a $(item)Drinking Vessel!$()$(br2)Every time you drink from a vessel you will consume $(thing)100mB$() of fluid and damage the vessel 1 durability (if applicable) or has a chance of breaking (if applicable, can be changed in TFC server config)."
         },
         {
             "type": "patchouli:text",
-            "text": "Drinking from a container will also work for passing on drink effects from $(item)Alcohol$() or other fluids. As well as $(l:cooking/food_and_water#nutrients)Nutrient$() values.$(br2)$(o)$(7)Some drinking containers can even be played as a musical instrument when empty.$()"
+            "text": "Drinking from a container will also work for acquiring drink effects from $(item)Alcohol$() or other fluids, as well as $(l:cooking/food_and_water#nutrients)Nutrient$() values.$(br2)$(o)$(7)Some drinking containers can even be played as a musical instrument when empty.$()"
         },
         {
             "type": "tfg:table",
@@ -158,6 +158,7 @@
             "title": "Further Reading",
             "anchor": "relations",
             "entries": [
+                "tfg:cooking/drinks",
                 "tfg:cooking/food_and_water"
             ]
         }

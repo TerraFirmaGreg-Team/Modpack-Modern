@@ -5,7 +5,7 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "$(thing)Chocolate-making$() takes a few processing steps, and is intended to be an immersive way to experience cooking.$(br)Chocolate items contain $(l:cooking/food_and_water#grain)Grain$() and $(l:cooking/food_and_water#dairy)Dairy$() nutrients while also providing the $(l:cooking/food_and_water#sugary_transient_effect)Sugary$() effect when eaten. Making them a strong choice for meal ingredients."
+      "text": "$(thing)Chocolate-making$() takes a few processing steps, and is intended to be an immersive way to experience cooking.$(br)Chocolate items contain $(l:cooking/food_and_water#grain)Grain$() and $(l:cooking/food_and_water#dairy)Dairy$() nutrients while also providing the $(l:cooking/food_and_water#sugary_transient_effect)Sugary$() effect when eaten, making them a strong choice for meal ingredients."
     },
     {
       "type": "patchouli:text",

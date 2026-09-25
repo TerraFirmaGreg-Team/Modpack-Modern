@@ -60,7 +60,7 @@
             "anchor": "pineapple_leather",
             "title": "Leather Alternative",
             "item": "firmalife:pineapple_leather",
-            "text": "An alternative to animal leather is $(item)Pineapple Leather$(). Which can be produced by first drying $(l:the_world/wild_fruits#pineapple)Pineapples$(), stripping them into string, and then $(l:agriculture/weaving)Weaving$() the pineapple string into pineapple leather."
+            "text": "An alternative to animal leather is $(item)Pineapple Leather$(). Which can be produced by first $(l:cooking/decay#drying)drying$() $(l:the_world/wild_fruits#pineapple)Pineapples$(), stripping them into string, and then $(l:agriculture/weaving)Weaving$() the pineapple string into pineapple leather."
         },
         {
             "type": "patchouli:relations",

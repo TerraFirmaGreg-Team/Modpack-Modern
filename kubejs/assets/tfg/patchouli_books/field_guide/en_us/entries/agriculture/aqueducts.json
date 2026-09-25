@@ -5,7 +5,7 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "$(thing)Aqueducts$() are a tool used for moving $(thing)Fluids$() around. Since $(item)Wooden Buckets$(), are not able to transport water sources, $(thing)Aqueducts$() exist to move fluids horizontally any distance to their destination. They can be used to transport any type of water―including $(thing)Fresh Water$(), $(thing)Salt Water$(), and $(thing)Hot Spring Water$()―as well as $(thing)Lava$().$(br)Aqueducts with plain water in them can $(l:agriculture/growing_crops#hydration)hydrate farmland$()."
+            "text": "$(thing)Aqueducts$() are a tool used for moving $(thing)Fluids$() around. Since $(item)Wooden Buckets$() are not able to transport water sources, $(thing)Aqueducts$() exist to move fluids horizontally any distance to their destination. They can be used to transport any type of water―including $(thing)Fresh Water$(), $(thing)Salt Water$(), and $(thing)Hot Spring Water$()―as well as $(thing)Lava$().$(br)Aqueducts with plain water in them can $(l:agriculture/growing_crops#hydration)hydrate farmland$()."
         },
         {
             "type": "patchouli:text",

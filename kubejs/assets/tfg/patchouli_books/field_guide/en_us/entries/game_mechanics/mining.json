@@ -21,7 +21,7 @@
             "type": "patchouli:spotlight",
             "anchor": "tools",
             "title": "Tools",
-            "item": "tag:minecraft:pickaxes,tag:forge:tools/mining_hammers,tag:forge:tools/drills",
+            "item": "tag:tfc:pickaxes,tag:forge:tools/mining_hammers",
             "text": "Before starting, you should prepare the right equipment for the job. You will need a $(thing)pickaxe$() or $(thing)mining hammer$() to mine ores. A mining hammer has an advantage of breaking a 3x3 area of blocks at once.$(br2)A regular $(thing)hammer$() can also break stone type blocks, but will not drop ores. It can still be useful for $(l:craftsmanship/anvils#raw_rock)extracting$() raw stone, however."
         },
         {
@@ -272,7 +272,7 @@
             "images": [
                 "tfg:textures/gui/field_guide/supports/support_2d.png"
             ],
-            "text": "When mined―individual blocks have their own range check for triggering collapses. Up to 7x7x7. Shown by the red/yellow area centered on the stone.",
+            "text": "When mined, individual blocks have their own range check for triggering collapses, up to 7x7x7, shown by the red/yellow area centered on the stone.",
             "border": true
         },
         {
@@ -286,7 +286,7 @@
             "images": [
                 "tfg:textures/gui/field_guide/supports/support_2d_pass.png"
             ],
-            "text": "When mining the highlighted block no collapse can occur because all free space (yellow area) is protected by the support (green area).",
+            "text": "When mining the highlighted block, no collapse can occur because all free space (yellow area) is protected by the support (green area).",
             "border": true
         },
         {
@@ -305,7 +305,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "In addition to basic $(thing)Wooden and stone Support Beams$() $(tfg_short) also adds higher tiers of support beams. Including $(thing)Concrete Support Beams$(), $(thing)Steel Support Beams$(), and $(thing)Reinforced Concrete Support Beams$(). With the highest tier of supports holding an area of $(bold)33 x 13 x 33$() blocks centered on the horizontal support beam!$(br)Support area can be viewed in the support beams tooltip.",
+            "text": "In addition to basic $(thing)Wooden and stone Support Beams$(), $(tfg_short) also adds higher tiers of support beams, including $(thing)Concrete Support Beams$(), $(thing)Steel Support Beams$(), and $(thing)Reinforced Concrete Support Beams$(). The highest tier of supports holds an area of $(bold)33 x 13 x 33$() blocks centered on the horizontal support beam!$(br)Support area can be viewed in the support beams tooltip.",
             "title": "Higher Tiers",
             "anchor": "higher_tiers"
         },

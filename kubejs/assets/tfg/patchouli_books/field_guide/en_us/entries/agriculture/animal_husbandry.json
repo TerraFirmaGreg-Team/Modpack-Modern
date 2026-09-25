@@ -173,7 +173,7 @@
             "type": "patchouli:text",
             "anchor": "camelides",
             "title": "Camels",
-            "text": "$(thing)Camels$() are $(l:agriculture/animal_husbandry#mammals)Mammals$() similar $(l:agriculture/animal_husbandry#equines)Equines$() in that they can be ridden when tamed. They become rideable after reaching 15% familiarity when equiped with a $(l:agriculture/leather_making)Saddle$(). Camels have a naturally high step-height and can cross ravines with their powerful lunge jumps."
+            "text": "$(thing)Camels$() are $(l:agriculture/animal_husbandry#mammals)Mammals$() similar to $(l:agriculture/animal_husbandry#equines)Equines$() in that they can be ridden when tamed. They become rideable after reaching 15% familiarity when equiped with a $(l:agriculture/leather_making)Saddle$(). Camels have a naturally high step-height and can cross ravines with their powerful lunge jumps."
         },
         {
             "type": "patchouli:crafting",
