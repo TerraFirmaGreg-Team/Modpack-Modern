@@ -18,6 +18,7 @@
 	"tacztweaks.config.crawl": "Czołganie",
 	"tacztweaks.config.crawl.dynamicPitchLimit.description": "Dynamicznie zmienia limit kąta patrzenia na podstawie kolizji z blokami.",
 	"tacztweaks.config.crawl.dynamicPitchLimit.name": "Dynamiczny limit pochylenia",
+	"tacztweaks.config.crawl.enabled.description": "Włącza lub wyłącza całkowicie funkcję czołgania się z TaCZ.\nPozwala trybom czołgania się z innych modów na prawidłowe działanie z TaCZ.",
 	"tacztweaks.config.crawl.enabled.name": "Włączony",
 	"tacztweaks.config.crawl.pitchLowerLimit.description": "Zmienia dolny limit pochylenia podczas czołgania się.",
 	"tacztweaks.config.crawl.pitchLowerLimit.name": "Dolny limit pochylenia",

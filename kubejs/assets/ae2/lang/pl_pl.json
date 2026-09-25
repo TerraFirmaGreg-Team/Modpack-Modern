@@ -242,6 +242,7 @@
 	"gui.ae2.ConfirmCraftCpuStatus": "Magazyn: %s : Podprocesory: %s",
 	"gui.ae2.ConfirmCraftNoCpu": "Magazyn: N/A : Podprocesory N/A",
 	"gui.ae2.CopyMode": "Tryb kopiowania",
+	"gui.ae2.CopyModeDesc": "Określa, czy zawartość panelu konfiguracji zostanie wyczyszczona po wyjęciu magazynu.",
 	"gui.ae2.CPUs": "Procesor",
 	"gui.ae2.CraftErrorCpuBusy": "Wybrany procesor pracuje już nad innym zadaniem.",
 	"gui.ae2.CraftErrorCpuOffline": "Wybrany procesor jest offline.",

@@ -32,7 +32,7 @@
         },
         {
             "type": "tfc:multimultiblock",
-            "text": "These can be placed on the ground in a dry location, and after a day they will harden into $(thing)Mud Bricks$().",
+            "text": "Można je położyć na ziemi w suchym miejscu, a po jednym dniu stwardnieją i zmienią się w $(thing)błotne cegły$().",
             "multiblocks": [
                 {
                     "pattern": [

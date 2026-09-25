@@ -22,7 +22,7 @@
     },
     {
       "type": "patchouli:text",
-      "text": "$(li)Granite$()$(li)Diorite$()$(li)Gabbro$()$(li)Slate$()$(li)Phyllite$()$(li)Schist$()$(li)Gneiss$()$(li)Marble$()",
+      "text": "$(li)Granit$()$(li)Dioryt$()$(li)Gabbro$()$(li)Łupek szarogłazowy$()$(li)Fyllit$()$(li)Łupek metamorficzny$()$(li)Gneiss$()$(li)Marmur$()\n \npages.3.text\npages -> 3 -> text\nFile: stainless_steel.json",
       "title": "Wszystkie skały chromowe"
     }
   ],
