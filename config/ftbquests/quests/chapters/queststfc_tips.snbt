@@ -6,12 +6,7 @@
 	icon: "minecraft:apple"
 	id: "5D74D1A68158F29E"
 	order_index: 0
-	quest_links: [{
-		id: "73EE47579DB5928E"
-		linked_quest: "43CC656CB7D0F813"
-		x: 4.0d
-		y: -5.0d
-	}]
+	quest_links: [ ]
 	quests: [
 		{
 			dependencies: ["427814F6E9386772"]

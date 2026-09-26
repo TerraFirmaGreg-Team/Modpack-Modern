@@ -91,12 +91,6 @@
 			y: -3.0d
 		}
 		{
-			id: "7C7D879462F927C3"
-			linked_quest: "2EE6A09A11BFC0EE"
-			x: -5.0d
-			y: 1.5d
-		}
-		{
 			id: "156D1EDE1657636B"
 			linked_quest: "21042F13F754E6E6"
 			x: 3.0d
@@ -119,12 +113,6 @@
 			linked_quest: "70FE6706B43FC5FC"
 			x: 0.0d
 			y: -4.5d
-		}
-		{
-			id: "6E9E31CA4122E6C3"
-			linked_quest: "1371C0F8BFDEE0FC"
-			x: 6.0d
-			y: -3.0d
 		}
 		{
 			id: "591636FADB59A1AE"
@@ -1972,6 +1960,75 @@
 			title: "{quests.combat_tips.javelin_throwing.title}"
 			x: -8.0d
 			y: -4.5d
+		}
+		{
+			dependencies: ["45B3A5C226C0EC9F"]
+			description: ["{quests.tfg_tips.piglin_disguise.desc}"]
+			id: "79A0CA1EB77DEB7B"
+			subtitle: "{quests.tfg_tips.piglin_disguise.subtitle}"
+			tasks: [{
+				id: "4605A5F17EC2DB46"
+				item: "tfg:piglin_disguise"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2E3C021FEAE6A490"]
+			description: ["{quests.tfg_tips.blue_steel_diving.desc}"]
+			id: "25CD360CC4287805"
+			subtitle: "{quests.tfg_tips.blue_steel_diving.subtitle}"
+			tasks: [
+				{
+					id: "26B517DF7DD0EB7F"
+					item: {
+						Count: 1
+						id: "create:netherite_diving_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1D00B7B1BE2D0D26"
+					item: {
+						Count: 1
+						id: "create:netherite_backtank"
+						tag: {
+							Air: 1200
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6546FFDC6229A4EF"
+					item: {
+						Count: 1
+						id: "minecraft:netherite_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0C4C7CA9CAC0459D"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(minecraft:netherite_boots)item(create:netherite_diving_boots))"
+						}
+					}
+					title: "{quests.tasktype.item.any}"
+					type: "item"
+				}
+			]
+			title: "{quests.tfg_tips.blue_steel_diving.title}"
+			x: 6.0d
+			y: -3.0d
 		}
 	]
 	subtitle: ["{quests.combat.subtitle}"]

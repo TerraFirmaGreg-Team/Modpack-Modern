@@ -745,10 +745,7 @@
 			y: -27.0d
 		}
 		{
-			dependencies: [
-				"5A936E9BCF30AA3D"
-				"3A7EAA08E124010D"
-			]
+			dependencies: ["5A936E9BCF30AA3D"]
 			dependency_requirement: "one_started"
 			description: ["{quests.metal_age.beneath_kaolin.desc}"]
 			id: "061116CF508D54F6"
@@ -1020,10 +1017,7 @@
 			y: -8.0d
 		}
 		{
-			dependencies: [
-				"5A936E9BCF30AA3D"
-				"5D0B0B9E61C3DE75"
-			]
+			dependencies: ["5A936E9BCF30AA3D"]
 			description: ["{quests.metal_age.beneath_graphite.desc}"]
 			id: "2DB82986FE176CD7"
 			optional: true
