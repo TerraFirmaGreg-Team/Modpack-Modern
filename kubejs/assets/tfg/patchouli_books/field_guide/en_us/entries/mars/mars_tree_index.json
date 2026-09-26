@@ -33,7 +33,7 @@
 			"title": "Crimson",
 			"anchor": "crimson",
 			"item": "tag:tfc:crimson_logs",
-			"text": "$(bold)Crimson Mushroom$()$(br)$(thing)Temperature$(): -109 — -13°C$(br)Appears more often to the East.$(br)$(thing)Growth Days$(): 6"
+			"text": "$(bold)Crimson Mushroom$()$(br)$(thing)Temperature$(): -109 — -13°C$(br)Appears more often to the East.$(br)$(thing)Growth Days$(): 6$(br2)$(bold)Tip:$() Want to show off? You can build a $(l:logistics/boats#canoe)canoe$() out of Crimson Stems."
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -54,7 +54,7 @@
 			"title": "Warped",
 			"anchor": "warped",
 			"item": "tag:tfc:warped_logs",
-			"text": "$(bold)Warped Mushroom$()$(br)$(thing)Temperature$(): -109 — -13°C$(br)Appears more often to the West.$(br)$(thing)Growth Days$(): 6"
+			"text": "$(bold)Warped Mushroom$()$(br)$(thing)Temperature$(): -109 — -13°C$(br)Appears more often to the West.$(br)$(thing)Growth Days$(): 6$(br2)$(bold)Tip:$() Want to show off? You can build a $(l:logistics/boats#rowboat)Rowboat$() or $(l:logistics/boats#sloop)Sloop$() out of Warped Stems."
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -65,7 +65,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Mix together the Crimsene and Warpane, along with some Krypton from Mars Air Distillation (it's looped) and the heat from your $(l:mars/fission)Fission Reactor$(), and you'll get $(item)Iodine$()!$(br2)This process is slow, but you shouldn't need a lot of it for now, and there will be better methods of obtaining Iodine on further planets.$(br2)$(bold)Tip:$() Want to show off? You can also build a $(l:logistics/boats#canoe)canoe$() out of Crimson Stems, and build a $(l:logistics/boats#rowboat)Rowboat$() or $(l:logistics/boats#sloop)Sloop$() out of Warped ones!"
+			"text": "Mix together the Crimsene and Warpane, along with some Krypton from Mars Air Distillation (it's looped) and the heat from your $(l:mars/fission)Fission Reactor$(), and you'll get $(item)Iodine$()!$(br2)This process is slow, but you shouldn't need a lot of it for now, and there will be better methods of obtaining Iodine on further planets."
 		},
 		{
 			"type": "patchouli:relations",

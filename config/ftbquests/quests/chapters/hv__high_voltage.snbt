@@ -2073,7 +2073,7 @@
 		{
 			dependencies: ["00A2566109144D7F"]
 			description: ["{quests.space_survival.railgun.desc}"]
-			guide_page: "tfg:field_guide tfg:the_moon/railgun"
+			guide_page: "tfg:field_guide tfg:logistics/railgun"
 			icon: "tfg:railgun_ammo_shell"
 			id: "47E88A5E8AE13326"
 			shape: "octagon"

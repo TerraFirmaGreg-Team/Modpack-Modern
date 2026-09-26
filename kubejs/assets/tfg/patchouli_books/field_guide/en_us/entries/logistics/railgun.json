@@ -1,13 +1,14 @@
 {
-	"name": "The Railgun",
-	"category": "tfg:the_moon",
+	"name": "Interplanetary Railgun",
+	"category": "tfg:logistics",
 	"icon": "tfg:railgun_ammo_shell",
 	"read_by_default": true,
+	"sortnum": 9,
 	"pages": [
 		{
 			"type": "patchouli:text",
 			"anchor": "index",
-			"text": "$(li)$(bold)$(l:the_moon/railgun#sender)Railgun Sender$()$(li2)$(l:the_moon/railgun#ammo)Railgun Ammo$()$(li2)$(l:the_moon/railgun#input_bus)Railgun Input Bus$()$(li)$(bold)$(l:the_moon/railgun#monitor)Logistics Monitor$()$(li)$(bold)Control Rules$()$(li2)$(l:the_moon/railgun#redstone)Redstone$()$(li2)$(l:the_moon/railgun#supply_exact)Supply Exact$()$(li2)$(l:the_moon/railgun#delay)Delay$()$(li)$(bold)$(l:the_moon/railgun#receiver)Railgun Receiver$()$(li2)$(l:the_moon/railgun#output_bus)Receiver Output Bus$()$(li)$(bold)$(l:the_moon/railgun#tips)Tips$()"
+			"text": "$(li)$(bold)$(l:logistics/railgun#sender)Railgun Sender$()$(li2)$(l:logistics/railgun#ammo)Railgun Ammo$()$(li2)$(l:logistics/railgun#input_bus)Railgun Input Bus$()$(li)$(bold)$(l:logistics/railgun#monitor)Logistics Monitor$()$(li)$(bold)Control Rules$()$(li2)$(l:logistics/railgun#redstone)Redstone$()$(li2)$(l:logistics/railgun#supply_exact)Supply Exact$()$(li2)$(l:logistics/railgun#delay)Delay$()$(li)$(bold)$(l:logistics/railgun#receiver)Railgun Receiver$()$(li2)$(l:logistics/railgun#output_bus)Receiver Output Bus$()$(li)$(bold)$(l:logistics/railgun#tips)Tips$()"
 		},
 		{
 			"type": "patchouli:text",
@@ -179,7 +180,7 @@
 			"item": "tfg:ulv_railgun_item_loader_in,tfg:lv_railgun_item_loader_in,tfg:mv_railgun_item_loader_in,tfg:hv_railgun_item_loader_in,tfg:ev_railgun_item_loader_in,tfg:iv_railgun_item_loader_in,tfg:luv_railgun_item_loader_in,tfg:zpm_railgun_item_loader_in,tfg:uv_railgun_item_loader_in,tfg:uhv_railgun_item_loader_in",
 			"anchor": "input_bus",
 			"title": "Railgun Input Bus",
-			"text": "When opening the $(thing)Sender$() logistics screen on the $(l:the_moon/railgun#monitor)Interplanetary Logistics Monitor$(), you'll notice the familiar $(item)Programmed Circuit$() from GregTech.$(br2)This circuit number is the core identifier for setting up routing rules."
+			"text": "When opening the $(thing)Sender$() logistics screen on the $(l:logistics/railgun#monitor)Interplanetary Logistics Monitor$(), you'll notice the familiar $(item)Programmed Circuit$() from GregTech.$(br2)This circuit number is the core identifier for setting up routing rules."
 		},
 		{
 			"type": "patchouli:text",
@@ -239,7 +240,7 @@
 			"anchor": "receiver",
 			"item": "tfg:interplanetary_item_receiver",
 			"title": "Railgun Receiver",
-			"text": "The $(item)Interplanetary Receiver$(), as its name suggests, is designed to $(thing)receive items$() sent by the $(l:the_moon/railgun#sender)Railgun$().$(br2)It's a $(thing)small and simple multiblock$() that requires no energy or maintenance — just build it and you're ready to go!"
+			"text": "The $(item)Interplanetary Receiver$(), as its name suggests, is designed to $(thing)receive items$() sent by the $(l:logistics/railgun#sender)Railgun$().$(br2)It's a $(thing)small and simple multiblock$() that requires no energy or maintenance — just build it and you're ready to go!"
 		},
 		{
 			"type": "patchouli:text",
@@ -317,11 +318,11 @@
 			"anchor": "output_bus",
 			"title": "Railgun Output Bus",
 			"item": "tfg:ulv_railgun_item_loader_out,tfg:lv_railgun_item_loader_out,tfg:mv_railgun_item_loader_out,tfg:hv_railgun_item_loader_out,tfg:ev_railgun_item_loader_out,tfg:iv_railgun_item_loader_out,tfg:luv_railgun_item_loader_out,tfg:zpm_railgun_item_loader_out,tfg:uv_railgun_item_loader_out,tfg:uhv_railgun_item_loader_out",
-			"text": "Just like how your $(l:the_moon/railgun#input_bus)Railgun Input Buses$() can be assigned a $(thing)circuit number$(), you can do the same with the $(item)Output Buses$() on your $(thing)Receiver$()."
+			"text": "Just like how your $(l:logistics/railgun#input_bus)Railgun Input Buses$() can be assigned a $(thing)circuit number$(), you can do the same with the $(item)Output Buses$() on your $(thing)Receiver$()."
 		},
 		{
 			"type": "patchouli:text",
-			"text": "This feature serves two main purposes:$(br2)1. $(bold)Direct item flow$() - You can control which $(item)Output Bus$() receives items. To do this, simply assign a circuit number to the Output Bus, then select that number in your Sender's rule via the $(l:the_moon/railgun#monitor)Logistics Monitor$()."
+			"text": "This feature serves two main purposes:$(br2)1. $(bold)Direct item flow$() - You can control which $(item)Output Bus$() receives items. To do this, simply assign a circuit number to the Output Bus, then select that number in your Sender's rule via the $(l:logistics/railgun#monitor)Logistics Monitor$()."
 		},
 		{
 			"type": "patchouli:text",
@@ -331,7 +332,7 @@
 			"type": "patchouli:text",
 			"title": "Railgun Tips",
 			"anchor": "tips",
-			"text": "$(li)Railguns can be used within the same dimension. This is a great way to learn how they work, and can also be useful for sending stuff very long distances.$(li)$(thing)Cells$() are the only way to send around fluids. You can use a $(item)Canner$() to automatically fill and empty cells."
+			"text": "$(li)Railguns can be used within the same dimension. This is a great way to learn how they work, and can also be useful for sending stuff very long distances.$(li)$(thing)Cells$() are the only way to send around fluids. You can use a $(item)Canner$() to automatically fill and empty cells.$(li)Unless you're using $(l:logistics/railgun#redstone)redstone control$(), make sure all your $(l:logistics/railgun#input_bus)input$() and $(l:logistics/railgun#output_bus)output buses$() are $(thing)Enabled$()."
 		},
 		{
 			"type": "patchouli:relations",
