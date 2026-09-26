@@ -29,26 +29,6 @@
 			y: 8.5d
 		}
 		{
-			id: "66960076A74E9B79"
-			linked_quest: "0CA5B715B76E4A5B"
-			shape: "diamond"
-			x: 13.0d
-			y: 0.0d
-		}
-		{
-			id: "6058CD9466BE0852"
-			linked_quest: "00202200344F3456"
-			x: 13.0d
-			y: 3.0d
-		}
-		{
-			id: "49FB3507B0FB3000"
-			linked_quest: "155F421FC2F39C3C"
-			shape: "diamond"
-			x: 11.5d
-			y: 3.0d
-		}
-		{
 			id: "7FDAA0AA0D463A49"
 			linked_quest: "4B1F957EB41A5E9B"
 			shape: "octagon"
@@ -146,13 +126,8 @@
 		}
 		{
 			dependencies: ["52AB0BDC64293253"]
-			description: [
-				"{quests.extreme_voltage.mars.desc.1}"
-				"{@pagebreak}"
-				"{quests.extreme_voltage.mars.desc.2}"
-				"{@pagebreak}"
-				"{quests.extreme_voltage.mars.desc.3}"
-			]
+			description: ["{quests.extreme_voltage.mars.desc}"]
+			guide_page: "tfg:field_guide tfg:mars/mars"
 			id: "2979AFD231E5B37B"
 			shape: "octagon"
 			size: 2.0d
@@ -586,6 +561,7 @@
 		{
 			dependencies: ["2979AFD231E5B37B"]
 			description: ["{quests.space_survival.mineral_rich_wool.desc}"]
+			guide_page: "tfg:field_guide tfg:mars/mars_fauna"
 			id: "51BEA1053F203050"
 			subtitle: "{quests.space_survival.mineral_rich_wool.subtitle}"
 			tasks: [{
@@ -600,6 +576,7 @@
 		{
 			dependencies: ["2979AFD231E5B37B"]
 			description: ["{quests.extreme_voltage.heavy_water.desc}"]
+			guide_page: "tfg:field_guide tfg:mars/mars 7"
 			hide_dependency_lines: true
 			icon: "tfg:heavy_water_bucket"
 			id: "4AD41E9FA7814EA1"
@@ -947,7 +924,7 @@
 			]
 			title: "{quests.extreme_voltage.martian_sludge.title}"
 			x: 17.5d
-			y: 1.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["2979AFD231E5B37B"]
@@ -971,7 +948,7 @@
 			]
 			title: "{quests.extreme_voltage.hexafluorosilic_acid.title}"
 			x: 16.0d
-			y: 1.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["2B666F65B5F196E6"]
@@ -1196,11 +1173,9 @@
 			y: 12.5d
 		}
 		{
-			dependencies: [
-				"0CA5B715B76E4A5B"
-				"24ECDF70031B39C4"
-			]
+			dependencies: ["24ECDF70031B39C4"]
 			description: ["{quests.extreme_voltage.ostrum_harvester.desc}"]
+			guide_page: "tfg:field_guide tfg:mars/mars 9"
 			icon: "gtceu:ostrum_harvester"
 			id: "236F53188110F6D5"
 			subtitle: "{quests.extreme_voltage.ostrum_harvester.subtitle}"
@@ -2035,6 +2010,7 @@
 				"{@pagebreak}"
 				"{quests.extreme_voltage.important_info.desc.3}"
 			]
+			guide_page: "tfg:field_guide tfg:mars/mars"
 			icon: "minecraft:spyglass"
 			id: "6B0F3D40AFA5752E"
 			shape: "circle"
@@ -2065,11 +2041,9 @@
 			y: 8.0d
 		}
 		{
-			dependencies: [
-				"236F53188110F6D5"
-				"00202200344F3456"
-			]
+			dependencies: ["236F53188110F6D5"]
 			description: ["{quests.extreme_voltage.ostrum_dust.desc}"]
+			guide_page: "tfg:field_guide tfg:mars/mars_tree_index 8"
 			icon: "gtceu:ostrum_iodide_dust"
 			id: "5FA09DA68D309548"
 			subtitle: "{quests.extreme_voltage.ostrum_dust.subtitle}"
@@ -2383,11 +2357,9 @@
 			y: 4.5d
 		}
 		{
-			dependencies: [
-				"155F421FC2F39C3C"
-				"29E0829816B9DBA0"
-			]
+			dependencies: ["29E0829816B9DBA0"]
 			description: ["{quests.extreme_voltage.nichromium_iode.desc}"]
+			guide_page: "tfg:field_guide tfg:mars/mars_tree_index 8"
 			icon: "tfg:nichromium_iodomethylate_bucket"
 			id: "5CF70AC24D269279"
 			subtitle: "{quests.extreme_voltage.nichromium_iode.subtitle}"
@@ -2586,7 +2558,7 @@
 			]
 			title: "{quests.extreme_voltage.ostrum_tools.title}"
 			x: 13.0d
-			y: 2.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["52AB0BDC64293253"]

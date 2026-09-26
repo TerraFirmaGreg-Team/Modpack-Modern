@@ -73,18 +73,6 @@
 			y: 1.5d
 		}
 		{
-			id: "7940A64DE742E568"
-			linked_quest: "6D7ADBBCEF5770B6"
-			x: 22.5d
-			y: 1.5d
-		}
-		{
-			id: "005D4527B078CFE6"
-			linked_quest: "6E757133FA00C40D"
-			x: 18.0d
-			y: -1.5d
-		}
-		{
 			id: "59AF05C8EAD38CAC"
 			linked_quest: "784A0743B257EAEB"
 			x: 13.0d
@@ -124,7 +112,7 @@
 			id: "35F893275E728B14"
 			linked_quest: "7A4C6930EF68646E"
 			x: 21.0d
-			y: 1.5d
+			y: -3.0d
 		}
 		{
 			id: "22A2FD93040504D0"
@@ -595,6 +583,7 @@
 		{
 			dependencies: ["1FF607647FA682B3"]
 			description: ["{quests.combat_tips.certus_main.desc}"]
+			guide_page: "tfg:field_guide tfg:mars/mars_equipment"
 			icon: "tfg:ev_universal_circuit"
 			id: "278F18477F9B7E08"
 			shape: "octagon"
@@ -898,8 +887,8 @@
 				}
 			]
 			title: "{quests.combat_tips.etched_quartz_ammo.title}"
-			x: 20.0d
-			y: -3.0d
+			x: 19.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["278F18477F9B7E08"]
@@ -943,8 +932,8 @@
 				}
 			]
 			title: "{quests.combat_tips.cluster_quartz_ammo.title}"
-			x: 22.0d
-			y: -3.0d
+			x: 22.5d
+			y: 1.5d
 		}
 		{
 			dependencies: [
@@ -2029,6 +2018,62 @@
 			title: "{quests.tfg_tips.blue_steel_diving.title}"
 			x: 6.0d
 			y: -3.0d
+		}
+		{
+			dependencies: ["278F18477F9B7E08"]
+			dependency_requirement: "one_completed"
+			description: ["{quests.space_survival.t2_space_suit.desc}"]
+			id: "2E86CDE7C64B88B0"
+			subtitle: "{quests.space_survival.t2_space_suit.subtitle}"
+			tasks: [
+				{
+					id: "2EB081D278CD8027"
+					item: {
+						Count: 1
+						id: "ad_astra:netherite_space_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "193E4DB2BC0CF6A6"
+					item: {
+						Count: 1
+						id: "ad_astra:netherite_space_suit"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4AB21A0DEA0BE69D"
+					item: {
+						Count: 1
+						id: "ad_astra:netherite_space_pants"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "57EA1FA4A94C6235"
+					item: {
+						Count: 1
+						id: "ad_astra:netherite_space_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "{quests.space_survival.t2_space_suit.title}"
+			x: 21.0d
+			y: 1.5d
 		}
 	]
 	subtitle: ["{quests.combat.subtitle}"]

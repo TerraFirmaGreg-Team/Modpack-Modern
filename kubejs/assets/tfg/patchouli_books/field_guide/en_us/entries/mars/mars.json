@@ -1,0 +1,186 @@
+{
+	"name": "Surviving Mars",
+	"category": "tfg:mars",
+	"icon": "ad_astra:mars_globe",
+	"read_by_default": true,
+	"priority": true,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "index",
+			"text": "$(li)$(bold)$(l:mars/mars#intro)Introduction$()$(li)$(bold)$(l:mars/mars#semiheavy_water)Hydrology$()$(li2)$(l:mars/mars#semiheavy_water)Semiheavy Ammoniacal Water$()$(li2)$(l:mars/mars#heavy_water)Heavy Ammoniacal Water$()$(li)$(bold)$(l:mars/mars#desert)The Martian Desert$()$(li2)$(l:mars/mars#ostrum)Ostrum Deposits$()$(li2)$(l:mars/mars#ostrum_harvester)Ostrum Harvester$()$(li)$(bold)$(l:mars/mars#jungles)The Martian Jungles$()$(li)$(bold)$(l:mars/mars#poles)The Martial Poles$()$(li2)$(l:mars/mars#glacian_wool)Glacian Wool$()$(li)$(bold)$(l:mars/mars#food)Martian Cuisine$()"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "intro",
+			"text": "Before landing on $(c)Mars$(), there are a few important things to keep in mind.$(br2)First, like the Moon, Mars will have some hostile surface mobs as well. If you haven't already figured out how to make your Space Suit stay with you after dying or invested in new $(5)EV$()-tier $(l:mars/mars_equipment)weaponry$(), you'll have a rough time."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "The planet is mostly a $(thing)desert world$(), dotted with \"$(thing)islands$()\" where you’ll find $(item)water$(), $(l:mars/mars_crops)flora$() and $(l:mars/mars_fauna)fauna$(), and much safer places to build your first base. Meanwhile, the open desert is extremely dangerous if you don't watch your step, but contains some other crucial resources!"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "All $(thing)fluid veins$() are spread across Mars, except for $(l:mars/mars#heavy_water)Heavy Ammoniacial Water$() which can only be found outside of the desert. That's another good reason to set up your base there.$(br2)Energy-wise, Mars will not be kind to you at first. Nearly every common $(thing)energy generation method$() is disabled or worthless on the planet, which means you’ll have to rely almost entirely on $(l:mars/fission)Fission$() to power your base."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "At the very beginning, we recommend bringing along some $(thing)filled batteries$() such as $(item)Lapotron Crystals$() to get started, and then look towards setting up $(item)Thorium Fuel Rods$().$(br2)Achieving energy stability on Mars will take time and effort, but once your systems are running smoothly, you’ll feel like $(thing)unlimited power$() is right in the palm of your hand."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tfg:semiheavy_ammoniacal_water_bucket",
+			"title": "Fancy a drink?",
+			"anchor": "semiheavy_water",
+			"text": "The water on Mars is $(thing)Semiheavy$() which means it contains one Deuterium atom, and is also full of $(item)Ammonia$(), a great antifreeze, which is how it can stay liquid despite the very low temperatures.$(br2)It's technically drinkable, but you'll likely want to distill it into normal Water first."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "You can also move source blocks of Semiheavy Ammoniacal Water around and get more of it via an Aqueous Accumulator, just like regular Water.$(br2)You can also centrifuge the Ammonium Chloride out from it and electrolyze it as a source of $(item)Nitrogen$(). Easy Nitrox from just one source!"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tfg:heavy_ammoniacal_water_bucket",
+			"title": "Heavy Water",
+			"anchor": "heavy_water",
+			"text": "$(item)Heavy Ammoniacal Water$() is another kind of fluid that can only be found deep underground via a Fluid Drilling Rig. You can only find it in these $(l:mars/mars#jungles)lush areas$() of Mars, not the desert!$(br2)You can separate it into Heavy Water, which is important for Fission power."
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "desert",
+			"title": "The Martian Desert",
+			"text": "The majority of Mars is covered in a vast desert. Not much lives here except the occasional $(l:mars/mars_fauna#stackatick)Stackatick$() or $(l:mars/mars_fauna#pentetic_jellie)Jellie$(), and of course the giant $(l:mars/mars_fauna#sandworm)Sandworms$(). If this is your first time here, you'll want to find somewhere more hospitable! Otherwise, you'll want to keep searching..."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tfg:spice",
+			"title": "Ostrum Deposits",
+			"anchor": "ostrum",
+			"text": "$(item)Ostrum Deposits$() are immovable blocks that you can only find in the Martian Deep Desert, far away from any of the more lush areas. They spawn in small blobs, and can be broken to make space for your Ostrum Harvester if they're on a slope."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Try using a $(item)Spyglass$() to find them from a distance!$(br2)You'll have to figure out some long-distance logistics to ship your Ostrum back to your base. Try a train! $(item)Accumulators$() are large batteries that can be attached to trains to transport power.$(br2)Ostrum is a crucial resource for both $(5)EV$() progression and making infinite ores from Mars."
+		},
+		{
+			"type": "patchouli:multiblock",
+			"anchor": "ostrum_harvester",
+			"name": "Ostrum Harvester",
+			"enable_visualize": true,
+			"multiblock": {
+				"pattern": [
+					[
+						" AAA ",
+						" BFB ",
+						" BFB ",
+						" BFB ",
+						" BFB ",
+						" BFB ",
+						" AAA "
+					],
+					[
+						"AABAA",
+						"BB BB",
+						"A   A",
+						"A   A",
+						"A   A",
+						"BB BB",
+						"AABAA"
+					],
+					[
+						"A112A",
+						"B   B",
+						"D   D",
+						"D   D",
+						"D   D",
+						"B   B",
+						"A3X4A"
+					],
+					[
+						"AAAAA",
+						"BBBBB",
+						"ADDDA",
+						"ADDDA",
+						"ADDDA",
+						"BBBBB",
+						"AAAAA"
+					],
+					[
+						"A   A",
+						"     ",
+						"     ",
+						"     ",
+						"     ",
+						"     ",
+						"A   A"
+					],
+					[
+						"     ",
+						"  G  ",
+						" GGG ",
+						"GG0GG",
+						" GGG ",
+						"  G  ",
+						"     "
+					]
+				],
+				"mapping": {
+					"X": "gtceu:ostrum_harvester[facing=east]",
+					"0": "tfg:spice",
+					"G": "tfg:spice",
+					"A": "gtceu:secure_maceration_casing",
+					"B": "gtceu:nonconducting_casing",
+					"D": "tfg:casings/machine_casing_vacuum_engine_intake",
+					"F": "gtceu:cupronickel_coil_block",
+					"1": "gtceu:hv_energy_input_hatch[facing=west]",
+					"2": "gtceu:auto_maintenance_hatch[facing=west]",
+					"3": "gtceu:lv_input_hatch[facing=east]",
+					"4": "gtceu:lv_output_bus[facing=east]"
+				}
+			}
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "jungles",
+			"title": "The Martian Jungles",
+			"text": "Dotted around the vast Martian deserts are small \"islands\" of life and vegetation, which are probably where you'll want to set up your base. Surviving here will be much easier than in the desert!$(br2)If you're having trouble finding these, you'll want to head away from the $(thing)Martian Deep Desert$() biomes, towards the $(thing)Martain Dunes$() which lead to $(thing)Martian Dune Edges$()."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "These parts of Mars are where you can find the rest of Mars' life, such as $(l:mars/mars_crops)new crops$(), $(l:mars/mars_tree_index)new trees$(), and even $(l:mars/mars_fauna)dinosaurs$().$(br2)Besides the occasional predator, the surface of these areas are relatively safe, with some monsters underground similar to $(thing)Earth$()."
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "poles",
+			"title": "The Martian Poles",
+			"text": "Is Mars not cold enough for you?$(br2)Head up (or down) towards one of its poles at $(thing)Z=+15000/-5000$(). If $(l:mars/mars_fauna#glacian_sheep)anything$()'s able to live there, surely it must have amazing insulative properties...$(br2)Consider setting up a small base of operations before traveling to the martian poles. Some of Mars' $(l:mars/mars_fauna#soarer)native$() $(l:mars/mars_fauna#charger)fauna$() may be able to make the trip easier."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tfg:glacian_wool",
+			"anchor": "glacian_wool",
+			"text": "Unlike regular Sheep on Earth, killing a Glacian one will only give you normal Wool. You'll need to build up their familiarity and shear them if you want the special $(item)Glacian Wool$(). You'll need 7 of it for a full $(l:mars/mars_equipment#space_suit)Tungstensteel Space Suit$(), but you can also use it as a great component for your $(l:mars/fission)Fission Reactor$() to increase its maximum heat. You can also turn it into regular $(l:agriculture/weaving)Wool Yarn and Cloth$()."
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "food",
+			"title": "Martian Cuisine",
+			"text": "$(l:mars/mars_fauna#wraptor)Wraptor Eggs$() can be extracted for a $(item)Sugar$() substitute, while $(l:mars/mars_fauna#sniffer)Sniffer Eggs$() are full of $(item)Cream$().$(br2)$(item)Bulbkin Pie$() is probably the pinnacle of Mars' food, boasting high amounts of four different kinds of nutrition, at the expense of being a bit of a pain to craft.$(br2)$(item)Beer-Battered Dinosaur Nuggets$() combine the huge protein of dinosaur meat with a little grain, and can also be put in your meal bags."
+		},
+		{
+			"type": "patchouli:relations",
+			"title": "Further Reading",
+			"anchor": "relations",
+			"entries": [
+				"tfg:mars/mars_crops",
+				"tfg:mars/mars_fauna",
+				"tfg:mars/mars_tree_index",
+				"tfg:mars/mars_equipment",
+				"tfg:mars/fission",
+				"tfg:agriculture/animal_husbandry",
+				"tfg:agriculture/growing_crops",
+				"tfg:agriculture/jellies"
+			]
+		}
+	]
+}

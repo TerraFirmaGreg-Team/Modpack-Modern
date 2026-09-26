@@ -50,6 +50,8 @@ function registerTFGMarsItemTags(event) {
 	event.add('tfc:compost_greens_low', 'beneath:wood/leaves/warped')
 	event.add('tfc:compost_greens_low', 'tfg:glacian_leaves')
 	event.add('tfc:compost_greens_low', '#tfg:mars_plants')
+
+	event.add('forge:wools/pink', 'ad_astra:glacian_fur')
 }
 
 function registerTFGMarsBlockTags(event) {

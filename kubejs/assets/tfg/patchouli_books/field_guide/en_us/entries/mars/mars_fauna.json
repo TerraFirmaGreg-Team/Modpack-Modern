@@ -11,11 +11,12 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "index",
+			"title": "Contents",
 			"text": "$(li)$(bold)$(l:mars/mars_fauna#sandworm)The Sandworm$()$(li)$(bold)Domesticatable$()$(li2)$(l:mars/mars_fauna#sniffer)Sniffer$()$(li2)$(l:mars/mars_fauna#wraptor)Wraptor$()$(li2)$(l:mars/mars_fauna#glacian_sheep)Glacian Sheep$()$(li2)$(l:mars/mars_fauna#snatcher)Snatcher$()$(li2)$(l:mars/mars_fauna#charger)Charger$()$(li2)$(l:mars/mars_fauna#soarer)Soarer$()$(li2)$(l:mars/mars_fauna#pentetic_jellie)Pentetic Jellie$()$(br2)$(o)(Continued on next page...)$()"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(li)$(bold)Wild$()$(li2)$(l:mars/mars_fauna#eater)Eater$()$(li2)$(l:mars/mars_fauna#cruncher)Cruncher$()$(li2)$(l:mars/mars_fauna#glider)Glider$()$(li2)$(l:mars/mars_fauna#crusher)Crusher$()$(li2)$(l:mars/mars_fauna#springling)Springling$()$(li2)$(l:mars/mars_fauna#goober)Goober$()$(li2)$(l:mars/mars_fauna#walker)Walker$()$(li2)$(l:mars/mars_fauna#raider)Raider$()$(li2)$(l:mars/mars_fauna#toxlacanth)Toxlacanth$()$(li2)$(l:mars/mars_fauna#stackatick)Stackatick$()"
+			"text": "$(li)$(bold)Wild$()$(li2)$(l:mars/mars_fauna#eater)Eater$()$(li2)$(l:mars/mars_fauna#cruncher)Cruncher$()$(li2)$(l:mars/mars_fauna#glider)Glider$()$(li2)$(l:mars/mars_fauna#crusher)Crusher$()$(li2)$(l:mars/mars_fauna#springling)Springling$()$(li2)$(l:mars/mars_fauna#goober)Goober$()$(li2)$(l:mars/mars_fauna#walker)Walker$()$(li2)$(l:mars/mars_fauna#raider)Raider$()$(li2)$(l:mars/mars_fauna#toxlacanth)Toxlacanth$()$(li2)$(l:mars/mars_fauna#stackatick)Stackatick$()$(li)$(bold)Monsters$()$(li2)$(l:mars/mars_fauna#quake)Quake$()$(li2)$(l:mars/mars_fauna#endermen)Endermen$()$(li2)$(l:mars/mars_fauna#skeletal_raptor)Skeletal Raptor$()"
 		},
 		{
 			"type": "patchouli:image",
@@ -23,12 +24,22 @@
 			"border": true,
 			"anchor": "sandworm",
 			"title": "The Sandworm",
-			"text": "$(thing)Sandworms$() are alerted by player footsteps. They are the reason almost nothing else lives in the desert.$(br)"
+			"text": "$(thing)Sandworms$() are alerted by player ground movement. They are the reason almost nothing else lives in the desert.$(br)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "SHAI-HULUD",
+			"item": "sandworm_mod:sandworm_tooth,sandworm_mod:thumper",
+			"text": "The $(thing)Sandworm$() is more of an environmental hazard than a boss to kill, so your best way of surviving it is to run away! If you manage to hit its head enough times with $(thing)explosion damage$(), it will leave you alone... for a while."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Thankfully, the Sandworm can only damage entities, not buildings, and is only attracted to $(thing)player ground movement$(), so any way to keep yourself off the ground won't anger it. The atmosphere is too thin for airplanes and hang gliders, but there are $(l:mars/mars_fauna#soarer)other ways$()..."
 		},
 		{
 			"type": "patchouli:text",
 			"title": "Sniffers",
-			"text": "$(thing)Sniffers$() are domesticatable animals found between -30 and -102°C. They require a Large Nest to lay their eggs and can be shorn for $(item)Sniffer Tufts$(). Their eggs can be cooked or extracted for Cream. They eat any Mars crop.",
+			"text": "$(thing)Sniffers$() are domesticatable animals found between -30 and -102°C. They require a $(item)Large Nest$() to lay their eggs and can be shorn for $(item)Sniffer Tufts$(). Their eggs can be cooked or extracted for $(item)Cream$(). They eat any Mars crop.",
 			"anchor": "sniffer"
 		},
 		{
@@ -41,7 +52,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Wraptors",
-			"text": "$(thing)Wraptors$() are domesticatable animals found between -15 and -100°C. They require a Large Nest to lay their eggs and can be shorn for $(item)Wraptor Feathers$(). Their eggs can be cooked or extracted for Wraptor Sugar. They eat any Mars crop.",
+			"text": "$(thing)Wraptors$() are domesticatable animals found between -15 and -100°C. They require a $(item)Large Nest$() to lay their eggs and can be shorn for $(item)Wraptor Feathers$(). Their eggs can be cooked or extracted for $(item)Wraptor Sugar$(). They eat any Mars crop.",
 			"anchor": "wraptor"
 		},
 		{
@@ -54,7 +65,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Glacian Sheep",
-			"text": "Preferring extremely cold environments below -108°C, $(thing)Glacian Sheep$() are domesticatable animals. They can be shorn for $(item)Glacian Wool$(), an amazing insulator. They eat any Mars crop.",
+			"text": "Preferring extremely cold environments below -108°C, $(thing)Glacian Sheep$() are domesticatable animals. They can be shorn for $(item)Glacian Wool$(), an amazing insulator. They eat any Mars crop.$(br2)Need to transport them a long way? Consider using an $(item)AE2 Spatial Storage Cell$() to carry them around in your pocket.",
 			"anchor": "glacian_sheep"
 		},
 		{
@@ -72,7 +83,7 @@
 		},
 		{
 			"type": "patchouli:entity",
-			"entity": "wan_ancient_beasts:snatcher",
+			"entity": "wan_ancient_beasts:snatcher{NoAI:1b}",
 			"scale": 0.35,
 			"name": " ",
 			"text": "A snatcher."
@@ -85,32 +96,41 @@
 		},
 		{
 			"type": "patchouli:entity",
-			"entity": "wan_ancient_beasts:charger",
+			"entity": "wan_ancient_beasts:charger{NoAI:1b}",
 			"scale": 0.45,
 			"name": " ",
 			"text": "Chargers have a natural rivalry with $(thing)Raiders$(). They will attack each other on sight."
 		},
 		{
-			"type": "patchouli:entity",
-			"entity": "wan_ancient_beasts:surfer",
-			"anchor": "surfer",
-			"scale": 0.4,
-			"offset": 0.2,
-			"name": "Surfer",
-			"text": "$(thing)Surfers$() are semiaquatic passive animals. You can tame them with $(item)Raw Fish$() to ride them underwater. They can also be eaten."
+			"type": "patchouli:text",
+			"title": "Soarer",
+			"anchor": "soarer",
+			"text": "$(thing)Soarers$() are passive animals found above -106°C. You can tame them with $(item)Raw Fish$() to use them as a flying mount.$(br2)They can't fly forever though, indicated by the wing icons on the top left, and will need to land occasionally. (You can feed them more Raw Fish to speed up their recovery.)$(br2)They're a great option for long-distance travel, and won't upset the sandworm either!"
 		},
 		{
 			"type": "patchouli:entity",
-			"entity": "wan_ancient_beasts:soarer",
-			"anchor": "soarer",
+			"entity": "wan_ancient_beasts:soarer{NoAI:1b}",
 			"scale": 0.4,
 			"offset": 1.0,
-			"name": "Soarer",
-			"text": "$(thing)Soarers$() are passive animals found above -106°C. You can tame them with $(item)Raw Fish$() to use them as a flying mount. They can also be eaten."
+			"name": " "
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Surfer",
+			"anchor": "surfer",
+			"text": "$(thing)Surfers$() are semiaquatic passive animals. You can tame them by sneaking up to them while they're lying on the shore, and feeding them $(item)raw fish$(). Once tamed, you can equip them with a saddle to swim quickly underwater too.$(br2)This doesn't sound particularly useful on Mars, but remember that you can transport entities around through AE2's Spatial Storage Disks, and there will be a certain oceanic icy moon in the future..."
 		},
 		{
 			"type": "patchouli:entity",
-			"entity": "jellies:pentetic",
+			"entity": "wan_ancient_beasts:surfer{NoAI:1b}",
+			"scale": 0.4,
+			"offset": 0.2,
+			"name": " ",
+			"text": "Surfers come in a variety of colors."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "jellies:pentetic{NoAI:1b}",
 			"scale": 0.6,
 			"name": "Pentetic Jellie",
 			"anchor": "pentetic_jellie",
@@ -118,7 +138,7 @@
 		},
 		{
 			"type": "patchouli:entity",
-			"entity": "wan_ancient_beasts:eater",
+			"entity": "wan_ancient_beasts:eater{NoAI:1b}",
 			"scale": 0.5,
 			"name": "Eater",
 			"anchor": "eater",
@@ -126,7 +146,7 @@
 		},
 		{
 			"type": "patchouli:entity",
-			"entity": "species:cruncher",
+			"entity": "species:cruncher{NoAI:1b}",
 			"scale": 0.7,
 			"name": "Cruncher",
 			"anchor": "cruncher",
@@ -134,7 +154,7 @@
 		},
 		{
 			"type": "patchouli:entity",
-			"entity": "wan_ancient_beasts:glider",
+			"entity": "wan_ancient_beasts:glider{NoAI:1b}",
 			"scale": 0.4,
 			"offset": 0.2,
 			"name": "Glider",
@@ -143,7 +163,7 @@
 		},
 		{
 			"type": "patchouli:entity",
-			"entity": "wan_ancient_beasts:crusher",
+			"entity": "wan_ancient_beasts:crusher{NoAI:1b}",
 			"scale": 0.5,
 			"offset": 0.5,
 			"name": "Crusher",
@@ -152,7 +172,7 @@
 		},
 		{
 			"type": "patchouli:entity",
-			"entity": "species:springling",
+			"entity": "species:springling{NoAI:1b}",
 			"scale": 0.9,
 			"name": "Springling",
 			"anchor": "springling",
@@ -160,7 +180,7 @@
 		},
 		{
 			"type": "patchouli:entity",
-			"entity": "species:goober",
+			"entity": "species:goober{NoAI:1b}",
 			"scale": 0.6,
 			"name": "Goober",
 			"anchor": "goober",
@@ -168,7 +188,7 @@
 		},
 		{
 			"type": "patchouli:entity",
-			"entity": "wan_ancient_beasts:walker",
+			"entity": "wan_ancient_beasts:walker{NoAI:1b}",
 			"scale": 0.6,
 			"offset": 2.2,
 			"name": "Walker",
@@ -177,7 +197,7 @@
 		},
 		{
 			"type": "patchouli:entity",
-			"entity": "wan_ancient_beasts:raider",
+			"entity": "wan_ancient_beasts:raider{NoAI:1b}",
 			"scale": 0.5,
 			"name": "Raider",
 			"anchor": "raider",
@@ -185,7 +205,7 @@
 		},
 		{
 			"type": "patchouli:entity",
-			"entity": "wan_ancient_beasts:toxlacanth",
+			"entity": "wan_ancient_beasts:toxlacanth{NoAI:1b}",
 			"scale": 0.35,
 			"name": "Toxlacanth",
 			"anchor": "toxlacanth",
@@ -193,17 +213,43 @@
 		},
 		{
 			"type": "patchouli:entity",
-			"entity": "species:stackatick",
+			"entity": "species:stackatick{NoAI:1b}",
 			"scale": 0.4,
 			"name": "Stackatick",
 			"anchor": "stackatick",
 			"text": "One of the few animals that can survive the Martian desert, $(thing)Stackaticks$() are passive prey animals. They can also be eaten."
 		},
 		{
+			"type": "patchouli:entity",
+			"entity": "species:quake{NoAI:1b}",
+			"scale": 0.8,
+			"name": "Quake",
+			"anchor": "quake",
+			"text": "$(thing)Quakes$() are capable of absorbing large amounts of damage before releasing it back in a burst. Wait until they're recharging to attack!"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "endermanoverhaul:badlands_enderman{NoAI:1b}",
+			"scale": 0.8,
+			"name": "Endermen",
+			"anchor": "endermen",
+			"text": "Mars has its own selection of Endermen species. All are passive except the one found underground."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "ad_astra:martian_raptor{NoAI:1b}",
+			"scale": 0.8,
+			"name": "Skeletal Raptor",
+			"anchor": "skeletal_raptor",
+			"text": "An undead dinosaur. They can be found underground."
+		},
+		{
 			"type": "patchouli:relations",
 			"title": "Further Reading",
 			"anchor": "relations",
 			"entries": [
+				"tfg:mars/mars",
+				"tfg:mars/mars_equipment",
 				"tfg:the_world/wild_animals",
 				"tfg:agriculture/animal_husbandry",
 				"tfg:agriculture/jellies",

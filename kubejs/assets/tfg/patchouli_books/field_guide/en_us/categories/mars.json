@@ -1,1 +1,6 @@
-{"name":"Mars","description":"All about the geology and ecology of Mars.","icon":"tfg:marker/mars","sortnum":4}
+{
+	"name": "Mars",
+	"description": "Everything to know about $(c)Mars$(), the fourth planet from the sun.$(br2)Mars can be visited in $(5)EV$().",
+	"icon": "tfg:marker/mars",
+	"sortnum": 4
+}

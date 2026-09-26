@@ -535,10 +535,13 @@
 			"title": "Further Reading",
 			"anchor": "relations",
 			"entries": [
+				"tfg:mars/mars",
 				"tfg:the_world/climate",
 				"tfg:the_world/wild_crops",
 				"tfg:the_moon/moon_crops",
-				"tfg:beneath/beneath_crops"
+				"tfg:beneath/beneath_crops",
+				"tfg:agriculture/growing_crops",
+				"tfg:agriculture/greenhouse"
 			]
 		}
 	],
