@@ -262,13 +262,7 @@
             "anchor": "block_interactions",
             "title": "Block Interactions",
             "text": "There are many in-world interactions that can be done to streamline building:$(li)Turn blocks mossy by $(item)$(k:key.sneak)-$(k:key.use)$() them with $(l:agriculture/composting#green_compost)Greens$().$(li)Crack stone bricks by $(item)$(k:key.sneak)-$(k:key.use)$() with a $(thing)Hammer$().$(li)Smooth stone bricks by $(item)$(k:key.sneak)-$(k:key.use)$() with $(thing)Sand Paper$().$(br)All interactions can be viewed by browsing the block modifications tab in $(emi)."
-        },
-        {
-            "type": "patchouli:text",
-            "anchor": "customizable_blocks",
-            "title": "Customizable Blocks",
-            "text": "$(tfg_short) adds a few mods dedicated to adding customizable blocks for very intricate building.$(li)$(bold)Create: Copycats$() adds many blocks that can be $(item)$(k:key.use)$() with another block to copy its appearance. Made with a $(thing)Stonecutter$().$(li)$(bold)Framed Blocks$() adds many blocks that can be $(item)$(k:key.use)$() with another block to copy its appearance. Mostly made with a $(thing)Framing Saw$().$(li)$(bold)Domum Ornamentum$() adds blocks that can copy the appearance of others. Made with an $(thing)Architect's Cutter$()."
-        },
+        },        
         {
             "type": "patchouli:text",
             "anchor": "roof_building",
@@ -296,7 +290,8 @@
                 "tfg:craftsmanship/barrels",
                 "tfg:craftsmanship/chisel",
                 "tfg:the_world/geology",
-                "tfg:logistics/roads"
+                "tfg:logistics/roads",
+                "tfg:craftsmanship/building_tools"
             ]
         }
     ],
@@ -314,11 +309,7 @@
         "tag:tfc:colored_raw_alabaster": 15,
         "tag:tfc:colored_bricks_alabaster": 15,
         "tag:tfc:colored_polished_alabaster": 15,
-        "domum_ornamentum:architectscutter": 19,
-        "framedblocks:framing_saw": 19,
-        "framedblocks:powered_framing_saw": 19,
-        "minecraft:stonecutter": 19,
-        "tag:rnr:roof_blocks": 20,
-        "tag:rnr:shingles": 20
+        "tag:rnr:roof_blocks": 19,
+        "tag:rnr:shingles": 19
     }
 }

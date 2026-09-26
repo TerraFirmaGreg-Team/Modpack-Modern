@@ -150,20 +150,20 @@
 		{
 			id: "78752A85BA6FA834"
 			linked_quest: "46214D40FA69DA7B"
-			x: 9.5d
+			x: 10.5d
 			y: -12.0d
 		}
 		{
 			id: "61A5C3471B9331BE"
 			linked_quest: "4E87F4BB0D441E00"
-			x: 11.0d
+			x: 12.0d
 			y: -12.0d
 		}
 		{
 			id: "060F9F1B0F53041C"
 			linked_quest: "66FDACC7E7F9180C"
 			shape: "heart"
-			x: 8.5d
+			x: 7.5d
 			y: -15.5d
 		}
 		{
@@ -3047,6 +3047,7 @@
 		{
 			dependencies: ["76F88CCE8FEF27B4"]
 			description: ["{quests.metal_age.iron_construction_wand.desc}"]
+			guide_page: "tfg:field_guide tfg:craftsmanship/building_tools"
 			id: "1557C21988C3C155"
 			optional: true
 			shape: "heart"
@@ -3523,6 +3524,22 @@
 				type: "item"
 			}]
 			x: 7.5d
+			y: -10.0d
+		}
+		{
+			dependencies: ["76F88CCE8FEF27B4"]
+			description: ["{quests.metal_age.schematicannon.desc}"]
+			guide_page: "tfg:field_guide tfg:craftsmanship/building_tools 7"
+			id: "6A3CF1CD0A79DF7E"
+			optional: true
+			shape: "heart"
+			subtitle: "{quests.metal_age.schematicannon.subtitle}"
+			tasks: [{
+				id: "7D1CF6158EC144CA"
+				item: "create:schematicannon"
+				type: "item"
+			}]
+			x: 10.5d
 			y: -10.0d
 		}
 	]

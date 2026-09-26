@@ -2080,9 +2080,9 @@
 			size: 1.5d
 			subtitle: "{quests.space_survival.railgun.subtitle}"
 			tasks: [{
-				id: "089ED42F1EFB1861"
-				title: "{quests.space_survival.railgun.task}"
-				type: "checkmark"
+				id: "3AD81F588E54E6F2"
+				item: "tfg:interplanetary_item_launcher"
+				type: "item"
 			}]
 			title: "{quests.space_survival.railgun.title}"
 			x: 16.5d

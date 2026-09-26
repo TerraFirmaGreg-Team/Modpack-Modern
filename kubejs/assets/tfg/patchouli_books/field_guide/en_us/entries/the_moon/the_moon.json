@@ -85,7 +85,7 @@
 		},
 		{
 			"type": "patchouli:multiblock",
-			"text": "Use a $(item)Terminal$() to construct the multiblock easily.",
+			"text": "Use a $(l:craftsmanship/building_tools#terminals)Terminal$() to construct the multiblock easily.",
 			"name": " ",
 			"enable_visualize": true,
 			"multiblock": {
