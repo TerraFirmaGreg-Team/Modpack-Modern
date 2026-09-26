@@ -14,6 +14,30 @@
 - Changed recipes of almost all More Red items and blocks, making them available a lot earlier @Pyritie
 - Chorus-Infused Ceramic Insulation now uses chorus flowers instead of popped chorus fruit @Pyritie
 ### Changes
+#### Field Guide
+The field guide has been completely rewritten! (#5023) @Redeix
+
+From now on the field guide will be your main source of detailed information about mechanics. To view progression related information, please view the quest book. For recipes, search in EMI. We have, and are still, making efforts to convert a lot of hard coded book information into dynamic EMI tabs. The new tree tapping and lamp fuel EMI displays being examples of such.
+
+To better enforce this split of information (and to make it more obvious where to look for things), we will be removing some information-based quests and putting them in the field guide instead, starting with the different planet-based quest chapters. We want to make it very clear that "how do I do this" questions should be answered with the field guide, and "what do I do next" questions should be answered with the quest book.
+
+A big change is that ore information will no longer be viewable in the field guide. Please use the EMI ore information tab when searching for veins. The main reason for this decision is due to the clunky behavior of trying to automate field guide entries along with other languages and making sure it looks decent in a strict format. The other reason is simply to reduce bloated file sizes from redundant information.
+
+On top of rewriting entries, many new diagrams and multiblock displays have been added to help give you visual references for mechanics. Most lengthy entries will now have an index at the beginning for quick links throughout the chapters. There will also be a Further Reading section at the end of each entry in case you wish to keep learning about related mechanics.
+
+The book is no longer split between entries for random addons, or clustered in specific chapters like Mechanics. You will now see the following categories:
+- Planets: Each destination will have its own category detailing its wildlife, available crops, geography, climate, and other unique info.
+- Craftsmanship: The main category for crafting and progression. Contains entries like Glassworking, Bloomery, Metallurgy, etc.
+- Food & Beverages: Dedicated category for all things food related. Contains entries for Preservation, Nutrition Information, Cooking Methods, etc.
+- Agriculture: Category for entries relating to growing crops, raising livestock, and producing materials from natural sources. (Note that animal entries are in their corresponding planet category!).
+- Logistics: Contains entries for transportation methods, storage types, infrastructure, travel, redstone devices, and more.
+- Game Mechanics: Category dedicated to core game mechanics in TFG like Heating, Medical Hazards, Collapses, Lighting, etc.
+#### Tools & Smithing
+- Added three new anvils: vanadium steel, stainless steel, and tungsten. These are completely optional, but you can use these to manually craft tool heads of MV+ tools, finally allowing you to have forging bonuses on everything. Anvils for IV+ tools will come as each tier is reworked. (#5015) @Pyritie
+- Changed the recipes for chainsaw and drill heads to a double plate and a block, respectively (#5015) @Pyritie
+- Buzzsaw blades are now made in an extruder instead of a lathe (#5015) @Pyritie
+- Added two new stone anvils for pyroxenite and keratophyre (#5015) @Pyritie
+#### Other Changes
 - Added more mob icons to xaeros minimap (#4941) @Nezumi-Remis
 - Made it easier to find peat by giving it a unique grass texture (#4964) @applenper
 - Added more asphalt road markings, especially for diagonal lines (#4961) @Sacarbeus123
@@ -29,6 +53,7 @@
 - Added an EMI category for lamp fuels @Redeix
 - Merged a lot of the "early automation" quest chapter into the "metallurgy age" one, and added lots of links to things that are unlocked at each tier @Pyritie
 - Added some planets to the skybox. If you're using the TFG shaders, you can change the sun and moon to squares via the shader options (change them to "reimagined" style). If you're using TFC Caelum, this will result in duplicates of some planets, so TFC Caelum has been removed from the optional mod list @Pyritie
+- Every block of a Keg can now be pushed and pulled into, instead of only the front bottom left block @ashleney
 ### Bug fixes
 - Fixed some worldgen crashes (#4905, #4900) @Pyritie
 - Fix to repair scrambled pack order at level data which was affecting a few random world-related things such as not being able to collect glass with a gem saw (#4152) @ariedotme
@@ -42,6 +67,8 @@
 - Fixed snow on the bloomery/blast furnace 'molten' block causing voiding (#4969) @NeonNoise
 - Fixed crowbars not being extractable from create logistics, again @ashleney
 - Fixed chameleon spraycan opening the GUI of hatches/buses when spraying them (#5006) @Phoenixvine32908
+- Fixed teleporting from the beneath to overworld not breaking hornfels blocks @Pyritie
+- Fixed the pisciculture rotor block having the collision of a slab and not a block @Redeix
 ### Mods
 #### TerraFirmaCraft
 - Has been forked! This shouldn't affect you at all, but it ensures long-term stability for the future development of the modpack. Please read [here](https://www.reddit.com/r/TerraFirmaGreg/comments/1wbv1o3/the_future_of_terrafirmacraft_in_tfg/) for more information.
