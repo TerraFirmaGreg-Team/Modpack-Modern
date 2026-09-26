@@ -1994,7 +1994,11 @@
 		}
 		{
 			dependencies: ["47B899144B865516"]
-			description: ["{quests.low_voltage.food_machines.desc}"]
+			description: [
+				"{quests.low_voltage.food_machines.desc.1}"
+				"{@pagebreak}"
+				"{quests.low_voltage.food_machines.desc.2}"
+			]
 			icon: "tfg:lv_food_processor"
 			id: "3B6A7B1E9114C2A9"
 			optional: true

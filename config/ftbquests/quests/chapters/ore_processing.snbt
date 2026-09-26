@@ -718,7 +718,7 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["197A13A0790F000B"]
+			dependencies: ["00004BE1D77EA003"]
 			description: ["{quests.ore_proc.ae2.desc}"]
 			icon: "expatternprovider:tag_storage_bus"
 			id: "4ED1E28BDDE50E6C"
@@ -745,7 +745,7 @@
 			]
 			title: "{quests.ore_proc.ae2.title}"
 			x: -10.0d
-			y: -2.5d
+			y: -0.625d
 		}
 		{
 			dependencies: ["0F0525A70047EEB2"]

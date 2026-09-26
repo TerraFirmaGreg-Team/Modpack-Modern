@@ -5,7 +5,7 @@
 	group: "19428C6E7A36D463"
 	icon: "create:white_toolbox"
 	id: "254D02A31AA8EB49"
-	order_index: 2
+	order_index: 1
 	quest_links: [
 		{
 			id: "1AD1F9822B738105"
@@ -2163,7 +2163,7 @@
 			dependencies: [
 				"205E3ACA10A16C23"
 				"00D957B20B4A12F3"
-				"368E3C94EEDC11BB"
+				"3D87E94AD7F58C31"
 			]
 			dependency_requirement: "one_completed"
 			description: [

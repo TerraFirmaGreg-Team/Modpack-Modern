@@ -103,13 +103,6 @@
 			y: -14.0d
 		}
 		{
-			id: "3BB6632786CE484C"
-			linked_quest: "73D5ED4099F99A47"
-			shape: "heart"
-			x: 5.5d
-			y: -10.0d
-		}
-		{
 			id: "6486A795C39453F6"
 			linked_quest: "22E604DB7E7E87FB"
 			x: 9.5d
@@ -174,38 +167,6 @@
 			y: -15.5d
 		}
 		{
-			id: "18DFE1D8C0ED416E"
-			linked_quest: "1071B804483BB882"
-			shape: "circle"
-			x: 2.0d
-			y: -30.5d
-		}
-		{
-			id: "7B326D1051F7F114"
-			linked_quest: "76E0058A4DDF3CFB"
-			x: 2.0d
-			y: -32.0d
-		}
-		{
-			id: "679F1B2269B48220"
-			linked_quest: "79FA776C414AE8E5"
-			x: 0.5d
-			y: -32.0d
-		}
-		{
-			id: "5D2F594DAF225B81"
-			linked_quest: "368E3C94EEDC11BB"
-			x: -3.0d
-			y: -33.5d
-		}
-		{
-			id: "66246A79763C5C31"
-			linked_quest: "4E950ADF626B4D94"
-			shape: "heart"
-			x: 7.5d
-			y: -10.0d
-		}
-		{
 			id: "7C664644B941316E"
 			linked_quest: "78374FC41EFCFD9B"
 			shape: "heart"
@@ -244,13 +205,6 @@
 			linked_quest: "75C6BF1C9405B4C7"
 			shape: "heart"
 			x: 8.5d
-			y: -10.0d
-		}
-		{
-			id: "2C77D28C912BD8E4"
-			linked_quest: "30DD0DDF86C96926"
-			shape: "heart"
-			x: 9.5d
 			y: -10.0d
 		}
 		{
@@ -1615,6 +1569,7 @@
 			description: ["{quests.tfg_tips.treetap.desc}"]
 			guide_page: "tfc:field_guide tfc:arborfirmacraft/tree_tapping"
 			id: "0CBA3C295E99D8EA"
+			optional: true
 			subtitle: "{quests.tfg_tips.treetap.subtitle}"
 			tasks: [{
 				id: "1ECEBAAF51B53A60"
@@ -1671,6 +1626,7 @@
 			description: ["{quests.tfg_tips.find_latex_tree.desc}"]
 			guide_page: "tfc:field_guide tfc:arborfirmacraft/making_rubber"
 			id: "6E7C02FA5ADAAC23"
+			optional: true
 			subtitle: "{quests.tfg_tips.find_latex_tree.subtitle}"
 			tasks: [{
 				id: "707E07E621334EF4"
@@ -3369,8 +3325,8 @@
 		}
 		{
 			dependencies: [
-				"79FA776C414AE8E5"
 				"2936976FC773ABE4"
+				"721AEB8B079A32E8"
 			]
 			dependency_requirement: "one_completed"
 			description: ["{quests.metal_age.wax_products.desc}"]
@@ -3384,6 +3340,190 @@
 			title: "{quests.metal_age.wax_products.title}"
 			x: -4.5d
 			y: -32.0d
+		}
+		{
+			dependencies: [
+				"61A8220EA30E7649"
+				"721AEB8B079A32E8"
+			]
+			dependency_requirement: "one_completed"
+			description: ["{quests.tfg_tips.candles.desc}"]
+			guide_page: "tfc:field_guide tfc:mechanics/lighting"
+			id: "3D87E94AD7F58C31"
+			optional: true
+			subtitle: "{quests.tfg_tips.candles.subtitle}"
+			tasks: [{
+				id: "3AD2A100023C5E23"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:candles)"
+					}
+				}
+				title: "{quests.tasktype.item.any} #tfc:candles"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.candles.title}"
+			x: -3.0d
+			y: -33.5d
+		}
+		{
+			dependencies: ["2507BDE802965E6A"]
+			dependency_requirement: "one_completed"
+			description: ["{quests.tfg_tips.beeswax.desc}"]
+			icon: "firmalife:beeswax"
+			id: "721AEB8B079A32E8"
+			optional: true
+			subtitle: "{quests.tfg_tips.beeswax.subtitle}"
+			tasks: [
+				{
+					id: "1A46C9849C714CE3"
+					item: "firmalife:beeswax"
+					type: "item"
+				}
+				{
+					id: "1E72BE73F5741C83"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:knives)"
+						}
+					}
+					title: "{quests.tasktype.item.any} #tfc:knives"
+					type: "item"
+				}
+			]
+			title: "{quests.tfg_tips.beeswax.title}"
+			x: 0.5d
+			y: -32.0d
+		}
+		{
+			dependencies: ["1637121D67CB91B0"]
+			description: ["{quests.tfg_tips.beehive.desc}"]
+			id: "2507BDE802965E6A"
+			optional: true
+			subtitle: "{quests.tfg_tips.beehive.subtitle}"
+			tasks: [
+				{
+					id: "5C4817E334724BA3"
+					item: "firmalife:beehive"
+					type: "item"
+				}
+				{
+					id: "613090E4D16B3158"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							Parent: { }
+						}
+						id: "firmalife:beehive_frame"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "{quests.tfg_tips.beehive.title}"
+			x: 2.0d
+			y: -32.0d
+		}
+		{
+			dependencies: ["3C48CA0DAB4EE71B"]
+			dependency_requirement: "one_completed"
+			description: ["{quests.tfg_tips.beekeeping.desc}"]
+			guide_page: "tfc:field_guide tfc:firmalife/beekeeping"
+			icon: "firmalife:raw_honey"
+			id: "1637121D67CB91B0"
+			optional: true
+			shape: "circle"
+			subtitle: "{quests.tfg_tips.beekeeping.subtitle}"
+			tasks: [{
+				id: "60A83579CCC422A9"
+				title: "{quests.tasktype.checkmark}"
+				type: "checkmark"
+			}]
+			title: "{quests.tfg_tips.beekeeping.title}"
+			x: 2.0d
+			y: -30.5d
+		}
+		{
+			dependencies: ["76F88CCE8FEF27B4"]
+			dependency_requirement: "one_completed"
+			description: ["{quests.tfg_tips.greenhouse_automation.desc}"]
+			guide_page: "tfc:field_guide tfc:firmalife/planters"
+			id: "7058443D91C8D461"
+			optional: true
+			shape: "heart"
+			subtitle: "{quests.tfg_tips.greenhouse_automation.subtitle}"
+			tasks: [
+				{
+					id: "7C2DF141116F0762"
+					item: "firmalife:picker"
+					type: "item"
+				}
+				{
+					id: "0E97EDCE68A5C43E"
+					item: "firmalife:sweeper"
+					type: "item"
+				}
+			]
+			title: "{quests.tfg_tips.greenhouse_automation.title}"
+			x: 9.5d
+			y: -10.0d
+		}
+		{
+			dependencies: ["76F88CCE8FEF27B4"]
+			description: ["{quests.tfg_tips.oven_appliances.desc}"]
+			id: "56BE73FC3D25BCCB"
+			subtitle: "{quests.tfg_tips.oven_appliances.subtitle}"
+			tasks: [
+				{
+					id: "0EA138E124A0354E"
+					item: "firmalife:vat"
+					type: "item"
+				}
+				{
+					id: "05D8CEDF02CFAF79"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfc:wrought_iron_grill"
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "2C057752B7D4B405"
+					item: "firmalife:jarring_station"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "{quests.tfg_tips.oven_appliances.title}"
+			x: 5.5d
+			y: -10.0d
+		}
+		{
+			dependencies: ["76F88CCE8FEF27B4"]
+			description: ["{quests.tfg_tips.compost_tumbler.desc}"]
+			guide_page: "tfg:field_guide tfg:agriculture/composting 10"
+			id: "07F580C9462629CF"
+			optional: true
+			shape: "heart"
+			subtitle: "{quests.tfg_tips.compost_tumbler.subtitle}"
+			tasks: [{
+				id: "4BBC24B9FC1B7DB7"
+				item: "firmalife:compost_tumbler"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -10.0d
 		}
 	]
 	subtitle: ["{quests.metal_age.subtitle}"]
