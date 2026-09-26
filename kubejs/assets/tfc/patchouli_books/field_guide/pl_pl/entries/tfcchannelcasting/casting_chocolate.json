@@ -10,7 +10,7 @@
     {
       "type": "tfc:knapping_recipe",
       "recipe": "tfcchannelcasting:clay_knapping/unfired_heart_mold",
-      "text": "Knapping a $(thing)Heart Mold$(), used to create $(thing)Heart$()-shaped chocolates."
+      "text": "Rzeźbiienie $(thing)formy serca$(), używanej do tworzenia czekoladek w kształcie $(thing)serca$()."
     },
     {
       "type": "patchouli:text",
@@ -28,12 +28,12 @@
     {
       "type": "tfc:sealed_barrel_recipe",
       "recipe": "tfcchannelcasting:barrel/fill_with_strong_liquor",
-      "text": "Eating chocolates filled with $(thing)Strong Liquor$() gives damange resistance."
+      "text": "Jedzenie czekoladek wypełnionych $(thing)silnym alkoholem$() zapewnia odporność na obrażenia."
     },
     {
       "type": "tfc:sealed_barrel_recipe",
       "recipe": "tfcchannelcasting:barrel/fill_with_whiskey",
-      "text": "Jedzenie czekoladek wypełnionych $(thing)whisky$() daje pośpiech."
+      "text": "Jedzenie czekoladek wypełnionych $(thing)whisky$() zapewnia efekt pośpiechu."
     }
   ],
   "read_by_default": true

@@ -22,7 +22,7 @@
       "images": [
         "tfc:textures/gui/book/tutorial/quern_empty.png"
       ],
-      "text": "Point at the top of the quern block and $(item)$(k:key.use)$() to place the handstone.",
+      "text": "Najedź na górę bloku żaren i użyj $(item)$(k:key.use)$(), aby umieścić rozcieracz.",
       "border": true
     },
     {

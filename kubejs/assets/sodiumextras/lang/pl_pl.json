@@ -31,6 +31,7 @@
   "sodium.extras.options.darkness.end.desc": "Jeśli włączone, prawdziwa ciemność będzie włączona w Endzie.",
   "sodium.extras.options.darkness.end.title": "Włącz w Endzie",
   "sodium.extras.options.darkness.mode.dark": "Ciemny",
+  "sodium.extras.options.darkness.mode.desc": "Sprawia, że świat staje się realistycznie ciemny. Nie wpływa na jasność dnia ani światło pochodni.\nOkreśla poziom ciemności uznawany za prawdziwą ciemność.",
   "sodium.extras.options.darkness.mode.dim": "Ciemny",
   "sodium.extras.options.darkness.mode.pitchblack": "Głęboka czerń",
   "sodium.extras.options.darkness.mode.reallydark": "Naprawdę ciemny",
@@ -81,6 +82,7 @@
   "sodium.extras.options.fog.desc": "Jeśli wyłączone, usuń efekt mgły tylko w nadświecie",
   "sodium.extras.options.fog.title": "Użyj mgły",
   "sodium.extras.options.fontshadow.title": "Cienie tekstu",
+  "sodium.extras.options.jei.desc": "Jeśli opcja jest włączona, lista przedmiotów JEI będzie ukryta, dopóki czegoś nie wyszukasz. Naciśnij spację, aby wyszukać wszystkie przedmioty.",
   "sodium.extras.options.jei.title": "Ukryj JEI, jeśli nie wyszukujesz",
   "sodium.extras.options.others.borderless.attachmode.title": "Pełny ekran bez ramki na F11",
   "sodium.extras.options.others.languagescreen.fastreload.desc": "Jeśli włączone, zmiana języka przeładowuje tylko język zamiast wszystkich zasobów. Wzrost prędkości o 99,9%.",
@@ -89,6 +91,7 @@
   "sodium.extras.options.screen.borderless": "Okno bez ramek",
   "sodium.extras.options.screen.title": "Tryb pełnoekranowy",
   "sodium.extras.options.screen.windowed": "W oknie",
+  "sodium.extras.options.zoom.cinematic.desc": "Włącza kamerę filmową podczas przybliżania.\nPo wyłączeniu tej opcji ustaw również `zoomSmoothnessMs` na `0`.",
   "sodium.extras.options.zoom.cinematic.title": "Zbliżenie kinowe",
   "sodium.extras.options.zoom.default.desc": "Domyślny procent początkowego powiększenia.",
   "sodium.extras.options.zoom.default.title": "Domyślne powiększenie",
@@ -104,5 +107,6 @@
   "sodium.extras.options.zoom.smoothness.title": "Płynność zoomu w milisekundach",
   "sodium.extras.options.zoom.speed.desc": "Szybkość przybliżania i oddalania za pomocą przypisanych klawiszy oraz przewijania (jeśli włączono).",
   "sodium.extras.options.zoom.speed.title": "Szybkość przybliżania",
+  "sodium.extras.options.zoom.toggle.desc": "Jeśli `true`, klawisz powiększenia działa jako przełącznik. Jeśli `false`, powiększenie działa tylko podczas przytrzymywania klawisza.",
   "sodium.extras.options.zoom.toggle.title": "Przełącz tryb"
 }

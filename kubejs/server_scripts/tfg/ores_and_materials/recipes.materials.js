@@ -138,9 +138,11 @@ const getFillingNBT = (material, amount) => {
  * @param {String} tagPrefixName
  * @param {number} mbAmount
  * @param {boolean} lowerTierAlloySmelting 
- * Forces the alloy smelter recipe to be LV, but at the cost of twice the inputs
+ * Forces the alloy smelter recipe to be LV
+ * @param {number} alloySmelterMultiplier
+ * If the item has an extruder recipe, this should be 2, otherwise use 1
  */
-function addMaterialCasting(event, outputItem, ceramicMold, isFireMold, gtMold, material, tagPrefixName, mbAmount, lowerTierAlloySmelting) {
+function addMaterialCasting(event, outputItem, ceramicMold, isFireMold, gtMold, material, tagPrefixName, mbAmount, lowerTierAlloySmelting, alloySmelterMultiplier) {
 	const materialName = material.getName();
 
 	// If it's a TFC material, add ceramic mold casting + create spouting
@@ -153,28 +155,31 @@ function addMaterialCasting(event, outputItem, ceramicMold, isFireMold, gtMold, 
 		&& ceramicMold !== null
 		// Liquid wrought iron doesn't exist in the TFC era
 		&& material !== GTMaterials.WroughtIron) {
+
 		const outputMaterial = (tfcProperty.getOutputMaterial() === null) ? material : tfcProperty.getOutputMaterial();
 		const id = `${materialName}_${tagPrefixName}_${isFireMold ? 'fire' : 'ceramic'}`;
 
-		event.recipes.tfc.casting(outputItem, ceramicMold, Fluid.of(outputMaterial.getFluid(), mbAmount), isFireMold ? 0.01 : 0.1)
-			.id(`tfg:casting/${id}`);
+		if (outputMaterial.hasProperty(PropertyKey.FLUID)) {
+			event.recipes.tfc.casting(outputItem, ceramicMold, Fluid.of(outputMaterial.getFluid(), mbAmount), isFireMold ? 0.01 : 0.1)
+				.id(`tfg:casting/${id}`);
 
-		event.recipes.create.filling(Item.of(ceramicMold, getFillingNBT(outputMaterial, mbAmount)), [
-			Fluid.of(outputMaterial.getFluid(), mbAmount),
-			Item.of(ceramicMold).strongNBT()
-		]).id(`tfg:filling/${id}`);
+			event.recipes.create.filling(Item.of(ceramicMold, getFillingNBT(outputMaterial, mbAmount)), [
+				Fluid.of(outputMaterial.getFluid(), mbAmount),
+				Item.of(ceramicMold).strongNBT()
+			]).id(`tfg:filling/${id}`);
+		}
 	}
 
 	// If there's a gregtech mold, add alloy smelter/fluid solidifier recipes.
 	if (gtMold !== null) {
-		const ingotAmount = mbAmount / 144;
+		const ingotAmount = (mbAmount * alloySmelterMultiplier) / 144;
 
 		if (lowerTierAlloySmelting) {
 			event.recipes.gtceu.alloy_smelter(`tfg:cast_${materialName}_${tagPrefixName}`)
-				.itemInputs(ChemicalHelper.get(TagPrefix.ingot, material, ingotAmount * 2))
+				.itemInputs(ChemicalHelper.get(TagPrefix.ingot, material, ingotAmount))
 				.notConsumable(gtMold)
 				.itemOutputs(outputItem)
-				.duration(material.getMass() * 2 * ingotAmount)
+				.duration(material.getMass() * ingotAmount)
 				.EUt(GTValues.VA[GTValues.LV])
 				.category(GTRecipeCategories.INGOT_MOLDING)
 		}
@@ -183,17 +188,19 @@ function addMaterialCasting(event, outputItem, ceramicMold, isFireMold, gtMold, 
 				.itemInputs(ChemicalHelper.get(TagPrefix.ingot, material, ingotAmount))
 				.notConsumable(gtMold)
 				.itemOutputs(outputItem)
-				.duration(material.getMass() * 2 * ingotAmount)
+				.duration(material.getMass() * ingotAmount)
 				.EUt(getFluidRecipeEUt(material))
 				.category(GTRecipeCategories.INGOT_MOLDING)
 		}
 
-		event.recipes.gtceu.fluid_solidifier(`tfg:solidify_${materialName}_${tagPrefixName}`)
-			.inputFluids(Fluid.of(material.getFluid(), mbAmount))
-			.notConsumable(gtMold)
-			.itemOutputs(outputItem)
-			.duration(material.getMass() * 2 * ingotAmount)
-			.EUt(getFluidRecipeEUt(material))
+		if (material.hasProperty(PropertyKey.FLUID)) {
+			event.recipes.gtceu.fluid_solidifier(`tfg:solidify_${materialName}_${tagPrefixName}`)
+				.inputFluids(Fluid.of(material.getFluid(), mbAmount))
+				.notConsumable(gtMold)
+				.itemOutputs(outputItem)
+				.duration(material.getMass() * ingotAmount)
+				.EUt(getFluidRecipeEUt(material))
+		}
 	}
 }
 
@@ -300,10 +307,12 @@ function registerTFGMaterialRecipes(event) {
 			processGTToolHead(event, GTToolType.WIRE_CUTTER, TagPrefix.toolHeadWireCutter, material)
 			processToolHead(event, TagPrefix.toolHeadWireCutter, "wire_cutter_head", 'tfg:wire_cutter_head_extruder_mold', null, material)
 
-			// chainsaw, drill, buzzsaw
+			processToolHead(event, TagPrefix.toolHeadChainsaw, "chainsaw_head", "tfg:chainsaw_head_extruder_mold", null, material);
 
+			// Misc
 			processToolMortar(event, GTToolType.MORTAR, material);
 
+			// TFC-only
 			processToolHead(event, TFGTagPrefix.toolHeadPropick, "propick_head", 'tfg:propick_head_extruder_mold', 'tfc:ceramic/propick_head_mold', material)
 			processToolHead(event, TFGTagPrefix.toolHeadJavelin, "javelin_head", 'tfg:javelin_head_extruder_mold', 'tfc:ceramic/javelin_head_mold', material)
 			processToolHead(event, TFGTagPrefix.toolHeadChisel, "chisel_head", 'tfg:chisel_head_extruder_mold', 'tfc:ceramic/chisel_head_mold', material)
@@ -328,9 +337,10 @@ function registerTFGMaterialRecipes(event) {
 			processNugget(event, material)
 			processSmallGear(event, material)
 			processLargeGear(event, material)
-
+			processDrill(event, material);
 			processBuzzsawBlade(event, material)
 			processPlatedBlock(event, material)
+			processAnvil(event, material)
 		}
 
 		if (material.hasProperty(PropertyKey.GEM)) {
@@ -346,7 +356,6 @@ function registerTFGMaterialRecipes(event) {
 		}
 
 		if (material.hasProperty(TFGPropertyKey.TFC_PROPERTY)) {
-			processAnvil(event, material)
 			processLamp(event, material)
 			processTrapdoor(event, material)
 			processChain(event, material)

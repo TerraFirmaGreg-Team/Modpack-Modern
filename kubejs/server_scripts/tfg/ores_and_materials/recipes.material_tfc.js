@@ -71,7 +71,7 @@ function addToolExtruderRecipe(event, material, outputItem, inputItem, mold, id)
  */
 function processTFCTool(event, material) {
 	const materialName = material.getName();
-	
+
 	const ingotItem = ChemicalHelper.get(TagPrefix.ingot, material, 1);
 	const doubleIngotItem = ChemicalHelper.get(TFGTagPrefix.ingotDouble, material, 1);
 	const doublePlateItem = ChemicalHelper.get(TagPrefix.plateDouble, material, 1);
@@ -139,86 +139,126 @@ function processTFCTool(event, material) {
 		// Scraping knife
 		let scrapingKnife = `tfcscraping:metal/scraping_knife/${materialName}`;
 		let scrapingKnifeBlade = `tfcscraping:metal/scraping_knife_blade/${materialName}`;
-		addAnvilRecipe(event, scrapingKnifeBlade, doubleIngotItem, ['hit_last','draw_not_last', 'draw_second_last'], true, material, 'scraping_knife_blade');
+		addAnvilRecipe(event, scrapingKnifeBlade, doubleIngotItem, ['hit_last', 'draw_not_last', 'draw_second_last'], true, material, 'scraping_knife_blade');
 		addTFCMelting(event, scrapingKnife, material, 144 * 2, 'scraping_knife');
 		addMaterialRecyclingNoTagPrefix(event, scrapingKnifeBlade, material, 'scraping_knife_blade', 2);
-		addMaterialCasting(event, scrapingKnifeBlade, 'tfcscraping:ceramic/scraping_knife_blade_mold', false, null, material, 'scraping_knife_blade', 144 * 2, false);
+		addMaterialCasting(event, scrapingKnifeBlade, 'tfcscraping:ceramic/scraping_knife_blade_mold', false, null, material, 'scraping_knife_blade', 144 * 2, false, 1);
 	}
 
 	// Sword
 	const swordBlade = ChemicalHelper.get(TFGTagPrefix.toolHeadSword, material, 1);
-	event.remove({ id: `tfc:crafting/metal/sword/${materialName}` })
-	addAnvilRecipe(event, swordBlade, doubleIngotItem, ['punch_last', 'bend_not_last', 'draw_not_last'], true, material, 'sword_blade');
-	
+	if (!swordBlade.isEmpty()) {
+		event.remove({ id: `tfc:crafting/metal/sword/${materialName}` })
+		addAnvilRecipe(event, swordBlade, doubleIngotItem, ['punch_last', 'bend_not_last', 'draw_not_last'], true, material, 'sword_blade');
+	}
+
 	// Butchery Knife
 	const butcheryKnifeHead = ChemicalHelper.get(TFGTagPrefix.toolHeadButcheryKnife, material, 1);
-	addAnvilRecipe(event, butcheryKnifeHead, ingotItem, ['punch_last', 'bend_not_last', 'bend_not_last'], true, material, 'knife_butchery_head');
+	if (!butcheryKnifeHead.isEmpty()) {
+		addAnvilRecipe(event, butcheryKnifeHead, ingotItem, ['punch_last', 'bend_not_last', 'bend_not_last'], true, material, 'knife_butchery_head');
+	}
 
 	// Mining Hammer
 	const miningHammerHead = ChemicalHelper.get(TFGTagPrefix.toolHeadMiningHammer, material, 1);
-	addAnvilRecipe(event, miningHammerHead, doubleIngotItem, ['punch_last', 'shrink_not_last'], true, material, 'mining_hammer_head');
+	if (!miningHammerHead.isEmpty()) {
+		addAnvilRecipe(event, miningHammerHead, doubleIngotItem, ['punch_last', 'shrink_not_last'], true, material, 'mining_hammer_head');
+	}
 
 	// Spade
 	const spadeHead = ChemicalHelper.get(TFGTagPrefix.toolHeadSpade, material, 1);
-	addAnvilRecipe(event, spadeHead, doubleIngotItem, ['punch_last', 'hit_not_last'], true, material, 'spade_head');
+	if (!spadeHead.isEmpty()) {
+		addAnvilRecipe(event, spadeHead, doubleIngotItem, ['punch_last', 'hit_not_last'], true, material, 'spade_head');
+	}
 
 	// Pickaxe
 	const pickaxeHead = ChemicalHelper.get(TFGTagPrefix.toolHeadPickaxe, material, 1);
-	event.remove({ id: `tfc:crafting/metal/pickaxe/${materialName}` });
-	addAnvilRecipe(event, pickaxeHead, ingotItem, ['punch_last', 'bend_not_last', 'draw_not_last'], true, material, 'pickaxe_head');
+	if (!pickaxeHead.isEmpty()) {
+		event.remove({ id: `tfc:crafting/metal/pickaxe/${materialName}` });
+		addAnvilRecipe(event, pickaxeHead, ingotItem, ['punch_last', 'bend_not_last', 'draw_not_last'], true, material, 'pickaxe_head');
+	}
 
 	// Screwdriver
 	const screwdriverHead = ChemicalHelper.get(TagPrefix.toolHeadScrewdriver, material, 1);
-	addAnvilRecipe(event, screwdriverHead, ingotItem, ['draw_last', 'hit_second_last', 'hit_third_last'], true, material, 'screwdriver_tip');
+	if (!screwdriverHead.isEmpty()) {
+		addAnvilRecipe(event, screwdriverHead, ingotItem, ['draw_last', 'hit_second_last', 'hit_third_last'], true, material, 'screwdriver_tip');
+	}
 
 	// Wrench
 	const wrenchHead = ChemicalHelper.get(TagPrefix.toolHeadWrench, material, 1);
-	addAnvilRecipe(event, wrenchHead, doubleIngotItem, ['draw_last', 'hit_second_last', 'hit_third_last'], true, material, 'wrench_tip');
+	if (!wrenchHead.isEmpty()) {
+		addAnvilRecipe(event, wrenchHead, doubleIngotItem, ['draw_last', 'hit_second_last', 'hit_third_last'], true, material, 'wrench_tip');
+	}
 
 	// Crowbar
 	const crowbar = ToolHelper.get(GTToolType.CROWBAR, material);
-	addTFCMelting(event, crowbar, material, 144 * 1.5, 'crowbar');
+	if (!crowbar.isEmpty()) {
+		addTFCMelting(event, crowbar, material, 144 * 1.5, 'crowbar');
+	}
 
 	// Wire cutters
 	const wireCutterHead = ChemicalHelper.get(TagPrefix.toolHeadWireCutter, material, 1);
-	addAnvilRecipe(event, wireCutterHead, doubleIngotItem, ['draw_last', 'hit_second_last', 'hit_third_last'], true, material, 'wire_cutter_head');
+	if (!wireCutterHead.isEmpty()) {
+		addAnvilRecipe(event, wireCutterHead, doubleIngotItem, ['draw_last', 'hit_second_last', 'hit_third_last'], true, material, 'wire_cutter_head');
+	}
 
 	// Axe
 	const axeHead = ChemicalHelper.get(TFGTagPrefix.toolHeadAxe, material, 1);
-	event.remove({ id: `tfc:crafting/metal/axe/${materialName}` });
-	addAnvilRecipe(event, axeHead, ingotItem, ['punch_last', 'hit_second_last', 'upset_third_last'], true, material, 'axe_head');
+	if (!axeHead.isEmpty()) {
+		event.remove({ id: `tfc:crafting/metal/axe/${materialName}` });
+		addAnvilRecipe(event, axeHead, ingotItem, ['punch_last', 'hit_second_last', 'upset_third_last'], true, material, 'axe_head');
+	}
 
 	// Shovel
 	const shovelHead = ChemicalHelper.get(TFGTagPrefix.toolHeadShovel, material, 1);
-	event.remove({ id: `tfc:crafting/metal/shovel/${materialName}` });
-	addAnvilRecipe(event, shovelHead, ingotItem, ['punch_last', 'hit_not_last'], true, material, 'shovel_head');
+	if (!shovelHead.isEmpty()) {
+		event.remove({ id: `tfc:crafting/metal/shovel/${materialName}` });
+		addAnvilRecipe(event, shovelHead, ingotItem, ['punch_last', 'hit_not_last'], true, material, 'shovel_head');
+	}
 
 	// Hoe
 	const hoeHead = ChemicalHelper.get(TFGTagPrefix.toolHeadHoe, material, 1);
-	event.remove({ id: `tfc:crafting/metal/hoe/${materialName}` });
-	addAnvilRecipe(event, hoeHead, ingotItem, ['punch_last', 'hit_not_last', 'bend_not_last'], true, material, 'hoe_head');
+	if (!hoeHead.isEmpty()) {
+		event.remove({ id: `tfc:crafting/metal/hoe/${materialName}` });
+		addAnvilRecipe(event, hoeHead, ingotItem, ['punch_last', 'hit_not_last', 'bend_not_last'], true, material, 'hoe_head');
+	}
 
 	// Hammer
 	const hammerHead = ChemicalHelper.get(TFGTagPrefix.toolHeadHammer, material, 1);
-	event.remove({ id: `tfc:crafting/metal/hammer/${materialName}` });
-	addAnvilRecipe(event, hammerHead, ingotItem, ['punch_last', 'shrink_not_last'], true, material, 'hammer_head');
+	if (!hammerHead.isEmpty()) {
+		event.remove({ id: `tfc:crafting/metal/hammer/${materialName}` });
+		addAnvilRecipe(event, hammerHead, ingotItem, ['punch_last', 'shrink_not_last'], true, material, 'hammer_head');
+	}
 
 	// Saw
 	const sawHead = ChemicalHelper.get(TFGTagPrefix.toolHeadSaw, material, 1);
-	event.remove({ id: `tfc:crafting/metal/saw/${materialName}` });
-	addAnvilRecipe(event, sawHead, ingotItem, ['hit_last', 'hit_second_last'], true, material, 'saw_blade');
+	if (!sawHead.isEmpty()) {
+		event.remove({ id: `tfc:crafting/metal/saw/${materialName}` });
+		addAnvilRecipe(event, sawHead, ingotItem, ['hit_last', 'hit_second_last'], true, material, 'saw_blade');
+	}
 
 	// Scythe
 	const scytheHead = ChemicalHelper.get(TFGTagPrefix.toolHeadScythe, material, 1);
-	event.remove({ id: `tfc:crafting/metal/scythe/${materialName}` })
-	addAnvilRecipe(event, scytheHead, ingotItem, ['punch_last', 'bend_not_last', 'draw_not_last'], true, material, 'scythe_blade');
+	if (!scytheHead.isEmpty()) {
+		event.remove({ id: `tfc:crafting/metal/scythe/${materialName}` })
+		addAnvilRecipe(event, scytheHead, ingotItem, ['punch_last', 'bend_not_last', 'draw_not_last'], true, material, 'scythe_blade');
+	}
 
 	// File
 	const fileHead = ChemicalHelper.get(TFGTagPrefix.toolHeadFile, material, 1);
-	addAnvilRecipe(event, fileHead, ingotItem, ['upset_last', 'bend_not_last', 'punch_not_last'], true, material, 'file_head');
+	if (!fileHead.isEmpty()) {
+		addAnvilRecipe(event, fileHead, ingotItem, ['upset_last', 'bend_not_last', 'punch_not_last'], true, material, 'file_head');
+	}
 
 	// Knife
-	addAnvilRecipe(event, knifeHead, ingotItem, ['punch_last', 'bend_not_last', 'draw_not_last'], true, material, 'knife_blade');
+	if (!knifeHead.isEmpty()) {
+		addAnvilRecipe(event, knifeHead, ingotItem, ['punch_last', 'bend_not_last', 'draw_not_last'], true, material, 'knife_blade');
+	}
+
+	// Chainsaw
+	const chainsawHead = ChemicalHelper.get(TagPrefix.toolHeadChainsaw, material, 1);
+	if (!chainsawHead.isEmpty()) {
+		addAnvilRecipe(event, chainsawHead, doubleIngotItem, ['punch_last', 'punch_second_last', 'draw_third_last'], true, material, 'chainsaw_head');
+	}
 }
 
 /**
@@ -290,13 +330,13 @@ function processTongs(event, material) {
 
 	event.recipes.tfc.advanced_shaped_crafting(
 		TFC.isp.of(tong).copyForgingBonus(), [
-			'AA',
-			'BC'
-		], {
-			A: tongPart,
-			B: Ingredient.of('#forge:bolts').subtract('gtceu:wood_bolt'),
-			C: '#forge:tools/hammers'
-		}, 0, 0).id(`tfchotornot:crafting/tongs/${materialName}`)
+		'AA',
+		'BC'
+	], {
+		A: tongPart,
+		B: Ingredient.of('#forge:bolts').subtract('gtceu:wood_bolt'),
+		C: '#forge:tools/hammers'
+	}, 0, 0).id(`tfchotornot:crafting/tongs/${materialName}`)
 
 	event.recipes.gtceu.forge_hammer(tong)
 		.itemInputs(`2x ${tongPart}`)

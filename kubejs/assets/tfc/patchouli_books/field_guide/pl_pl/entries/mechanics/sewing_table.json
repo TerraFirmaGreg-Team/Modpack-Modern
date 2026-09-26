@@ -15,7 +15,7 @@
     {
       "type": "patchouli:crafting",
       "recipe": "tfc:crafting/wood/oak_sewing_table",
-      "text": "The sewing table can be made from wood, leather, and a pair of shears."
+      "text": "Stół do szycia może być wykonany z drewna i skór za pomocą nożyc."
     },
     {
       "type": "patchouli:text",
@@ -44,7 +44,7 @@
     },
     {
       "type": "patchouli:text",
-      "text": "For information on the use of smithing templates, see the $(l:mechanics/armor_trims)Armor Trims$() chapter."
+      "text": "Informacje o używaniu szablonów kowalskich znajdziesz w rozdziale $(l:mechanics/armor_trims)wykończenia zbroi$()."
     }
   ],
   "read_by_default": true

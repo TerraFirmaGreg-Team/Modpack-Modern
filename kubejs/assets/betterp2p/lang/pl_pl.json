@@ -21,6 +21,7 @@
     "gui.advanced_memory_card.mode.copy": "Bieżący tryb: kopiuj wejście do wyjścia",
     "gui.advanced_memory_card.mode.copy.desc.1": "• §aWybrany P2P §7musi być §9wejściem.",
     "gui.advanced_memory_card.mode.copy.desc.2": "• Przed powiązaniem §bcel powiązania§7 utraci wszystkie swoje połączenia.",
+    "gui.advanced_memory_card.mode.copy.desc.3": "• §aWybrany §aP2P §7staje się §9wejściem§7, a §bcel powiązania §7zostanie dodany do listy §6wyjść§7 §awybranego §aP2P.",
     "gui.advanced_memory_card.mode.copy.desc.4": "• Cel §bpowiązania §7staje się tego samego typu co jego nowe wejście",
     "gui.advanced_memory_card.mode.unbind": "Bieżący tryb: Rozłącz",
     "gui.advanced_memory_card.mode.unbind.desc.1": "• Wyłącza normalne funkcje; nie możesz już powiązać z P2P.",

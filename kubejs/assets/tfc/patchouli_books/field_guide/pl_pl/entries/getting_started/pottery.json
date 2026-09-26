@@ -97,7 +97,7 @@
     {
       "type": "tfc:knapping_recipe",
       "recipe": "tfc:clay_knapping/pickaxe_head_mold",
-      "text": "$(thing)Kilof$()! Podstawowe narzędzie do wydobywania."
+      "text": "$(thing)Kilof$()! Podstawowe narzędzie do kopania."
     },
     {
       "type": "tfc:knapping_recipe",
@@ -112,17 +112,17 @@
     {
       "type": "tfc:knapping_recipe",
       "recipe": "tfc:clay_knapping/chisel_head_mold",
-      "text": "A $(l:mechanics/chisel)Chisel$() is a tool used for smoothing blocks as well as creating a large number of decorative blocks."
+      "text": "$(l:mechanics/chisel)Dłuto$() to narzędzie służące do wygładzania bloków oraz tworzenia wielu bloków dekoracyjnych."
     },
     {
       "type": "tfc:knapping_recipe",
       "recipe": "tfc:clay_knapping/axe_head_mold",
-      "text": "An $(thing)Axe$() for all your tree chopping purposes. Note that stone axes are less efficient than metal!"
+      "text": "$(thing)Siekiera$() służy do ścinania drzew. Pamiętaj, że kamienne siekiery są mniej wydajne niż metalowe!"
     },
     {
       "type": "tfc:knapping_recipe",
       "recipe": "tfc:clay_knapping/hammer_head_mold",
-      "text": "A $(thing)Hammer$() is an essential tool to create and work on $(l:mechanics/anvils)Anvils$()."
+      "text": "$(thing)Młotek$() jest niezbędnym narzędziem do tworzenia i pracy na $(l:mechanics/anvils)kowadle$()."
     },
     {
       "type": "tfc:knapping_recipe",
@@ -137,7 +137,7 @@
     {
       "type": "tfc:knapping_recipe",
       "recipe": "tfc:clay_knapping/shovel_head_mold",
-      "text": "$(thing)Łopata$() do wszelkich prac ziemnych."
+      "text": "$(thing)Łopata$() służy do wszelkich prac ziemnych."
     }
   ],
   "read_by_default": true,

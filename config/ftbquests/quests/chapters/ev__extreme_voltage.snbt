@@ -2481,6 +2481,12 @@
 					title: "{quests.extreme_voltage.tungsten_carbide_tools.task}"
 					type: "item"
 				}
+				{
+					id: "0AED12CA65C4ABE7"
+					item: "tfg:tungsten_anvil"
+					optional_task: true
+					type: "item"
+				}
 			]
 			title: "{quests.extreme_voltage.tungsten_carbide_tools.title}"
 			x: 5.5d
@@ -2569,6 +2575,12 @@
 						}
 					}
 					title: "{quests.extreme_voltage.ostrum_tools.task}"
+					type: "item"
+				}
+				{
+					id: "2F68B01564BA75F3"
+					item: "tfg:tungsten_anvil"
+					optional_task: true
 					type: "item"
 				}
 			]

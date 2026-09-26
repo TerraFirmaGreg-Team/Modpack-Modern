@@ -11,7 +11,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "$(li)$(bold)$(l:getting_started/food_and_water#transient_effects)効能$()$(li2)$(l:getting_started/food_and_water#cooling_transient_effect)冷却$()$(li2)$(l:getting_started/food_and_water#warming_transient_effect)温もり$()$(li2)$(l:getting_started/food_and_water#quenching_transient_effect)潤い$()$(li2)$(l:getting_started/food_and_water#bolstering_transient_effect)活力$()$(li2)$(l:getting_started/food_and_water#hearty_transient_effect)健康$()$(li2)$(l:getting_started/food_and_water#rejuvenating_transient_effect)回復促進$()$(li2)$(l:getting_started/food_and_water#freezing_transient_effect)凍結$()$(li2)$(l:getting_started/food_and_water#blazing_transient_effect)灼熱$()$(li2)$(l:getting_started/food_and_water#radiating_transient_effect)放射能汚染$()$(li2)$(l:getting_started/food_and_water#nauseating_transient_effect)吐き気$()$(li2)$(l:getting_started/food_and_water#parching_transient_effect)脱水$()$(li2)$(l:getting_started/food_and_water#deadly_transient_effect)致死$()$(li2)$(l:getting_started/food_and_water#fulfilling_transient_effect)満足$()$(li2)$(l:getting_started/food_and_water#sugary_transient_effect)糖分過多$()$(li2)$(l:getting_started/food_and_water#spicy_transient_effect)スパイシー$()"
+            "text": "\n(li)$(bold)$(l:getting_started/food_and_water#transient_effects)効能$()$(li2)$(l:getting_started/food_and_water#cooling_transient_effect)体温冷却$()$(li2)$(l:getting_started/food_and_water#warming_transient_effect)体温上昇$()$(li2)$(l:getting_started/food_and_water#quenching_transient_effect)潤い$()$(li2)$(l:getting_started/food_and_water#bolstering_transient_effect)強化$()$(li2)$(l:getting_started/food_and_water#hearty_transient_effect)満足感$()$(li2)$(l:getting_started/food_and_water#rejuvenating_transient_effect)回復促進$()$(li2)$(l:getting_started/food_and_water#freezing_transient_effect)凍結$()$(li2)$(l:getting_started/food_and_water#blazing_transient_effect)灼熱$()$(li2)$(l:getting_started/food_and_water#radiating_transient_effect)急性被爆$()$(li2)$(l:getting_started/food_and_water#nauseating_transient_effect)吐き気$()$(li2)$(l:getting_started/food_and_water#parching_transient_effect)脱水$()$(li2)$(l:getting_started/food_and_water#deadly_transient_effect)致死$()$(li2)$(l:getting_started/food_and_water#fulfilling_transient_effect)満腹$()$(li2)$(l:getting_started/food_and_water#sugary_transient_effect)激甘$()$(li2)$(l:getting_started/food_and_water#spicy_transient_effect)激辛$()"
         },
         {
             "type": "patchouli:text",
@@ -164,12 +164,12 @@
         {
             "type": "patchouli:text",
             "anchor": "cooling_transient_effect",
-            "text": "$(#12d7ff)❅$()$(bold) 冷却$()$(li)プレイヤーに $(l:tfg_tips/mob_effects_glossary#cooling)冷却$() 効果を付与します。持続時間は１栄養ポイントにつき1分です。最大持続時間は30分です。$()"
+            "text": "$(#12d7ff)❅$()$(bold) 体温冷却$()$(li)栄養値1ポイントにつき1分間の$(l:tfg_tips/mob_effects_glossary#cooling)冷却$()効果を付与します。効果時間は最大30分です。$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "warming_transient_effect",
-            "text": "$(#ff7700)🔆$()$(bold) 温もり$()$(li)プレイヤーに $(l:tfg_tips/mob_effects_glossary#warming)温もり$()効果を付与します。持続時間は１栄養ポイントにつき1分です。最大持続時間は30分です。$()"
+            "text": "$(#ff7700)🔆$()$(bold) 体温上昇$()$(li)栄養値1ポイントにつき1分間の$(l:tfg_tips/mob_effects_glossary#warming)温もり$()効果を付与します。効果時間は最大30分です。$()"
         },
         {
             "type": "patchouli:text",
@@ -189,7 +189,7 @@
         {
             "type": "patchouli:text",
             "anchor": "rejuvenating_transient_effect",
-            "text": "$(#ff178f)💕$()$(bold) リフレッシュ$()$(li)プレイヤーに $(n)再生能力$()効果を付与します。持続時間は１栄養ポイントにつき1分です。最大持続時間は3分です。$()"
+            "text": "$(#ff178f)💕$()$(bold) 回復促進$()$(li)プレイヤーに $(n)再生能力$()効果を付与します。持続時間は１栄養ポイントにつき1分です。最大持続時間は3分です。$("
         },
         {
             "type": "patchouli:text",
@@ -214,12 +214,12 @@
         {
             "type": "patchouli:text",
             "anchor": "parching_transient_effect",
-            "text": "🧂$(bold) 渇き$()$(li)プレイヤーに $(n)渇き$()効果を付与します。持続時間は１栄養ポイントにつき1分です。最大持続時間は8分です。$()"
+            "text": "🧂$(bold) 脱水$()$(li)プレイヤーに $(n)渇き$()効果を付与します。持続時間は１栄養ポイントにつき1分です。最大持続時間は8分です。$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "deadly_transient_effect",
-            "text": "$(#470275)💀$()$(bold) 危篤状態$()$(li)プレイヤーに$(l:tfg_tips/mob_effects_glossary#final_moments)危篤状態$() 効果を付与します。追加で栄養ポイントを得るたびに効果時間が半減します$()"
+            "text": "$(#470275)💀$()$(bold) 致死$()$(li)プレイヤーに$(l:tfg_tips/mob_effects_glossary#final_moments)危篤状態$() 効果を付与します。追加で栄養ポイントを得るたびに効果時間が半減します$()"
         },
         {
             "type": "patchouli:text",

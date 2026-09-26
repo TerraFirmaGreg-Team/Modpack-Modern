@@ -168,7 +168,7 @@
   "gui.gtceuterminal.energy_analyzer.eta_empty_in": "Опустеет через %s",
   "gui.gtceuterminal.energy_analyzer.eta_full_in": "Заполнится через %s",
   "gui.gtceuterminal.energy_analyzer.graph_header": "История (EU/сек):",
-  "gui.gtceuterminal.energy_analyzer.graph_window": "§8EU/тик — последние %sс",
+  "gui.gtceuterminal.energy_analyzer.graph_window": "§8EU/t — последние %s сек",
   "gui.gtceuterminal.energy_analyzer.hatch_amp_suffix": " %dА",
   "gui.gtceuterminal.energy_analyzer.hatch_in": "ВХОД",
   "gui.gtceuterminal.energy_analyzer.hatch_line": "  %s  %s  %dВ%s",
