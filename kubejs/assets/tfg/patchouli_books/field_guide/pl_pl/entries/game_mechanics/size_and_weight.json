@@ -1,0 +1,54 @@
+{
+    "name": "Size & Weight",
+    "category": "tfg:game_mechanics",
+    "icon": "tfc:textures/gui/book/icons/size_and_weight.png",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "anchor": "intro",
+            "text": "Every item has a $(thing)Size ⇲$() and $(thing)Weight ⚖$(). An item's size and weight is shown on the $(thing)tooltip$(), which appears when you hover over it with your mouse."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "size",
+            "text": "Size determines what $(l:logistics/storage)Storage$() blocks an item can fit inside.$(br)$(li)$(thing)Tiny$() items fit in anything.$(li)$(thing)Very Small$() items fit in anything.$(li)$(thing)Small$() items are the largest item that will fit in $(l:craftsmanship/pottery)Small Vessels$()$().$(li)$(thing)Normal$() items are the largest that will fit in $(l:craftsmanship/pottery)Large Vessels$().",
+            "title": "Wielkość ⇲"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)$(thing)Large$() items are the largest that will fit in $(l:logistics/storage#chests)Chests$(). $(l:craftsmanship/pit_kiln)Pit Kilns$() can hold four.$(li)$(thing)Very Large$() items are placed alone in Pit Kilns.$(li)$(thing)Huge$() items do not fit in most storage devices. They also count towards overburdening."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "weight",
+            "text": "Weight determines the max stack size of items.$(br)$(li)$(thing)Very Light$(): 64$(li)$(thing)Light$(): 32$(li)$(thing)Medium$(): 16$(li)$(thing)Heavy$(): 4$(li)$(thing)Very Heavy$(): 1$(br2)Most items are $(thing)Very Light$() by default. Blocks are usually $(thing)Medium$().",
+            "title": "Waga ⚖"
+        },
+        {
+            "anchor": "overburdening",
+            "title": "Przeciążenie",
+            "type": "patchouli:text",
+            "text": "$(thing)Overburdening$() happens when you carry items that are both $(thing)Huge$() and $(thing)Very Heavy$(). Carrying just one $(thing)Huge, Very Heavy$() item causes you to become exhausted, making your food burn quicker. Carrying two or more gives you the $(thing)Overburdened$() status effect, which makes movement very slow."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Items that count towards overburdening include $(thing)Anvils$(), $(thing)Sealed Barrels$(), and $(thing)Crucibles$() (with contents).$(br2)Note: $(l:agriculture/animal_husbandry#equines)Horses$() can also be overburdened.$(br2)Raising your $(l:cooking/food_and_water#protein)Protein$() stat allows you to carry an additional item without being overburdened."
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Czytaj dalej",
+            "anchor": "relations",
+            "entries": [
+                "tfg:craftsmanship/barrels",
+                "tfg:craftsmanship/pottery",
+                "tfg:cooking/decay",
+                "tfg:logistics/tack",
+                "tfg:logistics/personal_storage",
+                "tfg:logistics/storage"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "priority": "prawda",
+    "sortnum": 0
+}

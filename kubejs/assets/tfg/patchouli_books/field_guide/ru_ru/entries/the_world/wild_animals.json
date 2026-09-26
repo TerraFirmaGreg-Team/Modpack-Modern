@@ -1,0 +1,668 @@
+{
+	"name": "Earth Fauna",
+	"category": "tfg:the_world",
+	"icon": "tfc:medium_raw_hide",
+	"pages": [
+        {
+            "type": "patchouli:text",
+            "title": "Каталог",
+            "anchor": "index",
+            "text": "$(li)$(bold)$(l:the_world/wild_animals#intro)Introduction$()$(li)$(bold)$(l:the_world/wild_animals#livestock)Livestock$()$(li2)$(l:the_world/wild_animals#pig)Pig$()$(li2)$(l:the_world/wild_animals#cow)Cow$()$(li2)$(l:the_world/wild_animals#goat)Goat$()$(li2)$(l:the_world/wild_animals#yak)Yak$()$(li2)$(l:the_world/wild_animals#alpaca)Alpaca$()$(li2)$(l:the_world/wild_animals#sheep)Sheep$()$(li2)$(l:the_world/wild_animals#musk_ox)Musk Ox$()$(li2)$(l:the_world/wild_animals#chicken)Chicken$()$(li2)$(l:the_world/wild_animals#duck)Duck$()$(li2)$(l:the_world/wild_animals#quail)Quail$()"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li2)$(l:the_world/wild_animals#donkey)Donkey$()$(li2)$(l:the_world/wild_animals#mule)Mule$()$(li2)$(l:the_world/wild_animals#horse)Horse$()$(li2)$(l:the_world/wild_animals#dromedary_camel)Dromedary Camel$()$(li2)$(l:the_world/wild_animals#bactrian_camel)Bactrian Camel$()$(li)$(bold)$(l:the_world/wild_animals#predators)Predators$()$(li2)$(l:the_world/wild_animals#polar_bear)Polar Bear$()$(li2)$(l:the_world/wild_animals#black_bear)Black Bear$()$(li2)$(l:the_world/wild_animals#grizzly_bear)Grizzly Bear$()$(li2)$(l:the_world/wild_animals#cougar)Cougar$()$(li2)$(l:the_world/wild_animals#panther)Panther$()$(li2)$(l:the_world/wild_animals#lion)Lion$()$(li2)$(l:the_world/wild_animals#tiger)Tiger$()$(li2)$(l:the_world/wild_animals#sabertooth)Sabertooth$()$(li2)$(l:the_world/wild_animals#wolf)Wolf$()"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li2)$(l:the_world/wild_animals#direwolf)Direwolf$()$(li2)$(l:the_world/wild_animals#hyena)Hyena$()$(li2)$(l:the_world/wild_animals#crocodile)Crocodile$()$(li2)$(l:the_world/wild_animals#ocelot)Ocelot$()$(bold)$(li)$(l:the_world/wild_animals#ramming_prey)Ramming Prey$()$(li2)$(l:the_world/wild_animals#boar)Boar$()$(li2)$(l:the_world/wild_animals#moose)Moose$()$(li2)$(l:the_world/wild_animals#wildebeest)Wildebeest$()$(li2)$(l:the_world/wild_animals#bison)Bison$()$(bold)$(li)$(l:the_world/wild_animals#prey)Prey$()$(li2)$(l:the_world/wild_animals#rabbit)Rabbit$()$(li2)$(l:the_world/wild_animals#fox)Fox$()$(li2)$(l:the_world/wild_animals#deer)Deer$()$(li2)$(l:the_world/wild_animals#caribou)Caribou$()$(li2)$(l:the_world/wild_animals#gazelle)Gazelle$()"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li2)$(l:the_world/wild_animals#bongo)Bongo$()$(li2)$(l:the_world/wild_animals#grouse)Grouse$()$(li2)$(l:the_world/wild_animals#pheasant)Pheasant$()$(li2)$(l:the_world/wild_animals#turkey)Turkey$()$(li2)$(l:the_world/wild_animals#peafowl)Peafowl$()$(li2)$(l:the_world/wild_animals#lemming)Lemming$()$(li2)$(l:the_world/wild_animals#jerboa)Jerboa$()$(li2)$(l:the_world/wild_animals#mongoose)Mongoose$()$(bold)$(li)$(l:the_world/wild_animals#aquatic)Aquatic Animals$()$(li2)$(l:the_world/wild_animals#penguin)Penguin$()$(li2)$(l:the_world/wild_animals#turtle)Sea Turtle$()"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(bold)$(li)$(l:the_world/wild_animals#fish)Fish$()$(li2)$(l:the_world/wild_animals#cod)Cod$()$(li2)$(l:the_world/wild_animals#pufferfish)Pufferfish$()$(li2)$(l:the_world/wild_animals#jellyfish)Jellyfish$()$(li2)$(l:the_world/wild_animals#tropical_fish)Tropical Fish$()$(li2)$(l:the_world/wild_animals#salmon)Salmon$()$(li2)$(l:the_world/wild_animals#bluegill)Bluegill$()$(bold)$(li)$(l:the_world/wild_animals#shellfish)Shellfish$()$(li2)$(l:the_world/wild_animals#isopod)Isopod$()$(li2)$(l:the_world/wild_animals#lobster)Lobster$()$(li2)$(l:the_world/wild_animals#crayfish)Crayfish$()$(li2)$(l:the_world/wild_animals#horseshoe_crab)Horseshoe Crab$()"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(bold)$(li)$(l:the_world/wild_animals#large_aquatic_animals)Large Aquatic Animals$()$(li2)$(l:the_world/wild_animals#orca)Orca$()$(li2)$(l:the_world/wild_animals#dolphin)Dolphin$()$(li2)$(l:the_world/wild_animals#manatee)Manatee$()$(li2)$(l:the_world/wild_animals#leopard_seal)Leopard Seal$()$(li2)$(l:the_world/wild_animals#squid)Squid$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "intro",
+            "title": "Introduction to Animals",
+            "text": "Animals can be grouped into a few different categories: $(l:the_world/wild_animals#livestock)Livestock$(), $(l:the_world/wild_animals#predators)Predators$(), $(l:the_world/wild_animals#prey)Prey$(), and $(l:the_world/wild_animals#aquatic)Aquatic$() animals. The vast majority of animals will provide meat when killed. However, some meat may not be safe to eat; especially raw."
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Livestock",
+            "anchor": "livestock",
+            "text": "$(thing)Livestock$() are animals that can be tamed and bred by the player. Livestock can be either $(thing)male$() or $(thing)female$() so it is important when collecting wild livestock to try and get one of each sex for breeding."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "pig",
+            "text": "$(bold)$(l:the_world/climate#temperature)Spawn Temp$():  -10 - 35°C$(br)$(bold)$(l:the_world/climate#rainfall)Spawn Rainfall$():  > 200mm$(br)$(bold)Spawn Area$():  Mild Forests$(br)$(bold)Category$():  $(l:agriculture/animal_husbandry#mammals)Mammals$()$(br)$(bold)Diet$():  Anything, even if it's rotten.$(br)$(bold)Max Children$():  10$(br)$(bold)Gestation Time$():  19 days$(br)$(bold)Growth Time$():  80 Days$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Max Uses$():  60",
+            "title": "Свиньи"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:pig{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
+            "scale": 0.6,
+            "name": " ",
+            "text": "Свинья."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "cow",
+            "text": "$(bold)$(l:the_world/climate#temperature)Spawn Temp$():  -10 - 35°C$(br)$(bold)$(l:the_world/climate#rainfall)Spawn Rainfall$():  > 250mm$(br)$(bold)Spawn Area$():  Most Climates$(br)$(bold)Category$():  $(l:agriculture/animal_husbandry#dairy_animals)Dairy$()$(br)$(bold)Diet$():  $(l:cooking/food_and_water#grain)Grain$(), which may be rotten.$(br)$(bold)Max Children$():  2$(br)$(bold)Gestation Time$():  58 days$(br)$(bold)Growth Time$():  192 Days$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Max Uses$():  128$(br)$(bold)Product$():  $(l:cooking/cheese)Milk$()$(br)$(bold)Produce Cycle$():  1 Day",
+            "title": "Коровы"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:cow{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
+            "scale": 0.75,
+            "name": " ",
+            "text": "Корова."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "goat",
+            "text": "$(bold)$(l:the_world/climate#temperature)Spawn Temp$():  -12 - 25°C$(br)$(bold)$(l:the_world/climate#rainfall)Spawn Rainfall$():  > 300mm$(br)$(bold)Spawn Area$():  Moderate Climates$(br)$(bold)Category$():  $(l:agriculture/animal_husbandry#dairy_animals)Dairy$()$(br)$(bold)Diet$():  $(l:cooking/food_and_water#grain)Grain$(), $(l:cooking/food_and_water#fruit)Fruit$(), and $(l:cooking/food_and_water#vegetables)Vegetables$(), which may be rotten.$(br)$(bold)Max Children$():  2$(br)$(bold)Gestation Time$():  32 Days$(br)$(bold)Growth Time$():  96 Days$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Max Uses$():  60$(br)$(bold)Product$():  $(l:cooking/cheese)Milk$()$(br)$(bold)Produce Cycle$():  3 Days",
+            "title": "Козы"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:goat{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
+            "scale": 0.75,
+            "name": " ",
+            "text": "Коза."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "yak",
+            "text": "$(bold)$(l:the_world/climate#temperature)Spawn Temp$():  > -11°C$(br)$(bold)$(l:the_world/climate#rainfall)Spawn Rainfall$():  > 100mm$(br)$(bold)Spawn Area$():  Cold Climates$(br)$(bold)Category$():  $(l:agriculture/animal_husbandry#dairy_animals)Dairy$()$(br)$(bold)Diet$():  $(l:cooking/food_and_water#grain)Grain$()$(br)$(bold)Max Children$():  1$(br)$(bold)Gestation Time$():  64 Days$(br)$(bold)Growth Time$():  180 Days$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Max Uses$():  230$(br)$(bold)Product$():  $(l:cooking/cheese)Milk$()$(br)$(bold)Produce Cycle$():  23.5 Hours",
+            "title": "Як"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:yak{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
+            "scale": 0.75,
+            "name": " ",
+            "text": "Як."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "alpaca",
+            "text": "$(bold)$(l:the_world/climate#temperature)Spawn Temp$():  -8 - 20°C$(br)$(bold)$(l:the_world/climate#rainfall)Spawn Rainfall$():  > 250mm$(br)$(bold)Spawn Area$():  Moderate Climates$(br)$(bold)Category$():  $(l:agriculture/animal_husbandry#wooly_animals)Wooly$()$(br)$(bold)Diet$():  $(l:cooking/food_and_water#grain)Grain$() and $(l:cooking/food_and_water#fruit)Fruit$()$(br)$(bold)Max Children$():  2$(br)$(bold)Gestation Time$():  36 Days$(br)$(bold)Growth Time$():  98 Days$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Max Uses$():  128$(br)$(bold)Product$():  $(l:agriculture/weaving)Wool$()$(br)$(bold)Produce Cycle$():  5 Days",
+            "title": "Альпака"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:alpaca{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
+            "scale": 0.75,
+            "name": " ",
+            "text": "Альпака."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "sheep",
+            "text": "$(bold)$(l:the_world/climate#temperature)Spawn Temp$():  0 - 35°C$(br)$(bold)$(l:the_world/climate#rainfall)Spawn Rainfall$():  70 - 300mm$(br)$(bold)Spawn Area$():  Drier Climates$(br)$(bold)Category$():  $(l:agriculture/animal_husbandry#wooly_animals)Wooly$()$(br)$(bold)Diet$():  $(l:cooking/food_and_water#grain)Grain$()$(br)$(bold)Max Children$():  2$(br)$(bold)Gestation Time$():  32 Days$(br)$(bold)Growth Time$():  56 Days$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Max Uses$():  60$(br)$(bold)Product$():  $(l:agriculture/weaving)Wool$()$(br)$(bold)Produce Cycle$():  7 Days",
+            "title": "Овца"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:sheep{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
+            "scale": 0.75,
+            "name": " ",
+            "text": "Овца."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "musk_ox",
+            "text": "$(bold)$(l:the_world/climate#temperature)Spawn Temp$():  -25 - 0°C$(br)$(bold)$(l:the_world/climate#rainfall)Spawn Rainfall$():  > 100mm$(br)$(bold)Spawn Area$():  Cold Climates$(br)$(bold)Category$():  $(l:agriculture/animal_husbandry#wooly_animals)Wooly$()$(br)$(bold)Diet$():  $(l:cooking/food_and_water#grain)Grain$()$(br)$(bold)Max Children$():  1$(br)$(bold)Gestation Time$():  64 Days$(br)$(bold)Growth Time$():  168 Days$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Max Uses$():  160$(br)$(bold)Product$():  $(l:agriculture/weaving)Wool$()$(br)$(bold)Produce Cycle$():  4 Days",
+            "title": "Овцебык"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:musk_ox{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
+            "scale": 0.75,
+            "name": " ",
+            "text": "A musk ox."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "chicken",
+            "text": "$(bold)$(l:the_world/climate#temperature)Spawn Temp$():  > 14°C$(br)$(bold)$(l:the_world/climate#rainfall)Spawn Rainfall$():  > 225mm$(br)$(bold)Spawn Area$():  Warm Forests$(br)$(bold)Category$():  $(l:agriculture/animal_husbandry#oviparous_animals)Oviparous Animals$()$(br)$(bold)Diet$():  $(l:cooking/food_and_water#grain)Grain$(), $(l:cooking/food_and_water#fruit)Fruits$(), $(l:cooking/food_and_water#vegetables)Vegetables$(), and $(l:agriculture/growing_crops)Seeds$() which may be rotten.$(br)$(bold)Egg Cycle$():  30 Hours$(br)$(bold)Growth Time$():  24 Days$(br)$(bold)Hatch Time$():  8 Days$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Max Uses$():  100$(br)$(bold)Product$():  Eggs and feathers.$()",
+            "title": "Chickens"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:chicken{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
+            "scale": 0.7,
+            "name": " ",
+            "text": "A chicken."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "duck",
+            "text": "$(bold)$(l:the_world/climate#temperature)Spawn Temp$():  -25 - 30°C$(br)$(bold)$(l:the_world/climate#rainfall)Spawn Rainfall$():  > 100mm$(br)$(bold)Spawn Area$():  Plains$(br)$(bold)Category$():  $(l:agriculture/animal_husbandry#oviparous_animals)Oviparous Animals$()$(br)$(bold)Diet$():  $(l:cooking/food_and_water#grain)Grain$(), $(l:cooking/food_and_water#fruit)Fruits$(), $(l:cooking/food_and_water#vegetables)Vegetables$(), and $(l:agriculture/growing_crops)Seeds$().$(br)$(bold)Egg Cycle$():  32 Hours$(br)$(bold)Growth Time$():  32 Days$(br)$(bold)Hatch Time$():  8 Days$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Max Uses$():  72$(br)$(bold)Product$():  Eggs and feathers.$()",
+            "title": "Утки"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:duck{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
+            "scale": 0.7,
+            "name": " ",
+            "text": "Утка."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "quail",
+            "text": "$(bold)$(l:the_world/climate#temperature)Spawn Temp$():  -15 - 15°C$(br)$(bold)$(l:the_world/climate#rainfall)Spawn Rainfall$():  > 200mm$(br)$(bold)Spawn Area$():  Cold Climates$(br)$(bold)Category$():  $(l:agriculture/animal_husbandry#oviparous_animals)Oviparous Animals$()$(br)$(bold)Diet$():  $(l:cooking/food_and_water#grain)Grain$(), $(l:cooking/food_and_water#fruit)Fruits$(), $(l:cooking/food_and_water#vegetables)Vegetables$(), and $(l:agriculture/growing_crops)Seeds$() which may be rotten.$(br)$(bold)Egg Cycle$():  28 Hours$(br)$(bold)Growth Time$():  22 Days$(br)$(bold)Hatch Time$():  8 Days$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Max Uses$():  48$(br)$(bold)Product$():  Eggs and feathers.$()",
+            "title": "Перепел"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:quail{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
+            "scale": 0.7,
+            "name": " ",
+            "text": "A quail."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "donkey",
+            "text": "$(bold)$(l:the_world/climate#temperature)Spawn Temp$():  > -15°C$(br)$(bold)$(l:the_world/climate#rainfall)Spawn Rainfall$():  130 - 400mm$(br)$(bold)Spawn Area$():  Wet Plains$(br)$(bold)Category$():  $(l:agriculture/animal_husbandry#equines)Equine$()$(br)$(bold)Diet$():  $(l:cooking/food_and_water#grain)Grain$() and $(l:cooking/food_and_water#fruit)Fruits$()$(br)$(bold)Max Children$():  1$(br)$(bold)Gestation Time$():  19 Days$(br)$(bold)Growth Time$():  80 Days$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Max Uses$():  60",
+            "title": "Ослы"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:donkey{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
+            "scale": 0.6,
+            "name": " ",
+            "text": "Осел."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "mule",
+            "text": "$(bold)$(l:the_world/climate#temperature)Spawn Temp$():  > -15°C$(br)$(bold)$(l:the_world/climate#rainfall)Spawn Rainfall$():  130 - 400mm$(br)$(bold)Spawn Area$():  Plains, bred from horses and donkeys.$(br)$(bold)Category$():  $(l:agriculture/animal_husbandry#equines)Equine$()$(br)$(bold)Diet$():  $(l:cooking/food_and_water#grain)Grain$() and $(l:cooking/food_and_water#fruit)Fruits$()$(br)$(bold)Max Children$():  1$(br)$(bold)Gestation Time$():  19 Days$(br)$(bold)Growth Time$():  80 Days$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Max Uses$():  60",
+            "title": "Мулы"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:mule{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
+            "scale": 0.6,
+            "name": " ",
+            "text": "Мул."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "horse",
+            "text": "$(bold)$(l:the_world/climate#temperature)Spawn Temp$():  > -15°C$(br)$(bold)$(l:the_world/climate#rainfall)Spawn Rainfall$():  130 - 400mm$(br)$(bold)Spawn Area$():  Plains$(br)$(bold)Category$():  $(l:agriculture/animal_husbandry#equines)Equine$()$(br)$(bold)Diet$():  $(l:cooking/food_and_water#grain)Grain$() and $(l:cooking/food_and_water#fruit)Fruits$()$(br)$(bold)Max Children$():  1$(br)$(bold)Gestation Time$():  19 Days$(br)$(bold)Growth Time$():  80 Days$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Max Uses$():  60",
+            "title": "Лошади"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:horse{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
+            "scale": 0.6,
+            "name": " ",
+            "text": "Лошадь."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "dromedary_camel",
+            "text": "$(bold)$(l:the_world/climate#temperature)Spawn Temp$():  > -5°C$(br)$(bold)$(l:the_world/climate#rainfall)Spawn Rainfall$():  < 100mm$(br)$(bold)Spawn Area$():  Hot and Dry Climates$(br)$(bold)Category$():  $(l:agriculture/animal_husbandry#camelides)Camel$()$(br)$(bold)Diet$():  $(l:cooking/food_and_water#grain)Grain$() and $(l:cooking/food_and_water#fruit)Fruits$()$(br)$(bold)Max Children$():  1$(br)$(bold)Gestation Time$():  19 Days$(br)$(bold)Growth Time$():  80 Days$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Max Uses$():  60",
+            "title": "Одногорбый верблюд"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfg:dromedary_camel{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
+            "scale": 0.6,
+            "name": " ",
+            "text": "A dromedary camel."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "bactrian_camel",
+            "text": "$(bold)$(l:the_world/climate#temperature)Spawn Temp$():  > -5°C$(br)$(bold)$(l:the_world/climate#rainfall)Spawn Rainfall$():  < 100mm$(br)$(bold)Spawn Area$():  Cold and Dry Climates$(br)$(bold)Category$():  $(l:agriculture/animal_husbandry#camelides)Camel$() / $(l:agriculture/animal_husbandry#wooly_animals)Wooly$()$(br)$(bold)Diet$():  $(l:cooking/food_and_water#grain)Grain$() and $(l:cooking/food_and_water#fruit)Fruits$()$(br)$(bold)Max Children$():  1$(br)$(bold)Gestation Time$():  24 Days$(br)$(bold)Growth Time$():  80 Days$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Max Uses$():  80$(br)$(bold)Product$():  $(l:agriculture/weaving)Wool$()$(br)$(bold)Produce Cycle$():  7 Days",
+            "title": "Двугорбый верблюд"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfg:bactrian_camel{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
+            "scale": 0.6,
+            "name": " ",
+            "text": "A bactrian camel."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "predators",
+            "text": "$(thing)Хищники$() — это животные, которые могут нападать на игрока. Они бывают либо $(thing)Ночными$(), охотясь только ночью, либо $(thing)Дневными$(), охотясь только днём. Хищники могут быть нейтральными или враждебными в зависимости от того, убивали ли они недавно цель. У хищников есть своя территория, которую они будут защищать — если вы уйдёте достаточно далеко, хищник перестанет преследовать вас и вернётся домой.",
+            "title": "Хищники"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:polar_bear",
+            "scale": 0.55,
+            "name": "Белый медведь",
+            "anchor": "polar_bear",
+            "text": "Белый медведь появляется только в самых холодных регионах, где $(l:the_world/climate#temperature)температура$() не превышает 10°C, а $(l:the_world/climate#rainfall)количество осадков$() составляет не менее 100 мм."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:grizzly_bear",
+            "scale": 0.55,
+            "name": "Бурый медведь",
+            "anchor": "grizzly_bear",
+            "text": "Бурый медведь появляется в лесах умеренного климата, где $(l:the_world/climate#temperature)температура$() находится в диапазоне от -15 до 15°C, а $(l:the_world/climate#rainfall)количество осадков$() составляет не менее 200 мм."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:black_bear",
+            "scale": 0.55,
+            "name": "Чёрный медведь",
+            "anchor": "black_bear",
+            "text": "Чёрный медведь появляется в лесах более тёплого и влажного климата, где $(l:the_world/climate#temperature)температура$() составляет от 5 до 20°C, а $(l:the_world/climate#rainfall)количество осадков$() — не менее 250 мм."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:cougar",
+            "scale": 0.6,
+            "name": "Пума",
+            "anchor": "cougar",
+            "text": "Пума предпочитает в основном умеренный климат, где $(l:the_world/climate#temperature)температура$() составляет от -10 до 21°C, а $(l:the_world/climate#rainfall)количество осадков$() — не менее 150 мм."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:panther",
+            "scale": 0.6,
+            "name": "Пантера",
+            "anchor": "panther",
+            "text": "Пантера предпочитает в основном умеренный климат, где $(l:the_world/climate#temperature)температура$() составляет от -10 до 21°C, а $(l:the_world/climate#rainfall)количество осадков$() — не менее 150 мм."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:lion",
+            "scale": 0.55,
+            "name": "Лев",
+            "anchor": "lion",
+            "text": "Лев появляется на равнинах, где средняя $(l:the_world/climate#temperature)температура$() составляет не менее 16°C, а $(l:the_world/climate#rainfall)количество осадков$() находится в диапазоне от 50 до 300 мм."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:tiger",
+            "scale": 0.55,
+            "name": "Тигр",
+            "anchor": "tiger",
+            "text": "Тигр появляется в лесах, где средняя $(l:the_world/climate#temperature)температура$() составляет не менее 13°C, а $(l:the_world/climate#rainfall)количество осадков$() превышает 100 мм."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:sabertooth",
+            "scale": 0.6,
+            "name": "Саблезубый тигр",
+            "anchor": "sabertooth",
+            "text": "Саблезубый тигр появляется при любой $(l:the_world/climate#temperature)температуре$() выше 0°C и любом $(l:the_world/climate#rainfall)количестве осадков$() выше 250 мм."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:wolf",
+            "anchor": "wolf",
+            "scale": 0.7,
+            "text": "The wolf spawns at any $(l:the_world/climate#temperature)temperature$() below 22°C, and $(l:the_world/climate#rainfall)rainfall$() between 70 and 480mm. They hunt in packs. Feeding a wolf enough times will tame it into a $(l:game_mechanics/pets)Dog$()."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:direwolf",
+            "anchor": "direwolf",
+            "scale": 0.7,
+            "text": "Лютоволк появляется при любой $(l:the_world/climate#temperature)температуре$() ниже точки замерзания и $(l:the_world/climate#rainfall)количестве осадков$() от 150 до 420 мм. Лютоволки охотятся стаями. Они крупнее обычных волков и не поддаются приручению."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:hyena",
+            "anchor": "hyena",
+            "scale": 0.7,
+            "text": "Гиена появляется при любой $(l:the_world/climate#temperature)температуре$() выше 15°C и $(l:the_world/climate#rainfall)количестве осадков$() от 80 до 380 мм. Гиены охотятся стаями. Они не поддаются приручению."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:crocodile",
+            "anchor": "crocodile",
+            "scale": 0.7,
+            "name": "Крокодил",
+            "text": "Крокодил появляется рядом с реками, озёрами и болотами при любой $(l:the_world/climate#temperature)температуре$() выше 15°C и любом $(l:the_world/climate#rainfall)количестве осадков$(). Они ведут ночной образ жизни и наиболее опасны в воде."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:ocelot",
+            "anchor": "ocelot",
+            "scale": 0.7,
+            "text": "The ocelot attacks small animals. It spawns at any $(l:the_world/climate#temperature)temperature$() from 15 to 30°C, and $(l:the_world/climate#rainfall)rainfall$() between 300 and 500mm, in forests. Feeding an ocelot enough times will tame it into a $(l:game_mechanics/pets)Cat$(). Ocelots can eat raw fish"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "ramming_prey",
+            "text": "$(thing)Бодающие$() животные время от времени пытаются пойти в атаку на ближайших существ, включая игрока. Их атаки очень сильны, но от них можно уклониться. Если на них напасть, они будут бодать чаще.",
+            "title": "Бодающие"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:boar",
+            "anchor": "boar",
+            "scale": 0.7,
+            "name": "Кабан",
+            "text": "Кабан появляется при $(l:the_world/climate#temperature)температуре$() ниже 25°C и выше -5°C, а также при $(l:the_world/climate#rainfall)количестве осадков$() от 130 до 400 мм."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:moose",
+            "anchor": "moose",
+            "scale": 0.7,
+            "name": "Лось",
+            "text": "Лось появляется в лесах при $(l:the_world/climate#temperature)температуре$() ниже 10°C и выше -15°C, а также при $(l:the_world/climate#rainfall)количестве осадков$() от 150 до 300 мм."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:wildebeest",
+            "anchor": "wildebeest",
+            "scale": 0.7,
+            "name": "Антилопа гну",
+            "text": "Антилопа гну появляется на открытых равнинах при любой $(l:the_world/climate#temperature)температуре$() выше 13°C и $(l:the_world/climate#rainfall)количестве осадков$() от 90 до 380 мм."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfg:bison",
+            "anchor": "bison",
+            "scale": 0.7,
+            "name": "Бизон",
+            "text": "Бизон появляется на открытых равнинах при $(l:the_world/climate#temperature)температуре$() ниже 15°C и выше -10°C, а также при $(l:the_world/climate#rainfall)количестве осадков$() от 160 до 420 мм."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "prey",
+            "text": "$(thing)Добыча$() — это животные, которые боятся игроков и хищников. Они отлично умеют спасаться бегством от опасности, но, как правило, не могут дать отпор. Некоторые животные из категории добычи любят полакомиться посевами.",
+            "title": "Добыча"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:rabbit",
+            "scale": 0.7,
+            "name": "Кролик",
+            "anchor": "rabbit",
+            "text": "Кролик известен тем, что грызёт морковь и капусту. Он встречается по всему миру, меняя окрас шерсти в зависимости от климата. Для появления ему требуется всего 15 мм $(l:the_world/climate#rainfall)осадков$()."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:fox",
+            "scale": 0.7,
+            "name": "Лиса",
+            "anchor": "fox",
+            "text": "Лиса любит есть ягоды с кустов. Её можно встретить в лесах при $(l:the_world/climate#temperature)температуре$() ниже 25°C и $(l:the_world/climate#rainfall)количестве осадков$() от 130 до 400 мм."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:deer",
+            "anchor": "deer",
+            "scale": 0.7,
+            "text": "Олень появляется в лесах при любой $(l:the_world/climate#temperature)температуре$() ниже 25°C и выше -15°C, а также при $(l:the_world/climate#rainfall)количестве осадков$() от 130 до 400 мм."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:caribou",
+            "scale": 0.6,
+            "name": "Северный олень",
+            "anchor": "caribou",
+            "text": "Северный олень появляется при любой $(l:the_world/climate#temperature)температуре$() ниже -9°C и $(l:the_world/climate#rainfall)количестве осадков$() от 110 до 500 мм."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:gazelle",
+            "scale": 0.7,
+            "anchor": "gazelle",
+            "text": "Газель появляется на открытых равнинах при любой $(l:the_world/climate#temperature)температуре$() выше 12°C и $(l:the_world/climate#rainfall)количестве осадков$() от 90 до 380 мм."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:bongo",
+            "scale": 0.9,
+            "name": "Бонго",
+            "anchor": "bongo",
+            "text": "Бонго появляется в лесах при любой $(l:the_world/climate#temperature)температуре$() выше 15°C и $(l:the_world/climate#rainfall)количестве осадков$() от 230 до 500 мм."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:grouse",
+            "scale": 0.7,
+            "anchor": "grouse",
+            "text": "Тетерев появляется при любой $(l:the_world/climate#temperature)температуре$() ниже 13°C и выше -12°C, а также при $(l:the_world/climate#rainfall)количестве осадков$() от 150 до 400 мм."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:pheasant",
+            "scale": 0.7,
+            "anchor": "pheasant",
+            "text": "Фазан появляется в лесах при любой $(l:the_world/climate#temperature)температуре$() ниже 17°C и выше -5°C, а также при $(l:the_world/climate#rainfall)количестве осадков$() от 100 до 300 мм."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:turkey",
+            "scale": 0.7,
+            "anchor": "turkey",
+            "text": "Индюк появляется в лесах при любой $(l:the_world/climate#temperature)температуре$() ниже 17°C и выше 0°C, а также при $(l:the_world/climate#rainfall)количестве осадков$() от 250 до 450 мм."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:peafowl",
+            "scale": 0.6,
+            "name": "Павлин",
+            "anchor": "peafowl",
+            "text": "Павлин появляется в лесах при любой $(l:the_world/climate#temperature)температуре$() выше 14°C и $(l:the_world/climate#rainfall)количестве осадков$() от 190 до 500 мм."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfg:lemming",
+            "scale": 1.5,
+            "offset": -0.2,
+            "name": "Лемминг",
+            "anchor": "lemming",
+            "text": "Лемминг появляется при любой $(l:the_world/climate#temperature)температуре$() ниже -3°C и выше -12°C, а также при $(l:the_world/climate#rainfall)количестве осадков$() от 160 до 500 мм."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfg:jerboa",
+            "scale": 1.2,
+            "name": "Тушканчик",
+            "anchor": "jerboa",
+            "text": "Тушканчик появляется при любой $(l:the_world/climate#temperature)температуре$() ниже 25°C и выше -3°C, а также при $(l:the_world/climate#rainfall)количестве осадков$() ниже 160 мм."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfg:mongoose",
+            "scale": 0.8,
+            "name": "Мангуст",
+            "anchor": "mongoose",
+            "text": "Мангуст появляется при любой $(l:the_world/climate#temperature)температуре$() выше 12°C и $(l:the_world/climate#rainfall)количестве осадков$() от 160 до 500 мм."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "aquatic",
+            "text": "$(thing)Водные существа$() — это широкая категория, охватывающая несколько разных типов поведения. Они могут быть $(thing)Прибрежными обитателями$(), $(thing)Рыбами$(), $(thing)Моллюсками$() или $(thing)Крупными водными существами$()",
+            "title": "Водные существа"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(thing)Прибрежные существа$() появляются только на морских берегах и проводят часть дня в воде, а часть — гуляя по пляжу. Это любопытные существа: они будут следовать за игроком, но приручить их нельзя."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:penguin",
+            "scale": 0.7,
+            "name": "Пингвин",
+            "anchor": "penguin",
+            "text": "Пингвин появляется только на самых холодных пляжах, где $(l:the_world/climate#temperature)температура$() не превышает -14°C, а $(l:the_world/climate#rainfall)количество осадков$() составляет не менее 75 мм."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:turtle",
+            "scale": 0.7,
+            "name": "Морская черепаха",
+            "anchor": "turtle",
+            "text": "Морская черепаха любит тёплую воду. Она появляется при $(l:the_world/climate#temperature)температуре$() не ниже 21°C и $(l:the_world/climate#rainfall)количестве осадков$() не менее 250 мм."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "fish",
+            "text": "$(thing)Fish$() are small creatures that swim in water. Most of them can be $(l:agriculture/fishing)fished$(). Some prefer oceans, rivers, or lakes.",
+            "title": "Рыба"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:cod",
+            "scale": 0.7,
+            "name": "Треска",
+            "anchor": "cod",
+            "text": "Треска предпочитает более холодные океаны, где $(l:the_world/climate#temperature)температура$() не превышает 18°C. Её можно выловить."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:pufferfish",
+            "scale": 0.7,
+            "name": "Иглобрюх",
+            "anchor": "pufferfish",
+            "text": "Иглобрюх обитает в любом океане, где $(l:the_world/climate#temperature)температура$() составляет не менее 10°C."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:jellyfish",
+            "scale": 0.7,
+            "name": "Медуза",
+            "anchor": "jellyfish",
+            "text": "Медуза обитает в более тёплых океанах, где $(l:the_world/climate#temperature)температура$() составляет не менее 18°C."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:tropical_fish",
+            "scale": 0.7,
+            "name": "Тропическая рыба",
+            "anchor": "tropical_fish",
+            "text": "Тропические рыбы предпочитают более тёплые океаны, где $(l:the_world/climate#temperature)температура$() составляет не менее 18°C."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:salmon",
+            "scale": 0.7,
+            "name": "Лосось",
+            "anchor": "salmon",
+            "text": "Лосось появляется в любой реке или озере, где $(l:the_world/climate#temperature)температура$() составляет не менее -5°C."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:bluegill",
+            "scale": 0.7,
+            "name": "Синежаберник",
+            "anchor": "bluegill",
+            "text": "Синежаберник появляется в любой реке или озере, где $(l:the_world/climate#temperature)температура$() составляет не менее -10°C и не более 26°C."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "shellfish",
+            "text": "$(thing)Shellfish$() are small animals that live on the floor of bodies of water. They cannot be fished, but drop shells that can be eaten or made into $(thing)flux$(). Shellfish can be $(l:agriculture/fishing)bait$() for fish.",
+            "title": "Ракообразные и моллюски"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:isopod",
+            "scale": 0.7,
+            "name": "Изопод",
+            "anchor": "isopod",
+            "text": "Изоподы появляются в более глубоких участках океанов, где $(l:the_world/climate#temperature)температура$() не превышает 14°C."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:lobster",
+            "scale": 0.7,
+            "name": "Лобстер",
+            "anchor": "lobster",
+            "text": "Лобстер появляется в любом океане, где $(l:the_world/climate#temperature)температура$() не превышает 21°C."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:crayfish",
+            "scale": 0.7,
+            "name": "Рак",
+            "anchor": "crayfish",
+            "text": "Рак похож на лобстера, но появляется в реках и озёрах. Для его появления требуется $(l:the_world/climate#temperature)температура$() не ниже 5°C и $(l:the_world/climate#rainfall)количество осадков$() не менее 125 мм."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:horseshoe_crab",
+            "scale": 0.7,
+            "name": "Мечехвост",
+            "anchor": "horseshoe_crab",
+            "text": "Мечехвосты появляются в океанах умеренного климата, где $(l:the_world/climate#temperature)температура$() находится в диапазоне от 10 до 21°C, а $(l:the_world/climate#rainfall)количество осадков$() не превышает 400 мм."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "large_aquatic_animals",
+            "text": "$(thing)Large Water Creatures$() are larger animals that live in the bigger bodies of water. Some of them hunt fish. They drop $(l:game_mechanics/lighting)blubber$(), which can be made into lamp fuel.",
+            "title": "Large Aquatic Animals"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:orca",
+            "scale": 0.25,
+            "name": "Косатка",
+            "anchor": "orca",
+            "text": "Косатки обитают в глубоких океанах, где $(l:the_world/climate#temperature)температура$() не превышает 19°C, а $(l:the_world/climate#rainfall)количество осадков$() составляет не менее 100 мм."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:dolphin",
+            "scale": 0.4,
+            "name": "Дельфин",
+            "anchor": "dolphin",
+            "text": "Дельфины обитают в глубоких океанах, где $(l:the_world/climate#temperature)температура$() составляет не менее 10°C, а $(l:the_world/climate#rainfall)количество осадков$() — не менее 200 мм."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:manatee",
+            "scale": 0.25,
+            "name": "Ламантин",
+            "anchor": "manatee",
+            "text": "Ламантины обитают в любых тёплых озёрах, где $(l:the_world/climate#temperature)температура$() составляет не менее 20°C, а $(l:the_world/climate#rainfall)количество осадков$() не превышает 300 мм."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfg:leopard_seal",
+            "scale": 0.5,
+            "name": "Морской леопард",
+            "anchor": "leopard_seal",
+            "text": "Морской леопард появляется только на самых холодных пляжах, где $(l:the_world/climate#temperature)температура$() не превышает -9°C, а $(l:the_world/climate#rainfall)количество осадков$() составляет не менее 105 мм. Они охотятся на пингвинов, а сами становятся добычей косаток."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "squid",
+            "text": "Спруты могут появляться в любом глубоком океане. С них выпадают $(thing)Чернильные мешки$(), и они обрызгивают чернилами любого игрока, который подходит слишком близко. Некоторые говорят, что спруты, обитающие в глубоких неизведанных пещерах, обладают странными свойствами.",
+            "title": "Спрут"
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Читать дальше",
+            "anchor": "relations",
+            "entries": [
+                "tfg:the_world/wild_crops",
+                "tfg:the_world/flora",
+                "tfg:the_world/wild_fruits",
+                "tfg:the_world/climate",
+                "tfg:agriculture/animal_husbandry",
+                "tfg:agriculture/weaving",
+                "tfg:agriculture/leather_making"
+            ]
+        }
+	],
+	"read_by_default": true,
+	"sortnum": 7
+}

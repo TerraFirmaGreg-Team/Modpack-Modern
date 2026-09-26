@@ -1,0 +1,54 @@
+{
+    "name": "Chisels",
+    "category": "tfg:craftsmanship",
+    "icon": "tfc:metal/chisel/wrought_iron",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Chisels are a tool for creating decorative forms of other blocks, including slabs and stairs. In order to get started, you will need a $(thing)Chisel$() and any type of $(thing)Hammer$(). Chisels must be cast in molds or forged on an $(l:craftsmanship/anvils)Anvil$(). In order to start chiseling, hold the chisel in your main hand and a hammer in your offhand, and target a block in the world."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "視点を合わせたブロックが彫刻できる場合は、選択した$(thing)モード$()に基づいて、見ているブロックに$(c)赤い輪郭$()が表示されます。$(br2)ノミには3つのモードがあり、$(thing)ハーフブロック$()、$(thing)階段$()、$(thing)滑らかにする$()モードを$(item)$(k:tfc.key.cycle_chisel_mode)$()を使用して切り替えられます。現在選択しているモードがホットバーの横に表示されます。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(item)$(k:key.use)$()を押して、ブロックを赤で強調表示された形状に変換します。ハーフブロックを彫刻した場合、もう一つハーフブロックが飛び出て、それを回収することができます。プレイヤーとマウスの向きを変更すると、彫刻されたブロックの向きが変わります。彫刻されたブロックの方向は、自分でその方向に配置した場合と同じになります。"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/chisel_block.png",
+                "tfc:textures/gui/book/tutorial/chisel_stair.png",
+                "tfc:textures/gui/book/tutorial/chisel_slab.png"
+            ],
+            "text": "$(bold)Tutorial Slideshow:$() The three chisel modes usable on a $(thing)Raw Limestone$() block.",
+            "border": true
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "tfc:crafting/rock/marble_smooth",
+            "text": "ノミは、大量の材料をすばやく作成するために、クラフトレシピでも使用できます。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Be careful! Chiseling in a mineshaft is not safe. Each time you chisel, there is a chance of $(l:game_mechanics/mining#supports)Collapse$()."
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "さらに読む",
+            "anchor": "relations",
+            "entries": [
+                "tfg:the_world/geology",
+                "tfg:craftsmanship/quern",
+                "tfg:craftsmanship/anvils",
+                "tfg:craftsmanship/pottery"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 16,
+    "extra_recipe_mappings": {
+        "tag:tfc:chisels": 0
+    }
+}

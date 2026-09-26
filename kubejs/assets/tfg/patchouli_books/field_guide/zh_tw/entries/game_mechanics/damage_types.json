@@ -1,0 +1,53 @@
+{
+    "name": "傷害型別",
+    "category": "tfg:game_mechanics",
+    "icon": "tfc:metal/mace/blue_steel",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "anchor": "intro",
+            "text": "$(thing)Physical Damage Types$() describe the nature of the damage that can be dealt by players and mobs. There are three types: $(bold)Piercing$(), $(bold)Slashing$(), and $(bold)Crushing$(). Some entities are able to resist certain damage types, making it difficult or impossible to kill them with certain methods."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "piercing",
+            "text": "$(thing)Piercing$() damage is dealt by pointy weapons such as $(thing)Knives$(), projectiles like $(thing)Arrows$() and $(thing)Javelins$(), fanged monsters like $(thing)Spiders$(), and $(thing)Cacti$(). $(thing)Skeletons$() are invulnerable to piercing damage, and $(thing)Zombies$() are slightly vulnerable to it.",
+            "title": "突刺"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "slashing",
+            "text": "$(thing)斬擊傷害$()是由具有長而鋒利的邊緣的武器造成的傷害，例如$(thing)斧頭$()和$(thing)劍$()。這也包含大型$(l:the_world/wild_animals#predators)捕食者$()，例如熊和獅子等造成的傷害。$(thing)爬行者$()更容易受到斬擊傷害。",
+            "title": "斬擊"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "crushing",
+            "text": "$(thing)打擊傷害$()是由鈍器造成的傷害，例如$(thing)錘子$()和$(thing)狼牙棒$()。 $(thing)殭屍$()的攻擊也造成打擊傷害，並且它們對打擊傷害有抗性。$(thing)爬行者$()也能抵禦一部分打擊傷害。$(thing)骷髏$()則更容易受到打擊傷害。",
+            "title": "粉碎"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "armor",
+            "title": "Armor",
+            "text": "$(thing)Armor$() has its own set of damage resistances. These resistances scale with the quality of armor, but may differ among armors of the same tier. Among bronzes, $(thing)Bismuth Bronze$() armor is best at resisting $(thing)Crushing$(), $(thing)Black Bronze$() is best at resisting $(thing)Piercing$() and regular $(thing)Bronze$() does moderately well with any damage."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "對於$(thing)彩鋼$()來說，$(thing)藍鋼$()更擅長防禦$(thing)打擊傷害$()，而$(thing)紅鋼$()更擅長防禦$(thing)突刺傷害$()。"
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Further Reading",
+            "anchor": "relations",
+            "entries": [
+                "tfg:craftsmanship/metallurgy",
+                "tfg:the_world/wild_animals",
+                "tfg:logistics/exploration_gear"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "priority": "是",
+    "sortnum": 1
+}

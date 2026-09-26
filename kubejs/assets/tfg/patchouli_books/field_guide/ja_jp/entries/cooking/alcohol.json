@@ -1,0 +1,88 @@
+{
+  "name": "Alcohol Production",
+  "category": "tfg:cooking",
+  "icon": "firmalife:textures/item/hematitic_wine_bottle.png",
+  "pages": [
+    {
+        "type": "patchouli:text",
+        "title": "目次",
+        "anchor": "index",
+        "text": "$(li)$(bold)$(l:cooking/drinks#alcohol)Alcohol$()$(li)$(bold)$(l:cooking/drinks#aged_alcohol)Aged Alcohol$()$(li)$(bold)$(l:cooking/drinks#vintage_alcohol)Vintage Alcohol$()$(li)$(bold)$(l:cooking/alcohol#wine_making)Wine Making$()$(li2)$(l:cooking/alcohol#wine_properties)Wine Properties$()$(li)$(bold)$(l:cooking/alcohol#wine_shelf)Wine Shelf$()"
+    },
+    {
+        "type": "patchouli:text",
+        "title": "Wine Making",
+        "anchor": "wine_making",
+        "text": "$(thing)Wine-making$() is the science of turning $(thing)grapes$() into alcohol. You must first find $(l:the_world/wild_fruits#red_grapes)Red Grapes$() or $(l:the_world/wild_fruits#white_grapes)White Grapes$() in the wild and cultivate their seeds on $(thing)Trellises$() to obtain $(item)Grapes$(). Wine effects can be viewed $(l:cooking/drinks#wine)Here$()"
+    },
+    {
+        "type": "patchouli:spotlight",
+        "anchor": "grape_smashing",
+        "title": "Grape Smashing",
+        "item": {
+        "tag": "firmalife:stomping_barrels"
+        },
+        "text": "Grapes must then be smashed in a $(thing)Stomping Barrel$(), $(thing)Quern$(), or $(l:cooking/cooking_methods#food_processor)Food Processor$() to obtain smashed grapes. To use a stomping barrel, $(item)$(k:key.use)$() with fresh grapes. Then, jump up and down on the barrel 16 times. $(item)$(k:key.use)$() with an empty hand to retrieve the items.$(br2)Then, seal the smashed grapes in a barrel for 5 days to $(thing)ferment$() them."
+    },
+    {
+        "type": "patchouli:crafting",
+        "anchor": "barrel_press",
+        "title": "Barrel press",
+        "recipe": "firmalife:crafting/wood/acacia_barrel_press",
+        "text": "圧搾機はブドウ加工の最終段階です。"
+    },
+    {
+        "type": "patchouli:text",
+        "text": "一番左のスロットには、最大16個のブドウを入れることができます。ワイン1本を作るには、ブドウが4個必要です。中央の4つのスロットは、ブドウを他の材料と混ぜ合わせるためのものですが、これは任意です。赤ブドウまたは白ブドウのみを使用すると、赤ワインまたは白ワインができます。白ワインに赤ブドウを少なくとも1個加えると、ロゼワインになります。白ワインに砂糖を加えると、デザートワインになります。 Tirage mixture（イーストスターターと甘味料を樽に入れると作れる）を加えると、スパークリングワインになります。"
+    },
+    {
+        "type": "tfg:glassworking_recipe",
+        "recipe": "firmalife:glassworking/olivine_wine_bottle",
+        "text": "ワインは非シリカガラス製の適切なワインボトルに詰める必要があります。"
+    },
+    {
+        "type": "patchouli:crafting",
+        "anchor": "bottle_label",
+        "title": "ボトルラベル",
+        "recipe": "firmalife:crafting/bottle_label",
+        "text": "$(thing)ボトルラベル$()は筆記台で名前を変更でき、その名前がワインのツールチップに追加されます。"
+    },
+    {
+        "type": "patchouli:text",
+        "text": "ワインには$(thing)コルク$()が必要です。$(br2)$(thing)加工木材$()を$(thing)石灰水$()に1日浸けることで作成できます。$(br2)すべてが完了したら、ボトルスロットを使用してワインを詰めるか、ボトルを手に持って$(item)$(k:key.use)$()を押して詰めてください。"
+    },
+    {
+        "type": "patchouli:text",
+        "anchor": "wine_properties",
+        "title": "Drinking Wine",
+        "text": "The discerning sommelier will be able to detect subtleties in the wine that is produced under different conditions. Indeed, this is possible in the world of $(tfg_short) as well. It starts in the fields in which those grapes were grown -- a row of grapes is deeply affected by the ambient environment and soil."
+    },
+    {
+        "type": "patchouli:text",
+        "text": "ブドウには、周囲の環境に基づいて「砂利栽培」、「傾斜地栽培」、「土壌栽培」という3つの地形関連の特性があります。ワインには、ボトル詰めされた地域の気候区分も記録されます。ミツバチの近くで育ったブドウには「ミツバチ受粉」という特性があります。"
+    },
+    {
+        "type": "patchouli:text",
+        "text": "ワインは瓶詰めされるとすぐに熟成が始まり、コルクを外すと熟成が止まります。$(item)$(k:key.use)$()を押してナイフを使うことで、ボトルのコルクを取り外すことができます。それ以外の場合、ワインボトルはバケツのように機能し、樽や他の装置に中身を移すことができます。"
+    },
+    {
+        "type": "patchouli:crafting",
+        "title": "Wine Shelf",
+        "anchor": "wine_shelf",
+        "recipe": "firmalife:crafting/wood/hickory_wine_shelf",
+        "text": "$(thing)ワイン棚$()は、ワイナリーに最適なアクセサリーで、ワインボトルをスタイリッシュに展示・保管できます。"
+    },
+    {
+        "type": "patchouli:relations",
+        "title": "さらに読む",
+        "anchor": "relations",
+        "entries": [
+        "tfg:cooking/food_and_water",
+        "tfg:the_world/wild_crops",
+        "tfg:the_world/wild_fruits"
+        ]
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 6
+}

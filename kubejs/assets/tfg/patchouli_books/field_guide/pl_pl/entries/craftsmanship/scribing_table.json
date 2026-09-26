@@ -1,0 +1,55 @@
+{
+    "name": "Stół pisarski",
+    "category": "tfg:craftsmanship",
+    "icon": "tfc:wood/scribing_table/oak",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "The $(thing)Scribing Table$() is used to rename items. It requires $(thing)Black Dye$() to rename items, which can be supplied as the traditional dye item or as a bucket of dye fluid."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "#tfc:scribing_tables"
+                }
+            },
+            "name": "",
+            "text": "Stół pisarski.",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/gui/scribing.png"
+            ],
+            "text": "The scribing screen takes text entry at the top, an input on the left, a dye in the center. The output is taken from the right slot.",
+            "border": false
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Czytaj dalej",
+            "anchor": "relations",
+            "entries": [
+                "tfg:craftsmanship/anvils",
+                "tfg:craftsmanship/barrels",
+                "tfg:craftsmanship/quern",
+                "tfg:craftsmanship/sewing_table",
+                "tfg:agriculture/papermaking"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 18,
+    "extra_recipe_mappings": {
+        "tag:tfc:scribing_tables": 0
+    }
+}

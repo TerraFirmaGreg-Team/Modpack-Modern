@@ -1,0 +1,93 @@
+{
+    "name": "臼",
+    "category": "tfg:craftsmanship",
+    "icon": "tfc:quern",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "The $(thing)Quern$() is a device for grinding items. It can crush raw ores for $(l:game_mechanics/mining#processing)processing$(), as well as make powders, $(thing)dyes$(), and some other items. It is assembled from a $(thing)Base$() and $(thing)Handstone$().$(br)Querns can be automated by supplying $(thing)Mechanical Power$() to their top face at <32RPM."
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "tfc:crafting/quern",
+            "text": "The base of the quern can be crafted with three $(t:#forge:smooth_stone)$(6)smooth stone$() and three of any other $(t:#forge:stone)$(6)stone$() blocks.$(br2)Raw stone blocks can be acquired via $(l:craftsmanship/anvils#raw_rock)extraction$(), and smooth blocks with the $(l:craftsmanship/chisel)chisel$()."
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "tfc:crafting/handstone",
+            "text": "臼が動作するには$(thing)上臼$()も必要です。"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/quern_empty.png"
+            ],
+            "text": "設置した下臼の上面にカーソルを合わせ、$(item)$(k:key.use)$()で上臼を取り付けられます。",
+            "border": true
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/quern_add_item.png"
+            ],
+            "text": "上臼の上部へ$(item)$(k:key.use)$()を使用して、粉砕したいアイテムを投入できます。",
+            "border": true
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/quern_handle.png"
+            ],
+            "text": "ハンドルに$(item)$(k:key.use)$()で上臼を回転させ、粉砕を開始します。",
+            "border": true
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/quern_result.png"
+            ],
+            "text": "処理が終わったアイテムは下臼に表示されます。下臼に$(item)$(k:key.use)$()で回収できます。",
+            "border": true
+        },
+        {
+            "type": "tfg:quern_recipe",
+            "recipe": "tfg:quern/copper_crushed_ore_from_normal_raw_ore",
+            "text": "$(l:game_mechanics/mining#processing)Ores$() can be crushed to obtain more metal.",
+            "title": "砕いた鉱石"
+        },
+        {
+            "type": "tfg:quern_recipe",
+            "recipe": "tfg:quern/sulfur",
+            "text": "臼は、$(thing)硫黄$()などの粉をさらに細かく砕いて各種$(thing)粉末$()を生成するためにも使用されます。また、$(thing)宝石$()を粉末にすることも可能です。",
+            "title": "粉末"
+        },
+        {
+            "type": "tfg:quern_recipe",
+            "recipe": "tfc:quern/red_dye",
+            "text": "$(thing)Dye$() can be obtained from various flowers.",
+            "title": "染料"
+        },
+        {
+            "type": "tfg:quern_recipe",
+            "recipe": "tfc:quern/barley_grain",
+            "text": "$(thing)穀物系の作物$()はナイフとクラフトすることで$(thing)穀物の粒$()にすることができ、さらにそれを臼で挽くことで$(thing)穀物の粉（小麦粉など）$()へと加工できます。"
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "さらに読む",
+            "anchor": "relations",
+            "entries": [
+                "tfg:the_world/geology",
+                "tfg:cooking/bread",
+                "tfg:craftsmanship/metallurgy",
+                "tfg:game_mechanics/mining"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 14,
+    "extra_recipe_mappings": {
+        "tfc:handstone": 0,
+        "tfc:quern": 0
+    }
+}

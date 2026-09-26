@@ -1,0 +1,594 @@
+{
+    "name": "儲存空間",
+    "category": "tfg:logistics",
+    "icon": "tfc:wood/chest/douglas_fir",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(li)$(bold)Item Storage$()$(li2)$(l:logistics/storage#chests)Chests$()$(li2)$(l:logistics/storage#crates)Crates$()$(li2)$(l:logistics/storage#vaults)Vaults$()$(li2)$(l:logistics/storage#super_chests)Super Chests$()$(li)$(bold)Item & Fluid Storage$()$(li2)$(l:logistics/storage#ae2)ME Storage$()$(li2)$(l:logistics/storage#kegs)Kegs$()$(li)$(bold)Fluid Storage$()$(li2)$(l:logistics/storage#barrels)Barrels$()$(li2)$(l:logistics/storage#drums)Drums$()$(li2)$(l:logistics/storage#fluid_tanks)Fluid Tanks$()$(li2)$(l:logistics/storage#multiblock_tanks)Multiblock Tanks$()$(li2)$(l:logistics/storage#super_tanks)Super Tanks$()",
+            "title": "目錄",
+            "anchor": "index"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "第一天",
+            "anchor": "intro",
+            "text": "There are a vast amount of items, materials, and fluids that you will accumulate in $(tfg). It will be important to set up vast storage systems to organize everything. Some of the most important aspects of storage is its $(thing)capacity$() and $(thing)restrictions$(). For on-the-go inventory management you should read up on $(l:logistics/personal_storage)Personal Storage$()."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "Chests",
+            "anchor": "chests",
+            "item": "tag:forge:chests",
+            "text": "Chest can store 18 items or 36 items for double chests. Chests can hold item sized up to $(l:game_mechanics/size_and_weight)Large$().$(br)If $(thing)Food Items$() are present in chests then it will attract rodents. So it is best to store them in $(item)Vessels$()."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "enable_visualize": false,
+            "text": "$(bold)TIP$(): Chests come in all wood varients!",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "Y"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "Y": "#forge:chests/wooden[facing=north,type=single]"
+                }
+            }
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "Crates",
+            "anchor": "crates",
+            "item": "tag:gtceu:crates",
+            "text": "For storage, GregTech has $(item)Crates$() which can hold all sizes of items, with advancing tiers having larger capacity, from 27 to 144 slots.$(br)Crates support logistics covers such as $(thing)Item Filters$(), and $(thing)Rotten Voiding Covers$().$(br)You can even wrap crates with $(item)Tape$() to keep their contents when broken, allowing you to transport large quantities of items."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "enable_visualize": false,
+            "text": "$(bold)TIP$(): Wooden crates are quite cheap and make for good log storage.",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "#gtceu:crates"
+                }
+            }
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "Vaults",
+            "anchor": "vaults",
+            "item": "create:item_vault,create_connected:item_silo",
+            "text": "Create $(item)Vaults$() are a great method for consolidating a large amount of items, or for adding storage to $(thing)moving contraptions$().$(br)Vaults can be built into large 3D structures to expand their storage by 20 slots per vault. You cannot add/remove items to vaults manually, you will need to use item logistics such as hoppers."
+        },
+        {
+            "type": "tfg:multimultiblock",
+            "text": "$(bold)TIP$(): $(item)Shipping Containers$() are a colorful alternative to vaults.",
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "       ",
+                            "       ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            "       ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            "   0   ",
+                            "   X   "
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "create:item_vault[axis=z,large=false]"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "       ",
+                            "       ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            " XXXXX ",
+                            " XXXXX "
+                        ],
+                        [
+                            "       ",
+                            " XX0XX ",
+                            " XXXXX "
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "create:item_vault[axis=z,large=false]",
+                        "X": "create:item_vault[axis=z,large=false]"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "XXXXXXX",
+                            "XXXXXXX",
+                            "XXXXXXX"
+                        ],
+                        [
+                            "XXXXXXX",
+                            "XXXXXXX",
+                            "XXXXXXX"
+                        ],
+                        [
+                            "XXXXXXX",
+                            "XXX0XXX",
+                            "XXXXXXX"
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "create:item_vault[axis=z,large=false]",
+                        "X": "create:item_vault[axis=z,large=true]"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "Super Chests",
+            "anchor": "super_chests",
+            "item": "tag:gtceu:super_chests",
+            "text": "Super and Quantum chests are the best way to store and absurd quantity of one item type. The amount of items the chest can hold increases per tier, from 10,000 to 1,024,000,000. Super chests also have built in item voiding, locking, and auto-extraction options."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "enable_visualize": false,
+            "text": "$(bold)TIP$(): Super chests can be picked up with items inside.",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "#gtceu:super_chests"
+                }
+            }
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "ME Storage",
+            "anchor": "ae2",
+            "item": "ae2:drive",
+            "text": "Advanced Energistics $(item)Drives$() and $(item)Cells$() allow you to digitize your storage into a very capable and dense logistics and crafting network. Connect an $(item)ME Controller$() and $(thing)Terminal$() to view items inside."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "enable_visualize": false,
+            "text": "$(bold)TIP$(): Higher tier cells can fit more item types, and more \"bytes\".",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "ae2:drive"
+                }
+            }
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "Kegs",
+            "anchor": "kegs",
+            "item": "tag:firmalife:big_barrels",
+            "text": "$(item)Kegs$() have the unique ability to store large amounts of items $(italics)and$() fluids.$(br)Kegs can hold any fluid a barrel can, up to 80,000 mB worth, and can hold up to 36 stacks of $(l:game_mechanics/size_and_weight)Large$() items.$(br2)Kegs cannot process recipes or age alcohol like barrels."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "enable_visualize": false,
+            "text": "$(bold)TIP$(): You can insert and extract automatically from any block of the keg.",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "67",
+                        "45"
+                    ],
+                    [
+                        "23",
+                        "01"
+                    ]
+                ],
+                "mapping": {
+                    "0": "firmalife:wood/big_barrel/oak[facing=south,barrel_part=0]",
+                    "1": "firmalife:wood/big_barrel/oak[facing=south,barrel_part=1]",
+                    "2": "firmalife:wood/big_barrel/oak[facing=south,barrel_part=2]",
+                    "3": "firmalife:wood/big_barrel/oak[facing=south,barrel_part=3]",
+                    "4": "firmalife:wood/big_barrel/oak[facing=south,barrel_part=4]",
+                    "5": "firmalife:wood/big_barrel/oak[facing=south,barrel_part=5]",
+                    "6": "firmalife:wood/big_barrel/oak[facing=south,barrel_part=6]",
+                    "7": "firmalife:wood/big_barrel/oak[facing=south,barrel_part=7]"
+                }
+            }
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "Barrels",
+            "anchor": "barrels",
+            "item": "tag:tfc:barrels",
+            "text": "$(l:craftsmanship/barrels)Barrels$() aren't just useful for recipes. They are a very cheap way of holding plenty of fluid, up to 10,000 mB per barrel.$(br)When placed on their side, barrels can drip fluid from their tap into containers below, allowing them to auto-ouput at a steady rate.$(br)You can carry a filled barrel on your back to transport its contents."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "enable_visualize": false,
+            "text": "$(bold)TIP$(): Barrels can collect rain water when left open exposed to the sky.",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "#tfc:barrels[facing=up]"
+                }
+            }
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Drums",
+            "anchor": "drums",
+            "item": "tag:gtceu:drums",
+            "text": "$(item)Drums$() are great for storing and carrying fluids. These can hold a large amount of a single fluid type, and different tiers hold more, from 32,000 to 1,024,000 mB worth.$(br2)Drums will retain their fluid when broken, making them ideal for moving fluids around.$(br2)Drums can automatically push fluid out of their bottom face by $(item)$(k:key.use)$() them with a $(thing)Soft Mallet$() or $(thing)Screwdriver$()."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "enable_visualize": false,
+            "text": "$(bold)TIP$(): Drums can have fluid logistic covers placed on their faces.",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "#gtceu:drums"
+                }
+            }
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "Fluid Tanks",
+            "anchor": "fluid_tanks",
+            "item": "create:fluid_tank,create_connected:fluid_vessel,fluidlogistics:multi_fluid_tank",
+            "text": "$(item)Fluid Tanks$() can be seen as the fluid version of $(l:logistics/storage#vaults)Vaults$(). Individual tanks hold 32,000 mB each, and can be formed into structures to expand their capacity.$(br2)$(item)Multi-Fluid Tanks$() can hold multiple fluid types at a time, but cannot be interacted with manually."
+        },
+        {
+            "type": "tfg:multimultiblock",
+            "text": "$(bold)TIP$(): Tanks can be $(item)$(k:key.use)$() with a $(thing)Wrench$() to hide/show their window.",
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ],
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ],
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ],
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ],
+                        [
+                            "   ",
+                            " 0 ",
+                            "   "
+                        ],
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "create:fluid_tank[bottom=true,shape=window,top=true]"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ],
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ],
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ],
+                        [
+                            "   ",
+                            "54 ",
+                            "67 "
+                        ],
+                        [
+                            "   ",
+                            "10 ",
+                            "23 "
+                        ],
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "create:fluid_tank[bottom=true,shape=window_sw,top=false]",
+                        "1": "create:fluid_tank[bottom=true,shape=window_nw,top=false]",
+                        "2": "create:fluid_tank[bottom=true,shape=window_ne,top=false]",
+                        "3": "create:fluid_tank[bottom=true,shape=window_se,top=false]",
+                        "4": "create:fluid_tank[bottom=false,shape=window_sw,top=true]",
+                        "5": "create:fluid_tank[bottom=false,shape=window_nw,top=true]",
+                        "6": "create:fluid_tank[bottom=false,shape=window_ne,top=true]",
+                        "7": "create:fluid_tank[bottom=false,shape=window_se,top=true]"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ],
+                        [
+                            "TYT",
+                            "YTY",
+                            "TYT"
+                        ],
+                        [
+                            "PWP",
+                            "WPW",
+                            "PWP"
+                        ],
+                        [
+                            "PWP",
+                            "WPW",
+                            "PWP"
+                        ],
+                        [
+                            "BXB",
+                            "X0X",
+                            "BXB"
+                        ],
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "create:fluid_tank[bottom=true,shape=plain,top=false]",
+                        "B": "create:fluid_tank[bottom=true,shape=plain,top=false]",
+                        "X": "create:fluid_tank[bottom=true,shape=window,top=false]",
+                        "W": "create:fluid_tank[bottom=false,shape=window,top=false]",
+                        "P": "create:fluid_tank[bottom=false,shape=plain,top=false]",
+                        "T": "create:fluid_tank[bottom=false,shape=plain,top=true]",
+                        "Y": "create:fluid_tank[bottom=false,shape=window,top=true]"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "Multiblock Tanks",
+            "anchor": "multiblock_tanks",
+            "item": "gtceu:wooden_multiblock_tank,gtceu:bronze_multiblock_tank,gtceu:steel_multiblock_tank",
+            "text": "$(item)Multiblock Tanks$() are structures dedicated to storing large quantities of fluids. Each type can have up to two valves and increase in capacity by tier.$(li)$(bold)Wooden Tank$(): 1,000,000 mB Capacity$(li)$(bold)Bronze Tank$(): 4,000,000 mB Capacity$(li)$(bold)Steel Tank$(): 8,000,000 mB Capacity"
+        },
+        {
+            "type": "tfg:multimultiblock",
+            "text": "$(bold)TIP$(): Multiblock tanks will auto-push fluids from valves on its bottom face.",
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ],
+                        [
+                            "CCC",
+                            "CVC",
+                            "CCC"
+                        ],
+                        [
+                            "CCC",
+                            "T C",
+                            "CCC"
+                        ],
+                        [
+                            "CCC",
+                            "C0C",
+                            "CCC"
+                        ],
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "gtceu:wooden_tank_valve[facing=down]",
+                        "C": "gtceu:wood_wall",
+                        "T": "gtceu:wooden_multiblock_tank[facing=north,upwards_facing=north]",
+                        "V": "gtceu:wooden_tank_valve[facing=up]"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ],
+                        [
+                            "CCC",
+                            "CVC",
+                            "CCC"
+                        ],
+                        [
+                            "CCC",
+                            "T C",
+                            "CCC"
+                        ],
+                        [
+                            "CCC",
+                            "C0C",
+                            "CCC"
+                        ],
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "gtceu:bronze_tank_valve[facing=down]",
+                        "C": "gtceu:steam_machine_casing",
+                        "T": "gtceu:bronze_multiblock_tank[facing=north,upwards_facing=north]",
+                        "V": "gtceu:bronze_tank_valve[facing=up]"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ],
+                        [
+                            "CCC",
+                            "CVC",
+                            "CCC"
+                        ],
+                        [
+                            "CCC",
+                            "T C",
+                            "CCC"
+                        ],
+                        [
+                            "CCC",
+                            "C0C",
+                            "CCC"
+                        ],
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "gtceu:steel_tank_valve[facing=down]",
+                        "C": "gtceu:solid_machine_casing",
+                        "T": "gtceu:steel_multiblock_tank[facing=north,upwards_facing=north]",
+                        "V": "gtceu:steel_tank_valve[facing=up]"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "Super Tanks",
+            "anchor": "super_tanks",
+            "item": "tag:gtceu:super_tanks",
+            "text": "Super and Quantum tanks work similarly to their $(l:logistics/storage#super_chests)Super Chest$() counterparts. They can store an absurd amount of one type of fluid―ranging from 1,000,000 to 1,024,000,000 mb―increasing by tier.$(br)Super Tanks have options for auto-output, voiding, and locking."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "enable_visualize": false,
+            "text": "$(bold)TIP$(): Super tanks can be picked up with fluid inside.",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "#gtceu:super_tanks"
+                }
+            }
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Further Reading",
+            "anchor": "relations",
+            "entries": [
+                "tfg:craftsmanship/barrels",
+                "tfg:logistics/personal_storage",
+                "tfg:game_mechanics/size_and_weight"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 4,
+    "extra_recipe_mappings": {
+        "tag:forge:chests": 2,
+        "tag:gtceu:crates": 4,
+        "create:item_vault": 6,
+        "tag:createdeco:shipping_containers": 6,
+        "tag:gtceu:super_chests": 8,
+        "tag:firmalife:big_barrels": 12,
+        "tag:gtceu:drums": 16,
+        "create:fluid_tank": 18,
+        "fluidlogistics:multi_fluid_tank": 18,
+        "gtceu:wooden_multiblock_tank": 20,
+        "gtceu:wooden_tank_valve": 20,
+        "gtceu:bronze_multiblock_tank": 20,
+        "gtceu:bronze_tank_valve": 20,
+        "gtceu:steel_multiblock_tank": 20,
+        "gtceu:steel_tank_valve": 20,
+        "tag:gtceu:super_tanks": 22
+    }
+}

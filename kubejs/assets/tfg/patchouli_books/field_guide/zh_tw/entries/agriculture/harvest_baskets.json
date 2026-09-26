@@ -1,0 +1,42 @@
+{
+    "name": "採收籃",
+    "icon": "tfg:harvest_basket",
+    "category": "tfg:agriculture",
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "title": "採收籃",
+            "item": {
+                "tag": "tfg:harvester"
+            },
+            "text": "Made for those with a short stature―$(thing)Harvest Baskets$() are just the tool needed for plucking trees and bushes of fruit.$(br)To use a harvest basket, $(item)$(k:key.use)$() on a $(l:the_world/wild_fruits#fruit_trees)Fruit Tree$(), $(l:the_world/wild_fruits#tall_bushes)Fruit Bush$(), $(l:agriculture/growing_crops#growing_grapes)Grape Trellis$(), $(l:agriculture/greenhouse#bonsai_planter)Bonsai Planter$(), $(l:agriculture/greenhouse#trellis_planter)Trellis Planter$(), or $(l:agriculture/greenhouse#hanging_planter)Hanging Planter$() and all blocks within a $(thing)7-block radius$() will be picked."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "普通採收籃的耐久度為 $(thing)128$()，而鋁製採收籃不會在使用過程受損。採收籃也可以被 $(thing)機械手$()等設備用來自動化採收。"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": "採收籃",
+            "recipe": "tfg:shaped/harvest_basket_from_papyrus",
+            "text": "$(item)採收籃$()可用浸泡後的紙莎紙或硬木製作。"
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Further Reading",
+            "anchor": "relations",
+            "entries": [
+                "tfg:agriculture/growing_crops",
+                "tfg:agriculture/greenhouse",
+                "tfg:agriculture/composting",
+                "tfg:the_world/wild_crops",
+                "tfg:the_world/wild_fruits"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 8,
+    "extra_recipe_mappings": {
+        "tag:tfg:harvester": 0
+    }
+}

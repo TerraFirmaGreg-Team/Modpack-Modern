@@ -1,0 +1,53 @@
+{
+    "name": "Види пошкоджень",
+    "category": "tfg:game_mechanics",
+    "icon": "tfc:metal/mace/blue_steel",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "anchor": "intro",
+            "text": "$(thing)Physical Damage Types$() describe the nature of the damage that can be dealt by players and mobs. There are three types: $(bold)Piercing$(), $(bold)Slashing$(), and $(bold)Crushing$(). Some entities are able to resist certain damage types, making it difficult or impossible to kill them with certain methods."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "piercing",
+            "text": "$(thing)Piercing$() damage is dealt by pointy weapons such as $(thing)Knives$(), projectiles like $(thing)Arrows$() and $(thing)Javelins$(), fanged monsters like $(thing)Spiders$(), and $(thing)Cacti$(). $(thing)Skeletons$() are invulnerable to piercing damage, and $(thing)Zombies$() are slightly vulnerable to it.",
+            "title": "Проколювання"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "slashing",
+            "text": "$(thing)Ріжучої$() шкоди завдають такі види зброї, як $(thing)сокира$() та $(thing)меч$(). Також порізати можуть великі $(l:the_world/wild_animals#predators)хижаки$(), наприклад ведмеді, або пуми. $(thing)Кріпер$() вразливий до різання.",
+            "title": "Різання (рубання)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "crushing",
+            "text": "Шкоду $(thing)дроблення$() завдає тупа зброя, як от $(thing)молот$() та $(thing)булава$(). $(thing)Зомбі$() завдають нищівної шкоди, але ж вони мають стійкість до неї. $(thing)Кріпер$() теж має імунітет до дроблення. А от $(thing)скелет$() вразливий до нього.",
+            "title": "Дроблення"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "armor",
+            "title": "Обладунки",
+            "text": "$(thing)Armor$() has its own set of damage resistances. These resistances scale with the quality of armor, but may differ among armors of the same tier. Among bronzes, $(thing)Bismuth Bronze$() armor is best at resisting $(thing)Crushing$(), $(thing)Black Bronze$() is best at resisting $(thing)Piercing$() and regular $(thing)Bronze$() does moderately well with any damage."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Для обладунків з $(thing)кольорової сталі$() також є відмінності. $(thing)Синя сталь$() найкраще протистоїть $(thing)дробленню$(), а $(thing)червона сталь$() - $(thing)проколюванню$()."
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Додаткове читання",
+            "anchor": "relations",
+            "entries": [
+                "tfg:craftsmanship/metallurgy",
+                "tfg:the_world/wild_animals",
+                "tfg:logistics/exploration_gear"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "priority": "true",
+    "sortnum": 1
+}

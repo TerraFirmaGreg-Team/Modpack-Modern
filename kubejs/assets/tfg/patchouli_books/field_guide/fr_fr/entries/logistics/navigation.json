@@ -1,0 +1,94 @@
+{
+    "name": "Navigation",
+    "category": "tfg:logistics",
+    "icon": "firmaciv:textures/item/nav_toolkit.png",
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "minimap",
+            "title": "Mini-Map",
+            "item": "minecraft:filled_map",
+            "text": "A mini-map will appear in the top corner of your screen. By default, it will display:$(li)Your coordinates.$(li)Time of day.$(li)Season and Date.$(li)Waypoints.$(li)Entities.$(br)You can configure mini-map settings with $(item)$(k:gui.xaero_open_settings)$()."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "map",
+            "title": "Full Map",
+            "text": "A full map can be viewed by pressing $(item)$(k:gui.xaero_open_map)$().$(br)$(bold)TIP$(): You can make seperate waypoint sets in the waypoint manager screen to organize waypoints. Waypoints can be made while playing by pressing $(item)$(k:gui.xaero_new_waypoint)$(). Chunk claims can also be viewed in the map. Chunk claims are useful in multiplayer and allow you to force load regions. Chunks can be claimed in the claims' manager in the top-left of your inventory."
+        },
+        {
+            "type": "patchouli:image",
+            "title": "Navigation",
+            "anchor": "navigation",
+            "images": [
+                "firmaciv:textures/gui/book/navigation.png"
+            ],
+            "border": true
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Navigating the world is not an easy task. In order to build a successful civilization, you must have a good grasp of your location, and a good record of important places! If you wish to avoid using the map or minimap and want a more immersive method for navigating the world you can craft precise instruments to determine your position."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "longitude",
+            "title": "Longitude",
+            "text": "To find your Longitude, that is, your distance from the Prime Meridian, you need a clock! Specifically, you need a precise timepiece that keeps itself synchronized with the solar time at the Prime Meridian.$(br2)Smith an Unfinished Navigator's Timepiece before filling it with its internal mechanism."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "Timepiece",
+            "item": "firmaciv:nav_clock",
+            "text": "Once you craft your Navigator's Timepiece, you can hold it and press $(item)$(k:key.use)$() to determine your Longitude. Remember that your Longitude is measured in Degrees East or West, meaning 0 Degrees at the Prime Meridian, and 360 Degrees for an identical climate."
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Latitude",
+            "anchor": "latitude",
+            "text": "To find your Latitude, that is, your distance from the Equator, you need to determine the degrees at which you view either Polaris, the North Star, or the Sun. Specifically, you need a precise mechanism for viewing astronomical features and measuring their angular distance from the horizon.$(br2)Smith an Unfinished Sextant and then complete it in a workbench."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "Sextant",
+            "item": "firmaciv:sextant",
+            "text": "Once you craft your Sextant, you can hold it and press $(item)$(k:key.use)$() to determine your Latitude. Remember that your Latitude is measured in Degrees North or South, meaning 0 Degrees at the Equator, and 90 Degrees North or South for a polar region."
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Altitude",
+            "anchor": "altitude",
+            "text": "To find your Altitude, that is, your vertical distance from the Sea Level datum, you need to measure atmospheric pressure. Specifically, you need a device containing a compressible fluid, and you need to measure the volume of that fluid to determine the pressure.$(br2)Smith an Unfinished Barometer and then complete it in a workbench."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "Baromètre",
+            "item": "firmaciv:barometer",
+            "text": "Once you craft your Barometer, you can hold it and press $(item)$(k:key.use)$() to determine your Altitude. Remember that your Altitude is measured in distance from the Sea Level datum."
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Footnotes",
+            "text": "Because you will be measuring distance in Degrees, it might be helpful to know the block conversions. Every 90 Degrees is 20,000 blocks, and every single degree is about 222 blocks.$(br2)In $(tfg), Compasses will always point North."
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Pour aller plus loin",
+            "anchor": "relations",
+            "entries": [
+                "tfg:craftsmanship/metallurgy",
+                "tfg:craftsmanship/glassworking",
+                "tfg:logistics/exploration_gear",
+                "tfg:logistics/boats",
+                "tfg:logistics/tack"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 7,
+    "extra_recipe_mappings": {
+        "firmaciv:nav_clock": 2,
+        "firmaciv:sextant": 4,
+        "firmaciv:barometer": 6,
+        "firmaciv:firmaciv_compass": 7
+    }
+}

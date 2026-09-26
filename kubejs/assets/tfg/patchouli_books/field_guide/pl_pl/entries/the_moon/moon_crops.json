@@ -1,0 +1,62 @@
+{
+	"name": "Moon Crops",
+	"category": "tfg:the_moon",
+	"icon": "minecraft:textures/item/chorus_fruit.png",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "chorus_fruit",
+			"title": "Owoc refrenusu",
+			"text": "$(bold)Biomes$(): Chorus Forest, Chorus Thicket$(br2)Chorus Plants grow in tall formations. Breaking the stem will yield nothing, while breaking the Flowers at the top will yield Chorus Fruits or a Flower.$(br)Chorus Fruits can be eaten for $(thing)Fruit$(), cooked and eaten as $(item)Popped Chorus Fruit$(), or can be distilled into $(thing)Nitrogen$().$(br)"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"multiblock": {
+				"pattern": [
+					[
+						"Z  "
+					],
+					[
+						"V D"
+					],
+					[
+						"EXB"
+					],
+					[
+						" V "
+					],
+					[
+						" 0 "
+					]
+				],
+				"mapping": {
+					"0": "ad_astra:moon_sand",
+					"V": "tfg:lunar_chorus_plant[down=true,up=true]",
+					"E": "tfg:lunar_chorus_plant[south=true,up=true]",
+					"X": "tfg:lunar_chorus_plant[north=true,down=true,south=true]",
+					"B": "tfg:lunar_chorus_plant[north=true,up=true]",
+					"D": "tfg:lunar_chorus_flower[age=5]",
+					"Z": "tfg:lunar_chorus_flower[age=0]"
+				}
+			},
+			"text": "$(thing)Kwiaty refrenusu$() można także uprawiać ręcznie, sadząc je na dowolnym żwirze lub piasku.",
+			"enable_visualize": false
+		},
+		{
+			"type": "patchouli:relations",
+			"title": "Czytaj dalej",
+			"anchor": "relations",
+			"entries": [
+				"tfg:the_world/climate",
+				"tfg:the_world/wild_crops",
+				"tfg:beneath/beneath_crops",
+				"tfg:mars/mars_crops"
+			]
+		}
+	],
+	"read_by_default": true,
+	"extra_recipe_mappings": {
+		"tfg:lunar_chorus_flower": 0,
+		"minecraft:chorus_fruit": 0
+	}
+}

@@ -1,0 +1,715 @@
+{
+    "name": "Earth Flora",
+    "category": "tfg:the_world",
+    "icon": "tfc:plant/goldenrod",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "anchor": "index",
+            "text": "$(li)$(bold)$(l:the_world/flora#standard_plants)Standard Plant Types$()$(li)$(bold)$(l:the_world/flora#aquatic_plants)Aquatic Plant Types$()$(li)$(bold)$(l:the_world/flora#medicinal_plants)Medicinal Plants$()$(li)$(bold)$(l:the_world/flora#spices)Spices$()$(li2)$(l:the_world/flora#basil)Basil$()$(li2)$(l:the_world/flora#bay)Bay Laural$()$(li2)$(l:the_world/flora#cardamom)Cardamom$()$(li2)$(l:the_world/flora#cilantro)Cilantro$()$(li2)$(l:the_world/flora#cumin)Cumin$()$(li2)$(l:the_world/flora#oregano)Oregano$()$(li2)$(l:the_world/flora#pimento)Pimento$()$(li2)$(l:the_world/flora#vanilla)Vanilla$()$(li)$(bold)$(l:the_world/flora#seed_ball)Seed Ball$()"
+        },
+        {
+            "anchor": "intro",
+            "type": "patchouli:spotlight",
+            "title": "Intro to Earth Flora",
+            "item": {
+                "tag": "tfc:plants"
+            },
+            "text": "Earth is an incredibly diverse planet when it comes to flora. Unlike in vanilla $(thing)Minecraft$()--Plants in $(tfg) spawn based on local $(l:the_world/climate#climate)Climate Conditions$()."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Plants may be difficult to find during some $(l:the_world/climate#seasons)Seasons$() as they go through cycles of flowering and laying dormant, or changing color as the local temperature changes.$(br2)Colorful flowers can typically be crushed in a $(l:craftsmanship/quern)Quern$() for $(thing)Dye$(). While some plants can be used for making $(l:the_world/flora#medicinal_plants)medicine$() or $(l:the_world/flora#spices)meals$()."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfc:plant/anthurium"
+                }
+            },
+            "name": "Standard",
+            "anchor": "standard_plants",
+            "text": "일반적인 식물들은 작은 꽃 등이 있습니다. 잔디나 흙, 경작지에서 자랍니다.",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfc:plant/sagebrush"
+                }
+            },
+            "name": "Dry",
+            "text": "건조한 식물들은 일반적인 식물들과 비슷하지만, 모래에서 자랄 수 있습니다. 일반적으로 강수량이 적은 지역에서 나타납니다.",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:multiblock",
+            "anchor": "cacti",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "Y"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfc:plant/barrel_cactus[part=upper]",
+                    "Y": "tfc:plant/barrel_cactus[part=lower]"
+                }
+            },
+            "name": "§l선인장",
+            "text": "선인장은 2블록 높이로 자라고, 당신에게 피해를 줍니다!",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfc:plant/moss[down=true]"
+                }
+            },
+            "name": "§l이끼",
+            "text": "이끼들은 붙어 있는 블록의 형태를 취합니다. 대체로 땅에서 한데 뭉쳐 생성됩니다.",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "XY"
+                    ],
+                    [
+                        "0 "
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfc:wood/wood/birch",
+                    "Y": "tfc:plant/licorice_fern[facing=south]"
+                }
+            },
+            "name": "§l착생식물",
+            "text": "착생식물들은 원목의 옆면에서만 삽니다.",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfc:plant/bluegrass"
+                }
+            },
+            "name": "§l짧은 잔디",
+            "text": "짧은 잔디는 자라면서 점차 커집니다. 이탄이나 진흙에서도 자랄 수 있습니다.",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "Y"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfc:plant/king_fern[part=upper]",
+                    "Y": "tfc:plant/king_fern[part=lower]"
+                }
+            },
+            "name": "§l큰 잔디",
+            "text": "큰 잔디는 당신의 시야를 가릴만큼 큽니다.",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfc:plant/ivy[up=true,north=true]"
+                }
+            },
+            "name": "§l덩굴",
+            "text": "덩굴 블록들은 충분히 따뜻하다면, 스스로 주위로 퍼집니다.",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "Y"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfc:plant/liana_plant",
+                    "Y": "tfc:plant/liana"
+                }
+            },
+            "name": "§l늘어진 덩굴",
+            "text": "늘어진 덩굴은 기준 블록에서 아래쪽으로 자랍니다.",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "Y"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfc:plant/arundo",
+                    "Y": "tfc:plant/arundo_plant"
+                }
+            },
+            "name": "§l휘어진 덩굴",
+            "text": "휘어진 덩굴들은 땅에서 위쪽으로 자랍니다. 딱딱한 종류도 존재합니다.",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "aquatic_plants",
+            "text": "Aquatic plants are restricted to either spawn in fresh or salty water. Otherwise, they grow and act much like the plants you see on the surface. Some water plants can be cooked for food.",
+            "title": "Aquatic Plants"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfc:plant/sago[fluid=water]"
+                }
+            },
+            "name": "§l일반",
+            "text": "일반 수생 식물은 $(thing)$()칼$()로 잘라 $(thing)해초$()를 얻을 수 있습니다.",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfc:plant/manatee_grass[fluid=salt_water]"
+                }
+            },
+            "name": "§l수중 잔디",
+            "text": "수중 잔디는 물 속에서 자라는 잔디입니다.",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "Y"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfc:plant/cattail[part=upper]",
+                    "Y": "tfc:plant/cattail[part=lower,fluid=water]"
+                }
+            },
+            "name": "§l큰 수생 식물",
+            "text": "큰 수생 식물은 물 속의 바닥 블록부터 자랄 수 있습니다. $(thing)물토란$()과 $()부들$()은 $(thing)칼$()로 잘라 $(thing)뿌리$()를 얻을 수 있습니다.",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "Y"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfc:plant/duckweed",
+                    "Y": "minecraft:water"
+                }
+            },
+            "name": "§l부유",
+            "text": "부유 식물은 물 위로 떠 있습니다. 보트와 부딪히면 부서집니다.",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "Y"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfc:plant/winged_kelp[fluid=salt_water]",
+                    "Y": "tfc:plant/winged_kelp_plant[fluid=salt_water]"
+                }
+            },
+            "name": "§l켈프",
+            "text": "켈프는 물 속에서 자라는 휘어진 덩굴입니다.",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "Y"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfc:plant/giant_kelp_flower[facing=up,fluid=salt_water]",
+                    "Y": "tfc:plant/giant_kelp_plant[down=true,up=true,fluid=salt_water]"
+                }
+            },
+            "name": "§l나무 켈프",
+            "text": "나무 켈프들은 물 속에서 복잡하게 나무로 자랍니다. $(thing)칼$()로 꽃을 수확할 수 있습니다.",
+            "enable_visualize": false
+        },
+        {
+            "anchor": "medicinal_plants",
+            "type": "patchouli:spotlight",
+            "item": {
+                "tag": "tfg:medicinal_ingredients/plants"
+            },
+            "title": "Medicinal Plants",
+            "text": "Many plants in $(tfg) hold medicinal value and can be used for creating phytotherapeutic medicine. You can combine these ingredients in a mixing bowl with wax, binders, and spring water to make pills. Or more advanced medications."
+        },
+        {
+            "title": "Spices",
+            "type": "patchouli:spotlight",
+            "item": {
+                "tag": "tfg:foods/spice_plants"
+            },
+            "anchor": "spices",
+            "text": "With $(thing)Firmalife$(), there are a number of small plants you can collect and grow on your own, which have cooking properties. They can all be found in the wild, and once harvested, may be cultivated in a $(l:agriculture/greenhouse)Greenhouse$(), in which they consume 20 points of N, P, and K."
+        },
+        {
+            "type": "tfg:table",
+            "strings": [
+                {
+                    "text": "Spice",
+                    "bold": true
+                },
+                {
+                    "text": "기온(°C)",
+                    "bold": true
+                },
+                {
+                    "text": "강수량(mm)",
+                    "bold": true
+                },
+                {
+                    "text": "바질"
+                },
+                {
+                    "text": "12 - 25"
+                },
+                {
+                    "text": "300~500"
+                },
+                {
+                    "text": "월계수"
+                },
+                {
+                    "text": "8 - 14"
+                },
+                {
+                    "text": "25 - 225"
+                },
+                {
+                    "text": "카다멈"
+                },
+                {
+                    "text": "18 - 30"
+                },
+                {
+                    "text": "350~500"
+                },
+                {
+                    "text": "고수"
+                },
+                {
+                    "text": "5 - 15"
+                },
+                {
+                    "text": "0 - 150"
+                },
+                {
+                    "text": "커민"
+                },
+                {
+                    "text": "6 - 20"
+                },
+                {
+                    "text": "50 - 250"
+                },
+                {
+                    "text": "오레가노"
+                },
+                {
+                    "text": "5 - 13"
+                },
+                {
+                    "text": "50 - 150"
+                },
+                {
+                    "text": "피멘토"
+                },
+                {
+                    "text": "15 - 30"
+                },
+                {
+                    "text": "200 - 450"
+                },
+                {
+                    "text": "바닐라"
+                },
+                {
+                    "text": "18 - 30"
+                },
+                {
+                    "text": "200~500"
+                }
+            ],
+            "text": "",
+            "title": "Wild Spice Ranges",
+            "legend": [],
+            "columns": 2,
+            "first_column_width": 80,
+            "column_width": 70,
+            "row_height": 10,
+            "left_buffer": 2,
+            "top_buffer": 12,
+            "draw_background": false
+        },
+        {
+            "type": "patchouli:empty",
+            "draw_filler": false
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "firmalife:plant/basil[stage=1]"
+                }
+            },
+            "name": "바질",
+            "anchor": "basil",
+            "text": "$(thing)야생 바질$()은 기온 12~25°C, 강수량 300~500mm 환경에서 자랍니다.",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "firmalife:plant/bay_laurel[stage=1]"
+                }
+            },
+            "name": "월계수",
+            "anchor": "bay",
+            "text": "$(thing)야생 월계수$()는 기온 8~14°C, 강수량 25~225mm 환경에서 자랍니다.",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "firmalife:plant/cardamom[stage=1]"
+                }
+            },
+            "name": "카다멈",
+            "anchor": "cardamom",
+            "text": "$(thing)야생 카다멈$()은 기온 18~30°C, 강수량 350~500mm 환경에서 자랍니다.",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "firmalife:plant/cilantro[stage=1]"
+                }
+            },
+            "name": "고수",
+            "anchor": "cilantro",
+            "text": "$(thing)야생 고수$()는 기온 5~15°C, 강수량 0~150mm 환경에서 자랍니다.",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "firmalife:plant/cumin[stage=1]"
+                }
+            },
+            "name": "커민",
+            "anchor": "cumin",
+            "text": "$(thing)야생 커민$()은 기온 6~20°C, 강수량 50~250mm 환경에서 자랍니다.",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "firmalife:plant/oregano[stage=1]"
+                }
+            },
+            "name": "오레가노",
+            "anchor": "oregano",
+            "text": "$(thing)야생 오레가노$()는 기온 5~13°C, 강수량 50~150mm 환경에서 자랍니다.",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "firmalife:plant/pimento[stage=1]"
+                }
+            },
+            "name": "피멘토",
+            "anchor": "pimento",
+            "text": "$(thing)야생 피멘토$()는 기온 15~30°C, 강수량 200~450mm 환경에서 자랍니다.",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "firmalife:plant/vanilla[stage=1]"
+                }
+            },
+            "name": "바닐라",
+            "anchor": "vanilla",
+            "text": "$(thing)야생 바닐라$()는 기온 18~30°C, 강수량 200~500mm 환경에서 자랍니다.",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:crafting",
+            "anchor": "seed_ball",
+            "recipe": "firmalife:crafting/seed_ball",
+            "text": "$(item)씨앗 볼$()은 다양한 종류의 잔디를 심는 데 사용할 수 있습니다. 이는 건설을 위해 기지를 정리한 이후 유용하게 활용할 수 있습니다. 씨앗 볼의 제작에는 $(item)퇴비$()와 $(thing)씨앗$() 4개가 필요합니다."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "firmalife:plant/butterfly_grass"
+                }
+            },
+            "name": "나비 풀",
+            "anchor": "butterfly_grass",
+            "text": "나비풀.",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:text",
+            "text": "나비풀은 시간이 지남에 따라 성장합니다. 완전히 성장하면 주변 블록으로 퍼지거나 다른 종류의 풀로 변이할 수 있습니다. 다른 풀 블록에 의해 퍼진 나비풀 블록은 더 이상 퍼지지 않습니다.$(br)나비풀이 다른 풀로 변한 이후에는 $(item)가위$()로 채집할 수 있습니다."
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Further Reading",
+            "anchor": "relations",
+            "entries": [
+                "tfg:the_world/wild_fruits",
+                "tfg:the_world/wild_animals",
+                "tfg:the_world/wild_crops",
+                "tfg:the_world/earth_tree_index",
+                "tfg:agriculture/greenhouse"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 4,
+    "extra_recipe_mappings": {
+        "tag:tfg:medicinal_ingredients/plants": 21,
+        "firmalife:plant/basil": 24,
+        "firmalife:spice/basil_leaves": 24,
+        "firmalife:plant/bay_laurel": 25,
+        "tfg:spice/bay_leaf": 25,
+        "firmalife:plant/cardamom": 26,
+        "tfg:spice/cardamom_pods": 26,
+        "firmalife:plant/cilantro": 27,
+        "tfg:spice/cilantro_leaves": 27,
+        "firmalife:plant/cumin": 28,
+        "tfg:spice/cumin_seeds": 28,
+        "firmalife:plant/oregano": 29,
+        "tfg:spice/oregano_leaves": 29,
+        "firmalife:plant/pimento": 30,
+        "tfg:spice/allspice": 30,
+        "firmalife:plant/vanilla": 31,
+        "firmalife:spice/vanilla": 31,
+        "firmalife:seed_ball": 32
+    }
+}

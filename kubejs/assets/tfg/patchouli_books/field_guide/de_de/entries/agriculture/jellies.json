@@ -1,0 +1,86 @@
+{
+	"name": "Jellies",
+	"category": "tfg:agriculture",
+	"icon": "jellies:jellie/slime_ball/plant",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "$(thing)Jellies$() are friendly blobs of slime that appear on various planets and environments. $(br2)They have a variety of uses, but most commonly, they produce type-specific $(thing)slime balls$(). $(br2)Did I mention they are very friendly? If you raise their familiarity high enough, they will become $(l:game_mechanics/pets)pets$() and happily follow you around!"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "index",
+			"text": "$(li)$(bold)$(l:agriculture/jellies#produce)Produce$()$(li)$(bold)$(l:agriculture/jellies#feeding)Feeding$()$(li)$(bold)Earth Species$()$(li2)$(l:agriculture/jellies#herbal)Herbal$()$(li2)$(l:agriculture/jellies#phosphorum)Phosphorum$()$(li2)$(l:agriculture/jellies#rock)Rock$()$(li)$(bold)Beneath Species$()$(li2)$(l:beneath/beneath_fauna#ice_jellie)Ice$()$(li2)$(l:beneath/beneath_fauna#plant_jellie)Plant$()$(li2)$(l:beneath/beneath_fauna#glowberry_jellie)Glowberry$()$(li2)$(l:beneath/beneath_fauna#spring_jellie)Spring$()$(li2)$(l:beneath/beneath_fauna#lava_jellie)Lava$()$(li2)$(l:beneath/beneath_fauna#biotite_jellie)Biotite$()$(li2)$(l:beneath/beneath_fauna#latex_jellie)Latex$()$(br2)$(o)(Continued on next page...)$()"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(li)$(bold)Moon Species$()$(li2)$(l:the_moon/moon_fauna#certus_jellie)Certus$()$(li)$(bold)Mars Species$()$(li2)$(l:mars/mars_fauna#pentetic_jellie)Pentetic$()$(li)$(bold)$(l:agriculture/jellies#spoiler)???$()"
+		},
+		{
+			"type": "patchouli:image",
+			"images": [
+				"tfg:textures/gui/field_guide/jellies.png"
+			],
+			"text": "$(thing)Jellies$() are hermaphroditic and can reproduce with any other $(thing)jellie$()!",
+			"border": true
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Produce",
+			"anchor": "produce",
+			"text": "$(thing)Jellies$() are quite picky and will refuse to produce anything outside their natural habitat; however, they will breed just fine in any environment. $(br2)They also dislike machines and will only give their produce when fed manually by a player.$(br2)$(#B0B0B0)$(o)Or maybe they just want attention..."
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": "Futter",
+			"recipe": "tfg:shaped/jellies_nutritional_mash",
+			"anchor": "feeding",
+			"text": "$(thing)Nutritional Mash$() is the main food of all $(thing)jellies$(), primarily made from grains, fruits, and some dimension-specific ingredients.$(br2)Unfortunately, they are quite picky and can only be fed by the $(thing)Player$() and not a $(l:agriculture/animal_husbandry#feeding_trough)Feeding Trough$().$(br)$(#B0B0B0)$(o)Why is it moving..."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "jellies:herbal",
+			"scale": 0.6,
+			"name": "Herbal Jellie",
+			"anchor": "herbal",
+			"text": "$(thing)Herbal$() jellies spawn on Earth in warm forests, with $(l:the_world/climate#temperature)temperature$() between 1-10°C and $(l:the_world/climate#rainfall)rainfall$() of at least 150mm. They produce $(thing)Herbal Slime Balls$()."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "jellies:phosphorum",
+			"scale": 0.6,
+			"name": "Phosphorum Jellie",
+			"anchor": "phosphorum",
+			"text": "$(thing)Phosphorum$() jellies spawn on Earth in cold forests, with $(l:the_world/climate#temperature)temperature$() between -10-0°C and $(l:the_world/climate#rainfall)rainfall$() of at least 150mm. They produce $(thing)Phosphorum Slime Balls$() and additionally eat $(thing)rotten flesh$()."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "jellies:rock",
+			"scale": 0.6,
+			"name": "Rock Jellie",
+			"anchor": "rock",
+			"text": "$(thing)Rock$() jellies rarely spawn on Earth in caves of mountainous biomes. Currently, they do nothing."
+		},
+		{
+			"type": "patchouli:relations",
+			"title": "Further Reading",
+			"anchor": "relations",
+			"entries": [
+				"tfg:beneath/beneath_fauna",
+				"tfg:the_moon/moon_fauna",
+				"tfg:mars/mars_fauna"
+			]
+		},
+		{
+			"type": "patchouli:image",
+			"images": [
+				"tfg:textures/gui/field_guide/jellies_secret.png"
+			],
+			"anchor": "spoiler",
+			"text": "$(#B0B0B0)$(o)The following pages are too faded to be read...$()",
+			"border": false
+		}
+	],
+	"read_by_default": true,
+	"sortnum": 7
+}

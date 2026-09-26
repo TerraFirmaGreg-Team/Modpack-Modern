@@ -1,0 +1,591 @@
+{
+    "name": "金床",
+    "category": "tfg:craftsmanship",
+    "icon": "tfc:metal/anvil/bronze",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "anchor": "index",
+            "text": "$(li)$(bold)$(l:craftsmanship/anvils#stone_anvil)Stone Anvils$()$(li2)$(l:craftsmanship/anvils#raw_rock)Obtaining Raw Rock$()$(li)$(bold)$(l:craftsmanship/anvils#welding)Welding$()$(li)$(bold)$(l:craftsmanship/anvils#metal_anvil)Metal Anvils$()$(li2)$(l:craftsmanship/anvils#tiers)Tiers$()$(li)$(bold)$(l:craftsmanship/anvils#working)Working Metal$()$(li2)$(l:craftsmanship/anvils#forging_bonus)Forging Bonuses$()$(li)$(bold)$(l:craftsmanship/anvils#helve_hammer)Helve Hammer$()$(li)$(bold)$(l:craftsmanship/anvils#anvil_helper)Anvil Helper Guide$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "intro",
+            "title": "はじめに",
+            "text": "An alternative to casting tools directly (and a requirement for higher tier metals) is to use an $(thing)Anvil$(). An anvil is a block which can be used for two different processes: $(l:craftsmanship/anvils#working)Working$() and $(l:craftsmanship/anvils#welding)Welding$(). An anvil can weld double ingots of the metal type needed to create the next tier anvil above it, which will be necessary to work other items from that metal."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "stone_anvil",
+            "title": "Stone Anvil",
+            "text": "First, you need to acquire a block of $(thing)raw igneous rock$(), that is $(l:the_world/geology#igneous_extrusive)igneous extrusive$() (Rhyolite, Basalt, Andesite, or Dacite) or $(l:the_world/geology#igneous_intrusive)igneous intrusive$() (Granite, Diorite, Gabbro, Pyroxenite, or Keratophyre). You could find and use an exposed block in the world, or you could $(l:craftsmanship/anvils#raw_rock)extract one$() from the surrounding rock."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "You will also need any kind of $(thing)hammer$(). In order to make the anvil, simply $(item)$(k:key.use)$() the exposed $(thing)top$() face of a raw rock block with your $(thing)hammer$(), and voilà! An anvil will be formed.$(br2)Anvils have $(l:craftsmanship/anvils#tiers)tiers$() and the rock anvil is tier 0 - the lowest tier. It is only able to $(l:craftsmanship/anvils#welding)Weld$() tier I ingots."
+        },
+        {
+            "type": "tfg:multimultiblock",
+            "text": "中央の石を金床に加工します。",
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            " 0 "
+                        ],
+                        [
+                            "RRR"
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "AIR",
+                        "R": "tfc:rock/raw/gabbro"
+                    }
+                },
+                "tfc:rock_anvil"
+            ]
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "raw_rock",
+            "text": "In order to obtain a raw rock block without breaking it into smaller rocks, it needs to be $(thing)extracted$(). You must mine the blocks on all six sides of a raw rock block. Once it is surrounded by air on all sides it will pop off as an item which can be picked up.",
+            "title": "石の回収"
+        },
+        {
+            "type": "tfg:multimultiblock",
+            "text": "石の周囲6面を全て採掘しましょう。完了すると中央の石ブロックがアイテムとしてドロップします。",
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "   ",
+                            " R ",
+                            "   "
+                        ],
+                        [
+                            " R ",
+                            "RRR",
+                            " R "
+                        ],
+                        [
+                            "   ",
+                            " 0 ",
+                            "   "
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "tfc:rock/raw/gabbro",
+                        "R": "tfc:rock/raw/gabbro"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ],
+                        [
+                            " R ",
+                            "RRR",
+                            " R "
+                        ],
+                        [
+                            "   ",
+                            " 0 ",
+                            "   "
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "tfc:rock/raw/gabbro",
+                        "R": "tfc:rock/raw/gabbro"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ],
+                        [
+                            "   ",
+                            "RRR",
+                            " R "
+                        ],
+                        [
+                            "   ",
+                            " 0 ",
+                            "   "
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "tfc:rock/raw/gabbro",
+                        "R": "tfc:rock/raw/gabbro"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ],
+                        [
+                            "   ",
+                            " RR",
+                            " R "
+                        ],
+                        [
+                            "   ",
+                            " 0 ",
+                            "   "
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "tfc:rock/raw/gabbro",
+                        "R": "tfc:rock/raw/gabbro"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ],
+                        [
+                            "   ",
+                            " RR",
+                            "   "
+                        ],
+                        [
+                            "   ",
+                            " 0 ",
+                            "   "
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "tfc:rock/raw/gabbro",
+                        "R": "tfc:rock/raw/gabbro"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ],
+                        [
+                            "   ",
+                            " R ",
+                            "   "
+                        ],
+                        [
+                            "   ",
+                            " 0 ",
+                            "   "
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "tfc:rock/raw/gabbro",
+                        "R": "tfc:rock/raw/gabbro"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ],
+                        [
+                            "   ",
+                            " R ",
+                            "   "
+                        ],
+                        [
+                            "   ",
+                            " 0 ",
+                            "   "
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "AIR",
+                        "R": "tfc:rock/raw/gabbro"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "welding",
+            "text": "Welding is a process through which two items are fused together to create a new item. Welding works the same whether on a $(l:craftsmanship/anvils#stone_anvil)Stone Anvil$() or a $(l:craftsmanship/anvils#metal_anvil)Metal Anvil$().$(br2)First, you must place the two items you want to weld on the anvil by opening the anvil interface and inserting them in the two leftmost slots.",
+            "title": "溶接"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "You also need to have at least one $(item)Flux$() in the anvil to aid the welding process. Then, while both items are $(l:game_mechanics/heating)hot enough$() to weld (the tooltip will say \"Can Weld\") you must use any $(thing)hammer$() on the anvil or press the weld button on the anvil interface. You will hear a hammering sound and the items will be welded together."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tag:tfc:anvils",
+            "anchor": "metal_anvil",
+            "title": "Metal Anvils",
+            "text": "Metal anvils are an important tool required for metalworking, as they allow you to work and weld metal ingots into various different forms.$(br2)$(l:craftsmanship/anvils#working)Working$() is done to form one piece of metal into another, and $(l:craftsmanship/anvils#welding)welding$(), is used to fuse two metal items into one solid piece."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "ABC",
+                        "D0F",
+                        "GHI"
+                    ]
+                ],
+                "mapping": {
+                    "A": "tfc:metal/anvil/copper",
+                    "B": "tfc:metal/anvil/bronze",
+                    "C": "tfc:metal/anvil/black_bronze",
+                    "D": "tfc:metal/anvil/bismuth_bronze",
+                    "0": "tfc:metal/anvil/wrought_iron",
+                    "F": "tfc:metal/anvil/steel",
+                    "G": "tfc:metal/anvil/black_steel",
+                    "H": "tfc:metal/anvil/red_steel",
+                    "I": "tfc:metal/anvil/blue_steel"
+                }
+            },
+            "name": "",
+            "text": "全種類の金床",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "tfc:crafting/metal/anvil/copper",
+            "text": "Anvils can be crafted with $(thing)Double Ingots$() of their respective metal. For your first anvil, you must first $(l:craftsmanship/anvils#welding)Weld$() double ingots on a $(l:craftsmanship/anvils#stone_anvil)Stone Anvil$(). Anvils are very heavy, you can only carry one at a time."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "tiers",
+            "text": "金床にはそれぞれ$(thing)等級$()があり、その金床で扱える金属の種類は金床の等級によって決まります。金床は同じ等級の金属を鍛造することができ、1段階上の等級の金属を溶接することができます。$(br)$(li)$(bold)等級０$(): 石の金床$(li)$(bold)等級１$(): 銅$(li)$(bold)等級２$(): 蒼鉛青銅・黒青銅・青銅$(li)$(bold)等級３$(): 錬鉄$(li)$(bold)等級４$(): 鋼鉄$(li)$(bold)等級５$(): 黒鋼$(li)$(bold)等級６$(): 赤鋼・青鋼"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "working",
+            "text": "In order to work an item on the anvil, you will need to $(item)$(k:key.use)$() the anvil, to open up the anvil interface, seen on the next image. On the left, there are two input slots for items - for working, the target item must be in the right-hand slot. You will also need a hammer while working, either in the hammer slot on the right of the anvil $(bold)or$() in your main hand. The hammer will gradually take damage as you work the item.",
+            "title": "鍛造"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/gui/anvil_empty.png"
+            ],
+            "text": "金床GUI",
+            "border": false
+        },
+        {
+            "type": "patchouli:text",
+            "text": "You will then need to select the $(thing)plan$(), which chooses which item you want to create. $(item)$(k:key.attack)$() on the scroll button, and then pick one of the items to create. The anvil interface will return, but now you will have selected a plan. The scroll will show the item you are working to create, and the $(thing)rules$() and $(thing)target$() will now be populated."
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/gui/anvil_in_use.png"
+            ],
+            "text": "ピッケルの作成を選択した画面。",
+            "border": false
+        },
+        {
+            "type": "patchouli:text",
+            "text": "金床GUIの下部中央には、2色のインジケーターが付いたメーターがあります。$(2)緑$()矢印は現在の作業の進行状況で、$(4)赤$()矢印がターゲットを示しています。この2つをぴったり重ねるのが目標です。$(br2)そのために、$(2)緑$()と$(4)赤$()のアクションボタンを使って進行状況を調整します。選んだアクションによって、進行度が決まった量だけ動きます。",
+            "title": "ターゲット"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(2)Green$() actions will always move your target $(bold)right$(), and $(4)Red$() actions will always move your progress $(bold)left$(). Note that if you move your target off of the progress bar, you will have overworked your item and will lose the ingot. However, while working, you must also match the $(thing)rules$()..."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(thing)ルール$()とは、金床画面の上部に表示される2～3個のアイコンです。これは、鍛造を成功させアイテムの作成を完了させるための条件を示しています。つまり、鍛造を完了するためには上に指定された順番でアクションを行うことにより緑と赤の矢印を一致させる必要があるということです。例えばルールで「$(2)曲げる：最後から2番目に$()」と指定されていた場合は、最後から2番目のアクションは「$(2)曲げる$()」でなければならないという意味です。",
+            "title": "鍛造におけるルール"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Your last three actions are shown right underneath the rules. When a rule is satisfied, its outline will change to green. Success occurs when all rules are satisfied.$(br2)Finally, you have to be mindful of your item's $(l:game_mechanics/heating)temperature$(). Metals can only be worked when they are above a certain temperature where the tooltip shows \"Can Work\". You may take an item out and re-heat it during the working process."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Confused? That's ok, it's a lot to take in, but it's actually just a simple bit of addition and subtraction. Check our $(l:craftsmanship/anvils#anvil_helper)step-by-step guide$() on how to use the \"anvil helper\" resource pack, which makes smithing easy!"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Working can be tedious, and take many steps to get correct. However, there is a reward for being efficient. Some items―such as tool heads―when they are worked in a low or minimal amount of steps, receive a $(thing)Forging Bonus$() based on how efficiently they were forged. This bonus will then apply to tools that the item is used in, for example, a pickaxe head used to make a pickaxe.$(br)We also have $(l:craftsmanship/anvils#how_to_perfectly_forge)a step-by-step guide$() on how to perfectly forge anything!",
+            "title": "鍛造ボーナス",
+            "anchor": "forging_bonus"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "gtceu:wrought_iron_pickaxe{\"tfc:forging_bonus\":4}",
+            "title": "完璧な鍛造",
+            "link_recipes": false,
+            "text": "There are four tiers of forging bonus:$(li)Modestly Forged$(li)Well Forged$(li)Expertly Forged$(li)Perfectly Forged$(br2)These bonuses increase the power of your tool - making it $(t:Like the Unbreaking enchant)$(6)break less often$(), $(t:Like the Efficiency enchant)$(6)mine faster$(), and/or $(t:Like the Sharpness enchant)$(6)do more damage in combat$(), depending on the tool."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "helve_hammer",
+            "title": "動力鍛造ハンマー",
+            "item": "vintageimprovements:helve_hammer",
+            "text": "The $(item)Helve Hammer$() is a device that can automate many anvil functions using $(thing)mechanical energy$().$(br)To function, a helve hammer needs an anvil below its striking face. The $(l:craftsmanship/anvils#tiers)Tier$() of the anvil will dictate how many blows is needed. To add items to a helve hammer simply $(bold)throw$() them on top of the anvil with $(item)$(k:key.drop)$(). Items may be extracted automatically by adding funnels to the hammer head block."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "text": "Helve hammer with anvil.",
+            "enable_visualize": true,
+            "multiblock": {
+                "pattern": [
+                    [
+                        "H0B"
+                    ],
+                    [
+                        "A  "
+                    ]
+                ],
+                "mapping": {
+                    "0": "vintageimprovements:helve_structure[facing=north]",
+                    "B": "vintageimprovements:helve_kinetic[facing=north]",
+                    "H": "vintageimprovements:helve_hammer[facing=north]",
+                    "A": "tfc:metal/anvil/black_bronze[facing=west]"
+                }
+            }
+        },
+        {
+            "type": "patchouli:multiblock",
+            "text": "It is recommened to make two helve hammers and chain them together to automatically process $(l:craftsmanship/bloomery)Blooms$() and $(l:craftsmanship/blast_furnace)Steel$().",
+            "enable_visualize": true,
+            "multiblock": {
+                "pattern": [
+                    [
+                        "C  ",
+                        "F  ",
+                        "   ",
+                        "   "
+                    ],
+                    [
+                        "   ",
+                        "HSB",
+                        "F  ",
+                        "   "
+                    ],
+                    [
+                        "   ",
+                        "A  ",
+                        "H0B",
+                        "F  "
+                    ],
+                    [
+                        "   ",
+                        "R  ",
+                        "A  ",
+                        "XC "
+                    ]
+                ],
+                "mapping": {
+                    "0": "vintageimprovements:helve_structure[facing=north]",
+                    "S": "vintageimprovements:helve_structure[facing=north]",
+                    "B": "vintageimprovements:helve_kinetic[facing=north]",
+                    "H": "vintageimprovements:helve_hammer[facing=north]",
+                    "A": "tfc:metal/anvil/bismuth_bronze[facing=west]",
+                    "F": "create:andesite_funnel[facing=east,extracting=true]",
+                    "X": "minecraft:hopper[facing=south]",
+                    "C": "#forge:chests[facing=north]",
+                    "R": "#minecraft:planks"
+                }
+            }
+        },
+        {
+            "type": "patchouli:empty",
+            "draw_filler": false
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "anvil_helper",
+            "title": "Anvil Helper Guide",
+            "text": "$(l:craftsmanship/anvils#working)Working$() in $(l:craftsmanship/anvils#metal_anvil)Anvils$() is a key process inside $(tfg), as most of your work towards the $(thing)Steam and Mechanical ages$() will require the usage of an Anvil.$(br)This guide is broken down into two parts, $(l:craftsmanship/anvils#ui_explained)Understanding the UI$() and $(l:craftsmanship/anvils#how_to_perfectly_forge)How to Perfectly Forge$().$(br2)The Modpack has a custom $(thing)Resource Pack$() called $(l:https://www.curseforge.com/minecraft/texture-packs/tfc-anvil-helper-patched)TFC Anvil Helper$() that you need to enable for this guide to make sense.$()"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfg:textures/gui/field_guide/anvil_working_guide/anvil_ui.png"
+            ],
+            "border": false,
+            "text": "TFC Anvil Helperを有効化した状態での金床UI"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfg:textures/gui/field_guide/anvil_working_guide/anvil_ui_marked.png"
+            ],
+            "border": false,
+            "anchor": "ui_explained",
+            "title": "UIとあなた",
+            "text": "各表示の詳細"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(#ff0000)1.$() 金床で作成対象として選択しているアイテムです。各アイテムには、それぞれ固有の$(#be00ff)工程$()と$(#ff6b00)作業量$()が設定されています。$(br)$(#ff00c6)2.$() 現在加工中の素材です。$(br)$(#be00ff)3.$() アイテムを完成させるための、決められた工程です。工程実行順番は全部で4種類あります（次のページを参照してください）。"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfg:textures/gui/field_guide/anvil_working_guide/anvil_ui_marked.png"
+            ],
+            "border": false
+        },
+        {
+            "type": "patchouli:text",
+            "text": "（注：X は任意の工程を表します）$(br)$(li)X_いつでも：その工程は直近3回の行動のどこに入っていても構いません。$()$(li)X_最後に：その工程を最後に実行しなければなりません。$()$(li)X_最後以外に：その工程を最後に実行してはいけません。$()$(li)X_最後から2番目に：その工程を最後から2番目に実行しなければなりません。$()$(li)X_最後から3番目に：その工程を最後から3番目に実行しなければなりません。$()"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfg:textures/gui/field_guide/anvil_working_guide/anvil_ui_marked.png"
+            ],
+            "border": false
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(#2e00ff)4.$() 工程の種類です。各工程は現在の進行度を減算または加算します。左から右、上から下の順に次の通りです。$(li)軽く打つ：-3$()$(li)普通に打つ：-6$()$(li)穴をあける：+2$()$(li)曲げる：+7$()$(li)強く打つ：-9$()$(li)引き延ばす：-15$()$(li)短くする：+13$()$(li)縮める：+16$()"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfg:textures/gui/field_guide/anvil_working_guide/anvil_ui_marked.png"
+            ],
+            "border": false
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(#00a7ff)5.$() The Slots where your Hammer goes, and Flux if you're Welding.$(br)$(#00ff26)6. $()The current Work amount the item has, Doing different Steps either Increases or Decreases the amount of Work the item has.$(br)$(#fff400)7. $()The Target Work value, the $(#00ff26)Work$() value must be aligned EXACTLY with the Target Work, AND the $(#ff00c6)Required Steps$() must be fulfilled for the Item to be considered complete.$(br)$(#ff6b00)8. $()The Work Bar, used for Aligning the Work value with the Target Work value."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "how_to_perfectly_forge",
+            "title": "完璧な鍛造への道",
+            "text": "$(thing)Perfectly Forging$() an Item which can break, such as $(thing)Tool Heads$(), $(thing)Weapons$(), and $(thing)Armor$() causes the Item to gain bonuses to its durability and general efficiency with the less total steps you take to forge the Item. Completing the Work on an Item with very few steps causes it to be Perfectly Forged, not only giving your finished item bonuses, but also reducing the overall wear and tear to the Hammer."
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfg:textures/gui/field_guide/anvil_working_guide/perfectly_forged_item.png"
+            ],
+            "border": false,
+            "text": "完璧な鍛造の錬鉄のツルハシの頭"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "鍛造ガイド",
+            "item": "gtceu:wrought_iron_pickaxe_head",
+            "text": "This part of the guide will cover how to Perfectly Forge anything, starting with a Wrought Iron Pickaxe Head."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(bold)$(italic)DISCLAIMER:$()$(br)While the Required Steps and Orders for an Item are universal within all worlds in $(tfg_short), the Target Work value differs because it's derived from your world's Seed, as such, this Guide ASSUMES the Target Work value for the Wrought Iron Pickaxe Head is $(bold)83$()."
+        },
+        {
+            "type": "patchouli:text",
+            "title": "ステップ 1",
+            "text": "The first Step in your Forging Journey is to get the Value taken by Adding all the Required Step's values together. For a Pickaxe Head, you need the following Steps:$(li)$(bold)Punch$() Last$()$(li)$(bold)Bend$() Not Last$()$(li)$(bold)Draw$() Not Last$().$(br)By adding the Values on the Bottom of each Step, We get the Value we're looking for. Let's call this value \"requiredWork\".$(br)$(bold)2 + 7 + (-15) = -6$()"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfg:textures/gui/field_guide/anvil_working_guide/steps.png"
+            ],
+            "text": "この工程はツルハシの頭のものです"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "ステップ２",
+            "text": "While our main goal for the Work Amount is to align it with the Target Work, we need to make sure both that requirement AND the Steps requirements are fulfilled, as such, directly aligning the Work Amount with the Target Work will not yield desirable results. Instead, we can calculate the value derived from Target Work and \"requiredWork\""
+        },
+        {
+            "type": "patchouli:text",
+            "text": "この値は、「必要工程値」が正か負かによって求め方が変わります。$(li)「必要工程値」が正の場合$()$(li2)「必要工程値」の絶対値を「目標進行度」から引きます。$()$(li3)83 - 6 = $(bold)77$()$()$(li)「必要工程値」が負の場合$()$(li2)「必要工程値」の絶対値を「目標進行度」に足します。$()$(li3)83 + 6 = $(bold)89$()$()"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "今回のアイテムの「必要工程値」は -6 なので、求めるべき値は$(bold)89$()です。$(br)「目標進行度の正確な数値はどうやって確認するのか？」と思われるかもしれません。目標進行度は金床の進行度バーから読み取れます。進行度バーには20刻みの数値しか表示されませんが、色分けされた目盛りを利用することで、その間の数値も簡単に読み取れます。$(li)薄い灰色：5の倍数を表します。$()$(li)灰色：奇数を表します。$()$(li)濃い灰色：偶数を表します。$()"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfg:textures/gui/field_guide/anvil_working_guide/work_bar_numbers.png",
+                "tfg:textures/gui/field_guide/anvil_working_guide/target_work_for_wrought_iron_pickaxe_head.png"
+            ]
+        },
+        {
+            "type": "patchouli:text",
+            "title": "ステップ 3",
+            "text": "「目標進行度」と「必要工程値」から求めた値が分かったら、次は実際にその進行度へ到達する必要があります。これを行う方法は、各工程に対応する数値を自分で計算しながら進める方法と、進行度バーの下のチートシートを利用する方法の2つがあります。各色は工程の種類に対応しています。$(br)例えば、赤色は「縮める(+16)」を表します。"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfg:textures/gui/field_guide/anvil_working_guide/work_bar_cheat_sheet.png"
+            ],
+            "text": "16 + 16 + 16 + 16 + 16 + 7 + 2 = 89"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "ステップ４",
+            "text": "Now that we know the required steps, it's time to reach the Value derived from \"Target Work\" and \"requiredWork\". For a pickaxe head where it's TotalWork value is 83, we need to reach 89. As such, we do: (Shrink x 5) → Bend → Punch.$(br2)Once our Work value is at our desired value, just follow the Required Steps, which for a pickaxe head its: Draw → Bend → Punch. And Voilà! We've obtained a Perfectly Forged Item!"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfg:textures/gui/field_guide/anvil_working_guide/wrought_iron_pickaxe_head_no_work.png",
+                "tfg:textures/gui/field_guide/anvil_working_guide/wrought_iron_pickaxe_head_some_work.png",
+                "tfg:textures/gui/field_guide/anvil_working_guide/wrought_iron_pickaxe_head_complete.png"
+            ],
+            "text": "An Ingot with No Work → Desired Work Value Reached → Doing the Required Steps for our Item."
+        },
+        {
+            "type": "patchouli:text",
+            "title": "その他の例",
+            "text": "Lets see this process with other items, such as a Plate, or a Rod. Again, the Target Work differs by the world seed, so their values will be different on your world.$(br)Plate Target Value: $(bold)111$()$(br)Required Steps: Hit x 3, Any Order.$(br)\"requiredWork\": -3 x 3 = -9$(br)Derived Value: 111 + 9 = 120.$(br)Reaching the Value: (Shrink x 5) → (Upset x 2) → (Punch x 2)$(br)Getting the Item: 120 - (Light Hit x 3) == $(bold)111$(). Both requirements met."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Rod Target Value: $(bold)78$()$(br)Required Steps: Draw → Draw → Bend$(br)\"requiredWork\": (-15 x 2) + 7 = -23$(br)Derived Value: 78 + 23 = 101.$(br)Reaching the Value: (Shrink x 5) → (Bend x 3)$(br)Getting the Item: 101 - 15 - 15 + 7 = 78."
+        },
+        {
+            "type": "patchouli:text",
+            "title": "補足",
+            "text": "必要工程の中に空欄がある場合、その枠はなんでもありです。どの工程であっても条件を満たせます。$(br2)もし計算を間違えてしまっても心配はいりません。アイテムを溶かして再びインゴットとして鋳造すれば、「鍛造途中」状態がリセットされます。これにより、完璧な鍛造に再挑戦できます。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Congratulations on reaching the end! If you want to follow along in a creative world, the seed used during its writing is $(bold)-7291708953208913102$()."
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "さらに読む",
+            "anchor": "relations",
+            "entries": [
+                "tfg:craftsmanship/pottery",
+                "tfg:craftsmanship/blast_furnace",
+                "tfg:craftsmanship/metallurgy",
+                "tfg:craftsmanship/charcoal_forge",
+                "tfg:craftsmanship/crucible",
+                "tfg:craftsmanship/charcoal_pit",
+                "tfg:craftsmanship/bloomery",
+                "tfg:craftsmanship/glassworking"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 8,
+    "extra_recipe_mappings": {}
+}

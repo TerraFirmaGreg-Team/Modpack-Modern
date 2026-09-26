@@ -1,0 +1,96 @@
+{
+	"name": "Moon Fauna",
+	"category": "tfg:the_moon",
+	"icon": "species:textures/item/birt_egg.png",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"title": "Extraterrestrial Fauna",
+			"text": "Space is home to many other kinds of animals than those you'd find on Earth. A few animals are hostile and will attack the player, but most are passive. Only a few of them are $(l:agriculture/animal_husbandry)domesticatable$().$(br)Animals you find on other worlds can be divided into two categories: $(item)hot$() and $(item)cold$(). Animals can only survive on planets that either have a similar climate to where they came from, or on $(thing)temperate$() planets like Earth."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Space animals do not require an oxygenated environment, but it will make the area count as \"temperate\" for their survival. For example, if you bring a cold-dwelling animal (like a Moon Rabbit) to a hot planet (like Venus), it will catch on fire, unless it's inside an oxygenated environment.$(br)This makes Earth the ideal place to build a zoo, if you'd like.$(br)You can transport animals between planets using AE2's Spatial Storage system."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(li)$(bold)Domesticatable$()$(li2)$(l:the_moon/moon_fauna#moon_rabbit)Moon Rabbit$()$(li2)$(l:the_moon/moon_fauna#birt)Birt$()$(li2)$(l:the_moon/moon_fauna#certus_jellie)Certus Jellie$()$(li)$(bold)Wild$()$(li2)$(l:the_moon/moon_fauna#limpet)Limpet$()$(li2)$(l:the_moon/moon_fauna#star_crawler)Star Crawler$()$(li2)$(l:the_moon/moon_fauna#endermen)Endermen$()$(li2)$(l:the_moon/moon_fauna#shulker)Shulker$()"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfg:moon_rabbit{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16,MoonRabbitType:5}",
+			"scale": 1.3,
+			"offset": -0.3,
+			"name": "Moon Rabbit",
+			"anchor": "moon_rabbit",
+			"text": "Besides their coloring, $(thing)Moon Rabbits$() have identical stats to Earth rabbits. They also eat Chorus Fruit."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "species:birt",
+			"anchor": "birt",
+			"scale": 0.9,
+			"name": "Birt",
+			"text": "$(thing)Birts$() are a type of bird? They lay eggs in their nests, are passive unless attacked, and can be eaten. Their eggs can be thrown to stun targets."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "jellies:certus",
+			"scale": 0.6,
+			"name": "Certus Jellie",
+			"anchor": "certus_jellie",
+			"text": "$(thing)Certus$() $(l:agriculture/jellies)Jellies$() spawn in Moon's $(item)Asurine$() biomes. They produce $(thing)Large Certus Quartz Buds$()."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "species:limpet",
+			"scale": 0.8,
+			"name": "Limpet",
+			"anchor": "limpet",
+			"text": "$(thing)Limpets$() are a type of snail with ore on their shell. You can obtain the ore with any mining tool. They are passive and can be eaten."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "ad_astra:star_crawler",
+			"scale": 0.4,
+			"name": "Star Crawler",
+			"anchor": "star_crawler",
+			"text": "$(thing)Star Crawlers$() are a type of starfish. They are hostile and can be eaten."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "endermanoverhaul:windswept_hills_enderman",
+			"scale": 1,
+			"name": "Endermen",
+			"anchor": "endermen",
+			"text": "The Moon is home to more species of $(thing)Endermen$(). Some are neutral, but a few are hostile, so watch out!"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "endermanoverhaul:end_islands_enderman",
+			"scale": 1,
+			"text": "The most dangerous $(thing)Endermen$() are found in the $(item)Chorus$() biomes."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "minecraft:shulker{Color:7}",
+			"anchor": "shulker",
+			"title": "Shulker",
+			"scale": 0.7,
+			"text": "$(thing)Shulkers$() can be found around large meteorites and abandoned moon bases. Maybe they are guarding something...?"
+		},
+		{
+			"type": "patchouli:relations",
+			"title": "Further Reading",
+			"anchor": "relations",
+			"entries": [
+				"tfg:the_world/wild_animals",
+				"tfg:agriculture/animal_husbandry",
+				"tfg:agriculture/jellies",
+				"tfg:beneath/beneath_fauna",
+				"tfg:mars/mars_fauna"
+			]
+		}
+	],
+	"read_by_default": true
+}

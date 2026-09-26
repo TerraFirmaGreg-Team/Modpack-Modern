@@ -1,0 +1,74 @@
+{
+  "name": "Chocolate Confections",
+  "category": "tfg:cooking",
+  "icon": "firmalife:textures/item/food/dark_chocolate.png",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)Chocolate-making$() takes a few processing steps, and is intended to be an immersive way to experience cooking.$(br)Chocolate items contain $(l:cooking/food_and_water#grain)Grain$() and $(l:cooking/food_and_water#dairy)Dairy$() nutrients while also providing the $(l:cooking/food_and_water#sugary_transient_effect)Sugary$() effect when eaten, making them a strong choice for meal ingredients."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "To start chocolate processing, cocoa beans must first be $(thing)roasted$() in an $(l:cooking/cooking_methods#oven)Oven$() to make $(thing)Roasted Cocoa Beans$(). Then, craft the roasted beans with a $(thing)Knife$() to split the beans into $(thing)Cocoa Powder$() and $(thing)Cocoa Butter$()."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "The $(l:cooking/mixing_bowl)Mixing Bowl$() is used to mix cocoa powder, butter, and sweetener (sugar or honey) to make $(thing)Chocolate Blends$(). The ratio of cocoa butter to powder determines what comes out:$(br)$(li)1 Powder, 1 Butter, 1 Sweetener: Milk Chocolate$()$(li)2 Powder, 1 Sweetener: Dark Chocolate$()$(li)2 Butter, 1 Sweetener: White Chocolate$()"
+    },
+    {
+      "type": "tfg:drying_recipe",
+      "recipe": "firmalife:drying/dark_chocolate",
+      "text": "Finally, chocolate is dried on a $(l:cooking/decay#drying)Drying Mat$() to make $(thing)Chocolate$()."
+    },
+    {
+      "title": "Литьё Шоколада",
+      "type": "patchouli:text",
+      "text": "$(thing)Chocolate$() does not need to come only in boring bars! Melt down $(thing)White$(), $(thing)Milk$(), or $(thing)Dark$() chocolate in a $(thing)Vessel$() or $(thing)Crucible$() and then cast it into a mold to obtain chocolate confections. There are three types of chocolate confections: $(thing)Hearts$(), $(thing)Bells$(), and $(thing)Knives$(). Each is obtained by casting chocolate into a different mold."
+    },
+    {
+      "type": "tfg:knapping_recipe",
+      "recipe": "tfcchannelcasting:clay_knapping/unfired_heart_mold",
+      "text": "Лепка $(thing)формы «Сердце»$(), используемой для создания шоколадных $(thing)сердец$()."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Шоколадные сладости дают ту же питательную ценность, что и шоколадные плитки, но съедаются быстрее. Однако, если эти сладости приготовлены в определённое время года, они получают особое свойство, удваивающее их питательность. $(thing)Шоколадные сердца$() получают свойство $(thing)«Романтичное»$() в феврале, $(thing)шоколадные колокольчики$() — свойство $(thing)«Праздничное»$() в декабре, а $(thing)шоколадные ножики$() — свойство $(thing)«Жуткое»$() в октябре."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Кроме того, сладости можно $(thing)начинять$(), получая дополнительные бонусы. Сладости с начинкой из $(thing)джема$() дают дополнительное питание категории $(thing)Фрукты$(). Сладости с начинкой из $(thing)алкоголя$() дают положительные эффекты зелий."
+    },
+    {
+      "type": "tfg:sealed_barrel_recipe",
+      "recipe": "tfcchannelcasting:barrel/fill_with_sweet_liquor",
+      "text": "Поедание шоколада с начинкой из $(thing)сладкого ликёра$() даёт эффект скорости."
+    },
+    {
+      "type": "tfg:sealed_barrel_recipe",
+      "recipe": "tfcchannelcasting:barrel/fill_with_strong_liquor",
+      "text": "Поедание шоколада с начинкой из $(thing)крепкого ликёра$() даёт сопротивление урону."
+    },
+    {
+      "type": "tfg:sealed_barrel_recipe",
+      "recipe": "tfcchannelcasting:barrel/fill_with_whiskey",
+      "text": "Поедание шоколада с начинкой из $(thing)виски$() даёт спешку."
+    },
+    {
+      "type": "patchouli:relations",
+      "title": "Читать дальше",
+      "anchor": "relations",
+      "entries": [
+            "tfg:cooking/alcohol",
+            "tfg:cooking/jam",
+            "tfg:the_world/wild_fruits"
+      ]
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 11,
+  "extra_recipe_mappings": {
+    "tag:firmalife:foods/chocolate": 0,
+    "tag:firmalife:chocolate_blends": 2,
+    "tag:tfcchannelcasting:foods/chocolate_sweet": 6
+  }
+}

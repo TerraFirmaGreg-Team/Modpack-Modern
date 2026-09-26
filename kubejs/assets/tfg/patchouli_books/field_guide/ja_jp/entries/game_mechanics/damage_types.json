@@ -1,0 +1,53 @@
+{
+    "name": "ダメージタイプ",
+    "category": "tfg:game_mechanics",
+    "icon": "tfc:metal/mace/blue_steel",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "anchor": "intro",
+            "text": "$(thing)Physical Damage Types$() describe the nature of the damage that can be dealt by players and mobs. There are three types: $(bold)Piercing$(), $(bold)Slashing$(), and $(bold)Crushing$(). Some entities are able to resist certain damage types, making it difficult or impossible to kill them with certain methods."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "piercing",
+            "text": "$(thing)Piercing$() damage is dealt by pointy weapons such as $(thing)Knives$(), projectiles like $(thing)Arrows$() and $(thing)Javelins$(), fanged monsters like $(thing)Spiders$(), and $(thing)Cacti$(). $(thing)Skeletons$() are invulnerable to piercing damage, and $(thing)Zombies$() are slightly vulnerable to it.",
+            "title": "刺突"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "slashing",
+            "text": "$(thing)斬撃$()ダメージは、$(thing)斧$()や$(thing)剣$()などの長く鋭い刃を持つ武器や、大きな$(l:the_world/wild_animals#predators)クマやピューマのような捕食者$()によって与えられます。$(thing)クリーパー$()には斬撃ダメージが有効です。",
+            "title": "斬撃"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "crushing",
+            "text": "$(thing)打撃$()ダメージは、$(thing)ハンマー$()や$(thing)メイス$()などの鈍器によって与えられます。基本的な$(thing)ゾンビ$()からの攻撃も打撃ダメージに分類されます。そして、$(thing)ゾンビ$()と$(thing)クリーパー$()は打撃ダメージに対してある程度の耐性を持っています。$(thing)スケルトン$()は打撃ダメージが有効です。",
+            "title": "粉砕"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "armor",
+            "title": "防具",
+            "text": "$(thing)Armor$() has its own set of damage resistances. These resistances scale with the quality of armor, but may differ among armors of the same tier. Among bronzes, $(thing)Bismuth Bronze$() armor is best at resisting $(thing)Crushing$(), $(thing)Black Bronze$() is best at resisting $(thing)Piercing$() and regular $(thing)Bronze$() does moderately well with any damage."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(thing)色付きの鋼$()装備の場合、$(thing)青鋼$()装備は$(thing)打撃$()ダメージに耐えるのが優れていて、$(thing)赤鋼$()装備は$(thing)刺突$()ダメージに耐えるのに優れています。"
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "さらに読む",
+            "anchor": "relations",
+            "entries": [
+                "tfg:craftsmanship/metallurgy",
+                "tfg:the_world/wild_animals",
+                "tfg:logistics/exploration_gear"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "priority": "true",
+    "sortnum": 1
+}

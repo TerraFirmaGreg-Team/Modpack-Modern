@@ -1,0 +1,88 @@
+{
+  "name": "Alcohol Production",
+  "category": "tfg:cooking",
+  "icon": "firmalife:textures/item/hematitic_wine_bottle.png",
+  "pages": [
+    {
+        "type": "patchouli:text",
+        "title": "目錄",
+        "anchor": "index",
+        "text": "$(li)$(bold)$(l:cooking/drinks#alcohol)Alcohol$()$(li)$(bold)$(l:cooking/drinks#aged_alcohol)Aged Alcohol$()$(li)$(bold)$(l:cooking/drinks#vintage_alcohol)Vintage Alcohol$()$(li)$(bold)$(l:cooking/alcohol#wine_making)Wine Making$()$(li2)$(l:cooking/alcohol#wine_properties)Wine Properties$()$(li)$(bold)$(l:cooking/alcohol#wine_shelf)Wine Shelf$()"
+    },
+    {
+        "type": "patchouli:text",
+        "title": "Wine Making",
+        "anchor": "wine_making",
+        "text": "$(thing)Wine-making$() is the science of turning $(thing)grapes$() into alcohol. You must first find $(l:the_world/wild_fruits#red_grapes)Red Grapes$() or $(l:the_world/wild_fruits#white_grapes)White Grapes$() in the wild and cultivate their seeds on $(thing)Trellises$() to obtain $(item)Grapes$(). Wine effects can be viewed $(l:cooking/drinks#wine)Here$()"
+    },
+    {
+        "type": "patchouli:spotlight",
+        "anchor": "grape_smashing",
+        "title": "Grape Smashing",
+        "item": {
+        "tag": "firmalife:stomping_barrels"
+        },
+        "text": "Grapes must then be smashed in a $(thing)Stomping Barrel$(), $(thing)Quern$(), or $(l:cooking/cooking_methods#food_processor)Food Processor$() to obtain smashed grapes. To use a stomping barrel, $(item)$(k:key.use)$() with fresh grapes. Then, jump up and down on the barrel 16 times. $(item)$(k:key.use)$() with an empty hand to retrieve the items.$(br2)Then, seal the smashed grapes in a barrel for 5 days to $(thing)ferment$() them."
+    },
+    {
+        "type": "patchouli:crafting",
+        "anchor": "barrel_press",
+        "title": "Barrel press",
+        "recipe": "firmalife:crafting/wood/acacia_barrel_press",
+        "text": "壓榨是葡萄加工的最後一步。"
+    },
+    {
+        "type": "patchouli:text",
+        "text": "最左側的槽最多可放入16個葡萄。釀造一瓶葡萄酒需要4個葡萄。中間的四個槽用於將葡萄與其他原料混合，但這是可選的。僅使用紅葡萄或白葡萄會產出紅葡萄酒或白葡萄酒。在白葡萄酒中加入至少一個紅葡萄會製成桃紅葡萄酒。在白葡萄酒中加入糖會製成甜酒。加入二次發酵混合劑（在桶中混合酵母和甜味劑）會製成起泡酒。"
+    },
+    {
+        "type": "tfg:glassworking_recipe",
+        "recipe": "firmalife:glassworking/olivine_wine_bottle",
+        "text": "葡萄酒必須裝入由非硅酸鹽玻璃製成的專用酒瓶中。"
+    },
+    {
+        "type": "patchouli:crafting",
+        "anchor": "bottle_label",
+        "title": "瓶子貼籤",
+        "recipe": "firmalife:crafting/bottle_label",
+        "text": "$(thing)瓶子標籤$()可在抄寫臺中重命名，其名稱將添加到葡萄酒的物品提示信息中。"
+    },
+    {
+        "type": "patchouli:text",
+        "text": "葡萄酒需配備一個$(thing)軟木塞$()，其製作方法是將$(thing)防腐木材$()在$(thing)石灰水$()中浸泡一天。一切就緒後，使用酒瓶槽位灌裝葡萄酒，或手持酒瓶$(item)$(k:key.use)$()進行灌裝。"
+    },
+    {
+        "type": "patchouli:text",
+        "anchor": "wine_properties",
+        "title": "Drinking Wine",
+        "text": "The discerning sommelier will be able to detect subtleties in the wine that is produced under different conditions. Indeed, this is possible in the world of $(tfg_short) as well. It starts in the fields in which those grapes were grown -- a row of grapes is deeply affected by the ambient environment and soil."
+    },
+    {
+        "type": "patchouli:text",
+        "text": "葡萄會孕育出三種與地形相關的特質：根據周邊環境不同，可能形成「礫石育成」、「坡地育成」或「泥土育成」。葡萄酒還會記錄裝瓶所在地的柯本氣候分類。若葡萄在蜜蜂附近生長，則會獲得「蜜蜂授粉」特質。"
+    },
+    {
+        "type": "patchouli:text",
+        "text": "葡萄酒自裝瓶起便開始陳釀，開啟瓶塞後陳釀過程即中止。手持小刀對酒瓶使用$(item)$(k:key.use)$()即可開啟瓶塞。酒瓶的運作方式類似木桶，可將其內容物傾入釀造桶或其他裝置中。"
+    },
+    {
+        "type": "patchouli:crafting",
+        "title": "Wine Shelf",
+        "anchor": "wine_shelf",
+        "recipe": "firmalife:crafting/wood/hickory_wine_shelf",
+        "text": "$(thing)酒架$()是酒窖的理想配套裝飾，讓你能以典雅方式陳列與儲存珍釀。"
+    },
+    {
+        "type": "patchouli:relations",
+        "title": "Further Reading",
+        "anchor": "relations",
+        "entries": [
+        "tfg:cooking/food_and_water",
+        "tfg:the_world/wild_crops",
+        "tfg:the_world/wild_fruits"
+        ]
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 6
+}

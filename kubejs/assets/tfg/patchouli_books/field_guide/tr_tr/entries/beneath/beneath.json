@@ -1,0 +1,205 @@
+{
+	"name": "What is the Beneath?",
+	"category": "tfg:beneath",
+	"icon": "minecraft:deepslate",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "intro",
+			"text": "The $(thing)Beneath$() is a network of very deep caves, directly below the Overworld.$(br)This dimension is balanced around mid to late $(thing)Metallurgy Age$().$(br2)It's more dangerous than the surface, so we recommend a metal shield and good nutrition as a minimum, but some armor, a water flask, cooling clothes, and a ranged weapon will help a lot."
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "differences",
+			"text": "It differs from the usual Nether experience in a few ways:$(li)You enter it $(l:beneath/beneath#entering)differently$()$(li)Water doesn't instantly evaporate$(li)A bed works like normal$(li)Traveling Beneath is no faster than in the Overworld$(br2)In return, you can find resources like $(thing)Kaolin Clay$(), $(thing)Graphite$(), richer and more exposed $(thing)ore veins$(), as well as other treasures."
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "index",
+			"text": "$(li)$(bold)$(l:beneath/beneath#entering)Entering$() and $(bold)$(l:beneath/beneath#exiting)Exiting$()$(li)$(bold)$(l:beneath/beneath#biomes)Biomes$()$(li2)$(l:beneath/beneath#biomes_top)Top Layer$()$(li2)$(l:beneath/beneath#biomes_middle)Middle Layer$()$(li2)$(l:beneath/beneath#biomes_bottom)Bottom Layer$()$(li)$(bold)$(l:beneath/beneath#geology)Geology$()$(li2)$(l:beneath/beneath#more_rocks)More Rocks$()"
+		},
+		{
+			"type": "patchouli:image",
+			"title": "",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/portal.png",
+				"tfg:textures/gui/field_guide/nether/aether.png"
+			],
+			"border": true,
+			"text": "Not like this!"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "entering",
+			"title": "Entering the Beneath",
+			"text": "To travel Beneath, simply find some overworld Bedrock at $(thing)Y=-58$().$(br2)To get down to the bedrock, you'll have to either break through the Hornfels layer with $(item)Explosives$() or $(item)Steel+ Tools$(), find a cave with the more brittle $(thing)Keratophyre$(), or drain a lava lake."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "You will appear in the Beneath at the same X and Z coordinates, with a 3x2x3 space opened for you to place some supports if necessary.$(br2)A temporary cloud will be provided if there is no floor, as well as short $(thing)Slow Falling$() and $(thing)Fire Protection$() effects to prevent any accidents."
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "exiting",
+			"title": "Exiting the Beneath",
+			"text": "To return, just get up to ceiling bedrock in the same fashion.$(br2)It's a good idea to $(thing)make a note$() of where you entered, so you can return to the same place in the overworld whenever you're ready to leave."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "You will be returned at $(thing)Y=-54$(), above any potential lava lakes, inside another 3x2x3 area. The middle two blocks for the player will always be replaced by air, so you may want to avoid placing ladders there."
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "biomes",
+			"title": "Biomes",
+			"text": "The Beneath has a full set of new biomes to explore!$(br2)The Beneath can be split into three vertical layers, each with their own set of biomes. Each one is more hot and dangerous as you descend!"
+		},
+		{
+			"type": "patchouli:image",
+			"anchor": "biomes_top",
+			"title": "Salt Caves",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/salt_caves.png"
+			],
+			"border": true,
+			"text": "Like a warm ocean breeze, this biome is full of $(item)Halite$(). Makes for a great base location!"
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Muggy Bog",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/muggy_bog.png"
+			],
+			"border": true,
+			"text": "Humid and swamp-like. A safe source of wood, if you can avoid the $(thing)Crocodiles$()."
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Decaying Caverns",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/decaying_caverns.png"
+			],
+			"border": true,
+			"text": "Nature's recyclers are hard at work in this damp region full of rot."
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Webbed Lair",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/webbed_lair.png"
+			],
+			"border": true,
+			"text": "No prizes for guessing what lives here! A great place to harvest $(item)Silk$()."
+		},
+		{
+			"type": "patchouli:image",
+			"anchor": "biomes_middle",
+			"title": "Tar Pools",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/tar_pools.png"
+			],
+			"border": true,
+			"text": "Sandy like a small desert, this area contains sticky $(thing)Tar Pits$() full of oil."
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Geothermal Springs",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/geothermal_springs.png"
+			],
+			"border": true,
+			"text": "No Sulfur Cubes here, but this steamy biome can be a great place to find $(thing)Spring Water$() for healing."
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Thorny Grove",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/thorny_brambles.png"
+			],
+			"border": true,
+			"text": "A difficult to traverse biome with plants that affect you when stepped on. Watch out!"
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Lush Hollow",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/lush_hollow.png"
+			],
+			"border": true,
+			"text": "Hot and full of greenery! The dense ferns hides the underlying $(thing)Kaolin Clay$()."
+		},
+		{
+			"type": "patchouli:image",
+			"anchor": "biomes_bottom",
+			"title": "Ash Forest",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/ash_forest.png"
+			],
+			"border": true,
+			"text": "What remains of the upper greenery after the frequent fires caused by the heat."
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Lava Floes",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/lava_floes.png"
+			],
+			"border": true,
+			"text": "An ore-rich $(thing)Pyroxenite$() area crisscrossed with rivers of lava."
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Basalt Deltas",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/basalt_deltas.png"
+			],
+			"border": true,
+			"text": "Everyone's favourite Nether biome returns, and is just as dangerous to navigate as ever."
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "geology",
+			"title": "Geology",
+			"text": "Like the overworld, the Beneath has its own set of rock layers. At the very top, you may find Phyllite, Schist, Gneiss, Marble, Slate, Migmatite, and Travertine.$(br2)Underneath those, you may find Schist, Gneiss, Tuff, Migmatite, Travertine, and Diorite."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Below that is either Gabbro, Granite, Tuff, Diorite, or Migmatite.$(br2)At the lower levels of the Beneath, there is a layer of exclusively Migmatite, followed by Pyroxenite at the very bottom."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "minecraft:blackstone,minecraft:calcite,tfg:gilsonite,tfg:rock/aragonite,tfg:rock/glauberite,tfg:huge_quartz,beneath:crackrack,tfg:halite",
+			"title": "More Rocks",
+			"anchor": "more_rocks",
+			"text": "Some other stones can be found in other locations.$(br2)Small lava pools are surrounded by $(item)Pyroxenite$(), while $(item)Calcite$() can be found in spring water pools.$(br2)$(item)Keratophyre$() can be found all over the Beneath in large, tall columns."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "The $(thing)Geothermal Springs$() biome contains the exclusive $(item)Aragonite$() and $(item)Glauberite$(), along with more Calcite.$(br2)This biome also houses $(item)Huge Quartz$() crystals, which can either be broken with a pickaxe to obtain $(item)Smoky Quartz$() gems of varying quality, or broken with a $(item)Gem Saw$() to obtain the transparent block itself."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(item)Gilsonite$(), a very dark building block and ingredient of $(l:logistics/roads#asphalt)Asphalt$(), can be found in large quantities in the $(thing)Tar Pools$() biome, along with $(item)Sandstone$().$(br2)Finally, $(item)Halite$() can be found in massive quantities in the $(thing)Salt Caves$() biome, which can be mined for Halite and Sylvite ores."
+		},
+		{
+			"type": "patchouli:relations",
+			"title": "Ek Okuma",
+			"anchor": "relations",
+			"entries": [
+				"tfg:beneath/beneath_mechanics",
+				"tfg:beneath/beneath_crops",
+				"tfg:beneath/beneath_wild_fruits",
+				"tfg:beneath/beneath_tree_index",
+				"tfg:beneath/beneath_fauna"
+			]
+		}
+	],
+	"extra_recipe_mappings": {
+		"tfg:gilsonite": 22,
+		"tfg:rock/aragonite": 22,
+		"tfg:rock/glauberite": 22,
+		"tfg:huge_quartz": 22
+	},
+	"read_by_default": true,
+	"priority": true
+}

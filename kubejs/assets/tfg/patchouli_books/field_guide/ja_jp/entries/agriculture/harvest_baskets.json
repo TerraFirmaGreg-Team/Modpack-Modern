@@ -1,0 +1,42 @@
+{
+    "name": "収穫かご",
+    "icon": "tfg:harvest_basket",
+    "category": "tfg:agriculture",
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "title": "収穫かご",
+            "item": {
+                "tag": "tfg:harvester"
+            },
+            "text": "Made for those with a short stature―$(thing)Harvest Baskets$() are just the tool needed for plucking trees and bushes of fruit.$(br)To use a harvest basket, $(item)$(k:key.use)$() on a $(l:the_world/wild_fruits#fruit_trees)Fruit Tree$(), $(l:the_world/wild_fruits#tall_bushes)Fruit Bush$(), $(l:agriculture/growing_crops#growing_grapes)Grape Trellis$(), $(l:agriculture/greenhouse#bonsai_planter)Bonsai Planter$(), $(l:agriculture/greenhouse#trellis_planter)Trellis Planter$(), or $(l:agriculture/greenhouse#hanging_planter)Hanging Planter$() and all blocks within a $(thing)7-block radius$() will be picked."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "通常の収穫バスケットは耐久値が$(thing)128$()あり、使用するたびに消耗しますが、アルミニウム製収穫バスケットは使用しても耐久値が減少しません。さらに、$(thing)Createのデプロイヤー$()のような装置に持たせることで収穫を自動化することも可能です。その場合はバスケットの耐久値が消費されます。"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": "収穫かご",
+            "recipe": "tfg:shaped/harvest_basket_from_papyrus",
+            "text": "$(item)収穫バスケット$()は、浸したパピルスや堅木を使って作成できます。"
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "さらに読む",
+            "anchor": "relations",
+            "entries": [
+                "tfg:agriculture/growing_crops",
+                "tfg:agriculture/greenhouse",
+                "tfg:agriculture/composting",
+                "tfg:the_world/wild_crops",
+                "tfg:the_world/wild_fruits"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 8,
+    "extra_recipe_mappings": {
+        "tag:tfg:harvester": 0
+    }
+}

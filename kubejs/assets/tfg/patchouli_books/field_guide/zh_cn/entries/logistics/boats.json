@@ -1,0 +1,628 @@
+{
+    "name": "船",
+    "category": "tfg:logistics",
+    "icon": "firmaciv:textures/item/rowboat_icon_only.png",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(li)$(bold)$(l:logistics/boats#intro)Sailing Information$()$(li2)$(l:logistics/boats#customization)Customization$()$(li2)$(l:logistics/boats#boat_items)Boats as Items$()$(li2)$(l:logistics/boats#animals)Transporting Animals$()$(li2)$(l:logistics/boats#paddles)Paddles as Oars$()$(li2)$(l:logistics/boats#cleats)Cleats & Leads$()$(li2)$(l:logistics/boats#anchors)Anchors & Windlasses$()$(li2)$(l:logistics/boats#sails)Sails$()$(li2)$(l:logistics/boats#sailing)Sailing$()$(li2)$(l:logistics/boats#painting)Painting & Dyeing$()$(li2)$(l:logistics/boats#damage)Damage & Repair$()",
+            "title": "目录",
+            "anchor": "index"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)$(bold)$(l:logistics/boats#watercraft)Watercraft$()$(li2)$(l:logistics/boats#kayak)Kayak$()$(li2)$(l:logistics/boats#canoe)Dugout Canoe$()$(li2)$(l:logistics/boats#rowboat)Rowboat$()$(li2)$(l:logistics/boats#sloop)Sloop$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "intro",
+            "title": "第一天",
+            "text": "建造并使用一艘船将比你曾经习惯的稍微复杂一些，但是如果要向大海进发，没有什么比先建造一艘完美的船更重要的了。仔细阅读本手册，学习雕刻、手工制作、建造、划船、划水、驾驶和自定义的所有操作方法。"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "firmaciv:textures/gui/book/boats.png"
+            ],
+            "border": true,
+            "text": "要环游世界，或者只在你所在的区域通勤，最好走那些可通航的水道。"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Customization",
+            "anchor": "customization",
+            "text": "你可以为船只添加自己的方块！像你放置一个方块那样，当你手中拿着一个箱子时，按住$(item)$(k:key.use)$()就可以将它安装到船只上。按$(item)$(k:key.use)$() 键以与它们交互。如果你不能在某个地方放置一个方块，那可能是因为那个地方是驾驶位！你怎么驾驶一辆没有驾驶位的船？你能像平常一样撸掉你想拆的方块，就能把它从船上拆下来了。"
+        },
+        {
+            "type": "patchouli:image",
+            "border": true,
+            "images": [
+                "firmaciv:textures/gui/book/customization.png"
+            ]
+        },
+        {
+            "type": "patchouli:text",
+            "title": "能放进物品栏的船",
+            "anchor": "boat_items",
+            "text": "They don't exist! Except the kayak, if you break a boat, it will only drop some of its ingredients! This means you'll need a kayak if you want to carry a boat over land, and it also means you might want to build a dock for your larger vessels."
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "firmaciv:textures/gui/book/items.png"
+            ]
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Transporting Animals",
+            "anchor": "animals",
+            "text": "和往常一样，你可以用船来移动动物！不过，要注意，像马这样的大型动物只适合乘坐足够大的船。如果船上做了一只动物，而且挡住了你的路，你可以通过shift+ $(item)$(k:key.use)$()以让它从载具上下来。动物在船上呆2天后会坐立不安，呆3天后会自己下船。"
+        },
+        {
+            "type": "patchouli:image",
+            "title": "驾驶",
+            "images": [
+                "firmaciv:textures/gui/book/piloting.png"
+            ],
+            "text": "每只船都有一个特定的驾驶位，你需要坐在上面才能驾船。"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Paddles & Oars",
+            "anchor": "paddles",
+            "text": "如果你感觉到你的船太慢了，请检查一下你握着的是不是正确的桨；如果你的船是需要桨架上的固定桨的，请检查桨架上的桨是否正确安装。在一些船上，多名玩家一起划船会让船的速度更快哦！"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "firmaciv:textures/gui/book/paddles.png"
+            ]
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Cleats & Leads",
+            "anchor": "cleats",
+            "text": "大多数船都至少配备一个用来绑栓神的固定桩。你可以用一根引绳来绑住它，并且牵着船移动。你也可以把船拉上海岸线，或是把它拉上一个半砖。"
+        },
+        {
+            "type": "patchouli:image",
+            "border": true,
+            "images": [
+                "firmaciv:textures/gui/book/leads.png"
+            ]
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Anchors & Windlasses",
+            "anchor": "anchors",
+            "text": "Large boats have anchors, which can be used to completely stop the boat, provided the anchor is seated in the seafloor and no sails are deployed. The boat will still turn in the wind while it's at anchor. Look for the anchor icon located at the windlass (anchor winch) and press $(item)$(k:key.use)$() to lower and raise the anchor."
+        },
+        {
+            "type": "patchouli:image",
+            "border": true,
+            "images": [
+                "firmaciv:textures/gui/book/anchor.png"
+            ],
+            "text": "The anchor and windlass on a sloop."
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Sails",
+            "anchor": "sails",
+            "text": "Sailing vessels, of course, have sails. You'll need to deploy them in order to properly control your boat. Look for the triangular sail icon and press $(item)$(k:key.use)$() to deploy each sail. Since most boats have multiple sails, you can use different combinations of sail deployment to control your speed."
+        },
+        {
+            "type": "patchouli:image",
+            "border": true,
+            "images": [
+                "firmaciv:textures/gui/book/sails.png"
+            ],
+            "text": "Both the jibsail (left) and mainsail (right) have been deployed on this sloop."
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Sailing",
+            "anchor": "sailing",
+            "text": "Unlike ships that you may be used to, sailing is a skill with Firma: Civilization. When you're piloting a sailing vessel, a new UI element will appear showing the wind speed and direction, as well as the boat's speed. The color of the wind arrow will indicate the difficulty of sailing in that direction. Use your forward and backward movement keys to set the angle of the sails, and experiment to find the best one for the wind angle."
+        },
+        {
+            "type": "patchouli:image",
+            "border": false,
+            "images": [
+                "firmaciv:textures/gui/book/sailing.png"
+            ],
+            "text": "The sailing UI will help you control your vessel."
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Painting & Dyeing",
+            "anchor": "painting",
+            "text": "Any boat constructed using Shipwright's Scaffolding can be painted, and any sail can be individually dyed. Simply hold a dye item in your hand and press $(item)$(k:key.use)$() when you see the paint brush icon to either paint a hull or dye a sail. Larger boats have unique patterns for each paint color."
+        },
+        {
+            "type": "patchouli:image",
+            "border": true,
+            "images": [
+                "firmaciv:textures/gui/book/painting.png"
+            ],
+            "text": "A sloop has been painted yellow and its sails have been dyed."
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Damage & Repair",
+            "anchor": "damage",
+            "text": "A damaged boat will start to show cracks. For any boat built using Shipwright's Scaffolding, use the appropriate type of plank blocks to repair it. For canoes, use lumber. At 90% damage, a boat will appear to take on water, and at 100% damage, it will sink! This does not apply to Kayaks."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "watercraft",
+            "text": "There are a variety of watercraft available to you throughout progression. The type of boat you may pick comes down to your needs and what materials are available to you.$(li)$(bold)$(l:logistics/boats#kayak)Kayak$(): Portable and fast. Best for solo use.$(li)$(bold)$(l:logistics/boats#canoe)Dugout Canoe$(): Cheap, made of softwood, and can carry two.$(li)$(bold)$(l:logistics/boats#rowboat)Rowboat$(): Medium sized, capabale of good hauls.$(li)$(bold)$(l:logistics/boats#sloop)Sloop$(): Large sea-fairing vessel. Most advanced watercraft.",
+            "title": "水运工具"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "kayak",
+            "text": "Your best overland solo-adventure friend. Of course, being the only boat that can be carried as an item helps. It's the fastest boat for a solo player, and very maneuverable!$(br)To row a kayak, hold a $(item)Kayak Paddle$() in your main, or off-hand. To carry the kayak, just break it.",
+            "title": "皮划艇"
+        },
+        {
+            "type": "patchouli:image",
+            "title": "皮划艇",
+            "images": [
+                "firmaciv:textures/gui/book/kayak_isometric.png"
+            ],
+            "text": "橡皮艇是最小的，机动性最强与最便携的海上载具。"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "canoe",
+            "title": "Canoe",
+            "text": "The Dugout Canoe will likely be the first step on your aquatic journey! If you're in the copper age, you can build a canoe with the help of a saw.$(br)Canoes require a $(item)Canoe Paddle$() and three $(n)Softwood$() logs. Search \"$(6)#softwood$()\" in $(emi) to view all useable logs. As a tip, all coniferous trees are softwood."
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "firmaciv:textures/gui/book/canoe_isometric.png"
+            ]
+        },
+        {
+            "type": "patchouli:text",
+            "text": "你可以在驾驶座上放置方块或动物，但要注意，这样做之后就无法划动船只了！如果你只是想顺流而下运送物资，这倒是最实用的用法。$(br2)独木舟有两个座位，从后排驾驶。你需要手持独木舟桨才能全速前进，如果两名玩家都手持船桨，速度还能更快。"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        " F ",
+                        " 0 ",
+                        " B "
+                    ]
+                ],
+                "mapping": {
+                    "0": "",
+                    "F": "",
+                    "B": ""
+                }
+            },
+            "name": "一根原木",
+            "text": "To build a $(thing)Dugout Canoe$(), start by placing three stripped-logs horizontally.",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        " F ",
+                        " 0 ",
+                        " B "
+                    ]
+                ],
+                "mapping": {
+                    "0": "",
+                    "F": "",
+                    "B": ""
+                }
+            },
+            "name": "Halved Logs",
+            "text": "Then, remove the upper half by holding $(item)$(k:key.use)$() with a saw in hand.",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        " F ",
+                        " 0 ",
+                        " B "
+                    ]
+                ],
+                "mapping": {
+                    "0": "firmaciv:wood/canoe_component_block/douglas_fir[canoe_carved=11,facing=east,end=false]",
+                    "F": "firmaciv:wood/canoe_component_block/douglas_fir[canoe_carved=11,facing=west,end=true]",
+                    "B": "firmaciv:wood/canoe_component_block/douglas_fir[canoe_carved=11,facing=east,end=true]"
+                }
+            },
+            "name": "A Carved Log",
+            "text": "Next, hollow out the top by holding $(item)$(k:key.use)$() with an axe in hand. Finally, light the canoe on fire with a $(item)Firestarter$() to finish the process.",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "rowboat",
+            "title": "Rowboat",
+            "text": "那么，你已经进入青铜时代，想要升级一下？划艇正是为你准备的。它有三个座位，可以容纳三名玩家，或最多两只动物，包括马！与以往一样，你也可以用你选择的容器替换座位（驾驶员座位除外）。你还可以在船尾放置两个额外的容器。"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "firmaciv:textures/gui/book/rowboat_isometric.png"
+            ]
+        },
+        {
+            "type": "patchouli:text",
+            "text": "与其他船不同，你驾驶划艇时是反着坐的。这给你带来了机械优势，让你能真正发挥臂力划桨！当然，你可以以第一人称视角驾驶，但如果你以第三人称视角面对自己，可能会觉得更直观。"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": "脚手架",
+            "recipe": "firmaciv:crafting/watercraft_frame_angled",
+            "text": "To build a rowboat, you'll need to start with Shipwright's Scaffolding. You'll place them facing inward in a 2 by 3 area.$(br)Scaffolding are then filled in with $(n)hardwood$() planks. Search \"$(6)#hardwood$()\" in $(emi) to view all useable log types."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "   ",
+                        "   ",
+                        "   "
+                    ],
+                    [
+                        " 12",
+                        " 04",
+                        " 56"
+                    ]
+                ],
+                "mapping": {
+                    "0": "firmaciv:watercraft_frame_angled[facing=north,shape=straight]",
+                    "1": "firmaciv:watercraft_frame_angled[facing=west,shape=inner_right]",
+                    "2": "firmaciv:watercraft_frame_angled[facing=west,shape=inner_left]",
+                    "4": "firmaciv:watercraft_frame_angled[facing=south,shape=straight]",
+                    "5": "firmaciv:watercraft_frame_angled[facing=east,shape=inner_left]",
+                    "6": "firmaciv:watercraft_frame_angled[facing=east,shape=inner_right]"
+                }
+            },
+            "name": "划艇脚手架",
+            "text": "按此排列的造船工脚手架，用于建造划艇。",
+            "enable_visualize": true
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "   ",
+                        "   ",
+                        "   "
+                    ],
+                    [
+                        " 12",
+                        " 04",
+                        " 56"
+                    ]
+                ],
+                "mapping": {
+                    "0": "firmaciv:wood/watercraft_frame/angled/hickory[facing=north,shape=straight,frame_processed=3]",
+                    "1": "firmaciv:wood/watercraft_frame/angled/hickory[facing=west,shape=inner_right,frame_processed=3]",
+                    "2": "firmaciv:wood/watercraft_frame/angled/hickory[facing=west,shape=inner_left,frame_processed=3]",
+                    "4": "firmaciv:wood/watercraft_frame/angled/hickory[facing=south,shape=straight,frame_processed=3]",
+                    "5": "firmaciv:wood/watercraft_frame/angled/hickory[facing=east,shape=inner_left,frame_processed=3]",
+                    "6": "firmaciv:wood/watercraft_frame/angled/hickory[facing=east,shape=inner_right,frame_processed=3]"
+                }
+            },
+            "name": "Filled Scaffolding",
+            "text": "Four $(6)$(t:#tfg:hardwood)hardwood$() plank blocks have been added to each scaffold.",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "   ",
+                        "   ",
+                        "   "
+                    ],
+                    [
+                        " 12",
+                        " 04",
+                        " 56"
+                    ]
+                ],
+                "mapping": {
+                    "0": "firmaciv:wood/watercraft_frame/angled/hickory[facing=north,shape=straight,frame_processed=7]",
+                    "1": "firmaciv:wood/watercraft_frame/angled/hickory[facing=west,shape=inner_right,frame_processed=7]",
+                    "2": "firmaciv:wood/watercraft_frame/angled/hickory[facing=west,shape=inner_left,frame_processed=7]",
+                    "4": "firmaciv:wood/watercraft_frame/angled/hickory[facing=south,shape=straight,frame_processed=7]",
+                    "5": "firmaciv:wood/watercraft_frame/angled/hickory[facing=east,shape=inner_left,frame_processed=7]",
+                    "6": "firmaciv:wood/watercraft_frame/angled/hickory[facing=east,shape=inner_right,frame_processed=7]"
+                }
+            },
+            "name": "Bolted Scaffolding",
+            "text": "Using a hammer in your offhand, add four $(item)Copper Bolts$() to each scaffold.",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "   ",
+                        " LR",
+                        "   "
+                    ],
+                    [
+                        " 12",
+                        " 04",
+                        " 56"
+                    ]
+                ],
+                "mapping": {
+                    "0": "firmaciv:wood/watercraft_frame/angled/hickory[facing=north,shape=straight,frame_processed=7]",
+                    "1": "firmaciv:wood/watercraft_frame/angled/hickory[facing=west,shape=inner_right,frame_processed=7]",
+                    "2": "firmaciv:wood/watercraft_frame/angled/hickory[facing=west,shape=inner_left,frame_processed=7]",
+                    "4": "firmaciv:wood/watercraft_frame/angled/hickory[facing=south,shape=straight,frame_processed=7]",
+                    "5": "firmaciv:wood/watercraft_frame/angled/hickory[facing=east,shape=inner_left,frame_processed=7]",
+                    "6": "firmaciv:wood/watercraft_frame/angled/hickory[facing=east,shape=inner_right,frame_processed=7]",
+                    "L": "alekiships:oarlock[facing=north]",
+                    "R": "alekiships:oarlock[facing=south]"
+                }
+            },
+            "name": "Finished Rowboat",
+            "text": "Finally, add the $(item)Oarlocks$() to the center of the boat, and then add $(item)Oars$() to each oarlock.",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "sloop",
+            "title": "Sloop",
+            "text": "Iron Age already? Well, I guess it's high time you built yourself a proper ship. The sloop is 4 blocks wide and over 8 blocks long, an impressive upgrade from the rowboat! It holds up to 13 containers and up to 7 passengers, and, depending on the wind, can sail extremely fast. It can also carry up to 6 $(l:logistics/boats#cannons)Cannons$()!"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "firmaciv:textures/gui/book/sloop_isometric.png"
+            ]
+        },
+        {
+            "type": "patchouli:text",
+            "text": "The sloop is expensive, however, requiring a wealth of wrought iron, copper, wool, and other materials. But materials aren't the only cost! You'll have to learn how to sail, as well, and it can take some practice! You'll also likely want to build docks and other infrastructure if you plan on bringing your ship in close to shore.$(br)$(bold)TIP$(): It is recommended to build your sloop above water and then drop it into the water when finished. Builidng it in water may result in it sinking!"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": "脚手架",
+            "recipe": "firmaciv:crafting/watercraft_frame_flat",
+            "text": "Much like a rowboat, you'll start with Shipwright's Scaffolding.$(br)Scaffolding are then filled in with $(n)hardwood$() planks. Search \"$(6)#hardwood$()\" in $(emi) to view all useable log types."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "     ",
+                        "     ",
+                        "     ",
+                        "     ",
+                        "     ",
+                        "     ",
+                        "     "
+                    ],
+                    [
+                        "  12 ",
+                        "  34 ",
+                        " 1562",
+                        " 30a4",
+                        " 3aa4",
+                        " 3aa4",
+                        " 7889"
+                    ]
+                ],
+                "mapping": {
+                    "0": "firmaciv:watercraft_frame_flat",
+                    "1": "firmaciv:watercraft_frame_angled[facing=west,shape=inner_right]",
+                    "2": "firmaciv:watercraft_frame_angled[facing=west,shape=inner_left]",
+                    "3": "firmaciv:watercraft_frame_angled[facing=north,shape=straight]",
+                    "4": "firmaciv:watercraft_frame_angled[facing=south,shape=straight]",
+                    "5": "firmaciv:watercraft_frame_angled[facing=west,shape=outer_right]",
+                    "6": "firmaciv:watercraft_frame_angled[facing=west,shape=outer_left]",
+                    "7": "firmaciv:watercraft_frame_angled[facing=east,shape=inner_left]",
+                    "8": "firmaciv:watercraft_frame_angled[facing=east,shape=straight]",
+                    "9": "firmaciv:watercraft_frame_angled[facing=east,shape=inner_right]",
+                    "a": "firmaciv:watercraft_frame_flat"
+                }
+            },
+            "name": "单桅纵帆船脚手架",
+            "text": "按此排列的造船工脚手架，用于建造单桅纵帆船船体。",
+            "enable_visualize": true
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "     ",
+                        "     ",
+                        "     ",
+                        "     ",
+                        "     ",
+                        "     ",
+                        "     "
+                    ],
+                    [
+                        "  12 ",
+                        "  34 ",
+                        " 1562",
+                        " 30a4",
+                        " 3aa4",
+                        " 3aa4",
+                        " 7889"
+                    ]
+                ],
+                "mapping": {
+                    "0": "firmaciv:wood/watercraft_frame/flat/oak[frame_processed=3]",
+                    "1": "firmaciv:wood/watercraft_frame/angled/oak[facing=west,shape=inner_right,frame_processed=3]",
+                    "2": "firmaciv:wood/watercraft_frame/angled/oak[facing=west,shape=inner_left,frame_processed=3]",
+                    "3": "firmaciv:wood/watercraft_frame/angled/oak[facing=north,shape=straight,frame_processed=3]",
+                    "4": "firmaciv:wood/watercraft_frame/angled/oak[facing=south,shape=straight,frame_processed=3]",
+                    "5": "firmaciv:wood/watercraft_frame/angled/oak[facing=west,shape=outer_right,frame_processed=3]",
+                    "6": "firmaciv:wood/watercraft_frame/angled/oak[facing=west,shape=outer_left,frame_processed=3]",
+                    "7": "firmaciv:wood/watercraft_frame/angled/oak[facing=east,shape=inner_left,frame_processed=3]",
+                    "8": "firmaciv:wood/watercraft_frame/angled/oak[facing=east,shape=straight,frame_processed=3]",
+                    "9": "firmaciv:wood/watercraft_frame/angled/oak[facing=east,shape=inner_right,frame_processed=3]",
+                    "a": "firmaciv:wood/watercraft_frame/flat/oak[frame_processed=3]"
+                }
+            },
+            "name": "单桅纵帆船脚手架",
+            "text": "Four $(6)$(t:#tfg:hardwood)hardwood$() plank blocks have been added to each scaffold.",
+            "enable_visualize": true
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "     ",
+                        "     ",
+                        "     ",
+                        "     ",
+                        "     ",
+                        "     ",
+                        "     "
+                    ],
+                    [
+                        "  12 ",
+                        "  34 ",
+                        " 1562",
+                        " 30a4",
+                        " 3aa4",
+                        " 3aa4",
+                        " 7889"
+                    ]
+                ],
+                "mapping": {
+                    "0": "firmaciv:wood/watercraft_frame/flat/oak[frame_processed=7]",
+                    "1": "firmaciv:wood/watercraft_frame/angled/oak[facing=west,shape=inner_right,frame_processed=7]",
+                    "2": "firmaciv:wood/watercraft_frame/angled/oak[facing=west,shape=inner_left,frame_processed=7]",
+                    "3": "firmaciv:wood/watercraft_frame/angled/oak[facing=north,shape=straight,frame_processed=7]",
+                    "4": "firmaciv:wood/watercraft_frame/angled/oak[facing=south,shape=straight,frame_processed=7]",
+                    "5": "firmaciv:wood/watercraft_frame/angled/oak[facing=west,shape=outer_right,frame_processed=7]",
+                    "6": "firmaciv:wood/watercraft_frame/angled/oak[facing=west,shape=outer_left,frame_processed=7]",
+                    "7": "firmaciv:wood/watercraft_frame/angled/oak[facing=east,shape=inner_left,frame_processed=7]",
+                    "8": "firmaciv:wood/watercraft_frame/angled/oak[facing=east,shape=straight,frame_processed=7]",
+                    "9": "firmaciv:wood/watercraft_frame/angled/oak[facing=east,shape=inner_right,frame_processed=7]",
+                    "a": "firmaciv:wood/watercraft_frame/flat/oak[frame_processed=7]"
+                }
+            },
+            "name": "单桅纵帆船脚手架",
+            "text": "Using a hammer in your offhand, add four $(item)Copper Bolts$() to each scaffold.",
+            "enable_visualize": true
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "     ",
+                        "     ",
+                        " L  R",
+                        "     ",
+                        "     ",
+                        "     ",
+                        " L  R"
+                    ],
+                    [
+                        "  12 ",
+                        "  34 ",
+                        " 1562",
+                        " 30a4",
+                        " 3aa4",
+                        " 3aa4",
+                        " 7889"
+                    ]
+                ],
+                "mapping": {
+                    "0": "firmaciv:wood/watercraft_frame/flat/oak[frame_processed=7]",
+                    "1": "firmaciv:wood/watercraft_frame/angled/oak[facing=west,shape=inner_right,frame_processed=7]",
+                    "2": "firmaciv:wood/watercraft_frame/angled/oak[facing=west,shape=inner_left,frame_processed=7]",
+                    "3": "firmaciv:wood/watercraft_frame/angled/oak[facing=north,shape=straight,frame_processed=7]",
+                    "4": "firmaciv:wood/watercraft_frame/angled/oak[facing=south,shape=straight,frame_processed=7]",
+                    "5": "firmaciv:wood/watercraft_frame/angled/oak[facing=west,shape=outer_right,frame_processed=7]",
+                    "6": "firmaciv:wood/watercraft_frame/angled/oak[facing=west,shape=outer_left,frame_processed=7]",
+                    "7": "firmaciv:wood/watercraft_frame/angled/oak[facing=east,shape=inner_left,frame_processed=7]",
+                    "8": "firmaciv:wood/watercraft_frame/angled/oak[facing=east,shape=straight,frame_processed=7]",
+                    "9": "firmaciv:wood/watercraft_frame/angled/oak[facing=east,shape=inner_right,frame_processed=7]",
+                    "a": "firmaciv:wood/watercraft_frame/flat/oak[frame_processed=7]",
+                    "L": "alekiships:cleat[facing=north]",
+                    "R": "alekiships:cleat[facing=south]"
+                }
+            },
+            "name": "单桅纵帆船脚手架",
+            "text": "Finally, add the $(item)Cleats$() to the hull.",
+            "enable_visualize": true
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Building the hull is only the first step. Next, look for the blue hammer icon and $(item)$(k:key.use)$() to add the items that show next to your crosshair.$(br2)For a full list of materials, you will need:$(li)6 Scaffold Slabs$(li)18 Scaffold Stairs$(li)116 Hardwood Plank Blocks$(li)96 Copper Bolts$(li)4 Cleats$(li)34 Hardwood Stripped Logs$(li)1 Medium Sail$(li)1 Small Sail$(li)16 Lumber$(li)1 Anchor$(li)8 Rope."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "cannons",
+            "title": "Cannons",
+            "item": "firmaciv:cannon,alekiships:cannonball",
+            "text": "Cannons! Who doesn't want cannons? These powerful weapons of naval warfare can be placed on sloops, as well as on land, and are the best way to destroy your enemy's vessels, dealing far more damage to ships than any alternative."
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "firmaciv:textures/gui/book/cannon_isometric.png"
+            ]
+        },
+        {
+            "type": "text",
+            "text": "You'll also need cannonballs, smithed from Wrought Iron Double Ingots, as well as Gunpowder, Unrefined Paper and a Flint and Steel in order to fire a cannon. A UI element will indicate the status of the cannon. You can angle a cannon up by pressing $(item)$(k:key.use)$() and down by crouching and pressing $(item)$(k:key.use)$()."
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "延伸阅读",
+            "anchor": "relations",
+            "entries": [
+                "tfg:craftsmanship/metallurgy",
+                "tfg:agriculture/weaving",
+                "tfg:logistics/exploration_gear",
+                "tfg:logistics/navigation",
+                "tfg:the_world/earth_tree_index"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 6,
+    "extra_recipe_mappings": {
+        "firmaciv:watercraft_frame_angled": 23,
+        "firmaciv:watercraft_frame_flat": 23,
+        "firmaciv:kayak": 24,
+        "firmaciv:kayak_paddle": 24,
+        "firmaciv:canoe_paddle": 26,
+        "alekiships:oarlock": 34,
+        "alekiships:oar": 34,
+        "alekiships:cleat": 42,
+        "alekiships:anchor": 42,
+        "firmaciv:small_triangular_sail": 42,
+        "firmaciv:medium_triangular_sail": 42,
+        "firmaciv:cannon": 51,
+        "firmaciv:cannon_barrel": 51,
+        "alekiships:cannonball": 51
+    }
+}

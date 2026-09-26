@@ -1,0 +1,54 @@
+{
+    "name": "Size & Weight",
+    "category": "tfg:game_mechanics",
+    "icon": "tfc:textures/gui/book/icons/size_and_weight.png",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "anchor": "intro",
+            "text": "모든 아이템에는 $(thing)크기 ⇲$()와 $(thing)무게 ⚖$()가 있습니다. 아이템의 크기와 무게는 $(thing)툴팁$()에 나타납니다. 툴팁은 아이템에 마우스를 올렸을 때 볼 수 있습니다."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "size",
+            "text": "Size determines what $(l:logistics/storage)Storage$() blocks an item can fit inside.$(br)$(li)$(thing)Tiny$() items fit in anything.$(li)$(thing)Very Small$() items fit in anything.$(li)$(thing)Small$() items are the largest item that will fit in $(l:craftsmanship/pottery)Small Vessels$()$().$(li)$(thing)Normal$() items are the largest that will fit in $(l:craftsmanship/pottery)Large Vessels$().",
+            "title": "§l크기 §r⇲"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)$(thing)Large$() items are the largest that will fit in $(l:logistics/storage#chests)Chests$(). $(l:craftsmanship/pit_kiln)Pit Kilns$() can hold four.$(li)$(thing)Very Large$() items are placed alone in Pit Kilns.$(li)$(thing)Huge$() items do not fit in most storage devices. They also count towards overburdening."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "weight",
+            "text": "무게는 아이템의 최대 스택 수를 정합니다.$(br)$(li)$(thing)아주 가벼움$(): 64$(li)$(thing)가벼움$(): 32$(li)$(thing)중간$(): 16$(li)$(thing)무거움$(): 4$(li)$(thing)아주 무거움$(): 1$(br2)대부분의 아이템은 기본적으로 $(thing)아주 가벼움$()입니다. 블록들은 보통 $(thing)중간$()입니다.",
+            "title": "§l무게 §r⚖"
+        },
+        {
+            "anchor": "overburdening",
+            "title": "§l과중량",
+            "type": "patchouli:text",
+            "text": "$(thing)과중량$()은 당신이 $(thing)무거움$() 또는 $(thing)아주 무거움$() 아이템을 들고 있을 때 발생합니다. 하나의 $(thing)무거움/아주 무거움$() 아이템을 드는 것은 당신을 탈진하게 하며, 배고픔이 더 빨리 닳게 합니다. 두 개 이상을 들면 $(thing)과중량$() 상태 효과를 받으며, 이동 속도를 매우 늦춥니다."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Items that count towards overburdening include $(thing)Anvils$(), $(thing)Sealed Barrels$(), and $(thing)Crucibles$() (with contents).$(br2)Note: $(l:agriculture/animal_husbandry#equines)Horses$() can also be overburdened.$(br2)Raising your $(l:cooking/food_and_water#protein)Protein$() stat allows you to carry an additional item without being overburdened."
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Further Reading",
+            "anchor": "relations",
+            "entries": [
+                "tfg:craftsmanship/barrels",
+                "tfg:craftsmanship/pottery",
+                "tfg:cooking/decay",
+                "tfg:logistics/tack",
+                "tfg:logistics/personal_storage",
+                "tfg:logistics/storage"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "priority": "true",
+    "sortnum": 0
+}

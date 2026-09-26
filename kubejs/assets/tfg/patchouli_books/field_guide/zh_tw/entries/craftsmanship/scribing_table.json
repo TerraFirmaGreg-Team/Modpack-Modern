@@ -1,0 +1,55 @@
+{
+    "name": "書寫桌",
+    "category": "tfg:craftsmanship",
+    "icon": "tfc:wood/scribing_table/oak",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "The $(thing)Scribing Table$() is used to rename items. It requires $(thing)Black Dye$() to rename items, which can be supplied as the traditional dye item or as a bucket of dye fluid."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "#tfc:scribing_tables"
+                }
+            },
+            "name": "",
+            "text": "書寫桌",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/gui/scribing.png"
+            ],
+            "text": "在書寫桌的上方輸入文字，將要重新命名的物品放在左側，中間放置染料。右側的格子就會輸出物品。",
+            "border": false
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Further Reading",
+            "anchor": "relations",
+            "entries": [
+                "tfg:craftsmanship/anvils",
+                "tfg:craftsmanship/barrels",
+                "tfg:craftsmanship/quern",
+                "tfg:craftsmanship/sewing_table",
+                "tfg:agriculture/papermaking"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 18,
+    "extra_recipe_mappings": {
+        "tag:tfc:scribing_tables": 0
+    }
+}

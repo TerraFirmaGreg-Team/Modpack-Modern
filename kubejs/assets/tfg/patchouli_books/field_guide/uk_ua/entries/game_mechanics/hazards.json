@@ -1,0 +1,192 @@
+{
+	"name": "Hazards",
+	"icon": "tfg:textures/mob_effect/radioactive_warning.png",
+	"category": "tfg:game_mechanics",
+	"sortnum": 3,
+	"read_by_default": true,
+	"pages": [
+		{
+			"type": "patchouli:spotlight",
+			"title": "Небезпечні матеріали",
+			"item": "gtceu:cobaltite_dust",
+			"text": "Деякі $(thing)руди$(), $(thing)пил$() та $(thing)хімікати$() є небезпечними й можуть спричиняти $(item)негативні ефекти$() або навіть $(item)вбити$() тебе, якщо вони знаходяться у твоєму інвентарі. Під час перенесення вони відображаються на екрані за допомогою $(item)ефекту стану$().$(br2)Певне спорядження, як-от $(thing)маски$(), $(thing)рукавички$() та $(thing)костюм для роботи з небезпечними матеріалами$(), можна використовувати для протидії цим ефектам."
+		},
+		{
+			"type": "patchouli:text",
+			"title": "All Effects",
+			"text": "$(li)$(l:game_mechanics/hazards#arsenicosis)Arsenicosis$()$(li)$(l:game_mechanics/hazards#asbestosis)Asbestosis$()$(li)$(l:game_mechanics/hazards#berylliosis)Berylliosis$()$(li)$(l:game_mechanics/hazards#carbon_Monoxide_poisoning)Carbon Monoxide Poisoning$()$(li)$(l:game_mechanics/hazards#carcinogens)Carcinogens$()$(li)$(l:game_mechanics/hazards#chemical_burns)Chemical burns$()$(li)$(l:game_mechanics/hazards#irritants)Irritants$()$(li)$(l:game_mechanics/hazards#methanol_poisoning)Methanol poisoning$()$(li)$(l:game_mechanics/hazards#nauseating_chemicals)Nauseating chemicals$()$(li)$(l:game_mechanics/hazards#poisons)Poisonous materials$()$(li)$(l:game_mechanics/hazards#radioactive_materials)Radioactive materials$()$(li)$(l:game_mechanics/hazards#silicosis)Silicosis$()"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Запобігання та лікування",
+			"text": "$(li)$(l:game_mechanics/hazards#containers)Containers$()$(li)$(l:game_mechanics/hazards#mask)Face Mask$()$(li)$(l:game_mechanics/hazards#gloves)Rubber Gloves$()$(li)$(l:game_mechanics/hazards#hazmat)Hazmat Suit$()$(li)$(l:game_mechanics/hazards#medicine)Pills, Tablets and Salvos$()$(li)$(l:game_mechanics/hazards#rad_away)RadAwayᵗᵐ Pill$()$(li)$(l:game_mechanics/hazards#respawn)The Unthinkable...$()"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Контейнери",
+			"anchor": "containers",
+			"text": "Hazardous materials only deal damage while they are in your $(thing)inventory$(), but that doesn't apply to other containers!$(br)Hazardous materials will not deal damage while they are in another container such as a $(l:logistics/personal_storage)Backpack$() or $(l:craftsmanship/pottery#vessel)Vessel$(). $(item)$(k:key.use)$() while holding a vessel will allow direct transfer of its contents to and from containers.",
+			"item": "sophisticatedbackpacks:backpack,tfc:ceramic/vessel,tfc:ceramic/large_vessel"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": "Захисна маска",
+			"recipe": "gtceu:shaped/face_mask",
+			"text": "$(thing)Захисна маска$() забезпечує захист від будь-яких $(item)інгаляційних$() небезпек, таких як арсенікоз.",
+			"anchor": "mask"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "gtceu:rubber_gloves",
+			"title": "Гумові рукавиці",
+			"link_recipes": true,
+			"anchor": "gloves",
+			"text": "The $(thing)Rubber gloves$() can either be made from $(l:agriculture/leather_making)Leather$() and $(thing)Latex$(), or out of $(thing)Rubber Sheets$(). They provide protection from any $(item)Skin Contact$() hazards, such as $(thing)Beryllium Dust$()."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Захисний костюм",
+			"item": "gtceu:hazmat_headpiece,gtceu:hazmat_chestpiece,gtceu:hazmat_leggings,gtceu:hazmat_boots",
+			"text": "A completed $(thing)Hazmat suit $()provides $(item)immunity $()from $(item)every$() hazard, even $(item)radiation$(). It is made mostly from $(thing)Rubber$() and $(thing)Polyvinyl Chloride$().$(br2)$(bold)TIP$(): You can also look up $(6)#ppe_armor$() in $(emi) for more equipment that provides protection from hazardous materials.",
+			"anchor": "hazmat"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Медикаменти",
+			"item": {
+				"tag": "tfg:medicine"
+			},
+			"anchor": "medicine",
+			"text": "In case you do get heavily exposed to a hazard, there are some $(item)Medicines$() that can help you recover.$(br2)Basic $(item)Pills$() are the most primitive and easy to make, but most come with $(thing)Negative Side Effects$(). $(item)Tablets$() and $(item)Salvos$() are more effective and have less side effects, but they require $(thing)LV equipment$() and more advanced resources to make."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Пігулка RadAwayᵗᵐ",
+			"item": "tfg:rad_away_pill",
+			"anchor": "rad_away",
+			"text": "Це $(item)найкращий$() засіб від $(item)УСІХ$() небезпек і $(item)ЄДИНІ$() ефективні ліки проти $(item)радіації$(). Проте їх також $(thing)найдорожче$() та $(thing)найважче$() виготовити, оскільки вони потребують обладнання $(thing)HV рівня$() та кращих матеріалів."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Невдача...",
+			"item": {
+				"tag": "minecraft:beds"
+			},
+			"anchor": "respawn",
+			"text": "If all else fails, bringing along a bed to respawn is a good idea.$(br2)If you don't have access to $(item)Wool$() or $(item)String$(), you can also make a $(thing)Thatch Bed$()."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Арсенікоз",
+			"item": "gtceu:arsenic_dust",
+			"anchor": "arsenicosis",
+			"text": "$(thing)Arsenicosis$() is an illness caused by inhaling $(thing)Arsenic$() from its dust, vapor or $(thing)Realgar$(). It slowly increases hunger, followed by nausea, and eventually $(bold)death$().$(br2)The $(l:game_mechanics/hazards#mask)Face Mask$() and the $(l:game_mechanics/hazards#hazmat)Hazmat Suit$() provide protection from $(thing)Arsenicosis$()."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Азбестоз",
+			"item": "gtceu:asbestos_dust",
+			"anchor": "asbestosis",
+			"text": "$(thing)Asbestosis$() is an illness caused by inhaling $(thing)Asbestos$() dust. If carried for long enough, it causes hunger.$(br2)The $(l:game_mechanics/hazards#mask)Face Mask$() and the $(l:game_mechanics/hazards#hazmat)Hazmat Suit$() provide protection from $(thing)Asbestosis$()."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Бериліоз",
+			"item": "gtceu:beryllium_dust",
+			"anchor": "berylliosis",
+			"text": "$(thing)Berylliosis$() is an illness caused by skin contact with $(thing)Beryllium dust$() or $(thing)Liquid Beryllium$(). At first, it might seem that it doesn't do much. However, the longer the exposure, the faster it $(bold)kills$() you.$(br)$(l:game_mechanics/hazards#gloves)Gloves$() and the $(l:game_mechanics/hazards#hazmat)Hazmat Suit$() provide protection from $(thing)Berylliosis$()."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "CO Poisoning",
+			"item": "gtceu:carbon_monoxide_bucket",
+			"anchor": "carbon_Monoxide_poisoning",
+			"text": "$(thing)Carbon Monoxide Poisoning$() is an illness caused by inhaling $(thing)Carbon Monoxide$() gas. Prolonged exposure causes nausea and quick $(bold)death$().$(br)The $(l:game_mechanics/hazards#mask)Face Mask$() and the $(l:game_mechanics/hazards#hazmat)Hazmat Suit$() provide protection from $(thing)Carbon Monoxide$()."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Канцерогени",
+			"item": "gtceu:benzene_bucket",
+			"anchor": "carcinogens",
+			"text": "$(thing)Carcinogens$() are substances that cause $(item)Cancer$(). They include $(thing)Chromium Dust$() aswell as some organic compounds, such as Benzene and its products. $(thing)Carcinogens$() don't go away on their own, but they give plenty of warnings before doing any real harm. It starts off with Weakness, followed by Hunger, then Slowness and later on Mining Fatique. Only when substantial enough exposure is accumulated it causes $(bold)Death$()."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Канцерогени",
+			"item": "gtceu:chromium_dust",
+			"anchor": "carcinogens",
+			"text": "The $(l:game_mechanics/hazards#mask)Face Mask$() protects from inhalation of harmful chemicals, while the $(l:game_mechanics/hazards#gloves)Gloves$() protect from contact with $(thing)Chromium Dust$().$(br)The $(l:game_mechanics/hazards#hazmat)Hazmat Suit$() protects from both.$(br)In case of severe exposure, it is advised to take some $(l:game_mechanics/hazards#medicine)Medicines$() to $(thing)Prevent$() any possible damage."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Chemical Burns",
+			"item": "gtceu:fluorine_bucket",
+			"anchor": "chemical_burns",
+			"text": "$(thing)Chemical burns$() are caused by inhalation or skin contact with certain $(thing)Gases$(), $(thing)Acids$(), $(thing)Bases$() or $(thing)Dusts$(). Exposure causes $(item)Weakness$().$(br)The $(l:game_mechanics/hazards#mask)Face Mask$() protects from inhalation, while the $(l:game_mechanics/hazards#gloves)Gloves$() protects from direct skin contact.$(br)The $(l:game_mechanics/hazards#hazmat)Hazmat Suit$() protects from everything."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Подразники",
+			"item": "gtceu:chromite_dust",
+			"anchor": "irritants",
+			"text": "$(thing)Irritation$() is caused by inhalation of $(thing)Ammonium Formate$() or skin contact with $(thing)Chromite Dust$(). Short contact only causes Weakness, but if ignored for longer it starts $(item)Damaging Randomly$().$(br)The $(l:game_mechanics/hazards#mask)Face Mask$() protects from inhalation, while the $(l:game_mechanics/hazards#gloves)Gloves$() protects from direct skin contact.$(br)The $(l:game_mechanics/hazards#hazmat)Hazmat Suit$() protects from both."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Отруєння метанолом",
+			"item": "gtceu:methanol_bucket",
+			"anchor": "methanol_poisoning",
+			"text": "$(thing)Methanol poisoning$() is caused by inhalation of $(thing)Methanol$(). It causes a strong $(item)Blindness$() effect.$(br)The $(l:game_mechanics/hazards#mask)Face Mask$() and the $(l:game_mechanics/hazards#hazmat)Hazmat Suit$() protects from inhalation."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Nauseating Chemicals",
+			"item": "gtceu:butyraldehyde_bucket",
+			"anchor": "nauseating_chemicals",
+			"text": "$(thing)Nauseating chemicals$(), such as $(thing)Butyraldehyde$(), are substances that cause $(item)Nausea$() when inhaled.$(br)The $(l:game_mechanics/hazards#mask)Face Mask$() and the $(l:game_mechanics/hazards#hazmat)Hazmat Suit$() protect from inhalation."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Poisonous Materials",
+			"item": "gtceu:lead_dust",
+			"anchor": "poisons",
+			"text": "There are two types of $(thing)Poisonous materials$(). Weak include $(thing)Lead Dust$(), while the stronger poisons include $(thing)Nitrogen Dioxide$(). $(thing)Weak poisons$() cause a $(item)Progressively Worsening Poison$() effect, while $(thing)Regular poisons$() cause Weakness and a Stronger Poison effect.$(br)The $(l:game_mechanics/hazards#mask)Face Mask$() protects from inhalation, while the $(l:game_mechanics/hazards#gloves)Gloves$() protects from direct skin contact.$(br)The $(l:game_mechanics/hazards#hazmat)Hazmat Suit$() protects from any contact."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Силікоз",
+			"item": "gtceu:silicon_dioxide_dust",
+			"anchor": "silicosis",
+			"text": "$(thing)Silicosis$() is an illness caused by inhaling $(thing)Silicon Dioxide Dust$(). Exposure causes a $(item)Reduction$() in both $(item)Health$() and the $(item)Air Supply$() you have while diving $(thing)Under Water$().$(br2)The $(l:game_mechanics/hazards#mask)Face Mask$() and the $(l:game_mechanics/hazards#hazmat)Hazmat Suit$() provide protection from inhalation of silicon dioxide."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Radioactive Materials",
+			"item": "gtceu:uranium_ingot",
+			"anchor": "radioactive_materials",
+			"text": "Most $(thing)Radioactive substances$() like $(thing)Uranium 238$() you will only meet at $(thing)EV tier$() or above. They will $(item)Permanently Irradiate$() you. Small exposure causes glowing, but prolonged contact triggers a quick $(bold)Death$().$(br)We know it looks tasty and has a billion calories, but $(#ff0000)PLEASE DO NOT EAT URANIUM!$()"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Radioactive Materials",
+			"item": "gtceu:plutonium_ingot",
+			"text": "Only the $(l:game_mechanics/hazards#hazmat)Hazmat Suit$(), as well as some advanced armors provide full protection from radiation.$(br)In the case you do get irradiated, only the $(l:game_mechanics/hazards#rad_away)RadAwayᵗᵐ Pill$() can cure you."
+		},
+		{
+			"type": "patchouli:relations",
+			"title": "Додаткове читання",
+			"anchor": "relations",
+			"entries": [
+				"tfg:the_world/geology",
+				"tfg:craftsmanship/metallurgy",
+				"tfg:cooking/food_and_water",
+				"tfg:game_mechanics/mining",
+				"tfg:game_mechanics/mob_effects"
+			]
+		}
+	],
+	"extra_recipe_mappings": {
+		"tag:gtceu:ppe_armor": 0,
+		"tag:tfg:medicine": 0
+	}
+}

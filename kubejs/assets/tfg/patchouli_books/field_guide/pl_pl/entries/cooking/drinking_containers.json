@@ -1,0 +1,171 @@
+{
+    "name": "Drinking Containers",
+    "category": "tfg:cooking",
+    "icon": "tfc:ceramic/jug",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "title": "Wprowadzenie",
+            "anchor": "intro",
+            "text": "If you are tired of drinking directly out of streams and ponds like a wild horse then consider making a $(item)Drinking Vessel!$()$(br2)Every time you drink from a vessel you will consume $(thing)100mB$() of fluid and damage the vessel 1 durability (if applicable) or has a chance of breaking (if applicable, can be changed in TFC server config)."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Drinking from a container will also work for acquiring drink effects from $(item)Alcohol$() or other fluids, as well as $(l:cooking/food_and_water#nutrients)Nutrient$() values.$(br2)$(o)$(7)Some drinking containers can even be played as a musical instrument when empty.$()"
+        },
+        {
+            "type": "tfg:table",
+            "anchor": "table",
+            "strings": [
+                {
+                    "text": "Waza",
+                    "bold": true
+                },
+                {
+                    "text": "Capacity (mb)",
+                    "bold": true
+                },
+                {
+                    "text": "Health/ Break%",
+                    "bold": true
+                },
+                {
+                    "text": "Dzbanek"
+                },
+                {
+                    "text": "100"
+                },
+                {
+                    "text": "2%"
+                },
+                {
+                    "text": "Kieliszek do wina"
+                },
+                {
+                    "text": "100"
+                },
+                {
+                    "text": "2%"
+                },
+                {
+                    "text": "Skórzany bukłak"
+                },
+                {
+                    "text": "500"
+                },
+                {
+                    "text": "100"
+                },
+                {
+                    "text": "Żelazna manierka"
+                },
+                {
+                    "text": "2000"
+                },
+                {
+                    "text": "400"
+                },
+                {
+                    "text": "Manierka z czerwonej stali"
+                },
+                {
+                    "text": "2000"
+                },
+                {
+                    "text": "∞"
+                },
+                {
+                    "text": "Silica Glass Bottle"
+                },
+                {
+                    "text": "500"
+                },
+                {
+                    "text": "0.5%"
+                },
+                {
+                    "text": "Hematitic Glass Bottle"
+                },
+                {
+                    "text": "400"
+                },
+                {
+                    "text": "2%"
+                },
+                {
+                    "text": "Olivine Glass Bottle"
+                },
+                {
+                    "text": "400"
+                },
+                {
+                    "text": "1%"
+                },
+                {
+                    "text": "Volcanic Glass Bottle"
+                },
+                {
+                    "text": "400"
+                },
+                {
+                    "text": "4%"
+                },
+                {
+                    "text": "Borosilicate Flask"
+                },
+                {
+                    "text": "144"
+                },
+                {
+                    "text": "∞"
+                },
+                {
+                    "text": "Borosilicate Beaker"
+                },
+                {
+                    "text": "1296"
+                },
+                {
+                    "text": "∞"
+                },
+                {
+                    "text": "Borosilicate Vial"
+                },
+                {
+                    "text": "16"
+                },
+                {
+                    "text": "∞"
+                }
+            ],
+            "text": "",
+            "title": "Drinking Containers",
+            "legend": [],
+            "columns": 2,
+            "first_column_width": 90,
+            "column_width": 72,
+            "row_height": 10,
+            "left_buffer": 2,
+            "top_buffer": 12,
+            "draw_background": false
+        },
+        {
+            "type": "patchouli:empty",
+            "draw_filler": false
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Czytaj dalej",
+            "anchor": "relations",
+            "entries": [
+                "tfg:cooking/drinks",
+                "tfg:cooking/food_and_water"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 3,
+    "extra_recipe_mappings": {
+        "tag:tfg:drinking_vessels": 1
+    }
+}

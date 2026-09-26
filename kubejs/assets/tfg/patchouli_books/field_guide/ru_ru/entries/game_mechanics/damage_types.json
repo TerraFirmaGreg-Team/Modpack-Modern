@@ -1,0 +1,53 @@
+{
+    "name": "Типы урона",
+    "category": "tfg:game_mechanics",
+    "icon": "tfc:metal/mace/blue_steel",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "anchor": "intro",
+            "text": "$(thing)Physical Damage Types$() describe the nature of the damage that can be dealt by players and mobs. There are three types: $(bold)Piercing$(), $(bold)Slashing$(), and $(bold)Crushing$(). Some entities are able to resist certain damage types, making it difficult or impossible to kill them with certain methods."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "piercing",
+            "text": "$(thing)Piercing$() damage is dealt by pointy weapons such as $(thing)Knives$(), projectiles like $(thing)Arrows$() and $(thing)Javelins$(), fanged monsters like $(thing)Spiders$(), and $(thing)Cacti$(). $(thing)Skeletons$() are invulnerable to piercing damage, and $(thing)Zombies$() are slightly vulnerable to it.",
+            "title": "Piercing"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "slashing",
+            "text": "$(thing)Режущий$() урон наносится оружием с длинными острыми краями, такими как $(thing)Топоры$() и $(thing)Мечи$(), а также крупными $(l:the_world/wild_animals#predators)Хищниками$(), такими как медведи и пумы. $(thing)Криперы$() уязвимы к режущему урону.",
+            "title": "Режущий"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "crushing",
+            "text": "$(thing)Дробящий$() урон наносится тупым оружием, таким как $(thing)Молоты$() и $(thing)Булавы$(). $(thing)Зомби$() наносят дробящий урон и в некоторой степени устойчивы к нему. $(thing)Криперы$() также сопротивляются некоторому дробящему урону$(). $(thing)Скелеты$() уязвимы к нему.",
+            "title": "Дробление"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "armor",
+            "title": "Броня",
+            "text": "$(thing)Armor$() has its own set of damage resistances. These resistances scale with the quality of armor, but may differ among armors of the same tier. Among bronzes, $(thing)Bismuth Bronze$() armor is best at resisting $(thing)Crushing$(), $(thing)Black Bronze$() is best at resisting $(thing)Piercing$() and regular $(thing)Bronze$() does moderately well with any damage."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "For $(thing)Colored Steel$(), $(thing)Blue Steel$() is better at resisting $(thing)Crushing$() damage, whereas $(thing)Red Steel$() is better at resisting $(thing)Piercing$() damage."
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Читать дальше",
+            "anchor": "relations",
+            "entries": [
+                "tfg:craftsmanship/metallurgy",
+                "tfg:the_world/wild_animals",
+                "tfg:logistics/exploration_gear"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "priority": "истина",
+    "sortnum": 1
+}

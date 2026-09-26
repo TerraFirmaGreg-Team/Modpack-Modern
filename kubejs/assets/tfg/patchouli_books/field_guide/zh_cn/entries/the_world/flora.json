@@ -1,0 +1,715 @@
+{
+    "name": "Earth Flora",
+    "category": "tfg:the_world",
+    "icon": "tfc:plant/goldenrod",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "anchor": "index",
+            "text": "$(li)$(bold)$(l:the_world/flora#standard_plants)Standard Plant Types$()$(li)$(bold)$(l:the_world/flora#aquatic_plants)Aquatic Plant Types$()$(li)$(bold)$(l:the_world/flora#medicinal_plants)Medicinal Plants$()$(li)$(bold)$(l:the_world/flora#spices)Spices$()$(li2)$(l:the_world/flora#basil)Basil$()$(li2)$(l:the_world/flora#bay)Bay Laural$()$(li2)$(l:the_world/flora#cardamom)Cardamom$()$(li2)$(l:the_world/flora#cilantro)Cilantro$()$(li2)$(l:the_world/flora#cumin)Cumin$()$(li2)$(l:the_world/flora#oregano)Oregano$()$(li2)$(l:the_world/flora#pimento)Pimento$()$(li2)$(l:the_world/flora#vanilla)Vanilla$()$(li)$(bold)$(l:the_world/flora#seed_ball)Seed Ball$()"
+        },
+        {
+            "anchor": "intro",
+            "type": "patchouli:spotlight",
+            "title": "Intro to Earth Flora",
+            "item": {
+                "tag": "tfc:plants"
+            },
+            "text": "Earth is an incredibly diverse planet when it comes to flora. Unlike in vanilla $(thing)Minecraft$()--Plants in $(tfg) spawn based on local $(l:the_world/climate#climate)Climate Conditions$()."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Plants may be difficult to find during some $(l:the_world/climate#seasons)Seasons$() as they go through cycles of flowering and laying dormant, or changing color as the local temperature changes.$(br2)Colorful flowers can typically be crushed in a $(l:craftsmanship/quern)Quern$() for $(thing)Dye$(). While some plants can be used for making $(l:the_world/flora#medicinal_plants)medicine$() or $(l:the_world/flora#spices)meals$()."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfc:plant/anthurium"
+                }
+            },
+            "name": "标准",
+            "anchor": "standard_plants",
+            "text": "普通植物就像小花。它们会生长在草地、泥土和农田上。",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfc:plant/sagebrush"
+                }
+            },
+            "name": "干燥",
+            "text": "耐旱植物与普通植物一样，但它们可以在沙子上生长。这些植物一般只会生长在降雨量少的地区。",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:multiblock",
+            "anchor": "cacti",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "Y"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfc:plant/barrel_cactus[part=upper]",
+                    "Y": "tfc:plant/barrel_cactus[part=lower]"
+                }
+            },
+            "name": "仙人掌",
+            "text": "仙人掌可以长到两个方块的高度，而且会对你造成伤害!",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfc:plant/moss[down=true]"
+                }
+            },
+            "name": "匍匐植物",
+            "text": "匍匐植物会在其他方块表面爬行。它们大部分时候都会成片出现。",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "XY"
+                    ],
+                    [
+                        "0 "
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfc:wood/wood/birch",
+                    "Y": "tfc:plant/licorice_fern[facing=south]"
+                }
+            },
+            "name": "附生植物",
+            "text": "附生植物只能生长在原木的侧面。",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfc:plant/bluegrass"
+                }
+            },
+            "name": "矮草",
+            "text": "矮草会随着时间推移而长高。它们也能够在泥炭和壤泥上生长。",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "Y"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfc:plant/king_fern[part=upper]",
+                    "Y": "tfc:plant/king_fern[part=lower]"
+                }
+            },
+            "name": "高草",
+            "text": "高度刚好够遮住你的视野。",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfc:plant/ivy[up=true,north=true]"
+                }
+            },
+            "name": "藤蔓",
+            "text": "只要足够温暖，藤蔓就会自行散布。",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "Y"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfc:plant/liana_plant",
+                    "Y": "tfc:plant/liana"
+                }
+            },
+            "name": "悬垂藤",
+            "text": "悬垂藤蔓以其顶部一个方块为基础向下生长。",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "Y"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfc:plant/arundo",
+                    "Y": "tfc:plant/arundo_plant"
+                }
+            },
+            "name": "缠绕藤",
+            "text": "缠绕藤从地面向上生长。有些品种是实心的。",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "aquatic_plants",
+            "text": "Aquatic plants are restricted to either spawn in fresh or salty water. Otherwise, they grow and act much like the plants you see on the surface. Some water plants can be cooked for food.",
+            "title": "Aquatic Plants"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfc:plant/sago[fluid=water]"
+                }
+            },
+            "name": "普通水生植物",
+            "text": "用$(thing)刀$()割普通水生植物可以获得$(thing)海草$()。",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfc:plant/manatee_grass[fluid=salt_water]"
+                }
+            },
+            "name": "水草",
+            "text": "水草就是生长在水中的草。",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "Y"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfc:plant/cattail[part=upper]",
+                    "Y": "tfc:plant/cattail[part=lower,fluid=water]"
+                }
+            },
+            "name": "高大水生植物",
+            "text": "只要下面那格有水就可以活。用$(thing)刀$()割$(thing)水生芋头$()和$()阔叶香蒲$()可以获得它们的$(thing)根$()。",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "Y"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfc:plant/duckweed",
+                    "Y": "minecraft:water"
+                }
+            },
+            "name": "漂萍植物",
+            "text": "漂萍植物生长在水面上。船会在接触时破坏它们。",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "Y"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfc:plant/winged_kelp[fluid=salt_water]",
+                    "Y": "tfc:plant/winged_kelp_plant[fluid=salt_water]"
+                }
+            },
+            "name": "海带",
+            "text": "海带是缠绕藤的水生版本。",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "Y"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfc:plant/giant_kelp_flower[facing=up,fluid=salt_water]",
+                    "Y": "tfc:plant/giant_kelp_plant[down=true,up=true,fluid=salt_water]"
+                }
+            },
+            "name": "树海带",
+            "text": "树海带在水下长成错综复杂的树。用$(thing)刀$()可以收获它们的花朵。",
+            "enable_visualize": false
+        },
+        {
+            "anchor": "medicinal_plants",
+            "type": "patchouli:spotlight",
+            "item": {
+                "tag": "tfg:medicinal_ingredients/plants"
+            },
+            "title": "Medicinal Plants",
+            "text": "Many plants in $(tfg) hold medicinal value and can be used for creating phytotherapeutic medicine. You can combine these ingredients in a mixing bowl with wax, binders, and spring water to make pills. Or more advanced medications."
+        },
+        {
+            "title": "Spices",
+            "type": "patchouli:spotlight",
+            "item": {
+                "tag": "tfg:foods/spice_plants"
+            },
+            "anchor": "spices",
+            "text": "With $(thing)Firmalife$(), there are a number of small plants you can collect and grow on your own, which have cooking properties. They can all be found in the wild, and once harvested, may be cultivated in a $(l:agriculture/greenhouse)Greenhouse$(), in which they consume 20 points of N, P, and K."
+        },
+        {
+            "type": "tfg:table",
+            "strings": [
+                {
+                    "text": "Spice",
+                    "bold": true
+                },
+                {
+                    "text": "温度（°C）",
+                    "bold": true
+                },
+                {
+                    "text": "降雨量（毫米）",
+                    "bold": true
+                },
+                {
+                    "text": "罗勒"
+                },
+                {
+                    "text": "12 - 25"
+                },
+                {
+                    "text": "300 - 500"
+                },
+                {
+                    "text": "月桂"
+                },
+                {
+                    "text": "8 - 14"
+                },
+                {
+                    "text": "25 - 225"
+                },
+                {
+                    "text": "豆蔻"
+                },
+                {
+                    "text": "18 - 30"
+                },
+                {
+                    "text": "350 - 500"
+                },
+                {
+                    "text": "香菜"
+                },
+                {
+                    "text": "5 - 15"
+                },
+                {
+                    "text": "0 - 150"
+                },
+                {
+                    "text": "孜然"
+                },
+                {
+                    "text": "6 - 20"
+                },
+                {
+                    "text": "50 - 250"
+                },
+                {
+                    "text": "牛至"
+                },
+                {
+                    "text": "5 - 13"
+                },
+                {
+                    "text": "50 - 150"
+                },
+                {
+                    "text": "多香果"
+                },
+                {
+                    "text": "15 - 30"
+                },
+                {
+                    "text": "200 - 450"
+                },
+                {
+                    "text": "香草"
+                },
+                {
+                    "text": "18 - 30"
+                },
+                {
+                    "text": "200 - 500"
+                }
+            ],
+            "text": "",
+            "title": "Wild Spice Ranges",
+            "legend": [],
+            "columns": 2,
+            "first_column_width": 80,
+            "column_width": 70,
+            "row_height": 10,
+            "left_buffer": 2,
+            "top_buffer": 12,
+            "draw_background": false
+        },
+        {
+            "type": "patchouli:empty",
+            "draw_filler": false
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "firmalife:plant/basil[stage=1]"
+                }
+            },
+            "name": "罗勒",
+            "anchor": "basil",
+            "text": "$(thing)野生罗勒$()生长在温度12-25°C、降雨量300-500mm的区域。",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "firmalife:plant/bay_laurel[stage=1]"
+                }
+            },
+            "name": "月桂",
+            "anchor": "bay",
+            "text": "$(thing)野生月桂$()生长在温度8-14°C、降雨量25-225mm的区域。",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "firmalife:plant/cardamom[stage=1]"
+                }
+            },
+            "name": "豆蔻",
+            "anchor": "cardamom",
+            "text": "$(thing)野生豆蔻$()生长在温度18-30°C、降雨量350-500mm的区域。",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "firmalife:plant/cilantro[stage=1]"
+                }
+            },
+            "name": "香菜",
+            "anchor": "cilantro",
+            "text": "$(thing)野生香菜$()生长在温度5-15°C、降雨量0-150mm的区域。",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "firmalife:plant/cumin[stage=1]"
+                }
+            },
+            "name": "孜然",
+            "anchor": "cumin",
+            "text": "$(thing)野生孜然$()生长在温度6-20°C、降雨量50-250mm的区域。",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "firmalife:plant/oregano[stage=1]"
+                }
+            },
+            "name": "牛至",
+            "anchor": "oregano",
+            "text": "$(thing)野生牛至$()生长在温度5-13°C、降雨量50-150mm的区域。",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "firmalife:plant/pimento[stage=1]"
+                }
+            },
+            "name": "多香果",
+            "anchor": "pimento",
+            "text": "$(thing)野生多香果$()生长在温度15-30°C、降雨量200-450mm的区域。",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "firmalife:plant/vanilla[stage=1]"
+                }
+            },
+            "name": "香草",
+            "anchor": "vanilla",
+            "text": "$(thing)野生香草$()生长在温度18-30°C、降雨量200-500mm的区域。",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:crafting",
+            "anchor": "seed_ball",
+            "recipe": "firmalife:crafting/seed_ball",
+            "text": "$(item)种子球$()可用于种植不同类型的草。这在清理基地准备建造时很有用。种子球的配方需要$(item)堆肥$()和4份$(thing)种子$()。"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "firmalife:plant/butterfly_grass"
+                }
+            },
+            "name": "蝴蝶草",
+            "anchor": "butterfly_grass",
+            "text": "一株蝴蝶草。",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:text",
+            "text": "蝴蝶草会随时间成熟。当一株蝴蝶草成熟时，它有机会蔓延到周围的方块，或转变为新的植物。由其他草块蔓延而来的蝴蝶草块不会再蔓延。$(br)蝴蝶草转变为其他草后，你可以用$(item)剪刀$()采集它们。"
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "延伸阅读",
+            "anchor": "relations",
+            "entries": [
+                "tfg:the_world/wild_fruits",
+                "tfg:the_world/wild_animals",
+                "tfg:the_world/wild_crops",
+                "tfg:the_world/earth_tree_index",
+                "tfg:agriculture/greenhouse"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 4,
+    "extra_recipe_mappings": {
+        "tag:tfg:medicinal_ingredients/plants": 21,
+        "firmalife:plant/basil": 24,
+        "firmalife:spice/basil_leaves": 24,
+        "firmalife:plant/bay_laurel": 25,
+        "tfg:spice/bay_leaf": 25,
+        "firmalife:plant/cardamom": 26,
+        "tfg:spice/cardamom_pods": 26,
+        "firmalife:plant/cilantro": 27,
+        "tfg:spice/cilantro_leaves": 27,
+        "firmalife:plant/cumin": 28,
+        "tfg:spice/cumin_seeds": 28,
+        "firmalife:plant/oregano": 29,
+        "tfg:spice/oregano_leaves": 29,
+        "firmalife:plant/pimento": 30,
+        "tfg:spice/allspice": 30,
+        "firmalife:plant/vanilla": 31,
+        "firmalife:spice/vanilla": 31,
+        "firmalife:seed_ball": 32
+    }
+}

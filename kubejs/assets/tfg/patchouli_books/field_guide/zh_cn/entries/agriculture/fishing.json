@@ -1,0 +1,72 @@
+{
+    "name": "钓鱼",
+    "category": "tfg:agriculture",
+    "icon": "tfc:metal/fishing_rod/copper",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "anchor": "intro",
+            "text": "河湖大海中的鱼必须通过$(thing)钓鱼$()才能抓住。若鱼竿上有鱼饵，鱼儿便会试图咬钩。咬钩的鱼儿有时会把鱼饵吃掉。鱼咬钩后还要收线才能钓上来。更高级的鱼钩收线时越容易操控。"
+        },
+        {
+            "type": "tfg:anvil_recipe",
+            "recipe": "tfc:anvil/bismuth_bronze_fish_hook",
+            "text": "First, you have to forge a fishing hook in an $(l:craftsmanship/anvils)Anvil$()."
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "tfc:crafting/metal/fishing_rod/bismuth_bronze",
+            "title": "钓鱼竿",
+            "text": "制作钓鱼竿需要鱼钩。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Fishing rods are not useful without bait. $(t:#tfc:small_fishing_bait)$(6)Bait$() can be added to rods in a crafting table. To catch normal fish, you need $(thing)Seeds$() or $(thing)Shellfish$(). To catch $(t:#tfc:large_fishing_bait)$(6)larger fish$(), such as $(thing)Dolphins$() and $(thing)Orcas$(), you need $(item)cod$(), $(item)salmon$(), $(item)tropical fish$(), or $(item)bluegills$()."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "To release the bobber, $(item)$(k:key.use)$(). Wait for a fish to spot the hook and bite it. Then $(item)$(k:key.use)$() to pull it in. As you do that, the meter on your hotbar will fill up. Pull too quickly, and the fish will get away with the bait. Each time you fish, the fish has a chance of eating the bait. To catch the fish, pull it up on land and kill it with a tool or catch it with a $(l:agriculture/fishing#fishing_net)Fishing Net$(). You can hold the fishing rod in your offhand to make this easier."
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/fishing.png"
+            ],
+            "text": "钓鱼时蓄力条会取代经验条。",
+            "border": true
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "fishing_net",
+            "title": "渔网",
+            "item": {
+                "tag": "forge:tools/fishing_nets"
+            },
+            "text": "Tired of hunting down fish with spears? Or losing a floppy catch while fishing? Craft a $(thing)Fishing Net$() to scoop up your dinner.$(br)To use a fishing net; $(item)$(k:key.use)$() on a fish entity to capture the fish into your inventory. Different tier fishing nets all act the same, but have different durability."
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": "木制渔网",
+            "recipe": "tfc:kjs/damage/shaped/fishing_net/wood",
+            "text": "一款基础的 $(item)木制渔网$()。"
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "延伸阅读",
+            "anchor": "relations",
+            "entries": [
+                "tfg:cooking/cooking_methods",
+                "tfg:cooking/decay",
+                "tfg:cooking/food_and_water",
+                "tfg:the_world/wild_animals",
+                "tfg:craftsmanship/anvils"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 7,
+    "extra_recipe_mappings": {
+        "tag:forge:fishing_rods": 0,
+        "tag:forge:tools/fishing_nets": 7
+    }
+}

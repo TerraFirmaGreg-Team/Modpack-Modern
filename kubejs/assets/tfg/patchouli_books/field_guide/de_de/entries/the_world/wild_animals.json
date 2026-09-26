@@ -1,0 +1,668 @@
+{
+	"name": "Earth Fauna",
+	"category": "tfg:the_world",
+	"icon": "tfc:medium_raw_hide",
+	"pages": [
+        {
+            "type": "patchouli:text",
+            "title": "Index",
+            "anchor": "index",
+            "text": "$(li)$(bold)$(l:the_world/wild_animals#intro)Introduction$()$(li)$(bold)$(l:the_world/wild_animals#livestock)Livestock$()$(li2)$(l:the_world/wild_animals#pig)Pig$()$(li2)$(l:the_world/wild_animals#cow)Cow$()$(li2)$(l:the_world/wild_animals#goat)Goat$()$(li2)$(l:the_world/wild_animals#yak)Yak$()$(li2)$(l:the_world/wild_animals#alpaca)Alpaca$()$(li2)$(l:the_world/wild_animals#sheep)Sheep$()$(li2)$(l:the_world/wild_animals#musk_ox)Musk Ox$()$(li2)$(l:the_world/wild_animals#chicken)Chicken$()$(li2)$(l:the_world/wild_animals#duck)Duck$()$(li2)$(l:the_world/wild_animals#quail)Quail$()"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li2)$(l:the_world/wild_animals#donkey)Donkey$()$(li2)$(l:the_world/wild_animals#mule)Mule$()$(li2)$(l:the_world/wild_animals#horse)Horse$()$(li2)$(l:the_world/wild_animals#dromedary_camel)Dromedary Camel$()$(li2)$(l:the_world/wild_animals#bactrian_camel)Bactrian Camel$()$(li)$(bold)$(l:the_world/wild_animals#predators)Predators$()$(li2)$(l:the_world/wild_animals#polar_bear)Polar Bear$()$(li2)$(l:the_world/wild_animals#black_bear)Black Bear$()$(li2)$(l:the_world/wild_animals#grizzly_bear)Grizzly Bear$()$(li2)$(l:the_world/wild_animals#cougar)Cougar$()$(li2)$(l:the_world/wild_animals#panther)Panther$()$(li2)$(l:the_world/wild_animals#lion)Lion$()$(li2)$(l:the_world/wild_animals#tiger)Tiger$()$(li2)$(l:the_world/wild_animals#sabertooth)Sabertooth$()$(li2)$(l:the_world/wild_animals#wolf)Wolf$()"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li2)$(l:the_world/wild_animals#direwolf)Direwolf$()$(li2)$(l:the_world/wild_animals#hyena)Hyena$()$(li2)$(l:the_world/wild_animals#crocodile)Crocodile$()$(li2)$(l:the_world/wild_animals#ocelot)Ocelot$()$(bold)$(li)$(l:the_world/wild_animals#ramming_prey)Ramming Prey$()$(li2)$(l:the_world/wild_animals#boar)Boar$()$(li2)$(l:the_world/wild_animals#moose)Moose$()$(li2)$(l:the_world/wild_animals#wildebeest)Wildebeest$()$(li2)$(l:the_world/wild_animals#bison)Bison$()$(bold)$(li)$(l:the_world/wild_animals#prey)Prey$()$(li2)$(l:the_world/wild_animals#rabbit)Rabbit$()$(li2)$(l:the_world/wild_animals#fox)Fox$()$(li2)$(l:the_world/wild_animals#deer)Deer$()$(li2)$(l:the_world/wild_animals#caribou)Caribou$()$(li2)$(l:the_world/wild_animals#gazelle)Gazelle$()"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li2)$(l:the_world/wild_animals#bongo)Bongo$()$(li2)$(l:the_world/wild_animals#grouse)Grouse$()$(li2)$(l:the_world/wild_animals#pheasant)Pheasant$()$(li2)$(l:the_world/wild_animals#turkey)Turkey$()$(li2)$(l:the_world/wild_animals#peafowl)Peafowl$()$(li2)$(l:the_world/wild_animals#lemming)Lemming$()$(li2)$(l:the_world/wild_animals#jerboa)Jerboa$()$(li2)$(l:the_world/wild_animals#mongoose)Mongoose$()$(bold)$(li)$(l:the_world/wild_animals#aquatic)Aquatic Animals$()$(li2)$(l:the_world/wild_animals#penguin)Penguin$()$(li2)$(l:the_world/wild_animals#turtle)Sea Turtle$()"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(bold)$(li)$(l:the_world/wild_animals#fish)Fish$()$(li2)$(l:the_world/wild_animals#cod)Cod$()$(li2)$(l:the_world/wild_animals#pufferfish)Pufferfish$()$(li2)$(l:the_world/wild_animals#jellyfish)Jellyfish$()$(li2)$(l:the_world/wild_animals#tropical_fish)Tropical Fish$()$(li2)$(l:the_world/wild_animals#salmon)Salmon$()$(li2)$(l:the_world/wild_animals#bluegill)Bluegill$()$(bold)$(li)$(l:the_world/wild_animals#shellfish)Shellfish$()$(li2)$(l:the_world/wild_animals#isopod)Isopod$()$(li2)$(l:the_world/wild_animals#lobster)Lobster$()$(li2)$(l:the_world/wild_animals#crayfish)Crayfish$()$(li2)$(l:the_world/wild_animals#horseshoe_crab)Horseshoe Crab$()"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(bold)$(li)$(l:the_world/wild_animals#large_aquatic_animals)Large Aquatic Animals$()$(li2)$(l:the_world/wild_animals#orca)Orca$()$(li2)$(l:the_world/wild_animals#dolphin)Dolphin$()$(li2)$(l:the_world/wild_animals#manatee)Manatee$()$(li2)$(l:the_world/wild_animals#leopard_seal)Leopard Seal$()$(li2)$(l:the_world/wild_animals#squid)Squid$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "intro",
+            "title": "Introduction to Animals",
+            "text": "Animals can be grouped into a few different categories: $(l:the_world/wild_animals#livestock)Livestock$(), $(l:the_world/wild_animals#predators)Predators$(), $(l:the_world/wild_animals#prey)Prey$(), and $(l:the_world/wild_animals#aquatic)Aquatic$() animals. The vast majority of animals will provide meat when killed. However, some meat may not be safe to eat; especially raw."
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Livestock",
+            "anchor": "livestock",
+            "text": "$(thing)Livestock$() are animals that can be tamed and bred by the player. Livestock can be either $(thing)male$() or $(thing)female$() so it is important when collecting wild livestock to try and get one of each sex for breeding."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "pig",
+            "text": "$(bold)$(l:the_world/climate#temperature)Spawn Temp$():  -10 - 35°C$(br)$(bold)$(l:the_world/climate#rainfall)Spawn Rainfall$():  > 200mm$(br)$(bold)Spawn Area$():  Mild Forests$(br)$(bold)Category$():  $(l:agriculture/animal_husbandry#mammals)Mammals$()$(br)$(bold)Diet$():  Anything, even if it's rotten.$(br)$(bold)Max Children$():  10$(br)$(bold)Gestation Time$():  19 days$(br)$(bold)Growth Time$():  80 Days$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Max Uses$():  60",
+            "title": "Pigs"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:pig{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
+            "scale": 0.6,
+            "name": " ",
+            "text": "A pig."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "cow",
+            "text": "$(bold)$(l:the_world/climate#temperature)Spawn Temp$():  -10 - 35°C$(br)$(bold)$(l:the_world/climate#rainfall)Spawn Rainfall$():  > 250mm$(br)$(bold)Spawn Area$():  Most Climates$(br)$(bold)Category$():  $(l:agriculture/animal_husbandry#dairy_animals)Dairy$()$(br)$(bold)Diet$():  $(l:cooking/food_and_water#grain)Grain$(), which may be rotten.$(br)$(bold)Max Children$():  2$(br)$(bold)Gestation Time$():  58 days$(br)$(bold)Growth Time$():  192 Days$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Max Uses$():  128$(br)$(bold)Product$():  $(l:cooking/cheese)Milk$()$(br)$(bold)Produce Cycle$():  1 Day",
+            "title": "Cows"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:cow{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
+            "scale": 0.75,
+            "name": " ",
+            "text": "A cow."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "goat",
+            "text": "$(bold)$(l:the_world/climate#temperature)Spawn Temp$():  -12 - 25°C$(br)$(bold)$(l:the_world/climate#rainfall)Spawn Rainfall$():  > 300mm$(br)$(bold)Spawn Area$():  Moderate Climates$(br)$(bold)Category$():  $(l:agriculture/animal_husbandry#dairy_animals)Dairy$()$(br)$(bold)Diet$():  $(l:cooking/food_and_water#grain)Grain$(), $(l:cooking/food_and_water#fruit)Fruit$(), and $(l:cooking/food_and_water#vegetables)Vegetables$(), which may be rotten.$(br)$(bold)Max Children$():  2$(br)$(bold)Gestation Time$():  32 Days$(br)$(bold)Growth Time$():  96 Days$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Max Uses$():  60$(br)$(bold)Product$():  $(l:cooking/cheese)Milk$()$(br)$(bold)Produce Cycle$():  3 Days",
+            "title": "Goats"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:goat{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
+            "scale": 0.75,
+            "name": " ",
+            "text": "A goat."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "yak",
+            "text": "$(bold)$(l:the_world/climate#temperature)Spawn Temp$():  > -11°C$(br)$(bold)$(l:the_world/climate#rainfall)Spawn Rainfall$():  > 100mm$(br)$(bold)Spawn Area$():  Cold Climates$(br)$(bold)Category$():  $(l:agriculture/animal_husbandry#dairy_animals)Dairy$()$(br)$(bold)Diet$():  $(l:cooking/food_and_water#grain)Grain$()$(br)$(bold)Max Children$():  1$(br)$(bold)Gestation Time$():  64 Days$(br)$(bold)Growth Time$():  180 Days$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Max Uses$():  230$(br)$(bold)Product$():  $(l:cooking/cheese)Milk$()$(br)$(bold)Produce Cycle$():  23.5 Hours",
+            "title": "Yak"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:yak{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
+            "scale": 0.75,
+            "name": " ",
+            "text": "A yak."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "alpaca",
+            "text": "$(bold)$(l:the_world/climate#temperature)Spawn Temp$():  -8 - 20°C$(br)$(bold)$(l:the_world/climate#rainfall)Spawn Rainfall$():  > 250mm$(br)$(bold)Spawn Area$():  Moderate Climates$(br)$(bold)Category$():  $(l:agriculture/animal_husbandry#wooly_animals)Wooly$()$(br)$(bold)Diet$():  $(l:cooking/food_and_water#grain)Grain$() and $(l:cooking/food_and_water#fruit)Fruit$()$(br)$(bold)Max Children$():  2$(br)$(bold)Gestation Time$():  36 Days$(br)$(bold)Growth Time$():  98 Days$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Max Uses$():  128$(br)$(bold)Product$():  $(l:agriculture/weaving)Wool$()$(br)$(bold)Produce Cycle$():  5 Days",
+            "title": "Alpaka"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:alpaca{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
+            "scale": 0.75,
+            "name": " ",
+            "text": "An alpaca."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "sheep",
+            "text": "$(bold)$(l:the_world/climate#temperature)Spawn Temp$():  0 - 35°C$(br)$(bold)$(l:the_world/climate#rainfall)Spawn Rainfall$():  70 - 300mm$(br)$(bold)Spawn Area$():  Drier Climates$(br)$(bold)Category$():  $(l:agriculture/animal_husbandry#wooly_animals)Wooly$()$(br)$(bold)Diet$():  $(l:cooking/food_and_water#grain)Grain$()$(br)$(bold)Max Children$():  2$(br)$(bold)Gestation Time$():  32 Days$(br)$(bold)Growth Time$():  56 Days$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Max Uses$():  60$(br)$(bold)Product$():  $(l:agriculture/weaving)Wool$()$(br)$(bold)Produce Cycle$():  7 Days",
+            "title": "Schaf"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:sheep{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
+            "scale": 0.75,
+            "name": " ",
+            "text": "A sheep."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "musk_ox",
+            "text": "$(bold)$(l:the_world/climate#temperature)Spawn Temp$():  -25 - 0°C$(br)$(bold)$(l:the_world/climate#rainfall)Spawn Rainfall$():  > 100mm$(br)$(bold)Spawn Area$():  Cold Climates$(br)$(bold)Category$():  $(l:agriculture/animal_husbandry#wooly_animals)Wooly$()$(br)$(bold)Diet$():  $(l:cooking/food_and_water#grain)Grain$()$(br)$(bold)Max Children$():  1$(br)$(bold)Gestation Time$():  64 Days$(br)$(bold)Growth Time$():  168 Days$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Max Uses$():  160$(br)$(bold)Product$():  $(l:agriculture/weaving)Wool$()$(br)$(bold)Produce Cycle$():  4 Days",
+            "title": "Moschusochse"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:musk_ox{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
+            "scale": 0.75,
+            "name": " ",
+            "text": "A musk ox."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "chicken",
+            "text": "$(bold)$(l:the_world/climate#temperature)Spawn Temp$():  > 14°C$(br)$(bold)$(l:the_world/climate#rainfall)Spawn Rainfall$():  > 225mm$(br)$(bold)Spawn Area$():  Warm Forests$(br)$(bold)Category$():  $(l:agriculture/animal_husbandry#oviparous_animals)Oviparous Animals$()$(br)$(bold)Diet$():  $(l:cooking/food_and_water#grain)Grain$(), $(l:cooking/food_and_water#fruit)Fruits$(), $(l:cooking/food_and_water#vegetables)Vegetables$(), and $(l:agriculture/growing_crops)Seeds$() which may be rotten.$(br)$(bold)Egg Cycle$():  30 Hours$(br)$(bold)Growth Time$():  24 Days$(br)$(bold)Hatch Time$():  8 Days$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Max Uses$():  100$(br)$(bold)Product$():  Eggs and feathers.$()",
+            "title": "Chickens"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:chicken{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
+            "scale": 0.7,
+            "name": " ",
+            "text": "A chicken."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "duck",
+            "text": "$(bold)$(l:the_world/climate#temperature)Spawn Temp$():  -25 - 30°C$(br)$(bold)$(l:the_world/climate#rainfall)Spawn Rainfall$():  > 100mm$(br)$(bold)Spawn Area$():  Plains$(br)$(bold)Category$():  $(l:agriculture/animal_husbandry#oviparous_animals)Oviparous Animals$()$(br)$(bold)Diet$():  $(l:cooking/food_and_water#grain)Grain$(), $(l:cooking/food_and_water#fruit)Fruits$(), $(l:cooking/food_and_water#vegetables)Vegetables$(), and $(l:agriculture/growing_crops)Seeds$().$(br)$(bold)Egg Cycle$():  32 Hours$(br)$(bold)Growth Time$():  32 Days$(br)$(bold)Hatch Time$():  8 Days$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Max Uses$():  72$(br)$(bold)Product$():  Eggs and feathers.$()",
+            "title": "Ducks"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:duck{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
+            "scale": 0.7,
+            "name": " ",
+            "text": "A duck."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "quail",
+            "text": "$(bold)$(l:the_world/climate#temperature)Spawn Temp$():  -15 - 15°C$(br)$(bold)$(l:the_world/climate#rainfall)Spawn Rainfall$():  > 200mm$(br)$(bold)Spawn Area$():  Cold Climates$(br)$(bold)Category$():  $(l:agriculture/animal_husbandry#oviparous_animals)Oviparous Animals$()$(br)$(bold)Diet$():  $(l:cooking/food_and_water#grain)Grain$(), $(l:cooking/food_and_water#fruit)Fruits$(), $(l:cooking/food_and_water#vegetables)Vegetables$(), and $(l:agriculture/growing_crops)Seeds$() which may be rotten.$(br)$(bold)Egg Cycle$():  28 Hours$(br)$(bold)Growth Time$():  22 Days$(br)$(bold)Hatch Time$():  8 Days$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Max Uses$():  48$(br)$(bold)Product$():  Eggs and feathers.$()",
+            "title": "Wachtel"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:quail{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
+            "scale": 0.7,
+            "name": " ",
+            "text": "A quail."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "donkey",
+            "text": "$(bold)$(l:the_world/climate#temperature)Spawn Temp$():  > -15°C$(br)$(bold)$(l:the_world/climate#rainfall)Spawn Rainfall$():  130 - 400mm$(br)$(bold)Spawn Area$():  Wet Plains$(br)$(bold)Category$():  $(l:agriculture/animal_husbandry#equines)Equine$()$(br)$(bold)Diet$():  $(l:cooking/food_and_water#grain)Grain$() and $(l:cooking/food_and_water#fruit)Fruits$()$(br)$(bold)Max Children$():  1$(br)$(bold)Gestation Time$():  19 Days$(br)$(bold)Growth Time$():  80 Days$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Max Uses$():  60",
+            "title": "Donkeys"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:donkey{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
+            "scale": 0.6,
+            "name": " ",
+            "text": "A donkey."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "mule",
+            "text": "$(bold)$(l:the_world/climate#temperature)Spawn Temp$():  > -15°C$(br)$(bold)$(l:the_world/climate#rainfall)Spawn Rainfall$():  130 - 400mm$(br)$(bold)Spawn Area$():  Plains, bred from horses and donkeys.$(br)$(bold)Category$():  $(l:agriculture/animal_husbandry#equines)Equine$()$(br)$(bold)Diet$():  $(l:cooking/food_and_water#grain)Grain$() and $(l:cooking/food_and_water#fruit)Fruits$()$(br)$(bold)Max Children$():  1$(br)$(bold)Gestation Time$():  19 Days$(br)$(bold)Growth Time$():  80 Days$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Max Uses$():  60",
+            "title": "Mules"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:mule{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
+            "scale": 0.6,
+            "name": " ",
+            "text": "A mule."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "horse",
+            "text": "$(bold)$(l:the_world/climate#temperature)Spawn Temp$():  > -15°C$(br)$(bold)$(l:the_world/climate#rainfall)Spawn Rainfall$():  130 - 400mm$(br)$(bold)Spawn Area$():  Plains$(br)$(bold)Category$():  $(l:agriculture/animal_husbandry#equines)Equine$()$(br)$(bold)Diet$():  $(l:cooking/food_and_water#grain)Grain$() and $(l:cooking/food_and_water#fruit)Fruits$()$(br)$(bold)Max Children$():  1$(br)$(bold)Gestation Time$():  19 Days$(br)$(bold)Growth Time$():  80 Days$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Max Uses$():  60",
+            "title": "Horses"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:horse{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
+            "scale": 0.6,
+            "name": " ",
+            "text": "A horse."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "dromedary_camel",
+            "text": "$(bold)$(l:the_world/climate#temperature)Spawn Temp$():  > -5°C$(br)$(bold)$(l:the_world/climate#rainfall)Spawn Rainfall$():  < 100mm$(br)$(bold)Spawn Area$():  Hot and Dry Climates$(br)$(bold)Category$():  $(l:agriculture/animal_husbandry#camelides)Camel$()$(br)$(bold)Diet$():  $(l:cooking/food_and_water#grain)Grain$() and $(l:cooking/food_and_water#fruit)Fruits$()$(br)$(bold)Max Children$():  1$(br)$(bold)Gestation Time$():  19 Days$(br)$(bold)Growth Time$():  80 Days$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Max Uses$():  60",
+            "title": "Dromedary Camel"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfg:dromedary_camel{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
+            "scale": 0.6,
+            "name": " ",
+            "text": "A dromedary camel."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "bactrian_camel",
+            "text": "$(bold)$(l:the_world/climate#temperature)Spawn Temp$():  > -5°C$(br)$(bold)$(l:the_world/climate#rainfall)Spawn Rainfall$():  < 100mm$(br)$(bold)Spawn Area$():  Cold and Dry Climates$(br)$(bold)Category$():  $(l:agriculture/animal_husbandry#camelides)Camel$() / $(l:agriculture/animal_husbandry#wooly_animals)Wooly$()$(br)$(bold)Diet$():  $(l:cooking/food_and_water#grain)Grain$() and $(l:cooking/food_and_water#fruit)Fruits$()$(br)$(bold)Max Children$():  1$(br)$(bold)Gestation Time$():  24 Days$(br)$(bold)Growth Time$():  80 Days$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Max Uses$():  80$(br)$(bold)Product$():  $(l:agriculture/weaving)Wool$()$(br)$(bold)Produce Cycle$():  7 Days",
+            "title": "Bactrian Camel"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfg:bactrian_camel{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
+            "scale": 0.6,
+            "name": " ",
+            "text": "A bactrian camel."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "predators",
+            "text": "$(thing)Raubtiere$() sind Tiere, die den Spieler angreifen können. Sie sind entweder $(thing)nachtaktiv$() und jagen nur nachts oder $(thing)tagaktiv$() und jagen nur tagsüber. Raubtiere können neutral oder feindselig sein, je nachdem, ob sie kürzlich ein Ziel getötet haben. Raubtiere haben ein eigenes Revier, das sie verteidigen. Wenn du weit genug davon wegläufst, wird das Raubtier die Verfolgung abbrechen und in sein Revier zurückkehren.",
+            "title": "Raubtiere"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:polar_bear",
+            "scale": 0.55,
+            "name": "Eisbär",
+            "anchor": "polar_bear",
+            "text": "Der Eisbär spawnt nur in den kältesten Regionen mit einer $(l:the_world/climate#temperature)Temperatur$() von höchstens 10°C und einem $(l:the_world/climate#rainfall)Niederschlag$() von mindestens 100mm."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:grizzly_bear",
+            "scale": 0.55,
+            "name": "Grizzlybär",
+            "anchor": "grizzly_bear",
+            "text": "Der Grizzlybär spawnt in Wäldern mit gemäßigtem Klima, bei einer $(l:the_world/climate#temperature)Temperatur$() von -15 bis 15°C und mindestens 200mm $(l:the_world/climate#rainfall)Niederschlag$()."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:black_bear",
+            "scale": 0.55,
+            "name": "Schwarzbär",
+            "anchor": "black_bear",
+            "text": "Der Schwarzbär spawnt in Wäldern mit wärmerem und feuchterem Klima, bei einer $(l:the_world/climate#temperature)Temperatur$() von 5 bis 20°C und mindestens 250mm $(l:the_world/climate#rainfall)Niederschlag$()."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:cougar",
+            "scale": 0.6,
+            "name": "Puma",
+            "anchor": "cougar",
+            "text": "Der Puma bevorzugt die meisten gemäßigten Klimazonen mit einer $(l:the_world/climate#temperature)Temperatur$() von -10 bis 21°C und mindestens 150mm $(l:the_world/climate#rainfall)Niederschlag$()."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:panther",
+            "scale": 0.6,
+            "name": "Panther",
+            "anchor": "panther",
+            "text": "Der Panther bevorzugt die meisten gemäßigten Klimazonen mit einer $(l:the_world/climate#temperature)Temperatur$() von -10 bis 21°C und mindestens 150mm $(l:the_world/climate#rainfall)Niederschlag$()."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:lion",
+            "scale": 0.55,
+            "name": "Löwe",
+            "anchor": "lion",
+            "text": "Der Löwe spawnt in Ebenen mit einer durchschnittlichen $(l:the_world/climate#temperature)Temperatur$() von mindestens 16°C und einem $(l:the_world/climate#rainfall)Niederschlag$() zwischen 50 und 300mm."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:tiger",
+            "scale": 0.55,
+            "name": "Tiger",
+            "anchor": "tiger",
+            "text": "Der Tiger spawnt in Wäldern mit einer durchschnittlichen $(l:the_world/climate#temperature)Temperatur$() von mindestens 13 °C und $(l:the_world/climate#rainfall)Niederschlagsmenge$() von über 100 mm."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:sabertooth",
+            "scale": 0.6,
+            "name": "Säbelzahntiger",
+            "anchor": "sabertooth",
+            "text": "Der Säbelzahntiger spawnt bei jeder $(l:the_world/climate#temperature)Temperatur$() über 0 °C und jeder $(l:the_world/climate#rainfall)Niederschlagsmenge$() über 250 mm."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:wolf",
+            "anchor": "wolf",
+            "scale": 0.7,
+            "text": "The wolf spawns at any $(l:the_world/climate#temperature)temperature$() below 22°C, and $(l:the_world/climate#rainfall)rainfall$() between 70 and 480mm. They hunt in packs. Feeding a wolf enough times will tame it into a $(l:game_mechanics/pets)Dog$()."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:direwolf",
+            "anchor": "direwolf",
+            "scale": 0.7,
+            "text": "Der Schreckenswolf spawnt bei jeder $(l:the_world/climate#temperature)Temperatur$() unter dem Gefrierpunkt und einer $(l:the_world/climate#rainfall)Niederschlagsmenge$() zwischen 150 und 420 mm. Sie jagen in Rudeln. Sie sind größer als gewöhnliche Wölfe und können nicht gezähmt werden."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:hyena",
+            "anchor": "hyena",
+            "scale": 0.7,
+            "text": "Die Hyäne spawnt bei jeder $(l:the_world/climate#temperature)Temperatur$() über 15 °C und einer $(l:the_world/climate#rainfall)Niederschlagsmenge$() zwischen 80 und 380 mm. Sie jagen in Rudeln. Sie können nicht gezähmt werden."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:crocodile",
+            "anchor": "crocodile",
+            "scale": 0.7,
+            "name": "Crocodile",
+            "text": "Das Krokodil spawnt in der Nähe von Flüssen, Seen und Sümpfen bei jeder $(l:the_world/climate#temperature)Temperatur$() über 15 °C und bei jeder $(l:the_world/climate#rainfall)Niederschlagsmenge$(). Sie sind nachtaktiv und im Wasser am gefährlichsten."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:ocelot",
+            "anchor": "ocelot",
+            "scale": 0.7,
+            "text": "The ocelot attacks small animals. It spawns at any $(l:the_world/climate#temperature)temperature$() from 15 to 30°C, and $(l:the_world/climate#rainfall)rainfall$() between 300 and 500mm, in forests. Feeding an ocelot enough times will tame it into a $(l:game_mechanics/pets)Cat$(). Ocelots can eat raw fish"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "ramming_prey",
+            "text": "$(thing)Rammende$() Tiere versuchen gelegentlich, nahe Kreaturen, einschließlich des Spielers, anzugreifen. Ihre Angriffe sind mächtig, können aber ausgewichen werden. Wenn sie angegriffen werden, rammen sie häufiger.",
+            "title": "Rammen"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:boar",
+            "anchor": "boar",
+            "scale": 0.7,
+            "name": "Wildschwein",
+            "text": "Das Wildschwein spawnt bei einer $(l:the_world/climate#temperature)Temperatur$() unter 25 °C und über -5 °C sowie einer $(l:the_world/climate#rainfall)Niederschlagsmenge$() zwischen 130 und 400 mm."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:moose",
+            "anchor": "moose",
+            "scale": 0.7,
+            "name": "Elch",
+            "text": "Der Elch spawnt in Wäldern bei einer $(l:the_world/climate#temperature)Temperatur$() unter 10 °C und über -15 °C sowie einer $(l:the_world/climate#rainfall)Niederschlagsmenge$() zwischen 150 und 300 mm."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:wildebeest",
+            "anchor": "wildebeest",
+            "scale": 0.7,
+            "name": "Wildebeest",
+            "text": "Das Gnu spawnt in offenen Ebenen bei jeder $(l:the_world/climate#temperature)Temperatur$() über 13 °C und einer $(l:the_world/climate#rainfall)Niederschlagsmenge$() zwischen 90 und 380 mm."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfg:bison",
+            "anchor": "bison",
+            "scale": 0.7,
+            "name": "Bison",
+            "text": "Der Bison spawnt in offenen Ebenen bei einer $(l:the_world/climate#temperature)Temperatur$() unter 15 °C und über -10 °C sowie einer $(l:the_world/climate#rainfall)Niederschlagsmenge$() zwischen 160 und 420 mm."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "prey",
+            "text": "$(thing)Beutetiere$() haben Angst vor Spielern und Raubtieren. Sie sind sehr gut darin, vor Gefahren zu fliehen, können sich aber im Allgemeinen nicht wehren. Einige Beutetiere fressen gerne Pflanzen und Feldfrüchte.",
+            "title": "Beutetiere"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:rabbit",
+            "scale": 0.7,
+            "name": "Rabbit",
+            "anchor": "rabbit",
+            "text": "Das Kaninchen ist dafür bekannt, Karotten und Kohl anzuknabbern. Es kommt überall auf der Welt vor und verändert sein Fell je nach Klima. Zum Spawnen benötigt es lediglich 15 mm $(l:the_world/climate#rainfall)Niederschlagsmenge$()."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:fox",
+            "scale": 0.7,
+            "name": "Fuchs",
+            "anchor": "fox",
+            "text": "Der Fuchs frisst gerne die Beeren von Sträuchern. Er ist in Wäldern mit einer $(l:the_world/climate#temperature)Temperatur$() unter 25 °C und einer $(l:the_world/climate#rainfall)Niederschlagsmenge$() zwischen 130 und 400 mm anzutreffen."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:deer",
+            "anchor": "deer",
+            "scale": 0.7,
+            "text": "Der Hirsch spawnt in Wäldern bei jeder $(l:the_world/climate#temperature)Temperatur$() unter 25 °C und über -15 °C sowie einer $(l:the_world/climate#rainfall)Niederschlagsmenge$() zwischen 130 und 400 mm."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:caribou",
+            "scale": 0.6,
+            "name": "Caribou",
+            "anchor": "caribou",
+            "text": "Das Karibu spawnt bei jeder $(l:the_world/climate#temperature)Temperatur$() unter -9 °C und einer $(l:the_world/climate#rainfall)Niederschlagsmenge$() zwischen 110 und 500 mm."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:gazelle",
+            "scale": 0.7,
+            "anchor": "gazelle",
+            "text": "Die Gazelle spawnt in offenen Ebenen bei jeder $(l:the_world/climate#temperature)Temperatur$() über 12 °C und einer $(l:the_world/climate#rainfall)Niederschlagsmenge$() zwischen 90 und 380 mm."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:bongo",
+            "scale": 0.9,
+            "name": "Bongo",
+            "anchor": "bongo",
+            "text": "Das Bongo spawnt in Wäldern bei jeder $(l:the_world/climate#temperature)Temperatur$() über 15 °C und einer $(l:the_world/climate#rainfall)Niederschlagsmenge$() zwischen 230 und 500 mm."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:grouse",
+            "scale": 0.7,
+            "anchor": "grouse",
+            "text": "Das Birkhuhn spawnt bei jeder $(l:the_world/climate#temperature)Temperatur$() unter 13 °C und über -12 °C sowie einer $(l:the_world/climate#rainfall)Niederschlagsmenge$() zwischen 150 und 400 mm."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:pheasant",
+            "scale": 0.7,
+            "anchor": "pheasant",
+            "text": "Der Fasan spawnt in Wäldern bei jeder $(l:the_world/climate#temperature)Temperatur$() unter 17 °C und über -5 °C sowie einer $(l:the_world/climate#rainfall)Niederschlagsmenge$() zwischen 100 und 300 mm."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:turkey",
+            "scale": 0.7,
+            "anchor": "turkey",
+            "text": "Der Truthahn spawnt in Wäldern bei jeder $(l:the_world/climate#temperature)Temperatur$() unter 17 °C und über 0 °C sowie einer $(l:the_world/climate#rainfall)Niederschlagsmenge$() zwischen 250 und 450 mm."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:peafowl",
+            "scale": 0.6,
+            "name": "Peafowl",
+            "anchor": "peafowl",
+            "text": "Der Pfau spawnt in Wäldern bei jeder $(l:the_world/climate#temperature)Temperatur$() über 14 °C und einer $(l:the_world/climate#rainfall)Niederschlagsmenge$() zwischen 190 und 500 mm."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfg:lemming",
+            "scale": 1.5,
+            "offset": -0.2,
+            "name": "Lemming",
+            "anchor": "lemming",
+            "text": "Der Lemming spawnt bei jeder $(l:the_world/climate#temperature)Temperatur$() unter -3 °C und über -12 °C sowie einer $(l:the_world/climate#rainfall)Niederschlagsmenge$() zwischen 160 und 500 mm."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfg:jerboa",
+            "scale": 1.2,
+            "name": "Jerboa",
+            "anchor": "jerboa",
+            "text": "Die Wüstenspringmaus spawnt bei jeder $(l:the_world/climate#temperature)Temperatur$() unter 25 °C und über -3 °C sowie einer $(l:the_world/climate#rainfall)Niederschlagsmenge$() unter 160 mm."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfg:mongoose",
+            "scale": 0.8,
+            "name": "Mongoose",
+            "anchor": "mongoose",
+            "text": "Der Mungo spawnt bei jeder $(l:the_world/climate#temperature)Temperatur$() über 12 °C und einer $(l:the_world/climate#rainfall)Niederschlagsmenge$() zwischen 160 und 500 mm."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "aquatic",
+            "text": "$(thing)Wassertiere$() sind eine weit gefasste Kategorie, die verschiedene Verhaltensweisen umfasst. Sie können $(thing)Küstentiere$(), $(thing)Fische$(), $(thing)Schalentiere$() oder $(thing)große Wassertiere$() sein.",
+            "title": "Wassertiere"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(thing)Küstentiere$() spawnen ausschließlich an Meeresküsten und verbringen einen Teil des Tages mit Schwimmen und einen anderen Teil mit dem Laufen am Strand. Sie sind neugierige Tiere und folgen dem Spieler, können aber nicht gezähmt werden."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:penguin",
+            "scale": 0.7,
+            "name": "Pinguin",
+            "anchor": "penguin",
+            "text": "Der Pinguin spawnt nur an den kältesten Stränden bei einer $(l:the_world/climate#temperature)Temperatur$() von höchstens -14 °C und einer $(l:the_world/climate#rainfall)Niederschlagsmenge$() von mindestens 75 mm."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:turtle",
+            "scale": 0.7,
+            "name": "Meeresschildkröte",
+            "anchor": "turtle",
+            "text": "Die Meeresschildkröte bevorzugt warmes Wasser. Sie spawnt bei einer $(l:the_world/climate#temperature)Temperatur$() von mindestens 21 °C und einer $(l:the_world/climate#rainfall)Niederschlagsmenge$() von mindestens 250 mm."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "fish",
+            "text": "$(thing)Fish$() are small creatures that swim in water. Most of them can be $(l:agriculture/fishing)fished$(). Some prefer oceans, rivers, or lakes.",
+            "title": "Fish"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:cod",
+            "scale": 0.7,
+            "name": "Kabeljau",
+            "anchor": "cod",
+            "text": "Kabeljaue bevorzugen kältere Ozeane mit einer $(l:the_world/climate#temperature)Temperatur$() von höchstens 18 °C. Sie können geangelt werden."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:pufferfish",
+            "scale": 0.7,
+            "name": "Kugelfish",
+            "anchor": "pufferfish",
+            "text": "Kugelfische leben in jedem Ozean mit einer $(l:the_world/climate#temperature)Temperatur$() von mindestens 10 °C."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:jellyfish",
+            "scale": 0.7,
+            "name": "Qualle",
+            "anchor": "jellyfish",
+            "text": "Quallen leben in wärmeren Ozeanen mit einer $(l:the_world/climate#temperature)Temperatur$() von mindestens 18 °C."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:tropical_fish",
+            "scale": 0.7,
+            "name": "Tropischer Fisch",
+            "anchor": "tropical_fish",
+            "text": "Tropische Fische bevorzugen wärmere Ozeane mit einer $(l:the_world/climate#temperature)Temperatur$() von mindestens 18 °C."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:salmon",
+            "scale": 0.7,
+            "name": "Lachs",
+            "anchor": "salmon",
+            "text": "Lachse spawnen in jedem Fluss oder See mit einer $(l:the_world/climate#temperature)Temperatur$() von mindestens -5 °C."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:bluegill",
+            "scale": 0.7,
+            "name": "Blauer Sonnenbarsch",
+            "anchor": "bluegill",
+            "text": "Der Sonnenbarsch spawnt in jedem Fluss oder See mit einer $(l:the_world/climate#temperature)Temperatur$() von mindestens -10 °C und höchstens 26 °C."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "shellfish",
+            "text": "$(thing)Shellfish$() are small animals that live on the floor of bodies of water. They cannot be fished, but drop shells that can be eaten or made into $(thing)flux$(). Shellfish can be $(l:agriculture/fishing)bait$() for fish.",
+            "title": "Schalentier"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:isopod",
+            "scale": 0.7,
+            "name": "Assel",
+            "anchor": "isopod",
+            "text": "Asseln spawnen in tieferen Bereichen von Ozeanen mit einer $(l:the_world/climate#temperature)Temperatur$() von höchstens 14 °C."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:lobster",
+            "scale": 0.7,
+            "name": "Hummer",
+            "anchor": "lobster",
+            "text": "Hummer spawnen in jedem Ozean mit einer $(l:the_world/climate#temperature)Temperatur$() von höchstens 21 °C."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:crayfish",
+            "scale": 0.7,
+            "name": "Flusskrebs",
+            "anchor": "crayfish",
+            "text": "Flusskrebse sind ähnlich wie Hummer, spawnen jedoch in Flüssen und Seen. Sie benötigen eine $(l:the_world/climate#temperature)Temperatur$() von mindestens 5 °C und eine $(l:the_world/climate#rainfall)Niederschlagsmenge$() von mindestens 125 mm."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:horseshoe_crab",
+            "scale": 0.7,
+            "name": "Pfeilschwanzkrebs",
+            "anchor": "horseshoe_crab",
+            "text": "Pfeilschwanzkrebse spawnen in Ozeanen mit gemäßigtem Klima, bei einer $(l:the_world/climate#temperature)Temperatur$() zwischen 10 und 21 °C und einer $(l:the_world/climate#rainfall)Niederschlagsmenge$() von höchstens 400 mm."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "large_aquatic_animals",
+            "text": "$(thing)Large Water Creatures$() are larger animals that live in the bigger bodies of water. Some of them hunt fish. They drop $(l:game_mechanics/lighting)blubber$(), which can be made into lamp fuel.",
+            "title": "Large Aquatic Animals"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:orca",
+            "scale": 0.25,
+            "name": "Orca",
+            "anchor": "orca",
+            "text": "Orcas leben in tiefen Ozeanen mit einer $(l:the_world/climate#temperature)Temperatur$() von höchstens 19 °C und einer $(l:the_world/climate#rainfall)Niederschlagsmenge$() von mindestens 100 mm."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:dolphin",
+            "scale": 0.4,
+            "name": "Delphin",
+            "anchor": "dolphin",
+            "text": "Delfine leben in tiefen Ozeanen mit einer $(l:the_world/climate#temperature)Temperatur$() von mindestens 10 °C und einer $(l:the_world/climate#rainfall)Niederschlagsmenge$() von mindestens 200 mm."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfc:manatee",
+            "scale": 0.25,
+            "name": "Seekuh",
+            "anchor": "manatee",
+            "text": "Seekühe leben in warmen Seen mit einer $(l:the_world/climate#temperature)Temperatur$() von mindestens 20 °C und einer $(l:the_world/climate#rainfall)Niederschlagsmenge$() von höchstens 300 mm."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfg:leopard_seal",
+            "scale": 0.5,
+            "name": "Leopard Seal",
+            "anchor": "leopard_seal",
+            "text": "Der Leopardenseehund spawnt nur an den kältesten Stränden bei einer $(l:the_world/climate#temperature)Temperatur$() von höchstens -9 °C und einer $(l:the_world/climate#rainfall)Niederschlagsmenge$() von mindestens 105 mm. Sie jagen Pinguine und werden von Orcas gejagt."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "squid",
+            "text": "Tintenfische können in jedem Tiefseegebiet spawnen. Sie lassen $(thing)Tintensäcke$() fallen und bespritzen jeden Spieler mit Tinte, der ihnen zu nahe kommt. Manche behaupten, dass Tintenfische in tiefen, unerforschten Höhlen seltsame Eigenschaften besitzen.",
+            "title": "Squid"
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Further Reading",
+            "anchor": "relations",
+            "entries": [
+                "tfg:the_world/wild_crops",
+                "tfg:the_world/flora",
+                "tfg:the_world/wild_fruits",
+                "tfg:the_world/climate",
+                "tfg:agriculture/animal_husbandry",
+                "tfg:agriculture/weaving",
+                "tfg:agriculture/leather_making"
+            ]
+        }
+	],
+	"read_by_default": true,
+	"sortnum": 7
+}

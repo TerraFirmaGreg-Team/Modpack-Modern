@@ -1,0 +1,42 @@
+{
+    "name": "Лукошки",
+    "icon": "tfg:harvest_basket",
+    "category": "tfg:agriculture",
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "title": "Лукошки",
+            "item": {
+                "tag": "tfg:harvester"
+            },
+            "text": "Made for those with a short stature―$(thing)Harvest Baskets$() are just the tool needed for plucking trees and bushes of fruit.$(br)To use a harvest basket, $(item)$(k:key.use)$() on a $(l:the_world/wild_fruits#fruit_trees)Fruit Tree$(), $(l:the_world/wild_fruits#tall_bushes)Fruit Bush$(), $(l:agriculture/growing_crops#growing_grapes)Grape Trellis$(), $(l:agriculture/greenhouse#bonsai_planter)Bonsai Planter$(), $(l:agriculture/greenhouse#trellis_planter)Trellis Planter$(), or $(l:agriculture/greenhouse#hanging_planter)Hanging Planter$() and all blocks within a $(thing)7-block radius$() will be picked."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Лукошко имеет $(thing)128$() прочности, тогда как алюминиевое Лукошко для сбора не получает урона при использовании. Лукошки также могут использоваться такими механизмами, как $(thing)Автономный активатор из Create$(), для автоматизации сбора урожая. В процессе лукошко будет расходовать прочность."
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": "Лукошко",
+            "recipe": "tfg:shaped/harvest_basket_from_papyrus",
+            "text": "Обычное $(item)Лукошко$() может быть сделано из пропитанного папируса или твердой древесины."
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Читать дальше",
+            "anchor": "relations",
+            "entries": [
+                "tfg:agriculture/growing_crops",
+                "tfg:agriculture/greenhouse",
+                "tfg:agriculture/composting",
+                "tfg:the_world/wild_crops",
+                "tfg:the_world/wild_fruits"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 8,
+    "extra_recipe_mappings": {
+        "tag:tfg:harvester": 0
+    }
+}

@@ -1,0 +1,137 @@
+{
+    "name": "桶",
+    "category": "tfg:craftsmanship",
+    "icon": "tfc:wood/barrel/oak",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(thing)大桶$()是一种可以容纳物品和液体的设备。大桶中央的空格是用来放置物品的，液体则显示在左侧的水槽中。将$(thing)桶$()或$(thing)壶$()放在左上角的空格中可以将其中的液体添加到大桶、或将大桶中的液体盛出。拿着容器对着装有液体的大桶按下$(item)$(k:key.use)$()也有同样的效果。"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/gui/barrel.png"
+            ],
+            "text": "桶界面",
+            "border": false
+        },
+        {
+            "type": "patchouli:text",
+            "text": "可以按屏幕右边的按钮来将大桶$(thing)密封$()。密封状态下的桶在被破坏时会保留其中的液体。部分配方必须在密封的大桶中才能制作。对着大桶空手$(item)$(k:key.sneak)$()$(item)$(k:key.use)$()也可以切换大桶的密封状态。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)手持空的大桶点击水源方块可以盛装液体。$()$(li)启封的大桶会在雨中慢慢地装满水。$()$(li)大桶会接住上方融化的冰柱。$()$(li)密封大桶会弹出不在中心空格的物品。$()",
+            "title": "用桶小贴士"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "大桶的主要作用是用来混合某些液体和物品。用$(thing)大桶$()合成时，桶内的液体和物品的比例必须正确无误。某些配方还需要将大桶$(thing)密封$()一段时间才能执行。",
+            "title": "合成中"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "如果大桶中物品的比例和配方所需的不一致，多余的物品或液体就会被浪费。但如果执行的是$(thing)瞬时配方$()，则必须提供对应液体的足量物品才能进行。"
+        },
+        {
+            "type": "tfg:instant_barrel_recipe",
+            "anchor": "limewater",
+            "recipe": "tfc:barrel/limewater",
+            "text": "$(bold)Limewater$() is made by adding $(item)Flux$() to a barrel of $(thing)Water$(). A single $(item)Flux$() is required for every $(thing) 500 mB$() of $(thing)Water$(). $(thing)Limewater$() is a reagent used in $(l:agriculture/leather_making)Leather Making$(), and is used to make $(thing)Mortar$()."
+        },
+        {
+            "type": "tfg:sealed_barrel_recipe",
+            "anchor": "tannin",
+            "recipe": "tfc:barrel/tannin",
+            "text": "$(bold)Tannin$() is an acidic fluid, made by dissolving bark from certain $(t:#tfc:makes_tannin)$(6)Logs$() in a barrel of $(thing)Water$(). $(thing)Oak$(), $(thing)Birch$(), $(thing)Chestnut$(), $(thing)Douglas Fir$(), $(thing)Hickory$(), $(thing)Maple$(), and $()Sequoia$() are all able to be used to create $(thing)Tannin$().$(br)$(bold)TIP$(): Search $(emi) for $(6)#makes_tannin$() for a full list of useable logs."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "fluid_mixing",
+            "title": "Fluid Mixing",
+            "text": "Some barrel recipes operate by mixing two fluids at a certain ratio. This is done by taking a filled bucket of one of the ingredients, and putting it in the fluid addition slot of a barrel that has the required amount of the other fluid. This is done with $(thing)Vinegar$() and $(thing)Salt Water$() to make $(item)Brine$() in a 1:9 ratio."
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Quenching",
+            "anchor": "quenching",
+            "text": "Barrels have the ability to cool $(l:game_mechanics/heating)hot$() items. Put a hot item in a barrel of $(thing)Water$(), $(thing)Cooking Oil$(), or $(thing)Ice Slush$(), and it will quickly bring its temperature down.$(br)You can even directly throw items into the barrel with $(item)$(k:key.drop)$()."
+        },
+        {
+            "type": "patchouli:text",
+            "title": "染色",
+            "anchor": "dyeing",
+            "text": "Barrels have the ability to $(thing)Dye$() and $(thing)Bleach$() items. Most color-able things, like carpet, candles, and $(l:craftsmanship/building_materials#alabaster)Alabaster$() can be dyed by sealing them in a barrel of dye or bleached by sealing them in a barrel of lye."
+        },
+        {
+            "type": "patchouli:text",
+            "title": "食物保鲜",
+            "anchor": "preservation",
+            "text": "Barrels can preserve items in $(thing)Vinegar$(). Vinegar is made by sealing $(thing)Fruit$() in a barrel of $(thing)Alcohol$(). For information on how that process works, see the relevant $(l:cooking/decay#vinegar)page$()."
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "tfc:crafting/barrel_rack",
+            "text": "水平放置的大桶与垂直的大桶功能一致，但是摆放方式有所限制：若想在水平大桶上方放置一只水平大桶，则必须按$(item)$(k:key.use)$()放置一个$(thing)大桶架$()。"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "Y"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfc:wood/barrel/kapok[facing=north,rack=false,sealed=true]",
+                    "Y": "tfc:wood/barrel/kapok[facing=north,rack=true,sealed=false]"
+                }
+            },
+            "name": "水平放置大桶",
+            "text": "水平放置的大桶会用一只$(thing)龙头$()的方式显示开启状态。如果龙头是横向的，则说明已关闭。",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:text",
+            "text": "水平大桶开启时，若龙头下方无其他方块阻挡，会自动将内容流体输出至龙头下其他开启的大桶或其他流体容器中。"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/barrel_drip.png"
+            ],
+            "text": "大桶滴答。",
+            "border": true
+        },
+        {
+            "type": "patchouli:text",
+            "title": "红石",
+            "text": "Barrels can be automated with $(thing)Redstone$(). Applying a redstone signal to a barrel will seal it. Unsealed barrels can have fluids and items inserted and extracted from their open face. Sealed barrels can safely be moved around with $(thing)Pistons$() or $(thing)Contraptions$(). A $(l:logistics/redstone_devices#clock)Precision Clock$() can detect when a barrel recipe has finished and output a signal."
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "延伸阅读",
+            "anchor": "relations",
+            "entries": [
+                "tfg:craftsmanship/sticks_and_stones",
+                "tfg:craftsmanship/metallurgy",
+                "tfg:craftsmanship/pottery",
+                "tfg:agriculture/leather_making",
+                "tfg:cooking/decay",
+                "tfg:cooking/cheese",
+                "tfg:logistics/redstone_devices"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 13,
+    "extra_recipe_mappings": {
+        "tag:tfc:barrels": 0
+    }
+}

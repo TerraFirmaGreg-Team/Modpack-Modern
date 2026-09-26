@@ -1,0 +1,551 @@
+{
+    "name": "Roads",
+    "category": "tfg:logistics",
+    "icon": "rnr:rock/sett_road/quartzite",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(li)$(bold)$(l:logistics/roads#intro)Road Construction$()$(li)$(bold)$(l:logistics/roads#mattock)Mattocks$()$(li)$(bold)$(l:logistics/roads#base_course)Base Course$()$(li)$(bold)$(l:logistics/roads#pavers)Pavers$()$(li2)$(l:logistics/roads#hoggin)Hoggin Mix$()$(li2)$(l:logistics/roads#gravel_fill)Gravel Fill$()$(li2)$(l:logistics/roads#stone)Cobble, Sett, & Flagstones$()$(li2)$(l:logistics/roads#concrete)Concrete$()$(li2)$(l:logistics/roads#asphalt)Asphalt$()$(li)$(bold)$(l:logistics/roads#paving_cart)Paving Cart$()",
+            "title": "Каталог",
+            "anchor": "index"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "intro",
+            "title": "Введение",
+            "text": "Road construction is vital for increasing land-transport efficiency and consists of three basic steps:$(li)$(bold)1:$() Tamping the native soil with a $(l:logistics/roads#mattock)Mattock$().$(li)$(bold)2:$() Laying down $(l:logistics/roads#base_course)Crushed Base Course$().$(li)$(bold)3:$() Laying the surface $(l:logistics/roads#pavers)Paving Material$().$(br)Different varieties of road use different ingredients."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tag:rnr:mattocks",
+            "title": "Кайло",
+            "anchor": "mattock",
+            "text": "A mattock can be used on dirt-type blocks similarly to a $(l:craftsmanship/chisel)Chisel$(). When used in the default block mode, a mattock will tamp these blocks down with $(item)$(k:key.use)$(). If the mattock was used to tamp mud or muddy roots, the resulting tamped mud must be remediated by applying crushed base course."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "rnr:crushed_base_course",
+            "title": "Основание покрытия",
+            "anchor": "base_course",
+            "text": "After the local soil has been tamped down, the next step is to lay a base course for the road. Crushed base course can be crafted with either gravel or stone dust mixed with loose rocks, and can be applied to tamped blocks via $(item)$(k:key.use)$(). This base course of crushed rocks creates a sturdy base for the final walking surface to rest upon."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tag:rnr:road_materials",
+            "title": "Pavers",
+            "anchor": "pavers",
+            "text": "The final step in creating a road is laying the road surface. Different items, including $(l:logistics/roads#stone)Bricks$(), $(l:logistics/roads#hoggin)Hoggin$(), and $(l:logistics/roads#stone)Loose Rocks$() can be applied via $(item)$(k:key.use)$() on top of a base course to form a walkable road. Different items result in different varieties of road, and different varieties of road allow for various boosts to walking speeds."
+        },
+        {
+            "type": "tfg:multimultiblock",
+            "text": "Process of tamping, applying base course, and paving with bricks.",
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "R"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "R": "tfc:dirt/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "R"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "R": "rnr:tamped_loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "R"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "R": "rnr:base_course"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "R"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "R": "rnr:rock/sett_road/chert"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "hoggin",
+            "item": "rnr:hoggin_mix",
+            "title": "Песчано-гравийная смесь",
+            "text": "$(item)Hoggin$() is a compactible groundcover made from a mixture of clay, gravel, and sand. It can be applied on a base course to produce a simple path that offers a modest $(thing)$(bold)10% Boost$() to walking speed and allows $(item)Animal Cranks$() to run at 16RPM."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "text": "Road construction via hoggin mix.",
+            "enable_visualize": false,
+            "multiblock": {
+                "pattern": [
+                    [
+                        "    0    ",
+                        "         "
+                    ],
+                    [
+                        "         ",
+                        "         "
+                    ],
+                    [
+                        "DDCCRRRRR",
+                        "DDCCRRRRR"
+                    ]
+                ],
+                "mapping": {
+                    "D": "rnr:tamped_loam",
+                    "C": "rnr:base_course",
+                    "R": "rnr:hoggin"
+                }
+            }
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "gravel_fill",
+            "item": "tag:rnr:gravel_road_items",
+            "title": "Gravel & Macadam",
+            "text": "A small amount of $(thing)Gravel Fill$() can be applied to a base course to produce a simple path that offers a modest $(thing)$(bold)10% Boost$() to walking speed. Additional gravel fill can be added and tamped to create a $(thing)Macadam Road$() that gives a $(thing)$(bold)20% Speed Boost$().$(br)All paving materials above hoggin will allow $(item)Animal Cranks$() to run at 32RPM."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "text": "Road construction via gravel fill.",
+            "enable_visualize": false,
+            "multiblock": {
+                "pattern": [
+                    [
+                        "    0    ",
+                        "         "
+                    ],
+                    [
+                        "         ",
+                        "         "
+                    ],
+                    [
+                        "DDCCRROMM",
+                        "DDCCROMMM"
+                    ]
+                ],
+                "mapping": {
+                    "D": "rnr:tamped_loam",
+                    "C": "rnr:base_course",
+                    "R": "rnr:rock/gravel_road/chert",
+                    "O": "rnr:rock/over_height_gravel/chert",
+                    "M": "rnr:rock/macadam_road/chert"
+                }
+            }
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "stone",
+            "item": "tag:rnr:flagstone_road_items,tag:rnr:cobble_road_items,tag:rnr:brick_road_items",
+            "title": "Stone Pavers",
+            "text": "A variety of different stone walking surfaces can be applied over a base course, and all provide a $(thing)$(bold)20% Speed Bonus$().$(li)$(thing)$(bold)Cobbled Roads$() are created by adding $(item)Loose Rocks$() over the base course.$(li)$(thing)$(bold)Sett Roads$() can be constructed from stone or ceramic $(item)Bricks$().$(li)$(thing)$(bold)Flagstone Roads$() can be constructed from stone or sandstone $(item)Flagstones$()."
+        },
+        {
+            "type": "tfg:multimultiblock",
+            "text": "Road construction via various stone finishes.",
+            "enable_visualize": false,
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "    0    ",
+                            "         "
+                        ],
+                        [
+                            "         ",
+                            "         "
+                        ],
+                        [
+                            "DDCCRRRRR",
+                            "DDCCRRRRR"
+                        ]
+                    ],
+                    "mapping": {
+                        "D": "rnr:tamped_loam",
+                        "C": "rnr:base_course",
+                        "R": "rnr:rock/cobbled_road/chert"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "    0    ",
+                            "         "
+                        ],
+                        [
+                            "         ",
+                            "         "
+                        ],
+                        [
+                            "DDCCRRRRR",
+                            "DDCCRRRRR"
+                        ]
+                    ],
+                    "mapping": {
+                        "D": "rnr:tamped_loam",
+                        "C": "rnr:base_course",
+                        "R": "rnr:rock/sett_road/chert"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "    0    ",
+                            "         "
+                        ],
+                        [
+                            "         ",
+                            "         "
+                        ],
+                        [
+                            "DDCCRRRRR",
+                            "DDCCRRRRR"
+                        ]
+                    ],
+                    "mapping": {
+                        "D": "rnr:tamped_loam",
+                        "C": "rnr:base_course",
+                        "R": "rnr:rock/flagstones/chert"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tag:rnr:concrete_roads",
+            "anchor": "concrete",
+            "title": "Бетон",
+            "text": "Concrete roads offer a $(thing)$(bold)30% Movement Speed Bonus$() when properly constructed. However, road builders must be diligent when constructing concrete roads to prevent them from $(4)cracking$() or being $(4)trodden$() on while wet, as this will remove the speed bonus."
+        },
+        {
+            "type": "patchouli:image",
+            "title": "Бетонная дорога",
+            "images": [
+                "rnr:textures/gui/book/concrete_road.png"
+            ],
+            "border": true
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "wet_concrete",
+            "title": "Mixing Concrete",
+            "text": "$(thing)Concrete Roads$() are poured from $(item)Wet Concrete Mix$(). First, Combine water with stone dusts and a binder such as gypsum or clay to produce $(thing)Liquid Concrete$(). Then, dilute the liquid concrete with water to produce $(thing)Wet Concrete Mix$(). Ready for pouring.",
+            "item": "rnr:bucket/concrete"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "После того, как $(thing)Влажный бетон$() будет замешан, его можно собрать в ведро и поместить на $(thing)Основание покрытия$(), где он растечется по соседним блокам. Бетон затвердеет через день, и до его затвердевания необходимо следить за тем, чтобы никакие существа не ходили по влажному бетону, так как это создаст неровную поверхность, не дающую бонуса к скорости. Следы можно разгладить с помощью $(thing)Кайло$()."
+        },
+        {
+            "type": "patchouli:image",
+            "title": "Pouring Concrete",
+            "images": [
+                "rnr:textures/gui/book/wet_concrete.png"
+            ],
+            "border": true
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Shrinkage cracking is also a concern as concrete sets. If concrete is poured in areas more than $(bold)4x4$() blocks wide, blocks that are farther than two blocks from the nearest $(thing)Edge$(), $(thing)Control Joint$(), or $(thing)Textured Finish$() will crack when set. This can be prevented by pouring concrete in smaller areas, using a $(thing)Mattock$() to add $(thing)Control Joints$(), or by applying a $(thing)Textured Finish$()."
+        },
+        {
+            "type": "patchouli:image",
+            "title": "Контрольные соединения",
+            "images": [
+                "rnr:textures/gui/book/control_joints.png"
+            ],
+            "border": true
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(thing)Textured Finishes$() are created by pressing $(thing)Bricks$(), $(thing)Flagstones$(), or $(thing)Smooth Stone Blocks$() into drying concrete to create an architectural finish. These blocks also act as $(thing)Control Joints$() for preventing cracking. Once concrete has finished drying, a $(l:craftsmanship/chisel)Chisel$() can be used to form slabs and stairs."
+        },
+        {
+            "type": "patchouli:image",
+            "title": "Фокс Сетт Роуд",
+            "images": [
+                "rnr:textures/gui/book/faux_sett.png"
+            ],
+            "border": true
+        },
+        {
+            "type": "tfg:multimultiblock",
+            "text": "Road construction via concrete pouring.",
+            "enable_visualize": false,
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "    0    ",
+                            "         "
+                        ],
+                        [
+                            "         ",
+                            "         "
+                        ],
+                        [
+                            "DDCCRRRRR",
+                            "DDCCRRRRR"
+                        ]
+                    ],
+                    "mapping": {
+                        "D": "rnr:tamped_loam",
+                        "C": "rnr:base_course",
+                        "R": "rnr:wet_concrete_road"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "    0    ",
+                            "         "
+                        ],
+                        [
+                            "         ",
+                            "         "
+                        ],
+                        [
+                            "DDCCRRJRR",
+                            "DDCCRRJRR"
+                        ]
+                    ],
+                    "mapping": {
+                        "D": "rnr:tamped_loam",
+                        "C": "rnr:base_course",
+                        "R": "rnr:wet_concrete_road",
+                        "J": "rnr:wet_concrete_road_control_joint[axis=x]"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "    0    ",
+                            "         "
+                        ],
+                        [
+                            "         ",
+                            "         "
+                        ],
+                        [
+                            "DDCCRRJRR",
+                            "DDCCRRJRR"
+                        ]
+                    ],
+                    "mapping": {
+                        "D": "rnr:tamped_loam",
+                        "C": "rnr:base_course",
+                        "R": "rnr:concrete_road",
+                        "J": "rnr:concrete_road_control_joint[axis=x]"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "asphalt",
+            "title": "Asphalt",
+            "text": "Asphalt roads are an advanced road type relying on oil and $(tfg_short) production lines.$(br)After preparing the base course, you can pour $(thing)Asphalt Mixture$() over it. It will briefly become $(thing)Hot Asphalt$() before solidifying into a durable $(item)Asphalt Road$().$(br)A properly built asphalt road gives a $(thing)$(bold)40% Movement Speed Bonus$()."
+        },
+        {
+            "type": "patchouli:image",
+            "title": "Асфальтовая дорога",
+            "images": [
+                "tfg:textures/gui/field_guide/asphalt_roads/overview.png"
+            ],
+            "border": true
+        },
+        {
+            "type": "patchouli:text",
+            "text": "В отличие от бетонных дорог, асфальт не требует жёсткого контроля при заливке, он не покроется трещинами и повредится, если наступить на него до застывания. $(br2)Но будь осторожен при работе с $(thing)Горячим асфальтом$(), если ты наступишь на него, ты получишь урон. Поэтому носи защитное снаряжение при работе с ним. Важно, при ломании асфальта тебе выпадет $(thing)Кусок асфальта$() заместо полноценного блока дороги."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "tar_chunk",
+            "item": "tfg:tar_chunk",
+            "title": "Кусок смолы",
+            "text": "Основным сырьём для асфальта является нефть. Затвердейте $(thing)Нефть$(), $(thing)Лёгкую нефть$(), $(thing)Тяжёлую нефть$() и т.д. в $(thing)Жидкостном отвердителе$() для получения соответствующих $(thing)Смоляных$() блоков, затем обработайте их в $(thing)Экстракторе$(), чтобы получить $(thing)Кусок смолы$()."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "asphalt_mix",
+            "item": "tfg:asphalt_mix_bucket",
+            "title": "Асфальтная смесь",
+            "text": "Смешай кусок смолы и $(thing)Каменную пыль$() в $(thing)Миксере$() для создания $(thing)Асфальтного наполнителя$(). Добавь $(thing)Пыль гильсонита$() для увеличения количества наполнителя.$(br)Затем смешай наполнитель с песком, каменной пылью и $(thing)Дроблённым основанием покрытия$() для получения жидкой $(thing)Асфальтной смеси$().$(br)Храни её в резервуарах для быстрой транспортировки и заливки."
+        },
+        {
+            "type": "patchouli:image",
+            "title": "Заливаем асфальт",
+            "images": [
+                "tfg:textures/gui/field_guide/asphalt_roads/pouring.png"
+            ],
+            "border": true
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(item)$(k:key.use)$() a placed $(thing)Base Course Block$() with a bucket of $(thing)Asphalt Mixture$() to pour it. The mixture spreads to adjacent base course blocks, converting up to 20 adjacent base course blocks into $(thing)Hot Asphalt$(). After a short time, hot asphalt cools into $(thing)Asphalt Road$(). $(item)$(k:key.sneak)-$(k:key.use)$() on a $(thing)Base Course Block$() with the mixture to patch a small area, consuming less fluid."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tfg:asphalt_road_hot",
+            "title": "Горячий асфальт",
+            "text": "$(thing)Hot Asphalt$() is very hot; touching it will cause ongoing burn damage. Wear heat-protective gear when working with it.$(br2)Once it cools into an $(thing)Asphalt Road$(), the surface is no longer hot."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tfg:asphalt_road_stairs,tfg:asphalt_road_slab",
+            "text": "$(thing)Асфальтная дорога$() может быть превращена в  $(thing)Плиту из асфальтной дороги$() и $(thing)Ступеньки из асфальтной дороги$(), для этого используй режимы обработки блоков$(thing)Кайлом$() или камнерез."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "road_marking_stencils",
+            "item": {
+                "tag": "tfg:road_marking_stencils"
+            },
+            "title": "Трафареты для разметки",
+            "text": "The most distinctive customization feature of asphalt roads is road marking: Spray colors and patterns on the finished surface to plan lanes, intersections, and warning lines.$(br2)Various stencils can be crafted at an $(thing)Artisan Table$()."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "gtceu:white_dye_spray_can,gtceu:yellow_dye_spray_can",
+            "text": "Hold a $(thing)Spray Can$() in one hand and optionally a $(thing)Road Marking Stencil$() in the other, then $(item)$(k:key.use)$() on an asphalt road to paint it. The color is determined by the spray can, and the orientation by the player's direction.$(br)Spraying again on an existing marking will replace it and consume spray can durability, unless the same exact layout is used."
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfg:textures/gui/field_guide/asphalt_roads/marking.png"
+            ],
+            "border": true
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "gtceu:solvent_spray_can",
+            "title": "Удаление разметки",
+            "text": "Используй $(thing)Аэрозоль (Растворитель)$() на асфальтной дороге для удаления разметки."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tfg:asphalt_rubble",
+            "title": "Поломки и переработка",
+            "text": "При поломке любого вида из асфальта, вместо обычного блока, тебе выпадет $(thing)Асфальтовый щебень$().\nТы можешь переработать его в небольшое количество асфальтной смеси используя $(thing)Экстрактор$()"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "Тележка для мощения",
+            "anchor": "paving_cart",
+            "item": "tfg:rnr_plow",
+            "text": "The $(thing)Paving Cart$() is a specialized cart used for laying down road surfaces quickly and efficiently. It can be filled with $(6)$(t:#rnr:road_materials)Road Materials$() and $(thing)Crushed Base Course$() and then attached to a $(l:agriculture/animal_husbandry#equines)Horse$() with $(item)$(k:key.astikorcarts.desc)$() to create roads as you travel. The cart can also fill in any existing base course blocks."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfg:rnr_plow",
+            "scale": 0.5,
+            "name": "Тележка для мощения",
+            "text": "The blades of the paving cart will lower with $(item)$(k:key.use)$() indicating that the cart will plow roads when moved."
+        },
+        {
+            "type": "patchouli:image",
+            "title": "Ползунок регулировки ширины",
+            "images": [
+                "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_gui_width.png"
+            ],
+            "border": true,
+            "text": "The cart allows you to adjust the width of the path in the GUI, opened with $(item)$(k:key.sneak)-$(k:key.use)$()."
+        },
+        {
+            "type": "patchouli:image",
+            "title": "Переменная ширина дороги",
+            "images": [
+                "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_path_width.png"
+            ],
+            "border": true
+        },
+        {
+            "type": "patchouli:image",
+            "title": "Кнопка случайного выбор",
+            "images": [
+                "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_gui_random.png"
+            ],
+            "border": true,
+            "text": "The cart has a mode that will lay down paving materials in a random pattern."
+        },
+        {
+            "type": "patchouli:image",
+            "title": "Дорожка из случайных материалов",
+            "images": [
+                "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_path_random.png"
+            ],
+            "border": true
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Читать дальше",
+            "anchor": "relations",
+            "entries": [
+                "tfg:craftsmanship/building_materials",
+                "tfg:craftsmanship/chisel",
+                "tfg:the_world/geology",
+                "tfg:the_world/wild_animals",
+                "tfg:agriculture/animal_husbandry",
+                "tfg:logistics/tack"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 1,
+    "extra_recipe_mappings": {
+        "tag:rnr:mattocks": 2,
+        "tag:forge:mattock_heads": 2,
+        "rnr:crushed_base_course": 3,
+        "rnr:base_course": 3,
+        "tag:rnr:road_materials": 4,
+        "rnr:hoggin_mix": 6,
+        "rnr:hoggin": 6,
+        "rnr:hoggin_slab": 6,
+        "rnr:hoggin_stairs": 6,
+        "tag:rnr:gravel_road_items": 8,
+        "tag:rnr:macadam_roads": 8,
+        "tag:rnr:gravel_roads": 8,
+        "tag:rnr:flagstone_road_items": 10,
+        "tag:rnr:cobbled_roads": 10,
+        "tag:rnr:sett_roads": 10,
+        "tag:rnr:flagstone_roads": 10,
+        "rnr:bucket/concrete": 12,
+        "tag:rnr:concrete_roads": 12,
+        "tfg:asphalt_mix_bucket": 22,
+        "tfg:asphalt_binder": 22,
+        "tfg:asphalt_road": 22,
+        "tfg:asphalt_road_stairs": 22,
+        "tfg:asphalt_road_slab": 22,
+        "tag:tfg:road_marking_stencils": 22,
+        "tfg:rnr_plow": 36
+    }
+}

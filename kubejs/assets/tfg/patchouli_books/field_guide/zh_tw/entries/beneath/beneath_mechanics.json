@@ -1,0 +1,143 @@
+{
+	"name": "Beneath Tips & Tricks",
+	"category": "tfg:beneath",
+	"icon": "beneath:cursecoal",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Living in the Beneath has some significant differences from life above! This entry contains some information that may prove to be useful for longer term survival in the depths."
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "index",
+			"text": "$(li)$(bold)$(l:beneath/beneath_mechanics#temperature)Temperature Management$()$(li2)$(l:beneath/beneath_mechanics#ice)Ice$()$(li2)$(l:beneath/beneath_mechanics#clothes)Clothing$()$(li2)$(l:beneath/beneath_mechanics#other_cooling)Other$()$(li)$(bold)$(l:beneath/beneath_mechanics#hellforge)The Hellforge$()$(li)$(bold)$(l:beneath/beneath_mechanics#rope_ladder)Vertical Navigation$()$(li2)$(l:beneath/beneath_mechanics#rope_ladder)Rope Ladder$()$(li2)$(l:logistics/exploration_gear#hang_glider)Hang Glider$()$(li2)$(l:logistics/exploration_gear#grappling_hook)Grappling Hook$()$(li2)$(l:logistics/exploration_gear#harpoon)Harpoon & Coil$()$(li)$(bold)$(l:beneath/beneath_mechanics#piglins)Piglins$()$(li2)$(l:beneath/beneath_mechanics#disguise)Disguising$()$(li2)$(l:beneath/beneath_mechanics#towers)Towers$()$(li2)$(l:beneath/beneath_mechanics#bastions)Bastions$()"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "temperature",
+			"title": "Temperature Management",
+			"text": "The Beneath is hot! The temperature starts at 20°C at the very top, and only gets hotter as you descend.$(br2)Avoiding hyperthermia is much more of an issue than in the overworld, but there are ways to mitigate it.$(br2)The easiest way to avoid overheating is to stay in the upper levels of the Beneath and dunk yourself in water whenever you start overheating."
+		},
+		{
+			"type": "tfg:sealed_barrel_recipe",
+			"recipe": "tfg:barrel/packed_ice",
+			"anchor": "ice",
+			"text": "Bring along some $(thing)Ice$()! Standing near it will lower the ambient temperature. Ice can be harvested on the surface using a $(item)Saw$(), and the resulting Ice Shavings can be turned into $(item)Packed Ice$(). $(thing)Packed$() and $(thing)Blue$() ice won't melt. $(thing)Ice Slush$() can be drank."
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "clothes",
+			"title": "Clothing",
+			"text": "$(item)Burlap$(), $(item)Linen$(), and $(item)Silk$() clothing will help provide a little heat resistance.$(br)$(item)Crocodile$(), $(item)Tiger$(), and $(item)Lion$() clothing provide a stronger cooling effect.$(br)Lastly, $(item)Phantom$() and $(item)Red Elk$() clothes are the strongest cooling clothes, and last a long time too.$(br2)All clothing can be repaired. Press $(thing)U$() to check the repair recipes in $(emi)."
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "tfg:shaped/silk_shirt",
+			"recipe2": "tfg:shaped/crocodile_shirt"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "tfg:shaped/phantom_silk_shirt",
+			"recipe2": "tfg:shaped/red_elk_shirt"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "other_cooling",
+			"recipe": "tfg:crafting/smoothie/magmango",
+			"text": "Other ways to stay cool include standing next to $(l:beneath/beneath_fauna#ice_jellie)Ice Jellies$() and eating cooling foods such as $(item)Ice Soup$() and $(item)Fruit Smoothies$()!"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "The Hellforge",
+			"anchor": "hellforge",
+			"text": "Due to the lack of sky access, the $(l:craftsmanship/charcoal_forge)Charcoal Forge$() does not work in the Beneath!$(br2)The $(thing)Hellforge$() is a gratuitously large forge, with high capacity for fuel, products, and heating. It can heat up to nine $(l:craftsmanship/crucible)Crucibles$() at a time, and doesn't require sky access either!$(br2)It works in the overworld too."
+		},
+		{
+			"type": "patchouli:multiblock",
+			"multiblock": {
+				"pattern": [
+					[
+						"ZXXXZ",
+						"XYYYX",
+						"XY0YX",
+						"XYYYX",
+						"ZXXXZ"
+					],
+					[
+						"     ",
+						" XXX ",
+						" XXX ",
+						" XXX ",
+						"     "
+					]
+				],
+				"mapping": {
+					"Z": "beneath:blackstone_aqueduct[fluid=lava]",
+					"Y": "beneath:hellforge_side",
+					"0": "beneath:hellforge",
+					"X": "beneath:hellbricks"
+				}
+			},
+			"name": "Hellforge",
+			"text": "Any type of $(l:agriculture/aqueducts)Aqueduct$() will work.",
+			"enable_visualize": false
+		},
+		{
+			"type": "patchouli:text",
+			"text": "The Hellforge requires lava to flow in aqueducts in its four corners, as well as 21 hellbricks. The 3x3 center must be filled with $(l:craftsmanship/charcoal_pit)Charcoal Piles$() with 7 charcoal each, which then may be lit to start the forge.$(br2)To avoid overheating, we recommend using the lava from a small lava pool in the upper levels of the Beneath."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "The item slots of the Hellforge may contain fuel, or things to be smelted; there is no distinction. Be careful what you put in! The slots on the right are what metals will melt into, as with the charcoal forge. The lava meter on the screen indicates temperature."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Rope Ladder",
+			"anchor": "rope_ladder",
+			"item": "tag:tfg:rope_ladders",
+			"text": "$(thing)Rope Ladders$() are a great way to get up and down in the Beneath. Unlike regular ladders, they can hang over the edge of cliffs without needing any supporting blocks on the side, and a whole stack can be placed or picked up at once.$(br2)$(item)Burlap Fiber$() can be obtained from $(l:beneath/beneath_wild_fruits#oil_palm)Oil Palms$(), and $(item)Rope Coils$() can be crafted out of $(thing)Coils$() or $(thing)other cloth$()."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Piglin Bartering",
+			"anchor": "piglins",
+			"item": "minecraft:gold_ingot",
+			"text": "Like you'd expect, you can trade with $(thing)Piglins$() in the same way you trade with them in vanilla, with $(item)Gold Ingots$().$(br2)A full list of trades can be found in $(emi) - simply press $(thing)U$() on a Gold Ingot to see it."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tfg:piglin_disguise",
+			"title": "Piglin Disguise",
+			"anchor": "disguise",
+			"text": "If you want to ensure an easy time trading--or simply mingling with the locals--Put on a $(thing)Piglin Disguise$() to prevent $(thing)Piglins$() from being hostile with you on first sight. But beware! They only put up with so much..."
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Towers",
+			"anchor": "towers",
+			"text": "You may come across tall $(thing)Towers$() in the Beneath. These contain a little bit of loot, but are primarily intended for easy vertical travel.$(br)They are more heavily defended the deeper you get, however."
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Bastions",
+			"anchor": "bastions",
+			"text": "Raiding a $(thing)Bastion$() might be very dangerous, but they can also be very rewarding! You can find things like:$(li)Gold, Rose Gold, Pig Iron, Black Bronze, and Silver ingots$(li)Black Bronze weapons, tools, and armor$(li)Kaolin clay and graphite$(li)Lanterns$(li)Cloth, leather, seeds, and food$(li)And other treasures!"
+		},
+		{
+			"type": "patchouli:relations",
+			"title": "Further Reading",
+			"anchor": "relations",
+			"entries": [
+				"tfg:beneath/beneath",
+				"tfg:beneath/beneath_fauna"
+			]
+		}
+	],
+	"extra_recipe_mappings": {
+		"beneath:hellbricks": 8,
+		"tag:tfg:rope_ladders": 12,
+		"minecraft:gold_ingot": 13,
+		"tfg:piglin_disguise": 14
+	},
+	"read_by_default": true
+}

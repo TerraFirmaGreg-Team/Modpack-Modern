@@ -1,0 +1,363 @@
+{
+    "name": "Mining & Collapses",
+    "icon": "tfc:textures/item/metal/pickaxe/wrought_iron.png",
+    "category": "tfg:game_mechanics",
+    "priority": true,
+    "sortnum": 2,
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "anchor": "index",
+            "text": "$(li)$(bold)$(l:game_mechanics/mining#tools)Tools$()$(li)$(bold)$(l:game_mechanics/mining#collapses)Collapses$()$(li2)$(l:game_mechanics/mining#gravity)Gravity$()$(li)$(bold)$(l:game_mechanics/mining#supports)Support Beams$()$(li2)$(l:game_mechanics/mining#higher_tiers)Higher Tier Supports$()$(li)$(bold)$(l:game_mechanics/mining#explosives)Explosives$()$(li)$(bold)$(l:game_mechanics/mining#processing)Ore Processing$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "intro",
+            "title": "Introducción",
+            "text": "Once you have $(l:craftsmanship/metallurgy)located$() an ore vein you can begin excavating it for resources. However, there are some differences from base Mincraft to be aware of when mining. Such as $(l:game_mechanics/mining#collapses)Collapses$(), $(l:game_mechanics/mining#supports)Supports$(), $(l:game_mechanics/hazards)Hazardous Materials$(), and $(l:game_mechanics/mining#processing)Processing$()."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "tools",
+            "title": "Tools",
+            "item": "tag:tfc:pickaxes,tag:forge:tools/mining_hammers",
+            "text": "Before starting, you should prepare the right equipment for the job. You will need a $(thing)pickaxe$() or $(thing)mining hammer$() to mine ores. A mining hammer has an advantage of breaking a 3x3 area of blocks at once.$(br2)A regular $(thing)hammer$() can also break stone type blocks, but will not drop ores. It can still be useful for $(l:craftsmanship/anvils#raw_rock)extracting$() raw stone, however."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "collapses",
+            "text": "In $(tfg), raw rock is unstable and susceptible to $(thing)Collapsing$(). Many rock blocks, including $(thing)Raw Rock$(), $(thing)Ores$(), and $(thing)Spikes$() can all rain down on your head under the right circumstances.$(br2)$(thing)Support Beams$() can be used to prevent collapses from occurring.$(br)When $(thing)Ore$() blocks collapse, they will degrade into cobblestone.",
+            "title": "Collapses"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Collapses can occur whenever a player $(thing)mines any Raw Rock$() that is near to $(thing)Unsupported Raw Rock$(). Once a collapse has started, however, even previously $(thing)Supported$() rock can start to collapse.$(br2)The rock on the roof of caves is $(thing)Naturally Supported$(). Any raw rock with a non-collapsible solid block beneath it, is also $(thing)Supported$(). Alternatively, $(thing)Support Beams$() can support a wide area at once."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "gravity",
+            "title": "Gravity",
+            "text": "Dirt, grass, clay, gravel, cobblestone, and sand are also affected by gravity. However, unlike vanilla gravity blocks, these blocks fall down slopes, and cannot be stacked more than one high without supporting blocks around. $(l:craftsmanship/panning)Ore Deposits$() also landslide, but do not degrade in quality."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tag:tfc:support_beams",
+            "anchor": "supports",
+            "title": "Support Beams",
+            "text": "$(thing)Support Beams$() can be crafted from logs or stone.$(br2)Placing a $(thing)Support Beam$() on top of a block places a column up to three tall. These must have a solid block beneath them to stay upright.$(br)$(thing)Horizontal$() beams can be placed between to connect two $(thing)Vertical$() beams that are within five blocks, as in the above diagram."
+        },
+        {
+            "type": "tfg:multimultiblock",
+            "text": "$(bold)TIP$(): You can use wooden vertical support beams with higher quality horizontal support beams like concrete.",
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "   ",
+                            "CRD",
+                            "   "
+                        ],
+                        [
+                            "   ",
+                            "V W",
+                            "   "
+                        ],
+                        [
+                            "   ",
+                            "V W",
+                            "   "
+                        ],
+                        [
+                            "GGG",
+                            "G0G",
+                            "GGG"
+                        ],
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "tfc:rock/raw/andesite",
+                        "R": "air",
+                        "C": "air",
+                        "D": "air",
+                        "V": "air",
+                        "W": "air",
+                        "G": "tfc:rock/raw/andesite"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "   ",
+                            "CRD",
+                            "   "
+                        ],
+                        [
+                            "   ",
+                            "V W",
+                            "   "
+                        ],
+                        [
+                            "   ",
+                            "V W",
+                            "   "
+                        ],
+                        [
+                            "GGG",
+                            "G0G",
+                            "GGG"
+                        ],
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "tfc:rock/raw/andesite",
+                        "R": "air",
+                        "C": "tfc:wood/vertical_support/oak",
+                        "D": "air",
+                        "V": "tfc:wood/vertical_support/oak",
+                        "W": "air",
+                        "G": "tfc:rock/raw/andesite"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "   ",
+                            "CRD",
+                            "   "
+                        ],
+                        [
+                            "   ",
+                            "V W",
+                            "   "
+                        ],
+                        [
+                            "   ",
+                            "V W",
+                            "   "
+                        ],
+                        [
+                            "GGG",
+                            "G0G",
+                            "GGG"
+                        ],
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "tfc:rock/raw/andesite",
+                        "R": "air",
+                        "C": "tfc:wood/vertical_support/oak",
+                        "D": "tfc:wood/vertical_support/oak",
+                        "V": "tfc:wood/vertical_support/oak",
+                        "W": "tfc:wood/vertical_support/oak",
+                        "G": "tfc:rock/raw/andesite"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "   ",
+                            "CRD",
+                            "   "
+                        ],
+                        [
+                            "   ",
+                            "V W",
+                            "   "
+                        ],
+                        [
+                            "   ",
+                            "V W",
+                            "   "
+                        ],
+                        [
+                            "GGG",
+                            "G0G",
+                            "GGG"
+                        ],
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "tfc:rock/raw/andesite",
+                        "R": "tfc:wood/horizontal_support/oak[north=true,south=true]",
+                        "C": "tfc:wood/vertical_support/oak[south=true]",
+                        "D": "tfc:wood/vertical_support/oak[north=true]",
+                        "V": "tfc:wood/vertical_support/oak",
+                        "W": "tfc:wood/vertical_support/oak",
+                        "G": "tfc:rock/raw/andesite"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "   ",
+                            "CRD",
+                            "   "
+                        ],
+                        [
+                            "   ",
+                            "V W",
+                            "   "
+                        ],
+                        [
+                            "   ",
+                            "V W",
+                            "   "
+                        ],
+                        [
+                            "GGG",
+                            "G0G",
+                            "GGG"
+                        ],
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "tfc:rock/raw/andesite",
+                        "R": "tfc:wood/horizontal_support/oak[north=true,south=true]",
+                        "C": "tfc:wood/vertical_support/oak[south=true]",
+                        "D": "tfc:wood/vertical_support/oak[north=true]",
+                        "V": "tfc:wood/vertical_support/oak",
+                        "W": "tfc:wood/vertical_support/oak",
+                        "G": "tfc:rock/raw/andesite"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Only $(thing)$(bold)Horizontal Support Beams$() cause nearby blocks to be $(thing)Supported$(). Any block within a $(bold)9 x 5 x 9$() area centered on a horizontal support beam is considered $(thing)Supported$().$(br2)In addition to being supported by support beams, rock can be supported simply by the virtue of having a solid block below it, such as more rock. However, it is important to note that $(thing)Non-Solid Blocks$() such as $(thing)Stairs$() and $(thing)Slabs$(), along with $(thing)Smooth Stone$(), do $(bold)not$() count as supporting."
+        },
+        {
+            "type": "patchouli:image",
+            "title": "Support Area",
+            "anchor": "support_3d",
+            "width": 1024,
+            "texture_width": 1024,
+            "height": 1024,
+            "texture_height": 1024,
+            "images": [
+                "tfg:textures/gui/field_guide/supports/support_3d.png"
+            ],
+            "text": "The protection area of the support is centered on the horizontal support beam. Vertical supports make no impact.",
+            "border": false
+        },
+        {
+            "type": "patchouli:image",
+            "title": "Block Range",
+            "anchor": "block_range",
+            "width": 1024,
+            "texture_width": 1024,
+            "height": 1024,
+            "texture_height": 1024,
+            "images": [
+                "tfg:textures/gui/field_guide/supports/support_2d.png"
+            ],
+            "text": "When mined, individual blocks have their own range check for triggering collapses, up to 7x7x7, shown by the red/yellow area centered on the stone.",
+            "border": true
+        },
+        {
+            "type": "patchouli:image",
+            "title": "Pass Condition",
+            "anchor": "pass_condition",
+            "width": 1024,
+            "texture_width": 1024,
+            "height": 1024,
+            "texture_height": 1024,
+            "images": [
+                "tfg:textures/gui/field_guide/supports/support_2d_pass.png"
+            ],
+            "text": "When mining the highlighted block, no collapse can occur because all free space (yellow area) is protected by the support (green area).",
+            "border": true
+        },
+        {
+            "type": "patchouli:image",
+            "title": "Fail Condition",
+            "anchor": "fail_condition",
+            "width": 1024,
+            "texture_width": 1024,
+            "height": 1024,
+            "texture_height": 1024,
+            "images": [
+                "tfg:textures/gui/field_guide/supports/support_2d_fail.png"
+            ],
+            "text": "However, when there are unsupported blocks outside the support area, mining the highlighted block may cause a collapse even though it itself is supported.",
+            "border": true
+        },
+        {
+            "type": "patchouli:text",
+            "text": "In addition to basic $(thing)Wooden and stone Support Beams$(), $(tfg_short) also adds higher tiers of support beams, including $(thing)Concrete Support Beams$(), $(thing)Steel Support Beams$(), and $(thing)Reinforced Concrete Support Beams$(). The highest tier of supports holds an area of $(bold)33 x 13 x 33$() blocks centered on the horizontal support beam!$(br)Support area can be viewed in the support beams tooltip.",
+            "title": "Higher Tiers",
+            "anchor": "higher_tiers"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "support_tips",
+            "text": "Finally, it is important to know that $(l:craftsmanship/chisel)Chiseling$() has the potential to cause collapses, just as easily as mining does, when it is done on any $(thing)Raw Rock$() that has potential to cause a nearby collapse.$(br2)If you are still struggling with collapses, consider watching this $(l:https://youtu.be/1KgwEexxGNI)Guide$().",
+            "title": "Tips"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "Explosives",
+            "anchor": "explosives",
+            "item": "tfc:powderkeg,minecraft:tnt,gtceu:powderbarrel,gtceu:dynamite",
+            "text": "There are multiple forms of explosives in $(tfg_short) for various purposes.$(li)$(bold)TNT$(): Medium sized explosive.$(li)$(bold)Dynamite$(): Throwable, low-power explosive.$(li)$(bold)Powderbarrel$(): Large explosive.$(li)$(bold)Powderkeg$(): Extremely powerful explosive at full strength. Scales with the quantity of stored gunpowder."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "Basic Ore Processing",
+            "anchor": "processing",
+            "item": "tag:forge:crushed_ores",
+            "text": "You should always process your ores for better yields. You can start this process very early on.$(br)The first step is to use a $(l:craftsmanship/quern)Quern$() to crush raw ore. This step can be automated in the future with improved machines such as the $(thing)Millstone$(), $(thing)Crushing Wheel$(), $(thing)Macerator$(), and $(thing)Forge Hammer$()."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "Purifying Dust",
+            "anchor": "purifying",
+            "item": "tag:forge:pure_dusts",
+            "text": "To make your crushed ores melt into even more mB, first place them in a crafting grid along with a $(thing)Hammer$() to produce $(thing)Impure Dust$(). To purify the dust, throw it in water or a barrel filled with water.$(br)This final dust can yield around $(bold)4x$() the quantity of metal when melted compared to raw ore."
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Further Reading",
+            "anchor": "relations",
+            "entries": [
+                "tfg:the_world/geology",
+                "tfg:craftsmanship/metallurgy",
+                "tfg:craftsmanship/barrels",
+                "tfg:craftsmanship/anvils",
+                "tfg:craftsmanship/quern",
+                "tfg:craftsmanship/panning"
+            ]
+        }
+    ],
+    "extra_recipe_mappings": {
+        "tag:minecraft:pickaxes": 2,
+        "tag:forge:tools/mining_hammers": 2,
+        "tag:forge:tools/drills": 2,
+        "tag:tfc:support_beams": 6,
+        "tfc:powderkeg": 15,
+        "minecraft:tnt": 15,
+        "gtceu:powderbarrel": 15,
+        "gtceu:dynamite": 15
+    }
+}

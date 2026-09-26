@@ -1,0 +1,114 @@
+{
+    "name": "Personal Storage",
+    "category": "tfg:logistics",
+    "icon": "sophisticatedbackpacks:backpack",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(li)$(bold)$(l:logistics/personal_storage#small_vessel)Small Vessels$()$(li)$(bold)$(l:logistics/personal_storage#large_vessel)large Vessels$()$(li)$(bold)$(l:logistics/personal_storage#straw_basket)Straw Basket$()$(li)$(bold)$(l:logistics/personal_storage#leather_sack)Leather Sack$()$(li)$(bold)$(l:logistics/personal_storage#ore_sack)Ore Sack$()$(li)$(bold)$(l:logistics/personal_storage#seed_pouch)Seed Pouch$()$(li)$(bold)$(l:logistics/personal_storage#frame_pack)Frame Pack$()$(li)$(bold)$(l:logistics/personal_storage#quiver)Quiver$()$(li)$(bold)$(l:logistics/personal_storage#backpack)Backpacks$()",
+            "title": "目次",
+            "anchor": "index"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "intro",
+            "title": "はじめに",
+            "text": "There are many $(item)Item Containers$() to help ease your inventory stress while playing. There are a few important stats to consider when choosing between them.$(li)$(thing)Slot count$(): The amount of slots it has.$(li)$(thing)Slot Capacity$(): How many items a slot can hold.$(li)$(thing)Allowed Size$(): What's the largest $(l:game_mechanics/size_and_weight)TFC Size$() allowed in the slots."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)$(thing)Item Pickup$(): If it can pick up item entities from the world. $(item)$(k:key.sneak)-$(k:key.use)$() or use $(item)$(k:sns.key.pickup)$() to toggle.$(li)$(thing)Item Voiding$(): If it can void excess items picked up from the world. To toggle $(item)$(k:key.sneak)-$(k:key.attack)$() slots.$(li)$(thing)Inventory interaction$(): If you can insert and extract from it by clicking on the stack like TFC vessels or vanilla bundles.$(li)$(thing)Restrictions$(): What type of items are allowed inside."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "small_vessel",
+            "title": "Small Vessels",
+            "item": "tag:tfc:fired_vessels",
+            "text": "$(bold)Slots$(): 4$(br)$(bold)Stack Size$(): 16$(br)$(bold)Largest Size$(): Small$(br)$(bold)Item Pickup$(): $(c)False$()$(br)$(bold)Slot Voiding$(): $(c)False$()$(br)$(bold)Restricted To$(): N/A"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "large_vessel",
+            "title": "Large Vessels",
+            "item": "tag:tfc:fired_large_vessels",
+            "text": "$(bold)Slots$(): 9$(br)$(bold)Stack Size$(): 64$(br)$(bold)Largest Size$(): Normal$(br)$(bold)Item Pickup$(): $(c)False$()$(br)$(bold)Slot Voiding$(): $(c)False$()$(br)$(bold)Restricted To$(): N/A"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "straw_basket",
+            "title": "藁のバスケット",
+            "item": "sns:straw_basket",
+            "text": "$(bold)Slots$(): 4$(br)$(bold)Stack Size$(): 16$(br)$(bold)Largest Size$(): Small$(br)$(bold)Item Pickup$(): $(2)True$()$(br)$(bold)Slot Voiding$(): $(c)False$()$(br)$(bold)Restricted To$(): N/A"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "leather_sack",
+            "title": "皮革袋",
+            "item": "sns:leather_sack",
+            "text": "$(bold)Slots$(): 4$(br)$(bold)Stack Size$(): 64$(br)$(bold)Largest Size$(): Normal$(br)$(bold)Item Pickup$(): $(2)True$()$(br)$(bold)Slot Voiding$(): $(2)True$()$(br)$(bold)Restricted To$(): N/A"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "ore_sack",
+            "title": "鉱石袋",
+            "item": "sns:ore_sack",
+            "text": "$(bold)Slots$(): 9$(br)$(bold)Stack Size$(): 512$(br)$(bold)Largest Size$(): Small$(br)$(bold)Item Pickup$(): $(2)True$()$(br)$(bold)Slot Voiding$(): $(2)True$()$(br)$(bold)Restricted To$(): $(6)$(t:#sns:allowed_in_ore_sack)Loose Stone, Ore, Gems, Clay$()"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "seed_pouch",
+            "title": "種袋",
+            "item": "sns:seed_pouch",
+            "text": "$(bold)Slots$(): 27$(br)$(bold)Stack Size$(): 128$(br)$(bold)Largest Size$(): Small$(br)$(bold)Item Pickup$(): $(2)True$()$(br)$(bold)Slot Voiding$(): $(c)False$()$(br)$(bold)Restricted To$(): $(6)$(t:#sns:allowed_in_seed_pouch)Seeds, Saplings, Bushes$()"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "frame_pack",
+            "title": "フレーム付きバックパック",
+            "item": "sns:frame_pack",
+            "text": "$(bold)Slots$(): 18$(br)$(bold)Stack Size$(): 64$(br)$(bold)Largest Size$(): Very Large$(br)$(bold)Item Pickup$(): $(2)True$()$(br)$(bold)Slot Voiding$(): $(2)True$()$(br)$(bold)Restricted To$(): N/A"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "quiver",
+            "title": "矢筒",
+            "item": "sns:quiver",
+            "text": "$(bold)Slots$(): 8$(br)$(bold)Stack Size$(): 32$(br)$(bold)Largest Size$(): Very Large$(br)$(bold)Item Pickup$(): $(2)True$()$(br)$(bold)Slot Voiding$(): $(c)False$()$(br)$(bold)Restricted To$(): $(6)$(t:#sns:allowed_in_quiver)Arrows, Javelins$()"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "backpack",
+            "title": "Backpacks",
+            "item": "sophisticatedbackpacks:backpack,sophisticatedbackpacks:iron_backpack,sophisticatedbackpacks:gold_backpack,sophisticatedbackpacks:diamond_backpack,sophisticatedbackpacks:netherite_backpack",
+            "text": "$(bold)Slots$(): 36-120$(br)$(bold)Stack Size$(): 64-128$(br)$(bold)Largest Size$(): Very Large$(br)$(bold)Item Pickup$(): With Upgrades$(br)$(bold)Slot Voiding$(): With Upgrades$(br)$(bold)Restricted To$(): N/A"
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "さらに読む",
+            "anchor": "relations",
+            "entries": [
+                "tfg:craftsmanship/metallurgy",
+                "tfg:craftsmanship/pottery",
+                "tfg:craftsmanship/sewing_table",
+                "tfg:agriculture/leather_making",
+                "tfg:agriculture/weaving",
+                "tfg:logistics/exploration_gear"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 5,
+    "extra_recipe_mappings": {
+        "sns:straw_basket": 5,
+        "sns:leather_sack": 6,
+        "sns:ore_sack": 7,
+        "sns:seed_pouch": 8,
+        "sns:frame_pack": 9,
+        "sns:quiver": 10,
+        "sophisticatedbackpacks:backpack": 11,
+        "sophisticatedbackpacks:iron_backpack": 11,
+        "sophisticatedbackpacks:gold_backpack": 11,
+        "sophisticatedbackpacks:diamond_backpack": 11,
+        "sophisticatedbackpacks:netherite_backpack": 11
+    }
+}
