@@ -50,27 +50,6 @@
 			y: -10.0d
 		}
 		{
-			id: "572FD8B81A8B7255"
-			linked_quest: "7EE13BE102F323F3"
-			shape: "heart"
-			x: 5.5d
-			y: -17.0d
-		}
-		{
-			id: "4DCF561EF2E78E72"
-			linked_quest: "598CA763D195C84E"
-			shape: "heart"
-			x: 4.5d
-			y: -14.0d
-		}
-		{
-			id: "6D6C9C52263D16F7"
-			linked_quest: "598BD589D3C3057A"
-			shape: "heart"
-			x: 5.5d
-			y: -14.0d
-		}
-		{
 			id: "222003C6AD2BF8C8"
 			linked_quest: "6702D52922D85C0D"
 			x: 5.5d
@@ -141,13 +120,6 @@
 			y: -17.0d
 		}
 		{
-			id: "60E01A84A47DDC76"
-			linked_quest: "05528D09F7EE6E33"
-			shape: "heart"
-			x: 6.5d
-			y: -21.0d
-		}
-		{
 			id: "78752A85BA6FA834"
 			linked_quest: "46214D40FA69DA7B"
 			x: 10.5d
@@ -158,13 +130,6 @@
 			linked_quest: "4E87F4BB0D441E00"
 			x: 12.0d
 			y: -12.0d
-		}
-		{
-			id: "060F9F1B0F53041C"
-			linked_quest: "66FDACC7E7F9180C"
-			shape: "heart"
-			x: 7.5d
-			y: -15.5d
 		}
 		{
 			id: "7C664644B941316E"
@@ -214,13 +179,6 @@
 			y: -24.0d
 		}
 		{
-			id: "62909BF0A0A28A56"
-			linked_quest: "40566F6665A095C6"
-			shape: "heart"
-			x: 7.0d
-			y: -0.5d
-		}
-		{
 			id: "4257FF4CF3A440EE"
 			linked_quest: "384B4517EB4F2687"
 			x: 8.0d
@@ -231,12 +189,6 @@
 			linked_quest: "02854A3E8A5D5043"
 			x: 6.5d
 			y: 3.5d
-		}
-		{
-			id: "26211E3EA27D166F"
-			linked_quest: "03696C9BBC53AB26"
-			x: -6.0d
-			y: -32.0d
 		}
 	]
 	quests: [
@@ -1959,6 +1911,7 @@
 			description: ["{quests.tfg_tips.create_reinforced_concrete_support.desc}"]
 			id: "620DEF4A7F08EE15"
 			optional: true
+			shape: "heart"
 			subtitle: "{quests.tfg_tips.create_reinforced_concrete_support.subtitle}"
 			tasks: [
 				{
@@ -3210,6 +3163,8 @@
 			dependencies: ["0C9B7745D812555A"]
 			description: ["{quests.metal_age.steel_crate.desc}"]
 			id: "7D76615185C637B8"
+			optional: true
+			shape: "heart"
 			subtitle: "{quests.metal_age.steel_crate.subtitle}"
 			tasks: [{
 				id: "4073ACBE457E1E17"
@@ -3541,6 +3496,181 @@
 			}]
 			x: 10.5d
 			y: -10.0d
+		}
+		{
+			dependencies: ["68F1232DD918BBC2"]
+			dependency_requirement: "one_completed"
+			description: ["{quests.tfg_tips.glider.desc}"]
+			id: "669A31E7B085A3DB"
+			optional: true
+			shape: "heart"
+			subtitle: "{quests.tfg_tips.glider.subtitle}"
+			tasks: [{
+				id: "023D941945952599"
+				item: {
+					Count: 1
+					id: "hangglider:hang_glider"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.glider.title}"
+			x: 5.5d
+			y: -17.0d
+		}
+		{
+			dependencies: ["68F1232DD918BBC2"]
+			dependency_requirement: "one_completed"
+			description: ["{quests.tfg_tips.astikorcarts.desc}"]
+			icon: "tfcastikorcarts:wheel/ash"
+			id: "36F08D50D4363A7B"
+			optional: true
+			shape: "heart"
+			subtitle: "{quests.tfg_tips.astikorcarts.subtitle}"
+			tasks: [{
+				id: "30F6C051C1A1A30E"
+				title: "{quests.tasktype.checkmark}"
+				type: "checkmark"
+			}]
+			title: "{quests.tfg_tips.astikorcarts.title}"
+			x: 6.5d
+			y: -21.0d
+		}
+		{
+			dependencies: ["76F88CCE8FEF27B4"]
+			description: ["{quests.tfg_tips.hiking_boots.desc}"]
+			guide_page: "tfc:field_guide tfc:sns/safety_toe_hiking_boots"
+			id: "0C8E678DEB92F74A"
+			optional: true
+			shape: "heart"
+			subtitle: "{quests.tfg_tips.hiking_boots.subtitle}"
+			tasks: [{
+				id: "0BE1B03517DCF8C2"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(sns:hiking_boots)item(sns:steel_toe_hiking_boots)item(sns:black_steel_toe_hiking_boots)item(sns:blue_steel_toe_hiking_boots)item(sns:red_steel_toe_hiking_boots))"
+					}
+				}
+				title: "{quests.tfg_tips.hiking_boots.task}"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.hiking_boots.title}"
+			x: 4.5d
+			y: -14.0d
+		}
+		{
+			dependencies: ["0C9B7745D812555A"]
+			dependency_requirement: "one_completed"
+			description: ["{quests.tfg_tips.horseshoes.desc}"]
+			guide_page: "tfc:field_guide tfc:sns/horseshoes"
+			id: "2B25B8F950B75BCD"
+			optional: true
+			shape: "heart"
+			subtitle: "{quests.tfg_tips.horseshoes.subtitle}"
+			tasks: [{
+				id: "0B31C1F7023644EE"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(sns:metal/horseshoes/steel)item(sns:metal/horseshoes/black_steel)item(sns:metal/horseshoes/blue_steel)item(sns:metal/horseshoes/red_steel))"
+					}
+				}
+				title: "{quests.tfg_tips.horseshoes.task}"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.horseshoes.title}"
+			x: 7.0d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"611C053A562DA9F0"
+				"1AF194B74265872C"
+			]
+			dependency_requirement: "one_completed"
+			description: ["{quests.tfg_tips.warfare.desc}"]
+			guide_page: "tfc:field_guide tfc:firmaciv/cannon"
+			id: "43ADE3E09542FDBF"
+			optional: true
+			shape: "heart"
+			subtitle: "{quests.tfg_tips.warfare.subtitle}"
+			tasks: [
+				{
+					id: "0C7B11DF984D62F0"
+					item: "firmaciv:cannon"
+					type: "item"
+				}
+				{
+					id: "1FCAA896B5AF5DD2"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "alekiships:cannonball"
+					}
+					type: "item"
+				}
+			]
+			title: "{quests.tfg_tips.warfare.title}"
+			x: 7.5d
+			y: -15.5d
+		}
+		{
+			dependencies: ["61A8220EA30E7649"]
+			dependency_requirement: "one_completed"
+			description: ["{quests.tfg_tips.kayak_materials.desc}"]
+			guide_page: "tfc:field_guide tfc:firmaciv/kayak"
+			icon: "firmaciv:kayak"
+			id: "0E1A20D0790AAFEB"
+			optional: true
+			shape: "heart"
+			subtitle: "{quests.tfg_tips.kayak_materials.subtitle}"
+			tasks: [
+				{
+					count: 4L
+					id: "17F68DC90F6C6045"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:string)"
+						}
+					}
+					title: "{quests.tasktype.item.any} #forge:string"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "70903842764E0809"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:lumber)"
+						}
+					}
+					title: "{quests.tasktype.item.any} #tfc:lumber"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "5782AEDC2128D1F9"
+					item: { Count: 2, id: "firmaciv:large_waterproof_hide" }
+					type: "item"
+				}
+			]
+			title: "{quests.tfg_tips.kayak_materials.title}"
+			x: -6.0d
+			y: -32.0d
 		}
 	]
 	subtitle: ["{quests.metal_age.subtitle}"]

@@ -5,7 +5,7 @@
 	group: "19428C6E7A36D463"
 	icon: "create:white_toolbox"
 	id: "254D02A31AA8EB49"
-	order_index: 1
+	order_index: 0
 	quest_links: [
 		{
 			id: "1AD1F9822B738105"
@@ -18,14 +18,6 @@
 			linked_quest: "044DD42F4F1E900F"
 			x: 2.5d
 			y: 3.5d
-		}
-		{
-			id: "1BD87B2814DE73B7"
-			linked_quest: "533F32CCAD9D5B51"
-			shape: "heart"
-			size: 1.2d
-			x: -1.5d
-			y: -6.0d
 		}
 	]
 	quests: [

@@ -3,7 +3,6 @@
 	"category": "tfg:logistics",
 	"icon": "tfg:railgun_ammo_shell",
 	"read_by_default": true,
-	"sortnum": 9,
 	"pages": [
 		{
 			"type": "patchouli:text",
@@ -344,5 +343,12 @@
 				"tfg:logistics/storage"
 			]
 		}
-	]
+	],
+	"extra_recipe_mappings": {
+		"tfg:interplanetary_item_launcher": 4,
+		"tfg:railgun_ammo_shell": 8,
+		"tfg:railgun_ammo_loader": 8,
+		"tfg:interplanetary_logistics_monitor": 14,
+		"tfg:interplanetary_item_receiver": 22
+	}
 }

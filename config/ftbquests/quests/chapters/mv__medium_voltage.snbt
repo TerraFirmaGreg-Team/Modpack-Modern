@@ -2183,6 +2183,29 @@
 			x: 4.5d
 			y: 19.5d
 		}
+		{
+			dependencies: ["75F38905DEA60F15"]
+			dependency_requirement: "one_completed"
+			description: ["{quests.tfg_tips.reinforced_glider.desc}"]
+			id: "2CE10F52BE276A98"
+			optional: true
+			shape: "heart"
+			subtitle: "{quests.tfg_tips.reinforced_glider.subtitle}"
+			tasks: [{
+				id: "44FE25AB759473F4"
+				item: {
+					Count: 1
+					id: "hangglider:reinforced_hang_glider"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.reinforced_glider.title}"
+			x: 4.5d
+			y: 5.0d
+		}
 	]
 	subtitle: ["{quests.medium_voltage.subtitle}"]
 	title: "{quests.medium_voltage}"

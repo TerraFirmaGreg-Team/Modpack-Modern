@@ -2834,6 +2834,34 @@
 			x: 2.0d
 			y: 8.0d
 		}
+		{
+			dependencies: ["76B145EFF9B5DB67"]
+			description: ["{quests.tfg_tips.create_canoe.desc}"]
+			icon: "firmaciv:canoe_icon_only"
+			id: "564258B25C477A28"
+			optional: true
+			shape: "heart"
+			subtitle: "{quests.tfg_tips.create_canoe.subtitle}"
+			tasks: [
+				{
+					icon: "firmaciv:canoe_icon_only"
+					id: "216977D4E46595A1"
+					observe_type: 6
+					timer: 0L
+					title: "{quests.tasktype.lookat} #firmaciv:dugout_canoe"
+					to_observe: "#firmaciv:dugout_canoes"
+					type: "observation"
+				}
+				{
+					id: "5AFB1D186D7B075E"
+					item: "firmaciv:canoe_paddle"
+					type: "item"
+				}
+			]
+			title: "{quests.tfg_tips.create_canoe.title}"
+			x: 9.5d
+			y: 9.0d
+		}
 	]
 	subtitle: ["{quests.stone_age.subtitle}"]
 	title: "{quests.stone_age}"

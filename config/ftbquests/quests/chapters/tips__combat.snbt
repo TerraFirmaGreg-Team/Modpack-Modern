@@ -30,14 +30,8 @@
 		x: 13.5d
 		y: -6.0d
 	}]
-	order_index: 2
+	order_index: 1
 	quest_links: [
-		{
-			id: "1B5C9A1CD6F718A4"
-			linked_quest: "66FDACC7E7F9180C"
-			x: 3.0d
-			y: 1.5d
-		}
 		{
 			id: "4016D8415F59B1A4"
 			linked_quest: "38FF003C9349C0F2"
@@ -119,6 +113,12 @@
 			linked_quest: "4B4F052F00435AFE"
 			x: 9.0d
 			y: -3.0d
+		}
+		{
+			id: "5C6FE90B6491697A"
+			linked_quest: "43ADE3E09542FDBF"
+			x: 3.0d
+			y: 1.5d
 		}
 	]
 	quests: [
