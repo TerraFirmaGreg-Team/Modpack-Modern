@@ -69,13 +69,6 @@
 			y: 15.5d
 		}
 		{
-			id: "512F5ED2746A2D21"
-			linked_quest: "301960AD8CEC2FA6"
-			shape: "heart"
-			x: 2.0d
-			y: 8.0d
-		}
-		{
 			id: "66E5130B60FD9E37"
 			linked_quest: "2301E2248A3560C8"
 			shape: "heart"
@@ -2816,6 +2809,28 @@
 			title: "{quests.tfg_tips.cotton_cloth.title}"
 			x: 8.5d
 			y: 18.5d
+		}
+		{
+			dependencies: [
+				"1D40CAE675C4BB91"
+				"560B17BFBE8D477D"
+				"6694C656C4D4792B"
+			]
+			dependency_requirement: "one_completed"
+			description: ["{quests.tfg_tips.juicer.desc}"]
+			guide_page: "tfg:field_guide tfg:cooking/drinking_containers 4"
+			id: "2D6CBF74BE2A9E8C"
+			optional: true
+			shape: "heart"
+			subtitle: "{quests.tfg_tips.juicer.subtitle}"
+			tasks: [{
+				id: "773704CCD98E5763"
+				item: "beneath:juicer"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.juicer.title}"
+			x: 2.0d
+			y: 8.0d
 		}
 	]
 	subtitle: ["{quests.stone_age.subtitle}"]

@@ -154,6 +154,13 @@
             "draw_filler": false
         },
         {
+            "type": "patchouli:crafting",
+            "anchor": "juicer",
+            "title": "Juicer",
+            "recipe": "beneath:crafting/juicer",
+            "text": "The $(item)Juicer$() is a special item that can extract the water contained in $(thing)Fruits$(), $(thing)Mushrooms$(), and $(thing)Cacti$() into drinkable water."
+        },
+        {
             "type": "patchouli:relations",
             "title": "Further Reading",
             "anchor": "relations",
