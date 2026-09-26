@@ -4956,7 +4956,7 @@
 	"tfc.enum.weight.medium": "Medium",
 	"tfc.enum.weight.very_heavy": "Very Heavy",
 	"tfc.enum.weight.very_light": "Very Light",
-	"tfc.field_guide.book_landing_text": "Welcome traveller! This book will be the source of all you need to know as you explore the world of TerraFirmaCraft (TFC) in $(bold)TerraFirmaGreg$().$(br)This book is accessible at any time via the icon on the right side of your inventory.$(br)You can find an online copy of this guide $(bold)$(l:https://terrafirmagreg-team.github.io/Field-Guide-Modern/en_us/)here$().$(br)Click on the $(italic)Entry Index$() and start typing to $(bold)search$().",
+	"tfc.field_guide.book_landing_text": "Welcome to $(bold)$(#ff0fb7)TerraFirma$(#595959)Greg$()!$(br)This guide will be one of your main sources of information as you play, please take the time to read through it.$(br)$(bold)Web Version$():$(li)$(l:https://wiki.terrafirmagreg.team/modern/field-guide/en_us/)Online Field Guide$().$(br2)$(bold)TIP$(): Click on the $(italic)Entry Index$() and $(d)start typing to search$().",
 	"tfc.field_guide.book_name": "TerraFirmaCraft",
 	"tfc.fishing.no_bait": "This fishing rod needs bait!",
 	"tfc.fishing.pulled_too_hard": "You pulled too hard, and the fish got away with the bait.",
