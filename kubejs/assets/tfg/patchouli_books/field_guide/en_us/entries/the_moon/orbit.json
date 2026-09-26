@@ -1,0 +1,66 @@
+{
+	"name": "Space Stations",
+	"category": "tfg:the_moon",
+	"icon": "ad_astra:textures/gui/sprites/space_station.png",
+	"read_by_default": true,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "By keeping the following items in your inventory (or the inventory of your rocket), you'll be able to build a $(item)Space Station$() in orbit once you launch!$(br)$(li)43x Aluminium Frame$(li)24x Glass Plate$(li)4x Glowstone Dust$(li)1x Launch Pad"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "There's not really much to do up there, and they're totally optional, but if you want a void dimension for whatever reason, or just $(italic)really$() like sky diving, they're an option.$(br2)Be sure you bring something to hold on to, as orbits have $(thing)no gravity$().$(br2)$(bold)Tip:$() Orbits count as a $(item)Cleanroom$() for the purposes of recipe conditions."
+		},
+		{
+			"type": "patchouli:multiblock",
+			"anchor": "space_station",
+			"name": "Space Platform",
+			"text": "A platform will be constructed for your rocket to land on.",
+			"enable_visualize": false,
+			"multiblock": {
+				"pattern": [
+					[
+						"       ",
+						"       ",
+						"       ",
+						"   0   ",
+						"       ",
+						"       ",
+						"       "
+					],
+					[
+						"GXXXXXG",
+						"XXXXXXX",
+						"XXXXXXX",
+						"XXXXXXX",
+						"XXXXXXX",
+						"XXXXXXX",
+						"GXXXXXG"
+					]
+				],
+				"mapping": {
+					"0": "ad_astra:launch_pad",
+					"X": "gtceu:aluminium_frame",
+					"G": "gtceu:white_lamp"
+				}
+			}
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "ad_astra:zip_gun",
+			"anchor": "zip_gun",
+			"text": "A Zip Gun can be filled up with any of the breathable $(l:the_moon/the_moon#gases)Compressed Gases$() to shoot out air, pushing you around in low gravity environments. They're essential if you want to build anything in orbit!"
+		},
+		{
+			"type": "patchouli:relations",
+			"title": "Further Reading",
+			"anchor": "relations",
+			"entries": [
+				"tfg:the_moon/the_moon",
+				"tfg:the_moon/preparations",
+				"tfg:the_moon/railgun"
+			]
+		}
+	]
+}

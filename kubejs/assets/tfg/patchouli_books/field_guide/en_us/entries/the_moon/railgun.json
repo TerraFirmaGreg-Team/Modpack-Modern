@@ -1,0 +1,347 @@
+{
+	"name": "The Railgun",
+	"category": "tfg:the_moon",
+	"icon": "tfg:railgun_ammo_shell",
+	"read_by_default": true,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "index",
+			"text": "$(li)$(bold)$(l:the_moon/railgun#sender)Railgun Sender$()$(li2)$(l:the_moon/railgun#ammo)Railgun Ammo$()$(li2)$(l:the_moon/railgun#input_bus)Railgun Input Bus$()$(li)$(bold)$(l:the_moon/railgun#monitor)Logistics Monitor$()$(li)$(bold)Control Rules$()$(li2)$(l:the_moon/railgun#redstone)Redstone$()$(li2)$(l:the_moon/railgun#supply_exact)Supply Exact$()$(li2)$(l:the_moon/railgun#delay)Delay$()$(li)$(bold)$(l:the_moon/railgun#receiver)Railgun Receiver$()$(li2)$(l:the_moon/railgun#output_bus)Receiver Output Bus$()$(li)$(bold)$(l:the_moon/railgun#tips)Tips$()"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "In $(tfg), transporting items across dimensions or over long distances requires you to build special $(thing)multiblock structures$().$(br2)This system is $(thing)powerful and flexible$(), offering multiple settings that let you customize logistics to perfectly suit your needs.$(br2)What, did you think you could just use AE2 Quantum Tunnels and be done with it?"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "This is the perfect system to transport all of your $(thing)passively-produced$() resources to exactly where they're needed on other planets! And it comes with a powerful $(thing)configuration system$() to let you control everything from a single place.$(br2)To set it up, you'll need three components:$(br2)$(bold)Interplanetary Railgun$()$(br)This is the $(thing)sender$() that launches items across space."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(bold)Interplanetary Receiver$()$(br)This is the $(thing)receiver$() that catches and stores incoming items.$(br2)$(bold)Interplanetary Logistics Monitor$()$(br)This acts as the $(thing)central control$(), where you define the rules and behavior of the entire transport system.$(br2)With these machines, you can automate large-scale transfers efficiently — even between planets!"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tfg:interplanetary_item_launcher",
+			"title": "Railgun Sender",
+			"anchor": "sender",
+			"text": "The $(item)Interplanetary Railgun$() acts as your $(thing)sender multiblock$().$(br2)It's the structure responsible for launching items toward distant $(thing)receivers$() — but it can't receive anything itself."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "To function correctly, it requires several components:$(li)$(bold)Energy Hatch:$() provides the power needed to launch items. Without energy, nothing moves.$(li)$(bold)Railgun Ammo Loader:$() must be filled with ammo. One unit is consumed per launch.$(li)$(bold)Input Buses:$() you can add as many as you can fit, to insert the items you want to send."
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": " ",
+			"enable_visualize": "true",
+			"text": "Use a $(item)Terminal$() to construct the multiblock easily.",
+			"multiblock": {
+				"pattern": [
+					[
+						"     ",
+						" C C ",
+						" R R ",
+						" C C ",
+						"     "
+					],
+					[
+						"     ",
+						" C C ",
+						" R R ",
+						" C C ",
+						"     "
+					],
+					[
+						"     ",
+						" CHC ",
+						" R R ",
+						" CHC ",
+						"     "
+					],
+					[
+						"     ",
+						" L L ",
+						" R R ",
+						" L L ",
+						"     "
+					],
+					[
+						"     ",
+						" L L ",
+						" R R ",
+						" L L ",
+						"     "
+					],
+					[
+						"     ",
+						" L L ",
+						" R R ",
+						" L L ",
+						"     "
+					],
+					[
+						"     ",
+						" CHC ",
+						" R R ",
+						" CHC ",
+						"     "
+					],
+					[
+						"     ",
+						" L L ",
+						" R R ",
+						" L L ",
+						"     "
+					],
+					[
+						"     ",
+						" L L ",
+						" R R ",
+						" L L ",
+						"     "
+					],
+					[
+						"     ",
+						" L L ",
+						" R R ",
+						" L L ",
+						"     "
+					],
+					[
+						"FFFFF",
+						"FLCLF",
+						"FR RF",
+						"FLCLF",
+						"FFFFF"
+					],
+					[
+						"F   F",
+						" LCL ",
+						" R R ",
+						" LCL ",
+						"F   F"
+					],
+					[
+						"F212F",
+						"5SCS3",
+						"5CCC3",
+						"5SCS3",
+						"F4y4F"
+					],
+					[
+						"F   F",
+						" SSS ",
+						" S0S ",
+						" ESE ",
+						"F   F"
+					]
+				],
+				"mapping": {
+					"0": "gtceu:clean_machine_casing",
+					"S": "gtceu:clean_machine_casing",
+					"F": "gtceu:aluminium_frame",
+					"H": "gtceu:hsla_steel_frame",
+					"C": "gtceu:nonconducting_casing",
+					"L": "tfg:superconductor_coil_large",
+					"M": "tfg:superconductor_coil_small",
+					"R": "tfg:electromagnetic_accelerator",
+					"y": "tfg:interplanetary_item_launcher[facing=east]",
+					"E": "gtceu:hv_energy_input_hatch[facing=east]",
+					"1": "tfg:railgun_ammo_loader[facing=west]",
+					"2": "tfg:hv_railgun_item_loader_in[facing=west]",
+					"3": "tfg:hv_railgun_item_loader_in[facing=south]",
+					"4": "tfg:hv_railgun_item_loader_in[facing=east]",
+					"5": "tfg:hv_railgun_item_loader_in[facing=north]"
+				}
+			}
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "tfg:shaped/interplanetary_item_launcher",
+			"title": " ",
+			"text": "$(bold)Important:$() This multiblock can only $(italic)send$() items. Make sure your $(item)Interplanetary Railgun$() is always chunkloaded!"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tfg:railgun_ammo_shell,tfg:railgun_ammo_loader",
+			"anchor": "ammo",
+			"title": "Railgun Ammo",
+			"text": "Each $(thing)Railgun$() requires a special type of $(item)ammo$() — think of it as a package used to transport items. Each launch consumes exactly $(thing)one unit$() of ammo and can send $(thing)three stacks$() of items.$(br2)To load it, you'll need a $(item)Railgun Ammo Loader$() as part of your structure."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "You can insert ammo manually or automate the process.$(br2)We $(italic)strongly recommend$() setting up a passive production line to keep your loader filled continuously — this ensures a smooth and reliable logistics chain.$(br2)You can either have each planet automating their own ammo, or you could have one planet make all the ingredients and distribute them to the others."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tfg:ulv_railgun_item_loader_in,tfg:lv_railgun_item_loader_in,tfg:mv_railgun_item_loader_in,tfg:hv_railgun_item_loader_in,tfg:ev_railgun_item_loader_in,tfg:iv_railgun_item_loader_in,tfg:luv_railgun_item_loader_in,tfg:zpm_railgun_item_loader_in,tfg:uv_railgun_item_loader_in,tfg:uhv_railgun_item_loader_in",
+			"anchor": "input_bus",
+			"title": "Railgun Input Bus",
+			"text": "When opening the $(thing)Sender$() logistics screen on the $(l:the_moon/railgun#monitor)Interplanetary Logistics Monitor$(), you'll notice the familiar $(item)Programmed Circuit$() from GregTech.$(br2)This circuit number is the core identifier for setting up routing rules."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "The number you assign will apply a specific rule to all Input Buses in your Railgun structure that are configured with that same circuit number.$(br2)This allows you to fine-tune what items are sent where and with which rules, based on the circuit used."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(bold)How to configure it:$()$(br)1. Open the GUI of any $(item)Railgun Input Bus$()$(br)2. Select the number you want, just like in any other GregTech machine.$(br2)This lets you create powerful logic like:$(li)Circuit 1 → send to Moon base$(li)Circuit 2 → send to Mars$(li)Circuit 3 → send to Orbital Station"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "With the proper circuit setup, you can automate interplanetary trade like a true industrial tycoon!$(br2)$(bold)Note$(): You cannot send anything with the $(br)$(6)#tfg:cannot_launch_in_railgun$() tag."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tfg:interplanetary_logistics_monitor",
+			"anchor": "monitor",
+			"title": "Logistics Monitor",
+			"text": "The $(item)Interplanetary Logistics Monitor$() is your logistics command center — the true bread and butter of interplanetary transport.$(br2)It's a $(thing)single block$(), requires $(thing)no energy$(), and will automatically detect every $(item)Railgun Sender$() and $(item)Receiver$() you've built."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "It may look simple, but it hides powerful tools under the hood. Let's go over the basics:$(br2)When you open the Monitor, you'll see a list of all your Senders and Receivers. You have to $(thing)name each one$().$(br2)To create a logistic rule, click the right arrow to select a Sender, then press $(item)+$() to add a new rule. Lastly, choose the destination Receiver from your list."
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Redstone Control",
+			"anchor": "redstone",
+			"text": "The $(item)Redstone Rule$() is simple — but incredibly powerful when used well.$(br2)In the $(item)Sender$() rules interface, enabling this rule means that a $(thing)redstone signal$() must be present on the $(thing)Input Bus$(thing) for it to send items.$(br2)In the $(item)Receiver$() rules interface, you can configure the rule so that an $(thing)Output Bus$() will only accept items based on the redstone signal on that specific block."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Time to use your redstone logic skills!$(br2)Whether it's with an $(item)AE2 Level Emitter$(), from $(l:logistics/redstone_devices#threshold_switch)Create redstone utilities$(), or good old $(l:logistics/redstone_devices#more_comparators)vanilla mechanics$() — this rule lets you synchronize logistics with your factory state like a pro."
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Supply Exact",
+			"anchor": "supply_exact",
+			"text": "The $(item)Item Rule$() works similarly to a $(thing)GregTech Robot Arm$() set to $(thing)Supply Exact$().$(br2)It can only be configured from the $(item)Sender$() rules interface.$(br2)With this rule active, the $(thing)Railgun$(thing) will only send the $(italic)exact quantity$() when available in the $(item)Input Bus$()."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(bold)How to set it up:$()$(li)Drag items into the filter from your $(emi) interface$(li)Use $(thing)left and right clicks$() to adjust the quantity$(li)You can also bookmark items for quick access and configuration$(br2)This rule is perfect for precise automation — ideal for batch crafting or resource quotas."
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Delay",
+			"anchor": "delay",
+			"text": "The $(item)Delay Rule$() is simple, but useful for managing item flow timing.$(br2)$(bold)On the Sender side:$()$(br)Items will only be sent after the $(item)Input Bus$() hasn't received any new item for a set amount of time (in seconds).$(br2)This helps avoid sending items too frequently when inputs are constantly changing."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(bold)On the Receiver side:$()$(br)The rule defines a delay before an $(item)Output Bus$() can receive another batch of items.$(br2)This can be useful to prevent overflow or to pace item insertion into slower systems.$(br2)This mode is ideal for syncing with machines that need breathing room between operations, or to prevent unnecessary waste of ammo."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "receiver",
+			"item": "tfg:interplanetary_item_receiver",
+			"title": "Railgun Receiver",
+			"text": "The $(item)Interplanetary Receiver$(), as its name suggests, is designed to $(thing)receive items$() sent by the $(l:the_moon/railgun#sender)Railgun$().$(br2)It's a $(thing)small and simple multiblock$() that requires no energy or maintenance — just build it and you're ready to go!"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Its flexibility lies in the number of $(item)Output Buses$() you can attach. The more you add, the more items it can handle simultaneously.$(br2)$(bold)Setup is easy:$()$(li)Build the structure$(li)Add as many Output Buses as you need and set their circuits$(li)Done — it's ready to receive!$(br2)No fuel, no maintenance — just pure logistics power. Make sure it's properly chunk loaded, and let the items rain in!"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": " ",
+			"enable_visualize": "true",
+			"text": "Use a $(item)Terminal$() to construct the multiblock easily.",
+			"multiblock": {
+				"pattern": [
+					[
+						"       ",
+						"  GGG  ",
+						" G   G ",
+						" G   G ",
+						" G   G ",
+						"  GGG  ",
+						"       "
+					],
+					[
+						"  CCC  ",
+						" CEFEC ",
+						"CF   FC",
+						"CE   EC",
+						"CF   FC",
+						" CEFEC ",
+						"  CCC  "
+					],
+					[
+						" B   B ",
+						"BB111BB",
+						" 4   2 ",
+						" 4   2 ",
+						" 4   2 ",
+						"BB3D3BB",
+						" B   B "
+					],
+					[
+						"BB   BB",
+						"B     B",
+						"       ",
+						"       ",
+						"       ",
+						"B     B",
+						"BB   BB"
+					],
+					[
+						"B     B",
+						"       ",
+						"       ",
+						"   0   ",
+						"       ",
+						"       ",
+						"B     B"
+					]
+				],
+				"mapping": {
+					"B": "tfg:machine_casing_aluminium_plated_steel",
+					"C": "gtceu:aluminium_frame",
+					"D": "tfg:interplanetary_item_receiver[facing=east]",
+					"E": "gtceu:solid_machine_casing",
+					"F": "gtceu:nonconducting_casing",
+					"G": "gtceu:yellow_stripes_block_a",
+					"1": "tfg:mv_railgun_item_loader_out[facing=west]",
+					"2": "tfg:mv_railgun_item_loader_out[facing=south]",
+					"3": "tfg:mv_railgun_item_loader_out[facing=east]",
+					"4": "tfg:mv_railgun_item_loader_out[facing=north]"
+				}
+			}
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "output_bus",
+			"title": "Railgun Output Bus",
+			"item": "tfg:ulv_railgun_item_loader_out,tfg:lv_railgun_item_loader_out,tfg:mv_railgun_item_loader_out,tfg:hv_railgun_item_loader_out,tfg:ev_railgun_item_loader_out,tfg:iv_railgun_item_loader_out,tfg:luv_railgun_item_loader_out,tfg:zpm_railgun_item_loader_out,tfg:uv_railgun_item_loader_out,tfg:uhv_railgun_item_loader_out",
+			"text": "Just like how your $(l:the_moon/railgun#input_bus)Railgun Input Buses$() can be assigned a $(thing)circuit number$(), you can do the same with the $(item)Output Buses$() on your $(thing)Receiver$()."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "This feature serves two main purposes:$(br2)1. $(bold)Direct item flow$() - You can control which $(item)Output Bus$() receives items. To do this, simply assign a circuit number to the Output Bus, then select that number in your Sender's rule via the $(l:the_moon/railgun#monitor)Logistics Monitor$()."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "2. $(bold)Conditional rules$() - You can also set rules to $(thing)stop sending items$() if the circuit rule isn't respected.$(br2)This is done not from the Sender tab, but by opening the $(thing)Receiver$() tab in the Monitor.$(br2)For each circuit number, you can assign a rule that applies only to Output Buses using that number."
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Railgun Tips",
+			"anchor": "tips",
+			"text": "$(li)Railguns can be used within the same dimension. This is a great way to learn how they work, and can also be useful for sending stuff very long distances.$(li)$(thing)Cells$() are the only way to send around fluids. You can use a $(item)Canner$() to automatically fill and empty cells."
+		},
+		{
+			"type": "patchouli:relations",
+			"title": "Further Reading",
+			"anchor": "relations",
+			"entries": [
+				"tfg:the_moon/the_moon",
+				"tfg:logistics/redstone_devices",
+				"tfg:logistics/storage"
+			]
+		}
+	]
+}

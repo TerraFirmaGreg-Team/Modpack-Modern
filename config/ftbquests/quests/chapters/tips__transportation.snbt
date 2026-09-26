@@ -542,20 +542,12 @@
 		}
 	]
 	order_index: 0
-	quest_links: [
-		{
-			id: "704C995D4B6CE874"
-			linked_quest: "46C92B938921A0AC"
-			x: 8.0d
-			y: -3.5d
-		}
-		{
-			id: "4C2F62D5F7254F2E"
-			linked_quest: "159A0DAEE55DCAC0"
-			x: 5.0d
-			y: -3.5d
-		}
-	]
+	quest_links: [{
+		id: "4C2F62D5F7254F2E"
+		linked_quest: "159A0DAEE55DCAC0"
+		x: 5.0d
+		y: -3.5d
+	}]
 	quests: [
 		{
 			dependencies: ["2746958D3D4A0885"]
@@ -2125,6 +2117,24 @@
 			title: "{quests.tfg_tips.back_on_tracks.title}"
 			x: 1.5d
 			y: 21.5d
+		}
+		{
+			dependencies: ["00A2566109144D7F"]
+			description: ["{quests.space_survival.rover.desc}"]
+			id: "317088F2C23B3342"
+			subtitle: "{quests.space_survival.rover.subtitle}"
+			tasks: [{
+				id: "2184B3B5CB253216"
+				item: {
+					Count: 1
+					id: "ad_astra:tier_1_rover"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "{quests.space_survival.rover.title}"
+			x: 8.0d
+			y: -3.5d
 		}
 	]
 	subtitle: ["{quests.tfg_tips.transportation_tips.subtitle}"]

@@ -1,1 +1,6 @@
-{"name":"The Moon","description":"All about the geology and ecology of the moon.","icon":"tfg:marker/moon","sortnum":3}
+{
+	"name": "The Moon",
+	"description": "The one place that hasn't been corrupted by capitalism... $(l:https://www.youtube.com/watch?v=g1Sq1Nr58hM)Space$()!$(br2)Everything you need to know about Earth's only natural satellite, $(3)The Moon$().$(br2)You can become an astronaut in $(6)HV$().",
+	"icon": "tfg:marker/moon",
+	"sortnum": 3
+}

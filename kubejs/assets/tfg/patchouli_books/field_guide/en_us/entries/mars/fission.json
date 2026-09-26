@@ -5,5 +5,16 @@
 	"read_by_default": true,
 	"pages": [
 
+		{
+			"type": "patchouli:relations",
+			"title": "Further Reading",
+			"anchor": "relations",
+			"entries": [
+				"tfg:mars/mars",
+				"tfg:the_moon/railgun",
+				"tfg:game_mechanics/hazards",
+				"tfg:mars/mars_tree_index"
+			]
+		}
 	]
 }

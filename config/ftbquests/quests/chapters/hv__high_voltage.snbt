@@ -20,13 +20,6 @@
 			y: -8.5d
 		}
 		{
-			icon: "tfg:compressed_nitrox_bucket"
-			id: "33D3C2A9337335D2"
-			linked_quest: "493D733A5438DD7E"
-			x: 11.0d
-			y: 0.0d
-		}
-		{
 			id: "2CDC2C148418F176"
 			linked_quest: "396E85A39FF414CF"
 			shape: "gear"
@@ -60,14 +53,6 @@
 			linked_quest: "0585527D1854628B"
 			x: 19.0d
 			y: -2.0d
-		}
-		{
-			id: "0518FD802310830C"
-			linked_quest: "1A9A5F55F1F0AC58"
-			shape: "octagon"
-			size: 2.0d
-			x: 17.0d
-			y: -6.0d
 		}
 		{
 			id: "32FFB5754312AA2F"
@@ -1001,7 +986,6 @@
 				"3E2F96A02FEF12AC"
 				"1E307CD76691C24F"
 				"4AD686D18247315E"
-				"72BD27FEEB34C7B0"
 			]
 			dependency_requirement: "one_completed"
 			description: ["{quests.high_voltage.rocket_t1.desc}"]
@@ -1143,6 +1127,7 @@
 				"038B204DAC9C863D"
 			]
 			description: ["{quests.high_voltage.welcome_moon.desc}"]
+			guide_page: "tfg:field_guide tfg:the_moon/the_moon"
 			id: "00A2566109144D7F"
 			rewards: [{
 				id: "4E4076733CA38807"
@@ -1166,7 +1151,6 @@
 		{
 			dependencies: [
 				"3FBDC8552F7D8008"
-				"72BD27FEEB34C7B0"
 				"1FF607647FA682B3"
 			]
 			dependency_requirement: "one_completed"
@@ -1369,25 +1353,10 @@
 		}
 		{
 			dependencies: ["00A2566109144D7F"]
-			description: ["{quests.high_voltage.space_survival.desc}"]
-			icon: "ad_astra:oxygen_distributor"
-			id: "08AAD91CE348A08B"
-			subtitle: "{quests.high_voltage.space_survival.subtitle}"
-			tasks: [{
-				id: "66E3342A47817498"
-				title: "{quests.high_voltage.space_survival.title}"
-				type: "checkmark"
-			}]
-			title: "{quests.high_voltage.space_survival.title}"
-			x: 12.0d
-			y: -4.0d
-		}
-		{
-			dependencies: ["00A2566109144D7F"]
 			description: ["{quests.high_voltage.moon_harvester.desc}"]
 			id: "6A21CCAEB1FDF38E"
 			shape: "octagon"
-			size: 2.0d
+			size: 1.5d
 			subtitle: "{quests.high_voltage.moon_harvester.subtitle}"
 			tasks: [{
 				id: "445320F445BA829F"
@@ -2052,6 +2021,71 @@
 			}]
 			title: "{quests.high_voltage.wireless_charger.title}"
 			x: 12.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["038B204DAC9C863D"]
+			dependency_requirement: "one_completed"
+			description: ["{quests.space_survival.compressed_gases.desc}"]
+			icon: "tfg:compressed_nitrox_bucket"
+			id: "403B34B669894C26"
+			subtitle: "{quests.space_survival.compressed_gases.subtitle}"
+			tasks: [
+				{
+					id: "6CD77EF0B792F4F4"
+					item: "tfg:compressed_nitrox_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "51D6A0F834A9A5F2"
+					item: "tfg:compressed_heliox_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "053236ED5BFE8A51"
+					item: "tfg:compressed_heliox_3_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "0F6CC5C2B8CF5C85"
+					item: "tfg:compressed_trimix_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "31D2BD0CC95A7E6C"
+					item: "tfg:compressed_trimix_3_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "5012638FD561735A"
+					type: "checkmark"
+				}
+			]
+			title: "{quests.space_survival.compressed_gases.title}"
+			x: 11.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["00A2566109144D7F"]
+			description: ["{quests.space_survival.railgun.desc}"]
+			guide_page: "tfg:field_guide tfg:the_moon/railgun"
+			icon: "tfg:railgun_ammo_shell"
+			id: "47E88A5E8AE13326"
+			shape: "octagon"
+			size: 1.5d
+			subtitle: "{quests.space_survival.railgun.subtitle}"
+			tasks: [{
+				id: "089ED42F1EFB1861"
+				title: "{quests.space_survival.railgun.task}"
+				type: "checkmark"
+			}]
+			title: "{quests.space_survival.railgun.title}"
+			x: 16.5d
 			y: -6.0d
 		}
 	]

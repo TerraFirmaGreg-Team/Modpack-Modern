@@ -120,14 +120,6 @@
 			x: 9.0d
 			y: -3.0d
 		}
-		{
-			id: "66C975E99A868296"
-			linked_quest: "6B9257192CF56FE3"
-			shape: "hexagon"
-			size: 1.5d
-			x: 18.0d
-			y: 1.5d
-		}
 	]
 	quests: [
 		{
@@ -2073,6 +2065,31 @@
 			]
 			title: "{quests.space_survival.t2_space_suit.title}"
 			x: 21.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["1FF607647FA682B3"]
+			dependency_requirement: "one_completed"
+			description: [
+				"{quests.space_survival.soulbound.desc.1}"
+				"{@pagebreak}"
+				"{quests.space_survival.soulbound.desc.2}"
+			]
+			id: "06CE39915DFA099C"
+			optional: true
+			shape: "heart"
+			subtitle: "{quests.space_survival.soulbound.subtitle}"
+			tasks: [{
+				id: "7BDF61AABB39179B"
+				item: {
+					Count: 1
+					id: "endermanoverhaul:soul_pearl"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "{quests.space_survival.soulbound.title}"
+			x: 18.0d
 			y: 1.5d
 		}
 	]

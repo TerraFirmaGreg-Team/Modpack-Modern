@@ -43,10 +43,18 @@
 			"enable_visualize": false
 		},
 		{
+			"type": "patchouli:spotlight",
+			"item": "gtceu:nitrogen_bucket",
+			"anchor": "nitrogen",
+			"title": "Chorus Products",
+			"text": "Setting up a renewable source of $(item)Chorus Fruit$() is essential for longer-term moon survival. They are the only real source of $(item)Nitrogen$(), and can also be distilled into Biomass for $(item)Carbon$()."
+		},
+		{
 			"type": "patchouli:relations",
 			"title": "Further Reading",
 			"anchor": "relations",
 			"entries": [
+				"tfg:the_moon/the_moon",
 				"tfg:the_world/climate",
 				"tfg:the_world/wild_crops",
 				"tfg:beneath/beneath_crops",
