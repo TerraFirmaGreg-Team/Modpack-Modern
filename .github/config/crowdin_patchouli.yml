@@ -12,6 +12,7 @@ files:
     update_option: "update_as_unapproved"
 
     ignore: [
-      "/**/tfg_ores/*_index.json"
+      "/**/tfg_ores/*_index.json",
+      "/**/templates/*.json"
     ]
 
