@@ -161,7 +161,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(item)$(k:key.use)$() a chain before placing down a Frogport to have it interact with that segment of chain.$(br2)Frogports placed directly on top of a $(l:logistics/create#packager)Packager$() automatically hang up packages that are created in said Packager.$(br2)$(bold)Note:$() Frogports work with both item and fluid packagers. The copper one can be placed on any side of a block."
+			"text": "$(item)$(k:key.use)$() a chain before placing down a Frogport to have it interact with that segment of chain.$(br2)Frogports placed directly on top of a $(l:logistics/create#packager)Packager$() automatically hang up packages that are created in said Packager.$(br2)$(bold)Note:$() Either frogport will work with both item and fluid packagers and packages. The only difference is that the copper one can be placed on any side of a block."
 		},
 		{
 			"type": "patchouli:text",
@@ -214,7 +214,7 @@
 			"item": "tag:create:postboxes",
 			"title": "Postboxes",
 			"anchor": "postbox",
-			"text": "$(item)Postboxes$() are used to route packages around using $(l:logistics/trains)Train Networks$(). You first right click a $(l:logistics/trains#station)Train Station$() to link the Postbox to that station before placing it, and from then on any trains that stop there will be able to interact with the Postbox (given it is within 4 blocks of the station)."
+			"text": "$(item)Postboxes$() are used to route packages around using $(l:logistics/trains)Train Networks$(). You first $(item)$(k:key.use)$() a $(l:logistics/trains#station)Train Station$() to link the Postbox to that station before placing it, and from then on any trains that stop there will be able to interact with the Postbox (given it is within 4 blocks of the station)."
 		},
 		{
 			"type": "patchouli:text",
@@ -321,7 +321,7 @@
 			"type": "patchouli:spotlight",
 			"item": "create:stock_ticker",
 			"anchor": "stock_ticker",
-			"text": "If you've already used $(l:logistics/create#stock_link)Stock Links$() to provide various items to a $(thing)Logistics Network$(), the next step is to make something that can call in said items remotely... And that's where the $(item)Stock Ticker$() comes in. Much like the Stock Link, you first need to right click an existing link to attune the Ticker to that network."
+			"text": "If you've already used $(l:logistics/create#stock_link)Stock Links$() to provide various items to a $(thing)Logistics Network$(), the next step is to make something that can call in said items remotely... And that's where the $(item)Stock Ticker$() comes in. Much like the Stock Link, you first need to $(item)$(k:key.use)$() an existing link to attune the Ticker to that network."
 		},
 		{
 			"type": "patchouli:text",
