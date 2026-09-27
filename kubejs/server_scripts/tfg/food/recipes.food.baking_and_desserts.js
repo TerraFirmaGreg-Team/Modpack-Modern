@@ -255,14 +255,18 @@ function registerTFGBakingAndDessertFoodRecipes(event) {
 	});
 
 	// Jam Pie
-	global.processorRecipe(event, 'filled_pie', 300, 16, {
-		itemInputs: ['#tfg:foods/all_jams', 'firmalife:food/pie_dough', 'firmalife:pie_pan'],
-		itemOutputs: ['firmalife:food/filled_pie', 'tfc:empty_jar'],
-		itemOutputProvider: TFC.isp.of('firmalife:food/filled_pie').meal(
-			(food) => food.hunger(4).dairy(0.5).fruit(1.5).grain(1.0).saturation(1.0).water(0.5).decayModifier(4.5),
-			[(portion) => portion.nutrientModifier(0.8).waterModifier(0.8).saturationModifier(0.8)]
-		).firmaLifeAddPiePan()
-	});
+	event.remove({ id: 'firmalife:crafting/filled_pie' });
+	for (let i = 1; i <= 3; i++) {
+		global.generateMixingFoodRecipes(event,
+			['#tfc:foods/preserves', 'firmalife:food/pie_dough', 'firmalife:pie_pan', `${i}x #tfc:foods/fruits`], null, null,
+			'firmalife:food/filled_pie', true, false, true, i,
+			TFC.isp.of('firmalife:food/filled_pie').meal(
+				(food) => food.hunger(4).dairy(0.5).fruit(1.0).grain(1.0).saturation(2.0).water(0.5).decayModifier(2),
+				[(portion) => portion.nutrientModifier(0.5).waterModifier(0.2).saturationModifier(1.0)]
+			).firmaLifeAddPiePan(), `filled_jam_pie_${i}`
+		);
+	}
+
 
 	// Savory Pie
 	for (let i = 1; i <= 3; i++) {
@@ -270,19 +274,19 @@ function registerTFGBakingAndDessertFoodRecipes(event) {
 			['firmalife:food/pie_dough', 'firmalife:pie_pan', `${i}x #tfg:foods/usable_in_savory_pie`], null, null,
 			'firmalife:food/filled_pie', true, false, true, i,
 			TFC.isp.of('firmalife:food/filled_pie').meal(
-				(food) => food.hunger(4).dairy(0.5).grain(1.0).saturation(1.0).decayModifier(4.5),
-				[(portion) => portion.nutrientModifier(1.0).waterModifier(0.8).saturationModifier(0.8)]
+				(food) => food.hunger(4).dairy(0.5).grain(1.0).saturation(1.5).decayModifier(2),
+				[(portion) => portion.nutrientModifier(0.8).waterModifier(0.8).saturationModifier(1.0)]
 			).firmaLifeAddPiePan(), `filled_savory_pie_${i}`
 		);
 	}
 
 	// Breakfast Pie
 	global.generateMixingFoodRecipes(event,
-		['firmalife:food/pie_dough', 'firmalife:pie_pan', '#forge:eggs', 'firmalife:food/bacon', '#tfg:foods/cheeses'], null, null,
+		['firmalife:food/pie_dough', 'firmalife:pie_pan', '#forge:eggs', 'firmalife:food/cooked_bacon', '#tfg:foods/cheeses'], null, null,
 		'firmalife:food/filled_pie', true, false, true, 4,
 		TFC.isp.of('firmalife:food/filled_pie').meal(
-			(food) => food.hunger(4).dairy(0.5).grain(1.0).saturation(1.0).decayModifier(4.5),
-			[(portion) => portion.nutrientModifier(1.0).waterModifier(0.8).saturationModifier(0.8)]
+			(food) => food.hunger(4).dairy(0.5).grain(1.0).saturation(1.0).decayModifier(2),
+			[(portion) => portion.nutrientModifier(1.0).waterModifier(0.8).saturationModifier(1.0)]
 		).firmaLifeAddPiePan(), 'filled_breakfast_pie'
 	);
 
