@@ -1,0 +1,88 @@
+{
+  "name": "Alcohol Production",
+  "category": "tfg:cooking",
+  "icon": "firmalife:textures/item/hematitic_wine_bottle.png",
+  "pages": [
+    {
+        "type": "patchouli:text",
+        "title": "Index",
+        "anchor": "index",
+        "text": "$(li)$(bold)$(l:cooking/drinks#alcohol)Alcohol$()$(li)$(bold)$(l:cooking/drinks#aged_alcohol)Aged Alcohol$()$(li)$(bold)$(l:cooking/drinks#vintage_alcohol)Vintage Alcohol$()$(li)$(bold)$(l:cooking/alcohol#wine_making)Wine Making$()$(li2)$(l:cooking/alcohol#wine_properties)Wine Properties$()$(li)$(bold)$(l:cooking/alcohol#wine_shelf)Wine Shelf$()"
+    },
+    {
+        "type": "patchouli:text",
+        "title": "Wine Making",
+        "anchor": "wine_making",
+        "text": "$(thing)Wine-making$() is the science of turning $(thing)grapes$() into alcohol. You must first find $(l:the_world/wild_fruits#red_grapes)Red Grapes$() or $(l:the_world/wild_fruits#white_grapes)White Grapes$() in the wild and cultivate their seeds on $(thing)Trellises$() to obtain $(item)Grapes$(). Wine effects can be viewed $(l:cooking/drinks#wine)Here$()"
+    },
+    {
+        "type": "patchouli:spotlight",
+        "anchor": "grape_smashing",
+        "title": "Grape Smashing",
+        "item": {
+        "tag": "firmalife:stomping_barrels"
+        },
+        "text": "Grapes must then be smashed in a $(thing)Stomping Barrel$(), $(thing)Quern$(), or $(l:cooking/cooking_methods#food_processor)Food Processor$() to obtain smashed grapes. To use a stomping barrel, $(item)$(k:key.use)$() with fresh grapes. Then, jump up and down on the barrel 16 times. $(item)$(k:key.use)$() with an empty hand to retrieve the items.$(br2)Then, seal the smashed grapes in a barrel for 5 days to $(thing)ferment$() them."
+    },
+    {
+        "type": "patchouli:crafting",
+        "anchor": "barrel_press",
+        "title": "Barrel press",
+        "recipe": "firmalife:crafting/wood/acacia_barrel_press",
+        "text": "A prensagem em barril é a última etapa do processamento da uva."
+    },
+    {
+        "type": "patchouli:text",
+        "text": "O compartimento mais à esquerda pode conter até 16 uvas. Quatro uvas são necessárias para uma garrafa de vinho. Os quatro compartimentos centrais servem para misturar as uvas com outros ingredientes, mas isso é opcional. Usar apenas uvas tintas ou brancas produz vinho tinto ou branco. Adicionar pelo menos uma uva tinta ao vinho branco produz vinho rosé. Adicionar açúcar ao vinho branco produz vinho doce. Adicionar uma mistura de tiragem (fermento e adoçante em um barril) produz vinho espumante."
+    },
+    {
+        "type": "tfg:glassworking_recipe",
+        "recipe": "firmalife:glassworking/olivine_wine_bottle",
+        "text": "O vinho deve ser engarrafado em uma garrafa apropriada, feita de vidro sem sílica."
+    },
+    {
+        "type": "patchouli:crafting",
+        "anchor": "bottle_label",
+        "title": "Rótulo de Garrafa",
+        "recipe": "firmalife:crafting/bottle_label",
+        "text": "Os $(thing)Rótulos de Garrafa$() podem ser renomeados em uma estação de escrita e adicionarão seu nome ao texto-dica do vinho."
+    },
+    {
+        "type": "patchouli:text",
+        "text": "O vinho deve ser fornecido com uma $(thing)Rolha$(), feita mergulhando $(thing)Madeira Serrada Tratada$() em $(thing)Água de Cal$() por um dia. Quando tudo estiver pronto, use o compartimento para encher a garrafa de vinho ou pressione $(item)$(k:key.use)$() com uma garrafa na mão."
+    },
+    {
+        "type": "patchouli:text",
+        "anchor": "wine_properties",
+        "title": "Drinking Wine",
+        "text": "The discerning sommelier will be able to detect subtleties in the wine that is produced under different conditions. Indeed, this is possible in the world of $(tfg_short) as well. It starts in the fields in which those grapes were grown -- a row of grapes is deeply affected by the ambient environment and soil."
+    },
+    {
+        "type": "patchouli:text",
+        "text": "As uvas podem apresentar três características relacionadas ao terreno -- 'Cultivada em Cascalho', 'Cultivada em Declive' e 'Cultivada em Terra', dependendo do ambiente próximo. O vinho também registra a Classificação Climática de Koppen da área em que é engarrafado. Uvas cultivadas perto de abelhas apresentam a característica 'Polinização por Abelhas'."
+    },
+    {
+        "type": "patchouli:text",
+        "text": "O vinho começa a envelhecer assim que é engarrafado e para de envelhecer quando a rolha é removida. A rolha pode ser removida por $(item)$(k:key.use)$() no item da garrafa com uma faca. Caso contrário, garrafas de vinho funcionam um pouco como baldes e podem ser esvaziadas em barris ou outros dispositivos."
+    },
+    {
+        "type": "patchouli:crafting",
+        "title": "Wine Shelf",
+        "anchor": "wine_shelf",
+        "recipe": "firmalife:crafting/wood/hickory_wine_shelf",
+        "text": "A $(thing)Prateleira de Vinho$() é o acessório perfeito para sua vinícola, permitindo que você exiba e armazene suas garrafas de vinho com estilo."
+    },
+    {
+        "type": "patchouli:relations",
+        "title": "Further Reading",
+        "anchor": "relations",
+        "entries": [
+        "tfg:cooking/food_and_water",
+        "tfg:the_world/wild_crops",
+        "tfg:the_world/wild_fruits"
+        ]
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 6
+}

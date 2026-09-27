@@ -1,0 +1,40 @@
+{
+	"name": "Pre-Launch Preparations",
+	"category": "tfg:the_moon",
+	"icon": "ad_astra:tier_1_rocket",
+	"read_by_default": true,
+	"priority": true,
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Eager to launch into the final frontier? We totally get the enthusiasm but you can't just hurl yourself into space and hope to survive! $(thing)Preparation$() is key to survival, or you'll just end up back in the Stone Age banging rocks together for a few seconds before suffocating to death."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Make sure you have at least the following:$(li)A $(item)Space Suit$() and a full drum of breathable gas$(li)A $(item)Rocket$() with another full drum of spare $(thing)Fuel$()$(li)A second $(item)Launch Pad$() so you can return$(li)Plenty of food and water$(li)A weapon and shield in case the Moon's haunted..."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "food",
+			"item": "tfg:food/meal_bag,tfg:food/calorie_paste,tfg:food/freeze_dried_fruit",
+			"text": "Consider bringing along some $(thing)Space Food$() for the journey ahead! It's simple to make and comes with a long shelf life."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(l:cooking/decay#freeze_dry)Freeze-Dried Fruits$() are a tasty snack, $(item)Meal Bags$() can hold any normal kind of food you'd have on Earth, and there's also $(item)Calorie Paste$() for a nutritionally complete but gross meal. You can reuse the Foil Packs when you're finished, too!"
+		},
+		{
+			"type": "patchouli:relations",
+			"title": "Further Reading",
+			"anchor": "relations",
+			"entries": [
+				"tfg:the_moon/the_moon",
+				"tfg:the_moon/orbit",
+				"tfg:cooking/food_and_water",
+				"tfg:cooking/sandwiches",
+				"tfg:cooking/decay"
+			]
+		}
+	]
+}

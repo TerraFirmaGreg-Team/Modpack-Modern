@@ -1,0 +1,109 @@
+{
+    "name": "Panning & Sluices",
+    "category": "tfg:craftsmanship",
+    "icon": "tfc:pan/empty",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "anchor": "panning",
+            "title": "Просіювання",
+            "text": "$(thing)Panning$() is a method of obtaining ore dusts of certain native ores by searching in rivers and other waterways.$(br2)Panning makes use of $(t:#tfc:ore_deposits)$(6)Ore Deposits$() which are found in gravel patches in the bottom of lakes and rivers.$(br2)In order to get started panning, you will need an $(item)Empty Pan$()."
+        },
+        {
+            "type": "tfg:knapping_recipe",
+            "recipe": "tfc:clay_knapping/pan",
+            "text": "Clay can be $(l:craftsmanship/pottery)knapped$() into a pan as shown above."
+        },
+        {
+            "type": "tfg:heat_recipe",
+            "recipe": "tfc:heating/ceramic_pan",
+            "text": "Once the pan has been $(thing)knapped$(), it needs to be $(l:game_mechanics/heating)fired$() to create a $(thing)Ceramic Pan$().$(br2)The next thing you will need to find is some sort of $(t:#tfc:ore_deposits)$(6)Ore Deposit$(). Ore deposits can come in several different ores: Native Copper, Native Silver, Native Gold, and Cassiterite."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "#tfc:ore_deposits"
+                }
+            },
+            "name": "Example Deposit",
+            "text": "Ore deposits in gravel.",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Now you can begin panning!$(br2)$(bold)1.$() With the pan in hand, $(item)$(k:key.use)$() it on the ore deposit block.$(br2)$(bold)2.$() While standing in water with the pan in your hand, hold down $(item)$(k:key.use)$() and you will start panning.$(br2)$(bold)3.$() After a few moments, if you are lucky, you may be rewarded with some ore dust in your inventory."
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/panning.png"
+            ],
+            "border": true
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "sluice",
+            "title": "Шлюзи",
+            "item": "tag:tfc:sluices",
+            "text": "The $(thing)Sluice$() is a device that is used to process $(thing)Ore Deposits$() automatically, producing the same results that $(l:craftsmanship/panning#panning)Panning$() does, with slightly higher probabilities."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "При встановленні, жолоб займає два блоки. Вода повинна протікати через верхню частину жолобу та виходити знизу. Він може працювати, коли видно, що через нього тече вода. Вода, що надходить у жолоб, має бути останнім блоком водного потоку. Під днищем жолобу має бути порожній блок, куди потрапляє вода."
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/sluice_cross.png"
+            ],
+            "text": "Правильно встановлений мийний жолоб",
+            "border": true
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Щоб скористатися мийним жолобом, кинь предмети у потік води та дай їм пливсти. Вони з'являться у жолобі. Через деякий час, є ймовірність того, що вимиті предмети випадуть на дно."
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/sluice_in_use.png"
+            ],
+            "text": "Мийний жолоб, в якому вимивається пісок",
+            "border": true
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Panning and sluicing can give a few possible products: $(thing)Ore Dusts$(), $(thing)Small Piles of Ore Dust$(), $(thing)Loose Rocks$(), and $(thing)Gems$().$(br)The probabilities for obtaining certain drops can be viewed by looking at the ore deposit in $(emi).",
+            "title": "Expected Products"
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Додаткове читання",
+            "anchor": "relations",
+            "entries": [
+                "tfg:the_world/geology",
+                "tfg:craftsmanship/sticks_and_stones",
+                "tfg:craftsmanship/pottery",
+                "tfg:craftsmanship/metallurgy"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 15,
+    "extra_recipe_mappings": {
+        "tag:tfc:ore_deposits": 0,
+        "tfc:ceramic/unfired_pan": 1,
+        "tfc:pan/empty": 2,
+        "tfc:pan/filled": 4,
+        "tag:tfc:sluices": 6
+    }
+}

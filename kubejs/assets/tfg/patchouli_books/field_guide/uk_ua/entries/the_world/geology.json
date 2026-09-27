@@ -1,0 +1,200 @@
+{
+    "name": "Earth Geology",
+    "category": "tfg:the_world",
+    "icon": "tfc:rock/loose/gabbro",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "anchor": "intro",
+            "text": "The world of $(tfg) is divided into large continents - landmasses many kilometers wide and seperated by oceans. In these, you may find mountain ranges, rivers, and many other formations. Here you will learn about the geology of Earth and how rock layers are determined."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "index",
+            "text": "$(li)$(bold)$(l:the_world/geology#rocks)Rock Layers$()$(li)$(bold)$(l:the_world/geology#metamorphism)Metamorphism$()$(li)$(bold)$(l:the_world/geology#ocean_floors)Ocean Floors$()$(li)$(bold)$(l:the_world/geology#uplift_regions)Uplift Regions$()$(li)$(bold)$(l:the_world/geology#rock_devisions)Rock Devisions$()$(li2)$(l:the_world/geology#sedimentary)Sedimentary$()$(li2)$(l:the_world/geology#metamorphic)Metamorphic$()$(li2)$(l:the_world/geology#igneous_extrusive)Igneous Extrusive$()$(li2)$(l:the_world/geology#igneous_intrusive)Igneous Intrusive$()$(li)$(bold)$(l:the_world/geology#rock_classifiers)Rock Classifiers$()$(li2)$(l:the_world/geology#sedimentary_carbonate)Sedimentary-Carbonate$()$(li2)$(l:the_world/geology#sedimentary_clastic)Sedimentary-Clastic$()$(li2)$(l:the_world/geology#sedimentary_organic)Sedimentary-Organic$()$(li2)$(l:the_world/geology#igneous_felsic)Igneous-Felsic$()$(li2)$(l:the_world/geology#igneous_intermediate)Igneous-Intermediate$()$(li2)$(l:the_world/geology#igneous_mafic)Igneous-Mafic$()$(li2)$(l:the_world/geology#igneous_ultramafic)Igneous-ultramafic$()"
+        },
+        {
+            "type": "patchouli:image",
+            "width": 1024,
+            "texture_width": 1024,
+            "height": 1024,
+            "texture_height": 1024,
+            "images": [
+                "tfg:textures/gui/field_guide/maps/terrain_map.png"
+            ],
+            "text": "A 65.5km² map displaying average continental formations and mainstream rivers with their tributaries.",
+            "border": true
+        },
+        {
+            "type": "patchouli:image",
+            "width": 1024,
+            "texture_width": 1024,
+            "height": 1024,
+            "texture_height": 1024,
+            "images": [
+                "tfg:textures/gui/field_guide/maps/biomes_map.png"
+            ],
+            "text": "A 65.5km² map displaying average biome distribution based on local $(l:the_world/climate#climate)Climate$().",
+            "border": true
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "rocks",
+            "text": "The world is divided up into different types of $(thing)Rock$(). Rock regions can be over a kilometer across, and there will usually be two or three different rock layers under your feet at all times. As different ores are found in different rock types, locating specific rock types can be very important for finding resources such as $(thing)Ores$(), which will often only appear in certain rock types.",
+            "title": "Гірські породи"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Верхній шар породи на континенті буде або магматичним ефузивним, або $(l:the_world/geology#sedimentary)осадовим$(). Під осадовими породами, найімовірніше, залягатимуть $(l:the_world/geology#metamorphic)метаморфізовані$() форми розташованої вище породи.$(br2)Наприклад, $(thing)мармур$() (метаморфічна порода), найімовірніше, буде знайдено під $(thing)вапняком$() або $(thing)крейдою$(). Високометаморфізовані породи зазвичай залягають глибоко під іншими метаморфічними або магматичними породами."
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/biomes/rock_layers.png"
+            ],
+            "text": "Поперечний розріз світу TFC.",
+            "border": true
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "metamorphism",
+            "text": "$(li)$(thing)Шиферний сланець$() утворюється під $(thing)глинистим сланцем$(), $(thing)аргілітом$() та $(thing)Конгломератом$().$(li)$(thing)Мармур$() утворюється під $(thing)вапняком$(), $(thing)доломітом$() та $(thing)крейдою$().$(li)$(thing)Кварцит$() утворюється під $(thing)кременистим сланцем$().$(li)$(thing)Філіт$() утворюється під $(thing)шиферним сланцем$().$(li)$(thing)Аспідний сланець$() та $(thing)гнейс$() утворюються під $(thing)філітом$() або іншими магматичними інтрузивними породами.",
+            "title": "Metamorphism"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "ocean_floors",
+            "text": "Дно океанів складається з $(l:the_world/geology#igneous_extrusive)магматичних ефузивних$() порід — порід, що утворюються з магми, яка швидко охолоджується. Під магматичною ефузивною породою, найімовірніше, залягатиме $(l:the_world/geology)магматична інтрузивна$() порода того самого $(item)класу$().$(br2)Наприклад, під $(thing)базальтом$() (мафічною магматичною ефузивною породою), найімовірніше, буде $(thing)габро$() (мафічна магматична інтрузивна порода).",
+            "title": "Океанічне дно"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "uplift_regions",
+            "text": "Finally, in mountainous regions you might also see $(thing)uplift$(), where a metamorphic or igneous intrusive rock is found on the surface. Uplift rocks can be found above other continental sedimentary or higher-grade metamorphic rocks.$(br2)In addition, $(l:https://en.wikipedia.org/wiki/Dike_%28geology%29)Dikes$() - small vertical slices of igneous intrusive rock - may appear scattered around the world.",
+            "title": "Регіони підняття"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "rock_devisions",
+            "title": "Rock Devisions",
+            "text": "Rocks in $(tfg_short) are typically classified among four devisions: $(l:the_world/geology#sedimentary)Sedimentary$(), $(l:the_world/geology#metamorphic)Metamorphic$(), $(l:the_world/geology#igneous_extrusive)Igneous Extrusive$(), and $(l:the_world/geology#igneous_intrusive)Igneous Intrusive$(). These categories determine where the rock can spawn, and also what ores may spawn in this rock."
+        },
+        {
+            "title": "Відкладні",
+            "type": "patchouli:spotlight",
+            "item": {
+                "tag": "tfg:raw_stone/sedimentary"
+            },
+            "anchor": "sedimentary",
+            "text": "$(l:https://en.wikipedia.org/wiki/Sedimentary_rock)Sedimentary$() rocks are formed by the accumulation or deposition of mineral or organic particles. They are typically found on the top layers of rock in continental areas."
+        },
+        {
+            "title": "Метаморфічні",
+            "type": "patchouli:spotlight",
+            "item": {
+                "tag": "tfg:raw_stone/metamorphic"
+            },
+            "anchor": "metamorphic",
+            "text": "$(l:https://en.wikipedia.org/wiki/Metamorphic_rock)Metamorphic$() rocks are created by a process called metamorphism. They can be found underneath corresponding sedimentary or igneous rock, or in uplift areas."
+        },
+        {
+            "title": "Екструзивні ігнейські",
+            "type": "patchouli:spotlight",
+            "item": {
+                "tag": "tfg:raw_stone/igneous_extrusive"
+            },
+            "anchor": "igneous_extrusive",
+            "text": "$(l:https://en.wikipedia.org/wiki/Igneous_rock#Extrusive)Igneous Extrusive$() rocks are formed from magma cooling on the Earth's surface. They can be found on the top layer of rock in continental areas, or on the floor of oceans."
+        },
+        {
+            "title": "Інтрузивні ігнейські",
+            "type": "patchouli:spotlight",
+            "item": {
+                "tag": "tfg:raw_stone/igneous_intrusive"
+            },
+            "anchor": "igneous_intrusive",
+            "text": "$(l:https://en.wikipedia.org/wiki/Igneous_rock#Intrusive)Igneous Intrusive$() rocks are formed from magma which cooled under the Earth's crust. They can be found deep underground, or rarely in dikes or uplift areas."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "rock_classifiers",
+            "text": "On top of $(l:the_world/geology#rock_devisions)Rock Devisions$(), rocks are further categorized by their chemical compositions.",
+            "title": "Rock Classifiers"
+        },
+        {
+            "title": "Sedimentary-Carbonate",
+            "type": "patchouli:spotlight",
+            "item": {
+                "tag": "tfg:stone_composition/raw/sedimentary_carbonate"
+            },
+            "anchor": "sedimentary_carbonate",
+            "text": "$(l:https://en.wikipedia.org/wiki/Carbonate_rock)Sedimentary-Carbonate$() rocks are composed primarily of carbonate minerals like calcite."
+        },
+        {
+            "title": "Sedimentary-Clastic",
+            "type": "patchouli:spotlight",
+            "item": {
+                "tag": "tfg:stone_composition/raw/sedimentary_clastic"
+            },
+            "anchor": "sedimentary_clastic",
+            "text": "$(l:https://en.wikipedia.org/wiki/Clastic_rock)Sedimentary-Clastic$() rocks are composed of fragmants (clasts) of pre-existing minerals or rocks."
+        },
+        {
+            "title": "Sedimentary-Organic",
+            "type": "patchouli:spotlight",
+            "item": {
+                "tag": "tfg:stone_composition/raw/sedimentary_organic"
+            },
+            "anchor": "sedimentary_organic",
+            "text": "$(l:https://en.wikipedia.org/wiki/Organic-rich_sedimentary_rocks)Sedimentary-Organic$() rocks are formed from the breakdown or fossilization of organic matter like shells or bacteria."
+        },
+        {
+            "title": "Igneous-Felsic",
+            "type": "patchouli:spotlight",
+            "item": {
+                "tag": "tfg:stone_composition/raw/igneous_felsic"
+            },
+            "anchor": "igneous_felsic",
+            "text": "$(l:https://en.wikipedia.org/wiki/Felsic)Igneous-Felsic$() rocks contain a rich presence of elements that form feldspar and quartz. Generally a rock must contain more than 75% of felsic minerals to be classified as $(thing)Felsic$()."
+        },
+        {
+            "title": "Igneous-Intermediate",
+            "type": "patchouli:spotlight",
+            "item": {
+                "tag": "tfg:stone_composition/raw/igneous_intermediate"
+            },
+            "anchor": "igneous_intermediate",
+            "text": "$(l:https://en.wikipedia.org/wiki/Intermediate_composition)Igneous-Intermediate$() rocks contain 51.5 - 63.0 wt% SiO₂, putting them in between $(l:the_world/geology#igneous_felsic)Felsic$() and $(l:the_world/geology#igneous_mafic)Mafic$() compositions."
+        },
+        {
+            "title": "Igneous-Mafic",
+            "type": "patchouli:spotlight",
+            "item": {
+                "tag": "tfg:stone_composition/raw/igneous_mafic"
+            },
+            "anchor": "igneous_mafic",
+            "text": "$(l:https://en.wikipedia.org/wiki/Mafic)Igneous-Mafic$() rocks contain a rich presence of magnesium and iron minerals."
+        },
+        {
+            "title": "Igneous-Ultramafic",
+            "type": "patchouli:spotlight",
+            "item": {
+                "tag": "tfg:stone_composition/raw/igneous_ultramafic"
+            },
+            "anchor": "igneous_ultramafic",
+            "text": "$(l:https://en.wikipedia.org/wiki/Mafic)Igneous-Ultramafic$() rocks contain a very low concentration of silica."
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Додаткове читання",
+            "anchor": "relations",
+            "entries": [
+                "tfg:the_world/climate",
+                "tfg:craftsmanship/metallurgy",
+                "tfg:game_mechanics/mining"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 0
+}

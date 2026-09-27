@@ -1,0 +1,715 @@
+{
+    "name": "Earth Flora",
+    "category": "tfg:the_world",
+    "icon": "tfc:plant/goldenrod",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "anchor": "index",
+            "text": "$(li)$(bold)$(l:the_world/flora#standard_plants)Standard Plant Types$()$(li)$(bold)$(l:the_world/flora#aquatic_plants)Aquatic Plant Types$()$(li)$(bold)$(l:the_world/flora#medicinal_plants)Medicinal Plants$()$(li)$(bold)$(l:the_world/flora#spices)Spices$()$(li2)$(l:the_world/flora#basil)Basil$()$(li2)$(l:the_world/flora#bay)Bay Laural$()$(li2)$(l:the_world/flora#cardamom)Cardamom$()$(li2)$(l:the_world/flora#cilantro)Cilantro$()$(li2)$(l:the_world/flora#cumin)Cumin$()$(li2)$(l:the_world/flora#oregano)Oregano$()$(li2)$(l:the_world/flora#pimento)Pimento$()$(li2)$(l:the_world/flora#vanilla)Vanilla$()$(li)$(bold)$(l:the_world/flora#seed_ball)Seed Ball$()"
+        },
+        {
+            "anchor": "intro",
+            "type": "patchouli:spotlight",
+            "title": "Intro to Earth Flora",
+            "item": {
+                "tag": "tfc:plants"
+            },
+            "text": "Earth is an incredibly diverse planet when it comes to flora. Unlike in vanilla $(thing)Minecraft$()--Plants in $(tfg) spawn based on local $(l:the_world/climate#climate)Climate Conditions$()."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Plants may be difficult to find during some $(l:the_world/climate#seasons)Seasons$() as they go through cycles of flowering and laying dormant, or changing color as the local temperature changes.$(br2)Colorful flowers can typically be crushed in a $(l:craftsmanship/quern)Quern$() for $(thing)Dye$(). While some plants can be used for making $(l:the_world/flora#medicinal_plants)medicine$() or $(l:the_world/flora#spices)meals$()."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfc:plant/anthurium"
+                }
+            },
+            "name": "標準",
+            "anchor": "standard_plants",
+            "text": "一般的な植物は小さな花のようなものです。草地、土、耕作地で育ちます。",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfc:plant/sagebrush"
+                }
+            },
+            "name": "乾燥",
+            "text": "乾燥した植物は一般的な植物に似ていますが、砂の上で育つことができます。これらは降水量の少ない地域で育ちます。",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:multiblock",
+            "anchor": "cacti",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "Y"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfc:plant/barrel_cactus[part=upper]",
+                    "Y": "tfc:plant/barrel_cactus[part=lower]"
+                }
+            },
+            "name": "サボテン",
+            "text": "サボテンは2ブロックの高さまで成長し、接触するとダメージを与えます！",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfc:plant/moss[down=true]"
+                }
+            },
+            "name": "這う植物",
+            "text": "這うように育つ植物は周囲のブロックの形状に沿って形を変えます。主に地面に塊となって育ちます。",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "XY"
+                    ],
+                    [
+                        "0 "
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfc:wood/wood/birch",
+                    "Y": "tfc:plant/licorice_fern[facing=south]"
+                }
+            },
+            "name": "着生植物",
+            "text": "着生植物は丸太の側面にのみ育ちます。",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfc:plant/bluegrass"
+                }
+            },
+            "name": "短い草",
+            "text": "背の低い草の植物は、時間が立つにつれて高く成長します。また、泥炭と泥の上でも育ちます。",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "Y"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfc:plant/king_fern[part=upper]",
+                    "Y": "tfc:plant/king_fern[part=lower]"
+                }
+            },
+            "name": "高い草",
+            "text": "背の高い草の植物は、視界を遮るのにちょうど良い高さです。",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfc:plant/ivy[up=true,north=true]"
+                }
+            },
+            "name": "つる植物",
+            "text": "つる植物は、十分に暖かい場所であれば世界中に広がります。",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "Y"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfc:plant/liana_plant",
+                    "Y": "tfc:plant/liana"
+                }
+            },
+            "name": "垂れ下がったつる植物",
+            "text": "垂れ下がったつるは、上部のブロックから下に向かって成長します。",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "Y"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfc:plant/arundo",
+                    "Y": "tfc:plant/arundo_plant"
+                }
+            },
+            "name": "ねじれたつる植物",
+            "text": "ねじれたつるは、地面から上へとねじれながら成長し、変種として存在することもあります。",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "aquatic_plants",
+            "text": "Aquatic plants are restricted to either spawn in fresh or salty water. Otherwise, they grow and act much like the plants you see on the surface. Some water plants can be cooked for food.",
+            "title": "Aquatic Plants"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfc:plant/sago[fluid=water]"
+                }
+            },
+            "name": "一般的な水生植物",
+            "text": "一般的な水生植物は、$(thing)ナイフ$()で切断すると$(thing)海藻$()が得られます。",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfc:plant/manatee_grass[fluid=salt_water]"
+                }
+            },
+            "name": "水草",
+            "text": "水草は水中で育つ草です。",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "Y"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfc:plant/cattail[part=upper]",
+                    "Y": "tfc:plant/cattail[part=lower,fluid=water]"
+                }
+            },
+            "name": "背の高い水生植物",
+            "text": "背の高い水生植物は、下部のみを水に浸すと成長し、$(thing)タロ$()と$()ガマ$()は、$(thing)ナイフ$()で切断すると$(thing)根$()が得られます。",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "Y"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfc:plant/duckweed",
+                    "Y": "minecraft:water"
+                }
+            },
+            "name": "浮草",
+            "text": "浮草は水面に浮かんでいます。ボートが接触するとそれらを壊してしまいます。",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "Y"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfc:plant/winged_kelp[fluid=salt_water]",
+                    "Y": "tfc:plant/winged_kelp_plant[fluid=salt_water]"
+                }
+            },
+            "name": "海藻",
+            "text": "海藻は水中で成長するねじれたつる植物です。",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "Y"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfc:plant/giant_kelp_flower[facing=up,fluid=salt_water]",
+                    "Y": "tfc:plant/giant_kelp_plant[down=true,up=true,fluid=salt_water]"
+                }
+            },
+            "name": "木の様な海藻",
+            "text": "一部の海藻は水中で複雑な木の様に成長します。花は$(thing)ナイフ$()で収穫することができます。",
+            "enable_visualize": false
+        },
+        {
+            "anchor": "medicinal_plants",
+            "type": "patchouli:spotlight",
+            "item": {
+                "tag": "tfg:medicinal_ingredients/plants"
+            },
+            "title": "Medicinal Plants",
+            "text": "Many plants in $(tfg) hold medicinal value and can be used for creating phytotherapeutic medicine. You can combine these ingredients in a mixing bowl with wax, binders, and spring water to make pills. Or more advanced medications."
+        },
+        {
+            "title": "Spices",
+            "type": "patchouli:spotlight",
+            "item": {
+                "tag": "tfg:foods/spice_plants"
+            },
+            "anchor": "spices",
+            "text": "With $(thing)Firmalife$(), there are a number of small plants you can collect and grow on your own, which have cooking properties. They can all be found in the wild, and once harvested, may be cultivated in a $(l:agriculture/greenhouse)Greenhouse$(), in which they consume 20 points of N, P, and K."
+        },
+        {
+            "type": "tfg:table",
+            "strings": [
+                {
+                    "text": "Spice",
+                    "bold": true
+                },
+                {
+                    "text": "気温（°C）",
+                    "bold": true
+                },
+                {
+                    "text": "降水量（mm）",
+                    "bold": true
+                },
+                {
+                    "text": "バジル"
+                },
+                {
+                    "text": "12 - 25"
+                },
+                {
+                    "text": "300 - 500"
+                },
+                {
+                    "text": "ローリエ"
+                },
+                {
+                    "text": "8 - 14"
+                },
+                {
+                    "text": "25 - 225"
+                },
+                {
+                    "text": "カルダモン"
+                },
+                {
+                    "text": "18 - 30"
+                },
+                {
+                    "text": "350 - 500"
+                },
+                {
+                    "text": "コリアンダー"
+                },
+                {
+                    "text": "5 - 15"
+                },
+                {
+                    "text": "0 - 150"
+                },
+                {
+                    "text": "クミン"
+                },
+                {
+                    "text": "6 - 20"
+                },
+                {
+                    "text": "50 - 250"
+                },
+                {
+                    "text": "オレガノ"
+                },
+                {
+                    "text": "5 - 13"
+                },
+                {
+                    "text": "50 - 150"
+                },
+                {
+                    "text": "ピメント"
+                },
+                {
+                    "text": "15 - 30"
+                },
+                {
+                    "text": "200 - 450"
+                },
+                {
+                    "text": "バニラ"
+                },
+                {
+                    "text": "18 - 30"
+                },
+                {
+                    "text": "200 - 500"
+                }
+            ],
+            "text": "",
+            "title": "Wild Spice Ranges",
+            "legend": [],
+            "columns": 2,
+            "first_column_width": 80,
+            "column_width": 70,
+            "row_height": 10,
+            "left_buffer": 2,
+            "top_buffer": 12,
+            "draw_background": false
+        },
+        {
+            "type": "patchouli:empty",
+            "draw_filler": false
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "firmalife:plant/basil[stage=1]"
+                }
+            },
+            "name": "バジル",
+            "anchor": "basil",
+            "text": "$(thing)野生のバジル$()は気温が12°C~25°C、降水量300~500mmの土地に生えています。",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "firmalife:plant/bay_laurel[stage=1]"
+                }
+            },
+            "name": "ローリエ",
+            "anchor": "bay",
+            "text": "$(thing)野生のローリエ$()は、気温が8~14C、降水量25~225mmの土地に生えています。",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "firmalife:plant/cardamom[stage=1]"
+                }
+            },
+            "name": "カルダモン",
+            "anchor": "cardamom",
+            "text": "$(thing)野生のカルダモン$()は気温が18~30°C、降水量350~500mmの土地に生えています。",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "firmalife:plant/cilantro[stage=1]"
+                }
+            },
+            "name": "コリアンダー",
+            "anchor": "cilantro",
+            "text": "$(thing)野生のコリアンダー$()は気温が5~15C、降水量0~150mmの土地に生えています。",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "firmalife:plant/cumin[stage=1]"
+                }
+            },
+            "name": "クミン",
+            "anchor": "cumin",
+            "text": "$(thing)野生のクミン$()は気温が6~20C、降水量50~250mmの土地に生えています。",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "firmalife:plant/oregano[stage=1]"
+                }
+            },
+            "name": "オレガノ",
+            "anchor": "oregano",
+            "text": "$(thing)野生のオレガノ$()は気温が5~13C、降水量50~150mmの土地に生えています。",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "firmalife:plant/pimento[stage=1]"
+                }
+            },
+            "name": "ピメント",
+            "anchor": "pimento",
+            "text": "$(thing)野生のピメント$()は気温が15~30°C、降水量200~450mmの土地に生えています。",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "firmalife:plant/vanilla[stage=1]"
+                }
+            },
+            "name": "バニラ",
+            "anchor": "vanilla",
+            "text": "$(thing)野生のバニラ$()は気温が18°C~30°C、降水量200~500mmの土地に生えています。",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:crafting",
+            "anchor": "seed_ball",
+            "recipe": "firmalife:crafting/seed_ball",
+            "text": "$(item)シードボール$()を使うことで、様々な種類の草を植えることができます。拠点を整地した後の景観整備などに便利です。作成には$(item)堆肥$()1つと$(thing)種$()が4つ必要になります。"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "firmalife:plant/butterfly_grass"
+                }
+            },
+            "name": "バタフライグラス",
+            "anchor": "butterfly_grass",
+            "text": "バタフライグラス",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:text",
+            "text": "バタフライグラスは時間が経つと成長し、成熟すると周囲に広がったり、別の種類の草へ変化することがあります。ただし、一度ほかの草から広がったものは、それ以上増殖しません。$(br)別の草に変化した後は、$(item)ハサミ$()を使って回収できます。"
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "さらに読む",
+            "anchor": "relations",
+            "entries": [
+                "tfg:the_world/wild_fruits",
+                "tfg:the_world/wild_animals",
+                "tfg:the_world/wild_crops",
+                "tfg:the_world/earth_tree_index",
+                "tfg:agriculture/greenhouse"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 4,
+    "extra_recipe_mappings": {
+        "tag:tfg:medicinal_ingredients/plants": 21,
+        "firmalife:plant/basil": 24,
+        "firmalife:spice/basil_leaves": 24,
+        "firmalife:plant/bay_laurel": 25,
+        "tfg:spice/bay_leaf": 25,
+        "firmalife:plant/cardamom": 26,
+        "tfg:spice/cardamom_pods": 26,
+        "firmalife:plant/cilantro": 27,
+        "tfg:spice/cilantro_leaves": 27,
+        "firmalife:plant/cumin": 28,
+        "tfg:spice/cumin_seeds": 28,
+        "firmalife:plant/oregano": 29,
+        "tfg:spice/oregano_leaves": 29,
+        "firmalife:plant/pimento": 30,
+        "tfg:spice/allspice": 30,
+        "firmalife:plant/vanilla": 31,
+        "firmalife:spice/vanilla": 31,
+        "firmalife:seed_ball": 32
+    }
+}

@@ -1,0 +1,74 @@
+{
+  "name": "Chocolate Confections",
+  "category": "tfg:cooking",
+  "icon": "firmalife:textures/item/food/dark_chocolate.png",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)Chocolate-making$() takes a few processing steps, and is intended to be an immersive way to experience cooking.$(br)Chocolate items contain $(l:cooking/food_and_water#grain)Grain$() and $(l:cooking/food_and_water#dairy)Dairy$() nutrients while also providing the $(l:cooking/food_and_water#sugary_transient_effect)Sugary$() effect when eaten, making them a strong choice for meal ingredients."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "To start chocolate processing, cocoa beans must first be $(thing)roasted$() in an $(l:cooking/cooking_methods#oven)Oven$() to make $(thing)Roasted Cocoa Beans$(). Then, craft the roasted beans with a $(thing)Knife$() to split the beans into $(thing)Cocoa Powder$() and $(thing)Cocoa Butter$()."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "The $(l:cooking/mixing_bowl)Mixing Bowl$() is used to mix cocoa powder, butter, and sweetener (sugar or honey) to make $(thing)Chocolate Blends$(). The ratio of cocoa butter to powder determines what comes out:$(br)$(li)1 Powder, 1 Butter, 1 Sweetener: Milk Chocolate$()$(li)2 Powder, 1 Sweetener: Dark Chocolate$()$(li)2 Butter, 1 Sweetener: White Chocolate$()"
+    },
+    {
+      "type": "tfg:drying_recipe",
+      "recipe": "firmalife:drying/dark_chocolate",
+      "text": "Finally, chocolate is dried on a $(l:cooking/decay#drying)Drying Mat$() to make $(thing)Chocolate$()."
+    },
+    {
+      "title": "巧克力浇注",
+      "type": "patchouli:text",
+      "text": "$(thing)Chocolate$() does not need to come only in boring bars! Melt down $(thing)White$(), $(thing)Milk$(), or $(thing)Dark$() chocolate in a $(thing)Vessel$() or $(thing)Crucible$() and then cast it into a mold to obtain chocolate confections. There are three types of chocolate confections: $(thing)Hearts$(), $(thing)Bells$(), and $(thing)Knives$(). Each is obtained by casting chocolate into a different mold."
+    },
+    {
+      "type": "tfg:knapping_recipe",
+      "recipe": "tfcchannelcasting:clay_knapping/unfired_heart_mold",
+      "text": "捏制一个$(thing)心型模具$()，用来制作$(thing)心型$()巧克力。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "巧克力点心提供与巧克力棒相同的营养，但食用更快。若在特定月份制作，还会获得使营养翻倍的特质：$(thing)巧克力心型$()在二月获得$(thing)浪漫$()，$(thing)黑巧克力冬铃$()在十二月获得$(thing)节庆$()，$(thing)黑巧克力刀$()在十月获得$(thing)惊悚$()。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "此外，点心可以做成$(thing)夹心$()以获得额外收益：夹心$(thing)果酱$()会额外提供$(thing)水果$()营养，夹心$(thing)酒精$()会给予正面药水效果。"
+    },
+    {
+      "type": "tfg:sealed_barrel_recipe",
+      "recipe": "tfcchannelcasting:barrel/fill_with_sweet_liquor",
+      "text": "食用$(thing)甜酒夹心$()巧克力会获得速度提升。"
+    },
+    {
+      "type": "tfg:sealed_barrel_recipe",
+      "recipe": "tfcchannelcasting:barrel/fill_with_strong_liquor",
+      "text": "食用$(thing)烈酒夹心$()巧克力会获得伤害抗性。"
+    },
+    {
+      "type": "tfg:sealed_barrel_recipe",
+      "recipe": "tfcchannelcasting:barrel/fill_with_whiskey",
+      "text": "食用$(thing)威士忌夹心$()巧克力会获得急迫效果。"
+    },
+    {
+      "type": "patchouli:relations",
+      "title": "延伸阅读",
+      "anchor": "relations",
+      "entries": [
+            "tfg:cooking/alcohol",
+            "tfg:cooking/jam",
+            "tfg:the_world/wild_fruits"
+      ]
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 11,
+  "extra_recipe_mappings": {
+    "tag:firmalife:foods/chocolate": 0,
+    "tag:firmalife:chocolate_blends": 2,
+    "tag:tfcchannelcasting:foods/chocolate_sweet": 6
+  }
+}

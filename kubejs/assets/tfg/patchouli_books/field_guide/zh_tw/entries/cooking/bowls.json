@@ -1,0 +1,36 @@
+{
+    "name": "碗",
+    "category": "tfg:cooking",
+    "icon": "tfc:ceramic/bowl",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(thing)Bowls$() are a versatile tool which can be used to make $(l:cooking/salad)Salads$(), to make $(l:cooking/cooking_methods#pot)Soups$(), to $(l:cooking/decay#salting)Salt$() meat, or to apply $(thing)Powder$() to $(l:craftsmanship/glassworking#coloring)Glass$() in order to change the resulting glass's color.$(br2)Bowls can be made both from $(thing)Ceramic$()―By knapping a bowl out of clay, and then firing them―Or out of wood."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "To make a $(item)Salad$() open the interface by holding a bowl and $(item)$(k:key.sneak) + $(k:key.use)$() in the air.$(br2)Bowls can also be placed on the ground like blocks. When placed, they can be filled with any type of $(thing)Powder$() - the results of grinding ores, minerals, or gems in the $(l:craftsmanship/quern)Quern$()."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tag:tfc:powders",
+            "anchor": "powder_bowl",
+            "title": "粉末",
+            "link_recipes": false,
+            "text": "放置的碗可以盛裝最多16份單一粉末。手持粉末$(item)$(k:key.use)$()點選以放入。空手$(item)$(k:key.use)$()以取出。$(br2)按住$(item)$(k:key.sneak)$()可以一次裝滿或清空碗中的所有粉末。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tfc:powder/salt",
+            "link_recipes": false,
+            "text": "手持生肉點選裝有鹽的碗可以製作出鹹肉。這與直接在合成格中製作效果相同。"
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 12,
+    "extra_recipe_mappings": {
+        "tfc:ceramic/unfired_bowl": 1,
+        "tfc:ceramic/bowl": 1,
+        "minecraft:bowl": 1
+    }
+}
