@@ -167,14 +167,15 @@ const registerAE2Recipes = (event) => {
 	}).addMaterialInfo().id('tfg:crafting/speed_card')
 
 	//Auto Complete Card
-	event.recipes.gtceu.shaped('ae2:auto_complete_card', [
-		'AB',
-		'BC'
-	], {
-		A: 'ae2:advanced_card',
-		B: 'ae2:engineering_processor',
-		C: 'ae2:calculation_processor'
-	}).addMaterialInfo().id('tfg:crafting/auto_complete_card')
+	// Removed in AE2 UELM (it's in one of kolja's other addons instead)
+	//event.recipes.gtceu.shaped('ae2:auto_complete_card', [
+	//	'AB',
+	//	'BC'
+	//], {
+	//	A: 'ae2:advanced_card',
+	//	B: 'ae2:engineering_processor',
+	//	C: 'ae2:calculation_processor'
+	//}).addMaterialInfo().id('tfg:crafting/auto_complete_card')
 
 	// Void Card
 	event.shapeless('ae2:void_card', ['ae2:basic_card', 'ae2:calculation_processor'])
@@ -821,14 +822,14 @@ const registerAE2Recipes = (event) => {
 
 	// Pattern box
 
-	event.recipes.gtceu.shaped('ae2:pattern_box', [
-		'ABA',
-		'CAC'
-	], {
-		A: 'create:cardboard',
-		B: 'ae2:blank_pattern',
-		C: '#forge:fine_wires/red_alloy'
-	}).id('tfg:shaped/ae2_pattern_box')
+	//event.recipes.gtceu.shaped('ae2:pattern_box', [
+	//	'ABA',
+	//	'CAC'
+	//], {
+	//	A: 'create:cardboard',
+	//	B: 'ae2:blank_pattern',
+	//	C: '#forge:fine_wires/red_alloy'
+	//}).id('tfg:shaped/ae2_pattern_box')
 
 	// Annihilation Core
 

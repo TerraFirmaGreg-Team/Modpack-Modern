@@ -74,6 +74,10 @@ The book is no longer split between entries for random addons, or clustered in s
 - Has been forked! This shouldn't affect you at all, but it ensures long-term stability for the future development of the modpack. Please read [here](https://www.reddit.com/r/TerraFirmaGreg/comments/1wbv1o3/the_future_of_terrafirmacraft_in_tfg/) for more information.
 - ⚠ **Important note**: in an upcoming version (planned for 0.14), we will be backporting more overworld worldgen changes. As this update introduces plate tectonics, it shifts continents around, which unfortunately means everyone will be getting ugly chunk borders. We suggest exploring your continent before this update if this is something you care about. We will also be dropping support for old worldgen (pre-0.12) if you're still using it.
 - Entities (including items) in midair are no longer slowed by snow (#4656) @Therighthon
+#### AE2
+- We have moved to a [different fork](https://www.curseforge.com/minecraft/mc-mods/ae2-uelm). Same author as our previous fork, except it's public and actively developed. Now you can see what it has compared to base AE2!
+- Removed Auto Complete Card
+- Removed Pattern Box (for now)
 #### Dea's Fission
 - The fission reactor's dimension restrictions now actually work (#3359)
 - Multiblocks can no only be rotated along the Y axis
@@ -87,6 +91,8 @@ The book is no longer split between entries for random addons, or clustered in s
 - More bugfixes
 #### Greate
 - Mechanical saws now have a switch to toggle between "stonecutter" and "GregTech Cutter" recipes, so you don't have to worry about accidentally crafting decoration blocks again! Right-click it with a screwdriver to change modes.
+#### Roads and Roofs TFC
+- Fixed the mattock not working bug
 
 ## [0.13.10] - 05-09-2026
 ### Breaking Changes
