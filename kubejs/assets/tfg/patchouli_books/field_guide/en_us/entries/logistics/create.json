@@ -6,17 +6,18 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Made it to the Steam Age? $(thing)Create Logistics$() will improve your item transportation and storage capabilities significantly. Later on in $(7)LV$() you'll even be able to to automatically order specific items or route them around your base! As this is $(thing)Create$(), this means $(thing)Pondering the machines$() (hold $(item)$(k:key.ponder.ponder)$()) will be your best source of information aside from here, so be sure to look through them too."
-		},
-		{
-			"type": "patchouli:text",
 			"title": "Contents",
 			"anchor": "index",
-			"text": "$(li)$(bold)$(l:logistics/create#packages)Packages$()$(li2)$(l:logistics/create#packager)Packager$()$(li2)$(l:logistics/create#frogport)Frogports$()$(li2)$(l:logistics/create#package_filter)Package Filter$()$(li2)$(l:logistics/create#repackager)Re-Packager$()$(li2)$(l:logistics/create#unpackager)Unpackager$()$(li2)$(l:logistics/create#clipboard)Clipboard and Hand Pointer$()$(li2)$(l:logistics/create#postbox)Postbox$()$(li2)$(l:logistics/create#package_tips)Tips$()$(br2)$(o)(Continued on next page...)$()"
+			"text": "$(li)$(bold)$(l:logistics/create#packages)Packages$()$(li2)$(l:logistics/create#packager)Packager$()$(li2)$(l:logistics/create#frogport)Frogports$()$(li2)$(l:logistics/create#package_filter)Package Filter$()$(li2)$(l:logistics/create#repackager)Re-Packager$()$(li2)$(l:logistics/create#unpackager)Unpackager$()$(li2)$(l:logistics/create#clipboard)Clipboard and Hand Pointer$()$(li2)$(l:logistics/create#postbox)Postbox$()$(li2)$(l:logistics/create#package_tips)Tips$()"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(li)$(bold)$(l:logistics/create#high_logistics)High Logistics$()$(li2)$(l:logistics/create#rose_quartz)Rose Quartz$()$(li2)$(l:logistics/create#exquisite)Transmitter$()$(li2)$(l:logistics/create#stock_link)Stock Link$()$(li2)$(l:logistics/create#stock_ticker)Stock Ticker$()$(li2)$(l:logistics/create#stock_bridge)AE2 Stock Bridge$()$(li2)$(l:logistics/create#requester)Redstone Requester$()$(li2)$(l:logistics/create#table_cloths)Table Cloths$()$(li2)$(l:logistics/create#factory_gauge)Factory Gauge$()"
+			"title": " ",
+			"text": "$(br)$(li)$(bold)$(l:logistics/create#high_logistics)High Logistics$()$(li2)$(l:logistics/create#rose_quartz)Rose Quartz$()$(li2)$(l:logistics/create#exquisite)Transmitter$()$(li2)$(l:logistics/create#stock_link)Stock Link$()$(li2)$(l:logistics/create#stock_ticker)Stock Ticker$()$(li2)$(l:logistics/create#stock_bridge)AE2 Stock Bridge$()$(li2)$(l:logistics/create#requester)Redstone Requester$()$(li2)$(l:logistics/create#table_cloths)Table Cloths$()$(li2)$(l:logistics/create#factory_gauge)Factory Gauge$()"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Made it to the Steam Age? $(thing)Create Logistics$() will improve your item transportation and storage capabilities significantly. Later on in $(7)LV$() you'll even be able to to automatically order specific items or route them around your base! As this is $(thing)Create$(), this means $(thing)Pondering the machines$() (hold $(item)$(k:key.ponder.ponder)$()) will be your best source of information aside from here, so be sure to look through them too."
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -33,7 +34,7 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"item": "create:packager",
+			"item": "create:packager,fluidlogistics:fluid_packager",
 			"anchor": "packager",
 			"text": "When provided with a $(thing)redstone signal$(), the $(item)Packager$() will wrap up items from the container it is attached to (you can switch the connection side with a $(item)wrench$()) and output a neat little cardboard package.$(br)$(bold)Note:$() Despite the crafting recipe, the packager works without any additional cardboard, so don't worry about upkeep!"
 		},
