@@ -97,7 +97,7 @@
 		{
 			"type": "patchouli:multiblock",
 			"enable_visualize": false,
-			"text": "$(item)Fluid Packagers$() are the equivalent item for fluids.",
+			"text": "$(item)Fluid Packagers$() work the same way.",
 			"name": "Packaging Fluids",
 			"multiblock": {
 				"pattern": [
@@ -146,7 +146,7 @@
 					]
 				],
 				"mapping": {
-					"0": "create:packager[facing=south,powered=false]",
+					"0": "fluidlogistics:fluid_packager[facing=south,powered=false]",
 					"B": "gtceu:steel_drum",
 					"D": "create:chute"
 				}
