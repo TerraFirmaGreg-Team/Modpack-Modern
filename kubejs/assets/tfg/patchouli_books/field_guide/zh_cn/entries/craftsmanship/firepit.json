@@ -1,0 +1,132 @@
+{
+  "name": "生火",
+  "category": "tfg:craftsmanship",
+  "icon": "tfc:firepit",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "anchor": "firestarter",
+      "text": "$(thing)火$()在文明史上是一项重大的技术进步。想要生火，就必须做一个$(thing)起火器$()。对准需要生火的目标按住$(item)$(k:key.use)$()。片刻之后，会产生烟，然后便有几率成功生火。你可能需要多尝试几次才能成功点起火来。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/firestarter",
+      "text": "Crafting a firestarter can be done with two sticks. Firestarters can be used for any task that requires lighting, such as igniting a candle or starting a forge."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "With a firestarter, you can light a $(thing)Firepit$(). To make one, you will need one $(thing)log$(), three $(thing)sticks$(), and optionally up to five pieces of $(thing)kindling$(). Kindling can be items such as paper products, straw, or fallen leaves, and will increase the chance of successfully creating a firepit by 10 percent per item used. Throw ($(item)$(k:key.drop)$()) all the items on the ground, on the same block. Then use the firestarter on the block with the items floating above it.",
+      "title": "篝火"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "0"
+          ]
+        ],
+        "mapping": {
+          "X": "tfc:firepit[lit=true]"
+        }
+      },
+      "name": "Fire!",
+      "text": "如果成功的话，就能点燃一束篝火。",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Using the firepit will now open the firepit screen. On the left are four $(thing)fuel$() slots. Logs, Peat, and Stick Bundles can all be used as firepit fuel by placing them in the topmost slot. Fuel will be consumed from the bottommost slot. There is a gauge which displays the current $(thing)Temperature$() of the firepit, and on the right, a slot for items to be $(l:game_mechanics/heating)heated$() in."
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "tfc:textures/gui/book/gui/firepit.png"
+      ],
+      "text": "篝火界面",
+      "border": false
+    },
+    {
+      "type": "tfg:heat_recipe",
+      "recipe": "tfc:heating/torch_from_stick",
+      "text": "许多有用的物品可以在篝火中加热制作。例如加热木棍就可以做成两根$(thing)火把$()。注意！放置在世界中的火把是会燃尽的，但好在你可以用$(thing)起火器$()或其他$(thing)火把$()重新点燃它们。"
+    },
+    {
+      "type": "tfg:heat_recipe",
+      "recipe": "tfc:heating/cod",
+      "text": "The fire pit is also a good device for $(l:cooking/cooking_methods)Cooking Food$(). All raw meats can be cooked in a firepit, which will lengthen their shelf life. More on decay and preservation can be read $(l:cooking/decay)here$()."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "The firepit can be extinguished at any time by using a $(thing)Shovel$() on it.$(br2)A firepit can also have other devices added to it to extend its functionality. Using a $(thing)Wrought Iron Grill$() will convert the firepit into a $(l:cooking/cooking_methods#grill)Grill$(), and using a $(thing)Ceramic Pot$() will convert the firepit into a $(l:cooking/cooking_methods#pot)Pot$(). To remove either device, $(item)$(k:key.use)$() while holding $(item)$(k:key.sneak)$(). Be careful not to try to remove a hot grill or pot!"
+    },
+    {
+      "type": "tfg:multimultiblock",
+      "text": "一个篝火，添加了烤架或锅。",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:firepit"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:grill"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:pot"
+          }
+        }
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Firepit fuels have different levels of purity. Fuel purity effects how long a fuel burns for and what temperature it may reach. The most pure fuels are logs, while fuels like straw and fallen leaves do not get hot enough to do much cooking, but can help you keep warm in a pinch."
+    },
+    {
+      "type": "patchouli:relations",
+      "title": "延伸阅读",
+      "anchor": "relations",
+      "entries": [
+        "tfg:cooking/cooking_methods",
+        "tfg:cooking/decay"
+      ]
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 1,
+  "extra_recipe_mappings": {
+    "tfc:firepit": 0,
+    "tfc:torch": 6,
+    "minecraft:torch": 6
+  }
+}

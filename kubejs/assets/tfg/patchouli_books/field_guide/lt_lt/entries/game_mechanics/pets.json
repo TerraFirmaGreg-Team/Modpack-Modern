@@ -1,0 +1,214 @@
+{
+    "name": "Pets",
+    "category": "tfg:game_mechanics",
+    "icon": "species:wicked_treat",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "anchor": "index",
+            "text": "$(li)$(bold)$(l:game_mechanics/pets#dogs)Dogs$()$(li)$(bold)$(l:game_mechanics/pets#cats)Cats$()$(li)$(bold)$(l:game_mechanics/pets#foxes)Foxes$()$(li)$(bold)$(l:game_mechanics/pets#pigeons)Pigeons$()$(li)$(bold)$(l:game_mechanics/pets#commands)Commands$()$(li2)$(l:game_mechanics/pets#relax)Relax$()$(li2)$(l:game_mechanics/pets#home)Home$()$(li2)$(l:game_mechanics/pets#hunt)Hunt$()$(li)$(bold)$(l:game_mechanics/pets#treat)Pet Treat$()$(li)$(bold)$(l:game_mechanics/pets#name_tag)Name Tag$()$(li)$(bold)$(l:game_mechanics/pets#lead)Lead$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "intro",
+            "title": "Introduction",
+            "text": "$(thing)Pets$() are animals that function similarly to $(l:agriculture/animal_husbandry)Livestock$(). Instead of products, pets are useful for obeying commands, being friends, pest control, hunting.$(br)Pets recognize a certain player as their $(thing)Owner$(). To become a pet's owner, feed it to raise its familiarity above $(item)15%$(). Pets will only obey commands that come from their owner.$(br)Clicking on a pet with $(thing)dye$() changes its collar color."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "dogs",
+            "title": "Dogs",
+            "text": "Dogs are a pet that eats grains, vegetables, and meat, rotten or not rotten. They will help you hunt almost any land predator or prey.$(br)Dogs come in multiple variants that depend on what type of $(l:the_world/wild_animals#wolf)wolf$() it was domesticated from."
+        },
+        {
+            "type": "patchouli:image",
+            "text": "Backported from $(item)Minecraft 1.20.5$()!",
+            "images": [
+                "tfg:textures/gui/field_guide/dog_variants.png"
+            ],
+            "border": true
+        },
+        {
+            "type": "tfg:table",
+            "text": "",
+            "strings": [
+                {
+                    "text": "Variant",
+                    "bold": true
+                },
+                {
+                    "text": "Klimatas",
+                    "bold": true
+                },
+                {
+                    "text": "Pale"
+                },
+                {
+                    "text": "Cold Desert, Temperate, Humid Oceanic (Plains)"
+                },
+                {
+                    "text": "Ashen"
+                },
+                {
+                    "text": "Arctic, Subarctic (Forests)"
+                },
+                {
+                    "text": "Black"
+                },
+                {
+                    "text": "Tundra, Humid Subarctic (Forests)"
+                },
+                {
+                    "text": "Kaštonas"
+                },
+                {
+                    "text": "Tundra, Humid Subarctic (Plains)"
+                },
+                {
+                    "text": "Rusty"
+                },
+                {
+                    "text": "Humid Subtropical, Tropical Rainforest (Plains)"
+                },
+                {
+                    "text": "Snowy"
+                },
+                {
+                    "text": "Arctic, Subarctic (Plains)"
+                },
+                {
+                    "text": "Spotted"
+                },
+                {
+                    "text": "Hot Desert, Subtropical, Tropical Savanna (Forests)"
+                },
+                {
+                    "text": "Striped"
+                },
+                {
+                    "text": "Hot Desert, Subtropical, Tropical Savanna (Plains)"
+                },
+                {
+                    "text": "Woods"
+                },
+                {
+                    "text": "Temperate (Forests)"
+                }
+            ],
+            "title": "Wolf Variant Locations",
+            "legend": [],
+            "columns": 1,
+            "first_column_width": 45,
+            "column_width": 195,
+            "row_height": 12,
+            "left_buffer": 2,
+            "top_buffer": 12,
+            "draw_background": false
+        },
+        {
+            "type": "patchouli:empty",
+            "draw_filler": false
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "cats",
+            "title": "Cats",
+            "text": "Cats are a pet that eats grains, cooked meats, and dairy products. They will help you hunt land prey and small fish. When at home, they will kill pests without being asked. Cats do not always listen when being told to sit.$(br2)Variants: Black, British Shorthair, Calico, Jellie, Persian, Ragdoll, Red, Siamese, Tabby, White."
+        },
+        {
+            "type": "patchouli:entity",
+            "text": "As villages do not exist, taming an $(l:the_world/wild_animals#ocelot)Ocelot$() is the only way to obtain a cat.",
+            "entity": "tfc:cat{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
+            "title": " ",
+            "scale": 0.7
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "foxes",
+            "title": "Foxes",
+            "text": "Foxes are a pet that eats any edible food. They will help you hunt land prey and small fish. When at home, they will kill pests without being asked. Foxes do not always listen when being told to sit.$(br2)Variants: Red, Snow."
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfg:fox{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,FoxType:1}",
+            "scale": 0.7,
+            "title": " ",
+            "text": "A fox."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "pigeons",
+            "title": "Pigeons",
+            "text": "Pigeons are capable of being tamed and delivering packages, but do not follow standard commands. You can feed $(t:#fowlplay:pigeon_food)$(6)Pigeon Food$(), such as grains and vegetables, to a pigeon to tame it.$(br)Once tamed a pigeon can deliver $(t:#fowlplay:pigeon_deliverable)$(6)Sacks$() to other players by $(l:craftsmanship/scribing_table)naming the pouch$() with the player's name before handing it over. "
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "fowlplay:pigeon{NoAI:1b}",
+            "scale": 0.8,
+            "text": "A pigeon."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "commands",
+            "title": "Commands",
+            "text": "Responsible pet owners must learn to control their pet. Luckily, this is easy. By pressing $(item)$(k:key.use)$() while holding $(item)$(k:key.sneak)$() with an empty hand, the $(thing)Pet Screen$() may be opened. This screen contains a number of commands that can be used to tell the pet what to do: $(thing)Relax$(), $(thing)We're Home$(), $(thing)Sit$(), $(thing)Follow Me$(), and $(thing)Hunt With Me$()."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "relax",
+            "title": "Atsipalaiduok",
+            "text": "$(thing)Relax$() is the default state of pets, and commanding them returns them to this state. If a pet it at home, it will wander around the property, but not leave, and sleep once a day. If it is too far from home, it will walk aimlessly."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "home",
+            "title": "Home",
+            "text": "$(thing)We're Home$() sets the home position of the pet. This tells the animal that it should, when relaxing, stay in that general area. Telling an animal that it is at home does not change the activity it is currently doing.$(br2)$(thing)Sit$() tells the pet to sit where it is. However, animals have minds of their own, and will eventually get bored and stand up!"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "hunt",
+            "title": "Hunt",
+            "text": "$(thing)Hunt With Me$() tells the pet to follow you, and engage in combat when you attack or are attacked. Pets will only attack animals that they are able to (for example, cats and foxes cannot help attack bears!).$(br2)$(thing)Follow Me$() is the same as Hunt With Me, but the pet will not risk itself in combat."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "treat",
+            "title": "Pet Treat",
+            "item": "species:wicked_treat",
+            "text": "$(thing)Pet Treats$() can be made by mixing medicine with bone meal.$(br)Pet treats give $(bold)massive$() stat bonuses to your pets for a short duration."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "name_tag",
+            "title": "Name Tag",
+            "item": "minecraft:name_tag",
+            "text": "$(thing)Name Tags$() can be crafted from paper and string. Once made, they can be edited on a $(l:craftsmanship/scribing_table)Scribing Table$() to give them a custom name that will transfer to your pet with $(item)$(k:key.use)$()."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "lead",
+            "title": "Švinas",
+            "item": "minecraft:lead",
+            "text": "A $(thing)Lead$() can be crafted from burlap fiber or string, and a metal ring.$(br)You can $(item)$(k:key.use)$() an animal with a lead to pull them around. Much more efficient than baiting them with food!$(br2)You can also pick up some smaller animals with $(item)$(k:key.sneak) + $(k:key.use)$() with empty hands."
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Further Reading",
+            "anchor": "relations",
+            "entries": [
+                "tfg:agriculture/animal_husbandry",
+                "tfg:craftsmanship/scribing_table",
+                "tfg:cooking/food_and_water",
+                "tfg:agriculture/jellies"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 7,
+    "extra_recipe_mappings": {
+        "species:wicked_treat": 16,
+        "minecraft:name_tag": 17,
+        "minecraft:lead": 18
+    }
+}

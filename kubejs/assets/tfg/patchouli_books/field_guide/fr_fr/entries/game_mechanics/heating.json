@@ -1,0 +1,28 @@
+{
+  "name": "Item Heating",
+  "category": "tfg:game_mechanics",
+  "sortnum": 5,
+  "icon": "tfc:textures/gui/book/icons/heating.png",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Heating items is a way of converting one item to another, or an item to a fluid. Items can be heated in many ways - in a $(l:craftsmanship/firepit)Firepit$(), a $(l:craftsmanship/pit_kiln)Pit Kiln$(), or a $(l:craftsmanship/charcoal_forge)Charcoal Forge$(), to name a few. However, they all function in the same way. When you place items inside these devices, the items will gradually start to heat up. This is visible on the item's tooltip."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "The temperature of an item is represented by a color, which will change through the following values:$(br2)$(7)$(bold)Warming$(): 1 - 80 °C$(br)$(7)$(bold)Hot$(): 80 - 210 °C$(br)$(7)$(bold)Very Hot$(): 210 - 480 °C$(br)$(4)$(bold)Faint Red$(): 480 - 580 °C$(br)$(bold)$(4)Dark Red$(): 580 - 730 °C$(br)$(c)$(bold)Bright Red$(): 730 - 930 °C$(br)$(6)$(bold)Orange$(): 930 - 1100 °C$(br)$(e)$(bold)$(t:Yellow)Yellow$(): 1100 - 1300 °C$(br)$(e)$(t:Yellow White)$(bold)Yellow White$(): 1300 - 1400 °C$(br)$(d)$(bold)$(t:White)White$(): 1400 - 1500 °C$(br)$(d)$(bold)$(t:Brilliant White)Brilliant White$(): >1500 °C"
+    },
+    {
+      "type": "patchouli:relations",
+      "title": "Pour aller plus loin",
+      "anchor": "relations",
+      "entries": [
+				"tfg:craftsmanship/pit_kiln",
+				"tfg:craftsmanship/crucible",
+				"tfg:craftsmanship/firepit",
+				"tfg:cooking/cooking_methods"
+      ]
+    }
+  ],
+  "read_by_default": true
+}

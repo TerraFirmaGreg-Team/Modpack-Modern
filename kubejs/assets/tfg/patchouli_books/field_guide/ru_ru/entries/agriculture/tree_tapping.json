@@ -1,0 +1,58 @@
+{
+	"name": "Подсочка деревьев",
+	"category": "tfg:agriculture",
+	"icon": "afc:tree_tap",
+	"pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Из некоторых видов деревьев можно добывать полезные жидкости. Эти деревья могут давать либо сахаристые соки, которые можно сконцентрировать в сироп и использовать как подсластитель; либо латекс, который можно переработать в резину; либо cмолу, которую можно переработать в канифоль — заменитель воска."
+        },
+        {
+            "type": "patchouli:image",
+            "title": "Подсочка клёна",
+            "images": [
+            	"afc:textures/gui/book/maple_tapping.png"
+            ],
+            "border": true
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Three things are required to tap a tree: the tree itself, a tree tap, which must forged from a Copper Ingot and placed in the middle of a trunk at least three blocks tall, and a barrel, which must be placed directly below the tap facing upward. If the conditions are right, your barrel will immediately begin to fill with sap.$(br2)$(o)$(3)At least three naturally grown logs are required for tapping."
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+            	"tfg:textures/gui/field_guide/tree_tapping/tapping_kapok.png"
+            ],
+            "text": "Допустимая конфигурация, используемая для извлечения латекса из сейбы.",
+            "border": true
+        },
+        {
+            "type": "patchouli:image",
+            "width": 1024,
+            "texture_width": 1024,
+            "height": 1024,
+            "texture_height": 1024,
+            "text": "Tapping can be optimized by letting the sap flow directly into an open face of a fluid pipe.",
+            "title": "Let it flow!",
+            "images": [
+            	"tfg:textures/gui/field_guide/tree_tapping/tfg_tapping.png"
+            ],
+            "border": true
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Читать дальше",
+            "anchor": "relations",
+            "entries": [
+            	"tfg:the_world/earth_tree_index",
+            	"tfg:cooking/cooking_methods"
+            ]
+        }
+	],
+	"read_by_default": true,
+	"sortnum": 3,
+	"extra_recipe_mappings": {
+        "afc:tree_tap": 0
+	}
+}

@@ -1,0 +1,54 @@
+{
+    "name": "Зубило",
+    "category": "tfg:craftsmanship",
+    "icon": "tfc:metal/chisel/wrought_iron",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Chisels are a tool for creating decorative forms of other blocks, including slabs and stairs. In order to get started, you will need a $(thing)Chisel$() and any type of $(thing)Hammer$(). Chisels must be cast in molds or forged on an $(l:craftsmanship/anvils)Anvil$(). In order to start chiseling, hold the chisel in your main hand and a hammer in your offhand, and target a block in the world."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Якщо блок можна обробити, то буде видно $(c)червоний контур$() на блоці. Цей контур залежить від обраного $(thing)режиму$() роботи зубила.$(br2)Зубило має три режими обробки, що можна перемикати клавшою $(item)$(k:tfc.key.cycle_chisel_mode)$(): $(thing)плита$(), $(thing)сходи$(), та $(thing)полірування$(). Індикатор режиму зубила має з’явитися біля панелі швидкого доступу."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Натисни $(item)$(k:key.use)$() щоб перетворити блок на форму, виділену червоним. Якщо потрібно створити плиту, то, при обробці, друга половина блоку випаде предметом. Виділений контур змінюється залежно орієнтації персонажа. Як правило, орієнтація вирізаного блоку буде такою ж, як і блок, встановлений самостійно."
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/chisel_block.png",
+                "tfc:textures/gui/book/tutorial/chisel_stair.png",
+                "tfc:textures/gui/book/tutorial/chisel_slab.png"
+            ],
+            "text": "$(bold)Tutorial Slideshow:$() The three chisel modes usable on a $(thing)Raw Limestone$() block.",
+            "border": true
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "tfc:crafting/rock/marble_smooth",
+            "text": "Зубило також можна використовувати в деяких рецептах створення, коли треба обробити велику кількість блоків."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Be careful! Chiseling in a mineshaft is not safe. Each time you chisel, there is a chance of $(l:game_mechanics/mining#supports)Collapse$()."
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Додаткове читання",
+            "anchor": "relations",
+            "entries": [
+                "tfg:the_world/geology",
+                "tfg:craftsmanship/quern",
+                "tfg:craftsmanship/anvils",
+                "tfg:craftsmanship/pottery"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 16,
+    "extra_recipe_mappings": {
+        "tag:tfc:chisels": 0
+    }
+}

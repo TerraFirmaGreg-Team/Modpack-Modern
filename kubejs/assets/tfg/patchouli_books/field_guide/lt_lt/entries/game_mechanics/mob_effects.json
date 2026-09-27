@@ -1,0 +1,87 @@
+{
+    "name": "Mob Effect Glossary",
+    "category": "tfg:game_mechanics",
+    "icon": "minecraft:textures/mob_effect/jump_boost.png",
+    "sortnum": 4,
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "anchor": "index",
+            "text": "$(li)$(bold)$(2)Positive Effects$()$(li2)$(l:game_mechanics/mob_effects#cooling)Cooling$()$(li2)$(l:game_mechanics/mob_effects#warming)Warming$()$(li2)$(l:game_mechanics/mob_effects#quenched)Quenched$()$(li2)$(l:game_mechanics/mob_effects#cure_parasites)Cure Parasites$()$(li2)$(l:game_mechanics/mob_effects#cure_toxins)Detoxify$()$(li2)$(l:game_mechanics/mob_effects#cure_microplastics)Filter Microplastics$()$(li)$(bold)$(4)Negative Effects$()$(li2)$(l:game_mechanics/mob_effects#freezing)Freezing$()$(li2)$(l:game_mechanics/mob_effects#blazing)Blazing$()$(li2)$(l:game_mechanics/mob_effects#instant_radiation)Instant Radiation$()$(li2)$(l:game_mechanics/mob_effects#final_moments)Final Moments$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "cooling",
+            "title": "Cooling",
+            "text": "While active this effect continually $(thing)Cools$() the player down to a minimum of $(n)5°C$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "warming",
+            "title": "Kaista",
+            "text": "While active this effect continually $(thing)Warms$() the player up to a maximum of $(n)25°C$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "quenched",
+            "title": "Quenched",
+            "text": "While active this effect prevents the natural decay of $(l:cooking/food_and_water#thirst)Thirst$(). However, it does not prevent the Thirsty effect from decreasing your meter.$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "cure_parasites",
+            "title": "Cure Parasites",
+            "text": "While active this effect gradually removes $(l:cooking/food_and_water#parasites)Parasite Contamination$() at a rate of about 1% every 10s at base level.$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "cure_toxins",
+            "title": "Detoxify",
+            "text": "While active this effect gradually removes $(l:cooking/food_and_water#toxins)Toxin Contamination$() at a rate of about 1% every 10s at base level.$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "cure_microplastics",
+            "title": "Filter Microplastics",
+            "text": "While active this effect gradually removes $(l:cooking/food_and_water#microplastics)Microplastic Contamination$() at a rate of about 1% every 10s at base level.$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "freezing",
+            "title": "Freezing",
+            "text": "While active this effect continually $(thing)Cools$() the player down to a dangerously-low minimum of $(n)-20°C$(). Protective equipment is recommended to survive this condition."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "blazing",
+            "title": "Blazing",
+            "text": "While active this effect continually $(thing)Warms$() the player up to a dangerously-high maximum of $(n)60°C$(). Protective equipment is recommended to survive this condition."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "instant_radiation",
+            "title": "Instant Radiation",
+            "text": "This effect quickly damages the player with $(l:game_mechanics/hazards#radioactive_materials)Radiation Damage$()."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "final_moments",
+            "title": "Final Moments",
+            "text": "This effect starts a timer that counts down your last few minutes. When the clock ends, you die."
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Further Reading",
+            "anchor": "relations",
+            "entries": [
+                "tfg:the_world/geology",
+                "tfg:the_world/climate",
+                "tfg:beneath/beneath_mechanics",
+                "tfg:cooking/food_and_water",
+                "tfg:cooking/drinks",
+                "tfg:game_mechanics/hazards"
+            ]
+        }
+    ]
+}

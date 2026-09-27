@@ -1,0 +1,69 @@
+{
+    "name": "Ткачество",
+    "category": "tfg:agriculture",
+    "icon": "tfc:spindle",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(thing)Weaving$() is the process of combining different kinds of string into $(thing)Cloth$(). While the last step of weaving is done in a $(thing)Loom$(), some cloths such as $(thing)Wool$(), obtained from $(l:agriculture/animal_husbandry#wooly_animals)Wooly Animals$(), requires a $(thing)Spindle$() to obtain $(thing)Wool Yarn$() in order to be woven."
+        },
+        {
+            "type": "tfg:knapping_recipe",
+            "recipe": "tfc:clay_knapping/spindle_head",
+            "anchor": "spindle",
+            "text": "The $(thing)Unfired Spindle Head$() is knapped from clay. It can then be $(l:game_mechanics/heating)fired$() to make a $(thing)Spindle Head$(). To complete the spindle, craft it with a $(thing)Stick$(). Spindles can also be made from $(l:craftsmanship/metallurgy)Metal$()."
+        },
+        {
+            "type": "patchouli:crafting",
+            "anchor": "spinning",
+            "title": "Spinning",
+            "recipe": "tfc:kjs/damage/shapeless/wool_yarn",
+            "text": "Соединение $(thing)шерсти$() с веретеном даёт $(thing)шерстяную нить$()."
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": "The Loom",
+            "anchor": "loom",
+            "recipe": "tfc:crafting/wood/acacia_loom",
+            "text": "Ткацкий станок создаётся всего лишь из $(thing)досок$() и $(thing)палки$()."
+        },
+        {
+            "type": "tfg:loom_recipe",
+            "anchor": "wool_cloth",
+            "Title": "Ткань",
+            "recipe": "tfc:loom/wool_cloth",
+            "text": "Рецепт изготовления $(thing)шерстяной ткани$() требует 16 единиц $(thing)шерстяной нити$(). Добавление материала в ткацкий станок выполняется нажатием $(item)$(k:key.use)$(). Затем удерживайте $(item)$(k:key.use)$(), чтобы запустить работу станка. Когда процесс завершится, нажмите $(item)$(k:key.use)$(), чтобы забрать готовый предмет."
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/loom_empty.png",
+                "tfc:textures/gui/book/tutorial/loom_full.png",
+                "tfc:textures/gui/book/tutorial/loom_working.png",
+                "tfc:textures/gui/book/tutorial/loom_done.png"
+            ],
+            "text": "Этапы работы ткацкого станка.",
+            "border": true
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Читать дальше",
+            "anchor": "relations",
+            "entries": [
+                "tfg:agriculture/growing_crops",
+                "tfg:agriculture/animal_husbandry",
+                "tfg:the_world/wild_crops",
+                "tfg:the_world/wild_animals",
+                "tfg:craftsmanship/pottery",
+                "tfg:craftsmanship/glassworking"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 9,
+    "extra_recipe_mappings": {
+        "tag:tfg:tools/spindles": 1,
+        "tag:forge:string": 2,
+        "tag:tfc:looms": 3
+    }
+}
