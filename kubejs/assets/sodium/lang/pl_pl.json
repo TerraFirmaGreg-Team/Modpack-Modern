@@ -21,6 +21,7 @@
 	"sodium.options.clouds_quality.tooltip": "Kontroluje prezentacje wyrenderowanych chmur na niebie.",
 	"sodium.options.cpu_render_ahead_limit.name": "Limit renderowania klatek z wyprzedzeniem przez CPU",
 	"sodium.options.cpu_render_ahead_limit.value": "%s klatek",
+	"sodium.options.entity_distance.tooltip": "Określa, jak daleko od gracza mogą być renderowane byty. Wyższe wartości zwiększają zasięg ich renderowania kosztem liczby klatek na sekundę.",
 	"sodium.options.entity_shadows.tooltip": "Jeśli włączone, podstawowe cienie będą renderowane pod mobami i innymi bytami.",
 	"sodium.options.fullscreen.tooltip": "Jeśli włączone, gra będzie wyświetlana w trybie pełnoekranowym (Jeśli opcja jest wspierana).",
 	"sodium.options.leaves_quality.name": "Liście",

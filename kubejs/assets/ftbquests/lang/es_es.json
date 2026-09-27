@@ -85,8 +85,6 @@
   "ftbquests.chapter.image.order.tooltip": "Orden en el que se dibujan las imágenes en el mismo capítulo.\nLas imágenes de orden superior se dibujan por encima de las de orden inferior.",
   "ftbquests.chapter.image.rotation": "Rotación",
   "ftbquests.chapter.image.width": "Ancho",
-  "ftbquests.chapter.image.x": "X",
-  "ftbquests.chapter.image.y": "Y",
   "ftbquests.chapter.misc.autofocus_id": "ID de misión con enfoque automático",
   "ftbquests.chapter.misc.autofocus_id.tooltip": "Si no está vacío, debe ser un ID de misión o enlace de misión (usa Copiar ID de misión para obtenerlo).\nCuando se abre el capítulo, el panel centrará automáticamente la vista en esta misión",
   "ftbquests.chapter.misc.consume_items": "Predeterminado tarea de objeto 'Consumir objetos'",

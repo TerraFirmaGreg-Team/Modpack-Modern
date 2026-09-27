@@ -458,6 +458,7 @@
   "item.gtceuterminal.schematic_interface.tooltip.shift_right_click_prefix": "§8Kliknij Shift + PPM: ",
   "item.gtceuterminal.schematic_paster.missing_materials": "§cBrakuje materiałów: §f%s",
   "item.gtceuterminal.schematic_paster.no_schematic_in_clipboard": "§cBrak schematu w schowku!",
+  "item.gtceuterminal.schematic_paster.nothing_to_paste": "§eNic do wklejenia. Obszar może być zajęty (lub jest identyczny).",
   "item.gtceuterminal.schematic_paster.paste_success.no_skipped": "§aSchemat wklejony! §fUmieszczono %d bloków",
   "item.gtceuterminal.schematic_paster.paste_success.with_skipped": "§aSchemat wklejony! §fUmieszczono %d bloków §7(pominięto %d)",
   "item.gtceuterminal.terminal.already_formed": "Wieloblok został już stworzony",

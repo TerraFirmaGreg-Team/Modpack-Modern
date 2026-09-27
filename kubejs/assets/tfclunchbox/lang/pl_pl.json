@@ -29,7 +29,7 @@
   "tooltip.tfclunchbox.cooling_lunchbox.ice_absent": "Brak",
   "tooltip.tfclunchbox.cooling_lunchbox.ice_present": "Obecny",
   "tooltip.tfclunchbox.cooling_lunchbox.ice_status": "Lód: %s",
-  "tooltip.tfclunchbox.cooling_lunchbox.shift_info": "Użyj CTRL + kółko myszy, by wybrać jedzenie",
+  "tooltip.tfclunchbox.cooling_lunchbox.shift_info": "Użyj CTRL + przewijanie kółkiem myszy w górę/w dół, aby wybrać jedzenie",
   "tooltip.tfclunchbox.empty": "Pusty",
   "tooltip.tfclunchbox.energy": "Energia: %s / %s EU",
   "tooltip.tfclunchbox.energy_consumption": "Zużycie: %s EU/t",
@@ -47,5 +47,5 @@
   "tooltip.tfclunchbox.lunchbox.selected_slot": "Wybrany slot: %d",
   "tooltip.tfclunchbox.lunchbox.shift": "Przytrzymaj SHIFT po więcej szczegółów",
   "tooltip.tfclunchbox.simple_lunchbox.hold_shift": "Przytrzymaj §eSHIFT§7, aby uzyskać szczegóły",
-  "tooltip.tfclunchbox.simple_lunchbox.shift_info": "Użyj CTRL + kółko myszy, by wybrać jedzenie"
+  "tooltip.tfclunchbox.simple_lunchbox.shift_info": "Użyj CTRL + przewijanie kółkiem myszy w górę/w dół, aby wybrać jedzenie"
 }

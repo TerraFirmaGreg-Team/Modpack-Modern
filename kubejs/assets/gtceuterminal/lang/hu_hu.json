@@ -10,7 +10,10 @@
   "component.gtceuterminal.component_type.steam_input_bus": "Gőzgép tárgyadagoló",
   "component.gtceuterminal.component_type.steam_output_bus": "Gőzgép tárgyaürítő",
   "gui.gtceuterminal.coil_tier.cupronickel": "Kupronikkel",
+  "gui.gtceuterminal.coil_tier.hss_g": "HSS-G",
+  "gui.gtceuterminal.coil_tier.kanthal": "Kanthal",
   "gui.gtceuterminal.material_list.source.none": "Nincs",
   "gui.gtceuterminal.theme_editor.preset.cyan": "Türkizkék",
+  "gui.gtceuterminal.theme_editor.preset.gold": "Arany",
   "gui.gtceuterminal.theme_editor.preset.orange": "Narancs"
 }

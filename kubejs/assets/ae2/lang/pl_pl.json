@@ -203,6 +203,7 @@
 	"commands.ae2.ChunkLoggerOff": "Logowanie chunków jest teraz wyłączone",
 	"commands.ae2.ChunkLoggerOn": "Logowanie chunków jest teraz włączone",
 	"commands.ae2.permissions": "Nie masz odpowiednich uprawnień do uruchomienia tego polecenia.",
+	"commands.ae2.usage": "Polecenia udostępniane przez Applied Energistics 2 - użyj /ae2 list, aby wyświetlić listę poleceń, oraz /ae2 help _____, aby uzyskać pomoc dotyczącą danego polecenia.",
 	"config.jade.plugin_ae2.charger": "Ładowarka AE2",
 	"config.jade.plugin_ae2.crafting_monitor": "Monitor rzemieślniczy AE2",
 	"config.jade.plugin_ae2.debug": "Informacje debugowania AE2",
