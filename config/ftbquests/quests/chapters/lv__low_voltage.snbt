@@ -26,34 +26,6 @@
 			y: 12.0d
 		}
 		{
-			id: "5BC9534E2B4A16A2"
-			linked_quest: "2262F1FD4EAB777F"
-			shape: "octagon"
-			size: 1.5d
-			x: -2.5d
-			y: 14.0d
-		}
-		{
-			id: "3E4C0AAC278DC9F1"
-			linked_quest: "341E2F290344BEEE"
-			shape: "octagon"
-			size: 1.5d
-			x: -10.5d
-			y: 4.0d
-		}
-		{
-			id: "00B51E50BEBF7E1D"
-			linked_quest: "3F44CFF8A6018F3E"
-			x: -8.5d
-			y: 6.0d
-		}
-		{
-			id: "34F6462681BB5D77"
-			linked_quest: "7C4807A247AF36A1"
-			x: -8.5d
-			y: 2.0d
-		}
-		{
 			icon: {
 				Count: 1
 				id: "gtceu:lv_blue_steel_wrench"
@@ -639,8 +611,6 @@
 			dependency_requirement: "one_completed"
 			description: ["{quests.low_voltage.lv_fluid_solidifier.desc}"]
 			id: "581CDF545E1EA1FD"
-			shape: "octagon"
-			size: 1.5d
 			subtitle: "{quests.low_voltage.lv_fluid_solidifier.subtitle}"
 			tasks: [{
 				id: "20B1CA4DB2750E84"
@@ -2027,23 +1997,6 @@
 			y: 4.0d
 		}
 		{
-			dependencies: ["7C4807A247AF36A1"]
-			dependency_requirement: "one_completed"
-			description: ["{quests.create_logistics.stock_link.desc}"]
-			disable_toast: true
-			id: "50FE830DA6F403B2"
-			optional: true
-			subtitle: "{quests.create_logistics.stock_link.subtitle}"
-			tasks: [{
-				id: "7B71B5DBEFD84C1F"
-				item: "create:stock_link"
-				type: "item"
-			}]
-			title: "{quests.create_logistics.stock_link.title}"
-			x: -8.5d
-			y: 4.0d
-		}
-		{
 			description: ["{quests.low_voltage.lv_laser_engraver.desc}"]
 			id: "383A14A5C65B3ADF"
 			optional: true
@@ -2053,8 +2006,8 @@
 				item: "gtceu:lv_laser_engraver"
 				type: "item"
 			}]
-			x: -10.5d
-			y: 2.0d
+			x: -8.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["3E6DC423FE4A99F7"]
@@ -2192,6 +2145,80 @@
 			}]
 			x: 7.0d
 			y: 4.0d
+		}
+		{
+			dependencies: ["6771D2D96EEA8FD0"]
+			dependency_requirement: "one_completed"
+			description: ["{quests.low_voltage.stock_ticker.desc}"]
+			guide_page: "tfg:field_guide tfg:logistics/create 35"
+			id: "551B1AC08D0BE017"
+			shape: "octagon"
+			size: 2.0d
+			subtitle: "{quests.low_voltage.stock_ticker.subtitle}"
+			tasks: [{
+				id: "3AAB3DBCE6095250"
+				item: "create:stock_ticker"
+				type: "item"
+			}]
+			title: "{quests.low_voltage.stock_ticker.title}"
+			x: -8.5d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"7BE7DE4C0109D788"
+				"7567E885B7166603"
+			]
+			description: ["{quests.low_voltage.factory_gauge.desc}"]
+			guide_page: "tfg:field_guide tfg:logistics/create 48"
+			hide_until_deps_complete: false
+			id: "36BF3283BEBCCEBF"
+			shape: "octagon"
+			size: 1.5d
+			subtitle: "{quests.low_voltage.factory_gauge.subtitle}"
+			tasks: [
+				{
+					id: "780FDCFBA9BDEC99"
+					item: "create:factory_gauge"
+					type: "item"
+				}
+				{
+					id: "1FB22D0E5974F145"
+					item: "fluidlogistics:fluid_factory_gauge"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "{quests.low_voltage.factory_gauge.title}"
+			x: -2.5d
+			y: 14.0d
+		}
+		{
+			dependencies: [
+				"07E7678095258EDB"
+				"383A14A5C65B3ADF"
+			]
+			dependency_requirement: "one_completed"
+			description: ["{quests.create_logistics.rose_quartz_lens.desc}"]
+			guide_page: "tfg:field_guide tfg:logistics/create 28"
+			icon: "greate:rose_quartz_lens"
+			id: "6771D2D96EEA8FD0"
+			subtitle: "{quests.create_logistics.rose_quartz_lens.subtitle}"
+			tasks: [
+				{
+					id: "29B16138A825C10E"
+					item: "greate:rose_quartz_lens"
+					type: "item"
+				}
+				{
+					id: "2B6712B08D1AA021"
+					item: "create:transmitter"
+					type: "item"
+				}
+			]
+			title: "{quests.create_logistics.rose_quartz_lens.title}"
+			x: -8.5d
+			y: 2.0d
 		}
 	]
 	subtitle: ["{quests.low_voltage.subtitle}"]

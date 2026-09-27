@@ -20,15 +20,15 @@
 			id: "7C03FE015586C652"
 			linked_quest: "55213ACBF5F5D398"
 			shape: "heart"
-			x: -11.0d
-			y: 16.0d
+			x: -10.5d
+			y: 17.0d
 		}
 		{
 			id: "68F5E521F2DB0A86"
 			linked_quest: "0404FBCC34011053"
 			shape: "heart"
-			x: -12.0d
-			y: 16.0d
+			x: -12.5d
+			y: 17.0d
 		}
 		{
 			id: "6C8C3BBD2BA9853B"
@@ -887,10 +887,11 @@
 		{
 			dependencies: ["033E74BC588E7EAD"]
 			description: ["{quests.steam_age.packager.desc}"]
+			guide_page: "tfg:field_guide tfg:logistics/create"
 			icon: "create:package_frogport"
 			id: "509E85016A2B199C"
-			shape: "gear"
-			size: 2.0d
+			shape: "octagon"
+			size: 1.5d
 			subtitle: "{quests.steam_age.packager.subtitle}"
 			tasks: [{
 				id: "4319E4113F8EBB13"
@@ -898,7 +899,7 @@
 			}]
 			title: "{quests.steam_age.packager.title}"
 			x: -19.5d
-			y: 17.5d
+			y: 17.0d
 		}
 		{
 			dependencies: ["2C35D4E01AEC02AA"]
