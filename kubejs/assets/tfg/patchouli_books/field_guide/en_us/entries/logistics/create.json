@@ -332,46 +332,83 @@
 			"text": "There's no range limitation for this, although you do need to create your own way of routing around the packages that will be ordered through the Stock Links as well as have the link in question chunkloaded for this to work.$(br2)Additionally, you can place $(item)Filters$() inside the Ticker so that only specific items are shown, or set up categories of items."
 		},
 		{
-			"type": "patchouli:multiblock",
+			"type": "tfg:multimultiblock",
 			"enable_visualize": false,
-			"text": "Place a mob on the seat, then $(item)$(k:key.use)$() them to request items which will be deposited in the $(l:logistics/storage#crates)Crate$().",
+			"text": "Place a mob on the seat, then $(item)$(k:key.use)$() them to request items which will be deposited in the $(l:logistics/storage#crates)Steel Crate$().",
 			"name": "Minimum Setup",
-			"multiblock": {
-				"pattern": [
-					[
-						"VVVVVVV",
-						"VVVVVVV",
-						"VVVVVVV",
-						"    LP ",
-						"       "
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"VVVVVVV",
+							"VVVVVVV",
+							"VVVVVVV",
+							"    LP ",
+							"       "
+						],
+						[
+							"VVVVVVV",
+							"VVVVVVV",
+							"VVVVVVV",
+							"     C ",
+							"       "
+						],
+						[
+							"VVVVVVV",
+							"VVVVVVV",
+							"VVVVVVV",
+							"   0SR ",
+							" ET    "
+						]
 					],
-					[
-						"VVVVVVV",
-						"VVVVVVV",
-						"VVVVVVV",
-						"     C ",
-						"       "
+					"mapping": {
+						"V": "create:item_vault[axis=z,large=true]",
+						"L": "create:stock_link[face=wall,facing=north]",
+						"P": "create:packager[facing=west,linked=true]",
+						"C": "create_connected:brass_chute",
+						"R": "create:packager[facing=south]",
+						"S": "gtceu:steel_crate",
+						"T": "create:stock_ticker[facing=west]",
+						"E": "create:white_seat"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"       ",
+							"       ",
+							"     V ",
+							"    LP ",
+							"       "
+						],
+						[
+							"       ",
+							"       ",
+							"       ",
+							"     C ",
+							"       "
+						],
+						[
+							"       ",
+							"       ",
+							"       ",
+							"   0SR ",
+							" ET    "
+						]
 					],
-					[
-						"VVVVVVV",
-						"VVVVVVV",
-						"VVV0VVV",
-						"    SR ",
-						" ET    "
-					]
-				],
-				"mapping": {
-					"0": "create:item_vault[axis=z,large=true]",
-					"V": "create:item_vault[axis=z,large=true]",
-					"L": "create:stock_link[face=wall,facing=north]",
-					"P": "create:packager[facing=west,linked=true]",
-					"C": "create_connected:brass_chute",
-					"R": "create:packager[facing=south]",
-					"S": "gtceu:steel_crate",
-					"T": "create:stock_ticker[facing=west]",
-					"E": "create:white_seat"
+					"mapping": {
+						"0": "minecraft:air",
+						"V": "gtceu:bismuth_bronze_crate",
+						"L": "create:stock_link[face=wall,facing=north]",
+						"P": "create:packager[facing=west,linked=true]",
+						"C": "create_connected:brass_chute",
+						"R": "create:packager[facing=south]",
+						"S": "gtceu:steel_crate",
+						"T": "create:stock_ticker[facing=west]",
+						"E": "create:white_seat"
+					}
 				}
-			}
+			]
 		},
 		{
 			"type": "patchouli:spotlight",
