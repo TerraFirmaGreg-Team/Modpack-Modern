@@ -1,0 +1,15 @@
+{
+	"name": "tfg:beneath/mob_piglin",
+	"fallback": "minecraft:empty",
+	"elements": [
+		{
+			"weight": 10,
+			"element": {
+				"location": "tfg:piglin_generic/mobs/piglin",
+				"processors": "minecraft:empty",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		}
+	]
+}
