@@ -11255,6 +11255,44 @@
             ]
         },
         {
+            "pakku_id": "Hr3uKGlXqOgRXaoc",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "mixin-in-heaven"
+            },
+            "name": {
+                "curseforge": "Mixin In Heaven"
+            },
+            "id": {
+                "curseforge": "870903"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "mixininheaven-mc1.17.1-1.20-v0.0.1-hotfix.jar",
+                    "mc_versions": [
+                        "1.20.2",
+                        "1.20.1",
+                        "1.20"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/4579/551/mixininheaven-mc1.17.1-1.20-v0.0.1-hotfix.jar",
+                    "id": "4579551",
+                    "parent_id": "870903",
+                    "hashes": {
+                        "sha1": "27fb2f7bc0be3aa57f49dc27a7270b975e4019d4",
+                        "md5": "4c408a47cb4f3a9d3f939474d59ccb73"
+                    },
+                    "required_dependencies": [],
+                    "size": 5835,
+                    "date_published": "2023-06-11T05:35:54.307Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "lVUKSWXoUNMWdo6W",
             "type": "RESOURCE_PACK",
             "slug": {
