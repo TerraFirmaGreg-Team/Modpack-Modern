@@ -63,7 +63,7 @@
 	"create.fluidlogistics.hand_pointer.logistics.hover_network_size": "Завантажено посилань: %s",
 	"create.fluidlogistics.hand_pointer.logistics.hover_will_connect": "Натисніть, щоб додати до поточної логістичної мережі",
 	"create.fluidlogistics.hand_pointer.logistics.hover_will_disconnect": "Натисніть, щоб видалити з поточної логістичної мережі",
-	"create.fluidlogistics.hand_pointer.logistics.no_panel_at_slot": "У цьому слоті немає активного індикатора фабрики",
+	"create.fluidlogistics.hand_pointer.logistics.no_panel_at_slot": "У цьому слоті немає активного заводського датчика",
 	"create.fluidlogistics.hand_pointer.logistics.removed": "Видалено з поточної логістичної мережі",
 	"create.fluidlogistics.hand_pointer.logistics.selected": "Показано учасників поточної логістичної мережі",
 	"create.fluidlogistics.hand_pointer.mailbox.added": "Вибрано поштових скриньок: %s/%s",
@@ -254,7 +254,5 @@
 	"itemGroup.fluidlogistics.fluidlogistics_tab": "Create: Fluid Logistics",
 	"logistically_linked.protected": "Ця логістична мережа захищена",
 	"resourcepack.fluidlogistics.cu_again_for_fluidlogistics": "Застарілі мідні текстури для логістики рідин",
-	"fluidlogistics.configuration.advancedLogisticsNetworkEnabled": "Система пакування рідин",
-	"fluidlogistics.configuration.section.fluidlogistics.common.toml": "Налаштування пакунка для рідини",
-	"fluidlogistics.configuration.section.fluidlogistics.common.toml.title": "Налаштування пакунка для рідини"
+	"fluidlogistics.configuration.advancedLogisticsNetworkEnabled": "Система пакування рідин"
 }

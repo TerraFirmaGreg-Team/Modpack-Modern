@@ -23,11 +23,5 @@
   "config.deathpunishment.penalties.raw_meat_hunger_amplifier": "Rohes Fleisch Hunger Level (0-4)",
   "enum.deathpunishment.hunger_mode.TFC": "TFC Standard",
   "enum.deathpunishment.hunger_mode.MANUAL": "Manuelle Einrichtung",
-  "enum.deathpunishment.hunger_mode.KEEP": "Nach dem Tod beibehalten",
-  "enum.deathpunishment.thirst_mode.TFC": "TFC Standard",
-  "enum.deathpunishment.thirst_mode.MANUAL": "Manuelle Einrichtung",
-  "enum.deathpunishment.thirst_mode.KEEP": "Nach dem Tod beibehalten",
-  "enum.deathpunishment.health_mode.TFC": "TFC Standard",
-  "enum.deathpunishment.health_mode.MANUAL": "Manuelle Einrichtung",
-  "enum.deathpunishment.health_mode.KEEP": "Nach dem Tod beibehalten"
+  "enum.deathpunishment.hunger_mode.KEEP": "Nach dem Tod beibehalten"
 }
