@@ -1,0 +1,218 @@
+{
+    "quests.ae2": "Applied Energistics 2",
+    "quests.ae2.subtitle": "The strongest tool to help you with GregTech, unlocked after your first trip to the moon",
+
+    "__comment2": "Left (getting started)",
+
+    "quests.ae2.certus_quartz.title": "Certus Quartz",
+    "quests.ae2.certus_quartz.subtitle": "One small step for you, one giant leap for logistics",
+    "quests.ae2.certus_quartz.desc": "With your first step on the Moon comes access to your first &bCertus Quartz&r vein.\nDon't worry, they're quite common and should be easy to locate, though having a decent Ore Prospector wouldn't hurt.\n\nWhether you decide to set up a miner or manually dig out a full vein, make sure to gather a hefty amount, as you'll need it to progress through AE2.\n\n&dPlease read the Applied Energistic 2 Chapter in the Quests or you may get totally lost\n\n&fYou can click at the top left of this quest to see the chapter&r.",
+    "quests.ae2.certus_quartz.task": "Certus Quartz Ore",
+
+    "quests.ae2.polarizer.title": "Polarizer",
+    "quests.ae2.polarizer.subtitle": "Redstone isn't enough",
+    "quests.ae2.polarizer.desc": "One of your main resources for Applied Energistics 2 will be &bCharged Certus Quartz&r.\n\nTo obtain it, there’s really only one method: the &6HV&r Polarizer.\n\nYou’ll quickly notice how long this recipe takes, so it’s strongly recommended to dedicate a Polarizer exclusively to this task.\n\nIt may seem expensive or daunting at first, but don't worry—it’s absolutely worth it.\n\nAlso, remember not to charge all your Certus Quartz!\nYou’ll need some uncharged ones for items like the Annihilation Core, so always keep a small reserve on hand.",
+
+    "quests.ae2.hv_machines.title": "The Three Musketeers",
+    "quests.ae2.hv_machines.subtitle": "Or is it four?",
+    "quests.ae2.hv_machines.desc": "The &eSifter&r is used for ore processing to increase your yield of Certus Quartz, Quartzite, Nether Quartz, Ruby, and Armalcolite—all of which are essential for AE2. Alternatively, you can smelt the ores directly in a Furnace if you're in a rush, but you'll lose out on a lot of free resources by doing that.\n\nThe second machine, the &eMixer&r, is your only method to create &dFluix Crystals&r (more about that in the next quest). Don’t forget that you can also use the Greate Mixer as a &6HS&r-tier machine.\n\n(The Mixer will only work on the Moon so bring your setup over there so you can craft the Fluix Crystals.)\n\nThirdly, a &eLaser Engraver&r can combine lesser quality gems together into Exquisite, which will give you better Fluix yields.\n\nLastly, keep in mind that an &eAutoclave&r can help you generate even more gems from dusts. Once you have the resources, crafting one will make your life significantly easier.",
+    "quests.ae2.hv_machines.task": "Greate or GregTech?",
+
+    "quests.ae2.fluix_crystal.subtitle": "Energetic Crystal",
+    "quests.ae2.fluix_crystal.desc": "As you can see, there are multiple ways to create Fluix Crystals using a Mixer, &cbut all of them must be done on the Moon&r.\n\nThe higher the purity of your input gems, the better the yield — that’s exactly why we recommended crafting a &eSifter&r earlier.\n\nYou’ll need a massive amount of Fluix Crystals, especially since the &5liquid version&r is used in most Applied Energistics 2 recipes.\n\nSo prepare yourself—you’re going to need a lot!",
+
+    "quests.ae2.extractor.title": "Cryogenized Fluix",
+    "quests.ae2.extractor.subtitle": "The precious fluix",
+    "quests.ae2.extractor.desc": "While &bFluix Crystal&r is useful in many ways, one of its most important applications is being liquefied into Liquid Fluix, then cryogenized. &bCryogenized Fluix&r is required in most, if not all, AE2 recipes. It should not be too expensive, but the sheer amount you will need will definitely put a strain on your production.\n\nIt can also only be crafted on the Moon using &6Helium-3&r. Finding Helium-3 there should be fairly straightforward: with a Fluid Rig and the help of an &6HV&r Prospector, you can locate fluid veins and extract colossal amounts.\n\nIf you have already unlocked the Cleanroom, we strongly recommend the Vacuum Freezer recipe, which offers a much better yield. If you would rather invest into AE2 before the Cleanroom, the Gas Pressurizer will do in the meantime.",
+    "quests.ae2.extractor.task": "Any Extractor",
+
+    "quests.ae2.ae_processor.title": "Processors",
+    "quests.ae2.ae_processor.subtitle": "AE2 Components",
+    "quests.ae2.ae_processor.desc": "All three &eProcessors&r will be used extensively across Applied Energistics 2 recipes.\n\nThey all have better crafts inside a cleanroom on the moon.",
+
+    "quests.ae2.forming_press.title": "Forming Press",
+    "quests.ae2.forming_press.subtitle": "Small is good too",
+    "quests.ae2.forming_press.desc": "To get the printed circuits, you'll need to craft the &6HV&r Forming Press.\n\nThe good news? It has multiple input slots, meaning you can insert all your circuit presses at once, so a single Forming Press is enough to handle every printed circuit type.",
+
+    "quests.ae2.ae_press.title": "Inscriber Press",
+    "quests.ae2.ae_press.subtitle": "Treasure hunt",
+    "quests.ae2.ae_press.desc": "One of the last things you’ll need before diving fully into Applied Energistics 2 is collecting the 4 &ePresses&r.\n\nTo obtain them, you must locate an &eAE2 Meteorite&r on the &3Moon&r — they will look like dark spheres at the bottom of large craters. Luckily, they aren't particularly rare, and a single meteorite will contain all four Presses.\n\n&cBe careful though&r — these meteorites are often guarded, so gear up, bring an ore prospector if you have one, and happy hunting!",
+
+    "__comment3": "Middle",
+
+    "quests.ae2.ae_guide.title": "Welcome to AE2",
+    "quests.ae2.ae_guide.subtitle": "Another free book for your collection!",
+    "quests.ae2.ae_guide.desc": "Here you are, ready to begin your &bAE2&r infrastructure!\n\nThis chapter will mainly guide you through what you can and cannot craft yet.\nWe’ll also highlight the most important items you should focus on.\n\nHowever, to fully understand Applied Energistics 2, we strongly recommend using the &bG&r keybind (similar to Create's Ponder system) or open the &bME Guide&r we provide as a reward from this quest. It’s the best in-game tutorial for AE2.\nAlternatively, watch some online videos about AE2 on &61.20.1&r for more detailed explanations — AE2 is a very popular mod, so there's a ton of tutorials out there!\n\n&dPro tip&r: Many &bAE2&r recipes have alternative Cleanroom recipes that are much stronger. Once again, investing in your Moon base will greatly reward you throughout the entire game.",
+
+    "quests.ae2.books_again.title": "Need the book again?",
+    "quests.ae2.books_again.desc": "Here's a repeatable quest if you want a physical copy of the AE2 Guide again.",
+
+    "__comment4": "Top (HV)",
+
+    "quests.ae2.hv.title": "HV Tier AE2",
+    "quests.ae2.hv.desc": "This entire branch is fully unlockable in &6HV&r!",
+
+    "quests.ae2.ae_controller.subtitle": "The beating heart of your ME network",
+    "quests.ae2.ae_controller.desc": "To get started, you’ll need to power your &bME Network&r. These are the two &bAE2&r blocks that can directly accept &bEU&r energy.\n\nWe strongly recommend crafting a &bME Controller&r, as &bchannels&r are enabled in TerraFirmaGreg, and the &bME Controller&r is the best way to manage multiple channels efficiently.\n\nThis is also a great time to use the in-game guide (press &aU&r on a &bME Controller&r) or watch some videos about &bAE2&r on version 1.20.1 to learn more!",
+
+    "quests.ae2.drive.subtitle": "The brains of the network",
+    "quests.ae2.drive.desc": "You will need to store your disks, and thanks to the &bMEGA&r addon, you now have an extra option.\n\nYou should start with a &bME Drive&r. It can store up to &e10&r disks and consumes &e4 EU/t&r. This will be your main storage solution.\n\nThe other option is the &bME Cell Dock&r. It only stores &e1&r disk but consumes just &e1 EU/t&r, and it can be placed directly on a cable like a cover. This makes it quite useful for &aSubnets&r.",
+
+    "quests.ae2.cell_housing.desc": "The &bME Cell Housing&r exists in two versions: one for &aItems&r and one for &9Fluids&r.\n\nYou can take their Storage Component out using a &ePacker&r or simply by Sneak + Right-click while holding the storage cell in your hand.",
+
+    "quests.ae2.cables.title": "Fluix Cables",
+    "quests.ae2.cables.subtitle": "The arteries of the network",
+    "quests.ae2.cables.desc": "Your basic cables to connect your &bAE2&r infrastructure.\n\nRemember that regular cables carry only &e8 Channels&r, while &6Dense Cables&r can carry up to &a32 Channels&r.\n\nGood news: in &2TFG&r, you can directly craft the &9Smart Cables&r! They are very helpful as they show a &evisual indicator&r for the number of used channels.",
+
+    "quests.ae2.terminals.subtitle": "The... fingers? of the network?",
+    "quests.ae2.terminals.desc": "These terminals are mandatory to access your ME Network and to set up your auto-crafting system.",
+
+    "quests.ae2.molecular_assembler.desc": "The &9Molecular Assembler&r is basically your auto-crafting table.\n\nYou can use it for passive crafting, or combine it with a &9Pattern Provider&r.\n\nAs always, check the in-game guide using &eG&r to learn more about it.",
+
+    "quests.ae2.crafting_unit.subtitle": "The second? brains of the network",
+    "quests.ae2.crafting_unit.desc": "The &dCrafting Unit&r works the same way as your &bME Cell Housing&r.\n\nUse a &6Packer&r to make it functional — by itself, it serves no purpose, though you can use it to complete multi-blocks.\n\nIt’s your mandatory structure to run your &bAE2&r auto-crafting.\n\nAs usual, use the in-game guide from &bAE2&r to learn more about the &dCrafting CPU&r.",
+
+    "quests.ae2.crafting_storage.title": "Crafting Storage",
+    "quests.ae2.crafting_storage.desc": "These are mandatory for any sort of auto crafting — the bigger the storage, the bigger the recipe chain that can be done with one request. You can also place multiple of them next to each other to add their storage size.\n\nUse the in-game guide for further details — it will explain everything far better than we ever could in a quest.\n\nTake your time to read it, it’s a great resource!",
+    "quests.ae2.crafting_storage.task": "Any crafting storage",
+
+    "quests.ae2.pattern_provider.title": "ME Pattern Provider",
+    "quests.ae2.pattern_provider.subtitle": "These tell your machines how to craft things",
+    "quests.ae2.pattern_provider.desc": "The &9Pattern Provider&r is a modern &bAE2&r block. If you're only familiar with AE2 in previous versions of Minecraft, this is the block that you put your patterns into now instead of an Interface.\n\nIt can push items into the connected inventory on a crafting request, and pushing items back into it will send them back to your ME storage.\n\nIf you connect these to your GregTech machines, make sure you select the \"Allow Input From Output Face\" option on them so you can both input and output from the same side!\n\nAs always, check the in-game guide using &eG&r to learn more about it.",
+    "quests.ae2.pattern_provider.task": "Either Pattern Provider",
+
+    "quests.ae2.pattern.subtitle": "Crafting instructions",
+    "quests.ae2.pattern.desc": "Each of these tells your ME system how to craft a specific item. You'll need one for every single recipe, so it's worth aiming for the most efficient way to craft a ton of these.\n\nTo clear a Pattern, simply Sneak + Right-click them.\n\nUse the in-game guide for full details on how to use them, just remember to set the pattern type to \"Processing\" for any recipes that'll go in GregTech machines.",
+
+    "quests.ae2.interface.subtitle": "I'm giving up on the body part analogy",
+    "quests.ae2.interface.desc": "The &dME Interface&r is one of your bread and butter tools to get items or fluids out of, or inside, your network.\n\nIf you've only used AE2 in older Minecraft versions, these now only make network contents passively available for other things to pull out of, and don't actively push anything or hold patterns. You'll want the Pattern Provider for that.\n\nThe ME Interface can do way too many things to list here, so check the in-game guide using &eG&r to learn more about it.",
+
+    "quests.ae2.interface_automation.title": "Interface Automation",
+    "quests.ae2.interface_automation.desc": "The best way to passively route items and fluids around your base is through the &bME Interface&r. Since Interfaces don't push out their contents, you'll need to slap a cover on your machine or pipe.\n\nRemember to enable the &eAllow Input&r option on the Output face in your GregTech machine's GUI, in order to push and pull from the same side.\n\nUsing filters on your covers can also be a handy way for multiple machines to pull out of the same Interface.\n\nTo avoid overfilling a machine's item input slots, you'll need to use a Robot Arm cover on &eKeep Exact&r mode with a filter.\n\nThe fluid input doesn’t have this issue, as it will fill only one slot automatically.",
+
+    "quests.ae2.crafting_accelerator.desc": "Simply use the in-game guide — it will explain everything far better than we ever could in a quest.\n\nTake your time to read it, it’s a great resource!",
+
+    "quests.ae2.export_bus.title": "Export Bus",
+    "quests.ae2.export_bus.desc": "The &dME Export Bus&r is a strong tool to get items or fluids out of your &dME Network&r.\nOnce you're able to craft them, you should especially look at the &eExtendedAE&r ones, as they can be of great help for some automation.\n\n&cImportant note&r: These have much more of a &4TPS impact&r than something like ME Interfaces, so it's best to use them sparingly.",
+    "quests.ae2.export_bus.task": "Any Export Bus",
+
+    "quests.ae2.import_bus.desc": "The &dME Import Bus&r is one way to get items and fluids into your &dME Network&r. You could also just push items and fluids into an Interface or Pattern Provider for the same result, though, so Import Buses are more niche.\n\n&cImportant note&r: These have much more of a &4TPS impact&r than something like ME Interfaces, so it's best to use them sparingly.",
+
+    "quests.ae2.storage_bus.desc": "The &bME Storage Bus&r is how you tell your ME network about items and fluids stored somewhere outside of ME Drives. They can be very powerful in combination with Super Tanks and Super Chests — just be sure to give the Storage Bus a higher &ePriority&r than your Drive, and partition it to the item or fluid you want to store, so your network tries to put things there first.\n\nStorage Buses are also essential for setting up Subnets — check out the in-game guide for more details on how those work.\n\nAlso, &aExtended AE&r comes with a lot of Storage Bus variants that may come in handy later. For example, you could tell your network to \"store\" all of your &6hot ingots&r in your Vacuum Freezer.",
+    "quests.ae2.storage_bus.task": "Any Storage Bus variant",
+
+    "quests.ae2.cell_component_1k.desc": "The &bStorage Component&r will be a core part of your progression through &aAE2&r, and they can be quite expensive, even though you will need them to make your &bStorage Cells&r.\n\nThe &e1k ME Storage Component&r is simple enough to not have a specialized moon recipe, but all of the others do, and since the Storage Components get exponentially more expensive... have we convinced you to make a Moon base yet?",
+
+    "quests.ae2.cell_component_4k.desc": "Take a look at how the &e4k Storage Component&r has a tremendously cheaper recipe on the &dMoon&r. This will be a consistent trend — the Moon recipes will always use one circuit tier lower than the non-Moon ones.",
+
+    "quests.ae2.cell_component_16k.desc": "The &e16k Storage Component&r is starting to get exponentially more expensive, so now you can really start seeing the savings from having a Moon base.\n\nYou do have a Moon base, right?",
+
+    "quests.ae2.p2p.title": "P2P Tunneling",
+    "quests.ae2.p2p.desc": "Channels are enabled here by default, so you may want to learn about &dP2P&r. They're essentially a way to condense multiple channels down into a single channel, letting you carry hundreds of them across your base through a single cable.\n\nAs usual, we advise you to use the in-game guide for more detailed information, and there's also plenty of video tutorials out there that you may find useful.\n\nWe also recommend making the &bAdvanced Memory Card&r from &dBetter P2P&r as soon as possible. It will be a big help when you've got many different P2P tunnels to deal with. You can even place a load of &dME P2P Inputs&r on your ME Controller ahead of time, and connect them to an output whenever you need.",
+    "quests.ae2.p2p.task": "Any P2P Tunnel",
+
+    "quests.ae2.cell_workbench.desc": "The &bCell Workbench&r is used to customize your storage cells.\n\nYou can give them &aWhitelist&r/&cBlacklist&r filters or partitions, or add upgrades like the &4Overflow Destruction Card&r — but be cautious with this one!\n\nThe &bIO Port&r is used to \"defragment\" your drives, if you've got the same items scattered across several of them.",
+
+    "quests.ae2.requester.desc.1": "The &aME Requester&r may be one of your &6strongest tools&r if you want to build your automation around &eauto-crafting&r and not passive production.\n\nIt can send Crafting Request batches of an item when your network has fewer than a specified amount.\n\nIf you are using a lot of &dCrafting Upgrades&r, you'd be better off using this machine as it will have much less of an impact on your &cTPS&r.",
+    "quests.ae2.requester.desc.2": "Also note that you can set your Crafting CPUs to be dedicated to Player-started crafting, automatic crafting requests, or neither, which can be useful to stop your Requesters from hogging all your CPUs.\n\nIf you like, you can also make a specialized &bTerminal&r to have access to all your Requesters from one place.",
+
+    "quests.ae2.emitters.desc": "&bEmitters&r and the &bToggle Bus&r are your way to manage &cRedstone&r signals in &bAE2&r.\n\nThe Level Emitter is especially useful for setting up passive production when combined with the GregTech Machine Controller Cover!\n\nCheck the in-game guide for more detailed information.",
+
+    "quests.ae2.batteries.desc": "These are the batteries for your ME Network. You may not need them at the beginning, but just keep them in mind — your energy cost could rise quickly, and a blackout in your ME Network can be a really dangerous situation.",
+
+    "quests.ae2.cutting_knife.title": "Cutting Knives",
+    "quests.ae2.cutting_knife.desc": "These are tools for easily renaming all of your ME components by right-clicking them with a knife in your hand. Why would you want to do this? If you rename your Pattern Providers, their names will show up in the Pattern Terminal, which can be very handy for keeping track of which Pattern Provider is connected to which machine.\n\nFor example &oSmall Gear Extruder&r as a name for the Pattern Provider would let you easily know that this Extruder contains a Small Gear mold, so you should only put Small Gear patterns in it.",
+    "quests.ae2.cutting_knife.task": "Either cutting knife",
+
+    "quests.ae2.pattern_box.desc": "The Pattern Box can carry around all your Blank and Encoded Patterns in one inventory slot, and they will be visible in any AE2 device UI as long as the box is somewhere in your inventory.",
+
+    "quests.ae2.wireless_access.title": "ME Wireless Network",
+    "quests.ae2.wireless_access.subtitle": "Get Free WiFi Anywhere You Go",
+    "quests.ae2.wireless_access.desc": "Once you've made it to &5EV&r, you'll gain access to the ME Wireless Access Point, which basically acts like a WiFi Router for your ME network. Connect it to a central point in your base, shove as many Wireless Booster cards as you want to increase its range (and power draw), and then link a Wireless Terminal to it.\n\nOnce you have Epoxy and Rhodium, you'll be able to combine all of your Wireless Terminals together via a Universal Terminal!",
+
+    "quests.ae2.interplanetary_wireless.subtitle": "Forgot something at home?",
+    "quests.ae2.interplanetary_wireless.desc": "You can upgrade your Wireless Terminal with this special Card, allowing access to your network from any distance, even on different worlds! Sounds too good to be true? There's a major catch — transferring items uses a huge amount of energy.\n\nYou can sort of get around this with some Energy Cards and a battery in your inventory set to Discharge Mode, but it should work well enough for those times when you accidentally left something at your base on Earth and don't want to fly all the way back.\n\nFor proper automated transfer, you'll need a Railgun.",
+
+    "quests.ae2.universal_circuits.title": "Universal Circuits",
+    "quests.ae2.universal_circuits.subtitle": "Oh so THAT's what these are for!",
+    "quests.ae2.universal_circuits.desc": "Ever wondered what the point of the Universal Circuit items was? Besides nice quest icons, they're primarily used for AE2!\n\nAE2 doesn't handle item tags in patterns well, so the universal circuits are designed to be used in any patterns that require circuits. This way, whenever you unlock a new kind of circuit, you only need to add one pattern to convert the new circuit into the universal one, instead of updating &oall&r of your old patterns!",
+    "quests.ae2.universal_circuits.task": "Any Universal Circuit",
+
+    "quests.ae2.stock_bridge.title": "AE Stock Bridge",
+    "quests.ae2.stock_bridge.desc": "If you invested heavily into Create's logistics network, you might despair at the thought of having to tear it all down to replace it with AE2. The &bStock Bridge&r acts as a bridge between your ME network and your Create one. Check its Ponder to learn how to set it up.\n\nWe still recommend moving over any old setups to AE2 eventually, mostly because it's much lighter on your game's performance.",
+
+    "__comment5": "Right (IV)",
+
+    "quests.ae2.iv.title": "IV Tier AE2",
+    "quests.ae2.iv.desc": "This entire branch becomes fully unlockable once you reach &1IV&r.",
+
+    "quests.ae2.accumulation_press.desc": "To get this &eNew Inscriber Press&r, you will need to invest a bit.\n\nFirst, you must upgrade your Implosion Compressor with &5two EV Energy Hatches&r.\n\nThen, get yourself a new IV Laser Engraver if you don't already have one.\n\nAnd finally, prepare a lot of Industrial TNT — it’s the &conly one that works&r for this process.\n\nPlan carefully, as this step is quite demanding!",
+
+    "quests.ae2.accumulation_processor.desc": "The &eAccumulation Processor&r will require a large amount of Silicon for each craft.\n\nWe hope you already have a dedicated EBF producing Silicon, or at least a strong infrastructure to manufacture it quickly.\n\nPrepare accordingly, as you’ll need plenty of it!",
+
+    "quests.ae2.mega_crafting.desc": "These are a neat upgrade for your &bCrafting CPU&r.\n\nThey will help to speed up your auto-crafting and allow you to handle larger jobs with ease.",
+
+    "quests.ae2.mega_battery.desc": "A &ebigger battery&r for a bigger network. Nothing else to it!",
+
+    "quests.ae2.mega_pattern.desc": "These are an upgrade for normal &bPattern Providers&r that come with two rows instead of just one.",
+
+    "quests.ae2.extended_pattern_access.desc": "The &eExtended Pattern Terminal&r is a wonderful upgrade to manage all your patterns in an easier way.\n\nYou get &6more search options&r for your patterns, and with how many you should be getting now, it will be a huge QoL improvement.\n\nMake the \"upgrade\" version to simply sneak-right-click your existing pattern providers to upgrade them without having to take all the patterns out.",
+    "quests.ae2.extended_pattern_access.task": "Either the part or the upgrade",
+
+    "quests.ae2.extended_interface.desc": "These are an even bigger &bInterface&r with four rows of slots. They even come with an upgrade item so you don't even need to disconnect your origial ones to upgrade.\n\nYou will be quite happy with them!",
+    "quests.ae2.extended_interface.task": "Either the part or the upgrade",
+
+    "quests.ae2.extended_patprov.desc": "These are an even bigger bigger &bPattern Provider&r with four rows of slots. They even come with an upgrade item so you don't even need to disconnect your original ones to upgrade.\n\nYou will be quite happy with them!",
+    "quests.ae2.extended_patprov.task": "Either the part or the upgrade",
+
+    "quests.ae2.extended_drive.desc": "The &dME Extended Drive&r will &6double&r the amount of &eStorage Cells&r you can have within it.\n\nYou can also craft the &eupgrade&r to simply &aRight Click&r your existing ME Drives without having to take your discs out, and it won't cost you more.",
+    "quests.ae2.extended_drive.task": "Either the part or the upgrade",
+
+    "quests.ae2.extended_import_export.desc": "These are eight times faster than their regular counterparts. Enjoy!",
+    "quests.ae2.extended_import_export.task": "Either the part or the upgrade",
+
+    "quests.ae2.extended_io_port.desc": "This upgrade will let you &atransfer faster&r while also offering &6more upgrade slots&r if needed.",
+
+    "quests.ae2.extended_molecular_assembler.desc": "The upgrade of the &bMolecular Assembler&r.\n\nIt runs &68 crafting jobs&r at the same time and goes &62 times faster&r.\n\nIt will be a &agreat upgrade&r before you get the &dMatrix Multiblock&r a bit later on.",
+
+    "quests.ae2.wireless.desc": "The &aME Wireless Connector&r is your go-to if you don't want to put down massive lines of &bME Cables&r. They effectively work like short-range Quantum Tunnels, but have a limited range and don't work across dimensions. That would be too easy, wouldn't it?\n\nDon't forget to check the in-game guide with &eG&r to learn about how they work and their limitations.",
+
+    "quests.ae2.mega_cell_housing.desc": "These &bCell Housings&r work the same way as the basic ones, but you will need these to make the bigger disks from &dMEGA&r.",
+
+    "quests.ae2.cell_component_64k.desc": "Now that you have &1IV&r Circuits, you can make this enormous &5Storage Component&r. Aren't you glad you made a Moon base?",
+
+    "quests.ae2.cell_component_256k.desc": "The &c256k ME Storage Component&r is the last one you can make with a regular Assembler, and it's so big that you may never need any of the bigger sizes.\n\nUnless you're up for the challenge, of course.",
+
+    "__comment6": "Bottom (LuV)",
+
+    "quests.ae2.luv.title": "LuV Tier AE2",
+    "quests.ae2.luv.desc": "This branch becomes unlockable once you reach &dLuV&r.",
+
+    "quests.ae2.cell_component_1m.desc": "The &3MEGA Storage Components&r will need an &bAssembly Line&r. Note that the non-Moon recipe must be crafted within a Cleanroom, or you can use a Cleaning Maintenance Hatch if you have access to one.\n\nNo need for that on the Moon though.",
+
+    "quests.ae2.cell_component_4m.desc": "Simply bigger and more expensive.",
+
+    "quests.ae2.cell_component_16m.desc": "This one can only be made on the &cMoon&r and nowhere else. It will also require a Cleanroom environment, so if you don’t want to bother with a Cleanroom on the &cMoon&r, you should make the &7Cleaning Maintenance Hatch&r.\n\nIt will also need some research. Refer to the &cZPM&r Chapter if you don’t know what that means.",
+
+    "quests.ae2.cell_component_64m.desc": "The &c64M MEGA Storage Component&r is the biggest one you can make in &cTerraFirmaGreg&r. Honestly, we believe you'll never need it, but it’s there for completionists.",
+
+    "quests.ae2.oversize_interface.desc": "The &dME Oversize Interface&r is a &dME Extended Interface&r but each slot can hold 16x more items or fluids. If you have processes that need huge quantities, this could be your go-to.",
+
+    "quests.ae2.assembler_matrix.desc": "The &6Assembler Matrix&r is basically a customizable multiblock Molecular Assembler. The requirements for this quest should let you build one that we deem quite strong enough. You could add more layers of &bPattern Core&r or &aCraft Core&r if you want to.\n\nAs usual, check the in-game guide for detailed informations.",
+
+    "quests.ae2.me_assembler.subtitle": "Extract power from your buddies",
+    "quests.ae2.me_assembler.desc.1": "The &6ME Resonance Fabricator&r (MERF) is an interesting new multiblock required to craft most AE2 items. Do not bother building one on Earth, as all of its recipes must be ran on the Moon.\n\nIt comes with a custom mechanic: placing a &bBudding Certus&r in the center reduces the duration of each recipe. This comes at a cost, as every recipe ran can deteriorate the Budding Certus into a lower grade. The higher the recipe's energy tier and the longer its duration, the higher the chance for the Budding Certus to be 'damaged'. It is also quite random, as each Budding Certus will survive for a unique amount of time.",
+    "quests.ae2.me_assembler.desc.2": "The speed bonus ranges from nothing for the plain Certus Block, up to 16x faster recipes for the Exquisite Budding Certus. Keep in mind that breaking a Budding Certus (whether by a player or machine) will drop a Chipped one: only an ME Spatial Pylon will allow you to move them while preserving their rarity. (Building Gadgets or Create will not work here.)\n\nThe considerable buff a Budding Certus provides will become mandatory for late game recipes, which would otherwise take far too long. There is no need to worry about it early on, as a simple Certus Block will do the job for most of your first AE2 crafts.\n\nThis multiblock accepts an &6ME Redstone Port&r to communicate the grade of the Budding Certus through Redstone, which may come in handy if you plan to automate it.",
+
+    "quests.ae2.budding_charger.subtitle": "A buddy system for your budding buds",
+    "quests.ae2.budding_charger.desc": "The &6ME Resonance Charger&r is your solution to passive crafting recipes at maximum speed.\n\nLike the &6ME Resonance Fabricator&r (MERF), it requires any grade of Budding Certus (or a non-budding one), but instead of degrading the block, this machine restores it. Each recipe only upgrades the block to a specific grade, meaning all four recipes must be run to reach the maximum Exquisite grade.\n\nWhile the first recipe is fairly manageable, later recipes become incredibly expensive, so consider carefully whether you actually need the higher grades. Having an infinite source of &bCertus Quartz&r production on the Moon will obviously help a great deal.\n\nThe ME Resonance Charger also accepts an &6ME Redstone Port&r, which works exactly like the one on the MERF. This should allow you to set up a system that swaps repaired Budding Certus with the damaged ones from the MERF using a Spatial Pylon. We will leave that puzzle up to you!",
+
+    "quests.ae2.me_guide.title": "Guide: How to automate the MERF with On-Demand Crafting",
+    "quests.ae2.me_guide.subtitle": "Oh? You thought you'd just make an ME Quantum Ring and be done with it?",
+    "quests.ae2.me_guide.task": "I've set up my space platform and am ready for Fulgora",
+    "quests.ae2.me_guide.desc_1": "Automating on-demand crafting with the &6ME Resonance Fabricator&r (MERF) on the Moon is not as difficult as you might think. This quest will walk you through every step of one method that is already available to you!\n\nKeep in mind that this is &oonly one method&r, you may have a different idea or a simpler setup!\n\nTo get started, you will need two functional &bRailgun&r pairs: two Senders and two Receivers, with each pair in its respective dimension and chunk loaded. You will also need 9 Pattern Providers, optionally access to P2P for easier cable management, and a way to either stockpile Railgun Ammo or produce it infinitely. Finally, a &6Chameleon Spraycan&r is strongly recommended, as you will need a different color for each bus and it will prove useful in many other situations such as coloring ME cables or GT pipes.\n\nIf you need help understanding how the Railgun works, refer to the Railgun quest in the &3Moon&r Chapter.",
+    "quests.ae2.me_guide.desc_2": "The first step is setting up your &bRailgun&r. From this point on, we assume you have read the dedicated quest and tested the setup in a creative world if needed. Note that the destination of a sender can be within the same dimension!\n\nStart with a Railgun Sender using 9 Input Buses, each set to a different circuit from 1 to 9. On each bus, place a &6Pattern Provider&r holding the patterns assigned to that circuit. For example, the Calculation Processor is assigned to Circuit 1, its pattern goes into the Pattern Provider attached to the Input Bus set to Circuit 1.\n\nAlso notice that your life will be much easier if you remove the fluid from the pattern and produce your &dCryo-Fluix&r passively on the Moon while keeping the Fluid Hatch of the &bMERF&r filled.\n\nKeep in mind that you can use the Cutting Knife to rename each Pattern Provider, making it easier to track which circuit corresponds to which provider.",
+    "quests.ae2.me_guide.desc_3": "On the Moon side, build your Receiver using 9 Railgun Output Buses, each set to a circuit from 1 to 9. On each bus, place an Interface to receive the outputs from the &bRailgun&r, but there is one important detail: &ethe Interfaces cannot all be on the same network&r. Each one needs its own subnetwork so the items they receive &cdo not mix&r.\n\nThe easiest way to manage this is to color each cable with an assigned color. For example, Circuit 1 can be Black, Circuit 2 is Red, and so on.\n\nRemember your color coding, as we will use it again on the &6MERF&r later.\n\nAnother useful trick is to use &6P2P&r to move all the channels instead of running 9 cables side by side. As shown in the screenshot, each cable goes directly into a P2P so they can all be routed together. If you are not familiar with P2P, hold &2G&r on a P2P item or open your ME Guide. This is also a good time to try using the &9Advanced Memory Card&r and learn its capabilities.\n\n&9&oTip&r&o: Regular GT machine hulls can pass AE2 channels through the walls of your moon base, or you can use AE2's Facades to keep the holes sealed.",
+    "quests.ae2.me_guide.desc_4": "The next step is placing your &6Interplanetary Logistics Monitor&r and setting up the connections.\n\nThis part is straightforward: match each bus to its counterpart - Circuit 1 to Circuit 1, Circuit 2 to Circuit 2, and so on. Since Pattern Providers only ship a craft once they have everything required for it, a Delay Rule of 1 second is sufficient.\n\nAlso note that setting your Pattern Providers to Blocking Mode can be useful, as it prevents sending too many recipes at once and ensures the &6MERF&r has enough space in its Input Buses. Later on, Stocking Input Buses will solve this issue entirely.",
+    "quests.ae2.me_guide.desc_5": "The final step is connecting each subnetwork to its own bus on the &6MERF&r. This is fairly simple: pick a side and set up 9 Input Buses with a Storage Bus on each. Use your Spray Can again to color each Input Bus and the cable in front of it with the same color you assigned to its respective circuit - it will make your life much easier.\n\n&cImportant&r: you need to color the Input Buses rather than use Distinct Mode, so that each bus can still access the shared Fluid Hatch.\n\nOnce that is done, place the P2Ps and route each subnetwork out of it and into its Storage Bus. The goal is for the items sitting in the Interface to be exported directly into the Input Bus assigned to the matching circuit.\n\nAt that point the recipe should start, provided you did not forget the Cryo Fluix, and you can retrieve the output to be sent back to Earth.\n\n&9&oTip&r&o: Railguns can fire three stacks of items per ammo, so encode your patterns to make many components at once instead of one at a time!"
+}
