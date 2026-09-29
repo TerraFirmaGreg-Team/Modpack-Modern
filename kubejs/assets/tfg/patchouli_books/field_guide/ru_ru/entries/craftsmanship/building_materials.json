@@ -12,7 +12,7 @@
         {
             "type": "patchouli:text",
             "anchor": "primitive_materials",
-            "Title": "Primitive Materials",
+            "title": "Primitive Materials",
             "text": "In the early stages of the game, building can be a challenge as many sturdy building blocks require metal tools to obtain. However, there are a few building blocks that can be obtained with just stone tools.$(br2)More $(l:craftsmanship/building_materials#advanced_materials)Advanced Building Blocks$() are obtainable with metal tools."
         },
         {

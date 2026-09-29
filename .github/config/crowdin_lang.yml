@@ -12,5 +12,5 @@ files:
     update_option: "update_as_unapproved"
 
   - source: "/*/lang/en_us/**/*.json"
-    translation: "/%original_path%/%locale_with_underscore%.%file_extension%"
+    translation: "/*/lang/%locale_with_underscore%/**/%original_file_name%"
     update_option: "update_as_unapproved"
