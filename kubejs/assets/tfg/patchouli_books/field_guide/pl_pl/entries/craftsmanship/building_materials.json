@@ -118,7 +118,7 @@
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "Wattle and daub process.",
+            "text": "Proces tworzenia szachulca z gliną szachulcową.",
             "multiblocks": [
                 {
                     "pattern": [
@@ -260,13 +260,13 @@
         {
             "type": "patchouli:text",
             "anchor": "block_interactions",
-            "title": "Block Interactions",
+            "title": "Interakcje z blokami",
             "text": "There are many in-world interactions that can be done to streamline building:$(li)Turn blocks mossy by $(item)$(k:key.sneak)-$(k:key.use)$() them with $(l:agriculture/composting#green_compost)Greens$().$(li)Crack stone bricks by $(item)$(k:key.sneak)-$(k:key.use)$() with a $(thing)Hammer$().$(li)Smooth stone bricks by $(item)$(k:key.sneak)-$(k:key.use)$() with $(thing)Sand Paper$().$(br)All interactions can be viewed by browsing the block modifications tab in $(emi)."
         },
         {
             "type": "patchouli:text",
             "anchor": "roof_building",
-            "title": "Roof Building",
+            "title": "Budowanie dachów",
             "text": "Roof construction with the $(bold)Roads and Roofs$() mod begins with a frame. $(thing)Roof frame blocks$() can be crafted from lumber and sticks, and made into stair and slab variants. These blocks can be used to outline the shape of the roof and are the starting point for all roofs."
         },
         {
@@ -275,7 +275,7 @@
         },
         {
             "type": "patchouli:image",
-            "title": "Thatching a Roof",
+            "title": "Krycie dachu strzechą",
             "images": [
                 "rnr:textures/gui/book/thatching.png"
             ],
@@ -283,7 +283,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Krycie dachu strzechą",
+            "title": "Czytaj dalej",
             "anchor": "relations",
             "entries": [
                 "tfg:agriculture/aqueducts",

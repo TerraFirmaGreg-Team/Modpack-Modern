@@ -7,7 +7,7 @@
             "type": "patchouli:text",
             "title": "Індекс",
             "anchor": "index",
-            "text": "$(li)$(bold)$(l:agriculture/fertilizers#compost)Компост$()\n$(li)$(bold)$(l:agriculture/fertilizers#bone_meal)Кісткове борошно$()\n$(li)$(bold)$(l:agriculture/fertilizers#saltpeter)Селітра$()\n$(li)$(bold)$(l:agriculture/fertilizers#guano)Гуано$()\n$(li)$(bold)$(l:agriculture/fertilizers#wood_ash)Деревна зола$()\n$(li)$(bold)$(l:agriculture/fertilizers#sylvite)Сильвін$()\n$(li)$(bold)$(l:agriculture/fertilizers#pure_fertilizers)Чисті добрива$()\n$(li)$(bold)$(l:agriculture/fertilizers#fertilizer)Добриво$()"
+            "text": "$(li)$(bold)$(l:agriculture/fertilizers#compost)Компост$()$(li)$(bold)$(l:agriculture/fertilizers#bone_meal)Кісткове борошно$()$(li)$(bold)$(l:agriculture/fertilizers#saltpeter)Селітра$()$(li)$(bold)$(l:agriculture/fertilizers#guano)Гуано$()$(li)$(bold)$(l:agriculture/fertilizers#wood_ash)Деревна зола$()$(li)$(bold)$(l:agriculture/fertilizers#sylvite)Сильвін$()$(li)$(bold)$(l:agriculture/fertilizers#pure_fertilizers)Чисті добрива$()$(li)$(bold)$(l:agriculture/fertilizers#fertilizer)Добриво$()"
         },
         {
             "type": "patchouli:text",

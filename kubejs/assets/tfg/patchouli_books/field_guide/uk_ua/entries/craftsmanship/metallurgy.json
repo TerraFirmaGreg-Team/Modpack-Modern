@@ -1,18 +1,18 @@
 {
-    "name": "Metallurgy & Prospecting",
+    "name": "Металургія та розвідка родовищ",
     "category": "tfg:craftsmanship",
     "icon": "tfc:ore/rich_hematite",
     "pages": [
         {
             "type": "patchouli:text",
             "anchor": "index",
-            "text": "$(li)$(bold)$(l:craftsmanship/metallurgy#intro)Surface Metal$()$(li)$(bold)$(l:craftsmanship/metallurgy#extraction)Extracting Metal$()$(li2)$(l:craftsmanship/metallurgy#casting)Casting$()$(li)$(bold)$(l:craftsmanship/metallurgy#alloying)Alloying$()$(li2)$(l:craftsmanship/metallurgy#utility_alloys)Utility Alloys$()$(li)$(bold)$(l:craftsmanship/metallurgy#propick)Prospector's Pick$()$(li2)$(l:craftsmanship/metallurgy#prospector)Digital Prospecting$()"
+            "text": "$(li)$(bold)$(l:craftsmanship/metallurgy#intro)Поверхневий метал$()$(li)$(bold)$(l:craftsmanship/metallurgy#extraction)Видобування металу$()$(li2)$(l:craftsmanship/metallurgy#casting)Виливання$()$(li)$(bold)$(l:craftsmanship/metallurgy#alloying)Створення сплавів$()$(li2)$(l:craftsmanship/metallurgy#utility_alloys)Практичні сплави$()$(li)$(bold)$(l:craftsmanship/metallurgy#propick)Геологічний молоток$()$(li2)$(l:craftsmanship/metallurgy#prospector)Цифрова розвідка$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "intro",
-            "title": "Scattered Metal",
-            "text": "In addition to sticks, twigs, and stones on the ground, you may encounter small pieces of ores. These are important, as they are one of the few sources of ore and metal before obtaining a pickaxe. There are three types of these indicators: $(li)Mineral Dust$(li)Gem Buds$(li)Small Ores"
+            "title": "Розсіяний метал",
+            "text": "Окрім палиць, гілочок і каміння на землі, ти можеш натрапити на невеликі шматочки руди. Вони важливі, оскільки є одним із небагатьох джерел руди та металу до отримання кайла. Є три типи таких ознак: $(li)Мінеральний пил$(li)Самоцвітові бутони$(li)Дрібна руда"
         },
         {
             "type": "patchouli:multiblock",
@@ -33,23 +33,23 @@
                     "C": "tfc:ore/small_native_copper"
                 }
             },
-            "name": "Float Ore",
-            "text": "When broken: dust indicators drop tiny piles of dust, gem buds drop $(t:Unless broken with a Gem Saw!)chipped gems$(), and small ores give, well, small ores.",
+            "name": "Плавуча руда",
+            "text": "Під час руйнування: мінеральний пил випадає у вигляді маленьких купок пилу, самоцвітові бутони дають $(t:Unless broken with a Gem Saw!)сколені самоцвіти$(), а з дрібної руди випадає, ну, дрібна руда.",
             "enable_visualize": false
         },
         {
             "type": "patchouli:text",
-            "text": "These indicator pieces can serve two purposes: they can provide a source of metal, and more importantly, they indicate the presence of a larger vein of ore somewhere below them. Be sure to note where indicators are on your map so you may return to excavate the vein later.$(br2)⚠ Be careful when picking up mineral dusts as some of them may be $(l:game_mechanics/hazards)Hazardous$(), like Cobaltite or Galena for example."
+            "text": "Ці шматочки-ознаки мають дві функції: вони можуть бути джерелом металу, але, що важливіше, вказують на наявність більшої жили руди десь під ними. Обов’язково позначай місця з такими ознаками на своїй мапі, щоб згодом повернутися й розкопати жилу.$(br2)⚠ Будь обережний, збираючи мінеральний пил, адже деякі його різновиди можуть бути $(l:game_mechanics/hazards)небезпечними$(), наприклад кобальтит або галеніт."
         },
         {
             "type": "patchouli:text",
             "anchor": "extraction",
-            "text": "Ores yield a specific $(thing)millibucket (mB)$() amount of actual metal which can be extracted through refining, melting, and casting. The amount obtained from an ore depends on the items \"richness\", chemical composition, and refinement.$(br2)Ore richness―from least to most rich―goes small, poor, normal, rich.",
+            "text": "Руди містять певну кількість фактичного металу, яка вимірюється в $(thing)мілівідрах (mB)$() і може бути отримана шляхом очищення, плавлення та лиття. Кількість отриманого металу залежить від «багатства» предмета, його хімічного складу та ступеня очищення.$(br2)Насиченість руд — від найменшого до найбільшого: дрібна, бідна, багата, звичайна.",
             "title": "Екстракція"
         },
         {
             "type": "patchouli:text",
-            "text": "Some ores go by names you may be unfamiliar with. For example, if you are looking for copper you shouldn't just look for \"copper ore\". There are many different variates available. To understand what an ore piece will yield you can search its recipes in $(emi), or look at its tooltip.$(br2)For example, searching $(emi) for \"melts into Copper\" will show every source of copper."
+            "text": "Деякі руди мають назви, які можуть бути тобі незнайомі. Наприклад, якщо ти шукаєш мідь, не варто просто шукати «мідну руду». Існує багато різних її різновидів. Щоб дізнатися, який матеріал дасть шматок руди, ти можеш переглянути його рецепти в $(emi) або подивитися на його підказку.$(br2)Наприклад, пошук у $(emi) за запитом «плавиться в мідь» покаже всі джерела міді."
         },
         {
             "type": "patchouli:image",
@@ -60,23 +60,23 @@
             "images": [
                 "tfg:textures/gui/field_guide/prospecting/ore_item.png"
             ],
-            "text": "$(2)◼$() - Chemical formula.$(br)$(4)◼$() - Metal yield when melted.$(br)$(3)◼$() - Melting temperature.",
-            "title": "Understanding Ore",
+            "text": "$(2)◼$() — Хімічна формула.$(br)$(4)◼$() — Вихід металу під час плавлення.$(br)$(3)◼$() — Температура плавлення.",
+            "title": "Розуміння руд",
             "border": false
         },
         {
             "type": "patchouli:text",
             "anchor": "casting",
             "title": "Відливка",
-            "text": "To begin casting your first metal you will use a $(l:craftsmanship/pottery#vessel)Small Vessel$(). Place enough meltable ore inside of it to fill your desired $(l:craftsmanship/pottery#mold)Mold$(). For example, to make a saw blade you will need at least 144mB of metal.$(br)You can view the amount of material in the vessel by looking at its tooltip.$(br2)Be aware that a vessel has a max fluid capacity of $(t:21 x 144)$(6)3,024mB$()!"
+            "text": "Щоб розпочати лиття свого першого металу, використовуй $(l:craftsmanship/pottery#vessel)глечик$(). Помісти в неї достатню кількість руди, яку можна розплавити, щоб заповнити потрібну тобі $(l:craftsmanship/pottery#mold)форму$(). Наприклад, для виготовлення полотна пилки тобі знадобиться щонайменше 144mB металу.$(br)Кількість матеріалу в глечику можна переглянути, навівши на неї курсор і подивившись на підказку.$(br2)Май на увазі, що максимальна місткість глечика становить $(t:21 x 144)$(6)3 024mB$()!"
         },
         {
             "type": "patchouli:text",
-            "text": "You can mix and match the types of ore inside a vessel, however all the ore must yield the same fluid metal, or you will create an $(l:craftsmanship/metallurgy#alloying)Alloy$().$(br2)Place your filled vessel into a $(l:craftsmanship/pit_kiln)Pit Kiln$() to melt its contents. Once finished you will have a brief window of time to cast, so keep an eye on your kiln!"
+            "text": "Ти можеш змішувати різні типи руди в одному глечику, однак уся руда має давати один і той самий рідкий метал, інакше ти створиш $(l:craftsmanship/metallurgy#alloying)сплав$().$(br2)Помісти наповнений глечик в $(l:craftsmanship/pit_kiln)земляну піч$(), щоб розплавити її вміст. Після завершення в тебе буде лише короткий проміжок часу для лиття, тож уважно стеж за своєю піччю!"
         },
         {
             "type": "patchouli:crafting",
-            "text": "Careful, the vessel will be hot! Craft $(thing)Wooden Tongs$() with two sticks and a knife and hold them in your offhand to handle the hot vessel safely.",
+            "text": "Будь обережний, глечик буде гарячим! Виготов $(thing)дерев’яні щипці$() з двох палиць і ножа та тримай їх у лівій руці, щоб безпечно поводитися з гарячим глечиком.",
             "recipe": "tfchotornot:crafting/tongs/wood"
         },
         {
@@ -89,36 +89,36 @@
         },
         {
             "type": "patchouli:text",
-            "text": "With the casting interface open, place your empty fired mold in the center slot. It will fill up as long as the vessel remains liquid. (If the vessel solidifies, it can be reheated in another pit kiln.) Once the mold is full, it can be removed and left to cool. Once cool, the mold and its contents can be extracted by $(item)$(k:key.use)$() the mold, or putting it in the crafting grid."
+            "text": "Коли інтерфейс лиття відкрито, помісти порожню обпалену форму в центральний слот. Вона заповнюватиметься, доки метал у глечику залишається рідким. (Якщо метал у глечику затвердне, його можна повторно нагріти в іншій земляній печі.) Коли форма заповниться, її можна забрати та залишити охолоджуватися. Після охолодження форму та її вміст можна витягнути, натиснувши $(item)$(k:key.use)$() по формі або помістивши її у сітку створення."
         },
         {
             "type": "patchouli:crafting",
             "recipe": "gtceu:shaped/pickaxe_copper",
-            "text": "You are now able to craft your first pickaxe! Find enough copper to make a pickaxe head, fire a pickaxe mold and melt the ore using a pit kiln, then cast a head. Slap it on a stick, and voilà! You can now dig for $(thing)Ore$()."
+            "text": "Тепер ти можеш виготовити свою перше кайло! Знайди достатньо міді, щоб зробити головку кайла, обпали форму для головки кайла та розплав руду в земляній печі, а потім відлий головку. З'єднай її з палицею — і вуаля! Тепер ти можеш копати $(thing)Руду$()."
         },
         {
             "type": "patchouli:spotlight",
             "item": "tfc:metal/chisel/copper",
-            "text": "A couple other important metal tools are available for progression as well. The $(l:craftsmanship/chisel)Chisel$() is useful for working with stone blocks for building, and is required for other recipes."
+            "text": "Ще кілька важливих металевих інструментів також доступні для подальшого розвитку. $(l:craftsmanship/chisel)Зубило$() корисне для обробки кам’яних блоків у будівництві та необхідне для інших рецептів."
         },
         {
             "type": "patchouli:spotlight",
             "item": "gtceu:copper_saw",
-            "text": "The saw allows you turn wood logs into $(l:game_mechanics/mining#supports)support beams$() and $(thing)lumber$(), which can further be crafted into planks, the crafting bench, barrels, and chests, among other things. It is also useful to make a $(l:logistics/boats#canoe)canoe$()."
+            "text": "Пилка дає змогу перетворювати дерев’яні колоди на $(l:game_mechanics/mining#supports)опорні балки$() та $(thing)пиломатеріали$(), з яких, своєю чергою, можна виготовляти дошки, верстат, діжки, скрині та багато чого іншого. Вона також стане в пригоді для виготовлення $(l:logistics/boats#canoe)каное$()."
         },
         {
             "type": "patchouli:text",
             "anchor": "alloying",
             "title": "Сплавлення",
-            "text": "$(thing)Alloys$() are a method of mixing two or more metals together, to create a new, stronger metal. During the early game, while copper is a useful metal for creating tools, the next tier of metal is one of three types of $(thing)Bronze$(). They are each slightly different in regard to durability, efficiency, and attack damage. An alloy is made up of component $(thing)metals$() which must each satisfy a specific percentage of the overall whole."
+            "text": "$(thing)Сплави$() — це спосіб змішування двох або більше металів для створення нового, міцнішого металу. На ранніх етапах гри мідь є корисним металом для виготовлення інструментів, але наступним рівнем металів є один із трьох типів $(thing)бронзи$(). Вони дещо відрізняються за міцністю, ефективністю та шкодою від атак. Сплав складається з компонентних $(thing)металів$(), кожен із яких має становити певний відсоток від загального складу."
         },
         {
             "type": "patchouli:text",
-            "text": "One method through which alloys can be made during the early game is through the usage of a $(thing)Small Vessel$(). The process is very similar to $(l:craftsmanship/metallurgy#casting)Casting$(). However, instead of using just a single metal, place enough ore pieces inside the vessel in the correct ratio to form a known alloy mix.$(br2)A vessel's tooltip will also tell you what its contents will alloy into, so you can use it to check your alloying ratios - no external calculator needed!"
+            "text": "Один зі способів створення сплавів на ранніх етапах гри — використання $(thing)глечика$(). Процес дуже схожий на $(l:craftsmanship/metallurgy#casting)лиття$(). Однак замість одного металу помісти в глечик достатню кількість шматків руди у правильному співвідношенні, щоб отримати відомий склад сплаву.$(br2)У підказці глечика також буде зазначено, у який сплав перетвориться її вміст, тож ти можеш використовувати її для перевірки співвідношення металів — жоден зовнішній калькулятор не потрібен!"
         },
         {
             "type": "patchouli:text",
-            "text": "You can find alloy ratios by looking at their liquid alloying recipe in $(emi). Alloys will accept a range of values, so percentages do not have to be perfect. For example, an idealized ratio for Bronze is 75% Copper, and 25% Tin, which means that for 144mB of Bronze you will need 108mB of Copper and 36mB of Tin.$(br2)If you can't find Tin, $(thing)Black Bronze$() and $(thing)Bismuth Bronze$() are also options! Tin is not required until steam machines."
+            "text": "Співвідношення для сплавів можна знайти, переглянувши рецепт рідкого сплаву в $(emi). Сплави допускають певний діапазон значень, тож відсотки не обов’язково мають бути точними. Наприклад, ідеальне співвідношення для бронзи — 75% міді та 25% олова, тобто для отримання 144mB бронзи тобі знадобиться 108mB міді та 36mB олова.$(br2)Якщо ти не можеш знайти олово, можна також використовувати $(thing)чорну бронзу$() або $(thing)бісмутову бронзу$()! Олово не знадобиться аж до появи парових машин."
         },
         {
             "type": "patchouli:image",
@@ -129,37 +129,37 @@
             "images": [
                 "tfg:textures/gui/field_guide/prospecting/alloy.png"
             ],
-            "text": "Example alloy recipe for bronze showing 70-80% Copper + 20-30% Tin = Bronze.",
-            "title": "Alloy Recipe",
+            "text": "Приклад рецепта сплаву для бронзи: 70–80% міді + 20–30% олова = бронза.",
+            "title": "Рецепт сплаву",
             "border": false
         },
         {
             "type": "patchouli:spotlight",
             "item": "tag:forge:ingots/brass,tag:forge:ingots/rose_gold,tag:forge:ingots/sterling_silver,tag:forge:ingots/tin_alloy,tag:forge:ingots/red_alloy,tag:forge:ingots/potin,tag:forge:ingots/cobalt_brass,tag:forge:ingots/invar",
             "anchor": "utility_alloys",
-            "text": "Many alloys are not suitable for creating tools but are still necessary for progression. Some of the most important utility alloys for early progression are $(thing)Brass$(), $(thing)Rose Gold$(), $(thing)Sterling Silver$(), $(thing)Tin Alloy$(), and $(thing)Red Alloy$().",
+            "text": "Багато сплавів не підходять для виготовлення інструментів, але все одно необхідні для подальшого розвитку. Серед найважливіших практичних сплавів на ранніх етапах — $(thing)латунь$(), $(thing)рожеве золото$(), $(thing)стерлінгове срібло$(), $(thing)олов’яний сплав$() та $(thing)червоний сплав$().",
             "title": "Технічні сплави"
         },
         {
             "type": "patchouli:text",
             "anchor": "propick",
             "title": "Геологічний молоток",
-            "text": "You remembered where you picked up those indicator ores, right? Finding additional ores may require extensive exploration and mining. You should become very familiar with $(thing)Geology$(). If you need a specific resource, you must find the rock type it spawns in either under your feet or across the world."
+            "text": "Ти ж запам’ятав, де знайшов ті рудні ознаки, правда? Пошук додаткових руд може вимагати тривалих досліджень і розкопок. Тобі варто добре вивчити $(thing)геологію$(). Якщо тобі потрібен певний ресурс, ти маєш знайти тип породи, у якій він залягає, під своїми ногами або в іншій частині світу."
         },
         {
             "type": "patchouli:spotlight",
             "item": "tag:tfc:propicks",
-            "title": "Pro-Pick",
+            "title": "Геологічний молоток",
             "link_recipes": false,
-            "text": "If you're looking for ore veins, and you can't find the vein by guessing, it's time to pull out the $(item)prospector's pick$(). If you are familiar with base prospector's picks in $(thing)TFC$() you may be suprised to learn that they function very differently in $(tfg)."
+            "text": "Якщо ти шукаєш жили руди й не можеш знайти жилу, час дістати $(item)геологічний молоток$(). Якщо ти знайомий із базовими геологічними молотками в $(thing)TFC$(), тебе може здивувати те, наскільки інакше вони працюють у $(tfg)."
         },
         {
             "type": "patchouli:text",
-            "text": "Right-clicking a prospector's pick in $(tfg_short) will cast a search ray in your views' direction. The rays width and depth is dependent on the tier of the pick as noted in its tooltip. Depending on the tier, the prospector's pick can also give you a count of the ore quantities and even display an $(thing)X-Ray$() indicator of the ore vein."
+            "text": "Клацання правою кнопкою миші геологічним молотком $(tfg_short) створює пошуковий промінь у напрямку твого погляду. Ширина та глибина променя залежать від рівня молотка, зазначеного в її підказці. Залежно від рівня, геологічний молоток також може показувати кількість руди та навіть відображати індикатор $(thing)X-Ray$() просвічування жили руди."
         },
         {
             "type": "patchouli:text",
-            "text": "The prospector's pick can display the following information on use:$(li)In chat, the $(thing)total quantity$() of the ore vein, the $(thing)contents$() of the ore vein, and the $(thing)quantity per ore-type$() of the ore vein.$(li)The $(thing)colored steel$() prospector's picks can also display either a large X-Ray particle in the $(thing)center$() of an ore vein, or $(thing)paricles per ore block$()."
+            "text": "Геологічний молоток під час використання може відображати таку інформацію:$(li)У чаті — $(thing)загальну кількість$() руди в жилі, $(thing)склад$() жили та $(thing)кількість кожного типу руди$() в жилі.$(li)Геологічний молоток з $(thing)кольорової сталі$() також можуть відображати або велику частинку X-Ray $(thing)у центрі$() жили руди, або $(thing)частинки для кожного блока руди$()."
         },
         {
             "type": "patchouli:image",
@@ -167,7 +167,7 @@
             "texture_width": 1024,
             "height": 1024,
             "texture_height": 1024,
-            "text": "Colored steel pro-picks: The large $(bold)$(#D68400)❗$() is from per-vein style x-ray, and the smaller ones are from per-block style x-ray.",
+            "text": "Геологічний молоток з кольорової сталі: велике $(bold)$(#D68400)❗$() — це індикатор x-ray жили, а менші — індикатори x-ray окремих блоків руди.",
             "title": "Геологічний огляд",
             "images": [
                 "tfg:textures/gui/field_guide/prospecting/tfg_prospectors_pick_xray.png"
@@ -177,15 +177,15 @@
         {
             "type": "tfg:anvil_recipe",
             "recipe": "tfc:anvil/copper_propick_head",
-            "text": "A prospector's pick head can be $(l:craftsmanship/anvils#working)smithed$() on an $(l:craftsmanship/anvils)Anvil$() or $(l:craftsmanship/metallurgy#casting)Cast$(), then affixed upon a stick like other tools.$(br2)Note: The majority of the stats and charecteristics of the prospector's picks can be adjusted in your server config file."
+            "text": "Головку геологічного молотка можна $(l:craftsmanship/anvils#working)викувати$() на $(l:craftsmanship/anvils)ковадлі$() або $(l:craftsmanship/metallurgy#casting)відлити$(), а потім прикріпити до палиці, як і в інших інструментах.$(br2)Примітка: більшість характеристик і параметрів геологічниї молотків можна налаштувати у конфігураційному файлі сервера."
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "prospector",
             "item": "gtceu:prospector.lv,gtceu:prospector.hv,gtceu:prospector.luv",
-            "title": "Digital Ore Prospectors",
+            "title": "Цифровий сканер руд",
             "link_recipes": false,
-            "text": "Technology is now! And with it comes new ways to find your ore veins!$(br)$(item)Ore Prospectors$() are $(thing)GregTech's$() solution to finding ore veins and fluid deposits in your world. The size and capabilities of the ore prospectors are determined by the $(#ff1100)voltage tier$()."
+            "text": "Технології вже тут! А разом із ними з’являються нові способи пошуку жил руди!$(br)$(item)Сканер руд$() — це рішення $(thing)GregTech$() для пошуку жил руди та родовищ рідин у твоєму світі. Розмір і можливості розвідників руди визначаються $(#ff1100)рівнем напруги$()."
         },
         {
             "type": "patchouli:image",
@@ -197,7 +197,7 @@
                 "tfg:textures/gui/field_guide/prospecting/tfg_luv_ore_prospector.png"
             ],
             "border": true,
-            "text": "An example of what you may see using the $(#e373ff)LuV ore prospector$(). Keep your battery charged!"
+            "text": "Приклад того, що ти можеш побачити, використовуючи $(#e373ff)сканер руд рівня LuV$(). Стеж за зарядом своєї батареї!"
         },
         {
             "type": "patchouli:relations",

@@ -56,7 +56,7 @@
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Żywotnik, cedr ",
+            "title": "Żywotnik, cedr",
             "anchor": "cedar",
             "item": "tag:tfc:white_cedar_logs",
             "text": "$(bold)White Cedar$()$(br)$(thing)Rainfall$(): 100 — 220mm$(br)$(thing)Temperature$(): -13.9 — 4.3°C$(br)$(thing)Growth Days$(): 6$(br2)$(bold)Atlas Cedar$()$(br)$(thing)Rainfall$(): 165 — 500mm$(br)$(thing)Temperature$(): 8.0 — 13.4°C$(br)$(thing)Growth Days$(): 9"
@@ -77,7 +77,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "$(bold)Redcedar$()$(br)$(thing)Rainfall$(): 410 — 500mm$(br)$(thing)Temperature$(): -4.8 — 9.8°C$(br)$(thing)Growth Days$(): 9"
+            "text": "$(bold)Żywotnik olbrzymi$()$(br)$(thing)Opady$(): 410 — 500mm$(br)$(thing)Temperatura$(): -4,8 — 9,8°C$(br)$(thing)Czas wzrostu$(): 9 dni"
         },
         {
             "type": "patchouli:spotlight",
@@ -158,7 +158,7 @@
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Dąb",
+            "title": "Dąb, dąb czarny",
             "anchor": "oak",
             "item": "tag:tfc:oak_logs",
             "text": "$(bold)Pin Oak$()$(br)$(thing)Rainfall$(): 210 — 320mm$(br)$(thing)Temperature$(): -8.4 — 6.1°C$(br)$(thing)Growth Days$(): 9$(br2)$(bold)Live Oak$()$(br)$(thing)Rainfall$(): 390 — 500mm$(br)$(thing)Temperature$(): 0.7 — 13.4°C$(br)$(thing)Growth Days$(): 9$(br2)$(bold)Black Oak$()$(br)$(thing)Rainfall$(): 150 — 330mm$(br)$(thing)Temperature$(): 11.6 — 20.7°C$(br)$(thing)Growth Days$(): 13"
@@ -225,7 +225,7 @@
             "title": "Tualang",
             "anchor": "tualang",
             "item": "tag:afc:tualang_logs",
-            "text": "$(bold)Tualang$()$(br)$(thing)Rainfall$(): 360 — 500mm$(br)$(thing)Temperature$(): 20.7 — 40.0°C$(br)$(thing)Growth Days$(): 9"
+            "text": "$(bold)Tualang$()$(br)$(thing)Opady$(): 360 — 500mm$(br)$(thing)Temperatura$(): 20.7 — 40.0°C$(br)$(thing)Czas wzrostu$(): 9 dni"
         },
         {
             "type": "patchouli:spotlight",

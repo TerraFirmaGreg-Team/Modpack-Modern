@@ -14,13 +14,13 @@
             "type": "patchouli:text",
             "anchor": "cooling",
             "title": "Chłodzenie",
-            "text": "While active this effect continually $(thing)Cools$() the player down to a minimum of $(n)5°C$()"
+            "text": "Gdy ten efekt jest aktywny, stale $(thing)chłodzi$() gracza, minimalnie do temperatury $(n)5°C$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "warming",
             "title": "Ocieplenie",
-            "text": "While active this effect continually $(thing)Warms$() the player up to a maximum of $(n)25°C$()"
+            "text": "Gdy ten efekt jest aktywny, stale $(thing)ogrzewa$() gracza, maksymalnie do temperatury $(n)25°C$()"
         },
         {
             "type": "patchouli:text",
@@ -55,7 +55,7 @@
         {
             "type": "patchouli:text",
             "anchor": "blazing",
-            "title": "Blazing",
+            "title": "Pieczenie",
             "text": "While active this effect continually $(thing)Warms$() the player up to a dangerously-high maximum of $(n)60°C$(). Protective equipment is recommended to survive this condition."
         },
         {
@@ -68,7 +68,7 @@
             "type": "patchouli:text",
             "anchor": "final_moments",
             "title": "U wrót śmierci",
-            "text": "This effect starts a timer that counts down your last few minutes. When the clock ends, you die."
+            "text": "Ten efekt rozpoczyna odliczanie ostatnich kilku minut twojego życia. Gdy czas dobiegnie końca, umrzesz."
         },
         {
             "type": "patchouli:relations",

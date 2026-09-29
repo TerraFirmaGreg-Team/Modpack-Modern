@@ -340,7 +340,9 @@
 			"entries": [
 				"tfg:the_moon/the_moon",
 				"tfg:logistics/redstone_devices",
-				"tfg:logistics/storage"
+				"tfg:logistics/storage",
+				"tfg:logistics/create",
+				"tfg:logistics/trains"
 			]
 		}
 	],

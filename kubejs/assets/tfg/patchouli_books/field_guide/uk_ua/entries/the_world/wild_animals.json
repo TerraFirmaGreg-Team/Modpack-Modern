@@ -1,5 +1,5 @@
 {
-	"name": "Earth Fauna",
+	"name": "Фауна Землі",
 	"category": "tfg:the_world",
 	"icon": "tfc:medium_raw_hide",
 	"pages": [
@@ -7,44 +7,44 @@
             "type": "patchouli:text",
             "title": "Індекс",
             "anchor": "index",
-            "text": "$(li)$(bold)$(l:the_world/wild_animals#intro)Introduction$()$(li)$(bold)$(l:the_world/wild_animals#livestock)Livestock$()$(li2)$(l:the_world/wild_animals#pig)Pig$()$(li2)$(l:the_world/wild_animals#cow)Cow$()$(li2)$(l:the_world/wild_animals#goat)Goat$()$(li2)$(l:the_world/wild_animals#yak)Yak$()$(li2)$(l:the_world/wild_animals#alpaca)Alpaca$()$(li2)$(l:the_world/wild_animals#sheep)Sheep$()$(li2)$(l:the_world/wild_animals#musk_ox)Musk Ox$()$(li2)$(l:the_world/wild_animals#chicken)Chicken$()$(li2)$(l:the_world/wild_animals#duck)Duck$()$(li2)$(l:the_world/wild_animals#quail)Quail$()"
+            "text": "$(li)$(bold)$(l:the_world/wild_animals#intro)Вступ$()$(li)$(bold)$(l:the_world/wild_animals#livestock)Свійська худоба$()$(li2)$(l:the_world/wild_animals#pig)Свиня$()$(li2)$(l:the_world/wild_animals#cow)Корова$()$(li2)$(l:the_world/wild_animals#goat)Коза$()$(li2)$(l:the_world/wild_animals#yak)Як$()$(li2)$(l:the_world/wild_animals#alpaca)Альпака$()$(li2)$(l:the_world/wild_animals#sheep)Вівця$()$(li2)$(l:the_world/wild_animals#musk_ox)Вівцебик$()$(li2)$(l:the_world/wild_animals#chicken)Курка$()$(li2)$(l:the_world/wild_animals#duck)Качка$()$(li2)$(l:the_world/wild_animals#quail)Перепілка$()"
         },
         {
             "type": "patchouli:text",
-            "text": "$(li2)$(l:the_world/wild_animals#donkey)Donkey$()$(li2)$(l:the_world/wild_animals#mule)Mule$()$(li2)$(l:the_world/wild_animals#horse)Horse$()$(li2)$(l:the_world/wild_animals#dromedary_camel)Dromedary Camel$()$(li2)$(l:the_world/wild_animals#bactrian_camel)Bactrian Camel$()$(li)$(bold)$(l:the_world/wild_animals#predators)Predators$()$(li2)$(l:the_world/wild_animals#polar_bear)Polar Bear$()$(li2)$(l:the_world/wild_animals#black_bear)Black Bear$()$(li2)$(l:the_world/wild_animals#grizzly_bear)Grizzly Bear$()$(li2)$(l:the_world/wild_animals#cougar)Cougar$()$(li2)$(l:the_world/wild_animals#panther)Panther$()$(li2)$(l:the_world/wild_animals#lion)Lion$()$(li2)$(l:the_world/wild_animals#tiger)Tiger$()$(li2)$(l:the_world/wild_animals#sabertooth)Sabertooth$()$(li2)$(l:the_world/wild_animals#wolf)Wolf$()"
+            "text": "$(li2)$(l:the_world/wild_animals#donkey)Віслюк$()$(li2)$(l:the_world/wild_animals#mule)Мул$()$(li2)$(l:the_world/wild_animals#horse)Кінь$()$(li2)$(l:the_world/wild_animals#dromedary_camel)Одногорбий верблюд$()$(li2)$(l:the_world/wild_animals#bactrian_camel)Двогорбий верблюд$()$(li)$(bold)$(l:the_world/wild_animals#predators)Хижаки$()$(li2)$(l:the_world/wild_animals#polar_bear)Білий ведмідь$()$(li2)$(l:the_world/wild_animals#black_bear)Чорний ведмідь$()$(li2)$(l:the_world/wild_animals#grizzly_bear)Грізлі$()$(li2)$(l:the_world/wild_animals#cougar)Пума$()$(li2)$(l:the_world/wild_animals#panther)Пантера$()$(li2)$(l:the_world/wild_animals#lion)Лев$()$(li2)$(l:the_world/wild_animals#tiger)Тигр$()$(li2)$(l:the_world/wild_animals#sabertooth)Саблезуб$()$(li2)$(l:the_world/wild_animals#wolf)Вовк$()"
         },
         {
             "type": "patchouli:text",
-            "text": "$(li2)$(l:the_world/wild_animals#direwolf)Direwolf$()$(li2)$(l:the_world/wild_animals#hyena)Hyena$()$(li2)$(l:the_world/wild_animals#crocodile)Crocodile$()$(li2)$(l:the_world/wild_animals#ocelot)Ocelot$()$(bold)$(li)$(l:the_world/wild_animals#ramming_prey)Ramming Prey$()$(li2)$(l:the_world/wild_animals#boar)Boar$()$(li2)$(l:the_world/wild_animals#moose)Moose$()$(li2)$(l:the_world/wild_animals#wildebeest)Wildebeest$()$(li2)$(l:the_world/wild_animals#bison)Bison$()$(bold)$(li)$(l:the_world/wild_animals#prey)Prey$()$(li2)$(l:the_world/wild_animals#rabbit)Rabbit$()$(li2)$(l:the_world/wild_animals#fox)Fox$()$(li2)$(l:the_world/wild_animals#deer)Deer$()$(li2)$(l:the_world/wild_animals#caribou)Caribou$()$(li2)$(l:the_world/wild_animals#gazelle)Gazelle$()"
+            "text": "$(li2)$(l:the_world/wild_animals#direwolf)Жахливий вовк$()$(li2)$(l:the_world/wild_animals#hyena)Гієна$()$(li2)$(l:the_world/wild_animals#crocodile)Крокодил$()$(li2)$(l:the_world/wild_animals#ocelot)Оцелот$()$(bold)$(li)$(l:the_world/wild_animals#ramming_prey)Таранна здобич$()$(li2)$(l:the_world/wild_animals#boar)Вепр$()$(li2)$(l:the_world/wild_animals#moose)Лось$()$(li2)$(l:the_world/wild_animals#wildebeest)Антилопа гну$()$(li2)$(l:the_world/wild_animals#bison)Бізон$()$(bold)$(li)$(l:the_world/wild_animals#prey)Здобич$()$(li2)$(l:the_world/wild_animals#rabbit)Кролик$()$(li2)$(l:the_world/wild_animals#fox)Лисиця$()$(li2)$(l:the_world/wild_animals#deer)Олень$()$(li2)$(l:the_world/wild_animals#caribou)Карібу$()$(li2)$(l:the_world/wild_animals#gazelle)Газель$()"
         },
         {
             "type": "patchouli:text",
-            "text": "$(li2)$(l:the_world/wild_animals#bongo)Bongo$()$(li2)$(l:the_world/wild_animals#grouse)Grouse$()$(li2)$(l:the_world/wild_animals#pheasant)Pheasant$()$(li2)$(l:the_world/wild_animals#turkey)Turkey$()$(li2)$(l:the_world/wild_animals#peafowl)Peafowl$()$(li2)$(l:the_world/wild_animals#lemming)Lemming$()$(li2)$(l:the_world/wild_animals#jerboa)Jerboa$()$(li2)$(l:the_world/wild_animals#mongoose)Mongoose$()$(bold)$(li)$(l:the_world/wild_animals#aquatic)Aquatic Animals$()$(li2)$(l:the_world/wild_animals#penguin)Penguin$()$(li2)$(l:the_world/wild_animals#turtle)Sea Turtle$()"
+            "text": "$(li2)$(l:the_world/wild_animals#bongo)Бонго$()$(li2)$(l:the_world/wild_animals#grouse)Рябчик$()$(li2)$(l:the_world/wild_animals#pheasant)Фазан$()$(li2)$(l:the_world/wild_animals#turkey)Індик$()$(li2)$(l:the_world/wild_animals#peafowl)Павич$()$(li2)$(l:the_world/wild_animals#lemming)Лемінг$()$(li2)$(l:the_world/wild_animals#jerboa)Тушканчик$()$(li2)$(l:the_world/wild_animals#mongoose)Мангуст$()$(bold)$(li)$(l:the_world/wild_animals#aquatic)Водні тварини$()$(li2)$(l:the_world/wild_animals#penguin)Пінгвін$()$(li2)$(l:the_world/wild_animals#turtle)Морська черепаха$()"
         },
         {
             "type": "patchouli:text",
-            "text": "$(bold)$(li)$(l:the_world/wild_animals#fish)Fish$()$(li2)$(l:the_world/wild_animals#cod)Cod$()$(li2)$(l:the_world/wild_animals#pufferfish)Pufferfish$()$(li2)$(l:the_world/wild_animals#jellyfish)Jellyfish$()$(li2)$(l:the_world/wild_animals#tropical_fish)Tropical Fish$()$(li2)$(l:the_world/wild_animals#salmon)Salmon$()$(li2)$(l:the_world/wild_animals#bluegill)Bluegill$()$(bold)$(li)$(l:the_world/wild_animals#shellfish)Shellfish$()$(li2)$(l:the_world/wild_animals#isopod)Isopod$()$(li2)$(l:the_world/wild_animals#lobster)Lobster$()$(li2)$(l:the_world/wild_animals#crayfish)Crayfish$()$(li2)$(l:the_world/wild_animals#horseshoe_crab)Horseshoe Crab$()"
+            "text": "$(bold)$(li)$(l:the_world/wild_animals#fish)Риба$()$(li2)$(l:the_world/wild_animals#cod)Тріска$()$(li2)$(l:the_world/wild_animals#pufferfish)Риба фугу$()$(li2)$(l:the_world/wild_animals#jellyfish)Медуза$()$(li2)$(l:the_world/wild_animals#tropical_fish)Тропічна риба$()$(li2)$(l:the_world/wild_animals#salmon)Лосось$()$(li2)$(l:the_world/wild_animals#bluegill)Синьозябровий окунь$()$(bold)$(li)$(l:the_world/wild_animals#shellfish)Молюски$()$(li2)$(l:the_world/wild_animals#isopod)Рівноніг$()$(li2)$(l:the_world/wild_animals#lobster)Лобстер$()$(li2)$(l:the_world/wild_animals#crayfish)Річковий рак$()$(li2)$(l:the_world/wild_animals#horseshoe_crab)Мечехвіст$()"
         },
         {
             "type": "patchouli:text",
-            "text": "$(bold)$(li)$(l:the_world/wild_animals#large_aquatic_animals)Large Aquatic Animals$()$(li2)$(l:the_world/wild_animals#orca)Orca$()$(li2)$(l:the_world/wild_animals#dolphin)Dolphin$()$(li2)$(l:the_world/wild_animals#manatee)Manatee$()$(li2)$(l:the_world/wild_animals#leopard_seal)Leopard Seal$()$(li2)$(l:the_world/wild_animals#squid)Squid$()"
+            "text": "$(bold)$(li)$(l:the_world/wild_animals#large_aquatic_animals)Великі водні тварини$()$(li2)$(l:the_world/wild_animals#orca)Косатка$()$(li2)$(l:the_world/wild_animals#dolphin)Дельфін$()$(li2)$(l:the_world/wild_animals#manatee)Ламантин$()$(li2)$(l:the_world/wild_animals#leopard_seal)Морський леопард$()$(li2)$(l:the_world/wild_animals#squid)Кальмар$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "intro",
-            "title": "Introduction to Animals",
-            "text": "Animals can be grouped into a few different categories: $(l:the_world/wild_animals#livestock)Livestock$(), $(l:the_world/wild_animals#predators)Predators$(), $(l:the_world/wild_animals#prey)Prey$(), and $(l:the_world/wild_animals#aquatic)Aquatic$() animals. The vast majority of animals will provide meat when killed. However, some meat may not be safe to eat; especially raw."
+            "title": "Вступ до тварин",
+            "text": "Тварин можна поділити на кілька категорій: $(l:the_world/wild_animals#livestock)свійська худоба$(), $(l:the_world/wild_animals#predators)хижаки$(), $(l:the_world/wild_animals#prey)здобич$() та $(l:the_world/wild_animals#aquatic)водні$() тварини. Переважна більшість тварин після вбивства дає м’ясо. Однак деяке м’ясо може бути небезпечним для вживання, особливо сире."
         },
         {
             "type": "patchouli:text",
-            "title": "Livestock",
+            "title": "Свійська худоба",
             "anchor": "livestock",
-            "text": "$(thing)Livestock$() are animals that can be tamed and bred by the player. Livestock can be either $(thing)male$() or $(thing)female$() so it is important when collecting wild livestock to try and get one of each sex for breeding."
+            "text": "$(thing)Свійська худоба$() — це тварини, яких гравець може приручати та розводити. Свійська худоба може бути $(thing)самцем$() або $(thing)самкою$(), тому під час збирання дикої худоби важливо намагатися отримати по одній тварині кожної статі для розведення."
         },
         {
             "type": "patchouli:text",
             "anchor": "pig",
-            "text": "$(bold)$(l:the_world/climate#temperature)Spawn Temp$():  -10 - 35°C$(br)$(bold)$(l:the_world/climate#rainfall)Spawn Rainfall$():  > 200mm$(br)$(bold)Spawn Area$():  Mild Forests$(br)$(bold)Category$():  $(l:agriculture/animal_husbandry#mammals)Mammals$()$(br)$(bold)Diet$():  Anything, even if it's rotten.$(br)$(bold)Max Children$():  10$(br)$(bold)Gestation Time$():  19 days$(br)$(bold)Growth Time$():  80 Days$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Max Uses$():  60",
+            "text": "$(bold)$(l:the_world/climate#temperature)Температура появи$(): −10–35°C$(br)$(bold)$(l:the_world/climate#rainfall)Опади появи$(): > 200мм$(br)$(bold)Місце появи$(): Помірні ліси$(br)$(bold)Категорія$(): $(l:agriculture/animal_husbandry#mammals)Ссавці$()$(br)$(bold)Раціон$(): Будь-що, навіть гниле.$(br)$(bold)Максимальна кількість дитинчат$(): 10$(br)$(bold)Час вагітності$(): 19 днів$(br)$(bold)Час вирощування$(): 80 днів$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Максимальна кількість використань$(): 60",
             "title": "Свині"
         },
         {
@@ -57,7 +57,7 @@
         {
             "type": "patchouli:text",
             "anchor": "cow",
-            "text": "$(bold)$(l:the_world/climate#temperature)Spawn Temp$():  -10 - 35°C$(br)$(bold)$(l:the_world/climate#rainfall)Spawn Rainfall$():  > 250mm$(br)$(bold)Spawn Area$():  Most Climates$(br)$(bold)Category$():  $(l:agriculture/animal_husbandry#dairy_animals)Dairy$()$(br)$(bold)Diet$():  $(l:cooking/food_and_water#grain)Grain$(), which may be rotten.$(br)$(bold)Max Children$():  2$(br)$(bold)Gestation Time$():  58 days$(br)$(bold)Growth Time$():  192 Days$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Max Uses$():  128$(br)$(bold)Product$():  $(l:cooking/cheese)Milk$()$(br)$(bold)Produce Cycle$():  1 Day",
+            "text": "$(bold)$(l:the_world/climate#temperature)Температура появи$(): -10–35°C$(br)$(bold)$(l:the_world/climate#rainfall)Опади появи$(): > 250мм$(br)$(bold)Місце появи$(): Більшість кліматів$(br)$(bold)Категорія$(): $(l:agriculture/animal_husbandry#dairy_animals)Молочні$()$(br)$(bold)Раціон$(): $(l:cooking/food_and_water#grain)Зерно$(), яке може бути протухлим.$(br)$(bold)Макс. кількість дитинчат$(): 2$(br)$(bold)Час вагітності$(): 58 днів$(br)$(bold)Час вирощування$(): 192 днів$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Максимальна кількість використань$(): 128$(br)$(bold)Продукт$(): $(l:cooking/cheese)Молоко$()$(br)$(bold)Цикл виробництва$(): 1 день",
             "title": "Корови"
         },
         {
@@ -70,7 +70,7 @@
         {
             "type": "patchouli:text",
             "anchor": "goat",
-            "text": "$(bold)$(l:the_world/climate#temperature)Spawn Temp$():  -12 - 25°C$(br)$(bold)$(l:the_world/climate#rainfall)Spawn Rainfall$():  > 300mm$(br)$(bold)Spawn Area$():  Moderate Climates$(br)$(bold)Category$():  $(l:agriculture/animal_husbandry#dairy_animals)Dairy$()$(br)$(bold)Diet$():  $(l:cooking/food_and_water#grain)Grain$(), $(l:cooking/food_and_water#fruit)Fruit$(), and $(l:cooking/food_and_water#vegetables)Vegetables$(), which may be rotten.$(br)$(bold)Max Children$():  2$(br)$(bold)Gestation Time$():  32 Days$(br)$(bold)Growth Time$():  96 Days$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Max Uses$():  60$(br)$(bold)Product$():  $(l:cooking/cheese)Milk$()$(br)$(bold)Produce Cycle$():  3 Days",
+            "text": "$(bold)$(l:the_world/climate#temperature)Температура появи$(): −12–25°C$(br)$(bold)$(l:the_world/climate#rainfall)Опади появи$(): > 300мм$(br)$(bold)Місце появи$(): Помірний клімат$(br)$(bold)Категорія$(): $(l:agriculture/animal_husbandry#dairy_animals)Молочні$()$(br)$(bold)Раціон$(): $(l:cooking/food_and_water#grain)Зерно$(), $(l:cooking/food_and_water#fruit)Фрукти$() та $(l:cooking/food_and_water#vegetables)Овочі$(), які можуть бути протухлими.$(br)$(bold)Максимум дитинчат$(): 2$(br)$(bold)Час вагітності$(): 32 дні$(br)$(bold)Час вирощування$(): 96 днів$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Максимальна кількість використань$(): 60$(br)$(bold)Продукт$(): $(l:cooking/cheese)Молоко$()$(br)$(bold)Цикл виробництва$(): 3 дні",
             "title": "Кози"
         },
         {
@@ -83,7 +83,7 @@
         {
             "type": "patchouli:text",
             "anchor": "yak",
-            "text": "$(bold)$(l:the_world/climate#temperature)Spawn Temp$():  > -11°C$(br)$(bold)$(l:the_world/climate#rainfall)Spawn Rainfall$():  > 100mm$(br)$(bold)Spawn Area$():  Cold Climates$(br)$(bold)Category$():  $(l:agriculture/animal_husbandry#dairy_animals)Dairy$()$(br)$(bold)Diet$():  $(l:cooking/food_and_water#grain)Grain$()$(br)$(bold)Max Children$():  1$(br)$(bold)Gestation Time$():  64 Days$(br)$(bold)Growth Time$():  180 Days$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Max Uses$():  230$(br)$(bold)Product$():  $(l:cooking/cheese)Milk$()$(br)$(bold)Produce Cycle$():  23.5 Hours",
+            "text": "$(bold)$(l:the_world/climate#temperature)Температура появи$(): > −11°C$(br)$(bold)$(l:the_world/climate#rainfall)Опади появи$(): > 100мм$(br)$(bold)Місце появи$(): Холодний клімат$(br)$(bold)Категорія$(): $(l:agriculture/animal_husbandry#dairy_animals)Молочні$()$(br)$(bold)Раціон$(): $(l:cooking/food_and_water#grain)Зерно$()$(br)$(bold)Максимум дитинчат$(): 1$(br)$(bold)Час вагітності$(): 64 днів$(br)$(bold)Час вирощування$(): 180 днів$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Максимальна кількість використань$(): 230$(br)$(bold)Продукт$(): $(l:cooking/cheese)Молоко$()$(br)$(bold)Цикл виробництва$(): 23,5 години",
             "title": "Як"
         },
         {
@@ -96,7 +96,7 @@
         {
             "type": "patchouli:text",
             "anchor": "alpaca",
-            "text": "$(bold)$(l:the_world/climate#temperature)Spawn Temp$():  -8 - 20°C$(br)$(bold)$(l:the_world/climate#rainfall)Spawn Rainfall$():  > 250mm$(br)$(bold)Spawn Area$():  Moderate Climates$(br)$(bold)Category$():  $(l:agriculture/animal_husbandry#wooly_animals)Wooly$()$(br)$(bold)Diet$():  $(l:cooking/food_and_water#grain)Grain$() and $(l:cooking/food_and_water#fruit)Fruit$()$(br)$(bold)Max Children$():  2$(br)$(bold)Gestation Time$():  36 Days$(br)$(bold)Growth Time$():  98 Days$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Max Uses$():  128$(br)$(bold)Product$():  $(l:agriculture/weaving)Wool$()$(br)$(bold)Produce Cycle$():  5 Days",
+            "text": "$(bold)$(l:the_world/climate#temperature)Температура появи$(): -8–20°C$(br)$(bold)$(l:the_world/climate#rainfall)Опади появи$(): > 250мм$(br)$(bold)Місце появи$(): Помірний клімат$(br)$(bold)Категорія$(): $(l:agriculture/animal_husbandry#wooly_animals)Вовняні$()$(br)$(bold)Раціон$(): $(l:cooking/food_and_water#grain)Зерно$() та $(l:cooking/food_and_water#fruit)Фрукти$()$(br)$(bold)Максимум дитинчат$(): 2$(br)$(bold)Час вагітності$(): 36 днів$(br)$(bold)Час вирощування$(): 98 днів$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Максимальна кількість використань(): 128$(br)$(bold)Продукт$(): $(l:agriculture/weaving)Вовна$()$(br)$(bold)Цикл виробництва$(): 5 днів",
             "title": "Альпака"
         },
         {
@@ -109,7 +109,7 @@
         {
             "type": "patchouli:text",
             "anchor": "sheep",
-            "text": "$(bold)$(l:the_world/climate#temperature)Spawn Temp$():  0 - 35°C$(br)$(bold)$(l:the_world/climate#rainfall)Spawn Rainfall$():  70 - 300mm$(br)$(bold)Spawn Area$():  Drier Climates$(br)$(bold)Category$():  $(l:agriculture/animal_husbandry#wooly_animals)Wooly$()$(br)$(bold)Diet$():  $(l:cooking/food_and_water#grain)Grain$()$(br)$(bold)Max Children$():  2$(br)$(bold)Gestation Time$():  32 Days$(br)$(bold)Growth Time$():  56 Days$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Max Uses$():  60$(br)$(bold)Product$():  $(l:agriculture/weaving)Wool$()$(br)$(bold)Produce Cycle$():  7 Days",
+            "text": "$(bold)$(l:the_world/climate#temperature)Температура появи$(): 0–35°C$(br)$(bold)$(l:the_world/climate#rainfall)Опади появи$(): 70–300мм$(br)$(bold)Місце появи$(): Сухий клімат$(br)$(bold)Категорія$(): $(l:agriculture/animal_husbandry#wooly_animals)Вовняні$()$(br)$(bold)Раціон$(): $(l:cooking/food_and_water#grain)Зерно$()$(br)$(bold)Максимум дитинчат$(): 2$(br)$(bold)Час вагітності$(): 32 дні$(br)$(bold)Час вирощування$(): 56 днів$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Максимальна кількість використань$(): 60$(br)$(bold)Продукт$(): $(l:agriculture/weaving)Вовна$()$(br)$(bold)Цикл виробництва$(): 7 днів",
             "title": "Вівця"
         },
         {
@@ -122,7 +122,7 @@
         {
             "type": "patchouli:text",
             "anchor": "musk_ox",
-            "text": "$(bold)$(l:the_world/climate#temperature)Spawn Temp$():  -25 - 0°C$(br)$(bold)$(l:the_world/climate#rainfall)Spawn Rainfall$():  > 100mm$(br)$(bold)Spawn Area$():  Cold Climates$(br)$(bold)Category$():  $(l:agriculture/animal_husbandry#wooly_animals)Wooly$()$(br)$(bold)Diet$():  $(l:cooking/food_and_water#grain)Grain$()$(br)$(bold)Max Children$():  1$(br)$(bold)Gestation Time$():  64 Days$(br)$(bold)Growth Time$():  168 Days$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Max Uses$():  160$(br)$(bold)Product$():  $(l:agriculture/weaving)Wool$()$(br)$(bold)Produce Cycle$():  4 Days",
+            "text": "$(bold)$(l:the_world/climate#temperature)Температура появи$(): -25–0°C$(br)$(bold)$(l:the_world/climate#rainfall)Опади появи$(): > 100мм$(br)$(bold)Місце появи$(): Холодний клімат$(br)$(bold)Категорія$(): $(l:agriculture/animal_husbandry#wooly_animals)Вовняні$()$(br)$(bold)Раціон$(): $(l:cooking/food_and_water#grain)Зерно$()$(br)$(bold)Максимум дитинчат$(): 1$(br)$(bold)Час вагітності$(): 64 дні$(br)$(bold)Час вирощування$(): 168 днів$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Максимальна кількість використань$(): 160$(br)$(bold)Продукт$(): $(l:agriculture/weaving)Вовна$()$(br)$(bold)Цикл виробництва$(): 4 дні",
             "title": "Мускусний бик"
         },
         {
@@ -135,7 +135,7 @@
         {
             "type": "patchouli:text",
             "anchor": "chicken",
-            "text": "$(bold)$(l:the_world/climate#temperature)Spawn Temp$():  > 14°C$(br)$(bold)$(l:the_world/climate#rainfall)Spawn Rainfall$():  > 225mm$(br)$(bold)Spawn Area$():  Warm Forests$(br)$(bold)Category$():  $(l:agriculture/animal_husbandry#oviparous_animals)Oviparous Animals$()$(br)$(bold)Diet$():  $(l:cooking/food_and_water#grain)Grain$(), $(l:cooking/food_and_water#fruit)Fruits$(), $(l:cooking/food_and_water#vegetables)Vegetables$(), and $(l:agriculture/growing_crops)Seeds$() which may be rotten.$(br)$(bold)Egg Cycle$():  30 Hours$(br)$(bold)Growth Time$():  24 Days$(br)$(bold)Hatch Time$():  8 Days$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Max Uses$():  100$(br)$(bold)Product$():  Eggs and feathers.$()",
+            "text": "$(bold)$(l:the_world/climate#temperature)Температура появи$(): > 14°C$(br)$(bold)$(l:the_world/climate#rainfall)Опади появи$(): > 225мм$(br)$(bold)Місце появи$(): Теплі ліси$(br)$(bold)Категорія$(): $(l:agriculture/animal_husbandry#oviparous_animals)Яйцекладні$()$(br)$(bold)Раціон$(): $(l:cooking/food_and_water#grain)Зерно$(), $(l:cooking/food_and_water#fruit)Фрукти$(), $(l:cooking/food_and_water#vegetables)Овочі$() та $(l:agriculture/growing_crops)Насіння$(), яке може бути гнилим.$(br)$(bold)Цикл відкладання яєць$(): 30 годин$(br)$(bold)Час вирощування$(): 24 дні$(br)$(bold)Час вилуплення$(): 8 днів$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Максимальна кількість використань$(): 100$(br)$(bold)Продукт$(): Яйця та пір'я.$()",
             "title": "Кури"
         },
         {
@@ -148,7 +148,7 @@
         {
             "type": "patchouli:text",
             "anchor": "duck",
-            "text": "$(bold)$(l:the_world/climate#temperature)Spawn Temp$():  -25 - 30°C$(br)$(bold)$(l:the_world/climate#rainfall)Spawn Rainfall$():  > 100mm$(br)$(bold)Spawn Area$():  Plains$(br)$(bold)Category$():  $(l:agriculture/animal_husbandry#oviparous_animals)Oviparous Animals$()$(br)$(bold)Diet$():  $(l:cooking/food_and_water#grain)Grain$(), $(l:cooking/food_and_water#fruit)Fruits$(), $(l:cooking/food_and_water#vegetables)Vegetables$(), and $(l:agriculture/growing_crops)Seeds$().$(br)$(bold)Egg Cycle$():  32 Hours$(br)$(bold)Growth Time$():  32 Days$(br)$(bold)Hatch Time$():  8 Days$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Max Uses$():  72$(br)$(bold)Product$():  Eggs and feathers.$()",
+            "text": "$(bold)$(l:the_world/climate#temperature)Температура появи$(): -25–30°C$(br)$(bold)$(l:the_world/climate#rainfall)Опади появи$(): > 100мм$(br)$(bold)Місце появи$(): Рівнини$(br)$(bold)Категорія$(): $(l:agriculture/animal_husbandry#oviparous_animals)Яйцекладні$()$(br)$(bold)Раціон$(): $(l:cooking/food_and_water#grain)Зерно$(), $(l:cooking/food_and_water#fruit)Фрукти$(), $(l:cooking/food_and_water#vegetables)Овочі$() та $(l:agriculture/growing_crops)Насіння$().$(br)$(bold)Цикл відкладання яєць$(): 32 години$(br)$(bold)Час вирощування$$(): 32 дні$(br)$(bold)Час вилуплення$(): 8 днів$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Максимальна кількість використань$(): 72$(br)$(bold)Продукт$(): Яйця та пір'я.$()",
             "title": "Качки"
         },
         {
@@ -161,7 +161,7 @@
         {
             "type": "patchouli:text",
             "anchor": "quail",
-            "text": "$(bold)$(l:the_world/climate#temperature)Spawn Temp$():  -15 - 15°C$(br)$(bold)$(l:the_world/climate#rainfall)Spawn Rainfall$():  > 200mm$(br)$(bold)Spawn Area$():  Cold Climates$(br)$(bold)Category$():  $(l:agriculture/animal_husbandry#oviparous_animals)Oviparous Animals$()$(br)$(bold)Diet$():  $(l:cooking/food_and_water#grain)Grain$(), $(l:cooking/food_and_water#fruit)Fruits$(), $(l:cooking/food_and_water#vegetables)Vegetables$(), and $(l:agriculture/growing_crops)Seeds$() which may be rotten.$(br)$(bold)Egg Cycle$():  28 Hours$(br)$(bold)Growth Time$():  22 Days$(br)$(bold)Hatch Time$():  8 Days$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Max Uses$():  48$(br)$(bold)Product$():  Eggs and feathers.$()",
+            "text": "$(bold)$(l:the_world/climate#temperature)Температура появи$(): -15–15°C$(br)$(bold)$(l:the_world/climate#rainfall)Опади появи$(): > 200мм$(br)$(bold)Місце появи$(): Холодний клімат$(br)$(bold)Категорія$(): $(l:agriculture/animal_husbandry#oviparous_animals)Яйцекладні$()$(br)$(bold)Раціон$(): $(l:cooking/food_and_water#grain)Зерно$(), $(l:cooking/food_and_water#fruit)Фрукти$(), $(l:cooking/food_and_water#vegetables)Овочі$() та $(l:agriculture/growing_crops)Насіння$(), яке може бути гнилим.$(br)$(bold)Цикл відкладання яєць$(): 28 годин$(br)$(bold)Час вирощування$(): 22 дні$(br)$(bold)Час вилуплення$(): 8 днів$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Максимальна кількість використань$(): 48$(br)$(bold)Продукт$(): Яйця та пір'я.$()",
             "title": "Перепілка"
         },
         {
@@ -174,7 +174,7 @@
         {
             "type": "patchouli:text",
             "anchor": "donkey",
-            "text": "$(bold)$(l:the_world/climate#temperature)Spawn Temp$():  > -15°C$(br)$(bold)$(l:the_world/climate#rainfall)Spawn Rainfall$():  130 - 400mm$(br)$(bold)Spawn Area$():  Wet Plains$(br)$(bold)Category$():  $(l:agriculture/animal_husbandry#equines)Equine$()$(br)$(bold)Diet$():  $(l:cooking/food_and_water#grain)Grain$() and $(l:cooking/food_and_water#fruit)Fruits$()$(br)$(bold)Max Children$():  1$(br)$(bold)Gestation Time$():  19 Days$(br)$(bold)Growth Time$():  80 Days$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Max Uses$():  60",
+            "text": "$(bold)$(l:the_world/climate#temperature)Температура появи$(): > -15°C$(br)$(bold)$(l:the_world/climate#rainfall)Опади появи$(): 130–400мм$(br)$(bold)Місце появи$(): Вологі рівнини$(br)$(bold)Категорія$(): $(l:agriculture/animal_husbandry#equines)Коні$()$(br)$(bold)Раціон$(): $(l:cooking/food_and_water#grain)Зерно$() та $(l:cooking/food_and_water#fruit)Фрукти$()$(br)$(bold)Максимум дитинчат$(): 1$(br)$(bold)Час вагітності$(): 19 днів$(br)$(bold)Час вирощування$(): 80 днів$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Максимальна кількість використань$(): 60",
             "title": "Віслюки"
         },
         {
@@ -187,7 +187,7 @@
         {
             "type": "patchouli:text",
             "anchor": "mule",
-            "text": "$(bold)$(l:the_world/climate#temperature)Spawn Temp$():  > -15°C$(br)$(bold)$(l:the_world/climate#rainfall)Spawn Rainfall$():  130 - 400mm$(br)$(bold)Spawn Area$():  Plains, bred from horses and donkeys.$(br)$(bold)Category$():  $(l:agriculture/animal_husbandry#equines)Equine$()$(br)$(bold)Diet$():  $(l:cooking/food_and_water#grain)Grain$() and $(l:cooking/food_and_water#fruit)Fruits$()$(br)$(bold)Max Children$():  1$(br)$(bold)Gestation Time$():  19 Days$(br)$(bold)Growth Time$():  80 Days$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Max Uses$():  60",
+            "text": "$(bold)$(l:the_world/climate#temperature)Температура появи$(): > -15°C$(br)$(bold)$(l:the_world/climate#rainfall)Опади появи$(): 130–400мм$(br)$(bold)Місце появи$(): Рівнини, виводиться від коней і віслюків.$(br)$(bold)Категорія$(): $(l:agriculture/animal_husbandry#equines)Коні$()$(br)$(bold)Раціон$(): $(l:cooking/food_and_water#grain)Зерно$() та $(l:cooking/food_and_water#fruit)Фрукти$()$(br)$(bold)Максимум дитинчат$$(): 1$(br)$(bold)Час вагітності$(): 19 днів$(br)$(bold)Час вирощування$(): 80 днів$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Максимальна кількість використань$(): 60",
             "title": "Мули"
         },
         {
@@ -200,7 +200,7 @@
         {
             "type": "patchouli:text",
             "anchor": "horse",
-            "text": "$(bold)$(l:the_world/climate#temperature)Spawn Temp$():  > -15°C$(br)$(bold)$(l:the_world/climate#rainfall)Spawn Rainfall$():  130 - 400mm$(br)$(bold)Spawn Area$():  Plains$(br)$(bold)Category$():  $(l:agriculture/animal_husbandry#equines)Equine$()$(br)$(bold)Diet$():  $(l:cooking/food_and_water#grain)Grain$() and $(l:cooking/food_and_water#fruit)Fruits$()$(br)$(bold)Max Children$():  1$(br)$(bold)Gestation Time$():  19 Days$(br)$(bold)Growth Time$():  80 Days$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Max Uses$():  60",
+            "text": "$(bold)$(l:the_world/climate#temperature)Температура появи$(): > -15°C$(br)$(bold)$(l:the_world/climate#rainfall)Опади появи$(): 130–400мм$(br)$(bold)Місце появи$(): Рівнини$(br)$(bold)Категорія$(): $(l:agriculture/animal_husbandry#equines)Коні$()$(br)$(bold)Раціон$(): $(l:cooking/food_and_water#grain)Зерно$() та $(l:cooking/food_and_water#fruit)Фрукти$()$(br)$(bold)Максимум дитинчат$(): 1$(br)$(bold)Час вагітності$(): 19 днів$(br)$(bold)Час вирощування$(): 80 днів$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Максимальна кількість використань$(): 60",
             "title": "Коні"
         },
         {
@@ -213,7 +213,7 @@
         {
             "type": "patchouli:text",
             "anchor": "dromedary_camel",
-            "text": "$(bold)$(l:the_world/climate#temperature)Spawn Temp$():  > -5°C$(br)$(bold)$(l:the_world/climate#rainfall)Spawn Rainfall$():  < 100mm$(br)$(bold)Spawn Area$():  Hot and Dry Climates$(br)$(bold)Category$():  $(l:agriculture/animal_husbandry#camelides)Camel$()$(br)$(bold)Diet$():  $(l:cooking/food_and_water#grain)Grain$() and $(l:cooking/food_and_water#fruit)Fruits$()$(br)$(bold)Max Children$():  1$(br)$(bold)Gestation Time$():  19 Days$(br)$(bold)Growth Time$():  80 Days$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Max Uses$():  60",
+            "text": "$(bold)$(l:the_world/climate#temperature)Температура появи$(): > -5°C$(br)$(bold)$(l:the_world/climate#rainfall)Опади появи$(): < 100мм$(br)$(bold)Місця появи$(): Жаркий і сухий клімат$(br)$(bold)Категорія$(): $(l:agriculture/animal_husbandry#camelides)Верблюдові$()$(br)$(bold)Раціон$(): $(l:cooking/food_and_water#grain)Зерно$() та $(l:cooking/food_and_water#fruit)Фрукти$()$(br)$(bold)Максимум дитинчат$(): 1$(br)$(bold)Час вагітності$(): 19 днів$(br)$(bold)Час вирощування$(): 80 днів$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Максимальна кількість використань$(): 60",
             "title": "Одногорбий верблюд"
         },
         {
@@ -221,12 +221,12 @@
             "entity": "tfg:dromedary_camel{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
             "scale": 0.6,
             "name": " ",
-            "text": "A dromedary camel."
+            "text": "Одногорбий верблюд."
         },
         {
             "type": "patchouli:text",
             "anchor": "bactrian_camel",
-            "text": "$(bold)$(l:the_world/climate#temperature)Spawn Temp$():  > -5°C$(br)$(bold)$(l:the_world/climate#rainfall)Spawn Rainfall$():  < 100mm$(br)$(bold)Spawn Area$():  Cold and Dry Climates$(br)$(bold)Category$():  $(l:agriculture/animal_husbandry#camelides)Camel$() / $(l:agriculture/animal_husbandry#wooly_animals)Wooly$()$(br)$(bold)Diet$():  $(l:cooking/food_and_water#grain)Grain$() and $(l:cooking/food_and_water#fruit)Fruits$()$(br)$(bold)Max Children$():  1$(br)$(bold)Gestation Time$():  24 Days$(br)$(bold)Growth Time$():  80 Days$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Max Uses$():  80$(br)$(bold)Product$():  $(l:agriculture/weaving)Wool$()$(br)$(bold)Produce Cycle$():  7 Days",
+            "text": "$(bold)$(l:the_world/climate#temperature)Температура появи$(): > -5°C$(br)$(bold)$(l:the_world/climate#rainfall)Опади появи$(): < 100мм$(br)$(bold)Місця появи$(): Холодний і сухий клімат$(br)$(bold)Категорія$(): $(l:agriculture/animal_husbandry#camelides)Верблюдові$() / $(l:agriculture/animal_husbandry#wooly_animals)Вовняні$()$(br)$(bold)Раціон$(): $(l:cooking/food_and_water#grain)Зерно$() та $(l:cooking/food_and_water#fruit)Фрукти$()$(br)$(bold)Максимум дитинчат$(): 1$(br)$(bold)Час вагітності$(): 24 дні$(br)$(bold)Час вирощування$(): 80 днів$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Максимальна кількість використань$(): 80$(br)$(bold)Продукт$(): $(l:agriculture/weaving)Вовна$()$(br)$(bold)Цикл виробництва$(): 7 днів",
             "title": "Двогорбий верблюд"
         },
         {
@@ -234,7 +234,7 @@
             "entity": "tfg:bactrian_camel{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
             "scale": 0.6,
             "name": " ",
-            "text": "A bactrian camel."
+            "text": "Двогорбий верблюд."
         },
         {
             "type": "patchouli:text",
@@ -254,9 +254,9 @@
             "type": "patchouli:entity",
             "entity": "tfc:grizzly_bear",
             "scale": 0.55,
-            "name": "Ведмідь грізлі",
+            "name": "Грізлі",
             "anchor": "grizzly_bear",
-            "text": "Ведмідь гризлі з'являється в лісах помірного клімату з діапазоном $(l:the_world/climate#temperature)температур$() від -15 до 15°C та рівнем $(l:the_world/climate#rainfall)опадів$() щонайменше 200 мм."
+            "text": "Грізлі з'являється в лісах помірного клімату з діапазоном $(l:the_world/climate#temperature)температур$() від -15 до 15°C та рівнем $(l:the_world/climate#rainfall)опадів$() щонайменше 200 мм."
         },
         {
             "type": "patchouli:entity",
@@ -311,14 +311,14 @@
             "entity": "tfc:wolf",
             "anchor": "wolf",
             "scale": 0.7,
-            "text": "The wolf spawns at any $(l:the_world/climate#temperature)temperature$() below 22°C, and $(l:the_world/climate#rainfall)rainfall$() between 70 and 480mm. They hunt in packs. Feeding a wolf enough times will tame it into a $(l:game_mechanics/pets)Dog$()."
+            "text": "Вовк з'являється за будь-якої $(l:the_world/climate#temperature)температури$() нижче 22°C та $(l:the_world/climate#rainfall)опадів$() від 70 до 480мм. Вони полюють зграями. Якщо годувати вовка достатню кількість разів, він приручиться та перетвориться на $(l:game_mechanics/pets)Собаку$()."
         },
         {
             "type": "patchouli:entity",
             "entity": "tfc:direwolf",
             "anchor": "direwolf",
             "scale": 0.7,
-            "text": "Лютововк з'являється за будь-якої $(l:the_world/climate#temperature)температури$() нижче нуля та рівня $(l:the_world/climate#rainfall)опадів$() від 150 до 420 мм. Вони полюють зграями. Вони більші за звичайних вовків і не піддаються прирученню."
+            "text": "Жахливий вовк з'являється за будь-якої $(l:the_world/climate#temperature)температури$() нижче нуля та рівня $(l:the_world/climate#rainfall)опадів$() від 150 до 420 мм. Вони полюють зграями. Вони більші за звичайних вовків і не піддаються прирученню."
         },
         {
             "type": "patchouli:entity",
@@ -340,7 +340,7 @@
             "entity": "tfc:ocelot",
             "anchor": "ocelot",
             "scale": 0.7,
-            "text": "The ocelot attacks small animals. It spawns at any $(l:the_world/climate#temperature)temperature$() from 15 to 30°C, and $(l:the_world/climate#rainfall)rainfall$() between 300 and 500mm, in forests. Feeding an ocelot enough times will tame it into a $(l:game_mechanics/pets)Cat$(). Ocelots can eat raw fish"
+            "text": "Оцелот полює на дрібних тварин. Він з'являється за $(l:the_world/climate#temperature)температури$() від 15 до 30°C та $(l:the_world/climate#rainfall)опадів$() від 300 до 500мм у лісах. Якщо годувати оцелота достатню кількість разів, він приручиться та перетвориться на $(l:game_mechanics/pets)Кішку$(). Оцелоти можуть їсти сиру рибу."
         },
         {
             "type": "patchouli:text",
@@ -515,7 +515,7 @@
         {
             "type": "patchouli:text",
             "anchor": "fish",
-            "text": "$(thing)Fish$() are small creatures that swim in water. Most of them can be $(l:agriculture/fishing)fished$(). Some prefer oceans, rivers, or lakes.",
+            "text": "$(thing)Риби$() — це невеликі істоти, які плавають у воді. Більшість із них можна $(l:agriculture/fishing)ловити на вудку$(). Деякі віддають перевагу океанам, річкам або озерам.",
             "title": "Риба"
         },
         {
@@ -569,7 +569,7 @@
         {
             "type": "patchouli:text",
             "anchor": "shellfish",
-            "text": "$(thing)Shellfish$() are small animals that live on the floor of bodies of water. They cannot be fished, but drop shells that can be eaten or made into $(thing)flux$(). Shellfish can be $(l:agriculture/fishing)bait$() for fish.",
+            "text": "$(thing)Молюски$() — це невеликі тварини, які живуть на дні водойм. Їх не можна ловити на вудку, але з них випадають мушлі, які можна їсти або перетворювати на $(thing)флюс$(). Молюсків можна використовувати як $(l:agriculture/fishing)наживку$() для риб.",
             "title": "Молюски"
         },
         {
@@ -592,9 +592,9 @@
             "type": "patchouli:entity",
             "entity": "tfc:crayfish",
             "scale": 0.7,
-            "name": "Рак",
+            "name": "Річковий рак",
             "anchor": "crayfish",
-            "text": "Раки схожі на лобстерів, але з'являються в річках та озерах. Їм потрібна $(l:the_world/climate#temperature)температура$() щонайменше 5°C та рівень $(l:the_world/climate#rainfall)опадів$() не менше 125 мм."
+            "text": "Річкові раки схожі на лобстерів, але з'являються в річках та озерах. Їм потрібна $(l:the_world/climate#temperature)температура$() щонайменше 5°C та рівень $(l:the_world/climate#rainfall)опадів$() не менше 125 мм."
         },
         {
             "type": "patchouli:entity",
@@ -607,8 +607,8 @@
         {
             "type": "patchouli:text",
             "anchor": "large_aquatic_animals",
-            "text": "$(thing)Large Water Creatures$() are larger animals that live in the bigger bodies of water. Some of them hunt fish. They drop $(l:game_mechanics/lighting)blubber$(), which can be made into lamp fuel.",
-            "title": "Large Aquatic Animals"
+            "text": "$(thing)Великі водні тварини$() — це більші тварини, які живуть у великих водоймах. Деякі з них полюють на рибу. З них випадає $(l:game_mechanics/lighting)жир$(), з якого можна виготовляти паливо для ламп.",
+            "title": "Великі водні тварини"
         },
         {
             "type": "patchouli:entity",

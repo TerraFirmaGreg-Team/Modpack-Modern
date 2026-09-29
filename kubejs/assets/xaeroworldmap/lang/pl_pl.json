@@ -189,6 +189,7 @@
   "gui.xaero_wm_box_force_fast_map_writing": "Źle wpływa na wydajność, ale dobrze sprawdza się przy mapowaniu serwerów przy bardzo szybkim ruchu.",
   "gui.xaero_wm_box_legible_cave_maps": "W trybie jaskiń używa oświetlenia zależnego od głębokości zamiast rzeczywistego oświetlenia bloków, co ułatwia rozróżnianie warstw jaskini.",
   "gui.xaero_wm_box_pac_claims": "Wyświetlaj zajęte chunki z moda Open Parties and Claims w formie kolorowych nakładek.",
+  "gui.xaero_wm_box_pac_claims_border_opacity": "Przezroczystość konturu nakładki zajętych chunków. Zajmowanie chunków wymaga moda Open Parties and Claims.",
   "gui.xaero_wm_box_pac_claims_fill_opacity": "Przezroczystość wypełnienia nakładki zajętych chunków. Zajmowanie chunków wymaga moda Open Parties and Claims.",
   "gui.xaero_wm_box_pac_player_teleport_command": "Polecenie czatu używane na tym świecie/serwerze do teleportowania cię do innych graczy widocznych na mapie, gdy zainstalowany jest mod Open Parties and Claims.",
   "gui.xaero_wm_box_unlimited_zoom_in": "Pozwala przybliżyć pełnoekranową mapę znacznie bardziej niż zwykle, choć nie bez ograniczeń.",

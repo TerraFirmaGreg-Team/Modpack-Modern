@@ -37,7 +37,7 @@
         },
         {
             "type": "patchouli:text",
-            "title": "Livestock",
+            "title": "Zwierzęta hodowlane",
             "anchor": "livestock",
             "text": "$(thing)Livestock$() are animals that can be tamed and bred by the player. Livestock can be either $(thing)male$() or $(thing)female$() so it is important when collecting wild livestock to try and get one of each sex for breeding."
         },
@@ -490,7 +490,7 @@
             "type": "patchouli:text",
             "anchor": "aquatic",
             "text": "$(thing)Aquatic Animals$() are a broad category which covers a number of different behaviors. They may be $(thing)Shore Dwellers$(), $(thing)Fish$(), $(thing)Shellfish$(), or $(thing)Large Aquatic Creatures$()",
-            "title": "Zwierzęta morskie"
+            "title": "Zwierzęta wodne"
         },
         {
             "type": "patchouli:text",
@@ -564,7 +564,7 @@
             "scale": 0.7,
             "name": "Bass niebieski",
             "anchor": "bluegill",
-            "text": "Bluegill spawn in any river or lake with a $(l:the_world/climate#temperature)temperature$() of at least -10°C and at most 26°C."
+            "text": "Bass niebieski pojawia się w dowolnych rzekach i jeziorach, gdzie $(l:the_world/climate#temperature)temperatura$() jest co pomiędzy -10°C a 26°C."
         },
         {
             "type": "patchouli:text",
@@ -586,7 +586,7 @@
             "scale": 0.7,
             "name": "Homar",
             "anchor": "lobster",
-            "text": "Lobster spawn in any ocean that is at most of a $(l:the_world/climate#temperature)temperature$() of 21°C."
+            "text": "Homary występują w oceanach o $(l:the_world/climate#temperature)temperaturze$() nieprzekraczającej 21°C."
         },
         {
             "type": "patchouli:entity",

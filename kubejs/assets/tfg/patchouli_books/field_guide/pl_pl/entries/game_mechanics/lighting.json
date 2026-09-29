@@ -54,7 +54,7 @@
                 }
             ],
             "name": "",
-            "text": "Torches may be tossed on log piles or $(l:craftsmanship/pit_kiln)Pit Kilns$() to ignite them.",
+            "text": "Możesz rzucić pochodnie na stertę pni lub $(l:craftsmanship/pit_kiln)piece ziemne$(), aby je podpalić.",
             "enable_visualize": false
         },
         {
@@ -130,7 +130,7 @@
                     "Y": "#tfc:lamps[hanging=true,lit=true]"
                 }
             },
-            "text": "Lamps can hang from blocks. $(thing)Chains$() and $(thing)Pipes$() are particularly nice choices.",
+            "text": "Lampy można zawieszać pod blokami. Szczególnie dobrze nadają się do tego $(thing)łańcuchy$() i $(thing)rury$().",
             "enable_visualize": false
         },
         {

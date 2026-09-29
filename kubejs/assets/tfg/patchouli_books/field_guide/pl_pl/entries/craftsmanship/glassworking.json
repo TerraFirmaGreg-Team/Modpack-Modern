@@ -112,7 +112,7 @@
                 "tfg:textures/gui/field_guide/glassworking/lens_8.png",
                 "tfg:textures/gui/field_guide/glassworking/lens_9.png"
             ],
-            "text": "$(bold)Tutorial Slideshow:$() Step by step, creating a lens.",
+            "text": "$(bold)Samouczek obrazkowy:$() Tworzenie soczewki, krok po kroku",
             "border": true
         },
         {
@@ -141,7 +141,7 @@
         },
         {
             "type": "patchouli:multiblock",
-            "text": "Once the glass is cooled, it can be broken with a $(l:craftsmanship/glassworking#saw)Gem Saw$() to obtain.",
+            "text": "Gdy szkło wystygnie, może zostać zebrane za pomocą $(l:craftsmanship/glassworking#saw)piły do szkła$().",
             "border": true,
             "multiblock": {
                 "mapping": {
@@ -166,7 +166,7 @@
         },
         {
             "type": "patchouli:multiblock",
-            "text": "Once the glass is cooled, it can be broken with a $(l:craftsmanship/glassworking#saw)Gem Saw$() to obtain.",
+            "text": "Gdy szkło wystygnie, może zostać zebrane za pomocą $(l:craftsmanship/glassworking#saw)piły do szkła$().",
             "border": true,
             "multiblock": {
                 "mapping": {

@@ -22,7 +22,7 @@
 			"scale": 0.5,
 			"name": "Aksolotl",
 			"anchor": "axolotl",
-			"text": "$(thing)Axolotls$() can be found in the top and middle layers, usually swimming around in pools of water."
+			"text": "$(thing)Aksolotle$() można spotkać w górnej i środkowej warstwie. Zwykle pływają w niewielkich zbiornikach wodnych."
 		},
 		{
 			"type": "patchouli:entity",
@@ -30,7 +30,7 @@
 			"scale": 1,
 			"name": "Żaba",
 			"anchor": "frog",
-			"text": "$(thing)Żaby() można znaleźć w górnych i środkowych warstwach. Można je oswoić i zjeść."
+			"text": "$(thing)Żaby$() można znaleźć w górnej i środkowej warstwie. Można je oswoić i zjeść."
 		},
 		{
 			"type": "patchouli:entity",
@@ -38,7 +38,7 @@
 			"scale": 0.5,
 			"name": "Mamuminacja",
 			"anchor": "mammutilation",
-			"text": "$(thing)Mammutilations$() are undead Mammoths. You can put them out of their misery for some $(item)Wool$()."
+			"text": "$(thing)Mamuminacje$() to nieumarłe mamuty. Możesz skrócić ich cierpienie, zdobywając przy tym trochę $(item)wełny$()."
 		},
 		{
 			"type": "patchouli:entity",
@@ -46,15 +46,15 @@
 			"scale": 0.7,
 			"name": "Czerwony jeleń",
 			"anchor": "red_elk",
-			"text": "$(thing)Red Elk$() are found near the bottom, usually swimming around in lava. They can be slain for $(item)Lavaproof Hides$()."
+			"text": "$(thing)Czerwone jelenie$() występują w dolnych warstwach i zazwyczaj pływają w lawie. Po ich zabiciu można pozyskać $(item)lawoodporne skóry$()."
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "minecraft:zombie_horse",
 			"scale": 0.7,
-			"name": "Zombie Horse",
+			"name": "Koń zombie",
 			"anchor": "zombie_horse",
-			"text": "$(thing)Zombie Horses$() can't be tamed or ridden, but they can pull an $(item)Animal Crank$()."
+			"text": "$(thing)Koni zombie$() nie można oswoić ani na nich jeździć, ale mogą one napędzać $(item)korbę zwierzęcą$()."
 		},
 		{
 			"type": "patchouli:entity",
@@ -62,7 +62,7 @@
 			"scale": 0.6,
 			"name": "Żelek lodowy",
 			"anchor": "ice_jellie",
-			"text": "$(thing)Ice$() $(l:agriculture/jellies)Jellies$() are found in the $(thing)Salt Caves$() biome. They cool down nearby players."
+			"text": "$(thing)Lodowe$() $(l:agriculture/jellies)żelki$() występują w $(thing)jaskiniach solnych$(). Ochładzają pobliskich graczy."
 		},
 		{
 			"type": "patchouli:entity",
@@ -126,7 +126,7 @@
 			"scale": 0.5,
 			"name": "Krokodyl",
 			"anchor": "crocodile",
-			"text": "$(thing)Crocodiles$() can be found in the top and middle layers, waiting in ambush!"
+			"text": "$(thing)Krokodyle$() można spotkać w górnej i środkowej warstwie, gdzie czyhają w zasadzce!"
 		},
 		{
 			"type": "patchouli:entity",
@@ -134,7 +134,7 @@
 			"scale": 0.4,
 			"name": "Fantom",
 			"anchor": "phantom",
-			"text": "$(thing)Phantoms$() naturally spawn in the middle and bottom layers, regardless of how much sleep you're getting. They can be turned into $(l:beneath/beneath_mechanics#clothes)Clothing$()."
+			"text": "$(thing)Fantomy$() naturalnie pojawiają się w środkowej i dolnej warstwie, niezależnie od tego, ile śpisz. Można je przerobić na $(l:beneath/beneath_mechanics#clothes)ubrania$()."
 		},
 		{
 			"type": "patchouli:entity",
@@ -142,7 +142,7 @@
 			"scale": 0.8,
 			"name": "Glinik kaolinowy",
 			"anchor": "kaolin_klayze",
-			"text": "$(thing)Kaolin Klayzes$() can be found in the $(thing)Lush Hollow$() biome, guarding the $(item)Kaolin$()!"
+			"text": "$(thing)Gliniki kaolinowe$() można spotkać w $(thing)bujnych jaskiniach$(), gdzie strzegą $(item)gliny kaolinowej$()!"
 		},
 		{
 			"type": "patchouli:entity",
@@ -150,7 +150,7 @@
 			"scale": 1,
 			"name": "Grafik grafitowy",
 			"anchor": "graphite_glayze",
-			"text": "$(thing)Graphite Glayzes$() can be found in the bottom layers. Careful they don't knock you into lava!"
+			"text": "$(thing)Grafiki grafitowe$() można spotkać w dolnych warstwach. Uważaj, żeby nie strąciły cię do lawy!"
 		},
 		{
 			"type": "patchouli:entity",
@@ -182,7 +182,7 @@
 			"scale": 0.7,
 			"name": "Widma",
 			"anchor": "spectre",
-			"text": "$(thing)Spectres$() are ghosts of adventurers past, and come in three varieties. They are a source of $(item)Feathers$()."
+			"text": "$(thing)Widma$() to duchy zmarłych poszukiwaczy przygód. Występują w trzech odmianach i można z nich pozyskać $(item)pióra$()."
 		},
 		{
 			"type": "patchouli:entity",
@@ -190,7 +190,7 @@
 			"scale": 0.9,
 			"name": "Psotnik",
 			"anchor": "wicked",
-			"text": "The $(thing)Wicked$() is a ghost that can posess nearby mobs to give them buffs! If no mob is nearby, they use a ranged attack. They drop wax."
+			"text": "$(thing)Psotnik$() to duch, który może opętywać pobliskie moby, aby je wzmacniać! Jeśli w pobliżu nie ma żadnego moba, atakuje z dystansu. Po pokonaniu wypada z niego wosk."
 		},
 		{
 			"type": "patchouli:entity",
@@ -206,7 +206,7 @@
 			"scale": 0.8,
 			"name": "Osadnikołak",
 			"anchor": "bewereager",
-			"text": "The $(thing)Bewereager$() is an aggressive monster that can also jump up to you! It buffs itself and attacks in short bursts."
+			"text": "$(thing)Osadnikołak$() to agresywny potwór, który potrafi skoczyć na ciebie z daleka! Wzmacnia się i atakuje w krótkich seriach."
 		},
 		{
 			"type": "patchouli:relations",

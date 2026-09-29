@@ -49,7 +49,7 @@
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "$(bold)TIP$(): You can use wooden vertical support beams with higher quality horizontal support beams like concrete.",
+            "text": "$(bold)WSKAZÓWKA:$() Drewniane pionowe podpory można łączyć z poziomymi podporami wyższej jakości, np. betonowymi.",
             "multiblocks": [
                 {
                     "pattern": [
@@ -249,7 +249,7 @@
         },
         {
             "type": "patchouli:image",
-            "title": "Support Area",
+            "title": "Obszar podparcia",
             "anchor": "support_3d",
             "width": 1024,
             "texture_width": 1024,
@@ -263,7 +263,7 @@
         },
         {
             "type": "patchouli:image",
-            "title": "Block Range",
+            "title": "Zasięg sprawdzania",
             "anchor": "block_range",
             "width": 1024,
             "texture_width": 1024,

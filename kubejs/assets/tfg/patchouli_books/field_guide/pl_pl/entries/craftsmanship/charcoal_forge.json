@@ -31,7 +31,7 @@
                 }
             },
             "name": "Kuźnia węglowa",
-            "text": "A complete forge structure, ready to be lit.",
+            "text": "Kompletna struktura kuźni węglowej, gotowa do zapalenia.",
             "enable_visualize": false
         },
         {
@@ -76,7 +76,7 @@
                 "tfc:textures/gui/book/gui/charcoal_forge.png"
             ],
             "title": "Interfejs kuźni.",
-            "text": "$(bold)TIP:$() You can directly throw fuel like charcoal on top of the forge with $(item)$(k:key.drop)$() to re-fuel it.",
+            "text": "$(bold)WSKAZÓWKA:$() Możesz uzupełnić paliwo w kuźni, rzucając na nią np. węgiel drzewny za pomocą $(item)$(k:key.drop)$().",
             "border": false
         },
         {
