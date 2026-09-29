@@ -117,7 +117,7 @@
         },
         {
             "type": "patchouli:entity",
-            "text": "As villages do not exist, taming an $(l:the_world/wild_animals#ocelot)Ocelot$() is the only way to obtain a cat.",
+            "text": "Ponieważ wioski nie występują, oswojenie $(l:the_world/wild_animals#ocelot)ocelota$() jest jedynym sposobem na zdobycie kota.",
             "entity": "tfc:cat{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
             "title": " ",
             "scale": 0.7

@@ -5,7 +5,7 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "The $(thing)Sewing Table$() is used to produce banner patterns, smithing templates, and other cloth items. It requires $(t:#tfc:sewing_light_cloth)$(6)Light Cloth$(), $(t:#tfc:sewing_dark_cloth)$(6)Dark Cloth$(), $(t:#forge:string)$(6)String$(), as well as a $(item)Needle$().$(br)A needle for sewing can be made from a bone. An indestructable needle can be made later on out of stainless steel."
+            "text": "$(thing)Швацький стіл$() використовується для виготовлення візерунків стягів, ковальських шаблонів та інших тканинних виробів. Для нього потрібні $(t:#tfc:sewing_light_cloth)$(6)світла тканина$(), $(t:#tfc:sewing_dark_cloth)$(6)темна тканина$(), $(t:#forge:string)$(6)нитка$(), а також $(item)голка$().$(br)Швейну голку можна виготовити з кістки. Пізніше можна виготовити незламну голку з нержавійної сталі."
         },
         {
             "type": "patchouli:text",
@@ -13,7 +13,7 @@
         },
         {
             "type": "patchouli:image",
-            "title": "Sewing Screen",
+            "title": "Інтерфейс шиття",
             "anchor": "sewing_screen",
             "width": 1024,
             "texture_width": 1024,
@@ -23,16 +23,16 @@
                 "tfg:textures/gui/field_guide/sewing_preview.png",
                 "tfg:textures/gui/field_guide/sewing_table.png"
             ],
-            "text": "Recipe preview and filled recipe.",
+            "text": "Попередній перегляд рецепта та заповнений рецепт.",
             "border": true
         },
         {
             "type": "patchouli:text",
-            "text": "The slots on the left are for the string and the needle. The two bottom slots can hold any combination of dark and light cloth. The slot on the right will show the result when it is ready to be taken. Taking the result from the result slot completes the craft, and uses the items."
+            "text": "Слоти ліворуч призначені для нитки та голки. Два нижні слоти можуть містити будь-яке поєднання темної та світлої тканини. У слоті праворуч відображатиметься результат, коли він буде готовий до отримання. Забір результату зі слота результату завершує виготовлення та витрачає використані предмети."
         },
         {
             "type": "patchouli:text",
-            "text": "Each cloth item allows placing 8 squares of that material on the sewing surface. Similarly, each string item allows placing 16 stitches. When you have selected a recipe, just use the buttons on the top right of the screen to place squares and stitch them together as shown by the guide. Want to remove stitches? Use the red 'X' button to get rid of squares."
+            "text": "Кожен предмет тканини дає змогу розмістити на поверхні шиття 8 квадратів цього матеріалу. Так само кожен предмет нитки дає змогу зробити 16 стібків. Коли ти вибрав рецепт, просто використовуй кнопки у верхньому правому куті інтерфейсу, щоб розміщувати квадрати та зшивати їх, як показано в інструкції. Хочеш прибрати стібки? Використовуй червону кнопку «X», щоб видалити квадрати."
         },
         {
             "type": "patchouli:crafting",
@@ -46,7 +46,7 @@
             "item": "tag:minecraft:trim_templates",
             "anchor": "armor_trim",
             "title": "Оздоблення обладунків",
-            "text": "Armor trims can be applied to any $(t:#minecraft:trimmable_armor)$(6)Trimmable Armor$() by sewing a $(item)Smithing Template$(). Combine it with a $(t:#minecraft:trim_materials)$(6)Trim Material$() (like $(thing)Exquisite Gems$() or $(thing)Jewlery Metal$()) and the armor on a $(item)Smithing Table$()."
+            "text": "Оздоблення обладунків можна наносити на будь-які $(t:#minecraft:trimmable_armor)$(6)обладунки, що підлягають оздобленню$(), використовуючи $(item)ковальський шаблон$(), виготовлений за допомогою шиття. Поєднай його з $(t:#minecraft:trim_materials)$(6)матеріалом для оздоблення$() (наприклад, $(thing)вишуканими самоцвітами$() або $(thing)ювелірним металом$()) та обладунками на $(item)столі коваля$()."
         },
         {
             "type": "patchouli:relations",

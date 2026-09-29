@@ -7,36 +7,36 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "index",
-			"text": "$(li)$(bold)$(l:logistics/railgun#sender)Railgun Sender$()$(li2)$(l:logistics/railgun#ammo)Railgun Ammo$()$(li2)$(l:logistics/railgun#input_bus)Railgun Input Bus$()$(li)$(bold)$(l:logistics/railgun#monitor)Logistics Monitor$()$(li)$(bold)Control Rules$()$(li2)$(l:logistics/railgun#redstone)Redstone$()$(li2)$(l:logistics/railgun#supply_exact)Supply Exact$()$(li2)$(l:logistics/railgun#delay)Delay$()$(li)$(bold)$(l:logistics/railgun#receiver)Railgun Receiver$()$(li2)$(l:logistics/railgun#output_bus)Receiver Output Bus$()$(li)$(bold)$(l:logistics/railgun#tips)Tips$()"
+			"text": "$(li)$(bold)$(l/railgun#sender)Передавач рейкотрона$()$(li2)$(l/railgun#ammo)Боєприпаси для рейкотрона$()$(li2)$(l/railgun#input_bus)Вхідна шина рейкотрона$()$(li)$(bold)$(l/railgun#monitor)Монітор логістики$()$(li)$(bold)Правила керування$()$(li2)$(l/railgun#redstone)Редстоун$()$(li2)$(l/railgun#supply_exact)Точне постачання$()$(li2)$(l/railgun#delay)Затримка$()$(li)$(bold)$(l/railgun#receiver)Приймач рейкотрона$()$(li2)$(l/railgun#output_bus)Вихідна шина прийкотрона$()$(li)$(bold)$(l/railgun#tips)Поради$()"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "In $(tfg), transporting items across dimensions or over long distances requires you to build special $(thing)multiblock structures$().$(br2)This system is $(thing)powerful and flexible$(), offering multiple settings that let you customize logistics to perfectly suit your needs.$(br2)What, did you think you could just use AE2 Quantum Tunnels and be done with it?"
+			"text": "У $(tfg) перевезення предметів між вимірами або на великі відстані вимагає створення спеціальних $(thing)багатоблокових конструкцій$().$(br2)Ця система $(thing)потужна та гнучка$(), пропонуючи безліч налаштувань, які дають змогу тобі ідеально пристосувати логістику до своїх потреб.$(br2)Що, ти думав, що можна просто використовувати Квантові тунелі AE2 і на цьому все?"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "This is the perfect system to transport all of your $(thing)passively-produced$() resources to exactly where they're needed on other planets! And it comes with a powerful $(thing)configuration system$() to let you control everything from a single place.$(br2)To set it up, you'll need three components:$(br2)$(bold)Interplanetary Railgun$()$(br)This is the $(thing)sender$() that launches items across space."
+			"text": "Це ідеальна система для транспортування всіх твоїх $(thing)ресурсів, що виробляються пасивно$(), саме туди, де вони потрібні, на інших планетах! До того ж вона має потужну $(thing)систему конфігурації$(), яка дає змогу тобі керувати всім з одного місця.$(br2)Щоб її налаштувати, тобі знадобляться три компоненти:$(br2)$(bold)Міжпланетний рейкотрон$()$(br)Це $(thing)передавач$(), який запускає предмети через космос."
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(bold)Interplanetary Receiver$()$(br)This is the $(thing)receiver$() that catches and stores incoming items.$(br2)$(bold)Interplanetary Logistics Monitor$()$(br)This acts as the $(thing)central control$(), where you define the rules and behavior of the entire transport system.$(br2)With these machines, you can automate large-scale transfers efficiently — even between planets!"
+			"text": "$(bold)Міжпланетний приймач$()$(br)Це $(thing)приймач$(), який перехоплює та зберігає вхідні предмети.$(br2)$(bold)Міжпланетний монітор логістики$()$(br)Він слугує $(thing)центральним керуванням$(), де ти визначаєш правила та поведінку всієї транспортної системи.$(br2)За допомогою цих машин ти можеш ефективно автоматизувати великомасштабне переміщення предметів — навіть між планетами!"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "tfg:interplanetary_item_launcher",
-			"title": "Railgun Sender",
+			"title": "Передавач рейкотрона",
 			"anchor": "sender",
-			"text": "The $(item)Interplanetary Railgun$() acts as your $(thing)sender multiblock$().$(br2)It's the structure responsible for launching items toward distant $(thing)receivers$() — but it can't receive anything itself."
+			"text": "$(item)Міжпланетний рейкотрон$() слугує твоїм $(thing)багатоблоковим передавачем$().$(br2)Ця конструкція відповідає за запуск предметів до віддалених $(thing)приймачів$(), але сама нічого отримувати не може."
 		},
 		{
 			"type": "patchouli:text",
-			"text": "To function correctly, it requires several components:$(li)$(bold)Energy Hatch:$() provides the power needed to launch items. Without energy, nothing moves.$(li)$(bold)Railgun Ammo Loader:$() must be filled with ammo. One unit is consumed per launch.$(li)$(bold)Input Buses:$() you can add as many as you can fit, to insert the items you want to send."
+			"text": "Для правильної роботи йому потрібні кілька компонентів:$(li)$(bold)Енергетичний люк:$() забезпечує енергію, необхідну для запуску предметів. Без енергії нічого не рухатиметься.$(li)$(bold)Завантажувач боєприпасів рейкотрона:$() має бути заповнений боєприпасами. Один боєприпас витрачається за кожен запуск.$(li)$(bold)Вхідні шини:$() ти можеш додати стільки, скільки поміститься, щоб завантажувати предмети, які хочеш відправити."
 		},
 		{
 			"type": "patchouli:multiblock",
 			"name": " ",
 			"enable_visualize": "true",
-			"text": "Use a $(l:craftsmanship/building_tools#terminals)Terminal$() to construct the multiblock easily.",
+			"text": "Використовуй $(l/building_tools#terminals)Термінал$(), щоб легко побудувати багатоблокову конструкцію.",
 			"multiblock": {
 				"pattern": [
 					[
@@ -161,95 +161,95 @@
 			"type": "patchouli:crafting",
 			"recipe": "tfg:shaped/interplanetary_item_launcher",
 			"title": " ",
-			"text": "$(bold)Important:$() This multiblock can only $(italic)send$() items. Make sure your $(item)Interplanetary Railgun$() is always chunkloaded!"
+			"text": "$(bold)Важливо:$() Ця багатоблокова конструкція може лише $(italic)відправляти$() предмети. Переконайся, що твій $(item)Міжпланетний рейкотрон$() завжди завантажений разом із чанком!"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "tfg:railgun_ammo_shell,tfg:railgun_ammo_loader",
 			"anchor": "ammo",
 			"title": "Боєприпаси для рейкотрона",
-			"text": "Each $(thing)Railgun$() requires a special type of $(item)ammo$() — think of it as a package used to transport items. Each launch consumes exactly $(thing)one unit$() of ammo and can send $(thing)three stacks$() of items.$(br2)To load it, you'll need a $(item)Railgun Ammo Loader$() as part of your structure."
+			"text": "Кожен $(thing)рейкотон$() потребує спеціального типу $(item)боєприпасів$() — вважай їх пакунком, який використовується для транспортування предметів. Кожен запуск витрачає рівно $(thing)один боєприпас$() і може відправити $(thing)три стаки$() предметів.$(br2)Щоб завантажити його, тобі знадобиться $(item)Завантажувач боєприпасів рейкотрона$() як частина твоєї конструкції."
 		},
 		{
 			"type": "patchouli:text",
-			"text": "You can insert ammo manually or automate the process.$(br2)We $(italic)strongly recommend$() setting up a passive production line to keep your loader filled continuously — this ensures a smooth and reliable logistics chain.$(br2)You can either have each planet automating their own ammo, or you could have one planet make all the ingredients and distribute them to the others."
+			"text": "Ти можеш завантажувати боєприпаси власноруч або автоматизувати цей процес.$(br2)Ми $(italic)настійно рекомендуємо$() налаштувати лінію пасивного виробництва, щоб постійно підтримувати завантажувач заповненим — це забезпечить безперебійну та надійну роботу логістичної мережі.$(br2)Ти можеш або автоматизувати виробництво боєприпасів на кожній планеті окремо, або доручити одній планеті виготовляти всі інгредієнти та розподіляти їх між іншими."
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "tfg:ulv_railgun_item_loader_in,tfg:lv_railgun_item_loader_in,tfg:mv_railgun_item_loader_in,tfg:hv_railgun_item_loader_in,tfg:ev_railgun_item_loader_in,tfg:iv_railgun_item_loader_in,tfg:luv_railgun_item_loader_in,tfg:zpm_railgun_item_loader_in,tfg:uv_railgun_item_loader_in,tfg:uhv_railgun_item_loader_in",
 			"anchor": "input_bus",
 			"title": "Вхідна шина рейкотрону",
-			"text": "When opening the $(thing)Sender$() logistics screen on the $(l:logistics/railgun#monitor)Interplanetary Logistics Monitor$(), you'll notice the familiar $(item)Programmed Circuit$() from GregTech.$(br2)This circuit number is the core identifier for setting up routing rules."
+			"text": "Коли відкриєш екран логістики $(thing)Вдправника$() у $(l/railgun#monitor)Міжпланетному моніторі логістики$(), ти помітиш знайому $(item)Запрограмовану мікросхему$() з GregTech.$(br2)Цей номер мікросхеми є основним ідентифікатором для налаштування правил маршрутизації."
 		},
 		{
 			"type": "patchouli:text",
-			"text": "The number you assign will apply a specific rule to all Input Buses in your Railgun structure that are configured with that same circuit number.$(br2)This allows you to fine-tune what items are sent where and with which rules, based on the circuit used."
+			"text": "Призначений тобою номер застосовуватиме певне правило до всіх вхідних шин у твоїй конструкції рейкотрона, налаштованих на цей самий номер мікросхеми.$(br2)Це дає змогу тобі точно налаштувати, які предмети та куди надсилатимуться, а також за якими правилами, залежно від використаної мікросхеми."
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(bold)How to configure it:$()$(br)1. Open the GUI of any $(item)Railgun Input Bus$()$(br)2. Select the number you want, just like in any other GregTech machine.$(br2)This lets you create powerful logic like:$(li)Circuit 1 → send to Moon base$(li)Circuit 2 → send to Mars$(li)Circuit 3 → send to Orbital Station"
+			"text": "$(bold)Як це налаштувати:$()$(br)1. Відкрий графічний інтерфейс будь-якої $(item)вхідної шини рейкотрона$()$(br)2. Вибери потрібний номер, як і в будь-якій іншій машині GregTech.$(br2)Це дає змогу створювати складну логіку, наприклад:$(li)Мікросхема 1 → відправляти на місячну базу$(li)Мікросхема 2 → відправляти на Марс$(li)Мікросхема 3 → відправляти на орбітальну станцію"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "With the proper circuit setup, you can automate interplanetary trade like a true industrial tycoon!$(br2)$(bold)Note$(): You cannot send anything with the $(br)$(6)#tfg:cannot_launch_in_railgun$() tag."
+			"text": "За правильного налаштування мікросхем ти зможеш автоматизувати міжпланетну торгівлю, наче справжній промисловий магнат!$(br2)$(bold)Примітка$(): Ти не можеш відправляти нічого з тегом $(br)$(6)#tfg$()."
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "tfg:interplanetary_logistics_monitor",
 			"anchor": "monitor",
-			"title": "Logistics Monitor",
-			"text": "The $(item)Interplanetary Logistics Monitor$() is your logistics command center — the true bread and butter of interplanetary transport.$(br2)It's a $(thing)single block$(), requires $(thing)no energy$(), and will automatically detect every $(item)Railgun Sender$() and $(item)Receiver$() you've built."
+			"title": "Монітор логістики",
+			"text": "$(item)Міжпланетний монітор логістики$() — це твій командний центр логістики, справжня основа міжпланетного транспорту.$(br2)Це $(thing)одноблокова конструкція$(), яка $(thing)не потребує енергії$() та автоматично виявляє кожен побудований тобою $(item)Передавач рейкотрона$() і $(item)Приймач$()."
 		},
 		{
 			"type": "patchouli:text",
-			"text": "It may look simple, but it hides powerful tools under the hood. Let's go over the basics:$(br2)When you open the Monitor, you'll see a list of all your Senders and Receivers. You have to $(thing)name each one$().$(br2)To create a logistic rule, click the right arrow to select a Sender, then press $(item)+$() to add a new rule. Lastly, choose the destination Receiver from your list."
+			"text": "На вигляд він простий, але приховує потужні інструменти. Розгляньмо основи:$(br2)Коли ти відкриєш монітор, побачиш список усіх своїх Передавачів і Приймачів. Ти маєш $(thing)дати назву кожному з них$().$(br2)Щоб створити правило логістики, натисни стрілку праворуч, щоб вибрати Передавач, потім натисни $(item)+$(), щоб додати нове правило. Насамкінець вибери Приймач призначення зі свого списку."
 		},
 		{
 			"type": "patchouli:text",
 			"title": "Керування за допомогою редстоуну",
 			"anchor": "redstone",
-			"text": "The $(item)Redstone Rule$() is simple — but incredibly powerful when used well.$(br2)In the $(item)Sender$() rules interface, enabling this rule means that a $(thing)redstone signal$() must be present on the $(thing)Input Bus$(thing) for it to send items.$(br2)In the $(item)Receiver$() rules interface, you can configure the rule so that an $(thing)Output Bus$() will only accept items based on the redstone signal on that specific block."
+			"text": "$(item)Правило редстоуну$() просте, але надзвичайно потужне, якщо правильно його використовувати.$(br2)В інтерфейсі правил $(item)Передавача$() увімкнення цього правила означає, що на $(thing)вхідній шині$(thing) має бути присутній $(thing)сигнал редстоуну$(), щоб вона могла відправляти предмети.$(br2)В інтерфейсі правил $(item)Приймача$() ти можеш налаштувати правило так, щоб $(thing)Вихідна шина$() приймала предмети лише залежно від сигналу редстоуну на цьому конкретному блоці."
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Time to use your redstone logic skills!$(br2)Whether it's with an $(item)AE2 Level Emitter$(), from $(l:logistics/redstone_devices#threshold_switch)Create redstone utilities$(), or good old $(l:logistics/redstone_devices#more_comparators)vanilla mechanics$() — this rule lets you synchronize logistics with your factory state like a pro."
+			"text": "Час застосувати свої навички роботи з логікою редстоуну!$(br2)Будь то за допомогою $(item)Випромінювач рівня AE2$(), $(l/redstone_devices#threshold_switch)редстоунових пристроїв Create$() чи доброї старої $(l/redstone_devices#more_comparators)ванільної механіки$() — це правило дає змогу тобі синхронізувати логістику зі станом твоєї фабрики, наче справжньому профі."
 		},
 		{
 			"type": "patchouli:text",
 			"title": "Подавати точно",
 			"anchor": "supply_exact",
-			"text": "The $(item)Item Rule$() works similarly to a $(thing)GregTech Robot Arm$() set to $(thing)Supply Exact$().$(br2)It can only be configured from the $(item)Sender$() rules interface.$(br2)With this rule active, the $(thing)Railgun$(thing) will only send the $(italic)exact quantity$() when available in the $(item)Input Bus$()."
+			"text": "$(item)Правило предметів$() працює подібно до $(thing)Маніпулятора GregTech$(), налаштованого на $(thing)точне постачання$().$(br2)Його можна налаштувати лише в інтерфейсі правил $(item)Передавача$().$(br2)Якщо це правило активне, $(thing)рейкотрон$(thing) надсилатиме лише $(italic)точну кількість$() предметів, якщо вона доступна у $(item)вхідній шині$()."
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(bold)How to set it up:$()$(li)Drag items into the filter from your $(emi) interface$(li)Use $(thing)left and right clicks$() to adjust the quantity$(li)You can also bookmark items for quick access and configuration$(br2)This rule is perfect for precise automation — ideal for batch crafting or resource quotas."
+			"text": "$(bold)Як це налаштувати:$()$(li)Перетягни предмети у фільтр зі свого $(emi)інтерфейсу$(li)використовуй $(thing)ліву та праву кнопки миші$(), щоб змінювати кількість$(li)Ти також можеш додавати предмети в закладки для швидкого доступу та налаштування$(br2)Це правило ідеально підходить для точного автоматизування — особливо для пакетного створення або встановлення квот на ресурси."
 		},
 		{
 			"type": "patchouli:text",
 			"title": "Затримка",
 			"anchor": "delay",
-			"text": "The $(item)Delay Rule$() is simple, but useful for managing item flow timing.$(br2)$(bold)On the Sender side:$()$(br)Items will only be sent after the $(item)Input Bus$() hasn't received any new item for a set amount of time (in seconds).$(br2)This helps avoid sending items too frequently when inputs are constantly changing."
+			"text": "$(item)Правило затримки$() просте, але корисне для керування часом переміщення предметів.$(br2)$(bold)На боці передавача:$()$(br)Предмети надсилатимуться лише після того, як $(item)вхідна шина$() не отримуватиме жодного нового предмета протягом заданого часу (у секундах).$(br2)Це допомагає уникнути надто частого надсилання предметів, коли вхідні дані постійно змінюються."
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(bold)On the Receiver side:$()$(br)The rule defines a delay before an $(item)Output Bus$() can receive another batch of items.$(br2)This can be useful to prevent overflow or to pace item insertion into slower systems.$(br2)This mode is ideal for syncing with machines that need breathing room between operations, or to prevent unnecessary waste of ammo."
+			"text": "$(bold)На боці приймача:$()$(br)Правило визначає затримку перед тим, як $(item)вихідна шина$() зможе отримати наступну партію предметів.$(br2)Це може бути корисним для запобігання переповненню або для регулювання подачі предметів у повільніші системи.$(br2)Цей режим ідеально підходить для синхронізації з машинами, яким потрібна пауза між операціями, або для запобігання зайвим витратам боєприпасів."
 		},
 		{
 			"type": "patchouli:spotlight",
 			"anchor": "receiver",
 			"item": "tfg:interplanetary_item_receiver",
-			"title": "Railgun Receiver",
-			"text": "The $(item)Interplanetary Receiver$(), as its name suggests, is designed to $(thing)receive items$() sent by the $(l:logistics/railgun#sender)Railgun$().$(br2)It's a $(thing)small and simple multiblock$() that requires no energy or maintenance — just build it and you're ready to go!"
+			"title": "Приймач рейкотрона",
+			"text": "$(item)Міжпланетний приймач$(), як випливає з назви, призначений для $(thing)отримання предметів$(), надісланих $(l/railgun#sender)рейкотроном$().$(br2)Це $(thing)невелика та проста багатоблокова конструкція$(), яка не потребує енергії чи обслуговування — просто побудуй її, і можеш користуватися!"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Its flexibility lies in the number of $(item)Output Buses$() you can attach. The more you add, the more items it can handle simultaneously.$(br2)$(bold)Setup is easy:$()$(li)Build the structure$(li)Add as many Output Buses as you need and set their circuits$(li)Done — it's ready to receive!$(br2)No fuel, no maintenance — just pure logistics power. Make sure it's properly chunk loaded, and let the items rain in!"
+			"text": "Його гнучкість полягає в кількості $(item)вихідних шин$(), які ти можеш під'єднати. Що більше їх встановлено, то більше предметів він може обробляти одночасно.$(br2)$(bold)Налаштувати його просто:$()$(li)Побудуй конструкцію$(li)Додай стільки вихідних шин, скільки потрібно, і налаштуй їхні мікросхеми$(li)Готово — він готовий приймати предмети!$(br2)Жодного палива, жодного обслуговування — лише чиста міць логістики. Переконайся, що він належним чином завантажений разом із чанком, і нехай предмети сиплються!"
 		},
 		{
 			"type": "patchouli:multiblock",
 			"name": " ",
 			"enable_visualize": "true",
-			"text": "Use a $(l:craftsmanship/building_tools#terminals)Terminal$() to construct the multiblock easily.",
+			"text": "Використовуй $(l/building_tools#terminals)Термінал$(), щоб легко побудувати багатоблокову конструкцію.",
 			"multiblock": {
 				"pattern": [
 					[
@@ -317,21 +317,21 @@
 			"anchor": "output_bus",
 			"title": "Вихідна шина рейкотрону",
 			"item": "tfg:ulv_railgun_item_loader_out,tfg:lv_railgun_item_loader_out,tfg:mv_railgun_item_loader_out,tfg:hv_railgun_item_loader_out,tfg:ev_railgun_item_loader_out,tfg:iv_railgun_item_loader_out,tfg:luv_railgun_item_loader_out,tfg:zpm_railgun_item_loader_out,tfg:uv_railgun_item_loader_out,tfg:uhv_railgun_item_loader_out",
-			"text": "Just like how your $(l:logistics/railgun#input_bus)Railgun Input Buses$() can be assigned a $(thing)circuit number$(), you can do the same with the $(item)Output Buses$() on your $(thing)Receiver$()."
+			"text": " Так само як твої $(l/railgun#input_bus)вхідні шини рейкотрона$() можна налаштувати на певний $(thing)номер мікросхеми$(), ти можеш зробити те саме з $(item)вихідними шинами$() свого $(thing)приймача$()."
 		},
 		{
 			"type": "patchouli:text",
-			"text": "This feature serves two main purposes:$(br2)1. $(bold)Direct item flow$() - You can control which $(item)Output Bus$() receives items. To do this, simply assign a circuit number to the Output Bus, then select that number in your Sender's rule via the $(l:logistics/railgun#monitor)Logistics Monitor$()."
+			"text": "Ця функція має два основні призначення:$(br2)1. $(bold)Пряме переміщення предметів$() — ти можеш контролювати, яка $(item)вихідна шина$() отримуватиме предмети. Для цього просто признач номер мікросхеми вихідній шині, а потім вибери цей номер у правилі свого передавача через $(l/railgun#monitor)Монітор логістики$()."
 		},
 		{
 			"type": "patchouli:text",
-			"text": "2. $(bold)Conditional rules$() - You can also set rules to $(thing)stop sending items$() if the circuit rule isn't respected.$(br2)This is done not from the Sender tab, but by opening the $(thing)Receiver$() tab in the Monitor.$(br2)For each circuit number, you can assign a rule that applies only to Output Buses using that number."
+			"text": "2. $(bold)Умовні правила$() — ти також можеш налаштувати правила, щоб $(thing)припиняти надсилання предметів$(), якщо правило мікросхеми не виконується.$(br2)Це налаштовується не в вкладці передавача, а шляхом відкриття вкладки $(thing)приймача$() у моніторі.$(br2)Для кожного номера мікросхеми ти можеш призначити правило, яке застосовуватиметься лише до вихідних шин із цим номером."
 		},
 		{
 			"type": "patchouli:text",
-			"title": "Railgun Tips",
+			"title": "Поради щодо рейкотрона",
 			"anchor": "tips",
-			"text": "$(li)Railguns can be used within the same dimension. This is a great way to learn how they work, and can also be useful for sending stuff very long distances.$(li)$(thing)Cells$() are the only way to send around fluids. You can use a $(item)Canner$() to automatically fill and empty cells.$(li)Unless you're using $(l:logistics/railgun#redstone)redstone control$(), make sure all your $(l:logistics/railgun#input_bus)input$() and $(l:logistics/railgun#output_bus)output buses$() are $(thing)Enabled$()."
+			"text": "$(li)Рейкотрони можна використовувати в межах одного виміру. Це чудовий спосіб навчитися ними користуватися, а також вони можуть бути корисними для відправлення предметів на дуже великі відстані.$(li)$(thing)Капсули$() — єдиний спосіб транспортувати рідини. Ти можеш використовувати $(item)Герметизатор$(), щоб автоматично наповнювати та спорожнювати капсули.$(li)Якщо ти не використовуєш $(l/railgun#redstone)керування редстоуном$(), переконайся, що всі твої $(l/railgun#input_bus)вхідні$() та $(l/railgun#output_bus)вихідні шини$() $(thing)Увімкнені$()."
 		},
 		{
 			"type": "patchouli:relations",
@@ -340,7 +340,9 @@
 			"entries": [
 				"tfg:the_moon/the_moon",
 				"tfg:logistics/redstone_devices",
-				"tfg:logistics/storage"
+				"tfg:logistics/storage",
+				"tfg:logistics/create",
+				"tfg:logistics/trains"
 			]
 		}
 	],

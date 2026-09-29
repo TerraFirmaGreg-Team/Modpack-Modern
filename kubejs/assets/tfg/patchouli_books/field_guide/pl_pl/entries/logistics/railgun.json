@@ -24,7 +24,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"item": "tfg:interplanetary_item_launcher",
-			"title": "Railgun Sender",
+			"title": "Nadawca działa szynowego",
 			"anchor": "sender",
 			"text": "The $(item)Interplanetary Railgun$() acts as your $(thing)sender multiblock$().$(br2)It's the structure responsible for launching items toward distant $(thing)receivers$() — but it can't receive anything itself."
 		},
@@ -36,7 +36,7 @@
 			"type": "patchouli:multiblock",
 			"name": " ",
 			"enable_visualize": "prawda",
-			"text": "Użyj $(item)terminalu$(), aby łatwo zbudować multiblok.",
+			"text": "Użyj $(l:craftsmanship/building_tools#terminals)terminalu$(), aby łatwo zbudować multiblok.",
 			"multiblock": {
 				"pattern": [
 					[
@@ -238,7 +238,7 @@
 			"type": "patchouli:spotlight",
 			"anchor": "receiver",
 			"item": "tfg:interplanetary_item_receiver",
-			"title": "Railgun Receiver",
+			"title": "Odbiornik działa szynowego",
 			"text": "The $(item)Interplanetary Receiver$(), as its name suggests, is designed to $(thing)receive items$() sent by the $(l:logistics/railgun#sender)Railgun$().$(br2)It's a $(thing)small and simple multiblock$() that requires no energy or maintenance — just build it and you're ready to go!"
 		},
 		{
@@ -249,7 +249,7 @@
 			"type": "patchouli:multiblock",
 			"name": " ",
 			"enable_visualize": "prawda",
-			"text": "Użyj $(item)terminalu$(), aby łatwo zbudować multiblok.",
+			"text": "Użyj $(l:craftsmanship/building_tools#terminals)terminalu$(), aby łatwo zbudować multiblok.",
 			"multiblock": {
 				"pattern": [
 					[
@@ -329,7 +329,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"title": "Railgun Tips",
+			"title": "Wskazówki dotyczące działa szynowego",
 			"anchor": "tips",
 			"text": "$(li)Railguns can be used within the same dimension. This is a great way to learn how they work, and can also be useful for sending stuff very long distances.$(li)$(thing)Cells$() are the only way to send around fluids. You can use a $(item)Canner$() to automatically fill and empty cells.$(li)Unless you're using $(l:logistics/railgun#redstone)redstone control$(), make sure all your $(l:logistics/railgun#input_bus)input$() and $(l:logistics/railgun#output_bus)output buses$() are $(thing)Enabled$()."
 		},
@@ -340,7 +340,9 @@
 			"entries": [
 				"tfg:the_moon/the_moon",
 				"tfg:logistics/redstone_devices",
-				"tfg:logistics/storage"
+				"tfg:logistics/storage",
+				"tfg:logistics/create",
+				"tfg:logistics/trains"
 			]
 		}
 	],

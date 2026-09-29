@@ -48,7 +48,7 @@
             "type": "patchouli:crafting",
             "title": "Drewniana sieć rybacka",
             "recipe": "tfc:kjs/damage/shaped/fishing_net/wood",
-            "text": "Podstawowa $(item)siatka rybacka z drewna()."
+            "text": "Podstawowa $(item)drewniana sieć rybacka$()."
         },
         {
             "type": "patchouli:relations",

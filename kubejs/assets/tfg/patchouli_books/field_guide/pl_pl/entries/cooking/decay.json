@@ -96,7 +96,7 @@
                     "text": "Chłodzone"
                 },
                 {
-                    "text": "0.500"
+                    "text": "0.300"
                 },
                 {
                     "text": "Na półce"
@@ -130,7 +130,7 @@
                 }
             ],
             "text": "",
-            "title": "Preservation Traits: Worst to Best",
+            "title": "Cechy konserwacji: od najgorszych do najlepszych",
             "legend": [],
             "columns": 1,
             "first_column_width": 118,
@@ -148,7 +148,7 @@
             "type": "patchouli:text",
             "anchor": "vessels",
             "text": "One of the earliest ways to preserve food is to use a $(thing)Vessel$(). $(thing)Large Vessels$() are a block which can store up to nine items, and when $(thing)sealed$() the items inside will gain the $(5)$(bold)Preserved$() trait with a modifier of 0.5.$(br2)$(thing)Small Vessels$() are an item which can store up to four other items, and will also apply the $(5)$(bold)Preserved$() trait to their contents.",
-            "title": "Wazy"
+            "title": "Naczynia"
         },
         {
             "type": "patchouli:multiblock",
@@ -235,7 +235,7 @@
                 }
             },
             "name": "Lizawka solna",
-            "text": "Salt can be found naturally in forests in the form of salt licks, or ground from salt ores like halite.",
+            "text": "Sól występuje naturalnie w lasach w postaci lizawek solnych. Można ją również pozyskać, mieląc rudy soli, takie jak halit.",
             "enable_visualize": false
         },
         {

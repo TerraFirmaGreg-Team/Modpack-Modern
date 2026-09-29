@@ -1,5 +1,5 @@
 {
-	"name": "Setting up a Moon Base",
+	"name": "Tworzenie bazy księżycowej",
 	"category": "tfg:the_moon",
 	"icon": "ad_astra:moon_globe",
 	"read_by_default": true,
@@ -85,7 +85,7 @@
 		},
 		{
 			"type": "patchouli:multiblock",
-			"text": "Użyj $(item)terminalu$(), aby łatwo zbudować multiblok.",
+			"text": "Użyj $(l:craftsmanship/building_tools#terminals)terminalu$(), aby łatwo zbudować multiblok.",
 			"name": " ",
 			"enable_visualize": true,
 			"multiblock": {
@@ -414,7 +414,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"item": "ad_astra:vent",
-			"text": "The $(item)Vent$() is a solid block that can also let breathable air through without causing a vortex."
+			"text": "$(item)Kratka wentylacyjna$() jest traktowana jak pełny blok, ale przepuszcza powietrze zdatne do oddychania, nie powodując zaburzeń."
 		},
 		{
 			"type": "patchouli:spotlight",

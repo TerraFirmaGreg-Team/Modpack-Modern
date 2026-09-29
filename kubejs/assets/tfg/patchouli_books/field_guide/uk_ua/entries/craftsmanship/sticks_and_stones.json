@@ -1,11 +1,11 @@
 {
-	"name": "Sticks & Stones",
+	"name": "Палиці та каміння",
 	"category": "tfg:craftsmanship",
 	"icon": "tfg:flint_arrow_head",
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "In $(tfg), the first things you can obtain are sticks, twigs, flint, and loose rocks. They can be found in almost every climate, lying scattered on the ground. $(item)$(k:key.use)$() or break these to pick them up."
+			"text": "У $(tfg) перші речі, які ти можеш отримати, є палиці, гілочки, кремінь та уламки породи. Їх можна знайти майже в будь-якому кліматі, розкиданими по землі. Використовуй $(item)$(k:key.use)$() або ламай їх, щоб підібрати."
 		},
 		{
 			"type": "patchouli:multiblock",
@@ -49,7 +49,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "In addition to gathering sticks and twigs on the ground, sticks can also be obtained by breaking leaves with your fist. Once you have a number of rocks and sticks, you are ready to start $(thing)Knapping$(). Knapping is a process where two rocks are hit together to form a particular shape. In order to knap, first hold at least two rocks in your hand, then right click in the air, which will open up the $(thing)Knapping Interface$()."
+			"text": "Окрім збирання палиць і гілочок по землі, палиці також можна отримати, ламаючи листя кулаком. Коли ти матимеш достатньо каміння та палиць, будеш готовий почати $(thing)оббивання$(). Оббивання — це процес, під час якого два камені б’ються один об одного, щоб надати одному з них певної форми. Щоб почати оббивання, спочатку візьми в руку щонайменше два камені, а потім клацни правою кнопкою миші в повітрі — це відкриє $(thing)інтерфейс оббивання$()."
 		},
 		{
 			"type": "patchouli:image",
@@ -61,7 +61,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "In order to knap a particular item, you want to remove squares until you form the desired pattern by $(item)$(k:key.attack)$() them. For example, create a knife blade by matching the recipe shown to the right.$(br2)Like crafting recipes, the location of the desired pattern doesn't matter for the output, and some recipes have multiple variants that are valid."
+			"text": "Щоб оббити потрібний предмет, прибирай квадрати, доки не утвориться потрібний візерунок, натискаючи на них $(item)$(k:key.attack)$(). Наприклад, створи лезо ножа, відтворивши рецепт, показаний праворуч.$(br2)Як і в рецептах створення, розташування потрібного візерунка не впливає на результат, а деякі рецепти мають кілька допустимих варіантів."
 		},
 		{
 			"type": "tfg:rock_knapping_recipe",
@@ -79,19 +79,19 @@
 			"anchor": "flint",
 			"title": "Обробка кременю",
 			"item": "gtceu:flint_hoe_head,gtceu:flint_knife_head,gtceu:flint_shovel_head,gtceu:flint_axe_head,gtceu:flint_sword_head,tfg:flint_club_head,tfg:flint_arrow_head",
-			"text": "Flint can be used to craft many of the same items that can be knapped by stone, as well as unique items like arrow heads. Flint items are often far superior to stone items stat-wise. You can easily locate flint by checking the bottom of rivers and lakes for loose flint groundcover."
+			"text": "Кремінь можна використовувати для виготовлення багатьох тих самих предметів, які можна оббивати з каменю, а також унікальних предметів, як-от вістря стріл. За характеристиками крем’яні предмети часто значно кращі за кам’яні. Кремінь легко знайти на дні річок та озер, де він трапляється у вигляді уламків кременю на поверхні."
 		},
 		{
 			"type": "patchouli:crafting",
 			"recipe": "gtceu:shaped/knife_stone",
-			"text": "All stone tool heads can be crafted with a stick, twig, bone, or other rod to assemble them into a tool.$(br2)The stone knife can be used to harvest $(thing)Straw$() by breaking grasses."
+			"text": "Усі кам’яні головки інструментів можна поєднати з палицею, гілочкою, кісткою або іншим держаком, щоб зібрати з них інструмент.$(br2)Кам’яний ніж можна використовувати для добування $(thing)соломи$(), ламаючи траву."
 		},
 		{
 			"type": "tfg:rock_knapping_recipe",
 			"recipes": [
 				"tfg:rock_knapping/stone_axe_head"
 			],
-			"text": "$(thing)Axes$() can be used to cut down entire trees, logs and leaves included. Axes are required for obtaining $(l:the_world/wild_fruits#fruit_trees)Fruit Tree Saplings$()."
+			"text": "$(thing)Сокиру$() можна використовувати, щоб зрубати ціле дерево разом із колодами та листям. Сокира необхідна для отримання $(l:the_world/wild_fruits#fruit_trees)саджанців плодових дерев$()."
 		},
 		{
 			"type": "tfg:rock_knapping_recipe",
@@ -107,14 +107,14 @@
 				"tfg:rock_knapping/stone_hoe_head_1",
 				"tfg:rock_knapping/stone_hoe_head_2"
 			],
-			"text": "$(thing)Hoes$() are useful tools for $(l:agriculture/growing_crops)Farming$(), but they can also be used to cut down leaves and other plant matter like knives."
+			"text": "$(thing)Мотика$() — корисний інструмент для $(l:agriculture/growing_crops)землеробства$(), але ним також можна зрізати листя та інші рослинні матеріали, як і ножами."
 		},
 		{
 			"type": "tfg:rock_knapping_recipe",
 			"recipes": [
 				"tfg:rock_knapping/stone_hammer_head"
 			],
-			"text": "$(thing)Hammers$() can be used as $(l:game_mechanics/damage_types)Crushing$() weapons, but are more important tools used for $(l:craftsmanship/anvils)Forging$()."
+			"text": "$(thing)Молот$() можна використовувати як зброю для $(l:game_mechanics/damage_types)дроблення$(), але важливіше те, що він використовується для $(l:craftsmanship/anvils)кування$()."
 		},
 		{
 			"type": "tfg:rock_knapping_recipe",
@@ -124,7 +124,7 @@
 				"tfc:rock_knapping/javelin_head_igneous_extrusive",
 				"tfc:rock_knapping/javelin_head_igneous_intrusive"
 			],
-			"text": "Finally, a $(thing)Javelin$() can be used as a primitive weapon, capable of being thrown at targets, or used as a $(l:game_mechanics/damage_types)Piercing$() weapon."
+			"text": "Нарешті, $(thing)спис$() можна використовувати як примітивну зброю: кидати у цілі або застосовувати як зброю для $(l:game_mechanics/damage_types)колючих$() атак."
 		},
 		{
 			"type": "patchouli:relations",

@@ -31,7 +31,7 @@
             "type": "patchouli:text",
             "anchor": "growing_grapes",
             "text": "Grapes must be grown on trellises constructed from posts and jute fiber. To construct a trellis, place two posts vertically. Then, leaving a one block gap construct another post to the left or right. $(item)$(k:key.use)$() the top and bottom posts with $(thing)Jute Fiber$() to string lines between the posts. Finally plant a grape seed in the space between the posts on dirt or soil. Grape trellises can be chained horizontally to create rows of grapes.",
-            "title": "Growing Grapes"
+            "title": "Uprawianie winogron"
         },
         {
             "type": "tfg:multimultiblock",

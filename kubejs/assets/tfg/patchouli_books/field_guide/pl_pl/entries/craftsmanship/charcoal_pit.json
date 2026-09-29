@@ -24,7 +24,7 @@
                 }
             },
             "name": "Stos kłód",
-            "text": "Log piles need a solid block under them to be placed. They are highly flammable.",
+            "text": "Stosy drewna można umieszczać wyłącznie na pełnych blokach. Są one bardzo łatwopalne.",
             "enable_visualize": false
         },
         {
@@ -44,7 +44,7 @@
                 "tfg:textures/gui/field_guide/charcoal_pit/charcoal_pit_3.png",
                 "tfg:textures/gui/field_guide/charcoal_pit/charcoal_pit_4.png"
             ],
-            "text": "$(bold)Tutorial Slideshow:$() Creating a 2x2x2 charcoal pit.",
+            "text": "$(bold)Samouczek obrazkowy:$() Budowa mielerza o wymiarach 2×2×2.",
             "border": true
         },
         {
@@ -241,7 +241,7 @@
                     "C": "gtceu:coke_oven[facing=north]"
                 }
             },
-            "text": "An example coke oven with three hatches, suitable for item input, item output, and fluid output.",
+            "text": "Przykładowy piec koksowniczy z trzema włazami umożliwiającymi wprowadzanie przedmiotów, wyprowadzanie przedmiotów i wyprowadzanie płynów.",
             "enable_visualize": true
         },
         {

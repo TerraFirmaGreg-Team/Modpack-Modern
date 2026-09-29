@@ -27,7 +27,7 @@
     },
     {
       "type": "tfg:multimultiblock",
-      "text": "The aging stages of a wheel of cheese: $(thing)Fresh$() + 28 Days → $(thing)Aged$() + 112 Days → $(thing)Vintage$().",
+      "text": "Etapy dojrzewania koła sera: $(thing)Świeży$() + 28 dni → $(thing)Dojrzały$() + 112 dni → $(thing)Klasyczny$().",
       "multiblocks": [
         {
           "pattern": [

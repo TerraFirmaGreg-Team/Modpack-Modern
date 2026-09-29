@@ -23,7 +23,7 @@
                 "tfg:textures/gui/field_guide/sewing_preview.png",
                 "tfg:textures/gui/field_guide/sewing_table.png"
             ],
-            "text": "Recipe preview and filled recipe.",
+            "text": "Podgląd przepisu oraz ukończony wzór.",
             "border": true
         },
         {
@@ -39,7 +39,7 @@
             "anchor": "banner_loom",
             "title": "Krosno do sztandarów",
             "recipe": "tfc:crafting/vanilla/loom",
-            "text": "The banner loom, for making things with banner patterns, can be crafted to do work with banner patterns."
+            "text": "Krosno do sztandarów można wytworzyć, aby nanosić wzory na sztandary."
         },
         {
             "type": "patchouli:spotlight",

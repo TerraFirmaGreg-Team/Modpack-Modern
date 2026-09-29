@@ -33,7 +33,7 @@
                     "C": "tfc:ore/small_native_copper"
                 }
             },
-            "name": "Float Ore",
+            "name": "Luźna ruda",
             "text": "When broken: dust indicators drop tiny piles of dust, gem buds drop $(t:Unless broken with a Gem Saw!)chipped gems$(), and small ores give, well, small ores.",
             "enable_visualize": false
         },
@@ -129,7 +129,7 @@
             "images": [
                 "tfg:textures/gui/field_guide/prospecting/alloy.png"
             ],
-            "text": "Example alloy recipe for bronze showing 70-80% Copper + 20-30% Tin = Bronze.",
+            "text": "Przykładowy przepis na stop brązu: 70-80% miedzi + 20-30% cyny = brąz.",
             "title": "Przepis na stop",
             "border": false
         },
@@ -167,7 +167,7 @@
             "texture_width": 1024,
             "height": 1024,
             "texture_height": 1024,
-            "text": "Colored steel pro-picks: The large $(bold)$(#D68400)❗$() is from per-vein style x-ray, and the smaller ones are from per-block style x-ray.",
+            "text": "Kilofy geologiczne z czerwonej i niebieskiej stali: duży symbol $(bold)$(#D68400)❗$() jest wyświetlany w trybie widoku rentgenowskiego „na żyłę”, a mniejsze symbole w trybie „na blok”.",
             "title": "Widok kilofa geologicznego",
             "images": [
                 "tfg:textures/gui/field_guide/prospecting/tfg_prospectors_pick_xray.png"
@@ -197,7 +197,7 @@
                 "tfg:textures/gui/field_guide/prospecting/tfg_luv_ore_prospector.png"
             ],
             "border": true,
-            "text": "An example of what you may see using the $(#e373ff)LuV ore prospector$(). Keep your battery charged!"
+            "text": "Przykład tego, co możesz zobaczyć za pomocą $(#e373ff)wykrywacza rud AN$().Pamiętaj o naładowaniu baterii!"
         },
         {
             "type": "patchouli:relations",

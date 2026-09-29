@@ -1,5 +1,5 @@
 {
-    "name": "Exploration Gear",
+    "name": "Wyposażenie do eksploracji",
     "category": "tfg:logistics",
     "icon": "sns:hiking_boots",
     "pages": [
@@ -100,7 +100,7 @@
             "type": "patchouli:spotlight",
             "anchor": "hang_glider",
             "item": "hangglider:hang_glider,hangglider:reinforced_hang_glider",
-            "text": "The $(item)Hang Glider$() lets you travel horizontally long distances, which makes it great for crossing wide open areas."
+            "text": "$(item)Lotnia$() pozwala podróżować poziomo przez duże odległości, co sprawia, że jest świetna do przemierzania otwartych obszarów."
         },
         {
             "type": "patchouli:spotlight",

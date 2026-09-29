@@ -29,7 +29,7 @@
             "images": [
                 "tfg:textures/gui/field_guide/screens/calendar_screen.png"
             ],
-            "text": "The Calendar Screen showing the $(thing)Season$(), the $(thing)Day$(), and the $(thing)Date$().",
+            "text": "Ekran kalendarza wyświetlający $(thing)porę roku$(), $(thing)dzień$() i $(thing)datę$().",
             "border": false
         },
         {

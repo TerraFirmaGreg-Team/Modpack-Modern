@@ -62,7 +62,7 @@
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Drinking Vessels",
+            "title": "Naczynia do picia",
             "item": {
                 "tag": "tfg:drinking_vessels"
             },
@@ -222,7 +222,7 @@
         {
             "type": "patchouli:text",
             "anchor": "parching_transient_effect",
-            "text": "🧂$(bold) Parching$()$(li)Gives the player the $(n)Thirsty$() effect with 1 minute of duration per 1 nutrient point. With a max duration of 8min.$()"
+            "text": "🧂$(bold) Wysuszenie$() $(li)Nakłada na gracza efekt $(n)Pragnienia$() na 1 minutę za każdy punkt wartości odżywczej, maksymalnie na 8 minut.$()"
         },
         {
             "type": "patchouli:text",

@@ -38,7 +38,7 @@
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "Process of tamping, applying base course, and paving with bricks.",
+            "text": "Proces ubijania gruntu, układania podstawy i ceglanego wykończenia.",
             "multiblocks": [
                 {
                     "pattern": [
@@ -103,7 +103,7 @@
         },
         {
             "type": "patchouli:multiblock",
-            "text": "Road construction via hoggin mix.",
+            "text": "Budowa drogi z użyciem mieszanki żwirowo-gliniastej.",
             "enable_visualize": false,
             "multiblock": {
                 "pattern": [
@@ -166,7 +166,7 @@
             "type": "patchouli:spotlight",
             "anchor": "stone",
             "item": "tag:rnr:flagstone_road_items,tag:rnr:cobble_road_items,tag:rnr:brick_road_items",
-            "title": "Stone Pavers",
+            "title": "Nawierzchnia kamienna",
             "text": "A variety of different stone walking surfaces can be applied over a base course, and all provide a $(thing)$(bold)20% Speed Bonus$().$(li)$(thing)$(bold)Cobbled Roads$() are created by adding $(item)Loose Rocks$() over the base course.$(li)$(thing)$(bold)Sett Roads$() can be constructed from stone or ceramic $(item)Bricks$().$(li)$(thing)$(bold)Flagstone Roads$() can be constructed from stone or sandstone $(item)Flagstones$()."
         },
         {
@@ -449,7 +449,7 @@
             "type": "patchouli:spotlight",
             "item": "gtceu:solvent_spray_can",
             "title": "Usuwanie oznaczeń",
-            "text": "To redesign the road, use a $(thing)Spray Can (Solvent)$() on an asphalt road or slab to erase the marking at that location."
+            "text": "Aby zmienić oznakowanie drogi, użyj $(thing)spreju z rozpuszczalnikiem$() na asfaltowej drodze lub płycie, aby usunąć oznakowanie z wybranego miejsca."
         },
         {
             "type": "patchouli:spotlight",
@@ -478,7 +478,7 @@
                 "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_gui_width.png"
             ],
             "border": true,
-            "text": "The cart allows you to adjust the width of the path in the GUI, opened with $(item)$(k:key.sneak)-$(k:key.use)$()."
+            "text": "Wóz pozwala dostosować szerokość ścieżki w jego interfejsie, otwieranym przez $(item)$(k:key.sneak)-$(k:key.use)$()."
         },
         {
             "type": "patchouli:image",
@@ -495,7 +495,7 @@
                 "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_gui_random.png"
             ],
             "border": true,
-            "text": "The cart has a mode that will lay down paving materials in a random pattern."
+            "text": "Wóz ma tryb, który będzie układał materiały w losowej kolejności."
         },
         {
             "type": "patchouli:image",
@@ -515,7 +515,9 @@
                 "tfg:the_world/geology",
                 "tfg:the_world/wild_animals",
                 "tfg:agriculture/animal_husbandry",
-                "tfg:logistics/tack"
+                "tfg:logistics/tack",
+                "tfg:logistics/trains",
+                "tfg:logistics/boats"
             ]
         }
     ],

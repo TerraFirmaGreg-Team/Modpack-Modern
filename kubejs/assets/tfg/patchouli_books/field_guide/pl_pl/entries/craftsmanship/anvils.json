@@ -53,7 +53,7 @@
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "Mining all six sides of a piece of raw stone - once complete, the center block will pop off as an item.",
+            "text": "Należy odsłonić wszystkie sześć ścian bloku surowej skały - wtedy środkowy blok wypadnie jako przedmiot.",
             "multiblocks": [
                 {
                     "pattern": [
@@ -275,7 +275,7 @@
             "type": "patchouli:text",
             "anchor": "working",
             "text": "In order to work an item on the anvil, you will need to $(item)$(k:key.use)$() the anvil, to open up the anvil interface, seen on the next image. On the left, there are two input slots for items - for working, the target item must be in the right-hand slot. You will also need a hammer while working, either in the hammer slot on the right of the anvil $(bold)or$() in your main hand. The hammer will gradually take damage as you work the item.",
-            "title": "Pracuje"
+            "title": "Kucie"
         },
         {
             "type": "patchouli:image",
@@ -430,7 +430,7 @@
             "border": false,
             "anchor": "ui_explained",
             "title": "Interfejs i Ty",
-            "text": "Interfejs kowadła z włączonym TFC Anvil Helper, z kolorystycznymi oznaczeniami."
+            "text": "Interfejs kowadła z włączonym TFC Anvil Helper, z kolorowymi oznaczeniami."
         },
         {
             "type": "patchouli:text",
@@ -549,7 +549,7 @@
                 "tfg:textures/gui/field_guide/anvil_working_guide/wrought_iron_pickaxe_head_some_work.png",
                 "tfg:textures/gui/field_guide/anvil_working_guide/wrought_iron_pickaxe_head_complete.png"
             ],
-            "text": "An Ingot with No Work → Desired Work Value Reached → Doing the Required Steps for our Item."
+            "text": "Nieobrobiona sztabka → Osiągnięcie docelowej wartości obróbki → Wykonanie czynności wymaganych dla danego przedmiotu."
         },
         {
             "type": "patchouli:text",

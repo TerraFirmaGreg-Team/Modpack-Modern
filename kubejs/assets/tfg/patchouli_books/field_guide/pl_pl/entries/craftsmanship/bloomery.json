@@ -48,7 +48,7 @@
                 }
             },
             "name": "Struktura dymarki",
-            "text": "A full size bloomery. The bloomery block will open and close with $(item)$(k:key.use)$().",
+            "text": "Pełnowymiarowa dymarka. Blok dymarki można otwierać i zamykać za pomocą $(item)$(k:key.use)$().",
             "enable_visualize": true
         },
         {
@@ -150,7 +150,7 @@
                     "text": "3 mW"
                 }
             ],
-            "text": "Remember that a little iron waste is not worth your time worrying about!",
+            "text": "Pamiętaj, że nie warto przejmować się niewielkimi stratami żelaza!",
             "title": "Proporcje dla dymarki",
             "legend": [],
             "columns": 5,
@@ -193,7 +193,7 @@
             "type": "patchouli:text",
             "anchor": "tips",
             "text": "$(li)If the bloomery finds contains more items than it can handle it will try to spit them out the front.$(li)To retrieve your items from a bloomery that is not lit, break the bloomery block.$(li)Blooms will only melt into cast iron, not wrought iron. They must be worked!",
-            "title": "Bloomery Tips"
+            "title": "Wskazówki dotyczące dymarki"
         },
         {
             "type": "patchouli:spotlight",
@@ -242,7 +242,7 @@
                 }
             },
             "name": "Struktura",
-            "text": "A steam bloomery requires item input and item output buses, a steam input hatch, and three Bronze Firebox Casings.",
+            "text": "Dymarka parowa wymaga parowej magistrali wejściowej i wyjściowej, parowego zaworu wejściowego oraz trzech obudów paleniska z brązu.",
             "enable_visualize": true
         },
         {

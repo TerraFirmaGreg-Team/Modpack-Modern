@@ -22,13 +22,13 @@
                 "tfc:textures/gui/book/tutorial/chisel_stair.png",
                 "tfc:textures/gui/book/tutorial/chisel_slab.png"
             ],
-            "text": "$(bold)Tutorial Slideshow:$() The three chisel modes usable on a $(thing)Raw Limestone$() block.",
+            "text": "$(bold)Samouczek obrazkowy:$() Trzy tryby dłuta, których można użyć na $(thing)surowym wapieniu$().",
             "border": true
         },
         {
             "type": "patchouli:crafting",
             "recipe": "tfc:crafting/rock/marble_smooth",
-            "text": "The chisel can also be used in some crafting recipes as a shortcut for large quantities."
+            "text": "Dłuta można również używać w niektórych przepisach wytwarzania, aby szybciej przetwarzać duże ilości materiału."
         },
         {
             "type": "patchouli:text",

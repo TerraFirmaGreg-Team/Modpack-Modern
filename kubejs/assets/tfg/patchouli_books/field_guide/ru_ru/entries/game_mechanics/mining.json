@@ -19,7 +19,7 @@
         },
         {
             "type": "patchouli:spotlight",
-            "anchor": "tools",
+            "anchor": "инструменты",
             "title": "Инструменты",
             "item": "tag:tfc:pickaxes,tag:forge:tools/mining_hammers",
             "text": "Before starting, you should prepare the right equipment for the job. You will need a $(thing)pickaxe$() or $(thing)mining hammer$() to mine ores. A mining hammer has an advantage of breaking a 3x3 area of blocks at once.$(br2)A regular $(thing)hammer$() can also break stone type blocks, but will not drop ores. It can still be useful for $(l:craftsmanship/anvils#raw_rock)extracting$() raw stone, however."

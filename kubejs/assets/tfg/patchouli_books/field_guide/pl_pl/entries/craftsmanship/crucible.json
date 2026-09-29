@@ -76,7 +76,7 @@
             "images": [
                 "tfg:textures/gui/field_guide/prospecting/crucible_alloying.png"
             ],
-            "text": "$(4)◼$() - Alloyed result.$(br)$(3)◼$() - List of contributing metal fractions.",
+            "text": "$(4)◼$() - Uzyskany stop.$(br)$(3)◼$() - Lista metali wchodzących w skład.",
             "border": false,
             "title": "Roztopiony stop"
         },
@@ -91,7 +91,7 @@
             "type": "patchouli:multiblock",
             "multiblock_id": "tfcchannelcasting:example",
             "name": "Układ odlewniczy",
-            "text": "Channels will evenly distribute molten metal to all connected tables. Tables will not have a chance to break the mold inside.",
+            "text": "Kanały równomiernie rozprowadzają stopiony metal do wszystkich połączonych form. Formy umieszczone na tych stołach nie niszczą się.",
             "enable_visualize": false
         },
         {

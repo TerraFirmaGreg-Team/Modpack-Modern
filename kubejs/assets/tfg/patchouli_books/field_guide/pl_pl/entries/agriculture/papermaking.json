@@ -46,7 +46,7 @@
             "anchor": "treated_hide",
             "title": "Obrobiona skóra",
             "recipe": "tfc:crafting/large_treated_hide",
-            "text": "Crafting pumice, a hammer, and scraped hide gives sections of $(thing)Treated Hide$()."
+            "text": "Połączenie pumeksu, młotka i oskrobanej skóry w przepisie wytwarzania daje kawałki $(thing)obrobionej skóry$()."
         },
         {
             "type": "patchouli:crafting",
@@ -89,7 +89,7 @@
             "recipe": "tfg:quern/soaked_hardwood_strip",
             "title": "Masa drzewna z twardego drewna",
             "anchor": "hardwood_pulp",
-            "text": "Afterward, utilize the $(l:craftsmanship/quern)Quern$() to break down the soaked strips into $(item)Hardwood Pulp$()."
+            "text": "Następnie użyj $(l:craftsmanship/quern)żaren$(), aby zmielić namoczone paski na $(item)pulpę twardego drewna$()."
         },
         {
             "type": "patchouli:crafting",

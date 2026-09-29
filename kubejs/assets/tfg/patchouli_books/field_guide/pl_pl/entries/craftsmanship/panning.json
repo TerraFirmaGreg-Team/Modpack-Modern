@@ -34,8 +34,8 @@
                     "X": "#tfc:ore_deposits"
                 }
             },
-            "name": "Example Deposit",
-            "text": "Ore deposits in gravel.",
+            "name": "Przykładowe złoże",
+            "text": "Złoża rudy w żwirze.",
             "enable_visualize": false
         },
         {
@@ -83,7 +83,7 @@
         {
             "type": "patchouli:text",
             "text": "Panning and sluicing can give a few possible products: $(thing)Ore Dusts$(), $(thing)Small Piles of Ore Dust$(), $(thing)Loose Rocks$(), and $(thing)Gems$().$(br)The probabilities for obtaining certain drops can be viewed by looking at the ore deposit in $(emi).",
-            "title": "Expected Products"
+            "title": "Możliwe produkty"
         },
         {
             "type": "patchouli:relations",

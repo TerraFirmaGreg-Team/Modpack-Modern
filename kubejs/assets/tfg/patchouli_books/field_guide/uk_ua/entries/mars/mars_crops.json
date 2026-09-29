@@ -1,21 +1,21 @@
 {
-	"name": "Mars Crops",
+	"name": "Культури Марса",
 	"category": "tfg:mars",
 	"icon": "betterend:textures/item/blossom_berry.png",
 	"pages": [
 		{
 			"type": "patchouli:text",
 			"title": "Позаземні рослини",
-			"text": "It turns out Earth isn't the only celestial body with life. During your travels, you may come across other kinds of edible flora. These all use the same mechanics you're used to on Earth (with some exceptions), and can be grown either in normal Farmland, in a Firmalife $(l:agriculture/greenhouse)Greenhouse$(), or in a GregTech Electric Greenhouse depending on your needs."
+			"text": "Виявляється, Земля — не єдине небесне тіло, на якому є життя. Під час своїх мандрів ти можеш зустріти інші види їстівної рослинності. Усі вони використовують ті самі механіки, до яких ти звик на Землі (за деякими винятками), і їх можна вирощувати на звичайній сільськогосподарській грядці, у $(l:agriculture/greenhouse)теплиці$() Firmalife або в електричній теплиці GregTech — залежно від твоїх потреб."
 		},
 		{
 			"type": "patchouli:text",
-			"text": "A $(thing)Heat Pump$() will also keep an enclosed area a stable 15 °C.$(br2)Another alternative is to use Firmalife's Greenhouse, which doesn't provide as much output, but also ignores all climate conditions."
+			"text": "$(thing)Теплова помпа$() також підтримуватиме стабільну температуру 15°C у закритому приміщенні.$(br2)Ще один варіант — використовувати теплицю Firmalife яка забезпечує меншу продуктивність, але також ігнорує всі кліматичні умови."
 		},
 		{
 			"type": "patchouli:text",
 			"title": "Зміст",
-			"text": "$(li)$(l:mars/mars_crops#amber_root)Amber Root$()$(li)$(l:mars/mars_crops#blossom_berry)Blossom Berry$()$(li)$(l:mars/mars_crops#bolux_mushroom)Bolux Mushroom$()$(li)$(l:mars/mars_crops#bulbkin)Bulbkin$()$(li)$(l:mars/mars_crops#chalmie_mushroom)Chalmie Mushroom$()$(li)$(l:mars/mars_crops#nox_berry)Nox Berry$()"
+			"text": "$(li)$(l:mars/mars_crops#amber_root)Бурштиновий корінь$()$(li)$(l:mars/mars_crops#blossom_berry)Квіткова ягода$()$(li)$(l:mars/mars_crops#bolux_mushroom)Гриб Болукс$()$(li)$(l:mars/mars_crops#bulbkin)Балбкін$()$(li)$(l:mars/mars_crops#chalmie_mushroom)Гриб Чалмі$()$(li)$(l:mars/mars_crops#nox_berry)Ягода Нокс$()"
 		},
 		{
 			"type": "patchouli:text",
@@ -25,7 +25,7 @@
 			"type": "patchouli:text",
 			"anchor": "amber_root",
 			"title": "Бурштиновий корінь",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -150 - 15 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 0 - 40 %$(br)$(bold)Nutrient$(): Phosphorus$(br2)Amber root is a single block crop. Amber seeds can be planted on farmland and will produce $(item)Amber Shoots$() which can be eaten for $(thing)Grain$()."
+			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): −15 – 15 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Зволоження$(): 0 – 40 %$(br)$(bold)Поживна речовина$(): Фосфор$(br2)Бурштиновий корінь — одноблокова культура. Бурштинове насіння можна висаджувати на сільськогосподарських грядках, після чого воно дасть $(item)бурштинові паростки$(), які можна їсти для отримання $(thing)зернові$()."
 		},
 		{
 			"type": "tfg:multimultiblock",
@@ -105,7 +105,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "blossom_berry",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -80 - 30 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 70 - 100 %$(br)$(bold)Nutrient$(): Potassium$(br2)Blossom Berry is a single block crop. Blossom Berry Seeds can be planted on farmland and will produce $(item)Blossom Berries$() which can be eaten for $(thing)Fruit$().",
+			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): −80–30 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Зволоження$(): 70–100 %$(br)$(bold)Поживна речовина$(): Калій$(br2)Квіткова ягода — одноблокова культура. Насіння квіткової ягоди можна висаджувати на сільськогосподарських грядках, де з них виростуть $(item)Квіткова ягода$(), які можна їсти для отримання $(thing)фруктових$().",
 			"title": "Цвіт ягод"
 		},
 		{
@@ -185,7 +185,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "bolux_mushroom",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -150 - 15 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 0 - 40 %$(br)$(bold)Nutrient$(): Phosphorus$(br2)Bolux Mushrooms are a single block crop. Bolux Mushroom Spores can be planted on farmland and will produce $(item)Bolux Mushrooms$() which can be eaten for $(thing)Vegetables$().$(br2)It is recommended to $(item)cook$() Bolux Mushrooms before eating.",
+			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): −150–15 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Зволоження$(): 0–40 %$(br)$(bold)Поживна речовина$(): Фосфор$(br2)Гриби болукс — одноблокова культура. Спори грибів болукс можна висаджувати на сільськогосподарських грядках, де з них виростають $(item)гриби болукс$(), які можна їсти для отримання $(thing)овочевих$().$(br2)Рекомендується $(item)приготувати$() гриби болукс перед вживанням.",
 			"title": "Гриб Болукс"
 		},
 		{
@@ -265,7 +265,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "bulbkin",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -100 - 30 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 0 - 60 %$(br)$(bold)Nutrient$(): Nitrogen$(br2)Bulbkins are a spreading crop. Bulbkin Seeds can be planted on farmland and will place up to two $(item)Bulbkin Blocks$() on the ground next to it while it is mature. If the bulbkin blocks are harvested, and the plant matures again, it can grow more bulbkins. Bulbkins can be eaten for $(thing)Fruit$() or processed into $(thing)Glowstone Dust$().$(br)",
+			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): -100–30 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Зволоження$(): 0–60 %$(br)$(bold)Поживна речовина$(): Азот$(br2)Балбкіни — це розлогі культури. Насіння балбкіна можна висаджувати на сільськогосподарських грядках, і коли рослина дозріє, вона розмістить на землі поруч із собою до двох $(item)блоків балбкіна$(). Якщо зібрати блоки балбкіна, то рослина знову дозріє, і вона зможе виростити нові балбкіни. Балбкіни можнадля отримання $(thing)фруктових$() або переробити на $(thing)пил світлокаменю$().$(br)",
 			"title": "Балбкін"
 		},
 		{
@@ -374,7 +374,7 @@
 			"type": "patchouli:text",
 			"anchor": "chalmie_mushroom",
 			"title": "Гриб Чалмі",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -150 - 15 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 0 - 40 %$(br)$(bold)Nutrient$(): Phosphorus$(br2)Chalmie Mushrooms are a single block crop. Chalmie mushroom spores can be planted on farmland and will produce $(item)Chalmie Mushrooms$() which can be eaten for $(thing)Vegetables$().$(br2)It is recommended to $(item)cook$() Chalmie Mushrooms before eating."
+			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): -150–15 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Зволоження$(): 0–40 %$(br)$(bold)Поживна речовина$(): Фосфор$(br2)Гриби чалмі — одноблокова культура. Спори грибів чалмі можна висаджувати на сільськогосподарських грядках, де з них виростають $(item)гриби чалмі$(), які можна їсти для отримання $(thing)овочевих$().$(br2)Рекомендується $(item)приготувати$() гриби чалмі перед вживанням."
 		},
 		{
 			"type": "tfg:multimultiblock",
@@ -454,7 +454,7 @@
 			"type": "patchouli:text",
 			"anchor": "nox_berry",
 			"title": "Ягода Нокс",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -80 - 30 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 50 - 100 %$(br)$(bold)Nutrient$(): Potassium$(br2)Nox Berries are a single block crop. Nox berry seeds can be planted on farmland and will produce $(item)Nox Berries$() which can be eaten for $(thing)Fruit$().$(br2)It is recommended to $(item)cook$() Nox Berries before eating."
+			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): −80–30 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Зволоження$(): 50–100 %$(br)$(bold)Поживна речовина$(): Калій$(br2)Ягоди нокс — одноблокова культура. Насіння ягід нокс можна висаджувати на сільськогосподарських грядках, де з них виростають $(item)ягоди нокс$(), які можна їсти для отримання $(thing)фруктових$().$(br2)Рекомендується $(item)готувати$() ягоди нокс перед вживанням."
 		},
 		{
 			"type": "tfg:multimultiblock",

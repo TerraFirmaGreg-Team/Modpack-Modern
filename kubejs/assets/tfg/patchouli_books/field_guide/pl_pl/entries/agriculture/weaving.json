@@ -16,7 +16,7 @@
         {
             "type": "patchouli:crafting",
             "anchor": "spinning",
-            "title": "Spinning",
+            "title": "Przędzenie",
             "recipe": "tfc:kjs/damage/shapeless/wool_yarn",
             "text": "Przetwarzanie $(thing)wełny$() z wrzecionem daje $(thing)wełnianą przędzę$()."
         },

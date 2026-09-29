@@ -36,9 +36,9 @@
                     "X": "tfc:plant/anthurium"
                 }
             },
-            "name": "Standardowy",
+            "name": "Zwykłe rośliny",
             "anchor": "standard_plants",
-            "text": "Standard plants are like small flowers. They grow on grass, dirt, and farmland.",
+            "text": "Zwykłe rośliny są jak małe kwiaty. Rosną na trawie i polach uprawnych.",
             "enable_visualize": false
         },
         {
@@ -100,7 +100,7 @@
                 }
             },
             "name": "Pnącza",
-            "text": "Creeping plants take the shape of the surrounding block faces. They mostly spawn in blobs on the ground",
+            "text": "Rośliny płożące się porastają powierzchnie sąsiednich bloków, dopasowując się do ich kształtu. Najczęściej tworzą nieregularne skupiska na ziemi.",
             "enable_visualize": false
         },
         {
@@ -203,8 +203,8 @@
                     "Y": "tfc:plant/liana"
                 }
             },
-            "name": "Lamentorośle",
-            "text": "Lamentorośle rosną w dół od bloku, do którego są zaczepione.",
+            "name": "Pnącza zwisające",
+            "text": "Pnącza zwisające rosną w dół od bloku, do którego są zaczepione.",
             "enable_visualize": false
         },
         {
@@ -226,8 +226,8 @@
                     "Y": "tfc:plant/arundo_plant"
                 }
             },
-            "name": "Krętorośle",
-            "text": "Twisting vines twist upward from the Earth. They can come in a solid variant.",
+            "name": "Pnącza wijące się",
+            "text": "Pnącza wijące się wyrastają z ziemi ku górze. Mogą również występować w zwartej odmianie.",
             "enable_visualize": false
         },
         {
@@ -340,7 +340,7 @@
                 }
             },
             "name": "Wodorosty",
-            "text": "Wodorosty to krętorośle rosnące pod wodą.",
+            "text": "Wodorosty to wijące się pnącza rosnące pod wodą.",
             "enable_visualize": false
         },
         {
@@ -363,7 +363,7 @@
                 }
             },
             "name": "Wielkomorszcz",
-            "text": "Tree kelp grow into intricate trees underwater. The flowers can be harvested with a $(thing)Knife$().",
+            "text": "Wielkomorszcz tworzy pod wodą rozgałęzione struktury przypominające drzewa. Jego kwiaty można zbierać za pomocą $(thing)noża$().",
             "enable_visualize": false
         },
         {
@@ -651,7 +651,7 @@
             "type": "patchouli:crafting",
             "anchor": "seed_ball",
             "recipe": "firmalife:crafting/seed_ball",
-            "text": "$(item)Kule nasienne() mogą być używane do sadzenia różnego rodzaju traw. Może to być przydatne po wyczyszczeniu obszaru pod zbudowanie bazy. Przepis na kulę nasienną wymaga $(item)Kompostu$() i 4 $(thing)Nasion$()."
+            "text": "$(item)Kule nasienne$() służą do sadzenia różnych rodzajów trawy. Może się to przydać po oczyszczeniu terenu pod budowę bazy. Do wykonania kuli nasiennej potrzeba $(item)kompostu$() i 4 $(thing)nasion$()."
         },
         {
             "type": "patchouli:multiblock",
