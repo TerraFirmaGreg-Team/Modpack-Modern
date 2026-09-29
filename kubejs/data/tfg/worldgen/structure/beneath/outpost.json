@@ -6,6 +6,7 @@
 	"biomes": "#tfg:has_structure/tower",
 	"step": "surface_structures",
 	"terrain_adaptation": "none",
+	"start_projection": "floor",
 	"start_height": {
 		"absolute": 93
 	},
