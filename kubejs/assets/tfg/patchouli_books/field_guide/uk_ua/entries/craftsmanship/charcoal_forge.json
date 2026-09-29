@@ -86,7 +86,7 @@
         {
             "type": "patchouli:spotlight",
             "item": "tfc:bellows",
-            "title": "Міхи",
+            "title": "Bellows",
             "anchor": "bellows",
             "text": "$(thing)Міхи$() можна використовувати для підвищення температури пристрою завдяки кращому подачі кисню. Однак через горіння за вищої температури вони також швидше витрачатимуть паливо. Міхи можуть подавати повітря в блок безпосередньо перед ними та в блок на один рівень нижче. Це, наприклад, дає змогу подавати повітря в $(l:craftsmanship/blast_furnace)доменну піч$() або $(l:craftsmanship/charcoal_forge#charcoal_forge)вугільний горн$()."
         },
@@ -100,7 +100,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Додаткове читання",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:agriculture/leather_making",

@@ -28,7 +28,7 @@
 			"type": "patchouli:entity",
 			"entity": "tfc:frog",
 			"scale": 1,
-			"name": "개구리",
+			"name": "Frog",
 			"anchor": "frog",
 			"text": "$(thing)Frogs$() can be found in the top and middle layers. They can be tamed and eaten."
 		},
@@ -124,7 +124,7 @@
 			"type": "patchouli:entity",
 			"entity": "tfc:crocodile",
 			"scale": 0.5,
-			"name": "악어",
+			"name": "Crocodile",
 			"anchor": "crocodile",
 			"text": "$(thing)Crocodiles$() can be found in the top and middle layers, waiting in ambush!"
 		},

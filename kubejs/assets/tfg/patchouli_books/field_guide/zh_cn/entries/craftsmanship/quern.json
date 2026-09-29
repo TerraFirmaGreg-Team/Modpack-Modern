@@ -1,5 +1,5 @@
 {
-    "name": "手推磨",
+    "name": "Quern",
     "category": "tfg:craftsmanship",
     "icon": "tfc:quern",
     "pages": [
@@ -53,19 +53,19 @@
             "type": "tfg:quern_recipe",
             "recipe": "tfg:quern/copper_crushed_ore_from_normal_raw_ore",
             "text": "$(l:game_mechanics/mining#processing)Ores$() can be crushed to obtain more metal.",
-            "title": "粉碎矿石"
+            "title": "Crushed Ore"
         },
         {
             "type": "tfg:quern_recipe",
             "recipe": "tfg:quern/sulfur",
             "text": "手推磨可用于将矿粉（如 $(thing)硫磺$()）制成各种 $(thing)粉末$()。$(thing)宝石$() 也可被研磨成粉末。",
-            "title": "粉末"
+            "title": "Powders"
         },
         {
             "type": "tfg:quern_recipe",
             "recipe": "tfc:quern/red_dye",
             "text": "$(thing)Dye$() can be obtained from various flowers.",
-            "title": "染料"
+            "title": "Dyes"
         },
         {
             "type": "tfg:quern_recipe",
@@ -74,7 +74,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "延伸阅读",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:the_world/geology",

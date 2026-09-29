@@ -17,13 +17,13 @@
         },
         {
             "type": "patchouli:crafting",
-            "title": "Panier de Récolte",
+            "title": "Harvest Basket",
             "recipe": "tfg:shaped/harvest_basket_from_papyrus",
             "text": "Un $(item)Panier de cueillette$() de base peut être fait à partir de papyrus trempé ou de bois dur."
         },
         {
             "type": "patchouli:relations",
-            "title": "Pour aller plus loin",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:agriculture/growing_crops",

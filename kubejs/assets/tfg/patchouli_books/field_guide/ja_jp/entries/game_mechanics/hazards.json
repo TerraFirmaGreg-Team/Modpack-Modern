@@ -7,7 +7,7 @@
 	"pages": [
 		{
 			"type": "patchouli:spotlight",
-			"title": "危険物",
+			"title": "Hazardous Materials",
 			"item": "gtceu:cobaltite_dust",
 			"text": "一部の$(thing)鉱石$()や$(thing)粉$()、$(thing)化学物質$()は危険物質であり、インベントリ内にあるだけで$(item)デバフ$()を受けたり、最悪の場合$(item)死んでしまう$()ことがあります。所持中は$(item)ステータスエフェクト$()として画面に表示されます。$(br2)これらの影響は、$(thing)フェイスマスク$()や$(thing)ゴム手袋$()、$(thing)危険物用スーツ$()といった装備で防ぐことができます。"
 		},
@@ -30,7 +30,7 @@
 		},
 		{
 			"type": "patchouli:crafting",
-			"title": "フェイスマスク",
+			"title": "Face Mask",
 			"recipe": "gtceu:shaped/face_mask",
 			"text": "$(thing)フェイスマスク$()は、ヒ素中毒などの$(item)吸入$()系の有害効果から身を守ることができます。",
 			"anchor": "mask"
@@ -38,7 +38,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:rubber_gloves",
-			"title": "ゴム手袋",
+			"title": "Rubber Gloves",
 			"link_recipes": true,
 			"anchor": "gloves",
 			"text": "The $(thing)Rubber gloves$() can either be made from $(l:agriculture/leather_making)Leather$() and $(thing)Latex$(), or out of $(thing)Rubber Sheets$(). They provide protection from any $(item)Skin Contact$() hazards, such as $(thing)Beryllium Dust$()."
@@ -77,21 +77,21 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "ヒ素中毒",
+			"title": "Arsenicosis",
 			"item": "gtceu:arsenic_dust",
 			"anchor": "arsenicosis",
 			"text": "$(thing)Arsenicosis$() is an illness caused by inhaling $(thing)Arsenic$() from its dust, vapor or $(thing)Realgar$(). It slowly increases hunger, followed by nausea, and eventually $(bold)death$().$(br2)The $(l:game_mechanics/hazards#mask)Face Mask$() and the $(l:game_mechanics/hazards#hazmat)Hazmat Suit$() provide protection from $(thing)Arsenicosis$()."
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "石綿症",
+			"title": "Asbestosis",
 			"item": "gtceu:asbestos_dust",
 			"anchor": "asbestosis",
 			"text": "$(thing)Asbestosis$() is an illness caused by inhaling $(thing)Asbestos$() dust. If carried for long enough, it causes hunger.$(br2)The $(l:game_mechanics/hazards#mask)Face Mask$() and the $(l:game_mechanics/hazards#hazmat)Hazmat Suit$() provide protection from $(thing)Asbestosis$()."
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "ベリリウム症",
+			"title": "Berylliosis",
 			"item": "gtceu:beryllium_dust",
 			"anchor": "berylliosis",
 			"text": "$(thing)Berylliosis$() is an illness caused by skin contact with $(thing)Beryllium dust$() or $(thing)Liquid Beryllium$(). At first, it might seem that it doesn't do much. However, the longer the exposure, the faster it $(bold)kills$() you.$(br)$(l:game_mechanics/hazards#gloves)Gloves$() and the $(l:game_mechanics/hazards#hazmat)Hazmat Suit$() provide protection from $(thing)Berylliosis$()."
@@ -112,7 +112,7 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "発癌性",
+			"title": "Carcinogens",
 			"item": "gtceu:chromium_dust",
 			"anchor": "carcinogens",
 			"text": "The $(l:game_mechanics/hazards#mask)Face Mask$() protects from inhalation of harmful chemicals, while the $(l:game_mechanics/hazards#gloves)Gloves$() protect from contact with $(thing)Chromium Dust$().$(br)The $(l:game_mechanics/hazards#hazmat)Hazmat Suit$() protects from both.$(br)In case of severe exposure, it is advised to take some $(l:game_mechanics/hazards#medicine)Medicines$() to $(thing)Prevent$() any possible damage."
@@ -133,7 +133,7 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "メタノール中毒",
+			"title": "Methanol Poisoning",
 			"item": "gtceu:methanol_bucket",
 			"anchor": "methanol_poisoning",
 			"text": "$(thing)Methanol poisoning$() is caused by inhalation of $(thing)Methanol$(). It causes a strong $(item)Blindness$() effect.$(br)The $(l:game_mechanics/hazards#mask)Face Mask$() and the $(l:game_mechanics/hazards#hazmat)Hazmat Suit$() protects from inhalation."
@@ -154,7 +154,7 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "珪肺",
+			"title": "Silicosis",
 			"item": "gtceu:silicon_dioxide_dust",
 			"anchor": "silicosis",
 			"text": "$(thing)Silicosis$() is an illness caused by inhaling $(thing)Silicon Dioxide Dust$(). Exposure causes a $(item)Reduction$() in both $(item)Health$() and the $(item)Air Supply$() you have while diving $(thing)Under Water$().$(br2)The $(l:game_mechanics/hazards#mask)Face Mask$() and the $(l:game_mechanics/hazards#hazmat)Hazmat Suit$() provide protection from inhalation of silicon dioxide."
@@ -174,7 +174,7 @@
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "さらに読む",
+			"title": "Further Reading",
 			"anchor": "relations",
 			"entries": [
 				"tfg:the_world/geology",

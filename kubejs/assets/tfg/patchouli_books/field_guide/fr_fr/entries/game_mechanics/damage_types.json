@@ -24,7 +24,7 @@
             "type": "patchouli:text",
             "anchor": "crushing",
             "text": "$(thing)Crushing$() damage is dealt by blunt weapons like $(thing)Hammers$() and $(thing)Maces$(). $(thing)Zombies$() deal crushing damage, and are somewhat resistant to it. $(thing)Creepers$() also resist some crushing damage$(). $(thing)Skeletons$() are vulnerable to it.",
-            "title": "Écrasement"
+            "title": "Crushing"
         },
         {
             "type": "patchouli:text",
@@ -38,7 +38,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Pour aller plus loin",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:craftsmanship/metallurgy",

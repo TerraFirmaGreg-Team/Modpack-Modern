@@ -1,5 +1,5 @@
 {
-    "name": "Źródła światła",
+    "name": "Light Sources",
     "category": "tfg:game_mechanics",
     "sortnum": 6,
     "icon": "tfc:candle",
@@ -7,13 +7,13 @@
         {
             "type": "patchouli:text",
             "text": "$(li)$(bold)$(l:game_mechanics/lighting#torches)Torches$()$(li)$(bold)$(l:game_mechanics/lighting#candles)Candles$()$(li)$(bold)$(l:game_mechanics/lighting#jack_o_lanterns)Jack 'o Lanterns$()$(li)$(bold)$(l:game_mechanics/lighting#lamps)Lamps$()$(li)$(bold)$(l:game_mechanics/lighting#permanent_light)Permanent Light$()",
-            "title": "Indeks",
+            "title": "Index",
             "anchor": "index"
         },
         {
             "type": "patchouli:text",
             "anchor": "intro",
-            "title": "Wprowadzenie",
+            "title": "Introduction",
             "text": "There are a number of ways to produce light in $(tfg_short). However, nearly all light sources do not last forever!$(br)Unlike vanilla Minecraft, you will need to keep an eye on your lights to re-ignite them when they burn out. The higher quality the light source is, the longer it will last.$(br)Permanent lightsources aren't available until much later, unless you get creative."
         },
         {
@@ -60,7 +60,7 @@
         {
             "type": "patchouli:spotlight",
             "anchor": "candles",
-            "title": "Świece",
+            "title": "Candles",
             "item": "tag:tfc:candles",
             "text": "Candles are made from $(thing)Wax$() or $(thing)Tallow$() and last for 30 days before needing to be relit.$(br)Candles may be placed and lit on the ground or in $(l:cooking/jam#jarbnet)Jarbnets$(). The amount of candles placed effects the light-level they emit."
         },
@@ -105,13 +105,13 @@
                 }
             },
             "name": "",
-            "text": "There are many fun designs of Jack 'o Lanterns to choose from!",
+            "text": "Do wyboru jest wiele ciekawych wzorów latarni dyniowych!",
             "enable_visualize": false
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "lamps",
-            "title": "Lampy",
+            "title": "Lamps",
             "item": "tag:tfc:lamps",
             "text": "Lamps are a long term source of light that burn liquid fuels. Lamps retain their fuel content when broken. You can fuel lamps automatically with $(thing)Pipes$() or manually with $(l:cooking/drinking_containers)Fluid Containers$().$(br)You can check capable lamp fuels in $(emi) by viewing a lamp. $(thing)Lava$() will burn forever but must be in a $(item)Blue Steel Lamp$(). $(thing)Liquid Glowstone$() is the same, but works in any lamp."
         },
@@ -142,7 +142,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Czytaj dalej",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:craftsmanship/sticks_and_stones",

@@ -1,5 +1,5 @@
 {
-    "name": "Нижняя часть жёрнова",
+    "name": "Quern",
     "category": "tfg:craftsmanship",
     "icon": "tfc:quern",
     "pages": [
@@ -53,19 +53,19 @@
             "type": "tfg:quern_recipe",
             "recipe": "tfg:quern/copper_crushed_ore_from_normal_raw_ore",
             "text": "$(l:game_mechanics/mining#processing)Ores$() can be crushed to obtain more metal.",
-            "title": "Дроблённая Руда"
+            "title": "Crushed Ore"
         },
         {
             "type": "tfg:quern_recipe",
             "recipe": "tfg:quern/sulfur",
             "text": "$(l:mechanics/dye)Краситель$() можно получить из различных цветов.",
-            "title": "Порошки"
+            "title": "Powders"
         },
         {
             "type": "tfg:quern_recipe",
             "recipe": "tfc:quern/red_dye",
             "text": "$(thing)Dye$() can be obtained from various flowers.",
-            "title": "Красители"
+            "title": "Dyes"
         },
         {
             "type": "tfg:quern_recipe",
@@ -74,7 +74,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Читать дальше",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:the_world/geology",

@@ -43,7 +43,7 @@
     {
         "type": "patchouli:crafting",
         "anchor": "bottle_label",
-        "title": "Butelio etiketė",
+        "title": "Bottle Label",
         "recipe": "firmalife:crafting/bottle_label",
         "text": "$(thing)Bottle labels$() can be renamed in a scribing station, and will add their name to the wine's tooltip."
     },

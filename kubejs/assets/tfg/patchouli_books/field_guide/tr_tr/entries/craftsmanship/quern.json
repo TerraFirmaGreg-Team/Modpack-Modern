@@ -1,5 +1,5 @@
 {
-    "name": "El değirmeni",
+    "name": "Quern",
     "category": "tfg:craftsmanship",
     "icon": "tfc:quern",
     "pages": [
@@ -74,7 +74,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Ek Okuma",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:the_world/geology",

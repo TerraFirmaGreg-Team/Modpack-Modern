@@ -400,7 +400,7 @@
                     "bold": true
                 },
                 {
-                    "text": "Basilikum"
+                    "text": "Basil"
                 },
                 {
                     "text": "12 - 25"
@@ -409,7 +409,7 @@
                     "text": "300 - 500"
                 },
                 {
-                    "text": "Lorbeer"
+                    "text": "Bay Laurel"
                 },
                 {
                     "text": "8 - 14"
@@ -418,7 +418,7 @@
                     "text": "25 - 225"
                 },
                 {
-                    "text": "Kardamon"
+                    "text": "Cardamom"
                 },
                 {
                     "text": "18 - 30"
@@ -427,7 +427,7 @@
                     "text": "350 - 500"
                 },
                 {
-                    "text": "Koriander"
+                    "text": "Cilantro"
                 },
                 {
                     "text": "5 - 15"
@@ -436,7 +436,7 @@
                     "text": "0 - 150"
                 },
                 {
-                    "text": "Kreuzkümmel"
+                    "text": "Cumin"
                 },
                 {
                     "text": "6 - 20"
@@ -454,7 +454,7 @@
                     "text": "50 - 150"
                 },
                 {
-                    "text": "Piment"
+                    "text": "Pimento"
                 },
                 {
                     "text": "15 - 30"
@@ -463,7 +463,7 @@
                     "text": "200 - 450"
                 },
                 {
-                    "text": "Vanille"
+                    "text": "Vanilla"
                 },
                 {
                     "text": "18 - 30"
@@ -502,7 +502,7 @@
                     "X": "firmalife:plant/basil[stage=1]"
                 }
             },
-            "name": "Basilikum",
+            "name": "Basil",
             "anchor": "basil",
             "text": "$(thing)Wild Basil$() wächst zwischen 12 °C und 25 °C und benötigt 300 bis 500 mm an durchschnittlichem Niederschlag. ",
             "enable_visualize": false
@@ -522,7 +522,7 @@
                     "X": "firmalife:plant/bay_laurel[stage=1]"
                 }
             },
-            "name": "Lorbeer",
+            "name": "Bay Laurel",
             "anchor": "bay",
             "text": "$(thing)Wild Bay Laurel$() grows between 8 and 14C, and 25 to 225mm of rainfall.",
             "enable_visualize": false
@@ -542,7 +542,7 @@
                     "X": "firmalife:plant/cardamom[stage=1]"
                 }
             },
-            "name": "Kardamon",
+            "name": "Cardamom",
             "anchor": "cardamom",
             "text": "$(thing)Wild Cardamom$() grows between 18 and 30C, and 350 to 500mm of rainfall.",
             "enable_visualize": false
@@ -562,7 +562,7 @@
                     "X": "firmalife:plant/cilantro[stage=1]"
                 }
             },
-            "name": "Koriander",
+            "name": "Cilantro",
             "anchor": "cilantro",
             "text": "$(thing)Wild Cilantro$() grows between 5 and 15C, and 0 to 150mm of rainfall.",
             "enable_visualize": false
@@ -582,7 +582,7 @@
                     "X": "firmalife:plant/cumin[stage=1]"
                 }
             },
-            "name": "Kreuzkümmel",
+            "name": "Cumin",
             "anchor": "cumin",
             "text": "$(thing)Wild Cumin$() grows between 6 and 20C, and 50 to 250mm of rainfall.",
             "enable_visualize": false
@@ -622,7 +622,7 @@
                     "X": "firmalife:plant/pimento[stage=1]"
                 }
             },
-            "name": "Piment",
+            "name": "Pimento",
             "anchor": "pimento",
             "text": "$(thing)Wild Pimento$() grows between 15 and 30C, and 200 to 450mm of rainfall.",
             "enable_visualize": false
@@ -642,7 +642,7 @@
                     "X": "firmalife:plant/vanilla[stage=1]"
                 }
             },
-            "name": "Vanille",
+            "name": "Vanilla",
             "anchor": "vanilla",
             "text": "$(thing)Wild Vanilla$() grows between 18 and 30C, and 200 to 500mm of rainfall.",
             "enable_visualize": false
@@ -668,7 +668,7 @@
                     "X": "firmalife:plant/butterfly_grass"
                 }
             },
-            "name": "Schmetterlingsgras",
+            "name": "Butterfly Grass",
             "anchor": "butterfly_grass",
             "text": "Eine Schmetterlingsgraspflanze.",
             "enable_visualize": false

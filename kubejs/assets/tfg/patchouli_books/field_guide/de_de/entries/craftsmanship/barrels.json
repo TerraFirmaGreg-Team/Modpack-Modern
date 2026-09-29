@@ -27,7 +27,7 @@
         {
             "type": "patchouli:text",
             "text": "Barrels are an important device used for mixing various fluids and items together. To use a $(thing)Barrel$() recipe, the barrel must be filled with the correct ratio of fluid and items required. Depending on the recipe, it may need to be $(thing)Sealed$() for a period of time to allow the contents to transform.",
-            "title": "Herstellung"
+            "title": "Crafting"
         },
         {
             "type": "patchouli:text",
@@ -59,7 +59,7 @@
         },
         {
             "type": "patchouli:text",
-            "title": "Färben",
+            "title": "Dyeing",
             "anchor": "dyeing",
             "text": "Barrels have the ability to $(thing)Dye$() and $(thing)Bleach$() items. Most color-able things, like carpet, candles, and $(l:craftsmanship/building_materials#alabaster)Alabaster$() can be dyed by sealing them in a barrel of dye or bleached by sealing them in a barrel of lye."
         },

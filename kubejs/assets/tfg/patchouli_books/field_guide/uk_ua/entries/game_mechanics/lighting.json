@@ -1,5 +1,5 @@
 {
-    "name": "Джерела світла",
+    "name": "Light Sources",
     "category": "tfg:game_mechanics",
     "sortnum": 6,
     "icon": "tfc:candle",
@@ -7,13 +7,13 @@
         {
             "type": "patchouli:text",
             "text": "$(li)$(bold)$(l:game_mechanics/lighting#torches)Смолоскипи$()$(li)$(bold)$(l:game_mechanics/lighting#candles)Свічки$()$(li)$(bold)$(l:game_mechanics/lighting#jack_o_lanterns)Гарбузи-ліхтарі$()$(li)$(bold)$(l:game_mechanics/lighting#lamps)Лампи$()$(li)$(bold)$(l:game_mechanics/lighting#permanent_light)Постійне світло$()",
-            "title": "Індекс",
+            "title": "Index",
             "anchor": "index"
         },
         {
             "type": "patchouli:text",
             "anchor": "intro",
-            "title": "Вступ",
+            "title": "Introduction",
             "text": "Існує кілька способів створювати світло в $(tfg_short). Однак майже всі джерела світла не горять вічно!$(br)На відміну від ванільного Minecraft, тобі потрібно стежити за своїми джерелами світла та повторно запалювати їх, коли вони згасають. Що вища якість джерела світла, то довше воно горітиме.$(br)Постійні джерела світла стають доступними значно пізніше, якщо тільки ти не знайдеш креативний спосіб отримати їх раніше."
         },
         {
@@ -60,7 +60,7 @@
         {
             "type": "patchouli:spotlight",
             "anchor": "candles",
-            "title": "Свічки",
+            "title": "Candles",
             "item": "tag:tfc:candles",
             "text": "Свічки виготовляють із $(thing)воску$() або $(thing)тваринного жиру$() і вони горять протягом 30 днів, після чого їх потрібно повторно запалювати.$(br)Свічки можна розміщувати та запалювати на землі або в $(l:cooking/jam#jarbnet)шафках$(). Кількість розміщених свічок впливає на рівень світла, який вони випромінюють."
         },
@@ -111,7 +111,7 @@
         {
             "type": "patchouli:spotlight",
             "anchor": "lamps",
-            "title": "Ліхтарі",
+            "title": "Lamps",
             "item": "tag:tfc:lamps",
             "text": "Лампи — це довготривалі джерела світла, які спалюють рідке паливо. Лампи зберігають паливо навіть після того, як їх зламати. Заправляти лампи можна автоматично за допомогою $(thing)труб$() або власноруч за допомогою $(l:cooking/drinking_containers)ємностей для рідини$().$(br)Переглянути придатні для ламп види палива можна в $(emi), відкривши лампу. $(thing)Лава$() горітиме вічно, але для цього її потрібно залити в $(item)лампу з синьої сталі$(). $(thing)Рідкий світлокамінь$() працює так само, але підходить для будь-якої лампи."
         },
@@ -142,7 +142,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Додаткове читання",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:craftsmanship/sticks_and_stones",

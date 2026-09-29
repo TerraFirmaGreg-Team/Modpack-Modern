@@ -51,13 +51,13 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "biomes",
-			"title": "Biomas",
+			"title": "Biomes",
 			"text": "The Beneath has a full set of new biomes to explore!$(br2)The Beneath can be split into three vertical layers, each with their own set of biomes. Each one is more hot and dangerous as you descend!"
 		},
 		{
 			"type": "patchouli:image",
 			"anchor": "biomes_top",
-			"title": "Cuevas de sal",
+			"title": "Salt Caves",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/salt_caves.png"
 			],
@@ -66,7 +66,7 @@
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Pantano Bochornoso",
+			"title": "Muggy Bog",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/muggy_bog.png"
 			],
@@ -75,7 +75,7 @@
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Cavernas decadentes",
+			"title": "Decaying Caverns",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/decaying_caverns.png"
 			],
@@ -84,7 +84,7 @@
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Refugio de telarañas",
+			"title": "Webbed Lair",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/webbed_lair.png"
 			],
@@ -94,7 +94,7 @@
 		{
 			"type": "patchouli:image",
 			"anchor": "biomes_middle",
-			"title": "Campos de alquitrán",
+			"title": "Tar Pools",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/tar_pools.png"
 			],
@@ -103,7 +103,7 @@
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Aguas geo-termales",
+			"title": "Geothermal Springs",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/geothermal_springs.png"
 			],
@@ -112,7 +112,7 @@
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Arboleda espinosa",
+			"title": "Thorny Grove",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/thorny_brambles.png"
 			],
@@ -121,7 +121,7 @@
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Cañada verde",
+			"title": "Lush Hollow",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/lush_hollow.png"
 			],
@@ -131,7 +131,7 @@
 		{
 			"type": "patchouli:image",
 			"anchor": "biomes_bottom",
-			"title": "Bosque de ceniza",
+			"title": "Ash Forest",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/ash_forest.png"
 			],
@@ -140,7 +140,7 @@
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Campos de lava",
+			"title": "Lava Floes",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/lava_floes.png"
 			],
@@ -149,7 +149,7 @@
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Deltas de basalto",
+			"title": "Basalt Deltas",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/basalt_deltas.png"
 			],

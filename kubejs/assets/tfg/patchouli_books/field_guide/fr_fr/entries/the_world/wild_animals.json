@@ -5,7 +5,7 @@
 	"pages": [
         {
             "type": "patchouli:text",
-            "title": "Tout",
+            "title": "Index",
             "anchor": "index",
             "text": "$(li)$(bold)$(l:the_world/wild_animals#intro)Introduction$()$(li)$(bold)$(l:the_world/wild_animals#livestock)Livestock$()$(li2)$(l:the_world/wild_animals#pig)Pig$()$(li2)$(l:the_world/wild_animals#cow)Cow$()$(li2)$(l:the_world/wild_animals#goat)Goat$()$(li2)$(l:the_world/wild_animals#yak)Yak$()$(li2)$(l:the_world/wild_animals#alpaca)Alpaca$()$(li2)$(l:the_world/wild_animals#sheep)Sheep$()$(li2)$(l:the_world/wild_animals#musk_ox)Musk Ox$()$(li2)$(l:the_world/wild_animals#chicken)Chicken$()$(li2)$(l:the_world/wild_animals#duck)Duck$()$(li2)$(l:the_world/wild_animals#quail)Quail$()"
         },
@@ -97,7 +97,7 @@
             "type": "patchouli:text",
             "anchor": "alpaca",
             "text": "$(bold)$(l:the_world/climate#temperature)Spawn Temp$():  -8 - 20°C$(br)$(bold)$(l:the_world/climate#rainfall)Spawn Rainfall$():  > 250mm$(br)$(bold)Spawn Area$():  Moderate Climates$(br)$(bold)Category$():  $(l:agriculture/animal_husbandry#wooly_animals)Wooly$()$(br)$(bold)Diet$():  $(l:cooking/food_and_water#grain)Grain$() and $(l:cooking/food_and_water#fruit)Fruit$()$(br)$(bold)Max Children$():  2$(br)$(bold)Gestation Time$():  36 Days$(br)$(bold)Growth Time$():  98 Days$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Max Uses$():  128$(br)$(bold)Product$():  $(l:agriculture/weaving)Wool$()$(br)$(bold)Produce Cycle$():  5 Days",
-            "title": "Alpaga"
+            "title": "Alpaca"
         },
         {
             "type": "patchouli:entity",
@@ -110,7 +110,7 @@
             "type": "patchouli:text",
             "anchor": "sheep",
             "text": "$(bold)$(l:the_world/climate#temperature)Spawn Temp$():  0 - 35°C$(br)$(bold)$(l:the_world/climate#rainfall)Spawn Rainfall$():  70 - 300mm$(br)$(bold)Spawn Area$():  Drier Climates$(br)$(bold)Category$():  $(l:agriculture/animal_husbandry#wooly_animals)Wooly$()$(br)$(bold)Diet$():  $(l:cooking/food_and_water#grain)Grain$()$(br)$(bold)Max Children$():  2$(br)$(bold)Gestation Time$():  32 Days$(br)$(bold)Growth Time$():  56 Days$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Max Uses$():  60$(br)$(bold)Product$():  $(l:agriculture/weaving)Wool$()$(br)$(bold)Produce Cycle$():  7 Days",
-            "title": "Mouton"
+            "title": "Sheep"
         },
         {
             "type": "patchouli:entity",
@@ -123,7 +123,7 @@
             "type": "patchouli:text",
             "anchor": "musk_ox",
             "text": "$(bold)$(l:the_world/climate#temperature)Spawn Temp$():  -25 - 0°C$(br)$(bold)$(l:the_world/climate#rainfall)Spawn Rainfall$():  > 100mm$(br)$(bold)Spawn Area$():  Cold Climates$(br)$(bold)Category$():  $(l:agriculture/animal_husbandry#wooly_animals)Wooly$()$(br)$(bold)Diet$():  $(l:cooking/food_and_water#grain)Grain$()$(br)$(bold)Max Children$():  1$(br)$(bold)Gestation Time$():  64 Days$(br)$(bold)Growth Time$():  168 Days$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Max Uses$():  160$(br)$(bold)Product$():  $(l:agriculture/weaving)Wool$()$(br)$(bold)Produce Cycle$():  4 Days",
-            "title": "Bœuf musqué"
+            "title": "Musk Ox"
         },
         {
             "type": "patchouli:entity",
@@ -162,7 +162,7 @@
             "type": "patchouli:text",
             "anchor": "quail",
             "text": "$(bold)$(l:the_world/climate#temperature)Spawn Temp$():  -15 - 15°C$(br)$(bold)$(l:the_world/climate#rainfall)Spawn Rainfall$():  > 200mm$(br)$(bold)Spawn Area$():  Cold Climates$(br)$(bold)Category$():  $(l:agriculture/animal_husbandry#oviparous_animals)Oviparous Animals$()$(br)$(bold)Diet$():  $(l:cooking/food_and_water#grain)Grain$(), $(l:cooking/food_and_water#fruit)Fruits$(), $(l:cooking/food_and_water#vegetables)Vegetables$(), and $(l:agriculture/growing_crops)Seeds$() which may be rotten.$(br)$(bold)Egg Cycle$():  28 Hours$(br)$(bold)Growth Time$():  22 Days$(br)$(bold)Hatch Time$():  8 Days$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Max Uses$():  48$(br)$(bold)Product$():  Eggs and feathers.$()",
-            "title": "Caille"
+            "title": "Quail"
         },
         {
             "type": "patchouli:entity",
@@ -246,7 +246,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:polar_bear",
             "scale": 0.55,
-            "name": "Ours polaire",
+            "name": "Polar Bear",
             "anchor": "polar_bear",
             "text": "L'ours polaire n'apparaît que dans les régions les plus froides, à une $(l:the_world/climate#temperature)température$() d'au plus 10°C, avec des $(l:the_world/climate#rainfall)précipitations$() d'au moins 100mm."
         },
@@ -254,7 +254,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:grizzly_bear",
             "scale": 0.55,
-            "name": "Grizzly",
+            "name": "Grizzly Bear",
             "anchor": "grizzly_bear",
             "text": "Le grizzly apparaît dans les forêts avec un climat modéré, avec une $(l:the_world/climate#temperature)température$()  comprise entre -15 et 15°C, et au moins 200mm de $(l:the_world/climate#rainfall)précipitations$()."
         },
@@ -262,7 +262,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:black_bear",
             "scale": 0.55,
-            "name": "Ours noir",
+            "name": "Black Bear",
             "anchor": "black_bear",
             "text": "L'ours noir apparaît dans les forêts plus chaudes et humides, avec une $(l:the_world/climate#temperature)température$()  entre 5 et 20°C, et au moins 250mm de $(l:the_world/climate#rainfall)précipitations$()."
         },
@@ -278,7 +278,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:panther",
             "scale": 0.6,
-            "name": "Panthère",
+            "name": "Panther",
             "anchor": "panther",
             "text": "La panthère préfère les climats modérés, avec une $(l:the_world/climate#temperature)température$()  entre -10 et 21°C, et au moins 150mm de $(l:the_world/climate#rainfall)précipitations$()."
         },
@@ -294,7 +294,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:tiger",
             "scale": 0.55,
-            "name": "Tigre",
+            "name": "Tiger",
             "anchor": "tiger",
             "text": "Le tigre apparaît dans les forêts avec une $(l:the_world/climate#temperature)température$() d'au moins 13°C, et des $(l:the_world/climate#rainfall)précipitations$() entre 50 et 100mm."
         },
@@ -302,7 +302,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:sabertooth",
             "scale": 0.6,
-            "name": "Tigre à dents de sabre",
+            "name": "Sabertooth",
             "anchor": "sabertooth",
             "text": "Le tigre à dents de sabre apparaît n'importe où avec une $(l:the_world/climate#temperature)température$() d'au moins 0°C, et des $(l:the_world/climate#rainfall)précipitations$() supérieures à 250mm."
         },
@@ -353,7 +353,7 @@
             "entity": "tfc:boar",
             "anchor": "boar",
             "scale": 0.7,
-            "name": "Sanglier",
+            "name": "Boar",
             "text": "Le sanglier apparaît à une $(l:the_world/climate#temperature)température$()  entre -5 et 25°C, et des $(l:the_world/climate#rainfall)précipitations$() entre 130 et 400mm."
         },
         {
@@ -361,7 +361,7 @@
             "entity": "tfc:moose",
             "anchor": "moose",
             "scale": 0.7,
-            "name": "Élan",
+            "name": "Moose",
             "text": "L'élan apparaît dans les forêts à une $(l:the_world/climate#temperature)température$()  entre -15 et 10°C, et des $(l:the_world/climate#rainfall)précipitations$() entre 150 et 300mm."
         },
         {
@@ -369,7 +369,7 @@
             "entity": "tfc:wildebeest",
             "anchor": "wildebeest",
             "scale": 0.7,
-            "name": "Gnou",
+            "name": "Wildebeest",
             "text": "Le gnou apparaît dans les plaines à une $(l:the_world/climate#temperature)température$()  supérieure à 13°C, et des $(l:the_world/climate#rainfall)précipitations$() entre 90 et 380mm."
         },
         {
@@ -390,7 +390,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:rabbit",
             "scale": 0.7,
-            "name": "Lapin",
+            "name": "Rabbit",
             "anchor": "rabbit",
             "text": "Le lapin est connu pour manger des carottes et du chou. Ils sont omniprésents dans le monde, et changent de pelage en fonction du climat. Ils n'ont besoin que de 15 mm de $(l:the_world/climate#rainfall)précipitations$() pour apparaître."
         },
@@ -398,7 +398,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:fox",
             "scale": 0.7,
-            "name": "Renard",
+            "name": "Fox",
             "anchor": "fox",
             "text": "Le renard aime manger les baies des buissons. il peut être trouvé dans les forêts à une $(l:the_world/climate#temperature)température$()  inférieure à 25°C, et des $(l:the_world/climate#rainfall)précipitations$() entre 130 et 400mm."
         },
@@ -457,7 +457,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:peafowl",
             "scale": 0.6,
-            "name": "Paon",
+            "name": "Peafowl",
             "anchor": "peafowl",
             "text": "Le paon apparaît dans les forêts à une $(l:the_world/climate#temperature)température$()  supérieure à 14°C, et des $(l:the_world/climate#rainfall)précipitations$() entre 190 et 500mm."
         },
@@ -474,7 +474,7 @@
             "type": "patchouli:entity",
             "entity": "tfg:jerboa",
             "scale": 1.2,
-            "name": "Gerboise",
+            "name": "Jerboa",
             "anchor": "jerboa",
             "text": "La gerboise apparaît à une $(l:the_world/climate#temperature)température$()  entre -3 et 25°C, et des $(l:the_world/climate#rainfall)précipitations$() inférieures à 160mm."
         },
@@ -482,7 +482,7 @@
             "type": "patchouli:entity",
             "entity": "tfg:mongoose",
             "scale": 0.8,
-            "name": "Mangouste",
+            "name": "Mongoose",
             "anchor": "mongoose",
             "text": "La mangouste apparaît à une $(l:the_world/climate#temperature)température$()  supérieure à 12°C, et des $(l:the_world/climate#rainfall)précipitations$() entre 160 et 500mm."
         },
@@ -516,13 +516,13 @@
             "type": "patchouli:text",
             "anchor": "fish",
             "text": "$(thing)Fish$() are small creatures that swim in water. Most of them can be $(l:agriculture/fishing)fished$(). Some prefer oceans, rivers, or lakes.",
-            "title": "Poisson"
+            "title": "Fish"
         },
         {
             "type": "patchouli:entity",
             "entity": "tfc:cod",
             "scale": 0.7,
-            "name": "Morue",
+            "name": "Cod",
             "anchor": "cod",
             "text": "La morue préfère les océans plus froids, avec une $(l:the_world/climate#temperature)température$() d'au plus 18°C. Ils peuvent être pêchés."
         },
@@ -530,7 +530,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:pufferfish",
             "scale": 0.7,
-            "name": "Poisson-globe",
+            "name": "Pufferfish",
             "anchor": "pufferfish",
             "text": "Le poisson-globe vit dans n'importe quel océan d'une $(l:the_world/climate#temperature)température$() d'au moins 10°C."
         },
@@ -538,7 +538,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:jellyfish",
             "scale": 0.7,
-            "name": "Méduse",
+            "name": "Jellyfish",
             "anchor": "jellyfish",
             "text": "La méduse vit dans les océans plus chauds, d'une $(l:the_world/climate#temperature)température$() d'au moins 18°C."
         },
@@ -546,7 +546,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:tropical_fish",
             "scale": 0.7,
-            "name": "Poisson tropical",
+            "name": "Tropical Fish",
             "anchor": "tropical_fish",
             "text": "Le poisson tropical vit dans les océans plus chauds, d'une $(l:the_world/climate#temperature)température$() d'au moins 18°C."
         },
@@ -554,7 +554,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:salmon",
             "scale": 0.7,
-            "name": "Saumon",
+            "name": "Salmon",
             "anchor": "salmon",
             "text": "Le saumon apparaît dans n'importe quelle rivière ou lac d'une $(l:the_world/climate#temperature)température$() d'au moins -5°C."
         },
@@ -562,7 +562,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:bluegill",
             "scale": 0.7,
-            "name": "Crapet arlequin",
+            "name": "Bluegill",
             "anchor": "bluegill",
             "text": "Le crapet arlqeuin apparaît dans n'importe quelle rivière ou lac d'une $(l:the_world/climate#temperature)température$() entre -10 et 25°C."
         },
@@ -576,7 +576,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:isopod",
             "scale": 0.7,
-            "name": "Isopode",
+            "name": "Isopod",
             "anchor": "isopod",
             "text": "Les isopodes apparaissent dans les parties les plus basses des océans à une $(l:the_world/climate#temperature)température$() d'au plus 14°C."
         },
@@ -584,7 +584,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:lobster",
             "scale": 0.7,
-            "name": "Homard",
+            "name": "Lobster",
             "anchor": "lobster",
             "text": "Le homard apparaît dans n'importe quel océan d'une $(l:the_world/climate#temperature)température$() d'au plus 21°C."
         },
@@ -592,7 +592,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:crayfish",
             "scale": 0.7,
-            "name": "Écrevisse",
+            "name": "Crayfish",
             "anchor": "crayfish",
             "text": "Les écrevisses sont comme les homards, mais vivent dans les rivières et les lacs. Ils ont besoin d'une $(l:the_world/climate#temperature)température$() d'au moins 21°C et de $(l:the_world/climate#rainfall)précipitations$() d'au moins 125mm."
         },
@@ -600,7 +600,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:horseshoe_crab",
             "scale": 0.7,
-            "name": "Limule",
+            "name": "Horseshoe Crab",
             "anchor": "horseshoe_crab",
             "text": "La limule apparaît dans les océans avec un climat modéré, à une $(l:the_world/climate#temperature)température$()entre 10 et 21°C et de $(l:the_world/climate#rainfall)précipitations$() d'au moins 400mm."
         },
@@ -614,7 +614,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:orca",
             "scale": 0.25,
-            "name": "Orque",
+            "name": "Orca",
             "anchor": "orca",
             "text": "L'orque vit dans les océans profonds à une $(l:the_world/climate#temperature)température$()d'au plus 19°C et avec des $(l:the_world/climate#rainfall)précipitations$() d'au moins 100mm."
         },
@@ -622,7 +622,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:dolphin",
             "scale": 0.4,
-            "name": "Dauphin",
+            "name": "Dolphin",
             "anchor": "dolphin",
             "text": "Le dauphin vit dans les océans profonds à une $(l:the_world/climate#temperature)température$()d'au moins 10°C et avec des $(l:the_world/climate#rainfall)précipitations$() d'au moins 200mm."
         },
@@ -630,7 +630,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:manatee",
             "scale": 0.25,
-            "name": "Lamantin",
+            "name": "Manatee",
             "anchor": "manatee",
             "text": "Le lamantin vit dans les lacs chauds à une $(l:the_world/climate#temperature)température$()d'au moins 20°C et avec des $(l:the_world/climate#rainfall)précipitations$() d'au plus 300mm."
         },
@@ -638,7 +638,7 @@
             "type": "patchouli:entity",
             "entity": "tfg:leopard_seal",
             "scale": 0.5,
-            "name": "Léopard de mer",
+            "name": "Leopard Seal",
             "anchor": "leopard_seal",
             "text": "Le léopard de mer apparaît sur les plages les plus froides à une $(l:the_world/climate#temperature)température$()d'au plus -9°C et avec des $(l:the_world/climate#rainfall)précipitations$() d'au moins 105mm. Ils chassent les manchots et sont chassés par les orques."
         },
@@ -646,11 +646,11 @@
             "type": "patchouli:text",
             "anchor": "squid",
             "text": "Le calamar apparaît dans n'importe quel océan profond. Ils lâchent des $(thing)Poches d'encre$(), et encrent tout joueur s'approchant trop. Il est dit que les calamars vivant dans les grottes profondes et inexplorées possèdent d'étranges capacités.",
-            "title": "Calamar"
+            "title": "Squid"
         },
         {
             "type": "patchouli:relations",
-            "title": "Pour aller plus loin",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:the_world/wild_crops",

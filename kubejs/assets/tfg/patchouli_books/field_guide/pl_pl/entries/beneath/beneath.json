@@ -51,13 +51,13 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "biomes",
-			"title": "Biomy",
+			"title": "Biomes",
 			"text": "The Beneath has a full set of new biomes to explore!$(br2)The Beneath can be split into three vertical layers, each with their own set of biomes. Each one is more hot and dangerous as you descend!"
 		},
 		{
 			"type": "patchouli:image",
 			"anchor": "biomes_top",
-			"title": "Jaskinie solne",
+			"title": "Salt Caves",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/salt_caves.png"
 			],
@@ -66,7 +66,7 @@
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Duszne bagno",
+			"title": "Muggy Bog",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/muggy_bog.png"
 			],
@@ -75,7 +75,7 @@
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Rozpadające się jaskinie",
+			"title": "Decaying Caverns",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/decaying_caverns.png"
 			],
@@ -84,7 +84,7 @@
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Leże pająków",
+			"title": "Webbed Lair",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/webbed_lair.png"
 			],
@@ -94,7 +94,7 @@
 		{
 			"type": "patchouli:image",
 			"anchor": "biomes_middle",
-			"title": "Doły ze smołą",
+			"title": "Tar Pools",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/tar_pools.png"
 			],
@@ -103,7 +103,7 @@
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Źródła geotermalne",
+			"title": "Geothermal Springs",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/geothermal_springs.png"
 			],
@@ -112,7 +112,7 @@
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Cierniowy gaj",
+			"title": "Thorny Grove",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/thorny_brambles.png"
 			],
@@ -121,7 +121,7 @@
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Bujna jaskinia",
+			"title": "Lush Hollow",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/lush_hollow.png"
 			],
@@ -131,7 +131,7 @@
 		{
 			"type": "patchouli:image",
 			"anchor": "biomes_bottom",
-			"title": "Popiołowy las",
+			"title": "Ash Forest",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/ash_forest.png"
 			],
@@ -140,7 +140,7 @@
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Potoki lawy",
+			"title": "Lava Floes",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/lava_floes.png"
 			],
@@ -149,7 +149,7 @@
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Bazaltowe delty",
+			"title": "Basalt Deltas",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/basalt_deltas.png"
 			],
@@ -183,7 +183,7 @@
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Czytaj dalej",
+			"title": "Further Reading",
 			"anchor": "relations",
 			"entries": [
 				"tfg:beneath/beneath_mechanics",

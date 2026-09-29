@@ -5,7 +5,7 @@
   "pages": [
     {
         "type": "patchouli:text",
-        "title": "物品索引",
+        "title": "Index",
         "anchor": "index",
         "text": "$(li)$(bold)$(l:cooking/drinks#alcohol)Alcohol$()$(li)$(bold)$(l:cooking/drinks#aged_alcohol)Aged Alcohol$()$(li)$(bold)$(l:cooking/drinks#vintage_alcohol)Vintage Alcohol$()$(li)$(bold)$(l:cooking/alcohol#wine_making)Wine Making$()$(li2)$(l:cooking/alcohol#wine_properties)Wine Properties$()$(li)$(bold)$(l:cooking/alcohol#wine_shelf)Wine Shelf$()"
     },
@@ -43,7 +43,7 @@
     {
         "type": "patchouli:crafting",
         "anchor": "bottle_label",
-        "title": "瓶子贴签",
+        "title": "Bottle Label",
         "recipe": "firmalife:crafting/bottle_label",
         "text": "$(thing)瓶子标签$()可在抄写台中重命名，其名称将添加到葡萄酒的物品提示信息中。"
     },
@@ -74,7 +74,7 @@
     },
     {
         "type": "patchouli:relations",
-        "title": "延伸阅读",
+        "title": "Further Reading",
         "anchor": "relations",
         "entries": [
         "tfg:cooking/food_and_water",

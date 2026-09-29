@@ -1,11 +1,11 @@
 {
-    "name": "收获篮",
+    "name": "Harvest Baskets",
     "icon": "tfg:harvest_basket",
     "category": "tfg:agriculture",
     "pages": [
         {
             "type": "patchouli:spotlight",
-            "title": "收获篮",
+            "title": "Harvest Baskets",
             "item": {
                 "tag": "tfg:harvester"
             },
@@ -17,13 +17,13 @@
         },
         {
             "type": "patchouli:crafting",
-            "title": "收获篮",
+            "title": "Harvest Basket",
             "recipe": "tfg:shaped/harvest_basket_from_papyrus",
             "text": "基础款的$(item)收获篮$()可使用浸泡后的纸莎草或硬木制作。"
         },
         {
             "type": "patchouli:relations",
-            "title": "延伸阅读",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:agriculture/growing_crops",

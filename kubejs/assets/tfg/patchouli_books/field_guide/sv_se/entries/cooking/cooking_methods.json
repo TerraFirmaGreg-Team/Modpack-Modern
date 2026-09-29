@@ -274,7 +274,7 @@
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Dekorationer",
+            "title": "Aesthetics",
             "anchor": "countertop",
             "item": "firmalife:brick_countertop,firmalife:rustic_countertop,firmalife:tile_countertop,firmalife:stone_countertop,firmalife:rustic_finish,firmalife:tile_finish,firmalife:stone_finish",
             "text": "$(thing)Countertops$() and $(thing)Finishes$() are aesthetic blocks that count as oven parts. Finishes are applied with $(item)$(k:key.use)$(). Only $(n)brick$() oven blocks may take on finishes. Stone finish can't be applied to brick. Use $(item)Sealed bricks$() to match the look."

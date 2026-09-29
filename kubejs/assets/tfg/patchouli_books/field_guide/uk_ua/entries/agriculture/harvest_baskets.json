@@ -1,11 +1,11 @@
 {
-    "name": "Кошики для врожаю",
+    "name": "Harvest Baskets",
     "icon": "tfg:harvest_basket",
     "category": "tfg:agriculture",
     "pages": [
         {
             "type": "patchouli:spotlight",
-            "title": "Кошики для врожаю",
+            "title": "Harvest Baskets",
             "item": {
                 "tag": "tfg:harvester"
             },
@@ -17,13 +17,13 @@
         },
         {
             "type": "patchouli:crafting",
-            "title": "Кошик для врожаю",
+            "title": "Harvest Basket",
             "recipe": "tfg:shaped/harvest_basket_from_papyrus",
             "text": "Базовий $(item)кошик для збирання врожаю$() можна виготовити з вимоченого папірусу або твердої деревини."
         },
         {
             "type": "patchouli:relations",
-            "title": "Додаткове читання",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:agriculture/growing_crops",

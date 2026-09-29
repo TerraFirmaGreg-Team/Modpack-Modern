@@ -1,11 +1,11 @@
 {
-    "name": "Cestas de cosecha",
+    "name": "Harvest Baskets",
     "icon": "tfg:harvest_basket",
     "category": "tfg:agriculture",
     "pages": [
         {
             "type": "patchouli:spotlight",
-            "title": "Cestas de cosecha",
+            "title": "Harvest Baskets",
             "item": {
                 "tag": "tfg:harvester"
             },
@@ -17,7 +17,7 @@
         },
         {
             "type": "patchouli:crafting",
-            "title": "Cesta de cosecha",
+            "title": "Harvest Basket",
             "recipe": "tfg:shaped/harvest_basket_from_papyrus",
             "text": "A basic $(item)Harvest Basket$() can be made of soaked papyrus or hardwood."
         },

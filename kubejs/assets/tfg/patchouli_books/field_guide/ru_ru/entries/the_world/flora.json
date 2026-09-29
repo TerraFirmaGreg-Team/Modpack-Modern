@@ -36,7 +36,7 @@
                     "X": "tfc:plant/anthurium"
                 }
             },
-            "name": "Стандартный",
+            "name": "Standard",
             "anchor": "standard_plants",
             "text": "Обычные растения похожи на маленькие цветы. Они растут на траве, земле и пашне.",
             "enable_visualize": false
@@ -56,7 +56,7 @@
                     "X": "tfc:plant/sagebrush"
                 }
             },
-            "name": "Сухие биомы",
+            "name": "Dry",
             "text": "Сухие растения похожи на обычные, но могут расти на песке. Обычно они появляются только в районах с низким уровнем осадков.",
             "enable_visualize": false
         },
@@ -400,7 +400,7 @@
                     "bold": true
                 },
                 {
-                    "text": "Базилик"
+                    "text": "Basil"
                 },
                 {
                     "text": "12 - 25"
@@ -409,7 +409,7 @@
                     "text": "300 - 500"
                 },
                 {
-                    "text": "Лавр"
+                    "text": "Bay Laurel"
                 },
                 {
                     "text": "8 - 14"
@@ -418,7 +418,7 @@
                     "text": "25 - 225"
                 },
                 {
-                    "text": "Кардамон"
+                    "text": "Cardamom"
                 },
                 {
                     "text": "18 - 30"
@@ -427,7 +427,7 @@
                     "text": "350 - 500"
                 },
                 {
-                    "text": "Кинза"
+                    "text": "Cilantro"
                 },
                 {
                     "text": "5 - 15"
@@ -436,7 +436,7 @@
                     "text": "0 - 150"
                 },
                 {
-                    "text": "Тмин"
+                    "text": "Cumin"
                 },
                 {
                     "text": "6 - 20"
@@ -445,7 +445,7 @@
                     "text": "50 - 250"
                 },
                 {
-                    "text": "Орегано"
+                    "text": "Oregano"
                 },
                 {
                     "text": "5 - 13"
@@ -454,7 +454,7 @@
                     "text": "50 - 150"
                 },
                 {
-                    "text": "Пимента"
+                    "text": "Pimento"
                 },
                 {
                     "text": "15 - 30"
@@ -463,7 +463,7 @@
                     "text": "200 - 450"
                 },
                 {
-                    "text": "Ваниль"
+                    "text": "Vanilla"
                 },
                 {
                     "text": "18 - 30"
@@ -502,7 +502,7 @@
                     "X": "firmalife:plant/basil[stage=1]"
                 }
             },
-            "name": "Базилик",
+            "name": "Basil",
             "anchor": "basil",
             "text": "$(thing)Дикий базилик$() растёт при температуре от 12 до 25 °C и осадках 300–500 мм.",
             "enable_visualize": false
@@ -522,7 +522,7 @@
                     "X": "firmalife:plant/bay_laurel[stage=1]"
                 }
             },
-            "name": "Лавр",
+            "name": "Bay Laurel",
             "anchor": "bay",
             "text": "$(thing)Дикий лавровый лист$() растёт при температуре от 8 до 14 °C и осадках 25–225 мм.",
             "enable_visualize": false
@@ -542,7 +542,7 @@
                     "X": "firmalife:plant/cardamom[stage=1]"
                 }
             },
-            "name": "Кардамон",
+            "name": "Cardamom",
             "anchor": "cardamom",
             "text": "$(thing)Дикий кардамон$() растёт при температуре от 18 до 30 °C и осадках 350–500 мм.",
             "enable_visualize": false
@@ -562,7 +562,7 @@
                     "X": "firmalife:plant/cilantro[stage=1]"
                 }
             },
-            "name": "Кинза",
+            "name": "Cilantro",
             "anchor": "cilantro",
             "text": "$(thing)Дикий кориандр$() растёт при температуре от 5 до 15 °C и осадках 0–150 мм.",
             "enable_visualize": false
@@ -582,7 +582,7 @@
                     "X": "firmalife:plant/cumin[stage=1]"
                 }
             },
-            "name": "Тмин",
+            "name": "Cumin",
             "anchor": "cumin",
             "text": "$(thing)Дикий тмин$() растёт при температуре от 6 до 20 °C и осадках 50–250 мм.",
             "enable_visualize": false
@@ -602,7 +602,7 @@
                     "X": "firmalife:plant/oregano[stage=1]"
                 }
             },
-            "name": "Орегано",
+            "name": "Oregano",
             "anchor": "oregano",
             "text": "$(thing)Дикий орегано$() растёт при температуре от 5 до 13 °C и осадках 50–150 мм.",
             "enable_visualize": false
@@ -622,7 +622,7 @@
                     "X": "firmalife:plant/pimento[stage=1]"
                 }
             },
-            "name": "Пимента",
+            "name": "Pimento",
             "anchor": "pimento",
             "text": "$(thing)Дикий душистый перец$() растёт при температуре от 15 до 30 °C и осадках 200–450 мм.",
             "enable_visualize": false
@@ -642,7 +642,7 @@
                     "X": "firmalife:plant/vanilla[stage=1]"
                 }
             },
-            "name": "Ваниль",
+            "name": "Vanilla",
             "anchor": "vanilla",
             "text": "$(thing)Дикая ваниль$() растёт при температуре от 18 до 30 °C и осадках 200–500 мм.",
             "enable_visualize": false
@@ -668,7 +668,7 @@
                     "X": "firmalife:plant/butterfly_grass"
                 }
             },
-            "name": "Трава-бабочка",
+            "name": "Butterfly Grass",
             "anchor": "butterfly_grass",
             "text": "Бабочковая трава.",
             "enable_visualize": false
@@ -679,7 +679,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Читать дальше",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:the_world/wild_fruits",

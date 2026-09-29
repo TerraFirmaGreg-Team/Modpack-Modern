@@ -36,7 +36,7 @@
 			"type": "patchouli:entity",
 			"entity": "species:mammutilation",
 			"scale": 0.5,
-			"name": "Mamutilación",
+			"name": "Mammutilation",
 			"anchor": "mammutilation",
 			"text": "$(thing)Mammutilations$() are undead Mammoths. You can put them out of their misery for some $(item)Wool$()."
 		},
@@ -156,7 +156,7 @@
 			"type": "patchouli:entity",
 			"entity": "species:cliff_hanger",
 			"scale": 0.7,
-			"name": "Hanger Rocoso",
+			"name": "Cliff Hanger",
 			"anchor": "cliff_hanger",
 			"text": "$(thing)Cliff Hangers$() can be found on various ceilings, hooking players who walk below them. Hit them with a ranged attack to make them let go!"
 		},
@@ -164,7 +164,7 @@
 			"type": "patchouli:entity",
 			"entity": "species:leaf_hanger",
 			"scale": 0.7,
-			"name": "Hanger Frondoso",
+			"name": "Leaf Hanger",
 			"anchor": "leaf_hanger",
 			"text": "$(thing)Leaf Hangers$() can be found in pools of Salt Water, hooking players who walk into their trap. Hit them to make them let go of you!"
 		},
@@ -204,7 +204,7 @@
 			"type": "patchouli:entity",
 			"entity": "species:bewereager",
 			"scale": 0.8,
-			"name": "Feraldeano",
+			"name": "Bewereager",
 			"anchor": "bewereager",
 			"text": "The $(thing)Bewereager$() is an aggressive monster that can also jump up to you! It buffs itself and attacks in short bursts."
 		},

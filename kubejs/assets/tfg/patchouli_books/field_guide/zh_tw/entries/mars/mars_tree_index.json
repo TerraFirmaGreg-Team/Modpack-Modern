@@ -10,7 +10,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"title": "目錄",
+			"title": "Contents",
 			"anchor": "index",
 			"text": "$(li)$(bold)Large Mushrooms$()$(li2)$(l:mars/mars_tree_index#aeronos)Aeronos$()$(li2)$(l:mars/mars_tree_index#alphacene)Alphacene$()$(li2)$(l:mars/mars_tree_index#crimson)Crimson$()$(li2)$(l:mars/mars_tree_index#glacian)Glacian$()$(li2)$(l:mars/mars_tree_index#strophar)Strophar$()$(li2)$(l:mars/mars_tree_index#warped)Warped$()$(li)$(bold)$(l:mars/mars_tree_index#iodine)Iodine$()"
 		},
@@ -59,7 +59,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"item": "tag:forge:dusts/iodine",
-			"title": "碘",
+			"title": "Iodine",
 			"anchor": "iodine",
 			"text": "$(l:mars/mars_tree_index#crimson)Crimson$() and $(l:mars/mars_tree_index#warped)Warped$() Mushrooms can be tree tapped for $(4)Crimsene$() and $(3)Warpane$() respectively.$(br2)You'll need both to get started on producing $(thing)Iodine$(), but they don't often grow in the same place, so you might need to travel a bit. You can also obtain the saplings from the corresponding $(l:mars/mars_fauna#endermen)Endermen$()."
 		},

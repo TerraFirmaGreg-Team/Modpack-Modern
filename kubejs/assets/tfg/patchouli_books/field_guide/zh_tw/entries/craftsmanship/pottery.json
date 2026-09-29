@@ -100,14 +100,14 @@
         {
             "type": "patchouli:spotlight",
             "item": "tfc:ceramic/ingot_mold{tank:{\"Amount\":100,\"FluidName\":\"gtceu:copper\"}}",
-            "title": "澆鑄配方",
+            "title": "Casting",
             "link_recipes": false,
             "text": "You will very likely run into scenarios where you produce tiny amounts of excess melted metal. It is recommended to pour it into an ingot mold and save for the next time you need to cast that metal. Trying to produce perfect 144mB ratios of alloys is not feasible or worth the effort until you reach steam-age processing."
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "kaolin_clay",
-            "title": "高嶺土",
+            "title": "Kaolin Clay",
             "item": "tfc:kaolin_clay",
             "text": "Kaolin Clay is required to make $(l:craftsmanship/pottery#fire_clay)Fire Clay$(). It can be found spawning between Y=75-110 in Plateaus, Rolling Hills and Highlands (and in their $(t:Surface rock of Limestone, Dolomite, Chalk, or Marble)Karst$() $(t:Burren, Cenote, Doline, Shilin, or Tower Karst)variants$()), Old Mountains, and Shield Volcanoes at a $(l:the_world/climate#temperature)temperature$() of at least 18°C, with a $(l:the_world/climate#rainfall)rainfall$() of at least 300mm. The $(thing)Blood Lily$() flower grows on Kaolin clay, which can be up to 35 blocks below."
         },
@@ -205,7 +205,7 @@
         },
         {
             "type": "patchouli:spotlight",
-            "title": "耐火黏土",
+            "title": "Fire Clay",
             "anchor": "fire_clay",
             "item": "tfc:fire_clay",
             "text": "耐火黏土能做的東西不多，但每个都是科技進步上不可或缺的要素！耐火黏土比普通黏土能承受更高的高温，因此某些進階設備只能用耐火黏土建造！"

@@ -28,7 +28,7 @@
 			"type": "patchouli:entity",
 			"entity": "tfc:frog",
 			"scale": 1,
-			"name": "Grenouille",
+			"name": "Frog",
 			"anchor": "frog",
 			"text": "$(thing)Frogs$() can be found in the top and middle layers. They can be tamed and eaten."
 		},
@@ -44,7 +44,7 @@
 			"type": "patchouli:entity",
 			"entity": "beneath:red_elk",
 			"scale": 0.7,
-			"name": "Élan rouge",
+			"name": "Red Elk",
 			"anchor": "red_elk",
 			"text": "$(thing)Red Elk$() are found near the bottom, usually swimming around in lava. They can be slain for $(item)Lavaproof Hides$()."
 		},
@@ -210,7 +210,7 @@
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Pour aller plus loin",
+			"title": "Further Reading",
 			"anchor": "relations",
 			"entries": [
 				"tfg:the_world/wild_animals",

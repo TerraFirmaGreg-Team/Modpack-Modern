@@ -44,7 +44,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"item": "tacz:ammo{AmmoId:\"applied_armorer:cluster_quartz_bullet\"},tacz:modern_kinetic_gun{GunId:\"applied_armorer:moritz_shotgun_sg914\"}",
-			"title": "Pompalı Tüfek!!!",
+			"title": "Advanced Shotguns",
 			"anchor": "shotguns",
 			"text": "Great for blasting close-up targets."
 		},
@@ -82,7 +82,7 @@
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Ek Okuma",
+			"title": "Further Reading",
 			"anchor": "relations",
 			"entries": [
 				"tfg:mars/mars",

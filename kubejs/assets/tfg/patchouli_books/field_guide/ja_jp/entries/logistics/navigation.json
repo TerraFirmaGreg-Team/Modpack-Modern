@@ -32,7 +32,7 @@
         {
             "type": "patchouli:text",
             "anchor": "longitude",
-            "title": "経度",
+            "title": "Longitude",
             "text": "To find your Longitude, that is, your distance from the Prime Meridian, you need a clock! Specifically, you need a precise timepiece that keeps itself synchronized with the solar time at the Prime Meridian.$(br2)Smith an Unfinished Navigator's Timepiece before filling it with its internal mechanism."
         },
         {
@@ -43,25 +43,25 @@
         },
         {
             "type": "patchouli:text",
-            "title": "緯度",
+            "title": "Latitude",
             "anchor": "latitude",
             "text": "To find your Latitude, that is, your distance from the Equator, you need to determine the degrees at which you view either Polaris, the North Star, or the Sun. Specifically, you need a precise mechanism for viewing astronomical features and measuring their angular distance from the horizon.$(br2)Smith an Unfinished Sextant and then complete it in a workbench."
         },
         {
             "type": "patchouli:spotlight",
-            "title": "六分儀",
+            "title": "Sextant",
             "item": "firmaciv:sextant",
             "text": "六分儀を製作したら、それを手に持ち、$(item)$(k:key.use)$() を押すことで、緯度を測定できます。緯度は北または南の度数で表されることに注意してください。つまり、赤道が0度、極域が北または南の90度となります。"
         },
         {
             "type": "patchouli:text",
-            "title": "高度",
+            "title": "Altitude",
             "anchor": "altitude",
             "text": "To find your Altitude, that is, your vertical distance from the Sea Level datum, you need to measure atmospheric pressure. Specifically, you need a device containing a compressible fluid, and you need to measure the volume of that fluid to determine the pressure.$(br2)Smith an Unfinished Barometer and then complete it in a workbench."
         },
         {
             "type": "patchouli:spotlight",
-            "title": "高度計",
+            "title": "Barometer",
             "item": "firmaciv:barometer",
             "text": "気圧計を作成したら、それを手に持ち、$(item)$(k:key.use)$() を押すことで、高度を確認できます。高度は海面基準からの距離で測定されることに注意してください。"
         },
@@ -72,7 +72,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "さらに読む",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:craftsmanship/metallurgy",

@@ -1,5 +1,5 @@
 {
-    "name": "Rankinės girnos",
+    "name": "Quern",
     "category": "tfg:craftsmanship",
     "icon": "tfc:quern",
     "pages": [
@@ -53,19 +53,19 @@
             "type": "tfg:quern_recipe",
             "recipe": "tfg:quern/copper_crushed_ore_from_normal_raw_ore",
             "text": "$(l:game_mechanics/mining#processing)Ores$() can be crushed to obtain more metal.",
-            "title": "Susmulkinta rūda"
+            "title": "Crushed Ore"
         },
         {
             "type": "tfg:quern_recipe",
             "recipe": "tfg:quern/sulfur",
             "text": "The quern is used to make various $(thing)Powders$() from dust, like $(thing)Sulfur$(). $(thing)Gems$() can also be ground into powder.",
-            "title": "Milteliai"
+            "title": "Powders"
         },
         {
             "type": "tfg:quern_recipe",
             "recipe": "tfc:quern/red_dye",
             "text": "$(thing)Dye$() can be obtained from various flowers.",
-            "title": "Dažai"
+            "title": "Dyes"
         },
         {
             "type": "tfg:quern_recipe",

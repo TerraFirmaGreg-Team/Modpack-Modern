@@ -1,5 +1,5 @@
 {
-    "name": "下臼",
+    "name": "Quern",
     "category": "tfg:craftsmanship",
     "icon": "tfc:quern",
     "pages": [
@@ -53,19 +53,19 @@
             "type": "tfg:quern_recipe",
             "recipe": "tfg:quern/copper_crushed_ore_from_normal_raw_ore",
             "text": "$(l:game_mechanics/mining#processing)Ores$() can be crushed to obtain more metal.",
-            "title": "砕いた鉱石"
+            "title": "Crushed Ore"
         },
         {
             "type": "tfg:quern_recipe",
             "recipe": "tfg:quern/sulfur",
             "text": "臼は、$(thing)硫黄$()などの粉をさらに細かく砕いて各種$(thing)粉末$()を生成するためにも使用されます。また、$(thing)宝石$()を粉末にすることも可能です。",
-            "title": "粉末"
+            "title": "Powders"
         },
         {
             "type": "tfg:quern_recipe",
             "recipe": "tfc:quern/red_dye",
             "text": "$(thing)Dye$() can be obtained from various flowers.",
-            "title": "染料"
+            "title": "Dyes"
         },
         {
             "type": "tfg:quern_recipe",
@@ -74,7 +74,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "さらに読む",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:the_world/geology",

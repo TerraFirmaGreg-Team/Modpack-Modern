@@ -6,11 +6,11 @@
         {
             "type": "patchouli:text",
             "anchor": "index",
-            "title": "Индекс",
+            "title": "Index",
             "text": "$(bold)$(li)$(l:beneath/beneath_wild_fruits#fruit_trees)Fruit Trees$()$(li2)$(l:beneath/beneath_wild_fruits#lavacado)Lavacado$()$(li2)$(l:beneath/beneath_wild_fruits#magmango)Magmango$()$(bold)$(li)$(l:beneath/beneath_wild_fruits#palm_fruit_trees)Palm Fruit Trees$()$(li2)$(l:beneath/beneath_wild_fruits#oil_palm)Oil Palm$()$(li2)$(l:beneath/beneath_wild_fruits#acai)Açaí$()"
         },
         {
-            "title": "Введение",
+            "title": "Introduction",
             "anchor": "into",
             "type": "patchouli:text",
             "text": "$(l:beneath)Бездна$() предлагает тебе уникальный набор диких фруктов, которые адаптировались к экстремальным условиям подземелья. Фрукты могут быть выращены тем же способом, что и обычные $(l:the_world/wild_fruits)Дикие фрукты$()  верхнего мира"
@@ -35,7 +35,7 @@
                     "text": "Апр"
                 },
                 {
-                    "text": "Май"
+                    "text": "May"
                 },
                 {
                     "text": "Июн"
@@ -59,7 +59,7 @@
                     "text": "Дек"
                 },
                 {
-                    "text": "Лавакадо"
+                    "text": "Lavacado"
                 },
                 {
                     "fill": "0x6ab553"
@@ -98,7 +98,7 @@
                     "fill": "0x6ab553"
                 },
                 {
-                    "text": "Магманго"
+                    "text": "Magmango"
                 },
                 {
                     "fill": "0x6ab553"
@@ -173,7 +173,7 @@
             "type": "patchouli:text",
             "anchor": "lavacado",
             "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 8 - 80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 20 - 100 %$(br2)Lavacado trees grow in the months of December through April, start flowering in May and June, and bear fruit in July.",
-            "title": "Лавакадо"
+            "title": "Lavacado"
         },
         {
             "type": "tfg:multimultiblock",
@@ -238,7 +238,7 @@
             "type": "patchouli:text",
             "anchor": "magmango",
             "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 8 - 80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 30 - 100 %$(br2)Magmango trees grow in the months of October through February, start flowering in March and April, and bear fruit in May.",
-            "title": "Магманго"
+            "title": "Magmango"
         },
         {
             "type": "tfg:multimultiblock",
@@ -307,61 +307,43 @@
                     "text": ""
                 },
                 {
-                    "text": "Янв"
+                    "text": "Jan"
                 },
                 {
-                    "text": "Фев"
+                    "text": "Feb"
                 },
                 {
-                    "text": "Март"
+                    "text": "Mar"
                 },
                 {
-                    "text": "Апр"
+                    "text": "Apr"
                 },
                 {
-                    "text": "Май"
+                    "text": "May"
                 },
                 {
-                    "text": "Июн"
+                    "text": "Jun"
                 },
                 {
-                    "text": "Июл"
+                    "text": "Jul"
                 },
                 {
-                    "text": "Авг"
+                    "text": "Aug"
                 },
                 {
-                    "text": "Сен"
+                    "text": "Sep"
                 },
                 {
-                    "text": "Окт"
+                    "text": "Oct"
                 },
                 {
-                    "text": "Ноя"
+                    "text": "Nov"
                 },
                 {
-                    "text": "Дек"
+                    "text": "Dec"
                 },
                 {
-                    "text": "Масличная пальма"
-                },
-                {
-                    "fill": "0xa217ff"
-                },
-                {
-                    "fill": "0xa8986a"
-                },
-                {
-                    "fill": "0xa8986a"
-                },
-                {
-                    "fill": "0xa217ff"
-                },
-                {
-                    "fill": "0xa217ff"
-                },
-                {
-                    "fill": "0xa217ff"
+                    "text": "Oil Palm"
                 },
                 {
                     "fill": "0xa217ff"
@@ -373,6 +355,24 @@
                     "fill": "0xa8986a"
                 },
                 {
+                    "fill": "0xa217ff"
+                },
+                {
+                    "fill": "0xa217ff"
+                },
+                {
+                    "fill": "0xa217ff"
+                },
+                {
+                    "fill": "0xa217ff"
+                },
+                {
+                    "fill": "0xa8986a"
+                },
+                {
+                    "fill": "0xa8986a"
+                },
+                {
                     "fill": "0xa8986a"
                 },
                 {
@@ -382,7 +382,7 @@
                     "fill": "0xa217ff"
                 },
                 {
-                    "text": "Асаи"
+                    "text": "Açaí"
                 },
                 {
                     "fill": "0xa217ff"
@@ -425,11 +425,11 @@
             "title": "Palm Fruit Trees",
             "legend": [
                 {
-                    "text": "Спячка",
+                    "text": "Dormant",
                     "color": "0xa8986a"
                 },
                 {
-                    "text": "Плодоношение",
+                    "text": "Fruiting",
                     "color": "0xa217ff"
                 }
             ],
@@ -1827,7 +1827,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Читать дальше",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:the_world/climate",

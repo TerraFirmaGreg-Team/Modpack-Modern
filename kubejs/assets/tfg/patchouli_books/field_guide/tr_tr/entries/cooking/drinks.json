@@ -47,7 +47,7 @@
 					"bold": true
 				},
 				{
-					"text": "Bira"
+					"text": "Beer"
 				},
 				{
 					"text": "Absorption II (5:20)"
@@ -56,7 +56,7 @@
 					"text": "Absorption III (8:00)"
 				},
 				{
-					"text": "Elma Suyu"
+					"text": "Cider"
 				},
 				{
 					"text": "Speed (5:20)"
@@ -65,7 +65,7 @@
 					"text": "Speed II (8:00)"
 				},
 				{
-					"text": "Rom"
+					"text": "Rum"
 				},
 				{
 					"text": "Speed II (2:40)"
@@ -83,7 +83,7 @@
 					"text": "Resistance II (8:00)"
 				},
 				{
-					"text": "Votka"
+					"text": "Vodka"
 				},
 				{
 					"text": "Resistance II (2:40)"
@@ -92,7 +92,7 @@
 					"text": "Resistance III (4:00)"
 				},
 				{
-					"text": "Viski"
+					"text": "Whiskey"
 				},
 				{
 					"text": "Haste II (2:40)"
@@ -101,7 +101,7 @@
 					"text": "Haste III (4:00)"
 				},
 				{
-					"text": "Mısır Viskisi"
+					"text": "Corn Whiskey"
 				},
 				{
 					"text": "Haste (5:20)"
@@ -110,7 +110,7 @@
 					"text": "Haste II (8:00)"
 				},
 				{
-					"text": "Çavdar Viskisi"
+					"text": "Rye Whiskey"
 				},
 				{
 					"text": "Haste (5:20)"
@@ -161,14 +161,14 @@
 			"anchor": "milk"
 		},
 		{
-			"title": "Kaynak Suyu",
+			"title": "Spring Water",
 			"text": "Drinking $(thing)Spring Water$() warms you up by 4°C and applies a small regeneration effect while standing in it, as well as warming you.",
 			"item": "tfc:bucket/spring_water",
 			"type": "patchouli:spotlight",
 			"anchor": "spring_water"
 		},
 		{
-			"title": "Deniz Suyu",
+			"title": "Sea Water",
 			"text": "Drinking $(thing)Sea Water$() does not hydrate you and will make you more thirsty instead. A hot body temperature can also make you more thirsty. Lost at sea? Look upwards when it's raining for some easy hydration!",
 			"type": "patchouli:spotlight",
 			"item": "tfc:bucket/salt_water",
@@ -182,7 +182,7 @@
 			"anchor": "muddy_water"
 		},
 		{
-			"title": "Tuzlu Su",
+			"title": "Fruit Juice",
 			"text": "$(thing)Fruit Juice$() is a great way to condense your fruits into a longer lasting food item. Fruit juice provides the $(l:cooking/food_and_water#quenching_transient_effect)Quenching Effect$(), which helps stave off thirst.$(br2)Fruit Juice will expire over time.$()",
 			"type": "patchouli:spotlight",
 			"anchor": "juice",
@@ -211,7 +211,7 @@
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Ek Okuma",
+			"title": "Further Reading",
 			"anchor": "relations",
 			"entries": [
 				"tfg:cooking/food_and_water",

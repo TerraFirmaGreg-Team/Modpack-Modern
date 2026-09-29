@@ -1,11 +1,11 @@
 {
-    "name": "採收籃",
+    "name": "Harvest Baskets",
     "icon": "tfg:harvest_basket",
     "category": "tfg:agriculture",
     "pages": [
         {
             "type": "patchouli:spotlight",
-            "title": "採收籃",
+            "title": "Harvest Baskets",
             "item": {
                 "tag": "tfg:harvester"
             },
@@ -17,7 +17,7 @@
         },
         {
             "type": "patchouli:crafting",
-            "title": "採收籃",
+            "title": "Harvest Basket",
             "recipe": "tfg:shaped/harvest_basket_from_papyrus",
             "text": "$(item)採收籃$()可用浸泡後的紙莎紙或硬木製作。"
         },

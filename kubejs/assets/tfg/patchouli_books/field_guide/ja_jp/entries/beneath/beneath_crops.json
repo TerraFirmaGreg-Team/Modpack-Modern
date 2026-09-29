@@ -5,7 +5,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"title": "深界の作物",
+			"title": "Beneath Crops",
 			"text": "$(thing)深界$()は過酷な環境かもしれませんが、それでもそこで作物を育てることは可能です。深界の作物は驚くほど生命力が強く、極度の暑さの中でも育つため、地中での生活にも地表での生活にも役立ちます。"
 		},
 		{
@@ -24,7 +24,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "cassava",
-			"title": "キャッサバ",
+			"title": "Cassava",
 			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 10 - 80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 70 - 100 %$(br)$(bold)Nutrient$(): Nitrogen$(br2)Cassava can be eaten for $(thing)Vegetable$() nutrition, although it is best $(thing)cooked$() before consumed.$(br)"
 		},
 		{
@@ -139,7 +139,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "peanut",
-			"title": "ピーナッツ",
+			"title": "Peanut",
 			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 10 - 80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 20 - 80 %$(br)$(bold)Nutrient$(): Potassium$(br2)Peanuts can be eaten for $(thing)Vegetable$() and $(thing)Protein$() nutrition"
 		},
 		{
@@ -254,7 +254,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "beans",
-			"title": "豆",
+			"title": "Blackstone Beans",
 			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 10 - 80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 20 - 80 %$(br)$(bold)Nutrient$(): Potassium$(br2)Blackstone Beans can be eaten for $(thing)Vegetable$() and $(thing)Protein$() nutrition. However, they must be cooked first!"
 		},
 		{
@@ -369,7 +369,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "ghost_pepper",
-			"title": "ゴーストペッパー",
+			"title": "Ghost Pepper",
 			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 10 - 80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 20 - 80 %$(br)$(bold)Nutrient$(): Nitrogen$(br2)Ghost Peppers can be eaten for $(thing)Vegetable$() nutrition. They are also a common snack among the inhabitants of the Beneath."
 		},
 		{
@@ -485,7 +485,7 @@
 			"type": "patchouli:text",
 			"anchor": "cotton",
 			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 10 - 80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 40 - 100 %$(br)$(bold)Nutrient$(): Nitrogen$(br2)Cotton is a two block tall crop. Cotton seeds can be planted on farmland, will grow two blocks tall, and will produce $(item)Cotton Balls$() which can be processed into $(thing)Cotton String$() or $(thing)Cloth$().",
-			"title": "綿花"
+			"title": "Cotton"
 		},
 		{
 			"type": "tfg:multimultiblock",
@@ -600,7 +600,7 @@
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "さらに読む",
+			"title": "Further Reading",
 			"anchor": "relations",
 			"entries": [
 				"tfg:the_world/climate",

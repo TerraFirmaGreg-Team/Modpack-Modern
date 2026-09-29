@@ -5,7 +5,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"title": "索引",
+			"title": "Index",
 			"anchor": "index",
 			"text": "$(li)$(bold)$(l:cooking/drinks#alcohol)Alcohol$()$(li2)$(l:cooking/drinks#aged_alcohol)Aged Alcohol$()$(li2)$(l:cooking/drinks#vintage_alcohol)Vintage Alcohol$()$(li2)$(l:cooking/drinks#table)Alcohol Effects Table$()$(li2)$(l:cooking/drinks#wine)Wine$()$(li)$(bold)$(l:cooking/drinks#milk)Milk$()$(li)$(bold)$(l:cooking/drinks#spring_water)Spring Water$()$(li)$(bold)$(l:cooking/drinks#sea_water)Sea Water$()$(li)$(bold)$(l:cooking/drinks#muddy_water)Muddy Water$()$(li)$(bold)$(l:cooking/drinks#juice)Fruit Juice$()$(li)$(bold)$(l:cooking/drinks#yogurt)Yogurt$()$(li)$(bold)$(l:cooking/drinks#smoothie)Fruit Smoothie$()$(li)$(bold)$(l:cooking/drinks#ice_slush)Ice Slush$()"
 		},
@@ -35,19 +35,19 @@
 			"anchor": "table",
 			"strings": [
 				{
-					"text": "酒精",
+					"text": "Alcohol",
 					"bold": true
 				},
 				{
-					"text": "熟成的",
+					"text": "Aged",
 					"bold": true
 				},
 				{
-					"text": "陳年的",
+					"text": "Vintage",
 					"bold": true
 				},
 				{
-					"text": "啤酒"
+					"text": "Beer"
 				},
 				{
 					"text": "Absorption II (5:20)"
@@ -56,7 +56,7 @@
 					"text": "Absorption III (8:00)"
 				},
 				{
-					"text": "蘋果酒"
+					"text": "Cider"
 				},
 				{
 					"text": "Speed (5:20)"
@@ -65,7 +65,7 @@
 					"text": "Speed II (8:00)"
 				},
 				{
-					"text": "朗姆酒"
+					"text": "Rum"
 				},
 				{
 					"text": "Speed II (2:40)"
@@ -74,7 +74,7 @@
 					"text": "Speed III (4:00)"
 				},
 				{
-					"text": "清酒"
+					"text": "Sake"
 				},
 				{
 					"text": "Resistance (5:20)"
@@ -83,7 +83,7 @@
 					"text": "Resistance II (8:00)"
 				},
 				{
-					"text": "伏特加"
+					"text": "Vodka"
 				},
 				{
 					"text": "Resistance II (2:40)"
@@ -92,7 +92,7 @@
 					"text": "Resistance III (4:00)"
 				},
 				{
-					"text": "威士忌"
+					"text": "Whiskey"
 				},
 				{
 					"text": "Haste II (2:40)"
@@ -101,7 +101,7 @@
 					"text": "Haste III (4:00)"
 				},
 				{
-					"text": "玉米威士忌"
+					"text": "Corn Whiskey"
 				},
 				{
 					"text": "Haste (5:20)"
@@ -110,7 +110,7 @@
 					"text": "Haste II (8:00)"
 				},
 				{
-					"text": "黑麥威士忌"
+					"text": "Rye Whiskey"
 				},
 				{
 					"text": "Haste (5:20)"
@@ -119,7 +119,7 @@
 					"text": "Haste II (8:00)"
 				},
 				{
-					"text": "蜂蜜酒"
+					"text": "Mead"
 				},
 				{
 					"text": "Regeneration (5:20)"
@@ -161,35 +161,35 @@
 			"anchor": "milk"
 		},
 		{
-			"title": "溫泉水",
+			"title": "Spring Water",
 			"text": "飲用$(thing)溫泉$()可以暖和4°C，泡在溫泉內會提供些微的生命恢復並讓你感到温暖。",
 			"item": "tfc:bucket/spring_water",
 			"type": "patchouli:spotlight",
 			"anchor": "spring_water"
 		},
 		{
-			"title": "海水",
+			"title": "Sea Water",
 			"text": "喝$(thing)海水$()不能補充水分，反而會讓你更渴。體溫過高也更容易感到口渴。在海上迷路了？下雨時抬頭看看就能輕鬆補水！",
 			"type": "patchouli:spotlight",
 			"item": "tfc:bucket/salt_water",
 			"anchor": "sea_water"
 		},
 		{
-			"title": "泥水",
+			"title": "Muddy Water",
 			"text": "Drinking $(thing)Muddy Water$() is not recommended. Doing so will make you nauseous and give you $(l:cooking/food_and_water#parasites)parasites$().",
 			"type": "patchouli:spotlight",
 			"item": "tfg:muddy_water_bucket",
 			"anchor": "muddy_water"
 		},
 		{
-			"title": "果汁",
+			"title": "Fruit Juice",
 			"text": "$(thing)Fruit Juice$() is a great way to condense your fruits into a longer lasting food item. Fruit juice provides the $(l:cooking/food_and_water#quenching_transient_effect)Quenching Effect$(), which helps stave off thirst.$(br2)Fruit Juice will expire over time.$()",
 			"type": "patchouli:spotlight",
 			"anchor": "juice",
 			"item": "tfg:food/juice"
 		},
 		{
-			"title": "優格",
+			"title": "Yogurt",
 			"text": "$(thing)優格$()提供與牛奶一樣提供乳製品營養。可以與水果混合製作成$(item)水果優格$()。$(br2)優格會隨著時間推移而過期。$()",
 			"type": "patchouli:spotlight",
 			"anchor": "yogurt",

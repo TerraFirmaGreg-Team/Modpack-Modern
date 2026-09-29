@@ -1,5 +1,5 @@
 {
-    "name": "桶",
+    "name": "Barrels",
     "category": "tfg:craftsmanship",
     "icon": "tfc:wood/barrel/oak",
     "pages": [
@@ -27,7 +27,7 @@
         {
             "type": "patchouli:text",
             "text": "大桶的主要作用是用来混合某些液体和物品。用$(thing)大桶$()合成时，桶内的液体和物品的比例必须正确无误。某些配方还需要将大桶$(thing)密封$()一段时间才能执行。",
-            "title": "合成中"
+            "title": "Crafting"
         },
         {
             "type": "patchouli:text",
@@ -59,13 +59,13 @@
         },
         {
             "type": "patchouli:text",
-            "title": "染色",
+            "title": "Dyeing",
             "anchor": "dyeing",
             "text": "Barrels have the ability to $(thing)Dye$() and $(thing)Bleach$() items. Most color-able things, like carpet, candles, and $(l:craftsmanship/building_materials#alabaster)Alabaster$() can be dyed by sealing them in a barrel of dye or bleached by sealing them in a barrel of lye."
         },
         {
             "type": "patchouli:text",
-            "title": "食物保鲜",
+            "title": "Preservation",
             "anchor": "preservation",
             "text": "Barrels can preserve items in $(thing)Vinegar$(). Vinegar is made by sealing $(thing)Fruit$() in a barrel of $(thing)Alcohol$(). For information on how that process works, see the relevant $(l:cooking/decay#vinegar)page$()."
         },
@@ -111,12 +111,12 @@
         },
         {
             "type": "patchouli:text",
-            "title": "红石",
+            "title": "Redstone",
             "text": "Barrels can be automated with $(thing)Redstone$(). Applying a redstone signal to a barrel will seal it. Unsealed barrels can have fluids and items inserted and extracted from their open face. Sealed barrels can safely be moved around with $(thing)Pistons$() or $(thing)Contraptions$(). A $(l:logistics/redstone_devices#clock)Precision Clock$() can detect when a barrel recipe has finished and output a signal."
         },
         {
             "type": "patchouli:relations",
-            "title": "延伸阅读",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:craftsmanship/sticks_and_stones",

@@ -65,7 +65,7 @@
         },
         {
             "type": "patchouli:text",
-            "title": "Conservation",
+            "title": "Preservation",
             "anchor": "preservation",
             "text": "Barrels can preserve items in $(thing)Vinegar$(). Vinegar is made by sealing $(thing)Fruit$() in a barrel of $(thing)Alcohol$(). For information on how that process works, see the relevant $(l:cooking/decay#vinegar)page$()."
         },
@@ -116,7 +116,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Pour aller plus loin",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:craftsmanship/sticks_and_stones",

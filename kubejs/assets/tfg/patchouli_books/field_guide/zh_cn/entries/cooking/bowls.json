@@ -15,7 +15,7 @@
             "type": "patchouli:spotlight",
             "item": "tag:tfc:powders",
             "anchor": "powder_bowl",
-            "title": "粉末",
+            "title": "Powders",
             "link_recipes": false,
             "text": "放置的碗可以盛装最多16份单一粉末。手持粉末$(item)$(k:key.use)$()点击以放入。空手$(item)$(k:key.use)$()以取出。$(br2)按住$(item)$(k:key.sneak)$()可以一次装满或清空碗中的所有粉末。"
         },
