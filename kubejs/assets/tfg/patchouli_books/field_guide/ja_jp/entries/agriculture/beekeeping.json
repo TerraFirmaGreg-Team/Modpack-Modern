@@ -1,5 +1,5 @@
 {
-    "name": "養蜂",
+    "name": "Beekeeping",
     "category": "tfg:agriculture",
     "icon": "firmalife:beehive",
     "pages": [
@@ -359,7 +359,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "さらに読む",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:agriculture/greenhouse",

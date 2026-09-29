@@ -6,7 +6,7 @@
         {
             "type": "patchouli:text",
             "text": "$(li)$(bold)$(l:logistics/roads#intro)Road Construction$()$(li)$(bold)$(l:logistics/roads#mattock)Mattocks$()$(li)$(bold)$(l:logistics/roads#base_course)Base Course$()$(li)$(bold)$(l:logistics/roads#pavers)Pavers$()$(li2)$(l:logistics/roads#hoggin)Hoggin Mix$()$(li2)$(l:logistics/roads#gravel_fill)Gravel Fill$()$(li2)$(l:logistics/roads#stone)Cobble, Sett, & Flagstones$()$(li2)$(l:logistics/roads#concrete)Concrete$()$(li2)$(l:logistics/roads#asphalt)Asphalt$()$(li)$(bold)$(l:logistics/roads#paving_cart)Paving Cart$()",
-            "title": "Tout",
+            "title": "Index",
             "anchor": "index"
         },
         {
@@ -243,7 +243,7 @@
             "type": "patchouli:spotlight",
             "item": "tag:rnr:concrete_roads",
             "anchor": "concrete",
-            "title": "Béton",
+            "title": "Concrete",
             "text": "Concrete roads offer a $(thing)$(bold)30% Movement Speed Bonus$() when properly constructed. However, road builders must be diligent when constructing concrete roads to prevent them from $(4)cracking$() or being $(4)trodden$() on while wet, as this will remove the speed bonus."
         },
         {
@@ -459,7 +459,7 @@
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Chariot de pavage",
+            "title": "Paving Cart",
             "anchor": "paving_cart",
             "item": "tfg:rnr_plow",
             "text": "The $(thing)Paving Cart$() is a specialized cart used for laying down road surfaces quickly and efficiently. It can be filled with $(6)$(t:#rnr:road_materials)Road Materials$() and $(thing)Crushed Base Course$() and then attached to a $(l:agriculture/animal_husbandry#equines)Horse$() with $(item)$(k:key.astikorcarts.desc)$() to create roads as you travel. The cart can also fill in any existing base course blocks."
@@ -468,7 +468,7 @@
             "type": "patchouli:entity",
             "entity": "tfg:rnr_plow",
             "scale": 0.5,
-            "name": "Chariot de pavage",
+            "name": "Paving Cart",
             "text": "The blades of the paving cart will lower with $(item)$(k:key.use)$() indicating that the cart will plow roads when moved."
         },
         {
@@ -507,7 +507,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Pour aller plus loin",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:craftsmanship/building_materials",

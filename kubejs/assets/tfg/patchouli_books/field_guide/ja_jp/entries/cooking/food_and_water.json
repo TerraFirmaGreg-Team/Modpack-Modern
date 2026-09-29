@@ -5,7 +5,7 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "title": "インデックス",
+            "title": "Index",
             "anchor": "index",
             "text": "$(li)$(bold)$(l:cooking/food_and_water#basics)Basics$()$(li)$(bold)$(l:cooking/food_and_water#thirst)Thirst$()$(li)$(bold)$(l:cooking/food_and_water#nutrition_screen)The Nutrition Screen$()$(li)$(bold)$(l:cooking/food_and_water#nutrients)Nutrients$()$(li2)$(l:cooking/food_and_water#fruit)Fruit$()$(li2)$(l:cooking/food_and_water#vegetables)Vegetables$()$(li2)$(l:cooking/food_and_water#protein)Protein$()$(li2)$(l:cooking/food_and_water#grain)Grain$()$(li2)$(l:cooking/food_and_water#dairy)Dairy$()$(li)$(bold)$(l:cooking/food_and_water#contaminants)Contaminants$()$(li2)$(l:cooking/food_and_water#toxins)Toxins$()$(li2)$(l:cooking/food_and_water#parasites)Parasites$()$(li2)$(l:cooking/food_and_water#microplastics)Microplastics$()"
         },
@@ -35,7 +35,7 @@
             "type": "patchouli:text",
             "anchor": "thirst",
             "text": "喉の渇きは、体内の水分量を表す値です。減少する速度は空腹度とほぼ同じですが、高温環境にいる場合や空腹度の消費が激しい行動をしている場合は、より速く減少します。幸いにも、$(thing)淡水$()を飲むことで喉の渇きを回復できます。水源に向かって$(item)$(k:key.use)$()を押すことで水を飲めます。なお、海水を飲むと喉の渇きが回復するどころか減少し、さらに$(thing)渇き$()の効果を受けることがあります。この効果は喉の渇きの減少をさらに加速させます。",
-            "title": "渇き"
+            "title": "Thirst"
         },
         {
             "type": "patchouli:multiblock",
@@ -106,31 +106,31 @@
             "text": "$(li)$(bold)Average >85% ↴$()$()$(italic)$(li2)Increase passive health regen by 100%.$()$()$(italic)$(li2)Decreases $(l:game_mechanics/hazards#medicine)Medical Condition$() progression rate by 50%.$()$()$(italic)$(li2)Increase medical condition passive healing rate by 100%.$()$()"
         },
         {
-            "title": "果物",
+            "title": "Fruit",
             "type": "patchouli:text",
             "anchor": "fruit",
             "text": "$(l)$(a)Fruit$()$() nutrients are mostly found from $(l:the_world/wild_fruits)Fruiting Plants$(), like berry bushes, and fruit trees. A notable exception to this is $(l:the_world/wild_crops#pumpkin)Pumpkins$() and $(l:the_world/wild_crops#melon)Melons$(), which nutritionally are fruits.$(br2)Increasing your fruit value gives the following effects:$()$(li)$(bold)Average >55% → $()$()$(italic)Decreases thirst usage by 25%.$()$(li)$(bold)Average >85% → $()$()$(italic)Increases mining speed by 30%.$()"
         },
         {
-            "title": "野菜",
+            "title": "Vegetables",
             "type": "patchouli:text",
             "anchor": "vegetables",
             "text": "$(l)$(2)Vegetables$()$() are found in nearly every $(l:agriculture/growing_crops)Crop$().$(br2)Increasing your vegetable value gives the following effects:$()$(li)$(bold)Value >55% → $()$()$(italic)Removes under-water mining penalty.$()$(li)$(bold)Value >85% → $()$()$(italic)Gives the respiration effect.$()"
         },
         {
-            "title": "タンパク質",
+            "title": "Protein",
             "type": "patchouli:text",
             "anchor": "protein",
             "text": "$(l)$(c)Protein$()$() can be sourced from the meat of $(l:the_world/wild_animals)Animals$(). It can also be obtained from some crops like $(thing)legumes$().$(br2)Increasing your protein value gives the following effects:$()$(li)$(bold)Value >55% → $()$()$(italic)Decrease exhaustion multiplier by 25%.$()$(li)$(bold)Value >85% → $()$()$(italic)Allows you to carry an additional huge & heavy item without being $(l:game_mechanics/size_and_weight#overburdening)Overburdened$() (like a sealed barrel).$()"
         },
         {
-            "title": "穀物",
+            "title": "Grain",
             "type": "patchouli:text",
             "anchor": "grain",
             "text": "$(l)$(6)Grain$()$() is found in cereal crops, such as $(l:the_world/wild_crops#barley)Barley$(). The processing of grain is on the $(l:cooking/bread)Bread$() page. Some root crops also count as grains.$(br2)Increasing your grain value gives the following effects:$()$(li)$(bold)Value >55% → $()$()$(italic)Gives a 5% speed buff.$()$(li)$(bold)Value >85% → $()$()$(italic)Gives a 15% speed buff.$()"
         },
         {
-            "title": "乳製品",
+            "title": "Dairy",
             "type": "patchouli:text",
             "anchor": "dairy",
             "text": "$(l)$(5)Dairy$()$() comes from $(thing)Milk$(), which is derived from $(l:agriculture/animal_husbandry#dairy_animals)Dairy Animals$(). Processing and drinking milk is covered on the $(l:cooking/cheese)Dairy$() page.$(br2)Increasing your dairy value gives the following effects:$()$(li)$(bold)Value >55% → $()$()$(italic)Gives the $(thing)Feather Falling I$() effect.$()$(li)$(bold)Value >85% → $()$()$(italic)Gives the $(thing)Feather Falling IV$() effect.$()"
@@ -139,22 +139,22 @@
             "type": "patchouli:text",
             "anchor": "contaminants",
             "text": "In addition to nutrients $(tfg) also adds contaminants. There are three contaminants, all obtainable from food: $(l)$(d)Toxins$()$(), $(l)$(4)Parasites$()$(), and $(l)$(3)Microplastics$()$(). Contaminants can be passed into meal items and build up within the player.",
-            "title": "汚染状態"
+            "title": "Contaminants"
         },
         {
-            "title": "毒素",
+            "title": "Toxins",
             "type": "patchouli:text",
             "anchor": "toxins",
             "text": "$(l)$(d)Toxins$() come from specifically dangerous crops and meats. Toxins decrease naturally at a rate of 3%/day. Consume $(item)Detox Capsules$() to actively $(l:game_mechanics/mob_effects#cure_toxins)Cure Toxins$().$(br2)Increasing your toxins value gives the following effects:$()$(li)$(bold)Value >0% → $()$()$(italic)On any new increase: 25% chance to get a random hazardous effect for 10sec.$()$(li)$(bold)Value >99% → $()$()$(italic)$(l:game_mechanics/mob_effects#final_moments)Death.$()"
         },
         {
-            "title": "寄生",
+            "title": "Parasites",
             "type": "patchouli:text",
             "anchor": "parasites",
             "text": "$(l)$(4)Parasites$() come from eating certain raw meats or drinking muddy water. Consume $(item)Parasiticide Capsules$() to actively $(l:game_mechanics/mob_effects#cure_parasites)Cure Parasites$().$(br2)Increasing your parasites value gives the following effects:$()$(li)$(bold)Value >10% → $()$()$(italic)20% chance to increase by 10% each day to a max of 60%.$()$(li)$(bold)Value >33% → $()$()$(italic)Increases passive exhaustion by 25%.$()$(li)$(bold)Value >66% → $()$()$(italic)Increases passive exhaustion by 50%.$()"
         },
         {
-            "title": "マイクロプラスチック",
+            "title": "Microplastics",
             "type": "patchouli:text",
             "anchor": "microplastics",
             "text": "$(l)$(3)Microplastics$() come from consuming food packaged in plastic. Microplastics decrease naturally at a rate of 1%/day. Consume $(item)Nanofiltration Capsules$() to actively $(l:game_mechanics/mob_effects#cure_microplastics)Cure Microplastics$().$(br)Increasing your microplastics value gives the following effects:$(br2)$(o)(Continued on next page...)$()"
@@ -246,7 +246,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "さらに読む",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:cooking/decay",

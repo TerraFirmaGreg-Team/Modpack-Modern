@@ -400,7 +400,7 @@
                     "bold": true
                 },
                 {
-                    "text": "Albahaca"
+                    "text": "Basil"
                 },
                 {
                     "text": "12 - 25"
@@ -409,7 +409,7 @@
                     "text": "300 - 500"
                 },
                 {
-                    "text": "Laurel"
+                    "text": "Bay Laurel"
                 },
                 {
                     "text": "8 - 14"
@@ -418,7 +418,7 @@
                     "text": "25 - 225"
                 },
                 {
-                    "text": "Cardamomo"
+                    "text": "Cardamom"
                 },
                 {
                     "text": "18 - 30"
@@ -436,7 +436,7 @@
                     "text": "0 - 150"
                 },
                 {
-                    "text": "Comino"
+                    "text": "Cumin"
                 },
                 {
                     "text": "6 - 20"
@@ -445,7 +445,7 @@
                     "text": "50 - 250"
                 },
                 {
-                    "text": "Orégano"
+                    "text": "Oregano"
                 },
                 {
                     "text": "5 - 13"
@@ -454,7 +454,7 @@
                     "text": "50 - 150"
                 },
                 {
-                    "text": "Pimiento cherry"
+                    "text": "Pimento"
                 },
                 {
                     "text": "15 - 30"
@@ -463,7 +463,7 @@
                     "text": "200 - 450"
                 },
                 {
-                    "text": "Vainilla"
+                    "text": "Vanilla"
                 },
                 {
                     "text": "18 - 30"
@@ -502,7 +502,7 @@
                     "X": "firmalife:plant/basil[stage=1]"
                 }
             },
-            "name": "Albahaca",
+            "name": "Basil",
             "anchor": "basil",
             "text": "La $(thing)Albahaca Silvestre$() crece entre los 12 y 25 °C, y una precipitación entre 300 y 500 mm.",
             "enable_visualize": false
@@ -522,7 +522,7 @@
                     "X": "firmalife:plant/bay_laurel[stage=1]"
                 }
             },
-            "name": "Laurel",
+            "name": "Bay Laurel",
             "anchor": "bay",
             "text": "El $(thing)Laurel Silvestre$() crece entre los 8 y 14 °C, y una precipitación entre 25 y 225 mm. ",
             "enable_visualize": false
@@ -542,7 +542,7 @@
                     "X": "firmalife:plant/cardamom[stage=1]"
                 }
             },
-            "name": "Cardamomo",
+            "name": "Cardamom",
             "anchor": "cardamom",
             "text": "El $(thing)Cardamomo Silvestre$() crece entre los 18 y 30 °C, y una precipitación entre 350 y 500 mm.",
             "enable_visualize": false
@@ -582,7 +582,7 @@
                     "X": "firmalife:plant/cumin[stage=1]"
                 }
             },
-            "name": "Comino",
+            "name": "Cumin",
             "anchor": "cumin",
             "text": "El $(thing)Comino Silvestre$() crece entre los 6 y 20 °C, y una precipitación entre 50 y 250 mm.",
             "enable_visualize": false
@@ -602,7 +602,7 @@
                     "X": "firmalife:plant/oregano[stage=1]"
                 }
             },
-            "name": "Orégano",
+            "name": "Oregano",
             "anchor": "oregano",
             "text": "El $(thing)Orégano Silvestre$() crece entre los 5 y 13 °C, y una precipitación entre 50 y 150 mm.",
             "enable_visualize": false
@@ -622,7 +622,7 @@
                     "X": "firmalife:plant/pimento[stage=1]"
                 }
             },
-            "name": "Pimiento cherry",
+            "name": "Pimento",
             "anchor": "pimento",
             "text": "$(thing)Los pimientos salvajes$() crecen entre 15 y 30º C, con una precipitación entre 200 y 450 mm.",
             "enable_visualize": false
@@ -642,7 +642,7 @@
                     "X": "firmalife:plant/vanilla[stage=1]"
                 }
             },
-            "name": "Vainilla",
+            "name": "Vanilla",
             "anchor": "vanilla",
             "text": "La $(thing)Vainilla Silvestre$() crece entre 18 y 30 °C, y una precipitación entre 200 y 500 mm.",
             "enable_visualize": false
@@ -668,7 +668,7 @@
                     "X": "firmalife:plant/butterfly_grass"
                 }
             },
-            "name": "Hierba de Mariposa",
+            "name": "Butterfly Grass",
             "anchor": "butterfly_grass",
             "text": "Una planta de césped de mariposa.",
             "enable_visualize": false

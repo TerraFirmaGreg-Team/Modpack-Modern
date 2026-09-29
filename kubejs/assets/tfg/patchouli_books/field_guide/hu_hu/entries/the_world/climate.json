@@ -16,7 +16,7 @@
         },
         {
             "type": "patchouli:text",
-            "title": "Naptár",
+            "title": "Calendar",
             "anchor": "calendar",
             "text": "The $(thing)Calendar$() can be viewed at any time by pressing $(item)$(k:key.inventory)$(), and clicking on the calendar tab. It is important to note that the effects of seasons will be inverted when crossing equator lines, such as at $(thing)Z=10000$()."
         },
@@ -46,7 +46,7 @@
             "type": "patchouli:text",
             "anchor": "climate",
             "text": "Another tab on the main inventory screen is the $(thing)Climate$() screen. This one shows information about the current location$(li)The first line shows the overall $(l:https://en.wikipedia.org/wiki/K%C3%B6ppen_climate_classification)Climate$().$(li)The second line shows the $(l:the_world/climate#temperature)Average Annual Temperature$().$(li)The third line shows the $(l:the_world/climate#rainfall)Average Annual Rainfall$().$(li)And the last line shows the $(l:the_world/climate#temperature)Current Local Temperature$().",
-            "title": "Éghajlat"
+            "title": "Climate"
         },
         {
             "type": "patchouli:image",
@@ -62,7 +62,7 @@
         },
         {
             "type": "patchouli:text",
-            "title": "Hőmérséklet",
+            "title": "Temperature",
             "anchor": "temperature",
             "text": "Current Temperature in TerraFirmaCraft is influenced by a number of factors:$(br)$(li)Firstly, the region--Especially the latitude--Will play the largest role and is recorded as the $(thing)Average Temperature$().$(li)Secondly, the current season will influence the temperature.$(li)Thirdly, the temperature can be different day to day as well as varying from hour to hour.$(li)Lastly, temperature varys in elevation changes."
         },

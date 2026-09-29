@@ -17,7 +17,7 @@
         {
             "type": "patchouli:text",
             "anchor": "uses",
-            "title": "Uses",
+            "title": "Использует",
             "text": "Livestock each have a maximum number of $(item)Uses$()―indicated by their \"Wear & Tear\"―before they $(thing)become old$(). They are born as babies, which are smaller and cannot provide things for the player. After a certain number of days, they grow into $(thing)adult$() animals, which are able to do things like breed or produce milk. After they breed or are used enough times, animals become $(thing)old$(), and are only useful for their meat."
         },
         {
@@ -189,14 +189,14 @@
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Кормушки",
+            "title": "Feeding Troughs",
             "anchor": "feeding_trough",
             "item": "tfcgroomer:bismuth_bronze_grooming_station,tfcgroomer:black_bronze_grooming_station,tfcgroomer:bronze_grooming_station,tfcgroomer:copper_grooming_station,tfcgroomer:wrought_iron_grooming_station,tfcgroomer:steel_grooming_station,tfcgroomer:black_steel_grooming_station,tfcgroomer:red_steel_grooming_station,tfcgroomer:blue_steel_grooming_station",
             "text": "$(thing)Feeding Troughs$() can automatically feed animals in an area specified by its tooltip. Higher tier $(l:craftsmanship/metallurgy)Metals$() increase the feeding range.$(br)To add animal feed―and optionally enable automatic breeding―open the troughs interface with $(item)$(k:key.use)$()."
         },
         {
             "type": "patchouli:relations",
-            "title": "Читать дальше",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:agriculture/growing_crops",

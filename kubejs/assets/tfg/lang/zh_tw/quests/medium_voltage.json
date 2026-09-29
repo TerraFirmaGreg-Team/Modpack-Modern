@@ -1,0 +1,21 @@
+{
+    "quests.medium_voltage.mv_machine_hull.title": "歡迎來到MV！",
+    "quests.medium_voltage.mv_machine_hull.subtitle": "技術越多，問題越多",
+    "quests.medium_voltage.mv_machine_hull.desc.1": "每每進入新階段，面臨諸多全新的&e機器&r與&e化工品&r，總令人應接不暇。\n\n正如任務線所見，進入&6HV 階段&r前有&2三大核心目標&r。現在我們逐個梳理解決",
+    "quests.medium_voltage.mv_miner.title": "自動挖礦",
+    "__comment2": "Plastic Line",
+    "quests.medium_voltage.mv_sulfuric_acid.desc.2": "裝配&3三台 LV 化學反應器&r來實現自動化。建議搭建獨立產線，用&3a 一台 LV 發電機&r為所有設備供電，接著就可以享用義大利麵了，管線會幫忙處理輸入與輸出。\n\n&9 - 第一步：&r將&a硫磺&r與&b氧氣&r反應成&a二氧化硫&r。\n&9 - 第二步：&r將&a二氧化硫&r與更多的&b氧氣&r反應成&a三氧化硫&r。\n&9 - 第三步：&r將&a三氧化硫&r與&b水&r反應成&e硫酸&r。",
+    "quests.medium_voltage.mv_seawater.title": "海水",
+    "__comment3": "Circuits",
+    "quests.medium_voltage.mv_boards.title": "陶瓷電路板",
+    "quests.medium_voltage.mv_boards.subtitle": "陶瓷電路板界的 Casio",
+    "quests.medium_voltage.mv_boards.desc": "既然已經掌握陶瓷電路板的全套製作工藝，未來更高階的陶瓷電路板將顯著提高電路板產量。\n\n配方鏈開始變得冗長，建議兩台專用的&3化學反應器&r來批量處理。",
+    "quests.medium_voltage.mv_sodium_iron.title": "紅石基對甲苯磺酸 / 氯化鐵",
+    "quests.medium_voltage.mv_sodium_iron.desc.1": "&a過硫酸鈉&r在&3化學浴洗機&r用於&9礦物加工&r來取得各種平常無法取得的額外產物。這是個可選步驟，但收益可觀。\n\n&l等等，等一下！別分心了&r － 這個任務的主要目標是...\n\n利用&a過硫酸鈉&r與&a氯化鐵&r以更低的造價製作&9優良電路板&r，省下四分之三的銀。\n\n過硫酸鈉之後對蝕刻不再有幫助，因此改用&4紅石基對甲苯磺酸&r或&a氯化鐵&r來製作&9陶瓷電路板&r.",
+    "quests.medium_voltage.mv_sodium_iron.desc.2": "製作&a過硫酸鈉&r會產生副產品&a鹽酸&r，這些鹽酸可以重複使用來製作&a氯化鐵&r這應當是目前最好的方案，但你有最終決定權。\n\n若能自動化取得海水，那麼製作氯化鐵興許會容易些。\n\n&4紅石基對甲苯磺酸&r這個時候難以製作，而發展到&1IV 階段&r時就不可或缺。 若想奪得先機，在&eHV 階段&r就製作也是種選擇！\n",
+    "__comment4": "EBF",
+    "quests.medium_voltage.hv_machine_hull.title": "HV機器外殼",
+    "quests.medium_voltage.hv_machine_hull.subtitle": "那是第四個機器外殼！這就是進展",
+    "quests.medium_voltage.mv_stainless.title": "不鏽鋼",
+    "quests.medium_voltage.large_steel_boiler.desc.2": "這是所有&a助燃物&r與其消耗率的清單：\n\n- 雜酚油 => 溫度提升：&c200&r — 消耗：&b32 mB/s&r — 用於&8ULV&r\n\n- 松脂與楓/樺樹液 => 溫度提升：&c200&r — 消耗：&b32 mB/s&r — 用於&8ULV&r\n\n- 橄欖油 => 溫度提升：&c400&r — 消耗：&b8 mB/s&r — 用於&8ULV&r\n\n- 木煤氣 => 溫度提升：&c400&r — 消耗：&b52 mB/s&r — 用於&7LV&r\n\n&6大型鍋爐專屬&r：\n\n- 芳香混合物 => 溫度提升：&c1000&r — 消耗：&b600 mB/s&r — 用於&bMV&r\n\n- 火箭燃料 => 溫度提升：&c4000&r — 消耗：&b200 mB/s&r — 用於&6HV&r\n\n- 放射性廢液 => 溫度提升：&c8000&r — 消耗：&b1 mB/s&r — 用於&5EV&r"
+}

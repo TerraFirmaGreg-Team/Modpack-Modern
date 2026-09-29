@@ -9,9 +9,9 @@
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Кельма",
+            "title": "Trowel",
             "item": "tfg:trowel",
-            "text": "$(item)Кельма$() дає змогу будівельнику розміщувати випадкові блоки з панелі швидкого доступу, використовуючи $(item)$(k:key.use)$() по поверхні.$(br)Кельма також має вбудовану сумісність із модом $(item)Roads and Roofs$(), тож нею можна випадково розміщувати матеріали-заповнювачі, як-от цеглу або бруківку.$(br)Натхненням для кельми став інструмент із мода $(item)Quark$() авторства Vazkii."
+            "text": "A $(item)Trowel$() allows a builder to place random blocks from their hotbar when $(item)$(k:key.use)$() a surface.$(br)Trowels also have built-in functionality with the $(item)Roads and Roofs$() mod, meaning that they can place filler items like bricks or flagstones randomly as well.$(br)Inspired by the trowel tool from $(item)Quark$()―A mod by Vazkii."
         },
         {
             "type": "patchouli:spotlight",
@@ -42,7 +42,7 @@
         {
             "type": "patchouli:spotlight",
             "item": "constructionwand:stone_wand,constructionwand:iron_wand,constructionwand:diamond_wand,constructionwand:infinity_wand",
-            "title": "Будівельні палички",
+            "title": "Construction Wands",
             "anchor": "wands",
             "text": "Будівельні палички — це простий спосіб встановлювати багато блоків одночасно. Просто натисни правою кнопкою миші по блоку, тримаючи паличку, і вона одразу встановить більше таких самих блоків, що чудово підходить для підлоги, стін тощо.$(br2)Натисни $(item)U$() на будівельній паличці, щоб відкрити сторінку з детальними інструкціями щодо її використання."
         },
@@ -80,7 +80,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Додаткове читання",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:craftsmanship/anvils",

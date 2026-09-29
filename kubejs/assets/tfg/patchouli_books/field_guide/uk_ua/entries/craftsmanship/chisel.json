@@ -1,5 +1,5 @@
 {
-    "name": "Зубило",
+    "name": "Chisels",
     "category": "tfg:craftsmanship",
     "icon": "tfc:metal/chisel/wrought_iron",
     "pages": [
@@ -36,7 +36,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Додаткове читання",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:the_world/geology",

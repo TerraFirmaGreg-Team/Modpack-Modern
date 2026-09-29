@@ -27,7 +27,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "clothes",
-			"title": "服装",
+			"title": "Clothing",
 			"text": "$(item)Burlap$(), $(item)Linen$(), and $(item)Silk$() clothing will help provide a little heat resistance.$(br)$(item)Crocodile$(), $(item)Tiger$(), and $(item)Lion$() clothing provide a stronger cooling effect.$(br)Lastly, $(item)Phantom$() and $(item)Red Elk$() clothes are the strongest cooling clothes, and last a long time too.$(br2)All clothing can be repaired. Press $(thing)U$() to check the repair recipes in $(emi)."
 		},
 		{
@@ -78,7 +78,7 @@
 					"X": "beneath:hellbricks"
 				}
 			},
-			"name": "地狱熔炉",
+			"name": "Hellforge",
 			"text": "Any type of $(l:agriculture/aqueducts)Aqueduct$() will work.",
 			"enable_visualize": false
 		},
@@ -99,7 +99,7 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "猪灵以物易物",
+			"title": "Piglin Bartering",
 			"anchor": "piglins",
 			"item": "minecraft:gold_ingot",
 			"text": "Like you'd expect, you can trade with $(thing)Piglins$() in the same way you trade with them in vanilla, with $(item)Gold Ingots$().$(br2)A full list of trades can be found in $(emi) - simply press $(thing)U$() on a Gold Ingot to see it."
@@ -107,7 +107,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"item": "tfg:piglin_disguise",
-			"title": "猪灵伪装",
+			"title": "Piglin Disguise",
 			"anchor": "disguise",
 			"text": "如果你希望顺利交易，或者单纯想融入当地……戴上$(thing)猪灵伪装$()可避免$(thing)猪灵$()一看到你就产生敌意。但注意！它们容忍有限……"
 		},
@@ -125,7 +125,7 @@
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "延伸阅读",
+			"title": "Further Reading",
 			"anchor": "relations",
 			"entries": [
 				"tfg:beneath/beneath",

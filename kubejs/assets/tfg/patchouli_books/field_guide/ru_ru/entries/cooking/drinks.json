@@ -5,7 +5,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"title": "Индекс",
+			"title": "Index",
 			"anchor": "index",
 			"text": "$(li)$(bold)$(l:cooking/drinks#alcohol)Alcohol$()$(li2)$(l:cooking/drinks#aged_alcohol)Aged Alcohol$()$(li2)$(l:cooking/drinks#vintage_alcohol)Vintage Alcohol$()$(li2)$(l:cooking/drinks#table)Alcohol Effects Table$()$(li2)$(l:cooking/drinks#wine)Wine$()$(li)$(bold)$(l:cooking/drinks#milk)Milk$()$(li)$(bold)$(l:cooking/drinks#spring_water)Spring Water$()$(li)$(bold)$(l:cooking/drinks#sea_water)Sea Water$()$(li)$(bold)$(l:cooking/drinks#muddy_water)Muddy Water$()$(li)$(bold)$(l:cooking/drinks#juice)Fruit Juice$()$(li)$(bold)$(l:cooking/drinks#yogurt)Yogurt$()$(li)$(bold)$(l:cooking/drinks#smoothie)Fruit Smoothie$()$(li)$(bold)$(l:cooking/drinks#ice_slush)Ice Slush$()"
 		},
@@ -35,19 +35,19 @@
 			"anchor": "table",
 			"strings": [
 				{
-					"text": "Алкоголь",
+					"text": "Alcohol",
 					"bold": true
 				},
 				{
-					"text": "Выдержанный",
+					"text": "Aged",
 					"bold": true
 				},
 				{
-					"text": "Элитный",
+					"text": "Vintage",
 					"bold": true
 				},
 				{
-					"text": "Пиво"
+					"text": "Beer"
 				},
 				{
 					"text": "Absorption II (5:20)"
@@ -56,7 +56,7 @@
 					"text": "Absorption III (8:00)"
 				},
 				{
-					"text": "Сидр"
+					"text": "Cider"
 				},
 				{
 					"text": "Speed (5:20)"
@@ -65,7 +65,7 @@
 					"text": "Speed II (8:00)"
 				},
 				{
-					"text": "Ром"
+					"text": "Rum"
 				},
 				{
 					"text": "Speed II (2:40)"
@@ -74,7 +74,7 @@
 					"text": "Speed III (4:00)"
 				},
 				{
-					"text": "Саке"
+					"text": "Sake"
 				},
 				{
 					"text": "Resistance (5:20)"
@@ -83,7 +83,7 @@
 					"text": "Resistance II (8:00)"
 				},
 				{
-					"text": "Водка"
+					"text": "Vodka"
 				},
 				{
 					"text": "Resistance II (2:40)"
@@ -92,7 +92,7 @@
 					"text": "Resistance III (4:00)"
 				},
 				{
-					"text": "Виски"
+					"text": "Whiskey"
 				},
 				{
 					"text": "Haste II (2:40)"
@@ -101,7 +101,7 @@
 					"text": "Haste III (4:00)"
 				},
 				{
-					"text": "Кукурузный виски"
+					"text": "Corn Whiskey"
 				},
 				{
 					"text": "Haste (5:20)"
@@ -110,7 +110,7 @@
 					"text": "Haste II (8:00)"
 				},
 				{
-					"text": "Ржаной виски"
+					"text": "Rye Whiskey"
 				},
 				{
 					"text": "Haste (5:20)"
@@ -119,7 +119,7 @@
 					"text": "Haste II (8:00)"
 				},
 				{
-					"text": "Медовуха"
+					"text": "Mead"
 				},
 				{
 					"text": "Regeneration (5:20)"
@@ -161,35 +161,35 @@
 			"anchor": "milk"
 		},
 		{
-			"title": "Родниковая вода",
+			"title": "Spring Water",
 			"text": "Питьё $(thing)Родниковой воды$() согревает тебя на 4°C и при стоянии в ней даёт эффект регенерация, а также согревает.",
 			"item": "tfc:bucket/spring_water",
 			"type": "patchouli:spotlight",
 			"anchor": "spring_water"
 		},
 		{
-			"title": "Морская вода",
+			"title": "Sea Water",
 			"text": "$(thing)Молоко$() можно получить от большинства самок молочных животных, просто щелкнув по ним правой кнопкой мыши с деревянным или металлическим ведром, только когда уровень прирученности достигнет достаточно высокого уровня. (Если доение не работает, убедитесь, что ведра не состаканы!)$(br)Хотя этот напиток не дает никаких бонусов, он обеспечивает организм молочными продуктами, если его выпить после еды. Из него впоследствии можно приготовить сыр.",
 			"type": "patchouli:spotlight",
 			"item": "tfc:bucket/salt_water",
 			"anchor": "sea_water"
 		},
 		{
-			"title": "Грязная Вода",
+			"title": "Muddy Water",
 			"text": "Drinking $(thing)Muddy Water$() is not recommended. Doing so will make you nauseous and give you $(l:cooking/food_and_water#parasites)parasites$().",
 			"type": "patchouli:spotlight",
 			"item": "tfg:muddy_water_bucket",
 			"anchor": "muddy_water"
 		},
 		{
-			"title": "Фруктовый сок",
+			"title": "Fruit Juice",
 			"text": "$(thing)Fruit Juice$() is a great way to condense your fruits into a longer lasting food item. Fruit juice provides the $(l:cooking/food_and_water#quenching_transient_effect)Quenching Effect$(), which helps stave off thirst.$(br2)Fruit Juice will expire over time.$()",
 			"type": "patchouli:spotlight",
 			"anchor": "juice",
 			"item": "tfg:food/juice"
 		},
 		{
-			"title": "Йогурт",
+			"title": "Yogurt",
 			"text": "$(thing)Йогурт$() содержит те же питательные вещества, что и молоко. Он также может быть смешат с фруктами для получения $(item)Фруктового йогурта$().$(br2)Срок годности йогурта ограничен.$()",
 			"type": "patchouli:spotlight",
 			"anchor": "yogurt",
@@ -211,7 +211,7 @@
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Читать дальше",
+			"title": "Further Reading",
 			"anchor": "relations",
 			"entries": [
 				"tfg:cooking/food_and_water",

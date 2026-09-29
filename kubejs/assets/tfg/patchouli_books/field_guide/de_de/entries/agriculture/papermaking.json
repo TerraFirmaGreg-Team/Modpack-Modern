@@ -24,14 +24,14 @@
         {
             "type": "tfg:sealed_barrel_recipe",
             "anchor": "soaked_papyrus_strip",
-            "title": "Getränkte Papyrusstreifen",
+            "title": "Soaked Papyrus Strip",
             "recipe": "tfc:barrel/soaked_papyrus_strip",
             "text": "Then, papyrus strips are soaked in a $(l:craftsmanship/barrels)Barrel$() of $(thing)Water$()."
         },
         {
             "type": "tfg:loom_recipe",
             "anchor": "unrefined_paper",
-            "title": "Unraffiniertes Papier",
+            "title": "Unrefined Paper",
             "recipe": "tfc:loom/unrefined_paper",
             "text": "Then, soaked papyrus strips are woven together in a $(l:agriculture/weaving#loom)Loom$() to make $(thing)Unrefined Paper$(). Finally, it must be placed on a log and $(l:agriculture/leather_making#scraping)Scraped$() to make $(thing)Paper$()."
         },
@@ -72,14 +72,14 @@
         },
         {
             "type": "patchouli:crafting",
-            "title": "Hartholzstreifen",
+            "title": "Hardwood Strip",
             "anchor": "hardwood_strip",
             "recipe": "tfg:crafting/strip_hardwood",
             "text": "Next, the stripped wood is shaven with an axe to obtain $(item)Hardwood Strips$(). This can be done using an Axe or more sophisticated methods later."
         },
         {
             "type": "tfg:sealed_barrel_recipe",
-            "title": "Eingeweichter Hartholzstreifen",
+            "title": "Soaked Hardwood Strip",
             "anchor": "soaked_hardwood_strip",
             "recipe": "tfg:barrel/soak_hardwood_strip",
             "text": "Then, the individual strips are soaked in a $(l:craftsmanship/barrels)Barrel$() of $(thing)Water$(). This $(thing)debilitates the structural integrity$() of the $(thing)wood$() so it can be $(thing)broken down further$()."

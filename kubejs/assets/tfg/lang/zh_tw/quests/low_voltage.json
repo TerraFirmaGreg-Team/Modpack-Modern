@@ -1,0 +1,21 @@
+{
+	"quests.low_voltage.lv_machine_hull.title": "你的第二台機器外殼",
+	"quests.low_voltage.lv_machine_hull.subtitle": "是時候來點電力了",
+	"quests.low_voltage.lost.title": "茫然?",
+	"quests.low_voltage.lost.desc.1": "進入&7LV 階段&r開啟繁多選項，容易讓人不知所措。以下是我們的建議：\n\n1)建立穩定的電力供應。查看下方任務，有多種選擇，全都可以發電。別太小氣，多蓋幾台發電機！\n\n確保&e詳閱格雷科技能源任務章節&r，內容講述 EU、電壓、電流與線索的運作模式。",
+	"quests.low_voltage.lost.desc.3": "3) 造個裝罐機，產些電池。電池箱對工廠發展大有裨益，而勘礦儀絕對能改善遊戲體驗。\n\n4) &7LV 階段&r有兩個最終目標，分別是「電路組裝器」和「電力高爐」。你現在該準備著手解決這些目標了。",
+	"quests.low_voltage.lbb.title": "大型青銅鍋爐",
+	"quests.low_voltage.link_chapter.title": "向我解釋能量",
+	"quests.low_voltage.lv_chemical_bath.desc.2": "&l關於礦石加工：&r\n\n有些&a碎礦&r洗選為&a純淨礦石&r有備選路線，包括用&a汞&r或&a過硫酸鈉溶液&r洗選。這步其實並不重要，除非你真的很想要特別的&6副產品&r。\n這是個不錯的銀替代來源(暗示！)。\n",
+	"quests.low_voltage.lv_greenhouse.title": "電力溫室",
+	"quests.low_voltage.rancher.title": "自動化牧場",
+	"quests.low_voltage.lv_centrifuge.desc.2": "&l關於礦石加工&r\n\n將&a含雜礦粉&r或&a精礦&r轉變為純淨礦粉，外加一點&6副產品&r。這還不算是最佳副產品生產線不在最佳，但就目前所展示的礦石處理設備而言，這也是運作成本和小規模安裝成本最低的設備。",
+	"quests.low_voltage.lv_glue.desc": "現在起能&3離心&r &a黏性樹脂&r來取得液態&a膠水&r(還有目前不實用的植物球)。\n\n拔得頭籌取得膠水。用來製作&6更實惠的電阻&r配合&3組裝機&r生產&6低成本的電路板&r。\n\n&e提示：&r也能離心群巒傳說的&a膠水&r或&a松脂&r，怎麼方便怎麼來！",
+	"quests.low_voltage.lv_glue.task": "膠水",
+	"quests.low_voltage.refractory_brick.desc": "差不多該拆掉那套舊的群巒傳說高爐了！若有意願的話，大部分的材料都能回收製成&6耐火黏土粉&r(推薦利用電弧爐回收，既能得到粉末還能回收鐵！)，不然再多燒製一些耐火黏土也可以，但務必確認有充足的鋼鐵庫存！\n\n接著將耐火黏土粉、氧化鎂、石墨與樹脂攪和，製程改良型陶瓷材料，這是你的&d首批線圈&r的重要材料。",
+	"quests.low_voltage.mv_hull.title": "你的第三台機器外殼",
+	"quests.low_voltage.mv_hull.desc1": "幹得好！你已經有了&bMV 機器外殼&r, 第一個&bMV 電路&r與第一台&6電路組裝機&r。\n這正是&6格雷科技&r的精隨，每個階段運用全新的&6材料&r與&6化工品&r來製作新的&6機器&r ，接下來你將體驗到&5許多樂子&r，令人稱羨！",
+	"quests.low_voltage.bakelite.subtitle": "也被稱為聚氧苄基亞甲基甘醇酐……試著連續唸五次，舌頭沒打結算你狠。",
+	"quests.low_voltage.bakelite.desc.1": "你的第一個聚合物！將酚醛樹脂與石綿或防腐塑合板混合製成。\n\n酚醛樹脂將用來製作酚醛電路板與MV機械外殼，批量生產會是個好主意，不過&bMV 階段&r就能用聚乙烯取代。\n\n現在你有了更實惠的ULV與LV機器外殼的配方！",
+	"quests.low_voltage.bakelite.desc.2": "&l&3知識點&r&o：酚醛樹脂是首個合成聚合物。史上第一的塑膠為賽璐珞，但賽璐珞的原料硝化纖維素合成鏈過長－LV 階段來說太長了。\n\n史上第二的塑膠為酪素塑膠，由酪蛋白與甲醛製作，但自動化生產牛奶太困難。"
+}

@@ -246,7 +246,7 @@
 			"type": "patchouli:spotlight",
 			"item": "create:transmitter",
 			"anchor": "high_logistics",
-			"title": "Csomaglogisztika",
+			"title": "High Logistics",
 			"text": "Moving packages around is good and all, but surely that can't be all there is? Well, you're exactly right. There's much more that can be done with packages, including $(thing)reading inventory contents$() and $(thing)having things be delivered remotely$(), and later on even $(thing)automatically sending ingredients to be processed$() based on an item's threshold!"
 		},
 		{
@@ -256,7 +256,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"item": "greate:rich_raw_rose_quartz,greate:raw_rose_quartz,greate:poor_raw_rose_quartz",
-			"title": "Rózsakvarc",
+			"title": "Rose Quartz",
 			"anchor": "rose_quartz",
 			"text": "The only natural source of $(item)Rose Quartz$() of a high enough quality to easily craft the $(item)Lens$() out of is located far, far to the north in freezing temperatures (under $(3)-10°C$()). Getting Kaolin clay flashbacks yet?"
 		},

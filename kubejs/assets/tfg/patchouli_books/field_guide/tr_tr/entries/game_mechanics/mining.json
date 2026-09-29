@@ -14,7 +14,7 @@
         {
             "type": "patchouli:text",
             "anchor": "intro",
-            "title": "Giriş",
+            "title": "Introduction",
             "text": "Once you have $(l:craftsmanship/metallurgy)located$() an ore vein you can begin excavating it for resources. However, there are some differences from base Mincraft to be aware of when mining. Such as $(l:game_mechanics/mining#collapses)Collapses$(), $(l:game_mechanics/mining#supports)Supports$(), $(l:game_mechanics/hazards)Hazardous Materials$(), and $(l:game_mechanics/mining#processing)Processing$()."
         },
         {
@@ -338,7 +338,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Ek Okuma",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:the_world/geology",

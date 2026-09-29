@@ -11,7 +11,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "index",
-			"title": "Tūriniai",
+			"title": "Contents",
 			"text": "$(li)$(bold)$(l:mars/mars_fauna#sandworm)The Sandworm$()$(li)$(bold)Domesticatable$()$(li2)$(l:mars/mars_fauna#sniffer)Sniffer$()$(li2)$(l:mars/mars_fauna#wraptor)Wraptor$()$(li2)$(l:mars/mars_fauna#glacian_sheep)Glacian Sheep$()$(li2)$(l:mars/mars_fauna#snatcher)Snatcher$()$(li2)$(l:mars/mars_fauna#charger)Charger$()$(li2)$(l:mars/mars_fauna#soarer)Soarer$()$(li2)$(l:mars/mars_fauna#pentetic_jellie)Pentetic Jellie$()$(br2)$(o)(Continued on next page...)$()"
 		},
 		{

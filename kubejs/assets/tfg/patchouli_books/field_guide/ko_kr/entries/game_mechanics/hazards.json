@@ -7,7 +7,7 @@
 	"pages": [
 		{
 			"type": "patchouli:spotlight",
-			"title": "위험 물질",
+			"title": "Hazardous Materials",
 			"item": "gtceu:cobaltite_dust",
 			"text": "일부 $(thing)광석$(), $(thing)가루$(), $(thing)화학 물질$()은 위험하여 인벤토리에 소지하고 있을 경우 $(item)부정적인 효과$()를 받거나 심지어 $(item)사망$()에 이를 수 있습니다. 이러한 물질을 소지하면 화면에 $(item)상태 효과$()로 표시됩니다.$(br2)$(thing)마스크$(), $(thing)장갑$(), $(thing)방호복$()과 같은 특정 장비를 사용하여 이러한 효과를 완화할 수 있습니다."
 		},
@@ -30,7 +30,7 @@
 		},
 		{
 			"type": "patchouli:crafting",
-			"title": "안면 마스크",
+			"title": "Face Mask",
 			"recipe": "gtceu:shaped/face_mask",
 			"text": "$(thing)안면 마스크$()는 비소중독과 같은 $(item)흡입$() 관련 위험으로부터 보호해 줍니다.",
 			"anchor": "mask"

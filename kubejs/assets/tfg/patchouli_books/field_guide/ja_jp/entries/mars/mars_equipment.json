@@ -23,42 +23,42 @@
 		{
 			"type": "patchouli:spotlight",
 			"item": "tacz:modern_kinetic_gun{GunId:\"create_armorer:cannon_40mm_salamander\"},tacz:ammo{AmmoId:\"create_armorer:40mmhe\"}",
-			"title": "携帯型野戦砲火器",
+			"title": "Shoulder-Fired Field Gun",
 			"anchor": "cannon",
-			"text": "戦車砲を持ち歩きたいって？だったらこいつを持っていけよ。火力は文句なしだが、取り回しには難ありだ。"
+			"text": "Want to walk around with a tank cannon? This gun is slow, heavy, but packs a massive punch."
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "tacz:ammo{AmmoId:\"applied_armorer:hard_core_quartz_bullet\"},tacz:modern_kinetic_gun{GunId:\"applied_armorer:moritz_rifle_ar77\"},tacz:modern_kinetic_gun{GunId:\"applied_armorer:moritz_sniper_semi_k30\"}",
-			"title": "上位のライフル",
+			"title": "Advanced Rifles",
 			"anchor": "rifles",
-			"text": "こいつはどんな状況にも対応してくれる最高の相棒さ！迷ったらこれを選びな。"
+			"text": "These are good balanced weapons if you don't know what to pick."
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "tacz:ammo{AmmoId:\"applied_armorer:fluix_infused_grenade\"},tacz:modern_kinetic_gun{GunId:\"applied_armorer:moritz_gernade_gl3\"}",
-			"title": "グレネードランチャー",
+			"title": "Grenade Launcher",
 			"anchor": "grenades",
-			"text": "大量の敵を目の前にしたとき、こいつが切り札になるぞ。"
+			"text": "If you ever finding yourself fighting large groups of enemies at once, this may be your ticket."
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "tacz:ammo{AmmoId:\"applied_armorer:cluster_quartz_bullet\"},tacz:modern_kinetic_gun{GunId:\"applied_armorer:moritz_shotgun_sg914\"}",
-			"title": "上位のショットガン",
+			"title": "Advanced Shotguns",
 			"anchor": "shotguns",
-			"text": "気に入らないやつに至近距離でぶっ放すと、気持ちがいいぞ。"
+			"text": "Great for blasting close-up targets."
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "tacz:ammo{AmmoId:\"applied_armorer:etched_quartz_bullet\"},tacz:modern_kinetic_gun{GunId:\"applied_armorer:niklas_smg_freedom\"},tacz:modern_kinetic_gun{GunId:\"applied_armorer:niklas_pistol_double_win_win\"},tacz:modern_kinetic_gun{GunId:\"applied_armorer:niklas_pistol_semi_pride\"},tacz:modern_kinetic_gun{GunId:\"applied_armorer:niklas_pistol_semi_right\"}",
-			"title": "上位のピストルとSMG",
+			"title": "Advanced Pistols and SMGs",
 			"anchor": "pistols",
-			"text": "とにかく銃を撃ちまくりたい？ならこいつらは紛れもなくパーフェクトだ。"
+			"text": "Want to shoot fast? These guns are perfect."
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "ad_astra:netherite_space_helmet,ad_astra:netherite_space_suit,ad_astra:netherite_space_pants,ad_astra:netherite_space_boots",
-			"title": "タングステンスチールの宇宙服",
+			"title": "Tungstensteel Space Suit",
 			"anchor": "space_suit",
 			"text": "With this next space suit, you'll be able to survive both the $(b)coldest$() and the $(c)hottest$() environments that space can throw at you! It will be required to stop you from immediately combusting as soon as you set foot on $(6)Venus$() and $(5)Mercury$().$(br)As a bonus, it also comes with some extra armor and air capacity!"
 		},
@@ -82,7 +82,7 @@
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "さらに読む",
+			"title": "Further Reading",
 			"anchor": "relations",
 			"entries": [
 				"tfg:mars/mars",

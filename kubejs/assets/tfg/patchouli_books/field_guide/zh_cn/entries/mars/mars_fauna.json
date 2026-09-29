@@ -11,7 +11,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "index",
-			"title": "目录",
+			"title": "Contents",
 			"text": "$(li)$(bold)$(l:mars/mars_fauna#sandworm)The Sandworm$()$(li)$(bold)Domesticatable$()$(li2)$(l:mars/mars_fauna#sniffer)Sniffer$()$(li2)$(l:mars/mars_fauna#wraptor)Wraptor$()$(li2)$(l:mars/mars_fauna#glacian_sheep)Glacian Sheep$()$(li2)$(l:mars/mars_fauna#snatcher)Snatcher$()$(li2)$(l:mars/mars_fauna#charger)Charger$()$(li2)$(l:mars/mars_fauna#soarer)Soarer$()$(li2)$(l:mars/mars_fauna#pentetic_jellie)Pentetic Jellie$()$(br2)$(o)(Continued on next page...)$()"
 		},
 		{
@@ -66,7 +66,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"title": "霜原羊",
+			"title": "Glacian Sheep",
 			"text": "$(thing)夺掠兽$()是友好动物，喜欢偷你的东西！攻击它们可以取回物品，或喂食$(item)生鱼$()来驯服它们。$(br2)一旦驯服，你可以将它们背在背上，并为它们装备一个木箱子。按下$(k:key.wan_ancient_beasts.special_ability)$()将其扔出，它们会偷取附近箱子的内容物并带给你。",
 			"anchor": "glacian_sheep"
 		},
@@ -79,7 +79,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"title": "夺掠兽",
+			"title": "Snatcher",
 			"text": "$(thing)驰击兽$()是半被动型动物。你可以用$(item)任意火星作物$()驯服它们，将其用作战斗型陆地坐骑。$(br2)按下$(k:key.wan_ancient_beasts.special_ability)$()进行头槌攻击，或长按$(item)空格键$()发动冲刺攻击。$(br2)它们也可以装备$(item)可染色的盔甲$()。",
 			"anchor": "snatcher"
 		},
@@ -92,7 +92,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"title": "驰击兽",
+			"title": "Charger",
 			"anchor": "charger",
 			"text": "$(thing)破浪兽$()是半水生友好动物。你可以用$(item)生鱼$()驯服它们来在水下骑乘。它们也可以食用。"
 		},
@@ -105,7 +105,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"title": "翱翔鸟",
+			"title": "Soarer",
 			"anchor": "soarer",
 			"text": "$(thing)Soarers$() are passive animals found above -106°C. You can tame them with $(item)Raw Fish$() to use them as a flying mount.$(br2)They can't fly forever though, indicated by the wing icons on the top left, and will need to land occasionally. (You can feed them more Raw Fish to speed up their recovery.)$(br2)They're a great option for long-distance travel, and won't upset the sandworm either!"
 		},
@@ -118,7 +118,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"title": "破浪兽",
+			"title": "Surfer",
 			"anchor": "surfer",
 			"text": "$(thing)贪咀兽$()是有领地范围的$(item)小boss$()捕食者。喂它们肉来阻止它们的回血。它们也可以食用。"
 		},
@@ -142,7 +142,7 @@
 			"type": "patchouli:entity",
 			"entity": "wan_ancient_beasts:eater{NoAI:1b}",
 			"scale": 0.5,
-			"name": "噬颚兽",
+			"name": "Eater",
 			"anchor": "eater",
 			"text": "$(thing)簧颈兽$()是在-108°C以上发现的野生动物。喂它们$(item)树苗$()可以让你骑乘它们并伸展它们极长的脖子。它们也可以食用。"
 		},
@@ -150,7 +150,7 @@
 			"type": "patchouli:entity",
 			"entity": "species:cruncher{NoAI:1b}",
 			"scale": 0.7,
-			"name": "贪咀兽",
+			"name": "Cruncher",
 			"anchor": "cruncher",
 			"text": "$(thing)黏涕兽$()是在-109°C以上发现的懒惰野生动物。它们是友好的，可以食用。"
 		},
@@ -159,7 +159,7 @@
 			"entity": "wan_ancient_beasts:glider{NoAI:1b}",
 			"scale": 0.4,
 			"offset": 0.2,
-			"name": "滑翔鸟",
+			"name": "Glider",
 			"anchor": "glider",
 			"text": "巨大的$(thing)巨行兽$()栖息在-97°C以上的区域。它们是友好的，可以食用。"
 		},
@@ -168,7 +168,7 @@
 			"entity": "wan_ancient_beasts:crusher{NoAI:1b}",
 			"scale": 0.5,
 			"offset": 0.5,
-			"name": "碎岩兽",
+			"name": "Crusher",
 			"anchor": "crusher",
 			"text": "$(thing)袭击兽$()是在高于-109°C环境中出现的敌对动物。它们与$(thing)驰击兽$()天生敌对。你可以通过喂食$(item)生肉$()使它们转为中立。"
 		},
@@ -176,7 +176,7 @@
 			"type": "patchouli:entity",
 			"entity": "species:springling{NoAI:1b}",
 			"scale": 0.9,
-			"name": "簧颈兽",
+			"name": "Springling",
 			"anchor": "springling",
 			"text": "$(thing)毒棘鱼$()是水生猎食者。建议从远处杀死它们，并在食用前烹饪它们的肉。"
 		},
@@ -184,7 +184,7 @@
 			"type": "patchouli:entity",
 			"entity": "species:goober{NoAI:1b}",
 			"scale": 0.6,
-			"name": "黏涕兽",
+			"name": "Goober",
 			"anchor": "goober",
 			"text": "少数能在火星沙漠中生存的动物之一，$(thing)叠行虫$()是中立猎食者。它们也可以食用。"
 		},
@@ -193,7 +193,7 @@
 			"entity": "wan_ancient_beasts:walker{NoAI:1b}",
 			"scale": 0.6,
 			"offset": 2.2,
-			"name": "巨行兽",
+			"name": "Walker",
 			"anchor": "walker",
 			"text": "The gigantic $(thing)Walkers$() inhabit areas above -97°C. They are passive and can be eaten."
 		},
@@ -201,7 +201,7 @@
 			"type": "patchouli:entity",
 			"entity": "wan_ancient_beasts:raider{NoAI:1b}",
 			"scale": 0.5,
-			"name": "袭击兽",
+			"name": "Raider",
 			"anchor": "raider",
 			"text": "$(thing)Raiders$() are hostile animals found above -109°C. They have a natural rivalry with $(thing)Chargers$(). You can make them neutral by feeding them $(item)Raw Meat$()."
 		},
@@ -209,7 +209,7 @@
 			"type": "patchouli:entity",
 			"entity": "wan_ancient_beasts:toxlacanth{NoAI:1b}",
 			"scale": 0.35,
-			"name": "毒棘鱼",
+			"name": "Toxlacanth",
 			"anchor": "toxlacanth",
 			"text": "$(thing)Toxlacanths$() are aquatic prey animals. It is recommended to kill them from a distance and cook their meat before eating."
 		},
@@ -217,7 +217,7 @@
 			"type": "patchouli:entity",
 			"entity": "species:stackatick{NoAI:1b}",
 			"scale": 0.4,
-			"name": "叠行虫",
+			"name": "Stackatick",
 			"anchor": "stackatick",
 			"text": "One of the few animals that can survive the Martian desert, $(thing)Stackaticks$() are passive prey animals. They can also be eaten."
 		},
@@ -225,7 +225,7 @@
 			"type": "patchouli:entity",
 			"entity": "species:quake{NoAI:1b}",
 			"scale": 0.8,
-			"name": "震击者",
+			"name": "Quake",
 			"anchor": "quake",
 			"text": "$(thing)Quakes$() are capable of absorbing large amounts of damage before releasing it back in a burst. Wait until they're recharging to attack!"
 		},
@@ -241,13 +241,13 @@
 			"type": "patchouli:entity",
 			"entity": "ad_astra:martian_raptor{NoAI:1b}",
 			"scale": 0.8,
-			"name": "骷髅迅猛龙",
+			"name": "Skeletal Raptor",
 			"anchor": "skeletal_raptor",
 			"text": "An undead dinosaur. They can be found underground."
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "延伸阅读",
+			"title": "Further Reading",
 			"anchor": "relations",
 			"entries": [
 				"tfg:mars/mars",

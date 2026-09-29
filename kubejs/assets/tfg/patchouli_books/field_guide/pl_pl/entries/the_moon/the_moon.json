@@ -65,7 +65,7 @@
 			"type": "patchouli:spotlight",
 			"item": "ad_astra:tier_1_rover",
 			"anchor": "rover",
-			"title": "Łazik",
+			"title": "Rover",
 			"text": "The $(item)Rover$() is a vehicle that can hold up to two passengers, runs on combustible fuels (Diesels, Gasolines, and Rocket Fuel), and even has an inventory and radio that can play real-world radio stations!"
 		},
 		{
@@ -419,7 +419,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"item": "tag:ad_astra:sliding_doors",
-			"title": "Drzwi przesuwne",
+			"title": "Sliding Doors",
 			"text": "You will want to set up a proper $(thing)airlock system$() between your base's insides and the vacuum of space. Other normal doors will work, but these 3x3 doors are very thematically appropriate for a high-tech moon base. They can be automated with a $(item)pressure plate$() as usual.$(br2)$(bold)Tip:$() You can also use these doors for cleanrooms!"
 		},
 		{
@@ -438,7 +438,7 @@
 			"type": "patchouli:spotlight",
 			"anchor": "death",
 			"item": "tag:minecraft:beds",
-			"title": "Śmierć poza ziemią",
+			"title": "Extraterrestrial Death",
 			"text": "In $(tfg_short), you can set your spawn on any dimension with a bed (even $(l:beneath/beneath)The Beneath$()!), but unless you've got a bunch of extra space suits lying around, respawning on the Moon might complicate things."
 		},
 		{
@@ -452,7 +452,7 @@
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Czytaj dalej",
+			"title": "Further Reading",
 			"anchor": "relations",
 			"entries": [
 				"tfg:the_moon/preparations",

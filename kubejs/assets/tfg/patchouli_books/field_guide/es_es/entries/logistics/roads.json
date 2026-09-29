@@ -6,13 +6,13 @@
         {
             "type": "patchouli:text",
             "text": "$(li)$(bold)$(l:logistics/roads#intro)Road Construction$()$(li)$(bold)$(l:logistics/roads#mattock)Mattocks$()$(li)$(bold)$(l:logistics/roads#base_course)Base Course$()$(li)$(bold)$(l:logistics/roads#pavers)Pavers$()$(li2)$(l:logistics/roads#hoggin)Hoggin Mix$()$(li2)$(l:logistics/roads#gravel_fill)Gravel Fill$()$(li2)$(l:logistics/roads#stone)Cobble, Sett, & Flagstones$()$(li2)$(l:logistics/roads#concrete)Concrete$()$(li2)$(l:logistics/roads#asphalt)Asphalt$()$(li)$(bold)$(l:logistics/roads#paving_cart)Paving Cart$()",
-            "title": "Índice",
+            "title": "Index",
             "anchor": "index"
         },
         {
             "type": "patchouli:text",
             "anchor": "intro",
-            "title": "Introducción",
+            "title": "Introduction",
             "text": "Road construction is vital for increasing land-transport efficiency and consists of three basic steps:$(li)$(bold)1:$() Tamping the native soil with a $(l:logistics/roads#mattock)Mattock$().$(li)$(bold)2:$() Laying down $(l:logistics/roads#base_course)Crushed Base Course$().$(li)$(bold)3:$() Laying the surface $(l:logistics/roads#pavers)Paving Material$().$(br)Different varieties of road use different ingredients."
         },
         {

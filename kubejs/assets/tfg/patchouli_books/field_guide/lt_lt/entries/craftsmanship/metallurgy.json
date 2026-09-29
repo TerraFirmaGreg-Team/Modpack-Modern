@@ -67,7 +67,7 @@
         {
             "type": "patchouli:text",
             "anchor": "casting",
-            "title": "Liejimas",
+            "title": "Casting",
             "text": "To begin casting your first metal you will use a $(l:craftsmanship/pottery#vessel)Small Vessel$(). Place enough meltable ore inside of it to fill your desired $(l:craftsmanship/pottery#mold)Mold$(). For example, to make a saw blade you will need at least 144mB of metal.$(br)You can view the amount of material in the vessel by looking at its tooltip.$(br2)Be aware that a vessel has a max fluid capacity of $(t:21 x 144)$(6)3,024mB$()!"
         },
         {
@@ -109,7 +109,7 @@
         {
             "type": "patchouli:text",
             "anchor": "alloying",
-            "title": "Lydinių gamyba",
+            "title": "Alloying",
             "text": "$(thing)Alloys$() are a method of mixing two or more metals together, to create a new, stronger metal. During the early game, while copper is a useful metal for creating tools, the next tier of metal is one of three types of $(thing)Bronze$(). They are each slightly different in regard to durability, efficiency, and attack damage. An alloy is made up of component $(thing)metals$() which must each satisfy a specific percentage of the overall whole."
         },
         {

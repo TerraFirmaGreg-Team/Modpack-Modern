@@ -400,7 +400,7 @@
                     "bold": true
                 },
                 {
-                    "text": "Bazilikas"
+                    "text": "Basil"
                 },
                 {
                     "text": "12 - 25"
@@ -409,7 +409,7 @@
                     "text": "300 - 500"
                 },
                 {
-                    "text": "Laurų lapas"
+                    "text": "Bay Laurel"
                 },
                 {
                     "text": "8 - 14"
@@ -418,7 +418,7 @@
                     "text": "25 - 225"
                 },
                 {
-                    "text": "Kardamonas"
+                    "text": "Cardamom"
                 },
                 {
                     "text": "18 - 30"
@@ -427,7 +427,7 @@
                     "text": "350 - 500"
                 },
                 {
-                    "text": "Kalendros"
+                    "text": "Cilantro"
                 },
                 {
                     "text": "5 - 15"
@@ -436,7 +436,7 @@
                     "text": "0 - 150"
                 },
                 {
-                    "text": "Kmynas"
+                    "text": "Cumin"
                 },
                 {
                     "text": "6 - 20"
@@ -445,7 +445,7 @@
                     "text": "50 - 250"
                 },
                 {
-                    "text": "Raudonėlis"
+                    "text": "Oregano"
                 },
                 {
                     "text": "5 - 13"
@@ -454,7 +454,7 @@
                     "text": "50 - 150"
                 },
                 {
-                    "text": "Pimentas"
+                    "text": "Pimento"
                 },
                 {
                     "text": "15 - 30"
@@ -463,7 +463,7 @@
                     "text": "200 - 450"
                 },
                 {
-                    "text": "Vanilė"
+                    "text": "Vanilla"
                 },
                 {
                     "text": "18 - 30"
@@ -502,7 +502,7 @@
                     "X": "firmalife:plant/basil[stage=1]"
                 }
             },
-            "name": "Bazilikas",
+            "name": "Basil",
             "anchor": "basil",
             "text": "$(thing)Laukinis bazilikas$() auga esant 12–25 °C temperatūrai ir 300–500 mm kritulių kiekiui.",
             "enable_visualize": false
@@ -522,7 +522,7 @@
                     "X": "firmalife:plant/bay_laurel[stage=1]"
                 }
             },
-            "name": "Laurų lapas",
+            "name": "Bay Laurel",
             "anchor": "bay",
             "text": "$(thing)Laukiniai lauras$() auga esant 8–14 °C temperatūrai ir 25–225 mm kritulių kiekiui.",
             "enable_visualize": false
@@ -542,7 +542,7 @@
                     "X": "firmalife:plant/cardamom[stage=1]"
                 }
             },
-            "name": "Kardamonas",
+            "name": "Cardamom",
             "anchor": "cardamom",
             "text": "$(thing)Laukinis kardamonas$() auga esant 18–30 °C temperatūrai ir 350–500 mm kritulių kiekiui.",
             "enable_visualize": false
@@ -562,7 +562,7 @@
                     "X": "firmalife:plant/cilantro[stage=1]"
                 }
             },
-            "name": "Kalendros",
+            "name": "Cilantro",
             "anchor": "cilantro",
             "text": "$(thing)Laukinė kalendros$() auga esant 5–15 °C temperatūrai ir 0–150 mm kritulių kiekiui.",
             "enable_visualize": false
@@ -582,7 +582,7 @@
                     "X": "firmalife:plant/cumin[stage=1]"
                 }
             },
-            "name": "Kmynas",
+            "name": "Cumin",
             "anchor": "cumin",
             "text": "$(thing)Laukinis kmynas$() auga esant 6–20 °C temperatūrai ir 50–250 mm kritulių kiekiui.",
             "enable_visualize": false
@@ -602,7 +602,7 @@
                     "X": "firmalife:plant/oregano[stage=1]"
                 }
             },
-            "name": "Raudonėlis",
+            "name": "Oregano",
             "anchor": "oregano",
             "text": "$(thing)Laukinis raudonėlis$() auga esant 5–13 °C temperatūrai ir 50–150 mm kritulių kiekiui.",
             "enable_visualize": false
@@ -622,7 +622,7 @@
                     "X": "firmalife:plant/pimento[stage=1]"
                 }
             },
-            "name": "Pimentas",
+            "name": "Pimento",
             "anchor": "pimento",
             "text": "$(thing)Laukinis pimentas$() auga esant 15–30 °C temperatūrai ir 200–450 mm kritulių kiekiui.",
             "enable_visualize": false
@@ -642,7 +642,7 @@
                     "X": "firmalife:plant/vanilla[stage=1]"
                 }
             },
-            "name": "Vanilė",
+            "name": "Vanilla",
             "anchor": "vanilla",
             "text": "$(thing)Laukinė vanilė$() auga esant 18–30 °C temperatūrai ir 200–500 mm kritulių kiekiui.",
             "enable_visualize": false

@@ -11,7 +11,7 @@
         {
             "type": "patchouli:text",
             "anchor": "intro",
-            "title": "Giriş",
+            "title": "Introduction",
             "text": "Glassworking is the process of turning sand into glass. To start, you must create a $(thing)Glass Batch$(), of which there are four types:$(br)$(br) 1. $(thing)Silica$(), from white sand.$(br) 2. $(thing)Hematitic$(), from yellow, red, or pink sand.$(br) 3. $(thing)Olivine$(), from green or brown sand.$(br) 4. $(thing)Volcanic$(), from black sand."
         },
         {
@@ -384,7 +384,7 @@
                     "fill": "0x3eb340"
                 },
                 {
-                    "text": "Olivin"
+                    "text": "Olivine"
                 },
                 {
                     "fill": "0xb33e3e"
@@ -528,7 +528,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Ek Okuma",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:craftsmanship/pottery",

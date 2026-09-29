@@ -222,7 +222,7 @@
             "type": "patchouli:text",
             "anchor": "welding",
             "text": "Welding is a process through which two items are fused together to create a new item. Welding works the same whether on a $(l:craftsmanship/anvils#stone_anvil)Stone Anvil$() or a $(l:craftsmanship/anvils#metal_anvil)Metal Anvil$().$(br2)First, you must place the two items you want to weld on the anvil by opening the anvil interface and inserting them in the two leftmost slots.",
-            "title": "Hegesztés"
+            "title": "Welding"
         },
         {
             "type": "patchouli:text",
@@ -335,7 +335,7 @@
         {
             "type": "patchouli:spotlight",
             "anchor": "helve_hammer",
-            "title": "Farkaskalapács",
+            "title": "Helve Hammer",
             "item": "vintageimprovements:helve_hammer",
             "text": "The $(item)Helve Hammer$() is a device that can automate many anvil functions using $(thing)mechanical energy$().$(br)To function, a helve hammer needs an anvil below its striking face. The $(l:craftsmanship/anvils#tiers)Tier$() of the anvil will dictate how many blows is needed. To add items to a helve hammer simply $(bold)throw$() them on top of the anvil with $(item)$(k:key.drop)$(). Items may be extracted automatically by adding funnels to the hammer head block."
         },

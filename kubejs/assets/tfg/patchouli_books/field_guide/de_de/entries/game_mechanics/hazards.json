@@ -7,7 +7,7 @@
 	"pages": [
 		{
 			"type": "patchouli:spotlight",
-			"title": "Gefährliche Materialien",
+			"title": "Hazardous Materials",
 			"item": "gtceu:cobaltite_dust",
 			"text": "Some $(thing)ores$(), $(thing)dusts$() and $(thing)chemicals$() are hazardous and can cause $(item)negative effects$() or even $(item)kill$() you if they are carried in your inventory. When carried, they are displayed on screen with a $(item)Status Effect$().$(br2)Certain equipment such as $(thing)masks$(), $(thing)gloves$(), and the $(thing)hazardous material suit$() can be used to counter these effects."
 		},
@@ -30,7 +30,7 @@
 		},
 		{
 			"type": "patchouli:crafting",
-			"title": "Gesichtsmaske",
+			"title": "Face Mask",
 			"recipe": "gtceu:shaped/face_mask",
 			"text": "The $(thing)Face Mask$() provides protection from any $(item)Inhalation$() hazards, such as Arsenicosis.",
 			"anchor": "mask"
@@ -112,7 +112,7 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Karzinogene",
+			"title": "Carcinogens",
 			"item": "gtceu:chromium_dust",
 			"anchor": "carcinogens",
 			"text": "The $(l:game_mechanics/hazards#mask)Face Mask$() protects from inhalation of harmful chemicals, while the $(l:game_mechanics/hazards#gloves)Gloves$() protect from contact with $(thing)Chromium Dust$().$(br)The $(l:game_mechanics/hazards#hazmat)Hazmat Suit$() protects from both.$(br)In case of severe exposure, it is advised to take some $(l:game_mechanics/hazards#medicine)Medicines$() to $(thing)Prevent$() any possible damage."
@@ -133,7 +133,7 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Methanvergiftung",
+			"title": "Methanol Poisoning",
 			"item": "gtceu:methanol_bucket",
 			"anchor": "methanol_poisoning",
 			"text": "$(thing)Methanol poisoning$() is caused by inhalation of $(thing)Methanol$(). It causes a strong $(item)Blindness$() effect.$(br)The $(l:game_mechanics/hazards#mask)Face Mask$() and the $(l:game_mechanics/hazards#hazmat)Hazmat Suit$() protects from inhalation."

@@ -1,5 +1,5 @@
 {
-    "name": "Varróasztal",
+    "name": "Sewing Table",
     "category": "tfg:craftsmanship",
     "icon": "tfc:wood/sewing_table/oak",
     "pages": [
@@ -37,7 +37,7 @@
         {
             "type": "patchouli:crafting",
             "anchor": "banner_loom",
-            "title": "Zászló szövőszék",
+            "title": "Banner Loom",
             "recipe": "tfc:crafting/vanilla/loom",
             "text": "The banner loom, for making things with banner patterns, can be crafted to do work with banner patterns."
         },

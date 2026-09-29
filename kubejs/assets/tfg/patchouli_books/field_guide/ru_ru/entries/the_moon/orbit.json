@@ -1,5 +1,5 @@
 {
-	"name": "Космические станции",
+	"name": "Space Stations",
 	"category": "tfg:the_moon",
 	"icon": "ad_astra:textures/gui/sprites/space_station.png",
 	"read_by_default": true,
@@ -54,7 +54,7 @@
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Читать дальше",
+			"title": "Further Reading",
 			"anchor": "relations",
 			"entries": [
 				"tfg:the_moon/the_moon",

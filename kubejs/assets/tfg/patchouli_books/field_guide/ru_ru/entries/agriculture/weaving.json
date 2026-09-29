@@ -30,7 +30,7 @@
         {
             "type": "tfg:loom_recipe",
             "anchor": "wool_cloth",
-            "Title": "Ткань",
+            "title": "Cloth",
             "recipe": "tfc:loom/wool_cloth",
             "text": "Рецепт изготовления $(thing)шерстяной ткани$() требует 16 единиц $(thing)шерстяной нити$(). Добавление материала в ткацкий станок выполняется нажатием $(item)$(k:key.use)$(). Затем удерживайте $(item)$(k:key.use)$(), чтобы запустить работу станка. Когда процесс завершится, нажмите $(item)$(k:key.use)$(), чтобы забрать готовый предмет."
         },
@@ -47,7 +47,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Читать дальше",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:agriculture/growing_crops",

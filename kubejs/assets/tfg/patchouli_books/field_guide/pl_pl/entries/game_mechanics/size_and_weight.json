@@ -36,7 +36,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Czytaj dalej",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:craftsmanship/barrels",
@@ -49,6 +49,6 @@
         }
     ],
     "read_by_default": true,
-    "priority": "prawda",
+    "priority": "true",
     "sortnum": 0
 }

@@ -86,7 +86,7 @@
         {
             "type": "patchouli:spotlight",
             "item": "tfc:bellows",
-            "title": "풀무",
+            "title": "Bellows",
             "anchor": "bellows",
             "text": "$(thing)Bellows$() can be used to increase the temperature of a device by improving the supply of oxygen. However, by burning at a hotter temperature they will also consume fuel faster. The bellows can provide air to a block directly in front of it and one block below that. This allows it to provide air to a $(l:craftsmanship/blast_furnace)Blast Furnace$(), or a $(l:craftsmanship/charcoal_forge#charcoal_forge)Charcoal Forge$() for example."
         },

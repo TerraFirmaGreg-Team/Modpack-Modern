@@ -1,5 +1,5 @@
 {
-    "name": "Bas fourneau",
+    "name": "Bloomery",
     "category": "tfg:craftsmanship",
     "icon": "tfc:bloomery",
     "pages": [
@@ -76,15 +76,15 @@
                     "bold": true
                 },
                 {
-                    "text": "Fer",
+                    "text": "Iron",
                     "bold": true
                 },
                 {
-                    "text": "Carburant",
+                    "text": "Fuel",
                     "bold": true
                 },
                 {
-                    "text": "Emplacements",
+                    "text": "Slots",
                     "bold": true
                 },
                 {
@@ -247,7 +247,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Pour aller plus loin",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:craftsmanship/pottery",

@@ -19,7 +19,7 @@
         {
             "type": "patchouli:text",
             "anchor": "warming",
-            "title": "Isınıyor",
+            "title": "Warming",
             "text": "While active this effect continually $(thing)Warms$() the player up to a maximum of $(n)25°C$()"
         },
         {
@@ -72,7 +72,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Ek Okuma",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:the_world/geology",

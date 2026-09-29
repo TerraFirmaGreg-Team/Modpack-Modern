@@ -11,7 +11,7 @@
         {
             "type": "patchouli:text",
             "anchor": "clay",
-            "title": "黏土",
+            "title": "Clay",
             "text": "$(thing)粘土$()是一种特别有用的材料，你可以用它制作陶器。一开始你可能难以找到粘土，因为它们总是隐藏在草皮之下。但简而言之，有两种获取它们的手段。首先，粘土会在$(l:the_world/climate#rainfall)年降雨量$()大于 175mm 的区域中成片地大量生成，而且有几种特殊的$(thing)植物$()会生长在粘土之上。"
         },
         {
@@ -100,14 +100,14 @@
         {
             "type": "patchouli:spotlight",
             "item": "tfc:ceramic/ingot_mold{tank:{\"Amount\":100,\"FluidName\":\"gtceu:copper\"}}",
-            "title": "浇铸配方",
+            "title": "Casting",
             "link_recipes": false,
             "text": "You will very likely run into scenarios where you produce tiny amounts of excess melted metal. It is recommended to pour it into an ingot mold and save for the next time you need to cast that metal. Trying to produce perfect 144mB ratios of alloys is not feasible or worth the effort until you reach steam-age processing."
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "kaolin_clay",
-            "title": "高岭土",
+            "title": "Kaolin Clay",
             "item": "tfc:kaolin_clay",
             "text": "Kaolin Clay is required to make $(l:craftsmanship/pottery#fire_clay)Fire Clay$(). It can be found spawning between Y=75-110 in Plateaus, Rolling Hills and Highlands (and in their $(t:Surface rock of Limestone, Dolomite, Chalk, or Marble)Karst$() $(t:Burren, Cenote, Doline, Shilin, or Tower Karst)variants$()), Old Mountains, and Shield Volcanoes at a $(l:the_world/climate#temperature)temperature$() of at least 18°C, with a $(l:the_world/climate#rainfall)rainfall$() of at least 300mm. The $(thing)Blood Lily$() flower grows on Kaolin clay, which can be up to 35 blocks below."
         },
@@ -205,7 +205,7 @@
         },
         {
             "type": "patchouli:spotlight",
-            "title": "耐火黏土",
+            "title": "Fire Clay",
             "anchor": "fire_clay",
             "item": "tfc:fire_clay",
             "text": "耐火黏土能做成的东西不多，但每个都是科技进步上不可或缺的要素！耐火黏土比普通黏土能承受更高的高温，因此某些高级设备只能用耐火黏土建造！"
@@ -222,7 +222,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "延伸阅读",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:the_world/geology",

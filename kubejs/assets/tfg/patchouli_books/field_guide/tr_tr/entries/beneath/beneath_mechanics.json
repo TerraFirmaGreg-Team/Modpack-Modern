@@ -27,7 +27,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "clothes",
-			"title": "Giyinmek",
+			"title": "Clothing",
 			"text": "$(item)Burlap$(), $(item)Linen$(), and $(item)Silk$() clothing will help provide a little heat resistance.$(br)$(item)Crocodile$(), $(item)Tiger$(), and $(item)Lion$() clothing provide a stronger cooling effect.$(br)Lastly, $(item)Phantom$() and $(item)Red Elk$() clothes are the strongest cooling clothes, and last a long time too.$(br2)All clothing can be repaired. Press $(thing)U$() to check the repair recipes in $(emi)."
 		},
 		{
@@ -125,7 +125,7 @@
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Ek Okuma",
+			"title": "Further Reading",
 			"anchor": "relations",
 			"entries": [
 				"tfg:beneath/beneath",

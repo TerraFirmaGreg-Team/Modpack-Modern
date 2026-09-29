@@ -1,5 +1,5 @@
 {
-    "name": "钓鱼",
+    "name": "Fishing",
     "category": "tfg:agriculture",
     "icon": "tfc:metal/fishing_rod/copper",
     "pages": [
@@ -38,7 +38,7 @@
         {
             "type": "patchouli:spotlight",
             "anchor": "fishing_net",
-            "title": "渔网",
+            "title": "Fishing Nets",
             "item": {
                 "tag": "forge:tools/fishing_nets"
             },
@@ -46,13 +46,13 @@
         },
         {
             "type": "patchouli:crafting",
-            "title": "木质渔网",
+            "title": "Wood Fishing Net",
             "recipe": "tfc:kjs/damage/shaped/fishing_net/wood",
             "text": "一款基础的 $(item)木制渔网$()。"
         },
         {
             "type": "patchouli:relations",
-            "title": "延伸阅读",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:cooking/cooking_methods",

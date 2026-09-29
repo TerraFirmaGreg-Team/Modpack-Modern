@@ -19,7 +19,7 @@
         {
             "type": "patchouli:text",
             "anchor": "warming",
-            "title": "Esquentando",
+            "title": "Warming",
             "text": "While active this effect continually $(thing)Warms$() the player up to a maximum of $(n)25°C$()"
         },
         {

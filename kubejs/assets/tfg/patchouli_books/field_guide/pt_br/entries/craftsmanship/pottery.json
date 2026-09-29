@@ -11,7 +11,7 @@
         {
             "type": "patchouli:text",
             "anchor": "clay",
-            "title": "Argila",
+            "title": "Clay",
             "text": "$(thing)Argila$() é um material incrivelmente útil e equilibrado que pode ser usado para cerâmica. Pode ser um desafio para localizar a princípio. A argila é geralmente escondida pela grama, mas geralmente é encontrada em dois locais. Em áreas com pelo menos 175mm $(l:the_world/climate#rainfall)Chuvas anuais$(), argila pode ser encontrada em patches em todo o lugar, geralmente marcada pela presença de certos $(thing)Plantas$()."
         },
         {
@@ -100,14 +100,14 @@
         {
             "type": "patchouli:spotlight",
             "item": "tfc:ceramic/ingot_mold{tank:{\"Amount\":100,\"FluidName\":\"gtceu:copper\"}}",
-            "title": "Fundição",
+            "title": "Casting",
             "link_recipes": false,
             "text": "You will very likely run into scenarios where you produce tiny amounts of excess melted metal. It is recommended to pour it into an ingot mold and save for the next time you need to cast that metal. Trying to produce perfect 144mB ratios of alloys is not feasible or worth the effort until you reach steam-age processing."
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "kaolin_clay",
-            "title": "Argila Caulim",
+            "title": "Kaolin Clay",
             "item": "tfc:kaolin_clay",
             "text": "Kaolin Clay is required to make $(l:craftsmanship/pottery#fire_clay)Fire Clay$(). It can be found spawning between Y=75-110 in Plateaus, Rolling Hills and Highlands (and in their $(t:Surface rock of Limestone, Dolomite, Chalk, or Marble)Karst$() $(t:Burren, Cenote, Doline, Shilin, or Tower Karst)variants$()), Old Mountains, and Shield Volcanoes at a $(l:the_world/climate#temperature)temperature$() of at least 18°C, with a $(l:the_world/climate#rainfall)rainfall$() of at least 300mm. The $(thing)Blood Lily$() flower grows on Kaolin clay, which can be up to 35 blocks below."
         },
@@ -205,7 +205,7 @@
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Argila Refratária",
+            "title": "Fire Clay",
             "anchor": "fire_clay",
             "item": "tfc:fire_clay",
             "text": "The list of uses of fire clay is small, but all of them are important. Fire clay is a stronger variant of clay that has better heat resistance. It is used to make things that have to get very hot!"

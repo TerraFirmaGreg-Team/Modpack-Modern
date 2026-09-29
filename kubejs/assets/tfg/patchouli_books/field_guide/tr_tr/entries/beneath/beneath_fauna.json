@@ -36,7 +36,7 @@
 			"type": "patchouli:entity",
 			"entity": "species:mammutilation",
 			"scale": 0.5,
-			"name": "Mamutilasyon",
+			"name": "Mammutilation",
 			"anchor": "mammutilation",
 			"text": "$(thing)Mammutilations$() are undead Mammoths. You can put them out of their misery for some $(item)Wool$()."
 		},
@@ -156,7 +156,7 @@
 			"type": "patchouli:entity",
 			"entity": "species:cliff_hanger",
 			"scale": 0.7,
-			"name": "Zirve Sarkan",
+			"name": "Cliff Hanger",
 			"anchor": "cliff_hanger",
 			"text": "$(thing)Cliff Hangers$() can be found on various ceilings, hooking players who walk below them. Hit them with a ranged attack to make them let go!"
 		},
@@ -164,7 +164,7 @@
 			"type": "patchouli:entity",
 			"entity": "species:leaf_hanger",
 			"scale": 0.7,
-			"name": "Yaprak Sarkan",
+			"name": "Leaf Hanger",
 			"anchor": "leaf_hanger",
 			"text": "$(thing)Leaf Hangers$() can be found in pools of Salt Water, hooking players who walk into their trap. Hit them to make them let go of you!"
 		},
@@ -188,7 +188,7 @@
 			"type": "patchouli:entity",
 			"entity": "species:wicked",
 			"scale": 0.9,
-			"name": "Hınzır",
+			"name": "Wicked",
 			"anchor": "wicked",
 			"text": "The $(thing)Wicked$() is a ghost that can posess nearby mobs to give them buffs! If no mob is nearby, they use a ranged attack. They drop wax."
 		},
@@ -196,7 +196,7 @@
 			"type": "patchouli:entity",
 			"entity": "species:ghoul",
 			"scale": 0.7,
-			"name": "Yabani",
+			"name": "Ghoul",
 			"anchor": "ghoul",
 			"text": "$(thing)Ghouls$() are blind monsters that use echolocation to find prey. They are neutral unless you're within their 'scan' radius!"
 		},
@@ -204,13 +204,13 @@
 			"type": "patchouli:entity",
 			"entity": "species:bewereager",
 			"scale": 0.8,
-			"name": "Hoştsuz",
+			"name": "Bewereager",
 			"anchor": "bewereager",
 			"text": "The $(thing)Bewereager$() is an aggressive monster that can also jump up to you! It buffs itself and attacks in short bursts."
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Ek Okuma",
+			"title": "Further Reading",
 			"anchor": "relations",
 			"entries": [
 				"tfg:the_world/wild_animals",

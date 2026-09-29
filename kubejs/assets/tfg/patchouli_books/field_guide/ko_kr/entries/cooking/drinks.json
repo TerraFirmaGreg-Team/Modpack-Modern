@@ -47,7 +47,7 @@
 					"bold": true
 				},
 				{
-					"text": "맥주"
+					"text": "Beer"
 				},
 				{
 					"text": "Absorption II (5:20)"
@@ -56,7 +56,7 @@
 					"text": "Absorption III (8:00)"
 				},
 				{
-					"text": "사과주"
+					"text": "Cider"
 				},
 				{
 					"text": "Speed (5:20)"
@@ -65,7 +65,7 @@
 					"text": "Speed II (8:00)"
 				},
 				{
-					"text": "럼주"
+					"text": "Rum"
 				},
 				{
 					"text": "Speed II (2:40)"
@@ -74,7 +74,7 @@
 					"text": "Speed III (4:00)"
 				},
 				{
-					"text": "청주"
+					"text": "Sake"
 				},
 				{
 					"text": "Resistance (5:20)"
@@ -83,7 +83,7 @@
 					"text": "Resistance II (8:00)"
 				},
 				{
-					"text": "보드카"
+					"text": "Vodka"
 				},
 				{
 					"text": "Resistance II (2:40)"
@@ -92,7 +92,7 @@
 					"text": "Resistance III (4:00)"
 				},
 				{
-					"text": "위스키"
+					"text": "Whiskey"
 				},
 				{
 					"text": "Haste II (2:40)"
@@ -101,7 +101,7 @@
 					"text": "Haste III (4:00)"
 				},
 				{
-					"text": "옥수수 위스키"
+					"text": "Corn Whiskey"
 				},
 				{
 					"text": "Haste (5:20)"
@@ -110,7 +110,7 @@
 					"text": "Haste II (8:00)"
 				},
 				{
-					"text": "호밀 위스키"
+					"text": "Rye Whiskey"
 				},
 				{
 					"text": "Haste (5:20)"
@@ -161,14 +161,14 @@
 			"anchor": "milk"
 		},
 		{
-			"title": "온천수",
+			"title": "Spring Water",
 			"text": "Drinking $(thing)Spring Water$() warms you up by 4°C and applies a small regeneration effect while standing in it, as well as warming you.",
 			"item": "tfc:bucket/spring_water",
 			"type": "patchouli:spotlight",
 			"anchor": "spring_water"
 		},
 		{
-			"title": "바닷물",
+			"title": "Sea Water",
 			"text": "Drinking $(thing)Sea Water$() does not hydrate you and will make you more thirsty instead. A hot body temperature can also make you more thirsty. Lost at sea? Look upwards when it's raining for some easy hydration!",
 			"type": "patchouli:spotlight",
 			"item": "tfc:bucket/salt_water",

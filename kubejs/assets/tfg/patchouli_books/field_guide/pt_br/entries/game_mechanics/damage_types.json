@@ -24,12 +24,12 @@
             "type": "patchouli:text",
             "anchor": "crushing",
             "text": "$(thing)Crushing$() damage is dealt by blunt weapons like $(thing)Hammers$() and $(thing)Maces$(). $(thing)Zombies$() deal crushing damage, and are somewhat resistant to it. $(thing)Creepers$() also resist some crushing damage$(). $(thing)Skeletons$() are vulnerable to it.",
-            "title": "Triturando"
+            "title": "Crushing"
         },
         {
             "type": "patchouli:text",
             "anchor": "armor",
-            "title": "Armaduras",
+            "title": "Armor",
             "text": "$(thing)Armor$() has its own set of damage resistances. These resistances scale with the quality of armor, but may differ among armors of the same tier. Among bronzes, $(thing)Bismuth Bronze$() armor is best at resisting $(thing)Crushing$(), $(thing)Black Bronze$() is best at resisting $(thing)Piercing$() and regular $(thing)Bronze$() does moderately well with any damage."
         },
         {

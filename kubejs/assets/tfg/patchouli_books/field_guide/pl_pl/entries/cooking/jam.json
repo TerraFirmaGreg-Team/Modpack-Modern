@@ -32,19 +32,19 @@
             "type": "patchouli:spotlight",
             "item": "tag:tfc:jar_shelves,tag:beneath:jar_shelves",
             "anchor": "shelves",
-            "title": "Półki na słoiki",
+            "title": "Jar Shelves",
             "text": "$(thing)Jar Shelves$() can be attached to solid walls. They can be placed directly or by clicking on an existing block of placed jars. The top of the jar shelf counts as a solid surface for placing items, more jars, or other blocks.$(br)Jars can be placed on any solid surfaces with $(item)$(k:key.use)$(). A block can contain four jars of any kind."
         },
         {
             "type": "patchouli:spotlight",
             "item": "tag:firmalife:jarbnets",
             "anchor": "jarbnet",
-            "title": "Szafki na słoiki",
+            "title": "Jarbnets",
             "text": "The jarbnet is a cosmetic storage block for $(item)Jars$(), $(item)Candles$(), and $(item)Jugs$(). It can be opened and closed by clicking with an empty hand and $(item)$(k:key.sneak)$() pressed. If candles are inside, it can be lit to produce a small amount of light."
         },
         {
             "type": "patchouli:relations",
-            "title": "Czytaj dalej",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:cooking/food_and_water",

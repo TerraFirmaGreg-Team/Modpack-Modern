@@ -212,7 +212,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"item": "tag:create:postboxes",
-			"title": "우편함",
+			"title": "Postboxes",
 			"anchor": "postbox",
 			"text": "$(item)Postboxes$() are used to route packages around using $(l:logistics/trains)Train Networks$(). You first $(item)$(k:key.use)$() a $(l:logistics/trains#station)Train Station$() to link the Postbox to that station before placing it, and from then on any trains that stop there will be able to interact with the Postbox (given it is within 4 blocks of the station)."
 		},
@@ -246,7 +246,7 @@
 			"type": "patchouli:spotlight",
 			"item": "create:transmitter",
 			"anchor": "high_logistics",
-			"title": "고급 물류",
+			"title": "High Logistics",
 			"text": "Moving packages around is good and all, but surely that can't be all there is? Well, you're exactly right. There's much more that can be done with packages, including $(thing)reading inventory contents$() and $(thing)having things be delivered remotely$(), and later on even $(thing)automatically sending ingredients to be processed$() based on an item's threshold!"
 		},
 		{
@@ -423,7 +423,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"item": "tag:create:table_cloths",
-			"title": "식탁보",
+			"title": "Table Cloths",
 			"anchor": "table_cloths",
 			"text": "$(item)Table Cloths$() are Create's system for player-owned shops! Each Table Cloth can sell one item. You'll need a small setup with a $(l:logistics/create#stock_ticker)Stock Ticker$(), $(l:logistics/create#packager)Packager$(), and a $(thing)Stock Keeper$() (a Blaze Burner or mob in a seat) to get started."
 		},

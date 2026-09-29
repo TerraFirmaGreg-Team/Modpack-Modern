@@ -56,7 +56,7 @@
                     "X": "tfc:plant/sagebrush"
                 }
             },
-            "name": "Seco",
+            "name": "Dry",
             "text": "As plantas secas são como plantas padrão, mas podem crescer na areia. Isso geralmente só aparece em áreas com baixa chuva.",
             "enable_visualize": false
         },
@@ -400,7 +400,7 @@
                     "bold": true
                 },
                 {
-                    "text": "Manjericão"
+                    "text": "Basil"
                 },
                 {
                     "text": "12 - 25"
@@ -409,7 +409,7 @@
                     "text": "300 - 500"
                 },
                 {
-                    "text": "Loureiro"
+                    "text": "Bay Laurel"
                 },
                 {
                     "text": "8 - 14"
@@ -418,7 +418,7 @@
                     "text": "25 - 225"
                 },
                 {
-                    "text": "Cardamomo"
+                    "text": "Cardamom"
                 },
                 {
                     "text": "18 - 30"
@@ -427,7 +427,7 @@
                     "text": "350 - 500"
                 },
                 {
-                    "text": "Coentro"
+                    "text": "Cilantro"
                 },
                 {
                     "text": "5 - 15"
@@ -436,7 +436,7 @@
                     "text": "0 - 150"
                 },
                 {
-                    "text": "Cominho"
+                    "text": "Cumin"
                 },
                 {
                     "text": "6 - 20"
@@ -445,7 +445,7 @@
                     "text": "50 - 250"
                 },
                 {
-                    "text": "Orégano"
+                    "text": "Oregano"
                 },
                 {
                     "text": "5 - 13"
@@ -502,7 +502,7 @@
                     "X": "firmalife:plant/basil[stage=1]"
                 }
             },
-            "name": "Manjericão",
+            "name": "Basil",
             "anchor": "basil",
             "text": "$(thing)Manjericão Selvagem$() cresce entre 12 e 25C, e 300 a 500mm de precipitação.",
             "enable_visualize": false
@@ -522,7 +522,7 @@
                     "X": "firmalife:plant/bay_laurel[stage=1]"
                 }
             },
-            "name": "Loureiro",
+            "name": "Bay Laurel",
             "anchor": "bay",
             "text": "$(thing)Loureiro Selvagem$() cresce entre 8 e 14C, e 25 a 225mm de precipitação.",
             "enable_visualize": false
@@ -542,7 +542,7 @@
                     "X": "firmalife:plant/cardamom[stage=1]"
                 }
             },
-            "name": "Cardamomo",
+            "name": "Cardamom",
             "anchor": "cardamom",
             "text": "$(thing)Cardamomo Selvagem$() cresce entre 18 e 30C, e 350 a 500mm de precipitação.",
             "enable_visualize": false
@@ -562,7 +562,7 @@
                     "X": "firmalife:plant/cilantro[stage=1]"
                 }
             },
-            "name": "Coentro",
+            "name": "Cilantro",
             "anchor": "cilantro",
             "text": "$(thing)Coentro Selvagem$() cresce entre 5 e 15C, e 0 a 150mm de precipitação.",
             "enable_visualize": false
@@ -582,7 +582,7 @@
                     "X": "firmalife:plant/cumin[stage=1]"
                 }
             },
-            "name": "Cominho",
+            "name": "Cumin",
             "anchor": "cumin",
             "text": "$(thing)Cominho Selvagem$() cresce entre 6 e 20C, e 50 a 250mm de precipitação.",
             "enable_visualize": false
@@ -602,7 +602,7 @@
                     "X": "firmalife:plant/oregano[stage=1]"
                 }
             },
-            "name": "Orégano",
+            "name": "Oregano",
             "anchor": "oregano",
             "text": "$(thing)Orégano Selvagem$() cresce entre 5 e 13C, e 50 a 150mm de precipitação.",
             "enable_visualize": false
@@ -668,7 +668,7 @@
                     "X": "firmalife:plant/butterfly_grass"
                 }
             },
-            "name": "Grama-Borboleta",
+            "name": "Butterfly Grass",
             "anchor": "butterfly_grass",
             "text": "Uma planta de grama-borboleta.",
             "enable_visualize": false

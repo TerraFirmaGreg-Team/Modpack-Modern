@@ -21,7 +21,7 @@
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Hamu",
+            "title": "Ash",
             "anchor": "ash",
             "item": "tag:tfc:ash_logs",
             "text": "$(bold)White Ash$()$(br)$(thing)Rainfall$(): 60 — 240mm$(br)$(thing)Temperature$(): -13.9 — 0.7°C$(br)$(thing)Growth Days$(): 6"

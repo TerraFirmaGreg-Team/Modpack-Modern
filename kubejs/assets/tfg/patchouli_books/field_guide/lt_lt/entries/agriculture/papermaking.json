@@ -24,14 +24,14 @@
         {
             "type": "tfg:sealed_barrel_recipe",
             "anchor": "soaked_papyrus_strip",
-            "title": "Išmirkyta papiruso juostelė",
+            "title": "Soaked Papyrus Strip",
             "recipe": "tfc:barrel/soaked_papyrus_strip",
             "text": "Then, papyrus strips are soaked in a $(l:craftsmanship/barrels)Barrel$() of $(thing)Water$()."
         },
         {
             "type": "tfg:loom_recipe",
             "anchor": "unrefined_paper",
-            "title": "Nerafinuotas popierius",
+            "title": "Unrefined Paper",
             "recipe": "tfc:loom/unrefined_paper",
             "text": "Then, soaked papyrus strips are woven together in a $(l:agriculture/weaving#loom)Loom$() to make $(thing)Unrefined Paper$(). Finally, it must be placed on a log and $(l:agriculture/leather_making#scraping)Scraped$() to make $(thing)Paper$()."
         },
@@ -44,7 +44,7 @@
         {
             "type": "patchouli:crafting",
             "anchor": "treated_hide",
-            "title": "Apdorota oda",
+            "title": "Treated Hide",
             "recipe": "tfc:crafting/large_treated_hide",
             "text": "Crafting pumice, a hammer, and scraped hide gives sections of $(thing)Treated Hide$()."
         },

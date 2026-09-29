@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"title": "目錄",
+			"title": "Contents",
 			"anchor": "index",
 			"text": "$(li)$(bold)$(l:logistics/create#packages)Packages$()$(li2)$(l:logistics/create#packager)Packager$()$(li2)$(l:logistics/create#frogport)Frogports$()$(li2)$(l:logistics/create#package_filter)Package Filter$()$(li2)$(l:logistics/create#repackager)Re-Packager$()$(li2)$(l:logistics/create#unpackager)Unpackager$()$(li2)$(l:logistics/create#clipboard)Clipboard and Hand Pointer$()$(li2)$(l:logistics/create#postbox)Postbox$()$(li2)$(l:logistics/create#package_tips)Tips$()"
 		},
@@ -212,7 +212,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"item": "tag:create:postboxes",
-			"title": "郵箱",
+			"title": "Postboxes",
 			"anchor": "postbox",
 			"text": "$(item)Postboxes$() are used to route packages around using $(l:logistics/trains)Train Networks$(). You first $(item)$(k:key.use)$() a $(l:logistics/trains#station)Train Station$() to link the Postbox to that station before placing it, and from then on any trains that stop there will be able to interact with the Postbox (given it is within 4 blocks of the station)."
 		},
@@ -246,7 +246,7 @@
 			"type": "patchouli:spotlight",
 			"item": "create:transmitter",
 			"anchor": "high_logistics",
-			"title": "高效物流",
+			"title": "High Logistics",
 			"text": "Moving packages around is good and all, but surely that can't be all there is? Well, you're exactly right. There's much more that can be done with packages, including $(thing)reading inventory contents$() and $(thing)having things be delivered remotely$(), and later on even $(thing)automatically sending ingredients to be processed$() based on an item's threshold!"
 		},
 		{
@@ -256,7 +256,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"item": "greate:rich_raw_rose_quartz,greate:raw_rose_quartz,greate:poor_raw_rose_quartz",
-			"title": "玫瑰石英",
+			"title": "Rose Quartz",
 			"anchor": "rose_quartz",
 			"text": "The only natural source of $(item)Rose Quartz$() of a high enough quality to easily craft the $(item)Lens$() out of is located far, far to the north in freezing temperatures (under $(3)-10°C$()). Getting Kaolin clay flashbacks yet?"
 		},
@@ -297,7 +297,7 @@
 			"type": "patchouli:multiblock",
 			"enable_visualize": false,
 			"text": "The $(l:logistics/create#packager)Packager$() will only create a package when the Stock Link receives a signal from $(l:logistics/create#stock_ticker)elsewhere$() on the network.",
-			"name": "比方說",
+			"name": "Example",
 			"multiblock": {
 				"pattern": [
 					[
@@ -423,7 +423,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"item": "tag:create:table_cloths",
-			"title": "桌布",
+			"title": "Table Cloths",
 			"anchor": "table_cloths",
 			"text": "$(item)Table Cloths$() are Create's system for player-owned shops! Each Table Cloth can sell one item. You'll need a small setup with a $(l:logistics/create#stock_ticker)Stock Ticker$(), $(l:logistics/create#packager)Packager$(), and a $(thing)Stock Keeper$() (a Blaze Burner or mob in a seat) to get started."
 		},

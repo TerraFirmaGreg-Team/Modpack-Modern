@@ -1,5 +1,5 @@
 {
-    "name": "塊鉄炉",
+    "name": "Bloomery",
     "category": "tfg:craftsmanship",
     "icon": "tfc:bloomery",
     "pages": [
@@ -76,15 +76,15 @@
                     "bold": true
                 },
                 {
-                    "text": "鉄",
+                    "text": "Iron",
                     "bold": true
                 },
                 {
-                    "text": "燃料",
+                    "text": "Fuel",
                     "bold": true
                 },
                 {
-                    "text": "スロット",
+                    "text": "Slots",
                     "bold": true
                 },
                 {
@@ -198,7 +198,7 @@
         {
             "type": "patchouli:spotlight",
             "anchor": "steam_bloomery",
-            "title": "蒸気式塊鉄炉",
+            "title": "Steam Bloomery",
             "item": "tfg:steam_bloomery",
             "text": "Available with the creation of $(item)Black Steel$() is the $(thing)Steam Bloomery$(). This structure is capable of producing blooms automatically, on top of being faster and more efficent than the traditional bloomery by using high-pressure steam."
         },
@@ -247,7 +247,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "さらに読む",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:craftsmanship/pottery",

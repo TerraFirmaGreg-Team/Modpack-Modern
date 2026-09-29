@@ -1,5 +1,5 @@
 {
-    "name": "鍛鐵爐",
+    "name": "Bloomery",
     "category": "tfg:craftsmanship",
     "icon": "tfc:bloomery",
     "pages": [
@@ -76,7 +76,7 @@
                     "bold": true
                 },
                 {
-                    "text": "鐵",
+                    "text": "Iron",
                     "bold": true
                 },
                 {
@@ -84,7 +84,7 @@
                     "bold": true
                 },
                 {
-                    "text": "欄位",
+                    "text": "Slots",
                     "bold": true
                 },
                 {
@@ -241,7 +241,7 @@
                     "O": "gtceu:steam_output_bus[facing=north]"
                 }
             },
-            "name": "結構",
+            "name": "Structure",
             "text": "A steam bloomery requires item input and item output buses, a steam input hatch, and three Bronze Firebox Casings.",
             "enable_visualize": true
         },
