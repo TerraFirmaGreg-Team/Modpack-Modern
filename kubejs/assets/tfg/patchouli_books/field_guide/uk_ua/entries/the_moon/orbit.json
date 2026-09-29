@@ -6,17 +6,17 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "By keeping the following items in your inventory (or the inventory of your rocket), you'll be able to build a $(item)Space Station$() in orbit once you launch!$(br)$(li)43x Aluminium Frame$(li)24x Glass Plate$(li)4x Glowstone Dust$(li)1x Launch Pad"
+			"text": "Зберігаючи наведені нижче предмети у своєму інвентарі (або в інвентарі своєї ракети), ти зможеш побудувати $(item)Космічну станцію$() на орбіті після запуску!$(br)$(li)43x Алюмінієвий каркас$(li)24x Скляна пластина$(li)4x Пил світлокаменю$(li)1x Стартовий майданчик"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "There's not really much to do up there, and they're totally optional, but if you want a void dimension for whatever reason, or just $(italic)really$() like sky diving, they're an option.$(br2)Be sure you bring something to hold on to, as orbits have $(thing)no gravity$().$(br2)$(bold)Tip:$() Orbits count as a $(item)Cleanroom$() for the purposes of recipe conditions."
+			"text": "Там насправді не так уже й багато чим займатися, і вони цілком необов'язкові, але якщо тобі з якоїсь причини потрібен вимір-порожнеча або ти просто $(italic)дуже$() любиш стрибати з парашутом, це один із варіантів.$(br2)Обов'язково візьми щось, за що можна триматися, адже на орбітах $(thing)немає гравітації$().$(br2)$(bold)Порада:$() Для умов рецептів орбіти вважаються $(item)Чистими кімнатами$()."
 		},
 		{
 			"type": "patchouli:multiblock",
 			"anchor": "space_station",
-			"name": "Space Platform",
-			"text": "A platform will be constructed for your rocket to land on.",
+			"name": "Космічна платформа",
+			"text": "Для посадки твоєї ракети буде побудована платформа.",
 			"enable_visualize": false,
 			"multiblock": {
 				"pattern": [
@@ -50,7 +50,7 @@
 			"type": "patchouli:spotlight",
 			"item": "ad_astra:zip_gun",
 			"anchor": "zip_gun",
-			"text": "A Zip Gun can be filled up with any of the breathable $(l:the_moon/the_moon#gases)Compressed Gases$() to shoot out air, pushing you around in low gravity environments. They're essential if you want to build anything in orbit!"
+			"text": "Пневмопістолет можна заправити будь-яким придатним для дихання $(l/the_moon#gases)стисненим газом$(), щоб випускати повітря, відштовхуючи тебе в умовах низької гравітації. Він необхідний, якщо ти хочеш щось будувати на орбіті!"
 		},
 		{
 			"type": "patchouli:relations",

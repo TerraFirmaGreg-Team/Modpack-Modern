@@ -5,13 +5,13 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "$(li)$(bold)$(l:logistics/boats#intro)Sailing Information$()$(li2)$(l:logistics/boats#customization)Customization$()$(li2)$(l:logistics/boats#boat_items)Boats as Items$()$(li2)$(l:logistics/boats#animals)Transporting Animals$()$(li2)$(l:logistics/boats#paddles)Paddles as Oars$()$(li2)$(l:logistics/boats#cleats)Cleats & Leads$()$(li2)$(l:logistics/boats#anchors)Anchors & Windlasses$()$(li2)$(l:logistics/boats#sails)Sails$()$(li2)$(l:logistics/boats#sailing)Sailing$()$(li2)$(l:logistics/boats#painting)Painting & Dyeing$()$(li2)$(l:logistics/boats#damage)Damage & Repair$()",
+            "text": "$(li)$(bold)$(l:logistics/boats#intro)Інформація про плавання$()$(li2)$(l:logistics/boats#customization)Налаштування$()$(li2)$(l:logistics/boats#boat_items)Човни як предмети$()$(li2)$(l:logistics/boats#animals)Перевезення тварин$()$(li2)$(l:logistics/boats#paddles)Весла$()$(li2)$(l:logistics/boats#cleats)Швартова качка та повідці$()$(li2)$(l:logistics/boats#anchors)Якір та брашпиль$()$(li2)$(l:logistics/boats#sails)Вітрила$()$(li2)$(l:logistics/boats#sailing)Плавання під вітрилом$()$(li2)$(l:logistics/boats#painting)Фарбування та барвлення$()$(li2)$(l:logistics/boats#damage)Пошкодження та ремонт$()",
             "title": "Індекс",
             "anchor": "index"
         },
         {
             "type": "patchouli:text",
-            "text": "$(li)$(bold)$(l:logistics/boats#watercraft)Watercraft$()$(li2)$(l:logistics/boats#kayak)Kayak$()$(li2)$(l:logistics/boats#canoe)Dugout Canoe$()$(li2)$(l:logistics/boats#rowboat)Rowboat$()$(li2)$(l:logistics/boats#sloop)Sloop$()"
+            "text": "$(li)$(bold)$(l:logistics/boats#watercraft)Водний транспорт$()$(li2)$(l:logistics/boats#kayak)Каяк$()$(li2)$(l:logistics/boats#canoe)Довбанка$()$(li2)$(l:logistics/boats#rowboat)Човен$()$(li2)$(l:logistics/boats#sloop)Шлюп$()"
         },
         {
             "type": "patchouli:text",
@@ -44,7 +44,7 @@
             "type": "patchouli:text",
             "title": "Човен як предмети",
             "anchor": "boat_items",
-            "text": "They don't exist! Except the kayak, if you break a boat, it will only drop some of its ingredients! This means you'll need a kayak if you want to carry a boat over land, and it also means you might want to build a dock for your larger vessels."
+            "text": "Їх не існує! Окрім каяка, якщо ти зламаєш човен, з нього випадуть лише деякі складники! Це означає, що тобі знадобиться каяк, якщо ти хочеш перевезти човен суходолом, а також, можливо, варто побудувати причал для своїх більших суден."
         },
         {
             "type": "patchouli:image",
@@ -68,7 +68,7 @@
         },
         {
             "type": "patchouli:text",
-            "title": "Paddles & Oars",
+            "title": "Весла",
             "anchor": "paddles",
             "text": "Якщо тобі здається, що твій човен рухається повільно, перевір, чи тримаєш ти відповідне весло, або, якщо судно потребує кочетних весел, чи встановлені вони в кочети. На деяких човнах кілька гравців можуть веслувати разом, щоб змусити судно плисти швидше."
         },
@@ -80,7 +80,7 @@
         },
         {
             "type": "patchouli:text",
-            "title": "Cleats & Leads",
+            "title": "Швартова качка та повідці",
             "anchor": "cleats",
             "text": "Більшість човнів мають принаймні одну швартовну качку. Ти можеш прикріпити повідець до швартовної качки й використовувати його, щоб тягнути човен, а також витягувати мале судно на берег чи на плиту. Поводоець також можна використовувати для прив'язування човна до паркану, а прикріплення двох швартовних качок до паркану дозволить тобі легко пришвартувати більше судно. Тобі точно захочеться постійно користуватись повідцем, щоб твій човен не унесла течія!"
         },
@@ -93,7 +93,7 @@
         },
         {
             "type": "patchouli:text",
-            "title": "Anchors & Windlasses",
+            "title": "Якір та брашпиль",
             "anchor": "anchors",
             "text": "Велике судно має якір, яким можна повністю зупинити рух за умови, що якір зачепився за морське дно, а всі вітрила згорнуті. Стоячи на якорі, судно все одно розвертатиметься за вітром. Знайди іконку якоря біля брашпиля (якірна лебідка) та натисни $(item)$(k:key.use)$(), щоб опустити або підняти якір."
         },
@@ -135,7 +135,7 @@
         },
         {
             "type": "patchouli:text",
-            "title": "Painting & Dyeing",
+            "title": "Фарбування та барвлення",
             "anchor": "painting",
             "text": "Будь-який човен, побудований за допомогою корабельного риштовання, можна пофарбувати, а кожне вітрило — окремо пофарбувати барвником. Просто візьми предмет барвника в руку й натисни $(item)$(k:key.use)$(), коли побачиш іконку пензлика, щоб пофарбувати корпус або вітрило. Більші судна мають унікальні візерунки для кожного кольору фарби."
         },
@@ -149,20 +149,20 @@
         },
         {
             "type": "patchouli:text",
-            "title": "Damage & Repair",
+            "title": "Пошкодження та ремонт",
             "anchor": "damage",
-            "text": "A damaged boat will start to show cracks. For any boat built using Shipwright's Scaffolding, use the appropriate type of plank blocks to repair it. For canoes, use lumber. At 90% damage, a boat will appear to take on water, and at 100% damage, it will sink! This does not apply to Kayaks."
+            "text": "Пошкоджений човен почне вкриватися тріщинами. Для будь-якого човна, збудованого за допомогою корабельних риштувань, використовуй відповідний тип дощок для ремонту. Для каное використовуй пиломатеріали. При 90% пошкодження човен почне набирати воду, а при 100% пошкодження — затоне! Це не стосується каяків."
         },
         {
             "type": "patchouli:text",
             "anchor": "watercraft",
-            "text": "There are a variety of watercraft available to you throughout progression. The type of boat you may pick comes down to your needs and what materials are available to you.$(li)$(bold)$(l:logistics/boats#kayak)Kayak$(): Portable and fast. Best for solo use.$(li)$(bold)$(l:logistics/boats#canoe)Dugout Canoe$(): Cheap, made of softwood, and can carry two.$(li)$(bold)$(l:logistics/boats#rowboat)Rowboat$(): Medium sized, capabale of good hauls.$(li)$(bold)$(l:logistics/boats#sloop)Sloop$(): Large sea-fairing vessel. Most advanced watercraft.",
+            "text": "Протягом проходження тобі доступні різноманітні плавзасоби. Тип човна, який ти обереш, залежить від твоїх потреб і доступних матеріалів.$(li)$(bold)$(l:logistics/boats#kayak)Каяк$(): портативний і швидкий. Найкраще підходить для одиночного використання.$(li)$(bold)$(l:logistics/boats#canoe)Довбанка$(): дешевий, виготовляється з м’якої деревини та вміщує двох людей.$(li)$(bold)$(l:logistics/boats#rowboat)Човен$(): середнього розміру, дає змогу перевозити значний вантаж.$(li)$(bold)$(l:logistics/boats#sloop)Шлюп$(): велике морехідне судно. Найсучасніший із доступних плавзасобів.",
             "title": "Водний транспорт"
         },
         {
             "type": "patchouli:text",
             "anchor": "kayak",
-            "text": "Your best overland solo-adventure friend. Of course, being the only boat that can be carried as an item helps. It's the fastest boat for a solo player, and very maneuverable!$(br)To row a kayak, hold a $(item)Kayak Paddle$() in your main, or off-hand. To carry the kayak, just break it.",
+            "text": "Твій найкращий друг для одиночних наземних пригод. Звісно, те, що це єдиний човен, який можна переносити як предмет, також є великою перевагою. Це найшвидший човен для одиночного гравця, до того ж він дуже маневрений!$(br)Щоб гребти на каяку, тримай $(item)весло для каяка$() в основній або другій руці. Щоб перенести каяк, просто зламай його.",
             "title": "Байдарка"
         },
         {
@@ -176,8 +176,8 @@
         {
             "type": "patchouli:text",
             "anchor": "canoe",
-            "title": "Canoe",
-            "text": "The Dugout Canoe will likely be the first step on your aquatic journey! If you're in the copper age, you can build a canoe with the help of a saw.$(br)Canoes require a $(item)Canoe Paddle$() and three $(n)Softwood$() logs. Search \"$(6)#softwood$()\" in $(emi) to view all useable logs. As a tip, all coniferous trees are softwood."
+            "title": "Каное",
+            "text": "Довбанка, ймовірно, стане першим кроком у твою водну подорож! Якщо ти перебуваєш у мідній добі, можеш збудувати каное за допомогою пилки.$(br)Для каное потрібні $(item)весло для каное$() та три колоди $(n)м’якої деревини$(). Шукай \"$(6)#softwood$()\" у $(emi), щоб переглянути всі придатні колоди. Порада: усі хвойні дерева належать до м’якої деревини."
         },
         {
             "type": "patchouli:image",
@@ -206,7 +206,7 @@
                 }
             },
             "name": "Просто колода",
-            "text": "To build a $(thing)Dugout Canoe$(), start by placing three stripped-logs horizontally.",
+            "text": "Щоб збудувати $(thing)довбанку$(), спочатку розмісти три очищені колоди горизонтально.",
             "enable_visualize": false
         },
         {
@@ -225,8 +225,8 @@
                     "B": "firmaciv:wood/canoe_component_block/douglas_fir[canoe_carved=5,facing=east,end=true]"
                 }
             },
-            "name": "Halved Logs",
-            "text": "Then, remove the upper half by holding $(item)$(k:key.use)$() with a saw in hand.",
+            "name": "Розполовинені колоди",
+            "text": "Потім прибери верхню половину, натиснувши $(item)$(k:key.use)$() з пилкою в руці.",
             "enable_visualize": false
         },
         {
@@ -245,14 +245,14 @@
                     "B": "firmaciv:wood/canoe_component_block/douglas_fir[canoe_carved=11,facing=east,end=true]"
                 }
             },
-            "name": "A Carved Log",
-            "text": "Next, hollow out the top by holding $(item)$(k:key.use)$() with an axe in hand. Finally, light the canoe on fire with a $(item)Firestarter$() to finish the process.",
+            "name": "Витесана колода",
+            "text": "Далі видовбай верхню частину, натиснувши $(item)$(k:key.use)$() із сокирою в руці. Наостанок підпали довбанку за допомогою $(item)скіпки$(), щоб завершити процес.",
             "enable_visualize": false
         },
         {
             "type": "patchouli:text",
             "anchor": "rowboat",
-            "title": "Rowboat",
+            "title": "Човен",
             "text": "Отже, ти досяг Бронзової доби і бажаєш оновлення? Що ж, весловий човен саме для тебе. Він має три місця, тому може вмістити 3 гравця або до 2 тварин, включаючи коней! Як і завжди, ти можеш замінити сидіння (крім місця кермового) на скрині за твоїм бажанням. Ти також можеш розмістити дві додаткові скрині на кормі."
         },
         {
@@ -269,7 +269,7 @@
             "type": "patchouli:crafting",
             "title": "Риштування",
             "recipe": "firmaciv:crafting/watercraft_frame_angled",
-            "text": "To build a rowboat, you'll need to start with Shipwright's Scaffolding. You'll place them facing inward in a 2 by 3 area.$(br)Scaffolding are then filled in with $(n)hardwood$() planks. Search \"$(6)#hardwood$()\" in $(emi) to view all useable log types."
+            "text": "Щоб збудувати човен, спочатку тобі знадобляться корабельні риштування. Розмісти їх, повернувши всередину, у формі області 2 × 3.$(br)Після цього заповни риштування дошками з $(n)твердої деревини$(). Шукай \"$(6)#hardwood$()\" у $(emi), щоб переглянути всі придатні типи колод."
         },
         {
             "type": "patchouli:multiblock",
@@ -323,8 +323,8 @@
                     "6": "firmaciv:wood/watercraft_frame/angled/hickory[facing=east,shape=inner_right,frame_processed=3]"
                 }
             },
-            "name": "Filled Scaffolding",
-            "text": "Four $(6)$(t:#tfg:hardwood)hardwood$() plank blocks have been added to each scaffold.",
+            "name": "Заповнені риштування",
+            "text": "До кожного риштування додано по чотири блоки дощок із $(6)$(t:#tfg:hardwood)твердої деревини$().",
             "enable_visualize": false
         },
         {
@@ -351,8 +351,8 @@
                     "6": "firmaciv:wood/watercraft_frame/angled/hickory[facing=east,shape=inner_right,frame_processed=7]"
                 }
             },
-            "name": "Bolted Scaffolding",
-            "text": "Using a hammer in your offhand, add four $(item)Copper Bolts$() to each scaffold.",
+            "name": "З’єднані болтами риштування",
+            "text": "Тримаючи молот у другій руці, додай до кожного риштування чотири $(item)мідні болти$().",
             "enable_visualize": false
         },
         {
@@ -381,15 +381,15 @@
                     "R": "alekiships:oarlock[facing=south]"
                 }
             },
-            "name": "Finished Rowboat",
-            "text": "Finally, add the $(item)Oarlocks$() to the center of the boat, and then add $(item)Oars$() to each oarlock.",
+            "name": "Готовий човен",
+            "text": "Насамкінець додай $(item)кочети$() до центру човна, а потім встанови $(item)весла$() в кожен кочет.",
             "enable_visualize": false
         },
         {
             "type": "patchouli:text",
             "anchor": "sloop",
-            "title": "Sloop",
-            "text": "Iron Age already? Well, I guess it's high time you built yourself a proper ship. The sloop is 4 blocks wide and over 8 blocks long, an impressive upgrade from the rowboat! It holds up to 13 containers and up to 7 passengers, and, depending on the wind, can sail extremely fast. It can also carry up to 6 $(l:logistics/boats#cannons)Cannons$()!"
+            "title": "Шлюп",
+            "text": "Уже залізна доба? Ну що ж, мабуть, саме час збудувати собі справжній корабель. Шлюп має 4 блоки завширшки та понад 8 блоків завдовжки — вражаюче покращення порівняно з човном! Він вміщує до 13 контейнерів і до 7 пасажирів, а залежно від вітру може плисти надзвичайно швидко. Також він може нести до 6 $(l:logistics/boats#cannons)гармат$()!"
         },
         {
             "type": "patchouli:image",
@@ -399,13 +399,13 @@
         },
         {
             "type": "patchouli:text",
-            "text": "The sloop is expensive, however, requiring a wealth of wrought iron, copper, wool, and other materials. But materials aren't the only cost! You'll have to learn how to sail, as well, and it can take some practice! You'll also likely want to build docks and other infrastructure if you plan on bringing your ship in close to shore.$(br)$(bold)TIP$(): It is recommended to build your sloop above water and then drop it into the water when finished. Builidng it in water may result in it sinking!"
+            "text": "Шлюп коштує дорого, адже для його будівництва потрібно багато кованого заліза, міді, вовни та інших матеріалів. Але матеріали — не єдина ціна! Тобі також доведеться навчитися керувати вітрилом, а це може потребувати певної практики! Також тобі, ймовірно, захочеться побудувати причали та іншу інфраструктуру, якщо ти плануєш підводити корабель близько до берега.$(br)$(bold)ПОРАДА$(): Рекомендується будувати шлюп над водою, а після завершення спустити його на воду. Будівництво у воді може призвести до того, що він затоне!"
         },
         {
             "type": "patchouli:crafting",
             "title": "Риштування",
             "recipe": "firmaciv:crafting/watercraft_frame_flat",
-            "text": "Much like a rowboat, you'll start with Shipwright's Scaffolding.$(br)Scaffolding are then filled in with $(n)hardwood$() planks. Search \"$(6)#hardwood$()\" in $(emi) to view all useable log types."
+            "text": "Як і у випадку з човном, почни з корабельних риштувань.$(br)Після цього заповни риштування дошками з $(n)твердої деревини$(). Шукай \"$(6)#hardwood$()\" у $(emi), щоб переглянути всі придатні типи колод."
         },
         {
             "type": "patchouli:multiblock",
@@ -486,7 +486,7 @@
                 }
             },
             "name": "Риштування шлюпа",
-            "text": "Four $(6)$(t:#tfg:hardwood)hardwood$() plank blocks have been added to each scaffold.",
+            "text": "До кожного риштування додано по чотири блоки дощок із $(6)$(t:#tfg:hardwood)твердої деревини$().",
             "enable_visualize": true
         },
         {
@@ -527,7 +527,7 @@
                 }
             },
             "name": "Риштування шлюпа",
-            "text": "Using a hammer in your offhand, add four $(item)Copper Bolts$() to each scaffold.",
+            "text": "Тримаючи молот у другій руці, додай до кожного риштування чотири $(item)мідні болти$().",
             "enable_visualize": true
         },
         {
@@ -570,19 +570,19 @@
                 }
             },
             "name": "Риштування шлюпа",
-            "text": "Finally, add the $(item)Cleats$() to the hull.",
+            "text": "Насамкінець додай $(item)швартові качки$() до корпусу.",
             "enable_visualize": true
         },
         {
             "type": "patchouli:text",
-            "text": "Building the hull is only the first step. Next, look for the blue hammer icon and $(item)$(k:key.use)$() to add the items that show next to your crosshair.$(br2)For a full list of materials, you will need:$(li)6 Scaffold Slabs$(li)18 Scaffold Stairs$(li)116 Hardwood Plank Blocks$(li)96 Copper Bolts$(li)4 Cleats$(li)34 Hardwood Stripped Logs$(li)1 Medium Sail$(li)1 Small Sail$(li)16 Lumber$(li)1 Anchor$(li)8 Rope."
+            "text": "Побудова корпусу — лише перший крок. Далі знайди синю іконку молотка та натисни $(item)$(k:key.use)$(), щоб додати предмети, які з’являються поруч із твоїм прицілом.$(br2)Повний список необхідних матеріалів:$(li)6 плит риштувань$(li)18 сходинок риштувань$(li)116 блоків дощок із твердої деревини$(li)96 мідних болтів$(li)4 швартовиї качок$(li)34 очищені колоди з твердої деревини$(li)1 середнє вітрило$(li)1 мале вітрило$(li)16 пиломатеріалів$(li)1 якір$(li)8 мотузок."
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "cannons",
             "title": "Гармати",
             "item": "firmaciv:cannon,alekiships:cannonball",
-            "text": "Cannons! Who doesn't want cannons? These powerful weapons of naval warfare can be placed on sloops, as well as on land, and are the best way to destroy your enemy's vessels, dealing far more damage to ships than any alternative."
+            "text": "Гармати! Хто ж не хоче гармат? Цю потужну зброю морської війни можна встановлювати на шлюпах, а також на суходолі, і це найкращий спосіб знищувати ворожі судна, завдаючи кораблям значно більше шкоди, ніж будь-яка альтернатива."
         },
         {
             "type": "patchouli:image",
@@ -603,7 +603,8 @@
                 "tfg:agriculture/weaving",
                 "tfg:logistics/exploration_gear",
                 "tfg:logistics/navigation",
-                "tfg:the_world/earth_tree_index"
+                "tfg:the_world/earth_tree_index",
+                "tfg:logistics/trains"
             ]
         }
     ],

@@ -6,7 +6,7 @@
         {
             "type": "patchouli:text",
             "anchor": "index",
-            "text": "$(li)$(bold)$(l/animal_husbandry#intro)Худоба$()\n$(li)$(bold)$(l/animal_husbandry#uses)Використання$()\n$(li2)$(l/animal_husbandry#uses_table)Таблиця використань$()\n$(li)$(bold)$(l/animal_husbandry#familiarity)Прирученість$()\n$(li)$(bold)$(l/animal_husbandry#mammals)Ссавці$()\n$(li2)$(l/animal_husbandry#wooly_animals)Вовнисті ссавці$()\n$(li2)$(l/animal_husbandry#dairy_animals)Молочні ссавці$()\n$(li2)$(l/animal_husbandry#equines)Коневі$()\n$(li2)$(l/animal_husbandry#camelides)Верблюдові$()\n$(li)$(bold)$(l/animal_husbandry#oviparous_animals)Яйцекладні тварини$()\n$(li)$(bold)$(l/animal_husbandry#feeding_trough)Годівниця$()"
+            "text": "$(li)$(bold)$(l/animal_husbandry#intro)Худоба$()$(li)$(bold)$(l/animal_husbandry#uses)Використання$()$(li2)$(l/animal_husbandry#uses_table)Таблиця використань$()$(li)$(bold)$(l/animal_husbandry#familiarity)Прирученість$()$(li)$(bold)$(l/animal_husbandry#mammals)Ссавці$()$(li2)$(l/animal_husbandry#wooly_animals)Вовнисті ссавці$()$(li2)$(l/animal_husbandry#dairy_animals)Молочні ссавці$()$(li2)$(l/animal_husbandry#equines)Коневі$()$(li2)$(l/animal_husbandry#camelides)Верблюдові$()$(li)$(bold)$(l/animal_husbandry#oviparous_animals)Яйцекладні тварини$()$(li)$(bold)$(l/animal_husbandry#feeding_trough)Годівниця$()"
         },
         {
             "type": "patchouli:text",
@@ -155,7 +155,7 @@
             "type": "patchouli:text",
             "title": "Вовнисті ссавці",
             "anchor": "wooly_animals",
-            "text": "$(thing)Вовнисті тварини$() — це $(l:agriculture/animal_husbandry#mammals)ссавці$(), яких можна $(thing)стригти$(), якщо вони дорослі та достатньо до тебе звикли. Прикладами є $(l:the_world/wild_animals#sheep)вівці$(), $(l:the_world/wild_animals#alpaca)альпаки$() та $(l:the_world/wild_animals#musk_ox)вівцебики$()."
+            "text": "$(thing)Вовнисті тварини$() — це $(l:agriculture/animal_husbandry#mammals)ссавці$(), яких можна $(thing)стригти$(), якщо вони дорослі та достатньо до тебе звикли. Прикладами є $(l:the_world/wild_animals#sheep)вівці$(), $(l:the_world/wild_animals#alpaca)альпаки$() та $(l:the_world/wild_animals#musk_ox)мускусні корови$()."
         },
         {
             "type": "patchouli:text",

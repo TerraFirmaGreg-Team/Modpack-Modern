@@ -37,7 +37,7 @@
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Timepiece",
+            "title": "Chronometr",
             "item": "firmaciv:nav_clock",
             "text": "Once you craft your Navigator's Timepiece, you can hold it and press $(item)$(k:key.use)$() to determine your Longitude. Remember that your Longitude is measured in Degrees East or West, meaning 0 Degrees at the Prime Meridian, and 360 Degrees for an identical climate."
         },

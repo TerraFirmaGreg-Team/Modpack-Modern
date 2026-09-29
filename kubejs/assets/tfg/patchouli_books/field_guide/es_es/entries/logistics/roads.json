@@ -515,7 +515,9 @@
                 "tfg:the_world/geology",
                 "tfg:the_world/wild_animals",
                 "tfg:agriculture/animal_husbandry",
-                "tfg:logistics/tack"
+                "tfg:logistics/tack",
+                "tfg:logistics/trains",
+                "tfg:logistics/boats"
             ]
         }
     ],

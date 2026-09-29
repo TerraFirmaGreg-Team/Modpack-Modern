@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:multiblock",
 			"anchor": "space_station",
-			"name": "Space Platform",
+			"name": "Platforma kosmiczna",
 			"text": "A platform will be constructed for your rocket to land on.",
 			"enable_visualize": false,
 			"multiblock": {

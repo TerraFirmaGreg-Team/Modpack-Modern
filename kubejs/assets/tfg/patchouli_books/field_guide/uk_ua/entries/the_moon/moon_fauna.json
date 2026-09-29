@@ -1,20 +1,20 @@
 {
-	"name": "Moon Fauna",
+	"name": "Фауна Місяця",
 	"category": "tfg:the_moon",
 	"icon": "species:textures/item/birt_egg.png",
 	"pages": [
 		{
 			"type": "patchouli:text",
 			"title": "Позаземна фауна",
-			"text": "Space is home to many other kinds of animals than those you'd find on Earth. A few animals are hostile and will attack the player, but most are passive. Only a few of them are $(l:agriculture/animal_husbandry)domesticatable$().$(br)Animals you find on other worlds can be divided into two categories: $(item)hot$() and $(item)cold$(). Animals can only survive on planets that either have a similar climate to where they came from, or on $(thing)temperate$() planets like Earth."
+			"text": "У космосі мешкає багато інших видів тварин, яких не зустрінеш на Землі. Деякі тварини агресивні та нападатимуть на гравця, але більшість є мирними. Лише деяких із них можна $(l:agriculture/animal_husbandry)приручити$().$(br)Тварин, яких ти знаходиш на інших планетах, можна поділити на дві категорії: $(item)теплолюбні$() та $(item)холодолюбні$(). Тварини можуть виживати лише на планетах із кліматом, подібним до того, звідки вони походять, або на $(thing)помірних$() планетах, як-от Земля."
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Space animals do not require an oxygenated environment, but it will make the area count as \"temperate\" for their survival. For example, if you bring a cold-dwelling animal (like a Moon Rabbit) to a hot planet (like Venus), it will catch on fire, unless it's inside an oxygenated environment.$(br)This makes Earth the ideal place to build a zoo, if you'd like.$(br)You can transport animals between planets using AE2's Spatial Storage system."
+			"text": "Космічним тваринам не потрібне насичене киснем середовище, але воно зробить місцевість «помірною» для їхнього виживання. Наприклад, якщо ти принесеш тварину, що мешкає в холоді (як-от Місячного кролика), на гарячу планету (як-от Венера), вона загориться, якщо тільки не перебуватиме в насиченому киснем середовищі.$(br)Завдяки цьому Земля є ідеальним місцем для будівництва зоопарку, якщо ти цього хочеш.$(br)Ти можеш перевозити тварин між планетами за допомогою системи просторового зберігання AE2."
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(li)$(bold)Domesticatable$()$(li2)$(l:the_moon/moon_fauna#moon_rabbit)Moon Rabbit$()$(li2)$(l:the_moon/moon_fauna#birt)Birt$()$(li2)$(l:the_moon/moon_fauna#certus_jellie)Certus Jellie$()$(li)$(bold)Wild$()$(li2)$(l:the_moon/moon_fauna#limpet)Limpet$()$(li2)$(l:the_moon/moon_fauna#star_crawler)Star Crawler$()$(li2)$(l:the_moon/moon_fauna#endermen)Endermen$()$(li2)$(l:the_moon/moon_fauna#shulker)Shulker$()"
+			"text": "$(li)$(bold)Приручувані$()$(li2)$(l:the_moon/moon_fauna#moon_rabbit)Місячний кролик$()$(li2)$(l:the_moon/moon_fauna#birt)Бірт$()$(li2)$(l:the_moon/moon_fauna#certus_jellie)Істиннокаварцовий джеллі$()$(li)$(bold)Дикі$()$(li2)$(l:the_moon/moon_fauna#limpet)Лімпет$()$(li2)$(l:the_moon/moon_fauna#star_crawler)Зоряний повзун$()$(li2)$(l:the_moon/moon_fauna#endermen)Ендермени$()$(li2)$(l:the_moon/moon_fauna#shulker)Шалкери$()"
 		},
 		{
 			"type": "patchouli:entity",
@@ -39,7 +39,7 @@
 			"scale": 0.6,
 			"name": "Істиннокаварцовий джеллі",
 			"anchor": "certus_jellie",
-			"text": "$(thing)Certus$() $(l:agriculture/jellies)Jellies$() spawn in Moon's $(item)Asurine$() biomes. They produce $(thing)Large Certus Quartz Buds$()."
+			"text": "$(thing)Істиннокаварцові$() $(l:agriculture/jellies)джеллі$() з’являються в біомах Місяця з $(item)азурином$(). Вони виробляють $(thing)великі бутони істинного кварцу$()."
 		},
 		{
 			"type": "patchouli:entity",
@@ -63,21 +63,21 @@
 			"scale": 1,
 			"name": "Ендермен",
 			"anchor": "endermen",
-			"text": "The Moon is home to more species of $(thing)Endermen$(). Some are neutral, but a few are hostile, so watch out!"
+			"text": "Місяць є домівкою для більшої кількості видів $(thing)Ендерменів$(). Деякі з них нейтральні, але кілька видів агресивні, тож будь обережний!"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "endermanoverhaul:end_islands_enderman",
 			"scale": 1,
-			"text": "The most dangerous $(thing)Endermen$() are found in the $(item)Chorus$() biomes."
+			"text": "Найнебезпечніші $(thing)ентерміни$() водяться в біомах $(item)хорусу$()."
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "minecraft:shulker{Color:7}",
 			"anchor": "shulker",
-			"title": "Shulker",
+			"title": "Шалкер",
 			"scale": 0.7,
-			"text": "$(thing)Shulkers$() can be found around large meteorites and abandoned moon bases. Maybe they are guarding something...?"
+			"text": "$(thing)Шалкери$() можна знайти біля великих метеоритів і покинутих місячних баз. Можливо, вони щось охороняють...?"
 		},
 		{
 			"type": "patchouli:relations",

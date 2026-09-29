@@ -25,7 +25,7 @@
         {
             "type": "patchouli:multiblock",
             "enable_visualize": false,
-            "text": "$(bold)TIP$(): Chests come in all wood varients!",
+            "text": "$(bold)WSKAZÓWKA$(): Skrzynie można wykonać z każdego rodzaju drewna!",
             "multiblock": {
                 "pattern": [
                     [
@@ -206,7 +206,7 @@
         {
             "type": "patchouli:multiblock",
             "enable_visualize": false,
-            "text": "$(bold)TIP$(): You can insert and extract automatically from any block of the keg.",
+            "text": "$(bold)WSKAZÓWKA$(): Przedmioty i płyny można automatycznie wprowadzać do beczki oraz wyprowadzać z niej przez dowolny blok jej konstrukcji.",
             "multiblock": {
                 "pattern": [
                     [
@@ -240,7 +240,7 @@
         {
             "type": "patchouli:multiblock",
             "enable_visualize": false,
-            "text": "$(bold)TIP$(): Barrels can collect rain water when left open exposed to the sky.",
+            "text": "$(bold)WSKAZÓWKA$(): Beczki będą zbierać deszczówkę, gdy zostawi się je otwarte pod gołym niebem.",
             "multiblock": {
                 "pattern": [
                     [
@@ -265,7 +265,7 @@
         {
             "type": "patchouli:multiblock",
             "enable_visualize": false,
-            "text": "$(bold)TIP$(): Drums can have fluid logistic covers placed on their faces.",
+            "text": "$(bold)WSKAZÓWKA$(): Na ścianach baryłek można montować osłony do transportu płynów.",
             "multiblock": {
                 "pattern": [
                     [
@@ -289,7 +289,7 @@
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "$(bold)TIP$(): Tanks can be $(item)$(k:key.use)$() with a $(thing)Wrench$() to hide/show their window.",
+            "text": "$(bold)WSKAZÓWKA$(): Naciśnij $(item)$(k:key.use)$() na zbiorniku, trzymając $(thing)klucz$(), aby ukryć/pokazać jego okno.",
             "multiblocks": [
                 {
                     "pattern": [
@@ -426,7 +426,7 @@
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "$(bold)TIP$(): Multiblock tanks will auto-push fluids from valves on its bottom face.",
+            "text": "$(bold)WSKAZÓWKA$(): Zbiorniki multiblokowe automatycznie wypompowują płyny przez zawory znajdujące się na ich dolnej ścianie.",
             "multiblocks": [
                 {
                     "pattern": [
@@ -567,7 +567,9 @@
             "entries": [
                 "tfg:craftsmanship/barrels",
                 "tfg:logistics/personal_storage",
-                "tfg:game_mechanics/size_and_weight"
+                "tfg:game_mechanics/size_and_weight",
+                "tfg:logistics/create",
+                "tfg:logistics/trains"
             ]
         }
     ],

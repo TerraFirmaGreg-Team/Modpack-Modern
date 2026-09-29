@@ -13,7 +13,7 @@
             "title": "Wprowadzenie",
             "anchor": "into",
             "type": "patchouli:text",
-            "text": "The $(l:beneath)Beneath$() hosts its own unique selection of wild fruits, which have adapted to the extreme conditions underground. Wild fruits can be cultivated in all the same ways as regular $(l:the_world/wild_fruits)wild fruits$() in the Overworld."
+            "text": "W $(l:beneath/beneath)Głębinach$() występuje wyjątkowy zestaw dzikich owoców, przystosowanych do skrajnych warunków panujących pod ziemią. Można je uprawiać tak samo jak zwykłe $(l:the_world/wild_fruits)dzikie owoce$()."
         },
         {
             "type": "tfg:table",
@@ -421,8 +421,8 @@
                     "fill": "0xa8986a"
                 }
             ],
-            "text": "The fruiting calendar for palm fruit trees.",
-            "title": "Palm Fruit Trees",
+            "text": "Kalendarz owocowania palm owocowych.",
+            "title": "Palmy owocowe",
             "legend": [
                 {
                     "text": "Uśpione",
@@ -453,7 +453,7 @@
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "Oil palm trees can be found in $(thing)Salt Caves$() and $(thing)Tar Pools$() biomes between Y=50 and Y=190",
+            "text": "Olejowce występują w $(thing)jaskiniach solnych$() i $(thing)dołach ze smołą$() pomiędzy Y=50 a Y=190",
             "multiblocks": [
                 {
                     "pattern": [
@@ -1081,7 +1081,7 @@
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "Açaí trees can be found in $(thing)Salt Caves$() and $(thing)Tar Pools$() biomes between Y=50 and Y=190",
+            "text": "Euterpy występują w $(thing)jaskiniach solnych$() i $(thing)dołach ze smołą$() pomiędzy Y=50 a Y=190",
             "multiblocks": [
                 {
                     "pattern": [

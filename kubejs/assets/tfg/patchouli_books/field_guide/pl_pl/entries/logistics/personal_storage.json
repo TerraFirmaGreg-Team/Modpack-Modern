@@ -1,5 +1,5 @@
 {
-    "name": "Personal Storage",
+    "name": "Podręczny magazyn",
     "category": "tfg:logistics",
     "icon": "sophisticatedbackpacks:backpack",
     "pages": [
@@ -22,14 +22,14 @@
         {
             "type": "patchouli:spotlight",
             "anchor": "small_vessel",
-            "title": "Małe wazy",
+            "title": "Małe naczynia",
             "item": "tag:tfc:fired_vessels",
             "text": "$(bold)Slots$(): 4$(br)$(bold)Stack Size$(): 16$(br)$(bold)Largest Size$(): Small$(br)$(bold)Item Pickup$(): $(c)False$()$(br)$(bold)Slot Voiding$(): $(c)False$()$(br)$(bold)Restricted To$(): N/A"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "large_vessel",
-            "title": "Wielka waza",
+            "title": "Wielkie naczynia",
             "item": "tag:tfc:fired_large_vessels",
             "text": "$(bold)Slots$(): 9$(br)$(bold)Stack Size$(): 64$(br)$(bold)Largest Size$(): Normal$(br)$(bold)Item Pickup$(): $(c)False$()$(br)$(bold)Slot Voiding$(): $(c)False$()$(br)$(bold)Restricted To$(): N/A"
         },

@@ -2394,7 +2394,7 @@
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "Przykładowe drzewo kakaowca.",
+            "text": "Przykładowy kakaowiec.",
             "multiblocks": [
                 {
                     "pattern": [
@@ -2618,7 +2618,7 @@
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "An example fig tree.",
+            "text": "Przykładowy figowiec.",
             "multiblocks": [
                 {
                     "pattern": [
@@ -2946,7 +2946,7 @@
             "type": "patchouli:text",
             "anchor": "palm_fruit_trees",
             "text": "$(thing)Palm Fruit Trees$() are another variety of fruit-bearing trees that can typically be found along coasts near sea water.$(br2)Palm fruit trees will develop fruit clusters when within their $(l:the_world/climate#climate)Climate Range$() and during their fruiting season. Clusters grow attached to the \"head/crown\" of the tree and advance in age once per day until mature. Mature fruit clusters can be harvested by throwing projectiles (except snowballs) at them, $(item)$(k:key.use)$() them, or using $(item)Harvest Baskets$() on them.",
-            "title": "Palm Fruit Trees"
+            "title": "Palmy owocowe"
         },
         {
             "type": "patchouli:text",
@@ -3073,8 +3073,8 @@
                     "fill": "0xa217ff"
                 }
             ],
-            "text": "The fruiting calendar for palm fruit trees.",
-            "title": "Palm Fruit Trees",
+            "text": "Kalendarz owocowania palm owocowych.",
+            "title": "Palmy owocowe",
             "legend": [
                 {
                     "text": "Uśpione",
@@ -3105,7 +3105,7 @@
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "An example coconut tree.",
+            "text": "Przykładowa palma kokosowa.",
             "multiblocks": [
                 {
                     "pattern": [
@@ -4101,7 +4101,7 @@
             "type": "patchouli:text",
             "anchor": "date",
             "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 20 - 50 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 40 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 200 - 500mm$(br2)Date trees can be harvested for fruit when their clusters fully mature. Date clusters grow in 4 stages and provide 4-8 item drops when harvested.",
-            "title": "Date Tree"
+            "title": "Daktylowiec"
         },
         {
             "type": "tfg:multimultiblock",
@@ -5836,7 +5836,7 @@
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "Miesięczne etapy wzrostu krzewu śnieguliczkowego",
+            "text": "Miesięczne etapy wzrostu krzewu śnieguliczkowego.",
             "multiblocks": [
                 {
                     "pattern": [
@@ -6092,7 +6092,7 @@
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "Miesięczne etapy wzrostu krzewu żurawinowego",
+            "text": "Miesięczne etapy wzrostu krzewu żurawinowego.",
             "multiblocks": [
                 {
                     "pattern": [
@@ -6152,11 +6152,11 @@
             "type": "patchouli:text",
             "anchor": "nightshade",
             "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 7 - 24 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 24 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 200 - 400mm$(br2)Nightshade berry bushes grow from February to June, start flowering in July, and bear fruit in August.$(br2)They can be found in forests and are $(c)Poisonous$().",
-            "title": "Nightshade Berry Bush"
+            "title": "Krzew psianki czarnej"
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "The monthly stages of a nightshade bush.",
+            "text": "Miesięczne etapy wzrostu krzewu psianki czarnej.",
             "multiblocks": [
                 {
                     "pattern": [
@@ -6220,7 +6220,7 @@
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "The monthly stages of a pineapple bush.",
+            "text": "Miesięczne etapy wzrostu krzewu ananasowego.",
             "multiblocks": [
                 {
                     "pattern": [
@@ -6284,7 +6284,7 @@
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "A red grape bush.",
+            "text": "Krzew czerwonej winorośli.",
             "multiblocks": [
                 {
                     "pattern": [
@@ -6322,7 +6322,7 @@
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "A white grape bush.",
+            "text": "Krzew białej winorośli.",
             "multiblocks": [
                 {
                     "pattern": [

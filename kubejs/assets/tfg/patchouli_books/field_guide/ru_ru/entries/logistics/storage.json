@@ -567,7 +567,9 @@
             "entries": [
                 "tfg:craftsmanship/barrels",
                 "tfg:logistics/personal_storage",
-                "tfg:game_mechanics/size_and_weight"
+                "tfg:game_mechanics/size_and_weight",
+                "tfg:logistics/create",
+                "tfg:logistics/trains"
             ]
         }
     ],

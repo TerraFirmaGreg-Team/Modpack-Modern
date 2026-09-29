@@ -32,7 +32,7 @@
 			"type": "patchouli:crafting",
 			"title": "Maseczka",
 			"recipe": "gtceu:shaped/face_mask",
-			"text": "$(thing)Maseczka() zapewnia ochronę przed jakimikolwiek $(item)wdychanymi$() zagrożeniami, takimi jak zatrucie arszenikiem.",
+			"text": "$(thing)Maseczka$() chroni przed zagrożeniami związanymi z $(item)wdychaniem$(), takimi jak zatrucie arsenem.",
 			"anchor": "mask"
 		},
 		{

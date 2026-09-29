@@ -70,7 +70,7 @@
         {
             "type": "tfg:quern_recipe",
             "recipe": "tfc:quern/barley_grain",
-            "text": "$(thing)Crops$() can be processed with a knife or quern to acquire $(thing)Grain$(), which can further be ground into $(thing)Flour$()."
+            "text": "$(thing)Rośliny uprawne$() można przetworzyć za pomocą noża lub żaren, aby uzyskać $(thing)ziarno$(), które następnie można zmielić na $(thing)mąkę$()."
         },
         {
             "type": "patchouli:relations",

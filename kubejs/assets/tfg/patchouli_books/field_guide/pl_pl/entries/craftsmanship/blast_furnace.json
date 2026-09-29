@@ -17,7 +17,7 @@
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "Blast furnace structure from sizes 1-5 using $(item)Insulated Fire Bricks$()",
+            "text": "Konstrukcje wielkiego pieca w rozmiarach 1-5, zbudowane z $(item)cegieł ogniotrwałych pokrytych izolacją$().",
             "multiblocks": [
                 {
                     "pattern": [
