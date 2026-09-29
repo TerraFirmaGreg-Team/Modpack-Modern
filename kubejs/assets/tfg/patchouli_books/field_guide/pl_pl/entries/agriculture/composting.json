@@ -1,11 +1,11 @@
 {
-    "name": "Kompostowanie",
+    "name": "Composting",
     "category": "tfg:agriculture",
     "icon": "tfc:composter",
     "pages": [
         {
             "type": "patchouli:text",
-            "title": "Indeks",
+            "title": "Index",
             "anchor": "index",
             "text": "$(li)$(bold)$(l:agriculture/composting#compostables)Compostables$()$(li2)$(l:agriculture/composting#green_compost)Green Compost$()$(li2)$(l:agriculture/composting#brown_compost)Brown Compost$()$(li2)$(l:agriculture/composting#compost_poisons)Rotten Compost$()$(li)$(bold)$(l:agriculture/composting#compost_tumbler)Compost Tumbler$()"
         },
@@ -111,7 +111,7 @@
                 }
             },
             "anchor": "rotten_compost",
-            "name": "Zgniły kompost",
+            "name": "Rotten Compost",
             "text": "Zgniły kompostownik.",
             "enable_visualize": false
         },
@@ -135,7 +135,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Czytaj dalej",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:cooking/decay",

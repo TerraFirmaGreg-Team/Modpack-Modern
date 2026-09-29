@@ -14,7 +14,7 @@
         {
             "type": "patchouli:text",
             "anchor": "intro",
-            "title": "Introdução",
+            "title": "Introduction",
             "text": "Once you have $(l:craftsmanship/metallurgy)located$() an ore vein you can begin excavating it for resources. However, there are some differences from base Mincraft to be aware of when mining. Such as $(l:game_mechanics/mining#collapses)Collapses$(), $(l:game_mechanics/mining#supports)Supports$(), $(l:game_mechanics/hazards)Hazardous Materials$(), and $(l:game_mechanics/mining#processing)Processing$()."
         },
         {
@@ -313,7 +313,7 @@
             "type": "patchouli:text",
             "anchor": "support_tips",
             "text": "Finally, it is important to know that $(l:craftsmanship/chisel)Chiseling$() has the potential to cause collapses, just as easily as mining does, when it is done on any $(thing)Raw Rock$() that has potential to cause a nearby collapse.$(br2)If you are still struggling with collapses, consider watching this $(l:https://youtu.be/1KgwEexxGNI)Guide$().",
-            "title": "Dicas"
+            "title": "Tips"
         },
         {
             "type": "patchouli:spotlight",

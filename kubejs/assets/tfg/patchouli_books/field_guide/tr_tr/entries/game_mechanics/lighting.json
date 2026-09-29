@@ -13,7 +13,7 @@
         {
             "type": "patchouli:text",
             "anchor": "intro",
-            "title": "Giriş",
+            "title": "Introduction",
             "text": "There are a number of ways to produce light in $(tfg_short). However, nearly all light sources do not last forever!$(br)Unlike vanilla Minecraft, you will need to keep an eye on your lights to re-ignite them when they burn out. The higher quality the light source is, the longer it will last.$(br)Permanent lightsources aren't available until much later, unless you get creative."
         },
         {
@@ -142,7 +142,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Ek Okuma",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:craftsmanship/sticks_and_stones",

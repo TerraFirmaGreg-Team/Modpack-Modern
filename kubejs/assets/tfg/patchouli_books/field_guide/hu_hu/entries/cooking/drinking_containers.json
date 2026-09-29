@@ -18,7 +18,7 @@
             "anchor": "table",
             "strings": [
                 {
-                    "text": "Váza",
+                    "text": "Vessel",
                     "bold": true
                 },
                 {
@@ -30,7 +30,7 @@
                     "bold": true
                 },
                 {
-                    "text": "Kerámia kancsó"
+                    "text": "Ceramic Jug"
                 },
                 {
                     "text": "100"
@@ -39,7 +39,7 @@
                     "text": "2%"
                 },
                 {
-                    "text": "Borospohár"
+                    "text": "Wine Glass"
                 },
                 {
                     "text": "100"
@@ -48,7 +48,7 @@
                     "text": "2%"
                 },
                 {
-                    "text": "Bőr Kulacs"
+                    "text": "Leather Flask"
                 },
                 {
                     "text": "500"
@@ -57,7 +57,7 @@
                     "text": "100"
                 },
                 {
-                    "text": "Vas Kulacs"
+                    "text": "Iron Flask"
                 },
                 {
                     "text": "2000"
@@ -66,7 +66,7 @@
                     "text": "400"
                 },
                 {
-                    "text": "Vörös Acél Kulacs"
+                    "text": "Red Steel Flask"
                 },
                 {
                     "text": "2000"
@@ -156,7 +156,7 @@
         {
             "type": "patchouli:crafting",
             "anchor": "juicer",
-            "title": "Facsaró",
+            "title": "Juicer",
             "recipe": "beneath:crafting/juicer",
             "text": "The $(item)Juicer$() is a special item that can extract the water contained in $(thing)Fruits$(), $(thing)Mushrooms$(), and $(thing)Cacti$() into drinkable water."
         },

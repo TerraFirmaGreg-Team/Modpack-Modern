@@ -51,13 +51,13 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "biomes",
-			"title": "Біоми",
+			"title": "Biomes",
 			"text": "Безодня має цілий набір нових біомів для дослідження!$(br2)Безодню можна поділити на три вертикальні шари, кожен із власним набором біомів. Чим нижче ти спускаєшся, тим спекотнішим і небезпечнішим стає середовище!"
 		},
 		{
 			"type": "patchouli:image",
 			"anchor": "biomes_top",
-			"title": "Соляні печери",
+			"title": "Salt Caves",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/salt_caves.png"
 			],
@@ -66,7 +66,7 @@
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Вогке болото",
+			"title": "Muggy Bog",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/muggy_bog.png"
 			],
@@ -75,7 +75,7 @@
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Гнилісні печери",
+			"title": "Decaying Caverns",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/decaying_caverns.png"
 			],
@@ -84,7 +84,7 @@
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Павуче лігво",
+			"title": "Webbed Lair",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/webbed_lair.png"
 			],
@@ -94,7 +94,7 @@
 		{
 			"type": "patchouli:image",
 			"anchor": "biomes_middle",
-			"title": "Дігтярні затони",
+			"title": "Tar Pools",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/tar_pools.png"
 			],
@@ -103,7 +103,7 @@
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Геотермальні джерела",
+			"title": "Geothermal Springs",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/geothermal_springs.png"
 			],
@@ -112,7 +112,7 @@
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Терновий гай",
+			"title": "Thorny Grove",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/thorny_brambles.png"
 			],
@@ -121,7 +121,7 @@
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Пишна западина",
+			"title": "Lush Hollow",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/lush_hollow.png"
 			],
@@ -131,7 +131,7 @@
 		{
 			"type": "patchouli:image",
 			"anchor": "biomes_bottom",
-			"title": "Попелястий ліс",
+			"title": "Ash Forest",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/ash_forest.png"
 			],
@@ -140,7 +140,7 @@
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Лавові потоки",
+			"title": "Lava Floes",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/lava_floes.png"
 			],
@@ -149,7 +149,7 @@
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Базальтові дельти",
+			"title": "Basalt Deltas",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/basalt_deltas.png"
 			],
@@ -183,7 +183,7 @@
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Додаткове читання",
+			"title": "Further Reading",
 			"anchor": "relations",
 			"entries": [
 				"tfg:beneath/beneath_mechanics",

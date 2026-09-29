@@ -18,7 +18,7 @@
         {
             "type": "patchouli:text",
             "anchor": "firepit",
-            "title": "Laužavietė",
+            "title": "Firepit",
             "text": "A $(item)Firepit$() is likely the first cooking method you will have access to. It is capable of cooking only one item at a time and uses logs as fuel."
         },
         {
@@ -43,7 +43,7 @@
         {
             "type": "patchouli:text",
             "anchor": "grill",
-            "title": "Kepsninė",
+            "title": "Grill",
             "text": "A $(thing)Grill$() is an item that can be added to a $(item)Firepit$() or $(item)Oven$() to cook foods more efficiently. The grill is able to cook five items at once, and also gives these items the $(thing)Wood Grilled$() trait when cooking food, which provides a minor buff to the item's $(l:cooking/decay)expiration date$(). In order to create a firepit with grill, first create a $(l:craftsmanship/firepit)Firepit$(), then use a $(thing)Wrought Iron Grill$() on the firepit."
         },
         {

@@ -7,7 +7,7 @@
 	"pages": [
 		{
 			"type": "patchouli:spotlight",
-			"title": "Tehlikeli Maddeler",
+			"title": "Hazardous Materials",
 			"item": "gtceu:cobaltite_dust",
 			"text": "Bazı $(thing)cevherler$(), $(thing)tozlar$() ve $(thing)kimyasallar$() tehlikelidir; envanterinizde taşındıklarında $(item)olumsuz etkilere$() yol açabilir, hatta sizi $(item)öldürebilir$(). Taşındıkları zaman ekranda bir $(item)Statü Etkisi$() ile gösterilirler.$(br2)$(thing)Maskeler$(), $(thing)eldivenler$() ve $(thing)tehlikeli madde giysisi$() gibi belirli ekipmanlar bu etkileri nötralize etmek için kullanılabilir."
 		},
@@ -30,7 +30,7 @@
 		},
 		{
 			"type": "patchouli:crafting",
-			"title": "Yüz Maskesi",
+			"title": "Face Mask",
 			"recipe": "gtceu:shaped/face_mask",
 			"text": "$(thing)Yüz Maskesi$(), Arsenikoz gibi her türlü $(item)Soluma$() tehlikesine karşı koruma sağlar.",
 			"anchor": "mask"
@@ -112,7 +112,7 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Kanserojenler",
+			"title": "Carcinogens",
 			"item": "gtceu:chromium_dust",
 			"anchor": "carcinogens",
 			"text": "The $(l:game_mechanics/hazards#mask)Face Mask$() protects from inhalation of harmful chemicals, while the $(l:game_mechanics/hazards#gloves)Gloves$() protect from contact with $(thing)Chromium Dust$().$(br)The $(l:game_mechanics/hazards#hazmat)Hazmat Suit$() protects from both.$(br)In case of severe exposure, it is advised to take some $(l:game_mechanics/hazards#medicine)Medicines$() to $(thing)Prevent$() any possible damage."
@@ -174,7 +174,7 @@
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Ek Okuma",
+			"title": "Further Reading",
 			"anchor": "relations",
 			"entries": [
 				"tfg:the_world/geology",

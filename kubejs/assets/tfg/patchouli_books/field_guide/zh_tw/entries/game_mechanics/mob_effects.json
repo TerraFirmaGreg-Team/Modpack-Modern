@@ -19,31 +19,31 @@
         {
             "type": "patchouli:text",
             "anchor": "warming",
-            "title": "暖",
+            "title": "Warming",
             "text": "While active this effect continually $(thing)Warms$() the player up to a maximum of $(n)25°C$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "quenched",
-            "title": "解渴",
+            "title": "Quenched",
             "text": "While active this effect prevents the natural decay of $(l:cooking/food_and_water#thirst)Thirst$(). However, it does not prevent the Thirsty effect from decreasing your meter.$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "cure_parasites",
-            "title": "驅蟲",
+            "title": "Cure Parasites",
             "text": "While active this effect gradually removes $(l:cooking/food_and_water#parasites)Parasite Contamination$() at a rate of about 1% every 10s at base level.$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "cure_toxins",
-            "title": "排毒",
+            "title": "Detoxify",
             "text": "While active this effect gradually removes $(l:cooking/food_and_water#toxins)Toxin Contamination$() at a rate of about 1% every 10s at base level.$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "cure_microplastics",
-            "title": "過濾微塑料",
+            "title": "Filter Microplastics",
             "text": "While active this effect gradually removes $(l:cooking/food_and_water#microplastics)Microplastic Contamination$() at a rate of about 1% every 10s at base level.$()"
         },
         {
@@ -61,7 +61,7 @@
         {
             "type": "patchouli:text",
             "anchor": "instant_radiation",
-            "title": "即時輻射",
+            "title": "Instant Radiation",
             "text": "This effect quickly damages the player with $(l:game_mechanics/hazards#radioactive_materials)Radiation Damage$()."
         },
         {

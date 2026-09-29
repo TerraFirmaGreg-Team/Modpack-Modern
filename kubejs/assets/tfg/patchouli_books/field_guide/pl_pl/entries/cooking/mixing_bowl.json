@@ -1,5 +1,5 @@
 {
-    "name": "Miska do mieszania",
+    "name": "Mixing Bowl",
     "category": "tfg:cooking",
     "icon": "firmalife:mixing_bowl",
     "pages": [
@@ -13,7 +13,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Czytaj dalej",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:cooking/decay",

@@ -7,7 +7,7 @@
             "type": "patchouli:text",
             "anchor": "intro",
             "text": "作物はすべて、栽培するために耕地へ植える必要があります。作物によっては、水に浸かっている必要があったり、支柱として棒が必要だったりと追加条件があります。$(br2)作物をただ育てるだけであれば$(thing)栄養素$()は必要ありません、しかし、栄養素があると成長が有利になります。栄養素には$(b)窒素$()、$(6)リン$()、$(d)カリウム$()の3種類があり、それぞれの作物ごとに適した栄養素があります。",
-            "title": "作物の成長"
+            "title": "Growing Crops"
         },
         {
             "type": "patchouli:text",
@@ -86,7 +86,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "さらに読む",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:the_world/wild_crops",

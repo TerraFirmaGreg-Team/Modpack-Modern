@@ -7,7 +7,7 @@
 	"pages": [
 		{
 			"type": "patchouli:spotlight",
-			"title": "Materiais Perigosos",
+			"title": "Hazardous Materials",
 			"item": "gtceu:cobaltite_dust",
 			"text": "Alguns $(thing)minérios$(), $(thing)pós$() e $(thing)produtos químicos$() são perigosos e podem causar $(item)efeitos negativos$() ou até mesmo $(item)matá-lo$() se forem carregados em seu inventário. Quando carregados, eles são mostrados na tela com um $(item)Efeito de Status$().$(br2)Certos equipamentos, como $(thing)máscaras$(), $(thing)luvas$() e $(thing)trajes de materiais perigosos$(), mais tarde, podem ser usados para neutralizar esses efeitos."
 		},
@@ -30,7 +30,7 @@
 		},
 		{
 			"type": "patchouli:crafting",
-			"title": "Máscara Facial",
+			"title": "Face Mask",
 			"recipe": "gtceu:shaped/face_mask",
 			"text": "A $(thing)Máscara Facial$() oferece proteção contra qualquer risco de $(item)Inalação$(), como Arsenicose.",
 			"anchor": "mask"
@@ -38,7 +38,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:rubber_gloves",
-			"title": "Luvas de Borracha",
+			"title": "Rubber Gloves",
 			"link_recipes": true,
 			"anchor": "gloves",
 			"text": "The $(thing)Rubber gloves$() can either be made from $(l:agriculture/leather_making)Leather$() and $(thing)Latex$(), or out of $(thing)Rubber Sheets$(). They provide protection from any $(item)Skin Contact$() hazards, such as $(thing)Beryllium Dust$()."

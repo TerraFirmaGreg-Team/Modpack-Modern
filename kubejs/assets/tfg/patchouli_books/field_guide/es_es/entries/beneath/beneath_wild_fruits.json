@@ -6,11 +6,11 @@
         {
             "type": "patchouli:text",
             "anchor": "index",
-            "title": "Índice",
+            "title": "Index",
             "text": "$(bold)$(li)$(l:beneath/beneath_wild_fruits#fruit_trees)Fruit Trees$()$(li2)$(l:beneath/beneath_wild_fruits#lavacado)Lavacado$()$(li2)$(l:beneath/beneath_wild_fruits#magmango)Magmango$()$(bold)$(li)$(l:beneath/beneath_wild_fruits#palm_fruit_trees)Palm Fruit Trees$()$(li2)$(l:beneath/beneath_wild_fruits#oil_palm)Oil Palm$()$(li2)$(l:beneath/beneath_wild_fruits#acai)Açaí$()"
         },
         {
-            "title": "Introducción",
+            "title": "Introduction",
             "anchor": "into",
             "type": "patchouli:text",
             "text": "The $(l:beneath)Beneath$() hosts its own unique selection of wild fruits, which have adapted to the extreme conditions underground. Wild fruits can be cultivated in all the same ways as regular $(l:the_world/wild_fruits)wild fruits$() in the Overworld."
@@ -35,7 +35,7 @@
                     "text": "Abr."
                 },
                 {
-                    "text": "Mayo"
+                    "text": "May"
                 },
                 {
                     "text": "Jun."
@@ -307,40 +307,40 @@
                     "text": ""
                 },
                 {
-                    "text": "Ene."
+                    "text": "Jan"
                 },
                 {
-                    "text": "Feb."
+                    "text": "Feb"
                 },
                 {
-                    "text": "Mar."
+                    "text": "Mar"
                 },
                 {
-                    "text": "Abr."
+                    "text": "Apr"
                 },
                 {
-                    "text": "Mayo"
+                    "text": "May"
                 },
                 {
-                    "text": "Jun."
+                    "text": "Jun"
                 },
                 {
-                    "text": "Jul."
+                    "text": "Jul"
                 },
                 {
-                    "text": "Ago."
+                    "text": "Aug"
                 },
                 {
-                    "text": "Sept."
+                    "text": "Sep"
                 },
                 {
-                    "text": "Oct."
+                    "text": "Oct"
                 },
                 {
-                    "text": "Nov."
+                    "text": "Nov"
                 },
                 {
-                    "text": "Dic."
+                    "text": "Dec"
                 },
                 {
                     "text": "Oil Palm"

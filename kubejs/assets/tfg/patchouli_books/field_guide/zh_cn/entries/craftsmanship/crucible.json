@@ -1,5 +1,5 @@
 {
-    "name": "坩埚",
+    "name": "Crucible",
     "category": "tfg:craftsmanship",
     "icon": "tfc:crucible",
     "pages": [
@@ -97,11 +97,11 @@
         {
             "type": "patchouli:text",
             "text": "$(li)Using a $(l:craftsmanship/charcoal_forge#bellows)Bellows$() on a $(thing)Mold Table$() will cool the metal faster.$()$(li)Activating a $(thing)Channel$() with a redstone pulse will also start pouring the metal.$()$(li)$(thing)Mold Tables$() output a comparator signal.$(li)Metal can be directly pumped in from things like fluid pipes or a draining $(l:craftsmanship/blast_furnace)Blast Furnace$().$(li)Hoppers can extract cooled metal items from molds while leaving the mold behind.",
-            "title": "自动化生产"
+            "title": "Automation"
         },
         {
             "type": "patchouli:relations",
-            "title": "延伸阅读",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:craftsmanship/pit_kiln",

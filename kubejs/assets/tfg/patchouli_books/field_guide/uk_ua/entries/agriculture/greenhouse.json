@@ -1,5 +1,5 @@
 {
-    "name": "Теплиця",
+    "name": "Greenhouse",
     "category": "tfg:agriculture",
     "icon": "firmalife:large_planter",
     "pages": [
@@ -10,7 +10,7 @@
         {
             "type": "patchouli:text",
             "anchor": "intro",
-            "title": "Теплиця",
+            "title": "Greenhouse",
             "text": "$(thing)Теплиця$() — це багатоблоковий пристрій, керований за допомогою $(item)кліматичної станції$(). Вона дає змогу вирощувати культури цілий рік. Теплиця має безліч типів і блоків на вибір. Однак побудувати теплицю досить просто. Як і $(l:cooking/decay#cellar)льох$(), вона має бути замкненим простором із блоків, що належать до одного $(thing)типу теплиці$(). Підлогою теплиці може бути будь-який блок, крім повітря."
         },
         {
@@ -109,7 +109,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Додаткове читання",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:the_world/wild_crops",

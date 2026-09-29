@@ -189,14 +189,14 @@
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Годівниця",
+            "title": "Feeding Troughs",
             "anchor": "feeding_trough",
             "item": "tfcgroomer:bismuth_bronze_grooming_station,tfcgroomer:black_bronze_grooming_station,tfcgroomer:bronze_grooming_station,tfcgroomer:copper_grooming_station,tfcgroomer:wrought_iron_grooming_station,tfcgroomer:steel_grooming_station,tfcgroomer:black_steel_grooming_station,tfcgroomer:red_steel_grooming_station,tfcgroomer:blue_steel_grooming_station",
             "text": "$(thing)Годівниці$() можуть автоматично годувати тварин у зоні, зазначеній у їхній підказці. Метали вищого рівня $(l:craftsmanship/metallurgy)металургії$() збільшують радіус годування.$(br)Щоб додати корм для тварин і, за бажанням, увімкнути автоматичне розведення, відкрий інтерфейс годівниці за допомогою $(item)$(k:key.use)$()."
         },
         {
             "type": "patchouli:relations",
-            "title": "Додаткове читання",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:agriculture/growing_crops",

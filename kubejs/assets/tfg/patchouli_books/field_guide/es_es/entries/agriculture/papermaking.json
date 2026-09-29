@@ -11,7 +11,7 @@
         {
             "type": "patchouli:text",
             "anchor": "intro",
-            "title": "Introducción",
+            "title": "Introduction",
             "text": "$(thing)Paper$() is either made from the processed stalk of the $(l:the_world/wild_crops#papyrus)Papyrus$() crop, from $(l:agriculture/papermaking#parchment)Animal Hides$(), or from a lengthy process using specific types of $(l:agriculture/papermaking#paper_from_wood)Wood$(). Paper is useful for many things―like $(item)Backpacks$() and $(item)Nametags$()―but most importantly it is required for progression into the $(thing)Electric Age$()!"
         },
         {
@@ -87,7 +87,7 @@
         {
             "type": "tfg:quern_recipe",
             "recipe": "tfg:quern/soaked_hardwood_strip",
-            "title": "Pulpa de Madera Dura",
+            "title": "Hardwood Pulp",
             "anchor": "hardwood_pulp",
             "text": "Afterward, utilize the $(l:craftsmanship/quern)Quern$() to break down the soaked strips into $(item)Hardwood Pulp$()."
         },

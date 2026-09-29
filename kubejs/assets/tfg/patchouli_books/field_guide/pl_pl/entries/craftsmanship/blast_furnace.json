@@ -1,5 +1,5 @@
 {
-    "name": "Piec hutniczy",
+    "name": "Blast Furnace",
     "category": "tfg:craftsmanship",
     "icon": "tfc:blast_furnace",
     "pages": [
@@ -373,7 +373,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Czytaj dalej",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:craftsmanship/pottery",

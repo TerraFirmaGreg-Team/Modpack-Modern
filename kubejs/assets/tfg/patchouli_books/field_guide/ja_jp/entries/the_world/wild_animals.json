@@ -5,7 +5,7 @@
 	"pages": [
         {
             "type": "patchouli:text",
-            "title": "インデックス",
+            "title": "Index",
             "anchor": "index",
             "text": "$(li)$(bold)$(l:the_world/wild_animals#intro)Introduction$()$(li)$(bold)$(l:the_world/wild_animals#livestock)Livestock$()$(li2)$(l:the_world/wild_animals#pig)Pig$()$(li2)$(l:the_world/wild_animals#cow)Cow$()$(li2)$(l:the_world/wild_animals#goat)Goat$()$(li2)$(l:the_world/wild_animals#yak)Yak$()$(li2)$(l:the_world/wild_animals#alpaca)Alpaca$()$(li2)$(l:the_world/wild_animals#sheep)Sheep$()$(li2)$(l:the_world/wild_animals#musk_ox)Musk Ox$()$(li2)$(l:the_world/wild_animals#chicken)Chicken$()$(li2)$(l:the_world/wild_animals#duck)Duck$()$(li2)$(l:the_world/wild_animals#quail)Quail$()"
         },
@@ -84,7 +84,7 @@
             "type": "patchouli:text",
             "anchor": "yak",
             "text": "$(bold)$(l:the_world/climate#temperature)Spawn Temp$():  > -11°C$(br)$(bold)$(l:the_world/climate#rainfall)Spawn Rainfall$():  > 100mm$(br)$(bold)Spawn Area$():  Cold Climates$(br)$(bold)Category$():  $(l:agriculture/animal_husbandry#dairy_animals)Dairy$()$(br)$(bold)Diet$():  $(l:cooking/food_and_water#grain)Grain$()$(br)$(bold)Max Children$():  1$(br)$(bold)Gestation Time$():  64 Days$(br)$(bold)Growth Time$():  180 Days$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Max Uses$():  230$(br)$(bold)Product$():  $(l:cooking/cheese)Milk$()$(br)$(bold)Produce Cycle$():  23.5 Hours",
-            "title": "ヤク"
+            "title": "Yak"
         },
         {
             "type": "patchouli:entity",
@@ -97,7 +97,7 @@
             "type": "patchouli:text",
             "anchor": "alpaca",
             "text": "$(bold)$(l:the_world/climate#temperature)Spawn Temp$():  -8 - 20°C$(br)$(bold)$(l:the_world/climate#rainfall)Spawn Rainfall$():  > 250mm$(br)$(bold)Spawn Area$():  Moderate Climates$(br)$(bold)Category$():  $(l:agriculture/animal_husbandry#wooly_animals)Wooly$()$(br)$(bold)Diet$():  $(l:cooking/food_and_water#grain)Grain$() and $(l:cooking/food_and_water#fruit)Fruit$()$(br)$(bold)Max Children$():  2$(br)$(bold)Gestation Time$():  36 Days$(br)$(bold)Growth Time$():  98 Days$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Max Uses$():  128$(br)$(bold)Product$():  $(l:agriculture/weaving)Wool$()$(br)$(bold)Produce Cycle$():  5 Days",
-            "title": "アルパカ"
+            "title": "Alpaca"
         },
         {
             "type": "patchouli:entity",
@@ -110,7 +110,7 @@
             "type": "patchouli:text",
             "anchor": "sheep",
             "text": "$(bold)$(l:the_world/climate#temperature)Spawn Temp$():  0 - 35°C$(br)$(bold)$(l:the_world/climate#rainfall)Spawn Rainfall$():  70 - 300mm$(br)$(bold)Spawn Area$():  Drier Climates$(br)$(bold)Category$():  $(l:agriculture/animal_husbandry#wooly_animals)Wooly$()$(br)$(bold)Diet$():  $(l:cooking/food_and_water#grain)Grain$()$(br)$(bold)Max Children$():  2$(br)$(bold)Gestation Time$():  32 Days$(br)$(bold)Growth Time$():  56 Days$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Max Uses$():  60$(br)$(bold)Product$():  $(l:agriculture/weaving)Wool$()$(br)$(bold)Produce Cycle$():  7 Days",
-            "title": "ヒツジ"
+            "title": "Sheep"
         },
         {
             "type": "patchouli:entity",
@@ -123,7 +123,7 @@
             "type": "patchouli:text",
             "anchor": "musk_ox",
             "text": "$(bold)$(l:the_world/climate#temperature)Spawn Temp$():  -25 - 0°C$(br)$(bold)$(l:the_world/climate#rainfall)Spawn Rainfall$():  > 100mm$(br)$(bold)Spawn Area$():  Cold Climates$(br)$(bold)Category$():  $(l:agriculture/animal_husbandry#wooly_animals)Wooly$()$(br)$(bold)Diet$():  $(l:cooking/food_and_water#grain)Grain$()$(br)$(bold)Max Children$():  1$(br)$(bold)Gestation Time$():  64 Days$(br)$(bold)Growth Time$():  168 Days$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Max Uses$():  160$(br)$(bold)Product$():  $(l:agriculture/weaving)Wool$()$(br)$(bold)Produce Cycle$():  4 Days",
-            "title": "ジャコウウシ"
+            "title": "Musk Ox"
         },
         {
             "type": "patchouli:entity",
@@ -162,7 +162,7 @@
             "type": "patchouli:text",
             "anchor": "quail",
             "text": "$(bold)$(l:the_world/climate#temperature)Spawn Temp$():  -15 - 15°C$(br)$(bold)$(l:the_world/climate#rainfall)Spawn Rainfall$():  > 200mm$(br)$(bold)Spawn Area$():  Cold Climates$(br)$(bold)Category$():  $(l:agriculture/animal_husbandry#oviparous_animals)Oviparous Animals$()$(br)$(bold)Diet$():  $(l:cooking/food_and_water#grain)Grain$(), $(l:cooking/food_and_water#fruit)Fruits$(), $(l:cooking/food_and_water#vegetables)Vegetables$(), and $(l:agriculture/growing_crops)Seeds$() which may be rotten.$(br)$(bold)Egg Cycle$():  28 Hours$(br)$(bold)Growth Time$():  22 Days$(br)$(bold)Hatch Time$():  8 Days$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Max Uses$():  48$(br)$(bold)Product$():  Eggs and feathers.$()",
-            "title": "ウズラ"
+            "title": "Quail"
         },
         {
             "type": "patchouli:entity",
@@ -214,7 +214,7 @@
             "type": "patchouli:text",
             "anchor": "dromedary_camel",
             "text": "$(bold)$(l:the_world/climate#temperature)Spawn Temp$():  > -5°C$(br)$(bold)$(l:the_world/climate#rainfall)Spawn Rainfall$():  < 100mm$(br)$(bold)Spawn Area$():  Hot and Dry Climates$(br)$(bold)Category$():  $(l:agriculture/animal_husbandry#camelides)Camel$()$(br)$(bold)Diet$():  $(l:cooking/food_and_water#grain)Grain$() and $(l:cooking/food_and_water#fruit)Fruits$()$(br)$(bold)Max Children$():  1$(br)$(bold)Gestation Time$():  19 Days$(br)$(bold)Growth Time$():  80 Days$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Max Uses$():  60",
-            "title": "ヒトコブラクダ"
+            "title": "Dromedary Camel"
         },
         {
             "type": "patchouli:entity",
@@ -227,7 +227,7 @@
             "type": "patchouli:text",
             "anchor": "bactrian_camel",
             "text": "$(bold)$(l:the_world/climate#temperature)Spawn Temp$():  > -5°C$(br)$(bold)$(l:the_world/climate#rainfall)Spawn Rainfall$():  < 100mm$(br)$(bold)Spawn Area$():  Cold and Dry Climates$(br)$(bold)Category$():  $(l:agriculture/animal_husbandry#camelides)Camel$() / $(l:agriculture/animal_husbandry#wooly_animals)Wooly$()$(br)$(bold)Diet$():  $(l:cooking/food_and_water#grain)Grain$() and $(l:cooking/food_and_water#fruit)Fruits$()$(br)$(bold)Max Children$():  1$(br)$(bold)Gestation Time$():  24 Days$(br)$(bold)Growth Time$():  80 Days$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Max Uses$():  80$(br)$(bold)Product$():  $(l:agriculture/weaving)Wool$()$(br)$(bold)Produce Cycle$():  7 Days",
-            "title": "フタコブラクダ"
+            "title": "Bactrian Camel"
         },
         {
             "type": "patchouli:entity",
@@ -246,7 +246,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:polar_bear",
             "scale": 0.55,
-            "name": "シロクマ",
+            "name": "Polar Bear",
             "anchor": "polar_bear",
             "text": "$(l:the_world/climate#temperature)気温$() 10°C以下、$(l:the_world/climate#rainfall)降水量$()100mm以上のとても寒い地域にのみ生息。"
         },
@@ -254,7 +254,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:grizzly_bear",
             "scale": 0.55,
-            "name": "ハイイログマ",
+            "name": "Grizzly Bear",
             "anchor": "grizzly_bear",
             "text": "$(l:the_world/climate#temperature)気温$() -15°C～15°C、$(l:the_world/climate#rainfall)降水量$()200mm以上の暖かい森林に生息。"
         },
@@ -262,7 +262,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:black_bear",
             "scale": 0.55,
-            "name": "アメリカグマ",
+            "name": "Black Bear",
             "anchor": "black_bear",
             "text": "$(l:the_world/climate#temperature)気温$() 5°C～20°C、$(l:the_world/climate#rainfall)降水量$()250mm以上の暖かく湿った森林に生息。"
         },
@@ -270,7 +270,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:cougar",
             "scale": 0.6,
-            "name": "ピューマ",
+            "name": "Cougar",
             "anchor": "cougar",
             "text": "$(l:the_world/climate#temperature)気温$() -10°C～21°C、$(l:the_world/climate#rainfall)降水量$()150mm以上の温暖な気候に生息。"
         },
@@ -278,7 +278,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:panther",
             "scale": 0.6,
-            "name": "ヒョウ",
+            "name": "Panther",
             "anchor": "panther",
             "text": "$(l:the_world/climate#temperature)気温$() -10°C～21°C、$(l:the_world/climate#rainfall)降水量$()150mm以上の温暖な気候に生息。"
         },
@@ -286,7 +286,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:lion",
             "scale": 0.55,
-            "name": "ライオン",
+            "name": "Lion",
             "anchor": "lion",
             "text": "平均$(l:the_world/climate#temperature)気温$() 16°C以上、$(l:the_world/climate#rainfall)降水量$()50～300mmの平原に生息。"
         },
@@ -294,7 +294,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:tiger",
             "scale": 0.55,
-            "name": "トラ",
+            "name": "Tiger",
             "anchor": "tiger",
             "text": "平均$(l:the_world/climate#temperature)気温$() 13°C以上、$(l:the_world/climate#rainfall)降水量$()100mm以上の森林に生息。"
         },
@@ -302,7 +302,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:sabertooth",
             "scale": 0.6,
-            "name": "サーベルタイガー",
+            "name": "Sabertooth",
             "anchor": "sabertooth",
             "text": "平均$(l:the_world/climate#temperature)気温$() 0°C以上、$(l:the_world/climate#rainfall)降水量$()250mm以上の環境に生息。"
         },
@@ -332,7 +332,7 @@
             "entity": "tfc:crocodile",
             "anchor": "crocodile",
             "scale": 0.7,
-            "name": "ワニ",
+            "name": "Crocodile",
             "text": "$(l:the_world/climate#rainfall)降水量$()に関係なく$(l:the_world/climate#temperature)平均気温$()15℃以上の川、湖、湿地に生息。夜行性で水中では特に危険。"
         },
         {
@@ -353,7 +353,7 @@
             "entity": "tfc:boar",
             "anchor": "boar",
             "scale": 0.7,
-            "name": "イノシシ",
+            "name": "Boar",
             "text": "$(l:the_world/climate#temperature)気温$() -5°C～25°C、$(l:the_world/climate#rainfall)降水量$()130～400mmの環境に生息。"
         },
         {
@@ -361,7 +361,7 @@
             "entity": "tfc:moose",
             "anchor": "moose",
             "scale": 0.7,
-            "name": "ヘラジカ",
+            "name": "Moose",
             "text": "$(l:the_world/climate#temperature)気温$() -15°C～10°C、$(l:the_world/climate#rainfall)降水量$()150～300mmの環境に生息。"
         },
         {
@@ -369,7 +369,7 @@
             "entity": "tfc:wildebeest",
             "anchor": "wildebeest",
             "scale": 0.7,
-            "name": "ヌー",
+            "name": "Wildebeest",
             "text": "平均$(l:the_world/climate#temperature)気温$() 13°C以上、$(l:the_world/climate#rainfall)降水量$()90～380mmの平原に生息。"
         },
         {
@@ -377,7 +377,7 @@
             "entity": "tfg:bison",
             "anchor": "bison",
             "scale": 0.7,
-            "name": "バイソン",
+            "name": "Bison",
             "text": "$(l:the_world/climate#temperature)気温$() -10°C～15°C、$(l:the_world/climate#rainfall)降水量$()160～420mmの環境に生息。"
         },
         {
@@ -390,7 +390,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:rabbit",
             "scale": 0.7,
-            "name": "ウサギ",
+            "name": "Rabbit",
             "anchor": "rabbit",
             "text": "$(l:the_world/climate#rainfall)降水量$()15mm以上の場所に広く生息。ニンジンとキャベツを好み、気候によって毛皮が違っています。"
         },
@@ -398,7 +398,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:fox",
             "scale": 0.7,
-            "name": "キツネ",
+            "name": "Fox",
             "anchor": "fox",
             "text": "平均$(l:the_world/climate#temperature)気温$() 25°C以上、$(l:the_world/climate#rainfall)降水量$()130～400mmの森林に生息。茂みのベリーを好んで食べます。"
         },
@@ -413,7 +413,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:caribou",
             "scale": 0.6,
-            "name": "トナカイ",
+            "name": "Caribou",
             "anchor": "caribou",
             "text": "平均$(l:the_world/climate#temperature)気温$() -9°C以下、$(l:the_world/climate#rainfall)降水量$()110～500mmの環境に生息。"
         },
@@ -428,7 +428,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:bongo",
             "scale": 0.9,
-            "name": "ボンゴ",
+            "name": "Bongo",
             "anchor": "bongo",
             "text": "平均$(l:the_world/climate#temperature)気温$() 15°C以上、$(l:the_world/climate#rainfall)降水量$()230～500mmの森林に生息。"
         },
@@ -457,7 +457,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:peafowl",
             "scale": 0.6,
-            "name": "クジャク",
+            "name": "Peafowl",
             "anchor": "peafowl",
             "text": "平均$(l:the_world/climate#temperature)気温$() 14°C以上、$(l:the_world/climate#rainfall)降水量$()190～500mmの森林に生息。"
         },
@@ -466,7 +466,7 @@
             "entity": "tfg:lemming",
             "scale": 1.5,
             "offset": -0.2,
-            "name": "レミング",
+            "name": "Lemming",
             "anchor": "lemming",
             "text": "$(l:the_world/climate#temperature)気温$() -3°C～-12°C、$(l:the_world/climate#rainfall)降水量$()160～500mmの環境に生息。"
         },
@@ -474,7 +474,7 @@
             "type": "patchouli:entity",
             "entity": "tfg:jerboa",
             "scale": 1.2,
-            "name": "トビネズミ",
+            "name": "Jerboa",
             "anchor": "jerboa",
             "text": "$(l:the_world/climate#temperature)気温$() -3°C～25°C、$(l:the_world/climate#rainfall)降水量$()160mm以下の環境に生息。"
         },
@@ -482,7 +482,7 @@
             "type": "patchouli:entity",
             "entity": "tfg:mongoose",
             "scale": 0.8,
-            "name": "マングース",
+            "name": "Mongoose",
             "anchor": "mongoose",
             "text": "平均$(l:the_world/climate#temperature)気温$() -9°C以上、$(l:the_world/climate#rainfall)降水量$()160～500mmの環境に生息。"
         },
@@ -516,13 +516,13 @@
             "type": "patchouli:text",
             "anchor": "fish",
             "text": "$(thing)Fish$() are small creatures that swim in water. Most of them can be $(l:agriculture/fishing)fished$(). Some prefer oceans, rivers, or lakes.",
-            "title": "魚"
+            "title": "Fish"
         },
         {
             "type": "patchouli:entity",
             "entity": "tfc:cod",
             "scale": 0.7,
-            "name": "タラ",
+            "name": "Cod",
             "anchor": "cod",
             "text": "$(l:the_world/climate#temperature)気温$()18℃以下の冷たい海に生息。"
         },
@@ -530,7 +530,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:pufferfish",
             "scale": 0.7,
-            "name": "フグ",
+            "name": "Pufferfish",
             "anchor": "pufferfish",
             "text": "$(l:the_world/climate#temperature)気温$()10℃以上の海に生息。"
         },
@@ -538,7 +538,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:jellyfish",
             "scale": 0.7,
-            "name": "クラゲ",
+            "name": "Jellyfish",
             "anchor": "jellyfish",
             "text": "$(l:the_world/climate#temperature)気温$()18℃以上の温かい海に生息。"
         },
@@ -546,7 +546,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:tropical_fish",
             "scale": 0.7,
-            "name": "熱帯魚",
+            "name": "Tropical Fish",
             "anchor": "tropical_fish",
             "text": "$(l:the_world/climate#temperature)気温$()18℃以上の温かい海に生息。"
         },
@@ -554,7 +554,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:salmon",
             "scale": 0.7,
-            "name": "サケ",
+            "name": "Salmon",
             "anchor": "salmon",
             "text": "$(l:the_world/climate#temperature)気温$()-5℃以上の川や湖に生息。"
         },
@@ -562,7 +562,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:bluegill",
             "scale": 0.7,
-            "name": "ブルーギル",
+            "name": "Bluegill",
             "anchor": "bluegill",
             "text": "$(l:the_world/climate#temperature)気温$()-10～26℃の川や湖に生息。"
         },
@@ -576,7 +576,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:isopod",
             "scale": 0.7,
-            "name": "ダイオウグソクムシ",
+            "name": "Isopod",
             "anchor": "isopod",
             "text": "$(l:the_world/climate#temperature)気温$()14℃以下の深い海域に生息。"
         },
@@ -584,7 +584,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:lobster",
             "scale": 0.7,
-            "name": "ロブスター",
+            "name": "Lobster",
             "anchor": "lobster",
             "text": "$(l:the_world/climate#temperature)気温$()21℃以上の海に生息。"
         },
@@ -592,7 +592,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:crayfish",
             "scale": 0.7,
-            "name": "ザリガニ",
+            "name": "Crayfish",
             "anchor": "crayfish",
             "text": "$(l:the_world/climate#temperature)気温$() 5°C以上、$(l:the_world/climate#rainfall)降水量$()125mm以上の川や湖\n生息。...ロブスターに似ていますね。"
         },
@@ -600,7 +600,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:horseshoe_crab",
             "scale": 0.7,
-            "name": "カブトガニ",
+            "name": "Horseshoe Crab",
             "anchor": "horseshoe_crab",
             "text": "$(l:the_world/climate#temperature)気温$() 10～21℃、$(l:the_world/climate#rainfall)降水量$()400mm以下の温かい海に生息。"
         },
@@ -614,7 +614,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:orca",
             "scale": 0.25,
-            "name": "シャチ",
+            "name": "Orca",
             "anchor": "orca",
             "text": "$(l:the_world/climate#temperature)気温$() 19°C以下、$(l:the_world/climate#rainfall)降水量$()100mm以上の深い海に生息。"
         },
@@ -622,7 +622,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:dolphin",
             "scale": 0.4,
-            "name": "イルカ",
+            "name": "Dolphin",
             "anchor": "dolphin",
             "text": "$(l:the_world/climate#temperature)気温$() 10°C以上、$(l:the_world/climate#rainfall)降水量$()200mm以上の深い海に生息。"
         },
@@ -630,7 +630,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:manatee",
             "scale": 0.25,
-            "name": "マナティー",
+            "name": "Manatee",
             "anchor": "manatee",
             "text": "$(l:the_world/climate#temperature)気温$() 20°C以上、$(l:the_world/climate#rainfall)降水量$()300mm以下の温かい海に生息。"
         },
@@ -638,7 +638,7 @@
             "type": "patchouli:entity",
             "entity": "tfg:leopard_seal",
             "scale": 0.5,
-            "name": "アザラシ",
+            "name": "Leopard Seal",
             "anchor": "leopard_seal",
             "text": "$(l:the_world/climate#temperature)気温$() -9°C以下、$(l:the_world/climate#rainfall)降水量$()105mm以上のとても寒い海岸に生息。ペンギンを狩り、シャチに狩られます。"
         },
@@ -646,11 +646,11 @@
             "type": "patchouli:text",
             "anchor": "squid",
             "text": "イカは深い海であればどこでも出現します。$(thing)イカスミ$()を落とし、近づくとプレイヤーに墨を吐きかけてきます。また、洞窟の深層部に生息するイカには奇妙な性質があるとも言われています。",
-            "title": "イカ"
+            "title": "Squid"
         },
         {
             "type": "patchouli:relations",
-            "title": "さらに読む",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:the_world/wild_crops",

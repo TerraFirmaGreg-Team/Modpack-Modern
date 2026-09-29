@@ -61,7 +61,7 @@
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Baromètre",
+            "title": "Barometer",
             "item": "firmaciv:barometer",
             "text": "Once you craft your Barometer, you can hold it and press $(item)$(k:key.use)$() to determine your Altitude. Remember that your Altitude is measured in distance from the Sea Level datum."
         },
@@ -72,7 +72,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Pour aller plus loin",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:craftsmanship/metallurgy",

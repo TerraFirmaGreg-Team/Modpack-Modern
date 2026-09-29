@@ -14,7 +14,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"title": "Contenu",
+			"title": "Contents",
 			"text": "$(li)$(l:mars/mars_crops#amber_root)Amber Root$()$(li)$(l:mars/mars_crops#blossom_berry)Blossom Berry$()$(li)$(l:mars/mars_crops#bolux_mushroom)Bolux Mushroom$()$(li)$(l:mars/mars_crops#bulbkin)Bulbkin$()$(li)$(l:mars/mars_crops#chalmie_mushroom)Chalmie Mushroom$()$(li)$(l:mars/mars_crops#nox_berry)Nox Berry$()"
 		},
 		{
@@ -532,7 +532,7 @@
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Pour aller plus loin",
+			"title": "Further Reading",
 			"anchor": "relations",
 			"entries": [
 				"tfg:mars/mars",

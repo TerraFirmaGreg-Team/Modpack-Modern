@@ -109,7 +109,7 @@
         {
             "type": "patchouli:text",
             "anchor": "alloying",
-            "title": "Aleación",
+            "title": "Alloying",
             "text": "$(thing)Alloys$() are a method of mixing two or more metals together, to create a new, stronger metal. During the early game, while copper is a useful metal for creating tools, the next tier of metal is one of three types of $(thing)Bronze$(). They are each slightly different in regard to durability, efficiency, and attack damage. An alloy is made up of component $(thing)metals$() which must each satisfy a specific percentage of the overall whole."
         },
         {

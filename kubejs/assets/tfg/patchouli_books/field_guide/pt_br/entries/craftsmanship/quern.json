@@ -1,5 +1,5 @@
 {
-    "name": "Moenda",
+    "name": "Quern",
     "category": "tfg:craftsmanship",
     "icon": "tfc:quern",
     "pages": [
@@ -53,7 +53,7 @@
             "type": "tfg:quern_recipe",
             "recipe": "tfg:quern/copper_crushed_ore_from_normal_raw_ore",
             "text": "$(l:game_mechanics/mining#processing)Ores$() can be crushed to obtain more metal.",
-            "title": "Minério Triturado"
+            "title": "Crushed Ore"
         },
         {
             "type": "tfg:quern_recipe",
@@ -65,7 +65,7 @@
             "type": "tfg:quern_recipe",
             "recipe": "tfc:quern/red_dye",
             "text": "$(thing)Dye$() can be obtained from various flowers.",
-            "title": "Corantes"
+            "title": "Dyes"
         },
         {
             "type": "tfg:quern_recipe",

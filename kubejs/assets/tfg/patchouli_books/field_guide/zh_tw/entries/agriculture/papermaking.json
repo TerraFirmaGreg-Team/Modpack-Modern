@@ -11,7 +11,7 @@
         {
             "type": "patchouli:text",
             "anchor": "intro",
-            "title": "第一天",
+            "title": "Introduction",
             "text": "$(thing)Paper$() is either made from the processed stalk of the $(l:the_world/wild_crops#papyrus)Papyrus$() crop, from $(l:agriculture/papermaking#parchment)Animal Hides$(), or from a lengthy process using specific types of $(l:agriculture/papermaking#paper_from_wood)Wood$(). Paper is useful for many things―like $(item)Backpacks$() and $(item)Nametags$()―but most importantly it is required for progression into the $(thing)Electric Age$()!"
         },
         {
@@ -24,14 +24,14 @@
         {
             "type": "tfg:sealed_barrel_recipe",
             "anchor": "soaked_papyrus_strip",
-            "title": "浸過的紙莎草條",
+            "title": "Soaked Papyrus Strip",
             "recipe": "tfc:barrel/soaked_papyrus_strip",
             "text": "Then, papyrus strips are soaked in a $(l:craftsmanship/barrels)Barrel$() of $(thing)Water$()."
         },
         {
             "type": "tfg:loom_recipe",
             "anchor": "unrefined_paper",
-            "title": "粗紙",
+            "title": "Unrefined Paper",
             "recipe": "tfc:loom/unrefined_paper",
             "text": "Then, soaked papyrus strips are woven together in a $(l:agriculture/weaving#loom)Loom$() to make $(thing)Unrefined Paper$(). Finally, it must be placed on a log and $(l:agriculture/leather_making#scraping)Scraped$() to make $(thing)Paper$()."
         },
@@ -44,7 +44,7 @@
         {
             "type": "patchouli:crafting",
             "anchor": "treated_hide",
-            "title": "糊化獸皮",
+            "title": "Treated Hide",
             "recipe": "tfc:crafting/large_treated_hide",
             "text": "將浮石、鍛造錘與刮製獸皮合成，就能得到$(thing)預製獸皮$()。\n"
         },
@@ -72,14 +72,14 @@
         },
         {
             "type": "patchouli:crafting",
-            "title": "剝皮硬木",
+            "title": "Hardwood Strip",
             "anchor": "hardwood_strip",
             "recipe": "tfg:crafting/strip_hardwood",
             "text": "Next, the stripped wood is shaven with an axe to obtain $(item)Hardwood Strips$(). This can be done using an Axe or more sophisticated methods later."
         },
         {
             "type": "tfg:sealed_barrel_recipe",
-            "title": "泡製硬木板",
+            "title": "Soaked Hardwood Strip",
             "anchor": "soaked_hardwood_strip",
             "recipe": "tfg:barrel/soak_hardwood_strip",
             "text": "Then, the individual strips are soaked in a $(l:craftsmanship/barrels)Barrel$() of $(thing)Water$(). This $(thing)debilitates the structural integrity$() of the $(thing)wood$() so it can be $(thing)broken down further$()."
@@ -87,7 +87,7 @@
         {
             "type": "tfg:quern_recipe",
             "recipe": "tfg:quern/soaked_hardwood_strip",
-            "title": "硬木木漿",
+            "title": "Hardwood Pulp",
             "anchor": "hardwood_pulp",
             "text": "Afterward, utilize the $(l:craftsmanship/quern)Quern$() to break down the soaked strips into $(item)Hardwood Pulp$()."
         },

@@ -28,7 +28,7 @@
 			"type": "patchouli:entity",
 			"entity": "tfc:frog",
 			"scale": 1,
-			"name": "Béka",
+			"name": "Frog",
 			"anchor": "frog",
 			"text": "$(thing)Frogs$() can be found in the top and middle layers. They can be tamed and eaten."
 		},
@@ -44,7 +44,7 @@
 			"type": "patchouli:entity",
 			"entity": "beneath:red_elk",
 			"scale": 0.7,
-			"name": "Vörös jávorszarvas",
+			"name": "Red Elk",
 			"anchor": "red_elk",
 			"text": "$(thing)Red Elk$() are found near the bottom, usually swimming around in lava. They can be slain for $(item)Lavaproof Hides$()."
 		},
@@ -124,7 +124,7 @@
 			"type": "patchouli:entity",
 			"entity": "tfc:crocodile",
 			"scale": 0.5,
-			"name": "Krokodil",
+			"name": "Crocodile",
 			"anchor": "crocodile",
 			"text": "$(thing)Crocodiles$() can be found in the top and middle layers, waiting in ambush!"
 		},

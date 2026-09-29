@@ -5,7 +5,7 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "title": "索引",
+            "title": "Index",
             "anchor": "index",
             "text": "$(li)$(bold)$(l:agriculture/composting#compostables)Compostables$()$(li2)$(l:agriculture/composting#green_compost)Green Compost$()$(li2)$(l:agriculture/composting#brown_compost)Brown Compost$()$(li2)$(l:agriculture/composting#compost_poisons)Rotten Compost$()$(li)$(bold)$(l:agriculture/composting#compost_tumbler)Compost Tumbler$()"
         },
@@ -111,7 +111,7 @@
                 }
             },
             "anchor": "rotten_compost",
-            "name": "腐爛的堆肥",
+            "name": "Rotten Compost",
             "text": "汙染的堆肥桶。",
             "enable_visualize": false
         },

@@ -21,7 +21,7 @@
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Esche",
+            "title": "Ash",
             "anchor": "ash",
             "item": "tag:tfc:ash_logs",
             "text": "$(bold)White Ash$()$(br)$(thing)Rainfall$(): 60 — 240mm$(br)$(thing)Temperature$(): -13.9 — 0.7°C$(br)$(thing)Growth Days$(): 6"
@@ -63,7 +63,7 @@
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Edelkastanie",
+            "title": "Chestnut",
             "anchor": "chestnut",
             "item": "tag:tfc:chestnut_logs",
             "text": "$(bold)Chestnut$()$(br)$(thing)Rainfall$(): 150 — 300mm$(br)$(thing)Temperature$(): -6.6 — 11.6°C$(br)$(thing)Growth Days$(): 6"

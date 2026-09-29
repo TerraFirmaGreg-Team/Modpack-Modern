@@ -6,7 +6,7 @@
         {
             "type": "patchouli:text",
             "anchor": "index",
-            "title": "Tout",
+            "title": "Index",
             "text": "$(bold)$(li)$(l:beneath/beneath_wild_fruits#fruit_trees)Fruit Trees$()$(li2)$(l:beneath/beneath_wild_fruits#lavacado)Lavacado$()$(li2)$(l:beneath/beneath_wild_fruits#magmango)Magmango$()$(bold)$(li)$(l:beneath/beneath_wild_fruits#palm_fruit_trees)Palm Fruit Trees$()$(li2)$(l:beneath/beneath_wild_fruits#oil_palm)Oil Palm$()$(li2)$(l:beneath/beneath_wild_fruits#acai)Açaí$()"
         },
         {
@@ -35,7 +35,7 @@
                     "text": "Avr"
                 },
                 {
-                    "text": "Mai"
+                    "text": "May"
                 },
                 {
                     "text": "Jun"
@@ -59,7 +59,7 @@
                     "text": "Déc"
                 },
                 {
-                    "text": "Lavocat"
+                    "text": "Lavacado"
                 },
                 {
                     "fill": "0x6ab553"
@@ -98,7 +98,7 @@
                     "fill": "0x6ab553"
                 },
                 {
-                    "text": "Magmangue"
+                    "text": "Magmango"
                 },
                 {
                     "fill": "0x6ab553"
@@ -173,7 +173,7 @@
             "type": "patchouli:text",
             "anchor": "lavacado",
             "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 8 - 80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 20 - 100 %$(br2)Lavacado trees grow in the months of December through April, start flowering in May and June, and bear fruit in July.",
-            "title": "Lavocat"
+            "title": "Lavacado"
         },
         {
             "type": "tfg:multimultiblock",
@@ -238,7 +238,7 @@
             "type": "patchouli:text",
             "anchor": "magmango",
             "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 8 - 80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 30 - 100 %$(br2)Magmango trees grow in the months of October through February, start flowering in March and April, and bear fruit in May.",
-            "title": "Magmangue"
+            "title": "Magmango"
         },
         {
             "type": "tfg:multimultiblock",
@@ -310,16 +310,16 @@
                     "text": "Jan"
                 },
                 {
-                    "text": "Fev"
+                    "text": "Feb"
                 },
                 {
                     "text": "Mar"
                 },
                 {
-                    "text": "Avr"
+                    "text": "Apr"
                 },
                 {
-                    "text": "Mai"
+                    "text": "May"
                 },
                 {
                     "text": "Jun"
@@ -328,7 +328,7 @@
                     "text": "Jul"
                 },
                 {
-                    "text": "Aou"
+                    "text": "Aug"
                 },
                 {
                     "text": "Sep"
@@ -340,7 +340,7 @@
                     "text": "Nov"
                 },
                 {
-                    "text": "Déc"
+                    "text": "Dec"
                 },
                 {
                     "text": "Oil Palm"
@@ -429,7 +429,7 @@
                     "color": "0xa8986a"
                 },
                 {
-                    "text": "Fructifiant",
+                    "text": "Fruiting",
                     "color": "0xa217ff"
                 }
             ],
@@ -1827,7 +1827,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Pour aller plus loin",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:the_world/climate",

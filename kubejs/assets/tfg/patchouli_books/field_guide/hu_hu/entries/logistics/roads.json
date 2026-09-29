@@ -243,7 +243,7 @@
             "type": "patchouli:spotlight",
             "item": "tag:rnr:concrete_roads",
             "anchor": "concrete",
-            "title": "Beton",
+            "title": "Concrete",
             "text": "Concrete roads offer a $(thing)$(bold)30% Movement Speed Bonus$() when properly constructed. However, road builders must be diligent when constructing concrete roads to prevent them from $(4)cracking$() or being $(4)trodden$() on while wet, as this will remove the speed bonus."
         },
         {

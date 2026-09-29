@@ -47,7 +47,6 @@
 	"block.minecraft.iron_block": "鋳鉄ブロック",
 	"block.minecraft.large_fern": "クサソテツ",
 	"block.minecraft.light_blue_wool": "空色の布ブロック",
-	"block.minecraft.light_gray_wool": "薄灰色の布ブロック",
 	"block.minecraft.light_grey_wool": "薄灰色の布ブロック",
 	"block.minecraft.lime_wool": "黄緑色の布ブロック",
 	"block.minecraft.loom": "旗の加工台",
@@ -151,6 +150,5 @@
 	"item.minecraft.smithing_template.armor_trim.additions_slot_description": "プレートまたは精巧な宝石を追加",
 	"item.minecraft.string": "絹糸",
 	"material.tfg.dripstone": "鍾乳石",
-	"tag.item.minecraft.wool": "布ブロック",
-	"tag.item.minecraft.wool_carpets": "カーペット"
+	"tag.item.minecraft.wool": "布ブロック"
 }

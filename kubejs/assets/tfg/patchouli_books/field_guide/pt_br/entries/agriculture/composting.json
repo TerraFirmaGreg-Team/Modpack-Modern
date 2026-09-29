@@ -1,5 +1,5 @@
 {
-    "name": "Compostagem",
+    "name": "Composting",
     "category": "tfg:agriculture",
     "icon": "tfc:composter",
     "pages": [
@@ -111,7 +111,7 @@
                 }
             },
             "anchor": "rotten_compost",
-            "name": "Composto Podre",
+            "name": "Rotten Compost",
             "text": "A rotten composter.",
             "enable_visualize": false
         },

@@ -1,5 +1,5 @@
 {
-	"name": "鉄道",
+	"name": "Trains",
 	"category": "tfg:logistics",
 	"icon": "minecraft:rail",
 	"read_by_default": true,
@@ -208,7 +208,7 @@
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "さらに読む",
+			"title": "Further Reading",
 			"anchor": "relations",
 			"entries": [
 				"tfg:logistics/tack",

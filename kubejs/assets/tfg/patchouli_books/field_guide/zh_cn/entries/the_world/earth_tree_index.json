@@ -21,7 +21,7 @@
         },
         {
             "type": "patchouli:spotlight",
-            "title": "灰烬",
+            "title": "Ash",
             "anchor": "ash",
             "item": "tag:tfc:ash_logs",
             "text": "$(bold)White Ash$()$(br)$(thing)Rainfall$(): 60 — 240mm$(br)$(thing)Temperature$(): -13.9 — 0.7°C$(br)$(thing)Growth Days$(): 6"
@@ -63,7 +63,7 @@
         },
         {
             "type": "patchouli:spotlight",
-            "title": "栗树",
+            "title": "Chestnut",
             "anchor": "chestnut",
             "item": "tag:tfc:chestnut_logs",
             "text": "$(bold)Chestnut$()$(br)$(thing)Rainfall$(): 150 — 300mm$(br)$(thing)Temperature$(): -6.6 — 11.6°C$(br)$(thing)Growth Days$(): 6"
@@ -144,7 +144,7 @@
         },
         {
             "type": "patchouli:spotlight",
-            "title": "红树林",
+            "title": "Mangrove",
             "anchor": "mangrove",
             "item": "tag:tfc:mangrove_logs",
             "text": "$(bold)Mangrove$()$(br)$(thing)Rainfall$(): 220mm+$(br)$(thing)Temperature$(): 18.0°C+$(br)$(thing)Growth Days$(): 7$(br)Note: only spawns in Salt Marsh biomes. Can also be found in $(l:beneath/beneath_tree_index#mangrove)the Beneath$()."
@@ -236,7 +236,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "延伸阅读",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
 				"tfg:the_world/wild_fruits",

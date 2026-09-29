@@ -1,12 +1,12 @@
 {
-    "name": "Човни",
+    "name": "Boats",
     "category": "tfg:logistics",
     "icon": "firmaciv:textures/item/rowboat_icon_only.png",
     "pages": [
         {
             "type": "patchouli:text",
             "text": "$(li)$(bold)$(l:logistics/boats#intro)Інформація про плавання$()$(li2)$(l:logistics/boats#customization)Налаштування$()$(li2)$(l:logistics/boats#boat_items)Човни як предмети$()$(li2)$(l:logistics/boats#animals)Перевезення тварин$()$(li2)$(l:logistics/boats#paddles)Весла$()$(li2)$(l:logistics/boats#cleats)Швартова качка та повідці$()$(li2)$(l:logistics/boats#anchors)Якір та брашпиль$()$(li2)$(l:logistics/boats#sails)Вітрила$()$(li2)$(l:logistics/boats#sailing)Плавання під вітрилом$()$(li2)$(l:logistics/boats#painting)Фарбування та барвлення$()$(li2)$(l:logistics/boats#damage)Пошкодження та ремонт$()",
-            "title": "Індекс",
+            "title": "Index",
             "anchor": "index"
         },
         {
@@ -16,7 +16,7 @@
         {
             "type": "patchouli:text",
             "anchor": "intro",
-            "title": "Вступ",
+            "title": "Introduction",
             "text": "Створення та використання човна може виявитися трохи складнішим, ніж ти звик, але ніщо не зрівняється з побудовою ідеального судна та відправленням у відкрите море. Уважно прочитай цей посібник і дізнайся всі тонкощі витесування, створення, будівництва, веслування, керування, пілотування та налаштування на свій смак."
         },
         {
@@ -157,17 +157,17 @@
             "type": "patchouli:text",
             "anchor": "watercraft",
             "text": "Протягом проходження тобі доступні різноманітні плавзасоби. Тип човна, який ти обереш, залежить від твоїх потреб і доступних матеріалів.$(li)$(bold)$(l:logistics/boats#kayak)Каяк$(): портативний і швидкий. Найкраще підходить для одиночного використання.$(li)$(bold)$(l:logistics/boats#canoe)Довбанка$(): дешевий, виготовляється з м’якої деревини та вміщує двох людей.$(li)$(bold)$(l:logistics/boats#rowboat)Човен$(): середнього розміру, дає змогу перевозити значний вантаж.$(li)$(bold)$(l:logistics/boats#sloop)Шлюп$(): велике морехідне судно. Найсучасніший із доступних плавзасобів.",
-            "title": "Водний транспорт"
+            "title": "Watercraft"
         },
         {
             "type": "patchouli:text",
             "anchor": "kayak",
             "text": "Твій найкращий друг для одиночних наземних пригод. Звісно, те, що це єдиний човен, який можна переносити як предмет, також є великою перевагою. Це найшвидший човен для одиночного гравця, до того ж він дуже маневрений!$(br)Щоб гребти на каяку, тримай $(item)весло для каяка$() в основній або другій руці. Щоб перенести каяк, просто зламай його.",
-            "title": "Байдарка"
+            "title": "Kayak"
         },
         {
             "type": "patchouli:image",
-            "title": "Байдарка",
+            "title": "Kayak",
             "images": [
                 "firmaciv:textures/gui/book/kayak_isometric.png"
             ],
@@ -403,7 +403,7 @@
         },
         {
             "type": "patchouli:crafting",
-            "title": "Риштування",
+            "title": "Scaffolding",
             "recipe": "firmaciv:crafting/watercraft_frame_flat",
             "text": "Як і у випадку з човном, почни з корабельних риштувань.$(br)Після цього заповни риштування дошками з $(n)твердої деревини$(). Шукай \"$(6)#hardwood$()\" у $(emi), щоб переглянути всі придатні типи колод."
         },
@@ -485,8 +485,8 @@
                     "a": "firmaciv:wood/watercraft_frame/flat/oak[frame_processed=3]"
                 }
             },
-            "name": "Риштування шлюпа",
-            "text": "До кожного риштування додано по чотири блоки дощок із $(6)$(t:#tfg:hardwood)твердої деревини$().",
+            "name": "Sloop Scaffolding",
+            "text": "Four $(6)$(t:#tfg:hardwood)hardwood$() plank blocks have been added to each scaffold.",
             "enable_visualize": true
         },
         {
@@ -526,8 +526,8 @@
                     "a": "firmaciv:wood/watercraft_frame/flat/oak[frame_processed=7]"
                 }
             },
-            "name": "Риштування шлюпа",
-            "text": "Тримаючи молот у другій руці, додай до кожного риштування чотири $(item)мідні болти$().",
+            "name": "Sloop Scaffolding",
+            "text": "Using a hammer in your offhand, add four $(item)Copper Bolts$() to each scaffold.",
             "enable_visualize": true
         },
         {
@@ -569,7 +569,7 @@
                     "R": "alekiships:cleat[facing=south]"
                 }
             },
-            "name": "Риштування шлюпа",
+            "name": "Sloop Scaffolding",
             "text": "Насамкінець додай $(item)швартові качки$() до корпусу.",
             "enable_visualize": true
         },
@@ -596,7 +596,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Додаткове читання",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:craftsmanship/metallurgy",

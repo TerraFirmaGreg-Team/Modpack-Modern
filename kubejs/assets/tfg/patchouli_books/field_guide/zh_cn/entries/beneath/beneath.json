@@ -51,13 +51,13 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "biomes",
-			"title": "生物群系",
+			"title": "Biomes",
 			"text": "The Beneath has a full set of new biomes to explore!$(br2)The Beneath can be split into three vertical layers, each with their own set of biomes. Each one is more hot and dangerous as you descend!"
 		},
 		{
 			"type": "patchouli:image",
 			"anchor": "biomes_top",
-			"title": "盐窟",
+			"title": "Salt Caves",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/salt_caves.png"
 			],
@@ -66,7 +66,7 @@
 		},
 		{
 			"type": "patchouli:image",
-			"title": "闷热泥沼",
+			"title": "Muggy Bog",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/muggy_bog.png"
 			],
@@ -75,7 +75,7 @@
 		},
 		{
 			"type": "patchouli:image",
-			"title": "腐朽洞窟",
+			"title": "Decaying Caverns",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/decaying_caverns.png"
 			],
@@ -84,7 +84,7 @@
 		},
 		{
 			"type": "patchouli:image",
-			"title": "蛛网巢穴",
+			"title": "Webbed Lair",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/webbed_lair.png"
 			],
@@ -94,7 +94,7 @@
 		{
 			"type": "patchouli:image",
 			"anchor": "biomes_middle",
-			"title": "焦油池",
+			"title": "Tar Pools",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/tar_pools.png"
 			],
@@ -103,7 +103,7 @@
 		},
 		{
 			"type": "patchouli:image",
-			"title": "地热泉",
+			"title": "Geothermal Springs",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/geothermal_springs.png"
 			],
@@ -112,7 +112,7 @@
 		},
 		{
 			"type": "patchouli:image",
-			"title": "荆棘林地",
+			"title": "Thorny Grove",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/thorny_brambles.png"
 			],
@@ -121,7 +121,7 @@
 		},
 		{
 			"type": "patchouli:image",
-			"title": "繁茂空谷",
+			"title": "Lush Hollow",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/lush_hollow.png"
 			],
@@ -131,7 +131,7 @@
 		{
 			"type": "patchouli:image",
 			"anchor": "biomes_bottom",
-			"title": "灰烬森林",
+			"title": "Ash Forest",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/ash_forest.png"
 			],
@@ -140,7 +140,7 @@
 		},
 		{
 			"type": "patchouli:image",
-			"title": "熔岩浮岛",
+			"title": "Lava Floes",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/lava_floes.png"
 			],
@@ -149,7 +149,7 @@
 		},
 		{
 			"type": "patchouli:image",
-			"title": "玄武岩三角洲",
+			"title": "Basalt Deltas",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/basalt_deltas.png"
 			],
@@ -183,7 +183,7 @@
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "延伸阅读",
+			"title": "Further Reading",
 			"anchor": "relations",
 			"entries": [
 				"tfg:beneath/beneath_mechanics",

@@ -18,7 +18,7 @@
             "anchor": "table",
             "strings": [
                 {
-                    "text": "Récipient",
+                    "text": "Vessel",
                     "bold": true
                 },
                 {
@@ -30,7 +30,7 @@
                     "bold": true
                 },
                 {
-                    "text": "Cruche en céramique"
+                    "text": "Ceramic Jug"
                 },
                 {
                     "text": "100"
@@ -39,7 +39,7 @@
                     "text": "2%"
                 },
                 {
-                    "text": "Verre à vin"
+                    "text": "Wine Glass"
                 },
                 {
                     "text": "100"
@@ -162,7 +162,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Pour aller plus loin",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:cooking/drinks",

@@ -6,26 +6,26 @@
         {
             "type": "patchouli:text",
             "text": "$(li)$(bold)$(l:logistics/roads#intro)Road Construction$()$(li)$(bold)$(l:logistics/roads#mattock)Mattocks$()$(li)$(bold)$(l:logistics/roads#base_course)Base Course$()$(li)$(bold)$(l:logistics/roads#pavers)Pavers$()$(li2)$(l:logistics/roads#hoggin)Hoggin Mix$()$(li2)$(l:logistics/roads#gravel_fill)Gravel Fill$()$(li2)$(l:logistics/roads#stone)Cobble, Sett, & Flagstones$()$(li2)$(l:logistics/roads#concrete)Concrete$()$(li2)$(l:logistics/roads#asphalt)Asphalt$()$(li)$(bold)$(l:logistics/roads#paving_cart)Paving Cart$()",
-            "title": "物品索引",
+            "title": "Index",
             "anchor": "index"
         },
         {
             "type": "patchouli:text",
             "anchor": "intro",
-            "title": "第一天",
+            "title": "Introduction",
             "text": "Road construction is vital for increasing land-transport efficiency and consists of three basic steps:$(li)$(bold)1:$() Tamping the native soil with a $(l:logistics/roads#mattock)Mattock$().$(li)$(bold)2:$() Laying down $(l:logistics/roads#base_course)Crushed Base Course$().$(li)$(bold)3:$() Laying the surface $(l:logistics/roads#pavers)Paving Material$().$(br)Different varieties of road use different ingredients."
         },
         {
             "type": "patchouli:spotlight",
             "item": "tag:rnr:mattocks",
-            "title": "鹤嘴锄",
+            "title": "Mattocks",
             "anchor": "mattock",
             "text": "A mattock can be used on dirt-type blocks similarly to a $(l:craftsmanship/chisel)Chisel$(). When used in the default block mode, a mattock will tamp these blocks down with $(item)$(k:key.use)$(). If the mattock was used to tamp mud or muddy roots, the resulting tamped mud must be remediated by applying crushed base course."
         },
         {
             "type": "patchouli:spotlight",
             "item": "rnr:crushed_base_course",
-            "title": "基层",
+            "title": "Base Course",
             "anchor": "base_course",
             "text": "After the local soil has been tamped down, the next step is to lay a base course for the road. Crushed base course can be crafted with either gravel or stone dust mixed with loose rocks, and can be applied to tamped blocks via $(item)$(k:key.use)$(). This base course of crushed rocks creates a sturdy base for the final walking surface to rest upon."
         },
@@ -98,7 +98,7 @@
             "type": "patchouli:spotlight",
             "anchor": "hoggin",
             "item": "rnr:hoggin_mix",
-            "title": "碎石混合物",
+            "title": "Hoggin Mix",
             "text": "$(item)Hoggin$() is a compactible groundcover made from a mixture of clay, gravel, and sand. It can be applied on a base course to produce a simple path that offers a modest $(thing)$(bold)10% Boost$() to walking speed and allows $(item)Animal Cranks$() to run at 16RPM."
         },
         {
@@ -243,12 +243,12 @@
             "type": "patchouli:spotlight",
             "item": "tag:rnr:concrete_roads",
             "anchor": "concrete",
-            "title": "混凝土",
+            "title": "Concrete",
             "text": "Concrete roads offer a $(thing)$(bold)30% Movement Speed Bonus$() when properly constructed. However, road builders must be diligent when constructing concrete roads to prevent them from $(4)cracking$() or being $(4)trodden$() on while wet, as this will remove the speed bonus."
         },
         {
             "type": "patchouli:image",
-            "title": "混凝土路",
+            "title": "Concrete Road",
             "images": [
                 "rnr:textures/gui/book/concrete_road.png"
             ],
@@ -377,7 +377,7 @@
         },
         {
             "type": "patchouli:image",
-            "title": "沥青路",
+            "title": "Asphalt Road",
             "images": [
                 "tfg:textures/gui/field_guide/asphalt_roads/overview.png"
             ],
@@ -391,14 +391,14 @@
             "type": "patchouli:spotlight",
             "anchor": "tar_chunk",
             "item": "tfg:tar_chunk",
-            "title": "焦油块料",
+            "title": "Tar Chunk",
             "text": "沥青路的原料是石油。将$(thing)石油$()、$(thing)原油$()、$(thing)重油$()等流体在$(thing)流体固化器$()中固化成对应的$(thing)焦油$()，再用$(thing)提取机$()加工成$(thing)焦油块料$()。"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "asphalt_mix",
             "item": "tfg:asphalt_mix_bucket",
-            "title": "沥青混合料",
+            "title": "Asphalt Mixture",
             "text": "在$(thing)搅拌机$()中用焦油块料与$(thing)石粉$()制成$(thing)沥青结合料$()。若加入$(thing)硬沥青粉$()，可提高结合料的产量。$(br)随后，把结合料与沙、石粉及$(thing)碎石基层$()一同拌成流体状的$(thing)沥青混合料$()。$(br)将其装入流体容器中，便于运输和浇筑。"
         },
         {
@@ -459,7 +459,7 @@
         },
         {
             "type": "patchouli:spotlight",
-            "title": "铺路车",
+            "title": "Paving Cart",
             "anchor": "paving_cart",
             "item": "tfg:rnr_plow",
             "text": "The $(thing)Paving Cart$() is a specialized cart used for laying down road surfaces quickly and efficiently. It can be filled with $(6)$(t:#rnr:road_materials)Road Materials$() and $(thing)Crushed Base Course$() and then attached to a $(l:agriculture/animal_husbandry#equines)Horse$() with $(item)$(k:key.astikorcarts.desc)$() to create roads as you travel. The cart can also fill in any existing base course blocks."
@@ -468,7 +468,7 @@
             "type": "patchouli:entity",
             "entity": "tfg:rnr_plow",
             "scale": 0.5,
-            "name": "铺路车",
+            "name": "Paving Cart",
             "text": "The blades of the paving cart will lower with $(item)$(k:key.use)$() indicating that the cart will plow roads when moved."
         },
         {
@@ -507,7 +507,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "延伸阅读",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:craftsmanship/building_materials",

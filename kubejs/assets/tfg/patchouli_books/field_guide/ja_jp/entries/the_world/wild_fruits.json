@@ -5,7 +5,7 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "title": "インデックス",
+            "title": "Index",
             "anchor": "index",
             "text": "$(li)$(bold)$(l:the_world/wild_fruits#intro)Introduction$()$(li)$(bold)$(l:the_world/wild_fruits#fruit_trees)Fruit Trees$()$(li2)$(l:the_world/wild_fruits#cherry)Cherry$()$(li2)$(l:the_world/wild_fruits#green_apple)Green Apple$()$(li2)$(l:the_world/wild_fruits#lemon)Lemon$()$(li2)$(l:the_world/wild_fruits#olive)Olive$()$(li2)$(l:the_world/wild_fruits#orange)Orange$()$(li2)$(l:the_world/wild_fruits#peach)Peach$()$(li2)$(l:the_world/wild_fruits#plum)Plum$()$(li2)$(l:the_world/wild_fruits#red_apple)Red Apple$()$(li2)$(l:the_world/wild_fruits#cocoa)Cocoa$()$(li2)$(l:the_world/wild_fruits#fig)Fig$()$(li2)$(l:the_world/wild_fruits#banana)Bananas$()"
         },
@@ -35,7 +35,7 @@
             "type": "patchouli:text",
             "anchor": "fruit_trees",
             "text": "$(thing)Fruit trees$() grow from tiny saplings into large, flowering trees. The branches of fruit trees are their heart, and they will grow as long as the climate conditions are right. As fruit trees mature, they will grow $(thing)leaves$() all around their branches. The leaves can flower and fruit depending on the $(l:the_world/climate#seasons)Season$().",
-            "title": "果樹"
+            "title": "Fruit Trees"
         },
         {
             "type": "patchouli:image",
@@ -61,43 +61,43 @@
                     "text": ""
                 },
                 {
-                    "text": "1月"
+                    "text": "Jan"
                 },
                 {
-                    "text": "2月"
+                    "text": "Feb"
                 },
                 {
-                    "text": "3月"
+                    "text": "Mar"
                 },
                 {
-                    "text": "4月"
+                    "text": "Apr"
                 },
                 {
-                    "text": "5月"
+                    "text": "May"
                 },
                 {
-                    "text": "6月"
+                    "text": "Jun"
                 },
                 {
-                    "text": "7月"
+                    "text": "Jul"
                 },
                 {
-                    "text": "8月"
+                    "text": "Aug"
                 },
                 {
-                    "text": "9月"
+                    "text": "Sep"
                 },
                 {
-                    "text": "10月"
+                    "text": "Oct"
                 },
                 {
-                    "text": "11月"
+                    "text": "Nov"
                 },
                 {
-                    "text": "12月"
+                    "text": "Dec"
                 },
                 {
-                    "text": "サクランボ"
+                    "text": "Cherry"
                 },
                 {
                     "fill": "0x6ab553"
@@ -175,7 +175,7 @@
                     "fill": "0xa8986a"
                 },
                 {
-                    "text": "レモン"
+                    "text": "Lemon"
                 },
                 {
                     "fill": "0xa8986a"
@@ -214,7 +214,7 @@
                     "fill": "0xa8986a"
                 },
                 {
-                    "text": "オリーブ"
+                    "text": "Olive"
                 },
                 {
                     "fill": "0xa8986a"
@@ -253,7 +253,7 @@
                     "fill": "0xa8986a"
                 },
                 {
-                    "text": "オレンジ"
+                    "text": "Orange"
                 },
                 {
                     "fill": "0xa8986a"
@@ -292,7 +292,7 @@
                     "fill": "0xa8986a"
                 },
                 {
-                    "text": "モモ"
+                    "text": "Peach"
                 },
                 {
                     "fill": "0x6ab553"
@@ -331,7 +331,7 @@
                     "fill": "0x6ab553"
                 },
                 {
-                    "text": "プラム"
+                    "text": "Plum"
                 },
                 {
                     "fill": "0x6ab553"
@@ -370,23 +370,23 @@
                     "fill": "0xa8986a"
                 }
             ],
-            "text": "果樹の結実カレンダー。",
-            "title": "果樹",
+            "text": "The fruiting calendar for fruit trees.",
+            "title": "Fruit Trees",
             "legend": [
                 {
-                    "text": "休眠期",
+                    "text": "Dormant",
                     "color": "0xa8986a"
                 },
                 {
-                    "text": "成長期",
+                    "text": "Healthy",
                     "color": "0x6ab553"
                 },
                 {
-                    "text": "開花期",
+                    "text": "Flowering",
                     "color": "0xcca0db"
                 },
                 {
-                    "text": "結実期",
+                    "text": "Fruiting",
                     "color": "0xa217ff"
                 }
             ],
@@ -409,43 +409,43 @@
                     "text": ""
                 },
                 {
-                    "text": "1月"
+                    "text": "Jan"
                 },
                 {
-                    "text": "2月"
+                    "text": "Feb"
                 },
                 {
-                    "text": "3月"
+                    "text": "Mar"
                 },
                 {
-                    "text": "4月"
+                    "text": "Apr"
                 },
                 {
-                    "text": "5月"
+                    "text": "May"
                 },
                 {
-                    "text": "6月"
+                    "text": "Jun"
                 },
                 {
-                    "text": "7月"
+                    "text": "Jul"
                 },
                 {
-                    "text": "8月"
+                    "text": "Aug"
                 },
                 {
-                    "text": "9月"
+                    "text": "Sep"
                 },
                 {
-                    "text": "10月"
+                    "text": "Oct"
                 },
                 {
-                    "text": "11月"
+                    "text": "Nov"
                 },
                 {
-                    "text": "12月"
+                    "text": "Dec"
                 },
                 {
-                    "text": "バナナ"
+                    "text": "Banana"
                 },
                 {
                     "fill": "0xa8986a"
@@ -455,36 +455,6 @@
                 },
                 {
                     "fill": "0x6ab553"
-                },
-                {
-                    "fill": "0x6ab553"
-                },
-                {
-                    "fill": "0x6ab553"
-                },
-                {
-                    "fill": "0x6ab553"
-                },
-                {
-                    "fill": "0xcca0db"
-                },
-                {
-                    "fill": "0xcca0db"
-                },
-                {
-                    "fill": "0xa217ff"
-                },
-                {
-                    "fill": "0xa8986a"
-                },
-                {
-                    "fill": "0xa8986a"
-                },
-                {
-                    "fill": "0xa8986a"
-                },
-                {
-                    "text": "カカオ"
                 },
                 {
                     "fill": "0x6ab553"
@@ -514,6 +484,36 @@
                     "fill": "0xa8986a"
                 },
                 {
+                    "text": "Cocoa"
+                },
+                {
+                    "fill": "0x6ab553"
+                },
+                {
+                    "fill": "0x6ab553"
+                },
+                {
+                    "fill": "0x6ab553"
+                },
+                {
+                    "fill": "0xcca0db"
+                },
+                {
+                    "fill": "0xcca0db"
+                },
+                {
+                    "fill": "0xa217ff"
+                },
+                {
+                    "fill": "0xa8986a"
+                },
+                {
+                    "fill": "0xa8986a"
+                },
+                {
+                    "fill": "0xa8986a"
+                },
+                {
                     "fill": "0xa8986a"
                 },
                 {
@@ -523,7 +523,7 @@
                     "fill": "0x6ab553"
                 },
                 {
-                    "text": "イチジク"
+                    "text": "Fig"
                 },
                 {
                     "fill": "0x6ab553"
@@ -562,23 +562,23 @@
                     "fill": "0x6ab553"
                 }
             ],
-            "text": "果樹の結実カレンダー。",
-            "title": "果樹",
+            "text": "The fruiting calendar for fruit trees.",
+            "title": "Fruit Trees",
             "legend": [
                 {
-                    "text": "休眠期",
+                    "text": "Dormant",
                     "color": "0xa8986a"
                 },
                 {
-                    "text": "成長期",
+                    "text": "Healthy",
                     "color": "0x6ab553"
                 },
                 {
-                    "text": "開花期",
+                    "text": "Flowering",
                     "color": "0xcca0db"
                 },
                 {
-                    "text": "結実期",
+                    "text": "Fruiting",
                     "color": "0xa217ff"
                 }
             ],
@@ -2959,64 +2959,49 @@
                     "text": ""
                 },
                 {
-                    "text": "1月"
+                    "text": "Jan"
                 },
                 {
-                    "text": "2月"
+                    "text": "Feb"
                 },
                 {
-                    "text": "3月"
+                    "text": "Mar"
                 },
                 {
-                    "text": "4月"
+                    "text": "Apr"
                 },
                 {
-                    "text": "5月"
+                    "text": "May"
                 },
                 {
-                    "text": "6月"
+                    "text": "Jun"
                 },
                 {
-                    "text": "7月"
+                    "text": "Jul"
                 },
                 {
-                    "text": "8月"
+                    "text": "Aug"
                 },
                 {
-                    "text": "9月"
+                    "text": "Sep"
                 },
                 {
-                    "text": "10月"
+                    "text": "Oct"
                 },
                 {
-                    "text": "11月"
+                    "text": "Nov"
                 },
                 {
-                    "text": "12月"
+                    "text": "Dec"
                 },
                 {
-                    "text": "ココヤシの実"
-                },
-                {
-                    "fill": "0xa8986a"
+                    "text": "Coconut"
                 },
                 {
                     "fill": "0xa8986a"
                 },
                 {
                     "fill": "0xa8986a"
-                },
-                {
-                    "fill": "0xa8986a"
-                },
-                {
-                    "fill": "0xa217ff"
-                },
-                {
-                    "fill": "0xa217ff"
-                },
-                {
-                    "fill": "0xa217ff"
                 },
                 {
                     "fill": "0xa8986a"
@@ -3034,7 +3019,22 @@
                     "fill": "0xa217ff"
                 },
                 {
-                    "text": "デーツ"
+                    "fill": "0xa8986a"
+                },
+                {
+                    "fill": "0xa8986a"
+                },
+                {
+                    "fill": "0xa217ff"
+                },
+                {
+                    "fill": "0xa217ff"
+                },
+                {
+                    "fill": "0xa217ff"
+                },
+                {
+                    "text": "Date"
                 },
                 {
                     "fill": "0xa8986a"
@@ -3077,11 +3077,11 @@
             "title": "Palm Fruit Trees",
             "legend": [
                 {
-                    "text": "休眠期",
+                    "text": "Dormant",
                     "color": "0xa8986a"
                 },
                 {
-                    "text": "結実期",
+                    "text": "Fruiting",
                     "color": "0xa217ff"
                 }
             ],
@@ -4755,124 +4755,43 @@
                     "text": ""
                 },
                 {
-                    "text": "1月"
+                    "text": "Jan"
                 },
                 {
-                    "text": "2月"
+                    "text": "Feb"
                 },
                 {
-                    "text": "3月"
+                    "text": "Mar"
                 },
                 {
-                    "text": "4月"
+                    "text": "Apr"
                 },
                 {
-                    "text": "5月"
+                    "text": "May"
                 },
                 {
-                    "text": "6月"
+                    "text": "Jun"
                 },
                 {
-                    "text": "7月"
+                    "text": "Jul"
                 },
                 {
-                    "text": "8月"
+                    "text": "Aug"
                 },
                 {
-                    "text": "9月"
+                    "text": "Sep"
                 },
                 {
-                    "text": "10月"
+                    "text": "Oct"
                 },
                 {
-                    "text": "11月"
+                    "text": "Nov"
                 },
                 {
-                    "text": "12月"
+                    "text": "Dec"
                 },
                 {
-                    "text": "セッコウボク"
-                },
-                {
-                    "fill": "0xa8986a"
-                },
-                {
-                    "fill": "0xa8986a"
-                },
-                {
-                    "fill": "0x6ab553"
-                },
-                {
-                    "fill": "0x6ab553"
-                },
-                {
-                    "fill": "0x6ab553"
-                },
-                {
-                    "fill": "0x6ab553"
-                },
-                {
-                    "fill": "0xcca0db"
-                },
-                {
-                    "fill": "0xcca0db"
-                },
-                {
-                    "fill": "0xa217ff"
-                },
-                {
-                    "fill": "0xa8986a"
-                },
-                {
-                    "fill": "0xa8986a"
-                },
-                {
-                    "fill": "0xa8986a"
-                },
-                {
-                    "text": "ゴゼンタチバナ"
-                },
-                {
-                    "fill": "0xa8986a"
-                },
-                {
-                    "fill": "0xa8986a"
-                },
-                {
-                    "fill": "0xa8986a"
-                },
-                {
-                    "fill": "0xa8986a"
-                },
-                {
-                    "fill": "0x6ab553"
-                },
-                {
-                    "fill": "0x6ab553"
-                },
-                {
-                    "fill": "0x6ab553"
-                },
-                {
-                    "fill": "0xcca0db"
-                },
-                {
-                    "fill": "0xcca0db"
-                },
-                {
-                    "fill": "0xa217ff"
-                },
-                {
-                    "fill": "0xa8986a"
-                },
-                {
-                    "fill": "0xa8986a"
-                },
-                {
-                    "text": "セイヨウスグリ"
-                },
-                {
-                    "fill": "0xa8986a"
+                    "text": "Snowberry"
                 },
                 {
                     "fill": "0xa8986a"
@@ -4908,7 +4827,88 @@
                     "fill": "0xa8986a"
                 },
                 {
-                    "text": "ホロムイイチゴ"
+                    "fill": "0xa8986a"
+                },
+                {
+                    "text": "Bunchberry"
+                },
+                {
+                    "fill": "0xa8986a"
+                },
+                {
+                    "fill": "0xa8986a"
+                },
+                {
+                    "fill": "0xa8986a"
+                },
+                {
+                    "fill": "0xa8986a"
+                },
+                {
+                    "fill": "0x6ab553"
+                },
+                {
+                    "fill": "0x6ab553"
+                },
+                {
+                    "fill": "0x6ab553"
+                },
+                {
+                    "fill": "0xcca0db"
+                },
+                {
+                    "fill": "0xcca0db"
+                },
+                {
+                    "fill": "0xa217ff"
+                },
+                {
+                    "fill": "0xa8986a"
+                },
+                {
+                    "fill": "0xa8986a"
+                },
+                {
+                    "text": "Gooseberry"
+                },
+                {
+                    "fill": "0xa8986a"
+                },
+                {
+                    "fill": "0xa8986a"
+                },
+                {
+                    "fill": "0xa8986a"
+                },
+                {
+                    "fill": "0x6ab553"
+                },
+                {
+                    "fill": "0x6ab553"
+                },
+                {
+                    "fill": "0x6ab553"
+                },
+                {
+                    "fill": "0x6ab553"
+                },
+                {
+                    "fill": "0xcca0db"
+                },
+                {
+                    "fill": "0xcca0db"
+                },
+                {
+                    "fill": "0xa217ff"
+                },
+                {
+                    "fill": "0xa8986a"
+                },
+                {
+                    "fill": "0xa8986a"
+                },
+                {
+                    "text": "Cloudberry"
                 },
                 {
                     "fill": "0xa8986a"
@@ -4947,7 +4947,7 @@
                     "fill": "0xa8986a"
                 },
                 {
-                    "text": "イチゴ"
+                    "text": "Strawberry"
                 },
                 {
                     "fill": "0xcca0db"
@@ -5025,7 +5025,7 @@
                     "fill": "0xa8986a"
                 },
                 {
-                    "text": "クランベリー"
+                    "text": "Cranberry"
                 },
                 {
                     "fill": "0xa8986a"
@@ -5068,19 +5068,19 @@
             "title": "ベリーの茂み",
             "legend": [
                 {
-                    "text": "休眠期",
+                    "text": "Dormant",
                     "color": "0xa8986a"
                 },
                 {
-                    "text": "成長期",
+                    "text": "Healthy",
                     "color": "0x6ab553"
                 },
                 {
-                    "text": "開花期",
+                    "text": "Flowering",
                     "color": "0xcca0db"
                 },
                 {
-                    "text": "結実期",
+                    "text": "Fruiting",
                     "color": "0xa217ff"
                 }
             ],
@@ -5103,40 +5103,40 @@
                     "text": ""
                 },
                 {
-                    "text": "1月"
+                    "text": "Jan"
                 },
                 {
-                    "text": "2月"
+                    "text": "Feb"
                 },
                 {
-                    "text": "3月"
+                    "text": "Mar"
                 },
                 {
-                    "text": "4月"
+                    "text": "Apr"
                 },
                 {
-                    "text": "5月"
+                    "text": "May"
                 },
                 {
-                    "text": "6月"
+                    "text": "Jun"
                 },
                 {
-                    "text": "7月"
+                    "text": "Jul"
                 },
                 {
-                    "text": "8月"
+                    "text": "Aug"
                 },
                 {
-                    "text": "9月"
+                    "text": "Sep"
                 },
                 {
-                    "text": "10月"
+                    "text": "Oct"
                 },
                 {
-                    "text": "11月"
+                    "text": "Nov"
                 },
                 {
-                    "text": "12月"
+                    "text": "Dec"
                 },
                 {
                     "text": "Nightshade"
@@ -5178,7 +5178,7 @@
                     "fill": "0xa8986a"
                 },
                 {
-                    "text": "パイナップル"
+                    "text": "Pineapple"
                 },
                 {
                     "fill": "0xa8986a"
@@ -5217,23 +5217,23 @@
                     "fill": "0xa8986a"
                 }
             ],
-            "text": "ベリーが実をつける時期や成長サイクルのカレンダー",
-            "title": "ベリーの茂み",
+            "text": "The fruiting calendar for berry bushes.",
+            "title": "Berry Bushes",
             "legend": [
                 {
-                    "text": "休眠期",
+                    "text": "Dormant",
                     "color": "0xa8986a"
                 },
                 {
-                    "text": "成長期",
+                    "text": "Healthy",
                     "color": "0x6ab553"
                 },
                 {
-                    "text": "開花期",
+                    "text": "Flowering",
                     "color": "0xcca0db"
                 },
                 {
-                    "text": "結実期",
+                    "text": "Fruiting",
                     "color": "0xa217ff"
                 }
             ],
@@ -5253,7 +5253,7 @@
             "type": "patchouli:text",
             "anchor": "blackberry",
             "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 7 - 24 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 24 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 200 - 500mm$(br2)Blackberry bushes grow from February to May, start flowering in June and July, and bear fruit in August.$(br2)They can be found in areas with few trees.",
-            "title": "ブラックベリーの茂み"
+            "title": "Blackberry Bush"
         },
         {
             "type": "tfg:multimultiblock",
@@ -5353,7 +5353,7 @@
             "type": "patchouli:text",
             "anchor": "raspberry",
             "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 5 - 25 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 24 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 200 - 500mm$(br2)Raspberry bushes grow from April to July, start flowering in August and September, and bear fruit in October.$(br2)They can be found in areas with few trees.",
-            "title": "ラズベリーの茂み"
+            "title": "Raspberry Bush"
         },
         {
             "type": "tfg:multimultiblock",
@@ -5453,7 +5453,7 @@
             "type": "patchouli:text",
             "anchor": "blueberry",
             "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 7 - 29 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 12 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 100 - 400mm$(br2)Blueberry bushes grow from February to May, start flowering in June and July, and bear fruit in August.$(br2)They can be found in areas with few trees.",
-            "title": "ブルーベリーの茂み"
+            "title": "Blueberry Bush"
         },
         {
             "type": "tfg:multimultiblock",
@@ -5553,7 +5553,7 @@
             "type": "patchouli:text",
             "anchor": "elderberry",
             "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 10 - 33 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 12 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 100 - 400mm$(br2)Elderberry bushes grow from February to May, start flowering in June and July, and bear fruit in August.$(br2)They can be found in areas with few trees.",
-            "title": "ニワトコの茂み"
+            "title": "Elderberry Bush"
         },
         {
             "type": "tfg:multimultiblock",
@@ -5704,7 +5704,7 @@
             "type": "patchouli:text",
             "anchor": "bunchberry",
             "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 15 - 35 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 24 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 200 - 500mm(br2)Bunchberry bushes grow from May to July, start flowering in August and September, and bear fruit in October.$(br2)They can be found in forests.",
-            "title": "ゴゼンタチバナの茂み"
+            "title": "Bunchberry Bush"
         },
         {
             "type": "tfg:multimultiblock",
@@ -5768,7 +5768,7 @@
             "type": "patchouli:text",
             "anchor": "gooseberry",
             "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 5 - 27 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 24 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 200 - 500mm$(br2)Gooseberry bushes grow from April to July, start flowering in August and September, and bear fruit in October.$(br2)They can be found in forests.",
-            "title": "セイヨウスグリの茂み"
+            "title": "Gooseberry Bush"
         },
         {
             "type": "tfg:multimultiblock",
@@ -5832,7 +5832,7 @@
             "type": "patchouli:text",
             "anchor": "snowberry",
             "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -7 - 18 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 24 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 200 - 500mm$(br2)Snowberry bushes grow from March to June, start flowering in July and August, and bear fruit in September.$(br2)They can be found in forests.",
-            "title": "セッコウボクの茂み"
+            "title": "Snowberry Bush"
         },
         {
             "type": "tfg:multimultiblock",
@@ -5896,7 +5896,7 @@
             "type": "patchouli:text",
             "anchor": "cloudberry",
             "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -2 - 17 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 9 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 250 - 500mm$(br2)Cloudberry bushes grow from February to May, start flowering in June to August, and bear fruit in September.$(br2)They can be found in forests.",
-            "title": "ホロムイイチゴの茂み"
+            "title": "Cloudberry Bush"
         },
         {
             "type": "tfg:multimultiblock",
@@ -5960,7 +5960,7 @@
             "type": "patchouli:text",
             "anchor": "strawberry",
             "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 5 - 28 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 12 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 100 - 400mm$(br2)Strawberry bushes grow from October to December, start flowering in January and February, and bear fruit in March.$(br2)They can be found in forests.",
-            "title": "イチゴの茂み"
+            "title": "Strawberry Bush"
         },
         {
             "type": "tfg:multimultiblock",
@@ -6024,7 +6024,7 @@
             "type": "patchouli:text",
             "anchor": "wintergreen_berry",
             "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -6 - 17 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 12 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 100 - 400mm$(br2)Wintergreen berry bushes grow from May to September, start flowering in October and November, and bear fruit in December.$(br2)They can be found in forests.",
-            "title": "ウィンターグリーンベリーの茂み"
+            "title": "Wintergreen Berry Bush"
         },
         {
             "type": "tfg:multimultiblock",
@@ -6088,7 +6088,7 @@
             "type": "patchouli:text",
             "anchor": "cranberry",
             "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -5 - 17 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 30 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 250 - 500mm$(br2)Cranberry bushes grow from March to June, start flowering in July and August, and bear fruit in September.$(br2)They can be found in forests. Unlike most small bushes, cranberry bushes are grown underwater.",
-            "title": "クランベリーの茂み"
+            "title": "Cranberry Bush"
         },
         {
             "type": "tfg:multimultiblock",
@@ -6216,7 +6216,7 @@
             "type": "patchouli:text",
             "anchor": "pineapple",
             "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 20 - 32 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 30 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 250 - 500mm$(br2)Pineapple bushes grow from March to June, start flowering in July and August, and bear fruit in September.$(br2)They can be found in forests and are used to make $(l:agriculture/leather_making#pineapple_leather)Pineapple Leather$().",
-            "title": "パイナップルの低木"
+            "title": "Pineapple Bush"
         },
         {
             "type": "tfg:multimultiblock",
@@ -6280,7 +6280,7 @@
             "type": "patchouli:text",
             "anchor": "red_grapes",
             "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 0 - 30 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 0 - 100 %$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 125 - 500mm$(br2)Red grapes spawn naturally, but once harvested from the wild they need to grow on $(item)Trellises$() to produce product.",
-            "title": "赤いブドウ"
+            "title": "Red Grapes"
         },
         {
             "type": "tfg:multimultiblock",
@@ -6318,7 +6318,7 @@
             "type": "patchouli:text",
             "anchor": "white_grapes",
             "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 0 - 30 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 0 - 100 %$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 125 - 500mm$(br2)White grapes spawn naturally, but once harvested from the wild they need to grow on $(item)Trellises$() to produce product.",
-            "title": "白いブドウ"
+            "title": "White Grapes"
         },
         {
             "type": "tfg:multimultiblock",
@@ -6354,7 +6354,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "さらに読む",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:the_world/wild_crops",

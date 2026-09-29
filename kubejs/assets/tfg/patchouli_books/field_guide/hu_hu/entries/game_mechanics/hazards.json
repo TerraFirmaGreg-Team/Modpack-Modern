@@ -7,7 +7,7 @@
 	"pages": [
 		{
 			"type": "patchouli:spotlight",
-			"title": "Vestélyes Anyagok",
+			"title": "Hazardous Materials",
 			"item": "gtceu:cobaltite_dust",
 			"text": "Néhány $(thing)ércek$(), $(thing)porok$() és $(thing)vegyanyagok$() veszélyes, és $(item)negatív hatásokat$() okozhat, vagy akár $(item)halált$() is okozhat, ha a játékos tárhyben vannak. Amikor a játékos tárhelyben, egy $(item)állapothatással$() jelennek meg a képernyőn.$(br2)Bizonyos felszerelések, mint például a $(thing)masks$(), $(thing)kesztyü$() és a $(thing)vegy védelmi ruha$() használhatók ezen hatások ellensúlyozására."
 		},
@@ -30,7 +30,7 @@
 		},
 		{
 			"type": "patchouli:crafting",
-			"title": "Arcmaszk",
+			"title": "Face Mask",
 			"recipe": "gtceu:shaped/face_mask",
 			"text": "The $(thing)Face Mask$() provides protection from any $(item)Inhalation$() hazards, such as Arsenicosis.",
 			"anchor": "mask"
@@ -38,7 +38,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:rubber_gloves",
-			"title": "Gumikesztyű",
+			"title": "Rubber Gloves",
 			"link_recipes": true,
 			"anchor": "gloves",
 			"text": "The $(thing)Rubber gloves$() can either be made from $(l:agriculture/leather_making)Leather$() and $(thing)Latex$(), or out of $(thing)Rubber Sheets$(). They provide protection from any $(item)Skin Contact$() hazards, such as $(thing)Beryllium Dust$()."

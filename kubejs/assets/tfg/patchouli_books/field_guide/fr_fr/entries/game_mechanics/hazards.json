@@ -7,7 +7,7 @@
 	"pages": [
 		{
 			"type": "patchouli:spotlight",
-			"title": "Matières Dangereuses",
+			"title": "Hazardous Materials",
 			"item": "gtceu:cobaltite_dust",
 			"text": "Plusieurs $(thing)minerais$(), $(thing)poudres$() et $(thing)substances chimiques$() sont dangereux et peuvent infliger des $(item)effets négatifs$() ou même $(item)vous tuer$() quand elles sont dans votre inventaire. Si elles y sont présentes, elles seront marquées à l'écran par des $(item)Effets De Statut$().$(br2)Certains équipements tel que les $(thing)masques$(), les $(thing)gants$(), et la $(thing)combinaison hazmat$() peuvent être utilisés pour éviter ces effets."
 		},
@@ -30,7 +30,7 @@
 		},
 		{
 			"type": "patchouli:crafting",
-			"title": "Masque facial",
+			"title": "Face Mask",
 			"recipe": "gtceu:shaped/face_mask",
 			"text": "The $(thing)Face Mask$() provides protection from any $(item)Inhalation$() hazards, such as Arsenicosis.",
 			"anchor": "mask"
@@ -38,7 +38,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:rubber_gloves",
-			"title": "Gants en caoutchouc",
+			"title": "Rubber Gloves",
 			"link_recipes": true,
 			"anchor": "gloves",
 			"text": "The $(thing)Rubber gloves$() can either be made from $(l:agriculture/leather_making)Leather$() and $(thing)Latex$(), or out of $(thing)Rubber Sheets$(). They provide protection from any $(item)Skin Contact$() hazards, such as $(thing)Beryllium Dust$()."
@@ -133,7 +133,7 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Empoisonnement au méthanol",
+			"title": "Methanol Poisoning",
 			"item": "gtceu:methanol_bucket",
 			"anchor": "methanol_poisoning",
 			"text": "$(thing)Methanol poisoning$() is caused by inhalation of $(thing)Methanol$(). It causes a strong $(item)Blindness$() effect.$(br)The $(l:game_mechanics/hazards#mask)Face Mask$() and the $(l:game_mechanics/hazards#hazmat)Hazmat Suit$() protects from inhalation."
@@ -174,7 +174,7 @@
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Pour aller plus loin",
+			"title": "Further Reading",
 			"anchor": "relations",
 			"entries": [
 				"tfg:the_world/geology",

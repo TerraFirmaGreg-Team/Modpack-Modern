@@ -56,7 +56,7 @@
                     "X": "tfc:plant/sagebrush"
                 }
             },
-            "name": "Sec",
+            "name": "Dry",
             "text": "Dry plants are like standard plants, but they can grow on sand. These generally only spawn in areas with low rainfall.",
             "enable_visualize": false
         },
@@ -400,7 +400,7 @@
                     "bold": true
                 },
                 {
-                    "text": "Basilic"
+                    "text": "Basil"
                 },
                 {
                     "text": "12 - 25"
@@ -409,7 +409,7 @@
                     "text": "300 - 500"
                 },
                 {
-                    "text": "Laurier"
+                    "text": "Bay Laurel"
                 },
                 {
                     "text": "8 - 14"
@@ -418,7 +418,7 @@
                     "text": "25 - 225"
                 },
                 {
-                    "text": "Cardamome"
+                    "text": "Cardamom"
                 },
                 {
                     "text": "18 - 30"
@@ -427,7 +427,7 @@
                     "text": "350 - 500"
                 },
                 {
-                    "text": "Coriandre"
+                    "text": "Cilantro"
                 },
                 {
                     "text": "5 - 15"
@@ -445,7 +445,7 @@
                     "text": "50 - 250"
                 },
                 {
-                    "text": "Origan"
+                    "text": "Oregano"
                 },
                 {
                     "text": "5 - 13"
@@ -454,7 +454,7 @@
                     "text": "50 - 150"
                 },
                 {
-                    "text": "Piment"
+                    "text": "Pimento"
                 },
                 {
                     "text": "15 - 30"
@@ -463,7 +463,7 @@
                     "text": "200 - 450"
                 },
                 {
-                    "text": "Vanille"
+                    "text": "Vanilla"
                 },
                 {
                     "text": "18 - 30"
@@ -502,7 +502,7 @@
                     "X": "firmalife:plant/basil[stage=1]"
                 }
             },
-            "name": "Basilic",
+            "name": "Basil",
             "anchor": "basil",
             "text": "Le $(thing)basilic$() pousse entre 12 et 25 °C, et entre 300 et 500 mm de précipitations.",
             "enable_visualize": false
@@ -522,7 +522,7 @@
                     "X": "firmalife:plant/bay_laurel[stage=1]"
                 }
             },
-            "name": "Laurier",
+            "name": "Bay Laurel",
             "anchor": "bay",
             "text": "Le $(thing)laurier sauvage$() pousse entre 8 et 14 °C, et entre 25 et 225 mm de précipitations.",
             "enable_visualize": false
@@ -542,7 +542,7 @@
                     "X": "firmalife:plant/cardamom[stage=1]"
                 }
             },
-            "name": "Cardamome",
+            "name": "Cardamom",
             "anchor": "cardamom",
             "text": "La $(thing)cardamome sauvage$() pousse entre 18 et 30 °C, et entre 350 et 550 mm de précipitations.",
             "enable_visualize": false
@@ -562,7 +562,7 @@
                     "X": "firmalife:plant/cilantro[stage=1]"
                 }
             },
-            "name": "Coriandre",
+            "name": "Cilantro",
             "anchor": "cilantro",
             "text": "La $(thing)coriandre sauvage$() pousse entre 5 et 15 °C, et entre 0 et 150 mm de précipitations.",
             "enable_visualize": false
@@ -602,7 +602,7 @@
                     "X": "firmalife:plant/oregano[stage=1]"
                 }
             },
-            "name": "Origan",
+            "name": "Oregano",
             "anchor": "oregano",
             "text": "L'$(thing)origan sauvage$() pousse entre 5 et 13 °C, et entre 50 et 150 mm de précipitations.",
             "enable_visualize": false
@@ -622,7 +622,7 @@
                     "X": "firmalife:plant/pimento[stage=1]"
                 }
             },
-            "name": "Piment",
+            "name": "Pimento",
             "anchor": "pimento",
             "text": "Le $(thing)piment sauvage$() pousse entre 15 et 30 °C, et entre 200 et 450 mm de précipitations.",
             "enable_visualize": false
@@ -642,7 +642,7 @@
                     "X": "firmalife:plant/vanilla[stage=1]"
                 }
             },
-            "name": "Vanille",
+            "name": "Vanilla",
             "anchor": "vanilla",
             "text": "La $(thing)vanille sauvage$() pousse entre 18 et 30 °C, et entre 200 et 500 mm de précipitations.",
             "enable_visualize": false
@@ -668,7 +668,7 @@
                     "X": "firmalife:plant/butterfly_grass"
                 }
             },
-            "name": "Herbe à papillons",
+            "name": "Butterfly Grass",
             "anchor": "butterfly_grass",
             "text": "Une herbe à papillon.",
             "enable_visualize": false
@@ -679,7 +679,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Pour aller plus loin",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:the_world/wild_fruits",
