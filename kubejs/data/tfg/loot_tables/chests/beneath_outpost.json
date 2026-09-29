@@ -13,19 +13,105 @@
 							"function": "minecraft:set_damage",
 							"damage": {
 								"type": "minecraft:uniform",
-								"min": 0.75,
+								"min": 0.9,
 								"max": 1
 							}
 						},
 						{
 							"function": "minecraft:set_enchantments",
 							"enchantments": {
-								"minecraft:quick_charge": 1
+								"minecraft:quick_charge": 1,
+								"minecraft:piercing": 2
 							},
 							"add": false
+						},
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{\"tfc:forging_bonus\": 2}"
 						}
 					],
 					"weight": 100
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:crossbow",
+					"functions": [
+						{
+							"function": "minecraft:set_damage",
+							"damage": {
+								"type": "minecraft:uniform",
+								"min": 0.9,
+								"max": 1
+							}
+						},
+						{
+							"function": "minecraft:set_enchantments",
+							"enchantments": {
+								"minecraft:quick_charge": 1,
+								"minecraft:multishot": 1
+							},
+							"add": false
+						},
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{\"tfc:forging_bonus\": 2}"
+						}
+					],
+					"weight": 100
+				},
+				{
+					"type": "minecraft:item",
+					"name": "species:crankbow",
+					"functions": [
+						{
+							"function": "minecraft:set_damage",
+							"damage": {
+								"type": "minecraft:uniform",
+								"min": 0.9,
+								"max": 1
+							}
+						},
+						{
+							"function": "minecraft:set_enchantments",
+							"enchantments": {
+								"species:capacity": 1,
+								"species:quick_crank": 2
+							},
+							"add": false
+						},
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{\"tfc:forging_bonus\": 1}"
+						}
+					],
+					"weight": 50
+				},
+				{
+					"type": "minecraft:item",
+					"name": "species:crankbow",
+					"functions": [
+						{
+							"function": "minecraft:set_damage",
+							"damage": {
+								"type": "minecraft:uniform",
+								"min": 0.9,
+								"max": 1
+							}
+						},
+						{
+							"function": "minecraft:set_enchantments",
+							"enchantments": {
+								"species:sparing": 2,
+								"species:scattershot": 1
+							},
+							"add": false
+						},
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{\"tfc:forging_bonus\": 1}"
+						}
+					],
+					"weight": 50
 				},
 				{
 					"type": "minecraft:item",
@@ -36,13 +122,13 @@
 							"function": "minecraft:set_damage",
 							"damage": {
 								"type": "minecraft:uniform",
-								"min": 0.75,
-								"max": 1
+								"min": 0.45,
+								"max": 0.6
 							}
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{\"tfc:forging_bonus\": 3}"
+							"tag": "{\"tfc:forging_bonus\": 1}"
 						}
 					]
 				},
@@ -55,13 +141,13 @@
 							"function": "minecraft:set_damage",
 							"damage": {
 								"type": "minecraft:uniform",
-								"min": 0.75,
-								"max": 1
+								"min": 0.45,
+								"max": 0.6
 							}
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{\"tfc:forging_bonus\": 3}"
+							"tag": "{\"tfc:forging_bonus\": 1}"
 						}
 					]
 				},
@@ -74,13 +160,13 @@
 							"function": "minecraft:set_damage",
 							"damage": {
 								"type": "minecraft:uniform",
-								"min": 0.75,
-								"max": 1
+								"min": 0.45,
+								"max": 0.6
 							}
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{\"tfc:forging_bonus\": 3}"
+							"tag": "{\"tfc:forging_bonus\": 1}"
 						}
 					]
 				},
@@ -93,13 +179,13 @@
 							"function": "minecraft:set_damage",
 							"damage": {
 								"type": "minecraft:uniform",
-								"min": 0.75,
-								"max": 1
+								"min": 0.45,
+								"max": 0.6
 							}
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{\"tfc:forging_bonus\": 3}"
+							"tag": "{\"tfc:forging_bonus\": 1}"
 						}
 					]
 				},
@@ -112,13 +198,13 @@
 							"function": "minecraft:set_damage",
 							"damage": {
 								"type": "minecraft:uniform",
-								"min": 0.75,
-								"max": 1
+								"min": 0.45,
+								"max": 0.6
 							}
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{\"tfc:forging_bonus\": 3}"
+							"tag": "{\"tfc:forging_bonus\": 1}"
 						}
 					]
 				},
@@ -131,12 +217,12 @@
 							"damage": {
 								"type": "minecraft:uniform",
 								"min": 0.1,
-								"max": 0.9
+								"max": 0.6
 							}
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{\"tfc:forging_bonus\": 3}"
+							"tag": "{\"tfc:forging_bonus\": 1}"
 						}
 					],
 					"weight": 100
@@ -150,12 +236,12 @@
 							"damage": {
 								"type": "minecraft:uniform",
 								"min": 0.1,
-								"max": 0.9
+								"max": 0.6
 							}
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{\"tfc:forging_bonus\": 3}"
+							"tag": "{\"tfc:forging_bonus\": 1}"
 						}
 					],
 					"weight": 100
@@ -169,12 +255,12 @@
 							"damage": {
 								"type": "minecraft:uniform",
 								"min": 0.1,
-								"max": 0.9
+								"max": 0.6
 							}
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{\"tfc:forging_bonus\": 3}"
+							"tag": "{\"tfc:forging_bonus\": 1}"
 						}
 					],
 					"weight": 100
@@ -188,12 +274,12 @@
 							"damage": {
 								"type": "minecraft:uniform",
 								"min": 0.1,
-								"max": 0.9
+								"max": 0.6
 							}
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{\"tfc:forging_bonus\": 3}"
+							"tag": "{\"tfc:forging_bonus\": 1}"
 						}
 					],
 					"weight": 100
@@ -207,12 +293,12 @@
 							"damage": {
 								"type": "minecraft:uniform",
 								"min": 0.1,
-								"max": 0.9
+								"max": 0.6
 							}
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{\"tfc:forging_bonus\": 3, \"GT.Behaviours\":{\"DisableShields\":1, \"TreeFelling\":1}}"
+							"tag": "{\"tfc:forging_bonus\": 1, \"GT.Behaviours\":{\"DisableShields\":1, \"TreeFelling\":1}}"
 						}
 					],
 					"weight": 100
@@ -226,12 +312,12 @@
 							"damage": {
 								"type": "minecraft:uniform",
 								"min": 0.1,
-								"max": 0.9
+								"max": 0.6
 							}
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{\"tfc:forging_bonus\": 3}"
+							"tag": "{\"tfc:forging_bonus\": 1}"
 						}
 					],
 					"weight": 100
@@ -245,50 +331,12 @@
 							"damage": {
 								"type": "minecraft:uniform",
 								"min": 0.1,
-								"max": 0.9
+								"max": 0.6
 							}
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{\"tfc:forging_bonus\": 3}"
-						}
-					],
-					"weight": 100
-				},
-				{
-					"type": "minecraft:item",
-					"name": "tfchotornot:tongs/rose_gold",
-					"functions": [
-						{
-							"function": "minecraft:set_damage",
-							"damage": {
-								"type": "minecraft:uniform",
-								"min": 0.5,
-								"max": 0.9
-							}
-						},
-						{
-							"function": "minecraft:set_nbt",
-							"tag": "{\"tfc:forging_bonus\": 4}"
-						}
-					],
-					"weight": 100
-				},
-				{
-					"type": "minecraft:item",
-					"name": "tfchotornot:tongs/gold",
-					"functions": [
-						{
-							"function": "minecraft:set_damage",
-							"damage": {
-								"type": "minecraft:uniform",
-								"min": 0.5,
-								"max": 0.9
-							}
-						},
-						{
-							"function": "minecraft:set_nbt",
-							"tag": "{\"tfc:forging_bonus\": 4}"
+							"tag": "{\"tfc:forging_bonus\": 1}"
 						}
 					],
 					"weight": 100
@@ -305,8 +353,8 @@
 						{
 							"function": "minecraft:set_count",
 							"count": {
-								"min": 5,
-								"max": 17,
+								"min": 10,
+								"max": 28,
 								"type": "minecraft:uniform"
 							}
 						}
@@ -417,91 +465,13 @@
 				},
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:glowstone_dust",
-					"weight": 100,
-					"functions": [
-						{
-							"add": false,
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 8,
-								"min": 4
-							},
-							"function": "minecraft:set_count"
-						}
-					]
-				},
-				{
-					"type": "minecraft:item",
-					"name": "tfc:ore/lignite",
-					"weight": 100,
-					"functions": [
-						{
-							"add": false,
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 10,
-								"min": 6
-							},
-							"function": "minecraft:set_count"
-						}
-					]
-				},
-				{
-					"type": "minecraft:item",
 					"name": "minecraft:gold_ingot",
 					"functions": [
 						{
 							"function": "minecraft:set_count",
 							"count": {
-								"min": 2,
-								"max": 4,
-								"type": "minecraft:uniform"
-							}
-						}
-					],
-					"weight": 100
-				},
-				{
-					"type": "minecraft:item",
-					"name": "gtceu:gold_dust",
-					"weight": 100,
-					"functions": [
-						{
-							"add": false,
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 5,
-								"min": 2
-							},
-							"function": "minecraft:set_count"
-						}
-					]
-				},
-				{
-					"type": "minecraft:item",
-					"name": "gtceu:black_bronze_ingot",
-					"functions": [
-						{
-							"function": "minecraft:set_count",
-							"count": {
 								"min": 1,
-								"max": 3,
-								"type": "minecraft:uniform"
-							}
-						}
-					],
-					"weight": 100
-				},
-				{
-					"type": "minecraft:item",
-					"name": "gtceu:rose_gold_ingot",
-					"functions": [
-						{
-							"function": "minecraft:set_count",
-							"count": {
-								"min": 1,
-								"max": 3,
+								"max": 2,
 								"type": "minecraft:uniform"
 							}
 						}
@@ -523,21 +493,6 @@
 							"function": "minecraft:set_count"
 						}
 					]
-				},
-				{
-					"type": "minecraft:item",
-					"name": "tfc:metal/chain/black_bronze",
-					"functions": [
-						{
-							"function": "minecraft:set_count",
-							"count": {
-								"min": 2,
-								"max": 5,
-								"type": "minecraft:uniform"
-							}
-						}
-					],
-					"weight": 50
 				},
 				{
 					"type": "minecraft:item",
@@ -621,6 +576,27 @@
 				},
 				{
 					"type": "minecraft:item",
+					"name": "minecraft:bowl",
+					"weight": 50,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 2,
+								"min": 1
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "firmalife:spoon",
+					"weight": 50
+				},
+				{
+					"type": "minecraft:item",
 					"name": "tfc:metal/javelin/black_bronze",
 					"functions": [
 						{
@@ -628,12 +604,12 @@
 							"damage": {
 								"type": "minecraft:uniform",
 								"min": 0.1,
-								"max": 0.9
+								"max": 0.5
 							}
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{\"tfc:forging_bonus\": 3}"
+							"tag": "{\"tfc:forging_bonus\": 1}"
 						}
 					],
 					"weight": 100
@@ -657,117 +633,6 @@
 						{
 							"function": "minecraft:set_nbt",
 							"tag": "{fluid:{Amount:100,FluidName:\"minecraft:water\"}}"
-						}
-					]
-				},
-				{
-					"type": "minecraft:item",
-					"name": "gtceu:matches",
-					"weight": 70,
-					"functions": [
-						{
-							"add": false,
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 8,
-								"min": 4
-							},
-							"function": "minecraft:set_count"
-						}
-					]
-				},
-				{
-					"type": "minecraft:item",
-					"name": "minecraft:magma_cream",
-					"functions": [
-						{
-							"function": "minecraft:set_count",
-							"count": {
-								"min": 3,
-								"max": 8,
-								"type": "minecraft:uniform"
-							}
-						}
-					],
-					"weight": 80
-				},
-				{
-					"type": "minecraft:item",
-					"name": "tfc:plant/blood_lily",
-					"weight": 100,
-					"functions": [
-						{
-							"add": false,
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 4,
-								"min": 2
-							},
-							"function": "minecraft:set_count"
-						}
-					]
-				},
-				{
-					"type": "minecraft:item",
-					"name": "jellies:jellie/slime_ball/plant",
-					"weight": 100,
-					"functions": [
-						{
-							"add": false,
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 4,
-								"min": 2
-							},
-							"function": "minecraft:set_count"
-						}
-					]
-				},
-				{
-					"type": "minecraft:item",
-					"name": "jellies:jellie/slime_ball/glowberry",
-					"weight": 100,
-					"functions": [
-						{
-							"add": false,
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 4,
-								"min": 2
-							},
-							"function": "minecraft:set_count"
-						}
-					]
-				},
-				{
-					"type": "minecraft:item",
-					"name": "gtceu:tricalcium_phosphate_dust",
-					"weight": 50,
-					"functions": [
-						{
-							"add": false,
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 5,
-								"min": 2
-							},
-							"function": "minecraft:set_count"
-						}
-					]
-				},
-				{
-					"type": "minecraft:item",
-					"name": "minecraft:charcoal",
-					"weight": 100,
-					"functions": [
-						{
-							"add": false,
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 10,
-								"min": 6
-							},
-							"function": "minecraft:set_count"
 						}
 					]
 				},
@@ -888,6 +753,66 @@
 				},
 				{
 					"type": "minecraft:item",
+					"name": "tfg:food/oil_palm",
+					"weight": 50,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 4,
+								"type": "minecraft:uniform"
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfg:food/acai",
+					"weight": 50,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 4,
+								"type": "minecraft:uniform"
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfg:food/magmango",
+					"weight": 50,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 4,
+								"type": "minecraft:uniform"
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfg:food/lavacado",
+					"weight": 50,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 4,
+								"type": "minecraft:uniform"
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
 					"name": "minecraft:glow_berries",
 					"functions": [
 						{
@@ -915,6 +840,16 @@
 					"type": "minecraft:item",
 					"name": "sns:burlap_sack",
 					"weight": 15
+				},
+				{
+					"type": "minecraft:item",
+					"name": "sns:quiver",
+					"weight": 90
+				},
+				{
+					"type": "minecraft:item",
+					"name": "species:cranktrap",
+					"weight": 50
 				},
 				{
 					"type": "minecraft:item",
@@ -975,6 +910,158 @@
 						}
 					],
 					"weight": 50
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfg:fletching",
+					"weight": 100,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 20,
+								"min": 10
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfg:flint_arrow_head",
+					"weight": 100,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 20,
+								"min": 10
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:tipped_arrow",
+					"weight": 100,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 28,
+								"min": 10
+							},
+							"function": "minecraft:set_count"
+						},
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{Potion: \"minecraft:poison\"}"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:tipped_arrow",
+					"weight": 100,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 28,
+								"min": 10
+							},
+							"function": "minecraft:set_count"
+						},
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{Potion: \"minecraft:weakness\"}"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:tipped_arrow",
+					"weight": 100,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 28,
+								"min": 10
+							},
+							"function": "minecraft:set_count"
+						},
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{Potion: \"minecraft:harming\"}"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:tipped_arrow",
+					"weight": 100,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 28,
+								"min": 10
+							},
+							"function": "minecraft:set_count"
+						},
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{Potion: \"minecraft:slowness\"}"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:tipped_arrow",
+					"weight": 100,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 28,
+								"min": 10
+							},
+							"function": "minecraft:set_count"
+						},
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{Potion: \"species:bloodlust\"}"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:tipped_arrow",
+					"weight": 100,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 28,
+								"min": 10
+							},
+							"function": "minecraft:set_count"
+						},
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{Potion: \"minecraft:fire_resistance\"}"
+						}
+					]
 				}
 			],
 			"rolls": {
