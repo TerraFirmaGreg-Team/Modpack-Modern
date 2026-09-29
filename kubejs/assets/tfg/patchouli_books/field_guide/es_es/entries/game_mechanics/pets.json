@@ -11,7 +11,7 @@
         {
             "type": "patchouli:text",
             "anchor": "intro",
-            "title": "Introducción",
+            "title": "Introduction",
             "text": "$(thing)Pets$() are animals that function similarly to $(l:agriculture/animal_husbandry)Livestock$(). Instead of products, pets are useful for obeying commands, being friends, pest control, hunting.$(br)Pets recognize a certain player as their $(thing)Owner$(). To become a pet's owner, feed it to raise its familiarity above $(item)15%$(). Pets will only obey commands that come from their owner.$(br)Clicking on a pet with $(thing)dye$() changes its collar color."
         },
         {
@@ -37,7 +37,7 @@
                     "bold": true
                 },
                 {
-                    "text": "Clima",
+                    "text": "Climate",
                     "bold": true
                 },
                 {
@@ -174,7 +174,7 @@
         {
             "type": "patchouli:spotlight",
             "anchor": "treat",
-            "title": "Premio Sombrío",
+            "title": "Pet Treat",
             "item": "species:wicked_treat",
             "text": "$(thing)Pet Treats$() can be made by mixing medicine with bone meal.$(br)Pet treats give $(bold)massive$() stat bonuses to your pets for a short duration."
         },
@@ -188,7 +188,7 @@
         {
             "type": "patchouli:spotlight",
             "anchor": "lead",
-            "title": "Plomo",
+            "title": "Lead",
             "item": "minecraft:lead",
             "text": "A $(thing)Lead$() can be crafted from burlap fiber or string, and a metal ring.$(br)You can $(item)$(k:key.use)$() an animal with a lead to pull them around. Much more efficient than baiting them with food!$(br2)You can also pick up some smaller animals with $(item)$(k:key.sneak) + $(k:key.use)$() with empty hands."
         },

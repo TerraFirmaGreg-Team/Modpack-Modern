@@ -11,7 +11,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "index",
-			"title": "Contenido",
+			"title": "Contents",
 			"text": "$(li)$(bold)$(l:mars/mars_fauna#sandworm)The Sandworm$()$(li)$(bold)Domesticatable$()$(li2)$(l:mars/mars_fauna#sniffer)Sniffer$()$(li2)$(l:mars/mars_fauna#wraptor)Wraptor$()$(li2)$(l:mars/mars_fauna#glacian_sheep)Glacian Sheep$()$(li2)$(l:mars/mars_fauna#snatcher)Snatcher$()$(li2)$(l:mars/mars_fauna#charger)Charger$()$(li2)$(l:mars/mars_fauna#soarer)Soarer$()$(li2)$(l:mars/mars_fauna#pentetic_jellie)Pentetic Jellie$()$(br2)$(o)(Continued on next page...)$()"
 		},
 		{
@@ -150,7 +150,7 @@
 			"type": "patchouli:entity",
 			"entity": "species:cruncher{NoAI:1b}",
 			"scale": 0.7,
-			"name": "Triturador",
+			"name": "Cruncher",
 			"anchor": "cruncher",
 			"text": "$(thing)Crunchers$() are territorial $(item)miniboss$() predators. Feed them meat to stop their regeneration. They can also be eaten."
 		},
@@ -209,7 +209,7 @@
 			"type": "patchouli:entity",
 			"entity": "wan_ancient_beasts:toxlacanth{NoAI:1b}",
 			"scale": 0.35,
-			"name": "Toxlacanto",
+			"name": "Toxlacanth",
 			"anchor": "toxlacanth",
 			"text": "$(thing)Toxlacanths$() are aquatic prey animals. It is recommended to kill them from a distance and cook their meat before eating."
 		},
@@ -241,7 +241,7 @@
 			"type": "patchouli:entity",
 			"entity": "ad_astra:martian_raptor{NoAI:1b}",
 			"scale": 0.8,
-			"name": "Ave de presa esquelética",
+			"name": "Skeletal Raptor",
 			"anchor": "skeletal_raptor",
 			"text": "An undead dinosaur. They can be found underground."
 		},

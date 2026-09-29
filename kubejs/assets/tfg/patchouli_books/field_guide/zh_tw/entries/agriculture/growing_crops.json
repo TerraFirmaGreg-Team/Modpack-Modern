@@ -7,7 +7,7 @@
             "type": "patchouli:text",
             "anchor": "intro",
             "text": "所有作物都需要種植在耕地上才能生長。有些作物還有其他特殊要求，例如需要種在水裡或需要支架才能生長。$(br2)作物生長不一定需要$(thing)養分$()，但養分有助於作物生長。養分主要有三種：$(b)氮$()、$(6)磷$()和$(d)鉀$()。每種作物都有其偏好的養分。",
-            "title": "種植作物"
+            "title": "Growing Crops"
         },
         {
             "type": "patchouli:text",

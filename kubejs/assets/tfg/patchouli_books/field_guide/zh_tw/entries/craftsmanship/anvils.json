@@ -1,5 +1,5 @@
 {
-    "name": "砧",
+    "name": "Anvils",
     "category": "tfg:craftsmanship",
     "icon": "tfc:metal/anvil/bronze",
     "pages": [
@@ -11,7 +11,7 @@
         {
             "type": "patchouli:text",
             "anchor": "intro",
-            "title": "第一天",
+            "title": "Introduction",
             "text": "An alternative to casting tools directly (and a requirement for higher tier metals) is to use an $(thing)Anvil$(). An anvil is a block which can be used for two different processes: $(l:craftsmanship/anvils#working)Working$() and $(l:craftsmanship/anvils#welding)Welding$(). An anvil can weld double ingots of the metal type needed to create the next tier anvil above it, which will be necessary to work other items from that metal."
         },
         {
@@ -222,7 +222,7 @@
             "type": "patchouli:text",
             "anchor": "welding",
             "text": "Welding is a process through which two items are fused together to create a new item. Welding works the same whether on a $(l:craftsmanship/anvils#stone_anvil)Stone Anvil$() or a $(l:craftsmanship/anvils#metal_anvil)Metal Anvil$().$(br2)First, you must place the two items you want to weld on the anvil by opening the anvil interface and inserting them in the two leftmost slots.",
-            "title": "焊接配方"
+            "title": "Welding"
         },
         {
             "type": "patchouli:text",
@@ -275,7 +275,7 @@
             "type": "patchouli:text",
             "anchor": "working",
             "text": "In order to work an item on the anvil, you will need to $(item)$(k:key.use)$() the anvil, to open up the anvil interface, seen on the next image. On the left, there are two input slots for items - for working, the target item must be in the right-hand slot. You will also need a hammer while working, either in the hammer slot on the right of the anvil $(bold)or$() in your main hand. The hammer will gradually take damage as you work the item.",
-            "title": "鍛造"
+            "title": "Working"
         },
         {
             "type": "patchouli:image",

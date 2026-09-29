@@ -65,7 +65,7 @@
 		{
 			"type": "patchouli:multiblock",
 			"anchor": "ostrum_harvester",
-			"name": "Ostrum-kitermelő",
+			"name": "Ostrum Harvester",
 			"enable_visualize": true,
 			"multiblock": {
 				"pattern": [

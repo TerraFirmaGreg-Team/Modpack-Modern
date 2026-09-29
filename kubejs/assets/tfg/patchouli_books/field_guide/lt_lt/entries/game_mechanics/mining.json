@@ -44,7 +44,7 @@
             "type": "patchouli:spotlight",
             "item": "tag:tfc:support_beams",
             "anchor": "supports",
-            "title": "Atraminės sijos",
+            "title": "Support Beams",
             "text": "$(thing)Support Beams$() can be crafted from logs or stone.$(br2)Placing a $(thing)Support Beam$() on top of a block places a column up to three tall. These must have a solid block beneath them to stay upright.$(br)$(thing)Horizontal$() beams can be placed between to connect two $(thing)Vertical$() beams that are within five blocks, as in the above diagram."
         },
         {

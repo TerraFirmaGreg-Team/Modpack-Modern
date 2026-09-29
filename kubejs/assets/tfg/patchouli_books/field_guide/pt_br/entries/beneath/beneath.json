@@ -51,7 +51,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "biomes",
-			"title": "Biomas",
+			"title": "Biomes",
 			"text": "The Beneath has a full set of new biomes to explore!$(br2)The Beneath can be split into three vertical layers, each with their own set of biomes. Each one is more hot and dangerous as you descend!"
 		},
 		{
@@ -75,7 +75,7 @@
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Cavernas em Decomposição",
+			"title": "Decaying Caverns",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/decaying_caverns.png"
 			],
@@ -84,7 +84,7 @@
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Covil com Teias",
+			"title": "Webbed Lair",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/webbed_lair.png"
 			],
@@ -121,7 +121,7 @@
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Vale Viçoso",
+			"title": "Lush Hollow",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/lush_hollow.png"
 			],
@@ -131,7 +131,7 @@
 		{
 			"type": "patchouli:image",
 			"anchor": "biomes_bottom",
-			"title": "Floresta de Cinzas",
+			"title": "Ash Forest",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/ash_forest.png"
 			],
@@ -140,7 +140,7 @@
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Placas de Lava",
+			"title": "Lava Floes",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/lava_floes.png"
 			],
@@ -149,7 +149,7 @@
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Deltas de Basalto",
+			"title": "Basalt Deltas",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/basalt_deltas.png"
 			],

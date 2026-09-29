@@ -143,7 +143,7 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Koltuklar",
+			"title": "Seats",
 			"anchor": "seat",
 			"item": "tag:create:seats",
 			"text": "$(item)Seats$() allow you to sit down while operating your train.$(br2)To prevent flying off the train while it's in motion, place a $(item)Seat$() on your $(thing)Train$() and remember to secure it with $(item)Superglue$()."
@@ -208,7 +208,7 @@
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Ek Okuma",
+			"title": "Further Reading",
 			"anchor": "relations",
 			"entries": [
 				"tfg:logistics/tack",

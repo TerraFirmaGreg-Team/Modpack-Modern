@@ -1,5 +1,5 @@
 {
-    "name": "괴철로",
+    "name": "Bloomery",
     "category": "tfg:craftsmanship",
     "icon": "tfc:bloomery",
     "pages": [
@@ -80,11 +80,11 @@
                     "bold": true
                 },
                 {
-                    "text": "연료",
+                    "text": "Fuel",
                     "bold": true
                 },
                 {
-                    "text": "슬롯 ",
+                    "text": "Slots",
                     "bold": true
                 },
                 {

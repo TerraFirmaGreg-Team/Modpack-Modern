@@ -16,7 +16,7 @@
     {
       "type": "patchouli:text",
       "text": "With a firestarter, you can light a $(thing)Firepit$(). To make one, you will need one $(thing)log$(), three $(thing)sticks$(), and optionally up to five pieces of $(thing)kindling$(). Kindling can be items such as paper products, straw, or fallen leaves, and will increase the chance of successfully creating a firepit by 10 percent per item used. Throw ($(item)$(k:key.drop)$()) all the items on the ground, on the same block. Then use the firestarter on the block with the items floating above it.",
-      "title": "焚き火"
+      "title": "Firepit"
     },
     {
       "type": "patchouli:multiblock",
@@ -114,7 +114,7 @@
     },
     {
       "type": "patchouli:relations",
-      "title": "さらに読む",
+      "title": "Further Reading",
       "anchor": "relations",
       "entries": [
         "tfg:cooking/cooking_methods",

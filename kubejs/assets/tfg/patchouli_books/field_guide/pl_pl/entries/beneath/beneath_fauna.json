@@ -36,7 +36,7 @@
 			"type": "patchouli:entity",
 			"entity": "species:mammutilation",
 			"scale": 0.5,
-			"name": "Mamuminacja",
+			"name": "Mammutilation",
 			"anchor": "mammutilation",
 			"text": "$(thing)Mamuminacje$() to nieumarłe mamuty. Możesz skrócić ich cierpienie, zdobywając przy tym trochę $(item)wełny$()."
 		},
@@ -44,7 +44,7 @@
 			"type": "patchouli:entity",
 			"entity": "beneath:red_elk",
 			"scale": 0.7,
-			"name": "Czerwony jeleń",
+			"name": "Red Elk",
 			"anchor": "red_elk",
 			"text": "$(thing)Czerwone jelenie$() występują w dolnych warstwach i zazwyczaj pływają w lawie. Po ich zabiciu można pozyskać $(item)lawoodporne skóry$()."
 		},
@@ -124,7 +124,7 @@
 			"type": "patchouli:entity",
 			"entity": "tfc:crocodile",
 			"scale": 0.5,
-			"name": "Krokodyl",
+			"name": "Crocodile",
 			"anchor": "crocodile",
 			"text": "$(thing)Krokodyle$() można spotkać w górnej i środkowej warstwie, gdzie czyhają w zasadzce!"
 		},
@@ -140,7 +140,7 @@
 			"type": "patchouli:entity",
 			"entity": "primitive_creatures:tfc",
 			"scale": 0.8,
-			"name": "Glinik kaolinowy",
+			"name": "Kaolin Klayze",
 			"anchor": "kaolin_klayze",
 			"text": "$(thing)Gliniki kaolinowe$() można spotkać w $(thing)bujnych jaskiniach$(), gdzie strzegą $(item)gliny kaolinowej$()!"
 		},
@@ -148,7 +148,7 @@
 			"type": "patchouli:entity",
 			"entity": "primitive_creatures:golem_2",
 			"scale": 1,
-			"name": "Grafik grafitowy",
+			"name": "Graphite Glayze",
 			"anchor": "graphite_glayze",
 			"text": "$(thing)Grafiki grafitowe$() można spotkać w dolnych warstwach. Uważaj, żeby nie strąciły cię do lawy!"
 		},
@@ -156,7 +156,7 @@
 			"type": "patchouli:entity",
 			"entity": "species:cliff_hanger",
 			"scale": 0.7,
-			"name": "Klifiak",
+			"name": "Cliff Hanger",
 			"anchor": "cliff_hanger",
 			"text": "$(thing)Cliff Hangers$() can be found on various ceilings, hooking players who walk below them. Hit them with a ranged attack to make them let go!"
 		},
@@ -164,7 +164,7 @@
 			"type": "patchouli:entity",
 			"entity": "species:leaf_hanger",
 			"scale": 0.7,
-			"name": "Liściak",
+			"name": "Leaf Hanger",
 			"anchor": "leaf_hanger",
 			"text": "$(thing)Leaf Hangers$() can be found in pools of Salt Water, hooking players who walk into their trap. Hit them to make them let go of you!"
 		},
@@ -188,7 +188,7 @@
 			"type": "patchouli:entity",
 			"entity": "species:wicked",
 			"scale": 0.9,
-			"name": "Psotnik",
+			"name": "Wicked",
 			"anchor": "wicked",
 			"text": "$(thing)Psotnik$() to duch, który może opętywać pobliskie moby, aby je wzmacniać! Jeśli w pobliżu nie ma żadnego moba, atakuje z dystansu. Po pokonaniu wypada z niego wosk."
 		},
@@ -196,7 +196,7 @@
 			"type": "patchouli:entity",
 			"entity": "species:ghoul",
 			"scale": 0.7,
-			"name": "Ghul",
+			"name": "Ghoul",
 			"anchor": "ghoul",
 			"text": "$(thing)Ghouls$() are blind monsters that use echolocation to find prey. They are neutral unless you're within their 'scan' radius!"
 		},
@@ -204,13 +204,13 @@
 			"type": "patchouli:entity",
 			"entity": "species:bewereager",
 			"scale": 0.8,
-			"name": "Osadnikołak",
+			"name": "Bewereager",
 			"anchor": "bewereager",
 			"text": "$(thing)Osadnikołak$() to agresywny potwór, który potrafi skoczyć na ciebie z daleka! Wzmacnia się i atakuje w krótkich seriach."
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Czytaj dalej",
+			"title": "Further Reading",
 			"anchor": "relations",
 			"entries": [
 				"tfg:the_world/wild_animals",

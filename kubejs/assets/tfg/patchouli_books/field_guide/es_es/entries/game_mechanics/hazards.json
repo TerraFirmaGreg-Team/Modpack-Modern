@@ -7,7 +7,7 @@
 	"pages": [
 		{
 			"type": "patchouli:spotlight",
-			"title": "Materiales peligrosos",
+			"title": "Hazardous Materials",
 			"item": "gtceu:cobaltite_dust",
 			"text": "Algunos $(thing)minerales$(), $(thing)polvos$() y $(thing)químicos$() son peligrosos y pueden causar $(item)efectos negativos$() o incluso $(item)matarte$() si son llevados en tu inventario. Cuando se transportan, se muestran en pantalla con un efecto de  $(item)estado$().$(br2)Ciertos equipos como $(thing)máscaras$(), $(thing)guantes$(), y el $(thing)traje de Hazmat$() pueden utilizarse para contrarrestar estos efectos."
 		},
@@ -30,7 +30,7 @@
 		},
 		{
 			"type": "patchouli:crafting",
-			"title": "Máscara",
+			"title": "Face Mask",
 			"recipe": "gtceu:shaped/face_mask",
 			"text": "La $(thing)Mascarilla$() proporciona protección contra cualquier peligro de $(item)inhalación$(), como la arsenicosis.",
 			"anchor": "mask"
@@ -112,7 +112,7 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Carcinogenos",
+			"title": "Carcinogens",
 			"item": "gtceu:chromium_dust",
 			"anchor": "carcinogens",
 			"text": "The $(l:game_mechanics/hazards#mask)Face Mask$() protects from inhalation of harmful chemicals, while the $(l:game_mechanics/hazards#gloves)Gloves$() protect from contact with $(thing)Chromium Dust$().$(br)The $(l:game_mechanics/hazards#hazmat)Hazmat Suit$() protects from both.$(br)In case of severe exposure, it is advised to take some $(l:game_mechanics/hazards#medicine)Medicines$() to $(thing)Prevent$() any possible damage."

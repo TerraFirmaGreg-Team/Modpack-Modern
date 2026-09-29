@@ -6,13 +6,13 @@
         {
             "type": "patchouli:text",
             "text": "$(li)$(bold)$(l:logistics/personal_storage#small_vessel)Small Vessels$()$(li)$(bold)$(l:logistics/personal_storage#large_vessel)large Vessels$()$(li)$(bold)$(l:logistics/personal_storage#straw_basket)Straw Basket$()$(li)$(bold)$(l:logistics/personal_storage#leather_sack)Leather Sack$()$(li)$(bold)$(l:logistics/personal_storage#ore_sack)Ore Sack$()$(li)$(bold)$(l:logistics/personal_storage#seed_pouch)Seed Pouch$()$(li)$(bold)$(l:logistics/personal_storage#frame_pack)Frame Pack$()$(li)$(bold)$(l:logistics/personal_storage#quiver)Quiver$()$(li)$(bold)$(l:logistics/personal_storage#backpack)Backpacks$()",
-            "title": "Индекс",
+            "title": "Index",
             "anchor": "index"
         },
         {
             "type": "patchouli:text",
             "anchor": "intro",
-            "title": "Введение",
+            "title": "Introduction",
             "text": "There are many $(item)Item Containers$() to help ease your inventory stress while playing. There are a few important stats to consider when choosing between them.$(li)$(thing)Slot count$(): The amount of slots it has.$(li)$(thing)Slot Capacity$(): How many items a slot can hold.$(li)$(thing)Allowed Size$(): What's the largest $(l:game_mechanics/size_and_weight)TFC Size$() allowed in the slots."
         },
         {
@@ -36,42 +36,42 @@
         {
             "type": "patchouli:spotlight",
             "anchor": "straw_basket",
-            "title": "Соломенная корзина",
+            "title": "Straw Basket",
             "item": "sns:straw_basket",
             "text": "$(bold)Slots$(): 4$(br)$(bold)Stack Size$(): 16$(br)$(bold)Largest Size$(): Small$(br)$(bold)Item Pickup$(): $(2)True$()$(br)$(bold)Slot Voiding$(): $(c)False$()$(br)$(bold)Restricted To$(): N/A"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "leather_sack",
-            "title": "Кожаный мешок",
+            "title": "Leather Sack",
             "item": "sns:leather_sack",
             "text": "$(bold)Slots$(): 4$(br)$(bold)Stack Size$(): 64$(br)$(bold)Largest Size$(): Normal$(br)$(bold)Item Pickup$(): $(2)True$()$(br)$(bold)Slot Voiding$(): $(2)True$()$(br)$(bold)Restricted To$(): N/A"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "ore_sack",
-            "title": "Мешок для руды",
+            "title": "Ore Sack",
             "item": "sns:ore_sack",
             "text": "$(bold)Slots$(): 9$(br)$(bold)Stack Size$(): 512$(br)$(bold)Largest Size$(): Small$(br)$(bold)Item Pickup$(): $(2)True$()$(br)$(bold)Slot Voiding$(): $(2)True$()$(br)$(bold)Restricted To$(): $(6)$(t:#sns:allowed_in_ore_sack)Loose Stone, Ore, Gems, Clay$()"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "seed_pouch",
-            "title": "Мешочек для семян",
+            "title": "Seed Pouch",
             "item": "sns:seed_pouch",
             "text": "$(bold)Slots$(): 27$(br)$(bold)Stack Size$(): 128$(br)$(bold)Largest Size$(): Small$(br)$(bold)Item Pickup$(): $(2)True$()$(br)$(bold)Slot Voiding$(): $(c)False$()$(br)$(bold)Restricted To$(): $(6)$(t:#sns:allowed_in_seed_pouch)Seeds, Saplings, Bushes$()"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "frame_pack",
-            "title": "Каркасный рюкзак",
+            "title": "Frame Pack",
             "item": "sns:frame_pack",
             "text": "$(bold)Slots$(): 18$(br)$(bold)Stack Size$(): 64$(br)$(bold)Largest Size$(): Very Large$(br)$(bold)Item Pickup$(): $(2)True$()$(br)$(bold)Slot Voiding$(): $(2)True$()$(br)$(bold)Restricted To$(): N/A"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "quiver",
-            "title": "Колчан",
+            "title": "Quiver",
             "item": "sns:quiver",
             "text": "$(bold)Slots$(): 8$(br)$(bold)Stack Size$(): 32$(br)$(bold)Largest Size$(): Very Large$(br)$(bold)Item Pickup$(): $(2)True$()$(br)$(bold)Slot Voiding$(): $(c)False$()$(br)$(bold)Restricted To$(): $(6)$(t:#sns:allowed_in_quiver)Arrows, Javelins$()"
         },
@@ -84,7 +84,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Читать дальше",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:craftsmanship/metallurgy",

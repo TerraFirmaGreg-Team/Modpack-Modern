@@ -5,7 +5,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"title": "Indeks",
+			"title": "Index",
 			"anchor": "index",
 			"text": "$(li)$(bold)$(l:cooking/drinks#alcohol)Alcohol$()$(li2)$(l:cooking/drinks#aged_alcohol)Aged Alcohol$()$(li2)$(l:cooking/drinks#vintage_alcohol)Vintage Alcohol$()$(li2)$(l:cooking/drinks#table)Alcohol Effects Table$()$(li2)$(l:cooking/drinks#wine)Wine$()$(li)$(bold)$(l:cooking/drinks#milk)Milk$()$(li)$(bold)$(l:cooking/drinks#spring_water)Spring Water$()$(li)$(bold)$(l:cooking/drinks#sea_water)Sea Water$()$(li)$(bold)$(l:cooking/drinks#muddy_water)Muddy Water$()$(li)$(bold)$(l:cooking/drinks#juice)Fruit Juice$()$(li)$(bold)$(l:cooking/drinks#yogurt)Yogurt$()$(li)$(bold)$(l:cooking/drinks#smoothie)Fruit Smoothie$()$(li)$(bold)$(l:cooking/drinks#ice_slush)Ice Slush$()"
 		},
@@ -35,19 +35,19 @@
 			"anchor": "table",
 			"strings": [
 				{
-					"text": "Alkohol",
+					"text": "Alcohol",
 					"bold": true
 				},
 				{
-					"text": "Dojrzałe",
+					"text": "Aged",
 					"bold": true
 				},
 				{
-					"text": "Klasyczne",
+					"text": "Vintage",
 					"bold": true
 				},
 				{
-					"text": "Piwo"
+					"text": "Beer"
 				},
 				{
 					"text": "Absorbcja II (5:20)"
@@ -56,7 +56,7 @@
 					"text": "Absorbcja III (8:00)"
 				},
 				{
-					"text": "Cydr"
+					"text": "Cider"
 				},
 				{
 					"text": "Prędkość (5:20)"
@@ -83,7 +83,7 @@
 					"text": "Odporność II (8:00)"
 				},
 				{
-					"text": "Wódka"
+					"text": "Vodka"
 				},
 				{
 					"text": "Odporność II (2:40)"
@@ -92,7 +92,7 @@
 					"text": "Odporność III (4:00)"
 				},
 				{
-					"text": "Whisky"
+					"text": "Whiskey"
 				},
 				{
 					"text": "Pośpiech II (2:40)"
@@ -101,7 +101,7 @@
 					"text": "Pośpiech III (4:00)"
 				},
 				{
-					"text": "Kukurydziana whisky"
+					"text": "Corn Whiskey"
 				},
 				{
 					"text": "Pośpiech (5:20)"
@@ -110,16 +110,16 @@
 					"text": "Pośpiech II (8:00)"
 				},
 				{
-					"text": "Żytnia whisky"
+					"text": "Rye Whiskey"
 				},
 				{
-					"text": "Pośpiech (5:20)"
+					"text": "Haste (5:20)"
 				},
 				{
 					"text": "Pośpiech II (8:00)"
 				},
 				{
-					"text": "Miód pitny"
+					"text": "Mead"
 				},
 				{
 					"text": "Regeneracja (5:20)"
@@ -161,35 +161,35 @@
 			"anchor": "milk"
 		},
 		{
-			"title": "Woda źródlana",
+			"title": "Spring Water",
 			"text": "Drinking $(thing)Spring Water$() warms you up by 4°C and applies a small regeneration effect while standing in it, as well as warming you.",
 			"item": "tfc:bucket/spring_water",
 			"type": "patchouli:spotlight",
 			"anchor": "spring_water"
 		},
 		{
-			"title": "Woda morska",
+			"title": "Sea Water",
 			"text": "Drinking $(thing)Sea Water$() does not hydrate you and will make you more thirsty instead. A hot body temperature can also make you more thirsty. Lost at sea? Look upwards when it's raining for some easy hydration!",
 			"type": "patchouli:spotlight",
 			"item": "tfc:bucket/salt_water",
 			"anchor": "sea_water"
 		},
 		{
-			"title": "Mętna woda",
+			"title": "Muddy Water",
 			"text": "Picie $(thing)mętnej wody$() nie jest zalecane. Dostaniesz od niej nudności i $(l:cooking/food_and_water#parasites)pasożyty$().",
 			"type": "patchouli:spotlight",
 			"item": "tfg:muddy_water_bucket",
 			"anchor": "muddy_water"
 		},
 		{
-			"title": "Sok owocowy",
+			"title": "Fruit Juice",
 			"text": "$(thing)Fruit Juice$() is a great way to condense your fruits into a longer lasting food item. Fruit juice provides the $(l:cooking/food_and_water#quenching_transient_effect)Quenching Effect$(), which helps stave off thirst.$(br2)Fruit Juice will expire over time.$()",
 			"type": "patchouli:spotlight",
 			"anchor": "juice",
 			"item": "tfg:food/juice"
 		},
 		{
-			"title": "Jogurt",
+			"title": "Yogurt",
 			"text": "$(thing)Yogurt$() provides dairy nutrition similarly to milk. It can also be mixed with fruit to make $(item)Fruit Yogurt$().$(br2)Yogurt will expire over time.$()",
 			"type": "patchouli:spotlight",
 			"anchor": "yogurt",
@@ -211,7 +211,7 @@
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Czytaj dalej",
+			"title": "Further Reading",
 			"anchor": "relations",
 			"entries": [
 				"tfg:cooking/food_and_water",

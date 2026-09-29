@@ -1,5 +1,5 @@
 {
-    "name": "Armazenamento",
+    "name": "Storage",
     "category": "tfg:logistics",
     "icon": "tfc:wood/chest/douglas_fir",
     "pages": [
@@ -11,7 +11,7 @@
         },
         {
             "type": "patchouli:text",
-            "title": "Introdução",
+            "title": "Introduction",
             "anchor": "intro",
             "text": "There are a vast amount of items, materials, and fluids that you will accumulate in $(tfg). It will be important to set up vast storage systems to organize everything. Some of the most important aspects of storage is its $(thing)capacity$() and $(thing)restrictions$(). For on-the-go inventory management you should read up on $(l:logistics/personal_storage)Personal Storage$()."
         },
@@ -232,7 +232,7 @@
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Barris",
+            "title": "Barrels",
             "anchor": "barrels",
             "item": "tag:tfc:barrels",
             "text": "$(l:craftsmanship/barrels)Barrels$() aren't just useful for recipes. They are a very cheap way of holding plenty of fluid, up to 10,000 mB per barrel.$(br)When placed on their side, barrels can drip fluid from their tap into containers below, allowing them to auto-ouput at a steady rate.$(br)You can carry a filled barrel on your back to transport its contents."

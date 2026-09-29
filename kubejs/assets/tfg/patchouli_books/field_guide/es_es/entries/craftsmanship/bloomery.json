@@ -84,7 +84,7 @@
                     "bold": true
                 },
                 {
-                    "text": "Ranuras",
+                    "text": "Slots",
                     "bold": true
                 },
                 {
@@ -241,7 +241,7 @@
                     "O": "gtceu:steam_output_bus[facing=north]"
                 }
             },
-            "name": "Estructura",
+            "name": "Structure",
             "text": "A steam bloomery requires item input and item output buses, a steam input hatch, and three Bronze Firebox Casings.",
             "enable_visualize": true
         },

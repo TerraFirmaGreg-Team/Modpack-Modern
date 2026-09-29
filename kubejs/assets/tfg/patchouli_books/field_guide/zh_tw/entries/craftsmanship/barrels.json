@@ -27,7 +27,7 @@
         {
             "type": "patchouli:text",
             "text": "大桶的主要作用是用來混合某些液體和物品。用大桶合成時，桶內的液體和物品的比例必須正確無誤。某些配方還需要將大桶$(thing)密封$()一段時間才能執行。",
-            "title": "製作中"
+            "title": "Crafting"
         },
         {
             "type": "patchouli:text",
@@ -111,7 +111,7 @@
         },
         {
             "type": "patchouli:text",
-            "title": "紅石",
+            "title": "Redstone",
             "text": "Barrels can be automated with $(thing)Redstone$(). Applying a redstone signal to a barrel will seal it. Unsealed barrels can have fluids and items inserted and extracted from their open face. Sealed barrels can safely be moved around with $(thing)Pistons$() or $(thing)Contraptions$(). A $(l:logistics/redstone_devices#clock)Precision Clock$() can detect when a barrel recipe has finished and output a signal."
         },
         {

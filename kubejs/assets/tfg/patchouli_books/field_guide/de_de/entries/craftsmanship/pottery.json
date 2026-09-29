@@ -100,7 +100,7 @@
         {
             "type": "patchouli:spotlight",
             "item": "tfc:ceramic/ingot_mold{tank:{\"Amount\":100,\"FluidName\":\"gtceu:copper\"}}",
-            "title": "Gießen",
+            "title": "Casting",
             "link_recipes": false,
             "text": "You will very likely run into scenarios where you produce tiny amounts of excess melted metal. It is recommended to pour it into an ingot mold and save for the next time you need to cast that metal. Trying to produce perfect 144mB ratios of alloys is not feasible or worth the effort until you reach steam-age processing."
         },
@@ -205,7 +205,7 @@
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Schamotte",
+            "title": "Fire Clay",
             "anchor": "fire_clay",
             "item": "tfc:fire_clay",
             "text": "The list of uses of fire clay is small, but all of them are important. Fire clay is a stronger variant of clay that has better heat resistance. It is used to make things that have to get very hot!"

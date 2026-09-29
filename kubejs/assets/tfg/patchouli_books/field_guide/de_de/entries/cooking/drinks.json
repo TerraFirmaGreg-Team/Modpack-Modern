@@ -39,15 +39,15 @@
 					"bold": true
 				},
 				{
-					"text": "mild",
+					"text": "Aged",
 					"bold": true
 				},
 				{
-					"text": "alt",
+					"text": "Vintage",
 					"bold": true
 				},
 				{
-					"text": "Bier"
+					"text": "Beer"
 				},
 				{
 					"text": "Absorption II (5:20)"
@@ -56,7 +56,7 @@
 					"text": "Absorption III (8:00)"
 				},
 				{
-					"text": "Apfelwein"
+					"text": "Cider"
 				},
 				{
 					"text": "Speed (5:20)"
@@ -101,7 +101,7 @@
 					"text": "Haste III (4:00)"
 				},
 				{
-					"text": "Maiswhiskey"
+					"text": "Corn Whiskey"
 				},
 				{
 					"text": "Haste (5:20)"
@@ -110,7 +110,7 @@
 					"text": "Haste II (8:00)"
 				},
 				{
-					"text": "Roggenwhiskey"
+					"text": "Rye Whiskey"
 				},
 				{
 					"text": "Haste (5:20)"
@@ -119,7 +119,7 @@
 					"text": "Haste II (8:00)"
 				},
 				{
-					"text": "Met"
+					"text": "Mead"
 				},
 				{
 					"text": "Regeneration (5:20)"
@@ -161,14 +161,14 @@
 			"anchor": "milk"
 		},
 		{
-			"title": "Quellwasser",
+			"title": "Spring Water",
 			"text": "Drinking $(thing)Spring Water$() warms you up by 4°C and applies a small regeneration effect while standing in it, as well as warming you.",
 			"item": "tfc:bucket/spring_water",
 			"type": "patchouli:spotlight",
 			"anchor": "spring_water"
 		},
 		{
-			"title": "Salzwasser",
+			"title": "Sea Water",
 			"text": "Drinking $(thing)Sea Water$() does not hydrate you and will make you more thirsty instead. A hot body temperature can also make you more thirsty. Lost at sea? Look upwards when it's raining for some easy hydration!",
 			"type": "patchouli:spotlight",
 			"item": "tfc:bucket/salt_water",
@@ -182,7 +182,7 @@
 			"anchor": "muddy_water"
 		},
 		{
-			"title": "Salzwasser",
+			"title": "Fruit Juice",
 			"text": "$(thing)Fruit Juice$() is a great way to condense your fruits into a longer lasting food item. Fruit juice provides the $(l:cooking/food_and_water#quenching_transient_effect)Quenching Effect$(), which helps stave off thirst.$(br2)Fruit Juice will expire over time.$()",
 			"type": "patchouli:spotlight",
 			"anchor": "juice",

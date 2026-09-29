@@ -6,12 +6,12 @@
         {
             "type": "patchouli:text",
             "text": "$(li)$(bold)$(l:logistics/exploration_gear#hiking_boots)Похідні чоботи$()$(li2)$(l:logistics/exploration_gear#safety_boots)Захисні чоботи$()$(li)$(bold)$(l:logistics/exploration_gear#canes)Тростини$()$(li)$(bold)$(l:logistics/exploration_gear#snowshoes)Снігоступи$()$(li)$(bold)$(l:logistics/exploration_gear#snorkel)Шноркель$()$(li)$(bold)$(l:logistics/exploration_gear#flippers)Ласти$()$(li)$(bold)$(l:logistics/exploration_gear#diving_suit)Водолазний костюм$()$(li2)$(l:logistics/exploration_gear#lava_diving_suit)Костюм для занурення в лаву$()$(li)$(bold)$(l:logistics/exploration_gear#digger_helmet)Шахтарська каска$()$(li)$(bold)$(l:logistics/exploration_gear#grappling_hook)Гак-кішка$()$(li2)$(l:logistics/exploration_gear#harpoon)Гарпун$()$(li)$(bold)$(l:logistics/exploration_gear#hang_glider)Дельтаплан$()$(li)$(bold)$(l:logistics/exploration_gear#jetpacks)Реактивний ранець$()",
-            "title": "Індекс",
+            "title": "Index",
             "anchor": "index"
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Похідні чоботи",
+            "title": "Hiking Boots",
             "anchor": "hiking_boots",
             "item": "sns:hiking_boots",
             "text": "Кожному досліднику потрібна гарна пара чоботів.$(br)$(thing)Похідні чоботи$() дають змогу:$(li)Швидко проходити крізь чагарники.$(li)Отримати невеликий бонус до швидкості.$(li)Отримати невелике збільшення безпечної висоти падіння.$(li)Автоматично підійматися на блоки; функція вмикається клавішею $(item)$(k:sns.key.stepUpToggle)()"
@@ -33,21 +33,21 @@
         {
             "type": "patchouli:spotlight",
             "anchor": "snowshoes",
-            "title": "Снігоступи",
+            "title": "Snowshoes",
             "item": "tfg:snowshoes",
             "text": "Коли $(thing)снігоступи$() вдягнені на ноги, вони усувають уповільнення під час ходіння по снігу та дають змогу пересуватися по пухкому снігу."
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "snorkel",
-            "title": "Шноркель",
+            "title": "Snorkel",
             "item": "tfg:snorkel",
             "text": "Коли $(thing)шноркель$() вдягнена на обличчя, вона дає змогу дихати під водою на додаткові $(item)15 секунд$()."
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "flippers",
-            "title": "Ласти",
+            "title": "Flippers",
             "item": "tfg:flippers",
             "text": "Коли $(thing)ласти$() вдягнені на ноги, вони покращують твою спритність і швидкість під час плавання під водою."
         },
@@ -75,14 +75,14 @@
         {
             "type": "patchouli:spotlight",
             "anchor": "grappling_hook",
-            "title": "Гак-кішка",
+            "title": "Grappling Hook",
             "item": "grapplemod:grapplinghook",
             "text": "$(thing)Гак-кішка$() вистрілює мотузкою за допомогою $(item)$(k:key.attack)$() і чіпляється за блоки, дозволяючи тобі розгойдуватися та дуже швидко долати вертикальні перешкоди.$(br2)Гак-кішку можна вдосконалювати за допомогою різних предметів під час створення— докладніше дивись у розділі $(thing)Поради — Інструменти$() у розділі завдань."
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "harpoon",
-            "title": "Гарпун",
+            "title": "Harpoon",
             "item": "species:harpoon",
             "text": "$(thing)Гарпун$() дуже схожий на $(l:logistics/exploration_gear#grappling_hook)гак-кішку$(), але значно обмеженіший у використанні: не має модифікацій і може запускатися лише прямо вгору за допомогою $(item)$(k:key.use)$().$(br2)Однак він дає змогу тобі підійматися мотузкою вгору за допомогою $(item)$(k:key.jump)$(), а також може поєднуватися з $(l:logistics/exploration_gear#coil)мотузками$() для створення $(item)зиплайнів$()!"
         },
@@ -111,7 +111,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Додаткове читання",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:agriculture/weaving",

@@ -73,7 +73,7 @@
                     "text": "Apr"
                 },
                 {
-                    "text": "Mai"
+                    "text": "May"
                 },
                 {
                     "text": "Jun"
@@ -97,7 +97,7 @@
                     "text": "Dec"
                 },
                 {
-                    "text": "Kirsch"
+                    "text": "Cherry"
                 },
                 {
                     "fill": "0x6ab553"
@@ -175,7 +175,7 @@
                     "fill": "0xa8986a"
                 },
                 {
-                    "text": "Zitrone"
+                    "text": "Lemon"
                 },
                 {
                     "fill": "0xa8986a"
@@ -292,7 +292,7 @@
                     "fill": "0xa8986a"
                 },
                 {
-                    "text": "Pfirsich"
+                    "text": "Peach"
                 },
                 {
                     "fill": "0x6ab553"
@@ -331,7 +331,7 @@
                     "fill": "0x6ab553"
                 },
                 {
-                    "text": "Pflaume"
+                    "text": "Plum"
                 },
                 {
                     "fill": "0x6ab553"
@@ -421,7 +421,7 @@
                     "text": "Apr"
                 },
                 {
-                    "text": "Mai"
+                    "text": "May"
                 },
                 {
                     "text": "Jun"
@@ -445,7 +445,7 @@
                     "text": "Dec"
                 },
                 {
-                    "text": "Banane"
+                    "text": "Banana"
                 },
                 {
                     "fill": "0xa8986a"
@@ -523,7 +523,7 @@
                     "fill": "0x6ab553"
                 },
                 {
-                    "text": "Feige"
+                    "text": "Fig"
                 },
                 {
                     "fill": "0x6ab553"
@@ -2971,7 +2971,7 @@
                     "text": "Apr"
                 },
                 {
-                    "text": "Mai"
+                    "text": "May"
                 },
                 {
                     "text": "Jun"
@@ -4767,7 +4767,7 @@
                     "text": "Apr"
                 },
                 {
-                    "text": "Mai"
+                    "text": "May"
                 },
                 {
                     "text": "Jun"
@@ -4791,7 +4791,7 @@
                     "text": "Dec"
                 },
                 {
-                    "text": "Schneebeere"
+                    "text": "Snowberry"
                 },
                 {
                     "fill": "0xa8986a"
@@ -4830,7 +4830,7 @@
                     "fill": "0xa8986a"
                 },
                 {
-                    "text": "Hartriegel"
+                    "text": "Bunchberry"
                 },
                 {
                     "fill": "0xa8986a"
@@ -4869,7 +4869,7 @@
                     "fill": "0xa8986a"
                 },
                 {
-                    "text": "Stachelbeere"
+                    "text": "Gooseberry"
                 },
                 {
                     "fill": "0xa8986a"
@@ -4908,7 +4908,7 @@
                     "fill": "0xa8986a"
                 },
                 {
-                    "text": "Moltebeere"
+                    "text": "Cloudberry"
                 },
                 {
                     "fill": "0xa8986a"
@@ -4947,7 +4947,7 @@
                     "fill": "0xa8986a"
                 },
                 {
-                    "text": "Erdbeere"
+                    "text": "Strawberry"
                 },
                 {
                     "fill": "0xcca0db"
@@ -5025,7 +5025,7 @@
                     "fill": "0xa8986a"
                 },
                 {
-                    "text": "Moosbeere"
+                    "text": "Cranberry"
                 },
                 {
                     "fill": "0xa8986a"
@@ -5115,7 +5115,7 @@
                     "text": "Apr"
                 },
                 {
-                    "text": "Mai"
+                    "text": "May"
                 },
                 {
                     "text": "Jun"
@@ -5178,7 +5178,7 @@
                     "fill": "0xa8986a"
                 },
                 {
-                    "text": "Ananas"
+                    "text": "Pineapple"
                 },
                 {
                     "fill": "0xa8986a"
@@ -5253,7 +5253,7 @@
             "type": "patchouli:text",
             "anchor": "blackberry",
             "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 7 - 24 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 24 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 200 - 500mm$(br2)Blackberry bushes grow from February to May, start flowering in June and July, and bear fruit in August.$(br2)They can be found in areas with few trees.",
-            "title": "Brombeerbusch"
+            "title": "Blackberry Bush"
         },
         {
             "type": "tfg:multimultiblock",
@@ -5353,7 +5353,7 @@
             "type": "patchouli:text",
             "anchor": "raspberry",
             "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 5 - 25 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 24 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 200 - 500mm$(br2)Raspberry bushes grow from April to July, start flowering in August and September, and bear fruit in October.$(br2)They can be found in areas with few trees.",
-            "title": "Himbeerbusch"
+            "title": "Raspberry Bush"
         },
         {
             "type": "tfg:multimultiblock",
@@ -5453,7 +5453,7 @@
             "type": "patchouli:text",
             "anchor": "blueberry",
             "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 7 - 29 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 12 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 100 - 400mm$(br2)Blueberry bushes grow from February to May, start flowering in June and July, and bear fruit in August.$(br2)They can be found in areas with few trees.",
-            "title": "Blaubeerbusch"
+            "title": "Blueberry Bush"
         },
         {
             "type": "tfg:multimultiblock",
@@ -5553,7 +5553,7 @@
             "type": "patchouli:text",
             "anchor": "elderberry",
             "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 10 - 33 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 12 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 100 - 400mm$(br2)Elderberry bushes grow from February to May, start flowering in June and July, and bear fruit in August.$(br2)They can be found in areas with few trees.",
-            "title": "Holunderbusch"
+            "title": "Elderberry Bush"
         },
         {
             "type": "tfg:multimultiblock",
@@ -5704,7 +5704,7 @@
             "type": "patchouli:text",
             "anchor": "bunchberry",
             "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 15 - 35 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 24 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 200 - 500mm(br2)Bunchberry bushes grow from May to July, start flowering in August and September, and bear fruit in October.$(br2)They can be found in forests.",
-            "title": "Hartriegelbusch"
+            "title": "Bunchberry Bush"
         },
         {
             "type": "tfg:multimultiblock",
@@ -5768,7 +5768,7 @@
             "type": "patchouli:text",
             "anchor": "gooseberry",
             "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 5 - 27 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 24 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 200 - 500mm$(br2)Gooseberry bushes grow from April to July, start flowering in August and September, and bear fruit in October.$(br2)They can be found in forests.",
-            "title": "Stachelbeerbusch"
+            "title": "Gooseberry Bush"
         },
         {
             "type": "tfg:multimultiblock",
@@ -5832,7 +5832,7 @@
             "type": "patchouli:text",
             "anchor": "snowberry",
             "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -7 - 18 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 24 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 200 - 500mm$(br2)Snowberry bushes grow from March to June, start flowering in July and August, and bear fruit in September.$(br2)They can be found in forests.",
-            "title": "Schneebeerbusch"
+            "title": "Snowberry Bush"
         },
         {
             "type": "tfg:multimultiblock",
@@ -5896,7 +5896,7 @@
             "type": "patchouli:text",
             "anchor": "cloudberry",
             "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -2 - 17 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 9 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 250 - 500mm$(br2)Cloudberry bushes grow from February to May, start flowering in June to August, and bear fruit in September.$(br2)They can be found in forests.",
-            "title": "Moltebeerbusch"
+            "title": "Cloudberry Bush"
         },
         {
             "type": "tfg:multimultiblock",
@@ -5960,7 +5960,7 @@
             "type": "patchouli:text",
             "anchor": "strawberry",
             "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 5 - 28 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 12 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 100 - 400mm$(br2)Strawberry bushes grow from October to December, start flowering in January and February, and bear fruit in March.$(br2)They can be found in forests.",
-            "title": "Erdbeerbusch"
+            "title": "Strawberry Bush"
         },
         {
             "type": "tfg:multimultiblock",
@@ -6024,7 +6024,7 @@
             "type": "patchouli:text",
             "anchor": "wintergreen_berry",
             "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -6 - 17 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 12 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 100 - 400mm$(br2)Wintergreen berry bushes grow from May to September, start flowering in October and November, and bear fruit in December.$(br2)They can be found in forests.",
-            "title": "Scheinbeerbusch"
+            "title": "Wintergreen Berry Bush"
         },
         {
             "type": "tfg:multimultiblock",
@@ -6088,7 +6088,7 @@
             "type": "patchouli:text",
             "anchor": "cranberry",
             "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -5 - 17 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 30 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 250 - 500mm$(br2)Cranberry bushes grow from March to June, start flowering in July and August, and bear fruit in September.$(br2)They can be found in forests. Unlike most small bushes, cranberry bushes are grown underwater.",
-            "title": "Moosbeerbusch"
+            "title": "Cranberry Bush"
         },
         {
             "type": "tfg:multimultiblock",
@@ -6216,7 +6216,7 @@
             "type": "patchouli:text",
             "anchor": "pineapple",
             "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 20 - 32 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 30 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 250 - 500mm$(br2)Pineapple bushes grow from March to June, start flowering in July and August, and bear fruit in September.$(br2)They can be found in forests and are used to make $(l:agriculture/leather_making#pineapple_leather)Pineapple Leather$().",
-            "title": "Ananasstrauch"
+            "title": "Pineapple Bush"
         },
         {
             "type": "tfg:multimultiblock",
@@ -6280,7 +6280,7 @@
             "type": "patchouli:text",
             "anchor": "red_grapes",
             "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 0 - 30 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 0 - 100 %$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 125 - 500mm$(br2)Red grapes spawn naturally, but once harvested from the wild they need to grow on $(item)Trellises$() to produce product.",
-            "title": "Rote Trauben"
+            "title": "Red Grapes"
         },
         {
             "type": "tfg:multimultiblock",
@@ -6318,7 +6318,7 @@
             "type": "patchouli:text",
             "anchor": "white_grapes",
             "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 0 - 30 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 0 - 100 %$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 125 - 500mm$(br2)White grapes spawn naturally, but once harvested from the wild they need to grow on $(item)Trellises$() to produce product.",
-            "title": "Weiße Trauben"
+            "title": "White Grapes"
         },
         {
             "type": "tfg:multimultiblock",

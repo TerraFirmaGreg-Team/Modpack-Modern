@@ -1,5 +1,5 @@
 {
-    "name": "Рыбалка",
+    "name": "Fishing",
     "category": "tfg:agriculture",
     "icon": "tfc:metal/fishing_rod/copper",
     "pages": [
@@ -38,7 +38,7 @@
         {
             "type": "patchouli:spotlight",
             "anchor": "fishing_net",
-            "title": "Рыболовная сеть",
+            "title": "Fishing Nets",
             "item": {
                 "tag": "forge:tools/fishing_nets"
             },
@@ -46,13 +46,13 @@
         },
         {
             "type": "patchouli:crafting",
-            "title": "Рыболовная сеть (Дерево)",
+            "title": "Wood Fishing Net",
             "recipe": "tfc:kjs/damage/shaped/fishing_net/wood",
             "text": "Базовая $(item)Деревянная рыболовная сеть$()."
         },
         {
             "type": "patchouli:relations",
-            "title": "Читать дальше",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:cooking/cooking_methods",

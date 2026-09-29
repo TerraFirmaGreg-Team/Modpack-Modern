@@ -400,7 +400,7 @@
                     "bold": true
                 },
                 {
-                    "text": "바질"
+                    "text": "Basil"
                 },
                 {
                     "text": "12 - 25"
@@ -409,7 +409,7 @@
                     "text": "300 - 500"
                 },
                 {
-                    "text": "월계수"
+                    "text": "Bay Laurel"
                 },
                 {
                     "text": "8 - 14"
@@ -418,7 +418,7 @@
                     "text": "25 - 225"
                 },
                 {
-                    "text": "카다멈"
+                    "text": "Cardamom"
                 },
                 {
                     "text": "18 - 30"
@@ -427,7 +427,7 @@
                     "text": "350 - 500"
                 },
                 {
-                    "text": "고수"
+                    "text": "Cilantro"
                 },
                 {
                     "text": "5 - 15"
@@ -436,7 +436,7 @@
                     "text": "0 - 150"
                 },
                 {
-                    "text": "큐민"
+                    "text": "Cumin"
                 },
                 {
                     "text": "6 - 20"
@@ -445,7 +445,7 @@
                     "text": "50 - 250"
                 },
                 {
-                    "text": "오레가노"
+                    "text": "Oregano"
                 },
                 {
                     "text": "5 - 13"
@@ -454,7 +454,7 @@
                     "text": "50 - 150"
                 },
                 {
-                    "text": "피멘토"
+                    "text": "Pimento"
                 },
                 {
                     "text": "15 - 30"
@@ -463,7 +463,7 @@
                     "text": "200 - 450"
                 },
                 {
-                    "text": "바닐라"
+                    "text": "Vanilla"
                 },
                 {
                     "text": "18 - 30"
@@ -502,7 +502,7 @@
                     "X": "firmalife:plant/basil[stage=1]"
                 }
             },
-            "name": "바질",
+            "name": "Basil",
             "anchor": "basil",
             "text": "$(thing)야생 바질$()은 기온 12~25°C, 강수량 300~500mm 환경에서 자랍니다.",
             "enable_visualize": false
@@ -522,7 +522,7 @@
                     "X": "firmalife:plant/bay_laurel[stage=1]"
                 }
             },
-            "name": "월계수",
+            "name": "Bay Laurel",
             "anchor": "bay",
             "text": "$(thing)야생 월계수$()는 기온 8~14°C, 강수량 25~225mm 환경에서 자랍니다.",
             "enable_visualize": false
@@ -542,7 +542,7 @@
                     "X": "firmalife:plant/cardamom[stage=1]"
                 }
             },
-            "name": "카다멈",
+            "name": "Cardamom",
             "anchor": "cardamom",
             "text": "$(thing)야생 카다멈$()은 기온 18~30°C, 강수량 350~500mm 환경에서 자랍니다.",
             "enable_visualize": false
@@ -562,7 +562,7 @@
                     "X": "firmalife:plant/cilantro[stage=1]"
                 }
             },
-            "name": "고수",
+            "name": "Cilantro",
             "anchor": "cilantro",
             "text": "$(thing)야생 고수$()는 기온 5~15°C, 강수량 0~150mm 환경에서 자랍니다.",
             "enable_visualize": false
@@ -582,7 +582,7 @@
                     "X": "firmalife:plant/cumin[stage=1]"
                 }
             },
-            "name": "큐민",
+            "name": "Cumin",
             "anchor": "cumin",
             "text": "$(thing)야생 커민$()은 기온 6~20°C, 강수량 50~250mm 환경에서 자랍니다.",
             "enable_visualize": false
@@ -602,7 +602,7 @@
                     "X": "firmalife:plant/oregano[stage=1]"
                 }
             },
-            "name": "오레가노",
+            "name": "Oregano",
             "anchor": "oregano",
             "text": "$(thing)야생 오레가노$()는 기온 5~13°C, 강수량 50~150mm 환경에서 자랍니다.",
             "enable_visualize": false
@@ -622,7 +622,7 @@
                     "X": "firmalife:plant/pimento[stage=1]"
                 }
             },
-            "name": "피멘토",
+            "name": "Pimento",
             "anchor": "pimento",
             "text": "$(thing)야생 피멘토$()는 기온 15~30°C, 강수량 200~450mm 환경에서 자랍니다.",
             "enable_visualize": false
@@ -642,7 +642,7 @@
                     "X": "firmalife:plant/vanilla[stage=1]"
                 }
             },
-            "name": "바닐라",
+            "name": "Vanilla",
             "anchor": "vanilla",
             "text": "$(thing)야생 바닐라$()는 기온 18~30°C, 강수량 200~500mm 환경에서 자랍니다.",
             "enable_visualize": false
@@ -668,7 +668,7 @@
                     "X": "firmalife:plant/butterfly_grass"
                 }
             },
-            "name": "나비 풀",
+            "name": "Butterfly Grass",
             "anchor": "butterfly_grass",
             "text": "나비풀.",
             "enable_visualize": false

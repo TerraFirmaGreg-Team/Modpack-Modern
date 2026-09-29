@@ -5,7 +5,7 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "title": "Wprowadzenie",
+            "title": "Introduction",
             "anchor": "intro",
             "text": "If you are tired of drinking directly out of streams and ponds like a wild horse then consider making a $(item)Drinking Vessel!$()$(br2)Every time you drink from a vessel you will consume $(thing)100mB$() of fluid and damage the vessel 1 durability (if applicable) or has a chance of breaking (if applicable, can be changed in TFC server config)."
         },
@@ -18,7 +18,7 @@
             "anchor": "table",
             "strings": [
                 {
-                    "text": "Waza",
+                    "text": "Vessel",
                     "bold": true
                 },
                 {
@@ -39,7 +39,7 @@
                     "text": "2%"
                 },
                 {
-                    "text": "Kieliszek do wina"
+                    "text": "Wine Glass"
                 },
                 {
                     "text": "100"
@@ -48,7 +48,7 @@
                     "text": "2%"
                 },
                 {
-                    "text": "Skórzany bukłak"
+                    "text": "Leather Flask"
                 },
                 {
                     "text": "500"
@@ -57,7 +57,7 @@
                     "text": "100"
                 },
                 {
-                    "text": "Żelazna manierka"
+                    "text": "Iron Flask"
                 },
                 {
                     "text": "2000"
@@ -66,7 +66,7 @@
                     "text": "400"
                 },
                 {
-                    "text": "Manierka z czerwonej stali"
+                    "text": "Red Steel Flask"
                 },
                 {
                     "text": "2000"
@@ -162,7 +162,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Czytaj dalej",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:cooking/drinks",

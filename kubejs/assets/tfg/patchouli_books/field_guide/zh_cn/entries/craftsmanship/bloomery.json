@@ -1,5 +1,5 @@
 {
-    "name": "锻铁炉",
+    "name": "Bloomery",
     "category": "tfg:craftsmanship",
     "icon": "tfc:bloomery",
     "pages": [
@@ -76,15 +76,15 @@
                     "bold": true
                 },
                 {
-                    "text": "铁",
+                    "text": "Iron",
                     "bold": true
                 },
                 {
-                    "text": "燃油",
+                    "text": "Fuel",
                     "bold": true
                 },
                 {
-                    "text": "槽",
+                    "text": "Slots",
                     "bold": true
                 },
                 {
@@ -198,7 +198,7 @@
         {
             "type": "patchouli:spotlight",
             "anchor": "steam_bloomery",
-            "title": "蒸汽锻铁炉",
+            "title": "Steam Bloomery",
             "item": "tfg:steam_bloomery",
             "text": "Available with the creation of $(item)Black Steel$() is the $(thing)Steam Bloomery$(). This structure is capable of producing blooms automatically, on top of being faster and more efficent than the traditional bloomery by using high-pressure steam."
         },
@@ -241,13 +241,13 @@
                     "O": "gtceu:steam_output_bus[facing=north]"
                 }
             },
-            "name": "结构",
+            "name": "Structure",
             "text": "A steam bloomery requires item input and item output buses, a steam input hatch, and three Bronze Firebox Casings.",
             "enable_visualize": true
         },
         {
             "type": "patchouli:relations",
-            "title": "延伸阅读",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:craftsmanship/pottery",

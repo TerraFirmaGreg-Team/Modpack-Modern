@@ -39,7 +39,7 @@
 					"bold": true
 				},
 				{
-					"text": "Érlelt",
+					"text": "Aged",
 					"bold": true
 				},
 				{
@@ -47,7 +47,7 @@
 					"bold": true
 				},
 				{
-					"text": "Sör"
+					"text": "Beer"
 				},
 				{
 					"text": "Absorption II (5:20)"
@@ -56,7 +56,7 @@
 					"text": "Absorption III (8:00)"
 				},
 				{
-					"text": "Almabor"
+					"text": "Cider"
 				},
 				{
 					"text": "Speed (5:20)"
@@ -74,7 +74,7 @@
 					"text": "Speed III (4:00)"
 				},
 				{
-					"text": "Szaké"
+					"text": "Sake"
 				},
 				{
 					"text": "Resistance (5:20)"
@@ -92,7 +92,7 @@
 					"text": "Resistance III (4:00)"
 				},
 				{
-					"text": "Whisky"
+					"text": "Whiskey"
 				},
 				{
 					"text": "Haste II (2:40)"
@@ -101,7 +101,7 @@
 					"text": "Haste III (4:00)"
 				},
 				{
-					"text": "Kukorica wishky"
+					"text": "Corn Whiskey"
 				},
 				{
 					"text": "Haste (5:20)"
@@ -110,7 +110,7 @@
 					"text": "Haste II (8:00)"
 				},
 				{
-					"text": "Rozs whisky"
+					"text": "Rye Whiskey"
 				},
 				{
 					"text": "Haste (5:20)"
@@ -119,7 +119,7 @@
 					"text": "Haste II (8:00)"
 				},
 				{
-					"text": "Mézsör"
+					"text": "Mead"
 				},
 				{
 					"text": "Regeneration (5:20)"
@@ -161,28 +161,28 @@
 			"anchor": "milk"
 		},
 		{
-			"title": "Forrásvíz",
+			"title": "Spring Water",
 			"text": "Drinking $(thing)Spring Water$() warms you up by 4°C and applies a small regeneration effect while standing in it, as well as warming you.",
 			"item": "tfc:bucket/spring_water",
 			"type": "patchouli:spotlight",
 			"anchor": "spring_water"
 		},
 		{
-			"title": "Tengervíz",
+			"title": "Sea Water",
 			"text": "Drinking $(thing)Sea Water$() does not hydrate you and will make you more thirsty instead. A hot body temperature can also make you more thirsty. Lost at sea? Look upwards when it's raining for some easy hydration!",
 			"type": "patchouli:spotlight",
 			"item": "tfc:bucket/salt_water",
 			"anchor": "sea_water"
 		},
 		{
-			"title": "Sáros víz",
+			"title": "Muddy Water",
 			"text": "Drinking $(thing)Muddy Water$() is not recommended. Doing so will make you nauseous and give you $(l:cooking/food_and_water#parasites)parasites$().",
 			"type": "patchouli:spotlight",
 			"item": "tfg:muddy_water_bucket",
 			"anchor": "muddy_water"
 		},
 		{
-			"title": "Gyümölcslé",
+			"title": "Fruit Juice",
 			"text": "$(thing)Fruit Juice$() is a great way to condense your fruits into a longer lasting food item. Fruit juice provides the $(l:cooking/food_and_water#quenching_transient_effect)Quenching Effect$(), which helps stave off thirst.$(br2)Fruit Juice will expire over time.$()",
 			"type": "patchouli:spotlight",
 			"anchor": "juice",

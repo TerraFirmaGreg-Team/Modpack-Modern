@@ -7,7 +7,7 @@
             "type": "patchouli:text",
             "anchor": "intro",
             "text": "Toutes les cultures doivent être plantées sur de la terre labourée pour pousser. Certaines cultures ont des exigences supplémentaires comme être submergées ou avoir besoin d'un tuteur.$(br2)Bien que les cultures n'aient pas besoin de $(thing)nutriments$() pour pousser, ceux-ci aident grandement. Il y a tois nutriments : l'$(b)Azote$(), le $(6)Phosphore$(), et le $(d)Potassium$(). Chaque culture possède un nutriment favori.",
-            "title": "Faire pousser vos cultures"
+            "title": "Growing Crops"
         },
         {
             "type": "patchouli:text",
@@ -86,7 +86,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Pour aller plus loin",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:the_world/wild_crops",

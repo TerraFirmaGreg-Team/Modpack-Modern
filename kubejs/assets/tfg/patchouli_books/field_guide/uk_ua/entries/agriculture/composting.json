@@ -1,11 +1,11 @@
 {
-    "name": "Компостування",
+    "name": "Composting",
     "category": "tfg:agriculture",
     "icon": "tfc:composter",
     "pages": [
         {
             "type": "patchouli:text",
-            "title": "Індекс",
+            "title": "Index",
             "anchor": "index",
             "text": "$(li)$(bold)$(l:agriculture/composting#compostables)Матеріали для компосту$()$(li2)$(l:agriculture/composting#green_compost)Зелений компост$()$(li2)$(l:agriculture/composting#brown_compost)Коричневий компост$()$(li2)$(l:agriculture/composting#compost_poisons)Гнилий компост$()$(li)$(bold)$(l:agriculture/composting#compost_tumbler)Барабанний компостер$()"
         },
@@ -111,7 +111,7 @@
                 }
             },
             "anchor": "rotten_compost",
-            "name": "Зіпсований компост",
+            "name": "Rotten Compost",
             "text": "Зіпсований компост",
             "enable_visualize": false
         },
@@ -135,7 +135,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Додаткове читання",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:cooking/decay",

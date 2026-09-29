@@ -56,7 +56,7 @@
 			"images": [
 				"tfc:textures/gui/book/gui/rock_knapping.png"
 			],
-			"text": "L'Interface de taille.",
+			"text": "The Knapping Interface.",
 			"border": false
 		},
 		{
@@ -128,7 +128,7 @@
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Pour aller plus loin",
+			"title": "Further Reading",
 			"anchor": "relations",
 			"entries": [
 				"tfg:the_world/wild_fruits",

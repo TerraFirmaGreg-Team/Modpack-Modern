@@ -38,7 +38,7 @@
         {
             "type": "patchouli:spotlight",
             "anchor": "fishing_net",
-            "title": "漁網",
+            "title": "Fishing Nets",
             "item": {
                 "tag": "forge:tools/fishing_nets"
             },
@@ -46,7 +46,7 @@
         },
         {
             "type": "patchouli:crafting",
-            "title": "木製漁網",
+            "title": "Wood Fishing Net",
             "recipe": "tfc:kjs/damage/shaped/fishing_net/wood",
             "text": "A basic $(item)Wood Fishing Net$()."
         },

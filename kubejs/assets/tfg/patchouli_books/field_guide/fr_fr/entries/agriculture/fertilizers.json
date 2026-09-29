@@ -5,7 +5,7 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "title": "Tout",
+            "title": "Index",
             "anchor": "index",
             "text": "$(li)$(bold)$(l:agriculture/fertilizers#compost)Compost$()$(li)$(bold)$(l:agriculture/fertilizers#bone_meal)Bone Meal$()$(li)$(bold)$(l:agriculture/fertilizers#saltpeter)Salt Peter$()$(li)$(bold)$(l:agriculture/fertilizers#guano)Guano$()$(li)$(bold)$(l:agriculture/fertilizers#wood_ash)Wood Ash$()$(li)$(bold)$(l:agriculture/fertilizers#sylvite)Sylvite$()$(li)$(bold)$(l:agriculture/fertilizers#pure_fertilizers)Pure Fertilizers$()$(li)$(bold)$(l:agriculture/fertilizers#fertilizer)Fertilizer$()"
         },
@@ -27,7 +27,7 @@
             "type": "patchouli:spotlight",
             "item": "minecraft:bone_meal",
             "anchor": "bone_meal",
-            "title": "Poudre d'os",
+            "title": "Bone Meal",
             "link_recipes": false,
             "text": "Bonemeal is made of crushed bones. $(br)$(li)$(6)Phosphorous: 10$()"
         },
@@ -35,7 +35,7 @@
             "type": "patchouli:spotlight",
             "item": "tfc:powder/saltpeter",
             "anchor": "saltpeter",
-            "title": "Salpêtre",
+            "title": "Saltpeter",
             "link_recipes": false,
             "text": "Saltpeter is made from its ore. $(br)$(li)$(b)Nitrogen: 10$()$(li)$(d)Potassium: 40$()"
         },
@@ -51,7 +51,7 @@
             "type": "patchouli:spotlight",
             "item": "tfc:powder/wood_ash",
             "anchor": "wood_ash",
-            "title": "Cendres de bois",
+            "title": "Wood Ash",
             "link_recipes": false,
             "text": "Wood ash is produced by breaking firepits. Throwing a torch item into water also has a chance to produce ash. $(br)$(li)$(6)Phosphorous: 10$()$(li)$(d)Potassium: 30$()"
         },
@@ -75,13 +75,13 @@
             "type": "patchouli:spotlight",
             "item": "gtceu:fertilizer",
             "anchor": "fertilizer",
-            "title": "Engrais",
+            "title": "Fertilizer",
             "link_recipes": false,
             "text": "Fertilizer contains an even spread of nutrient types. Crafting it from compost will give an overall higher yield in nutrients. $(br)$(li)$(d)Potassium: 15$()$(li)$(b)Nitrogen: 15$()$(li)$(6)Phosphorous: 15$()"
         },
         {
             "type": "patchouli:relations",
-            "title": "Pour aller plus loin",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:agriculture/growing_crops",

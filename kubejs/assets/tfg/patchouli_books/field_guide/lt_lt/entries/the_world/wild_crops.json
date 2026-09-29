@@ -34,19 +34,19 @@
             "type": "tfg:table",
             "strings": [
                 {
-                    "text": "Pasėlis",
+                    "text": "Crop",
                     "bold": true
                 },
                 {
-                    "text": "Temperatūra (°C)",
+                    "text": "Temperature (°C)",
                     "bold": true
                 },
                 {
-                    "text": "Kritulių kiekis (mm)",
+                    "text": "Rainfall (mm)",
                     "bold": true
                 },
                 {
-                    "text": "Miežiai"
+                    "text": "Barley"
                 },
                 {
                     "text": " -8 - 26"
@@ -55,7 +55,7 @@
                     "text": " 70 - 310"
                 },
                 {
-                    "text": "Avižos"
+                    "text": "Oat"
                 },
                 {
                     "text": "  3 - 40"
@@ -64,7 +64,7 @@
                     "text": "140 - 400"
                 },
                 {
-                    "text": "Rugiai"
+                    "text": "Rye"
                 },
                 {
                     "text": "-11 - 30"
@@ -73,7 +73,7 @@
                     "text": "100 - 350"
                 },
                 {
-                    "text": "Kukurūzai"
+                    "text": "Maize"
                 },
                 {
                     "text": " 13 - 40"
@@ -82,7 +82,7 @@
                     "text": "300 - 500"
                 },
                 {
-                    "text": "Kviečiai"
+                    "text": "Wheat"
                 },
                 {
                     "text": " -4 - 35"
@@ -91,7 +91,7 @@
                     "text": "100 - 400"
                 },
                 {
-                    "text": "Ryžiai"
+                    "text": "Rice"
                 },
                 {
                     "text": " 15 - 30"
@@ -100,7 +100,7 @@
                     "text": "100 - 500"
                 },
                 {
-                    "text": "Burokas"
+                    "text": "Beet"
                 },
                 {
                     "text": " -5 - 20"
@@ -109,7 +109,7 @@
                     "text": " 70 - 300"
                 },
                 {
-                    "text": "Kopūstas"
+                    "text": "Cabbage"
                 },
                 {
                     "text": "-10 - 27"
@@ -118,7 +118,7 @@
                     "text": " 60 - 280"
                 },
                 {
-                    "text": "Morka"
+                    "text": "Carrot"
                 },
                 {
                     "text": "  3 - 30"
@@ -127,7 +127,7 @@
                     "text": "100 - 400"
                 },
                 {
-                    "text": "Česnakas"
+                    "text": "Garlic"
                 },
                 {
                     "text": "-20 - 18"
@@ -136,7 +136,7 @@
                     "text": " 60 - 310"
                 },
                 {
-                    "text": "Žalia pupelė"
+                    "text": "Green Bean"
                 },
                 {
                     "text": "  2 - 35"
@@ -145,7 +145,7 @@
                     "text": "150 - 410"
                 },
                 {
-                    "text": "Arbūzas"
+                    "text": "Melon"
                 },
                 {
                     "text": "  5 - 37"
@@ -173,19 +173,19 @@
             "type": "tfg:table",
             "strings": [
                 {
-                    "text": "Pasėlis",
+                    "text": "Crop",
                     "bold": true
                 },
                 {
-                    "text": "Temperatūra (°C)",
+                    "text": "Temperature (°C)",
                     "bold": true
                 },
                 {
-                    "text": "Kritulių kiekis (mm)",
+                    "text": "Rainfall (mm)",
                     "bold": true
                 },
                 {
-                    "text": "Bulvė"
+                    "text": "Potato"
                 },
                 {
                     "text": " -1 - 37"
@@ -194,7 +194,7 @@
                     "text": "200 - 410"
                 },
                 {
-                    "text": "Moliūgas"
+                    "text": "Pumpkin"
                 },
                 {
                     "text": "  0 - 30"
@@ -203,7 +203,7 @@
                     "text": "120 - 390"
                 },
                 {
-                    "text": "Svogūnas"
+                    "text": "Onion"
                 },
                 {
                     "text": "  0 - 30"
@@ -212,7 +212,7 @@
                     "text": "100 - 390"
                 },
                 {
-                    "text": "Sojos pupelė"
+                    "text": "Soybean"
                 },
                 {
                     "text": "  8 - 30"
@@ -221,7 +221,7 @@
                     "text": "160 - 410"
                 },
                 {
-                    "text": "Skvošas"
+                    "text": "Squash"
                 },
                 {
                     "text": "  5 - 33"
@@ -230,7 +230,7 @@
                     "text": " 90 - 390"
                 },
                 {
-                    "text": "Cukranendrės"
+                    "text": "Sugarcane"
                 },
                 {
                     "text": " 12 - 38"
@@ -239,7 +239,7 @@
                     "text": "160 - 500"
                 },
                 {
-                    "text": "Pomidoras"
+                    "text": "Tomato"
                 },
                 {
                     "text": "  0 - 36"
@@ -248,7 +248,7 @@
                     "text": "120 - 390"
                 },
                 {
-                    "text": "Džiutas"
+                    "text": "Jute"
                 },
                 {
                     "text": "  5 - 37"
@@ -257,7 +257,7 @@
                     "text": "100 - 410"
                 },
                 {
-                    "text": "Papirusas"
+                    "text": "Papyrus"
                 },
                 {
                     "text": " 19 - 37"
@@ -266,7 +266,7 @@
                     "text": "310 - 500"
                 },
                 {
-                    "text": "Raudonoji paprika\n"
+                    "text": "Red Bell Pepper"
                 },
                 {
                     "text": " 16 - 30"
@@ -275,7 +275,7 @@
                     "text": "190 - 400"
                 },
                 {
-                    "text": "Geltonoji paprika"
+                    "text": "Yellow Bell Pepper"
                 },
                 {
                     "text": " 16 - 30"
@@ -284,7 +284,7 @@
                     "text": "190 - 400"
                 },
                 {
-                    "text": "Saulėgrąža"
+                    "text": "Sunflower"
                 },
                 {
                     "text": "  5 - 40"
@@ -294,7 +294,7 @@
                 }
             ],
             "text": "",
-            "title": "Laukinių pasėlių reikalavimai",
+            "title": "Wild Crop Requirements",
             "legend": [],
             "columns": 2,
             "first_column_width": 80,
@@ -312,19 +312,19 @@
             "type": "tfg:table",
             "strings": [
                 {
-                    "text": "Pasėlis",
+                    "text": "Crop",
                     "bold": true
                 },
                 {
-                    "text": "Temperatūra (°C)",
+                    "text": "Temperature (°C)",
                     "bold": true
                 },
                 {
-                    "text": "Kritulių kiekis (mm)",
+                    "text": "Rainfall (mm)",
                     "bold": true
                 },
                 {
-                    "text": "Rapsas"
+                    "text": "Canola"
                 },
                 {
                     "text": " -5 - 25"
@@ -333,7 +333,7 @@
                     "text": " 50 - 350"
                 },
                 {
-                    "text": "Linas"
+                    "text": "Flax"
                 },
                 {
                     "text": " -8 - 25"
@@ -342,7 +342,7 @@
                     "text": "175 - 475"
                 },
                 {
-                    "text": "Agurkas"
+                    "text": "Cucumber"
                 },
                 {
                     "text": " 15 - 40"
@@ -351,7 +351,7 @@
                     "text": "350 - 500"
                 },
                 {
-                    "text": "Ridikas"
+                    "text": "Radish"
                 },
                 {
                     "text": " -16 - 4"
@@ -360,7 +360,7 @@
                     "text": "75 - 325"
                 },
                 {
-                    "text": "Lęšiai"
+                    "text": "Lentil"
                 },
                 {
                     "text": " -18 - 2"
@@ -370,7 +370,7 @@
                 }
             ],
             "text": "",
-            "title": "Laukinių pasėlių reikalavimai",
+            "title": "Wild Crop Requirements",
             "legend": [],
             "columns": 2,
             "first_column_width": 80,
@@ -388,7 +388,7 @@
             "type": "patchouli:text",
             "anchor": "barley",
             "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -8 - 26 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 18 - 75 %$(br)$(bold)Nutrient$(): Nitrogen$(br2)Barley is a single block crop. Barley seeds can be planted on farmland and will produce $(thing)Barley$() and $(thing)Barley Seeds$() as a product.",
-            "title": "Miežiai"
+            "title": "Barley"
         },
         {
             "type": "tfg:multimultiblock",
@@ -536,7 +536,7 @@
             "type": "patchouli:text",
             "anchor": "oat",
             "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 3 - 40 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 35 - 100 %$(br)$(bold)Nutrient$(): Phosphorus$(br2)Oat is a single block crop. Oat seeds can be planted on farmland and will produce $(thing)Oat$() and $(thing)Oat Seeds$() as a product.",
-            "title": "Avižos"
+            "title": "Oat"
         },
         {
             "type": "tfg:multimultiblock",
@@ -684,7 +684,7 @@
             "type": "patchouli:text",
             "anchor": "rye",
             "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -11 - 30 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 25 - 85 %$(br)$(bold)Nutrient$(): Phosphorus$(br2)Rye is a single block crop. Rye seeds can be planted on farmland and will produce $(thing)Rye$() and $(thing)Rye Seeds$() as a product.",
-            "title": "Rugiai"
+            "title": "Rye"
         },
         {
             "type": "tfg:multimultiblock",
@@ -832,7 +832,7 @@
             "type": "patchouli:text",
             "anchor": "maize",
             "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 13 - 40 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 75 - 100 %$(br)$(bold)Nutrient$(): Phosphorus$(br2)Maize is a two block tall crop. Maize seeds can be planted on farmland, will grow two blocks tall, and will produce $(thing)Maize$() and $(thing)Maize Seeds$() as a product.",
-            "title": "Kukurūzai"
+            "title": "Maize"
         },
         {
             "type": "tfg:multimultiblock",
@@ -970,7 +970,7 @@
             "type": "patchouli:text",
             "anchor": "wheat",
             "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -4 - 35 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 25 - 100 %$(br)$(bold)Nutrient$(): Phosphorus$(br2)Wheat is a single block crop. Wheat seeds can be planted on farmland and will produce $(thing)Wheat$() and $(thing)Wheat Seeds$() as a product.",
-            "title": "Kviečiai"
+            "title": "Wheat"
         },
         {
             "type": "tfg:multimultiblock",
@@ -1118,7 +1118,7 @@
             "type": "patchouli:text",
             "anchor": "rice",
             "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 15 - 30 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 25 - 100 %$(br)$(bold)Nutrient$(): Phosphorus$(br2)Rice is a single block crop. Rice must be grown underwater - it must be planted on farmland, in freshwater that is a single block deep. It will produce $(thing)Rice$() and $(thing)Rice Seeds$() as a product.",
-            "title": "Ryžiai"
+            "title": "Rice"
         },
         {
             "type": "tfg:multimultiblock",
@@ -1266,7 +1266,7 @@
             "type": "patchouli:text",
             "anchor": "beet",
             "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -5 - 20 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 18 - 85 %$(br)$(bold)Nutrient$(): Potassium$(br2)Beets are a single block crop. Beet seeds can be planted on farmland and will produce $(thing)Beet$() and $(thing)Beet Seeds$() as a product.",
-            "title": "Burokas"
+            "title": "Beet"
         },
         {
             "type": "tfg:multimultiblock",
@@ -1380,7 +1380,7 @@
             "type": "patchouli:text",
             "anchor": "cabbage",
             "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -10 - 27 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 15 - 65 %$(br)$(bold)Nutrient$(): Nitrogen$(br2)Cabbage is a single block crop. Cabbage seeds can be planted on farmland and will produce $(thing)Cabbage$() and $(thing)Cabbage Seeds$() as a product.",
-            "title": "Kopūstas"
+            "title": "Cabbage"
         },
         {
             "type": "tfg:multimultiblock",
@@ -1494,7 +1494,7 @@
             "type": "patchouli:text",
             "anchor": "carrot",
             "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 3 - 30 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 25 - 100 %$(br)$(bold)Nutrient$(): Potassium$(br2)Carrot is a single block crop. Carrot seeds can be planted on farmland and will produce $(thing)Carrot$() and $(thing)Carrot Seeds$() as a product.",
-            "title": "Morka"
+            "title": "Carrot"
         },
         {
             "type": "tfg:multimultiblock",
@@ -1591,7 +1591,7 @@
             "type": "patchouli:text",
             "anchor": "garlic",
             "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -20 - 18 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 15 - 75 %$(br)$(bold)Nutrient$(): Nitrogen$(br2)Garlic is a single block crop. Garlic seeds can be planted on farmland and will produce $(thing)Garlic$() and $(thing)Garlic Seeds$() as a product.",
-            "title": "Česnakas"
+            "title": "Garlic"
         },
         {
             "type": "tfg:multimultiblock",
@@ -1868,7 +1868,7 @@
             "type": "patchouli:text",
             "anchor": "potato",
             "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -1 - 37 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 50 - 100 %$(br)$(bold)Nutrient$(): Potassium$(br2)Potatoes are a single block crop. Potato seeds can be planted on farmland and will produce $(thing)Potatoes$() and $(thing)Potato Seeds$() as a product.",
-            "title": "Bulvės"
+            "title": "Potatoes"
         },
         {
             "type": "tfg:multimultiblock",
@@ -2736,7 +2736,7 @@
             "type": "patchouli:text",
             "anchor": "soybean",
             "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 8 - 30 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 40 - 100 %$(br)$(bold)Nutrient$(): Nitrogen$(br2)Soybean is a single block crop. Soybean seeds can be planted on farmland and will produce $(thing)Soybean$() and $(thing)Soybean Seeds$() as a product.",
-            "title": "Sojos pupelė"
+            "title": "Soybean"
         },
         {
             "type": "tfg:multimultiblock",
@@ -2867,7 +2867,7 @@
             "type": "patchouli:text",
             "anchor": "squash",
             "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 5 - 33 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 23 - 95 %$(br)$(bold)Nutrient$(): Potassium$(br2)Squash is a single block crop. Squash seeds can be planted on farmland and will produce $(thing)Squash$() and $(thing)Squash Seeds$() as a product.",
-            "title": "Skvošas"
+            "title": "Squash"
         },
         {
             "type": "tfg:multimultiblock",
@@ -3015,7 +3015,7 @@
             "type": "patchouli:text",
             "anchor": "sugarcane",
             "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 12 - 38 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 40 - 100 %$(br)$(bold)Nutrient$(): Potassium$(br2)Sugarcane is a two block tall crop. Sugarcane seeds can be planted on farmland, will grow two blocks tall, and will produce $(thing)Sugarcane$() and $(thing)Sugarcane Seeds$() as a product. Sugarcane can be used to make $(thing)Sugar$().",
-            "title": "Cukranendrės"
+            "title": "Sugarcane"
         },
         {
             "type": "tfg:multimultiblock",
@@ -3375,7 +3375,7 @@
             "type": "patchouli:text",
             "anchor": "jute",
             "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 5 - 37 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 25 - 100 %$(br)$(bold)Nutrient$(): Potassium$(br2)Jute is a two block tall crop. Jute seeds can be planted on farmland, will grow two blocks tall, and will produce $(thing)Jute$() and $(thing)Jute Seeds$() as a product.",
-            "title": "Džiutas"
+            "title": "Jute"
         },
         {
             "type": "tfg:multimultiblock",
@@ -3513,7 +3513,7 @@
             "type": "patchouli:text",
             "anchor": "papyrus",
             "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 19 - 37 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 70 - 100 %$(br)$(bold)Nutrient$(): Potassium$(br2)Papyrus is a two block tall crop. Papyrus seeds can be planted on farmland, will grow two blocks tall, and will produce $(l:agriculture/papermaking)Papyrus$() and $(thing)Papyrus Seeds$() as a product.",
-            "title": "Papirusas"
+            "title": "Papyrus"
         },
         {
             "type": "tfg:multimultiblock",
@@ -3651,7 +3651,7 @@
             "type": "patchouli:text",
             "anchor": "sunflower",
             "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 5 - 40 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 20 - 80 %$(br)$(bold)Nutrient$(): Nitrogen$(br2)A Sunflower is a two block tall crop. Sunflower seeds can be planted on farmland, will grow two blocks tall, and will produce $(item)Sunflower Caps$() which can be processed into $(thing)Seed Oil$(). Seed Oil can both be used as Lamp Fuel, as well as $(thing)Bio Diesel$() later on.$(br)A Sunflower also counts as a Flower for the purposes of $(l:agriculture/beekeeping)Beekeeping$().",
-            "title": "Saulėgrąža"
+            "title": "Sunflower"
         },
         {
             "type": "tfg:multimultiblock",
@@ -3810,7 +3810,7 @@
             "type": "patchouli:text",
             "anchor": "canola",
             "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -5 - 25 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 10 - 60 %$(br)$(bold)Nutrient$(): Phosphorus$(br2)Canola is a two block tall crop. Canola seeds can be planted on farmland, will grow two blocks tall, and will produce $(item)Canola Ovules$() which can be processed into $(thing)Seed Oil$(). Seed Oil can both be used as Lamp Fuel, as well as $(thing)Bio Diesel$() later on.$(br)Canola also counts as a Flower for the purposes of $(l:agriculture/beekeeping)Beekeeping$().",
-            "title": "Rapsas"
+            "title": "Canola"
         },
         {
             "type": "tfg:multimultiblock",
@@ -3970,7 +3970,7 @@
             "type": "patchouli:text",
             "anchor": "flax",
             "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -8 - 25 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 15 - 65 %$(br)$(bold)Nutrient$(): Nitrogen$(br2)Flax is a two block tall crop. Flax seeds can be planted on farmland, will grow two blocks tall, and will produce $(item)Flax Stems$() which can be processed into $(thing)Linen$() or $(thing)Burlap$().$(br)Flax also counts as a Flower for the purposes of $(l:agriculture/beekeeping)Beekeeping$().",
-            "title": "Linas"
+            "title": "Flax"
         },
         {
             "type": "tfg:multimultiblock",
@@ -4129,7 +4129,7 @@
             "type": "patchouli:text",
             "anchor": "cucumber",
             "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 5 - 40 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 70 - 100 %$(br)$(bold)Nutrient$(): Nitrogen$(br2)Cucumbers are a two block tall crop. Cucumber seeds can be planted on farmland, will grow two blocks tall, and will produce $(item)Cucumbers$() which give $(thing)Vegetable$() nutrition.$(br)$(bold)Cucumbers need a stick to fully mature.$()",
-            "title": "Agurkas"
+            "title": "Cucumber"
         },
         {
             "type": "tfg:multimultiblock",
@@ -4267,7 +4267,7 @@
         {
             "type": "patchouli:text",
             "anchor": "radish",
-            "title": "Ridikas",
+            "title": "Radish",
             "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -20 - 20 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 15 - 65 %$(br)$(bold)Nutrient$(): Potassium$(br2)Radishes can be eaten for $(thing)Vegetable$() nutrition. If you need a plant that can survive in colder temperatures, radishes are a good choice."
         },
         {
@@ -4382,7 +4382,7 @@
         {
             "type": "patchouli:text",
             "anchor": "lentil",
-            "title": "Lęšiai",
+            "title": "Lentil",
             "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -20 - 18 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 50 - 100 %$(br)$(bold)Nutrient$(): Phosphorus$(br2)Lentils can be eaten for $(thing)Vegetable$() nutrition, although it is recommended to cook them first. Lentils are another good choice for farming in colder climates."
         },
         {

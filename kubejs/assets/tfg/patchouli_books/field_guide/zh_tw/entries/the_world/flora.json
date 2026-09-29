@@ -400,7 +400,7 @@
                     "bold": true
                 },
                 {
-                    "text": "羅勒"
+                    "text": "Basil"
                 },
                 {
                     "text": "12 - 25"
@@ -409,7 +409,7 @@
                     "text": "300 - 500"
                 },
                 {
-                    "text": "月桂"
+                    "text": "Bay Laurel"
                 },
                 {
                     "text": "8 - 14"
@@ -418,7 +418,7 @@
                     "text": "25 - 225"
                 },
                 {
-                    "text": "豆蔻"
+                    "text": "Cardamom"
                 },
                 {
                     "text": "18 - 30"
@@ -427,7 +427,7 @@
                     "text": "350 - 500"
                 },
                 {
-                    "text": "香菜"
+                    "text": "Cilantro"
                 },
                 {
                     "text": "5 - 15"
@@ -436,7 +436,7 @@
                     "text": "0 - 150"
                 },
                 {
-                    "text": "孜然芹"
+                    "text": "Cumin"
                 },
                 {
                     "text": "6 - 20"
@@ -445,7 +445,7 @@
                     "text": "50 - 250"
                 },
                 {
-                    "text": "滇香薷"
+                    "text": "Oregano"
                 },
                 {
                     "text": "5 - 13"
@@ -454,7 +454,7 @@
                     "text": "50 - 150"
                 },
                 {
-                    "text": "全香子"
+                    "text": "Pimento"
                 },
                 {
                     "text": "15 - 30"
@@ -463,7 +463,7 @@
                     "text": "200 - 450"
                 },
                 {
-                    "text": "香草"
+                    "text": "Vanilla"
                 },
                 {
                     "text": "18 - 30"
@@ -502,7 +502,7 @@
                     "X": "firmalife:plant/basil[stage=1]"
                 }
             },
-            "name": "羅勒",
+            "name": "Basil",
             "anchor": "basil",
             "text": "$(thing)野生羅勒$()生長在温度12-25°C、降雨量300-500mm的區域。",
             "enable_visualize": false
@@ -522,7 +522,7 @@
                     "X": "firmalife:plant/bay_laurel[stage=1]"
                 }
             },
-            "name": "月桂",
+            "name": "Bay Laurel",
             "anchor": "bay",
             "text": "$(thing)野生月桂$()生長在温度8-14°C、降雨量25-225mm的區域。",
             "enable_visualize": false
@@ -542,7 +542,7 @@
                     "X": "firmalife:plant/cardamom[stage=1]"
                 }
             },
-            "name": "豆蔻",
+            "name": "Cardamom",
             "anchor": "cardamom",
             "text": "$(thing)野生豆蔻$()生長在温度18-30°C、降雨量350-500mm的區域。",
             "enable_visualize": false
@@ -562,7 +562,7 @@
                     "X": "firmalife:plant/cilantro[stage=1]"
                 }
             },
-            "name": "香菜",
+            "name": "Cilantro",
             "anchor": "cilantro",
             "text": "$(thing)野生香菜$()生長在温度5-15°C、降雨量0-150mm的區域。",
             "enable_visualize": false
@@ -582,7 +582,7 @@
                     "X": "firmalife:plant/cumin[stage=1]"
                 }
             },
-            "name": "孜然芹",
+            "name": "Cumin",
             "anchor": "cumin",
             "text": "$(thing)野生孜然$()生長在温度6-20°C、降雨量50-250mm的區域。",
             "enable_visualize": false
@@ -602,7 +602,7 @@
                     "X": "firmalife:plant/oregano[stage=1]"
                 }
             },
-            "name": "滇香薷",
+            "name": "Oregano",
             "anchor": "oregano",
             "text": "$(thing)野生奧勒岡$()生長在温度5-13°C、降雨量50-150mm的區域。",
             "enable_visualize": false
@@ -622,7 +622,7 @@
                     "X": "firmalife:plant/pimento[stage=1]"
                 }
             },
-            "name": "全香子",
+            "name": "Pimento",
             "anchor": "pimento",
             "text": "$(thing)野生多香果$()生長在温度15-30°C、降雨量200-450mm的區域。",
             "enable_visualize": false
@@ -642,7 +642,7 @@
                     "X": "firmalife:plant/vanilla[stage=1]"
                 }
             },
-            "name": "香草",
+            "name": "Vanilla",
             "anchor": "vanilla",
             "text": "$(thing)野生香草$()生長在温度18-30°C、降雨量200-500mm的區域。",
             "enable_visualize": false
@@ -668,7 +668,7 @@
                     "X": "firmalife:plant/butterfly_grass"
                 }
             },
-            "name": "蝴蝶草",
+            "name": "Butterfly Grass",
             "anchor": "butterfly_grass",
             "text": "蝴蝶草。",
             "enable_visualize": false

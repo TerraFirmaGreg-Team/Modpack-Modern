@@ -1,5 +1,5 @@
 {
-    "name": "Fuentes de luz",
+    "name": "Light Sources",
     "category": "tfg:game_mechanics",
     "sortnum": 6,
     "icon": "tfc:candle",
@@ -7,13 +7,13 @@
         {
             "type": "patchouli:text",
             "text": "$(li)$(bold)$(l:game_mechanics/lighting#torches)Torches$()$(li)$(bold)$(l:game_mechanics/lighting#candles)Candles$()$(li)$(bold)$(l:game_mechanics/lighting#jack_o_lanterns)Jack 'o Lanterns$()$(li)$(bold)$(l:game_mechanics/lighting#lamps)Lamps$()$(li)$(bold)$(l:game_mechanics/lighting#permanent_light)Permanent Light$()",
-            "title": "Índice",
+            "title": "Index",
             "anchor": "index"
         },
         {
             "type": "patchouli:text",
             "anchor": "intro",
-            "title": "Introducción",
+            "title": "Introduction",
             "text": "There are a number of ways to produce light in $(tfg_short). However, nearly all light sources do not last forever!$(br)Unlike vanilla Minecraft, you will need to keep an eye on your lights to re-ignite them when they burn out. The higher quality the light source is, the longer it will last.$(br)Permanent lightsources aren't available until much later, unless you get creative."
         },
         {

@@ -19,31 +19,31 @@
         {
             "type": "patchouli:text",
             "anchor": "warming",
-            "title": "Нагревается",
+            "title": "Warming",
             "text": "While active this effect continually $(thing)Warms$() the player up to a maximum of $(n)25°C$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "quenched",
-            "title": "Утоление",
+            "title": "Quenched",
             "text": "While active this effect prevents the natural decay of $(l:cooking/food_and_water#thirst)Thirst$(). However, it does not prevent the Thirsty effect from decreasing your meter.$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "cure_parasites",
-            "title": "Лечение от паразитов",
+            "title": "Cure Parasites",
             "text": "While active this effect gradually removes $(l:cooking/food_and_water#parasites)Parasite Contamination$() at a rate of about 1% every 10s at base level.$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "cure_toxins",
-            "title": "Детоксикация",
+            "title": "Detoxify",
             "text": "While active this effect gradually removes $(l:cooking/food_and_water#toxins)Toxin Contamination$() at a rate of about 1% every 10s at base level.$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "cure_microplastics",
-            "title": "Фильтрование микропластика",
+            "title": "Filter Microplastics",
             "text": "While active this effect gradually removes $(l:cooking/food_and_water#microplastics)Microplastic Contamination$() at a rate of about 1% every 10s at base level.$()"
         },
         {
@@ -61,7 +61,7 @@
         {
             "type": "patchouli:text",
             "anchor": "instant_radiation",
-            "title": "Мгновенное радиоактивное излучение",
+            "title": "Instant Radiation",
             "text": "This effect quickly damages the player with $(l:game_mechanics/hazards#radioactive_materials)Radiation Damage$()."
         },
         {
@@ -72,7 +72,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Читать дальше",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:the_world/geology",

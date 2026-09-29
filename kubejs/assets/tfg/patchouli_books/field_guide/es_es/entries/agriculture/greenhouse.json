@@ -1,5 +1,5 @@
 {
-    "name": "Invernadero",
+    "name": "Greenhouse",
     "category": "tfg:agriculture",
     "icon": "firmalife:large_planter",
     "pages": [
@@ -10,7 +10,7 @@
         {
             "type": "patchouli:text",
             "anchor": "intro",
-            "title": "Invernadero",
+            "title": "Greenhouse",
             "text": "The $(thing)Greenhouse$() is a multiblock device controlled by a $(item)Climate Station$(). It allows growing crops year round. The Greenhouse has an array of types and blocks to choose from. However, building a greenhouse is quite simple. Like the $(l:cooking/decay#cellar)Cellar$(), it should be an enclosed area of blocks belonging to the same $(thing)Greenhouse Type$(). The floor of the greenhouse may be any non-air block."
         },
         {

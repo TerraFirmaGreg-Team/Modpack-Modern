@@ -84,7 +84,7 @@
             "type": "patchouli:text",
             "anchor": "yak",
             "text": "$(bold)$(l:the_world/climate#temperature)Spawn Temp$():  > -11°C$(br)$(bold)$(l:the_world/climate#rainfall)Spawn Rainfall$():  > 100mm$(br)$(bold)Spawn Area$():  Cold Climates$(br)$(bold)Category$():  $(l:agriculture/animal_husbandry#dairy_animals)Dairy$()$(br)$(bold)Diet$():  $(l:cooking/food_and_water#grain)Grain$()$(br)$(bold)Max Children$():  1$(br)$(bold)Gestation Time$():  64 Days$(br)$(bold)Growth Time$():  180 Days$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Max Uses$():  230$(br)$(bold)Product$():  $(l:cooking/cheese)Milk$()$(br)$(bold)Produce Cycle$():  23.5 Hours",
-            "title": "야크"
+            "title": "Yak"
         },
         {
             "type": "patchouli:entity",
@@ -97,7 +97,7 @@
             "type": "patchouli:text",
             "anchor": "alpaca",
             "text": "$(bold)$(l:the_world/climate#temperature)Spawn Temp$():  -8 - 20°C$(br)$(bold)$(l:the_world/climate#rainfall)Spawn Rainfall$():  > 250mm$(br)$(bold)Spawn Area$():  Moderate Climates$(br)$(bold)Category$():  $(l:agriculture/animal_husbandry#wooly_animals)Wooly$()$(br)$(bold)Diet$():  $(l:cooking/food_and_water#grain)Grain$() and $(l:cooking/food_and_water#fruit)Fruit$()$(br)$(bold)Max Children$():  2$(br)$(bold)Gestation Time$():  36 Days$(br)$(bold)Growth Time$():  98 Days$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Max Uses$():  128$(br)$(bold)Product$():  $(l:agriculture/weaving)Wool$()$(br)$(bold)Produce Cycle$():  5 Days",
-            "title": "알파카"
+            "title": "Alpaca"
         },
         {
             "type": "patchouli:entity",
@@ -110,7 +110,7 @@
             "type": "patchouli:text",
             "anchor": "sheep",
             "text": "$(bold)$(l:the_world/climate#temperature)Spawn Temp$():  0 - 35°C$(br)$(bold)$(l:the_world/climate#rainfall)Spawn Rainfall$():  70 - 300mm$(br)$(bold)Spawn Area$():  Drier Climates$(br)$(bold)Category$():  $(l:agriculture/animal_husbandry#wooly_animals)Wooly$()$(br)$(bold)Diet$():  $(l:cooking/food_and_water#grain)Grain$()$(br)$(bold)Max Children$():  2$(br)$(bold)Gestation Time$():  32 Days$(br)$(bold)Growth Time$():  56 Days$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Max Uses$():  60$(br)$(bold)Product$():  $(l:agriculture/weaving)Wool$()$(br)$(bold)Produce Cycle$():  7 Days",
-            "title": "양"
+            "title": "Sheep"
         },
         {
             "type": "patchouli:entity",
@@ -123,7 +123,7 @@
             "type": "patchouli:text",
             "anchor": "musk_ox",
             "text": "$(bold)$(l:the_world/climate#temperature)Spawn Temp$():  -25 - 0°C$(br)$(bold)$(l:the_world/climate#rainfall)Spawn Rainfall$():  > 100mm$(br)$(bold)Spawn Area$():  Cold Climates$(br)$(bold)Category$():  $(l:agriculture/animal_husbandry#wooly_animals)Wooly$()$(br)$(bold)Diet$():  $(l:cooking/food_and_water#grain)Grain$()$(br)$(bold)Max Children$():  1$(br)$(bold)Gestation Time$():  64 Days$(br)$(bold)Growth Time$():  168 Days$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Max Uses$():  160$(br)$(bold)Product$():  $(l:agriculture/weaving)Wool$()$(br)$(bold)Produce Cycle$():  4 Days",
-            "title": "사향소"
+            "title": "Musk Ox"
         },
         {
             "type": "patchouli:entity",
@@ -162,7 +162,7 @@
             "type": "patchouli:text",
             "anchor": "quail",
             "text": "$(bold)$(l:the_world/climate#temperature)Spawn Temp$():  -15 - 15°C$(br)$(bold)$(l:the_world/climate#rainfall)Spawn Rainfall$():  > 200mm$(br)$(bold)Spawn Area$():  Cold Climates$(br)$(bold)Category$():  $(l:agriculture/animal_husbandry#oviparous_animals)Oviparous Animals$()$(br)$(bold)Diet$():  $(l:cooking/food_and_water#grain)Grain$(), $(l:cooking/food_and_water#fruit)Fruits$(), $(l:cooking/food_and_water#vegetables)Vegetables$(), and $(l:agriculture/growing_crops)Seeds$() which may be rotten.$(br)$(bold)Egg Cycle$():  28 Hours$(br)$(bold)Growth Time$():  22 Days$(br)$(bold)Hatch Time$():  8 Days$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Max Uses$():  48$(br)$(bold)Product$():  Eggs and feathers.$()",
-            "title": "메추라기"
+            "title": "Quail"
         },
         {
             "type": "patchouli:entity",
@@ -246,7 +246,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:polar_bear",
             "scale": 0.55,
-            "name": "북극곰",
+            "name": "Polar Bear",
             "anchor": "polar_bear",
             "text": "The polar bear spawns in only the coldest regions, $(l:the_world/climate#temperature)temperature$() at most 10°C, with a $(l:the_world/climate#rainfall)rainfall$() of at least 100mm."
         },
@@ -254,7 +254,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:grizzly_bear",
             "scale": 0.55,
-            "name": "회색곰",
+            "name": "Grizzly Bear",
             "anchor": "grizzly_bear",
             "text": "The grizzly bear spawns in forests of moderate climates, with a $(l:the_world/climate#temperature)temperature$() range of -15 to 15°C and at least 200mm of $(l:the_world/climate#rainfall)rainfall$()."
         },
@@ -262,7 +262,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:black_bear",
             "scale": 0.55,
-            "name": "흑곰",
+            "name": "Black Bear",
             "anchor": "black_bear",
             "text": "The black bear spawns in forests of warmer, wetter climates, of $(l:the_world/climate#temperature)temperature$() 5 to 20°C and at least 250mm of $(l:the_world/climate#rainfall)rainfall$()."
         },
@@ -270,7 +270,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:cougar",
             "scale": 0.6,
-            "name": "퓨마",
+            "name": "Cougar",
             "anchor": "cougar",
             "text": "The cougar prefers most moderate climates, with $(l:the_world/climate#temperature)temperature$() from -10 to 21°C and at least 150mm of $(l:the_world/climate#rainfall)rainfall$()."
         },
@@ -278,7 +278,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:panther",
             "scale": 0.6,
-            "name": "표범",
+            "name": "Panther",
             "anchor": "panther",
             "text": "The panther prefers most moderate climates, with $(l:the_world/climate#temperature)temperature$() from -10 to 21°C and at least 150mm of $(l:the_world/climate#rainfall)rainfall$()."
         },
@@ -286,7 +286,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:lion",
             "scale": 0.55,
-            "name": "사자",
+            "name": "Lion",
             "anchor": "lion",
             "text": "The lion spawns in plains with an average $(l:the_world/climate#temperature)temperature$() of at least 16°C, and $(l:the_world/climate#rainfall)rainfall$() between 50 and 300mm."
         },
@@ -294,7 +294,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:tiger",
             "scale": 0.55,
-            "name": "호랑이",
+            "name": "Tiger",
             "anchor": "tiger",
             "text": "The tiger spawns in forests with an average $(l:the_world/climate#temperature)temperature$() of at least 13°C, and $(l:the_world/climate#rainfall)rainfall$() above 100mm."
         },
@@ -302,7 +302,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:sabertooth",
             "scale": 0.6,
-            "name": "검치호",
+            "name": "Sabertooth",
             "anchor": "sabertooth",
             "text": "The sabertooth spawns at any $(l:the_world/climate#temperature)temperature$() above 0°C, and any $(l:the_world/climate#rainfall)rainfall$() above 250mm."
         },
@@ -332,7 +332,7 @@
             "entity": "tfc:crocodile",
             "anchor": "crocodile",
             "scale": 0.7,
-            "name": "악어",
+            "name": "Crocodile",
             "text": "The crocodile spawns near rivers, lakes, and marshes at any $(l:the_world/climate#temperature)temperature$() warmer than 15°C, and at any $(l:the_world/climate#rainfall)rainfall$(). They are nocturnal, and most dangerous in the water."
         },
         {
@@ -353,7 +353,7 @@
             "entity": "tfc:boar",
             "anchor": "boar",
             "scale": 0.7,
-            "name": "멧돼지",
+            "name": "Boar",
             "text": "The boar spawns at $(l:the_world/climate#temperature)temperature$() below 25°C and above -5°C, and $(l:the_world/climate#rainfall)rainfall$() between 130 and 400mm."
         },
         {
@@ -361,7 +361,7 @@
             "entity": "tfc:moose",
             "anchor": "moose",
             "scale": 0.7,
-            "name": "무스",
+            "name": "Moose",
             "text": "The moose spawns in forests at $(l:the_world/climate#temperature)temperature$() below 10°C and above -15°C, and $(l:the_world/climate#rainfall)rainfall$() between 150 and 300mm."
         },
         {
@@ -369,7 +369,7 @@
             "entity": "tfc:wildebeest",
             "anchor": "wildebeest",
             "scale": 0.7,
-            "name": "누",
+            "name": "Wildebeest",
             "text": "The wildebeest spawns in open plains at any $(l:the_world/climate#temperature)temperature$() above 13°C, and $(l:the_world/climate#rainfall)rainfall$() between 90 and 380mm."
         },
         {
@@ -390,7 +390,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:rabbit",
             "scale": 0.7,
-            "name": "토끼",
+            "name": "Rabbit",
             "anchor": "rabbit",
             "text": "The rabbit is known to chew on carrots and cabbage. They are ubiquitous in the world, changing their coat based on climate. They only need 15mm of $(l:the_world/climate#rainfall)rainfall$() to spawn."
         },
@@ -398,7 +398,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:fox",
             "scale": 0.7,
-            "name": "여우",
+            "name": "Fox",
             "anchor": "fox",
             "text": "The fox likes to eat the berries off of bushes. It can be found in forests with $(l:the_world/climate#temperature)temperature$() below 25°C, and $(l:the_world/climate#rainfall)rainfall$() between 130 and 400mm."
         },
@@ -413,7 +413,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:caribou",
             "scale": 0.6,
-            "name": "순록",
+            "name": "Caribou",
             "anchor": "caribou",
             "text": "The caribou spawns at any $(l:the_world/climate#temperature)temperature$() below -9°C, and $(l:the_world/climate#rainfall)rainfall$() between 110 and 500mm."
         },
@@ -428,7 +428,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:bongo",
             "scale": 0.9,
-            "name": "봉고",
+            "name": "Bongo",
             "anchor": "bongo",
             "text": "The bongo spawns in forests at any $(l:the_world/climate#temperature)temperature$() above 15°C, and $(l:the_world/climate#rainfall)rainfall$() between 230 and 500mm."
         },
@@ -457,7 +457,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:peafowl",
             "scale": 0.6,
-            "name": "공작새",
+            "name": "Peafowl",
             "anchor": "peafowl",
             "text": "The peafowl spawns in forests at any $(l:the_world/climate#temperature)temperature$() above 14°C, and $(l:the_world/climate#rainfall)rainfall$() between 190 and 500mm."
         },
@@ -516,13 +516,13 @@
             "type": "patchouli:text",
             "anchor": "fish",
             "text": "$(thing)Fish$() are small creatures that swim in water. Most of them can be $(l:agriculture/fishing)fished$(). Some prefer oceans, rivers, or lakes.",
-            "title": "물고기"
+            "title": "Fish"
         },
         {
             "type": "patchouli:entity",
             "entity": "tfc:cod",
             "scale": 0.7,
-            "name": "대구",
+            "name": "Cod",
             "anchor": "cod",
             "text": "Cod prefer colder oceans, $(l:the_world/climate#temperature)temperature$() at most 18°C. They can be fished."
         },
@@ -530,7 +530,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:pufferfish",
             "scale": 0.7,
-            "name": "복어",
+            "name": "Pufferfish",
             "anchor": "pufferfish",
             "text": "Pufferfish live in any ocean with at least a $(l:the_world/climate#temperature)temperature$() of 10°C."
         },
@@ -538,7 +538,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:jellyfish",
             "scale": 0.7,
-            "name": "해파리",
+            "name": "Jellyfish",
             "anchor": "jellyfish",
             "text": "Jellyfish live in warmer oceans, with a $(l:the_world/climate#temperature)temperature$() of at least 18°C."
         },
@@ -546,7 +546,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:tropical_fish",
             "scale": 0.7,
-            "name": "열대어",
+            "name": "Tropical Fish",
             "anchor": "tropical_fish",
             "text": "Tropical fish prefer warmer oceans, with a $(l:the_world/climate#temperature)temperature$() of at least 18°C."
         },
@@ -554,7 +554,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:salmon",
             "scale": 0.7,
-            "name": "연어",
+            "name": "Salmon",
             "anchor": "salmon",
             "text": "Salmon spawn in any river or lake with a $(l:the_world/climate#temperature)temperature$() of at least -5°C."
         },
@@ -562,7 +562,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:bluegill",
             "scale": 0.7,
-            "name": "블루길",
+            "name": "Bluegill",
             "anchor": "bluegill",
             "text": "Bluegill spawn in any river or lake with a $(l:the_world/climate#temperature)temperature$() of at least -10°C and at most 26°C."
         },
@@ -576,7 +576,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:isopod",
             "scale": 0.7,
-            "name": "등각류",
+            "name": "Isopod",
             "anchor": "isopod",
             "text": "Isopods spawn in deeper sections of oceans of $(l:the_world/climate#temperature)temperature$() at most 14°C."
         },
@@ -584,7 +584,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:lobster",
             "scale": 0.7,
-            "name": "바닷가재",
+            "name": "Lobster",
             "anchor": "lobster",
             "text": "Lobster spawn in any ocean that is at most of a $(l:the_world/climate#temperature)temperature$() of 21°C."
         },
@@ -592,7 +592,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:crayfish",
             "scale": 0.7,
-            "name": "민물가재",
+            "name": "Crayfish",
             "anchor": "crayfish",
             "text": "Crayfish are like lobster, but spawn in rivers and lakes. They need a $(l:the_world/climate#temperature)temperature$() of at least 5°C and a $(l:the_world/climate#rainfall)rainfall$() of at least 125mm."
         },
@@ -600,7 +600,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:horseshoe_crab",
             "scale": 0.7,
-            "name": "투구게",
+            "name": "Horseshoe Crab",
             "anchor": "horseshoe_crab",
             "text": "Horseshoe crabs spawn in oceans of moderate climate, $(l:the_world/climate#temperature)temperature$() between 10 and 21°C and with a $(l:the_world/climate#rainfall)rainfall$() of at most 400mm."
         },
@@ -614,7 +614,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:orca",
             "scale": 0.25,
-            "name": "범고래",
+            "name": "Orca",
             "anchor": "orca",
             "text": "Orca whales live in deep oceans with $(l:the_world/climate#temperature)temperature$() of at most 19°C and $(l:the_world/climate#rainfall)rainfall$() of at least 100mm."
         },
@@ -622,7 +622,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:dolphin",
             "scale": 0.4,
-            "name": "돌고래",
+            "name": "Dolphin",
             "anchor": "dolphin",
             "text": "Dolphins live in deep oceans with $(l:the_world/climate#temperature)temperature$() of at least 10°C and $(l:the_world/climate#rainfall)rainfall$() of at least 200mm."
         },
@@ -630,7 +630,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:manatee",
             "scale": 0.25,
-            "name": "매너티",
+            "name": "Manatee",
             "anchor": "manatee",
             "text": "Manatees live in any warm lake, with $(l:the_world/climate#temperature)temperature$() of at least 20°C and $(l:the_world/climate#rainfall)rainfall$() of at most 300mm."
         },
@@ -646,7 +646,7 @@
             "type": "patchouli:text",
             "anchor": "squid",
             "text": "Squid can spawn in any deep ocean. They drop $(thing)Ink Sacs$(), and ink any player that gets too close. Some say that squids in deep, unexplored caves have strange properties.",
-            "title": "오징어"
+            "title": "Squid"
         },
         {
             "type": "patchouli:relations",

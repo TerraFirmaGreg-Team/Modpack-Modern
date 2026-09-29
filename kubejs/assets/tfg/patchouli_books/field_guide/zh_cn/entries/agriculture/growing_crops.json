@@ -7,7 +7,7 @@
             "type": "patchouli:text",
             "anchor": "intro",
             "text": "所有作物都需要种植在耕地上才能生长。有些作物还有额外的要求，比如只能种在水里或者需要插一根木棍才能生长。$(br2)作物不需要$(thing)营养物质$()就能生长，但营养物质能加速其成熟。营养物质分为三种：$(b)氮$()、$(6)磷$()和$(d)钾$()。每种作物都有一种偏爱的养分。",
-            "title": "种植作物"
+            "title": "Growing Crops"
         },
         {
             "type": "patchouli:text",
@@ -86,7 +86,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "延伸阅读",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:the_world/wild_crops",

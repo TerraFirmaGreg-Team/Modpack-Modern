@@ -1,5 +1,5 @@
 {
-	"name": "Потяги",
+	"name": "Trains",
 	"category": "tfg:logistics",
 	"icon": "minecraft:rail",
 	"read_by_default": true,
@@ -20,7 +20,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"item": "tag:create:tracks",
-			"title": "Залізничні колії",
+			"title": "Train Tracks",
 			"anchor": "tracks",
 			"text": "Прокладання колій до різних місць дасть тобі змогу переміщувати свої потяги.$(br)Встанови колію та $(item)$(k:key.use)$() нею, тримаючи в руці $(item)Колії$(), щоб швидко прокладати колії та створювати вигнуті ділянки.$(br)Якщо ти тримаєш блоки (або Балки) у другій руці, вони автоматично встановлюватимуться під будь-якими коліями."
 		},
@@ -143,7 +143,7 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Сидіння",
+			"title": "Seats",
 			"anchor": "seat",
 			"item": "tag:create:seats",
 			"text": "$(item)Сидіння$() дають змогу тобі сидіти під час керування потягом.$(br2)Щоб не вилетіти з потяга під час руху, встанови $(item)сидіння$() на свій $(thing)потяг$() і не забудь закріпити його за допомогою $(item)суперклею$()."
@@ -195,7 +195,7 @@
 			"type": "patchouli:spotlight",
 			"item": "railways:buffer",
 			"anchor": "buffer",
-			"title": "Тупиковий упор",
+			"title": "Track Buffers",
 			"text": "Використання $(item)Тупикових упорів$() може запобігти сходженню твоїх $(thing)потягів$() з колії! Встановлення їх на кінці незавершеної колії або на крайніх кінцях твоєї колії усуне можливість сходження $(thing)потяга$() з колії."
 		},
 		{
@@ -208,7 +208,7 @@
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Додаткове читання",
+			"title": "Further Reading",
 			"anchor": "relations",
 			"entries": [
 				"tfg:logistics/tack",

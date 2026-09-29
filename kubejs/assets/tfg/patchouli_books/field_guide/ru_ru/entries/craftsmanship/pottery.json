@@ -11,7 +11,7 @@
         {
             "type": "patchouli:text",
             "anchor": "clay",
-            "title": "Глина",
+            "title": "Clay",
             "text": "$(thing)Глина$() - невероятно полезный и универсальный материал, который можно использовать для гончарного дела. Сначала его может быть сложно найти. Глина обычно скрыта травой, но чаще всего находится в двух местах. В районах с годовым $(l:the_world/climate#rainfall)осадками$() не менее 175 мм, глину можно найти повсюду, обычно это место отмечено наличием определённых $(thing)Растений$()."
         },
         {
@@ -100,14 +100,14 @@
         {
             "type": "patchouli:spotlight",
             "item": "tfc:ceramic/ingot_mold{tank:{\"Amount\":100,\"FluidName\":\"gtceu:copper\"}}",
-            "title": "Отливка",
+            "title": "Casting",
             "link_recipes": false,
             "text": "You will very likely run into scenarios where you produce tiny amounts of excess melted metal. It is recommended to pour it into an ingot mold and save for the next time you need to cast that metal. Trying to produce perfect 144mB ratios of alloys is not feasible or worth the effort until you reach steam-age processing."
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "kaolin_clay",
-            "title": "Каолинитовая глина",
+            "title": "Kaolin Clay",
             "item": "tfc:kaolin_clay",
             "text": "Kaolin Clay is required to make $(l:craftsmanship/pottery#fire_clay)Fire Clay$(). It can be found spawning between Y=75-110 in Plateaus, Rolling Hills and Highlands (and in their $(t:Surface rock of Limestone, Dolomite, Chalk, or Marble)Karst$() $(t:Burren, Cenote, Doline, Shilin, or Tower Karst)variants$()), Old Mountains, and Shield Volcanoes at a $(l:the_world/climate#temperature)temperature$() of at least 18°C, with a $(l:the_world/climate#rainfall)rainfall$() of at least 300mm. The $(thing)Blood Lily$() flower grows on Kaolin clay, which can be up to 35 blocks below."
         },
@@ -205,7 +205,7 @@
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Комок огнеупорной глины",
+            "title": "Fire Clay",
             "anchor": "fire_clay",
             "item": "tfc:fire_clay",
             "text": "Список применений огнеупорной глины невелик, но все они важны. Огнеупорная глина - это усиленный вариант глины, обладающий лучшей теплостойкостью. Она используется для изготовления предметов, которые должны сильно нагреваться!"
@@ -222,7 +222,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Читать дальше",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:the_world/geology",

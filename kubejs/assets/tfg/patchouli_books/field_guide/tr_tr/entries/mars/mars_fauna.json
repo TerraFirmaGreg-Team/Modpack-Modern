@@ -11,7 +11,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "index",
-			"title": "İçindekiler",
+			"title": "Contents",
 			"text": "$(li)$(bold)$(l:mars/mars_fauna#sandworm)The Sandworm$()$(li)$(bold)Domesticatable$()$(li2)$(l:mars/mars_fauna#sniffer)Sniffer$()$(li2)$(l:mars/mars_fauna#wraptor)Wraptor$()$(li2)$(l:mars/mars_fauna#glacian_sheep)Glacian Sheep$()$(li2)$(l:mars/mars_fauna#snatcher)Snatcher$()$(li2)$(l:mars/mars_fauna#charger)Charger$()$(li2)$(l:mars/mars_fauna#soarer)Soarer$()$(li2)$(l:mars/mars_fauna#pentetic_jellie)Pentetic Jellie$()$(br2)$(o)(Continued on next page...)$()"
 		},
 		{
@@ -150,7 +150,7 @@
 			"type": "patchouli:entity",
 			"entity": "species:cruncher{NoAI:1b}",
 			"scale": 0.7,
-			"name": "Çıtırtan",
+			"name": "Cruncher",
 			"anchor": "cruncher",
 			"text": "$(thing)Crunchers$() are territorial $(item)miniboss$() predators. Feed them meat to stop their regeneration. They can also be eaten."
 		},
@@ -176,7 +176,7 @@
 			"type": "patchouli:entity",
 			"entity": "species:springling{NoAI:1b}",
 			"scale": 0.9,
-			"name": "Esnekçil",
+			"name": "Springling",
 			"anchor": "springling",
 			"text": "$(thing)Springlings$() are wild animals found above -108°C. Feeding them $(item)Saplings$() will let you ride them and extend their extremely long necks. They can also be eaten."
 		},
@@ -184,7 +184,7 @@
 			"type": "patchouli:entity",
 			"entity": "species:goober{NoAI:1b}",
 			"scale": 0.6,
-			"name": "Sümükçü",
+			"name": "Goober",
 			"anchor": "goober",
 			"text": "$(thing)Goobers$() are lazy wild animals found above -109°C. They are passive and can be eaten."
 		},
@@ -217,7 +217,7 @@
 			"type": "patchouli:entity",
 			"entity": "species:stackatick{NoAI:1b}",
 			"scale": 0.4,
-			"name": "Stakatik",
+			"name": "Stackatick",
 			"anchor": "stackatick",
 			"text": "One of the few animals that can survive the Martian desert, $(thing)Stackaticks$() are passive prey animals. They can also be eaten."
 		},
@@ -225,7 +225,7 @@
 			"type": "patchouli:entity",
 			"entity": "species:quake{NoAI:1b}",
 			"scale": 0.8,
-			"name": "Sarsan",
+			"name": "Quake",
 			"anchor": "quake",
 			"text": "$(thing)Quakes$() are capable of absorbing large amounts of damage before releasing it back in a burst. Wait until they're recharging to attack!"
 		},
@@ -247,7 +247,7 @@
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Ek Okuma",
+			"title": "Further Reading",
 			"anchor": "relations",
 			"entries": [
 				"tfg:mars/mars",

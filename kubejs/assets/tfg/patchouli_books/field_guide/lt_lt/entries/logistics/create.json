@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"title": "Tūriniai",
+			"title": "Contents",
 			"anchor": "index",
 			"text": "$(li)$(bold)$(l:logistics/create#packages)Packages$()$(li2)$(l:logistics/create#packager)Packager$()$(li2)$(l:logistics/create#frogport)Frogports$()$(li2)$(l:logistics/create#package_filter)Package Filter$()$(li2)$(l:logistics/create#repackager)Re-Packager$()$(li2)$(l:logistics/create#unpackager)Unpackager$()$(li2)$(l:logistics/create#clipboard)Clipboard and Hand Pointer$()$(li2)$(l:logistics/create#postbox)Postbox$()$(li2)$(l:logistics/create#package_tips)Tips$()"
 		},
@@ -256,7 +256,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"item": "greate:rich_raw_rose_quartz,greate:raw_rose_quartz,greate:poor_raw_rose_quartz",
-			"title": "Rožinis kvarcas",
+			"title": "Rose Quartz",
 			"anchor": "rose_quartz",
 			"text": "The only natural source of $(item)Rose Quartz$() of a high enough quality to easily craft the $(item)Lens$() out of is located far, far to the north in freezing temperatures (under $(3)-10°C$()). Getting Kaolin clay flashbacks yet?"
 		},

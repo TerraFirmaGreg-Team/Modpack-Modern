@@ -1,5 +1,5 @@
 {
-    "name": "樽",
+    "name": "Barrels",
     "category": "tfg:craftsmanship",
     "icon": "tfc:wood/barrel/oak",
     "pages": [
@@ -27,7 +27,7 @@
         {
             "type": "patchouli:text",
             "text": "樽は、さまざまな液体やアイテムを混合するために使用される重要なブロックです。$(thing)樽$()レシピを使用するには、樽に正しい比率の液体と必要なアイテムを入れる必要があります。レシピによっては、内容を変形させるために一定期間$(thing)密封$()する必要があることもあります。",
-            "title": "クラフト中"
+            "title": "Crafting"
         },
         {
             "type": "patchouli:text",
@@ -59,7 +59,7 @@
         },
         {
             "type": "patchouli:text",
-            "title": "染料",
+            "title": "Dyeing",
             "anchor": "dyeing",
             "text": "Barrels have the ability to $(thing)Dye$() and $(thing)Bleach$() items. Most color-able things, like carpet, candles, and $(l:craftsmanship/building_materials#alabaster)Alabaster$() can be dyed by sealing them in a barrel of dye or bleached by sealing them in a barrel of lye."
         },
@@ -111,12 +111,12 @@
         },
         {
             "type": "patchouli:text",
-            "title": "レッドストーン",
+            "title": "Redstone",
             "text": "Barrels can be automated with $(thing)Redstone$(). Applying a redstone signal to a barrel will seal it. Unsealed barrels can have fluids and items inserted and extracted from their open face. Sealed barrels can safely be moved around with $(thing)Pistons$() or $(thing)Contraptions$(). A $(l:logistics/redstone_devices#clock)Precision Clock$() can detect when a barrel recipe has finished and output a signal."
         },
         {
             "type": "patchouli:relations",
-            "title": "さらに読む",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:craftsmanship/sticks_and_stones",

@@ -7,7 +7,7 @@
 	"pages": [
 		{
 			"type": "patchouli:spotlight",
-			"title": "群巒格雷的有害物質",
+			"title": "Hazardous Materials",
 			"item": "gtceu:cobaltite_dust",
 			"text": "某些$(thing)礦石$()、$(thing)粉末$()和$(thing)化學品$()具有危害，將它們帶在身上會導致$(item)負面效果$()甚至$(item)死亡$()。攜帶時會在螢幕上顯示$(item)狀態效果$()。$(br2)某些設備如$(thing)口罩$()、$(thing)手套$() 和 $(thing)防護服$()可以抵消這些影響。"
 		},
@@ -30,7 +30,7 @@
 		},
 		{
 			"type": "patchouli:crafting",
-			"title": "口罩",
+			"title": "Face Mask",
 			"recipe": "gtceu:shaped/face_mask",
 			"text": "$(thing)口罩$()能防護所有$(item)吸入$()危害，例如砷中毒。",
 			"anchor": "mask"
@@ -38,7 +38,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:rubber_gloves",
-			"title": "橡膠手套",
+			"title": "Rubber Gloves",
 			"link_recipes": true,
 			"anchor": "gloves",
 			"text": "The $(thing)Rubber gloves$() can either be made from $(l:agriculture/leather_making)Leather$() and $(thing)Latex$(), or out of $(thing)Rubber Sheets$(). They provide protection from any $(item)Skin Contact$() hazards, such as $(thing)Beryllium Dust$()."
@@ -133,7 +133,7 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "甲醇中毒",
+			"title": "Methanol Poisoning",
 			"item": "gtceu:methanol_bucket",
 			"anchor": "methanol_poisoning",
 			"text": "$(thing)Methanol poisoning$() is caused by inhalation of $(thing)Methanol$(). It causes a strong $(item)Blindness$() effect.$(br)The $(l:game_mechanics/hazards#mask)Face Mask$() and the $(l:game_mechanics/hazards#hazmat)Hazmat Suit$() protects from inhalation."

@@ -400,7 +400,7 @@
                     "bold": true
                 },
                 {
-                    "text": "Bazsalikom"
+                    "text": "Basil"
                 },
                 {
                     "text": "12 - 25"
@@ -409,7 +409,7 @@
                     "text": "300 - 500"
                 },
                 {
-                    "text": "Nemes babér"
+                    "text": "Bay Laurel"
                 },
                 {
                     "text": "8 - 14"
@@ -418,7 +418,7 @@
                     "text": "25 - 225"
                 },
                 {
-                    "text": "Kardamom"
+                    "text": "Cardamom"
                 },
                 {
                     "text": "18 - 30"
@@ -427,7 +427,7 @@
                     "text": "350 - 500"
                 },
                 {
-                    "text": "Koriander"
+                    "text": "Cilantro"
                 },
                 {
                     "text": "5 - 15"
@@ -436,7 +436,7 @@
                     "text": "0 - 150"
                 },
                 {
-                    "text": "Rómaikömény"
+                    "text": "Cumin"
                 },
                 {
                     "text": "6 - 20"
@@ -445,7 +445,7 @@
                     "text": "50 - 250"
                 },
                 {
-                    "text": "Szurokfű"
+                    "text": "Oregano"
                 },
                 {
                     "text": "5 - 13"
@@ -454,7 +454,7 @@
                     "text": "50 - 150"
                 },
                 {
-                    "text": "Szegfűbors"
+                    "text": "Pimento"
                 },
                 {
                     "text": "15 - 30"
@@ -463,7 +463,7 @@
                     "text": "200 - 450"
                 },
                 {
-                    "text": "Vanília"
+                    "text": "Vanilla"
                 },
                 {
                     "text": "18 - 30"
@@ -502,7 +502,7 @@
                     "X": "firmalife:plant/basil[stage=1]"
                 }
             },
-            "name": "Bazsalikom",
+            "name": "Basil",
             "anchor": "basil",
             "text": "A $(thing)vad bazsalikom$() 12-25°C között nő és 300-500mm csapadákban.",
             "enable_visualize": false
@@ -522,7 +522,7 @@
                     "X": "firmalife:plant/bay_laurel[stage=1]"
                 }
             },
-            "name": "Nemes babér",
+            "name": "Bay Laurel",
             "anchor": "bay",
             "text": "A $(thing)vad nemes babér$() 8-14°C között nő és 25-225mm csapadékban.",
             "enable_visualize": false
@@ -542,7 +542,7 @@
                     "X": "firmalife:plant/cardamom[stage=1]"
                 }
             },
-            "name": "Kardamom",
+            "name": "Cardamom",
             "anchor": "cardamom",
             "text": "A $(thing)vad kardamom$() 18-30°C között nő és 350-500mm csapadékban.",
             "enable_visualize": false
@@ -562,7 +562,7 @@
                     "X": "firmalife:plant/cilantro[stage=1]"
                 }
             },
-            "name": "Koriander",
+            "name": "Cilantro",
             "anchor": "cilantro",
             "text": "A $(thing)vad koriander$() 5-15°C között nő és 0-150mm csapadékban.",
             "enable_visualize": false
@@ -582,7 +582,7 @@
                     "X": "firmalife:plant/cumin[stage=1]"
                 }
             },
-            "name": "Rómaikömény",
+            "name": "Cumin",
             "anchor": "cumin",
             "text": "A $(thing)vad rómaikömény$() 6-20°C között nő és 50-250mm csapadékban.",
             "enable_visualize": false
@@ -602,7 +602,7 @@
                     "X": "firmalife:plant/oregano[stage=1]"
                 }
             },
-            "name": "Szurokfű",
+            "name": "Oregano",
             "anchor": "oregano",
             "text": "A $(thing)vad oregánó$() 5-13°C között nő és 50-150mm csapadékban.",
             "enable_visualize": false
@@ -622,7 +622,7 @@
                     "X": "firmalife:plant/pimento[stage=1]"
                 }
             },
-            "name": "Szegfűbors",
+            "name": "Pimento",
             "anchor": "pimento",
             "text": "A $(thing)vad pimento$() 5-30°C között nő és 200-450mm csapadékban.",
             "enable_visualize": false
@@ -642,7 +642,7 @@
                     "X": "firmalife:plant/vanilla[stage=1]"
                 }
             },
-            "name": "Vanília",
+            "name": "Vanilla",
             "anchor": "vanilla",
             "text": "A $(thing)vad vanilla$() 18-30°C között nő és 200-500mm csapadékban.",
             "enable_visualize": false
@@ -668,7 +668,7 @@
                     "X": "firmalife:plant/butterfly_grass"
                 }
             },
-            "name": "Pillangófü",
+            "name": "Butterfly Grass",
             "anchor": "butterfly_grass",
             "text": "Egy gumós selyemkóró.",
             "enable_visualize": false

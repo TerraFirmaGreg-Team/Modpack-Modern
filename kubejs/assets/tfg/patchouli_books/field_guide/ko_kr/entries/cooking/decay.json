@@ -45,49 +45,49 @@
                     "bold": true
                 },
                 {
-                    "text": "오븐에서 구운"
+                    "text": "Oven Baked"
                 },
                 {
                     "text": "0.900"
                 },
                 {
-                    "text": "석쇠구이"
+                    "text": "Wood Grilled"
                 },
                 {
                     "text": "0.800"
                 },
                 {
-                    "text": "훈제"
+                    "text": "Smoked"
                 },
                 {
                     "text": "0.500"
                 },
                 {
-                    "text": "염장"
+                    "text": "Salted"
                 },
                 {
                     "text": "0.500"
                 },
                 {
-                    "text": "초절임"
+                    "text": "Pickled"
                 },
                 {
                     "text": "0.500"
                 },
                 {
-                    "text": "보존됨"
+                    "text": "Preserved"
                 },
                 {
                     "text": "0.500"
                 },
                 {
-                    "text": "야생"
+                    "text": "Wild"
                 },
                 {
                     "text": "0.500"
                 },
                 {
-                    "text": "마름"
+                    "text": "Dried"
                 },
                 {
                     "text": "0.500"
@@ -117,7 +117,7 @@
                     "text": "0.125"
                 },
                 {
-                    "text": "식초로 보존됨"
+                    "text": "Preserved in Vinegar"
                 },
                 {
                     "text": "0.100"
@@ -184,7 +184,7 @@
         {
             "type": "patchouli:text",
             "anchor": "smoking",
-            "title": "훈연",
+            "title": "Smoking",
             "text": "Smoking is used to preserve $(thing)Meat$() and $(l:cooking/cheese)Cheese$() with a modifier of 0.7. To smoke meat, it must have first been $(thing)Brined$() by sealing it in a $(thing)Barrel$() with $(thing)Brine$(). Cheese does not have this requirement.$(br)To start smoking, add an item to wool yarn that is within four blocks above a firepit. The string should begin to generate some smoke if it is working.$(br)Note: The firepit may only be burned with $(thing)Logs$()!"
         },
         {
@@ -247,7 +247,7 @@
         {
             "type": "patchouli:text",
             "anchor": "drying",
-            "title": "건조",
+            "title": "Drying",
             "text": "The $(thing)Drying Mat$() is used to dry items. It is made with $(thing)Fruit Leaves$(), which are obtained from breaking the leaves of $(thing)Fruit Trees$(). To use the drying mat, place it out in the sun and add an item to it with $(item)$(k:key.use)$(). If it rains, the drying process must start over. Some food items―Like fruits―Will gain the $(7)$(bold)Dried$() trait which gives a modifier of 0.8."
         },
         {
@@ -257,7 +257,7 @@
         {
             "type": "patchouli:text",
             "anchor": "oven_baked",
-            "title": "오븐에서 구운",
+            "title": "Oven Baked",
             "text": "Baking food items in a $(l:cooking/cooking_methods#top_oven)Top Oven$() is the second-best way to preserve your food items through cooking as it gives the $(7)$(bold)Oven Baked$() trait with a modifier of 0.9."
         },
         {

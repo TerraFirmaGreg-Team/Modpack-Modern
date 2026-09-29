@@ -14,13 +14,13 @@
         {
             "type": "patchouli:text",
             "anchor": "intro",
-            "title": "Wprowadzenie",
+            "title": "Introduction",
             "text": "Once you have $(l:craftsmanship/metallurgy)located$() an ore vein you can begin excavating it for resources. However, there are some differences from base Mincraft to be aware of when mining. Such as $(l:game_mechanics/mining#collapses)Collapses$(), $(l:game_mechanics/mining#supports)Supports$(), $(l:game_mechanics/hazards)Hazardous Materials$(), and $(l:game_mechanics/mining#processing)Processing$()."
         },
         {
             "type": "patchouli:spotlight",
-            "anchor": "Narzędzia",
-            "title": "Narzędzia",
+            "anchor": "tools",
+            "title": "Tools",
             "item": "tag:tfc:pickaxes,tag:forge:tools/mining_hammers",
             "text": "Before starting, you should prepare the right equipment for the job. You will need a $(thing)pickaxe$() or $(thing)mining hammer$() to mine ores. A mining hammer has an advantage of breaking a 3x3 area of blocks at once.$(br2)A regular $(thing)hammer$() can also break stone type blocks, but will not drop ores. It can still be useful for $(l:craftsmanship/anvils#raw_rock)extracting$() raw stone, however."
         },
@@ -44,7 +44,7 @@
             "type": "patchouli:spotlight",
             "item": "tag:tfc:support_beams",
             "anchor": "supports",
-            "title": "Podpory",
+            "title": "Support Beams",
             "text": "$(thing)Support Beams$() can be crafted from logs or stone.$(br2)Placing a $(thing)Support Beam$() on top of a block places a column up to three tall. These must have a solid block beneath them to stay upright.$(br)$(thing)Horizontal$() beams can be placed between to connect two $(thing)Vertical$() beams that are within five blocks, as in the above diagram."
         },
         {
@@ -277,7 +277,7 @@
         },
         {
             "type": "patchouli:image",
-            "title": "Pass Condition",
+            "title": "Bezpieczne wydobycie",
             "anchor": "pass_condition",
             "width": 1024,
             "texture_width": 1024,
@@ -291,7 +291,7 @@
         },
         {
             "type": "patchouli:image",
-            "title": "Fail Condition",
+            "title": "Ryzyko zawalenia",
             "anchor": "fail_condition",
             "width": 1024,
             "texture_width": 1024,
@@ -338,7 +338,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Czytaj dalej",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:the_world/geology",

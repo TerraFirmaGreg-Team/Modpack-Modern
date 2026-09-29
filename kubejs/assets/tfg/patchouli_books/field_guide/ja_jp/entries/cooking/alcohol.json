@@ -5,7 +5,7 @@
   "pages": [
     {
         "type": "patchouli:text",
-        "title": "インデックス",
+        "title": "Index",
         "anchor": "index",
         "text": "$(li)$(bold)$(l:cooking/drinks#alcohol)Alcohol$()$(li)$(bold)$(l:cooking/drinks#aged_alcohol)Aged Alcohol$()$(li)$(bold)$(l:cooking/drinks#vintage_alcohol)Vintage Alcohol$()$(li)$(bold)$(l:cooking/alcohol#wine_making)Wine Making$()$(li2)$(l:cooking/alcohol#wine_properties)Wine Properties$()$(li)$(bold)$(l:cooking/alcohol#wine_shelf)Wine Shelf$()"
     },
@@ -43,7 +43,7 @@
     {
         "type": "patchouli:crafting",
         "anchor": "bottle_label",
-        "title": "ボトルラベル",
+        "title": "Bottle Label",
         "recipe": "firmalife:crafting/bottle_label",
         "text": "$(thing)ボトルラベル$()は筆記台で名前を変更でき、その名前がワインのツールチップに追加されます。"
     },
@@ -74,7 +74,7 @@
     },
     {
         "type": "patchouli:relations",
-        "title": "さらに読む",
+        "title": "Further Reading",
         "anchor": "relations",
         "entries": [
         "tfg:cooking/food_and_water",

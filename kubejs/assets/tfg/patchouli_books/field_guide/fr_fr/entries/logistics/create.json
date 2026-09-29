@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"title": "Contenu",
+			"title": "Contents",
 			"anchor": "index",
 			"text": "$(li)$(bold)$(l:logistics/create#packages)Packages$()$(li2)$(l:logistics/create#packager)Packager$()$(li2)$(l:logistics/create#frogport)Frogports$()$(li2)$(l:logistics/create#package_filter)Package Filter$()$(li2)$(l:logistics/create#repackager)Re-Packager$()$(li2)$(l:logistics/create#unpackager)Unpackager$()$(li2)$(l:logistics/create#clipboard)Clipboard and Hand Pointer$()$(li2)$(l:logistics/create#postbox)Postbox$()$(li2)$(l:logistics/create#package_tips)Tips$()"
 		},
@@ -246,7 +246,7 @@
 			"type": "patchouli:spotlight",
 			"item": "create:transmitter",
 			"anchor": "high_logistics",
-			"title": "Hautes logistiques",
+			"title": "High Logistics",
 			"text": "Moving packages around is good and all, but surely that can't be all there is? Well, you're exactly right. There's much more that can be done with packages, including $(thing)reading inventory contents$() and $(thing)having things be delivered remotely$(), and later on even $(thing)automatically sending ingredients to be processed$() based on an item's threshold!"
 		},
 		{
@@ -256,7 +256,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"item": "greate:rich_raw_rose_quartz,greate:raw_rose_quartz,greate:poor_raw_rose_quartz",
-			"title": "Quartz rose",
+			"title": "Rose Quartz",
 			"anchor": "rose_quartz",
 			"text": "The only natural source of $(item)Rose Quartz$() of a high enough quality to easily craft the $(item)Lens$() out of is located far, far to the north in freezing temperatures (under $(3)-10°C$()). Getting Kaolin clay flashbacks yet?"
 		},
@@ -297,7 +297,7 @@
 			"type": "patchouli:multiblock",
 			"enable_visualize": false,
 			"text": "The $(l:logistics/create#packager)Packager$() will only create a package when the Stock Link receives a signal from $(l:logistics/create#stock_ticker)elsewhere$() on the network.",
-			"name": "Exemple",
+			"name": "Example",
 			"multiblock": {
 				"pattern": [
 					[
@@ -478,7 +478,7 @@
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Pour aller plus loin",
+			"title": "Further Reading",
 			"anchor": "relations",
 			"entries": [
 				"tfg:logistics/redstone_devices",

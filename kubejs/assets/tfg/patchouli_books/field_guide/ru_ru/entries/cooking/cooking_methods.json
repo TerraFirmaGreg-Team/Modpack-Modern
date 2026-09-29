@@ -5,20 +5,20 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "title": "Индекс",
+            "title": "Index",
             "anchor": "index",
             "text": "$(li)$(bold)$(l:cooking/cooking_methods#firepit)Firepit$()$(li2)$(l:cooking/cooking_methods#grill)Grill$()$(li2)$(l:cooking/cooking_methods#pot)Pot$()$(li)$(bold)$(l:cooking/cooking_methods#oven)Ovens$()$(li2)$(l:cooking/cooking_methods#vat)Vat$()$(li2)$(l:cooking/cooking_methods#jarring_station)Jarring Station$()$(li)$(bold)$(l:cooking/cooking_methods#electric_oven)Electric Oven$()$(li)$(bold)$(l:cooking/cooking_methods#food_processor)Food Processor$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "intro",
-            "title": "Введение",
+            "title": "Introduction",
             "text": "Food is one of the most important elements to the mechanics of $(tfg). You will need to cook food to make it safe to eat and to boost its $(l:cooking/food_and_water#nutrients)Nutritional Properties$().$(br2)Some methods of cooking even offer benefits such as reduced decay times."
         },
         {
             "type": "patchouli:text",
             "anchor": "firepit",
-            "title": "Костёр",
+            "title": "Firepit",
             "text": "A $(item)Firepit$() is likely the first cooking method you will have access to. It is capable of cooking only one item at a time and uses logs as fuel."
         },
         {
@@ -43,7 +43,7 @@
         {
             "type": "patchouli:text",
             "anchor": "grill",
-            "title": "Гриль на костре",
+            "title": "Grill",
             "text": "A $(thing)Grill$() is an item that can be added to a $(item)Firepit$() or $(item)Oven$() to cook foods more efficiently. The grill is able to cook five items at once, and also gives these items the $(thing)Wood Grilled$() trait when cooking food, which provides a minor buff to the item's $(l:cooking/decay)expiration date$(). In order to create a firepit with grill, first create a $(l:craftsmanship/firepit)Firepit$(), then use a $(thing)Wrought Iron Grill$() on the firepit."
         },
         {
@@ -274,21 +274,21 @@
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Эстетика",
+            "title": "Aesthetics",
             "anchor": "countertop",
             "item": "firmalife:brick_countertop,firmalife:rustic_countertop,firmalife:tile_countertop,firmalife:stone_countertop,firmalife:rustic_finish,firmalife:tile_finish,firmalife:stone_finish",
             "text": "$(thing)Countertops$() and $(thing)Finishes$() are aesthetic blocks that count as oven parts. Finishes are applied with $(item)$(k:key.use)$(). Only $(n)brick$() oven blocks may take on finishes. Stone finish can't be applied to brick. Use $(item)Sealed bricks$() to match the look."
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Бункер печи",
+            "title": "Oven Hopper",
             "anchor": "oven_hopper",
             "item": "firmalife:oven_hopper",
             "text": "The $(thing)Oven Hopper$() will input logs into any Bottom Oven that it is facing. It holds 16 logs (4 stacks of 4, like a log pile), and its inventory is fed by dropping items in the top. Item pipes are capable of doing the same thing, but they cannot act as insulation."
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Зольник",
+            "title": "Ashtray",
             "anchor": "ashtray",
             "item": "firmalife:ashtray",
             "text": "The $(thing)Ashtray$() collects $(thing)Wood Ash$() when placed below a $(thing)Bottom Oven Block$(). There is a 0.5 chance it gains ash when fuel is consumed. Ash is extracted with $(item)$(k:key.use)$() or hoppers, and inserted via $(item)$(k:key.attack)$() it."
@@ -359,7 +359,7 @@
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Чан",
+            "title": "Vat",
             "anchor": "vat",
             "item": "firmalife:vat",
             "text": "The $(thing)Vat$() produces boiling recipes in bulk. It has one slot for items, and 10,000mB of fluid space, similar to a barrel.$(br2)Vats can only hold one fluid type at a time. So, if you make a recipe that outputs fluids while still having leftover fluid inputs it will void those inputs!"
@@ -436,7 +436,7 @@
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Разливочная станция",
+            "title": "Jarring Station",
             "anchor": "jarring_station",
             "item": "firmalife:jarring_station",
             "text": "The $(thing)Jarring Station$() is used to automatically fill $(6)$(t:Empty Jar with Lid)Jars$() with the $(l:cooking/cooking_methods#vat)Vat$(). The jarring station has a spout on one side that should point to the vat.$(br)When the vat produces jam, it will automatically fill the jars with it and seal them."
@@ -450,7 +450,7 @@
             "multiblock": {
                 "pattern": [
                     [
-                        "Все"
+                        "A"
                     ],
                     [
                         "0"
@@ -463,14 +463,14 @@
         },
         {
             "type": "patchouli:multiblock",
-            "name": "Кухонный комбайн",
+            "name": "Food Processor",
             "anchor": "food_processor",
             "text": "The $(item)Food Processor$() is another machine added by $(tfg_short) to automatically create meals or process food ingredients using $(thing)EU$().",
             "enable_visualize": false,
             "multiblock": {
                 "pattern": [
                     [
-                        "Все"
+                        "A"
                     ],
                     [
                         "0"
@@ -483,7 +483,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Читать дальше",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:cooking/food_and_water",

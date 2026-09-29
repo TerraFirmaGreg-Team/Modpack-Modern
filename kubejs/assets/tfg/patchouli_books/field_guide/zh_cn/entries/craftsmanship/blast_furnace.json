@@ -1,5 +1,5 @@
 {
-    "name": "高炉",
+    "name": "Blast Furnace",
     "category": "tfg:craftsmanship",
     "icon": "tfc:blast_furnace",
     "pages": [
@@ -373,7 +373,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "延伸阅读",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:craftsmanship/pottery",

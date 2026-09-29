@@ -24,12 +24,12 @@
             "type": "patchouli:text",
             "anchor": "crushing",
             "text": "$(thing)打击伤害$()是由钝器造成的伤害，例如$(thing)锤子$()和$(thing)狼牙棒$()。 $(thing)僵尸$()的攻击也造成打击伤害，并且它们对打击伤害有抗性。$(thing)爬行者$()也能抵御一部分打击伤害。$(thing)骷髅$()则更容易受到打击伤害。",
-            "title": "粉碎"
+            "title": "Crushing"
         },
         {
             "type": "patchouli:text",
             "anchor": "armor",
-            "title": "盔甲",
+            "title": "Armor",
             "text": "$(thing)Armor$() has its own set of damage resistances. These resistances scale with the quality of armor, but may differ among armors of the same tier. Among bronzes, $(thing)Bismuth Bronze$() armor is best at resisting $(thing)Crushing$(), $(thing)Black Bronze$() is best at resisting $(thing)Piercing$() and regular $(thing)Bronze$() does moderately well with any damage."
         },
         {
@@ -38,7 +38,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "延伸阅读",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:craftsmanship/metallurgy",
@@ -48,6 +48,6 @@
         }
     ],
     "read_by_default": true,
-    "priority": "是",
+    "priority": "true",
     "sortnum": 1
 }

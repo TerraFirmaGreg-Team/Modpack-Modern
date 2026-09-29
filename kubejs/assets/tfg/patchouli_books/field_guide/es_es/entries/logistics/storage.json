@@ -6,12 +6,12 @@
         {
             "type": "patchouli:text",
             "text": "$(li)$(bold)Item Storage$()$(li2)$(l:logistics/storage#chests)Chests$()$(li2)$(l:logistics/storage#crates)Crates$()$(li2)$(l:logistics/storage#vaults)Vaults$()$(li2)$(l:logistics/storage#super_chests)Super Chests$()$(li)$(bold)Item & Fluid Storage$()$(li2)$(l:logistics/storage#ae2)ME Storage$()$(li2)$(l:logistics/storage#kegs)Kegs$()$(li)$(bold)Fluid Storage$()$(li2)$(l:logistics/storage#barrels)Barrels$()$(li2)$(l:logistics/storage#drums)Drums$()$(li2)$(l:logistics/storage#fluid_tanks)Fluid Tanks$()$(li2)$(l:logistics/storage#multiblock_tanks)Multiblock Tanks$()$(li2)$(l:logistics/storage#super_tanks)Super Tanks$()",
-            "title": "Índice",
+            "title": "Index",
             "anchor": "index"
         },
         {
             "type": "patchouli:text",
-            "title": "Introducción",
+            "title": "Introduction",
             "anchor": "intro",
             "text": "There are a vast amount of items, materials, and fluids that you will accumulate in $(tfg). It will be important to set up vast storage systems to organize everything. Some of the most important aspects of storage is its $(thing)capacity$() and $(thing)restrictions$(). For on-the-go inventory management you should read up on $(l:logistics/personal_storage)Personal Storage$()."
         },

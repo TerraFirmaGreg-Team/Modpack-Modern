@@ -16,7 +16,7 @@
         {
             "type": "patchouli:text",
             "anchor": "intro",
-            "title": "Giriş",
+            "title": "Introduction",
             "text": "Creating and using a boat may be slightly more involved than you're used to, but there's nothing quite like building the perfect craft and setting off on the high seas. Peruse this manual and learn the ins and outs of carving, crafting, constructing, rowing, paddling, piloting, and customizing to your delight."
         },
         {
@@ -596,7 +596,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Ek Okuma",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:craftsmanship/metallurgy",

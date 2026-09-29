@@ -97,7 +97,7 @@
             "type": "patchouli:text",
             "anchor": "alpaca",
             "text": "$(bold)$(l:the_world/climate#temperature)Spawn Temp$():  -8 - 20°C$(br)$(bold)$(l:the_world/climate#rainfall)Spawn Rainfall$():  > 250mm$(br)$(bold)Spawn Area$():  Moderate Climates$(br)$(bold)Category$():  $(l:agriculture/animal_husbandry#wooly_animals)Wooly$()$(br)$(bold)Diet$():  $(l:cooking/food_and_water#grain)Grain$() and $(l:cooking/food_and_water#fruit)Fruit$()$(br)$(bold)Max Children$():  2$(br)$(bold)Gestation Time$():  36 Days$(br)$(bold)Growth Time$():  98 Days$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Max Uses$():  128$(br)$(bold)Product$():  $(l:agriculture/weaving)Wool$()$(br)$(bold)Produce Cycle$():  5 Days",
-            "title": "Alpaka"
+            "title": "Alpaca"
         },
         {
             "type": "patchouli:entity",
@@ -110,7 +110,7 @@
             "type": "patchouli:text",
             "anchor": "sheep",
             "text": "$(bold)$(l:the_world/climate#temperature)Spawn Temp$():  0 - 35°C$(br)$(bold)$(l:the_world/climate#rainfall)Spawn Rainfall$():  70 - 300mm$(br)$(bold)Spawn Area$():  Drier Climates$(br)$(bold)Category$():  $(l:agriculture/animal_husbandry#wooly_animals)Wooly$()$(br)$(bold)Diet$():  $(l:cooking/food_and_water#grain)Grain$()$(br)$(bold)Max Children$():  2$(br)$(bold)Gestation Time$():  32 Days$(br)$(bold)Growth Time$():  56 Days$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Max Uses$():  60$(br)$(bold)Product$():  $(l:agriculture/weaving)Wool$()$(br)$(bold)Produce Cycle$():  7 Days",
-            "title": "Schaf"
+            "title": "Sheep"
         },
         {
             "type": "patchouli:entity",
@@ -123,7 +123,7 @@
             "type": "patchouli:text",
             "anchor": "musk_ox",
             "text": "$(bold)$(l:the_world/climate#temperature)Spawn Temp$():  -25 - 0°C$(br)$(bold)$(l:the_world/climate#rainfall)Spawn Rainfall$():  > 100mm$(br)$(bold)Spawn Area$():  Cold Climates$(br)$(bold)Category$():  $(l:agriculture/animal_husbandry#wooly_animals)Wooly$()$(br)$(bold)Diet$():  $(l:cooking/food_and_water#grain)Grain$()$(br)$(bold)Max Children$():  1$(br)$(bold)Gestation Time$():  64 Days$(br)$(bold)Growth Time$():  168 Days$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Max Uses$():  160$(br)$(bold)Product$():  $(l:agriculture/weaving)Wool$()$(br)$(bold)Produce Cycle$():  4 Days",
-            "title": "Moschusochse"
+            "title": "Musk Ox"
         },
         {
             "type": "patchouli:entity",
@@ -162,7 +162,7 @@
             "type": "patchouli:text",
             "anchor": "quail",
             "text": "$(bold)$(l:the_world/climate#temperature)Spawn Temp$():  -15 - 15°C$(br)$(bold)$(l:the_world/climate#rainfall)Spawn Rainfall$():  > 200mm$(br)$(bold)Spawn Area$():  Cold Climates$(br)$(bold)Category$():  $(l:agriculture/animal_husbandry#oviparous_animals)Oviparous Animals$()$(br)$(bold)Diet$():  $(l:cooking/food_and_water#grain)Grain$(), $(l:cooking/food_and_water#fruit)Fruits$(), $(l:cooking/food_and_water#vegetables)Vegetables$(), and $(l:agriculture/growing_crops)Seeds$() which may be rotten.$(br)$(bold)Egg Cycle$():  28 Hours$(br)$(bold)Growth Time$():  22 Days$(br)$(bold)Hatch Time$():  8 Days$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Max Uses$():  48$(br)$(bold)Product$():  Eggs and feathers.$()",
-            "title": "Wachtel"
+            "title": "Quail"
         },
         {
             "type": "patchouli:entity",
@@ -246,7 +246,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:polar_bear",
             "scale": 0.55,
-            "name": "Eisbär",
+            "name": "Polar Bear",
             "anchor": "polar_bear",
             "text": "Der Eisbär spawnt nur in den kältesten Regionen mit einer $(l:the_world/climate#temperature)Temperatur$() von höchstens 10°C und einem $(l:the_world/climate#rainfall)Niederschlag$() von mindestens 100mm."
         },
@@ -254,7 +254,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:grizzly_bear",
             "scale": 0.55,
-            "name": "Grizzlybär",
+            "name": "Grizzly Bear",
             "anchor": "grizzly_bear",
             "text": "Der Grizzlybär spawnt in Wäldern mit gemäßigtem Klima, bei einer $(l:the_world/climate#temperature)Temperatur$() von -15 bis 15°C und mindestens 200mm $(l:the_world/climate#rainfall)Niederschlag$()."
         },
@@ -262,7 +262,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:black_bear",
             "scale": 0.55,
-            "name": "Schwarzbär",
+            "name": "Black Bear",
             "anchor": "black_bear",
             "text": "Der Schwarzbär spawnt in Wäldern mit wärmerem und feuchterem Klima, bei einer $(l:the_world/climate#temperature)Temperatur$() von 5 bis 20°C und mindestens 250mm $(l:the_world/climate#rainfall)Niederschlag$()."
         },
@@ -270,7 +270,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:cougar",
             "scale": 0.6,
-            "name": "Puma",
+            "name": "Cougar",
             "anchor": "cougar",
             "text": "Der Puma bevorzugt die meisten gemäßigten Klimazonen mit einer $(l:the_world/climate#temperature)Temperatur$() von -10 bis 21°C und mindestens 150mm $(l:the_world/climate#rainfall)Niederschlag$()."
         },
@@ -286,7 +286,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:lion",
             "scale": 0.55,
-            "name": "Löwe",
+            "name": "Lion",
             "anchor": "lion",
             "text": "Der Löwe spawnt in Ebenen mit einer durchschnittlichen $(l:the_world/climate#temperature)Temperatur$() von mindestens 16°C und einem $(l:the_world/climate#rainfall)Niederschlag$() zwischen 50 und 300mm."
         },
@@ -302,7 +302,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:sabertooth",
             "scale": 0.6,
-            "name": "Säbelzahntiger",
+            "name": "Sabertooth",
             "anchor": "sabertooth",
             "text": "Der Säbelzahntiger spawnt bei jeder $(l:the_world/climate#temperature)Temperatur$() über 0 °C und jeder $(l:the_world/climate#rainfall)Niederschlagsmenge$() über 250 mm."
         },
@@ -353,7 +353,7 @@
             "entity": "tfc:boar",
             "anchor": "boar",
             "scale": 0.7,
-            "name": "Wildschwein",
+            "name": "Boar",
             "text": "Das Wildschwein spawnt bei einer $(l:the_world/climate#temperature)Temperatur$() unter 25 °C und über -5 °C sowie einer $(l:the_world/climate#rainfall)Niederschlagsmenge$() zwischen 130 und 400 mm."
         },
         {
@@ -361,7 +361,7 @@
             "entity": "tfc:moose",
             "anchor": "moose",
             "scale": 0.7,
-            "name": "Elch",
+            "name": "Moose",
             "text": "Der Elch spawnt in Wäldern bei einer $(l:the_world/climate#temperature)Temperatur$() unter 10 °C und über -15 °C sowie einer $(l:the_world/climate#rainfall)Niederschlagsmenge$() zwischen 150 und 300 mm."
         },
         {
@@ -398,7 +398,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:fox",
             "scale": 0.7,
-            "name": "Fuchs",
+            "name": "Fox",
             "anchor": "fox",
             "text": "Der Fuchs frisst gerne die Beeren von Sträuchern. Er ist in Wäldern mit einer $(l:the_world/climate#temperature)Temperatur$() unter 25 °C und einer $(l:the_world/climate#rainfall)Niederschlagsmenge$() zwischen 130 und 400 mm anzutreffen."
         },
@@ -522,7 +522,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:cod",
             "scale": 0.7,
-            "name": "Kabeljau",
+            "name": "Cod",
             "anchor": "cod",
             "text": "Kabeljaue bevorzugen kältere Ozeane mit einer $(l:the_world/climate#temperature)Temperatur$() von höchstens 18 °C. Sie können geangelt werden."
         },
@@ -530,7 +530,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:pufferfish",
             "scale": 0.7,
-            "name": "Kugelfish",
+            "name": "Pufferfish",
             "anchor": "pufferfish",
             "text": "Kugelfische leben in jedem Ozean mit einer $(l:the_world/climate#temperature)Temperatur$() von mindestens 10 °C."
         },
@@ -538,7 +538,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:jellyfish",
             "scale": 0.7,
-            "name": "Qualle",
+            "name": "Jellyfish",
             "anchor": "jellyfish",
             "text": "Quallen leben in wärmeren Ozeanen mit einer $(l:the_world/climate#temperature)Temperatur$() von mindestens 18 °C."
         },
@@ -546,7 +546,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:tropical_fish",
             "scale": 0.7,
-            "name": "Tropischer Fisch",
+            "name": "Tropical Fish",
             "anchor": "tropical_fish",
             "text": "Tropische Fische bevorzugen wärmere Ozeane mit einer $(l:the_world/climate#temperature)Temperatur$() von mindestens 18 °C."
         },
@@ -554,7 +554,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:salmon",
             "scale": 0.7,
-            "name": "Lachs",
+            "name": "Salmon",
             "anchor": "salmon",
             "text": "Lachse spawnen in jedem Fluss oder See mit einer $(l:the_world/climate#temperature)Temperatur$() von mindestens -5 °C."
         },
@@ -562,7 +562,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:bluegill",
             "scale": 0.7,
-            "name": "Blauer Sonnenbarsch",
+            "name": "Bluegill",
             "anchor": "bluegill",
             "text": "Der Sonnenbarsch spawnt in jedem Fluss oder See mit einer $(l:the_world/climate#temperature)Temperatur$() von mindestens -10 °C und höchstens 26 °C."
         },
@@ -576,7 +576,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:isopod",
             "scale": 0.7,
-            "name": "Assel",
+            "name": "Isopod",
             "anchor": "isopod",
             "text": "Asseln spawnen in tieferen Bereichen von Ozeanen mit einer $(l:the_world/climate#temperature)Temperatur$() von höchstens 14 °C."
         },
@@ -584,7 +584,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:lobster",
             "scale": 0.7,
-            "name": "Hummer",
+            "name": "Lobster",
             "anchor": "lobster",
             "text": "Hummer spawnen in jedem Ozean mit einer $(l:the_world/climate#temperature)Temperatur$() von höchstens 21 °C."
         },
@@ -592,7 +592,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:crayfish",
             "scale": 0.7,
-            "name": "Flusskrebs",
+            "name": "Crayfish",
             "anchor": "crayfish",
             "text": "Flusskrebse sind ähnlich wie Hummer, spawnen jedoch in Flüssen und Seen. Sie benötigen eine $(l:the_world/climate#temperature)Temperatur$() von mindestens 5 °C und eine $(l:the_world/climate#rainfall)Niederschlagsmenge$() von mindestens 125 mm."
         },
@@ -600,7 +600,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:horseshoe_crab",
             "scale": 0.7,
-            "name": "Pfeilschwanzkrebs",
+            "name": "Horseshoe Crab",
             "anchor": "horseshoe_crab",
             "text": "Pfeilschwanzkrebse spawnen in Ozeanen mit gemäßigtem Klima, bei einer $(l:the_world/climate#temperature)Temperatur$() zwischen 10 und 21 °C und einer $(l:the_world/climate#rainfall)Niederschlagsmenge$() von höchstens 400 mm."
         },
@@ -622,7 +622,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:dolphin",
             "scale": 0.4,
-            "name": "Delphin",
+            "name": "Dolphin",
             "anchor": "dolphin",
             "text": "Delfine leben in tiefen Ozeanen mit einer $(l:the_world/climate#temperature)Temperatur$() von mindestens 10 °C und einer $(l:the_world/climate#rainfall)Niederschlagsmenge$() von mindestens 200 mm."
         },
@@ -630,7 +630,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:manatee",
             "scale": 0.25,
-            "name": "Seekuh",
+            "name": "Manatee",
             "anchor": "manatee",
             "text": "Seekühe leben in warmen Seen mit einer $(l:the_world/climate#temperature)Temperatur$() von mindestens 20 °C und einer $(l:the_world/climate#rainfall)Niederschlagsmenge$() von höchstens 300 mm."
         },

@@ -246,7 +246,7 @@
 			"type": "patchouli:spotlight",
 			"item": "create:transmitter",
 			"anchor": "high_logistics",
-			"title": "Avancerad Logistik",
+			"title": "High Logistics",
 			"text": "Moving packages around is good and all, but surely that can't be all there is? Well, you're exactly right. There's much more that can be done with packages, including $(thing)reading inventory contents$() and $(thing)having things be delivered remotely$(), and later on even $(thing)automatically sending ingredients to be processed$() based on an item's threshold!"
 		},
 		{
