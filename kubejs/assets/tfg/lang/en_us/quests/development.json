@@ -1,0 +1,82 @@
+{
+    "quests.development": "Progression Table",
+    "quests.development.subtitle": "An easy way to understand your progression on GregTech",
+
+    "quests.development.explanation.title": "Let's do some explaining",
+    "quests.development.explanation.subtitle": "It is actually quite easy",
+    "quests.development.explanation.desc.1": "The &lCircuit Progression&r of GregTech can seem intimidating at first, but it's not that bad.\n\nFirst, you need to understand that circuits of the same tier are interchangeable. For example, to craft an &6HV&r &6Mixer&r, you can use any &6HV-tier&r circuit.",
+    "quests.development.explanation.desc.2": "Now, let's talk about &lprogression&r. As you may notice, each circuit shares a color code on its icon and a name. For example, all &aQuantum Processors&r are &agreen&r and crafted inside &1IV-tier&r Circuit Assemblers. To craft one, you first need the previous circuit — that's why, to craft your first &dLuV&r &dCircuit&r, the Nanoprocessor Mainframe, you must start by crafting a Nanoprocessor and progress through each &7step&r. In this case, it would take three steps.\n\nThis is why the rightmost &6circuits&r in each line are always cheaper to &a craft&r: they require fewer &7steps&r.",
+    "quests.development.explanation.desc.3": "Additionally, we have added &lUniversal Circuits&r. They can be &a crafted&r from any &6circuit&r — whether &1IV&r, &dLuV&r, &3UV&r, or any other tier — and are extremely useful for &9automation&r with AE2. Try to encode all your &fpatterns&r with &lUniversal Circuits&r, so whenever you upgrade to a better circuit, you won't have to redo all your &fpatterns&r — only the ones used to craft the Universal Circuit.",
+    "quests.development.explanation.task": "Okay I read the whole three pages",
+
+    "quests.development.ulv.title": "&8ULV&r Circuits",
+    "quests.development.ulv.subtitle": "",
+    "quests.development.ulv.desc": "On this line you can see the Steam, or &8ULV&r, equivalents.",
+
+    "quests.development.lv.title": "&7LV&r Circuits",
+    "quests.development.lv.subtitle": "",
+    "quests.development.lv.desc": "Circuits along this line are &7LV&r, and are interchangeable in recipes.\n\n&cElectronic Circuits&r are the &oworst&r in terms of cost and effort required to produce, but you have to start somewhere.\n\n&eBasic Integrated Processors&r act as a middle layer between &cElectronic Circuits&r and &2Microchip Processors.&r\n\nFinally, &2Microchip Processors&r will be the best option for the rest of the playthrough.",
+
+    "quests.development.mv.title": "&bMV&r Circuits",
+    "quests.development.mv.subtitle": "",
+    "quests.development.mv.desc": "Circuits along this line are &bMV&r, and are interchangeable in recipes.\n\nThe pattern stays other same: the rightmost circuit comes in &dlarger quantities&r and is overall &aeasier&r to produce.",
+
+    "quests.development.hv.title": "&6HV&r Circuits",
+    "quests.development.hv.subtitle": "",
+    "quests.development.hv.desc": "Circuits along this line are &6HV&r, and are interchangeable in recipes.\n\nThe pattern stays the same: the rightmost circuit comes in &dlarger quantities&r and is overall &aeasier&r to produce.",
+
+    "quests.development.ev.title": "&5EV&r Circuits",
+    "quests.development.ev.subtitle": "",
+    "quests.development.ev.desc": "Circuits along this line are &5EV&r, and are interchangeable in recipes.\n\nThe pattern stays the same: the rightmost circuit comes in &dlarger quantities&r and is overall &aeasier&r to produce.",
+
+    "quests.development.iv.title": "&1IV&r Circuits",
+    "quests.development.iv.subtitle": "",
+    "quests.development.iv.desc": "Circuits along this line are &1IV&r, and are interchangeable in recipes.\n\nThe pattern stays the same: the rightmost circuit comes in &dlarger quantities&r and is overall &aeasier&r to produce.",
+
+    "quests.development.luv.title": "&dLuV&r Circuits",
+    "quests.development.luv.subtitle": "",
+    "quests.development.luv.desc": "Circuits along this line are &dLuV&r, and are interchangeable in recipes.\n\nThe pattern stays the same: the rightmost circuit comes in &dlarger quantities&r and is overall &aeasier&r to produce.\n\nMake sure to set up &3wetware board production&r as soon as possible! These take a &6very long time&r to make.\n\nIt's &dLuV&r, not &4LUV&r.",
+
+    "quests.development.zpm.title": "&cZPM&r Circuits",
+    "quests.development.zpm.subtitle": "",
+    "quests.development.zpm.desc": "Circuits along this line are &cZPM&r, and are interchangeable in recipes.",
+
+    "quests.development.uv.title": "&3UV&r Circuits",
+    "quests.development.uv.subtitle": "",
+    "quests.development.uv.desc": "Circuits along this line are &3UV&r, and are interchangeable for each other.",
+
+    "quests.development.uhv.title": "&4UHV&r Circuits",
+    "quests.development.uhv.subtitle": "",
+    "quests.development.uhv.desc": "Congratulations! You've reached the end of the circuit progression.\n\nThe only &4UHV&r circuit is the &6Wetware Mainframe&r, which is used for crafting some endgame stuff.",
+
+    "quests.development.hull_lv.title": "Craftable in &6Steam Age&r and &7LV&r",
+    "quests.development.hull_lv.subtitle": "Hand crafted and artisanal",
+    "quests.development.hull_lv.desc": "&7Early game&r Circuits are made using hand crafting and Create.\n\nHave a good &3Create&r setup to make them easier to produce then pick up the &3Circuit Assembler&r to make them a lot more efficient.",
+
+    "quests.development.hull_mv.title": "Craftable in &bMV&r",
+    "quests.development.hull_mv.subtitle": "Integrated Dynamics",
+    "quests.development.hull_mv.desc.1": "The &9Integrated&r Circuit line may not be a strict upgrade in terms of cost, but will tide you over as a stepping stone towards the next tier.\n\nThey will require a MV &3Laser Engraver&r and a MV &3Cutting Machine&r.",
+    "quests.development.hull_mv.desc.2": "&l&3Lore:&r&o In Omnifactory, and in previous Gregicality, this circuit line was called &9Refined&r and was standardized like further tiers.",
+
+    "quests.development.hull_hv.title": "Craftable in &bMV&r and &6HV&r",
+    "quests.development.hull_hv.subtitle": "They tend to be small",
+    "quests.development.hull_hv.desc": "&eMicro&r Circuits are where the &3Cleanroom&r becomes a requirement to progress.\n\nDon't get caught out by the &aMainframe&r - it requires a &3HV Circuit Assembler&r.",
+
+    "quests.development.hull_ev.title": "Craftable in &5EV&r",
+    "quests.development.hull_ev.subtitle": "Nano Age",
+    "quests.development.hull_ev.desc": "This is the &9Nano&r Circuit line.\n\nYou may need to go out in &bspace&r to craft them.\n\nStarting from here, circuit progression will follow a pattern:\n\n&9-&r Processor\n&9-&r Assembly\n&9-&r Supercomputer\n&9-&r Mainframe",
+
+    "quests.development.hull_iv.title": "Craftable in &1IV&r",
+    "quests.development.hull_iv.subtitle": "GregTech gets Quantum",
+    "quests.development.hull_iv.desc": "Welcome to the &9Quantum&r Circuit line.\n\nYou may want to invest in &aPBI&r at this point, as &dAdvanced SMDs&r will skyrocket your circuit production.",
+
+    "quests.development.hull_luv.title": "Craftable in &dLuV&r",
+    "quests.development.hull_luv.subtitle": "Crystallisation",
+    "quests.development.hull_luv.desc": "This is the &9Crystal&r Circuit line.\n\nIt's locked behind &3Fusion&r.",
+
+    "quests.development.hull_zpm.title": "Craftable in &cZPM&r",
+    "quests.development.hull_zpm.subtitle": "Soft and Wetware",
+    "quests.development.hull_zpm.desc": "This is the &9Wetware&r Circuit line.\n\nIt will be the biggest automation challenge to face in this modpack. Best of luck."
+
+
+}
