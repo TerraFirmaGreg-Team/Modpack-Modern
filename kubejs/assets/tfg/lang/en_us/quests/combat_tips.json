@@ -1,0 +1,218 @@
+{
+	"quests.combat": "Equipment and Combat",
+	"quests.combat.subtitle": "Everything you need to know about hitting and not getting hit.",
+
+	"quests.combat_tips.stone_main.title": "Stone Age",
+
+	"quests.combat_tips.hammer.title": "Hammers",
+	"quests.combat_tips.hammer.subtitle": "It's hammer time!",
+	"quests.combat_tips.hammer.description": "While combat may not be the first thing you think to do with your hammer, it can be surprisingly effective. Hammers deal &2Crushing&r damage which can help you against Skeletons. \n\nFor more information on &cDamage Types&r consult the &3Field Guide&r.",
+	"quests.combat_tips.hammer.task": "Any Hammer",
+
+	"quests.combat_tips.javelin.title": "Javelins",
+	"quests.combat_tips.javelin.subtitle": "Caveman's bow",
+	"quests.combat_tips.javelin.description": "If you want to keep your foes away from you, javelins are the weapon for you. They are the earliest ranged weapons you will have available to you. They deal &9Piercing&r damage, which can help you against Zombies. \n\nFor more information on &cDamage Types&r consult the &3Field Guide&r. \n\nOnce you acquire leather you will be able to craft a &5Quiver&r which allows you to have easy access to up to 8 javelins! ",
+	"quests.combat_tips.javelin.task": "Any Javelin",
+
+	"quests.combat_tips.axe.title": "Axes",
+	"quests.combat_tips.axe.subtitle": "Good for more than wood",
+	"quests.combat_tips.axe.description": "Until you can upgrade, an axe will be your most reliable weapon. Along with high damage, they deal &6Slashing&r damage, which will help you against Creepers. \n\nFor more information on &cDamage Types&r consult the &3Field Guide&r.",
+	"quests.combat_tips.axe.task": "Any Axe",
+
+	"quests.combat_tips.knife.title": "Knives",
+	"quests.combat_tips.knife.subtitle": "Stabby stabby",
+	"quests.combat_tips.knife.description": "Knives are most useful for crafting, but they can be a weapon in a pinch. They deal &9Piercing&r damage, which can help you against Zombies. \n\nFor more information on &cDamage Types&r consult the &3Field Guide&r.",
+	"quests.combat_tips.knife.task": "Any Knife",
+
+	"quests.combat_tips.club.title": "Flint Club",
+	"quests.combat_tips.club.subtitle": "Gronk Bonk",
+	"quests.combat_tips.club.description": "The flint clubs are rather unconventional weapons. Instead of dealing damage, they will break your target's bones, stopping them in their tracks.\n\nBoth the standard and fortified flint clubs can be crafted with primitive materials. The fortified flint club boasts a faster attack speed and more durability.",
+
+	"quests.combat_tips.mold_main.title": "Primitive Metallurgy",
+
+	"quests.combat_tips.wood_shield.title": "Wooden Shield",
+	"quests.combat_tips.wood_shield.subtitle": "Skeletons hurt, like a lot",
+	"quests.combat_tips.wood_shield.description": "A wooden shield will protect you somewhat from most damage sources you point it at.\n\nDue to how cheap it is, it doesn't offer much protection.\n\nBe warned, it will &4not&r protect you from explosions.",
+
+	"quests.combat_tips.leather.title": "Leather Armor",
+	"quests.combat_tips.leather.subtitle": "Clothes at last",
+	"quests.combat_tips.leather.description": "Once you have leather, you will be able to get your first true armor. It isn't great, but it will provide that extra protection you may need. \n\nThey also give you a slight resistance to &6Slashing&r damage.",
+
+	"quests.combat_tips.mold_weapons.title": "Molded Weapons",
+	"quests.combat_tips.mold_weapons.subtitle": "The power of metal",
+	"quests.combat_tips.mold_weapons.description": "Molds allow you to make copper and bronze versions of all weapons, including three new types: Swords, Scythes, and Maces. \n\nSwords: These well rounded weapons deal &6Slashing&r damage. \n\nScythes: They do more damage than swords, but are slower. They deal &6Slashing&r damage. \n\nMaces: They are the best weapons that deal &2Crushing&r damage.",
+	"quests.combat_tips.mold_weapons.task.1": "Any Sword",
+	"quests.combat_tips.mold_weapons.task.2": "Any Scythe",
+	"quests.combat_tips.mold_weapons.task.3": "Any Mace",
+
+	"quests.combat_tips.bow.title": "Bow and Arrow",
+	"quests.combat_tips.bow.subtitle": "Then I took an arrow to the knee...",
+	"quests.combat_tips.bow.description": "While javelins are cool, it's hard to beat a bow and arrow. Arrows can be expensive, so setting up a bird farm isn't a bad idea. Arrows deal &9Piercing&r damage. \n\nOnce you have leather you will be able to craft a &5Quiver&r which allows you to have easy access to up to 8 stacks of arrows!",
+	"quests.combat_tips.bow.task.2": "Any Arrow",
+
+	"quests.combat_tips.bronze_main.title": "Bronze Age",
+
+	"quests.combat_tips.forged_weapons.title": "Forged Weapons",
+	"quests.combat_tips.forged_weapons.subtitle": "To wrought iron and beyond!",
+	"quests.combat_tips.forged_weapons.description": "From wrought iron and above you will need the appropriate anvil to forge your equipment. Additionally, the anvil unlocks butchery knives: \n\nFaster than swords, but do less damage. They allow you to get &cadditional&r meat from animals. This doesn't affect any other drops.",
+	"quests.combat_tips.forged_weapons.task": "Any Butchery Knife",
+
+	"quests.combat_tips.shield.title": "Metal Shield",
+	"quests.combat_tips.shield.subtitle": "Premium protection",
+	"quests.combat_tips.shield.description": "Now these are some real shields. Using one of these will protect you from any damage, including explosions. \n\nThey also come in a bunch of fun shapes!",
+	"quests.combat_tips.shield.task": "Any Metal Shield",
+
+	"quests.combat_tips.armor.title": "Metal Armor",
+	"quests.combat_tips.armor.subtitle": "Only the shiniest suit of armor",
+	"quests.combat_tips.armor.description": "Metal armor requires a two-step forging process, but don't be scared off by its difficulty. Metal armor will boost your survival chances going into the &dBeneath&r or if you fight off a group of &3Illagers&r.\n\nAll metal armor will give you bonus protection to &6Slashing&r, &9Piercing&r, and &2Crushing&r damage",
+	"quests.combat_tips.armor.task.1": "Any Metal Helmet",
+	"quests.combat_tips.armor.task.2": "Any Metal Chestplate",
+	"quests.combat_tips.armor.task.3": "Any Metal Greaves",
+	"quests.combat_tips.armor.task.4": "Any Metal Boots",
+
+	"quests.combat_tips.iron_main.title": "Iron Age",
+
+	"quests.combat_tips.crossbow.title": "Crossbow",
+	"quests.combat_tips.crossbow.subtitle": "It's like a manual gun",
+	"quests.combat_tips.crossbow.description": "Quite simply, it functions the same as the vanilla crossbow. Similar to the bow you can use a &5Quiver&r to hold up to 8 stacks of arrows.",
+
+	"quests.combat_tips.flintlock_mechanism.title": "Flintlock Mechanism",
+	"quests.combat_tips.flintlock_mechanism.subtitle": "Sparks on demand!",
+	"quests.combat_tips.flintlock_mechanism.description": "This is your first &2Gun Mechanism&r, which are the main crafting components of most guns. The &6Flintlock Mechanism&r allows you to make your first two guns! The first of which is the &9Flintlock Pistol&r.\n\nOnce you acquire steel you will be able to make a much cheaper &6Flintlock Mechanism&r.",
+
+	"quests.combat_tips.flintlock_gun.title": "Flintlock Pistol",
+	"quests.combat_tips.flintlock_gun.subtitle": "Eat Lead!",
+	"quests.combat_tips.flintlock_gun.description": "Well this is the moment you have been waiting for, it's a gun. Now it's not that good of a gun, but technology has to start somewhere. Guns have many advantages compared to other ranged weapons, but some relevant information is that &3Glayzes&r and &2Klayzes&r cannot block bullets and &dEndermen&r cannot dodge them.\n\nFor more information on how TACZ guns work, view the gun at the top of this quest chapter.",
+
+	"quests.combat_tips.steel_main.title": "Black Steel Age",
+
+	"quests.combat_tips.potato_cannon.title": "Potato Cannon",
+	"quests.combat_tips.potato_cannon.subtitle": "Fully renewable ammunition",
+	"quests.combat_tips.potato_cannon.description": "The potato cannon, despite its name, can use any crop as ammunition.\n\nIf you can't finish eating all your food before it rots, this might be the weapon for you!",
+
+	"quests.combat_tips.crankbow.title": "Crankbow",
+	"quests.combat_tips.crankbow.subtitle": "Full auto crossbow",
+	"quests.combat_tips.crankbow.description": "The crankbow can hold two stacks of arrows, filled the same way you'd fill a bundle.\n\nThe longer you hold down the fire button, the faster it shoots out arrows!",
+
+	"quests.combat_tips.springfield_gun.title": "Springfield Rifle",
+	"quests.combat_tips.springfield_gun.subtitle": "Now this is a real gun!",
+	"quests.combat_tips.springfield_gun.description": "A proper rifle! This gun packs quite a bigger punch than the Flintlock Pistol.\n\nYour options for other guns are quite limited at this point, as the next one, a pistol, requires &7LV&r.",
+
+	"quests.combat_tips.any_ammo.title": "Acquire Ammo",
+	"quests.combat_tips.any_ammo.subtitle": "But where do I put them?",
+	"quests.comabt_tips.any_ammo.desc": "You'll need to craft ammo to be able to shoot anything!\n\nEvery gun can only accept one kind of ammo, indicated on the gun's tooltip or through EMI.\n\nFor now, you'll have to carry the ammo in your main inventory in order for your gun to reload from it.",
+	"quests.combat_tips.any_ammo.task": "Any Ammo",
+
+	"quests.combat_tips.steel_ammo.title": "Steel Ammo Box",
+	"quests.combat_tips.steel_ammo.subtitle": "Fully customizable!",
+	"quests.combat_tips.steel_ammo.description": "The &7Steel Ammo Box&r is available at &7LV&r.\n\nThis ammo box can hold &b3 stacks&r of a single bullet type.\n\nAdditionally, you are able to dye this ammo box to be any color you want.",
+
+	"quests.combat_tips.magnalium_ammo.title": "Magnalium Ammo Box",
+	"quests.combat_tips.magnalium_ammo.subtitle": "Bigger on the inside!",
+	"quests.combat_tips.magnalium_ammo.description": "The &9Magnalium Ammo Box&r is available at &bMV&r.\n\nThis ammo box can hold &b5 stacks&r of a single bullet type.",
+
+	"quests.combat_tips.desh_ammo.title": "Desh Ammo Box",
+	"quests.combat_tips.desh_ammo.subtitle": "It's out of this world!",
+	"quests.combat_tips.desh_ammo.description": "The &6Desh Ammo Box&r is available at &6HV&r, but only after you have visited the moon.\n\nThis ammo box can hold &b9 stacks&r of a single bullet type.",
+
+	"quests.combat_tips.wireless_ammo.title": "Wireless Ammo Box",
+	"quests.combat_tips.wireless_ammo.subtitle": "A perfect crossover",
+	"quests.combat_tips.wireless_ammo.description": "The &dWireless Ammo Box&r taps into your wireless ME network to supply you with whatever bullets you need. Just make sure to remember to keep it charged and to stay within your wireless ME network's range.",
+
+	"quests.combat_tips.lv_main.title": "&7LV&r",
+	"quests.combat_tips.lv_main.desc": "Not much new equipment is available at &7LV&r, but there's a couple minor new things.",
+
+	"quests.combat_tips.revolver_gun.title": "\"Torque\" Revolver",
+	"quests.combat_tips.revolver_gun.subtitle": "Yeehaw!",
+	"quests.combat_tips.revolver_gun.desc": "This revolver is the only new gun available at &7LV&r.\n\nWhile each shot is weaker than the Springfield Rifle, it makes up for it in being able to hold more than one bullet at a time and fire them rapidly.",
+
+	"quests.combat_tips.chainsaw.title": "Chainsaws",
+	"quests.combat_tips.chainsaw.subtitle": "Hockey mask not included",
+	"quests.combat_tips.chainsaw.desc": "Chainsaws are a power tool you might craft for faster tree felling, but they also make for good melee weapons!",
+
+	"quests.combat_tips.adv_clock_main.subtitle": "Lightweight and precise",
+	"quests.combat_tips.adv_clock_main.desc": "The Advanced Clockwork Mechanism is your second &2Gun Mechanism&r, craftable in &bMV&r.\n\nYou can use it to craft a wide variety of new weapons! If you have no clue what you like, we suggest going into a creative world and trying them out.\n\nFrom this point on, expect new weapons to be unlocked every other tier.\n\nNote that FTB Quests doesn't properly display all of the normal weapon information on their tooltips, so you'll have to check EMI to compare their stats.",
+
+	"quests.combat_tips.slap_ammo.title": "Rifles",
+	"quests.combat_tips.slap_ammo.desc": "Rifles are a good all-rounder weapon. If you're not sure what to craft, the &2Clockwork Rifle&r is a great pick.",
+
+	"quests.combat_tips.high_slap_ammo.title": "Sniper Rifles",
+	"quests.combat_tips.high_slap_ammo.desc": "If you prioritize range over everything else, a sniper rifle is perfect for you.",
+
+	"quests.combat_tips.rimmed_blunt_ammo.title": "Pistols and SMGs",
+	"quests.combat_tips.rimmed_blunt_ammo.desc": "If you're a \"more dakka\" enjoyer, one of these guns might suit you best.",
+
+	"quests.combat_tips.12g_ammo.title": "Shotguns",
+	"quests.combat_tips.12g_ammo.desc": "Shotguns are great if you're more of a player who likes to get up and personal.",
+
+	"quests.combat_tips.hv_main.title": "&6HV&r",
+	"quests.combat_tips.hv_main.desc": "&6HV&r doesn't unlock any new weapons, but it does come with two important pieces of equipment - the Nano Armor and Space Suit.",
+
+	"quests.combat_tips.certus_main.subtitle": "Moon magic!",
+	"quests.combat_tips.certus_main.desc": "This is your third &2Gun Mechanism&r, craftable in &dEV&r.\n\nA lot of the ammo in this tier requires Certus Quartz. The moon has huge veins of it, or you can set up an infinite supply via Lunar Regolith.",
+
+	"quests.combat_tips.40mm_ammo.title": "Shoulder-Fired Field Gun",
+	"quests.combat_tips.40mm_ammo.desc": "Want to walk around with a tank cannon? This gun is slow, heavy, but packs a massive punch.",
+
+	"quests.combat_tips.hard_quartz_ammo.title": "Advanced Rifles",
+	"quests.combat_tips.hard_quartz_ammo.desc": "These are good balanced weapons if you don't know what to pick.",
+
+	"quests.combat_tips.fluix_quartz_ammo.title": "Grenade Launcher",
+	"quests.combat_tips.fluix_quartz_ammo.desc": "If you ever finding yourself fighting large groups of enemies at once, this may be your ticket.",
+
+	"quests.combat_tips.cluster_quartz_ammo.title": "Advanced Shotguns",
+	"quests.combat_tips.cluster_quartz_ammo.desc": "Great for blasting close-up targets.",
+
+	"quests.combat_tips.etched_quartz_ammo.title": "Advanced Pistols and SMGs",
+	"quests.combat_tips.etched_quartz_ammo.desc": "Want to shoot fast? These guns are perfect.",
+
+	"quests.combat_tips.iv_main.title": "&1IV&r",
+
+	"quests.combat_tips.gun.title": "How to gun",
+	"quests.combat_tips.gun.subtitle": "Surely you don't need instructions on how guns work?",
+	"quests.combat_tips.gun.desc": "Guns work pretty much exactly how you'd expect: simply point them at a target and press &aLeft Click&r to shoot.\n\nYou can hold &aRight Click&r to aim, fire while prone with &aC&r, and so on.\n\nEvery gun holds a different amount of ammo, and you can reload by pressing &aR&r.\n\nIn addition, most guns can be customized - press &aZ&r while holding your gun to bring up the details screen. Here, you can equip attachments and see more detailed stats, then press &aEsc&r to quit.",
+
+	"quests.combat_tips.scope.title": "Scopes",
+	"quests.combat_tips.scope.desc": "Scopes mostly change how much you can zoom in when aiming, but they can also come with some other stat changes like less recoil and ADS time (how long it takes you to \"ready\" your gun when swapping to it).",
+	"quests.combat_tips.scope.task": "Any scope",
+
+	"quests.combat_tips.grip.title": "Grips",
+	"quests.combat_tips.grip.desc": "Grips mostly reduce the recoil of your gun, but can affect some other stats.",
+	"quests.combat_tips.grip.task": "Any grip",
+
+	"quests.combat_tips.mag.title": "Magazines",
+	"quests.combat_tips.mag.desc": "Magazines improve the ammo capacity of your gun.",
+	"quests.combat_tips.mag.task": "Any magazine",
+
+	"quests.combat_tips.muzzle.title": "Muzzles",
+	"quests.combat_tips.muzzle.desc": "Muzzles can affect a variety of stats such as recoil, range, and the amount of noise your gun makes.",
+	"quests.combat_tips.muzzle.task": "Any muzzle",
+
+	"quests.combat_tips.trims.title": "Armor Trims",
+	"quests.combat_tips.trims.subtitle": "Add some flair to your fit",
+	"quests.combat_tips.trims.desc": "Almost everything you can wear can have an armor trim applied. Metal armor, clothes, even random stuff like the beekeeper outfit.\n\nCheck the &a#trimmable_armor&r tag to see what you can apply trims to, and the &a#trim_material&r tag for your color options.\n\nArmor trims can either be crafted in a Sewing Table or found as loot.",
+
+	"quests.combat_tips.javelin_throwing.title": "Javelin Throwing",
+	"quests.combat_tips.javelin_throwing.subtitle": "What's next? Discus? Shotput?",
+	"quests.combat_tips.javelin_throwing.desc": "If you hold a &2Rope Coil&r in your off-hand when throwing a Javelin, you'll be able to recall it back to you afterwards with &aRight-Click&r.\n\nIn addition, the Javelin will also be automatically recalled after 16 blocks.\n\nNever worry about losing your perfectly forged javelin that you threw off a cliff again!",
+
+	"quests.combat_tips.quiver.title": "The Quiver",
+	"quests.combat_tips.quiver.subtitle": "Oh merry men!",
+	"quests.combat_tips.quiver.desc": "A quiver can hold up to 256 arrows or 8 javelins.\n\nFiring a bow or loading a crossbow will automatically pull arrows from the quiver, and throwing a javelin will pull another out of the quiver. It will also automatically pick up any arrows or javelins.\n\nThe quiver can also be equipped on your curios slots.",
+
+	"quests.tfg_tips.piglin_disguise.subtitle": "They'll never know...",
+	"quests.tfg_tips.piglin_disguise.desc": "Do you feel like you don't belong?\nDo the &4Piglin&r attack you at your school because of your appearance?\nTry wearing a &aPiglin Disguise&r to ward off unwanted attention and blend right in.",
+
+	"quests.tfg_tips.blue_steel_diving.title": "Blue Steel Diving Gear",
+	"quests.tfg_tips.blue_steel_diving.subtitle": "Perfect for taking a warm lava bath",
+	"quests.tfg_tips.blue_steel_diving.desc": "The &9Blue Steel Diving Gear&r is a special set of armor that makes you completely impervious to &cLava&r while you're wearing it. However, it does not provide any protection from high ambient temperatures - you'll need protective clothing and cooling food or drink for that.",
+
+	"quests.space_survival.t2_space_suit.title": "Tungstensteel Space Suit",
+	"quests.space_survival.t2_space_suit.subtitle": "Extremophilia!",
+	"quests.space_survival.t2_space_suit.desc": "With this next space suit, you'll be able to survive both the &bcoldest&r and the &chottest&r environments that space can throw at you! It's required to stop you from immediately combusting as soon as you set foot on &6Venus&r and &5Mercury&r.\n\nAs a bonus, it also comes with some extra armor and air capacity!",
+
+	"quests.space_survival.soulbound.title": "Extraterrestrial Death",
+	"quests.space_survival.soulbound.subtitle": "You're a long way from spawn",
+	"quests.space_survival.soulbound.desc.1": "In TerraFirmaGreg, you can set your spawn on any dimension (even The Beneath!), but unless you've got a bunch of extra space suits lying around, respawning on the Moon might complicate things.\n\nFirst of all, you'll definitely want your bed to be inside an oxygenated area, so you don't immediately die as soon as you respawn (though in case of a blackout, you should have enough time to break your bed and reset your spawn).",
+	"quests.space_survival.soulbound.desc.2": "Secondly, you can upgrade each piece of your Space Suit with a &bSoul Pearl&r. This will make them stay equipped when you die!\n\nYou can get these from any of the tougher, hostile Endermen on the Moon.\n\nWe promise it's sci-fi and not magic."
+}
