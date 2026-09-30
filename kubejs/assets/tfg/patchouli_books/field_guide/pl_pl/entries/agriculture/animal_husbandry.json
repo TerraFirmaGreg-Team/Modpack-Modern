@@ -37,11 +37,11 @@
                     "bold": true
                 },
                 {
-                    "text": "Uses (Male)",
+                    "text": "Użycia (samiec)",
                     "bold": true
                 },
                 {
-                    "text": "Uses (Female)",
+                    "text": "Użycia (samica)",
                     "bold": true
                 },
                 {
@@ -49,7 +49,7 @@
                     "bold": true
                 },
                 {
-                    "text": "Mating",
+                    "text": "Rozmnażanie",
                     "bold": true
                 },
                 {
@@ -62,7 +62,7 @@
                     "text": "Tylko samce"
                 },
                 {
-                    "text": "Birth",
+                    "text": "Poród",
                     "bold": true
                 },
                 {
@@ -85,7 +85,7 @@
                     "text": "-1"
                 },
                 {
-                    "text": "Same Fertilized"
+                    "text": "Niezależnie od zapłodnienia"
                 },
                 {
                     "text": "Produkty",
@@ -101,7 +101,7 @@
                     "text": "Mleko, wełna itp."
                 }
             ],
-            "title": "Uses Table",
+            "title": "Tabela użyć",
             "legend": [],
             "columns": 3,
             "first_column_width": 47,
@@ -177,7 +177,7 @@
         },
         {
             "type": "patchouli:crafting",
-            "title": "Oviparous Animals",
+            "title": "Zwierzęta jajorodne",
             "anchor": "oviparous_animals",
             "recipe": "tfc:crafting/nest_box",
             "text": "$(thing)Oviparous Animals$() are not $(l:agriculture/animal_husbandry#mammals)Mammals$(), and instead produce children by laying $(thing)Eggs$(). They need a $(thing)Nest Box$() to lay eggs, which they are capable of locating on their own.$(br)Some examples are $(l:the_world/wild_animals#duck)Ducks$(), $(l:the_world/wild_animals#quail)Quails$(), and $(l:the_world/wild_animals#chicken)Chickens$()."
@@ -189,14 +189,14 @@
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Koryta",
+            "title": "Feeding Troughs",
             "anchor": "feeding_trough",
             "item": "tfcgroomer:bismuth_bronze_grooming_station,tfcgroomer:black_bronze_grooming_station,tfcgroomer:bronze_grooming_station,tfcgroomer:copper_grooming_station,tfcgroomer:wrought_iron_grooming_station,tfcgroomer:steel_grooming_station,tfcgroomer:black_steel_grooming_station,tfcgroomer:red_steel_grooming_station,tfcgroomer:blue_steel_grooming_station",
             "text": "$(thing)Feeding Troughs$() can automatically feed animals in an area specified by its tooltip. Higher tier $(l:craftsmanship/metallurgy)Metals$() increase the feeding range.$(br)To add animal feed―and optionally enable automatic breeding―open the troughs interface with $(item)$(k:key.use)$()."
         },
         {
             "type": "patchouli:relations",
-            "title": "Czytaj dalej",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:agriculture/growing_crops",

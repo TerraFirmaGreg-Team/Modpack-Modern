@@ -1,12 +1,12 @@
 {
-	"name": "Fission Power",
+	"name": "Energia rozszczepienia jądrowego",
 	"category": "tfg:mars",
 	"icon": "createdeco:decal_radioactive",
 	"read_by_default": true,
 	"pages": [
 		{
 			"type": "patchouli:relations",
-			"title": "Czytaj dalej",
+			"title": "Further Reading",
 			"anchor": "relations",
 			"entries": [
 				"tfg:mars/mars",

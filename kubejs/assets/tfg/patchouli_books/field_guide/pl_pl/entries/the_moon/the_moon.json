@@ -1,5 +1,5 @@
 {
-	"name": "Setting up a Moon Base",
+	"name": "Tworzenie bazy księżycowej",
 	"category": "tfg:the_moon",
 	"icon": "ad_astra:moon_globe",
 	"read_by_default": true,
@@ -65,7 +65,7 @@
 			"type": "patchouli:spotlight",
 			"item": "ad_astra:tier_1_rover",
 			"anchor": "rover",
-			"title": "Łazik",
+			"title": "Rover",
 			"text": "The $(item)Rover$() is a vehicle that can hold up to two passengers, runs on combustible fuels (Diesels, Gasolines, and Rocket Fuel), and even has an inventory and radio that can play real-world radio stations!"
 		},
 		{
@@ -85,7 +85,7 @@
 		},
 		{
 			"type": "patchouli:multiblock",
-			"text": "Użyj $(item)terminalu$(), aby łatwo zbudować multiblok.",
+			"text": "Użyj $(l:craftsmanship/building_tools#terminals)terminalu$(), aby łatwo zbudować multiblok.",
 			"name": " ",
 			"enable_visualize": true,
 			"multiblock": {
@@ -414,12 +414,12 @@
 		{
 			"type": "patchouli:spotlight",
 			"item": "ad_astra:vent",
-			"text": "The $(item)Vent$() is a solid block that can also let breathable air through without causing a vortex."
+			"text": "$(item)Kratka wentylacyjna$() jest traktowana jak pełny blok, ale przepuszcza powietrze zdatne do oddychania, nie powodując zaburzeń."
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "tag:ad_astra:sliding_doors",
-			"title": "Drzwi przesuwne",
+			"title": "Sliding Doors",
 			"text": "You will want to set up a proper $(thing)airlock system$() between your base's insides and the vacuum of space. Other normal doors will work, but these 3x3 doors are very thematically appropriate for a high-tech moon base. They can be automated with a $(item)pressure plate$() as usual.$(br2)$(bold)Tip:$() You can also use these doors for cleanrooms!"
 		},
 		{
@@ -438,7 +438,7 @@
 			"type": "patchouli:spotlight",
 			"anchor": "death",
 			"item": "tag:minecraft:beds",
-			"title": "Śmierć poza ziemią",
+			"title": "Extraterrestrial Death",
 			"text": "In $(tfg_short), you can set your spawn on any dimension with a bed (even $(l:beneath/beneath)The Beneath$()!), but unless you've got a bunch of extra space suits lying around, respawning on the Moon might complicate things."
 		},
 		{
@@ -452,7 +452,7 @@
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Czytaj dalej",
+			"title": "Further Reading",
 			"anchor": "relations",
 			"entries": [
 				"tfg:the_moon/preparations",

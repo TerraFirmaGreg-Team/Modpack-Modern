@@ -1,5 +1,5 @@
 {
-	"name": "Urządzenia redstone",
+	"name": "Redstone Devices",
 	"category": "tfg:logistics",
 	"icon": "minecraft:comparator",
 	"pages": [
@@ -70,7 +70,7 @@
 			"type": "patchouli:spotlight",
 			"anchor": "morered",
 			"item": "morered:red_alloy_wire,morered:bundled_network_cable",
-			"title": "More Redstone",
+			"title": "Więcej redstone",
 			"text": "Want to do more with redstone? Check out what the $(item)More Red$() mod has to offer, such as a wire that attaches to walls and ceilings and doesn't lose signal strength.$(br2)Type $(6)@morered$() into $(emi) to see them all."
 		},
 		{
@@ -90,19 +90,19 @@
 			"type": "patchouli:crafting",
 			"recipe": "create_connected:crafting/kinetics/sequenced_pulse_generator",
 			"anchor": "pulse_generator",
-			"text": "The $(item)Sequenced Pulse Generator$() can be configured to send a combination of redstone signals at varying time intervals."
+			"text": "$(item)Sekwencyjny generator impulsów$() można skonfigurować tak, aby wysyłał kombinację sygnałów redstone w różnych odstępach czasu."
 		},
 		{
 			"type": "patchouli:crafting",
 			"recipe": "tfg:create/shaped/analog_lever",
 			"anchor": "analog_lever",
-			"text": "Need to provide a constant signal strength? The $(item)Analog Lever$() is perfect for just that."
+			"text": "Chcesz zapewnić stałą siłę sygnału? $(item)Dźwignia analogowa$() jest do tego idealna."
 		},
 		{
 			"type": "patchouli:crafting",
 			"recipe": "create:crafting/logistics/stockpile_switch",
 			"anchor": "threshold_switch",
-			"text": "A $(item)Threshold Switch$() outputs a redstone signal based on how full a container is. It works with both items and fluids."
+			"text": "$(item)Przełącznik progowy$() wysyła sygnał redstone zależny od stopnia zapełnienia pojemnika. Działa zarówno z przedmiotami, jak i płynami."
 		},
 		{
 			"type": "patchouli:crafting",
@@ -125,7 +125,7 @@
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Czytaj dalej",
+			"title": "Further Reading",
 			"anchor": "relations",
 			"entries": [
 				"tfg:logistics/storage",

@@ -1,5 +1,5 @@
 {
-    "name": "Akwedukty",
+    "name": "Aqueducts",
     "category": "tfg:agriculture",
     "icon": "tfc:rock/aqueduct/shale",
     "pages": [
@@ -94,7 +94,7 @@
                 }
             ],
             "name": "Sieć akweduktów",
-            "text": "An aqueduct network with water or lava.",
+            "text": "Sieć akweduktów z wodą lub lawą.",
             "enable_visualize": false
         },
         {

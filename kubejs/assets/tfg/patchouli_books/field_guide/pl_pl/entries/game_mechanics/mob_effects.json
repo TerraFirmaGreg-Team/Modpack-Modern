@@ -14,36 +14,36 @@
             "type": "patchouli:text",
             "anchor": "cooling",
             "title": "Chłodzenie",
-            "text": "While active this effect continually $(thing)Cools$() the player down to a minimum of $(n)5°C$()"
+            "text": "Gdy ten efekt jest aktywny, stale $(thing)chłodzi$() gracza, minimalnie do temperatury $(n)5°C$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "warming",
             "title": "Ocieplenie",
-            "text": "While active this effect continually $(thing)Warms$() the player up to a maximum of $(n)25°C$()"
+            "text": "Gdy ten efekt jest aktywny, stale $(thing)ogrzewa$() gracza, maksymalnie do temperatury $(n)25°C$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "quenched",
-            "title": "Opity",
+            "title": "Quenched",
             "text": "While active this effect prevents the natural decay of $(l:cooking/food_and_water#thirst)Thirst$(). However, it does not prevent the Thirsty effect from decreasing your meter.$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "cure_parasites",
-            "title": "Leczy pasożyty",
+            "title": "Cure Parasites",
             "text": "While active this effect gradually removes $(l:cooking/food_and_water#parasites)Parasite Contamination$() at a rate of about 1% every 10s at base level.$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "cure_toxins",
-            "title": "Detox",
+            "title": "Detoxify",
             "text": "While active this effect gradually removes $(l:cooking/food_and_water#toxins)Toxin Contamination$() at a rate of about 1% every 10s at base level.$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "cure_microplastics",
-            "title": "Filtr mikroplastików",
+            "title": "Filter Microplastics",
             "text": "While active this effect gradually removes $(l:cooking/food_and_water#microplastics)Microplastic Contamination$() at a rate of about 1% every 10s at base level.$()"
         },
         {
@@ -55,24 +55,24 @@
         {
             "type": "patchouli:text",
             "anchor": "blazing",
-            "title": "Blazing",
+            "title": "Pieczenie",
             "text": "While active this effect continually $(thing)Warms$() the player up to a dangerously-high maximum of $(n)60°C$(). Protective equipment is recommended to survive this condition."
         },
         {
             "type": "patchouli:text",
             "anchor": "instant_radiation",
-            "title": "Natychmiastowe promieniowanie",
+            "title": "Instant Radiation",
             "text": "This effect quickly damages the player with $(l:game_mechanics/hazards#radioactive_materials)Radiation Damage$()."
         },
         {
             "type": "patchouli:text",
             "anchor": "final_moments",
             "title": "U wrót śmierci",
-            "text": "This effect starts a timer that counts down your last few minutes. When the clock ends, you die."
+            "text": "Ten efekt rozpoczyna odliczanie ostatnich kilku minut twojego życia. Gdy czas dobiegnie końca, umrzesz."
         },
         {
             "type": "patchouli:relations",
-            "title": "Czytaj dalej",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:the_world/geology",

@@ -6,12 +6,12 @@
         {
             "type": "patchouli:text",
             "anchor": "intro",
-            "text": "$(thing)Physical Damage Types$() describe the nature of the damage that can be dealt by players and mobs. There are three types: $(bold)Piercing$(), $(bold)Slashing$(), and $(bold)Crushing$(). Some entities are able to resist certain damage types, making it difficult or impossible to kill them with certain methods."
+            "text": "$(thing)Типи фізичної шкоди$() описують характер шкоди, яку можуть завдавати гравці та моби. Існує три типи: $(bold)колюча$(), $(bold)ріжуча$() та $(bold)дробильна$(). Деякі сутності здатні чинити опір певним типам шкоди, через що їх може бути важко або неможливо вбити за допомогою певних методів."
         },
         {
             "type": "patchouli:text",
             "anchor": "piercing",
-            "text": "$(thing)Piercing$() damage is dealt by pointy weapons such as $(thing)Knives$(), projectiles like $(thing)Arrows$() and $(thing)Javelins$(), fanged monsters like $(thing)Spiders$(), and $(thing)Cacti$(). $(thing)Skeletons$() are invulnerable to piercing damage, and $(thing)Zombies$() are slightly vulnerable to it.",
+            "text": "$(thing)Колюча$() шкода завдається загостреною зброєю, як-от $(thing)ножи$(), снарядами, такі як $(thing)стріли$() та $(thing)списи$(), зубастими монстрами, як-от $(thing)павуки$(), а також $(thing)кактусами$(). $(thing)Скелети$() невразливі до колючої шкоди, а $(thing)зомбі$() дещо вразливіші до неї.",
             "title": "Проколювання"
         },
         {
@@ -24,13 +24,13 @@
             "type": "patchouli:text",
             "anchor": "crushing",
             "text": "Шкоду $(thing)дроблення$() завдає тупа зброя, як от $(thing)молот$() та $(thing)булава$(). $(thing)Зомбі$() завдають нищівної шкоди, але ж вони мають стійкість до неї. $(thing)Кріпер$() теж має імунітет до дроблення. А от $(thing)скелет$() вразливий до нього.",
-            "title": "Дроблення"
+            "title": "Crushing"
         },
         {
             "type": "patchouli:text",
             "anchor": "armor",
-            "title": "Обладунки",
-            "text": "$(thing)Armor$() has its own set of damage resistances. These resistances scale with the quality of armor, but may differ among armors of the same tier. Among bronzes, $(thing)Bismuth Bronze$() armor is best at resisting $(thing)Crushing$(), $(thing)Black Bronze$() is best at resisting $(thing)Piercing$() and regular $(thing)Bronze$() does moderately well with any damage."
+            "title": "Armor",
+            "text": "$(thing)Обладунки$() мають власний набір опорів до шкоди. Ці опори залежать від якості обладунків, але можуть відрізнятися навіть у обладунків одного рівня. Серед бронзових обладунків $(thing)бісмутова бронза$() найкраще захищає від $(thing)дробильної$() шкоди, $(thing)чорна бронза$() — від $(thing)колючої$(), а звичайна $(thing)бронза$() забезпечує помірний захист від будь-якого типу шкоди."
         },
         {
             "type": "patchouli:text",
@@ -38,7 +38,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Додаткове читання",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:craftsmanship/metallurgy",

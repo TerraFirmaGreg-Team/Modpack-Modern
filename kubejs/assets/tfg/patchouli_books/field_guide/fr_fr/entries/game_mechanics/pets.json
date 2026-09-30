@@ -37,7 +37,7 @@
                     "bold": true
                 },
                 {
-                    "text": "Climat",
+                    "text": "Climate",
                     "bold": true
                 },
                 {
@@ -156,7 +156,7 @@
         {
             "type": "patchouli:text",
             "anchor": "relax",
-            "title": "Repos",
+            "title": "Relax",
             "text": "$(thing)Repos$() est l'état de base des animaux de compagnie, et leur ordonner les retourne à cet état. Si un animal est à la maison, il se baladera dans la propriété sans partir, et dormira une fois par jour. S'il est trop loin de la maison, il marchera sans but."
         },
         {
@@ -188,13 +188,13 @@
         {
             "type": "patchouli:spotlight",
             "anchor": "lead",
-            "title": "Plomb",
+            "title": "Lead",
             "item": "minecraft:lead",
             "text": "A $(thing)Lead$() can be crafted from burlap fiber or string, and a metal ring.$(br)You can $(item)$(k:key.use)$() an animal with a lead to pull them around. Much more efficient than baiting them with food!$(br2)You can also pick up some smaller animals with $(item)$(k:key.sneak) + $(k:key.use)$() with empty hands."
         },
         {
             "type": "patchouli:relations",
-            "title": "Pour aller plus loin",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:agriculture/animal_husbandry",

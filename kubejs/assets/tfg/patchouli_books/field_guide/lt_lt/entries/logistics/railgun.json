@@ -206,7 +206,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"title": "Raudonakmenio valdymas",
+			"title": "Redstone Control",
 			"anchor": "redstone",
 			"text": "The $(item)Redstone Rule$() is simple — but incredibly powerful when used well.$(br2)In the $(item)Sender$() rules interface, enabling this rule means that a $(thing)redstone signal$() must be present on the $(thing)Input Bus$(thing) for it to send items.$(br2)In the $(item)Receiver$() rules interface, you can configure the rule so that an $(thing)Output Bus$() will only accept items based on the redstone signal on that specific block."
 		},
@@ -340,7 +340,9 @@
 			"entries": [
 				"tfg:the_moon/the_moon",
 				"tfg:logistics/redstone_devices",
-				"tfg:logistics/storage"
+				"tfg:logistics/storage",
+				"tfg:logistics/create",
+				"tfg:logistics/trains"
 			]
 		}
 	],

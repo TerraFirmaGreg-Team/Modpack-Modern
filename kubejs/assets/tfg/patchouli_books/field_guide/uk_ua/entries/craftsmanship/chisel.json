@@ -1,11 +1,11 @@
 {
-    "name": "Зубило",
+    "name": "Chisels",
     "category": "tfg:craftsmanship",
     "icon": "tfc:metal/chisel/wrought_iron",
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "Chisels are a tool for creating decorative forms of other blocks, including slabs and stairs. In order to get started, you will need a $(thing)Chisel$() and any type of $(thing)Hammer$(). Chisels must be cast in molds or forged on an $(l:craftsmanship/anvils)Anvil$(). In order to start chiseling, hold the chisel in your main hand and a hammer in your offhand, and target a block in the world."
+            "text": "Зубило — це інструмент для створення декоративних варіантів інших блоків, зокрема плит і сходів. Щоб розпочати, тобі знадобляться $(thing)зубило$() та будь-який $(thing)молот$(). Зубило можна відлити у формах або викувати на $(l:craftsmanship/anvils)ковадлі$(). Щоб почати обтесування, тримай зубило в основній руці, а молот — у другій, та наведися на блок."
         },
         {
             "type": "patchouli:text",
@@ -22,7 +22,7 @@
                 "tfc:textures/gui/book/tutorial/chisel_stair.png",
                 "tfc:textures/gui/book/tutorial/chisel_slab.png"
             ],
-            "text": "$(bold)Tutorial Slideshow:$() The three chisel modes usable on a $(thing)Raw Limestone$() block.",
+            "text": "$(bold)Навчальне слайд-шоу:$() Три режими зубила, доступні для блока $(thing)необробленого вапняку$().",
             "border": true
         },
         {
@@ -32,11 +32,11 @@
         },
         {
             "type": "patchouli:text",
-            "text": "Be careful! Chiseling in a mineshaft is not safe. Each time you chisel, there is a chance of $(l:game_mechanics/mining#supports)Collapse$()."
+            "text": "Будь обережний! Обтесування в шахті небезпечне. Щоразу під час обтесування існує ймовірність $(l:game_mechanics/mining#supports)обвалу$()."
         },
         {
             "type": "patchouli:relations",
-            "title": "Додаткове читання",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:the_world/geology",

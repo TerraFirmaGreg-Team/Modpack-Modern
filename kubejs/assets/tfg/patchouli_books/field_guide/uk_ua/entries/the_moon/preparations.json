@@ -8,25 +8,25 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Eager to launch into the final frontier? We totally get the enthusiasm but you can't just hurl yourself into space and hope to survive! $(thing)Preparation$() is key to survival, or you'll just end up back in the Stone Age banging rocks together for a few seconds before suffocating to death."
+			"text": "Не терпиться вирушити до останнього рубежу? Ми цілком розуміємо твій ентузіазм, але ти не можеш просто жбурнути себе в космос і сподіватися вижити! $(thing)Підготовка$() — ключ до виживання, інакше ти просто повернешся в Кам'яну добу, кілька секунд битимеш каміння об каміння, а потім задихнешся."
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Make sure you have at least the following:$(li)A $(item)Space Suit$() and a full drum of breathable gas$(li)A $(item)Rocket$() with another full drum of spare $(thing)Fuel$()$(li)A second $(item)Launch Pad$() so you can return$(li)Plenty of food and water$(li)A weapon and shield in case the Moon's haunted..."
+			"text": "Переконайся, що в тебе є щонайменше таке:$(li)$(item)Космічний костюм$() і повний барабан придатного для дихання газу$(li)$(item)Ракета$() з іще одна повна бочка запасного $(thing)палива$()$(li)Другий $(item)Стартовий майданчик$(), щоб ти міг повернутися$(li)Достатньо їжі та води$(li)Зброя та щит — раптом Місяць населений привидами..."
 		},
 		{
 			"type": "patchouli:spotlight",
 			"anchor": "food",
 			"item": "tfg:food/meal_bag,tfg:food/calorie_paste,tfg:food/freeze_dried_fruit",
-			"text": "Consider bringing along some $(thing)Space Food$() for the journey ahead! It's simple to make and comes with a long shelf life."
+			"text": "Подумай про те, щоб узяти із собою трохи $(thing)Космічної їжі$() для майбутньої подорожі! Її легко виготовити, і вона має тривалий термін зберігання."
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(l:cooking/decay#freeze_dry)Freeze-Dried Fruits$() are a tasty snack, $(item)Meal Bags$() can hold any normal kind of food you'd have on Earth, and there's also $(item)Calorie Paste$() for a nutritionally complete but gross meal. You can reuse the Foil Packs when you're finished, too!"
+			"text": "$(l/decay#freeze_dry)Субліматизовані фрукти$() — це смачний перекус, $(item)Сумки для їжі$() можуть містити будь-яку звичайну їжу, яку ти їв би на Землі, а ще є $(item)Калорійна паста$() для поживної, але огидної їжі. Пакет з фольги також можна використовувати повторно після того, як ти ними скористався!"
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Додаткове читання",
+			"title": "Further Reading",
 			"anchor": "relations",
 			"entries": [
 				"tfg:the_moon/the_moon",

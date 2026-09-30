@@ -1,12 +1,12 @@
 {
-    "name": "船",
+    "name": "Boats",
     "category": "tfg:logistics",
     "icon": "firmaciv:textures/item/rowboat_icon_only.png",
     "pages": [
         {
             "type": "patchouli:text",
             "text": "$(li)$(bold)$(l:logistics/boats#intro)Sailing Information$()$(li2)$(l:logistics/boats#customization)Customization$()$(li2)$(l:logistics/boats#boat_items)Boats as Items$()$(li2)$(l:logistics/boats#animals)Transporting Animals$()$(li2)$(l:logistics/boats#paddles)Paddles as Oars$()$(li2)$(l:logistics/boats#cleats)Cleats & Leads$()$(li2)$(l:logistics/boats#anchors)Anchors & Windlasses$()$(li2)$(l:logistics/boats#sails)Sails$()$(li2)$(l:logistics/boats#sailing)Sailing$()$(li2)$(l:logistics/boats#painting)Painting & Dyeing$()$(li2)$(l:logistics/boats#damage)Damage & Repair$()",
-            "title": "物品索引",
+            "title": "Index",
             "anchor": "index"
         },
         {
@@ -16,7 +16,7 @@
         {
             "type": "patchouli:text",
             "anchor": "intro",
-            "title": "第一天",
+            "title": "Introduction",
             "text": "建造并使用一艘船将比你曾经习惯的稍微复杂一些，但是如果要向大海进发，没有什么比先建造一艘完美的船更重要的了。仔细阅读本手册，学习雕刻、手工制作、建造、划船、划水、驾驶和自定义的所有操作方法。"
         },
         {
@@ -157,17 +157,17 @@
             "type": "patchouli:text",
             "anchor": "watercraft",
             "text": "There are a variety of watercraft available to you throughout progression. The type of boat you may pick comes down to your needs and what materials are available to you.$(li)$(bold)$(l:logistics/boats#kayak)Kayak$(): Portable and fast. Best for solo use.$(li)$(bold)$(l:logistics/boats#canoe)Dugout Canoe$(): Cheap, made of softwood, and can carry two.$(li)$(bold)$(l:logistics/boats#rowboat)Rowboat$(): Medium sized, capabale of good hauls.$(li)$(bold)$(l:logistics/boats#sloop)Sloop$(): Large sea-fairing vessel. Most advanced watercraft.",
-            "title": "水运工具"
+            "title": "Watercraft"
         },
         {
             "type": "patchouli:text",
             "anchor": "kayak",
             "text": "Your best overland solo-adventure friend. Of course, being the only boat that can be carried as an item helps. It's the fastest boat for a solo player, and very maneuverable!$(br)To row a kayak, hold a $(item)Kayak Paddle$() in your main, or off-hand. To carry the kayak, just break it.",
-            "title": "皮划艇"
+            "title": "Kayak"
         },
         {
             "type": "patchouli:image",
-            "title": "皮划艇",
+            "title": "Kayak",
             "images": [
                 "firmaciv:textures/gui/book/kayak_isometric.png"
             ],
@@ -403,7 +403,7 @@
         },
         {
             "type": "patchouli:crafting",
-            "title": "脚手架",
+            "title": "Scaffolding",
             "recipe": "firmaciv:crafting/watercraft_frame_flat",
             "text": "Much like a rowboat, you'll start with Shipwright's Scaffolding.$(br)Scaffolding are then filled in with $(n)hardwood$() planks. Search \"$(6)#hardwood$()\" in $(emi) to view all useable log types."
         },
@@ -485,7 +485,7 @@
                     "a": "firmaciv:wood/watercraft_frame/flat/oak[frame_processed=3]"
                 }
             },
-            "name": "单桅纵帆船脚手架",
+            "name": "Sloop Scaffolding",
             "text": "Four $(6)$(t:#tfg:hardwood)hardwood$() plank blocks have been added to each scaffold.",
             "enable_visualize": true
         },
@@ -526,7 +526,7 @@
                     "a": "firmaciv:wood/watercraft_frame/flat/oak[frame_processed=7]"
                 }
             },
-            "name": "单桅纵帆船脚手架",
+            "name": "Sloop Scaffolding",
             "text": "Using a hammer in your offhand, add four $(item)Copper Bolts$() to each scaffold.",
             "enable_visualize": true
         },
@@ -569,7 +569,7 @@
                     "R": "alekiships:cleat[facing=south]"
                 }
             },
-            "name": "单桅纵帆船脚手架",
+            "name": "Sloop Scaffolding",
             "text": "Finally, add the $(item)Cleats$() to the hull.",
             "enable_visualize": true
         },
@@ -596,14 +596,15 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "延伸阅读",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:craftsmanship/metallurgy",
                 "tfg:agriculture/weaving",
                 "tfg:logistics/exploration_gear",
                 "tfg:logistics/navigation",
-                "tfg:the_world/earth_tree_index"
+                "tfg:the_world/earth_tree_index",
+                "tfg:logistics/trains"
             ]
         }
     ],

@@ -33,8 +33,8 @@
             "texture_width": 1024,
             "height": 1024,
             "texture_height": 1024,
-            "text": "Tapping can be optimized by letting the sap flow directly into an open face of a fluid pipe.",
-            "title": "Let it flow!",
+            "text": "Pozyskiwanie soku można usprawnić, pozwalając mu spływać bezpośrednio do otwartej rury na płyny.",
+            "title": "Niech płynie!",
             "images": [
             	"tfg:textures/gui/field_guide/tree_tapping/tfg_tapping.png"
             ],
@@ -42,7 +42,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Czytaj dalej",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
             	"tfg:the_world/earth_tree_index",

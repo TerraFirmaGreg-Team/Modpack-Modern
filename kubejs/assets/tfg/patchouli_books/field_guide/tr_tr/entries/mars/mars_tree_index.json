@@ -10,7 +10,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"title": "İçindekiler",
+			"title": "Contents",
 			"anchor": "index",
 			"text": "$(li)$(bold)Large Mushrooms$()$(li2)$(l:mars/mars_tree_index#aeronos)Aeronos$()$(li2)$(l:mars/mars_tree_index#alphacene)Alphacene$()$(li2)$(l:mars/mars_tree_index#crimson)Crimson$()$(li2)$(l:mars/mars_tree_index#glacian)Glacian$()$(li2)$(l:mars/mars_tree_index#strophar)Strophar$()$(li2)$(l:mars/mars_tree_index#warped)Warped$()$(li)$(bold)$(l:mars/mars_tree_index#iodine)Iodine$()"
 		},
@@ -69,7 +69,7 @@
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Ek Okuma",
+			"title": "Further Reading",
 			"anchor": "relations",
 			"entries": [
 				"tfg:mars/mars",

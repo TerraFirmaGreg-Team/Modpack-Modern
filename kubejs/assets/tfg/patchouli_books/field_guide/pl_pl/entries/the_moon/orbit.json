@@ -1,5 +1,5 @@
 {
-	"name": "Stacje kosmiczne",
+	"name": "Space Stations",
 	"category": "tfg:the_moon",
 	"icon": "ad_astra:textures/gui/sprites/space_station.png",
 	"read_by_default": true,
@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:multiblock",
 			"anchor": "space_station",
-			"name": "Space Platform",
+			"name": "Platforma kosmiczna",
 			"text": "A platform will be constructed for your rocket to land on.",
 			"enable_visualize": false,
 			"multiblock": {
@@ -54,7 +54,7 @@
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Czytaj dalej",
+			"title": "Further Reading",
 			"anchor": "relations",
 			"entries": [
 				"tfg:the_moon/the_moon",

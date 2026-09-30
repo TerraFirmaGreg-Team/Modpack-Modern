@@ -19,7 +19,7 @@
         {
             "type": "patchouli:text",
             "anchor": "warming",
-            "title": "En train de se réchauffer",
+            "title": "Warming",
             "text": "While active this effect continually $(thing)Warms$() the player up to a maximum of $(n)25°C$()"
         },
         {
@@ -61,7 +61,7 @@
         {
             "type": "patchouli:text",
             "anchor": "instant_radiation",
-            "title": "Radiations instantanées",
+            "title": "Instant Radiation",
             "text": "This effect quickly damages the player with $(l:game_mechanics/hazards#radioactive_materials)Radiation Damage$()."
         },
         {
@@ -72,7 +72,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Pour aller plus loin",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:the_world/geology",

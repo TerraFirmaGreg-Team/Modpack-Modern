@@ -400,7 +400,7 @@
                     "bold": true
                 },
                 {
-                    "text": "Basilika"
+                    "text": "Basil"
                 },
                 {
                     "text": "12 - 25"
@@ -418,7 +418,7 @@
                     "text": "25 - 225"
                 },
                 {
-                    "text": "Kardemumma"
+                    "text": "Cardamom"
                 },
                 {
                     "text": "18 - 30"
@@ -427,7 +427,7 @@
                     "text": "350 - 500"
                 },
                 {
-                    "text": "Koriander"
+                    "text": "Cilantro"
                 },
                 {
                     "text": "5 - 15"
@@ -463,7 +463,7 @@
                     "text": "200 - 450"
                 },
                 {
-                    "text": "Vanilj"
+                    "text": "Vanilla"
                 },
                 {
                     "text": "18 - 30"
@@ -502,7 +502,7 @@
                     "X": "firmalife:plant/basil[stage=1]"
                 }
             },
-            "name": "Basilika",
+            "name": "Basil",
             "anchor": "basil",
             "text": "$(thing)Wild Basil$() grows between 12 and 25C, and 300 to 500mm of rainfall.",
             "enable_visualize": false
@@ -542,7 +542,7 @@
                     "X": "firmalife:plant/cardamom[stage=1]"
                 }
             },
-            "name": "Kardemumma",
+            "name": "Cardamom",
             "anchor": "cardamom",
             "text": "$(thing)Wild Cardamom$() grows between 18 and 30C, and 350 to 500mm of rainfall.",
             "enable_visualize": false
@@ -562,7 +562,7 @@
                     "X": "firmalife:plant/cilantro[stage=1]"
                 }
             },
-            "name": "Koriander",
+            "name": "Cilantro",
             "anchor": "cilantro",
             "text": "$(thing)Wild Cilantro$() grows between 5 and 15C, and 0 to 150mm of rainfall.",
             "enable_visualize": false
@@ -642,7 +642,7 @@
                     "X": "firmalife:plant/vanilla[stage=1]"
                 }
             },
-            "name": "Vanilj",
+            "name": "Vanilla",
             "anchor": "vanilla",
             "text": "$(thing)Wild Vanilla$() grows between 18 and 30C, and 200 to 500mm of rainfall.",
             "enable_visualize": false

@@ -1,5 +1,5 @@
 {
-    "name": "缝纫桌",
+    "name": "Sewing Table",
     "category": "tfg:craftsmanship",
     "icon": "tfc:wood/sewing_table/oak",
     "pages": [
@@ -37,7 +37,7 @@
         {
             "type": "patchouli:crafting",
             "anchor": "banner_loom",
-            "title": "旗帜织机",
+            "title": "Banner Loom",
             "recipe": "tfc:crafting/vanilla/loom",
             "text": "旗帜织机可用来将旗帜图案织成旗帜。"
         },
@@ -45,12 +45,12 @@
             "type": "patchouli:spotlight",
             "item": "tag:minecraft:trim_templates",
             "anchor": "armor_trim",
-            "title": "锻造纹饰",
+            "title": "Armor Trims",
             "text": "Armor trims can be applied to any $(t:#minecraft:trimmable_armor)$(6)Trimmable Armor$() by sewing a $(item)Smithing Template$(). Combine it with a $(t:#minecraft:trim_materials)$(6)Trim Material$() (like $(thing)Exquisite Gems$() or $(thing)Jewlery Metal$()) and the armor on a $(item)Smithing Table$()."
         },
         {
             "type": "patchouli:relations",
-            "title": "延伸阅读",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:craftsmanship/anvils",

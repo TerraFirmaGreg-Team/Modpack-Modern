@@ -1,0 +1,22 @@
+{
+    "quests.high_voltage.autoclave.title": "§6HV§r高壓反應釜",
+    "quests.high_voltage.autoclave.subtitle": "自製電池",
+    "quests.high_voltage.autoclave.desc": "&3HV 高壓反應釜&r雖然是選配設備，但裝配後絕對超值。\n\n它能解鎖獨特的電池，性能&6遠超&r其他標準型號",
+    "quests.high_voltage.rutile_loop.desc": "鈦的加工程序比以往的材料&binvolved&r&b(複雜)&r得多，首先得從&a鈦鐵礦&r加工處理取得&a金紅石&r，而&a鈦鐵礦&r得從&a鋁土礦&r、&a鋁&r、&a鎂鐵鈦礦&r以及&a戴斯礦&r等礦物取得，這些礦物&d月球&r隨處可見。\n\n取得足夠多的&5金紅石&r後，下個任務即是&6鈦&r之旅，莫要急躁。\n\n&9小提示：&a鋁土礦&r的加工處理產量高得離譜！&a金紅石&r產量輕鬆增到&6三倍&r。",
+    "quests.high_voltage.titanium.title": "鈦",
+    "quests.high_voltage.ptfe.desc": "&a聚四氟乙烯(PTFE)&r是種&7碳&r-&b氟&r聚合物。與PVC類似，PTFE用於提高塑膠電路板與其它塑料电路板及其他製品的產量。目前主要用在製造&3大型化學反應器&r的牆體。\n\n生產過程消耗&3氯氣&r，但電解&a鹽酸&r廢液則可以完全回收。\n\n&b氟&r也用來精煉&a鈾&r和&7矽岩&r。\n\n&9提示：&r現在起，應該將聚合物固化成&d條&r(或錠)的形式，如此一來更加方便利用&3擠壓機&r塑造成任何形式。",
+    "quests.high_voltage.vitrified_pearl.title": "玻璃化終界珍珠",
+    "quests.high_voltage.vitrified_pearl.subtitle": "一種異域陶瓷",
+    "quests.high_voltage.vitrified_pearl.desc": "將終界珍珠與合適的隔熱材料放入&e熱解爐&r加熱，將其適當的玻璃化成&3類陶瓷&r。\n\n現在不需要太多－－至少為&6火箭&r與&6HV 電路組裝機&r各準備一份即可。\n但請注意：從&5EV 階段&r 起需求量會急遽增加。",
+    "quests.high_voltage.kaolinite_powder.desc": "有個壞消息與好消息，壞消息是：即將和一位老友重逢，好消息是：在家裡重逢！\n\n如果還有很久以前沒用完的&4高嶺土&r，是時候把它們從老舊的鍛造坊裡挖出來用了。若沒有也無須煩心，現在起可以在家裡製作了！\n\n高嶺土粉後續將會用在工業陶瓷與隔熱層等配方。",
+    "quests.high_voltage.ev_machine_hull.title": "§5EV§r機器外殼",
+    "quests.high_voltage.ev_machine_hull.subtitle": "已完成格雷科技的一半進度",
+    "quests.high_voltage.pisciculture.desc.1": "&b水產養殖場&r不單是一應俱全的養魚設施，更是&3魚菜共生&r循環的重要一環。與&2電力溫室&r互利共生提高生產率。配置得當的話，整套系統就能自給自足。",
+    "quest.high_voltage.desh_ingot.title": "戴斯",
+    "quest.high_voltage.desh_ingot.subtitle": "月球的礦物",
+    "quest.high_voltage.desh_ingot.desc": "&7月球&r遍布各式各樣的礦脈與全新的礦物，但&6戴斯&r是首次登月時的主要目標。\n\n首先，戴斯能製作&e大型太陽能陣列 MK 1&r，其成本之低簡直超乎想像，不用大量鋪設&eAd Astra 光電板&r就能維持可觀的電力。\n\n其次，對於科技進程舉足之重，戴斯也作為&b鍍藍合金戴斯箔&r與&6鎳鉻合金線圈&r的製作材料，正是邁向&5EV 階段&r的必經之路。\n\n也請留意&d過硫酸鈉&r處理&6戴斯礦&r產出的&a錸粉&r，是建造與擴建&b無塵室&r的重要材料。",
+    "quest.high_voltage.desh_ingot.task": "任何戴斯礦石",
+    "quest.high_voltage.desh_blue_foils.subtitle": "這不是三明治",
+    "quest.high_voltage.desh_blue_foils.desc": "&b鍍藍合金戴斯箔&r令人想起當年沒有機器，用&e助焊劑&r手搓出砧的美好時光；好好懷舊吧，接下來會需要一定數量的箔片。\n\n每16個&6線圈&r要64個&6戴斯錠&r與&b藍合金錠&r，由此可見，可能得量產遠超這個數量的線圈。\n\n這個階段，強烈建議在&7月球&r建立基地，也藉此機會搭建 &dAE2 工廠&—當然，不會有人逼你這麼做。",
+    "quests.high_voltage.alumina_board.desc": "&bDBC 氧化鋁陶瓷基板s&r舊版材料&7碳化矽&r的直接升級。有了它們就能做出兩倍的&e陶瓷電路板&r，同時還跳過&7碳化矽&r的複雜流程。\n\n是否投入資源進行升級完全由你自己決定，不論基於何種理由需要大量的&5鉀&r，這套方法也會產生巨量的鉀。\n\n請注意下個階級的&a鉻鍵合氧化鈹基板&r在這個模組包還不能用。"
+}

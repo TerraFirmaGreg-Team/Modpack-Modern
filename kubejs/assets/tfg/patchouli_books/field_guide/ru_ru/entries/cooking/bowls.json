@@ -15,7 +15,7 @@
             "type": "patchouli:spotlight",
             "item": "tag:tfc:powders",
             "anchor": "powder_bowl",
-            "title": "Порошки",
+            "title": "Powders",
             "link_recipes": false,
             "text": "Чаша для порошка может вместить до 16 данного порошка. Чтобы вставить предметы, $(item)$(k:key.use)$() держа порошок. Чтобы извлечь предметы, $(item)$(k:key.use)$() с пустой рукой.$(br2)$(item)$(k:key.sneak)$() позволяет извлечь все содержимое чаши."
         },

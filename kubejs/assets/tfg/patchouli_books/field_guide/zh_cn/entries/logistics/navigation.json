@@ -1,5 +1,5 @@
 {
-    "name": "航海",
+    "name": "Navigation",
     "category": "tfg:logistics",
     "icon": "firmaciv:textures/item/nav_toolkit.png",
     "pages": [
@@ -18,7 +18,7 @@
         },
         {
             "type": "patchouli:image",
-            "title": "航海",
+            "title": "Navigation",
             "anchor": "navigation",
             "images": [
                 "firmaciv:textures/gui/book/navigation.png"
@@ -32,7 +32,7 @@
         {
             "type": "patchouli:text",
             "anchor": "longitude",
-            "title": "经度",
+            "title": "Longitude",
             "text": "To find your Longitude, that is, your distance from the Prime Meridian, you need a clock! Specifically, you need a precise timepiece that keeps itself synchronized with the solar time at the Prime Meridian.$(br2)Smith an Unfinished Navigator's Timepiece before filling it with its internal mechanism."
         },
         {
@@ -43,25 +43,25 @@
         },
         {
             "type": "patchouli:text",
-            "title": "纬度",
+            "title": "Latitude",
             "anchor": "latitude",
             "text": "To find your Latitude, that is, your distance from the Equator, you need to determine the degrees at which you view either Polaris, the North Star, or the Sun. Specifically, you need a precise mechanism for viewing astronomical features and measuring their angular distance from the horizon.$(br2)Smith an Unfinished Sextant and then complete it in a workbench."
         },
         {
             "type": "patchouli:spotlight",
-            "title": "六分仪",
+            "title": "Sextant",
             "item": "firmaciv:sextant",
             "text": "当你合成了你的领航员钟表时，你可以拿着它按$(item)$(k:key.use)$()来得到你的维度。请记住，您的纬度数值分为以北纬或南纬，即赤道为0度，极地为90度。"
         },
         {
             "type": "patchouli:text",
-            "title": "海拔高度",
+            "title": "Altitude",
             "anchor": "altitude",
             "text": "To find your Altitude, that is, your vertical distance from the Sea Level datum, you need to measure atmospheric pressure. Specifically, you need a device containing a compressible fluid, and you need to measure the volume of that fluid to determine the pressure.$(br2)Smith an Unfinished Barometer and then complete it in a workbench."
         },
         {
             "type": "patchouli:spotlight",
-            "title": "晴雨表",
+            "title": "Barometer",
             "item": "firmaciv:barometer",
             "text": "当你合成了你的领航员钟表时，你可以拿着它按$(item)$(k:key.use)$()来得到你的海拔信息。请记住，您的海拔高度是以距海平面基准面的距离来测量的。"
         },
@@ -72,7 +72,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "延伸阅读",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:craftsmanship/metallurgy",

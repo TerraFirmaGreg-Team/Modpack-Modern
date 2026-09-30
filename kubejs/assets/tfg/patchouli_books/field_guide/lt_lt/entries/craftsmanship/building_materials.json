@@ -12,20 +12,20 @@
         {
             "type": "patchouli:text",
             "anchor": "primitive_materials",
-            "Title": "Primitive Materials",
+            "title": "Primitive Materials",
             "text": "In the early stages of the game, building can be a challenge as many sturdy building blocks require metal tools to obtain. However, there are a few building blocks that can be obtained with just stone tools.$(br2)More $(l:craftsmanship/building_materials#advanced_materials)Advanced Building Blocks$() are obtainable with metal tools."
         },
         {
             "type": "patchouli:text",
             "anchor": "thatch",
             "text": "With just a $(l:craftsmanship/sticks_and_stones)Stone Knife$(), you are able to obtain $(thing)Straw$() by breaking plant-like blocks. This can be used to craft a very simple building material: $(thing)Thatch$(). Thatch is a lightweight block that isn't affected by gravity, however players and other entities can pass right through it! It can also be crafted back into $(thing)Straw$() if needed.",
-            "title": "Šiaudai"
+            "title": "Thatch"
         },
         {
             "type": "patchouli:crafting",
             "anchor": "mud_bricks",
             "recipe": "tfc:crafting/soil/loam_drying_bricks",
-            "title": "Purvo plytos",
+            "title": "Mud Bricks",
             "text": "$(thing)Mud$() can be found on the ground, underneath some water features, in low elevation swampy environments, or directly made by dropping dirt into water with $(item)$(k:key.drop)$(). With a little bit of $(thing)Straw$(), it can be crafted into $()Wet Mud Bricks$()."
         },
         {

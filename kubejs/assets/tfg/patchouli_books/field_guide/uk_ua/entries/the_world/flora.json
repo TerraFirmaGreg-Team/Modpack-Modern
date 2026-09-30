@@ -1,25 +1,25 @@
 {
-    "name": "Earth Flora",
+    "name": "Флора Землі",
     "category": "tfg:the_world",
     "icon": "tfc:plant/goldenrod",
     "pages": [
         {
             "type": "patchouli:text",
             "anchor": "index",
-            "text": "$(li)$(bold)$(l:the_world/flora#standard_plants)Standard Plant Types$()$(li)$(bold)$(l:the_world/flora#aquatic_plants)Aquatic Plant Types$()$(li)$(bold)$(l:the_world/flora#medicinal_plants)Medicinal Plants$()$(li)$(bold)$(l:the_world/flora#spices)Spices$()$(li2)$(l:the_world/flora#basil)Basil$()$(li2)$(l:the_world/flora#bay)Bay Laural$()$(li2)$(l:the_world/flora#cardamom)Cardamom$()$(li2)$(l:the_world/flora#cilantro)Cilantro$()$(li2)$(l:the_world/flora#cumin)Cumin$()$(li2)$(l:the_world/flora#oregano)Oregano$()$(li2)$(l:the_world/flora#pimento)Pimento$()$(li2)$(l:the_world/flora#vanilla)Vanilla$()$(li)$(bold)$(l:the_world/flora#seed_ball)Seed Ball$()"
+            "text": "$(li)$(bold)$(l:the_world/flora#standard_plants)Звичайні види рослин$()$(li)$(bold)$(l:the_world/flora#aquatic_plants)Види водних рослин$()$(li)$(bold)$(l:the_world/flora#medicinal_plants)Лікарські рослини$()$(li)$(bold)$(l:the_world/flora#spices)Спеції$()$(li2)$(l:the_world/flora#basil)Базилік$()$(li2)$(l:the_world/flora#bay)Лавр$()$(li2)$(l:the_world/flora#cardamom)Кардамон$()$(li2)$(l:the_world/flora#cilantro)Кінза$()$(li2)$(l:the_world/flora#cumin)Кмин$()$(li2)$(l:the_world/flora#oregano)Орегано$()$(li2)$(l:the_world/flora#pimento)Духмяний перець$()$(li2)$(l:the_world/flora#vanilla)Ваніль$()$(li)$(bold)$(l:the_world/flora#seed_ball)Кулька з насінням$()"
         },
         {
             "anchor": "intro",
             "type": "patchouli:spotlight",
-            "title": "Intro to Earth Flora",
+            "title": "Вступ до флори Землі",
             "item": {
                 "tag": "tfc:plants"
             },
-            "text": "Earth is an incredibly diverse planet when it comes to flora. Unlike in vanilla $(thing)Minecraft$()--Plants in $(tfg) spawn based on local $(l:the_world/climate#climate)Climate Conditions$()."
+            "text": "Земля — неймовірно різноманітна планета, коли йдеться про флору. На відміну від ванільного $(thing)Minecraft$() — рослини в $(tfg) з’являються залежно від місцевих $(l:the_world/climate#climate)кліматичних умов$()."
         },
         {
             "type": "patchouli:text",
-            "text": "Plants may be difficult to find during some $(l:the_world/climate#seasons)Seasons$() as they go through cycles of flowering and laying dormant, or changing color as the local temperature changes.$(br2)Colorful flowers can typically be crushed in a $(l:craftsmanship/quern)Quern$() for $(thing)Dye$(). While some plants can be used for making $(l:the_world/flora#medicinal_plants)medicine$() or $(l:the_world/flora#spices)meals$()."
+            "text": "Рослини може бути важко знайти протягом деяких $(l:the_world/climate#seasons)пір року$(), оскільки вони проходять цикли цвітіння та спокою або змінюють колір залежно від місцевої температури.$(br2)Барвисті квіти зазвичай можна подрібнювати в $(l:craftsmanship/quern)жорнах$() для отримання $(thing)барвника$(). Деякі рослини також можна використовувати для виготовлення $(l:the_world/flora#medicinal_plants)ліків$() або $(l:the_world/flora#spices)страв$()."
         },
         {
             "type": "patchouli:multiblock",
@@ -36,7 +36,7 @@
                     "X": "tfc:plant/anthurium"
                 }
             },
-            "name": "Звичайний",
+            "name": "Standard",
             "anchor": "standard_plants",
             "text": "Звичайні рослини схожі на маленькі квіти. Вони ростуть на траві, землі та у городі.",
             "enable_visualize": false
@@ -56,7 +56,7 @@
                     "X": "tfc:plant/sagebrush"
                 }
             },
-            "name": "Сухий",
+            "name": "Dry",
             "text": "Сухостійкі рослини схожі на звичайні, але можуть рости на піску. З'являються в районах із малою кількістю опадів.",
             "enable_visualize": false
         },
@@ -233,8 +233,8 @@
         {
             "type": "patchouli:text",
             "anchor": "aquatic_plants",
-            "text": "Aquatic plants are restricted to either spawn in fresh or salty water. Otherwise, they grow and act much like the plants you see on the surface. Some water plants can be cooked for food.",
-            "title": "Aquatic Plants"
+            "text": "Водні рослини можуть рости лише у прісній або солоній воді. В іншому вони ростуть і поводяться майже так само, як рослини на поверхні. Деякі водні рослини можна готувати як їжу.",
+            "title": "Види водних рослин"
         },
         {
             "type": "patchouli:multiblock",
@@ -372,23 +372,23 @@
             "item": {
                 "tag": "tfg:medicinal_ingredients/plants"
             },
-            "title": "Medicinal Plants",
-            "text": "Many plants in $(tfg) hold medicinal value and can be used for creating phytotherapeutic medicine. You can combine these ingredients in a mixing bowl with wax, binders, and spring water to make pills. Or more advanced medications."
+            "title": "Лікарські рослини",
+            "text": "Багато рослин у $(tfg) мають лікувальні властивості та можуть використовуватися для створення фітотерапевтичних ліків. Ти можеш змішувати ці інгредієнти в мисці для змішування з воском, зв’язувальними речовинами та джерельною водою, щоб виготовляти пігулки або складніші лікарські засоби."
         },
         {
-            "title": "Spices",
+            "title": "Спеції",
             "type": "patchouli:spotlight",
             "item": {
                 "tag": "tfg:foods/spice_plants"
             },
             "anchor": "spices",
-            "text": "With $(thing)Firmalife$(), there are a number of small plants you can collect and grow on your own, which have cooking properties. They can all be found in the wild, and once harvested, may be cultivated in a $(l:agriculture/greenhouse)Greenhouse$(), in which they consume 20 points of N, P, and K."
+            "text": "З $(thing)Firmalife$() ти можеш збирати та вирощувати самостійно різноманітні невеликі рослини, які мають кулінарні властивості. Усі вони трапляються в дикій природі, а після збору врожаю їх можна вирощувати в $(l:agriculture/greenhouse)теплиці$(), де вони споживають по 20 одиниць А, Ф та K."
         },
         {
             "type": "tfg:table",
             "strings": [
                 {
-                    "text": "Spice",
+                    "text": "Спеції",
                     "bold": true
                 },
                 {
@@ -400,7 +400,7 @@
                     "bold": true
                 },
                 {
-                    "text": "Базилік"
+                    "text": "Basil"
                 },
                 {
                     "text": "12 - 25"
@@ -409,7 +409,7 @@
                     "text": "300 - 500"
                 },
                 {
-                    "text": "Лавровий лист"
+                    "text": "Bay Laurel"
                 },
                 {
                     "text": "8 - 14"
@@ -418,7 +418,7 @@
                     "text": "25 - 225"
                 },
                 {
-                    "text": "Кардамон"
+                    "text": "Cardamom"
                 },
                 {
                     "text": "18 - 30"
@@ -427,7 +427,7 @@
                     "text": "350 - 500"
                 },
                 {
-                    "text": "Кінза"
+                    "text": "Cilantro"
                 },
                 {
                     "text": "5 - 15"
@@ -436,7 +436,7 @@
                     "text": "0 - 150"
                 },
                 {
-                    "text": "Кмин"
+                    "text": "Cumin"
                 },
                 {
                     "text": "6 - 20"
@@ -445,7 +445,7 @@
                     "text": "50 - 250"
                 },
                 {
-                    "text": "Материнник"
+                    "text": "Oregano"
                 },
                 {
                     "text": "5 - 13"
@@ -454,7 +454,7 @@
                     "text": "50 - 150"
                 },
                 {
-                    "text": "Духмяний перець"
+                    "text": "Pimento"
                 },
                 {
                     "text": "15 - 30"
@@ -463,7 +463,7 @@
                     "text": "200 - 450"
                 },
                 {
-                    "text": "Ваніль"
+                    "text": "Vanilla"
                 },
                 {
                     "text": "18 - 30"
@@ -473,7 +473,7 @@
                 }
             ],
             "text": "",
-            "title": "Wild Spice Ranges",
+            "title": "Діапазони дикорослих спецій",
             "legend": [],
             "columns": 2,
             "first_column_width": 80,
@@ -502,7 +502,7 @@
                     "X": "firmalife:plant/basil[stage=1]"
                 }
             },
-            "name": "Базилік",
+            "name": "Basil",
             "anchor": "basil",
             "text": "$(thing)Дикий базилік$() росте при температурі від 12 до 25°C, і від 300 до 500 мм опадів.",
             "enable_visualize": false
@@ -522,7 +522,7 @@
                     "X": "firmalife:plant/bay_laurel[stage=1]"
                 }
             },
-            "name": "Лавровий лист",
+            "name": "Bay Laurel",
             "anchor": "bay",
             "text": "$(thing)Дикий лавровий лист$() росте між 8 та 14°C, і від 25 до 225 мм опадів.",
             "enable_visualize": false
@@ -542,7 +542,7 @@
                     "X": "firmalife:plant/cardamom[stage=1]"
                 }
             },
-            "name": "Кардамон",
+            "name": "Cardamom",
             "anchor": "cardamom",
             "text": "$(thing)Дикий кардамон$() росте при температурі від 18 до 30°C, і від 350 до 500 мм опадів.",
             "enable_visualize": false
@@ -562,7 +562,7 @@
                     "X": "firmalife:plant/cilantro[stage=1]"
                 }
             },
-            "name": "Кінза",
+            "name": "Cilantro",
             "anchor": "cilantro",
             "text": "$(thing)Дика кінза$() росте при температурі від 5 до 15°C, і від 0 до 150 мм опадів.",
             "enable_visualize": false
@@ -582,7 +582,7 @@
                     "X": "firmalife:plant/cumin[stage=1]"
                 }
             },
-            "name": "Кмин",
+            "name": "Cumin",
             "anchor": "cumin",
             "text": "$(thing)Дикий кмин$() росте при температурі від 6 до 20°C, і від 50 до 250 мм опадів.",
             "enable_visualize": false
@@ -602,7 +602,7 @@
                     "X": "firmalife:plant/oregano[stage=1]"
                 }
             },
-            "name": "Материнник",
+            "name": "Oregano",
             "anchor": "oregano",
             "text": "$(thing)Дика материнник$() росте при температурі від 5 до 13°C, і від 50 до 150 мм опадів.",
             "enable_visualize": false
@@ -622,7 +622,7 @@
                     "X": "firmalife:plant/pimento[stage=1]"
                 }
             },
-            "name": "Духмяний перець",
+            "name": "Pimento",
             "anchor": "pimento",
             "text": "\"$(thing)Дикий духмяний перець$() росте при температурі від 15 до 30°C, і від 200 до 450 мм опадів.",
             "enable_visualize": false
@@ -642,7 +642,7 @@
                     "X": "firmalife:plant/vanilla[stage=1]"
                 }
             },
-            "name": "Ваніль",
+            "name": "Vanilla",
             "anchor": "vanilla",
             "text": "$(thing)Дика ваніль$() росте при температурі від 18 до 30°C, і від 200 до 500 мм опадів.",
             "enable_visualize": false
@@ -668,7 +668,7 @@
                     "X": "firmalife:plant/butterfly_grass"
                 }
             },
-            "name": "Метеликова трава",
+            "name": "Butterfly Grass",
             "anchor": "butterfly_grass",
             "text": "Рослини метеликової трави.",
             "enable_visualize": false
@@ -679,7 +679,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Додаткове читання",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:the_world/wild_fruits",

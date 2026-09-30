@@ -1,5 +1,5 @@
 {
-    "name": "Forja Catalã",
+    "name": "Bloomery",
     "category": "tfg:craftsmanship",
     "icon": "tfc:bloomery",
     "pages": [
@@ -76,7 +76,7 @@
                     "bold": true
                 },
                 {
-                    "text": "Ferro",
+                    "text": "Iron",
                     "bold": true
                 },
                 {
@@ -198,7 +198,7 @@
         {
             "type": "patchouli:spotlight",
             "anchor": "steam_bloomery",
-            "title": "Forja Catalã a Vapor",
+            "title": "Steam Bloomery",
             "item": "tfg:steam_bloomery",
             "text": "Available with the creation of $(item)Black Steel$() is the $(thing)Steam Bloomery$(). This structure is capable of producing blooms automatically, on top of being faster and more efficent than the traditional bloomery by using high-pressure steam."
         },

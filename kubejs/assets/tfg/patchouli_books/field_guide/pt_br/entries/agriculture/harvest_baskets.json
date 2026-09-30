@@ -17,7 +17,7 @@
         },
         {
             "type": "patchouli:crafting",
-            "title": "Cesto de Colheita",
+            "title": "Harvest Basket",
             "recipe": "tfg:shaped/harvest_basket_from_papyrus",
             "text": "Uma $(item)Cesta de Colheita$() básica pode ser feita de papiro ou madeira densa encharcados. "
         },

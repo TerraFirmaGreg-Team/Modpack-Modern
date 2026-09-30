@@ -78,7 +78,7 @@ function registerTFGKineticRecipes(event) {
 	}).id('tfg:shaped/titanium_combustion_engine');
 
 	event.recipes.gtceu.assembler('tfg:titanium_combustion_engine')
-		.itemInputs('gtceu:hv_machine_casing', '#forge:small_gears/stainless_steel', '4x #forge:bolts/titanium', '2x #forge:small_fluid_pipes/stainless_steel')
+		.itemInputs('gtceu:ev_machine_casing', '#forge:small_gears/stainless_steel', '4x #forge:bolts/titanium', '2x #forge:small_fluid_pipes/stainless_steel')
 		.itemOutputs('tfg:generators/titanium_combustion_engine')
 		.duration(100)
 		.EUt(7)

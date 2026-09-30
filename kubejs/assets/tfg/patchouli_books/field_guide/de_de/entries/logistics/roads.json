@@ -248,7 +248,7 @@
         },
         {
             "type": "patchouli:image",
-            "title": "Bentonstraße",
+            "title": "Concrete Road",
             "images": [
                 "rnr:textures/gui/book/concrete_road.png"
             ],
@@ -459,7 +459,7 @@
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Pflasterwagen",
+            "title": "Paving Cart",
             "anchor": "paving_cart",
             "item": "tfg:rnr_plow",
             "text": "The $(thing)Paving Cart$() is a specialized cart used for laying down road surfaces quickly and efficiently. It can be filled with $(6)$(t:#rnr:road_materials)Road Materials$() and $(thing)Crushed Base Course$() and then attached to a $(l:agriculture/animal_husbandry#equines)Horse$() with $(item)$(k:key.astikorcarts.desc)$() to create roads as you travel. The cart can also fill in any existing base course blocks."
@@ -468,7 +468,7 @@
             "type": "patchouli:entity",
             "entity": "tfg:rnr_plow",
             "scale": 0.5,
-            "name": "Pflasterwagen",
+            "name": "Paving Cart",
             "text": "The blades of the paving cart will lower with $(item)$(k:key.use)$() indicating that the cart will plow roads when moved."
         },
         {
@@ -515,7 +515,9 @@
                 "tfg:the_world/geology",
                 "tfg:the_world/wild_animals",
                 "tfg:agriculture/animal_husbandry",
-                "tfg:logistics/tack"
+                "tfg:logistics/tack",
+                "tfg:logistics/trains",
+                "tfg:logistics/boats"
             ]
         }
     ],

@@ -6,11 +6,11 @@
         {
             "type": "patchouli:text",
             "anchor": "index",
-            "title": "インデックス",
+            "title": "Index",
             "text": "$(bold)$(li)$(l:beneath/beneath_wild_fruits#fruit_trees)Fruit Trees$()$(li2)$(l:beneath/beneath_wild_fruits#lavacado)Lavacado$()$(li2)$(l:beneath/beneath_wild_fruits#magmango)Magmango$()$(bold)$(li)$(l:beneath/beneath_wild_fruits#palm_fruit_trees)Palm Fruit Trees$()$(li2)$(l:beneath/beneath_wild_fruits#oil_palm)Oil Palm$()$(li2)$(l:beneath/beneath_wild_fruits#acai)Açaí$()"
         },
         {
-            "title": "はじめに",
+            "title": "Introduction",
             "anchor": "into",
             "type": "patchouli:text",
             "text": "$(l:beanth)深界$()には、地下の過酷な環境に適応した、この場所ならではの野生の果物が自生しています。これらの野生の果物は、オーバーワールドにある通常の$(l:the_world/wild_fruits)野生の果物$()とまったく同じ方法で栽培することができます。"
@@ -35,7 +35,7 @@
                     "text": "4月"
                 },
                 {
-                    "text": "5月"
+                    "text": "May"
                 },
                 {
                     "text": "6月"
@@ -59,7 +59,7 @@
                     "text": "12月"
                 },
                 {
-                    "text": "ラヴァボカド"
+                    "text": "Lavacado"
                 },
                 {
                     "fill": "0x6ab553"
@@ -98,7 +98,7 @@
                     "fill": "0x6ab553"
                 },
                 {
-                    "text": "マグマンゴー"
+                    "text": "Magmango"
                 },
                 {
                     "fill": "0x6ab553"
@@ -173,7 +173,7 @@
             "type": "patchouli:text",
             "anchor": "lavacado",
             "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 8 - 80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 20 - 100 %$(br2)Lavacado trees grow in the months of December through April, start flowering in May and June, and bear fruit in July.",
-            "title": "ラヴァボカド"
+            "title": "Lavacado"
         },
         {
             "type": "tfg:multimultiblock",
@@ -238,7 +238,7 @@
             "type": "patchouli:text",
             "anchor": "magmango",
             "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 8 - 80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 30 - 100 %$(br2)Magmango trees grow in the months of October through February, start flowering in March and April, and bear fruit in May.",
-            "title": "マグマンゴー"
+            "title": "Magmango"
         },
         {
             "type": "tfg:multimultiblock",
@@ -307,61 +307,43 @@
                     "text": ""
                 },
                 {
-                    "text": "1月"
+                    "text": "Jan"
                 },
                 {
-                    "text": "2月"
+                    "text": "Feb"
                 },
                 {
-                    "text": "3月"
+                    "text": "Mar"
                 },
                 {
-                    "text": "4月"
+                    "text": "Apr"
                 },
                 {
-                    "text": "5月"
+                    "text": "May"
                 },
                 {
-                    "text": "6月"
+                    "text": "Jun"
                 },
                 {
-                    "text": "7月"
+                    "text": "Jul"
                 },
                 {
-                    "text": "8月"
+                    "text": "Aug"
                 },
                 {
-                    "text": "9月"
+                    "text": "Sep"
                 },
                 {
-                    "text": "10月"
+                    "text": "Oct"
                 },
                 {
-                    "text": "11月"
+                    "text": "Nov"
                 },
                 {
-                    "text": "12月"
+                    "text": "Dec"
                 },
                 {
-                    "text": "アブラヤシの実"
-                },
-                {
-                    "fill": "0xa217ff"
-                },
-                {
-                    "fill": "0xa8986a"
-                },
-                {
-                    "fill": "0xa8986a"
-                },
-                {
-                    "fill": "0xa217ff"
-                },
-                {
-                    "fill": "0xa217ff"
-                },
-                {
-                    "fill": "0xa217ff"
+                    "text": "Oil Palm"
                 },
                 {
                     "fill": "0xa217ff"
@@ -373,6 +355,24 @@
                     "fill": "0xa8986a"
                 },
                 {
+                    "fill": "0xa217ff"
+                },
+                {
+                    "fill": "0xa217ff"
+                },
+                {
+                    "fill": "0xa217ff"
+                },
+                {
+                    "fill": "0xa217ff"
+                },
+                {
+                    "fill": "0xa8986a"
+                },
+                {
+                    "fill": "0xa8986a"
+                },
+                {
                     "fill": "0xa8986a"
                 },
                 {
@@ -382,7 +382,7 @@
                     "fill": "0xa217ff"
                 },
                 {
-                    "text": "アサイー"
+                    "text": "Açaí"
                 },
                 {
                     "fill": "0xa217ff"
@@ -425,11 +425,11 @@
             "title": "Palm Fruit Trees",
             "legend": [
                 {
-                    "text": "休眠期",
+                    "text": "Dormant",
                     "color": "0xa8986a"
                 },
                 {
-                    "text": "結実期",
+                    "text": "Fruiting",
                     "color": "0xa217ff"
                 }
             ],
@@ -1827,7 +1827,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "さらに読む",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:the_world/climate",

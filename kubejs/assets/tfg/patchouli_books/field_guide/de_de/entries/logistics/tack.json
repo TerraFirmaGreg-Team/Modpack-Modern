@@ -74,7 +74,7 @@
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Pflasterwagen",
+            "title": "Paving Cart",
             "anchor": "paving_cart",
             "item": "tfg:rnr_plow",
             "text": "The $(thing)Paving Cart$() is a specialized cart used for laying down road surfaces quickly and efficiently. Read more about them in the entry for $(l:logistics/roads#paving_cart)Roads$()."
@@ -83,7 +83,7 @@
             "type": "patchouli:entity",
             "entity": "tfg:rnr_plow",
             "scale": 0.4,
-            "name": "Pflasterwagen",
+            "name": "Paving Cart",
             "text": "The paving cart will be engaged when its blades are lowered."
         },
         {

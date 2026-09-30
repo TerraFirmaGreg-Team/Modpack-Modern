@@ -5,7 +5,7 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "The $(thing)Scribing Table$() is used to rename items. It requires $(thing)Black Dye$() to rename items, which can be supplied as the traditional dye item or as a bucket of dye fluid."
+            "text": "$(thing)Писарський стіл$() використовується для перейменування предметів. Для перейменування потрібен $(thing)чорний барвник$(), який можна додати як звичайний предмет-барвник або як відро з рідиною барвника."
         },
         {
             "type": "patchouli:multiblock",
@@ -36,7 +36,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Додаткове читання",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:craftsmanship/anvils",

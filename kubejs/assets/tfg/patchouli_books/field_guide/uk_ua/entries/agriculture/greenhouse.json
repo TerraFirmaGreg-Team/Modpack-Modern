@@ -1,16 +1,16 @@
 {
-    "name": "Теплиця",
+    "name": "Greenhouse",
     "category": "tfg:agriculture",
     "icon": "firmalife:large_planter",
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "$(li)$(bold)$(l:agriculture/greenhouse#types)Типи теплиць$()\n$(li)$(bold)$(l:agriculture/greenhouse#planters)Лотки для рослин$()\n$(li2)$(l:agriculture/greenhouse#large_planter)Великий лоток для рослин$()\n$(li2)$(l:agriculture/greenhouse#quad_planter)Подвійний лоток для рослин$()\n$(li2)$(l:agriculture/greenhouse#bonsai_planter)Лоток для бонсаю$()\n$(li2)$(l:agriculture/greenhouse#hanging_planter)Підвісний лоток для рослин$()\n$(li2)$(l:agriculture/greenhouse#trellis_planter)Жардиньєрка для кущів$()\n$(li2)$(l:agriculture/greenhouse#hydroponic_planter)Гідропонний лоток для рослин$()\n$(li)$(bold)$(l:agriculture/greenhouse#irrigation)Зрошення$()\n$(li)$(bold)$(l:agriculture/greenhouse#auto_harvesting)Автоматичний збір урожаю$()"
+            "text": "$(li)$(bold)$(l:agriculture/greenhouse#types)Типи теплиць$()$(li)$(bold)$(l:agriculture/greenhouse#planters)Лотки для рослин$()$(li2)$(l:agriculture/greenhouse#large_planter)Великий лоток для рослин$()$(li2)$(l:agriculture/greenhouse#quad_planter)Подвійний лоток для рослин$()$(li2)$(l:agriculture/greenhouse#bonsai_planter)Лоток для бонсаю$()$(li2)$(l:agriculture/greenhouse#hanging_planter)Підвісний лоток для рослин$()$(li2)$(l:agriculture/greenhouse#trellis_planter)Жардиньєрка для кущів$()$(li2)$(l:agriculture/greenhouse#hydroponic_planter)Гідропонний лоток для рослин$()$(li)$(bold)$(l:agriculture/greenhouse#irrigation)Зрошення$()$(li)$(bold)$(l:agriculture/greenhouse#auto_harvesting)Автоматичний збір урожаю$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "intro",
-            "title": "Теплиця",
+            "title": "Greenhouse",
             "text": "$(thing)Теплиця$() — це багатоблоковий пристрій, керований за допомогою $(item)кліматичної станції$(). Вона дає змогу вирощувати культури цілий рік. Теплиця має безліч типів і блоків на вибір. Однак побудувати теплицю досить просто. Як і $(l:cooking/decay#cellar)льох$(), вона має бути замкненим простором із блоків, що належать до одного $(thing)типу теплиці$(). Підлогою теплиці може бути будь-який блок, крім повітря."
         },
         {
@@ -24,12 +24,12 @@
         {
             "type": "patchouli:text",
             "anchor": "types",
-            "text": "Це доступні $(thing)типи теплиць$(), для яких через створення можна отримати зістарені варіанти:$(br)$(li)Оброблена деревина: Вивітріна$()$(li)Мідь: Незахищена, Вивітріна, Окиснена$()$(li)Залізо: Іржава$()$(li)Нержавіюча сталь: Немає$()$(br)$(bold)Примітка$(): Зістарені варіанти не мають жодного впливу, окрім зовнішнього вигляду.",
+            "text": "Це доступні $(thing)типи теплиць$(), для яких через створення можна отримати зістарені варіанти:$(br)$(li)оброблена деревина: вивітріна$()$(li)Мідь: незахищена, вивітріна, окиснена$()$(li)Залізо: іржава$()$(li)Нержавійна сталь: немає$()$(br)$(bold)Примітка$(): зістарені варіанти не мають жодного впливу, окрім зовнішнього вигляду.",
             "title": "Тип теплиці"
         },
         {
             "type": "patchouli:text",
-            "text": "Є чотири типи звичайних $(thing)блоків теплиці$(): Стіни, Двері, Дахи та Верхівки даху. Дахи та верхівки даху є сходами та плитами відповідно. Також існують тонші версії цих блоків, відомі як панельні стіни, люки та панельні дахи. Ти можеш комбінувати їх у будь-який спосіб, щоб сформувати конструкцію теплиці."
+            "text": "Є чотири типи звичайних $(thing)блоків теплиці$(): стіни, двері, дахи та верхівки даху. Дахи та верхівки даху є сходами та плитами відповідно. Також існують тонші версії цих блоків, відомі як панельні стіни, люки та панельні дахи. Ти можеш комбінувати їх у будь-який спосіб, щоб сформувати конструкцію теплиці."
         },
         {
             "type": "tfg:multimultiblock",
@@ -109,7 +109,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Додаткове читання",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:the_world/wild_crops",

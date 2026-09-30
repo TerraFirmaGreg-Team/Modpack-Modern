@@ -14681,6 +14681,42 @@
             ]
         },
         {
+            "pakku_id": "Y9hbDxyacxcK7Rkn",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "splice"
+            },
+            "name": {
+                "curseforge": "Splice"
+            },
+            "id": {
+                "curseforge": "1668532"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "Splice-Modern-0.3.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8767/644/Splice-Modern-0.3.1.jar",
+                    "id": "8767644",
+                    "parent_id": "1668532",
+                    "hashes": {
+                        "sha1": "069d375193103f8104558f8a621347e02bbab179",
+                        "md5": "b0e0b5ec78563f998d0ac922ed42ab2e"
+                    },
+                    "required_dependencies": [],
+                    "size": 2833333,
+                    "date_published": "2026-08-30T07:52:16.057Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "2JJz5v0klvMeBh51",
             "type": "MOD",
             "side": "BOTH",

@@ -1,5 +1,5 @@
 {
-    "name": "Żarna",
+    "name": "Quern",
     "category": "tfg:craftsmanship",
     "icon": "tfc:quern",
     "pages": [
@@ -53,28 +53,28 @@
             "type": "tfg:quern_recipe",
             "recipe": "tfg:quern/copper_crushed_ore_from_normal_raw_ore",
             "text": "$(l:game_mechanics/mining#processing)Rudy$() mogą zostać pokruszone, żeby otrzymać więcej metalu.",
-            "title": "Pokruszona ruda"
+            "title": "Crushed Ore"
         },
         {
             "type": "tfg:quern_recipe",
             "recipe": "tfg:quern/sulfur",
             "text": "Żarno służy do wytwarzania różnych $(thing)proszków$() z pyłów, takich jak $(thing)siarka$(). Można w nim również zmielić $(thing)klejnoty$().",
-            "title": "Proszki"
+            "title": "Powders"
         },
         {
             "type": "tfg:quern_recipe",
             "recipe": "tfc:quern/red_dye",
             "text": "$(thing)Barwniki$() można uzyskiwać z różnych kwiatów.",
-            "title": "Barwniki"
+            "title": "Dyes"
         },
         {
             "type": "tfg:quern_recipe",
             "recipe": "tfc:quern/barley_grain",
-            "text": "$(thing)Crops$() can be processed with a knife or quern to acquire $(thing)Grain$(), which can further be ground into $(thing)Flour$()."
+            "text": "$(thing)Rośliny uprawne$() można przetworzyć za pomocą noża lub żaren, aby uzyskać $(thing)ziarno$(), które następnie można zmielić na $(thing)mąkę$()."
         },
         {
             "type": "patchouli:relations",
-            "title": "Czytaj dalej",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:the_world/geology",

@@ -1,5 +1,5 @@
 {
-    "name": "Kowadła",
+    "name": "Anvils",
     "category": "tfg:craftsmanship",
     "icon": "tfc:metal/anvil/bronze",
     "pages": [
@@ -11,7 +11,7 @@
         {
             "type": "patchouli:text",
             "anchor": "intro",
-            "title": "Wprowadzenie",
+            "title": "Introduction",
             "text": "An alternative to casting tools directly (and a requirement for higher tier metals) is to use an $(thing)Anvil$(). An anvil is a block which can be used for two different processes: $(l:craftsmanship/anvils#working)Working$() and $(l:craftsmanship/anvils#welding)Welding$(). An anvil can weld double ingots of the metal type needed to create the next tier anvil above it, which will be necessary to work other items from that metal."
         },
         {
@@ -53,7 +53,7 @@
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "Mining all six sides of a piece of raw stone - once complete, the center block will pop off as an item.",
+            "text": "Należy odsłonić wszystkie sześć ścian bloku surowej skały - wtedy środkowy blok wypadnie jako przedmiot.",
             "multiblocks": [
                 {
                     "pattern": [
@@ -222,7 +222,7 @@
             "type": "patchouli:text",
             "anchor": "welding",
             "text": "Welding is a process through which two items are fused together to create a new item. Welding works the same whether on a $(l:craftsmanship/anvils#stone_anvil)Stone Anvil$() or a $(l:craftsmanship/anvils#metal_anvil)Metal Anvil$().$(br2)First, you must place the two items you want to weld on the anvil by opening the anvil interface and inserting them in the two leftmost slots.",
-            "title": "Spawanie"
+            "title": "Welding"
         },
         {
             "type": "patchouli:text",
@@ -275,7 +275,7 @@
             "type": "patchouli:text",
             "anchor": "working",
             "text": "In order to work an item on the anvil, you will need to $(item)$(k:key.use)$() the anvil, to open up the anvil interface, seen on the next image. On the left, there are two input slots for items - for working, the target item must be in the right-hand slot. You will also need a hammer while working, either in the hammer slot on the right of the anvil $(bold)or$() in your main hand. The hammer will gradually take damage as you work the item.",
-            "title": "Pracuje"
+            "title": "Kucie"
         },
         {
             "type": "patchouli:image",
@@ -335,7 +335,7 @@
         {
             "type": "patchouli:spotlight",
             "anchor": "helve_hammer",
-            "title": "Młot spadowy",
+            "title": "Helve Hammer",
             "item": "vintageimprovements:helve_hammer",
             "text": "The $(item)Helve Hammer$() is a device that can automate many anvil functions using $(thing)mechanical energy$().$(br)To function, a helve hammer needs an anvil below its striking face. The $(l:craftsmanship/anvils#tiers)Tier$() of the anvil will dictate how many blows is needed. To add items to a helve hammer simply $(bold)throw$() them on top of the anvil with $(item)$(k:key.drop)$(). Items may be extracted automatically by adding funnels to the hammer head block."
         },
@@ -411,7 +411,7 @@
         {
             "type": "patchouli:text",
             "anchor": "anvil_helper",
-            "title": "Anvil Helper Guide",
+            "title": "Przewodnik po pracy na kowadle",
             "text": "$(l:craftsmanship/anvils#working)Working$() in $(l:craftsmanship/anvils#metal_anvil)Anvils$() is a key process inside $(tfg), as most of your work towards the $(thing)Steam and Mechanical ages$() will require the usage of an Anvil.$(br)This guide is broken down into two parts, $(l:craftsmanship/anvils#ui_explained)Understanding the UI$() and $(l:craftsmanship/anvils#how_to_perfectly_forge)How to Perfectly Forge$().$(br2)The Modpack has a custom $(thing)Resource Pack$() called $(l:https://www.curseforge.com/minecraft/texture-packs/tfc-anvil-helper-patched)TFC Anvil Helper$() that you need to enable for this guide to make sense.$()"
         },
         {
@@ -430,7 +430,7 @@
             "border": false,
             "anchor": "ui_explained",
             "title": "Interfejs i Ty",
-            "text": "Interfejs kowadła z włączonym TFC Anvil Helper, z kolorystycznymi oznaczeniami."
+            "text": "Interfejs kowadła z włączonym TFC Anvil Helper, z kolorowymi oznaczeniami."
         },
         {
             "type": "patchouli:text",
@@ -549,7 +549,7 @@
                 "tfg:textures/gui/field_guide/anvil_working_guide/wrought_iron_pickaxe_head_some_work.png",
                 "tfg:textures/gui/field_guide/anvil_working_guide/wrought_iron_pickaxe_head_complete.png"
             ],
-            "text": "An Ingot with No Work → Desired Work Value Reached → Doing the Required Steps for our Item."
+            "text": "Nieobrobiona sztabka → Osiągnięcie docelowej wartości obróbki → Wykonanie czynności wymaganych dla danego przedmiotu."
         },
         {
             "type": "patchouli:text",
@@ -571,7 +571,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Czytaj dalej",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:craftsmanship/pottery",

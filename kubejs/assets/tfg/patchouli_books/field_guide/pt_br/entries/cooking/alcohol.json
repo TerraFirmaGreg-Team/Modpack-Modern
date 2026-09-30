@@ -43,7 +43,7 @@
     {
         "type": "patchouli:crafting",
         "anchor": "bottle_label",
-        "title": "Rótulo de Garrafa",
+        "title": "Bottle Label",
         "recipe": "firmalife:crafting/bottle_label",
         "text": "Os $(thing)Rótulos de Garrafa$() podem ser renomeados em uma estação de escrita e adicionarão seu nome ao texto-dica do vinho."
     },

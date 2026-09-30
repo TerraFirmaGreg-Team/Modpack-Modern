@@ -1,17 +1,17 @@
 {
-    "name": "Clay & Pottery",
+    "name": "Глина та кераміка",
     "category": "tfg:craftsmanship",
     "icon": "minecraft:clay_ball",
     "pages": [
         {
             "type": "patchouli:text",
             "anchor": "index",
-            "text": "$(li)$(bold)$(l:craftsmanship/pottery#clay)Clay$()$(li2)$(l:craftsmanship/pottery#vessel)Vessels$()$(li2)$(l:craftsmanship/pottery#jug)Jugs$()$(li2)$(l:craftsmanship/pottery#mold)Molds$()$(li)$(bold)$(l:craftsmanship/pottery#kaolin_clay)Kaolin Clay$()$(li2)$(l:craftsmanship/pottery#kaolinite_powder)Kaolinite Powder$()$(li)$(bold)$(l:craftsmanship/pottery#fire_clay)Fire Clay$()"
+            "text": "$(li)$(bold)$(l:craftsmanship/pottery#clay)Глина$()$(li2)$(l:craftsmanship/pottery#vessel)Горщик$()$(li2)$(l:craftsmanship/pottery#jug)Глечик$()$(li2)$(l:craftsmanship/pottery#mold)Форми$()$(li)$(bold)$(l:craftsmanship/pottery#kaolin_clay)Каолінова глина$()$(li2)$(l:craftsmanship/pottery#kaolinite_powder)Каолінітовий порошок$()$(li)$(bold)$(l:craftsmanship/pottery#fire_clay)Вогнетривка глина$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "clay",
-            "title": "Глина",
+            "title": "Clay",
             "text": "$(thing)Глина$() – неймовірно корисний і збалансований матеріал, який можна використовувати для гончарства. Спочатку, тобі може бути складно її знайти. Глина зазвичай прихована травою, але її часто знаходять у двох місцях. У біомах із принаймні 175 мм $(l:the_world/climate#rainfall)річних опадів$(), глину можна знайти у вигляді плям, зазвичай позначених певними $(thing)рослинами$()."
         },
         {
@@ -48,7 +48,7 @@
                 }
             },
             "name": "Індікатори глини",
-            "text": "Clay, with the plants that may indicate its presence.",
+            "text": "Глина, рослинами які можуть вказувати на її наявність.",
             "enable_visualize": false
         },
         {
@@ -66,54 +66,54 @@
         {
             "type": "patchouli:text",
             "anchor": "vessel",
-            "text": "The small vessel is one such item. Like all pottery items, it must be $(l:https://en.wikipedia.org/wiki/Pottery)fired$() before it can be used. Firing is a process of $(l:game_mechanics/heating)heating$() the item up to a point where the clay will turn into a hard $(thing)Ceramic$() material, which requires heating to 1400 °C, or $(e)$(bold)$(t:Yellow White)Yellow White$().$(br2)In order to do this in the early game, you will need to use a $(l:craftsmanship/pit_kiln)Pit Kiln$().",
+            "text": "Горщик — один із таких предметів. Як і всі керамічні вироби, її потрібно $(l:https://en.wikipedia.org/wiki/Pottery)обпалити$(), перш ніж нею можна буде користуватися. Випалювання — це процес $(l:game_mechanics/heating)нагрівання$() предмета до температури, за якої глина перетворюється на твердий матеріал $(thing)кераміка$(). Для цього потрібно нагріти предмет до 1400 °C, або до $(e)$(bold)$(t:Yellow White)яскраво жовтого$().$(br2)Щоб зробити це на ранніх етапах гри, тобі потрібно використовувати $(l:craftsmanship/pit_kiln)земляну піч$().",
             "title": "Горщик"
         },
         {
             "type": "tfg:knapping_recipe",
             "recipe": "tfc:clay_knapping/vessel",
-            "text": "Small Vessels can store items to save space in your inventory as well as $(l:cooking/decay#vessels)Preserving Food Items$(). Small vessels have a limit of 16 items per-slot and cannot fit items larger than $(l:game_mechanics/size_and_weight)\"small\"$()."
+            "text": "Горщик можна використовувати для зберігання предметів, щоб заощаджувати місце в інвентарі, а також для $(l:cooking/decay#vessels)зберігання їжі$(). Глечик вміщує до 16 предметів у кожен слот і не можуть зберігати предмети, розмір яких перевищує $(l:game_mechanics/size_and_weight)«малий»$()."
         },
         {
             "type": "patchouli:text",
             "anchor": "jug",
-            "text": "Another useful pottery item is the $(thing)Jug$(). It can be used to pick up and $(thing)drink$() fluids, such as fresh water.$(br2)In order to use it, simply $(item)$(k:key.use)$() the jug on the fluid in the world. Then use the jug in order to drink from it. The jug is a $(l:cooking/drinking_containers)Drinking Container$() that can hold $(thing)100 mB$() of fluid at a time.",
+            "text": "Ще одним корисним керамічним виробом є $(thing)глечик$(). Його можна використовувати, щоб набирати та $(thing)пити$() рідини, наприклад свіжу воду.$(br2)Щоб скористатися ним, просто використай $(item)$(k:key.use)$() глечик на рідині у світі. Потім використай глечик, щоб випити з нього. Глечик — це $(l:cooking/drinking_containers)ємність для пиття$(), яка може вміщувати $(thing)100 mB$() рідини одночасно.",
             "title": "Глечик"
         },
         {
             "type": "patchouli:text",
             "anchor": "mold",
-            "text": "Clay is also necessary for making $(thing)Molds$(). Molds can have molten metal poured into them, which will eventually solidify into the shape of a mold. The item and potentially the mold can then be retrieved by using $(item)$(k:key.use)$() on the mold or putting it in your crafting grid.$(br2)All molds have a limit of not being able to contain molten metal past the bronze-age, $(thing)except ingot molds$().",
+            "text": "Глина також необхідна для виготовлення $(thing)форм$(). У форми можна заливати розплавлений метал, який згодом затвердне, набувши форму форми. Предмет і, за можливості, саму форму можна потім отримати, використавши $(item)$(k:key.use)$() по формі або помістивши її в сітку створення.$(br2)Усі форми мають обмеження: вони не можуть містити розплавлений метал вищого за бронзову епоху, $(thing)окрім форми для злитків$().",
             "title": "Форми"
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Mold Types",
+            "title": "Типи форм",
             "item": "tag:tfc:unfired_molds,tag:tfc:fired_molds",
-            "text": "There are many different types of molds. The most useful of which are the $(item)Ingot$() and $(item)Tool Head$() molds.$(br)Ingot molds require $(thing)144mb$() of molten metal to produce one ingot.$(br)Tool head molds replace traditional stone knapping for tools and usually require $(thing)144mB$() of fluid, however some tool types may require less or more."
+            "text": "Існує багато різних типів форм. Найкориснішими з них є форми для $(item)злитків$() і $(item)головок інструментів$().$(br)Форми для злитків потребують $(thing)144mb$() розплавленого металу для отримання одного злитка.$(br)Форми для головок інструментів замінюють традиційне оббивання каменем під час виготовлення інструментів і зазвичай потребують $(thing)144mb$() рідини, хоча для деяких типів інструментів може знадобитися менше або більше."
         },
         {
             "type": "tfg:heat_recipe",
             "recipe": "tfc:heating/ingot_mold",
-            "text": "The mold then needs to be fired―like all clay items―to be usable, such as in a $(l:craftsmanship/pit_kiln)Pit Kiln$().$(br2)Once it is fired, molten metal can be poured in. Once the metal has cooled enough, it can be extracted."
+            "text": "Потім форму потрібно обпалити — як і всі вироби з глини — щоб нею можна було користуватися, наприклад у $(l:craftsmanship/pit_kiln)земляній печі$().$(br2)Після випалу в неї можна заливати розплавлений метал. Коли метал достатньо охолоне, його можна витягнути."
         },
         {
             "type": "patchouli:spotlight",
             "item": "tfc:ceramic/ingot_mold{tank:{\"Amount\":100,\"FluidName\":\"gtceu:copper\"}}",
-            "title": "Відливка",
+            "title": "Casting",
             "link_recipes": false,
-            "text": "You will very likely run into scenarios where you produce tiny amounts of excess melted metal. It is recommended to pour it into an ingot mold and save for the next time you need to cast that metal. Trying to produce perfect 144mB ratios of alloys is not feasible or worth the effort until you reach steam-age processing."
+            "text": "Дуже ймовірно, що ти стикатимешся із ситуаціями, коли в тебе залишатиметься невелика кількість зайвого розплавленого металу. Рекомендується заливати його у формі для злитків і зберігати до наступного разу, коли тобі знадобиться цей метал. Намагатися отримувати ідеальні співвідношення сплавів по 144mB не має сенсу й не варте зусиль, доки ти не досягнеш парової доби переробки."
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "kaolin_clay",
-            "title": "Каолінова глина",
+            "title": "Kaolin Clay",
             "item": "tfc:kaolin_clay",
-            "text": "Kaolin Clay is required to make $(l:craftsmanship/pottery#fire_clay)Fire Clay$(). It can be found spawning between Y=75-110 in Plateaus, Rolling Hills and Highlands (and in their $(t:Surface rock of Limestone, Dolomite, Chalk, or Marble)Karst$() $(t:Burren, Cenote, Doline, Shilin, or Tower Karst)variants$()), Old Mountains, and Shield Volcanoes at a $(l:the_world/climate#temperature)temperature$() of at least 18°C, with a $(l:the_world/climate#rainfall)rainfall$() of at least 300mm. The $(thing)Blood Lily$() flower grows on Kaolin clay, which can be up to 35 blocks below."
+            "text": "Каолінова глина необхідна для виготовлення $(l:craftsmanship/pottery#fire_clay)вогнетривкої глини$(). Її можна знайти на висоті Y=75–110 у плато, пагорбах та високогір’ях (і в їхніх $(t:Поверхнева порода: вапняк, доломіт, крейда або мармур)карстових$() $(t:Буррен, сенот, кастрові, кам'яний ліс або баштовий карст)варіантах$()), старих горах і щитових вулканах за $(l:the_world/climate#temperature)температури$() щонайменше 18°C та $(l:the_world/climate#rainfall)кількості опадів$() щонайменше 300 мм. Квітка $(thing)кривавої лілії$() росте на каоліновій глині, яка може знаходитися до 35 блоків нижче."
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "If you see the flower but there's no clay on the surface, dig deeper!",
+            "text": "Якщо ти бачиш квітку, але на поверхні немає глини, копай глибше!",
             "multiblocks": [
                 {
                     "pattern": [
@@ -187,25 +187,25 @@
         },
         {
             "type": "patchouli:text",
-            "text": "Unless you selected the $(item)Tropical$() climate when creating your world, the journey to obtaining Kaolin Clay may be long but is always a memorable part of TerraFirmaCraft. It is important to prepare for the trip, such as through $(l:logistics/exploration_gear)equipment$(), a $(l:logistics/boats)boat$(), $(l:logistics/personal_storage)extra storage$(), $(l:cooking/food_and_water)food and drink$(), and a $(item)Spade$() to dig it all up with.$(br2)Generally, go $(thing)South East$() to increase temperature and humidity to reach the ideal climates."
+            "text": "Якщо ти не обрав $(item)тропічний$() клімат під час створення світу, подорож до отримання каолінової глини може бути довгою, але завжди залишатиметься незабутньою частиною TerraFirmaCraft. Важливо підготуватися до мандрівки: подбати про $(l:logistics/exploration_gear)спорядження$(), $(l:logistics/boats)човен$(), $(l:logistics/personal_storage)додаткове сховище$(), $(l:cooking/food_and_water)їжу та напій$(), а також $(item)лопату$(), щоб усе це викопати.$(br2)Загалом рухайся $(thing)на південний схід$(), щоб підвищувати температуру та вологість і дістатися відповідного клімату."
         },
         {
             "type": "patchouli:text",
-            "text": "If you're not a fan of long journeys, get seasick easily, or are very unlucky, $(tfg_short) has another option for obtaining Kaolin Clay: visiting $(l:beneath/beneath)The Beneath$()! It requires less traveling but is far more dangerous... with the potential for even greater riches!"
+            "text": "Якщо ти не любиш довгих подорожей, легко заколисуєшся на морі або тобі дуже не щастить, $(tfg_short) має ще один спосіб отримати каолінову глину: відвідати $(l:beneath/beneath)Безодню$()! Це потребує менше подорожей, але значно небезпечніше... зате може принести ще більші багатства!"
         },
         {
             "type": "patchouli:spotlight",
             "item": "tfc:powder/kaolinite",
             "anchor": "kaolinite_powder",
-            "text": "Kaolinite powder is made by heating $(l:craftsmanship/pottery#kaolin_clay)Kaolin Clay$(). However, the process is not perfect, and only 20% of clay will form powder!$(br2)In order to mass produce kaolinite powder early on, it is recommended to fill small vessels with kaolin clay blocks and then place these vessels in a $(l:craftsmanship/pit_kiln)Pit Kiln$() to cook on-site. With this method you can cook up to 1,024 kaolin clay at a time per pit kiln."
+            "text": "Каолінітовий порошок отримують шляхом нагрівання $(l:craftsmanship/pottery#kaolin_clay)каолінової глини$(). Однак процес неідеальний — лише 20% глини перетворюється на порошок!$(br2)Щоб на ранніх етапах масово виробляти каолінітовий порошок, рекомендується наповнити горщики блоками каолінової глини, а потім помістити ці горщики в $(l:craftsmanship/pit_kiln)земляну піч$(), щоб обробити їх на місці. У такий спосіб в одній земляній печі можна одночасно обробити до 1 024 одиниць каолінової глини."
         },
         {
             "type": "patchouli:text",
-            "text": "The amount of kaolinite powder you will need is enormous. If you have traveled very far to acquire kaolin clay and wish to make the most of your trip it is recommended to not return until you have at least 7 stacks (448 items) of $(n)Kaolinite Powder$(). This will ensure you have enough for a full-size $(l:craftsmanship/blast_furnace)Blast Furnace$(), $(l:craftsmanship/crucible)Crucibles$(), and molds. You should also bring back at least 20 blocks of kaolin clay for $(l:craftsmanship/glassworking)Glassworking$()."
+            "text": "Кількість каолінітового порошку, яка тобі знадобиться, величезна. Якщо ти вирушив дуже далеко за каоліновою глиною й хочеш максимально скористатися своєю подорожжю, рекомендується не повертатися, доки ти не матимеш щонайменше 7 стеків (448 предметів) $(n)каолінітового порошку$(). Цього має вистачити для повнорозмірної $(l:craftsmanship/blast_furnace)доменної печі$(), $(l:craftsmanship/crucible)тиглів$() та форм. Також варто привезти щонайменше 20 блоків каолінової глини для $(l:craftsmanship/glassworking)склоробства$()."
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Вогнетривка глина",
+            "title": "Fire Clay",
             "anchor": "fire_clay",
             "item": "tfc:fire_clay",
             "text": "Список застосувань вогнетривкої глини невеликий, але всі вони важливі. Вогнетривка глина — це міцніший різновид глини з підвищеною термостійкістю. Її використовують для виготовлення речей, які мають витримувати дуже високі температури!"
@@ -213,16 +213,16 @@
         {
             "type": "patchouli:crafting",
             "recipe": "tfc:crafting/fire_clay",
-            "text": "Fire clay is made from $(thing)Graphite$() crushed in a $(l:craftsmanship/quern)Quern$(), as well as $(l:craftsmanship/pottery#kaolinite_powder)Kaolinite Powder$().$(br2)Steam machines unlock more efficient ways to craft fire clay, so you may want to save some of your ingredients for later."
+            "text": "Вогнетривку глину виготовляють із $(thing)графіту$(), подрібненого в $(l:craftsmanship/quern)жорнах$(), а також $(l:craftsmanship/pottery#kaolinite_powder)каолінітового порошку$().$(br2)Парові машини відкривають ефективніші способи виготовлення вогнетривкої глини, тож, можливо, варто зберегти частину інгредієнтів на потім."
         },
         {
             "type": "tfg:knapping_recipe",
             "recipe": "tfc:fire_clay_knapping/fire_ingot_mold",
-            "text": "$(thing)Fire Ingot Molds$() are a stronger type of $(l:craftsmanship/pottery#mold)Ingot Mold$() that has just a 1 in 100 chance of breaking, compared to 1 in 10 for a regular ingot mold."
+            "text": "$(thing)Вогнетривка форма злитку$() — це міцніший різновид $(l:craftsmanship/pottery#mold)форм для злитків$(), який має лише шанс 1 до 100 зламатися, у порівнянні з 1 до 10 для звичайної форми для злитків."
         },
         {
             "type": "patchouli:relations",
-            "title": "Додаткове читання",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:the_world/geology",

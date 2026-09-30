@@ -24,7 +24,7 @@
             "type": "patchouli:text",
             "anchor": "crushing",
             "text": "$(thing)충격$() 피해는 $(thing)망치$()나 $(thing)철퇴$() 등의 둔기로부터 발생합니다. $(thing)좀비$() 또한 충격 피해를 주며, 또한 충격 피해에 저항성이 있습니다. $(thing)크리퍼$() 역시 충격 피해에 저항성이 있습니다$(). $(thing)스켈레톤$()은 충격 피해에 취약합니다.",
-            "title": "분쇄"
+            "title": "Crushing"
         },
         {
             "type": "patchouli:text",

@@ -24,7 +24,7 @@
             "type": "patchouli:text",
             "anchor": "crushing",
             "text": "$(thing)打擊傷害$()是由鈍器造成的傷害，例如$(thing)錘子$()和$(thing)狼牙棒$()。 $(thing)殭屍$()的攻擊也造成打擊傷害，並且它們對打擊傷害有抗性。$(thing)爬行者$()也能抵禦一部分打擊傷害。$(thing)骷髏$()則更容易受到打擊傷害。",
-            "title": "粉碎"
+            "title": "Crushing"
         },
         {
             "type": "patchouli:text",
@@ -48,6 +48,6 @@
         }
     ],
     "read_by_default": true,
-    "priority": "是",
+    "priority": "true",
     "sortnum": 1
 }

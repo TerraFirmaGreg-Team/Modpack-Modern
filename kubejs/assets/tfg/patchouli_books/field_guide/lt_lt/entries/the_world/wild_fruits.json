@@ -73,7 +73,7 @@
                     "text": "Apr"
                 },
                 {
-                    "text": "Gegužė"
+                    "text": "May"
                 },
                 {
                     "text": "Jun"
@@ -97,7 +97,7 @@
                     "text": "Dec"
                 },
                 {
-                    "text": "Vyšnia"
+                    "text": "Cherry"
                 },
                 {
                     "fill": "0x6ab553"
@@ -175,7 +175,7 @@
                     "fill": "0xa8986a"
                 },
                 {
-                    "text": "Citrina"
+                    "text": "Lemon"
                 },
                 {
                     "fill": "0xa8986a"
@@ -214,7 +214,7 @@
                     "fill": "0xa8986a"
                 },
                 {
-                    "text": "Alyvuoge"
+                    "text": "Olive"
                 },
                 {
                     "fill": "0xa8986a"
@@ -253,7 +253,7 @@
                     "fill": "0xa8986a"
                 },
                 {
-                    "text": "Apelsinas"
+                    "text": "Orange"
                 },
                 {
                     "fill": "0xa8986a"
@@ -292,7 +292,7 @@
                     "fill": "0xa8986a"
                 },
                 {
-                    "text": "Persikas"
+                    "text": "Peach"
                 },
                 {
                     "fill": "0x6ab553"
@@ -331,7 +331,7 @@
                     "fill": "0x6ab553"
                 },
                 {
-                    "text": "Slyva"
+                    "text": "Plum"
                 },
                 {
                     "fill": "0x6ab553"
@@ -421,7 +421,7 @@
                     "text": "Apr"
                 },
                 {
-                    "text": "Gegužė"
+                    "text": "May"
                 },
                 {
                     "text": "Jun"
@@ -445,7 +445,7 @@
                     "text": "Dec"
                 },
                 {
-                    "text": "Bananas"
+                    "text": "Banana"
                 },
                 {
                     "fill": "0xa8986a"
@@ -2971,7 +2971,7 @@
                     "text": "Apr"
                 },
                 {
-                    "text": "Gegužė"
+                    "text": "May"
                 },
                 {
                     "text": "Jun"
@@ -4767,7 +4767,7 @@
                     "text": "Apr"
                 },
                 {
-                    "text": "Gegužė"
+                    "text": "May"
                 },
                 {
                     "text": "Jun"
@@ -4791,7 +4791,7 @@
                     "text": "Dec"
                 },
                 {
-                    "text": "Snieguogė"
+                    "text": "Snowberry"
                 },
                 {
                     "fill": "0xa8986a"
@@ -4830,7 +4830,7 @@
                     "fill": "0xa8986a"
                 },
                 {
-                    "text": "Kekinė sedula"
+                    "text": "Bunchberry"
                 },
                 {
                     "fill": "0xa8986a"
@@ -4869,7 +4869,7 @@
                     "fill": "0xa8986a"
                 },
                 {
-                    "text": "Agrastas"
+                    "text": "Gooseberry"
                 },
                 {
                     "fill": "0xa8986a"
@@ -4908,7 +4908,7 @@
                     "fill": "0xa8986a"
                 },
                 {
-                    "text": "Tekšė"
+                    "text": "Cloudberry"
                 },
                 {
                     "fill": "0xa8986a"
@@ -4947,7 +4947,7 @@
                     "fill": "0xa8986a"
                 },
                 {
-                    "text": "Braškė"
+                    "text": "Strawberry"
                 },
                 {
                     "fill": "0xcca0db"
@@ -5025,7 +5025,7 @@
                     "fill": "0xa8986a"
                 },
                 {
-                    "text": "Spanguolė"
+                    "text": "Cranberry"
                 },
                 {
                     "fill": "0xa8986a"
@@ -5115,7 +5115,7 @@
                     "text": "Apr"
                 },
                 {
-                    "text": "Gegužė"
+                    "text": "May"
                 },
                 {
                     "text": "Jun"
@@ -5253,7 +5253,7 @@
             "type": "patchouli:text",
             "anchor": "blackberry",
             "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 7 - 24 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 24 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 200 - 500mm$(br2)Blackberry bushes grow from February to May, start flowering in June and July, and bear fruit in August.$(br2)They can be found in areas with few trees.",
-            "title": "Gervuogių krūmas"
+            "title": "Blackberry Bush"
         },
         {
             "type": "tfg:multimultiblock",
@@ -5353,7 +5353,7 @@
             "type": "patchouli:text",
             "anchor": "raspberry",
             "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 5 - 25 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 24 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 200 - 500mm$(br2)Raspberry bushes grow from April to July, start flowering in August and September, and bear fruit in October.$(br2)They can be found in areas with few trees.",
-            "title": "Aviečių krūmas"
+            "title": "Raspberry Bush"
         },
         {
             "type": "tfg:multimultiblock",
@@ -5453,7 +5453,7 @@
             "type": "patchouli:text",
             "anchor": "blueberry",
             "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 7 - 29 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 12 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 100 - 400mm$(br2)Blueberry bushes grow from February to May, start flowering in June and July, and bear fruit in August.$(br2)They can be found in areas with few trees.",
-            "title": "Mėlynių krūmas\n"
+            "title": "Blueberry Bush"
         },
         {
             "type": "tfg:multimultiblock",
@@ -5553,7 +5553,7 @@
             "type": "patchouli:text",
             "anchor": "elderberry",
             "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 10 - 33 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 12 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 100 - 400mm$(br2)Elderberry bushes grow from February to May, start flowering in June and July, and bear fruit in August.$(br2)They can be found in areas with few trees.",
-            "title": "Šeivamedžio krūmas"
+            "title": "Elderberry Bush"
         },
         {
             "type": "tfg:multimultiblock",
@@ -5704,7 +5704,7 @@
             "type": "patchouli:text",
             "anchor": "bunchberry",
             "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 15 - 35 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 24 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 200 - 500mm(br2)Bunchberry bushes grow from May to July, start flowering in August and September, and bear fruit in October.$(br2)They can be found in forests.",
-            "title": "Kekinės sedulos krūmas"
+            "title": "Bunchberry Bush"
         },
         {
             "type": "tfg:multimultiblock",
@@ -5768,7 +5768,7 @@
             "type": "patchouli:text",
             "anchor": "gooseberry",
             "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 5 - 27 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 24 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 200 - 500mm$(br2)Gooseberry bushes grow from April to July, start flowering in August and September, and bear fruit in October.$(br2)They can be found in forests.",
-            "title": "Agrastų krūmas"
+            "title": "Gooseberry Bush"
         },
         {
             "type": "tfg:multimultiblock",
@@ -5832,7 +5832,7 @@
             "type": "patchouli:text",
             "anchor": "snowberry",
             "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -7 - 18 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 24 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 200 - 500mm$(br2)Snowberry bushes grow from March to June, start flowering in July and August, and bear fruit in September.$(br2)They can be found in forests.",
-            "title": "Snieguogės krūmas"
+            "title": "Snowberry Bush"
         },
         {
             "type": "tfg:multimultiblock",
@@ -5896,7 +5896,7 @@
             "type": "patchouli:text",
             "anchor": "cloudberry",
             "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -2 - 17 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 9 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 250 - 500mm$(br2)Cloudberry bushes grow from February to May, start flowering in June to August, and bear fruit in September.$(br2)They can be found in forests.",
-            "title": "Tekšės krūmas"
+            "title": "Cloudberry Bush"
         },
         {
             "type": "tfg:multimultiblock",
@@ -5960,7 +5960,7 @@
             "type": "patchouli:text",
             "anchor": "strawberry",
             "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 5 - 28 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 12 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 100 - 400mm$(br2)Strawberry bushes grow from October to December, start flowering in January and February, and bear fruit in March.$(br2)They can be found in forests.",
-            "title": "Braškių krūmas"
+            "title": "Strawberry Bush"
         },
         {
             "type": "tfg:multimultiblock",
@@ -6024,7 +6024,7 @@
             "type": "patchouli:text",
             "anchor": "wintergreen_berry",
             "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -6 - 17 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 12 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 100 - 400mm$(br2)Wintergreen berry bushes grow from May to September, start flowering in October and November, and bear fruit in December.$(br2)They can be found in forests.",
-            "title": "Bruknuolės krūmas"
+            "title": "Wintergreen Berry Bush"
         },
         {
             "type": "tfg:multimultiblock",
@@ -6088,7 +6088,7 @@
             "type": "patchouli:text",
             "anchor": "cranberry",
             "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -5 - 17 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 30 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 250 - 500mm$(br2)Cranberry bushes grow from March to June, start flowering in July and August, and bear fruit in September.$(br2)They can be found in forests. Unlike most small bushes, cranberry bushes are grown underwater.",
-            "title": "Spanguolių krūmas"
+            "title": "Cranberry Bush"
         },
         {
             "type": "tfg:multimultiblock",

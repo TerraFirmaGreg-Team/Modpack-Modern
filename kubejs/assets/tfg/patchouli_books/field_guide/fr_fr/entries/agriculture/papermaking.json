@@ -24,14 +24,14 @@
         {
             "type": "tfg:sealed_barrel_recipe",
             "anchor": "soaked_papyrus_strip",
-            "title": "Bandelette de papyrus trempée",
+            "title": "Soaked Papyrus Strip",
             "recipe": "tfc:barrel/soaked_papyrus_strip",
             "text": "Then, papyrus strips are soaked in a $(l:craftsmanship/barrels)Barrel$() of $(thing)Water$()."
         },
         {
             "type": "tfg:loom_recipe",
             "anchor": "unrefined_paper",
-            "title": "Papier brut",
+            "title": "Unrefined Paper",
             "recipe": "tfc:loom/unrefined_paper",
             "text": "Then, soaked papyrus strips are woven together in a $(l:agriculture/weaving#loom)Loom$() to make $(thing)Unrefined Paper$(). Finally, it must be placed on a log and $(l:agriculture/leather_making#scraping)Scraped$() to make $(thing)Paper$()."
         },
@@ -44,7 +44,7 @@
         {
             "type": "patchouli:crafting",
             "anchor": "treated_hide",
-            "title": "Peau traitée",
+            "title": "Treated Hide",
             "recipe": "tfc:crafting/large_treated_hide",
             "text": "Combiner de la pierre ponce, un marteau et une peau grattée donne des sections de $(thing)Peau traitée$()."
         },
@@ -72,14 +72,14 @@
         },
         {
             "type": "patchouli:crafting",
-            "title": "Bande de Bois Dur",
+            "title": "Hardwood Strip",
             "anchor": "hardwood_strip",
             "recipe": "tfg:crafting/strip_hardwood",
             "text": "Next, the stripped wood is shaven with an axe to obtain $(item)Hardwood Strips$(). This can be done using an Axe or more sophisticated methods later."
         },
         {
             "type": "tfg:sealed_barrel_recipe",
-            "title": "Bande de Bois Dur Trempé",
+            "title": "Soaked Hardwood Strip",
             "anchor": "soaked_hardwood_strip",
             "recipe": "tfg:barrel/soak_hardwood_strip",
             "text": "Then, the individual strips are soaked in a $(l:craftsmanship/barrels)Barrel$() of $(thing)Water$(). This $(thing)debilitates the structural integrity$() of the $(thing)wood$() so it can be $(thing)broken down further$()."
@@ -87,7 +87,7 @@
         {
             "type": "tfg:quern_recipe",
             "recipe": "tfg:quern/soaked_hardwood_strip",
-            "title": "Pulpe de bois dur",
+            "title": "Hardwood Pulp",
             "anchor": "hardwood_pulp",
             "text": "Afterward, utilize the $(l:craftsmanship/quern)Quern$() to break down the soaked strips into $(item)Hardwood Pulp$()."
         },
@@ -127,7 +127,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Pour aller plus loin",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:agriculture/animal_husbandry",

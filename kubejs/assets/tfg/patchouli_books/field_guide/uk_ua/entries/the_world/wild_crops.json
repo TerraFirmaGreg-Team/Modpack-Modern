@@ -1,52 +1,52 @@
 {
-    "name": "Earth Crops",
+    "name": "Наземні культури",
     "category": "tfg:the_world",
     "icon": "tfc:textures/item/seeds/onion.png",
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "$(li)$(bold)$(l:the_world/wild_crops#wild_crops)Wild Crops$()$(li)$(bold)$(#0000eb)Crops$()$(li2)$(l:the_world/wild_crops#barley)Barley$()$(li2)$(l:the_world/wild_crops#beet)Beet$()$(li2)$(l:the_world/wild_crops#cabbage)Cabbage$()$(li2)$(l:the_world/wild_crops#canola)Canola$()$(li2)$(l:the_world/wild_crops#carrot)Carrot$()$(li2)$(l:the_world/wild_crops#cucumber)Cucumber$()$(li2)$(l:the_world/wild_crops#flax)Flax$()$(li2)$(l:the_world/wild_crops#garlic)Garlic$()$(li2)$(l:the_world/wild_crops#green_bean)Green Bean$()$(li2)$(l:the_world/wild_crops#jute)Jute$()$(li2)$(l:the_world/wild_crops#lentil)Lentil$()$(li2)$(l:the_world/wild_crops#maize)Maize$()"
+            "text": "$(li)$(bold)$(l:the_world/wild_crops#wild_crops)Дикі культури$()$(li)$(bold)$(#0000eb)Культури$()$(li2)$(l:the_world/wild_crops#barley)Ячмінь$()$(li2)$(l:the_world/wild_crops#beet)Буряк$()$(li2)$(l:the_world/wild_crops#cabbage)Капуста$()$(li2)$(l:the_world/wild_crops#canola)Ріпак$()$(li2)$(l:the_world/wild_crops#carrot)Морква$()$(li2)$(l:the_world/wild_crops#cucumber)Огірок$()$(li2)$(l:the_world/wild_crops#flax)Льон$()$(li2)$(l:the_world/wild_crops#garlic)Часник$()$(li2)$(l:the_world/wild_crops#green_bean)Зелена квасоля$()$(li2)$(l:the_world/wild_crops#jute)Джут$()$(li2)$(l:the_world/wild_crops#lentil)Сочевиця$()$(li2)$(l:the_world/wild_crops#maize)Кукурудза$()"
         },
         {
             "type": "patchouli:text",
-            "text": "$(li2)$(l:the_world/wild_crops#melon)Melon$()$(li2)$(l:the_world/wild_crops#oat)Oat$()$(li2)$(l:the_world/wild_crops#onion)Onion$()$(li2)$(l:the_world/wild_crops#papyrus)Papyrus$()$(li2)$(l:the_world/wild_crops#potato)Potato$()$(li2)$(l:the_world/wild_crops#pumpkin)Pumpkin$()$(li2)$(l:the_world/wild_crops#radish)Radish$()$(li2)$(l:the_world/wild_crops#red_bell_pepper)Red Bell Pepper$()$(li2)$(l:the_world/wild_crops#rice)Rice$()$(li2)$(l:the_world/wild_crops#rye)Rye$()$(li2)$(l:the_world/wild_crops#soybean)Soybean$()$(li2)$(l:the_world/wild_crops#squash)Squash$()$(li2)$(l:the_world/wild_crops#sugarcane)Sugarcane$()$(li2)$(l:the_world/wild_crops#sunflower)Sunflower$()$(li2)$(l:the_world/wild_crops#tomatoes)Tomato$()$(li2)$(l:the_world/wild_crops#wheat)Wheat$()$(li2)$(l:the_world/wild_crops#yellow_bell_pepper)Yellow Bell Pepper$()"
+            "text": "$(li2)$(l:the_world/wild_crops#melon)Кавун$()$(li2)$(l:the_world/wild_crops#oat)Овес$()$(li2)$(l:the_world/wild_crops#onion)Цибуля$()$(li2)$(l:the_world/wild_crops#papyrus)Папірус$()$(li2)$(l:the_world/wild_crops#potato)Картопля$()$(li2)$(l:the_world/wild_crops#pumpkin)Гарбуз$()$(li2)$(l:the_world/wild_crops#radish)Редька$()$(li2)$(l:the_world/wild_crops#red_bell_pepper)Червоний солодкий перець$()$(li2)$(l:the_world/wild_crops#rice)Рис$()$(li2)$(l:the_world/wild_crops#rye)Жито$()$(li2)$(l:the_world/wild_crops#soybean)Соєві боби$()$(li2)$(l:the_world/wild_crops#squash)Кабачок$()$(li2)$(l:the_world/wild_crops#sugarcane)Цукрова тростина$()$(li2)$(l:the_world/wild_crops#sunflower)Соняшник$()$(li2)$(l:the_world/wild_crops#tomatoes)Помідор$()$(li2)$(l:the_world/wild_crops#wheat)Пшениця$()$(li2)$(l:the_world/wild_crops#yellow_bell_pepper)Жовтий солодкий перець$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "intro",
-            "text": "Crops are a source of food and other materials. While each crop is slightly different, crops all have some similar principles. In order to start growing crops, you will need some $(thing)Seeds$(), which can be obtained by searching for $(l:the_world/wild_crops#wild_crops)Wild Crops$() and breaking them.$(br2)Once you have obtained seeds, you will also need a $(thing)Hoe$() to cultivate farmland."
+            "text": "Культури є джерелом їжі та інших матеріалів. Хоча кожна культура дещо відрізняється, усі культури мають деякі спільні принципи. Щоб почати вирощувати культури, тобі знадобиться $(thing)насіння$(), яке можна отримати, знаходячи $(l:the_world/wild_crops#wild_crops)дикі культури$() та руйнуючи їх.$(br2)Отримавши насіння, тобі також знадобиться $(thing)мотика$(), щоб обробляти землю."
         },
         {
             "type": "patchouli:text",
-            "text": "In addition to finding wild crops, seeds can also be produced from existing crops. When a fully mature crop dies―Either by weather, or leaving it to rot―It will go to seed, dropping more seeds that can be used to grow even more crops next season."
+            "text": "Окрім пошуку диких культур, насіння також можна отримувати з уже вирощених культур. Коли повністю дозріла культура гине — через погоду або якщо залишити її гнити — вона дає насіння, скидаючи додаткове насіння, яке можна використати для вирощування ще більшої кількості культур наступного сезону."
         },
         {
             "type": "patchouli:text",
             "title": "Дикі рослини",
             "anchor": "wild_crops",
-            "text": "$(thing)Wild Crops$() can be found scattered around the world, growing in small patches. They can be harvested for some $(thing)Products$() and $(thing)Seeds$(), which can then be cultivated themselves.$(br2)Wild crops are only mature from June to October. Otherwise, they appear dead until the next Summer."
+            "text": "$(thing)Дикі культури$() можна знайти по всьому світу, де вони ростуть невеликими ділянками. Їх можна збирати заради $(thing)продуктів$() і $(thing)насіння$(), які потім можна вирощувати самостійно.$(br2)Дикі культури дозрівають лише з червня по жовтень. В інший час вони мають вигляд мертвих, доки не настане наступне літо."
         },
         {
             "type": "patchouli:text",
-            "text": "Wild crops will spawn in climates near where the crop itself can be cultivated, so if you are looking for a specific crop, look in the climate where the crop can be cultivated.$(br2)However, unlike $(l:agriculture/growing_crops)Crops$() that the player has planted, wild crops do not require $(l:agriculture/growing_crops#hydration)Hydration$(). Instead, they are found in areas depending on the average $(l:the_world/climate#temperature)Temperature$() and $(l:the_world/climate#rainfall)Rainfall$()."
+            "text": "Дикі культури з'являтимуться в кліматичних умовах, близьких до тих, у яких можна вирощувати саму культуру, тож якщо ти шукаєш певну культуру, шукай її в кліматі, де її можна вирощувати.$(br2)Однак, на відміну від $(l/growing_crops)культур$(), які висадив гравець, дикі культури не потребують $(l/growing_crops#hydration)зволоження$(). Натомість вони зустрічаються в місцевостях залежно від середніх значень $(l/climate#temperature)температури$() та $(l/climate#rainfall)опадів$()."
         },
         {
             "type": "tfg:table",
             "strings": [
                 {
-                    "text": "Врожай",
+                    "text": "Crop",
                     "bold": true
                 },
                 {
-                    "text": "Температура (°C)",
+                    "text": "Temperature (°C)",
                     "bold": true
                 },
                 {
-                    "text": "Опади (мм)",
+                    "text": "Rainfall (mm)",
                     "bold": true
                 },
                 {
-                    "text": "Ячмінь"
+                    "text": "Barley"
                 },
                 {
                     "text": " -8 - 26"
@@ -55,7 +55,7 @@
                     "text": " 70 - 310"
                 },
                 {
-                    "text": "Овес"
+                    "text": "Oat"
                 },
                 {
                     "text": "  3 - 40"
@@ -64,7 +64,7 @@
                     "text": "140 - 400"
                 },
                 {
-                    "text": "Жито"
+                    "text": "Rye"
                 },
                 {
                     "text": "-11 - 30"
@@ -73,7 +73,7 @@
                     "text": "100 - 350"
                 },
                 {
-                    "text": "Кукурудза"
+                    "text": "Maize"
                 },
                 {
                     "text": " 13 - 40"
@@ -82,7 +82,7 @@
                     "text": "300 - 500"
                 },
                 {
-                    "text": "Пшениця"
+                    "text": "Wheat"
                 },
                 {
                     "text": " -4 - 35"
@@ -91,7 +91,7 @@
                     "text": "100 - 400"
                 },
                 {
-                    "text": "Рис"
+                    "text": "Rice"
                 },
                 {
                     "text": " 15 - 30"
@@ -100,7 +100,7 @@
                     "text": "100 - 500"
                 },
                 {
-                    "text": "Буряк"
+                    "text": "Beet"
                 },
                 {
                     "text": " -5 - 20"
@@ -109,7 +109,7 @@
                     "text": " 70 - 300"
                 },
                 {
-                    "text": "Капуста"
+                    "text": "Cabbage"
                 },
                 {
                     "text": "-10 - 27"
@@ -118,7 +118,7 @@
                     "text": " 60 - 280"
                 },
                 {
-                    "text": "Морква"
+                    "text": "Carrot"
                 },
                 {
                     "text": "  3 - 30"
@@ -127,7 +127,7 @@
                     "text": "100 - 400"
                 },
                 {
-                    "text": "Часник"
+                    "text": "Garlic"
                 },
                 {
                     "text": "-20 - 18"
@@ -136,7 +136,7 @@
                     "text": " 60 - 310"
                 },
                 {
-                    "text": "Зелена квасоля"
+                    "text": "Green Bean"
                 },
                 {
                     "text": "  2 - 35"
@@ -145,7 +145,7 @@
                     "text": "150 - 410"
                 },
                 {
-                    "text": "Кавун"
+                    "text": "Melon"
                 },
                 {
                     "text": "  5 - 37"
@@ -173,19 +173,19 @@
             "type": "tfg:table",
             "strings": [
                 {
-                    "text": "Врожай",
+                    "text": "Crop",
                     "bold": true
                 },
                 {
-                    "text": "Температура (°C)",
+                    "text": "Temperature (°C)",
                     "bold": true
                 },
                 {
-                    "text": "Опади (мм)",
+                    "text": "Rainfall (mm)",
                     "bold": true
                 },
                 {
-                    "text": "Картопля"
+                    "text": "Potato"
                 },
                 {
                     "text": " -1 - 37"
@@ -194,7 +194,7 @@
                     "text": "200 - 410"
                 },
                 {
-                    "text": "Гарбуз"
+                    "text": "Pumpkin"
                 },
                 {
                     "text": "  0 - 30"
@@ -203,7 +203,7 @@
                     "text": "120 - 390"
                 },
                 {
-                    "text": "Цибуля"
+                    "text": "Onion"
                 },
                 {
                     "text": "  0 - 30"
@@ -212,7 +212,7 @@
                     "text": "100 - 390"
                 },
                 {
-                    "text": "Соєві боби"
+                    "text": "Soybean"
                 },
                 {
                     "text": "  8 - 30"
@@ -221,7 +221,7 @@
                     "text": "160 - 410"
                 },
                 {
-                    "text": "Кабачок"
+                    "text": "Squash"
                 },
                 {
                     "text": "  5 - 33"
@@ -230,7 +230,7 @@
                     "text": " 90 - 390"
                 },
                 {
-                    "text": "Цукрова тростина"
+                    "text": "Sugarcane"
                 },
                 {
                     "text": " 12 - 38"
@@ -239,7 +239,7 @@
                     "text": "160 - 500"
                 },
                 {
-                    "text": "Помідор"
+                    "text": "Tomato"
                 },
                 {
                     "text": "  0 - 36"
@@ -248,7 +248,7 @@
                     "text": "120 - 390"
                 },
                 {
-                    "text": "Джут"
+                    "text": "Jute"
                 },
                 {
                     "text": "  5 - 37"
@@ -257,7 +257,7 @@
                     "text": "100 - 410"
                 },
                 {
-                    "text": "Папірус"
+                    "text": "Papyrus"
                 },
                 {
                     "text": " 19 - 37"
@@ -266,7 +266,7 @@
                     "text": "310 - 500"
                 },
                 {
-                    "text": "Червона паприка"
+                    "text": "Red Bell Pepper"
                 },
                 {
                     "text": " 16 - 30"
@@ -275,7 +275,7 @@
                     "text": "190 - 400"
                 },
                 {
-                    "text": "Жовтий болгарський перець"
+                    "text": "Yellow Bell Pepper"
                 },
                 {
                     "text": " 16 - 30"
@@ -284,7 +284,7 @@
                     "text": "190 - 400"
                 },
                 {
-                    "text": "Соняшник"
+                    "text": "Sunflower"
                 },
                 {
                     "text": "  5 - 40"
@@ -294,7 +294,7 @@
                 }
             ],
             "text": "",
-            "title": "Вимоги для диких рослин",
+            "title": "Wild Crop Requirements",
             "legend": [],
             "columns": 2,
             "first_column_width": 80,
@@ -312,19 +312,19 @@
             "type": "tfg:table",
             "strings": [
                 {
-                    "text": "Врожай",
+                    "text": "Crop",
                     "bold": true
                 },
                 {
-                    "text": "Температура (°C)",
+                    "text": "Temperature (°C)",
                     "bold": true
                 },
                 {
-                    "text": "Опади (мм)",
+                    "text": "Rainfall (mm)",
                     "bold": true
                 },
                 {
-                    "text": "Ріпак"
+                    "text": "Canola"
                 },
                 {
                     "text": " -5 - 25"
@@ -333,7 +333,7 @@
                     "text": " 50 - 350"
                 },
                 {
-                    "text": "Льон"
+                    "text": "Flax"
                 },
                 {
                     "text": " -8 - 25"
@@ -342,7 +342,7 @@
                     "text": "175 - 475"
                 },
                 {
-                    "text": "Огірок"
+                    "text": "Cucumber"
                 },
                 {
                     "text": " 15 - 40"
@@ -351,7 +351,7 @@
                     "text": "350 - 500"
                 },
                 {
-                    "text": "Редька"
+                    "text": "Radish"
                 },
                 {
                     "text": " -16 - 4"
@@ -360,7 +360,7 @@
                     "text": "75 - 325"
                 },
                 {
-                    "text": "Сочевиця"
+                    "text": "Lentil"
                 },
                 {
                     "text": " -18 - 2"
@@ -370,7 +370,7 @@
                 }
             ],
             "text": "",
-            "title": "Вимоги для диких рослин",
+            "title": "Wild Crop Requirements",
             "legend": [],
             "columns": 2,
             "first_column_width": 80,
@@ -387,8 +387,8 @@
         {
             "type": "patchouli:text",
             "anchor": "barley",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -8 - 26 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 18 - 75 %$(br)$(bold)Nutrient$(): Nitrogen$(br2)Barley is a single block crop. Barley seeds can be planted on farmland and will produce $(thing)Barley$() and $(thing)Barley Seeds$() as a product.",
-            "title": "Ячмінь"
+            "text": "$(bold)$(l/climate#temperature)Температура$(): -8–26 °C$(br)$(bold)$(l/growing_crops#hydration)Зволоження$(): 18–75 %$(br)$(bold)Поживна речовина$(): Азот$(br2)Ячмінь — одноблокова культура. Насіння ячменю можна висаджувати на сільськогосподарських грядках, і воно даватиме $(thing)Ячмінь$() та $(thing)Насіння ячменю$() як продукт.",
+            "title": "Barley"
         },
         {
             "type": "tfg:multimultiblock",
@@ -535,8 +535,8 @@
         {
             "type": "patchouli:text",
             "anchor": "oat",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 3 - 40 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 35 - 100 %$(br)$(bold)Nutrient$(): Phosphorus$(br2)Oat is a single block crop. Oat seeds can be planted on farmland and will produce $(thing)Oat$() and $(thing)Oat Seeds$() as a product.",
-            "title": "Овес"
+            "text": "$(bold)$(l/climate#temperature)Температура$(): 3–40 °C$(br)$(bold)$(l/growing_crops#hydration)Зволоження$(): 35–100 %$(br)$(bold)Поживна речовина$(): Фосфор$(br2)Овес — одноблокова культура. Насіння вівса можна висаджувати на сільськогосподарських грядках, і воно даватиме $(thing)Овес$() та $(thing)Насіння вівса$() як продукт.",
+            "title": "Oat"
         },
         {
             "type": "tfg:multimultiblock",
@@ -683,8 +683,8 @@
         {
             "type": "patchouli:text",
             "anchor": "rye",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -11 - 30 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 25 - 85 %$(br)$(bold)Nutrient$(): Phosphorus$(br2)Rye is a single block crop. Rye seeds can be planted on farmland and will produce $(thing)Rye$() and $(thing)Rye Seeds$() as a product.",
-            "title": "Жито"
+            "text": "$(bold)$(l/climate#temperature)Температура$(): -11–30 °C$(br)$(bold)$(l/growing_crops#hydration)Зволоження$(): 25–85 %$(br)$(bold)Поживна речовина$(): Фосфор$(br2)Жито — одноблокова культура. Насіння жита можна висаджувати на сільськогосподарських грядках, і воно даватиме $(thing)Жито$() та $(thing)Насіння жита$() як продукт.",
+            "title": "Rye"
         },
         {
             "type": "tfg:multimultiblock",
@@ -831,8 +831,8 @@
         {
             "type": "patchouli:text",
             "anchor": "maize",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 13 - 40 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 75 - 100 %$(br)$(bold)Nutrient$(): Phosphorus$(br2)Maize is a two block tall crop. Maize seeds can be planted on farmland, will grow two blocks tall, and will produce $(thing)Maize$() and $(thing)Maize Seeds$() as a product.",
-            "title": "Кукурудза"
+            "text": "$(bold)$(l/climate#temperature)Температура$(): 13–40 °C$(br)$(bold)$(l/growing_crops#hydration)Зволоження$(): 75–100 %$(br)$(bold)Поживна речовина$(): Фосфор$(br2)Кукурудза — культура заввишки у два блоки. Насіння кукурудзи можна висаджувати на сільськогосподарських грядках; вона виростає заввишки у два блоки та даватиме $(thing)Кукурудзу$() і $(thing)Насіння кукурудзи$() як продукт.",
+            "title": "Maize"
         },
         {
             "type": "tfg:multimultiblock",
@@ -969,8 +969,8 @@
         {
             "type": "patchouli:text",
             "anchor": "wheat",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -4 - 35 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 25 - 100 %$(br)$(bold)Nutrient$(): Phosphorus$(br2)Wheat is a single block crop. Wheat seeds can be planted on farmland and will produce $(thing)Wheat$() and $(thing)Wheat Seeds$() as a product.",
-            "title": "Пшениця"
+            "text": "$(bold)$(l/climate#temperature)Температура$(): -4–35 °C$(br)$(bold)$(l/growing_crops#hydration)Зволоження$(): 25–100 %$(br)$(bold)Поживна речовина$(): Фосфор$(br2)Пшениця — одноблокова культура. Насіння пшениці можна висаджувати на сільськогосподарських грядках, і воно даватиме $(thing)Пшеницю$() та $(thing)Насіння пшениці$() як продукт.",
+            "title": "Wheat"
         },
         {
             "type": "tfg:multimultiblock",
@@ -1117,12 +1117,12 @@
         {
             "type": "patchouli:text",
             "anchor": "rice",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 15 - 30 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 25 - 100 %$(br)$(bold)Nutrient$(): Phosphorus$(br2)Rice is a single block crop. Rice must be grown underwater - it must be planted on farmland, in freshwater that is a single block deep. It will produce $(thing)Rice$() and $(thing)Rice Seeds$() as a product.",
-            "title": "Рис"
+            "text": "$(bold)$(l/climate#temperature)Температура$(): 15–30 °C$(br)$(bold)$(l/growing_crops#hydration)Зволоження$(): 25–100 %$(br)$(bold)Поживна речовина$(): Фосфор$(br2)Рис — одноблокова культура. Рис потрібно вирощувати під водою — його слід висаджувати на сільськогосподарських грядках;, занурені в прісну воду завглибшки в один блок. Він даватиме $(thing)Рис$() та $(thing)Насіння рису$() як продукт.",
+            "title": "Rice"
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "Note: in order to grow, the rice block must be $(thing)Waterlogged$().",
+            "text": "Примітка: для росту блок рису має бути $(thing)Залитий водою$().",
             "multiblocks": [
                 {
                     "pattern": [
@@ -1265,8 +1265,8 @@
         {
             "type": "patchouli:text",
             "anchor": "beet",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -5 - 20 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 18 - 85 %$(br)$(bold)Nutrient$(): Potassium$(br2)Beets are a single block crop. Beet seeds can be planted on farmland and will produce $(thing)Beet$() and $(thing)Beet Seeds$() as a product.",
-            "title": "Буряк"
+            "text": "$(bold)$(l/climate#temperature)Температура$(): -5–20 °C$(br)$(bold)$(l/growing_crops#hydration)Зволоження$(): 18–85 %$(br)$(bold)Поживна речовина$(): Калій$(br2)Буряк — одноблокова культура. Насіння буряка можна висаджувати на сільськогосподарських грядках, і воно даватиме $(thing)Буряк$() та $(thing)Насіння буряка$() як продукт.",
+            "title": "Beet"
         },
         {
             "type": "tfg:multimultiblock",
@@ -1379,8 +1379,8 @@
         {
             "type": "patchouli:text",
             "anchor": "cabbage",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -10 - 27 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 15 - 65 %$(br)$(bold)Nutrient$(): Nitrogen$(br2)Cabbage is a single block crop. Cabbage seeds can be planted on farmland and will produce $(thing)Cabbage$() and $(thing)Cabbage Seeds$() as a product.",
-            "title": "Капуста"
+            "text": "$(bold)$(l/climate#temperature)Температура$(): -10–27 °C$(br)$(bold)$(l/growing_crops#hydration)Зволоження$(): 15–65 %$(br)$(bold)Поживна речовина$(): Азот$(br2)Капуста — одноблокова культура. Насіння капусти можна висаджувати на сільськогосподарських грядках, і воно даватиме $(thing)Капусту$() та $(thing)Насіння капусти$() як продукт.",
+            "title": "Cabbage"
         },
         {
             "type": "tfg:multimultiblock",
@@ -1493,8 +1493,8 @@
         {
             "type": "patchouli:text",
             "anchor": "carrot",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 3 - 30 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 25 - 100 %$(br)$(bold)Nutrient$(): Potassium$(br2)Carrot is a single block crop. Carrot seeds can be planted on farmland and will produce $(thing)Carrot$() and $(thing)Carrot Seeds$() as a product.",
-            "title": "Морква"
+            "text": "$(bold)$(l/climate#temperature)Температура$(): 3–30 °C$(br)$(bold)$(l/growing_crops#hydration)Зволоження$(): 25–100 %$(br)$(bold)Поживна речовина$(): Калій$(br2)Морква — одноблокова культура. Насіння моркви можна висаджувати на сільськогосподарських грядках, і воно даватиме $(thing)Моркву$() та $(thing)Насіння моркви$() як продукт.",
+            "title": "Carrot"
         },
         {
             "type": "tfg:multimultiblock",
@@ -1590,8 +1590,8 @@
         {
             "type": "patchouli:text",
             "anchor": "garlic",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -20 - 18 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 15 - 75 %$(br)$(bold)Nutrient$(): Nitrogen$(br2)Garlic is a single block crop. Garlic seeds can be planted on farmland and will produce $(thing)Garlic$() and $(thing)Garlic Seeds$() as a product.",
-            "title": "Часник"
+            "text": "$(bold)$(l/climate#temperature)Температура$(): -20–18 °C$(br)$(bold)$(l/growing_crops#hydration)Зволоження$(): 15–75 %$(br)$(bold)Поживна речовина$(): Азот$(br2)Часник — одноблокова культура. Насіння часнику можна висаджувати на сільськогосподарських грядках, і воно даватиме $(thing)Часник$() та $(thing)Насіння часнику$() як продукт.",
+            "title": "Garlic"
         },
         {
             "type": "tfg:multimultiblock",
@@ -1687,12 +1687,12 @@
         {
             "type": "patchouli:text",
             "anchor": "green_bean",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 2 - 35 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 38 - 100 %$(br)$(bold)Nutrient$(): Nitrogen$(br2)Green Beans is a climbing two block tall crop. Green Bean seeds can be planted on farmland, will grow two blocks tall if a stick is present, and will produce $(thing)Green Beans$() and $(thing)Green Bean Seeds$() as a product.",
+            "text": "$(bold)$(l/climate#temperature)Температура$(): 2–35 °C$(br)$(bold)$(l/growing_crops#hydration)Зволоження$(): 38–100 %$(br)$(bold)Поживна речовина$(): Азот$(br2)Зелена квасоля — витка культура заввишки у два блоки. Насіння зеленої квасолі можна висаджувати на сільськогосподарських грядках за наявності палиці вона виростає заввишки у два блоки та даватиме $(thing)Зелену квасолю$() і $(thing)Насіння зеленої квасолі$() як продукт.",
             "title": "Зелені боби"
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "The stick is required in order for the crop to fully grow.",
+            "text": "Палиця потрібна для того, щоб культура повністю виросла.",
             "multiblocks": [
                 {
                     "pattern": [
@@ -1867,8 +1867,8 @@
         {
             "type": "patchouli:text",
             "anchor": "potato",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -1 - 37 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 50 - 100 %$(br)$(bold)Nutrient$(): Potassium$(br2)Potatoes are a single block crop. Potato seeds can be planted on farmland and will produce $(thing)Potatoes$() and $(thing)Potato Seeds$() as a product.",
-            "title": "Картопля"
+            "text": "$(bold)$(l/climate#temperature)Температура$(): -1–37 °C$(br)$(bold)$(l/growing_crops#hydration)Зволоження$(): 50–100 %$(br)$(bold)Поживна речовина$(): Калій$(br2)Картопля — одноблокова культура. Насіння картоплі можна висаджувати на сільськогосподарських грядках, і воно даватиме $(thing)Картоплю$() та $(thing)Насіння картоплі$() як продукт.",
+            "title": "Potatoes"
         },
         {
             "type": "tfg:multimultiblock",
@@ -1998,7 +1998,7 @@
         {
             "type": "patchouli:text",
             "anchor": "pumpkin",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 0 - 30 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 30 - 80 %$(br)$(bold)Nutrient$(): Phosphorus$(br2)Pumpkins are a spreading crop. Pumpkin seeds can be planted on farmland and will place up to two $(thing)Pumpkin Blocks$() on the ground next to it while it is mature. If the pumpkin blocks are harvested, and the plant matures again, it can grow more pumpkins. Pumpkins can be made into $(l:game_mechanics/lighting#jack_o_lanterns)Jack 'o Lanterns$().",
+            "text": "$(bold)$(l/climate#temperature)Температура$(): 0–30 °C$(br)$(bold)$(l/growing_crops#hydration)Зволоження$(): 30–80%$(br)$(bold)Поживна речовина$(): Фосфор$(br2)Гарбуз — сланка культура. Насіння гарбуза можна висаджувати на сільськогосподарських грядках, і після дозрівання рослина розміщуватиме на землі поруч із собою до двох $(thing)Блоків гарбуза$(). Якщо зібрати блоки гарбуза, а рослина знову дозріє, вона зможе виростити ще гарбузи. З гарбузів можна виготовляти $(l/lighting#jack_o_lanterns)Джек-ліхтарі$().",
             "title": "Гарбузи"
         },
         {
@@ -2170,7 +2170,7 @@
         {
             "type": "patchouli:text",
             "anchor": "melon",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 5 - 37 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 75 - 100 %$(br)$(bold)Nutrient$(): Phosphorus$(br2)Melons are a spreading crop. Melon seeds can be planted on farmland and will place up to two $(thing)Melon Blocks$() on the ground next to it while it is mature. If the melon blocks are harvested, and the plant matures again, it can grow more melon.",
+            "text": "$(bold)$(l/climate#temperature)Температура$(): 5–37 °C$(br)$(bold)$(l/growing_crops#hydration)Зволоження$(): 75–100%$(br)$(bold)Поживна речовина$(): Фосфор$(br2)Кавун — сланка культура. Насіння дині можна висаджувати на сільськогосподарських грядках, і після дозрівання рослина розміщуватиме на землі поруч із собою до двох $(thing)Блоків кавуна$(). Якщо зібрати блоки кавуна, а рослина знову дозріє, вона зможе виростити ще кавуни.",
             "title": "Кавуни"
         },
         {
@@ -2342,7 +2342,7 @@
         {
             "type": "patchouli:text",
             "anchor": "red_bell_pepper",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 16 - 30 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 25 - 60 %$(br)$(bold)Nutrient$(): Potassium$(br2)Red Bell Peppers are a pick-able crop. When they are near mature, they can be harvested with $(item)$(k:key.use)$() to obtain Green Bell Peppers. Harvesting with $(item)$(k:key.use)$() allows the plant to grow more peppers in the future rather than destroying the plant.",
+            "text": "$(bold)$(l/climate#temperature)Температура$(): 16–30 °C$(br)$(bold)$(l/growing_crops#hydration)Зволоження$(): 25–60%$(br)$(bold)Поживна речовина$(): Калій$(br2)Червоний солодкий перець — культура, з якої можна збирати врожай. Коли він майже дозрів, його можна збирати за допомогою $(item)$(k:key.use)$(), щоб отримати червоний солодкий перець. Збирання за допомогою $(item)$(k:key.use)$() дозволяє рослині надалі вирощувати більше перців, не знищуючи її.",
             "title": "Червоний солодкий перець"
         },
         {
@@ -2473,7 +2473,7 @@
         {
             "type": "patchouli:text",
             "anchor": "yellow_bell_pepper",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 16 - 30 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 25 - 60 %$(br)$(bold)Nutrient$(): Potassium$(br2)Yellow Bell Peppers are a pick-able crop. When they are near mature, they can be harvested with $(item)$(k:key.use)$() to obtain Green Bell Peppers. Harvesting with $(item)$(k:key.use)$() allows the plant to grow more peppers in the future rather than destroying the plant.",
+            "text": "$(bold)$(l/climate#temperature)Температура$(): 16–30 °C$(br)$(bold)$(l/growing_crops#hydration)Зволоження$(): 25–60%$(br)$(bold)Поживна речовина$(): Калій$(br2)Жовтий солодкий перець — культура, з якої можна збирати врожай. Коли він майже дозрів, його можна збирати за допомогою $(item)$(k:key.use)$(), щоб отримати жовтий солодкий перець. Збирання за допомогою $(item)$(k:key.use)$() дозволяє рослині надалі вирощувати більше перців, не знищуючи її.",
             "title": "Жовтий солодкий перець"
         },
         {
@@ -2604,7 +2604,7 @@
         {
             "type": "patchouli:text",
             "anchor": "onion",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 0 - 30 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 25 - 90 %$(br)$(bold)Nutrient$(): Nitrogen$(br2)Onions are a single block crop. Onion seeds can be planted on farmland and will produce $(thing)Onions$() and $(thing)Onion Seeds$() as a product.",
+            "text": "$(bold)$(l/climate#temperature)Температура$(): 0–30 °C$(br)$(bold)$(l/growing_crops#hydration)Зволоження$(): 25–90%$(br)$(bold)Поживна речовина$(): Азот$(br2)Цибуля — одноблокова культура. Насіння цибулі можна висаджувати на сільськогосподарських грядках, і воно даватиме $(thing)Цибулю$() та $(thing)Насіння цибулі$() як продукт.",
             "title": "Цибуля"
         },
         {
@@ -2735,8 +2735,8 @@
         {
             "type": "patchouli:text",
             "anchor": "soybean",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 8 - 30 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 40 - 100 %$(br)$(bold)Nutrient$(): Nitrogen$(br2)Soybean is a single block crop. Soybean seeds can be planted on farmland and will produce $(thing)Soybean$() and $(thing)Soybean Seeds$() as a product.",
-            "title": "Соєві боби"
+            "text": "$(bold)$(l/climate#temperature)Температура$(): 8–30 °C$(br)$(bold)$(l/growing_crops#hydration)Зволоження$(): 40–100%$(br)$(bold)Поживна речовина$(): Азот$(br2)Соєві боби — одноблокова культура. Насіння сої можна висаджувати на сільськогосподарських грядках, і воно даватиме $(thing)Соєві боби$() та $(thing)Насіння соєвих бобів$() як продукт.",
+            "title": "Soybean"
         },
         {
             "type": "tfg:multimultiblock",
@@ -2866,8 +2866,8 @@
         {
             "type": "patchouli:text",
             "anchor": "squash",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 5 - 33 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 23 - 95 %$(br)$(bold)Nutrient$(): Potassium$(br2)Squash is a single block crop. Squash seeds can be planted on farmland and will produce $(thing)Squash$() and $(thing)Squash Seeds$() as a product.",
-            "title": "Кабачок"
+            "text": "$(bold)$(l/climate#temperature)Температура$(): 5–33 °C$(br)$(bold)$(l/growing_crops#hydration)Зволоження$(): 23–95%$(br)$(bold)Поживна речовина$(): Калій$(br2)Кабачок — одноблокова культура. Насіння кабачка можна висаджувати на сільськогосподарських грядках, і воно даватиме $(thing)Кабачок$() та $(thing)Насіння кабачка$() як продукт.",
+            "title": "Squash"
         },
         {
             "type": "tfg:multimultiblock",
@@ -3014,8 +3014,8 @@
         {
             "type": "patchouli:text",
             "anchor": "sugarcane",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 12 - 38 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 40 - 100 %$(br)$(bold)Nutrient$(): Potassium$(br2)Sugarcane is a two block tall crop. Sugarcane seeds can be planted on farmland, will grow two blocks tall, and will produce $(thing)Sugarcane$() and $(thing)Sugarcane Seeds$() as a product. Sugarcane can be used to make $(thing)Sugar$().",
-            "title": "Цукрова тростина"
+            "text": "$(bold)$(l/climate#temperature)Температура$(): 12–38 °C$(br)$(bold)$(l/growing_crops#hydration)Зволоження$(): 40–100%$(br)$(bold)Поживна речовина$(): Калій$(br2)Цукрова тростина — культура заввишки у два блоки. Насіння цукрової тростини можна висаджувати на сільськогосподарських грядках, вона виростає заввишки у два блоки та даватиме $(thing)Цукрову тростину$() і $(thing)Насіння цукрової тростини$() як продукт. З цукрової тростини можна виготовляти $(thing)Цукор$().",
+            "title": "Sugarcane"
         },
         {
             "type": "tfg:multimultiblock",
@@ -3194,7 +3194,7 @@
         {
             "type": "patchouli:text",
             "anchor": "tomatoes",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 0 - 36 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 30 - 95 %$(br)$(bold)Nutrient$(): Potassium$(br2)Tomatoes are a climbing two block tall crop. Tomato seeds can be planted on farmland, will grow two blocks tall if a stick is present, and will produce $(thing)Tomatoes$() and $(thing)Tomato Seeds$() as a product.",
+            "text": "$(bold)$(l/climate#temperature)Температура$(): 0–36 °C$(br)$(bold)$(l/growing_crops#hydration)Зволоження$(): 30–95%$(br)$(bold)Поживна речовина$(): Калій$(br2)Помідори — витка культура заввишки у два блоки. Насіння помідорів можна висаджувати на сільськогосподарських грядках, за наявності палиці вони виростають заввишки у два блоки та даватимуть $(thing)Помідори$() і $(thing)Насіння помідорів$() як продукт.",
             "title": "Помідори"
         },
         {
@@ -3374,8 +3374,8 @@
         {
             "type": "patchouli:text",
             "anchor": "jute",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 5 - 37 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 25 - 100 %$(br)$(bold)Nutrient$(): Potassium$(br2)Jute is a two block tall crop. Jute seeds can be planted on farmland, will grow two blocks tall, and will produce $(thing)Jute$() and $(thing)Jute Seeds$() as a product.",
-            "title": "Джут"
+            "text": "$(bold)$(l/climate#temperature)Температура$(): 5–37 °C$(br)$(bold)$(l/growing_crops#hydration)Зволоження$(): 25–100%$(br)$(bold)Поживна речовина$(): Калій$(br2)Джут — культура заввишки у два блоки. Насіння джуту можна висаджувати на сільськогосподарських грядках, він виростає заввишки у два блоки та даватиме $(thing)Джут$() і $(thing)Насіння джуту$() як продукт.",
+            "title": "Jute"
         },
         {
             "type": "tfg:multimultiblock",
@@ -3512,8 +3512,8 @@
         {
             "type": "patchouli:text",
             "anchor": "papyrus",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 19 - 37 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 70 - 100 %$(br)$(bold)Nutrient$(): Potassium$(br2)Papyrus is a two block tall crop. Papyrus seeds can be planted on farmland, will grow two blocks tall, and will produce $(l:agriculture/papermaking)Papyrus$() and $(thing)Papyrus Seeds$() as a product.",
-            "title": "Папірус"
+            "text": "$(bold)$(l/climate#temperature)Температура$(): 19–37 °C$(br)$(bold)$(l/growing_crops#hydration)Зволоження$(): 70–100%$(br)$(bold)Поживна речовина$(): Калій$(br2)Папірус — культура заввишки у два блоки. Насіння папірусу можна висаджувати на сільськогосподарських грядках, він виростає заввишки у два блоки та даватиме $(l/papermaking)Папірус$() і $(thing)Насіння папірусу$() як продукт.",
+            "title": "Papyrus"
         },
         {
             "type": "tfg:multimultiblock",
@@ -3650,8 +3650,8 @@
         {
             "type": "patchouli:text",
             "anchor": "sunflower",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 5 - 40 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 20 - 80 %$(br)$(bold)Nutrient$(): Nitrogen$(br2)A Sunflower is a two block tall crop. Sunflower seeds can be planted on farmland, will grow two blocks tall, and will produce $(item)Sunflower Caps$() which can be processed into $(thing)Seed Oil$(). Seed Oil can both be used as Lamp Fuel, as well as $(thing)Bio Diesel$() later on.$(br)A Sunflower also counts as a Flower for the purposes of $(l:agriculture/beekeeping)Beekeeping$().",
-            "title": "Соняшник"
+            "text": "$(bold)$(l/climate#temperature)Температура$(): 5–40 °C$(br)$(bold)$(l/growing_crops#hydration)Зволоження$(): 20–80%$(br)$(bold)Поживна речовина$(): Азот$(br2)Соняшник — культура заввишки у два блоки. Насіння соняшника можна висаджувати на сільськогосподарських грядках, він виростає заввишки у два блоки та даватиме $(item)Кошики соняшника$(), які можна переробити на $(thing)Рослинну олію$(). Рослинну олію можна використовувати як паливо для ламп, а згодом — як $(thing)Біодизель$().$(br)Соняшник також вважається Квіткою для цілей $(l/beekeeping)Бджільництва$().",
+            "title": "Sunflower"
         },
         {
             "type": "tfg:multimultiblock",
@@ -3809,8 +3809,8 @@
         {
             "type": "patchouli:text",
             "anchor": "canola",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -5 - 25 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 10 - 60 %$(br)$(bold)Nutrient$(): Phosphorus$(br2)Canola is a two block tall crop. Canola seeds can be planted on farmland, will grow two blocks tall, and will produce $(item)Canola Ovules$() which can be processed into $(thing)Seed Oil$(). Seed Oil can both be used as Lamp Fuel, as well as $(thing)Bio Diesel$() later on.$(br)Canola also counts as a Flower for the purposes of $(l:agriculture/beekeeping)Beekeeping$().",
-            "title": "Ріпак"
+            "text": "$(bold)$(l/climate#temperature)Температура$(): -5–25 °C$(br)$(bold)$(l/growing_crops#hydration)Зволоження$(): 10–60%$(br)$(bold)Поживна речовина$(): Фосфор$(br2)Ріпак — культура заввишки у два блоки. Насіння ріпаку можна висаджувати на сільськогосподарських грядках, він виростає заввишки у два блоки та даватиме $(item)Насінні зачатки ріпаку$(), які можна переробити на $(thing)Рослинну олію$(). Рослинну олію можна використовувати як паливо для ламп, а згодом — як $(thing)Біодизель$().$(br)Ріпак також вважається Квіткою для цілей $(l/beekeeping)Бджільництва$().",
+            "title": "Canola"
         },
         {
             "type": "tfg:multimultiblock",
@@ -3969,8 +3969,8 @@
         {
             "type": "patchouli:text",
             "anchor": "flax",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -8 - 25 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 15 - 65 %$(br)$(bold)Nutrient$(): Nitrogen$(br2)Flax is a two block tall crop. Flax seeds can be planted on farmland, will grow two blocks tall, and will produce $(item)Flax Stems$() which can be processed into $(thing)Linen$() or $(thing)Burlap$().$(br)Flax also counts as a Flower for the purposes of $(l:agriculture/beekeeping)Beekeeping$().",
-            "title": "Льон"
+            "text": "$(bold)$(l/climate#temperature)Температура$(): -8–25 °C$(br)$(bold)$(l/growing_crops#hydration)Зволоження$(): 15–65%$(br)$(bold)Поживна речовина$(): Азот$(br2)Льон — культура заввишки у два блоки. Насіння льону можна висаджувати на сільськогосподарських грядках, він виростає заввишки у два блоки та даватиме $(item)Стебла льону$(), які можна переробити на $(thing)Льон$() або $(thing)Мішковину$().$(br)Льон також вважається Квіткою для цілей $(l/beekeeping)Бджільництва$().",
+            "title": "Flax"
         },
         {
             "type": "tfg:multimultiblock",
@@ -4128,8 +4128,8 @@
         {
             "type": "patchouli:text",
             "anchor": "cucumber",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 5 - 40 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 70 - 100 %$(br)$(bold)Nutrient$(): Nitrogen$(br2)Cucumbers are a two block tall crop. Cucumber seeds can be planted on farmland, will grow two blocks tall, and will produce $(item)Cucumbers$() which give $(thing)Vegetable$() nutrition.$(br)$(bold)Cucumbers need a stick to fully mature.$()",
-            "title": "Огірок"
+            "text": "$(bold)$(l/climate#temperature)Температура$(): 5–40 °C$(br)$(bold)$(l/growing_crops#hydration)Зволоження$(): 70–100%$(br)$(bold)Поживна речовина$(): Азот$(br2)Огірки — культура заввишки у два блоки. Насіння огірків можна висаджувати на сільськогосподарських грядках, вони виростають заввишки у два блоки та даватимуть $(item)Огірки$(), які дають поживність $(thing)Овочі$().$(br)$(bold)Для повного дозрівання огіркам потрібна палиця.$()",
+            "title": "Cucumber"
         },
         {
             "type": "tfg:multimultiblock",
@@ -4267,8 +4267,8 @@
         {
             "type": "patchouli:text",
             "anchor": "radish",
-            "title": "Редька",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -20 - 20 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 15 - 65 %$(br)$(bold)Nutrient$(): Potassium$(br2)Radishes can be eaten for $(thing)Vegetable$() nutrition. If you need a plant that can survive in colder temperatures, radishes are a good choice."
+            "title": "Radish",
+            "text": "$(bold)$(l/climate#temperature)Температура$(): -20–20 °C$(br)$(bold)$(l/growing_crops#hydration)Зволоження$(): 15–65%$(br)$(bold)Поживна речовина$(): Калій$(br2)Редьку можна їсти для отримання поживності $(thing)Овочі$(). Якщо тобі потрібна рослина, яка може виживати за нижчих температур, редька — гарний вибір."
         },
         {
             "type": "tfg:multimultiblock",
@@ -4382,8 +4382,8 @@
         {
             "type": "patchouli:text",
             "anchor": "lentil",
-            "title": "Сочевиця",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -20 - 18 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 50 - 100 %$(br)$(bold)Nutrient$(): Phosphorus$(br2)Lentils can be eaten for $(thing)Vegetable$() nutrition, although it is recommended to cook them first. Lentils are another good choice for farming in colder climates."
+            "title": "Lentil",
+            "text": "$(bold)$(l/climate#temperature)Температура$(): -20–18 °C$(br)$(bold)$(l/growing_crops#hydration)Зволоження$(): 50–100%$(br)$(bold)Поживна речовина$(): Фосфор$(br2)Сочевицю можна їсти для отримання поживності $(thing)Овочі$(), хоча рекомендується спочатку її приготувати. Сочевиця — ще один гарний вибір для вирощування в холоднішому кліматі."
         },
         {
             "type": "tfg:multimultiblock",
@@ -4496,7 +4496,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Додаткове читання",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:the_world/wild_fruits",

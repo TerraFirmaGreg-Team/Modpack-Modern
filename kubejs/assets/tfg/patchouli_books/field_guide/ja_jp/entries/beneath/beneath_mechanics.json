@@ -27,7 +27,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "clothes",
-			"title": "衣類",
+			"title": "Clothing",
 			"text": "$(item)Burlap$(), $(item)Linen$(), and $(item)Silk$() clothing will help provide a little heat resistance.$(br)$(item)Crocodile$(), $(item)Tiger$(), and $(item)Lion$() clothing provide a stronger cooling effect.$(br)Lastly, $(item)Phantom$() and $(item)Red Elk$() clothes are the strongest cooling clothes, and last a long time too.$(br2)All clothing can be repaired. Press $(thing)U$() to check the repair recipes in $(emi)."
 		},
 		{
@@ -78,7 +78,7 @@
 					"X": "beneath:hellbricks"
 				}
 			},
-			"name": "獄炎炉",
+			"name": "Hellforge",
 			"text": "Any type of $(l:agriculture/aqueducts)Aqueduct$() will work.",
 			"enable_visualize": false
 		},
@@ -99,7 +99,7 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "ピグリンとの取引",
+			"title": "Piglin Bartering",
 			"anchor": "piglins",
 			"item": "minecraft:gold_ingot",
 			"text": "Like you'd expect, you can trade with $(thing)Piglins$() in the same way you trade with them in vanilla, with $(item)Gold Ingots$().$(br2)A full list of trades can be found in $(emi) - simply press $(thing)U$() on a Gold Ingot to see it."
@@ -107,7 +107,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"item": "tfg:piglin_disguise",
-			"title": "ピグリンの変装マスク",
+			"title": "Piglin Disguise",
 			"anchor": "disguise",
 			"text": "取引をスムーズに進めたい場合、あるいは単に地元の人たちと交流したい場合は、$(thing)ピグリンの変装マスク$()を身につければ、$(thing)ピグリン$()が初対面で敵対的になるのを防げます。ただし、注意してください！ 彼らにも我慢の限界があります……"
 		},
@@ -125,7 +125,7 @@
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "さらに読む",
+			"title": "Further Reading",
 			"anchor": "relations",
 			"entries": [
 				"tfg:beneath/beneath",

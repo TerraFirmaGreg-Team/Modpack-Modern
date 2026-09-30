@@ -53,7 +53,7 @@
 			"type": "patchouli:entity",
 			"entity": "ad_astra:star_crawler",
 			"scale": 0.4,
-			"name": "스타 크롤러",
+			"name": "Star Crawler",
 			"anchor": "star_crawler",
 			"text": "$(thing)Star Crawlers$() are a type of starfish. They are hostile and can be eaten."
 		},

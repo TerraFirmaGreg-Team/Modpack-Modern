@@ -31,7 +31,7 @@
                 }
             },
             "name": "Kuźnia węglowa",
-            "text": "A complete forge structure, ready to be lit.",
+            "text": "Kompletna struktura kuźni węglowej, gotowa do zapalenia.",
             "enable_visualize": false
         },
         {
@@ -76,7 +76,7 @@
                 "tfc:textures/gui/book/gui/charcoal_forge.png"
             ],
             "title": "Interfejs kuźni.",
-            "text": "$(bold)TIP:$() You can directly throw fuel like charcoal on top of the forge with $(item)$(k:key.drop)$() to re-fuel it.",
+            "text": "$(bold)WSKAZÓWKA:$() Możesz uzupełnić paliwo w kuźni, rzucając na nią np. węgiel drzewny za pomocą $(item)$(k:key.drop)$().",
             "border": false
         },
         {
@@ -86,7 +86,7 @@
         {
             "type": "patchouli:spotlight",
             "item": "tfc:bellows",
-            "title": "Miech",
+            "title": "Bellows",
             "anchor": "bellows",
             "text": "$(thing)Bellows$() can be used to increase the temperature of a device by improving the supply of oxygen. However, by burning at a hotter temperature they will also consume fuel faster. The bellows can provide air to a block directly in front of it and one block below that. This allows it to provide air to a $(l:craftsmanship/blast_furnace)Blast Furnace$(), or a $(l:craftsmanship/charcoal_forge#charcoal_forge)Charcoal Forge$() for example."
         },
@@ -100,7 +100,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Czytaj dalej",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:agriculture/leather_making",

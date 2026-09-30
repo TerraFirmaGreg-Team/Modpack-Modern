@@ -1,5 +1,5 @@
 {
-    "name": "Beczki",
+    "name": "Barrels",
     "category": "tfg:craftsmanship",
     "icon": "tfc:wood/barrel/oak",
     "pages": [
@@ -27,7 +27,7 @@
         {
             "type": "patchouli:text",
             "text": "Barrels are an important device used for mixing various fluids and items together. To use a $(thing)Barrel$() recipe, the barrel must be filled with the correct ratio of fluid and items required. Depending on the recipe, it may need to be $(thing)Sealed$() for a period of time to allow the contents to transform.",
-            "title": "Wytwarzanie"
+            "title": "Crafting"
         },
         {
             "type": "patchouli:text",
@@ -59,13 +59,13 @@
         },
         {
             "type": "patchouli:text",
-            "title": "Barwienie",
+            "title": "Dyeing",
             "anchor": "dyeing",
             "text": "Barrels have the ability to $(thing)Dye$() and $(thing)Bleach$() items. Most color-able things, like carpet, candles, and $(l:craftsmanship/building_materials#alabaster)Alabaster$() can be dyed by sealing them in a barrel of dye or bleached by sealing them in a barrel of lye."
         },
         {
             "type": "patchouli:text",
-            "title": "Konserwacja",
+            "title": "Preservation",
             "anchor": "preservation",
             "text": "Barrels can preserve items in $(thing)Vinegar$(). Vinegar is made by sealing $(thing)Fruit$() in a barrel of $(thing)Alcohol$(). For information on how that process works, see the relevant $(l:cooking/decay#vinegar)page$()."
         },
@@ -94,7 +94,7 @@
                 }
             },
             "name": "Poziome beczki",
-            "text": "Sideways barrels show their sealed state using the $(thing)Tap$(). If the tap is sideways, it is sealed.",
+            "text": "Położenie $(thing)kranika$() wskazuje, czy beczka ułożona na boku jest zapieczętowana. Jeśli kranik jest ustawiony poziomo, beczka jest zapieczętowana.",
             "enable_visualize": false
         },
         {
@@ -116,7 +116,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Czytaj dalej",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:craftsmanship/sticks_and_stones",

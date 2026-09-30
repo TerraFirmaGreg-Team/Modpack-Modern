@@ -6,11 +6,11 @@
         {
             "type": "patchouli:text",
             "anchor": "index",
-            "title": "索引",
+            "title": "Index",
             "text": "$(bold)$(li)$(l:beneath/beneath_wild_fruits#fruit_trees)Fruit Trees$()$(li2)$(l:beneath/beneath_wild_fruits#lavacado)Lavacado$()$(li2)$(l:beneath/beneath_wild_fruits#magmango)Magmango$()$(bold)$(li)$(l:beneath/beneath_wild_fruits#palm_fruit_trees)Palm Fruit Trees$()$(li2)$(l:beneath/beneath_wild_fruits#oil_palm)Oil Palm$()$(li2)$(l:beneath/beneath_wild_fruits#acai)Açaí$()"
         },
         {
-            "title": "第一天",
+            "title": "Introduction",
             "anchor": "into",
             "type": "patchouli:text",
             "text": "The $(l:beneath)Beneath$() hosts its own unique selection of wild fruits, which have adapted to the extreme conditions underground. Wild fruits can be cultivated in all the same ways as regular $(l:the_world/wild_fruits)wild fruits$() in the Overworld."
@@ -35,7 +35,7 @@
                     "text": "Apr"
                 },
                 {
-                    "text": "五月"
+                    "text": "May"
                 },
                 {
                     "text": "Jun"
@@ -319,7 +319,7 @@
                     "text": "Apr"
                 },
                 {
-                    "text": "五月"
+                    "text": "May"
                 },
                 {
                     "text": "Jun"

@@ -6,18 +6,18 @@
         {
             "type": "patchouli:text",
             "anchor": "salad",
-            "text": "$(thing)Salads$() are a meal prepared in a $(thing)Bowl$() from up to five $(thing)$(n)$(t:#tfc:usable_in_salad)Ingredients$().$(br2)Salads are one of the simplest meals to make, and just require a $(l:cooking/bowls)Bowl$(). First, hold the $(thing)Bowl$() and press $(item)$(k:key.use)$() while holding $(item)$(k:key.sneak)$(). This will open the salad screen.$(br)Place ingredients in the top slots and then remove the salad from the bottom slot when you are done."
+            "text": "$(thing)Салати$() — це страва, яку готують у $(thing)мисці$() максимум із п’яти $(thing)$(n)$(t:#tfc:usable_in_salad)інгредієнтів$().$(br2)Салати — одна з найпростіших страв у приготуванні, для них потрібна лише $(l:cooking/bowls)миска$(). Спочатку візьми $(thing)миску$() в руку та натисни $(item)$(k:key.use)$(), утримуючи $(item)$(k:key.sneak)$(). Відкриється меню салату.$(br)Помісти інгредієнти у верхні слоти, а коли закінчиш, забери салат із нижнього слота."
         },
         {
             "type": "patchouli:spotlight",
             "item": "tag:tfc:salads",
             "title": "Салати",
             "link_recipes": false,
-            "text": "Salads are dynamic meal items. The ingrediants used will determine what type of salad is made and the $(l:cooking/food_and_water#nutrients)Nutrients$() it contains.$(br2)$(t:§70.75§r§l∑§r§7Ingredients§r)To calculate the nutritional value; take the sum of every ingredient's nutrition and multiply by 0.75"
+            "text": "Салати — це динамічні страви. Використані інгредієнти визначають, який саме салат буде приготовлено та які $(l:cooking/food_and_water#nutrients)поживні речовини$() він міститиме.$(br2)$(t:§70.75§r§l∑§r§7Інгредієнти§r)Щоб розрахувати поживну цінність, склади поживну цінність усіх інгредієнтів і помнож отриману суму на 0,75."
         },
         {
             "type": "patchouli:relations",
-            "title": "Додаткове читання",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:cooking/food_and_water",

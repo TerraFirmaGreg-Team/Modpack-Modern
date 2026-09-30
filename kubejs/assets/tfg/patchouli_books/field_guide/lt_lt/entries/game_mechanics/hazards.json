@@ -7,7 +7,7 @@
 	"pages": [
 		{
 			"type": "patchouli:spotlight",
-			"title": "Pavojingos medžiagos",
+			"title": "Hazardous Materials",
 			"item": "gtceu:cobaltite_dust",
 			"text": "Kai kurios $(thing)rudos$(), $(thing)dulkes$() ir $(thing)chemines medžiagos$() yra pavojingos ir jei jas nešiojate savo inventoriuje, gali sukelti $(item)neigiamus poveikius$() ar netgi $(item)nužudyti$() Jus. Kai juos nešiojate, ekrane rodoma $(item)poveikio būsena$().$(br2)Tam tikra įranga, pavyzdžiui, $(thing)kaukės$(), $(thing)pirštinės$() ir $(thing)apsauginis kostiumas nuo pavojingų medžiagų$() gali būti naudojami šiems poveikiams neutralizuoti."
 		},
@@ -30,7 +30,7 @@
 		},
 		{
 			"type": "patchouli:crafting",
-			"title": "Veido kaukė",
+			"title": "Face Mask",
 			"recipe": "gtceu:shaped/face_mask",
 			"text": "$(thing)Veido kaukė$() suteikia apsaugą nuo bet kokių $(item)Įkvepiamų$() pavojų, pavyzdžiui: arsenozės.",
 			"anchor": "mask"

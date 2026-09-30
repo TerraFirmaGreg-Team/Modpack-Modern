@@ -51,7 +51,7 @@
                     "text": "0.900"
                 },
                 {
-                    "text": "Odunda Kızarmış"
+                    "text": "Wood Grilled"
                 },
                 {
                     "text": "0.800"
@@ -63,31 +63,31 @@
                     "text": "0.500"
                 },
                 {
-                    "text": "Tuzlanmış"
+                    "text": "Salted"
                 },
                 {
                     "text": "0.500"
                 },
                 {
-                    "text": "Turşulanmış"
+                    "text": "Pickled"
                 },
                 {
                     "text": "0.500"
                 },
                 {
-                    "text": "Saklanmış"
+                    "text": "Preserved"
                 },
                 {
                     "text": "0.500"
                 },
                 {
-                    "text": "Yabanı"
+                    "text": "Wild"
                 },
                 {
                     "text": "0.500"
                 },
                 {
-                    "text": "Kurumuş"
+                    "text": "Dried"
                 },
                 {
                     "text": "0.500"
@@ -96,7 +96,7 @@
                     "text": "Cooled"
                 },
                 {
-                    "text": "0.500"
+                    "text": "0.300"
                 },
                 {
                     "text": "Shelved"
@@ -117,7 +117,7 @@
                     "text": "0.125"
                 },
                 {
-                    "text": "Sirke ile Saklanmış"
+                    "text": "Preserved in Vinegar"
                 },
                 {
                     "text": "0.100"
@@ -470,7 +470,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Ek Okuma",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:cooking/food_and_water",

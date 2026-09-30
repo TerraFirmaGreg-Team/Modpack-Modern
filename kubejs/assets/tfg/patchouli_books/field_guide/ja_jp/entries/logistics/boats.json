@@ -1,12 +1,12 @@
 {
-    "name": "ボート",
+    "name": "Boats",
     "category": "tfg:logistics",
     "icon": "firmaciv:textures/item/rowboat_icon_only.png",
     "pages": [
         {
             "type": "patchouli:text",
             "text": "$(li)$(bold)$(l:logistics/boats#intro)Sailing Information$()$(li2)$(l:logistics/boats#customization)Customization$()$(li2)$(l:logistics/boats#boat_items)Boats as Items$()$(li2)$(l:logistics/boats#animals)Transporting Animals$()$(li2)$(l:logistics/boats#paddles)Paddles as Oars$()$(li2)$(l:logistics/boats#cleats)Cleats & Leads$()$(li2)$(l:logistics/boats#anchors)Anchors & Windlasses$()$(li2)$(l:logistics/boats#sails)Sails$()$(li2)$(l:logistics/boats#sailing)Sailing$()$(li2)$(l:logistics/boats#painting)Painting & Dyeing$()$(li2)$(l:logistics/boats#damage)Damage & Repair$()",
-            "title": "インデックス",
+            "title": "Index",
             "anchor": "index"
         },
         {
@@ -16,7 +16,7 @@
         {
             "type": "patchouli:text",
             "anchor": "intro",
-            "title": "はじめに",
+            "title": "Introduction",
             "text": "Creating and using a boat may be slightly more involved than you're used to, but there's nothing quite like building the perfect craft and setting off on the high seas. Peruse this manual and learn the ins and outs of carving, crafting, constructing, rowing, paddling, piloting, and customizing to your delight."
         },
         {
@@ -163,11 +163,11 @@
             "type": "patchouli:text",
             "anchor": "kayak",
             "text": "Your best overland solo-adventure friend. Of course, being the only boat that can be carried as an item helps. It's the fastest boat for a solo player, and very maneuverable!$(br)To row a kayak, hold a $(item)Kayak Paddle$() in your main, or off-hand. To carry the kayak, just break it.",
-            "title": "カヤック"
+            "title": "Kayak"
         },
         {
             "type": "patchouli:image",
-            "title": "カヤック",
+            "title": "Kayak",
             "images": [
                 "firmaciv:textures/gui/book/kayak_isometric.png"
             ],
@@ -596,14 +596,15 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "さらに読む",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:craftsmanship/metallurgy",
                 "tfg:agriculture/weaving",
                 "tfg:logistics/exploration_gear",
                 "tfg:logistics/navigation",
-                "tfg:the_world/earth_tree_index"
+                "tfg:the_world/earth_tree_index",
+                "tfg:logistics/trains"
             ]
         }
     ],

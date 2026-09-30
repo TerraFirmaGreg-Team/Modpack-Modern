@@ -45,7 +45,7 @@
                     "bold": true
                 },
                 {
-                    "text": "Pieczone w piecu"
+                    "text": "Oven Baked"
                 },
                 {
                     "text": "0.900"
@@ -57,7 +57,7 @@
                     "text": "0.800"
                 },
                 {
-                    "text": "Wędzone"
+                    "text": "Smoked"
                 },
                 {
                     "text": "0.500"
@@ -69,34 +69,34 @@
                     "text": "0.500"
                 },
                 {
-                    "text": "Kiszone"
+                    "text": "Pickled"
                 },
                 {
                     "text": "0.500"
                 },
                 {
-                    "text": "Zakonserwowane"
+                    "text": "Preserved"
                 },
                 {
                     "text": "0.500"
                 },
                 {
-                    "text": "Dzikie"
+                    "text": "Wild"
                 },
                 {
                     "text": "0.500"
                 },
                 {
-                    "text": "Suche"
+                    "text": "Dried"
                 },
                 {
                     "text": "0.500"
                 },
                 {
-                    "text": "Chłodzone"
+                    "text": "Cooled"
                 },
                 {
-                    "text": "0.500"
+                    "text": "0.300"
                 },
                 {
                     "text": "Na półce"
@@ -117,7 +117,7 @@
                     "text": "0.125"
                 },
                 {
-                    "text": "Zakonserwowane w occie"
+                    "text": "Preserved in Vinegar"
                 },
                 {
                     "text": "0.100"
@@ -130,7 +130,7 @@
                 }
             ],
             "text": "",
-            "title": "Preservation Traits: Worst to Best",
+            "title": "Cechy konserwacji: od najgorszych do najlepszych",
             "legend": [],
             "columns": 1,
             "first_column_width": 118,
@@ -148,7 +148,7 @@
             "type": "patchouli:text",
             "anchor": "vessels",
             "text": "One of the earliest ways to preserve food is to use a $(thing)Vessel$(). $(thing)Large Vessels$() are a block which can store up to nine items, and when $(thing)sealed$() the items inside will gain the $(5)$(bold)Preserved$() trait with a modifier of 0.5.$(br2)$(thing)Small Vessels$() are an item which can store up to four other items, and will also apply the $(5)$(bold)Preserved$() trait to their contents.",
-            "title": "Wazy"
+            "title": "Naczynia"
         },
         {
             "type": "patchouli:multiblock",
@@ -184,7 +184,7 @@
         {
             "type": "patchouli:text",
             "anchor": "smoking",
-            "title": "Wędzenie",
+            "title": "Smoking",
             "text": "Smoking is used to preserve $(thing)Meat$() and $(l:cooking/cheese)Cheese$() with a modifier of 0.7. To smoke meat, it must have first been $(thing)Brined$() by sealing it in a $(thing)Barrel$() with $(thing)Brine$(). Cheese does not have this requirement.$(br)To start smoking, add an item to wool yarn that is within four blocks above a firepit. The string should begin to generate some smoke if it is working.$(br)Note: The firepit may only be burned with $(thing)Logs$()!"
         },
         {
@@ -235,7 +235,7 @@
                 }
             },
             "name": "Lizawka solna",
-            "text": "Salt can be found naturally in forests in the form of salt licks, or ground from salt ores like halite.",
+            "text": "Sól występuje naturalnie w lasach w postaci lizawek solnych. Można ją również pozyskać, mieląc rudy soli, takie jak halit.",
             "enable_visualize": false
         },
         {
@@ -247,7 +247,7 @@
         {
             "type": "patchouli:text",
             "anchor": "drying",
-            "title": "Suszenie",
+            "title": "Drying",
             "text": "The $(thing)Drying Mat$() is used to dry items. It is made with $(thing)Fruit Leaves$(), which are obtained from breaking the leaves of $(thing)Fruit Trees$(). To use the drying mat, place it out in the sun and add an item to it with $(item)$(k:key.use)$(). If it rains, the drying process must start over. Some food items―Like fruits―Will gain the $(7)$(bold)Dried$() trait which gives a modifier of 0.8."
         },
         {
@@ -257,7 +257,7 @@
         {
             "type": "patchouli:text",
             "anchor": "oven_baked",
-            "title": "Pieczone w piecu",
+            "title": "Oven Baked",
             "text": "Baking food items in a $(l:cooking/cooking_methods#top_oven)Top Oven$() is the second-best way to preserve your food items through cooking as it gives the $(7)$(bold)Oven Baked$() trait with a modifier of 0.9."
         },
         {
@@ -470,7 +470,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Czytaj dalej",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:cooking/food_and_water",

@@ -22,7 +22,7 @@
             "images": [
                 "tfg:textures/gui/field_guide/maps/terrain_map.png"
             ],
-            "text": "A 65.5km² map displaying average continental formations and mainstream rivers with their tributaries.",
+            "text": "Mapa o powierzchni 65,5 km² przedstawiająca typowe ukształtowanie kontynentu oraz główne rzeki wraz z ich dopływami.",
             "border": true
         },
         {
@@ -59,7 +59,7 @@
             "type": "patchouli:text",
             "anchor": "metamorphism",
             "text": "$(li)$(thing)Slate$() forms under $(thing)Shale$(), $(thing)Claystone$(), and $(thing)Conglomerate$().$(li)$(thing)Marble$() forms under $(thing)Limestone$(), $(thing)Dolomite$(), and $(thing)Chalk$().$(li)$(thing)Quartzite$() forms under $(thing)Chert$().$(li)$(thing)Phyllite$() forms under $(thing)Slate$()$(li)$(thing)Schist$() and $(thing)Gneiss$() form under $(thing)Phyllite$(), or other igneous intrusive rocks.",
-            "title": "Metamorphism"
+            "title": "Metamorfizm"
         },
         {
             "type": "patchouli:text",
@@ -76,11 +76,11 @@
         {
             "type": "patchouli:text",
             "anchor": "rock_devisions",
-            "title": "Rock Devisions",
-            "text": "Rocks in $(tfg_short) are typically classified among four devisions: $(l:the_world/geology#sedimentary)Sedimentary$(), $(l:the_world/geology#metamorphic)Metamorphic$(), $(l:the_world/geology#igneous_extrusive)Igneous Extrusive$(), and $(l:the_world/geology#igneous_intrusive)Igneous Intrusive$(). These categories determine where the rock can spawn, and also what ores may spawn in this rock."
+            "title": "Podział skał",
+            "text": "Skały w $(tfg_short) są zwykle dzielone na cztery grupy: $(l:the_world/geology#sedimentary)osadowe$(), $(l:the_world/geology#metamorphic)metamorficzne$(), $(l:the_world/geology#igneous_extrusive)magmowe wylewne$() i $(l:the_world/geology#igneous_intrusive)magmowe głębinowe$(). Grupy te określają, gdzie dana skała może występować, a także jakie rudy mogą się w niej pojawiać."
         },
         {
-            "title": "Skała osadowa",
+            "title": "Sedimentary",
             "type": "patchouli:spotlight",
             "item": {
                 "tag": "tfg:raw_stone/sedimentary"
@@ -89,7 +89,7 @@
             "text": "$(l:https://en.wikipedia.org/wiki/Sedimentary_rock)Sedimentary$() rocks are formed by the accumulation or deposition of mineral or organic particles. They are typically found on the top layers of rock in continental areas."
         },
         {
-            "title": "Skała metamorficzna",
+            "title": "Metamorphic",
             "type": "patchouli:spotlight",
             "item": {
                 "tag": "tfg:raw_stone/metamorphic"
@@ -98,7 +98,7 @@
             "text": "$(l:https://en.wikipedia.org/wiki/Metamorphic_rock)Metamorphic$() rocks are created by a process called metamorphism. They can be found underneath corresponding sedimentary or igneous rock, or in uplift areas."
         },
         {
-            "title": "Skała magmowa wylewna",
+            "title": "Igneous Extrusive",
             "type": "patchouli:spotlight",
             "item": {
                 "tag": "tfg:raw_stone/igneous_extrusive"
@@ -107,7 +107,7 @@
             "text": "$(l:https://en.wikipedia.org/wiki/Igneous_rock#Extrusive)Igneous Extrusive$() rocks are formed from magma cooling on the Earth's surface. They can be found on the top layer of rock in continental areas, or on the floor of oceans."
         },
         {
-            "title": "Skała magmowa głębinowa",
+            "title": "Igneous Intrusive",
             "type": "patchouli:spotlight",
             "item": {
                 "tag": "tfg:raw_stone/igneous_intrusive"
@@ -119,7 +119,7 @@
             "type": "patchouli:text",
             "anchor": "rock_classifiers",
             "text": "On top of $(l:the_world/geology#rock_devisions)Rock Devisions$(), rocks are further categorized by their chemical compositions.",
-            "title": "Rock Classifiers"
+            "title": "Klasyfikacja skał"
         },
         {
             "title": "Osadowe węglanowe",
@@ -186,7 +186,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Czytaj dalej",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:the_world/climate",

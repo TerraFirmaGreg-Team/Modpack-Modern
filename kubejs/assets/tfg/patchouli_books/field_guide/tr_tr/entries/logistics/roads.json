@@ -12,7 +12,7 @@
         {
             "type": "patchouli:text",
             "anchor": "intro",
-            "title": "Giriş",
+            "title": "Introduction",
             "text": "Road construction is vital for increasing land-transport efficiency and consists of three basic steps:$(li)$(bold)1:$() Tamping the native soil with a $(l:logistics/roads#mattock)Mattock$().$(li)$(bold)2:$() Laying down $(l:logistics/roads#base_course)Crushed Base Course$().$(li)$(bold)3:$() Laying the surface $(l:logistics/roads#pavers)Paving Material$().$(br)Different varieties of road use different ingredients."
         },
         {
@@ -248,7 +248,7 @@
         },
         {
             "type": "patchouli:image",
-            "title": "Beton Yol",
+            "title": "Concrete Road",
             "images": [
                 "rnr:textures/gui/book/concrete_road.png"
             ],
@@ -507,7 +507,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Ek Okuma",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:craftsmanship/building_materials",
@@ -515,7 +515,9 @@
                 "tfg:the_world/geology",
                 "tfg:the_world/wild_animals",
                 "tfg:agriculture/animal_husbandry",
-                "tfg:logistics/tack"
+                "tfg:logistics/tack",
+                "tfg:logistics/trains",
+                "tfg:logistics/boats"
             ]
         }
     ],

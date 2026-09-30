@@ -5,7 +5,7 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "title": "第一天",
+            "title": "Introduction",
             "anchor": "intro",
             "text": "If you are tired of drinking directly out of streams and ponds like a wild horse then consider making a $(item)Drinking Vessel!$()$(br2)Every time you drink from a vessel you will consume $(thing)100mB$() of fluid and damage the vessel 1 durability (if applicable) or has a chance of breaking (if applicable, can be changed in TFC server config)."
         },
@@ -18,7 +18,7 @@
             "anchor": "table",
             "strings": [
                 {
-                    "text": "小缸",
+                    "text": "Vessel",
                     "bold": true
                 },
                 {
@@ -30,7 +30,7 @@
                     "bold": true
                 },
                 {
-                    "text": "陶壶"
+                    "text": "Ceramic Jug"
                 },
                 {
                     "text": "100"
@@ -39,7 +39,7 @@
                     "text": "2%"
                 },
                 {
-                    "text": "高脚杯"
+                    "text": "Wine Glass"
                 },
                 {
                     "text": "100"
@@ -48,7 +48,7 @@
                     "text": "2%"
                 },
                 {
-                    "text": "皮革水壶"
+                    "text": "Leather Flask"
                 },
                 {
                     "text": "500"
@@ -57,7 +57,7 @@
                     "text": "100"
                 },
                 {
-                    "text": "铁水壶"
+                    "text": "Iron Flask"
                 },
                 {
                     "text": "2000"
@@ -66,7 +66,7 @@
                     "text": "400"
                 },
                 {
-                    "text": "红钢水壶"
+                    "text": "Red Steel Flask"
                 },
                 {
                     "text": "2000"
@@ -156,13 +156,13 @@
         {
             "type": "patchouli:crafting",
             "anchor": "juicer",
-            "title": "榨汁器",
+            "title": "Juicer",
             "recipe": "beneath:crafting/juicer",
             "text": "The $(item)Juicer$() is a special item that can extract the water contained in $(thing)Fruits$(), $(thing)Mushrooms$(), and $(thing)Cacti$() into drinkable water."
         },
         {
             "type": "patchouli:relations",
-            "title": "延伸阅读",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:cooking/drinks",

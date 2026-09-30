@@ -1,5 +1,5 @@
 {
-	"name": "Building Tools",
+	"name": "Narzędzia budowlane",
 	"icon": "tfg:trowel",
 	"category": "tfg:craftsmanship",
 	"pages": [
@@ -9,7 +9,7 @@
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Kielnia",
+            "title": "Trowel",
             "item": "tfg:trowel",
             "text": "A $(item)Trowel$() allows a builder to place random blocks from their hotbar when $(item)$(k:key.use)$() a surface.$(br)Trowels also have built-in functionality with the $(item)Roads and Roofs$() mod, meaning that they can place filler items like bricks or flagstones randomly as well.$(br)Inspired by the trowel tool from $(item)Quark$()―A mod by Vazkii."
         },
@@ -17,13 +17,13 @@
             "type": "patchouli:spotlight",
             "anchor": "stonecutter",
             "item": "minecraft:stonecutter",
-            "title": "Customizable Blocks",
+            "title": "Dostosowywalne bloki",
             "text": "$(tfg_short) has a few mods dedicated to adding customizable blocks for very intricate building.$(br2)"
         },
         {
             "type": "patchouli:spotlight",
             "item": "copycats:copycat_block",
-            "title": "Copycats",
+            "title": "Naśladowcy",
             "anchor": "copycats",
             "text": "$(bold)Create: Copycats+$() adds many blocks that can be $(item)$(k:key.use)$() with another block to copy its appearance. They can be made with a $(thing)Stonecutter$().$(br2)You can check out its blocks by searching for $(6)@copycats$() in $(emi)."
         },
@@ -42,14 +42,14 @@
         {
             "type": "patchouli:spotlight",
             "item": "constructionwand:stone_wand,constructionwand:iron_wand,constructionwand:diamond_wand,constructionwand:infinity_wand",
-            "title": "Różdżki konstrukcyjne",
+            "title": "Construction Wands",
             "anchor": "wands",
             "text": "Construction Wands are an easy way to place many blocks at the same time. Simply right-click a block while holding the wand and it will place more of that block all at once, making it great for floors, walls, and so on.$(br2)Press $(item)U$() on the construction wand to bring up a page detailing its instructions."
         },
         {
             "type": "patchouli:spotlight",
             "item": "constructionwand:core_destruction,constructionwand:core_angel",
-            "title": "Wand Upgrades",
+            "title": "Ulepszenia różdżek",
             "text": "There are also some wand upgrades to provide even more functionality.$(br2)Wands have durability but can be repaired with $(item)Repair Kits$()."
         },
         {
@@ -61,7 +61,7 @@
         {
             "type": "patchouli:spotlight",
             "item": "gtceu:terminal,gtceuterminal:schematic_interface,gtceuterminal:dismantler",
-            "title": "GregTech Terminals",
+            "title": "Terminale GregTech",
             "anchor": "terminals",
             "text": "The $(item)Terminal$() will automatically build a $(thing)GregTech multiblock$() using items from your inventory.$(br2)The $(item)Schematic Interface$() lets you copy and paste $(thing)multiblocks$(), while the $(item)Dismantler$() lets you disassemble them entirely in one click."
         },
@@ -69,18 +69,18 @@
             "type": "patchouli:spotlight",
             "item": "buildinggadgets2:gadget_building,buildinggadgets2:gadget_exchanging,buildinggadgets2:gadget_copy_paste,buildinggadgets2:gadget_cut_paste,buildinggadgets2:gadget_destruction",
             "anchor": "gadgets",
-            "title": "Gadżety do budowania",
+            "title": "Building Gadgets",
             "text": "Unlocked in $(5)EV$(), $(bold)Building Gadgets$() are powerful tools that let you cut, copy, paste, and otherwise do large operations for building."
         },
         {
             "type": "patchouli:crafting",
             "recipe": "buildinggadgets2:shapeless/guide_book",
-            "title": "Another Book",
-            "text": "Building Gadgets has its own $(thing)guide book$(). You can craft one like this."
+            "title": "Kolejna książka",
+            "text": "Building Gadgets ma swój własny $(thing)poradnik$(). Możesz ją stworzyć w ten sposób."
         },
         {
             "type": "patchouli:relations",
-            "title": "Czytaj dalej",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:craftsmanship/anvils",

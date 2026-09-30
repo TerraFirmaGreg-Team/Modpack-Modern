@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "index",
-			"text": "$(li)$(bold)$(l:logistics/trains#tracks)Tracks and Train Stations$()$(li2)$(l:logistics/trains#station)Creating your first train$()$(li2)$(l:logistics/trains#handcar)The Handcar$()$(li)$(bold)$(l:logistics/trains#cargo)Train Cargo$()$(li2)$(l:logistics/trains#loading)Loading & Unloading$()$(li2)$(l:logistics/trains#detecting)Detecting Cargo$()$(li)$(bold)$(l:logistics/trains#conductors)Conductors$()$(li2)$(l:logistics/trains#schedule)Automated Deliveries$()$(li2)$(l:logistics/trains#whistle)Conductor Whistle$()$(li2)$(l:logistics/trains#remote_lens)Remote Lens$()"
+			"text": "$(li)$(bold)$(l:logistics/trains#tracks)Tracks and Stations$()$(li2)$(l:logistics/trains#station)Creating your first train$()$(li2)$(l:logistics/trains#handcar)The Handcar$()$(li)$(bold)$(l:logistics/trains#cargo)Train Cargo$()$(li2)$(l:logistics/trains#loading)Loading & Unloading$()$(li2)$(l:logistics/trains#detecting)Detecting Cargo$()$(li)$(bold)$(l:logistics/trains#conductors)Conductors$()$(li2)$(l:logistics/trains#schedule)Automated Deliveries$()$(li2)$(l:logistics/trains#whistle)Conductor Whistle$()$(li2)$(l:logistics/trains#remote_lens)Remote Lens$()"
 		},
 		{
 			"type": "patchouli:text",
@@ -143,7 +143,7 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Koltuklar",
+			"title": "Seats",
 			"anchor": "seat",
 			"item": "tag:create:seats",
 			"text": "$(item)Seats$() allow you to sit down while operating your train.$(br2)To prevent flying off the train while it's in motion, place a $(item)Seat$() on your $(thing)Train$() and remember to secure it with $(item)Superglue$()."
@@ -208,13 +208,15 @@
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Ek Okuma",
+			"title": "Further Reading",
 			"anchor": "relations",
 			"entries": [
 				"tfg:logistics/tack",
 				"tfg:logistics/roads",
 				"tfg:logistics/boats",
-				"tfg:logistics/exploration_gear"
+				"tfg:logistics/exploration_gear",
+				"tfg:logistics/create",
+				"tfg:the_world/earth_tree_index"
 			]
 		}
 	]

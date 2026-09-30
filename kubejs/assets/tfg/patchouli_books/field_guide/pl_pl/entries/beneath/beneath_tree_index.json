@@ -12,7 +12,7 @@
 			"title": "Araukaria",
 			"anchor": "araucaria",
 			"item": "tag:tfg:araucaria_logs",
-			"text": "$(bold)Araucaria$()$(br)Found only in the $(thing)Webbed Lair$() biome.$(br)$(thing)Growth Days$(): 5"
+			"text": "$(bold)Araukaria$()$(br)Występuje wyłącznie w $(thing)leżu pająków$().$(br)$(thing)Czas wzrostu$(): 5 dni"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -44,7 +44,7 @@
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Czytaj dalej",
+			"title": "Further Reading",
 			"anchor": "relations",
 			"entries": [
 				"tfg:the_world/earth_tree_index",

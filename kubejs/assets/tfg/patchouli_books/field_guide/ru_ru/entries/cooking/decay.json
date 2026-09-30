@@ -45,58 +45,58 @@
                     "bold": true
                 },
                 {
-                    "text": "Запечённый в печи"
+                    "text": "Oven Baked"
                 },
                 {
                     "text": "0.900"
                 },
                 {
-                    "text": "Жаренный на брёвнах"
+                    "text": "Wood Grilled"
                 },
                 {
                     "text": "0.800"
                 },
                 {
-                    "text": "Копчёный"
+                    "text": "Smoked"
                 },
                 {
                     "text": "0.500"
                 },
                 {
-                    "text": "Солёный"
+                    "text": "Salted"
                 },
                 {
                     "text": "0.500"
                 },
                 {
-                    "text": "Маринованный"
+                    "text": "Pickled"
                 },
                 {
                     "text": "0.500"
                 },
                 {
-                    "text": "Консервированный"
+                    "text": "Preserved"
                 },
                 {
                     "text": "0.500"
                 },
                 {
-                    "text": "Дикорастущий"
+                    "text": "Wild"
                 },
                 {
                     "text": "0.500"
                 },
                 {
-                    "text": "Сушёный"
+                    "text": "Dried"
                 },
                 {
                     "text": "0.500"
                 },
                 {
-                    "text": "Охлаждённый"
+                    "text": "Cooled"
                 },
                 {
-                    "text": "0.500"
+                    "text": "0.300"
                 },
                 {
                     "text": "Shelved"
@@ -117,7 +117,7 @@
                     "text": "0.125"
                 },
                 {
-                    "text": "Консервированный в уксусе"
+                    "text": "Preserved in Vinegar"
                 },
                 {
                     "text": "0.100"
@@ -184,7 +184,7 @@
         {
             "type": "patchouli:text",
             "anchor": "smoking",
-            "title": "Копчение",
+            "title": "Smoking",
             "text": "Smoking is used to preserve $(thing)Meat$() and $(l:cooking/cheese)Cheese$() with a modifier of 0.7. To smoke meat, it must have first been $(thing)Brined$() by sealing it in a $(thing)Barrel$() with $(thing)Brine$(). Cheese does not have this requirement.$(br)To start smoking, add an item to wool yarn that is within four blocks above a firepit. The string should begin to generate some smoke if it is working.$(br)Note: The firepit may only be burned with $(thing)Logs$()!"
         },
         {
@@ -247,7 +247,7 @@
         {
             "type": "patchouli:text",
             "anchor": "drying",
-            "title": "Сушка",
+            "title": "Drying",
             "text": "The $(thing)Drying Mat$() is used to dry items. It is made with $(thing)Fruit Leaves$(), which are obtained from breaking the leaves of $(thing)Fruit Trees$(). To use the drying mat, place it out in the sun and add an item to it with $(item)$(k:key.use)$(). If it rains, the drying process must start over. Some food items―Like fruits―Will gain the $(7)$(bold)Dried$() trait which gives a modifier of 0.8."
         },
         {
@@ -257,7 +257,7 @@
         {
             "type": "patchouli:text",
             "anchor": "oven_baked",
-            "title": "Запечённый в печи",
+            "title": "Oven Baked",
             "text": "Baking food items in a $(l:cooking/cooking_methods#top_oven)Top Oven$() is the second-best way to preserve your food items through cooking as it gives the $(7)$(bold)Oven Baked$() trait with a modifier of 0.9."
         },
         {
@@ -470,7 +470,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Читать дальше",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:cooking/food_and_water",

@@ -1,12 +1,12 @@
 {
-    "name": "Forge & Bellows",
+    "name": "Горн і міхи",
     "category": "tfg:craftsmanship",
     "icon": "tfc:textures/block/molten_lit.png",
     "pages": [
         {
             "type": "patchouli:text",
             "anchor": "charcoal_forge",
-            "text": "The $(thing)Charcoal Forge$() is a device used to $(l:game_mechanics/heating)heat$() and melt items like metals, pottery, and bricks.$(br)Forges are necessary to make a $(l:craftsmanship/crucible)Crucible$() work.$(br)It is constructed with 5 $(thing)stone$() blocks―like cobblestone, raw stone, or bricks―surrounding a $(l:craftsmanship/charcoal_pit#charcoal_pile)Charcoal Pile$() of 7 or 8 layers which is then lit."
+            "text": "$(thing)Вугільний горн$() — це пристрій, який використовується для $(l:game_mechanics/heating)нагрівання$() та плавлення таких предметів, як метали, кераміка й цегла.$(br)Горн необхідний для роботи $(l:craftsmanship/crucible)тигля$().$(br)Він створюється з 5 блоків $(thing)каменю$() — наприклад, кругляку, необробленого каменю або цегли — що оточують $(l:craftsmanship/charcoal_pit#charcoal_pile)купу деревного вугілля$() заввишки 7 або 8 шарів, яку потім потрібно підпалити."
         },
         {
             "type": "patchouli:multiblock",
@@ -31,12 +31,12 @@
                 }
             },
             "name": "Ковальське горно",
-            "text": "A complete forge structure, ready to be lit.",
+            "text": "Повністю готова конструкція горна, яку можна підпалити.",
             "enable_visualize": false
         },
         {
             "type": "patchouli:text",
-            "text": "A Forge needs a chimney in order to work. The block directly above the Forge must be air, or a $(l:craftsmanship/crucible)Crucible$(). In addition, either the block directly above, or one of eight nearby blocks $(italic)must be able to see the sky!$()$(br2)A $(l:craftsmanship/charcoal_forge#bellows)Bellows$() can be placed one-block-up and adjacent-to the Forge, in order to increase the maximum temperature it can reach. But isn't strictly required."
+            "text": "Для роботи горну потрібен димар. Блок безпосередньо над горном має бути повітрям або $(l:craftsmanship/crucible)тиглем$(). Крім того, або блок безпосередньо над горном, або один із восьми сусідніх блоків $(italic)має бачити небо!$()$(br2)$(l:craftsmanship/charcoal_forge#bellows)Міхи$() можна встановити на один блок вище та поруч із горном, щоб підвищити максимальну температуру, якої він може досягти. Але це не є обов’язковим."
         },
         {
             "type": "patchouli:multiblock",
@@ -66,8 +66,8 @@
                     "B": "tfc:bellows[facing=west]"
                 }
             },
-            "name": "Chimney Diagram",
-            "text": "Any one of the blue stained-glass must have direct sky access and access to the forge to count as a valid chimney.",
+            "name": "Схема димаря",
+            "text": "Будь-який із синіх блоків скла має мати прямий доступ до неба та доступ до горна, щоб вважатися дійсним димарем.",
             "enable_visualize": false
         },
         {
@@ -75,32 +75,32 @@
             "images": [
                 "tfc:textures/gui/book/gui/charcoal_forge.png"
             ],
-            "title": "The Forge's Interface.",
-            "text": "$(bold)TIP:$() You can directly throw fuel like charcoal on top of the forge with $(item)$(k:key.drop)$() to re-fuel it.",
+            "title": "Інтерфейс горна.",
+            "text": "$(bold)ПОРАДА:$() Ти можеш безпосередньо кидати паливо, як-от деревне вугілля, на горн за допомогою $(item)$(k:key.drop)$(), щоб знову заправити його.",
             "border": false
         },
         {
             "type": "patchouli:text",
-            "text": "The five slots at the bottom of the forge are used for fuel. While the forge is running, it periodically consumes $(t:#tfc:forge_fuels)$(6)fuel$(), which can be $(thing)Charcoal, Coal, Coke, or Peat Briquettes$(). The top five slots will heat items, up to the temperature shown in the indicator on the left. The right side slots are for containers that can contain liquid metal, like $(l:craftsmanship/pottery#vessel)Vessels$() and $(l:craftsmanship/pottery#mold)Molds$(). Items that melt in the forge will fill those containers. Otherwise, the molten fluid will be $(bold)voided$()."
+            "text": "П’ять слотів унизу горна використовуються для палива. Поки горн працює, він періодично витрачає $(t:#tfc:forge_fuels)$(6)паливо$(), яким можуть бути $(thing)деревне вугілля, вугілля, кокс або торф’яні брикети$(). П’ять верхніх слотів нагріватимуть предмети до температури, зазначеної на індикаторі ліворуч. Слоти праворуч призначені для ємностей, у яких можна зберігати рідкий метал, як-от $(l:craftsmanship/pottery#vessel)глечики$() та $(l:craftsmanship/pottery#mold)форми$(). Предмети, які плавляться в горні, заповнюватимуть ці ємності. В іншому разі розплавлена рідина буде $(bold)втрачена$()."
         },
         {
             "type": "patchouli:spotlight",
             "item": "tfc:bellows",
-            "title": "Міхи",
+            "title": "Bellows",
             "anchor": "bellows",
-            "text": "$(thing)Bellows$() can be used to increase the temperature of a device by improving the supply of oxygen. However, by burning at a hotter temperature they will also consume fuel faster. The bellows can provide air to a block directly in front of it and one block below that. This allows it to provide air to a $(l:craftsmanship/blast_furnace)Blast Furnace$(), or a $(l:craftsmanship/charcoal_forge#charcoal_forge)Charcoal Forge$() for example."
+            "text": "$(thing)Міхи$() можна використовувати для підвищення температури пристрою завдяки кращому подачі кисню. Однак через горіння за вищої температури вони також швидше витрачатимуть паливо. Міхи можуть подавати повітря в блок безпосередньо перед ними та в блок на один рівень нижче. Це, наприклад, дає змогу подавати повітря в $(l:craftsmanship/blast_furnace)доменну піч$() або $(l:craftsmanship/charcoal_forge#charcoal_forge)вугільний горн$()."
         },
         {
             "type": "patchouli:text",
-            "text": "To use the bellows, simply place it facing the targeted heating device, and $(item)$(k:key.use)$() it. The bellows will pump air into the device, raising the maximum temperature for a short time. Bellows may be automated by supplying <16RPM of $(thing)mechanical rotation$() to the back using a $(item)Shaft$() for example. This will disable manual usage. Consider using a $(item)Clutch$() to enable/disable mechanical power."
+            "text": "Щоб використовувати міхи, просто встанови їх так, щоб вони були спрямовані на потрібний нагрівальний пристрій, і натисни $(item)$(k:key.use)$. Міхи подаватимуть повітря в пристрій, на короткий час підвищуючи максимальну температуру. Міхи можна автоматизувати, подаючи на їхню задню частину менш як 16 об/хв $(thing)механічного обертання$(), наприклад, за допомогою $(item)вала$(). Це вимкне ручне використання. Розглянь можливість використання $(item)муфти$() для ввімкнення або вимкнення механічної передачі."
         },
         {
             "type": "patchouli:text",
-            "text": "A puff from a bellows will supply air to a device for 200 ticks. However, most devices allow you to buffer up to 600 ticks of oxygenation at a time.$(br2)Devices will have their fuel consumption doubled no matter the duration of air left, so there is no additional penalty for using the bellows too much."
+            "text": "Один помах міхів подаватиме повітря до пристрою протягом 200 таків. Однак більшість пристроїв дають змогу накопичити до 600 таків насичення киснем одночасно.$(br2)Витрата палива пристроями подвоюється незалежно від того, скільки часу подачі повітря залишилося, тож надмірне використання міхів не створює додаткових втрат."
         },
         {
             "type": "patchouli:relations",
-            "title": "Додаткове читання",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:agriculture/leather_making",

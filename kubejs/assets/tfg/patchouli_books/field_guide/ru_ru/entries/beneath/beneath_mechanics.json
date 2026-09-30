@@ -27,7 +27,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "clothes",
-			"title": "Одежда",
+			"title": "Clothing",
 			"text": "$(item)Burlap$(), $(item)Linen$(), and $(item)Silk$() clothing will help provide a little heat resistance.$(br)$(item)Crocodile$(), $(item)Tiger$(), and $(item)Lion$() clothing provide a stronger cooling effect.$(br)Lastly, $(item)Phantom$() and $(item)Red Elk$() clothes are the strongest cooling clothes, and last a long time too.$(br2)All clothing can be repaired. Press $(thing)U$() to check the repair recipes in $(emi)."
 		},
 		{
@@ -78,7 +78,7 @@
 					"X": "beneath:hellbricks"
 				}
 			},
-			"name": "Адская кузня",
+			"name": "Hellforge",
 			"text": "Any type of $(l:agriculture/aqueducts)Aqueduct$() will work.",
 			"enable_visualize": false
 		},
@@ -99,7 +99,7 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Обмен с пиглинами",
+			"title": "Piglin Bartering",
 			"anchor": "piglins",
 			"item": "minecraft:gold_ingot",
 			"text": "Like you'd expect, you can trade with $(thing)Piglins$() in the same way you trade with them in vanilla, with $(item)Gold Ingots$().$(br2)A full list of trades can be found in $(emi) - simply press $(thing)U$() on a Gold Ingot to see it."
@@ -107,7 +107,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"item": "tfg:piglin_disguise",
-			"title": "Маскировка Пиглина",
+			"title": "Piglin Disguise",
 			"anchor": "disguise",
 			"text": "Если хотите облегчить обмен или просто мило поболтать,просто наденьте $(thing)Маскировку пиглина$(), тогда $(thing)Пиглины$() не будут к вам враждебны при первой встрече. Но будьте осторожны! Их терпение не безгранично..."
 		},
@@ -125,7 +125,7 @@
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Читать дальше",
+			"title": "Further Reading",
 			"anchor": "relations",
 			"entries": [
 				"tfg:beneath/beneath",

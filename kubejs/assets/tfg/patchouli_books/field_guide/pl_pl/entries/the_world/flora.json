@@ -36,9 +36,9 @@
                     "X": "tfc:plant/anthurium"
                 }
             },
-            "name": "Standardowy",
+            "name": "Zwykłe rośliny",
             "anchor": "standard_plants",
-            "text": "Standard plants are like small flowers. They grow on grass, dirt, and farmland.",
+            "text": "Zwykłe rośliny są jak małe kwiaty. Rosną na trawie i polach uprawnych.",
             "enable_visualize": false
         },
         {
@@ -100,7 +100,7 @@
                 }
             },
             "name": "Pnącza",
-            "text": "Creeping plants take the shape of the surrounding block faces. They mostly spawn in blobs on the ground",
+            "text": "Rośliny płożące się porastają powierzchnie sąsiednich bloków, dopasowując się do ich kształtu. Najczęściej tworzą nieregularne skupiska na ziemi.",
             "enable_visualize": false
         },
         {
@@ -203,8 +203,8 @@
                     "Y": "tfc:plant/liana"
                 }
             },
-            "name": "Lamentorośle",
-            "text": "Lamentorośle rosną w dół od bloku, do którego są zaczepione.",
+            "name": "Pnącza zwisające",
+            "text": "Pnącza zwisające rosną w dół od bloku, do którego są zaczepione.",
             "enable_visualize": false
         },
         {
@@ -226,8 +226,8 @@
                     "Y": "tfc:plant/arundo_plant"
                 }
             },
-            "name": "Krętorośle",
-            "text": "Twisting vines twist upward from the Earth. They can come in a solid variant.",
+            "name": "Pnącza wijące się",
+            "text": "Pnącza wijące się wyrastają z ziemi ku górze. Mogą również występować w zwartej odmianie.",
             "enable_visualize": false
         },
         {
@@ -340,7 +340,7 @@
                 }
             },
             "name": "Wodorosty",
-            "text": "Wodorosty to krętorośle rosnące pod wodą.",
+            "text": "Wodorosty to wijące się pnącza rosnące pod wodą.",
             "enable_visualize": false
         },
         {
@@ -363,7 +363,7 @@
                 }
             },
             "name": "Wielkomorszcz",
-            "text": "Tree kelp grow into intricate trees underwater. The flowers can be harvested with a $(thing)Knife$().",
+            "text": "Wielkomorszcz tworzy pod wodą rozgałęzione struktury przypominające drzewa. Jego kwiaty można zbierać za pomocą $(thing)noża$().",
             "enable_visualize": false
         },
         {
@@ -400,7 +400,7 @@
                     "bold": true
                 },
                 {
-                    "text": "Bazylia"
+                    "text": "Basil"
                 },
                 {
                     "text": "12 - 25"
@@ -409,7 +409,7 @@
                     "text": "300 - 500"
                 },
                 {
-                    "text": "Wawrzyn szlachetny"
+                    "text": "Bay Laurel"
                 },
                 {
                     "text": "8 - 14"
@@ -418,7 +418,7 @@
                     "text": "25 - 225"
                 },
                 {
-                    "text": "Kardamon"
+                    "text": "Cardamom"
                 },
                 {
                     "text": "18 - 30"
@@ -427,7 +427,7 @@
                     "text": "350 - 500"
                 },
                 {
-                    "text": "Kolendra"
+                    "text": "Cilantro"
                 },
                 {
                     "text": "5 - 15"
@@ -436,7 +436,7 @@
                     "text": "0 - 150"
                 },
                 {
-                    "text": "Kmin rzymski"
+                    "text": "Cumin"
                 },
                 {
                     "text": "6 - 20"
@@ -454,7 +454,7 @@
                     "text": "50 - 150"
                 },
                 {
-                    "text": "Ziele angielskie"
+                    "text": "Pimento"
                 },
                 {
                     "text": "15 - 30"
@@ -463,7 +463,7 @@
                     "text": "200 - 450"
                 },
                 {
-                    "text": "Wanilia"
+                    "text": "Vanilla"
                 },
                 {
                     "text": "18 - 30"
@@ -502,7 +502,7 @@
                     "X": "firmalife:plant/basil[stage=1]"
                 }
             },
-            "name": "Bazylia",
+            "name": "Basil",
             "anchor": "basil",
             "text": "$(thing)Dzika bazylia$() rośnie w temp. od 12 do 25 C oraz przy opadach między 300 do 500 mm.",
             "enable_visualize": false
@@ -522,7 +522,7 @@
                     "X": "firmalife:plant/bay_laurel[stage=1]"
                 }
             },
-            "name": "Wawrzyn szlachetny",
+            "name": "Bay Laurel",
             "anchor": "bay",
             "text": "$(thing)Dziki wawrzyn szlachetny$() rośnie w temp. od 8 do 14 C oraz przy opadach między 25 do 225mm.",
             "enable_visualize": false
@@ -542,7 +542,7 @@
                     "X": "firmalife:plant/cardamom[stage=1]"
                 }
             },
-            "name": "Kardamon",
+            "name": "Cardamom",
             "anchor": "cardamom",
             "text": "$(thing)Dziki kardamon$() rośnie w temp. od 18 do 30 C oraz przy opadach między 350 do 500mm.",
             "enable_visualize": false
@@ -562,7 +562,7 @@
                     "X": "firmalife:plant/cilantro[stage=1]"
                 }
             },
-            "name": "Kolendra",
+            "name": "Cilantro",
             "anchor": "cilantro",
             "text": "$(thing)Dzika Kolendra$() rośnie w temp. od 5 do 15 C oraz przy opadach między 0 do 150mm.",
             "enable_visualize": false
@@ -582,7 +582,7 @@
                     "X": "firmalife:plant/cumin[stage=1]"
                 }
             },
-            "name": "Kmin rzymski",
+            "name": "Cumin",
             "anchor": "cumin",
             "text": "$(thing)Dziki kmin rzymski$() rośnie w temp. od 6 do 20 C oraz przy opadach między 50 do 250mm.",
             "enable_visualize": false
@@ -622,7 +622,7 @@
                     "X": "firmalife:plant/pimento[stage=1]"
                 }
             },
-            "name": "Ziele angielskie",
+            "name": "Pimento",
             "anchor": "pimento",
             "text": "$(thing)Dzikie ziele angielskie$() rośnie w temp. od 15 do 30 C oraz przy opadach między 200 do 450mm.",
             "enable_visualize": false
@@ -642,7 +642,7 @@
                     "X": "firmalife:plant/vanilla[stage=1]"
                 }
             },
-            "name": "Wanilia",
+            "name": "Vanilla",
             "anchor": "vanilla",
             "text": "$(thing)Dzika wanilia$() rośnie w temp. od 18 do 30 C oraz przy opadach między 200 a 500 mm.",
             "enable_visualize": false
@@ -651,7 +651,7 @@
             "type": "patchouli:crafting",
             "anchor": "seed_ball",
             "recipe": "firmalife:crafting/seed_ball",
-            "text": "$(item)Kule nasienne() mogą być używane do sadzenia różnego rodzaju traw. Może to być przydatne po wyczyszczeniu obszaru pod zbudowanie bazy. Przepis na kulę nasienną wymaga $(item)Kompostu$() i 4 $(thing)Nasion$()."
+            "text": "$(item)Kule nasienne$() służą do sadzenia różnych rodzajów trawy. Może się to przydać po oczyszczeniu terenu pod budowę bazy. Do wykonania kuli nasiennej potrzeba $(item)kompostu$() i 4 $(thing)nasion$()."
         },
         {
             "type": "patchouli:multiblock",
@@ -668,7 +668,7 @@
                     "X": "firmalife:plant/butterfly_grass"
                 }
             },
-            "name": "Irys afrykański",
+            "name": "Butterfly Grass",
             "anchor": "butterfly_grass",
             "text": "Irys afrykański.",
             "enable_visualize": false
@@ -679,7 +679,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Czytaj dalej",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:the_world/wild_fruits",

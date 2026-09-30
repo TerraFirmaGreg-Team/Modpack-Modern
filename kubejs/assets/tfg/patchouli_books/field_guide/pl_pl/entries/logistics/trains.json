@@ -1,5 +1,5 @@
 {
-	"name": "Pociągi",
+	"name": "Trains",
 	"category": "tfg:logistics",
 	"icon": "minecraft:rail",
 	"read_by_default": true,
@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "index",
-			"text": "$(li)$(bold)$(l:logistics/trains#tracks)Tracks and Train Stations$()$(li2)$(l:logistics/trains#station)Creating your first train$()$(li2)$(l:logistics/trains#handcar)The Handcar$()$(li)$(bold)$(l:logistics/trains#cargo)Train Cargo$()$(li2)$(l:logistics/trains#loading)Loading & Unloading$()$(li2)$(l:logistics/trains#detecting)Detecting Cargo$()$(li)$(bold)$(l:logistics/trains#conductors)Conductors$()$(li2)$(l:logistics/trains#schedule)Automated Deliveries$()$(li2)$(l:logistics/trains#whistle)Conductor Whistle$()$(li2)$(l:logistics/trains#remote_lens)Remote Lens$()"
+			"text": "$(li)$(bold)$(l:logistics/trains#tracks)Tracks and Stations$()$(li2)$(l:logistics/trains#station)Creating your first train$()$(li2)$(l:logistics/trains#handcar)The Handcar$()$(li)$(bold)$(l:logistics/trains#cargo)Train Cargo$()$(li2)$(l:logistics/trains#loading)Loading & Unloading$()$(li2)$(l:logistics/trains#detecting)Detecting Cargo$()$(li)$(bold)$(l:logistics/trains#conductors)Conductors$()$(li2)$(l:logistics/trains#schedule)Automated Deliveries$()$(li2)$(l:logistics/trains#whistle)Conductor Whistle$()$(li2)$(l:logistics/trains#remote_lens)Remote Lens$()"
 		},
 		{
 			"type": "patchouli:text",
@@ -20,7 +20,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"item": "tag:create:tracks",
-			"title": "Tory kolejowe",
+			"title": "Train Tracks",
 			"anchor": "tracks",
 			"text": "Laying paths to different locations will allow you to relocate your trains.$(br)Placing a track and $(item)$(k:key.use)$() it with $(item)Tracks$() in your hand allows you to place tracks quickly and create curved shapes.$(br)If you hold blocks (or Girders) in your off-hand, these will automatically be placed below any tracks."
 		},
@@ -59,7 +59,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"item": "create:portable_fluid_interface,create:portable_storage_interface,createaddition:portable_energy_interface",
-			"title": "Loading and Unloading",
+			"title": "Załadunek i rozładunek",
 			"anchor": "loading",
 			"text": "$(item)Portable interfaces$() allow you to move items between your trains and your storage. Placing a $(item)Portable Interface$() on the train and connecting it to a vault, fluid tank, or accumulator will allow you to move items, fluids, and energy on and off your train! The interfaces require a $(thing)two block gap$() between each other to work."
 		},
@@ -79,7 +79,7 @@
 			"text": "Once a train with the filtered cargo passes over the $(item)Train Observer$(), a redstone signal will be sent from the block!$(br2)$(bold)Tip:$() You can use filters to filter multiple items or fluids at once!"
 		},
 		{
-			"title": "Conductors",
+			"title": "Konduktorzy",
 			"anchor": "conductors",
 			"type": "patchouli:spotlight",
 			"item": "tag:railways:conductor_caps",
@@ -143,7 +143,7 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Siedzenia",
+			"title": "Seats",
 			"anchor": "seat",
 			"item": "tag:create:seats",
 			"text": "$(item)Seats$() allow you to sit down while operating your train.$(br2)To prevent flying off the train while it's in motion, place a $(item)Seat$() on your $(thing)Train$() and remember to secure it with $(item)Superglue$()."
@@ -195,7 +195,7 @@
 			"type": "patchouli:spotlight",
 			"item": "railways:buffer",
 			"anchor": "buffer",
-			"title": "Kozły oporowe",
+			"title": "Track Buffers",
 			"text": "Using $(item)Track Buffers$() can prevent derailing of your $(thing)Trains$()! Placing them on the end of an unfinished track or at the outer-ends of your track will remove the possibility for your $(thing)Train$() to derail."
 		},
 		{
@@ -208,13 +208,15 @@
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Czytaj dalej",
+			"title": "Further Reading",
 			"anchor": "relations",
 			"entries": [
 				"tfg:logistics/tack",
 				"tfg:logistics/roads",
 				"tfg:logistics/boats",
-				"tfg:logistics/exploration_gear"
+				"tfg:logistics/exploration_gear",
+				"tfg:logistics/create",
+				"tfg:the_world/earth_tree_index"
 			]
 		}
 	]

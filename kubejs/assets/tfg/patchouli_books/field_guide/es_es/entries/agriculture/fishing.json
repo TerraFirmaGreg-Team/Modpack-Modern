@@ -38,7 +38,7 @@
         {
             "type": "patchouli:spotlight",
             "anchor": "fishing_net",
-            "title": "Redes de pesca",
+            "title": "Fishing Nets",
             "item": {
                 "tag": "forge:tools/fishing_nets"
             },

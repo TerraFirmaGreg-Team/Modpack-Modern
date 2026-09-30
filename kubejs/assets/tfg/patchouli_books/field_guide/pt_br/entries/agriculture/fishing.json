@@ -46,7 +46,7 @@
         },
         {
             "type": "patchouli:crafting",
-            "title": "Rede de Pesca de Madeira",
+            "title": "Wood Fishing Net",
             "recipe": "tfc:kjs/damage/shaped/fishing_net/wood",
             "text": "A basic $(item)Wood Fishing Net$()."
         },

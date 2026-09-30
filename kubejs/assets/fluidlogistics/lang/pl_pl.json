@@ -134,7 +134,6 @@
 	"fluidlogistics.fluid_material_checklist": "Lista płynów",
 	"fluidlogistics.fluid_pump.direction.forward": "Do przodu",
 	"fluidlogistics.fluid_pump.direction.reverse": "Odwróć",
-	"fluidlogistics.fluid_pump.transfer_direction": "Kierunek transferu",
 	"fluidlogistics.mechanical_fluid_gun.schedule_mode": "Sposób dystrybucji",
 	"fluidlogistics.mechanical_fluid_gun.schedule_mode.forced_round_robin": "Rotacja (wymuszona)",
 	"fluidlogistics.mechanical_fluid_gun.schedule_mode.prefer_first": "Preferuj pierwsze",
@@ -251,7 +250,5 @@
 	"itemGroup.fluidlogistics.fluidlogistics_tab": "Create: Fluid Logistics",
 	"logistically_linked.protected": "Ta sieć logistyczna jest chroniona",
 	"resourcepack.fluidlogistics.cu_again_for_fluidlogistics": "Starsze miedziane tekstury dla moda Fluid Logistics",
-	"fluidlogistics.configuration.advancedLogisticsNetworkEnabled": "System paczek z płynem",
-	"fluidlogistics.configuration.section.fluidlogistics.common.toml": "Konfiguracja pakowacza płynów",
-	"fluidlogistics.configuration.section.fluidlogistics.common.toml.title": "Konfiguracja pakowacza płynów"
+	"fluidlogistics.configuration.advancedLogisticsNetworkEnabled": "System paczek z płynem"
 }

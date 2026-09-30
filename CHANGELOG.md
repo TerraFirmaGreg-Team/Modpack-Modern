@@ -54,6 +54,9 @@ The book is no longer split between entries for random addons, or clustered in s
 - Merged a lot of the "early automation" quest chapter into the "metallurgy age" one, and added lots of links to things that are unlocked at each tier @Pyritie
 - Added some planets to the skybox. If you're using the TFG shaders, you can change the sun and moon to squares via the shader options (change them to "reimagined" style). If you're using TFC Caelum, this will result in duplicates of some planets, so TFC Caelum has been removed from the optional mod list @Pyritie
 - Every block of a Keg can now be pushed and pulled into, instead of only the front bottom left block @ashleney
+- Added a new beneath structure, the piglin outpost (#5029) @Filiipa
+- Added crankbows, cranktraps, magmangos, lavacados, açaí, and oil palms to more piglin chest loot tables @Pyritie
+- Piglins can now swim @Pyritie
 ### Bug fixes
 - Fixed some worldgen crashes (#4905, #4900) @Pyritie
 - Fix to repair scrambled pack order at level data which was affecting a few random world-related things such as not being able to collect glass with a gem saw (#4152) @ariedotme
@@ -69,11 +72,22 @@ The book is no longer split between entries for random addons, or clustered in s
 - Fixed chameleon spraycan opening the GUI of hatches/buses when spraying them (#5006) @Phoenixvine32908
 - Fixed teleporting from the beneath to overworld not breaking hornfels blocks @Pyritie
 - Fixed the pisciculture rotor block having the collision of a slab and not a block @Redeix
+- Fixed piglin towers having structure voids at the bottom (#5029) @Filiipa
 ### Mods
 #### TerraFirmaCraft
 - Has been forked! This shouldn't affect you at all, but it ensures long-term stability for the future development of the modpack. Please read [here](https://www.reddit.com/r/TerraFirmaGreg/comments/1wbv1o3/the_future_of_terrafirmacraft_in_tfg/) for more information.
 - ⚠ **Important note**: in an upcoming version (planned for 0.14), we will be backporting more overworld worldgen changes. As this update introduces plate tectonics, it shifts continents around, which unfortunately means everyone will be getting ugly chunk borders. We suggest exploring your continent before this update if this is something you care about. We will also be dropping support for old worldgen (pre-0.12) if you're still using it.
 - Entities (including items) in midair are no longer slowed by snow (#4656) @Therighthon
+- Fix two rare worldgen-related crashes
+- Fix occasional crash from item drops during async worldgen
+- Fix rotten egg hatching
+- Fix bucket duplicating waterlogged blocks (#4498)
+- Sync pot and crucible when filled via fluid capability
+- Fix off-hand item being used when opening powder keg
+- Fix crash in random animal growth
+- Fix crash when chiseling while dead
+- Fix crash placing tall plants below existing plants (#4765)
+- Fix mobs sinking in salt and spring water
 #### AE2
 - We have moved to a [different fork](https://www.curseforge.com/minecraft/mc-mods/ae2-uelm). Same author as our previous fork, except it's public and actively developed. Now you can see what it has compared to base AE2!
 - Removed Auto Complete Card
