@@ -1,0 +1,56 @@
+{
+	"name": "Clothing",
+	"category": "tfg:craftsmanship",
+	"icon": "tfcambiental:straw_hat",
+	"read_by_default": true,
+	"sortnum": 19,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "$(item)Clothing$() is a type of $(thing)equipment$() that provides effects other than $(l:game_mechanics/damage_types)armor$().$(br2)Most clothes affect your $(l:game_mechanics/player_temperature)player temperature$(), but others can provide additional, useful effects."
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Contents",
+			"anchor": "index",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "",
+			"anchor": "curios",
+			"text": "Clothing can be worn in your normal equipment slots, but it can also be worn in your $(thing)Curios slots$() to wear other equipment at the same time."
+		},
+		{
+			"text": "snorkel and flippers"
+		},
+		{
+			"text": "something about armor trims"
+		},
+		{
+			"text": "what about other wearable curios like goggles? the face mask, and rubber gloves are in the hazards chapter"
+		},
+		{
+			"type": "patchouli:relations",
+			"title": "Further Reading",
+			"anchor": "relations",
+			"entries": [
+				"tfg:agriculture/leather_making",
+				"tfg:agriculture/weaving",
+				"tfg:game_mechanics/player_temperature",
+				"tfg:craftsmanship/sewing_table",
+				"tfg:craftsmanship/glassworking",
+				"tfg:the_world/climate",
+				"tfg:logistics/exploration_gear",
+				"tfg:agriculture/beekeeping",
+				"tfg:agriculture/papermaking"
+			]
+		}
+	],
+	"extra_recipe_mappings": {
+		"tag:curios:clothes_hat": 0,
+		"tag:curios:clothes_torso": 0,
+		"tag:curios:clothes_pants": 0,
+		"tag:curios:clothes_socks": 0
+	}
+}
