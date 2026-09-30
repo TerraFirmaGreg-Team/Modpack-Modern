@@ -118,7 +118,8 @@
         "anchor": "relations",
         "entries": [
             "tfg:cooking/cooking_methods",
-            "tfg:cooking/decay"
+            "tfg:cooking/decay",
+            "tfg:game_mechanics/heating"
         ]
     }
   ],
