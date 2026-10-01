@@ -5,7 +5,7 @@
 	"pages": [
         {
             "type": "patchouli:text",
-            "title": "Index",
+            "title": "Каталог",
             "anchor": "index",
             "text": "$(li)$(bold)$(l:the_world/wild_animals#intro)Introduction$()$(li)$(bold)$(l:the_world/wild_animals#livestock)Livestock$()$(li2)$(l:the_world/wild_animals#pig)Pig$()$(li2)$(l:the_world/wild_animals#cow)Cow$()$(li2)$(l:the_world/wild_animals#goat)Goat$()$(li2)$(l:the_world/wild_animals#yak)Yak$()$(li2)$(l:the_world/wild_animals#alpaca)Alpaca$()$(li2)$(l:the_world/wild_animals#sheep)Sheep$()$(li2)$(l:the_world/wild_animals#musk_ox)Musk Ox$()$(li2)$(l:the_world/wild_animals#chicken)Chicken$()$(li2)$(l:the_world/wild_animals#duck)Duck$()$(li2)$(l:the_world/wild_animals#quail)Quail$()"
         },

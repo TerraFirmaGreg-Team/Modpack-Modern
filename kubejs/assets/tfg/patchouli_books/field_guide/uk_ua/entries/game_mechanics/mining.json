@@ -14,13 +14,13 @@
         {
             "type": "patchouli:text",
             "anchor": "intro",
-            "title": "Introduction",
+            "title": "Вступ",
             "text": "Після того як ти $(l:craftsmanship/metallurgy)знайдеш$() рудну жилу, можеш починати її розробляти, щоб добувати ресурси. Однак під час видобування є деякі відмінності від звичайного Minecraft, про які варто пам’ятати. Зокрема, це $(l:game_mechanics/mining#collapses)обвали$(), $(l:game_mechanics/mining#supports)опори$(), $(l:game_mechanics/hazards)небезпечні матеріали$() та $(l:game_mechanics/mining#processing)переробка$()."
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "tools",
-            "title": "Tools",
+            "title": "Інструменти",
             "item": "tag:tfc:pickaxes,tag:forge:tools/mining_hammers",
             "text": "Перед початком варто підготувати відповідне спорядження. Для видобування руди тобі знадобиться $(thing)кайло$() або $(thing)шахтарський молот$(). Шахтарський молот має перевагу: він за раз руйнує область розміром 3×3 блоки.$(br2)Звичайний $(thing)молот$() також може руйнувати кам’яні блоки, але руда з них не випадає. Однак він усе ще може бути корисним для $(l:craftsmanship/anvils#raw_rock)видобування$() необробленого каменю."
         },
@@ -44,7 +44,7 @@
             "type": "patchouli:spotlight",
             "item": "tag:tfc:support_beams",
             "anchor": "supports",
-            "title": "Support Beams",
+            "title": "Опорні балки",
             "text": "$(thing)Опорні балки$() можна виготовити з колод або каменю.$(br2)Розміщення $(thing)опорної балки$() на блоці створює колону заввишки до трьох блоків. Під нею обов’язково має бути твердий блок, інакше вона впаде.$(br)$(thing)Горизонтальні$() балки можна розміщувати між двома $(thing)вертикальними$() балками, відстань між якими не перевищує п’яти блоків, як показано на схемі вище."
         },
         {
@@ -313,7 +313,7 @@
             "type": "patchouli:text",
             "anchor": "support_tips",
             "text": "Нарешті, важливо знати, що $(l:craftsmanship/chisel)обтесування$() може спричинити обвали так само легко, як і видобування, якщо його виконувати на $(thing)необробленій породі$(), яка може спричинити обвал поблизу.$(br2)Якщо ти все ще маєш проблеми з обвалами, спробуй переглянути цей $(l:https://youtu.be/1KgwEexxGNI)гайд$().",
-            "title": "Tips"
+            "title": "Поради"
         },
         {
             "type": "patchouli:spotlight",
@@ -338,7 +338,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "Докладніше",
             "anchor": "relations",
             "entries": [
                 "tfg:the_world/geology",

@@ -9,9 +9,9 @@
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Trowel",
+            "title": "Кельма",
             "item": "tfg:trowel",
-            "text": "A $(item)Trowel$() allows a builder to place random blocks from their hotbar when $(item)$(k:key.use)$() a surface.$(br)Trowels also have built-in functionality with the $(item)Roads and Roofs$() mod, meaning that they can place filler items like bricks or flagstones randomly as well.$(br)Inspired by the trowel tool from $(item)Quark$()―A mod by Vazkii."
+            "text": "$(item)Кельма$() дає будівельнику змогу розміщувати випадкові блоки з панелі швидкого доступу, натискаючи  $(item)$(k:key.use)$() по поверхні.$(br)Кельма також має вбудовану підтримку моду $(item)Roads and Roofs$(), завдяки чому може випадковим чином розміщувати заповнювальні предмети, як-от цеглу або бруківку.$(br)Натхненно інструментом кельми з $(item)Quark$() — моду від Vazkii."
         },
         {
             "type": "patchouli:spotlight",
@@ -42,7 +42,7 @@
         {
             "type": "patchouli:spotlight",
             "item": "constructionwand:stone_wand,constructionwand:iron_wand,constructionwand:diamond_wand,constructionwand:infinity_wand",
-            "title": "Construction Wands",
+            "title": "Будівельні палички",
             "anchor": "wands",
             "text": "Будівельні палички — це простий спосіб встановлювати багато блоків одночасно. Просто натисни правою кнопкою миші по блоку, тримаючи паличку, і вона одразу встановить більше таких самих блоків, що чудово підходить для підлоги, стін тощо.$(br2)Натисни $(item)U$() на будівельній паличці, щоб відкрити сторінку з детальними інструкціями щодо її використання."
         },
@@ -69,7 +69,7 @@
             "type": "patchouli:spotlight",
             "item": "buildinggadgets2:gadget_building,buildinggadgets2:gadget_exchanging,buildinggadgets2:gadget_copy_paste,buildinggadgets2:gadget_cut_paste,buildinggadgets2:gadget_destruction",
             "anchor": "gadgets",
-            "title": "Building Gadgets",
+            "title": "Будівельний гаджет",
             "text": "Розблоковані в $(5)EV$(), $(bold)Будівельні гаджети$() — це потужні інструменти, які дають змогу вирізати, копіювати, вставляти та виконувати інші масштабні операції для будівництва."
         },
         {
@@ -80,7 +80,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "Докладніше",
             "anchor": "relations",
             "entries": [
                 "tfg:craftsmanship/anvils",

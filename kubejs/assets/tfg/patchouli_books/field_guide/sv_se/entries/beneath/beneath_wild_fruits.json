@@ -453,7 +453,7 @@
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "Oil palm trees can be found in $(thing)Salt Caves$() and $(thing)Tar Pools$() biomes between Y=50 and Y=190",
+            "text": "Oil palm trees can be found in $(l:beneath/beneath#salt_caves)Salt Caves$() and $(l:beneath/beneath#tar_pools)Tar Pools$() biomes between Y=50 and Y=190",
             "multiblocks": [
                 {
                     "pattern": [
@@ -1081,7 +1081,7 @@
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "Açaí trees can be found in $(thing)Salt Caves$() and $(thing)Tar Pools$() biomes between Y=50 and Y=190",
+            "text": "Açaí trees can be found in $(l:beneath/beneath#salt_caves)Salt Caves$() and $(l:beneath/beneath#tar_pools)Tar Pools$() biomes between Y=50 and Y=190",
             "multiblocks": [
                 {
                     "pattern": [

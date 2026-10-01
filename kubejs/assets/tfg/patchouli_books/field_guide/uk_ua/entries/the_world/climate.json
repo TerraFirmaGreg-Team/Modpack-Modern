@@ -10,13 +10,13 @@
         },
         {
             "type": "patchouli:text",
-            "title": "Index",
+            "title": "Індекс",
             "anchor": "index",
             "text": "$(li)$(bold)$(l:the_world/climate#calendar)Календар$()$(li2)$(l:the_world/climate#seasons)Пори року$()$(li)$(bold)$(l:the_world/climate#climate)Клімат$()$(li2)$(l:the_world/climate#temperature)Температура$()$(li2)$(l:the_world/climate#rainfall)Опади$()"
         },
         {
             "type": "patchouli:text",
-            "title": "Calendar",
+            "title": "Календар",
             "anchor": "calendar",
             "text": "$(thing)Календар$() можна переглянути в будь-який момент, натиснувши $(item)$(k:key.inventory)$() та відкривши вкладку календаря. Важливо зазначити, що ефекти пір року змінюються на протилежні під час перетину екваторіальних ліній, наприклад на $(thing)Z=10000$()."
         },
@@ -46,7 +46,7 @@
             "type": "patchouli:text",
             "anchor": "climate",
             "text": "Ще одна вкладка на головному екрані інвентарю — це екран $(thing)Клімат$(). Тут відображається інформація про поточне місцезнаходження:$(li)Перший рядок показує загальний $(l:https://en.wikipedia.org/wiki/K%C3%B6ppen_climate_classification)клімат$().$(li)Другий рядок показує $(l:the_world/climate#temperature)середньорічну температуру$().$(li)Третій рядок показує $(l:the_world/climate#rainfall)середньорічну кількість опадів$().$(li)Останній рядок показує $(l:the_world/climate#temperature)поточну місцеву температуру$().",
-            "title": "Climate"
+            "title": "Клімат"
         },
         {
             "type": "patchouli:image",
@@ -62,7 +62,7 @@
         },
         {
             "type": "patchouli:text",
-            "title": "Temperature",
+            "title": "Температура",
             "anchor": "temperature",
             "text": "Поточна температура в TerraFirmaCraft залежить від низки факторів:$(br)$(li)По-перше, регіон — особливо широта — відіграватиме найбільшу роль, і це враховується як $(thing)середня температура$().$(li)По-друге, на температуру впливає поточна пора року.$(li)По-третє, температура може відрізнятися щодня, а також змінюватися від години до години.$(li)Зрештою, температура змінюється залежно від висоти над рівнем моря."
         },
@@ -98,7 +98,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "Докладніше",
             "anchor": "relations",
             "entries": [
                 "tfg:the_world/geology",

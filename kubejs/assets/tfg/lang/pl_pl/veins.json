@@ -1,4 +1,4 @@
-{
+﻿{
 	"emi.category.tfg.ore_vein_info": "Informacje o żyle rudy",
 	"tfg.emi.ore_veins.rock_types": "Można znaleźć w skałach:",
 	"tfg.emi.ore_veins.rarity": "Rzadkość: %d",
@@ -18,7 +18,7 @@
 	"tfg.emi.ore_veins.height": "Wysokość: %d",
 	"tfg.emi.ore_veins.radius": "Promień: %d",
 	"tfg.emi.ore_veins.rainfall": "Opady: ",
-	"tfg.emi.ore_veins.rainfall_range": "%d - %dmm",
+	"tfg.emi.ore_veins.rainfall_range": "%d - %d mm",
 	"tfg.emi.ore_veins.temperature": "Temperatura: ",
 	"tfg.emi.ore_veins.temperature_range": "%d - %d°C",
 	"tfg.emi.ore_veins.temperature_and_below": "≤ %d°C",
@@ -91,7 +91,7 @@
 	"tfg.ore_patchouli_info.temperature": "Temperatura",
 	"tfg.ore_patchouli_info.temperature_and_below": "{0}°C i mniej",
 	"tfg.ore_patchouli_info.temperature_and_above": "{0}°C i więcej",
-	"tfg.ore_patchouli_info.percentage": "Wartość procentowa",
+	"tfg.ore_patchouli_info.percentage": "Procent",
 	"tfg.ore_patchouli_info.formula": "Wzór",
 	"tfg.ore_patchouli_info.hazard": "Zagrożenie",
 	"tfg.ore_patchouli_info.arsenicosis": "$(t:Wymaga maseczki)Zatrucie arszenikiem (Inhalacja)$(/t)",

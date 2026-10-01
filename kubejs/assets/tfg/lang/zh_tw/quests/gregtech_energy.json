@@ -1,7 +1,5 @@
 {
     "quests.gregtech_energy.start.title": "容我們解釋一番",
-    "__comment2": "Moving Energy",
-    "__comment3": "Producing Energy",
     "quests.gregtech_energy.lv_generator.title": "讓我們發點電",
     "quests.gregtech_energy.lv_generator.subtitle": "歡迎來到 LV 階段",
     "quests.gregtech_energy.lv_generator.desc.1": "這些是基礎的&6單方塊發電機&r。發電機只有單面燃料&9輸入口&r — 不論是&e蒸氣&r、&a燃氣&r或是&6液體燃料&r — 它們在相應電力等級都輸出&e1A&r的功率。\n\n它們操作簡單也是&5格雷科技&r的&o首個電力供應來源&r，直到稍後搭建&d大型多方塊發電機&r。\n\n欲了解有哪些燃料可用，&aEMI&r是你最好的朋友 — 或者也可以看看&b左側任務欄&r，我們在那列出&a最佳燃料選擇&r。此時此刻有&l三種&r發電方式，它們都&a可行&r，選擇權在你。",
@@ -9,7 +7,5 @@
     "quests.gregtech_energy.lv_generator.desc.3": "&e2. 動力發電：&r\n\n利用機械動力的旋轉力配合交流電發電機來產出 RF，在利用 &7LV&r 轉換器轉換為  EU。\n\n(參閱 LV 篇章的交流電任務取得更多細節。)",
     "quests.gregtech_energy.lv_generator.desc.4": "&e3. 生質柴油發電( TFG 限定)&r：\n\n菜籽與葵花能產出大量種子油，與 TFC 的酒類混合製成生質柴油。\n\n這個方式看似複雜但生質柴油在 &7LV 階段&r與 &bMV 階段&r尤為給力。其後的&e十六烷值改進劑&r能絲滑地擴展到 &5EV 階段&r。\n\n生質柴油發電需要 &7LV&r 內燃發電機。雖然造價略高，每 mB 的生物柴油能發出可觀的 EU，它也更容易保存與運輸。\n\n你的發電之道，由你自己決定。",
     "quests.gregtech_energy.lv_generator.task": "任何 LV 發電機",
-    "__comment4": "Stocking Energy",
-    "quests.gregtech_energy.tank.desc.1": "儲存能源也代表能儲存製造能源的燃料也是理所應當的。\n\n對於這種情況，雖然桶與板條箱是初期不錯的選擇，但不該忽略&d超級箱&r與&d超級缸&r的存在。",
-    "__comment5": "Spending Energy"
+    "quests.gregtech_energy.tank.desc.1": "儲存能源也代表能儲存製造能源的燃料也是理所應當的。\n\n對於這種情況，雖然桶與板條箱是初期不錯的選擇，但不該忽略&d超級箱&r與&d超級缸&r的存在。"
 }

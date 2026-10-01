@@ -1,5 +1,5 @@
 {
-    "name": "Sewing Table",
+    "name": "Швацький стіл",
     "category": "tfg:craftsmanship",
     "icon": "tfc:wood/sewing_table/oak",
     "pages": [
@@ -37,7 +37,7 @@
         {
             "type": "patchouli:crafting",
             "anchor": "banner_loom",
-            "title": "Banner Loom",
+            "title": "Верстат для стягів",
             "recipe": "tfc:crafting/vanilla/loom",
             "text": "Верстат для стягів призначений для створення речей за допомогою візерунків стягів. Його можна створити, щоб працювати з цими самими візерунками стягів."
         },
@@ -45,12 +45,12 @@
             "type": "patchouli:spotlight",
             "item": "tag:minecraft:trim_templates",
             "anchor": "armor_trim",
-            "title": "Armor Trims",
+            "title": "Оздоблення обладунків",
             "text": "Оздоблення обладунків можна наносити на будь-які $(t:#minecraft:trimmable_armor)$(6)обладунки, що підлягають оздобленню$(), використовуючи $(item)ковальський шаблон$(), виготовлений за допомогою шиття. Поєднай його з $(t:#minecraft:trim_materials)$(6)матеріалом для оздоблення$() (наприклад, $(thing)вишуканими самоцвітами$() або $(thing)ювелірним металом$()) та обладунками на $(item)столі коваля$()."
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "Докладніше",
             "anchor": "relations",
             "entries": [
                 "tfg:craftsmanship/anvils",

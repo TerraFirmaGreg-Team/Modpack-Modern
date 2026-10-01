@@ -5,7 +5,7 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "title": "Index",
+            "title": "Каталог",
             "anchor": "index",
             "text": "$(li)$(bold)$(l:cooking/cooking_methods#firepit)Firepit$()$(li2)$(l:cooking/cooking_methods#grill)Grill$()$(li2)$(l:cooking/cooking_methods#pot)Pot$()$(li)$(bold)$(l:cooking/cooking_methods#oven)Ovens$()$(li2)$(l:cooking/cooking_methods#vat)Vat$()$(li2)$(l:cooking/cooking_methods#jarring_station)Jarring Station$()$(li)$(bold)$(l:cooking/cooking_methods#electric_oven)Electric Oven$()$(li)$(bold)$(l:cooking/cooking_methods#food_processor)Food Processor$()"
         },

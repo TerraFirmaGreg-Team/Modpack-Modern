@@ -59,7 +59,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"item": "tag:forge:dusts/iodine",
-			"title": "Iodine",
+			"title": "Йод",
 			"anchor": "iodine",
 			"text": "$(l:mars/mars_tree_index#crimson)Багряні$() та $(l:mars/mars_tree_index#warped)викривлені$() гриби можна підсочувати для отримання відповідно $(4)Кримзену$() та $(3)Варпану$().$(br2)Тобі знадобляться обидва, щоб почати виробництво $(thing)йоду$(), але вони нечасто ростуть в одному місці, тож тобі, можливо, доведеться трохи помандрувати. Саджанці також можна отримати від відповідних $(l:mars/mars_fauna#endermen)ендерменів$()."
 		},
@@ -69,7 +69,7 @@
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Further Reading",
+			"title": "Докладніше",
 			"anchor": "relations",
 			"entries": [
 				"tfg:mars/mars",

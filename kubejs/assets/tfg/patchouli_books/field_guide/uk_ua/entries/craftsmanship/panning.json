@@ -6,7 +6,7 @@
         {
             "type": "patchouli:text",
             "anchor": "panning",
-            "title": "Panning",
+            "title": "Промивання",
             "text": "$(thing)Просіювання$() — це спосіб отримання порошків певних самородних руд під час пошуку в річках та інших водоймах.$(br2)Для просіювання використовуються $(t:#tfc:ore_deposits)$(6)родовища руди$(), які знаходяться в ділянках гравію на дні озер і річок.$(br2)Щоб розпочати просіювання , тобі знадобиться $(item)пусте решето$()."
         },
         {
@@ -52,7 +52,7 @@
         {
             "type": "patchouli:spotlight",
             "anchor": "sluice",
-            "title": "Sluices",
+            "title": "Мийний жолоб",
             "item": "tag:tfc:sluices",
             "text": "$(thing)Мийний жолоб$() — це пристрій, який автоматично переробляє $(thing)родовища руди$(), даючи ті самі результати, що й $(l:craftsmanship/panning#panning)просвіювання$(), але з дещо вищою ймовірністю отримання здобичі."
         },
@@ -87,7 +87,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "Докладніше",
             "anchor": "relations",
             "entries": [
                 "tfg:the_world/geology",

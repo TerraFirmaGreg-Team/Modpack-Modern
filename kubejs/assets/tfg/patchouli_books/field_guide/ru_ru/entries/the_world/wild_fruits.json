@@ -5,7 +5,7 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "title": "Index",
+            "title": "Каталог",
             "anchor": "index",
             "text": "$(li)$(bold)$(l:the_world/wild_fruits#intro)Introduction$()$(li)$(bold)$(l:the_world/wild_fruits#fruit_trees)Fruit Trees$()$(li2)$(l:the_world/wild_fruits#cherry)Cherry$()$(li2)$(l:the_world/wild_fruits#green_apple)Green Apple$()$(li2)$(l:the_world/wild_fruits#lemon)Lemon$()$(li2)$(l:the_world/wild_fruits#olive)Olive$()$(li2)$(l:the_world/wild_fruits#orange)Orange$()$(li2)$(l:the_world/wild_fruits#peach)Peach$()$(li2)$(l:the_world/wild_fruits#plum)Plum$()$(li2)$(l:the_world/wild_fruits#red_apple)Red Apple$()$(li2)$(l:the_world/wild_fruits#cocoa)Cocoa$()$(li2)$(l:the_world/wild_fruits#fig)Fig$()$(li2)$(l:the_world/wild_fruits#banana)Bananas$()"
         },
@@ -61,40 +61,40 @@
                     "text": ""
                 },
                 {
-                    "text": "Jan"
+                    "text": "Янв"
                 },
                 {
-                    "text": "Feb"
+                    "text": "Фев"
                 },
                 {
-                    "text": "Mar"
+                    "text": "Мар"
                 },
                 {
-                    "text": "Apr"
+                    "text": "Апр"
                 },
                 {
-                    "text": "May"
+                    "text": "Май"
                 },
                 {
-                    "text": "Jun"
+                    "text": "Июн"
                 },
                 {
-                    "text": "Jul"
+                    "text": "Июл"
                 },
                 {
-                    "text": "Aug"
+                    "text": "Авг"
                 },
                 {
-                    "text": "Sep"
+                    "text": "Сен"
                 },
                 {
-                    "text": "Oct"
+                    "text": "Окт"
                 },
                 {
-                    "text": "Nov"
+                    "text": "Ноя"
                 },
                 {
-                    "text": "Dec"
+                    "text": "Дек"
                 },
                 {
                     "text": "Cherry"
@@ -409,40 +409,40 @@
                     "text": ""
                 },
                 {
-                    "text": "Jan"
+                    "text": "Янв"
                 },
                 {
-                    "text": "Feb"
+                    "text": "Фев"
                 },
                 {
-                    "text": "Mar"
+                    "text": "Мар"
                 },
                 {
-                    "text": "Apr"
+                    "text": "Апр"
                 },
                 {
-                    "text": "May"
+                    "text": "Май"
                 },
                 {
-                    "text": "Jun"
+                    "text": "Июн"
                 },
                 {
-                    "text": "Jul"
+                    "text": "Июл"
                 },
                 {
-                    "text": "Aug"
+                    "text": "Авг"
                 },
                 {
-                    "text": "Sep"
+                    "text": "Сен"
                 },
                 {
-                    "text": "Oct"
+                    "text": "Окт"
                 },
                 {
-                    "text": "Nov"
+                    "text": "Ноя"
                 },
                 {
-                    "text": "Dec"
+                    "text": "Дек"
                 },
                 {
                     "text": "Banana"
@@ -2959,40 +2959,40 @@
                     "text": ""
                 },
                 {
-                    "text": "Jan"
+                    "text": "Янв"
                 },
                 {
-                    "text": "Feb"
+                    "text": "Фев"
                 },
                 {
-                    "text": "Mar"
+                    "text": "Мар"
                 },
                 {
-                    "text": "Apr"
+                    "text": "Апр"
                 },
                 {
-                    "text": "May"
+                    "text": "Май"
                 },
                 {
-                    "text": "Jun"
+                    "text": "Июн"
                 },
                 {
-                    "text": "Jul"
+                    "text": "Июл"
                 },
                 {
-                    "text": "Aug"
+                    "text": "Авг"
                 },
                 {
-                    "text": "Sep"
+                    "text": "Сен"
                 },
                 {
-                    "text": "Oct"
+                    "text": "Окт"
                 },
                 {
-                    "text": "Nov"
+                    "text": "Ноя"
                 },
                 {
-                    "text": "Dec"
+                    "text": "Дек"
                 },
                 {
                     "text": "Coconut"
@@ -4755,40 +4755,40 @@
                     "text": ""
                 },
                 {
-                    "text": "Jan"
+                    "text": "Янв"
                 },
                 {
-                    "text": "Feb"
+                    "text": "Фев"
                 },
                 {
-                    "text": "Mar"
+                    "text": "Мар"
                 },
                 {
-                    "text": "Apr"
+                    "text": "Апр"
                 },
                 {
-                    "text": "May"
+                    "text": "Май"
                 },
                 {
-                    "text": "Jun"
+                    "text": "Июн"
                 },
                 {
-                    "text": "Jul"
+                    "text": "Июл"
                 },
                 {
-                    "text": "Aug"
+                    "text": "Авг"
                 },
                 {
-                    "text": "Sep"
+                    "text": "Сен"
                 },
                 {
-                    "text": "Oct"
+                    "text": "Окт"
                 },
                 {
-                    "text": "Nov"
+                    "text": "Ноя"
                 },
                 {
-                    "text": "Dec"
+                    "text": "Дек"
                 },
                 {
                     "text": "Snowberry"
@@ -5103,40 +5103,40 @@
                     "text": ""
                 },
                 {
-                    "text": "Jan"
+                    "text": "Янв"
                 },
                 {
-                    "text": "Feb"
+                    "text": "Фев"
                 },
                 {
-                    "text": "Mar"
+                    "text": "Мар"
                 },
                 {
-                    "text": "Apr"
+                    "text": "Апр"
                 },
                 {
-                    "text": "May"
+                    "text": "Май"
                 },
                 {
-                    "text": "Jun"
+                    "text": "Июн"
                 },
                 {
-                    "text": "Jul"
+                    "text": "Июл"
                 },
                 {
-                    "text": "Aug"
+                    "text": "Авг"
                 },
                 {
-                    "text": "Sep"
+                    "text": "Сен"
                 },
                 {
-                    "text": "Oct"
+                    "text": "Окт"
                 },
                 {
-                    "text": "Nov"
+                    "text": "Ноя"
                 },
                 {
-                    "text": "Dec"
+                    "text": "Дек"
                 },
                 {
                     "text": "Nightshade"

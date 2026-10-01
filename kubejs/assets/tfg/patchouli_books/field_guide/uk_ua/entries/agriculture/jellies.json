@@ -32,7 +32,7 @@
 		},
 		{
 			"type": "patchouli:crafting",
-			"title": "Feeding",
+			"title": "Годування",
 			"recipe": "tfg:shaped/jellies_nutritional_mash",
 			"anchor": "feeding",
 			"text": "$(thing)Поживна каша$() — це основна їжа всіх $(thing)джеллі$(), яку переважно виготовляють із зернових, фруктів і деяких інгредієнтів, характерних для певних вимірів.$(br2)На жаль, вони досить вибагливі, тому годувати їх може лише $(thing)гравець$(), а не $(l:agriculture/animal_husbandry#feeding_trough)годівниця$().$(br)$(#B0B0B0)$(o)Чому воно рухається..."
@@ -63,7 +63,7 @@
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Further Reading",
+			"title": "Докладніше",
 			"anchor": "relations",
 			"entries": [
 				"tfg:beneath/beneath_fauna",

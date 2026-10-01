@@ -5,7 +5,7 @@
   "pages": [
     {
         "type": "patchouli:text",
-        "title": "Index",
+        "title": "Індекс",
         "anchor": "index",
         "text": "$(li)$(bold)$(l:cooking/drinks#alcohol)Алкоголь$()\n$(li)$(bold)$(l:cooking/drinks#aged_alcohol)Витриманий алкоголь$()\n$(li)$(bold)$(l:cooking/drinks#vintage_alcohol)Вінтажний алкоголь$()\n$(li)$(bold)$(l:cooking/alcohol#wine_making)Виноробство$()\n$(li2)$(l:cooking/alcohol#wine_properties)Властивості вина$()\n$(li)$(bold)$(l:cooking/alcohol#wine_shelf)Винна полиця$()"
     },
@@ -43,7 +43,7 @@
     {
         "type": "patchouli:crafting",
         "anchor": "bottle_label",
-        "title": "Bottle Label",
+        "title": "Етикетка для пляшки",
         "recipe": "firmalife:crafting/bottle_label",
         "text": "$(thing)Етикетка для пляшки$() може бути перейменована на станції писаря, після чого її назва додасться до підказки вина."
     },
@@ -74,7 +74,7 @@
     },
     {
         "type": "patchouli:relations",
-        "title": "Further Reading",
+        "title": "Докладніше",
         "anchor": "relations",
         "entries": [
         "tfg:cooking/food_and_water",

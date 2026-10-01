@@ -5,7 +5,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"title": "Index",
+			"title": "Каталог",
 			"anchor": "index",
 			"text": "$(li)$(bold)$(l:cooking/drinks#alcohol)Alcohol$()$(li2)$(l:cooking/drinks#aged_alcohol)Aged Alcohol$()$(li2)$(l:cooking/drinks#vintage_alcohol)Vintage Alcohol$()$(li2)$(l:cooking/drinks#table)Alcohol Effects Table$()$(li2)$(l:cooking/drinks#wine)Wine$()$(li)$(bold)$(l:cooking/drinks#milk)Milk$()$(li)$(bold)$(l:cooking/drinks#spring_water)Spring Water$()$(li)$(bold)$(l:cooking/drinks#sea_water)Sea Water$()$(li)$(bold)$(l:cooking/drinks#muddy_water)Muddy Water$()$(li)$(bold)$(l:cooking/drinks#juice)Fruit Juice$()$(li)$(bold)$(l:cooking/drinks#yogurt)Yogurt$()$(li)$(bold)$(l:cooking/drinks#smoothie)Fruit Smoothie$()$(li)$(bold)$(l:cooking/drinks#ice_slush)Ice Slush$()"
 		},
