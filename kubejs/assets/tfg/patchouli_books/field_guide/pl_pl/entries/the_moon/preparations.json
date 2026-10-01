@@ -18,7 +18,7 @@
 			"type": "patchouli:spotlight",
 			"anchor": "food",
 			"item": "tfg:food/meal_bag,tfg:food/calorie_paste,tfg:food/freeze_dried_fruit",
-			"text": "Consider bringing along some $(thing)Space Food$() for the journey ahead! It's simple to make and comes with a long shelf life."
+			"text": "Rozważ zabranie w dalszą podróż trochę $(thing)żywności kosmicznej$()! Jest łatwa do przygotowania i ma długi okres przydatności do spożycia."
 		},
 		{
 			"type": "patchouli:text",
@@ -26,7 +26,7 @@
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Further Reading",
+			"title": "Czytaj dalej",
 			"anchor": "relations",
 			"entries": [
 				"tfg:the_moon/the_moon",

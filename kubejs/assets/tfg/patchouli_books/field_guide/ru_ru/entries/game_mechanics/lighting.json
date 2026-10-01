@@ -7,7 +7,7 @@
         {
             "type": "patchouli:text",
             "text": "$(li)$(bold)$(l:game_mechanics/lighting#torches)Torches$()$(li)$(bold)$(l:game_mechanics/lighting#candles)Candles$()$(li)$(bold)$(l:game_mechanics/lighting#jack_o_lanterns)Jack 'o Lanterns$()$(li)$(bold)$(l:game_mechanics/lighting#lamps)Lamps$()$(li)$(bold)$(l:game_mechanics/lighting#permanent_light)Permanent Light$()",
-            "title": "Index",
+            "title": "Каталог",
             "anchor": "index"
         },
         {

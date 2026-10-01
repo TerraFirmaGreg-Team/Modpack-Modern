@@ -65,7 +65,7 @@
 			"type": "patchouli:spotlight",
 			"item": "ad_astra:tier_1_rover",
 			"anchor": "rover",
-			"title": "Rover",
+			"title": "Ровер",
 			"text": "$(item)Ровер$() — це транспортний засіб, який може перевозити до двох пасажирів, працює на горючому паливі (дизелі, бензині та ракетному паливі), а також має власний інвентар і радіо, яке може відтворювати справжні радіостанції!"
 		},
 		{
@@ -85,7 +85,7 @@
 		},
 		{
 			"type": "patchouli:multiblock",
-			"text": "Use a $(l:craftsmanship/building_tools#terminals)Terminal$() to construct the multiblock easily.",
+			"text": "Використовуй $(l:craftsmanship/building_tools#terminals)Термінал$(), щоб легко побудувати багатоблокову конструкцію.",
 			"name": " ",
 			"enable_visualize": true,
 			"multiblock": {
@@ -419,7 +419,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"item": "tag:ad_astra:sliding_doors",
-			"title": "Sliding Doors",
+			"title": "Розсувні двері",
 			"text": "Тобі варто облаштувати належну $(thing)систему шлюзів$() між внутрішнім простором твоєї бази та космічним вакуумом. Звичайні двері теж працюватимуть, але ці двері 3×3 чудово пасують до високотехнологічної місячної бази. Їх можна автоматизувати за допомогою $(item)натискної плити$(), як і звичайні двері.$(br2)$(bold)Порада:$() Ти також можеш використовувати ці двері для чистих кімнат!"
 		},
 		{
@@ -438,7 +438,7 @@
 			"type": "patchouli:spotlight",
 			"anchor": "death",
 			"item": "tag:minecraft:beds",
-			"title": "Extraterrestrial Death",
+			"title": "Позаземна смерть",
 			"text": "У $(tfg_short) ти можеш встановити точку відродження в будь-якому вимірі за допомогою ліжка (навіть у $(l/beneath)Безодні$()!), але якщо в тебе немає купи запасних космічних костюмів, відродження на Місяці може ускладнити тобі життя."
 		},
 		{
@@ -452,7 +452,7 @@
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Further Reading",
+			"title": "Докладніше",
 			"anchor": "relations",
 			"entries": [
 				"tfg:the_moon/preparations",

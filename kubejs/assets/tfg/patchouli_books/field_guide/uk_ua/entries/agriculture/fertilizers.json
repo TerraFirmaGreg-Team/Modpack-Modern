@@ -5,7 +5,7 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "title": "Index",
+            "title": "Індекс",
             "anchor": "index",
             "text": "$(li)$(bold)$(l:agriculture/fertilizers#compost)Компост$()$(li)$(bold)$(l:agriculture/fertilizers#bone_meal)Кісткове борошно$()$(li)$(bold)$(l:agriculture/fertilizers#saltpeter)Селітра$()$(li)$(bold)$(l:agriculture/fertilizers#guano)Гуано$()$(li)$(bold)$(l:agriculture/fertilizers#wood_ash)Деревна зола$()$(li)$(bold)$(l:agriculture/fertilizers#sylvite)Сильвін$()$(li)$(bold)$(l:agriculture/fertilizers#pure_fertilizers)Чисті добрива$()$(li)$(bold)$(l:agriculture/fertilizers#fertilizer)Добриво$()"
         },
@@ -18,7 +18,7 @@
         {
             "type": "patchouli:spotlight",
             "anchor": "compost",
-            "title": "Compost",
+            "title": "Компост",
             "item": "tfc:compost",
             "link_recipes": false,
             "text": "Компост є продуктом $(l:agriculture/composting)компостера$(). $(br)$(li)$(b)Азот: 40$()$(li)$(6)Фосфор: 20$()$(li)$(d)Калій: 40$()"
@@ -27,7 +27,7 @@
             "type": "patchouli:spotlight",
             "item": "minecraft:bone_meal",
             "anchor": "bone_meal",
-            "title": "Bone Meal",
+            "title": "Кісткове борошно",
             "link_recipes": false,
             "text": "Кісткове борошно виготовляється з подрібнених кісток. $(br)$(li)$(6)Фосфор: 10$()"
         },
@@ -35,7 +35,7 @@
             "type": "patchouli:spotlight",
             "item": "tfc:powder/saltpeter",
             "anchor": "saltpeter",
-            "title": "Saltpeter",
+            "title": "Селітра",
             "link_recipes": false,
             "text": "Селітра виготовляється з відповідної руди. $(br)$(li)$(b)Азот: 10$()$(li)$(d)Калій: 40$()"
         },
@@ -43,7 +43,7 @@
             "type": "patchouli:spotlight",
             "item": "tfc:groundcover/guano",
             "anchor": "guano",
-            "title": "Guano",
+            "title": "Гуано",
             "link_recipes": false,
             "text": "Гуано зустрічається глибоко під землею та на галькових берегах. $(br)$(li)$(b)Азот: 80$()$(li)$(6)Фосфор: 50$()$(li)$(d)Калій: 10$()"
         },
@@ -51,7 +51,7 @@
             "type": "patchouli:spotlight",
             "item": "tfc:powder/wood_ash",
             "anchor": "wood_ash",
-            "title": "Wood Ash",
+            "title": "Деревна зола",
             "link_recipes": false,
             "text": "Деревний попіл отримують шляхом розбивання вогнища. Факел, кинутий у воду, також має ймовірність утворення попелу. $(br)$(li)$(6)Фосфор: 10$()$(li)$(d)Калій: 30$()"
         },
@@ -59,7 +59,7 @@
             "type": "patchouli:spotlight",
             "item": "tfc:powder/sylvite",
             "anchor": "sylvite",
-            "title": "Sylvite",
+            "title": "Сильвін",
             "link_recipes": false,
             "text": "Сильвін можна знайти під землею. $(br)$(li)$(d)Калій: 50$()"
         },
@@ -75,13 +75,13 @@
             "type": "patchouli:spotlight",
             "item": "gtceu:fertilizer",
             "anchor": "fertilizer",
-            "title": "Fertilizer",
+            "title": "Добриво",
             "link_recipes": false,
             "text": "Добриво містить рівномірний розподіл різних поживних речовин. Виготовлення його з компосту дає загалом більший вихід поживних речовин. $(br)$(li)$(d)Калій: 15$()$(li)$(b)Азот: 15$()$(li)$(6)Фосфор: 15$()"
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "Докладніше",
             "anchor": "relations",
             "entries": [
                 "tfg:agriculture/growing_crops",

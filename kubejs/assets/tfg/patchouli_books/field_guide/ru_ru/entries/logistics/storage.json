@@ -6,7 +6,7 @@
         {
             "type": "patchouli:text",
             "text": "$(li)$(bold)Item Storage$()$(li2)$(l:logistics/storage#chests)Chests$()$(li2)$(l:logistics/storage#crates)Crates$()$(li2)$(l:logistics/storage#vaults)Vaults$()$(li2)$(l:logistics/storage#super_chests)Super Chests$()$(li)$(bold)Item & Fluid Storage$()$(li2)$(l:logistics/storage#ae2)ME Storage$()$(li2)$(l:logistics/storage#kegs)Kegs$()$(li)$(bold)Fluid Storage$()$(li2)$(l:logistics/storage#barrels)Barrels$()$(li2)$(l:logistics/storage#drums)Drums$()$(li2)$(l:logistics/storage#fluid_tanks)Fluid Tanks$()$(li2)$(l:logistics/storage#multiblock_tanks)Multiblock Tanks$()$(li2)$(l:logistics/storage#super_tanks)Super Tanks$()",
-            "title": "Index",
+            "title": "Каталог",
             "anchor": "index"
         },
         {

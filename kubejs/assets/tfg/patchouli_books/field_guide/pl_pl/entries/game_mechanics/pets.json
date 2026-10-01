@@ -11,7 +11,7 @@
         {
             "type": "patchouli:text",
             "anchor": "intro",
-            "title": "Introduction",
+            "title": "Wprowadzenie",
             "text": "$(thing)Pets$() are animals that function similarly to $(l:agriculture/animal_husbandry)Livestock$(). Instead of products, pets are useful for obeying commands, being friends, pest control, hunting.$(br)Pets recognize a certain player as their $(thing)Owner$(). To become a pet's owner, feed it to raise its familiarity above $(item)15%$(). Pets will only obey commands that come from their owner.$(br)Clicking on a pet with $(thing)dye$() changes its collar color."
         },
         {
@@ -37,7 +37,7 @@
                     "bold": true
                 },
                 {
-                    "text": "Climate",
+                    "text": "Klimat",
                     "bold": true
                 },
                 {
@@ -53,7 +53,7 @@
                     "text": "Arktyczny, subarktyczny (lasy)"
                 },
                 {
-                    "text": "Black"
+                    "text": "Czarny"
                 },
                 {
                     "text": "Tundra, wilgotny subarktyczny (lasy)"
@@ -156,7 +156,7 @@
         {
             "type": "patchouli:text",
             "anchor": "relax",
-            "title": "Relax",
+            "title": "Odpocznij",
             "text": "$(thing)Relax$() is the default state of pets, and commanding them returns them to this state. If a pet it at home, it will wander around the property, but not leave, and sleep once a day. If it is too far from home, it will walk aimlessly."
         },
         {
@@ -174,7 +174,7 @@
         {
             "type": "patchouli:spotlight",
             "anchor": "treat",
-            "title": "Pet Treat",
+            "title": "Smaczek",
             "item": "species:wicked_treat",
             "text": "$(thing)Pet Treats$() can be made by mixing medicine with bone meal.$(br)Pet treats give $(bold)massive$() stat bonuses to your pets for a short duration."
         },
@@ -194,7 +194,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "Czytaj dalej",
             "anchor": "relations",
             "entries": [
                 "tfg:agriculture/animal_husbandry",

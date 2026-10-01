@@ -6,11 +6,11 @@
         {
             "type": "patchouli:text",
             "anchor": "index",
-            "title": "Index",
+            "title": "Indeks",
             "text": "$(bold)$(li)$(l:beneath/beneath_wild_fruits#fruit_trees)Fruit Trees$()$(li2)$(l:beneath/beneath_wild_fruits#lavacado)Lavacado$()$(li2)$(l:beneath/beneath_wild_fruits#magmango)Magmango$()$(bold)$(li)$(l:beneath/beneath_wild_fruits#palm_fruit_trees)Palm Fruit Trees$()$(li2)$(l:beneath/beneath_wild_fruits#oil_palm)Oil Palm$()$(li2)$(l:beneath/beneath_wild_fruits#acai)Açaí$()"
         },
         {
-            "title": "Introduction",
+            "title": "Wprowadzenie",
             "anchor": "into",
             "type": "patchouli:text",
             "text": "W $(l:beneath/beneath)Głębinach$() występuje wyjątkowy zestaw dzikich owoców, przystosowanych do skrajnych warunków panujących pod ziemią. Można je uprawiać tak samo jak zwykłe $(l:the_world/wild_fruits)dzikie owoce$()."
@@ -35,7 +35,7 @@
                     "text": "Kwi"
                 },
                 {
-                    "text": "May"
+                    "text": "Maj"
                 },
                 {
                     "text": "Cze"
@@ -59,7 +59,7 @@
                     "text": "Gru"
                 },
                 {
-                    "text": "Lavacado"
+                    "text": "Lawokado"
                 },
                 {
                     "fill": "0x6ab553"
@@ -173,7 +173,7 @@
             "type": "patchouli:text",
             "anchor": "lavacado",
             "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 8 - 80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 20 - 100 %$(br2)Lavacado trees grow in the months of December through April, start flowering in May and June, and bear fruit in July.",
-            "title": "Lavacado"
+            "title": "Lawokado"
         },
         {
             "type": "tfg:multimultiblock",
@@ -307,43 +307,43 @@
                     "text": ""
                 },
                 {
-                    "text": "Jan"
+                    "text": "Sty"
                 },
                 {
-                    "text": "Feb"
+                    "text": "Lut"
                 },
                 {
                     "text": "Mar"
                 },
                 {
-                    "text": "Apr"
+                    "text": "Kwi"
                 },
                 {
-                    "text": "May"
+                    "text": "Maj"
                 },
                 {
-                    "text": "Jun"
+                    "text": "Cze"
                 },
                 {
-                    "text": "Jul"
+                    "text": "Lip"
                 },
                 {
-                    "text": "Aug"
+                    "text": "Sie"
                 },
                 {
-                    "text": "Sep"
+                    "text": "Wrz"
                 },
                 {
-                    "text": "Oct"
+                    "text": "Paź"
                 },
                 {
-                    "text": "Nov"
+                    "text": "Lis"
                 },
                 {
-                    "text": "Dec"
+                    "text": "Gru"
                 },
                 {
-                    "text": "Oil Palm"
+                    "text": "Olejowiec"
                 },
                 {
                     "fill": "0xa217ff"
@@ -425,11 +425,11 @@
             "title": "Palmy owocowe",
             "legend": [
                 {
-                    "text": "Dormant",
+                    "text": "Uśpione",
                     "color": "0xa8986a"
                 },
                 {
-                    "text": "Fruiting",
+                    "text": "Owocuje",
                     "color": "0xa217ff"
                 }
             ],
@@ -453,7 +453,7 @@
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "Olejowce występują w $(thing)jaskiniach solnych$() i $(thing)dołach ze smołą$() pomiędzy Y=50 a Y=190",
+            "text": "Olejowce występują w $(l:beneath/beneath#salt_caves)jaskiniach solnych$() i $(l:beneath/beneath#tar_pools)dołach ze smołą$() pomiędzy Y=50 a Y=190",
             "multiblocks": [
                 {
                     "pattern": [
@@ -1081,7 +1081,7 @@
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "Euterpy występują w $(thing)jaskiniach solnych$() i $(thing)dołach ze smołą$() pomiędzy Y=50 a Y=190",
+            "text": "Euterpy występują w $(l:beneath/beneath#salt_caves)jaskiniach solnych$() i $(l:beneath/beneath#tar_pools)dołach ze smołą$() pomiędzy Y=50 a Y=190",
             "multiblocks": [
                 {
                     "pattern": [
@@ -1827,7 +1827,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "Czytaj dalej",
             "anchor": "relations",
             "entries": [
                 "tfg:the_world/climate",

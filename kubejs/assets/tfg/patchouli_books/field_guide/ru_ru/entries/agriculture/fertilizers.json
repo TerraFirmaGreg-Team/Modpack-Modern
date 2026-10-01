@@ -5,7 +5,7 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "title": "Index",
+            "title": "Каталог",
             "anchor": "index",
             "text": "$(li)$(bold)$(l:agriculture/fertilizers#compost)Compost$()$(li)$(bold)$(l:agriculture/fertilizers#bone_meal)Bone Meal$()$(li)$(bold)$(l:agriculture/fertilizers#saltpeter)Salt Peter$()$(li)$(bold)$(l:agriculture/fertilizers#guano)Guano$()$(li)$(bold)$(l:agriculture/fertilizers#wood_ash)Wood Ash$()$(li)$(bold)$(l:agriculture/fertilizers#sylvite)Sylvite$()$(li)$(bold)$(l:agriculture/fertilizers#pure_fertilizers)Pure Fertilizers$()$(li)$(bold)$(l:agriculture/fertilizers#fertilizer)Fertilizer$()"
         },

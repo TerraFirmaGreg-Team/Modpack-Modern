@@ -1,12 +1,12 @@
 {
-	"name": "Create Logistics",
+	"name": "Logistyka w Create",
 	"category": "tfg:logistics",
 	"icon": "create:cardboard_package_12x12",
 	"read_by_default": true,
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"title": "Contents",
+			"title": "Zawartość",
 			"anchor": "index",
 			"text": "$(li)$(bold)$(l:logistics/create#packages)Packages$()$(li2)$(l:logistics/create#packager)Packager$()$(li2)$(l:logistics/create#frogport)Frogports$()$(li2)$(l:logistics/create#package_filter)Package Filter$()$(li2)$(l:logistics/create#repackager)Re-Packager$()$(li2)$(l:logistics/create#unpackager)Unpackager$()$(li2)$(l:logistics/create#clipboard)Clipboard and Hand Pointer$()$(li2)$(l:logistics/create#postbox)Postbox$()$(li2)$(l:logistics/create#package_tips)Tips$()"
 		},
@@ -21,7 +21,7 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Packages",
+			"title": "Paczki",
 			"anchor": "packages",
 			"item": "create:cardboard_package_12x10,create:cardboard_package_10x8,create:cardboard_package_10x12,create:cardboard_package_12x12",
 			"text": "Everything to do with Create Logistics revolves around $(item)Packages$(). Each package can contain 9 slots' worth of items.$(br2)Packages also have an $(thing)address$(), which determines where the package should go. The rest of the logistics system is all about how to move the packages to these destinations!"
@@ -130,7 +130,7 @@
 		{
 			"type": "patchouli:multiblock",
 			"enable_visualize": false,
-			"text": "It does not need a pump to move fluids into or out of their attached container.",
+			"text": "Pakowarka płynów nie wymaga pompy do przesyłania płynów między nią a podłączonym zbiornikiem.",
 			"name": "Rozpakowywanie płynów",
 			"multiblock": {
 				"pattern": [
@@ -155,7 +155,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"item": "create:package_frogport,fluidlogistics:copper_frogport",
-			"title": "Frogports",
+			"title": "Żabołapy",
 			"anchor": "frogport",
 			"text": "$(item)Package Frogports$() are one of three ways you can move packages around and get them to where you want them to be. They can hang packages onto $(item)Chain Conveyor$() lines to be transported along the chain connections. To use them, you first need a network of $(item)Chain Conveyors$() connected to each other using $(t:Any kind of TFC chain will work)$(6)chains$(), and then power the chain conveyors with rotation."
 		},
@@ -174,7 +174,7 @@
 		{
 			"type": "patchouli:image",
 			"text": "Mały system do wysyłania i odbierania przedmiotów.",
-			"title": "Frogports",
+			"title": "Żabołapy",
 			"border": true,
 			"images": [
 				"tfg:textures/gui/field_guide/frogports.png"
@@ -196,7 +196,7 @@
 			"type": "patchouli:spotlight",
 			"item": "fluidlogistics:fluid_repackager",
 			"anchor": "unpackager",
-			"text": "The $(item)Unpackager$() is similar to a $(l:logistics/create#repackager)Repackager$(), but it can combine item and fluid packages into one, and vice versa."
+			"text": "$(item)Rozpakowywacz$() działa podobnie do $(l:logistics/create#repackager)przepakowywacza$(), ale potrafi łączyć i rozdzielać paczki z przedmiotami i płynami."
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -212,7 +212,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"item": "tag:create:postboxes",
-			"title": "Postboxes",
+			"title": "Skrzynki pocztowe",
 			"anchor": "postbox",
 			"text": "$(item)Postboxes$() are used to route packages around using $(l:logistics/trains)Train Networks$(). You first $(item)$(k:key.use)$() a $(l:logistics/trains#station)Train Station$() to link the Postbox to that station before placing it, and from then on any trains that stop there will be able to interact with the Postbox (given it is within 4 blocks of the station)."
 		},
@@ -246,7 +246,7 @@
 			"type": "patchouli:spotlight",
 			"item": "create:transmitter",
 			"anchor": "high_logistics",
-			"title": "High Logistics",
+			"title": "Wyższa logistyka",
 			"text": "Moving packages around is good and all, but surely that can't be all there is? Well, you're exactly right. There's much more that can be done with packages, including $(thing)reading inventory contents$() and $(thing)having things be delivered remotely$(), and later on even $(thing)automatically sending ingredients to be processed$() based on an item's threshold!"
 		},
 		{
@@ -256,7 +256,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"item": "greate:rich_raw_rose_quartz,greate:raw_rose_quartz,greate:poor_raw_rose_quartz",
-			"title": "Rose Quartz",
+			"title": "Różowy kwarc",
 			"anchor": "rose_quartz",
 			"text": "The only natural source of $(item)Rose Quartz$() of a high enough quality to easily craft the $(item)Lens$() out of is located far, far to the north in freezing temperatures (under $(3)-10°C$()). Getting Kaolin clay flashbacks yet?"
 		},
@@ -297,7 +297,7 @@
 			"type": "patchouli:multiblock",
 			"enable_visualize": false,
 			"text": "The $(l:logistics/create#packager)Packager$() will only create a package when the Stock Link receives a signal from $(l:logistics/create#stock_ticker)elsewhere$() on the network.",
-			"name": "Example",
+			"name": "Przykład",
 			"multiblock": {
 				"pattern": [
 					[
@@ -423,7 +423,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"item": "tag:create:table_cloths",
-			"title": "Table Cloths",
+			"title": "Obrusy",
 			"anchor": "table_cloths",
 			"text": "$(item)Table Cloths$() are Create's system for player-owned shops! Each Table Cloth can sell one item. You'll need a small setup with a $(l:logistics/create#stock_ticker)Stock Ticker$(), $(l:logistics/create#packager)Packager$(), and a $(thing)Stock Keeper$() (a Blaze Burner or mob in a seat) to get started."
 		},
@@ -478,7 +478,7 @@
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Further Reading",
+			"title": "Czytaj dalej",
 			"anchor": "relations",
 			"entries": [
 				"tfg:logistics/redstone_devices",

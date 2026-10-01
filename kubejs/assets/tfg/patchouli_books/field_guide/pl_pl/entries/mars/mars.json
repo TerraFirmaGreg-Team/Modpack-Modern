@@ -41,7 +41,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"item": "tfg:heavy_ammoniacal_water_bucket",
-			"title": "Heavy Water",
+			"title": "Ciężka woda",
 			"anchor": "heavy_water",
 			"text": "$(item)Heavy Ammoniacal Water$() is another kind of fluid that can only be found deep underground via a Fluid Drilling Rig. You can only find it in these $(l:mars/mars#jungles)lush areas$() of Mars, not the desert!$(br2)You can separate it into Heavy Water, which is important for Fission power."
 		},
@@ -65,7 +65,7 @@
 		{
 			"type": "patchouli:multiblock",
 			"anchor": "ostrum_harvester",
-			"name": "Ostrum Harvester",
+			"name": "Żniwiarka ostru",
 			"enable_visualize": true,
 			"multiblock": {
 				"pattern": [
@@ -169,7 +169,7 @@
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Further Reading",
+			"title": "Czytaj dalej",
 			"anchor": "relations",
 			"entries": [
 				"tfg:mars/mars_crops",

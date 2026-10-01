@@ -41,7 +41,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"item": "tfg:heavy_ammoniacal_water_bucket",
-			"title": "Heavy Water",
+			"title": "Важка вода",
 			"anchor": "heavy_water",
 			"text": "$(item)Важка аміачна вода$() — це ще один вид рідини, яку можна знайти лише глибоко під землею за допомогою рідинної бурової установи. Її можна знайти лише в цих $(l:mars/mars#jungles)родючих районах$() Марса, а не в пустелі!$(br2)Її можна розділити на важку воду, яка важлива для атомної енергетики."
 		},
@@ -65,7 +65,7 @@
 		{
 			"type": "patchouli:multiblock",
 			"anchor": "ostrum_harvester",
-			"name": "Ostrum Harvester",
+			"name": "Збирач острому",
 			"enable_visualize": true,
 			"multiblock": {
 				"pattern": [
@@ -169,7 +169,7 @@
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Further Reading",
+			"title": "Докладніше",
 			"anchor": "relations",
 			"entries": [
 				"tfg:mars/mars_crops",

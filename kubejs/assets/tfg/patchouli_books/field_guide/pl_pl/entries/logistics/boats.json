@@ -6,7 +6,7 @@
         {
             "type": "patchouli:text",
             "text": "$(li)$(bold)$(l:logistics/boats#intro)Sailing Information$()$(li2)$(l:logistics/boats#customization)Customization$()$(li2)$(l:logistics/boats#boat_items)Boats as Items$()$(li2)$(l:logistics/boats#animals)Transporting Animals$()$(li2)$(l:logistics/boats#paddles)Paddles as Oars$()$(li2)$(l:logistics/boats#cleats)Cleats & Leads$()$(li2)$(l:logistics/boats#anchors)Anchors & Windlasses$()$(li2)$(l:logistics/boats#sails)Sails$()$(li2)$(l:logistics/boats#sailing)Sailing$()$(li2)$(l:logistics/boats#painting)Painting & Dyeing$()$(li2)$(l:logistics/boats#damage)Damage & Repair$()",
-            "title": "Index",
+            "title": "Indeks",
             "anchor": "index"
         },
         {
@@ -16,7 +16,7 @@
         {
             "type": "patchouli:text",
             "anchor": "intro",
-            "title": "Introduction",
+            "title": "Wprowadzenie",
             "text": "Creating and using a boat may be slightly more involved than you're used to, but there's nothing quite like building the perfect craft and setting off on the high seas. Peruse this manual and learn the ins and outs of carving, crafting, constructing, rowing, paddling, piloting, and customizing to your delight."
         },
         {
@@ -157,17 +157,17 @@
             "type": "patchouli:text",
             "anchor": "watercraft",
             "text": "There are a variety of watercraft available to you throughout progression. The type of boat you may pick comes down to your needs and what materials are available to you.$(li)$(bold)$(l:logistics/boats#kayak)Kayak$(): Portable and fast. Best for solo use.$(li)$(bold)$(l:logistics/boats#canoe)Dugout Canoe$(): Cheap, made of softwood, and can carry two.$(li)$(bold)$(l:logistics/boats#rowboat)Rowboat$(): Medium sized, capabale of good hauls.$(li)$(bold)$(l:logistics/boats#sloop)Sloop$(): Large sea-fairing vessel. Most advanced watercraft.",
-            "title": "Watercraft"
+            "title": "Łodzie"
         },
         {
             "type": "patchouli:text",
             "anchor": "kayak",
             "text": "Your best overland solo-adventure friend. Of course, being the only boat that can be carried as an item helps. It's the fastest boat for a solo player, and very maneuverable!$(br)To row a kayak, hold a $(item)Kayak Paddle$() in your main, or off-hand. To carry the kayak, just break it.",
-            "title": "Kayak"
+            "title": "Kajak"
         },
         {
             "type": "patchouli:image",
-            "title": "Kayak",
+            "title": "Kajak",
             "images": [
                 "firmaciv:textures/gui/book/kayak_isometric.png"
             ],
@@ -403,7 +403,7 @@
         },
         {
             "type": "patchouli:crafting",
-            "title": "Scaffolding",
+            "title": "Rusztowanie",
             "recipe": "firmaciv:crafting/watercraft_frame_flat",
             "text": "Much like a rowboat, you'll start with Shipwright's Scaffolding.$(br)Scaffolding are then filled in with $(n)hardwood$() planks. Search \"$(6)#hardwood$()\" in $(emi) to view all useable log types."
         },
@@ -485,8 +485,8 @@
                     "a": "firmaciv:wood/watercraft_frame/flat/oak[frame_processed=3]"
                 }
             },
-            "name": "Sloop Scaffolding",
-            "text": "Four $(6)$(t:#tfg:hardwood)hardwood$() plank blocks have been added to each scaffold.",
+            "name": "Rusztowanie slupa",
+            "text": "Do każdego rusztowania dodano cztery bloki desek z $(6)$(t:#tfg:hardwood)twardego drewna$().",
             "enable_visualize": true
         },
         {
@@ -526,7 +526,7 @@
                     "a": "firmaciv:wood/watercraft_frame/flat/oak[frame_processed=7]"
                 }
             },
-            "name": "Sloop Scaffolding",
+            "name": "Rusztowanie slupa",
             "text": "Trzymając młot w drugiej ręce, dodaj do każdego rusztowania po cztery $(item)miedziane szpilki$().",
             "enable_visualize": true
         },
@@ -569,7 +569,7 @@
                     "R": "alekiships:cleat[facing=south]"
                 }
             },
-            "name": "Sloop Scaffolding",
+            "name": "Rusztowanie slupa",
             "text": "Na koniec dodaj $(item)knagi$() do kadłubu.",
             "enable_visualize": true
         },
@@ -596,7 +596,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "Czytaj dalej",
             "anchor": "relations",
             "entries": [
                 "tfg:craftsmanship/metallurgy",
