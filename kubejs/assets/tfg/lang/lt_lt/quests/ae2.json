@@ -1,7 +1,6 @@
 {
     "quests.ae2": "„Applied Energistics 2“",
     "quests.ae2.subtitle": "Stipriausias įrankis, padėsiantis Jums su „GregTech“, atrakinamas po Jūsų pirmosios kelionės į Mėnulį",
-    "__comment2": "Left (getting started)",
     "quests.ae2.certus_quartz.title": "Certuso kvarcas",
     "quests.ae2.certus_quartz.subtitle": "Vienas mažas žingsnis Jums, vienas milžiniškas šuolis logistikai",
     "quests.ae2.certus_quartz.desc": "Žengiant Jums pirmąjį žingsnį Mėnulyje, atsiranda prieiga prie pirmosios &bcertuso kvarco&r gyslos.\n\nNesijaudinkite, jos gana paplitusios ir turėtų būti lengvai randamos, nors turėti gerą rūdos ieškiklį nepakenks.\n\nNesvarbu, ar Jūs nuspręsite įrengti kalnakasį, ar rankiniu būdu iškasti visą gyslą, būtinai surinkite nemažą kiekį, nes jo Jums reikės, nes jo prireiks žengiant toliau per „AE2“.",
@@ -20,11 +19,9 @@
     "quests.ae2.forming_press.desc": "Norėdami gauti spausdintines elektronines grandines, Jūs turėsite pagaminti &6„HV“&r formavimo presą.\n\nGeros naujienos? Jis turi kelis įvesties lizdus, o tai reiškia, kad Jūs galite įterpti visus savo elektroninuš grandinių presus vienu metu, todėl vieno formavimo preso pakanka visų tipų spausdintinėms grandinėms apdoroti.",
     "quests.ae2.ae_press.title": "Įbrėžėjo presas ",
     "quests.ae2.ae_press.subtitle": "Lobio medžioklė",
-    "__comment3": "Middle",
     "quests.ae2.ae_guide.title": "Sveiki atvykę į – „AE2“",
     "quests.ae2.ae_guide.subtitle": "Dar viena nemokama knyga Jūsų kolekcijai!",
     "quests.ae2.books_again.title": "Vėl reikia knygos?",
-    "__comment4": "Top (HV)",
     "quests.ae2.hv.title": "„HV“ pakopos „AE2“",
     "quests.ae2.hv.desc": "Visa ši šaka yra visiškai atrakinama per – &6„HV“&r!",
     "quests.ae2.ae_controller.subtitle": "Jūsų „ME“ tinklo plakanti širdis",
@@ -42,8 +39,6 @@
     "quests.ae2.universal_circuits.subtitle": "O, tai ŠTAI kam jos yra skirtos!",
     "quests.ae2.universal_circuits.desc": "Ar kada susimąstėte, kokia universalios elektroninės grandinės daiktų prasmė buvo? Be gražių užduočių piktogramų, jie daugiausia yra naudojami „AE2“!\n\n„AE2“ prastai tvarko daiktų žymas šablonuose, todėl universalios elektroninės grandinės yra sukurtos naudoti bet kokiuose šablonuose, kuriems yra reikalingos elektroninės grandinės. Tokiu būdu, atrakinus naujo tipo elektroninę grandinę, tereikia pridėti vieną šabloną, kad nauja elektroninė grandinė taptų universalia, o ne atnaujinti &oall& savo senus šablonus!",
     "quests.ae2.stock_bridge.title": "AE aprūpinimo tiltas",
-    "__comment5": "Right (IV)",
     "quests.ae2.iv.title": "„IV“ pakopos „AE2“",
-    "__comment6": "Bottom (LuV)",
     "quests.ae2.luv.title": "„LuV“ pakopos „AE2“"
 }

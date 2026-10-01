@@ -1,11 +1,7 @@
 {
-    "__comment1": "Starting",
-    "__comment2": "Far left",
     "quests.ore_proc.robot_arm.desc": "GregTech 擁有自己的工具來幫助解決礦石加工物流問題。\n\n&6機器臂&r將精確數量的物品放入機器，例如，當有兩顆瑕疵寶石時，才放入雷射雕刻機。&6標籤過濾器&r可以按標籤篩選物品，例如，輸入「&5*純淨礦石*&r」即可匹配所有純淨礦石。\n\n&4智慧過濾器&r能依照物品的&6配方&r進行過濾。例如，如果將其與電解機的機械臂一起使用，並將機械臂設為精確供應，則只有當機械臂獲得配方所需的輸入量時，才會將粉末移入電解機！",
     "quests.ore_proc.ae2.desc": "AE2 的一大優點在於無需大量線即可輕鬆移動物品！使用&d標籤儲存匯流排&r告訴網路將匹配標籤的物品存放到哪裡，按 F3 + H 查看標籤。例如，想將所有純淨礦石發送到某個箱子，只需在箱子添加標籤儲存匯流排，並將過濾器設定為“&5*純淨礦石*&r”即可。\n\n網路上有很多關於如何設定 AE2 系統的指南，但是使用子網路來處理所有礦石，然後再將其放入主儲存中，這是一個不錯的選擇！",
-    "__comment3": " Tiers",
     "quests.ore_proc.luv_tier.desc": "LuV 階段的矽岩產線才是「真正」的礦物處理，你的機器能跟上嗎?",
-    "__comment4": "Ore stages",
     "quests.ore_proc.crushed_ore.title": "碎礦",
     "quests.ore_proc.purified_ore.title": "純淨礦石",
     "quests.ore_proc.purified_ore.desc": "這列展示如何處理純淨礦石",

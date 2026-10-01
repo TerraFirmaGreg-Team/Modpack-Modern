@@ -1,4 +1,4 @@
-{
+﻿{
 	"emi.category.tfg.ore_vein_info": "矿脉信息",
 	"tfg.emi.ore_veins.rock_types": "存在于岩石类型：",
 	"tfg.emi.ore_veins.rarity": "稀有度：%d",
@@ -17,9 +17,6 @@
 	"tfg.emi.ore_veins.rainfall": "降雨量： ",
 	"tfg.emi.ore_veins.rainfall_range": "%d - %d毫米",
 	"tfg.emi.ore_veins.temperature": "温度： ",
-	"tfg.emi.ore_veins.temperature_range": "%d - %d°C",
-	"tfg.emi.ore_veins.temperature_and_below": "≤ %d°C",
-	"tfg.emi.ore_veins.temperature_and_above": "≥ %d°C",
 	"tfg.ore_vein.oilsands.emi.0": "可在温暖沙漠群系的",
 	"tfg.ore_vein.oilsands.emi.1": "石油喷口附近找到。",
 	"tfg.ore_vein.nether_garnet_sands": "石榴石砂",
@@ -178,7 +175,6 @@
 	"tfg.emi.fluid_veins.depletion.tooltip": "每次抽取流体时，都有%s的几率从矿脉%s的初始容量中减少%s",
 	"tfg.emi.fluid_veins.depleted_yield": "枯竭后产量：%s",
 	"tfg.emi.fluid_veins.biomes": "生物群系：",
-	"tfg.emi.fluid_veins.biomes_overflow": "··· %s",
 	"tfg.emi.fluid_veins.temperature": "温度：%s至%s",
 	"tfg.emi.fluid_veins.rainfall": "降雨量：%s 至 %s",
 	"tfg.emi.fluid_veins.indicator": "地表指示物：",
