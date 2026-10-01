@@ -7,7 +7,7 @@
             "type": "patchouli:text",
             "anchor": "intro",
             "title": "Gas Burner",
-            "text": "A $(thing)Gas Burner$() is a device which can burn fluids and gases like $(thing)Oil$(), $(l:cooking/alcohol)Alcohol$(), and $(thing)Petroluem Fuels$() to generate $(l:game_mechanics/heating)Heat$().$(br)Unlike other heat sources, the maximum Temperature of the burner can be set using $(l:craftsmanship/gas_burner#redstone)Redstone$(). This allows for more precise control over $(l:cooking/cooking_methods)Cooking$() and $(l:craftsmanship/crucible)Smelting$().$(br)The gas burner does not increase in temperature from $(l:craftsmanship/charcoal_forge#bellows)Bellows$() air supply."
+            "text": "A $(thing)Gas Burner$() is a device which can burn fluids and gases like $(thing)Oil$(), $(l:cooking/alcohol)Alcohol$(), and $(thing)Petroluem Fuels$() to generate $(l:game_mechanics/heating)Heat$().$(br)Unlike other heat sources, the maximum Temperature of the burner can be set using $(l:craftsmanship/gas_burner#redstone)Redstone$(). This allows for more precise control over $(l:cooking/cooking_methods)Cooking$() and $(l:craftsmanship/crucible)Smelting$().$(br)The gas burner does not increase in temperature from a $(l:craftsmanship/charcoal_forge#bellows)Bellows'$() air supply."
         },
         {
             "type": "patchouli:multiblock",
@@ -38,11 +38,11 @@
             "type": "patchouli:text",
             "anchor": "functions",
             "title": "Functions",
-            "text": "Gas Burners can be supplied automatically using $(thing)Fluid Pipes$(), or can be $(item)$(k:key.use)$() with a container of fluid.$(br)Inside their interface will show:$(li)The heat level, with a bar indicating maximum set temperature.$(li)A flame progress bar which displays the time left, and fuel burn temp when hovered over.$(li)Fuel tank with bucket in/out slots."
+            "text": "Gas Burners can be supplied automatically using $(thing)Fluid Pipes$(), or manually with $(item)$(k:key.use)$() while holding a container of fluid.$(br)Inside their interface will show:$(li)The heat level, with a bar indicating maximum set temperature.$(li)A flame progress bar which displays the time left, and fuel burn temp when hovered over.$(li)Fuel tank with bucket in/out slots."
         },
         {
             "type": "patchouli:text",
-            "text": "Burners have many useful applications. You can use them for any device which can be supplied with heat from the bottom, such as; $(l:craftsmanship/crucible)Crucibles$(), $(l:cooking/cooking_methods#grill)Grills$(), $(l:cooking/cooking_methods#pot)Pots$(), and $(l:cooking/cooking_methods#top_oven)Ovens$(). As well as any Create mechanical machines that need a heat source."
+            "text": "Burners have many useful applications. You can use them for any device which can be supplied with heat from the bottom, such as $(l:craftsmanship/crucible)Crucibles$(), $(l:cooking/cooking_methods#grill)Grills$(), $(l:cooking/cooking_methods#pot)Pots$(), and $(l:cooking/cooking_methods#top_oven)Ovens$(), as well as any Create mechanical machines that need a heat source."
         },
         {
             "type": "patchouli:multiblock",
@@ -120,7 +120,24 @@
                         "X": "tfg:gas_burner[lit=true]",
                         "Y": "firmalife:cured_stone_oven_top"
                     }
-                }
+                },
+                {
+                    "pattern": [
+                        [
+                            "Y"
+                        ],
+                        [
+                            "X"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfg:gas_burner[lit=true]",
+                        "Y": "firmalife:vat"
+                    }
+                },
             ],
             "name": "",
             "text": "$(thing)Gas Burner$() with cooking appliances.",
@@ -216,7 +233,9 @@
                 "tfg:craftsmanship/charcoal_forge",
                 "tfg:craftsmanship/crucible",
                 "tfg:cooking/alcohol",
-                "tfg:cooking/cooking_methods"
+                "tfg:cooking/cooking_methods",
+                "tfg:logistics/redstone_devices",
+                "tfg:game_mechanics/heating"
             ]
         }
     ],
