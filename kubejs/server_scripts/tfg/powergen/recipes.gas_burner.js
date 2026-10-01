@@ -17,53 +17,24 @@ const $Heat = Java.loadClass('net.dries007.tfc.common.capabilities.heat.Heat')
  * @type {GasBurnerFuels[]}
  */
 const gasBurnerFuels = [
+	// ========== HOT ============
 	{
-		fluid: '#firmalife:oils',
-		qty: 10,
-		duration: 80,
-		temp: $Heat.ORANGE.getMin()
-	},
-	{
-		fluid: 'gtceu:creosote',
-		qty: 25,
-		duration: 80,
-		temp: $Heat.FAINT_RED.getMin()
-	},
-	{
-		fluid: 'gtceu:oil',
-		qty: 10,
+		fluid: 'gtceu:wood_gas',
+		qty: 20,
 		duration: 100,
-		temp: $Heat.DARK_RED.getMin()
+		temp: $Heat.HOT.getMin()
 	},
 	{
-		fluid: 'gtceu:oil_medium',
-		qty: 10,
-		duration: 100,
-		temp: $Heat.DARK_RED.getMin()
+		fluid: 'gtceu:sulfuric_gas',
+		qty: 15,
+		duration: 80,
+		temp: $Heat.HOT.getMin()
 	},
 	{
-		fluid: 'gtceu:oil_heavy',
-		qty: 10,
-		duration: 160,
-		temp: $Heat.FAINT_RED.getMin()
-	},
-	{
-		fluid: 'gtceu:heavy_fuel',
-		qty: 10,
-		duration: 140,
-		temp: $Heat.BRIGHT_RED.getMin()
-	},
-	{
-		fluid: 'gtceu:sulfuric_heavy_fuel',
-		qty: 10,
-		duration: 140,
-		temp: $Heat.BRIGHT_RED.getMin()
-	},
-	{
-		fluid: 'gtceu:oil_light',
+		fluid: 'gtceu:sulfuric_naphtha',
 		qty: 10,
 		duration: 80,
-		temp: $Heat.BRIGHT_RED.getMin()
+		temp: $Heat.HOT.getMin()
 	},
 	{
 		fluid: 'gtceu:biomass',
@@ -71,6 +42,7 @@ const gasBurnerFuels = [
 		duration: 100,
 		temp: $Heat.HOT.getMin()
 	},
+	// ========== VERY HOT ============
 	{
 		fluid: 'tfc:tallow',
 		qty: 10,
@@ -78,88 +50,35 @@ const gasBurnerFuels = [
 		temp: $Heat.VERY_HOT.getMin()
 	},
 	{
-		fluid: 'gtceu:bio_diesel',
-		qty: 10,
-		duration: 80,
-		temp: $Heat.WHITE.getMin()
-	},
-	{
-		fluid: 'gtceu:diesel',
+		fluid: '#tfc:alcohols',
 		qty: 10,
 		duration: 100,
-		temp: $Heat.WHITE.getMin()
+		temp: $Heat.VERY_HOT.getMin()
 	},
 	{
-		fluid: 'gtceu:ethanol',
-		qty: 20,
-		duration: 100,
-		temp: $Heat.YELLOW_WHITE.getMin()
-	},
-	{
-		fluid: 'gtceu:benzene',
-		qty: 10,
-		duration: 80,
-		temp: $Heat.YELLOW_WHITE.getMin()
-	},
-	{
-		fluid: 'tfg:btx_fuel',
-		qty: 10,
-		duration: 220,
-		temp: $Heat.BRILLIANT_WHITE.getMin()
-	},
-	{
-		fluid: 'gtceu:butadiene',
-		qty: 15,
-		duration: 80,
-		temp: $Heat.WHITE.getMin()
-	},
-	{
-		fluid: 'gtceu:butane',
-		qty: 10,
-		duration: 100,
-		temp: $Heat.WHITE.getMin()
-	},
-	{
-		fluid: 'gtceu:butene',
-		qty: 10,
-		duration: 80,
-		temp: $Heat.WHITE.getMin()
-	},
-	{
-		fluid: 'gtceu:cetane_boosted_diesel',
-		qty: 10,
-		duration: 180,
-		temp: $Heat.BRILLIANT_WHITE.getMin()
-	},
-	{
-		fluid: 'gtceu:coal_gas',
-		qty: 25,
-		duration: 80,
-		temp: $Heat.YELLOW.getMin()
-	},
-	{
-		fluid: 'gtceu:ethane',
-		qty: 10,
-		duration: 80,
-		temp: $Heat.ORANGE.getMin()
-	},
-	{
-		fluid: 'gtceu:ethylene',
-		qty: 10,
-		duration: 80,
-		temp: $Heat.BRIGHT_RED.getMin()
-	},
-	{
-		fluid: 'gtceu:gasoline',
+		fluid: '#tfcagedalcohol:aged_alcohols',
 		qty: 10,
 		duration: 200,
-		temp: $Heat.BRILLIANT_WHITE.getMin()
+		temp: $Heat.VERY_HOT.getMin()
 	},
 	{
-		fluid: 'gtceu:high_octane_gasoline',
+		fluid: '#tfg:vintage_alcohols',
 		qty: 10,
-		duration: 400,
-		temp: $Heat.BRILLIANT_WHITE.getMin()
+		duration: 300,
+		temp: $Heat.VERY_HOT.getMin()
+	},
+	// ========== FAINT RED ============
+	{
+		fluid: 'gtceu:oil_heavy',
+		qty: 10,
+		duration: 160,
+		temp: $Heat.FAINT_RED.getMin()
+	},
+	{
+		fluid: 'gtceu:creosote',
+		qty: 25,
+		duration: 80,
+		temp: $Heat.FAINT_RED.getMin()
 	},
 	{
 		fluid: 'gtceu:lpg',
@@ -186,18 +105,6 @@ const gasBurnerFuels = [
 		temp: $Heat.FAINT_RED.getMin()
 	},
 	{
-		fluid: 'gtceu:natural_gas',
-		qty: 25,
-		duration: 20,
-		temp: $Heat.WHITE.getMin()
-	},
-	{
-		fluid: 'gtceu:nitrobenzene',
-		qty: 10,
-		duration: 100,
-		temp: $Heat.YELLOW_WHITE.getMin()
-	},
-	{
 		fluid: 'gtceu:octane',
 		qty: 15,
 		duration: 80,
@@ -209,11 +116,137 @@ const gasBurnerFuels = [
 		duration: 100,
 		temp: $Heat.FAINT_RED.getMin()
 	},
+	// ========== DARK RED ============
 	{
-		fluid: 'gtceu:propane',
+		fluid: 'tfg:syngas',
+		qty: 10,
+		duration: 160,
+		temp: $Heat.DARK_RED.getMin()
+	},
+	{
+		fluid: 'gtceu:oil',
+		qty: 10,
+		duration: 100,
+		temp: $Heat.DARK_RED.getMin()
+	},
+	{
+		fluid: 'gtceu:oil_medium',
+		qty: 10,
+		duration: 100,
+		temp: $Heat.DARK_RED.getMin()
+	},
+	// ========== BRIGHT RED ============
+	{
+		fluid: 'gtceu:heavy_fuel',
+		qty: 10,
+		duration: 140,
+		temp: $Heat.BRIGHT_RED.getMin()
+	},
+	{
+		fluid: 'gtceu:sulfuric_heavy_fuel',
+		qty: 10,
+		duration: 140,
+		temp: $Heat.BRIGHT_RED.getMin()
+	},
+	{
+		fluid: 'gtceu:oil_light',
 		qty: 10,
 		duration: 80,
-		temp: $Heat.BRILLIANT_WHITE.getMin()
+		temp: $Heat.BRIGHT_RED.getMin()
+	},
+	{
+		fluid: 'gtceu:ethylene',
+		qty: 10,
+		duration: 80,
+		temp: $Heat.BRIGHT_RED.getMin()
+	},
+	{
+		fluid: 'gtceu:toluene',
+		qty: 10,
+		duration: 100,
+		temp: $Heat.BRIGHT_RED.getMin()
+	},
+    // ========== ORANGE ============
+	{
+		fluid: '#firmalife:oils',
+		qty: 10,
+		duration: 80,
+		temp: $Heat.ORANGE.getMin()
+	},
+	{
+		fluid: 'gtceu:ethane',
+		qty: 10,
+		duration: 80,
+		temp: $Heat.ORANGE.getMin()
+	},
+	// ========== YELLOW ============
+	{
+		fluid: 'gtceu:coal_gas',
+		qty: 25,
+		duration: 80,
+		temp: $Heat.YELLOW.getMin()
+	},
+	{
+		fluid: 'gtceu:refinery_gas',
+		qty: 10,
+		duration: 80,
+		temp: $Heat.YELLOW.getMin()
+	},
+	// ========== YELLOW WHITE ============
+	{
+		fluid: 'gtceu:ethanol',
+		qty: 20,
+		duration: 100,
+		temp: $Heat.YELLOW_WHITE.getMin()
+	},
+	{
+		fluid: 'gtceu:benzene',
+		qty: 10,
+		duration: 80,
+		temp: $Heat.YELLOW_WHITE.getMin()
+	},
+	{
+		fluid: 'gtceu:bio_diesel',
+		qty: 10,
+		duration: 80,
+		temp: $Heat.WHITE.getMin()
+	},
+	{
+		fluid: 'gtceu:diesel',
+		qty: 10,
+		duration: 100,
+		temp: $Heat.WHITE.getMin()
+	},
+	{
+		fluid: 'gtceu:nitrobenzene',
+		qty: 10,
+		duration: 100,
+		temp: $Heat.YELLOW_WHITE.getMin()
+	},
+	// ========== WHITE ============
+	{
+		fluid: 'gtceu:butadiene',
+		qty: 15,
+		duration: 80,
+		temp: $Heat.WHITE.getMin()
+	},
+	{
+		fluid: 'gtceu:butane',
+		qty: 10,
+		duration: 100,
+		temp: $Heat.WHITE.getMin()
+	},
+	{
+		fluid: 'gtceu:butene',
+		qty: 10,
+		duration: 80,
+		temp: $Heat.WHITE.getMin()
+	},
+	{
+		fluid: 'gtceu:natural_gas',
+		qty: 25,
+		duration: 20,
+		temp: $Heat.WHITE.getMin()
 	},
 	{
 		fluid: 'gtceu:propene',
@@ -221,11 +254,36 @@ const gasBurnerFuels = [
 		duration: 80,
 		temp: $Heat.WHITE.getMin()
 	},
+	// ========== BRILLIANT WHITE ============
 	{
-		fluid: 'gtceu:refinery_gas',
+		fluid: 'tfg:btx_fuel',
+		qty: 10,
+		duration: 220,
+		temp: $Heat.BRILLIANT_WHITE.getMin()
+	},
+	{
+		fluid: 'gtceu:cetane_boosted_diesel',
+		qty: 10,
+		duration: 180,
+		temp: $Heat.BRILLIANT_WHITE.getMin()
+	},
+	{
+		fluid: 'gtceu:gasoline',
+		qty: 10,
+		duration: 200,
+		temp: $Heat.BRILLIANT_WHITE.getMin()
+	},
+	{
+		fluid: 'gtceu:high_octane_gasoline',
+		qty: 10,
+		duration: 400,
+		temp: $Heat.BRILLIANT_WHITE.getMin()
+	},
+	{
+		fluid: 'gtceu:propane',
 		qty: 10,
 		duration: 80,
-		temp: $Heat.YELLOW.getMin()
+		temp: $Heat.BRILLIANT_WHITE.getMin()
 	},
 	{
 		fluid: 'tfg:reformate_gas',
@@ -239,54 +297,6 @@ const gasBurnerFuels = [
 		duration: 80,
 		temp: $Heat.BRILLIANT_WHITE.getMin()
 	},
-	{
-		fluid: 'gtceu:sulfuric_gas',
-		qty: 15,
-		duration: 80,
-		temp: $Heat.HOT.getMin()
-	},
-	{
-		fluid: 'gtceu:sulfuric_naphtha',
-		qty: 10,
-		duration: 80,
-		temp: $Heat.HOT.getMin()
-	},
-	{
-		fluid: 'tfg:syngas',
-		qty: 10,
-		duration: 160,
-		temp: $Heat.DARK_RED.getMin()
-	},
-	{
-		fluid: 'gtceu:toluene',
-		qty: 10,
-		duration: 100,
-		temp: $Heat.BRIGHT_RED.getMin()
-	},
-	{
-		fluid: 'gtceu:wood_gas',
-		qty: 20,
-		duration: 100,
-		temp: $Heat.HOT.getMin()
-	},
-	{
-		fluid: '#tfc:alcohols',
-		qty: 10,
-		duration: 100,
-		temp: $Heat.VERY_HOT.getMin()
-	},
-	{
-		fluid: '#tfcagedalcohol:aged_alcohols',
-		qty: 10,
-		duration: 200,
-		temp: $Heat.VERY_HOT.getMin()
-	},
-	{
-		fluid: '#tfg:vintage_alcohols',
-		qty: 10,
-		duration: 300,
-		temp: $Heat.VERY_HOT.getMin()
-	}
 ];
 
 //#endregion
