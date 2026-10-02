@@ -1,12 +1,12 @@
 {
-    "name": "Tack & Carts",
+    "name": "Rząd koński i wozy",
     "category": "tfg:logistics",
     "icon": "sns:metal/horseshoe/steel",
     "pages": [
         {
             "type": "patchouli:text",
             "text": "$(li)$(bold)$(l:logistics/tack#saddle)Saddle$()$(li)$(bold)$(l:logistics/tack#armor)Horse Armor$()$(li)$(bold)$(l:logistics/tack#horseshoes)Horseshoes$()$(li)$(bold)$(l:logistics/tack#supply_cart)Supply Cart$()$(li)$(bold)$(l:logistics/tack#plow)Plow$()$(li)$(bold)$(l:logistics/tack#animal_cart)Animal Cart$()$(li)$(bold)$(l:logistics/tack#paving_cart)Paving Cart$()",
-            "title": "Index",
+            "title": "Indeks",
             "anchor": "index"
         },
         {
@@ -26,7 +26,7 @@
         {
             "type": "patchouli:spotlight",
             "anchor": "horseshoes",
-            "title": "Horseshoes",
+            "title": "Podkowy",
             "item": "sns:metal/horseshoes/steel,sns:metal/horseshoes/black_steel,sns:metal/horseshoes/blue_steel,sns:metal/horseshoes/red_steel",
             "text": "$(item)Horseshoes$() are smithed individually from types of steel and then combined into sets. When equiped on any $(l:agriculture/animal_husbandry#equines)Equine$() or $(l:agriculture/animal_husbandry#equines)Camilide Mammal$() they provide great benefits to their stats which can be viewed in the item description.$(br)$(bold)TIP:$() It's a good idea to tie up your mount properly when using a higher tier horseshoes."
         },
@@ -74,7 +74,7 @@
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Paving Cart",
+            "title": "Wóz brukarski",
             "anchor": "paving_cart",
             "item": "tfg:rnr_plow",
             "text": "The $(thing)Paving Cart$() is a specialized cart used for laying down road surfaces quickly and efficiently. Read more about them in the entry for $(l:logistics/roads#paving_cart)Roads$()."
@@ -83,12 +83,12 @@
             "type": "patchouli:entity",
             "entity": "tfg:rnr_plow",
             "scale": 0.4,
-            "name": "Paving Cart",
+            "name": "Wóz brukarski",
             "text": "Wóz brukarski przechodzi w tryb pracy po opuszczeniu ostrzy."
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "Czytaj dalej",
             "anchor": "relations",
             "entries": [
                 "tfg:craftsmanship/metallurgy",

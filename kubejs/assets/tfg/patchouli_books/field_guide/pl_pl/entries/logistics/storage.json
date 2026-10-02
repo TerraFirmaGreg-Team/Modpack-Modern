@@ -1,23 +1,23 @@
 {
-    "name": "Storage",
+    "name": "Magazyn",
     "category": "tfg:logistics",
     "icon": "tfc:wood/chest/douglas_fir",
     "pages": [
         {
             "type": "patchouli:text",
             "text": "$(li)$(bold)Item Storage$()$(li2)$(l:logistics/storage#chests)Chests$()$(li2)$(l:logistics/storage#crates)Crates$()$(li2)$(l:logistics/storage#vaults)Vaults$()$(li2)$(l:logistics/storage#super_chests)Super Chests$()$(li)$(bold)Item & Fluid Storage$()$(li2)$(l:logistics/storage#ae2)ME Storage$()$(li2)$(l:logistics/storage#kegs)Kegs$()$(li)$(bold)Fluid Storage$()$(li2)$(l:logistics/storage#barrels)Barrels$()$(li2)$(l:logistics/storage#drums)Drums$()$(li2)$(l:logistics/storage#fluid_tanks)Fluid Tanks$()$(li2)$(l:logistics/storage#multiblock_tanks)Multiblock Tanks$()$(li2)$(l:logistics/storage#super_tanks)Super Tanks$()",
-            "title": "Index",
+            "title": "Indeks",
             "anchor": "index"
         },
         {
             "type": "patchouli:text",
-            "title": "Introduction",
+            "title": "Wprowadzenie",
             "anchor": "intro",
             "text": "There are a vast amount of items, materials, and fluids that you will accumulate in $(tfg). It will be important to set up vast storage systems to organize everything. Some of the most important aspects of storage is its $(thing)capacity$() and $(thing)restrictions$(). For on-the-go inventory management you should read up on $(l:logistics/personal_storage)Personal Storage$()."
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Chests",
+            "title": "Skrzynie",
             "anchor": "chests",
             "item": "tag:forge:chests",
             "text": "Chest can store 18 items or 36 items for double chests. Chests can hold item sized up to $(l:game_mechanics/size_and_weight)Large$().$(br)If $(thing)Food Items$() are present in chests then it will attract rodents. So it is best to store them in $(item)Vessels$()."
@@ -181,7 +181,7 @@
         {
             "type": "patchouli:multiblock",
             "enable_visualize": false,
-            "text": "$(bold)TIP$(): Higher tier cells can fit more item types, and more \"bytes\".",
+            "text": "$(bold)WSKAZÓWKA$(): Lepsze magazyny mogą przechowywać więcej typów przedmiotów i więcej \"bajtów\".",
             "multiblock": {
                 "pattern": [
                     [
@@ -232,7 +232,7 @@
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Barrels",
+            "title": "Beczki",
             "anchor": "barrels",
             "item": "tag:tfc:barrels",
             "text": "$(l:craftsmanship/barrels)Barrels$() aren't just useful for recipes. They are a very cheap way of holding plenty of fluid, up to 10,000 mB per barrel.$(br)When placed on their side, barrels can drip fluid from their tap into containers below, allowing them to auto-ouput at a steady rate.$(br)You can carry a filled barrel on your back to transport its contents."
@@ -419,7 +419,7 @@
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Multiblock Tanks",
+            "title": "Zbiorniki multiblokowe",
             "anchor": "multiblock_tanks",
             "item": "gtceu:wooden_multiblock_tank,gtceu:bronze_multiblock_tank,gtceu:steel_multiblock_tank",
             "text": "$(item)Multiblock Tanks$() are structures dedicated to storing large quantities of fluids. Each type can have up to two valves and increase in capacity by tier.$(li)$(bold)Wooden Tank$(): 1,000,000 mB Capacity$(li)$(bold)Bronze Tank$(): 4,000,000 mB Capacity$(li)$(bold)Steel Tank$(): 8,000,000 mB Capacity"
@@ -562,7 +562,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "Czytaj dalej",
             "anchor": "relations",
             "entries": [
                 "tfg:craftsmanship/barrels",

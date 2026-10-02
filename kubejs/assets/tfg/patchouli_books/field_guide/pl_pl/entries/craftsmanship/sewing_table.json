@@ -1,5 +1,5 @@
 {
-    "name": "Sewing Table",
+    "name": "Stół do szycia",
     "category": "tfg:craftsmanship",
     "icon": "tfc:wood/sewing_table/oak",
     "pages": [
@@ -37,7 +37,7 @@
         {
             "type": "patchouli:crafting",
             "anchor": "banner_loom",
-            "title": "Banner Loom",
+            "title": "Krosno do sztandarów",
             "recipe": "tfc:crafting/vanilla/loom",
             "text": "Krosno do sztandarów można wytworzyć, aby nanosić wzory na sztandary."
         },
@@ -45,12 +45,12 @@
             "type": "patchouli:spotlight",
             "item": "tag:minecraft:trim_templates",
             "anchor": "armor_trim",
-            "title": "Armor Trims",
+            "title": "Wykończenia zbroi",
             "text": "Armor trims can be applied to any $(t:#minecraft:trimmable_armor)$(6)Trimmable Armor$() by sewing a $(item)Smithing Template$(). Combine it with a $(t:#minecraft:trim_materials)$(6)Trim Material$() (like $(thing)Exquisite Gems$() or $(thing)Jewlery Metal$()) and the armor on a $(item)Smithing Table$()."
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "Czytaj dalej",
             "anchor": "relations",
             "entries": [
                 "tfg:craftsmanship/anvils",

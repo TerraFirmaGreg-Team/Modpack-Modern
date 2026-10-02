@@ -1,11 +1,11 @@
 {
-    "name": "Harvest Baskets",
+    "name": "Koszyki zbieracza",
     "icon": "tfg:harvest_basket",
     "category": "tfg:agriculture",
     "pages": [
         {
             "type": "patchouli:spotlight",
-            "title": "Harvest Baskets",
+            "title": "Koszyki zbieracza",
             "item": {
                 "tag": "tfg:harvester"
             },
@@ -17,13 +17,13 @@
         },
         {
             "type": "patchouli:crafting",
-            "title": "Harvest Basket",
+            "title": "Koszyk zbieracza",
             "recipe": "tfg:shaped/harvest_basket_from_papyrus",
             "text": "Podstawowy $(item)koszyk zbieracza$() można wykonać z namoczonego papirusu lub twardego drewna."
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "Czytaj dalej",
             "anchor": "relations",
             "entries": [
                 "tfg:agriculture/growing_crops",

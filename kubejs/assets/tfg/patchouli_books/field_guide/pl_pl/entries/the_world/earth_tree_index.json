@@ -21,10 +21,10 @@
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Ash",
+            "title": "Jesion",
             "anchor": "ash",
             "item": "tag:tfc:ash_logs",
-            "text": "$(bold)White Ash$()$(br)$(thing)Rainfall$(): 60 — 240mm$(br)$(thing)Temperature$(): -13.9 — 0.7°C$(br)$(thing)Growth Days$(): 6"
+            "text": "$(bold)Jesion amerykański$()$(br)$(thing)Opady$(): 60 — 240 mm$(br)$(thing)Temperatura$(): -13,9 — 0,7°C$(br)$(thing)Czas wzrostu$(): 6 dni"
         },
         {
             "type": "patchouli:spotlight",
@@ -38,14 +38,14 @@
             "title": "Baobab",
             "anchor": "baobob",
             "item": "tag:afc:baobab_logs",
-            "text": "$(bold)Baobab$()$(br)$(thing)Rainfall$(): 30 — 190mm$(br)$(thing)Temperature$(): 15.3 — 26.2°C$(br)$(thing)Growth Days$(): 9"
+            "text": "$(bold)Baobab$()$(br)$(thing)Opady$(): 30 — 190mm$(br)$(thing)Temperatura$(): 15.3 — 26.2°C$(br)$(thing)Czas wzrostu$(): 9 dni"
         },
         {
             "type": "patchouli:spotlight",
             "title": "Brzoza",
             "anchor": "birch",
             "item": "tag:tfc:birch_logs",
-            "text": "$(bold)Paper Birch$()$(br)$(thing)Rainfall$(): 125 — 310mm$(br)$(thing)Temperature$(): -13.9 — 2.5°C$(br)$(thing)Growth Days$(): 6"
+            "text": "$(bold)Brzoza papierowa$()$(br)$(thing)Opady$(): 125 — 310 mm$(br)$(thing)Temperatura$(): -13,9 — 2,5°C$(br)$(thing)Czas wzrostu$(): 6 dni"
         },
         {
             "type": "patchouli:spotlight",
@@ -63,10 +63,10 @@
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Chestnut",
+            "title": "Kasztan",
             "anchor": "chestnut",
             "item": "tag:tfc:chestnut_logs",
-            "text": "$(bold)Chestnut$()$(br)$(thing)Rainfall$(): 150 — 300mm$(br)$(thing)Temperature$(): -6.6 — 11.6°C$(br)$(thing)Growth Days$(): 6"
+            "text": "$(bold)Kasztan$()$(br)$(thing)Opady$(): 150 — 300mm$(br)$(thing)Temperatura$(): -6.6 — 11.6°C$(br)$(thing)Czas wzrostu$(): 6 dni"
         },
         {
             "type": "patchouli:spotlight",
@@ -105,7 +105,7 @@
             "title": "Kauczukowiec",
             "anchor": "hevea",
             "item": "tag:afc:hevea_logs",
-            "text": "$(bold)Hevea$()$(br)$(thing)Rainfall$(): 390 — 500mm$(br)$(thing)Temperature$(): 17.1 — 26.2°C$(br)$(thing)Growth Days$(): 9"
+            "text": "$(bold)Kauczukowiec$()$(br)$(thing)Opady$(): 390 — 500mm$(br)$(thing)Temperatura$(): 17.1 — 26.2°C$(br)$(thing)Czas wzrostu$(): 9 dni"
         },
         {
             "type": "patchouli:spotlight",
@@ -119,7 +119,7 @@
             "title": "Ipe",
             "anchor": "ipe",
             "item": "tag:afc:ipe_logs",
-            "text": "$(bold)Yellow Ipe$()$(br)$(thing)Rainfall$(): 340 — 500mm$(br)$(thing)Temperature$(): 11.6 — 20.7°C$(br)$(thing)Growth Days$(): 10"
+            "text": "$(bold)Żółte ipe$()$(br)$(thing)Opady$(): 340 — 500mm$(br)$(thing)Temperatura$(): 11.6 — 20.7°C$(br)$(thing)Czas wzrostu$(): 10 dni"
         },
         {
             "type": "patchouli:spotlight",
@@ -144,7 +144,7 @@
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Mangrove",
+            "title": "Namorzyny",
             "anchor": "mangrove",
             "item": "tag:tfc:mangrove_logs",
             "text": "$(bold)Mangrove$()$(br)$(thing)Rainfall$(): 220mm+$(br)$(thing)Temperature$(): 18.0°C+$(br)$(thing)Growth Days$(): 7$(br)Note: only spawns in Salt Marsh biomes. Can also be found in $(l:beneath/beneath_tree_index#mangrove)the Beneath$()."
@@ -179,7 +179,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "$(bold)Tamarack$()$(br)$(thing)Rainfall$(): 150 — 500mm$(br)$(thing)Temperature$(): -17.5 — -1.1°C$(br)$(thing)Growth Days$(): 9"
+            "text": "$(bold)Modrzew amerykański$()$(br)$(thing)Opady$(): 150 — 500mm$(br)$(thing)Temperatura$(): -17.5 — -1.1°C$(br)$(thing)Czas wzrostu$(): 9 dni"
         },
         {
             "type": "patchouli:spotlight",
@@ -204,14 +204,14 @@
         },
         {
             "type": "patchouli:text",
-            "text": "$(bold)Black Spruce$()$(br)$(thing)Rainfall$(): 220 — 360mm$(br)$(thing)Temperature$(): -17.5 — -1.1°C$(br)$(thing)Growth Days$(): 11"
+            "text": "$(bold)Świerk czarny$()$(br)$(thing)Opady$(): 220 — 360 mm$(br)$(thing)Temperatura$(): -17,5 — -1,1°C$(br)$(thing)Czas wzrostu$(): 11 dni"
         },
         {
             "type": "patchouli:spotlight",
             "title": "Jawor",
             "anchor": "sycamore",
             "item": "tag:tfc:sycamore_logs",
-            "text": "$(bold)Sycamore$()$(br)$(thing)Rainfall$(): 330 — 480mm$(br)$(thing)Temperature$(): -6.6 — 11.6°C$(br)$(thing)Growth Days$(): 7"
+            "text": "$(bold)Jawor$()$(br)$(thing)Opady$(): 330 — 480mm$(br)$(thing)Temperatura$(): -6.6 — 11.6°C$(br)$(thing)Czas wzrostu$(): 7 dni"
         },
         {
             "type": "patchouli:spotlight",
@@ -236,7 +236,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "Czytaj dalej",
             "anchor": "relations",
             "entries": [
 				"tfg:the_world/wild_fruits",

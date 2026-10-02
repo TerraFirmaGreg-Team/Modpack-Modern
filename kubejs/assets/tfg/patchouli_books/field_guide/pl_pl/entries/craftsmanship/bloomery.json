@@ -1,5 +1,5 @@
 {
-    "name": "Bloomery",
+    "name": "Dymarka",
     "category": "tfg:craftsmanship",
     "icon": "tfc:bloomery",
     "pages": [
@@ -76,15 +76,15 @@
                     "bold": true
                 },
                 {
-                    "text": "Iron",
+                    "text": "Żelazo",
                     "bold": true
                 },
                 {
-                    "text": "Fuel",
+                    "text": "Paliwo",
                     "bold": true
                 },
                 {
-                    "text": "Slots",
+                    "text": "Sloty",
                     "bold": true
                 },
                 {
@@ -132,7 +132,7 @@
                     "text": "57 mW"
                 },
                 {
-                    "text": "129mB Ore Dust"
+                    "text": "129 mW pyłu rudy"
                 },
                 {
                     "text": "19"
@@ -198,7 +198,7 @@
         {
             "type": "patchouli:spotlight",
             "anchor": "steam_bloomery",
-            "title": "Steam Bloomery",
+            "title": "Dymarka parowa",
             "item": "tfg:steam_bloomery",
             "text": "Available with the creation of $(item)Black Steel$() is the $(thing)Steam Bloomery$(). This structure is capable of producing blooms automatically, on top of being faster and more efficent than the traditional bloomery by using high-pressure steam."
         },
@@ -241,13 +241,13 @@
                     "O": "gtceu:steam_output_bus[facing=north]"
                 }
             },
-            "name": "Structure",
+            "name": "Struktura",
             "text": "Dymarka parowa wymaga parowej magistrali wejściowej i wyjściowej, parowego zaworu wejściowego oraz trzech obudów paleniska z brązu.",
             "enable_visualize": true
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "Czytaj dalej",
             "anchor": "relations",
             "entries": [
                 "tfg:craftsmanship/pottery",

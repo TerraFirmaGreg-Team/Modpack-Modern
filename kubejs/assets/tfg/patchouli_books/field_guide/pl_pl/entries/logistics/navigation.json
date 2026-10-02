@@ -1,5 +1,5 @@
 {
-    "name": "Navigation",
+    "name": "Nawigacja",
     "category": "tfg:logistics",
     "icon": "firmaciv:textures/item/nav_toolkit.png",
     "pages": [
@@ -18,7 +18,7 @@
         },
         {
             "type": "patchouli:image",
-            "title": "Navigation",
+            "title": "Nawigacja",
             "anchor": "navigation",
             "images": [
                 "firmaciv:textures/gui/book/navigation.png"
@@ -32,7 +32,7 @@
         {
             "type": "patchouli:text",
             "anchor": "longitude",
-            "title": "Longitude",
+            "title": "Długość geograficzna",
             "text": "To find your Longitude, that is, your distance from the Prime Meridian, you need a clock! Specifically, you need a precise timepiece that keeps itself synchronized with the solar time at the Prime Meridian.$(br2)Smith an Unfinished Navigator's Timepiece before filling it with its internal mechanism."
         },
         {
@@ -43,25 +43,25 @@
         },
         {
             "type": "patchouli:text",
-            "title": "Latitude",
+            "title": "Szerokość geograficzna",
             "anchor": "latitude",
             "text": "To find your Latitude, that is, your distance from the Equator, you need to determine the degrees at which you view either Polaris, the North Star, or the Sun. Specifically, you need a precise mechanism for viewing astronomical features and measuring their angular distance from the horizon.$(br2)Smith an Unfinished Sextant and then complete it in a workbench."
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Sextant",
+            "title": "Sekstans",
             "item": "firmaciv:sextant",
             "text": "Once you craft your Sextant, you can hold it and press $(item)$(k:key.use)$() to determine your Latitude. Remember that your Latitude is measured in Degrees North or South, meaning 0 Degrees at the Equator, and 90 Degrees North or South for a polar region."
         },
         {
             "type": "patchouli:text",
-            "title": "Altitude",
+            "title": "Wysokość",
             "anchor": "altitude",
             "text": "To find your Altitude, that is, your vertical distance from the Sea Level datum, you need to measure atmospheric pressure. Specifically, you need a device containing a compressible fluid, and you need to measure the volume of that fluid to determine the pressure.$(br2)Smith an Unfinished Barometer and then complete it in a workbench."
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Barometer",
+            "title": "Barometr",
             "item": "firmaciv:barometer",
             "text": "Once you craft your Barometer, you can hold it and press $(item)$(k:key.use)$() to determine your Altitude. Remember that your Altitude is measured in distance from the Sea Level datum."
         },
@@ -72,7 +72,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "Czytaj dalej",
             "anchor": "relations",
             "entries": [
                 "tfg:craftsmanship/metallurgy",

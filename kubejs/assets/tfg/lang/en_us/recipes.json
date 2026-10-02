@@ -263,5 +263,7 @@
 	"tfg.grapplemod.upgrades.vertical_throwing_angle": "Increases the §lVertical Throwing Angle§r of the hook by 5°, up to 90°.",
 	"tfg.grapplemod.downgrades.vertical_throwing_angle": "Decreases the §lVertical Throwing Angle§r of the hook by 5°, down to 0°.",
 	"tfg.grapplemod.upgrades.angle": "Increases the §lHorizontal Angle§r for throwing your §lDouble Hooks§r by 5°, up to 90°.\nOnly accessible with a §lDouble Hook§r installed.",
-	"tfg.grapplemod.downgrades.angle": "Decreases the §lHorizontal Angle§r for throwing your §lDouble Hooks§r by 5°, down to 5°°.\nOnly accessible with a §lDouble Hook§r installed."
+	"tfg.grapplemod.downgrades.angle": "Decreases the §lHorizontal Angle§r for throwing your §lDouble Hooks§r by 5°, down to 5°°.\nOnly accessible with a §lDouble Hook§r installed.",
+
+    "tfg.recipe.gas_burner_fuel": "Gas Burner Fuel"
 }

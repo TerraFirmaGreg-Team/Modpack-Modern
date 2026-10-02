@@ -1,4 +1,4 @@
-{
+﻿{
 	"tfg.emi.ore_veins.rarity.common": "Común",
 	"tfg.emi.ore_veins.rarity.uncommon": "Poco común",
 	"tfg.emi.ore_veins.rarity.rare": "Raro",
@@ -44,7 +44,6 @@
 	"tfg.rock_patchouli_info.blackstone": "Piroxenita",
 	"tfg.rock_patchouli_info.brown_sand": "Arena Marrón",
 	"tfg.rock_patchouli_info.chalk": "Tiza",
-	"tfg.rock_patchouli_info.chert": "Chert",
 	"tfg.rock_patchouli_info.dacite": "Dacita",
 	"tfg.rock_patchouli_info.deepslate": "Migmatita",
 	"tfg.rock_patchouli_info.diorite": "Diorita",
@@ -68,7 +67,6 @@
 	"tfg.emi.fluid_veins.dimension": "Dimensión:",
 	"tfg.emi.fluid_veins.biomes": "Biomas:",
 	"tfg.emi.fluid_veins.biome_any": "Cualquiera",
-	"tfg.emi.fluid_veins.biomes_overflow": "··· %s",
 	"tfg.emi.fluid_veins.temperature": "Temperatura: %s a %s",
 	"tfg.emi.fluid_veins.rainfall": "Precipitación: %s a %s",
 	"tfg.emi.fluid_veins.indicator": "Indicadores de superficie:",

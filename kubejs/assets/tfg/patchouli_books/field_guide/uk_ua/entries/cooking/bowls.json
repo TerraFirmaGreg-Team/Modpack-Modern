@@ -15,7 +15,7 @@
             "type": "patchouli:spotlight",
             "item": "tag:tfc:powders",
             "anchor": "powder_bowl",
-            "title": "Powders",
+            "title": "Порошки",
             "link_recipes": false,
             "text": "Миска з порошком може вміщувати до 16 одиниць певного порошку. Щоб додати предмет, натисни $(item)$(k:key.use)$(), тримаючи порошок у руці. Щоб вийняти предмет, натисни $(item)$(k:key.use)$() порожньою рукою.$(br2)Затискання клавіші $(item)$(k:key.sneak)$() дозволяє вийняти весь вміст миски."
         },

@@ -16,7 +16,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "index",
-			"text": "$(li)$(bold)$(l:beneath/beneath#entering)Entering$() and $(bold)$(l:beneath/beneath#exiting)Exiting$()$(li)$(bold)$(l:beneath/beneath#biomes)Biomes$()$(li2)$(l:beneath/beneath#biomes_top)Top Layer$()$(li2)$(l:beneath/beneath#biomes_middle)Middle Layer$()$(li2)$(l:beneath/beneath#biomes_bottom)Bottom Layer$()$(li)$(bold)$(l:beneath/beneath#geology)Geology$()$(li2)$(l:beneath/beneath#more_rocks)More Rocks$()"
+			"text": "$(li)$(bold)$(l:beneath/beneath#entering)Entering$() and $(bold)$(l:beneath/beneath#exiting)Exiting$()$(li)$(bold)$(l:beneath/beneath#biomes)Biomes$()$(li2)$(l:beneath/beneath#salt_caves)Top Layer$()$(li2)$(l:beneath/beneath#tar_pools)Middle Layer$()$(li2)$(l:beneath/beneath#ash_forest)Bottom Layer$()$(li)$(bold)$(l:beneath/beneath#geology)Geology$()$(li2)$(l:beneath/beneath#more_rocks)More Rocks$()"
 		},
 		{
 			"type": "patchouli:image",
@@ -55,101 +55,114 @@
 			"text": "The Beneath has a full set of new biomes to explore!$(br2)The Beneath can be split into three vertical layers, each with their own set of biomes. Each one is more hot and dangerous as you descend!"
 		},
 		{
-			"type": "patchouli:image",
-			"anchor": "biomes_top",
-			"title": "Salt Caves",
-			"images": [
-				"tfg:textures/gui/field_guide/nether/salt_caves.png"
-			],
-			"border": true,
+			"type": "patchouli:text",
+			"title": "Layers",
 			"text": "暖かい海風のように、このバイオームは $(item)岩塩$()でいっぱいです。"
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Muggy Bog",
+			"anchor": "salt_caves",
+			"title": "Salt Caves",
 			"images": [
-				"tfg:textures/gui/field_guide/nether/muggy_bog.png"
+				"tfg:textures/gui/field_guide/nether/salt_caves.png"
 			],
 			"border": true,
 			"text": "湿気の多い湿地帯。 $(thing)ワニ$()を避けることができれば、安全な木材の供給源となります。"
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Decaying Caverns",
+			"title": "Muggy Bog",
+			"anchor": "muggy_bog",
 			"images": [
-				"tfg:textures/gui/field_guide/nether/decaying_caverns.png"
+				"tfg:textures/gui/field_guide/nether/muggy_bog.png"
 			],
 			"border": true,
 			"text": "自然の分解者たちは、腐敗に満ちたこの湿った地域で一生懸命に働いています。"
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Webbed Lair",
+			"title": "Decaying Caverns",
+			"anchor": "decaying_caverns",
 			"images": [
-				"tfg:textures/gui/field_guide/nether/webbed_lair.png"
+				"tfg:textures/gui/field_guide/nether/decaying_caverns.png"
 			],
 			"border": true,
-			"text": "No prizes for guessing what lives here! A great place to harvest $(item)Silk$()."
+			"text": "Nature's recyclers are hard at work in this damp region full of rot."
 		},
 		{
 			"type": "patchouli:image",
-			"anchor": "biomes_middle",
-			"title": "Tar Pools",
+			"title": "Webbed Lair",
+			"anchor": "webbed_lair",
 			"images": [
-				"tfg:textures/gui/field_guide/nether/tar_pools.png"
+				"tfg:textures/gui/field_guide/nether/webbed_lair.png"
 			],
 			"border": true,
 			"text": "小さな砂漠みたいに砂まみれのこのエリアには、ねばつく石油でいっぱいの $(thing)タールピット$()があります。"
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Geothermal Springs",
+			"anchor": "tar_pools",
+			"title": "Tar Pools",
 			"images": [
-				"tfg:textures/gui/field_guide/nether/geothermal_springs.png"
+				"tfg:textures/gui/field_guide/nether/tar_pools.png"
 			],
 			"border": true,
 			"text": "サルファーキューブは存在しませんが、この湯気まみれのバイオームは癒しのための $(thing)温泉$()を見つけるのに最適な場所です。"
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Thorny Grove",
+			"title": "Geothermal Springs",
+			"anchor": "geothermal_springs",
 			"images": [
-				"tfg:textures/gui/field_guide/nether/thorny_brambles.png"
+				"tfg:textures/gui/field_guide/nether/geothermal_springs.png"
 			],
 			"border": true,
 			"text": "踏むと影響を受ける植物が生えている、移動が難しいバイオームです。足元には気をつけてください！"
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Lush Hollow",
+			"title": "Thorny Grove",
+			"anchor": "thorny_grove",
 			"images": [
-				"tfg:textures/gui/field_guide/nether/lush_hollow.png"
+				"tfg:textures/gui/field_guide/nether/thorny_brambles.png"
 			],
 			"border": true,
 			"text": "暑くて緑あふれる場所です！生い茂ったシダが、その下にある$(thing)カオリン粘土$()を覆い隠しています。"
 		},
 		{
 			"type": "patchouli:image",
-			"anchor": "biomes_bottom",
-			"title": "Ash Forest",
+			"title": "Lush Hollow",
+			"anchor": "lush_hollow",
 			"images": [
-				"tfg:textures/gui/field_guide/nether/ash_forest.png"
+				"tfg:textures/gui/field_guide/nether/lush_hollow.png"
 			],
 			"border": true,
-			"text": "What remains of the upper greenery after the frequent fires caused by the heat."
+			"text": "Hot and full of greenery! The dense ferns hides the underlying $(thing)Kaolin Clay$()."
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Lava Floes",
+			"anchor": "ash_forest",
+			"title": "Ash Forest",
 			"images": [
-				"tfg:textures/gui/field_guide/nether/lava_floes.png"
+				"tfg:textures/gui/field_guide/nether/ash_forest.png"
 			],
 			"border": true,
 			"text": "鉱物資源が豊富な$(thing)輝岩$()のエリアには、溶岩流が縦横に走っています。"
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Basalt Deltas",
+			"title": "Lava Floes",
+			"anchor": "lava_floes",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/lava_floes.png"
+			],
+			"border": true,
+			"text": "An ore-rich $(thing)Pyroxenite$() area crisscrossed with rivers of lava."
+		},
+		{
+			"type": "patchouli:image",
+			"title": "地質",
+			"anchor": "basalt_deltas",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/basalt_deltas.png"
 			],
@@ -159,7 +172,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "geology",
-			"title": "地質",
+			"title": "Geology",
 			"text": "Like the overworld, the Beneath has its own set of rock layers. At the very top, you may find Phyllite, Schist, Gneiss, Marble, Slate, Migmatite, and Travertine.$(br2)Underneath those, you may find Schist, Gneiss, Tuff, Migmatite, Travertine, and Diorite."
 		},
 		{
@@ -175,11 +188,11 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "The $(thing)Geothermal Springs$() biome contains the exclusive $(item)Aragonite$() and $(item)Glauberite$(), along with more Calcite.$(br2)This biome also houses $(item)Huge Quartz$() crystals, which can either be broken with a pickaxe to obtain $(item)Smoky Quartz$() gems of varying quality, or broken with a $(item)Gem Saw$() to obtain the transparent block itself."
+			"text": "The $(l:beneath/beneath#geothermal_springs)Geothermal Springs$() biome contains the exclusive $(item)Aragonite$() and $(item)Glauberite$(), along with more Calcite.$(br2)This biome also houses $(item)Huge Quartz$() crystals, which can either be broken with a pickaxe to obtain $(item)Smoky Quartz$() gems of varying quality, or broken with a $(item)Gem Saw$() to obtain the transparent block itself."
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(item)Gilsonite$(), a very dark building block and ingredient of $(l:logistics/roads#asphalt)Asphalt$(), can be found in large quantities in the $(thing)Tar Pools$() biome, along with $(item)Sandstone$().$(br2)Finally, $(item)Halite$() can be found in massive quantities in the $(thing)Salt Caves$() biome, which can be mined for Halite and Sylvite ores."
+			"text": "$(item)Gilsonite$(), a very dark building block and ingredient of $(l:logistics/roads#asphalt)Asphalt$(), can be found in large quantities in the $(l:beneath/beneath#tar_pools)Tar Pools$() biome, along with $(item)Sandstone$().$(br2)Finally, $(item)Halite$() can be found in massive quantities in the $(l:beneath/beneath#salt_caves)Salt Caves$() biome, which can be mined for Halite and Sylvite ores."
 		},
 		{
 			"type": "patchouli:relations",

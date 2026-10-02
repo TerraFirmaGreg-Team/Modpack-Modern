@@ -1,5 +1,5 @@
 {
-    "name": "Anvils",
+    "name": "Kowadła",
     "category": "tfg:craftsmanship",
     "icon": "tfc:metal/anvil/bronze",
     "pages": [
@@ -11,7 +11,7 @@
         {
             "type": "patchouli:text",
             "anchor": "intro",
-            "title": "Introduction",
+            "title": "Wprowadzenie",
             "text": "An alternative to casting tools directly (and a requirement for higher tier metals) is to use an $(thing)Anvil$(). An anvil is a block which can be used for two different processes: $(l:craftsmanship/anvils#working)Working$() and $(l:craftsmanship/anvils#welding)Welding$(). An anvil can weld double ingots of the metal type needed to create the next tier anvil above it, which will be necessary to work other items from that metal."
         },
         {
@@ -222,7 +222,7 @@
             "type": "patchouli:text",
             "anchor": "welding",
             "text": "Welding is a process through which two items are fused together to create a new item. Welding works the same whether on a $(l:craftsmanship/anvils#stone_anvil)Stone Anvil$() or a $(l:craftsmanship/anvils#metal_anvil)Metal Anvil$().$(br2)First, you must place the two items you want to weld on the anvil by opening the anvil interface and inserting them in the two leftmost slots.",
-            "title": "Welding"
+            "title": "Spawanie"
         },
         {
             "type": "patchouli:text",
@@ -335,7 +335,7 @@
         {
             "type": "patchouli:spotlight",
             "anchor": "helve_hammer",
-            "title": "Helve Hammer",
+            "title": "Młot spadowy",
             "item": "vintageimprovements:helve_hammer",
             "text": "The $(item)Helve Hammer$() is a device that can automate many anvil functions using $(thing)mechanical energy$().$(br)To function, a helve hammer needs an anvil below its striking face. The $(l:craftsmanship/anvils#tiers)Tier$() of the anvil will dictate how many blows is needed. To add items to a helve hammer simply $(bold)throw$() them on top of the anvil with $(item)$(k:key.drop)$(). Items may be extracted automatically by adding funnels to the hammer head block."
         },
@@ -571,7 +571,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "Czytaj dalej",
             "anchor": "relations",
             "entries": [
                 "tfg:craftsmanship/pottery",
