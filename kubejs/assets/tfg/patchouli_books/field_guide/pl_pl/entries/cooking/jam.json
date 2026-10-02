@@ -6,7 +6,7 @@
         {
             "type": "patchouli:text",
             "anchor": "index",
-            "text": "$(li)$(bold)$(l:cooking/jam#jarring_station)Jarring Station$()$(li)$(bold)$(l:cooking/jam#shelves)Jar Shelves$()$(li)$(bold)$(l:cooking/jam#jarbnets)Jarbnets$()"
+            "text": "$(li)$(bold)$(l:cooking/jam#jarring_station)Stacja do napełniania słoików$()$(li)$(bold)$(l:cooking/jam#shelves)Półki na słoiki$()$(li)$(bold)$(l:cooking/jam#jarbnets)Szafki na słoiki$()"
         },
         {
             "type": "patchouli:spotlight",
@@ -32,19 +32,19 @@
             "type": "patchouli:spotlight",
             "item": "tag:tfc:jar_shelves,tag:beneath:jar_shelves",
             "anchor": "shelves",
-            "title": "Jar Shelves",
+            "title": "Półki na słoiki",
             "text": "$(thing)Jar Shelves$() can be attached to solid walls. They can be placed directly or by clicking on an existing block of placed jars. The top of the jar shelf counts as a solid surface for placing items, more jars, or other blocks.$(br)Jars can be placed on any solid surfaces with $(item)$(k:key.use)$(). A block can contain four jars of any kind."
         },
         {
             "type": "patchouli:spotlight",
             "item": "tag:firmalife:jarbnets",
             "anchor": "jarbnet",
-            "title": "Jarbnets",
+            "title": "Szafki na słoiki",
             "text": "The jarbnet is a cosmetic storage block for $(item)Jars$(), $(item)Candles$(), and $(item)Jugs$(). It can be opened and closed by clicking with an empty hand and $(item)$(k:key.sneak)$() pressed. If candles are inside, it can be lit to produce a small amount of light."
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "Czytaj dalej",
             "anchor": "relations",
             "entries": [
                 "tfg:cooking/food_and_water",

@@ -6,7 +6,7 @@
         {
             "type": "patchouli:text",
             "anchor": "index",
-            "title": "Index",
+            "title": "Каталог",
             "text": "$(bold)$(li)$(l:beneath/beneath_wild_fruits#fruit_trees)Fruit Trees$()$(li2)$(l:beneath/beneath_wild_fruits#lavacado)Lavacado$()$(li2)$(l:beneath/beneath_wild_fruits#magmango)Magmango$()$(bold)$(li)$(l:beneath/beneath_wild_fruits#palm_fruit_trees)Palm Fruit Trees$()$(li2)$(l:beneath/beneath_wild_fruits#oil_palm)Oil Palm$()$(li2)$(l:beneath/beneath_wild_fruits#acai)Açaí$()"
         },
         {
@@ -35,7 +35,7 @@
                     "text": "Апр"
                 },
                 {
-                    "text": "May"
+                    "text": "Май"
                 },
                 {
                     "text": "Июн"
@@ -307,40 +307,40 @@
                     "text": ""
                 },
                 {
-                    "text": "Jan"
+                    "text": "Янв"
                 },
                 {
-                    "text": "Feb"
+                    "text": "Фев"
                 },
                 {
-                    "text": "Mar"
+                    "text": "Мар"
                 },
                 {
-                    "text": "Apr"
+                    "text": "Апр"
                 },
                 {
-                    "text": "May"
+                    "text": "Май"
                 },
                 {
-                    "text": "Jun"
+                    "text": "Июн"
                 },
                 {
-                    "text": "Jul"
+                    "text": "Июл"
                 },
                 {
-                    "text": "Aug"
+                    "text": "Авг"
                 },
                 {
-                    "text": "Sep"
+                    "text": "Сен"
                 },
                 {
-                    "text": "Oct"
+                    "text": "Окт"
                 },
                 {
-                    "text": "Nov"
+                    "text": "Ноя"
                 },
                 {
-                    "text": "Dec"
+                    "text": "Дек"
                 },
                 {
                     "text": "Oil Palm"
@@ -453,7 +453,7 @@
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "Oil palm trees can be found in $(thing)Salt Caves$() and $(thing)Tar Pools$() biomes between Y=50 and Y=190",
+            "text": "Oil palm trees can be found in $(l:beneath/beneath#salt_caves)Salt Caves$() and $(l:beneath/beneath#tar_pools)Tar Pools$() biomes between Y=50 and Y=190",
             "multiblocks": [
                 {
                     "pattern": [
@@ -1081,7 +1081,7 @@
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "Açaí trees can be found in $(thing)Salt Caves$() and $(thing)Tar Pools$() biomes between Y=50 and Y=190",
+            "text": "Açaí trees can be found in $(l:beneath/beneath#salt_caves)Salt Caves$() and $(l:beneath/beneath#tar_pools)Tar Pools$() biomes between Y=50 and Y=190",
             "multiblocks": [
                 {
                     "pattern": [

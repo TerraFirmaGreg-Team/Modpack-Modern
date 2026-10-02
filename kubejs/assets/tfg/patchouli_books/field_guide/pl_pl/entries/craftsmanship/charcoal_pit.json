@@ -210,7 +210,7 @@
         {
             "type": "patchouli:text",
             "anchor": "coke_oven",
-            "title": "Coke Oven",
+            "title": "Piec koksowniczy",
             "text": "The $(thing)Coke Oven$() is a multiblock that can automatically convert logs into charcoal and coal into $(item)Coke$() while producing $(thing)Creosote$(). This structure becomes available when you first produce $(l:craftsmanship/bloomery)Wrought Iron$() and it is recommended to make one as soon as possible. Coke ovens are a massive quality of life upgrade for charcoal production, and both coke and creosote will be necessary for progression."
         },
         {
@@ -251,7 +251,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "Czytaj dalej",
             "anchor": "relations",
             "entries": [
                 "tfg:craftsmanship/pit_kiln",

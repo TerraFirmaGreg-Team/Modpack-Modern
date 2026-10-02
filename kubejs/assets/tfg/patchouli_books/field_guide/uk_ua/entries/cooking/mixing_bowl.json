@@ -1,5 +1,5 @@
 {
-    "name": "Mixing Bowl",
+    "name": "Миска для змішування",
     "category": "tfg:cooking",
     "icon": "firmalife:mixing_bowl",
     "pages": [
@@ -13,7 +13,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "Докладніше",
             "anchor": "relations",
             "entries": [
                 "tfg:cooking/decay",

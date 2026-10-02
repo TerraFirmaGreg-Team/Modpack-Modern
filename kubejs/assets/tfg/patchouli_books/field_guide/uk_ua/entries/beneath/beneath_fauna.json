@@ -14,7 +14,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(li)$(bold)Ворожі$()\n$(li2)$(l:beneath/beneath_fauna#crocodile)Крокодил$()\n$(li2)$(l:beneath/beneath_fauna#piglin)Піґлін$()\n$(li2)$(l:beneath/beneath_fauna#phantom)Примари$()\n$(li2)$(l:beneath/beneath_fauna#kaolin_klayze)Каоліновий Клейз$()\n$(li2)$(l:beneath/beneath_fauna#graphite_glayze)Графітовий Глейз$()\n$(li2)$(l:beneath/beneath_fauna#cliff_hanger)Скельопідвісник$()\n$(li2)$(l:beneath/beneath_fauna#leaf_hanger)Листопідвісник$()\n$(li2)$(l:beneath/beneath_fauna#endermen)Ендермени$()\n$(li2)$(l:beneath/beneath_fauna#spectre)Спектр$()\n$(li2)$(l:beneath/beneath_fauna#wicked)Зловісний$()\n$(li2)$(l:beneath/beneath_fauna#ghoul)Гуль$()\n$(li2)$(l:beneath/beneath_fauna#bewereager)Вовкулака$()"
+			"text": "$(li)$(bold)Ворожі$()\n$(li2)$(l:beneath/beneath_fauna#crocodile)Крокодил$()\n$(li2)$(l:beneath/beneath_fauna#piglin)Піґлін$()\n$(li2)$(l:beneath/beneath_fauna#phantom)Примари$()\n$(li2)$(l:beneath/beneath_fauna#kaolin_klayze)Каоліновий Клейз$()\n$(li2)$(l:beneath/beneath_fauna#graphite_glayze)Графітовий Глейз$()\n$(li2)$(l:beneath/beneath_fauna#cliff_hanger)Скельопідвісник$()\n$(li2)$(l:beneath/beneath_fauna#leaf_hanger)Листопідвісник$()\n$(li2)$(l:beneath/beneath_fauna#endermen)Ендермени$()\n$(li2)$(l:beneath/beneath_fauna#spectre)Спектр$()\n$(li2)$(l:beneath/beneath_fauna#wicked)Зловісник$()\n$(li2)$(l:beneath/beneath_fauna#ghoul)Гуль$()\n$(li2)$(l:beneath/beneath_fauna#bewereager)Вовкулака$()"
 		},
 		{
 			"type": "patchouli:entity",
@@ -28,7 +28,7 @@
 			"type": "patchouli:entity",
 			"entity": "tfc:frog",
 			"scale": 1,
-			"name": "Frog",
+			"name": "Жабка",
 			"anchor": "frog",
 			"text": "$(thing)Жаб$() можна знайти у верхньому та середньому шарах. Їх можна приручити та їсти."
 		},
@@ -36,7 +36,7 @@
 			"type": "patchouli:entity",
 			"entity": "species:mammutilation",
 			"scale": 0.5,
-			"name": "Mammutilation",
+			"name": "Маммутиляція",
 			"anchor": "mammutilation",
 			"text": "$(thing)Мамутиляції$() — це неживі мамонти. Ти можеш позбавити їх страждань і отримати $(item)вовну$()."
 		},
@@ -44,7 +44,7 @@
 			"type": "patchouli:entity",
 			"entity": "beneath:red_elk",
 			"scale": 0.7,
-			"name": "Red Elk",
+			"name": "Червоний лось",
 			"anchor": "red_elk",
 			"text": "$(thing)Червоні лосі$() водяться поблизу самого дна, зазвичай плаваючи в лаві. З них можна отримати $(item)лавостійкі шкури$()."
 		},
@@ -124,7 +124,7 @@
 			"type": "patchouli:entity",
 			"entity": "tfc:crocodile",
 			"scale": 0.5,
-			"name": "Crocodile",
+			"name": "Крокодил",
 			"anchor": "crocodile",
 			"text": "$(thing)Крокодилів$() можна знайти у верхньому та середньому шарах, де вони чатують у засідці!"
 		},
@@ -140,7 +140,7 @@
 			"type": "patchouli:entity",
 			"entity": "primitive_creatures:tfc",
 			"scale": 0.8,
-			"name": "Kaolin Klayze",
+			"name": "Каоліновий Клейз",
 			"anchor": "kaolin_klayze",
 			"text": "$(thing)Каолінові Клейзи$() можна знайти в біомі $(thing)Пишної западини$(), де вони охороняють $(item)каолінітову глину$()!"
 		},
@@ -148,7 +148,7 @@
 			"type": "patchouli:entity",
 			"entity": "primitive_creatures:golem_2",
 			"scale": 1,
-			"name": "Graphite Glayze",
+			"name": "Графітовий Глейз",
 			"anchor": "graphite_glayze",
 			"text": "$(thing)Графітові Глейзи$() можна знайти в нижніх шарах. Обережно, щоб вони не зіштовхнули тебе в лаву!"
 		},
@@ -156,7 +156,7 @@
 			"type": "patchouli:entity",
 			"entity": "species:cliff_hanger",
 			"scale": 0.7,
-			"name": "Cliff Hanger",
+			"name": "Скельопідвісник",
 			"anchor": "cliff_hanger",
 			"text": "$(thing)Скельопідвісники$() можуть причіплятися до різних стель і хапати гравців, які проходять під ними. Вдар їх атакою дальнього бою, щоб змусити їх відпустити!"
 		},
@@ -164,7 +164,7 @@
 			"type": "patchouli:entity",
 			"entity": "species:leaf_hanger",
 			"scale": 0.7,
-			"name": "Leaf Hanger",
+			"name": "Листопідвісник",
 			"anchor": "leaf_hanger",
 			"text": "$(thing)Листопідвісника$() можна знайти в басейнах із солоною водою, де вони хапають гравців, які потрапляють у їхню пастку. Вдар їх, щоб вони відпустили тебе!"
 		},
@@ -188,15 +188,15 @@
 			"type": "patchouli:entity",
 			"entity": "species:wicked",
 			"scale": 0.9,
-			"name": "Wicked",
+			"name": "Зловісник",
 			"anchor": "wicked",
-			"text": "$(thing)Зловісний$() — це привид, який може вселятися в істот поблизу, надаючи їм посилення! Якщо поблизу немає істот, вона використовує атаку дальнього бою. З неї випадає віск."
+			"text": "$(thing)Зловісник$() — це привид, який може вселятися в істот поблизу, надаючи їм посилення! Якщо поблизу немає істот, вона використовує атаку дальнього бою. З неї випадає віск."
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "species:ghoul",
 			"scale": 0.7,
-			"name": "Ghoul",
+			"name": "Гуль",
 			"anchor": "ghoul",
 			"text": "$(thing)Гулі$() — це сліпі монстри, які використовують ехолокацію, щоб знаходити здобич. Вони нейтральні, доки ти не опинишся в межах їхнього «радіуса сканування»!"
 		},
@@ -204,13 +204,13 @@
 			"type": "patchouli:entity",
 			"entity": "species:bewereager",
 			"scale": 0.8,
-			"name": "Bewereager",
+			"name": "Вовкулака",
 			"anchor": "bewereager",
 			"text": "$(thing)Вовкулака$() — це агресивний монстр, який також може стрибнути прямо до тебе! Він накладає на себе посилення та атакує короткими серіями."
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Further Reading",
+			"title": "Докладніше",
 			"anchor": "relations",
 			"entries": [
 				"tfg:the_world/wild_animals",

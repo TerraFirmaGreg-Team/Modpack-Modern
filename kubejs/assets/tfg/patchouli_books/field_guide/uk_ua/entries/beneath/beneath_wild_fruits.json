@@ -6,11 +6,11 @@
         {
             "type": "patchouli:text",
             "anchor": "index",
-            "title": "Index",
+            "title": "Індекс",
             "text": "$(bold)$(li)$(l:beneath/beneath_wild_fruits#fruit_trees)Фруктові дерева$()\n$(li2)$(l:beneath/beneath_wild_fruits#lavacado)Лавокадо$()\n$(li2)$(l:beneath/beneath_wild_fruits#magmango)Магманго$()\n$(bold)$(li)$(l:beneath/beneath_wild_fruits#palm_fruit_trees)Плодові пальми$()\n$(li2)$(l:beneath/beneath_wild_fruits#oil_palm)Олійна пальма$()\n$(li2)$(l:beneath/beneath_wild_fruits#acai)Асаї$()"
         },
         {
-            "title": "Introduction",
+            "title": "Вступ",
             "anchor": "into",
             "type": "patchouli:text",
             "text": "У $(l:beneath)Безодні$() ростуть власні унікальні види диких фруктів, що пристосувалися до екстремальних підземних умов. Їх можна вирощувати тими ж способами, що й звичайні $(l:the_world/wild_fruits)дикі фрукти$() Верхнього світу."
@@ -35,7 +35,7 @@
                     "text": "Квіт"
                 },
                 {
-                    "text": "May"
+                    "text": "Травень"
                 },
                 {
                     "text": "Черв"
@@ -59,7 +59,7 @@
                     "text": "Груд"
                 },
                 {
-                    "text": "Lavacado"
+                    "text": "Лавакадо"
                 },
                 {
                     "fill": "0x6ab553"
@@ -98,7 +98,7 @@
                     "fill": "0x6ab553"
                 },
                 {
-                    "text": "Magmango"
+                    "text": "Магманго"
                 },
                 {
                     "fill": "0x6ab553"
@@ -173,7 +173,7 @@
             "type": "patchouli:text",
             "anchor": "lavacado",
             "text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 8–80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Зволоження$(): 20–100 %$(br2)Дерева лавокадо ростуть із грудня по квітень, починають цвісти у травні та червні, а плоди достигають у липні.",
-            "title": "Lavacado"
+            "title": "Лавакадо"
         },
         {
             "type": "tfg:multimultiblock",
@@ -238,7 +238,7 @@
             "type": "patchouli:text",
             "anchor": "magmango",
             "text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 8–80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Зволоження$(): 30–100 %$(br2)Дерева магманго ростуть із жовтня по лютий, починають цвісти у березні та квітні, а плоди достигають у травні.",
-            "title": "Magmango"
+            "title": "Магманго"
         },
         {
             "type": "tfg:multimultiblock",
@@ -307,61 +307,43 @@
                     "text": ""
                 },
                 {
-                    "text": "Jan"
+                    "text": "Січень"
                 },
                 {
-                    "text": "Feb"
+                    "text": "Лютий"
                 },
                 {
-                    "text": "Mar"
+                    "text": "Березень"
                 },
                 {
-                    "text": "Apr"
+                    "text": "Квітень"
                 },
                 {
-                    "text": "May"
+                    "text": "Травень"
                 },
                 {
-                    "text": "Jun"
+                    "text": "Червень"
                 },
                 {
-                    "text": "Jul"
+                    "text": "Липень"
                 },
                 {
-                    "text": "Aug"
+                    "text": "Серпень"
                 },
                 {
-                    "text": "Sep"
+                    "text": "Вересень"
                 },
                 {
-                    "text": "Oct"
+                    "text": "Жовтень"
                 },
                 {
-                    "text": "Nov"
+                    "text": "Листопад"
                 },
                 {
-                    "text": "Dec"
+                    "text": "Грудень"
                 },
                 {
-                    "text": "Oil Palm"
-                },
-                {
-                    "fill": "0xa217ff"
-                },
-                {
-                    "fill": "0xa8986a"
-                },
-                {
-                    "fill": "0xa8986a"
-                },
-                {
-                    "fill": "0xa217ff"
-                },
-                {
-                    "fill": "0xa217ff"
-                },
-                {
-                    "fill": "0xa217ff"
+                    "text": "Олійна пальма"
                 },
                 {
                     "fill": "0xa217ff"
@@ -373,6 +355,24 @@
                     "fill": "0xa8986a"
                 },
                 {
+                    "fill": "0xa217ff"
+                },
+                {
+                    "fill": "0xa217ff"
+                },
+                {
+                    "fill": "0xa217ff"
+                },
+                {
+                    "fill": "0xa217ff"
+                },
+                {
+                    "fill": "0xa8986a"
+                },
+                {
+                    "fill": "0xa8986a"
+                },
+                {
                     "fill": "0xa8986a"
                 },
                 {
@@ -382,7 +382,7 @@
                     "fill": "0xa217ff"
                 },
                 {
-                    "text": "Açaí"
+                    "text": "Асаї"
                 },
                 {
                     "fill": "0xa217ff"
@@ -425,11 +425,11 @@
             "title": "Плодові пальми",
             "legend": [
                 {
-                    "text": "Dormant",
+                    "text": "У стані спокою",
                     "color": "0xa8986a"
                 },
                 {
-                    "text": "Fruiting",
+                    "text": "Плодоносить",
                     "color": "0xa217ff"
                 }
             ],
@@ -453,7 +453,7 @@
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "Олійні пальми можна знайти в біомах $(thing)Соляні печери$() та $(thing)Дігтярні затони$() на висоті від Y=50 до Y=190.",
+            "text": "Олійні пальми можна знайти в біомах $(l:beneath/beneath#salt_caves)Соляні печери$() та $(l:beneath/beneath#tar_pools)Дігтярні затони$() на висоті від Y=50 до Y=190.",
             "multiblocks": [
                 {
                     "pattern": [
@@ -1081,7 +1081,7 @@
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "Дерева асаї можна знайти в біомах $(thing)Соляні печери$() та $(thing)Дігтярні затони$() на висоті від Y=50 до Y=190.",
+            "text": "Дерева асаї можна знайти в біомах $(l:beneath/beneath#salt_caves)Соляні печери$() та $(l:beneath/beneath#tar_pools)Дігтярні затони$() на висоті від Y=50 до Y=190.",
             "multiblocks": [
                 {
                     "pattern": [
@@ -1827,7 +1827,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "Докладніше",
             "anchor": "relations",
             "entries": [
                 "tfg:the_world/climate",

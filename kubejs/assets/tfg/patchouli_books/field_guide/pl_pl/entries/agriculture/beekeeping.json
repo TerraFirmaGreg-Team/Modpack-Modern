@@ -1,5 +1,5 @@
 {
-    "name": "Beekeeping",
+    "name": "Pszczelarstwo",
     "category": "tfg:agriculture",
     "icon": "firmalife:beehive",
     "pages": [
@@ -359,7 +359,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "Czytaj dalej",
             "anchor": "relations",
             "entries": [
                 "tfg:agriculture/greenhouse",

@@ -21,7 +21,7 @@
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Ash",
+            "title": "Ясень",
             "anchor": "ash",
             "item": "tag:tfc:ash_logs",
             "text": "$(bold)Білий ясен$()$(br)$(thing)Опади$(): 60 — 240мм$(br)$(thing)Температура$(): −13,9 — 0,7°C$(br)$(thing)Днів росту$(): 6"
@@ -63,7 +63,7 @@
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Chestnut",
+            "title": "Каштан",
             "anchor": "chestnut",
             "item": "tag:tfc:chestnut_logs",
             "text": "$(bold)Каштан$()$(br)$(thing)Опади$(): 150 — 300мм$(br)$(thing)Температура$(): -6,6 — 11,6°C$(br)$(thing)Днів росту$(): 6"
@@ -144,7 +144,7 @@
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Mangrove",
+            "title": "Мангрове дерево",
             "anchor": "mangrove",
             "item": "tag:tfc:mangrove_logs",
             "text": "$(bold)Мангрове дерево$()$(br)$(thing)Опади$(): 220мм+$(br)$(thing)Температура$(): 18,0°C+$(br)$(thing)Днів росту$(): 7$(br)Примітка: росте лише в біомі Солончакова затока. Також його можна знайти в $(l:beneath/beneath_tree_index#mangrove)Безодні$()."
@@ -236,7 +236,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "Докладніше",
             "anchor": "relations",
             "entries": [
 				"tfg:the_world/wild_fruits",

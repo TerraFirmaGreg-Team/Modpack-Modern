@@ -6,7 +6,7 @@
         {
             "type": "patchouli:text",
             "text": "$(li)$(bold)$(l:craftsmanship/building_materials#primitive_materials)Примітивні матеріали$()$(li2)$(l:craftsmanship/building_materials#thatch)Тюк соломи$()$(li2)$(l:craftsmanship/building_materials#mud_bricks)Брудна цегла$()$(li2)$(l:craftsmanship/building_materials#wattle_and_daub)Плетінь та обмазка$()$(li)$(bold)$(l:craftsmanship/building_materials#advanced_materials)Вдосконалені матеріали$()$(li2)$(l:craftsmanship/building_materials#alabaster)Алебастр$()$(li2)$(l:craftsmanship/building_materials#bricks_and_mortar)Цегли та будівельний розчин$()$(li)$(bold)$(l:craftsmanship/building_materials#block_interactions)Взаємодія з блоками$()$(li)$(bold)$(l:craftsmanship/building_materials#customizable_blocks)Налаштовування блоків$()$(li)$(bold)$(l:craftsmanship/building_materials#roof_building)Будівництво дахів$()",
-            "title": "Index",
+            "title": "Індекс",
             "anchor": "index"
         },
         {
@@ -19,13 +19,13 @@
             "type": "patchouli:text",
             "anchor": "thatch",
             "text": "Маючи лише $(l:craftsmanship/sticks_and_stones)кам’яний ніж$(), ти можеш отримувати $(thing)солому$(), ламаючи рослиноподібні блоки. Із неї можна створити дуже простий будівельний матеріал: $(thing)тюк соломи$(). Тюк соломи — це легкий блок, на який не діє гравітація, однак гравці та інші сутності можуть проходити крізь нього! За потреби її також можна перетворити назад на $(thing)солому$().",
-            "title": "Thatch"
+            "title": "Тюк соломи"
         },
         {
             "type": "patchouli:crafting",
             "anchor": "mud_bricks",
             "recipe": "tfc:crafting/soil/loam_drying_bricks",
-            "title": "Mud Bricks",
+            "title": "Цегла з бруду",
             "text": "$(thing)Бруд$() можна знайти на землі, під деякими водоймами, у болотистій місцевості на низьких висотах або безпосередньо створити, кинувши землю у воду за допомогою $(item)$(k:key.drop)$. Додавши трохи $(thing)соломи$(), її можна перетворити на $()вологу брудну цеглу$()."
         },
         {
@@ -283,7 +283,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Подальше читання",
+            "title": "Докладніше",
             "anchor": "relations",
             "entries": [
                 "tfg:agriculture/aqueducts",

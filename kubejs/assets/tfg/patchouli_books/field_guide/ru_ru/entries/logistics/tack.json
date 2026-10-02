@@ -6,7 +6,7 @@
         {
             "type": "patchouli:text",
             "text": "$(li)$(bold)$(l:logistics/tack#saddle)Saddle$()$(li)$(bold)$(l:logistics/tack#armor)Horse Armor$()$(li)$(bold)$(l:logistics/tack#horseshoes)Horseshoes$()$(li)$(bold)$(l:logistics/tack#supply_cart)Supply Cart$()$(li)$(bold)$(l:logistics/tack#plow)Plow$()$(li)$(bold)$(l:logistics/tack#animal_cart)Animal Cart$()$(li)$(bold)$(l:logistics/tack#paving_cart)Paving Cart$()",
-            "title": "Index",
+            "title": "Каталог",
             "anchor": "index"
         },
         {

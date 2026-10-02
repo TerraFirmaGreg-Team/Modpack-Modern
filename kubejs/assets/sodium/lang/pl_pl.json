@@ -18,6 +18,7 @@
 	"sodium.options.buttons.donate": "Wesprzyj Sodium!",
 	"sodium.options.buttons.undo": "Cofnij",
 	"sodium.options.chunk_update_threads.name": "Wątki aktualizacji chunków",
+	"sodium.options.chunk_update_threads.tooltip": "Określa liczbę wątków użytych do budowania chunków. Używanie większej liczby wątków może przyspieszyć wczytywanie chunków i ich aktualizowanie, ale może negatywnie wpłynąć na FPS.",
 	"sodium.options.clouds_quality.tooltip": "Kontroluje prezentacje wyrenderowanych chmur na niebie.",
 	"sodium.options.cpu_render_ahead_limit.name": "Limit renderowania klatek z wyprzedzeniem przez CPU",
 	"sodium.options.cpu_render_ahead_limit.value": "%s klatek",

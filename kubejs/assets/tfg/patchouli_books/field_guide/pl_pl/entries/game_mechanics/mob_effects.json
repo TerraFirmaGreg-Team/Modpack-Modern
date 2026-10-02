@@ -25,25 +25,25 @@
         {
             "type": "patchouli:text",
             "anchor": "quenched",
-            "title": "Quenched",
+            "title": "Opity",
             "text": "While active this effect prevents the natural decay of $(l:cooking/food_and_water#thirst)Thirst$(). However, it does not prevent the Thirsty effect from decreasing your meter.$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "cure_parasites",
-            "title": "Cure Parasites",
-            "text": "While active this effect gradually removes $(l:cooking/food_and_water#parasites)Parasite Contamination$() at a rate of about 1% every 10s at base level.$()"
+            "title": "Zwalczanie pasożytów",
+            "text": "Na poziomie podstawowym efekt ten stopniowo zmniejsza $(l:cooking/food_and_water#parasites)skażenie pasożytami$() o około 1% co 10 s.$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "cure_toxins",
-            "title": "Detoxify",
+            "title": "Detoks",
             "text": "While active this effect gradually removes $(l:cooking/food_and_water#toxins)Toxin Contamination$() at a rate of about 1% every 10s at base level.$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "cure_microplastics",
-            "title": "Filter Microplastics",
+            "title": "Filtr mikroplastików",
             "text": "While active this effect gradually removes $(l:cooking/food_and_water#microplastics)Microplastic Contamination$() at a rate of about 1% every 10s at base level.$()"
         },
         {
@@ -61,8 +61,8 @@
         {
             "type": "patchouli:text",
             "anchor": "instant_radiation",
-            "title": "Instant Radiation",
-            "text": "This effect quickly damages the player with $(l:game_mechanics/hazards#radioactive_materials)Radiation Damage$()."
+            "title": "Natychmiastowe promieniowanie",
+            "text": "Efekt ten szybko zadaje graczowi $(l:game_mechanics/hazards#radioactive_materials)obrażenia od promieniowania$()."
         },
         {
             "type": "patchouli:text",
@@ -72,7 +72,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "Czytaj dalej",
             "anchor": "relations",
             "entries": [
                 "tfg:the_world/geology",

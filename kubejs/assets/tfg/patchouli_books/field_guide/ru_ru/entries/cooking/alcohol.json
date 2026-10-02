@@ -5,7 +5,7 @@
   "pages": [
     {
         "type": "patchouli:text",
-        "title": "Index",
+        "title": "Каталог",
         "anchor": "index",
         "text": "$(li)$(bold)$(l:cooking/drinks#alcohol)Alcohol$()$(li)$(bold)$(l:cooking/drinks#aged_alcohol)Aged Alcohol$()$(li)$(bold)$(l:cooking/drinks#vintage_alcohol)Vintage Alcohol$()$(li)$(bold)$(l:cooking/alcohol#wine_making)Wine Making$()$(li2)$(l:cooking/alcohol#wine_properties)Wine Properties$()$(li)$(bold)$(l:cooking/alcohol#wine_shelf)Wine Shelf$()"
     },

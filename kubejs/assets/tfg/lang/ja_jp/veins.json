@@ -1,4 +1,4 @@
-{
+﻿{
 	"emi.category.tfg.ore_vein_info": "鉱脈情報",
 	"tfg.emi.ore_veins.rock_types": "含有岩石の種類:",
 	"tfg.emi.ore_veins.rarity": "レア度: 1/%d チャンク",
@@ -18,11 +18,7 @@
 	"tfg.emi.ore_veins.height": "高さ: %d",
 	"tfg.emi.ore_veins.radius": "半径: %d",
 	"tfg.emi.ore_veins.rainfall": "降水量: ",
-	"tfg.emi.ore_veins.rainfall_range": "%d - %dmm",
 	"tfg.emi.ore_veins.temperature": "気温: ",
-	"tfg.emi.ore_veins.temperature_range": "%d - %d°C",
-	"tfg.emi.ore_veins.temperature_and_below": "≤ %d°C",
-	"tfg.emi.ore_veins.temperature_and_above": "≥ %d°C",
 	"tfg.emi.ore_veins.biomes": "バイオーム:",
 	"tfg.emi.ore_veins.biome_any": ": 不問",
 	"tfg.ore_vein.rose_quartz": "ローズクォーツ",
@@ -280,7 +276,6 @@
 	"tfg.emi.fluid_veins.dimension": "ディメンション:",
 	"tfg.emi.fluid_veins.biomes": "バイオーム:",
 	"tfg.emi.fluid_veins.biome_any": "不問",
-	"tfg.emi.fluid_veins.biomes_overflow": "··· %s",
 	"tfg.emi.fluid_veins.temperature": "気温: %s から %s",
 	"tfg.emi.fluid_veins.rainfall": "降水量: %s から %s",
 	"tfg.emi.fluid_veins.indicator": "地表の指標:",
