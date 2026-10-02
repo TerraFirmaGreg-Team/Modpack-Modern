@@ -137,7 +137,7 @@
                         "X": "tfg:gas_burner[lit=true]",
                         "Y": "firmalife:vat"
                     }
-                },
+                }
             ],
             "name": "",
             "text": "$(thing)Gas Burner$() with cooking appliances.",
