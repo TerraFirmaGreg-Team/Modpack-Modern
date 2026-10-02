@@ -36,7 +36,7 @@
                     "X": "tfc:plant/anthurium"
                 }
             },
-            "name": "Standard",
+            "name": "Звичайні рослини",
             "anchor": "standard_plants",
             "text": "Звичайні рослини схожі на маленькі квіти. Вони ростуть на траві, землі та у городі.",
             "enable_visualize": false
@@ -56,7 +56,7 @@
                     "X": "tfc:plant/sagebrush"
                 }
             },
-            "name": "Dry",
+            "name": "Сухий",
             "text": "Сухостійкі рослини схожі на звичайні, але можуть рости на піску. З'являються в районах із малою кількістю опадів.",
             "enable_visualize": false
         },
@@ -400,7 +400,7 @@
                     "bold": true
                 },
                 {
-                    "text": "Basil"
+                    "text": "Базилік"
                 },
                 {
                     "text": "12 - 25"
@@ -409,7 +409,7 @@
                     "text": "300 - 500"
                 },
                 {
-                    "text": "Bay Laurel"
+                    "text": "Лавровий лист"
                 },
                 {
                     "text": "8 - 14"
@@ -418,7 +418,7 @@
                     "text": "25 - 225"
                 },
                 {
-                    "text": "Cardamom"
+                    "text": "Кардамон"
                 },
                 {
                     "text": "18 - 30"
@@ -427,7 +427,7 @@
                     "text": "350 - 500"
                 },
                 {
-                    "text": "Cilantro"
+                    "text": "Кінза"
                 },
                 {
                     "text": "5 - 15"
@@ -436,7 +436,7 @@
                     "text": "0 - 150"
                 },
                 {
-                    "text": "Cumin"
+                    "text": "Кмин"
                 },
                 {
                     "text": "6 - 20"
@@ -445,7 +445,7 @@
                     "text": "50 - 250"
                 },
                 {
-                    "text": "Oregano"
+                    "text": "Орегано"
                 },
                 {
                     "text": "5 - 13"
@@ -454,7 +454,7 @@
                     "text": "50 - 150"
                 },
                 {
-                    "text": "Pimento"
+                    "text": "Духмяний перець"
                 },
                 {
                     "text": "15 - 30"
@@ -463,7 +463,7 @@
                     "text": "200 - 450"
                 },
                 {
-                    "text": "Vanilla"
+                    "text": "Ваніль"
                 },
                 {
                     "text": "18 - 30"
@@ -502,7 +502,7 @@
                     "X": "firmalife:plant/basil[stage=1]"
                 }
             },
-            "name": "Basil",
+            "name": "Базилік",
             "anchor": "basil",
             "text": "$(thing)Дикий базилік$() росте при температурі від 12 до 25°C, і від 300 до 500 мм опадів.",
             "enable_visualize": false
@@ -522,7 +522,7 @@
                     "X": "firmalife:plant/bay_laurel[stage=1]"
                 }
             },
-            "name": "Bay Laurel",
+            "name": "Лавровий лист",
             "anchor": "bay",
             "text": "$(thing)Дикий лавровий лист$() росте між 8 та 14°C, і від 25 до 225 мм опадів.",
             "enable_visualize": false
@@ -542,7 +542,7 @@
                     "X": "firmalife:plant/cardamom[stage=1]"
                 }
             },
-            "name": "Cardamom",
+            "name": "Кардамон",
             "anchor": "cardamom",
             "text": "$(thing)Дикий кардамон$() росте при температурі від 18 до 30°C, і від 350 до 500 мм опадів.",
             "enable_visualize": false
@@ -562,7 +562,7 @@
                     "X": "firmalife:plant/cilantro[stage=1]"
                 }
             },
-            "name": "Cilantro",
+            "name": "Кінза",
             "anchor": "cilantro",
             "text": "$(thing)Дика кінза$() росте при температурі від 5 до 15°C, і від 0 до 150 мм опадів.",
             "enable_visualize": false
@@ -582,7 +582,7 @@
                     "X": "firmalife:plant/cumin[stage=1]"
                 }
             },
-            "name": "Cumin",
+            "name": "Кмин",
             "anchor": "cumin",
             "text": "$(thing)Дикий кмин$() росте при температурі від 6 до 20°C, і від 50 до 250 мм опадів.",
             "enable_visualize": false
@@ -602,9 +602,9 @@
                     "X": "firmalife:plant/oregano[stage=1]"
                 }
             },
-            "name": "Oregano",
+            "name": "Орегано",
             "anchor": "oregano",
-            "text": "$(thing)Дика материнник$() росте при температурі від 5 до 13°C, і від 50 до 150 мм опадів.",
+            "text": "$(thing)Орегано$() росте при температурі від 5 до 13°C, і від 50 до 150 мм опадів.",
             "enable_visualize": false
         },
         {
@@ -622,7 +622,7 @@
                     "X": "firmalife:plant/pimento[stage=1]"
                 }
             },
-            "name": "Pimento",
+            "name": "Духмяний перець",
             "anchor": "pimento",
             "text": "\"$(thing)Дикий духмяний перець$() росте при температурі від 15 до 30°C, і від 200 до 450 мм опадів.",
             "enable_visualize": false
@@ -642,7 +642,7 @@
                     "X": "firmalife:plant/vanilla[stage=1]"
                 }
             },
-            "name": "Vanilla",
+            "name": "Ваніль",
             "anchor": "vanilla",
             "text": "$(thing)Дика ваніль$() росте при температурі від 18 до 30°C, і від 200 до 500 мм опадів.",
             "enable_visualize": false
@@ -668,7 +668,7 @@
                     "X": "firmalife:plant/butterfly_grass"
                 }
             },
-            "name": "Butterfly Grass",
+            "name": "Метеликова трава",
             "anchor": "butterfly_grass",
             "text": "Рослини метеликової трави.",
             "enable_visualize": false
@@ -679,7 +679,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "Докладніше",
             "anchor": "relations",
             "entries": [
                 "tfg:the_world/wild_fruits",

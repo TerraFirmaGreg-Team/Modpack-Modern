@@ -6,7 +6,7 @@
         {
             "type": "patchouli:text",
             "text": "$(li)$(bold)$(l:craftsmanship/building_materials#primitive_materials)Primitive Materials$()$(li2)$(l:craftsmanship/building_materials#thatch)Thatch$()$(li2)$(l:craftsmanship/building_materials#mud_bricks)Mud Bricks$()$(li2)$(l:craftsmanship/building_materials#wattle_and_daub)Wattle and Daub$()$(li)$(bold)$(l:craftsmanship/building_materials#advanced_materials)Advanced Materials$()$(li2)$(l:craftsmanship/building_materials#alabaster)Alabaster$()$(li2)$(l:craftsmanship/building_materials#bricks_and_mortar)Bricks and Mortar$()$(li)$(bold)$(l:craftsmanship/building_materials#block_interactions)Block Interactions$()$(li)$(bold)$(l:craftsmanship/building_materials#customizable_blocks)Customizable Blocks$()$(li)$(bold)$(l:craftsmanship/building_materials#roof_building)Roof Building$()",
-            "title": "Index",
+            "title": "Indeks",
             "anchor": "index"
         },
         {
@@ -19,13 +19,13 @@
             "type": "patchouli:text",
             "anchor": "thatch",
             "text": "With just a $(l:craftsmanship/sticks_and_stones)Stone Knife$(), you are able to obtain $(thing)Straw$() by breaking plant-like blocks. This can be used to craft a very simple building material: $(thing)Thatch$(). Thatch is a lightweight block that isn't affected by gravity, however players and other entities can pass right through it! It can also be crafted back into $(thing)Straw$() if needed.",
-            "title": "Thatch"
+            "title": "Strzecha"
         },
         {
             "type": "patchouli:crafting",
             "anchor": "mud_bricks",
             "recipe": "tfc:crafting/soil/loam_drying_bricks",
-            "title": "Mud Bricks",
+            "title": "Błotne cegły",
             "text": "$(thing)Mud$() can be found on the ground, underneath some water features, in low elevation swampy environments, or directly made by dropping dirt into water with $(item)$(k:key.drop)$(). With a little bit of $(thing)Straw$(), it can be crafted into $()Wet Mud Bricks$()."
         },
         {

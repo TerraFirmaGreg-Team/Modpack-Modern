@@ -28,7 +28,7 @@
             "type": "patchouli:spotlight",
             "anchor": "scraping",
             "item": "tfc:small_scraped_hide,tfc:medium_scraped_hide,tfc:large_scraped_hide",
-            "title": "Scraping",
+            "title": "Зішкрібання",
             "link_recipes": true,
             "text": "Після вимочування $(thing)вимочену шкуру$() потрібно зчистити, щоб видалити надлишковий матеріал. Щоб зчищити шкуру, розмісти шкуру на $(thing)колоду$(). За допомогою $(item)ножа$() або $(item)ножа для шкреблення$() натискай $(item)$(k:key.use)$() по кожній частині шкури — її текстура почне змінюватися."
         },
@@ -64,7 +64,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "Докладніше",
             "anchor": "relations",
             "entries": [
                 "tfg:agriculture/animal_husbandry",

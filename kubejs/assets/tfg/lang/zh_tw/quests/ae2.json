@@ -1,7 +1,6 @@
 {
     "quests.ae2": "應用能源 2",
     "quests.ae2.subtitle": "登月後解鎖，格雷科技的最強輔助工具",
-    "__comment2": "Left (getting started)",
     "quests.ae2.certus_quartz.title": "賽特斯石英",
     "quests.ae2.certus_quartz.subtitle": "你的一小步，物流的一大步",
     "quests.ae2.certus_quartz.desc": "隨著首次登月，將能找到&b賽特斯石英&r礦脈。\n別擔心，賽特斯石英相當常見也應該容易定位，不過，有個像樣的勘礦儀也無妨。\n\n無論決定安裝採礦機還是手動開採整條礦脈，請務必大量開採，你會需要它來推進 AE2 的進度。",
@@ -12,7 +11,6 @@
     "quests.ae2.hv_machines.title": "三巨頭",
     "quests.ae2.hv_machines.subtitle": "或四大天王?",
     "quests.ae2.hv_machines.desc": "&e篩洗機&r用於礦物加工並提高賽特斯石英、石英岩、地獄石英、紅寶石與鎂鐵鈦礦的產量—這些全是 AE2 的必要材料，趕時間的話，也可以用熔爐熔煉，但這麼做的話會損失大量的免費資源。\n\n第二台機器&e攪拌機&r是製造&d福魯伊克斯水晶&r的唯一方法(下個任務查看更多內容)。別忘了，也能用 Greate 攪拌機作為&6HS&r級機器。\n\n第三台機器&e雷射雕刻機&r能將低品質的寶石組合成無暇品質，從而提供更好的福魯克伊斯產量。\n\n最後，請留意&e高壓反應釜&r 能從寶石粉生產出更多寶石。一旦有資源，裝配它生活將變得輕鬆愜意。",
-    "quests.ae2.hv_machines.task": "Greate or GregTech?",
     "quests.ae2.fluix_crystal.subtitle": "充能水晶",
     "quests.ae2.fluix_crystal.desc": "如你所見，攪拌機製造福魯伊克斯水晶有好幾種方法。\n\n輸入的寶石純度越高產量就越高 — 這正是我們前面推薦製作&e篩選機&r的原因。\n\n即將會有福魯伊克斯水晶的大量需求，尤其是&5流體版&r被廣泛的應用在 AE2 的各式配方。",
     "quests.ae2.extractor.title": "流體提取機",
@@ -28,13 +26,11 @@
     "quests.ae2.ae_press.title": "壓印模板",
     "quests.ae2.ae_press.subtitle": "尋寶遊戲",
     "quests.ae2.ae_press.desc": "在全面深入學習 AE2 前，要收集的最後幾樣東西就是&e四種壓印模板&r。\n\n要取得它們， 得在&3月球&r上找到一塊&eAE2 隕石&r— 它們看起來像是位於大型隕石坑底部的黑色球體。幸運的是，它們並不特別罕見，一塊隕石就會包含全部四個壓印。\n\n&c不過要小心&r──這些隕石通常都有人看守，所以要做好防護措施，如果有勘礦儀的話就帶上，祝你尋寶愉快！",
-    "__comment3": "Middle",
     "quests.ae2.ae_guide.title": "歡迎來到AE2",
     "quests.ae2.ae_guide.subtitle": "又一本免費書籍可供收藏！",
     "quests.ae2.ae_guide.desc": "您已準備好開始建立您的 &bAE2&r 基礎架構！\n\n本章將主要引導您了解目前可以製作和不能製作的內容。\n我們也會重點介紹您應該關注的最重要事項。\n\n為了充分理解 AE2 ，我們強烈建議您使用快捷鍵 &bG&r(類似Create的尋思），或開啟作為任務獎勵提供的 &bME 指南&r。這是遊戲裡最好的AE2教學。\n\n&d專業提示&r：許多&bAE2&r配方都有較便宜的月球替代配方。再次強調，投資建造月球基地將為整個遊戲過程帶來豐厚的回報。\n",
     "quests.ae2.books_again.title": "還需要這本書嗎？",
     "quests.ae2.books_again.desc": "如果想再次獲得實體版 AE2 指南，這裡有個重複任務。",
-    "__comment4": "Top (HV)",
     "quests.ae2.hv.title": "§6HV§r級 AE2",
     "quests.ae2.hv.desc": "整個分支在 &6HV 階段&r 可以完全解鎖！",
     "quests.ae2.ae_controller.subtitle": "ME 網路的心臟",
@@ -45,7 +41,5 @@
     "quests.ae2.terminals.desc": "這些終端是存取您 ME 網路和設定自動製造系統的必要條件。",
     "quests.ae2.crafting_unit.subtitle": "ME 網路的第二個大腦?",
     "quests.ae2.crafting_storage.title": "合成儲存器",
-    "quests.ae2.crafting_accelerator.desc": "直接看遊戲內的指南就行了——比我們在任務裡的解釋更清楚。\n\n慢慢閱讀，它絕對是個好資源！",
-    "__comment5": "Right (IV)",
-    "__comment6": "Bottom (LuV)"
+    "quests.ae2.crafting_accelerator.desc": "直接看遊戲內的指南就行了——比我們在任務裡的解釋更清楚。\n\n慢慢閱讀，它絕對是個好資源！"
 }

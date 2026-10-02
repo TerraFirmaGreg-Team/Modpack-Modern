@@ -11,7 +11,7 @@
         {
             "type": "patchouli:text",
             "anchor": "intro",
-            "title": "Introduction",
+            "title": "Вступ",
             "text": "$(thing)Папір$() виготовляють або з обробленого стебла культури $(l:the_world/wild_crops#papyrus)папірусу$(), або з $(l:agriculture/papermaking#parchment)тваринних шкур$(), або за допомогою тривалого процесу з використанням певних видів $(l:agriculture/papermaking#paper_from_wood)деревини$(). Папір корисний для багатьох речей — наприклад, $(item)рюкзаків$() та $(item)бирок$(), — але найважливіше те, що він потрібен для переходу до $(thing)Електричної епохи$()!"
         },
         {
@@ -24,14 +24,14 @@
         {
             "type": "tfg:sealed_barrel_recipe",
             "anchor": "soaked_papyrus_strip",
-            "title": "Soaked Papyrus Strip",
+            "title": "Вимочена смужка папірусу",
             "recipe": "tfc:barrel/soaked_papyrus_strip",
             "text": "Потім смужки папірусу вимочують у $(l:craftsmanship/barrels)діжці$() з $(thing)водою$()."
         },
         {
             "type": "tfg:loom_recipe",
             "anchor": "unrefined_paper",
-            "title": "Unrefined Paper",
+            "title": "Необроблений папір",
             "recipe": "tfc:loom/unrefined_paper",
             "text": "Потім вимочені смужки папірусу сплітають на $(l:agriculture/weaving#loom)ткацькому верстаті$(), щоб отримати $(thing)необроблений папір$(). Нарешті його потрібно покласти на колоду та $(l:agriculture/leather_making#scraping)зішкребти$(), щоб отримати $(thing)папір$()."
         },
@@ -44,7 +44,7 @@
         {
             "type": "patchouli:crafting",
             "anchor": "treated_hide",
-            "title": "Treated Hide",
+            "title": "Оброблена шкіра",
             "recipe": "tfc:crafting/large_treated_hide",
             "text": "Створення пемзи, молота і зішкрябаної шкури дає секції $(thing)обробленої шкіри$()."
         },
@@ -72,14 +72,14 @@
         },
         {
             "type": "patchouli:crafting",
-            "title": "Hardwood Strip",
+            "title": "Смуга твердого дерева",
             "anchor": "hardwood_strip",
             "recipe": "tfg:crafting/strip_hardwood",
             "text": "Далі очищену деревину потрібно обтесати сокирою, щоб отримати $(item)смужки твердої деревини$(). Це можна зробити за допомогою сокири або скористатися складнішими способами на пізніших етапах."
         },
         {
             "type": "tfg:sealed_barrel_recipe",
-            "title": "Soaked Hardwood Strip",
+            "title": "Просочена смуга твердого дерева",
             "anchor": "soaked_hardwood_strip",
             "recipe": "tfg:barrel/soak_hardwood_strip",
             "text": "Потім окремі смужки вимочують у $(l:craftsmanship/barrels)діжці$() з $(thing)водою$(). Це $(thing)послаблює структурну цілісність$() $(thing)деревини$(), завдяки чому її можна $(thing)подрібнити ще більше$()."
@@ -87,7 +87,7 @@
         {
             "type": "tfg:quern_recipe",
             "recipe": "tfg:quern/soaked_hardwood_strip",
-            "title": "Hardwood Pulp",
+            "title": "Листяна целюлоза",
             "anchor": "hardwood_pulp",
             "text": "Після цього використай $(l:craftsmanship/quern)жорна$(), щоб подрібнити вимочені смужки до $(item)целюлози з твердої деревини$()."
         },
@@ -127,7 +127,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "Докладніше",
             "anchor": "relations",
             "entries": [
                 "tfg:agriculture/animal_husbandry",

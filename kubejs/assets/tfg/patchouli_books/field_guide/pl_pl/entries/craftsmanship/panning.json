@@ -6,7 +6,7 @@
         {
             "type": "patchouli:text",
             "anchor": "panning",
-            "title": "Panning",
+            "title": "Płukanie",
             "text": "$(thing)Panning$() is a method of obtaining ore dusts of certain native ores by searching in rivers and other waterways.$(br2)Panning makes use of $(t:#tfc:ore_deposits)$(6)Ore Deposits$() which are found in gravel patches in the bottom of lakes and rivers.$(br2)In order to get started panning, you will need an $(item)Empty Pan$()."
         },
         {
@@ -52,7 +52,7 @@
         {
             "type": "patchouli:spotlight",
             "anchor": "sluice",
-            "title": "Sluices",
+            "title": "Płuczki",
             "item": "tag:tfc:sluices",
             "text": "The $(thing)Sluice$() is a device that is used to process $(thing)Ore Deposits$() automatically, producing the same results that $(l:craftsmanship/panning#panning)Panning$() does, with slightly higher probabilities."
         },
@@ -87,7 +87,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "Czytaj dalej",
             "anchor": "relations",
             "entries": [
                 "tfg:the_world/geology",

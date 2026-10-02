@@ -254,5 +254,7 @@
 	"itemGroup.fluidlogistics.fluidlogistics_tab": "Create: Fluid Logistics",
 	"logistically_linked.protected": "Ця логістична мережа захищена",
 	"resourcepack.fluidlogistics.cu_again_for_fluidlogistics": "Застарілі мідні текстури для логістики рідин",
-	"fluidlogistics.configuration.advancedLogisticsNetworkEnabled": "Система пакування рідин"
+	"fluidlogistics.configuration.advancedLogisticsNetworkEnabled": "Система пакування рідин",
+	"fluidlogistics.configuration.section.fluidlogistics.common.toml": "Налаштування пакунка рідини",
+	"fluidlogistics.configuration.section.fluidlogistics.common.toml.title": "Налаштування пакунка рідини"
 }

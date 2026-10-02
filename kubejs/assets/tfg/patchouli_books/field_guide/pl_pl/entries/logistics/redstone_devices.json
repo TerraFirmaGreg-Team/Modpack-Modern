@@ -1,5 +1,5 @@
 {
-	"name": "Redstone Devices",
+	"name": "Urządzenia redstone",
 	"category": "tfg:logistics",
 	"icon": "minecraft:comparator",
 	"pages": [
@@ -19,7 +19,7 @@
 			"type": "patchouli:crafting",
 			"anchor": "clock",
 			"recipe": "tfg:shaped/calendar_clock",
-			"text": "The first is the $(thing)Precision Clock$(). The Clock detects the hour, or, when toggled with $(item)$(k:key.use)$(), the month."
+			"text": "Pierwszym urządzeniem jest $(thing)precyzyjny zegar$(). Wykrywa aktualną godzinę, a po przełączeniu za pomocą $(item)$(k:key.use)$() aktualny miesiąc."
 		},
 		{
 			"type": "patchouli:text",
@@ -29,7 +29,7 @@
 			"type": "patchouli:crafting",
 			"anchor": "thermometer",
 			"recipe": "tfg:shaped/thermometer",
-			"text": "Next we have the $(thing)Thermometer$(), which detects the ambient temperature, or the temperature of the device it is placed onto."
+			"text": "Następnym urządzeniem jest $(thing)termometr$(), który mierzy temperaturę otoczenia albo urządzenia, na którym go umieszczono."
 		},
 		{
 			"type": "patchouli:text",
@@ -43,7 +43,7 @@
 		{
 			"type": "tfg:glassworking_recipe",
 			"recipe": "tfg:glassworking/glass_vial",
-			"text": "The glass vial is also able to carry around variable amounts of fluids like a $(item)Wooden Bucket$(), and can safely hold $(thing)Acids$()."
+			"text": "Szklaną fiolkę, podobnie jak $(item)drewniane wiadro$(), można napełniać różnymi ilościami płynów. Można w niej również bezpiecznie przechowywać $(thing)kwasy$()."
 		},
 		{
 			"type": "patchouli:crafting",
@@ -125,7 +125,7 @@
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Further Reading",
+			"title": "Czytaj dalej",
 			"anchor": "relations",
 			"entries": [
 				"tfg:logistics/storage",

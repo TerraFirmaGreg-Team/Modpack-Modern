@@ -32,7 +32,7 @@
 		},
 		{
 			"type": "patchouli:crafting",
-			"title": "Feeding",
+			"title": "Karmienie",
 			"recipe": "tfg:shaped/jellies_nutritional_mash",
 			"anchor": "feeding",
 			"text": "$(thing)Nutritional Mash$() is the main food of all $(thing)jellies$(), primarily made from grains, fruits, and some dimension-specific ingredients.$(br2)Unfortunately, they are quite picky and can only be fed by the $(thing)Player$() and not a $(l:agriculture/animal_husbandry#feeding_trough)Feeding Trough$().$(br)$(#B0B0B0)$(o)Why is it moving..."
@@ -63,7 +63,7 @@
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Further Reading",
+			"title": "Czytaj dalej",
 			"anchor": "relations",
 			"entries": [
 				"tfg:beneath/beneath_fauna",

@@ -10,7 +10,7 @@
         },
         {
             "type": "patchouli:text",
-            "title": "Index",
+            "title": "Каталог",
             "anchor": "index",
             "text": "$(li)$(bold)$(l:the_world/climate#calendar)Calendar$()$(li2)$(l:the_world/climate#seasons)Seasons$()$(li)$(bold)$(l:the_world/climate#climate)Climate$()$(li2)$(l:the_world/climate#temperature)Temperature$()$(li2)$(l:the_world/climate#rainfall)Rainfall$()"
         },

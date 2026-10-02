@@ -148,7 +148,6 @@
     "quests.metal_age.temperature_protection.title": "色付き鋼装備の特徴",
     "quests.metal_age.temperature_protection.subtitle": "恒久的な温度保護",
     "quests.metal_age.temperature_protection.desc": "トングを持ち続けるのに疲れていませんか？色付き鋼が持つ優れた耐熱特性は、防具にも受け継がれています！\n\n&9a青鋼&r製装備は、熱々のインゴットを持ったり、蒸気で満たされたパイプの上を歩いたりといった極端な高温から身を守ってくれます。それに対して、&c赤鋼&r製装備は、同様に低温環境から保護してくれます。チェストプレート系アイテムはアイテムから保護し、ブーツ系アイテムはパイプからの影響を防ぎます。\n\n対応する装備の一覧は、&6#hot_protection_equipment&rおよび&b#cold_protection_equipment&rのタグを確認してください！",
-    "quests.metal_age.temperature_protection.task": "Any red or blue steel equipment",
     "quests.metal_age.crafting_station.title": "改良作業台",
     "quests.metal_age.crafting_station.subtitle": "チェストの壁の有効活用！",
     "quests.metal_age.crafting_station.desc": "作業台が進化して足が生えました！それだけでなく倉庫管理も手伝ってくれるようになりました。\n\nチェストやクレートの隣に設置すると、それらの中身を改良作業台からまとめて確認できるようになります。\n\nEMI経由でクラフトする場合も、そのインベントリからも必要な素材引き出してくれるため、とても便利です！\n\nさらに、GUIを閉じてもアイテムを内部に保持できる機能も備えています。",
