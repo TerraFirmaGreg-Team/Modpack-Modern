@@ -24,20 +24,24 @@
 			"item": "tag:tfchotornot:tongs",
 			"title": "Tongs",
 			"anchor": "tongs",
-			"text": "Hot items are too hot to hold with your bare hands! When an item reaches $(t:Configurable in tfchotornot-common.toml)$(4)Faint Red *$() or higher, it will become $(c)too hot to hold$()! You must hold $(item)tongs$() in your $(thing)off-hand$() in order to avoid burning yourself. The same applies for some $(3)very cold$() items such as $(item)Blue Ice$().$(br2)$(bold)Note:$() Even with tongs, holding hot or cold items in your inventory will affect your $(l:game_mechanics/player_temperature)player temperature$()."
+			"text": "Hot items are too hot to hold with your bare hands! When an item reaches $(t:Configurable in tfchotornot-common.toml)$(4)Faint Red *$() or higher, it will become $(c)too hot to hold$()! You must hold $(item)tongs$() in your $(thing)off-hand$() in order to avoid burning yourself. The same applies for some $(3)very cold$() items such as $(item)Blue Ice$()."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(bold)Note:$() Even with tongs, holding hot or cold items in your inventory will affect your $(l:game_mechanics/player_temperature)player temperature$()."
 		},
 		{
 			"type": "patchouli:crafting",
 			"title": " ",
 			"recipe": "tfchotornot:crafting/tongs/wood",
 			"recipe2": "tfchotornot:crafting/tongs/wrought_iron",
-			"text": "$(item)Wooden Tongs$() are easy to make, but have low durability. Consider upgrading!"
+			"text": ""
 		},
 		{
 			"type": "tfg:anvil_recipe",
 			"title": "Metal Tong Parts",
 			"recipe": "tfchotornot:anvil/tong_part/wrought_iron",
-			"text": "$(item)Metal Tongs$() have much higher durability and can be repaired.$(br2)Note that all tongs take damage while hot things are in your inventory, with more items costing more durability. Toss them ($(item)$(k:key.drop)$()) into water to cool them down fast!"
+			"text": "$(item)Wooden Tongs$() are easy to make, but have low durability. Consider upgrading!$(br)$(item)Metal Tongs$() have much higher durability and can be repaired.$(br)Note that all tongs take damage while hot things are in your inventory, with more items costing more durability. Toss them ($(item)$(k:key.drop)$()) into water to cool them down fast!"
 		},
 		{
 			"type": "patchouli:spotlight",

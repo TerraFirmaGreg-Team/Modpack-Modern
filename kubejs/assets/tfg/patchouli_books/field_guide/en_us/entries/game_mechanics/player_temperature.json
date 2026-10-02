@@ -5,7 +5,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "$(thing)Player Temperature$() is the temperature that affects, $(bold)you$(), the player, and nothing else. It's different from, but influenced by, the $(l:the_world/climate#temperature)Current and Average Temperature$() of your climate.$(br2)You need to keep an eye on it to avoid $(thing)heatstroke$() or $(thing)freezing$()!"
+			"text": "$(thing)Player Temperature$() is the temperature that affects, $(bold)you$(), the player, and nothing else. It's different from, but influenced by, the $(l:the_world/climate#temperature)Current and Average Temperature$() of your climate, among $(l:game_mechanics/player_temperature#what_affects_it)other things$().$(br2)You need to keep an eye on it to avoid $(thing)heatstroke$() or $(thing)freezing$()!"
 		},
 		{
 			"type": "patchouli:text",
@@ -28,7 +28,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "The $(thing)temperature$() are the numbers to pay attention to! If your $(thing)player temperature$() goes $(6)above 30°C$() or $(3)below 0°C$(), you will begin taking damage.$(br2)When you are close to these temperatures, the arrow in the middle of the HUD will either be a bright orange or dark blue, and you will have an orange or blue tint to your screen."
+			"text": "The $(thing)right two temperature numbers$() are the ones to pay attention to! If your $(thing)player temperature$() goes $(6)above 30°C$() or $(3)below 0°C$(), you will begin taking damage.$(br2)When you are close to these temperatures, the arrow in the middle of the HUD will either be a bright orange or dark blue, and you will have an orange or blue tint to your screen."
 		},
 		{
 			"type": "patchouli:text",
@@ -52,15 +52,15 @@
 		},
 		{
 			"type": "patchouli:text",
-			"title": "Food Effects",
+			"title": "Food and Drink",
 			"anchor": "food",
-			"text": "Some $(l:cooking)food items$() may have effects that influence the player's temperature. These are:$(li)$(l:game_mechanics/mob_effects#cooling)Cooling$()$(li)$(l:game_mechanics/mob_effects#warming)Warming$()$(li)$(l:game_mechanics/mob_effects#freezing)Freezing$()$(li)$(l:game_mechanics/mob_effects#blazing)Blazing$()"
+			"text": "Some $(l:cooking)food$() and $(l:cooking/drinks)drinks$() may have effects that influence the player's temperature. These are:$(li)$(l:game_mechanics/mob_effects#cooling)Cooling$()$(li)$(l:game_mechanics/mob_effects#warming)Warming$()$(li)$(l:game_mechanics/mob_effects#freezing)Freezing$()$(li)$(l:game_mechanics/mob_effects#blazing)Blazing$()$(br2)Drinking $(l:cooking/drinks#spring_water)Spring Water$() will warm you up, and $(l:cooking/drinks#ice_slush)Ice Slush$() will cool you down."
 		},
 		{
 			"type": "patchouli:text",
 			"title": "Clothing",
 			"anchor": "clothing",
-			"text": "Wearing $(l:craftsmanship/clothing)clothes$() is another important way to change your temperature. Clothes can either warm you up or cool you down (or neither), and may also have an $(thing)insulation$() effect that reduces the amount that other temperatures can influence you.$(br2)Some head clothes will also protect against $(l:game_mechanics/player_temperature/wetness)direct sunlight$()."
+			"text": "Wearing $(l:craftsmanship/clothing)clothes$() is another important way to change your temperature. Clothes can either warm you up or cool you down (or neither), and may also have an $(thing)insulation$() effect that reduces the amount that other temperatures can influence you.$(br2)Some head clothes will also protect against $(l:game_mechanics/player_temperature#wetness)direct sunlight$()."
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -86,7 +86,8 @@
 				"tfg:game_mechanics/hazards",
 				"tfg:game_mechanics/heating",
 				"tfg:game_mechanics/mob_effects",
-				"tfg:craftsmanship/clothing"
+				"tfg:craftsmanship/clothing",
+				"tfg:craftsmanship/sewing_table"
 			]
 		}
 	],
