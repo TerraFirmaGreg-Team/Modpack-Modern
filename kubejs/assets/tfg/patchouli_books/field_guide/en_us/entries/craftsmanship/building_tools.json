@@ -5,6 +5,12 @@
     "pages": [
         {
             "type": "patchouli:text",
+            "text": "The factory can't grow on an open field! This entry lists some tools that can help you pave over the beautiful landscape and build the warehouses of your dreams.$(br2)$(bold)Tip:$() Vertical slabs getting in the way? You can toggle $(thing)Additional Placements$() by pressing $(item)$(k:key.additionalplacements.placement_toggle)$()."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "index",
+            "title": "Contents",
             "text": "$(li)$(bold)$(l:craftsmanship/building_tools#trowel)Trowel$()$(li)$(bold)$(l:craftsmanship/building_tools#stonecutter)Stonecutter$()$(li)$(bold)$(l:craftsmanship/building_tools#copycats)Copycats$()$(li)$(bold)$(l:craftsmanship/building_tools#framing_saw)Framing Saw$()$(li)$(bold)$(l:craftsmanship/building_tools#architects_cutter)Architect's Cutter$()$(li)$(bold)$(l:craftsmanship/building_tools#wands)Construction Wands$()$(li)$(bold)$(l:craftsmanship/building_tools#schematicannon)Schematicannon$()$(li)$(bold)$(l:craftsmanship/building_tools#terminals)GregTech Terminals$()$(li)$(bold)$(l:craftsmanship/building_tools#gadgets)Building Gadgets$()"
         },
         {
@@ -70,7 +76,7 @@
             "item": "buildinggadgets2:gadget_building,buildinggadgets2:gadget_exchanging,buildinggadgets2:gadget_copy_paste,buildinggadgets2:gadget_cut_paste,buildinggadgets2:gadget_destruction",
             "anchor": "gadgets",
             "title": "Building Gadgets",
-            "text": "Unlocked in $(5)EV$(), $(bold)Building Gadgets$() are powerful tools that let you cut, copy, paste, and otherwise do large operations for building."
+            "text": "Unlocked in $(5)EV$(), $(thing)Building Gadgets$() are powerful tools that let you cut, copy, paste, and otherwise do large operations for building."
         },
         {
             "type": "patchouli:crafting",
