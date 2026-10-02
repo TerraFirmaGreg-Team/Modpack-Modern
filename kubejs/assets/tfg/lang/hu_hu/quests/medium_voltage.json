@@ -1,5 +1,4 @@
 {
-    "__comment2": "Plastic Line",
     "quests.medium_voltage.pyrolyse.title": "Pirolíziskemence",
     "quests.medium_voltage.mv_biomass.title": "Biomassza",
     "quests.medium_voltage.mv_distillery.title": "Lepárló",
@@ -11,10 +10,7 @@
     "quests.medium_voltage.mv_hydrochloric.title": "Sósav",
     "quests.medium_voltage.mv_seawater.title": "Tengervíz",
     "quests.medium_voltage.mv_polyethylene.title": "Polietilén",
-    "__comment3": "Circuits",
     "quests.medium_voltage.mv_pvc.title": "Polivinil-klorid",
-    "__comment4": "EBF",
     "quests.medium_voltage.mv_stainless.title": "Rozsdamentes acél",
-    "quests.medium_voltage.mv_kanthal_ingot.title": "Kanthal",
     "quests.medium_voltage.rhenium.title": "Rénium"
 }

@@ -6,26 +6,26 @@
         {
             "type": "patchouli:text",
             "text": "$(li)$(bold)$(l:logistics/roads#intro)Будівництво доріг$()$(li)$(bold)$(l:logistics/roads#mattock)Універсальна мотика$()$(li)$(bold)$(l:logistics/roads#base_course)Основа дороги$()$(li)$(bold)$(l:logistics/roads#pavers)Бруківка$()$(li2)$(l:logistics/roads#hoggin)Суміш для дорожнього покриття$()$(li2)$(l:logistics/roads#gravel_fill)Гравійна засипка$()$(li2)$(l:logistics/roads#stone)Бруківка, кам’яна бруківка та плитняк$()$(li2)$(l:logistics/roads#concrete)Бетон$()$(li2)$(l:logistics/roads#asphalt)Асфальт$()$(li)$(bold)$(l:logistics/roads#paving_cart)Візок для мощення$()",
-            "title": "Index",
+            "title": "Індекс",
             "anchor": "index"
         },
         {
             "type": "patchouli:text",
             "anchor": "intro",
-            "title": "Introduction",
+            "title": "Вступ",
             "text": "Будівництво доріг життєво важливе для підвищення ефективності наземного транспорту та складається з трьох основних етапів:$(li)$(bold)1:$() Утрамбувати місцевий ґрунт за допомогою $(l:logistics/roads#mattock)універсальної мотики$().$(li)$(bold)2:$() Укласти $(l:logistics/roads#base_course)щебеневу основу$().$(li)$(bold)3:$() Укласти поверхневий $(l:logistics/roads#pavers)матеріал для мощення$().$(br)Для різних типів доріг потрібні різні складники."
         },
         {
             "type": "patchouli:spotlight",
             "item": "tag:rnr:mattocks",
-            "title": "Mattocks",
+            "title": "Універсальні мотики",
             "anchor": "mattock",
             "text": "Універсальна мотика може використовуватися на блоках типу ґрунту подібно до $(l:craftsmanship/chisel)зубила$(). У стандартному режимі блоку мотика утрамбовує ці блоки за допомогою $(item)$(k:key.use)$(). Якщо мотикою було утрамбовано багнюку або багнисті корені, отриману утрамбовану багнюку потрібно відновити, додавши основу дороги."
         },
         {
             "type": "patchouli:spotlight",
             "item": "rnr:crushed_base_course",
-            "title": "Base Course",
+            "title": "Основа дороги",
             "anchor": "base_course",
             "text": "Після утрамбування місцевого ґрунту наступним кроком є облаштування основи дороги. Щебеневу основу дороги можна виготовити з гравію або кам’яного пилу, змішаного з уламками каміння, і нанести на утрамбовані блоки за допомогою $(item)$(k:key.use)$(). Ця основа з подрібненого каміння створює міцну основу, на яку можна вкладати остаточне дорожнє покриття."
         },
@@ -98,7 +98,7 @@
             "type": "patchouli:spotlight",
             "anchor": "hoggin",
             "item": "rnr:hoggin_mix",
-            "title": "Hoggin Mix",
+            "title": "Гарцована суміш",
             "text": "$(item)Гарцована суміш$() — це ущільнюване покриття ґрунту, виготовлене із суміші глини, гравію та піску. Його можна наносити на базовий шар, щоб створити просту доріжку, яка дає помірний бонус $(thing)$(bold)10%$() до швидкості ходьби та дозволяє $(item)тваринному приводу$() працювати зі швидкістю 16 об/хв."
         },
         {
@@ -243,12 +243,12 @@
             "type": "patchouli:spotlight",
             "item": "tag:rnr:concrete_roads",
             "anchor": "concrete",
-            "title": "Concrete",
+            "title": "Бетон",
             "text": "Бетонні дороги дають $(thing)$(bold)30% бонусу до швидкості пересування$() за умови правильного будівництва. Однак будівельники доріг повинні бути уважними під час спорудження бетонних доріг, щоб запобігти їх $(4)розтріскуванню$() або $(4)протоптуванню$() у вологому стані, оскільки це призведе до втрати бонусу до швидкості."
         },
         {
             "type": "patchouli:image",
-            "title": "Concrete Road",
+            "title": "Бетонна дорога",
             "images": [
                 "rnr:textures/gui/book/concrete_road.png"
             ],
@@ -377,7 +377,7 @@
         },
         {
             "type": "patchouli:image",
-            "title": "Asphalt Road",
+            "title": "Асфальтова дорога",
             "images": [
                 "tfg:textures/gui/field_guide/asphalt_roads/overview.png"
             ],
@@ -391,14 +391,14 @@
             "type": "patchouli:spotlight",
             "anchor": "tar_chunk",
             "item": "tfg:tar_chunk",
-            "title": "Tar Chunk",
+            "title": "Шматок дьогтю",
             "text": "Сировиною для асфальтних доріг є нафта. Затверджуй $(thing)нафту$(), $(thing)сиру нафту$(), $(thing)важку нафту$() у $(thing)рідинному затверджувачі$(), щоб отримати відповідні блоки $(thing)дьогтю$(), а потім обробляй їх в $(thing)екстракторі$(), щоб отримати $(thing)шматок дьогтю$()."
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "asphalt_mix",
             "item": "tfg:asphalt_mix_bucket",
-            "title": "Asphalt Mixture",
+            "title": "Асфальтова суміш",
             "text": "У $(thing)змішувачі$() змішай шматки дьогтю та $(thing)кам'яний пил$(), щоб створити $(thing)Асфальтну зв'язну речовину$(). Додавання $(thing)гільсонітового пилу$() збільшує вихід зв'язной речовини.$(br)Потім змішай зв'язне з піском, кам'яним пилом та $(thing)подрібненою основою$(), щоб створити рідку $(thing)асфальтну суміш$().$(br)Зберігай її у контейнері для рідин для зручного транспортування та виливання."
         },
         {
@@ -459,7 +459,7 @@
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Paving Cart",
+            "title": "Візок для мощення",
             "anchor": "paving_cart",
             "item": "tfg:rnr_plow",
             "text": "$(thing)Візок для мощення$() — це спеціалізований візок, призначений для швидкого й ефективного прокладання дорожнього покриття. Його можна заповнити $(6)$(t:#rnr:road_materials)матеріалами для доріг$() та $(thing)щебневою основою$(), а потім причепити до $(l:agriculture/animal_husbandry#equines)коня$() за допомогою $(item)$(k:key.astikorcarts.desc)$(), щоб прокладати дороги під час руху. Візок також може заповнювати будь-які вже встановлені блоки основи дороги."
@@ -468,7 +468,7 @@
             "type": "patchouli:entity",
             "entity": "tfg:rnr_plow",
             "scale": 0.5,
-            "name": "Paving Cart",
+            "name": "Візок для мощення",
             "text": "Леза візка опустяться після натискання $(item)$(k:key.use)$(), що означає, що під час руху візок прокладатиме дорогу."
         },
         {
@@ -507,7 +507,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "Докладніше",
             "anchor": "relations",
             "entries": [
                 "tfg:craftsmanship/building_materials",

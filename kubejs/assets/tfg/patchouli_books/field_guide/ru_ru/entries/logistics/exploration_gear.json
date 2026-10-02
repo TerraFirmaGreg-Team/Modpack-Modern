@@ -6,7 +6,7 @@
         {
             "type": "patchouli:text",
             "text": "$(li)$(bold)$(l:logistics/exploration_gear#hiking_boots)Hiking Boots$()$(li2)$(l:logistics/exploration_gear#safety_boots)Safety Boots$()$(li)$(bold)$(l:logistics/exploration_gear#canes)Canes$()$(li)$(bold)$(l:logistics/exploration_gear#snowshoes)Snowshoes$()$(li)$(bold)$(l:logistics/exploration_gear#snorkel)Snorkel$()$(li)$(bold)$(l:logistics/exploration_gear#flippers)Flippers$()$(li)$(bold)$(l:logistics/exploration_gear#diving_suit)Diving Suit$()$(li2)$(l:logistics/exploration_gear#lava_diving_suit)Lava Diving Suit$()$(li)$(bold)$(l:logistics/exploration_gear#digger_helmet)Digger Helmet$()$(li)$(bold)$(l:logistics/exploration_gear#grappling_hook)Grappling Hook$()$(li2)$(l:logistics/exploration_gear#harpoon)Harpoon$()$(li)$(bold)$(l:logistics/exploration_gear#hang_glider)Hang Glider$()$(li)$(bold)$(l:logistics/exploration_gear#jetpacks)Jetpacks$()",
-            "title": "Index",
+            "title": "Каталог",
             "anchor": "index"
         },
         {

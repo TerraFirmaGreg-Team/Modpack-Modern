@@ -1,5 +1,5 @@
 {
-	"name": "Redstone Devices",
+	"name": "Редстоунові пристрої",
 	"category": "tfg:logistics",
 	"icon": "minecraft:comparator",
 	"pages": [
@@ -125,7 +125,7 @@
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Further Reading",
+			"title": "Докладніше",
 			"anchor": "relations",
 			"entries": [
 				"tfg:logistics/storage",

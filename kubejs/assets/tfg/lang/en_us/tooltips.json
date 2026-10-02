@@ -332,5 +332,14 @@
 
     "tfg.tooltip.growth_time": "Growth Time",
 
-    "tfg.tooltip.digger_helmet_mining_upgrade": "§cDoes not affect larger tools such as Mining Hammers!§r"
+    "tfg.tooltip.digger_helmet_mining_upgrade": "§cDoes not affect larger tools such as Mining Hammers!§r",
+
+    "tfg.tooltip.unit.mB": "%s mB",
+    "tfg.tooltip.unit.seconds": "%s Sec",
+    "tfg.tooltip.unit.power": "Power: %s",
+
+    "tfg.tooltip.gas_burner.flavor_text": "§3A Gas Burner consumes liquid fuels to supply above blocks with heat.§r\nThis device can be controlled with §lRedstone§r:\n- Supplying a signal strength of §e15§r will §oignite§r the burner.\n- Removing all redstone signals will §oextinguish§r the burner.\n- The §omaximum temperature§r of the burner can be set by supplying redstone with signals between §e3-14§r.\n- Comparator output will read the current §ofuel level§r.",
+    "tfg.tooltip.gas_burner.max_temp": "Max Temperature: ",
+    "tfg.tooltip.fuel_burning.days": "%s Days / %s mB (Full Tank)"
+
 }

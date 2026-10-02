@@ -134,6 +134,7 @@
 	"fluidlogistics.fluid_material_checklist": "Lista płynów",
 	"fluidlogistics.fluid_pump.direction.forward": "Do przodu",
 	"fluidlogistics.fluid_pump.direction.reverse": "Odwróć",
+	"fluidlogistics.fluid_pump.transfer_direction": "Kierunek transferu",
 	"fluidlogistics.mechanical_fluid_gun.schedule_mode": "Sposób dystrybucji",
 	"fluidlogistics.mechanical_fluid_gun.schedule_mode.forced_round_robin": "Rotacja (wymuszona)",
 	"fluidlogistics.mechanical_fluid_gun.schedule_mode.prefer_first": "Preferuj pierwsze",
@@ -207,7 +208,7 @@
 	"fluidlogistics.ponder.multi_fluid_tank_storage.text_3": "Komparator mierzy łączny poziom napełnienia",
 	"fluidlogistics.ponder.multi_fluid_tank_storage.text_4": "W trybie przetrwania ciecze nie mogą być dodane lub zabrane manualnie",
 	"fluidlogistics.ponder.multi_fluid_tank_storage.text_5": "Tygle, odpływy i dozowniki mogą automatyzować obsługę pojemników na płyny.",
-	"fluidlogistics.ponder.pump_flow.header": "Transport płynów z użyciem pomp",
+	"fluidlogistics.ponder.pump_flow.header": "Transport płynów za pomocą pomp",
 	"fluidlogistics.ponder.pump_flow.text_1": "Mechaniczne pompy zarządzają przepływem przez system rur, którego są częścią",
 	"fluidlogistics.ponder.pump_flow.text_2": "Ich strzałka określa kierunek przepływu",
 	"fluidlogistics.ponder.pump_flow.text_3": "Rury z tyłu pobierają teraz ciecz...",
@@ -237,7 +238,7 @@
 	"item.fluidlogistics.compressed_storage_tank.tooltip.summary": "Kliknij PPM na zbiornik, aby _przenieść płyn_ i _zużyć_ skompresowany zbiornik",
 	"item.fluidlogistics.fluid_package": "Paczka z płynem",
 	"item.fluidlogistics.fluid_schematic": "Schemat płynów",
-	"item.fluidlogistics.fluid_schematic.tooltip.behaviour1": "Może zostać ustawiona z użyciem narzędzi wyświetlonych na ekranie.",
+	"item.fluidlogistics.fluid_schematic.tooltip.behaviour1": "Może zostać ustawiona za pomocą narzędzi wyświetlonych na ekranie.",
 	"item.fluidlogistics.fluid_schematic.tooltip.behaviour2": "Otwiera _interfejs_ do wprowadzenia dokładnych _współrzędnych_.",
 	"item.fluidlogistics.fluid_schematic.tooltip.condition1": "Kiedy w ręce",
 	"item.fluidlogistics.fluid_schematic.tooltip.condition2": "Kliknięcie PPM w czasie skradania",
@@ -250,5 +251,7 @@
 	"itemGroup.fluidlogistics.fluidlogistics_tab": "Create: Fluid Logistics",
 	"logistically_linked.protected": "Ta sieć logistyczna jest chroniona",
 	"resourcepack.fluidlogistics.cu_again_for_fluidlogistics": "Starsze miedziane tekstury dla moda Fluid Logistics",
-	"fluidlogistics.configuration.advancedLogisticsNetworkEnabled": "System paczek z płynem"
+	"fluidlogistics.configuration.advancedLogisticsNetworkEnabled": "System paczek z płynem",
+	"fluidlogistics.configuration.section.fluidlogistics.common.toml": "Konfiguracja pakowacza płynów",
+	"fluidlogistics.configuration.section.fluidlogistics.common.toml.title": "Konfiguracja pakowacza płynów"
 }

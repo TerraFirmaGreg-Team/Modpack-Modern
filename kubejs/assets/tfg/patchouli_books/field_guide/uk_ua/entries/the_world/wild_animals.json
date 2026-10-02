@@ -5,7 +5,7 @@
 	"pages": [
         {
             "type": "patchouli:text",
-            "title": "Index",
+            "title": "Індекс",
             "anchor": "index",
             "text": "$(li)$(bold)$(l:the_world/wild_animals#intro)Вступ$()$(li)$(bold)$(l:the_world/wild_animals#livestock)Свійська худоба$()$(li2)$(l:the_world/wild_animals#pig)Свиня$()$(li2)$(l:the_world/wild_animals#cow)Корова$()$(li2)$(l:the_world/wild_animals#goat)Коза$()$(li2)$(l:the_world/wild_animals#yak)Як$()$(li2)$(l:the_world/wild_animals#alpaca)Альпака$()$(li2)$(l:the_world/wild_animals#sheep)Вівця$()$(li2)$(l:the_world/wild_animals#musk_ox)Вівцебик$()$(li2)$(l:the_world/wild_animals#chicken)Курка$()$(li2)$(l:the_world/wild_animals#duck)Качка$()$(li2)$(l:the_world/wild_animals#quail)Перепілка$()"
         },
@@ -84,7 +84,7 @@
             "type": "patchouli:text",
             "anchor": "yak",
             "text": "$(bold)$(l:the_world/climate#temperature)Температура появи$(): > −11°C$(br)$(bold)$(l:the_world/climate#rainfall)Опади появи$(): > 100мм$(br)$(bold)Місце появи$(): Холодний клімат$(br)$(bold)Категорія$(): $(l:agriculture/animal_husbandry#dairy_animals)Молочні$()$(br)$(bold)Раціон$(): $(l:cooking/food_and_water#grain)Зерно$()$(br)$(bold)Максимум дитинчат$(): 1$(br)$(bold)Час вагітності$(): 64 днів$(br)$(bold)Час вирощування$(): 180 днів$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Максимальна кількість використань$(): 230$(br)$(bold)Продукт$(): $(l:cooking/cheese)Молоко$()$(br)$(bold)Цикл виробництва$(): 23,5 години",
-            "title": "Yak"
+            "title": "Як"
         },
         {
             "type": "patchouli:entity",
@@ -97,7 +97,7 @@
             "type": "patchouli:text",
             "anchor": "alpaca",
             "text": "$(bold)$(l:the_world/climate#temperature)Температура появи$(): -8–20°C$(br)$(bold)$(l:the_world/climate#rainfall)Опади появи$(): > 250мм$(br)$(bold)Місце появи$(): Помірний клімат$(br)$(bold)Категорія$(): $(l:agriculture/animal_husbandry#wooly_animals)Вовняні$()$(br)$(bold)Раціон$(): $(l:cooking/food_and_water#grain)Зерно$() та $(l:cooking/food_and_water#fruit)Фрукти$()$(br)$(bold)Максимум дитинчат$(): 2$(br)$(bold)Час вагітності$(): 36 днів$(br)$(bold)Час вирощування$(): 98 днів$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Максимальна кількість використань(): 128$(br)$(bold)Продукт$(): $(l:agriculture/weaving)Вовна$()$(br)$(bold)Цикл виробництва$(): 5 днів",
-            "title": "Alpaca"
+            "title": "Альпака"
         },
         {
             "type": "patchouli:entity",
@@ -110,7 +110,7 @@
             "type": "patchouli:text",
             "anchor": "sheep",
             "text": "$(bold)$(l:the_world/climate#temperature)Температура появи$(): 0–35°C$(br)$(bold)$(l:the_world/climate#rainfall)Опади появи$(): 70–300мм$(br)$(bold)Місце появи$(): Сухий клімат$(br)$(bold)Категорія$(): $(l:agriculture/animal_husbandry#wooly_animals)Вовняні$()$(br)$(bold)Раціон$(): $(l:cooking/food_and_water#grain)Зерно$()$(br)$(bold)Максимум дитинчат$(): 2$(br)$(bold)Час вагітності$(): 32 дні$(br)$(bold)Час вирощування$(): 56 днів$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Максимальна кількість використань$(): 60$(br)$(bold)Продукт$(): $(l:agriculture/weaving)Вовна$()$(br)$(bold)Цикл виробництва$(): 7 днів",
-            "title": "Sheep"
+            "title": "Вівця"
         },
         {
             "type": "patchouli:entity",
@@ -123,7 +123,7 @@
             "type": "patchouli:text",
             "anchor": "musk_ox",
             "text": "$(bold)$(l:the_world/climate#temperature)Температура появи$(): -25–0°C$(br)$(bold)$(l:the_world/climate#rainfall)Опади появи$(): > 100мм$(br)$(bold)Місце появи$(): Холодний клімат$(br)$(bold)Категорія$(): $(l:agriculture/animal_husbandry#wooly_animals)Вовняні$()$(br)$(bold)Раціон$(): $(l:cooking/food_and_water#grain)Зерно$()$(br)$(bold)Максимум дитинчат$(): 1$(br)$(bold)Час вагітності$(): 64 дні$(br)$(bold)Час вирощування$(): 168 днів$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Максимальна кількість використань$(): 160$(br)$(bold)Продукт$(): $(l:agriculture/weaving)Вовна$()$(br)$(bold)Цикл виробництва$(): 4 дні",
-            "title": "Musk Ox"
+            "title": "Вівцебик"
         },
         {
             "type": "patchouli:entity",
@@ -162,7 +162,7 @@
             "type": "patchouli:text",
             "anchor": "quail",
             "text": "$(bold)$(l:the_world/climate#temperature)Температура появи$(): -15–15°C$(br)$(bold)$(l:the_world/climate#rainfall)Опади появи$(): > 200мм$(br)$(bold)Місце появи$(): Холодний клімат$(br)$(bold)Категорія$(): $(l:agriculture/animal_husbandry#oviparous_animals)Яйцекладні$()$(br)$(bold)Раціон$(): $(l:cooking/food_and_water#grain)Зерно$(), $(l:cooking/food_and_water#fruit)Фрукти$(), $(l:cooking/food_and_water#vegetables)Овочі$() та $(l:agriculture/growing_crops)Насіння$(), яке може бути гнилим.$(br)$(bold)Цикл відкладання яєць$(): 28 годин$(br)$(bold)Час вирощування$(): 22 дні$(br)$(bold)Час вилуплення$(): 8 днів$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Максимальна кількість використань$(): 48$(br)$(bold)Продукт$(): Яйця та пір'я.$()",
-            "title": "Quail"
+            "title": "Перепілка"
         },
         {
             "type": "patchouli:entity",
@@ -214,7 +214,7 @@
             "type": "patchouli:text",
             "anchor": "dromedary_camel",
             "text": "$(bold)$(l:the_world/climate#temperature)Температура появи$(): > -5°C$(br)$(bold)$(l:the_world/climate#rainfall)Опади появи$(): < 100мм$(br)$(bold)Місця появи$(): Жаркий і сухий клімат$(br)$(bold)Категорія$(): $(l:agriculture/animal_husbandry#camelides)Верблюдові$()$(br)$(bold)Раціон$(): $(l:cooking/food_and_water#grain)Зерно$() та $(l:cooking/food_and_water#fruit)Фрукти$()$(br)$(bold)Максимум дитинчат$(): 1$(br)$(bold)Час вагітності$(): 19 днів$(br)$(bold)Час вирощування$(): 80 днів$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Максимальна кількість використань$(): 60",
-            "title": "Dromedary Camel"
+            "title": "Одногорбий верблюд"
         },
         {
             "type": "patchouli:entity",
@@ -227,7 +227,7 @@
             "type": "patchouli:text",
             "anchor": "bactrian_camel",
             "text": "$(bold)$(l:the_world/climate#temperature)Температура появи$(): > -5°C$(br)$(bold)$(l:the_world/climate#rainfall)Опади появи$(): < 100мм$(br)$(bold)Місця появи$(): Холодний і сухий клімат$(br)$(bold)Категорія$(): $(l:agriculture/animal_husbandry#camelides)Верблюдові$() / $(l:agriculture/animal_husbandry#wooly_animals)Вовняні$()$(br)$(bold)Раціон$(): $(l:cooking/food_and_water#grain)Зерно$() та $(l:cooking/food_and_water#fruit)Фрукти$()$(br)$(bold)Максимум дитинчат$(): 1$(br)$(bold)Час вагітності$(): 24 дні$(br)$(bold)Час вирощування$(): 80 днів$(br)$(bold)$(l:agriculture/animal_husbandry#uses)Максимальна кількість використань$(): 80$(br)$(bold)Продукт$(): $(l:agriculture/weaving)Вовна$()$(br)$(bold)Цикл виробництва$(): 7 днів",
-            "title": "Bactrian Camel"
+            "title": "Двогорбий верблюд"
         },
         {
             "type": "patchouli:entity",
@@ -246,7 +246,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:polar_bear",
             "scale": 0.55,
-            "name": "Polar Bear",
+            "name": "Білий ведмідь",
             "anchor": "polar_bear",
             "text": "Білий ведмідь з'являється лише в найхолодніших регіонах, де $(l:the_world/climate#temperature)температура$() не перевищує 10°C, а рівень $(l:the_world/climate#rainfall)опадів$() становить не менше 100 мм."
         },
@@ -254,7 +254,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:grizzly_bear",
             "scale": 0.55,
-            "name": "Grizzly Bear",
+            "name": "Грізлі",
             "anchor": "grizzly_bear",
             "text": "Грізлі з'являється в лісах помірного клімату з діапазоном $(l:the_world/climate#temperature)температур$() від -15 до 15°C та рівнем $(l:the_world/climate#rainfall)опадів$() щонайменше 200 мм."
         },
@@ -262,7 +262,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:black_bear",
             "scale": 0.55,
-            "name": "Black Bear",
+            "name": "Чорний ведмідь",
             "anchor": "black_bear",
             "text": "Чорний ведмідь з'являється в лісах теплішого та вологішого клімату з $(l:the_world/climate#temperature)температурою$() від 5 до 20°C та рівнем $(l:the_world/climate#rainfall)опадів$() щонайменше 250 мм."
         },
@@ -270,7 +270,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:cougar",
             "scale": 0.6,
-            "name": "Cougar",
+            "name": "Пума",
             "anchor": "cougar",
             "text": "Пума віддає перевагу більшості помірних кліматичних зон із $(l:the_world/climate#temperature)температурою$() від -10 до 21°C та рівнем $(l:the_world/climate#rainfall)опадів$() щонайменше 150 мм."
         },
@@ -278,7 +278,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:panther",
             "scale": 0.6,
-            "name": "Panther",
+            "name": "Пантера",
             "anchor": "panther",
             "text": "Пантера віддає перевагу більшості помірних кліматичних зон із $(l:the_world/climate#temperature)температурою$() від -10 до 21°C та рівнем $(l:the_world/climate#rainfall)опадів$() щонайменше 150 мм."
         },
@@ -286,7 +286,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:lion",
             "scale": 0.55,
-            "name": "Lion",
+            "name": "Лев",
             "anchor": "lion",
             "text": "Лев з'являється на рівнинах із середньою $(l:the_world/climate#temperature)температурою$() щонайменше 16°C та рівнем $(l:the_world/climate#rainfall)опадів$() від 50 до 300 мм."
         },
@@ -294,7 +294,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:tiger",
             "scale": 0.55,
-            "name": "Tiger",
+            "name": "Тигр",
             "anchor": "tiger",
             "text": "Тигр з'являється в лісах із середньою $(l:the_world/climate#temperature)температурою$() щонайменше 13°C та рівнем $(l:the_world/climate#rainfall)опадів$() понад 100 мм."
         },
@@ -302,7 +302,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:sabertooth",
             "scale": 0.6,
-            "name": "Sabertooth",
+            "name": "Шаблезуб",
             "anchor": "sabertooth",
             "text": "Шаблезубий тигр з'являється за будь-якої $(l:the_world/climate#temperature)температури$() вище 0°C та рівня $(l:the_world/climate#rainfall)опадів$() понад 250 мм."
         },
@@ -332,7 +332,7 @@
             "entity": "tfc:crocodile",
             "anchor": "crocodile",
             "scale": 0.7,
-            "name": "Crocodile",
+            "name": "Крокодил",
             "text": "Крокодил з'являється біля річок, озер та боліт за будь-якої $(l:the_world/climate#temperature)температури$() вище 15°C та будь-якого рівня $(l:the_world/climate#rainfall)опадів$(). Вони ведуть нічний спосіб життя і найбільш небезпечні у воді."
         },
         {
@@ -353,7 +353,7 @@
             "entity": "tfc:boar",
             "anchor": "boar",
             "scale": 0.7,
-            "name": "Boar",
+            "name": "Вепр",
             "text": "Дикий кабан з'являється за $(l:the_world/climate#temperature)температури$() від -5 до 25°C та рівня $(l:the_world/climate#rainfall)опадів$() від 130 до 400 мм."
         },
         {
@@ -361,7 +361,7 @@
             "entity": "tfc:moose",
             "anchor": "moose",
             "scale": 0.7,
-            "name": "Moose",
+            "name": "Лось",
             "text": "Лось з'являється в лісах за $(l:the_world/climate#temperature)температури$() від -15 до 10°C та рівня $(l:the_world/climate#rainfall)опадів$() від 150 до 300 мм."
         },
         {
@@ -369,7 +369,7 @@
             "entity": "tfc:wildebeest",
             "anchor": "wildebeest",
             "scale": 0.7,
-            "name": "Wildebeest",
+            "name": "Антилопа гну",
             "text": "Антилопа гну з'являється на відкритих рівнинах за будь-якої $(l:the_world/climate#temperature)температури$() вище 13°C та рівня $(l:the_world/climate#rainfall)опадів$() від 90 до 380 мм."
         },
         {
@@ -377,7 +377,7 @@
             "entity": "tfg:bison",
             "anchor": "bison",
             "scale": 0.7,
-            "name": "Bison",
+            "name": "Бізон",
             "text": "Бізон з'являється на відкритих рівнинах за $(l:the_world/climate#temperature)температури$() від -10 до 15°C та рівня $(l:the_world/climate#rainfall)опадів$() від 160 до 420 мм."
         },
         {
@@ -390,7 +390,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:rabbit",
             "scale": 0.7,
-            "name": "Rabbit",
+            "name": "Кролик",
             "anchor": "rabbit",
             "text": "Кролик відомий тим, що полюбляє гризти моркву та капусту. Вони повсюдно поширені у світі та змінюють колір хутра залежно від клімату. Для їхньої появи достатньо лише 15 мм $(l:the_world/climate#rainfall)опадів$()."
         },
@@ -398,7 +398,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:fox",
             "scale": 0.7,
-            "name": "Fox",
+            "name": "Лисиця",
             "anchor": "fox",
             "text": "Лисиця полюбляє їсти ягоди з кущів. Її можна знайти в лісах за $(l:the_world/climate#temperature)температури$() нижче 25°C та рівня $(l:the_world/climate#rainfall)опадів$() від 130 до 400 мм."
         },
@@ -413,7 +413,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:caribou",
             "scale": 0.6,
-            "name": "Caribou",
+            "name": "Карибу",
             "anchor": "caribou",
             "text": "Північний олень з'являється за будь-якої $(l:the_world/climate#temperature)температури$() нижче -9°C та рівня $(l:the_world/climate#rainfall)опадів$() від 110 до 500 мм."
         },
@@ -428,7 +428,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:bongo",
             "scale": 0.9,
-            "name": "Bongo",
+            "name": "Бонго",
             "anchor": "bongo",
             "text": "Бонго з'являється в лісах за будь-якої $(l:the_world/climate#temperature)температури$() вище 15°C та рівня $(l:the_world/climate#rainfall)опадів$() від 230 до 500 мм."
         },
@@ -457,7 +457,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:peafowl",
             "scale": 0.6,
-            "name": "Peafowl",
+            "name": "Павич",
             "anchor": "peafowl",
             "text": "Павич з'являється в лісах за будь-якої $(l:the_world/climate#temperature)температури$() вище 14°C та рівня $(l:the_world/climate#rainfall)опадів$() від 190 до 500 мм."
         },
@@ -466,7 +466,7 @@
             "entity": "tfg:lemming",
             "scale": 1.5,
             "offset": -0.2,
-            "name": "Lemming",
+            "name": "Лемінг",
             "anchor": "lemming",
             "text": "Лемінг з'являється за будь-якої $(l:the_world/climate#temperature)температури$() від -12 до -3°C та рівня $(l:the_world/climate#rainfall)опадів$() від 160 до 500 мм."
         },
@@ -474,7 +474,7 @@
             "type": "patchouli:entity",
             "entity": "tfg:jerboa",
             "scale": 1.2,
-            "name": "Jerboa",
+            "name": "Тушканчик",
             "anchor": "jerboa",
             "text": "Тушканчик з'являється за будь-якої $(l:the_world/climate#temperature)температури$() від -3 до 25°C та рівня $(l:the_world/climate#rainfall)опадів$() нижче 160 мм."
         },
@@ -482,7 +482,7 @@
             "type": "patchouli:entity",
             "entity": "tfg:mongoose",
             "scale": 0.8,
-            "name": "Mongoose",
+            "name": "Мангуст",
             "anchor": "mongoose",
             "text": "Мангуст з'являється за будь-якої $(l:the_world/climate#temperature)температури$() вище 12°C та рівня $(l:the_world/climate#rainfall)опадів$() від 160 до 500 мм."
         },
@@ -516,13 +516,13 @@
             "type": "patchouli:text",
             "anchor": "fish",
             "text": "$(thing)Риби$() — це невеликі істоти, які плавають у воді. Більшість із них можна $(l:agriculture/fishing)ловити на вудку$(). Деякі віддають перевагу океанам, річкам або озерам.",
-            "title": "Fish"
+            "title": "Риба"
         },
         {
             "type": "patchouli:entity",
             "entity": "tfc:cod",
             "scale": 0.7,
-            "name": "Cod",
+            "name": "Тріска",
             "anchor": "cod",
             "text": "Тріска віддає перевагу холодним океанам із $(l:the_world/climate#temperature)температурою$() не вище 18°C. Її можна виловити вудкою."
         },
@@ -530,7 +530,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:pufferfish",
             "scale": 0.7,
-            "name": "Pufferfish",
+            "name": "Риба фугу",
             "anchor": "pufferfish",
             "text": "Риба фугу мешкає в будь-якому океані з $(l:the_world/climate#temperature)температурою$() щонайменше 10°C."
         },
@@ -538,7 +538,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:jellyfish",
             "scale": 0.7,
-            "name": "Jellyfish",
+            "name": "Медуза",
             "anchor": "jellyfish",
             "text": "Медузи мешкають у тепліших океанах із $(l:the_world/climate#temperature)температурою$() щонайменше 18°C."
         },
@@ -546,7 +546,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:tropical_fish",
             "scale": 0.7,
-            "name": "Tropical Fish",
+            "name": "Тропічна риба",
             "anchor": "tropical_fish",
             "text": "Тропічні риби віддають перевагу теплішим океанам із $(l:the_world/climate#temperature)температурою$() щонайменше 18°C."
         },
@@ -554,7 +554,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:salmon",
             "scale": 0.7,
-            "name": "Salmon",
+            "name": "Лосось",
             "anchor": "salmon",
             "text": "Лосось з'являється в будь-якій річці або озері з $(l:the_world/climate#temperature)температурою$() щонайменше -5°C."
         },
@@ -562,7 +562,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:bluegill",
             "scale": 0.7,
-            "name": "Bluegill",
+            "name": "Синьозябровий окунь",
             "anchor": "bluegill",
             "text": "Синьозябровий окунь з'являється в будь-якій річці або озері з $(l:the_world/climate#temperature)температурою$() від -10°C до 26°C."
         },
@@ -576,7 +576,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:isopod",
             "scale": 0.7,
-            "name": "Isopod",
+            "name": "Рівноніг",
             "anchor": "isopod",
             "text": "Ізоподи з'являються в глибоководних частинах океанів із $(l:the_world/climate#temperature)температурою$() не вище 14°C."
         },
@@ -584,7 +584,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:lobster",
             "scale": 0.7,
-            "name": "Lobster",
+            "name": "Лобстер",
             "anchor": "lobster",
             "text": "Лобстер з'являється в будь-якому океані, $(l:the_world/climate#temperature)температура$() якого не перевищує 21°C."
         },
@@ -592,7 +592,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:crayfish",
             "scale": 0.7,
-            "name": "Crayfish",
+            "name": "Річковий рак",
             "anchor": "crayfish",
             "text": "Річкові раки схожі на лобстерів, але з'являються в річках та озерах. Їм потрібна $(l:the_world/climate#temperature)температура$() щонайменше 5°C та рівень $(l:the_world/climate#rainfall)опадів$() не менше 125 мм."
         },
@@ -600,7 +600,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:horseshoe_crab",
             "scale": 0.7,
-            "name": "Horseshoe Crab",
+            "name": "Мечохвіст",
             "anchor": "horseshoe_crab",
             "text": "Мечохвости з'являються в океанах помірного клімату з $(l:the_world/climate#temperature)температурою$() від 10 до 21°C та рівнем $(l:the_world/climate#rainfall)опадів$() не більше 400 мм."
         },
@@ -614,7 +614,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:orca",
             "scale": 0.25,
-            "name": "Orca",
+            "name": "Косатка",
             "anchor": "orca",
             "text": "Косатки мешкають у глибоких океанах із $(l:the_world/climate#temperature)температурою$() не вище 19°C та рівнем $(l:the_world/climate#rainfall)опадів$() щонайменше 100 мм."
         },
@@ -622,7 +622,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:dolphin",
             "scale": 0.4,
-            "name": "Dolphin",
+            "name": "Дельфін",
             "anchor": "dolphin",
             "text": "Дельфіни мешкають у глибоких океанах із $(l:the_world/climate#temperature)температурою$() щонайменше 10°C та рівнем $(l:the_world/climate#rainfall)опадів$() не менше 200 мм."
         },
@@ -630,7 +630,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:manatee",
             "scale": 0.25,
-            "name": "Manatee",
+            "name": "Ламантин",
             "anchor": "manatee",
             "text": "Ламантини мешкають у будь-яких теплих озерах із $(l:the_world/climate#temperature)температурою$() щонайменше 20°C та рівнем $(l:the_world/climate#rainfall)опадів$() не більше 300 мм."
         },
@@ -638,7 +638,7 @@
             "type": "patchouli:entity",
             "entity": "tfg:leopard_seal",
             "scale": 0.5,
-            "name": "Leopard Seal",
+            "name": "Морський леопард",
             "anchor": "leopard_seal",
             "text": "Морський леопард з'являється лише на найхолодніших пляжах, де $(l:the_world/climate#temperature)температура$() не перевищує -9°C, а рівень $(l:the_world/climate#rainfall)опадів$() становить щонайменше 105 мм. Вони полюють на пінгвінів, а самі стають здобиччю для косаток."
         },
@@ -646,11 +646,11 @@
             "type": "patchouli:text",
             "anchor": "squid",
             "text": "Кальмари можуть з'являтися в будь-якому глибокому океані. З них випадають $(thing)чорнильні мішки$(), і вони випускають чорнило на будь-якого гравця, що підійде надто близько. Подейкують, що кальмари в глибоких недосліджених печерах мають дивні властивості.",
-            "title": "Squid"
+            "title": "Кальмар"
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "Докладніше",
             "anchor": "relations",
             "entries": [
                 "tfg:the_world/wild_crops",

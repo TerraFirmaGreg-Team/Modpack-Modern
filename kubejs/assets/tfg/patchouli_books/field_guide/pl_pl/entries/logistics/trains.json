@@ -1,5 +1,5 @@
 {
-	"name": "Trains",
+	"name": "Pociągi",
 	"category": "tfg:logistics",
 	"icon": "minecraft:rail",
 	"read_by_default": true,
@@ -20,7 +20,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"item": "tag:create:tracks",
-			"title": "Train Tracks",
+			"title": "Tory kolejowe",
 			"anchor": "tracks",
 			"text": "Laying paths to different locations will allow you to relocate your trains.$(br)Placing a track and $(item)$(k:key.use)$() it with $(item)Tracks$() in your hand allows you to place tracks quickly and create curved shapes.$(br)If you hold blocks (or Girders) in your off-hand, these will automatically be placed below any tracks."
 		},
@@ -143,7 +143,7 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Seats",
+			"title": "Siedzenia",
 			"anchor": "seat",
 			"item": "tag:create:seats",
 			"text": "$(item)Seats$() allow you to sit down while operating your train.$(br2)To prevent flying off the train while it's in motion, place a $(item)Seat$() on your $(thing)Train$() and remember to secure it with $(item)Superglue$()."
@@ -195,7 +195,7 @@
 			"type": "patchouli:spotlight",
 			"item": "railways:buffer",
 			"anchor": "buffer",
-			"title": "Track Buffers",
+			"title": "Kozły oporowe",
 			"text": "Using $(item)Track Buffers$() can prevent derailing of your $(thing)Trains$()! Placing them on the end of an unfinished track or at the outer-ends of your track will remove the possibility for your $(thing)Train$() to derail."
 		},
 		{
@@ -208,7 +208,7 @@
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Further Reading",
+			"title": "Czytaj dalej",
 			"anchor": "relations",
 			"entries": [
 				"tfg:logistics/tack",

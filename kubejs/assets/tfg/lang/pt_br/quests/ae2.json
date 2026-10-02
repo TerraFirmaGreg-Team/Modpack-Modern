@@ -1,7 +1,5 @@
 {
-    "quests.ae2": "Applied Energistics 2",
     "quests.ae2.subtitle": "A ferramenta mais poderosa para ajudá-lo com GregTech, desbloqueada após sua primeira viagem à lua",
-    "__comment2": "Left (getting started)",
     "quests.ae2.certus_quartz.title": "Quartzo Certus",
     "quests.ae2.certus_quartz.subtitle": "Um pequeno passo para você, um grande salto para a logística",
     "quests.ae2.certus_quartz.desc": "Com seu primeiro passo na Lua, você terá acesso à seu primeiro veio de &bQuartzo Certus&r.\nNão se preocupe, eles são bem comuns e fáceis de encontrar, embora ter um bom Prospector de Minério não faça mal.\n\nSe você optar por instalar uma mineradora ou extrair manualmente um veio inteiro, certifique-se de coletar uma quantidade considerável, pois você precisará dele para progredir em AE2.",
@@ -21,9 +19,5 @@
     "quests.ae2.ae_processor.subtitle": "Componentes AE2",
     "quests.ae2.forming_press.title": "Prensa de Moldagem",
     "quests.ae2.forming_press.subtitle": "Pequeno também é bom",
-    "quests.ae2.ae_press.subtitle": "Caça ao tesouro",
-    "__comment3": "Middle",
-    "__comment4": "Top (HV)",
-    "__comment5": "Right (IV)",
-    "__comment6": "Bottom (LuV)"
+    "quests.ae2.ae_press.subtitle": "Caça ao tesouro"
 }

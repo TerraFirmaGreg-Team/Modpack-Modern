@@ -30,7 +30,7 @@
         {
             "type": "tfg:loom_recipe",
             "anchor": "wool_cloth",
-            "title": "Cloth",
+            "title": "Тканина",
             "recipe": "tfc:loom/wool_cloth",
             "text": "Рецепт $(thing)вовняної тканини$() вимагає 16 одиниць $(thing)вовняної пряжі$(). Додавання матеріалу до ткацького верстата здійснюється за допомогою натискання $(item)$(k:key.use)$(). Потім утримуй $(item)$(k:key.use)$(), щоб запустити роботу верстата. Коли процес завершиться, натисни $(item)$(k:key.use)$(), щоб отримати готовий предмет."
         },
@@ -47,7 +47,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "Докладніше",
             "anchor": "relations",
             "entries": [
                 "tfg:agriculture/growing_crops",

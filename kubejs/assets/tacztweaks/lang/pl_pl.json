@@ -24,6 +24,7 @@
 	"tacztweaks.config.crawl.pitchLowerLimit.name": "Dolny limit pochylenia",
 	"tacztweaks.config.crawl.pitchUpperLimit.description": "Zmienia górny limit pochylenia podczas czołgania się.",
 	"tacztweaks.config.crawl.pitchUpperLimit.name": "Górny limit pochylenia",
+	"tacztweaks.config.crawl.tiltGun.description": "Określa sposób przechylania broni podczas czołgania się.\n\nDomyślnie: przechyla broń podczas skradania się.\nZawsze: automatycznie przechyla broń.\nNigdy: nie przechyla broni.",
 	"tacztweaks.config.crawl.tiltGun.name": "Pochyl broń podczas czołgania się",
 	"tacztweaks.config.crawl.visualTweak.description": "Ulepsza animację czołgania się, aby wyglądała bardziej naturalnie.",
 	"tacztweaks.config.crawl.visualTweak.name": "Poprawki wizualne",

@@ -5,7 +5,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"title": "Index",
+			"title": "Індекс",
 			"anchor": "index",
 			"text": "$(li)$(bold)$(l:cooking/drinks#alcohol)Алкоголь$()\n$(li2)$(l:cooking/drinks#aged_alcohol)Витриманий алкоголь$()\n$(li2)$(l:cooking/drinks#vintage_alcohol)Вінтажний алкоголь$()\n$(li2)$(l:cooking/drinks#table)Таблиця впливу алкоголю$()\n$(li2)$(l:cooking/drinks#wine)Вино$()\n$(li)$(bold)$(l:cooking/drinks#milk)Молоко$()\n$(li)$(bold)$(l:cooking/drinks#spring_water)Джерельна вода$()\n$(li)$(bold)$(l:cooking/drinks#sea_water)Морська вода$()\n$(li)$(bold)$(l:cooking/drinks#muddy_water)Брудна вода$()\n$(li)$(bold)$(l:cooking/drinks#juice)Фруктовий сік$()\n$(li)$(bold)$(l:cooking/drinks#yogurt)Йогурт$()\n$(li)$(bold)$(l:cooking/drinks#smoothie)Фруктовий смузі$()\n$(li)$(bold)$(l:cooking/drinks#ice_slush)Крижана крихта$()"
 		},
@@ -35,19 +35,19 @@
 			"anchor": "table",
 			"strings": [
 				{
-					"text": "Alcohol",
+					"text": "Алкоголь",
 					"bold": true
 				},
 				{
-					"text": "Aged",
+					"text": "Витримана",
 					"bold": true
 				},
 				{
-					"text": "Vintage",
+					"text": "Вінтажний",
 					"bold": true
 				},
 				{
-					"text": "Beer"
+					"text": "Пиво"
 				},
 				{
 					"text": "Поглинання II (5:20)"
@@ -56,7 +56,7 @@
 					"text": "Поглинання III (8:00)"
 				},
 				{
-					"text": "Cider"
+					"text": "Сидр"
 				},
 				{
 					"text": "Швидкість (5:20)"
@@ -65,7 +65,7 @@
 					"text": "Швидкість II (8:00)"
 				},
 				{
-					"text": "Rum"
+					"text": "Ром"
 				},
 				{
 					"text": "Швидкість II (2:40)"
@@ -74,7 +74,7 @@
 					"text": "Швидкість III (4:00)"
 				},
 				{
-					"text": "Sake"
+					"text": "Саке"
 				},
 				{
 					"text": "Стійкість (5:20)"
@@ -83,7 +83,7 @@
 					"text": "Стійкість II (8:00)"
 				},
 				{
-					"text": "Vodka"
+					"text": "Горілка"
 				},
 				{
 					"text": "Стійкість II (2:40)"
@@ -92,7 +92,7 @@
 					"text": "Стійкість III (4:00)"
 				},
 				{
-					"text": "Whiskey"
+					"text": "Віскі"
 				},
 				{
 					"text": "Квапливість II (2:40)"
@@ -101,7 +101,7 @@
 					"text": "Квапливість III (4:00)"
 				},
 				{
-					"text": "Corn Whiskey"
+					"text": "Кукурудзяний віскі"
 				},
 				{
 					"text": "Квапливість (5:20)"
@@ -110,16 +110,16 @@
 					"text": "Квапливість II (8:00)"
 				},
 				{
-					"text": "Rye Whiskey"
+					"text": "Житній віскі"
 				},
 				{
-					"text": "Haste (5:20)"
+					"text": "Квапливість (5:20)"
 				},
 				{
-					"text": "Haste II (8:00)"
+					"text": "Квапливість II (8:00)"
 				},
 				{
-					"text": "Mead"
+					"text": "Медовуха"
 				},
 				{
 					"text": "Регенерація (5:20)"
@@ -161,35 +161,35 @@
 			"anchor": "milk"
 		},
 		{
-			"title": "Spring Water",
+			"title": "Джерельна вода",
 			"text": "Вживання $(thing)джерельної води$() підіймає температуру тіла на 4°C та накладає невеликий ефект регенерації під час перебування в ній, а також зігріває тебе.\n",
 			"item": "tfc:bucket/spring_water",
 			"type": "patchouli:spotlight",
 			"anchor": "spring_water"
 		},
 		{
-			"title": "Sea Water",
+			"title": "Морська вода",
 			"text": "Вживання $(thing)морської води$() не зволожує тебе, а навпаки робить ще більш спраглим. Висока температура тіла також може посилювати спрагу. Загубився в морі? Поглянь угору під час дощу — це простий спосіб втамувати спрагу!",
 			"type": "patchouli:spotlight",
 			"item": "tfc:bucket/salt_water",
 			"anchor": "sea_water"
 		},
 		{
-			"title": "Muddy Water",
+			"title": "Брудна вода",
 			"text": "Пити $(thing)брудну воду$() не рекомендується. Це спричинить нудоту та заразить тебе $(l:cooking/food_and_water#parasites)паразитами$().",
 			"type": "patchouli:spotlight",
 			"item": "tfg:muddy_water_bucket",
 			"anchor": "muddy_water"
 		},
 		{
-			"title": "Fruit Juice",
+			"title": "Фруктовий сік",
 			"text": "$(thing)Фруктовий сік$() — чудовий спосіб перетворити фрукти на їжу з довшим терміном зберігання. Фруктовий сік дає $(l/food_and_water#quenching_transient_effect)ефект втамування спраги$(), який допомагає втамувати спрагу.$(br2)Фруктовий сік з часом псується.$()",
 			"type": "patchouli:spotlight",
 			"anchor": "juice",
 			"item": "tfg:food/juice"
 		},
 		{
-			"title": "Yogurt",
+			"title": "Йогурт",
 			"text": "$(thing)Йогурт$() забезпечує молочне харчування подібно до молока. Його також можна змішати з фруктами, щоб отримати $(item)Фруктовий йогурт$().$(br2)Йогурт з часом псується.$()",
 			"type": "patchouli:spotlight",
 			"anchor": "yogurt",
@@ -211,7 +211,7 @@
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Further Reading",
+			"title": "Докладніше",
 			"anchor": "relations",
 			"entries": [
 				"tfg:cooking/food_and_water",

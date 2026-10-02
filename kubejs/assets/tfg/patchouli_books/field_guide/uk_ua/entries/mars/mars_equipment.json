@@ -23,42 +23,42 @@
 		{
 			"type": "patchouli:spotlight",
 			"item": "tacz:modern_kinetic_gun{GunId:\"create_armorer:cannon_40mm_salamander\"},tacz:ammo{AmmoId:\"create_armorer:40mmhe\"}",
-			"title": "Shoulder-Fired Field Gun",
+			"title": "Ручна польова гармата",
 			"anchor": "cannon",
-			"text": "Want to walk around with a tank cannon? This gun is slow, heavy, but packs a massive punch."
+			"text": "Хочеш ходити з гарматою від танка? Ця зброя повільна, важка, але завдає величезної шкоди."
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "tacz:ammo{AmmoId:\"applied_armorer:hard_core_quartz_bullet\"},tacz:modern_kinetic_gun{GunId:\"applied_armorer:moritz_rifle_ar77\"},tacz:modern_kinetic_gun{GunId:\"applied_armorer:moritz_sniper_semi_k30\"}",
-			"title": "Advanced Rifles",
+			"title": "Покращена гвинтівка",
 			"anchor": "rifles",
-			"text": "These are good balanced weapons if you don't know what to pick."
+			"text": "Це добре збалансована зброя, якщо ти не знаєш, що обрати."
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "tacz:ammo{AmmoId:\"applied_armorer:fluix_infused_grenade\"},tacz:modern_kinetic_gun{GunId:\"applied_armorer:moritz_gernade_gl3\"}",
-			"title": "Grenade Launcher",
+			"title": "Гранатомет",
 			"anchor": "grenades",
-			"text": "If you ever finding yourself fighting large groups of enemies at once, this may be your ticket."
+			"text": "Якщо тобі коли-небудь доведеться битися з великими групами ворогів одночасно, це може стати твоїм порятунком."
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "tacz:ammo{AmmoId:\"applied_armorer:cluster_quartz_bullet\"},tacz:modern_kinetic_gun{GunId:\"applied_armorer:moritz_shotgun_sg914\"}",
-			"title": "Advanced Shotguns",
+			"title": "Покращений дробовик",
 			"anchor": "shotguns",
-			"text": "Great for blasting close-up targets."
+			"text": "Чудово підходить для знищення цілей зблизька."
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "tacz:ammo{AmmoId:\"applied_armorer:etched_quartz_bullet\"},tacz:modern_kinetic_gun{GunId:\"applied_armorer:niklas_smg_freedom\"},tacz:modern_kinetic_gun{GunId:\"applied_armorer:niklas_pistol_double_win_win\"},tacz:modern_kinetic_gun{GunId:\"applied_armorer:niklas_pistol_semi_pride\"},tacz:modern_kinetic_gun{GunId:\"applied_armorer:niklas_pistol_semi_right\"}",
-			"title": "Advanced Pistols and SMGs",
+			"title": "Покращений пістолет та пістолет-кулемет",
 			"anchor": "pistols",
-			"text": "Want to shoot fast? These guns are perfect."
+			"text": "Хочеш стріляти швидко? Ця зброя ідеально для цього підходить."
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "ad_astra:netherite_space_helmet,ad_astra:netherite_space_suit,ad_astra:netherite_space_pants,ad_astra:netherite_space_boots",
-			"title": "Tungstensteel Space Suit",
+			"title": "Скафандр із вольфрамової сталі",
 			"anchor": "space_suit",
 			"text": "З цим наступним космічним костюмом ти зможеш виживати як у $(b)найхолодніших$(), так і в $(c)найспекотніших$() умовах, які може підкинути космос! Він знадобиться, щоб ти не згорів одразу, щойно ступиш на $(6)Венеру$() та $(5)Меркурій$().$(br)До того ж він дає додаткову броню та більший запас повітря!"
 		},
@@ -82,7 +82,7 @@
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Further Reading",
+			"title": "Докладніше",
 			"anchor": "relations",
 			"entries": [
 				"tfg:mars/mars",
