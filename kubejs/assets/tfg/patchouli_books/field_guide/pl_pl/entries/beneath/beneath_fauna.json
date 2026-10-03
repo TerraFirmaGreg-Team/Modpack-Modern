@@ -142,7 +142,7 @@
 			"scale": 0.8,
 			"name": "Klinik kaolinowy",
 			"anchor": "kaolin_klayze",
-			"text": "$(thing)Gliniki kaolinowe$() można spotkać w $(thing)bujnych jaskiniach$(), gdzie strzegą $(item)gliny kaolinowej$()!"
+			"text": "$(thing)Kliniki kaolinowe$() można spotkać w $(thing)bujnych jaskiniach$(), gdzie strzegą $(item)gliny kaolinowej$()!"
 		},
 		{
 			"type": "patchouli:entity",

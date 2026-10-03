@@ -10,7 +10,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "$(li)$(bold)$(l:cooking/decay#oven_baked)Oven Baking$()$(li)$(bold)$(l:cooking/decay#cellar)Cellars$()$(li2)$(l:cooking/decay#shelf)Cellar Storage$()$(li)$(bold)$(l:cooking/decay#lunch_box)Lunch Boxes$()$(li)$(bold)$(l:cooking/decay#refrigerator)Refrigerators$()$(li)$(bold)$(l:cooking/decay#freeze_dry)Freeze Drying$()$(li)$(bold)$(l:cooking/decay#pest)Pest Control$()"
+            "text": "$(li)$(bold)$(l:cooking/decay#oven_baked)Oven Baking$()$(li)$(bold)$(l:cooking/decay#cellar)Cellars$()$(li2)$(l:cooking/decay#shelf)Cellar Storage$()$(li)$(bold)$(l:cooking/decay#lunch_box)Lunch Boxes$()$(li)$(bold)$(l:cooking/decay#refrigerator)Refrigerators$()$(li)$(bold)$(l:cooking/decay#freeze_dry)Freeze Drying$()$(li)$(bold)$(l:cooking/decay#pest)Pest Control$()$(li)$(bold)$(l:cooking/decay#cutting)Cutting off decay$()"
         },
         {
             "type": "patchouli:text",
@@ -51,7 +51,7 @@
                     "text": "0.900"
                 },
                 {
-                    "text": "Wood Grilled"
+                    "text": "Grilled"
                 },
                 {
                     "text": "0.800"
@@ -467,6 +467,12 @@
             "anchor": "pest",
             "title": "Pests",
             "text": "Food that is left sitting in chests can attract $(thing)Rats$(), so remember to store food properly in vessels, cellars, or fridges. Rats are able to open containers and eat the food out of them. You will be alerted to a rat's presence by the message $(thing)'This container has a foul smell'$(). It is important to note that unsealing and resealing a large vessel before you leave the screen will never attract pests."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "cutting",
+            "title": "Cutting off",
+            "text": "Lastly, you can cut off the decayed part of food by picking up a $(item)knife$() with your cursor and $(item)right-clicking$() a partially decayed food item stack in your inventory.$(br2)This will reset the decay while losing some of the item stack, proportional to how decayed it was."
         },
         {
             "type": "patchouli:relations",

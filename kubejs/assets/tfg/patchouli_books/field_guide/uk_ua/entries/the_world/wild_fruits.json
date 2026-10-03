@@ -5703,7 +5703,7 @@
         {
             "type": "patchouli:text",
             "anchor": "bunchberry",
-            "text": "$(bold)$(l/climate#temperature)Температура$(): 15–35 °C$(br)$(bold)$(l/growing_crops#hydration)Зволоження$(): 24–100%$(br)$(bold)$(l/climate#rainfall)Опади$(): 200–500мм$(br2)Кущі кизилу ростуть з травня по липень, починають цвісти в серпні та вересні, а плодоносять у жовтні.$(br2)Їх можна знайти в лісах.",
+            "text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 15–35 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Зволоження$(): 24–100%$(br)$(bold)$(l:the_world/climate#rainfall)Опади$(): 200–500мм$(br2)Кущі кизилу ростуть з травня по липень, починають цвісти в серпні та вересні, а плодоносять у жовтні.$(br2)Їх можна знайти в лісах.",
             "title": "Кущ кизилу"
         },
         {

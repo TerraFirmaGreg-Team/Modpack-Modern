@@ -33,7 +33,7 @@
             "anchor": "uses_table",
             "strings": [
                 {
-                    "text": "Action",
+                    "text": "Действие",
                     "bold": true
                 },
                 {
@@ -45,11 +45,11 @@
                     "bold": true
                 },
                 {
-                    "text": "Notes",
+                    "text": "Заметки",
                     "bold": true
                 },
                 {
-                    "text": "Mating",
+                    "text": "Спаривание",
                     "bold": true
                 },
                 {
@@ -59,10 +59,10 @@
                     "text": " "
                 },
                 {
-                    "text": "Males Only"
+                    "text": "Только самцы"
                 },
                 {
-                    "text": "Birth",
+                    "text": "Рождение",
                     "bold": true
                 },
                 {
@@ -72,10 +72,10 @@
                     "text": "-10"
                 },
                 {
-                    "text": "Mammals Only"
+                    "text": "Только млекопитающие"
                 },
                 {
-                    "text": "Egg Laying",
+                    "text": "Откладывание яиц",
                     "bold": true
                 },
                 {
@@ -88,7 +88,7 @@
                     "text": "Same Fertilized"
                 },
                 {
-                    "text": "Products",
+                    "text": "Продукты",
                     "bold": true
                 },
                 {
@@ -98,7 +98,7 @@
                     "text": "-1"
                 },
                 {
-                    "text": "Milk, Wool, etc."
+                    "text": "Молоко, Шерсть и т.д."
                 }
             ],
             "title": "Uses Table",
@@ -117,7 +117,7 @@
         },
         {
             "type": "patchouli:text",
-            "title": "Familiarity",
+            "title": "Прирученность",
             "anchor": "familiarity",
             "text": "Livestock can be fed to raise $(thing)familiarity$(). Each animal has foods that it prefers to eat. To feed an animal, $(item)$(k:key.sneak)$() and $(item)$(k:key.use)$() with food in your hand.$(br)Familiarity is required for most livestock interactions. Familiarity will be passed down to offspring from the mother's side―at a reduced level."
         },
@@ -147,37 +147,37 @@
         },
         {
             "type": "patchouli:text",
-            "title": "Mammals",
+            "title": "Млекопитающие",
             "anchor": "mammals",
             "text": "$(thing)Mammals$() are livestock that experience $(thing)Pregnancy$(). Adult mammals that are above 30% familiarity and have been fed that day will mate, given that they are of opposite genders and near each other. The female animal will become $(thing)pregnant$(), which causes it to have children a set number of days after fertilization.$(br)An example is $(l:the_world/wild_animals#pig)Pigs$()."
         },
         {
             "type": "patchouli:text",
-            "title": "Wooly Mammals",
+            "title": "Шерстистые млекопитающие",
             "anchor": "wooly_animals",
             "text": "$(thing)Wooly Animals$() are $(l:agriculture/animal_husbandry#mammals)Mammals$() that can be $(thing)Sheared$() if they are adults and familiar enough to you. Some examples are $(l:the_world/wild_animals#sheep)Sheep$(), $(l:the_world/wild_animals#alpaca)Alpacas$(), and $(l:the_world/wild_animals#musk_ox)Musk Oxen$()."
         },
         {
             "type": "patchouli:text",
-            "title": "Dairy Mammals",
+            "title": "Млекопитающие, дающие молоко",
             "anchor": "dairy_animals",
             "text": "$(thing)Dairy Animals$() are mammals that make $(thing)Milk$(). Female dairy animals can be clicked with a bucket to obtain milk. Some examples are $(l:the_world/wild_animals#goat)Goats$(), $(l:the_world/wild_animals#cow)Cows$(), and $(l:the_world/wild_animals#yak)Yaks$()."
         },
         {
             "type": "patchouli:text",
             "anchor": "equines",
-            "title": "Equines",
+            "title": "Лошадиные",
             "text": "$(thing)Equines$() are $(l:agriculture/animal_husbandry#mammals)Mammals$() that can be ridden when tamed. They become rideable after reaching 15% familiarity when equiped with a $(l:agriculture/leather_making)Saddle$().$(br)$(l:the_world/wild_animals#mule)Mules$() and $(l:the_world/wild_animals#donkey)Donkeys$() can hold any chest or barrel. If holding a barrel, $(item)$(k:key.use)$() while holding $(item)$(k:key.sneak)$() can be used to remove it. The same keys while holding a bucket can be used to drain fluid from the barrel."
         },
         {
             "type": "patchouli:text",
             "anchor": "camelides",
-            "title": "Camels",
+            "title": "Верблюды",
             "text": "$(thing)Camels$() are $(l:agriculture/animal_husbandry#mammals)Mammals$() similar to $(l:agriculture/animal_husbandry#equines)Equines$() in that they can be ridden when tamed. They become rideable after reaching 15% familiarity when equiped with a $(l:agriculture/leather_making)Saddle$(). Camels have a naturally high step-height and can cross ravines with their powerful lunge jumps."
         },
         {
             "type": "patchouli:crafting",
-            "title": "Oviparous Animals",
+            "title": "Яйцекладущие животные",
             "anchor": "oviparous_animals",
             "recipe": "tfc:crafting/nest_box",
             "text": "$(thing)Oviparous Animals$() are not $(l:agriculture/animal_husbandry#mammals)Mammals$(), and instead produce children by laying $(thing)Eggs$(). They need a $(thing)Nest Box$() to lay eggs, which they are capable of locating on their own.$(br)Some examples are $(l:the_world/wild_animals#duck)Ducks$(), $(l:the_world/wild_animals#quail)Quails$(), and $(l:the_world/wild_animals#chicken)Chickens$()."
@@ -185,18 +185,18 @@
         {
             "type": "tfg:heat_recipe",
             "recipe": "tfg:heating/forge_eggs_to_tfc_food_cooked_egg",
-            "text": "$(thing)Eggs$() can be cooked or boiled for food. Male oviparous animals can fertilize females, which causes the next egg laid in the nest box to be fertilized. Fertilized eggs will have a tooltip with how long until they are ready to hatch."
+            "text": "$(thing)Eggs$() can be cooked or boiled for food. Male oviparous animals can fertilize females, which causes the next egg laid in the nest box to be fertilized. Fertilized eggs will have a tooltip with how long until they are ready to hatch.$(br2)Oviparous animals can also be $(thing)plucked$() for feathers with $(item)$(k:key.sneak) + $(k:key.use)$()."
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Feeding Troughs",
+            "title": "Кормушки",
             "anchor": "feeding_trough",
             "item": "tfcgroomer:bismuth_bronze_grooming_station,tfcgroomer:black_bronze_grooming_station,tfcgroomer:bronze_grooming_station,tfcgroomer:copper_grooming_station,tfcgroomer:wrought_iron_grooming_station,tfcgroomer:steel_grooming_station,tfcgroomer:black_steel_grooming_station,tfcgroomer:red_steel_grooming_station,tfcgroomer:blue_steel_grooming_station",
             "text": "$(thing)Feeding Troughs$() can automatically feed animals in an area specified by its tooltip. Higher tier $(l:craftsmanship/metallurgy)Metals$() increase the feeding range.$(br)To add animal feed―and optionally enable automatic breeding―open the troughs interface with $(item)$(k:key.use)$()."
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "Дальнейшее чтение",
             "anchor": "relations",
             "entries": [
                 "tfg:agriculture/growing_crops",

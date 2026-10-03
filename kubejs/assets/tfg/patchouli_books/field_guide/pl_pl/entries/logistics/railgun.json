@@ -24,7 +24,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"item": "tfg:interplanetary_item_launcher",
-			"title": "Nadawca działa szynowego",
+			"title": "Nadajnik działa szynowego",
 			"anchor": "sender",
 			"text": "The $(item)Interplanetary Railgun$() acts as your $(thing)sender multiblock$().$(br2)It's the structure responsible for launching items toward distant $(thing)receivers$() — but it can't receive anything itself."
 		},

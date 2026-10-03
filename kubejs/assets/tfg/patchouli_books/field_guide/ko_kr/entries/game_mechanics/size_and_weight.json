@@ -32,7 +32,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "Items that count towards overburdening include $(thing)Anvils$(), $(thing)Sealed Barrels$(), and $(thing)Crucibles$() (with contents).$(br2)Note: $(l:agriculture/animal_husbandry#equines)Horses$() can also be overburdened.$(br2)Raising your $(l:cooking/food_and_water#protein)Protein$() stat allows you to carry an additional item without being overburdened."
+            "text": "Items that count towards overburdening include $(thing)Anvils$(), $(thing)Sealed Barrels$(), and $(thing)Crucibles$() (with contents).$(br2)Note: $(l:agriculture/animal_husbandry#equines)Horses$() can also be overburdened.$(br2)Raising your $(l:cooking/food_and_water#protein)Protein$() stat allows you to carry an additional item without being overburdened.$(br2)$(bold)Tip:$() Being overburdened protects you from floating while holding $(thing)lighter-than-air$() gases."
         },
         {
             "type": "patchouli:relations",

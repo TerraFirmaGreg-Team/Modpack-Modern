@@ -108,6 +108,10 @@
             "text": "$(li)$(thing)Sweepers$() are used to harvest planters other than Quad and Hydroponic planters. They can be powered by redstone.$(li)$(thing)Pickers$() can be powered via redstone signal from above. They extend down to pick the crops from Quad and Hydroponic planters.$(li)Additionally, $(item)Harvest Baskets$() can be used to harvest most planter types."
         },
         {
+            "type": "patchouli:text",
+            "text": "To collect the loose items that the $(thing)Sweepers$() and $(thing)Pickers$() drop, you can use a $(item)Hopper Minecart$(), a $(thing)Contraption$() with $(item)Funnels$(), or a $(thing)GregTech$() $(item)Item Collector$()."
+        },
+        {
             "type": "patchouli:relations",
             "title": "Czytaj dalej",
             "anchor": "relations",
