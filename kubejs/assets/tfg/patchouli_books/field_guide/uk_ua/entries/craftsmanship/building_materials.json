@@ -5,7 +5,7 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "$(li)$(bold)$(l:craftsmanship/building_materials#primitive_materials)Примітивні матеріали$()$(li2)$(l:craftsmanship/building_materials#thatch)Тюк соломи$()$(li2)$(l:craftsmanship/building_materials#mud_bricks)Брудна цегла$()$(li2)$(l:craftsmanship/building_materials#wattle_and_daub)Плетінь та обмазка$()$(li)$(bold)$(l:craftsmanship/building_materials#advanced_materials)Вдосконалені матеріали$()$(li2)$(l:craftsmanship/building_materials#alabaster)Алебастр$()$(li2)$(l:craftsmanship/building_materials#bricks_and_mortar)Цегли та будівельний розчин$()$(li)$(bold)$(l:craftsmanship/building_materials#block_interactions)Взаємодія з блоками$()$(li)$(bold)$(l:craftsmanship/building_materials#customizable_blocks)Налаштовування блоків$()$(li)$(bold)$(l:craftsmanship/building_materials#roof_building)Будівництво дахів$()",
+            "text": "$(li)$(bold)$(l:craftsmanship/building_materials#primitive_materials)Примітивні матеріали$()$(li2)$(l:craftsmanship/building_materials#thatch)Тюк соломи$()$(li2)$(l:craftsmanship/building_materials#mud_bricks)Брудна цегла$()$(li2)$(l:craftsmanship/building_materials#wattle_and_daub)Плетінь та обмазка$()$(li)$(bold)$(l:craftsmanship/building_materials#advanced_materials)Вдосконалені матеріали$()$(li2)$(l:craftsmanship/building_materials#alabaster)Алебастр$()$(li2)$(l:craftsmanship/building_materials#bricks_and_mortar)Цегли та будівельний розчин$()$(li)$(bold)$(l:craftsmanship/building_materials#block_interactions)Налаштовування блоків$()$(li)$(bold)$(l:craftsmanship/building_materials#roof_building)Будівництво дахів$()$(li)$(bold)$(l:craftsmanship/building_materials#modern)Сучасні матеріали$()",
             "title": "Індекс",
             "anchor": "index"
         },
@@ -280,6 +280,16 @@
                 "rnr:textures/gui/book/thatching.png"
             ],
             "border": true
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "modern",
+            "title": "Сучасні матеріали",
+            "text": "Шукаєш щось трохи сучасніше?$(br)$(li)$(thing)GregTech$() має кілька бетонних блоків і металевих стійок, які також дають $(l:logistics/roads)бонус до швидкості пересування$(). Також у ньому є велика кількість різнокольорових ламп і блоків листового металу.$(li)$(thing)Create Deco$() має металеві містки, вікна, листовий метал, освітлення та цеглу різних кольорів."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)$(item)Балки$(), $(item)Розпірки$() та $(item)Ферми$() чудово підходять для промислових опор.$(li)Дбаєш про безпеку? $(thing)GregTech$(), $(thing)Create Deco$() та $(thing)Modern Markings$() мають різноманітні попереджувальні знаки та декорації.$(li)$(thing)Ad Astra$() має ще більше футуристичних блоків, як-от двері 3×3, додаткові джерела світла та інші металеві блоки.$(li)$(thing)Create: Steam 'n' Rails$() має $(item)локометал$() для величезного вибору кольорових металевих блоків."
         },
         {
             "type": "patchouli:relations",

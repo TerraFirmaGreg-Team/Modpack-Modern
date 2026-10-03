@@ -1,11 +1,11 @@
 {
-    "name": "Beekeeping",
+    "name": "養蜂",
     "category": "tfg:agriculture",
     "icon": "firmalife:beehive",
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "$(thing)Beehives$() are a place to house bees for $(thing)Beekeeping$(). Beekeeping is a direct source of both wax and honey. Beehives need $(item)Beehive Frames$() inside them for the bees to live. Removing frames from an active hive will cause the bees to attack you, unless wearing a full $(item)Beekeeper Suit$(), or with a lit $(thing)Firepit$() beneath the hive."
+            "text": "$(thing)蜂箱$()是為了$(thing)養蜂$()而給蜜蜂的居所。養蜂是蜂蠟和蜂蜜的直接來源。養蜂還要放入$(item)蜂箱框架$()讓蜜蜂們存活。從活躍的蜂巢中取出蜂框會導致蜜蜂攻擊你，除非穿著$(item)養蜂服$()，或在蜂巢下方點燃$(thing)火坑$()。 "
         },
         {
             "type": "patchouli:text",
@@ -359,7 +359,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "延伸閱讀",
             "anchor": "relations",
             "entries": [
                 "tfg:agriculture/greenhouse",

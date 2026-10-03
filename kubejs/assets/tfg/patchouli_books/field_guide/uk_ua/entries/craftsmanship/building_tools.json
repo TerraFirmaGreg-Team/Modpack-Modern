@@ -5,7 +5,13 @@
 	"pages": [
         {
             "type": "patchouli:text",
-            "text": "$(li)$(bold)$(l/building_tools#trowel)Кельма$()$(li)$(bold)$(l/building_tools#stonecutter)Каменеріз$()$(li)$(bold)$(l/building_tools#copycats)Імітатори$()$(li)$(bold)$(l/building_tools#framing_saw)Рамкова пилка$()$(li)$(bold)$(l/building_tools#architects_cutter)Архітекторський різак$()$(li)$(bold)$(l/building_tools#wands)Будівельні палички$()$(li)$(bold)$(l/building_tools#schematicannon)Схематична гармата$()$(li)$(bold)$(l/building_tools#terminals)Термінали GregTech$()$(li)$(bold)$(l/building_tools#gadgets)Будівельні гаджети$()"
+            "text": "Фабрика не може розростатися посеред відкритого поля! У цьому розділі перелічено деякі інструменти, які допоможуть тобі забудувати чудовий ландшафт і звести склади твоєї мрії.$(br2)$(bold)Порада:$() Вертикальні плити заважають? Ти можеш перемикати $(thing)Додаткові варіанти розміщення$(), натискаючи $(item)$(k:key.additionalplacements.placement_toggle)$()."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "index",
+            "title": "Зміст",
+            "text": "$(li)$(bold)$(l:craftsmanship/building_tools#trowel)Кельма$()$(li)$(bold)$(l:craftsmanship/building_tools#stonecutter)Каменеріз$()$(li)$(bold)$(l:craftsmanship/building_tools#copycats)Copycats$()$(li)$(bold)$(l:craftsmanship/building_tools#framing_saw)Рамкова пилка$()$(li)$(bold)$(l:craftsmanship/building_tools#architects_cutter)Архітекторський різак$()$(li)$(bold)$(l:craftsmanship/building_tools#wands)Будівельні палички$()$(li)$(bold)$(l:craftsmanship/building_tools#schematicannon)Схематична гармата$()$(li)$(bold)$(l:craftsmanship/building_tools#terminals)Термінали GregTech$()$(li)$(bold)$(l:craftsmanship/building_tools#gadgets)Будівельні гаджети$()"
         },
         {
             "type": "patchouli:spotlight",
@@ -23,7 +29,7 @@
         {
             "type": "patchouli:spotlight",
             "item": "copycats:copycat_block",
-            "title": "Імітатори",
+            "title": "Copycats",
             "anchor": "copycats",
             "text": "$(bold)Create: Copycats+$() додає багато блоків, які можна $(item)$(k:key.use)$() іншим блоком, щоб скопіювати його зовнішній вигляд. Їх можна виготовляти за допомогою $(thing)Каменеріза$().$(br2)Переглянути його блоки можна, виконавши пошук за $(6)@copycats$() у $(emi)."
         },
@@ -69,8 +75,8 @@
             "type": "patchouli:spotlight",
             "item": "buildinggadgets2:gadget_building,buildinggadgets2:gadget_exchanging,buildinggadgets2:gadget_copy_paste,buildinggadgets2:gadget_cut_paste,buildinggadgets2:gadget_destruction",
             "anchor": "gadgets",
-            "title": "Будівельний гаджет",
-            "text": "Розблоковані в $(5)EV$(), $(bold)Будівельні гаджети$() — це потужні інструменти, які дають змогу вирізати, копіювати, вставляти та виконувати інші масштабні операції для будівництва."
+            "title": "Будівельні гаджети",
+            "text": "Розблоковані в $(5)EV$(), $(thing)Будівельні гаджети$() — це потужні інструменти, які дають змогу вирізати, копіювати, вставляти та виконувати інші масштабні операції для будівництва."
         },
         {
             "type": "patchouli:crafting",

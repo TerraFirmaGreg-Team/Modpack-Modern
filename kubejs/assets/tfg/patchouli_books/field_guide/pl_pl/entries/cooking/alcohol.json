@@ -45,7 +45,7 @@
         "anchor": "bottle_label",
         "title": "Etykieta butelki",
         "recipe": "firmalife:crafting/bottle_label",
-        "text": "$(thing)Bottle labels$() can be renamed in a scribing station, and will add their name to the wine's tooltip."
+        "text": "$(thing)Etykietom butelek$() można nadać nazwę przy stole pisarskim. Nazwa ta pojawi się w podpowiedzi wina."
     },
     {
         "type": "patchouli:text",
