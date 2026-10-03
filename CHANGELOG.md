@@ -66,11 +66,14 @@ The book is no longer split between entries for random addons, or clustered in s
 - Added some gas fuels as valid train fuels (#5022) @FabricatorZayac
 - All pies now decay more slowly. Jam pies have slightly more saturation and can also accept 1-3 raw fruit for extra nutrition. Breakfast pies have a bit more saturation and now use cooked bacon instead of raw. Savoury pies have slightly more saturation but slightly lower nutrition. (#5042) @applenper
 - The temperature bar (which replaces the XP bar) now also indicates the average temperature and player temperature @SakuraKitsurugi @Zippity
+- Player temperature now carries over after death, clamped to 5C~25C @ashleney
+- The Interplanetary Railgun now transports items instantly between planets @ashleney
 ### Bug fixes
 - Fixed some worldgen crashes (#4905, #4900) @Pyritie
 - Fix to repair scrambled pack order at level data which was affecting a few random world-related things such as not being able to collect glass with a gem saw (#4152) @ariedotme
 - Fixed being able to recraft your space suit to repair it instead of just emptying it (#4930) @Pyritie
-- Snow can't accumulate in the Bloomery anormore @NeonNoise
+- Snow can't accumulate in the Bloomery anymore @NeonNoise
+- Snow can't accumulate on top of Water Wheels anymore @ashleney
 - Fix TMRV crashing when exiting right after world join @Redeix
 - Building gadgets now respect ftbchunk claims so they can't be used in order to grief @ashleney
 - The Spatial IO Port now works in claimed chunks even if the server thinks it was not placed by a player @ashleney
@@ -84,6 +87,7 @@ The book is no longer split between entries for random addons, or clustered in s
 - Fixed piglin towers having structure voids at the bottom (#5029) @Filiipa
 - Fixed not being able to use fig and rubber fig interchangeably in some ArborFirmaCraft recipes (#5068) @bigtho80
 - Fixed trowels wiping the NBT of placed Toolboxes (#5061) @Redeix
+- Fixed the Vintage Improvements Centrifuge not properly displaying the names of gregtech materials @ashleney
 ### Mods
 #### TerraFirmaCraft
 - Has been forked! This shouldn't affect you at all, but it ensures long-term stability for the future development of the modpack. Please read [here](https://www.reddit.com/r/TerraFirmaGreg/comments/1wbv1o3/the_future_of_terrafirmacraft_in_tfg/) for more information.
