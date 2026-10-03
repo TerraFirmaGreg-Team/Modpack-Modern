@@ -230,7 +230,7 @@ familiarityDecayLimit = 0.3
 		#
 		# Number of ticks required for a composter in normal conditions to complete. (24000 = 1 game day), default is 12 days.
 		#Range: > 20
-		composterTicks = 288000
+		composterTicks = 144000
 		#
 		# If true, the composter will interact with in-world automation such as hoppers on a side-specific basis.
 		composterEnableAutomation = true
