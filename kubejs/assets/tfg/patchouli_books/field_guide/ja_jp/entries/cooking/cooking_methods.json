@@ -44,7 +44,7 @@
             "type": "patchouli:text",
             "anchor": "grill",
             "title": "Grill",
-            "text": "A $(thing)Grill$() is an item that can be added to a $(item)Firepit$() or $(item)Oven$() to cook foods more efficiently. The grill is able to cook five items at once, and also gives these items the $(thing)Wood Grilled$() trait when cooking food, which provides a minor buff to the item's $(l:cooking/decay)expiration date$(). In order to create a firepit with grill, first create a $(l:craftsmanship/firepit)Firepit$(), then use a $(thing)Wrought Iron Grill$() on the firepit."
+            "text": "A $(thing)Grill$() is an item that can be added to a $(item)Firepit$(), $(item)Oven$(), or $(l:craftsmanship/gas_burner)Gas Burner$() to cook foods more efficiently. The grill is able to cook five items at once, and also gives these items the $(thing)Wood Grilled$() trait when cooking food, which provides a minor buff to the item's $(l:cooking/decay)expiration date$(). In order to create a firepit with grill, first create a $(l:craftsmanship/firepit)Firepit$(), then use a $(thing)Wrought Iron Grill$() on the firepit."
         },
         {
             "type": "patchouli:multiblock",
@@ -69,7 +69,7 @@
             "type": "patchouli:text",
             "title": "Cooking Pot",
             "anchor": "pot",
-            "text": "A $(thing)Pot$() is an item that can be added to the $(item)Firepit$() or $(item)Oven$() to cook new types of food and also produce some other useful items.$(br2)In order to create a firepit with a pot, first create a $(l:craftsmanship/firepit)Firepit$(), then use a $(thing)Ceramic Pot$() on the firepit."
+            "text": "A $(thing)Pot$() is an item that can be added to the $(item)Firepit$(), $(item)Oven$(), or $(l:craftsmanship/gas_burner)Gas Burner$() to cook new types of food and also produce some other useful items.$(br2)In order to create a firepit with a pot, first create a $(l:craftsmanship/firepit)Firepit$(), then use a $(thing)Ceramic Pot$() on the firepit."
         },
         {
             "type": "patchouli:multiblock",
@@ -125,7 +125,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "Ovens are insulated with $(thing)$(t:#firmalife:oven_insulation)Bricks$(), other oven blocks, or anything that can insulate a Forge. This means you can use stone blocks if you want!$(br2)$(item)Tongs$() or $(item)Mittens$() are a safe way to remove hot items from an Oven. Just $(item)$(k:key.use)$() on it while holding it to retrieve items. Otherwise, you may get burned!$(br2)$(item)Oven Appliances$() extend oven functionality."
+            "text": "Ovens are insulated with $(thing)$(t:#firmalife:oven_insulation)Bricks$(), other oven blocks, or anything that can insulate a Forge. This means you can use stone blocks if you want!$(br2)$(l:game_mechanics/heating#tongs)Tongs$() or $(item)Mittens$() are a safe way to remove hot items from an Oven. Just $(item)$(k:key.use)$() on it while holding it to retrieve items. Otherwise, you may get burned!$(br2)$(item)Oven Appliances$() extend oven functionality."
         },
         {
             "type": "patchouli:text",
@@ -366,7 +366,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "To use a vat, $(item)$(k:key.use)$() it with fluids and items to add them to the inventory. With an empty hand and $(item)$(k:key.sneak)$() held, click to seal and unseal the vat. A vat will not boil until it is sealed.$(br)Vats should be placed above a $(thing)Bottom Oven$(). If the vat overflowed on completion of the recipe, it will not boil! Vats can be automatically opened and closed with $(thing)Redstone$()."
+            "text": "To use a vat, $(item)$(k:key.use)$() it with fluids and items to add them to the inventory. With an empty hand and $(item)$(k:key.sneak)$() held, click to seal and unseal the vat. A vat will not boil until it is sealed.$(br)Vats should be placed above a $(thing)Bottom Oven$(). If the vat overflowed on completion of the recipe, it will not boil!$(br2)Vats can be automatically opened and closed with $(thing)Redstone$(), and interact with $(item)pipes$() or a $(item)Mechanical Arm$()."
         },
         {
             "type": "tfg:multimultiblock",

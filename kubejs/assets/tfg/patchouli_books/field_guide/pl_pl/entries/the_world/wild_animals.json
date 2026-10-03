@@ -564,7 +564,7 @@
             "scale": 0.7,
             "name": "Bass niebieski",
             "anchor": "bluegill",
-            "text": "Bass niebieski pojawia się w dowolnych rzekach i jeziorach, gdzie $(l:the_world/climate#temperature)temperatura$() jest co pomiędzy -10°C a 26°C."
+            "text": "Bass niebieski występuje w rzekach i jeziorach o $(l:the_world/climate#temperature)temperaturze$() od -10°C do 26°C."
         },
         {
             "type": "patchouli:text",

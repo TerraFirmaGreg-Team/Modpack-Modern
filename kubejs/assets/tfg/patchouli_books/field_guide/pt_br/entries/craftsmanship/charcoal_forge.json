@@ -99,6 +99,16 @@
             "text": "A puff from a bellows will supply air to a device for 200 ticks. However, most devices allow you to buffer up to 600 ticks of oxygenation at a time.$(br2)Devices will have their fuel consumption doubled no matter the duration of air left, so there is no additional penalty for using the bellows too much."
         },
         {
+            "type": "patchouli:text",
+            "anchor": "automation",
+            "title": "Automation Tips",
+            "text": "$(li)A forge will automatically collect any fuel that is dropped near the sides. (Press $(item)$(k:key.drop)$(), or use a $(item)Dropper$(), $(item)Dispenser$(), or $(item)Funnel$().)$(li)A $(item)Mechanical Arm$() can also keep a forge fueled.$(li)A $(item)Depot$() counts as forge insulation, if you want to automate a $(item)Basin$()."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Looking for something a little more impressive, or want to bring your forge indoors? Check out the $(l:beneath/beneath_mechanics#hellforge)Hellforge$()!"
+        },
+        {
             "type": "patchouli:relations",
             "title": "Further Reading",
             "anchor": "relations",
@@ -111,7 +121,8 @@
                 "tfg:craftsmanship/bloomery",
                 "tfg:craftsmanship/metallurgy",
                 "tfg:craftsmanship/glassworking",
-                "tfg:craftsmanship/charcoal_pit"
+                "tfg:craftsmanship/charcoal_pit",
+                "tfg:game_mechanics/heating"
             ]
         }
     ],

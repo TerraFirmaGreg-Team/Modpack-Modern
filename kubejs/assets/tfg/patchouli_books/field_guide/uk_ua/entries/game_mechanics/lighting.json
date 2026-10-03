@@ -6,7 +6,7 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "$(li)$(bold)$(l:game_mechanics/lighting#torches)Смолоскипи$()$(li)$(bold)$(l:game_mechanics/lighting#candles)Свічки$()$(li)$(bold)$(l:game_mechanics/lighting#jack_o_lanterns)Гарбузи-ліхтарі$()$(li)$(bold)$(l:game_mechanics/lighting#lamps)Лампи$()$(li)$(bold)$(l:game_mechanics/lighting#permanent_light)Постійне світло$()",
+            "text": "$(li)$(bold)$(l:game_mechanics/lighting#torches)Смолоскипи$()$(li)$(bold)$(l:game_mechanics/lighting#candles)Свічки$()$(li)$(bold)$(l:game_mechanics/lighting#jack_o_lanterns)Гарбузи-ліхтарі$()$(li)$(bold)$(l:game_mechanics/lighting#lamps)Лампи$()$(li)$(bold)$(l:game_mechanics/lighting#portable_light)Переносні джерела світла$()$(li)$(bold)$(l:game_mechanics/lighting#permanent_light)Стаціонарне освітлення$()",
             "title": "Індекс",
             "anchor": "index"
         },
@@ -134,11 +134,17 @@
             "enable_visualize": false
         },
         {
+            "type": "patchouli:text",
+            "anchor": "portable_light",
+            "title": "Переносні джерела світла",
+            "text": "Ти також можеш носити джерела світла в руці, щоб освітлювати простір навколо себе, наприклад, тримаючи $(item)Смолоскип$() у $(thing)другій руці$().$(br2)Щоб звільнити слот другої руки, $(l:game_mechanics/lighting#lamps)лампи$() можна носити у слоті $(thing)Спини$() в  $(l:craftsmanship/clothing#curios)цікавинках$(), а $(l:logistics/exploration_gear#digger_helmet)Шахтарська каска$() — це різновид шоломів, які також забезпечують освітлення."
+        },
+        {
             "type": "patchouli:spotlight",
             "anchor": "permanent_light",
-            "title": "Постійне світло",
+            "title": "Стаціонарне освітлення",
             "item": "minecraft:glowstone",
-            "text": "До моменту, коли ти виготовиш $(item)екстрактор$() і $(item)рідинний затверджувач$(), ти вже зможеш створювати різноманітні декоративні постійні джерела світла з $(thing)рідкого світлокаменю$() та $(thing)блоки світлокаменю$().$(br)Окрім розвитку технологій, існують і креативні способи освітлення території, як-от $(l:agriculture/aqueducts)лавові акведуки$()."
+            "text": "До того часу, як ти виготовиш $(item)Екстрактор$() і $(item)Рідинний затверджувач$(), ти вже зможеш почати виробляти різноманітні декоративні постійні джерела світла з $(thing)Рідкого світлокаменю$() та $(thing)Блоків світлокаменю$().$(br)Окрім розвитку технологій, існують і творчі способи освітлення території, як-от $(l:agriculture/aqueducts)Лавові акведуки$()."
         },
         {
             "type": "patchouli:relations",
@@ -150,7 +156,8 @@
                 "tfg:craftsmanship/firepit",
                 "tfg:craftsmanship/building_materials",
                 "tfg:cooking/jam",
-                "tfg:agriculture/aqueducts"
+                "tfg:agriculture/aqueducts",
+                "tfg:logistics/exploration_gear"
             ]
         }
     ],

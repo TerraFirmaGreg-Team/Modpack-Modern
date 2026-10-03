@@ -70,7 +70,7 @@
             "anchor": "digger_helmet",
             "title": "Шахтарська каска",
             "item": "diggerhelmet:digger_helmet,diggerhelmet:copper_digger_helmet,diggerhelmet:bismuth_bronze_digger_helmet,diggerhelmet:black_bronze_digger_helmet,diggerhelmet:bronze_digger_helmet,diggerhelmet:wrought_iron_digger_helmet,diggerhelmet:steel_digger_helmet,diggerhelmet:black_steel_digger_helmet,diggerhelmet:red_steel_digger_helmet,diggerhelmet:blue_steel_digger_helmet,diggerhelmet:wool_lining,diggerhelmet:silk_lining,diggerhelmet:mining_speed_modifier,diggerhelmet:auto_drink_modifier",
-            "text": "$(thing)Шахтарська каска$() забезпечує постійне навколишнє освітлення навколо гравця завдяки свічці на голові. Вони також мають корисні модифікатори, такі як $(item)модифікатор швидкості видобування$(), $(item)модифікатор автоматичного пиття$() або $(thing)утеплювальні підкладки$()."
+            "text": "$(thing)Шахтарська каска$() забезпечує постійне навколишнє освітлення навколо гравця завдяки свічці на голові. Вони також мають корисні модифікатори, такі як $(item)модифікатор швидкості видобування$(), $(item)модифікатор автоматичного пиття$() або $(thing)утеплювальні підкладки$().$(br)Можна носити у $(l:craftsmanship/clothing#curios)слотах цікавинок$(), але тоді вони не надає захисту."
         },
         {
             "type": "patchouli:spotlight",
@@ -116,7 +116,8 @@
             "entries": [
                 "tfg:agriculture/weaving",
                 "tfg:agriculture/leather_making",
-                "tfg:logistics/roads"
+                "tfg:logistics/roads",
+                "tfg:craftsmanship/clothing"
             ]
         }
     ],

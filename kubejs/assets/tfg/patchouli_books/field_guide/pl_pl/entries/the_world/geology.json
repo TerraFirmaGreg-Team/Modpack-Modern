@@ -34,7 +34,7 @@
             "images": [
                 "tfg:textures/gui/field_guide/maps/biomes_map.png"
             ],
-            "text": "A 65.5km² map displaying average biome distribution based on local $(l:the_world/climate#climate)Climate$().",
+            "text": "Mapa o powierzchni 65,5 km² przedstawiająca uśrednione rozmieszczenie biomów zależne od lokalnego $(l:the_world/climate#climate)klimatu$().",
             "border": true
         },
         {

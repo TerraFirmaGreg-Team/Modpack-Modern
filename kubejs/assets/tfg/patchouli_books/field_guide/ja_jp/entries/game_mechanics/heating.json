@@ -1,28 +1,77 @@
 {
-  "name": "Item Heating",
-  "category": "tfg:game_mechanics",
-  "sortnum": 5,
-  "icon": "tfc:textures/gui/book/icons/heating.png",
-  "pages": [
-    {
-      "type": "patchouli:text",
-      "text": "Heating items is a way of converting one item to another, or an item to a fluid. Items can be heated in many ways - in a $(l:craftsmanship/firepit)Firepit$(), a $(l:craftsmanship/pit_kiln)Pit Kiln$(), or a $(l:craftsmanship/charcoal_forge)Charcoal Forge$(), to name a few. However, they all function in the same way. When you place items inside these devices, the items will gradually start to heat up. This is visible on the item's tooltip."
-    },
-    {
-      "type": "patchouli:text",
-      "text": "アイテムの温度は色で表され、次の値によって変化します:$(br2)$(7)$(bold)あたたかい$(): 1 - 80°C$(br)$(7)$(bold)熱い$(): 80 - 210°C$(br)$(7)$(bold)とても熱い$(): 210 - 480°C$(br)$(4)$(bold)ぼんやりした赤色$(): 480 - 580°C$(br)$(bold)$(4)暗い赤色$(): 580 - 730°C$(br)$(c)$(bold)明るい赤色$(): 730 - 930°C$(br)$(6)$(bold)橙色$(): 930 - 1100°C$(br)$(e)$(bold)$(t:黄色)黄色$(): 1100 - 1300°C$(br)$(e)$(t:白みがかった黄色)$(bold)白みがかった黄色$(): 1300 - 1400°C$(br)$(d)$(bold)$(t:白色)白色$(): 1400 - 1500°C$(br)$(d)$(bold)$(t:眩しい白色)眩しい白色$():>1500°C"
-    },
-    {
-      "type": "patchouli:relations",
-      "title": "Further Reading",
-      "anchor": "relations",
-      "entries": [
+	"name": "Item Heating",
+	"category": "tfg:game_mechanics",
+	"sortnum": 5,
+	"icon": "tfc:textures/gui/book/icons/heating.png",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Heating items is a way of converting one item to another, or an item to a fluid. Items can be heated in many ways - in a $(l:craftsmanship/firepit)Firepit$(), a $(l:craftsmanship/pit_kiln)Pit Kiln$(), or a $(l:craftsmanship/charcoal_forge)Charcoal Forge$(), to name a few. However, they all function in the same way. When you place items inside these devices, the items will gradually start to heat up. This is visible on the item's tooltip."
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Contents",
+			"anchor": "index",
+			"text": "アイテムの温度は色で表され、次の値によって変化します:$(br2)$(7)$(bold)あたたかい$(): 1 - 80°C$(br)$(7)$(bold)熱い$(): 80 - 210°C$(br)$(7)$(bold)とても熱い$(): 210 - 480°C$(br)$(4)$(bold)ぼんやりした赤色$(): 480 - 580°C$(br)$(bold)$(4)暗い赤色$(): 580 - 730°C$(br)$(c)$(bold)明るい赤色$(): 730 - 930°C$(br)$(6)$(bold)橙色$(): 930 - 1100°C$(br)$(e)$(bold)$(t:黄色)黄色$(): 1100 - 1300°C$(br)$(e)$(t:白みがかった黄色)$(bold)白みがかった黄色$(): 1300 - 1400°C$(br)$(d)$(bold)$(t:白色)白色$(): 1400 - 1500°C$(br)$(d)$(bold)$(t:眩しい白色)眩しい白色$():>1500°C"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "temps",
+			"text": "The temperature of an item is represented by a color, which will change through the following values:$(br2)$(7)$(bold)Warming$(): 1 - 80 °C$(br)$(7)$(bold)Hot$(): 80 - 210 °C$(br)$(7)$(bold)Very Hot$(): 210 - 480 °C$(br)$(4)$(bold)Faint Red$(): 480 - 580 °C$(br)$(bold)$(4)Dark Red$(): 580 - 730 °C$(br)$(c)$(bold)Bright Red$(): 730 - 930 °C$(br)$(6)$(bold)Orange$(): 930 - 1100 °C$(br)$(e)$(bold)$(t:Yellow)Yellow$(): 1100 - 1300 °C$(br)$(e)$(t:Yellow White)$(bold)Yellow White$(): 1300 - 1400 °C$(br)$(d)$(bold)$(t:White)White$(): 1400 - 1500 °C$(br)$(d)$(bold)$(t:Brilliant White)Brilliant White$(): >1500 °C"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tag:tfchotornot:tongs",
+			"title": "Tongs",
+			"anchor": "tongs",
+			"text": "Hot items are too hot to hold with your bare hands! When an item reaches $(t:Configurable in tfchotornot-common.toml)$(4)Faint Red *$() or higher, it will become $(c)too hot to hold$()! You must hold $(item)tongs$() in your $(thing)off-hand$() in order to avoid burning yourself. The same applies for some $(3)very cold$() items such as $(item)Blue Ice$()."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(bold)Note:$() Even with tongs, holding hot or cold items in your inventory will affect your $(l:game_mechanics/player_temperature)player temperature$()."
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "tfchotornot:crafting/tongs/wood",
+			"recipe2": "tfchotornot:crafting/tongs/wrought_iron",
+			"text": ""
+		},
+		{
+			"type": "tfg:anvil_recipe",
+			"title": "Metal Tong Parts",
+			"recipe": "tfchotornot:anvil/tong_part/wrought_iron",
+			"text": "$(item)Wooden Tongs$() are easy to make, but have low durability. Consider upgrading!$(br)$(item)Metal Tongs$() have much higher durability and can be repaired.$(br)Note that all tongs take damage while hot things are in your inventory, with more items costing more durability. Toss them ($(item)$(k:key.drop)$()) into water to cool them down fast!"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tfchotornot:mittens,tfchotornot:burlap_potholder,tfchotornot:silk_potholder,tfchotornot:wool_potholder",
+			"anchor": "cloth",
+			"title": "Cloth Alternatives",
+			"text": "You can also make $(item)Mittens$() and $(item)Potholders$() out of $(l:agriculture/leather_making)Leather$() and $(l:agriculture/weaving)Cloth$()."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tfc:metal/chestplate/blue_steel,tfc:metal/chestplate/red_steel,create:netherite_backtank,gtceu:hazmat_chestpiece,ad_astra:space_suit,ad_astra:netherite_space_suit,gtceu:quarktech_chestplate,gtceu:advanced_quarktech_chestplate",
+			"anchor": "equipment",
+			"title": "Other Equipment",
+			"text": "Lastly, certain equipment can safely protect you while holding these items, such as the $(item)Blue Steel Chestplate$() protecting you from hot items."
+		},
+		{
+			"type": "patchouli:relations",
+			"title": "Further Reading",
+			"anchor": "relations",
+			"entries": [
 				"tfg:craftsmanship/pit_kiln",
 				"tfg:craftsmanship/crucible",
 				"tfg:craftsmanship/firepit",
-				"tfg:cooking/cooking_methods"
-      ]
-    }
-  ],
-  "read_by_default": true
+				"tfg:cooking/cooking_methods",
+				"tfg:game_mechanics/player_temperature",
+				"tfg:agriculture/leather_making",
+				"tfg:agriculture/weaving",
+				"tfg:game_mechanics/hazards"
+			]
+		}
+	],
+	"read_by_default": true
 }

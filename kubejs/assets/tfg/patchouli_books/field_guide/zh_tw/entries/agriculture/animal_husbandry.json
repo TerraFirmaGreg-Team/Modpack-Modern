@@ -6,19 +6,19 @@
         {
             "type": "patchouli:text",
             "anchor": "index",
-            "text": "$(li)$(bold)$(l:agriculture/animal_husbandry#intro)Livestock$()$(li)$(bold)$(l:agriculture/animal_husbandry#uses)Uses$()$(li2)$(l:agriculture/animal_husbandry#uses_table)Uses Table$()$(li)$(bold)$(l:agriculture/animal_husbandry#familiarity)Familiarity$()$(li)$(bold)$(l:agriculture/animal_husbandry#mammals)Mammals$()$(li2)$(l:agriculture/animal_husbandry#wooly_animals)Wooly Mammals$()$(li2)$(l:agriculture/animal_husbandry#dairy_animals)Dairy Mammals$()$(li2)$(l:agriculture/animal_husbandry#equines)Equines$()$(li2)$(l:agriculture/animal_husbandry#camelides)Camelides$()$(li)$(bold)$(l:agriculture/animal_husbandry#oviparous_animals)Oviparous Animals$()$(li)$(bold)$(l:agriculture/animal_husbandry#feeding_trough)Feeding Troughs$()"
+            "text": "$(li)$(bold)$(l:agriculture/animal_husbandry#intro)畜牧業$()$(li)$(bold)$(l:agriculture/animal_husbandry#uses)互動$()$(li2)$(l:agriculture/animal_husbandry#uses_table)互動表$()$(li)$(bold)$(l:agriculture/animal_husbandry#fam iliarity)熟悉度$()$(li)$(bold)$(l:agriculture/animal_husbandry#mammals)哺乳動物$()$(li2)$(l:agriculture/animal_husb andry#wooly_animals)產毛哺乳動物$()$(li2)$(l:agriculture/animal_husbandry#dairy_animals)產乳哺乳動物$()$(li2)$(l:agriculture/animal_husbandry#equines)馬科動物$()$(li2)$(l:agriculture/animal_husband ry#camelides)駱駝科動物$()$(li)$(bold)$(l:agriculture/animal_husbandry#oviparous_animals)卵生動物$()$(li)$(bold)$(l:agriculture/animal_husbandry#feeding_trough)飼料槽$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "intro",
             "title": "第一天",
-            "text": "$(thing)Livestock$() are animals that can be tamed and bred together by the player. Livestock can be either $(thing)male$() or $(thing)female$(). For some animals, it is possible to tell their sex visually. For example, male pigs have tusks."
+            "text": "$(thing)牲畜$()是指玩家可以馴服並進行繁殖的動物。牲畜分為雄性和雌性。某些動物可以透過外觀來區分性別，例如，雄性豬有獠牙。"
         },
         {
             "type": "patchouli:text",
             "anchor": "uses",
-            "title": "Uses",
-            "text": "Livestock each have a maximum number of $(item)Uses$()―indicated by their \"Wear & Tear\"―before they $(thing)become old$(). They are born as babies, which are smaller and cannot provide things for the player. After a certain number of days, they grow into $(thing)adult$() animals, which are able to do things like breed or produce milk. After they breed or are used enough times, animals become $(thing)old$(), and are only useful for their meat."
+            "title": "互動",
+            "text": "每隻牲畜都有最大互動次數（以「耐久度」表示），超過次數就會「衰老」。剛出生的幼崽，體型較小無法提供任何產出。數天後會成年，就可以繁殖或產奶。繁殖或互動次數過多後，牲畜就會「衰老」，此時只能提供肉用。"
         },
         {
             "type": "patchouli:image",
@@ -33,23 +33,23 @@
             "anchor": "uses_table",
             "strings": [
                 {
-                    "text": "Action",
+                    "text": "動作",
                     "bold": true
                 },
                 {
-                    "text": "Uses (Male)",
+                    "text": "互動(雄性)",
                     "bold": true
                 },
                 {
-                    "text": "Uses (Female)",
+                    "text": "互動(雄性)",
                     "bold": true
                 },
                 {
-                    "text": "Notes",
+                    "text": "備註",
                     "bold": true
                 },
                 {
-                    "text": "Mating",
+                    "text": "交配",
                     "bold": true
                 },
                 {
@@ -59,10 +59,10 @@
                     "text": " "
                 },
                 {
-                    "text": "Males Only"
+                    "text": "限雄性"
                 },
                 {
-                    "text": "Birth",
+                    "text": "出生",
                     "bold": true
                 },
                 {
@@ -72,10 +72,10 @@
                     "text": "-10"
                 },
                 {
-                    "text": "Mammals Only"
+                    "text": "限雌性"
                 },
                 {
-                    "text": "Egg Laying",
+                    "text": "孵蛋",
                     "bold": true
                 },
                 {
@@ -85,10 +85,10 @@
                     "text": "-1"
                 },
                 {
-                    "text": "Same Fertilized"
+                    "text": "受精卵"
                 },
                 {
-                    "text": "Products",
+                    "text": "產出",
                     "bold": true
                 },
                 {
@@ -98,10 +98,10 @@
                     "text": "-1"
                 },
                 {
-                    "text": "Milk, Wool, etc."
+                    "text": "奶、毛等等"
                 }
             ],
-            "title": "Uses Table",
+            "title": "互動表",
             "legend": [],
             "columns": 3,
             "first_column_width": 47,
@@ -117,9 +117,9 @@
         },
         {
             "type": "patchouli:text",
-            "title": "Familiarity",
+            "title": "熟悉度",
             "anchor": "familiarity",
-            "text": "Livestock can be fed to raise $(thing)familiarity$(). Each animal has foods that it prefers to eat. To feed an animal, $(item)$(k:key.sneak)$() and $(item)$(k:key.use)$() with food in your hand.$(br)Familiarity is required for most livestock interactions. Familiarity will be passed down to offspring from the mother's side―at a reduced level."
+            "text": "餵食牲畜能提升它們的$(thing)熟悉度$()。每種動物都有偏好的食物。手持食物$(item)$(k:key.sneak)$()並$(item)$(k:key.use)$()進行餵食。大多數與牲畜的互動都需要一定的熟悉度。熟悉度透過母親遺傳給後代，但會降低。"
         },
         {
             "type": "patchouli:image",
@@ -147,40 +147,40 @@
         },
         {
             "type": "patchouli:text",
-            "title": "Mammals",
+            "title": "哺乳動物",
             "anchor": "mammals",
-            "text": "$(thing)Mammals$() are livestock that experience $(thing)Pregnancy$(). Adult mammals that are above 30% familiarity and have been fed that day will mate, given that they are of opposite genders and near each other. The female animal will become $(thing)pregnant$(), which causes it to have children a set number of days after fertilization.$(br)An example is $(l:the_world/wild_animals#pig)Pigs$()."
+            "text": "$(thing)哺乳動物$()是指會經歷懷孕的牲畜。熟悉度超過 30% 且當天餵食過的成年哺乳動物，如果性別不同且彼此靠近就會交配。雌性動物會$(thing)懷孕$()，並在受精後一定天數產仔$(br)。例如，$(l:the_world/wild_animals#pig)豬$()就是哺乳動物。"
         },
         {
             "type": "patchouli:text",
-            "title": "Wooly Mammals",
+            "title": "產毛哺乳動物",
             "anchor": "wooly_animals",
-            "text": "$(thing)Wooly Animals$() are $(l:agriculture/animal_husbandry#mammals)Mammals$() that can be $(thing)Sheared$() if they are adults and familiar enough to you. Some examples are $(l:the_world/wild_animals#sheep)Sheep$(), $(l:the_world/wild_animals#alpaca)Alpacas$(), and $(l:the_world/wild_animals#musk_ox)Musk Oxen$()."
+            "text": "$(thing)產毛哺乳動物$()是指當已成年且有足夠熟悉度，可被$(thing)剪毛$()的$(l:agriculture/animal_husbandry#mammals)哺乳動物$()。比方說$(l:the_world/wild_animals#sheep)綿羊$()、$(l:the_world/wild_animals#alpaca)羊駝$()以及$(l:the_world/wild_animals#musk_ox)麝牛$()。"
         },
         {
             "type": "patchouli:text",
-            "title": "Dairy Mammals",
+            "title": "產乳哺乳動物",
             "anchor": "dairy_animals",
-            "text": "$(thing)Dairy Animals$() are mammals that make $(thing)Milk$(). Female dairy animals can be clicked with a bucket to obtain milk. Some examples are $(l:the_world/wild_animals#goat)Goats$(), $(l:the_world/wild_animals#cow)Cows$(), and $(l:the_world/wild_animals#yak)Yaks$()."
+            "text": "$(thing)產乳哺乳動物$()是只用來製作$(thing)奶$()的哺乳動物。手持桶子點擊雌性產乳動物可以獲得奶。比方說$(l:the_world/wild_animals#goat)山羊$()、 $(l:the_world/wild_animals#cow)乳牛$()以及$(l:the_world/wild_animals#yak)氂牛$()。"
         },
         {
             "type": "patchouli:text",
             "anchor": "equines",
-            "title": "Equines",
-            "text": "$(thing)Equines$() are $(l:agriculture/animal_husbandry#mammals)Mammals$() that can be ridden when tamed. They become rideable after reaching 15% familiarity when equiped with a $(l:agriculture/leather_making)Saddle$().$(br)$(l:the_world/wild_animals#mule)Mules$() and $(l:the_world/wild_animals#donkey)Donkeys$() can hold any chest or barrel. If holding a barrel, $(item)$(k:key.use)$() while holding $(item)$(k:key.sneak)$() can be used to remove it. The same keys while holding a bucket can be used to drain fluid from the barrel."
+            "title": "馬科動物",
+            "text": "$(thing)馬科動物$()是指可被訓養並騎乘的$(l:agriculture/animal_husbandry#mammals)哺乳動物$()。 熟悉度達到 15% 裝備$(l:agriculture/leather_making)鞍$()就可以騎乘。$(br)$(l:the_world/wild_animals#mule)騾$()與$(l:the_world/wild_animals#donkey)驢$()可以裝上箱子與桶子。手持桶子按住$(item)$(k:key.sneak)$()$(item)$(k:key.use)$()即可移除桶子。手持水桶則能夠從桶排出液體。"
         },
         {
             "type": "patchouli:text",
             "anchor": "camelides",
-            "title": "Camels",
-            "text": "$(thing)Camels$() are $(l:agriculture/animal_husbandry#mammals)Mammals$() similar to $(l:agriculture/animal_husbandry#equines)Equines$() in that they can be ridden when tamed. They become rideable after reaching 15% familiarity when equiped with a $(l:agriculture/leather_making)Saddle$(). Camels have a naturally high step-height and can cross ravines with their powerful lunge jumps."
+            "title": "駱駝",
+            "text": "$(thing)駱駝$()是指像$(l:agriculture/animal_husbandry#equines)馬科動物$()一樣可被訓養與騎乘的$(l:agriculture/animal_husbandry#mammals)哺乳動物$()。熟悉度達到 15% 裝備$(l:agriculture/leather_making)鞍$()即可騎乘。駱駝天生步幅高，能夠憑藉強勁的跳躍跨越溝壑。"
         },
         {
             "type": "patchouli:crafting",
-            "title": "Oviparous Animals",
+            "title": "卵生動物",
             "anchor": "oviparous_animals",
             "recipe": "tfc:crafting/nest_box",
-            "text": "$(thing)Oviparous Animals$() are not $(l:agriculture/animal_husbandry#mammals)Mammals$(), and instead produce children by laying $(thing)Eggs$(). They need a $(thing)Nest Box$() to lay eggs, which they are capable of locating on their own.$(br)Some examples are $(l:the_world/wild_animals#duck)Ducks$(), $(l:the_world/wild_animals#quail)Quails$(), and $(l:the_world/wild_animals#chicken)Chickens$()."
+            "text": "$(thing)卵生動物$()並非$(l:agriculture/animal_husbandry#mammals)哺乳動物$()並且牠們透過$(thing)孵蛋$()進行產子。牠們需要$(thing)巢箱$()來孵蛋，牠們能夠找到自己的巢箱。$(br)比方說$(l:the_world/wild_animals#duck)鴨$()、$(l:the_world/wild_animals#quail)鵪鶉$()以及$(l:the_world/wild_animals#chicken)雞$()。"
         },
         {
             "type": "tfg:heat_recipe",
@@ -189,14 +189,14 @@
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Feeding Troughs",
+            "title": "飼料槽",
             "anchor": "feeding_trough",
             "item": "tfcgroomer:bismuth_bronze_grooming_station,tfcgroomer:black_bronze_grooming_station,tfcgroomer:bronze_grooming_station,tfcgroomer:copper_grooming_station,tfcgroomer:wrought_iron_grooming_station,tfcgroomer:steel_grooming_station,tfcgroomer:black_steel_grooming_station,tfcgroomer:red_steel_grooming_station,tfcgroomer:blue_steel_grooming_station",
-            "text": "$(thing)Feeding Troughs$() can automatically feed animals in an area specified by its tooltip. Higher tier $(l:craftsmanship/metallurgy)Metals$() increase the feeding range.$(br)To add animal feed―and optionally enable automatic breeding―open the troughs interface with $(item)$(k:key.use)$()."
+            "text": "$(thing)飼料槽$()能夠自動餵食工具提示範圍內的動物們。 Higher tier $(l:craftsmanship/metallurgy)Metals$() increase the feeding range.$(br)To add animal feed―and optionally enable automatic breeding―open the troughs interface with $(item)$(k:key.use)$()."
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "延伸閱讀",
             "anchor": "relations",
             "entries": [
                 "tfg:agriculture/growing_crops",
