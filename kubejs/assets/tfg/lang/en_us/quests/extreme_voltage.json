@@ -30,11 +30,6 @@
     "quests.extreme_voltage.t2_rocket.desc": "This new rocket shouldn’t be too difficult to assemble, but you’ll notice a clear jump in material costs compared to your previous model.\n\nThe upgraded &6Rocket Alloys&r now require both &bDistilled Water&r and &bCryogenized Fluix&r for cooling.\n\nMake sure you've fully set up your &eTitanium&r production line, as you're going to need a lot of it going forward! A continuous production line will save you a lot of frustration down the road.",
     "quests.extreme_voltage.t2_rocket.task": "Either rocket",
 
-    "quests.extreme_voltage.mars.title": "I'm on &4Mars&r!",
-    "quests.extreme_voltage.mars.subtitle": "The Red Planet",
-    "quests.extreme_voltage.mars.desc.1": "&5Mars&r has a whole section in the Field Guide dedicated to it. Be sure to read it before landing!",
-    "quests.extreme_voltage.mars.task": "Land on Mars",
-
     "quests.extreme_voltage.nuclear_fuel_factory.title": "Nuclear Fuel Factory",
     "quests.extreme_voltage.nuclear_fuel_factory.subtitle": "Hot Rod",
     "quests.extreme_voltage.nuclear_fuel_factory.desc": "The &6Nuclear Fuel Factory&r has one purpose: producing fuel rods for your &cFission Reactor&r.\n\nIt supports &9Parallel Hatches&r which you’ll unlock soon but they aren’t mandatory yet. Functionally, it works much like the Pyrolyse Oven: the &ebetter the coils&r you install, the faster the recipes will run.\n\nSince fuel rod production is both &cslow&r and &cexpensive&r, we strongly recommend using the &ahighest tier coils&r available. Don’t waste your time with Cupronickel, you’ll only be nerfing yourself.",
@@ -61,12 +56,12 @@
     "quests.extreme_voltage.refrigerant_pellet.subtitle": "A temporary solution to extreme temperatures",
     "quests.extreme_voltage.refrigerant_pellet.desc": "The &dPlutonium Fuel Rod&r runs at extremely high temperatures - so high, in fact, that you’ll need to use &bTerraFirmaGuard PA6&r inside your reactor to prevent it from going into cooldown mode.\n\nThese pellets are quite expensive to produce, but you should still be able to mass-produce them early on, or at least enough to keep your first few plutonium rods operational. You need approximatively &9256&r to run a full Plutonium Rod.\n\nLater on, if you don’t like constantly crafting these consumables, you’ll gain access to &6advanced reactor components&r. With those installed, your reactor will be able to safely reach up to &e600 Max Heat&r, greatly improving efficiency and stability.\n\nInvest in better internal parts early, to spend less time babysitting your power core.",
 
-    "quests.extreme_voltage.important_info.title": "Before starting",
-    "quests.extreme_voltage.important_info.subtitle": "Not an easy place to start",
+    "quests.extreme_voltage.mars.title": "I'm on &4Mars&r!",
+    "quests.extreme_voltage.mars.subtitle": "The Red Planet",
+    "quests.extreme_voltage.mars.task": "Land on Mars",
     "quests.extreme_voltage.important_info.desc.1": "Before you start building your base on &cMars&r, here are a few important tips to help you settle in successfully.&r\n\nBefore crafting up an entire base to carry in your pocket, we always recommend having an exploration mission before you start setting down!",
     "quests.extreme_voltage.important_info.desc.2": "When it comes to your Martian infrastructure, there are two main approaches:&r\n\n• &aPreparation-focused&r: Build everything required for your full &6Fission Line&r before establishing your base. This means an enormous material investment, but allows you to be self-sufficient once operational.\n\n• &aProgressive setup&r: Start smaller with your &6Nuclear Fuel Factory&r, your first &6Fission Reactor&r (running on &eThorium&r), and a &6Nuclear Turbine&r. This route is faster to start, but managing energy will be rough until your fission system stabilizes.",
     "quests.extreme_voltage.important_info.desc.3": "Because every kind of combustion-based energy won't work on Mars, you’ll want to bring a good stock of &bLapotron Crystals&r to power your first recipes and oxygen systems.\n\nWe also strongly recommend setting up a &6Distillation Tower&r. &eMartian Air&r can be processed into breathable &bAir&r and several other useful gases. Alternatively, everything for Compressed Nitrox can come from the local Semiheavy Ammoniacal Water.\n\nSurvival on Mars isn’t about luck, it’s about preparation!",
-    "quests.extreme_voltage.important_info.task": "It's Marsing Time",
 
     "quests.extreme_voltage.dense_lead.title": "Faster Dense Lead Plates",
     "quests.extreme_voltage.dense_lead.subtitle": "Don't expect it for other dense plates",

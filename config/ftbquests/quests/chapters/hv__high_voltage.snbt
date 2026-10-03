@@ -1109,6 +1109,7 @@
 			dependencies: ["3FBDC8552F7D8008"]
 			dependency_requirement: "one_completed"
 			description: ["{quests.high_voltage.rocket_fuel.desc}"]
+			guide_page: "tfg:field_guide tfg:the_moon/preparations"
 			id: "6EF2D4D1C1CC9D3E"
 			subtitle: "{quests.high_voltage.rocket_fuel.subtitle}"
 			tasks: [{
@@ -1159,6 +1160,7 @@
 				"{@pagebreak}"
 				"{quests.high_voltage.space_suit.desc.2}"
 			]
+			guide_page: "tfg:field_guide tfg:the_moon/preparations"
 			id: "038B204DAC9C863D"
 			subtitle: "{quests.high_voltage.space_suit.subtitle}"
 			tasks: [
@@ -1226,6 +1228,7 @@
 		{
 			dependencies: ["3FBDC8552F7D8008"]
 			description: ["{quests.high_voltage.launch_pad.desc}"]
+			guide_page: "tfg:field_guide tfg:the_moon/preparations"
 			id: "6752CC523D38A214"
 			subtitle: "{quests.high_voltage.launch_pad.subtitle}"
 			tasks: [{
@@ -1521,6 +1524,7 @@
 		{
 			dependencies: ["396E85A39FF414CF"]
 			description: ["{quests.high_voltage.wand.desc}"]
+			guide_page: "tfg:field_guide tfg:craftsmanship/building_tools 6"
 			id: "22FD785F84E9D10D"
 			optional: true
 			shape: "heart"
@@ -2027,6 +2031,7 @@
 			dependencies: ["038B204DAC9C863D"]
 			dependency_requirement: "one_completed"
 			description: ["{quests.space_survival.compressed_gases.desc}"]
+			guide_page: "tfg:field_guide tfg:the_moon/preparations"
 			icon: "tfg:compressed_nitrox_bucket"
 			id: "403B34B669894C26"
 			subtitle: "{quests.space_survival.compressed_gases.subtitle}"

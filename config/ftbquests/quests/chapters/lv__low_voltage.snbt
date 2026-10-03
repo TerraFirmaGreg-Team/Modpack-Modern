@@ -627,6 +627,7 @@
 				"02FDECC931B5E8EF"
 			]
 			description: ["{quests.low_voltage.lv_ore_prospector.desc}"]
+			guide_page: "tfg:field_guide tfg:craftsmanship/metallurgy 26"
 			icon: "gtceu:prospector.lv"
 			id: "2E36E5755B2F551C"
 			optional: true
@@ -1439,6 +1440,7 @@
 				"{@pagebreak}"
 				"{quests.low_voltage.lv_greenhouse.desc.3}"
 			]
+			guide_page: "tfg:field_guide tfg:agriculture/greenhouse 19"
 			icon: "tfc:plant/orange_sapling"
 			id: "1F41C35890E2C44F"
 			optional: true
@@ -2042,6 +2044,7 @@
 			dependencies: ["292938760AB9A12B"]
 			dependency_requirement: "one_completed"
 			description: ["{quests.medium_voltage.mv_jetpack.desc}"]
+			guide_page: "tfg:field_guide tfg:logistics/exploration_gear 15"
 			id: "62737DC459F6F5F5"
 			optional: true
 			shape: "heart"
@@ -2081,7 +2084,7 @@
 		{
 			dependencies: ["37307A46E70011D3"]
 			description: ["{quests.tfg_tips.capsules.desc}"]
-			guide_page: "tfc:field_guide tfc:getting_started/food_and_water"
+			guide_page: "tfg:field_guide tfg:game_mechanics/hazards 7"
 			id: "69DA11F2EC7FAECC"
 			optional: true
 			shape: "heart"
@@ -2126,6 +2129,7 @@
 		{
 			dependencies: ["3E6DC423FE4A99F7"]
 			description: ["{quests.low_voltage.electric_lunchbox.desc}"]
+			guide_page: "tfg:field_guide tfg:cooking/decay 24"
 			id: "37F316C0599B52DE"
 			optional: true
 			shape: "heart"

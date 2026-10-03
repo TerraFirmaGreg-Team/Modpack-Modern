@@ -126,7 +126,13 @@
 		}
 		{
 			dependencies: ["52AB0BDC64293253"]
-			description: ["{quests.extreme_voltage.mars.desc}"]
+			description: [
+				"{quests.extreme_voltage.important_info.desc.1}"
+				"{@pagebreak}"
+				"{quests.extreme_voltage.important_info.desc.2}"
+				"{@pagebreak}"
+				"{quests.extreme_voltage.important_info.desc.3}"
+			]
 			guide_page: "tfg:field_guide tfg:mars/mars"
 			id: "2979AFD231E5B37B"
 			shape: "octagon"
@@ -570,8 +576,8 @@
 				type: "item"
 			}]
 			title: "{quests.space_survival.mineral_rich_wool.title}"
-			x: -2.5d
-			y: 6.0d
+			x: -5.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["2979AFD231E5B37B"]
@@ -641,6 +647,7 @@
 				"{@pagebreak}"
 				"{quests.extreme_voltage.fission_reactor.desc.2}"
 			]
+			guide_page: "tfg:field_guide tfg:mars/fission"
 			icon: "deafission:fission_reactor_mk1"
 			id: "29E0829816B9DBA0"
 			shape: "octagon"
@@ -1246,7 +1253,7 @@
 			]
 			title: "{quests.extreme_voltage.aes_insulation.title}"
 			x: -5.5d
-			y: 3.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["0FB5E513356117C1"]
@@ -2002,29 +2009,6 @@
 			y: -6.0d
 		}
 		{
-			dependencies: ["2979AFD231E5B37B"]
-			description: [
-				"{quests.extreme_voltage.important_info.desc.1}"
-				"{@pagebreak}"
-				"{quests.extreme_voltage.important_info.desc.2}"
-				"{@pagebreak}"
-				"{quests.extreme_voltage.important_info.desc.3}"
-			]
-			guide_page: "tfg:field_guide tfg:mars/mars"
-			icon: "minecraft:spyglass"
-			id: "6B0F3D40AFA5752E"
-			shape: "circle"
-			subtitle: "{quests.extreme_voltage.important_info.subtitle}"
-			tasks: [{
-				id: "5B63F65364A3B60C"
-				title: "{quests.extreme_voltage.important_info.task}"
-				type: "checkmark"
-			}]
-			title: "{quests.extreme_voltage.important_info.title}"
-			x: -2.5d
-			y: 8.0d
-		}
-		{
 			dependencies: ["4EA8888B12D75BF1"]
 			description: ["{quests.extreme_voltage.dense_lead.desc}"]
 			hide_dependency_lines: true
@@ -2196,6 +2180,7 @@
 				"{@pagebreak}"
 				"{quests.extreme_voltage.radiation.desc.3}"
 			]
+			guide_page: "tfg:field_guide tfg:game_mechanics/hazards"
 			icon: "createdeco:decal_radioactive"
 			id: "4AD96212525517CD"
 			rewards: [{
@@ -2582,7 +2567,7 @@
 				type: "item"
 			}]
 			x: -5.5d
-			y: 4.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["691A36800DC755C1"]
