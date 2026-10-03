@@ -5,8 +5,8 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "$(li)$(bold)$(l:craftsmanship/building_materials#primitive_materials)Primitive Materials$()$(li2)$(l:craftsmanship/building_materials#thatch)Thatch$()$(li2)$(l:craftsmanship/building_materials#mud_bricks)Mud Bricks$()$(li2)$(l:craftsmanship/building_materials#wattle_and_daub)Wattle and Daub$()$(li)$(bold)$(l:craftsmanship/building_materials#advanced_materials)Advanced Materials$()$(li2)$(l:craftsmanship/building_materials#alabaster)Alabaster$()$(li2)$(l:craftsmanship/building_materials#bricks_and_mortar)Bricks and Mortar$()$(li)$(bold)$(l:craftsmanship/building_materials#block_interactions)Block Interactions$()$(li)$(bold)$(l:craftsmanship/building_materials#customizable_blocks)Customizable Blocks$()$(li)$(bold)$(l:craftsmanship/building_materials#roof_building)Roof Building$()",
-            "title": "Index",
+            "text": "$(li)$(bold)$(l:craftsmanship/building_materials#primitive_materials)Primitive Materials$()$(li2)$(l:craftsmanship/building_materials#thatch)Thatch$()$(li2)$(l:craftsmanship/building_materials#mud_bricks)Mud Bricks$()$(li2)$(l:craftsmanship/building_materials#wattle_and_daub)Wattle and Daub$()$(li)$(bold)$(l:craftsmanship/building_materials#advanced_materials)Advanced Materials$()$(li2)$(l:craftsmanship/building_materials#alabaster)Alabaster$()$(li2)$(l:craftsmanship/building_materials#bricks_and_mortar)Bricks and Mortar$()$(li)$(bold)$(l:craftsmanship/building_materials#block_interactions)Block Interactions$()$(li)$(bold)$(l:craftsmanship/building_materials#roof_building)Roof Building$()$(li)$(bold)$(l:craftsmanship/building_materials#modern)Modern Materials$()",
+            "title": "Каталог",
             "anchor": "index"
         },
         {
@@ -282,8 +282,18 @@
             "border": true
         },
         {
-            "type": "patchouli:relations",
+            "type": "patchouli:text",
+            "anchor": "modern",
             "title": "Читать дальше",
+            "text": "Looking for something a little more modern?$(br)$(li)$(thing)GregTech$() has some concrete blocks and metal studs which also have a $(l:logistics/roads)movement speed bonus$(). It also has a large number of colorful lamps and sheet metal blocks.$(li)$(thing)Create Deco$() has some metal catwalks, windows, sheet metal, lights, and many colors of bricks."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)$(item)Girders$(), $(item)Struts$(), and $(item)Trusses$() are great for industrial supports.$(li)Safety conscious? $(thing)GregTech$(), $(thing)Create Deco$(), and $(thing)Modern Markings$() all have various hazard signs and decorations.$(li)$(thing)Ad Astra$() has many more futuristic blocks such as 3x3 doors, more light sources, and other metallic blocks.$(li)$(thing)Create: Steam 'n' Rails$() has $(item)Locometal$() for a huge selection of colored metallic blocks."
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Further Reading",
             "anchor": "relations",
             "entries": [
                 "tfg:agriculture/aqueducts",

@@ -16,7 +16,7 @@
     {
       "type": "patchouli:text",
       "text": "За допомогою скіпки можна розпалити $(thing)багаття$(). Щоб створити його, тобі знадобляться одна $(thing)колода$(), три $(thing)палиці$() та, за бажанням, до п’яти шматків $(thing)розпалювача$(). Розпалювачем можуть бути такі предмети, як вироби з паперу, солома або опале листя. Кожен використаний предмет збільшує шанс успішно створити багаття на 10%. Кинь ($(item)$(k:key.drop)$()) усі предмети на землю на однин блок. Потім використай скіпку на цьому блоці, над яким зависають предмети.",
-      "title": "Firepit"
+      "title": "Багаття"
     },
     {
       "type": "patchouli:multiblock",
@@ -114,11 +114,12 @@
     },
     {
       "type": "patchouli:relations",
-      "title": "Further Reading",
+      "title": "Докладніше",
       "anchor": "relations",
       "entries": [
         "tfg:cooking/cooking_methods",
-        "tfg:cooking/decay"
+        "tfg:cooking/decay",
+        "tfg:game_mechanics/heating"
       ]
     }
   ],

@@ -5,7 +5,7 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "$(li)$(bold)$(l:agriculture/greenhouse#types)Greenhouse Types$()$(li)$(bold)$(l:agriculture/greenhouse#planters)Planters$()$(li2)$(l:agriculture/greenhouse#large_planter)Large Planter$()$(li2)$(l:agriculture/greenhouse#quad_planter)Quad Planter$()$(li2)$(l:agriculture/greenhouse#bonsai_planter)Bonsai Planter$()$(li2)$(l:agriculture/greenhouse#hanging_planter)Hanging Planter$()$(li2)$(l:agriculture/greenhouse#trellis_planter)Trellis Planter$()$(li2)$(l:agriculture/greenhouse#hydroponic_planter)Hydroponic Planter$()$(li)$(bold)$(l:agriculture/greenhouse#irrigation)Irrigation$()$(li)$(bold)$(l:agriculture/greenhouse#auto_harvesting)Auto-Harvesting$()"
+            "text": "$(li)$(bold)$(l:agriculture/greenhouse#types)Greenhouse Types$()$(li)$(bold)$(l:agriculture/greenhouse#planters)Planters$()$(li2)$(l:agriculture/greenhouse#large_planter)Large Planter$()$(li2)$(l:agriculture/greenhouse#quad_planter)Quad Planter$()$(li2)$(l:agriculture/greenhouse#bonsai_planter)Bonsai Planter$()$(li2)$(l:agriculture/greenhouse#hanging_planter)Hanging Planter$()$(li2)$(l:agriculture/greenhouse#trellis_planter)Trellis Planter$()$(li2)$(l:agriculture/greenhouse#hydroponic_planter)Hydroponic Planter$()$(li)$(bold)$(l:agriculture/greenhouse#irrigation)Irrigation$()$(li)$(bold)$(l:agriculture/greenhouse#auto_harvesting)Auto-Harvesting$()$(li)$(bold)$(l:agriculture/greenhouse#electric)Electric Greenhouse$()$(li)$(bold)$(l:agriculture/greenhouse#hydroponics)Hydroponics Facility$()"
         },
         {
             "type": "patchouli:text",
@@ -98,14 +98,34 @@
             "title": "Piping",
             "item": "gtceu:copper_tiny_fluid_pipe",
             "type": "patchouli:spotlight",
-            "text": "Feeding sprinklers with water can be done by connecting $(thing)Fluid Pipes$() to them and pumping in water with a $(thing)Mechanical Pump$().$(br)You can $(item)$(k:key.use)$() a pipe with a $(t:Such as a Copper Frame)GregTech Frame$() or a Greenhouse Port to pass them through a wall. $(item)$(k:key.use)$() fluid pipes with a wrench to change their direction, and $(item)$(k:key.sneak)-$(k:key.use)$() them with an $(thing)empty offhand$() to make them one-way."
+            "text": "Feeding sprinklers with water can be done by connecting $(thing)Fluid Pipes$() to them and pumping in water with a $(thing)Mechanical Pump$().$(br)You can $(item)$(k:key.use)$() a pipe with a $(t:Such as a Copper Frame)GregTech Frame$() or a Greenhouse Port to pass them through a wall. $(item)$(k:key.use)$() fluid pipes with a wrench to change their direction, and $(item)$(k:key.sneak) + $(k:key.use)$() them with an $(thing)empty offhand$() to make them one-way."
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "auto_harvesting",
             "title": "Auto-Harvesting",
             "item": "firmalife:sweeper,firmalife:picker",
-            "text": "$(li)$(thing)Sweepers$() are used to harvest planters other than Quad and Hydroponic planters. They can be powered by redstone.$(li)$(thing)Pickers$() can be powered via redstone signal from above. They extend down to pick the crops from Quad and Hydroponic planters.$(li)Additionally, $(item)Harvest Baskets$() can be used to harvest most planter types."
+            "text": "$(li)$(thing)Sweepers$() are used to harvest planters other than Quad and Hydroponic planters. They can be powered by redstone.$(li)$(thing)Pickers$() can be powered via redstone signal from above. They extend down to pick the crops from Quad and Hydroponic planters."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)Additionally, $(item)Harvest Baskets$() can be used to harvest most planter types.$(li)To collect the loose items that the $(thing)Sweepers$() and $(thing)Pickers$() drop, you can use a $(item)Hopper Minecart$(), a $(thing)Contraption$() with $(item)Funnels$(), or a GregTech $(item)Item Collector$()."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "electric",
+            "item": "tfg:electric_greenhouse",
+            "text": "The multiblock $(item)Electric Greenhouse$() can be your source of $(thing)Logs$() and other plants if you prefer making GregTech machines over Create contraptions. It also has the unique property of being able to grow more of TFC's decorative plants!$(br2)You can make one at the end of $(7)LV$()."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(bold)Note:$() This multiblock can have its walls customized to use any valid iron-tier greenhouse block.$(br2)Check the $(emi) multiblock preview for a list of all the different blocks you can use.$(br2)The Electric Greenhouse can also be improved in a few ways, including $(l:agriculture/fertilizers)fertilizer$() or later in $(6)HV$() with the $(thing)Aquaponics Loop$()."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "hydroponics",
+            "item": "tfg:hydroponics_facility",
+            "text": "The $(item)Hydroponics Facility$() is an $(9)IV$() upgrade to the Electric Greenhouse that can grow anything in any dimension and also supports $(item)Parallel Hatches$()."
         },
         {
             "type": "patchouli:relations",
@@ -132,7 +152,9 @@
         "firmalife:hydroponic_planter": 14,
         "firmalife:sprinkler": 15,
         "firmalife:watering_can": 15,
-        "firmalife:sweeper": 18,
-        "firmalife:picker": 18
+        "firmalife:sweeper": 17,
+        "firmalife:picker": 17,
+        "tfg:electric_greenhouse": 19,
+        "tfg:hydroponics_facility": 21
     }
 }

@@ -1355,6 +1355,7 @@
 			dependencies: ["75F38905DEA60F15"]
 			dependency_requirement: "one_completed"
 			description: ["{quests.medium_voltage.mv_jetpack_2.desc}"]
+			guide_page: "tfg:field_guide tfg:logistics/exploration_gear 15"
 			id: "21F70EACF6D81E6A"
 			optional: true
 			shape: "heart"
@@ -2187,6 +2188,7 @@
 			dependencies: ["75F38905DEA60F15"]
 			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.reinforced_glider.desc}"]
+			guide_page: "tfg:field_guide tfg:logistics/exploration_gear 14"
 			id: "2CE10F52BE276A98"
 			optional: true
 			shape: "heart"

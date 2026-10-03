@@ -19,21 +19,21 @@
 			"title": "Buk",
 			"anchor": "beech",
 			"item": "tag:tfg:beech_logs",
-			"text": "$(bold)Beech$()$(br)Found in the $(thing)Thorny Grove$() and $(thing)Lush Hollow$() biomes.$(br)$(thing)Growth Days$(): 6"
+			"text": "$(bold)Buk$()$(br)Występuje w $(thing)cierniowym gaju$() i $(thing)bujnych jaskiniach$().$(br)$(thing)Czas wzrostu$(): 6 dni"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"title": "Miłorząb",
 			"anchor": "ginkgo",
 			"item": "tag:wan_ancient_beasts:ginkgo_logs",
-			"text": "$(bold)Ginkgo$()$(br)Found only in the $(thing)Lush Hollow$() biome.$(br)$(thing)Growth Days$(): 7"
+			"text": "$(bold)Miłorząb$()$(br)Występuje wyłącznie w $(thing)bujnych jaskiniach$().$(br)$(thing)Czas wzrostu$(): 7 dni"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"title": "Mahoe",
 			"anchor": "mahoe",
 			"item": "tag:tfg:mahoe_logs",
-			"text": "$(bold)Mahoe$()$(br)Found only in the $(thing)Thorny Grove$() biome.$(br)$(thing)Growth Days$(): 5"
+			"text": "$(bold)Mahoe$()$(br)Występuje wyłącznie w $(thing)cierniowym gaju$().$(br)$(thing)Czas wzrostu$(): 5 dni"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -44,7 +44,7 @@
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Further Reading",
+			"title": "Czytaj dalej",
 			"anchor": "relations",
 			"entries": [
 				"tfg:the_world/earth_tree_index",

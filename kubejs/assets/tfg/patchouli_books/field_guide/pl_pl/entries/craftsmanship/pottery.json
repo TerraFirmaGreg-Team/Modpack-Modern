@@ -11,7 +11,7 @@
         {
             "type": "patchouli:text",
             "anchor": "clay",
-            "title": "Clay",
+            "title": "Glina",
             "text": "$(thing)Clay$() is an incredibly useful and balanced material which can be used for pottery. It can prove challenging to locate at first. Clay is usually hidden by grass, but it is often found in two locations. In areas with at least 175mm $(l:the_world/climate#rainfall)Annual Rainfall$(), clay can be found in patches all over the place, usually marked by the presence of certain $(thing)Plants$()."
         },
         {
@@ -100,14 +100,14 @@
         {
             "type": "patchouli:spotlight",
             "item": "tfc:ceramic/ingot_mold{tank:{\"Amount\":100,\"FluidName\":\"gtceu:copper\"}}",
-            "title": "Casting",
+            "title": "Odlewanie",
             "link_recipes": false,
             "text": "You will very likely run into scenarios where you produce tiny amounts of excess melted metal. It is recommended to pour it into an ingot mold and save for the next time you need to cast that metal. Trying to produce perfect 144mB ratios of alloys is not feasible or worth the effort until you reach steam-age processing."
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "kaolin_clay",
-            "title": "Kaolin Clay",
+            "title": "Glina kaolinowa",
             "item": "tfc:kaolin_clay",
             "text": "Kaolin Clay is required to make $(l:craftsmanship/pottery#fire_clay)Fire Clay$(). It can be found spawning between Y=75-110 in Plateaus, Rolling Hills and Highlands (and in their $(t:Surface rock of Limestone, Dolomite, Chalk, or Marble)Karst$() $(t:Burren, Cenote, Doline, Shilin, or Tower Karst)variants$()), Old Mountains, and Shield Volcanoes at a $(l:the_world/climate#temperature)temperature$() of at least 18°C, with a $(l:the_world/climate#rainfall)rainfall$() of at least 300mm. The $(thing)Blood Lily$() flower grows on Kaolin clay, which can be up to 35 blocks below."
         },
@@ -205,7 +205,7 @@
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Fire Clay",
+            "title": "Glina ogniotrwała",
             "anchor": "fire_clay",
             "item": "tfc:fire_clay",
             "text": "The list of uses of fire clay is small, but all of them are important. Fire clay is a stronger variant of clay that has better heat resistance. It is used to make things that have to get very hot!"
@@ -222,7 +222,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "Czytaj dalej",
             "anchor": "relations",
             "entries": [
                 "tfg:the_world/geology",
@@ -233,7 +233,8 @@
                 "tfg:craftsmanship/pit_kiln",
                 "tfg:craftsmanship/charcoal_forge",
                 "tfg:craftsmanship/charcoal_pit",
-                "tfg:craftsmanship/glassworking"
+                "tfg:craftsmanship/glassworking",
+                "tfg:game_mechanics/heating"
             ]
         }
     ],

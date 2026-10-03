@@ -788,6 +788,7 @@
 		{
 			description: ["{quests.steam_age.paper.desc}"]
 			disable_toast: true
+			guide_page: "tfg:field_guide tfg:agriculture/papermaking"
 			id: "16CF5A9012EF4B27"
 			shape: "diamond"
 			subtitle: "{quests.steam_age.paper.subtitle}"
@@ -904,6 +905,7 @@
 		{
 			dependencies: ["2C35D4E01AEC02AA"]
 			description: ["{quests.steam_age.supers.desc}"]
+			guide_page: "tfg:field_guide tfg:logistics/storage 8"
 			icon: "gtceu:ulv_super_chest"
 			id: "671405A9F3A8DFDB"
 			subtitle: "{quests.steam_age.supers.subtitle}"
@@ -1173,6 +1175,7 @@
 			]
 			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.tablets.desc}"]
+			guide_page: "tfg:field_guide tfg:game_mechanics/hazards 7"
 			id: "474B85F52F14AF52"
 			optional: true
 			shape: "heart"
@@ -1286,7 +1289,7 @@
 			dependencies: ["5917B0D4708BF534"]
 			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.transportation_tips.rnr_plow.desc}"]
-			guide_page: "tfc:field_guide tfc:roadsandroofs/paving_cart 0"
+			guide_page: "tfg:field_guide tfg:logistics/roads 36"
 			id: "281D25FF34849430"
 			optional: true
 			shape: "heart"

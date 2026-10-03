@@ -49,6 +49,7 @@
 		},
 		{
 			"type": "patchouli:text",
+			"anchor": "knapping",
 			"text": "Окрім збирання палиць і гілочок по землі, палиці також можна отримати, ламаючи листя кулаком. Коли ти матимеш достатньо каміння та палиць, будеш готовий почати $(thing)оббивання$(). Оббивання — це процес, під час якого два камені б’ються один об одного, щоб надати одному з них певної форми. Щоб почати оббивання, спочатку візьми в руку щонайменше два камені, а потім клацни правою кнопкою миші в повітрі — це відкриє $(thing)інтерфейс оббивання$()."
 		},
 		{
@@ -56,7 +57,7 @@
 			"images": [
 				"tfc:textures/gui/book/gui/rock_knapping.png"
 			],
-			"text": "The Knapping Interface.",
+			"text": "Інтерфейс обробки",
 			"border": false
 		},
 		{
@@ -77,7 +78,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"anchor": "flint",
-			"title": "Flint Knapping",
+			"title": "Обробка кременю",
 			"item": "gtceu:flint_hoe_head,gtceu:flint_knife_head,gtceu:flint_shovel_head,gtceu:flint_axe_head,gtceu:flint_sword_head,tfg:flint_club_head,tfg:flint_arrow_head",
 			"text": "Кремінь можна використовувати для виготовлення багатьох тих самих предметів, які можна оббивати з каменю, а також унікальних предметів, як-от вістря стріл. За характеристиками крем’яні предмети часто значно кращі за кам’яні. Кремінь легко знайти на дні річок та озер, де він трапляється у вигляді уламків кременю на поверхні."
 		},
@@ -128,7 +129,7 @@
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Further Reading",
+			"title": "Докладніше",
 			"anchor": "relations",
 			"entries": [
 				"tfg:the_world/wild_fruits",

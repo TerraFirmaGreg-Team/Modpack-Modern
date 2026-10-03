@@ -1,23 +1,23 @@
 {
-    "name": "Storage",
+    "name": "Сховище",
     "category": "tfg:logistics",
     "icon": "tfc:wood/chest/douglas_fir",
     "pages": [
         {
             "type": "patchouli:text",
             "text": "$(li)$(bold)Зберігання предметів$()$(li2)$(l:logistics/storage#chests)Скрині$()$(li2)$(l:logistics/storage#crates)Ящики$()$(li2)$(l:logistics/storage#vaults)Сховища$()$(li2)$(l:logistics/storage#super_chests)Суперскрині$()$(li)$(bold)Зберігання предметів і рідин$()$(li2)$(l:logistics/storage#ae2)ME-сховища$()$(li2)$(l:logistics/storage#kegs)Барила$()$(li)$(bold)Зберігання рідин$()$(li2)$(l:logistics/storage#barrels)Діжки$()$(li2)$(l:logistics/storage#drums)Бочки$()$(li2)$(l:logistics/storage#fluid_tanks)Рідинні резервуари$()$(li2)$(l:logistics/storage#multiblock_tanks)Багатоблокові резервуари$()$(li2)$(l:logistics/storage#super_tanks)Суперрезервуари$()",
-            "title": "Index",
+            "title": "Індекс",
             "anchor": "index"
         },
         {
             "type": "patchouli:text",
-            "title": "Introduction",
+            "title": "Вступ",
             "anchor": "intro",
             "text": "У $(tfg) тобі доведеться накопичувати величезну кількість предметів, матеріалів і рідин. Важливо буде облаштувати великі системи зберігання, щоб усе впорядкувати. Одними з найважливіших аспектів зберігання є його $(thing)місткість$() та $(thing)обмеження$(). Для керування інвентарем у дорозі радимо прочитати про $(l:logistics/personal_storage)особисте сховище$()."
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Chests",
+            "title": "Скрині",
             "anchor": "chests",
             "item": "tag:forge:chests",
             "text": "Скриня може зберігати 18 предметів, або 36 предметів у подвійній скрині. Скрині можуть вміщувати предмети розміром до $(l:game_mechanics/size_and_weight)Великого$().$(br)Якщо у скринях є $(thing)їжа$(), вони приваблюватимуть гризунів. Тому найкраще зберігати їх у $(item)горщиках$()."
@@ -232,7 +232,7 @@
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Barrels",
+            "title": "Діжки",
             "anchor": "barrels",
             "item": "tag:tfc:barrels",
             "text": "$(l:craftsmanship/barrels)Діжки$() корисні не лише для рецептів. Це дуже дешевий спосіб зберігати велику кількість рідини — до 10 000 mB на діжку.$(br)Якщо покласти діжку на бік, рідина може капати з її крана в контейнери під нею, що дає змогу їй автоматично подаватися з постійною швидкістю.$(br)Ти можеш носити наповнену діжку на спині, щоб транспортувати її вміст."
@@ -419,7 +419,7 @@
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Multiblock Tanks",
+            "title": "Багатоблокові резервуари",
             "anchor": "multiblock_tanks",
             "item": "gtceu:wooden_multiblock_tank,gtceu:bronze_multiblock_tank,gtceu:steel_multiblock_tank",
             "text": "$(item)Мультиблокові резервуари$() — це конструкції, призначені для зберігання великої кількості рідин. Кожен тип може мати до двох клапанів, а його місткість збільшується залежно від рівня.$(li)$(bold)Дерев’яний резервуар$(): місткість 1 000 000 mB$(li)$(bold)Бронзовий резервуар$(): місткість 4 000 000 mB$(li)$(bold)Сталевий резервуар$(): місткість 8 000 000 mB"
@@ -562,7 +562,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "Докладніше",
             "anchor": "relations",
             "entries": [
                 "tfg:craftsmanship/barrels",

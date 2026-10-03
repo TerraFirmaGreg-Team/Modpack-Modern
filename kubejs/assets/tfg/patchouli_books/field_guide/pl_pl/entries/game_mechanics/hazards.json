@@ -7,7 +7,7 @@
 	"pages": [
 		{
 			"type": "patchouli:spotlight",
-			"title": "Hazardous Materials",
+			"title": "Materiały niebezpieczne",
 			"item": "gtceu:cobaltite_dust",
 			"text": "Niektóre $(thing)rudy$(), $(thing)pyły$() i $(thing)substancje chemiczne$() są niebezpieczne. Noszenie ich w ekwipunku może wywoływać $(item)szkodliwe efekty$(), a nawet $(item)doprowadzić do śmierci$(). Gdy masz je przy sobie, zagrożenie jest sygnalizowane na ekranie odpowiednim $(item)efektem$().$(br2)Przed ich działaniem chroni odpowiednie wyposażenie, takie jak $(thing)maseczki$(), $(thing)rękawice$() czy $(thing)kombinezon Hazmat$()."
 		},
@@ -30,7 +30,7 @@
 		},
 		{
 			"type": "patchouli:crafting",
-			"title": "Face Mask",
+			"title": "Maseczka",
 			"recipe": "gtceu:shaped/face_mask",
 			"text": "$(thing)Maseczka$() chroni przed zagrożeniami związanymi z $(item)wdychaniem$(), takimi jak zatrucie arsenem.",
 			"anchor": "mask"
@@ -38,7 +38,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:rubber_gloves",
-			"title": "Rubber Gloves",
+			"title": "Gumowe rękawice",
 			"link_recipes": true,
 			"anchor": "gloves",
 			"text": "The $(thing)Rubber gloves$() can either be made from $(l:agriculture/leather_making)Leather$() and $(thing)Latex$(), or out of $(thing)Rubber Sheets$(). They provide protection from any $(item)Skin Contact$() hazards, such as $(thing)Beryllium Dust$()."
@@ -77,21 +77,21 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Arsenicosis",
+			"title": "Zatrucie arszenikiem",
 			"item": "gtceu:arsenic_dust",
 			"anchor": "arsenicosis",
 			"text": "$(thing)Arsenicosis$() is an illness caused by inhaling $(thing)Arsenic$() from its dust, vapor or $(thing)Realgar$(). It slowly increases hunger, followed by nausea, and eventually $(bold)death$().$(br2)The $(l:game_mechanics/hazards#mask)Face Mask$() and the $(l:game_mechanics/hazards#hazmat)Hazmat Suit$() provide protection from $(thing)Arsenicosis$()."
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Asbestosis",
+			"title": "Azbestoza",
 			"item": "gtceu:asbestos_dust",
 			"anchor": "asbestosis",
 			"text": "$(thing)Asbestosis$() is an illness caused by inhaling $(thing)Asbestos$() dust. If carried for long enough, it causes hunger.$(br2)The $(l:game_mechanics/hazards#mask)Face Mask$() and the $(l:game_mechanics/hazards#hazmat)Hazmat Suit$() provide protection from $(thing)Asbestosis$()."
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Berylliosis",
+			"title": "Beryloza",
 			"item": "gtceu:beryllium_dust",
 			"anchor": "berylliosis",
 			"text": "$(thing)Berylliosis$() is an illness caused by skin contact with $(thing)Beryllium dust$() or $(thing)Liquid Beryllium$(). At first, it might seem that it doesn't do much. However, the longer the exposure, the faster it $(bold)kills$() you.$(br)$(l:game_mechanics/hazards#gloves)Gloves$() and the $(l:game_mechanics/hazards#hazmat)Hazmat Suit$() provide protection from $(thing)Berylliosis$()."
@@ -112,7 +112,7 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Carcinogens",
+			"title": "Substancje rakotwórcze",
 			"item": "gtceu:chromium_dust",
 			"anchor": "carcinogens",
 			"text": "The $(l:game_mechanics/hazards#mask)Face Mask$() protects from inhalation of harmful chemicals, while the $(l:game_mechanics/hazards#gloves)Gloves$() protect from contact with $(thing)Chromium Dust$().$(br)The $(l:game_mechanics/hazards#hazmat)Hazmat Suit$() protects from both.$(br)In case of severe exposure, it is advised to take some $(l:game_mechanics/hazards#medicine)Medicines$() to $(thing)Prevent$() any possible damage."
@@ -133,7 +133,7 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Methanol Poisoning",
+			"title": "Zatrucie metanolem",
 			"item": "gtceu:methanol_bucket",
 			"anchor": "methanol_poisoning",
 			"text": "$(thing)Methanol poisoning$() is caused by inhalation of $(thing)Methanol$(). It causes a strong $(item)Blindness$() effect.$(br)The $(l:game_mechanics/hazards#mask)Face Mask$() and the $(l:game_mechanics/hazards#hazmat)Hazmat Suit$() protects from inhalation."
@@ -154,7 +154,7 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Silicosis",
+			"title": "Krzemica",
 			"item": "gtceu:silicon_dioxide_dust",
 			"anchor": "silicosis",
 			"text": "$(thing)Silicosis$() is an illness caused by inhaling $(thing)Silicon Dioxide Dust$(). Exposure causes a $(item)Reduction$() in both $(item)Health$() and the $(item)Air Supply$() you have while diving $(thing)Under Water$().$(br2)The $(l:game_mechanics/hazards#mask)Face Mask$() and the $(l:game_mechanics/hazards#hazmat)Hazmat Suit$() provide protection from inhalation of silicon dioxide."
@@ -168,20 +168,22 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Radioactive Materials",
+			"title": "Materiały radioaktywne",
 			"item": "gtceu:plutonium_ingot",
 			"text": "Only the $(l:game_mechanics/hazards#hazmat)Hazmat Suit$(), as well as some advanced armors provide full protection from radiation.$(br)In the case you do get irradiated, only the $(l:game_mechanics/hazards#rad_away)RadAwayᵗᵐ Pill$() can cure you."
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Further Reading",
+			"title": "Czytaj dalej",
 			"anchor": "relations",
 			"entries": [
 				"tfg:the_world/geology",
 				"tfg:craftsmanship/metallurgy",
 				"tfg:cooking/food_and_water",
 				"tfg:game_mechanics/mining",
-				"tfg:game_mechanics/mob_effects"
+				"tfg:game_mechanics/mob_effects",
+				"tfg:craftsmanship/clothing",
+				"tfg:game_mechanics/heating"
 			]
 		}
 	],

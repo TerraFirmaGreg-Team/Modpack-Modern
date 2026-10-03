@@ -16,7 +16,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "index",
-			"text": "$(li)$(bold)$(l:beneath/beneath#entering)Entering$() and $(bold)$(l:beneath/beneath#exiting)Exiting$()$(li)$(bold)$(l:beneath/beneath#biomes)Biomes$()$(li2)$(l:beneath/beneath#biomes_top)Top Layer$()$(li2)$(l:beneath/beneath#biomes_middle)Middle Layer$()$(li2)$(l:beneath/beneath#biomes_bottom)Bottom Layer$()$(li)$(bold)$(l:beneath/beneath#geology)Geology$()$(li2)$(l:beneath/beneath#more_rocks)More Rocks$()"
+			"text": "$(li)$(bold)$(l:beneath/beneath#entering)Entering$() and $(bold)$(l:beneath/beneath#exiting)Exiting$()$(li)$(bold)$(l:beneath/beneath#biomes)Biomes$()$(li2)$(l:beneath/beneath#salt_caves)Top Layer$()$(li2)$(l:beneath/beneath#tar_pools)Middle Layer$()$(li2)$(l:beneath/beneath#ash_forest)Bottom Layer$()$(li)$(bold)$(l:beneath/beneath#geology)Geology$()$(li2)$(l:beneath/beneath#more_rocks)More Rocks$()"
 		},
 		{
 			"type": "patchouli:image",
@@ -51,13 +51,18 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "biomes",
-			"title": "Biomes",
+			"title": "Biomy",
 			"text": "The Beneath has a full set of new biomes to explore!$(br2)The Beneath can be split into three vertical layers, each with their own set of biomes. Each one is more hot and dangerous as you descend!"
 		},
 		{
+			"type": "patchouli:text",
+			"title": "Warstwy",
+			"text": "$(bold)Top Layer$()$(li)$(l:beneath/beneath#salt_caves)Salt Caves$()$(li)$(l:beneath/beneath#muggy_bog)Muggy Bog$()$(li)$(l:beneath/beneath#decaying_caverns)Decaying Caverns$()$(li)$(l:beneath/beneath#webbed_lair)Webbed Lair$()$(br)$(bold)Middle Layer$()$(li)$(l:beneath/beneath#tar_pools)Tar Pools$()$(li)$(l:beneath/beneath#geothermal_springs)Geothermal Springs$()$(li)$(l:beneath/beneath#thorny_grove)Thorny Grove$()$(li)$(l:beneath/beneath#lush_hollow)Lush Hollow$()$(br)$(bold)Bottom Layer$()$(li)$(l:beneath/beneath#ash_forest)Ash Forest$()$(li)$(l:beneath/beneath#lava_floes)Lava Floes$()$(li)$(l:beneath/beneath#basalt_deltas)Basalt Deltas$()"
+		},
+		{
 			"type": "patchouli:image",
-			"anchor": "biomes_top",
-			"title": "Salt Caves",
+			"anchor": "salt_caves",
+			"title": "Jaskinie solne",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/salt_caves.png"
 			],
@@ -66,7 +71,8 @@
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Muggy Bog",
+			"title": "Duszne bagno",
+			"anchor": "muggy_bog",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/muggy_bog.png"
 			],
@@ -75,7 +81,8 @@
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Decaying Caverns",
+			"title": "Rozpadające się jaskinie",
+			"anchor": "decaying_caverns",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/decaying_caverns.png"
 			],
@@ -84,7 +91,8 @@
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Webbed Lair",
+			"title": "Leże pająków",
+			"anchor": "webbed_lair",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/webbed_lair.png"
 			],
@@ -93,8 +101,8 @@
 		},
 		{
 			"type": "patchouli:image",
-			"anchor": "biomes_middle",
-			"title": "Tar Pools",
+			"anchor": "tar_pools",
+			"title": "Doły ze smołą",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/tar_pools.png"
 			],
@@ -103,7 +111,8 @@
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Geothermal Springs",
+			"title": "Źródła geotermalne",
+			"anchor": "geothermal_springs",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/geothermal_springs.png"
 			],
@@ -112,16 +121,18 @@
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Thorny Grove",
+			"title": "Cierniowy gaj",
+			"anchor": "thorny_grove",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/thorny_brambles.png"
 			],
 			"border": true,
-			"text": "Trudny do podróżowania biom z roślinami, które ranią ciebie po nadepnięciu. Uważaj!"
+			"text": "Trudny do podróżowania biom z roślinami, które ranią cię po nadepnięciu. Uważaj!"
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Lush Hollow",
+			"title": "Bujna jaskinia",
+			"anchor": "lush_hollow",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/lush_hollow.png"
 			],
@@ -130,8 +141,8 @@
 		},
 		{
 			"type": "patchouli:image",
-			"anchor": "biomes_bottom",
-			"title": "Ash Forest",
+			"anchor": "ash_forest",
+			"title": "Popiołowy las",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/ash_forest.png"
 			],
@@ -140,7 +151,8 @@
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Lava Floes",
+			"title": "Potoki lawy",
+			"anchor": "lava_floes",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/lava_floes.png"
 			],
@@ -149,7 +161,8 @@
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Basalt Deltas",
+			"title": "Bazaltowe delty",
+			"anchor": "basalt_deltas",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/basalt_deltas.png"
 			],
@@ -175,15 +188,15 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "The $(thing)Geothermal Springs$() biome contains the exclusive $(item)Aragonite$() and $(item)Glauberite$(), along with more Calcite.$(br2)This biome also houses $(item)Huge Quartz$() crystals, which can either be broken with a pickaxe to obtain $(item)Smoky Quartz$() gems of varying quality, or broken with a $(item)Gem Saw$() to obtain the transparent block itself."
+			"text": "The $(l:beneath/beneath#geothermal_springs)Geothermal Springs$() biome contains the exclusive $(item)Aragonite$() and $(item)Glauberite$(), along with more Calcite.$(br2)This biome also houses $(item)Huge Quartz$() crystals, which can either be broken with a pickaxe to obtain $(item)Smoky Quartz$() gems of varying quality, or broken with a $(item)Gem Saw$() to obtain the transparent block itself."
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(item)Gilsonite$(), a very dark building block and ingredient of $(l:logistics/roads#asphalt)Asphalt$(), can be found in large quantities in the $(thing)Tar Pools$() biome, along with $(item)Sandstone$().$(br2)Finally, $(item)Halite$() can be found in massive quantities in the $(thing)Salt Caves$() biome, which can be mined for Halite and Sylvite ores."
+			"text": "$(item)Gilsonite$(), a very dark building block and ingredient of $(l:logistics/roads#asphalt)Asphalt$(), can be found in large quantities in the $(l:beneath/beneath#tar_pools)Tar Pools$() biome, along with $(item)Sandstone$().$(br2)Finally, $(item)Halite$() can be found in massive quantities in the $(l:beneath/beneath#salt_caves)Salt Caves$() biome, which can be mined for Halite and Sylvite ores."
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Further Reading",
+			"title": "Czytaj dalej",
 			"anchor": "relations",
 			"entries": [
 				"tfg:beneath/beneath_mechanics",

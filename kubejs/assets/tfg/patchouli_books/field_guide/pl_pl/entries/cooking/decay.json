@@ -10,7 +10,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "$(li)$(bold)$(l:cooking/decay#oven_baked)Oven Baking$()$(li)$(bold)$(l:cooking/decay#cellar)Cellars$()$(li2)$(l:cooking/decay#shelf)Cellar Storage$()$(li)$(bold)$(l:cooking/decay#lunch_box)Lunch Boxes$()$(li)$(bold)$(l:cooking/decay#refrigerator)Refrigerators$()$(li)$(bold)$(l:cooking/decay#freeze_dry)Freeze Drying$()$(li)$(bold)$(l:cooking/decay#pest)Pest Control$()"
+            "text": "$(li)$(bold)$(l:cooking/decay#oven_baked)Oven Baking$()$(li)$(bold)$(l:cooking/decay#cellar)Cellars$()$(li2)$(l:cooking/decay#shelf)Cellar Storage$()$(li)$(bold)$(l:cooking/decay#lunch_box)Lunch Boxes$()$(li)$(bold)$(l:cooking/decay#refrigerator)Refrigerators$()$(li)$(bold)$(l:cooking/decay#freeze_dry)Freeze Drying$()$(li)$(bold)$(l:cooking/decay#pest)Pest Control$()$(li)$(bold)$(l:cooking/decay#cutting)Cutting off decay$()"
         },
         {
             "type": "patchouli:text",
@@ -45,19 +45,19 @@
                     "bold": true
                 },
                 {
-                    "text": "Oven Baked"
+                    "text": "Pieczone w piecu"
                 },
                 {
                     "text": "0.900"
                 },
                 {
-                    "text": "Smażone na drewnie"
+                    "text": "Grillowane"
                 },
                 {
                     "text": "0.800"
                 },
                 {
-                    "text": "Smoked"
+                    "text": "Wędzone"
                 },
                 {
                     "text": "0.500"
@@ -69,31 +69,31 @@
                     "text": "0.500"
                 },
                 {
-                    "text": "Pickled"
+                    "text": "Kiszone"
                 },
                 {
                     "text": "0.500"
                 },
                 {
-                    "text": "Preserved"
+                    "text": "Zakonserwowane"
                 },
                 {
                     "text": "0.500"
                 },
                 {
-                    "text": "Wild"
+                    "text": "Dzikie"
                 },
                 {
                     "text": "0.500"
                 },
                 {
-                    "text": "Dried"
+                    "text": "Wysuszone"
                 },
                 {
                     "text": "0.500"
                 },
                 {
-                    "text": "Cooled"
+                    "text": "Chłodzone"
                 },
                 {
                     "text": "0.300"
@@ -117,7 +117,7 @@
                     "text": "0.125"
                 },
                 {
-                    "text": "Preserved in Vinegar"
+                    "text": "Zakonserwowane w occie"
                 },
                 {
                     "text": "0.100"
@@ -184,7 +184,7 @@
         {
             "type": "patchouli:text",
             "anchor": "smoking",
-            "title": "Smoking",
+            "title": "Wędzenie",
             "text": "Smoking is used to preserve $(thing)Meat$() and $(l:cooking/cheese)Cheese$() with a modifier of 0.7. To smoke meat, it must have first been $(thing)Brined$() by sealing it in a $(thing)Barrel$() with $(thing)Brine$(). Cheese does not have this requirement.$(br)To start smoking, add an item to wool yarn that is within four blocks above a firepit. The string should begin to generate some smoke if it is working.$(br)Note: The firepit may only be burned with $(thing)Logs$()!"
         },
         {
@@ -247,7 +247,7 @@
         {
             "type": "patchouli:text",
             "anchor": "drying",
-            "title": "Drying",
+            "title": "Suszenie",
             "text": "The $(thing)Drying Mat$() is used to dry items. It is made with $(thing)Fruit Leaves$(), which are obtained from breaking the leaves of $(thing)Fruit Trees$(). To use the drying mat, place it out in the sun and add an item to it with $(item)$(k:key.use)$(). If it rains, the drying process must start over. Some food items―Like fruits―Will gain the $(7)$(bold)Dried$() trait which gives a modifier of 0.8."
         },
         {
@@ -257,7 +257,7 @@
         {
             "type": "patchouli:text",
             "anchor": "oven_baked",
-            "title": "Oven Baked",
+            "title": "Pieczone w piecu",
             "text": "Baking food items in a $(l:cooking/cooking_methods#top_oven)Top Oven$() is the second-best way to preserve your food items through cooking as it gives the $(7)$(bold)Oven Baked$() trait with a modifier of 0.9."
         },
         {
@@ -469,8 +469,14 @@
             "text": "Food that is left sitting in chests can attract $(thing)Rats$(), so remember to store food properly in vessels, cellars, or fridges. Rats are able to open containers and eat the food out of them. You will be alerted to a rat's presence by the message $(thing)'This container has a foul smell'$(). It is important to note that unsealing and resealing a large vessel before you leave the screen will never attract pests."
         },
         {
+            "type": "patchouli:text",
+            "anchor": "cutting",
+            "title": "Odcinanie",
+            "text": "Lastly, you can cut off the decayed part of food by picking up a $(item)knife$() with your cursor and $(item)right-clicking$() a partially decayed food item stack in your inventory.$(br2)This will reset the decay while losing some of the item stack, proportional to how decayed it was."
+        },
+        {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "Czytaj dalej",
             "anchor": "relations",
             "entries": [
                 "tfg:cooking/food_and_water",

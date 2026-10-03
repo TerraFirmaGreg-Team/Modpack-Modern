@@ -1,5 +1,5 @@
 {
-    "name": "Aqueducts",
+    "name": "Акведуки",
     "category": "tfg:agriculture",
     "icon": "tfc:rock/aqueduct/shale",
     "pages": [
@@ -93,8 +93,8 @@
                     }
                 }
             ],
-            "name": "Aqueduct Network",
-            "text": "An aqueduct network with water or lava.",
+            "name": "Сеть акведуков",
+            "text": "Сеть акведуков с водой или лавой",
             "enable_visualize": false
         },
         {

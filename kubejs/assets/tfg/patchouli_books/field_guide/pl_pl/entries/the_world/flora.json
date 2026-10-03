@@ -38,7 +38,7 @@
             },
             "name": "Zwykłe rośliny",
             "anchor": "standard_plants",
-            "text": "Zwykłe rośliny są jak małe kwiaty. Rosną na trawie i polach uprawnych.",
+            "text": "Zwykłe rośliny są jak małe kwiaty. Rosną na trawie, ziemi i polach uprawnych.",
             "enable_visualize": false
         },
         {
@@ -400,7 +400,7 @@
                     "bold": true
                 },
                 {
-                    "text": "Basil"
+                    "text": "Bazylia"
                 },
                 {
                     "text": "12 - 25"
@@ -409,7 +409,7 @@
                     "text": "300 - 500"
                 },
                 {
-                    "text": "Bay Laurel"
+                    "text": "Wawrzyn szlachetny"
                 },
                 {
                     "text": "8 - 14"
@@ -418,7 +418,7 @@
                     "text": "25 - 225"
                 },
                 {
-                    "text": "Cardamom"
+                    "text": "Kardamon"
                 },
                 {
                     "text": "18 - 30"
@@ -427,7 +427,7 @@
                     "text": "350 - 500"
                 },
                 {
-                    "text": "Cilantro"
+                    "text": "Kolendra"
                 },
                 {
                     "text": "5 - 15"
@@ -436,7 +436,7 @@
                     "text": "0 - 150"
                 },
                 {
-                    "text": "Cumin"
+                    "text": "Kmin rzymski"
                 },
                 {
                     "text": "6 - 20"
@@ -454,7 +454,7 @@
                     "text": "50 - 150"
                 },
                 {
-                    "text": "Pimento"
+                    "text": "Ziele angielskie"
                 },
                 {
                     "text": "15 - 30"
@@ -463,7 +463,7 @@
                     "text": "200 - 450"
                 },
                 {
-                    "text": "Vanilla"
+                    "text": "Wanilia"
                 },
                 {
                     "text": "18 - 30"
@@ -473,7 +473,7 @@
                 }
             ],
             "text": "",
-            "title": "Wild Spice Ranges",
+            "title": "Warunki występowania przypraw",
             "legend": [],
             "columns": 2,
             "first_column_width": 80,
@@ -502,7 +502,7 @@
                     "X": "firmalife:plant/basil[stage=1]"
                 }
             },
-            "name": "Basil",
+            "name": "Bazylia",
             "anchor": "basil",
             "text": "$(thing)Dzika bazylia$() rośnie w temp. od 12 do 25 C oraz przy opadach między 300 do 500 mm.",
             "enable_visualize": false
@@ -522,7 +522,7 @@
                     "X": "firmalife:plant/bay_laurel[stage=1]"
                 }
             },
-            "name": "Bay Laurel",
+            "name": "Wawrzyn szlachetny",
             "anchor": "bay",
             "text": "$(thing)Dziki wawrzyn szlachetny$() rośnie w temp. od 8 do 14 C oraz przy opadach między 25 do 225mm.",
             "enable_visualize": false
@@ -542,7 +542,7 @@
                     "X": "firmalife:plant/cardamom[stage=1]"
                 }
             },
-            "name": "Cardamom",
+            "name": "Kardamon",
             "anchor": "cardamom",
             "text": "$(thing)Dziki kardamon$() rośnie w temp. od 18 do 30 C oraz przy opadach między 350 do 500mm.",
             "enable_visualize": false
@@ -562,7 +562,7 @@
                     "X": "firmalife:plant/cilantro[stage=1]"
                 }
             },
-            "name": "Cilantro",
+            "name": "Kolendra",
             "anchor": "cilantro",
             "text": "$(thing)Dzika Kolendra$() rośnie w temp. od 5 do 15 C oraz przy opadach między 0 do 150mm.",
             "enable_visualize": false
@@ -582,7 +582,7 @@
                     "X": "firmalife:plant/cumin[stage=1]"
                 }
             },
-            "name": "Cumin",
+            "name": "Kmin rzymski",
             "anchor": "cumin",
             "text": "$(thing)Dziki kmin rzymski$() rośnie w temp. od 6 do 20 C oraz przy opadach między 50 do 250mm.",
             "enable_visualize": false
@@ -622,7 +622,7 @@
                     "X": "firmalife:plant/pimento[stage=1]"
                 }
             },
-            "name": "Pimento",
+            "name": "Ziele angielskie",
             "anchor": "pimento",
             "text": "$(thing)Dzikie ziele angielskie$() rośnie w temp. od 15 do 30 C oraz przy opadach między 200 do 450mm.",
             "enable_visualize": false
@@ -642,7 +642,7 @@
                     "X": "firmalife:plant/vanilla[stage=1]"
                 }
             },
-            "name": "Vanilla",
+            "name": "Wanilia",
             "anchor": "vanilla",
             "text": "$(thing)Dzika wanilia$() rośnie w temp. od 18 do 30 C oraz przy opadach między 200 a 500 mm.",
             "enable_visualize": false
@@ -668,7 +668,7 @@
                     "X": "firmalife:plant/butterfly_grass"
                 }
             },
-            "name": "Butterfly Grass",
+            "name": "Irys afrykański",
             "anchor": "butterfly_grass",
             "text": "Irys afrykański.",
             "enable_visualize": false
@@ -679,7 +679,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "Czytaj dalej",
             "anchor": "relations",
             "entries": [
                 "tfg:the_world/wild_fruits",

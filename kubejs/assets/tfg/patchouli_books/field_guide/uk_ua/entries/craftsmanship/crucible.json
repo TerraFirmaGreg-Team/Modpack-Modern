@@ -1,5 +1,5 @@
 {
-    "name": "Crucible",
+    "name": "Тигель",
     "category": "tfg:craftsmanship",
     "icon": "tfc:crucible",
     "pages": [
@@ -97,11 +97,11 @@
         {
             "type": "patchouli:text",
             "text": "$(li)Використання $(l:craftsmanship/charcoal_forge#bellows)міхів$() на $(thing)формі для лиття$() пришвидшить охолодження металу.$()$(li)Активація $(thing)каналу$() імпульсом редстоуну також почне виливання металу.$()$(li)$(thing)Форми для лиття$() видають сигнал компаратора.$(li)Метал можна безпосередньо закачувати з таких джерел, як рідинні труби або $(l:craftsmanship/blast_furnace)доменна піч$(), з якої зливається метал.$(li)Лійки можуть витягувати охолоджені металеві предмети з форм, залишаючи саму форму на місці.",
-            "title": "Automation"
+            "title": "Автоматизація"
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "Докладніше",
             "anchor": "relations",
             "entries": [
                 "tfg:craftsmanship/pit_kiln",
@@ -111,7 +111,8 @@
                 "tfg:craftsmanship/blast_furnace",
                 "tfg:craftsmanship/bloomery",
                 "tfg:craftsmanship/anvils",
-                "tfg:craftsmanship/glassworking"
+                "tfg:craftsmanship/glassworking",
+                "tfg:game_mechanics/heating"
             ]
         }
     ],

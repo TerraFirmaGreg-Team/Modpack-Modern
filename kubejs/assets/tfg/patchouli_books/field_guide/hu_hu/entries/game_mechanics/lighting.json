@@ -6,7 +6,7 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "$(li)$(bold)$(l:game_mechanics/lighting#torches)Torches$()$(li)$(bold)$(l:game_mechanics/lighting#candles)Candles$()$(li)$(bold)$(l:game_mechanics/lighting#jack_o_lanterns)Jack 'o Lanterns$()$(li)$(bold)$(l:game_mechanics/lighting#lamps)Lamps$()$(li)$(bold)$(l:game_mechanics/lighting#permanent_light)Permanent Light$()",
+            "text": "$(li)$(bold)$(l:game_mechanics/lighting#torches)Torches$()$(li)$(bold)$(l:game_mechanics/lighting#candles)Candles$()$(li)$(bold)$(l:game_mechanics/lighting#jack_o_lanterns)Jack 'o Lanterns$()$(li)$(bold)$(l:game_mechanics/lighting#lamps)Lamps$()$(li)$(bold)$(l:game_mechanics/lighting#portable_light)Portable Lights$()$(li)$(bold)$(l:game_mechanics/lighting#permanent_light)Permanent Light$()",
             "title": "Index",
             "anchor": "index"
         },
@@ -134,6 +134,12 @@
             "enable_visualize": false
         },
         {
+            "type": "patchouli:text",
+            "anchor": "portable_light",
+            "title": "Portable Light",
+            "text": "You can also carry lights in your hand to illuminate the area around you, such as with a $(item)Torch$() in your $(thing)off-hand$().$(br2)To free up your off-hand slot, $(l:game_mechanics/lighting#lamps)lamps$() can be worn in the $(thing)Back$() slot of your $(l:craftsmanship/clothing#curios)Curios$(), and $(l:logistics/exploration_gear#digger_helmet)Digger Helmets$() are a type of helmet that also provides light."
+        },
+        {
             "type": "patchouli:spotlight",
             "anchor": "permanent_light",
             "title": "Permanent Light",
@@ -150,7 +156,8 @@
                 "tfg:craftsmanship/firepit",
                 "tfg:craftsmanship/building_materials",
                 "tfg:cooking/jam",
-                "tfg:agriculture/aqueducts"
+                "tfg:agriculture/aqueducts",
+                "tfg:logistics/exploration_gear"
             ]
         }
     ],

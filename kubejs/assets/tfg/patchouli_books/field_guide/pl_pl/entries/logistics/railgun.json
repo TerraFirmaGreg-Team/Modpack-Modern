@@ -1,5 +1,5 @@
 {
-	"name": "Interplanetary Railgun",
+	"name": "Międzyplanetarne działo szynowe",
 	"category": "tfg:logistics",
 	"icon": "tfg:railgun_ammo_shell",
 	"read_by_default": true,
@@ -24,7 +24,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"item": "tfg:interplanetary_item_launcher",
-			"title": "Nadawca działa szynowego",
+			"title": "Nadajnik działa szynowego",
 			"anchor": "sender",
 			"text": "The $(item)Interplanetary Railgun$() acts as your $(thing)sender multiblock$().$(br2)It's the structure responsible for launching items toward distant $(thing)receivers$() — but it can't receive anything itself."
 		},
@@ -161,7 +161,7 @@
 			"type": "patchouli:crafting",
 			"recipe": "tfg:shaped/interplanetary_item_launcher",
 			"title": " ",
-			"text": "$(bold)Important:$() This multiblock can only $(italic)send$() items. Make sure your $(item)Interplanetary Railgun$() is always chunkloaded!"
+			"text": "$(bold)Ważne:$() Ten multiblok może tylko $(italic)wysyłać$() przedmioty. Upewnij się, że chunk zawierający $(item)międzyplanetarne działo szynowe$() jest zawsze objęty wymuszonym ładowaniem!"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -206,7 +206,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"title": "Redstone Control",
+			"title": "Kontrola redstone",
 			"anchor": "redstone",
 			"text": "The $(item)Redstone Rule$() is simple — but incredibly powerful when used well.$(br2)In the $(item)Sender$() rules interface, enabling this rule means that a $(thing)redstone signal$() must be present on the $(thing)Input Bus$(thing) for it to send items.$(br2)In the $(item)Receiver$() rules interface, you can configure the rule so that an $(thing)Output Bus$() will only accept items based on the redstone signal on that specific block."
 		},
@@ -216,7 +216,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"title": "Supply Exact",
+			"title": "Dostarczaj dokładnie",
 			"anchor": "supply_exact",
 			"text": "The $(item)Item Rule$() works similarly to a $(thing)GregTech Robot Arm$() set to $(thing)Supply Exact$().$(br2)It can only be configured from the $(item)Sender$() rules interface.$(br2)With this rule active, the $(thing)Railgun$(thing) will only send the $(italic)exact quantity$() when available in the $(item)Input Bus$()."
 		},
@@ -226,7 +226,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"title": "Delay",
+			"title": "Opóźnienie",
 			"anchor": "delay",
 			"text": "The $(item)Delay Rule$() is simple, but useful for managing item flow timing.$(br2)$(bold)On the Sender side:$()$(br)Items will only be sent after the $(item)Input Bus$() hasn't received any new item for a set amount of time (in seconds).$(br2)This helps avoid sending items too frequently when inputs are constantly changing."
 		},
@@ -249,7 +249,7 @@
 			"type": "patchouli:multiblock",
 			"name": " ",
 			"enable_visualize": "true",
-			"text": "Use a $(l:craftsmanship/building_tools#terminals)Terminal$() to construct the multiblock easily.",
+			"text": "Użyj $(l:craftsmanship/building_tools#terminals)terminalu$(), aby łatwo zbudować multiblok.",
 			"multiblock": {
 				"pattern": [
 					[
@@ -335,7 +335,7 @@
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Further Reading",
+			"title": "Czytaj dalej",
 			"anchor": "relations",
 			"entries": [
 				"tfg:the_moon/the_moon",

@@ -142,7 +142,7 @@
             "images": [
                 "tfc:textures/gui/book/tutorial/familiarity_limit_pig.png"
             ],
-            "text": "Adult livestock cannot be fully familiarized, indicated by the red outlined heart. Babies can reach 100% familiarity.",
+            "text": "Dorosłe zwierzęta hodowlane nie mogą osiągnąć pełnej ufności, co sygnalizuje serce z czerwoną obwódką. Młode mogą osiągnąć 100% ufności.",
             "border": true
         },
         {
@@ -185,18 +185,18 @@
         {
             "type": "tfg:heat_recipe",
             "recipe": "tfg:heating/forge_eggs_to_tfc_food_cooked_egg",
-            "text": "$(thing)Eggs$() can be cooked or boiled for food. Male oviparous animals can fertilize females, which causes the next egg laid in the nest box to be fertilized. Fertilized eggs will have a tooltip with how long until they are ready to hatch."
+            "text": "$(thing)Eggs$() can be cooked or boiled for food. Male oviparous animals can fertilize females, which causes the next egg laid in the nest box to be fertilized. Fertilized eggs will have a tooltip with how long until they are ready to hatch.$(br2)Oviparous animals can also be $(thing)plucked$() for feathers with $(item)$(k:key.sneak) + $(k:key.use)$()."
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Feeding Troughs",
+            "title": "Koryta",
             "anchor": "feeding_trough",
             "item": "tfcgroomer:bismuth_bronze_grooming_station,tfcgroomer:black_bronze_grooming_station,tfcgroomer:bronze_grooming_station,tfcgroomer:copper_grooming_station,tfcgroomer:wrought_iron_grooming_station,tfcgroomer:steel_grooming_station,tfcgroomer:black_steel_grooming_station,tfcgroomer:red_steel_grooming_station,tfcgroomer:blue_steel_grooming_station",
             "text": "$(thing)Feeding Troughs$() can automatically feed animals in an area specified by its tooltip. Higher tier $(l:craftsmanship/metallurgy)Metals$() increase the feeding range.$(br)To add animal feed―and optionally enable automatic breeding―open the troughs interface with $(item)$(k:key.use)$()."
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "Czytaj dalej",
             "anchor": "relations",
             "entries": [
                 "tfg:agriculture/growing_crops",

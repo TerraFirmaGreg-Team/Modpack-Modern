@@ -5,7 +5,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"title": "Beneath Crops",
+			"title": "Рослини Безодні",
 			"text": "$(thing)Безодня$() може бути суворим середовищем, але там усе ж можливо знайти врожаї. Рослини Безодні надзвичайно стійкі й можуть рости в умовах екстремальної спеки, що робить їх корисними для виживання під землею та на поверхні."
 		},
 		{
@@ -24,7 +24,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "cassava",
-			"title": "Cassava",
+			"title": "Маніок",
 			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 10–80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Зволоження$(): 70–100 %$(br)$(bold)Поживна речовина$(): Азот$(br2)Маніок можна їсти для забезпечення $(thing)овочевого$() насичення, хоча перед споживанням його краще $(thing)приготувати$().$(br)"
 		},
 		{
@@ -139,7 +139,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "peanut",
-			"title": "Peanut",
+			"title": "Арахіс",
 			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 10–80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Зволоження$(): 20–80 %$(br)$(bold)Поживна речовина$(): Калій$(br2)Арахіс можна їсти для забезпечення $(thing)овочевого$() та $(thing)білкового$() насичення."
 		},
 		{
@@ -254,7 +254,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "beans",
-			"title": "Blackstone Beans",
+			"title": "Чорнокам’яна квасоля",
 			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 10–80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Зволоження$(): 20–80 %$(br)$(bold)Поживна речовина$(): Калій$(br2)Чорнокам'яну квасолю можна їсти як забезпеччення $(thing)овочевого$() та $(thing)білкового$() насичення. Однак спочатку її потрібно приготувати!"
 		},
 		{
@@ -369,7 +369,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "ghost_pepper",
-			"title": "Ghost Pepper",
+			"title": "Примарний перець",
 			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 10–80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Зволоження$(): 20–80 %$(br)$(bold)Поживна речовина$(): Азот$(br2)Примарний перець можна їсти для забезпечення $(thing)овочевого$() насичення. Він також є популярною закускою серед мешканців Безодні."
 		},
 		{
@@ -485,7 +485,7 @@
 			"type": "patchouli:text",
 			"anchor": "cotton",
 			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 10–80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Зволоження$(): 40–100 %$(br)$(bold)Поживна речовина$(): Азот$(br2)Бавовна — культура заввишки у два блоки. Насіння бавовни можна посадити на сільськогосподарських грядках, де він виросте заввишки у два блоки та даватиме $(item)бавовняні кульки$(), які можна переробити на $(thing)бавовняну нитку$() або $(thing)тканину$().",
-			"title": "Cotton"
+			"title": "Бавовна"
 		},
 		{
 			"type": "tfg:multimultiblock",
@@ -600,7 +600,7 @@
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Further Reading",
+			"title": "Докладніше",
 			"anchor": "relations",
 			"entries": [
 				"tfg:the_world/climate",

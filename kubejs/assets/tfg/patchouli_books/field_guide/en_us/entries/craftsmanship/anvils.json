@@ -581,12 +581,14 @@
                 "tfg:craftsmanship/crucible",
                 "tfg:craftsmanship/charcoal_pit",
                 "tfg:craftsmanship/bloomery",
-                "tfg:craftsmanship/glassworking"
-
+                "tfg:craftsmanship/glassworking",
+                "tfg:game_mechanics/heating"
             ]
         }
     ],
     "read_by_default": true,
     "sortnum": 8,
-    "extra_recipe_mappings": {}
+    "extra_recipe_mappings": {
+        "vintageimprovements:helve_hammer": 24
+    }
 }

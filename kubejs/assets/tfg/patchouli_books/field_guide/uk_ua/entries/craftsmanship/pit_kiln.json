@@ -1,5 +1,5 @@
 {
-    "name": "Ямна піч",
+    "name": "Земляна піч",
     "category": "tfg:craftsmanship",
     "icon": "tfc:textures/gui/book/icons/pit_kiln.png",
     "pages": [
@@ -29,13 +29,14 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "Докладніше",
             "anchor": "relations",
             "entries": [
                 "tfg:craftsmanship/pottery",
                 "tfg:craftsmanship/metallurgy",
                 "tfg:craftsmanship/charcoal_forge",
-                "tfg:craftsmanship/anvils"
+                "tfg:craftsmanship/anvils",
+                "tfg:game_mechanics/heating"
             ]
         }
     ],

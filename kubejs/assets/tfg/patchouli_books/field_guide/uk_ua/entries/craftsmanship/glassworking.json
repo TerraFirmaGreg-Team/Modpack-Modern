@@ -1,24 +1,24 @@
 {
-    "name": "Glassworking",
+    "name": "Склоробство",
     "category": "tfg:craftsmanship",
     "icon": "tfc:blowpipe_with_glass",
     "pages": [
         {
             "type": "patchouli:text",
             "anchor": "index",
-            "text": "$(li)$(bold)$(l:craftsmanship/glassworking#intro)Скляні суміші$()$(li2)$(l:craftsmanship/glassworking#lime_and_potash)Вапно та поташ$()$(li)$(bold)$(l:craftsmanship/glassworking#tools)Інструменти для склоробства$()$(li2)$(l:craftsmanship/glassworking#blowpipe)Склодувна трубка$()$(li2)$(l:craftsmanship/glassworking#paddle)Лопатка$()$(li2)$(l:craftsmanship/glassworking#jacks)Щипці$()$(li2)$(l:craftsmanship/glassworking#saw)Ювелірна пилка$()$(li)$(bold)$(l:craftsmanship/glassworking#glassworking_steps)Етапи виготовлення скла$()$(li2)$(l:craftsmanship/glassworking#table_pour)Виливання на стіл$()$(li2)$(l:craftsmanship/glassworking#basin_pour)Виливання у басейн$()$(li)$(bold)$(l:craftsmanship/glassworking#coloring)Фарбування скла$()$(li2)$(l:craftsmanship/glassworking#dyes)Список барвників$()"
+            "text": "$(li)$(bold)$(l:craftsmanship/glassworking#intro)Скляні суміші$()$(li2)$(l:craftsmanship/glassworking#lime_and_potash)Вапно &  Поташ$()$(li)$(bold)$(l:craftsmanship/glassworking#tools)Інструменти для склоробства$()$(li2)$(l:craftsmanship/glassworking#blowpipe)Склодувна трубка$()$(li2)$(l:craftsmanship/glassworking#paddle)Лопатка$()$(li2)$(l:craftsmanship/glassworking#jacks)Щипці$()$(li2)$(l:craftsmanship/glassworking#saw)Ювелірна пилка$()$(li)$(bold)$(l:craftsmanship/glassworking#glassworking_steps)Етапи виготовлення скла$()$(li2)$(l:craftsmanship/glassworking#table_pour)Виливання на стіл$()$(li2)$(l:craftsmanship/glassworking#basin_pour)Виливання у басейн$()$(li)$(bold)$(l:craftsmanship/glassworking#coloring)Фарбування скла$()$(li2)$(l:craftsmanship/glassworking#dyes)Список барвників$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "intro",
-            "title": "Introduction",
+            "title": "Вступ",
             "text": "Склоробство — це процес перетворення піску на скло. Спершу потрібно створити $(thing)порцію для скла$(), яка буває чотирьох типів:$(br)$(br) 1. $(thing)Кремнеземна$() — з білого піску.$(br) 2. $(thing)Гематитова$() — з жовтого, червоного або рожевого піску.$(br) 3. $(thing)Олівінова$() — із зеленого або коричневого піску.$(br) 4. $(thing)Вулканічна$() — з чорного піску."
         },
         {
             "type": "patchouli:crafting",
             "recipe": "tfc:crafting/silica_glass_batch",
             "text": "Скляні суміші можна створювати з одного з наведених вище кольорів піску, а також $(l:craftsmanship/glassworking#lime_and_potash)вапна$() та певного типу $(l:craftsmanship/glassworking#lime_and_potash)поташу$().$(br)Пам’ятай, що різні типи піску можна отримати, розбиваючи гравій молотом.",
-            "title": "Silica Glass Batch"
+            "title": "Силікатна скляна суміш"
         },
         {
             "type": "patchouli:smelting",
@@ -32,33 +32,33 @@
             "type": "patchouli:text",
             "anchor": "tools",
             "text": "Склоробство починається зі скляної суміші, після чого потрібно виконати низку етапів. Для цих етапів можуть знадобитися спеціальні інструменти:$(br)$(li)$(l:craftsmanship/glassworking#blowpipe)Склодувна трубка$() — для $(thing)видування$() та $(thing)розтягування$().$(li)$(l:craftsmanship/glassworking#paddle)Лопатка$() — для $(thing)розплющування$().$(li)$(l:craftsmanship/glassworking#jacks)Щипці$() — для $(thing)стискання$().$(li)$(l:craftsmanship/glassworking#saw)Ювелірна пилка$() — для $(thing)розпилювання$().$(li) $(l:agriculture/weaving)вовняна тканина$() — для $(thing)скручування$().",
-            "title": "Tools of the Trade"
+            "title": "Інструменти ремесла"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "blowpipe",
-            "title": "Blowpipe",
+            "title": "Склодувна трубка",
             "item": "tfc:ceramic/unfired_blowpipe,tfc:ceramic_blowpipe,tfc:blowpipe",
             "text": "Найважливішим інструментом є $(thing)склодувна трубка$(). $(item)Непалена керамічна склодувна трубка$() може бути $(thing)вибита$() з глини, а потім обпалена до отримання $(thing)керамічної склодувної трубки$().$(br)Однак керамічні склодувні трубки крихкі та можуть зламатися під час використання. Незламну $(item)склодувну трубку$() можна $(l:craftsmanship/anvils#working)виготовити$() з $(thing)латунного стрижня$() на ковадлі."
         },
         {
             "type": "patchouli:crafting",
             "anchor": "paddle",
-            "title": "Paddle",
+            "title": "Лопатка",
             "recipe": "tfc:crafting/paddle",
             "text": "Операцію $(thing)сплющування$() можна виконати за допомогою $(thing)лопатки$(), яку виготовляють з дерева."
         },
         {
             "type": "tfg:welding_recipe",
             "anchor": "jacks",
-            "title": "Jacks",
+            "title": "Щипці",
             "recipe": "tfc:welding/jacks",
             "text": "Операцію $(thing)стискання$() можна виконувати за допомогою $(thing)щипців$(), виготовлених шляхом $(l:craftsmanship/anvils#welding)зварювання$() латунного стрижня з латунною пластиною."
         },
         {
             "type": "patchouli:crafting",
             "anchor": "saw",
-            "title": "Gem Saw",
+            "title": "Ювелірна пилка",
             "recipe": "tfc:crafting/gem_saw",
             "text": "Операцію $(thing)розпилювання$() можна виконувати за допомогою $(item)ювелірної пилки$(). Ювелірна пилка також використовується для розбивання $(item)скляних блоків$() та $(item)скляних шибок$(), щоб отримати їх."
         },
@@ -136,7 +136,7 @@
         {
             "type": "patchouli:text",
             "text": "$(thing)Скляні шибки$() виготовляються за допомогою $(thing)виливання на стіл$(). Стіл для виливання створюється шляхом розміщення до шістнадцяти $(thing)блоків каолінової глини$() або $(thing)блоків із латунним покриттям$() в суцільній області.$(br2)1. Додай $(l:craftsmanship/glassworking)скляну суміш$() на $(thing)склодувну трубку$().$(br)2. Нагрій склодувну трубку до $(4)$(bold)ледь червоного$().$(br)3. $()Використай $(item)$(k:key.use)$()$(thing)склодувну трубку$() на верхній частині столу.$(br)4. Нарешті, $(item)$(k:key.use)$() із $(l:craftsmanship/glassworking#paddle)лопаткою$(), щоб розплющити скло.",
-            "title": "Table Pour",
+            "title": "Виливання на стіл",
             "anchor": "table_pour"
         },
         {
@@ -161,12 +161,12 @@
         {
             "type": "patchouli:text",
             "text": "$(thing)Скляні блоки$() виготовляються за допомогою $(thing)виливання у басейн$(). Басейн створюється шляхом оточення всіх сторін повітряного блока, крім верхньої, $(thing)блоками каолінової глини$() або $(thing)блоками з латунним покриттям$().$(br2)1. Додай $(l:craftsmanship/glassworking)скляну суміш$() на $(thing)склодувну трубку$().$(br)2. Нагрій склодувну трубку до $(4)$(bold)ледь червоного$().$(br)3. Використай $(item)$(k:key.use)$()$(thing)склодувну трубку$() на верхній частині столу.",
-            "title": "Basin Pour",
+            "title": "Виливання в басейн",
             "anchor": "basin_pour"
         },
         {
             "type": "patchouli:multiblock",
-            "text": "Once the glass is cooled, it can be broken with a $(l:craftsmanship/glassworking#saw)Gem Saw$() to obtain.",
+            "text": "Після охолодження скла його можна розбити за допомогою $(l:craftsmanship/glassworking#saw)Ювелирної пилки$(), щоб отримати його.",
             "border": true,
             "multiblock": {
                 "mapping": {
@@ -202,7 +202,7 @@
         {
             "type": "patchouli:text",
             "text": "$(li)$(bold)$(7)Білий$(): Силікатне або гематитове скло + $(thing)Кальцинована сода\n$()$(li)$(bold)$(0)Чорний$(): Будь-яке скло + $(thing)Графіт$()$(li)$(bold)$(8)Сірий$(): Будь-яке + $(thing)Графіт$() + $(thing)Кальцинована сода\n$()$(li)$(bold)$(7)Світло-сірий$(): Будь-яке + $(thing)Графіт$() + 2x $(thing)Кальцинована сода\n$()$(li)$(bold)$(5)Фіолетовий$(): Будь-яке + $(thing)Залізо$() + $(thing)Мідь$()$(li)$(bold)$(#964b00)Коричневий$(): Будь-яке + $(thing)Нікель$()$(li)$(bold)$(3)Бірюзовий$(): Не вулканічне скло + $(thing)Мідь$() + $(thing)Сапфір$()$(li)$(bold)$(2)Зелений$(): Селікатне або гематитове скло + $(thing)Залізо$()",
-            "title": "Dye Colors",
+            "title": "Кольорові барвники",
             "anchor": "dyes"
         },
         {
@@ -384,7 +384,7 @@
                     "fill": "0x3eb340"
                 },
                 {
-                    "text": "Olivine"
+                    "text": "Олівін"
                 },
                 {
                     "fill": "0xb33e3e"
@@ -441,7 +441,7 @@
                     "fill": "0x3eb340"
                 },
                 {
-                    "text": "Volcanic"
+                    "text": "Вулканічний"
                 },
                 {
                     "fill": "0xb33e3e"
@@ -528,7 +528,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "Докладніше",
             "anchor": "relations",
             "entries": [
                 "tfg:craftsmanship/pottery",
@@ -537,7 +537,8 @@
                 "tfg:craftsmanship/crucible",
                 "tfg:craftsmanship/charcoal_pit",
                 "tfg:craftsmanship/anvils",
-                "tfg:agriculture/weaving"
+                "tfg:agriculture/weaving",
+                "tfg:game_mechanics/heating"
             ]
         }
     ],

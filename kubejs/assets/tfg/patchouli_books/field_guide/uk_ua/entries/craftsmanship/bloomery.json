@@ -1,5 +1,5 @@
 {
-    "name": "Bloomery",
+    "name": "Сиродутний горн",
     "category": "tfg:craftsmanship",
     "icon": "tfc:bloomery",
     "pages": [
@@ -76,15 +76,15 @@
                     "bold": true
                 },
                 {
-                    "text": "Iron",
+                    "text": "Залізо",
                     "bold": true
                 },
                 {
-                    "text": "Fuel",
+                    "text": "Паливо",
                     "bold": true
                 },
                 {
-                    "text": "Slots",
+                    "text": "Слоти",
                     "bold": true
                 },
                 {
@@ -132,7 +132,7 @@
                     "text": "57mB"
                 },
                 {
-                    "text": "129mB Ore Dust"
+                    "text": "129mB залізного порошку"
                 },
                 {
                     "text": "19"
@@ -198,7 +198,7 @@
         {
             "type": "patchouli:spotlight",
             "anchor": "steam_bloomery",
-            "title": "Steam Bloomery",
+            "title": "Паровий сиродутний горн",
             "item": "tfg:steam_bloomery",
             "text": "З появою можливості створювати $(item)чорну сталь$() стає доступно $(thing)паровий горн$(). Ця конструкція здатна автоматично виробляти крицю, а також працює швидше й ефективніше за традиційний горн завдяки використанню пари високого тиску."
         },
@@ -241,13 +241,13 @@
                     "O": "gtceu:steam_output_bus[facing=north]"
                 }
             },
-            "name": "Structure",
+            "name": "Структура",
             "text": "Для парового горна потрібні шини для вводу та виводу предметів, парова ввідний люк та три бронзові топки.",
             "enable_visualize": true
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "Докладніше",
             "anchor": "relations",
             "entries": [
                 "tfg:craftsmanship/pottery",
@@ -256,7 +256,8 @@
                 "tfg:craftsmanship/crucible",
                 "tfg:craftsmanship/charcoal_pit",
                 "tfg:craftsmanship/blast_furnace",
-                "tfg:craftsmanship/anvils"
+                "tfg:craftsmanship/anvils",
+                "tfg:game_mechanics/heating"
             ]
         }
     ],

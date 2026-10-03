@@ -80,7 +80,7 @@
             "text": "Гірські породи в $(tfg_short) зазвичай поділяються на чотири групи: $(l:the_world/geology#sedimentary)осадкові$(), $(l:the_world/geology#metamorphic)метаморфічні$(), $(l:the_world/geology#igneous_extrusive)магматичні ефузивні$() та $(l:the_world/geology#igneous_intrusive)магматичні інтрузивні$(). Ці категорії визначають, де може утворюватися порода, а також які руди можуть з’являтися в ній."
         },
         {
-            "title": "Sedimentary",
+            "title": "Осадові",
             "type": "patchouli:spotlight",
             "item": {
                 "tag": "tfg:raw_stone/sedimentary"
@@ -89,7 +89,7 @@
             "text": "$(l:https://en.wikipedia.org/wiki/Sedimentary_rock)Осадові$() породи утворюються внаслідок накопичення або осадження мінеральних чи органічних частинок. Зазвичай вони залягають у верхніх шарах порід на континентальних територіях."
         },
         {
-            "title": "Metamorphic",
+            "title": "Метаморфічні",
             "type": "patchouli:spotlight",
             "item": {
                 "tag": "tfg:raw_stone/metamorphic"
@@ -98,7 +98,7 @@
             "text": "$(l:https://en.wikipedia.org/wiki/Metamorphic_rock)Метаморфічні$() породи утворюються внаслідок процесу, який називається метаморфізмом. Їх можна знайти під відповідними осадовими або магматичними породами, а також у зонах підняття земної кори."
         },
         {
-            "title": "Igneous Extrusive",
+            "title": "Нфузивні",
             "type": "patchouli:spotlight",
             "item": {
                 "tag": "tfg:raw_stone/igneous_extrusive"
@@ -107,7 +107,7 @@
             "text": "$(l:https://en.wikipedia.org/wiki/Igneous_rock#Extrusive)Екструзивні$() породи утворюються внаслідок охолодження магми на поверхні Землі. Їх можна знайти у верхньому шарі гірських порід на континентальних територіях або на дні океанів."
         },
         {
-            "title": "Igneous Intrusive",
+            "title": "Інтрузивні",
             "type": "patchouli:spotlight",
             "item": {
                 "tag": "tfg:raw_stone/igneous_intrusive"
@@ -186,7 +186,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "Докладніше",
             "anchor": "relations",
             "entries": [
                 "tfg:the_world/climate",

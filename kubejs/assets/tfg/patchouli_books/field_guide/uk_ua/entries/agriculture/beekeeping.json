@@ -1,5 +1,5 @@
 {
-    "name": "Beekeeping",
+    "name": "Бджільництво",
     "category": "tfg:agriculture",
     "icon": "firmalife:beehive",
     "pages": [
@@ -359,7 +359,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "Докладніше",
             "anchor": "relations",
             "entries": [
                 "tfg:agriculture/greenhouse",

@@ -6,7 +6,7 @@
         {
             "type": "patchouli:text",
             "text": "$(li)$(bold)$(l:logistics/exploration_gear#hiking_boots)Hiking Boots$()$(li2)$(l:logistics/exploration_gear#safety_boots)Safety Boots$()$(li)$(bold)$(l:logistics/exploration_gear#canes)Canes$()$(li)$(bold)$(l:logistics/exploration_gear#snowshoes)Snowshoes$()$(li)$(bold)$(l:logistics/exploration_gear#snorkel)Snorkel$()$(li)$(bold)$(l:logistics/exploration_gear#flippers)Flippers$()$(li)$(bold)$(l:logistics/exploration_gear#diving_suit)Diving Suit$()$(li2)$(l:logistics/exploration_gear#lava_diving_suit)Lava Diving Suit$()$(li)$(bold)$(l:logistics/exploration_gear#digger_helmet)Digger Helmet$()$(li)$(bold)$(l:logistics/exploration_gear#grappling_hook)Grappling Hook$()$(li2)$(l:logistics/exploration_gear#harpoon)Harpoon$()$(li)$(bold)$(l:logistics/exploration_gear#hang_glider)Hang Glider$()$(li)$(bold)$(l:logistics/exploration_gear#jetpacks)Jetpacks$()",
-            "title": "Index",
+            "title": "Каталог",
             "anchor": "index"
         },
         {
@@ -70,7 +70,7 @@
             "anchor": "digger_helmet",
             "title": "Digger Helmets",
             "item": "diggerhelmet:digger_helmet,diggerhelmet:copper_digger_helmet,diggerhelmet:bismuth_bronze_digger_helmet,diggerhelmet:black_bronze_digger_helmet,diggerhelmet:bronze_digger_helmet,diggerhelmet:wrought_iron_digger_helmet,diggerhelmet:steel_digger_helmet,diggerhelmet:black_steel_digger_helmet,diggerhelmet:red_steel_digger_helmet,diggerhelmet:blue_steel_digger_helmet,diggerhelmet:wool_lining,diggerhelmet:silk_lining,diggerhelmet:mining_speed_modifier,diggerhelmet:auto_drink_modifier",
-            "text": "$(thing)Digger Helmets$() provide a permanent ambient lightsource around the player thanks to the candle on your head. They also come with some helpful modifier upgrades such as the $(item)Mining Speed Modifier$(), $(item)Auto Drink Modifier$(), or the $(thing)Temperature Insulation Linings$()."
+            "text": "$(thing)Digger Helmets$() provide a permanent ambient lightsource around the player thanks to the candle on your head. They also come with some helpful modifier upgrades such as the $(item)Mining Speed Modifier$(), $(item)Auto Drink Modifier$(), or the $(thing)Temperature Insulation Linings$().$(br)Can be worn in your $(l:craftsmanship/clothing#curios)Curios slots$(), but then do not provide armor."
         },
         {
             "type": "patchouli:spotlight",
@@ -116,7 +116,8 @@
             "entries": [
                 "tfg:agriculture/weaving",
                 "tfg:agriculture/leather_making",
-                "tfg:logistics/roads"
+                "tfg:logistics/roads",
+                "tfg:craftsmanship/clothing"
             ]
         }
     ],

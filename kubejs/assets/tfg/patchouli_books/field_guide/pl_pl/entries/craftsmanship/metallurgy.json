@@ -60,14 +60,14 @@
             "images": [
                 "tfg:textures/gui/field_guide/prospecting/ore_item.png"
             ],
-            "text": "$(2)◼$() - Wzór chemiczny.$(br)$(4)◼$() - Uzysk metalu po stopniu.$(br)$(3)◼$() - Temperatura topienia.",
-            "title": "Understanding Ore",
+            "text": "$(2)◼$() - Wzór chemiczny.$(br)$(4)◼$() - Uzysk metalu po stopieniu.$(br)$(3)◼$() - Temperatura topnienia.",
+            "title": "Jak odczytywać informacje o rudzie",
             "border": false
         },
         {
             "type": "patchouli:text",
             "anchor": "casting",
-            "title": "Casting",
+            "title": "Odlewanie",
             "text": "To begin casting your first metal you will use a $(l:craftsmanship/pottery#vessel)Small Vessel$(). Place enough meltable ore inside of it to fill your desired $(l:craftsmanship/pottery#mold)Mold$(). For example, to make a saw blade you will need at least 144mB of metal.$(br)You can view the amount of material in the vessel by looking at its tooltip.$(br2)Be aware that a vessel has a max fluid capacity of $(t:21 x 144)$(6)3,024mB$()!"
         },
         {
@@ -76,7 +76,7 @@
         },
         {
             "type": "patchouli:crafting",
-            "text": "Careful, the vessel will be hot! Craft $(thing)Wooden Tongs$() with two sticks and a knife and hold them in your offhand to handle the hot vessel safely.",
+            "text": "Uważaj, naczynie będzie gorące! Wytwórz $(thing)drewniane szczypce$() z dwóch patyków i noża, a następnie trzymaj je w drugiej ręce, aby bezpiecznie przenosić gorące naczynie.",
             "recipe": "tfchotornot:crafting/tongs/wood"
         },
         {
@@ -109,7 +109,7 @@
         {
             "type": "patchouli:text",
             "anchor": "alloying",
-            "title": "Alloying",
+            "title": "Tworzenie stopów",
             "text": "$(thing)Alloys$() are a method of mixing two or more metals together, to create a new, stronger metal. During the early game, while copper is a useful metal for creating tools, the next tier of metal is one of three types of $(thing)Bronze$(). They are each slightly different in regard to durability, efficiency, and attack damage. An alloy is made up of component $(thing)metals$() which must each satisfy a specific percentage of the overall whole."
         },
         {
@@ -197,11 +197,11 @@
                 "tfg:textures/gui/field_guide/prospecting/tfg_luv_ore_prospector.png"
             ],
             "border": true,
-            "text": "Przykład tego, co możesz zobaczyć za pomocą $(#e373ff)wykrywacza rud AN$().Pamiętaj o naładowaniu baterii!"
+            "text": "Przykład tego, co możesz zobaczyć za pomocą $(#e373ff)wykrywacza rud AN$(). Pamiętaj o naładowaniu baterii!"
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "Czytaj dalej",
             "anchor": "relations",
             "entries": [
                 "tfg:craftsmanship/pottery",
@@ -211,7 +211,8 @@
                 "tfg:craftsmanship/blast_furnace",
                 "tfg:craftsmanship/bloomery",
                 "tfg:craftsmanship/anvils",
-                "tfg:game_mechanics/mining"
+                "tfg:game_mechanics/mining",
+                "tfg:game_mechanics/heating"
             ]
         }
     ],

@@ -19,31 +19,31 @@
         {
             "type": "patchouli:text",
             "anchor": "warming",
-            "title": "Warming",
+            "title": "Зігрівання",
             "text": "Під час дії цього ефекту температура гравця постійно $(thing)підвищується$() до максимуму $(n)25°C$()."
         },
         {
             "type": "patchouli:text",
             "anchor": "quenched",
-            "title": "Quenched",
+            "title": "Втамування спраги",
             "text": "Під час дії цього ефекту запобігає природному зниженню $(l:cooking/food_and_water#thirst)спраги$(). Однак він не перешкоджає ефекту спраги зменшувати показник спраги.$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "cure_parasites",
-            "title": "Cure Parasites",
+            "title": "Лікування паразитів",
             "text": "Під час дії цього ефекту $(l:cooking/food_and_water#parasites)паразитарне зараження$() поступово зменшується зі швидкістю близько 1% кожні 10 с на базовому рівні.$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "cure_toxins",
-            "title": "Detoxify",
+            "title": "Детоксикація",
             "text": "Під час дії цього ефекту $(l:cooking/food_and_water#toxins)токсичне забруднення$() поступово зменшується зі швидкістю близько 1% кожні 10 с на базовому рівні.$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "cure_microplastics",
-            "title": "Filter Microplastics",
+            "title": "Фільтрація мікропластику",
             "text": "Під час дії цього ефекту $(l:cooking/food_and_water#microplastics)забруднення мікропластиком$() поступово зменшується зі швидкістю близько 1% кожні 10 с на базовому рівні.$()"
         },
         {
@@ -61,7 +61,7 @@
         {
             "type": "patchouli:text",
             "anchor": "instant_radiation",
-            "title": "Instant Radiation",
+            "title": "Миттєве випромінювання",
             "text": "Цей ефект швидко завдає гравцеві $(l:game_mechanics/hazards#radioactive_materials)радіаційної шкоди$()."
         },
         {
@@ -72,7 +72,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "Докладніше",
             "anchor": "relations",
             "entries": [
                 "tfg:the_world/geology",

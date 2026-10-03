@@ -1,5 +1,5 @@
 {
-    "name": "Greenhouse",
+    "name": "Szklarnia",
     "category": "tfg:agriculture",
     "icon": "firmalife:large_planter",
     "pages": [
@@ -10,7 +10,7 @@
         {
             "type": "patchouli:text",
             "anchor": "intro",
-            "title": "Greenhouse",
+            "title": "Szklarnia",
             "text": "The $(thing)Greenhouse$() is a multiblock device controlled by a $(item)Climate Station$(). It allows growing crops year round. The Greenhouse has an array of types and blocks to choose from. However, building a greenhouse is quite simple. Like the $(l:cooking/decay#cellar)Cellar$(), it should be an enclosed area of blocks belonging to the same $(thing)Greenhouse Type$(). The floor of the greenhouse may be any non-air block."
         },
         {
@@ -108,8 +108,12 @@
             "text": "$(li)$(thing)Sweepers$() are used to harvest planters other than Quad and Hydroponic planters. They can be powered by redstone.$(li)$(thing)Pickers$() can be powered via redstone signal from above. They extend down to pick the crops from Quad and Hydroponic planters.$(li)Additionally, $(item)Harvest Baskets$() can be used to harvest most planter types."
         },
         {
+            "type": "patchouli:text",
+            "text": "To collect the loose items that the $(thing)Sweepers$() and $(thing)Pickers$() drop, you can use a $(item)Hopper Minecart$(), a $(thing)Contraption$() with $(item)Funnels$(), or a $(thing)GregTech$() $(item)Item Collector$()."
+        },
+        {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "Czytaj dalej",
             "anchor": "relations",
             "entries": [
                 "tfg:the_world/wild_crops",

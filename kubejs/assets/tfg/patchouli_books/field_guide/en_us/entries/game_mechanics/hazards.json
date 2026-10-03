@@ -168,21 +168,23 @@
 			"item": "gtceu:plutonium_ingot",
 			"text": "Only the $(l:game_mechanics/hazards#hazmat)Hazmat Suit$(), as well as some advanced armors provide full protection from radiation.$(br)In the case you do get irradiated, only the $(l:game_mechanics/hazards#rad_away)RadAwayᵗᵐ Pill$() can cure you."
 		},
-        {
-            "type": "patchouli:relations",
-            "title": "Further Reading",
-            "anchor": "relations",
-            "entries": [
-                "tfg:the_world/geology",
-                "tfg:craftsmanship/metallurgy",
-                "tfg:cooking/food_and_water",
-                "tfg:game_mechanics/mining",
-                "tfg:game_mechanics/mob_effects"
-            ]
-        }
+		{
+			"type": "patchouli:relations",
+			"title": "Further Reading",
+			"anchor": "relations",
+			"entries": [
+				"tfg:the_world/geology",
+				"tfg:craftsmanship/metallurgy",
+				"tfg:cooking/food_and_water",
+				"tfg:game_mechanics/mining",
+				"tfg:game_mechanics/mob_effects",
+				"tfg:craftsmanship/clothing",
+				"tfg:game_mechanics/heating"
+			]
+		}
 	],
-    "extra_recipe_mappings": {
-        "tag:gtceu:ppe_armor": 0,
-        "tag:tfg:medicine": 0
-    }
+	"extra_recipe_mappings": {
+		"tag:gtceu:ppe_armor": 6,
+		"tag:tfg:medicine": 7
+	}
 }

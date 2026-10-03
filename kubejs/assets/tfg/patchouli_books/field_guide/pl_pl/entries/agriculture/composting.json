@@ -1,11 +1,11 @@
 {
-    "name": "Composting",
+    "name": "Kompostowanie",
     "category": "tfg:agriculture",
     "icon": "tfc:composter",
     "pages": [
         {
             "type": "patchouli:text",
-            "title": "Index",
+            "title": "Indeks",
             "anchor": "index",
             "text": "$(li)$(bold)$(l:agriculture/composting#compostables)Compostables$()$(li2)$(l:agriculture/composting#green_compost)Green Compost$()$(li2)$(l:agriculture/composting#brown_compost)Brown Compost$()$(li2)$(l:agriculture/composting#compost_poisons)Rotten Compost$()$(li)$(bold)$(l:agriculture/composting#compost_tumbler)Compost Tumbler$()"
         },
@@ -66,7 +66,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "The composter takes 12 days to complete in average conditions. When it is ready, it will have a dirt-like color and gray particles will be emitted from the top of it. The compost can then be retrieved with $(item)$(k:key.sneak) + $(k:key.use)$() with an empty hand. Adding things like $(c)meat$() and $(c)bones$() to compost spoils it, turning it reddish and causing it to emit gross particles. When this rotten compost is used on a crop, it instantly kills it. Which can be helpful for $(l:agriculture/growing_crops)Duplicating Seeds$() from mature plants!"
+            "text": "The composter takes 6 days to complete in average conditions. When it is ready, it will have a dirt-like color and gray particles will be emitted from the top of it. The compost can then be retrieved with $(item)$(k:key.sneak) + $(k:key.use)$() with an empty hand. Adding things like $(c)meat$() and $(c)bones$() to compost spoils it, turning it reddish and causing it to emit gross particles. When this rotten compost is used on a crop, it instantly kills it. Which can be helpful for $(l:agriculture/growing_crops)Duplicating Seeds$() from mature plants!"
         },
         {
             "type": "patchouli:text",
@@ -111,7 +111,7 @@
                 }
             },
             "anchor": "rotten_compost",
-            "name": "Rotten Compost",
+            "name": "Zgniły kompost",
             "text": "Zgniły kompostownik.",
             "enable_visualize": false
         },
@@ -127,7 +127,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "Green and brown items count the same, being on the range 1-4, but the new additions like fish always count for 1. Adding too much weird stuff to the composter causes it to produce rotten compost. Further, you will not know it is rotten until the very end! If the compost is more than fifteen percent bones, fish, or pottery, or more than twenty percent charcoal. It will rot. Or, if there are 10 or more green units than brown units, it will rot."
+            "text": "Green and brown items count the same, being on the range 1-4, but the new additions like fish always count for 1. Adding too much weird stuff to the composter causes it to produce rotten compost. Further, you will not know it is rotten until the very end! If the compost is more than fifteen percent bones, fish, or pottery, or more than twenty percent charcoal, it will rot. Or, if there are 10 or more green units than brown units, it will rot."
         },
         {
             "type": "patchouli:text",
@@ -135,7 +135,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "Czytaj dalej",
             "anchor": "relations",
             "entries": [
                 "tfg:cooking/decay",

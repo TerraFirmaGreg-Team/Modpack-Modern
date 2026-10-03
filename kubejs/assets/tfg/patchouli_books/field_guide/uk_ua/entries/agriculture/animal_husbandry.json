@@ -185,18 +185,18 @@
         {
             "type": "tfg:heat_recipe",
             "recipe": "tfg:heating/forge_eggs_to_tfc_food_cooked_egg",
-            "text": "$(thing)Яйця$() можна варити або смажити для їжі. Самці яйцекладних тварин можуть запліднювати самок, що призводить до запліднення наступного яйця, відкладеного в гніздовий ящик. Запліднені яйця матимуть підказку про те, скільки часу вони будуть готові до вилуплення."
+            "text": "$(thing)Яйця$() можна готувати або варити для їжі. Самці яйцекладних тварин можуть запліднювати самок, унаслідок чого наступне яйце, знесене в гніздs, буде заплідненим. На запліднених яйцях у підказці буде вказано, скільки часу залишилося до вилуплення.$(br2)З яйцекладних тварин також можна $(thing)вищипувати$() пір'я за допомогою $(item)$(k:key.sneak)  + $(k:key.use)$()."
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Feeding Troughs",
+            "title": "Годівниця",
             "anchor": "feeding_trough",
             "item": "tfcgroomer:bismuth_bronze_grooming_station,tfcgroomer:black_bronze_grooming_station,tfcgroomer:bronze_grooming_station,tfcgroomer:copper_grooming_station,tfcgroomer:wrought_iron_grooming_station,tfcgroomer:steel_grooming_station,tfcgroomer:black_steel_grooming_station,tfcgroomer:red_steel_grooming_station,tfcgroomer:blue_steel_grooming_station",
             "text": "$(thing)Годівниці$() можуть автоматично годувати тварин у зоні, зазначеній у їхній підказці. Метали вищого рівня $(l:craftsmanship/metallurgy)металургії$() збільшують радіус годування.$(br)Щоб додати корм для тварин і, за бажанням, увімкнути автоматичне розведення, відкрий інтерфейс годівниці за допомогою $(item)$(k:key.use)$()."
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "Докладніше",
             "anchor": "relations",
             "entries": [
                 "tfg:agriculture/growing_crops",

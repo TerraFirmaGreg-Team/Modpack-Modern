@@ -647,12 +647,19 @@
     "quests.tfg_tips.tools_tips.concrete_roads.subtitle": "Almost worth all the effort.",
     "quests.tfg_tips.tools_tips.concrete_roads.desc": "&6Wet concrete mix&r can be applied to base course to create roads which give a &b&l30%%&r&r bonus to movement speed. \n\n&4Be careful&r when creating concrete roads. There are a lot of rules to follow to make sure you don't end up with cracked or ruined surfaces. Consult the &3Field Guide&r for detailed instructions.",
 
+    "quests.tfg_tips.tools_tips.asphalt_roads.title": "Asphalt Roads",
+    "quests.tfg_tips.tools_tips.asphalt_roads.subtitle": "Booooorn to be Wiiiiiiiild",
+    "quests.tfg_tips.tools_tips.asphalt_roads.desc": "&6Asphalt Roads&r are the best roads in the game, boasting a whopping &b&l40%%&r bonus to movement speed, at the cost of being significantly more difficult to craft. They require a good amount of &7Oil&r or &7Oil Tar&r to make (though can be made cheaper with &2Gilsonite&r), as well as &bMV&r machines.\n\nThey can also support a wide number of &6stencils&r for creating the road network of your dreams.",
+
     "quests.tfg_tips.tools_tips.swim_gear.title": "Swimming Gear",
     "quests.tfg_tips.tools_tips.swim_gear.subtitle": "Swimsuit not included",
     "quests.tfg_tips.tools_tips.swim_gear.desc": "The &6Snorkel&r provides you with an extra 15 seconds of \"breath\" underwater, while the &aFlippers&r substantially increase your swim speed.",
 
     "quests.space_survival.rover.title": "Space Rover",
     "quests.space_survival.rover.subtitle": "Your getaway vehicle",
-    "quests.space_survival.rover.desc": "You had to leave your fancy jetpack at home, there's no atmosphere for airplanes, and horses can't survive, so how are you supposed to get around?\n\nThe &bRover&r is a vehicle that can hold up to two passengers, runs on combustible fuels (Diesels, Gasolines, and Rocket Fuel), and even has an inventory and radio that can play real-world radio stations!"
+    "quests.space_survival.rover.desc": "You had to leave your fancy jetpack at home, there's no atmosphere for airplanes, and horses can't survive, so how are you supposed to get around?\n\nThe &bRover&r is a vehicle that can hold up to two passengers, runs on combustible fuels (Diesels, Gasolines, and Rocket Fuel), and even has an inventory and radio that can play real-world radio stations!",
+
+    "quests.tfg_tips.compost_tumbler.subtitle": "Uh oh, stinky!",
+    "quests.tfg_tips.compost_tumbler.desc": "The &dCompost Tumbler&r is a faster and automated way of making &aCompost&r. Unlike the regular Composter, it can accept additional ingredients such as pottery sherds, fish, and bones.\n\nThe Compost Tumbler needs to be connected to Create's mechanical power to work, but it only runs at a certain speed."
 
 }

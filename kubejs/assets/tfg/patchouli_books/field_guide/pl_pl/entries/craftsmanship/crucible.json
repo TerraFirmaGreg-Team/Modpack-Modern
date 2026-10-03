@@ -1,5 +1,5 @@
 {
-    "name": "Crucible",
+    "name": "Tygiel",
     "category": "tfg:craftsmanship",
     "icon": "tfc:crucible",
     "pages": [
@@ -91,17 +91,17 @@
             "type": "patchouli:multiblock",
             "multiblock_id": "tfcchannelcasting:example",
             "name": "Układ odlewniczy",
-            "text": "Kanały równomiernie rozprowadzają stopiony metal do wszystkich połączonych form. Formy umieszczone na tych stołach nie niszczą się.",
+            "text": "Kanały równomiernie rozprowadzają stopiony metal do wszystkich połączonych stołów. Formy umieszczone na tych stołach nie niszczą się.",
             "enable_visualize": false
         },
         {
             "type": "patchouli:text",
             "text": "$(li)Using a $(l:craftsmanship/charcoal_forge#bellows)Bellows$() on a $(thing)Mold Table$() will cool the metal faster.$()$(li)Activating a $(thing)Channel$() with a redstone pulse will also start pouring the metal.$()$(li)$(thing)Mold Tables$() output a comparator signal.$(li)Metal can be directly pumped in from things like fluid pipes or a draining $(l:craftsmanship/blast_furnace)Blast Furnace$().$(li)Hoppers can extract cooled metal items from molds while leaving the mold behind.",
-            "title": "Automation"
+            "title": "Automatyzacja"
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "Czytaj dalej",
             "anchor": "relations",
             "entries": [
                 "tfg:craftsmanship/pit_kiln",
@@ -111,7 +111,8 @@
                 "tfg:craftsmanship/blast_furnace",
                 "tfg:craftsmanship/bloomery",
                 "tfg:craftsmanship/anvils",
-                "tfg:craftsmanship/glassworking"
+                "tfg:craftsmanship/glassworking",
+                "tfg:game_mechanics/heating"
             ]
         }
     ],

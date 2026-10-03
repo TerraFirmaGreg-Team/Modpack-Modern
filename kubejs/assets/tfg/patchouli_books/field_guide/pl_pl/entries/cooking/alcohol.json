@@ -5,7 +5,7 @@
   "pages": [
     {
         "type": "patchouli:text",
-        "title": "Index",
+        "title": "Indeks",
         "anchor": "index",
         "text": "$(li)$(bold)$(l:cooking/drinks#alcohol)Alcohol$()$(li)$(bold)$(l:cooking/drinks#aged_alcohol)Aged Alcohol$()$(li)$(bold)$(l:cooking/drinks#vintage_alcohol)Vintage Alcohol$()$(li)$(bold)$(l:cooking/alcohol#wine_making)Wine Making$()$(li2)$(l:cooking/alcohol#wine_properties)Wine Properties$()$(li)$(bold)$(l:cooking/alcohol#wine_shelf)Wine Shelf$()"
     },
@@ -43,9 +43,9 @@
     {
         "type": "patchouli:crafting",
         "anchor": "bottle_label",
-        "title": "Bottle Label",
+        "title": "Etykieta butelki",
         "recipe": "firmalife:crafting/bottle_label",
-        "text": "$(thing)Bottle labels$() can be renamed in a scribing station, and will add their name to the wine's tooltip."
+        "text": "$(thing)Etykietom butelek$() można nadać nazwę przy stole pisarskim. Nazwa ta pojawi się w podpowiedzi wina."
     },
     {
         "type": "patchouli:text",
@@ -74,7 +74,7 @@
     },
     {
         "type": "patchouli:relations",
-        "title": "Further Reading",
+        "title": "Czytaj dalej",
         "anchor": "relations",
         "entries": [
         "tfg:cooking/food_and_water",

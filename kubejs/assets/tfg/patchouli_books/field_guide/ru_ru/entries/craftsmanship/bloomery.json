@@ -111,7 +111,7 @@
                     "text": "24"
                 },
                 {
-                    "text": "0mB"
+                    "text": "0мБ"
                 },
                 {
                     "text": "129mB Ore Dust"
@@ -147,7 +147,7 @@
                     "text": "17"
                 },
                 {
-                    "text": "3mB"
+                    "text": "3мБ"
                 }
             ],
             "text": "Remember that a little iron waste is not worth your time worrying about!",
@@ -256,7 +256,8 @@
                 "tfg:craftsmanship/crucible",
                 "tfg:craftsmanship/charcoal_pit",
                 "tfg:craftsmanship/blast_furnace",
-                "tfg:craftsmanship/anvils"
+                "tfg:craftsmanship/anvils",
+                "tfg:game_mechanics/heating"
             ]
         }
     ],

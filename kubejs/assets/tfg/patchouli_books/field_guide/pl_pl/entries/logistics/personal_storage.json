@@ -5,14 +5,14 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "$(li)$(bold)$(l:logistics/personal_storage#small_vessel)Small Vessels$()$(li)$(bold)$(l:logistics/personal_storage#large_vessel)large Vessels$()$(li)$(bold)$(l:logistics/personal_storage#straw_basket)Straw Basket$()$(li)$(bold)$(l:logistics/personal_storage#leather_sack)Leather Sack$()$(li)$(bold)$(l:logistics/personal_storage#ore_sack)Ore Sack$()$(li)$(bold)$(l:logistics/personal_storage#seed_pouch)Seed Pouch$()$(li)$(bold)$(l:logistics/personal_storage#frame_pack)Frame Pack$()$(li)$(bold)$(l:logistics/personal_storage#quiver)Quiver$()$(li)$(bold)$(l:logistics/personal_storage#backpack)Backpacks$()",
-            "title": "Index",
+            "text": "$(li)$(bold)$(l:logistics/personal_storage#small_vessel)Small Vessels$()$(li)$(bold)$(l:logistics/personal_storage#large_vessel)large Vessels$()$(li)$(bold)$(l:logistics/personal_storage#straw_basket)Straw Basket$()$(li)$(bold)$(l:logistics/personal_storage#leather_sack)Leather Sack$()$(li)$(bold)$(l:logistics/personal_storage#ore_sack)Ore Sack$()$(li)$(bold)$(l:logistics/personal_storage#seed_pouch)Seed Pouch$()$(li)$(bold)$(l:logistics/personal_storage#frame_pack)Frame Pack$()$(li)$(bold)$(l:logistics/personal_storage#quiver)Quiver$()$(li)$(bold)$(l:logistics/personal_storage#backpack)Backpacks$()$(li)$(bold)$(l:logistics/personal_storage#tool_belt)Tool Belt$()",
+            "title": "Indeks",
             "anchor": "index"
         },
         {
             "type": "patchouli:text",
             "anchor": "intro",
-            "title": "Introduction",
+            "title": "Wprowadzenie",
             "text": "There are many $(item)Item Containers$() to help ease your inventory stress while playing. There are a few important stats to consider when choosing between them.$(li)$(thing)Slot count$(): The amount of slots it has.$(li)$(thing)Slot Capacity$(): How many items a slot can hold.$(li)$(thing)Allowed Size$(): What's the largest $(l:game_mechanics/size_and_weight)TFC Size$() allowed in the slots."
         },
         {
@@ -36,42 +36,42 @@
         {
             "type": "patchouli:spotlight",
             "anchor": "straw_basket",
-            "title": "Straw Basket",
+            "title": "Słomiany koszyk",
             "item": "sns:straw_basket",
             "text": "$(bold)Slots$(): 4$(br)$(bold)Stack Size$(): 16$(br)$(bold)Largest Size$(): Small$(br)$(bold)Item Pickup$(): $(2)True$()$(br)$(bold)Slot Voiding$(): $(c)False$()$(br)$(bold)Restricted To$(): N/A"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "leather_sack",
-            "title": "Leather Sack",
+            "title": "Skórzany worek",
             "item": "sns:leather_sack",
             "text": "$(bold)Slots$(): 4$(br)$(bold)Stack Size$(): 64$(br)$(bold)Largest Size$(): Normal$(br)$(bold)Item Pickup$(): $(2)True$()$(br)$(bold)Slot Voiding$(): $(2)True$()$(br)$(bold)Restricted To$(): N/A"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "ore_sack",
-            "title": "Ore Sack",
+            "title": "Worek na rudę",
             "item": "sns:ore_sack",
             "text": "$(bold)Slots$(): 9$(br)$(bold)Stack Size$(): 512$(br)$(bold)Largest Size$(): Small$(br)$(bold)Item Pickup$(): $(2)True$()$(br)$(bold)Slot Voiding$(): $(2)True$()$(br)$(bold)Restricted To$(): $(6)$(t:#sns:allowed_in_ore_sack)Loose Stone, Ore, Gems, Clay$()"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "seed_pouch",
-            "title": "Seed Pouch",
+            "title": "Woreczek na nasiona",
             "item": "sns:seed_pouch",
             "text": "$(bold)Slots$(): 27$(br)$(bold)Stack Size$(): 128$(br)$(bold)Largest Size$(): Small$(br)$(bold)Item Pickup$(): $(2)True$()$(br)$(bold)Slot Voiding$(): $(c)False$()$(br)$(bold)Restricted To$(): $(6)$(t:#sns:allowed_in_seed_pouch)Seeds, Saplings, Bushes$()"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "frame_pack",
-            "title": "Frame Pack",
+            "title": "Plecak górski",
             "item": "sns:frame_pack",
             "text": "$(bold)Slots$(): 18$(br)$(bold)Stack Size$(): 64$(br)$(bold)Largest Size$(): Very Large$(br)$(bold)Item Pickup$(): $(2)True$()$(br)$(bold)Slot Voiding$(): $(2)True$()$(br)$(bold)Restricted To$(): N/A"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "quiver",
-            "title": "Quiver",
+            "title": "Kołczan",
             "item": "sns:quiver",
             "text": "$(bold)Slots$(): 8$(br)$(bold)Stack Size$(): 32$(br)$(bold)Largest Size$(): Very Large$(br)$(bold)Item Pickup$(): $(2)True$()$(br)$(bold)Slot Voiding$(): $(c)False$()$(br)$(bold)Restricted To$(): $(6)$(t:#sns:allowed_in_quiver)Arrows, Javelins$()"
         },
@@ -83,8 +83,15 @@
             "text": "$(bold)Slots$(): 36-120$(br)$(bold)Stack Size$(): 64-128$(br)$(bold)Largest Size$(): Very Large$(br)$(bold)Item Pickup$(): With Upgrades$(br)$(bold)Slot Voiding$(): With Upgrades$(br)$(bold)Restricted To$(): N/A"
         },
         {
+            "type": "patchouli:spotlight",
+            "anchor": "tool_belt",
+            "title": "Pas na narzędzia",
+            "item": "toolbelt:belt,toolbelt:pouch",
+            "text": "The $(item)Toolbelt$() is special. It starts with only 2 slots, but can be upgraded with pouches to 9 slots. After equipping it in your $(l:craftsmanship/clothing#curios)Belt Curios Slot$(), you can access any of these items in a radial menu by holding $(item)$(k:key.toolbelt.open)$(), making it perfect for quickly swapping between different tools."
+        },
+        {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "Czytaj dalej",
             "anchor": "relations",
             "entries": [
                 "tfg:craftsmanship/metallurgy",

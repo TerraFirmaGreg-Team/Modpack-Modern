@@ -34,7 +34,7 @@
             "images": [
                 "tfg:textures/gui/field_guide/maps/biomes_map.png"
             ],
-            "text": "A 65.5km² map displaying average biome distribution based on local $(l:the_world/climate#climate)Climate$().",
+            "text": "Mapa o powierzchni 65,5 km² przedstawiająca uśrednione rozmieszczenie biomów zależne od lokalnego $(l:the_world/climate#climate)klimatu$().",
             "border": true
         },
         {
@@ -80,7 +80,7 @@
             "text": "Skały w $(tfg_short) są zwykle dzielone na cztery grupy: $(l:the_world/geology#sedimentary)osadowe$(), $(l:the_world/geology#metamorphic)metamorficzne$(), $(l:the_world/geology#igneous_extrusive)magmowe wylewne$() i $(l:the_world/geology#igneous_intrusive)magmowe głębinowe$(). Grupy te określają, gdzie dana skała może występować, a także jakie rudy mogą się w niej pojawiać."
         },
         {
-            "title": "Sedimentary",
+            "title": "Skała osadowa",
             "type": "patchouli:spotlight",
             "item": {
                 "tag": "tfg:raw_stone/sedimentary"
@@ -89,7 +89,7 @@
             "text": "$(l:https://en.wikipedia.org/wiki/Sedimentary_rock)Sedimentary$() rocks are formed by the accumulation or deposition of mineral or organic particles. They are typically found on the top layers of rock in continental areas."
         },
         {
-            "title": "Metamorphic",
+            "title": "Skała metamorficzna",
             "type": "patchouli:spotlight",
             "item": {
                 "tag": "tfg:raw_stone/metamorphic"
@@ -98,7 +98,7 @@
             "text": "$(l:https://en.wikipedia.org/wiki/Metamorphic_rock)Metamorphic$() rocks are created by a process called metamorphism. They can be found underneath corresponding sedimentary or igneous rock, or in uplift areas."
         },
         {
-            "title": "Igneous Extrusive",
+            "title": "Skała magmowa wylewna",
             "type": "patchouli:spotlight",
             "item": {
                 "tag": "tfg:raw_stone/igneous_extrusive"
@@ -107,7 +107,7 @@
             "text": "$(l:https://en.wikipedia.org/wiki/Igneous_rock#Extrusive)Igneous Extrusive$() rocks are formed from magma cooling on the Earth's surface. They can be found on the top layer of rock in continental areas, or on the floor of oceans."
         },
         {
-            "title": "Igneous Intrusive",
+            "title": "Skała magmowa głębinowa",
             "type": "patchouli:spotlight",
             "item": {
                 "tag": "tfg:raw_stone/igneous_intrusive"
@@ -118,7 +118,7 @@
         {
             "type": "patchouli:text",
             "anchor": "rock_classifiers",
-            "text": "On top of $(l:the_world/geology#rock_devisions)Rock Devisions$(), rocks are further categorized by their chemical compositions.",
+            "text": "Oprócz $(l:the_world/geology#rock_devisions)podziału skał$(), skały klasyfikuje się również według ich składu chemicznego.",
             "title": "Klasyfikacja skał"
         },
         {
@@ -186,7 +186,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "Czytaj dalej",
             "anchor": "relations",
             "entries": [
                 "tfg:the_world/climate",

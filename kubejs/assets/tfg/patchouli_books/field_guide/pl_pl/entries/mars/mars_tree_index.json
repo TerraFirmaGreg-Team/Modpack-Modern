@@ -19,7 +19,7 @@
 			"title": "Aeronosowe",
 			"anchor": "aeronos",
 			"item": "ad_astra:aeronos_stem",
-			"text": "$(bold)Grzyby aeronosowe$()$(br)$(thing)Temperatura$(): powyżej -100°C$(br)Pojawiają się częściej na wschodzie.$(br)$(thing)Czas wzrostu$(): 7 dni"
+			"text": "$(bold)Grzyby aeronosowe$()$(br)$(thing)Temperatura$(): -100°C i wyższa$(br)Pojawiają się częściej na wschodzie.$(br)$(thing)Czas wzrostu$(): 7 dni"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -40,14 +40,14 @@
 			"title": "Lodowcowe",
 			"anchor": "glacian",
 			"item": "tag:ad_astra:glacian_logs",
-			"text": "$(bold)Grzyby lodowcowe$()$(br)$(thing)Temperatura$(): poniżej -107°C$(br)Pojawiają się zarówno na wschodzie, jak i na zachodzie.$(br)$(thing)Czas wzrostu$(): 9 dni"
+			"text": "$(bold)Grzyby lodowcowe$()$(br)$(thing)Temperatura$(): -107°C i niższa$(br)Pojawiają się zarówno na wschodzie, jak i na zachodzie.$(br)$(thing)Czas wzrostu$(): 9 dni"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"title": "Strofarowe",
 			"anchor": "strophar",
 			"item": "ad_astra:strophar_stem",
-			"text": "$(bold)Grzyby strofarowe$()$(br)$(thing)Temperatura$(): powyżej -100°C$(br)Pojawiają się częściej na wschodzie.$(br)$(thing)Czas wzrostu$(): 7 dni"
+			"text": "$(bold)Grzyby strofarowe$()$(br)$(thing)Temperatura$(): -100°C i wyższa$(br)Pojawiają się częściej na zachodzie.$(br)$(thing)Czas wzrostu$(): 7 dni"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -59,7 +59,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"item": "tag:forge:dusts/iodine",
-			"title": "Iodine",
+			"title": "Jod",
 			"anchor": "iodine",
 			"text": "$(l:mars/mars_tree_index#crimson)Crimson$() and $(l:mars/mars_tree_index#warped)Warped$() Mushrooms can be tree tapped for $(4)Crimsene$() and $(3)Warpane$() respectively.$(br2)You'll need both to get started on producing $(thing)Iodine$(), but they don't often grow in the same place, so you might need to travel a bit. You can also obtain the saplings from the corresponding $(l:mars/mars_fauna#endermen)Endermen$()."
 		},
@@ -69,7 +69,7 @@
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Further Reading",
+			"title": "Czytaj dalej",
 			"anchor": "relations",
 			"entries": [
 				"tfg:mars/mars",

@@ -5,7 +5,7 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "title": "Index",
+            "title": "Індекс",
             "anchor": "index",
             "text": "$(li)$(bold)$(l/wild_fruits#intro)Вступ$()$(li)$(bold)$(l/wild_fruits#fruit_trees)Фруктові дерева$()$(li2)$(l/wild_fruits#cherry)Вишня$()$(li2)$(l/wild_fruits#green_apple)Зелене яблуко$()$(li2)$(l/wild_fruits#lemon)Лимон$()$(li2)$(l/wild_fruits#olive)Олива$()$(li2)$(l/wild_fruits#orange)Апельсин$()$(li2)$(l/wild_fruits#peach)Персик$()$(li2)$(l/wild_fruits#plum)Слива$()$(li2)$(l/wild_fruits#red_apple)Червоне яблуко$()$(li2)$(l/wild_fruits#cocoa)Какао$()$(li2)$(l/wild_fruits#fig)Інжир$()$(li2)$(l/wild_fruits#banana)Банани$()"
         },
@@ -35,7 +35,7 @@
             "type": "patchouli:text",
             "anchor": "fruit_trees",
             "text": "$(thing)Фруктові дерева$() виростають із маленьких саджанців у великі квітучі дерева. Гілки фруктових дерев є їхньою основою, і вони ростимуть, доки кліматичні умови залишаються сприятливими. У міру дозрівання фруктові дерева вкривають свої гілки $(thing)листям$(). Листя може цвісти й давати плоди залежно від $(l/climate#seasons)пори року$().",
-            "title": "Fruit Trees"
+            "title": "Фруктові дерева"
         },
         {
             "type": "patchouli:image",
@@ -61,43 +61,43 @@
                     "text": ""
                 },
                 {
-                    "text": "Jan"
+                    "text": "Січень"
                 },
                 {
-                    "text": "Feb"
+                    "text": "Лютий"
                 },
                 {
-                    "text": "Mar"
+                    "text": "Березень"
                 },
                 {
-                    "text": "Apr"
+                    "text": "Квітень"
                 },
                 {
-                    "text": "May"
+                    "text": "Травень"
                 },
                 {
-                    "text": "Jun"
+                    "text": "Червень"
                 },
                 {
-                    "text": "Jul"
+                    "text": "Липень"
                 },
                 {
-                    "text": "Aug"
+                    "text": "Серпень"
                 },
                 {
-                    "text": "Sep"
+                    "text": "Вересень"
                 },
                 {
-                    "text": "Oct"
+                    "text": "Жовтень"
                 },
                 {
-                    "text": "Nov"
+                    "text": "Листопад"
                 },
                 {
-                    "text": "Dec"
+                    "text": "Грудень"
                 },
                 {
-                    "text": "Cherry"
+                    "text": "Вишня"
                 },
                 {
                     "fill": "0x6ab553"
@@ -175,7 +175,7 @@
                     "fill": "0xa8986a"
                 },
                 {
-                    "text": "Lemon"
+                    "text": "Лимон"
                 },
                 {
                     "fill": "0xa8986a"
@@ -214,7 +214,7 @@
                     "fill": "0xa8986a"
                 },
                 {
-                    "text": "Olive"
+                    "text": "Олива"
                 },
                 {
                     "fill": "0xa8986a"
@@ -253,7 +253,7 @@
                     "fill": "0xa8986a"
                 },
                 {
-                    "text": "Orange"
+                    "text": "Апельсин"
                 },
                 {
                     "fill": "0xa8986a"
@@ -292,7 +292,7 @@
                     "fill": "0xa8986a"
                 },
                 {
-                    "text": "Peach"
+                    "text": "Персик"
                 },
                 {
                     "fill": "0x6ab553"
@@ -331,7 +331,7 @@
                     "fill": "0x6ab553"
                 },
                 {
-                    "text": "Plum"
+                    "text": "Слива"
                 },
                 {
                     "fill": "0x6ab553"
@@ -370,23 +370,23 @@
                     "fill": "0xa8986a"
                 }
             ],
-            "text": "The fruiting calendar for fruit trees.",
-            "title": "Fruit Trees",
+            "text": "Календар плодоношення фруктових дерев.",
+            "title": "Фруктові дерева",
             "legend": [
                 {
-                    "text": "Dormant",
+                    "text": "У стані спокою",
                     "color": "0xa8986a"
                 },
                 {
-                    "text": "Healthy",
+                    "text": "Здоровий",
                     "color": "0x6ab553"
                 },
                 {
-                    "text": "Flowering",
+                    "text": "Цвітіння",
                     "color": "0xcca0db"
                 },
                 {
-                    "text": "Fruiting",
+                    "text": "Плодоношення",
                     "color": "0xa217ff"
                 }
             ],
@@ -409,43 +409,43 @@
                     "text": ""
                 },
                 {
-                    "text": "Jan"
+                    "text": "Січень"
                 },
                 {
-                    "text": "Feb"
+                    "text": "Лютий"
                 },
                 {
-                    "text": "Mar"
+                    "text": "Березень"
                 },
                 {
-                    "text": "Apr"
+                    "text": "Квітень"
                 },
                 {
-                    "text": "May"
+                    "text": "Травень"
                 },
                 {
-                    "text": "Jun"
+                    "text": "Червень"
                 },
                 {
-                    "text": "Jul"
+                    "text": "Липень"
                 },
                 {
-                    "text": "Aug"
+                    "text": "Серпень"
                 },
                 {
-                    "text": "Sep"
+                    "text": "Вересень"
                 },
                 {
-                    "text": "Oct"
+                    "text": "Жовтень"
                 },
                 {
-                    "text": "Nov"
+                    "text": "Листопад"
                 },
                 {
-                    "text": "Dec"
+                    "text": "Грудень"
                 },
                 {
-                    "text": "Banana"
+                    "text": "Банан"
                 },
                 {
                     "fill": "0xa8986a"
@@ -455,36 +455,6 @@
                 },
                 {
                     "fill": "0x6ab553"
-                },
-                {
-                    "fill": "0x6ab553"
-                },
-                {
-                    "fill": "0x6ab553"
-                },
-                {
-                    "fill": "0x6ab553"
-                },
-                {
-                    "fill": "0xcca0db"
-                },
-                {
-                    "fill": "0xcca0db"
-                },
-                {
-                    "fill": "0xa217ff"
-                },
-                {
-                    "fill": "0xa8986a"
-                },
-                {
-                    "fill": "0xa8986a"
-                },
-                {
-                    "fill": "0xa8986a"
-                },
-                {
-                    "text": "Cocoa"
                 },
                 {
                     "fill": "0x6ab553"
@@ -514,6 +484,36 @@
                     "fill": "0xa8986a"
                 },
                 {
+                    "text": "Какао"
+                },
+                {
+                    "fill": "0x6ab553"
+                },
+                {
+                    "fill": "0x6ab553"
+                },
+                {
+                    "fill": "0x6ab553"
+                },
+                {
+                    "fill": "0xcca0db"
+                },
+                {
+                    "fill": "0xcca0db"
+                },
+                {
+                    "fill": "0xa217ff"
+                },
+                {
+                    "fill": "0xa8986a"
+                },
+                {
+                    "fill": "0xa8986a"
+                },
+                {
+                    "fill": "0xa8986a"
+                },
+                {
                     "fill": "0xa8986a"
                 },
                 {
@@ -523,7 +523,7 @@
                     "fill": "0x6ab553"
                 },
                 {
-                    "text": "Fig"
+                    "text": "Інжир"
                 },
                 {
                     "fill": "0x6ab553"
@@ -562,23 +562,23 @@
                     "fill": "0x6ab553"
                 }
             ],
-            "text": "The fruiting calendar for fruit trees.",
-            "title": "Fruit Trees",
+            "text": "Календар плодоношення фруктових дерев.",
+            "title": "Фруктові дерева",
             "legend": [
                 {
-                    "text": "Dormant",
+                    "text": "У стані спокою",
                     "color": "0xa8986a"
                 },
                 {
-                    "text": "Healthy",
+                    "text": "Здоровий",
                     "color": "0x6ab553"
                 },
                 {
-                    "text": "Flowering",
+                    "text": "Цвітіння",
                     "color": "0xcca0db"
                 },
                 {
-                    "text": "Fruiting",
+                    "text": "Плодоношення",
                     "color": "0xa217ff"
                 }
             ],
@@ -2946,7 +2946,7 @@
             "type": "patchouli:text",
             "anchor": "palm_fruit_trees",
             "text": "$(thing)Плодові пальми$() — це ще один різновид плодових дерев, які зазвичай можна знайти вздовж узбережжя біля морської води.$(br2)Плодові пальми утворюватимуть плодові грона, якщо перебувають у межах свого $(l/climate#climate)Кліматичного діапазону$() та в сезон плодоношення. Грона ростуть, прикріплені до «голови/крони» дерева, і раз на день переходять на наступну стадію росту, доки не дозріють. Дозрілі плодові грона можна збирати, кидаючи в них снаряди (крім сніжків), використовуючи $(item)$(k:key.use)$() на них або застосовуючи по них $(item)Кошиком для врожаю$().",
-            "title": "Palm Fruit Trees"
+            "title": "Плодові пальми"
         },
         {
             "type": "patchouli:text",
@@ -2959,64 +2959,49 @@
                     "text": ""
                 },
                 {
-                    "text": "Jan"
+                    "text": "Січень"
                 },
                 {
-                    "text": "Feb"
+                    "text": "Лютий"
                 },
                 {
-                    "text": "Mar"
+                    "text": "Березень"
                 },
                 {
-                    "text": "Apr"
+                    "text": "Квітень"
                 },
                 {
-                    "text": "May"
+                    "text": "Травень"
                 },
                 {
-                    "text": "Jun"
+                    "text": "Червень"
                 },
                 {
-                    "text": "Jul"
+                    "text": "Липень"
                 },
                 {
-                    "text": "Aug"
+                    "text": "Серпень"
                 },
                 {
-                    "text": "Sep"
+                    "text": "Вересень"
                 },
                 {
-                    "text": "Oct"
+                    "text": "Жовтень"
                 },
                 {
-                    "text": "Nov"
+                    "text": "Листопад"
                 },
                 {
-                    "text": "Dec"
+                    "text": "Грудень"
                 },
                 {
-                    "text": "Coconut"
-                },
-                {
-                    "fill": "0xa8986a"
+                    "text": "Кокос"
                 },
                 {
                     "fill": "0xa8986a"
                 },
                 {
                     "fill": "0xa8986a"
-                },
-                {
-                    "fill": "0xa8986a"
-                },
-                {
-                    "fill": "0xa217ff"
-                },
-                {
-                    "fill": "0xa217ff"
-                },
-                {
-                    "fill": "0xa217ff"
                 },
                 {
                     "fill": "0xa8986a"
@@ -3034,7 +3019,22 @@
                     "fill": "0xa217ff"
                 },
                 {
-                    "text": "Date"
+                    "fill": "0xa8986a"
+                },
+                {
+                    "fill": "0xa8986a"
+                },
+                {
+                    "fill": "0xa217ff"
+                },
+                {
+                    "fill": "0xa217ff"
+                },
+                {
+                    "fill": "0xa217ff"
+                },
+                {
+                    "text": "Фінік"
                 },
                 {
                     "fill": "0xa8986a"
@@ -3073,15 +3073,15 @@
                     "fill": "0xa217ff"
                 }
             ],
-            "text": "The fruiting calendar for palm fruit trees.",
-            "title": "Palm Fruit Trees",
+            "text": "Календар плодоношення плодових пальм.",
+            "title": "Плодові пальми",
             "legend": [
                 {
-                    "text": "Dormant",
+                    "text": "У стані спокою",
                     "color": "0xa8986a"
                 },
                 {
-                    "text": "Fruiting",
+                    "text": "Плодоношення",
                     "color": "0xa217ff"
                 }
             ],
@@ -4755,124 +4755,43 @@
                     "text": ""
                 },
                 {
-                    "text": "Jan"
+                    "text": "Січень"
                 },
                 {
-                    "text": "Feb"
+                    "text": "Лютий"
                 },
                 {
-                    "text": "Mar"
+                    "text": "Березень"
                 },
                 {
-                    "text": "Apr"
+                    "text": "Квітень"
                 },
                 {
-                    "text": "May"
+                    "text": "Травень"
                 },
                 {
-                    "text": "Jun"
+                    "text": "Червень"
                 },
                 {
-                    "text": "Jul"
+                    "text": "Липень"
                 },
                 {
-                    "text": "Aug"
+                    "text": "Серпень"
                 },
                 {
-                    "text": "Sep"
+                    "text": "Вересень"
                 },
                 {
-                    "text": "Oct"
+                    "text": "Жовтень"
                 },
                 {
-                    "text": "Nov"
+                    "text": "Листопад"
                 },
                 {
-                    "text": "Dec"
+                    "text": "Грудень"
                 },
                 {
-                    "text": "Snowberry"
-                },
-                {
-                    "fill": "0xa8986a"
-                },
-                {
-                    "fill": "0xa8986a"
-                },
-                {
-                    "fill": "0x6ab553"
-                },
-                {
-                    "fill": "0x6ab553"
-                },
-                {
-                    "fill": "0x6ab553"
-                },
-                {
-                    "fill": "0x6ab553"
-                },
-                {
-                    "fill": "0xcca0db"
-                },
-                {
-                    "fill": "0xcca0db"
-                },
-                {
-                    "fill": "0xa217ff"
-                },
-                {
-                    "fill": "0xa8986a"
-                },
-                {
-                    "fill": "0xa8986a"
-                },
-                {
-                    "fill": "0xa8986a"
-                },
-                {
-                    "text": "Bunchberry"
-                },
-                {
-                    "fill": "0xa8986a"
-                },
-                {
-                    "fill": "0xa8986a"
-                },
-                {
-                    "fill": "0xa8986a"
-                },
-                {
-                    "fill": "0xa8986a"
-                },
-                {
-                    "fill": "0x6ab553"
-                },
-                {
-                    "fill": "0x6ab553"
-                },
-                {
-                    "fill": "0x6ab553"
-                },
-                {
-                    "fill": "0xcca0db"
-                },
-                {
-                    "fill": "0xcca0db"
-                },
-                {
-                    "fill": "0xa217ff"
-                },
-                {
-                    "fill": "0xa8986a"
-                },
-                {
-                    "fill": "0xa8986a"
-                },
-                {
-                    "text": "Gooseberry"
-                },
-                {
-                    "fill": "0xa8986a"
+                    "text": "Сніжноягідник"
                 },
                 {
                     "fill": "0xa8986a"
@@ -4908,7 +4827,88 @@
                     "fill": "0xa8986a"
                 },
                 {
-                    "text": "Cloudberry"
+                    "fill": "0xa8986a"
+                },
+                {
+                    "text": "Кизил"
+                },
+                {
+                    "fill": "0xa8986a"
+                },
+                {
+                    "fill": "0xa8986a"
+                },
+                {
+                    "fill": "0xa8986a"
+                },
+                {
+                    "fill": "0xa8986a"
+                },
+                {
+                    "fill": "0x6ab553"
+                },
+                {
+                    "fill": "0x6ab553"
+                },
+                {
+                    "fill": "0x6ab553"
+                },
+                {
+                    "fill": "0xcca0db"
+                },
+                {
+                    "fill": "0xcca0db"
+                },
+                {
+                    "fill": "0xa217ff"
+                },
+                {
+                    "fill": "0xa8986a"
+                },
+                {
+                    "fill": "0xa8986a"
+                },
+                {
+                    "text": "Аґрус"
+                },
+                {
+                    "fill": "0xa8986a"
+                },
+                {
+                    "fill": "0xa8986a"
+                },
+                {
+                    "fill": "0xa8986a"
+                },
+                {
+                    "fill": "0x6ab553"
+                },
+                {
+                    "fill": "0x6ab553"
+                },
+                {
+                    "fill": "0x6ab553"
+                },
+                {
+                    "fill": "0x6ab553"
+                },
+                {
+                    "fill": "0xcca0db"
+                },
+                {
+                    "fill": "0xcca0db"
+                },
+                {
+                    "fill": "0xa217ff"
+                },
+                {
+                    "fill": "0xa8986a"
+                },
+                {
+                    "fill": "0xa8986a"
+                },
+                {
+                    "text": "Морошка"
                 },
                 {
                     "fill": "0xa8986a"
@@ -4947,7 +4947,7 @@
                     "fill": "0xa8986a"
                 },
                 {
-                    "text": "Strawberry"
+                    "text": "Полуниця"
                 },
                 {
                     "fill": "0xcca0db"
@@ -5025,7 +5025,7 @@
                     "fill": "0xa8986a"
                 },
                 {
-                    "text": "Cranberry"
+                    "text": "Журавлина"
                 },
                 {
                     "fill": "0xa8986a"
@@ -5068,19 +5068,19 @@
             "title": "Ягідні кущі",
             "legend": [
                 {
-                    "text": "Dormant",
+                    "text": "У стані спокою",
                     "color": "0xa8986a"
                 },
                 {
-                    "text": "Healthy",
+                    "text": "Здоровий",
                     "color": "0x6ab553"
                 },
                 {
-                    "text": "Flowering",
+                    "text": "Цвітіння",
                     "color": "0xcca0db"
                 },
                 {
-                    "text": "Fruiting",
+                    "text": "Плодоношення",
                     "color": "0xa217ff"
                 }
             ],
@@ -5103,40 +5103,40 @@
                     "text": ""
                 },
                 {
-                    "text": "Jan"
+                    "text": "Січень"
                 },
                 {
-                    "text": "Feb"
+                    "text": "Лютий"
                 },
                 {
-                    "text": "Mar"
+                    "text": "Березень"
                 },
                 {
-                    "text": "Apr"
+                    "text": "Квітень"
                 },
                 {
-                    "text": "May"
+                    "text": "Травень"
                 },
                 {
-                    "text": "Jun"
+                    "text": "Червень"
                 },
                 {
-                    "text": "Jul"
+                    "text": "Липень"
                 },
                 {
-                    "text": "Aug"
+                    "text": "Серпень"
                 },
                 {
-                    "text": "Sep"
+                    "text": "Вересень"
                 },
                 {
-                    "text": "Oct"
+                    "text": "Жовтень"
                 },
                 {
-                    "text": "Nov"
+                    "text": "Листопад"
                 },
                 {
-                    "text": "Dec"
+                    "text": "Грудень"
                 },
                 {
                     "text": "Паслін"
@@ -5178,7 +5178,7 @@
                     "fill": "0xa8986a"
                 },
                 {
-                    "text": "Pineapple"
+                    "text": "Ананас"
                 },
                 {
                     "fill": "0xa8986a"
@@ -5217,23 +5217,23 @@
                     "fill": "0xa8986a"
                 }
             ],
-            "text": "The fruiting calendar for berry bushes.",
-            "title": "Berry Bushes",
+            "text": "Календар плодоношення ягідних кущів.",
+            "title": "Ягідні кущі",
             "legend": [
                 {
-                    "text": "Dormant",
+                    "text": "У стані спокою",
                     "color": "0xa8986a"
                 },
                 {
-                    "text": "Healthy",
+                    "text": "Здоровий",
                     "color": "0x6ab553"
                 },
                 {
-                    "text": "Flowering",
+                    "text": "Цвітіння",
                     "color": "0xcca0db"
                 },
                 {
-                    "text": "Fruiting",
+                    "text": "Плодоношення",
                     "color": "0xa217ff"
                 }
             ],
@@ -5253,7 +5253,7 @@
             "type": "patchouli:text",
             "anchor": "blackberry",
             "text": "$(bold)$(l/climate#temperature)Температура$(): 7–24 °C$(br)$(bold)$(l/growing_crops#hydration)Зволоження$(): 24–100%$(br)$(bold)$(l/climate#rainfall)Опади$(): 200–500мм$(br2)Кущі ожини ростуть з лютого по травень, починають цвісти в червні та липні, а плодоносять у серпні.$(br2)Їх можна знайти в місцевостях з невеликою кількістю дерев.",
-            "title": "Blackberry Bush"
+            "title": "Кущ ожини"
         },
         {
             "type": "tfg:multimultiblock",
@@ -5353,7 +5353,7 @@
             "type": "patchouli:text",
             "anchor": "raspberry",
             "text": "$(bold)$(l/climate#temperature)Температура$(): 5–25 °C$(br)$(bold)$(l/growing_crops#hydration)Зволоження$(): 24–100%$(br)$(bold)$(l/climate#rainfall)Опади$(): 200–500мм$(br2)Кущі малини ростуть з квітня по липень, починають цвісти в серпні та вересні, а плодоносять у жовтні.$(br2)Їх можна знайти в місцевостях з невеликою кількістю дерев.",
-            "title": "Raspberry Bush"
+            "title": "Кущ малини"
         },
         {
             "type": "tfg:multimultiblock",
@@ -5453,7 +5453,7 @@
             "type": "patchouli:text",
             "anchor": "blueberry",
             "text": "$(bold)$(l/climate#temperature)Температура$(): 7–29 °C$(br)$(bold)$(l/growing_crops#hydration)Зволоження$(): 12–100%$(br)$(bold)$(l/climate#rainfall)Опади$(): 100–400мм$(br2)Кущі чорниці ростуть з лютого по травень, починають цвісти в червні та липні, а плодоносять у серпні.$(br2)Їх можна знайти в місцевостях з невеликою кількістю дерев.",
-            "title": "Blueberry Bush"
+            "title": "Кущ чорниці"
         },
         {
             "type": "tfg:multimultiblock",
@@ -5553,7 +5553,7 @@
             "type": "patchouli:text",
             "anchor": "elderberry",
             "text": "$(bold)$(l/climate#temperature)Температура$(): 10–33 °C$(br)$(bold)$(l/growing_crops#hydration)Зволоження$(): 12–100%$(br)$(bold)$(l/climate#rainfall)Опади$(): 100–400мм$(br2)Кущі бузини ростуть з лютого по травень, починають цвісти в червні та липні, а плодоносять у серпні.$(br2)Їх можна знайти в місцевостях з невеликою кількістю дерев.",
-            "title": "Elderberry Bush"
+            "title": "Кущ бузини"
         },
         {
             "type": "tfg:multimultiblock",
@@ -5703,8 +5703,8 @@
         {
             "type": "patchouli:text",
             "anchor": "bunchberry",
-            "text": "$(bold)$(l/climate#temperature)Температура$(): 15–35 °C$(br)$(bold)$(l/growing_crops#hydration)Зволоження$(): 24–100%$(br)$(bold)$(l/climate#rainfall)Опади$(): 200–500мм$(br2)Кущі кизилу ростуть з травня по липень, починають цвісти в серпні та вересні, а плодоносять у жовтні.$(br2)Їх можна знайти в лісах.",
-            "title": "Bunchberry Bush"
+            "text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 15–35 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Зволоження$(): 24–100%$(br)$(bold)$(l:the_world/climate#rainfall)Опади$(): 200–500мм$(br2)Кущі кизилу ростуть з травня по липень, починають цвісти в серпні та вересні, а плодоносять у жовтні.$(br2)Їх можна знайти в лісах.",
+            "title": "Кущ кизилу"
         },
         {
             "type": "tfg:multimultiblock",
@@ -5768,7 +5768,7 @@
             "type": "patchouli:text",
             "anchor": "gooseberry",
             "text": "$(bold)$(l/climate#temperature)Температура$(): 5–27 °C$(br)$(bold)$(l/growing_crops#hydration)Зволоження$(): 24–100%$(br)$(bold)$(l/climate#rainfall)Опади$(): 200–500мм$(br2)Кущі аґрусу ростуть з квітня по липень, починають цвісти в серпні та вересні, а плодоносять у жовтні.$(br2)Їх можна знайти в лісах.",
-            "title": "Gooseberry Bush"
+            "title": "Кущ аґрусу"
         },
         {
             "type": "tfg:multimultiblock",
@@ -5832,7 +5832,7 @@
             "type": "patchouli:text",
             "anchor": "snowberry",
             "text": "$(bold)$(l/climate#temperature)Температура$(): -7–18 °C$(br)$(bold)$(l/growing_crops#hydration)Зволоження$(): 24–100%$(br)$(bold)$(l/climate#rainfall)Опади$(): 200–500мм$(br2)Кущі сніжноягідника ростуть з березня по червень, починають цвісти в липні та серпні, а плодоносять у вересні.$(br2)Їх можна знайти в лісах.",
-            "title": "Snowberry Bush"
+            "title": "Кущ сніжноягідника"
         },
         {
             "type": "tfg:multimultiblock",
@@ -5896,7 +5896,7 @@
             "type": "patchouli:text",
             "anchor": "cloudberry",
             "text": "$(bold)$(l/climate#temperature)Температура$(): -2–17 °C$(br)$(bold)$(l/growing_crops#hydration)Зволоження$(): 9–100%$(br)$(bold)$(l/climate#rainfall)Опади$(): 250–500мм$(br2)Кущі морошки ростуть з лютого по травень, починають цвісти з червня по серпень, а плодоносять у вересні.$(br2)Їх можна знайти в лісах.",
-            "title": "Cloudberry Bush"
+            "title": "Кущ морошки"
         },
         {
             "type": "tfg:multimultiblock",
@@ -5960,7 +5960,7 @@
             "type": "patchouli:text",
             "anchor": "strawberry",
             "text": "$(bold)$(l/climate#temperature)Температура$(): 5–28 °C$(br)$(bold)$(l/growing_crops#hydration)Зволоження$(): 12–100%$(br)$(bold)$(l/climate#rainfall)Опади$(): 100–400мм$(br2)Кущі полуниці ростуть з жовтня по грудень, починають цвісти в січні та лютому, а плодоносять у березні.$(br2)Їх можна знайти в лісах.",
-            "title": "Strawberry Bush"
+            "title": "Кущ полуниці"
         },
         {
             "type": "tfg:multimultiblock",
@@ -6024,7 +6024,7 @@
             "type": "patchouli:text",
             "anchor": "wintergreen_berry",
             "text": "$(bold)$(l/climate#temperature)Температура$(): -6–17 °C$(br)$(bold)$(l/growing_crops#hydration)Зволоження$(): 12–100%$(br)$(bold)$(l/climate#rainfall)Опади$(): 100–400мм$(br2)Кущі брусниці ростуть з травня по вересень, починають цвісти в жовтні та листопаді, а плодоносять у грудні.$(br2)Їх можна знайти в лісах.",
-            "title": "Wintergreen Berry Bush"
+            "title": "Кущ брусниці"
         },
         {
             "type": "tfg:multimultiblock",
@@ -6088,7 +6088,7 @@
             "type": "patchouli:text",
             "anchor": "cranberry",
             "text": "$(bold)$(l/climate#temperature)Температура$(): -5–17 °C$(br)$(bold)$(l/growing_crops#hydration)Зволоження$(): 30–100%$(br)$(bold)$(l/climate#rainfall)Опади$(): 250–500мм$(br2)Кущі журавлини ростуть з березня по червень, починають цвісти в липні та серпні, а плодоносять у вересні.$(br2)Їх можна знайти в лісах. На відміну від більшості низьких кущів, кущі журавлини ростуть під водою.",
-            "title": "Cranberry Bush"
+            "title": "Кущ журавлини"
         },
         {
             "type": "tfg:multimultiblock",
@@ -6216,7 +6216,7 @@
             "type": "patchouli:text",
             "anchor": "pineapple",
             "text": "$(bold)$(l/climate#temperature)Температура$(): 20–32 °C$(br)$(bold)$(l/growing_crops#hydration)Зволоження$(): 30–100%$(br)$(bold)$(l/climate#rainfall)Опади$(): 250–500мм$(br2)Кущі ананаса ростуть з березня по червень, починають цвісти в липні та серпні, а плодоносять у вересні.$(br2)Їх можна знайти в лісах і використовувати для виготовлення $(l/leather_making#pineapple_leather)Ананасової шкіри$().",
-            "title": "Pineapple Bush"
+            "title": "Кущ ананаса"
         },
         {
             "type": "tfg:multimultiblock",
@@ -6280,7 +6280,7 @@
             "type": "patchouli:text",
             "anchor": "red_grapes",
             "text": "$(bold)$(l/climate#temperature)Температура$(): 0–30 °C$(br)$(bold)$(l/growing_crops#hydration)Зволоження$(): 0–100%$(br)$(bold)$(l/climate#rainfall)Опади$(): 125–500мм$(br2)Червоний виноград природно з'являється у світі, але після збору в дикій природі його потрібно вирощувати на $(item)Шпалерах$(), щоб він давав урожай.",
-            "title": "Red Grapes"
+            "title": "Червоний виноград"
         },
         {
             "type": "tfg:multimultiblock",
@@ -6318,7 +6318,7 @@
             "type": "patchouli:text",
             "anchor": "white_grapes",
             "text": "$(bold)$(l/climate#temperature)Температура$(): 0–30 °C$(br)$(bold)$(l/growing_crops#hydration)Зволоження$(): 0–100%$(br)$(bold)$(l/climate#rainfall)Опади$(): 125–500мм$(br2)Білий виноград природно з'являється у світі, але після збору в дикій природі його потрібно вирощувати на $(item)Шпалерах$(), щоб він давав урожай.",
-            "title": "White Grapes"
+            "title": "Білий виноград"
         },
         {
             "type": "tfg:multimultiblock",
@@ -6354,7 +6354,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "Докладніше",
             "anchor": "relations",
             "entries": [
                 "tfg:the_world/wild_crops",

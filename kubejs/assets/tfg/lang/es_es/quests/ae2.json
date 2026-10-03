@@ -1,6 +1,4 @@
 {
-    "quests.ae2": "Applied Energistics 2",
-    "__comment2": "Left (getting started)",
     "quests.ae2.certus_quartz.title": "Cuarzo de Certus",
     "quests.ae2.certus_quartz.subtitle": "Un pequeño paso para ti, un gran salto para la logística",
     "quests.ae2.polarizer.title": "Polarizador",
@@ -9,11 +7,7 @@
     "quests.ae2.hv_machines.subtitle": "¿O son cuatro?",
     "quests.ae2.hv_machines.task": "¿Greate o GregTech?",
     "quests.ae2.fluix_crystal.subtitle": "Cristal Energético",
-    "__comment3": "Middle",
-    "__comment4": "Top (HV)",
     "quests.ae2.pattern.subtitle": "Instrucciones de Crafteo",
     "quests.ae2.universal_circuits.title": "Circuitos Universales",
-    "quests.ae2.stock_bridge.title": "Puente de acciones AE",
-    "__comment5": "Right (IV)",
-    "__comment6": "Bottom (LuV)"
+    "quests.ae2.stock_bridge.title": "Puente de acciones AE"
 }

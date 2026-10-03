@@ -1,6 +1,20 @@
 {
 	"tfc.recipe.barrel.tfc.barrel.dye.bleach_wool": "Відбілювання",
 	"tfc.recipe.barrel.tfc.barrel.dye.black_wool": "Фарбування",
+	"tfc.recipe.barrel.tfc.barrel.dye.blue_wool": "Фарбування",
+	"tfc.recipe.barrel.tfc.barrel.dye.brown_wool": "Фарбування",
+	"tfc.recipe.barrel.tfc.barrel.dye.cyan_wool": "Фарбування",
+	"tfc.recipe.barrel.tfc.barrel.dye.gray_wool": "Фарбування",
+	"tfc.recipe.barrel.tfc.barrel.dye.green_wool": "Фарбування",
+	"tfc.recipe.barrel.tfc.barrel.dye.light_blue_wool": "Фарбування",
+	"tfc.recipe.barrel.tfc.barrel.dye.light_gray_wool": "Фарбування",
+	"tfc.recipe.barrel.tfc.barrel.dye.lime_wool": "Фарбування",
+	"tfc.recipe.barrel.tfc.barrel.dye.magenta_wool": "Фарбування",
+	"tfc.recipe.barrel.tfc.barrel.dye.orange_wool": "Фарбування",
+	"tfc.recipe.barrel.tfc.barrel.dye.pink_wool": "Фарбування",
+	"tfc.recipe.barrel.tfc.barrel.dye.purple_wool": "Фарбування",
+	"tfc.recipe.barrel.tfc.barrel.dye.red_wool": "Фарбування",
+	"tfc.recipe.barrel.tfc.barrel.dye.yellow_wool": "Фарбування",
 	"tfc.recipe.barrel.tfg.barrel.dyeing.decorative_vase.black": "Фарбування",
 	"tfc.recipe.barrel.tfg.barrel.dyeing.decorative_vase.gray": "Фарбування",
 	"tfc.recipe.barrel.tfg.barrel.dyeing.decorative_vase.light_gray": "Фарбування",
@@ -240,5 +254,6 @@
 	"tfg.grapplemod.upgrades.vertical_throwing_angle": "Збільшує §lвертикальний кут кидка§r гака з 5°, до 90°.",
 	"tfg.grapplemod.downgrades.vertical_throwing_angle": "Зменшує §lвертикальний кут кидка§r гака з 5°, до 0°.",
 	"tfg.grapplemod.upgrades.angle": "Збільшує §lгоризонтальний кут кидка§r для подвійних гаків з 5°, до 90°. \nДоступно лише за умови встановлення §lподвійного гака§r.",
-	"tfg.grapplemod.downgrades.angle": "Зменшує §lгоризонтальний кут кидка§r для подвійних гаків з 5°, до 5°°. \nДоступно лише за умови встановлення §lподвійного гака§r."
+	"tfg.grapplemod.downgrades.angle": "Зменшує §lгоризонтальний кут кидка§r для подвійних гаків з 5°, до 5°°. \nДоступно лише за умови встановлення §lподвійного гака§r.",
+	"tfg.recipe.gas_burner_fuel": "Паливо для газового пальника"
 }

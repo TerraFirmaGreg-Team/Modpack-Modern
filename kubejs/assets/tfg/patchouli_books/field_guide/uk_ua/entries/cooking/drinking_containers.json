@@ -5,7 +5,7 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "title": "Introduction",
+            "title": "Вступ",
             "anchor": "intro",
             "text": "Якщо тобі набридло пити прямо з струмків і ставків, наче дикому коню, тоді подумай над створенням $(item)ємності для пиття!$()$(br2)Щоразу, коли ти п’єш із ємності, витрачається $(thing)100 мБ$() рідини, а ємність втрачає 1 одиницю міцності (якщо застосовно) або має шанс зламатися (якщо застосовно; це можна змінити в конфігурації сервера TFC)."
         },
@@ -18,7 +18,7 @@
             "anchor": "table",
             "strings": [
                 {
-                    "text": "Vessel",
+                    "text": "Горщик",
                     "bold": true
                 },
                 {
@@ -30,7 +30,7 @@
                     "bold": true
                 },
                 {
-                    "text": "Ceramic Jug"
+                    "text": "Керамічний глечик"
                 },
                 {
                     "text": "100"
@@ -39,7 +39,7 @@
                     "text": "2%"
                 },
                 {
-                    "text": "Wine Glass"
+                    "text": "Бокал для вина"
                 },
                 {
                     "text": "100"
@@ -48,7 +48,7 @@
                     "text": "2%"
                 },
                 {
-                    "text": "Leather Flask"
+                    "text": "Шкіряний бурдюк"
                 },
                 {
                     "text": "500"
@@ -57,7 +57,7 @@
                     "text": "100"
                 },
                 {
-                    "text": "Iron Flask"
+                    "text": "Залізна фляга"
                 },
                 {
                     "text": "2000"
@@ -66,7 +66,7 @@
                     "text": "400"
                 },
                 {
-                    "text": "Red Steel Flask"
+                    "text": "Фляга з червоної сталі"
                 },
                 {
                     "text": "2000"
@@ -156,13 +156,13 @@
         {
             "type": "patchouli:crafting",
             "anchor": "juicer",
-            "title": "Juicer",
+            "title": "Соковижималка",
             "recipe": "beneath:crafting/juicer",
             "text": "$(item)Соковижималка$() — це спеціальний предмет, який може вилучати воду, що міститься у $(thing)фруктах$(), $(thing)грибах$() та $(thing)кактусах$(), перетворюючи її на придатну для пиття воду."
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "Докладніше",
             "anchor": "relations",
             "entries": [
                 "tfg:cooking/drinks",

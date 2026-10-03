@@ -8,6 +8,7 @@
   "filter.ftbfiltersystem.durability.tooltip": "Dopasuje przedmiot na podstawie jego pozostałej wytrzymałości.\nPrzedmioty bez wytrzymałości traktuje się, jakby posiadały wytrzymałość 0.",
   "filter.ftbfiltersystem.expression.name": "Wyrażenie",
   "filter.ftbfiltersystem.food_value.name": "Wartość żywności",
+  "filter.ftbfiltersystem.food_value.tooltip": "Dopasowuje przedmiot na podstawie jego wartości odżywczej (liczby połówek udek głodu).\nPrzedmioty niebędące żywnością mają wartość odżywczą równą 0.",
   "filter.ftbfiltersystem.item.name": "Przedmiot",
   "filter.ftbfiltersystem.item_tag.name": "Tag przedmiotu",
   "filter.ftbfiltersystem.item_tag.tooltip": "Dopasowuje przedmioty na podstawie ich tagu (przedmioty zawierające ten tag).\nUżyj pola tekstowego, aby filtrować wyświetlane tagi przedmiotów.",

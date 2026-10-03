@@ -7,7 +7,7 @@
 	"pages": [
 		{
 			"type": "patchouli:spotlight",
-			"title": "Hazardous Materials",
+			"title": "Небезпечні матеріали",
 			"item": "gtceu:cobaltite_dust",
 			"text": "Деякі $(thing)руди$(), $(thing)пил$() та $(thing)хімікати$() є небезпечними й можуть спричиняти $(item)негативні ефекти$() або навіть $(item)вбити$() тебе, якщо вони знаходяться у твоєму інвентарі. Під час перенесення вони відображаються на екрані за допомогою $(item)ефекту стану$().$(br2)Певне спорядження, як-от $(thing)маски$(), $(thing)рукавички$() та $(thing)костюм для роботи з небезпечними матеріалами$(), можна використовувати для протидії цим ефектам."
 		},
@@ -30,7 +30,7 @@
 		},
 		{
 			"type": "patchouli:crafting",
-			"title": "Face Mask",
+			"title": "Захисна маска",
 			"recipe": "gtceu:shaped/face_mask",
 			"text": "$(thing)Захисна маска$() забезпечує захист від будь-яких $(item)інгаляційних$() небезпек, таких як арсенікоз.",
 			"anchor": "mask"
@@ -38,7 +38,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:rubber_gloves",
-			"title": "Rubber Gloves",
+			"title": "Гумові рукавиці",
 			"link_recipes": true,
 			"anchor": "gloves",
 			"text": "$(thing)Гумові рукавиці$() можна виготовити зі $(l:agriculture/leather_making)шкіри$() та $(thing)латексу$() або з $(thing)гумових листів$(). Вони забезпечують захист від будь-яких небезпек, що виникають під час $(item)контакту зі шкірою$(), як-от $(thing)берилієвий пил$()."
@@ -77,21 +77,21 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Arsenicosis",
+			"title": "Арсеноз",
 			"item": "gtceu:arsenic_dust",
 			"anchor": "arsenicosis",
 			"text": "$(thing)Арсенікоз$() — це захворювання, спричинене вдиханням $(thing)миш’яку$() з його пилу, пари або $(thing)реальгару$(). Воно поступово посилює голод, потім спричиняє нудоту і зрештою призводить до $(bold)смерті$().$(br2)$(l:game_mechanics/hazards#mask)Захисна маска$() та $(l:game_mechanics/hazards#hazmat)захисний костюм$() забезпечують захист від $(thing)арсенікозу$()."
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Asbestosis",
+			"title": "Азбестоз",
 			"item": "gtceu:asbestos_dust",
 			"anchor": "asbestosis",
 			"text": "$(thing)Азбестоз$() — це захворювання, спричинене вдиханням $(thing)азбестового$() пилу. Якщо вплив триває достатньо довго, він спричиняє голод.$(br2)$(l:game_mechanics/hazards#mask)Захисна маска$() та $(l:game_mechanics/hazards#hazmat)захисний костюм$() забезпечують захист від $(thing)азбестозу$()."
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Berylliosis",
+			"title": "Бериліоз",
 			"item": "gtceu:beryllium_dust",
 			"anchor": "berylliosis",
 			"text": "$(thing)Бериліоз$() — це захворювання, спричинене контактом шкіри з $(thing)берилієвим пилом$() або $(thing)рідким берилієм$(). Спочатку може здатися, що він не завдає особливої шкоди. Однак чим довше триває вплив, тим швидше він $(bold)вбиває$() тебе.$(br)$(l:game_mechanics/hazards#gloves)Рукавиці$() та $(l:game_mechanics/hazards#hazmat)захисний костюм$() забезпечують захист від $(thing)бериліозу$()."
@@ -112,7 +112,7 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Carcinogens",
+			"title": "Канцерогени",
 			"item": "gtceu:chromium_dust",
 			"anchor": "carcinogens",
 			"text": "$(l:game_mechanics/hazards#mask)Захисна маска$() захищає від вдихання шкідливих хімічних речовин, а $(l:game_mechanics/hazards#gloves)рукавиці$() — від контакту з $(thing)хромовим пилом$().$(br)$(l:game_mechanics/hazards#hazmat)Захисний костюм$() забезпечує захист від обох типів впливу.$(br)У разі сильного впливу рекомендується прийняти $(l:game_mechanics/hazards#medicine)ліки$(), щоб $(thing)запобігти$() можливій шкоді."
@@ -133,7 +133,7 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Methanol Poisoning",
+			"title": "Отруєння метанолом",
 			"item": "gtceu:methanol_bucket",
 			"anchor": "methanol_poisoning",
 			"text": "$(thing)Отруєння метанолом$() спричиняється вдиханням $(thing)метанолу$(). Воно спричиняє сильний ефект $(item)сліпоти$().$(br)$(l:game_mechanics/hazards#mask)Захисна маска$() та $(l:game_mechanics/hazards#hazmat)захисний костюм$() захищають від вдихання."
@@ -154,7 +154,7 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Silicosis",
+			"title": "Силікоз",
 			"item": "gtceu:silicon_dioxide_dust",
 			"anchor": "silicosis",
 			"text": "$(thing)Силікоз$() — це захворювання, спричинене вдиханням $(thing)пилу діоксиду кремнію$(). Вплив спричиняє $(item)зменшення$() як $(item)здоров’я$(), так і $(item)запасу повітря$(), доступного тобі під час занурення $(thing)під воду$().$(br2)$(l:game_mechanics/hazards#mask)Захисна маска$() та $(l:game_mechanics/hazards#hazmat)захисний костюм$() забезпечують захист від вдихання діоксиду кремнію."
@@ -168,20 +168,22 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Radioactive Materials",
+			"title": "Радіоактивні матеріали",
 			"item": "gtceu:plutonium_ingot",
 			"text": "Лише $(l:game_mechanics/hazards#hazmat)захисний костюм$(), а також деякі високотехнологічні обладунки забезпечують повний захист від радіації.$(br)Якщо ти все ж зазнав опромінення, вилікувати тебе може лише $(l:game_mechanics/hazards#rad_away)пігулка RadAwayᵗᵐ$()."
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Further Reading",
+			"title": "Докладніше",
 			"anchor": "relations",
 			"entries": [
 				"tfg:the_world/geology",
 				"tfg:craftsmanship/metallurgy",
 				"tfg:cooking/food_and_water",
 				"tfg:game_mechanics/mining",
-				"tfg:game_mechanics/mob_effects"
+				"tfg:game_mechanics/mob_effects",
+				"tfg:craftsmanship/clothing",
+				"tfg:game_mechanics/heating"
 			]
 		}
 	],

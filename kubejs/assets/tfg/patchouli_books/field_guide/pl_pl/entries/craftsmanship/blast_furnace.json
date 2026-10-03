@@ -1,5 +1,5 @@
 {
-    "name": "Blast Furnace",
+    "name": "Piec hutniczy",
     "category": "tfg:craftsmanship",
     "icon": "tfc:blast_furnace",
     "pages": [
@@ -373,7 +373,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "Czytaj dalej",
             "anchor": "relations",
             "entries": [
                 "tfg:craftsmanship/pottery",
@@ -382,7 +382,8 @@
                 "tfg:craftsmanship/charcoal_forge",
                 "tfg:craftsmanship/crucible",
                 "tfg:craftsmanship/charcoal_pit",
-                "tfg:craftsmanship/bloomery"
+                "tfg:craftsmanship/bloomery",
+                "tfg:game_mechanics/heating"
             ]
         }
     ],

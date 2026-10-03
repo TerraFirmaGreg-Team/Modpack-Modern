@@ -29,13 +29,14 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "Czytaj dalej",
             "anchor": "relations",
             "entries": [
                 "tfg:craftsmanship/pottery",
                 "tfg:craftsmanship/metallurgy",
                 "tfg:craftsmanship/charcoal_forge",
-                "tfg:craftsmanship/anvils"
+                "tfg:craftsmanship/anvils",
+                "tfg:game_mechanics/heating"
             ]
         }
     ],

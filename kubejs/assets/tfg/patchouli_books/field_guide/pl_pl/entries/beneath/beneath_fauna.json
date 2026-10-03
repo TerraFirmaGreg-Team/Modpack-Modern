@@ -36,7 +36,7 @@
 			"type": "patchouli:entity",
 			"entity": "species:mammutilation",
 			"scale": 0.5,
-			"name": "Mammutilation",
+			"name": "Mamuminacja",
 			"anchor": "mammutilation",
 			"text": "$(thing)Mamuminacje$() to nieumarłe mamuty. Możesz skrócić ich cierpienie, zdobywając przy tym trochę $(item)wełny$()."
 		},
@@ -44,7 +44,7 @@
 			"type": "patchouli:entity",
 			"entity": "beneath:red_elk",
 			"scale": 0.7,
-			"name": "Red Elk",
+			"name": "Czerwony jeleń",
 			"anchor": "red_elk",
 			"text": "$(thing)Czerwone jelenie$() występują w dolnych warstwach i zazwyczaj pływają w lawie. Po ich zabiciu można pozyskać $(item)lawoodporne skóry$()."
 		},
@@ -78,7 +78,7 @@
 			"scale": 0.6,
 			"name": "Świecąco-jagodowy żelek",
 			"anchor": "glowberry_jellie",
-			"text": "$(thing)Glowberry$() $(l:agriculture/jellies)Jellies$() are found in the $(thing)Lush Hollow$() biome. Their slime balls can be boiled into $(item)Sugar$()."
+			"text": "$(l:agriculture/jellies)Żelki$() $(thing)ze świecących jagód$() można spotkać w $(thing)bujnych jaskiniach$(). Gotując ich kule szlamu, można uzyskać $(item)cukier$()."
 		},
 		{
 			"type": "patchouli:entity",
@@ -124,7 +124,7 @@
 			"type": "patchouli:entity",
 			"entity": "tfc:crocodile",
 			"scale": 0.5,
-			"name": "Crocodile",
+			"name": "Krokodyl",
 			"anchor": "crocodile",
 			"text": "$(thing)Krokodyle$() można spotkać w górnej i środkowej warstwie, gdzie czyhają w zasadzce!"
 		},
@@ -140,15 +140,15 @@
 			"type": "patchouli:entity",
 			"entity": "primitive_creatures:tfc",
 			"scale": 0.8,
-			"name": "Kaolin Klayze",
+			"name": "Klinik kaolinowy",
 			"anchor": "kaolin_klayze",
-			"text": "$(thing)Gliniki kaolinowe$() można spotkać w $(thing)bujnych jaskiniach$(), gdzie strzegą $(item)gliny kaolinowej$()!"
+			"text": "$(thing)Kliniki kaolinowe$() można spotkać w $(thing)bujnych jaskiniach$(), gdzie strzegą $(item)gliny kaolinowej$()!"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "primitive_creatures:golem_2",
 			"scale": 1,
-			"name": "Graphite Glayze",
+			"name": "Grafik grafitowy",
 			"anchor": "graphite_glayze",
 			"text": "$(thing)Grafiki grafitowe$() można spotkać w dolnych warstwach. Uważaj, żeby nie strąciły cię do lawy!"
 		},
@@ -156,7 +156,7 @@
 			"type": "patchouli:entity",
 			"entity": "species:cliff_hanger",
 			"scale": 0.7,
-			"name": "Cliff Hanger",
+			"name": "Klifiak",
 			"anchor": "cliff_hanger",
 			"text": "$(thing)Cliff Hangers$() can be found on various ceilings, hooking players who walk below them. Hit them with a ranged attack to make them let go!"
 		},
@@ -164,7 +164,7 @@
 			"type": "patchouli:entity",
 			"entity": "species:leaf_hanger",
 			"scale": 0.7,
-			"name": "Leaf Hanger",
+			"name": "Liściak",
 			"anchor": "leaf_hanger",
 			"text": "$(thing)Leaf Hangers$() can be found in pools of Salt Water, hooking players who walk into their trap. Hit them to make them let go of you!"
 		},
@@ -188,7 +188,7 @@
 			"type": "patchouli:entity",
 			"entity": "species:wicked",
 			"scale": 0.9,
-			"name": "Wicked",
+			"name": "Psotnik",
 			"anchor": "wicked",
 			"text": "$(thing)Psotnik$() to duch, który może opętywać pobliskie moby, aby je wzmacniać! Jeśli w pobliżu nie ma żadnego moba, atakuje z dystansu. Po pokonaniu wypada z niego wosk."
 		},
@@ -196,7 +196,7 @@
 			"type": "patchouli:entity",
 			"entity": "species:ghoul",
 			"scale": 0.7,
-			"name": "Ghoul",
+			"name": "Ghul",
 			"anchor": "ghoul",
 			"text": "$(thing)Ghouls$() are blind monsters that use echolocation to find prey. They are neutral unless you're within their 'scan' radius!"
 		},
@@ -204,13 +204,13 @@
 			"type": "patchouli:entity",
 			"entity": "species:bewereager",
 			"scale": 0.8,
-			"name": "Bewereager",
+			"name": "Osadnikołak",
 			"anchor": "bewereager",
 			"text": "$(thing)Osadnikołak$() to agresywny potwór, który potrafi skoczyć na ciebie z daleka! Wzmacnia się i atakuje w krótkich seriach."
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Further Reading",
+			"title": "Czytaj dalej",
 			"anchor": "relations",
 			"entries": [
 				"tfg:the_world/wild_animals",

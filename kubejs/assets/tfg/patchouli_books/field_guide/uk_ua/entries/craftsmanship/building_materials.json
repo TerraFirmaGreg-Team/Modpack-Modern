@@ -5,8 +5,8 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "$(li)$(bold)$(l:craftsmanship/building_materials#primitive_materials)Примітивні матеріали$()$(li2)$(l:craftsmanship/building_materials#thatch)Тюк соломи$()$(li2)$(l:craftsmanship/building_materials#mud_bricks)Брудна цегла$()$(li2)$(l:craftsmanship/building_materials#wattle_and_daub)Плетінь та обмазка$()$(li)$(bold)$(l:craftsmanship/building_materials#advanced_materials)Вдосконалені матеріали$()$(li2)$(l:craftsmanship/building_materials#alabaster)Алебастр$()$(li2)$(l:craftsmanship/building_materials#bricks_and_mortar)Цегли та будівельний розчин$()$(li)$(bold)$(l:craftsmanship/building_materials#block_interactions)Взаємодія з блоками$()$(li)$(bold)$(l:craftsmanship/building_materials#customizable_blocks)Налаштовування блоків$()$(li)$(bold)$(l:craftsmanship/building_materials#roof_building)Будівництво дахів$()",
-            "title": "Index",
+            "text": "$(li)$(bold)$(l:craftsmanship/building_materials#primitive_materials)Примітивні матеріали$()$(li2)$(l:craftsmanship/building_materials#thatch)Тюк соломи$()$(li2)$(l:craftsmanship/building_materials#mud_bricks)Брудна цегла$()$(li2)$(l:craftsmanship/building_materials#wattle_and_daub)Плетінь та обмазка$()$(li)$(bold)$(l:craftsmanship/building_materials#advanced_materials)Вдосконалені матеріали$()$(li2)$(l:craftsmanship/building_materials#alabaster)Алебастр$()$(li2)$(l:craftsmanship/building_materials#bricks_and_mortar)Цегли та будівельний розчин$()$(li)$(bold)$(l:craftsmanship/building_materials#block_interactions)Налаштовування блоків$()$(li)$(bold)$(l:craftsmanship/building_materials#roof_building)Будівництво дахів$()$(li)$(bold)$(l:craftsmanship/building_materials#modern)Сучасні матеріали$()",
+            "title": "Індекс",
             "anchor": "index"
         },
         {
@@ -19,13 +19,13 @@
             "type": "patchouli:text",
             "anchor": "thatch",
             "text": "Маючи лише $(l:craftsmanship/sticks_and_stones)кам’яний ніж$(), ти можеш отримувати $(thing)солому$(), ламаючи рослиноподібні блоки. Із неї можна створити дуже простий будівельний матеріал: $(thing)тюк соломи$(). Тюк соломи — це легкий блок, на який не діє гравітація, однак гравці та інші сутності можуть проходити крізь нього! За потреби її також можна перетворити назад на $(thing)солому$().",
-            "title": "Thatch"
+            "title": "Тюк соломи"
         },
         {
             "type": "patchouli:crafting",
             "anchor": "mud_bricks",
             "recipe": "tfc:crafting/soil/loam_drying_bricks",
-            "title": "Mud Bricks",
+            "title": "Цегла з бруду",
             "text": "$(thing)Бруд$() можна знайти на землі, під деякими водоймами, у болотистій місцевості на низьких висотах або безпосередньо створити, кинувши землю у воду за допомогою $(item)$(k:key.drop)$. Додавши трохи $(thing)соломи$(), її можна перетворити на $()вологу брудну цеглу$()."
         },
         {
@@ -282,8 +282,18 @@
             "border": true
         },
         {
+            "type": "patchouli:text",
+            "anchor": "modern",
+            "title": "Сучасні матеріали",
+            "text": "Шукаєш щось трохи сучасніше?$(br)$(li)$(thing)GregTech$() має кілька бетонних блоків і металевих стійок, які також дають $(l:logistics/roads)бонус до швидкості пересування$(). Також у ньому є велика кількість різнокольорових ламп і блоків листового металу.$(li)$(thing)Create Deco$() має металеві містки, вікна, листовий метал, освітлення та цеглу різних кольорів."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)$(item)Балки$(), $(item)Розпірки$() та $(item)Ферми$() чудово підходять для промислових опор.$(li)Дбаєш про безпеку? $(thing)GregTech$(), $(thing)Create Deco$() та $(thing)Modern Markings$() мають різноманітні попереджувальні знаки та декорації.$(li)$(thing)Ad Astra$() має ще більше футуристичних блоків, як-от двері 3×3, додаткові джерела світла та інші металеві блоки.$(li)$(thing)Create: Steam 'n' Rails$() має $(item)локометал$() для величезного вибору кольорових металевих блоків."
+        },
+        {
             "type": "patchouli:relations",
-            "title": "Подальше читання",
+            "title": "Докладніше",
             "anchor": "relations",
             "entries": [
                 "tfg:agriculture/aqueducts",

@@ -14,7 +14,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"title": "Contents",
+			"title": "Зміст",
 			"text": "$(li)$(l:mars/mars_crops#amber_root)Бурштиновий корінь$()$(li)$(l:mars/mars_crops#blossom_berry)Квіткова ягода$()$(li)$(l:mars/mars_crops#bolux_mushroom)Гриб Болукс$()$(li)$(l:mars/mars_crops#bulbkin)Балбкін$()$(li)$(l:mars/mars_crops#chalmie_mushroom)Гриб Чалмі$()$(li)$(l:mars/mars_crops#nox_berry)Ягода Нокс$()"
 		},
 		{
@@ -106,7 +106,7 @@
 			"type": "patchouli:text",
 			"anchor": "blossom_berry",
 			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): −80–30 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Зволоження$(): 70–100 %$(br)$(bold)Поживна речовина$(): Калій$(br2)Квіткова ягода — одноблокова культура. Насіння квіткової ягоди можна висаджувати на сільськогосподарських грядках, де з них виростуть $(item)Квіткова ягода$(), які можна їсти для отримання $(thing)фруктових$().",
-			"title": "Blossom Berry"
+			"title": "Квіткова ягода"
 		},
 		{
 			"type": "tfg:multimultiblock",
@@ -186,7 +186,7 @@
 			"type": "patchouli:text",
 			"anchor": "bolux_mushroom",
 			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): −150–15 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Зволоження$(): 0–40 %$(br)$(bold)Поживна речовина$(): Фосфор$(br2)Гриби болукс — одноблокова культура. Спори грибів болукс можна висаджувати на сільськогосподарських грядках, де з них виростають $(item)гриби болукс$(), які можна їсти для отримання $(thing)овочевих$().$(br2)Рекомендується $(item)приготувати$() гриби болукс перед вживанням.",
-			"title": "Bolux Mushroom"
+			"title": "Гриб Болукс"
 		},
 		{
 			"type": "tfg:multimultiblock",
@@ -266,7 +266,7 @@
 			"type": "patchouli:text",
 			"anchor": "bulbkin",
 			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): -100–30 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Зволоження$(): 0–60 %$(br)$(bold)Поживна речовина$(): Азот$(br2)Балбкіни — це розлогі культури. Насіння балбкіна можна висаджувати на сільськогосподарських грядках, і коли рослина дозріє, вона розмістить на землі поруч із собою до двох $(item)блоків балбкіна$(). Якщо зібрати блоки балбкіна, то рослина знову дозріє, і вона зможе виростити нові балбкіни. Балбкіни можнадля отримання $(thing)фруктових$() або переробити на $(thing)пил світлокаменю$().$(br)",
-			"title": "Bulbkin"
+			"title": "Балбкін"
 		},
 		{
 			"type": "tfg:multimultiblock",
@@ -373,7 +373,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "chalmie_mushroom",
-			"title": "Chalmie Mushroom",
+			"title": "Гриб Чалмі",
 			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): -150–15 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Зволоження$(): 0–40 %$(br)$(bold)Поживна речовина$(): Фосфор$(br2)Гриби чалмі — одноблокова культура. Спори грибів чалмі можна висаджувати на сільськогосподарських грядках, де з них виростають $(item)гриби чалмі$(), які можна їсти для отримання $(thing)овочевих$().$(br2)Рекомендується $(item)приготувати$() гриби чалмі перед вживанням."
 		},
 		{
@@ -453,7 +453,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "nox_berry",
-			"title": "Nox Berry",
+			"title": "Ягода Нокс",
 			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): −80–30 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Зволоження$(): 50–100 %$(br)$(bold)Поживна речовина$(): Калій$(br2)Ягоди нокс — одноблокова культура. Насіння ягід нокс можна висаджувати на сільськогосподарських грядках, де з них виростають $(item)ягоди нокс$(), які можна їсти для отримання $(thing)фруктових$().$(br2)Рекомендується $(item)готувати$() ягоди нокс перед вживанням."
 		},
 		{
@@ -532,7 +532,7 @@
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Further Reading",
+			"title": "Докладніше",
 			"anchor": "relations",
 			"entries": [
 				"tfg:mars/mars",

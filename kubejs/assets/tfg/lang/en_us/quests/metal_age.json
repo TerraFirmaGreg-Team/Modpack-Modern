@@ -78,7 +78,7 @@
 
     "quests.metal_age.climate_station.title": "Climate Station",
     "quests.metal_age.climate_station.subtitle": "For Cellars and Greenhouses!",
-    "quests.metal_age.climate_station.desc": "The &6Climate Station&r is a required component of a Cellar or Greenhouse. A cellar is a walk-in structure for preserving your food that works better the colder the Average Temperature is, while the Greenhouse lets you grow any crop in any climate.\n\nCheck the &aTips - Food&r quest chapter to learn more!",
+    "quests.metal_age.climate_station.desc": "The &6Climate Station&r is a required component of a Cellar or Greenhouse. A cellar is a walk-in structure for preserving your food that works better the colder the Average Temperature is, while the Greenhouse lets you grow any crop in any climate.",
 
     "quests.metal_age.lunchbox.title": "Lunch Box",
     "quests.metal_age.lunchbox.subtitle": "Eat directly out of it!",
@@ -92,11 +92,11 @@
 
     "quests.metal_age.overworld_kaolin.title": "Kaolin Source: Overworld",
     "quests.metal_age.overworld_kaolin.subtitle": "Welcome to the Jungle",
-    "quests.metal_age.overworld_kaolin.desc": "Kaolin Clay can be found exclusively in areas with the combination of high altitude, temperature (at least 18°C), and humidity (at least 300mm rainfall). A full list of Kaolin Clay's spawn requirements and tips can be found in the Field Guide.\n\nYou'll very likely need to travel very, VERY far towards the South East, likely across the ocean. Prepare yourself with an Iron Flask, large quantities of food, some sort of watercraft like a Canoe, Rowboat or Kayak, and extra portable storage for bringing home as much Kaolin as you can.\n\nThere are quests in the Tips chapters that go over portable storage and watercrafts.",
+    "quests.metal_age.overworld_kaolin.desc": "Kaolin Clay can be found exclusively in areas with the combination of high altitude, temperature (at least 18°C), and humidity (at least 300mm rainfall). A full list of Kaolin Clay's spawn requirements and tips can be found in the Field Guide.\n\nYou'll very likely need to travel very, VERY far towards the South East, likely across the ocean. Prepare yourself with an Iron Flask, large quantities of food, some sort of watercraft like a Canoe, Rowboat or Kayak, and extra portable storage for bringing home as much Kaolin as you can.",
 
     "quests.metal_age.beneath_kaolin.title": "Kaolin Source: &4The Beneath&r",
     "quests.metal_age.beneath_kaolin.subtitle": "To the Depths",
-    "quests.metal_age.beneath_kaolin.desc": "Deep, DEEP underground, past the bedrock, you'll find &4The Beneath&r, a complex network of caves filled with dangers of all kinds around every corner. In the upper areas, you may be able to find the Lush Hollow, a small green oasis in the depths where Kaolin Clay can spawn. A particular monster may be guarding it, however...!\n\nWhile you're down here, you could also look for Anthracite, an excellent fuel for making steel.\n\nSurviving in &4The Beneath&r is difficult, so check the dedicated &4The Beneath&r chapter of this questbook and the Field Guide for more information.",
+    "quests.metal_age.beneath_kaolin.desc": "Deep, DEEP underground, past the bedrock, you'll find &4The Beneath&r, a complex network of caves filled with dangers of all kinds around every corner. In the upper areas, you may be able to find the Lush Hollow, a small green oasis in the depths where Kaolin Clay can spawn. A particular monster may be guarding it, however...!\n\nWhile you're down here, you could also look for Anthracite, an excellent fuel for making steel.\n\nSurviving in &4The Beneath&r is difficult, so check the dedicated &4The Beneath&r section of the Field Guide for more information.",
     "quests.metal_age.beneath_kaolin.task": "Traverse the Overworld Bedrock and reach &4The Beneath&r",
 
     "quests.metal_age.overworld_graphite.title": "Graphite Source: Overworld",
@@ -105,7 +105,7 @@
 
     "quests.metal_age.beneath_graphite.title": "Graphite Source: &4The Beneath&r",
     "quests.metal_age.beneath_graphite.subtitle": "To the Depths",
-    "quests.metal_age.beneath_graphite.desc": "Deep, DEEP underground, past the bedrock, you'll find &4The Beneath&r, a complex network of caves filled with dangers of all kinds around every corner. Down in &4The Beneath&r you can find huge, tall Graphite veins, but a particular monster may be guarding it...!\n\nWhile you're down here, you could also look for Anthracite, an excellent fuel for making steel.\n\nSurviving in &4The Beneath&r is difficult, so check the dedicated &4The Beneath&r chapter of this questbook and the Field Guide for more information.",
+    "quests.metal_age.beneath_graphite.desc": "Deep, DEEP underground, past the bedrock, you'll find &4The Beneath&r, a complex network of caves filled with dangers of all kinds around every corner. Down in &4The Beneath&r you can find huge, tall Graphite veins, but a particular monster may be guarding it...!\n\nWhile you're down here, you could also look for Anthracite, an excellent fuel for making steel.\n\nSurviving in &4The Beneath&r is difficult, so check the dedicated &4The Beneath&r section of the Field Guide for more information.",
     "quests.metal_age.beneath_graphite.task": "Traverse the Overworld Bedrock and reach &4The Beneath&r",
 
     "quests.metal_age.kaolin_clay.title": "Kaolin Clay",
@@ -246,14 +246,6 @@
     "quests.tfg_tips.candles.title": "Candles",
     "quests.tfg_tips.candles.subtitle": "Cozy...",
     "quests.tfg_tips.candles.desc": "Candles can be crafted using &aParaffin Wax&r, &aBeeswax&r or &aRosin.&r\nCandles are the better light source compared to torches, staying lit for about 30 days.",
-
-    "quests.tfg_tips.beeswax.title": "Beeswax",
-    "quests.tfg_tips.beeswax.subtitle": "A worthy sacrifice",
-    "quests.tfg_tips.beeswax.desc": "If you right-click a &aFrame&r that houses a &bQueen Bee&r with a &cKnife&r, you will clear out the frame, killing the queen, and obtaining &dWax.&r\n\n&3&lTip:&r&o You can sacrifice &bQueens&f with bad or lower traits to encourage breeding better traits over time, as the other frames will fill out the missing one using their own traits.",
-
-    "quests.tfg_tips.beehive.title": "Beehive",
-    "quests.tfg_tips.beehive.subtitle": "Time for some rng...",
-    "quests.tfg_tips.beehive.desc": "To begin your journey as a beekeeper, you'll need both a &bBeehive&r and a &aBeehive Frame.&r\nUnlike regular Minecraft, hives do not spawn naturally, instead bees only spawn in player-made &bBeehives&r with frames populated by &eQueens.&r The chance for a queen to populate your frame is tied to RNG, but you can increase your odds by placing &dflowers&r around the hive.\n\nOnce your frames is populated, it'll begin spawning bees which will produce honey.",
 
     "quests.tfg_tips.beekeeping.title": "Beekeeping",
     "quests.tfg_tips.beekeeping.subtitle": "They're so small now...",
