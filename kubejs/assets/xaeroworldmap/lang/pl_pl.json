@@ -194,6 +194,7 @@
   "gui.xaero_wm_box_pac_claims_border_opacity": "Przezroczystość konturu nakładki zajętych chunków. Zajmowanie chunków wymaga moda Open Parties and Claims.",
   "gui.xaero_wm_box_pac_claims_fill_opacity": "Przezroczystość wypełnienia nakładki zajętych chunków. Zajmowanie chunków wymaga moda Open Parties and Claims.",
   "gui.xaero_wm_box_pac_player_teleport_command": "Polecenie czatu używane na tym świecie/serwerze do teleportowania cię do innych graczy widocznych na mapie, gdy zainstalowany jest mod Open Parties and Claims.",
+  "gui.xaero_wm_box_player_teleport_command": "Polecenie czatu używane na tym świecie/serwerze do teleportowania cię do graczy śledzonych na mapie (nie dotyczy zwykłego radaru).",
   "gui.xaero_wm_box_unlimited_zoom_in": "Pozwala przybliżyć pełnoekranową mapę znacznie bardziej niż zwykle, choć nie bez ograniczeń.",
   "gui.xaero_wm_cave_mode_allowed": "Pełnoekranowy tryb jaskiniowy",
   "gui.xaero_wm_cave_mode_allowed_dimensions": "Wymiary, w których działa pełnoekranowy tryb jaskiniowy",
