@@ -1,5 +1,5 @@
 {
-    "name": "Beekeeping",
+    "name": "Пчеловодство",
     "category": "tfg:agriculture",
     "icon": "firmalife:beehive",
     "pages": [
@@ -14,7 +14,7 @@
         {
             "anchor": "preview",
             "type": "tfg:multimultiblock",
-            "text": "Beehive Range",
+            "text": "Область улья",
             "multiblocks": [
                 {
                     "pattern": [

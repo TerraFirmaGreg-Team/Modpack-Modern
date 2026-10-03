@@ -185,7 +185,7 @@
         {
             "type": "tfg:heat_recipe",
             "recipe": "tfg:heating/forge_eggs_to_tfc_food_cooked_egg",
-            "text": "$(thing)Eggs$() can be cooked or boiled for food. Male oviparous animals can fertilize females, which causes the next egg laid in the nest box to be fertilized. Fertilized eggs will have a tooltip with how long until they are ready to hatch."
+            "text": "$(thing)Eggs$() can be cooked or boiled for food. Male oviparous animals can fertilize females, which causes the next egg laid in the nest box to be fertilized. Fertilized eggs will have a tooltip with how long until they are ready to hatch.$(br2)Oviparous animals can also be $(thing)plucked$() for feathers with $(item)$(k:key.sneak) + $(k:key.use)$()."
         },
         {
             "type": "patchouli:spotlight",

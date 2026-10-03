@@ -10,7 +10,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "$(li)$(bold)$(l:cooking/decay#oven_baked)Випікання в печі$()\n$(li)$(bold)$(l:cooking/decay#cellar)Льохи$()\n$(li2)$(l:cooking/decay#shelf)Зберігання в льосі$()\n$(li)$(bold)$(l:cooking/decay#lunch_box)Ланч-бокси$()\n$(li)$(bold)$(l:cooking/decay#refrigerator)Холодильники$()\n$(li)$(bold)$(l:cooking/decay#freeze_dry)Сублімаційне сушіння$()\n$(li)$(bold)$(l:cooking/decay#pest)Боротьба зі шкідниками$()"
+            "text": "$(li)$(bold)$(l:cooking/decay#oven_baked)Випікання в печі$()$(li)$(bold)$(l:cooking/decay#cellar)Льохи$()$(li2)$(l:cooking/decay#shelf)Зберігання в льосі$()$(li)$(bold)$(l:cooking/decay#lunch_box)Ланч-бокси$()$(li)$(bold)$(l:cooking/decay#refrigerator)Холодильники$()$(li)$(bold)$(l:cooking/decay#freeze_dry)Сублімаційне сушіння$()$(li)$(bold)$(l:cooking/decay#pest)Боротьба зі шкідниками$()$(li)$(bold)$(l:cooking/decay#cutting)Зрізання зіпсованої частини$()"
         },
         {
             "type": "patchouli:text",
@@ -51,7 +51,7 @@
                     "text": "0.900"
                 },
                 {
-                    "text": "Смажене на дровах"
+                    "text": "Смажений на грилі"
                 },
                 {
                     "text": "0.800"
@@ -467,6 +467,12 @@
             "anchor": "pest",
             "title": "Шкідники",
             "text": "Їжа, залишена в скринях, може приваблювати $(thing)щурів$(), тож не забувай правильно зберігати їжу в посудинах, льохах або холодильниках. Щури можуть відкривати ємності та їсти з них їжу. Про присутність щура тебе повідомить повідомлення $(thing)«Цей контейнер погано пахне»$(). Важливо зазначити, що якщо ти відкриєш і знову запечатаєш корччагу, перш ніж вийти з екрана, це ніколи не привабить шкідників."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "cutting",
+            "title": "Зрізання",
+            "text": "Насамкінець ти можеш зрізати зіпсовану частину їжі, взявши $(item)ніж$() курсором і $(item)натиснувши правою кнопкою миші$() по частково зіпсованому стосу їжі у своєму інвентарі.$(br2)Це скине ступінь псування, але ти втратиш частину стосу предметів пропорційно до того, наскільки сильно він зіпсувався."
         },
         {
             "type": "patchouli:relations",

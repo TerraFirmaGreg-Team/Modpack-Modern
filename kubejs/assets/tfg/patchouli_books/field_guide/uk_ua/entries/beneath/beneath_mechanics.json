@@ -10,25 +10,25 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "index",
-			"text": "$(li)$(bold)$(l:beneath/beneath_mechanics#temperature)Контроль температури$()\n$(li2)$(l:beneath/beneath_mechanics#ice)Лід$()\n$(li2)$(l:beneath/beneath_mechanics#clothes)Одяг$()\n$(li2)$(l:beneath/beneath_mechanics#other_cooling)Інше$()\n$(li)$(bold)$(l:beneath/beneath_mechanics#hellforge)Пекельна кузня$()\n$(li)$(bold)$(l:beneath/beneath_mechanics#rope_ladder)Вертикальне пересування$()\n$(li2)$(l:beneath/beneath_mechanics#rope_ladder)Мотузкова драбина$()\n$(li2)$(l:logistics/exploration_gear#hang_glider)Дельтаплан$()\n$(li2)$(l:logistics/exploration_gear#grappling_hook)Гак-кішка$()\n$(li2)$(l:logistics/exploration_gear#harpoon)Гарпун і котушка$()\n$(li)$(bold)$(l:beneath/beneath_mechanics#piglins)Піґліни$()\n$(li2)$(l:beneath/beneath_mechanics#disguise)Маскування$()\n$(li2)$(l:beneath/beneath_mechanics#towers)Вежа$()\n$(li2)$(l:beneath/beneath_mechanics#bastions)Бастіон$()"
+			"text": "$(li)$(bold)$(l:beneath/beneath_mechanics#temperature)Контроль температури$()$(li2)$(l:beneath/beneath_mechanics#ice)Лід$()$(li2)$(l:beneath/beneath_mechanics#clothes)Одяг$()$(li2)$(l:beneath/beneath_mechanics#other_cooling)Інше$()$(li)$(bold)$(l:beneath/beneath_mechanics#hellforge)Пекельна кузня$()$(li)$(bold)$(l:beneath/beneath_mechanics#rope_ladder)Вертикальне пересування$()$(li2)$(l:beneath/beneath_mechanics#rope_ladder)Мотузкова драбина$()$(li2)$(l:logistics/exploration_gear#hang_glider)Дельтаплан$()$(li2)$(l:logistics/exploration_gear#grappling_hook)Гак-кішка$()\n$(li2)$(l:logistics/exploration_gear#harpoon)Гарпун і мотузка$()$(li)$(bold)$(l:beneath/beneath_mechanics#piglins)Піґліни$()$(li2)$(l:beneath/beneath_mechanics#disguise)Маскування під Пігліна$()$(li2)$(l:beneath/beneath_mechanics#towers)Вежі$()$(li2)$(l:beneath/beneath_mechanics#outposts)Аванпости$()$(li2)$(l:beneath/beneath_mechanics#bastions)Бастіон$()"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "temperature",
 			"title": "Регулювання температури",
-			"text": "Безодня спекотна! Температура починається з 20 °C на самому верху й лише підвищується в міру спуску.$(br2)Уникати гіпертермії тут набагато важливіше, ніж у верхньому світі, але є способи її зменшити.$(br2)Найпростіший спосіб не перегрітися — залишатися на верхніх рівнях Безодні та занурюватися у воду щоразу, коли тобі стає надто спекотно."
+			"text": "Безодня спекотна! Температура починається з 20 °C на самому верху й лише підвищується в міру спуску.$(br2)Уникати $(l:game_mechanics/player_temperature)гіпертермії$() тут набагато важливіше, ніж у верхньому світі, але є способи її зменшити.$(br2)Найпростіший спосіб не перегрітися — залишатися на верхніх рівнях Безодні та $(l:game_mechanics/player_temperature#wetness)занурюватися$() у воду щоразу, коли тобі стає надто спекотно."
 		},
 		{
 			"type": "tfg:sealed_barrel_recipe",
 			"recipe": "tfg:barrel/packed_ice",
 			"anchor": "ice",
-			"text": "Візьми із собою трохи $(thing)льоду$()! Перебування поруч із ним знижуватиме температуру навколишнього середовища. Лід можна добути на поверхні за допомогою $(item)пилки$(), а отриману крижану стружку можна перетворити на $(item)ущільнений лід$(). $(thing)Ущільнений$() та $(thing)блакитний$() лід не тануть. $(thing)Крижану крихту$() можна пити."
+			"text": "Візьми із собою трохи $(l:game_mechanics/player_temperature#blocks)льоду$()! Перебування поруч із ним $(l:game_mechanics/player_temperature)знижуватиме твою температуру$(). Лід можна добути на поверхні за допомогою $(item)пилки$(), а отриману крижану стружку можна перетворити на $(item)ущільнений лід$(). $(thing)Ущільнений$() та $(thing)блакитний$() лід не тануть. $(l:cooking/drinks#ice_slush)Крижану крихту$() можна пити."
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "clothes",
 			"title": "Одяг",
-			"text": "$(item)Мішковинний$(), $(item)лляний$() та $(item)шовковий$() одяг трохи підвищує стійкість до спеки.$(br)$(item)Крокодилячий$(), $(item)тигровий$() та $(item)лев’ячий$() одяг забезпечує сильніший охолоджувальний ефект.$(br)Нарешті, одяг із $(item)примари$() та $(item)червоного лося$() забезпечує найсильніше охолодження та до того ж довго не зношується.$(br2)Увесь одяг можна ремонтувати. Натисни $(thing)U$(), щоб переглянути рецепти ремонту в $(emi)."
+			"text": "$(item)Мішковинний$(), $(item)лляний$() та $(item)шовковий$() $(l:craftsmanship/clothing)одяг$() трохи підвищує стійкість до спеки.$(br)$(l:the_world/wild_animals#crocodile)Крокодилячий$(), $(l:the_world/wild_animals#tiger)тигровий$() та $(l:the_world/wild_animals#lion)лев’ячий$() одяг забезпечує сильніший охолоджувальний ефект.$(br)Нарешті, одяг із $(l:beneath/beneath_fauna#phantom)примари$() та $(l:beneath/beneath_fauna#red_elk)червоного лося$() забезпечує найсильніше охолодження та до того ж довго не зношується.$(br2)Увесь одяг можна ремонтувати. Натисни $(thing)U$(), щоб переглянути рецепти ремонту в $(emi)."
 		},
 		{
 			"type": "patchouli:crafting",
@@ -109,7 +109,7 @@
 			"item": "tfg:piglin_disguise",
 			"title": "Маскування під Пігліна",
 			"anchor": "disguise",
-			"text": "Якщо хочете без проблем торгувати — або просто поспілкуватися з місцевими — надіньте $(thing)Маску Пігліна$(), щоб запобігти ворожості з боку $(thing)Піглінів$() при першій зустрічі. Але будьте обережні! Їхнє терпіння не безмежне..."
+			"text": "Якщо ти хочеш без проблем торгувати — або просто поспілкуватися з місцевими — одягни $(thing)Маскування під Пігліна$(), щоб $(thing)пігліни$() не ставали ворожими до тебе при першій зустрічі. Але будь обережним! Їхнього терпіння вистачить ненадовго..."
 		},
 		{
 			"type": "patchouli:text",
@@ -119,9 +119,15 @@
 		},
 		{
 			"type": "patchouli:text",
+			"title": "Аванпости",
+			"anchor": "outposts",
+			"text": "$(thing)Аванпости піглінів$() — це невеликі споруди, розташовані у верхніх регіонах Безодні. Вони містять корисну здобич, але захищені краще, ніж вежі. Там можна знайти, наприклад:$(li)Якіснішу далекобійну зброю та стріли з ефектами$(li)Зброю, інструменти та обладунки з чорної бронзи$(li)Їжу та ліки$(li)Ліхтарі$(li)Тканину, сумки, вибухівку та їжу"
+		},
+		{
+			"type": "patchouli:text",
 			"title": "Бастіони",
 			"anchor": "bastions",
-			"text": "Набіги на $(thing)Бастіон$() можуть бути дуже небезпечними, але вони також можуть бути дуже корисними! Ви можете знайти такі речі, як$(li)Злитки золота, рожевого золота, чавуну, чорної бронзи та срібла$(li)Зброю, інструменти та обладунки з чорної бронзи$(li)Каолінову глину та графіт$(li)Постійні джерела світла$(li)Тканини, шкіру, насіння та їжу$(li)Та інші скарби!"
+			"text": "Пограбування $(thing)Бастіону$() може бути дуже небезпечним, але й нагорода може бути чималою! Там можна знайти такі речі:$(li)Злитки золота, рожевого золота, чавуну, чорної бронзи та срібла$(li)Зброю, інструменти та обладуеки з чорної бронзи$(li)Каолінову глину та графіт$(li)Ліхтарі$(li)Тканину, шкіру, насіння та їжу$(li)Та інші скарби!"
 		},
 		{
 			"type": "patchouli:relations",
@@ -129,7 +135,11 @@
 			"anchor": "relations",
 			"entries": [
 				"tfg:beneath/beneath",
-				"tfg:beneath/beneath_fauna"
+				"tfg:beneath/beneath_fauna",
+				"tfg:game_mechanics/player_temperature",
+				"tfg:logistics/exploration_gear",
+				"tfg:craftsmanship/clothing",
+				"tfg:cooking/drinks"
 			]
 		}
 	],

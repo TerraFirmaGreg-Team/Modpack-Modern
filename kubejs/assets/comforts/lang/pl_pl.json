@@ -57,6 +57,7 @@
   "gui.comforts.config.hammocksStopPhantoms.name": "Hamaki powstrzymują fantomy",
   "gui.comforts.config.nightWakeTimeOffset.description": "Czas w tikach, który zostanie dodany lub odjęty po przespaniu dnia.",
   "gui.comforts.config.nightWakeTimeOffset.name": "Przesunięcie przebudzenia z dnia na noc",
+  "gui.comforts.config.restMultiplier.description": "Jeśli opcja restrictSleeping jest włączona, ta wartość określa czas oczekiwania przed ponownym snem (większa wartość oznacza krótsze oczekiwanie).",
   "gui.comforts.config.restMultiplier.name": "Mnożnik senności",
   "gui.comforts.config.restrictSleeping.description": "Jeśli ta opcja jest włączona, gracze nie mogą spać przez pewien czas po wcześniejszym śnie.",
   "gui.comforts.config.restrictSleeping.name": "Ogranicz ciągły sen",

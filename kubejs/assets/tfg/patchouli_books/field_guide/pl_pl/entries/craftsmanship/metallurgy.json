@@ -60,8 +60,8 @@
             "images": [
                 "tfg:textures/gui/field_guide/prospecting/ore_item.png"
             ],
-            "text": "$(2)◼$() - Wzór chemiczny.$(br)$(4)◼$() - Uzysk metalu po stopniu.$(br)$(3)◼$() - Temperatura topienia.",
-            "title": "Understanding Ore",
+            "text": "$(2)◼$() - Wzór chemiczny.$(br)$(4)◼$() - Uzysk metalu po stopieniu.$(br)$(3)◼$() - Temperatura topnienia.",
+            "title": "Jak odczytywać informacje o rudzie",
             "border": false
         },
         {
@@ -76,7 +76,7 @@
         },
         {
             "type": "patchouli:crafting",
-            "text": "Uważaj, waza będzie gorąca! Wytwórz $(thing)drewniane szczypce$() z dwóch patyków i noża, a następnie trzymaj je w drugiej ręce, aby bezpiecznie przenosić gorącą wazę.",
+            "text": "Uważaj, naczynie będzie gorące! Wytwórz $(thing)drewniane szczypce$() z dwóch patyków i noża, a następnie trzymaj je w drugiej ręce, aby bezpiecznie przenosić gorące naczynie.",
             "recipe": "tfchotornot:crafting/tongs/wood"
         },
         {
@@ -197,7 +197,7 @@
                 "tfg:textures/gui/field_guide/prospecting/tfg_luv_ore_prospector.png"
             ],
             "border": true,
-            "text": "Przykład tego, co możesz zobaczyć za pomocą $(#e373ff)wykrywacza rud AN$().Pamiętaj o naładowaniu baterii!"
+            "text": "Przykład tego, co możesz zobaczyć za pomocą $(#e373ff)wykrywacza rud AN$(). Pamiętaj o naładowaniu baterii!"
         },
         {
             "type": "patchouli:relations",
@@ -211,7 +211,8 @@
                 "tfg:craftsmanship/blast_furnace",
                 "tfg:craftsmanship/bloomery",
                 "tfg:craftsmanship/anvils",
-                "tfg:game_mechanics/mining"
+                "tfg:game_mechanics/mining",
+                "tfg:game_mechanics/heating"
             ]
         }
     ],

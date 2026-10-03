@@ -90,7 +90,7 @@
                 "tfg:textures/gui/field_guide/glassworking/pane_5.png",
                 "tfg:textures/gui/field_guide/glassworking/pane_6.png"
             ],
-            "text": "$(bold)Tutorial Slideshow:$() Step by step, creating reinforced glass panes.",
+            "text": "$(bold)Samouczek obrazkowy:$() Wytwarzanie wzmocnionych szyb krok po kroku.",
             "border": true
         },
         {
@@ -141,7 +141,7 @@
         },
         {
             "type": "patchouli:multiblock",
-            "text": "Gdy szkło wystygnie, może zostać zebrane za pomocą $(l:craftsmanship/glassworking#saw)piły do szkła$().",
+            "text": "Gdy szkło wystygnie, można je zebrać za pomocą $(l:craftsmanship/glassworking#saw)piły do klejnotów$().",
             "border": true,
             "multiblock": {
                 "mapping": {
@@ -166,7 +166,7 @@
         },
         {
             "type": "patchouli:multiblock",
-            "text": "Gdy szkło wystygnie, może zostać zebrane za pomocą $(l:craftsmanship/glassworking#saw)piły do szkła$().",
+            "text": "Gdy szkło wystygnie, można je zebrać za pomocą $(l:craftsmanship/glassworking#saw)piły do klejnotów$().",
             "border": true,
             "multiblock": {
                 "mapping": {
@@ -537,7 +537,8 @@
                 "tfg:craftsmanship/crucible",
                 "tfg:craftsmanship/charcoal_pit",
                 "tfg:craftsmanship/anvils",
-                "tfg:agriculture/weaving"
+                "tfg:agriculture/weaving",
+                "tfg:game_mechanics/heating"
             ]
         }
     ],

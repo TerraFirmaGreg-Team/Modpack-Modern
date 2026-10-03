@@ -487,7 +487,7 @@
             "type": "patchouli:spotlight",
             "title": "Przewodnik po kuciu",
             "item": "gtceu:wrought_iron_pickaxe_head",
-            "text": "This part of the guide will cover how to Perfectly Forge anything, starting with a Wrought Iron Pickaxe Head."
+            "text": "W tej części przewodnika opisano, jak idealnie wykuć dowolny przedmiot, począwszy od ostrza kilofa z kutego żelaza."
         },
         {
             "type": "patchouli:text",
@@ -581,7 +581,8 @@
                 "tfg:craftsmanship/crucible",
                 "tfg:craftsmanship/charcoal_pit",
                 "tfg:craftsmanship/bloomery",
-                "tfg:craftsmanship/glassworking"
+                "tfg:craftsmanship/glassworking",
+                "tfg:game_mechanics/heating"
             ]
         }
     ],

@@ -38,7 +38,7 @@
             },
             "name": "Zwykłe rośliny",
             "anchor": "standard_plants",
-            "text": "Zwykłe rośliny są jak małe kwiaty. Rosną na trawie i polach uprawnych.",
+            "text": "Zwykłe rośliny są jak małe kwiaty. Rosną na trawie, ziemi i polach uprawnych.",
             "enable_visualize": false
         },
         {
@@ -473,7 +473,7 @@
                 }
             ],
             "text": "",
-            "title": "Wild Spice Ranges",
+            "title": "Warunki występowania przypraw",
             "legend": [],
             "columns": 2,
             "first_column_width": 80,
