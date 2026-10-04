@@ -16,6 +16,7 @@
 - Changed mechanical press double ingot/double plate recipes to use circuit 0 (#4991) @Pyritie
 - Changed recipes of almost all More Red items and blocks, making them available a lot earlier @Pyritie
 - Chorus-Infused Ceramic Insulation now uses chorus flowers instead of popped chorus fruit @Pyritie
+- Pyrolyze oven now makes as much creosote from bituminous coal as the coke oven does (#5077) @jacobtho314
 ### Changes
 #### Field Guide
 The field guide has been completely rewritten! (#5023) @Redeix
@@ -66,6 +67,9 @@ The book is no longer split between entries for random addons, or clustered in s
 - Added some gas fuels as valid train fuels (#5022) @FabricatorZayac
 - All pies now decay more slowly. Jam pies have slightly more saturation and can also accept 1-3 raw fruit for extra nutrition. Breakfast pies have a bit more saturation and now use cooked bacon instead of raw. Savoury pies have slightly more saturation but slightly lower nutrition. (#5042) @applenper
 - The temperature bar (which replaces the XP bar) now also indicates the average temperature and player temperature @SakuraKitsurugi @Zippity
+- Boron carbide now only needs kanthal coils to smelt instead of nichrome (#5075) @Pyritie
+- Added a recipe for framed torches, for builds where you want both torches and infinite light (#5070) @jacobtho314
+- Made astikor cart wheels cheaper @Pyritie
 ### Bug fixes
 - Fixed some worldgen crashes (#4905, #4900) @Pyritie
 - Fix to repair scrambled pack order at level data which was affecting a few random world-related things such as not being able to collect glass with a gem saw (#4152) @ariedotme
@@ -84,6 +88,7 @@ The book is no longer split between entries for random addons, or clustered in s
 - Fixed piglin towers having structure voids at the bottom (#5029) @Filiipa
 - Fixed not being able to use fig and rubber fig interchangeably in some ArborFirmaCraft recipes (#5068) @bigtho80
 - Fixed trowels wiping the NBT of placed Toolboxes (#5061) @Redeix
+- Fixed the railgun being able to launch without any power (#4885) @jacobtho314
 ### Mods
 #### TerraFirmaCraft
 - Has been forked! This shouldn't affect you at all, but it ensures long-term stability for the future development of the modpack. Please read [here](https://www.reddit.com/r/TerraFirmaGreg/comments/1wbv1o3/the_future_of_terrafirmacraft_in_tfg/) for more information.
