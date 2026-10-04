@@ -99,19 +99,257 @@ const registerGTCEURecipes = (event) => {
 
 	// #endregion
 
-	//#region Voiding covers
+	//#region Machine covers
 
-	event.replaceInput({ id: 'gtceu:shaped/cover_fluid_voiding' },
-		'minecraft:ender_pearl', 'ae2:ender_dust');
+	event.remove({ id: 'gtceu:shaped/cover_fluid_voiding' })
+	event.remove({ id: 'gtceu:assembler/cover_fluid_voiding' })
+	event.shapeless('gtceu:fluid_voiding_cover', ['gtceu:fluid_detector_cover', 'gtceu:bronze_normal_fluid_pipe'])
+		.id('tfg:shapeless/cover_fluid_voiding')
 
-	event.replaceInput({ id: 'gtceu:assembler/cover_fluid_voiding' },
-		'minecraft:ender_pearl', 'ae2:ender_dust');
+	event.remove({ id: 'gtceu:shaped/cover_item_voiding' })
+	event.remove({ id: 'gtceu:assembler/cover_item_voiding' })
+	event.shapeless('gtceu:item_voiding_cover', ['gtceu:item_detector_cover', 'gtceu:brass_normal_item_pipe'])
+		.id('tfg:shapeless/cover_item_voiding')
 
-	event.replaceInput({ id: 'gtceu:shaped/cover_item_voiding' },
-		'minecraft:ender_pearl', 'ae2:ender_dust');
+	event.remove({ id: 'gtceu:assembler/cover_fluid_voiding_advanced' })
+	event.shapeless('gtceu:advanced_fluid_voiding_cover', ['gtceu:fluid_voiding_cover', '#gtceu:circuits/mv'])
+		.id('tfg:shapeless/cover_fluid_voiding_advanced')
 
-	event.replaceInput({ id: 'gtceu:assembler/cover_item_voiding' },
-		'minecraft:ender_pearl', 'ae2:ender_dust');
+	event.remove({ id: 'gtceu:assembler/cover_item_voiding_advanced' })
+	event.shapeless('gtceu:advanced_item_voiding_cover', ['gtceu:item_voiding_cover', '#gtceu:circuits/mv'])
+		.id('tfg:shapeless/cover_item_voiding_advanced')
+
+	event.remove({ id: 'gtceu:assembler/cover_advanced_energy_detector' })
+	event.shapeless('gtceu:advanced_energy_detector_cover', ['gtceu:energy_detector_cover', 'gtceu:hv_sensor'])
+		.id('tfg:shapeless/advanced_energy_detector_cover')
+
+	event.remove({ id: 'gtceu:assembler/cover_advanced_fluid_detector' })
+	event.shapeless('gtceu:advanced_fluid_detector_cover', ['gtceu:fluid_detector_cover', 'gtceu:hv_sensor'])
+		.id('tfg:shapeless/advanced_fluid_detector_cover')
+
+	event.remove({ id: 'gtceu:assembler/cover_advanced_item_detector' })
+	event.shapeless('gtceu:advanced_item_detector_cover', ['gtceu:item_detector_cover', 'gtceu:hv_sensor'])
+		.id('tfg:shapeless/advanced_item_detector_cover')
+
+	event.remove({ id: 'gtceu:assembler/cover_machine_controller' })
+	event.recipes.gtceu.assembler('gtceu:assembler/cover_machine_controller')
+		.itemInputs('minecraft:lever', '#forge:plates/iron')
+		.itemOutputs('gtceu:machine_controller_cover')
+		.duration(100)
+		.EUt(16)
+	event.shaped('gtceu:machine_controller_cover', [
+		' H ',
+		'LP ',
+		' S '
+	], {
+		H: '#forge:tools/hammers',
+		S: '#forge:tools/screwdrivers',
+		L: 'minecraft:lever',
+		P: '#forge:plates/iron'
+	})
+		.id('tfg:shaped/cover_machine_controller')
+
+	event.remove({ id: 'gtceu:assembler/cover_energy_detector' })
+	event.recipes.gtceu.assembler('gtceu:assembler/cover_energy_detector')
+		.itemInputs('4x gtceu:copper_single_cable', '#gtceu:circuits/lv', '#forge:plates/iron')
+		.itemOutputs('gtceu:energy_detector_cover')
+		.duration(100)
+		.EUt(16)
+	event.shaped('gtceu:energy_detector_cover', [
+		'CHC',
+		'LP ',
+		'CSC'
+	], {
+		H: '#forge:tools/hammers',
+		S: '#forge:tools/screwdrivers',
+		C: 'gtceu:copper_single_cable',
+		L: '#gtceu:circuits/lv',
+		P: '#forge:plates/iron'
+	})
+		.id('tfg:shaped/cover_energy_detector')
+
+	event.remove({ id: 'gtceu:assembler/cover_activity_detector' })
+	event.recipes.gtceu.assembler('gtceu:assembler/cover_activity_detector')
+		.itemInputs('minecraft:redstone_torch', '#forge:plates/iron')
+		.itemOutputs('gtceu:activity_detector_cover')
+		.duration(100)
+		.EUt(16)
+	event.shaped('gtceu:activity_detector_cover', [
+		' H ',
+		'TP ',
+		' S '
+	], {
+		H: '#forge:tools/hammers',
+		S: '#forge:tools/screwdrivers',
+		T: 'minecraft:redstone_torch',
+		P: '#forge:plates/iron'
+	})
+		.id('tfg:shaped/cover_activity_detector')
+
+	event.remove({ id: 'gtceu:assembler/cover_fluid_detector' })
+	event.recipes.gtceu.assembler('gtceu:assembler/cover_fluid_detector')
+		.itemInputs('minecraft:heavy_weighted_pressure_plate', '#forge:plates/iron')
+		.itemOutputs('gtceu:fluid_detector_cover')
+		.duration(100)
+		.EUt(16)
+	event.shaped('gtceu:fluid_detector_cover', [
+		' H ',
+		'WP ',
+		' S '
+	], {
+		H: '#forge:tools/hammers',
+		S: '#forge:tools/screwdrivers',
+		W: 'minecraft:heavy_weighted_pressure_plate',
+		P: '#forge:plates/iron'
+	})
+		.id('tfg:shaped/cover_fluid_detector')
+
+	event.remove({ id: 'gtceu:assembler/cover_item_detector' })
+	event.recipes.gtceu.assembler('gtceu:assembler/cover_item_detector')
+		.itemInputs('minecraft:light_weighted_pressure_plate', '#forge:plates/iron')
+		.itemOutputs('gtceu:item_detector_cover')
+		.duration(100)
+		.EUt(16)
+	event.shaped('gtceu:item_detector_cover', [
+		' H ',
+		'WP ',
+		' S '
+	], {
+		H: '#forge:tools/hammers',
+		S: '#forge:tools/screwdrivers',
+		W: 'minecraft:light_weighted_pressure_plate',
+		P: '#forge:plates/iron'
+	})
+		.id('tfg:shaped/cover_item_detector')
+
+	event.remove({ id: 'gtceu:assembler/cover_maintenance_detector' })
+	event.recipes.gtceu.assembler('gtceu:assembler/cover_maintenance_detector')
+		.itemInputs('gtceu:lv_emitter', '#forge:plates/steel')
+		.itemOutputs('gtceu:maintenance_detector_cover')
+		.duration(100)
+		.EUt(16)
+	event.shaped('gtceu:maintenance_detector_cover', [
+		' H ',
+		'EP ',
+		' S '
+	], {
+		H: '#forge:tools/hammers',
+		S: '#forge:tools/screwdrivers',
+		E: 'gtceu:lv_emitter',
+		P: '#forge:plates/steel'
+	})
+		.id('tfg:shaped/cover_maintenance_detector')
+
+	event.remove({ id: 'gtceu:assembler/cover_storage' })
+	event.recipes.gtceu.assembler('gtceu:assembler/cover_storage')
+		.itemInputs('#forge:chests/wooden', 'gtceu:lv_electric_piston', '#forge:plates/iron')
+		.itemOutputs('gtceu:storage_cover')
+		.duration(100)
+		.EUt(16)
+	event.shaped('gtceu:storage_cover', [
+		' H ',
+		'PCI',
+		' S '
+	], {
+		H: '#forge:tools/hammers',
+		S: '#forge:tools/screwdrivers',
+		P: 'gtceu:lv_electric_piston',
+		C: '#forge:chests/wooden',
+		I: '#forge:plates/iron'
+	})
+		.id('tfg:shaped/cover_storage')
+
+	event.remove({ id: 'gtceu:assembler/wireless_transmitter_cover' })
+	event.recipes.gtceu.assembler('gtceu:assembler/wireless_transmitter_cover')
+		.itemInputs('#forge:plates/ender_pearl', '#forge:foils/annealed_copper', 'gtceu:mv_emitter', '#forge:fine_wires/platinum')
+		.itemOutputs('gtceu:wireless_transmitter_cover')
+		.duration(1000)
+		.EUt(32)
+	event.shaped('gtceu:wireless_transmitter_cover', [
+		'WH ',
+		'EMF',
+		' S '
+	], {
+		H: '#forge:tools/hammers',
+		S: '#forge:tools/screwdrivers',
+		W: '#forge:fine_wires/platinum',
+		E: '#forge:plates/ender_pearl',
+		M: 'gtceu:mv_emitter',
+		F: '#forge:foils/annealed_copper'
+	})
+		.id('tfg:shaped/wireless_transmitter_cover')
+
+	event.remove({ id: 'gtceu:assembler/cover_ender_redstone_link' })
+	event.recipes.gtceu.assembler('gtceu:assembler/cover_ender_redstone_link')
+		.itemInputs('4x #forge:plates/ender_pearl', 'gtceu:mv_sensor', 'gtceu:mv_emitter', '#gtceu:circuits/mv')
+		.itemOutputs('gtceu:ender_redstone_link_cover')
+		.duration(320)
+		.EUt(32)
+	event.shaped('gtceu:ender_redstone_link_cover', [
+		'EHE',
+		'NLM',
+		'ESE'
+	], {
+		H: '#forge:tools/hammers',
+		S: '#forge:tools/screwdrivers',
+		E: '#forge:plates/ender_pearl',
+		N: 'gtceu:mv_sensor',
+		L: '#gtceu:circuits/mv',
+		M: 'gtceu:mv_emitter'
+	})
+		.id('tfg:shaped/cover_ender_redstone_link')
+
+	event.remove({ id: 'gtceu:assembler/cover_advanced_activity_cover' })
+	event.recipes.gtceu.assembler('gtceu:assembler/cover_advanced_activity_cover')
+		.itemInputs('4x #forge:fine_wires/gold', '#gtceu:circuits/hv', '#forge:plates/aluminium')
+		.itemOutputs('gtceu:advanced_activity_detector_cover')
+		.duration(100)
+		.EUt(16)
+	event.shaped('gtceu:advanced_activity_detector_cover', [
+		'GHG',
+		'LP ',
+		'GSG'
+	], {
+		H: '#forge:tools/hammers',
+		S: '#forge:tools/screwdrivers',
+		G: '#forge:fine_wires/gold',
+		P: '#forge:plates/aluminium',
+		L: '#gtceu:circuits/hv'
+	})
+		.id('tfg:shaped/cover_advanced_activity_detector')
+
+	event.remove({ id: 'gtceu:assembler/cover_shutter' })
+	event.recipes.gtceu.assembler('gtceu:assembler/cover_shutter')
+		.itemInputs('#minecraft:doors', '2x #forge:plates/iron')
+		.itemOutputs('2x gtceu:shutter_module_cover')
+		.duration(100)
+		.EUt(16)
+
+	event.shaped('2x gtceu:shutter_module_cover', [
+		' H ',
+		'LP ',
+		' S '
+	], {
+		H: '#forge:tools/hammers',
+		S: '#forge:tools/screwdrivers',
+		L: '#minecraft:doors',
+		P: '#forge:plates/iron'
+	})
+		.id('tfg:shaped/cover_shutter_module')
+
+	event.shaped('gtceu:computer_monitor_cover', [
+		'FHF',
+		'LPC',
+		'FSF'
+	], {
+		H: '#forge:tools/hammers',
+		S: '#forge:tools/screwdrivers',
+		F: '#forge:foils/aluminium',
+		C: '#forge:fine_wires/copper',
+		L: '#gtceu:circuits/lv',
+		P: '#forge:plates/glass'
+	})
+		.id('tfg:shaped/cover_screen')
 
 	//#endregion
 

@@ -1,0 +1,18 @@
+{
+    "components": [
+        {
+            "x": 0,
+            "recipe": "#recipe",
+            "y": 0,
+            "type": "patchouli:custom",
+            "class": "net.dries007.tfc.compat.patchouli.component.InstantBarrelComponent"
+        },
+        {
+            "x": 0,
+            "y": 45,
+            "text": "#text",
+            "type": "patchouli:text"
+        }
+    ],
+    "__comment__": "This file was automatically created by mcresources"
+}

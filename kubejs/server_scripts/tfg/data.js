@@ -365,9 +365,10 @@ function registerTFGItemSize(event) {
 	})
 
 	event.itemSize('tfc:anemometer', "normal", "medium", "tfc_anemometer");
-	event.itemSize('tfc:calendar_clock', "normal", "medium", "tfc_anemometer");
-	event.itemSize('tfc:thermometer', "small", "light", "tfc_anemometer");
-	event.itemSize('tfc:vane', "normal", "medium", "tfc_anemometer");
+	event.itemSize('tfc:calendar_clock', "normal", "medium", "tfc_calendar_clock");
+	event.itemSize('tfc:thermometer', "small", "light", "tfc_thermometer");
+	event.itemSize('tfc:vane', "normal", "medium", "tfc_vane");
+	event.itemSize('create:minecart_contraption', "huge", "very_heavy", "minecart_contraption");
 }
 
 //#endregion

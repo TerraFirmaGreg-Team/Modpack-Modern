@@ -102,7 +102,7 @@
 						Count: 1
 						id: "patchouli:guide_book"
 						tag: {
-							"patchouli:book": "tfc:field_guide"
+							"patchouli:book": "tfg:field_guide"
 						}
 					}
 					type: "item"
@@ -140,7 +140,7 @@
 						Count: 1
 						id: "patchouli:guide_book"
 						tag: {
-							"patchouli:book": "tfc:field_guide"
+							"patchouli:book": "tfg:field_guide"
 						}
 					}
 					type: "item"

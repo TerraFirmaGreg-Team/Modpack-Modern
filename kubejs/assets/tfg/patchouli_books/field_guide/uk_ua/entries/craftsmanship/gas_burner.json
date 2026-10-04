@@ -1,0 +1,247 @@
+{
+    "name": "Газовий пальник",
+    "category": "tfg:craftsmanship",
+    "icon": "tfg:gas_burner",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "anchor": "intro",
+            "title": "Газовий пальник",
+            "text": "$(thing)Газовий пальник$() — це пристрій, який може спалювати рідини та гази, як-от $(thing)Нафта$(), $(l:cooking/alcohol)Алкоголь$() і $(thing)Нафтопродукти$(), щоб генерувати $(l:game_mechanics/heating)тепло$().$(br)На відміну від інших джерел тепла, максимальну температуру пальника можна встановити за допомогою $(l:craftsmanship/gas_burner#redstone)редстоуну$(). Це дає змогу точніше керувати $(l:cooking/cooking_methods)готуванням їжі$() та $(l:craftsmanship/crucible)плавленням$().$(br)Температура газового пальника не підвищується від подачі повітря $(l:craftsmanship/charcoal_forge#bellows)міхами$()."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfg:gas_burner[lit=true]"
+                }
+            },
+            "name": "Газовий пальник",
+            "text": "$(thing)Газові пальники$() показують свій максимальний рівень температури за допомогою індикатора на одній із граней.",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "redstone",
+            "title": "Керування редстоуном",
+            "text": "Цей пристрій має багато функцій, якими можна керувати за допомогою $(bold)$(c)редстоуну$():$(li)Подача сигналу силою $(3)15$() $(italic)запалить$() пальник.$(li)Прибирання всіх сигналів редстоуну $(italic)гасить$() пальник.$(li)$(italic)Максимальну температуру$() пальника можна встановити, подаючи сигнали редстоуну силою від $(3)3 до 14$().$(li)Вихід компаратора показує поточний $(italic)рівень палива$()."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "functions",
+            "title": "Функції",
+            "text": "Газові пальники можна автоматично заправляти за допомогою $(thing)Труб для рідин$() або власноруч за допомогою $(item)$(k:key.use)$(), тримаючи в руці контейнер із рідиною.$(br)У їхньому інтерфейсі відображаються:$(li)Рівень нагрівання зі шкалою, яка показує встановлену максимальну температуру.$(li)Шкала прогресу полум'я, яка показує час, що залишився, а при наведенні курсора — температуру горіння палива.$(li)Паливний бак зі слотами для наповнення та спорожнення відрами."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Пальники мають багато корисних застосувань. Ти можеш використовувати їх із будь-якими пристроями, які можуть отримувати тепло знизу, як-от $(l:craftsmanship/crucible)Тиглі$(), $(l:cooking/cooking_methods#grill)Грилі$(), $(l:cooking/cooking_methods#pot)Казани$() та $(l:cooking/cooking_methods#top_oven)Печі$(), а також із будь-якими механічними машинами Create, яким потрібне джерело тепла."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "Y"
+                    ],
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfg:gas_burner[lit=true]",
+                    "Y": "tfc:crucible"
+                }
+            },
+            "name": "",
+            "text": "$(thing)Газовий пальник$() із тиглем.",
+            "enable_visualize": false
+        },
+        {
+            "type": "tfg:multimultiblock",
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "Y"
+                        ],
+                        [
+                            "X"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfg:gas_burner[lit=true]",
+                        "Y": "firmalife:stovetop_grill"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "Y"
+                        ],
+                        [
+                            "X"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfg:gas_burner[lit=true]",
+                        "Y": "firmalife:stovetop_pot"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "Y"
+                        ],
+                        [
+                            "X"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfg:gas_burner[lit=true]",
+                        "Y": "firmalife:cured_stone_oven_top"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "Y"
+                        ],
+                        [
+                            "X"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfg:gas_burner[lit=true]",
+                        "Y": "firmalife:vat"
+                    }
+                }
+            ],
+            "name": "",
+            "text": "$(thing)Газовий пальник$() із кухонними приладами.",
+            "enable_visualize": false
+        },
+        {
+            "type": "tfg:multimultiblock",
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "Z"
+                        ],
+                        [
+                            " "
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "X"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfg:gas_burner[lit=true]",
+                        "Y": "create:basin",
+                        "Z": "greate:steel_mechanical_press"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "Z"
+                        ],
+                        [
+                            " "
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "X"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfg:gas_burner[lit=true]",
+                        "Y": "create:basin",
+                        "Z": "greate:steel_mechanical_mixer"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "Z"
+                        ],
+                        [
+                            " "
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "X"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfg:gas_burner[lit=true]",
+                        "Y": "create:basin",
+                        "Z": "vintageimprovements:vacuum_chamber"
+                    }
+                }
+            ],
+            "name": "",
+            "text": "$(thing)Газовий пальник$() із механічними машинами.",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Докладніше",
+            "anchor": "relations",
+            "entries": [
+                "tfg:craftsmanship/pottery",
+                "tfg:craftsmanship/metallurgy",
+                "tfg:craftsmanship/charcoal_forge",
+                "tfg:craftsmanship/crucible",
+                "tfg:cooking/alcohol",
+                "tfg:cooking/cooking_methods",
+                "tfg:logistics/redstone_devices",
+                "tfg:game_mechanics/heating"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 11,
+    "extra_recipe_mappings": {
+        "tfg:gas_burner": 2
+    }
+}

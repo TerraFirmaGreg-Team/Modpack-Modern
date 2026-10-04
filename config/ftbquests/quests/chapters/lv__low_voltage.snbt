@@ -26,34 +26,6 @@
 			y: 12.0d
 		}
 		{
-			id: "5BC9534E2B4A16A2"
-			linked_quest: "2262F1FD4EAB777F"
-			shape: "octagon"
-			size: 1.5d
-			x: -2.5d
-			y: 14.0d
-		}
-		{
-			id: "3E4C0AAC278DC9F1"
-			linked_quest: "341E2F290344BEEE"
-			shape: "octagon"
-			size: 1.5d
-			x: -10.5d
-			y: 4.0d
-		}
-		{
-			id: "00B51E50BEBF7E1D"
-			linked_quest: "3F44CFF8A6018F3E"
-			x: -8.5d
-			y: 6.0d
-		}
-		{
-			id: "34F6462681BB5D77"
-			linked_quest: "7C4807A247AF36A1"
-			x: -8.5d
-			y: 2.0d
-		}
-		{
 			icon: {
 				Count: 1
 				id: "gtceu:lv_blue_steel_wrench"
@@ -78,7 +50,7 @@
 			linked_quest: "2D2CB8104E40E808"
 			shape: "heart"
 			x: 7.0d
-			y: 4.5d
+			y: 5.0d
 		}
 		{
 			id: "258922881D3BAB94"
@@ -639,8 +611,6 @@
 			dependency_requirement: "one_completed"
 			description: ["{quests.low_voltage.lv_fluid_solidifier.desc}"]
 			id: "581CDF545E1EA1FD"
-			shape: "octagon"
-			size: 1.5d
 			subtitle: "{quests.low_voltage.lv_fluid_solidifier.subtitle}"
 			tasks: [{
 				id: "20B1CA4DB2750E84"
@@ -657,6 +627,7 @@
 				"02FDECC931B5E8EF"
 			]
 			description: ["{quests.low_voltage.lv_ore_prospector.desc}"]
+			guide_page: "tfg:field_guide tfg:craftsmanship/metallurgy 26"
 			icon: "gtceu:prospector.lv"
 			id: "2E36E5755B2F551C"
 			optional: true
@@ -677,7 +648,7 @@
 			}]
 			title: "{quests.low_voltage.lv_ore_prospector.title}"
 			x: 7.0d
-			y: 6.5d
+			y: 7.0d
 		}
 		{
 			dependencies: [
@@ -1237,6 +1208,7 @@
 				"4B4F052F00435AFE"
 				"2D2CB8104E40E808"
 				"07EDEA9613D6F02D"
+				"37F316C0599B52DE"
 			]
 			dependency_requirement: "one_completed"
 			description: ["{quests.low_voltage.lv_turbo_charge.desc}"]
@@ -1390,7 +1362,7 @@
 				type: "item"
 			}]
 			x: 7.0d
-			y: 5.5d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -1468,6 +1440,7 @@
 				"{@pagebreak}"
 				"{quests.low_voltage.lv_greenhouse.desc.3}"
 			]
+			guide_page: "tfg:field_guide tfg:agriculture/greenhouse 19"
 			icon: "tfc:plant/orange_sapling"
 			id: "1F41C35890E2C44F"
 			optional: true
@@ -1993,7 +1966,11 @@
 		}
 		{
 			dependencies: ["47B899144B865516"]
-			description: ["{quests.low_voltage.food_machines.desc}"]
+			description: [
+				"{quests.low_voltage.food_machines.desc.1}"
+				"{@pagebreak}"
+				"{quests.low_voltage.food_machines.desc.2}"
+			]
 			icon: "tfg:lv_food_processor"
 			id: "3B6A7B1E9114C2A9"
 			optional: true
@@ -2022,23 +1999,6 @@
 			y: 4.0d
 		}
 		{
-			dependencies: ["7C4807A247AF36A1"]
-			dependency_requirement: "one_completed"
-			description: ["{quests.create_logistics.stock_link.desc}"]
-			disable_toast: true
-			id: "50FE830DA6F403B2"
-			optional: true
-			subtitle: "{quests.create_logistics.stock_link.subtitle}"
-			tasks: [{
-				id: "7B71B5DBEFD84C1F"
-				item: "create:stock_link"
-				type: "item"
-			}]
-			title: "{quests.create_logistics.stock_link.title}"
-			x: -8.5d
-			y: 4.0d
-		}
-		{
 			description: ["{quests.low_voltage.lv_laser_engraver.desc}"]
 			id: "383A14A5C65B3ADF"
 			optional: true
@@ -2048,8 +2008,8 @@
 				item: "gtceu:lv_laser_engraver"
 				type: "item"
 			}]
-			x: -10.5d
-			y: 2.0d
+			x: -8.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["3E6DC423FE4A99F7"]
@@ -2078,12 +2038,13 @@
 			}]
 			title: "{quests.tfg_tips.magnets.title}"
 			x: 7.0d
-			y: 7.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["292938760AB9A12B"]
 			dependency_requirement: "one_completed"
 			description: ["{quests.medium_voltage.mv_jetpack.desc}"]
+			guide_page: "tfg:field_guide tfg:logistics/exploration_gear 15"
 			id: "62737DC459F6F5F5"
 			optional: true
 			shape: "heart"
@@ -2123,7 +2084,7 @@
 		{
 			dependencies: ["37307A46E70011D3"]
 			description: ["{quests.tfg_tips.capsules.desc}"]
-			guide_page: "tfc:field_guide tfc:getting_started/food_and_water"
+			guide_page: "tfg:field_guide tfg:game_mechanics/hazards 7"
 			id: "69DA11F2EC7FAECC"
 			optional: true
 			shape: "heart"
@@ -2145,10 +2106,7 @@
 			y: 8.0d
 		}
 		{
-			dependencies: [
-				"701BCADAE5CF6CA5"
-				"5D0B0B9E61C3DE75"
-			]
+			dependencies: ["701BCADAE5CF6CA5"]
 			dependency_requirement: "one_completed"
 			description: [
 				"{quests.low_voltage.geologic_vulcanizer.desc.1}"
@@ -2167,6 +2125,104 @@
 			}]
 			x: 4.5d
 			y: 10.0d
+		}
+		{
+			dependencies: ["3E6DC423FE4A99F7"]
+			description: ["{quests.low_voltage.electric_lunchbox.desc}"]
+			guide_page: "tfg:field_guide tfg:cooking/decay 24"
+			id: "37F316C0599B52DE"
+			optional: true
+			shape: "heart"
+			subtitle: "{quests.tfg_tips.lunchbox.subtitle}"
+			tasks: [{
+				id: "4CF58456659145B5"
+				item: {
+					Count: 1
+					id: "tfclunchbox:electric_lunchbox"
+					tag: {
+						LunchboxType: "electric"
+						LunchboxUUID: "5b4c3bf9-48e0-4da1-a4d9-ef655a642918"
+						SelectedSlot: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 7.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["6771D2D96EEA8FD0"]
+			dependency_requirement: "one_completed"
+			description: ["{quests.low_voltage.stock_ticker.desc}"]
+			guide_page: "tfg:field_guide tfg:logistics/create 35"
+			id: "551B1AC08D0BE017"
+			shape: "octagon"
+			size: 2.0d
+			subtitle: "{quests.low_voltage.stock_ticker.subtitle}"
+			tasks: [{
+				id: "3AAB3DBCE6095250"
+				item: "create:stock_ticker"
+				type: "item"
+			}]
+			title: "{quests.low_voltage.stock_ticker.title}"
+			x: -8.5d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"7BE7DE4C0109D788"
+				"7567E885B7166603"
+			]
+			description: ["{quests.low_voltage.factory_gauge.desc}"]
+			guide_page: "tfg:field_guide tfg:logistics/create 48"
+			hide_until_deps_complete: false
+			id: "36BF3283BEBCCEBF"
+			shape: "octagon"
+			size: 1.5d
+			subtitle: "{quests.low_voltage.factory_gauge.subtitle}"
+			tasks: [
+				{
+					id: "780FDCFBA9BDEC99"
+					item: "create:factory_gauge"
+					type: "item"
+				}
+				{
+					id: "1FB22D0E5974F145"
+					item: "fluidlogistics:fluid_factory_gauge"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "{quests.low_voltage.factory_gauge.title}"
+			x: -2.5d
+			y: 14.0d
+		}
+		{
+			dependencies: [
+				"07E7678095258EDB"
+				"383A14A5C65B3ADF"
+			]
+			dependency_requirement: "one_completed"
+			description: ["{quests.create_logistics.rose_quartz_lens.desc}"]
+			guide_page: "tfg:field_guide tfg:logistics/create 28"
+			icon: "greate:rose_quartz_lens"
+			id: "6771D2D96EEA8FD0"
+			subtitle: "{quests.create_logistics.rose_quartz_lens.subtitle}"
+			tasks: [
+				{
+					id: "29B16138A825C10E"
+					item: "greate:rose_quartz_lens"
+					type: "item"
+				}
+				{
+					id: "2B6712B08D1AA021"
+					item: "create:transmitter"
+					type: "item"
+				}
+			]
+			title: "{quests.create_logistics.rose_quartz_lens.title}"
+			x: -8.5d
+			y: 2.0d
 		}
 	]
 	subtitle: ["{quests.low_voltage.subtitle}"]

@@ -1,0 +1,58 @@
+{
+	"name": "Добування соку",
+	"category": "tfg:agriculture",
+	"icon": "afc:tree_tap",
+	"pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Деякі види дерев можна використовувати для видобування корисних рідин. Ці дерева можуть або продукувати цукрові соки, які можна концентрувати в сироп і використовувати як підсолоджувач, латекс, який можна переробити в гуму, або смолу, яка може бути перероблена у розчин, замінник воску."
+        },
+        {
+            "type": "patchouli:image",
+            "title": "Збір кленового соку",
+            "images": [
+            	"afc:textures/gui/book/maple_tapping.png"
+            ],
+            "border": true
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Щоб добувати сік із дерева, потрібні три речі: саме дерево, сокозбірник, який потрібно викувати з мідного злитка та встановити посередині стовбура заввишки щонайменше три блоки, і діжка, яку потрібно розмістити безпосередньо під сокозбірниковим отвором. Якщо всі умови виконано, діжка одразу почне наповнюватися соком.$(br2)$(o)$(3)Для добування соку потрібно щонайменше три природно вирощені колоди."
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+            	"tfg:textures/gui/field_guide/tree_tapping/tapping_kapok.png"
+            ],
+            "text": "Дійсна конфігурація для збору латексу з сейби",
+            "border": true
+        },
+        {
+            "type": "patchouli:image",
+            "width": 1024,
+            "texture_width": 1024,
+            "height": 1024,
+            "texture_height": 1024,
+            "text": "Добування соку можна оптимізувати, дозволивши йому текти безпосередньо у відкриту грань труби для рідин.",
+            "title": "Нехай тече!",
+            "images": [
+            	"tfg:textures/gui/field_guide/tree_tapping/tfg_tapping.png"
+            ],
+            "border": true
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Докладніше",
+            "anchor": "relations",
+            "entries": [
+            	"tfg:the_world/earth_tree_index",
+            	"tfg:cooking/cooking_methods"
+            ]
+        }
+	],
+	"read_by_default": true,
+	"sortnum": 3,
+	"extra_recipe_mappings": {
+        "afc:tree_tap": 0
+	}
+}

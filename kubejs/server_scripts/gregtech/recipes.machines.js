@@ -154,7 +154,7 @@ function registerGTCEuMachineRecipes(event) {
 		B: 'gtceu:mv_electric_piston',
 		C: '#gtceu:circuits/mv',
 		D: 'gtceu:mv_machine_hull',
-		E: 'tfc:metal/anvil/steel',
+		E: 'tfc:metal/anvil/black_steel',
 	}).id('gtceu:shaped/mv_forge_hammer')
 
 	event.shaped('gtceu:hv_forge_hammer', [
@@ -166,7 +166,7 @@ function registerGTCEuMachineRecipes(event) {
 		B: 'gtceu:hv_electric_piston',
 		C: '#gtceu:circuits/hv',
 		D: 'gtceu:hv_machine_hull',
-		E: 'tfc:metal/anvil/steel',
+		E: '#tfc:red_or_blue_anvil',
 	}).id('gtceu:shaped/hv_forge_hammer')
 
 	event.shaped('gtceu:ev_forge_hammer', [
@@ -178,7 +178,7 @@ function registerGTCEuMachineRecipes(event) {
 		B: 'gtceu:ev_electric_piston',
 		C: '#gtceu:circuits/ev',
 		D: 'gtceu:ev_machine_hull',
-		E: 'tfc:metal/anvil/black_steel',
+		E: 'tfg:vanadium_steel_anvil',
 	}).id('gtceu:shaped/ev_forge_hammer')
 
 	event.shaped('gtceu:iv_forge_hammer', [
@@ -190,7 +190,7 @@ function registerGTCEuMachineRecipes(event) {
 		B: 'gtceu:iv_electric_piston',
 		C: '#gtceu:circuits/iv',
 		D: 'gtceu:iv_machine_hull',
-		E: 'tfc:metal/anvil/black_steel',
+		E: 'tfg:stainless_steel_anvil',
 	}).id('gtceu:shaped/iv_forge_hammer')
 
 	event.shaped('gtceu:luv_forge_hammer', [
@@ -202,7 +202,7 @@ function registerGTCEuMachineRecipes(event) {
 		B: 'gtceu:luv_electric_piston',
 		C: '#gtceu:circuits/luv',
 		D: 'gtceu:luv_machine_hull',
-		E: 'tfc:metal/anvil/black_steel',
+		E: 'tfg:tungsten_anvil',
 	}).id('gtceu:shaped/luv_forge_hammer')
 
 	event.shaped('gtceu:zpm_forge_hammer', [
@@ -214,7 +214,7 @@ function registerGTCEuMachineRecipes(event) {
 		B: 'gtceu:zpm_electric_piston',
 		C: '#gtceu:circuits/zpm',
 		D: 'gtceu:zpm_machine_hull',
-		E: '#tfc:red_or_blue_anvil',
+		E: 'tfg:tungsten_anvil',
 	}).id('gtceu:shaped/zpm_forge_hammer')
 
 	event.shaped('gtceu:uv_forge_hammer', [
@@ -226,7 +226,7 @@ function registerGTCEuMachineRecipes(event) {
 		B: 'gtceu:uv_electric_piston',
 		C: '#gtceu:circuits/uv',
 		D: 'gtceu:uv_machine_hull',
-		E: '#tfc:red_or_blue_anvil',
+		E: 'tfg:tungsten_anvil',
 	}).id('gtceu:shaped/uv_forge_hammer')
 	// #endregion
 

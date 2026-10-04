@@ -1,0 +1,264 @@
+{
+	"name": "Фауна Марса",
+	"category": "tfg:mars",
+	"icon": "minecraft:textures/item/sniffer_egg.png",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"title": "Фауна Марса",
+			"text": "$(item)Марс$() — планета, чиє довкілля найближче до земного. Тут мешкає безліч різноманітних тварин, з якими можна $(l:agriculture/animal_husbandry)взаємодіяти$(), а також є $(l:mars/mars_crops)культури$(), якими можна годувати їх (і себе)… за винятком величезної пустелі, де майже нічого не живе.$(br2)Марс — $(thing)холодна$() планета, тому тварини з жарких або помірних планет зазвичай не зможуть тут вижити."
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "index",
+			"title": "Зміст",
+			"text": "$(li)$(bold)$(l:mars/mars_fauna#sandworm)Піщаний хробак$()$(li)$(bold)Приручувані$()$(li2)$(l:mars/mars_fauna#sniffer)Нюхач$()$(li2)$(l:mars/mars_fauna#wraptor)Химерозавр$()$(li2)$(l:mars/mars_fauna#glacian_sheep)Глаціанська вівця$()$(li2)$(l:mars/mars_fauna#snatcher)Викрадач$()$(li2)$(l:mars/mars_fauna#charger)Нападник$()$(li2)$(l:mars/mars_fauna#soarer)Паритель$()$(li2)$(l:mars/mars_fauna#pentetic_jellie)Пентетичний джеллі$()$(br2)$(o)(Продовження на наступній сторінці...)$()"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(li)$(bold)Дикі$()$(li2)$(l:mars/mars_fauna#eater)Кусака$()$(li2)$(l:mars/mars_fauna#cruncher)Хрумкач$()$(li2)$(l:mars/mars_fauna#glider)Планер$()$(li2)$(l:mars/mars_fauna#crusher)Розтрощувач$()$(li2)$(l:mars/mars_fauna#springling)Веснянка$()$(li2)$(l:mars/mars_fauna#goober)Губер$()$(li2)$(l:mars/mars_fauna#walker)Ходок$()$(li2)$(l:mars/mars_fauna#raider)Набіжник$()$(li2)$(l:mars/mars_fauna#toxlacanth)Таксолотль$()$(li2)$(l:mars/mars_fauna#stackatick)Стакатик$()$(li)$(bold)Монстри$()$(li2)$(l:mars/mars_fauna#quake)Трясун$()$(li2)$(l:mars/mars_fauna#endermen)Ендермени$()$(li2)$(l:mars/mars_fauna#skeletal_raptor)Скелетний раптор$()"
+		},
+		{
+			"type": "patchouli:image",
+			"images": [
+				"tfg:textures/gui/field_guide/sandworm.png"
+			],
+			"border": true,
+			"anchor": "sandworm",
+			"title": "Піщаний хробак",
+			"text": "$(thing)Піщані хробаки$() реагують на рух гравця по землі. Саме через них у пустелі майже нічого не живе.$(br)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "ШАЙ-ХУЛУД",
+			"item": "sandworm_mod:sandworm_tooth,sandworm_mod:thumper",
+			"text": "$(thing)Піщаний хробак$() — радше небезпека довкілля, ніж бос, якого потрібно вбити, тож найкращий спосіб вижити — втекти! Якщо тобі вдасться достатньо разів влучити йому в голову $(thing)вибуховою шкодою$(), він залишить тебе в спокої... на деякий час."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "На щастя, піщаний хробак може завдавати шкоди лише істотам, а не будівлям, і реагує лише на $(thing)рух гравця по землі$(), тож будь-який спосіб не торкатися землі не розлютить його. Атмосфера надто розріджена для літаків і дельтапланів, але є $(l/mars_fauna#soarer)інші способи$()..."
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Нюхач",
+			"text": "$(thing)Нюхачі$() — це приручувані тварини, які зустрічаються за температури від -30 до -102°C. Для відкладання яєць їм потрібне $(item)Велике гніздо$(), а з них можна стригти $(item)Пучки нюхача$(). Їхні яйця можна готувати або переробляти на $(item)Вершки$(). Вони їдять будь-які марсіанські культури.",
+			"anchor": "sniffer"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfg:sniffer{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
+			"scale": 0.45,
+			"name": " ",
+			"text": "Нюхач"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Химерозаври",
+			"text": "$(thing)Химерозаври$() — це приручувані тварини, які зустрічаються за температури від -15 до -100°C. Для відкладання яєць їм потрібне $(item)Велике гніздо$(), а з них можна стригти $(item)Пір'я химерозавра$(). Їхні яйця можна готувати або переробляти на $(item)Цукор химерозавра$(). Вони їдять будь-які марсіанські культури.",
+			"anchor": "wraptor"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfg:wraptor{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
+			"scale": 0.8,
+			"name": " ",
+			"text": "Химерозавр"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Глаціанська вівця",
+			"text": "$(thing)Глаціанські вівці$() надають перевагу надзвичайно холодним умовам за температури нижче -108°C і є приручуваними тваринами. З них можна стригти $(item)Глаціанську вовну$() — чудовий теплоізолятор. Вони їдять будь-які марсіанські культури.$(br2)Потрібно перевезти їх на велику відстань? Спробуй використати $(item)Комірку просторового сховища AE2$(), щоб носити їх із собою в кишені.",
+			"anchor": "glacian_sheep"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfg:glacian_ram{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
+			"scale": 0.7,
+			"name": " ",
+			"text": "Глаціанський баран/вівця."
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Викрадач",
+			"text": "$(thing)Викрадачі$() — пасивні тварини, які люблять красти твої речі! Атакуй їх, щоб повернути свої предмети, або годуй $(item)Сирою рибою$(), щоб приручити їх.$(br2)Після приручення ти можеш носити їх на спині та спорядити дерев'яною скринею. Натисни $(k:key.wan_ancient_beasts.special_ability)$(), щоб кинути їх, і вони вкрадуть вміст найближчої скрині та принесуть його тобі.",
+			"anchor": "snatcher"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "wan_ancient_beasts:snatcher{NoAI:1b}",
+			"scale": 0.35,
+			"name": " ",
+			"text": "Викрадач"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Нападник",
+			"anchor": "charger",
+			"text": "$(thing)Нападники$() — напівпасивні тварини. Ти можеш приручити їх за допомогою $(item)будь-якої марсіанської культури$(), щоб використовувати як бойових наземних верхових тварин.$(br2)Натисни $(k:key.wan_ancient_beasts.special_ability)$(), щоб виконати атаку ударом головою, або натисни й утримуй $(item)Пробіл$(), щоб виконати атаку наскоком.$(br2)Також їх можна спорядити $(item)бронею, яку можна фарбувати$()."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "wan_ancient_beasts:charger{NoAI:1b}",
+			"scale": 0.45,
+			"name": " ",
+			"text": "Нападники мають природну ворожнечу з $(thing)Набіжниками$(). Вони атакують одне одного, щойно побачать."
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Паритель",
+			"anchor": "soarer",
+			"text": "$(thing)Парителі$() — пасивні тварини, які зустрічаються за температури вище −106°C. Їх можна приручити за допомогою $(item)сирої риби$(), щоб використовувати їх як літаючого їздового звіра.$(br2)Однак вони не можуть літати вічно — це показують значки крил у верхньому лівому куті, — тому їм час від часу потрібно приземлятися. (Ти можеш годувати їх сирою рибою, щоб пришвидшити відновлення.)$(br2)Це чудовий варіант для подорожей на великі відстані, і він також не потривожить піщаного хробака!"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "wan_ancient_beasts:soarer{NoAI:1b}",
+			"scale": 0.4,
+			"offset": 1,
+			"name": " "
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Серфер",
+			"anchor": "surfer",
+			"text": "$(thing)Серфери$() — напівводні пасивні тварини. Ти можеш приручити їх, підкравшись до них, коли вони лежать на березі, і погодувавши $(item)сирою рибою$(). Після приручення ти можеш спорядити їх сідлом, щоб вони могли швидко плавати навіть під водою.$(br2)На Марсі це звучить не надто корисно, але пам'ятай, що ти можеш переміщувати істот за допомогою просторових дисків AE2, а в майбутньому з'явиться один певний океанічний крижаний супутник..."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "wan_ancient_beasts:surfer{NoAI:1b}",
+			"scale": 0.4,
+			"offset": 0.2,
+			"name": " ",
+			"text": "Серфери бувають різних кольорів."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "jellies:pentetic{NoAI:1b}",
+			"scale": 0.6,
+			"name": "Пентетичний джеллі",
+			"anchor": "pentetic_jellie",
+			"text": "$(thing)Пентетичні$() $(l/jellies)джеллі$() з'являються в біомах $(item)Глибокої пустелі$() та $(item)Марсіанських гір$() на Марсі. Вони пасивно поглинають радіацію від гравців."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "wan_ancient_beasts:eater{NoAI:1b}",
+			"scale": 0.5,
+			"name": "Кусака",
+			"anchor": "eater",
+			"text": "$(thing)Кусаки$() — верхівкові хижаки, агресивні тварини, які зустрічаються за температури вище -109°C. Якщо тобі вдасться здолати одного з них, його можна з'їсти."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "species:cruncher{NoAI:1b}",
+			"scale": 0.7,
+			"name": "Хрумкач",
+			"anchor": "cruncher",
+			"text": "$(thing)Хрускачи$() — територіальні хижаки, $(item)мінібоси$(). Годуй їх м'ясом, щоб зупинити їхню регенерацію. Їх також можна їсти."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "wan_ancient_beasts:glider{NoAI:1b}",
+			"scale": 0.4,
+			"offset": 0.2,
+			"name": "Планер",
+			"anchor": "glider",
+			"text": "Попри свою назву, $(thing)Планери$() не можуть бути приручені або осідлані. Вони пасивні та живуть у місцевостях із температурою вище -105°C. Вони люблять музику, і їх можна їсти."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "wan_ancient_beasts:crusher{NoAI:1b}",
+			"scale": 0.5,
+			"offset": 0.5,
+			"name": "Розтрощувач",
+			"anchor": "crusher",
+			"text": "$(thing)Розтрощувачі$() — напівворожі тварини, які живуть стадами в місцевостях із температурою вище -100°C. Їх можна вбити заради м'яса та твердих шипів."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "species:springling{NoAI:1b}",
+			"scale": 0.9,
+			"name": "Веснянка",
+			"anchor": "springling",
+			"text": "$(thing)Веснянки$() — дикі тварини, які зустрічаються за температури вище -108°C. Годуй їх $(item)саджанцями$(), щоб їздити на них верхи та витягувати їхні надзвичайно довгі шиї. Їх також можна їсти."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "species:goober{NoAI:1b}",
+			"scale": 0.6,
+			"name": "Губер",
+			"anchor": "goober",
+			"text": "$(thing)Губери$() — ліниві дикі тварини, які зустрічаються за температури вище -109°C. Вони пасивні, і їх можна їсти."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "wan_ancient_beasts:walker{NoAI:1b}",
+			"scale": 0.6,
+			"offset": 2.2,
+			"name": "Ходун",
+			"anchor": "walker",
+			"text": "Гігантські $(thing)Ходуни$() мешкають у місцях із температурою вище -97 °C. Вони пасивні, і їх можна їсти."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "wan_ancient_beasts:raider{NoAI:1b}",
+			"scale": 0.5,
+			"name": "Набіжник",
+			"anchor": "raider",
+			"text": "$(thing)Набіжники$() — це ворожі тварини, які мешкають у місцях із температурою вище -109 °C. Вони крадуть із $(thing)Нападниками$(). Ти можеш зробити їх нейтральними, нагодувавши $(item)сирим м’ясом$()."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "wan_ancient_beasts:toxlacanth{NoAI:1b}",
+			"scale": 0.35,
+			"name": "Таксолотль",
+			"anchor": "toxlacanth",
+			"text": "$(thing)Таксолотлі$() — це водні тварини, на яких полюють інші істоти. Рекомендується вбивати їх на відстані та готувати їхнє м’ясо перед вживанням."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "species:stackatick{NoAI:1b}",
+			"scale": 0.4,
+			"name": "Стакатик",
+			"anchor": "stackatick",
+			"text": "$(thing)Стакатики$() — одні з небагатьох тварин, здатних вижити в марсіанській пустелі; це пасивна тварина. Їх також можна їсти."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "species:quake{NoAI:1b}",
+			"scale": 0.8,
+			"name": "Трясун",
+			"anchor": "quake",
+			"text": "$(thing)Трясуни$() здатні поглинати велику кількість шкоди, перш ніж вивільнити її потужним вибухом. Зачекай, поки вони перезаряджаються, щоб атакувати!"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "endermanoverhaul:badlands_enderman{NoAI:1b}",
+			"scale": 0.8,
+			"name": "Ендермен",
+			"anchor": "endermen",
+			"text": "На Марсі є власні види ендерменів. Усі вони пасивні, крім того, що мешкає під землею."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "ad_astra:martian_raptor{NoAI:1b}",
+			"scale": 0.8,
+			"name": "Скелет раптора",
+			"anchor": "skeletal_raptor",
+			"text": "Неживий динозавр. Їх можна знайти під землею."
+		},
+		{
+			"type": "patchouli:relations",
+			"title": "Докладніше",
+			"anchor": "relations",
+			"entries": [
+				"tfg:mars/mars",
+				"tfg:mars/mars_equipment",
+				"tfg:the_world/wild_animals",
+				"tfg:agriculture/animal_husbandry",
+				"tfg:agriculture/jellies",
+				"tfg:the_moon/moon_fauna",
+				"tfg:beneath/beneath_fauna"
+			]
+		}
+	],
+	"read_by_default": true
+}

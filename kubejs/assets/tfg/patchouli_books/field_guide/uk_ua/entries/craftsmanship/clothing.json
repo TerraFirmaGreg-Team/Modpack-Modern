@@ -1,0 +1,491 @@
+{
+	"name": "Одяг",
+	"category": "tfg:craftsmanship",
+	"icon": "tfc_textile:cotton_shirt",
+	"read_by_default": true,
+	"sortnum": 19,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "$(item)Одяг$() — це тип $(thing)спорядження$(), який надає ефекти, відмінні від $(l:game_mechanics/damage_types)обладунків$().$(br2)Більшість одягу впливає на твою $(l:game_mechanics/player_temperature)температуру тіла$(), але інший одяг може надавати додаткові корисні ефекти."
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "index",
+			"text": "$(li)$(bold)$(l:craftsmanship/clothing#curios)Про цікавинки$()$(li)$(bold)Ранній одяг$()$(li2)$(l:craftsmanship/clothing#straw_hat)Солом'яний капелюх$()$(li2)$(l:craftsmanship/clothing#primitive)Примітивний$()$(li2)$(l:craftsmanship/clothing#insulated_leather)Шкіряний$()$(li)$(bold)Розширений одяг$()$(li2)$(l:craftsmanship/clothing#cloth)Тканинний$()$(li2)$(l:craftsmanship/clothing#hides)Шкури тварин$()$(li2)$(l:craftsmanship/clothing#fully_insulated)Повністю теплоізольований$()$(li)$(bold)$(l:craftsmanship/clothing#table)Таблиця характеристик одягу$()$(li)$(bold)Інший одяг$()$(li2)$(l:logistics/exploration_gear#snowshoes)Снігоступи$()$(li2)$(l:logistics/exploration_gear#snorkel)Шноркель$() та $(l:logistics/exploration_gear#flippers)Ласти$()$(li2)$(l:game_mechanics/hazards#mask)Захисна маска$()$(li2)$(l:game_mechanics/hazards#gloves)Гумові рукавиці$()$(li)$(bold)$(l:craftsmanship/clothing#armor_trim)Оздоблення обладунків$()"
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Що таке цікавинки? (Curios)",
+			"anchor": "curios",
+			"images": [
+				"tfg:textures/gui/field_guide/curios.png"
+			],
+			"border": true,
+			"text": "Натисни круглу кнопку у верхньому лівому куті портрета свого персонажа, щоб відкрити меню."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Одяг можна носити у звичайних слотах спорядження, але його також можна носити у $(thing)слотах цікавинок$(), щоб одночасно використовувати інше спорядження.$(br2)У цьому меню також є слоти для таких речей, як $(l:logistics/personal_storage#backpack)рюкзак$() або $(l:logistics/personal_storage#tool_belt)пояс для інструментів$()."
+		},
+		{
+			"type": "tfg:knapping_recipe",
+			"recipe": "sns:straw_knapping/straw_hat",
+			"anchor": "straw_hat",
+			"title": "Солом'яний капелюх",
+			"text": "Перший предмет одягу, який ти можеш виготовити, — простий $(item)Солом'яний капелюх$(), зроблений із $(l:craftsmanship/building_materials#thatch)соломи$(). Він захищає тебе від $(l:game_mechanics/player_temperature#wetness)прямих сонячних променів$()."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Примітивний одяг",
+			"anchor": "primitive",
+			"item": "tfc_textile:raw_hat,tfc_textile:raw_shirt,tfc_textile:raw_pants,tfc_textile:raw_socks",
+			"text": "Голий і замерзаєш в Арктиці? $(item)Примітивний$() комплект одягу дуже легко виготовити — потрібні лише трохи $(l:craftsmanship/building_materials#thatch)соломи$() та $(item)сирих шкур$(). Ідеально для твого печерного стилю!$(br2)Примітивний одяг має дуже низькі показники тепла, теплоізоляції та міцності, але його має вистачити, щоб ти встиг знайти щось краще."
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "tfg:shapeless/primitive_insulation_small",
+			"recipe2": "tfg:shapeless/primitive_insulation_large",
+			"title": " "
+		},
+		{
+			"type": "tfg:knapping_recipe",
+			"recipe": "tfg:knapping/raw_hat",
+			"text": "$(l:craftsmanship/sticks_and_stones#knapping)Виготовлення$() $(item)Примітивного капюшона$()."
+		},
+		{
+			"type": "tfg:knapping_recipe",
+			"recipe": "tfg:knapping/raw_shirt",
+			"text": "Виготовлення $(item)Примітивної тоги$()."
+		},
+		{
+			"type": "tfg:knapping_recipe",
+			"recipe": "tfg:knapping/raw_pants",
+			"text": "Виготовлення $(item)Примітивних шорт$()."
+		},
+		{
+			"type": "tfg:knapping_recipe",
+			"recipe": "tfg:knapping/raw_socks",
+			"text": "Виготовлення $(item)Примітивних чобот$()."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "insulated_leather",
+			"title": "Утеплена шкіра",
+			"item": "tfcambiental:insulated_leather_hat,tfcambiental:insulated_leather_tunic,tfcambiental:insulated_leather_pants,tfcambiental:insulated_leather_boots",
+			"text": "Одяг із $(item)Утепленої шкіри$() — наступний крок після твого печерного косплею. Для нього потрібна лише броня зі  $(l:agriculture/leather_making)Шкіри$(), а також $(l:agriculture/animal_husbandry#wooly_animals)сира вовна$(), або $(l:agriculture/animal_husbandry#oviparous_animals)пір'я$()."
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "tfg:shaped/insulated_leather_hat",
+			"recipe2": "tfg:shaped/insulated_leather_tunic",
+			"title": " "
+		},
+		{
+			"type": "tfg:knapping_recipe",
+			"recipe": "tfg:knapping/leather_apron",
+			"text": "$(item)Фартух$() зі $(l:agriculture/leather_making)шкіри$() забезпечує чудову теплоізоляцію, але не дає ні зігрівання, ні охолодження. Ідеально для роботи біля $(l:craftsmanship/charcoal_forge)кузні$()!"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Тканинний одяг",
+			"anchor": "cloth",
+			"item": "tag:forge:cloth",
+			"text": "Для сильнішого та довготривалішого захисту варто виготовити справжній одяг із різноманітних  $(l:agriculture/weaving)тканин$(). Одяг із $(l:agriculture/animal_husbandry#wooly_animals)вовни$() та $(l:beneath/beneath_crops#cotton)бавовни$() зігріватиме тебе, тоді як одяг із $(l:the_world/wild_crops#flax)льону$(), $(l:the_world/wild_crops#jute)мішковини$() та $(l:beneath/beneath#webbed_lair)шовку$() охолоджуватиме тебе.$(br)Такий одяг потребує більших початкових витрат, але має значно вищу міцність і його можна дешево ремонтувати."
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "tfg:shaped/cotton_shirt",
+			"recipe2": "tfg:shaped/burlap_pants"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tag:tfc_textile:animal_furs",
+			"anchor": "hides",
+			"title": "Шкури тварин",
+			"text": "Шкури та хутро різних тварин можна використовувати для створення одного з найміцнішого одягу в $(tfg_short), який має найкращі характеристики та міцність серед усіх інших варіантів. Усі вони мають різні характеристики залежно від того, наскільки складно їх добути або де можна знайти відповідну тварину."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Наприклад, $(l:the_world/wild_animals#crocodile)одяг із крокодилячої шкіри$() охолоджуватиме тебе, тоді як у $(l:the_world/wild_animals#caribou)парці з карибу$() тобі буде тепло й затишно.$(br2)Для найкращого охолоджувального одягу доведеться вирушити кудись $(l:beneath/beneath_mechanics#clothes)дуже спекотно$()...$(br2)Увесь такий одяг також легко ремонтувати."
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "tfg:shaped/caribou_shirt",
+			"recipe2": "tfg:shaped/crocodile_shirt"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "fully_insulated",
+			"title": "Повністю теплоізольований",
+			"item": "gtceu:nanomuscle_chestplate,ad_astra:space_suit",
+			"text": "Насамкінець, деякі вдосконалені обладунки також забезпечують $(thing)повну теплоізоляцію$() від зовнішнього світу, не даючи твоїй $(l:game_mechanics/player_temperature)температурі тіла$() опускатися нижче 5 °C або підніматися вище 25 °C."
+		},
+		{
+			"type": "tfg:table",
+			"anchor": "table",
+			"strings": [
+				{
+					"text": "Типи одягу",
+					"bold": true
+				},
+				{
+					"text": "Міцність",
+					"bold": true
+				},
+				{
+					"text": "Тепло",
+					"bold": true
+				},
+				{
+					"text": "Теплоізоляція",
+					"bold": true
+				},
+				{
+					"text": "Солом'яний капелюх"
+				},
+				{
+					"text": "Низька"
+				},
+				{
+					"text": "-2°C"
+				},
+				{
+					"text": "+3"
+				},
+				{
+					"text": "Примітивна"
+				},
+				{
+					"text": "Низька"
+				},
+				{
+					"text": "+2°C"
+				},
+				{
+					"text": "+5"
+				},
+				{
+					"text": "Утеплена шкіра"
+				},
+				{
+					"text": "Середня"
+				},
+				{
+					"text": "+2°C"
+				},
+				{
+					"text": "+10"
+				},
+				{
+					"text": "Шкіряний фартух"
+				},
+				{
+					"text": "Середня"
+				},
+				{
+					"text": "+0°C"
+				},
+				{
+					"text": "+20"
+				},
+				{
+					"text": "Мішковина"
+				},
+				{
+					"text": "Середня"
+				},
+				{
+					"text": "-2°C"
+				},
+				{
+					"text": "+5"
+				},
+				{
+					"text": "Льон"
+				},
+				{
+					"text": "Висока"
+				},
+				{
+					"text": "-2°C"
+				},
+				{
+					"text": "+3"
+				},
+				{
+					"text": "Вовна"
+				},
+				{
+					"text": "Середня"
+				},
+				{
+					"text": "+4°C"
+				},
+				{
+					"text": "+5"
+				},
+				{
+					"text": "Бавовна"
+				},
+				{
+					"text": "Середня"
+				},
+				{
+					"text": "+4°C"
+				},
+				{
+					"text": "+5"
+				},
+				{
+					"text": "Шовк"
+				},
+				{
+					"text": "Дуже висока"
+				},
+				{
+					"text": "-2°C"
+				},
+				{
+					"text": "+5"
+				},
+				{
+					"text": "Примарний шовк"
+				},
+				{
+					"text": "Середня"
+				},
+				{
+					"text": "-8°C"
+				},
+				{
+					"text": "+5"
+				},
+				{
+					"text": "Червоний лось"
+				},
+				{
+					"text": "Дуже висока"
+				},
+				{
+					"text": "-8°C"
+				},
+				{
+					"text": "+20"
+				}
+			],
+			"title": "Характеристики одягу",
+			"legend": [],
+			"columns": 3,
+			"first_column_width": 80,
+			"column_width": 50,
+			"row_height": 9,
+			"left_buffer": 2,
+			"top_buffer": 20,
+			"draw_background": false
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(br2)$(br2)$(br2)$(br2)$(br2)$(br2)$(br2)$(br2)$(o)Продовження на наступній сторінці...$()"
+		},
+		{
+			"type": "tfg:table",
+			"anchor": "table",
+			"strings": [
+				{
+					"text": "Тип одягу",
+					"bold": true
+				},
+				{
+					"text": "Міцність",
+					"bold": true
+				},
+				{
+					"text": "Тепло",
+					"bold": true
+				},
+				{
+					"text": "Теплоізоляція",
+					"bold": true
+				},
+				{
+					"text": "Жахливий вовк"
+				},
+				{
+					"text": "Середня"
+				},
+				{
+					"text": "+8°C"
+				},
+				{
+					"text": "+5"
+				},
+				{
+					"text": "Пантера"
+				},
+				{
+					"text": "Середня"
+				},
+				{
+					"text": "+8°C"
+				},
+				{
+					"text": "+5"
+				},
+				{
+					"text": "Пума"
+				},
+				{
+					"text": "Середня"
+				},
+				{
+					"text": "+8°C"
+				},
+				{
+					"text": "+5"
+				},
+				{
+					"text": "Тигр"
+				},
+				{
+					"text": "Висока"
+				},
+				{
+					"text": "-4°C"
+				},
+				{
+					"text": "+10"
+				},
+				{
+					"text": "Крокодил"
+				},
+				{
+					"text": "Висока"
+				},
+				{
+					"text": "-4°C"
+				},
+				{
+					"text": "+10"
+				},
+				{
+					"text": "Лев"
+				},
+				{
+					"text": "Висока"
+				},
+				{
+					"text": "-4°C"
+				},
+				{
+					"text": "+10"
+				},
+				{
+					"text": "Чорний ведмідь"
+				},
+				{
+					"text": "Висока"
+				},
+				{
+					"text": "+8°C"
+				},
+				{
+					"text": "+10"
+				},
+				{
+					"text": "Грізлі"
+				},
+				{
+					"text": "Висока"
+				},
+				{
+					"text": "+8°C"
+				},
+				{
+					"text": "+10"
+				},
+				{
+					"text": "Карибу"
+				},
+				{
+					"text": "Висока"
+				},
+				{
+					"text": "+8°C"
+				},
+				{
+					"text": "+20"
+				},
+				{
+					"text": "Шаблезуб"
+				},
+				{
+					"text": "Висока"
+				},
+				{
+					"text": "+8°C"
+				},
+				{
+					"text": "+20"
+				},
+				{
+					"text": "Білий ведмідь"
+				},
+				{
+					"text": "Дуже висока"
+				},
+				{
+					"text": "+8°C"
+				},
+				{
+					"text": "+20"
+				}
+			],
+			"legend": [],
+			"title": "Характеристики одягу (продовження)",
+			"columns": 3,
+			"first_column_width": 80,
+			"column_width": 50,
+			"row_height": 9,
+			"left_buffer": 2,
+			"top_buffer": 20,
+			"draw_background": false
+		},
+		{
+			"type": "patchouli:empty",
+			"draw_filler": false
+		},
+		{
+			"title": "Оздоблення обладунків",
+			"item": "tag:minecraft:trim_templates",
+			"type": "patchouli:spotlight",
+			"anchor": "armor_trim",
+			"text": "Твій одяг здається надто простим?$(br2)Як і на обладунки, $(l:craftsmanship/sewing_table#armor_trim)оздоблення обладунків$() також можна наносити на більшість одягу."
+		},
+		{
+			"type": "patchouli:relations",
+			"title": "Докладніше",
+			"anchor": "relations",
+			"entries": [
+				"tfg:agriculture/leather_making",
+				"tfg:agriculture/weaving",
+				"tfg:game_mechanics/player_temperature",
+				"tfg:craftsmanship/sewing_table",
+				"tfg:the_world/wild_animals",
+				"tfg:the_world/wild_crops",
+				"tfg:the_world/climate",
+				"tfg:logistics/exploration_gear",
+				"tfg:beneath/beneath",
+				"tfg:beneath/beneath_crops"
+			]
+		}
+	],
+	"extra_recipe_mappings": {
+		"tag:curios:clothes_hat": 0,
+		"tag:curios:clothes_torso": 0,
+		"tag:curios:clothes_pants": 0,
+		"tag:curios:clothes_socks": 0
+	}
+}

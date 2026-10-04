@@ -439,7 +439,16 @@
 				"3AF4B19564593C89"
 			]
 			description: ["{quests.medium_voltage.mv_steel_alloy.desc}"]
-			icon: "gtceu:vanadium_steel_ingot"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "gtceu:vanadium_steel_ingot"
+			}
 			id: "682C26579EDDCA76"
 			shape: "square"
 			size: 1.0d
@@ -1346,6 +1355,7 @@
 			dependencies: ["75F38905DEA60F15"]
 			dependency_requirement: "one_completed"
 			description: ["{quests.medium_voltage.mv_jetpack_2.desc}"]
+			guide_page: "tfg:field_guide tfg:logistics/exploration_gear 15"
 			id: "21F70EACF6D81E6A"
 			optional: true
 			shape: "heart"
@@ -1943,18 +1953,26 @@
 			optional: true
 			shape: "heart"
 			subtitle: "{quests.medium_voltage.vanadium_tools.subtitle}"
-			tasks: [{
-				id: "2089A49DEBDB9A7C"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "or(item(gtceu:mv_vanadium_steel_drill)item(gtceu:mv_vanadium_steel_wrench)item(gtceu:mv_vanadium_steel_screwdriver)item(gtceu:mv_vanadium_steel_buzzsaw)item(gtceu:mv_vanadium_steel_wire_cutter)item(gtceu:mv_vanadium_steel_chainsaw)item(gtceu:vanadium_steel_knife)item(gtceu:vanadium_steel_hoe)item(gtceu:vanadium_steel_scythe)item(gtceu:vanadium_steel_hammer)item(gtceu:vanadium_steel_file)item(gtceu:vanadium_steel_sword)item(gtceu:vanadium_steel_butchery_knife)item(gtceu:vanadium_steel_crowbar))"
+			tasks: [
+				{
+					id: "2089A49DEBDB9A7C"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(gtceu:mv_vanadium_steel_drill)item(gtceu:mv_vanadium_steel_wrench)item(gtceu:mv_vanadium_steel_screwdriver)item(gtceu:mv_vanadium_steel_buzzsaw)item(gtceu:mv_vanadium_steel_wire_cutter)item(gtceu:mv_vanadium_steel_chainsaw)item(gtceu:vanadium_steel_knife)item(gtceu:vanadium_steel_hoe)item(gtceu:vanadium_steel_scythe)item(gtceu:vanadium_steel_hammer)item(gtceu:vanadium_steel_file)item(gtceu:vanadium_steel_sword)item(gtceu:vanadium_steel_butchery_knife)item(gtceu:vanadium_steel_crowbar))"
+						}
 					}
+					title: "{quests.medium_voltage.vanadium_tools.task}"
+					type: "item"
 				}
-				title: "{quests.medium_voltage.vanadium_tools.task}"
-				type: "item"
-			}]
+				{
+					id: "37B2EA14E5E2063E"
+					item: "tfg:vanadium_steel_anvil"
+					optional_task: true
+					type: "item"
+				}
+			]
 			title: "{quests.medium_voltage.vanadium_tools.title}"
 			x: 8.5d
 			y: -0.5d
@@ -2165,6 +2183,30 @@
 			}]
 			x: 4.5d
 			y: 19.5d
+		}
+		{
+			dependencies: ["75F38905DEA60F15"]
+			dependency_requirement: "one_completed"
+			description: ["{quests.tfg_tips.reinforced_glider.desc}"]
+			guide_page: "tfg:field_guide tfg:logistics/exploration_gear 14"
+			id: "2CE10F52BE276A98"
+			optional: true
+			shape: "heart"
+			subtitle: "{quests.tfg_tips.reinforced_glider.subtitle}"
+			tasks: [{
+				id: "44FE25AB759473F4"
+				item: {
+					Count: 1
+					id: "hangglider:reinforced_hang_glider"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.reinforced_glider.title}"
+			x: 4.5d
+			y: 5.0d
 		}
 	]
 	subtitle: ["{quests.medium_voltage.subtitle}"]

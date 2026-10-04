@@ -466,6 +466,30 @@ function registerTFGArtisanTableRecipes(event) {
 			"X  XXX",
 			"X  XXX",
 			"XXXXXX"
+		]},
+		{ name: 'tfg:buzzsaw_blade', genCast: false, genExtrude: true, pattern: [
+			"X X XX",
+			"X     ",
+			"     X",
+			"X     ",
+			"     X",
+			"XX X X"
+		]},
+		{ name: 'tfg:chainsaw_head', genCast: false, genExtrude: true, pattern: [
+			"XXXX X",
+			"XXX   ",
+			"XX   X",
+			"X   XX",
+			"  XXXX",
+			"XXXXXX"
+		]},
+		{ name: 'tfg:drill_head', genCast: false, genExtrude: true, pattern: [
+			" XXXXX",
+			"X  XXX",
+			"X    X",
+			"XX    ",
+			"XX   X",
+			"XXX XX"
 		]}
 
 		/*

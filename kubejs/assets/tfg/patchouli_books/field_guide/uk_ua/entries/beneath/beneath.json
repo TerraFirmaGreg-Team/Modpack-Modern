@@ -1,0 +1,218 @@
+{
+	"name": "Що таке Безодня?",
+	"category": "tfg:beneath",
+	"icon": "minecraft:deepslate",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "intro",
+			"text": "$(thing)Безодня$() — це мережа дуже глибоких печер, що простягаються безпосередньо під світом.$(br)Цей вимір розрахований на середину та кінець $(thing)ери металургії$().$(br2)Тут небезпечніше, ніж на поверхні, тому радимо щонайменше мати металевий щит і добре харчуватися, але обладунки, фляга з водою, охолоджувальний одяг та зброя дальнього бою значно підвищать твої шанси на виживання."
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "differences",
+			"text": "Це відрізняється від звичайного досвіду в Незері кількома способами:$(li)Вхід здійснюється $(l:beneath/beneath#entering)по-іншому$()$(li)Вода не випаровується миттєво$(li)Ліжко працює, як зазвичай$(li)Подорож у Безодні не швидша, ніж у Верхньому світі$(br2)Натомість ви можете знайти такі ресурси, як $(thing)Каолінова глина$(), $(thing)Графіт$(), багатші й більш відкриті $(thing)рудні жили$(), а також інші скарби."
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "index",
+			"text": "$(li)$(bold)$(l:beneath/beneath#entering)Вхід$() та $(bold)$(l:beneath/beneath#exiting)Вихід$()\n$(li)$(bold)$(l:beneath/beneath#biomes)Біоми$()$(li2)$(l:beneath/beneath#salt_caves)Верхній шар$()$(li2)$(l:beneath/beneath#tar_pools)Середній шар$()$(li2)$(l:beneath/beneath#ash_forest)Нижній шар$()$(li)$(bold)$(l:beneath/beneath#geology)Геологія$()$(li2)$(l:beneath/beneath#more_rocks)Більше порід$()"
+		},
+		{
+			"type": "patchouli:image",
+			"title": "",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/portal.png",
+				"tfg:textures/gui/field_guide/nether/aether.png"
+			],
+			"border": true,
+			"text": "Не так!"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "entering",
+			"title": "Вхід до Безодні",
+			"text": "Щоб потрапити до Безодні, просто знайди корінну породу в верхнім світі на $(thing)Y=-58$().$(br2)Щоб дістатися до корінної породи, тобі доведеться або пробити шар роговика за допомогою $(l:game_mechanics/mining#explosives)вибухівки$() чи $(item)сталевих інструментів$(), знайти печеру з більш крихким $(thing)кератофіром$(), або осушити озеро лави.$(br2)Зверни увагу, що $(item)примітивної вибухівки$() недостатньо, щоб пробити роговик."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Ти з’явишся в Безодні на тих самих координатах X і Z, а навколо тебе буде відкрито простір 3×2×3 блоки, щоб за потреби ти міг встановити опори.$(br2)Якщо під ногами немає підлоги, буде створено тимчасову хмару, а також ненадовго надається ефекти $(thing)Повільного падіння$() та $(thing)Захисту від вогню$(), щоб запобігти нещасним випадкам."
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "exiting",
+			"title": "Вихід із Безодні",
+			"text": "Щоб повернутися, просто дістанься до корінної породи на стелі тим самим методом.$(br2)Буде корисно $(thing)занотувати$() місце, де ти увійшов, щоб за потреби повернутися в те саме місце в верхнім світі."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Ти повернешся на $(thing)Y=-54$(), над потенційними озерами лави, всередині ще однієї ділянки розміром 3×2×3. Два центральні блоки, де стоятиме гравець, завжди будуть замінені на повітря, тож, можливо, варто уникати розміщення драбин у центрі чи опор."
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "biomes",
+			"title": "Біоми",
+			"text": "Безодня має цілий набір нових біомів для дослідження!$(br2)Безодню можна поділити на три вертикальні шари, кожен із власним набором біомів. Чим нижче ти спускаєшся, тим спекотнішим і небезпечнішим стає середовище!"
+		},
+		{
+			"type": "patchouli:text",
+			"title": " Шари",
+			"text": "$(bold)Верхній шар$()$(li)$(l:beneath/beneath#salt_caves)Соляні печери$()$(li)$(l:beneath/beneath#muggy_bog)Вогке болото$()$(li)$(l:beneath/beneath#decaying_caverns)Гнилісні печери$()$(li)$(l:beneath/beneath#webbed_lair)Павуче лігво$()$(br)$(bold)Середній шар$()$(li)$(l:beneath/beneath#tar_pools)Дігтярні затони$()$(li)$(l:beneath/beneath#geothermal_springs)Геотермальні джерела$()$(li)$(l:beneath/beneath#thorny_grove)Тернистий гай$()$(li)$(l:beneath/beneath#lush_hollow)Пишна западина$()$(br)$(bold)Нижній шар$()$(li)$(l:beneath/beneath#ash_forest)Попелястий ліс$()$(li)$(l:beneath/beneath#lava_floes)Лавові пласти$()$(li)$(l:beneath/beneath#basalt_deltas)Базальтові дельти$()"
+		},
+		{
+			"type": "patchouli:image",
+			"anchor": "salt_caves",
+			"title": "Соляні печери",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/salt_caves.png"
+			],
+			"border": true,
+			"text": "Наче теплий океанський бриз, цей біом сповнений $(item)Галіту$(). Чудове місце для облаштування бази!"
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Вогке болото",
+			"anchor": "muggy_bog",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/muggy_bog.png"
+			],
+			"border": true,
+			"text": "Вологий і схожий на болото. Безпечне джерело деревини, якщо тобі вдасться уникати $(thing)Крокодилів$()."
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Гнилісні печери",
+			"anchor": "decaying_caverns",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/decaying_caverns.png"
+			],
+			"border": true,
+			"text": "Природні переробники невтомно працюють у цьому вологому, наповненому гниллю регіоні."
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Павуче лігво",
+			"anchor": "webbed_lair",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/webbed_lair.png"
+			],
+			"border": true,
+			"text": "Неважко здогадатися, хто тут живе! Чудове місце, щоб добувати $(item)шовк$()."
+		},
+		{
+			"type": "patchouli:image",
+			"anchor": "tar_pools",
+			"title": "Дігтярні затони",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/tar_pools.png"
+			],
+			"border": true,
+			"text": "Піщана, наче маленька пустеля, ця територія містить липкі $(thing)дьогтяні ями$(), повні нафти."
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Геотермальні джерела",
+			"anchor": "geothermal_springs",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/geothermal_springs.png"
+			],
+			"border": true,
+			"text": "Тут немає сірчаних кубів, але цей затягнутий парою біом може стати чудовим місцем, щоб знайти $(thing)джерельну воду$() для лікування."
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Тернистий гай",
+			"anchor": "thorny_grove",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/thorny_brambles.png"
+			],
+			"border": true,
+			"text": "Спекотно і повно зелені! Густа папороть ховає під собою $(thing)каолінітову глину$()."
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Пишна западина",
+			"anchor": "lush_hollow",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/lush_hollow.png"
+			],
+			"border": true,
+			"text": "Спекотно і повно зелені! Густа папороть ховає під собою $(thing)каолінітову глину$()."
+		},
+		{
+			"type": "patchouli:image",
+			"anchor": "ash_forest",
+			"title": "Попелястий ліс",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/ash_forest.png"
+			],
+			"border": true,
+			"text": "Те, що залишилося від верхньої рослинності після частих пожеж, спричинених спекою."
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Лавові пласти",
+			"anchor": "lava_floes",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/lava_floes.png"
+			],
+			"border": true,
+			"text": "Багата на руду зона з $(thing)піроксеніту$(), яку перетинають лавові річки."
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Геологія",
+			"anchor": "basalt_deltas",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/basalt_deltas.png"
+			],
+			"border": true,
+			"text": "Улюблений усіма біом Незеру повертається й залишається таким же небезпечним для пересування, як і завжди."
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "geology",
+			"title": "Геологія",
+			"text": "Як і в Верхньому світі, у Безодні є власні шари гірських порід. На самому верху можна знайти Філіт, Аспідний сланець, Гнейс, Мармур, Шиферний сланець, Мігматит і Травертин.$(br2)Під ними можна знайти Аспідний сланець, Гнейс, Туф, Мігматит, Травертин і Діорит."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Нижче розташований шар, що складається з Габро, Граніту, Туфу, Діориту або Мігматиту.$(br2)На нижніх рівнях Безодні є шар, що складається виключно з Мігматиту, а під ним, на самому дні, — Піроксеніт."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "minecraft:blackstone,minecraft:calcite,tfg:gilsonite,tfg:rock/aragonite,tfg:rock/glauberite,tfg:huge_quartz,beneath:crackrack,tfg:halite",
+			"title": "Більше порід",
+			"anchor": "more_rocks",
+			"text": "Деякі інші камені можна знайти в інших місцях.$(br2)Невеликі лавові басейни оточені $(item)піроксенітом$(), а $(item)кальцит$() можна знайти в басейнах із джерельною водою.$(br2)$(item)Кератофір$() можна знайти по всій Безодні у вигляді великих високих колон."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Біом $(l:beneath/beneath#geothermal_springs)Геотермальних джерел$() містить унікальний $(item)арагоніт$() та $(item)глауберит$(), а також великі поклади кальциту.$(br2)У цьому біомі також ростуть $(item)величезні кристали кварцу$(), які можна або здобути кайлом, щоб отримати $(item)димчастий кварц$() різної якості, або розрізати за допомогою $(item)ювелірною пилкою$(), щоб отримати сам прозорий блок."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(item)Гільсоніт$(), дуже темний будівельний блок та інгредієнт для $(l:logistics/roads#asphalt)асфальту$(), можна знайти у великих кількостях у біомі $(l:beneath/beneath#tar_pools)Дігтярні затони$(), разом із $(item)пісковиком$().$(br2)Нарешті, $(item)галіт$() можна знайти у величезних кількостях у біомі $(l:beneath/beneath#salt_caves)Соляні печери$(), де його можна добувати разом із рудами галіт та сильвін."
+		},
+		{
+			"type": "patchouli:relations",
+			"title": "Докладніше",
+			"anchor": "relations",
+			"entries": [
+				"tfg:beneath/beneath_mechanics",
+				"tfg:beneath/beneath_crops",
+				"tfg:beneath/beneath_wild_fruits",
+				"tfg:beneath/beneath_tree_index",
+				"tfg:beneath/beneath_fauna"
+			]
+		}
+	],
+	"extra_recipe_mappings": {
+		"tfg:gilsonite": 22,
+		"tfg:rock/aragonite": 22,
+		"tfg:rock/glauberite": 22,
+		"tfg:huge_quartz": 22
+	},
+	"read_by_default": true,
+	"priority": true
+}

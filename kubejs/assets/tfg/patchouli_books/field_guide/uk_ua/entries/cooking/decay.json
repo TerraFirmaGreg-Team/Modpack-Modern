@@ -1,0 +1,512 @@
+{
+    "name": "Псування та збереження",
+    "category": "tfg:cooking",
+    "icon": "tfclunchbox:lunchbox",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "anchor": "index",
+            "text": "$(li)$(bold)$(l:cooking/decay#decay)Вступ$()\n$(li2)$(l:cooking/decay#calculation)Розрахунок псування$()\n$(li2)$(l:cooking/decay#table)Таблиця модифікаторів$()\n$(li)$(bold)$(l:cooking/decay#vessels)Посудини$()\n$(li)$(bold)$(l:cooking/decay#cooking)Приготування$()\n$(li)$(bold)$(l:cooking/decay#smoking)Копчення$()\n$(li)$(bold)$(l:cooking/decay#salting)Соління$()\n$(li)$(bold)$(l:cooking/decay#vinegar)Маринування$()\n$(li)$(bold)$(l:cooking/decay#drying)Сушіння$()"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)$(bold)$(l:cooking/decay#oven_baked)Випікання в печі$()$(li)$(bold)$(l:cooking/decay#cellar)Льохи$()$(li2)$(l:cooking/decay#shelf)Зберігання в льосі$()$(li)$(bold)$(l:cooking/decay#lunch_box)Ланч-бокси$()$(li)$(bold)$(l:cooking/decay#refrigerator)Холодильники$()$(li)$(bold)$(l:cooking/decay#freeze_dry)Сублімаційне сушіння$()$(li)$(bold)$(l:cooking/decay#pest)Боротьба зі шкідниками$()$(li)$(bold)$(l:cooking/decay#cutting)Зрізання зіпсованої частини$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "decay",
+            "title": "Псування",
+            "text": "У TerraFirmaCraft жодна їжа не зберігається вічно! З часом їжа $(thing)псується$(), перетворюючись на гнилу. Гнила їжа не відновлює голод, може накласти негативні ефекти, як-от $(thing)голод$() або $(thing)отруєння$(), і не може використовуватися для приготування страв!$(br2)На щастя, є кілька способів продовжити термін зберігання їжі, $(thing)зберігаючи$() її."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Коли ти наводиш курсор на шматок їжі, з’являється підказка, яка показує, скільки часу залишилося до псування їжі. Вона може виглядати приблизно так:$(br2)$(bold)$(2)Їстівне до: 5:30 5 липня 1000 року (через 5 дн.)$()$(br2)Застосовуючи різні способи збереження, цю дату можна відсунути, даючи тобі більше часу до псування їжі. Більшість властивостей збереження навіть можуть складатися."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "calculation",
+            "title": "Розрахунок псування",
+            "text": "Коли предмет їжі створюється у світі, всередині нього зберігається часова позначка дати й часу створення. $(thing)TFC$() визначає швидкість псування, використовуючи цю позначку та вроджений модифікатор псування їжі. Усі властивості збереження додаються до цього значення, відсуваючи дату створення назад і таким чином збільшуючи термін зберігання предмета.$(br)Модифікатори псування мають значення від 0 до ∞. За значення 0 їжа зберігається вічно, а за значення ∞ псується миттєво. Тому чим менший модифікатор, тим краще."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Щоб розрахувати новий термін до псування після застосування властивостей збереження, використовуй формулу: $(2)$(o)Новий термін зберігання = Термін зберігання / Модифікатор збереження$(), округлюючи результат у більшу сторону. При складанні властивостей збереження розрахунок виконується множенням, ось так: $(2)$(o)NSD = SD / (PM1 * PM2 * ...)$(), а це означає, що поєднання властивостей експоненційно збільшує час до псування. Таблиця базових модифікаторів збереження доступна на наступній сторінці, а кожна властивість буде окремо розглянута у відповідному розділі."
+        },
+        {
+            "type": "tfg:table",
+            "anchor": "table",
+            "strings": [
+                {
+                    "text": "Властивість",
+                    "bold": true
+                },
+                {
+                    "text": "Модифікатор",
+                    "bold": true
+                },
+                {
+                    "text": "Запечений у печі"
+                },
+                {
+                    "text": "0.900"
+                },
+                {
+                    "text": "Смажений на грилі"
+                },
+                {
+                    "text": "0.800"
+                },
+                {
+                    "text": "Копчений"
+                },
+                {
+                    "text": "0.500"
+                },
+                {
+                    "text": "Засолений"
+                },
+                {
+                    "text": "0.500"
+                },
+                {
+                    "text": "Маринований"
+                },
+                {
+                    "text": "0.500"
+                },
+                {
+                    "text": "Консервований"
+                },
+                {
+                    "text": "0.500"
+                },
+                {
+                    "text": "Дикий"
+                },
+                {
+                    "text": "0.500"
+                },
+                {
+                    "text": "Сушений"
+                },
+                {
+                    "text": "0.500"
+                },
+                {
+                    "text": "Охолоджено"
+                },
+                {
+                    "text": "0.300"
+                },
+                {
+                    "text": "Зберігається на полиці"
+                },
+                {
+                    "text": "0.400 - 0.350 - 0.250"
+                },
+                {
+                    "text": "Підвішений"
+                },
+                {
+                    "text": "0.350 - 0.300 - 0.250"
+                },
+                {
+                    "text": "Охолодження"
+                },
+                {
+                    "text": "0.125"
+                },
+                {
+                    "text": "Консервований в оцті"
+                },
+                {
+                    "text": "0.100"
+                },
+                {
+                    "text": "Кріовисушений"
+                },
+                {
+                    "text": "0.020"
+                }
+            ],
+            "text": "",
+            "title": "Властивості збереження: від найгіршої до найкращої",
+            "legend": [],
+            "columns": 1,
+            "first_column_width": 118,
+            "column_width": 118,
+            "row_height": 9,
+            "left_buffer": 2,
+            "top_buffer": 12,
+            "draw_background": false
+        },
+        {
+            "type": "patchouli:empty",
+            "draw_filler": false
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "vessels",
+            "text": "Один із найперших способів зберігати їжу — використовувати $(thing)посудину$(). $(thing)Корчага$() — це блок, що може зберігати до дев’яти предметів, а після $(thing)запечатування$() предмети всередині отримують властивість $(5)$(bold)Консервований$() із модифікатором 0,5.$(br2)$(thing)Горщик$() — це предмет, який може зберігати до чотирьох інших предметів і також надають своєму вмісту властивість $(5)$(bold)Консервований$().",
+            "title": "Глечики"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "anchor": "large_vessels",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfc:ceramic/large_vessel[sealed=true]"
+                }
+            },
+            "name": "",
+            "text": "Закрита корчага",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "cooking",
+            "text": "Ще один простий спосіб зберегти певні види їжі — приготувати їх. $(thing)М’ясо$() після приготування псується повільніше, ніж сире.$(br2)Деякі пристрої, які нагріваються до дуже високої температури, як-от $(l:craftsmanship/charcoal_forge)вугільне горно$() або $(l:craftsmanship/crucible)тигель$(), $(bold)не підходять$() для приготування їжі, через що вона псуватиметься швидше!$(br)Вони надають їжі властивість $(c)$(bold)Згоріло до хрусткої скоринки!$() з модифікатором 2,5.",
+            "title": "Приготування їжі"
+        },
+        {
+            "type": "tfg:heat_recipe",
+            "recipe": "tfc:heating/mutton",
+            "text": "Натомість $(l/cooking_methods#firepit)багаття$() або $(l/cooking_methods#grill)гриль$() навіть можуть дати перевагу при використанні! Наприклад, приготування баранини (зображено вище) на $(thing)багатті$() збільшить термін її зберігання приблизно на +42%, а приготування на $(thing)грилі$() надасть їй властивість $(5)$(bold)Смажене на дровах$() з модифікатором 0,8."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "smoking",
+            "title": "Копчення",
+            "text": "Копчення використовується для збереження $(thing)м’яса$() та $(l:cooking/cheese)сиру$() з модифікатором 0,7. Щоб закоптити м’ясо, його спочатку потрібно $(thing)просолити$(), запечатавши його в $(thing)діжці$() разом із $(thing)розсолом$(). Для сиру цього не потрібно.$(br)Щоб почати копчення, помісти предмет у вовняну пряжу, яка розташована не далі ніж у чотирьох блоках над багаттям. Якщо все працює правильно, пряжа почне утворювати дим.$(br)Примітка: багаття можна розпалювати лише $(thing)колодами$()!"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "AXA"
+                    ],
+                    [
+                        "AXA"
+                    ],
+                    [
+                        "AYA"
+                    ],
+                    [
+                        " 0 "
+                    ]
+                ],
+                "mapping": {
+                    "A": "tfc:mud_bricks/sandy_loam",
+                    "X": "firmalife:wool_string[axis=z]",
+                    "Y": "tfc:firepit[lit=true]"
+                }
+            },
+            "text": "Вовняна пряжа використовується для підвішування предметів для $(thing)копчення$(). З обох боків потрібні опорні блоки. Натисни $(item)$(k:key.use)$() по пряжі з предметом у руці, щоб розмістити до 8 предметів для копчення.",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "salting",
+            "text": "$(thing)Соління$() — це спосіб продовжити термін зберігання м’яса. Щоб посолити м’ясо, його потрібно об’єднати із $(thing)сіллю$() у сітці створення. Солити можна лише сире м’ясо. Після цього приготування або інші способи збереження м’яса не заберуть властивість солоного. $(7)$(bold)Засолена$() їжа отримує модифікатор 0,5.",
+            "title": "Соління"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfc:groundcover/salt_lick"
+                }
+            },
+            "name": "Соляні лизунці",
+            "text": "Сіль можна знайти в природі в лісах у вигляді соляних лизунців або добути шляхом подрібнення соляних руд, як-от галіт.",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "vinegar",
+            "title": "Збереження за допомогою оцту",
+            "text": "$(thing)Збереження за допомогою оцту$() — це спосіб продовжити термін зберігання фруктів, овочів і м’яса. Щоб зберігати їжу в оцті, її спочатку потрібно $(thing)замаринувати$() у $(thing)розсолі$(). Після маринування їжу можна запечатати в діжці з оцтом. Якщо на кожен замаринований предмет їжі припадає 125 мБ оцту, їжа зберігатиметься довше. $(7)$(bold)Маринована$() їжа отримує модифікатор 0,5, а їжа $(7)$(bold)занурена в оцет$() — модифікатор 0,1."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "drying",
+            "title": "Сушіння",
+            "text": "$(thing)Килимок для сушіння$() використовується для сушіння предметів. Він виготовляється з $(thing)листя плодових дерев$(), яке отримують, ламаючи листя $(thing)плодових дерев$(). Щоб використовувати килимок для сушіння, розмісти його на сонці та додай на нього предмет за допомогою $(item)$(k:key.use)$(). Якщо піде дощ, процес сушіння доведеться почати спочатку. Деякі види їжі — наприклад, фрукти — отримають властивість $(7)$(bold)Сушений$(), яка дає модифікатор 0,8."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Сонячна сушарка працює так само, як і килимок для сушіння, але в 12 разів швидше. Обидва пристрої можна автоматизувати, притиснувши до їхнього боку головку поршня. Якщо кинути предмет на килимок для сушіння, він буде розміщений на килимку."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "oven_baked",
+            "title": "Запечений у печі",
+            "text": "Випікання їжі в $(l:cooking/cooking_methods#top_oven)верхній частині печі$() — другий за ефективністю спосіб зберегти їжу завдяки приготуванню, оскільки воно надає властивість $(7)$(bold)Запечений у печі$() з модифікатором 0,9."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "cellar",
+            "title": "Льох",
+            "text": "$(thing)Льох$() — це багатоблоковий пристрій, керований $(item)кліматичною станцією$(). Багатоблокова конструкція льоху має бути повністю оточена з усіх боків $(thing)$(t:#firmalife:cellar_insulation)цеглою льоху$(). Кліматичну станцію потрібно встановити на першому рівні льоху, торкаючись стіни. Активуй кліматичну станцію за допомогою $(item)$(k:key.use)$(). Якщо ти якимось чином зміниш конструкцію, кліматичну станцію потрібно буде активувати повторно.$(br)Максимальний внутрішній об’єм льоху становить 31×31×31 блоків."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Льох використовується для зберігання їжі та $(l:cooking/cheese#cheese_wheel)витримки сиру$() за допомогою $(l:cooking/decay#shelf)полиць для їжі$() і $(l:cooking/decay#shelf)вішаків$() для розміщення харчових продуктів, а також для витримки сиру на землі або на $(thing)стійці для діжок$().$(br2)Льох працює ефективніше в $(l:the_world/climate#temperature)холоднішому середовищі$().$(li)$(2)Темп. >= 0 °C:$() Полиці 0,4, Вішаки 0,35$(li)$(2)Темп. < 0 °C:$() Полиці 0,35, Вішаки 0,3$(li)$(2)Темп. < -12 °C:$() Полиці 0,25, Вішаки 0,25"
+        },
+        {
+            "type": "tfg:multimultiblock",
+            "text": "Приклад конструкції льоху",
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "AAAAAAAAA",
+                            "AAAAAAAAA",
+                            "AAAAAAAAA",
+                            "AAAAAAAAA",
+                            "AAAAAAAAA",
+                            "AAAAAAAAA",
+                            "AAAAAAAAA",
+                            "AAAAAAAAA",
+                            "AAAAAAAAA"
+                        ],
+                        [
+                            "AAAAAAAAA",
+                            "A       A",
+                            "A       A",
+                            "AHHHHHHHA",
+                            "A       A",
+                            "AHHHHHHHA",
+                            "A       A",
+                            "A       A",
+                            "AAAAAAAAA"
+                        ],
+                        [
+                            "AAAAAAAAA",
+                            "AEEEEEEEA",
+                            "A       A",
+                            "A       A",
+                            "A       A",
+                            "A       A",
+                            "A       A",
+                            "AWWWWWWWA",
+                            "AAAAAAAAA"
+                        ],
+                        [
+                            "AAAAAAAAA",
+                            "AEEEEEEEA",
+                            "A       A",
+                            "A       A",
+                            "A   0   T",
+                            "A       A",
+                            "A       A",
+                            "AWWWWWWWA",
+                            "AAAAAAAAA"
+                        ],
+                        [
+                            "AAAAAAAAA",
+                            "AEEEEEEEA",
+                            "A       A",
+                            "A       A",
+                            "AC      B",
+                            "A       A",
+                            "A       A",
+                            "AWWWWWWWA",
+                            "AAAAAAAAA"
+                        ],
+                        [
+                            "AAAAAAAAA",
+                            "AAAAAAAAA",
+                            "AAAAAAAAA",
+                            "AAAAAAAAA",
+                            "AAAAAAAAA",
+                            "AAAAAAAAA",
+                            "AAAAAAAAA",
+                            "AAAAAAAAA",
+                            "AAAAAAAAA"
+                        ]
+                    ],
+                    "mapping": {
+                        "A": "firmalife:sealed_bricks",
+                        "C": "firmalife:climate_station[stasis=true]",
+                        "E": "firmalife:wood/food_shelf/pine[facing=east]",
+                        "W": "firmalife:wood/food_shelf/pine[facing=west]",
+                        "B": "firmalife:sealed_door[facing=north,half=lower,hinge=right]",
+                        "T": "firmalife:sealed_door[facing=north,half=upper,hinge=right]",
+                        "H": "firmalife:wood/hanger/pine"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "AAAA     ",
+                            "AAAA     ",
+                            "AAAA     ",
+                            "AAAA     ",
+                            "AAAA     ",
+                            "AAAA     ",
+                            "AAAA     ",
+                            "AAAA     ",
+                            "AAAA     "
+                        ],
+                        [
+                            "AAAAA    ",
+                            "A        ",
+                            "A        ",
+                            "AHHHHHHH ",
+                            "A        ",
+                            "AHHHHHHH ",
+                            "A        ",
+                            "A        ",
+                            "AAAAA    "
+                        ],
+                        [
+                            "AAAAAA   ",
+                            "AEEEEEEE ",
+                            "A        ",
+                            "A        ",
+                            "A        ",
+                            "A        ",
+                            "A        ",
+                            "AWWWWWWW ",
+                            "AAAAAA   "
+                        ],
+                        [
+                            "AAAAAAA  ",
+                            "AEEEEEEE ",
+                            "A        ",
+                            "A        ",
+                            "A   0    ",
+                            "A        ",
+                            "A        ",
+                            "AWWWWWWW ",
+                            "AAAAAAA  "
+                        ],
+                        [
+                            "AAAAAAAA ",
+                            "AEEEEEEE ",
+                            "A        ",
+                            "A        ",
+                            "AC       ",
+                            "A        ",
+                            "A        ",
+                            "AWWWWWWW ",
+                            "AAAAAAAA "
+                        ],
+                        [
+                            "AAAAAAAAA",
+                            "AAAAAAAAA",
+                            "AAAAAAAAA",
+                            "AAAAAAAAA",
+                            "AAAAAAAAA",
+                            "AAAAAAAAA",
+                            "AAAAAAAAA",
+                            "AAAAAAAAA",
+                            "AAAAAAAAA"
+                        ]
+                    ],
+                    "mapping": {
+                        "A": "firmalife:sealed_bricks",
+                        "C": "firmalife:climate_station[stasis=true]",
+                        "E": "firmalife:wood/food_shelf/pine[facing=east]",
+                        "W": "firmalife:wood/food_shelf/pine[facing=west]",
+                        "B": "firmalife:sealed_door[facing=north,half=lower,hinge=right]",
+                        "T": "firmalife:sealed_door[facing=north,half=upper,hinge=right]",
+                        "H": "firmalife:wood/hanger/pine"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "shelf",
+            "title": "Зберігання в льосі",
+            "item": "tag:firmalife:food_shelves,tag:firmalife:hangers",
+            "text": "$(item)Полиці для їжі$() та $(item)вішаки$() можуть містити повний стос одного виду їжі. Додавати та забирати предмети можна за допомогою $(item)$(k:key.use)$(), а для повних стосів — $(item)$(k:key.sneak) + $(k:key.use)$(). Предмети на правильно встановлених полиці для їжі і вішаках отримують модифікатор псування, кращий, ніж у посудин, і він покращується зі зниженням $(thing)середньої температури$()."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "lunch_box",
+            "title": "Ланч-бокси",
+            "item": "tfclunchbox:lunchbox,tfclunchbox:cooling_lunchbox,tfclunchbox:electric_lunchbox",
+            "text": "Ланч-бокси — це зручний спосіб переносити та споживати їжу. Звичайний ланч-бокс надає властивість $(5)$(bold)Консервований$(), тоді як $(item)охолоджуваний$() та $(item)електричний ланч-бокси$() надають властивість $(9)$(bold)Охолоджений$() з модифікатором 0,3.$(br2)Охолоджувальний ланч-бокс використовує $(item)лід$() для збереження їжі, а електричний ланч-бокс споживає $(2)EU$() енергію."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "refrigerator",
+            "title": "Холодильник",
+            "item": "tfg:mv_food_refrigerator,tfg:hv_food_refrigerator,tfg:ev_food_refrigerator,tfg:iv_food_refrigerator",
+            "text": "Холодильники додані $(tfg_short) і споживають $(2)EU$(), щоб надавати властивість $(3)$(bold)Охолоджений$() з модифікатором 0,125.$(br)Вищі рівні холодильника не впливають на бонус до збереження — лише на доступний простір для зберігання. Холодильники також можуть об’єднувати стоси їжі, об’єднуючи дати псування."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "freeze_dry",
+            "title": "Сублімаційне сушіння",
+            "item": "tfg:food/meal_bag,tfg:food/freeze_dried_fruit,tfg:food/calorie_paste",
+            "text": "$(tfg_short) додає можливість висушувати певні види їжі методом сублімаційного сушіння в $(item)кухонних комбайнах$(), що значно збільшує термін її зберігання. Сублімаційне сушіння надає властивість $(7)$(bold)Кріовисушений$() з модифікатором 0,02."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "pest",
+            "title": "Шкідники",
+            "text": "Їжа, залишена в скринях, може приваблювати $(thing)щурів$(), тож не забувай правильно зберігати їжу в посудинах, льохах або холодильниках. Щури можуть відкривати ємності та їсти з них їжу. Про присутність щура тебе повідомить повідомлення $(thing)«Цей контейнер погано пахне»$(). Важливо зазначити, що якщо ти відкриєш і знову запечатаєш корччагу, перш ніж вийти з екрана, це ніколи не привабить шкідників."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "cutting",
+            "title": "Зрізання",
+            "text": "Насамкінець ти можеш зрізати зіпсовану частину їжі, взявши $(item)ніж$() курсором і $(item)натиснувши правою кнопкою миші$() по частково зіпсованому стосу їжі у своєму інвентарі.$(br2)Це скине ступінь псування, але ти втратиш частину стосу предметів пропорційно до того, наскільки сильно він зіпсувався."
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Докладніше",
+            "anchor": "relations",
+            "entries": [
+                "tfg:cooking/food_and_water",
+                "tfg:cooking/cooking_methods",
+                "tfg:craftsmanship/pottery",
+                "tfg:craftsmanship/barrels",
+                "tfg:logistics/storage"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "priority": true,
+    "sortnum": 1,
+    "extra_recipe_mappings": {
+        "tfc:powder/salt": 14,
+        "firmalife:drying_mat": 17,
+        "firmalife:solar_drier": 18,
+        "tag:firmalife:food_shelves": 23,
+        "tag:firmalife:hangers": 23,
+        "tfclunchbox:lunchbox": 24,
+        "tfclunchbox:cooling_lunchbox": 24,
+        "tfclunchbox:electric_lunchbox": 24,
+        "tfg:mv_food_refrigerator": 25,
+        "tfg:hv_food_refrigerator": 25,
+        "tfg:ev_food_refrigerator": 25,
+        "tfg:iv_food_refrigerator": 25,
+        "tfg:food/meal_bag": 26,
+        "tfg:food/freeze_dried_fruit": 26,
+        "tfg:food/calorie_paste": 26,
+        "tfg:dry_ice": 26,
+        "tfg:foil_pack": 26
+    }
+}

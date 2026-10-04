@@ -1,0 +1,65 @@
+{
+    "name": "Приготування варення",
+    "category": "tfg:cooking",
+    "icon": "tfc:textures/item/jar/cloudberry.png",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "anchor": "index",
+            "text": "$(li)$(bold)$(l:cooking/jam#jarring_station)Станція консервації$()\n$(li)$(bold)$(l:cooking/jam#shelves)Полиці для банок$()\n$(li)$(bold)$(l:cooking/jam#jarbnets)Шафка$()"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tag:tfg:foods/all_jams",
+            "anchor": "jam",
+            "title": "Консервування варення",
+            "text": "$(thing)Банки$() використовуються для тривалого зберігання фруктів у вигляді варення. Банки починаються як $(thing)порожні банки$(), які отримують за допомогою $(thing)склоробства$(). Потім до них додається $(thing)кришка для банки$(), утворюючи $(thing)порожню банку з кришкою$().$(br)У казані зварити $(thing)цукор$() із 2–4 шматочками $(thing)фруктів$(). Коли рецепт буде готовий, натисни $(item)$(k:key.use)$() з порожньою банкою з кришкою в руці, щоб створити $(thing)запечатану банку варення$()."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "firmalife:vat,firmalife:jarring_station",
+            "anchor": "jarring_station",
+            "title": "Автоматизація приготування варення",
+            "text": "Варення також можна виробляти у великих кількостях у $(l:cooking/cooking_methods#vat)чані$() за допомогою $(l:cooking/cooking_methods#jarring_station)станції консервації$(). Завантажуй інгредієнти в чан, використовуй редстоун, щоб закрити його, а потім забирай готові продукти зі станції консервації."
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": "Розпечатання",
+            "recipe": "tfc:crafting/unseal_plum_jar",
+            "text": "Спочатку розпечатай банку в сітці створення, щоб використовувати її в рецептах. Кришку повернути неможливо. Розпечатана банка зберігається лише кілька днів!"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tag:tfc:jar_shelves,tag:beneath:jar_shelves",
+            "anchor": "shelves",
+            "title": "Полиці для банок",
+            "text": "$(thing)Полиці для банок$() можна прикріплювати до суцільних стін. Їх можна встановлювати безпосередньо або натисканням по вже встановленому блоці банок. Верхня частина полиці для банок вважається суцільною поверхнею, на яку можна ставити предмети, інші банки або блоки.$(br)Банки можна розміщувати на будь-яких суцільних поверхнях за допомогою $(item)$(k:key.use)$(). Один блок може містити чотири банки будь-якого типу."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tag:firmalife:jarbnets",
+            "anchor": "jarbnet",
+            "title": "Шафи",
+            "text": "Шафка — це декоративний блок для зберігання $(item)банок$(), $(item)свічок$() і $(item)глечиків$(). Її можна відкривати та закривати, натискаючи по ній порожньою рукою з утримуваною клавішею $(item)$(k:key.sneak)$(). Якщо всередині є свічки, їх можна запалити, щоб вони давали невелику кількість світла."
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Докладніше",
+            "anchor": "relations",
+            "entries": [
+                "tfg:cooking/food_and_water",
+                "tfg:cooking/cooking_methods",
+                "tfg:cooking/decay",
+                "tfg:cooking/sandwiches"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 8,
+    "extra_recipe_mappings": {
+        "tag:tfg:foods/all_jams": 1,
+        "tag:tfc:jar_shelves": 5,
+        "tag:beneath:jar_shelves": 5,
+        "tag:firmalife:jarbnets": 6
+    }
+}

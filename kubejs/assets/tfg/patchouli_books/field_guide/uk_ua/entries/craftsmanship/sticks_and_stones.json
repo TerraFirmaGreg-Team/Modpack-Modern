@@ -1,0 +1,203 @@
+{
+	"name": "Палиці та каміння",
+	"category": "tfg:craftsmanship",
+	"icon": "tfg:flint_arrow_head",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "У $(tfg) перші речі, які ти можеш отримати, є палиці, гілочки, кремінь та уламки породи. Їх можна знайти майже в будь-якому кліматі, розкиданими по землі. Використовуй $(item)$(k:key.use)$() або ламай їх, щоб підібрати."
+		},
+		{
+			"type": "patchouli:multiblock",
+			"multiblock": {
+				"pattern": [
+					[
+						"     ",
+						"     ",
+						"  0  ",
+						"     ",
+						"     "
+					],
+					[
+						"1    ",
+						" 2  4",
+						"   3 ",
+						" 4   ",
+						"6   5"
+					],
+					[
+						"GGGGG",
+						"GGGGG",
+						"GGGGG",
+						"GGGGG",
+						"GGGGG"
+					]
+				],
+				"mapping": {
+					"G": "tfc:grass/sandy_loam",
+					"1": "tfc:rock/loose/limestone[count=1]",
+					"2": "tfc:rock/loose/limestone[count=2]",
+					"3": "tfc:rock/loose/dolomite[count=3]",
+					"4": "tfc:groundcover/stick",
+					"5": "#tfc:twigs",
+					"6": "tfc:groundcover/flint"
+				}
+			},
+			"name": "Приклад",
+			"text": "Розсип звичайних паличок і каменів.",
+			"enable_visualize": false
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "knapping",
+			"text": "Окрім збирання палиць і гілочок по землі, палиці також можна отримати, ламаючи листя кулаком. Коли ти матимеш достатньо каміння та палиць, будеш готовий почати $(thing)оббивання$(). Оббивання — це процес, під час якого два камені б’ються один об одного, щоб надати одному з них певної форми. Щоб почати оббивання, спочатку візьми в руку щонайменше два камені, а потім клацни правою кнопкою миші в повітрі — це відкриє $(thing)інтерфейс оббивання$()."
+		},
+		{
+			"type": "patchouli:image",
+			"images": [
+				"tfc:textures/gui/book/gui/rock_knapping.png"
+			],
+			"text": "Інтерфейс обробки",
+			"border": false
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Щоб оббити потрібний предмет, прибирай квадрати, доки не утвориться потрібний візерунок, натискаючи на них $(item)$(k:key.attack)$(). Наприклад, створи лезо ножа, відтворивши рецепт, показаний праворуч.$(br2)Як і в рецептах створення, розташування потрібного візерунка не впливає на результат, а деякі рецепти мають кілька допустимих варіантів."
+		},
+		{
+			"type": "tfg:rock_knapping_recipe",
+			"anchor": "knife",
+			"recipes": [
+				"tfg:rock_knapping/stone_knife_head",
+				"tfg:rock_knapping/stone_knife_head_1",
+				"tfg:rock_knapping/stone_knife_head_2",
+				"tfg:rock_knapping/stone_knife_head_3"
+			],
+			"text": "Лезо ножа, створене з декількох різних типів каменю."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "flint",
+			"title": "Обробка кременю",
+			"item": "gtceu:flint_hoe_head,gtceu:flint_knife_head,gtceu:flint_shovel_head,gtceu:flint_axe_head,gtceu:flint_sword_head,tfg:flint_club_head,tfg:flint_arrow_head",
+			"text": "Кремінь можна використовувати для виготовлення багатьох тих самих предметів, які можна оббивати з каменю, а також унікальних предметів, як-от вістря стріл. За характеристиками крем’яні предмети часто значно кращі за кам’яні. Кремінь легко знайти на дні річок та озер, де він трапляється у вигляді уламків кременю на поверхні."
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "gtceu:shaped/knife_stone",
+			"text": "Усі кам’яні головки інструментів можна поєднати з палицею, гілочкою, кісткою або іншим держаком, щоб зібрати з них інструмент.$(br2)Кам’яний ніж можна використовувати для добування $(thing)соломи$(), ламаючи траву."
+		},
+		{
+			"type": "tfg:rock_knapping_recipe",
+			"recipes": [
+				"tfg:rock_knapping/stone_axe_head"
+			],
+			"text": "$(thing)Сокиру$() можна використовувати, щоб зрубати ціле дерево разом із колодами та листям. Сокира необхідна для отримання $(l:the_world/wild_fruits#fruit_trees)саджанців плодових дерев$()."
+		},
+		{
+			"type": "tfg:rock_knapping_recipe",
+			"recipes": [
+				"tfg:rock_knapping/stone_shovel_head"
+			],
+			"text": "$(thing)Лопати$() можна використовувати для копання блоків ґрунтового типу. Вони також можуть використовуватися для створення $(thing)стежок$(), $(item)використовуючи$() їх на $(thing)землі$() або $(thing)траві$()."
+		},
+		{
+			"type": "tfg:rock_knapping_recipe",
+			"recipes": [
+				"tfg:rock_knapping/stone_hoe_head",
+				"tfg:rock_knapping/stone_hoe_head_1",
+				"tfg:rock_knapping/stone_hoe_head_2"
+			],
+			"text": "$(thing)Мотика$() — корисний інструмент для $(l:agriculture/growing_crops)землеробства$(), але ним також можна зрізати листя та інші рослинні матеріали, як і ножами."
+		},
+		{
+			"type": "tfg:rock_knapping_recipe",
+			"recipes": [
+				"tfg:rock_knapping/stone_hammer_head"
+			],
+			"text": "$(thing)Молот$() можна використовувати як зброю для $(l:game_mechanics/damage_types)дроблення$(), але важливіше те, що він використовується для $(l:craftsmanship/anvils)кування$()."
+		},
+		{
+			"type": "tfg:rock_knapping_recipe",
+			"recipes": [
+				"tfc:rock_knapping/javelin_head_sedimentary",
+				"tfc:rock_knapping/javelin_head_metamorphic",
+				"tfc:rock_knapping/javelin_head_igneous_extrusive",
+				"tfc:rock_knapping/javelin_head_igneous_intrusive"
+			],
+			"text": "Нарешті, $(thing)спис$() можна використовувати як примітивну зброю: кидати у цілі або застосовувати як зброю для $(l:game_mechanics/damage_types)колючих$() атак."
+		},
+		{
+			"type": "patchouli:relations",
+			"title": "Докладніше",
+			"anchor": "relations",
+			"entries": [
+				"tfg:the_world/wild_fruits",
+				"tfg:agriculture/growing_crops",
+				"tfg:the_world/earth_tree_index",
+				"tfg:the_world/geology",
+				"tfg:craftsmanship/pottery",
+				"tfg:craftsmanship/metallurgy"
+			]
+		}
+	],
+	"read_by_default": false,
+	"sortnum": 0,
+	"extra_recipe_mappings": {
+		"tfc:stone/knife_head/sedimentary": 6,
+		"tfc:stone/knife_head/metamorphic": 6,
+		"tfc:stone/knife_head/igneous_extrusive": 6,
+		"tfc:stone/knife_head/igneous_intrusive": 6,
+		"tfc:stone/knife/sedimentary": 6,
+		"tfc:stone/knife/metamorphic": 6,
+		"tfc:stone/knife/igneous_extrusive": 6,
+		"tfc:stone/knife/igneous_intrusive": 6,
+		"gtceu:flint_hoe_head": 7,
+		"gtceu:flint_knife_head": 7,
+		"gtceu:flint_shovel_head": 7,
+		"gtceu:flint_axe_head": 7,
+		"gtceu:flint_sword_head": 7,
+		"tfg:flint_club_head": 7,
+		"tfg:flint_arrow_head": 7,
+		"tfc:stone/axe_head/sedimentary": 8,
+		"tfc:stone/axe_head/metamorphic": 8,
+		"tfc:stone/axe_head/igneous_extrusive": 8,
+		"tfc:stone/axe_head/igneous_intrusive": 8,
+		"tfc:stone/axe/sedimentary": 8,
+		"tfc:stone/axe/metamorphic": 8,
+		"tfc:stone/axe/igneous_extrusive": 8,
+		"tfc:stone/axe/igneous_intrusive": 8,
+		"tfc:stone/shovel_head/sedimentary": 9,
+		"tfc:stone/shovel_head/metamorphic": 9,
+		"tfc:stone/shovel_head/igneous_extrusive": 9,
+		"tfc:stone/shovel_head/igneous_intrusive": 9,
+		"tfc:stone/shovel/sedimentary": 9,
+		"tfc:stone/shovel/metamorphic": 9,
+		"tfc:stone/shovel/igneous_extrusive": 9,
+		"tfc:stone/shovel/igneous_intrusive": 9,
+		"tfc:stone/hoe_head/sedimentary": 10,
+		"tfc:stone/hoe_head/metamorphic": 10,
+		"tfc:stone/hoe_head/igneous_extrusive": 10,
+		"tfc:stone/hoe_head/igneous_intrusive": 10,
+		"tfc:stone/hoe/sedimentary": 10,
+		"tfc:stone/hoe/metamorphic": 10,
+		"tfc:stone/hoe/igneous_extrusive": 10,
+		"tfc:stone/hoe/igneous_intrusive": 10,
+		"tfc:stone/hammer_head/sedimentary": 11,
+		"tfc:stone/hammer_head/metamorphic": 11,
+		"tfc:stone/hammer_head/igneous_extrusive": 11,
+		"tfc:stone/hammer_head/igneous_intrusive": 11,
+		"tfc:stone/hammer/sedimentary": 11,
+		"tfc:stone/hammer/metamorphic": 11,
+		"tfc:stone/hammer/igneous_extrusive": 11,
+		"tfc:stone/hammer/igneous_intrusive": 11,
+		"tfc:stone/javelin_head/sedimentary": 12,
+		"tfc:stone/javelin_head/metamorphic": 12,
+		"tfc:stone/javelin_head/igneous_extrusive": 12,
+		"tfc:stone/javelin_head/igneous_intrusive": 12,
+		"tfc:stone/javelin/sedimentary": 12,
+		"tfc:stone/javelin/metamorphic": 12,
+		"tfc:stone/javelin/igneous_extrusive": 12,
+		"tfc:stone/javelin/igneous_intrusive": 12
+	}
+}

@@ -1,0 +1,92 @@
+{
+  "name": "Сироваріння",
+  "category": "tfg:cooking",
+  "icon": "firmalife:textures/item/food/gouda.png",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Щоб виготовити сир, молоко спочатку має $(thing)згорнутися$(). Для згортання молока потрібен $(thing)сичуг$(). Сичуг отримують зі шлунка тварин $(thing)жуйних$(). До них належать $(l:the_world/wild_animals#yak)яки$(), $(l:the_world/wild_animals#cow)корови$(), $(l:the_world/wild_animals#sheep)вівці$(), $(l:the_world/wild_animals#goat)кози$() та $(l:the_world/wild_animals#musk_ox)вівцебики$(). Щоб згорнути молоко, запечатай його в $(item)діжці$() разом із сичугом на 4 години."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "anchor": "curd",
+      "title": "Сирний згусток",
+      "item": {
+        "tag": "tfg:foods/cheese_curds"
+      },
+      "text": "Кисляк можна перетворити на $(thing)кисломолочний сир$(), запечатавши його в діжці разом із $(thing)марляю$(). $(l)Марля не використовується повторно$().$(br)Сирні згустки можна змішати з кількома інгредієнтами та підсмажити, щоб приготувати $(item)сирні шматочки в пивному клярі$(), або витримати, щоб отримати вологий і сухий сир."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "anchor": "cheese_wheel",
+      "title": "Сирні головки",
+      "item": {
+        "tag": "firmalife:cheese_wheels"
+      },
+      "text": "Сирні головки — це блоки, виготовлені із $(item)сирного згустку$(). Щоб збільшити термін зберігання, сирні головки слід $(thing)витримувати$() у $(l:cooking/decay#cellar)льосі$(). Щоб отримати їстівний сир із сирної головки, потрібно зрізати його з головки, натиснувши $(item)$(k:key.use)$() за допомогою $(thing)ножа$(). Якщо головку розрізати або зламати, витримка втрачається!$(br)$(thing)Сухі сири$() виготовляються із сирного згустку та солі, а $(thing)вологі сири$() витримуються в морській воді."
+    },
+    {
+      "type": "tfg:multimultiblock",
+      "text": "Етапи витримки сирної головки: $(thing)свіжий$() + 28 днів → $(thing)витриманий$() + 112 днів → $(thing)вінтажний$().",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "firmalife:gouda_wheel[age=fresh]"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "firmalife:gouda_wheel[age=aged]"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "firmalife:gouda_wheel[age=vintage]"
+          }
+        }
+      ]
+    },
+    {
+      "type": "patchouli:relations",
+      "title": "Докладніше",
+      "anchor": "relations",
+      "entries": [
+        "tfg:cooking/food_and_water",
+        "tfg:cooking/decay",
+        "tfg:the_world/wild_animals"
+      ]
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 5,
+  "extra_recipe_mappings": {
+    "firmalife:rennet": 0,
+    "tag:tfg:foods/cheese_curds": 1,
+    "firmalife:cheesecloth": 1,
+    "tag:firmalife:cheese_wheels": 2
+  }
+}

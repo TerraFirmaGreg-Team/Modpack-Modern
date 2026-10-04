@@ -1,0 +1,225 @@
+{
+    "name": "畜牧業",
+    "category": "tfg:agriculture",
+    "icon": "minecraft:textures/item/egg.png",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "anchor": "index",
+            "text": "$(li)$(bold)$(l:agriculture/animal_husbandry#intro)畜牧業$()$(li)$(bold)$(l:agriculture/animal_husbandry#uses)互動$()$(li2)$(l:agriculture/animal_husbandry#uses_table)互動表$()$(li)$(bold)$(l:agriculture/animal_husbandry#fam iliarity)熟悉度$()$(li)$(bold)$(l:agriculture/animal_husbandry#mammals)哺乳動物$()$(li2)$(l:agriculture/animal_husb andry#wooly_animals)產毛哺乳動物$()$(li2)$(l:agriculture/animal_husbandry#dairy_animals)產乳哺乳動物$()$(li2)$(l:agriculture/animal_husbandry#equines)馬科動物$()$(li2)$(l:agriculture/animal_husband ry#camelides)駱駝科動物$()$(li)$(bold)$(l:agriculture/animal_husbandry#oviparous_animals)卵生動物$()$(li)$(bold)$(l:agriculture/animal_husbandry#feeding_trough)飼料槽$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "intro",
+            "title": "第一天",
+            "text": "$(thing)牲畜$()是指玩家可以馴服並進行繁殖的動物。牲畜分為雄性和雌性。某些動物可以透過外觀來區分性別，例如，雄性豬有獠牙。"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "uses",
+            "title": "互動",
+            "text": "每隻牲畜都有最大互動次數（以「耐久度」表示），超過次數就會「衰老」。剛出生的幼崽，體型較小無法提供任何產出。數天後會成年，就可以繁殖或產奶。繁殖或互動次數過多後，牲畜就會「衰老」，此時只能提供肉用。"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/old_cow.png"
+            ],
+            "text": "這隻牛太老了，不能繁殖。可以從它灰白的毛色和模糊的眼睛中看出。",
+            "border": true
+        },
+        {
+            "type": "tfg:table",
+            "anchor": "uses_table",
+            "strings": [
+                {
+                    "text": "動作",
+                    "bold": true
+                },
+                {
+                    "text": "互動(雄性)",
+                    "bold": true
+                },
+                {
+                    "text": "互動(雄性)",
+                    "bold": true
+                },
+                {
+                    "text": "備註",
+                    "bold": true
+                },
+                {
+                    "text": "交配",
+                    "bold": true
+                },
+                {
+                    "text": "-5"
+                },
+                {
+                    "text": " "
+                },
+                {
+                    "text": "限雄性"
+                },
+                {
+                    "text": "出生",
+                    "bold": true
+                },
+                {
+                    "text": " "
+                },
+                {
+                    "text": "-10"
+                },
+                {
+                    "text": "限雌性"
+                },
+                {
+                    "text": "孵蛋",
+                    "bold": true
+                },
+                {
+                    "text": " "
+                },
+                {
+                    "text": "-1"
+                },
+                {
+                    "text": "受精卵"
+                },
+                {
+                    "text": "產出",
+                    "bold": true
+                },
+                {
+                    "text": " "
+                },
+                {
+                    "text": "-1"
+                },
+                {
+                    "text": "奶、毛等等"
+                }
+            ],
+            "title": "互動表",
+            "legend": [],
+            "columns": 3,
+            "first_column_width": 47,
+            "column_width": 64,
+            "row_height": 20,
+            "left_buffer": 2,
+            "top_buffer": 12,
+            "draw_background": false
+        },
+        {
+            "type": "patchouli:empty",
+            "draw_filler": false
+        },
+        {
+            "type": "patchouli:text",
+            "title": "熟悉度",
+            "anchor": "familiarity",
+            "text": "餵食牲畜能提升它們的$(thing)熟悉度$()。每種動物都有偏好的食物。手持食物$(item)$(k:key.sneak)$()並$(item)$(k:key.use)$()進行餵食。大多數與牲畜的互動都需要一定的熟悉度。熟悉度透過母親遺傳給後代，但會降低。"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/unfamiliarized_pig.png"
+            ],
+            "text": "按住$(item)$(k:key.sneak)$()並看著牲畜時會在頭上顯示其$(thing)親密度$()。",
+            "border": true
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/no_familiarity_decay_pig.png"
+            ],
+            "text": "如果不餵食，親密度每天都會減少一點。但如果親密度高到一定程度（出現一個白色輪廓的心），親密度就不會因此減少了。",
+            "border": true
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/familiarity_limit_pig.png"
+            ],
+            "text": "成年牲畜無法達到 100% 的親密度（出現紅色輪廓的心），只有幼年牲畜可能達到 100% 的親密度。",
+            "border": true
+        },
+        {
+            "type": "patchouli:text",
+            "title": "哺乳動物",
+            "anchor": "mammals",
+            "text": "$(thing)哺乳動物$()是指會經歷懷孕的牲畜。熟悉度超過 30% 且當天餵食過的成年哺乳動物，如果性別不同且彼此靠近就會交配。雌性動物會$(thing)懷孕$()，並在受精後一定天數產仔$(br)。例如，$(l:the_world/wild_animals#pig)豬$()就是哺乳動物。"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "產毛哺乳動物",
+            "anchor": "wooly_animals",
+            "text": "$(thing)產毛哺乳動物$()是指當已成年且有足夠熟悉度，可被$(thing)剪毛$()的$(l:agriculture/animal_husbandry#mammals)哺乳動物$()。比方說$(l:the_world/wild_animals#sheep)綿羊$()、$(l:the_world/wild_animals#alpaca)羊駝$()以及$(l:the_world/wild_animals#musk_ox)麝牛$()。"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "產乳哺乳動物",
+            "anchor": "dairy_animals",
+            "text": "$(thing)產乳哺乳動物$()是只用來製作$(thing)奶$()的哺乳動物。手持桶子點擊雌性產乳動物可以獲得奶。比方說$(l:the_world/wild_animals#goat)山羊$()、 $(l:the_world/wild_animals#cow)乳牛$()以及$(l:the_world/wild_animals#yak)氂牛$()。"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "equines",
+            "title": "馬科動物",
+            "text": "$(thing)馬科動物$()是指可被訓養並騎乘的$(l:agriculture/animal_husbandry#mammals)哺乳動物$()。 熟悉度達到 15% 裝備$(l:agriculture/leather_making)鞍$()就可以騎乘。$(br)$(l:the_world/wild_animals#mule)騾$()與$(l:the_world/wild_animals#donkey)驢$()可以裝上箱子與桶子。手持桶子按住$(item)$(k:key.sneak)$()$(item)$(k:key.use)$()即可移除桶子。手持水桶則能夠從桶排出液體。"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "camelides",
+            "title": "駱駝",
+            "text": "$(thing)駱駝$()是指像$(l:agriculture/animal_husbandry#equines)馬科動物$()一樣可被訓養與騎乘的$(l:agriculture/animal_husbandry#mammals)哺乳動物$()。熟悉度達到 15% 裝備$(l:agriculture/leather_making)鞍$()即可騎乘。駱駝天生步幅高，能夠憑藉強勁的跳躍跨越溝壑。"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": "卵生動物",
+            "anchor": "oviparous_animals",
+            "recipe": "tfc:crafting/nest_box",
+            "text": "$(thing)卵生動物$()並非$(l:agriculture/animal_husbandry#mammals)哺乳動物$()並且牠們透過$(thing)孵蛋$()進行產子。牠們需要$(thing)巢箱$()來孵蛋，牠們能夠找到自己的巢箱。$(br)比方說$(l:the_world/wild_animals#duck)鴨$()、$(l:the_world/wild_animals#quail)鵪鶉$()以及$(l:the_world/wild_animals#chicken)雞$()。"
+        },
+        {
+            "type": "tfg:heat_recipe",
+            "recipe": "tfg:heating/forge_eggs_to_tfc_food_cooked_egg",
+            "text": "$(thing)蛋$()可以煎來吃或煮來吃。雄性動物可以讓雌性受精，使其產下的下一枚卵變為受精卵。受精卵會在其工具提示裡顯示它們還需要多久才能孵化。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "飼料槽",
+            "anchor": "feeding_trough",
+            "item": "tfcgroomer:bismuth_bronze_grooming_station,tfcgroomer:black_bronze_grooming_station,tfcgroomer:bronze_grooming_station,tfcgroomer:copper_grooming_station,tfcgroomer:wrought_iron_grooming_station,tfcgroomer:steel_grooming_station,tfcgroomer:black_steel_grooming_station,tfcgroomer:red_steel_grooming_station,tfcgroomer:blue_steel_grooming_station",
+            "text": "$(thing)飼料槽$()能夠自動餵食工具提示範圍內的動物們。 Higher tier $(l:craftsmanship/metallurgy)Metals$() increase the feeding range.$(br)To add animal feed―and optionally enable automatic breeding―open the troughs interface with $(item)$(k:key.use)$()."
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "延伸閱讀",
+            "anchor": "relations",
+            "entries": [
+                "tfg:agriculture/growing_crops",
+                "tfg:agriculture/weaving",
+                "tfg:the_world/wild_crops",
+                "tfg:the_world/wild_animals",
+                "tfg:agriculture/leather_making",
+                "tfg:agriculture/weaving"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "priority": true,
+    "extra_recipe_mappings": {
+        "tfc:nest_box": 15,
+        "tfcgroomer:bismuth_bronze_grooming_station": 17,
+        "tfcgroomer:black_bronze_grooming_station": 17,
+        "tfcgroomer:bronze_grooming_station": 17,
+        "tfcgroomer:copper_grooming_station": 17,
+        "tfcgroomer:wrought_iron_grooming_station": 17,
+        "tfcgroomer:steel_grooming_station": 17,
+        "tfcgroomer:black_steel_grooming_station": 17,
+        "tfcgroomer:red_steel_grooming_station": 17,
+        "tfcgroomer:blue_steel_grooming_station": 17
+    }
+}

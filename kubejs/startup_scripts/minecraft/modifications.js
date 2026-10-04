@@ -4,7 +4,7 @@
 function registerMinecraftItemModifications(event) {
 	event.modify('minecraft:popped_chorus_fruit', item => {
 		item.foodProperties = food => {
-			food.hunger(2)
+			food.hunger(4)
 			food.saturation(1)
 		}
 	})

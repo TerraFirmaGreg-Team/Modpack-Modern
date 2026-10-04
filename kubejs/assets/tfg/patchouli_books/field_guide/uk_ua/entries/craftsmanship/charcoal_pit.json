@@ -1,0 +1,275 @@
+{
+    "name": "Виготовлення деревного вугілля",
+    "category": "tfg:craftsmanship",
+    "icon": "minecraft:charcoal",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "anchor": "charcoal_pit",
+            "text": "$(thing)Вуглярка$() - це спосіб отримання $(thing)деревного вугілля$(). Вуглярка створюються за допомогою $(thing)деревних колод$(). Щоб розмістити стіс, треба $(item)$(k:key.use)$() та $(item)$(k:key.sneak)$() тримаючи $(thing)колоду$() у руці. Більше колод у стіс можна додати $(item)$(k:key.use)$() маючи у руці ще колоди, або натиснути $(item)$(k:key.use)$() з іншим предметом або порожньою рукою. Буде відкрито інтерфейс стосу колод."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfc:log_pile"
+                }
+            },
+            "name": "Стіс колод",
+            "text": "Для розміщення стосу колод потрібен міцний блок. Ці стоси є легкозаймистими.",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Яма для деревного вугілля створюється шляхом оточення стіс колод суцільними негорючими блоками. Кількість отриманого деревного вугілля пропорційна кількості колод у стосі колод. Щоб розпочати процес випалювання, підпали одну з стос колод, а потім накрий її. Якщо все зроблено правильно, ти побачиш, як із конструкції піднімаються частинки $(thing)диму$().$(br)Ти можеш зробити яму для деревного вугілля будь-якого розміру та форми, головне — щоб вона була повністю ізольована.$(br)За замовчуванням яма для деревного вугілля працюватиме $(t:15 minutes)18 внутрішньоігрових годин.$()"
+        },
+        {
+            "type": "patchouli:image",
+            "width": 1024,
+            "texture_width": 1024,
+            "height": 1024,
+            "texture_height": 1024,
+            "images": [
+                "tfg:textures/gui/field_guide/charcoal_pit/charcoal_pit_0.png",
+                "tfg:textures/gui/field_guide/charcoal_pit/charcoal_pit_1.png",
+                "tfg:textures/gui/field_guide/charcoal_pit/charcoal_pit_2.png",
+                "tfg:textures/gui/field_guide/charcoal_pit/charcoal_pit_3.png",
+                "tfg:textures/gui/field_guide/charcoal_pit/charcoal_pit_4.png"
+            ],
+            "text": "$(bold)Навчальне слайд-шоу:$() Створення ями для деревного вугілля розміром 2×2×2.",
+            "border": true
+        },
+        {
+            "type": "tfg:multimultiblock",
+            "text": "Конструкція одного з варіантів вуглярки",
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "     ",
+                            "     ",
+                            "     ",
+                            "     ",
+                            "     "
+                        ],
+                        [
+                            "XXXXX",
+                            "X   X",
+                            "X   X",
+                            "X   X",
+                            "XXXXX"
+                        ],
+                        [
+                            "XXXXX",
+                            "XXXXX",
+                            "XX0XX",
+                            "XXXXX",
+                            "XXXXX"
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "tfc:dirt/sandy_loam",
+                        "X": "tfc:dirt/sandy_loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "     ",
+                            "     ",
+                            "     ",
+                            "     ",
+                            "     "
+                        ],
+                        [
+                            "XXXXX",
+                            "XYYYX",
+                            "XYYYX",
+                            "XYYYX",
+                            "XXXXX"
+                        ],
+                        [
+                            "XXXXX",
+                            "XXXXX",
+                            "XX0XX",
+                            "XXXXX",
+                            "XXXXX"
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "tfc:dirt/sandy_loam",
+                        "X": "tfc:dirt/sandy_loam",
+                        "Y": "tfc:log_pile"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "     ",
+                            "     ",
+                            "     ",
+                            "     ",
+                            "     "
+                        ],
+                        [
+                            "XXXXX",
+                            "XYYYX",
+                            "XYYYX",
+                            "XYYYX",
+                            "XXXXX"
+                        ],
+                        [
+                            "XXXXX",
+                            "XXXXX",
+                            "XX0XX",
+                            "XXXXX",
+                            "XXXXX"
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "tfc:dirt/sandy_loam",
+                        "X": "tfc:dirt/sandy_loam",
+                        "Y": "tfc:burning_log_pile"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "     ",
+                            " XXX ",
+                            " XXX ",
+                            " XXX ",
+                            "     "
+                        ],
+                        [
+                            "XXXXX",
+                            "XYYYX",
+                            "XYYYX",
+                            "XYYYX",
+                            "XXXXX"
+                        ],
+                        [
+                            "XXXXX",
+                            "XXXXX",
+                            "XX0XX",
+                            "XXXXX",
+                            "XXXXX"
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "tfc:dirt/sandy_loam",
+                        "X": "tfc:dirt/sandy_loam",
+                        "Y": "tfc:log_pile"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "     ",
+                            "     ",
+                            "     ",
+                            "     ",
+                            "     "
+                        ],
+                        [
+                            "XXXXX",
+                            "XYYYX",
+                            "XYYYX",
+                            "XYYYX",
+                            "XXXXX"
+                        ],
+                        [
+                            "XXXXX",
+                            "XXXXX",
+                            "XX0XX",
+                            "XXXXX",
+                            "XXXXX"
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "tfc:dirt/sandy_loam",
+                        "X": "tfc:dirt/sandy_loam",
+                        "Y": "tfc:charcoal_pile[layers=7]"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "charcoal_pile",
+            "text": "Після того як яма для деревного вугілля вигорить і перестане диміти, залишаться $(thing)купи деревного вугілля$(). Купа деревного вугілля може містити до 8 шарів $(thing)деревного вугілля$(). Розкопай її лопатою, щоб отримати деревне вугілля. Купи деревного вугілля можна доповнювати або встановлювати за допомогою $(item)$(k:key.use)$. $(br2)$(bold)ПОРАДА:$() Не накривай яму для деревного вугілля щільним матеріалом, як-от кругляк, інакше він може обвалитися та знищити деревне вугілля після завершення процесу."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "coke_oven",
+            "title": "Коксова піч",
+            "text": "$(thing)Коксова піч$() — це багатоблокова конструкція, яка може автоматично перетворювати колоди на деревне вугілля, а вугілля — на $(item)кокс$(), одночасно виробляючи $(thing)креозот$(). Ця конструкція стає доступною після першого отримання $(l:craftsmanship/bloomery)кованого заліза$(), і рекомендується створити її якомога швидше. Коксова піч значно покращує процес виробництва деревного вугілля, а і кокс, і креозот будуть необхідні для подальшого розвитку."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "AAA",
+                        "A2A",
+                        "AAA"
+                    ],
+                    [
+                        "A1A",
+                        "C A",
+                        "AAA"
+                    ],
+                    [
+                        "AAA",
+                        "A0A",
+                        "AAA"
+                    ]
+                ],
+                "mapping": {
+                    "0": "gtceu:coke_oven_hatch[facing=down]",
+                    "1": "gtceu:coke_oven_hatch[facing=west]",
+                    "2": "gtceu:coke_oven_hatch[facing=up]",
+                    "A": "gtceu:coke_oven_bricks",
+                    "C": "gtceu:coke_oven[facing=north]"
+                }
+            },
+            "text": "Приклад коксової печі з трьома люками, придатними для вводу предметів, виводу предметів та виводу рідини.",
+            "enable_visualize": true
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Поради щодо коксової печі",
+            "text": "$(li)Коксова піч може мати до 4 люків, які замінюють будь-яку коксову цеглу.$(li)Коксова піч має бути порожнім всередині.$(li)Люк для вводу коксової печі може забиватися предметом, що є результатом виробництва. Щоб цього уникнути, встанови предметну трубу, спрямовану до люка для вводу, та задай напрямок її потоку. Для подачі предметів у цю трубу можна використовувати лійку або жолоб.$(li)Ящики можуть зберігати колоди, на відміну від скринь.$(li)Зберігай увесь свій креозот!"
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Докладніше",
+            "anchor": "relations",
+            "entries": [
+                "tfg:craftsmanship/pit_kiln",
+                "tfg:craftsmanship/metallurgy",
+                "tfg:craftsmanship/charcoal_forge",
+                "tfg:craftsmanship/crucible",
+                "tfg:craftsmanship/blast_furnace",
+                "tfg:craftsmanship/bloomery",
+                "tfg:craftsmanship/anvils",
+                "tfg:craftsmanship/glassworking"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 5,
+    "extra_recipe_mappings": {
+        "gtceu:coke_oven_hatch": 7,
+        "gtceu:coke_oven_bricks": 7,
+        "gtceu:coke_oven": 7
+    }
+}

@@ -1,0 +1,225 @@
+{
+	"name": "Фауна Безодні",
+	"category": "tfg:beneath",
+	"icon": "tfc:textures/item/food/pork.png",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "index",
+			"text": "Життя існує навіть глибоко внизу! У Безодні мешкає чимало істот — деякі дружні, а деякі вороже налаштовані.$(br2)У цьому розділі перелічено найцікавіших істот, яких можна тут зустріти.$(br)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(li)$(bold)Пасивні$()\n$(li2)$(l:beneath/beneath_fauna#axolotl)Аксолотль$()\n$(li2)$(l:beneath/beneath_fauna#frog)Жаба$()\n$(li2)$(l:beneath/beneath_fauna#mammutilation)Мамутиляція$()\n$(li2)$(l:beneath/beneath_fauna#red_elk)Червоний лось$()\n$(li2)$(l:beneath/beneath_fauna#zombie_horse)Зомбі-кінь$()\n$(li)$(bold)$(l:agriculture/jellies)Джеллі$()\n$(li2)$(l:beneath/beneath_fauna#ice_jellie)Крижаний$()\n$(li2)$(l:beneath/beneath_fauna#plant_jellie)Рослинний$()\n$(li2)$(l:beneath/beneath_fauna#glowberry_jellie)Світлоягідний$()\n$(li2)$(l:beneath/beneath_fauna#spring_jellie)Джерельний$()\n$(li2)$(l:beneath/beneath_fauna#lava_jellie)Лавовий$()\n$(li2)$(l:beneath/beneath_fauna#biotite_jellie)Біотитовий$()\n$(li2)$(l:beneath/beneath_fauna#latex_jellie)Латексний$()\n$(br)$(o)(Продовження на наступній сторінці...)$()"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(li)$(bold)Ворожі$()\n$(li2)$(l:beneath/beneath_fauna#crocodile)Крокодил$()\n$(li2)$(l:beneath/beneath_fauna#piglin)Піґлін$()\n$(li2)$(l:beneath/beneath_fauna#phantom)Примари$()\n$(li2)$(l:beneath/beneath_fauna#kaolin_klayze)Каоліновий Клейз$()\n$(li2)$(l:beneath/beneath_fauna#graphite_glayze)Графітовий Глейз$()\n$(li2)$(l:beneath/beneath_fauna#cliff_hanger)Скельопідвісник$()\n$(li2)$(l:beneath/beneath_fauna#leaf_hanger)Листопідвісник$()\n$(li2)$(l:beneath/beneath_fauna#endermen)Ендермени$()\n$(li2)$(l:beneath/beneath_fauna#spectre)Спектр$()\n$(li2)$(l:beneath/beneath_fauna#wicked)Зловісник$()\n$(li2)$(l:beneath/beneath_fauna#ghoul)Гуль$()\n$(li2)$(l:beneath/beneath_fauna#bewereager)Вовкулака$()"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "minecraft:axolotl",
+			"scale": 0.5,
+			"name": "Аксолотль",
+			"anchor": "axolotl",
+			"text": "$(thing)Аксолотлів$() можна знайти у верхньому та середньому шарах, зазвичай вони плавають у водоймах."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfc:frog",
+			"scale": 1,
+			"name": "Жабка",
+			"anchor": "frog",
+			"text": "$(thing)Жаб$() можна знайти у верхньому та середньому шарах. Їх можна приручити та їсти."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "species:mammutilation",
+			"scale": 0.5,
+			"name": "Маммутиляція",
+			"anchor": "mammutilation",
+			"text": "$(thing)Мамутиляції$() — це неживі мамонти. Ти можеш позбавити їх страждань і отримати $(item)вовну$()."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "beneath:red_elk",
+			"scale": 0.7,
+			"name": "Червоний лось",
+			"anchor": "red_elk",
+			"text": "$(thing)Червоні лосі$() водяться поблизу самого дна, зазвичай плаваючи в лаві. З них можна отримати $(item)лавостійкі шкури$()."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "minecraft:zombie_horse",
+			"scale": 0.7,
+			"name": "Зомбі-кінь",
+			"anchor": "zombie_horse",
+			"text": "$(thing)Зомбі-коней$() не можна приручити або осідлати, але вони можуть приводити в дію $(item)тваринний привід$()."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "jellies:ice",
+			"scale": 0.6,
+			"name": "Крижаний джеллі",
+			"anchor": "ice_jellie",
+			"text": "$(thing)Крижанні$() $(l:agriculture/jellies)джеллі$() мешкають у біомі $(thing)Соляних печер$(). Вони охолоджують гравця поблизу."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "jellies:plant",
+			"scale": 0.6,
+			"name": "Рослинний джеллі",
+			"anchor": "plant_jellie",
+			"text": "$(thing)Рослинні$() $(l:agriculture/jellies)джеллі$() мешкають у біомах $(thing)Вологих боліт$() та $(thing)Тернистих гаїв$(). Їхні слизові кульки можна використовувати як $(thing)зелений$() компост."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "jellies:glowberry",
+			"scale": 0.6,
+			"name": "Світлоягідний джеллі",
+			"anchor": "glowberry_jellie",
+			"text": "$(thing)Світлоягідні$() $(l:agriculture/jellies)джеллі$() мешкають у біомі $(thing)Пишної западини$(). Їхні слизові кульки можна виварити, щоб отримати $(item)цукор$()."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "jellies:spring",
+			"scale": 0.6,
+			"name": "Джерельний джеллі",
+			"anchor": "spring_jellie",
+			"text": "$(thing)Джерельні$() $(l:agriculture/jellies)джеллі$() мешкають у біомі $(thing)Геотермальних джерел$(). Їхні слизові кульки є поновлюваним джерелом $(item)джерельної води$()."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "jellies:biotite",
+			"scale": 0.6,
+			"name": "Біотитовий джеллі",
+			"anchor": "biotite_jellie",
+			"text": "$(thing)Біотитові$() $(l:agriculture/jellies)джеллі$() мешкають у нижньому шарі. Їхні слизові кульки є поновлюваним джерелом $(item)калію$(), $(item)магнію$() та $(item)фтору$()."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "jellies:lava",
+			"scale": 0.6,
+			"name": "Лавовий джеллі",
+			"anchor": "lava_jellie",
+			"text": "$(thing)Лавові$() $(l:agriculture/jellies)джеллі$() мешкають у нижньому шарі. Вони нагрівають гравця поблизу, що може стати в пригоді, якщо ти живеш у холодному місці."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "jellies:latex",
+			"scale": 0.6,
+			"name": "Латексний джеллі",
+			"anchor": "latex_jellie",
+			"text": "$(thing)Латексні$() $(l:agriculture/jellies)джеллі$() можуть розмножуватися лише від $(thing)рослинної джеллі$() та $(thing)лавової джеллі$(). Їхні слизові кульки є джерелом $(item)латексу$()."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "minecraft:piglin",
+			"scale": 0.9,
+			"name": "Піглін",
+			"anchor": "piglin",
+			"text": "Піґлінів можна знайти майже в кожному біомі Безодні. З ними можна $(l:beneath/beneath_mechanics#piglins)торгуватися$(), як у ванільній грі."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfc:crocodile",
+			"scale": 0.5,
+			"name": "Крокодил",
+			"anchor": "crocodile",
+			"text": "$(thing)Крокодилів$() можна знайти у верхньому та середньому шарах, де вони чатують у засідці!"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "minecraft:phantom",
+			"scale": 0.4,
+			"name": "Примари",
+			"anchor": "phantom",
+			"text": "$(thing)Примари$() природно з’являються у середньому та нижньому шарах, незалежно від того, скільки ти спиш. З них можна виготовляти $(l:beneath/beneath_mechanics#clothes)одяг$()."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "primitive_creatures:tfc",
+			"scale": 0.8,
+			"name": "Каоліновий Клейз",
+			"anchor": "kaolin_klayze",
+			"text": "$(thing)Каолінові Клейзи$() можна знайти в біомі $(thing)Пишної западини$(), де вони охороняють $(item)каолінітову глину$()!"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "primitive_creatures:golem_2",
+			"scale": 1,
+			"name": "Графітовий Глейз",
+			"anchor": "graphite_glayze",
+			"text": "$(thing)Графітові Глейзи$() можна знайти в нижніх шарах. Обережно, щоб вони не зіштовхнули тебе в лаву!"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "species:cliff_hanger",
+			"scale": 0.7,
+			"name": "Скельопідвісник",
+			"anchor": "cliff_hanger",
+			"text": "$(thing)Скельопідвісники$() можуть причіплятися до різних стель і хапати гравців, які проходять під ними. Вдар їх атакою дальнього бою, щоб змусити їх відпустити!"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "species:leaf_hanger",
+			"scale": 0.7,
+			"name": "Листопідвісник",
+			"anchor": "leaf_hanger",
+			"text": "$(thing)Листопідвісника$() можна знайти в басейнах із солоною водою, де вони хапають гравців, які потрапляють у їхню пастку. Вдар їх, щоб вони відпустили тебе!"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "endermanoverhaul:nether_wastes_enderman",
+			"scale": 1,
+			"name": "Ендермен",
+			"anchor": "endermen",
+			"text": "Різні види $(thing)ендерменів$() трапляються по всій Безодні. $(item)грибний$() вид цілком пасивний, тоді як усі інші — нейтральні."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "species:spectre",
+			"scale": 0.7,
+			"name": "Спектр",
+			"anchor": "spectre",
+			"text": "$(thing)Спектри$() — це привиди колишніх шукачів пригод, які бувають трьох різновидів. Вони є джерелом $(item)пір’я$()."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "species:wicked",
+			"scale": 0.9,
+			"name": "Зловісник",
+			"anchor": "wicked",
+			"text": "$(thing)Зловісник$() — це привид, який може вселятися в істот поблизу, надаючи їм посилення! Якщо поблизу немає істот, вона використовує атаку дальнього бою. З неї випадає віск."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "species:ghoul",
+			"scale": 0.7,
+			"name": "Гуль",
+			"anchor": "ghoul",
+			"text": "$(thing)Гулі$() — це сліпі монстри, які використовують ехолокацію, щоб знаходити здобич. Вони нейтральні, доки ти не опинишся в межах їхнього «радіуса сканування»!"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "species:bewereager",
+			"scale": 0.8,
+			"name": "Вовкулака",
+			"anchor": "bewereager",
+			"text": "$(thing)Вовкулака$() — це агресивний монстр, який також може стрибнути прямо до тебе! Він накладає на себе посилення та атакує короткими серіями."
+		},
+		{
+			"type": "patchouli:relations",
+			"title": "Докладніше",
+			"anchor": "relations",
+			"entries": [
+				"tfg:the_world/wild_animals",
+				"tfg:agriculture/animal_husbandry",
+				"tfg:agriculture/jellies",
+				"tfg:the_moon/moon_fauna",
+				"tfg:mars/mars_fauna"
+			]
+		}
+	],
+	"read_by_default": true
+}

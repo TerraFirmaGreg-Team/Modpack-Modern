@@ -1,5 +1,5 @@
 {
-  "ftbbackups2.backup.failed": "Ошибка в создании Бекапа",
-  "ftbbackups2.backup.finished": "Создание Бекапа завершено",
-  "ftbbackups2.backup.starting": "Начато сохранение серверного Бекапа"
+  "ftbbackups2.backup.failed": "Не удалось создать резервную копию",
+  "ftbbackups2.backup.finished": "Создание резервной копии успешно завершено",
+  "ftbbackups2.backup.starting": "Запуск создания резервной копии сервера"
 }

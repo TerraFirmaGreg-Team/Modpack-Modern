@@ -1,0 +1,94 @@
+{
+	"name": "Mars Equipment",
+	"category": "tfg:mars",
+	"icon": "tfg:certus_mechanism",
+	"read_by_default": true,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "$(li)$(bold)Melee Weapons$()$(li2)$(l:mars/mars_equipment#nano_saber)Nano Saber$()$(li)$(bold)$(l:mars/mars_equipment#ev_guns)Guns$()$(li2)$(l:mars/mars_equipment#cannon)Shoulder-Fired Field Gun$()$(li2)$(l:mars/mars_equipment#rifles)Advanced Rifles$()$(li2)$(l:mars/mars_equipment#grenades)Grenade Launcher$()$(li2)$(l:mars/mars_equipment#shotguns)Advanced Shotguns$()$(li2)$(l:mars/mars_equipment#pistols)Advanced Pistols and SMGs$()$(li)$(bold)Armor$()$(li2)$(l:mars/mars_equipment#space_suit)Tungstensteel Space Suit$()$(li)$(bold)Shields$()$(li2)$(l:mars/mars_equipment#reinforced_shield)Reinforced Shield$()$(li2)$(l:mars/mars_equipment#corrupted_shield)Corrupted Shield$()$(li2)$(l:mars/mars_equipment#ricoshield)Ricoshield$()"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "gtceu:nano_saber",
+			"anchor": "nano_saber",
+			"text": "The $(item)Nano Saber$() is a powerful melee weapon you’ll be able to unlock once you reach late $(5)EV$(). Simply use $(item)$(k:key.sneak) + $(k:key.use)$() to activate the $(thing)bzzzzz mode$()."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tfg:certus_mechanism",
+			"anchor": "ev_guns",
+			"text": "The $(item)Certus Mechanism$() is used to craft $(5)EV$()-tier guns. A lot of these weapons use ammo that requires Certus Quartz. The moon has huge veins of it, or you can set up an infinite supply via $(l:the_moon/regolith)Lunar Regolith$()."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tacz:modern_kinetic_gun{GunId:\"create_armorer:cannon_40mm_salamander\"},tacz:ammo{AmmoId:\"create_armorer:40mmhe\"}",
+			"title": "Shoulder-Fired Field Gun",
+			"anchor": "cannon",
+			"text": "Want to walk around with a tank cannon? This gun is slow, heavy, but packs a massive punch."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tacz:ammo{AmmoId:\"applied_armorer:hard_core_quartz_bullet\"},tacz:modern_kinetic_gun{GunId:\"applied_armorer:moritz_rifle_ar77\"},tacz:modern_kinetic_gun{GunId:\"applied_armorer:moritz_sniper_semi_k30\"}",
+			"title": "Advanced Rifles",
+			"anchor": "rifles",
+			"text": "These are good balanced weapons if you don't know what to pick."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tacz:ammo{AmmoId:\"applied_armorer:fluix_infused_grenade\"},tacz:modern_kinetic_gun{GunId:\"applied_armorer:moritz_gernade_gl3\"}",
+			"title": "Grenade Launcher",
+			"anchor": "grenades",
+			"text": "If you ever finding yourself fighting large groups of enemies at once, this may be your ticket."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tacz:ammo{AmmoId:\"applied_armorer:cluster_quartz_bullet\"},tacz:modern_kinetic_gun{GunId:\"applied_armorer:moritz_shotgun_sg914\"}",
+			"title": "Advanced Shotguns",
+			"anchor": "shotguns",
+			"text": "Great for blasting close-up targets."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tacz:ammo{AmmoId:\"applied_armorer:etched_quartz_bullet\"},tacz:modern_kinetic_gun{GunId:\"applied_armorer:niklas_smg_freedom\"},tacz:modern_kinetic_gun{GunId:\"applied_armorer:niklas_pistol_double_win_win\"},tacz:modern_kinetic_gun{GunId:\"applied_armorer:niklas_pistol_semi_pride\"},tacz:modern_kinetic_gun{GunId:\"applied_armorer:niklas_pistol_semi_right\"}",
+			"title": "Advanced Pistols and SMGs",
+			"anchor": "pistols",
+			"text": "Want to shoot fast? These guns are perfect."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "ad_astra:netherite_space_helmet,ad_astra:netherite_space_suit,ad_astra:netherite_space_pants,ad_astra:netherite_space_boots",
+			"title": "Tungstensteel Space Suit",
+			"anchor": "space_suit",
+			"text": "With this next space suit, you'll be able to survive both the $(b)coldest$() and the $(c)hottest$() environments that space can throw at you! It will be required to stop you from immediately combusting as soon as you set foot on $(6)Venus$() and $(5)Mercury$().$(br)As a bonus, it also comes with some extra armor and air capacity!"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "tfg:shaped/reinforced_shield_from_shield",
+			"anchor": "reinforced_shield",
+			"text": "The $(item)Reinforced Shield$() deals damage back to attackers, like the Thorns enchant in normal Minecraft. Its crafting materials can be found from $(l:mars/mars_fauna#cruncher)Crunchers$() and $(l:mars/mars_fauna#eater)Eaters$()."
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "tfg:shaped/corrupted_shield",
+			"anchor": "corrupted_shield",
+			"text": "The $(item)Corrupted Shield$() randomly teleports attackers, which can be good for keeping them away from you... but it can also teleport them behind you. You can get the teeth from the $(l:mars/mars_fauna#endermen)Cave Endermen$() under the surface of Mars."
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "tfg:shaped/ricoshield",
+			"anchor": "ricoshield",
+			"text": "The $(item)Ricoshield$() absorbs an amount of damage before releasing a shockwave, hurting anything else nearby. You can find the $(item)Kinetic Core$() as a rare drop from the $(l:mars/mars_fauna#quake)hostile golems$() in the Martian caves."
+		},
+		{
+			"type": "patchouli:relations",
+			"title": "Further Reading",
+			"anchor": "relations",
+			"entries": [
+				"tfg:mars/mars",
+				"tfg:mars/mars_fauna",
+				"tfg:logistics/exploration_gear"
+			]
+		}
+	]
+}

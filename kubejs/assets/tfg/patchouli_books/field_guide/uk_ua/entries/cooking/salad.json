@@ -1,0 +1,40 @@
+{
+    "name": "Приготування салатів",
+    "category": "tfg:cooking",
+    "icon": "tfc:textures/item/food/protein_salad.png",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "anchor": "salad",
+            "text": "$(thing)Салати$() — це страва, яку готують у $(thing)мисці$() максимум із п’яти $(thing)$(n)$(t:#tfc:usable_in_salad)інгредієнтів$().$(br2)Салати — одна з найпростіших страв у приготуванні, для них потрібна лише $(l:cooking/bowls)миска$(). Спочатку візьми $(thing)миску$() в руку та натисни $(item)$(k:key.use)$(), утримуючи $(item)$(k:key.sneak)$(). Відкриється меню салату.$(br)Помісти інгредієнти у верхні слоти, а коли закінчиш, забери салат із нижнього слота."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tag:tfc:salads",
+            "title": "Салати",
+            "link_recipes": false,
+            "text": "Салати — це динамічні страви. Використані інгредієнти визначають, який саме салат буде приготовлено та які $(l:cooking/food_and_water#nutrients)поживні речовини$() він міститиме.$(br2)$(t:§70.75§r§l∑§r§7Інгредієнти§r)Щоб розрахувати поживну цінність, склади поживну цінність усіх інгредієнтів і помнож отриману суму на 0,75."
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Докладніше",
+            "anchor": "relations",
+            "entries": [
+                "tfg:cooking/food_and_water",
+                "tfg:cooking/sandwiches",
+                "tfg:the_world/wild_crops",
+                "tfg:the_world/wild_fruits",
+                "tfg:the_world/wild_animals"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 10,
+    "extra_recipe_mappings": {
+        "tfc:food/fruit_salad": 0,
+        "tfc:food/dairy_salad": 0,
+        "tfc:food/vegetables_salad": 0,
+        "tfc:food/protein_salad": 0,
+        "tfc:food/grain_salad": 0
+    }
+}

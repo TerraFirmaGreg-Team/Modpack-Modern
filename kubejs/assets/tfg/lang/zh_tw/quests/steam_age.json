@@ -1,0 +1,17 @@
+{
+	"quests.steam_age.create_tools.title": "玻璃工藝的工具",
+	"quests.steam_age.metal_casing.subtitle": "原始的機器外殼？",
+	"quests.steam_age.steam_macerator.desc": "功能和石磨完全一樣，所以有了磨石，就沒必要再造這台了。就目前而言，對於取得進展必須二選一。不，這台機器也沒有任何額外的產出。得等到 &6HV&r 版本才有。",
+	"quests.steam_age.red_alloy.title": "紅石合金",
+	"quests.steam_age.crushing_wheel.subtitle": "石磨的表親的老婆的男朋友",
+	"quests.steam_age.miner.title": "自動挖礦",
+	"quests.steam_age.miner.desc.1": "現況有兩種自動挖礦方案！不過它們的效率都不太入眼，因此在設置好並區塊讀取後，去找點事做，別乾坐在那等著。\n\n動力鑽頭要配合挖掘裝置才能向下挖掘，並破壞沿途所有岩石。也可以安裝在火車或礦車的前端來挖掘隧道。",
+	"quests.steam_age.packager.subtitle": "我們家裡有 AE2！",
+	"quests.steam_age.supers.title": "超級箱與超級缸",
+	"quests.steam_age.supers.desc": "若有大量單一物品或流體，這是 &cu&終&6極l&et&可&a攜&bm&式&9容&5器&4儲存解方&r。雖然 &d基礎&r(&8ULV&r)等級的容量較少，但更高等級的超級箱與超級缸的容量驚人！能將任何東西儲存在單一方塊，還無視溫度與酸性影響！\n\n跟桶一樣，超級箱與超級缸在&6破壞時仍保留內容物&r，空合成清空容器也能在滿載時清除溢出。與桶不同的是，超級缸能夠&a安全地容納&r內容物來避免燙傷、凍傷或者飄浮。\n\n渴望&9更多的&r容量嗎？參考看看量子箱、量子缸或者AE2儲存單元吧。",
+	"quests.steam_age.supers.task": "任何超級箱或缸",
+	"quests.steam_age.cobalt_brass.title": "鈷黃銅",
+	"quests.steam_age.large_bronze_boiler.subtitle": "規模化生產蒸氣",
+	"quests.steam_age.large_bronze_boiler.desc.1": "&e大型青銅鍋爐&r生產&b蒸氣&r極為強大的&b多方塊結構&r。它足以驅動&e蒸汽熱離心機&r，前提是添加名為&a助燃劑&r的流體來提高鍋爐的最高溫。\n\n怎麼運作的？提高&c溫度&r就會增加蒸氣產量，但會降低&6效率&r。意思是說燃燒時間變短而增加更多的&8燃料&r消耗。\n\n當溫度升高也更加的耗&9水&r。大多時候這都不成問題，但若使用&b蒸餾水&r而非普通水－蒸餾水能增加蒸氣產量－更高的消耗量將會成為問題。基於安全建議備用些普通&9水&r。\n\n確保鍋爐裡始終有水，否則它會&c爆炸&r。",
+	"quests.steam_age.large_bronze_boiler.desc.2": "這是所有&a助燃物&r與其消耗率的清單：\n\n- 雜酚油 => 溫度提升：&c200&r — 消耗：&b32 mB/s&r — 用於&8ULV&r\n\n- 松脂與楓/樺樹液 => 溫度提升：&c200&r — 消耗：&b32 mB/s&r — 用於&8ULV&r\n\n- 橄欖油 => 溫度提升：&c400&r — 消耗：&b8 mB/s&r — 用於&8ULV&r\n\n- 木煤氣 => 溫度提升：&c400&r — 消耗：&b52 mB/s&r — 用於&7LV&r"
+}

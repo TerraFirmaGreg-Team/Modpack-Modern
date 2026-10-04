@@ -1,0 +1,109 @@
+{
+    "name": "Просіювання та мийний жолоб",
+    "category": "tfg:craftsmanship",
+    "icon": "tfc:pan/empty",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "anchor": "panning",
+            "title": "Промивання",
+            "text": "$(thing)Просіювання$() — це спосіб отримання порошків певних самородних руд під час пошуку в річках та інших водоймах.$(br2)Для просіювання використовуються $(t:#tfc:ore_deposits)$(6)родовища руди$(), які знаходяться в ділянках гравію на дні озер і річок.$(br2)Щоб розпочати просіювання , тобі знадобиться $(item)пусте решето$()."
+        },
+        {
+            "type": "tfg:knapping_recipe",
+            "recipe": "tfc:clay_knapping/pan",
+            "text": "Глину можна $(l:craftsmanship/pottery)оббити$(), надавши їй форми миски, як показано вище."
+        },
+        {
+            "type": "tfg:heat_recipe",
+            "recipe": "tfc:heating/ceramic_pan",
+            "text": "Після того як миску було $(thing)оббито$(), її потрібно $(l:game_mechanics/heating)обпалити$(), щоб отримати $(thing)керамічну миску$().$(br2)Наступне, що тобі потрібно знайти, — це якесь $(t:#tfc:ore_deposits)$(6)родовище руди$(). Родовища руди можуть містити кілька різних видів руди: самородну мідь, самородне срібло, самородне золото та каситерит."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "#tfc:ore_deposits"
+                }
+            },
+            "name": "Приклад родовища",
+            "text": "Родовища руди в гравії.",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Тепер ти можеш почати просіювання!$(br2)$(bold)1.$() Тримаючи миску в руці, використай $(item)$(k:key.use)$() на блоці з родовищем руди.$(br2)$(bold)2.$() Стоячи у воді та тримаючи миску в руці, утримуй $(item)$(k:key.use)$(), щоб почати просіювання.$(br2)$(bold)3.$() Через кілька миттєвостей, якщо тобі пощастить, у твоєму інвентарі може з’явитися трохи порошку руди."
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/panning.png"
+            ],
+            "border": true
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "sluice",
+            "title": "Мийний жолоб",
+            "item": "tag:tfc:sluices",
+            "text": "$(thing)Мийний жолоб$() — це пристрій, який автоматично переробляє $(thing)родовища руди$(), даючи ті самі результати, що й $(l:craftsmanship/panning#panning)просвіювання$(), але з дещо вищою ймовірністю отримання здобичі."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "При встановленні, жолоб займає два блоки. Вода повинна протікати через верхню частину жолобу та виходити знизу. Він може працювати, коли видно, що через нього тече вода. Вода, що надходить у жолоб, має бути останнім блоком водного потоку. Під днищем жолобу має бути порожній блок, куди потрапляє вода."
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/sluice_cross.png"
+            ],
+            "text": "Правильно встановлений мийний жолоб",
+            "border": true
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Щоб скористатися мийним жолобом, кинь предмети у потік води та дай їм пливсти. Вони з'являться у жолобі. Через деякий час, є ймовірність того, що вимиті предмети випадуть на дно."
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/sluice_in_use.png"
+            ],
+            "text": "Мийний жолоб, в якому вимивається пісок",
+            "border": true
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Просіювання та використання мийного жолоба можуть дати кілька можливих предметів: $(thing)порошки руди$(), $(thing)маленькі купки порошку руди$(), $(thing)уламки породи$() та $(thing)самоцвіти$().$(br)Ймовірності отримання певних предметів можна переглянути, відкривши родовище руди в $(emi).",
+            "title": "Очікувані продукти"
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Докладніше",
+            "anchor": "relations",
+            "entries": [
+                "tfg:the_world/geology",
+                "tfg:craftsmanship/sticks_and_stones",
+                "tfg:craftsmanship/pottery",
+                "tfg:craftsmanship/metallurgy"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 15,
+    "extra_recipe_mappings": {
+        "tag:tfc:ore_deposits": 0,
+        "tfc:ceramic/unfired_pan": 1,
+        "tfc:pan/empty": 2,
+        "tfc:pan/filled": 4,
+        "tag:tfc:sluices": 6
+    }
+}

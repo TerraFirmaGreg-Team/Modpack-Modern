@@ -1,0 +1,172 @@
+{
+    "name": "Освітлення",
+    "category": "tfg:game_mechanics",
+    "sortnum": 6,
+    "icon": "tfc:candle",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(li)$(bold)$(l:game_mechanics/lighting#torches)Смолоскипи$()$(li)$(bold)$(l:game_mechanics/lighting#candles)Свічки$()$(li)$(bold)$(l:game_mechanics/lighting#jack_o_lanterns)Гарбузи-ліхтарі$()$(li)$(bold)$(l:game_mechanics/lighting#lamps)Лампи$()$(li)$(bold)$(l:game_mechanics/lighting#portable_light)Переносні джерела світла$()$(li)$(bold)$(l:game_mechanics/lighting#permanent_light)Стаціонарне освітлення$()",
+            "title": "Індекс",
+            "anchor": "index"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "intro",
+            "title": "Вступ",
+            "text": "Існує кілька способів створювати світло в $(tfg_short). Однак майже всі джерела світла не горять вічно!$(br)На відміну від ванільного Minecraft, тобі потрібно стежити за своїми джерелами світла та повторно запалювати їх, коли вони згасають. Що вища якість джерела світла, то довше воно горітиме.$(br)Постійні джерела світла стають доступними значно пізніше, якщо тільки ти не знайдеш креативний спосіб отримати їх раніше."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "torches",
+            "title": "Смолоскипи",
+            "item": "tfc:torch,tfc:dead_torch",
+            "text": "Смолоскипи можна виготовити, нагріваючи палиці або зв’язки палиць у $(l:craftsmanship/firepit)багатті$() чи іншому нагрівальному пристрої.$(br)Смолоскипи горять протягом 3 днів, після чого перетворюються на $(thing)згаслі смолоскипи$(), які можна повторно запалити, клацнувши по них смолоскипом або використавши на них інструмент для розпалювання вогню. Палицею також можна клацнути по смолоскипу, щоб запалити його. Якщо кинути смолоскипи у воду, вони перетворяться на $(thing)деревну золу$() або $(thing)палиці$()."
+        },
+        {
+            "type": "tfg:multimultiblock",
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:torch"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:dead_torch"
+                    }
+                }
+            ],
+            "name": "",
+            "text": "Смолоскипи можна кидати на купи колод або $(l:craftsmanship/pit_kiln)земляні пичі$(), щоб підпалити їх.",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "candles",
+            "title": "Свічки",
+            "item": "tag:tfc:candles",
+            "text": "Свічки виготовляють із $(thing)воску$() або $(thing)тваринного жиру$() і вони горять протягом 30 днів, після чого їх потрібно повторно запалювати.$(br)Свічки можна розміщувати та запалювати на землі або в $(l:cooking/jam#jarbnet)шафках$(). Кількість розміщених свічок впливає на рівень світла, який вони випромінюють."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "#tfc:candles[candles=1,lit=true]"
+                }
+            },
+            "text": "Свічки можна $(thing)фарбувати$() у всі 16 кольорів!",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "jack_o_lanterns",
+            "title": "Світильник Джека",
+            "item": "tag:tfg:carved_pumpkins,tag:tfg:carved_pumpkins/lit",
+            "text": "Джек-ліхтарі — це запалені $(thing)різьблені гарбузи$(), які горять протягом 4,5 дня, після чого знову перетворюються на різьблені гарбузи.$(br)Гарбузи можна вирізати, тримаючи їх у руці та використовуючи $(l:craftsmanship/sticks_and_stones)оббивання$()."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "#tfg:carved_pumpkins/lit"
+                }
+            },
+            "name": "",
+            "text": "Є багато кумедних варіантів дизайну джек-ліхтарів на вибір!",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "lamps",
+            "title": "Лампи",
+            "item": "tag:tfc:lamps",
+            "text": "Лампи — це довготривалі джерела світла, які спалюють рідке паливо. Лампи зберігають паливо навіть після того, як їх зламати. Заправляти лампи можна автоматично за допомогою $(thing)труб$() або власноруч за допомогою $(l:cooking/drinking_containers)ємностей для рідини$().$(br)Переглянути придатні для ламп види палива можна в $(emi), відкривши лампу. $(thing)Лава$() горітиме вічно, але для цього її потрібно залити в $(item)лампу з синьої сталі$(). $(thing)Рідкий світлокамінь$() працює так само, але підходить для будь-якої лампи."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "Y"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "Y": "#tfc:lamps[hanging=true,lit=true]"
+                }
+            },
+            "text": "Лампи можна підвішувати до блоків. $(thing)Ланцюги$() та $(thing)труби$() — особливо вдалі варіанти.",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "portable_light",
+            "title": "Переносні джерела світла",
+            "text": "Ти також можеш носити джерела світла в руці, щоб освітлювати простір навколо себе, наприклад, тримаючи $(item)Смолоскип$() у $(thing)другій руці$().$(br2)Щоб звільнити слот другої руки, $(l:game_mechanics/lighting#lamps)лампи$() можна носити у слоті $(thing)Спини$() в  $(l:craftsmanship/clothing#curios)цікавинках$(), а $(l:logistics/exploration_gear#digger_helmet)Шахтарська каска$() — це різновид шоломів, які також забезпечують освітлення."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "permanent_light",
+            "title": "Стаціонарне освітлення",
+            "item": "minecraft:glowstone",
+            "text": "До того часу, як ти виготовиш $(item)Екстрактор$() і $(item)Рідинний затверджувач$(), ти вже зможеш почати виробляти різноманітні декоративні постійні джерела світла з $(thing)Рідкого світлокаменю$() та $(thing)Блоків світлокаменю$().$(br)Окрім розвитку технологій, існують і творчі способи освітлення території, як-от $(l:agriculture/aqueducts)Лавові акведуки$()."
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Докладніше",
+            "anchor": "relations",
+            "entries": [
+                "tfg:craftsmanship/sticks_and_stones",
+                "tfg:craftsmanship/barrels",
+                "tfg:craftsmanship/firepit",
+                "tfg:craftsmanship/building_materials",
+                "tfg:cooking/jam",
+                "tfg:agriculture/aqueducts",
+                "tfg:logistics/exploration_gear"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "extra_recipe_mappings": {
+        "tag:tfc:candles": 4,
+        "tag:tfg:carved_pumpkins": 6,
+        "tag:tfg:carved_pumpkins/lit": 6,
+        "tag:tfc:lamps": 8,
+        "minecraft:glowstone": 10
+    }
+}

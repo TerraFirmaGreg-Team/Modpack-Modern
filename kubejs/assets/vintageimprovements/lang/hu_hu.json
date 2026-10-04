@@ -1,13 +1,10 @@
 {
-	"block.vintageimprovements.belt_grinder": "Szalagcsiszoló",
 	"block.vintageimprovements.centrifuge": "Centrifuga",
-	"block.vintageimprovements.curving_press": "Hajlítóprés",
-	"block.vintageimprovements.helve_hammer": "Farkaskalapács",
 	"block.vintageimprovements.spring_coiling_machine": "Rugótekercselő gép",
 	"block.vintageimprovements.sulfur_block": "Kénblokk",
-	"block.vintageimprovements.vacuum_chamber": "Vákuumkamra",
 	"block.vintageimprovements.vanadium_block": "Vanádiumblokk",
-	"block.vintageimprovements.vibrating_table": "Rázóasztal",
+	"fluid.vintageimprovements.sulfur_dioxide": "Kén-dioxid",
+	"fluid.vintageimprovements.sulfur_trioxide": "Kén-trioxid",
 	"item.vintageimprovements.aluminum_sheet": "Alumíniumlemez",
 	"item.vintageimprovements.cast_iron_sheet": "Öntöttvaslemez",
 	"item.vintageimprovements.cobalt_sheet": "Kobaltlemez",
@@ -74,14 +71,10 @@
 	"vintageimprovements.ponder.helve_hammer.text_7": "Helyezd vagy dobd a tárgyat az üllő vagy kovácsasztal tetejére",
 	"vintageimprovements.ponder.helve_hammer.text_8": "A megdott kalapács ütések után, a végeredményt megkaphatod úgy, hogy jobb kattintasz rá",
 	"vintageimprovements.ponder.helve_hammer.text_9": "A tárgyakat automatikusan be lehet tenni vagy éppen kivenni",
-	"vintageimprovements.ponder.vibrating_table.text_4": "Oldalról meglehet hajtani egy tengellyel",
 	"vintageimprovements.recipe.assembly.any": "Bármelyik",
 	"vintageimprovements.recipe.assembly.hammering": "Farkaskalapáccsal megmunkálható",
 	"vintageimprovements.recipe.assembly.high": "Nagy",
 	"vintageimprovements.recipe.assembly.low": "Alacsony",
 	"vintageimprovements.recipe.assembly.medium": "Közepes",
-	"vintageimprovements.recipe.assembly.speed": "Sebesség",
-	"vintageimprovements.recipe.hammering": "Kalapálás",
-	"vintageimprovements.recipe.pressurizing": "Túlnyomás alá helyezés",
-	"vintageimprovements.recipe.vacuumizing": "Vákuumolás"
+	"vintageimprovements.recipe.assembly.speed": "Sebesség"
 }

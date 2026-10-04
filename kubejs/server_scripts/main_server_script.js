@@ -36,6 +36,7 @@ ServerEvents.tags('item', event => {
 	registerMacawsForTFCItemTags(event)
 	registerMinecraftItemTags(event)
 	registerModernMarkingsItemTags(event)
+	registerMoreRedItemTags(event)
 	registerMTSItemTags(event)
 	registerHotOrNotItemTags(event)
 	registerPrimitiveCreaturesItemTags(event)

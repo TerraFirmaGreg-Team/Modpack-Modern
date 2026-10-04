@@ -977,6 +977,38 @@
 			x: 4.0d
 			y: 7.0d
 		}
+		{
+			dependency_requirement: "one_completed"
+			description: ["{quests.insane_voltage.venus.desc}"]
+			id: "5899CCAFC067D029"
+			subtitle: "{quests.insane_voltage.venus.subtitle}"
+			tasks: [{
+				dimension: "ad_astra:venus"
+				icon: "ad_astra:venus_globe"
+				id: "0027444260D382AF"
+				title: "{quests.insane_voltage.venus.task}"
+				type: "dimension"
+			}]
+			title: "{quests.insane_voltage.venus.title}"
+			x: 1.5d
+			y: 7.0d
+		}
+		{
+			dependency_requirement: "one_completed"
+			description: ["{quests.insane_voltage.mercury.desc}"]
+			id: "4B5FD29261A04F49"
+			subtitle: "{quests.insane_voltage.mercury.subtitle}"
+			tasks: [{
+				dimension: "ad_astra:mercury"
+				icon: "ad_astra:mercury_globe"
+				id: "23311A7DF921E876"
+				title: "{quests.insane_voltage.mercury.task}"
+				type: "dimension"
+			}]
+			title: "{quests.insane_voltage.mercury.title}"
+			x: 6.5d
+			y: 7.0d
+		}
 	]
 	subtitle: ["The quests are outdated. They will be update in a later update."]
 	title: "&1IV&r - Insane Voltage &6(WIP)&r"

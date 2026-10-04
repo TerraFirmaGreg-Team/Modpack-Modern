@@ -1,0 +1,11 @@
+{
+	"id": "tfg:restrictive_pipes",
+	"type": "remi:group",
+	"name": "stackgroup.remi.tfg_restrictive_pipes",
+	"contents": [
+		"#forge:small_restrictive_pipes",
+		"#forge:normal_restrictive_pipes",
+		"#forge:large_restrictive_pipes",
+		"#forge:huge_restrictive_pipes"
+	]
+}

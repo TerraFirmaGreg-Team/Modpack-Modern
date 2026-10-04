@@ -69,7 +69,7 @@
 			y: 0.0d
 		}
 	]
-	order_index: 3
+	order_index: 2
 	quest_links: [{
 		id: "6845144F7EA1081D"
 		linked_quest: "24158DEE63DAEB41"
@@ -1288,6 +1288,7 @@
 						"ftbfiltersystem:filter": "or(item(tfg:ulv_universal_circuit)item(tfg:lv_universal_circuit)item(tfg:mv_universal_circuit)item(tfg:hv_universal_circuit)item(tfg:ev_universal_circuit)item(tfg:iv_universal_circuit)item(tfg:luv_universal_circuit)item(tfg:zpm_universal_circuit)item(tfg:uv_universal_circuit)item(tfg:uhv_universal_circuit))"
 					}
 				}
+				title: "{quests.ae2.universal_circuits.task}"
 				type: "item"
 			}]
 			title: "{quests.ae2.universal_circuits.title}"
@@ -1318,6 +1319,7 @@
 		{
 			dependencies: ["25007C5E43D28DB2"]
 			description: ["{quests.ae2.stock_bridge.desc}"]
+			guide_page: "tfg:field_guide tfg:logistics/create"
 			id: "349620A86711E263"
 			tasks: [{
 				id: "2117A53364A22BA6"
