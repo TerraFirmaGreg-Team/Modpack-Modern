@@ -8,7 +8,7 @@ const registerAsticorCartsRecipes = (event) => {
         TFGHelpers.registerMaterialInfo(`tfcastikorcarts:plow/${type}`, [GTMaterials.Brass, 1, GTMaterials.get('hardwood'), 8]);
         TFGHelpers.registerMaterialInfo(`tfcastikorcarts:animal_cart/${type}`, [GTMaterials.Brass, 1, GTMaterials.get('hardwood'), 14]);
 
-        event.shaped(`astikorcarts:wheel/${type}`, [
+        event.shaped(`tfcastikorcarts:wheel/${type}`, [
             'AAA',
             'ABA',
             'AAA'
@@ -24,7 +24,7 @@ const registerAsticorCartsRecipes = (event) => {
         TFGHelpers.registerMaterialInfo(`tfcastikorcarts:plow/${type}`, [GTMaterials.Brass, 1, GTMaterials.Wood, 8]);
         TFGHelpers.registerMaterialInfo(`tfcastikorcarts:animal_cart/${type}`, [GTMaterials.Brass, 1, GTMaterials.Wood, 14]);
         
-        event.shaped(`astikorcarts:wheel/${type}`, [
+        event.shaped(`tfcastikorcarts:wheel/${type}`, [
             'AAA',
             'ABA',
             'AAA'
