@@ -340,17 +340,18 @@ function registerTFGMultiblockRecipes(event) {
 
 	// Pastoral Rancher
 
-	event.recipes.gtceu.shaped('tfg:pastoral_engine', [
-		'ABA',
-		'DCE',
-		'ABA'
-	], {
-		A: Item.of('gtceu:copper_single_cable'),
-		B: '#gtceu:circuits/mv',
-		C: Item.of('gtceu:steel_machine_casing'),
-		D: Item.of('tfcgroomer:red_steel_grooming_station'),
-		E: Item.of('tfcgroomer:blue_steel_grooming_station')
-	}).addMaterialInfo().id('tfg:shaped/pastoral_engine')
+	event.recipes.tfc.no_remainder_shaped_crafting(
+		event.shaped('tfg:pastoral_engine', [
+			'ABA',
+			'DCE',
+			'ABA'
+		], {
+			A: Item.of('gtceu:copper_single_cable'),
+			B: '#gtceu:circuits/mv',
+			C: Item.of('gtceu:steel_machine_casing'),
+			D: ['tfc:metal/shears/red_steel', 'tfc:metal/shears/blue_steel'],
+			E: 'minecraft:bucket'
+		})).id('tfg:shaped/pastoral_engine')
 
 	// Geologic Vulcanizer
 
