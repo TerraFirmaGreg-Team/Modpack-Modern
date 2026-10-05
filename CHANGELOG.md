@@ -102,6 +102,7 @@ The book is no longer split between entries for random addons, or clustered in s
 - Fixed piglin towers having structure voids at the bottom (#5029) @Filiipa
 - Fixed not being able to use fig and rubber fig interchangeably in some ArborFirmaCraft recipes (#5068) @bigtho80
 - Fixed trowels wiping the NBT of placed Toolboxes (#5061) @Redeix
+- Fixed the railgun being able to launch without any energy @jacobtho314
 - Mars mobs are now immune to powder snow @Pyritie
 ### Mods
 #### TerraFirmaCraft
