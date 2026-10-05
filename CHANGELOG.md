@@ -18,8 +18,6 @@
 #### AE2
 - The ME Resonnance Charger can't be rotated any more, so you can't stack them to charge your Budding Certus. The multiblock structure has also changed a little @TomPlop
 - The circuit numbers for Annihilation and Formation Cores and Printed Circuits were changed in the ME Assembler, to allow for easier passive crafting @TomPlop
-- Garnet Sand Line from Crushed Ores had some Circuits changed to allow the line to be run at MV with different recipes for LCR and CR @TomPlop
-- Butyralhyde can now be crafted at MV so you can start the Garnet Sand Line with Ethylhexenal to make Lean Organic Stabilizer @TomPlop
 #### Recipes
 - Laser hatches now need a glass lens instead of a diamond lens @ashleney
 - GregTech covers are now crafting table recipes instead of assembler recipes (#4997) @ashleney
@@ -27,6 +25,8 @@
 - Changed recipes of almost all More Red items and blocks, making them available a lot earlier @Pyritie
 - Chorus-Infused Ceramic Insulation now uses chorus flowers instead of popped chorus fruit @Pyritie
 - Pyrolyze oven now makes as much creosote from bituminous coal as the coke oven does (#5077) @jacobtho314
+- Garnet Sand Line from Crushed Ores had some Circuits changed to allow the line to be run at MV with different recipes for LCR and CR @TomPlop
+- Butyralhyde can now be crafted at MV so you can start the Garnet Sand Line with Ethylhexenal to make Lean Organic Stabilizer @TomPlop
 ### Changes
 #### Field Guide
 The field guide has been completely rewritten! (#5023) @Redeix
