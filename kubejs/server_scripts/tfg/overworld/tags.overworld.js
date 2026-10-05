@@ -573,6 +573,37 @@ function registerTFGOverworldPlacedFeatures(event) {
 		event.add(biome, 'tfg:earth/crop/palm_tree/coconut_patch');
 		event.add(biome, 'tfg:earth/crop/palm_tree/date_patch');
 	});
+
+	// Jellies
+	event.add("tfg:in_biome/underground_decoration", "tfg:earth/entity/herbal_jellie");
+	event.add("tfg:in_biome/underground_decoration", "tfg:earth/entity/phosphorum_jellie");
+	event.add("tfg:in_biome/surface_decoration/mountains", "tfg:earth/entity/rock_jellie");
+	event.add("tfg:in_biome/surface_decoration/old_mountains", "tfg:earth/entity/rock_jellie");
+	event.add("tfg:in_biome/surface_decoration/oceanic_mountains", "tfg:earth/entity/rock_jellie");
+	event.add("tfg:in_biome/surface_decoration/volcanic_mountains", "tfg:earth/entity/rock_jellie");
+	event.add("tfg:in_biome/surface_decoration/volcanic_oceanic_mountains", "tfg:earth/entity/rock_jellie");
+	event.add("tfg:in_biome/surface_decoration/extreme_doline_mountains", "tfg:earth/entity/rock_jellie");
+	event.add("tfg:in_biome/surface_decoration/ice_sheet_mountains", "tfg:earth/entity/rock_jellie");
+	event.add("tfg:in_biome/surface_decoration/ice_sheet_oceanic_mountains", "tfg:earth/entity/rock_jellie");
+	event.add("tfg:in_biome/surface_decoration/ice_shee_mountains_edge", "tfg:earth/entity/rock_jellie");
+	event.add("tfg:in_biome/surface_decoration/ice_sheet_oceanic_mountains_edge", "tfg:earth/entity/rock_jellie");
+	event.add("tfg:in_biome/surface_decoration/glaciated_mountains", "tfg:earth/entity/rock_jellie");
+	event.add("tfg:in_biome/surface_decoration/glaciated_oceanic_mountains", "tfg:earth/entity/rock_jellie");
+	event.add("tfg:in_biome/surface_decoration/glacially_carved_mountains", "tfg:earth/entity/rock_jellie");
+	event.add("tfg:in_biome/surface_decoration/glacially_carved_oceanic_mountains", "tfg:earth/entity/rock_jellie");
+	event.add("tfg:in_biome/surface_decoration/canyons", "tfg:earth/entity/rock_jellie");
+	event.add("tfg:in_biome/surface_decoration/active_shield_volcano", "tfg:earth/entity/rock_jellie");
+	event.add("tfg:in_biome/surface_decoration/dormant_shield_volcano", "tfg:earth/entity/rock_jellie");
+	event.add("tfg:in_biome/surface_decoration/extinct_shield_volcano", "tfg:earth/entity/rock_jellie");
+	event.add("tfg:in_biome/surface_decoration/ancient_shield_volcano", "tfg:earth/entity/rock_jellie");
+	event.add("tfg:in_biome/surface_decoration/sunken_shield_volcano", "tfg:earth/entity/rock_jellie");
+	event.add("tfg:in_biome/surface_decoration/shield_volcano_shore", "tfg:earth/entity/rock_jellie");
+	event.add("tfg:in_biome/surface_decoration/old_shield_volcano_shore", "tfg:earth/entity/rock_jellie");
+	event.add("tfg:in_biome/surface_decoration/ice_sheet_shield_volcano", "tfg:earth/entity/rock_jellie");
+	event.add("tfg:in_biome/surface_decoration/ice_sheet_tuyas", "tfg:earth/entity/rock_jellie");
+	event.add("tfg:in_biome/surface_decoration/ice_sheet_tuyas_edge", "tfg:earth/entity/rock_jellie");
+	event.add("tfg:in_biome/surface_decoration/glaciated_shield_volcano", "tfg:earth/entity/rock_jellie");
+	event.add("tfg:in_biome/surface_decoration/tuyas", "tfg:earth/entity/rock_jellie");
 }
 
 function registerTFGOverworldEntityTypeTags(event) {

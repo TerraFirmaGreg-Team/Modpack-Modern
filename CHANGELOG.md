@@ -42,7 +42,6 @@ The book is no longer split between entries for random addons, or clustered in s
 - Buzzsaw blades are now made in an extruder instead of a lathe (#5015) @Pyritie
 - Added two new stone anvils for pyroxenite and keratophyre (#5015) @Pyritie
 #### Other Changes
-- Added a new beneath structure, the piglin outpost (#5029) @Filiipa
 - Added more mob icons to xaeros minimap (#4941) @Nezumi-Remis
 - Made it easier to find peat by giving it a unique grass texture (#4964) @applenper
 - Added more asphalt road markings, especially for diagonal lines (#4961) @Sacarbeus123
@@ -73,6 +72,7 @@ The book is no longer split between entries for random addons, or clustered in s
 - Added a recipe for framed torches, for builds where you want both torches and infinite light (#5070) @jacobtho314
 - Made astikor cart wheels cheaper @Pyritie
 - The Pastoral Rancher no longer requires fences, so you can make the pen as big as you like, but will still only process animals within the area of the metal casings @Pyritie
+- Overworld Jellies no longer spawn constantly, instead only spawning much more rarely and only as part of worldgen @Pyritie
 ### Bug fixes
 - Fixed some worldgen crashes (#4905, #4900) @Pyritie
 - Fix to repair scrambled pack order at level data which was affecting a few random world-related things such as not being able to collect glass with a gem saw (#4152) @ariedotme

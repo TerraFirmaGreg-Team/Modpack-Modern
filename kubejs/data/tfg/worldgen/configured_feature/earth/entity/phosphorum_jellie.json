@@ -1,0 +1,29 @@
+{
+	"type": "minecraft:random_patch",
+	"config": {
+		"feature": {
+			"feature": {
+				"type": "lithostitched:structure_template",
+				"config": {
+					"template": "tfg:mobs_generic/phosphorum_jellie",
+					"processors": "minecraft:empty"
+				}
+			},
+			"placement": [
+				{
+					"type": "minecraft:heightmap",
+					"heightmap": "WORLD_SURFACE_WG"
+				},
+				{
+					"type": "block_predicate_filter",
+					"predicate": {
+						"type": "tfc:replaceable"
+					}
+				}
+			]
+		},
+		"tries": 4,
+		"xz_spread": 3,
+		"y_spread": 2
+	}
+}
