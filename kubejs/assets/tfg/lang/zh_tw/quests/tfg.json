@@ -1,0 +1,23 @@
+{
+    "quests.tfg": "歡迎來到 TerraFirmaGreg！",
+    "quests.tfg.subtitle": "關於某些模組和模組包本身的資訊。",
+    "quests.tfg.welcome.title": "歡迎來到 TerraFirmaGreg！",
+    "quests.tfg.welcome.subtitle": "生存模組包本該有的樣子",
+    "quests.tfg.welcome.desc": "感謝你開始遊玩 TerraFirmaGreg Modern！\n\n在這個模組包中，你的任務是掌控未經開發的荒野，把它變成一座工業奇境。從撿石頭的卑微起點出發，最終穿越星際太空！",
+    "quests.tfg.create_team.title": "如何建立隊伍？",
+    "quests.tfg.create_team.subtitle": "你和朋友一起玩嗎？",
+    "quests.tfg.create_team.desc": "你可以建立隊伍，一起完成任務。要建立隊伍，請打開物品欄，在左上角選擇畫著 3 個彩色小人的按鈕，接著會開啟一個可以建立隊伍的介面。點擊 §a建立隊伍§r 按鈕，然後為隊伍命名並設定其他參數；成功建立隊伍後，你可以用右上角綠色圓圈中的加號按鈕邀請其他玩家加入。從這時起，你們的任務會同步，任何隊員都能完成它們。祝你好運！",
+    "quests.tfg.capture_territory.title": "如何佔領領地？",
+    "quests.tfg.capture_territory.subtitle": "以及如何載入領地內的區塊",
+    "quests.tfg.capture_territory.desc": "如果你在伺服器上遊玩，可能會想認領你的領地，讓其他玩家無法干擾。使用開啟認領的快捷鍵(預設為「Ctrl+M」)打開視窗，然後按左鍵認領區塊，按右鍵取消認領。\n\n認領數量有上限，所以你不能認領所有地方。你可以按 Shift + 左鍵強制載入(也就是「區塊載入」)一個區塊，按 Shift + 右鍵取消強制載入。如果你有隊伍，認領的區塊會包含整個隊伍。",
+    "quests.tfg.chunk_limit.title": "如何提高區塊載入上限？",
+    "quests.tfg.chunk_limit.desc": "如果你在伺服器上遊玩，預設只能強制載入少量的區塊。\n\n伺服器管理員可以自訂這個數值(請查看 README.txt 檔案！)，但如果你有管理員權限(或啟用了作弊)，也可以使用 &a/ftbchunks admin extra_force_load_chunks @p set X&r，其中 X 是新的上限。",
+    "quests.tfg.field_guide.title": "關於任務的重要資訊！",
+    "quests.tfg.field_guide.subtitle": "我還得讀更多東西？",
+    "quests.tfg.field_guide.desc": "任務仍在開發中，我們一直在努力改進！很多關於特定機制的資訊也都在你的野外指南中，可以透過物品欄中的書本分頁開啟。\n\n請記住，EMI 和野外指南都是你的好朋友，因為不是所有東西都會在任務中說明。",
+    "quests.tfg.books_again.title": "還需要這些書嗎？",
+    "quests.tfg.books_again.desc": "如果你想再拿一本實體的任務書和野外指南，這裡有一個可重複完成的任務。",
+    "quests.tfg.optional_mods.title": "選用模組",
+    "quests.tfg.optional_mods.subtitle": "自訂你的遊戲體驗",
+    "quests.tfg.optional_mods.desc": "如果你想為模組包加入更多內容，可能會對我們的&d選用模組&r清單感興趣！\n\n這些模組要不是只適用於特定的電腦配置、加給所有人會造成太多負擔，就是太過小眾而沒有預設加入。\n\n請注意，TFG 開發團隊不保證這些模組或其相容性，所以它們可能在未來的任何時候停止運作。\n\n點擊任務旁邊的地球圖片即可開啟模組清單。"
+}

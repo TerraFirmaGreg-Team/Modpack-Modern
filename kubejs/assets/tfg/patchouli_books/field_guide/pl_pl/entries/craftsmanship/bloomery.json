@@ -60,7 +60,7 @@
             "images": [
                 "tfc:textures/gui/book/tutorial/bloomery_hole.png"
             ],
-            "text": "Dymarka zużywa $(thing)1 węgiel drzewny$() i $(thing)144 mW Żeliwa$(), by stworzyć jeden kawałek $(thing)surówki$().",
+            "text": "Dymarka zużywa $(thing)1 węgiel drzewny$() i $(thing)144 mW Żeliwa$(), aby stworzyć jeden kawałek $(thing)surówki$().",
             "border": true
         },
         {

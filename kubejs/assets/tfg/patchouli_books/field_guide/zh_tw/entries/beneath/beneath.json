@@ -6,17 +6,17 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "intro",
-			"text": "The $(thing)Beneath$() is a network of very deep caves, directly below the Overworld.$(br)This dimension is balanced around mid to late $(thing)Metallurgy Age$().$(br2)It's more dangerous than the surface, so we recommend a metal shield and good nutrition as a minimum, but some armor, a water flask, cooling clothes, and a ranged weapon will help a lot."
+			"text": "$(thing)地底$()是位於主世界正下方、由極深洞穴構成的網路。$(br)這個維度的平衡設計以$(thing)冶金時代$()中後期為準。$(br2)這裡比地表更危險，因此我們建議至少要有金屬盾牌和良好的營養狀態，而盔甲、水壺、降溫衣物和遠程武器也會大有幫助。"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "differences",
-			"text": "It differs from the usual Nether experience in a few ways:$(li)You enter it $(l:beneath/beneath#entering)differently$()$(li)Water doesn't instantly evaporate$(li)A bed works like normal$(li)Traveling Beneath is no faster than in the Overworld$(br2)In return, you can find resources like $(thing)Kaolin Clay$(), $(thing)Graphite$(), richer and more exposed $(thing)ore veins$(), as well as other treasures."
+			"text": "它與一般的地獄體驗有幾點不同：$(li)進入的$(l:beneath/beneath#entering)方式不同$()$(li)水不會瞬間蒸發$(li)床可以正常使用$(li)在地底移動不會比在主世界快$(br2)作為回報，你可以在這裡找到$(thing)高嶺土$()、$(thing)石墨$()等資源，以及更豐富且更容易接觸的$(thing)礦脈$()和其他寶藏。"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "index",
-			"text": "$(li)$(bold)$(l:beneath/beneath#entering)Entering$() and $(bold)$(l:beneath/beneath#exiting)Exiting$()$(li)$(bold)$(l:beneath/beneath#biomes)Biomes$()$(li2)$(l:beneath/beneath#salt_caves)Top Layer$()$(li2)$(l:beneath/beneath#tar_pools)Middle Layer$()$(li2)$(l:beneath/beneath#ash_forest)Bottom Layer$()$(li)$(bold)$(l:beneath/beneath#geology)Geology$()$(li2)$(l:beneath/beneath#more_rocks)More Rocks$()"
+			"text": "$(li)$(bold)$(l:beneath/beneath#entering)進入$()與$(bold)$(l:beneath/beneath#exiting)離開$()$(li)$(bold)$(l:beneath/beneath#biomes)生態域$()$(li2)$(l:beneath/beneath#salt_caves)上層$()$(li2)$(l:beneath/beneath#tar_pools)中層$()$(li2)$(l:beneath/beneath#ash_forest)下層$()$(li)$(bold)$(l:beneath/beneath#geology)地質$()$(li2)$(l:beneath/beneath#more_rocks)更多岩石$()"
 		},
 		{
 			"type": "patchouli:image",
@@ -26,177 +26,177 @@
 				"tfg:textures/gui/field_guide/nether/aether.png"
 			],
 			"border": true,
-			"text": "Not like this!"
+			"text": "不是這樣！"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "entering",
-			"title": "Entering the Beneath",
-			"text": "To travel Beneath, simply find some overworld Bedrock at $(thing)Y=-58$().$(br2)To get down to the bedrock, you'll have to either break through the Hornfels layer with $(l:game_mechanics/mining#explosives)Explosives$() or $(item)Steel+ Tools$(), find a cave with the more brittle $(thing)Keratophyre$(), or drain a lava lake.$(br2)Note that $(item)Primitive Explosives$() are not strong enough to break Hornfels."
+			"title": "進入地底",
+			"text": "要前往地底，只需在$(thing)Y=-58$()找到主世界的基岩。$(br2)要挖到基岩，你必須用$(l:game_mechanics/mining#explosives)炸藥$()或$(item)鋼以上的工具$()突破角岩層、找到含有較脆的$(thing)角斑岩$()的洞穴，或是排乾熔岩湖。$(br2)請注意，$(item)原始炸藥$()的威力不足以破壞角岩。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "You will appear in the Beneath at the same X and Z coordinates, with a 3x2x3 space opened for you to place some supports if necessary.$(br2)A temporary cloud will be provided if there is no floor, as well as short $(thing)Slow Falling$() and $(thing)Fire Protection$() effects to prevent any accidents."
+			"text": "你會出現在地底相同的 X 和 Z 座標，周圍會開出 3x2x3 的空間，必要時可以放置一些支撐。$(br2)如果腳下沒有地板，會提供一朵暫時的雲，同時給予短暫的$(thing)緩降$()和$(thing)火焰保護$()效果，以防發生意外。"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "exiting",
-			"title": "Exiting the Beneath",
-			"text": "To return, just get up to ceiling bedrock in the same fashion.$(br2)It's a good idea to $(thing)make a note$() of where you entered, so you can return to the same place in the overworld whenever you're ready to leave."
+			"title": "離開地底",
+			"text": "要返回時，只需以相同的方式抵達天花板的基岩。$(br2)建議$(thing)記下$()你進入的位置，這樣準備離開時就能回到主世界的同一個地方。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "You will be returned at $(thing)Y=-54$(), above any potential lava lakes, inside another 3x2x3 area. The middle two blocks for the player will always be replaced by air, so you may want to avoid placing ladders there."
+			"text": "你會在$(thing)Y=-54$()返回，位於任何可能存在的熔岩湖上方，同樣在 3x2x3 的空間內。玩家所在的中間兩格一定會被替換成空氣，所以你可能要避免在那裡放置梯子。"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "biomes",
-			"title": "Biomes",
-			"text": "The Beneath has a full set of new biomes to explore!$(br2)The Beneath can be split into three vertical layers, each with their own set of biomes. Each one is more hot and dangerous as you descend!"
+			"title": "生態域",
+			"text": "地底有一整套全新的生態域等你探索！$(br2)地底可以垂直分為三層，每一層都有自己的生態域。越往下越熱，也越危險！"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "Layers",
-			"text": "$(bold)Top Layer$()$(li)$(l:beneath/beneath#salt_caves)Salt Caves$()$(li)$(l:beneath/beneath#muggy_bog)Muggy Bog$()$(li)$(l:beneath/beneath#decaying_caverns)Decaying Caverns$()$(li)$(l:beneath/beneath#webbed_lair)Webbed Lair$()$(br)$(bold)Middle Layer$()$(li)$(l:beneath/beneath#tar_pools)Tar Pools$()$(li)$(l:beneath/beneath#geothermal_springs)Geothermal Springs$()$(li)$(l:beneath/beneath#thorny_grove)Thorny Grove$()$(li)$(l:beneath/beneath#lush_hollow)Lush Hollow$()$(br)$(bold)Bottom Layer$()$(li)$(l:beneath/beneath#ash_forest)Ash Forest$()$(li)$(l:beneath/beneath#lava_floes)Lava Floes$()$(li)$(l:beneath/beneath#basalt_deltas)Basalt Deltas$()"
+			"title": "分層",
+			"text": "$(bold)上層$()$(li)$(l:beneath/beneath#salt_caves)鹽窟$()$(li)$(l:beneath/beneath#muggy_bog)悶熱泥沼$()$(li)$(l:beneath/beneath#decaying_caverns)腐殖岩洞$()$(li)$(l:beneath/beneath#webbed_lair)織網地窟$()$(br)$(bold)中層$()$(li)$(l:beneath/beneath#tar_pools)焦油池$()$(li)$(l:beneath/beneath#geothermal_springs)地熱溫泉$()$(li)$(l:beneath/beneath#thorny_grove)荊棘林$()$(li)$(l:beneath/beneath#lush_hollow)繁生岩穴$()$(br)$(bold)下層$()$(li)$(l:beneath/beneath#ash_forest)灰燼森林$()$(li)$(l:beneath/beneath#lava_floes)熔岩流$()$(li)$(l:beneath/beneath#basalt_deltas)玄武岩三角洲$()"
 		},
 		{
 			"type": "patchouli:image",
 			"anchor": "salt_caves",
-			"title": "Salt Caves",
+			"title": "鹽窟",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/salt_caves.png"
 			],
 			"border": true,
-			"text": "Like a warm ocean breeze, this biome is full of $(item)Halite$(). Makes for a great base location!"
+			"text": "就像溫暖的海風，這個生態域充滿了$(item)石鹽$()。很適合作為基地地點！"
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Muggy Bog",
+			"title": "悶熱泥沼",
 			"anchor": "muggy_bog",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/muggy_bog.png"
 			],
 			"border": true,
-			"text": "Humid and swamp-like. A safe source of wood, if you can avoid the $(thing)Crocodiles$()."
+			"text": "潮濕且像沼澤一樣。如果你能避開$(thing)鱷魚$()，這裡是安全的木材來源。"
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Decaying Caverns",
+			"title": "腐殖岩洞",
 			"anchor": "decaying_caverns",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/decaying_caverns.png"
 			],
 			"border": true,
-			"text": "Nature's recyclers are hard at work in this damp region full of rot."
+			"text": "大自然的分解者正在這片充滿腐朽的潮濕地區努力工作。"
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Webbed Lair",
+			"title": "織網地窟",
 			"anchor": "webbed_lair",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/webbed_lair.png"
 			],
 			"border": true,
-			"text": "No prizes for guessing what lives here! A great place to harvest $(item)Silk$()."
+			"text": "猜猜看什麼住在這裡？答對了也沒獎品！這裡是採集$(item)絲$()的好地方。"
 		},
 		{
 			"type": "patchouli:image",
 			"anchor": "tar_pools",
-			"title": "Tar Pools",
+			"title": "焦油池",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/tar_pools.png"
 			],
 			"border": true,
-			"text": "Sandy like a small desert, this area contains sticky $(thing)Tar Pits$() full of oil."
+			"text": "這片區域像小沙漠一樣滿是沙子，有著充滿石油的黏稠$(thing)焦油坑$()。"
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Geothermal Springs",
+			"title": "地熱溫泉",
 			"anchor": "geothermal_springs",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/geothermal_springs.png"
 			],
 			"border": true,
-			"text": "No Sulfur Cubes here, but this steamy biome can be a great place to find $(thing)Spring Water$() for healing."
+			"text": "這裡沒有硫磺立方怪，但這個熱氣蒸騰的生態域是尋找具有治療效果的$(thing)溫泉水$()的好地方。"
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Thorny Grove",
+			"title": "荊棘林",
 			"anchor": "thorny_grove",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/thorny_brambles.png"
 			],
 			"border": true,
-			"text": "A difficult to traverse biome with plants that affect you when stepped on. Watch out!"
+			"text": "一個難以穿越的生態域，踩到這裡的植物會對你產生影響。小心！"
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Lush Hollow",
+			"title": "繁生岩穴",
 			"anchor": "lush_hollow",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/lush_hollow.png"
 			],
 			"border": true,
-			"text": "Hot and full of greenery! The dense ferns hides the underlying $(thing)Kaolin Clay$()."
+			"text": "炎熱又充滿綠意！茂密的蕨類掩蓋了底下的$(thing)高嶺土$()。"
 		},
 		{
 			"type": "patchouli:image",
 			"anchor": "ash_forest",
-			"title": "Ash Forest",
+			"title": "灰燼森林",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/ash_forest.png"
 			],
 			"border": true,
-			"text": "What remains of the upper greenery after the frequent fires caused by the heat."
+			"text": "上層的綠意在高溫頻繁引發的火災之後，所剩下的殘跡。"
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Lava Floes",
+			"title": "熔岩流",
 			"anchor": "lava_floes",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/lava_floes.png"
 			],
 			"border": true,
-			"text": "An ore-rich $(thing)Pyroxenite$() area crisscrossed with rivers of lava."
+			"text": "富含礦物的$(thing)輝石岩$()區域，被縱橫交錯的熔岩河流貫穿。"
 		},
 		{
 			"type": "patchouli:image",
-			"title": "地質學",
+			"title": "玄武岩三角洲",
 			"anchor": "basalt_deltas",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/basalt_deltas.png"
 			],
 			"border": true,
-			"text": "Everyone's favourite Nether biome returns, and is just as dangerous to navigate as ever."
+			"text": "大家最愛的地獄生態域回來了，而且一如既往地難以穿越。"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "geology",
-			"title": "Geology",
-			"text": "Like the overworld, the Beneath has its own set of rock layers. At the very top, you may find Phyllite, Schist, Gneiss, Marble, Slate, Migmatite, and Travertine.$(br2)Underneath those, you may find Schist, Gneiss, Tuff, Migmatite, Travertine, and Diorite."
+			"title": "地質",
+			"text": "和主世界一樣，地底也有自己的岩層。在最上層，你可能會找到千枚岩、片岩、片麻岩、大理岩、板岩、混合岩和石灰華。$(br2)在這些岩層之下，你可能會找到片岩、片麻岩、凝灰岩、混合岩、石灰華和閃長岩。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Below that is either Gabbro, Granite, Tuff, Diorite, or Migmatite.$(br2)At the lower levels of the Beneath, there is a layer of exclusively Migmatite, followed by Pyroxenite at the very bottom."
+			"text": "再往下是輝長岩、花崗岩、凝灰岩、閃長岩或混合岩。$(br2)在地底的較低層，有一層只有混合岩的岩層，最底部則是輝石岩。"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "minecraft:blackstone,minecraft:calcite,tfg:gilsonite,tfg:rock/aragonite,tfg:rock/glauberite,tfg:huge_quartz,beneath:crackrack,tfg:halite",
-			"title": "More Rocks",
+			"title": "更多岩石",
 			"anchor": "more_rocks",
-			"text": "Some other stones can be found in other locations.$(br2)Small lava pools are surrounded by $(item)Pyroxenite$(), while $(item)Calcite$() can be found in spring water pools.$(br2)$(item)Keratophyre$() can be found all over the Beneath in large, tall columns."
+			"text": "其他一些石頭可以在別的地方找到。$(br2)小型熔岩池周圍環繞著$(item)輝石岩$()，而$(item)方解石$()可以在溫泉水池中找到。$(br2)$(item)角斑岩$()以高大的巨柱形式遍布整個地底。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "The $(l:beneath/beneath#geothermal_springs)Geothermal Springs$() biome contains the exclusive $(item)Aragonite$() and $(item)Glauberite$(), along with more Calcite.$(br2)This biome also houses $(item)Huge Quartz$() crystals, which can either be broken with a pickaxe to obtain $(item)Smoky Quartz$() gems of varying quality, or broken with a $(item)Gem Saw$() to obtain the transparent block itself."
+			"text": "$(l:beneath/beneath#geothermal_springs)地熱溫泉$()生態域有獨有的$(item)霰石$()和$(item)鈣芒硝$()，以及更多方解石。$(br2)這個生態域也有$(item)巨型石英$()晶體，用鎬破壞可取得品質不一的$(item)煙水晶$()寶石，用$(item)寶石鋸$()破壞則可取得透明的方塊本身。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(item)Gilsonite$(), a very dark building block and ingredient of $(l:logistics/roads#asphalt)Asphalt$(), can be found in large quantities in the $(l:beneath/beneath#tar_pools)Tar Pools$() biome, along with $(item)Sandstone$().$(br2)Finally, $(item)Halite$() can be found in massive quantities in the $(l:beneath/beneath#salt_caves)Salt Caves$() biome, which can be mined for Halite and Sylvite ores."
+			"text": "$(item)硬瀝青$()是一種非常深色的建築方塊，也是$(l:logistics/roads#asphalt)瀝青$()的原料，可以在$(l:beneath/beneath#tar_pools)焦油池$()生態域中大量找到，同時還有$(item)砂岩$()。$(br2)最後，$(item)石鹽$()可以在$(l:beneath/beneath#salt_caves)鹽窟$()生態域中大量找到，可以開採出石鹽和鉀石鹽礦石。"
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Further Reading",
+			"title": "延伸閱讀",
 			"anchor": "relations",
 			"entries": [
 				"tfg:beneath/beneath_mechanics",

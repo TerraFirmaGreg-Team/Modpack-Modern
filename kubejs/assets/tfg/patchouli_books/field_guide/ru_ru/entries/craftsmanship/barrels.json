@@ -132,6 +132,7 @@
     "read_by_default": true,
     "sortnum": 13,
     "extra_recipe_mappings": {
-        "tag:tfc:barrels": 0
+        "tag:tfc:barrels": 0,
+        "tfc:barrel_rack": 12
     }
 }

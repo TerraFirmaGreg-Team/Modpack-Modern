@@ -1,24 +1,24 @@
 {
-    "name": "Earth Climatology",
+    "name": "地球氣候學",
     "category": "tfg:the_world",
     "icon": "tfg:textures/gui/field_guide/icons/climatology.png",
     "pages": [
         {
             "type": "patchouli:text",
             "anchor": "intro",
-            "text": "In $(tfg), the climate and the time are both very important factors in the way you experience the world. $(l:the_world/climate#seasons)Seasons$() will pass on a cycle affecting local weather and crop growth, as well as your own ambient temperature. Be careful to understand the climate and the geography of your area before deciding to settle down."
+            "text": "在$(tfg)中，氣候和時間都是影響你體驗這個世界的重要因素。$(l:the_world/climate#seasons)季節$()會循環更替，影響當地的天氣和作物生長，以及你所處的環境溫度。在決定定居之前，請務必了解該地區的氣候和地理環境。"
         },
         {
             "type": "patchouli:text",
-            "title": "Index",
+            "title": "索引",
             "anchor": "index",
-            "text": "$(li)$(bold)$(l:the_world/climate#calendar)Calendar$()$(li2)$(l:the_world/climate#seasons)Seasons$()$(li)$(bold)$(l:the_world/climate#climate)Climate$()$(li2)$(l:the_world/climate#temperature)Temperature$()$(li2)$(l:the_world/climate#rainfall)Rainfall$()"
+            "text": "$(li)$(bold)$(l:the_world/climate#calendar)日曆$()$(li2)$(l:the_world/climate#seasons)季節$()$(li)$(bold)$(l:the_world/climate#climate)氣候$()$(li2)$(l:the_world/climate#temperature)溫度$()$(li2)$(l:the_world/climate#rainfall)降雨量$()"
         },
         {
             "type": "patchouli:text",
-            "title": "Calendar",
+            "title": "日曆",
             "anchor": "calendar",
-            "text": "The $(thing)Calendar$() can be viewed at any time by pressing $(item)$(k:key.inventory)$(), and clicking on the calendar tab. It is important to note that the effects of seasons will be inverted when crossing equator lines, such as at $(thing)Z=10000$()."
+            "text": "隨時按下$(item)$(k:key.inventory)$()並點擊日曆分頁，即可查看$(thing)日曆$()。需要注意的是，跨越赤道線(例如$(thing)Z=10000$())時，季節的效果會相反。"
         },
         {
             "type": "patchouli:image",
@@ -29,24 +29,24 @@
             "images": [
                 "tfg:textures/gui/field_guide/screens/calendar_screen.png"
             ],
-            "text": "The Calendar Screen showing the $(thing)Season$(), the $(thing)Day$(), and the $(thing)Date$().",
+            "text": "日曆介面，顯示$(thing)季節$()、$(thing)天數$()和$(thing)日期$()。",
             "border": false
         },
         {
             "type": "patchouli:text",
             "anchor": "seasons",
-            "title": "Seasons",
-            "text": "There are four seasons in TerraFirmaCraft, and the weather and climate will change along with them! Each season is divided up into $(thing)Early$(), $(thing)Mid$() and $(thing)Late$() months. The four seasons are:$(br)$(li)$(bold)Spring$(): March - May$(li)$(bold)Summer$(): June - August$(li)$(bold)Autumn$(): September - November$(li)$(bold)Winter$(): December - February"
+            "title": "季節",
+            "text": "TerraFirmaCraft 有四個季節，天氣和氣候會隨之變化！每個季節分為$(thing)初$()、$(thing)中$()、$(thing)末$()三個月。四個季節分別是：$(br)$(li)$(bold)春季$()：3 月 - 5 月$(li)$(bold)夏季$()：6 月 - 8 月$(li)$(bold)秋季$()：9 月 - 11 月$(li)$(bold)冬季$()：12 月 - 2 月"
         },
         {
             "type": "patchouli:text",
-            "text": "The current season can influence the temperature of the area, the precipitation (if it will rain or snow), and the environment itself such as leaves changing and more. Pay attention to the calendar tab, it will be useful!"
+            "text": "當前的季節會影響該地區的溫度、降水(下雨還是下雪)，以及環境本身，例如樹葉變色等。多留意日曆分頁，它會很有用！"
         },
         {
             "type": "patchouli:text",
             "anchor": "climate",
-            "text": "Another tab on the main inventory screen is the $(thing)Climate$() screen. This one shows information about the current location$(li)The first line shows the overall $(l:https://en.wikipedia.org/wiki/K%C3%B6ppen_climate_classification)Climate$().$(li)The second line shows the $(l:the_world/climate#temperature)Average Annual Temperature$().$(li)The third line shows the $(l:the_world/climate#rainfall)Average Annual Rainfall$().$(li)And the last line shows the $(l:the_world/climate#temperature)Current Local Temperature$().",
-            "title": "Climate"
+            "text": "主物品欄介面中的另一個分頁是$(thing)氣候$()介面。它會顯示目前位置的資訊$(li)第一行顯示整體的$(l:https://en.wikipedia.org/wiki/K%C3%B6ppen_climate_classification)氣候$()。$(li)第二行顯示$(l:the_world/climate#temperature)年平均溫度$()。$(li)第三行顯示$(l:the_world/climate#rainfall)年平均降雨量$()。$(li)最後一行顯示$(l:the_world/climate#temperature)當地目前溫度$()。",
+            "title": "氣候"
         },
         {
             "type": "patchouli:image",
@@ -62,9 +62,9 @@
         },
         {
             "type": "patchouli:text",
-            "title": "Temperature",
+            "title": "溫度",
             "anchor": "temperature",
-            "text": "Current Temperature in TerraFirmaCraft is influenced by a number of factors:$(br)$(li)Firstly, the region--Especially the latitude--Will play the largest role and is recorded as the $(thing)Average Temperature$().$(li)Secondly, the current season will influence the temperature.$(li)Thirdly, the temperature can be different day to day as well as varying from hour to hour.$(li)Lastly, temperature varys in elevation changes."
+            "text": "TerraFirmaCraft 中的當前溫度受許多因素影響：$(br)$(li)首先，所在區域――尤其是緯度――影響最大，並記錄為$(thing)平均溫度$()。$(li)其次，當前的季節會影響溫度。$(li)第三，溫度每天都可能不同，也會隨每小時變化。$(li)最後，溫度會隨海拔變化。"
         },
         {
             "type": "patchouli:image",
@@ -75,14 +75,14 @@
             "images": [
                 "tfg:textures/gui/field_guide/maps/temperature_map.png"
             ],
-            "text": "A 65.5km² map displaying how temperature cycles when traveling North/South.$(br)$(#001cfc)◼$(#00b9fc)◼$(#62fc92)◼$(#e1fc12)◼$(#fc7800)◼$(#cf0000)◼$() -20°C → 30°C",
+            "text": "一張 65.5km² 的地圖，顯示向南北移動時溫度的循環變化。$(br)$(#001cfc)◼$(#00b9fc)◼$(#62fc92)◼$(#e1fc12)◼$(#fc7800)◼$(#cf0000)◼$() -20°C → 30°C",
             "border": true
         },
         {
             "type": "patchouli:text",
             "anchor": "rainfall",
-            "text": "Rainfall is another climate value that can vary depending on where you are in the world and determines flora growth.$(br2)Rainfall is one of the main contributors to $(l:agriculture/growing_crops#hydration)Hydration$(), which is an exact measure of how wet the soil is in a given location, and is used by $(l:agriculture/growing_crops)Crops$(), $(l:the_world/wild_fruits#fruit_trees)Fruit Trees$(), and $(l:the_world/wild_fruits#tall_bushes)Berry Bushes$() to determine if they can grow.",
-            "title": "Annual Rainfall"
+            "text": "降雨量是另一個會依你在世界中的位置而變化的氣候數值，它決定了植物的生長。$(br2)降雨量是$(l:agriculture/growing_crops#hydration)含水量$()的主要影響因素之一。含水量是特定位置土壤濕潤程度的精確量度，$(l:agriculture/growing_crops)作物$()、$(l:the_world/wild_fruits#fruit_trees)果樹$()和$(l:the_world/wild_fruits#tall_bushes)漿果叢$()會以此判斷是否能生長。",
+            "title": "年降雨量"
         },
         {
             "type": "patchouli:image",
@@ -93,12 +93,12 @@
             "images": [
                 "tfg:textures/gui/field_guide/maps/rainfall_map.png"
             ],
-            "text": "A 65.5km² map displaying how rainfall cycles when traveling East/West.$(br)$(#800302)◼$(#fc5600)◼$(#fcbe4e)◼$(#a6be4e)◼$(#1268ac)◼$(#76b6f6)◼$() 0mm → 500mm",
+            "text": "一張 65.5km² 的地圖，顯示向東西移動時降雨量的循環變化。$(br)$(#800302)◼$(#fc5600)◼$(#fcbe4e)◼$(#a6be4e)◼$(#1268ac)◼$(#76b6f6)◼$() 0mm → 500mm",
             "border": true
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "延伸閱讀",
             "anchor": "relations",
             "entries": [
                 "tfg:the_world/geology",

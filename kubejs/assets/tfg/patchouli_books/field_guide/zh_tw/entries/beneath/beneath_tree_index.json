@@ -1,50 +1,50 @@
 {
-	"name": "Beneath Tree Index",
+	"name": "地底樹木索引",
 	"category": "tfg:beneath",
 	"icon": "tfg:textures/block/wood/sapling/mahoe.png",
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Despite the lack of sunlight, several species of trees grow in the Beneath, most of which can only be found here!$(br2)Trees grow in the Beneath the same way they do in the overworld, but they do require a light level of 12, which isn't provided by the Beneath's natural light. To solve this problem, you can utilize $(l:agriculture/aqueducts)Lava Aqueducts$() or any other available light source."
+			"text": "儘管缺乏陽光，地底仍生長著數種樹木，其中大多數只能在這裡找到！$(br2)樹木在地底的生長方式和在主世界相同，但需要 12 級的光照，而地底的自然光照無法提供。要解決這個問題，可以利用$(l:agriculture/aqueducts)熔岩引水橋$()或其他可用的光源。"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Araucaria",
+			"title": "南洋杉",
 			"anchor": "araucaria",
 			"item": "tag:tfg:araucaria_logs",
-			"text": "$(bold)Araucaria$()$(br)Found only in the $(thing)Webbed Lair$() biome.$(br)$(thing)Growth Days$(): 5"
+			"text": "$(bold)南洋杉$()$(br)只出現在$(thing)織網地窟$()生態域。$(br)$(thing)生長天數$()：5"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Beech",
+			"title": "山毛櫸",
 			"anchor": "beech",
 			"item": "tag:tfg:beech_logs",
-			"text": "$(bold)Beech$()$(br)Found in the $(thing)Thorny Grove$() and $(thing)Lush Hollow$() biomes.$(br)$(thing)Growth Days$(): 6"
+			"text": "$(bold)山毛櫸$()$(br)出現在$(thing)荊棘林$()和$(thing)繁生岩穴$()生態域。$(br)$(thing)生長天數$()：6"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Ginkgo",
+			"title": "銀杏",
 			"anchor": "ginkgo",
 			"item": "tag:wan_ancient_beasts:ginkgo_logs",
-			"text": "$(bold)Ginkgo$()$(br)Found only in the $(thing)Lush Hollow$() biome.$(br)$(thing)Growth Days$(): 7"
+			"text": "$(bold)銀杏$()$(br)只出現在$(thing)繁生岩穴$()生態域。$(br)$(thing)生長天數$()：7"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Mahoe",
+			"title": "黃槿",
 			"anchor": "mahoe",
 			"item": "tag:tfg:mahoe_logs",
-			"text": "$(bold)Mahoe$()$(br)Found only in the $(thing)Thorny Grove$() biome.$(br)$(thing)Growth Days$(): 5"
+			"text": "$(bold)黃槿$()$(br)只出現在$(thing)荊棘林$()生態域。$(br)$(thing)生長天數$()：5"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Mangrove",
+			"title": "紅樹",
 			"anchor": "mangrove",
 			"item": "tag:tfc:mangrove_logs",
-			"text": "$(bold)Mangrove$()$(br)Found only in the $(thing)Muggy Bog$() biome.$(br)$(thing)Growth Days$(): 7$(br2)Can also be found $(l:the_world/earth_tree_index#mangrove)in the overworld$()."
+			"text": "$(bold)紅樹$()$(br)只出現在$(thing)悶熱泥沼$()生態域。$(br)$(thing)生長天數$()：7$(br2)也可以$(l:the_world/earth_tree_index#mangrove)在主世界$()找到。"
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Further Reading",
+			"title": "延伸閱讀",
 			"anchor": "relations",
 			"entries": [
 				"tfg:the_world/earth_tree_index",

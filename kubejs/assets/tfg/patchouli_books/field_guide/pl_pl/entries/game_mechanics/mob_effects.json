@@ -38,7 +38,7 @@
             "type": "patchouli:text",
             "anchor": "cure_toxins",
             "title": "Detoks",
-            "text": "While active this effect gradually removes $(l:cooking/food_and_water#toxins)Toxin Contamination$() at a rate of about 1% every 10s at base level.$()"
+            "text": "Na poziomie podstawowym efekt ten stopniowo zmniejsza $(l:cooking/food_and_water#toxins)skażenie toksynami$() o około 1% co 10 s.$()"
         },
         {
             "type": "patchouli:text",

@@ -1,4 +1,5 @@
 {
+	"sodium.console.broken_nvidia_driver": "Twoje sterowniki NVIDIA są przestarzałe!\n *To może powodować znaczne obniżenie wydajności i awarie, jeśli Embeddium jest zainstalowane.\n *Proszę zaktualizować swoje sterowniki graficzne do najnowszej wersji (wersja 536.23 lub nowsze).",
 	"sodium.console.core_shaders_error": "Następujące paczki zasobów nie są kompatybilne z Embeddium:",
 	"sodium.console.core_shaders_info": "Sprawdź dziennik gry, aby uzyskać szczegółowe informacje.",
 	"sodium.console.core_shaders_warn": "Następujące paczki zasobów mogą nie być kompatybilne z Embeddium:",
@@ -25,6 +26,7 @@
 	"sodium.options.entity_distance.tooltip": "Określa, jak daleko od gracza mogą być renderowane byty. Wyższe wartości zwiększają zasięg ich renderowania kosztem liczby klatek na sekundę.",
 	"sodium.options.entity_shadows.tooltip": "Jeśli włączone, podstawowe cienie będą renderowane pod mobami i innymi bytami.",
 	"sodium.options.fullscreen.tooltip": "Jeśli włączone, gra będzie wyświetlana w trybie pełnoekranowym (Jeśli opcja jest wspierana).",
+	"sodium.options.gui_scale.tooltip": "Ustawia maksymalną skalę interfejsu użytkownika. Wybranie opcji „auto” powoduje, że zawsze używana jest największa dostępna skala.",
 	"sodium.options.leaves_quality.name": "Liście",
 	"sodium.options.leaves_quality.tooltip": "Kontroluje jakość liści.",
 	"sodium.options.pages.advanced": "Zaawansowane",
@@ -40,6 +42,8 @@
 	"sodium.options.use_fog_occlusion.name": "Użyj okluzji mgły",
 	"sodium.options.use_no_error_context.name": "Używaj braku kontekstu błędu",
 	"sodium.options.use_persistent_mapping.name": "Używaj trwałego mapowania",
+	"sodium.options.view_distance.tooltip": "Zasięg renderowania kontroluje, jak daleko otoczenie będzie renderowane. Krótszy dystans oznacza, że mniej otoczenia będzie renderowane, zwiększając klatki na sekundę.",
 	"sodium.options.vignette.name": "Winieta",
+	"sodium.options.vignette.tooltip": "Jeśli włączone, efekt winiety będzie renderowany na widoku gracza. Ta opcja nie gwarantuje zmiany w wydajności klatek na sekundę, chyba że jesteś limitowany przez współczynnik wypełnienia.",
 	"sodium.options.weather_quality.tooltip": "Kontroluje jakość efektów deszczu i śniegu."
 }

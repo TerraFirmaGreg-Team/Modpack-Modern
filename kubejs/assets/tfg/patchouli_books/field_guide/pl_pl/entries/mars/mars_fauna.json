@@ -144,7 +144,7 @@
 			"scale": 0.5,
 			"name": "Pożeracz",
 			"anchor": "eater",
-			"text": "A top predator, $(thing)Eaters$() are hostile animals found above -109°C. If you can manage to take one down, they can be eaten."
+			"text": "$(thing)Pożeracze$() to agresywne zwierzęta na szczycie łańcucha pokarmowego, występujące w temperaturach powyżej -109°C. Jeśli uda ci się któregoś pokonać, możesz go zjeść."
 		},
 		{
 			"type": "patchouli:entity",
@@ -152,7 +152,7 @@
 			"scale": 0.7,
 			"name": "Chrupacz",
 			"anchor": "cruncher",
-			"text": "$(thing)Crunchers$() are territorial $(item)miniboss$() predators. Feed them meat to stop their regeneration. They can also be eaten."
+			"text": "$(thing)Chrupacze$() to terytorialne $(item)minibossy$(). Nakarm je mięsem, aby powstrzymać ich regenerację. Same również nadają się do zjedzenia."
 		},
 		{
 			"type": "patchouli:entity",
@@ -170,7 +170,7 @@
 			"offset": 0.5,
 			"name": "Łamacz",
 			"anchor": "crusher",
-			"text": "$(thing)Crushers$() are semihostile animals found in herds in areas above -100°C. They can be killed for their meat and hard spikes."
+			"text": "$(thing)Łamacze$() to neutralne zwierzęta, żyjące w stadach na obszarach o temperaturze powyżej -100°C. Można je zabijać, aby pozyskać mięso i kolce."
 		},
 		{
 			"type": "patchouli:entity",
@@ -219,7 +219,7 @@
 			"scale": 0.4,
 			"name": "Tragarz",
 			"anchor": "stackatick",
-			"text": "One of the few animals that can survive the Martian desert, $(thing)Stackaticks$() are passive prey animals. They can also be eaten."
+			"text": "$(thing)Tragarze$() należą do nielicznych zwierząt zdolnych przetrwać na marsjańskiej pustyni. Są pasywnymi zwierzętami łownymi. Można je również zjeść."
 		},
 		{
 			"type": "patchouli:entity",

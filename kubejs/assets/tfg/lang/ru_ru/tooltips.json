@@ -292,5 +292,8 @@
     "tfg.tooltip.unposter": "Потребляет компостируемые предметы для клонирования близлежащих цветов и грибов.",
     "tfg.tooltip.glassworking.complete": "☆ Готово! ☆",
     "tfg.tooltip.growth_time": "Время роста",
-    "tfg.tooltip.digger_helmet_mining_upgrade": "§cНе влияет на более крупные инструменты, такие как Шахтёрские молоты!§r"
+    "tfg.tooltip.digger_helmet_mining_upgrade": "§cНе влияет на более крупные инструменты, такие как Шахтёрские молоты!§r",
+    "tfg.tooltip.unit.mB": "%s mB",
+    "tfg.tooltip.unit.seconds": "%s сек",
+    "tfg.tooltip.gas_burner.max_temp": "Макс. температура: "
 }

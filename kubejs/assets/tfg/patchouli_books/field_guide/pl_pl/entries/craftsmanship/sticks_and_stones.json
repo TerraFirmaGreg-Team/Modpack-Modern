@@ -92,7 +92,7 @@
 			"recipes": [
 				"tfg:rock_knapping/stone_axe_head"
 			],
-			"text": "$(thing)Axes$() can be used to cut down entire trees, logs and leaves included. Axes are required for obtaining $(l:the_world/wild_fruits#fruit_trees)Fruit Tree Saplings$()."
+			"text": "$(thing)Siekier$() można używać do ścinania całych drzew, łącznie z kłodami i liśćmi. Siekiery są wymagane do pozyskania $(l:the_world/wild_fruits#fruit_trees)sadzonek drzew owocowych$()."
 		},
 		{
 			"type": "tfg:rock_knapping_recipe",

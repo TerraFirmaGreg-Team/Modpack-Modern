@@ -1,25 +1,25 @@
 {
-    "name": "Earth Flora",
+    "name": "地球植物",
     "category": "tfg:the_world",
     "icon": "tfc:plant/goldenrod",
     "pages": [
         {
             "type": "patchouli:text",
             "anchor": "index",
-            "text": "$(li)$(bold)$(l:the_world/flora#standard_plants)Standard Plant Types$()$(li)$(bold)$(l:the_world/flora#aquatic_plants)Aquatic Plant Types$()$(li)$(bold)$(l:the_world/flora#medicinal_plants)Medicinal Plants$()$(li)$(bold)$(l:the_world/flora#spices)Spices$()$(li2)$(l:the_world/flora#basil)Basil$()$(li2)$(l:the_world/flora#bay)Bay Laural$()$(li2)$(l:the_world/flora#cardamom)Cardamom$()$(li2)$(l:the_world/flora#cilantro)Cilantro$()$(li2)$(l:the_world/flora#cumin)Cumin$()$(li2)$(l:the_world/flora#oregano)Oregano$()$(li2)$(l:the_world/flora#pimento)Pimento$()$(li2)$(l:the_world/flora#vanilla)Vanilla$()$(li)$(bold)$(l:the_world/flora#seed_ball)Seed Ball$()"
+            "text": "$(li)$(bold)$(l:the_world/flora#standard_plants)一般植物類型$()$(li)$(bold)$(l:the_world/flora#aquatic_plants)水生植物類型$()$(li)$(bold)$(l:the_world/flora#medicinal_plants)藥用植物$()$(li)$(bold)$(l:the_world/flora#spices)香料$()$(li2)$(l:the_world/flora#basil)羅勒$()$(li2)$(l:the_world/flora#bay)月桂$()$(li2)$(l:the_world/flora#cardamom)小荳蔻$()$(li2)$(l:the_world/flora#cilantro)香菜$()$(li2)$(l:the_world/flora#cumin)孜然$()$(li2)$(l:the_world/flora#oregano)奧勒岡$()$(li2)$(l:the_world/flora#pimento)多香果$()$(li2)$(l:the_world/flora#vanilla)香草$()$(li)$(bold)$(l:the_world/flora#seed_ball)種子球$()"
         },
         {
             "anchor": "intro",
             "type": "patchouli:spotlight",
-            "title": "Intro to Earth Flora",
+            "title": "地球植物簡介",
             "item": {
                 "tag": "tfc:plants"
             },
-            "text": "Earth is an incredibly diverse planet when it comes to flora. Unlike in vanilla $(thing)Minecraft$()--Plants in $(tfg) spawn based on local $(l:the_world/climate#climate)Climate Conditions$()."
+            "text": "地球的植物極為多樣。與原版$(thing)Minecraft$()不同――$(tfg)中的植物會依當地的$(l:the_world/climate#climate)氣候條件$()生成。"
         },
         {
             "type": "patchouli:text",
-            "text": "Plants may be difficult to find during some $(l:the_world/climate#seasons)Seasons$() as they go through cycles of flowering and laying dormant, or changing color as the local temperature changes.$(br2)Colorful flowers can typically be crushed in a $(l:craftsmanship/quern)Quern$() for $(thing)Dye$(). While some plants can be used for making $(l:the_world/flora#medicinal_plants)medicine$() or $(l:the_world/flora#spices)meals$()."
+            "text": "在某些$(l:the_world/climate#seasons)季節$()中可能很難找到植物，因為它們會經歷開花與休眠的循環，或隨當地溫度變化而改變顏色。$(br2)色彩繽紛的花朵通常可以在$(l:craftsmanship/quern)手推磨$()中磨成$(thing)染料$()。有些植物則可以用來製作$(l:the_world/flora#medicinal_plants)藥物$()或$(l:the_world/flora#spices)餐點$()。"
         },
         {
             "type": "patchouli:multiblock",
@@ -36,7 +36,7 @@
                     "X": "tfc:plant/anthurium"
                 }
             },
-            "name": "Standard",
+            "name": "一般",
             "anchor": "standard_plants",
             "text": "普通植物就像小花。它們會生長在草地、泥土和農田上。",
             "enable_visualize": false
@@ -56,7 +56,7 @@
                     "X": "tfc:plant/sagebrush"
                 }
             },
-            "name": "Dry",
+            "name": "乾燥",
             "text": "耐旱植物與普通植物一樣，但它們可以在沙子上生長。這些植物一般只會生長在降雨量少的地區。",
             "enable_visualize": false
         },
@@ -81,7 +81,7 @@
                 }
             },
             "name": "仙人掌",
-            "text": "仙人掌可以長到兩個方塊的高度，而且會對你造成傷害!",
+            "text": "仙人掌可以長到兩個方塊的高度，而且會對你造成傷害！",
             "enable_visualize": false
         },
         {
@@ -162,7 +162,7 @@
                 }
             },
             "name": "高草",
-            "text": "高度剛好夠遮住你的視野。",
+            "text": "高草方塊的高度剛好足以遮住你的視野。",
             "enable_visualize": false
         },
         {
@@ -233,8 +233,8 @@
         {
             "type": "patchouli:text",
             "anchor": "aquatic_plants",
-            "text": "Aquatic plants are restricted to either spawn in fresh or salty water. Otherwise, they grow and act much like the plants you see on the surface. Some water plants can be cooked for food.",
-            "title": "Aquatic Plants"
+            "text": "水生植物只會生成在淡水或鹹水中。除此之外，它們的生長和行為與地表上的植物大致相同。有些水生植物可以煮來吃。",
+            "title": "水生植物"
         },
         {
             "type": "patchouli:multiblock",
@@ -252,7 +252,7 @@
                 }
             },
             "name": "普通水生植物",
-            "text": "用$(thing)刀$()割普通水生植物可以獲得$(thing)海草$()。",
+            "text": "用$(thing)$()刀$()破壞一般的水生植物，可以取得$(thing)海草$()。",
             "enable_visualize": false
         },
         {
@@ -294,7 +294,7 @@
                 }
             },
             "name": "高大水生植物",
-            "text": "只要下面那格有水就可以活。用$(thing)刀$()割$(thing)水生芋頭$()和$()闊葉香蒲$()可以獲得它們的$(thing)根$()。",
+            "text": "高大水生植物只要最下面那格在水中就能生長。用$(thing)刀$()破壞$(thing)水生芋頭$()和$()闊葉香蒲$()可以取得$(thing)根$()。",
             "enable_visualize": false
         },
         {
@@ -372,23 +372,23 @@
             "item": {
                 "tag": "tfg:medicinal_ingredients/plants"
             },
-            "title": "Medicinal Plants",
-            "text": "Many plants in $(tfg) hold medicinal value and can be used for creating phytotherapeutic medicine. You can combine these ingredients in a mixing bowl with wax, binders, and spring water to make pills. Or more advanced medications."
+            "title": "藥用植物",
+            "text": "$(tfg)中有許多植物具有藥用價值，可以用來製作植物療法藥物。你可以在攪拌碗中將這些材料與蠟、黏合劑和溫泉水混合製成藥片，或製成更進階的藥物。"
         },
         {
-            "title": "Spices",
+            "title": "香料",
             "type": "patchouli:spotlight",
             "item": {
                 "tag": "tfg:foods/spice_plants"
             },
             "anchor": "spices",
-            "text": "With $(thing)Firmalife$(), there are a number of small plants you can collect and grow on your own, which have cooking properties. They can all be found in the wild, and once harvested, may be cultivated in a $(l:agriculture/greenhouse)Greenhouse$(), in which they consume 20 points of N, P, and K."
+            "text": "有了$(thing)Firmalife$()，你可以收集並自行種植許多具有烹飪用途的小型植物。它們都可以在野外找到，採收後可以在$(l:agriculture/greenhouse)溫室$()中栽培，它們會消耗 20 點的氮、磷、鉀。"
         },
         {
             "type": "tfg:table",
             "strings": [
                 {
-                    "text": "Spice",
+                    "text": "香料",
                     "bold": true
                 },
                 {
@@ -400,7 +400,7 @@
                     "bold": true
                 },
                 {
-                    "text": "Basil"
+                    "text": "羅勒"
                 },
                 {
                     "text": "12 - 25"
@@ -409,7 +409,7 @@
                     "text": "300 - 500"
                 },
                 {
-                    "text": "Bay Laurel"
+                    "text": "月桂"
                 },
                 {
                     "text": "8 - 14"
@@ -418,7 +418,7 @@
                     "text": "25 - 225"
                 },
                 {
-                    "text": "Cardamom"
+                    "text": "小荳蔻"
                 },
                 {
                     "text": "18 - 30"
@@ -427,7 +427,7 @@
                     "text": "350 - 500"
                 },
                 {
-                    "text": "Cilantro"
+                    "text": "香菜"
                 },
                 {
                     "text": "5 - 15"
@@ -436,7 +436,7 @@
                     "text": "0 - 150"
                 },
                 {
-                    "text": "Cumin"
+                    "text": "孜然"
                 },
                 {
                     "text": "6 - 20"
@@ -445,7 +445,7 @@
                     "text": "50 - 250"
                 },
                 {
-                    "text": "Oregano"
+                    "text": "奧勒岡"
                 },
                 {
                     "text": "5 - 13"
@@ -454,7 +454,7 @@
                     "text": "50 - 150"
                 },
                 {
-                    "text": "Pimento"
+                    "text": "多香果"
                 },
                 {
                     "text": "15 - 30"
@@ -463,7 +463,7 @@
                     "text": "200 - 450"
                 },
                 {
-                    "text": "Vanilla"
+                    "text": "香草"
                 },
                 {
                     "text": "18 - 30"
@@ -473,7 +473,7 @@
                 }
             ],
             "text": "",
-            "title": "Wild Spice Ranges",
+            "title": "野生香料分布範圍",
             "legend": [],
             "columns": 2,
             "first_column_width": 80,
@@ -502,7 +502,7 @@
                     "X": "firmalife:plant/basil[stage=1]"
                 }
             },
-            "name": "Basil",
+            "name": "羅勒",
             "anchor": "basil",
             "text": "$(thing)野生羅勒$()生長在温度12-25°C、降雨量300-500mm的區域。",
             "enable_visualize": false
@@ -522,7 +522,7 @@
                     "X": "firmalife:plant/bay_laurel[stage=1]"
                 }
             },
-            "name": "Bay Laurel",
+            "name": "月桂",
             "anchor": "bay",
             "text": "$(thing)野生月桂$()生長在温度8-14°C、降雨量25-225mm的區域。",
             "enable_visualize": false
@@ -542,7 +542,7 @@
                     "X": "firmalife:plant/cardamom[stage=1]"
                 }
             },
-            "name": "Cardamom",
+            "name": "小荳蔻",
             "anchor": "cardamom",
             "text": "$(thing)野生豆蔻$()生長在温度18-30°C、降雨量350-500mm的區域。",
             "enable_visualize": false
@@ -562,7 +562,7 @@
                     "X": "firmalife:plant/cilantro[stage=1]"
                 }
             },
-            "name": "Cilantro",
+            "name": "香菜",
             "anchor": "cilantro",
             "text": "$(thing)野生香菜$()生長在温度5-15°C、降雨量0-150mm的區域。",
             "enable_visualize": false
@@ -582,7 +582,7 @@
                     "X": "firmalife:plant/cumin[stage=1]"
                 }
             },
-            "name": "Cumin",
+            "name": "孜然",
             "anchor": "cumin",
             "text": "$(thing)野生孜然$()生長在温度6-20°C、降雨量50-250mm的區域。",
             "enable_visualize": false
@@ -602,7 +602,7 @@
                     "X": "firmalife:plant/oregano[stage=1]"
                 }
             },
-            "name": "Oregano",
+            "name": "奧勒岡",
             "anchor": "oregano",
             "text": "$(thing)野生奧勒岡$()生長在温度5-13°C、降雨量50-150mm的區域。",
             "enable_visualize": false
@@ -622,7 +622,7 @@
                     "X": "firmalife:plant/pimento[stage=1]"
                 }
             },
-            "name": "Pimento",
+            "name": "多香果",
             "anchor": "pimento",
             "text": "$(thing)野生多香果$()生長在温度15-30°C、降雨量200-450mm的區域。",
             "enable_visualize": false
@@ -642,7 +642,7 @@
                     "X": "firmalife:plant/vanilla[stage=1]"
                 }
             },
-            "name": "Vanilla",
+            "name": "香草",
             "anchor": "vanilla",
             "text": "$(thing)野生香草$()生長在温度18-30°C、降雨量200-500mm的區域。",
             "enable_visualize": false
@@ -668,7 +668,7 @@
                     "X": "firmalife:plant/butterfly_grass"
                 }
             },
-            "name": "Butterfly Grass",
+            "name": "蝴蝶草",
             "anchor": "butterfly_grass",
             "text": "蝴蝶草。",
             "enable_visualize": false
@@ -679,7 +679,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "延伸閱讀",
             "anchor": "relations",
             "entries": [
                 "tfg:the_world/wild_fruits",

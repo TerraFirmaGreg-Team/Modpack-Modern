@@ -111,6 +111,7 @@
   "sodium.extras.options.zoom.min.desc": "Maksymalne powiększenie FOV.",
   "sodium.extras.options.zoom.min.title": "Minimalna wartość FOV",
   "sodium.extras.options.zoom.page": "Powiększenie",
+  "sodium.extras.options.zoom.quadratics.desc": "Jeśli true, procent powiększenia zostanie podniesiony do kwadratu przed zastosowaniem.\nDzięki temu różnice FOV są bardziej równomierne. Jeśli nie rozumiesz, do czego to służy, lepiej zostaw włączone.",
   "sodium.extras.options.zoom.quadratics.title": "Użyj współczynników kwadratowych",
   "sodium.extras.options.zoom.scrolling.title": "Powiększenie kółkiem myszy",
   "sodium.extras.options.zoom.sensitive.title": "Czułość myszy",

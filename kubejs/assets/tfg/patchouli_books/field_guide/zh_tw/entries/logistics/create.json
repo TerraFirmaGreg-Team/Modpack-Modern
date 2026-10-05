@@ -1,52 +1,52 @@
 {
-	"name": "Create Logistics",
+	"name": "機械動力物流",
 	"category": "tfg:logistics",
 	"icon": "create:cardboard_package_12x12",
 	"read_by_default": true,
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"title": "Contents",
+			"title": "目錄",
 			"anchor": "index",
-			"text": "$(li)$(bold)$(l:logistics/create#packages)Packages$()$(li2)$(l:logistics/create#packager)Packager$()$(li2)$(l:logistics/create#frogport)Frogports$()$(li2)$(l:logistics/create#package_filter)Package Filter$()$(li2)$(l:logistics/create#repackager)Re-Packager$()$(li2)$(l:logistics/create#unpackager)Unpackager$()$(li2)$(l:logistics/create#clipboard)Clipboard and Hand Pointer$()$(li2)$(l:logistics/create#postbox)Postbox$()$(li2)$(l:logistics/create#package_tips)Tips$()"
+			"text": "$(li)$(bold)$(l:logistics/create#packages)包裹$()$(li2)$(l:logistics/create#packager)打包機$()$(li2)$(l:logistics/create#frogport)青蛙港$()$(li2)$(l:logistics/create#package_filter)包裹過濾器$()$(li2)$(l:logistics/create#repackager)重新打包機$()$(li2)$(l:logistics/create#unpackager)拆包機$()$(li2)$(l:logistics/create#clipboard)寫字板與指示手$()$(li2)$(l:logistics/create#postbox)郵筒$()$(li2)$(l:logistics/create#package_tips)小技巧$()"
 		},
 		{
 			"type": "patchouli:text",
 			"title": " ",
-			"text": "$(br)$(li)$(bold)$(l:logistics/create#high_logistics)High Logistics$()$(li2)$(l:logistics/create#rose_quartz)Rose Quartz$()$(li2)$(l:logistics/create#exquisite)Transmitter$()$(li2)$(l:logistics/create#stock_link)Stock Link$()$(li2)$(l:logistics/create#stock_ticker)Stock Ticker$()$(li2)$(l:logistics/create#stock_bridge)AE2 Stock Bridge$()$(li2)$(l:logistics/create#requester)Redstone Requester$()$(li2)$(l:logistics/create#table_cloths)Table Cloths$()$(li2)$(l:logistics/create#factory_gauge)Factory Gauge$()"
+			"text": "$(br)$(li)$(bold)$(l:logistics/create#high_logistics)高階物流$()$(li2)$(l:logistics/create#rose_quartz)玫瑰石英$()$(li2)$(l:logistics/create#exquisite)傳輸器$()$(li2)$(l:logistics/create#stock_link)庫存連結器$()$(li2)$(l:logistics/create#stock_ticker)庫存看板$()$(li2)$(l:logistics/create#stock_bridge)AE2 庫存橋接器$()$(li2)$(l:logistics/create#requester)紅石請求器$()$(li2)$(l:logistics/create#table_cloths)桌布$()$(li2)$(l:logistics/create#factory_gauge)工廠儀表$()"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Made it to the Steam Age? $(thing)Create Logistics$() will improve your item transportation and storage capabilities significantly. Later on in $(7)LV$() you'll even be able to to automatically order specific items or route them around your base! As this is $(thing)Create$(), this means $(thing)Pondering the machines$() (hold $(item)$(k:key.ponder.ponder)$()) will be your best source of information aside from here, so be sure to look through them too."
+			"text": "撐到蒸汽時代了嗎？$(thing)機械動力物流$()能大幅提升你的物品運輸和儲存能力。到了 $(7)LV$() 階段，你甚至能自動訂購特定物品，或在基地中規劃它們的路線！由於這是$(thing)機械動力$()，除了這本書以外，$(thing)思索機器$()(按住 $(item)$(k:key.ponder.ponder)$())會是你最好的資訊來源，記得也去看看。"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Packages",
+			"title": "包裹",
 			"anchor": "packages",
 			"item": "create:cardboard_package_12x10,create:cardboard_package_10x8,create:cardboard_package_10x12,create:cardboard_package_12x12",
-			"text": "Everything to do with Create Logistics revolves around $(item)Packages$(). Each package can contain 9 slots' worth of items.$(br2)Packages also have an $(thing)address$(), which determines where the package should go. The rest of the logistics system is all about how to move the packages to these destinations!"
+			"text": "機械動力物流的一切都圍繞著$(item)包裹$()。每個包裹可以裝 9 格的物品。$(br2)包裹也有一個$(thing)地址$()，決定包裹要送往哪裡。整個物流系統的其他部分，就是在處理如何把包裹送到這些目的地！"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Fluid Packages",
+			"title": "流體包裹",
 			"item": "fluidlogistics:fluid_package,fluidlogistics:fluid_package_exposed,fluidlogistics:fluid_package_weathered,fluidlogistics:fluid_package_oxidized",
-			"text": "$(item)Fluid Packages$() are the equivalent for $(thing)fluids$(). Each fluid package can hold $(thing)10,000mB$(), or ten buckets.$(br2)$(bold)Tip:$() $(item)$(k:key.sneak) + $(k:key.use)$() an item package to open it! Mechanical Saws can also do this automatically."
+			"text": "$(item)流體包裹$()是$(thing)流體$()版的包裹。每個流體包裹可以裝 $(thing)10,000mB$()，也就是十桶。$(br2)$(bold)小技巧：$()對物品包裹按 $(item)$(k:key.sneak) + $(k:key.use)$() 就能打開它！動力鋸也能自動完成這件事。"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "create:packager,fluidlogistics:fluid_packager",
 			"anchor": "packager",
-			"text": "When provided with a $(thing)redstone signal$(), the $(item)Packager$() will wrap up items from the container it is attached to (you can switch the connection side with a $(item)wrench$()) and output a neat little cardboard package.$(br)$(bold)Note:$() Despite the crafting recipe, the packager works without any additional cardboard, so don't worry about upkeep!"
+			"text": "收到$(thing)紅石訊號$()時，$(item)打包機$()會把它所連接容器中的物品包起來(可以用$(item)扳手$()切換連接的面)，輸出一個整齊的小紙箱包裹。$(br)$(bold)注意：$()雖然合成配方需要紙板，但打包機運作時不需要額外的紙板，所以不用擔心維護成本！"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Putting a $(item)Sign$() on the Packager will make it automatically label the sign's contents onto all packages as a destination address. This will be more useful once you start working with various ways to route packages around. $(c)Note that Framed Signs do not work for this purpose!$()$(br2)Packagers can also unwrap any packages that get put into it, unloading their contents into the attached inventory."
+			"text": "在打包機上放一個$(item)告示牌$()，它就會自動把告示牌上的內容標記到所有包裹上，作為目的地地址。等你開始使用各種方式規劃包裹路線時，這會更有用。$(c)注意：Framed Blocks 的告示牌無法用於此用途！$()$(br2)打包機也能拆開放進去的包裹，把內容物卸到所連接的物品欄中。"
 		},
 		{
 			"type": "patchouli:multiblock",
 			"enable_visualize": false,
-			"text": "This setup will automatically extract everything from the chest into packages, which can then be sent elsewhere.",
-			"name": "Packaging Items",
+			"text": "這個裝置會自動把箱子中的所有物品取出並打包，之後就能送往其他地方。",
+			"name": "打包物品",
 			"multiblock": {
 				"pattern": [
 					[
@@ -72,8 +72,8 @@
 		{
 			"type": "patchouli:multiblock",
 			"enable_visualize": false,
-			"text": "Any packages inserted into this packager will automatically be unpackaged and inserted into the $(l:logistics/storage#crates)Crate$().",
-			"name": "Unpackaging Items",
+			"text": "放進這台打包機的包裹，都會自動拆開並放進$(l:logistics/storage#crates)板條箱$()中。",
+			"name": "拆包物品",
 			"multiblock": {
 				"pattern": [
 					[
@@ -97,8 +97,8 @@
 		{
 			"type": "patchouli:multiblock",
 			"enable_visualize": false,
-			"text": "$(item)Fluid Packagers$() work the same way.",
-			"name": "Packaging Fluids",
+			"text": "$(item)流體打包機$()的運作方式相同。",
+			"name": "打包流體",
 			"multiblock": {
 				"pattern": [
 					[
@@ -130,8 +130,8 @@
 		{
 			"type": "patchouli:multiblock",
 			"enable_visualize": false,
-			"text": "It does not need a pump to move fluids into or out of their attached container.",
-			"name": "Unpackaging Fluids",
+			"text": "它不需要幫浦就能把流體送進或送出所連接的容器。",
+			"name": "拆包流體",
 			"multiblock": {
 				"pattern": [
 					[
@@ -155,26 +155,26 @@
 		{
 			"type": "patchouli:spotlight",
 			"item": "create:package_frogport,fluidlogistics:copper_frogport",
-			"title": "Frogports",
+			"title": "青蛙港",
 			"anchor": "frogport",
-			"text": "$(item)Package Frogports$() are one of three ways you can move packages around and get them to where you want them to be. They can hang packages onto $(item)Chain Conveyor$() lines to be transported along the chain connections. To use them, you first need a network of $(item)Chain Conveyors$() connected to each other using $(t:Any kind of TFC chain will work)$(6)chains$(), and then power the chain conveyors with rotation."
+			"text": "$(item)包裹青蛙港$()是三種搬運包裹、把包裹送到目的地的方式之一。它可以把包裹掛到$(item)鏈條輸送機$()路線上，沿著鏈條連接運送。要使用它，你需要先用$(t:任何一種 TFC 的鏈條都可以)$(6)鏈條$()把$(item)鏈條輸送機$()互相連接成網路，再為鏈條輸送機提供旋轉動力。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(item)$(k:key.use)$() a chain before placing down a Frogport to have it interact with that segment of chain.$(br2)Frogports placed directly on top of a $(l:logistics/create#packager)Packager$() automatically hang up packages that are created in said Packager.$(br2)$(bold)Note:$() Either frogport will work with both item and fluid packagers and packages. The only difference is that the copper one can be placed on any side of a block."
+			"text": "放下青蛙港之前，先對一條鏈條按$(item)$(k:key.use)$()，青蛙港就會與那段鏈條互動。$(br2)直接放在$(l:logistics/create#packager)打包機$()上方的青蛙港，會自動把該打包機產生的包裹掛上去。$(br2)$(bold)注意：$()兩種青蛙港都能用於物品和流體的打包機與包裹，唯一的差別是銅製的可以放在方塊的任何一面。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Frogports can also receive packages in addition to sending them. If you $(item)$(k:key.use)$() on a Frogport, you can see that it has a name you can edit.$(br2)This name acts as an $(thing)address$(): if any packages that are labelled with a destination address matches this name, the Frogport will $(thing)automatically collect them$() by taking them off the chain network!"
+			"text": "青蛙港除了發送包裹，也能接收包裹。對青蛙港按$(item)$(k:key.use)$()，就會看到它有一個可以編輯的名稱。$(br2)這個名稱就是$(thing)地址$()：只要包裹上標記的目的地地址符合這個名稱，青蛙港就會從鏈條網路上把它取下，$(thing)自動收取$()！"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "This collected package will be put into the inventory of the block the Frogport is placed on.$(br2)As long as the chain network is connected to the input and output Frogports $(o)somehow$(), the package will eventually find its own way, although you may want to optimize the paths to reduce package travel time on your own."
+			"text": "收取的包裹會放進青蛙港所在方塊的物品欄中。$(br2)只要鏈條網路$(o)以某種方式$()連接到輸入和輸出的青蛙港，包裹最終都會自己找到路，不過你可能會想自行優化路徑，縮短包裹的運送時間。"
 		},
 		{
 			"type": "patchouli:image",
-			"text": "A small setup to send and receive items.",
-			"title": "Frogports",
+			"text": "一個用來發送和接收物品的小型裝置。",
+			"title": "青蛙港",
 			"border": true,
 			"images": [
 				"tfg:textures/gui/field_guide/frogports.png"
@@ -184,100 +184,100 @@
 			"type": "patchouli:spotlight",
 			"item": "create:package_filter",
 			"anchor": "package_filter",
-			"text": "Packages can be routed using the specialized $(item)Package Filter$(), which can be used just like a filter in any $(thing)Create$() machine that supports filter slots, such as $(item)Brass Funnels$(). Just $(item)$(k:key.use)$() while holding the filter and type in the address that should be filtered, and any packages with that specified destination address will be let through."
+			"text": "包裹可以用專門的$(item)包裹過濾器$()來規劃路線。它的用法就像任何支援過濾欄位的$(thing)機械動力$()機器(例如$(item)黃銅漏斗$())中的過濾器。只要拿著過濾器按$(item)$(k:key.use)$()，輸入要過濾的地址，所有符合該目的地地址的包裹就會通過。"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "create:repackager",
 			"anchor": "repackager",
-			"text": "The $(item)Re-Packager$() can combine multiple item packages into a single package. This is useful if a request's items are being sourced from different locations, but need to reach their destination at exactly the same time.$(br2)It can also separate a combined package back into its components."
+			"text": "$(item)重新打包機$()可以把多個物品包裹合併成一個包裹。如果一份請求的物品來自不同地點，卻需要在同一時間抵達目的地，這就很有用。$(br2)它也能把合併的包裹拆回原本的組成包裹。"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "fluidlogistics:fluid_repackager",
 			"anchor": "unpackager",
-			"text": "The $(item)Unpackager$() is similar to a $(l:logistics/create#repackager)Repackager$(), but it can combine item and fluid packages into one, and vice versa."
+			"text": "$(item)拆包機$()和$(l:logistics/create#repackager)重新打包機$()類似，但可以把物品包裹和流體包裹合併成一個，反之亦然。"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "fluidlogistics:hand_pointer,create:clipboard",
-			"title": "Tight on space?",
+			"title": "空間不夠嗎？",
 			"anchor": "clipboard",
-			"text": "The $(item)Hand Pointer$() and $(item)Clipboard$() can be used to power packagers and set addresses without any adjacent block.$(br2)To use the $(item)Hand Pointer$(), just $(item)$(k:key.use)$() on any packager or re-packager to force it to be powered, no redstone signal needed!"
+			"text": "$(item)指示手$()和$(item)寫字板$()可以在旁邊沒有任何方塊的情況下，為打包機供能和設定地址。$(br2)要使用$(item)指示手$()，只要對任何打包機或重新打包機按$(item)$(k:key.use)$()，就能強制為它供能，不需要紅石訊號！"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "The $(item)Hand Pointer$() can also be used to change the target of $(l:logistics/create#frogport)Frogports$() after they have been placed. To do so, while holding the $(item)Hand Pointer$(), $(item)$(k:key.use)$() the $(item)Frogport$() you want to change, then $(item)$(k:key.use)$() the new point on the chain to connect to.$(br2)To set an address, get an empty $(item)Clipboard$() and type the address you want on the first line $(c)(make sure to start the line with a \"#\")$(), then $(item)$(k:key.use)$() on any packager to set the address, no sign needed!"
+			"text": "$(item)指示手$()也可以在$(l:logistics/create#frogport)青蛙港$()放置後更改它的目標。方法是拿著$(item)指示手$()，對要更改的$(item)青蛙港$()按$(item)$(k:key.use)$()，再對鏈條上要連接的新位置按$(item)$(k:key.use)$()。$(br2)要設定地址，請拿一個空白的$(item)寫字板$()，在第一行輸入你要的地址$(c)(記得以「#」開頭)$()，再對任何打包機按$(item)$(k:key.use)$()即可設定地址，不需要告示牌！"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "tag:create:postboxes",
-			"title": "Postboxes",
+			"title": "郵筒",
 			"anchor": "postbox",
-			"text": "$(item)Postboxes$() are used to route packages around using $(l:logistics/trains)Train Networks$(). You first $(item)$(k:key.use)$() a $(l:logistics/trains#station)Train Station$() to link the Postbox to that station before placing it, and from then on any trains that stop there will be able to interact with the Postbox (given it is within 4 blocks of the station)."
+			"text": "$(item)郵筒$()透過$(l:logistics/trains)鐵路網$()規劃包裹的路線。放置前，先對$(l:logistics/trains#station)火車站點$()按$(item)$(k:key.use)$()，把郵筒連結到該站點；之後任何停靠在那裡的火車都能與郵筒互動(郵筒必須在站點 4 格範圍內)。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Much like $(l:logistics/create#frogport)Package Frogports$(), they can be named. Passing trains will then pick up any packages whose destination does not match the Postbox's name.$(br2)Furthermore, if the train has any packages in its inventories that $(italic)do$() match the Postbox, they will be passed into the Postbox's inventory instead."
+			"text": "和$(l:logistics/create#frogport)包裹青蛙港$()一樣，郵筒也可以命名。經過的火車會收走所有目的地與郵筒名稱不符的包裹。$(br2)此外，如果火車物品欄中有$(italic)符合$()該郵筒名稱的包裹，就會改為放進郵筒的物品欄中。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "One last cool thing about $(item)Postboxes$() is that when extracting automatically from them (via chutes, funnels, etc), only packages with a destination that $(thing)matches the Postbox's name$() will be taken out and any packages with a different destination will remain inside to be loaded onto trains later."
+			"text": "$(item)郵筒$()還有最後一個很酷的特點：從郵筒自動抽取物品時(透過滑槽、漏斗等)，只有目的地$(thing)符合郵筒名稱$()的包裹會被取出，目的地不同的包裹則會留在裡面，等待之後裝上火車。"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "package_tips",
-			"title": "Package Tips",
-			"text": "Packages are randomly created from a selection of four* possible items, so stuff like GregTech's $(item)Item Filters$() will be $(thing)very tedious to set up$()! We recommend using the $(l:logistics/create#package_filter)Package Filter$() wherever you can, but...$(br2)$(7)* Four for fluids, and actually a lot more for items, as there's several secret rare variants$()"
+			"title": "包裹小技巧",
+			"text": "包裹會從四種*可能的外觀中隨機產生，所以像 GregTech 的$(item)物品過濾器$()這類東西會$(thing)非常難設定$()！我們建議盡可能使用$(l:logistics/create#package_filter)包裹過濾器$()，不過……$(br2)$(7)* 流體是四種，物品其實多得多，因為還有好幾種秘密的稀有款式$()"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "...If you really want to try using other methods to move packages around, the destination address is stored as NBT data in the tag $(thing)Address$(). For example, a package with the destination address \"Home\" will have in its NBT data: $(thing){Address:\"Home\"}$().$(br2)$(o)(Continued on next page...)"
+			"text": "……如果你真的想試著用其他方式搬運包裹，目的地地址是以 NBT 資料儲存在 $(thing)Address$() 標籤中。例如，目的地地址為「Home」的包裹，NBT 資料中會有：$(thing){Address:\"Home\"}$()。$(br2)$(o)(接下頁……)"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Package address filtering actually supports a simplified form of $(l:https://en.wikipedia.org/wiki/Regular_expression)RegEx$(). This means you can:$(br)$(li)Match any length of string with $(bold)*$()$(li)Match any single character with $(bold)?$()$(li)Match a single character from a group of characters surrounded by $(bold)[]$() (e.g. A[cr]t will match 'Act' and 'Art', but not 'Ant')"
+			"text": "包裹地址過濾其實支援簡化版的$(l:https://en.wikipedia.org/wiki/Regular_expression)正規表示式$()。這代表你可以：$(br)$(li)用 $(bold)*$() 匹配任意長度的字串$(li)用 $(bold)?$() 匹配任意單一字元$(li)用 $(bold)[]$() 匹配括號內字元群組中的單一字元(例如 A[cr]t 會匹配「Act」和「Art」，但不匹配「Ant」)"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(li)Match a single character that does not belong to a group of characters surrounded by $(bold)[! ]$() (e.g. A[!cr]t will match 'Aft' and 'Apt', but not 'Act' or 'Art')$(li)Match a string from a list of strings given inside $(bold){}$() (e.g. TerraFirma{Craft,Greg} will match both TerraFirma$(thing)Craft$() and TerraFirma$(thing)Greg$())$(li)All previous symbols can be escaped. For example, A$(bold)\\$()* will be read as A* and only match 'A*'."
+			"text": "$(li)用 $(bold)[! ]$() 匹配不屬於括號內字元群組的單一字元(例如 A[!cr]t 會匹配「Aft」和「Apt」，但不匹配「Act」或「Art」)$(li)用 $(bold){}$() 匹配括號內字串清單中的一個字串(例如 TerraFirma{Craft,Greg} 會同時匹配 TerraFirma$(thing)Craft$() 和 TerraFirma$(thing)Greg$())$(li)前面所有的符號都可以跳脫。例如，A$(bold)\\$()* 會被讀成 A*，只匹配「A*」。"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "create:transmitter",
 			"anchor": "high_logistics",
-			"title": "High Logistics",
-			"text": "Moving packages around is good and all, but surely that can't be all there is? Well, you're exactly right. There's much more that can be done with packages, including $(thing)reading inventory contents$() and $(thing)having things be delivered remotely$(), and later on even $(thing)automatically sending ingredients to be processed$() based on an item's threshold!"
+			"title": "高階物流",
+			"text": "搬運包裹固然不錯，但總不會只有這樣吧？沒錯，你說對了。包裹還能做更多事，包括$(thing)讀取物品欄內容$()、$(thing)遠端配送物品$()，之後甚至能依照物品的數量門檻，$(thing)自動送出材料進行加工$()！"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "But before delving into $(thing)High Logistics$(), some preparations are in order.$(br2)The $(item)Transmitters$() that would be required for crafting such equipment can only realistically be produced via high-energy light refracted through a very unique mineral: $(item)Rose Quartz$(). In other words, we need both a $(item)Basic Laser Engraver$() and some way of obtaining a $(item)Rose Quartz Lens$(), so you better get to getting these done, eh?"
+			"text": "不過在深入$(thing)高階物流$()之前，需要先做一些準備。$(br2)製作這類設備所需的$(item)傳輸器$()，實際上只能透過以高能量光線折射穿過一種非常獨特的礦物來生產：$(item)玫瑰石英$()。換句話說，我們需要一台$(item)基礎雷射雕刻機$()，以及取得$(item)玫瑰石英透鏡$()的方法，所以趕快把這些搞定吧！"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "greate:rich_raw_rose_quartz,greate:raw_rose_quartz,greate:poor_raw_rose_quartz",
-			"title": "Rose Quartz",
+			"title": "玫瑰石英",
 			"anchor": "rose_quartz",
-			"text": "The only natural source of $(item)Rose Quartz$() of a high enough quality to easily craft the $(item)Lens$() out of is located far, far to the north in freezing temperatures (under $(3)-10°C$()). Getting Kaolin clay flashbacks yet?"
+			"text": "品質高到足以輕鬆製作$(item)透鏡$()的$(item)玫瑰石英$()，唯一的天然來源位於遙遠北方的嚴寒地帶(低於 $(3)-10°C$())。是不是想起找高嶺土的回憶了？"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Rose Quartz only forms in the cores of ancient glaciers. Although not common, these are easily identified by their $(9)Blue Ice$() outer shells.$(br2)Besides the temperature requirement, they only spawn in $(thing)Ice Sheet$() or $(thing)Glaciated$() biomes.$(br2)The $(item)Rose Quartz$() will be found inside - first as ore, then as compressed raw ore blocks in the very center."
+			"text": "玫瑰石英只會在古老冰川的核心中形成。雖然不常見，但很容易從它們的$(9)藍冰$()外殼辨認出來。$(br2)除了溫度條件以外，它們只會在$(thing)冰蓋$()或$(thing)冰川$()生態域中生成。$(br2)$(item)玫瑰石英$()就在裡面：外層是礦石，正中央則是壓縮的粗礦方塊。"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "greate:exquisite_rose_quartz_gem,greate:rose_quartz_lens",
 			"anchor": "exquisite",
-			"text": "What we need is $(item)Exquisite Rose Quartz$(), which you can get by $(thing)crushing, washing, and then sifting$() the raw ore you mined. The Exquisite gem has a 3% chance of being sifted out, but you only need one such gem to proceed.$(br2)$(c)Do not smelt the ore as this will only get you normal quality Rose Quartz$()!"
+			"text": "我們需要的是$(item)精緻玫瑰石英$()，把開採到的粗礦$(thing)粉碎、洗滌，再篩選$()就能取得。精緻寶石有 3% 的機率被篩出，但你只需要一顆就能繼續推進。$(br2)$(c)不要熔煉礦石，否則只會得到普通品質的玫瑰石英$()！"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "The same preparations you once may have made for $(l:craftsmanship/pottery#kaolin_clay)Kaolin Clay$() will apply here as well: Prepare a lot of $(l:cooking)food$(), portable water to $(l:cooking/drinking_containers)drink$(), $(thing)warm clothes$(), and some transportation. ($(l:logistics/boats)Boats$() are nice, but $(thing)Aircraft$() should be well within your reach at this point)."
+			"text": "你當初為了$(l:craftsmanship/pottery#kaolin_clay)高嶺土$()所做的準備，在這裡同樣適用：準備大量$(l:cooking)食物$()、可攜帶的$(l:cooking/drinking_containers)飲用水$()、$(thing)保暖衣物$()以及交通工具。($(l:logistics/boats)船$()不錯，但到了這個階段，$(thing)飛行器$()應該也做得出來了。)"
 		},
 		{
 			"type": "patchouli:image",
-			"text": "$(thing)Glaciar Cores$() are surrounded by small buds of Rose Quartz. They are easily identifiable on your map.",
-			"title": "A Glaciar Core",
+			"text": "$(thing)冰川核心$()周圍有小顆的玫瑰石英芽，在地圖上很容易辨認。",
+			"title": "冰川核心",
 			"border": true,
 			"images": [
 				"tfg:textures/gui/field_guide/rose_quartz.png"
@@ -287,17 +287,17 @@
 			"type": "patchouli:spotlight",
 			"item": "create:stock_link",
 			"anchor": "stock_link",
-			"text": "The first $(thing)High Logistics$() machine you can make is a $(thing)Stock Link$(), which can be used to create a $(thing)Logistics Network$(). When placed onto any side of a $(l:logistics/create#packager)Packager$(), the Stock Link will make the inventory the Packager is attached to visible to the network!"
+			"text": "你能製作的第一台$(thing)高階物流$()機器是$(thing)庫存連結器$()，可以用來建立$(thing)物流網路$()。把庫存連結器放在$(l:logistics/create#packager)打包機$()的任何一面，打包機所連接的物品欄就會在網路上顯示！"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "On its own, the Stock Link isn't super useful, but it is a core component of all the other machines yet to come...$(br2)Remember to $(item)$(k:key.use)$() on an existing Stock Link before placing one down to tune the two to share the same network. To cancel this, you can simply craft the Stock Link by itself to clear its attunement.$(br2)Check the $(thing)ponder$() for more information!"
+			"text": "單獨使用時，庫存連結器沒什麼用，但它是之後所有機器的核心組件……$(br2)放下庫存連結器之前，記得先對現有的庫存連結器按$(item)$(k:key.use)$()，讓兩者調頻到同一個網路。要取消調頻，只要把庫存連結器單獨放進合成格合成一次即可清除。$(br2)更多資訊請查看$(thing)思索$()！"
 		},
 		{
 			"type": "patchouli:multiblock",
 			"enable_visualize": false,
-			"text": "The $(l:logistics/create#packager)Packager$() will only create a package when the Stock Link receives a signal from $(l:logistics/create#stock_ticker)elsewhere$() on the network.",
-			"name": "Example",
+			"text": "只有當庫存連結器收到網路上$(l:logistics/create#stock_ticker)其他地方$()傳來的訊號時，$(l:logistics/create#packager)打包機$()才會產生包裹。",
+			"name": "範例",
 			"multiblock": {
 				"pattern": [
 					[
@@ -321,21 +321,21 @@
 			"type": "patchouli:spotlight",
 			"item": "create:stock_ticker",
 			"anchor": "stock_ticker",
-			"text": "If you've already used $(l:logistics/create#stock_link)Stock Links$() to provide various items to a $(thing)Logistics Network$(), the next step is to make something that can call in said items remotely... And that's where the $(item)Stock Ticker$() comes in. Much like the Stock Link, you first need to $(item)$(k:key.use)$() an existing link to attune the Ticker to that network."
+			"text": "如果你已經用$(l:logistics/create#stock_link)庫存連結器$()把各種物品提供給$(thing)物流網路$()，下一步就是做一個能遠端叫貨的東西……這就輪到$(item)庫存看板$()登場了。和庫存連結器一樣，你需要先對現有的連結器按$(item)$(k:key.use)$()，讓看板調頻到該網路。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "You then need to place down a $(item)Blaze Burner$() or any mob in a $(l:logistics/trains#seat)Seat$() next to the Stock Ticker to have them work as a $(thing)Stock Keeper$().$(br2)Now that the poor creature is indentured for life, you can click on them to see all the items on the $(thing)Logistics Network$(). You can even search for items in the network, and create an order to be sent to specific addresses!"
+			"text": "接著，在庫存看板旁邊放一個$(item)烈焰人燃燒室$()，或讓任何生物坐在$(l:logistics/trains#seat)座椅$()上，讓它們擔任$(thing)店員$()。$(br2)既然這可憐的生物已經被終身綁約了，你可以點擊牠來查看$(thing)物流網路$()上的所有物品。你甚至可以搜尋網路中的物品，並建立訂單送到指定的地址！"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "There's no range limitation for this, although you do need to create your own way of routing around the packages that will be ordered through the Stock Links as well as have the link in question chunkloaded for this to work.$(br2)Additionally, you can place $(item)Filters$() inside the Ticker so that only specific items are shown, or set up categories of items."
+			"text": "這項功能沒有距離限制，不過你需要自行規劃透過庫存連結器訂購的包裹路線，而且相關的連結器所在的區塊必須保持載入才能運作。$(br2)此外，你可以在看板中放入$(item)過濾器$()，只顯示特定物品，或是設定物品分類。"
 		},
 		{
 			"type": "tfg:multimultiblock",
 			"enable_visualize": false,
-			"text": "Place a mob on the seat, then $(item)$(k:key.use)$() them to request items which will be deposited in the $(l:logistics/storage#crates)Steel Crate$().",
-			"name": "Minimum Setup",
+			"text": "讓一隻生物坐在座椅上，再對牠按$(item)$(k:key.use)$()請求物品，物品會存放到$(l:logistics/storage#crates)鋼板條箱$()中。",
+			"name": "最小配置",
 			"multiblocks": [
 				{
 					"pattern": [
@@ -414,71 +414,71 @@
 			"type": "patchouli:spotlight",
 			"item": "create:redstone_requester",
 			"anchor": "requester",
-			"text": "The $(item)Redstone Requester$() can be seen as a more specialized $(l:logistics/create#stock_ticker)Stock Ticker$(). You can't view items in the $(thing)Logistics Network$() from it, but you can set up an order to be requested automatically every time the machine gets a redstone signal."
+			"text": "$(item)紅石請求器$()可以看成是功能更專一的$(l:logistics/create#stock_ticker)庫存看板$()。你無法從它查看$(thing)物流網路$()中的物品，但可以設定一份訂單，每當機器收到紅石訊號時就自動提出請求。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "This can be very useful for setting up automated provision of specific items - consider using a $(l:logistics/redstone_devices#threshold_switch)Threshold Switch$() or $(l:logistics/redstone_devices#smart_observer)Smart Observer$() alongside this, for example.$(br2)Remember that like any other $(thing)High Logistics$() machine, you need to $(item)$(k:key.use)$() on an existing link before placing the Requester down to attune it to that network first!"
+			"text": "這對設定特定物品的自動供應非常有用。例如，可以考慮搭配$(l:logistics/redstone_devices#threshold_switch)閾值開關$()或$(l:logistics/redstone_devices#smart_observer)智慧偵測器$()一起使用。$(br2)記得和其他$(thing)高階物流$()機器一樣，放下請求器之前，要先對現有的連結器按$(item)$(k:key.use)$()，讓它調頻到該網路！"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "tag:create:table_cloths",
-			"title": "Table Cloths",
+			"title": "桌布",
 			"anchor": "table_cloths",
-			"text": "$(item)Table Cloths$() are Create's system for player-owned shops! Each Table Cloth can sell one item. You'll need a small setup with a $(l:logistics/create#stock_ticker)Stock Ticker$(), $(l:logistics/create#packager)Packager$(), and a $(thing)Stock Keeper$() (a Blaze Burner or mob in a seat) to get started."
+			"text": "$(item)桌布$()是機械動力的玩家商店系統！每塊桌布可以販售一種物品。你需要一個由$(l:logistics/create#stock_ticker)庫存看板$()、$(l:logistics/create#packager)打包機$()和$(thing)店員$()(坐在座椅上的烈焰人燃燒室或生物)組成的小型裝置才能開始。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(item)$(k:key.use)$() the Stock Keeper with your $(item)Table Cloth$(), then select the item to sell. Then just place the Table Cloth down on a block or some $(item)Scaffolding$().$(br2)After it's placed, $(item)$(k:key.use)$() the slot in the front of the Table Cloth with an item you want as payment. Afterwards, $(item)$(k:key.use)$() and hold to change the amount of that item."
+			"text": "手持$(item)桌布$()對店員按$(item)$(k:key.use)$()，然後選擇要販售的物品。接著把桌布放在方塊或$(item)鷹架$()上即可。$(br2)放置後，手持你想收取作為付款的物品，對桌布前方的欄位按$(item)$(k:key.use)$()。之後按住$(item)$(k:key.use)$()可以調整該物品的數量。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "To buy items from another player's shop, $(item)$(k:key.use)$() the Table Cloths with an empty hand to add them to a $(thing)Shopping List$().$(br2)Once they're ready, $(item)$(k:key.use)$() the Stock Keeper with the Shopping List to buy the items!$(br2)A Shopping List can be cleared by $(item)$(k:key.sneak) + $(k:key.use)$(). Payment is then stored in the Stock Ticker, and the shop owner can collect it later or send it back to their base!"
+			"text": "要向其他玩家的商店購買物品，請空手對桌布按$(item)$(k:key.use)$()，把它們加入$(thing)購物清單$()。$(br2)準備好之後，手持購物清單對店員按$(item)$(k:key.use)$()就能購買物品！$(br2)按 $(item)$(k:key.sneak) + $(k:key.use)$() 可以清空購物清單。付款會存放在庫存看板中，店主之後可以收取，或把它送回自己的基地！"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "createstockbridge:ae_bridge",
 			"anchor": "stock_bridge",
-			"text": "If you invested heavily into Create's logistics network, you might despair at the thought of having to tear it all down to replace it with AE2 in $(6)HV$(). The $(item)Stock Bridge$() acts as a bridge between your ME network and your Create one. Check its Ponder to learn how to set it up.$(br)We still recommend moving over any old setups to AE2 eventually, mostly because it's much lighter on your game's performance."
+			"text": "如果你在機械動力的物流網路上投入了大量心血，想到在 $(6)HV$() 階段必須全部拆掉換成 AE2，可能會感到絕望。$(item)庫存橋接器$()可以在你的 ME 網路和機械動力網路之間搭起橋梁。查看它的思索就能了解如何設定。$(br)我們仍然建議最終把舊的裝置都轉移到 AE2，主要是因為 AE2 對遊戲效能的負擔輕得多。"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "create:factory_gauge,fluidlogistics:fluid_factory_gauge",
 			"anchor": "factory_gauge",
-			"title": "Factory Gauge",
-			"text": "The $(item)Factory Gauge$() is the ultimate $(thing)High Logistics$() machine, requiring you to have the technology to make both $(item)Aluminium$() and $(item)Diodes$() before you can craft one - But it's extremely powerful to match."
+			"title": "工廠儀表",
+			"text": "$(item)工廠儀表$()是終極的$(thing)高階物流$()機器，你必須具備製作$(item)鋁$()和$(item)二極體$()的技術才能合成，但它的功能也強大到與之相稱。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "The first thing a Factory Gauge can do is be placed on a $(l:logistics/create#packager)Packager$() to monitor the amount of a specific item in the connected inventory. When set up like this, the gauge's outer border will be $(1)Blue$() and it is said to be in $(thing)Restocker Mode$().$(br2)The other way of using a Factory Gauge is to have it automatically ordering ingredients when the amount of target products in a $(thing)Logistics Network$() falls below a threshold."
+			"text": "工廠儀表的第一種用法，是放在$(l:logistics/create#packager)打包機$()上，監控所連接物品欄中特定物品的數量。這樣設定時，儀表的外框會呈現$(1)藍色$()，稱為$(thing)補貨模式$()。$(br2)另一種用法，是當$(thing)物流網路$()中目標產物的數量低於門檻時，自動訂購材料。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "This is the operating mode when the gauge is placed on any block that is not a Packager; the outer border will be $(6)Yellow$(), and it is said to be in $(thing)Recipe Mode$().$(br2)In either mode, You can set a specific value that the Factory Gauge should attempt to maintain. You then have to set a target address in the GUI which is where the automatic order made will be directed to a target address of your choice."
+			"text": "當儀表放在打包機以外的任何方塊上時，就會以這種模式運作：外框會呈現$(6)黃色$()，稱為$(thing)配方模式$()。$(br2)無論哪種模式，你都可以設定工廠儀表要嘗試維持的數值。接著必須在介面中設定目標地址，自動產生的訂單就會送往你選擇的地址。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "For the $(thing)Restocker Mode$(), the specified address should ideally point towards the packager the gauge has been placed on so that the incoming packages are automatically unwrapped into the target inventory.$(br2)For the $(thing)Recipe Mode$(), the specified address should point towards wherever you manufacture the product."
+			"text": "在$(thing)補貨模式$()下，指定的地址最好指向儀表所在的打包機，這樣送來的包裹就會自動拆開放進目標物品欄。$(br2)在$(thing)配方模式$()下，指定的地址應該指向你製造該產物的地方。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Additionally, you need to set up one additional gauge for each type of ingredient used, then connect them to the first gauge with $(thing)'Add New Connection'$() in the GUI.$(br2)If the product you are trying to craft in $(thing)Recipe Mode$() is a normal crafting recipe, you will need to $(thing)'Use Mechanical Crafting'$() and ensure that the package is unwraped into a 3x3 $(item)Mechanical Crafter$() array."
+			"text": "此外，你還需要為每一種使用到的材料各設置一個儀表，再透過介面中的$(thing)「新增連接」$()把它們連到第一個儀表。$(br2)如果你在$(thing)配方模式$()下要製作的產物是一般合成配方，就需要啟用$(thing)「使用動力合成」$()，並確保包裹會拆開放進 3x3 的$(item)動力合成器$()陣列中。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(c)It is important that the package is not unwrapped en route$(), as the package itself holds crafting recipe instructions - if the ingredients must come from different sources, look into using a $(l:logistics/create#repackager)Re-Packager$() to act as a buffer for the packages.$(br2)$(bold)Note:$() Factory Gauge requests are technically 'Promises', which are guarantees by the network that the items in question $(italic)will$() be delivered at some point in the future."
+			"text": "$(c)包裹在途中不能被拆開，這一點非常重要$()，因為包裹本身帶有合成配方的指令。如果材料必須來自不同的來源，可以考慮用$(l:logistics/create#repackager)重新打包機$()作為包裹的緩衝區。$(br2)$(bold)注意：$()工廠儀表的請求嚴格來說是「承諾」，也就是網路保證相關物品$(italic)將會$()在未來的某個時間點送達。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "This is done to prevent the items from being over-requested. By default, these promises never expire; This means the promise will remain in place forever if the items are unlikely to be delivered in the future.$(br2)You can change this behavior by adjusting the bottom section of the gauge GUI, which will limit how long promises stick around for."
+			"text": "這是為了避免物品被重複請求。預設情況下，這些承諾永遠不會過期；這代表如果物品不太可能在未來送達，承諾就會永遠存在。$(br2)你可以調整儀表介面底部的區塊來改變這個行為，限制承諾的有效時間。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Unsurprisingly, $(item)Fluid Factory Gauges$() are the same thing but for fluids.$(br2)Be sure to check out the $(thing)ponder$() for the Factory Gauges too! It has a $(italic)lot$() of visual examples of how to set it up.$(br2)$(bold)Note:$() If you get really into Gauges and wish you had more options, $(tfg_short) has optional compatibility with $(l:https://www.curseforge.com/minecraft/mc-mods/create-extra-gauges)Create: Extra Gauges$()! Just install the mod and new recipes will show up."
+			"text": "不出所料，$(item)流體工廠儀表$()就是流體版的工廠儀表。$(br2)也一定要看看工廠儀表的$(thing)思索$()！裡面有$(italic)大量$()設定方式的視覺化範例。$(br2)$(bold)注意：$()如果你真的很愛用儀表，希望有更多選擇，$(tfg_short)有選用的 $(l:https://www.curseforge.com/minecraft/mc-mods/create-extra-gauges)Create: Extra Gauges$() 相容支援！只要安裝這個模組，新的配方就會出現。"
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Further Reading",
+			"title": "延伸閱讀",
 			"anchor": "relations",
 			"entries": [
 				"tfg:logistics/redstone_devices",

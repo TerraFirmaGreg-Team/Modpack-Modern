@@ -162,7 +162,7 @@
 		},
 		{
 			"title": "Woda źródlana",
-			"text": "Drinking $(thing)Spring Water$() warms you up by 4°C and applies a small regeneration effect while standing in it, as well as warming you.",
+			"text": "Wypicie $(thing)wody źródlanej$() podnosi temperaturę twojego ciała o 4°C. Przebywanie w niej również cię ogrzewa i zapewnia słaby efekt regeneracji.",
 			"item": "tfc:bucket/spring_water",
 			"type": "patchouli:spotlight",
 			"anchor": "spring_water"
@@ -190,7 +190,7 @@
 		},
 		{
 			"title": "Jogurt",
-			"text": "$(thing)Yogurt$() provides dairy nutrition similarly to milk. It can also be mixed with fruit to make $(item)Fruit Yogurt$().$(br2)Yogurt will expire over time.$()",
+			"text": "$(thing)Jogurt$() dostarcza nabiału podobnie jak mleko. Można go też wymieszać z owocami, aby uzyskać $(item)jogurt owocowy$().$(br2)Jogurt z czasem się psuje.$()",
 			"type": "patchouli:spotlight",
 			"anchor": "yogurt",
 			"item": "tfg:food/yogurt,tfg:food/fruit_yogurt"
@@ -204,7 +204,7 @@
 		},
 		{
 			"title": "Płynny lód",
-			"text": "Drinking $(thing)Ice Slush$() cools you down by 4°C, perfect for summer! Also handy for traversing $(l:beneath/beneath)the Beneath$().",
+			"text": "Wypicie $(thing)pokruszonego lodu$() obniża twoją temperaturę o 4°C. Idealne na lato oraz do eksplorowania $(l:beneath/beneath)Głębin$().",
 			"type": "patchouli:spotlight",
 			"item": "gtceu:ice_bucket",
 			"anchor": "ice_slush"

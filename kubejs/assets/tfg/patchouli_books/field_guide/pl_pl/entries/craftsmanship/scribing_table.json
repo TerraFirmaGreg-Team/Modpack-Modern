@@ -31,7 +31,7 @@
             "images": [
                 "tfc:textures/gui/book/gui/scribing.png"
             ],
-            "text": "The scribing screen takes text entry at the top, an input on the left, a dye in the center. The output is taken from the right slot.",
+            "text": "W interfejsie stołu pisarskiego wpisz tekst w polu u góry, umieść przedmiot w lewym slocie, a barwnik w środkowym. Gotowy przedmiot odbierz z prawego slotu.",
             "border": false
         },
         {

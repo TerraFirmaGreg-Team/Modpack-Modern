@@ -1,12 +1,12 @@
 {
-    "name": "Making Charcoal",
+    "name": "製作木炭",
     "category": "tfg:craftsmanship",
     "icon": "minecraft:charcoal",
     "pages": [
         {
             "type": "patchouli:text",
             "anchor": "charcoal_pit",
-            "text": "搭建$(thing)木炭坑$()是一種燒製$(thing)木炭$()的方法。木炭坑是用$(thing)原木堆$()構成的。手持$(thing)原木$()時按住$(item)$(k:key.sneak)$()並按$(item)$(k:key.use)$()就能在地上放置一個原木堆。手持原木對準原木堆按$(item)$(k:key.use)$()，或直接開啟原木堆介面就能放入更多原木。"
+            "text": "$(thing)木炭坑$()是取得$(thing)木炭$()的一種方法。木炭坑由$(thing)原木堆$()構成。要放置原木堆，請手持$(thing)原木$()並按住 $(item)$(k:key.sneak)$() 再按 $(item)$(k:key.use)$()。要放入更多原木，可以手持原木直接按 $(item)$(k:key.use)$()，或是拿著其他東西按 $(item)$(k:key.use)$() 開啟介面。"
         },
         {
             "type": "patchouli:multiblock",
@@ -24,12 +24,12 @@
                 }
             },
             "name": "原木堆",
-            "text": "原木堆需要下方有一個實心塊。它們很容易著火。",
+            "text": "原木堆下方必須有實心方塊才能放置。它們非常易燃。",
             "enable_visualize": false
         },
         {
             "type": "patchouli:text",
-            "text": "The charcoal pit is formed by surrounding log piles with solid, non-flammable blocks. The amount of charcoal produced is proportional to the amount of logs contained inside the log piles. To start the burning process, light one of the log piles, and then cover it. If it worked, you should see $(thing)smoke$() particles rise up from the structure.$(br)You can make a charcoal pit any size and shape so long as its fully insulated.$(br)By default the charcoal pit will take $(t:15 minutes)18 in-game hours.$()"
+            "text": "木炭坑是用堅固、不可燃的方塊圍住原木堆形成的。木炭的產量與原木堆中所含原木的數量成正比。要開始燃燒，點燃其中一個原木堆，然後將它覆蓋起來。如果成功了，你應該會看到$(thing)煙霧$()粒子從結構中升起。$(br)只要完全隔熱，木炭坑可以是任何大小和形狀。$(br)預設情況下，木炭坑需要$(t:15 分鐘)遊戲中 18 小時。$()"
         },
         {
             "type": "patchouli:image",
@@ -44,12 +44,12 @@
                 "tfg:textures/gui/field_guide/charcoal_pit/charcoal_pit_3.png",
                 "tfg:textures/gui/field_guide/charcoal_pit/charcoal_pit_4.png"
             ],
-            "text": "$(bold)Tutorial Slideshow:$() Creating a 2x2x2 charcoal pit.",
+            "text": "$(bold)教學幻燈片：$()建造 2x2x2 的木炭坑。",
             "border": true
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "分層展示如何搭建木炭坑。坑的具體大小是可變的。",
+            "text": "分層展示一種木炭坑的搭建方式。",
             "multiblocks": [
                 {
                     "pattern": [
@@ -205,13 +205,13 @@
         {
             "type": "patchouli:text",
             "anchor": "charcoal_pile",
-            "text": "After the charcoal pit burns out and stops smoking, you will be left with $(thing)Charcoal piles$(). The charcoal pile contains up to 8 layers of $(thing)Charcoal$(). Dig it with a shovel to obtain the charcoal items. Charcoal piles can be added to or placed with $(item)$(k:key.use)$().$(br2)$(bold)TIP:$() Do not cover your charcoal pit with a dense material like cobblestone, or it may fall and destroy your charcoal when completed."
+            "text": "木炭坑燒完並停止冒煙後，會留下$(thing)木炭堆$()。木炭堆最多含有 8 層$(thing)木炭$()。用鏟子挖掘即可取得木炭物品。按下$(item)$(k:key.use)$()可以增加或放置木炭堆。$(br2)$(bold)提示：$()不要用鵝卵石等密度高的材料覆蓋木炭坑，否則完成時它可能會掉落並毀掉你的木炭。"
         },
         {
             "type": "patchouli:text",
             "anchor": "coke_oven",
-            "title": "Coke Oven",
-            "text": "The $(thing)Coke Oven$() is a multiblock that can automatically convert logs into charcoal and coal into $(item)Coke$() while producing $(thing)Creosote$(). This structure becomes available when you first produce $(l:craftsmanship/bloomery)Wrought Iron$() and it is recommended to make one as soon as possible. Coke ovens are a massive quality of life upgrade for charcoal production, and both coke and creosote will be necessary for progression."
+            "title": "焦爐",
+            "text": "$(thing)焦爐$()是一種多方塊結構，可以自動將原木轉化為木炭，並將煤炭轉化為$(item)焦炭$()，同時產生$(thing)雜酚油$()。當你第一次生產出$(l:craftsmanship/bloomery)鍛鐵$()時就能建造這座結構，建議盡早建造。焦爐能大幅提升木炭生產的便利性，而焦炭和雜酚油都是推進遊戲進度的必需品。"
         },
         {
             "type": "patchouli:multiblock",
@@ -241,17 +241,17 @@
                     "C": "gtceu:coke_oven[facing=north]"
                 }
             },
-            "text": "An example coke oven with three hatches, suitable for item input, item output, and fluid output.",
+            "text": "附有三個倉的焦爐範例，適合用於物品輸入、物品輸出和流體輸出。",
             "enable_visualize": true
         },
         {
             "type": "patchouli:text",
-            "title": "Coke Oven Tips",
-            "text": "$(li)Coke ovens can have up to 4 hatches, replacing any coke oven brick.$(li)Coke ovens must be hollow in the center.$(li)The coke oven input hatch may get clogged with the output item. To avoid this, have an item pipe facing the input hatch with its flow direction set. You can use a hopper or chute to push into that pipe.$(li)Crates are able to hold logs, unlike chests.$(li)Save all your creosote!"
+            "title": "焦爐技巧",
+            "text": "$(li)焦爐最多可以有 4 個倉，可以取代任何焦爐磚。$(li)焦爐的中心必須是空心的。$(li)焦爐的輸入倉可能會被輸出物品堵住。為了避免這種情況，可以讓一根設定好流向的物品管道朝向輸入倉，再用漏斗或滑槽將物品推入那根管道。$(li)板條箱可以存放原木，箱子則不行。$(li)把你所有的雜酚油都存起來！"
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "延伸閱讀",
             "anchor": "relations",
             "entries": [
                 "tfg:craftsmanship/pit_kiln",

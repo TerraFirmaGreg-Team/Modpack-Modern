@@ -69,7 +69,7 @@
 			"type": "patchouli:entity",
 			"entity": "endermanoverhaul:end_islands_enderman",
 			"scale": 1,
-			"text": "The most dangerous $(thing)Endermen$() are found in the $(item)Chorus$() biomes."
+			"text": "The most dangerous $(thing)Endermen$() are found in the $(l:the_moon/moon_biomes#forest)Chorus$() biomes."
 		},
 		{
 			"type": "patchouli:entity",
@@ -89,7 +89,8 @@
 				"tfg:agriculture/animal_husbandry",
 				"tfg:agriculture/jellies",
 				"tfg:beneath/beneath_fauna",
-				"tfg:mars/mars_fauna"
+				"tfg:mars/mars_fauna",
+				"tfg:the_moon/moon_biomes"
 			]
 		}
 	],

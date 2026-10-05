@@ -1,12 +1,12 @@
 {
-	"name": "Fission Power",
+	"name": "核分裂發電",
 	"category": "tfg:mars",
 	"icon": "createdeco:decal_radioactive",
 	"read_by_default": true,
 	"pages": [
 		{
 			"type": "patchouli:relations",
-			"title": "Further Reading",
+			"title": "延伸閱讀",
 			"anchor": "relations",
 			"entries": [
 				"tfg:mars/mars",

@@ -230,7 +230,7 @@
             "type": "patchouli:text",
             "anchor": "advanced_materials",
             "title": "Zaawansowane materiały",
-            "text": "In addition to the $(l:craftsmanship/building_materials#primitive_materials)primitive building materials$() of the Stone Age, the acquisition of metal tools allows the construction of more advanced building materials."
+            "text": "Oprócz $(l:craftsmanship/building_materials#primitive_materials)prymitywnych materiałów budowlanych$() epoki kamienia, zdobycie metalowych narzędzi umożliwia tworzenie bardziej zaawansowanych materiałów."
         },
         {
             "type": "patchouli:spotlight",

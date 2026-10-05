@@ -465,7 +465,7 @@
             "type": "patchouli:multiblock",
             "name": "Robot kuchenny",
             "anchor": "food_processor",
-            "text": "The $(item)Food Processor$() is another machine added by $(tfg_short) to automatically create meals or process food ingredients using $(thing)EU$().",
+            "text": "$(item)Robot kuchenny$() to kolejna maszyna dodana przez $(tfg_short), która automatycznie przygotowuje posiłki lub przetwarza składniki spożywcze, wykorzystując $(thing)EU$().",
             "enable_visualize": false,
             "multiblock": {
                 "pattern": [
