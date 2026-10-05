@@ -119,7 +119,7 @@ The book is no longer split between entries for random addons, or clustered in s
 - Fixed metrics incorrectly tracking incomplete multiblocks
 #### Create: Fluid Logistics
 - Separated fluid gauges out from factory gauges. Existing gauges will automatically convert
-- Added Fluid Inventory Access Port
+- Added Fluid Inventory Access Port, Flow Meter, Redstone Fluid Valve
 - Removed waterproof cardboard
 - More bugfixes
 #### Greate

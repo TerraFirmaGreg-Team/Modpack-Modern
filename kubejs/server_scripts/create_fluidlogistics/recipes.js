@@ -86,35 +86,18 @@ function registerCreateFluidLogisticsRecipes(event) {
 		'C'
 	], {
 		A: '#forge:tools/hammers',
-		B: '#tfc:trapdoors',
+		B: ['tfc:metal/trapdoor/steel','createdeco:industrial_iron_trapdoor'],
 		C: 'create:item_drain',
-	}).id('tfg:fluidlogistics/shaped/fluid_hatch_tfc')
+	}).id('tfg:fluidlogistics/shaped/fluid_hatch')
 
-	event.shaped('fluidlogistics:fluid_hatch', [
-		'A',
-		'B',
-		'C'
-	], {
-		A: '#forge:tools/hammers',
-		B: '#createdeco:metal_trapdoors',
-		C: 'create:item_drain',
-	}).id('tfg:fluidlogistics/shaped/fluid_hatch_deco')
-
-	event.recipes.gtceu.assembler('tfg:fluidlogistics/fluid_hatch_tfc')
-		.itemInputs('create:item_drain', '#tfc:trapdoors')
+	event.recipes.gtceu.assembler('tfg:fluidlogistics/fluid_hatch')
+		.itemInputs('create:item_drain', '#forge:plates/steel')
 		.circuit(19)
 		.itemOutputs('fluidlogistics:fluid_hatch')
 		.duration(200)
 		.EUt(20)
 
-	event.recipes.gtceu.assembler('tfg:fluidlogistics/fluid_hatch_deco')
-		.itemInputs('create:item_drain', '#createdeco:metal_trapdoors')
-		.circuit(19)
-		.itemOutputs('fluidlogistics:fluid_hatch')
-		.duration(200)
-		.EUt(20)
-
-	TFGHelpers.registerMaterialInfo('fluidlogistics:fluid_hatch', [GTMaterials.Copper, 1, GTMaterials.Wood, 1])
+	TFGHelpers.registerMaterialInfo('fluidlogistics:fluid_hatch', [GTMaterials.Steel, 1, GTMaterials.Copper, 1, GTMaterials.Wood, 1])
 
 	event.shapeless('fluidlogistics:faucet', ['#create:valve_handles', 'gtceu:copper_small_fluid_pipe'])
 		.id('tfg:shapeless/fluidlogistics/faucet')
@@ -205,4 +188,21 @@ function registerCreateFluidLogisticsRecipes(event) {
 		.EUt(16)
 		.addMaterialInfo(true)
 		.circuit(2)
+
+	event.shapeless('fluidlogistics:flow_meter', ['create:copper_casing', 'firmaciv:firmaciv_compass'])
+		.id('tfg:shapeless/flow_meter')
+
+	event.shapeless('fluidlogistics:redstone_fluid_valve', ['create:fluid_valve', 'minecraft:redstone'])
+		.id('tfg:shapeless/redstone_fluid_valve')
+
+	event.shaped('fluidlogistics:potato_server', [
+		' B ',
+		'CAD',
+		' B '
+	], {
+		A: 'create:copper_casing',
+		B: '#forge:glass_panes',
+		C: '#forge:small_gears/red_alloy',
+		D: 'create:electron_tube'
+	}).id('tfg:shaped/potato_server')
 }
