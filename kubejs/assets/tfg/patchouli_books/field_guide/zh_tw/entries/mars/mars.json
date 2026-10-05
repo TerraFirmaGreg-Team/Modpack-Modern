@@ -1,5 +1,5 @@
 {
-	"name": "Surviving Mars",
+	"name": "火星生存指南",
 	"category": "tfg:mars",
 	"icon": "ad_astra:mars_globe",
 	"read_by_default": true,
@@ -8,64 +8,64 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "index",
-			"text": "$(li)$(bold)$(l:mars/mars#intro)Introduction$()$(li)$(bold)$(l:mars/mars#semiheavy_water)Hydrology$()$(li2)$(l:mars/mars#semiheavy_water)Semiheavy Ammoniacal Water$()$(li2)$(l:mars/mars#heavy_water)Heavy Ammoniacal Water$()$(li)$(bold)$(l:mars/mars#desert)The Martian Desert$()$(li2)$(l:mars/mars#ostrum)Ostrum Deposits$()$(li2)$(l:mars/mars#ostrum_harvester)Ostrum Harvester$()$(li)$(bold)$(l:mars/mars#jungles)The Martian Jungles$()$(li)$(bold)$(l:mars/mars#poles)The Martial Poles$()$(li2)$(l:mars/mars#glacian_wool)Glacian Wool$()$(li)$(bold)$(l:mars/mars#food)Martian Cuisine$()"
+			"text": "$(li)$(bold)$(l:mars/mars#intro)簡介$()$(li)$(bold)$(l:mars/mars#semiheavy_water)水文$()$(li2)$(l:mars/mars#semiheavy_water)半重氨水$()$(li2)$(l:mars/mars#heavy_water)重氨水$()$(li)$(bold)$(l:mars/mars#desert)火星沙漠$()$(li2)$(l:mars/mars#ostrum)奧斯特姆礦脈$()$(li2)$(l:mars/mars#ostrum_harvester)奧斯特姆採集器$()$(li)$(bold)$(l:mars/mars#jungles)火星叢林$()$(li)$(bold)$(l:mars/mars#poles)火星極地$()$(li2)$(l:mars/mars#glacian_wool)霜原羊毛$()$(li)$(bold)$(l:mars/mars#food)火星料理$()"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "intro",
-			"text": "Before landing on $(c)Mars$(), there are a few important things to keep in mind.$(br2)First, like the Moon, Mars will have some hostile surface mobs as well. If you haven't already figured out how to make your Space Suit stay with you after dying or invested in new $(5)EV$()-tier $(l:mars/mars_equipment)weaponry$(), you'll have a rough time."
+			"text": "登陸$(c)火星$()之前，有幾件重要的事要記住。$(br2)首先，和月球一樣，火星地表也有一些敵對生物。如果你還沒想出讓太空服在死亡後保留下來的方法，也還沒投資新的 $(5)EV$() 級$(l:mars/mars_equipment)武器$()，那日子會很難過。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "The planet is mostly a $(thing)desert world$(), dotted with \"$(thing)islands$()\" where you’ll find $(item)water$(), $(l:mars/mars_crops)flora$() and $(l:mars/mars_fauna)fauna$(), and much safer places to build your first base. Meanwhile, the open desert is extremely dangerous if you don't watch your step, but contains some other crucial resources!"
+			"text": "這顆行星大部分是$(thing)沙漠$()，零星點綴著一些「$(thing)島嶼$()」，在那裡可以找到$(item)水$()、$(l:mars/mars_crops)植物$()和$(l:mars/mars_fauna)動物$()，也是建立第一個基地更安全的地方。相對地，開闊的沙漠如果不小心行事會極度危險，但也蘊藏著一些關鍵資源！"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "All $(thing)fluid veins$() are spread across Mars, except for $(l:mars/mars#heavy_water)Heavy Ammoniacial Water$() which can only be found outside of the desert. That's another good reason to set up your base there.$(br2)Energy-wise, Mars will not be kind to you at first. Nearly every common $(thing)energy generation method$() is disabled or worthless on the planet, which means you’ll have to rely almost entirely on $(l:mars/fission)Fission$() to power your base."
+			"text": "所有$(thing)流體礦脈$()都遍布火星各地，只有$(l:mars/mars#heavy_water)重氨水$()只能在沙漠以外的地方找到。這也是把基地設在那裡的另一個好理由。$(br2)在能源方面，火星一開始對你不會太友善。幾乎所有常見的$(thing)發電方式$()在這顆行星上都被停用或毫無效益，這代表你幾乎只能依靠$(l:mars/fission)核分裂$()來為基地供電。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "At the very beginning, we recommend bringing along some $(thing)filled batteries$() such as $(item)Lapotron Crystals$() to get started, and then look towards setting up $(item)Thorium Fuel Rods$().$(br2)Achieving energy stability on Mars will take time and effort, but once your systems are running smoothly, you’ll feel like $(thing)unlimited power$() is right in the palm of your hand."
+			"text": "一開始，我們建議攜帶一些$(thing)充滿電的電池$()，例如$(item)蘭波頓水晶$()，先撐過起步階段，再著手準備$(item)釷燃料棒$()。$(br2)在火星上達到穩定的能源供應需要時間和心力，但一旦系統順利運作，你會覺得$(thing)無限的電力$()盡在掌握之中。"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "tfg:semiheavy_ammoniacal_water_bucket",
-			"title": "Fancy a drink?",
+			"title": "來杯飲料嗎？",
 			"anchor": "semiheavy_water",
-			"text": "The water on Mars is $(thing)Semiheavy$() which means it contains one Deuterium atom, and is also full of $(item)Ammonia$(), a great antifreeze, which is how it can stay liquid despite the very low temperatures.$(br2)It's technically drinkable, but you'll likely want to distill it into normal Water first."
+			"text": "火星上的水是$(thing)半重水$()，代表它含有一個氘原子，而且充滿了$(item)氨$()。氨是很好的防凍劑，這也是它在極低溫下仍能保持液態的原因。$(br2)嚴格來說它可以喝，但你大概會想先把它蒸餾成一般的水。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "You can also move source blocks of Semiheavy Ammoniacal Water around and get more of it via an Aqueous Accumulator, just like regular Water.$(br2)You can also centrifuge the Ammonium Chloride out from it and electrolyze it as a source of $(item)Nitrogen$(). Easy Nitrox from just one source!"
+			"text": "和一般的水一樣，你也可以搬動半重氨水的水源方塊，並透過製水機取得更多。$(br2)你也可以把它離心分離出氯化銨，再電解作為$(item)氮$()的來源。只靠一種來源就能輕鬆做出氮氧混合氣！"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "tfg:heavy_ammoniacal_water_bucket",
-			"title": "Heavy Water",
+			"title": "重水",
 			"anchor": "heavy_water",
-			"text": "$(item)Heavy Ammoniacal Water$() is another kind of fluid that can only be found deep underground via a Fluid Drilling Rig. You can only find it in these $(l:mars/mars#jungles)lush areas$() of Mars, not the desert!$(br2)You can separate it into Heavy Water, which is important for Fission power."
+			"text": "$(item)重氨水$()是另一種流體，只能透過流體鑽機在地底深處找到。而且只會出現在火星的$(l:mars/mars#jungles)繁茂地區$()，沙漠中沒有！$(br2)你可以把它分離成重水，重水是核分裂發電的重要材料。"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "desert",
-			"title": "The Martian Desert",
-			"text": "The majority of Mars is covered in a vast desert. Not much lives here except the occasional $(l:mars/mars_fauna#stackatick)Stackatick$() or $(l:mars/mars_fauna#pentetic_jellie)Jellie$(), and of course the giant $(l:mars/mars_fauna#sandworm)Sandworms$(). If this is your first time here, you'll want to find somewhere more hospitable! Otherwise, you'll want to keep searching..."
+			"title": "火星沙漠",
+			"text": "火星大部分被廣闊的沙漠覆蓋。除了偶爾出現的$(l:mars/mars_fauna#stackatick)疊殼蟲$()或$(l:mars/mars_fauna#pentetic_jellie)果凍怪$()，當然還有巨大的$(l:mars/mars_fauna#sandworm)沙蟲$()以外，這裡幾乎沒有什麼生物。如果這是你第一次來，最好找個更適合居住的地方！否則，就繼續搜尋吧……"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "tfg:spice",
-			"title": "Ostrum Deposits",
+			"title": "奧斯特姆礦脈",
 			"anchor": "ostrum",
-			"text": "$(item)Ostrum Deposits$() are immovable blocks that you can only find in the Martian Deep Desert, far away from any of the more lush areas. They spawn in small blobs, and can be broken to make space for your Ostrum Harvester if they're on a slope."
+			"text": "$(item)奧斯特姆礦脈$()是無法移動的方塊，只能在火星深層沙漠中找到，遠離任何繁茂地區。它們會以小團塊的形式生成；如果位在斜坡上，可以破壞部分方塊，騰出空間放置奧斯特姆採集器。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Try using a $(item)Spyglass$() to find them from a distance!$(br2)You'll have to figure out some long-distance logistics to ship your Ostrum back to your base. Try a train! $(item)Accumulators$() are large batteries that can be attached to trains to transport power.$(br2)Ostrum is a crucial resource for both $(5)EV$() progression and making infinite ores from Mars."
+			"text": "試著用$(item)望遠鏡$()從遠處尋找它們！$(br2)你得想辦法建立長途物流，把奧斯特姆運回基地。試試火車吧！$(item)蓄電池$()是大型電池，可以裝在火車上運輸電力。$(br2)奧斯特姆是 $(5)EV$() 階段進度和從火星無限產出礦石的關鍵資源。"
 		},
 		{
 			"type": "patchouli:multiblock",
 			"anchor": "ostrum_harvester",
-			"name": "Ostrum Harvester",
+			"name": "奧斯特姆採集器",
 			"enable_visualize": true,
 			"multiblock": {
 				"pattern": [
@@ -142,34 +142,34 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "jungles",
-			"title": "The Martian Jungles",
-			"text": "Dotted around the vast Martian deserts are small \"islands\" of life and vegetation, which are probably where you'll want to set up your base. Surviving here will be much easier than in the desert!$(br2)If you're having trouble finding these, you'll want to head away from the $(thing)Martian Deep Desert$() biomes, towards the $(thing)Martain Dunes$() which lead to $(thing)Martian Dune Edges$()."
+			"title": "火星叢林",
+			"text": "在廣闊的火星沙漠中，零星分布著充滿生命和植被的小「島嶼」，你大概會想把基地設在這裡。在這裡生存會比在沙漠中容易得多！$(br2)如果你找不到這些地方，就離開$(thing)火星深層沙漠$()生態域，往$(thing)火星沙丘$()前進，那裡會通往$(thing)火星沙丘邊緣$()。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "These parts of Mars are where you can find the rest of Mars' life, such as $(l:mars/mars_crops)new crops$(), $(l:mars/mars_tree_index)new trees$(), and even $(l:mars/mars_fauna)dinosaurs$().$(br2)Besides the occasional predator, the surface of these areas are relatively safe, with some monsters underground similar to $(thing)Earth$()."
+			"text": "在火星的這些地區，可以找到火星上其他的生命，例如$(l:mars/mars_crops)新作物$()、$(l:mars/mars_tree_index)新樹木$()，甚至還有$(l:mars/mars_fauna)恐龍$()。$(br2)除了偶爾出現的掠食者以外，這些地區的地表相對安全，地底則有一些類似$(thing)地球$()的怪物。"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "poles",
-			"title": "The Martian Poles",
-			"text": "Is Mars not cold enough for you?$(br2)Head up (or down) towards one of its poles at $(thing)Z=+15000/-5000$(). If $(l:mars/mars_fauna#glacian_sheep)anything$()'s able to live there, surely it must have amazing insulative properties...$(br2)Consider setting up a small base of operations before traveling to the martian poles. Some of Mars' $(l:mars/mars_fauna#soarer)native$() $(l:mars/mars_fauna#charger)fauna$() may be able to make the trip easier."
+			"title": "火星極地",
+			"text": "覺得火星還不夠冷嗎？$(br2)往北(或往南)前往位於 $(thing)Z=+15000/-5000$() 的極地吧。如果有$(l:mars/mars_fauna#glacian_sheep)任何生物$()能在那裡生存，牠一定有驚人的保暖能力……$(br2)前往火星極地之前，可以考慮先建立一個小型作業基地。火星上的一些$(l:mars/mars_fauna#soarer)原生$()$(l:mars/mars_fauna#charger)動物$()也許能讓旅程輕鬆一些。"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "tfg:glacian_wool",
 			"anchor": "glacian_wool",
-			"text": "Unlike regular Sheep on Earth, killing a Glacian one will only give you normal Wool. You'll need to build up their familiarity and shear them if you want the special $(item)Glacian Wool$(). You'll need 7 of it for a full $(l:mars/mars_equipment#space_suit)Tungstensteel Space Suit$(), but you can also use it as a great component for your $(l:mars/fission)Fission Reactor$() to increase its maximum heat. You can also turn it into regular $(l:agriculture/weaving)Wool Yarn and Cloth$()."
+			"text": "和地球上的一般綿羊不同，殺死霜原羊只會得到普通羊毛。如果想要特殊的$(item)霜原羊毛$()，你必須提升牠們的熟悉度並剪毛。一整套$(l:mars/mars_equipment#space_suit)鎢鋼太空服$()需要 7 個霜原羊毛，它也是$(l:mars/fission)核分裂反應爐$()的絕佳組件，可以提高最大熱量。你也可以把它做成一般的$(l:agriculture/weaving)毛線和布料$()。"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "food",
-			"title": "Martian Cuisine",
-			"text": "$(l:mars/mars_fauna#wraptor)Wraptor Eggs$() can be extracted for a $(item)Sugar$() substitute, while $(l:mars/mars_fauna#sniffer)Sniffer Eggs$() are full of $(item)Cream$().$(br2)$(item)Bulbkin Pie$() is probably the pinnacle of Mars' food, boasting high amounts of four different kinds of nutrition, at the expense of being a bit of a pain to craft.$(br2)$(item)Beer-Battered Dinosaur Nuggets$() combine the huge protein of dinosaur meat with a little grain, and can also be put in your meal bags."
+			"title": "火星料理",
+			"text": "$(l:mars/mars_fauna#wraptor)扭曲雉蛋$()可以萃取出$(item)糖$()的替代品，而$(l:mars/mars_fauna#sniffer)嗅探獸蛋$()則富含$(item)鮮奶油$()。$(br2)$(item)球莖南瓜派$()大概是火星食物的巔峰，能提供大量的四種營養，代價是製作起來有點麻煩。$(br2)$(item)酥炸恐龍肉$()結合了恐龍肉的大量蛋白質和少許穀物，也可以放進餐袋中。"
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Further Reading",
+			"title": "延伸閱讀",
 			"anchor": "relations",
 			"entries": [
 				"tfg:mars/mars_crops",

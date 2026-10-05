@@ -167,9 +167,11 @@
   "tooltip.pterb_machine.input_coolant_before_use": "Zawsze wprowadź chłodziwo przed włączeniem!",
   "tooltip.pterb_machine.purpose": "Most Einsteina–Rosena do przesyłu energii (PTERB)",
   "tooltip.pterb_machine.uses_coolant": "Używa %s do funkcjonowania!",
+  "tooltip.web_hub_machine.frequencies": "Hub WEB dostarcza energię do bezprzewodowej sieci energetycznej. Działa na tej samej częstotliwości co odbiornik WEB.",
   "tooltip.web_hub_machine.input_coolant_before_use": "Zawsze wprowadź chłodziwo przed włączeniem!",
   "tooltip.web_hub_machine.purpose": "Most Einsteina–Rosena do przesyłu energii (PTERB)",
   "tooltip.web_hub_machine.uses_coolant": "Używa %s do funkcjonowania!",
+  "tooltip.web_receiver_machine.frequencies": "Odbiornik WEB jest wyjściem energii bezprzewodowej sieci energetycznej. Współdzieli częstotliwość z hubem WEB, pobiera energię z sieci bezprzewodowej i ją wyprowadza.",
   "tooltip.web_receiver_machine.only_output": "Otrzymuje energię z huba WEB",
   "tooltip.web_receiver_machine.purpose": "Kotwica Einsteina-Rosena (ERAP)"
 }

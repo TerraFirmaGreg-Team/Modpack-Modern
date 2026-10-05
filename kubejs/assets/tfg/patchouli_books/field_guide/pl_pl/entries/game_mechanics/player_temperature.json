@@ -17,7 +17,7 @@
 			"anchor": "hud",
 			"text": "Strzałka w środku wskazuje, czy twoja temperatura wzrasta czy spada.",
 			"title": "The Hotbar HUD",
-			"border": true,
+			"border": false,
 			"images": [
 				"tfg:textures/gui/field_guide/ambiental_hud.png"
 			]
@@ -29,6 +29,10 @@
 		{
 			"type": "patchouli:text",
 			"text": "The $(thing)right two temperature numbers$() are the ones to pay attention to! If your $(thing)player temperature$() goes $(6)above 30°C$() or $(3)below 0°C$(), you will begin taking damage.$(br2)When you are close to these temperatures, the arrow in the middle of the HUD will either be a bright orange or dark blue, and you will have an orange or blue tint to your screen."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "The $(item)gradient bar$() on the very bottom, replacing your XP bar, shows your $(thing)player temperature$() (the $(bold)white mark$()), the $(l:the_world/climate)current climate temperature$() (the $(bold)$(2)green 🔽$()), and the $(l:the_world/climate)average climate temperature$() (the $(bold)$(c)red 🔼$()), all at once.$(br2)The bar is split into 10°C segments, with the very middle representing 0°C."
 		},
 		{
 			"type": "patchouli:text",

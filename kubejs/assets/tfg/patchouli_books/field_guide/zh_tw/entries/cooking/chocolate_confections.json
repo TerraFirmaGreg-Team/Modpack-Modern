@@ -1,61 +1,61 @@
 {
-  "name": "Chocolate Confections",
+  "name": "巧克力甜點",
   "category": "tfg:cooking",
   "icon": "firmalife:textures/item/food/dark_chocolate.png",
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "$(thing)Chocolate-making$() takes a few processing steps, and is intended to be an immersive way to experience cooking.$(br)Chocolate items contain $(l:cooking/food_and_water#grain)Grain$() and $(l:cooking/food_and_water#dairy)Dairy$() nutrients while also providing the $(l:cooking/food_and_water#sugary_transient_effect)Sugary$() effect when eaten, making them a strong choice for meal ingredients."
+      "text": "$(thing)製作巧克力$()需要幾道加工步驟，目的是讓你沉浸式地體驗烹飪。$(br)巧克力類物品含有$(l:cooking/food_and_water#grain)穀物$()和$(l:cooking/food_and_water#dairy)乳製品$()養分，食用時還會提供$(l:cooking/food_and_water#sugary_transient_effect)甜食$()效果，是很好的餐點材料。"
     },
     {
       "type": "patchouli:text",
-      "text": "To start chocolate processing, cocoa beans must first be $(thing)roasted$() in an $(l:cooking/cooking_methods#oven)Oven$() to make $(thing)Roasted Cocoa Beans$(). Then, craft the roasted beans with a $(thing)Knife$() to split the beans into $(thing)Cocoa Powder$() and $(thing)Cocoa Butter$()."
+      "text": "要開始加工巧克力，首先必須在$(l:cooking/cooking_methods#oven)烤箱$()中$(thing)烘烤$()可可豆，做成$(thing)烘焙可可豆$()。接著將烘焙過的豆子和$(thing)刀$()一起合成，將豆子分成$(thing)可可粉$()和$(thing)可可脂$()。"
     },
     {
       "type": "patchouli:text",
-      "text": "The $(l:cooking/mixing_bowl)Mixing Bowl$() is used to mix cocoa powder, butter, and sweetener (sugar or honey) to make $(thing)Chocolate Blends$(). The ratio of cocoa butter to powder determines what comes out:$(br)$(li)1 Powder, 1 Butter, 1 Sweetener: Milk Chocolate$()$(li)2 Powder, 1 Sweetener: Dark Chocolate$()$(li)2 Butter, 1 Sweetener: White Chocolate$()"
+      "text": "$(l:cooking/mixing_bowl)攪拌碗$()用來混合可可粉、可可脂和甜味劑(糖或蜂蜜)，製成$(thing)巧克力混合物$()。可可脂與可可粉的比例決定了產物：$(br)$(li)1 份可可粉、1 份可可脂、1 份甜味劑：牛奶巧克力$()$(li)2 份可可粉、1 份甜味劑：黑巧克力$()$(li)2 份可可脂、1 份甜味劑：白巧克力$()"
     },
     {
       "type": "tfg:drying_recipe",
       "recipe": "firmalife:drying/dark_chocolate",
-      "text": "Finally, chocolate is dried on a $(l:cooking/decay#drying)Drying Mat$() to make $(thing)Chocolate$()."
+      "text": "最後，將巧克力放在$(l:cooking/decay#drying)乾燥墊$()上乾燥，做成$(thing)巧克力$()。"
     },
     {
-      "title": "Casting Chocolate",
+      "title": "澆鑄巧克力",
       "type": "patchouli:text",
-      "text": "$(thing)Chocolate$() does not need to come only in boring bars! Melt down $(thing)White$(), $(thing)Milk$(), or $(thing)Dark$() chocolate in a $(thing)Vessel$() or $(thing)Crucible$() and then cast it into a mold to obtain chocolate confections. There are three types of chocolate confections: $(thing)Hearts$(), $(thing)Bells$(), and $(thing)Knives$(). Each is obtained by casting chocolate into a different mold."
+      "text": "$(thing)巧克力$()不必只是無聊的條狀！在$(thing)小缸$()或$(thing)坩堝$()中融化$(thing)白$()、$(thing)牛奶$()或$(thing)黑$()巧克力，再倒入模具中即可得到巧克力甜點。巧克力甜點有三種：$(thing)愛心$()、$(thing)鈴鐺$()和$(thing)刀子$()。每種都要將巧克力倒入不同的模具中製成。"
     },
     {
       "type": "tfg:knapping_recipe",
       "recipe": "tfcchannelcasting:clay_knapping/unfired_heart_mold",
-      "text": "Knapping a $(thing)Heart Mold$(), used to create $(thing)Heart$()-shaped chocolates."
+      "text": "塑形$(thing)愛心模具$()，用來製作$(thing)愛心$()形狀的巧克力。"
     },
     {
       "type": "patchouli:text",
-      "text": "Chocolate confections provide the same nutrition as chocolate bars, but they are faster to eat. However, if these confections are prepared at specific times of the year, they will gain a trait that doubles their nutrition. $(thing)Chocolate Hearts$() gain the $(thing)Romantic$() trait in Februrary, $(thing)Chocolate Winter Bells$() gain the $(thing)Festive$() trait in December, and $(thing)Chocolate Candy Knives$() gain the $(thing)Scary$() trait in October."
+      "text": "巧克力甜點提供的營養與巧克力條相同，但吃起來更快。不過，如果在一年中的特定時間製作這些甜點，它們會獲得使營養加倍的特性。$(thing)愛心巧克力$()在二月會獲得$(thing)浪漫$()特性，$(thing)冬日鈴鐺巧克力$()在十二月會獲得$(thing)節慶$()特性，$(thing)糖果刀巧克力$()在十月會獲得$(thing)驚悚$()特性。"
     },
     {
       "type": "patchouli:text",
-      "text": "Moreover, confections can be $(thing)filled$() to gain additional benefits. Confections filled with $(thing)Jam$() have extra $(thing)Fruit$() nutrition. Confections filled with $(thing)Alcohol$() give positive potion effects."
+      "text": "此外，甜點還可以加入$(thing)內餡$()以獲得額外效果。以$(thing)果醬$()為內餡的甜點有額外的$(thing)水果$()營養。以$(thing)酒$()為內餡的甜點會給予正面的藥水效果。"
     },
     {
       "type": "tfg:sealed_barrel_recipe",
       "recipe": "tfcchannelcasting:barrel/fill_with_sweet_liquor",
-      "text": "Eating chocolates filled with $(thing)Sweet Liquor$() gives a speed buff."
+      "text": "吃下以$(thing)甜酒$()為內餡的巧克力會獲得速度增益。"
     },
     {
       "type": "tfg:sealed_barrel_recipe",
       "recipe": "tfcchannelcasting:barrel/fill_with_strong_liquor",
-      "text": "Eating chocolates filled with $(thing)Strong Liquor$() gives damange resistance."
+      "text": "吃下以$(thing)烈酒$()為內餡的巧克力會獲得抗性。"
     },
     {
       "type": "tfg:sealed_barrel_recipe",
       "recipe": "tfcchannelcasting:barrel/fill_with_whiskey",
-      "text": "Eating chocolates filled with $(thing)Whiskey$() gives haste."
+      "text": "吃下以$(thing)威士忌$()為內餡的巧克力會獲得挖掘加速。"
     },
     {
       "type": "patchouli:relations",
-      "title": "Further Reading",
+      "title": "延伸閱讀",
       "anchor": "relations",
       "entries": [
             "tfg:cooking/alcohol",

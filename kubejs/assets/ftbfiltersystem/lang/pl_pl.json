@@ -10,6 +10,7 @@
   "filter.ftbfiltersystem.food_value.name": "Wartość żywności",
   "filter.ftbfiltersystem.food_value.tooltip": "Dopasowuje przedmiot na podstawie jego wartości odżywczej (liczby połówek udek głodu).\nPrzedmioty niebędące żywnością mają wartość odżywczą równą 0.",
   "filter.ftbfiltersystem.item.name": "Przedmiot",
+  "filter.ftbfiltersystem.item.tooltip": "Dopasowuje konkretny przedmiot.\nNBT nie jest tu sprawdzane (zob. filtr NBT)\nPrzedmioty można wybierać z list trybu kreatywnego lub ekwipunku.\nUżyj pola tekstowego, aby filtrować ID przedmiotów i ograniczyć wyświetlaną listę.",
   "filter.ftbfiltersystem.item_tag.name": "Tag przedmiotu",
   "filter.ftbfiltersystem.item_tag.tooltip": "Dopasowuje przedmioty na podstawie ich tagu (przedmioty zawierające ten tag).\nUżyj pola tekstowego, aby filtrować wyświetlane tagi przedmiotów.",
   "filter.ftbfiltersystem.max_stack_size.name": "Maks. rozmiar stosu",

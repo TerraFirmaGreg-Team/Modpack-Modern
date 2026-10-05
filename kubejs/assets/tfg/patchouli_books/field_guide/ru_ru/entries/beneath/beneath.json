@@ -57,7 +57,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Layers",
-			"text": "Как тёплый океанский бриз, этот биом полон $(item)Галита$(). Отличное место для базы!"
+			"text": "$(bold)Top Layer$()$(li)$(l:beneath/beneath#salt_caves)Salt Caves$()$(li)$(l:beneath/beneath#muggy_bog)Muggy Bog$()$(li)$(l:beneath/beneath#decaying_caverns)Decaying Caverns$()$(li)$(l:beneath/beneath#webbed_lair)Webbed Lair$()$(br)$(bold)Middle Layer$()$(li)$(l:beneath/beneath#tar_pools)Tar Pools$()$(li)$(l:beneath/beneath#geothermal_springs)Geothermal Springs$()$(li)$(l:beneath/beneath#thorny_grove)Thorny Grove$()$(li)$(l:beneath/beneath#lush_hollow)Lush Hollow$()$(br)$(bold)Bottom Layer$()$(li)$(l:beneath/beneath#ash_forest)Ash Forest$()$(li)$(l:beneath/beneath#lava_floes)Lava Floes$()$(li)$(l:beneath/beneath#basalt_deltas)Basalt Deltas$()"
 		},
 		{
 			"type": "patchouli:image",
@@ -67,7 +67,7 @@
 				"tfg:textures/gui/field_guide/nether/salt_caves.png"
 			],
 			"border": true,
-			"text": "Влажная и болотная. Безопасный источник дерева, если ты умеешь уклоняться от $(thing)Крокодилов$()."
+			"text": "Like a warm ocean breeze, this biome is full of $(item)Halite$(). Makes for a great base location!"
 		},
 		{
 			"type": "patchouli:image",
@@ -77,7 +77,7 @@
 				"tfg:textures/gui/field_guide/nether/muggy_bog.png"
 			],
 			"border": true,
-			"text": "Природные переработчики усердно трудятся в этом влажном регионе, полном гниения."
+			"text": "Humid and swamp-like. A safe source of wood, if you can avoid the $(thing)Crocodiles$()."
 		},
 		{
 			"type": "patchouli:image",
@@ -97,7 +97,7 @@
 				"tfg:textures/gui/field_guide/nether/webbed_lair.png"
 			],
 			"border": true,
-			"text": "Песочная, словно небольшая пустыня, эта область полна липких $(thing)Дёгтевых ям$(), полных нефти."
+			"text": "No prizes for guessing what lives here! A great place to harvest $(item)Silk$()."
 		},
 		{
 			"type": "patchouli:image",
@@ -107,7 +107,7 @@
 				"tfg:textures/gui/field_guide/nether/tar_pools.png"
 			],
 			"border": true,
-			"text": "Обойдёмся без Серных кубов, но этот горячий биом отличное место, чтобы найти $(thing)Родниковую воду$() для лечения."
+			"text": "Sandy like a small desert, this area contains sticky $(thing)Tar Pits$() full of oil."
 		},
 		{
 			"type": "patchouli:image",
@@ -117,7 +117,7 @@
 				"tfg:textures/gui/field_guide/nether/geothermal_springs.png"
 			],
 			"border": true,
-			"text": "Труднопроходимый биом с растениями, которые влияют на тебя при наступании на них. Берегись!"
+			"text": "No Sulfur Cubes here, but this steamy biome can be a great place to find $(thing)Spring Water$() for healing."
 		},
 		{
 			"type": "patchouli:image",
@@ -127,7 +127,7 @@
 				"tfg:textures/gui/field_guide/nether/thorny_brambles.png"
 			],
 			"border": true,
-			"text": "Жаркое и полное зелени! Густые заросли папоротника скрывают под собой $(thing)Каолиновую глину$()."
+			"text": "A difficult to traverse biome with plants that affect you when stepped on. Watch out!"
 		},
 		{
 			"type": "patchouli:image",
@@ -147,7 +147,7 @@
 				"tfg:textures/gui/field_guide/nether/ash_forest.png"
 			],
 			"border": true,
-			"text": "Богатая рудами область $(thing)пироксенита$(), пересеченная реками лавы и покрытая пластами магмы."
+			"text": "What remains of the upper greenery after the frequent fires caused by the heat."
 		},
 		{
 			"type": "patchouli:image",
@@ -161,7 +161,7 @@
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Геология",
+			"title": "Basalt Deltas",
 			"anchor": "basalt_deltas",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/basalt_deltas.png"

@@ -5,17 +5,17 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"title": "Beneath Crops",
-			"text": "The $(thing)Beneath$() may be a harsh environment, but it is still possible to find crops there. Beneath crops are incredibly resilient and can grow in extreme heat conditions making them useful for surviving below the Earth and on the surface."
+			"title": "地底作物",
+			"text": "$(thing)地底$()或許是嚴酷的環境，但仍然可以在那裡找到作物。地底作物的韌性極強，能在極端高溫下生長，無論是在地底下還是地表上求生都很有用。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Crops in the beneath behave just the same as crops on the surface; they have hydration, temperature, and nutrient requirements. You can even plant them in $(thing)Greenhouses.$()$(br2)An important concern when planting crops in the Beneath is that crops require a light level of 12, which isn't provided by the Beneath's natural light. To solve this problem, you can utilize $(l:agriculture/aqueducts)Lava Aqueducts$() or any other available light source."
+			"text": "地底的作物和地表的作物運作方式完全相同，都有含水量、溫度和養分需求。你甚至可以把它們種在$(thing)溫室中。$()$(br2)在地底種植作物時要特別注意，作物需要 12 級的光照，而地底的自然光照無法提供。要解決這個問題，可以利用$(l:agriculture/aqueducts)熔岩引水橋$()或其他可用的光源。"
 		},
 		{
 			"type": "patchouli:text",
 			"title": "目錄",
-			"text": "$(li)$(l:beneath/beneath_crops#cassava)Cassava$()$(li)$(l:beneath/beneath_crops#peanut)Peanut$()$(li)$(l:beneath/beneath_crops#beans)Blackstone Beans$()$(li)$(l:beneath/beneath_crops#ghost_pepper)Ghost Pepper$()$(li)$(l:beneath/beneath_crops#cotton)Cotton$()"
+			"text": "$(li)$(l:beneath/beneath_crops#cassava)木薯$()$(li)$(l:beneath/beneath_crops#peanut)花生$()$(li)$(l:beneath/beneath_crops#beans)黑眉豆$()$(li)$(l:beneath/beneath_crops#ghost_pepper)斷魂椒$()$(li)$(l:beneath/beneath_crops#cotton)棉花$()"
 		},
 		{
 			"type": "patchouli:text",
@@ -24,8 +24,8 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "cassava",
-			"title": "Cassava",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 10 - 80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 70 - 100 %$(br)$(bold)Nutrient$(): Nitrogen$(br2)Cassava can be eaten for $(thing)Vegetable$() nutrition, although it is best $(thing)cooked$() before consumed.$(br)"
+			"title": "木薯",
+			"text": "$(bold)$(l:the_world/climate#temperature)溫度$()：10 - 80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)含水量$()：70 - 100 %$(br)$(bold)養分$()：氮$(br2)食用木薯可以補充$(thing)蔬菜$()營養，不過最好先$(thing)煮熟$()再吃。$(br)"
 		},
 		{
 			"type": "tfg:multimultiblock",
@@ -133,14 +133,14 @@
 					}
 				}
 			],
-			"text": "$(thing)Wild Cassava$() grow between Y=203 and Y=80.",
+			"text": "$(thing)野生木薯$()生長在 Y=203 到 Y=80 之間。",
 			"enable_visualize": false
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "peanut",
-			"title": "Peanut",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 10 - 80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 20 - 80 %$(br)$(bold)Nutrient$(): Potassium$(br2)Peanuts can be eaten for $(thing)Vegetable$() and $(thing)Protein$() nutrition"
+			"title": "花生",
+			"text": "$(bold)$(l:the_world/climate#temperature)溫度$()：10 - 80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)含水量$()：20 - 80 %$(br)$(bold)養分$()：鉀$(br2)食用花生可以補充$(thing)蔬菜$()和$(thing)蛋白質$()營養"
 		},
 		{
 			"type": "tfg:multimultiblock",
@@ -248,14 +248,14 @@
 					}
 				}
 			],
-			"text": "$(thing)Wild Peanuts$() grow between Y=203 and Y=80.",
+			"text": "$(thing)野生花生$()生長在 Y=203 到 Y=80 之間。",
 			"enable_visualize": false
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "beans",
-			"title": "Blackstone Beans",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 10 - 80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 20 - 80 %$(br)$(bold)Nutrient$(): Potassium$(br2)Blackstone Beans can be eaten for $(thing)Vegetable$() and $(thing)Protein$() nutrition. However, they must be cooked first!"
+			"title": "黑眉豆",
+			"text": "$(bold)$(l:the_world/climate#temperature)溫度$()：10 - 80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)含水量$()：20 - 80 %$(br)$(bold)養分$()：鉀$(br2)食用黑眉豆可以補充$(thing)蔬菜$()和$(thing)蛋白質$()營養。不過一定要先煮熟！"
 		},
 		{
 			"type": "tfg:multimultiblock",
@@ -363,14 +363,14 @@
 					}
 				}
 			],
-			"text": "$(thing)Wild Blackstone Beans$() grow between Y=158 and Y=32.",
+			"text": "$(thing)野生黑眉豆$()生長在 Y=158 到 Y=32 之間。",
 			"enable_visualize": false
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "ghost_pepper",
-			"title": "Ghost Pepper",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 10 - 80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 20 - 80 %$(br)$(bold)Nutrient$(): Nitrogen$(br2)Ghost Peppers can be eaten for $(thing)Vegetable$() nutrition. They are also a common snack among the inhabitants of the Beneath."
+			"title": "斷魂椒",
+			"text": "$(bold)$(l:the_world/climate#temperature)溫度$()：10 - 80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)含水量$()：20 - 80 %$(br)$(bold)養分$()：氮$(br2)食用斷魂椒可以補充$(thing)蔬菜$()營養。它也是地底居民常見的零食。"
 		},
 		{
 			"type": "tfg:multimultiblock",
@@ -478,14 +478,14 @@
 					}
 				}
 			],
-			"text": "$(thing)Wild Ghost Peppers$() grow between Y=158 and Y=32.",
+			"text": "$(thing)野生斷魂椒$()生長在 Y=158 到 Y=32 之間。",
 			"enable_visualize": false
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "cotton",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 10 - 80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 40 - 100 %$(br)$(bold)Nutrient$(): Nitrogen$(br2)Cotton is a two block tall crop. Cotton seeds can be planted on farmland, will grow two blocks tall, and will produce $(item)Cotton Balls$() which can be processed into $(thing)Cotton String$() or $(thing)Cloth$().",
-			"title": "Cotton"
+			"text": "$(bold)$(l:the_world/climate#temperature)溫度$()：10 - 80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)含水量$()：40 - 100 %$(br)$(bold)養分$()：氮$(br2)棉花是兩格高的作物。棉花種子可以種在耕地上，會長到兩格高，並產出$(item)棉球$()，可加工成$(thing)棉線$()或$(thing)布料$()。",
+			"title": "棉花"
 		},
 		{
 			"type": "tfg:multimultiblock",
@@ -596,11 +596,11 @@
 					}
 				}
 			],
-			"text": "$(thing)Wild Cotton$() grows between Y=158 and Y=32."
+			"text": "$(thing)野生棉花$()生長在 Y=158 到 Y=32 之間。"
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Further Reading",
+			"title": "延伸閱讀",
 			"anchor": "relations",
 			"entries": [
 				"tfg:the_world/climate",

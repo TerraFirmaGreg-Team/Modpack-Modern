@@ -1,88 +1,88 @@
 {
-	"name": "Mars Equipment",
+	"name": "火星裝備",
 	"category": "tfg:mars",
 	"icon": "tfg:certus_mechanism",
 	"read_by_default": true,
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "$(li)$(bold)Melee Weapons$()$(li2)$(l:mars/mars_equipment#nano_saber)Nano Saber$()$(li)$(bold)$(l:mars/mars_equipment#ev_guns)Guns$()$(li2)$(l:mars/mars_equipment#cannon)Shoulder-Fired Field Gun$()$(li2)$(l:mars/mars_equipment#rifles)Advanced Rifles$()$(li2)$(l:mars/mars_equipment#grenades)Grenade Launcher$()$(li2)$(l:mars/mars_equipment#shotguns)Advanced Shotguns$()$(li2)$(l:mars/mars_equipment#pistols)Advanced Pistols and SMGs$()$(li)$(bold)Armor$()$(li2)$(l:mars/mars_equipment#space_suit)Tungstensteel Space Suit$()$(li)$(bold)Shields$()$(li2)$(l:mars/mars_equipment#reinforced_shield)Reinforced Shield$()$(li2)$(l:mars/mars_equipment#corrupted_shield)Corrupted Shield$()$(li2)$(l:mars/mars_equipment#ricoshield)Ricoshield$()"
+			"text": "$(li)$(bold)近戰武器$()$(li2)$(l:mars/mars_equipment#nano_saber)奈米光劍$()$(li)$(bold)$(l:mars/mars_equipment#ev_guns)槍械$()$(li2)$(l:mars/mars_equipment#cannon)肩射式野戰炮$()$(li2)$(l:mars/mars_equipment#rifles)進階步槍$()$(li2)$(l:mars/mars_equipment#grenades)榴彈發射器$()$(li2)$(l:mars/mars_equipment#shotguns)進階霰彈槍$()$(li2)$(l:mars/mars_equipment#pistols)進階手槍與衝鋒槍$()$(li)$(bold)護甲$()$(li2)$(l:mars/mars_equipment#space_suit)鎢鋼太空服$()$(li)$(bold)盾牌$()$(li2)$(l:mars/mars_equipment#reinforced_shield)強化盾牌$()$(li2)$(l:mars/mars_equipment#corrupted_shield)腐化盾牌$()$(li2)$(l:mars/mars_equipment#ricoshield)跳彈盾$()"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:nano_saber",
 			"anchor": "nano_saber",
-			"text": "The $(item)Nano Saber$() is a powerful melee weapon you’ll be able to unlock once you reach late $(5)EV$(). Simply use $(item)$(k:key.sneak) + $(k:key.use)$() to activate the $(thing)bzzzzz mode$()."
+			"text": "$(item)奈米光劍$()是強大的近戰武器，在 $(5)EV$() 後期就能解鎖。只要按 $(item)$(k:key.sneak) + $(k:key.use)$() 就能啟動$(thing)嗡嗡嗡模式$()。"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "tfg:certus_mechanism",
 			"anchor": "ev_guns",
-			"text": "The $(item)Certus Mechanism$() is used to craft $(5)EV$()-tier guns. A lot of these weapons use ammo that requires Certus Quartz. The moon has huge veins of it, or you can set up an infinite supply via $(l:the_moon/regolith)Lunar Regolith$()."
+			"text": "$(item)賽特斯機械$()用來製作 $(5)EV$() 級槍械。許多這類武器使用的彈藥都需要賽特斯石英。月球上有大型的賽特斯石英礦脈，你也可以透過$(l:the_moon/regolith)月球風化土$()建立無限供應。"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "tacz:modern_kinetic_gun{GunId:\"create_armorer:cannon_40mm_salamander\"},tacz:ammo{AmmoId:\"create_armorer:40mmhe\"}",
-			"title": "Shoulder-Fired Field Gun",
+			"title": "肩射式野戰炮",
 			"anchor": "cannon",
-			"text": "Want to walk around with a tank cannon? This gun is slow, heavy, but packs a massive punch."
+			"text": "想扛著坦克炮到處走嗎？這把槍又慢又重，但威力驚人。"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "tacz:ammo{AmmoId:\"applied_armorer:hard_core_quartz_bullet\"},tacz:modern_kinetic_gun{GunId:\"applied_armorer:moritz_rifle_ar77\"},tacz:modern_kinetic_gun{GunId:\"applied_armorer:moritz_sniper_semi_k30\"}",
-			"title": "Advanced Rifles",
+			"title": "進階步槍",
 			"anchor": "rifles",
-			"text": "These are good balanced weapons if you don't know what to pick."
+			"text": "如果不知道該選什麼，這些是性能均衡的好武器。"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "tacz:ammo{AmmoId:\"applied_armorer:fluix_infused_grenade\"},tacz:modern_kinetic_gun{GunId:\"applied_armorer:moritz_gernade_gl3\"}",
-			"title": "Grenade Launcher",
+			"title": "榴彈發射器",
 			"anchor": "grenades",
-			"text": "If you ever finding yourself fighting large groups of enemies at once, this may be your ticket."
+			"text": "如果你常常要同時對付一大群敵人，這可能就是你的救星。"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "tacz:ammo{AmmoId:\"applied_armorer:cluster_quartz_bullet\"},tacz:modern_kinetic_gun{GunId:\"applied_armorer:moritz_shotgun_sg914\"}",
-			"title": "Advanced Shotguns",
+			"title": "進階霰彈槍",
 			"anchor": "shotguns",
-			"text": "Great for blasting close-up targets."
+			"text": "非常適合轟炸近距離目標。"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "tacz:ammo{AmmoId:\"applied_armorer:etched_quartz_bullet\"},tacz:modern_kinetic_gun{GunId:\"applied_armorer:niklas_smg_freedom\"},tacz:modern_kinetic_gun{GunId:\"applied_armorer:niklas_pistol_double_win_win\"},tacz:modern_kinetic_gun{GunId:\"applied_armorer:niklas_pistol_semi_pride\"},tacz:modern_kinetic_gun{GunId:\"applied_armorer:niklas_pistol_semi_right\"}",
-			"title": "Advanced Pistols and SMGs",
+			"title": "進階手槍與衝鋒槍",
 			"anchor": "pistols",
-			"text": "Want to shoot fast? These guns are perfect."
+			"text": "想要射得快嗎？這些槍最適合你。"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "ad_astra:netherite_space_helmet,ad_astra:netherite_space_suit,ad_astra:netherite_space_pants,ad_astra:netherite_space_boots",
-			"title": "Tungstensteel Space Suit",
+			"title": "鎢鋼太空服",
 			"anchor": "space_suit",
-			"text": "With this next space suit, you'll be able to survive both the $(b)coldest$() and the $(c)hottest$() environments that space can throw at you! It will be required to stop you from immediately combusting as soon as you set foot on $(6)Venus$() and $(5)Mercury$().$(br)As a bonus, it also comes with some extra armor and air capacity!"
+			"text": "有了這套新的太空服，太空中$(b)最冷$()和$(c)最熱$()的環境你都能撐過去！一踏上$(6)金星$()和$(5)水星$()，沒有它你就會立刻燒起來。$(br)額外好處是，它還提供更多護甲和氧氣容量！"
 		},
 		{
 			"type": "patchouli:crafting",
 			"recipe": "tfg:shaped/reinforced_shield_from_shield",
 			"anchor": "reinforced_shield",
-			"text": "The $(item)Reinforced Shield$() deals damage back to attackers, like the Thorns enchant in normal Minecraft. Its crafting materials can be found from $(l:mars/mars_fauna#cruncher)Crunchers$() and $(l:mars/mars_fauna#eater)Eaters$()."
+			"text": "$(item)強化盾牌$()會對攻擊者造成反傷，就像原版 Minecraft 的荊棘附魔。它的製作材料可以從$(l:mars/mars_fauna#cruncher)巨嘴獸$()和$(l:mars/mars_fauna#eater)吞噬獸$()身上取得。"
 		},
 		{
 			"type": "patchouli:crafting",
 			"recipe": "tfg:shaped/corrupted_shield",
 			"anchor": "corrupted_shield",
-			"text": "The $(item)Corrupted Shield$() randomly teleports attackers, which can be good for keeping them away from you... but it can also teleport them behind you. You can get the teeth from the $(l:mars/mars_fauna#endermen)Cave Endermen$() under the surface of Mars."
+			"text": "$(item)腐化盾牌$()會隨機傳送攻擊者，可以讓牠們遠離你……但也可能把牠們傳送到你背後。牙齒可以從火星地底的$(l:mars/mars_fauna#endermen)洞穴終界使者$()身上取得。"
 		},
 		{
 			"type": "patchouli:crafting",
 			"recipe": "tfg:shaped/ricoshield",
 			"anchor": "ricoshield",
-			"text": "The $(item)Ricoshield$() absorbs an amount of damage before releasing a shockwave, hurting anything else nearby. You can find the $(item)Kinetic Core$() as a rare drop from the $(l:mars/mars_fauna#quake)hostile golems$() in the Martian caves."
+			"text": "$(item)跳彈盾$()會吸收一定量的傷害，然後釋放衝擊波，傷害附近的其他生物。$(item)動能核心$()是火星洞穴中$(l:mars/mars_fauna#quake)敵對魔像$()的稀有掉落物。"
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Further Reading",
+			"title": "延伸閱讀",
 			"anchor": "relations",
 			"entries": [
 				"tfg:mars/mars",

@@ -5,19 +5,19 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "$(thing)Bowls$() are a versatile tool which can be used to make $(l:cooking/salad)Salads$(), to make $(l:cooking/cooking_methods#pot)Soups$(), to $(l:cooking/decay#salting)Salt$() meat, or to apply $(thing)Powder$() to $(l:craftsmanship/glassworking#coloring)Glass$() in order to change the resulting glass's color.$(br2)Bowls can be made both from $(thing)Ceramic$()―By knapping a bowl out of clay, and then firing them―Or out of wood."
+            "text": "$(thing)碗$()是一種多用途的工具，可以用來製作$(l:cooking/salad)沙拉$()、煮$(l:cooking/cooking_methods#pot)湯$()、$(l:cooking/decay#salting)醃製$()肉類，或將$(thing)粉末$()加到$(l:craftsmanship/glassworking#coloring)玻璃$()上以改變玻璃的顏色。$(br2)碗可以用$(thing)陶瓷$()製作――用黏土塑形出碗再燒製――也可以用木頭製作。"
         },
         {
             "type": "patchouli:text",
-            "text": "To make a $(item)Salad$() open the interface by holding a bowl and $(item)$(k:key.sneak) + $(k:key.use)$() in the air.$(br2)Bowls can also be placed on the ground like blocks. When placed, they can be filled with any type of $(thing)Powder$() - the results of grinding ores, minerals, or gems in the $(l:craftsmanship/quern)Quern$()."
+            "text": "要製作$(item)沙拉$()，手持碗對著空中按下$(item)$(k:key.sneak) + $(k:key.use)$()即可開啟介面。$(br2)碗也可以像方塊一樣放在地上。放置後，可以裝入任何種類的$(thing)粉末$()――也就是在$(l:craftsmanship/quern)手推磨$()中研磨礦石、礦物或寶石得到的產物。"
         },
         {
             "type": "patchouli:spotlight",
             "item": "tag:tfc:powders",
             "anchor": "powder_bowl",
-            "title": "Powders",
+            "title": "粉末",
             "link_recipes": false,
-            "text": "放置的碗可以盛裝最多16份單一粉末。手持粉末$(item)$(k:key.use)$()點選以放入。空手$(item)$(k:key.use)$()以取出。$(br2)按住$(item)$(k:key.sneak)$()可以一次裝滿或清空碗中的所有粉末。"
+            "text": "粉末碗最多可以盛裝 16 份同一種粉末。要放入物品，請手持粉末按 $(item)$(k:key.use)$()。要取出物品，請空手按 $(item)$(k:key.use)$()。$(br2)按住 $(item)$(k:key.sneak)$() 可以一次取出碗中的全部內容物。"
         },
         {
             "type": "patchouli:spotlight",

@@ -134,7 +134,7 @@
             "images": [
                 "tfc:textures/gui/book/tutorial/no_familiarity_decay_pig.png"
             ],
-            "text": "Familiarity decays a little each day if not fed. Raising the familiarity enough prevents decay, indicated by the white outlined heart.",
+            "text": "Poziom oswojenia nieznacznie spada każdego dnia, jeśli zwierzę nie jest karmione. Gdy osiągnie odpowiednio wysoki poziom, przestaje spadać, co sygnalizuje biała obwódka serca.",
             "border": true
         },
         {

@@ -19,7 +19,7 @@
             "anchor": "papyrus",
             "title": "Papier z papirusu",
             "recipe": "tfc:crafting/papyrus_strips",
-            "text": "Paper can be directly sourced from the $(l:https://en.wikipedia.org/wiki/Papyrus)Papyrus$() crop. Papyrus must first be cut into strips with a $(thing)Knife$()..."
+            "text": "Papier można pozyskać bezpośrednio z uprawy $(l:https://en.wikipedia.org/wiki/Papyrus)papirusu$(). Papirus trzeba najpierw pociąć na paski za pomocą $(thing)noża$()..."
         },
         {
             "type": "tfg:sealed_barrel_recipe",
@@ -53,7 +53,7 @@
             "recipe": "tfc:crafting/parchment",
             "anchor": "parchment_paper",
             "title": "Pergamin",
-            "text": "Treated hide, $(l:craftsmanship/glassworking#lime_and_potash)lime powder$(), flour, and a fresh egg will complete the treatment process and yield usable paper."
+            "text": "Obrobiona skóra, $(l:craftsmanship/glassworking#lime_and_potash)wapno palone$(), mąka i świeże jajko dopełnią proces obróbki i dadzą użyteczny papier."
         },
         {
             "type": "patchouli:text",
@@ -75,7 +75,7 @@
             "title": "Pasek twardego drewna",
             "anchor": "hardwood_strip",
             "recipe": "tfg:crafting/strip_hardwood",
-            "text": "Next, the stripped wood is shaven with an axe to obtain $(item)Hardwood Strips$(). This can be done using an Axe or more sophisticated methods later."
+            "text": "Następnie ociosane drewno struga się na $(item)paski twardego drewna$(). Na początku wystarczy siekiera, a później można skorzystać z bardziej zaawansowanych metod."
         },
         {
             "type": "tfg:sealed_barrel_recipe",
@@ -123,7 +123,7 @@
         {
             "type": "patchouli:text",
             "title": "Mniej kroków cięcia…?",
-            "text": "Advancing in the Tech-Tree will allow you to create paper from wood with less overall steps, check $(emi) for the different approaches you can take for making paper with wood."
+            "text": "Postępy w drzewku technologicznym pozwolą ci wytwarzać papier z drewna w mniejszej liczbie kroków. Sprawdź w $(emi) różne metody produkcji papieru z drewna."
         },
         {
             "type": "patchouli:relations",

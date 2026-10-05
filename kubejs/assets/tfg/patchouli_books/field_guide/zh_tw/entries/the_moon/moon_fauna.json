@@ -1,87 +1,87 @@
 {
-	"name": "Moon Fauna",
+	"name": "月球動物",
 	"category": "tfg:the_moon",
 	"icon": "species:textures/item/birt_egg.png",
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"title": "Extraterrestrial Fauna",
-			"text": "Space is home to many other kinds of animals than those you'd find on Earth. A few animals are hostile and will attack the player, but most are passive. Only a few of them are $(l:agriculture/animal_husbandry)domesticatable$().$(br)Animals you find on other worlds can be divided into two categories: $(item)hot$() and $(item)cold$(). Animals can only survive on planets that either have a similar climate to where they came from, or on $(thing)temperate$() planets like Earth."
+			"title": "外星動物",
+			"text": "太空中棲息著許多與地球上不同種類的動物。少數動物是敵對的，會攻擊玩家，但大多數是被動的。只有少數可以被$(l:agriculture/animal_husbandry)馴化$()。$(br)在其他世界發現的動物可以分為兩類：$(item)炎熱$()和$(item)寒冷$()。動物只能在氣候與其原生地相似的行星，或像地球這樣的$(thing)溫帶$()行星上生存。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Space animals do not require an oxygenated environment, but it will make the area count as \"temperate\" for their survival. For example, if you bring a cold-dwelling animal (like a Moon Rabbit) to a hot planet (like Venus), it will catch on fire, unless it's inside an oxygenated environment.$(br)This makes Earth the ideal place to build a zoo, if you'd like.$(br)You can transport animals between planets using AE2's Spatial Storage system."
+			"text": "太空動物不需要含氧環境，但含氧環境會讓該區域被視為「溫帶」，有助於牠們生存。例如，如果你把寒冷地區的動物(像月兔)帶到炎熱的行星(像金星)，牠就會著火，除非牠處於含氧環境中。$(br)因此，如果你想建動物園的話，地球是理想的地點。$(br)你可以使用 AE2 的空間儲存系統在行星之間運送動物。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(li)$(bold)Domesticatable$()$(li2)$(l:the_moon/moon_fauna#moon_rabbit)Moon Rabbit$()$(li2)$(l:the_moon/moon_fauna#birt)Birt$()$(li2)$(l:the_moon/moon_fauna#certus_jellie)Certus Jellie$()$(li)$(bold)Wild$()$(li2)$(l:the_moon/moon_fauna#limpet)Limpet$()$(li2)$(l:the_moon/moon_fauna#star_crawler)Star Crawler$()$(li2)$(l:the_moon/moon_fauna#endermen)Endermen$()$(li2)$(l:the_moon/moon_fauna#shulker)Shulker$()"
+			"text": "$(li)$(bold)可馴化$()$(li2)$(l:the_moon/moon_fauna#moon_rabbit)月兔$()$(li2)$(l:the_moon/moon_fauna#birt)癡音鳥$()$(li2)$(l:the_moon/moon_fauna#certus_jellie)賽特斯果凍怪$()$(li)$(bold)野生$()$(li2)$(l:the_moon/moon_fauna#limpet)帽貝$()$(li2)$(l:the_moon/moon_fauna#star_crawler)星際行者$()$(li2)$(l:the_moon/moon_fauna#endermen)終界使者$()$(li2)$(l:the_moon/moon_fauna#shulker)界伏蚌$()"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "tfg:moon_rabbit{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16,MoonRabbitType:5}",
 			"scale": 1.3,
 			"offset": -0.3,
-			"name": "Moon Rabbit",
+			"name": "月兔",
 			"anchor": "moon_rabbit",
-			"text": "Besides their coloring, $(thing)Moon Rabbits$() have identical stats to Earth rabbits. They also eat Chorus Fruit."
+			"text": "除了顏色之外，$(thing)月兔$()的能力值與地球的兔子完全相同。牠們也吃歌萊果。"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "species:birt",
 			"anchor": "birt",
 			"scale": 0.9,
-			"name": "Birt",
-			"text": "$(thing)Birts$() are a type of bird? They lay eggs in their nests, are passive unless attacked, and can be eaten. Their eggs can be thrown to stun targets."
+			"name": "癡音鳥",
+			"text": "$(thing)癡音鳥$()應該算是一種鳥？牠們會在巢中下蛋，除非受到攻擊否則是被動的，而且可以被吃掉。牠們的蛋可以丟出去暈眩目標。"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "jellies:certus",
 			"scale": 0.6,
-			"name": "Certus Jellie",
+			"name": "賽特斯果凍怪",
 			"anchor": "certus_jellie",
-			"text": "$(thing)Certus$() $(l:agriculture/jellies)Jellies$() spawn in Moon's $(item)Asurine$() biomes. They produce $(thing)Large Certus Quartz Buds$()."
+			"text": "$(thing)賽特斯$()$(l:agriculture/jellies)果凍怪$()生成於月球的$(item)皓藍石$()生態域。牠們會產出$(thing)大型賽特斯石英芽$()。"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "species:limpet",
 			"scale": 0.8,
-			"name": "Limpet",
+			"name": "帽貝",
 			"anchor": "limpet",
-			"text": "$(thing)Limpets$() are a type of snail with ore on their shell. You can obtain the ore with any mining tool. They are passive and can be eaten."
+			"text": "$(thing)帽貝$()是一種殼上長著礦石的蝸牛。你可以用任何挖礦工具取得礦石。牠們是被動的，可以被吃掉。"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "ad_astra:star_crawler",
 			"scale": 0.4,
-			"name": "Star Crawler",
+			"name": "星際行者",
 			"anchor": "star_crawler",
-			"text": "$(thing)Star Crawlers$() are a type of starfish. They are hostile and can be eaten."
+			"text": "$(thing)星際行者$()是一種海星。牠們是敵對的，可以被吃掉。"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "endermanoverhaul:windswept_hills_enderman",
 			"scale": 1,
-			"name": "Endermen",
+			"name": "終界使者",
 			"anchor": "endermen",
-			"text": "The Moon is home to more species of $(thing)Endermen$(). Some are neutral, but a few are hostile, so watch out!"
+			"text": "月球上棲息著更多種類的$(thing)終界使者$()。有些是中立的，但少數是敵對的，所以要小心！"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "endermanoverhaul:end_islands_enderman",
 			"scale": 1,
-			"text": "The most dangerous $(thing)Endermen$() are found in the $(item)Chorus$() biomes."
+			"text": "The most dangerous $(thing)Endermen$() are found in the $(l:the_moon/moon_biomes#forest)Chorus$() biomes."
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "minecraft:shulker{Color:7}",
 			"anchor": "shulker",
-			"title": "Shulker",
+			"title": "界伏蚌",
 			"scale": 0.7,
-			"text": "$(thing)Shulkers$() can be found around large meteorites and abandoned moon bases. Maybe they are guarding something...?"
+			"text": "$(thing)界伏蚌$()可以在大型隕石和廢棄的月球基地周圍找到。也許牠們在守護著什麼……？"
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Further Reading",
+			"title": "延伸閱讀",
 			"anchor": "relations",
 			"entries": [
 				"tfg:the_moon/the_moon",
@@ -89,7 +89,8 @@
 				"tfg:agriculture/animal_husbandry",
 				"tfg:agriculture/jellies",
 				"tfg:beneath/beneath_fauna",
-				"tfg:mars/mars_fauna"
+				"tfg:mars/mars_fauna",
+				"tfg:the_moon/moon_biomes"
 			]
 		}
 	],

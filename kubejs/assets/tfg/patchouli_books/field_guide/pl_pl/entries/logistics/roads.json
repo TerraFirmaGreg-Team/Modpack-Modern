@@ -469,7 +469,7 @@
             "entity": "tfg:rnr_plow",
             "scale": 0.5,
             "name": "Wóz brukarski",
-            "text": "The blades of the paving cart will lower with $(item)$(k:key.use)$() indicating that the cart will plow roads when moved."
+            "text": "Użycie $(item)$(k:key.use)$() opuszcza lemiesze wozu brukarskiego, co oznacza, że podczas jazdy będzie on tworzył drogi."
         },
         {
             "type": "patchouli:image",

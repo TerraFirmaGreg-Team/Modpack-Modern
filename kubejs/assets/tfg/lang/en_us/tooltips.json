@@ -186,7 +186,7 @@
     "tfg.tooltip.machine.smr_fluid_import_hatch": "§7Can only be used in a Small Modular Turbine§r",
 
     "tfg.tooltip.machine.pastoral_engine_1": "§7The cheesiest and fluffiest machine around§r",
-    "tfg.tooltip.machine.pastoral_engine_2": "§7Automatically milks and shears any animals within the multiblock's bounding box.§r",
+    "tfg.tooltip.machine.pastoral_engine_2": "§7Automatically milks and shears any animals within the area indicated by the metal casings.§r",
 
     "tfg.tooltip.component.blue_ice": "Can be placed inside a Fission Reactor to increase the maximum heat by §90.5§r",
     "tfg.tooltip.component.aes_insulation_frame": "Can be placed inside a Fission Reactor to increase the maximum heat by §91§r",

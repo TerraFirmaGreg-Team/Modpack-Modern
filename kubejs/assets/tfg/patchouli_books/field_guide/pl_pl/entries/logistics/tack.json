@@ -56,7 +56,7 @@
             "entity": "tfcastikorcarts:plow/oak",
             "scale": 0.4,
             "name": " ",
-            "text": "The plow will display its tools. It will be engaged when its arms are lowered."
+            "text": "Pług wyświetla swoje narzędzia. Przechodzi w tryb pracy po opuszczeniu ramion."
         },
         {
             "type": "patchouli:spotlight",

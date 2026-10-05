@@ -1355,8 +1355,13 @@
 			y: -4.0d
 		}
 		{
-			dependencies: ["00A2566109144D7F"]
+			dependencies: [
+				"00A2566109144D7F"
+				"578ECB10B30A77C7"
+			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.high_voltage.moon_harvester.desc}"]
+			guide_page: "tfg:field_guide tfg:the_moon/moon_biomes 12"
 			id: "6A21CCAEB1FDF38E"
 			shape: "octagon"
 			size: 1.5d
@@ -1367,8 +1372,8 @@
 				type: "item"
 			}]
 			title: "{quests.high_voltage.moon_harvester.title}"
-			x: 14.0d
-			y: 3.0d
+			x: 17.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["00A2566109144D7F"]
@@ -1384,142 +1389,7 @@
 			}]
 			title: "{quests.high_voltage.regolith_vapor.title}"
 			x: 17.5d
-			y: 0.0d
-		}
-		{
-			dependencies: ["6A21CCAEB1FDF38E"]
-			description: ["{quests.high_voltage.regolith_dust.desc}"]
-			id: "0527DF6A8567FED9"
-			subtitle: "{quests.high_voltage.regolith_dust.subtitle}"
-			tasks: [
-				{
-					id: "567BAEEB6120F6CE"
-					item: "tfg:certus_regolith_dust"
-					type: "item"
-				}
-				{
-					id: "5507A8B1561AC3C3"
-					item: "tfg:cassiterite_regolith_dust"
-					type: "item"
-				}
-				{
-					id: "13C520F021B2E085"
-					item: "tfg:bright_regolith_dust"
-					type: "item"
-				}
-				{
-					id: "3565544FF49B9F50"
-					item: "tfg:goethe_regolith_dust"
-					type: "item"
-				}
-			]
-			title: "{quests.high_voltage.regolith_dust.title}"
-			x: 16.0d
-			y: 3.0d
-		}
-		{
-			dependencies: [
-				"0527DF6A8567FED9"
-				"578ECB10B30A77C7"
-			]
-			description: ["{quests.high_voltage.dusty_ores.desc}"]
-			id: "5807400FD1F0998A"
-			subtitle: "{quests.high_voltage.dusty_ores.subtitle}"
-			tasks: [{
-				id: "131B1D5F37FAC1F3"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "or(item(gtceu:dusty_raw_goethite)item(gtceu:dusty_raw_cassiterite)item(gtceu:dusty_raw_certus_quartz)item(gtceu:dusty_raw_gold)item(gtceu:dusty_raw_diamond))"
-					}
-				}
-				title: "{quests.high_voltage.dusty_ores.task}"
-				type: "item"
-			}]
-			title: "{quests.high_voltage.dusty_ores.title}"
-			x: 17.5d
-			y: 3.0d
-		}
-		{
-			dependencies: ["5807400FD1F0998A"]
-			description: ["{quests.high_voltage.final_dust.desc}"]
-			id: "36FE3DDBCB535639"
-			optional: true
-			shape: "heart"
-			size: 1.25d
-			subtitle: "{quests.high_voltage.final_dust.subtitle}"
-			tasks: [
-				{
-					id: "1ABCC8007A69EF81"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "gtceu:iron_dust"
-					}
-					type: "item"
-				}
-				{
-					id: "3AB1A3B8E6EB4291"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "gtceu:copper_dust"
-					}
-					type: "item"
-				}
-				{
-					id: "1D38FECBB23C3E24"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "gtceu:tin_dust"
-					}
-					type: "item"
-				}
-				{
-					id: "6C9C5498495F330C"
-					item: "ae2:certus_quartz_dust"
-					type: "item"
-				}
-				{
-					id: "0AF375FA38D44C32"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "gtceu:gold_dust"
-					}
-					type: "item"
-				}
-				{
-					id: "6896A082D722EECB"
-					item: "gtceu:diamond_dust"
-					type: "item"
-				}
-			]
-			title: "{quests.high_voltage.final_dust.title}"
-			x: 17.5d
-			y: 4.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["396E85A39FF414CF"]
@@ -1877,7 +1747,7 @@
 				}
 			]
 			x: 19.0d
-			y: -3.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["00A2566109144D7F"]
@@ -1960,7 +1830,7 @@
 			}]
 			title: "{quests.high_voltage.perlite.title}"
 			x: 17.5d
-			y: -4.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["52AD30F04DD5A812"]
@@ -2090,7 +1960,7 @@
 				type: "item"
 			}]
 			title: "{quests.space_survival.railgun.title}"
-			x: 16.5d
+			x: 17.5d
 			y: -6.0d
 		}
 	]

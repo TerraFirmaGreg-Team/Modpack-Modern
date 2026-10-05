@@ -5,16 +5,16 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "$(thing)蜂箱$()是為了$(thing)養蜂$()而給蜜蜂的居所。養蜂是蜂蠟和蜂蜜的直接來源。養蜂還要放入$(item)蜂箱框架$()讓蜜蜂們存活。從活躍的蜂巢中取出蜂框會導致蜜蜂攻擊你，除非穿著$(item)養蜂服$()，或在蜂巢下方點燃$(thing)火坑$()。 "
+            "text": "$(thing)蜂巢$()是用來容納蜜蜂、進行$(thing)養蜂$()的地方。養蜂是蜂蠟和蜂蜜的直接來源。蜂巢裡需要放入$(item)巢框$()，蜜蜂才能居住。從活躍的蜂巢取出巢框會讓蜜蜂攻擊你，除非你穿著全套$(item)養蜂服$()，或是蜂巢下方有點燃的$(thing)篝火$()。"
         },
         {
             "type": "patchouli:text",
-            "text": "Beehives know about the area in a 5 block radius from them. If there are at least 10 $(t:#minecraft:flowers block tag)$(3)Flowers$() around the hive, there is a chance an empty frame will be populated with a $(thing)Queen$(). Having 4 empty frames in a hive greatly increases the chances of bees moving in. Beehives can share flowers. The benefit of flowers diminishes after 60 flowers."
+            "text": "蜂巢能感知周圍 5 格半徑內的範圍。如果蜂巢周圍至少有 10 朵$(t:#minecraft:flowers block tag)$(3)花$()，空巢框就有機率出現$(thing)蜂后$()。蜂巢中放入 4 個空巢框可以大幅提高蜜蜂入住的機率。蜂巢之間可以共享花朵。花朵超過 60 朵之後，帶來的效益會遞減。"
         },
         {
             "anchor": "preview",
             "type": "tfg:multimultiblock",
-            "text": "Beehive Range",
+            "text": "蜂巢範圍",
             "multiblocks": [
                 {
                     "pattern": [
@@ -326,36 +326,36 @@
         },
         {
             "type": "patchouli:text",
-            "text": "If a beehive has two frames with queens, and an empty frame, the two colonies have a chance of $(thing)Breeding$() and producing a new queen in the empty frame. This has the effect of passing on the $(thing)Abilities$() of each parent to the offspring. Abilities are different traits bees have that change how they affect the world around them. They are on a scale of 1-10, with 10 being the max.$(br)Bees can have up to $(thing)four$() abilities."
+            "text": "當蜂巢有兩個巢框存在蜂后並且有空巢框時，兩個蜂群有機會$(thing)繁殖$()，並在空巢框產生新的蜂后。這樣就能將雙親的$(thing)能力$()傳給子代。能力是蜜蜂擁有的不同特質，會影響蜜蜂對周圍環境的影響。能力等級從1到10，10為最高。$(br)蜜蜂最多可以擁有$(thing)四種$()能力。"
         },
         {
-            "title": "Honey & Wax",
+            "title": "蜂蜜與蜂蠟",
             "anchor": "honey_and_wax",
             "type": "patchouli:spotlight",
             "item": "firmalife:jar/honey,firmalife:raw_honey,firmalife:beeswax",
-            "text": "Bees produce $(thing)Honey$(). Using $(item)$(k:key.use)$() with an Empty Jar on a hive that contains honey gives you a $(thing)Honey Jar$(). Opening a Honey Jar gives you $(thing)Raw Honey$(), a $(thing)Sugar$() substitute.$(br2)Pressing $(item)$(k:key.use)$() on a filled frame with a $(thing)Knife$() gives you $(thing)Beeswax$(), which has many uses. However, this kills the queen inside the frame!"
+            "text": "蜜蜂會生產$(thing)蜂蜜$()。手持空罐對裝有蜂蜜的蜂巢按下$(item)$(k:key.use)$()，可獲得$(thing)蜂蜜罐$()。打開蜂蜜罐可獲得$(thing)生蜂蜜$()，可作為$(thing)糖$()的替代品。$(br2)手持$(thing)刀$()對已填滿的巢框按下$(item)$(k:key.use)$()，可獲得用途廣泛的$(thing)蜂蠟$()。但這麼做會殺死巢框中的蜂后！"
         },
         {
             "type": "patchouli:text",
             "anchor": "abilities",
-            "text": "$(li)$(thing)耐寒性$()：使蜜蜂能在更低的溫度下產蜜。耐寒性10允許低至-16°C，而耐寒性1僅允許低至2°C。$()$(li)$(thing)生產力$()：提升蜂蜜的產出速度。$()$(li)$(thing)突變性$()：增加繁殖過程中特性遺傳的變異性。$()",
-            "title": "性狀列表"
+            "text": "$(li)$(thing)耐寒$()：使蜜蜂能在更低的溫度下產蜜。耐寒10容許低至-16°C，而耐寒1僅容許低至2°C。$()$(li)$(thing)生產力$()：提升蜂蜜的產出速度。$()$(li)$(thing)突變$()：增加繁殖過程中特性遺傳的變異。$()",
+            "title": "能力列表"
         },
         {
             "type": "patchouli:text",
-            "text": "$(li)$(thing)Fertility$(): Increases likelihood of breeding.$()$(li)$(thing)Crop Affinity$(): Likelihood of spreading a small amount of nutrients to crops.$()$()$(li)$(thing)Nature Restoration$(): Causes new flowers and lilypads to spawn around the hive.$()$()$(li)$(thing)Calmness$(): Decreases likelihood of bees attacking you$()."
+            "text": "$(li)$(thing)繁殖力$()：提高繁殖的機率。$()$(li)$(thing)作物親和$()：有機率將少量養分散播給作物。$()$()$(li)$(thing)自然復育$()：使蜂巢周圍生成新的花朵與睡蓮葉。$()$()$(li)$(thing)溫馴度$()：降低蜜蜂攻擊你的機率$()。"
         },
         {
             "type": "patchouli:text",
             "anchor": "disease",
-            "title": "Disease",
-            "text": "Bees with a high Mutant ability have a chance of developing a $(thing)Genetic Disease$(). Diseased bees pass on their affliction to their offspring, and do not produce honey."
+            "title": "疾病",
+            "text": "突變能力高的蜜蜂有機率患上$(thing)遺傳疾病$()。患病的蜜蜂會將疾病遺傳給後代，且不會生產蜂蜜。"
         },
         {
             "type": "patchouli:text",
             "title": "養蜂提示",
             "anchor": "tips",
-            "text": "$(li)Bees can help fertilize $(l:agriculture/greenhouse#planters)Planters!$()$(li)Hydrated large planters count as flowers.$(li)Being wet prevents bee attacks.$(li)Some crops like sunflowers and flax count as flowers.$(li)The ranges for $(thing)Crop Affinity$(), $(thing)Nature Restoration$(), and flowers are the same.$(li)Make sure to keep the hive entrance unobstructed."
+            "text": "$(li)蜜蜂可以幫$(l:agriculture/greenhouse#planters)種植盆$()施肥！$(li)含水的大型種植盆會被視為花朵。$(li)處於潮濕狀態可以防止蜜蜂攻擊。$(li)向日葵和亞麻等部分作物會被視為花朵。$(li)$(thing)作物親和$()、$(thing)自然復育$()與花朵的作用範圍相同。$(li)請確保蜂巢的出入口沒有被擋住。"
         },
         {
             "type": "patchouli:relations",
