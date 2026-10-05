@@ -2,6 +2,10 @@
 
 ## Unreleased
 ### Breaking Changes
+- The ME Resonnance Charger can't be rotated anymore so you can't stack them to charge your Budding Certus anymore and you need 4 Stainless Frame @TomPlop
+- The Circuits for Annihilation and Formation Core, Printed Circuits got changed to allow for easier passive in the ME Assembler got changed @TomPlop
+- Garnet Sand Line from Crushed Ores had some Circuits changed to allow the line to be run at MV with different recipes for LCR and CR @TomPlop
+- Butyralhyde can now be crafted at MV so you can start the Garnet Sand Line with Ethylhexenal to make Lean Organic Stabilizer @TomPlop
 #### Oxygen Rework
 - Completely reworked Ad Astra's oxygenation mechanics and replaced them with our own native system. (#4931) @Mqrius
 - Added the Oxygen Distributor multiblock to replace Ad Astra's Air Distributor. This one oxygenates an entire enclosed room instead of just a small area around it. @Mqrius
