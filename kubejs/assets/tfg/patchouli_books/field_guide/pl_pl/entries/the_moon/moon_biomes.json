@@ -1,0 +1,228 @@
+{
+	"name": "Księżycowe biomy",
+	"category": "tfg:the_moon",
+	"icon": "tfg:textures/block/lunar_roots.png",
+	"read_by_default": true,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "$(thing)The Moon$() is a pretty rocky place wherever you go, but it still has a few different biomes to explore that you may be interested in.$(br2)Looking for somewhere specific? Only some biomes can spawn near each other, with the $(l:the_moon/moon_biomes#sands)Lunar Sands$() and $(l:the_moon/moon_biomes#plains)Lunar Plains$() serving as a sort of \"neutral ground\" between them all."
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "index",
+			"title": "Zawartość",
+			"text": "$(li)$(bold)Biomy$()$(li2)$(l:the_moon/moon_biomes#plains)Księżycowe równiny$()$(li2)$(l:the_moon/moon_biomes#sands)Piaski księżycowe$()$(li2)$(l:the_moon/moon_biomes#asurine)Azurynowe pola$()$(li2)$(l:the_moon/moon_biomes#certus)Certusowe pola$()$(li2)$(l:the_moon/moon_biomes#forest)Las refrenusowy$()$(li2)$(l:the_moon/moon_biomes#thicket)Refrenusowy gąszcz$()$(li2)$(l:the_moon/moon_biomes#maria)Morza księżycowe$()$(li2)$(l:the_moon/moon_biomes#reef)Księżycowa rafa koralowa$()$(li2)$(l:the_moon/moon_biomes#scrubland)Skrub rozbłyskowy$()$(li2)$(l:the_moon/moon_biomes#stargazers)Gęste rozbłyski$()$(li)$(bold)$(l:the_moon/moon_biomes#harvester)Żniwiarka księżycowego proszku$()$(li2)$(l:the_moon/moon_biomes#regolith)Lista regolitów$()"
+		},
+		{
+			"type": "patchouli:image",
+			"border": true,
+			"title": "Księżycowe równiny",
+			"anchor": "plains",
+			"images": [
+				"tfg:textures/gui/field_guide/moon/plains.png"
+			],
+			"text": "$(thing)Lunar Plains$() don't really have anything interesting going on, but they're a nice neutral place to make a base."
+		},
+		{
+			"type": "patchouli:image",
+			"border": true,
+			"title": "Piaski księżycowe",
+			"anchor": "sands",
+			"images": [
+				"tfg:textures/gui/field_guide/moon/sands.png"
+			],
+			"text": "$(thing)Piaski księżycowe$() to alternatywna wersja księżycowych równin z mniejszą ilością roślinności, ale z większą ilością piasku."
+		},
+		{
+			"type": "patchouli:image",
+			"border": true,
+			"title": "Azurynowe pola",
+			"anchor": "asurine",
+			"images": [
+				"tfg:textures/gui/field_guide/moon/asurine.png"
+			],
+			"text": "$(thing)Asurine Fields$() has frequent formations of $(item)Asurine$(). It cannot spawn near $(l:the_moon/moon_biomes#forest)Chorus$() biomes."
+		},
+		{
+			"type": "patchouli:image",
+			"border": true,
+			"title": "Certusowe pola",
+			"anchor": "certus",
+			"images": [
+				"tfg:textures/gui/field_guide/moon/certus.png"
+			],
+			"text": "$(thing)Certusowe pola$() mają większe formacje $(item)azurynu$(), które zawierają też duże ilości $(item)certusowego kwarcu$()."
+		},
+		{
+			"type": "patchouli:image",
+			"border": true,
+			"title": "Las refrenusowy",
+			"anchor": "forest",
+			"images": [
+				"tfg:textures/gui/field_guide/moon/forest.png"
+			],
+			"text": "$(thing)Las refrenusowy$() to jedyne miejsce, gdzie można znaleźć $(l:the_moon/moon_crops)owoce refrenusu$(). Nie może pojawiać się w pobliżu biomów $(l:the_moon/moon_biomes#asurine)azurynowych$()."
+		},
+		{
+			"type": "patchouli:image",
+			"border": true,
+			"title": "Refrenusowy gąszcz",
+			"anchor": "thicket",
+			"images": [
+				"tfg:textures/gui/field_guide/moon/thicket.png"
+			],
+			"text": "The $(thing)Chorus Thicket$() is a dense area of $(l:the_moon/moon_crops)Chorus Fruit$(). It is a dangerous biome with hostile $(l:the_moon/moon_fauna#endermen)endermen$()."
+		},
+		{
+			"type": "patchouli:image",
+			"border": true,
+			"title": "Morza księżycowe",
+			"anchor": "maria",
+			"images": [
+				"tfg:textures/gui/field_guide/moon/maria.png"
+			],
+			"text": "The $(thing)Lunar Maria$() contains some $(item)dead coral$() and sand. It cannot spawn near $(l:the_moon/moon_biomes#lightbloom)Lightbloom$() biomes."
+		},
+		{
+			"type": "patchouli:image",
+			"border": true,
+			"title": "Księżycowa rafa koralowa",
+			"anchor": "reef",
+			"images": [
+				"tfg:textures/gui/field_guide/moon/reef.png"
+			],
+			"text": "$(thing)Księżycowa rafa koralowa$() ma wiele dużych formacji martwego koralowca. Czy Księżyc miał oceany w odległej przeszłości?"
+		},
+		{
+			"type": "patchouli:image",
+			"border": true,
+			"title": "Skrub rozbłyskowy",
+			"anchor": "scrubland",
+			"images": [
+				"tfg:textures/gui/field_guide/moon/scrubland.png"
+			],
+			"text": "$(thing)Skrub rozbłyskowy$() mają rzadkie skupiska $(item)rozbłysków$(). Nie pojawiają się w pobliżu biomów $(l:the_moon/moon_biomes#maria)koralowych$()."
+		},
+		{
+			"type": "patchouli:image",
+			"border": true,
+			"title": "Gwiezdne rozbłyski",
+			"anchor": "stargazers",
+			"images": [
+				"tfg:textures/gui/field_guide/moon/stargazers.png"
+			],
+			"text": "Rośnie tu wiele $(item)księżycowych rozbłysków$(). $(bold)Wskazówka:$() Ten biom wygląda pięknie w nocy z włączonymi shaderami!"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "gtceu:moon_dust_harvester",
+			"anchor": "harvester",
+			"text": "The $(item)Moon Dust Harvester$() is an optional multiblock that collects $(thing)lunar regolith$(). This regolith can then be processed into $(thing)infinite sources of certain ores$()!$(br)The downside? There's four types of regolith and each can only be harvested in a certain biome, so if you want all of them, you'll have to set up some $(l:logistics/trains)infrastructure$()."
+		},
+		{
+			"type": "patchouli:multiblock",
+			"title": " ",
+			"text": "Ulepszenie $(item)cewek$() zmniejsza zużycie energii. $(l:logistics/trains#cargo)Akumulatory$() można wykorzystać do transportu energii.",
+			"multiblock": {
+				"pattern": [
+					[
+						" AAA ",
+						" BFB ",
+						" BFB ",
+						" BFB ",
+						" BFB ",
+						" BFB ",
+						" AAA "
+					],
+					[
+						"AA1AA",
+						"BB BB",
+						"A   A",
+						"A   A",
+						"A   A",
+						"BB BB",
+						"AABAA"
+					],
+					[
+						"A234A",
+						"B   B",
+						"D   D",
+						"D   D",
+						"D   D",
+						"B   B",
+						"ABXBA"
+					],
+					[
+						"AAAAA",
+						"BBBBB",
+						"ADDDA",
+						"ADDDA",
+						"ADDDA",
+						"BBBBB",
+						"AAAAA"
+					],
+					[
+						"A   A",
+						"     ",
+						"     ",
+						"  0  ",
+						"     ",
+						"     ",
+						"A   A"
+					]
+				],
+				"mapping": {
+					"0": "minecraft:air",
+					"X": "gtceu:moon_dust_harvester[facing=east]",
+					"A": "tfg:casings/machine_casing_iron_desh",
+					"B": "gtceu:nonconducting_casing",
+					"D": "tfg:casings/machine_casing_vacuum_engine_intake",
+					"F": "gtceu:cupronickel_coil_block",
+					"1": "gtceu:maintenance_hatch[facing=west]",
+					"2": "gtceu:hv_energy_input_hatch[facing=west]",
+					"3": "gtceu:ulv_input_bus[facing=west]",
+					"4": "gtceu:ulv_output_bus[facing=west]"
+				}
+			},
+			"enable_visualize": false
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tfg:certus_regolith_dust",
+			"anchor": "regolith",
+			"text": "$(item)Certus Regolith Dust$() can only be harvested in the $(l:the_moon/moon_biomes#certus)Certus Fields$() biome.$(br2)It can be processed into $(item)Certus Quartz$() and $(item)Zinc$()."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tfg:cassiterite_regolith_dust",
+			"text": "$(item)Pył kasyterytowego regolitu$() wymaga $(l:the_moon/moon_biomes#stargazers)gwiezdnych rozbłysków$().$(br2)Jest źródłem $(item)cyny$()."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tfg:goethe_regolith_dust",
+			"text": "$(item)Goethe Regolith Dust$() is harvested in the $(l:the_moon/moon_biomes#thicket)Chorus Thicket$() biome.$(br2)It can be processed into $(item)Copper$() and $(item)Iron$()."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tfg:bright_regolith_dust",
+			"text": "$(item)Bright Regolith Dust$() is from the $(l:the_moon/moon_biomes#reef)Lunar Reef$() biome.$(br2)It is a source of $(item)Diamond$() and $(item)Gold$()."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "As part of their processing, all of these $(thing)Regolith Dusts$() are turned into $(item)Dusty Ores$(). These can only be centrifuged for resources for now - further extraction will require some lategame ore processing on $(l:venus)Venus$().$(br2)Be sure to use a $(item)Large Chemical Reactor$() to get perfect overclocking on these recipes! If you want to set up more passive automation for $(thing)AE2 components$() or $(l:logistics/railgun)Railgun Ammo$(), these regolith harvesters are essential!"
+		},
+		{
+			"type": "patchouli:relations",
+			"title": "Czytaj dalej",
+			"anchor": "relations",
+			"entries": [
+				"tfg:the_moon/the_moon",
+				"tfg:the_moon/moon_fauna",
+				"tfg:the_moon/moon_crops",
+				"tfg:logistics/railgun",
+				"tfg:logistics/trains"
+			]
+		}
+	]
+}

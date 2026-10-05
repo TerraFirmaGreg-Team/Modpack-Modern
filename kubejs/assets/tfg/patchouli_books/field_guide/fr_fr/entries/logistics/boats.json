@@ -575,7 +575,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "Building the hull is only the first step. Next, look for the blue hammer icon and $(item)$(k:key.use)$() to add the items that show next to your crosshair.$(br2)For a full list of materials, you will need:$(li)6 Scaffold Slabs$(li)18 Scaffold Stairs$(li)116 Hardwood Plank Blocks$(li)96 Copper Bolts$(li)4 Cleats$(li)34 Hardwood Stripped Logs$(li)1 Medium Sail$(li)1 Small Sail$(li)16 Lumber$(li)1 Anchor$(li)8 Rope."
+            "text": "Building the hull is only the first step. Next, look for the blue hammer icon and $(item)$(k:key.use)$() to add the items that show next to your crosshair.$(br)For a full list of materials, you will need:$(li)6 Scaffold Slabs$(li)18 Scaffold Stairs$(li)116 Hardwood Plank Blocks$(li)96 Copper Bolts$(li)4 Cleats$(li)34 Hardwood Stripped Logs$(li)1 Medium Sail$(li)1 Small Sail$(li)16 Lumber$(li)1 Anchor$(li)8 Rope"
         },
         {
             "type": "patchouli:spotlight",
@@ -617,12 +617,12 @@
         "firmaciv:canoe_paddle": 26,
         "alekiships:oarlock": 34,
         "alekiships:oar": 34,
-        "alekiships:cleat": 42,
-        "alekiships:anchor": 42,
-        "firmaciv:small_triangular_sail": 42,
-        "firmaciv:medium_triangular_sail": 42,
-        "firmaciv:cannon": 51,
-        "firmaciv:cannon_barrel": 51,
-        "alekiships:cannonball": 51
+        "alekiships:cleat": 40,
+        "alekiships:anchor": 40,
+        "firmaciv:small_triangular_sail": 40,
+        "firmaciv:medium_triangular_sail": 40,
+        "firmaciv:cannon": 50,
+        "firmaciv:cannon_barrel": 50,
+        "alekiships:cannonball": 50
     }
 }

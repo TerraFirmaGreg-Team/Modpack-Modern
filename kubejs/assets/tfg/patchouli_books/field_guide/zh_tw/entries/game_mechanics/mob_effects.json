@@ -1,5 +1,5 @@
 {
-    "name": "Mob Effect Glossary",
+    "name": "狀態效果詞彙表",
     "category": "tfg:game_mechanics",
     "icon": "minecraft:textures/mob_effect/jump_boost.png",
     "sortnum": 4,
@@ -8,71 +8,71 @@
         {
             "type": "patchouli:text",
             "anchor": "index",
-            "text": "$(li)$(bold)$(2)Positive Effects$()$(li2)$(l:game_mechanics/mob_effects#cooling)Cooling$()$(li2)$(l:game_mechanics/mob_effects#warming)Warming$()$(li2)$(l:game_mechanics/mob_effects#quenched)Quenched$()$(li2)$(l:game_mechanics/mob_effects#cure_parasites)Cure Parasites$()$(li2)$(l:game_mechanics/mob_effects#cure_toxins)Detoxify$()$(li2)$(l:game_mechanics/mob_effects#cure_microplastics)Filter Microplastics$()$(li)$(bold)$(4)Negative Effects$()$(li2)$(l:game_mechanics/mob_effects#freezing)Freezing$()$(li2)$(l:game_mechanics/mob_effects#blazing)Blazing$()$(li2)$(l:game_mechanics/mob_effects#instant_radiation)Instant Radiation$()$(li2)$(l:game_mechanics/mob_effects#final_moments)Final Moments$()"
+            "text": "$(li)$(bold)$(2)正面效果$()$(li2)$(l:game_mechanics/mob_effects#cooling)降溫$()$(li2)$(l:game_mechanics/mob_effects#warming)保暖$()$(li2)$(l:game_mechanics/mob_effects#quenched)解渴$()$(li2)$(l:game_mechanics/mob_effects#cure_parasites)驅蟲$()$(li2)$(l:game_mechanics/mob_effects#cure_toxins)排毒$()$(li2)$(l:game_mechanics/mob_effects#cure_microplastics)過濾微塑膠$()$(li)$(bold)$(4)負面效果$()$(li2)$(l:game_mechanics/mob_effects#freezing)凍結$()$(li2)$(l:game_mechanics/mob_effects#blazing)灼熱$()$(li2)$(l:game_mechanics/mob_effects#instant_radiation)即時輻射$()$(li2)$(l:game_mechanics/mob_effects#final_moments)最後時刻$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "cooling",
-            "title": "Cooling",
-            "text": "While active this effect continually $(thing)Cools$() the player down to a minimum of $(n)5°C$()"
+            "title": "降溫",
+            "text": "生效期間，此效果會持續讓玩家$(thing)降溫$()，最低降至$(n)5°C$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "warming",
-            "title": "Warming",
-            "text": "While active this effect continually $(thing)Warms$() the player up to a maximum of $(n)25°C$()"
+            "title": "保暖",
+            "text": "生效期間，此效果會持續讓玩家$(thing)升溫$()，最高升至$(n)25°C$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "quenched",
-            "title": "Quenched",
-            "text": "While active this effect prevents the natural decay of $(l:cooking/food_and_water#thirst)Thirst$(). However, it does not prevent the Thirsty effect from decreasing your meter.$()"
+            "title": "解渴",
+            "text": "生效期間，此效果會防止$(l:cooking/food_and_water#thirst)口渴$()值自然消耗。不過，它無法阻止口渴效果降低你的水分條。$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "cure_parasites",
-            "title": "Cure Parasites",
-            "text": "While active this effect gradually removes $(l:cooking/food_and_water#parasites)Parasite Contamination$() at a rate of about 1% every 10s at base level.$()"
+            "title": "驅蟲",
+            "text": "生效期間，此效果會逐漸清除$(l:cooking/food_and_water#parasites)寄生蟲污染$()，基礎速度約每 10 秒 1%。$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "cure_toxins",
-            "title": "Detoxify",
-            "text": "While active this effect gradually removes $(l:cooking/food_and_water#toxins)Toxin Contamination$() at a rate of about 1% every 10s at base level.$()"
+            "title": "排毒",
+            "text": "生效期間，此效果會逐漸清除$(l:cooking/food_and_water#toxins)毒素污染$()，基礎速度約每 10 秒 1%。$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "cure_microplastics",
-            "title": "Filter Microplastics",
-            "text": "While active this effect gradually removes $(l:cooking/food_and_water#microplastics)Microplastic Contamination$() at a rate of about 1% every 10s at base level.$()"
+            "title": "過濾微塑膠",
+            "text": "生效期間，此效果會逐漸清除$(l:cooking/food_and_water#microplastics)微塑膠污染$()，基礎速度約每 10 秒 1%。$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "freezing",
-            "title": "Freezing",
-            "text": "While active this effect continually $(thing)Cools$() the player down to a dangerously-low minimum of $(n)-20°C$(). Protective equipment is recommended to survive this condition."
+            "title": "凍結",
+            "text": "生效期間，此效果會持續讓玩家$(thing)降溫$()，最低可降至危險的$(n)-20°C$()。建議穿戴防護裝備以撐過這種狀態。"
         },
         {
             "type": "patchouli:text",
             "anchor": "blazing",
-            "title": "Blazing",
-            "text": "While active this effect continually $(thing)Warms$() the player up to a dangerously-high maximum of $(n)60°C$(). Protective equipment is recommended to survive this condition."
+            "title": "灼熱",
+            "text": "生效期間，此效果會持續讓玩家$(thing)升溫$()，最高可升至危險的$(n)60°C$()。建議穿戴防護裝備以撐過這種狀態。"
         },
         {
             "type": "patchouli:text",
             "anchor": "instant_radiation",
-            "title": "Instant Radiation",
-            "text": "This effect quickly damages the player with $(l:game_mechanics/hazards#radioactive_materials)Radiation Damage$()."
+            "title": "即時輻射",
+            "text": "此效果會以$(l:game_mechanics/hazards#radioactive_materials)輻射傷害$()迅速傷害玩家。"
         },
         {
             "type": "patchouli:text",
             "anchor": "final_moments",
-            "title": "Final Moments",
-            "text": "This effect starts a timer that counts down your last few minutes. When the clock ends, you die."
+            "title": "最後時刻",
+            "text": "此效果會啟動一個計時器，倒數你生命的最後幾分鐘。時間一到，你就會死亡。"
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "延伸閱讀",
             "anchor": "relations",
             "entries": [
                 "tfg:the_world/geology",

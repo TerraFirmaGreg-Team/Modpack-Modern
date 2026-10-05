@@ -202,6 +202,7 @@
 	"gtceu.pastoral_engine": "牧畜代行機",
 	"gtceu.ore_processing_gas": "地熱鉱石処理",
 	"gtceu.me_assembler": "ME共振製造機",
+	"gtceu.budding_charger": "ME共振チャージ装置",
 	"gtceu.gravity_emission": "重力を生成",
 	"gtceu.space_heating": "気候コントロール",
 	"gtceu.oxygen_distribution": "呼吸可能な空気を拡散",
@@ -253,5 +254,6 @@
 	"tfg.grapplemod.upgrades.vertical_throwing_angle": "フックの§l垂直投擲角§rを5°ずつ増加させます。(最大90°)",
 	"tfg.grapplemod.downgrades.vertical_throwing_angle": "フックの§l垂直投擲角§rを5°ずつ減少させます。最小0°)",
 	"tfg.grapplemod.upgrades.angle": "§lダブルフック§rを投げる際の§l水平角度§rを5°増加させます。(最大90°)\n§lダブルフック§rが装備されている場合のみ利用可能です。",
-	"tfg.grapplemod.downgrades.angle": "§lダブルフック§rを投げる際の§l水平角度§rを5°ずつ減少させます。最小0°)\n§lダブルフック§rが装備されている場合のみ利用可能です。"
+	"tfg.grapplemod.downgrades.angle": "§lダブルフック§rを投げる際の§l水平角度§rを5°ずつ減少させます。最小0°)\n§lダブルフック§rが装備されている場合のみ利用可能です。",
+	"tfg.recipe.gas_burner_fuel": "ガスバーナー燃料"
 }

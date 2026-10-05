@@ -109,7 +109,7 @@
 			"item": "tfg:piglin_disguise",
 			"title": "Piglin Disguise",
 			"anchor": "disguise",
-			"text": "Если хотите облегчить обмен или просто мило поболтать,просто наденьте $(thing)Маскировку пиглина$(), тогда $(thing)Пиглины$() не будут к вам враждебны при первой встрече. Но будьте осторожны! Их терпение не безгранично..."
+			"text": "If you want to ensure an easy time trading - or simply mingling with the locals - put on a $(thing)Piglin Disguise$() to prevent $(thing)Piglins$() from being hostile with you on first sight. But beware! They only put up with so much..."
 		},
 		{
 			"type": "patchouli:text",
@@ -119,9 +119,9 @@
 		},
 		{
 			"type": "patchouli:text",
-			"title": "Бастионы",
+			"title": "Outposts",
 			"anchor": "outposts",
-			"text": "Вылазка в $(thing)Бастион$() может быть очень $(br1)опасна, но кто не рискует, не пьет шампанское! Вы можете отыскать следующие вещи:$(li)Слитки золота, Розового золота, Свиного железа, Чёрной бронзы и серебра.$(li) А так же снаряжение, инструменты и броню из чёрной бронзы.$(li) Каолинитовую глину и графит.$(li) Вечные источники света.$(li) Ткань с кожей, и еду с семянами.$(li)А так же многое другое!"
+			"text": "$(thing)Piglin Outposts$() are smaller structures found in the upper regions in the beneath. They contain some useful loot but are more well defended than the towers. You can find things like:$(li)Better quality ranged weapons and tipped arrows$(li)Black Bronze weapons, tools, and armor$(li)Food and medicine$(li)Lanterns$(li)Cloth, bags, explosives, and food"
 		},
 		{
 			"type": "patchouli:text",

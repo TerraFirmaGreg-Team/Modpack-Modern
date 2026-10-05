@@ -1,12 +1,12 @@
 {
-    "name": "Gas Burner",
+    "name": "Gazowy palnik",
     "category": "tfg:craftsmanship",
     "icon": "tfg:gas_burner",
     "pages": [
         {
             "type": "patchouli:text",
             "anchor": "intro",
-            "title": "Gas Burner",
+            "title": "Gazowy palnik",
             "text": "A $(thing)Gas Burner$() is a device which can burn fluids and gases like $(thing)Oil$(), $(l:cooking/alcohol)Alcohol$(), and $(thing)Petroluem Fuels$() to generate $(l:game_mechanics/heating)Heat$().$(br)Unlike other heat sources, the maximum Temperature of the burner can be set using $(l:craftsmanship/gas_burner#redstone)Redstone$(). This allows for more precise control over $(l:cooking/cooking_methods)Cooking$() and $(l:craftsmanship/crucible)Smelting$().$(br)The gas burner does not increase in temperature from a $(l:craftsmanship/charcoal_forge#bellows)Bellows'$() air supply."
         },
         {
@@ -24,20 +24,20 @@
                     "X": "tfg:gas_burner[lit=true]"
                 }
             },
-            "name": "Gas Burner",
-            "text": "$(thing)Gas Burners$() will indicate their max temp level through a meter on one face.",
+            "name": "Gazowy palnik",
+            "text": "$(thing)Palniki gazowe$() pokazują maksymalną temperaturę na wskaźniku na jednej ze ścianek.",
             "enable_visualize": false
         },
         {
             "type": "patchouli:text",
             "anchor": "redstone",
-            "title": "Redstone Control",
+            "title": "Kontrola redstone",
             "text": "This device has many functions that can be controlled with $(bold)$(c)Redstone$():$(li)Supplying a signal strength of $(3)15$() will $(italic)ignite$() the burner.$(li)Removing all redstone signals will $(italic)extinguish$() the burner.$(li)The $(italic)maximum temperature$() of the burner can be set by supplying redstone with signals between $(3)3-14$().$(li)Comparator output will read the current $(italic)fuel level$()."
         },
         {
             "type": "patchouli:text",
             "anchor": "functions",
-            "title": "Functions",
+            "title": "Funkcje",
             "text": "Gas Burners can be supplied automatically using $(thing)Fluid Pipes$(), or manually with $(item)$(k:key.use)$() while holding a container of fluid.$(br)Inside their interface will show:$(li)The heat level, with a bar indicating maximum set temperature.$(li)A flame progress bar which displays the time left, and fuel burn temp when hovered over.$(li)Fuel tank with bucket in/out slots."
         },
         {
@@ -64,7 +64,7 @@
                 }
             },
             "name": "",
-            "text": "$(thing)Gas Burner$() with a crucible",
+            "text": "$(thing)Palnik gazowy$() z tygielem",
             "enable_visualize": false
         },
         {
@@ -140,7 +140,7 @@
                 }
             ],
             "name": "",
-            "text": "$(thing)Gas Burner$() with cooking appliances.",
+            "text": "$(thing)Palnik gazowy$() z wyposażeniem do gotowania.",
             "enable_visualize": false
         },
         {
@@ -220,12 +220,12 @@
                 }
             ],
             "name": "",
-            "text": "$(thing)Gas Burner$() with mechanical machines.",
+            "text": "$(thing)Palnik gazowy$() z mechanicznymi maszynami.",
             "enable_visualize": false
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "Czytaj dalej",
             "anchor": "relations",
             "entries": [
                 "tfg:craftsmanship/pottery",

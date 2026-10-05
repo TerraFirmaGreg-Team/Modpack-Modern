@@ -1,36 +1,36 @@
 {
-    "name": "Drinking Containers",
+    "name": "飲水容器",
     "category": "tfg:cooking",
     "icon": "tfc:ceramic/jug",
     "pages": [
         {
             "type": "patchouli:text",
-            "title": "Introduction",
+            "title": "簡介",
             "anchor": "intro",
-            "text": "If you are tired of drinking directly out of streams and ponds like a wild horse then consider making a $(item)Drinking Vessel!$()$(br2)Every time you drink from a vessel you will consume $(thing)100mB$() of fluid and damage the vessel 1 durability (if applicable) or has a chance of breaking (if applicable, can be changed in TFC server config)."
+            "text": "如果你厭倦了像野馬一樣直接從溪流和池塘喝水，可以考慮製作一個$(item)飲水容器！$()$(br2)每次從容器喝水都會消耗$(thing)100mB$()的流體，並讓容器損失 1 點耐久度(如果適用)，或有一定機率破損(如果適用，可在 TFC 伺服器設定中更改)。"
         },
         {
             "type": "patchouli:text",
-            "text": "Drinking from a container will also work for acquiring drink effects from $(item)Alcohol$() or other fluids, as well as $(l:cooking/food_and_water#nutrients)Nutrient$() values.$(br2)$(o)$(7)Some drinking containers can even be played as a musical instrument when empty.$()"
+            "text": "從容器中飲用$(item)酒$()或其他流體，同樣能獲得飲品效果和$(l:cooking/food_and_water#nutrients)營養$()值。$(br2)$(o)$(7)有些飲水容器在空的時候甚至可以當作樂器吹奏。$()"
         },
         {
             "type": "tfg:table",
             "anchor": "table",
             "strings": [
                 {
-                    "text": "Vessel",
+                    "text": "小缸",
                     "bold": true
                 },
                 {
-                    "text": "Capacity (mb)",
+                    "text": "容量 (mb)",
                     "bold": true
                 },
                 {
-                    "text": "Health/ Break%",
+                    "text": "耐久/破損率",
                     "bold": true
                 },
                 {
-                    "text": "Ceramic Jug"
+                    "text": "陶壺"
                 },
                 {
                     "text": "100"
@@ -39,7 +39,7 @@
                     "text": "2%"
                 },
                 {
-                    "text": "Wine Glass"
+                    "text": "葡萄酒杯"
                 },
                 {
                     "text": "100"
@@ -48,7 +48,7 @@
                     "text": "2%"
                 },
                 {
-                    "text": "Leather Flask"
+                    "text": "皮革水壺"
                 },
                 {
                     "text": "500"
@@ -57,7 +57,7 @@
                     "text": "100"
                 },
                 {
-                    "text": "Iron Flask"
+                    "text": "鐵水壺"
                 },
                 {
                     "text": "2000"
@@ -66,7 +66,7 @@
                     "text": "400"
                 },
                 {
-                    "text": "Red Steel Flask"
+                    "text": "紅鋼水壺"
                 },
                 {
                     "text": "2000"
@@ -75,7 +75,7 @@
                     "text": "∞"
                 },
                 {
-                    "text": "Silica Glass Bottle"
+                    "text": "矽玻璃瓶"
                 },
                 {
                     "text": "500"
@@ -84,7 +84,7 @@
                     "text": "0.5%"
                 },
                 {
-                    "text": "Hematitic Glass Bottle"
+                    "text": "赤鐵玻璃瓶"
                 },
                 {
                     "text": "400"
@@ -93,7 +93,7 @@
                     "text": "2%"
                 },
                 {
-                    "text": "Olivine Glass Bottle"
+                    "text": "橄欖石玻璃瓶"
                 },
                 {
                     "text": "400"
@@ -102,7 +102,7 @@
                     "text": "1%"
                 },
                 {
-                    "text": "Volcanic Glass Bottle"
+                    "text": "火山岩玻璃瓶"
                 },
                 {
                     "text": "400"
@@ -111,7 +111,7 @@
                     "text": "4%"
                 },
                 {
-                    "text": "Borosilicate Flask"
+                    "text": "硼矽酸鹽燒瓶"
                 },
                 {
                     "text": "144"
@@ -120,7 +120,7 @@
                     "text": "∞"
                 },
                 {
-                    "text": "Borosilicate Beaker"
+                    "text": "硼矽酸鹽燒杯"
                 },
                 {
                     "text": "1296"
@@ -129,7 +129,7 @@
                     "text": "∞"
                 },
                 {
-                    "text": "Borosilicate Vial"
+                    "text": "硼矽酸鹽小瓶"
                 },
                 {
                     "text": "16"
@@ -139,7 +139,7 @@
                 }
             ],
             "text": "",
-            "title": "Drinking Containers",
+            "title": "飲水容器",
             "legend": [],
             "columns": 2,
             "first_column_width": 90,
@@ -156,13 +156,13 @@
         {
             "type": "patchouli:crafting",
             "anchor": "juicer",
-            "title": "Juicer",
+            "title": "榨汁器",
             "recipe": "beneath:crafting/juicer",
-            "text": "The $(item)Juicer$() is a special item that can extract the water contained in $(thing)Fruits$(), $(thing)Mushrooms$(), and $(thing)Cacti$() into drinkable water."
+            "text": "$(item)榨汁器$()是一種特殊物品，可以將$(thing)水果$()、$(thing)蘑菇$()和$(thing)仙人掌$()中所含的水分萃取為可飲用的水。"
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "延伸閱讀",
             "anchor": "relations",
             "entries": [
                 "tfg:cooking/drinks",

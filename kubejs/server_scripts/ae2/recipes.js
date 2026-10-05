@@ -118,7 +118,7 @@ const registerAE2Recipes = (event) => {
 	event.recipes.gtceu.me_assembler('tfg:crafting_card')
 		.itemInputs('1x ae2:basic_card', '4x ae2:cell_component_16k', '4x #tfc:workbenches')
 		.itemOutputs('ae2:crafting_card')
-		.duration(20*240)
+		.duration(20*800)
 		.EUt(GTValues.VA[GTValues.IV])
 		.dimension('ad_astra:moon')
 		.addMaterialInfo(true)
@@ -599,7 +599,7 @@ const registerAE2Recipes = (event) => {
 	event.recipes.gtceu.me_assembler('tfg:ae2/energy_cell')
 		.itemInputs('gtceu:titanium_frame', '6x gtceu:titanium_plate', '6x gtceu:titanium_screw', 'gtceu:energy_crystal')
 		.itemOutputs('ae2:energy_cell')
-		.duration(20*50)
+		.duration(20*10)
 		.EUt(GTValues.VA[GTValues.MV])
 		.dimension('ad_astra:moon')
 		.addMaterialInfo(true)
@@ -779,7 +779,7 @@ const registerAE2Recipes = (event) => {
 			'#gtceu:circuits/mv')
 		.itemOutputs('ae2:blank_pattern')
 		.duration(20*5)
-		.EUt(GTValues.VA[GTValues.MV])
+		.EUt(GTValues.VA[GTValues.HV])
 
 	requiresOxygenation(
 	event.recipes.gtceu.me_assembler('ae2:blank_pattern_pvc')
@@ -790,7 +790,7 @@ const registerAE2Recipes = (event) => {
 			'#gtceu:circuits/mv')
 		.itemOutputs('4x ae2:blank_pattern')
 		.duration(20*10)
-		.EUt(GTValues.VA[GTValues.MV])
+		.EUt(GTValues.VA[GTValues.HV])
 		.dimension('ad_astra:moon')
 		.circuit(1))
 
@@ -803,7 +803,7 @@ const registerAE2Recipes = (event) => {
 			'#gtceu:circuits/hv')
 		.itemOutputs('16x ae2:blank_pattern')
 		.duration(20*20)
-		.EUt(GTValues.VA[GTValues.HV])
+		.EUt(GTValues.VA[GTValues.IV])
 		.dimension('ad_astra:moon')
 		.circuit(2))
 
@@ -848,7 +848,7 @@ const registerAE2Recipes = (event) => {
 		.circuit(1))
 
 	requiresOxygenation(
-	event.recipes.gtceu.me_assembler('ae2:annihilation_core_moon_cr')
+	event.recipes.gtceu.me_assembler('ae2:annihilation_core_moon_bulk')
 		.itemInputs(
 			'1x #forge:rods/certus_quartz',
 			'1x ae2:engineering_processor',
@@ -856,7 +856,7 @@ const registerAE2Recipes = (event) => {
 		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144))
 		.itemOutputs('8x ae2:annihilation_core')
 		.duration(20*600)
-		.EUt(GTValues.VA[GTValues.EV])
+		.EUt(GTValues.VA[GTValues.IV])
 		.dimension('ad_astra:moon')
 		.circuit(2))
 
@@ -874,10 +874,10 @@ const registerAE2Recipes = (event) => {
 		.EUt(GTValues.VA[GTValues.MV])
 		.dimension('ad_astra:moon')
 		.addMaterialInfo(true)
-		.circuit(1))
+		.circuit(3))
 
 	requiresOxygenation(
-	event.recipes.gtceu.me_assembler('ae2:formation_core_moon_cr')
+	event.recipes.gtceu.me_assembler('ae2:formation_core_moon_bulk')
 		.itemInputs(
 			'1x #forge:rods/nether_quartz',
 			'1x ae2:engineering_processor',
@@ -885,9 +885,9 @@ const registerAE2Recipes = (event) => {
 		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144))
 		.itemOutputs('8x ae2:formation_core')
 		.duration(20*600)
-		.EUt(GTValues.VA[GTValues.EV])
+		.EUt(GTValues.VA[GTValues.IV])
 		.dimension('ad_astra:moon')
-		.circuit(2))
+		.circuit(4))
 
 	// Wireless Crafting Terminal
 	event.recipes.gtceu.assembler('ae2:wireless_crafting_terminal')
@@ -915,7 +915,7 @@ const registerAE2Recipes = (event) => {
 		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 288))
 		.itemOutputs('ae2:cell_component_1k')
 		.duration(20*30)
-		.EUt(GTValues.VA[GTValues.MV])
+		.EUt(GTValues.VA[GTValues.HV])
 		.circuit(1)
 
 	requiresOxygenation(
@@ -927,7 +927,7 @@ const registerAE2Recipes = (event) => {
 			'ae2:logic_processor')
 		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 288))
 		.itemOutputs('ae2:cell_component_1k')
-		.duration(20*50)
+		.duration(20*10)
 		.EUt(GTValues.VA[GTValues.MV])
 		.dimension('ad_astra:moon')
 		.circuit(1))
@@ -959,7 +959,7 @@ const registerAE2Recipes = (event) => {
 		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 288))
 		.itemOutputs('ae2:cell_component_4k')
 		.duration(20*60)
-		.EUt(GTValues.VA[GTValues.MV])
+		.EUt(GTValues.VA[GTValues.HV])
 		.dimension('ad_astra:moon')
 		.circuit(2))
 
@@ -989,8 +989,8 @@ const registerAE2Recipes = (event) => {
 			'1x ae2:cell_component_4k')
 		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 576))
 		.itemOutputs('ae2:cell_component_16k')
-		.duration(20*300)
-		.EUt(GTValues.VA[GTValues.HV])
+		.duration(20*240)
+		.EUt(GTValues.VA[GTValues.EV])
 		.dimension('ad_astra:moon')
 		.circuit(3))
 
@@ -1006,7 +1006,7 @@ const registerAE2Recipes = (event) => {
 			'2x ae2:cell_component_16k')
 		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 1152))
 		.itemOutputs('ae2:cell_component_64k')
-		.duration(20*600)
+		.duration(20*260)
 		.EUt(GTValues.VA[GTValues.EV])
 		.dimension('ad_astra:moon')
 		.circuit(4))
@@ -1045,7 +1045,7 @@ const registerAE2Recipes = (event) => {
 		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 576))
 		.itemOutputs('ae2:spatial_cell_component_2')
 		.duration(20*60)
-		.EUt(GTValues.VA[GTValues.EV])
+		.EUt(GTValues.VA[GTValues.HV])
 		.dimension('ad_astra:moon')
 		.circuit(1))
 
@@ -1135,7 +1135,7 @@ const registerAE2Recipes = (event) => {
 		.cleanroom(CleanroomType.CLEANROOM)
 
 	requiresOxygenation(
-	event.recipes.gtceu.me_assembler('ae2:storage_bus_moon')
+	event.recipes.gtceu.me_assembler('ae2:storage_bus')
 		.itemInputs(
 			'#ae2:interface',
 			'1x gtceu:mv_electric_piston',
@@ -1148,15 +1148,15 @@ const registerAE2Recipes = (event) => {
 		.circuit(1))
 
 	requiresOxygenation(
-	event.recipes.gtceu.me_assembler('ae2:storage_bus_moon_cr')
+	event.recipes.gtceu.me_assembler('ae2:storage_bus_moon_bulk')
 		.itemInputs(
 			'#ae2:interface',
-			'1x gtceu:ev_electric_piston',
+			'1x gtceu:iv_electric_piston',
 			'#ae2:smart_cable')
 		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144))
 		.itemOutputs('8x ae2:storage_bus')
 		.duration(20*800)
-		.EUt(GTValues.VA[GTValues.EV])
+		.EUt(GTValues.VA[GTValues.IV])
 		.dimension('ad_astra:moon')
 		.circuit(2))
 
@@ -1210,17 +1210,17 @@ const registerAE2Recipes = (event) => {
 
 
 	requiresOxygenation(
-	event.recipes.gtceu.me_assembler('ae2:crafting_unit_cr')
+	event.recipes.gtceu.me_assembler('ae2:crafting_unit_bulk')
 		.itemInputs(
 			'ae2:logic_processor',
 			'ae2:engineering_processor',
 			'ae2:calculation_processor',
 			'#gtceu:circuits/ev',
-			'6x #forge:plates/titanium')
+			'6x #forge:plates/tungsten_steel')
 		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144 * 5))
-		.itemOutputs('2x ae2:crafting_unit')
-		.duration(20*50)
-		.EUt(GTValues.VA[GTValues.HV])
+		.itemOutputs('4x ae2:crafting_unit')
+		.duration(20*800)
+		.EUt(GTValues.VA[GTValues.IV])
 		.dimension('ad_astra:moon')
 		.circuit(2))
 
@@ -1258,7 +1258,7 @@ const registerAE2Recipes = (event) => {
 		.dimension('ad_astra:moon')
 		.circuit(1))
 
-	// EV Moon
+	// IV Moon
 	requiresOxygenation(
 	event.recipes.gtceu.me_assembler('ae2:molecular_assembler_iv')
 		.itemInputs(
@@ -1267,11 +1267,11 @@ const registerAE2Recipes = (event) => {
 			'2x ae2:annihilation_core',
 			'2x ae2:formation_core',
 			'1x gtceu:ev_robot_arm',
-			'4x #forge:plates/titanium')
+			'4x #forge:plates/tungsten_steel')
 		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144 * 8))
 		.itemOutputs('8x ae2:molecular_assembler')
-		.duration(20*230)
-		.EUt(GTValues.VA[GTValues.EV])
+		.duration(20*800)
+		.EUt(GTValues.VA[GTValues.IV])
 		.dimension('ad_astra:moon')
 		.circuit(2))
 
@@ -1339,19 +1339,19 @@ const registerAE2Recipes = (event) => {
 		.dimension('ad_astra:moon')
 		.circuit(1))
 
-	// EV Moon
+	// IV Moon
 	requiresOxygenation(
 	event.recipes.gtceu.me_assembler('ae2:interface_iv_moon')
 		.itemInputs(
-			'gtceu:ev_conveyor_module',
-			'4x #forge:rods/long/titanium',
-			'4x #forge:plates/titanium',
+			'gtceu:iv_conveyor_module',
+			'4x #forge:rods/long/tungsten_steel',
+			'4x #forge:plates/tungsten_steel',
 			'1x ae2:annihilation_core',
 			'1x ae2:formation_core')
 		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144 * 8), Fluid.of('gtceu:argon', 144))
 		.itemOutputs('8x ae2:interface')
 		.duration(20 * 900)
-		.EUt(GTValues.VA[GTValues.EV])
+		.EUt(GTValues.VA[GTValues.IV])
 		.dimension('ad_astra:moon')
 		.circuit(2))
 
@@ -1389,11 +1389,11 @@ const registerAE2Recipes = (event) => {
 		.dimension('ad_astra:moon')
 		.circuit(3))
 
-	// EV Moon
+	// IV Moon
 	requiresOxygenation(
-	event.recipes.gtceu.me_assembler('ae2:pattern_provider_ev_moon')
+	event.recipes.gtceu.me_assembler('ae2:pattern_provider_iv_moon')
 		.itemInputs(
-			'gtceu:ev_robot_arm',
+			'gtceu:iv_robot_arm',
 			'4x #forge:rods/long/tungsten_steel',
 			'4x #forge:plates/tungsten_steel',
 			'1x ae2:annihilation_core',
@@ -1401,7 +1401,7 @@ const registerAE2Recipes = (event) => {
 		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144 * 8), Fluid.of('gtceu:argon', 144))
 		.itemOutputs('8x ae2:pattern_provider')
 		.duration(20 * 900)
-		.EUt(GTValues.VA[GTValues.EV])
+		.EUt(GTValues.VA[GTValues.IV])
 		.dimension('ad_astra:moon')
 		.circuit(3))
 
@@ -1565,17 +1565,17 @@ const registerAE2Recipes = (event) => {
 		.circuit(1))
 
 	requiresOxygenation(
-	event.recipes.gtceu.me_assembler('ae2:logic_processor_cr')
+	event.recipes.gtceu.me_assembler('ae2:logic_processor_bulk')
 		.itemInputs(
-			'8x ae2:printed_silicon',
-			'8x ae2:printed_logic_processor',
+			'2x ae2:printed_silicon',
+			'2x ae2:printed_logic_processor',
 			'#gtceu:circuits/hv',
 			'gtceu:advanced_smd_resistor',
 			'1x minecraft:redstone')
 		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144))
 		.itemOutputs('16x ae2:logic_processor')
 		.duration(20 * 800)
-		.EUt(GTValues.VA[GTValues.EV])
+		.EUt(GTValues.VA[GTValues.IV])
 		.dimension('ad_astra:moon')
 		.circuit(2))
 
@@ -1594,22 +1594,22 @@ const registerAE2Recipes = (event) => {
 		.duration(20 * 10)
 		.EUt(GTValues.VA[GTValues.HV])
 		.dimension('ad_astra:moon')
-		.circuit(1))
+		.circuit(3))
 
 	requiresOxygenation(
-	event.recipes.gtceu.me_assembler('ae2:calculation_processor_cr')
+	event.recipes.gtceu.me_assembler('ae2:calculation_processor_bulk')
 		.itemInputs(
-			'8x ae2:printed_silicon',
-			'8x ae2:printed_calculation_processor',
+			'2x ae2:printed_silicon',
+			'2x ae2:printed_calculation_processor',
 			'#gtceu:circuits/hv',
 			'gtceu:advanced_smd_resistor',
 			'1x minecraft:redstone')
 		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144))
 		.itemOutputs('16x ae2:calculation_processor')
 		.duration(20 * 800)
-		.EUt(GTValues.VA[GTValues.EV])
+		.EUt(GTValues.VA[GTValues.IV])
 		.dimension('ad_astra:moon')
-		.circuit(2))
+		.circuit(4))
 
 	// Engineering Processor
 
@@ -1626,22 +1626,22 @@ const registerAE2Recipes = (event) => {
 		.duration(20 * 10)
 		.EUt(GTValues.VA[GTValues.HV])
 		.dimension('ad_astra:moon')
-		.circuit(1))
+		.circuit(5))
 		
 	requiresOxygenation(
-	event.recipes.gtceu.me_assembler('ae2:engineering_processor_cr')
+	event.recipes.gtceu.me_assembler('ae2:engineering_processor_bulk')
 		.itemInputs(
-			'8x ae2:printed_silicon',
-			'8x ae2:printed_engineering_processor',
+			'2x ae2:printed_silicon',
+			'2x ae2:printed_engineering_processor',
 			'#gtceu:circuits/hv',
 			'gtceu:advanced_smd_resistor',
 			'1x minecraft:redstone')
 		.inputFluids(Fluid.of('tfg:cryogenized_fluix', 144))
 		.itemOutputs('16x ae2:engineering_processor')
 		.duration(20 * 800)
-		.EUt(GTValues.VA[GTValues.EV])
+		.EUt(GTValues.VA[GTValues.IV])
 		.dimension('ad_astra:moon')
-		.circuit(2))
+		.circuit(6))
 
 	// Printed Calculation Processor - Get a different better recipe
 	event.recipes.gtceu.forming_press('ae2:printed_calculation_processor')
@@ -1659,7 +1659,7 @@ const registerAE2Recipes = (event) => {
 		.itemOutputs('2x ae2:printed_calculation_processor')
 		.duration(20)
 		.circuit(2)
-		.EUt(480)
+		.EUt(GTValues.VA[GTValues.IV])
 		.dimension('ad_astra:moon')
 		.cleanroom(CleanroomType.CLEANROOM)
 
@@ -1679,7 +1679,7 @@ const registerAE2Recipes = (event) => {
 		.itemOutputs('2x ae2:printed_engineering_processor')
 		.duration(20)
 		.circuit(2)
-		.EUt(480)
+		.EUt(GTValues.VA[GTValues.IV])
 		.dimension('ad_astra:moon')
 		.cleanroom(CleanroomType.CLEANROOM)
 
@@ -1699,7 +1699,7 @@ const registerAE2Recipes = (event) => {
 		.itemOutputs('2x ae2:printed_logic_processor')
 		.duration(20)
 		.circuit(2)
-		.EUt(480)
+		.EUt(GTValues.VA[GTValues.IV])
 		.dimension('ad_astra:moon')
 		.cleanroom(CleanroomType.CLEANROOM)
 
@@ -1719,7 +1719,7 @@ const registerAE2Recipes = (event) => {
 		.itemOutputs('2x ae2:printed_silicon')
 		.duration(20)
 		.circuit(2)
-		.EUt(480)
+		.EUt(GTValues.VA[GTValues.IV])
 		.dimension('ad_astra:moon')
 		.cleanroom(CleanroomType.CLEANROOM)
 

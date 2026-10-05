@@ -1,16 +1,16 @@
 {
-    "name": "Quern",
+    "name": "手推磨",
     "category": "tfg:craftsmanship",
     "icon": "tfc:quern",
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "The $(thing)Quern$() is a device for grinding items. It can crush raw ores for $(l:game_mechanics/mining#processing)processing$(), as well as make powders, $(thing)dyes$(), and some other items. It is assembled from a $(thing)Base$() and $(thing)Handstone$().$(br)Querns can be automated by supplying $(thing)Mechanical Power$() to their top face at <32RPM."
+            "text": "$(thing)手推磨$()是用來研磨物品的裝置。它可以粉碎原礦以進行$(l:game_mechanics/mining#processing)加工$()，也能製作粉末、$(thing)染料$()和其他一些物品。它由$(thing)底座$()和$(thing)手磨石$()組成。$(br)從頂面提供 <32RPM 的$(thing)機械動力$()即可自動化手推磨。"
         },
         {
             "type": "patchouli:crafting",
             "recipe": "tfc:crafting/quern",
-            "text": "The base of the quern can be crafted with three $(t:#forge:smooth_stone)$(6)smooth stone$() and three of any other $(t:#forge:stone)$(6)stone$() blocks.$(br2)Raw stone blocks can be acquired via $(l:craftsmanship/anvils#raw_rock)extraction$(), and smooth blocks with the $(l:craftsmanship/chisel)chisel$()."
+            "text": "手推磨的底座可以用三個$(t:#forge:smooth_stone)$(6)平滑石$()和三個任意其他$(t:#forge:stone)$(6)石頭$()方塊合成。$(br2)原石方塊可以透過$(l:craftsmanship/anvils#raw_rock)取出$()取得，平滑方塊則可以用$(l:craftsmanship/chisel)鑿子$()製作。"
         },
         {
             "type": "patchouli:crafting",
@@ -52,20 +52,20 @@
         {
             "type": "tfg:quern_recipe",
             "recipe": "tfg:quern/copper_crushed_ore_from_normal_raw_ore",
-            "text": "$(l:game_mechanics/mining#processing)Ores$() can be crushed to obtain more metal.",
-            "title": "Crushed Ore"
+            "text": "可以粉碎$(l:game_mechanics/mining#processing)礦石$()以取得更多金屬。",
+            "title": "碎礦"
         },
         {
             "type": "tfg:quern_recipe",
             "recipe": "tfg:quern/sulfur",
             "text": "手推磨可以將礦粉磨製各式各樣的$(thing)粉末$()，如$(thing)硫磺$()。$(thing)寶石$()也可研磨成粉末。",
-            "title": "Powders"
+            "title": "粉末"
         },
         {
             "type": "tfg:quern_recipe",
             "recipe": "tfc:quern/red_dye",
-            "text": "$(thing)Dye$() can be obtained from various flowers.",
-            "title": "Dyes"
+            "text": "$(thing)染料$()可以從各種花朵中取得。",
+            "title": "染料"
         },
         {
             "type": "tfg:quern_recipe",
@@ -74,7 +74,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "延伸閱讀",
             "anchor": "relations",
             "entries": [
                 "tfg:the_world/geology",

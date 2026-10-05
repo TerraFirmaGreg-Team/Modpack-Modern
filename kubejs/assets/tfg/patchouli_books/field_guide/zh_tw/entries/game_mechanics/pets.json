@@ -1,28 +1,28 @@
 {
-    "name": "Pets",
+    "name": "寵物",
     "category": "tfg:game_mechanics",
     "icon": "species:wicked_treat",
     "pages": [
         {
             "type": "patchouli:text",
             "anchor": "index",
-            "text": "$(li)$(bold)$(l:game_mechanics/pets#dogs)Dogs$()$(li)$(bold)$(l:game_mechanics/pets#cats)Cats$()$(li)$(bold)$(l:game_mechanics/pets#foxes)Foxes$()$(li)$(bold)$(l:game_mechanics/pets#pigeons)Pigeons$()$(li)$(bold)$(l:game_mechanics/pets#commands)Commands$()$(li2)$(l:game_mechanics/pets#relax)Relax$()$(li2)$(l:game_mechanics/pets#home)Home$()$(li2)$(l:game_mechanics/pets#hunt)Hunt$()$(li)$(bold)$(l:game_mechanics/pets#treat)Pet Treat$()$(li)$(bold)$(l:game_mechanics/pets#name_tag)Name Tag$()$(li)$(bold)$(l:game_mechanics/pets#lead)Lead$()"
+            "text": "$(li)$(bold)$(l:game_mechanics/pets#dogs)狗$()$(li)$(bold)$(l:game_mechanics/pets#cats)貓$()$(li)$(bold)$(l:game_mechanics/pets#foxes)狐狸$()$(li)$(bold)$(l:game_mechanics/pets#pigeons)鴿子$()$(li)$(bold)$(l:game_mechanics/pets#commands)指令$()$(li2)$(l:game_mechanics/pets#relax)放鬆$()$(li2)$(l:game_mechanics/pets#home)回家$()$(li2)$(l:game_mechanics/pets#hunt)狩獵$()$(li)$(bold)$(l:game_mechanics/pets#treat)寵物零食$()$(li)$(bold)$(l:game_mechanics/pets#name_tag)命名牌$()$(li)$(bold)$(l:game_mechanics/pets#lead)拴繩$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "intro",
-            "title": "Introduction",
-            "text": "$(thing)Pets$() are animals that function similarly to $(l:agriculture/animal_husbandry)Livestock$(). Instead of products, pets are useful for obeying commands, being friends, pest control, hunting.$(br)Pets recognize a certain player as their $(thing)Owner$(). To become a pet's owner, feed it to raise its familiarity above $(item)15%$(). Pets will only obey commands that come from their owner.$(br)Clicking on a pet with $(thing)dye$() changes its collar color."
+            "title": "簡介",
+            "text": "$(thing)寵物$()是功能類似$(l:agriculture/animal_husbandry)家畜$()的動物。寵物不提供產物，而是能聽從指令、當你的朋友、防治害蟲和協助狩獵。$(br)寵物會將某位玩家認定為牠的$(thing)主人$()。要成為寵物的主人，請餵食牠，讓熟悉度超過$(item)15%$()。寵物只會聽從主人的指令。$(br)手持$(thing)染料$()點擊寵物可以改變牠的項圈顏色。"
         },
         {
             "type": "patchouli:text",
             "anchor": "dogs",
-            "title": "Dogs",
-            "text": "Dogs are a pet that eats grains, vegetables, and meat, rotten or not rotten. They will help you hunt almost any land predator or prey.$(br)Dogs come in multiple variants that depend on what type of $(l:the_world/wild_animals#wolf)wolf$() it was domesticated from."
+            "title": "狗",
+            "text": "狗是一種吃穀物、蔬菜和肉類的寵物，不論食物是否腐爛都吃。牠們會幫你獵捕幾乎任何陸地上的掠食者或獵物。$(br)狗有多種變體，取決於牠是由哪種$(l:the_world/wild_animals#wolf)狼$()馴化而來的。"
         },
         {
             "type": "patchouli:image",
-            "text": "Backported from $(item)Minecraft 1.20.5$()!",
+            "text": "從$(item)Minecraft 1.20.5$()向下移植！",
             "images": [
                 "tfg:textures/gui/field_guide/dog_variants.png"
             ],
@@ -33,69 +33,69 @@
             "text": "",
             "strings": [
                 {
-                    "text": "Variant",
+                    "text": "變體",
                     "bold": true
                 },
                 {
-                    "text": "Climate",
+                    "text": "氣候",
                     "bold": true
                 },
                 {
-                    "text": "Pale"
+                    "text": "蒼白"
                 },
                 {
-                    "text": "Cold Desert, Temperate, Humid Oceanic (Plains)"
+                    "text": "寒冷沙漠、溫帶、濕潤海洋性(平原)"
                 },
                 {
-                    "text": "Ashen"
+                    "text": "灰燼"
                 },
                 {
-                    "text": "Arctic, Subarctic (Forests)"
+                    "text": "極地、副極地(森林)"
                 },
                 {
-                    "text": "Black"
+                    "text": "黑色"
                 },
                 {
-                    "text": "Tundra, Humid Subarctic (Forests)"
+                    "text": "苔原、濕潤副極地(森林)"
                 },
                 {
-                    "text": "Chestnut"
+                    "text": "栗色"
                 },
                 {
-                    "text": "Tundra, Humid Subarctic (Plains)"
+                    "text": "苔原、濕潤副極地(平原)"
                 },
                 {
-                    "text": "Rusty"
+                    "text": "鏽色"
                 },
                 {
-                    "text": "Humid Subtropical, Tropical Rainforest (Plains)"
+                    "text": "濕潤亞熱帶、熱帶雨林(平原)"
                 },
                 {
-                    "text": "Snowy"
+                    "text": "雪白"
                 },
                 {
-                    "text": "Arctic, Subarctic (Plains)"
+                    "text": "極地、副極地(平原)"
                 },
                 {
-                    "text": "Spotted"
+                    "text": "斑點"
                 },
                 {
-                    "text": "Hot Desert, Subtropical, Tropical Savanna (Forests)"
+                    "text": "炎熱沙漠、亞熱帶、熱帶莽原(森林)"
                 },
                 {
-                    "text": "Striped"
+                    "text": "條紋"
                 },
                 {
-                    "text": "Hot Desert, Subtropical, Tropical Savanna (Plains)"
+                    "text": "炎熱沙漠、亞熱帶、熱帶莽原(平原)"
                 },
                 {
-                    "text": "Woods"
+                    "text": "林地"
                 },
                 {
-                    "text": "Temperate (Forests)"
+                    "text": "溫帶(森林)"
                 }
             ],
-            "title": "Wolf Variant Locations",
+            "title": "狼變體分布地點",
             "legend": [],
             "columns": 1,
             "first_column_width": 45,
@@ -112,12 +112,12 @@
         {
             "type": "patchouli:text",
             "anchor": "cats",
-            "title": "Cats",
-            "text": "Cats are a pet that eats grains, cooked meats, and dairy products. They will help you hunt land prey and small fish. When at home, they will kill pests without being asked. Cats do not always listen when being told to sit.$(br2)Variants: Black, British Shorthair, Calico, Jellie, Persian, Ragdoll, Red, Siamese, Tabby, White."
+            "title": "貓",
+            "text": "貓是一種吃穀物、熟肉和乳製品的寵物。牠們會幫你獵捕陸地獵物和小型魚類。在家時，牠們會主動消滅害蟲。叫貓坐下時，牠們不一定會聽話。$(br2)變體：黑貓、英國短毛貓、三花貓、Jellie、波斯貓、布偶貓、橘貓、暹羅貓、虎斑貓、白貓。"
         },
         {
             "type": "patchouli:entity",
-            "text": "As villages do not exist, taming an $(l:the_world/wild_animals#ocelot)Ocelot$() is the only way to obtain a cat.",
+            "text": "由於不存在村莊，馴服$(l:the_world/wild_animals#ocelot)山貓$()是取得貓的唯一方法。",
             "entity": "tfc:cat{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
             "title": " ",
             "scale": 0.7
@@ -125,76 +125,76 @@
         {
             "type": "patchouli:text",
             "anchor": "foxes",
-            "title": "Foxes",
-            "text": "Foxes are a pet that eats any edible food. They will help you hunt land prey and small fish. When at home, they will kill pests without being asked. Foxes do not always listen when being told to sit.$(br2)Variants: Red, Snow."
+            "title": "狐狸",
+            "text": "狐狸是一種吃任何可食用食物的寵物。牠們會幫你獵捕陸地獵物和小型魚類。在家時，牠們會主動消滅害蟲。叫狐狸坐下時，牠們不一定會聽話。$(br2)變體：紅狐、雪狐。"
         },
         {
             "type": "patchouli:entity",
             "entity": "tfg:fox{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,FoxType:1}",
             "scale": 0.7,
             "title": " ",
-            "text": "A fox."
+            "text": "一隻狐狸。"
         },
         {
             "type": "patchouli:text",
             "anchor": "pigeons",
-            "title": "Pigeons",
-            "text": "Pigeons are capable of being tamed and delivering packages, but do not follow standard commands. You can feed $(t:#fowlplay:pigeon_food)$(6)Pigeon Food$(), such as grains and vegetables, to a pigeon to tame it.$(br)Once tamed a pigeon can deliver $(t:#fowlplay:pigeon_deliverable)$(6)Sacks$() to other players by $(l:craftsmanship/scribing_table)naming the pouch$() with the player's name before handing it over. "
+            "title": "鴿子",
+            "text": "鴿子可以被馴服並遞送包裹，但不會聽從一般指令。你可以餵鴿子吃穀物和蔬菜等$(t:#fowlplay:pigeon_food)$(6)鴿子食物$()來馴服牠。$(br)馴服後，只要先用玩家的名字$(l:craftsmanship/scribing_table)為袋子命名$()再交給鴿子，牠就能將$(t:#fowlplay:pigeon_deliverable)$(6)麻袋$()遞送給其他玩家。 "
         },
         {
             "type": "patchouli:entity",
             "entity": "fowlplay:pigeon{NoAI:1b}",
             "scale": 0.8,
-            "text": "A pigeon."
+            "text": "一隻鴿子。"
         },
         {
             "type": "patchouli:text",
             "anchor": "commands",
-            "title": "Commands",
-            "text": "Responsible pet owners must learn to control their pet. Luckily, this is easy. By pressing $(item)$(k:key.use)$() while holding $(item)$(k:key.sneak)$() with an empty hand, the $(thing)Pet Screen$() may be opened. This screen contains a number of commands that can be used to tell the pet what to do: $(thing)Relax$(), $(thing)We're Home$(), $(thing)Sit$(), $(thing)Follow Me$(), and $(thing)Hunt With Me$()."
+            "title": "指令",
+            "text": "負責任的寵物主人必須學會控制自己的寵物。幸好這很簡單。空手按住$(item)$(k:key.sneak)$()並按下$(item)$(k:key.use)$()，即可開啟$(thing)寵物介面$()。這個介面包含多個可以告訴寵物該做什麼的指令：$(thing)放鬆$()、$(thing)到家了$()、$(thing)坐下$()、$(thing)跟著我$()和$(thing)一起狩獵$()。"
         },
         {
             "type": "patchouli:text",
             "anchor": "relax",
-            "title": "Relax",
-            "text": "$(thing)Relax$() is the default state of pets, and commanding them returns them to this state. If a pet it at home, it will wander around the property, but not leave, and sleep once a day. If it is too far from home, it will walk aimlessly."
+            "title": "放鬆",
+            "text": "$(thing)放鬆$()是寵物的預設狀態，下達此指令會讓牠們回到這個狀態。如果寵物在家，牠會在家園範圍內四處閒逛但不會離開，並且每天睡一次覺。如果離家太遠，牠會漫無目的地走動。"
         },
         {
             "type": "patchouli:text",
             "anchor": "home",
-            "title": "Home",
-            "text": "$(thing)We're Home$() sets the home position of the pet. This tells the animal that it should, when relaxing, stay in that general area. Telling an animal that it is at home does not change the activity it is currently doing.$(br2)$(thing)Sit$() tells the pet to sit where it is. However, animals have minds of their own, and will eventually get bored and stand up!"
+            "title": "回家",
+            "text": "$(thing)到家了$()會設定寵物的家的位置。這會告訴動物在放鬆時應該待在那附近。告訴動物牠在家並不會改變牠目前正在進行的活動。$(br2)$(thing)坐下$()會讓寵物原地坐下。不過，動物有自己的想法，最終會感到無聊並站起來！"
         },
         {
             "type": "patchouli:text",
             "anchor": "hunt",
-            "title": "Hunt",
-            "text": "$(thing)Hunt With Me$() tells the pet to follow you, and engage in combat when you attack or are attacked. Pets will only attack animals that they are able to (for example, cats and foxes cannot help attack bears!).$(br2)$(thing)Follow Me$() is the same as Hunt With Me, but the pet will not risk itself in combat."
+            "title": "狩獵",
+            "text": "$(thing)一起狩獵$()會讓寵物跟著你，並在你攻擊或被攻擊時投入戰鬥。寵物只會攻擊牠們有能力攻擊的動物(例如，貓和狐狸無法幫忙攻擊熊！)。$(br2)$(thing)跟著我$()與一起狩獵相同，但寵物不會讓自己在戰鬥中冒險。"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "treat",
-            "title": "Pet Treat",
+            "title": "寵物零食",
             "item": "species:wicked_treat",
-            "text": "$(thing)Pet Treats$() can be made by mixing medicine with bone meal.$(br)Pet treats give $(bold)massive$() stat bonuses to your pets for a short duration."
+            "text": "將藥物與骨粉混合即可製作$(thing)寵物零食$()。$(br)寵物零食會在短時間內為你的寵物提供$(bold)大幅$()的能力值加成。"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "name_tag",
-            "title": "Name Tag",
+            "title": "命名牌",
             "item": "minecraft:name_tag",
-            "text": "$(thing)Name Tags$() can be crafted from paper and string. Once made, they can be edited on a $(l:craftsmanship/scribing_table)Scribing Table$() to give them a custom name that will transfer to your pet with $(item)$(k:key.use)$()."
+            "text": "$(thing)命名牌$()可以用紙和線合成。做好後，可以在$(l:craftsmanship/scribing_table)書寫桌$()上編輯，為它取一個自訂名稱，再對寵物按下$(item)$(k:key.use)$()即可將名稱套用到寵物身上。"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "lead",
-            "title": "Lead",
+            "title": "拴繩",
             "item": "minecraft:lead",
-            "text": "A $(thing)Lead$() can be crafted from burlap fiber or string, and a metal ring.$(br)You can $(item)$(k:key.use)$() an animal with a lead to pull them around. Much more efficient than baiting them with food!$(br2)You can also pick up some smaller animals with $(item)$(k:key.sneak) + $(k:key.use)$() with empty hands."
+            "text": "$(thing)拴繩$()可以用粗麻纖維或線，加上一個金屬環合成。$(br)手持拴繩對動物按下$(item)$(k:key.use)$()即可牽著牠走。這比用食物引誘牠們有效率多了！$(br2)你也可以空手按下$(item)$(k:key.sneak) + $(k:key.use)$()抱起一些較小的動物。"
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "延伸閱讀",
             "anchor": "relations",
             "entries": [
                 "tfg:agriculture/animal_husbandry",

@@ -6,7 +6,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "chorus_fruit",
-			"title": "Фрукт хоруса",
+			"title": "Плод Хорусу",
 			"text": "$(bold)Біоми$(): Хорусовий ліс, Хорусові зарості$(br2)Хорусові рослини ростуть високими утвореннями. Зламавши стебло, ти нічого не отримаєш, а якщо зламати квіти на верхівці, випадуть фрукти хоруса або квітка.$(br)Фрукти хоруса можна їсти як $(thing)фрукти$(), приготувати та з’їсти як $(item)попкорн із хорусових плодів$() або перегнати в $(thing)азот$().$(br)"
 		},
 		{
@@ -58,7 +58,8 @@
 				"tfg:the_world/climate",
 				"tfg:the_world/wild_crops",
 				"tfg:beneath/beneath_crops",
-				"tfg:mars/mars_crops"
+				"tfg:mars/mars_crops",
+				"tfg:the_moon/moon_biomes"
 			]
 		}
 	],

@@ -1529,11 +1529,11 @@
 	"block.tfg.spider_sac": "Kokon z jajami pająków",
 	"block.tfg.palm_tree.coconut_fruit_green": "Młody kokos",
 	"block.tfg.palm_tree.coconut_fruit_brown": "Kokos",
-	"block.tfg.palm_tree.coconut_leaves": "Liście palmy kokosowej",
-	"block.tfg.palm_tree.coconut_tree_head": "Korona palmy kokosowej",
+	"block.tfg.palm_tree.coconut_leaves": "Liście kokosowca",
+	"block.tfg.palm_tree.coconut_tree_head": "Korona kokosowca",
 	"block.tfg.palm_tree.coconut_tree_cluster": "Kiść kokosów",
 	"block.tfg.palm_tree.coconut_sapling": "Sadzonka kokosowca",
-	"block.tfg.palm_tree.coconut_growing_tree_head": "Rosnący kokos",
+	"block.tfg.palm_tree.coconut_growing_tree_head": "Rosnący kokosowiec",
 	"block.tfg.palm_tree.potted_coconut_sapling": "Sadzonka kokosowca w doniczce",
 	"block.tfg.palm_tree.oil_palm_tree_head": "Korona olejowca",
 	"block.tfg.palm_tree.oil_palm_tree_cluster": "Kiść owoców olejowca",
@@ -1573,5 +1573,6 @@
 	"block.tfg.stainless_steel_anvil": "Kowadło ze stali nierdzewnej",
 	"block.tfg.tungsten_anvil": "Wolframowe kowadło",
 	"block.tfg.blackstone_anvil": "Piroksenitowe kowadło",
-	"block.tfg.crackrack_anvil": "Keratofirowe kowadło"
+	"block.tfg.crackrack_anvil": "Keratofirowe kowadło",
+	"block.tfg.gas_burner": "Gazowy palnik"
 }

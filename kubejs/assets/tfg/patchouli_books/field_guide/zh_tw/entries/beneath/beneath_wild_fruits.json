@@ -1,19 +1,19 @@
 {
-    "name": "Beneath Fruits",
+    "name": "地底水果",
     "category": "tfg:beneath",
     "icon": "tfg:textures/item/fruit_trees/magmango_sapling.png",
     "pages": [
         {
             "type": "patchouli:text",
             "anchor": "index",
-            "title": "Index",
-            "text": "$(bold)$(li)$(l:beneath/beneath_wild_fruits#fruit_trees)Fruit Trees$()$(li2)$(l:beneath/beneath_wild_fruits#lavacado)Lavacado$()$(li2)$(l:beneath/beneath_wild_fruits#magmango)Magmango$()$(bold)$(li)$(l:beneath/beneath_wild_fruits#palm_fruit_trees)Palm Fruit Trees$()$(li2)$(l:beneath/beneath_wild_fruits#oil_palm)Oil Palm$()$(li2)$(l:beneath/beneath_wild_fruits#acai)Açaí$()"
+            "title": "索引",
+            "text": "$(bold)$(li)$(l:beneath/beneath_wild_fruits#fruit_trees)果樹$()$(li2)$(l:beneath/beneath_wild_fruits#lavacado)熔岩酪梨$()$(li2)$(l:beneath/beneath_wild_fruits#magmango)岩漿芒果$()$(bold)$(li)$(l:beneath/beneath_wild_fruits#palm_fruit_trees)棕櫚果樹$()$(li2)$(l:beneath/beneath_wild_fruits#oil_palm)油棕$()$(li2)$(l:beneath/beneath_wild_fruits#acai)巴西莓$()"
         },
         {
-            "title": "Introduction",
+            "title": "簡介",
             "anchor": "into",
             "type": "patchouli:text",
-            "text": "The $(l:beneath)Beneath$() hosts its own unique selection of wild fruits, which have adapted to the extreme conditions underground. Wild fruits can be cultivated in all the same ways as regular $(l:the_world/wild_fruits)wild fruits$() in the Overworld."
+            "text": "$(l:beneath)地底$()有一套獨特的野生水果，它們已經適應了地下的極端環境。這些野生水果可以用與主世界一般$(l:the_world/wild_fruits)野生水果$()完全相同的方式栽培。"
         },
         {
             "type": "tfg:table",
@@ -23,43 +23,43 @@
                     "text": ""
                 },
                 {
-                    "text": "Jan"
+                    "text": "1月"
                 },
                 {
-                    "text": "Feb"
+                    "text": "2月"
                 },
                 {
-                    "text": "Mar"
+                    "text": "3月"
                 },
                 {
-                    "text": "Apr"
+                    "text": "4月"
                 },
                 {
-                    "text": "May"
+                    "text": "5月"
                 },
                 {
-                    "text": "Jun"
+                    "text": "6月"
                 },
                 {
-                    "text": "Jul"
+                    "text": "7月"
                 },
                 {
-                    "text": "Aug"
+                    "text": "8月"
                 },
                 {
-                    "text": "Sep"
+                    "text": "9月"
                 },
                 {
-                    "text": "Oct"
+                    "text": "10月"
                 },
                 {
-                    "text": "Nov"
+                    "text": "11月"
                 },
                 {
-                    "text": "Dec"
+                    "text": "12月"
                 },
                 {
-                    "text": "Lavacado"
+                    "text": "熔岩酪梨"
                 },
                 {
                     "fill": "0x6ab553"
@@ -98,7 +98,7 @@
                     "fill": "0x6ab553"
                 },
                 {
-                    "text": "Magmango"
+                    "text": "岩漿芒果"
                 },
                 {
                     "fill": "0x6ab553"
@@ -137,23 +137,23 @@
                     "fill": "0x6ab553"
                 }
             ],
-            "text": "The fruiting calendar for fruit trees.",
-            "title": "Fruit Trees",
+            "text": "果樹的結果月曆。",
+            "title": "果樹",
             "legend": [
                 {
-                    "text": "Dormant",
+                    "text": "休眠",
                     "color": "0xa8986a"
                 },
                 {
-                    "text": "Healthy",
+                    "text": "健康",
                     "color": "0x6ab553"
                 },
                 {
-                    "text": "Flowering",
+                    "text": "開花",
                     "color": "0xcca0db"
                 },
                 {
-                    "text": "Fruiting",
+                    "text": "結果",
                     "color": "0xa217ff"
                 }
             ],
@@ -172,12 +172,12 @@
         {
             "type": "patchouli:text",
             "anchor": "lavacado",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 8 - 80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 20 - 100 %$(br2)Lavacado trees grow in the months of December through April, start flowering in May and June, and bear fruit in July.",
-            "title": "Lavacado"
+            "text": "$(bold)$(l:the_world/climate#temperature)溫度$()：8 - 80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)含水量$()：20 - 100 %$(br2)熔岩酪梨樹在 12 月至 4 月生長，5 月和 6 月開始開花，7 月結果。",
+            "title": "熔岩酪梨"
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "Wild Lavacado trees can be found between Y=198 and Y=60.",
+            "text": "野生熔岩酪梨樹可以在 Y=198 到 Y=60 之間找到。",
             "multiblocks": [
                 {
                     "pattern": [
@@ -237,12 +237,12 @@
         {
             "type": "patchouli:text",
             "anchor": "magmango",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 8 - 80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 30 - 100 %$(br2)Magmango trees grow in the months of October through February, start flowering in March and April, and bear fruit in May.",
-            "title": "Magmango"
+            "text": "$(bold)$(l:the_world/climate#temperature)溫度$()：8 - 80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)含水量$()：30 - 100 %$(br2)岩漿芒果樹在 10 月至 2 月生長，3 月和 4 月開始開花，5 月結果。",
+            "title": "岩漿芒果"
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "Wild Magmango trees can be found between Y=198 and Y=60.",
+            "text": "野生岩漿芒果樹可以在 Y=198 到 Y=60 之間找到。",
             "multiblocks": [
                 {
                     "pattern": [
@@ -307,61 +307,43 @@
                     "text": ""
                 },
                 {
-                    "text": "Jan"
+                    "text": "1月"
                 },
                 {
-                    "text": "Feb"
+                    "text": "2月"
                 },
                 {
-                    "text": "Mar"
+                    "text": "3月"
                 },
                 {
-                    "text": "Apr"
+                    "text": "4月"
                 },
                 {
-                    "text": "May"
+                    "text": "5月"
                 },
                 {
-                    "text": "Jun"
+                    "text": "6月"
                 },
                 {
-                    "text": "Jul"
+                    "text": "7月"
                 },
                 {
-                    "text": "Aug"
+                    "text": "8月"
                 },
                 {
-                    "text": "Sep"
+                    "text": "9月"
                 },
                 {
-                    "text": "Oct"
+                    "text": "10月"
                 },
                 {
-                    "text": "Nov"
+                    "text": "11月"
                 },
                 {
-                    "text": "Dec"
+                    "text": "12月"
                 },
                 {
-                    "text": "Oil Palm"
-                },
-                {
-                    "fill": "0xa217ff"
-                },
-                {
-                    "fill": "0xa8986a"
-                },
-                {
-                    "fill": "0xa8986a"
-                },
-                {
-                    "fill": "0xa217ff"
-                },
-                {
-                    "fill": "0xa217ff"
-                },
-                {
-                    "fill": "0xa217ff"
+                    "text": "油棕"
                 },
                 {
                     "fill": "0xa217ff"
@@ -373,6 +355,24 @@
                     "fill": "0xa8986a"
                 },
                 {
+                    "fill": "0xa217ff"
+                },
+                {
+                    "fill": "0xa217ff"
+                },
+                {
+                    "fill": "0xa217ff"
+                },
+                {
+                    "fill": "0xa217ff"
+                },
+                {
+                    "fill": "0xa8986a"
+                },
+                {
+                    "fill": "0xa8986a"
+                },
+                {
                     "fill": "0xa8986a"
                 },
                 {
@@ -382,7 +382,7 @@
                     "fill": "0xa217ff"
                 },
                 {
-                    "text": "Açaí"
+                    "text": "巴西莓"
                 },
                 {
                     "fill": "0xa217ff"
@@ -421,15 +421,15 @@
                     "fill": "0xa8986a"
                 }
             ],
-            "text": "The fruiting calendar for palm fruit trees.",
-            "title": "Palm Fruit Trees",
+            "text": "棕櫚果樹的結果月曆。",
+            "title": "棕櫚果樹",
             "legend": [
                 {
-                    "text": "Dormant",
+                    "text": "休眠",
                     "color": "0xa8986a"
                 },
                 {
-                    "text": "Fruiting",
+                    "text": "結果",
                     "color": "0xa217ff"
                 }
             ],
@@ -448,12 +448,12 @@
         {
             "type": "patchouli:text",
             "anchor": "oil_palm",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 19 - 62 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 10 - 100 %$(br2)Oil Palm trees are harvested for their fruits which can be processed into Palm Oil and a source of burlap fiber. Oil palm clusters grow in 4 stages and yield 3-6 items when harvested.",
-            "title": "Oil Palm Tree"
+            "text": "$(bold)$(l:the_world/climate#temperature)溫度$()：19 - 62 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)含水量$()：10 - 100 %$(br2)採收油棕樹的果實可以加工成棕櫚油，它也是粗麻纖維的來源。油棕果串分 4 個階段生長，採收時可獲得 3-6 個物品。",
+            "title": "油棕樹"
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "Oil palm trees can be found in $(l:beneath/beneath#salt_caves)Salt Caves$() and $(l:beneath/beneath#tar_pools)Tar Pools$() biomes between Y=50 and Y=190",
+            "text": "油棕樹可以在 Y=50 到 Y=190 之間的$(l:beneath/beneath#salt_caves)鹽窟$()和$(l:beneath/beneath#tar_pools)焦油池$()生態域中找到",
             "multiblocks": [
                 {
                     "pattern": [
@@ -1076,12 +1076,12 @@
         {
             "type": "patchouli:text",
             "anchor": "acai",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 24 - 70 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 10 - 100 %$(br2)Açaí tree clusters grow in 5 stages and yield 4-8 fruits when harvested.",
-            "title": "Açaí Tree"
+            "text": "$(bold)$(l:the_world/climate#temperature)溫度$()：24 - 70 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)含水量$()：10 - 100 %$(br2)巴西莓樹的果串分 5 個階段生長，採收時可獲得 4-8 個果實。",
+            "title": "巴西莓樹"
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "Açaí trees can be found in $(l:beneath/beneath#salt_caves)Salt Caves$() and $(l:beneath/beneath#tar_pools)Tar Pools$() biomes between Y=50 and Y=190",
+            "text": "巴西莓樹可以在 Y=50 到 Y=190 之間的$(l:beneath/beneath#salt_caves)鹽窟$()和$(l:beneath/beneath#tar_pools)焦油池$()生態域中找到",
             "multiblocks": [
                 {
                     "pattern": [
@@ -1827,7 +1827,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "延伸閱讀",
             "anchor": "relations",
             "entries": [
                 "tfg:the_world/climate",
