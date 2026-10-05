@@ -155,6 +155,11 @@
         "diggerhelmet:mining_speed_modifier": 9,
         "diggerhelmet:auto_drink_modifier": 9,
         "grapplemod:grapplinghook": 10,
-        "species:harpoon": 11
+        "species:harpoon": 11,
+        "hangglider:hang_glider": 14,
+        "hangglider:reinforced_hang_glider": 14,
+        "gtceu:liquid_fuel_jetpack": 15,
+        "gtceu:electric_jetpack": 15,
+        "gtceu:advanced_electric_jetpack": 15
     }
 }

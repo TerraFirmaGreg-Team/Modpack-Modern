@@ -1,5 +1,5 @@
 {
-	"name": "Interplanetary Railgun",
+	"name": "星際軌道炮",
 	"category": "tfg:logistics",
 	"icon": "tfg:railgun_ammo_shell",
 	"read_by_default": true,
@@ -7,36 +7,36 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "index",
-			"text": "$(li)$(bold)$(l:logistics/railgun#sender)Railgun Sender$()$(li2)$(l:logistics/railgun#ammo)Railgun Ammo$()$(li2)$(l:logistics/railgun#input_bus)Railgun Input Bus$()$(li)$(bold)$(l:logistics/railgun#monitor)Logistics Monitor$()$(li)$(bold)Control Rules$()$(li2)$(l:logistics/railgun#redstone)Redstone$()$(li2)$(l:logistics/railgun#supply_exact)Supply Exact$()$(li2)$(l:logistics/railgun#delay)Delay$()$(li)$(bold)$(l:logistics/railgun#receiver)Railgun Receiver$()$(li2)$(l:logistics/railgun#output_bus)Receiver Output Bus$()$(li)$(bold)$(l:logistics/railgun#tips)Tips$()"
+			"text": "$(li)$(bold)$(l:logistics/railgun#sender)軌道炮發送端$()$(li2)$(l:logistics/railgun#ammo)軌道炮彈藥$()$(li2)$(l:logistics/railgun#input_bus)軌道炮輸入匯流排$()$(li)$(bold)$(l:logistics/railgun#monitor)物流監控器$()$(li)$(bold)控制規則$()$(li2)$(l:logistics/railgun#redstone)紅石$()$(li2)$(l:logistics/railgun#supply_exact)精確供應$()$(li2)$(l:logistics/railgun#delay)延遲$()$(li)$(bold)$(l:logistics/railgun#receiver)軌道炮接收端$()$(li2)$(l:logistics/railgun#output_bus)接收端輸出匯流排$()$(li)$(bold)$(l:logistics/railgun#tips)小技巧$()"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "In $(tfg), transporting items across dimensions or over long distances requires you to build special $(thing)multiblock structures$().$(br2)This system is $(thing)powerful and flexible$(), offering multiple settings that let you customize logistics to perfectly suit your needs.$(br2)What, did you think you could just use AE2 Quantum Tunnels and be done with it?"
+			"text": "在$(tfg)中，要跨維度或長距離運送物品，你必須建造特殊的$(thing)多方塊結構$()。$(br2)這套系統$(thing)強大又靈活$()，提供多種設定，讓你依照需求自訂物流。$(br2)怎麼，你以為用 AE2 的量子隧道就能搞定一切了嗎？"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "This is the perfect system to transport all of your $(thing)passively-produced$() resources to exactly where they're needed on other planets! And it comes with a powerful $(thing)configuration system$() to let you control everything from a single place.$(br2)To set it up, you'll need three components:$(br2)$(bold)Interplanetary Railgun$()$(br)This is the $(thing)sender$() that launches items across space."
+			"text": "這套系統最適合把所有$(thing)被動生產$()的資源，準確送到其他行星上需要的地方！它還附帶強大的$(thing)設定系統$()，讓你在同一個地方控制一切。$(br2)要架設這套系統，你需要三個組件：$(br2)$(bold)星際軌道炮$()$(br)這是把物品發射到太空另一端的$(thing)發送端$()。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(bold)Interplanetary Receiver$()$(br)This is the $(thing)receiver$() that catches and stores incoming items.$(br2)$(bold)Interplanetary Logistics Monitor$()$(br)This acts as the $(thing)central control$(), where you define the rules and behavior of the entire transport system.$(br2)With these machines, you can automate large-scale transfers efficiently — even between planets!"
+			"text": "$(bold)星際接收器$()$(br)這是接住並儲存送來物品的$(thing)接收端$()。$(br2)$(bold)星際物流監控器$()$(br)這是$(thing)中央控制台$()，你可以在這裡定義整個運輸系統的規則和行為。$(br2)有了這些機器，你就能有效率地自動化大規模運輸，甚至是在行星之間！"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "tfg:interplanetary_item_launcher",
-			"title": "Railgun Sender",
+			"title": "軌道炮發送端",
 			"anchor": "sender",
-			"text": "The $(item)Interplanetary Railgun$() acts as your $(thing)sender multiblock$().$(br2)It's the structure responsible for launching items toward distant $(thing)receivers$() — but it can't receive anything itself."
+			"text": "$(item)星際軌道炮$()是你的$(thing)發送端多方塊結構$()。$(br2)它負責把物品發射到遠方的$(thing)接收端$()，但本身無法接收任何物品。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "To function correctly, it requires several components:$(li)$(bold)Energy Hatch:$() provides the power needed to launch items. Without energy, nothing moves.$(li)$(bold)Railgun Ammo Loader:$() must be filled with ammo. One unit is consumed per launch.$(li)$(bold)Input Buses:$() you can add as many as you can fit, to insert the items you want to send."
+			"text": "要正常運作，它需要幾個組件：$(li)$(bold)能源倉：$()提供發射物品所需的電力。沒有能源，什麼都送不出去。$(li)$(bold)軌道炮彈藥裝填器：$()必須裝滿彈藥，每次發射消耗一單位。$(li)$(bold)輸入匯流排：$()放得下多少就能加多少，用來放入你要發送的物品。"
 		},
 		{
 			"type": "patchouli:multiblock",
 			"name": " ",
 			"enable_visualize": "true",
-			"text": "Use a $(l:craftsmanship/building_tools#terminals)Terminal$() to construct the multiblock easily.",
+			"text": "使用$(l:craftsmanship/building_tools#terminals)終端機$()可以輕鬆建造這個多方塊結構。",
 			"multiblock": {
 				"pattern": [
 					[
@@ -161,95 +161,95 @@
 			"type": "patchouli:crafting",
 			"recipe": "tfg:shaped/interplanetary_item_launcher",
 			"title": " ",
-			"text": "$(bold)Important:$() This multiblock can only $(italic)send$() items. Make sure your $(item)Interplanetary Railgun$() is always chunkloaded!"
+			"text": "$(bold)重要：$()這個多方塊結構只能$(italic)發送$()物品。請確保你的$(item)星際軌道炮$()所在的區塊一直保持載入！"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "tfg:railgun_ammo_shell,tfg:railgun_ammo_loader",
 			"anchor": "ammo",
-			"title": "Railgun Ammo",
-			"text": "Each $(thing)Railgun$() requires a special type of $(item)ammo$() — think of it as a package used to transport items. Each launch consumes exactly $(thing)one unit$() of ammo and can send $(thing)three stacks$() of items.$(br2)To load it, you'll need a $(item)Railgun Ammo Loader$() as part of your structure."
+			"title": "軌道炮彈藥",
+			"text": "每座$(thing)軌道炮$()都需要一種特殊的$(item)彈藥$()，可以把它想成用來運送物品的包裹。每次發射剛好消耗$(thing)一單位$()彈藥，可以發送$(thing)三組$()物品。$(br2)要裝填彈藥，結構中必須有一個$(item)軌道炮彈藥裝填器$()。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "You can insert ammo manually or automate the process.$(br2)We $(italic)strongly recommend$() setting up a passive production line to keep your loader filled continuously — this ensures a smooth and reliable logistics chain.$(br2)You can either have each planet automating their own ammo, or you could have one planet make all the ingredients and distribute them to the others."
+			"text": "你可以手動放入彈藥，也可以自動化。$(br2)我們$(italic)強烈建議$()建立被動生產線，讓裝填器持續保持滿載，確保物流鏈順暢可靠。$(br2)你可以讓每顆行星各自自動生產彈藥，也可以由一顆行星製作所有材料，再分送到其他行星。"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "tfg:ulv_railgun_item_loader_in,tfg:lv_railgun_item_loader_in,tfg:mv_railgun_item_loader_in,tfg:hv_railgun_item_loader_in,tfg:ev_railgun_item_loader_in,tfg:iv_railgun_item_loader_in,tfg:luv_railgun_item_loader_in,tfg:zpm_railgun_item_loader_in,tfg:uv_railgun_item_loader_in,tfg:uhv_railgun_item_loader_in",
 			"anchor": "input_bus",
-			"title": "Railgun Input Bus",
-			"text": "When opening the $(thing)Sender$() logistics screen on the $(l:logistics/railgun#monitor)Interplanetary Logistics Monitor$(), you'll notice the familiar $(item)Programmed Circuit$() from GregTech.$(br2)This circuit number is the core identifier for setting up routing rules."
+			"title": "軌道炮輸入匯流排",
+			"text": "在$(l:logistics/railgun#monitor)星際物流監控器$()上打開$(thing)發送端$()物流畫面時，你會看到 GregTech 中熟悉的$(item)編程電路$()。$(br2)這個電路編號是設定路由規則的核心識別碼。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "The number you assign will apply a specific rule to all Input Buses in your Railgun structure that are configured with that same circuit number.$(br2)This allows you to fine-tune what items are sent where and with which rules, based on the circuit used."
+			"text": "你指定的編號會把特定規則套用到軌道炮結構中所有設定為相同電路編號的輸入匯流排。$(br2)這讓你可以依照使用的電路，細部調整哪些物品要送到哪裡、適用哪些規則。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(bold)How to configure it:$()$(br)1. Open the GUI of any $(item)Railgun Input Bus$()$(br)2. Select the number you want, just like in any other GregTech machine.$(br2)This lets you create powerful logic like:$(li)Circuit 1 → send to Moon base$(li)Circuit 2 → send to Mars$(li)Circuit 3 → send to Orbital Station"
+			"text": "$(bold)設定方式：$()$(br)1. 打開任一$(item)軌道炮輸入匯流排$()的介面$(br)2. 像其他 GregTech 機器一樣選擇你要的編號。$(br2)這樣就能建立強大的邏輯，例如：$(li)電路 1 → 送到月球基地$(li)電路 2 → 送到火星$(li)電路 3 → 送到軌道站"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "With the proper circuit setup, you can automate interplanetary trade like a true industrial tycoon!$(br2)$(bold)Note$(): You cannot send anything with the $(br)$(6)#tfg:cannot_launch_in_railgun$() tag."
+			"text": "只要電路設定得當，你就能像真正的工業大亨一樣，自動化星際貿易！$(br2)$(bold)注意$()：帶有$(br)$(6)#tfg:cannot_launch_in_railgun$() 標籤的物品無法發送。"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "tfg:interplanetary_logistics_monitor",
 			"anchor": "monitor",
-			"title": "Logistics Monitor",
-			"text": "The $(item)Interplanetary Logistics Monitor$() is your logistics command center — the true bread and butter of interplanetary transport.$(br2)It's a $(thing)single block$(), requires $(thing)no energy$(), and will automatically detect every $(item)Railgun Sender$() and $(item)Receiver$() you've built."
+			"title": "物流監控器",
+			"text": "$(item)星際物流監控器$()是你的物流指揮中心，也是星際運輸真正的核心。$(br2)它是$(thing)單一方塊$()，$(thing)不需要能源$()，會自動偵測你建造的每一座$(item)軌道炮發送端$()和$(item)接收端$()。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "It may look simple, but it hides powerful tools under the hood. Let's go over the basics:$(br2)When you open the Monitor, you'll see a list of all your Senders and Receivers. You have to $(thing)name each one$().$(br2)To create a logistic rule, click the right arrow to select a Sender, then press $(item)+$() to add a new rule. Lastly, choose the destination Receiver from your list."
+			"text": "它看起來簡單，背後卻藏著強大的工具。先來看看基本操作：$(br2)打開監控器時，你會看到所有發送端和接收端的清單。你必須$(thing)為每一座命名$()。$(br2)要建立物流規則，請點擊右箭頭選擇發送端，按$(item)+$()新增規則，最後從清單中選擇目的地接收端。"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "Redstone Control",
+			"title": "紅石控制",
 			"anchor": "redstone",
-			"text": "The $(item)Redstone Rule$() is simple — but incredibly powerful when used well.$(br2)In the $(item)Sender$() rules interface, enabling this rule means that a $(thing)redstone signal$() must be present on the $(thing)Input Bus$(thing) for it to send items.$(br2)In the $(item)Receiver$() rules interface, you can configure the rule so that an $(thing)Output Bus$() will only accept items based on the redstone signal on that specific block."
+			"text": "$(item)紅石規則$()很簡單，但用得好會非常強大。$(br2)在$(item)發送端$()規則介面中啟用這條規則，代表$(thing)輸入匯流排$(thing)上必須有$(thing)紅石訊號$()才會發送物品。$(br2)在$(item)接收端$()規則介面中，你可以設定規則，讓$(thing)輸出匯流排$()依照該方塊上的紅石訊號來決定是否接收物品。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Time to use your redstone logic skills!$(br2)Whether it's with an $(item)AE2 Level Emitter$(), from $(l:logistics/redstone_devices#threshold_switch)Create redstone utilities$(), or good old $(l:logistics/redstone_devices#more_comparators)vanilla mechanics$() — this rule lets you synchronize logistics with your factory state like a pro."
+			"text": "是時候發揮你的紅石邏輯技巧了！$(br2)無論是用 $(item)AE2 的 ME 標準發信器$()、$(l:logistics/redstone_devices#threshold_switch)機械動力的紅石工具$()，還是傳統的$(l:logistics/redstone_devices#more_comparators)原版機制$()，這條規則都能讓你像專家一樣，讓物流與工廠狀態同步。"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "Supply Exact",
+			"title": "精確供應",
 			"anchor": "supply_exact",
-			"text": "The $(item)Item Rule$() works similarly to a $(thing)GregTech Robot Arm$() set to $(thing)Supply Exact$().$(br2)It can only be configured from the $(item)Sender$() rules interface.$(br2)With this rule active, the $(thing)Railgun$(thing) will only send the $(italic)exact quantity$() when available in the $(item)Input Bus$()."
+			"text": "$(item)物品規則$()的運作方式和設定為$(thing)精確供應$()的 $(thing)GregTech 機械臂$()類似。$(br2)它只能在$(item)發送端$()規則介面中設定。$(br2)啟用這條規則時，只有當$(item)輸入匯流排$()中有足夠的物品時，$(thing)軌道炮$(thing)才會發送$(italic)剛好的數量$()。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(bold)How to set it up:$()$(li)Drag items into the filter from your $(emi) interface$(li)Use $(thing)left and right clicks$() to adjust the quantity$(li)You can also bookmark items for quick access and configuration$(br2)This rule is perfect for precise automation — ideal for batch crafting or resource quotas."
+			"text": "$(bold)設定方式：$()$(li)從 $(emi) 介面把物品拖進過濾器$(li)使用$(thing)左鍵和右鍵$()調整數量$(li)你也可以把物品加入書籤，方便快速存取和設定$(br2)這條規則非常適合精確的自動化，最適合批次合成或資源配額。"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "Delay",
+			"title": "延遲",
 			"anchor": "delay",
-			"text": "The $(item)Delay Rule$() is simple, but useful for managing item flow timing.$(br2)$(bold)On the Sender side:$()$(br)Items will only be sent after the $(item)Input Bus$() hasn't received any new item for a set amount of time (in seconds).$(br2)This helps avoid sending items too frequently when inputs are constantly changing."
+			"text": "$(item)延遲規則$()很簡單，但在管理物品流動的時機上很有用。$(br2)$(bold)在發送端：$()$(br)只有當$(item)輸入匯流排$()在設定的時間(秒)內沒有收到任何新物品時，才會發送物品。$(br2)這可以避免在輸入不斷變動時太頻繁地發送物品。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(bold)On the Receiver side:$()$(br)The rule defines a delay before an $(item)Output Bus$() can receive another batch of items.$(br2)This can be useful to prevent overflow or to pace item insertion into slower systems.$(br2)This mode is ideal for syncing with machines that need breathing room between operations, or to prevent unnecessary waste of ammo."
+			"text": "$(bold)在接收端：$()$(br)這條規則會設定$(item)輸出匯流排$()接收下一批物品前的延遲時間。$(br2)這可以用來防止溢出，或是控制物品放入較慢系統的速度。$(br2)這個模式最適合需要在運作之間喘口氣的機器，也能避免不必要地浪費彈藥。"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"anchor": "receiver",
 			"item": "tfg:interplanetary_item_receiver",
-			"title": "Railgun Receiver",
-			"text": "The $(item)Interplanetary Receiver$(), as its name suggests, is designed to $(thing)receive items$() sent by the $(l:logistics/railgun#sender)Railgun$().$(br2)It's a $(thing)small and simple multiblock$() that requires no energy or maintenance — just build it and you're ready to go!"
+			"title": "軌道炮接收端",
+			"text": "$(item)星際接收器$()正如其名，是用來$(thing)接收$()$(l:logistics/railgun#sender)軌道炮$()所發送的物品。$(br2)它是$(thing)小巧簡單的多方塊結構$()，不需要能源也不需要維護，蓋好就能使用！"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Its flexibility lies in the number of $(item)Output Buses$() you can attach. The more you add, the more items it can handle simultaneously.$(br2)$(bold)Setup is easy:$()$(li)Build the structure$(li)Add as many Output Buses as you need and set their circuits$(li)Done — it's ready to receive!$(br2)No fuel, no maintenance — just pure logistics power. Make sure it's properly chunk loaded, and let the items rain in!"
+			"text": "它的靈活之處在於可以連接的$(item)輸出匯流排$()數量。加得越多，能同時處理的物品就越多。$(br2)$(bold)設定很簡單：$()$(li)建造結構$(li)依需求加入輸出匯流排並設定電路$(li)完成，可以開始接收了！$(br2)不需要燃料，不需要維護，只有純粹的物流力量。請確保它所在的區塊保持載入，然後讓物品像下雨一樣送進來吧！"
 		},
 		{
 			"type": "patchouli:multiblock",
 			"name": " ",
 			"enable_visualize": "true",
-			"text": "Use a $(l:craftsmanship/building_tools#terminals)Terminal$() to construct the multiblock easily.",
+			"text": "使用$(l:craftsmanship/building_tools#terminals)終端機$()可以輕鬆建造這個多方塊結構。",
 			"multiblock": {
 				"pattern": [
 					[
@@ -315,27 +315,27 @@
 		{
 			"type": "patchouli:spotlight",
 			"anchor": "output_bus",
-			"title": "Railgun Output Bus",
+			"title": "軌道炮輸出匯流排",
 			"item": "tfg:ulv_railgun_item_loader_out,tfg:lv_railgun_item_loader_out,tfg:mv_railgun_item_loader_out,tfg:hv_railgun_item_loader_out,tfg:ev_railgun_item_loader_out,tfg:iv_railgun_item_loader_out,tfg:luv_railgun_item_loader_out,tfg:zpm_railgun_item_loader_out,tfg:uv_railgun_item_loader_out,tfg:uhv_railgun_item_loader_out",
-			"text": "Just like how your $(l:logistics/railgun#input_bus)Railgun Input Buses$() can be assigned a $(thing)circuit number$(), you can do the same with the $(item)Output Buses$() on your $(thing)Receiver$()."
+			"text": "就像$(l:logistics/railgun#input_bus)軌道炮輸入匯流排$()可以指定$(thing)電路編號$()一樣，$(thing)接收端$()上的$(item)輸出匯流排$()也可以。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "This feature serves two main purposes:$(br2)1. $(bold)Direct item flow$() - You can control which $(item)Output Bus$() receives items. To do this, simply assign a circuit number to the Output Bus, then select that number in your Sender's rule via the $(l:logistics/railgun#monitor)Logistics Monitor$()."
+			"text": "這項功能有兩個主要用途：$(br2)1. $(bold)指定物品流向$() — 你可以控制由哪個$(item)輸出匯流排$()接收物品。只要為輸出匯流排指定電路編號，再透過$(l:logistics/railgun#monitor)物流監控器$()在發送端的規則中選擇該編號即可。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "2. $(bold)Conditional rules$() - You can also set rules to $(thing)stop sending items$() if the circuit rule isn't respected.$(br2)This is done not from the Sender tab, but by opening the $(thing)Receiver$() tab in the Monitor.$(br2)For each circuit number, you can assign a rule that applies only to Output Buses using that number."
+			"text": "2. $(bold)條件規則$() — 你也可以設定規則，在不符合電路規則時$(thing)停止發送物品$()。$(br2)這不是在發送端分頁設定，而是要在監控器中打開$(thing)接收端$()分頁。$(br2)你可以為每個電路編號指定一條規則，只套用到使用該編號的輸出匯流排。"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "Railgun Tips",
+			"title": "軌道炮小技巧",
 			"anchor": "tips",
-			"text": "$(li)Railguns can be used within the same dimension. This is a great way to learn how they work, and can also be useful for sending stuff very long distances.$(li)$(thing)Cells$() are the only way to send around fluids. You can use a $(item)Canner$() to automatically fill and empty cells.$(li)Unless you're using $(l:logistics/railgun#redstone)redstone control$(), make sure all your $(l:logistics/railgun#input_bus)input$() and $(l:logistics/railgun#output_bus)output buses$() are $(thing)Enabled$()."
+			"text": "$(li)軌道炮也可以在同一個維度中使用。這是學習運作方式的好方法，也能用來把東西送到非常遠的地方。$(li)$(thing)流體單元$()是運送流體的唯一方法。你可以用$(item)裝罐機$()自動填充和清空流體單元。$(li)除非你使用$(l:logistics/railgun#redstone)紅石控制$()，否則請確保所有$(l:logistics/railgun#input_bus)輸入$()和$(l:logistics/railgun#output_bus)輸出匯流排$()都已$(thing)啟用$()。"
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Further Reading",
+			"title": "延伸閱讀",
 			"anchor": "relations",
 			"entries": [
 				"tfg:the_moon/the_moon",

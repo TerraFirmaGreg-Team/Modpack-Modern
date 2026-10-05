@@ -7,7 +7,7 @@
 			"type": "patchouli:text",
 			"anchor": "chorus_fruit",
 			"title": "Chorus Fruit",
-			"text": "$(bold)Biomes$(): Chorus Forest, Chorus Thicket$(br2)Chorus Plants grow in tall formations. Breaking the stem will yield nothing, while breaking the Flowers at the top will yield Chorus Fruits or a Flower.$(br)Chorus Fruits can be eaten for $(thing)Fruit$(), cooked and eaten as $(item)Popped Chorus Fruit$(), or can be distilled into $(thing)Nitrogen$().$(br)"
+			"text": "$(bold)Biomes$(): $(l:the_moon/moon_biomes#forest)Chorus Forest$(), $(l:the_moon/moon_biomes#thicket)Chorus Thicket$()$(br2)Chorus Plants grow in tall formations. Breaking the stem will yield nothing, while breaking the Flowers at the top will yield Chorus Fruits or a Flower.$(br)Chorus Fruits can be eaten for $(thing)Fruit$(), cooked and eaten as $(item)Popped Chorus Fruit$(), or can be distilled into $(thing)Nitrogen$().$(br)"
 		},
 		{
 			"type": "patchouli:multiblock",
@@ -58,7 +58,8 @@
 				"tfg:the_world/climate",
 				"tfg:the_world/wild_crops",
 				"tfg:beneath/beneath_crops",
-				"tfg:mars/mars_crops"
+				"tfg:mars/mars_crops",
+				"tfg:the_moon/moon_biomes"
 			]
 		}
 	],

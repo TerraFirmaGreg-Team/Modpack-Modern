@@ -48,7 +48,7 @@
 			"item": "tfchotornot:mittens,tfchotornot:burlap_potholder,tfchotornot:silk_potholder,tfchotornot:wool_potholder",
 			"anchor": "cloth",
 			"title": "Alternatywy do tkaniny",
-			"text": "You can also make $(item)Mittens$() and $(item)Potholders$() out of $(l:agriculture/leather_making)Leather$() and $(l:agriculture/weaving)Cloth$()."
+			"text": "Możesz też zrobić $(item)rękawice$() i $(item)łapki do garnków$() ze $(l:agriculture/leather_making)skóry$() oraz $(l:agriculture/weaving)tkaniny$()."
 		},
 		{
 			"type": "patchouli:spotlight",

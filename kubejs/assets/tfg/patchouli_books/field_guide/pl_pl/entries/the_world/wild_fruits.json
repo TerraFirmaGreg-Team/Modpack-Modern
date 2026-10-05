@@ -11,7 +11,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "$(li)$(bold)$(l:the_world/wild_fruits#palm_fruit_trees)Palm Fruit Trees$()$(li2)$(l:the_world/wild_fruits#coconut)Coconut$()$(li2)$(l:the_world/wild_fruits#date)Date$()$(li)$(bold)$(l:the_world/wild_fruits#tall_bushes)Tall Fruit Bushes$()$(li2)$(l:the_world/wild_fruits#blackberry)Blackberry$()$(li2)$(l:the_world/wild_fruits#raspberry)Raspberry$()$(li2)$(l:the_world/wild_fruits#blueberry)Blueberry$()$(li2)$(l:the_world/wild_fruits#elderberry)Elderberry$()$(li)$(bold)$(l:the_world/wild_fruits#small_bushes)Small Fruit Bushes$()$(li2)$(l:the_world/wild_fruits#bunchberry)Bunchberry$()$(li2)$(l:the_world/wild_fruits#gooseberry)Gooseberry$()$(li2)$(l:the_world/wild_fruits#snowberry)Snowberry$()$(li2)$(l:the_world/wild_fruits#cloudberry)Cloudberry$()$(li2)$(l:the_world/wild_fruits#strawberry)Strawberry$()"
+            "text": "$(li)$(bold)$(l:the_world/wild_fruits#palm_fruit_trees)Palmy owocowe$()$(li2)$(l:the_world/wild_fruits#coconut)Kokos$()$(li2)$(l:the_world/wild_fruits#date)Daktyl$()$(li)$(bold)$(l:the_world/wild_fruits#tall_bushes)Wysokie krzewy owocowe$()$(li2)$(l:the_world/wild_fruits#blackberry)Jeżyna$()$(li2)$(l:the_world/wild_fruits#raspberry)Malina$()$(li2)$(l:the_world/wild_fruits#blueberry)Jagoda$()$(li2)$(l:the_world/wild_fruits#elderberry)Bez$()$(li)$(bold)$(l:the_world/wild_fruits#small_bushes)Niskie krzewy owocowe$()$(li2)$(l:the_world/wild_fruits#bunchberry)Borówka$()$(li2)$(l:the_world/wild_fruits#gooseberry)Agrest$()$(li2)$(l:the_world/wild_fruits#snowberry)Śnieguliczka$()$(li2)$(l:the_world/wild_fruits#cloudberry)Malina moroszka$()$(li2)$(l:the_world/wild_fruits#strawberry)Truskawka$()"
         },
         {
             "type": "patchouli:text",
@@ -3101,11 +3101,11 @@
             "type": "patchouli:text",
             "anchor": "coconut",
             "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 15 - 45 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 35 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 175 - 500mm$(br2)Coconut trees are a special kind of palm fruit tree. Coconut clusters grow in 7 stages. They can be harvested while green for young coconuts which provide coconut milk. Or they can be harvested when mature for coconut flesh. Be careful when harvesting coconut trees as they will deliver a strong blow if they fall on you.",
-            "title": "Palma kokosowa"
+            "title": "Kokosowiec"
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "Przykładowa palma kokosowa.",
+            "text": "Przykładowy kokosowiec.",
             "multiblocks": [
                 {
                     "pattern": [

@@ -16,13 +16,13 @@
 		},
 		{
 			"type": "patchouli:image",
-			"title": "What are Curios?",
+			"title": "Czym są Curios?",
 			"anchor": "curios",
 			"images": [
 				"tfg:textures/gui/field_guide/curios.png"
 			],
 			"border": true,
-			"text": "Click the circular button on the top left of your character portrait to open the menu."
+			"text": "Kliknij okrągły przycisk w lewym górnym rogu Twojej postaci w pionie, aby otworzyć menu."
 		},
 		{
 			"type": "patchouli:text",
@@ -462,7 +462,7 @@
 			"item": "tag:minecraft:trim_templates",
 			"type": "patchouli:spotlight",
 			"anchor": "armor_trim",
-			"text": "Are your clothes looking too plain?$(br2)Just like armor, $(l:craftsmanship/sewing_table#armor_trim)Armor Trims$() can be applied to most clothing too."
+			"text": "Twoje ubrania wyglądają zbyt zwyczajnie?$(br2)Na większości ubrań możesz umieścić $(l:craftsmanship/sewing_table#armor_trim)zdobienia$(), tak jak na zbroi."
 		},
 		{
 			"type": "patchouli:relations",

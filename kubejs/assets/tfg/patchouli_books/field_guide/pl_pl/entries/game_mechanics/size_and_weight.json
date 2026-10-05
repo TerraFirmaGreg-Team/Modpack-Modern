@@ -6,7 +6,7 @@
         {
             "type": "patchouli:text",
             "anchor": "intro",
-            "text": "Every item has a $(thing)Size ⇲$() and $(thing)Weight ⚖$(). An item's size and weight is shown on the $(thing)tooltip$(), which appears when you hover over it with your mouse."
+            "text": "Każdy przedmiot ma $(thing)rozmiar ⇲$() i $(thing)wagę ⚖$(). Rozmiar i waga przedmiotu są widoczne w $(thing)podpowiedzi$(), która pojawia się po najechaniu na niego myszą."
         },
         {
             "type": "patchouli:text",

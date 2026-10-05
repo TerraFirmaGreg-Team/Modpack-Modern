@@ -53,7 +53,7 @@
             "anchor": "jacks",
             "title": "Zacisk",
             "recipe": "tfc:welding/jacks",
-            "text": "The $(thing)Pinch$() operation can be done with $(thing)Jacks$(), made from $(l:craftsmanship/anvils#welding)Welding$() a brass rod with a brass plate."
+            "text": "Operację $(thing)ściśnięcia$() wykonuje się $(thing)zaciskiem$(), wytwarzanym przez $(l:craftsmanship/anvils#welding)spawanie$() mosiężnego pręta z mosiężną płytką."
         },
         {
             "type": "patchouli:crafting",

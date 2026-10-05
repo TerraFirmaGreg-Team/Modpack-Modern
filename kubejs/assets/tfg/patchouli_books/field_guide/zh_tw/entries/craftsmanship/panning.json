@@ -1,23 +1,23 @@
 {
-    "name": "Panning & Sluices",
+    "name": "淘金與溜槽",
     "category": "tfg:craftsmanship",
     "icon": "tfc:pan/empty",
     "pages": [
         {
             "type": "patchouli:text",
             "anchor": "panning",
-            "title": "Panning",
-            "text": "$(thing)Panning$() is a method of obtaining ore dusts of certain native ores by searching in rivers and other waterways.$(br2)Panning makes use of $(t:#tfc:ore_deposits)$(6)Ore Deposits$() which are found in gravel patches in the bottom of lakes and rivers.$(br2)In order to get started panning, you will need an $(item)Empty Pan$()."
+            "title": "淘金",
+            "text": "$(thing)淘金$()是在河流和其他水道中搜尋，以取得某些原生礦石之礦粉的方法。$(br2)淘金要利用$(t:#tfc:ore_deposits)$(6)礦床$()，它們分布在湖泊和河流底部的礫石區域中。$(br2)要開始淘金，你需要一個$(item)空淘盤$()。"
         },
         {
             "type": "tfg:knapping_recipe",
             "recipe": "tfc:clay_knapping/pan",
-            "text": "Clay can be $(l:craftsmanship/pottery)knapped$() into a pan as shown above."
+            "text": "黏土可以如上圖所示$(l:craftsmanship/pottery)塑形$()成淘盤。"
         },
         {
             "type": "tfg:heat_recipe",
             "recipe": "tfc:heating/ceramic_pan",
-            "text": "Once the pan has been $(thing)knapped$(), it needs to be $(l:game_mechanics/heating)fired$() to create a $(thing)Ceramic Pan$().$(br2)The next thing you will need to find is some sort of $(t:#tfc:ore_deposits)$(6)Ore Deposit$(). Ore deposits can come in several different ores: Native Copper, Native Silver, Native Gold, and Cassiterite."
+            "text": "淘盤$(thing)塑形$()完成後，需要經過$(l:game_mechanics/heating)燒製$()才能做成$(thing)陶瓷淘盤$()。$(br2)接下來你需要找到某種$(t:#tfc:ore_deposits)$(6)礦床$()。礦床有幾種不同的礦石：原生銅、原生銀、原生金和錫石。"
         },
         {
             "type": "patchouli:multiblock",
@@ -34,13 +34,13 @@
                     "X": "#tfc:ore_deposits"
                 }
             },
-            "name": "Example Deposit",
-            "text": "Ore deposits in gravel.",
+            "name": "礦床範例",
+            "text": "礫石中的礦床。",
             "enable_visualize": false
         },
         {
             "type": "patchouli:text",
-            "text": "Now you can begin panning!$(br2)$(bold)1.$() With the pan in hand, $(item)$(k:key.use)$() it on the ore deposit block.$(br2)$(bold)2.$() While standing in water with the pan in your hand, hold down $(item)$(k:key.use)$() and you will start panning.$(br2)$(bold)3.$() After a few moments, if you are lucky, you may be rewarded with some ore dust in your inventory."
+            "text": "現在你可以開始淘金了！$(br2)$(bold)1.$() 手持淘盤，對礦床方塊按下$(item)$(k:key.use)$()。$(br2)$(bold)2.$() 站在水中並手持淘盤，按住$(item)$(k:key.use)$()就會開始淘金。$(br2)$(bold)3.$() 過一會兒，如果運氣好，你的物品欄中可能會出現一些礦粉作為獎勵。"
         },
         {
             "type": "patchouli:image",
@@ -52,42 +52,42 @@
         {
             "type": "patchouli:spotlight",
             "anchor": "sluice",
-            "title": "Sluices",
+            "title": "溜槽",
             "item": "tag:tfc:sluices",
-            "text": "The $(thing)Sluice$() is a device that is used to process $(thing)Ore Deposits$() automatically, producing the same results that $(l:craftsmanship/panning#panning)Panning$() does, with slightly higher probabilities."
+            "text": "$(thing)溜槽$()是一種自動處理$(thing)礦床$()的裝置，產出的結果與$(l:craftsmanship/panning#panning)淘金$()相同，機率還稍微高一些。"
         },
         {
             "type": "patchouli:text",
-            "text": "洗礦槽被放置後會佔據兩個方塊。為了讓它正常工作，水必須流過洗礦槽的頂部並從底部流出。如果水看起來流過了整個洗礦槽，就表示它在正常工作。流進洗礦槽的水必須是水流的最後一格水，且在洗礦槽的出口處必須有一個空方塊讓水能夠流進去。"
+            "text": "溜槽被放置後會佔據兩個方塊。為了讓它正常工作，水必須流過溜槽的頂部並從底部流出。如果水看起來流過了整個溜槽，就表示它在正常工作。流進溜槽的水必須是水流的最後一格水，且在溜槽的出口處必須有一個空方塊讓水能夠流進去。"
         },
         {
             "type": "patchouli:image",
             "images": [
                 "tfc:textures/gui/book/tutorial/sluice_cross.png"
             ],
-            "text": "一個正確安裝的洗礦槽。",
+            "text": "一個正確安裝的溜槽。",
             "border": true
         },
         {
             "type": "patchouli:text",
-            "text": "要使用洗礦槽，只需要把礦石沉積物方塊以物品形式丟到上游水流中，讓水流把物品衝進洗礦槽，沉積物會出現在洗礦槽中。一段時間之後，洗礦的產物就有可能從下游吐出。"
+            "text": "要使用溜槽，只需要把礦石沉積物方塊以物品形式丟到上游水流中，讓水流把物品衝進溜槽，沉積物會出現在溜槽中。一段時間之後，洗礦的產物就有可能從下游吐出。"
         },
         {
             "type": "patchouli:image",
             "images": [
                 "tfc:textures/gui/book/tutorial/sluice_in_use.png"
             ],
-            "text": "一個正常工作的、裡面有沉積物的洗礦槽。",
+            "text": "一個正常工作的、裡面有沉積物的溜槽。",
             "border": true
         },
         {
             "type": "patchouli:text",
-            "text": "Panning and sluicing can give a few possible products: $(thing)Ore Dusts$(), $(thing)Small Piles of Ore Dust$(), $(thing)Loose Rocks$(), and $(thing)Gems$().$(br)The probabilities for obtaining certain drops can be viewed by looking at the ore deposit in $(emi).",
-            "title": "Expected Products"
+            "text": "淘金和溜槽可能產出幾種產物：$(thing)礦粉$()、$(thing)小堆礦粉$()、$(thing)碎石$()和$(thing)寶石$()。$(br)在$(emi)中查看礦床，即可得知取得各種掉落物的機率。",
+            "title": "預期產物"
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "延伸閱讀",
             "anchor": "relations",
             "entries": [
                 "tfg:the_world/geology",

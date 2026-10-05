@@ -1,21 +1,21 @@
 {
-    "name": "Earth Fruits",
+    "name": "地球水果",
     "category": "tfg:the_world",
     "icon": "tfc:textures/item/food/cherry.png",
     "pages": [
         {
             "type": "patchouli:text",
-            "title": "Index",
+            "title": "索引",
             "anchor": "index",
-            "text": "$(li)$(bold)$(l:the_world/wild_fruits#intro)Introduction$()$(li)$(bold)$(l:the_world/wild_fruits#fruit_trees)Fruit Trees$()$(li2)$(l:the_world/wild_fruits#cherry)Cherry$()$(li2)$(l:the_world/wild_fruits#green_apple)Green Apple$()$(li2)$(l:the_world/wild_fruits#lemon)Lemon$()$(li2)$(l:the_world/wild_fruits#olive)Olive$()$(li2)$(l:the_world/wild_fruits#orange)Orange$()$(li2)$(l:the_world/wild_fruits#peach)Peach$()$(li2)$(l:the_world/wild_fruits#plum)Plum$()$(li2)$(l:the_world/wild_fruits#red_apple)Red Apple$()$(li2)$(l:the_world/wild_fruits#cocoa)Cocoa$()$(li2)$(l:the_world/wild_fruits#fig)Fig$()$(li2)$(l:the_world/wild_fruits#banana)Bananas$()"
+            "text": "$(li)$(bold)$(l:the_world/wild_fruits#intro)簡介$()$(li)$(bold)$(l:the_world/wild_fruits#fruit_trees)果樹$()$(li2)$(l:the_world/wild_fruits#cherry)櫻桃$()$(li2)$(l:the_world/wild_fruits#green_apple)青蘋果$()$(li2)$(l:the_world/wild_fruits#lemon)檸檬$()$(li2)$(l:the_world/wild_fruits#olive)橄欖$()$(li2)$(l:the_world/wild_fruits#orange)柳橙$()$(li2)$(l:the_world/wild_fruits#peach)桃子$()$(li2)$(l:the_world/wild_fruits#plum)李子$()$(li2)$(l:the_world/wild_fruits#red_apple)紅蘋果$()$(li2)$(l:the_world/wild_fruits#cocoa)可可$()$(li2)$(l:the_world/wild_fruits#fig)無花果$()$(li2)$(l:the_world/wild_fruits#banana)香蕉$()"
         },
         {
             "type": "patchouli:text",
-            "text": "$(li)$(bold)$(l:the_world/wild_fruits#palm_fruit_trees)Palm Fruit Trees$()$(li2)$(l:the_world/wild_fruits#coconut)Coconut$()$(li2)$(l:the_world/wild_fruits#date)Date$()$(li)$(bold)$(l:the_world/wild_fruits#tall_bushes)Tall Fruit Bushes$()$(li2)$(l:the_world/wild_fruits#blackberry)Blackberry$()$(li2)$(l:the_world/wild_fruits#raspberry)Raspberry$()$(li2)$(l:the_world/wild_fruits#blueberry)Blueberry$()$(li2)$(l:the_world/wild_fruits#elderberry)Elderberry$()$(li)$(bold)$(l:the_world/wild_fruits#small_bushes)Small Fruit Bushes$()$(li2)$(l:the_world/wild_fruits#bunchberry)Bunchberry$()$(li2)$(l:the_world/wild_fruits#gooseberry)Gooseberry$()$(li2)$(l:the_world/wild_fruits#snowberry)Snowberry$()$(li2)$(l:the_world/wild_fruits#cloudberry)Cloudberry$()$(li2)$(l:the_world/wild_fruits#strawberry)Strawberry$()"
+            "text": "$(li)$(bold)$(l:the_world/wild_fruits#palm_fruit_trees)棕櫚果樹$()$(li2)$(l:the_world/wild_fruits#coconut)椰子$()$(li2)$(l:the_world/wild_fruits#date)椰棗$()$(li)$(bold)$(l:the_world/wild_fruits#tall_bushes)大型灌木$()$(li2)$(l:the_world/wild_fruits#blackberry)黑莓$()$(li2)$(l:the_world/wild_fruits#raspberry)覆盆子$()$(li2)$(l:the_world/wild_fruits#blueberry)藍莓$()$(li2)$(l:the_world/wild_fruits#elderberry)接骨木莓$()$(li)$(bold)$(l:the_world/wild_fruits#small_bushes)小型灌木$()$(li2)$(l:the_world/wild_fruits#bunchberry)草茱萸$()$(li2)$(l:the_world/wild_fruits#gooseberry)醋栗$()$(li2)$(l:the_world/wild_fruits#snowberry)雪果$()$(li2)$(l:the_world/wild_fruits#cloudberry)雲莓$()$(li2)$(l:the_world/wild_fruits#strawberry)草莓$()"
         },
         {
             "type": "patchouli:text",
-            "text": "$(li2)$(l:the_world/wild_fruits#wintergreen_berry)Wintergreen Berry$()$(li2)$(l:the_world/wild_fruits#cranberry)Cranberry$()$(li2)$(l:the_world/wild_fruits#nightshade)Nightshade$()$(li2)$(l:the_world/wild_fruits#pineapple)Pineapple$()$(li2)$(l:the_world/wild_fruits#red_grapes)Red Grapes$()$(li2)$(l:the_world/wild_fruits#white_grapes)White Grapes$()"
+            "text": "$(li2)$(l:the_world/wild_fruits#wintergreen_berry)冬青莓$()$(li2)$(l:the_world/wild_fruits#cranberry)蔓越莓$()$(li2)$(l:the_world/wild_fruits#nightshade)龍葵$()$(li2)$(l:the_world/wild_fruits#pineapple)鳳梨$()$(li2)$(l:the_world/wild_fruits#red_grapes)紅葡萄$()$(li2)$(l:the_world/wild_fruits#white_grapes)白葡萄$()"
         },
         {
             "type": "patchouli:empty",
@@ -24,18 +24,18 @@
         {
             "type": "patchouli:text",
             "anchor": "intro",
-            "title": "Introduction to Fruits",
-            "text": "Many different varieties of wild fruits can be found growing in the world. These can be collected to be eaten, or farmed, with the right equipment. These can be found on different varieties of bushes or trees.$(br2)Most fruiting plants have a common lifecycle. They will grow, form flowers, sprout fruit, and then lay dormant."
+            "title": "水果簡介",
+            "text": "世界中生長著許多不同種類的野生水果。你可以採集來吃，或是在有適當設備時加以種植。它們生長在各種灌木或樹木上。$(br2)大多數結果植物都有相同的生命週期：生長、開花、結果，然後進入休眠。"
         },
         {
             "type": "patchouli:text",
-            "text": "Fruit plants are seasonal. During their cold season, these plants will appear brown and lifeless. In the spring, they become green and healthy, getting ready to produce fruit and grow larger. The exact times this happen varies by the fruit. Fruit plants can die if kept outside the range of their $(l:the_world/climate#climate)Climate Conditions$()."
+            "text": "結果植物有季節性。在寒冷的季節，這些植物看起來枯黃、毫無生氣。到了春天，它們會變得翠綠健康，準備結果並長得更大。確切的時間依水果而異。如果結果植物所處的環境超出它的$(l:the_world/climate#climate)氣候條件$()範圍，就可能死亡。"
         },
         {
             "type": "patchouli:text",
             "anchor": "fruit_trees",
-            "text": "$(thing)Fruit trees$() grow from tiny saplings into large, flowering trees. The branches of fruit trees are their heart, and they will grow as long as the climate conditions are right. As fruit trees mature, they will grow $(thing)leaves$() all around their branches. The leaves can flower and fruit depending on the $(l:the_world/climate#seasons)Season$().",
-            "title": "Fruit Trees"
+            "text": "$(thing)果樹$()會從小小的樹苗長成開花的大樹。樹枝是果樹的核心，只要氣候條件合適，果樹就會持續生長。果樹成熟時，樹枝周圍會長出$(thing)樹葉$()。樹葉會依照$(l:the_world/climate#seasons)季節$()開花和結果。",
+            "title": "果樹"
         },
         {
             "type": "patchouli:image",
@@ -47,11 +47,11 @@
         },
         {
             "type": "patchouli:text",
-            "text": "Fruit trees start out as $(thing)Saplings$(). Saplings will only start growing―Placing their first piece of the tree trunk―If it is not their dormant season. The size of the finished tree is loosely determined by how many saplings are in the original sapling block.$(br)More saplings can be spliced onto a single block through $(thing)Grafting$(). To splice a sapling into another, just $(item)$(k:key.use)$() on it while holding a sapling and a $(thing)Knife$() in your off hand."
+            "text": "果樹一開始是$(thing)樹苗$()。樹苗只有在非休眠季節才會開始生長(放下第一段樹幹)。長成後的樹木大小大致取決於最初的樹苗方塊中有幾株樹苗。$(br)透過$(thing)嫁接$()，可以把更多樹苗接到同一個方塊上。要把樹苗接到另一株樹苗上，只要主手拿著樹苗、副手拿著$(thing)刀$()，對它按$(item)$(k:key.use)$()即可。"
         },
         {
             "type": "patchouli:text",
-            "text": "To get saplings from a fruit tree, break the 'elbow' branch blocks (90° angled branches) with an $(thing)Axe$(). Saplings can also be placed on these 'elbow' sections, if they are not too high up in the tree. This allows one fruit tree to grow multiple kinds of fruit. Harvesting fruit is done with $(item)$(k:key.use)$() when the leaf block is bearing fruit. This will give one fruit, and revert the plant back to its growing stage. Harvesting can be automated with $(item)Harvest Baskets$()"
+            "text": "要從果樹取得樹苗，請用$(thing)斧頭$()破壞「肘形」樹枝方塊(呈 90° 轉角的樹枝)。如果位置不會太高，也可以把樹苗放在這些「肘形」樹枝上，讓一棵果樹結出多種水果。當樹葉方塊結出果實時，按$(item)$(k:key.use)$()即可採收，每次獲得一個水果，植株會回到生長階段。採收可以用$(item)採收籃$()自動化"
         },
         {
             "type": "tfg:table",
@@ -61,127 +61,43 @@
                     "text": ""
                 },
                 {
-                    "text": "Jan"
+                    "text": "1月"
                 },
                 {
-                    "text": "Feb"
+                    "text": "2月"
                 },
                 {
-                    "text": "Mar"
+                    "text": "3月"
                 },
                 {
-                    "text": "Apr"
+                    "text": "4月"
                 },
                 {
-                    "text": "May"
+                    "text": "5月"
                 },
                 {
-                    "text": "Jun"
+                    "text": "6月"
                 },
                 {
-                    "text": "Jul"
+                    "text": "7月"
                 },
                 {
-                    "text": "Aug"
+                    "text": "8月"
                 },
                 {
-                    "text": "Sep"
+                    "text": "9月"
                 },
                 {
-                    "text": "Oct"
+                    "text": "10月"
                 },
                 {
-                    "text": "Nov"
+                    "text": "11月"
                 },
                 {
-                    "text": "Dec"
+                    "text": "12月"
                 },
                 {
-                    "text": "Cherry"
-                },
-                {
-                    "fill": "0x6ab553"
-                },
-                {
-                    "fill": "0x6ab553"
-                },
-                {
-                    "fill": "0x6ab553"
-                },
-                {
-                    "fill": "0xcca0db"
-                },
-                {
-                    "fill": "0xcca0db"
-                },
-                {
-                    "fill": "0xa217ff"
-                },
-                {
-                    "fill": "0xa8986a"
-                },
-                {
-                    "fill": "0xa8986a"
-                },
-                {
-                    "fill": "0xa8986a"
-                },
-                {
-                    "fill": "0xa8986a"
-                },
-                {
-                    "fill": "0xa8986a"
-                },
-                {
-                    "fill": "0xa8986a"
-                },
-                {
-                    "text": "Apple"
-                },
-                {
-                    "fill": "0xa8986a"
-                },
-                {
-                    "fill": "0xa8986a"
-                },
-                {
-                    "fill": "0x6ab553"
-                },
-                {
-                    "fill": "0x6ab553"
-                },
-                {
-                    "fill": "0x6ab553"
-                },
-                {
-                    "fill": "0x6ab553"
-                },
-                {
-                    "fill": "0x6ab553"
-                },
-                {
-                    "fill": "0xcca0db"
-                },
-                {
-                    "fill": "0xcca0db"
-                },
-                {
-                    "fill": "0xa217ff"
-                },
-                {
-                    "fill": "0xa8986a"
-                },
-                {
-                    "fill": "0xa8986a"
-                },
-                {
-                    "text": "Lemon"
-                },
-                {
-                    "fill": "0xa8986a"
-                },
-                {
-                    "fill": "0x6ab553"
+                    "text": "櫻桃"
                 },
                 {
                     "fill": "0x6ab553"
@@ -214,7 +130,13 @@
                     "fill": "0xa8986a"
                 },
                 {
-                    "text": "Olive"
+                    "fill": "0xa8986a"
+                },
+                {
+                    "fill": "0xa8986a"
+                },
+                {
+                    "text": "蘋果"
                 },
                 {
                     "fill": "0xa8986a"
@@ -253,7 +175,85 @@
                     "fill": "0xa8986a"
                 },
                 {
-                    "text": "Orange"
+                    "text": "檸檬"
+                },
+                {
+                    "fill": "0xa8986a"
+                },
+                {
+                    "fill": "0x6ab553"
+                },
+                {
+                    "fill": "0x6ab553"
+                },
+                {
+                    "fill": "0x6ab553"
+                },
+                {
+                    "fill": "0x6ab553"
+                },
+                {
+                    "fill": "0xcca0db"
+                },
+                {
+                    "fill": "0xcca0db"
+                },
+                {
+                    "fill": "0xa217ff"
+                },
+                {
+                    "fill": "0xa8986a"
+                },
+                {
+                    "fill": "0xa8986a"
+                },
+                {
+                    "fill": "0xa8986a"
+                },
+                {
+                    "fill": "0xa8986a"
+                },
+                {
+                    "text": "橄欖"
+                },
+                {
+                    "fill": "0xa8986a"
+                },
+                {
+                    "fill": "0xa8986a"
+                },
+                {
+                    "fill": "0x6ab553"
+                },
+                {
+                    "fill": "0x6ab553"
+                },
+                {
+                    "fill": "0x6ab553"
+                },
+                {
+                    "fill": "0x6ab553"
+                },
+                {
+                    "fill": "0x6ab553"
+                },
+                {
+                    "fill": "0xcca0db"
+                },
+                {
+                    "fill": "0xcca0db"
+                },
+                {
+                    "fill": "0xa217ff"
+                },
+                {
+                    "fill": "0xa8986a"
+                },
+                {
+                    "fill": "0xa8986a"
+                },
+                {
+                    "text": "柳橙"
                 },
                 {
                     "fill": "0xa8986a"
@@ -292,7 +292,7 @@
                     "fill": "0xa8986a"
                 },
                 {
-                    "text": "Peach"
+                    "text": "桃子"
                 },
                 {
                     "fill": "0x6ab553"
@@ -331,7 +331,7 @@
                     "fill": "0x6ab553"
                 },
                 {
-                    "text": "Plum"
+                    "text": "李子"
                 },
                 {
                     "fill": "0x6ab553"
@@ -370,23 +370,23 @@
                     "fill": "0xa8986a"
                 }
             ],
-            "text": "The fruiting calendar for fruit trees.",
-            "title": "Fruit Trees",
+            "text": "果樹的結果月曆。",
+            "title": "果樹",
             "legend": [
                 {
-                    "text": "Dormant",
+                    "text": "休眠",
                     "color": "0xa8986a"
                 },
                 {
-                    "text": "Healthy",
+                    "text": "健康",
                     "color": "0x6ab553"
                 },
                 {
-                    "text": "Flowering",
+                    "text": "開花",
                     "color": "0xcca0db"
                 },
                 {
-                    "text": "Fruiting",
+                    "text": "結果",
                     "color": "0xa217ff"
                 }
             ],
@@ -409,43 +409,43 @@
                     "text": ""
                 },
                 {
-                    "text": "Jan"
+                    "text": "1月"
                 },
                 {
-                    "text": "Feb"
+                    "text": "2月"
                 },
                 {
-                    "text": "Mar"
+                    "text": "3月"
                 },
                 {
-                    "text": "Apr"
+                    "text": "4月"
                 },
                 {
-                    "text": "May"
+                    "text": "5月"
                 },
                 {
-                    "text": "Jun"
+                    "text": "6月"
                 },
                 {
-                    "text": "Jul"
+                    "text": "7月"
                 },
                 {
-                    "text": "Aug"
+                    "text": "8月"
                 },
                 {
-                    "text": "Sep"
+                    "text": "9月"
                 },
                 {
-                    "text": "Oct"
+                    "text": "10月"
                 },
                 {
-                    "text": "Nov"
+                    "text": "11月"
                 },
                 {
-                    "text": "Dec"
+                    "text": "12月"
                 },
                 {
-                    "text": "Banana"
+                    "text": "香蕉"
                 },
                 {
                     "fill": "0xa8986a"
@@ -455,36 +455,6 @@
                 },
                 {
                     "fill": "0x6ab553"
-                },
-                {
-                    "fill": "0x6ab553"
-                },
-                {
-                    "fill": "0x6ab553"
-                },
-                {
-                    "fill": "0x6ab553"
-                },
-                {
-                    "fill": "0xcca0db"
-                },
-                {
-                    "fill": "0xcca0db"
-                },
-                {
-                    "fill": "0xa217ff"
-                },
-                {
-                    "fill": "0xa8986a"
-                },
-                {
-                    "fill": "0xa8986a"
-                },
-                {
-                    "fill": "0xa8986a"
-                },
-                {
-                    "text": "Cocoa"
                 },
                 {
                     "fill": "0x6ab553"
@@ -514,6 +484,36 @@
                     "fill": "0xa8986a"
                 },
                 {
+                    "text": "可可"
+                },
+                {
+                    "fill": "0x6ab553"
+                },
+                {
+                    "fill": "0x6ab553"
+                },
+                {
+                    "fill": "0x6ab553"
+                },
+                {
+                    "fill": "0xcca0db"
+                },
+                {
+                    "fill": "0xcca0db"
+                },
+                {
+                    "fill": "0xa217ff"
+                },
+                {
+                    "fill": "0xa8986a"
+                },
+                {
+                    "fill": "0xa8986a"
+                },
+                {
+                    "fill": "0xa8986a"
+                },
+                {
                     "fill": "0xa8986a"
                 },
                 {
@@ -523,7 +523,7 @@
                     "fill": "0x6ab553"
                 },
                 {
-                    "text": "Fig"
+                    "text": "無花果"
                 },
                 {
                     "fill": "0x6ab553"
@@ -562,23 +562,23 @@
                     "fill": "0x6ab553"
                 }
             ],
-            "text": "The fruiting calendar for fruit trees.",
-            "title": "Fruit Trees",
+            "text": "果樹的結果月曆。",
+            "title": "果樹",
             "legend": [
                 {
-                    "text": "Dormant",
+                    "text": "休眠",
                     "color": "0xa8986a"
                 },
                 {
-                    "text": "Healthy",
+                    "text": "健康",
                     "color": "0x6ab553"
                 },
                 {
-                    "text": "Flowering",
+                    "text": "開花",
                     "color": "0xcca0db"
                 },
                 {
-                    "text": "Fruiting",
+                    "text": "結果",
                     "color": "0xa217ff"
                 }
             ],
@@ -597,7 +597,7 @@
         {
             "type": "patchouli:text",
             "anchor": "cherry",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 5 - 25 °C$(br)$(bold)$(l:the_world/climate#calendar)Growth Days$(): 8$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 12 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 100 - 350mm$(br2)Cherry trees grow in the months of January through March, start flowering in April and May, and bear fruit in June.",
+            "text": "$(bold)$(l:the_world/climate#temperature)溫度$()：5 — 25 °C$(br)$(bold)$(l:the_world/climate#calendar)生長天數$()：8$(br)$(bold)$(l:agriculture/growing_crops#hydration)含水量$()：12 — 100%$(br)$(bold)$(l:the_world/climate#rainfall)降雨量$()：100 — 350mm$(br2)櫻桃樹在一月到三月生長，四月和五月開花，六月結果。",
             "title": "櫻桃樹"
         },
         {
@@ -821,7 +821,7 @@
         {
             "type": "patchouli:text",
             "anchor": "green_apple",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 1 - 25 °C$(br)$(bold)$(l:the_world/climate#calendar)Growth Days$(): 10$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 13 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 110 - 280mm$(br2)Green apple trees grow from March to July, start flowering in August and September, and bear fruit in October.",
+            "text": "$(bold)$(l:the_world/climate#temperature)溫度$()：1 — 25 °C$(br)$(bold)$(l:the_world/climate#calendar)生長天數$()：10$(br)$(bold)$(l:agriculture/growing_crops#hydration)含水量$()：13 — 100%$(br)$(bold)$(l:the_world/climate#rainfall)降雨量$()：110 — 280mm$(br2)青蘋果樹在三月到七月生長，八月和九月開花，十月結果。",
             "title": "青蘋果樹"
         },
         {
@@ -1045,7 +1045,7 @@
         {
             "type": "patchouli:text",
             "anchor": "lemon",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 10 - 30 °C$(br)$(bold)$(l:the_world/climate#calendar)Growth Days$(): 8$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 21 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 180 - 470mm$(br2)Lemon trees grow from February to May, start flowering in June and July, and bear fruit in August.",
+            "text": "$(bold)$(l:the_world/climate#temperature)溫度$()：10 — 30 °C$(br)$(bold)$(l:the_world/climate#calendar)生長天數$()：8$(br)$(bold)$(l:agriculture/growing_crops#hydration)含水量$()：21 — 100%$(br)$(bold)$(l:the_world/climate#rainfall)降雨量$()：180 — 470mm$(br2)檸檬樹在二月到五月生長，六月和七月開花，八月結果。",
             "title": "檸檬樹"
         },
         {
@@ -1269,7 +1269,7 @@
         {
             "type": "patchouli:text",
             "anchor": "olive",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 5 - 30 °C$(br)$(bold)$(l:the_world/climate#calendar)Growth Days$(): 12$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 18 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 150 - 500mm$(br2)Olive trees grow from March to July, start flowering in August and September, and bear fruit in October.$(br2)Olives can be used to produce $(thing)Olive Oil$(), which can be used as a fuel for lamps.",
+            "text": "$(bold)$(l:the_world/climate#temperature)溫度$()：5 — 30 °C$(br)$(bold)$(l:the_world/climate#calendar)生長天數$()：12$(br)$(bold)$(l:agriculture/growing_crops#hydration)含水量$()：18 — 100%$(br)$(bold)$(l:the_world/climate#rainfall)降雨量$()：150 — 500mm$(br2)橄欖樹在三月到七月生長，八月和九月開花，十月結果。$(br2)橄欖可以用來製作$(thing)橄欖油$()，可以當作燈的燃料。",
             "title": "橄欖樹"
         },
         {
@@ -1493,12 +1493,12 @@
         {
             "type": "patchouli:text",
             "anchor": "orange",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 15 - 36 °C$(br)$(bold)$(l:the_world/climate#calendar)Growth Days$(): 7$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 30 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 250 - 500mm$(br2)Orange trees grow from March to June, start flowering in July and August, and bear fruit in September.",
-            "title": "橙子樹"
+            "text": "$(bold)$(l:the_world/climate#temperature)溫度$()：15 — 36 °C$(br)$(bold)$(l:the_world/climate#calendar)生長天數$()：7$(br)$(bold)$(l:agriculture/growing_crops#hydration)含水量$()：30 — 100%$(br)$(bold)$(l:the_world/climate#rainfall)降雨量$()：250 — 500mm$(br2)柳橙樹在三月到六月生長，七月和八月開花，九月結果。",
+            "title": "柳橙樹"
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "一棵橙子樹。",
+            "text": "一棵柳橙樹。",
             "multiblocks": [
                 {
                     "pattern": [
@@ -1717,7 +1717,7 @@
         {
             "type": "patchouli:text",
             "anchor": "peach",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 4 - 27 °C$(br)$(bold)$(l:the_world/climate#calendar)Growth Days$(): 11$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 7 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 60 - 230mm$(br2)Peach trees grow from December to March, start flowering in April and May, and bear fruit in June.",
+            "text": "$(bold)$(l:the_world/climate#temperature)溫度$()：4 — 27 °C$(br)$(bold)$(l:the_world/climate#calendar)生長天數$()：11$(br)$(bold)$(l:agriculture/growing_crops#hydration)含水量$()：7 — 100%$(br)$(bold)$(l:the_world/climate#rainfall)降雨量$()：60 — 230mm$(br2)桃樹在十二月到三月生長，四月和五月開花，六月結果。",
             "title": "桃樹"
         },
         {
@@ -1941,7 +1941,7 @@
         {
             "type": "patchouli:text",
             "anchor": "plum",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 15 - 31 °C$(br)$(bold)$(l:the_world/climate#calendar)Growth Days$(): 8$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 30 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 250 - 400mm$(br2)Plum trees grow from January to April, start flowering in May and June, and bear fruit in July.",
+            "text": "$(bold)$(l:the_world/climate#temperature)溫度$()：15 — 31 °C$(br)$(bold)$(l:the_world/climate#calendar)生長天數$()：8$(br)$(bold)$(l:agriculture/growing_crops#hydration)含水量$()：30 — 100%$(br)$(bold)$(l:the_world/climate#rainfall)降雨量$()：250 — 400mm$(br2)李樹在一月到四月生長，五月和六月開花，七月結果。",
             "title": "李子樹"
         },
         {
@@ -2165,7 +2165,7 @@
         {
             "type": "patchouli:text",
             "anchor": "red_apple",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 1 - 25 °C$(br)$(bold)$(l:the_world/climate#calendar)Growth Days$(): 10$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 12 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 100 - 280mm$(br2)Red Apple trees grow from March to July, start flowering in August and September, and bear fruit in October.",
+            "text": "$(bold)$(l:the_world/climate#temperature)溫度$()：1 — 25 °C$(br)$(bold)$(l:the_world/climate#calendar)生長天數$()：10$(br)$(bold)$(l:agriculture/growing_crops#hydration)含水量$()：12 — 100%$(br)$(bold)$(l:the_world/climate#rainfall)降雨量$()：100 — 280mm$(br2)紅蘋果樹在三月到七月生長，八月和九月開花，十月結果。",
             "title": "紅蘋果樹"
         },
         {
@@ -2389,12 +2389,12 @@
         {
             "type": "patchouli:text",
             "anchor": "cocoa",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 20 - 35 °C$(br)$(bold)$(l:the_world/climate#calendar)Growth Days$(): 8$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 26 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 220 - 400mm$(br2)Cocoa trees are used to make $(l:cooking/chocolate_confections)Chocolate$().$(br2)They grow from December to March, start flowering in April and May, and bear fruit in June.",
+            "text": "$(bold)$(l:the_world/climate#temperature)溫度$()：20 — 35 °C$(br)$(bold)$(l:the_world/climate#calendar)生長天數$()：8$(br)$(bold)$(l:agriculture/growing_crops#hydration)含水量$()：26 — 100%$(br)$(bold)$(l:the_world/climate#rainfall)降雨量$()：220 — 400mm$(br2)可可樹可以用來製作$(l:cooking/chocolate_confections)巧克力$()。$(br2)可可樹在十二月到三月生長，四月和五月開花，六月結果。",
             "title": "可可樹"
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "An example cocoa tree.",
+            "text": "可可樹範例。",
             "multiblocks": [
                 {
                     "pattern": [
@@ -2613,12 +2613,12 @@
         {
             "type": "patchouli:text",
             "anchor": "fig",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 20 - 35 °C$(br)$(bold)$(l:the_world/climate#calendar)Growth Days$(): 8$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 15 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 125 - 215mm$(br2)They grow from November to February, start flowering in March and April, and bear fruit in May.",
+            "text": "$(bold)$(l:the_world/climate#temperature)溫度$()：20 — 35 °C$(br)$(bold)$(l:the_world/climate#calendar)生長天數$()：8$(br)$(bold)$(l:agriculture/growing_crops#hydration)含水量$()：15 — 100%$(br)$(bold)$(l:the_world/climate#rainfall)降雨量$()：125 — 215mm$(br2)無花果樹在十一月到二月生長，三月和四月開花，五月結果。",
             "title": "無花果樹"
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "An example fig tree.",
+            "text": "無花果樹範例。",
             "multiblocks": [
                 {
                     "pattern": [
@@ -2837,7 +2837,7 @@
         {
             "type": "patchouli:text",
             "anchor": "banana",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 17 - 35 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 33 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 280 - 500mm$(br2)Bananas are a special kind of fruit tree. They grow only vertically, lack leaves, and only fruit at the topmost block. Saplings are dropped from the flowering part of the plant. Once a banana plant is harvested, it dies, and will not produce any more fruit. It must be replanted in the spring.",
+            "text": "$(bold)$(l:the_world/climate#temperature)溫度$()：17 — 35 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)含水量$()：33 — 100%$(br)$(bold)$(l:the_world/climate#rainfall)降雨量$()：280 — 500mm$(br2)香蕉是一種特殊的果樹。它只會垂直生長，沒有樹葉，而且只在最頂端的方塊結果。樹苗會從植株的開花部位掉落。香蕉植株採收後就會死亡，不會再結果，必須在春天重新種植。",
             "title": "香蕉樹"
         },
         {
@@ -2945,12 +2945,12 @@
         {
             "type": "patchouli:text",
             "anchor": "palm_fruit_trees",
-            "text": "$(thing)Palm Fruit Trees$() are another variety of fruit-bearing trees that can typically be found along coasts near sea water.$(br2)Palm fruit trees will develop fruit clusters when within their $(l:the_world/climate#climate)Climate Range$() and during their fruiting season. Clusters grow attached to the \"head/crown\" of the tree and advance in age once per day until mature. Mature fruit clusters can be harvested by throwing projectiles (except snowballs) at them, $(item)$(k:key.use)$() them, or using $(item)Harvest Baskets$() on them.",
-            "title": "Palm Fruit Trees"
+            "text": "$(thing)棕櫚果樹$()是另一種結果樹木，通常生長在靠近海水的海岸邊。$(br2)棕櫚果樹在符合$(l:the_world/climate#climate)氣候範圍$()且處於結果季節時，會長出果串。果串附著在樹木的「樹冠」上，每天成長一個階段，直到成熟。成熟的果串可以用投擲物(雪球除外)擊落、對它按$(item)$(k:key.use)$()，或對它使用$(item)採收籃$()來採收。",
+            "title": "棕櫚果樹"
         },
         {
             "type": "patchouli:text",
-            "text": "To transplant palm fruit trees you can harvest their crown block with an axe to yield 1-2 saplings. Saplings can be planted on dirt or sand and will grow during their season and when $(l:agriculture/growing_crops#hydration)Hydration$() and $(l:the_world/climate#temperature)Average Temperature$() are valid. Saplings will grow in multiple stages, taking around 5 days per stage. Their final height is determined by the tree type.$(br)Palm fruit saplings can also be planted in $(thing)Hanging Planters$()."
+            "text": "要移植棕櫚果樹，可以用斧頭採下樹冠方塊，獲得 1 — 2 株樹苗。樹苗可以種在泥土或沙子上，在生長季節且$(l:agriculture/growing_crops#hydration)含水量$()和$(l:the_world/climate#temperature)平均溫度$()符合條件時就會生長。樹苗會分成多個階段生長，每個階段約需 5 天，最終高度取決於樹種。$(br)棕櫚果樹苗也可以種在$(thing)懸掛種植盆$()中。"
         },
         {
             "type": "tfg:table",
@@ -2959,64 +2959,49 @@
                     "text": ""
                 },
                 {
-                    "text": "Jan"
+                    "text": "1月"
                 },
                 {
-                    "text": "Feb"
+                    "text": "2月"
                 },
                 {
-                    "text": "Mar"
+                    "text": "3月"
                 },
                 {
-                    "text": "Apr"
+                    "text": "4月"
                 },
                 {
-                    "text": "May"
+                    "text": "5月"
                 },
                 {
-                    "text": "Jun"
+                    "text": "6月"
                 },
                 {
-                    "text": "Jul"
+                    "text": "7月"
                 },
                 {
-                    "text": "Aug"
+                    "text": "8月"
                 },
                 {
-                    "text": "Sep"
+                    "text": "9月"
                 },
                 {
-                    "text": "Oct"
+                    "text": "10月"
                 },
                 {
-                    "text": "Nov"
+                    "text": "11月"
                 },
                 {
-                    "text": "Dec"
+                    "text": "12月"
                 },
                 {
-                    "text": "Coconut"
-                },
-                {
-                    "fill": "0xa8986a"
+                    "text": "椰子"
                 },
                 {
                     "fill": "0xa8986a"
                 },
                 {
                     "fill": "0xa8986a"
-                },
-                {
-                    "fill": "0xa8986a"
-                },
-                {
-                    "fill": "0xa217ff"
-                },
-                {
-                    "fill": "0xa217ff"
-                },
-                {
-                    "fill": "0xa217ff"
                 },
                 {
                     "fill": "0xa8986a"
@@ -3034,7 +3019,22 @@
                     "fill": "0xa217ff"
                 },
                 {
-                    "text": "Date"
+                    "fill": "0xa8986a"
+                },
+                {
+                    "fill": "0xa8986a"
+                },
+                {
+                    "fill": "0xa217ff"
+                },
+                {
+                    "fill": "0xa217ff"
+                },
+                {
+                    "fill": "0xa217ff"
+                },
+                {
+                    "text": "椰棗"
                 },
                 {
                     "fill": "0xa8986a"
@@ -3073,15 +3073,15 @@
                     "fill": "0xa217ff"
                 }
             ],
-            "text": "The fruiting calendar for palm fruit trees.",
-            "title": "Palm Fruit Trees",
+            "text": "棕櫚果樹的結果月曆。",
+            "title": "棕櫚果樹",
             "legend": [
                 {
-                    "text": "Dormant",
+                    "text": "休眠",
                     "color": "0xa8986a"
                 },
                 {
-                    "text": "Fruiting",
+                    "text": "結果",
                     "color": "0xa217ff"
                 }
             ],
@@ -3100,12 +3100,12 @@
         {
             "type": "patchouli:text",
             "anchor": "coconut",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 15 - 45 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 35 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 175 - 500mm$(br2)Coconut trees are a special kind of palm fruit tree. Coconut clusters grow in 7 stages. They can be harvested while green for young coconuts which provide coconut milk. Or they can be harvested when mature for coconut flesh. Be careful when harvesting coconut trees as they will deliver a strong blow if they fall on you.",
-            "title": "Coconut Tree"
+            "text": "$(bold)$(l:the_world/climate#temperature)溫度$()：15 — 45 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)含水量$()：35 — 100%$(br)$(bold)$(l:the_world/climate#rainfall)降雨量$()：175 — 500mm$(br2)椰子樹是一種特殊的棕櫚果樹。椰子果串會經過 7 個階段生長。在綠色時採收可以得到嫩椰子，能提供椰奶；成熟時採收則可以得到椰肉。採收椰子樹時要小心，椰子掉到你身上會造成重擊。",
+            "title": "椰子樹"
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "An example coconut tree.",
+            "text": "椰子樹範例。",
             "multiblocks": [
                 {
                     "pattern": [
@@ -4100,12 +4100,12 @@
         {
             "type": "patchouli:text",
             "anchor": "date",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 20 - 50 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 40 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 200 - 500mm$(br2)Date trees can be harvested for fruit when their clusters fully mature. Date clusters grow in 4 stages and provide 4-8 item drops when harvested.",
-            "title": "Date Tree"
+            "text": "$(bold)$(l:the_world/climate#temperature)溫度$()：20 — 50 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)含水量$()：40 — 100%$(br)$(bold)$(l:the_world/climate#rainfall)降雨量$()：200 — 500mm$(br2)椰棗樹的果串完全成熟後即可採收果實。椰棗果串會經過 4 個階段生長，採收時會掉落 4 — 8 個物品。",
+            "title": "椰棗樹"
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "An example date tree.",
+            "text": "椰棗樹範例。",
             "multiblocks": [
                 {
                     "pattern": [
@@ -4728,7 +4728,7 @@
         {
             "type": "patchouli:text",
             "anchor": "tall_bushes",
-            "text": "某些水果會長在$(thing)大型灌木$()中。這種灌木可以向各個方向生長並擴散。它們既可以向上生長，也可以向四周生長出新的$(thing)藤條$()。藤條在一段時間之後也會變成新的灌木。灌木直到完全成熟之前都會試圖擴張。使用鋒利工具來破壞這些灌木有機率掉落一株灌木（破壞完全成熟的灌木則必定掉落）。",
+            "text": "某些水果會長在$(thing)大型灌木$()中。這種灌木可以向各個方向生長並擴散。它們既可以向上生長，也可以向四周生長出新的$(thing)藤條$()。藤條在一段時間之後也會變成新的灌木。灌木直到完全成熟之前都會試圖擴張。使用鋒利工具來破壞這些灌木有機率掉落一株灌木(破壞完全成熟的灌木則必定掉落)。",
             "title": "大型灌木"
         },
         {
@@ -4736,7 +4736,7 @@
             "images": [
                 "tfc:textures/gui/book/tutorial/berry_bush.png"
             ],
-            "text": "一株野生高草。",
+            "text": "一株野生大型灌木。",
             "border": true
         },
         {
@@ -4745,7 +4745,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "Any mature bush block can grow berries, which are harvestable with $(item)$(k:key.use)$() or by using $(item)Harvest Baskets$().$(br2)Fruit bushes may also be placed in greenhouse $(item)Trellis Planters$() to grow year-round in any climate."
+            "text": "任何成熟的灌叢方塊都能長出莓果，可以按$(item)$(k:key.use)$()或使用$(item)採收籃$()採收。$(br2)果叢也可以放進溫室的$(item)棚架種植盆$()中，在任何氣候下全年生長。"
         },
         {
             "type": "tfg:table",
@@ -4755,124 +4755,43 @@
                     "text": ""
                 },
                 {
-                    "text": "Jan"
+                    "text": "1月"
                 },
                 {
-                    "text": "Feb"
+                    "text": "2月"
                 },
                 {
-                    "text": "Mar"
+                    "text": "3月"
                 },
                 {
-                    "text": "Apr"
+                    "text": "4月"
                 },
                 {
-                    "text": "May"
+                    "text": "5月"
                 },
                 {
-                    "text": "Jun"
+                    "text": "6月"
                 },
                 {
-                    "text": "Jul"
+                    "text": "7月"
                 },
                 {
-                    "text": "Aug"
+                    "text": "8月"
                 },
                 {
-                    "text": "Sep"
+                    "text": "9月"
                 },
                 {
-                    "text": "Oct"
+                    "text": "10月"
                 },
                 {
-                    "text": "Nov"
+                    "text": "11月"
                 },
                 {
-                    "text": "Dec"
+                    "text": "12月"
                 },
                 {
-                    "text": "Snowberry"
-                },
-                {
-                    "fill": "0xa8986a"
-                },
-                {
-                    "fill": "0xa8986a"
-                },
-                {
-                    "fill": "0x6ab553"
-                },
-                {
-                    "fill": "0x6ab553"
-                },
-                {
-                    "fill": "0x6ab553"
-                },
-                {
-                    "fill": "0x6ab553"
-                },
-                {
-                    "fill": "0xcca0db"
-                },
-                {
-                    "fill": "0xcca0db"
-                },
-                {
-                    "fill": "0xa217ff"
-                },
-                {
-                    "fill": "0xa8986a"
-                },
-                {
-                    "fill": "0xa8986a"
-                },
-                {
-                    "fill": "0xa8986a"
-                },
-                {
-                    "text": "Bunchberry"
-                },
-                {
-                    "fill": "0xa8986a"
-                },
-                {
-                    "fill": "0xa8986a"
-                },
-                {
-                    "fill": "0xa8986a"
-                },
-                {
-                    "fill": "0xa8986a"
-                },
-                {
-                    "fill": "0x6ab553"
-                },
-                {
-                    "fill": "0x6ab553"
-                },
-                {
-                    "fill": "0x6ab553"
-                },
-                {
-                    "fill": "0xcca0db"
-                },
-                {
-                    "fill": "0xcca0db"
-                },
-                {
-                    "fill": "0xa217ff"
-                },
-                {
-                    "fill": "0xa8986a"
-                },
-                {
-                    "fill": "0xa8986a"
-                },
-                {
-                    "text": "Gooseberry"
-                },
-                {
-                    "fill": "0xa8986a"
+                    "text": "雪果"
                 },
                 {
                     "fill": "0xa8986a"
@@ -4908,7 +4827,88 @@
                     "fill": "0xa8986a"
                 },
                 {
-                    "text": "Cloudberry"
+                    "fill": "0xa8986a"
+                },
+                {
+                    "text": "草茱萸"
+                },
+                {
+                    "fill": "0xa8986a"
+                },
+                {
+                    "fill": "0xa8986a"
+                },
+                {
+                    "fill": "0xa8986a"
+                },
+                {
+                    "fill": "0xa8986a"
+                },
+                {
+                    "fill": "0x6ab553"
+                },
+                {
+                    "fill": "0x6ab553"
+                },
+                {
+                    "fill": "0x6ab553"
+                },
+                {
+                    "fill": "0xcca0db"
+                },
+                {
+                    "fill": "0xcca0db"
+                },
+                {
+                    "fill": "0xa217ff"
+                },
+                {
+                    "fill": "0xa8986a"
+                },
+                {
+                    "fill": "0xa8986a"
+                },
+                {
+                    "text": "醋栗"
+                },
+                {
+                    "fill": "0xa8986a"
+                },
+                {
+                    "fill": "0xa8986a"
+                },
+                {
+                    "fill": "0xa8986a"
+                },
+                {
+                    "fill": "0x6ab553"
+                },
+                {
+                    "fill": "0x6ab553"
+                },
+                {
+                    "fill": "0x6ab553"
+                },
+                {
+                    "fill": "0x6ab553"
+                },
+                {
+                    "fill": "0xcca0db"
+                },
+                {
+                    "fill": "0xcca0db"
+                },
+                {
+                    "fill": "0xa217ff"
+                },
+                {
+                    "fill": "0xa8986a"
+                },
+                {
+                    "fill": "0xa8986a"
+                },
+                {
+                    "text": "雲莓"
                 },
                 {
                     "fill": "0xa8986a"
@@ -4947,7 +4947,7 @@
                     "fill": "0xa8986a"
                 },
                 {
-                    "text": "Strawberry"
+                    "text": "草莓"
                 },
                 {
                     "fill": "0xcca0db"
@@ -4986,7 +4986,7 @@
                     "fill": "0x6ab553"
                 },
                 {
-                    "text": "Wintergreen"
+                    "text": "冬青莓"
                 },
                 {
                     "fill": "0xa8986a"
@@ -5025,7 +5025,7 @@
                     "fill": "0xa8986a"
                 },
                 {
-                    "text": "Cranberry"
+                    "text": "蔓越莓"
                 },
                 {
                     "fill": "0xa8986a"
@@ -5064,23 +5064,23 @@
                     "fill": "0xa8986a"
                 }
             ],
-            "text": "灌木的果季。",
-            "title": "Berry Bushes",
+            "text": "漿果叢的結果月曆。",
+            "title": "漿果叢",
             "legend": [
                 {
-                    "text": "Dormant",
+                    "text": "休眠",
                     "color": "0xa8986a"
                 },
                 {
-                    "text": "Healthy",
+                    "text": "健康",
                     "color": "0x6ab553"
                 },
                 {
-                    "text": "Flowering",
+                    "text": "開花",
                     "color": "0xcca0db"
                 },
                 {
-                    "text": "Fruiting",
+                    "text": "結果",
                     "color": "0xa217ff"
                 }
             ],
@@ -5103,43 +5103,43 @@
                     "text": ""
                 },
                 {
-                    "text": "Jan"
+                    "text": "1月"
                 },
                 {
-                    "text": "Feb"
+                    "text": "2月"
                 },
                 {
-                    "text": "Mar"
+                    "text": "3月"
                 },
                 {
-                    "text": "Apr"
+                    "text": "4月"
                 },
                 {
-                    "text": "May"
+                    "text": "5月"
                 },
                 {
-                    "text": "Jun"
+                    "text": "6月"
                 },
                 {
-                    "text": "Jul"
+                    "text": "7月"
                 },
                 {
-                    "text": "Aug"
+                    "text": "8月"
                 },
                 {
-                    "text": "Sep"
+                    "text": "9月"
                 },
                 {
-                    "text": "Oct"
+                    "text": "10月"
                 },
                 {
-                    "text": "Nov"
+                    "text": "11月"
                 },
                 {
-                    "text": "Dec"
+                    "text": "12月"
                 },
                 {
-                    "text": "Nightshade"
+                    "text": "龍葵"
                 },
                 {
                     "fill": "0xa8986a"
@@ -5178,7 +5178,7 @@
                     "fill": "0xa8986a"
                 },
                 {
-                    "text": "Pineapple"
+                    "text": "鳳梨"
                 },
                 {
                     "fill": "0xa8986a"
@@ -5217,23 +5217,23 @@
                     "fill": "0xa8986a"
                 }
             ],
-            "text": "The fruiting calendar for berry bushes.",
-            "title": "Berry Bushes",
+            "text": "漿果叢的結果月曆。",
+            "title": "漿果叢",
             "legend": [
                 {
-                    "text": "Dormant",
+                    "text": "休眠",
                     "color": "0xa8986a"
                 },
                 {
-                    "text": "Healthy",
+                    "text": "健康",
                     "color": "0x6ab553"
                 },
                 {
-                    "text": "Flowering",
+                    "text": "開花",
                     "color": "0xcca0db"
                 },
                 {
-                    "text": "Fruiting",
+                    "text": "結果",
                     "color": "0xa217ff"
                 }
             ],
@@ -5252,8 +5252,8 @@
         {
             "type": "patchouli:text",
             "anchor": "blackberry",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 7 - 24 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 24 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 200 - 500mm$(br2)Blackberry bushes grow from February to May, start flowering in June and July, and bear fruit in August.$(br2)They can be found in areas with few trees.",
-            "title": "Blackberry Bush"
+            "text": "$(bold)$(l:the_world/climate#temperature)溫度$()：7 — 24 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)含水量$()：24 — 100%$(br)$(bold)$(l:the_world/climate#rainfall)降雨量$()：200 — 500mm$(br2)黑莓叢在二月到五月生長，六月和七月開花，八月結果。$(br2)可以在樹木稀少的地區找到。",
+            "title": "黑莓叢"
         },
         {
             "type": "tfg:multimultiblock",
@@ -5352,12 +5352,12 @@
         {
             "type": "patchouli:text",
             "anchor": "raspberry",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 5 - 25 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 24 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 200 - 500mm$(br2)Raspberry bushes grow from April to July, start flowering in August and September, and bear fruit in October.$(br2)They can be found in areas with few trees.",
-            "title": "Raspberry Bush"
+            "text": "$(bold)$(l:the_world/climate#temperature)溫度$()：5 — 25 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)含水量$()：24 — 100%$(br)$(bold)$(l:the_world/climate#rainfall)降雨量$()：200 — 500mm$(br2)覆盆子叢在四月到七月生長，八月和九月開花，十月結果。$(br2)可以在樹木稀少的地區找到。",
+            "title": "覆盆子叢"
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "一株樹莓灌木。",
+            "text": "一株覆盆子灌木。",
             "multiblocks": [
                 {
                     "pattern": [
@@ -5452,8 +5452,8 @@
         {
             "type": "patchouli:text",
             "anchor": "blueberry",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 7 - 29 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 12 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 100 - 400mm$(br2)Blueberry bushes grow from February to May, start flowering in June and July, and bear fruit in August.$(br2)They can be found in areas with few trees.",
-            "title": "Blueberry Bush"
+            "text": "$(bold)$(l:the_world/climate#temperature)溫度$()：7 — 29 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)含水量$()：12 — 100%$(br)$(bold)$(l:the_world/climate#rainfall)降雨量$()：100 — 400mm$(br2)藍莓叢在二月到五月生長，六月和七月開花，八月結果。$(br2)可以在樹木稀少的地區找到。",
+            "title": "藍莓叢"
         },
         {
             "type": "tfg:multimultiblock",
@@ -5552,8 +5552,8 @@
         {
             "type": "patchouli:text",
             "anchor": "elderberry",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 10 - 33 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 12 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 100 - 400mm$(br2)Elderberry bushes grow from February to May, start flowering in June and July, and bear fruit in August.$(br2)They can be found in areas with few trees.",
-            "title": "Elderberry Bush"
+            "text": "$(bold)$(l:the_world/climate#temperature)溫度$()：10 — 33 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)含水量$()：12 — 100%$(br)$(bold)$(l:the_world/climate#rainfall)降雨量$()：100 — 400mm$(br2)接骨木莓叢在二月到五月生長，六月和七月開花，八月結果。$(br2)可以在樹木稀少的地區找到。",
+            "title": "接骨木莓叢"
         },
         {
             "type": "tfg:multimultiblock",
@@ -5703,12 +5703,12 @@
         {
             "type": "patchouli:text",
             "anchor": "bunchberry",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 15 - 35 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 24 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 200 - 500mm(br2)Bunchberry bushes grow from May to July, start flowering in August and September, and bear fruit in October.$(br2)They can be found in forests.",
-            "title": "Bunchberry Bush"
+            "text": "$(bold)$(l:the_world/climate#temperature)溫度$()：15 — 35 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)含水量$()：24 — 100%$(br)$(bold)$(l:the_world/climate#rainfall)降雨量$()：200 — 500mm(br2)草茱萸叢在五月到七月生長，八月和九月開花，十月結果。$(br2)可以在森林中找到。",
+            "title": "草茱萸叢"
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "御膳橘灌木的每月生長階段。",
+            "text": "草茱萸灌木的每月生長階段。",
             "multiblocks": [
                 {
                     "pattern": [
@@ -5767,8 +5767,8 @@
         {
             "type": "patchouli:text",
             "anchor": "gooseberry",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 5 - 27 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 24 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 200 - 500mm$(br2)Gooseberry bushes grow from April to July, start flowering in August and September, and bear fruit in October.$(br2)They can be found in forests.",
-            "title": "Gooseberry Bush"
+            "text": "$(bold)$(l:the_world/climate#temperature)溫度$()：5 — 27 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)含水量$()：24 — 100%$(br)$(bold)$(l:the_world/climate#rainfall)降雨量$()：200 — 500mm$(br2)醋栗叢在四月到七月生長，八月和九月開花，十月結果。$(br2)可以在森林中找到。",
+            "title": "醋栗叢"
         },
         {
             "type": "tfg:multimultiblock",
@@ -5831,8 +5831,8 @@
         {
             "type": "patchouli:text",
             "anchor": "snowberry",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -7 - 18 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 24 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 200 - 500mm$(br2)Snowberry bushes grow from March to June, start flowering in July and August, and bear fruit in September.$(br2)They can be found in forests.",
-            "title": "Snowberry Bush"
+            "text": "$(bold)$(l:the_world/climate#temperature)溫度$()：-7 — 18 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)含水量$()：24 — 100%$(br)$(bold)$(l:the_world/climate#rainfall)降雨量$()：200 — 500mm$(br2)雪果叢在三月到六月生長，七月和八月開花，九月結果。$(br2)可以在森林中找到。",
+            "title": "雪果叢"
         },
         {
             "type": "tfg:multimultiblock",
@@ -5895,8 +5895,8 @@
         {
             "type": "patchouli:text",
             "anchor": "cloudberry",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -2 - 17 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 9 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 250 - 500mm$(br2)Cloudberry bushes grow from February to May, start flowering in June to August, and bear fruit in September.$(br2)They can be found in forests.",
-            "title": "Cloudberry Bush"
+            "text": "$(bold)$(l:the_world/climate#temperature)溫度$()：-2 — 17 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)含水量$()：9 — 100%$(br)$(bold)$(l:the_world/climate#rainfall)降雨量$()：250 — 500mm$(br2)雲莓叢在二月到五月生長，六月到八月開花，九月結果。$(br2)可以在森林中找到。",
+            "title": "雲莓叢"
         },
         {
             "type": "tfg:multimultiblock",
@@ -5959,8 +5959,8 @@
         {
             "type": "patchouli:text",
             "anchor": "strawberry",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 5 - 28 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 12 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 100 - 400mm$(br2)Strawberry bushes grow from October to December, start flowering in January and February, and bear fruit in March.$(br2)They can be found in forests.",
-            "title": "Strawberry Bush"
+            "text": "$(bold)$(l:the_world/climate#temperature)溫度$()：5 — 28 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)含水量$()：12 — 100%$(br)$(bold)$(l:the_world/climate#rainfall)降雨量$()：100 — 400mm$(br2)草莓叢在十月到十二月生長，一月和二月開花，三月結果。$(br2)可以在森林中找到。",
+            "title": "草莓叢"
         },
         {
             "type": "tfg:multimultiblock",
@@ -6023,8 +6023,8 @@
         {
             "type": "patchouli:text",
             "anchor": "wintergreen_berry",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -6 - 17 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 12 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 100 - 400mm$(br2)Wintergreen berry bushes grow from May to September, start flowering in October and November, and bear fruit in December.$(br2)They can be found in forests.",
-            "title": "Wintergreen Berry Bush"
+            "text": "$(bold)$(l:the_world/climate#temperature)溫度$()：-6 — 17 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)含水量$()：12 — 100%$(br)$(bold)$(l:the_world/climate#rainfall)降雨量$()：100 — 400mm$(br2)冬青莓叢在五月到九月生長，十月和十一月開花，十二月結果。$(br2)可以在森林中找到。",
+            "title": "冬青莓叢"
         },
         {
             "type": "tfg:multimultiblock",
@@ -6087,8 +6087,8 @@
         {
             "type": "patchouli:text",
             "anchor": "cranberry",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -5 - 17 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 30 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 250 - 500mm$(br2)Cranberry bushes grow from March to June, start flowering in July and August, and bear fruit in September.$(br2)They can be found in forests. Unlike most small bushes, cranberry bushes are grown underwater.",
-            "title": "Cranberry Bush"
+            "text": "$(bold)$(l:the_world/climate#temperature)溫度$()：-5 — 17 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)含水量$()：30 — 100%$(br)$(bold)$(l:the_world/climate#rainfall)降雨量$()：250 — 500mm$(br2)蔓越莓叢在三月到六月生長，七月和八月開花，九月結果。$(br2)可以在森林中找到。和大多數小型灌木不同，蔓越莓叢生長在水中。",
+            "title": "蔓越莓叢"
         },
         {
             "type": "tfg:multimultiblock",
@@ -6151,12 +6151,12 @@
         {
             "type": "patchouli:text",
             "anchor": "nightshade",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 7 - 24 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 24 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 200 - 400mm$(br2)Nightshade berry bushes grow from February to June, start flowering in July, and bear fruit in August.$(br2)They can be found in forests and are $(c)Poisonous$().",
-            "title": "Nightshade Berry Bush"
+            "text": "$(bold)$(l:the_world/climate#temperature)溫度$()：7 — 24 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)含水量$()：24 — 100%$(br)$(bold)$(l:the_world/climate#rainfall)降雨量$()：200 — 400mm$(br2)龍葵叢在二月到六月生長，七月開花，八月結果。$(br2)可以在森林中找到，而且$(c)有毒$()。",
+            "title": "龍葵叢"
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "The monthly stages of a nightshade bush.",
+            "text": "龍葵叢每個月的生長階段。",
             "multiblocks": [
                 {
                     "pattern": [
@@ -6215,12 +6215,12 @@
         {
             "type": "patchouli:text",
             "anchor": "pineapple",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 20 - 32 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 30 - 100%$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 250 - 500mm$(br2)Pineapple bushes grow from March to June, start flowering in July and August, and bear fruit in September.$(br2)They can be found in forests and are used to make $(l:agriculture/leather_making#pineapple_leather)Pineapple Leather$().",
-            "title": "Pineapple Bush"
+            "text": "$(bold)$(l:the_world/climate#temperature)溫度$()：20 — 32 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)含水量$()：30 — 100%$(br)$(bold)$(l:the_world/climate#rainfall)降雨量$()：250 — 500mm$(br2)鳳梨叢在三月到六月生長，七月和八月開花，九月結果。$(br2)可以在森林中找到，可用來製作$(l:agriculture/leather_making#pineapple_leather)鳳梨皮革$()。",
+            "title": "鳳梨叢"
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "The monthly stages of a pineapple bush.",
+            "text": "鳳梨叢每個月的生長階段。",
             "multiblocks": [
                 {
                     "pattern": [
@@ -6279,12 +6279,12 @@
         {
             "type": "patchouli:text",
             "anchor": "red_grapes",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 0 - 30 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 0 - 100 %$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 125 - 500mm$(br2)Red grapes spawn naturally, but once harvested from the wild they need to grow on $(item)Trellises$() to produce product.",
-            "title": "Red Grapes"
+            "text": "$(bold)$(l:the_world/climate#temperature)溫度$()：0 — 30 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)含水量$()：0 — 100 %$(br)$(bold)$(l:the_world/climate#rainfall)降雨量$()：125 — 500mm$(br2)紅葡萄會自然生成，但從野外採收後，必須種在$(item)棚架$()上才會結果。",
+            "title": "紅葡萄"
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "A red grape bush.",
+            "text": "紅葡萄藤。",
             "multiblocks": [
                 {
                     "pattern": [
@@ -6317,12 +6317,12 @@
         {
             "type": "patchouli:text",
             "anchor": "white_grapes",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 0 - 30 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 0 - 100 %$(br)$(bold)$(l:the_world/climate#rainfall)Rainfall$(): 125 - 500mm$(br2)White grapes spawn naturally, but once harvested from the wild they need to grow on $(item)Trellises$() to produce product.",
-            "title": "White Grapes"
+            "text": "$(bold)$(l:the_world/climate#temperature)溫度$()：0 — 30 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)含水量$()：0 — 100 %$(br)$(bold)$(l:the_world/climate#rainfall)降雨量$()：125 — 500mm$(br2)白葡萄會自然生成，但從野外採收後，必須種在$(item)棚架$()上才會結果。",
+            "title": "白葡萄"
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "A white grape bush.",
+            "text": "白葡萄藤。",
             "multiblocks": [
                 {
                     "pattern": [
@@ -6354,7 +6354,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "延伸閱讀",
             "anchor": "relations",
             "entries": [
                 "tfg:the_world/wild_crops",

@@ -1,5 +1,5 @@
 {
-	"name": "Setting up a Moon Base",
+	"name": "建立月球基地",
 	"category": "tfg:the_moon",
 	"icon": "ad_astra:moon_globe",
 	"read_by_default": true,
@@ -9,83 +9,83 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "index",
-			"text": "$(li)$(bold)$(l:the_moon/the_moon#flags)Flags$()$(li)$(bold)$(l:the_moon/the_moon#gases)Breathable Gases$()$(li2)$(l:the_moon/the_moon#helium_3)Helium-3$()$(li)$(bold)$(l:the_moon/moon_crops#nitrogen)Chorus Fruit$()$(li)$(bold)$(l:the_moon/the_moon#rover)Rover$()$(li)$(bold)$(l:the_moon/the_moon#solar_panels)Power Generation$()$(li2)$(l:the_moon/the_moon#solar_panels)Solar Panels$()$(li2)$(l:the_moon/the_moon#lsa)Large Solar Array$()$(li)$(bold)$(l:the_moon/the_moon#distributor)Oxygen Distributor$()$(li)$(bold)$(l:the_moon/the_moon#higgs)Higgs Emitter$()$(li)$(bold)$(l:the_moon/the_moon#painting)Space Paintings$()$(li)$(bold)$(l:the_moon/the_moon#death)Death & Respawning$()"
+			"text": "$(li)$(bold)$(l:the_moon/the_moon#flags)旗幟$()$(li)$(bold)$(l:the_moon/the_moon#gases)可呼吸氣體$()$(li2)$(l:the_moon/the_moon#helium_3)氦-3$()$(li)$(bold)$(l:the_moon/moon_crops#nitrogen)歌萊果$()$(li)$(bold)$(l:the_moon/the_moon#rover)探測車$()$(li)$(bold)$(l:the_moon/the_moon#solar_panels)發電$()$(li2)$(l:the_moon/the_moon#solar_panels)太陽能板$()$(li2)$(l:the_moon/the_moon#lsa)大型太陽能陣列$()$(li)$(bold)$(l:the_moon/the_moon#distributor)可呼吸空氣分配器$()$(li)$(bold)$(l:the_moon/the_moon#higgs)希格斯發射器$()$(li)$(bold)$(l:the_moon/the_moon#painting)太空畫$()$(li)$(bold)$(l:the_moon/the_moon#death)死亡與重生$()"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Congrats, you've successfully landed on the $(thing)Moon$()! Here, you'll find $(item)Certus Quartz$() veins and the meteors that allow you to begin unlocking $(thing)AE2$().$(br2)But that's not all — some veins here have much higher density than those on Earth. For instance, you can easily find $(item)Ilmenite$(), $(item)Bauxite$(), $(item)Aluminium$(), and $(item)Chromite$() veins on the Moon."
+			"text": "恭喜，你成功登陸$(thing)月球$()了！在這裡，你會找到$(item)賽特斯石英$()礦脈，以及讓你開始解鎖 $(thing)AE2$() 的隕石。$(br2)不只如此，這裡有些礦脈的密度比地球上高得多。例如，你可以在月球上輕鬆找到$(item)鈦鐵礦$()、$(item)鋁土礦$()、$(item)鋁$()和$(item)鉻鐵礦$()礦脈。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Establishing a small base here will be crucial to keep progressing.$(br2)Your biggest challenge will be transporting resources, as there are no easy cross-dimensional tools like the $(item)Ender Chest$() or $(thing)AE2 Quantum Link$() just yet.$(br2)We hope you're well prepared, unless you want to craft a second rocket and space suit just to go collect your corpse!"
+			"text": "在這裡建立一座小基地，對持續推進進度至關重要。$(br2)你最大的挑戰是運送資源，因為現在還沒有$(item)終界箱$()或 $(thing)AE2 量子連結$()這類方便的跨維度工具。$(br2)希望你已經做好萬全準備，除非你想為了回收自己的屍體，再做一架火箭和一套太空服！"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "tag:ad_astra:flags",
-			"title": "Flag Planter",
+			"title": "插旗",
 			"anchor": "flags",
-			"text": "Introduce yourself to the Moon by planting a flag with whatever image you like on it!"
+			"text": "插上一面印著任何你喜歡的圖案的旗幟，向月球介紹你自己吧！"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "tfg:compressed_nitrox_bucket,tfg:compressed_heliox_bucket,tfg:compressed_heliox_3_bucket,tfg:compressed_trimix_bucket,tfg:compressed_trimix_3_bucket",
 			"anchor": "gases",
-			"title": "Breathable Gases",
-			"text": "Find yourself a little short of breath? You'll need something to breathe up in space, so you'll want to look at producing any of these compressed gases, based off real-world ones used for deep sea diving!"
+			"title": "可呼吸氣體",
+			"text": "覺得有點喘不過氣嗎？在太空中你需要能呼吸的東西，所以你會想生產以下任一種壓縮氣體。它們都是以現實中深海潛水所用的氣體為基礎！"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "You can fill your space suit with them the same way you'd fill up a bucket, or if you bring along a $(item)Gas Tank$() you'll be able to \"drink\" from it to replenish your suit without taking it off.$(br2)$(thing)Nitrox$() is probably the easiest to produce on Earth, while you can set up $(thing)Heliox-3$() on the Moon.$(br2)A full space suit (2500mB) will last about $(item)45 minutes$()."
+			"text": "你可以像裝滿水桶一樣用它們填充太空服；如果你帶著$(item)氣罐$()，還能直接「喝」它來補充太空服，不必脫下來。$(br2)$(thing)氮氧混合氣$()大概是地球上最容易生產的，而在月球上可以生產$(thing)氦氧混合氣-3$()。$(br2)一套充滿的太空服(2500mB)大約可以撐$(item)45 分鐘$()。"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:helium_3_bucket",
 			"anchor": "helium_3",
-			"title": "Helium-3",
-			"text": "The Moon is full of $(thing)Helium-3$(), another important resource, but it's stuck inside the stone! There's two ways to get your hands on some:$(li)$(l:the_moon/the_moon#asurine)Asurine Centrifuging$()$(li)$(l:the_moon/the_moon#fluid_rig)Fluid Drilling Rig$()"
+			"title": "氦-3",
+			"text": "月球上充滿了另一種重要資源$(thing)氦-3$()，但它被困在石頭裡！有兩種方式可以取得：$(li)$(l:the_moon/the_moon#asurine)離心皓藍石$()$(li)$(l:the_moon/the_moon#fluid_rig)流體鑽機$()"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(thing)Helium-3$() is used for several things, of which the most important is making more air to breathe via $(l:the_moon/the_moon#gases)Heliox-3$()! You can also use it as \"fertilizer\" for $(l:the_moon/moon_crops)Chorus Fruit$() in the $(l:agriculture/greenhouse)Electric Greenhouse$(), and eventually as another fuel for Fusion Power.$(br2)You will eventually want to set up an automatic process for $(item)Trimix-3$() to fully power a $(l:the_moon/the_moon#lsa)Large Solar Array$(), by combining $(thing)Helium-3$(), $(6)$(t:Easiest to obtain via cobblestone into flint into silicon dioxide)Oxygen$(), and $(l:the_moon/moon_crops#nitrogen)Nitrogen$()."
+			"text": "$(thing)氦-3$()有多種用途，其中最重要的是透過$(l:the_moon/the_moon#gases)氦氧混合氣-3$()製造更多可呼吸的空氣！你也可以在$(l:agriculture/greenhouse)電力溫室$()中把它當作$(l:the_moon/moon_crops)歌萊果$()的「肥料」，之後還能作為核融合發電的另一種燃料。$(br2)最終，你會想把$(thing)氦-3$()、$(6)$(t:最容易的取得方式是把圓石做成燧石，再做成二氧化矽)氧$()和$(l:the_moon/moon_crops#nitrogen)氮$()結合，建立$(item)氦-3 三混氣$()的自動化生產，為$(l:the_moon/the_moon#lsa)大型太陽能陣列$()提供完整動力。"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "create:asurine",
 			"anchor": "asurine",
-			"text": "If you haven't set up any stone-related automation before, here's a quick introduction: A Rock Crusher can produce infinite raw stone, which a Macerator crushes into dust for a Centrifuge to process. Here on the Moon, $(item)Asurine$() can thus be processed into an infinite source of $(thing)Helium-3$()!"
+			"text": "如果你之前沒有做過任何與石頭相關的自動化，這裡簡單介紹一下：碎岩機可以無限產出原石，研磨機會把它磨成粉，再交給離心機處理。在月球上，$(item)皓藍石$()就能藉此加工成無限的$(thing)氦-3$()來源！"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:mv_fluid_drilling_rig",
-			"title": "Fluid Drilling Rig",
+			"title": "流體鑽機",
 			"anchor": "fluid_rig",
-			"text": "Using a $(item)Fluid Drilling Rig$() is simpler, but doesn't come with any useful byproducts.$(br2)Regular $(thing)Helium$() and $(thing)Argon$() fluid deposits are also available on the moon."
+			"text": "使用$(item)流體鑽機$()比較簡單，但不會產出任何有用的副產品。$(br2)月球上也有一般的$(thing)氦$()和$(thing)氬$()流體礦床。"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "ad_astra:tier_1_rover",
 			"anchor": "rover",
-			"title": "Rover",
-			"text": "The $(item)Rover$() is a vehicle that can hold up to two passengers, runs on combustible fuels (Diesels, Gasolines, and Rocket Fuel), and even has an inventory and radio that can play real-world radio stations!"
+			"title": "探測車",
+			"text": "$(item)探測車$()是一種最多可載兩名乘客的載具，使用可燃燃料(柴油、汽油和火箭燃料)，甚至還有物品欄，以及能播放現實世界電台的收音機！"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "ad_astra:solar_panel",
-			"title": "Solar Panels",
+			"title": "太陽能板",
 			"anchor": "solar_panels",
 			"scale": 0.3,
-			"text": "There are very few energy sources available on the Moon, but these $(item)Solar Panels$() have a lovely view of the Sun from up here!$(br)On the moon, each Solar Panel provides the equivalent of $(thing)32 EU/t$() during the day with no fuel or upkeep needed. You will need to use an $(item)FE to EU converter$(), as there are no FE cables."
+			"text": "月球上可用的能源非常少，但從這裡看出去，這些$(item)太陽能板$()可以享受絕佳的陽光！$(br)在月球上，每片太陽能板白天可提供相當於 $(thing)32 EU/t$() 的電力，不需要燃料或維護。由於沒有 FE 電纜，你需要使用 $(item)FE 轉 EU 轉換器$()。"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:large_solar_panel,gtceu:large_solar_panel_tier2,gtceu:large_solar_panel_tier3",
-			"title": "Large Solar Array",
+			"title": "大型太陽能陣列",
 			"anchor": "lsa",
-			"text": "Small solar panels not cutting it? The $(thing)Large Solar Array$() is your primary solution for power generation on the moon, as other Earth-based power generation methods do not work up here.$(br2)The $(item)LSA$() comes in three tiers, so you can upgrade it as you progress."
+			"text": "小型太陽能板不夠用嗎？$(thing)大型太陽能陣列$()是你在月球上主要的發電方案，因為其他地球上的發電方式在這裡都無法運作。$(br2)$(item)大型太陽能陣列$()分為三個等級，可以隨著進度升級。"
 		},
 		{
 			"type": "patchouli:multiblock",
-			"text": "Use a $(l:craftsmanship/building_tools#terminals)Terminal$() to construct the multiblock easily.",
+			"text": "使用$(l:craftsmanship/building_tools#terminals)終端機$()可以輕鬆建造這個多方塊結構。",
 			"name": " ",
 			"enable_visualize": true,
 			"multiblock": {
@@ -405,61 +405,62 @@
 			"type": "patchouli:spotlight",
 			"anchor": "distributor",
 			"item": "tfg:oxygen_distributor",
-			"text": "So far you may be surviving, but do you want to truly $(italic)thrive$()? If you're wanting to set up a more permanent base, look no further than the $(item)Oxygen Distributor$()! Feed it one of the compressed gases from earlier and it will \"oxygenate\" a large enclosed area."
+			"text": "到目前為止你也許還活著，但你想真正$(italic)安居樂業$()嗎？如果你想建立更永久的基地，$(item)可呼吸空氣分配器$()就是你要的！給它前面提到的任一種壓縮氣體，它就會為一大片封閉區域「供氧」。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Any $(item)solid block$() will work to build your base out of, but you'll want a proper airlock to ensure the gas doesn't all escape in a $(thing)vortex$(). When combined with a $(item)Heat Pump$(), the enclosed space will become inhabitable, letting you take your helmet off, grow crops and place a water source without it freezing.$(br2)Energy consumption scales off of room size so make sure to give the appropriate energy hatch to your distributor."
+			"text": "任何$(item)實心方塊$()都可以用來建造基地，但你需要一個像樣的氣閘，確保氣體不會因為$(thing)漩渦$()全部散逸。搭配$(item)熱泵$()時，封閉空間就會變得適合居住，讓你可以脫下頭盔、種植作物，並放置不會結冰的水源。$(br2)能源消耗會隨房間大小而增加，所以請為分配器配置適當的能源倉。"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "ad_astra:vent",
-			"text": "The $(item)Vent$() is a solid block that can also let breathable air through without causing a vortex."
+			"text": "$(item)通風口$()是一種實心方塊，也能讓可呼吸空氣通過而不產生漩渦。"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "tag:ad_astra:sliding_doors",
-			"title": "Sliding Doors",
-			"text": "You will want to set up a proper $(thing)airlock system$() between your base's insides and the vacuum of space. Other normal doors will work, but these 3x3 doors are very thematically appropriate for a high-tech moon base. They can be automated with a $(item)pressure plate$() as usual.$(br2)$(bold)Tip:$() You can also use these doors for cleanrooms!"
+			"title": "滑門",
+			"text": "你會想在基地內部和太空真空之間設置一套像樣的$(thing)氣閘系統$()。一般的門也可以用，但這種 3x3 的門非常符合高科技月球基地的風格。和平常一樣，可以用$(item)壓力板$()自動開關。$(br2)$(bold)小技巧：$()這種門也可以用在無塵室！"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "tfg:higgs_emitter",
 			"anchor": "higgs",
-			"text": "The $(item)Higgs Emitter$() allows you to create artificial gravity, filling a sealed area like with a $(item)Heat Pump$() or $(l:the_moon/the_moon#distributor)Oxygen Distributor$(). The area size scales off of the multiblock's energy hatch tier."
+			"text": "$(item)希格斯發射器$()可以製造人工重力，就像$(item)熱泵$()或$(l:the_moon/the_moon#distributor)可呼吸空氣分配器$()一樣，作用範圍是一個密封區域。範圍大小取決於多方塊結構的能源倉等級。"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "ad_astra:space_painting",
 			"anchor": "painting",
-			"text": "$(item)Space Paintings$() can provide some cool space-themed decoration in your base, or if you're homesick and just really want a big painting of Earth."
+			"text": "$(item)太空畫$()可以為你的基地增添一些酷炫的太空主題裝飾；如果你想家了，也可以掛一幅巨大的地球畫。"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"anchor": "death",
 			"item": "tag:minecraft:beds",
-			"title": "Extraterrestrial Death",
-			"text": "In $(tfg_short), you can set your spawn on any dimension with a bed (even $(l:beneath/beneath)The Beneath$()!), but unless you've got a bunch of extra space suits lying around, respawning on the Moon might complicate things."
+			"title": "地球外的死亡",
+			"text": "在$(tfg_short)中，你可以在任何維度用床設定重生點(就連$(l:beneath/beneath)地底$()也可以！)，但除非你身邊有一堆備用的太空服，否則在月球上重生可能會讓事情變得很麻煩。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "First of all, you'll definitely want your bed to be inside an $(l:the_moon/the_moon#distributor)oxygenated area$(), so you don't immediately die as soon as you respawn.$(br2)In case of a blackout, you should have enough time to break your bed and reset your spawn back to Earth."
+			"text": "首先，你一定要把床放在$(l:the_moon/the_moon#distributor)有供氧的區域$()內，這樣才不會一重生就馬上死掉。$(br2)萬一停電，你應該還有足夠的時間破壞床，把重生點重設回地球。"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "endermanoverhaul:soul_pearl",
-			"text": "Secondly, you can upgrade each piece of your $(thing)Space Suit$() with a $(item)Soul Pearl$(). This will make them stay equipped when you die!$(br2)You can get these from any of the tougher, hostile $(l:the_moon/moon_fauna#endermen)Endermen$() on the Moon.$(br2)$(italic)We promise it's sci-fi and not magic.$()"
+			"text": "其次，你可以用$(item)靈魂珍珠$()升級$(thing)太空服$()的每一個部件。這樣死亡時它們就會保持穿在身上！$(br2)你可以從月球上那些比較強悍的敵對$(l:the_moon/moon_fauna#endermen)終界使者$()身上取得靈魂珍珠。$(br2)$(italic)我們保證這是科幻，不是魔法。$()"
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Further Reading",
+			"title": "延伸閱讀",
 			"anchor": "relations",
 			"entries": [
 				"tfg:the_moon/preparations",
 				"tfg:the_moon/orbit",
 				"tfg:the_moon/moon_crops",
 				"tfg:the_moon/moon_fauna",
-				"tfg:logistics/railgun"
+				"tfg:logistics/railgun",
+				"tfg:the_moon/moon_biomes"
 			]
 		}
 	]

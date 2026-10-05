@@ -1,34 +1,38 @@
 {
-	"name": "Player Temperature",
+	"name": "體溫",
 	"category": "tfg:game_mechanics",
 	"icon": "tfcambiental:straw_hat",
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "$(thing)Player Temperature$() is the temperature that affects, $(bold)you$(), the player, and nothing else. It's different from, but influenced by, the $(l:the_world/climate#temperature)Current and Average Temperature$() of your climate, among $(l:game_mechanics/player_temperature#what_affects_it)other things$().$(br2)You need to keep an eye on it to avoid $(thing)heatstroke$() or $(thing)freezing$()!"
+			"text": "$(thing)體溫$()是只影響$(bold)你$()(玩家)的溫度，不影響其他任何東西。它不同於氣候的$(l:the_world/climate#temperature)目前溫度與平均溫度$()，但會受到它們以及$(l:game_mechanics/player_temperature#what_affects_it)其他因素$()的影響。$(br2)你需要留意它，以免$(thing)中暑$()或$(thing)凍傷$()！"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "Contents",
-			"text": "$(li)$(bold)$(l:game_mechanics/player_temperature#hud)How to see your temperature$()$(li)$(bold)$(l:game_mechanics/player_temperature#what_affects_it)What affects it?$()$(li2)$(l:game_mechanics/player_temperature#what_affects_it)Climate and Seasons$()$(li2)$(l:game_mechanics/player_temperature#wetness)Wetness$()$(li2)$(l:game_mechanics/player_temperature#wetness)Direct sunlight$()$(li2)$(l:game_mechanics/player_temperature#wetness)Sprinting$()$(li2)$(l:game_mechanics/player_temperature#blocks)Blocks$()$(li2)$(l:game_mechanics/player_temperature#food)Food Effects$()$(li2)$(l:game_mechanics/player_temperature#clothing)Clothing$()$(li)$(bold)$(l:game_mechanics/player_temperature#house_tester)Enclosed Spaces$()$(li)$(bold)$(l:game_mechanics/player_temperature#heat_pump)Heat Pump$()"
+			"title": "目錄",
+			"text": "$(li)$(bold)$(l:game_mechanics/player_temperature#hud)如何查看你的體溫$()$(li)$(bold)$(l:game_mechanics/player_temperature#what_affects_it)哪些因素會影響體溫？$()$(li2)$(l:game_mechanics/player_temperature#what_affects_it)氣候與季節$()$(li2)$(l:game_mechanics/player_temperature#wetness)濕度$()$(li2)$(l:game_mechanics/player_temperature#wetness)陽光直射$()$(li2)$(l:game_mechanics/player_temperature#wetness)衝刺$()$(li2)$(l:game_mechanics/player_temperature#blocks)方塊$()$(li2)$(l:game_mechanics/player_temperature#food)食物效果$()$(li2)$(l:game_mechanics/player_temperature#clothing)衣物$()$(li)$(bold)$(l:game_mechanics/player_temperature#house_tester)封閉空間$()$(li)$(bold)$(l:game_mechanics/player_temperature#heat_pump)熱泵$()"
 		},
 		{
 			"type": "patchouli:image",
 			"anchor": "hud",
-			"text": "The arrow in the middle indicates whether your player temperature is going up or down.",
-			"title": "The Hotbar HUD",
-			"border": true,
+			"text": "中間的箭頭表示你的體溫正在上升還是下降。",
+			"title": "快捷欄 HUD",
+			"border": false,
 			"images": [
 				"tfg:textures/gui/field_guide/ambiental_hud.png"
 			]
 		},
 		{
 			"type": "patchouli:text",
-			"text": "You can see your player temperature by holding $(item)$(k:key.sneak)$() and looking at the numbers above your $(thing)hotbar$() at the bottom of the screen.$(br2)The two numbers on the right indicate your $(thing)current player temperature$() and the $(thing)target temperature$(), or the number your temperature is \"trending towards\" if your situation doesn't change.$(br2)The two numbers on the left are the same for your $(l:game_mechanics/player_temperature#wetness)wetness$()."
+			"text": "按住 $(item)$(k:key.sneak)$() 並看向螢幕底部$(thing)快捷欄$()上方的數字，就能查看你的體溫。$(br2)右邊的兩個數字表示你$(thing)目前的體溫$()和$(thing)目標溫度$()，也就是在情況不變時體溫「趨向」的數值。$(br2)左邊的兩個數字則是你的$(l:game_mechanics/player_temperature#wetness)濕度$()，意義相同。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "The $(thing)right two temperature numbers$() are the ones to pay attention to! If your $(thing)player temperature$() goes $(6)above 30°C$() or $(3)below 0°C$(), you will begin taking damage.$(br2)When you are close to these temperatures, the arrow in the middle of the HUD will either be a bright orange or dark blue, and you will have an orange or blue tint to your screen."
+			"text": "要留意的是$(thing)右邊的兩個溫度數字$()！如果你的$(thing)體溫$()$(6)高於 30°C$()或$(3)低於 0°C$()，就會開始受到傷害。$(br2)接近這些溫度時，HUD 中間的箭頭會變成亮橘色或深藍色，螢幕也會帶有橘色或藍色的色調。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "The $(item)gradient bar$() on the very bottom, replacing your XP bar, shows your $(thing)player temperature$() (the $(bold)white mark$()), the $(l:the_world/climate)current climate temperature$() (the $(bold)$(2)green 🔽$()), and the $(l:the_world/climate)average climate temperature$() (the $(bold)$(c)red 🔼$()), all at once.$(br2)The bar is split into 10°C segments, with the very middle representing 0°C."
 		},
 		{
 			"type": "patchouli:text",

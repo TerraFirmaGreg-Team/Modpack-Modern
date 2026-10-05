@@ -172,7 +172,7 @@
         {
             "type": "patchouli:text",
             "anchor": "cooling_transient_effect",
-            "text": "$(#12d7ff)❅$()$(bold) Cooling$()$(li)Gives the player the $(l:game_mechanics/mob_effects#cooling)Cooling$() effect with 1 minute of duration per 1 nutrient point. With a max duration of 30min.$()"
+            "text": "$(#12d7ff)❅$()$(bold) Chłodzenie$()$(li)Nakłada na gracza efekt $(l:game_mechanics/mob_effects#cooling)chłodzenia$() na 1 minutę za każdy punkt wartości odżywczej, maksymalnie na 30 minut.$()"
         },
         {
             "type": "patchouli:text",
@@ -197,7 +197,7 @@
         {
             "type": "patchouli:text",
             "anchor": "rejuvenating_transient_effect",
-            "text": "$(#ff178f)💕$()$(bold) Rejuvenating$()$(li)Gives the player the $(n)Regeneration$() effect with 1 minute of duration per 1 nutrient point. With a max duration of 3min.$()"
+            "text": "$(#ff178f)💕$()$(bold) Odświeżenie$()$(li)Zapewnia graczowi efekt $(n)regeneracji$(). Każdy punkt tej cechy zapewnia 1 minutę działania efektu, maksymalnie 3 minuty.$()"
         },
         {
             "type": "patchouli:text",
@@ -227,7 +227,7 @@
         {
             "type": "patchouli:text",
             "anchor": "deadly_transient_effect",
-            "text": "$(#470275)💀$()$(bold) Deadly$()$(li)Gives the player the $(l:game_mechanics/mob_effects#final_moments)Final Moments$() effect for 8min. With every additional nutrient point halving the duration.$()"
+            "text": "$(#470275)💀$()$(bold) Zabójczy$()$(li)Nakłada na gracza efekt $(l:game_mechanics/mob_effects#final_moments)u wrót śmierci$() na 8 minut. Każdy dodatkowy punkt wartości odżywczej skraca czas trwania o połowę.$()"
         },
         {
             "type": "patchouli:text",

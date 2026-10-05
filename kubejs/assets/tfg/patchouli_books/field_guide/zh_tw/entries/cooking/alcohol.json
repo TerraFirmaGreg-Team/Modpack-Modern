@@ -1,61 +1,61 @@
 {
-  "name": "Alcohol Production",
+  "name": "酒類釀造",
   "category": "tfg:cooking",
   "icon": "firmalife:textures/item/hematitic_wine_bottle.png",
   "pages": [
     {
         "type": "patchouli:text",
-        "title": "Index",
+        "title": "索引",
         "anchor": "index",
-        "text": "$(li)$(bold)$(l:cooking/drinks#alcohol)Alcohol$()$(li)$(bold)$(l:cooking/drinks#aged_alcohol)Aged Alcohol$()$(li)$(bold)$(l:cooking/drinks#vintage_alcohol)Vintage Alcohol$()$(li)$(bold)$(l:cooking/alcohol#wine_making)Wine Making$()$(li2)$(l:cooking/alcohol#wine_properties)Wine Properties$()$(li)$(bold)$(l:cooking/alcohol#wine_shelf)Wine Shelf$()"
+        "text": "$(li)$(bold)$(l:cooking/drinks#alcohol)酒類$()$(li)$(bold)$(l:cooking/drinks#aged_alcohol)陳年酒類$()$(li)$(bold)$(l:cooking/drinks#vintage_alcohol)年份酒類$()$(li)$(bold)$(l:cooking/alcohol#wine_making)葡萄酒釀造$()$(li2)$(l:cooking/alcohol#wine_properties)葡萄酒特性$()$(li)$(bold)$(l:cooking/alcohol#wine_shelf)酒架$()"
     },
     {
         "type": "patchouli:text",
-        "title": "Wine Making",
+        "title": "葡萄酒釀造",
         "anchor": "wine_making",
-        "text": "$(thing)Wine-making$() is the science of turning $(thing)grapes$() into alcohol. You must first find $(l:the_world/wild_fruits#red_grapes)Red Grapes$() or $(l:the_world/wild_fruits#white_grapes)White Grapes$() in the wild and cultivate their seeds on $(thing)Trellises$() to obtain $(item)Grapes$(). Wine effects can be viewed $(l:cooking/drinks#wine)Here$()"
+        "text": "$(thing)葡萄酒釀造$()是將$(thing)葡萄$()轉化為酒的學問。你必須先在野外找到$(l:the_world/wild_fruits#red_grapes)紅葡萄$()或$(l:the_world/wild_fruits#white_grapes)白葡萄$()，並將它們的種子種在$(thing)棚架$()上以取得$(item)葡萄$()。葡萄酒的效果可以在$(l:cooking/drinks#wine)這裡$()查看"
     },
     {
         "type": "patchouli:spotlight",
         "anchor": "grape_smashing",
-        "title": "Grape Smashing",
+        "title": "壓碎葡萄",
         "item": {
         "tag": "firmalife:stomping_barrels"
         },
-        "text": "Grapes must then be smashed in a $(thing)Stomping Barrel$(), $(thing)Quern$(), or $(l:cooking/cooking_methods#food_processor)Food Processor$() to obtain smashed grapes. To use a stomping barrel, $(item)$(k:key.use)$() with fresh grapes. Then, jump up and down on the barrel 16 times. $(item)$(k:key.use)$() with an empty hand to retrieve the items.$(br2)Then, seal the smashed grapes in a barrel for 5 days to $(thing)ferment$() them."
+        "text": "接著必須在$(thing)踩踏木桶$()、$(thing)手推磨$()或$(l:cooking/cooking_methods#food_processor)食物調理機$()中壓碎葡萄，取得壓碎的葡萄。使用踩踏木桶時，手持新鮮葡萄按下$(item)$(k:key.use)$()，然後在桶上跳 16 次。空手按下$(item)$(k:key.use)$()即可取出物品。$(br2)接著，將壓碎的葡萄密封在木桶中 5 天，讓它們$(thing)發酵$()。"
     },
     {
         "type": "patchouli:crafting",
         "anchor": "barrel_press",
-        "title": "Barrel press",
+        "title": "木桶壓榨機",
         "recipe": "firmalife:crafting/wood/acacia_barrel_press",
-        "text": "壓榨是葡萄加工的最後一步。"
+        "text": "木桶壓榨機是葡萄加工的最後一步。"
     },
     {
         "type": "patchouli:text",
-        "text": "最左側的槽最多可放入16個葡萄。釀造一瓶葡萄酒需要4個葡萄。中間的四個槽用於將葡萄與其他原料混合，但這是可選的。僅使用紅葡萄或白葡萄會產出紅葡萄酒或白葡萄酒。在白葡萄酒中加入至少一個紅葡萄會製成桃紅葡萄酒。在白葡萄酒中加入糖會製成甜酒。加入二次發酵混合劑（在桶中混合酵母和甜味劑）會製成起泡酒。"
+        "text": "最左側的槽最多可放入16個葡萄。釀造一瓶葡萄酒需要4個葡萄。中間的四個槽用於將葡萄與其他原料混合，但這是可選的。僅使用紅葡萄或白葡萄會產出紅葡萄酒或白葡萄酒。在白葡萄酒中加入至少一個紅葡萄會製成桃紅葡萄酒。在白葡萄酒中加入糖會製成甜酒。加入二次發酵混合劑(在桶中混合酵母和甜味劑)會製成起泡酒。"
     },
     {
         "type": "tfg:glassworking_recipe",
         "recipe": "firmalife:glassworking/olivine_wine_bottle",
-        "text": "葡萄酒必須裝入由非硅酸鹽玻璃製成的專用酒瓶中。"
+        "text": "葡萄酒必須裝入由非矽酸鹽玻璃製成的專用酒瓶中。"
     },
     {
         "type": "patchouli:crafting",
         "anchor": "bottle_label",
-        "title": "Bottle Label",
+        "title": "酒瓶標籤",
         "recipe": "firmalife:crafting/bottle_label",
-        "text": "$(thing)瓶子標籤$()可在抄寫臺中重命名，其名稱將添加到葡萄酒的物品提示信息中。"
+        "text": "$(thing)酒瓶標籤$()可以在書寫桌上重新命名，名稱會顯示在葡萄酒的工具提示中。"
     },
     {
         "type": "patchouli:text",
-        "text": "葡萄酒需配備一個$(thing)軟木塞$()，其製作方法是將$(thing)防腐木材$()在$(thing)石灰水$()中浸泡一天。一切就緒後，使用酒瓶槽位灌裝葡萄酒，或手持酒瓶$(item)$(k:key.use)$()進行灌裝。"
+        "text": "葡萄酒需要配上$(thing)軟木塞$()，做法是把$(thing)防腐木板$()浸泡在$(thing)石灰水$()中一天。一切就緒後，可以使用酒瓶欄位裝入葡萄酒，或手持酒瓶按 $(item)$(k:key.use)$()。"
     },
     {
         "type": "patchouli:text",
         "anchor": "wine_properties",
-        "title": "Drinking Wine",
-        "text": "The discerning sommelier will be able to detect subtleties in the wine that is produced under different conditions. Indeed, this is possible in the world of $(tfg_short) as well. It starts in the fields in which those grapes were grown -- a row of grapes is deeply affected by the ambient environment and soil."
+        "title": "品嚐葡萄酒",
+        "text": "眼光敏銳的侍酒師能察覺在不同條件下釀造的葡萄酒之間的細微差異。事實上，在$(tfg_short)的世界中也是如此。這要從種植葡萄的田地說起――一排葡萄會深受周遭環境和土壤的影響。"
     },
     {
         "type": "patchouli:text",
@@ -63,18 +63,18 @@
     },
     {
         "type": "patchouli:text",
-        "text": "葡萄酒自裝瓶起便開始陳釀，開啟瓶塞後陳釀過程即中止。手持小刀對酒瓶使用$(item)$(k:key.use)$()即可開啟瓶塞。酒瓶的運作方式類似木桶，可將其內容物傾入釀造桶或其他裝置中。"
+        "text": "葡萄酒裝瓶後就會開始陳釀，拔掉軟木塞後便停止陳釀。手持刀子對酒瓶物品按 $(item)$(k:key.use)$() 即可拔掉軟木塞。除此之外，酒瓶的用法有點像水桶，可以倒進木桶或其他裝置中。"
     },
     {
         "type": "patchouli:crafting",
-        "title": "Wine Shelf",
+        "title": "酒架",
         "anchor": "wine_shelf",
         "recipe": "firmalife:crafting/wood/hickory_wine_shelf",
         "text": "$(thing)酒架$()是酒窖的理想配套裝飾，讓你能以典雅方式陳列與儲存珍釀。"
     },
     {
         "type": "patchouli:relations",
-        "title": "Further Reading",
+        "title": "延伸閱讀",
         "anchor": "relations",
         "entries": [
         "tfg:cooking/food_and_water",
