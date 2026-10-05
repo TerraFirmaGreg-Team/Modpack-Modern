@@ -128,6 +128,15 @@
     "gtceu.tooltip.machine.steam_parallel": "§7Can process up to 8 recipes at once, which changes how much Steam is required.§r",
     "gtceu.tooltip.machine.coal_liquefaction_tower_1": "§7Smoothie Maker§r",
     "gtceu.tooltip.machine.coal_liquefaction_tower_2": "§7Extracts gas and liquids from carbonic solids§r",
+    "tfg.tooltip.machine.pastoral_engine_1": "§7The cheesiest and fluffiest machine around§r",
+    "tfg.tooltip.machine.pastoral_engine_2": "§7Automatically milks and shears any animals within the area indicated by the metal casings.§r",
+    "tfg.tooltip.machine.oxygen_distributor_1": "§7Oxygenates a large sealed area. The bigger the area, the more power and gas it needs.",
+    "tfg.tooltip.machine.oxygen_distributor_2": "§7Use an airlock to avoid air vortexes. Does not affect temperature.",
+    "tfg.tooltip.machine.heat_pump_1": "§7Sets the temperature of a large mostly-sealed area to 15°C.",
+    "tfg.tooltip.machine.heat_pump_2": "§7The bigger the area, the more power it needs. Is lenient on what counts as 'sealed'.",
+    "tfg.tooltip.machine.heat_pump_3": "§7The side with the controller should face indoors, while the opposite should face outdoors.",
+    "tfg.tooltip.machine.higgs_emitter_1": "§7Changes the gravity of a large sealed area to Earth-like.",
+    "tfg.tooltip.machine.higgs_emitter_2": "§7The bigger the area, the more power it needs.",
 
     "tfg.machine.me_assembler_redstone_port.tooltip": "§7Can be used as part of an ME Resonance Fabricator or ME Resonance Charger\nNothing: 0 Signal\nCertus Block: 1 Signal\nChipped Budding Certus: 2 Signal\nFlawed Budding Certus: 3 Signal\nFlawless Budding Certus: 4 Signal\nExquisite Budding Certus: 5 Signal",
 
@@ -184,9 +193,6 @@
     "tfg.tooltip.machine.heat_battery_3": "§7To transfer Heat to a Ostrum Linear Accelerator, make both§r Heat Port§7 and§r Heat Input Hatch§7 face each other.§r",
 
     "tfg.tooltip.machine.smr_fluid_import_hatch": "§7Can only be used in a Small Modular Turbine§r",
-
-    "tfg.tooltip.machine.pastoral_engine_1": "§7The cheesiest and fluffiest machine around§r",
-    "tfg.tooltip.machine.pastoral_engine_2": "§7Automatically milks and shears any animals within the area indicated by the metal casings.§r",
 
     "tfg.tooltip.component.blue_ice": "Can be placed inside a Fission Reactor to increase the maximum heat by §90.5§r",
     "tfg.tooltip.component.aes_insulation_frame": "Can be placed inside a Fission Reactor to increase the maximum heat by §91§r",

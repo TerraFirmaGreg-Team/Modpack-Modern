@@ -327,36 +327,51 @@
 		}
 		{
 			description: ["{quests.development.hull_iv.desc}"]
+			disable_toast: true
 			hide_dependency_lines: true
 			icon: "gtceu:iv_machine_hull"
 			id: "66A23AC2EE9BC4AE"
 			progression_mode: "linear"
 			size: 1.0d
 			subtitle: "{quests.development.hull_iv.subtitle}"
+			tasks: [{
+				id: "29F4F3C27BEA6F1D"
+				type: "checkmark"
+			}]
 			title: "{quests.development.hull_iv.title}"
 			x: 4.0d
 			y: -3.0d
 		}
 		{
 			description: ["{quests.development.hull_luv.desc}"]
+			disable_toast: true
 			hide_dependency_lines: true
 			icon: "gtceu:luv_machine_hull"
 			id: "6906121936A688C0"
 			progression_mode: "linear"
 			size: 1.0d
 			subtitle: "{quests.development.hull_luv.subtitle}"
+			tasks: [{
+				id: "79797DA5FEC1CCF1"
+				type: "checkmark"
+			}]
 			title: "{quests.development.hull_luv.title}"
 			x: 5.0d
 			y: -3.0d
 		}
 		{
 			description: ["{quests.development.hull_zpm.desc}"]
+			disable_toast: true
 			hide_dependency_lines: true
 			icon: "gtceu:zpm_machine_hull"
 			id: "629E023752317A31"
 			progression_mode: "linear"
 			size: 1.0d
 			subtitle: "{quests.development.hull_zpm.subtitle}"
+			tasks: [{
+				id: "6DC0A2521AB412B2"
+				type: "checkmark"
+			}]
 			title: "{quests.development.hull_zpm.title}"
 			x: 6.0d
 			y: -3.0d

@@ -408,7 +408,7 @@ function registerTFGMultiblockRecipes(event) {
 	// Heat Pump
 	event.recipes.gtceu.assembler('tfg:assembler/heat_pump')
 		.itemInputs(
-			'2x gtceu:filter_casing',
+			'2x #forge:single_cables/copper',
 			'2x gtceu:mv_electric_pump',
 			'2x #gtceu:circuits/mv',
 			'gtceu:mv_machine_hull'
