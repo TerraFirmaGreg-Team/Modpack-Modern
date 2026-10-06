@@ -886,6 +886,68 @@
             ]
         },
         {
+            "pakku_id": "MpfJC4fQHGcRAdnU",
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "curseforge": "aliencraft-kepler-22b",
+                "modrinth": "aliencraft-kepler-22b"
+            },
+            "name": {
+                "curseforge": "AlienCraft : Kepler 22b",
+                "modrinth": "AlienCraft : Kepler 22b"
+            },
+            "id": {
+                "curseforge": "1444616",
+                "modrinth": "NdBIIV2R"
+            },
+            "redistributable": false,
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "aliencraft_kepler-1.0.5-forge-1.20.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8896/274/aliencraft_kepler-1.0.5-forge-1.20.1.jar",
+                    "id": "8896274",
+                    "parent_id": "1444616",
+                    "hashes": {
+                        "sha1": "dcda699c57766d037b8e831fd330465e34a8c289",
+                        "md5": "59870208a70121fc29ec8372be556b43"
+                    },
+                    "required_dependencies": [],
+                    "size": 19831897,
+                    "date_published": "2026-09-16T15:28:50.247Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "aliencraft_kepler-1.0.5-forge-1.20.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/NdBIIV2R/versions/W9sCIwXK/aliencraft_kepler-1.0.5-forge-1.20.1.jar",
+                    "id": "W9sCIwXK",
+                    "parent_id": "NdBIIV2R",
+                    "hashes": {
+                        "sha512": "de6eae687e25a6a463c845fae90421716b17b0c18c2a8b49671a9da42e5a6001bbfc6f54b9b4c3c2ef0edd627de1d5600d66a3f9a5ad26002a1569e69848f5e1",
+                        "sha1": "dcda699c57766d037b8e831fd330465e34a8c289"
+                    },
+                    "required_dependencies": [],
+                    "size": 19831897,
+                    "date_published": "2026-09-16T15:39:36.125142Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "cBBId9lxKRMCqYMS",
             "pakku_links": [
                 "64uacGcEw697jVGs"
@@ -12135,6 +12197,67 @@
                     ],
                     "size": 2851119,
                     "date_published": "2024-12-24T23:33:42.216148Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "gDiWO8PbjQlG4vce",
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "curseforge": "opposing-force",
+                "modrinth": "opposing-force"
+            },
+            "name": {
+                "curseforge": "Opposing Force",
+                "modrinth": "Opposing Force"
+            },
+            "id": {
+                "curseforge": "1051360",
+                "modrinth": "oqwxmBF3"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "Opposing-Force-1.20.1-2.0.3.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7888/374/Opposing-Force-1.20.1-2.0.3.jar",
+                    "id": "7888374",
+                    "parent_id": "1051360",
+                    "hashes": {
+                        "sha1": "a8e4cd1493699cde7dde4a7e8ed427ca094df469",
+                        "md5": "c9fc1072840e5bf5c9e2febac0f10cf0"
+                    },
+                    "required_dependencies": [],
+                    "size": 7372212,
+                    "date_published": "2026-04-07T04:01:40.277Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "Opposing-Force-1.20.1-2.0.3.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/oqwxmBF3/versions/Hkj2U5KD/Opposing-Force-1.20.1-2.0.3.jar",
+                    "id": "Hkj2U5KD",
+                    "parent_id": "oqwxmBF3",
+                    "hashes": {
+                        "sha512": "9529e1a911e8c2545a65b2fbb3738ddcb2be910d0985e72dae08bc22c28bd87bf191d754da40530d450daa201d532fc3476a2ba02beed9da8cc62ffa8954e757",
+                        "sha1": "a8e4cd1493699cde7dde4a7e8ed427ca094df469"
+                    },
+                    "required_dependencies": [],
+                    "size": 7372212,
+                    "date_published": "2026-04-07T04:02:42.326603Z"
                 }
             ]
         },
