@@ -1283,8 +1283,8 @@ global.FLUORAPATITE_COLORS.forEach(color => {
 		stonecutterTag: `tfg:fluorapatite_sandstone/${color}`,
 		raw: { block: `tfg:sandstone/raw/fluorapatite/${color}` },
 		polished: { block: `tfg:sandstone/smooth/fluorapatite/${color}` },
-		chiseled: { block: `tfg:sandstone/smooth/chiseled/fluorapatite/${color}` },
-		pillar: `tfg:sandstone/fluorapatite/${color}`,
+		chiseled: { block: `tfg:sandstone/chiseled/fluorapatite/${color}` },
+		pillar: `tfg:sandstone/cut/fluorapatite/${color}`,
 	}
 });
 
