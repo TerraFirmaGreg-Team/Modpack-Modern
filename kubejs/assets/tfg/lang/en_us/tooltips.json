@@ -138,7 +138,7 @@
     "tfg.tooltip.machine.higgs_emitter_1": "§7Changes the gravity of a large sealed area to Earth-like.",
     "tfg.tooltip.machine.higgs_emitter_2": "§7The bigger the area, the more power it needs.",
 
-    "tfg.machine.me_assembler_redstone_port.tooltip": "§7Can be used as part of an ME Resonance Fabricator or ME Resonance Charger\nNothing: 0 Signal\nCertus Block: 1 Signal\nChipped Budding Certus: 2 Signal\nFlawed Budding Certus: 3 Signal\nFlawless Budding Certus: 4 Signal\nExquisite Budding Certus: 5 Signal",
+    "tfg.machine.me_assembler_redstone_port.tooltip": "§7Can be used as part of an ME Resonance Fabricator or ME Resonance Charger.\n0: Nothing\n1: Certus Block\n2: Chipped Budding Certus\n3: Flawed Budding Certus\n4: Flawless Budding Certus\n5: Exquisite Budding Certus",
 
     "tfg.tooltip.ore_prospector_stats": "Scan Range: %s, Cross Section: %s x %s.",
     "tfg.tooltip.ore_prospector_count": "This prospector will display ore counts.",
@@ -344,7 +344,7 @@
     "tfg.tooltip.unit.seconds": "%s Sec",
     "tfg.tooltip.unit.power": "Power: %s",
 
-    "tfg.tooltip.gas_burner.flavor_text": "§3A Gas Burner consumes liquid fuels to supply above blocks with heat.§r\nThis device can be controlled with §lRedstone§r:\n- Supplying a signal strength of §e15§r will §oignite§r the burner.\n- Removing all redstone signals will §oextinguish§r the burner.\n- The §omaximum temperature§r of the burner can be set by supplying redstone with signals between §e3-14§r.\n- Comparator output will read the current §ofuel level§r.",
+    "tfg.tooltip.gas_burner.flavor_text": "§3A Gas Burner consumes liquid fuels to supply above blocks with heat.§r\rThis device can be controlled with §lRedstone§r:\r- Supplying a signal strength of §e15§r will §oignite§r the burner.\r- Removing all redstone signals will §oextinguish§r the burner.\r- The §omaximum temperature§r of the burner can be set by supplying redstone with signals between §e3-14§r.\r- Comparator output will read the current §ofuel level§r.",
     "tfg.tooltip.gas_burner.max_temp": "Max Temperature: ",
     "tfg.tooltip.fuel_burning.days": "%s Days / %s mB (Full Tank)"
 

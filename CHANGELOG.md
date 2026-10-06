@@ -4,6 +4,14 @@
 ### Changes
 ### Bug fixes
 
+## [0.13.12] - 06-10-2026
+This is a hotfix release, check the [0.13.11 changelog](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/releases/tag/0.13.11) for the full list of changes!
+### Changes
+- The inventory tabs now have new tooltips showing you some information at a glance, and they're also visible in creative now @Redeix
+### Bug fixes
+- Fixed crash on dedicated server startup
+- Fixed recipe errors on linux
+
 ## [0.13.11] - 05-10-2026
 ### Breaking Changes
 #### Oxygen Rework
