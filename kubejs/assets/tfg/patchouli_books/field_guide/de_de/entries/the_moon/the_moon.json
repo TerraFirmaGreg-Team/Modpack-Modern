@@ -426,7 +426,7 @@
 			"type": "patchouli:spotlight",
 			"item": "tfg:higgs_emitter",
 			"anchor": "higgs",
-			"text": "The $(item)Higgs Emitter$() allows you to create artificial gravity, filling a sealed area like with a $(item)Heat Pump$() or $(l:the_moon/the_moon#distributor)Oxygen Distributor$(). The area size scales off of the multiblock's energy hatch tier."
+			"text": "The $(item)Higgs Emitter$() creates artificial gravity in a spherical region around itself. Unlike the $(item)Heat Pump$() or $(l:the_moon/the_moon#distributor)Oxygen Distributor$(), it generates gravity even through walls. The area size scales off of the multiblock's energy hatch tier."
 		},
 		{
 			"type": "patchouli:spotlight",
