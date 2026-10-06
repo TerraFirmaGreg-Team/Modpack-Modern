@@ -1,0 +1,66 @@
+{
+	"name": "Космічна станція",
+	"category": "tfg:the_moon",
+	"icon": "ad_astra:textures/gui/sprites/space_station.png",
+	"read_by_default": true,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Зберігаючи наведені нижче предмети у своєму інвентарі (або в інвентарі своєї ракети), ти зможеш побудувати $(item)Космічну станцію$() на орбіті після запуску!$(br)$(li)43x Алюмінієвий каркас$(li)24x Скляна пластина$(li)4x Пил світлокаменю$(li)1x Стартовий майданчик"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Там насправді не так уже й багато чим займатися, і вони цілком необов'язкові, але якщо тобі з якоїсь причини потрібен вимір-порожнеча або ти просто $(italic)дуже$() любиш стрибати з парашутом, це один із варіантів.$(br2)Обов'язково візьми щось, за що можна триматися, адже на орбітах $(thing)немає гравітації$().$(br2)$(bold)Порада:$() Для умов рецептів орбіти вважаються $(item)Чистими кімнатами$()."
+		},
+		{
+			"type": "patchouli:multiblock",
+			"anchor": "space_station",
+			"name": "Космічна платформа",
+			"text": "Для посадки твоєї ракети буде побудована платформа.",
+			"enable_visualize": false,
+			"multiblock": {
+				"pattern": [
+					[
+						"       ",
+						"       ",
+						"       ",
+						"   0   ",
+						"       ",
+						"       ",
+						"       "
+					],
+					[
+						"GXXXXXG",
+						"XXXXXXX",
+						"XXXXXXX",
+						"XXXXXXX",
+						"XXXXXXX",
+						"XXXXXXX",
+						"GXXXXXG"
+					]
+				],
+				"mapping": {
+					"0": "ad_astra:launch_pad",
+					"X": "gtceu:aluminium_frame",
+					"G": "gtceu:white_lamp"
+				}
+			}
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "ad_astra:zip_gun",
+			"anchor": "zip_gun",
+			"text": "Пневмопістолет можна заправити будь-яким придатним для дихання $(l/the_moon#gases)стисненим газом$(), щоб випускати повітря, відштовхуючи тебе в умовах низької гравітації. Він необхідний, якщо ти хочеш щось будувати на орбіті!"
+		},
+		{
+			"type": "patchouli:relations",
+			"title": "Докладніше",
+			"anchor": "relations",
+			"entries": [
+				"tfg:the_moon/the_moon",
+				"tfg:the_moon/preparations",
+				"tfg:logistics/railgun"
+			]
+		}
+	]
+}

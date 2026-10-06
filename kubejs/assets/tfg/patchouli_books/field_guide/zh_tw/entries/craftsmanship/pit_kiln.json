@@ -1,0 +1,45 @@
+{
+    "name": "坑窯",
+    "category": "tfg:craftsmanship",
+    "icon": "tfc:textures/gui/book/icons/pit_kiln.png",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "坑窯是遊戲初期$(l:game_mechanics/heating)加熱$()物品的方法。例如，它可以用來將黏土$(thing)燒製$()成陶瓷。坑窯在大約八小時(遊戲時間)內，會將內容物加熱到 1400 °C，也就是$(bold)$(e)$(t:黃白色)黃白色$()。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "要建造坑窯，你需要：$(br)$(li)泥土、沙子或石頭中的一個坑洞$(li)最多四個要燒製的物品$(li)八個$(thing)乾草$()$(li)八根$(thing)原木$()$(li)一個能生火的物品，例如$(l:craftsmanship/firepit#firestarter)生火器$()或$(thing)火把$()。$(br2)$(bold)提示：$()只要把火把丟到坑窯上並等待幾秒鐘，火把就能點火。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "建造坑窯的步驟：$(br2)$(bold)1.$() 按下$(item)$(k:tfc.key.place_block)$()，在 1x1 的坑洞中放入最多四個物品。$(br)$(bold)2.$() 對坑窯使用八個$(thing)乾草$()，直到物品被蓋住。$(br)$(bold)3.$() 對坑窯使用八根$(thing)原木$()，直到填滿。$(br)$(bold)4.$() 點燃坑窯的頂部！$(br2)坑窯接著會燃燒八小時，慢慢$(l:game_mechanics/heating)加熱$()裡面的物品。"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/pit_kiln_1.png",
+                "tfc:textures/gui/book/tutorial/pit_kiln_2.png",
+                "tfc:textures/gui/book/tutorial/pit_kiln_3.png",
+                "tfc:textures/gui/book/tutorial/pit_kiln_4.png",
+                "tfc:textures/gui/book/tutorial/pit_kiln_5.png"
+            ],
+            "text": "$(bold)教學幻燈片：$()建造坑窯。",
+            "border": true
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "延伸閱讀",
+            "anchor": "relations",
+            "entries": [
+                "tfg:craftsmanship/pottery",
+                "tfg:craftsmanship/metallurgy",
+                "tfg:craftsmanship/charcoal_forge",
+                "tfg:craftsmanship/anvils",
+                "tfg:game_mechanics/heating"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 4
+}

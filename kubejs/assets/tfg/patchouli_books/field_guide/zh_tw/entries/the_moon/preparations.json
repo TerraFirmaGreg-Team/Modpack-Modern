@@ -1,0 +1,40 @@
+{
+	"name": "發射前準備",
+	"category": "tfg:the_moon",
+	"icon": "ad_astra:tier_1_rocket",
+	"read_by_default": true,
+	"priority": true,
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "迫不及待要飛向最後的疆界了嗎？我們完全能理解這份熱情，但你不能就這樣把自己扔進太空，然後祈禱能活下來！$(thing)準備$()是生存的關鍵，否則你只會回到石器時代，敲了幾秒鐘的石頭就窒息而死。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "請確保你至少準備了以下物品：$(li)一套$(item)太空服$()和一整桶可呼吸氣體$(li)一架$(item)火箭$()，外加另一整桶備用$(thing)燃料$()$(li)第二座$(item)發射台$()，讓你能夠返回$(li)充足的食物和水$(li)一把武器和一面盾牌，以防月球鬧鬼……"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "food",
+			"item": "tfg:food/meal_bag,tfg:food/calorie_paste,tfg:food/freeze_dried_fruit",
+			"text": "考慮帶一些$(thing)太空食物$()上路吧！它做起來很簡單，保存期限也很長。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(l:cooking/decay#freeze_dry)冷凍乾燥水果$()是美味的點心，$(item)餐包$()可以裝任何你在地球上會吃的一般食物，還有營養完整但很噁心的$(item)能量膏$()。吃完後，鋁箔包裝也可以重複使用！"
+		},
+		{
+			"type": "patchouli:relations",
+			"title": "延伸閱讀",
+			"anchor": "relations",
+			"entries": [
+				"tfg:the_moon/the_moon",
+				"tfg:the_moon/orbit",
+				"tfg:cooking/food_and_water",
+				"tfg:cooking/sandwiches",
+				"tfg:cooking/decay"
+			]
+		}
+	]
+}

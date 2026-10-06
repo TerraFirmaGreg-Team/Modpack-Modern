@@ -1,0 +1,129 @@
+{
+    "name": "Тигель",
+    "category": "tfg:craftsmanship",
+    "icon": "tfc:crucible",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(thing)Тигель$() — це вдосконалений пристрій для створення $(l:craftsmanship/metallurgy#alloying)сплавів$(). Це точніший метод, ніж використання $(l:craftsmanship/pottery#vessel)глечика$() для виготовлення сплавів.$(br2)Щоб отримати тигель, тобі спочатку потрібно добути $(l:craftsmanship/pottery#fire_clay)вогнетривку глину$(), яка є міцнішим матеріалом за звичайну глину. Потім цю вогнетривку глину можна оббити, надавши їй форми $()необпалeного тигля$()."
+        },
+        {
+            "type": "tfg:knapping_recipe",
+            "recipe": "tfc:fire_clay_knapping/crucible",
+            "text": "Схема ліплення $(thing)невипаленого тигля$()"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Після оббивання тигель потрібно $(l:craftsmanship/pottery#vessel)обпалити$(), як і будь-який інший виріб із кераміки.$(br2)Щоб використовувати тигель, йому потрібне джерело тепла. Тигель можна нагрівати від будь-якого придатного для нагрівання блока знизу, бажано $(l:craftsmanship/charcoal_forge)вугільного горна$().$(br)Важливо, що тиглі передають своє тепло предметам значно швидше, ніж горни. Це може бути як перевагою, так і недоліком. Якщо предмети з низькою температурою плавлення, як-от $(item)олово$(), створюють проблеми під час обробки, спробуй використовувати для їх нагрівання вугільний горн."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "   ",
+                        " C ",
+                        "   "
+                    ],
+                    [
+                        "GGG",
+                        "G0G",
+                        "GGG"
+                    ]
+                ],
+                "mapping": {
+                    "0": "tfc:charcoal_forge[heat_level=7]",
+                    "C": "tfc:crucible",
+                    "G": "tfc:rock/bricks/granite"
+                }
+            },
+            "name": "",
+            "text": "Під тиглем - горно, що розігрівається вугіллям.",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "advanced_alloying",
+            "text": "Тепер ти готовий використовувати тигель. Взаємодіючи з ним, ти побачиш $(thing)інтерфейс тигля$(), показаний на наступній сторінці. У верхній частині відображається поточний вміст металів у тиглі. Перший показаний метал — це той, який буде отримано, якщо вилити метал прямо зараз. Інші показані метали становлять склад поточного сплаву в тиглі.",
+            "title": "Вдосконалені сплави"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/gui/crucible.png"
+            ],
+            "text": "Інтерфейс тигля",
+            "border": false
+        },
+        {
+            "type": "patchouli:text",
+            "text": "У тиглі є дев’ять слотів, куди можна додавати предмети для плавлення, а їхній розплавлений вміст безпосередньо потраплятиме в тигель. Тут також можна розміщувати ємності з розплавленим металом, як-от $(l:craftsmanship/pottery#mold)форми$(), і їхній вміст зливатиметься в тигель, що дає змогу точно контролювати склад сплаву. Утримування $(item)$(k:key.sneak)$() під час наведення курсору на форму або глечика, з якої зливається метал, пришвидшує її спорожнення.$(br)Форми або інші ємності для рідин також можна розміщувати у слоті виводу, і вони повільно заповнюватимуться вмістом тигля."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Індикатор температури ліворуч підвищуватиметься залежно від зовнішніх джерел тепла, як-от $(l:craftsmanship/charcoal_forge)вугільний горн$() знизу або тепло від $(l:craftsmanship/blast_furnace)доменної печі$() зверху. Метал можна вилити з тигля, доки він залишається розплавленим.$(br2)Тигель також зберігає свій вміст після руйнування, що дає змогу за потреби переносити ємність зі сплавом."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Ти успішно створив сплав, коли у верхній частині тигля з’явиться назва потрібного тобі сплаву.$(br)Якщо ти випадково додаси в розплавлений сплав неправильний тип металу, на жаль, уся партія буде втрачена. Навіть невелика кількість стороннього металу може зіпсувати сплав. Також може статися, що в тиглі закінчиться місце, перш ніж ти досягнеш ідеального співвідношення, і ти хвилюватимешся, що змарнував метал. На щастя, ти можеш пожертвувати частиною продукту, відливши трохи металу, щоб звільнити місце для додавання нового матеріалу. Сплав стає остаточним лише після відливання!"
+        },
+        {
+            "type": "patchouli:image",
+            "width": 1024,
+            "texture_width": 1024,
+            "height": 1024,
+            "texture_height": 1024,
+            "images": [
+                "tfg:textures/gui/field_guide/prospecting/crucible_alloying.png"
+            ],
+            "text": "$(4)◼$() — Отриманий сплав.$(br)$(3)◼$() — Список часток металів, що входять до складу сплаву.",
+            "border": false,
+            "title": "Розплавлений сплав"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tfcchannelcasting:unfired_channel,tfcchannelcasting:channel,tfcchannelcasting:unfired_mold_table,tfcchannelcasting:mold_table",
+            "title": "Канал для лиття",
+            "anchor": "channel_casting",
+            "text": "Ти можеш відливати з $(thing)тигля$() одразу у кілька форм, використовуючи $(thing)канали$() та $(thing)форми для лиття$(). Просто з’єднай $(thing)форми для лиття$() із $(thing)тиглем$() за допомогою $(thing)каналів$() і натисни $(item)$(k:key.use)$() на $(thing)каналі$() поруч із $(thing)тиглем$(). Використовуй $(item)$(k:key.sneak)-$(k:key.use)$() на $(thing)форму для лиття$() із $(l:craftsmanship/pottery#mold)формою$(), щоб встановити або забрати її."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock_id": "tfcchannelcasting:example",
+            "name": "Конструкція для лиття",
+            "text": "Канали рівномірно розподілятимуть розплавлений метал між усіма під’єднаними формами для лиття. Форми всередині форм для лиття не матимуть шансів зламатися.",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)Використання $(l:craftsmanship/charcoal_forge#bellows)міхів$() на $(thing)формі для лиття$() пришвидшить охолодження металу.$()$(li)Активація $(thing)каналу$() імпульсом редстоуну також почне виливання металу.$()$(li)$(thing)Форми для лиття$() видають сигнал компаратора.$(li)Метал можна безпосередньо закачувати з таких джерел, як рідинні труби або $(l:craftsmanship/blast_furnace)доменна піч$(), з якої зливається метал.$(li)Лійки можуть витягувати охолоджені металеві предмети з форм, залишаючи саму форму на місці.",
+            "title": "Автоматизація"
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Докладніше",
+            "anchor": "relations",
+            "entries": [
+                "tfg:craftsmanship/pit_kiln",
+                "tfg:craftsmanship/pottery",
+                "tfg:craftsmanship/metallurgy",
+                "tfg:craftsmanship/charcoal_forge",
+                "tfg:craftsmanship/blast_furnace",
+                "tfg:craftsmanship/bloomery",
+                "tfg:craftsmanship/anvils",
+                "tfg:craftsmanship/glassworking",
+                "tfg:game_mechanics/heating"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 7,
+    "extra_recipe_mappings": {
+        "tfc:ceramic/unfired_crucible": 1,
+        "tfc:crucible": 1,
+        "tfcchannelcasting:unfired_channel": 11,
+        "tfcchannelcasting:channel": 11,
+        "tfcchannelcasting:unfired_mold_table": 11,
+        "tfcchannelcasting:mold_table": 11
+    }
+}

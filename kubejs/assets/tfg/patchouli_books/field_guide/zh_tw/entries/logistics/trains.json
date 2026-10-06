@@ -1,0 +1,223 @@
+{
+	"name": "火車",
+	"category": "tfg:logistics",
+	"icon": "minecraft:rail",
+	"read_by_default": true,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "index",
+			"text": "$(li)$(bold)$(l:logistics/trains#tracks)軌道與站點$()$(li2)$(l:logistics/trains#station)建造你的第一列火車$()$(li2)$(l:logistics/trains#handcar)手搖車$()$(li)$(bold)$(l:logistics/trains#cargo)火車貨物$()$(li2)$(l:logistics/trains#loading)裝貨與卸貨$()$(li2)$(l:logistics/trains#detecting)偵測貨物$()$(li)$(bold)$(l:logistics/trains#conductors)列車長$()$(li2)$(l:logistics/trains#schedule)自動運送$()$(li2)$(l:logistics/trains#whistle)列車長哨子$()$(li2)$(l:logistics/trains#remote_lens)遠端鏡頭$()"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(li)$(bold)燃料$()$(li2)$(l:logistics/trains#solid_fuel)固體燃料$()$(li2)$(l:logistics/trains#liquid_fuel)液體燃料$()$(li)$(bold)$(l:logistics/trains#loco)裝飾方塊$()$(li)$(bold)$(l:logistics/trains#seat)座椅$()$(li)$(bold)$(l:logistics/trains#signals)列車訊號機$()$(li2)$(l:logistics/trains#semaphore)臂木式號誌$()$(li2)$(l:logistics/trains#switches)轉轍器$()$(li)$(bold)$(l:logistics/trains#coupler)分離車廂$()$(li)$(bold)$(l:logistics/trains#buffer)出軌$()"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(thing)機械動力$()有一套強大的$(item)火車$()系統，可以長距離運送玩家、物品、流體和其他所有東西。火車很適合用來橫越荒野，或是運送大量材料，而最重要的是，它$(thing)可以穿越未載入的區塊$()。$(br2)$(bold)小技巧：$()如果有不懂的地方，隨時可以把游標移到物品上並按住 $(thing)W$()，查看它的$(thing)思索$()！"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tag:create:tracks",
+			"title": "火車軌道",
+			"anchor": "tracks",
+			"text": "鋪設通往不同地點的路線，就能讓火車移動到其他地方。$(br)放下一段軌道後，手持$(item)軌道$()對它按$(item)$(k:key.use)$()，就能快速鋪設軌道並做出彎道。$(br)如果副手拿著方塊(或金屬梁)，這些方塊會自動放在軌道下方。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "create:track_station",
+			"title": "你的第一列火車",
+			"anchor": "station",
+			"text": "首先，手持$(item)火車站點$()對軌道按$(item)$(k:key.use)$()，軌道上會出現一個箭頭，表示$(thing)火車$()的前進方向。$(br2)接著，把$(item)火車站點$()放在軌道旁邊，就可以開始建造你自己的$(thing)火車$()了！"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "在$(thing)火車站點$()介面中按下$(thing)建立新火車$()，旁邊的軌道上就會投射出淺藍色的點。$(br2)在這些點上放置$(item)列車機殼$()就會建立$(thing)轉向架$()。你可以用建築方塊連接最多兩個轉向架，組成一節$(thing)車廂$()。記得使用$(item)強力膠$()！"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "放置$(item)列車控制器$()，讓它面向火車的前進方向。$(br2)完成後，在站點介面中按下$(thing)組裝火車$()，你的$(thing)火車$()就能運作了！對$(item)列車控制器$()按$(item)$(k:key.use)$()，再用一般的前進和後退移動鍵就能駕駛火車。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "可惜火車有一些限制。單一火車動態結構$(bold)不能$()超過 $(thing)20 個轉向架$()，長度也不能超過 $(thing)128 格$()，設計火車時請記住這一點。$(br2)$(bold)注意：$()你隨時可以在機械動力的設定檔中修改這些限制，但請記住，提高限制會使用$(thing)更多$()伺服器資源。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "railways:handcar",
+			"anchor": "handcar",
+			"text": "$(item)手搖車$()是一種可以直接放置的火車，讓你在軌道上移動！你可以用$(item)扳手$()把它收起來，繼續前進。這是不必建造完整火車就能快速移動的便宜好方法。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "create:fluid_tank,create_connected:fluid_vessel,create:item_vault,create_connected:item_silo,createaddition:modular_accumulator,fluidlogistics:multi_fluid_tank,fluidlogistics:horizontal_multi_fluid_tank",
+			"title": "火車貨物",
+			"anchor": "cargo",
+			"text": "$(item)流體儲罐$()、$(item)保險庫$()和$(item)蓄電池$()可以放在$(thing)火車$()上，用來運送物品、流體和能源。$(br2)和其他動態結構一樣，你需要使用各自對應的介面才能與火車互動。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "create:portable_fluid_interface,create:portable_storage_interface,createaddition:portable_energy_interface",
+			"title": "裝貨與卸貨",
+			"anchor": "loading",
+			"text": "$(item)移動式介面$()可以讓你在火車和倉儲之間搬運物品。在火車上放置$(item)移動式介面$()並連接到保險庫、流體儲罐或蓄電池，就能把物品、流體和能源裝上或卸下火車！兩個介面之間需要相隔$(thing)兩格$()才能運作。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "當兩個介面「親在一起」時，它們會視為一個相連的介面。例如，用滑槽從固定的介面抽出物品，就會從火車中抽出物品。$(br2)$(bold)注意：$()移動式能源介面需要搭配 $(thing)GregTech 能源轉換器$()，才能把 FE 轉換成 EU。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "create:track_observer",
+			"title": "偵測貨物",
+			"anchor": "detecting",
+			"text": "$(item)火車偵測器$()可以用來偵測$(thing)火車$()運送的貨物。手持$(item)火車偵測器$()對軌道按$(item)$(k:key.use)$()並放在軌道旁邊，再把物品放在方塊上方，就能過濾火車貨物。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "當載有過濾貨物的火車通過$(item)火車偵測器$()時，方塊就會發出紅石訊號！$(br2)$(bold)小技巧：$()你可以使用過濾器一次過濾多種物品或流體！"
+		},
+		{
+			"title": "列車長",
+			"anchor": "conductors",
+			"type": "patchouli:spotlight",
+			"item": "tag:railways:conductor_caps",
+			"text": "是時候把鐵路系統自動化了！放置一個$(item)安山岩機殼$()，再手持$(item)列車長帽$()對它按$(item)$(k:key.use)$()，就會生成你自己的$(thing)列車長$()。很可愛吧？你可以用$(item)拴繩$()牽著牠移動。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "把牠放在$(thing)拉桿$()旁邊並面向拉桿，牠就會拉動拉桿，這對$(l:logistics/trains#switches)轉轍器$()很有用。$(br2)你也可以把牠放在火車的$(l:logistics/trains#seat)座椅$()上，讓牠當駕駛。$(br2)火車駕駛不只限於列車長！任何坐在座椅上的生物(例如動物)或$(item)烈焰人燃燒室$()都可以當火車駕駛。"
+		},
+		{
+			"title": "自動運送",
+			"anchor": "schedule",
+			"type": "patchouli:spotlight",
+			"item": "create:schedule",
+			"text": "手持$(item)列車時刻表$()對空中按$(item)$(k:key.use)$()，可以選擇$(thing)火車$()要前往的$(l:logistics/trains#station)火車站點$()，以及在特定站點需要停留多久。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "你也可以選擇$(thing)火車$()要循環行駛路線，還是在特定地點停下。$(br2)把$(item)列車時刻表$()交給$(l:logistics/trains#conductors)列車長$()，牠就會成為駕駛，駕駛你的火車往返各個$(thing)火車站點$()。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "railways:conductor_whistle",
+			"anchor": "whistle",
+			"text": "$(item)列車長哨子$()可以讓$(l:logistics/trains#conductors)列車長$()移動到軌道上的特定位置，很適合在你想修改正在運作的$(thing)火車$()時使用。$(br2)對$(thing)列車長$()按$(item)$(k:key.use)$()會把這個物品綁定到該列車長，再對軌道按$(item)$(k:key.use)$()，$(thing)火車$()就會開往你選擇的位置。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "如果$(thing)火車$()無法抵達指定位置，會在遊戲聊天中告訴你。$(br2)注意：$(item)列車長哨子$()會$(bold)覆蓋$()$(l:logistics/trains#schedule)列車時刻表$()。如果你希望$(thing)列車長$()繼續行程，必須空手對牠按$(item)$(k:key.use)$() $(thing)兩次$()，重新把$(item)列車時刻表$()交給牠。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "railways:remote_lens",
+			"anchor": "remote_lens",
+			"text": "曾經好奇你的$(thing)火車$()跑去哪裡了嗎？還是火車弄丟了找不到？別擔心！$(br)只要給$(l:logistics/trains#conductors)列車長$()戴上$(item)工程師護目鏡$()並交給牠$(item)遠端鏡頭$()，你就能從$(thing)列車長$()的視角觀看。$(br)手持該物品對$(thing)列車長$()按$(item)$(k:key.use)$()進行綁定，之後隨時都能用鏡頭查看你的$(thing)火車$()！"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "minecraft:charcoal",
+			"title": "為火車補充燃料",
+			"anchor": "solid_fuel",
+			"text": "你的$(thing)火車$()可以使用固體燃料，讓火車加速最多 50%！只要為$(thing)火車$()提供任何種類的$(item)可燃燃料$()，每個物品就能讓火車加速 5 分鐘。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "火車液體燃料",
+			"item": "railways:fuel_tank,railways:portable_fuel_interface",
+			"anchor": "liquid_fuel",
+			"text": "$(thing)液體燃料$()的能量密度遠高於固體燃料，但需要多一點基礎設施。在火車上放置$(item)燃料箱$()，並透過$(item)燃料介面$()補充燃料，你的$(thing)火車$()就會消耗 100mB 燃料並加速 50%。液體燃料比$(thing)物品$()燃料持久$(thing)非常多$()。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "例如，100mB 的火箭燃料可以撐 $(thing)6 小時$()，也就是每桶 $(thing)60 小時$()。$(br2)你可以使用$(item)雜酚油$()、$(item)合成氣$()、$(item)柴油$()等多種液體作為火車燃料。不確定你的液體算不算燃料嗎？試著把它抽進$(item)燃料箱$()，如果燃料箱接受這種液體，就能當作燃料使用！"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "蒸汽氛圍",
+			"anchor": "loco",
+			"item": "tag:tfg:smokestacks,tag:railways:palettes/dye_groups/boiler",
+			"text": "你的$(thing)火車頭$()不夠有型嗎？別擔心！$(item)機車鍋爐$()和$(item)煙囪$()能為你的鐵路系統增添氛圍。$(br)$(item)煙囪$()會不斷冒出煙霧粒子，而$(item)機車鍋爐$()則讓你可以用$(item)圓形$()造型來建造。$(br)這兩種方塊都純屬裝飾。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "座椅",
+			"anchor": "seat",
+			"item": "tag:create:seats",
+			"text": "$(item)座椅$()讓你在操作火車時可以坐下。$(br2)為了避免在火車行駛時被甩出去，請在$(thing)火車$()上放置$(item)座椅$()，並記得用$(item)強力膠$()固定。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "create:track_signal",
+			"anchor": "signals",
+			"title": "防止碰撞",
+			"text": "在自動化鐵路系統時，$(thing)火車相撞$()是個嚴重的問題。相撞會讓$(thing)火車$()出軌，變得$(bold)無法運作$()。幸好只要多一點基礎設施，就能避免大多數的碰撞。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "railways:semaphore",
+			"anchor": "semaphore",
+			"text": "手持$(item)列車訊號機$()對交叉路口前的軌道按$(item)$(k:key.use)$()，再把它放在軌道旁邊，就能偵測$(thing)火車$()何時通過！$(br2)你可以在$(item)列車訊號機$()上方放置面向另一條軌道的$(item)臂木式號誌$()。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "這樣一來，當$(thing)火車$()通過交叉路口時，另一條軌道就會被封鎖，其他$(thing)火車$()無法通過，避免相撞。$(br2)$(bold)注意：$()你可以把多個$(item)臂木式號誌$()疊在一起，並連接到多個$(thing)列車訊號機$()，但這會變得相當複雜。想了解更多，可以把游標移到$(item)臂木式號誌$()上並按住 $(item)W$()，查看功能的視覺化說明。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "railways:track_switch_andesite,railways:track_switch_brass",
+			"title": "轉轍器",
+			"anchor": "switches",
+			"text": "$(item)轉轍器$()可以用來切換軌道。手持$(item)轉轍器$()對軌道按$(item)$(k:key.use)$()並放在軌道旁邊，就能切換軌道！$(br2)對$(item)轉轍器$()按$(item)$(k:key.use)$()會把軌道切向右側，按住$(item)$(k:key.sneak)$()則會把$(item)轉轍器$()切向左側。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "你可以用紅石自動切換軌道。從$(item)轉轍器$()的側面輸入紅石訊號，它就會依照訊號來源的方向改變軌道方向。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(bold)注意：$()$(item)轉轍器$()的方向取決於它相對於軌道的位置，以及放置它的玩家所面對的方向。$(thing)面向$()軌道時，把$(item)轉轍器$()放在軌道的右手邊，就能讓它與軌道平行對齊。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "railways:track_coupler",
+			"anchor": "coupler",
+			"title": "分離車廂",
+			"text": "裝貨花太多時間了嗎？有沒有想過直接把空的$(thing)車廂$()留下？現在你可以了！手持$(item)列車連結器$()對軌道按$(item)$(k:key.use)$()並放在軌道旁邊，就會生成兩個相距 5 格的$(thing)節點$()。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "拿著扳手，對$(item)列車連結器$()的頂面按住$(item)$(k:key.use)$()，可以調整節點間的距離。當兩節不同的$(thing)車廂$()位於節點上方時，對$(item)列車連結器$()輸入紅石訊號，車廂就會分離！它們不再相連，你的$(thing)火車$()可以自由前往任何地方。想把它們接回去嗎？重複相同的步驟就可以了！"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "railways:buffer",
+			"anchor": "buffer",
+			"title": "車擋",
+			"text": "使用$(item)車擋$()可以防止$(thing)火車$()出軌！把它們放在未完成的軌道末端或軌道的最外端，你的$(thing)火車$()就不會出軌了。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "再厲害的人也會遇到這種事：你不小心破壞了軌道，或是$(thing)火車$()不知怎麼跑出了軌道，又或是兩列火車撞在一起，現在它$(bold)出軌$()了。$(br2)幸好有個簡單的解決方法！手持$(item)機械動力扳手$()對火車按$(item)$(k:key.use)$()選取它，再對軌道按$(item)$(k:key.use)$()把它放回去。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "火車放錯方向了嗎？你可以再次選取它，面向另一個方向放下，它就會掉頭！"
+		},
+		{
+			"type": "patchouli:relations",
+			"title": "延伸閱讀",
+			"anchor": "relations",
+			"entries": [
+				"tfg:logistics/tack",
+				"tfg:logistics/roads",
+				"tfg:logistics/boats",
+				"tfg:logistics/exploration_gear",
+				"tfg:logistics/create",
+				"tfg:the_world/earth_tree_index"
+			]
+		}
+	]
+}

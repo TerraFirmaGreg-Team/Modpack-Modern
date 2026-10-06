@@ -1,0 +1,7 @@
+{
+  "variants" : {
+    "default" : "outlined_sprite:tfc/turkey_female.png",
+    "tfc:textures/entity/animal/turkey_female.png" : "outlined_sprite:tfc/turkey_female.png",
+    "tfc:textures/entity/animal/turkey_male.png" : "outlined_sprite:tfc/turkey_male.png"
+  }
+}

@@ -1,0 +1,133 @@
+{
+  "name": "生火",
+  "category": "tfg:craftsmanship",
+  "icon": "tfc:firepit",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "anchor": "firestarter",
+      "text": "$(thing)火$()在文明史上是一項重大的技術進步。想要生火，就必須做一個$(thing)生火器$()。對準需要生火的目標按住$(item)$(k:key.use)$()。片刻之後，會產生煙，然後便有機率成功生火。你可能需要多嘗試幾次才能成功點起火來。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/firestarter",
+      "text": "生火器可以用兩根木棍合成。生火器可以用於任何需要點火的工作，例如點燃蠟燭或啟動木炭爐。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "有了生火器，就能點燃$(thing)篝火$()。製作篝火需要一根$(thing)原木$()、三根$(thing)木棍$()，以及可選擇加入最多五個$(thing)引火物$()。引火物可以是紙製品、乾草或落葉等物品，每使用一個就能讓成功生火的機率增加 10%。將所有物品丟($(item)$(k:key.drop)$())到地上的同一格方塊中，然後對著物品懸浮其上的方塊使用生火器。",
+      "title": "篝火"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "0"
+          ]
+        ],
+        "mapping": {
+          "X": "tfc:firepit[lit=true]"
+        }
+      },
+      "name": "起火了！",
+      "text": "如果成功，就會產生一座篝火。",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:text",
+      "text": "現在使用篝火會開啟篝火介面。左側有四個$(thing)燃料$()欄位。原木、泥炭和木棍捆都可以放入最上方的欄位作為篝火的燃料。燃料會從最下方的欄位開始消耗。有一個量表顯示篝火目前的$(thing)溫度$()，右側則有一個用來$(l:game_mechanics/heating)加熱$()物品的欄位。"
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "tfc:textures/gui/book/gui/firepit.png"
+      ],
+      "text": "篝火介面",
+      "border": false
+    },
+    {
+      "type": "tfg:heat_recipe",
+      "recipe": "tfc:heating/torch_from_stick",
+      "text": "許多有用的物品可以在篝火中加熱製作。例如加熱木棍就可以做成兩根$(thing)火把$()。注意！放置在世界中的火把是會燃盡的，但好在你可以用$(thing)生火器$()或其他$(thing)火把$()重新點燃它們。"
+    },
+    {
+      "type": "tfg:heat_recipe",
+      "recipe": "tfc:heating/cod",
+      "text": "篝火也是$(l:cooking/cooking_methods)烹煮食物$()的好裝置。所有生肉都可以在篝火中烹煮，這會延長它們的保存期限。關於腐壞與保存的更多資訊，請參閱$(l:cooking/decay)這裡$()。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "隨時都可以對篝火使用$(thing)鏟子$()將它熄滅。$(br2)篝火也可以加裝其他裝置來擴充功能。使用$(thing)鍛鐵烤架$()會將篝火轉換為$(l:cooking/cooking_methods#grill)烤架$()，使用$(thing)陶瓷鍋$()則會將篝火轉換為$(l:cooking/cooking_methods#pot)陶鍋$()。要拆下任一裝置，請按住$(item)$(k:key.sneak)$()並按下$(item)$(k:key.use)$()。小心不要試圖拆下高溫的烤架或陶鍋！"
+    },
+    {
+      "type": "tfg:multimultiblock",
+      "text": "加裝了烤架或陶鍋的篝火。",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:firepit"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:grill"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:pot"
+          }
+        }
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "text": "篝火燃料有不同的純度。燃料純度會影響燃料的燃燒時間和可達到的溫度。最純的燃料是原木，而乾草和落葉等燃料的溫度不足以進行太多烹煮，但在緊急時可以幫你保暖。"
+    },
+    {
+      "type": "patchouli:relations",
+      "title": "延伸閱讀",
+      "anchor": "relations",
+      "entries": [
+        "tfg:cooking/cooking_methods",
+        "tfg:cooking/decay",
+        "tfg:game_mechanics/heating"
+      ]
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 1,
+  "extra_recipe_mappings": {
+    "tfc:firepit": 0,
+    "tfc:torch": 6,
+    "minecraft:torch": 6
+  }
+}

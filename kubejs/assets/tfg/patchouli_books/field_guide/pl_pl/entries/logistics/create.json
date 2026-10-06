@@ -1,0 +1,512 @@
+{
+	"name": "Logistyka w Create",
+	"category": "tfg:logistics",
+	"icon": "create:cardboard_package_12x12",
+	"read_by_default": true,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"title": "Zawartość",
+			"anchor": "index",
+			"text": "$(li)$(bold)$(l:logistics/create#packages)Packages$()$(li2)$(l:logistics/create#packager)Packager$()$(li2)$(l:logistics/create#frogport)Frogports$()$(li2)$(l:logistics/create#package_filter)Package Filter$()$(li2)$(l:logistics/create#repackager)Re-Packager$()$(li2)$(l:logistics/create#unpackager)Unpackager$()$(li2)$(l:logistics/create#clipboard)Clipboard and Hand Pointer$()$(li2)$(l:logistics/create#postbox)Postbox$()$(li2)$(l:logistics/create#package_tips)Tips$()"
+		},
+		{
+			"type": "patchouli:text",
+			"title": " ",
+			"text": "$(br)$(li)$(bold)$(l:logistics/create#high_logistics)High Logistics$()$(li2)$(l:logistics/create#rose_quartz)Rose Quartz$()$(li2)$(l:logistics/create#exquisite)Transmitter$()$(li2)$(l:logistics/create#stock_link)Stock Link$()$(li2)$(l:logistics/create#stock_ticker)Stock Ticker$()$(li2)$(l:logistics/create#stock_bridge)AE2 Stock Bridge$()$(li2)$(l:logistics/create#requester)Redstone Requester$()$(li2)$(l:logistics/create#table_cloths)Table Cloths$()$(li2)$(l:logistics/create#factory_gauge)Factory Gauge$()"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Made it to the Steam Age? $(thing)Create Logistics$() will improve your item transportation and storage capabilities significantly. Later on in $(7)LV$() you'll even be able to to automatically order specific items or route them around your base! As this is $(thing)Create$(), this means $(thing)Pondering the machines$() (hold $(item)$(k:key.ponder.ponder)$()) will be your best source of information aside from here, so be sure to look through them too."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Paczki",
+			"anchor": "packages",
+			"item": "create:cardboard_package_12x10,create:cardboard_package_10x8,create:cardboard_package_10x12,create:cardboard_package_12x12",
+			"text": "Everything to do with Create Logistics revolves around $(item)Packages$(). Each package can contain 9 slots' worth of items.$(br2)Packages also have an $(thing)address$(), which determines where the package should go. The rest of the logistics system is all about how to move the packages to these destinations!"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Paczki z płynem",
+			"item": "fluidlogistics:fluid_package,fluidlogistics:fluid_package_exposed,fluidlogistics:fluid_package_weathered,fluidlogistics:fluid_package_oxidized",
+			"text": "$(item)Fluid Packages$() are the equivalent for $(thing)fluids$(). Each fluid package can hold $(thing)10,000mB$(), or ten buckets.$(br2)$(bold)Tip:$() $(item)$(k:key.sneak) + $(k:key.use)$() an item package to open it! Mechanical Saws can also do this automatically."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "create:packager,fluidlogistics:fluid_packager",
+			"anchor": "packager",
+			"text": "When provided with a $(thing)redstone signal$(), the $(item)Packager$() will wrap up items from the container it is attached to (you can switch the connection side with a $(item)wrench$()) and output a neat little cardboard package.$(br)$(bold)Note:$() Despite the crafting recipe, the packager works without any additional cardboard, so don't worry about upkeep!"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Putting a $(item)Sign$() on the Packager will make it automatically label the sign's contents onto all packages as a destination address. This will be more useful once you start working with various ways to route packages around. $(c)Note that Framed Signs do not work for this purpose!$()$(br2)Packagers can also unwrap any packages that get put into it, unloading their contents into the attached inventory."
+		},
+		{
+			"type": "patchouli:multiblock",
+			"enable_visualize": false,
+			"text": "Ten system automatycznie pobiera całą zawartość skrzyni i pakuje ją w paczki, które można następnie wysłać w inne miejsce.",
+			"name": "Pakowanie przedmiotów",
+			"multiblock": {
+				"pattern": [
+					[
+						" A",
+						"B0",
+						" C"
+					],
+					[
+						"  ",
+						" D",
+						"  "
+					]
+				],
+				"mapping": {
+					"A": "minecraft:lever[face=wall,facing=west,powered=true]",
+					"0": "create:packager[facing=south,powered=true]",
+					"B": "#forge:chests/wooden",
+					"C": "tfc:wood/planks/oak_wall_sign[facing=east]",
+					"D": "create:chute"
+				}
+			}
+		},
+		{
+			"type": "patchouli:multiblock",
+			"enable_visualize": false,
+			"text": "Każda paczka umieszczona w tym pakowaczu zostanie automatycznie rozpakowana, a jej zawartość trafi do $(l:logistics/storage#crates)skrzyni$().",
+			"name": "Rozpakowywanie przedmiotów",
+			"multiblock": {
+				"pattern": [
+					[
+						"  ",
+						" D",
+						"  "
+					],
+					[
+						"  ",
+						"B0",
+						"  "
+					]
+				],
+				"mapping": {
+					"0": "create:packager[facing=south,powered=false]",
+					"B": "gtceu:steel_crate",
+					"D": "create:chute"
+				}
+			}
+		},
+		{
+			"type": "patchouli:multiblock",
+			"enable_visualize": false,
+			"text": "$(item)Pakowacze płynów$() działają w ten sam sposób.",
+			"name": "Pakowanie płynów",
+			"multiblock": {
+				"pattern": [
+					[
+						"  ",
+						"B ",
+						"  "
+					],
+					[
+						" A",
+						"E0",
+						" C"
+					],
+					[
+						"  ",
+						" D",
+						"  "
+					]
+				],
+				"mapping": {
+					"A": "minecraft:lever[face=wall,facing=west,powered=true]",
+					"0": "fluidlogistics:fluid_packager[facing=south,powered=true]",
+					"B": "create:fluid_tank[top=true,bottom=false]",
+					"C": "tfc:wood/planks/oak_wall_sign[facing=east]",
+					"D": "create:chute",
+					"E": "create:fluid_tank[bottom=true,top=false]"
+				}
+			}
+		},
+		{
+			"type": "patchouli:multiblock",
+			"enable_visualize": false,
+			"text": "Pakowarka płynów nie wymaga pompy do przesyłania płynów między nią a podłączonym zbiornikiem.",
+			"name": "Rozpakowywanie płynów",
+			"multiblock": {
+				"pattern": [
+					[
+						"  ",
+						" D",
+						"  "
+					],
+					[
+						"  ",
+						"B0",
+						"  "
+					]
+				],
+				"mapping": {
+					"0": "fluidlogistics:fluid_packager[facing=south,powered=false]",
+					"B": "gtceu:steel_drum",
+					"D": "create:chute"
+				}
+			}
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "create:package_frogport,fluidlogistics:copper_frogport",
+			"title": "Żabołapy",
+			"anchor": "frogport",
+			"text": "$(item)Package Frogports$() are one of three ways you can move packages around and get them to where you want them to be. They can hang packages onto $(item)Chain Conveyor$() lines to be transported along the chain connections. To use them, you first need a network of $(item)Chain Conveyors$() connected to each other using $(t:Any kind of TFC chain will work)$(6)chains$(), and then power the chain conveyors with rotation."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(item)$(k:key.use)$() a chain before placing down a Frogport to have it interact with that segment of chain.$(br2)Frogports placed directly on top of a $(l:logistics/create#packager)Packager$() automatically hang up packages that are created in said Packager.$(br2)$(bold)Note:$() Either frogport will work with both item and fluid packagers and packages. The only difference is that the copper one can be placed on any side of a block."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Frogports can also receive packages in addition to sending them. If you $(item)$(k:key.use)$() on a Frogport, you can see that it has a name you can edit.$(br2)This name acts as an $(thing)address$(): if any packages that are labelled with a destination address matches this name, the Frogport will $(thing)automatically collect them$() by taking them off the chain network!"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "This collected package will be put into the inventory of the block the Frogport is placed on.$(br2)As long as the chain network is connected to the input and output Frogports $(o)somehow$(), the package will eventually find its own way, although you may want to optimize the paths to reduce package travel time on your own."
+		},
+		{
+			"type": "patchouli:image",
+			"text": "Mały system do wysyłania i odbierania przedmiotów.",
+			"title": "Żabołapy",
+			"border": true,
+			"images": [
+				"tfg:textures/gui/field_guide/frogports.png"
+			]
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "create:package_filter",
+			"anchor": "package_filter",
+			"text": "Packages can be routed using the specialized $(item)Package Filter$(), which can be used just like a filter in any $(thing)Create$() machine that supports filter slots, such as $(item)Brass Funnels$(). Just $(item)$(k:key.use)$() while holding the filter and type in the address that should be filtered, and any packages with that specified destination address will be let through."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "create:repackager",
+			"anchor": "repackager",
+			"text": "The $(item)Re-Packager$() can combine multiple item packages into a single package. This is useful if a request's items are being sourced from different locations, but need to reach their destination at exactly the same time.$(br2)It can also separate a combined package back into its components."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "fluidlogistics:fluid_repackager",
+			"anchor": "unpackager",
+			"text": "$(item)Rozpakowywacz$() działa podobnie do $(l:logistics/create#repackager)przepakowywacza$(), ale potrafi łączyć i rozdzielać paczki z przedmiotami i płynami."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "fluidlogistics:hand_pointer,create:clipboard",
+			"title": "Brakuje miejsca?",
+			"anchor": "clipboard",
+			"text": "The $(item)Hand Pointer$() and $(item)Clipboard$() can be used to power packagers and set addresses without any adjacent block.$(br2)To use the $(item)Hand Pointer$(), just $(item)$(k:key.use)$() on any packager or re-packager to force it to be powered, no redstone signal needed!"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "The $(item)Hand Pointer$() can also be used to change the target of $(l:logistics/create#frogport)Frogports$() after they have been placed. To do so, while holding the $(item)Hand Pointer$(), $(item)$(k:key.use)$() the $(item)Frogport$() you want to change, then $(item)$(k:key.use)$() the new point on the chain to connect to.$(br2)To set an address, get an empty $(item)Clipboard$() and type the address you want on the first line $(c)(make sure to start the line with a \"#\")$(), then $(item)$(k:key.use)$() on any packager to set the address, no sign needed!"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tag:create:postboxes",
+			"title": "Skrzynki pocztowe",
+			"anchor": "postbox",
+			"text": "$(item)Postboxes$() are used to route packages around using $(l:logistics/trains)Train Networks$(). You first $(item)$(k:key.use)$() a $(l:logistics/trains#station)Train Station$() to link the Postbox to that station before placing it, and from then on any trains that stop there will be able to interact with the Postbox (given it is within 4 blocks of the station)."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Much like $(l:logistics/create#frogport)Package Frogports$(), they can be named. Passing trains will then pick up any packages whose destination does not match the Postbox's name.$(br2)Furthermore, if the train has any packages in its inventories that $(italic)do$() match the Postbox, they will be passed into the Postbox's inventory instead."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "One last cool thing about $(item)Postboxes$() is that when extracting automatically from them (via chutes, funnels, etc), only packages with a destination that $(thing)matches the Postbox's name$() will be taken out and any packages with a different destination will remain inside to be loaded onto trains later."
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "package_tips",
+			"title": "Wskazówki dotyczące paczek",
+			"text": "Packages are randomly created from a selection of four* possible items, so stuff like GregTech's $(item)Item Filters$() will be $(thing)very tedious to set up$()! We recommend using the $(l:logistics/create#package_filter)Package Filter$() wherever you can, but...$(br2)$(7)* Four for fluids, and actually a lot more for items, as there's several secret rare variants$()"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "...If you really want to try using other methods to move packages around, the destination address is stored as NBT data in the tag $(thing)Address$(). For example, a package with the destination address \"Home\" will have in its NBT data: $(thing){Address:\"Home\"}$().$(br2)$(o)(Continued on next page...)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Package address filtering actually supports a simplified form of $(l:https://en.wikipedia.org/wiki/Regular_expression)RegEx$(). This means you can:$(br)$(li)Match any length of string with $(bold)*$()$(li)Match any single character with $(bold)?$()$(li)Match a single character from a group of characters surrounded by $(bold)[]$() (e.g. A[cr]t will match 'Act' and 'Art', but not 'Ant')"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(li)Match a single character that does not belong to a group of characters surrounded by $(bold)[! ]$() (e.g. A[!cr]t will match 'Aft' and 'Apt', but not 'Act' or 'Art')$(li)Match a string from a list of strings given inside $(bold){}$() (e.g. TerraFirma{Craft,Greg} will match both TerraFirma$(thing)Craft$() and TerraFirma$(thing)Greg$())$(li)All previous symbols can be escaped. For example, A$(bold)\\$()* will be read as A* and only match 'A*'."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "create:transmitter",
+			"anchor": "high_logistics",
+			"title": "Wyższa logistyka",
+			"text": "Moving packages around is good and all, but surely that can't be all there is? Well, you're exactly right. There's much more that can be done with packages, including $(thing)reading inventory contents$() and $(thing)having things be delivered remotely$(), and later on even $(thing)automatically sending ingredients to be processed$() based on an item's threshold!"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "But before delving into $(thing)High Logistics$(), some preparations are in order.$(br2)The $(item)Transmitters$() that would be required for crafting such equipment can only realistically be produced via high-energy light refracted through a very unique mineral: $(item)Rose Quartz$(). In other words, we need both a $(item)Basic Laser Engraver$() and some way of obtaining a $(item)Rose Quartz Lens$(), so you better get to getting these done, eh?"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "greate:rich_raw_rose_quartz,greate:raw_rose_quartz,greate:poor_raw_rose_quartz",
+			"title": "Różowy kwarc",
+			"anchor": "rose_quartz",
+			"text": "The only natural source of $(item)Rose Quartz$() of a high enough quality to easily craft the $(item)Lens$() out of is located far, far to the north in freezing temperatures (under $(3)-10°C$()). Getting Kaolin clay flashbacks yet?"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Rose Quartz only forms in the cores of ancient glaciers. Although not common, these are easily identified by their $(9)Blue Ice$() outer shells.$(br2)Besides the temperature requirement, they only spawn in $(thing)Ice Sheet$() or $(thing)Glaciated$() biomes.$(br2)The $(item)Rose Quartz$() will be found inside - first as ore, then as compressed raw ore blocks in the very center."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "greate:exquisite_rose_quartz_gem,greate:rose_quartz_lens",
+			"anchor": "exquisite",
+			"text": "What we need is $(item)Exquisite Rose Quartz$(), which you can get by $(thing)crushing, washing, and then sifting$() the raw ore you mined. The Exquisite gem has a 3% chance of being sifted out, but you only need one such gem to proceed.$(br2)$(c)Do not smelt the ore as this will only get you normal quality Rose Quartz$()!"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "The same preparations you once may have made for $(l:craftsmanship/pottery#kaolin_clay)Kaolin Clay$() will apply here as well: Prepare a lot of $(l:cooking)food$(), portable water to $(l:cooking/drinking_containers)drink$(), $(thing)warm clothes$(), and some transportation. ($(l:logistics/boats)Boats$() are nice, but $(thing)Aircraft$() should be well within your reach at this point)."
+		},
+		{
+			"type": "patchouli:image",
+			"text": "$(thing)Serca lodowców$() są otoczone małymi pąkami różowego kwarcu. Można je łatwo rozpoznać na mapie.",
+			"title": "Serce lodowca",
+			"border": true,
+			"images": [
+				"tfg:textures/gui/field_guide/rose_quartz.png"
+			]
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "create:stock_link",
+			"anchor": "stock_link",
+			"text": "The first $(thing)High Logistics$() machine you can make is a $(thing)Stock Link$(), which can be used to create a $(thing)Logistics Network$(). When placed onto any side of a $(l:logistics/create#packager)Packager$(), the Stock Link will make the inventory the Packager is attached to visible to the network!"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "On its own, the Stock Link isn't super useful, but it is a core component of all the other machines yet to come...$(br2)Remember to $(item)$(k:key.use)$() on an existing Stock Link before placing one down to tune the two to share the same network. To cancel this, you can simply craft the Stock Link by itself to clear its attunement.$(br2)Check the $(thing)ponder$() for more information!"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"enable_visualize": false,
+			"text": "The $(l:logistics/create#packager)Packager$() will only create a package when the Stock Link receives a signal from $(l:logistics/create#stock_ticker)elsewhere$() on the network.",
+			"name": "Przykład",
+			"multiblock": {
+				"pattern": [
+					[
+						" D"
+					],
+					[
+						"B0"
+					],
+					[
+						"  "
+					]
+				],
+				"mapping": {
+					"0": "create:packager[facing=south,linked=true,powered=false]",
+					"B": "#forge:chests/wooden",
+					"D": "create:stock_link[face=floor,facing=east]"
+				}
+			}
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "create:stock_ticker",
+			"anchor": "stock_ticker",
+			"text": "If you've already used $(l:logistics/create#stock_link)Stock Links$() to provide various items to a $(thing)Logistics Network$(), the next step is to make something that can call in said items remotely... And that's where the $(item)Stock Ticker$() comes in. Much like the Stock Link, you first need to $(item)$(k:key.use)$() an existing link to attune the Ticker to that network."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "You then need to place down a $(item)Blaze Burner$() or any mob in a $(l:logistics/trains#seat)Seat$() next to the Stock Ticker to have them work as a $(thing)Stock Keeper$().$(br2)Now that the poor creature is indentured for life, you can click on them to see all the items on the $(thing)Logistics Network$(). You can even search for items in the network, and create an order to be sent to specific addresses!"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "There's no range limitation for this, although you do need to create your own way of routing around the packages that will be ordered through the Stock Links as well as have the link in question chunkloaded for this to work.$(br2)Additionally, you can place $(item)Filters$() inside the Ticker so that only specific items are shown, or set up categories of items."
+		},
+		{
+			"type": "tfg:multimultiblock",
+			"enable_visualize": false,
+			"text": "Place a mob on the seat, then $(item)$(k:key.use)$() them to request items which will be deposited in the $(l:logistics/storage#crates)Steel Crate$().",
+			"name": "Minimalny system",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"VVVVVVV",
+							"VVVVVVV",
+							"VVVVVVV",
+							"    LP ",
+							"       "
+						],
+						[
+							"VVVVVVV",
+							"VVVVVVV",
+							"VVVVVVV",
+							"     C ",
+							"       "
+						],
+						[
+							"VVVVVVV",
+							"VVVVVVV",
+							"VVVVVVV",
+							"   0SR ",
+							" ET    "
+						]
+					],
+					"mapping": {
+						"V": "create:item_vault[axis=z,large=true]",
+						"L": "create:stock_link[face=wall,facing=north]",
+						"P": "create:packager[facing=west,linked=true]",
+						"C": "create_connected:brass_chute",
+						"R": "create:packager[facing=south]",
+						"S": "gtceu:steel_crate",
+						"T": "create:stock_ticker[facing=west]",
+						"E": "create:white_seat"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"       ",
+							"       ",
+							"     V ",
+							"    LP ",
+							"       "
+						],
+						[
+							"       ",
+							"       ",
+							"       ",
+							"     C ",
+							"       "
+						],
+						[
+							"       ",
+							"       ",
+							"       ",
+							"   0SR ",
+							" ET    "
+						]
+					],
+					"mapping": {
+						"0": "minecraft:air",
+						"V": "gtceu:bismuth_bronze_crate",
+						"L": "create:stock_link[face=wall,facing=north]",
+						"P": "create:packager[facing=west,linked=true]",
+						"C": "create_connected:brass_chute",
+						"R": "create:packager[facing=south]",
+						"S": "gtceu:steel_crate",
+						"T": "create:stock_ticker[facing=west]",
+						"E": "create:white_seat"
+					}
+				}
+			]
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "create:redstone_requester",
+			"anchor": "requester",
+			"text": "The $(item)Redstone Requester$() can be seen as a more specialized $(l:logistics/create#stock_ticker)Stock Ticker$(). You can't view items in the $(thing)Logistics Network$() from it, but you can set up an order to be requested automatically every time the machine gets a redstone signal."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "This can be very useful for setting up automated provision of specific items - consider using a $(l:logistics/redstone_devices#threshold_switch)Threshold Switch$() or $(l:logistics/redstone_devices#smart_observer)Smart Observer$() alongside this, for example.$(br2)Remember that like any other $(thing)High Logistics$() machine, you need to $(item)$(k:key.use)$() on an existing link before placing the Requester down to attune it to that network first!"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tag:create:table_cloths",
+			"title": "Obrusy",
+			"anchor": "table_cloths",
+			"text": "$(item)Table Cloths$() are Create's system for player-owned shops! Each Table Cloth can sell one item. You'll need a small setup with a $(l:logistics/create#stock_ticker)Stock Ticker$(), $(l:logistics/create#packager)Packager$(), and a $(thing)Stock Keeper$() (a Blaze Burner or mob in a seat) to get started."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(item)$(k:key.use)$() the Stock Keeper with your $(item)Table Cloth$(), then select the item to sell. Then just place the Table Cloth down on a block or some $(item)Scaffolding$().$(br2)After it's placed, $(item)$(k:key.use)$() the slot in the front of the Table Cloth with an item you want as payment. Afterwards, $(item)$(k:key.use)$() and hold to change the amount of that item."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "To buy items from another player's shop, $(item)$(k:key.use)$() the Table Cloths with an empty hand to add them to a $(thing)Shopping List$().$(br2)Once they're ready, $(item)$(k:key.use)$() the Stock Keeper with the Shopping List to buy the items!$(br2)A Shopping List can be cleared by $(item)$(k:key.sneak) + $(k:key.use)$(). Payment is then stored in the Stock Ticker, and the shop owner can collect it later or send it back to their base!"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "createstockbridge:ae_bridge",
+			"anchor": "stock_bridge",
+			"text": "If you invested heavily into Create's logistics network, you might despair at the thought of having to tear it all down to replace it with AE2 in $(6)HV$(). The $(item)Stock Bridge$() acts as a bridge between your ME network and your Create one. Check its Ponder to learn how to set it up.$(br)We still recommend moving over any old setups to AE2 eventually, mostly because it's much lighter on your game's performance."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "create:factory_gauge,fluidlogistics:fluid_factory_gauge",
+			"anchor": "factory_gauge",
+			"title": "Miernik fabryczny",
+			"text": "The $(item)Factory Gauge$() is the ultimate $(thing)High Logistics$() machine, requiring you to have the technology to make both $(item)Aluminium$() and $(item)Diodes$() before you can craft one - But it's extremely powerful to match."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "The first thing a Factory Gauge can do is be placed on a $(l:logistics/create#packager)Packager$() to monitor the amount of a specific item in the connected inventory. When set up like this, the gauge's outer border will be $(1)Blue$() and it is said to be in $(thing)Restocker Mode$().$(br2)The other way of using a Factory Gauge is to have it automatically ordering ingredients when the amount of target products in a $(thing)Logistics Network$() falls below a threshold."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "This is the operating mode when the gauge is placed on any block that is not a Packager; the outer border will be $(6)Yellow$(), and it is said to be in $(thing)Recipe Mode$().$(br2)In either mode, You can set a specific value that the Factory Gauge should attempt to maintain. You then have to set a target address in the GUI which is where the automatic order made will be directed to a target address of your choice."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "For the $(thing)Restocker Mode$(), the specified address should ideally point towards the packager the gauge has been placed on so that the incoming packages are automatically unwrapped into the target inventory.$(br2)For the $(thing)Recipe Mode$(), the specified address should point towards wherever you manufacture the product."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Additionally, you need to set up one additional gauge for each type of ingredient used, then connect them to the first gauge with $(thing)'Add New Connection'$() in the GUI.$(br2)If the product you are trying to craft in $(thing)Recipe Mode$() is a normal crafting recipe, you will need to $(thing)'Use Mechanical Crafting'$() and ensure that the package is unwraped into a 3x3 $(item)Mechanical Crafter$() array."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(c)It is important that the package is not unwrapped en route$(), as the package itself holds crafting recipe instructions - if the ingredients must come from different sources, look into using a $(l:logistics/create#repackager)Re-Packager$() to act as a buffer for the packages.$(br2)$(bold)Note:$() Factory Gauge requests are technically 'Promises', which are guarantees by the network that the items in question $(italic)will$() be delivered at some point in the future."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "This is done to prevent the items from being over-requested. By default, these promises never expire; This means the promise will remain in place forever if the items are unlikely to be delivered in the future.$(br2)You can change this behavior by adjusting the bottom section of the gauge GUI, which will limit how long promises stick around for."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Unsurprisingly, $(item)Fluid Factory Gauges$() are the same thing but for fluids.$(br2)Be sure to check out the $(thing)ponder$() for the Factory Gauges too! It has a $(italic)lot$() of visual examples of how to set it up.$(br2)$(bold)Note:$() If you get really into Gauges and wish you had more options, $(tfg_short) has optional compatibility with $(l:https://www.curseforge.com/minecraft/mc-mods/create-extra-gauges)Create: Extra Gauges$()! Just install the mod and new recipes will show up."
+		},
+		{
+			"type": "patchouli:relations",
+			"title": "Czytaj dalej",
+			"anchor": "relations",
+			"entries": [
+				"tfg:logistics/redstone_devices",
+				"tfg:logistics/storage",
+				"tfg:logistics/trains",
+				"tfg:logistics/railgun"
+			]
+		}
+	],
+	"extra_recipe_mappings": {
+		"tag:create:packages": 3,
+		"create:packager": 5,
+		"create:package_frogport": 11,
+		"fluidlogistics:copper_frogport": 11,
+		"create:package_filter": 16,
+		"create:repackager": 17,
+		"fluidlogistics:fluid_repackager": 18,
+		"fluidlogistics:hand_pointer": 19,
+		"tag:create:postboxes": 21,
+		"create:transmitter": 28,
+		"create:rose_quartz": 28,
+		"greate:rose_quartz_lens": 32,
+		"create:stock_link": 35,
+		"create:stock_ticker": 38,
+		"create:redstone_requester": 42,
+		"tag:create:table_cloths": 44,
+		"createstockbridge:ae_bridge": 47,
+		"create:factory_gauge": 48,
+		"fluidlogistics:fluid_factory_gauge": 48
+	}
+}

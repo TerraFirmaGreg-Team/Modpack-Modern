@@ -1,0 +1,99 @@
+{
+	"name": "Temperatura gracza",
+	"category": "tfg:game_mechanics",
+	"icon": "tfcambiental:straw_hat",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "$(thing)Player Temperature$() is the temperature that affects, $(bold)you$(), the player, and nothing else. It's different from, but influenced by, the $(l:the_world/climate#temperature)Current and Average Temperature$() of your climate, among $(l:game_mechanics/player_temperature#what_affects_it)other things$().$(br2)You need to keep an eye on it to avoid $(thing)heatstroke$() or $(thing)freezing$()!"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Zawartość",
+			"text": "$(li)$(bold)$(l:game_mechanics/player_temperature#hud)How to see your temperature$()$(li)$(bold)$(l:game_mechanics/player_temperature#what_affects_it)What affects it?$()$(li2)$(l:game_mechanics/player_temperature#what_affects_it)Climate and Seasons$()$(li2)$(l:game_mechanics/player_temperature#wetness)Wetness$()$(li2)$(l:game_mechanics/player_temperature#wetness)Direct sunlight$()$(li2)$(l:game_mechanics/player_temperature#wetness)Sprinting$()$(li2)$(l:game_mechanics/player_temperature#blocks)Blocks$()$(li2)$(l:game_mechanics/player_temperature#food)Food Effects$()$(li2)$(l:game_mechanics/player_temperature#clothing)Clothing$()$(li)$(bold)$(l:game_mechanics/player_temperature#house_tester)Enclosed Spaces$()$(li)$(bold)$(l:game_mechanics/player_temperature#heat_pump)Heat Pump$()"
+		},
+		{
+			"type": "patchouli:image",
+			"anchor": "hud",
+			"text": "Strzałka w środku wskazuje, czy twoja temperatura wzrasta czy spada.",
+			"title": "The Hotbar HUD",
+			"border": false,
+			"images": [
+				"tfg:textures/gui/field_guide/ambiental_hud.png"
+			]
+		},
+		{
+			"type": "patchouli:text",
+			"text": "You can see your player temperature by holding $(item)$(k:key.sneak)$() and looking at the numbers above your $(thing)hotbar$() at the bottom of the screen.$(br2)The two numbers on the right indicate your $(thing)current player temperature$() and the $(thing)target temperature$(), or the number your temperature is \"trending towards\" if your situation doesn't change.$(br2)The two numbers on the left are the same for your $(l:game_mechanics/player_temperature#wetness)wetness$()."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "The $(thing)right two temperature numbers$() are the ones to pay attention to! If your $(thing)player temperature$() goes $(6)above 30°C$() or $(3)below 0°C$(), you will begin taking damage.$(br2)When you are close to these temperatures, the arrow in the middle of the HUD will either be a bright orange or dark blue, and you will have an orange or blue tint to your screen."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "The $(item)gradient bar$() on the very bottom, replacing your XP bar, shows your $(thing)player temperature$() (the $(bold)white mark$()), the $(l:the_world/climate)current climate temperature$() (the $(bold)$(2)green 🔽$()), and the $(l:the_world/climate)average climate temperature$() (the $(bold)$(c)red 🔼$()), all at once.$(br2)The bar is split into 10°C segments, with the very middle representing 0°C."
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Co ma na to wpływ?",
+			"anchor": "what_affects_it",
+			"text": "There are many things that influence your temperature!$(br2)The most obvious one is what your climate is doing. You will be hotter in the $(l:the_world/climate#seasons)summer$() and colder in the $(l:the_world/climate#seasons)winter$(), living in the $(l:the_world/climate#climate)Arctic$() will make you colder than living in the $(l:the_world/climate#climate)Tropics$(), and so on."
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "wetness",
+			"text": "$(thing)Wetness$() will make you slightly colder, while also making you change temperature a bit faster. Unsurprisingly, you get wet from the rain or swimming, and dry off by... not touching water. Jumping in the water is a great way to cool down!$(br2)Standing in $(thing)direct sunlight$() increases temperature by a small amount that scales off the current climate temperature. Actively sprinting will also increase it a little."
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "blocks",
+			"text": "Various nearby blocks can affect your temperature much more strongly. For example, you can warm up with a $(l:craftsmanship/firepit)Firepit$(), $(l:craftsmanship/charcoal_forge)Charcoal Forge$(), or blocks like $(item)Magma$() or $(thing)Lava$(), while blocks such as $(item)Packed Ice$() will cool you down."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "More precisely, blocks will influence your temperature if they are up to $(thing)9$() blocks away horizontally, up to $(thing)3$() blocks below you, and up to $(thing)5$() blocks above you (19x9x19). Of those blocks, only the 5 blocks with the strongest effects will influence your temperature, but any $(l:game_mechanics/heating)heating$() devices will always count."
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Jedzenie i picie",
+			"anchor": "food",
+			"text": "Some $(l:cooking)food$() and $(l:cooking/drinks)drinks$() may have effects that influence the player's temperature. These are:$(li)$(l:game_mechanics/mob_effects#cooling)Cooling$()$(li)$(l:game_mechanics/mob_effects#warming)Warming$()$(li)$(l:game_mechanics/mob_effects#freezing)Freezing$()$(li)$(l:game_mechanics/mob_effects#blazing)Blazing$()$(br2)Drinking $(l:cooking/drinks#spring_water)Spring Water$() will warm you up, and $(l:cooking/drinks#ice_slush)Ice Slush$() will cool you down."
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Ubrania",
+			"anchor": "clothing",
+			"text": "Wearing $(l:craftsmanship/clothing)clothes$() is another important way to change your temperature. Clothes can either warm you up or cool you down (or neither), and may also have an $(thing)insulation$() effect that reduces the amount that other temperatures can influence you.$(br2)Some head clothes will also protect against $(l:game_mechanics/player_temperature#wetness)direct sunlight$()."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tfcambiental:house_tester",
+			"anchor": "house_tester",
+			"title": "Zamknięte przestrzenie",
+			"text": "Creating an enclosed space such as a house will provide an insulating effect. Blocks such as doors, trapdoors, and window panes count as \"sealed\". If you are unsure, the $(item)House Tester$() will tell you!$(br2)This effect will only heat a house up to a maximum of 5°C, and does not work in larger structures."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tfg:heat_pump",
+			"anchor": "heat_pump",
+			"text": "Once you're able to $(thing)harness electricity$(), you can craft the $(item)Heat Pump$(), a multiblock that will warm up or cool down much larger sized buildings."
+		},
+		{
+			"type": "patchouli:relations",
+			"title": "Czytaj dalej",
+			"anchor": "relations",
+			"entries": [
+				"tfg:the_world/climate",
+				"tfg:cooking/food_and_water",
+				"tfg:cooking/drinks",
+				"tfg:game_mechanics/hazards",
+				"tfg:game_mechanics/heating",
+				"tfg:game_mechanics/mob_effects",
+				"tfg:craftsmanship/clothing",
+				"tfg:craftsmanship/sewing_table"
+			]
+		}
+	],
+	"read_by_default": true
+}

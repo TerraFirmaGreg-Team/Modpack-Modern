@@ -259,7 +259,7 @@ function registerTFGCompostRecipes(event) {
 
 	event.recipes.greate.pressing(
 		['3x tfc:pure_potassium', 'tfc:pure_phosphorus'],
-		['gtceu:ash_dust', 'tfc:powder/wood_ash', 'tfc:powder/wood_ash', 'tfc:powder/wood_ash', 'tfc:powder/wood_ash', 
+		['tfc:powder/wood_ash', 'tfc:powder/wood_ash', 'tfc:powder/wood_ash', 'tfc:powder/wood_ash', 'tfc:powder/wood_ash', 
 		'tfc:powder/wood_ash', 'tfc:powder/wood_ash', 'tfc:powder/wood_ash', 'tfc:powder/wood_ash', 'tfc:powder/wood_ash'])
 		.id('tfg:pressing/wood_ash_to_pure')
 

@@ -1,0 +1,94 @@
+{
+	"name": "Марсіанське спорядження",
+	"category": "tfg:mars",
+	"icon": "tfg:certus_mechanism",
+	"read_by_default": true,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "$(li)$(bold)Зброя ближнього бою$()\n$(li2)$(l:mars/mars_equipment#nano_saber)Нано-шабля$()\n$(li)$(bold)$(l:mars/mars_equipment#ev_guns)Вогнепальна зброя$()\n$(li2)$(l:mars/mars_equipment#cannon)Ручна польова гармата$()\n$(li2)$(l:mars/mars_equipment#rifles)Вдосконалені гвинтівки$()\n$(li2)$(l:mars/mars_equipment#grenades)Гранатомет$()\n$(li2)$(l:mars/mars_equipment#shotguns)Вдосконалені рушниці$()\n$(li2)$(l:mars/mars_equipment#pistols)Вдосконалені пістолети та ПП$()\n$(li)$(bold)Броня$()\n$(li2)$(l:mars/mars_equipment#space_suit)Скафандр із вольфрамової сталі$()\n$(li)$(bold)Щити$()\n$(li2)$(l:mars/mars_equipment#reinforced_shield)Посилений щит$()\n$(li2)$(l:mars/mars_equipment#corrupted_shield)Зіпсований щит$()\n$(li2)$(l:mars/mars_equipment#ricoshield)Рикошетний щит$()"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "gtceu:nano_saber",
+			"anchor": "nano_saber",
+			"text": "$(item)Нано-шабля$() — потужна зброя ближнього бою, яку ти зможеш розблокувати наприкінці етапу $(5)EV$(). Просто використай $(item)$(k:key.sneak) + $(k:key.use)$(), щоб активувати $(thing)режим «бр-р-р»$()."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tfg:certus_mechanism",
+			"anchor": "ev_guns",
+			"text": "$(item)Істинний механізм$() використовується для створення зброї $(5)EV$()-рівня. Для багатьох із цих видів зброї потрібні боєприпаси, що містять істинний  кварц. На Місяці є величезні жили цього ресурсу, або ж ти можеш налагодити його нескінченне постачання через $(l:the_moon/regolith)місячний реголіт$()."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tacz:modern_kinetic_gun{GunId:\"create_armorer:cannon_40mm_salamander\"},tacz:ammo{AmmoId:\"create_armorer:40mmhe\"}",
+			"title": "Ручна польова гармата",
+			"anchor": "cannon",
+			"text": "Хочеш ходити з гарматою від танка? Ця зброя повільна, важка, але завдає величезної шкоди."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tacz:ammo{AmmoId:\"applied_armorer:hard_core_quartz_bullet\"},tacz:modern_kinetic_gun{GunId:\"applied_armorer:moritz_rifle_ar77\"},tacz:modern_kinetic_gun{GunId:\"applied_armorer:moritz_sniper_semi_k30\"}",
+			"title": "Покращена гвинтівка",
+			"anchor": "rifles",
+			"text": "Це добре збалансована зброя, якщо ти не знаєш, що обрати."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tacz:ammo{AmmoId:\"applied_armorer:fluix_infused_grenade\"},tacz:modern_kinetic_gun{GunId:\"applied_armorer:moritz_gernade_gl3\"}",
+			"title": "Гранатомет",
+			"anchor": "grenades",
+			"text": "Якщо тобі коли-небудь доведеться битися з великими групами ворогів одночасно, це може стати твоїм порятунком."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tacz:ammo{AmmoId:\"applied_armorer:cluster_quartz_bullet\"},tacz:modern_kinetic_gun{GunId:\"applied_armorer:moritz_shotgun_sg914\"}",
+			"title": "Покращений дробовик",
+			"anchor": "shotguns",
+			"text": "Чудово підходить для знищення цілей зблизька."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tacz:ammo{AmmoId:\"applied_armorer:etched_quartz_bullet\"},tacz:modern_kinetic_gun{GunId:\"applied_armorer:niklas_smg_freedom\"},tacz:modern_kinetic_gun{GunId:\"applied_armorer:niklas_pistol_double_win_win\"},tacz:modern_kinetic_gun{GunId:\"applied_armorer:niklas_pistol_semi_pride\"},tacz:modern_kinetic_gun{GunId:\"applied_armorer:niklas_pistol_semi_right\"}",
+			"title": "Покращений пістолет та пістолет-кулемет",
+			"anchor": "pistols",
+			"text": "Хочеш стріляти швидко? Ця зброя ідеально для цього підходить."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "ad_astra:netherite_space_helmet,ad_astra:netherite_space_suit,ad_astra:netherite_space_pants,ad_astra:netherite_space_boots",
+			"title": "Скафандр із вольфрамової сталі",
+			"anchor": "space_suit",
+			"text": "З цим наступним космічним костюмом ти зможеш виживати як у $(b)найхолодніших$(), так і в $(c)найспекотніших$() умовах, які може підкинути космос! Він знадобиться, щоб ти не згорів одразу, щойно ступиш на $(6)Венеру$() та $(5)Меркурій$().$(br)До того ж він дає додаткову броню та більший запас повітря!"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "tfg:shaped/reinforced_shield_from_shield",
+			"anchor": "reinforced_shield",
+			"text": "$(item)Посилений щит$() завдає шкоди нападникам, подібно до зачарування «Шипи» у звичайному Minecraft. Матеріали для його створення можна отримати з $(l:mars/mars_fauna#cruncher)Хрумкачів$() та $(l:mars/mars_fauna#eater)Кусак$()."
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "tfg:shaped/corrupted_shield",
+			"anchor": "corrupted_shield",
+			"text": "$(item)Зіпсований щит$() випадково телепортує нападників, що може бути корисно, щоб тримати їх якомога далі від себе... але він також може телепортувати їх тобі за спину. Зуби для його створення можна отримати з $(l:mars/mars_fauna#endermen)печерних ендерменів$() під поверхнею Марса."
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "tfg:shaped/ricoshield",
+			"anchor": "ricoshield",
+			"text": "$(item)Рикошетний щит$() поглинає певну кількість шкоди, а потім вивільняє ударну хвилю, завдаючи шкоди всьому поблизу. $(item)Кінетичне ядро$() можна рідко отримати як здобич із $(l:mars/mars_fauna#quake)ворожих големів$() у марсіанських печерах."
+		},
+		{
+			"type": "patchouli:relations",
+			"title": "Докладніше",
+			"anchor": "relations",
+			"entries": [
+				"tfg:mars/mars",
+				"tfg:mars/mars_fauna",
+				"tfg:logistics/exploration_gear"
+			]
+		}
+	]
+}

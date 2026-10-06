@@ -1,0 +1,77 @@
+{
+	"name": "物品加熱",
+	"category": "tfg:game_mechanics",
+	"sortnum": 5,
+	"icon": "tfc:textures/gui/book/icons/heating.png",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "加熱物品是將一種物品轉化為另一種物品，或將物品轉化為流體的方法。物品可以用許多方式加熱――例如$(l:craftsmanship/firepit)篝火$()、$(l:craftsmanship/pit_kiln)坑窯$()或$(l:craftsmanship/charcoal_forge)木炭爐$()等等。不過，它們的運作方式都相同。當你將物品放入這些裝置中，物品會逐漸開始升溫。這可以在物品的提示框中看到。"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "目錄",
+			"anchor": "index",
+			"text": "$(li)$(bold)$(l:game_mechanics/heating#temps)溫度一覽$()$(li)$(bold)防護$()$(li2)$(l:game_mechanics/heating#tongs)火鉗$()$(li2)$(l:game_mechanics/heating#cloth)隔熱手套與隔熱墊$()$(li2)$(l:game_mechanics/heating#equipment)其他裝備$()"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "temps",
+			"text": "物品的溫度以顏色表示，會依以下數值變化：$(br2)$(7)$(bold)溫熱$()：1 - 80 °C$(br)$(7)$(bold)熱$()：80 - 210 °C$(br)$(7)$(bold)非常熱$()：210 - 480 °C$(br)$(4)$(bold)暗紅色$()：480 - 580 °C$(br)$(bold)$(4)深紅色$()：580 - 730 °C$(br)$(c)$(bold)亮紅色$()：730 - 930 °C$(br)$(6)$(bold)橙色$()：930 - 1100 °C$(br)$(e)$(bold)$(t:黃色)黃色$()：1100 - 1300 °C$(br)$(e)$(t:黃白色)$(bold)黃白色$()：1300 - 1400 °C$(br)$(d)$(bold)$(t:白色)白色$()：1400 - 1500 °C$(br)$(d)$(bold)$(t:耀眼白熱)耀眼白熱$()：>1500 °C"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tag:tfchotornot:tongs",
+			"title": "火鉗",
+			"anchor": "tongs",
+			"text": "高溫物品燙得無法徒手拿取！當物品達到$(t:可在 tfchotornot-common.toml 中設定)$(4)暗紅色 *$()或更高溫度時，就會變得$(c)太燙而無法拿取$()！你必須在$(thing)副手$()拿著$(item)火鉗$()，才能避免燙傷自己。某些$(3)極冷$()的物品也是如此，例如$(item)藍冰$()。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(bold)注意：$()即使有火鉗，在物品欄中攜帶高溫或低溫物品仍會影響你的$(l:game_mechanics/player_temperature)體溫$()。"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "tfchotornot:crafting/tongs/wood",
+			"recipe2": "tfchotornot:crafting/tongs/wrought_iron",
+			"text": ""
+		},
+		{
+			"type": "tfg:anvil_recipe",
+			"title": "金屬火鉗零件",
+			"recipe": "tfchotornot:anvil/tong_part/wrought_iron",
+			"text": "$(item)木火鉗$()容易製作，但耐久度很低。考慮升級吧！$(br)$(item)金屬火鉗$()的耐久度高得多，而且可以修理。$(br)請注意，當物品欄中有高溫物品時，所有火鉗都會損耗耐久度，物品越多損耗越大。把它們丟($(item)$(k:key.drop)$())進水裡可以快速冷卻！"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tfchotornot:mittens,tfchotornot:burlap_potholder,tfchotornot:silk_potholder,tfchotornot:wool_potholder",
+			"anchor": "cloth",
+			"title": "布料替代品",
+			"text": "你也可以用$(l:agriculture/leather_making)皮革$()和$(l:agriculture/weaving)布料$()製作$(item)隔熱手套$()和$(item)隔熱墊$()。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tfc:metal/chestplate/blue_steel,tfc:metal/chestplate/red_steel,create:netherite_backtank,gtceu:hazmat_chestpiece,ad_astra:space_suit,ad_astra:netherite_space_suit,gtceu:quarktech_chestplate,gtceu:advanced_quarktech_chestplate",
+			"anchor": "equipment",
+			"title": "其他裝備",
+			"text": "最後，某些裝備也能在拿取這些物品時安全地保護你，例如$(item)藍鋼胸甲$()可以保護你不被高溫物品燙傷。"
+		},
+		{
+			"type": "patchouli:relations",
+			"title": "延伸閱讀",
+			"anchor": "relations",
+			"entries": [
+				"tfg:craftsmanship/pit_kiln",
+				"tfg:craftsmanship/crucible",
+				"tfg:craftsmanship/firepit",
+				"tfg:cooking/cooking_methods",
+				"tfg:game_mechanics/player_temperature",
+				"tfg:agriculture/leather_making",
+				"tfg:agriculture/weaving",
+				"tfg:game_mechanics/hazards"
+			]
+		}
+	],
+	"read_by_default": true
+}

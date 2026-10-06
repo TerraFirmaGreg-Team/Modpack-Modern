@@ -1,0 +1,103 @@
+{
+    "name": "種植作物",
+    "category": "tfg:agriculture",
+    "icon": "tfc:textures/item/food/wheat.png",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "anchor": "intro",
+            "text": "所有作物都需要種植在耕地上才能生長。有些作物還有其他特殊要求，例如需要種在水裡或需要支架才能生長。$(br2)作物生長不一定需要$(thing)養分$()，但養分有助於作物生長。養分主要有三種：$(b)氮$()、$(6)磷$()和$(d)鉀$()。每種作物都有其偏好的養分。",
+            "title": "種植作物"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "消耗最喜愛的養分會讓作物生長得更快，並提高收成時的產量。也就是說，消耗越多養分的作物，被破壞時掉落的食物越多！消耗一種養分時，也會少量補充周圍的其他養分。$(br)每種作物都有不同的$(l:the_world/climate#temperature)溫度$()和$(l:agriculture/growing_crops#hydration)含水量$()需求。你可以在$(l:the_world/wild_crops)[野生作物]$()或物品提示框中查看各作物的氣候範圍。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "當作物在含水量不足或超出溫度範圍的條件下種植時，作物會死亡。如果作物在死亡前已完全成熟，會掉落額外的種子。你可以用$(l:agriculture/composting#rotten_compost)腐爛堆肥$()刻意殺死作物來複製種子。種在$(l:agriculture/greenhouse#planters)溫室種植盆$()中的作物不會死亡，並會自動提供額外的種子。"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "hydration",
+            "text": "含水量是衡量作物可用水分百分比的指標。不同類型的作物計算含水量的方式不同。$(li)$(l:the_world/wild_crops)作物$()和$(l:the_world/wild_fruits#tall_bushes)漿果叢$()的含水量同時受當地降雨量與鄰近淡水的距離影響。$(li2)具體來說，作物含水量的計算公式為：$(o)$(2)(60 * 降雨量 / $(t:500 是允許的最大降雨量。如果你透過設定檔修改了最大降雨量，請將 500 替換為該數值。)500$()$(o)$(2)) + 20 * (5 - waterCost)$()，其中$(t:與水的距離以 3D 網格計算。)waterCost 是與淡水的距離，範圍為 1-5$()",
+            "title": "含水量"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)$(l:the_world/wild_fruits#fruit_trees)果樹$()、$(l:the_world/wild_fruits#palm_fruit_trees)棕櫚果樹$()和$(l:the_world/wild_fruits#banana)香蕉$()的含水量計算公式為：$(o)$(2)降雨量 / 5$()$(br2)葡萄沒有含水量需求。稻米和蔓越莓等水生作物也沒有含水量需求，因為……嗯……它們本來就泡在水裡。"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "growing_grapes",
+            "text": "葡萄必須種在由柱子和黃麻纖維搭成的棚架上。搭建棚架時，先垂直放置兩根柱子，接著隔開一格空隙，在左側或右側再搭一根柱子。手持$(thing)黃麻纖維$()對頂部和底部的柱子按下$(item)$(k:key.use)$()，即可在柱子之間拉線。最後在柱子之間空隙的泥土或土壤上種下葡萄種子。葡萄棚架可以水平串接，種出一整排葡萄。",
+            "title": "種植葡萄"
+        },
+        {
+            "type": "tfg:multimultiblock",
+            "text": "一個葡萄架。",
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "XYX"
+                        ],
+                        [
+                            "XGX"
+                        ],
+                        [
+                            "D0D"
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "tfc:dirt/loam",
+                        "G": "firmalife:grape_string_plant_red[axis=z,lifecycle=healthy,stage=0]",
+                        "D": "tfc:dirt/loam",
+                        "X": "firmalife:grape_trellis_post[axis=x,string_plus=true,string_minus=true]",
+                        "Y": "firmalife:grape_string[axis=z]"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "ZYZ"
+                        ],
+                        [
+                            "XGX"
+                        ],
+                        [
+                            "D0D"
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "tfc:dirt/loam",
+                        "G": "firmalife:grape_string_plant_red[axis=z,lifecycle=healthy,stage=2]",
+                        "D": "tfc:dirt/loam",
+                        "X": "firmalife:grape_trellis_post[axis=x,string_plus=true,string_minus=true]",
+                        "Y": "firmalife:grape_string_red[axis=z,lifecycle=healthy]",
+                        "Z": "firmalife:grape_trellis_post_red[axis=x,lifecycle=healthy,string_plus=true,string_minus=true]"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "patchouli:text",
+            "text": "只要滿足$(l:the_world/climate#temperature)溫度$()需求，葡萄藤會在幾個月內沿著棚架向上蔓延並爬滿整個棚架。它會在前一個月開花，並在七月結果。收成的葡萄可以用來釀造$(l:cooking/alcohol#wine_making)葡萄酒$()。$(br2)即使超出溫度範圍，葡萄植株也不會死亡，但會進入休眠，直到溫度恢復適宜之前都不會結果。"
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "延伸閱讀",
+            "anchor": "relations",
+            "entries": [
+                "tfg:the_world/wild_crops",
+                "tfg:the_world/wild_fruits",
+                "tfg:cooking/alcohol",
+                "tfg:the_world/climate",
+                "tfg:agriculture/greenhouse"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 1,
+    "priority": true
+}

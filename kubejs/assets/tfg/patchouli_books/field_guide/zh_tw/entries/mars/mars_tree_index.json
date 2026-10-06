@@ -1,0 +1,82 @@
+{
+	"name": "火星蘑菇索引",
+	"category": "tfg:mars",
+	"icon": "tfg:saplings/aeronos",
+	"read_by_default": true,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "這是火星上所有巨型蘑菇的清單，以及它們生長的氣候。$(br2)想找特定種類的蘑菇柄來裝飾你的基地嗎？這份清單應該能幫你找到。清單依菇柄種類的字母順序排列。"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "目錄",
+			"anchor": "index",
+			"text": "$(li)$(bold)大型蕈菇$()$(li2)$(l:mars/mars_tree_index#aeronos)艾羅諾斯$()$(li2)$(l:mars/mars_tree_index#alphacene)始源紀$()$(li2)$(l:mars/mars_tree_index#crimson)緋紅$()$(li2)$(l:mars/mars_tree_index#glacian)霜原$()$(li2)$(l:mars/mars_tree_index#strophar)斯特羅法$()$(li2)$(l:mars/mars_tree_index#warped)扭曲$()$(li)$(bold)$(l:mars/mars_tree_index#iodine)碘$()"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "艾羅諾斯",
+			"anchor": "aeronos",
+			"item": "ad_astra:aeronos_stem",
+			"text": "$(bold)艾羅諾斯蕈菇$()$(br)$(thing)溫度$()：-100°C 以上$(br)較常出現在東方。$(br)$(thing)生長天數$()：7"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "始源紀",
+			"anchor": "alphacene",
+			"item": "species:alphacene_mushroom_block",
+			"text": "$(bold)始源紀蕈菇$()$(br)$(thing)溫度$()：-85°C 以上$(br)東方和西方都會出現。$(br)$(thing)生長天數$()：3$(br2)始源紀蕈菇方塊可以與$(l:mars/mars_crops#bulbkin)球莖南瓜塊$()組合，取得$(item)螢石粉$()。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "緋紅",
+			"anchor": "crimson",
+			"item": "tag:tfc:crimson_logs",
+			"text": "$(bold)緋紅蕈菇$()$(br)$(thing)溫度$()：-109 — -13°C$(br)較常出現在東方。$(br)$(thing)生長天數$()：6$(br2)$(bold)提示：$()想炫耀一下嗎？你可以用緋紅菇柄建造$(l:logistics/boats#canoe)獨木舟$()。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "霜原",
+			"anchor": "glacian",
+			"item": "tag:ad_astra:glacian_logs",
+			"text": "$(bold)霜原蕈菇$()$(br)$(thing)溫度$()：-107°C 以下$(br)東方和西方都會出現。$(br)$(thing)生長天數$()：9"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "斯特羅法",
+			"anchor": "strophar",
+			"item": "ad_astra:strophar_stem",
+			"text": "$(bold)斯特羅法蕈菇$()$(br)$(thing)溫度$()：-100°C 以上$(br)較常出現在西方。$(br)$(thing)生長天數$()：7"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "扭曲",
+			"anchor": "warped",
+			"item": "tag:tfc:warped_logs",
+			"text": "$(bold)扭曲蕈菇$()$(br)$(thing)溫度$()：-109 — -13°C$(br)較常出現在西方。$(br)$(thing)生長天數$()：6$(br2)$(bold)提示：$()想炫耀一下嗎？你可以用扭曲菇柄建造$(l:logistics/boats#rowboat)划艇$()或$(l:logistics/boats#sloop)單桅縱帆船$()。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tag:forge:dusts/iodine",
+			"title": "碘",
+			"anchor": "iodine",
+			"text": "$(l:mars/mars_tree_index#crimson)緋紅$()和$(l:mars/mars_tree_index#warped)扭曲$()蕈菇可以分別採集出$(4)緋紅烯$()和$(3)扭曲烷$()。$(br2)要開始生產$(thing)碘$()，兩者都需要，但它們不常長在同一個地方，所以你可能需要四處走走。你也可以從對應的$(l:mars/mars_fauna#endermen)終界使者$()身上取得菌苗。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "將緋紅烯和扭曲烷，加上火星空氣蒸餾所得的一些氪(可循環使用)，再利用$(l:mars/fission)核分裂反應爐$()的熱量混合，就能得到$(item)碘$()！$(br2)這個過程很慢，但你目前應該不需要很多，而且在更遠的行星上會有更好的取得碘的方法。"
+		},
+		{
+			"type": "patchouli:relations",
+			"title": "延伸閱讀",
+			"anchor": "relations",
+			"entries": [
+				"tfg:mars/mars",
+				"tfg:the_world/earth_tree_index",
+				"tfg:beneath/beneath_tree_index",
+				"tfg:agriculture/tree_tapping"
+			]
+		}
+	]
+}

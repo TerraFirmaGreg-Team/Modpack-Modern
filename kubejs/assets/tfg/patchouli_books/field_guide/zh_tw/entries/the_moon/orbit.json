@@ -1,0 +1,66 @@
+{
+	"name": "太空站",
+	"category": "tfg:the_moon",
+	"icon": "ad_astra:textures/gui/sprites/space_station.png",
+	"read_by_default": true,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "只要把下列物品放在你的物品欄(或火箭的物品欄)中，發射後就能在軌道上建造一座$(item)太空站$()！$(br)$(li)43 個鋁框架$(li)24 片玻璃板$(li)4 個螢光石粉$(li)1 個發射台"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "上面其實沒什麼事可做，而且完全是選擇性的。但如果你基於某種原因想要一個虛空維度，或只是$(italic)非常$()喜歡高空跳傘，那這是個選擇。$(br2)記得帶點能抓住的東西，因為軌道上$(thing)沒有重力$()。$(br2)$(bold)小技巧：$()在配方條件中，軌道視同$(item)無塵室$()。"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"anchor": "space_station",
+			"name": "太空平台",
+			"text": "會建造一座平台，讓你的火箭降落。",
+			"enable_visualize": false,
+			"multiblock": {
+				"pattern": [
+					[
+						"       ",
+						"       ",
+						"       ",
+						"   0   ",
+						"       ",
+						"       ",
+						"       "
+					],
+					[
+						"GXXXXXG",
+						"XXXXXXX",
+						"XXXXXXX",
+						"XXXXXXX",
+						"XXXXXXX",
+						"XXXXXXX",
+						"GXXXXXG"
+					]
+				],
+				"mapping": {
+					"0": "ad_astra:launch_pad",
+					"X": "gtceu:aluminium_frame",
+					"G": "gtceu:white_lamp"
+				}
+			}
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "ad_astra:zip_gun",
+			"anchor": "zip_gun",
+			"text": "噴射槍可以填充任何可呼吸的$(l:the_moon/the_moon#gases)壓縮氣體$()來噴出空氣，在低重力環境中推動你移動。如果你想在軌道上建造任何東西，這是必備工具！"
+		},
+		{
+			"type": "patchouli:relations",
+			"title": "延伸閱讀",
+			"anchor": "relations",
+			"entries": [
+				"tfg:the_moon/the_moon",
+				"tfg:the_moon/preparations",
+				"tfg:logistics/railgun"
+			]
+		}
+	]
+}

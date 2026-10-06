@@ -1,0 +1,273 @@
+{
+    "name": "鍛鐵爐",
+    "category": "tfg:craftsmanship",
+    "icon": "tfc:bloomery",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(thing)鍛鐵爐$()是用來將$(thing)鐵礦石$()熔煉成$(thing)方胚$()的裝置，方胚可以再鍛造成$(thing)鍛鐵$()。常見的鐵礦石有$(item)赤鐵礦$()、$(item)褐鐵礦$()和$(item)磁鐵礦$()。這些礦石會熔化成$(thing)鑄鐵$()而非$(thing)鍛鐵$()。所有含鐵的物品都會熔化成鑄鐵。要將它們轉化為可用的鐵，就需要鍛鐵爐。任何鐵製物品都可以放入鍛鐵爐，包括鐵製工具和鑄鐵錠！"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "tfc:crafting/bloomery",
+            "text": "鍛鐵爐由 8 個$(thing)雙重青銅板$()製成，總共需要 32 個青銅錠。$(br)鍛鐵爐還需要$(t:#tfc:bloomery_insulation)$(6)22 個石頭方塊$()，例如石磚。"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        " A ",
+                        "A A",
+                        " A "
+                    ],
+                    [
+                        " A ",
+                        "A A",
+                        " A "
+                    ],
+                    [
+                        " A ",
+                        "A A",
+                        " A "
+                    ],
+                    [
+                        "AA ",
+                        "B0A",
+                        "AA "
+                    ],
+                    [
+                        " A ",
+                        "AAA",
+                        " A "
+                    ]
+                ],
+                "mapping": {
+                    "B": "tfc:bloomery[facing=north]",
+                    "A": "tfc:rock/smooth/dacite"
+                }
+            },
+            "name": "鍛鐵爐結構",
+            "text": "全尺寸的鍛鐵爐。按下$(item)$(k:key.use)$()可以開關鍛鐵爐方塊。",
+            "enable_visualize": true
+        },
+        {
+            "type": "patchouli:text",
+            "text": "鍛鐵爐最多可以容納 48 個$(thing)材料$()，煙囪每層 16 個物品：8 個木炭和 8 個含鐵物品。$(br2)要將物品放入鍛鐵爐，爬到頂端並按下$(item)$(k:key.drop)$()把物品丟進去。應該會形成一座灰色礦石塔。$(br2)鍛鐵爐只能使用$(item)木炭$()作為燃料。"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/bloomery_hole.png"
+            ],
+            "text": "鍛鐵爐每消耗$(thing)一個木炭$()以及$(thing)144mb的鑄鐵$()來生產一塊$(thing)生鐵方胚$()。",
+            "border": true
+        },
+        {
+            "type": "patchouli:text",
+            "text": "大多數鐵粉含有 129mB 的鐵，所以除非你使用純鑄鐵錠，否則我們建議一座全滿的鍛鐵爐放入$(item)25 個金屬礦粉$()和$(item)22 個木炭$()。這會損失 57mB 的鐵。$(br)在鍛鐵爐中放滿$(thing)燃料$()和$(thing)礦石$()後，點燃鍛鐵爐的爐門，等待$(t:12.5 分鐘)$(6)遊戲中 15 小時$()讓鍛鐵爐熔煉。鍛鐵爐熄滅後，會留下一個$(thing)方胚$()方塊。裡面含有高溫的$(thing)粗方胚$()，用鎬反覆挖掘$(thing)方胚$()方塊即可取得。"
+        },
+        {
+            "type": "tfg:table",
+            "anchor": "ratio_table",
+            "strings": [
+                {
+                    "text": "鐵的種類",
+                    "bold": true
+                },
+                {
+                    "text": "鐵",
+                    "bold": true
+                },
+                {
+                    "text": "燃料",
+                    "bold": true
+                },
+                {
+                    "text": "欄位",
+                    "bold": true
+                },
+                {
+                    "text": "方胚",
+                    "bold": true
+                },
+                {
+                    "text": "損耗",
+                    "bold": true
+                },
+                {
+                    "text": "鑄鐵錠"
+                },
+                {
+                    "text": "24"
+                },
+                {
+                    "text": "24"
+                },
+                {
+                    "text": "48/48"
+                },
+                {
+                    "text": "24"
+                },
+                {
+                    "text": "0mB"
+                },
+                {
+                    "text": "129mB 礦粉"
+                },
+                {
+                    "text": "25"
+                },
+                {
+                    "text": "22"
+                },
+                {
+                    "text": "47/48"
+                },
+                {
+                    "text": "22"
+                },
+                {
+                    "text": "57mB"
+                },
+                {
+                    "text": "129mB 礦粉"
+                },
+                {
+                    "text": "19"
+                },
+                {
+                    "text": "17"
+                },
+                {
+                    "text": "36/48"
+                },
+                {
+                    "text": "17"
+                },
+                {
+                    "text": "3mB"
+                }
+            ],
+            "text": "記住，一點點鐵的損耗不值得你花時間煩惱！",
+            "title": "鍛鐵爐比例",
+            "legend": [],
+            "columns": 5,
+            "first_column_width": 70,
+            "column_width": 32,
+            "row_height": 20,
+            "left_buffer": 2,
+            "top_buffer": 12,
+            "draw_background": false
+        },
+        {
+            "type": "patchouli:empty",
+            "draw_filler": false
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfc:bloom[layers=8]"
+                }
+            },
+            "name": "方胚",
+            "text": "大塊$(thing)方胚$()。",
+            "enable_visualize": false
+        },
+        {
+            "type": "tfg:anvil_recipe",
+            "recipe": "tfc:anvil/refined_iron_bloom",
+            "text": "$(thing)粗方胚$()必須在$(l:craftsmanship/anvils)鐵砧$()上鍛造成$(thing)精煉方胚$()，然後再次鍛造成$(thing)鍛鐵錠$()。$(br)建議使用$(l:craftsmanship/anvils#helve_hammer)杵錘$()來自動化精煉步驟。"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "tips",
+            "text": "$(li)如果鍛鐵爐中的物品超過它能處理的數量，它會試著從前方吐出多餘的物品。$(li)要從未點燃的鍛鐵爐中取回物品，請破壞鍛鐵爐方塊。$(li)方胚只會熔化成鑄鐵，而不是鍛鐵。它們必須經過鍛造！",
+            "title": "鍛鐵爐技巧"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "steam_bloomery",
+            "title": "蒸汽鍛鐵爐",
+            "item": "tfg:steam_bloomery",
+            "text": "製作出$(item)黑鋼$()後即可使用$(thing)蒸汽鍛鐵爐$()。這座結構能自動生產方胚，而且由於使用高壓蒸汽，比傳統鍛鐵爐更快、更有效率。"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        " A ",
+                        "A A",
+                        " A "
+                    ],
+                    [
+                        " A ",
+                        "O A",
+                        " A "
+                    ],
+                    [
+                        " A ",
+                        "I A",
+                        " A "
+                    ],
+                    [
+                        "AA ",
+                        "B0A",
+                        "AA "
+                    ],
+                    [
+                        " F ",
+                        "SAF",
+                        " F "
+                    ]
+                ],
+                "mapping": {
+                    "B": "tfg:steam_bloomery[facing=north]",
+                    "A": "tfc:rock/smooth/dacite",
+                    "F": "gtceu:bronze_firebox_casing",
+                    "S": "gtceu:steam_input_hatch[facing=north]",
+                    "I": "gtceu:steam_input_bus[facing=north]",
+                    "O": "gtceu:steam_output_bus[facing=north]"
+                }
+            },
+            "name": "結構",
+            "text": "蒸汽鍛鐵爐需要物品輸入匯流排和物品輸出匯流排、一個蒸汽輸入倉，以及三個青銅火箱外殼。",
+            "enable_visualize": true
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "延伸閱讀",
+            "anchor": "relations",
+            "entries": [
+                "tfg:craftsmanship/pottery",
+                "tfg:craftsmanship/metallurgy",
+                "tfg:craftsmanship/charcoal_forge",
+                "tfg:craftsmanship/crucible",
+                "tfg:craftsmanship/charcoal_pit",
+                "tfg:craftsmanship/blast_furnace",
+                "tfg:craftsmanship/anvils",
+                "tfg:game_mechanics/heating"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 9,
+    "extra_recipe_mappings": {
+        "tfc:bloom": 10,
+        "tfc:raw_iron_bloom": 10,
+        "tfc:refined_iron_bloom": 10,
+        "tfc:bloomery": 1,
+        "tfg:steam_bloomery": 12
+    }
+}

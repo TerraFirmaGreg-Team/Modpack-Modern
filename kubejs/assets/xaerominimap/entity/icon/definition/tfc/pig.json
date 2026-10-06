@@ -1,0 +1,7 @@
+{
+  "variants" : {
+    "default" : "outlined_sprite:tfc/pig_young.png",
+    "tfc:textures/entity/animal/pig_young.png" : "outlined_sprite:tfc/pig_young.png",
+    "tfc:textures/entity/animal/pig_old.png" : "outlined_sprite:tfc/pig_old.png"
+  }
+}

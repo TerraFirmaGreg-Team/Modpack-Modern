@@ -1,0 +1,225 @@
+{
+    "name": "Тваринництво",
+    "category": "tfg:agriculture",
+    "icon": "minecraft:textures/item/egg.png",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "anchor": "index",
+            "text": "$(li)$(bold)$(l/animal_husbandry#intro)Худоба$()$(li)$(bold)$(l/animal_husbandry#uses)Використання$()$(li2)$(l/animal_husbandry#uses_table)Таблиця використань$()$(li)$(bold)$(l/animal_husbandry#familiarity)Прирученість$()$(li)$(bold)$(l/animal_husbandry#mammals)Ссавці$()$(li2)$(l/animal_husbandry#wooly_animals)Вовнисті ссавці$()$(li2)$(l/animal_husbandry#dairy_animals)Молочні ссавці$()$(li2)$(l/animal_husbandry#equines)Коневі$()$(li2)$(l/animal_husbandry#camelides)Верблюдові$()$(li)$(bold)$(l/animal_husbandry#oviparous_animals)Яйцекладні тварини$()$(li)$(bold)$(l/animal_husbandry#feeding_trough)Годівниця$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "intro",
+            "title": "Вступ",
+            "text": "$(thing)Худоба$() — це тварини, яких гравець може приручати та розводити. Худоба може бути $(thing)самцем$() або $(thing)самкою$(). Для деяких тварин стать можна визначити візуально. Наприклад, самці свиней мають ікла."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "uses",
+            "title": "Використання",
+            "text": "Худоба має максимальну кількість $(item)використань$() — це відображається показником «Старість», — після якої вона $(thing)старіє$(). Тварини народжуються дитинчатами, які менші за розміром і не можуть нічого давати гравцеві. Через певну кількість днів вони виростають у $(thing)дорослих$() тварин, які можуть розмножуватися, давати молоко тощо. Після розмноження або достатньої кількості використань тварини стають $(thing)старими$() і придатні лише для отримання м’яса."
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/old_cow.png"
+            ],
+            "text": "Цей бик старий і не може розмножуватися. Він має вицвіле хутро та сірі потьмянілі очі",
+            "border": true
+        },
+        {
+            "type": "tfg:table",
+            "anchor": "uses_table",
+            "strings": [
+                {
+                    "text": "Дія",
+                    "bold": true
+                },
+                {
+                    "text": "Використання (самець)",
+                    "bold": true
+                },
+                {
+                    "text": "Використання (самка)",
+                    "bold": true
+                },
+                {
+                    "text": "Нотатки",
+                    "bold": true
+                },
+                {
+                    "text": "Парування",
+                    "bold": true
+                },
+                {
+                    "text": "-5"
+                },
+                {
+                    "text": " "
+                },
+                {
+                    "text": "Лише самці"
+                },
+                {
+                    "text": "Народження",
+                    "bold": true
+                },
+                {
+                    "text": " "
+                },
+                {
+                    "text": "-10"
+                },
+                {
+                    "text": "Лише ссавці"
+                },
+                {
+                    "text": "Відкладання яєць",
+                    "bold": true
+                },
+                {
+                    "text": " "
+                },
+                {
+                    "text": "-1"
+                },
+                {
+                    "text": "Таке саме запліднення"
+                },
+                {
+                    "text": "Продукти",
+                    "bold": true
+                },
+                {
+                    "text": " "
+                },
+                {
+                    "text": "-1"
+                },
+                {
+                    "text": "Молоко, вовна тощо"
+                }
+            ],
+            "title": "Таблиця використань",
+            "legend": [],
+            "columns": 3,
+            "first_column_width": 47,
+            "column_width": 64,
+            "row_height": 20,
+            "left_buffer": 2,
+            "top_buffer": 12,
+            "draw_background": false
+        },
+        {
+            "type": "patchouli:empty",
+            "draw_filler": false
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Прирученість",
+            "anchor": "familiarity",
+            "text": "Худобу можна годувати, щоб підвищувати $(thing)прирученість$(). Кожна тварина має їжу, якій віддає перевагу. Щоб погодувати тварину, затисни $(item)$(k:key.sneak)$() і натисни $(item)$(k:key.use)$(), тримаючи їжу в руці.$(br) Для більшості взаємодій із худобою потрібна прирученність. Прирученість передається нащадкам від матері, але на нижчому рівні."
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/unfamiliarized_pig.png"
+            ],
+            "text": "У худоби є $(thing)індикатор причучення$(). Утримуй $(item)$(k:key.sneak)$() та дивись на тварину, щоб його побачити.",
+            "border": true
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/no_familiarity_decay_pig.png"
+            ],
+            "text": "Приручення потруху зникає, коли худобу не годувати. Підвищення рівня запобігає занепаду, що зазначено білим окресленим серцем.",
+            "border": true
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/familiarity_limit_pig.png"
+            ],
+            "text": "Дорослу худобу неможливо повністю приручити, на що вказує серце з червоним контуром. Але ж їхній виводок може досягти 100% прирученості.",
+            "border": true
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Ссавці",
+            "anchor": "mammals",
+            "text": "$(thing)Ссавці$() — це худоба, яка проходить через $(thing)вагітність$(). Дорослі ссавці з показником прирученості понад 30%, яких годували цього дня, паруються, якщо вони різної статі та перебувають поруч одне з одним. Самка стає $(thing)вагітною$(), після чого через певну кількість днів після запліднення народжує дитинчя.$(br)Приклад — $(l:the_world/wild_animals#pig)свині$()."
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Вовнисті ссавці",
+            "anchor": "wooly_animals",
+            "text": "$(thing)Вовнисті тварини$() — це $(l:agriculture/animal_husbandry#mammals)ссавці$(), яких можна $(thing)стригти$(), якщо вони дорослі та достатньо до тебе звикли. Прикладами є $(l:the_world/wild_animals#sheep)вівці$(), $(l:the_world/wild_animals#alpaca)альпаки$() та $(l:the_world/wild_animals#musk_ox)мускусні корови$()."
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Молочні ссавці",
+            "anchor": "dairy_animals",
+            "text": "$(thing)Молочні тварини$() — це ссавці, які дають $(thing)молоко$(). На самку молочної тварини можна натиснути відром, щоб отримати молоко. Прикладами є $(l:the_world/wild_animals#goat)кози$(), $(l:the_world/wild_animals#cow)корови$() та $(l:the_world/wild_animals#yak)яки$()."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "equines",
+            "title": "Коневі",
+            "text": "$(thing)Коневі$() — це $(l:agriculture/animal_husbandry#mammals)ссавці$(), на яких можна їздити верхи після приручення. Вони стають придатними для верхової їзди після досягнення 15% приручення та оснащення $(l:agriculture/leather_making)сідлом$().$(br)$(l:the_world/wild_animals#mule)Мули$() та $(l:the_world/wild_animals#donkey)віслюки$() можуть переносити будь-яку скриню або діжку. Якщо на тварині встановлена діжка, натискання $(item)$(k:key.use)€() із затиснутою $(item)$(k:key.sneak)$() дає змогу зняти її. Ті самі клавіші в поєднанні з відром можна використовувати для відкачування рідини з діжки."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "camelides",
+            "title": "Верблюдові",
+            "text": "$(thing)Верблюдові$() — це $(l:agriculture/animal_husbandry#mammals)ссавці$(), подібні до $(l:agriculture/animal_husbandry#equines)коневих$() тим, що на них можна їздити верхи після приручення. Вони стають придатними для верхової їзди після досягнення 15% приручення та оснащення $(l:agriculture/leather_making)сідлом$(). Верблюди мають природно велику висоту кроку та можуть долати яри завдяки потужним стрибкам із розгону."
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": "Яйцекладні тварини",
+            "anchor": "oviparous_animals",
+            "recipe": "tfc:crafting/nest_box",
+            "text": "$(thing)Яйцекладні тварини$() — це не $(l:agriculture/animal_husbandry#mammals)ссавці$(), і замість народження дитинчат вони розмножуються, відкладаючи $(thing)яйця$(). Для відкладання яєць їм потрібно $(thing)гніздо$(), який вони можуть самостійно знайти.$(br)Прикладами є $(l:the_world/wild_animals#duck)качки$(), $(l:the_world/wild_animals#quail)перепілки$() та $(l:the_world/wild_animals#chicken)кури$()."
+        },
+        {
+            "type": "tfg:heat_recipe",
+            "recipe": "tfg:heating/forge_eggs_to_tfc_food_cooked_egg",
+            "text": "$(thing)Яйця$() можна готувати або варити для їжі. Самці яйцекладних тварин можуть запліднювати самок, унаслідок чого наступне яйце, знесене в гніздs, буде заплідненим. На запліднених яйцях у підказці буде вказано, скільки часу залишилося до вилуплення.$(br2)З яйцекладних тварин також можна $(thing)вищипувати$() пір'я за допомогою $(item)$(k:key.sneak)  + $(k:key.use)$()."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "Годівниця",
+            "anchor": "feeding_trough",
+            "item": "tfcgroomer:bismuth_bronze_grooming_station,tfcgroomer:black_bronze_grooming_station,tfcgroomer:bronze_grooming_station,tfcgroomer:copper_grooming_station,tfcgroomer:wrought_iron_grooming_station,tfcgroomer:steel_grooming_station,tfcgroomer:black_steel_grooming_station,tfcgroomer:red_steel_grooming_station,tfcgroomer:blue_steel_grooming_station",
+            "text": "$(thing)Годівниці$() можуть автоматично годувати тварин у зоні, зазначеній у їхній підказці. Метали вищого рівня $(l:craftsmanship/metallurgy)металургії$() збільшують радіус годування.$(br)Щоб додати корм для тварин і, за бажанням, увімкнути автоматичне розведення, відкрий інтерфейс годівниці за допомогою $(item)$(k:key.use)$()."
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Докладніше",
+            "anchor": "relations",
+            "entries": [
+                "tfg:agriculture/growing_crops",
+                "tfg:agriculture/weaving",
+                "tfg:the_world/wild_crops",
+                "tfg:the_world/wild_animals",
+                "tfg:agriculture/leather_making",
+                "tfg:agriculture/weaving"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "priority": true,
+    "extra_recipe_mappings": {
+        "tfc:nest_box": 15,
+        "tfcgroomer:bismuth_bronze_grooming_station": 17,
+        "tfcgroomer:black_bronze_grooming_station": 17,
+        "tfcgroomer:bronze_grooming_station": 17,
+        "tfcgroomer:copper_grooming_station": 17,
+        "tfcgroomer:wrought_iron_grooming_station": 17,
+        "tfcgroomer:steel_grooming_station": 17,
+        "tfcgroomer:black_steel_grooming_station": 17,
+        "tfcgroomer:red_steel_grooming_station": 17,
+        "tfcgroomer:blue_steel_grooming_station": 17
+    }
+}

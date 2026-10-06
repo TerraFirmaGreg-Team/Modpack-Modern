@@ -4,6 +4,141 @@
 ### Changes
 ### Bug fixes
 
+## [0.13.11] - 05-10-2026
+### Breaking Changes
+#### Oxygen Rework
+- Completely reworked Ad Astra's oxygenation mechanics and replaced them with our own native system. (#4931) @Mqrius
+- Added the Oxygen Distributor multiblock to replace Ad Astra's Air Distributor. This one oxygenates an entire enclosed room instead of just a small area around it. @Mqrius
+- Added the Higgs Emitter multiblock to replace Ad Astra's Gravity Normalizer with a significantly larger area of effect. @ashleney
+- Added the Heat Pump multiblock, when built into an outer wall it will regulate the temperature of a large room. @ashleney
+- *Note: These multiblock shapes are temporary and may change in the future* 
+#### Gas Burner
+- Blaze burners no longer accept liquid fuels. You can use the new **Gas Burner** which also heats up TFC devices too, such as a Vat or Crucible. (#5062) @Redeix
+- Note that Blaze burners' ability to heat things will soon be removed, but they will be kept around as train drivers and stock keepers.
+#### AE2
+- The ME Resonnance Charger can't be rotated any more, so you can't stack them to charge your Budding Certus. The multiblock structure has also changed a little @TomPlop
+- The circuit numbers for Annihilation and Formation Cores and Printed Circuits were changed in the ME Assembler, to allow for easier passive crafting @TomPlop
+#### Recipes
+- Laser hatches now need a glass lens instead of a diamond lens @ashleney
+- GregTech covers are now crafting table recipes instead of assembler recipes (#4997) @ashleney
+- Changed mechanical press double ingot/double plate recipes to use circuit 0 (#4991) @Pyritie
+- Changed recipes of almost all More Red items and blocks, making them available a lot earlier @Pyritie
+- Chorus-Infused Ceramic Insulation now uses chorus flowers instead of popped chorus fruit @Pyritie
+- Pyrolyze oven now makes as much creosote from bituminous coal as the coke oven does (#5077) @jacobtho314
+- Garnet Sand Line from Crushed Ores had some Circuits changed to allow the line to be run at MV with different recipes for LCR and CR @TomPlop
+- Butyralhyde can now be crafted at MV so you can start the Garnet Sand Line with Ethylhexenal to make Lean Organic Stabilizer @TomPlop
+### Changes
+#### Field Guide
+The field guide has been completely rewritten! (#5023) @Redeix
+
+From now on the field guide will be your main source of detailed information about mechanics. To view progression related information, please view the quest book. For recipes, search in EMI. We have, and are still, making efforts to convert a lot of hard coded book information into dynamic EMI tabs. The new tree tapping and lamp fuel EMI displays being examples of such.
+
+To better enforce this split of information (and to make it more obvious where to look for things), we will be removing some information-based quests and putting them in the field guide instead, starting with the different planet-based quest chapters. We want to make it very clear that "how do I do this" questions should be answered with the field guide, and "what do I do next" questions should be answered with the quest book.
+
+A big change is that ore information will no longer be viewable in the field guide. Please use the EMI ore information tab when searching for veins. The main reason for this decision is due to the clunky behavior of trying to automate field guide entries along with other languages and making sure it looks decent in a strict format. The other reason is simply to reduce bloated file sizes from redundant information.
+
+On top of rewriting entries, many new diagrams and multiblock displays have been added to help give you visual references for mechanics. Most lengthy entries will now have an index at the beginning for quick links throughout the chapters. There will also be a Further Reading section at the end of each entry in case you wish to keep learning about related mechanics.
+
+The book is no longer split between entries for random addons, or clustered in specific chapters like Mechanics. You will now see the following categories:
+- Planets: Each destination will have its own category detailing its wildlife, available crops, geography, climate, and other unique info.
+- Craftsmanship: The main category for crafting and progression. Contains entries like Glassworking, Bloomery, Metallurgy, etc.
+- Food & Beverages: Dedicated category for all things food related. Contains entries for Preservation, Nutrition Information, Cooking Methods, etc.
+- Agriculture: Category for entries relating to growing crops, raising livestock, and producing materials from natural sources. (Note that animal entries are in their corresponding planet category!).
+- Logistics: Contains entries for transportation methods, storage types, infrastructure, travel, redstone devices, and more.
+- Game Mechanics: Category dedicated to core game mechanics in TFG like Heating, Medical Hazards, Collapses, Lighting, etc.
+#### Tools & Smithing
+- Added three new anvils: vanadium steel, stainless steel, and tungsten. These are completely optional, but you can use these to manually craft tool heads of MV+ tools, finally allowing you to have forging bonuses on everything. Anvils for IV+ tools will come as each tier is reworked. (#5015) @Pyritie
+- Changed the recipes for chainsaw and drill heads to a double plate and a block, respectively (#5015) @Pyritie
+- Buzzsaw blades are now made in an extruder instead of a lathe (#5015) @Pyritie
+- Added two new stone anvils for pyroxenite and keratophyre (#5015) @Pyritie
+#### Other Changes
+- Added more mob icons to xaeros minimap (#4941) @Nezumi-Remis
+- Made it easier to find peat by giving it a unique grass texture (#4964) @applenper
+- Added more asphalt road markings, especially for diagonal lines (#4961) @Sacarbeus123
+- Axes no longer veinmine manually placed logs @ashleney
+- Moon harvester now doesn't need titanium (#4960) @TomPlop
+- Changed the recipe for blue alloy desh foil again @Pyritie
+- Fixed jerboas, mongeese, and lemmings sometimes spawning outside of their correct climate (#4929) @Pyritie
+- Added some more gem plates to gregtech filter crafting recipes @Pyritie
+- Backported some [redstone devices](https://terrafirmacraft.github.io/Field-Guide/en_us/mechanics/redstone_devices.html) from 1.21 TFC - the clock, thermometer, anemometer, and wind vane (#4979) @Pyritie
+- Made signs and doors stack to 16 @ashleney
+- Increased the amount of silk thread from cobwebs and spiders, and increased how much phantom thread each phantom membrane crafts into @Pyritie
+- Changed a performance mod's voiding behaviour for item stacks on the ground to only void when there's more than 1000 stacks instead of 128 - server owners are encouraged to [tweak this number](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/commit/8559274a130efb86fe24c0dde38732698475fe4f) if they wish @ashleney
+- Added an EMI category for lamp fuels @Redeix
+- Merged a lot of the "early automation" quest chapter into the "metallurgy age" one, and added lots of links to things that are unlocked at each tier @Pyritie
+- Added some planets to the skybox. If you're using the TFG shaders, you can change the sun and moon to squares via the shader options (change them to "reimagined" style). If you're using TFC Caelum, this will result in duplicates of some planets, so TFC Caelum has been removed from the optional mod list @Pyritie
+- Every block of a Keg can now be pushed and pulled into, instead of only the front bottom left block @ashleney
+- Added crankbows, cranktraps, magmangos, lavacados, açaí, and oil palms to more piglin chest loot tables @Pyritie
+- Piglins can now swim @Pyritie
+- Composter now only takes 6 days instead of 12, and compost tumbler takes 2.5 days instead of 4 @Pyritie
+- Snow no longer accumulates on water wheels @ashleney
+- Titanium concrete now has the same movement speed bonus as GregTech concrete (#5048) @sudoDavi
+- Added some gas fuels as valid train fuels (#5022) @FabricatorZayac
+- All pies now decay more slowly. Jam pies have slightly more saturation and can also accept 1-3 raw fruit for extra nutrition. Breakfast pies have a bit more saturation and now use cooked bacon instead of raw. Savoury pies have slightly more saturation but slightly lower nutrition. (#5042) @applenper
+- The temperature bar (which replaces the XP bar) now also indicates the average temperature and player temperature @SakuraKitsurugi @Zippity
+- Player temperature now carries over after death, clamped to 5C~25C @ashleney
+- The Interplanetary Railgun now transports items instantly between planets @ashleney
+- Boron carbide now only needs kanthal coils to smelt instead of nichrome (#5075) @Pyritie
+- Added a recipe for framed torches, for builds where you want both torches and infinite light (#5070) @jacobtho314
+- Made astikor cart wheels cheaper @Pyritie
+- The Pastoral Rancher no longer requires fences, so you can make the pen as big as you like, but will still only process animals within the area of the metal casings @Pyritie
+- Overworld Jellies no longer spawn constantly, instead only spawning much more rarely and only as part of worldgen @Pyritie
+### Bug fixes
+- Fixed some worldgen crashes (#4905, #4900) @Pyritie
+- Fix to repair scrambled pack order at level data which was affecting a few random world-related things such as not being able to collect glass with a gem saw (#4152) @ariedotme
+- Fixed being able to recraft your space suit to repair it instead of just emptying it (#4930) @Pyritie
+- Snow can't accumulate in the Bloomery anymore @NeonNoise
+- Snow can't accumulate on top of Water Wheels anymore @ashleney
+- Fix TMRV crashing when exiting right after world join @Redeix
+- Building gadgets now respect ftbchunk claims so they can't be used in order to grief @ashleney
+- The Spatial IO Port now works in claimed chunks even if the server thinks it was not placed by a player @ashleney
+- Fixed methanol distillation tower output order @ashleney
+- Fixed some inconsistencies with how much hunger different foods restored (#4655)
+- Fixed snow on the bloomery/blast furnace 'molten' block causing voiding (#4969) @NeonNoise
+- Fixed crowbars not being extractable from create logistics, again @ashleney
+- Fixed chameleon spraycan opening the GUI of hatches/buses when spraying them (#5006) @Phoenixvine32908
+- Fixed teleporting from the beneath to overworld not breaking hornfels blocks @Pyritie
+- Fixed the pisciculture rotor block having the collision of a slab and not a block @Redeix
+- Fixed piglin towers having structure voids at the bottom (#5029) @Filiipa
+- Fixed not being able to use fig and rubber fig interchangeably in some ArborFirmaCraft recipes (#5068) @bigtho80
+- Fixed trowels wiping the NBT of placed Toolboxes (#5061) @Redeix
+- Fixed the railgun being able to launch without any energy @jacobtho314
+- Mars mobs are now immune to powder snow @Pyritie
+### Mods
+#### TerraFirmaCraft
+- Has been forked! This shouldn't affect you at all, but it ensures long-term stability for the future development of the modpack. Please read [here](https://www.reddit.com/r/TerraFirmaGreg/comments/1wbv1o3/the_future_of_terrafirmacraft_in_tfg/) for more information.
+- ⚠ **Important note**: in an upcoming version (planned for 0.14), we will be backporting more overworld worldgen changes. As this update introduces plate tectonics, it shifts continents around, which unfortunately means everyone will be getting ugly chunk borders. We suggest exploring your continent before this update if this is something you care about. We will also be dropping support for old worldgen (pre-0.12) if you're still using it.
+- Entities (including items) in midair are no longer slowed by snow (#4656) @Therighthon
+- Fix two rare worldgen-related crashes
+- Fix occasional crash from item drops during async worldgen
+- Fix rotten egg hatching
+- Fix bucket duplicating waterlogged blocks (#4498)
+- Sync pot and crucible when filled via fluid capability
+- Fix off-hand item being used when opening powder keg
+- Fix crash in random animal growth
+- Fix crash when chiseling while dead
+- Fix crash placing tall plants below existing plants (#4765)
+- Fix mobs sinking in salt and spring water
+#### AE2
+- We have moved to a [different fork](https://www.curseforge.com/minecraft/mc-mods/ae2-uelm). Same author as our previous fork, except it's public and actively developed. Now you can see what it has compared to base AE2!
+- Removed Auto Complete Card
+- Removed Pattern Box (for now)
+#### Dea's Fission
+- The fission reactor's dimension restrictions now actually work (#3359)
+- Multiblocks can no only be rotated along the Y axis
+- Reactor heat level is now saved when the block is broken
+- Redstone ports better remember their level when the chunk is unloaded
+- Fixed metrics incorrectly tracking incomplete multiblocks
+#### Create: Fluid Logistics
+- Separated fluid gauges out from factory gauges. Existing gauges will automatically convert
+- Added Fluid Inventory Access Port, Flow Meter, Redstone Fluid Valve, Server Performance Reader
+- Removed waterproof cardboard
+- More bugfixes
+#### Greate
+- Mechanical saws now have a switch to toggle between "stonecutter" and "GregTech Cutter" recipes, so you don't have to worry about accidentally crafting decoration blocks again! Right-click it with a screwdriver to change modes.
+#### Roads and Roofs TFC
+- Fixed the mattock not working bug
+
 ## [0.13.10] - 05-09-2026
 ### Breaking Changes
 - The new moon cleanroom recipes have been replaced with requiring oxygenation instead (#4896) @TomPlop

@@ -1,0 +1,228 @@
+{
+    "name": "冶金與探礦",
+    "category": "tfg:craftsmanship",
+    "icon": "tfc:ore/rich_hematite",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "anchor": "index",
+            "text": "$(li)$(bold)$(l:craftsmanship/metallurgy#intro)地表金屬$()$(li)$(bold)$(l:craftsmanship/metallurgy#extraction)提取金屬$()$(li2)$(l:craftsmanship/metallurgy#casting)澆鑄$()$(li)$(bold)$(l:craftsmanship/metallurgy#alloying)合金$()$(li2)$(l:craftsmanship/metallurgy#utility_alloys)實用合金$()$(li)$(bold)$(l:craftsmanship/metallurgy#propick)探礦鎬$()$(li2)$(l:craftsmanship/metallurgy#prospector)數位探礦$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "intro",
+            "title": "散落的金屬",
+            "text": "除了地上的木棍、樹枝和石頭之外，你可能還會遇到小塊的礦石。它們很重要，因為在取得鎬之前，它們是少數幾種礦石和金屬來源之一。這類指示物共有三種：$(li)礦物粉塵$(li)寶石芽$(li)小型礦石"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "ABC"
+                    ],
+                    [
+                        "X0X"
+                    ]
+                ],
+                "mapping": {
+                    "0": "tfc:grass/loam",
+                    "X": "tfc:grass/loam",
+                    "A": "#tfg:dust_ore_indicators",
+                    "B": "#tfg:bud_ore_indicators",
+                    "C": "tfc:ore/small_native_copper"
+                }
+            },
+            "name": "地表礦石",
+            "text": "被破壞時：粉塵指示物會掉落小堆粉末，寶石芽會掉落$(t:除非用寶石鋸破壞！)破損的寶石$()，而小型礦石嘛，就是掉落小型礦石。",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:text",
+            "text": "這些指示物有兩種用途：它們可以提供金屬來源，更重要的是，它們表示其下方某處有較大的礦脈。務必在地圖上標記指示物的位置，以便日後回來開採礦脈。$(br2)⚠ 撿起礦物粉塵時要小心，因為有些可能具有$(l:game_mechanics/hazards)危險性$()，例如輝鈷礦或方鉛礦。"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "extraction",
+            "text": "礦石會產出特定$(thing)毫桶 (mB)$()數量的實際金屬，可以透過精煉、熔化和澆鑄來提取。從礦石中取得的量取決於物品的「豐富度」、化學組成和精煉程度。$(br2)礦石豐富度由低到高依序為：小型、貧瘠、一般、富饒。",
+            "title": "提煉橡膠"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "有些礦石的名稱你可能不太熟悉。例如，如果你在找銅，不應該只找「銅礦石」。銅有許多不同的種類。要了解一塊礦石會產出什麼，可以在$(emi)中搜尋它的配方，或查看它的提示框。$(br2)例如，在$(emi)中搜尋「熔化為銅」就會顯示所有的銅來源。"
+        },
+        {
+            "type": "patchouli:image",
+            "width": 1024,
+            "texture_width": 1024,
+            "height": 1024,
+            "texture_height": 1024,
+            "images": [
+                "tfg:textures/gui/field_guide/prospecting/ore_item.png"
+            ],
+            "text": "$(2)◼$() - 化學式。$(br)$(4)◼$() - 熔化時的金屬產量。$(br)$(3)◼$() - 熔化溫度。",
+            "title": "認識礦石",
+            "border": false
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "casting",
+            "title": "澆鑄",
+            "text": "要開始澆鑄你的第一塊金屬，你會使用$(l:craftsmanship/pottery#vessel)小缸$()。在裡面放入足夠的可熔化礦石，以填滿你想要的$(l:craftsmanship/pottery#mold)模具$()。例如，製作鋸片至少需要 144mB 的金屬。$(br)查看小缸的提示框即可得知其中的材料量。$(br2)請注意，小缸的最大流體容量為$(t:21 x 144)$(6)3,024mB$()！"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "你可以在小缸中混合搭配不同種類的礦石，但所有礦石都必須產出相同的液態金屬，否則就會製造出$(l:craftsmanship/metallurgy#alloying)合金$()。$(br2)將裝滿的小缸放入$(l:craftsmanship/pit_kiln)坑窯$()中熔化其內容物。完成後你只有很短的時間可以澆鑄，所以要留意你的窯！"
+        },
+        {
+            "type": "patchouli:crafting",
+            "text": "小心，小缸會很燙！用兩根木棍和一把刀合成$(thing)木火鉗$()，將它拿在副手就能安全地拿取高溫小缸。",
+            "recipe": "tfchotornot:crafting/tongs/wood"
+        },
+        {
+            "type": "patchouli:image",
+            "text": "手持小缸按下$(item)$(k:key.use)$()開啟$(thing)鑄造$()介面。",
+            "images": [
+                "tfc:textures/gui/book/gui/casting.png"
+            ],
+            "border": false
+        },
+        {
+            "type": "patchouli:text",
+            "text": "開啟澆鑄介面後，將空的已燒製模具放在中間的欄位。只要小缸保持液態，模具就會被填滿。(如果小缸凝固了，可以在另一個坑窯中重新加熱。)模具填滿後，就可以取出並讓它冷卻。冷卻後，對模具按下$(item)$(k:key.use)$()或將它放入合成格，即可取出模具和其內容物。"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "gtceu:shaped/pickaxe_copper",
+            "text": "現在你可以合成你的第一把鎬了！找到足夠製作鎬頭的銅，燒製一個鎬頭模具，並用坑窯熔化礦石，然後澆鑄出鎬頭。把它裝到木棍上，就完成了！現在你可以挖掘$(thing)礦石$()了。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tfc:metal/chisel/copper",
+            "text": "還有幾種其他重要的金屬工具也可以幫助你推進進度。$(l:craftsmanship/chisel)鑿子$()在處理建築用的石頭方塊時很有用，其他配方也需要它。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "gtceu:copper_saw",
+            "text": "鋸子可以將原木加工成$(l:game_mechanics/mining#supports)支撐梁$()和$(thing)木板$()，木板可以再合成木材、工作台、木桶和箱子等物品。它也可以用來製作$(l:logistics/boats#canoe)獨木舟$()。"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "alloying",
+            "title": "合金",
+            "text": "$(thing)合金$()是將兩種或更多種金屬混合在一起，製造出新的、更堅固的金屬的方法。在遊戲初期，雖然銅是製作工具的實用金屬，但下一個等級的金屬是三種$(thing)青銅$()之一。它們在耐久度、效率和攻擊傷害方面各有些微不同。合金由多種組成$(thing)金屬$()構成，每種金屬都必須佔整體的特定百分比。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "在遊戲初期製作合金的一種方法是使用$(thing)小缸$()。這個過程與$(l:craftsmanship/metallurgy#casting)澆鑄$()非常相似。不過，不是只使用單一金屬，而是依正確的比例在小缸中放入足夠的礦石，形成已知的合金配方。$(br2)小缸的提示框也會告訴你其內容物會形成什麼合金，所以你可以用它來檢查合金比例――不需要另外的計算機！"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "你可以在$(emi)中查看液態合金配方來找到合金比例。合金接受一定範圍的數值，所以百分比不必完美。例如，青銅的理想比例是 75% 的銅和 25% 的錫，也就是說 144mB 的青銅需要 108mB 的銅和 36mB 的錫。$(br2)如果找不到錫，$(thing)黑青銅$()和$(thing)鉍青銅$()也是選項！直到蒸汽機器之前都不需要錫。"
+        },
+        {
+            "type": "patchouli:image",
+            "width": 1024,
+            "texture_width": 1024,
+            "height": 1024,
+            "texture_height": 1024,
+            "images": [
+                "tfg:textures/gui/field_guide/prospecting/alloy.png"
+            ],
+            "text": "青銅的合金配方範例，顯示 70-80% 銅 + 20-30% 錫 = 青銅。",
+            "title": "合金配方",
+            "border": false
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tag:forge:ingots/brass,tag:forge:ingots/rose_gold,tag:forge:ingots/sterling_silver,tag:forge:ingots/tin_alloy,tag:forge:ingots/red_alloy,tag:forge:ingots/potin,tag:forge:ingots/cobalt_brass,tag:forge:ingots/invar",
+            "anchor": "utility_alloys",
+            "text": "許多合金不適合製作工具，但仍然是推進進度的必需品。早期進度中最重要的幾種實用合金是$(thing)黃銅$()、$(thing)玫瑰金$()、$(thing)紋銀$()、$(thing)錫鐵合金$()和$(thing)紅石合金$()。",
+            "title": "功能合金"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "propick",
+            "title": "探礦鎬",
+            "text": "你還記得在哪裡撿到那些指示礦石吧？尋找更多礦石可能需要大量的探索和挖掘。你應該要非常熟悉$(thing)地質學$()。如果你需要特定的資源，就必須在腳下或世界各地找到它所生成的岩石種類。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tag:tfc:propicks",
+            "title": "探礦鎬",
+            "link_recipes": false,
+            "text": "如果你在找礦脈，又無法靠猜測找到，那就是拿出$(item)探礦鎬$()的時候了。如果你熟悉$(thing)TFC$()中的基本探礦鎬，可能會驚訝地發現它們在$(tfg)中的運作方式非常不同。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "在$(tfg_short)中，對探礦鎬按下右鍵會朝你視線的方向發出搜尋射線。射線的寬度和深度取決於探礦鎬的等級，如其提示框所示。依等級不同，探礦鎬還能告訴你礦石的數量，甚至顯示礦脈的$(thing)透視$()指示。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "使用探礦鎬時可以顯示以下資訊：$(li)在聊天中顯示礦脈的$(thing)總量$()、礦脈的$(thing)內容物$()，以及礦脈中$(thing)每種礦石的數量$()。$(li)$(thing)彩色鋼$()探礦鎬還可以在礦脈的$(thing)中心$()顯示一個大型透視粒子，或顯示$(thing)每個礦石方塊的粒子$()。"
+        },
+        {
+            "type": "patchouli:image",
+            "width": 1024,
+            "texture_width": 1024,
+            "height": 1024,
+            "texture_height": 1024,
+            "text": "彩色鋼探礦鎬：大的$(bold)$(#D68400)❗$()來自以礦脈為單位的透視，較小的則來自以方塊為單位的透視。",
+            "title": "探礦視角",
+            "images": [
+                "tfg:textures/gui/field_guide/prospecting/tfg_prospectors_pick_xray.png"
+            ],
+            "border": true
+        },
+        {
+            "type": "tfg:anvil_recipe",
+            "recipe": "tfc:anvil/copper_propick_head",
+            "text": "探礦鎬頭可以在$(l:craftsmanship/anvils)鐵砧$()上$(l:craftsmanship/anvils#working)鍛造$()或$(l:craftsmanship/metallurgy#casting)澆鑄$()，然後像其他工具一樣裝到木棍上。$(br2)注意：探礦鎬的大部分數據和特性都可以在伺服器設定檔中調整。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "prospector",
+            "item": "gtceu:prospector.lv,gtceu:prospector.hv,gtceu:prospector.luv",
+            "title": "數位勘礦儀",
+            "link_recipes": false,
+            "text": "科技時代來臨了！隨之而來的是尋找礦脈的新方法！$(br)$(item)勘礦儀$()是$(thing)GregTech$()用來尋找世界中礦脈和流體礦床的解決方案。勘礦儀的範圍和功能取決於其$(#ff1100)電壓等級$()。"
+        },
+        {
+            "type": "patchouli:image",
+            "width": 1024,
+            "texture_width": 1024,
+            "height": 1024,
+            "texture_height": 1024,
+            "images": [
+                "tfg:textures/gui/field_guide/prospecting/tfg_luv_ore_prospector.png"
+            ],
+            "border": true,
+            "text": "使用$(#e373ff)LuV 勘礦儀$()時可能看到的畫面範例。記得保持電池充飽電！"
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "延伸閱讀",
+            "anchor": "relations",
+            "entries": [
+                "tfg:craftsmanship/pottery",
+                "tfg:craftsmanship/pit_kiln",
+                "tfg:craftsmanship/charcoal_forge",
+                "tfg:craftsmanship/crucible",
+                "tfg:craftsmanship/blast_furnace",
+                "tfg:craftsmanship/bloomery",
+                "tfg:craftsmanship/anvils",
+                "tfg:game_mechanics/mining",
+                "tfg:game_mechanics/heating"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 3,
+    "extra_recipe_mappings": {
+        "tag:tfc:small_ore_pieces": 1,
+        "tag:tfc:propicks": 20,
+        "gtceu:prospector.lv": 26,
+        "gtceu:prospector.hv": 26,
+        "gtceu:prospector.luv": 26
+    }
+}

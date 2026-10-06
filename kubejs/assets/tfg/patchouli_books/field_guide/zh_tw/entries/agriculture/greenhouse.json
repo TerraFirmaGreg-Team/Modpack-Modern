@@ -1,0 +1,160 @@
+{
+    "name": "溫室",
+    "category": "tfg:agriculture",
+    "icon": "firmalife:large_planter",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(li)$(bold)$(l:agriculture/greenhouse#types)溫室類型$()$(li)$(bold)$(l:agriculture/greenhouse#planters)種植盆$()$(li2)$(l:agriculture/greenhouse#large_planter)大型種植盆$()$(li2)$(l:agriculture/greenhouse#quad_planter)四格種植盆$()$(li2)$(l:agriculture/greenhouse#bonsai_planter)盆景種植盆$()$(li2)$(l:agriculture/greenhouse#hanging_planter)懸掛種植盆$()$(li2)$(l:agriculture/greenhouse#trellis_planter)棚架種植盆$()$(li2)$(l:agriculture/greenhouse#hydroponic_planter)水耕種植盆$()$(li)$(bold)$(l:agriculture/greenhouse#irrigation)灌溉$()$(li)$(bold)$(l:agriculture/greenhouse#auto_harvesting)自動收成$()$(li)$(bold)$(l:agriculture/greenhouse#electric)電力溫室$()$(li)$(bold)$(l:agriculture/greenhouse#hydroponics)水耕設施$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "intro",
+            "title": "溫室",
+            "text": "$(thing)溫室$()是由$(item)氣候站$()控制的多方塊結構裝置，可以讓作物全年生長。溫室有多種類型和方塊可供選擇，不過建造溫室相當簡單。就像$(l:cooking/decay#cellar)地窖$()一樣，它必須是由同一種$(thing)溫室類型$()方塊圍成的封閉區域。溫室的地板可以是任何非空氣方塊。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "溫室的牆壁必須是實心面。放置面板牆時，應讓方塊的外側面(例如可以放火把的那一面)朝向溫室內部。地板門、門和屋頂一律有效，不需要特別的擺放方式。$(br2)溫室的內部空間最大為 31x31x31 格。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(thing)溫室類型$()是一系列可以在溫室中互相替換使用的溫室方塊。此外，$(tfg)新增了更多溫室牆壁樣式，可與同等級的基本溫室牆壁互換。$(br)將氣候站貼著牆壁放置並按下$(item)$(k:key.use)$()即可驗證溫室。或者將它放在任意位置，手持與結構同類型的溫室方塊對它按下$(item)$(k:key.use)$()。"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "types",
+            "text": "以下是可用的$(thing)溫室類型$()，可透過合成取得做舊的變體：$(br)$(li)防腐木：風化$()$(li)銅：斑駁、風化、氧化$()$(li)鐵：生鏽$() $(li)不鏽鋼：無$()$(br)$(bold)注意$()：做舊的變體只影響外觀，沒有其他效果。",
+            "title": "溫室類型"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "一般的$(thing)溫室方塊$()有四種：牆壁、門、屋頂和屋頂頂部。屋頂和屋頂頂部分別是階梯和半磚。這些方塊也有較薄的版本，稱為面板牆、地板門和面板屋頂。你可以隨意組合這些方塊來建造溫室結構。"
+        },
+        {
+            "type": "tfg:multimultiblock",
+            "text": "各主要類型的溫室範例。",
+            "multiblocks": [
+                "firmalife:treated_wood_greenhouse",
+                "firmalife:copper_greenhouse",
+                "firmalife:iron_greenhouse",
+                "firmalife:stainless_steel_greenhouse"
+            ]
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "planters",
+            "title": "種植盆",
+            "text": "$(thing)種植盆$()用於在溫室內種植作物。種植盆中的作物會像一般作物一樣消耗$(l:agriculture/growing_crops#intro)養分$()。種植盆應放在有效的溫室內，並以$(item)氣候站$()啟動。種植盆至少需要一些自然陽光才能運作。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "large_planter",
+            "item": "firmalife:large_planter",
+            "text": "$(thing)大型種植盆$()是最簡單的種植盆。它從種子開始種植單一作物，成熟後按下$(item)$(k:key.use)$()即可收成。$(br)大型種植盆通常用來種植$(thing)大型作物$()和$(thing)穀物$()。不過要種植穀物，你需要$(thing)銅$()或更高等級的溫室。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "quad_planter",
+            "item": "firmalife:quad_planter",
+            "text": "$(thing)四格種植盆$()可同時種植四株各自獨立的作物，它們共用同一個養分池，成熟後可分別按下$(item)$(k:key.use)$()收成。$(br)四格種植盆通常用來種植$(thing)洋蔥$()和$(thing)甜菜$()等較小的蔬菜。這些作物可以在任何類型的溫室中種植。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "bonsai_planter",
+            "item": "firmalife:bonsai_planter",
+            "text": "$(thing)盆景種植盆$()可從樹苗種出小型果樹。$(br)盆景種植盆可種植$(item)果樹類型$()，但$(thing)香蕉$()和$(thing)棕櫚果樹$()除外，這兩種需要$(thing)懸掛種植盆$()。它們需要$(thing)鐵$()或更高等級的溫室才能生長。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "hanging_planter",
+            "item": "firmalife:hanging_planter",
+            "text": "$(thing)懸掛種植盆$()讓作物倒吊生長。$(br)懸掛種植盆可種植$(thing)櫛瓜$()、$(thing)南瓜$()、$(thing)西瓜$()、$(thing)香蕉$()和$(thing)棕櫚果樹$()。棕櫚果樹需要$(thing)銅以上$()的溫室，櫛瓜可在任何等級種植，其餘則需要$(thing)鐵以上$()。懸掛種植盆必須固定在上方的實心方塊上。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "trellis_planter",
+            "item": "firmalife:trellis_planter",
+            "text": "$(thing)棚架種植盆$()用來種植漿果叢。$(br)棚架種植盆具有$(thing)繁殖$()漿果叢的獨特特性。如果在長有成熟漿果叢的棚架種植盆上方再放置一個，漿果叢有機率向上長進上方的種植盆。棚架種植盆通常需要$(thing)鐵$()或更高等級的溫室才能運作。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "hydroponic_planter",
+            "item": "firmalife:hydroponic_planter",
+            "text": "$(thing)水耕種植盆$()用來種植$(thing)稻米$()和$(thing)蔓越莓叢$()等水生作物。它們的運作方式與四格種植盆相同，只是不需要澆水。$(br)取而代之的是，水耕種植盆下方必須有供水的$(item)流體管道$()。沒有管道就不會生長。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "irrigation",
+            "title": "灌溉",
+            "item": "firmalife:watering_can,firmalife:sprinkler",
+            "text": "種植盆必須$(thing)澆水$()才能生長。可以使用$(thing)澆水壺$()，或用$(thing)灑水器$()自動澆水。手持澆水壺按下$(item)$(k:key.use)$()可為附近的種植盆澆水。對水源按下$(item)$(k:key.use)$()即可為澆水壺補水。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(thing)灑水器$()是一種在 5x6x5 範圍內灑水的裝置，範圍以灑水器下方或上方的方塊為中心。當它滴出水粒子時，就表示正在運作。灑水器必須連接到供水的管道系統才能運作。"
+        },
+        {
+            "title": "管道",
+            "item": "gtceu:copper_tiny_fluid_pipe",
+            "type": "patchouli:spotlight",
+            "text": "要為灑水器供水，可以將$(thing)流體管道$()連接到灑水器，再用$(thing)機械幫浦$()抽水。$(br)你可以手持$(t:例如銅框架)GregTech 框架$()或溫室連接埠對管道按下$(item)$(k:key.use)$()，讓管道穿過牆壁。手持扳手對流體管道按下$(item)$(k:key.use)$()可改變方向，而在$(thing)副手空著$()時按下$(item)$(k:key.sneak) + $(k:key.use)$()可將其設為單向。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "auto_harvesting",
+            "title": "自動收成",
+            "item": "firmalife:sweeper,firmalife:picker",
+            "text": "$(li)$(thing)清掃機$()用來收成四格種植盆和水耕種植盆以外的種植盆，可以用紅石驅動。$(li)$(thing)採摘機$()可以由上方的紅石訊號驅動，它會向下伸出，採摘四格種植盆和水耕種植盆中的作物。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)此外，$(item)採收籃$()可以收成大部分類型的種植盆。$(li)要收集$(thing)清掃機$()和$(thing)採摘機$()掉落的物品，可以使用$(item)漏斗礦車$()、裝有$(item)漏斗$()的$(thing)動態結構$()，或 GregTech 的$(item)物品收集器$()。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "electric",
+            "item": "tfg:electric_greenhouse",
+            "text": "如果你偏好製作 GregTech 機器而非機械動力裝置，多方塊結構$(item)電力溫室$()可以成為你的$(thing)原木$()和其他植物來源。它還有一項獨特能力：可以種植更多 TFC 的裝飾性植物！$(br2)你可以在$(7)LV$()後期製作一座。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(bold)注意：$()這個多方塊結構的牆壁可以自訂為任何有效的鐵等級溫室方塊。$(br2)查看$(emi)多方塊結構預覽，可得知所有可使用的方塊清單。$(br2)電力溫室也可以透過幾種方式強化，包括$(l:agriculture/fertilizers)肥料$()，或在$(6)HV$()後期使用$(thing)魚菜共生循環$()。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "hydroponics",
+            "item": "tfg:hydroponics_facility",
+            "text": "$(item)水耕設施$()是電力溫室在$(9)IV$()的升級版，可以在任何維度種植任何作物，並支援$(item)平行倉$()。"
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "延伸閱讀",
+            "anchor": "relations",
+            "entries": [
+                "tfg:the_world/wild_crops",
+                "tfg:the_world/wild_fruits",
+                "tfg:agriculture/growing_crops",
+                "tfg:cooking/decay"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 2,
+    "extra_recipe_mappings": {
+        "tag:tfg:all_greenhouse_casings": 2,
+        "tag:firmalife:greenhouse": 2,
+        "firmalife:large_planter": 9,
+        "firmalife:quad_planter": 10,
+        "firmalife:bonsai_planter": 11,
+        "firmalife:hanging_planter": 12,
+        "firmalife:trellis_planter": 13,
+        "firmalife:hydroponic_planter": 14,
+        "firmalife:sprinkler": 15,
+        "firmalife:watering_can": 15,
+        "firmalife:sweeper": 17,
+        "firmalife:picker": 17,
+        "tfg:electric_greenhouse": 19,
+        "tfg:hydroponics_facility": 21
+    }
+}

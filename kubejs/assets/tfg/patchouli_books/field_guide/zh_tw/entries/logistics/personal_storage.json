@@ -1,0 +1,122 @@
+{
+	"name": "個人儲物",
+	"category": "tfg:logistics",
+	"icon": "sophisticatedbackpacks:backpack",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "$(li)$(bold)$(l:logistics/personal_storage#small_vessel)小缸$()$(li)$(bold)$(l:logistics/personal_storage#large_vessel)大缸$()$(li)$(bold)$(l:logistics/personal_storage#straw_basket)乾草籃$()$(li)$(bold)$(l:logistics/personal_storage#leather_sack)皮革袋$()$(li)$(bold)$(l:logistics/personal_storage#ore_sack)礦石袋$()$(li)$(bold)$(l:logistics/personal_storage#seed_pouch)種子袋$()$(li)$(bold)$(l:logistics/personal_storage#frame_pack)框架背包$()$(li)$(bold)$(l:logistics/personal_storage#quiver)箭袋$()$(li)$(bold)$(l:logistics/personal_storage#backpack)背包$()$(li)$(bold)$(l:logistics/personal_storage#tool_belt)工具腰帶$()",
+			"title": "索引",
+			"anchor": "index"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "intro",
+			"title": "簡介",
+			"text": "遊戲中有許多$(item)物品容器$()可以減輕物品欄的壓力。選擇時有幾項重要的數據需要考慮。$(li)$(thing)欄位數$()：它擁有的欄位數量。$(li)$(thing)欄位容量$()：一個欄位可以放多少個物品。$(li)$(thing)允許尺寸$()：欄位中允許的最大$(l:game_mechanics/size_and_weight)TFC 尺寸$()。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(li)$(thing)物品拾取$()：是否能撿起世界中的物品實體。按下$(item)$(k:key.sneak)-$(k:key.use)$()或使用$(item)$(k:sns.key.pickup)$()切換。$(li)$(thing)物品銷毀$()：是否能銷毀從世界中撿起的多餘物品。對欄位按下$(item)$(k:key.sneak)-$(k:key.attack)$()切換。$(li)$(thing)物品欄互動$()：是否能像 TFC 容器或原版收納袋一樣，點擊物品堆疊來放入和取出物品。$(li)$(thing)限制$()：允許放入哪些類型的物品。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "small_vessel",
+			"title": "小缸",
+			"item": "tag:tfc:fired_vessels",
+			"text": "$(bold)欄位$()：4$(br)$(bold)堆疊數量$()：16$(br)$(bold)最大尺寸$()：小$(br)$(bold)物品拾取$()：$(c)否$()$(br)$(bold)欄位銷毀$()：$(c)否$()$(br)$(bold)限制$()：無"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "large_vessel",
+			"title": "大缸",
+			"item": "tag:tfc:fired_large_vessels",
+			"text": "$(bold)欄位$()：9$(br)$(bold)堆疊數量$()：64$(br)$(bold)最大尺寸$()：一般$(br)$(bold)物品拾取$()：$(c)否$()$(br)$(bold)欄位銷毀$()：$(c)否$()$(br)$(bold)限制$()：無"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "straw_basket",
+			"title": "乾草籃",
+			"item": "sns:straw_basket",
+			"text": "$(bold)欄位$()：4$(br)$(bold)堆疊數量$()：16$(br)$(bold)最大尺寸$()：小$(br)$(bold)物品拾取$()：$(2)是$()$(br)$(bold)欄位銷毀$()：$(c)否$()$(br)$(bold)限制$()：無"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "leather_sack",
+			"title": "皮革袋",
+			"item": "sns:leather_sack",
+			"text": "$(bold)欄位$()：4$(br)$(bold)堆疊數量$()：64$(br)$(bold)最大尺寸$()：一般$(br)$(bold)物品拾取$()：$(2)是$()$(br)$(bold)欄位銷毀$()：$(2)是$()$(br)$(bold)限制$()：無"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "ore_sack",
+			"title": "礦石袋",
+			"item": "sns:ore_sack",
+			"text": "$(bold)欄位$()：9$(br)$(bold)堆疊數量$()：512$(br)$(bold)最大尺寸$()：小$(br)$(bold)物品拾取$()：$(2)是$()$(br)$(bold)欄位銷毀$()：$(2)是$()$(br)$(bold)限制$()：$(6)$(t:#sns:allowed_in_ore_sack)碎石、礦石、寶石、黏土$()"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "seed_pouch",
+			"title": "種子袋",
+			"item": "sns:seed_pouch",
+			"text": "$(bold)欄位$()：27$(br)$(bold)堆疊數量$()：128$(br)$(bold)最大尺寸$()：小$(br)$(bold)物品拾取$()：$(2)是$()$(br)$(bold)欄位銷毀$()：$(c)否$()$(br)$(bold)限制$()：$(6)$(t:#sns:allowed_in_seed_pouch)種子、樹苗、灌木$()"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "frame_pack",
+			"title": "框架背包",
+			"item": "sns:frame_pack",
+			"text": "$(bold)欄位$()：18$(br)$(bold)堆疊數量$()：64$(br)$(bold)最大尺寸$()：非常大$(br)$(bold)物品拾取$()：$(2)是$()$(br)$(bold)欄位銷毀$()：$(2)是$()$(br)$(bold)限制$()：無"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "quiver",
+			"title": "箭袋",
+			"item": "sns:quiver",
+			"text": "$(bold)欄位$()：8$(br)$(bold)堆疊數量$()：32$(br)$(bold)最大尺寸$()：非常大$(br)$(bold)物品拾取$()：$(2)是$()$(br)$(bold)欄位銷毀$()：$(c)否$()$(br)$(bold)限制$()：$(6)$(t:#sns:allowed_in_quiver)箭、標槍$()"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "backpack",
+			"title": "背包",
+			"item": "sophisticatedbackpacks:backpack,sophisticatedbackpacks:iron_backpack,sophisticatedbackpacks:gold_backpack,sophisticatedbackpacks:diamond_backpack,sophisticatedbackpacks:netherite_backpack",
+			"text": "$(bold)欄位$()：36-120$(br)$(bold)堆疊數量$()：64-128$(br)$(bold)最大尺寸$()：非常大$(br)$(bold)物品拾取$()：需要升級$(br)$(bold)欄位銷毀$()：需要升級$(br)$(bold)限制$()：無"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "tool_belt",
+			"title": "工具腰帶",
+			"item": "toolbelt:belt,toolbelt:pouch",
+			"text": "$(item)工具腰帶$()很特別。它一開始只有 2 個欄位，但可以用小袋升級到 9 個欄位。將它裝備在$(l:craftsmanship/clothing#curios)腰帶飾品欄$()後，按住$(item)$(k:key.toolbelt.open)$()即可在環狀選單中取用其中任何物品，非常適合在不同工具之間快速切換。"
+		},
+		{
+			"type": "patchouli:relations",
+			"title": "延伸閱讀",
+			"anchor": "relations",
+			"entries": [
+				"tfg:craftsmanship/metallurgy",
+				"tfg:craftsmanship/pottery",
+				"tfg:craftsmanship/sewing_table",
+				"tfg:agriculture/leather_making",
+				"tfg:agriculture/weaving",
+				"tfg:logistics/exploration_gear"
+			]
+		}
+	],
+	"read_by_default": true,
+	"extra_recipe_mappings": {
+		"sns:straw_basket": 5,
+		"sns:leather_sack": 6,
+		"sns:ore_sack": 7,
+		"sns:seed_pouch": 8,
+		"sns:frame_pack": 9,
+		"sns:quiver": 10,
+		"sophisticatedbackpacks:backpack": 11,
+		"sophisticatedbackpacks:iron_backpack": 11,
+		"sophisticatedbackpacks:gold_backpack": 11,
+		"sophisticatedbackpacks:diamond_backpack": 11,
+		"sophisticatedbackpacks:netherite_backpack": 11,
+		"toolbelt:belt": 12,
+		"toolbelt:pouch": 12
+	}
+}

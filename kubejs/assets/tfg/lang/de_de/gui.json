@@ -1,0 +1,23 @@
+{
+	"tfg.gui.consumes": "Verbraucht: ",
+	"tfg.gui.cycle_duration": "Zyklusdauer: ",
+	"tfg.gui.max_energy_per_tick_amps.prefix": "Maximal EU/t:",
+	"tfg.gui.menu.field_guide_splash_text": "Tipp: Lest das Handbuch!!!",
+	"tfg.gui.per_cycle": "pro Zyklus",
+	"tfg.gui.refrigerator.unify_dates.disabled": "Ablaufdatumsvereinigung ist: §cOff",
+	"tfg.gui.refrigerator.unify_dates.enabled": "Ablaufdatumsvereinigung ist: §aOn",
+	"tfg.gui.rnr_plow.empty_crushed_base_course": "§cEs Fehlt Zerdrückte Grundschicht!!",
+	"tfg.gui.rnr_plow.random_mode": "Wähle Willkürlich Materialien Aus",
+	"tfg.gui.rnr_plow.width": "Pfadbreite: %d Blöcke",
+	"tfg.gui.smr_generator.credit": "Credits an das Frontiers Team",
+	"tfg.gui.smr_generator.lubricant_used": "Schmiermittel: %s",
+	"tfg.emi.bacon_requirement": "Speck - Das rohe Schweinefleisch muss erst geräuchert werden.",
+	"emi.category.tfg.block_interaction": "Block Modifikationen",
+	"emi.category.deafission.fission_reactor_coolant": "Kernspaltungsreaktor Kühlmittel",
+	"emi.category.deafission.fission_reactor_processing": "Kernspaltungsreaktor Materialhalter",
+	"emi.category.deafission.fission_reactor_fuel": "Kernspaltungsreaktor Treibstoff",
+	"emi.category.tfg.blaze_burner": "Lohenbrenner Treibstoff",
+	"tfg.emi.liquid_bb_burn_time": "Dauer: %d Sek.",
+	"tfg.emi.liquid_bb_superheat": "§lSiedeverzogen",
+	"tfg.gui.spawn_condition.temperate": "Gemäßigt"
+}

@@ -1,0 +1,491 @@
+{
+	"name": "衣物",
+	"category": "tfg:craftsmanship",
+	"icon": "tfc_textile:cotton_shirt",
+	"read_by_default": true,
+	"sortnum": 19,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "$(item)衣物$()是一種$(thing)裝備$()，提供$(l:game_mechanics/damage_types)護甲$()以外的效果。$(br2)大多數衣物會影響你的$(l:game_mechanics/player_temperature)體溫$()，但也有一些能提供其他有用的效果。"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "index",
+			"text": "$(li)$(bold)$(l:craftsmanship/clothing#curios)關於飾品欄$()$(li)$(bold)早期衣物$()$(li2)$(l:craftsmanship/clothing#straw_hat)草帽$()$(li2)$(l:craftsmanship/clothing#primitive)原始衣物$()$(li2)$(l:craftsmanship/clothing#insulated_leather)皮革$()$(li)$(bold)進階衣物$()$(li2)$(l:craftsmanship/clothing#cloth)布料$()$(li2)$(l:craftsmanship/clothing#hides)動物毛皮$()$(li2)$(l:craftsmanship/clothing#fully_insulated)完全隔熱$()$(li)$(bold)$(l:craftsmanship/clothing#table)衣物數值表$()$(li)$(bold)其他衣物$()$(li2)$(l:logistics/exploration_gear#snowshoes)雪鞋$()$(li2)$(l:logistics/exploration_gear#snorkel)呼吸管$()和$(l:logistics/exploration_gear#flippers)蛙鞋$()$(li2)$(l:game_mechanics/hazards#mask)口罩$()$(li2)$(l:game_mechanics/hazards#gloves)橡膠手套$()$(li)$(bold)$(l:craftsmanship/clothing#armor_trim)衣物紋飾$()"
+		},
+		{
+			"type": "patchouli:image",
+			"title": "什麼是飾品欄？",
+			"anchor": "curios",
+			"images": [
+				"tfg:textures/gui/field_guide/curios.png"
+			],
+			"border": true,
+			"text": "點擊角色頭像左上角的圓形按鈕即可開啟選單。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "衣物可以穿在一般的裝備欄位，也可以穿在$(thing)飾品欄位$()，以便同時穿戴其他裝備。$(br2)這個選單也有$(l:logistics/personal_storage#backpack)背包$()或$(l:logistics/personal_storage#tool_belt)工具腰帶$()等物品的欄位。"
+		},
+		{
+			"type": "tfg:knapping_recipe",
+			"recipe": "sns:straw_knapping/straw_hat",
+			"anchor": "straw_hat",
+			"title": "草帽",
+			"text": "你能製作的第一件衣物是簡單的$(item)草帽$()，用$(l:craftsmanship/building_materials#thatch)乾草$()製成。它能保護你免受$(l:game_mechanics/player_temperature#wetness)陽光直射$()。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "原始衣物",
+			"anchor": "primitive",
+			"item": "tfc_textile:raw_hat,tfc_textile:raw_shirt,tfc_textile:raw_pants,tfc_textile:raw_socks",
+			"text": "在極地光著身子快凍死了嗎？$(item)原始$()套裝非常容易製作，只需要一些$(l:craftsmanship/building_materials#thatch)乾草$()和一些$(item)獸皮$()。最適合你的穴居人時尚！$(br2)原始衣物的保暖度、隔熱度和耐久度都很低，但應該能為你爭取足夠的時間找到更好的衣物。"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "tfg:shapeless/primitive_insulation_small",
+			"recipe2": "tfg:shapeless/primitive_insulation_large",
+			"title": " "
+		},
+		{
+			"type": "tfg:knapping_recipe",
+			"recipe": "tfg:knapping/raw_hat",
+			"text": "$(l:craftsmanship/sticks_and_stones#knapping)塑形$()$(item)原始兜帽$()。"
+		},
+		{
+			"type": "tfg:knapping_recipe",
+			"recipe": "tfg:knapping/raw_shirt",
+			"text": "塑形$(item)原始長袍$()。"
+		},
+		{
+			"type": "tfg:knapping_recipe",
+			"recipe": "tfg:knapping/raw_pants",
+			"text": "塑形$(item)原始短褲$()。"
+		},
+		{
+			"type": "tfg:knapping_recipe",
+			"recipe": "tfg:knapping/raw_socks",
+			"text": "塑形$(item)原始靴子$()。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "insulated_leather",
+			"title": "隔熱皮革",
+			"item": "tfcambiental:insulated_leather_hat,tfcambiental:insulated_leather_tunic,tfcambiental:insulated_leather_pants,tfcambiental:insulated_leather_boots",
+			"text": "$(item)隔熱皮革$()衣物是穴居人扮裝的下一步。只需要一些$(l:agriculture/leather_making)皮革$()護甲，再加上$(l:agriculture/animal_husbandry#wooly_animals)生羊毛$()或$(l:agriculture/animal_husbandry#oviparous_animals)羽毛$()。"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "tfg:shaped/insulated_leather_hat",
+			"recipe2": "tfg:shaped/insulated_leather_tunic",
+			"title": " "
+		},
+		{
+			"type": "tfg:knapping_recipe",
+			"recipe": "tfg:knapping/leather_apron",
+			"text": "$(l:agriculture/leather_making)皮革$()$(item)圍裙$()提供大量的隔熱，但不提供保暖或降溫。最適合在$(l:craftsmanship/charcoal_forge)木炭爐$()前工作！"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "布料衣物",
+			"anchor": "cloth",
+			"item": "tag:forge:cloth",
+			"text": "要取得更強、更長久的防護，你會想用各種$(l:agriculture/weaving)布料$()製作像樣的衣服。$(l:agriculture/animal_husbandry#wooly_animals)羊毛$()和$(l:beneath/beneath_crops#cotton)棉$()衣物能讓你保暖，而$(l:the_world/wild_crops#flax)亞麻$()、$(l:the_world/wild_crops#jute)粗麻布$()和$(l:beneath/beneath#webbed_lair)絲綢$()衣物則能讓你降溫。$(br)這些衣物前期投入較大，但耐久度高得多，修理也很便宜。"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "tfg:shaped/cotton_shirt",
+			"recipe2": "tfg:shaped/burlap_pants"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tag:tfc_textile:animal_furs",
+			"anchor": "hides",
+			"title": "動物毛皮",
+			"text": "各種動物的獸皮和毛皮可以用來製作 $(tfg_short) 中最強的一些衣物，數值和耐久度都是所有衣物中最好的。它們的數值依取得難度或對應動物的分布地點而有所不同。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "例如，$(l:the_world/wild_animals#crocodile)鱷魚皮衣物$()能讓你降溫，而$(l:the_world/wild_animals#caribou)北美馴鹿皮大衣$()則溫暖舒適。$(br2)最強的降溫衣物需要你前往某個$(l:beneath/beneath_mechanics#clothes)相當炎熱$()的地方……$(br2)這些衣物也都很容易修理。"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "tfg:shaped/caribou_shirt",
+			"recipe2": "tfg:shaped/crocodile_shirt"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "fully_insulated",
+			"title": "完全隔熱",
+			"item": "gtceu:nanomuscle_chestplate,ad_astra:space_suit",
+			"text": "最後，一些進階護甲還能提供與外界的$(thing)完全隔熱$()，防止你的$(l:game_mechanics/player_temperature)體溫$()低於 5°C 或高於 25°C。"
+		},
+		{
+			"type": "tfg:table",
+			"anchor": "table",
+			"strings": [
+				{
+					"text": "衣物種類",
+					"bold": true
+				},
+				{
+					"text": "耐久度",
+					"bold": true
+				},
+				{
+					"text": "保暖度",
+					"bold": true
+				},
+				{
+					"text": "隔熱度",
+					"bold": true
+				},
+				{
+					"text": "草帽"
+				},
+				{
+					"text": "低"
+				},
+				{
+					"text": "-2°C"
+				},
+				{
+					"text": "+3"
+				},
+				{
+					"text": "原始"
+				},
+				{
+					"text": "低"
+				},
+				{
+					"text": "+2°C"
+				},
+				{
+					"text": "+5"
+				},
+				{
+					"text": "隔熱皮革"
+				},
+				{
+					"text": "中"
+				},
+				{
+					"text": "+2°C"
+				},
+				{
+					"text": "+10"
+				},
+				{
+					"text": "皮革圍裙"
+				},
+				{
+					"text": "中"
+				},
+				{
+					"text": "+0°C"
+				},
+				{
+					"text": "+20"
+				},
+				{
+					"text": "粗麻布"
+				},
+				{
+					"text": "中"
+				},
+				{
+					"text": "-2°C"
+				},
+				{
+					"text": "+5"
+				},
+				{
+					"text": "亞麻"
+				},
+				{
+					"text": "高"
+				},
+				{
+					"text": "-2°C"
+				},
+				{
+					"text": "+3"
+				},
+				{
+					"text": "羊毛"
+				},
+				{
+					"text": "中"
+				},
+				{
+					"text": "+4°C"
+				},
+				{
+					"text": "+5"
+				},
+				{
+					"text": "棉"
+				},
+				{
+					"text": "中"
+				},
+				{
+					"text": "+4°C"
+				},
+				{
+					"text": "+5"
+				},
+				{
+					"text": "絲綢"
+				},
+				{
+					"text": "非常高"
+				},
+				{
+					"text": "-2°C"
+				},
+				{
+					"text": "+5"
+				},
+				{
+					"text": "夜魅絲綢"
+				},
+				{
+					"text": "中"
+				},
+				{
+					"text": "-8°C"
+				},
+				{
+					"text": "+5"
+				},
+				{
+					"text": "紅麋鹿"
+				},
+				{
+					"text": "非常高"
+				},
+				{
+					"text": "-8°C"
+				},
+				{
+					"text": "+20"
+				}
+			],
+			"title": "衣物數值",
+			"legend": [],
+			"columns": 3,
+			"first_column_width": 80,
+			"column_width": 50,
+			"row_height": 9,
+			"left_buffer": 2,
+			"top_buffer": 20,
+			"draw_background": false
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(br2)$(br2)$(br2)$(br2)$(br2)$(br2)$(br2)$(br2)$(o)接下頁……$()"
+		},
+		{
+			"type": "tfg:table",
+			"anchor": "table",
+			"strings": [
+				{
+					"text": "衣物種類",
+					"bold": true
+				},
+				{
+					"text": "耐久度",
+					"bold": true
+				},
+				{
+					"text": "保暖度",
+					"bold": true
+				},
+				{
+					"text": "隔熱度",
+					"bold": true
+				},
+				{
+					"text": "恐狼"
+				},
+				{
+					"text": "中"
+				},
+				{
+					"text": "+8°C"
+				},
+				{
+					"text": "+5"
+				},
+				{
+					"text": "黑豹"
+				},
+				{
+					"text": "中"
+				},
+				{
+					"text": "+8°C"
+				},
+				{
+					"text": "+5"
+				},
+				{
+					"text": "美洲獅"
+				},
+				{
+					"text": "中"
+				},
+				{
+					"text": "+8°C"
+				},
+				{
+					"text": "+5"
+				},
+				{
+					"text": "老虎"
+				},
+				{
+					"text": "高"
+				},
+				{
+					"text": "-4°C"
+				},
+				{
+					"text": "+10"
+				},
+				{
+					"text": "鱷魚"
+				},
+				{
+					"text": "高"
+				},
+				{
+					"text": "-4°C"
+				},
+				{
+					"text": "+10"
+				},
+				{
+					"text": "獅子"
+				},
+				{
+					"text": "高"
+				},
+				{
+					"text": "-4°C"
+				},
+				{
+					"text": "+10"
+				},
+				{
+					"text": "黑熊"
+				},
+				{
+					"text": "高"
+				},
+				{
+					"text": "+8°C"
+				},
+				{
+					"text": "+10"
+				},
+				{
+					"text": "灰熊"
+				},
+				{
+					"text": "高"
+				},
+				{
+					"text": "+8°C"
+				},
+				{
+					"text": "+10"
+				},
+				{
+					"text": "北美馴鹿"
+				},
+				{
+					"text": "高"
+				},
+				{
+					"text": "+8°C"
+				},
+				{
+					"text": "+20"
+				},
+				{
+					"text": "劍齒虎"
+				},
+				{
+					"text": "高"
+				},
+				{
+					"text": "+8°C"
+				},
+				{
+					"text": "+20"
+				},
+				{
+					"text": "北極熊"
+				},
+				{
+					"text": "非常高"
+				},
+				{
+					"text": "+8°C"
+				},
+				{
+					"text": "+20"
+				}
+			],
+			"legend": [],
+			"title": "衣物數值(續)",
+			"columns": 3,
+			"first_column_width": 80,
+			"column_width": 50,
+			"row_height": 9,
+			"left_buffer": 2,
+			"top_buffer": 20,
+			"draw_background": false
+		},
+		{
+			"type": "patchouli:empty",
+			"draw_filler": false
+		},
+		{
+			"title": "盔甲紋飾",
+			"item": "tag:minecraft:trim_templates",
+			"type": "patchouli:spotlight",
+			"anchor": "armor_trim",
+			"text": "你的衣服看起來太單調了嗎？$(br2)和護甲一樣，大多數衣物也可以套用$(l:craftsmanship/sewing_table#armor_trim)盔甲紋飾$()。"
+		},
+		{
+			"type": "patchouli:relations",
+			"title": "延伸閱讀",
+			"anchor": "relations",
+			"entries": [
+				"tfg:agriculture/leather_making",
+				"tfg:agriculture/weaving",
+				"tfg:game_mechanics/player_temperature",
+				"tfg:craftsmanship/sewing_table",
+				"tfg:the_world/wild_animals",
+				"tfg:the_world/wild_crops",
+				"tfg:the_world/climate",
+				"tfg:logistics/exploration_gear",
+				"tfg:beneath/beneath",
+				"tfg:beneath/beneath_crops"
+			]
+		}
+	],
+	"extra_recipe_mappings": {
+		"tag:curios:clothes_hat": 0,
+		"tag:curios:clothes_torso": 0,
+		"tag:curios:clothes_pants": 0,
+		"tag:curios:clothes_socks": 0
+	}
+}

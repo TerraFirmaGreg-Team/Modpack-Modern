@@ -1,0 +1,7 @@
+{
+  "variants" : {
+    "default" : "outlined_sprite:tfc/peafowl_female.png",
+    "tfc:textures/entity/animal/peafowl_female.png" : "outlined_sprite:tfc/peafowl_female.png",
+    "tfc:textures/entity/animal/peafowl_male.png" : "outlined_sprite:tfc/peafowl_male.png"
+  }
+}

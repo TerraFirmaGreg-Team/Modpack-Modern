@@ -1,0 +1,262 @@
+{
+    "name": "營養與口渴",
+    "category": "tfg:cooking",
+    "icon": "tfc:textures/item/food/orange.png",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "title": "索引",
+            "anchor": "index",
+            "text": "$(li)$(bold)$(l:cooking/food_and_water#basics)基礎$()$(li)$(bold)$(l:cooking/food_and_water#thirst)口渴$()$(li)$(bold)$(l:cooking/food_and_water#nutrition_screen)營養介面$()$(li)$(bold)$(l:cooking/food_and_water#nutrients)養分$()$(li2)$(l:cooking/food_and_water#fruit)水果$()$(li2)$(l:cooking/food_and_water#vegetables)蔬菜$()$(li2)$(l:cooking/food_and_water#protein)蛋白質$()$(li2)$(l:cooking/food_and_water#grain)穀物$()$(li2)$(l:cooking/food_and_water#dairy)乳製品$()$(li)$(bold)$(l:cooking/food_and_water#contaminants)污染物$()$(li2)$(l:cooking/food_and_water#toxins)毒素$()$(li2)$(l:cooking/food_and_water#parasites)寄生蟲$()$(li2)$(l:cooking/food_and_water#microplastics)微塑膠$()"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)$(bold)$(l:cooking/food_and_water#transient_effects)短暫效果$()$(li2)$(l:cooking/food_and_water#cooling_transient_effect)降溫$()$(li2)$(l:cooking/food_and_water#warming_transient_effect)保暖$()$(li2)$(l:cooking/food_and_water#quenching_transient_effect)解渴$()$(li2)$(l:cooking/food_and_water#bolstering_transient_effect)強健$()$(li2)$(l:cooking/food_and_water#hearty_transient_effect)豐盛$()$(li2)$(l:cooking/food_and_water#rejuvenating_transient_effect)回春$()$(li2)$(l:cooking/food_and_water#freezing_transient_effect)冰凍$()$(li2)$(l:cooking/food_and_water#blazing_transient_effect)炙熱$()$(li2)$(l:cooking/food_and_water#radiating_transient_effect)輻射$()$(li2)$(l:cooking/food_and_water#nauseating_transient_effect)噁心$()$(li2)$(l:cooking/food_and_water#parching_transient_effect)乾渴$()$(li2)$(l:cooking/food_and_water#deadly_transient_effect)致命$()$(li2)$(l:cooking/food_and_water#fulfilling_transient_effect)飽足$()$(li2)$(l:cooking/food_and_water#sugary_transient_effect)甜食$()$(li2)$(l:cooking/food_and_water#spicy_transient_effect)辛辣$()"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "基礎",
+            "anchor": "basics",
+            "text": "在$(tfg)中，你不只要管理飢餓，還必須管理口渴。飢餓的運作方式與原版類似。大多數食物會恢復約五分之一的飢餓條。有些食物恢復得少一點，例如$(thing)香蒲根$()。進食也會恢復$(thing)飽和度$()，可以理解為你有多飽。食物或水耗盡會導致行動遲緩並受到傷害。死亡不會重置你的養分或污染物。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "有些食物非常有飽足感，能讓你更久不會餓，而有些食物的效果則很短暫。$(br2)一般遊玩就會消耗飢餓值。如果你進行衝刺、游泳或$(l:game_mechanics/size_and_weight#overburdening)負擔過重$()等行為，飢餓值會消耗得更快。將游標移到物品欄中的食物上，即可查看該食物提供的$(thing)飽和度$()、$(thing)水分$()和$(thing)養分$()資訊。按住$(item)$(k:key.sneak)$()可顯示完整的提示框。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "所有食物都有包含這些資訊的提示框。提示框中包含食物的$(l:cooking/decay#decay)腐壞日期$()，可以透過保存來延長。查看這些資訊時，要注意並非所有食物都有營養價值。例如，$(l:cooking/bread)麵團$()是食物，但它沒有營養、飽和度或水分值。吃它沒什麼好處。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "食物的提示框可能看起來像這樣：$(br2)$(bold)柳橙$()$(br)  $(2)$(bold)過期時間：1004 年 7 月 6 日 11:59(1 個月又 1 天後)$()$(br)  $(8)營養：$(br)  - 飽和度：2%$(br)  - 水分：10%$(br)$(a)  - 水果：0.5"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "thirst",
+            "text": "口渴是你體內的水分含量。它的消耗速度與飢餓相近。在高溫或飢餓消耗量大的情況下，口渴會消耗得更快。幸好，飲用$(thing)淡水$()可以補充水分。對水方塊按下$(item)$(k:key.use)$()即可飲用。喝鹽水會讓你更加口渴，甚至有機率給予$(thing)口渴$()效果，讓你流失更多水分。",
+            "title": "口渴"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "Y"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "minecraft:air",
+                    "Y": "tfc:plant/cattail[part=lower,fluid=water]"
+                }
+            },
+            "name": "飲水安全",
+            "text": "要避開鹽水或泥水，請尋找河流、湖泊，以及$(thing)香蒲$()等淡水植物。",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "飲水容器",
+            "item": {
+                "tag": "tfg:drinking_vessels"
+            },
+            "text": "$(l:craftsmanship/pottery)塑形$()並燒製一個$(l:craftsmanship/pottery#jug)陶壺$()，是早期隨身攜帶水的方法。像桶子一樣按下$(item)$(k:key.use)$()即可裝水。按住$(item)$(k:key.use)$()即可喝水。$(br2)你也可以用$(item)水壺$()或$(l:craftsmanship/glassworking)玻璃瓶$()等其他$(l:cooking/drinking_containers)容器$()喝水。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)有些流體，例如$(thing)牛奶$()，飲用時甚至會提供$(l:cooking/food_and_water#nutrients)養分$()。$(br2)飲用流體所恢復的水分並不固定。不過，水和牛奶都會提供 10 點水分，以一個$(9)💧$()水滴表示。"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "nutrition_screen",
+            "text": "在$(tfg)中，營養介面會顯示大量關於你健康狀態的資訊。$(li)主圖表顯示你的$(l:cooking/food_and_water#nutrients)養分$()。$(li)側邊圖表顯示你的$(l:cooking/food_and_water#contaminants)污染物$()。$(li)一個顯示你健康數據的表格。$()$(li)以及可切換的檢視畫面，用來查看隊伍成員的營養狀態。$()$(br)將游標移到介面上的元素並$(item)按住 $(k:key.sneak)$()可查看更多資訊。$()",
+            "title": "營養介面"
+        },
+        {
+            "type": "patchouli:image",
+            "width": 1024,
+            "texture_width": 1024,
+            "height": 1024,
+            "texture_height": 1024,
+            "images": [
+                "tfg:textures/gui/field_guide/screens/nutrition_screen.png"
+            ],
+            "text": "營養介面，以圖表顯示各項養分的含量。",
+            "border": false
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "nutrients",
+            "text": "共有五種養分，都可以從食物中取得：$(l)$(a)水果$()$()、$(l)$(2)蔬菜$()$()、$(l)$(c)蛋白質$()$()、$(l)$(6)穀物$()$()和$(l)$(5)乳製品$()$()。進食會讓你獲得食物中的養分。$(l:cooking/cooking_methods#pot)湯$()等餐點能將更多養分結合在一餐中。餐點通常會直接沿用其材料的養分。這點很重要，因為一段時間前吃的餐點不會計入你的營養。",
+            "title": "養分"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "average_nutrients",
+            "text": "養分的總值決定你的最大生命值。數值最高時可以達到$(l)$(c)30 顆心$()$()，最低則是$(l)$(c)3 顆心$()$()。$(br)你的平均養分也會影響以下項目：$()$(li)$(bold)平均 >55% ↴$()$()$(italic)$(li2)被動生命恢復增加 50%。$()$()$(italic)$(li2)$(l:game_mechanics/hazards#medicine)病症$()惡化速度降低 25%。$()$()$(italic)$(li2)病症被動痊癒速度增加 50%。$()$()"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)$(bold)平均 >85% ↴$()$()$(italic)$(li2)被動生命恢復增加 100%。$()$()$(italic)$(li2)$(l:game_mechanics/hazards#medicine)病症$()惡化速度降低 50%。$()$()$(italic)$(li2)病症被動痊癒速度增加 100%。$()$()"
+        },
+        {
+            "title": "水果",
+            "type": "patchouli:text",
+            "anchor": "fruit",
+            "text": "$(l)$(a)水果$()$()養分主要來自漿果叢和果樹等$(l:the_world/wild_fruits)結果植物$()。值得注意的例外是$(l:the_world/wild_crops#pumpkin)南瓜$()和$(l:the_world/wild_crops#melon)西瓜$()，它們在營養上屬於水果。$(br2)提高水果數值會帶來以下效果：$()$(li)$(bold)平均 >55% → $()$()$(italic)口渴消耗降低 25%。$()$(li)$(bold)平均 >85% → $()$()$(italic)挖掘速度增加 30%。$()"
+        },
+        {
+            "title": "蔬菜",
+            "type": "patchouli:text",
+            "anchor": "vegetables",
+            "text": "幾乎每種$(l:agriculture/growing_crops)作物$()都含有$(l)$(2)蔬菜$()$()養分。$(br2)提高蔬菜數值會帶來以下效果：$()$(li)$(bold)數值 >55% → $()$()$(italic)移除水下挖掘的懲罰。$()$(li)$(bold)數值 >85% → $()$()$(italic)給予水下呼吸效果。$()"
+        },
+        {
+            "title": "蛋白質",
+            "type": "patchouli:text",
+            "anchor": "protein",
+            "text": "$(l)$(c)蛋白質$()$()可以從$(l:the_world/wild_animals)動物$()的肉中取得，也可以從$(thing)豆類$()等部分作物中取得。$(br2)提高蛋白質數值會帶來以下效果：$()$(li)$(bold)數值 >55% → $()$()$(italic)疲勞倍率降低 25%。$()$(li)$(bold)數值 >85% → $()$()$(italic)可以多攜帶一個巨大且沉重的物品(例如密封的木桶)而不會$(l:game_mechanics/size_and_weight#overburdening)負擔過重$()。$()"
+        },
+        {
+            "title": "穀物",
+            "type": "patchouli:text",
+            "anchor": "grain",
+            "text": "$(l)$(6)穀物$()$()存在於$(l:the_world/wild_crops#barley)大麥$()等穀類作物中。穀物的加工方式在$(l:cooking/bread)麵包$()頁面中說明。有些根莖類作物也算作穀物。$(br2)提高穀物數值會帶來以下效果：$()$(li)$(bold)數值 >55% → $()$()$(italic)給予 5% 的速度增益。$()$(li)$(bold)數值 >85% → $()$()$(italic)給予 15% 的速度增益。$()"
+        },
+        {
+            "title": "乳製品",
+            "type": "patchouli:text",
+            "anchor": "dairy",
+            "text": "$(l)$(5)乳製品$()$()來自$(thing)牛奶$()，而牛奶取自$(l:agriculture/animal_husbandry#dairy_animals)產乳動物$()。牛奶的加工與飲用在$(l:cooking/cheese)乳製品$()頁面中說明。$(br2)提高乳製品數值會帶來以下效果：$()$(li)$(bold)數值 >55% → $()$()$(italic)給予$(thing)輕盈 I$()效果。$()$(li)$(bold)數值 >85% → $()$()$(italic)給予$(thing)輕盈 IV$()效果。$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "contaminants",
+            "text": "除了養分之外，$(tfg)還新增了污染物。共有三種污染物，都可能從食物中攝取：$(l)$(d)毒素$()$()、$(l)$(4)寄生蟲$()$()和$(l)$(3)微塑膠$()$()。污染物會傳入餐點中，並在玩家體內累積。",
+            "title": "污染物"
+        },
+        {
+            "title": "毒素",
+            "type": "patchouli:text",
+            "anchor": "toxins",
+            "text": "$(l)$(d)毒素$()來自特定的危險作物和肉類。毒素會以每天 3% 的速度自然減少。服用$(item)排毒膠囊$()可以主動$(l:game_mechanics/mob_effects#cure_toxins)清除毒素$()。$(br2)毒素數值增加會帶來以下效果：$()$(li)$(bold)數值 >0% → $()$()$(italic)每次毒素增加時：有 25% 的機率獲得隨機的危險效果 10 秒。$()$(li)$(bold)數值 >99% → $()$()$(italic)$(l:game_mechanics/mob_effects#final_moments)死亡。$()"
+        },
+        {
+            "title": "寄生蟲",
+            "type": "patchouli:text",
+            "anchor": "parasites",
+            "text": "$(l)$(4)寄生蟲$()來自食用某些生肉或飲用泥水。服用$(item)驅蟲膠囊$()可以主動$(l:game_mechanics/mob_effects#cure_parasites)驅蟲$()。$(br2)寄生蟲數值增加會帶來以下效果：$()$(li)$(bold)數值 >10% → $()$()$(italic)每天有 20% 的機率增加 10%，最高到 60%。$()$(li)$(bold)數值 >33% → $()$()$(italic)被動疲勞增加 25%。$()$(li)$(bold)數值 >66% → $()$()$(italic)被動疲勞增加 50%。$()"
+        },
+        {
+            "title": "微塑膠",
+            "type": "patchouli:text",
+            "anchor": "microplastics",
+            "text": "$(l)$(3)微塑膠$()來自食用以塑膠包裝的食物。微塑膠會以每天 1% 的速度自然減少。服用$(item)奈米過濾膠囊$()可以主動$(l:game_mechanics/mob_effects#cure_microplastics)清除微塑膠$()。$(br)微塑膠數值增加會帶來以下效果：$(br2)$(o)(下頁續……)$()"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)$(bold)數值 >33% → $()$()$(italic)高溫口渴消耗倍率增加 25%$()$(li)$(bold)數值 >66% ↴$()$()$(italic)$(li2)高溫口渴消耗倍率增加 50%。$()$()$(italic)$(li2)每次微塑膠增加時：有 5% 的機率罹患$(l:game_mechanics/hazards#carcinogens)癌症$()。"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "transient_effects",
+            "text": "$(tfg)也新增了$(item)短暫效果$()。短暫效果的目的是將材料的增益/減益效果轉移到餐點中。短暫效果可以組合並食用，但它們不會在玩家體內累積――會在食用時立即生效。$(br)效果的強度取決於該養分的數值，不過每種效果決定強度的方式不盡相同。$()",
+            "title": "短暫效果"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "cooling_transient_effect",
+            "text": "$(#12d7ff)❅$()$(bold) 降溫$()$(li)給予玩家$(l:game_mechanics/mob_effects#cooling)降溫$()效果，每 1 點養分持續 1 分鐘，最長持續 30 分鐘。$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "warming_transient_effect",
+            "text": "$(#ff7700)🔆$()$(bold) 保暖$()$(li)給予玩家$(l:game_mechanics/mob_effects#warming)保暖$()效果，每 1 點養分持續 1 分鐘，最長持續 30 分鐘。$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "quenching_transient_effect",
+            "text": "$(#00c792)🍹$()$(bold) 解渴$()$(li)給予玩家$(l:game_mechanics/mob_effects#quenched)解渴$()效果，每 1 點養分持續 1 分鐘，最長持續 30 分鐘。$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "bolstering_transient_effect",
+            "text": "$(#ffe417)♡$()$(bold) 強健$()$(li)給予玩家$(n)吸收$()效果 8 分鐘，效果等級依養分點數而定，最高等級為 5。$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "hearty_transient_effect",
+            "text": "$(#ff171b)♡$()$(bold) 豐盛$()$(li)給予玩家$(n)生命值提升$()效果 8 分鐘，效果等級依養分點數而定，最高等級為 5。$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "rejuvenating_transient_effect",
+            "text": "$(#ff178f)💕$()$(bold) 回春$()$(li)給予玩家$(n)回復$()效果，每 1 點養分持續 1 分鐘，最長持續 3 分鐘。$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "freezing_transient_effect",
+            "text": "$(#12d7ff)⛇$()$(bold) 凍結$()$(li)給予玩家$(l:game_mechanics/mob_effects#freezing)凍結$()效果，每 1 點養分持續 5 秒，最長持續 30 秒。$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "blazing_transient_effect",
+            "text": "$(#ff7700)🔥$()$(bold) 灼熱$()$(li)給予玩家$(l:game_mechanics/mob_effects#blazing)灼熱$()效果，每 1 點養分持續 5 秒，最長持續 30 秒。$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "radiating_transient_effect",
+            "text": "$(#9fc700)☢$()$(bold) 輻射$()$(li)給予玩家$(n)發光$()效果 24 秒。$()$(li)給予玩家$(l:game_mechanics/mob_effects#instant_radiation)輻射$()效果 24 秒，效果等級依養分點數而定，最高等級為 5。$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "nauseating_transient_effect",
+            "text": "$(#078f00)🤢$()$(bold) 噁心$()$(li)給予玩家$(n)噁心$()效果，每 1 點養分持續 5 秒，最長持續 12 秒。$()$(li)給予玩家$(n)飢餓 VI$()效果，每 1 點養分持續 10 秒，最長持續 30 秒。$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "parching_transient_effect",
+            "text": "🧂$(bold) 乾渴$()$(li)給予玩家$(n)口渴$()效果，每 1 點養分持續 1 分鐘，最長持續 8 分鐘。$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "deadly_transient_effect",
+            "text": "$(#470275)💀$()$(bold) 致命$()$(li)給予玩家$(l:game_mechanics/mob_effects#final_moments)最後時刻$()效果 8 分鐘，每多 1 點養分持續時間減半。$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "fulfilling_transient_effect",
+            "text": "$(#551913)🍖$()$(bold) 飽足$()$(li)給予玩家$(n)抗性$()效果，每 1 點養分持續 1 分鐘，最長持續 15 分鐘。$()$(li)給予玩家$(n)立即治療$()效果，效果等級依養分點數而定，最高等級為 2。$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "sugary_transient_effect",
+            "text": "$(#837447)🍰$()$(bold) 甜食$()$(li)給予玩家$(n)虛弱$()效果，每 1 點養分持續 15 秒，最長持續 5 分鐘。$()$(li)給予玩家$(n)速度$()效果，每 1 點養分持續 1 分鐘，最長持續 30 分鐘。$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "spicy_transient_effect",
+            "text": "$(#8F0000)🌶 $()$(bold) 辛辣$()$(li)給予玩家$(n)口渴$()效果，每 1 點養分持續 15 秒，最長持續 5 分鐘。$()$(li)給予玩家$(l:game_mechanics/mob_effects#warming)保暖$()狀態效果，每 1 點養分持續 1 分鐘，最長持續 30 分鐘。$()"
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "延伸閱讀",
+            "anchor": "relations",
+            "entries": [
+                "tfg:cooking/decay",
+                "tfg:the_world/wild_crops",
+                "tfg:the_world/wild_fruits",
+                "tfg:cooking/drinking_containers"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "priority": true,
+    "sortnum": 0
+}

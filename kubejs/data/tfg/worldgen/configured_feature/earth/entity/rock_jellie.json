@@ -1,0 +1,30 @@
+{
+	"type": "minecraft:random_patch",
+	"config": {
+		"feature": {
+			"feature": {
+				"type": "lithostitched:structure_template",
+				"config": {
+					"template": "tfg:mobs_generic/rock_jellie",
+					"processors": "minecraft:empty"
+				}
+			},
+			"placement": [
+				{
+					"type": "minecraft:random_offset",
+					"xz_spread": 0,
+					"y_spread": 1
+				},
+				{
+					"type": "block_predicate_filter",
+					"predicate": {
+						"type": "tfc:replaceable"
+					}
+				}
+			]
+		},
+		"tries": 4,
+		"xz_spread": 3,
+		"y_spread": 2
+	}
+}

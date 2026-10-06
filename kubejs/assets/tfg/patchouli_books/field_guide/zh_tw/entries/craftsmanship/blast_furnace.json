@@ -1,0 +1,398 @@
+{
+    "name": "高爐",
+    "category": "tfg:craftsmanship",
+    "icon": "tfc:blast_furnace",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(thing)高爐$()是用來製造$(thing)鋼$()的高階裝置。在受控的高溫環境中混合$(l:craftsmanship/metallurgy)鐵礦石$()、$(l:craftsmanship/charcoal_pit#coke_oven)焦炭$()或$(thing)無煙煤$()以及$(item)助熔劑$()，就能製造出比鑄鐵或鍛鐵更堅固的金屬。$(br2)要取得高爐，你首先需要一個$(l:craftsmanship/crucible)坩堝$()和大量的$(l:craftsmanship/bloomery)鍛鐵板$()。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "合成高爐本身需要一個$(thing)坩堝$()，以及一些你會用到的$(thing)雙重鍛鐵板$()。$(br)接著你需要建造高爐及其$(thing)煙囪$()。煙囪必須用$(l:craftsmanship/pottery#fire_clay)耐火磚$()建造，因為只有它們才夠堅固，能承受強烈的高溫。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "耐火磚方塊必須以$(item)$(italic)鑄鐵板或鍛鐵板$()包覆。手持金屬板按下$(item)$(k:key.sneak)-$(k:key.use)$()，即可將金屬板裝到耐火磚每個裸露的面上。$(br2)也可以使用$(item)高爐隔熱層$()取代實體金屬板，讓結構更緊湊。"
+        },
+        {
+            "type": "tfg:multimultiblock",
+            "text": "使用$(item)隔熱耐火磚$()的 1-5 層高爐結構",
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ],
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ],
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ],
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ],
+                        [
+                            " F ",
+                            "F0F",
+                            " F "
+                        ],
+                        [
+                            "   ",
+                            " B ",
+                            "   "
+                        ]
+                    ],
+                    "mapping": {
+                        "B": "tfc:blast_furnace[lit=true]",
+                        "F": "tfcbetterbf:insulated_fire_bricks"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ],
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ],
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ],
+                        [
+                            " F ",
+                            "F F",
+                            " F "
+                        ],
+                        [
+                            " F ",
+                            "F0F",
+                            " F "
+                        ],
+                        [
+                            "   ",
+                            " B ",
+                            "   "
+                        ]
+                    ],
+                    "mapping": {
+                        "B": "tfc:blast_furnace[lit=true]",
+                        "F": "tfcbetterbf:insulated_fire_bricks"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ],
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ],
+                        [
+                            " F ",
+                            "F F",
+                            " F "
+                        ],
+                        [
+                            " F ",
+                            "F F",
+                            " F "
+                        ],
+                        [
+                            " F ",
+                            "F0F",
+                            " F "
+                        ],
+                        [
+                            "   ",
+                            " B ",
+                            "   "
+                        ]
+                    ],
+                    "mapping": {
+                        "B": "tfc:blast_furnace[lit=true]",
+                        "F": "tfcbetterbf:insulated_fire_bricks"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ],
+                        [
+                            " F ",
+                            "F F",
+                            " F "
+                        ],
+                        [
+                            " F ",
+                            "F F",
+                            " F "
+                        ],
+                        [
+                            " F ",
+                            "F F",
+                            " F "
+                        ],
+                        [
+                            " F ",
+                            "F0F",
+                            " F "
+                        ],
+                        [
+                            "   ",
+                            " B ",
+                            "   "
+                        ]
+                    ],
+                    "mapping": {
+                        "B": "tfc:blast_furnace[lit=true]",
+                        "F": "tfcbetterbf:insulated_fire_bricks"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            " F ",
+                            "F F",
+                            " F "
+                        ],
+                        [
+                            " F ",
+                            "F F",
+                            " F "
+                        ],
+                        [
+                            " F ",
+                            "F F",
+                            " F "
+                        ],
+                        [
+                            " F ",
+                            "F F",
+                            " F "
+                        ],
+                        [
+                            " F ",
+                            "F0F",
+                            " F "
+                        ],
+                        [
+                            "   ",
+                            " B ",
+                            "   "
+                        ]
+                    ],
+                    "mapping": {
+                        "B": "tfc:blast_furnace[lit=true]",
+                        "F": "tfcbetterbf:insulated_fire_bricks"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "patchouli:text",
+            "text": "高爐的煙囪最多可以有$(italic)五層$()。每一層需要$(thing)4 個$(item)耐火磚和$(thing)12 個$(item)鍛鐵/鑄鐵板$()才能完成。每多一層，高爐的總容量就增加 4 份鋼。$(br)使用高爐時，必須從煙囪頂端丟入物品。生產鋼時，必須放入數量相等的$(l:craftsmanship/metallurgy)鐵礦石$()和$(item)助熔劑$()。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "每加入 144mB 的鐵，就必須搭配 1 個助熔劑。任何可以熔化成$(thing)鑄鐵$()的鐵礦石或物品都可以使用。你還需要加入$(l:craftsmanship/charcoal_pit#coke_oven)焦炭$()或$(thing)無煙煤$()，它們會在高爐運作時被消耗。$(br2)基本上，每一層需要$(t:144 x 4)$(6)576mB$()的鐵和 4 個助熔劑，以及約 4-8 個焦炭。燃料消耗量不會隨層數增加。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "對高爐按下$(item)$(k:key.use)$()即可開啟高爐介面，如下一張圖所示。在這個介面中，你會看到高爐內礦石和燃料含量的量表。右上方的欄位必須放入$(thing)風口管$()，這是一種將空氣送入高爐的金屬管，要達到熔煉鋼所需的最高溫度就必須有它。風口管可以在$(l:craftsmanship/anvils)鐵砧$()上鍛造。"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/gui/blast_furnace.png"
+            ],
+            "text": "高爐介面",
+            "border": false
+        },
+        {
+            "type": "patchouli:text",
+            "text": "你還需要一個$(l:craftsmanship/charcoal_forge#bellows)風箱$()，高爐才能達到熔化鐵的溫度(除非使用無煙煤作為燃料)。風箱可以放在高爐四個側面的任何一面。$(br)使用風箱會消耗風口管的耐久度，因此建議大約每分鐘只啟動一次。"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "enable_visualize": true,
+            "text": "附有風箱和模具台的全尺寸高爐。",
+            "multiblock": {
+                "pattern": [
+                    [
+                        " F ",
+                        "F F",
+                        " F "
+                    ],
+                    [
+                        " F ",
+                        "F F",
+                        " F "
+                    ],
+                    [
+                        " F ",
+                        "F F",
+                        " F "
+                    ],
+                    [
+                        " F ",
+                        "F F",
+                        " F "
+                    ],
+                    [
+                        " F ",
+                        "F0F",
+                        " F "
+                    ],
+                    [
+                        "   ",
+                        " BW",
+                        "   "
+                    ],
+                    [
+                        "   ",
+                        " M ",
+                        "   "
+                    ]
+                ],
+                "mapping": {
+                    "B": "tfc:blast_furnace",
+                    "F": "tfcbetterbf:insulated_fire_bricks",
+                    "W": "tfc:bellows[facing=north]",
+                    "M": "tfcchannelcasting:mold_table"
+                }
+            }
+        },
+        {
+            "type": "patchouli:text",
+            "text": "最後，用$(l:craftsmanship/firepit#firestarter)生火器$()或$(item)打火石$()點燃高爐即可開始。它會開始加熱內部的礦石。請確保高爐持續有燃料，並用風箱為高爐送入空氣，直到內部溫度達到鋼的熔點。內部的礦石加熱後，會熔化並轉化為液態$(item)生鐵$()。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "這種液態金屬會滴入放在高爐正下方的任何金屬流體容器中，例如$(item)桶$()、$(l:craftsmanship/crucible)坩堝$()或$(l:craftsmanship/crucible#channel_casting)模具台$()。冷卻後，生鐵錠必須在鐵砧或$(l:craftsmanship/anvils#helve_hammer)杵錘$()上鍛造成$(item)高碳鋼$()，然後再鍛造成$(item)鋼$()。"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "tips",
+            "title": "高爐提示",
+            "text": "在你把所有耐火黏土用來做 20 塊耐火磚之前，請注意：進入蒸汽時代後，你可以用便宜得多的方式合成它。開始時並不需要全尺寸的高爐。事實上，4 層高的高爐材料比例更好，因為它每次運作使用 16 個助熔劑和 16 份鐵。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "預熱金屬",
+            "anchor": "preheating",
+            "item": "tfc:firepit",
+            "text": "要將鐵轉化為鋼，高爐必須將內部的鐵加熱到$(d)$(bold)耀眼白熱$()。第一次運作時，金屬會隨著高爐一起升溫。不過，之後的運作即使高爐已經達到溫度，所需時間也差不多，因為它需要將金屬從冷的狀態開始加熱。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "如果放入高爐時金屬已經是熱的，達到耀眼白熱所需的時間就會較短。可以考慮先在$(l:craftsmanship/charcoal_forge)木炭爐$()中加熱金屬，再放入已經熱好的高爐以節省時間，尤其是一次處理量較少的小型高爐。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "高爐自動化",
+            "item": "greate:steel_mechanical_pump",
+            "text": "在$(thing)蒸汽$()和$(thing)LV$()時代，你會需要大量的$(item)鋼$()。非常大量的鋼。$(thing)電力高爐$()還很遙遠，所以也許該考慮優化你的鋼產量。$(br2)你可以從$(l:craftsmanship/charcoal_forge#bellows)風箱$()的背面提供機械動力來將它自動化。不過要小心，使用風箱會消耗更多燃料，並讓你的$(thing)風口管$()更快損壞。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "你可以用朝向高爐的漏斗或物品管道自動更換損壞的風口管。$(br2)你可以用機械動力的$(item)機械幫浦$()以極快的速度從高爐抽出液體。將液體抽入$(l:craftsmanship/crucible#channel_casting)模具台$()，再用漏斗或滑槽取出金屬錠：輕鬆自動化！$(br2)你可以在$(thing)鍛造錘$()或$(l:craftsmanship/anvils#helve_hammer)杵錘$()中處理產出的$(item)生鐵$()和$(item)高碳鋼$()。"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "enable_visualize": true,
+            "text": "一種非常便宜又快速的配置：在高爐下方放一個桶，讓它自動輸出到下方的模具台。",
+            "multiblock": {
+                "pattern": [
+                    [
+                        " F ",
+                        "F F",
+                        " F "
+                    ],
+                    [
+                        " F ",
+                        "F F",
+                        " F "
+                    ],
+                    [
+                        " F ",
+                        "F F",
+                        " F "
+                    ],
+                    [
+                        " F ",
+                        "F0F",
+                        " F "
+                    ],
+                    [
+                        "   ",
+                        " BW",
+                        "   "
+                    ],
+                    [
+                        "   ",
+                        " D ",
+                        "   "
+                    ],
+                    [
+                        "   ",
+                        " M ",
+                        "   "
+                    ]
+                ],
+                "mapping": {
+                    "B": "tfc:blast_furnace",
+                    "F": "tfcbetterbf:insulated_fire_bricks",
+                    "W": "tfc:bellows[facing=north]",
+                    "M": "tfcchannelcasting:mold_table",
+                    "D": "gtceu:gold_drum"
+                }
+            }
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "延伸閱讀",
+            "anchor": "relations",
+            "entries": [
+                "tfg:craftsmanship/pottery",
+                "tfg:agriculture/leather_making",
+                "tfg:craftsmanship/metallurgy",
+                "tfg:craftsmanship/charcoal_forge",
+                "tfg:craftsmanship/crucible",
+                "tfg:craftsmanship/charcoal_pit",
+                "tfg:craftsmanship/bloomery",
+                "tfg:game_mechanics/heating"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 10,
+    "extra_recipe_mappings": {
+        "tfc:blast_furnace": 1,
+        "tfc:fire_bricks": 1,
+        "tfcbetterbf:insulated_fire_bricks": 1,
+        "tag:tfc:tuyeres": 1
+    }
+}

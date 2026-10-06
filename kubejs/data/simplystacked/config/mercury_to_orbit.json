@@ -1,7 +1,7 @@
 {
     "from": "ad_astra:mercury",
     "to": "ad_astra:mercury_orbit",
-    "from_y_min": 500,
+    "from_y_min": 1024,
     "from_y_max": 999999,
     "to_y": -80,
     "cloud_platform": false

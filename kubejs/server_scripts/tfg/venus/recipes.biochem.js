@@ -223,7 +223,7 @@ function registerTFGBiochemRecipes(event) {
 		B: 'gtceu:computer_monitor_cover',
 		C: ChemicalHelper.get(TagPrefix.plateDense, GTMaterials.TungstenSteel, 1),
 		D: '#gtceu:circuits/luv',
-		E: '#forge:lenses/amethyst'
+		E: 'gtceu:glass_lens'
 	}).addMaterialInfo().id('tfg:shaped/growth_monitor');
 
 	event.recipes.gtceu.assembler('tfg:casings/machine_casing_sterilizing_pipes')

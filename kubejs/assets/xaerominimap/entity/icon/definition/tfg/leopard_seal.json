@@ -1,16 +1,5 @@
 {
     "variants" : {
-        "default" : "model:0"
-    },
-    
-    "modelConfigs" : [
-        {
-            "baseScale" : 0.4,
-            "modelMainPartFieldAliases" : [
-                "su.terrafirmagreg.core.common.entity.animals.tfcleopardseal.TFCLeopardSealModel;whole_body_1"
-            ]
-        }
-    ],
-
-    "variantMethod" : "xaero.hud.minimap.radar.icon.definition.BuiltInRadarIconDefinitions.getVariant"
+        "default" : "outlined_sprite:tfg/leopard_seal.png"
+    }
 }

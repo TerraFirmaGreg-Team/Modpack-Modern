@@ -1,0 +1,165 @@
+{
+    "name": "探險裝備",
+    "category": "tfg:logistics",
+    "icon": "sns:hiking_boots",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(li)$(bold)$(l:logistics/exploration_gear#hiking_boots)登山靴$()$(li2)$(l:logistics/exploration_gear#safety_boots)安全靴$()$(li)$(bold)$(l:logistics/exploration_gear#canes)手杖$()$(li)$(bold)$(l:logistics/exploration_gear#snowshoes)雪鞋$()$(li)$(bold)$(l:logistics/exploration_gear#snorkel)呼吸管$()$(li)$(bold)$(l:logistics/exploration_gear#flippers)蛙鞋$()$(li)$(bold)$(l:logistics/exploration_gear#diving_suit)潛水服$()$(li2)$(l:logistics/exploration_gear#lava_diving_suit)熔岩潛水服$()$(li)$(bold)$(l:logistics/exploration_gear#digger_helmet)礦工頭盔$()$(li)$(bold)$(l:logistics/exploration_gear#grappling_hook)抓鉤$()$(li2)$(l:logistics/exploration_gear#harpoon)魚叉$()$(li)$(bold)$(l:logistics/exploration_gear#hang_glider)滑翔翼$()$(li)$(bold)$(l:logistics/exploration_gear#jetpacks)噴射背包$()",
+            "title": "索引",
+            "anchor": "index"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "登山靴",
+            "anchor": "hiking_boots",
+            "item": "sns:hiking_boots",
+            "text": "每位探險家都需要一雙好靴子。$(br)$(thing)登山靴$()可以讓你：$(li)快速穿過灌木叢。$(li)獲得少量速度提升。$(li)少量提高安全墜落高度。$(li)自動走上方塊，按下$(item)$(k:sns.key.stepUpToggle)$()啟用"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "safety_boots",
+            "title": "安全靴",
+            "item": "sns:steel_toe_hiking_boots,sns:black_steel_toe_hiking_boots,sns:red_steel_toe_hiking_boots,sns:blue_steel_toe_hiking_boots",
+            "text": "可以在登山靴中整合各種鋼材來提高防護力。$(thing)藍鋼和紅鋼$()登山靴還能額外防護極端溫度等環境危害。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "canes",
+            "title": "手杖",
+            "item": "tfccanes:walking_cane,tfccanes:refined_walking_cane",
+            "text": "$(thing)手杖$()提供與登山靴類似的效果，但必須拿在手上。它的跨步高度效果甚至可以與登山靴疊加，讓你能自動跨上 2 格高的牆。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "snowshoes",
+            "title": "雪鞋",
+            "item": "tfg:snowshoes",
+            "text": "將$(thing)雪鞋$()穿在腳上，可以消除在雪地上行走時的減速懲罰，並讓你能在粉雪上行走。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "snorkel",
+            "title": "呼吸管",
+            "item": "tfg:snorkel",
+            "text": "將$(thing)呼吸管$()戴在臉上，可以讓你在水下多呼吸$(item)15 秒$()。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "flippers",
+            "title": "蛙鞋",
+            "item": "tfg:flippers",
+            "text": "將$(thing)蛙鞋$()穿在腳上，可以提高你在水下游泳時的靈活度和速度。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "diving_suit",
+            "title": "潛水服",
+            "item": "create:copper_diving_helmet,create:copper_diving_boots,create:copper_backtank",
+            "text": "$(item)銅潛水頭盔和背負氣瓶$()能讓穿戴者無限期待在水下，直到背負氣瓶的空氣耗盡為止。你可以為氣瓶提供$(thing)機械動力$()來補充空氣。穿著$(item)銅潛水靴$()可以讓你在海床上移動得更好，並防止$(thing)機械輸送帶$()和$(thing)比空氣輕的氣體$()對你產生影響。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "lava_diving_suit",
+            "title": "熔岩潛水服",
+            "item": "create:netherite_diving_helmet,create:netherite_diving_boots,create:netherite_backtank,minecraft:netherite_leggings",
+            "text": "$(thing)藍鋼潛水服$()的運作方式與$(l:logistics/exploration_gear#diving_suit)潛水服$()類似，但它不是讓你在水下呼吸，而是讓你在熔岩中呼吸。必須穿戴整套才能保護你免受高溫傷害。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "digger_helmet",
+            "title": "礦工頭盔",
+            "item": "diggerhelmet:digger_helmet,diggerhelmet:copper_digger_helmet,diggerhelmet:bismuth_bronze_digger_helmet,diggerhelmet:black_bronze_digger_helmet,diggerhelmet:bronze_digger_helmet,diggerhelmet:wrought_iron_digger_helmet,diggerhelmet:steel_digger_helmet,diggerhelmet:black_steel_digger_helmet,diggerhelmet:red_steel_digger_helmet,diggerhelmet:blue_steel_digger_helmet,diggerhelmet:wool_lining,diggerhelmet:silk_lining,diggerhelmet:mining_speed_modifier,diggerhelmet:auto_drink_modifier",
+            "text": "多虧了頭上的蠟燭，$(thing)礦工頭盔$()能在玩家周圍提供永久的環境光源。它還有一些實用的修飾升級，例如$(item)挖掘速度修飾$()、$(item)自動飲水修飾$()或$(thing)隔熱內襯$()。$(br)可以佩戴在你的$(l:craftsmanship/clothing#curios)飾品欄$()中，但這樣就不會提供護甲值。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "grappling_hook",
+            "title": "抓鉤",
+            "item": "grapplemod:grapplinghook",
+            "text": "$(thing)抓鉤$()按下$(item)$(k:key.attack)$()可以射出一條繩索並固定在方塊上，讓你能擺盪移動並快速垂直移動。$(br2)你可以將抓鉤與各種物品合成來升級――詳情請參閱$(thing)提示 - 工具$()任務章節中的相關段落。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "harpoon",
+            "title": "魚叉",
+            "item": "species:harpoon",
+            "text": "$(thing)魚叉$()與$(l:logistics/exploration_gear#grappling_hook)抓鉤$()非常相似，但限制多得多，它沒有升級，而且按下$(item)$(k:key.use)$()時只能筆直向上發射。$(br2)不過，它可以讓你按下$(item)$(k:key.jump)$()直接沿著繩索往上爬，還能與$(l:logistics/exploration_gear#coil)繩捲$()搭配製作$(item)滑索$()！"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "species:coil",
+            "anchor": "coil",
+            "text": "手持$(item)繩捲$()對兩個柵欄按下右鍵，就能建造一條$(item)滑索$()！在你上方建一條，然後將$(l:logistics/exploration_gear#harpoon)魚叉$()射向柵欄，就能開始滑行了。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "空手對繩捲按下右鍵可以改變繩索的鬆緊度。每個繩捲都是$(thing)單向$()的，由繩索上的「箭頭」表示，所以如果你想要雙向的滑索，就需要兩個繩捲。$(br2)你也可以將繩捲放在其他方塊上作為裝飾，但必須放在柵欄上才能作為滑索使用。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "hang_glider",
+            "item": "hangglider:hang_glider,hangglider:reinforced_hang_glider",
+            "text": "$(item)滑翔翼$()可以讓你進行長距離的水平移動，非常適合穿越寬廣的開闊地帶。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "jetpacks",
+            "item": "gtceu:liquid_fuel_jetpack,gtceu:electric_jetpack,gtceu:advanced_electric_jetpack",
+            "title": "噴射背包",
+            "text": "$(item)噴射背包$()非常適合垂直移動，而且有好幾種升級，每一種都比前一種更快、更擅長懸停。$(br2)電動噴射背包可以對電池按下$(item)潛行-$(k:key.use)$()進行遠端充電，或使用$(item)無線充電器$()充電。"
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "延伸閱讀",
+            "anchor": "relations",
+            "entries": [
+                "tfg:agriculture/weaving",
+                "tfg:agriculture/leather_making",
+                "tfg:logistics/roads",
+                "tfg:craftsmanship/clothing"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "extra_recipe_mappings": {
+        "sns:hiking_boots": 1,
+        "sns:steel_toe_hiking_boots": 2,
+        "sns:black_steel_toe_hiking_boots": 2,
+        "sns:red_steel_toe_hiking_boots": 2,
+        "sns:blue_steel_toe_hiking_boots": 2,
+        "tfccanes:walking_cane": 3,
+        "tfccanes:refined_walking_cane": 3,
+        "tfg:snowshoes": 4,
+        "tfg:snorkel": 5,
+        "tfg:flippers": 6,
+        "create:copper_diving_helmet": 7,
+        "create:copper_diving_boots": 7,
+        "create:copper_backtank": 7,
+        "create:netherite_diving_helmet": 8,
+        "create:netherite_diving_boots": 8,
+        "create:netherite_backtank": 8,
+        "minecraft:netherite_leggings": 8,
+        "diggerhelmet:digger_helmet": 9,
+        "diggerhelmet:copper_digger_helmet": 9,
+        "diggerhelmet:bismuth_bronze_digger_helmet": 9,
+        "diggerhelmet:black_bronze_digger_helmet": 9,
+        "diggerhelmet:bronze_digger_helmet": 9,
+        "diggerhelmet:wrought_iron_digger_helmet": 9,
+        "diggerhelmet:steel_digger_helmet": 9,
+        "diggerhelmet:black_steel_digger_helmet": 9,
+        "diggerhelmet:red_steel_digger_helmet": 9,
+        "diggerhelmet:blue_steel_digger_helmet": 9,
+        "diggerhelmet:wool_lining": 9,
+        "diggerhelmet:silk_lining": 9,
+        "diggerhelmet:mining_speed_modifier": 9,
+        "diggerhelmet:auto_drink_modifier": 9,
+        "grapplemod:grapplinghook": 10,
+        "species:harpoon": 11,
+        "hangglider:hang_glider": 14,
+        "hangglider:reinforced_hang_glider": 14,
+        "gtceu:liquid_fuel_jetpack": 15,
+        "gtceu:electric_jetpack": 15,
+        "gtceu:advanced_electric_jetpack": 15
+    }
+}

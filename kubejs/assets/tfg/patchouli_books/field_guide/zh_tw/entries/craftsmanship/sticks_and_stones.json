@@ -1,0 +1,203 @@
+{
+	"name": "木棍與石頭",
+	"category": "tfg:craftsmanship",
+	"icon": "tfg:flint_arrow_head",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "在$(tfg)中，你最先能取得的東西是木棍、樹枝、燧石和碎石。它們幾乎在每種氣候中都能找到，散落在地面上。按下$(item)$(k:key.use)$()或破壞它們即可撿起。"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"multiblock": {
+				"pattern": [
+					[
+						"     ",
+						"     ",
+						"  0  ",
+						"     ",
+						"     "
+					],
+					[
+						"1    ",
+						" 2  4",
+						"   3 ",
+						" 4   ",
+						"6   5"
+					],
+					[
+						"GGGGG",
+						"GGGGG",
+						"GGGGG",
+						"GGGGG",
+						"GGGGG"
+					]
+				],
+				"mapping": {
+					"G": "tfc:grass/sandy_loam",
+					"1": "tfc:rock/loose/limestone[count=1]",
+					"2": "tfc:rock/loose/limestone[count=2]",
+					"3": "tfc:rock/loose/dolomite[count=3]",
+					"4": "tfc:groundcover/stick",
+					"5": "#tfc:twigs",
+					"6": "tfc:groundcover/flint"
+				}
+			},
+			"name": "比方說",
+			"text": "散落的木棍和石頭。",
+			"enable_visualize": false
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "knapping",
+			"text": "除了在地上收集木棍和樹枝之外，也可以徒手破壞樹葉來取得木棍。有了一些石頭和木棍之後，就可以開始$(thing)打製$()了。打製是將兩塊石頭互相敲擊，形成特定形狀的過程。要打製時，首先在手中拿著至少兩塊石頭，然後對空中按下右鍵，就會開啟$(thing)打製介面$()。"
+		},
+		{
+			"type": "patchouli:image",
+			"images": [
+				"tfc:textures/gui/book/gui/rock_knapping.png"
+			],
+			"text": "打製介面。",
+			"border": false
+		},
+		{
+			"type": "patchouli:text",
+			"text": "要打製特定物品，你需要按下$(item)$(k:key.attack)$()移除方格，直到形成所需的圖案。例如，依照右側所示的配方即可做出刀刃。$(br2)和合成配方一樣，所需圖案的位置不影響產物，有些配方也有多種有效的變體。"
+		},
+		{
+			"type": "tfg:rock_knapping_recipe",
+			"anchor": "knife",
+			"recipes": [
+				"tfg:rock_knapping/stone_knife_head",
+				"tfg:rock_knapping/stone_knife_head_1",
+				"tfg:rock_knapping/stone_knife_head_2",
+				"tfg:rock_knapping/stone_knife_head_3"
+			],
+			"text": "石刀刃用各種不同的的岩石都可以製作。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "flint",
+			"title": "打製燧石",
+			"item": "gtceu:flint_hoe_head,gtceu:flint_knife_head,gtceu:flint_shovel_head,gtceu:flint_axe_head,gtceu:flint_sword_head,tfg:flint_club_head,tfg:flint_arrow_head",
+			"text": "燧石可以用來合成許多與石頭相同的打製物品，也能做出箭頭等獨特物品。燧石物品的數值通常遠優於石製物品。只要檢查河流和湖泊的底部有沒有散落的燧石，就能輕鬆找到燧石。"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "gtceu:shaped/knife_stone",
+			"text": "所有石製工具頭都可以和木棍、樹枝、骨頭或其他棒狀物一起合成，組裝成工具。$(br2)石刀可以破壞草叢來收集$(thing)乾草$()。"
+		},
+		{
+			"type": "tfg:rock_knapping_recipe",
+			"recipes": [
+				"tfg:rock_knapping/stone_axe_head"
+			],
+			"text": "$(thing)斧頭$()可以砍倒整棵樹，包括原木和樹葉。取得$(l:the_world/wild_fruits#fruit_trees)果樹樹苗$()需要斧頭。"
+		},
+		{
+			"type": "tfg:rock_knapping_recipe",
+			"recipes": [
+				"tfg:rock_knapping/stone_shovel_head"
+			],
+			"text": "$(thing)鏟$()可以挖掘土壤材質的方塊。對$(thing)草方塊$()或$(thing)泥土#$()$(item)右鍵$()鏟也可以製造$(thing)土徑$()。"
+		},
+		{
+			"type": "tfg:rock_knapping_recipe",
+			"recipes": [
+				"tfg:rock_knapping/stone_hoe_head",
+				"tfg:rock_knapping/stone_hoe_head_1",
+				"tfg:rock_knapping/stone_hoe_head_2"
+			],
+			"text": "$(thing)鋤頭$()是$(l:agriculture/growing_crops)耕作$()的實用工具，但也可以像刀一樣用來砍除樹葉和其他植物。"
+		},
+		{
+			"type": "tfg:rock_knapping_recipe",
+			"recipes": [
+				"tfg:rock_knapping/stone_hammer_head"
+			],
+			"text": "$(thing)錘子$()可以作為$(l:game_mechanics/damage_types)鈍擊$()武器使用，但更重要的是它是用於$(l:craftsmanship/anvils)鍛造$()的工具。"
+		},
+		{
+			"type": "tfg:rock_knapping_recipe",
+			"recipes": [
+				"tfc:rock_knapping/javelin_head_sedimentary",
+				"tfc:rock_knapping/javelin_head_metamorphic",
+				"tfc:rock_knapping/javelin_head_igneous_extrusive",
+				"tfc:rock_knapping/javelin_head_igneous_intrusive"
+			],
+			"text": "最後，$(thing)標槍$()可以作為原始武器使用，既能投擲攻擊目標，也能作為$(l:game_mechanics/damage_types)穿刺$()武器使用。"
+		},
+		{
+			"type": "patchouli:relations",
+			"title": "延伸閱讀",
+			"anchor": "relations",
+			"entries": [
+				"tfg:the_world/wild_fruits",
+				"tfg:agriculture/growing_crops",
+				"tfg:the_world/earth_tree_index",
+				"tfg:the_world/geology",
+				"tfg:craftsmanship/pottery",
+				"tfg:craftsmanship/metallurgy"
+			]
+		}
+	],
+	"read_by_default": false,
+	"sortnum": 0,
+	"extra_recipe_mappings": {
+		"tfc:stone/knife_head/sedimentary": 6,
+		"tfc:stone/knife_head/metamorphic": 6,
+		"tfc:stone/knife_head/igneous_extrusive": 6,
+		"tfc:stone/knife_head/igneous_intrusive": 6,
+		"tfc:stone/knife/sedimentary": 6,
+		"tfc:stone/knife/metamorphic": 6,
+		"tfc:stone/knife/igneous_extrusive": 6,
+		"tfc:stone/knife/igneous_intrusive": 6,
+		"gtceu:flint_hoe_head": 7,
+		"gtceu:flint_knife_head": 7,
+		"gtceu:flint_shovel_head": 7,
+		"gtceu:flint_axe_head": 7,
+		"gtceu:flint_sword_head": 7,
+		"tfg:flint_club_head": 7,
+		"tfg:flint_arrow_head": 7,
+		"tfc:stone/axe_head/sedimentary": 8,
+		"tfc:stone/axe_head/metamorphic": 8,
+		"tfc:stone/axe_head/igneous_extrusive": 8,
+		"tfc:stone/axe_head/igneous_intrusive": 8,
+		"tfc:stone/axe/sedimentary": 8,
+		"tfc:stone/axe/metamorphic": 8,
+		"tfc:stone/axe/igneous_extrusive": 8,
+		"tfc:stone/axe/igneous_intrusive": 8,
+		"tfc:stone/shovel_head/sedimentary": 9,
+		"tfc:stone/shovel_head/metamorphic": 9,
+		"tfc:stone/shovel_head/igneous_extrusive": 9,
+		"tfc:stone/shovel_head/igneous_intrusive": 9,
+		"tfc:stone/shovel/sedimentary": 9,
+		"tfc:stone/shovel/metamorphic": 9,
+		"tfc:stone/shovel/igneous_extrusive": 9,
+		"tfc:stone/shovel/igneous_intrusive": 9,
+		"tfc:stone/hoe_head/sedimentary": 10,
+		"tfc:stone/hoe_head/metamorphic": 10,
+		"tfc:stone/hoe_head/igneous_extrusive": 10,
+		"tfc:stone/hoe_head/igneous_intrusive": 10,
+		"tfc:stone/hoe/sedimentary": 10,
+		"tfc:stone/hoe/metamorphic": 10,
+		"tfc:stone/hoe/igneous_extrusive": 10,
+		"tfc:stone/hoe/igneous_intrusive": 10,
+		"tfc:stone/hammer_head/sedimentary": 11,
+		"tfc:stone/hammer_head/metamorphic": 11,
+		"tfc:stone/hammer_head/igneous_extrusive": 11,
+		"tfc:stone/hammer_head/igneous_intrusive": 11,
+		"tfc:stone/hammer/sedimentary": 11,
+		"tfc:stone/hammer/metamorphic": 11,
+		"tfc:stone/hammer/igneous_extrusive": 11,
+		"tfc:stone/hammer/igneous_intrusive": 11,
+		"tfc:stone/javelin_head/sedimentary": 12,
+		"tfc:stone/javelin_head/metamorphic": 12,
+		"tfc:stone/javelin_head/igneous_extrusive": 12,
+		"tfc:stone/javelin_head/igneous_intrusive": 12,
+		"tfc:stone/javelin/sedimentary": 12,
+		"tfc:stone/javelin/metamorphic": 12,
+		"tfc:stone/javelin/igneous_extrusive": 12,
+		"tfc:stone/javelin/igneous_intrusive": 12
+	}
+}

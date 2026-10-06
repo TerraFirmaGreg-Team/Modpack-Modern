@@ -1,0 +1,194 @@
+{
+	"name": "危害",
+	"icon": "tfg:textures/mob_effect/radioactive_warning.png",
+	"category": "tfg:game_mechanics",
+	"sortnum": 3,
+	"read_by_default": true,
+	"pages": [
+		{
+			"type": "patchouli:spotlight",
+			"title": "危險物質",
+			"item": "gtceu:cobaltite_dust",
+			"text": "某些$(thing)礦石$()、$(thing)粉末$()和$(thing)化學品$()具有危害，將它們帶在身上會導致$(item)負面效果$()甚至$(item)死亡$()。攜帶時會在螢幕上顯示$(item)狀態效果$()。$(br2)某些設備如$(thing)口罩$()、$(thing)手套$() 和 $(thing)防護服$()可以抵消這些影響。"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "所有效果",
+			"text": "$(li)$(l:game_mechanics/hazards#arsenicosis)砷中毒$()$(li)$(l:game_mechanics/hazards#asbestosis)石綿肺$()$(li)$(l:game_mechanics/hazards#berylliosis)鈹中毒$()$(li)$(l:game_mechanics/hazards#carbon_Monoxide_poisoning)一氧化碳中毒$()$(li)$(l:game_mechanics/hazards#carcinogens)致癌物$()$(li)$(l:game_mechanics/hazards#chemical_burns)化學灼傷$()$(li)$(l:game_mechanics/hazards#irritants)刺激物$()$(li)$(l:game_mechanics/hazards#methanol_poisoning)甲醇中毒$()$(li)$(l:game_mechanics/hazards#nauseating_chemicals)致噁心化學物$()$(li)$(l:game_mechanics/hazards#poisons)有毒物質$()$(li)$(l:game_mechanics/hazards#radioactive_materials)放射性物質$()$(li)$(l:game_mechanics/hazards#silicosis)矽肺病$()"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "預防與治療",
+			"text": "$(li)$(l:game_mechanics/hazards#containers)容器$()$(li)$(l:game_mechanics/hazards#mask)口罩$()$(li)$(l:game_mechanics/hazards#gloves)橡膠手套$()$(li)$(l:game_mechanics/hazards#hazmat)防護服$()$(li)$(l:game_mechanics/hazards#medicine)藥片、膠囊與藥膏$()$(li)$(l:game_mechanics/hazards#rad_away)消輻寧™藥片$()$(li)$(l:game_mechanics/hazards#respawn)不堪設想的事……$()"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "容器",
+			"anchor": "containers",
+			"text": "危險物質只有在你的$(thing)物品欄$()中時才會造成傷害，放在其他容器中則不會！$(br)危險物質放在$(l:logistics/personal_storage)背包$()或$(l:craftsmanship/pottery#vessel)小缸$()等其他容器中時，不會造成傷害。手持小缸按下$(item)$(k:key.use)$()，可以直接在容器之間轉移其內容物。",
+			"item": "sophisticatedbackpacks:backpack,tfc:ceramic/vessel,tfc:ceramic/large_vessel"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": "口罩",
+			"recipe": "gtceu:shaped/face_mask",
+			"text": "$(thing)口罩$()能防護所有$(item)吸入$()危害，例如砷中毒。",
+			"anchor": "mask"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "gtceu:rubber_gloves",
+			"title": "橡膠手套",
+			"link_recipes": true,
+			"anchor": "gloves",
+			"text": "$(thing)橡膠手套$()可以用$(l:agriculture/leather_making)皮革$()和$(thing)乳膠$()製作，也可以用$(thing)橡膠片$()製作。它們能防護任何$(item)皮膚接觸$()類的危害，例如$(thing)鈹粉$()。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "防護服",
+			"item": "gtceu:hazmat_headpiece,gtceu:hazmat_chestpiece,gtceu:hazmat_leggings,gtceu:hazmat_boots",
+			"text": "完整的$(thing)防護服$()能讓你對$(item)所有$()危害$(item)免疫$()，甚至包括$(item)輻射$()。它主要由$(thing)橡膠$()和$(thing)聚氯乙烯$()製成。$(br2)$(bold)提示$()：你也可以在$(emi)中搜尋$(6)#ppe_armor$()，查看更多能防護危險物質的裝備。",
+			"anchor": "hazmat"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "藥物",
+			"item": {
+				"tag": "tfg:medicine"
+			},
+			"anchor": "medicine",
+			"text": "萬一你嚴重暴露於危害之中，有一些$(item)藥物$()可以幫助你康復。$(br2)基本的$(item)藥片$()最原始也最容易製作，但大多數都有$(thing)負面副作用$()。$(item)膠囊$()和$(item)藥膏$()效果更好且副作用較少，但製作它們需要$(thing)LV 設備$()和更進階的資源。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "消輻寧™藥片",
+			"item": "tfg:rad_away_pill",
+			"anchor": "rad_away",
+			"text": "$(item)所有$() 危害的 $(item)終極$() 藥物，也是對抗 $(item)輻射$() 的 $(item)唯一$() 解藥。然而也是製作起来最 $(thing)昂貴$() 且 $(thing)困難$()的藥物，需要 $(thing)HV設備$() 和高級材料。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "失敗……",
+			"item": {
+				"tag": "minecraft:beds"
+			},
+			"anchor": "respawn",
+			"text": "如果其他方法都失敗了，帶一張床用來重生是個好主意。$(br2)如果你沒有$(item)羊毛$()或$(item)線$()，也可以製作$(thing)茅草床$()。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "砷中毒",
+			"item": "gtceu:arsenic_dust",
+			"anchor": "arsenicosis",
+			"text": "$(thing)砷中毒$()是吸入$(thing)砷$()的粉塵、蒸汽或$(thing)雄黃$()所引起的疾病。它會慢慢增加飢餓，接著是噁心，最終導致$(bold)死亡$()。$(br2)$(l:game_mechanics/hazards#mask)口罩$()和$(l:game_mechanics/hazards#hazmat)防護服$()可以防護$(thing)砷中毒$()。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "石綿肺",
+			"item": "gtceu:asbestos_dust",
+			"anchor": "asbestosis",
+			"text": "$(thing)石綿肺$()是吸入$(thing)石綿$()粉塵所引起的疾病。攜帶時間夠長的話，會導致飢餓。$(br2)$(l:game_mechanics/hazards#mask)口罩$()和$(l:game_mechanics/hazards#hazmat)防護服$()可以防護$(thing)石綿肺$()。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "鈹中毒",
+			"item": "gtceu:beryllium_dust",
+			"anchor": "berylliosis",
+			"text": "$(thing)鈹中毒$()是皮膚接觸$(thing)鈹粉$()或$(thing)液態鈹$()所引起的疾病。一開始看似沒什麼影響，但暴露時間越長，它$(bold)殺死$()你的速度就越快。$(br)$(l:game_mechanics/hazards#gloves)手套$()和$(l:game_mechanics/hazards#hazmat)防護服$()可以防護$(thing)鈹中毒$()。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "一氧化碳中毒",
+			"item": "gtceu:carbon_monoxide_bucket",
+			"anchor": "carbon_Monoxide_poisoning",
+			"text": "$(thing)一氧化碳中毒$()是吸入$(thing)一氧化碳$()氣體所引起的疾病。長時間暴露會導致噁心並迅速$(bold)死亡$()。$(br)$(l:game_mechanics/hazards#mask)口罩$()和$(l:game_mechanics/hazards#hazmat)防護服$()可以防護$(thing)一氧化碳$()。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "致癌物",
+			"item": "gtceu:benzene_bucket",
+			"anchor": "carcinogens",
+			"text": "$(thing)致癌物$()是會導致$(item)癌症$()的物質，包括$(thing)鉻粉$()以及某些有機化合物，例如苯及其衍生物。$(thing)致癌物$()不會自行消失，但在造成實際傷害之前會給予許多警告。一開始是虛弱，接著是飢餓，然後是緩慢，之後是挖掘疲勞。只有在累積足夠大量的暴露後，才會導致$(bold)死亡$()。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "致癌物",
+			"item": "gtceu:chromium_dust",
+			"anchor": "carcinogens",
+			"text": "$(l:game_mechanics/hazards#mask)口罩$()可以防止吸入有害化學物質，而$(l:game_mechanics/hazards#gloves)手套$()可以防止接觸$(thing)鉻粉$()。$(br)$(l:game_mechanics/hazards#hazmat)防護服$()兩者皆可防護。$(br)若嚴重暴露，建議服用一些$(l:game_mechanics/hazards#medicine)藥物$()來$(thing)預防$()可能的傷害。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "化學灼傷",
+			"item": "gtceu:fluorine_bucket",
+			"anchor": "chemical_burns",
+			"text": "$(thing)化學灼傷$()是吸入或皮膚接觸某些$(thing)氣體$()、$(thing)酸$()、$(thing)鹼$()或$(thing)粉塵$()所引起的。暴露會導致$(item)虛弱$()。$(br)$(l:game_mechanics/hazards#mask)口罩$()可以防止吸入，而$(l:game_mechanics/hazards#gloves)手套$()可以防止皮膚直接接觸。$(br)$(l:game_mechanics/hazards#hazmat)防護服$()可以防護一切。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "刺激物",
+			"item": "gtceu:chromite_dust",
+			"anchor": "irritants",
+			"text": "$(thing)刺激$()是吸入$(thing)甲酸銨$()或皮膚接觸$(thing)鉻鐵礦粉$()所引起的。短暫接觸只會導致虛弱，但如果長時間忽視，就會開始$(item)隨機造成傷害$()。$(br)$(l:game_mechanics/hazards#mask)口罩$()可以防止吸入，而$(l:game_mechanics/hazards#gloves)手套$()可以防止皮膚直接接觸。$(br)$(l:game_mechanics/hazards#hazmat)防護服$()兩者皆可防護。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "甲醇中毒",
+			"item": "gtceu:methanol_bucket",
+			"anchor": "methanol_poisoning",
+			"text": "$(thing)甲醇中毒$()是吸入$(thing)甲醇$()所引起的。它會導致強烈的$(item)失明$()效果。$(br)$(l:game_mechanics/hazards#mask)口罩$()和$(l:game_mechanics/hazards#hazmat)防護服$()可以防止吸入。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "致噁心化學物",
+			"item": "gtceu:butyraldehyde_bucket",
+			"anchor": "nauseating_chemicals",
+			"text": "$(thing)致噁心化學物$()，例如$(thing)丁醛$()，是吸入後會導致$(item)噁心$()的物質。$(br)$(l:game_mechanics/hazards#mask)口罩$()和$(l:game_mechanics/hazards#hazmat)防護服$()可以防止吸入。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "有毒物質",
+			"item": "gtceu:lead_dust",
+			"anchor": "poisons",
+			"text": "$(thing)有毒物質$()分為兩種。弱毒物包括$(thing)鉛粉$()，而較強的毒物包括$(thing)二氧化氮$()。$(thing)弱毒物$()會導致$(item)逐漸惡化的中毒$()效果，而$(thing)一般毒物$()則會導致虛弱和更強的中毒效果。$(br)$(l:game_mechanics/hazards#mask)口罩$()可以防止吸入，而$(l:game_mechanics/hazards#gloves)手套$()可以防止皮膚直接接觸。$(br)$(l:game_mechanics/hazards#hazmat)防護服$()可以防護任何接觸。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "矽肺病",
+			"item": "gtceu:silicon_dioxide_dust",
+			"anchor": "silicosis",
+			"text": "$(thing)矽肺病$()是吸入$(thing)二氧化矽粉塵$()所引起的疾病。暴露會導致$(item)生命值$()以及在$(thing)水下$()潛水時的$(item)氧氣量$()$(item)降低$()。$(br2)$(l:game_mechanics/hazards#mask)口罩$()和$(l:game_mechanics/hazards#hazmat)防護服$()可以防止吸入二氧化矽。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "放射性物質",
+			"item": "gtceu:uranium_ingot",
+			"anchor": "radioactive_materials",
+			"text": "大多數$(thing)放射性物質$()，例如$(thing)鈾 238$()，要到$(thing)EV 等級$()或更高才會遇到。它們會讓你$(item)永久受到輻射$()。少量暴露會導致發光，但長時間接觸則會迅速引發$(bold)死亡$()。$(br)我們知道它看起來很美味，熱量還高達十億大卡，但$(#ff0000)拜託不要吃鈾！$()"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "放射性物質",
+			"item": "gtceu:plutonium_ingot",
+			"text": "只有$(l:game_mechanics/hazards#hazmat)防護服$()以及一些進階盔甲能提供完整的輻射防護。$(br)萬一你受到輻射，只有$(l:game_mechanics/hazards#rad_away)消輻寧™藥片$()能治癒你。"
+		},
+		{
+			"type": "patchouli:relations",
+			"title": "延伸閱讀",
+			"anchor": "relations",
+			"entries": [
+				"tfg:the_world/geology",
+				"tfg:craftsmanship/metallurgy",
+				"tfg:cooking/food_and_water",
+				"tfg:game_mechanics/mining",
+				"tfg:game_mechanics/mob_effects",
+				"tfg:craftsmanship/clothing",
+				"tfg:game_mechanics/heating"
+			]
+		}
+	],
+	"extra_recipe_mappings": {
+		"tag:gtceu:ppe_armor": 6,
+		"tag:tfg:medicine": 7
+	}
+}

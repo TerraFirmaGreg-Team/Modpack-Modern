@@ -1,0 +1,555 @@
+{
+    "name": "玻璃加工",
+    "category": "tfg:craftsmanship",
+    "icon": "tfc:blowpipe_with_glass",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "anchor": "index",
+            "text": "$(li)$(bold)$(l:craftsmanship/glassworking#intro)玻璃配料$()$(li2)$(l:craftsmanship/glassworking#lime_and_potash)石灰與鉀鹼$()$(li)$(bold)$(l:craftsmanship/glassworking#tools)玻璃加工工具$()$(li2)$(l:craftsmanship/glassworking#blowpipe)吹管$()$(li2)$(l:craftsmanship/glassworking#paddle)整型板$()$(li2)$(l:craftsmanship/glassworking#jacks)夾鉗$()$(li2)$(l:craftsmanship/glassworking#saw)寶石鋸$()$(li)$(bold)$(l:craftsmanship/glassworking#glassworking_steps)玻璃加工步驟$()$(li2)$(l:craftsmanship/glassworking#table_pour)桌面澆注$()$(li2)$(l:craftsmanship/glassworking#basin_pour)盆槽澆注$()$(li)$(bold)$(l:craftsmanship/glassworking#coloring)玻璃上色$()$(li2)$(l:craftsmanship/glassworking#dyes)染料清單$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "intro",
+            "title": "簡介",
+            "text": "玻璃工藝是將沙子變成玻璃的藝術。首先，决定製作哪種$(thing)玻璃原料$()：$(br)$(br) 1、$(thing)二氧化硅玻璃$()：由白沙製作。$(br) 2、$(thing)赤鐵礦玻璃$()：由黄沙、紅沙或粉紅沙製作。$(br) 3、$(thing)橄欖岩玻璃$()：由綠沙或棕沙製作。$(br) 4、$(thing)火山岩玻璃$()：由黑沙製作。"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "tfc:crafting/silica_glass_batch",
+            "text": "接著可以用上述其中一種顏色的沙子，加上$(l:craftsmanship/glassworking#lime_and_potash)石灰$()和一種$(l:craftsmanship/glassworking#lime_and_potash)鉀鹼$()合成玻璃配料。$(br)記住，用錘子敲碎礫石可以取得不同種類的沙子。",
+            "title": "矽玻璃配料"
+        },
+        {
+            "type": "patchouli:smelting",
+            "anchor": "lime_and_potash",
+            "title": "石灰與鉀鹼",
+            "recipe": "tfg:smelting/dried_seaweed_to_soda",
+            "text": "$(item)蘇打灰$()或$(item)硝石$()可以作為$(thing)鉀鹼$()的來源。蘇打灰是加熱$(thing)乾海藻$()或$(thing)海帶$()製成的粉末。$(br2)$(item)石灰$()是加熱$(item)助熔劑$()製成的。",
+            "recipe2": "tfg:smelting/lime"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "tools",
+            "text": "玻璃加工從一份玻璃配料開始，接著完成一系列步驟。這些步驟可能需要特定的工具：$(br)$(li)$(l:craftsmanship/glassworking#blowpipe)吹管$()，用來$(thing)吹製$()和$(thing)拉伸$()。$(li)$(l:craftsmanship/glassworking#paddle)整型板$()，用來$(thing)壓平$()。$(li)$(l:craftsmanship/glassworking#jacks)夾鉗$()，用來$(thing)夾捏$()。$(li)$(l:craftsmanship/glassworking#saw)寶石鋸$()，用來$(thing)鋸切$()。$(li)以及$(l:agriculture/weaving)羊毛布$()，用來$(thing)滾壓$()。",
+            "title": "職人工具"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "blowpipe",
+            "title": "吹管",
+            "item": "tfc:ceramic/unfired_blowpipe,tfc:ceramic_blowpipe,tfc:blowpipe",
+            "text": "最重要的工具是$(thing)吹管$()。可以用黏土$(thing)塑形$()出$(item)未燒製的陶瓷吹管$()，再燒製成$(thing)陶瓷吹管$()。$(br)不過，陶瓷吹管很脆弱，使用時有機率破損。用$(thing)黃銅棒$()在鐵砧上$(l:craftsmanship/anvils#working)鍛造$()可以做出不會損壞的$(item)吹管$()。"
+        },
+        {
+            "type": "patchouli:crafting",
+            "anchor": "paddle",
+            "title": "整型板",
+            "recipe": "tfc:crafting/paddle",
+            "text": "$(thing)整型板$()由木材加工製成，用來$(thing)壓平$()玻璃。"
+        },
+        {
+            "type": "tfg:welding_recipe",
+            "anchor": "jacks",
+            "title": "夾鉗",
+            "recipe": "tfc:welding/jacks",
+            "text": "$(thing)夾捏$()操作可以用$(thing)夾鉗$()完成，夾鉗是將黃銅棒和黃銅板$(l:craftsmanship/anvils#welding)焊接$()製成的。"
+        },
+        {
+            "type": "patchouli:crafting",
+            "anchor": "saw",
+            "title": "寶石鋸",
+            "recipe": "tfc:crafting/gem_saw",
+            "text": "$(thing)鋸切$()操作可以用$(item)寶石鋸$()完成。寶石鋸也用來破壞$(item)玻璃方塊$()和$(item)玻璃片$()以取得它們。"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "glassworking_steps",
+            "text": "首先，吹管上的玻璃必須加熱到至少$(4)$(bold)暗紅色$()。然後，將吹管拿在$(thing)副手$()，按住$(item)$(k:key.use)$()執行每個步驟$()。$(br)按下$(item)$(k:key.swapOffhand)$()可以將高溫的吹管拿到副手。$(br2)$(bold)吹製$()$(br)面向正前方使用$(thing)吹管$()。$(br2)$(bold)拉伸$()$(br)面向正下方使用$(thing)吹管$()。",
+            "title": "如何加工玻璃"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(bold)壓平$()$(br)主手拿著$(l:craftsmanship/glassworking#paddle)整型板$()時使用$(thing)吹管$()。$(br2)$(bold)夾捏$()$(br)主手拿著$(l:craftsmanship/glassworking#jacks)夾鉗$()時使用$(thing)吹管$()。$(br2)$(bold)鋸切$()$(br)主手拿著$(l:craftsmanship/glassworking#saw)寶石鋸$()時使用$(thing)吹管$()。$(br2)$(bold)滾壓$()$(br)主手拿著$(l:agriculture/weaving)羊毛布$()時使用$(thing)吹管$()。"
+        },
+        {
+            "type": "patchouli:image",
+            "anchor": "guide_pane",
+            "width": 1024,
+            "texture_width": 1024,
+            "height": 1024,
+            "texture_height": 1024,
+            "images": [
+                "tfg:textures/gui/field_guide/glassworking/lens_0.png",
+                "tfg:textures/gui/field_guide/glassworking/lens_1.png",
+                "tfg:textures/gui/field_guide/glassworking/pane_0.png",
+                "tfg:textures/gui/field_guide/glassworking/pane_1.png",
+                "tfg:textures/gui/field_guide/glassworking/pane_2.png",
+                "tfg:textures/gui/field_guide/glassworking/pane_3.png",
+                "tfg:textures/gui/field_guide/glassworking/pane_4.png",
+                "tfg:textures/gui/field_guide/glassworking/pane_5.png",
+                "tfg:textures/gui/field_guide/glassworking/pane_6.png"
+            ],
+            "text": "$(bold)教學幻燈片：$()逐步製作強化玻璃片。",
+            "border": true
+        },
+        {
+            "type": "patchouli:image",
+            "anchor": "guide_lens",
+            "width": 1024,
+            "texture_width": 1024,
+            "height": 1024,
+            "texture_height": 1024,
+            "images": [
+                "tfg:textures/gui/field_guide/glassworking/lens_0.png",
+                "tfg:textures/gui/field_guide/glassworking/lens_1.png",
+                "tfg:textures/gui/field_guide/glassworking/lens_2.png",
+                "tfg:textures/gui/field_guide/glassworking/lens_3.png",
+                "tfg:textures/gui/field_guide/glassworking/lens_4.png",
+                "tfg:textures/gui/field_guide/glassworking/lens_5.png",
+                "tfg:textures/gui/field_guide/glassworking/lens_6.png",
+                "tfg:textures/gui/field_guide/glassworking/lens_7.png",
+                "tfg:textures/gui/field_guide/glassworking/lens_8.png",
+                "tfg:textures/gui/field_guide/glassworking/lens_9.png"
+            ],
+            "text": "$(bold)教學幻燈片：$()逐步製作透鏡。",
+            "border": true
+        },
+        {
+            "type": "patchouli:image",
+            "anchor": "guide_glass",
+            "width": 1024,
+            "texture_width": 1024,
+            "height": 1024,
+            "texture_height": 1024,
+            "images": [
+                "tfg:textures/gui/field_guide/glassworking/lens_0.png",
+                "tfg:textures/gui/field_guide/glassworking/lens_1.png",
+                "tfg:textures/gui/field_guide/glassworking/glass_0.png",
+                "tfg:textures/gui/field_guide/glassworking/glass_1.png",
+                "tfg:textures/gui/field_guide/glassworking/glass_2.png",
+                "tfg:textures/gui/field_guide/glassworking/glass_3.png"
+            ],
+            "text": "$(bold)教學幻燈片：$()逐步製作綠色染色玻璃。",
+            "border": true
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(thing)玻璃片$()是用$(thing)桌面澆注$()製成的。在連續的區域中放置最多十六個$(thing)高嶺土方塊$()或$(thing)鍍黃銅方塊$()即可做成澆注台。$(br2) 1. 將$(l:craftsmanship/glassworking)玻璃配料$()加到$(thing)吹管$()上。$(br) 2. 將吹管加熱到$(4)$(bold)暗紅色$()。$(br) 3. $()手持$(thing)吹管$()對澆注台頂部按下$(item)$(k:key.use)$()。$(br) 4. 最後，手持$(l:craftsmanship/glassworking#paddle)整型板$()按下$(item)$(k:key.use)$()將玻璃壓平。",
+            "title": "桌面澆注",
+            "anchor": "table_pour"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "text": "玻璃冷卻後，可以用$(l:craftsmanship/glassworking#saw)寶石鋸$()破壞來取得。",
+            "border": true,
+            "multiblock": {
+                "mapping": {
+                    "0": "#tfc:glass_pouring_table",
+                    "C": "#tfc:glass_pouring_table"
+                },
+                "pattern": [
+                    [
+                        "CCCC",
+                        "CCC0",
+                        "CCCC",
+                        "CCCC"
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(thing)玻璃方塊$()是用$(thing)盆槽澆注$()製成的。用$(thing)高嶺土方塊$()或$(thing)鍍黃銅方塊$()包圍一格空氣方塊除了頂部以外的所有面，即可做成盆槽。$(br2) 1. 將$(l:craftsmanship/glassworking)玻璃配料$()加到$(thing)吹管$()上。$(br) 2. 將吹管加熱到$(4)$(bold)暗紅色$()。$(br) 3. 手持$(thing)吹管$()對盆槽頂部按下$(item)$(k:key.use)$()。",
+            "title": "盆槽澆注",
+            "anchor": "basin_pour"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "text": "玻璃冷卻後，可以用$(l:craftsmanship/glassworking#saw)寶石鋸$()破壞來取得。",
+            "border": true,
+            "multiblock": {
+                "mapping": {
+                    "0": "#tfc:glass_basin_blocks",
+                    "C": "#tfc:glass_basin_blocks"
+                },
+                "pattern": [
+                    [
+                        " C ",
+                        "C C",
+                        " C "
+                    ],
+                    [
+                        "   ",
+                        " 0 ",
+                        "   "
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": "玻璃工藝方塊",
+            "recipe": "tfc:crafting/white_kaolin_clay",
+            "recipe2": "tfg:shapeless/brass_plated_block"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "玻璃會依所使用的$(l:craftsmanship/glassworking)玻璃配料$()種類而呈現天然的顏色。其他顏色可以用$(l:cooking/bowls#powder_bowl)碗$()製作。$(br2)使用方法是將$(l:cooking/bowls)碗$()放在地上，然後手持所需的$(thing)粉末$()按下$(item)$(k:key.use)$()。在$(thing)澆注$()之前，對碗使用$(thing)吹管$()即可將粉末加入配料中。",
+            "anchor": "coloring",
+            "title": "玻璃染色"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)$(bold)$(7)白色$()：二氧化矽/赤鐵礦玻璃+$(thing)碳酸鈉$()$(li)$(bold)$(0)黑色$()：任何玻璃+$(thing)石墨粉$()$(li)$(bold)$(8)灰色$()：任何玻璃+$(thing)石墨$()+$(thing)碳酸鈉$()$(li)$(bold)$(7)淡灰色$()：任何玻璃+$(thing)石墨粉$()+2x$(thing)碳酸鈉$()$(li)$(bold)$(5)紫色$()：任何玻璃+$(thing)鐵粉$()+$(thing)銅粉$()$(li)$(bold)$(#964b00)棕色$()：任何玻璃+$(thing)鎳粉$()$(li)$(bold)$(3)青色$()：非火山岩玻璃+$(thing)銅粉$()+$(thing)藍寶石粉$()$(li)$(bold)$(2)綠色$()：二氧化矽/赤鐵礦玻璃+$(thing)鐵粉$()",
+            "title": "染料顏色",
+            "anchor": "dyes"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)$(bold)$(a)淺綠色$()：二氧化矽/赤鐵礦玻璃+$(thing)鐵粉$()+$(thing)碳酸鈉$()$(li)$(bold)$(b)淺藍色$()：二氧化矽玻璃+$(thing)青金石粉$()$(li)$(bold)$(1)藍色$()：二氧化矽玻璃+$(thing)銅粉$()$(li)$(bold)$(4)紅色$()：二氧化矽/赤鐵礦玻璃+$(thing)錫粉$()$(li)$(bold)$(6)黄色$()：二氧化矽/赤鐵礦玻璃+$(thing)銀粉$()$(li)$(bold)$(#ef8e38)橙色$()：二氧化矽+$(thing)黃鐵礦粉$()$(li)$(bold)$(5)洋紅色$()：二氧化矽/赤鐵礦玻璃+$(thing)紅寶石粉$()$(li)$(bold)$(d)粉紅色$()：二氧化矽玻璃+$(thing)金粉$()$(li)$(bold)$(0)遮光$()：非二氧化矽玻璃+$(thing)紫水晶粉$()"
+        },
+        {
+            "type": "tfg:table_small",
+            "strings": [
+                {
+                    "text": ""
+                },
+                {
+                    "text": "C"
+                },
+                {
+                    "text": "T"
+                },
+                {
+                    "fill": "0xff42f2"
+                },
+                {
+                    "fill": "0x8af3ff"
+                },
+                {
+                    "fill": "0x526cff"
+                },
+                {
+                    "fill": "0xe3e3e3"
+                },
+                {
+                    "fill": "0xe69407"
+                },
+                {
+                    "fill": "0xc738c9"
+                },
+                {
+                    "fill": "0xffe81c"
+                },
+                {
+                    "fill": "0x48ff1f"
+                },
+                {
+                    "fill": "0xe01414"
+                },
+                {
+                    "fill": "0x0c9400"
+                },
+                {
+                    "fill": "0x188a9e"
+                },
+                {
+                    "fill": "0x7d4f00"
+                },
+                {
+                    "fill": "0x6e059c"
+                },
+                {
+                    "fill": "0x7d7d7d"
+                },
+                {
+                    "fill": "0xbdbdbd"
+                },
+                {
+                    "fill": "0x000000"
+                },
+                {
+                    "text": "二氧化矽"
+                },
+                {
+                    "fill": "0x3d42a8"
+                },
+                {
+                    "fill": "0xb33e3e"
+                },
+                {
+                    "fill": "0x3eb340"
+                },
+                {
+                    "fill": "0x3eb340"
+                },
+                {
+                    "fill": "0x3eb340"
+                },
+                {
+                    "fill": "0x3eb340"
+                },
+                {
+                    "fill": "0x3eb340"
+                },
+                {
+                    "fill": "0x3eb340"
+                },
+                {
+                    "fill": "0x3eb340"
+                },
+                {
+                    "fill": "0x3eb340"
+                },
+                {
+                    "fill": "0x3eb340"
+                },
+                {
+                    "fill": "0x3eb340"
+                },
+                {
+                    "fill": "0x3eb340"
+                },
+                {
+                    "fill": "0x3eb340"
+                },
+                {
+                    "fill": "0x3eb340"
+                },
+                {
+                    "fill": "0x3eb340"
+                },
+                {
+                    "fill": "0x3eb340"
+                },
+                {
+                    "fill": "0x3eb340"
+                },
+                {
+                    "text": "赤鐵礦"
+                },
+                {
+                    "fill": "0xb33e3e"
+                },
+                {
+                    "fill": "0x3eb340"
+                },
+                {
+                    "fill": "0xb33e3e"
+                },
+                {
+                    "fill": "0xb33e3e"
+                },
+                {
+                    "fill": "0xb33e3e"
+                },
+                {
+                    "fill": "0x3eb340"
+                },
+                {
+                    "fill": "0x3d42a8"
+                },
+                {
+                    "fill": "0x3eb340"
+                },
+                {
+                    "fill": "0x3eb340"
+                },
+                {
+                    "fill": "0x3eb340"
+                },
+                {
+                    "fill": "0x3eb340"
+                },
+                {
+                    "fill": "0x3eb340"
+                },
+                {
+                    "fill": "0x3eb340"
+                },
+                {
+                    "fill": "0x3eb340"
+                },
+                {
+                    "fill": "0x3eb340"
+                },
+                {
+                    "fill": "0x3eb340"
+                },
+                {
+                    "fill": "0x3eb340"
+                },
+                {
+                    "fill": "0x3eb340"
+                },
+                {
+                    "text": "橄欖石"
+                },
+                {
+                    "fill": "0xb33e3e"
+                },
+                {
+                    "fill": "0x3eb340"
+                },
+                {
+                    "fill": "0xb33e3e"
+                },
+                {
+                    "fill": "0xb33e3e"
+                },
+                {
+                    "fill": "0xb33e3e"
+                },
+                {
+                    "fill": "0xb33e3e"
+                },
+                {
+                    "fill": "0xb33e3e"
+                },
+                {
+                    "fill": "0xb33e3e"
+                },
+                {
+                    "fill": "0xb33e3e"
+                },
+                {
+                    "fill": "0xb33e3e"
+                },
+                {
+                    "fill": "0xb33e3e"
+                },
+                {
+                    "fill": "0x3d42a8"
+                },
+                {
+                    "fill": "0x3eb340"
+                },
+                {
+                    "fill": "0x3eb340"
+                },
+                {
+                    "fill": "0x3eb340"
+                },
+                {
+                    "fill": "0x3eb340"
+                },
+                {
+                    "fill": "0x3eb340"
+                },
+                {
+                    "fill": "0x3eb340"
+                },
+                {
+                    "text": "火山岩"
+                },
+                {
+                    "fill": "0xb33e3e"
+                },
+                {
+                    "fill": "0x3eb340"
+                },
+                {
+                    "fill": "0xb33e3e"
+                },
+                {
+                    "fill": "0xb33e3e"
+                },
+                {
+                    "fill": "0x3d42a8"
+                },
+                {
+                    "fill": "0xb33e3e"
+                },
+                {
+                    "fill": "0xb33e3e"
+                },
+                {
+                    "fill": "0xb33e3e"
+                },
+                {
+                    "fill": "0xb33e3e"
+                },
+                {
+                    "fill": "0xb33e3e"
+                },
+                {
+                    "fill": "0xb33e3e"
+                },
+                {
+                    "fill": "0xb33e3e"
+                },
+                {
+                    "fill": "0xb33e3e"
+                },
+                {
+                    "fill": "0x3eb340"
+                },
+                {
+                    "fill": "0x3eb340"
+                },
+                {
+                    "fill": "0x3eb340"
+                },
+                {
+                    "fill": "0x3eb340"
+                },
+                {
+                    "fill": "0x3eb340"
+                }
+            ],
+            "text": "每種原料可製成的玻璃顏色。C表示透明玻璃，T表示遮光玻璃。",
+            "title": "可製成的玻璃顏色",
+            "legend": [
+                {
+                    "text": "可製作",
+                    "color": "0x3eb340"
+                },
+                {
+                    "text": "不可製作",
+                    "color": "0xb33e3e"
+                },
+                {
+                    "text": "預設顏色",
+                    "color": "0x3d42a8"
+                }
+            ],
+            "columns": 18,
+            "first_column_width": 35,
+            "column_width": 10,
+            "row_height": 10,
+            "left_buffer": 5,
+            "top_buffer": 15,
+            "draw_background": true
+        },
+        {
+            "type": "patchouli:empty",
+            "draw_filler": false
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "延伸閱讀",
+            "anchor": "relations",
+            "entries": [
+                "tfg:craftsmanship/pottery",
+                "tfg:craftsmanship/metallurgy",
+                "tfg:craftsmanship/charcoal_forge",
+                "tfg:craftsmanship/crucible",
+                "tfg:craftsmanship/charcoal_pit",
+                "tfg:craftsmanship/anvils",
+                "tfg:agriculture/weaving",
+                "tfg:game_mechanics/heating"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 11,
+    "extra_recipe_mappings": {
+        "tag:tfc:glass_batches": 2,
+        "tfc:powder/lime": 3,
+        "tfc:powder/soda_ash": 3,
+        "tag:tfc:glassworking_tools": 9,
+        "tag:tfc:kaolin_blocks": 14,
+        "tfc:metal/block/brass": 14
+    }
+}

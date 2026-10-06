@@ -1,5 +1,8 @@
 {
+	"text.crafting_station.clear": "Wyczyść siatkę craftingu\n(Przytrzymaj Shift, aby preferować\nboczne ekwipunki)",
 	"text.crafting_station.connected_resources.false": "Użyj połączonych zasobów: Fałsz",
 	"text.crafting_station.connected_resources.true": "Użyj połączonych zasobów: Prawda",
+	"text.crafting_station.error": "Znaleziono błędny przepis %s, zobacz szczegóły w dzienniku",
+	"text.crafting_station.jei_nopull_output": "Zablokowane sloty w tym pojemniku!\nJEI nie może już pobierać zasobów ze slotów na wynik, np. slotu wyjściowego pieca.\n\nPrzenieś te przedmioty do zwykłych slotów magazynowych, aby móc ich użyć!",
 	"title.crafting_station": "Stacja rzemieślnicza"
 }

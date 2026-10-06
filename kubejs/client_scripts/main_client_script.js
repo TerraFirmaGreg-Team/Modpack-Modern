@@ -1,9 +1,9 @@
 ItemEvents.tooltip(evt => {
     registerTooltips(evt);
-})
 
-EmiPlusPlusEvents.registerGroups(event => {
-    registerSingleGroups(event)
-    registerMultiGroups(event)
-    registerWireGroups(event)
+    // Uncomment when you need to run the json export scripts
+
+    //registerSingleGroups(evt)
+    //registerMultiGroups(evt)
+    //registerWireGroups(evt)
 })

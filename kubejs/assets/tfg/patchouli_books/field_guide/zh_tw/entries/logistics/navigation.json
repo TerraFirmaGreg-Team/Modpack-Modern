@@ -1,0 +1,93 @@
+{
+    "name": "導航",
+    "category": "tfg:logistics",
+    "icon": "firmaciv:textures/item/nav_toolkit.png",
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "minimap",
+            "title": "小地圖",
+            "item": "minecraft:filled_map",
+            "text": "小地圖會顯示在畫面的上方角落。預設會顯示：$(li)你的座標。$(li)時間。$(li)季節和日期。$(li)路徑點。$(li)實體。$(br)按下$(item)$(k:gui.xaero_open_settings)$()可以設定小地圖。"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "map",
+            "title": "完整地圖",
+            "text": "按下$(item)$(k:gui.xaero_open_map)$()可以查看完整地圖。$(br)$(bold)提示$()：你可以在路徑點管理介面中建立不同的路徑點組來整理路徑點。遊玩時按下$(item)$(k:gui.xaero_new_waypoint)$()即可建立路徑點。地圖中也可以查看區塊認領。區塊認領在多人遊戲中很實用，還能讓你強制載入區域。可以在物品欄左上角的認領管理器中認領區塊。"
+        },
+        {
+            "type": "patchouli:image",
+            "title": "導航",
+            "anchor": "navigation",
+            "images": [
+                "firmaciv:textures/gui/book/navigation.png"
+            ],
+            "border": true
+        },
+        {
+            "type": "patchouli:text",
+            "text": "在世界中辨識方向並不容易。要建立成功的文明，你必須清楚掌握自己的位置，並妥善記錄重要的地點！如果你想避免使用地圖或小地圖，並希望用更沉浸的方式在世界中導航，可以合成精密儀器來確定自己的位置。"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "longitude",
+            "title": "經度",
+            "text": "要找出你的經度，也就是你與本初子午線的距離，你需要一個時鐘！具體來說，你需要一個能與本初子午線的太陽時保持同步的精密計時器。$(br2)先鍛造一個未完成的導航時計，再填入其內部機構。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "時計",
+            "item": "firmaciv:nav_clock",
+            "text": "合成導航時計後，拿著它按下$(item)$(k:key.use)$()即可得知你的經度。記住，經度以東經或西經的度數表示，本初子午線為 0 度，360 度則是相同的氣候。"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "緯度",
+            "anchor": "latitude",
+            "text": "要找出你的緯度，也就是你與赤道的距離，你需要測定觀察北極星或太陽時的角度。具體來說，你需要一個精密的機構來觀測天體，並測量它們與地平線之間的角距離。$(br2)先鍛造一個未完成的六分儀，然後在工作台上完成它。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "六分儀",
+            "item": "firmaciv:sextant",
+            "text": "合成六分儀後，拿著它按下$(item)$(k:key.use)$()即可得知你的緯度。記住，緯度以北緯或南緯的度數表示，赤道為 0 度，極地區域則為北緯或南緯 90 度。"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "海拔高度",
+            "anchor": "altitude",
+            "text": "要找出你的海拔高度，也就是你與海平面基準的垂直距離，你需要測量大氣壓力。具體來說，你需要一個裝有可壓縮流體的裝置，並測量該流體的體積來判斷壓力。$(br2)先鍛造一個未完成的晴雨表，然後在工作台上完成它。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "晴雨表",
+            "item": "firmaciv:barometer",
+            "text": "合成晴雨表後，拿著它按下$(item)$(k:key.use)$()即可得知你的海拔高度。記住，海拔高度是以與海平面基準的距離來測量的。"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "附註",
+            "text": "由於你會以度數來測量距離，了解與方塊的換算可能會有幫助。每 90 度等於 20,000 格，每 1 度約等於 222 格。$(br2)在$(tfg)中，指南針永遠指向北方。"
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "延伸閱讀",
+            "anchor": "relations",
+            "entries": [
+                "tfg:craftsmanship/metallurgy",
+                "tfg:craftsmanship/glassworking",
+                "tfg:logistics/exploration_gear",
+                "tfg:logistics/boats",
+                "tfg:logistics/tack"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "extra_recipe_mappings": {
+        "firmaciv:nav_clock": 2,
+        "firmaciv:sextant": 4,
+        "firmaciv:barometer": 6,
+        "firmaciv:firmaciv_compass": 7
+    }
+}

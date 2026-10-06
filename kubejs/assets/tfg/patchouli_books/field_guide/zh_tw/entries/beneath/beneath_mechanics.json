@@ -1,0 +1,153 @@
+{
+	"name": "地底生存技巧",
+	"category": "tfg:beneath",
+	"icon": "beneath:cursecoal",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "地底的生活與地面上有很大的不同！本條目包含一些在深處長期生存時可能派得上用場的資訊。"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "index",
+			"text": "$(li)$(bold)$(l:beneath/beneath_mechanics#temperature)溫度管理$()$(li2)$(l:beneath/beneath_mechanics#ice)冰$()$(li2)$(l:beneath/beneath_mechanics#clothes)衣物$()$(li2)$(l:beneath/beneath_mechanics#other_cooling)其他$()$(li)$(bold)$(l:beneath/beneath_mechanics#hellforge)地獄熔爐$()$(li)$(bold)$(l:beneath/beneath_mechanics#rope_ladder)垂直移動$()$(li2)$(l:beneath/beneath_mechanics#rope_ladder)繩梯$()$(li2)$(l:logistics/exploration_gear#hang_glider)滑翔翼$()$(li2)$(l:logistics/exploration_gear#grappling_hook)抓鉤$()$(li2)$(l:logistics/exploration_gear#harpoon)魚叉與繩捲$()$(li)$(bold)$(l:beneath/beneath_mechanics#piglins)豬布林$()$(li2)$(l:beneath/beneath_mechanics#disguise)偽裝$()$(li2)$(l:beneath/beneath_mechanics#towers)高塔$()$(li2)$(l:beneath/beneath_mechanics#outposts)前哨站$()$(li2)$(l:beneath/beneath_mechanics#bastions)堡壘$()"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "temperature",
+			"title": "溫度管理",
+			"text": "地底很熱！最上層的溫度從 20°C 起跳，越往下只會越熱。$(br2)在這裡，避免$(l:game_mechanics/player_temperature)中暑$()比在主世界麻煩得多，但還是有辦法緩解。$(br2)避免過熱最簡單的方法，就是待在地底的上層，並在開始過熱時$(l:game_mechanics/player_temperature#wetness)跳進水裡$()。"
+		},
+		{
+			"type": "tfg:sealed_barrel_recipe",
+			"recipe": "tfg:barrel/packed_ice",
+			"anchor": "ice",
+			"text": "隨身帶些$(l:game_mechanics/player_temperature#blocks)冰$()！站在冰的附近可以降低$(l:game_mechanics/player_temperature)你的體溫$()。冰可以在地表採集，得到的碎冰可以製成$(item)冰磚$()。$(thing)冰磚$()和$(thing)藍冰$()不會融化，可以用$(item)鋸子$()撿起。$(l:cooking/drinks#ice_slush)冰沙$()可以飲用。"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "clothes",
+			"title": "衣物",
+			"text": "$(item)粗麻布$()、$(item)亞麻$()和$(item)絲綢$()$(l:craftsmanship/clothing)衣物$()能提供一些耐熱效果。$(br)$(l:the_world/wild_animals#crocodile)鱷魚$()、$(l:the_world/wild_animals#tiger)老虎$()和$(l:the_world/wild_animals#lion)獅子$()衣物能提供更強的降溫效果。$(br)最後，$(l:beneath/beneath_fauna#phantom)夜魅$()和$(l:beneath/beneath_fauna#red_elk)紅麋鹿$()衣物是降溫效果最強的衣物，而且也非常耐用。$(br2)所有衣物都可以修理。在$(emi)中按下$(thing)U$()即可查看修理配方。"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "tfg:shaped/silk_shirt",
+			"recipe2": "tfg:shaped/crocodile_shirt"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "tfg:shaped/phantom_silk_shirt",
+			"recipe2": "tfg:shaped/red_elk_shirt"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "other_cooling",
+			"recipe": "tfg:crafting/smoothie/magmango",
+			"text": "其他保持涼爽的方法，包括站在$(l:beneath/beneath_fauna#ice_jellie)冰果凍怪$()旁邊，以及吃$(item)冰湯$()和$(item)水果冰沙$()等降溫食物！"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "地獄熔爐",
+			"anchor": "hellforge",
+			"text": "由於無法接觸天空，$(l:craftsmanship/charcoal_forge)木炭爐$()在地底無法運作！$(br2)$(thing)地獄熔爐$()是一座大得誇張的熔爐，燃料、產物和加熱的容量都很大。它一次可以加熱多達九個$(l:craftsmanship/crucible)坩堝$()，而且也不需要接觸天空！$(br2)它在主世界也能使用。"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"multiblock": {
+				"pattern": [
+					[
+						"ZXXXZ",
+						"XYYYX",
+						"XY0YX",
+						"XYYYX",
+						"ZXXXZ"
+					],
+					[
+						"     ",
+						" XXX ",
+						" XXX ",
+						" XXX ",
+						"     "
+					]
+				],
+				"mapping": {
+					"Z": "beneath:blackstone_aqueduct[fluid=lava]",
+					"Y": "beneath:hellforge_side",
+					"0": "beneath:hellforge",
+					"X": "beneath:hellbricks"
+				}
+			},
+			"name": "地獄熔爐",
+			"text": "任何類型的$(l:agriculture/aqueducts)引水橋$()都可以使用。",
+			"enable_visualize": false
+		},
+		{
+			"type": "patchouli:text",
+			"text": "地獄熔爐需要熔岩流過四個角落的引水橋，以及 21 塊地獄磚。中央 3x3 的區域必須填滿每堆 7 個木炭的$(l:craftsmanship/charcoal_pit)木炭堆$()，然後點燃即可啟動熔爐。$(br2)為了避免過熱，我們建議使用地底上層小型熔岩池的熔岩。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "地獄熔爐的物品欄位可以放燃料，也可以放要熔煉的東西，兩者沒有區別。放東西時請小心！和木炭爐一樣，右側的欄位是金屬熔化後的去處。介面上的熔岩量表代表溫度。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "繩梯",
+			"anchor": "rope_ladder",
+			"item": "tag:tfg:rope_ladders",
+			"text": "$(thing)繩梯$()是在地底上下移動的好方法。與一般梯子不同，它可以垂掛在懸崖邊緣，側面不需要任何支撐方塊，而且一整組可以一次放置或收回。$(br)$(item)粗麻纖維$()可以從$(l:beneath/beneath_wild_fruits#oil_palm)油棕$()取得，$(item)黃麻繩$()可以用$(thing)繩捲$()或$(thing)其他布料$()合成。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "豬布林以物易物",
+			"anchor": "piglins",
+			"item": "minecraft:gold_ingot",
+			"text": "如你所料，你可以像在原版中一樣用$(item)金錠$()和$(thing)豬布林$()交易。$(br2)完整的交易清單可以在$(emi)中找到――只要對金錠按下$(thing)U$()就能查看。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tfg:piglin_disguise",
+			"title": "豬布林偽裝",
+			"anchor": "disguise",
+			"text": "如果你想確保交易順利――或只是想和當地居民打成一片――穿上$(thing)豬布林偽裝$()可以防止$(thing)豬布林$()一見到你就產生敵意。但要小心！牠們的耐心是有限的……"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "高塔",
+			"anchor": "towers",
+			"text": "你可能會在地底遇到高聳的$(thing)高塔$()。塔內有少量戰利品，但主要用途是方便垂直移動。$(br)不過越往深處，高塔的防守就越嚴密。"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "前哨站",
+			"anchor": "outposts",
+			"text": "$(thing)豬布林前哨站$()是位於地底上層區域的較小型建築。裡面有一些實用的戰利品，但防守比高塔更嚴密。你可以找到：$(li)品質較好的遠程武器和藥水箭$(li)黑青銅武器、工具和盔甲$(li)食物和藥品$(li)燈籠$(li)布料、背包、炸藥和食物"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "堡壘",
+			"anchor": "bastions",
+			"text": "突襲$(thing)堡壘$()可能非常危險，但報酬也可能非常豐厚！你可以找到：$(li)金錠、玫瑰金錠、生鐵錠、黑青銅錠和銀錠$(li)黑青銅武器、工具和盔甲$(li)高嶺土和石墨$(li)燈籠$(li)布料、皮革、種子和食物$(li)以及其他寶藏！"
+		},
+		{
+			"type": "patchouli:relations",
+			"title": "延伸閱讀",
+			"anchor": "relations",
+			"entries": [
+				"tfg:beneath/beneath",
+				"tfg:beneath/beneath_fauna",
+				"tfg:game_mechanics/player_temperature",
+				"tfg:logistics/exploration_gear",
+				"tfg:craftsmanship/clothing",
+				"tfg:cooking/drinks"
+			]
+		}
+	],
+	"extra_recipe_mappings": {
+		"beneath:hellbricks": 8,
+		"tag:tfg:rope_ladders": 12,
+		"minecraft:gold_ingot": 13,
+		"tfg:piglin_disguise": 14
+	},
+	"read_by_default": true
+}

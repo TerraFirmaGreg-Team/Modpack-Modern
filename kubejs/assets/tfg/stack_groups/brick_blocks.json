@@ -1,0 +1,14 @@
+{
+	"id": "tfg:brick_blocks",
+	"type": "remi:group",
+	"name": "stackgroup.remi.tfg_brick_blocks",
+	"contents": [
+		"#tfc:rock/bricks",
+		"#tfc:rock/mossy_bricks",
+		"#tfc:rock/cracked_bricks",
+		"#tfc:rock/chiseled_bricks",
+		"tfc:fire_bricks",
+		"tfcbetterbf:insulated_fire_bricks",
+		"gtceu:coke_oven_bricks"
+	]
+}

@@ -1,0 +1,124 @@
+{
+    "name": "馬具與車",
+    "category": "tfg:logistics",
+    "icon": "sns:metal/horseshoe/steel",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(li)$(bold)$(l:logistics/tack#saddle)鞍$()$(li)$(bold)$(l:logistics/tack#armor)馬鎧$()$(li)$(bold)$(l:logistics/tack#horseshoes)馬蹄鐵$()$(li)$(bold)$(l:logistics/tack#supply_cart)補給車$()$(li)$(bold)$(l:logistics/tack#plow)犁$()$(li)$(bold)$(l:logistics/tack#animal_cart)動物車$()$(li)$(bold)$(l:logistics/tack#paving_cart)鋪路車$()",
+            "title": "索引",
+            "anchor": "index"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "saddle",
+            "title": "鞍",
+            "item": "minecraft:saddle",
+            "text": "當任何成年的$(l:agriculture/animal_husbandry#equines)馬科動物$()或$(l:agriculture/animal_husbandry#camelides)駱駝$()成熟度超過 15% 時，就可以為牠們裝備$(item)鞍$()。鞍是用$(l:agriculture/leather_making)皮革$()合成的，可以讓你騎乘合適的動物並控制牠們的移動。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "armor",
+            "title": "馬鎧",
+            "item": "minecraft:leather_horse_armor,tfc:metal/horse_armor/bismuth_bronze,tfc:metal/horse_armor/black_bronze,tfc:metal/horse_armor/bronze,tfc:metal/horse_armor/copper,tfc:metal/horse_armor/wrought_iron,tfc:metal/horse_armor/steel,tfc:metal/horse_armor/black_steel,tfc:metal/horse_armor/red_steel,tfc:metal/horse_armor/blue_steel",
+            "text": "當任何成年的$(l:agriculture/animal_husbandry#equines)馬$()成熟度超過 15% 時，就可以為牠們裝備$(item)馬鎧$()。馬鎧可以用$(l:agriculture/leather_making)皮革$()和$(l:craftsmanship/metallurgy)金屬$()製作，為你的坐騎提供額外的保護。皮革馬鎧也可以染色。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "horseshoes",
+            "title": "馬蹄鐵",
+            "item": "sns:metal/horseshoes/steel,sns:metal/horseshoes/black_steel,sns:metal/horseshoes/blue_steel,sns:metal/horseshoes/red_steel",
+            "text": "$(item)馬蹄鐵$()是用各種鋼材個別鍛造，再組合成一套的。裝備在任何$(l:agriculture/animal_husbandry#equines)馬科動物$()或$(l:agriculture/animal_husbandry#equines)駱駝科哺乳動物$()身上時，能大幅提升牠們的能力值，詳情可在物品說明中查看。$(br)$(bold)提示：$()使用較高等級的馬蹄鐵時，最好把你的坐騎好好拴住。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "supply_cart",
+            "title": "補給車",
+            "item": "tag:tfcastikorcarts:supply_cart",
+            "text": "$(item)補給車$()可以按下$(item)$(k:key.astikorcarts.desc)$()套在騎乘的動物身上，也可以手動拉動。補給車可以存放大量物品，按下$(item)$(k:key.sneak)-$(k:key.use)$()即可開啟。不過，物品太多或有幾個非常重的物品，都會讓你的坐騎明顯減速。"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfcastikorcarts:supply_cart/oak",
+            "scale": 0.4,
+            "name": " ",
+            "text": "補給車會實際展示其物品欄中的前幾個物品。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "plow",
+            "title": "犁地車",
+            "item": "tag:tfcastikorcarts:plow",
+            "text": "$(item)犁$()可以按下$(item)$(k:key.astikorcarts.desc)$()套在騎乘的動物身上，也可以手動拉動。犁可以放 3 個工具，按下$(item)$(k:key.sneak)-$(k:key.use)$()即可開啟。按下$(item)$(k:key.use)$()啟用時，犁會嘗試對下方的方塊使用這些工具。也就是說，它們可以用$(thing)鋤頭和鐮刀$()耕地、用$(thing)鏟子和鍬$()鋪路，甚至用$(thing)斧頭$()為原木剝皮。"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfcastikorcarts:plow/oak",
+            "scale": 0.4,
+            "name": " ",
+            "text": "犁會展示它的工具。當它的臂放下時表示已啟用。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "animal_cart",
+            "title": "動物車",
+            "item": "tag:tfcastikorcarts:animal_cart",
+            "text": "$(item)動物車$()可以按下$(item)$(k:key.astikorcarts.desc)$()套在騎乘的動物身上，也可以手動拉動。動物車最多可以載$(thing)2 隻動物$()，用車輾過動物時牠們會自動上車。"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfcastikorcarts:animal_cart/oak",
+            "scale": 0.4,
+            "name": " ",
+            "text": "動物車甚至可以載其他玩家。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "鋪路車",
+            "anchor": "paving_cart",
+            "item": "tfg:rnr_plow",
+            "text": "$(thing)鋪路車$()是一種專門用來快速有效率地鋪設路面的車。詳情請參閱$(l:logistics/roads#paving_cart)道路$()條目。"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "tfg:rnr_plow",
+            "scale": 0.4,
+            "name": "鋪路車",
+            "text": "當鋪路車的刀片放下時，表示它已啟用。"
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "延伸閱讀",
+            "anchor": "relations",
+            "entries": [
+                "tfg:craftsmanship/metallurgy",
+                "tfg:the_world/wild_animals",
+                "tfg:agriculture/animal_husbandry",
+                "tfg:agriculture/leather_making",
+                "tfg:logistics/roads",
+                "tfg:logistics/exploration_gear"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "extra_recipe_mappings": {
+        "minecraft:saddle": 1,
+        "minecraft:leather_horse_armor": 2,
+        "tfc:metal/horse_armor/bismuth_bronze": 2,
+        "tfc:metal/horse_armor/black_bronze": 2,
+        "tfc:metal/horse_armor/bronze": 2,
+        "tfc:metal/horse_armor/copper": 2,
+        "tfc:metal/horse_armor/wrought_iron": 2,
+        "tfc:metal/horse_armor/steel": 2,
+        "tfc:metal/horse_armor/black_steel": 2,
+        "tfc:metal/horse_armor/red_steel": 2,
+        "tfc:metal/horse_armor/blue_steel": 2,
+        "sns:metal/horseshoes/steel": 3,
+        "sns:metal/horseshoes/black_steel": 3,
+        "sns:metal/horseshoes/blue_steel": 3,
+        "sns:metal/horseshoes/red_steel": 3,
+        "tag:tfcastikorcarts:supply_cart": 4,
+        "tag:tfcastikorcarts:plow": 6,
+        "tag:tfcastikorcarts:animal_cart": 8
+    }
+}

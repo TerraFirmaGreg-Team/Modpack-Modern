@@ -1,0 +1,160 @@
+{
+    "name": "堆肥",
+    "category": "tfg:agriculture",
+    "icon": "tfc:composter",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "title": "索引",
+            "anchor": "index",
+            "text": "$(li)$(bold)$(l:agriculture/composting#compostables)可堆肥物$()$(li2)$(l:agriculture/composting#green_compost)綠色堆肥$()$(li2)$(l:agriculture/composting#brown_compost)棕色堆肥$()$(li2)$(l:agriculture/composting#compost_poisons)腐爛堆肥$()$(li)$(bold)$(l:agriculture/composting#compost_tumbler)堆肥滾筒$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "intro",
+            "title": "堆肥入門",
+            "text": "堆肥是製作肥料不可或缺的過程。它需要$(2)「綠色」$()與$(4)「棕色」$()兩種有機物才能運作。不同物品對堆肥產量的貢獻各不相同。要將物品放入堆肥桶，請手持有效物品對方塊按下$(item)$(k:key.use)$()。可放入的物品會在後面幾頁說明。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "堆肥桶在特定條件下運作得更好。頂部覆蓋一格雪的堆肥桶運作會稍微加快。位於降雨量$(6)<150mm$()或$(3)>350mm$()地區的堆肥桶運作會慢上許多，且越接近降雨量的最大值與最小值，影響越強。此外，與其他堆肥桶相鄰的堆肥桶也會運作得較慢。"
+        },
+        {
+            "type": "tfg:multimultiblock",
+            "text": "堆肥桶的不同狀態——空、工作中、完成。",
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:composter[stage=0,type=normal]"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:composter[stage=8,type=normal]"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:composter[stage=8,type=ready]"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "patchouli:text",
+            "text": "在一般條件下，堆肥桶需要 6 天才能完成。完成時，它會呈現類似泥土的顏色，並從頂部冒出灰色粒子。此時可空手按下$(item)$(k:key.sneak) + $(k:key.use)$()取出堆肥。將$(c)肉類$()和$(c)骨頭$()等物品加入堆肥會使其腐壞，變成偏紅的顏色並冒出噁心的粒子。將這種腐爛堆肥用在作物上會立即殺死作物。這可以用來從成熟作物$(l:agriculture/growing_crops)複製種子$()！"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "可堆肥",
+            "anchor": "compostables",
+            "text": "可堆肥物依品質分級。低品質提供 1 點、中品質 2 點、高品質 4 點。$(li)$(l)$(2)綠色$()：$(li2)$(l)$(t:#tfc:compost_greens_low)低：$()基本植物與樹苗。$(li2)$(l)$(t:#tfc:compost_greens)中：$()$(l:cooking/food_and_water#grain)穀物$()、苔蘚方塊、蘑菇方塊。$(li2)$(l)$(t:#tfc:compost_greens_high)高：$()$(l:cooking/food_and_water#vegetables)蔬菜$()與$(l:cooking/food_and_water#vegetables)水果$()。$(li)$(l)$(4)棕色$()：$(li2)$(l)$(t:#tfc:compost_browns_low)低：$()藤蔓。$(li2)$(l)$(t:#tfc:compost_browns)中：$()草木灰、纖維、海葵。$(li2)$(l)$(t:#tfc:compost_browns_high)高：$()腐植土、枯草、漂流木。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "綠色堆肥",
+            "anchor": "green_compost",
+            "item": "tfg:universal_compost_greens,tfg:universal_compost_greens_bag",
+            "text": "所有$(2)「綠色」$()堆肥物品都可以直接放入堆肥桶，或製成通用堆肥，將這些物品壓縮以節省空間。通用綠色堆肥放入堆肥桶時提供 1 點。通用綠色堆肥還可以進一步壓縮成袋裝，提供 4 點。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "棕色堆肥",
+            "anchor": "brown_compost",
+            "item": "tfg:universal_compost_browns,tfg:universal_compost_browns_bag",
+            "text": "所有$(4)「棕色」$()堆肥物品都可以直接放入堆肥桶，或像綠色堆肥一樣製成通用堆肥。通用棕色堆肥放入堆肥桶時提供 1 點。袋裝通用棕色堆肥提供 4 點。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "堆肥毒物",
+            "anchor": "compost_poisons",
+            "item": "tag:tfc:compost_poisons",
+            "text": "有些物品會$(c)毒害$()你的堆肥，使其腐爛，包括$(c)肉類$()和$(c)骨頭$()。將腐爛堆肥用在作物上會立即殺死作物。如果作物在死亡時已完全成熟，會掉落多顆種子。穀物和蔬菜等可用於堆肥的作物即使腐爛了也仍然有效，它們不算是堆肥毒物。"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfc:composter[stage=8,type=rotten]"
+                }
+            },
+            "anchor": "rotten_compost",
+            "name": "腐爛堆肥",
+            "text": "腐爛的堆肥桶。",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "compost_tumbler",
+            "item": "firmalife:compost_tumbler",
+            "text": "$(thing)堆肥滾筒$()是生產更多肥料的好方法。它必須從側面連接$(item)機械動力$()的動力才能運作。滾筒的$(thing)RPM$()上限為 16，應力容量為 8 $(thing)SU$()。它只能在沒有動力時進行互動，所以可以考慮為它接上離合器！"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "堆肥滾筒的獨特之處在於它能接受更多種類的堆肥材料，而且不需要精確的比例就能運作。$(br2)滾筒可以像一般堆肥桶一樣放入綠色和棕色物品，也可以放入少量的陶器碎片、木炭、魚和骨頭。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "綠色和棕色物品的計算方式相同，數值介於 1-4，但魚等新增的材料一律計為 1。在堆肥中加入太多奇怪的東西會產出腐爛堆肥，而且直到最後你才會知道它腐爛了！如果骨頭、魚或陶器佔堆肥的百分之十五以上，或木炭佔百分之二十以上，堆肥就會腐爛。另外，如果綠色單位比棕色單位多 10 個以上，也會腐爛。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "適量的特定添加物可以延長或縮短堆肥完成所需的時間。轉速不會影響處理速度！$(br)如果堆肥中有 32 個單位，會產出 3 份堆肥；至少 24 個會產出 2 份；16 個以上會產出 1 份。低於此數則不會產出堆肥。"
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "延伸閱讀",
+            "anchor": "relations",
+            "entries": [
+                "tfg:cooking/decay",
+                "tfg:the_world/wild_crops",
+                "tfg:the_world/wild_fruits",
+                "tfg:agriculture/growing_crops",
+                "tfg:agriculture/greenhouse"
+            ]
+        }
+    ],
+    "sortnum": 5,
+    "read_by_default": true,
+    "extra_recipe_mappings": {
+        "tfc:composter": 1,
+        "tfg:universal_compost_greens": 6,
+        "tfg:universal_compost_greens_bag": 6,
+        "tfg:universal_compost_browns": 7,
+        "tfg:universal_compost_browns_bag": 7,
+        "tfc:rotten_compost": 8,
+        "firmalife:compost_tumbler": 11
+    }
+}

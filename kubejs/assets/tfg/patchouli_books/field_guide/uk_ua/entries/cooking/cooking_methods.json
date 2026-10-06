@@ -1,0 +1,527 @@
+{
+    "name": "Методи приготування їжі",
+    "category": "tfg:cooking",
+    "icon": "tfc:grill",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "title": "Індекс",
+            "anchor": "index",
+            "text": "$(li)$(bold)$(l:cooking/cooking_methods#firepit)Багаття$()\n$(li2)$(l:cooking/cooking_methods#grill)Гриль$()\n$(li2)$(l:cooking/cooking_methods#pot)Казан$()\n$(li)$(bold)$(l:cooking/cooking_methods#oven)Піч$()\n$(li2)$(l:cooking/cooking_methods#vat)Чан$()\n$(li2)$(l:cooking/cooking_methods#jarring_station)Станція консервації$()\n$(li)$(bold)$(l:cooking/cooking_methods#electric_oven)Електрична піч$()\n$(li)$(bold)$(l:cooking/cooking_methods#food_processor)Кухонний комбайн$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "intro",
+            "title": "Вступ",
+            "text": "Їжа — один із найважливіших елементів механік $(tfg). Тобі потрібно готувати їжу, щоб зробити її безпечною для споживання та покращити її $(l:cooking/food_and_water#nutrients)поживні властивості$().$(br2)Деякі способи приготування також дають додаткові переваги, як-от скорочення часу псування."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "firepit",
+            "title": "Багаття",
+            "text": "$(item)Багаття$() — найімовірніше, перший спосіб приготування їжі, до якого ти матимеш доступ. Воно може готувати лише один предмет за раз і використовує колоди як паливо."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfc:firepit[lit=true]"
+                }
+            },
+            "name": "Багаття",
+            "text": "",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "grill",
+            "title": "Гриль",
+            "text": "$(thing)Гриль$() — це предмет, який можна додати до $(item)багаття$(), $(item)печі$() або $(l:craftsmanship/gas_burner)Газовий пальник$() , щоб готувати їжу ефективніше. Гриль здатний готувати п’ять предметів одночасно, а також надає їм під час приготування властивість $(thing)Смажене на дровах$(), яка трохи збільшує $(l:cooking/decay)термін придатності$() предмета. Щоб створити багаття з грилем, спочатку створи $(l:craftsmanship/firepit)багаття$(), а потім використай на ньому $(thing)кований залізний гриль$()."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfc:grill[lit=true]"
+                }
+            },
+            "name": "Гриль на багатті",
+            "text": "",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Приготування в казані",
+            "anchor": "pot",
+            "text": "$(thing)Казан$() — це предмет, який можна додати до $(item)багаття$(), $(item)печі$() або $(l:craftsmanship/gas_burner)Газовий пальник$() , щоб готувати нові види їжі, а також створювати деякі інші корисні предмети.$(br2)Щоб створити багаття з казаном, спочатку створи $(l:craftsmanship/firepit)багаття$(), а потім використай на ньому $(thing)керамічний казан$()."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfc:pot[lit=true]"
+                }
+            },
+            "name": "Багаття з казаном",
+            "text": "",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Казан має п’ять слотів для предметів і вміщує до $(thing)1000 мБ$() будь-якої рідини.$(br2)Щоб щось приготувати в казані, спочатку додай рідину, використовуючи будь-яку місткість для рідин, наприклад відро. Потім додай предмети та підпали казан. Він деякий час кипітиме, доки рецепт не буде завершено."
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/gui/pot.png"
+            ],
+            "text": "Інтерфейс казана, який активно варить суп.",
+            "border": false
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "soup",
+            "item": "tfc:food/fruit_soup",
+            "title": "Рецепти супів",
+            "link_recipes": false,
+            "text": "Суп готують із 3–5 видів $(thing)фруктів$(), $(thing)овочів$() або $(thing)м’яса$() у казані з $(thing)водою$(). Коли рецепт буде готовий, вода в казані стане червоною. Натисни $(item)$(k:key.use)$() з $(l:cooking/bowls)мискою$() в руці, щоб забрати суп у миску. Суп поєднує кілька поживних речовин в одну страву."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tfc:bucket/red_dye",
+            "title": "Прості рецепти",
+            "link_recipes": false,
+            "text": "Інші рецепти казана перетворюють предмети та рідину на щось інше. Наприклад, можна зварити 5 одиниць $(thing)попелу$() у $(thing)воді$() щоб отримати $(thing)луг$()."
+        },
+        {
+            "title": "Печі",
+            "anchor": "oven",
+            "type": "patchouli:text",
+            "text": "$(thing)Піч$() — чудовий спосіб готувати багато їжі, водночас збільшуючи термін її зберігання. Їжа, запечена в печі, псується зі швидкістю 90% від звичайної їжі. Піч — це багатоблокова конструкція, що складаються з $(thing)нижньої частини печі$(), $(thing)верхньої частини печі$() та $(thing)димаря$(). Спочатку ці блоки виготовлені з глини, і їх потрібно $(thing)випалити$(), підтримуючи певну температуру протягом достатнього часу."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Піч ізолюються за допомогою $(thing)$(t:#firmalife:oven_insulation)цегли$(), інших блоків печі або будь-чого, що може ізолювати кузню. Тож за бажання ти можеш використовувати кам’яні блоки!$(br2)$(l:game_mechanics/heating#tongs)Щипці$() або $(item)рукавиці$() — безпечний спосіб діставати гарячі предмети з печі. Просто натисни $(item)$(k:key.use)$() по печі, тримаючи їх у руці, щоб дістати предмети. Інакше ти можеш обпектися!$(br2)$(item)Пристрої для печі$() розширюють її функціональність."
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Будівництво печі",
+            "anchor": "oven_building",
+            "text": "$(thing)Піч$() складається з верхньої частини печі, розміщеної над нижньою частиною печі. Потім усі сторони кожної частини печі, крім передньої, потрібно вкриті блоками $(thing)$(t:#firmalife:oven_insulation)ізоляції печі$(). Якщо безпосередньо позаду печі встановити стос із трьох димарів, дим із печі виходитиме вгору та назовні, запобігаючи пожежам. Якщо цього не зробити, дим швидко заповнить твій будинок, а вогонь із печі може поширитися!"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "bottom_oven",
+            "text": "Нижня частина печі використовується для зберігання палива, яким можуть бути лише колоди. Натисни $(item)$(k:key.use)$(), щоб додати їх. Нижня частина печі також є тією частиною, яку можна підпалити за допомогою $(thing)скіпки$() або іншого інструмента. Вона передаватиме утворене тепло до верхньої частини печі або пристроїв.$(br2)Нижню частину печі потрібно ізолювати, щоб утримувати тепло."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "top_oven",
+            "text": "Верхня частина печі містить предмети, які готуються. Вона отримує тепло від нижньої частини печі та повільно віддає його з часом. Натисни $(item)$(k:key.use)$() з предметом у руці, щоб помістити його всередину. Не забудь використовувати $(thing)щипці$() або $(thing)рукавиці$(), щоб дістати предмети після приготування.$(br2)Верхню частину печі потрібно ізолювати, щоб досягати вищих температур. Однак це не завжди рекомендується, оскільки деякі предмети, як-от хліб, можуть перетворитися на попіл, якщо залишити їх за високої температури."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Казан та гриль можна встановлювати на $(thing)нижню частину печі$(). Ці пристрої автоматично отримуватимуть тепло від нижньої частини печі. Казан можна використовувати лише для приготування супу. Він не зможе виконувати звичайні рецепти для казана."
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Випалювання печі",
+            "anchor": "oven_curing",
+            "text": "Випалювання блоків печі просте, але потребує терпіння. Просто запусти нижню частину печі, як зазвичай, і зачекай. Якщо блок печі перебуває за температури понад $(t:Dark Red )$(4)600$() °C приблизно 80 секунд, він випалиться сам і випалить усі блоки печі навколо себе. Ефект випалювання поширюється вгору по всіх розташованих поблизу димарях."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Невипалена піч",
+            "text": "Піч спочатку потрібно зібрати $(n)необпаленним$(). Ти можеш налаштувати пристрої та розмір.",
+            "enable_visualize": true,
+            "multiblock": {
+                "pattern": [
+                    [
+                        "   ",
+                        "   ",
+                        "   ",
+                        "C  ",
+                        "   ",
+                        "   ",
+                        "   "
+                    ],
+                    [
+                        "   ",
+                        "   ",
+                        "   ",
+                        "C  ",
+                        "   ",
+                        "   ",
+                        "   "
+                    ],
+                    [
+                        "EE ",
+                        "EV ",
+                        "ET ",
+                        "C0 ",
+                        "ET ",
+                        "EG ",
+                        "EE "
+                    ],
+                    [
+                        "EE ",
+                        "E1 ",
+                        "E1 ",
+                        "C1 ",
+                        "E1 ",
+                        "E1 ",
+                        "EE "
+                    ]
+                ],
+                "mapping": {
+                    "0": "firmalife:stovetop_pot",
+                    "1": "firmalife:oven_bottom[facing=south]",
+                    "T": "firmalife:oven_top[facing=south]",
+                    "V": "firmalife:vat",
+                    "G": "firmalife:stovetop_grill",
+                    "E": "#forge:stone_bricks",
+                    "C": "firmalife:oven_chimney"
+                }
+            }
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Обпалена піч",
+            "text": "Приклад конструкції печі після обпалення.",
+            "enable_visualize": false,
+            "multiblock": {
+                "pattern": [
+                    [
+                        "   ",
+                        "   ",
+                        "   ",
+                        "C  ",
+                        "   ",
+                        "   ",
+                        "   "
+                    ],
+                    [
+                        "   ",
+                        "   ",
+                        "   ",
+                        "C  ",
+                        "   ",
+                        "   ",
+                        "   "
+                    ],
+                    [
+                        "EE ",
+                        "EV ",
+                        "ET ",
+                        "C0 ",
+                        "ET ",
+                        "EG ",
+                        "EE "
+                    ],
+                    [
+                        "EE ",
+                        "E1 ",
+                        "E2 ",
+                        "C3 ",
+                        "E4 ",
+                        "E5 ",
+                        "EE "
+                    ]
+                ],
+                "mapping": {
+                    "0": "firmalife:stovetop_pot",
+                    "1": "firmalife:cured_oven_bottom[facing=south,logs=4,lit=true]",
+                    "2": "firmalife:cured_oven_bottom[facing=south,logs=3,lit=true]",
+                    "3": "firmalife:cured_oven_bottom[facing=south,logs=2,lit=true]",
+                    "4": "firmalife:cured_oven_bottom[facing=south,logs=1,lit=true]",
+                    "5": "firmalife:cured_oven_bottom[facing=south,lit=false]",
+                    "T": "firmalife:cured_oven_top[facing=south]",
+                    "V": "firmalife:vat",
+                    "G": "firmalife:stovetop_grill",
+                    "E": "#forge:stone_bricks",
+                    "C": "firmalife:cured_oven_chimney"
+                }
+            }
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "firmalife:crafting/oven_insulation",
+            "text": "Виготовлення ізоляції печі для твоєї нижньої частини печі дозволяє не ізолювати її з боків і ззаду. Це не скасовує потреби в димарі або ізоляції верхніх частин печі. Натисни $(item)$(k:key.use)$(), щоб застосувати її."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "Оздоблення",
+            "anchor": "countertop",
+            "item": "firmalife:brick_countertop,firmalife:rustic_countertop,firmalife:tile_countertop,firmalife:stone_countertop,firmalife:rustic_finish,firmalife:tile_finish,firmalife:stone_finish",
+            "text": "$(thing)Стільниця$() та $(thing)облицювання$() — це декоративні блоки, які вважаються частинами печі. Облицювання наноситься за допомогою $(item)$(k:key.use)$(). Лише $(n)цегляні$() блоки печі можна облицювати. Кам’яне облицювання не можна наносити на цеглу. Використовуй $(item)цегли льоху$(), щоб отримати відповідний вигляд."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "Бункер печі",
+            "anchor": "oven_hopper",
+            "item": "firmalife:oven_hopper",
+            "text": "$(thing)Бункер печі$() подаватиме колоди в будь-яку нижню частину печі, на яку він спрямований. Він вміщує 16 колод (4 стопки по 4, як у купі колод), а його інвентар поповнюється скиданням предметів зверху. Предметні труби також можуть робити те саме, але вони не можуть виконувати роль ізоляції."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "Піддувало",
+            "anchor": "ashtray",
+            "item": "firmalife:ashtray",
+            "text": "$(thing)Піддувало$() збирає $(thing)деревний попіл$(), якщо її встановити під $(thing)блоком нижньої частини печі$(). Імовірність отримання попелу під час витрачання палива становить 0,5. Попіл можна забрати за допомогою $(item)$(k:key.use)$() або хопера, а вставляється він за допомогою $(item)$(k:key.attack)$() по ній."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Ізольована піч",
+            "text": "Приклад ізольованої печі з пристроями та облицюванням.$(br)Примітка: $(7)чан, казан та гриль вважаються ізоляційними блоками.$()",
+            "enable_visualize": false,
+            "multiblock": {
+                "pattern": [
+                    [
+                        "   ",
+                        "   ",
+                        "H  ",
+                        "   ",
+                        "   "
+                    ],
+                    [
+                        "   ",
+                        "   ",
+                        "H  ",
+                        "   ",
+                        "   "
+                    ],
+                    [
+                        "JV ",
+                        "FT ",
+                        "H3 ",
+                        "FT ",
+                        " G "
+                    ],
+                    [
+                        " 1 ",
+                        " 2 ",
+                        "H0 ",
+                        " 4 ",
+                        " 5 "
+                    ],
+                    [
+                        " A ",
+                        " B ",
+                        " C ",
+                        " D ",
+                        " E "
+                    ]
+                ],
+                "mapping": {
+                    "3": "firmalife:stovetop_pot",
+                    "1": "firmalife:insulated_rustic_oven_bottom[facing=south,logs=4,lit=true]",
+                    "2": "firmalife:insulated_rustic_oven_bottom[facing=south,logs=3,lit=true]",
+                    "0": "firmalife:insulated_rustic_oven_bottom[facing=south,logs=2,lit=true]",
+                    "4": "firmalife:insulated_rustic_oven_bottom[facing=south,logs=1,lit=true]",
+                    "5": "firmalife:insulated_rustic_oven_bottom[facing=south,lit=false]",
+                    "T": "firmalife:cured_rustic_oven_top[facing=south]",
+                    "V": "firmalife:vat",
+                    "J": "firmalife:jarring_station[facing=south]",
+                    "A": "firmalife:ashtray[stage=5]",
+                    "B": "firmalife:ashtray[stage=4]",
+                    "C": "firmalife:ashtray[stage=3]",
+                    "D": "firmalife:ashtray[stage=2]",
+                    "E": "firmalife:ashtray[stage=1]",
+                    "G": "firmalife:stovetop_grill",
+                    "F": "firmalife:rustic_countertop",
+                    "H": "firmalife:cured_rustic_oven_chimney"
+                }
+            }
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "Чан",
+            "anchor": "vat",
+            "item": "firmalife:vat",
+            "text": "$(thing)Чан$() призначений для масового приготування рецептів із кип’ятінням. Він має один слот для предметів і вміщує 10 000mB рідини, подібно до діжки.$(br2)Чан може містити лише один тип рідини. Тож якщо ти готуєш рецепт, який дає рідину, але після цього в ньому залишаються невикористані вхідні рідини, вони будуть видалені!"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Щоб використати чан, натисни $(item)$(k:key.use)$() по ньому з рідиною та предметом, щоб додати їх до інвентарю. Порожньою рукою, утримуючи $(item)$(k:key.sneak)$(), натисни по чану, щоб запечатати або відкрити його. Чан не почне кипіти, доки він не буде запечатаний.$(br)Чан слід встановлювати над $(thing)нижньою частиною печі$(). Якщо чан переповнився після завершення рецепта, він не кипітиме! Чан можна автоматично відкривати та закривати за допомогою $(thing)редстоуну$() та взаємодіяти з $(item)трубами$() або $(item)механічною рукою$()."
+        },
+        {
+            "type": "tfg:multimultiblock",
+            "text": "Приклад печі з $(l:cooking/cooking_methods#vat)чаном$() та $(l:cooking/cooking_methods#jarring_station)станцією консервації$().",
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "H ",
+                            "  "
+                        ],
+                        [
+                            "H ",
+                            "  "
+                        ],
+                        [
+                            "HV",
+                            " J"
+                        ],
+                        [
+                            "H1",
+                            "  "
+                        ],
+                        [
+                            "  ",
+                            " 0"
+                        ]
+                    ],
+                    "mapping": {
+                        "1": "firmalife:insulated_rustic_oven_bottom[facing=south,logs=4,lit=true]",
+                        "V": "firmalife:vat[sealed=true]",
+                        "J": "firmalife:jarring_station[facing=west]",
+                        "H": "firmalife:cured_rustic_oven_chimney"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "H ",
+                            "  "
+                        ],
+                        [
+                            "H ",
+                            "  "
+                        ],
+                        [
+                            "HV",
+                            " J"
+                        ],
+                        [
+                            "H1",
+                            "  "
+                        ],
+                        [
+                            "  ",
+                            " 0"
+                        ]
+                    ],
+                    "mapping": {
+                        "1": "firmalife:insulated_rustic_oven_bottom[facing=south,logs=4,lit=true]",
+                        "V": "firmalife:vat[sealed=false]",
+                        "J": "firmalife:jarring_station[facing=west]",
+                        "H": "firmalife:cured_rustic_oven_chimney"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "Станція консервації",
+            "anchor": "jarring_station",
+            "item": "firmalife:jarring_station",
+            "text": "$(thing)Станція консервації$() використовується для автоматичного наповнення $(6)$(t:Empty Jar with Lid)банок$() з $(l:cooking/cooking_methods#vat)чана$(). Станція консервації має носик з одного боку, який має бути спрямований у чан.$(br)Коли чан виробляє джем, він автоматично наповнюватиме ним банки та запечатуватиме їх."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Електрична піч",
+            "anchor": "electric_oven",
+            "text": "$(item)Електрична піч$() — це машина, додана $(tfg), яка автоматично готує їжу, використовуючи $(thing)EU$().",
+            "enable_visualize": false,
+            "multiblock": {
+                "pattern": [
+                    [
+                        "A"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "A": "tfg:lv_food_oven"
+                }
+            }
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Кухонний комбайн",
+            "anchor": "food_processor",
+            "text": "$(item)Кухонний комбайн$() — ще одна машина, додана $(tfg_short), яка автоматично готує страви або обробляє харчові інгредієнти, використовуючи $(thing)EU$().",
+            "enable_visualize": false,
+            "multiblock": {
+                "pattern": [
+                    [
+                        "A"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "A": "tfg:lv_food_processor"
+                }
+            }
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Докладніше",
+            "anchor": "relations",
+            "entries": [
+                "tfg:cooking/food_and_water",
+                "tfg:cooking/decay",
+                "tfg:the_world/wild_animals"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 4,
+    "extra_recipe_mappings": {
+        "tfc:wrought_iron_grill": 4,
+        "tfc:pot": 6,
+        "tfc:ceramic/unfired_pot": 6,
+        "tfc:ceramic/pot": 6,
+        "firmalife:oven_insulation": 21,
+        "firmalife:rustic_finish": 22,
+        "firmalife:tile_finish": 22,
+        "firmalife:stone_finish": 22,
+        "firmalife:oven_hopper": 23,
+        "firmalife:ashtray": 24,
+        "firmalife:vat": 26,
+        "firmalife:jarring_station": 29,
+        "tfg:lv_food_oven": 30,
+        "tfg:mv_food_oven": 30,
+        "tfg:hv_food_oven": 30,
+        "tfg:ev_food_oven": 30,
+        "tfg:iv_food_oven": 30,
+        "tfg:luv_food_oven": 30,
+        "tfg:zpm_food_oven": 30,
+        "tfg:uv_food_oven": 30,
+        "tfg:lv_food_processor": 31,
+        "tfg:mv_food_processor": 31,
+        "tfg:hv_food_processor": 31,
+        "tfg:ev_food_processor": 31,
+        "tfg:iv_food_processor": 31,
+        "tfg:luv_food_processor": 31,
+        "tfg:zpm_food_processor": 31,
+        "tfg:uv_food_processor": 31
+    }
+}

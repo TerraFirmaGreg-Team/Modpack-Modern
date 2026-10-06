@@ -1,0 +1,225 @@
+{
+	"name": "地底動物",
+	"category": "tfg:beneath",
+	"icon": "tfc:textures/item/food/pork.png",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "index",
+			"text": "生命存在於深處！地底有相當多的生物，有些友善，有些敵對。$(br2)本條目列出你可以找到的一些比較有趣的生物。$(br)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(li)$(bold)被動$()$(li2)$(l:beneath/beneath_fauna#axolotl)六角恐龍$()$(li2)$(l:beneath/beneath_fauna#frog)青蛙$()$(li2)$(l:beneath/beneath_fauna#mammutilation)殘屍猛獁$()$(li2)$(l:beneath/beneath_fauna#red_elk)紅麋鹿$()$(li2)$(l:beneath/beneath_fauna#zombie_horse)殭屍馬$()$(li)$(bold)$(l:agriculture/jellies)果凍怪$()$(li2)$(l:beneath/beneath_fauna#ice_jellie)冰$()$(li2)$(l:beneath/beneath_fauna#plant_jellie)植物$()$(li2)$(l:beneath/beneath_fauna#glowberry_jellie)發光莓$()$(li2)$(l:beneath/beneath_fauna#spring_jellie)溫泉$()$(li2)$(l:beneath/beneath_fauna#lava_jellie)熔岩$()$(li2)$(l:beneath/beneath_fauna#biotite_jellie)黑雲母$()$(li2)$(l:beneath/beneath_fauna#latex_jellie)乳膠$()$(br)$(o)(下頁續……)$()"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(li)$(bold)敵對$()$(li2)$(l:beneath/beneath_fauna#crocodile)鱷魚$()$(li2)$(l:beneath/beneath_fauna#piglin)豬布林$()$(li2)$(l:beneath/beneath_fauna#phantom)夜魅$()$(li2)$(l:beneath/beneath_fauna#kaolin_klayze)高嶺土黏怪$()$(li2)$(l:beneath/beneath_fauna#graphite_glayze)石墨釉怪$()$(li2)$(l:beneath/beneath_fauna#cliff_hanger)懸崖鉤怪$()$(li2)$(l:beneath/beneath_fauna#leaf_hanger)葉鉤怪$()$(li2)$(l:beneath/beneath_fauna#endermen)終界使者$()$(li2)$(l:beneath/beneath_fauna#spectre)幽魂$()$(li2)$(l:beneath/beneath_fauna#wicked)邪靈$()$(li2)$(l:beneath/beneath_fauna#ghoul)食屍鬼$()$(li2)$(l:beneath/beneath_fauna#bewereager)狂野狼人$()"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "minecraft:axolotl",
+			"scale": 0.5,
+			"name": "六角恐龍",
+			"anchor": "axolotl",
+			"text": "$(thing)六角恐龍$()可以在上層和中層找到，通常在水池裡游來游去。"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfc:frog",
+			"scale": 1,
+			"name": "青蛙",
+			"anchor": "frog",
+			"text": "$(thing)青蛙$()可以在上層和中層找到。牠們可以被馴服，也可以被吃掉。"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "species:mammutilation",
+			"scale": 0.5,
+			"name": "殘屍猛獁",
+			"anchor": "mammutilation",
+			"text": "$(thing)殘屍猛獁$()是不死的猛獁象。你可以結束牠們的痛苦，換取一些$(item)羊毛$()。"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "beneath:red_elk",
+			"scale": 0.7,
+			"name": "紅麋鹿",
+			"anchor": "red_elk",
+			"text": "$(thing)紅麋鹿$()出沒在底層附近，通常在熔岩中游動。宰殺牠們可以取得$(item)防熔岩毛皮$()。"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "minecraft:zombie_horse",
+			"scale": 0.7,
+			"name": "殭屍馬",
+			"anchor": "zombie_horse",
+			"text": "$(thing)殭屍馬$()無法被馴服或騎乘，但可以拉動$(item)畜力把手$()。"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "jellies:ice",
+			"scale": 0.6,
+			"name": "冰果凍怪",
+			"anchor": "ice_jellie",
+			"text": "$(thing)冰$()$(l:agriculture/jellies)果凍怪$()出沒在$(thing)鹽窟$()生態域。牠們會讓附近的玩家降溫。"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "jellies:plant",
+			"scale": 0.6,
+			"name": "植物果凍怪",
+			"anchor": "plant_jellie",
+			"text": "$(thing)植物$()$(l:agriculture/jellies)果凍怪$()出沒在$(thing)悶熱泥沼$()和$(thing)荊棘林$()生態域。牠們的黏液球可以作為$(thing)綠色$()堆肥。"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "jellies:glowberry",
+			"scale": 0.6,
+			"name": "發光莓果凍怪",
+			"anchor": "glowberry_jellie",
+			"text": "$(thing)發光莓$()$(l:agriculture/jellies)果凍怪$()出沒在$(thing)繁生岩穴$()生態域。牠們的黏液球可以熬煮成$(item)糖$()。"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "jellies:spring",
+			"scale": 0.6,
+			"name": "溫泉果凍怪",
+			"anchor": "spring_jellie",
+			"text": "$(thing)溫泉$()$(l:agriculture/jellies)果凍怪$()出沒在$(thing)地熱溫泉$()生態域。牠們的黏液球是$(item)溫泉水$()的可再生來源。"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "jellies:biotite",
+			"scale": 0.6,
+			"name": "黑雲母果凍怪",
+			"anchor": "biotite_jellie",
+			"text": "$(thing)黑雲母$()$(l:agriculture/jellies)果凍怪$()出沒在下層。牠們的黏液球是$(item)鉀$()、$(item)鎂$()和$(item)氟$()的可再生來源。"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "jellies:lava",
+			"scale": 0.6,
+			"name": "熔岩果凍怪",
+			"anchor": "lava_jellie",
+			"text": "$(thing)熔岩$()$(l:agriculture/jellies)果凍怪$()出沒在下層。牠們會讓附近的玩家升溫，如果你住在寒冷的地方，這可能很有用。"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "jellies:latex",
+			"scale": 0.6,
+			"name": "乳膠果凍怪",
+			"anchor": "latex_jellie",
+			"text": "$(thing)乳膠$()$(l:agriculture/jellies)果凍怪$()只能由$(thing)植物果凍怪$()和$(thing)熔岩果凍怪$()繁殖而來。牠們的黏液球是$(item)乳膠$()的來源。"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "minecraft:piglin",
+			"scale": 0.9,
+			"name": "豬布林",
+			"anchor": "piglin",
+			"text": "地底幾乎每個生態域都可以找到豬布林。你可以像在原版中一樣和牠們$(l:beneath/beneath_mechanics#piglins)交易$()。"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfc:crocodile",
+			"scale": 0.5,
+			"name": "鱷魚",
+			"anchor": "crocodile",
+			"text": "$(thing)鱷魚$()可以在上層和中層找到，牠們正埋伏著等待獵物！"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "minecraft:phantom",
+			"scale": 0.4,
+			"name": "夜魅",
+			"anchor": "phantom",
+			"text": "無論你睡得多不多，$(thing)夜魅$()都會在中層和下層自然生成。牠們可以被製成$(l:beneath/beneath_mechanics#clothes)衣物$()。"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "primitive_creatures:tfc",
+			"scale": 0.8,
+			"name": "高嶺土黏怪",
+			"anchor": "kaolin_klayze",
+			"text": "$(thing)高嶺土黏怪$()可以在$(thing)繁生岩穴$()生態域找到，牠們守護著$(item)高嶺土$()！"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "primitive_creatures:golem_2",
+			"scale": 1,
+			"name": "石墨釉怪",
+			"anchor": "graphite_glayze",
+			"text": "$(thing)石墨釉怪$()可以在下層找到。小心別被牠們撞進熔岩裡！"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "species:cliff_hanger",
+			"scale": 0.7,
+			"name": "懸崖鉤怪",
+			"anchor": "cliff_hanger",
+			"text": "$(thing)懸崖鉤怪$()懸掛在各處的天花板上，會鉤住從下方經過的玩家。用遠程攻擊打牠們，就能讓牠們鬆手！"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "species:leaf_hanger",
+			"scale": 0.7,
+			"name": "葉鉤怪",
+			"anchor": "leaf_hanger",
+			"text": "$(thing)葉鉤怪$()潛伏在鹽水池中，會鉤住走進陷阱的玩家。攻擊牠們就能讓牠們鬆手！"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "endermanoverhaul:nether_wastes_enderman",
+			"scale": 1,
+			"name": "終界使者",
+			"anchor": "endermen",
+			"text": "各種不同的$(thing)終界使者$()遍布各處。$(item)蘑菇$()終界使者完全被動，其他種類則都是中立的。"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "species:spectre",
+			"scale": 0.7,
+			"name": "幽魂",
+			"anchor": "spectre",
+			"text": "$(thing)幽魂$()是昔日冒險者的亡魂，共有三種。牠們是$(item)羽毛$()的來源。"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "species:wicked",
+			"scale": 0.9,
+			"name": "邪靈",
+			"anchor": "wicked",
+			"text": "$(thing)邪靈$()是一種能附身在附近生物身上、為其提供增益效果的幽靈！如果附近沒有生物，牠們會使用遠程攻擊。牠們會掉落蠟。"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "species:ghoul",
+			"scale": 0.7,
+			"name": "食屍鬼",
+			"anchor": "ghoul",
+			"text": "$(thing)食屍鬼$()是用回聲定位尋找獵物的盲眼怪物。除非你進入牠們的「掃描」範圍，否則牠們是中立的！"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "species:bewereager",
+			"scale": 0.8,
+			"name": "狂野狼人",
+			"anchor": "bewereager",
+			"text": "$(thing)狂野狼人$()是一種具攻擊性的怪物，還會跳到你面前！牠會強化自己，並以短暫的連續攻擊發動攻勢。"
+		},
+		{
+			"type": "patchouli:relations",
+			"title": "延伸閱讀",
+			"anchor": "relations",
+			"entries": [
+				"tfg:the_world/wild_animals",
+				"tfg:agriculture/animal_husbandry",
+				"tfg:agriculture/jellies",
+				"tfg:the_moon/moon_fauna",
+				"tfg:mars/mars_fauna"
+			]
+		}
+	],
+	"read_by_default": true
+}

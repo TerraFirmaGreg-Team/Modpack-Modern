@@ -1,0 +1,7 @@
+{
+  "variants" : {
+    "default" : "outlined_sprite:tfc/grouse_female.png",
+    "tfc:textures/entity/animal/grouse_female.png" : "outlined_sprite:tfc/grouse_female.png",
+    "tfc:textures/entity/animal/grouse_male.png" : "outlined_sprite:tfc/grouse_male.png"
+  }
+}

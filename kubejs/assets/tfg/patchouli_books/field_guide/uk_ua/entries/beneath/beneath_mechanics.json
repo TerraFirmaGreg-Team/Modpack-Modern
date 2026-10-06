@@ -1,0 +1,153 @@
+{
+	"name": "Поради та хитрощі Безодні",
+	"category": "tfg:beneath",
+	"icon": "beneath:cursecoal",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Життя в Безодні суттєво відрізняється від життя на поверхні! У цьому розділі міститься інформація, яка може стати в пригоді для тривалого виживання в її глибинах."
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "index",
+			"text": "$(li)$(bold)$(l:beneath/beneath_mechanics#temperature)Контроль температури$()$(li2)$(l:beneath/beneath_mechanics#ice)Лід$()$(li2)$(l:beneath/beneath_mechanics#clothes)Одяг$()$(li2)$(l:beneath/beneath_mechanics#other_cooling)Інше$()$(li)$(bold)$(l:beneath/beneath_mechanics#hellforge)Пекельна кузня$()$(li)$(bold)$(l:beneath/beneath_mechanics#rope_ladder)Вертикальне пересування$()$(li2)$(l:beneath/beneath_mechanics#rope_ladder)Мотузкова драбина$()$(li2)$(l:logistics/exploration_gear#hang_glider)Дельтаплан$()$(li2)$(l:logistics/exploration_gear#grappling_hook)Гак-кішка$()\n$(li2)$(l:logistics/exploration_gear#harpoon)Гарпун і мотузка$()$(li)$(bold)$(l:beneath/beneath_mechanics#piglins)Піґліни$()$(li2)$(l:beneath/beneath_mechanics#disguise)Маскування під Пігліна$()$(li2)$(l:beneath/beneath_mechanics#towers)Вежі$()$(li2)$(l:beneath/beneath_mechanics#outposts)Аванпости$()$(li2)$(l:beneath/beneath_mechanics#bastions)Бастіони$()"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "temperature",
+			"title": "Регулювання температури",
+			"text": "Безодня спекотна! Температура починається з 20 °C на самому верху й лише підвищується в міру спуску.$(br2)Уникати $(l:game_mechanics/player_temperature)гіпертермії$() тут набагато важливіше, ніж у верхньому світі, але є способи її зменшити.$(br2)Найпростіший спосіб не перегрітися — залишатися на верхніх рівнях Безодні та $(l:game_mechanics/player_temperature#wetness)занурюватися$() у воду щоразу, коли тобі стає надто спекотно."
+		},
+		{
+			"type": "tfg:sealed_barrel_recipe",
+			"recipe": "tfg:barrel/packed_ice",
+			"anchor": "ice",
+			"text": "Візьми із собою трохи $(l:game_mechanics/player_temperature#blocks)льоду$()! Перебування поруч із ним $(l:game_mechanics/player_temperature)знижуватиме твою температуру$(). Лід можна добути на поверхні за допомогою $(item)пилки$(), а отриману крижану стружку можна перетворити на $(item)ущільнений лід$(). $(thing)Ущільнений$() та $(thing)блакитний$() лід не тануть. $(l:cooking/drinks#ice_slush)Крижану крихту$() можна пити."
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "clothes",
+			"title": "Одяг",
+			"text": "$(item)Мішковинний$(), $(item)лляний$() та $(item)шовковий$() $(l:craftsmanship/clothing)одяг$() трохи підвищує стійкість до спеки.$(br)$(l:the_world/wild_animals#crocodile)Крокодилячий$(), $(l:the_world/wild_animals#tiger)тигровий$() та $(l:the_world/wild_animals#lion)лев’ячий$() одяг забезпечує сильніший охолоджувальний ефект.$(br)Нарешті, одяг із $(l:beneath/beneath_fauna#phantom)примари$() та $(l:beneath/beneath_fauna#red_elk)червоного лося$() забезпечує найсильніше охолодження та до того ж довго не зношується.$(br2)Увесь одяг можна ремонтувати. Натисни $(thing)U$(), щоб переглянути рецепти ремонту в $(emi)."
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "tfg:shaped/silk_shirt",
+			"recipe2": "tfg:shaped/crocodile_shirt"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "tfg:shaped/phantom_silk_shirt",
+			"recipe2": "tfg:shaped/red_elk_shirt"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "other_cooling",
+			"recipe": "tfg:crafting/smoothie/magmango",
+			"text": "Інші способи охолодитися — стояти поруч із $(l:beneath/beneath_fauna#ice_jellie)крижаним джеллі$() та їсти охолоджувальну їжу, як-от $(item)крижаний суп$() і $(item)фруктові смузі$()!"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Пекельна кузня",
+			"anchor": "hellforge",
+			"text": "Через відсутність доступу до неба $(l:craftsmanship/charcoal_forge)вугільне горно$() не працює в Безодні!$(br2)$(thing)Пекельна кузня$() — це неймовірно велика кузня з великою місткістю для палива, виробів і нагрівання. Вона може одночасно нагрівати до дев’яти $(l:craftsmanship/crucible)тиглів$() і також не потребує доступу до неба!$(br2)Вона також працює в Безодні."
+		},
+		{
+			"type": "patchouli:multiblock",
+			"multiblock": {
+				"pattern": [
+					[
+						"ZXXXZ",
+						"XYYYX",
+						"XY0YX",
+						"XYYYX",
+						"ZXXXZ"
+					],
+					[
+						"     ",
+						" XXX ",
+						" XXX ",
+						" XXX ",
+						"     "
+					]
+				],
+				"mapping": {
+					"Z": "beneath:blackstone_aqueduct[fluid=lava]",
+					"Y": "beneath:hellforge_side",
+					"0": "beneath:hellforge",
+					"X": "beneath:hellbricks"
+				}
+			},
+			"name": "Пекельна кузня",
+			"text": "Підійде $(l:agriculture/aqueducts)акведук$() будь-якого типу.",
+			"enable_visualize": false
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Для пекельної кузні потрібно, щоб лава текла через акведуки в усіх чотирьох кутах, а також 21 пекельна цеглина. Центральну область 3×3 потрібно заповнити $(l:craftsmanship/charcoal_pit)вугільними купами$() по 7 одиниць вугілля в кожній, після чого їх можна підпалити, щоб запустити кузню.$(br2)Щоб уникнути перегрівання, радимо використовувати лаву з невеликого лавового басейну у верхніх рівнях Безодні."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Слоти для предметів у пекельній кузні можуть містити паливо або предмети для плавлення — жодної різниці між ними немає. Будь уважним, коли щось кладеш! Слоти праворуч показують, у що плавитимуться метали, так само як і у вугільній кузні. Індикатор лави на екрані показує температуру."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Мотузкова драбина",
+			"anchor": "rope_ladder",
+			"item": "tag:tfg:rope_ladders",
+			"text": "$(thing)Мотузкова драбина$() — чудовий спосіб пересуватися вгору та вниз у Безодні. На відміну від звичайних драбин, їх можна підвішувати над краями урвищ без потреби в опорних блоках по бокам, а цілу стопку можна встановити або підібрати за раз.$(br2)$(item)Волокно мішковини$() можна отримати з $(l:beneath/beneath_wild_fruits#oil_palm)олійної пальми$(), а $(item)бухту мотузки$() можна виготовити з $(thing)котушок$() або $(thing)іншої тканини$()."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Торгівля з Піглінами",
+			"anchor": "piglins",
+			"item": "minecraft:gold_ingot",
+			"text": "Як і слід було очікувати, ти можеш торгуватися з $(thing)піґлінами$(), так само як у ванільній грі, використовуючи $(item)золоті злитки$().$(br2)Повний список обмінів можна знайти в $(emi) — просто натисни $(thing)U$() по золотому злитку, щоб переглянути список."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tfg:piglin_disguise",
+			"title": "Маскування під Пігліна",
+			"anchor": "disguise",
+			"text": "Якщо ти хочеш без проблем торгувати — або просто поспілкуватися з місцевими — одягни $(thing)Маскування під Пігліна$(), щоб $(thing)пігліни$() не ставали ворожими до тебе при першій зустрічі. Але будь обережним! Їхнього терпіння вистачить ненадовго..."
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Вежі",
+			"anchor": "towers",
+			"text": "У Безодні тобі можуть трапитися високі $(thing)вежі$(). У них є трохи здобичі, але переважно вони призначені для зручного вертикального пересування.$(br)Однак чим глибше ти спускаєшся, тим сильніше вони охороняються."
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Аванпости",
+			"anchor": "outposts",
+			"text": "$(thing)Аванпости піглінів$() — це невеликі споруди, розташовані у верхніх регіонах Безодні. Вони містять корисну здобич, але захищені краще, ніж вежі. Там можна знайти, наприклад:$(li)Якіснішу далекобійну зброю та стріли з ефектами$(li)Зброю, інструменти та обладунки з чорної бронзи$(li)Їжу та ліки$(li)Ліхтарі$(li)Тканину, сумки, вибухівку та їжу"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Бастіони",
+			"anchor": "bastions",
+			"text": "Пограбування $(thing)Бастіону$() може бути дуже небезпечним, але й нагорода може бути чималою! Там можна знайти такі речі:$(li)Злитки золота, рожевого золота, чавуну, чорної бронзи та срібла$(li)Зброю, інструменти та обладуеки з чорної бронзи$(li)Каолінову глину та графіт$(li)Ліхтарі$(li)Тканину, шкіру, насіння та їжу$(li)Та інші скарби!"
+		},
+		{
+			"type": "patchouli:relations",
+			"title": "Докладніше",
+			"anchor": "relations",
+			"entries": [
+				"tfg:beneath/beneath",
+				"tfg:beneath/beneath_fauna",
+				"tfg:game_mechanics/player_temperature",
+				"tfg:logistics/exploration_gear",
+				"tfg:craftsmanship/clothing",
+				"tfg:cooking/drinks"
+			]
+		}
+	],
+	"extra_recipe_mappings": {
+		"beneath:hellbricks": 8,
+		"tag:tfg:rope_ladders": 12,
+		"minecraft:gold_ingot": 13,
+		"tfg:piglin_disguise": 14
+	},
+	"read_by_default": true
+}

@@ -1,0 +1,38 @@
+{
+	"custom_clouds": false,
+	"custom_sky": true,
+	"custom_weather": false,
+	"dimension": "ad_astra:venus",
+	"has_fog": true,
+	"has_thick_fog": true,
+	"render_in_rain": false,
+	"sky_renderables": [
+		{
+			"back_light_color": -750495,
+			"back_light_scale": 42.0,
+			"blend": true,
+			"global_rotation": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"local_rotation": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"movement_type": "TIME_OF_DAY_REVERSED",
+			"scale": 14.0,
+			"texture": "ad_astra:textures/environment/red_sun.png"
+		}
+	],
+	"star_colors": [
+		{
+			"data": -1,
+			"weight": 1
+		}
+	],
+	"stars": 1500,
+	"sunrise_angle": 180,
+	"sunrise_color": 16368154
+}

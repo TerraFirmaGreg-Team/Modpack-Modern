@@ -1,0 +1,8 @@
+{
+	"id": "tfg:liquid",
+	"type": "remi:group",
+	"name": "stackgroup.remi.tfg_liquid",
+	"contents": [
+		"#fluid:forge:liquid"
+	]
+}

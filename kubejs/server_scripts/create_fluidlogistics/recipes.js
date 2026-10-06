@@ -12,15 +12,6 @@ function registerCreateFluidLogisticsRecipes(event) {
 			{ id: 'fluidlogistics:fluid_packager_switch' }
 		], mod: "fluidlogistics" })
 
-    event.shapeless('fluidlogistics:waterproof_cardboard_block', ['create:cardboard_block', '#forge:wax'])
-    event.recipes.create.item_application('fluidlogistics:waterproof_cardboard_block', ['create:cardboard_block', '#forge:wax'])
-    
-	event.recipes.gtceu.packer('tfg:waterproof_cardboard_block')
-		.itemInputs('4x create:cardboard', '#forge:wax')
-		.itemOutputs('fluidlogistics:waterproof_cardboard_block')
-		.duration(500)
-		.EUt(7)
-
     event.recipes.gtceu.shaped('fluidlogistics:fluid_packager', [
 		' A ',
 		'BCD',
@@ -29,14 +20,14 @@ function registerCreateFluidLogisticsRecipes(event) {
 		A: '#forge:small_gears/red_alloy',
 		B: '#forge:springs/wrought_iron',
 		C: 'create:copper_casing',
-		D: 'fluidlogistics:waterproof_cardboard_block',
+		D: 'tfc:empty_jar',
 		E: 'create:electron_tube',
 		F: '#forge:tools/screwdrivers',
 		G: '#forge:tools/wrenches'
 	}).id("fluidlogistics:shaped/fluid_packager")
 
 	event.recipes.gtceu.assembler('fluidlogistics:fluid_packager')
-		.itemInputs('#forge:small_gears/red_alloy', '#forge:springs/wrought_iron', 'create:copper_casing', 'fluidlogistics:waterproof_cardboard_block', 'create:electron_tube')
+		.itemInputs('#forge:small_gears/red_alloy', '#forge:springs/wrought_iron', 'create:copper_casing', 'tfc:empty_jar', 'create:electron_tube')
 		.itemOutputs('fluidlogistics:fluid_packager')
 		.circuit(20)
 		.duration(100)
@@ -95,35 +86,18 @@ function registerCreateFluidLogisticsRecipes(event) {
 		'C'
 	], {
 		A: '#forge:tools/hammers',
-		B: '#tfc:trapdoors',
+		B: ['tfc:metal/trapdoor/steel','createdeco:industrial_iron_trapdoor'],
 		C: 'create:item_drain',
-	}).id('tfg:fluidlogistics/shaped/fluid_hatch_tfc')
+	}).id('tfg:fluidlogistics/shaped/fluid_hatch')
 
-	event.shaped('fluidlogistics:fluid_hatch', [
-		'A',
-		'B',
-		'C'
-	], {
-		A: '#forge:tools/hammers',
-		B: '#createdeco:metal_trapdoors',
-		C: 'create:item_drain',
-	}).id('tfg:fluidlogistics/shaped/fluid_hatch_deco')
-
-	event.recipes.gtceu.assembler('tfg:fluidlogistics/fluid_hatch_tfc')
-		.itemInputs('create:item_drain', '#tfc:trapdoors')
+	event.recipes.gtceu.assembler('tfg:fluidlogistics/fluid_hatch')
+		.itemInputs('create:item_drain', '#forge:plates/steel')
 		.circuit(19)
 		.itemOutputs('fluidlogistics:fluid_hatch')
 		.duration(200)
 		.EUt(20)
 
-	event.recipes.gtceu.assembler('tfg:fluidlogistics/fluid_hatch_deco')
-		.itemInputs('create:item_drain', '#createdeco:metal_trapdoors')
-		.circuit(19)
-		.itemOutputs('fluidlogistics:fluid_hatch')
-		.duration(200)
-		.EUt(20)
-
-	TFGHelpers.registerMaterialInfo('fluidlogistics:fluid_hatch', [GTMaterials.Copper, 1, GTMaterials.Wood, 1])
+	TFGHelpers.registerMaterialInfo('fluidlogistics:fluid_hatch', [GTMaterials.Steel, 1, GTMaterials.Copper, 1, GTMaterials.Wood, 1])
 
 	event.shapeless('fluidlogistics:faucet', ['#create:valve_handles', 'gtceu:copper_small_fluid_pipe'])
 		.id('tfg:shapeless/fluidlogistics/faucet')
@@ -188,4 +162,47 @@ function registerCreateFluidLogisticsRecipes(event) {
 
 	TFGHelpers.registerMaterialInfo('fluidlogistics:copper_frogport', [GTMaterials.RedAlloy, 1, GTMaterials.Copper, 1, GTMaterials.Wood, 1])
 
+	event.shaped('2x fluidlogistics:fluid_inventory_access_port', [
+		'A',
+		'B',
+		'C'
+	], {
+		A: 'create:copper_casing',
+		B: 'create:fluid_pipe',
+		C: 'create:electron_tube'
+	}).id('tfg:fluidlogistics/shaped/fluid_inventory_access_port')
+
+	TFGHelpers.registerMaterialInfo('fluidlogistics:fluid_inventory_access_port', [GTMaterials.Copper, 1.5])
+	
+	event.shapeless('fluidlogistics:fluid_factory_gauge', 'fluidlogistics:fluid_factory_gauge')
+		.id('tfg:shapeless/fluid_factory_gauge_nbt_clear')
+	event.shapeless('fluidlogistics:fluid_factory_gauge', ['create:factory_gauge', '#forge:tools/screwdrivers'])
+		.id('tfg:shapeless/fluid_gauge_from_item')
+	event.shapeless('create:factory_gauge', ['fluidlogistics:fluid_factory_gauge', '#forge:tools/screwdrivers'])
+		.id('tfg:shapeless/item_gauge_from_fluid')
+		
+	event.recipes.gtceu.assembler('fluidlogistics:fluid_factory_gauge')
+		.itemInputs('create:precision_mechanism', '2x #forge:screws/aluminium', '#gtceu:diodes', '3x #forge:plates/rose_quartz', '#gtceu:circuits/lv')
+		.itemOutputs('fluidlogistics:fluid_factory_gauge')
+		.duration(150)
+		.EUt(16)
+		.addMaterialInfo(true)
+		.circuit(2)
+
+	event.shapeless('fluidlogistics:flow_meter', ['create:copper_casing', 'firmaciv:firmaciv_compass'])
+		.id('tfg:shapeless/flow_meter')
+
+	event.shapeless('fluidlogistics:redstone_fluid_valve', ['create:fluid_valve', 'minecraft:redstone'])
+		.id('tfg:shapeless/redstone_fluid_valve')
+
+	event.shaped('fluidlogistics:potato_server', [
+		' B ',
+		'CAD',
+		' B '
+	], {
+		A: 'create:copper_casing',
+		B: '#forge:glass_panes',
+		C: '#forge:small_gears/red_alloy',
+		D: 'create:electron_tube'
+	}).id('tfg:shaped/potato_server')
 }

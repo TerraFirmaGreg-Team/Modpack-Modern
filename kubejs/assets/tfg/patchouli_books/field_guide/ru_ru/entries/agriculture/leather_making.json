@@ -1,0 +1,99 @@
+{
+    "name": "Изготовление Кожи",
+    "category": "tfg:agriculture",
+    "icon": "minecraft:leather",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(item)Кожа$()―крепкий материал, создаваемый из шкур животных. Она необходима для крафта $(item)Брони$(), $(item)Сёдел$(), или $(l:craftsmanship/charcoal_forge#bellows)Кузнечных мехов$(). $(item)Свежие Шкуры$() должны быть обработаны при помощи множества процессов: $(l:agriculture/leather_making#soaking)Отмачивание$(), $(l:agriculture/leather_making#scraping)Мездрение$(), $(l:agriculture/leather_making#preparing)Мягчение$(),  и $(l:agriculture/leather_making#tanning)Дубление$() чтобы превратиться в $(item)Кожу$()."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tfc:small_raw_hide,tfc:medium_raw_hide,tfc:large_raw_hide",
+            "title": "Сырая шкура",
+            "link_recipes": true,
+            "text": "Для начала тебе необходимо добыть $(thing)Свежую Шкуру$(), выпадающую при забое множества различных $(l:the_world/wild_animals)Животных$(). Из разных животных выпадают $(thing)Свежие Шкуры$() разных размеров. $(br2)Загляни в $(emi) для получения информации о выпадающих из мобов предметов"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Для изготовления кожи понадобится множество материалов и инструментов. Тебе понадобятся: $(br)$(li)$(l:craftsmanship/barrels#limewater)Известковая Вода$() - раствор $(item)Флюса$() в $(thing)Воде$()$(li)Вода$(li)$(l:craftsmanship/barrels#tannin)Танин$() - кислотный раствор, изготавливаемый из коры некоторых деревьев.$(li)$(thing)Свежие Шкуры$()$(br2)Имея всё это, ты готов начать процесс изготовления кожи."
+        },
+        {
+            "type": "tfg:sealed_barrel_recipe",
+            "anchor": "soaking",
+            "recipe": "tfc:barrel/medium_soaked_hide",
+            "text": "Для начала, свежие шкуры должны быть $(thing)Отмочены$() чтобы очистить их и ослабить нежелательные материалы перед обработкой. Этого можно добиться запечатав $(thing)Свежую Шкуру$() в $(l:craftsmanship/barrels#limewater)Бочке с Известковым Раствором$() минимум на восемь часов."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "scraping",
+            "item": "tfc:small_scraped_hide,tfc:medium_scraped_hide,tfc:large_scraped_hide",
+            "title": "Мездрение",
+            "link_recipes": true,
+            "text": "После отмачивания, $(thing)Отмоченные Шкуры$() должны пройти мездрение для удаления лишнего материала. Для мездрения, расположи шкуру на боковой стороне $(thing)Бревна$(). Используй $(item)Нож$() или $(item)Нож для Соскребания$() при помощи $(item)$(k:key.use)$() на каждой части шкуры, она начнёт менять текстуру."
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/soaked_hide_1.png",
+                "tfc:textures/gui/book/tutorial/soaked_hide_2.png",
+                "tfc:textures/gui/book/tutorial/soaked_hide_3.png",
+                "tfc:textures/gui/book/tutorial/soaked_hide_4.png"
+            ],
+            "text": "Как только шкура полностью выделана, её можно сломать, чтобы подобрать $(thing)Гольё$().",
+            "border": true
+        },
+        {
+            "type": "tfg:sealed_barrel_recipe",
+            "anchor": "preparing",
+            "recipe": "tfc:barrel/medium_prepared_hide",
+            "text": "После выделки, $(thing)Гольё$() должно быть запечатано в $(l:craftsmanship/barrels)Бочке$() $(thing)Воды$() минимум на восемь часов, для финальной очистки перед дублением."
+        },
+        {
+            "type": "tfg:sealed_barrel_recipe",
+            "anchor": "tanning",
+            "recipe": "tfc:barrel/medium_leather",
+            "text": "Наконец, $(thing)Мягчёное Гольё$() необходимо запечатать в $(l:craftsmanship/barrels#tannin)Бочке с Танином$()―кислотным химическим соединением, изготавливаемом из $(t:#tfc:makes_tannin)$(6)Богатых Танином Брёвен$(). Он помогает превратить шкуру в $(thing)Кожу$(). Спустя восемь часов, $(thing)Кожа$() может быть извлечена из бочки."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "pineapple_leather",
+            "title": "Альтернативы коже",
+            "item": "firmalife:pineapple_leather",
+            "text": "Альтернативой животной коже выступает $(item)Ананасовая Кожа$(). Её можно изготовить сначала $(l:cooking/decay#drying)Засушив$() $(l:the_world/wild_fruits#pineapple)Ананасы$(), а затем разделив их на нить и $(l:agriculture/weaving)Соткав$() из неё ананасовую кожу."
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Дополнительно",
+            "anchor": "relations",
+            "entries": [
+                "tfg:agriculture/animal_husbandry",
+                "tfg:agriculture/papermaking",
+                "tfg:the_world/wild_animals",
+                "tfg:the_world/wild_fruits",
+                "tfg:craftsmanship/sticks_and_stones",
+                "tfg:craftsmanship/metallurgy",
+                "tfg:craftsmanship/charcoal_forge",
+                "tfg:craftsmanship/blast_furnace",
+                "tfg:craftsmanship/barrels"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 10,
+    "extra_recipe_mappings": {
+        "tfc:small_raw_hide": 1,
+        "tfc:medium_raw_hide": 1,
+        "tfc:large_raw_hide": 1,
+        "tfc:small_soaked_hide": 3,
+        "tfc:medium_soaked_hide": 3,
+        "tfc:large_soaked_hide": 3,
+        "tfc:small_scraped_hide": 4,
+        "tfc:medium_scraped_hide": 4,
+        "tfc:large_scraped_hide": 4,
+        "tfc:small_prepared_hide": 6,
+        "tfc:medium_prepared_hide": 6,
+        "tfc:large_prepared_hide": 6,
+        "minecraft:leather": 7
+    }
+}

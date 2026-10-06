@@ -1,0 +1,99 @@
+{
+	"name": "體溫",
+	"category": "tfg:game_mechanics",
+	"icon": "tfcambiental:straw_hat",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "$(thing)體溫$()是只影響$(bold)你$()(玩家)的溫度，不影響其他任何東西。它不同於氣候的$(l:the_world/climate#temperature)目前溫度與平均溫度$()，但會受到它們以及$(l:game_mechanics/player_temperature#what_affects_it)其他因素$()的影響。$(br2)你需要留意它，以免$(thing)中暑$()或$(thing)凍傷$()！"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "目錄",
+			"text": "$(li)$(bold)$(l:game_mechanics/player_temperature#hud)如何查看你的體溫$()$(li)$(bold)$(l:game_mechanics/player_temperature#what_affects_it)哪些因素會影響體溫？$()$(li2)$(l:game_mechanics/player_temperature#what_affects_it)氣候與季節$()$(li2)$(l:game_mechanics/player_temperature#wetness)濕度$()$(li2)$(l:game_mechanics/player_temperature#wetness)陽光直射$()$(li2)$(l:game_mechanics/player_temperature#wetness)衝刺$()$(li2)$(l:game_mechanics/player_temperature#blocks)方塊$()$(li2)$(l:game_mechanics/player_temperature#food)食物效果$()$(li2)$(l:game_mechanics/player_temperature#clothing)衣物$()$(li)$(bold)$(l:game_mechanics/player_temperature#house_tester)封閉空間$()$(li)$(bold)$(l:game_mechanics/player_temperature#heat_pump)熱泵$()"
+		},
+		{
+			"type": "patchouli:image",
+			"anchor": "hud",
+			"text": "中間的箭頭表示你的體溫正在上升還是下降。",
+			"title": "快捷欄 HUD",
+			"border": false,
+			"images": [
+				"tfg:textures/gui/field_guide/ambiental_hud.png"
+			]
+		},
+		{
+			"type": "patchouli:text",
+			"text": "按住 $(item)$(k:key.sneak)$() 並看向螢幕底部$(thing)快捷欄$()上方的數字，就能查看你的體溫。$(br2)右邊的兩個數字表示你$(thing)目前的體溫$()和$(thing)目標溫度$()，也就是在情況不變時體溫「趨向」的數值。$(br2)左邊的兩個數字則是你的$(l:game_mechanics/player_temperature#wetness)濕度$()，意義相同。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "要留意的是$(thing)右邊的兩個溫度數字$()！如果你的$(thing)體溫$()$(6)高於 30°C$()或$(3)低於 0°C$()，就會開始受到傷害。$(br2)接近這些溫度時，HUD 中間的箭頭會變成亮橘色或深藍色，螢幕也會帶有橘色或藍色的色調。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "The $(item)gradient bar$() on the very bottom, replacing your XP bar, shows your $(thing)player temperature$() (the $(bold)white mark$()), the $(l:the_world/climate)current climate temperature$() (the $(bold)$(2)green 🔽$()), and the $(l:the_world/climate)average climate temperature$() (the $(bold)$(c)red 🔼$()), all at once.$(br2)The bar is split into 10°C segments, with the very middle representing 0°C."
+		},
+		{
+			"type": "patchouli:text",
+			"title": "What affects it?",
+			"anchor": "what_affects_it",
+			"text": "There are many things that influence your temperature!$(br2)The most obvious one is what your climate is doing. You will be hotter in the $(l:the_world/climate#seasons)summer$() and colder in the $(l:the_world/climate#seasons)winter$(), living in the $(l:the_world/climate#climate)Arctic$() will make you colder than living in the $(l:the_world/climate#climate)Tropics$(), and so on."
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "wetness",
+			"text": "$(thing)Wetness$() will make you slightly colder, while also making you change temperature a bit faster. Unsurprisingly, you get wet from the rain or swimming, and dry off by... not touching water. Jumping in the water is a great way to cool down!$(br2)Standing in $(thing)direct sunlight$() increases temperature by a small amount that scales off the current climate temperature. Actively sprinting will also increase it a little."
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "blocks",
+			"text": "Various nearby blocks can affect your temperature much more strongly. For example, you can warm up with a $(l:craftsmanship/firepit)Firepit$(), $(l:craftsmanship/charcoal_forge)Charcoal Forge$(), or blocks like $(item)Magma$() or $(thing)Lava$(), while blocks such as $(item)Packed Ice$() will cool you down."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "More precisely, blocks will influence your temperature if they are up to $(thing)9$() blocks away horizontally, up to $(thing)3$() blocks below you, and up to $(thing)5$() blocks above you (19x9x19). Of those blocks, only the 5 blocks with the strongest effects will influence your temperature, but any $(l:game_mechanics/heating)heating$() devices will always count."
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Food and Drink",
+			"anchor": "food",
+			"text": "Some $(l:cooking)food$() and $(l:cooking/drinks)drinks$() may have effects that influence the player's temperature. These are:$(li)$(l:game_mechanics/mob_effects#cooling)Cooling$()$(li)$(l:game_mechanics/mob_effects#warming)Warming$()$(li)$(l:game_mechanics/mob_effects#freezing)Freezing$()$(li)$(l:game_mechanics/mob_effects#blazing)Blazing$()$(br2)Drinking $(l:cooking/drinks#spring_water)Spring Water$() will warm you up, and $(l:cooking/drinks#ice_slush)Ice Slush$() will cool you down."
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Clothing",
+			"anchor": "clothing",
+			"text": "Wearing $(l:craftsmanship/clothing)clothes$() is another important way to change your temperature. Clothes can either warm you up or cool you down (or neither), and may also have an $(thing)insulation$() effect that reduces the amount that other temperatures can influence you.$(br2)Some head clothes will also protect against $(l:game_mechanics/player_temperature#wetness)direct sunlight$()."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tfcambiental:house_tester",
+			"anchor": "house_tester",
+			"title": "Enclosed Spaces",
+			"text": "Creating an enclosed space such as a house will provide an insulating effect. Blocks such as doors, trapdoors, and window panes count as \"sealed\". If you are unsure, the $(item)House Tester$() will tell you!$(br2)This effect will only heat a house up to a maximum of 5°C, and does not work in larger structures."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tfg:heat_pump",
+			"anchor": "heat_pump",
+			"text": "Once you're able to $(thing)harness electricity$(), you can craft the $(item)Heat Pump$(), a multiblock that will warm up or cool down much larger sized buildings."
+		},
+		{
+			"type": "patchouli:relations",
+			"title": "Further Reading",
+			"anchor": "relations",
+			"entries": [
+				"tfg:the_world/climate",
+				"tfg:cooking/food_and_water",
+				"tfg:cooking/drinks",
+				"tfg:game_mechanics/hazards",
+				"tfg:game_mechanics/heating",
+				"tfg:game_mechanics/mob_effects",
+				"tfg:craftsmanship/clothing",
+				"tfg:craftsmanship/sewing_table"
+			]
+		}
+	],
+	"read_by_default": true
+}

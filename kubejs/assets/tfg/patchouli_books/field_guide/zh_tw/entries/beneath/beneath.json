@@ -1,0 +1,218 @@
+{
+	"name": "什麼是地底？",
+	"category": "tfg:beneath",
+	"icon": "minecraft:deepslate",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "intro",
+			"text": "$(thing)地底$()是位於主世界正下方、由極深洞穴構成的網路。$(br)這個維度的平衡設計以$(thing)冶金時代$()中後期為準。$(br2)這裡比地表更危險，因此我們建議至少要有金屬盾牌和良好的營養狀態，而盔甲、水壺、降溫衣物和遠程武器也會大有幫助。"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "differences",
+			"text": "它與一般的地獄體驗有幾點不同：$(li)進入的$(l:beneath/beneath#entering)方式不同$()$(li)水不會瞬間蒸發$(li)床可以正常使用$(li)在地底移動不會比在主世界快$(br2)作為回報，你可以在這裡找到$(thing)高嶺土$()、$(thing)石墨$()等資源，以及更豐富且更容易接觸的$(thing)礦脈$()和其他寶藏。"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "index",
+			"text": "$(li)$(bold)$(l:beneath/beneath#entering)進入$()與$(bold)$(l:beneath/beneath#exiting)離開$()$(li)$(bold)$(l:beneath/beneath#biomes)生態域$()$(li2)$(l:beneath/beneath#salt_caves)上層$()$(li2)$(l:beneath/beneath#tar_pools)中層$()$(li2)$(l:beneath/beneath#ash_forest)下層$()$(li)$(bold)$(l:beneath/beneath#geology)地質$()$(li2)$(l:beneath/beneath#more_rocks)更多岩石$()"
+		},
+		{
+			"type": "patchouli:image",
+			"title": "",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/portal.png",
+				"tfg:textures/gui/field_guide/nether/aether.png"
+			],
+			"border": true,
+			"text": "不是這樣！"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "entering",
+			"title": "進入地底",
+			"text": "要前往地底，只需在$(thing)Y=-58$()找到主世界的基岩。$(br2)要挖到基岩，你必須用$(l:game_mechanics/mining#explosives)炸藥$()或$(item)鋼以上的工具$()突破角岩層、找到含有較脆的$(thing)角斑岩$()的洞穴，或是排乾熔岩湖。$(br2)請注意，$(item)原始炸藥$()的威力不足以破壞角岩。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "你會出現在地底相同的 X 和 Z 座標，周圍會開出 3x2x3 的空間，必要時可以放置一些支撐。$(br2)如果腳下沒有地板，會提供一朵暫時的雲，同時給予短暫的$(thing)緩降$()和$(thing)火焰保護$()效果，以防發生意外。"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "exiting",
+			"title": "離開地底",
+			"text": "要返回時，只需以相同的方式抵達天花板的基岩。$(br2)建議$(thing)記下$()你進入的位置，這樣準備離開時就能回到主世界的同一個地方。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "你會在$(thing)Y=-54$()返回，位於任何可能存在的熔岩湖上方，同樣在 3x2x3 的空間內。玩家所在的中間兩格一定會被替換成空氣，所以你可能要避免在那裡放置梯子。"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "biomes",
+			"title": "生態域",
+			"text": "地底有一整套全新的生態域等你探索！$(br2)地底可以垂直分為三層，每一層都有自己的生態域。越往下越熱，也越危險！"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "分層",
+			"text": "$(bold)上層$()$(li)$(l:beneath/beneath#salt_caves)鹽窟$()$(li)$(l:beneath/beneath#muggy_bog)悶熱泥沼$()$(li)$(l:beneath/beneath#decaying_caverns)腐殖岩洞$()$(li)$(l:beneath/beneath#webbed_lair)織網地窟$()$(br)$(bold)中層$()$(li)$(l:beneath/beneath#tar_pools)焦油池$()$(li)$(l:beneath/beneath#geothermal_springs)地熱溫泉$()$(li)$(l:beneath/beneath#thorny_grove)荊棘林$()$(li)$(l:beneath/beneath#lush_hollow)繁生岩穴$()$(br)$(bold)下層$()$(li)$(l:beneath/beneath#ash_forest)灰燼森林$()$(li)$(l:beneath/beneath#lava_floes)熔岩流$()$(li)$(l:beneath/beneath#basalt_deltas)玄武岩三角洲$()"
+		},
+		{
+			"type": "patchouli:image",
+			"anchor": "salt_caves",
+			"title": "鹽窟",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/salt_caves.png"
+			],
+			"border": true,
+			"text": "就像溫暖的海風，這個生態域充滿了$(item)石鹽$()。很適合作為基地地點！"
+		},
+		{
+			"type": "patchouli:image",
+			"title": "悶熱泥沼",
+			"anchor": "muggy_bog",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/muggy_bog.png"
+			],
+			"border": true,
+			"text": "潮濕且像沼澤一樣。如果你能避開$(thing)鱷魚$()，這裡是安全的木材來源。"
+		},
+		{
+			"type": "patchouli:image",
+			"title": "腐殖岩洞",
+			"anchor": "decaying_caverns",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/decaying_caverns.png"
+			],
+			"border": true,
+			"text": "大自然的分解者正在這片充滿腐朽的潮濕地區努力工作。"
+		},
+		{
+			"type": "patchouli:image",
+			"title": "織網地窟",
+			"anchor": "webbed_lair",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/webbed_lair.png"
+			],
+			"border": true,
+			"text": "猜猜看什麼住在這裡？答對了也沒獎品！這裡是採集$(item)絲$()的好地方。"
+		},
+		{
+			"type": "patchouli:image",
+			"anchor": "tar_pools",
+			"title": "焦油池",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/tar_pools.png"
+			],
+			"border": true,
+			"text": "這片區域像小沙漠一樣滿是沙子，有著充滿石油的黏稠$(thing)焦油坑$()。"
+		},
+		{
+			"type": "patchouli:image",
+			"title": "地熱溫泉",
+			"anchor": "geothermal_springs",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/geothermal_springs.png"
+			],
+			"border": true,
+			"text": "這裡沒有硫磺立方怪，但這個熱氣蒸騰的生態域是尋找具有治療效果的$(thing)溫泉水$()的好地方。"
+		},
+		{
+			"type": "patchouli:image",
+			"title": "荊棘林",
+			"anchor": "thorny_grove",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/thorny_brambles.png"
+			],
+			"border": true,
+			"text": "一個難以穿越的生態域，踩到這裡的植物會對你產生影響。小心！"
+		},
+		{
+			"type": "patchouli:image",
+			"title": "繁生岩穴",
+			"anchor": "lush_hollow",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/lush_hollow.png"
+			],
+			"border": true,
+			"text": "炎熱又充滿綠意！茂密的蕨類掩蓋了底下的$(thing)高嶺土$()。"
+		},
+		{
+			"type": "patchouli:image",
+			"anchor": "ash_forest",
+			"title": "灰燼森林",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/ash_forest.png"
+			],
+			"border": true,
+			"text": "上層的綠意在高溫頻繁引發的火災之後，所剩下的殘跡。"
+		},
+		{
+			"type": "patchouli:image",
+			"title": "熔岩流",
+			"anchor": "lava_floes",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/lava_floes.png"
+			],
+			"border": true,
+			"text": "富含礦物的$(thing)輝石岩$()區域，被縱橫交錯的熔岩河流貫穿。"
+		},
+		{
+			"type": "patchouli:image",
+			"title": "玄武岩三角洲",
+			"anchor": "basalt_deltas",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/basalt_deltas.png"
+			],
+			"border": true,
+			"text": "大家最愛的地獄生態域回來了，而且一如既往地難以穿越。"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "geology",
+			"title": "地質",
+			"text": "和主世界一樣，地底也有自己的岩層。在最上層，你可能會找到千枚岩、片岩、片麻岩、大理岩、板岩、混合岩和石灰華。$(br2)在這些岩層之下，你可能會找到片岩、片麻岩、凝灰岩、混合岩、石灰華和閃長岩。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "再往下是輝長岩、花崗岩、凝灰岩、閃長岩或混合岩。$(br2)在地底的較低層，有一層只有混合岩的岩層，最底部則是輝石岩。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "minecraft:blackstone,minecraft:calcite,tfg:gilsonite,tfg:rock/aragonite,tfg:rock/glauberite,tfg:huge_quartz,beneath:crackrack,tfg:halite",
+			"title": "更多岩石",
+			"anchor": "more_rocks",
+			"text": "其他一些石頭可以在別的地方找到。$(br2)小型熔岩池周圍環繞著$(item)輝石岩$()，而$(item)方解石$()可以在溫泉水池中找到。$(br2)$(item)角斑岩$()以高大的巨柱形式遍布整個地底。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(l:beneath/beneath#geothermal_springs)地熱溫泉$()生態域有獨有的$(item)霰石$()和$(item)鈣芒硝$()，以及更多方解石。$(br2)這個生態域也有$(item)巨型石英$()晶體，用鎬破壞可取得品質不一的$(item)煙水晶$()寶石，用$(item)寶石鋸$()破壞則可取得透明的方塊本身。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(item)硬瀝青$()是一種非常深色的建築方塊，也是$(l:logistics/roads#asphalt)瀝青$()的原料，可以在$(l:beneath/beneath#tar_pools)焦油池$()生態域中大量找到，同時還有$(item)砂岩$()。$(br2)最後，$(item)石鹽$()可以在$(l:beneath/beneath#salt_caves)鹽窟$()生態域中大量找到，可以開採出石鹽和鉀石鹽礦石。"
+		},
+		{
+			"type": "patchouli:relations",
+			"title": "延伸閱讀",
+			"anchor": "relations",
+			"entries": [
+				"tfg:beneath/beneath_mechanics",
+				"tfg:beneath/beneath_crops",
+				"tfg:beneath/beneath_wild_fruits",
+				"tfg:beneath/beneath_tree_index",
+				"tfg:beneath/beneath_fauna"
+			]
+		}
+	],
+	"extra_recipe_mappings": {
+		"tfg:gilsonite": 22,
+		"tfg:rock/aragonite": 22,
+		"tfg:rock/glauberite": 22,
+		"tfg:huge_quartz": 22
+	},
+	"read_by_default": true,
+	"priority": true
+}

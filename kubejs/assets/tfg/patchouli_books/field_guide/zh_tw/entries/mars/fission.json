@@ -1,0 +1,19 @@
+{
+	"name": "核分裂發電",
+	"category": "tfg:mars",
+	"icon": "createdeco:decal_radioactive",
+	"read_by_default": true,
+	"pages": [
+		{
+			"type": "patchouli:relations",
+			"title": "延伸閱讀",
+			"anchor": "relations",
+			"entries": [
+				"tfg:mars/mars",
+				"tfg:logistics/railgun",
+				"tfg:game_mechanics/hazards",
+				"tfg:mars/mars_tree_index"
+			]
+		}
+	]
+}

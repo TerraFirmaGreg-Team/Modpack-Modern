@@ -1,0 +1,247 @@
+{
+    "name": "Gazowy palnik",
+    "category": "tfg:craftsmanship",
+    "icon": "tfg:gas_burner",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "anchor": "intro",
+            "title": "Gazowy palnik",
+            "text": "A $(thing)Gas Burner$() is a device which can burn fluids and gases like $(thing)Oil$(), $(l:cooking/alcohol)Alcohol$(), and $(thing)Petroluem Fuels$() to generate $(l:game_mechanics/heating)Heat$().$(br)Unlike other heat sources, the maximum Temperature of the burner can be set using $(l:craftsmanship/gas_burner#redstone)Redstone$(). This allows for more precise control over $(l:cooking/cooking_methods)Cooking$() and $(l:craftsmanship/crucible)Smelting$().$(br)The gas burner does not increase in temperature from a $(l:craftsmanship/charcoal_forge#bellows)Bellows'$() air supply."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfg:gas_burner[lit=true]"
+                }
+            },
+            "name": "Gazowy palnik",
+            "text": "$(thing)Palniki gazowe$() pokazują maksymalną temperaturę na wskaźniku na jednej ze ścianek.",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "redstone",
+            "title": "Kontrola redstone",
+            "text": "This device has many functions that can be controlled with $(bold)$(c)Redstone$():$(li)Supplying a signal strength of $(3)15$() will $(italic)ignite$() the burner.$(li)Removing all redstone signals will $(italic)extinguish$() the burner.$(li)The $(italic)maximum temperature$() of the burner can be set by supplying redstone with signals between $(3)3-14$().$(li)Comparator output will read the current $(italic)fuel level$()."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "functions",
+            "title": "Funkcje",
+            "text": "Gas Burners can be supplied automatically using $(thing)Fluid Pipes$(), or manually with $(item)$(k:key.use)$() while holding a container of fluid.$(br)Inside their interface will show:$(li)The heat level, with a bar indicating maximum set temperature.$(li)A flame progress bar which displays the time left, and fuel burn temp when hovered over.$(li)Fuel tank with bucket in/out slots."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Burners have many useful applications. You can use them for any device which can be supplied with heat from the bottom, such as $(l:craftsmanship/crucible)Crucibles$(), $(l:cooking/cooking_methods#grill)Grills$(), $(l:cooking/cooking_methods#pot)Pots$(), and $(l:cooking/cooking_methods#top_oven)Ovens$(), as well as any Create mechanical machines that need a heat source."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "Y"
+                    ],
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfg:gas_burner[lit=true]",
+                    "Y": "tfc:crucible"
+                }
+            },
+            "name": "",
+            "text": "$(thing)Palnik gazowy$() z tygielem",
+            "enable_visualize": false
+        },
+        {
+            "type": "tfg:multimultiblock",
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "Y"
+                        ],
+                        [
+                            "X"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfg:gas_burner[lit=true]",
+                        "Y": "firmalife:stovetop_grill"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "Y"
+                        ],
+                        [
+                            "X"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfg:gas_burner[lit=true]",
+                        "Y": "firmalife:stovetop_pot"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "Y"
+                        ],
+                        [
+                            "X"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfg:gas_burner[lit=true]",
+                        "Y": "firmalife:cured_stone_oven_top"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "Y"
+                        ],
+                        [
+                            "X"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfg:gas_burner[lit=true]",
+                        "Y": "firmalife:vat"
+                    }
+                }
+            ],
+            "name": "",
+            "text": "$(thing)Palnik gazowy$() z wyposażeniem do gotowania.",
+            "enable_visualize": false
+        },
+        {
+            "type": "tfg:multimultiblock",
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "Z"
+                        ],
+                        [
+                            " "
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "X"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfg:gas_burner[lit=true]",
+                        "Y": "create:basin",
+                        "Z": "greate:steel_mechanical_press"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "Z"
+                        ],
+                        [
+                            " "
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "X"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfg:gas_burner[lit=true]",
+                        "Y": "create:basin",
+                        "Z": "greate:steel_mechanical_mixer"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "Z"
+                        ],
+                        [
+                            " "
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "X"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfg:gas_burner[lit=true]",
+                        "Y": "create:basin",
+                        "Z": "vintageimprovements:vacuum_chamber"
+                    }
+                }
+            ],
+            "name": "",
+            "text": "$(thing)Palnik gazowy$() z mechanicznymi maszynami.",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Czytaj dalej",
+            "anchor": "relations",
+            "entries": [
+                "tfg:craftsmanship/pottery",
+                "tfg:craftsmanship/metallurgy",
+                "tfg:craftsmanship/charcoal_forge",
+                "tfg:craftsmanship/crucible",
+                "tfg:cooking/alcohol",
+                "tfg:cooking/cooking_methods",
+                "tfg:logistics/redstone_devices",
+                "tfg:game_mechanics/heating"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 11,
+    "extra_recipe_mappings": {
+        "tfg:gas_burner": 2
+    }
+}

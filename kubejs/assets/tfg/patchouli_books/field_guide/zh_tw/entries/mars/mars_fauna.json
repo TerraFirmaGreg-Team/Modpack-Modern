@@ -1,0 +1,264 @@
+{
+	"name": "火星動物",
+	"category": "tfg:mars",
+	"icon": "minecraft:textures/item/sniffer_egg.png",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"title": "火星動物",
+			"text": "$(item)火星$()是環境最接近地球的行星，有各式各樣的動物可以$(l:agriculture/animal_husbandry)互動$()，也有$(l:mars/mars_crops)作物$()可以餵飽牠們(和你自己)……除了那片幾乎什麼都無法生存的廣大沙漠之外。$(br2)火星是一顆$(thing)寒冷$()的行星，也就是說來自炎熱或溫帶行星的動物通常無法在此生存。"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "index",
+			"title": "目錄",
+			"text": "$(li)$(bold)$(l:mars/mars_fauna#sandworm)沙蟲$()$(li)$(bold)可馴化$()$(li2)$(l:mars/mars_fauna#sniffer)嗅探獸$()$(li2)$(l:mars/mars_fauna#wraptor)扭曲雉$()$(li2)$(l:mars/mars_fauna#glacian_sheep)霜原羊$()$(li2)$(l:mars/mars_fauna#snatcher)搶奪者$()$(li2)$(l:mars/mars_fauna#charger)衝鋒獸$()$(li2)$(l:mars/mars_fauna#soarer)翱翔獸$()$(li2)$(l:mars/mars_fauna#pentetic_jellie)五酸果凍怪$()$(br2)$(o)(下頁續……)$()"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(li)$(bold)野生$()$(li2)$(l:mars/mars_fauna#eater)吞噬獸$()$(li2)$(l:mars/mars_fauna#cruncher)巨嘴獸$()$(li2)$(l:mars/mars_fauna#glider)滑翔鳥$()$(li2)$(l:mars/mars_fauna#crusher)碾壓獸$()$(li2)$(l:mars/mars_fauna#springling)簧頸獸$()$(li2)$(l:mars/mars_fauna#goober)呆呆獸$()$(li2)$(l:mars/mars_fauna#walker)巨步獸$()$(li2)$(l:mars/mars_fauna#raider)掠奪獸$()$(li2)$(l:mars/mars_fauna#toxlacanth)毒腔棘魚$()$(li2)$(l:mars/mars_fauna#stackatick)疊殼蟲$()$(li)$(bold)怪物$()$(li2)$(l:mars/mars_fauna#quake)震盪怪$()$(li2)$(l:mars/mars_fauna#endermen)終界使者$()$(li2)$(l:mars/mars_fauna#skeletal_raptor)骷髏迅猛龍$()"
+		},
+		{
+			"type": "patchouli:image",
+			"images": [
+				"tfg:textures/gui/field_guide/sandworm.png"
+			],
+			"border": true,
+			"anchor": "sandworm",
+			"title": "沙蟲",
+			"text": "$(thing)沙蟲$()會被玩家在地面上的移動驚動。牠們就是沙漠中幾乎沒有其他生物的原因。$(br)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "夏胡露",
+			"item": "sandworm_mod:sandworm_tooth,sandworm_mod:thumper",
+			"text": "$(thing)沙蟲$()比較像是環境危害，而不是要擊殺的頭目，所以你最好的生存方法就是逃跑！如果你能用$(thing)爆炸傷害$()擊中牠的頭部夠多次，牠就會暫時放過你……一陣子。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "幸好，沙蟲只能傷害實體，不會破壞建築，而且只會被$(thing)玩家在地面上的移動$()吸引，所以任何讓自己離開地面的方法都不會激怒牠。這裡的大氣太稀薄，無法使用飛機和滑翔翼，但還有$(l:mars/mars_fauna#soarer)其他方法$()……"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "嗅探獸",
+			"text": "$(thing)嗅探獸$()是可馴化的動物，出沒在 -30 到 -102°C 之間。牠們需要$(item)大型巢$()才能下蛋，可以剪毛取得$(item)嗅探獸毛簇$()。牠們的蛋可以煮來吃，也可以提取出$(item)鮮奶油$()。牠們吃任何火星作物。",
+			"anchor": "sniffer"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfg:sniffer{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
+			"scale": 0.45,
+			"name": " ",
+			"text": "一隻嗅探獸。"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "扭曲雉",
+			"text": "$(thing)扭曲雉$()是可馴化的動物，出沒在 -15 到 -100°C 之間。牠們需要$(item)大型巢$()才能下蛋，可以剪毛取得$(item)扭曲雉羽毛$()。牠們的蛋可以煮來吃，也可以提取出$(item)扭曲雉糖$()。牠們吃任何火星作物。",
+			"anchor": "wraptor"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfg:wraptor{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
+			"scale": 0.8,
+			"name": " ",
+			"text": "一隻扭曲雉。"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "霜原羊",
+			"text": "$(thing)霜原羊$()偏好 -108°C 以下的極寒環境，是可馴化的動物。可以剪毛取得$(item)霜原羊毛$()，這是一種絕佳的隔熱材料。牠們吃任何火星作物。$(br2)需要長途運送牠們嗎？可以考慮使用$(item)AE2 空間儲存元件$()把牠們裝進口袋帶著走。",
+			"anchor": "glacian_sheep"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfg:glacian_ram{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
+			"scale": 0.7,
+			"name": " ",
+			"text": "一隻霜原公羊/母羊。"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "搶奪者",
+			"text": "$(thing)搶奪者$()是喜歡偷你東西的被動動物！攻擊牠們可以取回你的物品，或餵牠們$(item)生魚$()來馴服牠們。$(br2)馴服後，你可以把牠們背在背上，並為牠們裝備一個木箱。按下$(k:key.wan_ancient_beasts.special_ability)$()把牠們丟出去，牠們就會偷走附近箱子裡的東西並帶回來給你。",
+			"anchor": "snatcher"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "wan_ancient_beasts:snatcher{NoAI:1b}",
+			"scale": 0.35,
+			"name": " ",
+			"text": "一隻搶奪者。"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "衝鋒獸",
+			"anchor": "charger",
+			"text": "$(thing)衝鋒獸$()是半被動的動物。你可以用$(item)任何火星作物$()馴服牠們，將牠們當作陸上戰鬥坐騎。$(br2)按下$(k:key.wan_ancient_beasts.special_ability)$()進行頭槌攻擊，或按住$(item)空白鍵$()進行衝鋒攻擊。$(br2)也可以為牠們裝備$(item)可染色的盔甲$()。"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "wan_ancient_beasts:charger{NoAI:1b}",
+			"scale": 0.45,
+			"name": " ",
+			"text": "衝鋒獸與$(thing)掠奪獸$()是天生的宿敵。牠們一見面就會互相攻擊。"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "翱翔獸",
+			"anchor": "soarer",
+			"text": "$(thing)翱翔獸$()是出沒在 -106°C 以上的被動動物。你可以用$(item)生魚$()馴服牠們，將牠們當作飛行坐騎。$(br2)不過牠們無法永遠飛行，左上角的翅膀圖示代表剩餘的飛行能力，牠們偶爾需要降落休息。(你可以餵牠們更多生魚來加快恢復速度。)$(br2)牠們是長途旅行的絕佳選擇，而且也不會激怒沙蟲！"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "wan_ancient_beasts:soarer{NoAI:1b}",
+			"scale": 0.4,
+			"offset": 1,
+			"name": " "
+		},
+		{
+			"type": "patchouli:text",
+			"title": "破浪獸",
+			"anchor": "surfer",
+			"text": "$(thing)破浪獸$()是半水生的被動動物。趁牠們躺在岸邊時悄悄靠近，餵牠們$(item)生魚$()，就能馴服牠們。馴服後可以為牠們裝上鞍，在水下快速游動。$(br2)這在火星上聽起來好像沒什麼用，但別忘了你可以用 AE2 的空間儲存磁碟搬運實體，而且未來還會有某顆被海洋覆蓋的冰衛星……"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "wan_ancient_beasts:surfer{NoAI:1b}",
+			"scale": 0.4,
+			"offset": 0.2,
+			"name": " ",
+			"text": "破浪獸有各種不同的顏色。"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "jellies:pentetic{NoAI:1b}",
+			"scale": 0.6,
+			"name": "五酸果凍怪",
+			"anchor": "pentetic_jellie",
+			"text": "$(thing)五酸$()$(l:agriculture/jellies)果凍怪$()生成於火星的$(item)深層沙漠$()和$(item)火星山脈$()生態域。牠們會被動吸收玩家身上的輻射。"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "wan_ancient_beasts:eater{NoAI:1b}",
+			"scale": 0.5,
+			"name": "吞噬獸",
+			"anchor": "eater",
+			"text": "$(thing)吞噬獸$()是頂級掠食者，是出沒在 -109°C 以上的敵對動物。如果你能成功擊倒一隻，就可以吃掉牠。"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "species:cruncher{NoAI:1b}",
+			"scale": 0.7,
+			"name": "巨嘴獸",
+			"anchor": "cruncher",
+			"text": "$(thing)巨嘴獸$()是具有地盤意識的$(item)小頭目$()掠食者。餵牠們吃肉可以阻止牠們再生。牠們也可以被吃掉。"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "wan_ancient_beasts:glider{NoAI:1b}",
+			"scale": 0.4,
+			"offset": 0.2,
+			"name": "滑翔鳥",
+			"anchor": "glider",
+			"text": "儘管名字如此，$(thing)滑翔鳥$()卻無法被馴服或騎乘。牠們是被動的，生活在 -105°C 以上的地區。牠們喜歡音樂，也可以被吃掉。"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "wan_ancient_beasts:crusher{NoAI:1b}",
+			"scale": 0.5,
+			"offset": 0.5,
+			"name": "碾壓獸",
+			"anchor": "crusher",
+			"text": "$(thing)碾壓獸$()是半敵對的動物，成群出沒在 -100°C 以上的地區。宰殺牠們可以取得肉和堅硬的尖刺。"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "species:springling{NoAI:1b}",
+			"scale": 0.9,
+			"name": "簧頸獸",
+			"anchor": "springling",
+			"text": "$(thing)簧頸獸$()是出沒在 -108°C 以上的野生動物。餵牠們$(item)樹苗$()就能騎乘牠們，並讓牠們伸長極長的脖子。牠們也可以被吃掉。"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "species:goober{NoAI:1b}",
+			"scale": 0.6,
+			"name": "呆呆獸",
+			"anchor": "goober",
+			"text": "$(thing)呆呆獸$()是出沒在 -109°C 以上的慵懶野生動物。牠們是被動的，可以被吃掉。"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "wan_ancient_beasts:walker{NoAI:1b}",
+			"scale": 0.6,
+			"offset": 2.2,
+			"name": "巨步獸",
+			"anchor": "walker",
+			"text": "巨大的$(thing)巨步獸$()棲息在 -97°C 以上的地區。牠們是被動的，可以被吃掉。"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "wan_ancient_beasts:raider{NoAI:1b}",
+			"scale": 0.5,
+			"name": "掠奪獸",
+			"anchor": "raider",
+			"text": "$(thing)掠奪獸$()是出沒在 -109°C 以上的敵對動物。牠們與$(thing)衝鋒獸$()是天生的宿敵。餵牠們$(item)生肉$()可以讓牠們變成中立。"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "wan_ancient_beasts:toxlacanth{NoAI:1b}",
+			"scale": 0.35,
+			"name": "毒腔棘魚",
+			"anchor": "toxlacanth",
+			"text": "$(thing)毒腔棘魚$()是水生的獵物動物。建議從遠處擊殺，並在食用前將肉煮熟。"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "species:stackatick{NoAI:1b}",
+			"scale": 0.4,
+			"name": "疊殼蟲",
+			"anchor": "stackatick",
+			"text": "$(thing)疊殼蟲$()是少數能在火星沙漠中生存的動物之一，是被動的獵物動物。牠們也可以被吃掉。"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "species:quake{NoAI:1b}",
+			"scale": 0.8,
+			"name": "震盪怪",
+			"anchor": "quake",
+			"text": "$(thing)震盪怪$()能吸收大量傷害，然後一口氣爆發釋放出來。等牠們在充能時再攻擊！"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "endermanoverhaul:badlands_enderman{NoAI:1b}",
+			"scale": 0.8,
+			"name": "終界使者",
+			"anchor": "endermen",
+			"text": "火星有自己的一系列終界使者物種。除了在地下發現的那一種之外，其他都是被動的。"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "ad_astra:martian_raptor{NoAI:1b}",
+			"scale": 0.8,
+			"name": "骷髏迅猛龍",
+			"anchor": "skeletal_raptor",
+			"text": "一種不死的恐龍。可以在地下找到牠們。"
+		},
+		{
+			"type": "patchouli:relations",
+			"title": "延伸閱讀",
+			"anchor": "relations",
+			"entries": [
+				"tfg:mars/mars",
+				"tfg:mars/mars_equipment",
+				"tfg:the_world/wild_animals",
+				"tfg:agriculture/animal_husbandry",
+				"tfg:agriculture/jellies",
+				"tfg:the_moon/moon_fauna",
+				"tfg:beneath/beneath_fauna"
+			]
+		}
+	],
+	"read_by_default": true
+}

@@ -1,0 +1,28 @@
+{
+  "parent": "block/block",
+  "textures": {
+    "overlay": "tfg:block/peat_grass_top",
+    "particle": "tfc:block/grass_top"
+  },
+  "elements": [
+    {
+      "from": [
+        0,
+        0,
+        0
+      ],
+      "to": [
+        16,
+        16,
+        0
+      ],
+      "faces": {
+        "north": {
+          "texture": "#overlay",
+          "cullface": "north",
+          "tintindex": 1
+        }
+      }
+    }
+  ]
+}

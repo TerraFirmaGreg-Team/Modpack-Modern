@@ -1,0 +1,65 @@
+{
+    "name": "製作果醬",
+    "category": "tfg:cooking",
+    "icon": "tfc:textures/item/jar/cloudberry.png",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "anchor": "index",
+            "text": "$(li)$(bold)$(l:cooking/jam#jarring_station)裝罐站$()$(li)$(bold)$(l:cooking/jam#shelves)罐子架$()$(li)$(bold)$(l:cooking/jam#jarbnets)罐櫃$()"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tag:tfg:foods/all_jams",
+            "anchor": "jam",
+            "title": "果醬裝罐",
+            "text": "$(thing)罐子$()用來製作果醬，讓水果保存得更久。罐子一開始是透過$(thing)玻璃加工$()取得的$(thing)空罐$()，再加上$(thing)罐蓋$()做成$(thing)附蓋的空罐$()。$(br)在陶鍋中將$(thing)糖$()和 2-4 個$(thing)水果$()一起煮沸。配方完成後，手持附蓋的空罐按下$(item)$(k:key.use)$()，即可做成$(thing)密封的果醬罐$()。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "firmalife:vat,firmalife:jarring_station",
+            "anchor": "jarring_station",
+            "title": "果醬自動化",
+            "text": "果醬也可以用$(l:cooking/cooking_methods#vat)大鍋$()搭配$(l:cooking/cooking_methods#jarring_station)裝罐站$()大量生產。用漏斗將材料送入大鍋，用紅石將其封閉，然後從裝罐站取出產物。"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": "解封",
+            "recipe": "tfc:crafting/unseal_plum_jar",
+            "text": "要在配方中使用罐子，必須先在合成台中將它解封。罐蓋無法取回。解封的罐子只能保存幾天！"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tag:tfc:jar_shelves,tag:beneath:jar_shelves",
+            "anchor": "shelves",
+            "title": "罐子架",
+            "text": "$(thing)罐子架$()可以安裝在實心牆面上。可以直接放置，或點擊已放置的罐子方塊來放置。罐子架的頂部算是實心表面，可以放置物品、更多罐子或其他方塊。$(br)按下$(item)$(k:key.use)$()可以將罐子放在任何實心表面上。一格方塊可以放四個任意種類的罐子。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tag:firmalife:jarbnets",
+            "anchor": "jarbnet",
+            "title": "罐櫃",
+            "text": "罐櫃是用來存放$(item)罐子$()、$(item)蠟燭$()和$(item)陶壺$()的裝飾性儲物方塊。空手並按住$(item)$(k:key.sneak)$()點擊即可開關。如果裡面有蠟燭，可以點燃以發出少量光線。"
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "延伸閱讀",
+            "anchor": "relations",
+            "entries": [
+                "tfg:cooking/food_and_water",
+                "tfg:cooking/cooking_methods",
+                "tfg:cooking/decay",
+                "tfg:cooking/sandwiches"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 8,
+    "extra_recipe_mappings": {
+        "tag:tfg:foods/all_jams": 1,
+        "tag:tfc:jar_shelves": 5,
+        "tag:beneath:jar_shelves": 5,
+        "tag:firmalife:jarbnets": 6
+    }
+}

@@ -1,0 +1,72 @@
+{
+    "name": "Рибальство",
+    "category": "tfg:agriculture",
+    "icon": "tfc:metal/fishing_rod/copper",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "anchor": "intro",
+            "text": "$(thing)Риболовля$() - це спосіб полювання на рибу, яка плаває в річках, озерах і океанах. Вудки повинні бути з наживкою на гачку. Риба намагається з'їсти наживку, і іноді їй це вдається. Витягнути рибу - вимагає праці, але з гачками вищого рівня це стає легше."
+        },
+        {
+            "type": "tfg:anvil_recipe",
+            "recipe": "tfc:anvil/bismuth_bronze_fish_hook",
+            "text": "Спочатку тобі потрібно викувати рибальський гачок на $(l:craftsmanship/anvils)ковадлі$()."
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "tfc:crafting/metal/fishing_rod/bismuth_bronze",
+            "title": "Вудка",
+            "text": "Вудка споряджена рибальським гачком."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Вудка не дуже корисна без наживки. $(t:#tfc:small_fishing_bait)$(6)Наживку$() можна додати до вудки на верстаку. Щоб ловити звичайну рибу, тобі потрібні $(thing)насіння$() або $(thing)молюски$(). Щоб ловити $(t:#tfc:large_fishing_bait)$(6)велику рибу$(), як-от $(thing)дельфінів$() та $(thing)косаток$(), тобі знадобляться $(item)тріска$(), $(item)лосось$(), $(item)тропічна риба$() або $(item)синьозябровий окунь$()."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Щоб закинути поплавець, натисни $(item)$(k:key.use)$(). Дочекайся, поки риба помітить гачок і клюне. Після цього натисни $(item)$(k:key.use)$(), щоб витягнути її. Під час цього шкала над панеллю швидкого доступу заповнюватиметься. Якщо тягнути надто швидко, риба втече разом із наживкою. Під час кожної риболовлі є шанс, що риба з’їсть наживку. Щоб упіймати рибу, витягни її на сушу та вбий інструментом або спіймай за допомогою $(l:agriculture/fishing#fishing_net)рибальської сітки$(). Щоб було зручніше, ти можеш тримати вудку у другій руці."
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/fishing.png"
+            ],
+            "text": "Покажчик риболовлі замінює панель досвіду",
+            "border": true
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "fishing_net",
+            "title": "Рибальські сітки",
+            "item": {
+                "tag": "forge:tools/fishing_nets"
+            },
+            "text": "Набридло полювати на рибу зі списом? Або втрачати слизький улов під час риболовлі? Створи $(thing)рибальську сітку$(), щоб виловлювати свою вечерю.$(br)Щоб скористатися рибальською сіткою, натисни $(item)$(k:key.use)$() по рибі, щоб спіймати її та помістити до свого інвентарю. Рибальські сітки різних рівнів працюють однаково, але мають різну міцність."
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": "Дерев'яна рибальська сітка",
+            "recipe": "tfc:kjs/damage/shaped/fishing_net/wood",
+            "text": "Базова $(item)дерев’яна рибальська сітка$()."
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Докладніше",
+            "anchor": "relations",
+            "entries": [
+                "tfg:cooking/cooking_methods",
+                "tfg:cooking/decay",
+                "tfg:cooking/food_and_water",
+                "tfg:the_world/wild_animals",
+                "tfg:craftsmanship/anvils"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 7,
+    "extra_recipe_mappings": {
+        "tag:forge:fishing_rods": 0,
+        "tag:forge:tools/fishing_nets": 7
+    }
+}

@@ -1,0 +1,273 @@
+{
+    "name": "Сиродутний горн",
+    "category": "tfg:craftsmanship",
+    "icon": "tfc:bloomery",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(thing)Горн$() — це пристрій, який використовується для виплавки $(thing)залізної руди$() у $(thing)залізні криці$(), які можна обробити на $(thing)коване залізо$(). Поширеними залізними рудами є $(item)гематит$(), $(item)лімоніт$() та $(item)магнетит$(). Ці руди плавляться в $(thing)литий чавун$(), а не в $(thing)коване залізо$(). Усі предмети, що містять залізо, плавляться в литий чавун. Щоб перетворити його на придатне для використання залізо, потрібен горн. У горні можна використовувати будь-який залізний предмет, зокрема залізні інструменти та злитки литого чавуну!"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "tfc:crafting/bloomery",
+            "text": "Горн виготовляється з 8 $(thing)подвійних бронзових пластин$(), що загалом становить 32 бронзові злитки.$(br)Для горна також знадобиться $(t:#tfc:bloomery_insulation)$(6)22 кам’яні блоки$(), наприклад кам’яна цегла."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        " A ",
+                        "A A",
+                        " A "
+                    ],
+                    [
+                        " A ",
+                        "A A",
+                        " A "
+                    ],
+                    [
+                        " A ",
+                        "A A",
+                        " A "
+                    ],
+                    [
+                        "AA ",
+                        "B0A",
+                        "AA "
+                    ],
+                    [
+                        " A ",
+                        "AAA",
+                        " A "
+                    ]
+                ],
+                "mapping": {
+                    "B": "tfc:bloomery[facing=north]",
+                    "A": "tfc:rock/smooth/dacite"
+                }
+            },
+            "name": "Структура горна",
+            "text": "Повнорозмірний горн. Дверці горна відкривається та закривається за допомогою $(item)$(k:key.use)$.",
+            "enable_visualize": true
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Горн може містити максимум 48 $(thing)вхідних предметів$(), по 16 предметів на кожен шар димаря: 8 одиниць деревного вугілля та 8 залізовмісних предметів.$(br)Щоб додати предмети до горна, піднімися нагору та кидай їх усередину за допомогою $(item)$(k:key.drop)$. Має утворитися вежа із сірої руди.$(br2)Як паливо для горна можна використовувати лише $(item)деревне вугілля$()."
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/bloomery_hole.png"
+            ],
+            "text": "Сиродутне горно споживає $(thing)1 деревне вугілля$() та $(thing)144 мВ чавуну$(), щоб виробити одну $(thing)крицю$().",
+            "border": true
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Більшість залізного пилу містить 129mB заліза, тому, якщо ти не використовуєш чисті злитки литого чавуну, ми рекомендуємо $(item)25 металевих порошків руди$() та $(item)22 одиниці деревного вугілля$() для повнорозмірної горна. Це призведе до втрати 57mB заліза.$(br)Після заповнення горна комбінацією $(thing)палива$() та $(thing)руди$() підпали дверцята горна та зачекай $(t:12.5 min)$(6)15 внутрішньоігрових годин$(), поки горн виплавлятиме руду. Коли горн вимкнеться, після неї залишиться блок $(thing)криці$(). Він містить гарячі $(thing)необроблені залізні криці$(), які можна отримати, багаторазово видобуваючи блок $(thing)криці$() кайлом."
+        },
+        {
+            "type": "tfg:table",
+            "anchor": "ratio_table",
+            "strings": [
+                {
+                    "text": "Тип заліза",
+                    "bold": true
+                },
+                {
+                    "text": "Залізо",
+                    "bold": true
+                },
+                {
+                    "text": "Паливо",
+                    "bold": true
+                },
+                {
+                    "text": "Слоти",
+                    "bold": true
+                },
+                {
+                    "text": "Криця",
+                    "bold": true
+                },
+                {
+                    "text": "Відходи",
+                    "bold": true
+                },
+                {
+                    "text": "Злитки литого чавуну"
+                },
+                {
+                    "text": "24"
+                },
+                {
+                    "text": "24"
+                },
+                {
+                    "text": "48/48"
+                },
+                {
+                    "text": "24"
+                },
+                {
+                    "text": "0mB"
+                },
+                {
+                    "text": "129mB залізного порошку"
+                },
+                {
+                    "text": "25"
+                },
+                {
+                    "text": "22"
+                },
+                {
+                    "text": "47/48"
+                },
+                {
+                    "text": "22"
+                },
+                {
+                    "text": "57mB"
+                },
+                {
+                    "text": "129mB залізного порошку"
+                },
+                {
+                    "text": "19"
+                },
+                {
+                    "text": "17"
+                },
+                {
+                    "text": "36/48"
+                },
+                {
+                    "text": "17"
+                },
+                {
+                    "text": "3mB"
+                }
+            ],
+            "text": "Пам’ятай, що через невелику кількість відходів заліза не варто перейматися!",
+            "title": "Співвідношення для криці",
+            "legend": [],
+            "columns": 5,
+            "first_column_width": 70,
+            "column_width": 32,
+            "row_height": 20,
+            "left_buffer": 2,
+            "top_buffer": 12,
+            "draw_background": false
+        },
+        {
+            "type": "patchouli:empty",
+            "draw_filler": false
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfc:bloom[layers=8]"
+                }
+            },
+            "name": "Блок Криці",
+            "text": "Велика $(thing)криця$().",
+            "enable_visualize": false
+        },
+        {
+            "type": "tfg:anvil_recipe",
+            "recipe": "tfc:anvil/refined_iron_bloom",
+            "text": "$(thing)Необроблену залізну крицю$() потрібно обробити на $(l:craftsmanship/anvils)ковадлі$(), щоб отримати $(thing)очищену залізну крицю$(). Потім її потрібно ще раз обробити, щоб отримати $(thing)злитки кованого заліза$().$(br)Для автоматизації етапів очищення рекомендується використовувати $(l:craftsmanship/anvils#helve_hammer)гойдальний молот$()."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "tips",
+            "text": "$(li)Якщо в горні буде більше предметів, ніж вона може вмістити, вона спробує виплюнути їх спереду.$(li)Щоб забрати предмети з незапаленого горна, зламай дверці горна.$(li)Криця плавиться лише в литий чавун, а не в коване залізо. Її потрібно обробити!",
+            "title": "Поради щодо горна"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "steam_bloomery",
+            "title": "Паровий сиродутний горн",
+            "item": "tfg:steam_bloomery",
+            "text": "З появою можливості створювати $(item)чорну сталь$() стає доступно $(thing)паровий горн$(). Ця конструкція здатна автоматично виробляти крицю, а також працює швидше й ефективніше за традиційний горн завдяки використанню пари високого тиску."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        " A ",
+                        "A A",
+                        " A "
+                    ],
+                    [
+                        " A ",
+                        "O A",
+                        " A "
+                    ],
+                    [
+                        " A ",
+                        "I A",
+                        " A "
+                    ],
+                    [
+                        "AA ",
+                        "B0A",
+                        "AA "
+                    ],
+                    [
+                        " F ",
+                        "SAF",
+                        " F "
+                    ]
+                ],
+                "mapping": {
+                    "B": "tfg:steam_bloomery[facing=north]",
+                    "A": "tfc:rock/smooth/dacite",
+                    "F": "gtceu:bronze_firebox_casing",
+                    "S": "gtceu:steam_input_hatch[facing=north]",
+                    "I": "gtceu:steam_input_bus[facing=north]",
+                    "O": "gtceu:steam_output_bus[facing=north]"
+                }
+            },
+            "name": "Структура",
+            "text": "Для парового горна потрібні шини для вводу та виводу предметів, парова ввідний люк та три бронзові топки.",
+            "enable_visualize": true
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Докладніше",
+            "anchor": "relations",
+            "entries": [
+                "tfg:craftsmanship/pottery",
+                "tfg:craftsmanship/metallurgy",
+                "tfg:craftsmanship/charcoal_forge",
+                "tfg:craftsmanship/crucible",
+                "tfg:craftsmanship/charcoal_pit",
+                "tfg:craftsmanship/blast_furnace",
+                "tfg:craftsmanship/anvils",
+                "tfg:game_mechanics/heating"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 9,
+    "extra_recipe_mappings": {
+        "tfc:bloom": 10,
+        "tfc:raw_iron_bloom": 10,
+        "tfc:refined_iron_bloom": 10,
+        "tfc:bloomery": 1,
+        "tfg:steam_bloomery": 12
+    }
+}

@@ -1,0 +1,512 @@
+{
+    "name": "腐壞與保存",
+    "category": "tfg:cooking",
+    "icon": "tfclunchbox:lunchbox",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "anchor": "index",
+            "text": "$(li)$(bold)$(l:cooking/decay#decay)簡介$()$(li2)$(l:cooking/decay#calculation)計算腐壞$()$(li2)$(l:cooking/decay#table)修正值表$()$(li)$(bold)$(l:cooking/decay#vessels)小缸$()$(li)$(bold)$(l:cooking/decay#cooking)烹煮$()$(li)$(bold)$(l:cooking/decay#smoking)煙燻$()$(li)$(bold)$(l:cooking/decay#salting)鹽醃$()$(li)$(bold)$(l:cooking/decay#vinegar)醋漬$()$(li)$(bold)$(l:cooking/decay#drying)乾燥$()"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)$(bold)$(l:cooking/decay#oven_baked)烤箱烘烤$()$(li)$(bold)$(l:cooking/decay#cellar)地窖$()$(li2)$(l:cooking/decay#shelf)地窖儲藏$()$(li)$(bold)$(l:cooking/decay#lunch_box)便當盒$()$(li)$(bold)$(l:cooking/decay#refrigerator)冰箱$()$(li)$(bold)$(l:cooking/decay#freeze_dry)冷凍乾燥$()$(li)$(bold)$(l:cooking/decay#pest)防治害蟲$()$(li)$(bold)$(l:cooking/decay#cutting)切除腐壞部分$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "decay",
+            "title": "腐壞",
+            "text": "在 TerraFirmaCraft 中，沒有任何食物能永久保存！食物會隨著時間$(thing)過期$()並腐爛。腐爛的食物無法恢復飢餓值，還可能給你$(thing)飢餓$()或$(thing)中毒$()等負面效果，而且不能用來做餐點！$(br2)幸好，有許多方法可以透過$(thing)保存$()來延長食物的期限。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "將游標移到食物上時，你會看到一個提示框，顯示食物還有多久會腐爛。它可能看起來像這樣：$(br2)$(bold)$(2)過期時間：1000 年 7 月 5 日 5:30(5 天後)$()$(br2)透過各種保存機制，可以延後這個日期，讓你在食物腐爛前有更多時間。大多數保存特性甚至可以疊加。"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "calculation",
+            "title": "計算腐壞",
+            "text": "當食物物品在世界中產生時，系統內部會為它標記一個建立時間戳記。$(thing)TFC$()會參照該時間戳記和食物本身的腐壞修正值來計算腐壞速度。任何保存特性都會在此基礎上將建立日期往回推，讓物品保存得更久。$(br)腐壞修正值介於 0 到 ∞。為 0 時食物可以永久保存，為 ∞ 時食物會立即腐壞。因此，修正值越低越好。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "要計算套用保存特性後的新腐壞時間，可以使用以下公式：$(2)$(o)新腐壞天數 = 腐壞天數 / 保存修正值$()，結果無條件進位。疊加保存特性時以乘法計算：$(2)$(o)NSD = SD / (PM1 * PM2 * ...)$()，也就是說疊加特性會讓腐壞時間呈指數增長。下一頁有基本保存修正值的表格，各項特性也會在各自的章節中說明。"
+        },
+        {
+            "type": "tfg:table",
+            "anchor": "table",
+            "strings": [
+                {
+                    "text": "特性",
+                    "bold": true
+                },
+                {
+                    "text": "修正值",
+                    "bold": true
+                },
+                {
+                    "text": "烤箱烘烤"
+                },
+                {
+                    "text": "0.900"
+                },
+                {
+                    "text": "燒烤"
+                },
+                {
+                    "text": "0.800"
+                },
+                {
+                    "text": "煙燻"
+                },
+                {
+                    "text": "0.500"
+                },
+                {
+                    "text": "鹽醃"
+                },
+                {
+                    "text": "0.500"
+                },
+                {
+                    "text": "醃漬"
+                },
+                {
+                    "text": "0.500"
+                },
+                {
+                    "text": "保存"
+                },
+                {
+                    "text": "0.500"
+                },
+                {
+                    "text": "野生"
+                },
+                {
+                    "text": "0.500"
+                },
+                {
+                    "text": "乾燥"
+                },
+                {
+                    "text": "0.500"
+                },
+                {
+                    "text": "冷藏"
+                },
+                {
+                    "text": "0.300"
+                },
+                {
+                    "text": "上架"
+                },
+                {
+                    "text": "0.400 - 0.350 - 0.250"
+                },
+                {
+                    "text": "吊掛"
+                },
+                {
+                    "text": "0.350 - 0.300 - 0.250"
+                },
+                {
+                    "text": "冷凍"
+                },
+                {
+                    "text": "0.125"
+                },
+                {
+                    "text": "醋漬保存"
+                },
+                {
+                    "text": "0.100"
+                },
+                {
+                    "text": "冷凍乾燥"
+                },
+                {
+                    "text": "0.020"
+                }
+            ],
+            "text": "",
+            "title": "保存特性：由差到好",
+            "legend": [],
+            "columns": 1,
+            "first_column_width": 118,
+            "column_width": 118,
+            "row_height": 9,
+            "left_buffer": 2,
+            "top_buffer": 12,
+            "draw_background": false
+        },
+        {
+            "type": "patchouli:empty",
+            "draw_filler": false
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "vessels",
+            "text": "最早的保存食物方法之一是使用$(thing)缸$()。$(thing)大缸$()是可以存放多達九個物品的方塊，$(thing)密封$()時裡面的物品會獲得修正值為 0.5 的$(5)$(bold)保存$()特性。$(br2)$(thing)小缸$()是可以存放最多四個物品的物品，同樣會為內容物套用$(5)$(bold)保存$()特性。",
+            "title": "小缸與大缸"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "anchor": "large_vessels",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfc:ceramic/large_vessel[sealed=true]"
+                }
+            },
+            "name": "",
+            "text": "密封的大缸。",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "cooking",
+            "text": "另一種輕鬆保存某些食物的方法是烹煮它們。所有$(thing)肉類$()在煮熟後都會比生的時候更慢過期。$(br2)某些溫度極高的裝置，例如$(l:craftsmanship/charcoal_forge)木炭爐$()或$(l:craftsmanship/crucible)坩堝$()，$(bold)不適合$()用來烹煮食物，會讓食物更快過期！$(br)它們會給予修正值為 2.5 的$(c)$(bold)燒成焦炭！$()特性。",
+            "title": "烹煮"
+        },
+        {
+            "type": "tfg:heat_recipe",
+            "recipe": "tfc:heating/mutton",
+            "text": "相反地，$(l:cooking/cooking_methods#firepit)篝火$()或$(l:cooking/cooking_methods#grill)烤架$()甚至能提供增益！例如，在$(thing)篝火$()中烹煮羊肉(如上圖)會讓它的保存期限增加約 42%，而用$(thing)烤架$()烹煮則會給予修正值為 0.8 的$(5)$(bold)木火燒烤$()特性。"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "smoking",
+            "title": "煙燻",
+            "text": "煙燻用來保存$(thing)肉類$()和$(l:cooking/cheese)起司$()，修正值為 0.7。要煙燻肉類，必須先將它和$(thing)鹽水$()一起密封在$(thing)木桶$()中進行$(thing)鹽漬$()。起司則沒有這項要求。$(br)要開始煙燻，將物品掛到篝火上方四格內的毛線上。如果運作正常，線上應該會開始冒煙。$(br)注意：篝火只能燃燒$(thing)原木$()！"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "AXA"
+                    ],
+                    [
+                        "AXA"
+                    ],
+                    [
+                        "AYA"
+                    ],
+                    [
+                        " 0 "
+                    ]
+                ],
+                "mapping": {
+                    "A": "tfc:mud_bricks/sandy_loam",
+                    "X": "firmalife:wool_string[axis=z]",
+                    "Y": "tfc:firepit[lit=true]"
+                }
+            },
+            "text": "毛線用來吊掛要$(thing)煙燻$()的物品，兩側都需要支撐方塊。手持物品對毛線按下$(item)$(k:key.use)$()，最多可以掛上 8 個物品進行煙燻。",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "salting",
+            "text": "$(thing)鹽醃$()是讓肉類保存更久的方法。要鹽醃肉類，必須在合成格中將它和$(thing)鹽$()一起合成。只有生肉可以鹽醃。之後再烹煮或用其他方式保存肉類，都不會讓鹽醃特性消失。$(7)$(bold)鹽醃$()的食物會獲得 0.5 的修正值。",
+            "title": "鹽醃"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfc:groundcover/salt_lick"
+                }
+            },
+            "name": "舔鹽處",
+            "text": "鹽可以在森林中以舔鹽處的形式自然找到，也可以從石鹽等鹽礦研磨取得。",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "vinegar",
+            "title": "醋漬保存",
+            "text": "$(thing)醋漬保存$()是讓水果、蔬菜和肉類保存更久的方法。要用醋保存食物，必須先在$(thing)鹽水$()中$(thing)醃漬$()。食物醃漬後，可以密封在裝有醋的木桶中。如果每個醃漬食物有 125mB 的醋，食物就能保存得更久。$(7)$(bold)醃漬$()的食物會獲得 0.5 的修正值，而$(7)$(bold)浸泡在醋中$()的食物會獲得 0.1 的修正值。"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "drying",
+            "title": "乾燥",
+            "text": "$(thing)乾燥墊$()用來乾燥物品。它是用$(thing)果樹葉$()製成的，破壞$(thing)果樹$()的樹葉即可取得。使用乾燥墊時，將它放在陽光下，再按下$(item)$(k:key.use)$()放入物品。如果下雨，乾燥過程就必須重新開始。有些食物――例如水果――會獲得修正值為 0.8 的$(7)$(bold)乾燥$()特性。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "太陽能乾燥機的功能與乾燥墊相同，但速度快 12 倍。兩者都可以用活塞頭推動其側面來自動化。將物品丟到乾燥墊上就會放置在墊子上。"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "oven_baked",
+            "title": "烤箱烘烤",
+            "text": "在$(l:cooking/cooking_methods#top_oven)上層烤箱$()中烘烤食物，是透過烹煮來保存食物的第二好方法，它會給予修正值為 0.9 的$(7)$(bold)烤箱烘烤$()特性。"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "cellar",
+            "title": "地窖",
+            "text": "$(thing)地窖$()是由$(item)氣候站$()控制的多方塊結構裝置。地窖的多方塊結構必須在所有方向上都被$(thing)$(t:#firmalife:cellar_insulation)密封磚$()完全包圍。氣候站必須放在地窖的第一層，並貼著牆壁。對氣候站按下$(item)$(k:key.use)$()即可啟動。如果你以任何方式變更了結構，就需要重新啟動氣候站。$(br)地窖的內部空間最大為 31x31x31 格。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "地窖用於保存食物和$(l:cooking/cheese#cheese_wheel)熟成起司$()，方法是使用$(l:cooking/decay#shelf)食物架$()和$(l:cooking/decay#shelf)吊架$()放置食物，或將起司放在地上或$(thing)木桶架$()上。$(br2)地窖在$(l:the_world/climate#temperature)較寒冷的環境$()中效果更好。$(li)$(2)溫度 >= 0°C：$()食物架 0.4，吊架 0.35$(li)$(2)溫度 < 0°C：$()食物架 0.35，吊架 0.3$(li)$(2)溫度 < -12°C：$()食物架 0.25，吊架 0.25"
+        },
+        {
+            "type": "tfg:multimultiblock",
+            "text": "地窖結構範例。",
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "AAAAAAAAA",
+                            "AAAAAAAAA",
+                            "AAAAAAAAA",
+                            "AAAAAAAAA",
+                            "AAAAAAAAA",
+                            "AAAAAAAAA",
+                            "AAAAAAAAA",
+                            "AAAAAAAAA",
+                            "AAAAAAAAA"
+                        ],
+                        [
+                            "AAAAAAAAA",
+                            "A       A",
+                            "A       A",
+                            "AHHHHHHHA",
+                            "A       A",
+                            "AHHHHHHHA",
+                            "A       A",
+                            "A       A",
+                            "AAAAAAAAA"
+                        ],
+                        [
+                            "AAAAAAAAA",
+                            "AEEEEEEEA",
+                            "A       A",
+                            "A       A",
+                            "A       A",
+                            "A       A",
+                            "A       A",
+                            "AWWWWWWWA",
+                            "AAAAAAAAA"
+                        ],
+                        [
+                            "AAAAAAAAA",
+                            "AEEEEEEEA",
+                            "A       A",
+                            "A       A",
+                            "A   0   T",
+                            "A       A",
+                            "A       A",
+                            "AWWWWWWWA",
+                            "AAAAAAAAA"
+                        ],
+                        [
+                            "AAAAAAAAA",
+                            "AEEEEEEEA",
+                            "A       A",
+                            "A       A",
+                            "AC      B",
+                            "A       A",
+                            "A       A",
+                            "AWWWWWWWA",
+                            "AAAAAAAAA"
+                        ],
+                        [
+                            "AAAAAAAAA",
+                            "AAAAAAAAA",
+                            "AAAAAAAAA",
+                            "AAAAAAAAA",
+                            "AAAAAAAAA",
+                            "AAAAAAAAA",
+                            "AAAAAAAAA",
+                            "AAAAAAAAA",
+                            "AAAAAAAAA"
+                        ]
+                    ],
+                    "mapping": {
+                        "A": "firmalife:sealed_bricks",
+                        "C": "firmalife:climate_station[stasis=true]",
+                        "E": "firmalife:wood/food_shelf/pine[facing=east]",
+                        "W": "firmalife:wood/food_shelf/pine[facing=west]",
+                        "B": "firmalife:sealed_door[facing=north,half=lower,hinge=right]",
+                        "T": "firmalife:sealed_door[facing=north,half=upper,hinge=right]",
+                        "H": "firmalife:wood/hanger/pine"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "AAAA     ",
+                            "AAAA     ",
+                            "AAAA     ",
+                            "AAAA     ",
+                            "AAAA     ",
+                            "AAAA     ",
+                            "AAAA     ",
+                            "AAAA     ",
+                            "AAAA     "
+                        ],
+                        [
+                            "AAAAA    ",
+                            "A        ",
+                            "A        ",
+                            "AHHHHHHH ",
+                            "A        ",
+                            "AHHHHHHH ",
+                            "A        ",
+                            "A        ",
+                            "AAAAA    "
+                        ],
+                        [
+                            "AAAAAA   ",
+                            "AEEEEEEE ",
+                            "A        ",
+                            "A        ",
+                            "A        ",
+                            "A        ",
+                            "A        ",
+                            "AWWWWWWW ",
+                            "AAAAAA   "
+                        ],
+                        [
+                            "AAAAAAA  ",
+                            "AEEEEEEE ",
+                            "A        ",
+                            "A        ",
+                            "A   0    ",
+                            "A        ",
+                            "A        ",
+                            "AWWWWWWW ",
+                            "AAAAAAA  "
+                        ],
+                        [
+                            "AAAAAAAA ",
+                            "AEEEEEEE ",
+                            "A        ",
+                            "A        ",
+                            "AC       ",
+                            "A        ",
+                            "A        ",
+                            "AWWWWWWW ",
+                            "AAAAAAAA "
+                        ],
+                        [
+                            "AAAAAAAAA",
+                            "AAAAAAAAA",
+                            "AAAAAAAAA",
+                            "AAAAAAAAA",
+                            "AAAAAAAAA",
+                            "AAAAAAAAA",
+                            "AAAAAAAAA",
+                            "AAAAAAAAA",
+                            "AAAAAAAAA"
+                        ]
+                    ],
+                    "mapping": {
+                        "A": "firmalife:sealed_bricks",
+                        "C": "firmalife:climate_station[stasis=true]",
+                        "E": "firmalife:wood/food_shelf/pine[facing=east]",
+                        "W": "firmalife:wood/food_shelf/pine[facing=west]",
+                        "B": "firmalife:sealed_door[facing=north,half=lower,hinge=right]",
+                        "T": "firmalife:sealed_door[facing=north,half=upper,hinge=right]",
+                        "H": "firmalife:wood/hanger/pine"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "shelf",
+            "title": "地窖儲藏",
+            "item": "tag:firmalife:food_shelves,tag:firmalife:hangers",
+            "text": "$(item)食物架$()和$(item)吊架$()可以放一整組同一種食物。按下$(item)$(k:key.use)$()可以放入或取出物品，按下$(item)$(k:key.sneak) + $(k:key.use)$()則可放入或取出一整組。放在有效食物架和吊架上的物品會獲得比缸更好的腐壞修正值，且$(thing)平均溫度$()越低效果越好。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "lunch_box",
+            "title": "便當盒",
+            "item": "tfclunchbox:lunchbox,tfclunchbox:cooling_lunchbox,tfclunchbox:electric_lunchbox",
+            "text": "便當盒是攜帶和食用食物的便利方式。基本便當盒提供$(5)$(bold)保存$()特性，而$(item)冷藏$()和$(item)電動便當盒$()則提供修正值為 0.3 的$(9)$(bold)冷藏$()特性。$(br2)冷藏便當盒會消耗$(item)冰$()來保存食物，而電動便當盒則消耗$(2)EU$()能量。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "refrigerator",
+            "title": "冰箱",
+            "item": "tfg:mv_food_refrigerator,tfg:hv_food_refrigerator,tfg:ev_food_refrigerator,tfg:iv_food_refrigerator",
+            "text": "冰箱由$(tfg_short)新增，會消耗$(2)EU$()提供修正值為 0.125 的$(3)$(bold)冷凍$()特性。$(br)更高等級的冰箱不會影響保存效果――只會增加可用的儲存空間。冰箱也可以合併過期日期，將食物堆疊在一起。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "freeze_dry",
+            "title": "冷凍乾燥",
+            "item": "tfg:food/meal_bag,tfg:food/freeze_dried_fruit,tfg:food/calorie_paste",
+            "text": "$(tfg_short)新增了在$(item)食物調理機$()中冷凍乾燥特定食物的功能，可以大幅延長保存期限。冷凍乾燥會給予修正值為 0.02 的$(7)$(bold)冷凍乾燥$()特性。"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "pest",
+            "title": "害蟲",
+            "text": "放在箱子裡的食物會引來$(thing)老鼠$()，所以記得把食物妥善存放在缸、地窖或冰箱中。老鼠會打開容器並吃掉裡面的食物。當出現$(thing)「這個容器散發出難聞的氣味」$()訊息時，就表示有老鼠出沒。請注意，在離開介面前先解封再重新密封大缸，就絕對不會引來害蟲。"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "cutting",
+            "title": "切除",
+            "text": "最後，你可以用游標拿起$(item)刀$()，對物品欄中部分腐壞的食物堆疊按下$(item)右鍵$()，切除食物腐壞的部分。$(br2)這會重置腐壞進度，但會依腐壞程度按比例損失部分物品。"
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "延伸閱讀",
+            "anchor": "relations",
+            "entries": [
+                "tfg:cooking/food_and_water",
+                "tfg:cooking/cooking_methods",
+                "tfg:craftsmanship/pottery",
+                "tfg:craftsmanship/barrels",
+                "tfg:logistics/storage"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "priority": true,
+    "sortnum": 1,
+    "extra_recipe_mappings": {
+        "tfc:powder/salt": 14,
+        "firmalife:drying_mat": 17,
+        "firmalife:solar_drier": 18,
+        "tag:firmalife:food_shelves": 23,
+        "tag:firmalife:hangers": 23,
+        "tfclunchbox:lunchbox": 24,
+        "tfclunchbox:cooling_lunchbox": 24,
+        "tfclunchbox:electric_lunchbox": 24,
+        "tfg:mv_food_refrigerator": 25,
+        "tfg:hv_food_refrigerator": 25,
+        "tfg:ev_food_refrigerator": 25,
+        "tfg:iv_food_refrigerator": 25,
+        "tfg:food/meal_bag": 26,
+        "tfg:food/freeze_dried_fruit": 26,
+        "tfg:food/calorie_paste": 26,
+        "tfg:dry_ice": 26,
+        "tfg:foil_pack": 26
+    }
+}

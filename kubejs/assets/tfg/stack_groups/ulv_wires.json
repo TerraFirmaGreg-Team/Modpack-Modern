@@ -1,0 +1,27 @@
+{
+	"id": "tfg:ulv_wires",
+	"type": "remi:group",
+	"name": "stackgroup.remi.tfg_ulv_wires",
+	"contents": [
+		"#forge:single_wires/lead",
+		"#forge:single_wires/red_alloy",
+		"#forge:double_wires/lead",
+		"#forge:double_wires/red_alloy",
+		"#forge:quadruple_wires/lead",
+		"#forge:quadruple_wires/red_alloy",
+		"#forge:octal_wires/lead",
+		"#forge:octal_wires/red_alloy",
+		"#forge:hex_wires/lead",
+		"#forge:hex_wires/red_alloy",
+		"#forge:single_cables/lead",
+		"#forge:single_cables/red_alloy",
+		"#forge:double_cables/lead",
+		"#forge:double_cables/red_alloy",
+		"#forge:quadruple_cables/lead",
+		"#forge:quadruple_cables/red_alloy",
+		"#forge:octal_cables/lead",
+		"#forge:octal_cables/red_alloy",
+		"#forge:hex_cables/lead",
+		"#forge:hex_cables/red_alloy"
+	]
+}

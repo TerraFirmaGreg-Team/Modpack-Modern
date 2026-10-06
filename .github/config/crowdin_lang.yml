@@ -1,3 +1,6 @@
+# crowdin upload sources -v --config=".github\config\crowdin_lang.yml" --delete-obsolete
+# crowdin upload translations -v --config=".github\config\crowdin_lang.yml"   
+
 base_url: "https://terrafirmagreg.api.crowdin.com"
 base_path: "../../kubejs/assets"
 
@@ -9,4 +12,8 @@ preserve_hierarchy: true
 files:
   - source: "/*/lang/en_us.json"
     translation: "/%original_path%/%locale_with_underscore%.%file_extension%"
+    update_option: "update_as_unapproved"
+
+  - source: "/tfg/lang/en_us/**/*.json"
+    translation: "/tfg/lang/%locale_with_underscore%/**/%original_file_name%"
     update_option: "update_as_unapproved"

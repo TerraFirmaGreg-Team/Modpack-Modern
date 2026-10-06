@@ -1,0 +1,71 @@
+{
+	"name": "月球作物",
+	"category": "tfg:the_moon",
+	"icon": "minecraft:textures/item/chorus_fruit.png",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "chorus_fruit",
+			"title": "歌萊果",
+			"text": "$(bold)Biomes$(): $(l:the_moon/moon_biomes#forest)Chorus Forest$(), $(l:the_moon/moon_biomes#thicket)Chorus Thicket$()$(br2)Chorus Plants grow in tall formations. Breaking the stem will yield nothing, while breaking the Flowers at the top will yield Chorus Fruits or a Flower.$(br)Chorus Fruits can be eaten for $(thing)Fruit$(), cooked and eaten as $(item)Popped Chorus Fruit$(), or can be distilled into $(thing)Nitrogen$().$(br)"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"multiblock": {
+				"pattern": [
+					[
+						"Z  "
+					],
+					[
+						"V D"
+					],
+					[
+						"EXB"
+					],
+					[
+						" V "
+					],
+					[
+						" 0 "
+					]
+				],
+				"mapping": {
+					"0": "ad_astra:moon_sand",
+					"V": "tfg:lunar_chorus_plant[down=true,up=true]",
+					"E": "tfg:lunar_chorus_plant[south=true,up=true]",
+					"X": "tfg:lunar_chorus_plant[north=true,down=true,south=true]",
+					"B": "tfg:lunar_chorus_plant[north=true,up=true]",
+					"D": "tfg:lunar_chorus_flower[age=5]",
+					"Z": "tfg:lunar_chorus_flower[age=0]"
+				}
+			},
+			"text": "$(thing)歌萊花$()也可以種在任何礫石或沙子上手動栽培。",
+			"enable_visualize": false
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "gtceu:nitrogen_bucket",
+			"anchor": "nitrogen",
+			"title": "歌萊產品",
+			"text": "建立可再生的$(item)歌萊果$()來源，是在月球長期生存的關鍵。它們是$(item)氮$()唯一真正的來源，也可以蒸餾成生質以取得$(item)碳$()。"
+		},
+		{
+			"type": "patchouli:relations",
+			"title": "延伸閱讀",
+			"anchor": "relations",
+			"entries": [
+				"tfg:the_moon/the_moon",
+				"tfg:the_world/climate",
+				"tfg:the_world/wild_crops",
+				"tfg:beneath/beneath_crops",
+				"tfg:mars/mars_crops",
+				"tfg:the_moon/moon_biomes"
+			]
+		}
+	],
+	"read_by_default": true,
+	"extra_recipe_mappings": {
+		"tfg:lunar_chorus_flower": 0,
+		"minecraft:chorus_fruit": 0
+	}
+}

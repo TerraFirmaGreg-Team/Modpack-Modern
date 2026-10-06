@@ -40,27 +40,11 @@ const registerAdAstraRecipes = (event) => {
 	//#endregion
 
 	//#region Machines
-	event.recipes.gtceu.shaped('ad_astra:oxygen_distributor', [
-		'DBD',
-		'ACA',
-		'DBD'
-	], {
-		A: '#forge:plates/stainless_steel',
-		B: '#gtceu:circuits/hv',
-		C: 'gtceu:hv_machine_hull',
-		D: 'gtceu:filter_casing'
-	}).addMaterialInfo().id('tfg:oxygen_distributor')
+	event.shapeless('tfg:oxygen_distributor', ['ad_astra:oxygen_distributor'])
+		.id('tfg:shapeless/ad_astra_oxygen_distributor_to_tfg')
 
-	event.recipes.gtceu.shaped('ad_astra:gravity_normalizer', [
-		'A A',
-		'CBC',
-		'ADA'
-	], {
-		A: '#forge:rods/magnetic_neodymium',
-		B: 'gtceu:mv_field_generator',
-		C: '#forge:plates/titanium',
-		D: 'gtceu:ev_polarizer',
-	}).addMaterialInfo().id('tfg:gravity_normalizer')
+	event.shapeless('tfg:higgs_emitter', ['ad_astra:gravity_normalizer'])
+		.id('tfg:shapeless/ad_astra_gravity_normalizer_to_tfg')
 
 	event.recipes.gtceu.shaped('ad_astra:oxygen_sensor', [
 		'AEA',

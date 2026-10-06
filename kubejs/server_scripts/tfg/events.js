@@ -12,9 +12,24 @@ TFGServerEvents.dimensionalPowerConsumption(event => {
     event.add("ad_astra:venus_orbit", 200000);
 });
 
+// LLM Google Gemini search tool was used to find these because Kubsejs docs sux hard
+
+function linkOf(key, url) {
+  return Text.translate(key)
+    .aqua()
+    .underlined()
+    .click(url)
+    .hover(Text.translate('tfg.clientmessage.welcome.3'))
+}
+
 PlayerEvents.loggedIn(event => {
-	event.player.tell(Text.translate("tfg.clientmessage.welcome.1"));
-	event.player.tell(Text.translate("tfg.clientmessage.welcome.2"));
+    event.player.tell(Text.translate('tfg.clientmessage.welcome.1'))
+    event.player.tell(Text.translate('tfg.clientmessage.welcome.2',
+      linkOf('tfg.clientmessage.link.website', 'https://terrafirmagreg.team'),
+      linkOf('tfg.clientmessage.link.field_guide', 'https://wiki.terrafirmagreg.team/modern/field-guide'),
+      linkOf('tfg.clientmessage.link.recipe_book', 'https://wiki.terrafirmagreg.team/modern/recipe-book'),
+      linkOf('tfg.clientmessage.link.quest_book', 'https://wiki.terrafirmagreg.team/modern/quest-book')
+    ))
 })
 
 // Vase Sounds
@@ -99,5 +114,22 @@ BlockEvents.broken("tfg:spider_sac", event => {
 		let spider = level.createEntity("endermanoverhaul:scarab");
 		spider.setPosition(block.x + 0.4 + (i / 5), block.y + 0.4 + (i / 5), block.z + 0.4 + (i / 5))
 		spider.spawn();
+	}
+})
+
+BlockEvents.rightClicked(event => {
+	const { server, item, player, block } = event
+	if (!item.hasTag('forge:tools/hammers')) return;
+	if (block.id === 'beneath:crackrack') {
+		player.swing()
+		const dim = block.level.name.getString();
+		server.runCommandSilent(`execute in ${dim} run fill ${block.x} ${block.y} ${block.z} ${block.x} ${block.y} ${block.z} air`)
+		server.runCommandSilent(`execute in ${dim} run setblock ${block.x} ${block.y} ${block.z} tfg:crackrack_anvil`);
+	}
+	else if (block.id === 'minecraft:blackstone') {
+		player.swing()
+		const dim = block.level.name.getString();
+		server.runCommandSilent(`execute in ${dim} run fill ${block.x} ${block.y} ${block.z} ${block.x} ${block.y} ${block.z} air`)
+		server.runCommandSilent(`execute in ${dim} run setblock ${block.x} ${block.y} ${block.z} tfg:blackstone_anvil`);
 	}
 })

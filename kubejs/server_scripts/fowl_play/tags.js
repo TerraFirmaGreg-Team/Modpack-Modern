@@ -80,13 +80,13 @@ function registerFowlPlayEntityTags(event) {
 	event.add('tfc:amphibious_creatures', 'fowlplay:gull')
 	event.add('tfc:amphibious_creatures', 'fowlplay:penguin')
 
-	event.add('fowlplay:gull_hunt_targets', '#tfc:pests')
+	event.add('fowlplay:gull_hunt_targets', '#tfg:tiny_animals')
 	event.add('fowlplay:gull_hunt_targets', '#tfc:hunted_by_ocean_predators')
 	event.add('fowlplay:gull_baby_hunt_targets', 'tfc:chicken')
 	event.add('fowlplay:gull_baby_hunt_targets', 'tfc:duck')
 	event.add('fowlplay:gull_baby_hunt_targets', 'tfc:quail')
 
-	event.add('fowlplay:hawk_hunt_targets', '#tfc:pests')
+	event.add('fowlplay:hawk_hunt_targets', '#tfg:tiny_animals')
 	event.add('fowlplay:hawk_baby_hunt_targets', 'tfc:chicken')
 	event.add('fowlplay:hawk_baby_hunt_targets', 'tfc:duck')
 	event.add('fowlplay:hawk_baby_hunt_targets', 'tfc:quail')

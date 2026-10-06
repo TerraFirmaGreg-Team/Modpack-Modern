@@ -1896,13 +1896,6 @@
   "block.mcw_tfc_aio.roofs.thatch2_roofs.thatch2_top_roof": "Zsúpszalma tetőgerinc",
   "block.mcw_tfc_aio.roofs.thatch2_roofs.thatch2_upper_lower_roof": "Zsúpszalma alacsony tetőgerinc",
   "block.mcw_tfc_aio.roofs.thatch2_roofs.thatch2_upper_steep_roof": "Zsúpszalma meredek tetőgerinc",
-  "block.mcw_tfc_aio.roofs.thatch_roofs.thatch_attic_roof": "Zsúpszalma tetőtéri ablak",
-  "block.mcw_tfc_aio.roofs.thatch_roofs.thatch_lower_roof": "Zsúpszalma alsó alaptető",
-  "block.mcw_tfc_aio.roofs.thatch_roofs.thatch_roof": "Zsúpszalma tető",
-  "block.mcw_tfc_aio.roofs.thatch_roofs.thatch_steep_roof": "Zsúpszalma meredek alaptető",
-  "block.mcw_tfc_aio.roofs.thatch_roofs.thatch_top_roof": "Zsúpszalma tetőgerinc",
-  "block.mcw_tfc_aio.roofs.thatch_roofs.thatch_upper_lower_roof": "Zsúpszalma alacsony tetőgerinc",
-  "block.mcw_tfc_aio.roofs.thatch_roofs.thatch_upper_steep_roof": "Zsúpszalma meredek tetőgerinc",
   "block.mcw_tfc_aio.roofs.white_cedar_roofs.white_cedar_attic_roof": "Fehér cédrus tetőtéri ablak",
   "block.mcw_tfc_aio.roofs.white_cedar_roofs.white_cedar_lower_roof": "Fehér cédrus alsó tetőalap",
   "block.mcw_tfc_aio.roofs.white_cedar_roofs.white_cedar_planks_attic_roof": "Fehér cédrus deszka tetőtéri ablak",
@@ -1973,7 +1966,6 @@
   "item.mcw_tfc_aio.furniture.cabinet.cabinet_door": "Szekrényajtó",
   "item.mcw_tfc_aio.furniture.cabinet.cabinet_drawer": "Fiók",
   "item.mcw_tfc_aio.pliers": "Fogó",
-  "item.mcw_tfc_aio.rain_gutter": "Ereszcsatorna",
   "item.mcw_tfc_aio.roofing_hammer": "Ácskalapács",
   "itemGroup.bridges": "Macaw's TFC hidak",
   "itemGroup.fences": "Macaw's TFC kerítések",
@@ -1985,6 +1977,5 @@
   "mcw_tfc_aio.furnitureitem.desc": "Alapanyag ",
   "mcw_tfc_aio.hammer.desc": "Jobb kattintás a tetőre, hogy az allapotai között válts",
   "mcw_tfc_aio.pliers.desc": "Jobb kattintás a hídra, hogy egy utat csinálj, csak kettőnél szélesebb hidaknál mükődik",
-  "mcw_tfc_aio.roofitem.desc": "Alapanyag ",
-  "tfc.recipe.barrel.mcw_tfc_aio.bleach_terracotta": "Terrakotta fehérítése"
+  "mcw_tfc_aio.roofitem.desc": "Alapanyag"
 }

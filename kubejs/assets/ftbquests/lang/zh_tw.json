@@ -86,8 +86,6 @@
   "ftbquests.chapter.image.order.tooltip": "同章節中的圖片繪製順序。圖層越高越上面。",
   "ftbquests.chapter.image.rotation": "重複",
   "ftbquests.chapter.image.width": "寬度",
-  "ftbquests.chapter.image.x": "X",
-  "ftbquests.chapter.image.y": "Y",
   "ftbquests.chapter.misc.autofocus_id": "自動聚焦任務 ID",
   "ftbquests.chapter.misc.autofocus_id.tooltip": "若非空，必須為任務或任務鏈結 ID (複製任務 ID 取得)。\n打開章節時，介面會自動聚焦到任務",
   "ftbquests.chapter.misc.consume_items": "預設物品任務「消耗物品」",

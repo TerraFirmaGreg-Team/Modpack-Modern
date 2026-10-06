@@ -1,0 +1,74 @@
+{
+    "name": "縫紉桌",
+    "category": "tfg:craftsmanship",
+    "icon": "tfc:wood/sewing_table/oak",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(thing)縫紉桌$()用來製作旗幟圖案、鍛造模板和其他布料物品。它需要$(t:#tfc:sewing_light_cloth)$(6)淺色布料$()、$(t:#tfc:sewing_dark_cloth)$(6)深色布料$()、$(t:#forge:string)$(6)線$()以及一根$(item)針$()。$(br)縫紉用的針可以用骨頭製作。之後可以用不鏽鋼製作不會損壞的針。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "縫紉桌與工作臺類似，如果不小心做錯了，直接退出介面就會返還所有材料。縫紉桌的介面中有一本合成配方書。點選這本書會開啟所有可合成的配方一覽，點選某一種配方就會在縫紉介面出現虛化的提示。"
+        },
+        {
+            "type": "patchouli:image",
+            "title": "縫紉介面",
+            "anchor": "sewing_screen",
+            "width": 1024,
+            "texture_width": 1024,
+            "height": 1024,
+            "texture_height": 1024,
+            "images": [
+                "tfg:textures/gui/field_guide/sewing_preview.png",
+                "tfg:textures/gui/field_guide/sewing_table.png"
+            ],
+            "text": "配方預覽與完成的配方。",
+            "border": true
+        },
+        {
+            "type": "patchouli:text",
+            "text": "左側的欄位用來放線和針。下方的兩個欄位可以放任意組合的深色和淺色布料。右側的欄位會在成品可以取出時顯示結果。從成品欄位取出成品即完成製作，並消耗材料。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "每個布料物品可以在縫紉面上放置 8 格該材料。同樣地，每條線可以縫 16 針。選好配方後，只要使用介面右上方的按鈕放置方格，並依照指引將它們縫在一起即可。想移除縫線嗎？使用紅色的「X」按鈕來移除方格。"
+        },
+        {
+            "type": "patchouli:crafting",
+            "anchor": "banner_loom",
+            "title": "旗幟織機",
+            "recipe": "tfc:crafting/vanilla/loom",
+            "text": "旗幟織機可用來將旗幟圖案織成旗幟。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tag:minecraft:trim_templates",
+            "anchor": "armor_trim",
+            "title": "盔甲紋飾",
+            "text": "縫製$(item)鍛造模板$()後，即可將盔甲紋飾套用到任何$(t:#minecraft:trimmable_armor)$(6)可裝飾的盔甲$()上。在$(item)鍛造台$()上將它與$(t:#minecraft:trim_materials)$(6)紋飾材料$()(例如$(thing)精緻寶石$()或$(thing)珠寶金屬$())和盔甲組合即可。"
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "延伸閱讀",
+            "anchor": "relations",
+            "entries": [
+                "tfg:craftsmanship/anvils",
+                "tfg:craftsmanship/barrels",
+                "tfg:craftsmanship/quern",
+                "tfg:craftsmanship/scribing_table",
+                "tfg:agriculture/weaving"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 19,
+    "extra_recipe_mappings": {
+        "tag:tfc:sewing_tables": 0,
+        "tag:tfc:sewing_needles": 0,
+        "minecraft:loom": 5,
+        "tag:minecraft:trim_templates": 6,
+        "tag:minecraft:trimmable_armor": 6,
+        "tag:minecraft:trim_materials": 6
+    }
+}

@@ -50,6 +50,8 @@ function registerTFGMarsItemTags(event) {
 	event.add('tfc:compost_greens_low', 'beneath:wood/leaves/warped')
 	event.add('tfc:compost_greens_low', 'tfg:glacian_leaves')
 	event.add('tfc:compost_greens_low', '#tfg:mars_plants')
+
+	event.add('forge:wools/pink', 'ad_astra:glacian_fur')
 }
 
 function registerTFGMarsBlockTags(event) {
@@ -282,6 +284,8 @@ function registerTFGMarsEntityTypeTags(event) {
 	ENTITIES.forEach(entity => {
 		event.add('ad_astra:can_survive_extreme_cold', entity)
 		event.add('ad_astra:lives_without_oxygen', entity)
+		event.add('minecraft:freeze_immune_entity_types', entity)
+		event.add('minecraft:powder_snow_walkable_mobs', entity)
 	})
 
 	event.add('tfc:deals_piercing_damage', 'tfg:wraptor')

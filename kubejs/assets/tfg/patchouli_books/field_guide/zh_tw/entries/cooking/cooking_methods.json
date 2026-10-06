@@ -1,0 +1,527 @@
+{
+    "name": "烹飪方式",
+    "category": "tfg:cooking",
+    "icon": "tfc:grill",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "title": "索引",
+            "anchor": "index",
+            "text": "$(li)$(bold)$(l:cooking/cooking_methods#firepit)篝火$()$(li2)$(l:cooking/cooking_methods#grill)烤架$()$(li2)$(l:cooking/cooking_methods#pot)陶鍋$()$(li)$(bold)$(l:cooking/cooking_methods#oven)烤箱$()$(li2)$(l:cooking/cooking_methods#vat)大鍋$()$(li2)$(l:cooking/cooking_methods#jarring_station)裝罐站$()$(li)$(bold)$(l:cooking/cooking_methods#electric_oven)電烤箱$()$(li)$(bold)$(l:cooking/cooking_methods#food_processor)食物調理機$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "intro",
+            "title": "簡介",
+            "text": "食物是$(tfg)機制中最重要的元素之一。你需要烹煮食物，讓它可以安全食用，並提升它的$(l:cooking/food_and_water#nutrients)營養價值$()。$(br2)有些烹飪方式甚至還有額外好處，例如延緩腐壞。"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "firepit",
+            "title": "篝火",
+            "text": "$(item)篝火$()可能是你最早能使用的烹飪方式。它一次只能烹煮一個物品，並使用原木作為燃料。"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfc:firepit[lit=true]"
+                }
+            },
+            "name": "篝火",
+            "text": "",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "grill",
+            "title": "烤架",
+            "text": "$(thing)烤架$()是可以加裝在$(item)篝火$()、$(item)烤箱$()或$(l:craftsmanship/gas_burner)燃氣燃燒器$()上的物品，能更有效率地烹煮食物。烤架一次可以烹煮五個物品，烹煮時還會讓食物獲得$(thing)木火燒烤$()特性，可以稍微延長物品的$(l:cooking/decay)保存期限$()。要製作附有烤架的篝火，首先要製作$(l:craftsmanship/firepit)篝火$()，然後對篝火使用$(thing)鍛鐵烤架$()。"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfc:grill[lit=true]"
+                }
+            },
+            "name": "附有烤架的篝火",
+            "text": "",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:text",
+            "title": "陶鍋",
+            "anchor": "pot",
+            "text": "$(thing)陶鍋$()是可以加裝在$(item)篝火$()、$(item)烤箱$()或$(l:craftsmanship/gas_burner)燃氣燃燒器$()上的物品，可以烹煮新類型的食物，也能製作其他一些實用的物品。$(br2)要製作附有陶鍋的篝火，首先要製作$(l:craftsmanship/firepit)篝火$()，然後對篝火使用$(thing)陶瓷鍋$()。"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfc:pot[lit=true]"
+                }
+            },
+            "name": "附有陶鍋的篝火",
+            "text": "",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:text",
+            "text": "陶鍋有五個物品欄位，最多可以裝$(thing)1000 mB$()的任何流體。$(br2)要用陶鍋烹煮東西，首先要用任何種類的流體容器(例如桶子)對陶鍋使用來加入流體，然後放入物品並點燃陶鍋。它會沸騰一段時間，直到配方完成。"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/gui/pot.png"
+            ],
+            "text": "正在用陶鍋燉湯。",
+            "border": false
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "soup",
+            "item": "tfc:food/fruit_soup",
+            "title": "燉湯配方",
+            "link_recipes": false,
+            "text": "湯是用 3-5 個$(thing)水果$()、$(thing)蔬菜$()或$(thing)肉類$()放進裝有$(thing)水$()的陶鍋中煮成。配方完成時，鍋中的水會變成紅色。手持$(l:cooking/bowls)碗$()按下$(item)$(k:key.use)$()即可盛出。湯能將多種養分結合在同一餐中。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tfc:bucket/red_dye",
+            "title": "簡單配方",
+            "link_recipes": false,
+            "text": "其他陶鍋配方會把鍋中的物品和流體轉化成別的東西。例如，在$(thing)水$()中煮沸五個$(thing)草木灰$()可以製成$(thing)鹼液$()。"
+        },
+        {
+            "title": "烤箱",
+            "anchor": "oven",
+            "type": "patchouli:text",
+            "text": "$(thing)烤箱$()是一次烹煮大量食物並延長保存期限的好方法。烤箱烘烤的食物腐壞速度是一般食物的 90%。烤箱是由$(thing)下層烤箱$()、$(thing)上層烤箱$()和$(thing)煙囪$()組成的多方塊結構。這些方塊一開始是黏土，必須將溫度提升到一定程度並維持足夠長的時間，才能$(thing)固化$()。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "烤箱可以用$(thing)$(t:#firmalife:oven_insulation)磚塊$()、其他烤箱方塊，或任何可以為木炭爐隔熱的東西來隔熱。也就是說，你想要的話也可以使用石頭方塊！$(br2)$(l:game_mechanics/heating#tongs)火鉗$()或$(item)隔熱手套$()是從烤箱中取出熱物品的安全方式。只要拿著它們對烤箱按下$(item)$(k:key.use)$()即可取出物品。否則你可能會被燙傷！$(br2)$(item)烤箱配件$()可以擴充烤箱的功能。"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "建造烤箱",
+            "anchor": "oven_building",
+            "text": "$(thing)烤箱$()首先由放在下層烤箱上方的上層烤箱組成。接著，每個烤箱部件除了正面以外的所有面，都應用$(thing)$(t:#firmalife:oven_insulation)烤箱隔熱$()方塊覆蓋。在烤箱正後方疊放三個煙囪，可以讓烤箱的煙往上排出，防止火災。如果不這麼做，煙會很快充滿你的房子，火也可能從烤箱蔓延出去！"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "bottom_oven",
+            "text": "下層烤箱用來放置燃料，而燃料只能是原木。按下$(item)$(k:key.use)$()即可放入。下層烤箱也是可以用$(thing)生火器$()或其他工具點燃的部位。它會將產生的熱量傳給上層烤箱或配件。$(br2)下層烤箱必須隔熱才能保持熱度。"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "top_oven",
+            "text": "上層烤箱放置正在烹煮的物品。它會從下層烤箱吸收熱量，並隨時間緩慢釋放。手持物品按下$(item)$(k:key.use)$()即可放入。之後記得使用$(thing)火鉗$()或$(thing)隔熱手套$()取出物品。$(br2)上層烤箱需要隔熱才能達到更高的溫度。但這不一定是好主意，因為麵包等物品若長時間處於高溫下可能會燒成灰燼。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "陶鍋和烤架可以放在$(thing)下層烤箱$()上方。這些裝置會自動從下層烤箱取得熱量。此時陶鍋只能用來煮湯，無法執行一般的陶鍋配方。"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "烤箱固化",
+            "anchor": "oven_curing",
+            "text": "固化烤箱方塊很簡單，但需要耐心。只要像平常一樣運作下層烤箱，然後等待即可。如果烤箱方塊高於$(t:暗紅色 **)$(4)600$()°C 約 80 秒，它就會固化自己以及周圍的所有烤箱方塊。固化效果會一路傳遞到附近的煙囪頂端。"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "未固化的烤箱",
+            "text": "烤箱應先以$(n)未固化$()的狀態組裝。你可以自訂配件和大小。",
+            "enable_visualize": true,
+            "multiblock": {
+                "pattern": [
+                    [
+                        "   ",
+                        "   ",
+                        "   ",
+                        "C  ",
+                        "   ",
+                        "   ",
+                        "   "
+                    ],
+                    [
+                        "   ",
+                        "   ",
+                        "   ",
+                        "C  ",
+                        "   ",
+                        "   ",
+                        "   "
+                    ],
+                    [
+                        "EE ",
+                        "EV ",
+                        "ET ",
+                        "C0 ",
+                        "ET ",
+                        "EG ",
+                        "EE "
+                    ],
+                    [
+                        "EE ",
+                        "E1 ",
+                        "E1 ",
+                        "C1 ",
+                        "E1 ",
+                        "E1 ",
+                        "EE "
+                    ]
+                ],
+                "mapping": {
+                    "0": "firmalife:stovetop_pot",
+                    "1": "firmalife:oven_bottom[facing=south]",
+                    "T": "firmalife:oven_top[facing=south]",
+                    "V": "firmalife:vat",
+                    "G": "firmalife:stovetop_grill",
+                    "E": "#forge:stone_bricks",
+                    "C": "firmalife:oven_chimney"
+                }
+            }
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "固化的烤箱",
+            "text": "固化後的烤箱結構範例。",
+            "enable_visualize": false,
+            "multiblock": {
+                "pattern": [
+                    [
+                        "   ",
+                        "   ",
+                        "   ",
+                        "C  ",
+                        "   ",
+                        "   ",
+                        "   "
+                    ],
+                    [
+                        "   ",
+                        "   ",
+                        "   ",
+                        "C  ",
+                        "   ",
+                        "   ",
+                        "   "
+                    ],
+                    [
+                        "EE ",
+                        "EV ",
+                        "ET ",
+                        "C0 ",
+                        "ET ",
+                        "EG ",
+                        "EE "
+                    ],
+                    [
+                        "EE ",
+                        "E1 ",
+                        "E2 ",
+                        "C3 ",
+                        "E4 ",
+                        "E5 ",
+                        "EE "
+                    ]
+                ],
+                "mapping": {
+                    "0": "firmalife:stovetop_pot",
+                    "1": "firmalife:cured_oven_bottom[facing=south,logs=4,lit=true]",
+                    "2": "firmalife:cured_oven_bottom[facing=south,logs=3,lit=true]",
+                    "3": "firmalife:cured_oven_bottom[facing=south,logs=2,lit=true]",
+                    "4": "firmalife:cured_oven_bottom[facing=south,logs=1,lit=true]",
+                    "5": "firmalife:cured_oven_bottom[facing=south,lit=false]",
+                    "T": "firmalife:cured_oven_top[facing=south]",
+                    "V": "firmalife:vat",
+                    "G": "firmalife:stovetop_grill",
+                    "E": "#forge:stone_bricks",
+                    "C": "firmalife:cured_oven_chimney"
+                }
+            }
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "firmalife:crafting/oven_insulation",
+            "text": "為下層烤箱合成烤箱隔熱層後，就不需要再為它的側面和背面隔熱。但仍然需要煙囪，上層烤箱也仍然需要隔熱。按下$(item)$(k:key.use)$()即可套用。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "外觀",
+            "anchor": "countertop",
+            "item": "firmalife:brick_countertop,firmalife:rustic_countertop,firmalife:tile_countertop,firmalife:stone_countertop,firmalife:rustic_finish,firmalife:tile_finish,firmalife:stone_finish",
+            "text": "$(thing)檯面$()和$(thing)飾面$()是算作烤箱部件的裝飾方塊。飾面可以按下$(item)$(k:key.use)$()套用。只有$(n)磚造$()的烤箱方塊可以套用飾面。石材飾面無法套用在磚塊上。請使用$(item)密封磚$()來搭配外觀。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "烤箱漏斗",
+            "anchor": "oven_hopper",
+            "item": "firmalife:oven_hopper",
+            "text": "$(thing)烤箱漏斗$()會將原木送入它所面對的下層烤箱。它可以容納 16 根原木(像原木堆一樣是 4 組各 4 根)，從頂部丟入物品即可補充庫存。物品管道也能做到同樣的事，但無法作為隔熱。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "灰盤",
+            "anchor": "ashtray",
+            "item": "firmalife:ashtray",
+            "text": "$(thing)灰盤$()放在$(thing)下層烤箱方塊$()下方時會收集$(thing)草木灰$()。每次消耗燃料時有 0.5 的機率得到灰燼。按下$(item)$(k:key.use)$()或用漏斗可以取出灰燼，按下$(item)$(k:key.attack)$()可以放入。"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "隔熱烤箱",
+            "text": "附有配件和飾面的隔熱烤箱範例。$(br)注意：$(7)大鍋、陶鍋和烤架都算作隔熱方塊。$()",
+            "enable_visualize": false,
+            "multiblock": {
+                "pattern": [
+                    [
+                        "   ",
+                        "   ",
+                        "H  ",
+                        "   ",
+                        "   "
+                    ],
+                    [
+                        "   ",
+                        "   ",
+                        "H  ",
+                        "   ",
+                        "   "
+                    ],
+                    [
+                        "JV ",
+                        "FT ",
+                        "H3 ",
+                        "FT ",
+                        " G "
+                    ],
+                    [
+                        " 1 ",
+                        " 2 ",
+                        "H0 ",
+                        " 4 ",
+                        " 5 "
+                    ],
+                    [
+                        " A ",
+                        " B ",
+                        " C ",
+                        " D ",
+                        " E "
+                    ]
+                ],
+                "mapping": {
+                    "3": "firmalife:stovetop_pot",
+                    "1": "firmalife:insulated_rustic_oven_bottom[facing=south,logs=4,lit=true]",
+                    "2": "firmalife:insulated_rustic_oven_bottom[facing=south,logs=3,lit=true]",
+                    "0": "firmalife:insulated_rustic_oven_bottom[facing=south,logs=2,lit=true]",
+                    "4": "firmalife:insulated_rustic_oven_bottom[facing=south,logs=1,lit=true]",
+                    "5": "firmalife:insulated_rustic_oven_bottom[facing=south,lit=false]",
+                    "T": "firmalife:cured_rustic_oven_top[facing=south]",
+                    "V": "firmalife:vat",
+                    "J": "firmalife:jarring_station[facing=south]",
+                    "A": "firmalife:ashtray[stage=5]",
+                    "B": "firmalife:ashtray[stage=4]",
+                    "C": "firmalife:ashtray[stage=3]",
+                    "D": "firmalife:ashtray[stage=2]",
+                    "E": "firmalife:ashtray[stage=1]",
+                    "G": "firmalife:stovetop_grill",
+                    "F": "firmalife:rustic_countertop",
+                    "H": "firmalife:cured_rustic_oven_chimney"
+                }
+            }
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "大鍋",
+            "anchor": "vat",
+            "item": "firmalife:vat",
+            "text": "$(thing)大鍋$()可以大量製作沸煮配方。它有一個物品欄位和 10,000mB 的流體空間，與木桶類似。$(br2)大鍋一次只能裝一種流體。所以，如果你製作的配方會產出流體，而鍋中仍有剩餘的流體材料，那些材料就會被清除！"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "使用大鍋時，手持流體和物品對它按下$(item)$(k:key.use)$()即可加入。空手並按住$(item)$(k:key.sneak)$()時點擊，可以密封或解封大鍋。大鍋在密封之前不會沸騰。$(br)大鍋應放在$(thing)下層烤箱$()上方。如果大鍋在配方完成時溢出，它就不會沸騰！$(br2)大鍋可以用$(thing)紅石$()自動開關，也能與$(item)管道$()或$(item)機械手臂$()互動。"
+        },
+        {
+            "type": "tfg:multimultiblock",
+            "text": "附有$(l:cooking/cooking_methods#vat)大鍋$()和$(l:cooking/cooking_methods#jarring_station)裝罐站$()的烤箱範例。",
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "H ",
+                            "  "
+                        ],
+                        [
+                            "H ",
+                            "  "
+                        ],
+                        [
+                            "HV",
+                            " J"
+                        ],
+                        [
+                            "H1",
+                            "  "
+                        ],
+                        [
+                            "  ",
+                            " 0"
+                        ]
+                    ],
+                    "mapping": {
+                        "1": "firmalife:insulated_rustic_oven_bottom[facing=south,logs=4,lit=true]",
+                        "V": "firmalife:vat[sealed=true]",
+                        "J": "firmalife:jarring_station[facing=west]",
+                        "H": "firmalife:cured_rustic_oven_chimney"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "H ",
+                            "  "
+                        ],
+                        [
+                            "H ",
+                            "  "
+                        ],
+                        [
+                            "HV",
+                            " J"
+                        ],
+                        [
+                            "H1",
+                            "  "
+                        ],
+                        [
+                            "  ",
+                            " 0"
+                        ]
+                    ],
+                    "mapping": {
+                        "1": "firmalife:insulated_rustic_oven_bottom[facing=south,logs=4,lit=true]",
+                        "V": "firmalife:vat[sealed=false]",
+                        "J": "firmalife:jarring_station[facing=west]",
+                        "H": "firmalife:cured_rustic_oven_chimney"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "裝罐站",
+            "anchor": "jarring_station",
+            "item": "firmalife:jarring_station",
+            "text": "$(thing)裝罐站$()用來從$(l:cooking/cooking_methods#vat)大鍋$()自動填裝$(6)$(t:附蓋的空罐)罐子$()。裝罐站的一側有出料口，應朝向大鍋。$(br)當大鍋產出果醬時，它會自動將果醬裝入罐中並封口。"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "電烤箱",
+            "anchor": "electric_oven",
+            "text": "$(item)電烤箱$()是$(tfg)新增的機器，使用$(thing)EU$()自動烹煮食物。",
+            "enable_visualize": false,
+            "multiblock": {
+                "pattern": [
+                    [
+                        "A"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "A": "tfg:lv_food_oven"
+                }
+            }
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "食物調理機",
+            "anchor": "food_processor",
+            "text": "$(item)食物調理機$()是$(tfg_short)新增的另一台機器，使用$(thing)EU$()自動製作餐點或加工食材。",
+            "enable_visualize": false,
+            "multiblock": {
+                "pattern": [
+                    [
+                        "A"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "A": "tfg:lv_food_processor"
+                }
+            }
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "延伸閱讀",
+            "anchor": "relations",
+            "entries": [
+                "tfg:cooking/food_and_water",
+                "tfg:cooking/decay",
+                "tfg:the_world/wild_animals"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 4,
+    "extra_recipe_mappings": {
+        "tfc:wrought_iron_grill": 4,
+        "tfc:pot": 6,
+        "tfc:ceramic/unfired_pot": 6,
+        "tfc:ceramic/pot": 6,
+        "firmalife:oven_insulation": 21,
+        "firmalife:rustic_finish": 22,
+        "firmalife:tile_finish": 22,
+        "firmalife:stone_finish": 22,
+        "firmalife:oven_hopper": 23,
+        "firmalife:ashtray": 24,
+        "firmalife:vat": 26,
+        "firmalife:jarring_station": 29,
+        "tfg:lv_food_oven": 30,
+        "tfg:mv_food_oven": 30,
+        "tfg:hv_food_oven": 30,
+        "tfg:ev_food_oven": 30,
+        "tfg:iv_food_oven": 30,
+        "tfg:luv_food_oven": 30,
+        "tfg:zpm_food_oven": 30,
+        "tfg:uv_food_oven": 30,
+        "tfg:lv_food_processor": 31,
+        "tfg:mv_food_processor": 31,
+        "tfg:hv_food_processor": 31,
+        "tfg:ev_food_processor": 31,
+        "tfg:iv_food_processor": 31,
+        "tfg:luv_food_processor": 31,
+        "tfg:zpm_food_processor": 31,
+        "tfg:uv_food_processor": 31
+    }
+}

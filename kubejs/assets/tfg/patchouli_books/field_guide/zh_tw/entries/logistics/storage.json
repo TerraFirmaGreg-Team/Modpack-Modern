@@ -1,0 +1,595 @@
+{
+    "name": "儲物",
+    "category": "tfg:logistics",
+    "icon": "tfc:wood/chest/douglas_fir",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(li)$(bold)物品儲存$()$(li2)$(l:logistics/storage#chests)箱子$()$(li2)$(l:logistics/storage#crates)板條箱$()$(li2)$(l:logistics/storage#vaults)保險庫$()$(li2)$(l:logistics/storage#super_chests)超級箱$()$(li)$(bold)物品與流體儲存$()$(li2)$(l:logistics/storage#ae2)ME 儲存$()$(li2)$(l:logistics/storage#kegs)酒桶$()$(li)$(bold)流體儲存$()$(li2)$(l:logistics/storage#barrels)木桶$()$(li2)$(l:logistics/storage#drums)桶$()$(li2)$(l:logistics/storage#fluid_tanks)流體儲罐$()$(li2)$(l:logistics/storage#multiblock_tanks)多方塊儲罐$()$(li2)$(l:logistics/storage#super_tanks)超級缸$()",
+            "title": "索引",
+            "anchor": "index"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "簡介",
+            "anchor": "intro",
+            "text": "在$(tfg)中，你會累積大量的物品、材料和流體。建立龐大的儲存系統來整理所有東西非常重要。儲存最重要的兩個面向是$(thing)容量$()和$(thing)限制$()。關於隨身的物品欄管理，你應該閱讀$(l:logistics/personal_storage)個人儲物$()。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "箱子",
+            "anchor": "chests",
+            "item": "tag:forge:chests",
+            "text": "箱子可以存放 18 個物品，大箱子可以存放 36 個。箱子可以容納最大到$(l:game_mechanics/size_and_weight)大$()的物品。$(br)如果箱子裡有$(thing)食物$()，就會引來老鼠。所以最好把它們存放在$(item)小缸$()中。"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "enable_visualize": false,
+            "text": "$(bold)提示$()：箱子有各種木材的變體！",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "Y"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "Y": "#forge:chests/wooden[facing=north,type=single]"
+                }
+            }
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "板條箱",
+            "anchor": "crates",
+            "item": "tag:gtceu:crates",
+            "text": "在儲物方面，GregTech 有可以容納任何尺寸物品的$(item)板條箱$()，等級越高容量越大，從 27 到 144 個欄位不等。$(br)板條箱支援$(thing)物品篩選器$()和$(thing)腐爛物銷毀覆蓋板$()等物流覆蓋板。$(br)你甚至可以用$(item)膠帶$()包住板條箱，讓它被破壞時保留內容物，方便運送大量物品。"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "enable_visualize": false,
+            "text": "$(bold)提示$()：木製板條箱相當便宜，很適合用來存放原木。",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "#gtceu:crates"
+                }
+            }
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "保險庫",
+            "anchor": "vaults",
+            "item": "create:item_vault,create_connected:item_silo",
+            "text": "機械動力的$(item)保險庫$()是集中存放大量物品，或為$(thing)動態結構$()增加儲存空間的好方法。$(br)保險庫可以組成大型立體結構，每個保險庫增加 20 個欄位。你無法手動放入或取出保險庫中的物品，需要使用漏斗等物品物流方式。"
+        },
+        {
+            "type": "tfg:multimultiblock",
+            "text": "$(bold)提示$()：$(item)貨櫃$()是保險庫的彩色替代品。",
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "       ",
+                            "       ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            "       ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            "   0   ",
+                            "   X   "
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "create:item_vault[axis=z,large=false]"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "       ",
+                            "       ",
+                            "       "
+                        ],
+                        [
+                            "       ",
+                            " XXXXX ",
+                            " XXXXX "
+                        ],
+                        [
+                            "       ",
+                            " XX0XX ",
+                            " XXXXX "
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "create:item_vault[axis=z,large=false]",
+                        "X": "create:item_vault[axis=z,large=false]"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "XXXXXXX",
+                            "XXXXXXX",
+                            "XXXXXXX"
+                        ],
+                        [
+                            "XXXXXXX",
+                            "XXXXXXX",
+                            "XXXXXXX"
+                        ],
+                        [
+                            "XXXXXXX",
+                            "XXX0XXX",
+                            "XXXXXXX"
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "create:item_vault[axis=z,large=false]",
+                        "X": "create:item_vault[axis=z,large=true]"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "超級箱",
+            "anchor": "super_chests",
+            "item": "tag:gtceu:super_chests",
+            "text": "超級箱和量子箱是存放數量驚人的單一種類物品的最佳方式。箱子可容納的物品數量隨等級增加，從 10,000 到 1,024,000,000 個不等。超級箱還內建物品銷毀、鎖定和自動輸出選項。"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "enable_visualize": false,
+            "text": "$(bold)提示$()：超級箱可以在裝有物品的情況下撿起。",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "#gtceu:super_chests"
+                }
+            }
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "ME 儲存",
+            "anchor": "ae2",
+            "item": "ae2:drive",
+            "text": "Advanced Energistics 的$(item)驅動器$()和$(item)儲存元件$()可以將你的儲存數位化，建立功能強大且高密度的物流與合成網路。連接$(item)ME 控制器$()和$(thing)終端機$()即可查看其中的物品。"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "enable_visualize": false,
+            "text": "$(bold)提示$()：等級越高的儲存元件可以容納更多種類的物品和更多「位元組」。",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "ae2:drive"
+                }
+            }
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "酒桶",
+            "anchor": "kegs",
+            "item": "tag:firmalife:big_barrels",
+            "text": "$(item)酒桶$()具有同時存放大量物品$(italics)和$()流體的獨特能力。$(br)酒桶可以裝木桶能裝的任何流體，最多 80,000 mB，並可以存放最多 36 組$(l:game_mechanics/size_and_weight)大$()物品。$(br2)酒桶無法像木桶一樣處理配方或熟成酒類。"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "enable_visualize": false,
+            "text": "$(bold)提示$()：你可以從酒桶的任何方塊自動放入和取出。",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "67",
+                        "45"
+                    ],
+                    [
+                        "23",
+                        "01"
+                    ]
+                ],
+                "mapping": {
+                    "0": "firmalife:wood/big_barrel/oak[facing=south,barrel_part=0]",
+                    "1": "firmalife:wood/big_barrel/oak[facing=south,barrel_part=1]",
+                    "2": "firmalife:wood/big_barrel/oak[facing=south,barrel_part=2]",
+                    "3": "firmalife:wood/big_barrel/oak[facing=south,barrel_part=3]",
+                    "4": "firmalife:wood/big_barrel/oak[facing=south,barrel_part=4]",
+                    "5": "firmalife:wood/big_barrel/oak[facing=south,barrel_part=5]",
+                    "6": "firmalife:wood/big_barrel/oak[facing=south,barrel_part=6]",
+                    "7": "firmalife:wood/big_barrel/oak[facing=south,barrel_part=7]"
+                }
+            }
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "木桶",
+            "anchor": "barrels",
+            "item": "tag:tfc:barrels",
+            "text": "$(l:craftsmanship/barrels)木桶$()不只能用於配方。它們是儲存大量流體非常便宜的方式，每個木桶最多可以裝 10,000 mB。$(br)將木桶橫放時，它可以從水龍頭將流體滴入下方的容器，以穩定的速度自動輸出。$(br)你可以背著裝滿的木桶來運送其內容物。"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "enable_visualize": false,
+            "text": "$(bold)提示$()：木桶在打開並暴露於天空下時可以收集雨水。",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "#tfc:barrels[facing=up]"
+                }
+            }
+        },
+        {
+            "type": "patchouli:text",
+            "title": "桶",
+            "anchor": "drums",
+            "item": "tag:gtceu:drums",
+            "text": "$(item)桶$()很適合用來儲存和攜帶流體。它們可以裝大量的單一種類流體，等級越高容量越大，從 32,000 到 1,024,000 mB 不等。$(br2)桶被破壞時會保留其中的流體，非常適合用來搬運流體。$(br2)手持$(thing)軟錘$()或$(thing)螺絲起子$()對桶按下$(item)$(k:key.use)$()，可以讓它自動從底面輸出流體。"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "enable_visualize": false,
+            "text": "$(bold)提示$()：桶的各面都可以裝上流體物流覆蓋板。",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "#gtceu:drums"
+                }
+            }
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "流體儲罐",
+            "anchor": "fluid_tanks",
+            "item": "create:fluid_tank,create_connected:fluid_vessel,fluidlogistics:multi_fluid_tank",
+            "text": "$(item)流體儲罐$()可以視為$(l:logistics/storage#vaults)保險庫$()的流體版本。每個儲罐可以裝 32,000 mB，並可以組成結構來擴充容量。$(br2)$(item)多流體儲罐$()可以同時裝多種流體，但無法手動互動。"
+        },
+        {
+            "type": "tfg:multimultiblock",
+            "text": "$(bold)提示$()：手持$(thing)扳手$()對儲罐按下$(item)$(k:key.use)$()可以隱藏/顯示它的視窗。",
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ],
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ],
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ],
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ],
+                        [
+                            "   ",
+                            " 0 ",
+                            "   "
+                        ],
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "create:fluid_tank[bottom=true,shape=window,top=true]"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ],
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ],
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ],
+                        [
+                            "   ",
+                            "54 ",
+                            "67 "
+                        ],
+                        [
+                            "   ",
+                            "10 ",
+                            "23 "
+                        ],
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "create:fluid_tank[bottom=true,shape=window_sw,top=false]",
+                        "1": "create:fluid_tank[bottom=true,shape=window_nw,top=false]",
+                        "2": "create:fluid_tank[bottom=true,shape=window_ne,top=false]",
+                        "3": "create:fluid_tank[bottom=true,shape=window_se,top=false]",
+                        "4": "create:fluid_tank[bottom=false,shape=window_sw,top=true]",
+                        "5": "create:fluid_tank[bottom=false,shape=window_nw,top=true]",
+                        "6": "create:fluid_tank[bottom=false,shape=window_ne,top=true]",
+                        "7": "create:fluid_tank[bottom=false,shape=window_se,top=true]"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ],
+                        [
+                            "TYT",
+                            "YTY",
+                            "TYT"
+                        ],
+                        [
+                            "PWP",
+                            "WPW",
+                            "PWP"
+                        ],
+                        [
+                            "PWP",
+                            "WPW",
+                            "PWP"
+                        ],
+                        [
+                            "BXB",
+                            "X0X",
+                            "BXB"
+                        ],
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "create:fluid_tank[bottom=true,shape=plain,top=false]",
+                        "B": "create:fluid_tank[bottom=true,shape=plain,top=false]",
+                        "X": "create:fluid_tank[bottom=true,shape=window,top=false]",
+                        "W": "create:fluid_tank[bottom=false,shape=window,top=false]",
+                        "P": "create:fluid_tank[bottom=false,shape=plain,top=false]",
+                        "T": "create:fluid_tank[bottom=false,shape=plain,top=true]",
+                        "Y": "create:fluid_tank[bottom=false,shape=window,top=true]"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "多方塊儲罐",
+            "anchor": "multiblock_tanks",
+            "item": "gtceu:wooden_multiblock_tank,gtceu:bronze_multiblock_tank,gtceu:steel_multiblock_tank",
+            "text": "$(item)多方塊儲罐$()是專門用來儲存大量流體的結構。每種類型最多可以有兩個閥門，容量隨等級增加。$(li)$(bold)木製儲罐$()：容量 1,000,000 mB$(li)$(bold)青銅儲罐$()：容量 4,000,000 mB$(li)$(bold)鋼製儲罐$()：容量 8,000,000 mB"
+        },
+        {
+            "type": "tfg:multimultiblock",
+            "text": "$(bold)提示$()：多方塊儲罐會從其底面的閥門自動推出流體。",
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ],
+                        [
+                            "CCC",
+                            "CVC",
+                            "CCC"
+                        ],
+                        [
+                            "CCC",
+                            "T C",
+                            "CCC"
+                        ],
+                        [
+                            "CCC",
+                            "C0C",
+                            "CCC"
+                        ],
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "gtceu:wooden_tank_valve[facing=down]",
+                        "C": "gtceu:wood_wall",
+                        "T": "gtceu:wooden_multiblock_tank[facing=north,upwards_facing=north]",
+                        "V": "gtceu:wooden_tank_valve[facing=up]"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ],
+                        [
+                            "CCC",
+                            "CVC",
+                            "CCC"
+                        ],
+                        [
+                            "CCC",
+                            "T C",
+                            "CCC"
+                        ],
+                        [
+                            "CCC",
+                            "C0C",
+                            "CCC"
+                        ],
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "gtceu:bronze_tank_valve[facing=down]",
+                        "C": "gtceu:steam_machine_casing",
+                        "T": "gtceu:bronze_multiblock_tank[facing=north,upwards_facing=north]",
+                        "V": "gtceu:bronze_tank_valve[facing=up]"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ],
+                        [
+                            "CCC",
+                            "CVC",
+                            "CCC"
+                        ],
+                        [
+                            "CCC",
+                            "T C",
+                            "CCC"
+                        ],
+                        [
+                            "CCC",
+                            "C0C",
+                            "CCC"
+                        ],
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "gtceu:steel_tank_valve[facing=down]",
+                        "C": "gtceu:solid_machine_casing",
+                        "T": "gtceu:steel_multiblock_tank[facing=north,upwards_facing=north]",
+                        "V": "gtceu:steel_tank_valve[facing=up]"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "超級缸",
+            "anchor": "super_tanks",
+            "item": "tag:gtceu:super_tanks",
+            "text": "超級缸和量子儲罐的運作方式與對應的$(l:logistics/storage#super_chests)超級箱$()類似。它們可以儲存數量驚人的單一種類流體――從 1,000,000 到 1,024,000,000 mb 不等――隨等級增加。$(br)超級缸有自動輸出、銷毀和鎖定的選項。"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "enable_visualize": false,
+            "text": "$(bold)提示$()：超級缸可以在裝有流體的情況下撿起。",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "#gtceu:super_tanks"
+                }
+            }
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "延伸閱讀",
+            "anchor": "relations",
+            "entries": [
+                "tfg:craftsmanship/barrels",
+                "tfg:logistics/personal_storage",
+                "tfg:game_mechanics/size_and_weight",
+                "tfg:logistics/create",
+                "tfg:logistics/trains"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "extra_recipe_mappings": {
+        "tag:forge:chests": 2,
+        "tag:gtceu:crates": 4,
+        "create:item_vault": 6,
+        "tag:createdeco:shipping_containers": 6,
+        "tag:gtceu:super_chests": 8,
+        "tag:firmalife:big_barrels": 12,
+        "tag:gtceu:drums": 16,
+        "create:fluid_tank": 18,
+        "fluidlogistics:multi_fluid_tank": 18,
+        "gtceu:wooden_multiblock_tank": 20,
+        "gtceu:wooden_tank_valve": 20,
+        "gtceu:bronze_multiblock_tank": 20,
+        "gtceu:bronze_tank_valve": 20,
+        "gtceu:steel_multiblock_tank": 20,
+        "gtceu:steel_tank_valve": 20,
+        "tag:gtceu:super_tanks": 22
+    }
+}

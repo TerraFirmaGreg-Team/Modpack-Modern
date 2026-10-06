@@ -1,0 +1,18 @@
+{
+    "components": [
+        {
+            "recipes": "#recipes",
+            "x": 0,
+            "y": 0,
+            "type": "patchouli:custom",
+            "class": "net.dries007.tfc.compat.patchouli.component.RockKnappingComponent"
+        },
+        {
+            "x": 0,
+            "y": 99,
+            "text": "#text",
+            "type": "patchouli:text"
+        }
+    ],
+    "__comment__": "This file was automatically created by mcresources"
+}

@@ -1,0 +1,42 @@
+{
+    "name": "Кошик для врожаю",
+    "icon": "tfg:harvest_basket",
+    "category": "tfg:agriculture",
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "title": "Кошик для врожаю",
+            "item": {
+                "tag": "tfg:harvester"
+            },
+            "text": "Створені для тих, хто має невисокий зріст — $(thing)кошики для врожаю$() є саме тим інструментом, який потрібен для збирання плодів із дерев та кущів.$(br)Щоб скористатися кошиком для врожаю, натисни $(item)$(k:key.use)$() по $(l:the_world/wild_fruits#fruit_trees)фруктовому дереві$(), $(l:the_world/wild_fruits#tall_bushes)плодовому кущу$(), $(l:agriculture/growing_crops#growing_grapes)шпалера для винограду$(), $(l:agriculture/greenhouse#bonsai_planter)лоток для бонсаю$(), $(l:agriculture/greenhouse#trellis_planter)жардиньєрка для кущів$() або $(l:agriculture/greenhouse#hanging_planter)підвісний лоток для рослин$(), і всі блоки в межах $(thing)радіуса 7 блоків$() будуть зібрані."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Звичайний кошик для збирання врожаю має міцність $(thing)128$(), тоді як алюмінієвий кошик не отримує жодних пошкоджень під час використання. Кошики для збирання врожаю також можна використовувати з такими пристроями, як $(thing)Create застосовувач$(), для автоматизації збору врожаю. Під час цього процесу кошики витрачатимуть свою міцність."
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": "Кошик для врожаю",
+            "recipe": "tfg:shaped/harvest_basket_from_papyrus",
+            "text": "Базовий $(item)кошик для збирання врожаю$() можна виготовити з вимоченого папірусу або твердої деревини."
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Докладніше",
+            "anchor": "relations",
+            "entries": [
+                "tfg:agriculture/growing_crops",
+                "tfg:agriculture/greenhouse",
+                "tfg:agriculture/composting",
+                "tfg:the_world/wild_crops",
+                "tfg:the_world/wild_fruits"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 8,
+    "extra_recipe_mappings": {
+        "tag:tfg:harvester": 0
+    }
+}

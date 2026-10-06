@@ -1,0 +1,594 @@
+{
+    "name": "鐵砧",
+    "category": "tfg:craftsmanship",
+    "icon": "tfc:metal/anvil/bronze",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "anchor": "index",
+            "text": "$(li)$(bold)$(l:craftsmanship/anvils#stone_anvil)石砧$()$(li2)$(l:craftsmanship/anvils#raw_rock)取得原石$()$(li)$(bold)$(l:craftsmanship/anvils#welding)焊接$()$(li)$(bold)$(l:craftsmanship/anvils#metal_anvil)金屬鐵砧$()$(li2)$(l:craftsmanship/anvils#tiers)等級$()$(li)$(bold)$(l:craftsmanship/anvils#working)鍛造金屬$()$(li2)$(l:craftsmanship/anvils#forging_bonus)鍛造加成$()$(li)$(bold)$(l:craftsmanship/anvils#helve_hammer)杵錘$()$(li)$(bold)$(l:craftsmanship/anvils#anvil_helper)鐵砧輔助指南$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "intro",
+            "title": "簡介",
+            "text": "除了直接澆鑄工具之外，另一種方法(也是較高等級金屬的必要條件)是使用$(thing)鐵砧$()。鐵砧是一種可以進行兩種不同程序的方塊：$(l:craftsmanship/anvils#working)鍛造$()和$(l:craftsmanship/anvils#welding)焊接$()。鐵砧可以焊接製作上一等級鐵砧所需金屬的雙重錠，而要用該金屬鍛造其他物品，就必須有那個等級的鐵砧。"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "stone_anvil",
+            "title": "石砧",
+            "text": "首先，你需要取得一塊$(thing)火成原岩$()，也就是$(l:the_world/geology#igneous_extrusive)火成噴出岩$()(流紋岩、玄武岩、安山岩或英安岩)或$(l:the_world/geology#igneous_intrusive)火成侵入岩$()(花崗岩、閃長岩、輝長岩、輝石岩或角斑岩)。你可以在世界中找到裸露的方塊直接使用，也可以從周圍的岩石中$(l:craftsmanship/anvils#raw_rock)取出一塊$()。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "你還需要任何一種$(thing)錘子$()。要製作鐵砧，只要手持$(thing)錘子$()對原岩方塊裸露的$(thing)頂面$()按下$(item)$(k:key.use)$()，就完成了！鐵砧就此成形。$(br2)鐵砧有$(l:craftsmanship/anvils#tiers)等級$()之分，石砧是第 0 級――最低等級。它只能$(l:craftsmanship/anvils#welding)焊接$()第 I 級的金屬錠。"
+        },
+        {
+            "type": "tfg:multimultiblock",
+            "text": "將中間的岩石塊製成石砧。",
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            " 0 "
+                        ],
+                        [
+                            "RRR"
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "AIR",
+                        "R": "tfc:rock/raw/gabbro"
+                    }
+                },
+                "tfc:rock_anvil"
+            ]
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "raw_rock",
+            "text": "要取得完整的原岩方塊而不讓它碎成小石頭，必須將它$(thing)取出$()。你必須挖掉原岩方塊六個面上的所有方塊。當它的每一面都被空氣包圍時，就會掉落成可以撿起的物品。",
+            "title": "取得岩石"
+        },
+        {
+            "type": "tfg:multimultiblock",
+            "text": "挖掉岩石相鄰的六面——完成後，將作為物品掉落。",
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "   ",
+                            " R ",
+                            "   "
+                        ],
+                        [
+                            " R ",
+                            "RRR",
+                            " R "
+                        ],
+                        [
+                            "   ",
+                            " 0 ",
+                            "   "
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "tfc:rock/raw/gabbro",
+                        "R": "tfc:rock/raw/gabbro"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ],
+                        [
+                            " R ",
+                            "RRR",
+                            " R "
+                        ],
+                        [
+                            "   ",
+                            " 0 ",
+                            "   "
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "tfc:rock/raw/gabbro",
+                        "R": "tfc:rock/raw/gabbro"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ],
+                        [
+                            "   ",
+                            "RRR",
+                            " R "
+                        ],
+                        [
+                            "   ",
+                            " 0 ",
+                            "   "
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "tfc:rock/raw/gabbro",
+                        "R": "tfc:rock/raw/gabbro"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ],
+                        [
+                            "   ",
+                            " RR",
+                            " R "
+                        ],
+                        [
+                            "   ",
+                            " 0 ",
+                            "   "
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "tfc:rock/raw/gabbro",
+                        "R": "tfc:rock/raw/gabbro"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ],
+                        [
+                            "   ",
+                            " RR",
+                            "   "
+                        ],
+                        [
+                            "   ",
+                            " 0 ",
+                            "   "
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "tfc:rock/raw/gabbro",
+                        "R": "tfc:rock/raw/gabbro"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ],
+                        [
+                            "   ",
+                            " R ",
+                            "   "
+                        ],
+                        [
+                            "   ",
+                            " 0 ",
+                            "   "
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "tfc:rock/raw/gabbro",
+                        "R": "tfc:rock/raw/gabbro"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "   ",
+                            "   ",
+                            "   "
+                        ],
+                        [
+                            "   ",
+                            " R ",
+                            "   "
+                        ],
+                        [
+                            "   ",
+                            " 0 ",
+                            "   "
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "AIR",
+                        "R": "tfc:rock/raw/gabbro"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "welding",
+            "text": "焊接是將兩個物品融合成新物品的程序。無論在$(l:craftsmanship/anvils#stone_anvil)石砧$()還是$(l:craftsmanship/anvils#metal_anvil)金屬鐵砧$()上，焊接的方式都相同。$(br2)首先，開啟鐵砧介面，將要焊接的兩個物品放入最左側的兩個欄位。",
+            "title": "焊接"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "鐵砧中還需要至少一個$(item)助熔劑$()來輔助焊接。接著，當兩個物品都$(l:game_mechanics/heating)夠熱$()可以焊接時(提示框會顯示「可焊接」)，用任何$(thing)錘子$()敲擊鐵砧，或按下鐵砧介面上的焊接按鈕。你會聽到敲打聲，兩個物品就會焊接在一起。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tag:tfc:anvils",
+            "anchor": "metal_anvil",
+            "title": "金屬鐵砧",
+            "text": "金屬鐵砧是金屬加工必備的重要工具，它能讓你將金屬錠鍛造和焊接成各種不同的形狀。$(br2)$(l:craftsmanship/anvils#working)鍛造$()用於將一塊金屬塑形成另一種形狀，而$(l:craftsmanship/anvils#welding)焊接$()則用於將兩個金屬物品融合成一個整體。"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "ABC",
+                        "D0F",
+                        "GHI"
+                    ]
+                ],
+                "mapping": {
+                    "A": "tfc:metal/anvil/copper",
+                    "B": "tfc:metal/anvil/bronze",
+                    "C": "tfc:metal/anvil/black_bronze",
+                    "D": "tfc:metal/anvil/bismuth_bronze",
+                    "0": "tfc:metal/anvil/wrought_iron",
+                    "F": "tfc:metal/anvil/steel",
+                    "G": "tfc:metal/anvil/black_steel",
+                    "H": "tfc:metal/anvil/red_steel",
+                    "I": "tfc:metal/anvil/blue_steel"
+                }
+            },
+            "name": "",
+            "text": "所有類型的金屬砧。",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "tfc:crafting/metal/anvil/copper",
+            "text": "鐵砧可以用對應金屬的$(thing)雙重錠$()合成。製作第一個鐵砧時，你必須先在$(l:craftsmanship/anvils#stone_anvil)石砧$()上$(l:craftsmanship/anvils#welding)焊接$()雙重錠。鐵砧非常重，一次只能攜帶一個。"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "tiers",
+            "text": "砧有$(thing)等級$()之分。等級決定了砧可以加工的金屬與材料。只有等級相同或比砧低的材料才能在砧上鍛造，砧能焊接金属最大等級為砧的等級 +1。$(br)$(li)$(bold)第0級$()：石砧$(li)$(bold)第1級$()：銅$(li)$(bold)第2級$()：鉍青銅、黑青銅铜、青銅$(li)$(bold)第3級$()：鍛鐵$(li)$(bold)第4級$()：鋼$(li)$(bold)第5級$()：黑鋼$(li)$(bold)第6級$()：紅鋼、藍鋼"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "working",
+            "text": "要在鐵砧上鍛造物品，你需要對鐵砧按下$(item)$(k:key.use)$()開啟鐵砧介面，如下一張圖所示。左側有兩個物品輸入欄位――鍛造時，目標物品必須放在右側的欄位。鍛造時你還需要一把錘子，放在鐵砧右側的錘子欄位$(bold)或$()拿在主手上都可以。錘子會在鍛造物品時逐漸損耗。",
+            "title": "鍛造"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/gui/anvil_empty.png"
+            ],
+            "text": "砧介面。",
+            "border": false
+        },
+        {
+            "type": "patchouli:text",
+            "text": "接著你需要選擇$(thing)藍圖$()，也就是你想製作的物品。對捲軸按鈕按下$(item)$(k:key.attack)$()，然後選擇要製作的物品。畫面會回到鐵砧介面，但現在你已經選好藍圖了。捲軸會顯示你正在製作的物品，$(thing)規則$()和$(thing)目標$()也會顯示出來。"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/gui/anvil_in_use.png"
+            ],
+            "text": "選擇製作鎬頭。",
+            "border": false
+        },
+        {
+            "type": "patchouli:text",
+            "text": "砧介面中間有條帶有雙色指針的進度條。$(2)綠色$()是當前工作進度，\n$(4)紅色$()是目標進度。你的目標是讓當前進度與目標進度對齊。$(br2)為了這個目標，你得使用$(2)綠色$()與$(4)紅色$()的動作按鈕來移動你的當前進度，移動量按照動作決定。",
+            "title": "鍛造目標"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(2)綠色$()動作一定會讓你的目標$(bold)向右$()移動，而$(4)紅色$()動作一定會讓你的進度$(bold)向左$()移動。請注意，如果你讓目標超出了進度條，就表示物品鍛造過度，你會失去那個金屬錠。不過，鍛造時你還必須符合$(thing)規則$()……"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(thing)規則$()是指砧介面上方顯示的二或三個圖示。它們代表為了使工作成功，必須採取的特定順序與行動。比方說，有條規則是$(2)彎曲倒數第二$()意思是說倒數第二個行動$(bold)必須$()是$(2)彎曲$()。",
+            "title": "鍛造規則"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "你最後的三個動作會顯示在規則正下方。當某條規則被滿足時，它的外框會變成綠色。所有規則都滿足時即為成功。$(br2)最後，你必須留意物品的$(l:game_mechanics/heating)溫度$()。金屬必須高於特定溫度、提示框顯示「可鍛造」時才能鍛造。你可以在鍛造過程中取出物品重新加熱。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "看不懂嗎？沒關係，要消化的內容很多，但其實只是簡單的加減法。請查看我們關於如何使用「鐵砧輔助」資源包的$(l:craftsmanship/anvils#anvil_helper)逐步指南$()，它能讓鍛造變得很簡單！"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "鍛造可能很繁瑣，需要很多步驟才能做對。不過，效率高是有回報的。有些物品――例如工具頭――在以很少或最少的步驟鍛造時，會依鍛造的效率獲得$(thing)鍛造加成$()。這個加成會套用到使用該物品的工具上，例如用來製作鎬的鎬頭。$(br)我們也有一份關於如何完美鍛造任何物品的$(l:craftsmanship/anvils#how_to_perfectly_forge)逐步指南$()！",
+            "title": "鍛造評價",
+            "anchor": "forging_bonus"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "gtceu:wrought_iron_pickaxe{\"tfc:forging_bonus\":4}",
+            "title": "完美鍛造",
+            "link_recipes": false,
+            "text": "鍛造加成共有四個等級：$(li)尚可鍛造$(li)精良鍛造$(li)專家鍛造$(li)完美鍛造$(br2)依工具不同，這些加成會提升工具的能力――讓它$(t:類似耐久附魔)$(6)更不容易損壞$()、$(t:類似效率附魔)$(6)挖掘更快$()，和/或$(t:類似鋒利附魔)$(6)在戰鬥中造成更多傷害$()。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "helve_hammer",
+            "title": "杵錘",
+            "item": "vintageimprovements:helve_hammer",
+            "text": "$(item)杵錘$()是一種使用$(thing)機械能$()自動執行許多鐵砧功能的裝置。$(br)杵錘的錘擊面下方需要有鐵砧才能運作。鐵砧的$(l:craftsmanship/anvils#tiers)等級$()決定需要敲擊幾次。要將物品放入杵錘，只要按下$(item)$(k:key.drop)$()把它們$(bold)丟$()到鐵砧上即可。在錘頭方塊上加裝漏斗可以自動取出物品。"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "text": "附有鐵砧的杵錘。",
+            "enable_visualize": true,
+            "multiblock": {
+                "pattern": [
+                    [
+                        "H0B"
+                    ],
+                    [
+                        "A  "
+                    ]
+                ],
+                "mapping": {
+                    "0": "vintageimprovements:helve_structure[facing=north]",
+                    "B": "vintageimprovements:helve_kinetic[facing=north]",
+                    "H": "vintageimprovements:helve_hammer[facing=north]",
+                    "A": "tfc:metal/anvil/black_bronze[facing=west]"
+                }
+            }
+        },
+        {
+            "type": "patchouli:multiblock",
+            "text": "建議製作兩台杵錘並將它們串聯，以自動處理$(l:craftsmanship/bloomery)方胚$()和$(l:craftsmanship/blast_furnace)鋼$()。",
+            "enable_visualize": true,
+            "multiblock": {
+                "pattern": [
+                    [
+                        "C  ",
+                        "F  ",
+                        "   ",
+                        "   "
+                    ],
+                    [
+                        "   ",
+                        "HSB",
+                        "F  ",
+                        "   "
+                    ],
+                    [
+                        "   ",
+                        "A  ",
+                        "H0B",
+                        "F  "
+                    ],
+                    [
+                        "   ",
+                        "R  ",
+                        "A  ",
+                        "XC "
+                    ]
+                ],
+                "mapping": {
+                    "0": "vintageimprovements:helve_structure[facing=north]",
+                    "S": "vintageimprovements:helve_structure[facing=north]",
+                    "B": "vintageimprovements:helve_kinetic[facing=north]",
+                    "H": "vintageimprovements:helve_hammer[facing=north]",
+                    "A": "tfc:metal/anvil/bismuth_bronze[facing=west]",
+                    "F": "create:andesite_funnel[facing=east,extracting=true]",
+                    "X": "minecraft:hopper[facing=south]",
+                    "C": "#forge:chests[facing=north]",
+                    "R": "#minecraft:planks"
+                }
+            }
+        },
+        {
+            "type": "patchouli:empty",
+            "draw_filler": false
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "anvil_helper",
+            "title": "鐵砧輔助指南",
+            "text": "在$(l:craftsmanship/anvils#metal_anvil)鐵砧$()上$(l:craftsmanship/anvils#working)鍛造$()是$(tfg)中的關鍵程序，因為你在$(thing)蒸汽與機械時代$()的大部分工作都需要使用鐵砧。$(br)本指南分為兩部分：$(l:craftsmanship/anvils#ui_explained)了解介面$()和$(l:craftsmanship/anvils#how_to_perfectly_forge)如何完美鍛造$()。$(br2)本模組包有一個名為$(l:https://www.curseforge.com/minecraft/texture-packs/tfc-anvil-helper-patched)TFC Anvil Helper$()的自訂$(thing)資源包$()，你需要啟用它才能看懂本指南。$()"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfg:textures/gui/field_guide/anvil_working_guide/anvil_ui.png"
+            ],
+            "border": false,
+            "text": "啟用TFC Anvil Helper後的砧介面"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfg:textures/gui/field_guide/anvil_working_guide/anvil_ui_marked.png"
+            ],
+            "border": false,
+            "anchor": "ui_explained",
+            "title": "認識介面",
+            "text": "啟用TFC Anvil Helper資源包後砧的介面以顏色標記。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(#ff0000)1.選擇你要在砧內製造的物品。$()每個物品都有特定的一組所需$(#be00ff)步驟$()和$(#ff6b00)工作量$() $(br)$(#ff00c6)2. 目前正在處理的輸入物品。$() $(br)$(#be00ff)3.必要步驟$()，步驟必須按照順序才算完成。總共有4種不同的順序(見下一頁)："
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfg:textures/gui/field_guide/anvil_working_guide/anvil_ui_marked.png"
+            ],
+            "border": false
+        },
+        {
+            "type": "patchouli:text",
+            "text": "(注意：X 是任意步驟的通配符)$(br)$(li)x_任意：步驟可以在後3個動作任意位置執行。$()$(li)x_最後：必須是最後一個步驟。$()$(li)x_不能最後： 不能是最後一個步驟。$()$(li)x_倒數第二：必須是倒數第二個步驟。$()$(li)x_倒數第三：必須是倒數第三個步驟$()"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfg:textures/gui/field_guide/anvil_working_guide/anvil_ui_marked.png"
+            ],
+            "border": false
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(#2e00ff)4.步驟的類別$()每種步驟類別會增/減當前作業值。在選單內由左至右由上至下分別為：$(li)輕敲: -3$()$(li)敲打: -6$()$(li)沖壓: +2$()$(li)彎曲: +7$()$(li)重敲: -9$()$(li)拔長: -15$()$(li)墩粗: +13$()$(li)收縮: +16$()"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfg:textures/gui/field_guide/anvil_working_guide/anvil_ui_marked.png"
+            ],
+            "border": false
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(#00a7ff)5.$() 放置錘子的欄位，焊接時也在這裡放置助熔劑。$(br)$(#00ff26)6. $()物品目前的鍛造值，執行不同的步驟會增加或減少物品的鍛造值。$(br)$(#fff400)7. $()目標鍛造值，$(#00ff26)鍛造值$()必須與目標鍛造值「完全」對齊，「並且」滿足$(#ff00c6)必要步驟$()，物品才算完成。$(br)$(#ff6b00)8. $()鍛造條，用來將鍛造值與目標鍛造值對齊。"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "how_to_perfectly_forge",
+            "title": "完美鍛造",
+            "text": "$(thing)完美鍛造$()會損壞的物品，例如$(thing)工具頭$()、$(thing)武器$()和$(thing)盔甲$()，鍛造時使用的總步驟越少，物品的耐久度和整體效率加成就越高。以極少的步驟完成物品的鍛造會讓它成為完美鍛造，不僅能讓成品獲得加成，還能減少錘子的整體損耗。"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfg:textures/gui/field_guide/anvil_working_guide/perfectly_forged_item.png"
+            ],
+            "border": false,
+            "text": "完美鍛造的鍛鐵鎬頭"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "鍛造指南",
+            "item": "gtceu:wrought_iron_pickaxe_head",
+            "text": "這部分的指南將說明如何完美鍛造任何物品，我們從鍛鐵鎬頭開始。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(bold)$(italic)免責聲明：$()$(br)雖然物品的必要步驟和順序在$(tfg_short)的所有世界中都相同，但目標鍛造值會因世界種子而異。因此，本指南「假設」鍛鐵鎬頭的目標鍛造值為$(bold)83$()。"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "鍛造第一步",
+            "text": "鍛造之旅的第一步，是將所有必要步驟的數值加總。製作鎬頭需要以下步驟：$(li)$(bold)衝壓$()最後$()$(li)$(bold)彎曲$()非最後$()$(li)$(bold)拉伸$()非最後$()。$(br)將每個步驟下方的數值相加，就能得到我們要的數值。我們把這個數值稱為「requiredWork」。$(br)$(bold)2 + 7 + (-15) = -6$()"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfg:textures/gui/field_guide/anvil_working_guide/steps.png"
+            ],
+            "text": "這些是鎬頭的必要步驟"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "鍛造第二步",
+            "text": "雖然我們調整鍛造值的主要目標是讓它與目標鍛造值對齊，但必須同時滿足這項要求「和」步驟要求。因此，直接將鍛造值對齊目標鍛造值並不會得到理想的結果。我們可以改為計算由目標鍛造值和「requiredWork」推導出的數值"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "衍生數值取決於「必要鍛造值」正/負數號。(即：該數值為正數或負數而定)。$(li)「必要鍛造值」為正數$()$(li2)「目標鍛造值」減去「必要鍛造值」的絕對值$()$(li3)83 - 6 = $(bold)77$()$()$(li)「必要鍛造值」為負數$()$(li2)「必要鍛造值」相加「目標工作量」的絕對值$()$(li3)83 + 6 = $(bold)89$()$()"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "物品的「必要工作量」為-6，因此要尋找的數值為$(bold)89$()。$(br)您可能會好奇：如何精確獲取目標工作量的數值？其實，透過砧介面的工作條已經顯示了這項資訊。雖然僅顯示20的倍數，但透過彩色刻度線可輕鬆判讀其他數值：$(li)淺灰色：代表5的倍數$()$(li)灰色：代表奇數$()$(li)深灰色：代表偶數$()"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfg:textures/gui/field_guide/anvil_working_guide/work_bar_numbers.png",
+                "tfg:textures/gui/field_guide/anvil_working_guide/target_work_for_wrought_iron_pickaxe_head.png"
+            ]
+        },
+        {
+            "type": "patchouli:text",
+            "title": "鍛造第三步",
+            "text": "有了「目標工作量」與「必要工作量」推導出的數值後，我們現在需要達到該數值。這可以透過手動將每道步驟對應的數值加總，或使用介面列上的快速查閱表來完成。每種顏色代表介面中的步驟類型。$(br)例如：紅色 == 拔長 (+16)"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfg:textures/gui/field_guide/anvil_working_guide/work_bar_cheat_sheet.png"
+            ],
+            "text": "16 + 16 + 16 + 16 + 16 + 7 + 2 = 89"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "鍛造第四步",
+            "text": "現在我們知道了必要步驟，接下來要達到由「目標鍛造值」和「requiredWork」推導出的數值。對於總鍛造值為 83 的鎬頭，我們需要達到 89。因此要執行：(收縮 x 5)→ 彎曲 → 衝壓。$(br2)當鍛造值達到所需數值後，只要照著必要步驟執行即可，鎬頭的必要步驟是：拉伸 → 彎曲 → 衝壓。就完成了！我們得到了一個完美鍛造的物品！"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfg:textures/gui/field_guide/anvil_working_guide/wrought_iron_pickaxe_head_no_work.png",
+                "tfg:textures/gui/field_guide/anvil_working_guide/wrought_iron_pickaxe_head_some_work.png",
+                "tfg:textures/gui/field_guide/anvil_working_guide/wrought_iron_pickaxe_head_complete.png"
+            ],
+            "text": "未經鍛造的金屬錠 → 達到所需鍛造值 → 執行物品的必要步驟。"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "打個比方",
+            "text": "讓我們用其他物品來看看這個過程，例如金屬板或金屬棒。再次提醒，目標鍛造值會因世界種子而異，所以在你的世界中數值會不同。$(br)金屬板目標值：$(bold)111$()$(br)必要步驟：敲擊 x 3，順序不限。$(br)「requiredWork」：-3 x 3 = -9$(br)推導數值：111 + 9 = 120。$(br)達到數值：(收縮 x 5)→(鐓粗 x 2)→(衝壓 x 2)$(br)取得物品：120 -(輕擊 x 3)== $(bold)111$()。兩項要求都已滿足。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "金屬棒目標值：$(bold)78$()$(br)必要步驟：拉伸 → 拉伸 → 彎曲$(br)「requiredWork」：(-15 x 2) + 7 = -23$(br)推導數值：78 + 23 = 101。$(br)達到數值：(收縮 x 5)→(彎曲 x 3)$(br)取得物品：101 - 15 - 15 + 7 = 78。"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "零碎資訊",
+            "text": "若出現步驟為空欄表示該步驟可以是任意步驟。$(br2)鍛造失敗時，將物品重新熔鑄成錠來移除物品的「鍛造中」標記，得以重新嘗試完美鍛造。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "恭喜你讀到最後！如果你想在創造模式世界中跟著操作，撰寫本指南時使用的種子是$(bold)-7291708953208913102$()。"
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "延伸閱讀",
+            "anchor": "relations",
+            "entries": [
+                "tfg:craftsmanship/pottery",
+                "tfg:craftsmanship/blast_furnace",
+                "tfg:craftsmanship/metallurgy",
+                "tfg:craftsmanship/charcoal_forge",
+                "tfg:craftsmanship/crucible",
+                "tfg:craftsmanship/charcoal_pit",
+                "tfg:craftsmanship/bloomery",
+                "tfg:craftsmanship/glassworking",
+                "tfg:game_mechanics/heating"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 8,
+    "extra_recipe_mappings": {
+        "vintageimprovements:helve_hammer": 24
+    }
+}

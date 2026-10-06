@@ -1,0 +1,58 @@
+{
+	"name": "採集樹液",
+	"category": "tfg:agriculture",
+	"icon": "afc:tree_tap",
+	"pages": [
+        {
+            "type": "patchouli:text",
+            "text": "某些樹木可以採集有用的汁液。這些樹木可以產出含糖的樹液，濃縮後可製成糖漿用作甜味劑；產出乳膠，可加工成橡膠；或產出松脂，可加工成松香，蠟的替代品。"
+        },
+        {
+            "type": "patchouli:image",
+            "title": "採集楓樹樹液",
+            "images": [
+            	"afc:textures/gui/book/maple_tapping.png"
+            ],
+            "border": true
+        },
+        {
+            "type": "patchouli:text",
+            "text": "採集樹液需要三樣東西：樹木本身；樹液採集器，必須用銅錠鍛造，並安裝在至少三格高的樹幹中段；以及木桶，必須開口朝上放置在採集器正下方。如果條件正確，你的木桶會立即開始裝入樹液。$(br2)$(o)$(3)採集樹液至少需要三格自然生長的原木。"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+            	"tfg:textures/gui/field_guide/tree_tapping/tapping_kapok.png"
+            ],
+            "text": "一個有效的採集配置，用於從木棉樹中提取乳膠",
+            "border": true
+        },
+        {
+            "type": "patchouli:image",
+            "width": 1024,
+            "texture_width": 1024,
+            "height": 1024,
+            "texture_height": 1024,
+            "text": "讓樹液直接流入流體管道的開放面，可以讓採集更有效率。",
+            "title": "讓它流吧！",
+            "images": [
+            	"tfg:textures/gui/field_guide/tree_tapping/tfg_tapping.png"
+            ],
+            "border": true
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "延伸閱讀",
+            "anchor": "relations",
+            "entries": [
+            	"tfg:the_world/earth_tree_index",
+            	"tfg:cooking/cooking_methods"
+            ]
+        }
+	],
+	"read_by_default": true,
+	"sortnum": 3,
+	"extra_recipe_mappings": {
+        "afc:tree_tap": 0
+	}
+}

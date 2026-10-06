@@ -1,0 +1,225 @@
+{
+	"name": "Fauna Głębin",
+	"category": "tfg:beneath",
+	"icon": "tfc:textures/item/food/pork.png",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "index",
+			"text": "Life exists, deep below! There's quite a lot of life in the Beneath, some friendly, some foe.$(br2)This entry lists the more interesting creatures you can find.$(br)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(li)$(bold)Passive$()$(li2)$(l:beneath/beneath_fauna#axolotl)Axolotl$()$(li2)$(l:beneath/beneath_fauna#frog)Frog$()$(li2)$(l:beneath/beneath_fauna#mammutilation)Mammutilation$()$(li2)$(l:beneath/beneath_fauna#red_elk)Red Elk$()$(li2)$(l:beneath/beneath_fauna#zombie_horse)Zombie Horse$()$(li)$(bold)$(l:agriculture/jellies)Jellies$()$(li2)$(l:beneath/beneath_fauna#ice_jellie)Ice$()$(li2)$(l:beneath/beneath_fauna#plant_jellie)Plant$()$(li2)$(l:beneath/beneath_fauna#glowberry_jellie)Glowberry$()$(li2)$(l:beneath/beneath_fauna#spring_jellie)Spring$()$(li2)$(l:beneath/beneath_fauna#lava_jellie)Lava$()$(li2)$(l:beneath/beneath_fauna#biotite_jellie)Biotite$()$(li2)$(l:beneath/beneath_fauna#latex_jellie)Latex$()$(br)$(o)(Continued on next page...)$()"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(li)$(bold)Hostile$()$(li2)$(l:beneath/beneath_fauna#crocodile)Crocodile$()$(li2)$(l:beneath/beneath_fauna#piglin)Piglin$()$(li2)$(l:beneath/beneath_fauna#phantom)Phantom$()$(li2)$(l:beneath/beneath_fauna#kaolin_klayze)Kaolin Klayze$()$(li2)$(l:beneath/beneath_fauna#graphite_glayze)Graphite Glayze$()$(li2)$(l:beneath/beneath_fauna#cliff_hanger)Cliff Hanger$()$(li2)$(l:beneath/beneath_fauna#leaf_hanger)Leaf Hanger$()$(li2)$(l:beneath/beneath_fauna#endermen)Endermen$()$(li2)$(l:beneath/beneath_fauna#spectre)Spectre$()$(li2)$(l:beneath/beneath_fauna#wicked)Wicked$()$(li2)$(l:beneath/beneath_fauna#ghoul)Ghoul$()$(li2)$(l:beneath/beneath_fauna#bewereager)Bewereager$()"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "minecraft:axolotl",
+			"scale": 0.5,
+			"name": "Aksolotl",
+			"anchor": "axolotl",
+			"text": "$(thing)Aksolotle$() można spotkać w górnej i środkowej warstwie. Zwykle pływają w niewielkich zbiornikach wodnych."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfc:frog",
+			"scale": 1,
+			"name": "Żaba",
+			"anchor": "frog",
+			"text": "$(thing)Żaby$() można znaleźć w górnej i środkowej warstwie. Można je oswoić i zjeść."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "species:mammutilation",
+			"scale": 0.5,
+			"name": "Mamuminacja",
+			"anchor": "mammutilation",
+			"text": "$(thing)Mamuminacje$() to nieumarłe mamuty. Możesz skrócić ich cierpienie, zdobywając przy tym trochę $(item)wełny$()."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "beneath:red_elk",
+			"scale": 0.7,
+			"name": "Czerwony jeleń",
+			"anchor": "red_elk",
+			"text": "$(thing)Czerwone jelenie$() występują w dolnych warstwach i zazwyczaj pływają w lawie. Po ich zabiciu można pozyskać $(item)lawoodporne skóry$()."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "minecraft:zombie_horse",
+			"scale": 0.7,
+			"name": "Koń zombie",
+			"anchor": "zombie_horse",
+			"text": "$(thing)Koni zombie$() nie można oswoić ani na nich jeździć, ale mogą one napędzać $(item)korbę zwierzęcą$()."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "jellies:ice",
+			"scale": 0.6,
+			"name": "Żelek lodowy",
+			"anchor": "ice_jellie",
+			"text": "$(thing)Lodowe$() $(l:agriculture/jellies)żelki$() występują w $(thing)jaskiniach solnych$(). Ochładzają pobliskich graczy."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "jellies:plant",
+			"scale": 0.6,
+			"name": "Żelek roślinny",
+			"anchor": "plant_jellie",
+			"text": "$(thing)Roślinne$() $(l:agriculture/jellies)żelki$() występują w biomach $(thing)duszne bagno$() i $(thing)cierniowy gaj$(). Ich kule szlamu można używać jako $(thing)zielony$() kompost."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "jellies:glowberry",
+			"scale": 0.6,
+			"name": "Świecąco-jagodowy żelek",
+			"anchor": "glowberry_jellie",
+			"text": "$(l:agriculture/jellies)Żelki$() $(thing)ze świecących jagód$() można spotkać w $(thing)bujnych jaskiniach$(). Gotując ich kule szlamu, można uzyskać $(item)cukier$()."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "jellies:spring",
+			"scale": 0.6,
+			"name": "Źródlany żelek",
+			"anchor": "spring_jellie",
+			"text": "$(thing)Spring$() $(l:agriculture/jellies)Jellies$() are found in the $(thing)Geothermal Springs$() biome. Their slime balls are a renewable source of $(item)Spring Water$()."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "jellies:biotite",
+			"scale": 0.6,
+			"name": "Biotytowy żelek",
+			"anchor": "biotite_jellie",
+			"text": "$(thing)Biotytowe$() $(l:agriculture/jellies)żelki$() występują w dolnej warstwie. Ich kule szlamu są odnawialnym źródłem $(item)potasu$(), $(item)magnezu$() i $(item)fluoru$()."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "jellies:lava",
+			"scale": 0.6,
+			"name": "Żelek lawowy",
+			"anchor": "lava_jellie",
+			"text": "$(thing)Lawowe$() $(l:agriculture/jellies)żelki$() występują w dolnej warstwie. Ogrzewają pobliskich graczy, co może się przydać, jeśli mieszkasz w chłodnym miejscu."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "jellies:latex",
+			"scale": 0.6,
+			"name": "Żelek lateksowy",
+			"anchor": "latex_jellie",
+			"text": "$(thing)Lateksowe$() $(l:agriculture/jellies)żelki$() można uzyskać wyłącznie przez skrzyżowanie $(thing)roślinnego żelka$() i $(thing)lawowego żelka$(). Ich kule szlamu są źródłem $(item)lateksu$()."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "minecraft:piglin",
+			"scale": 0.9,
+			"name": "Piglin",
+			"anchor": "piglin",
+			"text": "Pigliny można spotkać w niemal każdym biomie Głębin. Można z nimi $(l:beneath/beneath_mechanics#piglins)handlować$() tak jak w podstawowej grze."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfc:crocodile",
+			"scale": 0.5,
+			"name": "Krokodyl",
+			"anchor": "crocodile",
+			"text": "$(thing)Krokodyle$() można spotkać w górnej i środkowej warstwie, gdzie czyhają w zasadzce!"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "minecraft:phantom",
+			"scale": 0.4,
+			"name": "Fantom",
+			"anchor": "phantom",
+			"text": "$(thing)Fantomy$() naturalnie pojawiają się w środkowej i dolnej warstwie, niezależnie od tego, ile śpisz. Można je przerobić na $(l:beneath/beneath_mechanics#clothes)ubrania$()."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "primitive_creatures:tfc",
+			"scale": 0.8,
+			"name": "Klinik kaolinowy",
+			"anchor": "kaolin_klayze",
+			"text": "$(thing)Kliniki kaolinowe$() można spotkać w $(thing)bujnych jaskiniach$(), gdzie strzegą $(item)gliny kaolinowej$()!"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "primitive_creatures:golem_2",
+			"scale": 1,
+			"name": "Grafik grafitowy",
+			"anchor": "graphite_glayze",
+			"text": "$(thing)Grafiki grafitowe$() można spotkać w dolnych warstwach. Uważaj, żeby nie strąciły cię do lawy!"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "species:cliff_hanger",
+			"scale": 0.7,
+			"name": "Klifiak",
+			"anchor": "cliff_hanger",
+			"text": "$(thing)Klifiaki$() można znaleźć na różnych sufitach, gdzie zahaczają graczy idących pod nimi. Traf je atakiem z dystansu, aby cię puściły!"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "species:leaf_hanger",
+			"scale": 0.7,
+			"name": "Liściak",
+			"anchor": "leaf_hanger",
+			"text": "$(thing)Leaf Hangers$() can be found in pools of Salt Water, hooking players who walk into their trap. Hit them to make them let go of you!"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "endermanoverhaul:nether_wastes_enderman",
+			"scale": 1,
+			"name": "Endermany",
+			"anchor": "endermen",
+			"text": "Wszędzie pojawiają się różne gatunki $(thing)endermanów$(). Ten $(item)grzybowy$() jest całkowicie pasywny, pozostałe są neutralne."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "species:spectre",
+			"scale": 0.7,
+			"name": "Widma",
+			"anchor": "spectre",
+			"text": "$(thing)Widma$() to duchy zmarłych poszukiwaczy przygód. Występują w trzech odmianach i można z nich pozyskać $(item)pióra$()."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "species:wicked",
+			"scale": 0.9,
+			"name": "Psotnik",
+			"anchor": "wicked",
+			"text": "$(thing)Psotnik$() to duch, który może opętywać pobliskie moby, aby je wzmacniać! Jeśli w pobliżu nie ma żadnego moba, atakuje z dystansu. Po pokonaniu wypada z niego wosk."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "species:ghoul",
+			"scale": 0.7,
+			"name": "Ghul",
+			"anchor": "ghoul",
+			"text": "$(thing)Ghule$() to ślepe potwory, które wykorzystują echolokację do wykrywania ofiar. Pozostają neutralne, dopóki nie znajdziesz się w zasięgu ich „skanowania”!"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "species:bewereager",
+			"scale": 0.8,
+			"name": "Osadnikołak",
+			"anchor": "bewereager",
+			"text": "$(thing)Osadnikołak$() to agresywny potwór, który potrafi skoczyć na ciebie z daleka! Wzmacnia się i atakuje w krótkich seriach."
+		},
+		{
+			"type": "patchouli:relations",
+			"title": "Czytaj dalej",
+			"anchor": "relations",
+			"entries": [
+				"tfg:the_world/wild_animals",
+				"tfg:agriculture/animal_husbandry",
+				"tfg:agriculture/jellies",
+				"tfg:the_moon/moon_fauna",
+				"tfg:mars/mars_fauna"
+			]
+		}
+	],
+	"read_by_default": true
+}
