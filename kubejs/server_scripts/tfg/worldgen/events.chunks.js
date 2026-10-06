@@ -175,7 +175,34 @@ TFCEvents.createChunkDataProvider('venus', event => {
 	const emptyLayer = TFC.misc.lerpFloatLayer(0, 0, 0, 0);
 
 	event.partial((data, chunk) => {
-		data.generatePartial(emptyLayer, emptyLayer, 0, 0, 0)
+		let x = chunk.pos.minBlockX;
+		let z = chunk.pos.minBlockZ;
+
+		const avgTemp1 = calcAverage(z, global.VENUS_PLANET_SIZE, global.VENUS_MIN_AVG_TEMP, global.VENUS_MAX_AVG_TEMP)
+		const avgTemp2 = calcAverage(z + 15, global.VENUS_PLANET_SIZE, global.VENUS_MIN_AVG_TEMP, global.VENUS_MAX_AVG_TEMP)
+		const avgRain1 = calcAverage(x, global.VENUS_PLANET_SIZE, global.VENUS_MIN_AVG_RAIN, global.VENUS_MAX_AVG_RAIN)
+		const avgRain2 = calcAverage(x + 15, global.VENUS_PLANET_SIZE, global.VENUS_MIN_AVG_RAIN, global.VENUS_MAX_AVG_RAIN)
+
+		let rain = TFC.misc.lerpFloatLayer(
+			avgRain1 + rainLayer.noise(x, z),
+			avgRain1 + rainLayer.noise(x, z + 15),
+			avgRain2 + rainLayer.noise(x + 15, z),
+			avgRain2 + rainLayer.noise(x + 15, z + 15)
+		);
+		let temp = TFC.misc.lerpFloatLayer(
+			avgTemp1 + tempLayer.noise(x, z),
+			avgTemp1 + tempLayer.noise(x, z + 15),
+			avgTemp2 + tempLayer.noise(x + 15, z),
+			avgTemp2 + tempLayer.noise(x + 15, z + 15)
+		);
+
+		data.generatePartial(
+			rain,
+			temp,
+			floatToForestType(forestLayerNoise.noise(x, z)),
+			forestWeirdnessNoise.noise(x, z), // forest weirdness
+			forestDensityNoise.noise(x, z) // forest density
+		);
 	})
 
 	event.full((data, chunk) => {

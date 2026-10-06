@@ -60,24 +60,24 @@
 	"has_precipitation": true,
 	"spawn_costs": {
 		"endermanoverhaul:desert_enderman": {
-			"energy_budget": 0.15,
-			"charge": 0.7
+			"energy_budget": 0.05,
+			"charge": 0.9
 		},
 		"endermanoverhaul:savanna_enderman": {
-			"energy_budget": 0.15,
-			"charge": 0.7
+			"energy_budget": 0.05,
+			"charge": 0.9
 		},
 		"endermanoverhaul:nether_wastes_enderman": {
-			"energy_budget": 0.15,
-			"charge": 0.7
+			"energy_budget": 0.05,
+			"charge": 0.9
 		},
 		"minecraft:enderman": {
-			"energy_budget": 0.15,
-			"charge": 0.7
+			"energy_budget": 0.05,
+			"charge": 0.9
 		},
 		"ad_astra:sulfur_creeper": {
-			"energy_budget": 0.15,
-			"charge": 0.7
+			"energy_budget": 0.05,
+			"charge": 0.9
 		},
 		"primitive_creatures:golem_2": {
 			"energy_budget": 0.15,
@@ -108,16 +108,10 @@
 				"weight": 100
 			},
 			{
-				"type": "arthropocolypse:mealworm_beetle",
-				"maxCount": 2,
-				"minCount": 1,
-				"weight": 50
-			},
-			{
-				"type": "arthropocolypse:stag_beetle",
-				"maxCount": 2,
-				"minCount": 1,
-				"weight": 50
+				"type": "arthropocolypse:platerodrilus",
+				"maxCount": 4,
+				"minCount": 2,
+				"weight": 60
 			},
 			{
 				"type": "arthropocolypse:ice_crawler",
@@ -127,9 +121,33 @@
 			},
 			{
 				"type": "arthropocolypse:wharf_roach",
+				"maxCount": 2,
+				"minCount": 1,
+				"weight": 70
+			},
+			{
+				"type": "arthropocolypse:mealworm_beetle",
 				"maxCount": 4,
 				"minCount": 2,
-				"weight": 70
+				"weight": 30
+			},
+			{
+				"type": "arthropocolypse:stag_beetle",
+				"maxCount": 4,
+				"minCount": 2,
+				"weight": 40
+			},
+			{
+				"type": "arthropocolypse:soldier_ant",
+				"maxCount": 6,
+				"minCount": 4,
+				"weight": 50
+			},
+			{
+				"type": "arthropocolypse:worker_ant",
+				"maxCount": 3,
+				"minCount": 2,
+				"weight": 10
 			}
 		],
 		"misc": [],

@@ -64,24 +64,24 @@
 	"has_precipitation": true,
 	"spawn_costs": {
 		"endermanoverhaul:desert_enderman": {
-			"energy_budget": 0.15,
-			"charge": 0.7
+			"energy_budget": 0.05,
+			"charge": 0.9
 		},
 		"endermanoverhaul:savanna_enderman": {
-			"energy_budget": 0.15,
-			"charge": 0.7
+			"energy_budget": 0.05,
+			"charge": 0.9
 		},
 		"endermanoverhaul:nether_wastes_enderman": {
-			"energy_budget": 0.15,
-			"charge": 0.7
+			"energy_budget": 0.05,
+			"charge": 0.9
 		},
 		"minecraft:enderman": {
-			"energy_budget": 0.15,
-			"charge": 0.7
+			"energy_budget": 0.05,
+			"charge": 0.9
 		},
 		"ad_astra:sulfur_creeper": {
-			"energy_budget": 0.2,
-			"charge": 0.4
+			"energy_budget": 0.15,
+			"charge": 0.7
 		},
 		"primitive_creatures:golem_2": {
 			"energy_budget": 0.15,

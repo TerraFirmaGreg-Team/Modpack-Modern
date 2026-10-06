@@ -11,7 +11,7 @@ function registerTFGWorldGenVenusDecoBlocks(event) {
 		.particles(a => a
 			.range(0.3, 1, 0.3)
 			.velocity(0, 0.1, 0)
-			.particle('minecraft:campfire_signal_smoke')
+			.particle('tfg:geyser_poof')
 			.count(5)
 			.forced(true));
 
@@ -24,7 +24,7 @@ function registerTFGWorldGenVenusDecoBlocks(event) {
 		.particles(a => a
 			.range(0.3, 1, 0.3)
 			.velocity(0, 0.05, 0)
-			.particle('minecraft:campfire_cosy_smoke')
+			.particle('tfg:geyser_poof')
 			.count(2)
 			.forced(false));
 

@@ -11,6 +11,7 @@ function registerTFCDataForTFG(event) {
 	registerTFGFLPlanters(event);
 	registerOverworldFauna(event);
 	registerMarsFauna(event);
+	registerVenusFauna(event);
 	registerTFGEquipmentData(event);
 	registerTFGAquaponicsData(event);
 }
