@@ -1,0 +1,65 @@
+
+[mobs]
+
+	[mobs.frowzy]
+		#Maximum height frowzy can spawn
+		#Range: -64 ~ 320
+		frowzySpawnHeight = 32
+		#Chance for frowzy to replace zombie spawns underground
+		#Range: 0.0 ~ 1.0
+		frowzyReplaceZombieChance = 0.5
+
+	[mobs.guzzler]
+		#Maximum height guzzlers can spawn
+		#Range: -64 ~ 320
+		guzzlerSpawnHeight = 320
+
+	[mobs.hanging_spider]
+		#Maximum height hanging spiders can spawn
+		#Range: -64 ~ 320
+		hangingSpiderSpawnHeight = 320
+
+	[mobs.skyvern]
+		#Do Skyverns spawn
+		skyvernSpawning = true
+		#Compounding spawn chance for Skyverns, default is 2%
+		#Range: 0.0 ~ 1.0
+		skyvernSpawnChance = 0.02
+		#The time between Skyvern spawn attempts in ticks, default is 30 seconds
+		#Range: 20 ~ 2400
+		skyvernSpawnTimer = 600
+		#Spawn height for Skyverns, default is cloud height
+		#Range: -64 ~ 320
+		skyvernSpawnHeight = 196
+
+	[mobs.terror]
+		#Maximum height terrors can spawn
+		#Range: -64 ~ 320
+		terrorSpawnHeight = 320
+
+	[mobs.trembler]
+		#Maximum height tremblers can spawn
+		#Range: -64 ~ 320
+		tremblerSpawnHeight = 320
+
+	[mobs.umber_spider]
+		#Maximum height umber spiders can spawn
+		#Range: -64 ~ 320
+		umberSpiderSpawnHeight = 58
+		#Chance for umber spiders to replace spider spawns underground
+		#Range: 0.0 ~ 1.0
+		umberSpiderReplaceSpiderChance = 0.75
+
+	[mobs.volt]
+		#Maximum height volts can spawn
+		#Range: -64 ~ 320
+		voltSpawnHeight = 320
+		#Do volts spawn on the surface during thunderstorms
+		voltSpawnsDuringStorm = true
+
+	[mobs.progression]
+		#Should mobs tagged as Post-Nether only spawn after entering the nether. Setting this to false allows Post-Nether mobs to spawn at any time
+		postNether = false
+		#Should mobs tagged as Post-End only spawn after at least one Ender dragon has been defeated. Setting this to false allows Post-End mobs to spawn at any time
+		postEnd = false
+
