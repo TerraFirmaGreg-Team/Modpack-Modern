@@ -1,6 +1,6 @@
 {
     "quests.high_voltage": "&6HV&r - 高電圧時代",
-    "quests.high_voltage.subtitle": "さぁ、月へ出かけよう",
+    "quests.high_voltage.subtitle": "電力をアップグレードし、クリーンルームについて学び、より多くの化学物質を作って、そして宇宙に向かうの準備をしよう",
     "quests.high_voltage.energium_crystals.title": "スーパーバッテリー",
     "quests.high_voltage.energium_crystals.subtitle": "すこしふしぎなバッテリー",
     "quests.high_voltage.energium_crystals.desc": "&aエネルギークリスタル&rには大量の&9EU&rを蓄えることができます。比較的低コストで作成できます。",
@@ -8,7 +8,7 @@
     "quests.high_voltage.autoclave.subtitle": "自家製バッテリー",
     "quests.high_voltage.autoclave.desc": "&3発展型オートクレーブII&rは必須ではありませんが、ぜひ作っておきたい機械です。\n\nこれを使えば、通常のものより&6格段に性能の高い&r特別なバッテリーを作れるようになります。",
     "quests.high_voltage.chem_bath.title": "HV化学槽",
-    "quests.high_voltage.chem_bath.subtitle": "レンズのための冒険はおしまい",
+    "quests.high_voltage.chem_bath.subtitle": "手首を切って槽につけるな",
     "quests.high_voltage.chem_bath.desc": "&3発展型化学槽II&rは、&a化学染料&rを使ってレンズを&d着色する&rことができます。これによって、扱えるウェハーの種類が増えます。そのほかの用途として、熱いインゴットの冷却にも利用できます。",
     "quests.high_voltage.maintenance_hatches.title": "上位版メンテナスハッチ",
     "quests.high_voltage.maintenance_hatches.subtitle": "放任か過保護か",
@@ -71,6 +71,8 @@
     "quests.high_voltage.lcr.desc.1": "&3大型化学反応炉（通称：LCR）&rは、通常の&3化学反応器&rの大型機械であり、より多くの搬入・搬出スロットを備えています。外装にはPTFE（テフロン）が使われており、これによって通常の化学反応器では扱えないレシピも処理できます。\n\n&3LCR&rでは、一部の&3化学反応器&rのレシピを&6一気に処理することができます&r。以下がその例です：\n\n&9-&r&a二酸化窒素&r（硝酸や四酸化二窒素の製造用）\n&9-&r&a硫酸&r\n&9-&r&aフェノール&r\n&9-&r&aエピクロロヒドリン&r（エポキシ樹脂の製造に必要）\n&9-&r&aエポキシ&r",
     "quests.high_voltage.lcr.desc.2": "&3LCR&rには専用レシピも存在します。たとえば、&d直留ガソリン&rはLCRでしか作ることができません。\n\nLCRの&dオーバークロック&rは完全に&6100％効率&r、いわゆる「パーフェクトオーバークロック」(POC)です。つまり、各段階で処理速度が&54倍&rずつ向上していきます（通常は2倍です）。\n\nさらにもう一つの&6利点&rとして、&32基のエネルギーハッチ&rを取り付けることで、&5上位電圧&rのレシピを利用できるようになります。これは&3EBF&rと同様の仕組みです。",
     "quests.high_voltage.lcr.desc.3": "&9Tip：&r複数のLCRを使用することになる場合、&dマルチブロックの共有&rを最大限活用するのがおすすめです。\n\nたとえば、1つの&3エネルギーハッチ（2A）&rを2台のLCRで共有できます。\n\nまた、&3搬入・搬出ハッチ&rを共有することも可能ですが、その場合それぞれのLCRが正しく動作しているかを確認したほうが良いです。\n\nなお、メンテナンスハッチは共有できないので注意しましょう。",
+    "quests.high_voltage.tnt.title": "TNT",
+    "quests.high_voltage.tnt.task": "任意の爆発物",
     "quests.high_voltage.tnt.desc.1": "&c内破圧縮機&rに必要となる爆薬を作る準備をしましょう。簡単なものから難しいものまで4種類の選択肢がありますが、可能であれば&d工業TNT&rを目指すのがおすすめです。",
     "quests.high_voltage.tnt.desc.2": "&cTNT&r（トリニトロトルエン）は、砂と火薬から作ることはできません。&aゲル状トルエン&rを生成し、それを硫酸と反応させてTNTを作らなければなりません。\n&3HV化学反応器&rのレシピを使用すると、&aゲル状トルエン&rの生産量は2倍になりますが、追加の素材が必要になります。",
     "quests.high_voltage.tnt.desc.3": "&aトルエン&rは基本的に作るのが面倒なんです。\n\nその中でも&3蒸留機&rで&a重質残渣油&rを直接&aトルエン&rに変換するレシピは有用です。\n\nトルエンは&dガソリン&rの素材としても使います。\n\n&cTNT&rは&3内破圧縮機&rで使いますし、発破して採掘するなどの用途もあります。",
@@ -120,6 +122,7 @@
     "quests.high_voltage.rocket_t1.title": "月面探査用ロケット",
     "quests.high_voltage.rocket_t1.subtitle": "ロケットで突き抜けろ！",
     "quests.high_voltage.rocket_t1.desc": "さあ、ついに念願の&6ロケット&rの完成です！\n\n1人乗りロケットを作るには、&d高密度なロケット合金プレートが&r16個分必要になります。\n\nこの工程はインフラ整備の総仕上げのようなものです。EBFがまだ足りないなら2～3台体制に増やしておきましょう。また、極細の玄武岩繊維ワイヤー用の押出機も複数用意しておくと効率的です（後にAE2の自動化機構にも流用できます）。さらに、必要な液体の生産には大規模な化学設備が必要になるため、&5大型化学反応炉&rも1～2台は準備しておくとスムーズに進められます。",
+    "quests.high_voltage.rocket_t1.task": "いずれかのロケット",
     "quests.high_voltage.vitrified_pearl.title": "ガラス化したエンダーパール",
     "quests.high_voltage.vitrified_pearl.subtitle": "死んだような目",
     "quests.high_voltage.vitrified_pearl.desc": "エンダーパールといくつかの素材を&e熱分解炉&rに入れて加熱し、&3陶器&rのようにガラス化させましょう。\n\n今はまだ大量に作る必要はありません。最低限、&6ロケット&r用に1つと、&6発展型回路作成機II&r用にもう1つあれば十分です。\nただし、&5EV&r以降では需要が一気に増えていきます。",
@@ -223,5 +226,6 @@
     "quests.space_survival.compressed_gases.desc": "息が出来ない？宇宙で息をするには、ここに挙げた気体のいずれかが必要です。これら気体は、現実世界ではダイビングにも使われています。\n\n宇宙服に気体を入れるのは、バケツと同じ要領で行えます。また、ガスタンクに空気を入れ、それを「飲む」ことでも、宇宙服への補充は行えます。\n\n地球上でもっとも製造しやすいのは、おそらく&2ナイトロックス&rです。月面で作るなら、&eヘリオックス3&rがおすすめです。\n\n宇宙服にこれらをフル充填すると、およそ&c45分間&r活動することができます。",
     "quests.space_survival.compressed_gases.task": "いずれかの呼吸用ガス",
     "quests.space_survival.railgun.title": "星間物資輸送",
-    "quests.space_survival.railgun.subtitle": "エンダーチェスト？知らない子ですね……"
+    "quests.space_survival.railgun.subtitle": "エンダーチェスト？知らない子ですね……",
+    "quests.space_survival.railgun.desc": "&7&bTerraFirmaGreg&rでは、ディメンション間または超長距離の物資輸送に専用の&6マルチブロック機械&rが要求されます。\n\nこれらマルチブロック機械は&a汎用性に優れており&r、用途に応じて設定を切り替えることで、様々なニーズに応えることができます。\n\nこれは、&aパッシブ生産された&rすべての資源を他の惑星の必要な場所に正確に輸送するのに最適なシステムです！さらに、それらの機械の管理は強力な&d設定システム&rによって、一か所で一元管理することができます。"
 }
