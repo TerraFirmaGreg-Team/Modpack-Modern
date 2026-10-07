@@ -1,5 +1,5 @@
 {
-  "type": "minecraft:entity",
+	"type": "minecraft:entity",
 	"pools": [
 		{
 			"bonus_rolls": 0.0,
@@ -11,8 +11,8 @@
 							"add": false,
 							"count": {
 								"type": "minecraft:uniform",
-								"max": 10.0,
-								"min": 8.0
+								"max": 3.0,
+								"min": 1.0
 							},
 							"function": "minecraft:set_count"
 						}
@@ -22,6 +22,5 @@
 			],
 			"rolls": 1.0
 		}
-	],
-  "random_sequence": "aliencraft_kepler:entities/giant_stick_bug"
+	]
 }

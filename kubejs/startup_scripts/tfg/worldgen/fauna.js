@@ -57,4 +57,8 @@ TFCEvents.registerFaunas(event => {
 	event.replace("arthropocolypse:mealworm_beetle", $SpawnPlacements.Type.ON_GROUND, "ocean_floor");
 	event.replace("arthropocolypse:millipede_head", $SpawnPlacements.Type.NO_RESTRICTIONS, "ocean_floor");
 	event.replace("minecraft:strider", $SpawnPlacements.Type.NO_RESTRICTIONS, "ocean_floor");
+	event.replace("opposing_force:slug", $SpawnPlacements.Type.NO_RESTRICTIONS, "ocean_floor");
+	event.replace("opposing_force:trembler", $SpawnPlacements.Type.NO_RESTRICTIONS, "ocean_floor");
+	event.replace("opposing_force:whizz", $SpawnPlacements.Type.NO_RESTRICTIONS, "ocean_floor");
+	event.replace("opposing_force:ladybug", $SpawnPlacements.Type.NO_RESTRICTIONS, "ocean_floor");
 })

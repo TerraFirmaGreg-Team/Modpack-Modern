@@ -140,6 +140,12 @@
 				"maxCount": 3,
 				"minCount": 2,
 				"weight": 50
+			},
+			{
+				"type": "opposing_force:ladybug",
+				"maxCount": 3,
+				"minCount": 2,
+				"weight": 50
 			}
 		],
 		"misc": [],
@@ -161,6 +167,36 @@
 				"maxCount": 1,
 				"minCount": 1,
 				"weight": 20
+			},
+			{
+				"type": "arthropocolypse:millipede_head",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 100
+			},
+			{
+				"type": "opposing_force:slug",
+				"maxCount": 4,
+				"minCount": 2,
+				"weight": 100
+			},
+			{
+				"type": "opposing_force:trembler",
+				"maxCount": 4,
+				"minCount": 2,
+				"weight": 100
+			},
+			{
+				"type": "opposing_force:whizz",
+				"maxCount": 3,
+				"minCount": 2,
+				"weight": 100
+			},
+			{
+				"type": "aliencraft_kepler:xenoscorpion_surface",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 30
 			}
 		],
 		"underground_water_creature": [],

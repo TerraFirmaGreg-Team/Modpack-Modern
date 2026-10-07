@@ -106,4 +106,44 @@ function registerVenusFauna(event) {
 			faunaData.solidGround(true)
 		},
 		"arthropocolypse:millipede_head")
+
+	event.fauna(
+		climate => {
+			climate.minTemp(400)
+			climate.maxForest('edge')
+		},
+		faunaData => {
+			faunaData.solidGround(true)
+		},
+		"opposing_force:slug")
+
+	event.fauna(
+		climate => {
+			climate.minTemp(400)
+			climate.maxForest('edge')
+		},
+		faunaData => {
+			faunaData.solidGround(true)
+		},
+		"opposing_force:trembler")
+
+	event.fauna(
+		climate => {
+			climate.minTemp(400)
+			climate.maxForest('edge')
+		},
+		faunaData => {
+			faunaData.solidGround(true)
+		},
+		"opposing_force:whizz")
+
+	event.fauna(
+		climate => {
+			climate.minTemp(400)
+			climate.minForest('normal')
+		},
+		faunaData => {
+			faunaData.solidGround(true)
+		},
+		"opposing_force:ladybug")
 }

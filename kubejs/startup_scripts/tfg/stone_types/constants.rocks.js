@@ -382,6 +382,11 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 		bricks: generateForms('obsidian', 'tfg:rock/%s_bricks'),
 		polished: generateForms('obsidian', 'tfg:rock/smooth_%s'),
 		chiseled: generateForms('obsidian', 'tfg:rock/chiseled_%s'),
+		stonecutting: [
+			{ block: "opposing_force:guzzler_scale_bricks", stairs: "opposing_force:guzzler_scale_brick_stairs", slab: "opposing_force:guzzler_scale_brick_slab" },
+			{ block: "opposing_force:trembling_guzzler_scale_bricks", stairs: "opposing_force:trembling_guzzler_scale_brick_stairs", slab: "opposing_force:trembling_guzzler_scale_brick_slab" },
+			{ block: "opposing_force:trembling_guzzler_scale_shingles", stairs: "opposing_force:trembling_guzzler_scale_shingle_stairs", slab: "opposing_force:trembling_guzzler_scale_shingle_slab" }
+		]
 	},
 
 	/////////////////////////////////////////////////////////////////////////////////////////////

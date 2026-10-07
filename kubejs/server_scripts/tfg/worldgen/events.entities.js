@@ -59,9 +59,20 @@ const NEW_MOB_MAX_HP = {
 	'arthropocolypse:platerodrilus': 90,
 	'arthropocolypse:mealworm_beetle': 50,
 	'arthropocolypse:mealworm': 14,
-	'arthropocolypse:millipede_head': 110,
-	'arthropocolypse:millipede_body': 110,
-	'arthropocolypse:millipede_tail': 110,
+	'arthropocolypse:millipede_head': 200,
+	'arthropocolypse:millipede_body': 200,
+	'arthropocolypse:millipede_tail': 200,
+	'opposing_force:slug': 80,
+	'opposing_force:trembler': 80,
+	'opposing_force:guzzler': 200,
+	'opposing_force:fire_slime': 20,
+	'opposing_force:hanging_spider': 70,
+	'opposing_force:umber_spider': 100,
+	'opposing_force:ladybug': 40,
+	'opposing_force:whizz': 20,
+	'aliencraft_kepler:giant_stick_bug': 200,
+	'aliencraft_kepler:xenoscorpion_surface': 170,
+	'aliencraft_kepler:ancient_beetle': 120,
 
 	// europa mobs
 	"endermanoverhaul:ice_spikes_enderman": 90,
@@ -74,13 +85,21 @@ const NEW_MOB_ARMOR = {
 	"endermanoverhaul:crimson_enderman": 2,
 	"endermanoverhaul:warped_enderman": 2,
 	"endermanoverhaul:badlands_enderman": 2,
-	"species:quake": 6,
+	"species:quake": 8,
 
 	// venus
+	"minecraft:blaze": 6,
 	"endermanoverhaul:savanna_enderman": 4,
 	"endermanoverhaul:desert_enderman": 4,
 	"endermanoverhaul:nether_wastes_enderman": 2,
-	"ad_astra:sulfur_creeper": 4
+	"ad_astra:sulfur_creeper": 4,
+	'opposing_force:trembler': 8,
+	'opposing_force:guzzler': 10,
+	'opposing_force:hanging_spider': 2,
+	'opposing_force:umber_spider': 4,
+	'aliencraft_kepler:giant_stick_bug': 10,
+	'aliencraft_kepler:xenoscorpion_surface': 6,
+	'aliencraft_kepler:ancient_beetle': 6,
 };
 
 const NEEDS_FIREPROOFING = [
@@ -106,10 +125,19 @@ const NEEDS_FIREPROOFING = [
 	'arthropocolypse:mealworm',
 	'arthropocolypse:millipede_head',
 	'arthropocolypse:millipede_body',
-	'arthropocolypse:millipede_tail'
+	'arthropocolypse:millipede_tail',
+	'opposing_force:guzzler',
+	'opposing_force:hanging_spider',
+	'opposing_force:umber_spider',
+	'opposing_force:ladybug',
+	'opposing_force:whizz',
+	'aliencraft_kepler:giant_stick_bug',
+	'aliencraft_kepler:xenoscorpion_surface',
+	'aliencraft_kepler:ancient_beetle'
 ];
 
 const VENUS_DAMAGE_BUFFING = {
+	"minecraft:blaze": 10,
 	"primitive_creatures:golem_2": 10,
 	"endermanoverhaul:savanna_enderman": 10,
 	"endermanoverhaul:desert_enderman": 10,
@@ -124,6 +152,16 @@ const VENUS_DAMAGE_BUFFING = {
 	'arthropocolypse:platerodrilus': 14,
 	'arthropocolypse:mealworm_beetle': 8,
 	'arthropocolypse:millipede_head': 20,
+	'opposing_force:slug': 12,
+	'opposing_force:guzzler': 10,
+	'opposing_force:fire_slime': 8,
+	'opposing_force:hanging_spider': 10,
+	'opposing_force:umber_spider': 16,
+	'opposing_force:ladybug': 8,
+	'opposing_force:whizz': 8,
+	'aliencraft_kepler:giant_stick_bug': 15,
+	'aliencraft_kepler:xenoscorpion_surface': 20,
+	'aliencraft_kepler:ancient_beetle': 8,
 };
 
 
@@ -175,7 +213,7 @@ EntityEvents.spawned((event) => {
 	else if (type === "minecraft:magma_cube") {
 		switch (dimension) {
 			// use default for beneath
-			case "ad_astra:venus": newHP = entity.maxHealth * 7;
+			case "ad_astra:venus": newHP = entity.maxHealth * 8;
 		}
 	}
 	else if (type === "primitive_creatures:golem_2") {
@@ -211,8 +249,6 @@ EntityEvents.spawned((event) => {
 
 	let newAttack = VENUS_DAMAGE_BUFFING[type] ?? 0
 	if (dimension === "ad_astra:venus" && newAttack !== 0) {
-		let baseAttack = entity.attack_damage;
-		let missingAttack = newAttack - baseAttack;
-		entity.modifyAttribute("minecraft:generic.attack_damage", "tfg_attack_buff_id", missingAttack, "addition");
+		entity.modifyAttribute("minecraft:generic.attack_damage", "tfg_attack_buff_id", entity.attack_damage + newAttack, "addition");
 	}
 })

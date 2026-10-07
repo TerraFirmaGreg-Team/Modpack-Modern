@@ -156,7 +156,18 @@ function registerTFGVenusEntityTypeTags(event) {
 		'arthropocolypse:mealworm',
 		'arthropocolypse:millipede_head',
 		'arthropocolypse:millipede_body',
-		'arthropocolypse:millipede_tail'
+		'arthropocolypse:millipede_tail',
+		'opposing_force:slug',
+		'opposing_force:trembler',
+		'opposing_force:guzzler',
+		'opposing_force:fire_slime',
+		'opposing_force:hanging_spider',
+		'opposing_force:umber_spider',
+		'opposing_force:ladybug',
+		'opposing_force:whizz',
+		'aliencraft_kepler:giant_stick_bug',
+		'aliencraft_kepler:xenoscorpion_surface',
+		'aliencraft_kepler:ancient_beetle'
 	]
 
 	ENTITIES.forEach(entity => {
@@ -181,6 +192,22 @@ function registerTFGVenusEntityTypeTags(event) {
 	event.add('tfc:deals_piercing_damage', 'arthropocolypse:platerodrilus')
 	event.add('tfc:deals_piercing_damage', 'arthropocolypse:mealworm_beetle')
 	event.add('tfc:deals_piercing_damage', 'arthropocolypse:millipede_head')
+	event.add('tfc:deals_crushing_damage', 'opposing_force:slug')
+	event.add('tfc:deals_crushing_damage', 'opposing_force:trembler')
+	event.add('tfc:deals_crushing_damage', 'opposing_force:guzzler')
+	event.add('tfc:deals_crushing_damage', 'opposing_force:fire_slime')
+	event.add('tfc:deals_piercing_damage', 'opposing_force:hanging_spider')
+	event.add('tfc:deals_piercing_damage', 'opposing_force:umber_spider')
+	event.add('tfc:deals_crushing_damage', 'opposing_force:ladybug')
+	event.add('tfc:deals_piercing_damage', 'opposing_force:whizz')
+	event.add('tfc:deals_crushing_damage', 'aliencraft_kepler:giant_stick_bug')
+	event.add('tfc:deals_slashing_damage', 'aliencraft_kepler:xenoscorpion_surface')
+	event.add('tfc:deals_piercing_damage', 'aliencraft_kepler:ancient_beetle')
+
+	event.add('tfg:ignores_gravity', 'aliencraft_kepler:xenoscorpion_surface')
+	event.add('tfg:ignores_gravity', 'aliencraft_kepler:ancient_beetle')
+	event.add('tfg:ignores_gravity', 'opposing_force:whizz')
+	event.add('tfg:ignores_gravity', 'minecraft:blaze')
 }
 
 function registerTFGVenusPlacedFeatures(event) {
