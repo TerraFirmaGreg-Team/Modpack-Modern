@@ -135,8 +135,8 @@
     "tfg.tooltip.machine.heat_pump_1": "§7Sets the temperature of a large mostly-sealed area to 15°C.",
     "tfg.tooltip.machine.heat_pump_2": "§7The bigger the area, the more power it needs. Is lenient on what counts as 'sealed'.",
     "tfg.tooltip.machine.heat_pump_3": "§7The side with the controller should face indoors, while the opposite should face outdoors.",
-    "tfg.tooltip.machine.higgs_emitter_1": "§7Changes the gravity of a large sealed area to Earth-like.",
-    "tfg.tooltip.machine.higgs_emitter_2": "§7The bigger the area, the more power it needs.",
+    "tfg.tooltip.machine.higgs_emitter_1": "§7Changes the gravity of a large spherical area to Earth-like.",
+    "tfg.tooltip.machine.higgs_emitter_2": "§7The better the energy hatch it has, the bigger the area.",
 
     "tfg.machine.me_assembler_redstone_port.tooltip": "§7Can be used as part of an ME Resonance Fabricator or ME Resonance Charger.\n0: Nothing\n1: Certus Block\n2: Chipped Budding Certus\n3: Flawed Budding Certus\n4: Flawless Budding Certus\n5: Exquisite Budding Certus",
 
