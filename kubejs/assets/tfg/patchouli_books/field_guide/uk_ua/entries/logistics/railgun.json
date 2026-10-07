@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "index",
-			"text": "$(li)$(bold)$(l/railgun#sender)Передавач рейкотрона$()$(li2)$(l/railgun#ammo)Боєприпаси для рейкотрона$()$(li2)$(l/railgun#input_bus)Вхідна шина рейкотрона$()$(li)$(bold)$(l/railgun#monitor)Монітор логістики$()$(li)$(bold)Правила керування$()$(li2)$(l/railgun#redstone)Редстоун$()$(li2)$(l/railgun#supply_exact)Точне постачання$()$(li2)$(l/railgun#delay)Затримка$()$(li)$(bold)$(l/railgun#receiver)Приймач рейкотрона$()$(li2)$(l/railgun#output_bus)Вихідна шина прийкотрона$()$(li)$(bold)$(l/railgun#tips)Поради$()"
+			"text": "$(li)$(bold)$(l:logistics/railgun#sender)Передавач рейкотрона$()$(li2)$(l:logistics/railgun#ammo)Боєприпаси для рейкотрона$()$(li2)$(l:logistics/railgun#input_bus)Вхідна шина рейкотрона$()$(li)$(bold)$(l:logistics/railgun#monitor)Монітор логістики$()$(li)$(bold)Правила керування$()$(li2)$(l:logistics/railgun#redstone)Редстоун$()$(li2)$(l:logistics/railgun#supply_exact)Точне постачання$()$(li2)$(l:logistics/railgun#delay)Затримка$()$(li)$(bold)$(l:logistics/railgun#receiver)Приймач рейкотрона$()$(li2)$(l:logistics/railgun#output_bus)Вихідна шина прийкотрона$()$(li)$(bold)$(l:logistics/railgun#tips)Поради$()"
 		},
 		{
 			"type": "patchouli:text",

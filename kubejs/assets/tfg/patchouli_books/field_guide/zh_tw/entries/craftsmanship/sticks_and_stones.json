@@ -1,11 +1,11 @@
 {
-	"name": "木棍與石頭",
+	"name": "木棒與石頭",
 	"category": "tfg:craftsmanship",
 	"icon": "tfg:flint_arrow_head",
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "在$(tfg)中，你最先能取得的東西是木棍、樹枝、燧石和碎石。它們幾乎在每種氣候中都能找到，散落在地面上。按下$(item)$(k:key.use)$()或破壞它們即可撿起。"
+			"text": "在$(tfg)中，你最先能取得的東西是木棒、樹枝、燧石和碎石。它們幾乎在每種氣候中都能找到，散落在地面上。按下$(item)$(k:key.use)$()或破壞它們即可撿起。"
 		},
 		{
 			"type": "patchouli:multiblock",
@@ -44,13 +44,13 @@
 				}
 			},
 			"name": "比方說",
-			"text": "散落的木棍和石頭。",
+			"text": "散落的木棒和石頭。",
 			"enable_visualize": false
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "knapping",
-			"text": "除了在地上收集木棍和樹枝之外，也可以徒手破壞樹葉來取得木棍。有了一些石頭和木棍之後，就可以開始$(thing)打製$()了。打製是將兩塊石頭互相敲擊，形成特定形狀的過程。要打製時，首先在手中拿著至少兩塊石頭，然後對空中按下右鍵，就會開啟$(thing)打製介面$()。"
+			"text": "除了在地上收集木棒和樹枝之外，也可以徒手破壞樹葉來取得木棒。有了一些石頭和木棒之後，就可以開始$(thing)打製$()了。打製是將兩塊石頭互相敲擊，形成特定形狀的過程。要打製時，首先在手中拿著至少兩塊石頭，然後對空中按下右鍵，就會開啟$(thing)打製介面$()。"
 		},
 		{
 			"type": "patchouli:image",
@@ -73,7 +73,7 @@
 				"tfg:rock_knapping/stone_knife_head_2",
 				"tfg:rock_knapping/stone_knife_head_3"
 			],
-			"text": "石刀刃用各種不同的的岩石都可以製作。"
+			"text": "石刀刃用各種不同的岩石都可以製作。"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -85,7 +85,7 @@
 		{
 			"type": "patchouli:crafting",
 			"recipe": "gtceu:shaped/knife_stone",
-			"text": "所有石製工具頭都可以和木棍、樹枝、骨頭或其他棒狀物一起合成，組裝成工具。$(br2)石刀可以破壞草叢來收集$(thing)乾草$()。"
+			"text": "所有石製工具頭都可以和木棒、樹枝、骨頭或其他棒狀物一起合成，組裝成工具。$(br2)石刀可以破壞草叢來收集$(thing)乾草$()。"
 		},
 		{
 			"type": "tfg:rock_knapping_recipe",

@@ -10,7 +10,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "$(li)$(bold)$(l:cooking/decay#oven_baked)烤箱烘烤$()$(li)$(bold)$(l:cooking/decay#cellar)地窖$()$(li2)$(l:cooking/decay#shelf)地窖儲藏$()$(li)$(bold)$(l:cooking/decay#lunch_box)便當盒$()$(li)$(bold)$(l:cooking/decay#refrigerator)冰箱$()$(li)$(bold)$(l:cooking/decay#freeze_dry)冷凍乾燥$()$(li)$(bold)$(l:cooking/decay#pest)防治害蟲$()$(li)$(bold)$(l:cooking/decay#cutting)切除腐壞部分$()"
+            "text": "$(li)$(bold)$(l:cooking/decay#oven_baked)烤爐烘烤$()$(li)$(bold)$(l:cooking/decay#cellar)地窖$()$(li2)$(l:cooking/decay#shelf)地窖儲藏$()$(li)$(bold)$(l:cooking/decay#lunch_box)午餐盒$()$(li)$(bold)$(l:cooking/decay#refrigerator)冰箱$()$(li)$(bold)$(l:cooking/decay#freeze_dry)冷凍乾燥$()$(li)$(bold)$(l:cooking/decay#pest)防治害蟲$()$(li)$(bold)$(l:cooking/decay#cutting)切除腐壞部分$()"
         },
         {
             "type": "patchouli:text",
@@ -45,7 +45,7 @@
                     "bold": true
                 },
                 {
-                    "text": "烤箱烘烤"
+                    "text": "烤爐烘烤"
                 },
                 {
                     "text": "0.900"
@@ -257,8 +257,8 @@
         {
             "type": "patchouli:text",
             "anchor": "oven_baked",
-            "title": "烤箱烘烤",
-            "text": "在$(l:cooking/cooking_methods#top_oven)上層烤箱$()中烘烤食物，是透過烹煮來保存食物的第二好方法，它會給予修正值為 0.9 的$(7)$(bold)烤箱烘烤$()特性。"
+            "title": "烤爐烘烤",
+            "text": "在$(l:cooking/cooking_methods#top_oven)上層烤爐$()中烘烤食物，是透過烹煮來保存食物的第二好方法，它會給予修正值為 0.9 的$(7)$(bold)烤爐烘烤$()特性。"
         },
         {
             "type": "patchouli:text",
@@ -268,7 +268,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "地窖用於保存食物和$(l:cooking/cheese#cheese_wheel)熟成起司$()，方法是使用$(l:cooking/decay#shelf)食物架$()和$(l:cooking/decay#shelf)吊架$()放置食物，或將起司放在地上或$(thing)木桶架$()上。$(br2)地窖在$(l:the_world/climate#temperature)較寒冷的環境$()中效果更好。$(li)$(2)溫度 >= 0°C：$()食物架 0.4，吊架 0.35$(li)$(2)溫度 < 0°C：$()食物架 0.35，吊架 0.3$(li)$(2)溫度 < -12°C：$()食物架 0.25，吊架 0.25"
+            "text": "地窖用於保存食物和$(l:cooking/cheese#cheese_wheel)熟成起司$()，方法是使用$(l:cooking/decay#shelf)食物架$()和$(l:cooking/decay#shelf)吊架$()放置食物，或將起司放在地上或$(thing)桶架$()上。$(br2)地窖在$(l:the_world/climate#temperature)較寒冷的環境$()中效果更好。$(li)$(2)溫度 >= 0°C：$()食物架 0.4，吊架 0.35$(li)$(2)溫度 < 0°C：$()食物架 0.35，吊架 0.3$(li)$(2)溫度 < -12°C：$()食物架 0.25，吊架 0.25"
         },
         {
             "type": "tfg:multimultiblock",
@@ -444,9 +444,9 @@
         {
             "type": "patchouli:spotlight",
             "anchor": "lunch_box",
-            "title": "便當盒",
+            "title": "午餐盒",
             "item": "tfclunchbox:lunchbox,tfclunchbox:cooling_lunchbox,tfclunchbox:electric_lunchbox",
-            "text": "便當盒是攜帶和食用食物的便利方式。基本便當盒提供$(5)$(bold)保存$()特性，而$(item)冷藏$()和$(item)電動便當盒$()則提供修正值為 0.3 的$(9)$(bold)冷藏$()特性。$(br2)冷藏便當盒會消耗$(item)冰$()來保存食物，而電動便當盒則消耗$(2)EU$()能量。"
+            "text": "午餐盒是攜帶和食用食物的便利方式。基本午餐盒提供$(5)$(bold)保存$()特性，而$(item)冷藏$()和$(item)電動午餐盒$()則提供修正值為 0.3 的$(9)$(bold)冷藏$()特性。$(br2)冷藏午餐盒會消耗$(item)冰$()來保存食物，而電動午餐盒則消耗$(2)EU$()能量。"
         },
         {
             "type": "patchouli:spotlight",

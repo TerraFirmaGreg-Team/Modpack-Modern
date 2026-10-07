@@ -14,7 +14,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(li)$(bold)可馴化$()$(li2)$(l:the_moon/moon_fauna#moon_rabbit)月兔$()$(li2)$(l:the_moon/moon_fauna#birt)癡音鳥$()$(li2)$(l:the_moon/moon_fauna#certus_jellie)賽特斯果凍怪$()$(li)$(bold)野生$()$(li2)$(l:the_moon/moon_fauna#limpet)帽貝$()$(li2)$(l:the_moon/moon_fauna#star_crawler)星際行者$()$(li2)$(l:the_moon/moon_fauna#endermen)終界使者$()$(li2)$(l:the_moon/moon_fauna#shulker)界伏蚌$()"
+			"text": "$(li)$(bold)可馴化$()$(li2)$(l:the_moon/moon_fauna#moon_rabbit)月兔$()$(li2)$(l:the_moon/moon_fauna#birt)痴音鳥$()$(li2)$(l:the_moon/moon_fauna#certus_jellie)賽特斯果凍怪$()$(li)$(bold)野生$()$(li2)$(l:the_moon/moon_fauna#limpet)礦蝸$()$(li2)$(l:the_moon/moon_fauna#star_crawler)星際行者$()$(li2)$(l:the_moon/moon_fauna#endermen)終界使者$()$(li2)$(l:the_moon/moon_fauna#shulker)界伏蚌$()"
 		},
 		{
 			"type": "patchouli:entity",
@@ -30,8 +30,8 @@
 			"entity": "species:birt",
 			"anchor": "birt",
 			"scale": 0.9,
-			"name": "癡音鳥",
-			"text": "$(thing)癡音鳥$()應該算是一種鳥？牠們會在巢中下蛋，除非受到攻擊否則是被動的，而且可以被吃掉。牠們的蛋可以丟出去暈眩目標。"
+			"name": "痴音鳥",
+			"text": "$(thing)痴音鳥$()應該算是一種鳥？牠們會在巢中下蛋，除非受到攻擊否則是被動的，而且可以被吃掉。牠們的蛋可以丟出去暈眩目標。"
 		},
 		{
 			"type": "patchouli:entity",
@@ -45,9 +45,9 @@
 			"type": "patchouli:entity",
 			"entity": "species:limpet",
 			"scale": 0.8,
-			"name": "帽貝",
+			"name": "礦蝸",
 			"anchor": "limpet",
-			"text": "$(thing)帽貝$()是一種殼上長著礦石的蝸牛。你可以用任何挖礦工具取得礦石。牠們是被動的，可以被吃掉。"
+			"text": "$(thing)礦蝸$()是一種殼上長著礦石的蝸牛。你可以用任何挖礦工具取得礦石。牠們是被動的，可以被吃掉。"
 		},
 		{
 			"type": "patchouli:entity",
@@ -69,7 +69,7 @@
 			"type": "patchouli:entity",
 			"entity": "endermanoverhaul:end_islands_enderman",
 			"scale": 1,
-			"text": "The most dangerous $(thing)Endermen$() are found in the $(l:the_moon/moon_biomes#forest)Chorus$() biomes."
+			"text": "最為危險的$(thing)終界使者$()出沒在$(l:the_moon/moon_biomes#forest)歌萊$()生態"
 		},
 		{
 			"type": "patchouli:entity",

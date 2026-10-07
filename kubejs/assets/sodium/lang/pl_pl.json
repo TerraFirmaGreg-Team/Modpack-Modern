@@ -22,6 +22,7 @@
 	"sodium.options.chunk_update_threads.tooltip": "Określa liczbę wątków użytych do budowania chunków. Używanie większej liczby wątków może przyspieszyć wczytywanie chunków i ich aktualizowanie, ale może negatywnie wpłynąć na FPS.",
 	"sodium.options.clouds_quality.tooltip": "Kontroluje prezentacje wyrenderowanych chmur na niebie.",
 	"sodium.options.cpu_render_ahead_limit.name": "Limit renderowania klatek z wyprzedzeniem przez CPU",
+	"sodium.options.cpu_render_ahead_limit.tooltip": "Określa maksymalną liczbę klatek, na którą procesor może czekać, aż GPU skończy renderowanie. Bardzo niskie lub bardzo wysokie wartości mogą skutkować w niestabilności klatek na sekundę.",
 	"sodium.options.cpu_render_ahead_limit.value": "%s klatek",
 	"sodium.options.entity_distance.tooltip": "Określa, jak daleko od gracza mogą być renderowane byty. Wyższe wartości zwiększają zasięg ich renderowania kosztem liczby klatek na sekundę.",
 	"sodium.options.entity_shadows.tooltip": "Jeśli włączone, podstawowe cienie będą renderowane pod mobami i innymi bytami.",

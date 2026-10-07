@@ -188,7 +188,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(l:beneath/beneath#geothermal_springs)地熱溫泉$()生態域有獨有的$(item)霰石$()和$(item)鈣芒硝$()，以及更多方解石。$(br2)這個生態域也有$(item)巨型石英$()晶體，用鎬破壞可取得品質不一的$(item)煙水晶$()寶石，用$(item)寶石鋸$()破壞則可取得透明的方塊本身。"
+			"text": "$(l:beneath/beneath#geothermal_springs)地熱溫泉$()生態域有獨有的$(item)霰石$()和$(item)鈣芒硝$()，以及更多方解石。$(br2)這個生態域也有$(item)巨型石英$()晶體，用鎬破壞可取得品質不一的$(item)墨石英$()寶石，用$(item)寶石鋸$()破壞則可取得透明的方塊本身。"
 		},
 		{
 			"type": "patchouli:text",

@@ -7,7 +7,7 @@
             "type": "patchouli:text",
             "title": "Індекс",
             "anchor": "index",
-            "text": "$(li)$(bold)$(l:cooking/cooking_methods#firepit)Багаття$()\n$(li2)$(l:cooking/cooking_methods#grill)Гриль$()\n$(li2)$(l:cooking/cooking_methods#pot)Казан$()\n$(li)$(bold)$(l:cooking/cooking_methods#oven)Піч$()\n$(li2)$(l:cooking/cooking_methods#vat)Чан$()\n$(li2)$(l:cooking/cooking_methods#jarring_station)Станція консервації$()\n$(li)$(bold)$(l:cooking/cooking_methods#electric_oven)Електрична піч$()\n$(li)$(bold)$(l:cooking/cooking_methods#food_processor)Кухонний комбайн$()"
+            "text": "$(li)$(bold)$(l:cooking/cooking_methods#firepit)Багаття$()$(li2)$(l:cooking/cooking_methods#grill)Гриль$()$(li2)$(l:cooking/cooking_methods#pot)Казан$()$(li)$(bold)$(l:cooking/cooking_methods#oven)Піч$()$(li2)$(l:cooking/cooking_methods#vat)Чан$()$(li2)$(l:cooking/cooking_methods#jarring_station)Станція консервації$()$(li)$(bold)$(l:cooking/cooking_methods#electric_oven)Електрична піч$()$(li)$(bold)$(l:cooking/cooking_methods#food_processor)Кухонний комбайн$()"
         },
         {
             "type": "patchouli:text",
@@ -366,7 +366,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "Щоб використати чан, натисни $(item)$(k:key.use)$() по ньому з рідиною та предметом, щоб додати їх до інвентарю. Порожньою рукою, утримуючи $(item)$(k:key.sneak)$(), натисни по чану, щоб запечатати або відкрити його. Чан не почне кипіти, доки він не буде запечатаний.$(br)Чан слід встановлювати над $(thing)нижньою частиною печі$(). Якщо чан переповнився після завершення рецепта, він не кипітиме! Чан можна автоматично відкривати та закривати за допомогою $(thing)редстоуну$() та взаємодіяти з $(item)трубами$() або $(item)механічною рукою$()."
+            "text": "Щоб використати чан, натисни $(item)$(k:key.use)$() по ньому з рідиною та предметом, щоб додати їх до інвентарю. Порожньою рукою, утримуючи $(item)$(k:key.sneak)$(), натисни по чану, щоб запечатати або відкрити його. Чан не почне кипіти, доки він не буде запечатаний.$(br)Чан слід встановлювати над $(thing)нижньою частиною печі$(). Якщо чан переповнився після завершення рецепта, він не кипітиме!$(br2)Чан можна автоматично відкривати та закривати за допомогою $(thing)редстоуну$() та взаємодіяти з $(item)трубами$() або $(item)механічною рукою$()."
         },
         {
             "type": "tfg:multimultiblock",

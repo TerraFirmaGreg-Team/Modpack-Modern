@@ -1,129 +1,129 @@
 {
-	"name": "Moon Biomes",
+	"name": "月球生態域",
 	"category": "tfg:the_moon",
 	"icon": "tfg:textures/block/lunar_roots.png",
 	"read_by_default": true,
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "$(thing)The Moon$() is a pretty rocky place wherever you go, but it still has a few different biomes to explore that you may be interested in.$(br2)Looking for somewhere specific? Only some biomes can spawn near each other, with the $(l:the_moon/moon_biomes#sands)Lunar Sands$() and $(l:the_moon/moon_biomes#plains)Lunar Plains$() serving as a sort of \"neutral ground\" between them all."
+			"text": "$(thing)月球$()不論走到哪裡都是一片岩石，但仍有幾種不同的生態域值得你探索。$(br2)在找特定的地方嗎？只有部分生態域能彼此相鄰生成，而$(l:the_moon/moon_biomes#sands)月表沙地$()和$(l:the_moon/moon_biomes#plains)月表平原$()就像是它們之間的「中立地帶」。"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "index",
-			"title": "Contents",
-			"text": "$(li)$(bold)Biomes$()$(li2)$(l:the_moon/moon_biomes#plains)Lunar Plains$()$(li2)$(l:the_moon/moon_biomes#sands)Lunar Sands$()$(li2)$(l:the_moon/moon_biomes#asurine)Asurine Fields$()$(li2)$(l:the_moon/moon_biomes#certus)Certus Fields$()$(li2)$(l:the_moon/moon_biomes#forest)Chorus Forest$()$(li2)$(l:the_moon/moon_biomes#thicket)Chorus Thicket$()$(li2)$(l:the_moon/moon_biomes#maria)Lunar Maria$()$(li2)$(l:the_moon/moon_biomes#reef)Lunar Reef$()$(li2)$(l:the_moon/moon_biomes#scrubland)Lightbloom Scrubland$()$(li2)$(l:the_moon/moon_biomes#stargazers)Lightbloom Star Gazers$()$(li)$(bold)$(l:the_moon/moon_biomes#harvester)Moon Dust Harvester$()$(li2)$(l:the_moon/moon_biomes#regolith)Regolith List$()"
+			"title": "目錄",
+			"text": "$(li)$(bold)生態域$()$(li2)$(l:the_moon/moon_biomes#plains)月表平原$()$(li2)$(l:the_moon/moon_biomes#sands)月表沙地$()$(li2)$(l:the_moon/moon_biomes#asurine)皓藍石富集原$()$(li2)$(l:the_moon/moon_biomes#certus)賽特斯石英富集原$()$(li2)$(l:the_moon/moon_biomes#forest)歌萊森林$()$(li2)$(l:the_moon/moon_biomes#thicket)歌萊叢林$()$(li2)$(l:the_moon/moon_biomes#maria)月海$()$(li2)$(l:the_moon/moon_biomes#reef)月表珊瑚$()$(li2)$(l:the_moon/moon_biomes#scrubland)光綻花叢$()$(li2)$(l:the_moon/moon_biomes#stargazers)光綻觀星地$()$(li)$(bold)$(l:the_moon/moon_biomes#harvester)月塵採收機$()$(li2)$(l:the_moon/moon_biomes#regolith)風化土清單$()"
 		},
 		{
 			"type": "patchouli:image",
 			"border": true,
-			"title": "Lunar Plains",
+			"title": "月表平原",
 			"anchor": "plains",
 			"images": [
 				"tfg:textures/gui/field_guide/moon/plains.png"
 			],
-			"text": "$(thing)Lunar Plains$() don't really have anything interesting going on, but they're a nice neutral place to make a base."
+			"text": "$(thing)月表平原$()沒什麼特別的東西，但很適合當作建立基地的中立地點。"
 		},
 		{
 			"type": "patchouli:image",
 			"border": true,
-			"title": "Lunar Sands",
+			"title": "月表沙地",
 			"anchor": "sands",
 			"images": [
 				"tfg:textures/gui/field_guide/moon/sands.png"
 			],
-			"text": "$(thing)Lunar Sands$() are an alternate version of Lunar Plains that have less vegetation but more sand."
+			"text": "$(thing)月表沙地$()是月表平原的變體，植被較少，沙子較多。"
 		},
 		{
 			"type": "patchouli:image",
 			"border": true,
-			"title": "Asurine Fields",
+			"title": "皓藍石富集原",
 			"anchor": "asurine",
 			"images": [
 				"tfg:textures/gui/field_guide/moon/asurine.png"
 			],
-			"text": "$(thing)Asurine Fields$() has frequent formations of $(item)Asurine$(). It cannot spawn near $(l:the_moon/moon_biomes#forest)Chorus$() biomes."
+			"text": "$(thing)皓藍石富集原$()經常出現$(item)皓藍石$()構造。它不會在$(l:the_moon/moon_biomes#forest)歌萊$()生態域附近生成。"
 		},
 		{
 			"type": "patchouli:image",
 			"border": true,
-			"title": "Certus Fields",
+			"title": "賽特斯石英富集原",
 			"anchor": "certus",
 			"images": [
 				"tfg:textures/gui/field_guide/moon/certus.png"
 			],
-			"text": "$(thing)Certus Fields$() larger formations of $(item)Asurine$() that also contain large amounts of $(item)Certus Quartz$()."
+			"text": "$(thing)賽特斯石英富集原$()有更大型的$(item)皓藍石$()構造，其中也含有大量的$(item)賽特斯石英$()。"
 		},
 		{
 			"type": "patchouli:image",
 			"border": true,
-			"title": "Chorus Forest",
+			"title": "歌萊森林",
 			"anchor": "forest",
 			"images": [
 				"tfg:textures/gui/field_guide/moon/forest.png"
 			],
-			"text": "The $(thing)Chorus Forest$() is the only place to find $(l:the_moon/moon_crops)Chorus Fruit$(). It cannot spawn near $(l:the_moon/moon_biomes#asurine)Asurine$() biomes."
+			"text": "$(thing)歌萊森林$()是唯一能找到$(l:the_moon/moon_crops)歌萊果$()的地方。它不會在$(l:the_moon/moon_biomes#asurine)皓藍石$()生態域附近生成。"
 		},
 		{
 			"type": "patchouli:image",
 			"border": true,
-			"title": "Chorus Thicket",
+			"title": "歌萊叢林",
 			"anchor": "thicket",
 			"images": [
 				"tfg:textures/gui/field_guide/moon/thicket.png"
 			],
-			"text": "The $(thing)Chorus Thicket$() is a dense area of $(l:the_moon/moon_crops)Chorus Fruit$(). It is a dangerous biome with hostile $(l:the_moon/moon_fauna#endermen)endermen$()."
+			"text": "$(thing)歌萊叢林$()是$(l:the_moon/moon_crops)歌萊果$()密集生長的區域，也是有敵對$(l:the_moon/moon_fauna#endermen)終界使者$()出沒的危險生態域。"
 		},
 		{
 			"type": "patchouli:image",
 			"border": true,
-			"title": "Lunar Maria",
+			"title": "月海",
 			"anchor": "maria",
 			"images": [
 				"tfg:textures/gui/field_guide/moon/maria.png"
 			],
-			"text": "The $(thing)Lunar Maria$() contains some $(item)dead coral$() and sand. It cannot spawn near $(l:the_moon/moon_biomes#lightbloom)Lightbloom$() biomes."
+			"text": "$(thing)月海$()有一些$(item)死亡的珊瑚$()和沙子。它不會在$(l:the_moon/moon_biomes#lightbloom)光綻花$()生態域附近生成。"
 		},
 		{
 			"type": "patchouli:image",
 			"border": true,
-			"title": "Lunar Reef",
+			"title": "月表珊瑚",
 			"anchor": "reef",
 			"images": [
 				"tfg:textures/gui/field_guide/moon/reef.png"
 			],
-			"text": "The $(thing)Lunar Reef$() has many large formations of dead coral. Did the moon have oceans in the distant past?"
+			"text": "$(thing)月表珊瑚$()有許多大型的死亡珊瑚構造。月球在遙遠的過去曾經有過海洋嗎？"
 		},
 		{
 			"type": "patchouli:image",
 			"border": true,
-			"title": "Lightbloom Scrubland",
+			"title": "光綻花叢",
 			"anchor": "scrubland",
 			"images": [
 				"tfg:textures/gui/field_guide/moon/scrubland.png"
 			],
-			"text": "$(thing)Lightbloom Scrublands$() have some sparse growths of $(item)Lightblooms$(). It cannot spawn near $(l:the_moon/moon_biomes#maria)Coral$() biomes."
+			"text": "$(thing)光綻花叢$()零星生長著一些$(item)光綻花$()。它不會在$(l:the_moon/moon_biomes#maria)珊瑚$()生態域附近生成。"
 		},
 		{
 			"type": "patchouli:image",
 			"border": true,
-			"title": "Lightbloom Star Gazers",
+			"title": "光綻觀星地",
 			"anchor": "stargazers",
 			"images": [
 				"tfg:textures/gui/field_guide/moon/stargazers.png"
 			],
-			"text": "Many $(item)Lightblooms$() grow here. $(bold)Tip:$() This biome looks beautiful at night time with shaders on!"
+			"text": "這裡生長著許多$(item)光綻花$()。$(bold)提示：$()開啟光影時，這個生態域的夜景非常漂亮！"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:moon_dust_harvester",
 			"anchor": "harvester",
-			"text": "The $(item)Moon Dust Harvester$() is an optional multiblock that collects $(thing)lunar regolith$(). This regolith can then be processed into $(thing)infinite sources of certain ores$()!$(br)The downside? There's four types of regolith and each can only be harvested in a certain biome, so if you want all of them, you'll have to set up some $(l:logistics/trains)infrastructure$()."
+			"text": "$(item)月塵採收機$()是一種可選的多方塊結構，能採集$(thing)月球風化土$()。這些風化土可以加工成$(thing)特定礦石的無限來源$()！$(br)缺點呢？風化土共有四種，每一種都只能在特定的生態域採集，所以如果你想全部取得，就得建立一些$(l:logistics/trains)基礎設施$()。"
 		},
 		{
 			"type": "patchouli:multiblock",
 			"title": " ",
-			"text": "Upgrading the $(item)coils$() will reduce the energy cost. $(l:logistics/trains#cargo)Accumulators$() can be used to transport energy around.",
+			"text": "升級$(item)線圈$()可以降低能源消耗。$(l:logistics/trains#cargo)蓄電池$()可以用來運送能源。",
 			"multiblock": {
 				"pattern": [
 					[
@@ -191,30 +191,30 @@
 			"type": "patchouli:spotlight",
 			"item": "tfg:certus_regolith_dust",
 			"anchor": "regolith",
-			"text": "$(item)Certus Regolith Dust$() can only be harvested in the $(l:the_moon/moon_biomes#certus)Certus Fields$() biome.$(br2)It can be processed into $(item)Certus Quartz$() and $(item)Zinc$()."
+			"text": "$(item)賽特斯風化土粉$()只能在$(l:the_moon/moon_biomes#certus)賽特斯石英富集原$()生態域採集。$(br2)它可以加工成$(item)賽特斯石英$()和$(item)鋅$()。"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "tfg:cassiterite_regolith_dust",
-			"text": "$(item)Cassiterite Regolith Dust$() requires the $(l:the_moon/moon_biomes#stargazers)Lightbloom Star Gazers$() biome.$(br2)It is a source of $(item)Tin$()."
+			"text": "$(item)錫石風化土粉$()需要在$(l:the_moon/moon_biomes#stargazers)光綻觀星地$()生態域採集。$(br2)它是$(item)錫$()的來源。"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "tfg:goethe_regolith_dust",
-			"text": "$(item)Goethe Regolith Dust$() is harvested in the $(l:the_moon/moon_biomes#thicket)Chorus Thicket$() biome.$(br2)It can be processed into $(item)Copper$() and $(item)Iron$()."
+			"text": "$(item)針鐵風化土粉$()在$(l:the_moon/moon_biomes#thicket)歌萊叢林$()生態域採集。$(br2)它可以加工成$(item)銅$()和$(item)鐵$()。"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "tfg:bright_regolith_dust",
-			"text": "$(item)Bright Regolith Dust$() is from the $(l:the_moon/moon_biomes#reef)Lunar Reef$() biome.$(br2)It is a source of $(item)Diamond$() and $(item)Gold$()."
+			"text": "$(item)亮澤風化土粉$()來自$(l:the_moon/moon_biomes#reef)月表珊瑚$()生態域。$(br2)它是$(item)鑽石$()和$(item)金$()的來源。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "As part of their processing, all of these $(thing)Regolith Dusts$() are turned into $(item)Dusty Ores$(). These can only be centrifuged for resources for now - further extraction will require some lategame ore processing on $(l:venus)Venus$().$(br2)Be sure to use a $(item)Large Chemical Reactor$() to get perfect overclocking on these recipes! If you want to set up more passive automation for $(thing)AE2 components$() or $(l:logistics/railgun)Railgun Ammo$(), these regolith harvesters are essential!"
+			"text": "這些$(thing)風化土粉$()在處理過程中都會變成$(item)積塵礦石$()。目前只能用離心機提取資源，更進一步的提取則需要在$(l:venus)金星$()進行後期的礦石處理。$(br2)記得使用$(item)大型化學反應器$()，讓這些配方獲得無損超頻！如果你想為$(thing)AE2 組件$()或$(l:logistics/railgun)軌道炮彈藥$()建立更被動的自動化，這些月塵採收機是不可或缺的！"
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Further Reading",
+			"title": "延伸閱讀",
 			"anchor": "relations",
 			"entries": [
 				"tfg:the_moon/the_moon",

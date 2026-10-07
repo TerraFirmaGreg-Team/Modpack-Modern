@@ -1,6 +1,6 @@
 {
-	"name": "Mars",
-	"description": "Everything to know about $(c)Mars$(), the fourth planet from the sun.$(br2)Mars can be visited in $(5)EV$().",
+	"name": "火星",
+	"description": "太陽系第四惑星である $(c)火星$()について知っておくべきことすべて。$(br2)火星には$(5)EV$()で訪れることができます。",
 	"icon": "tfg:marker/mars",
 	"sortnum": 4
 }

@@ -22,7 +22,7 @@
 			"images": [
 				"tfg:textures/gui/field_guide/moon/plains.png"
 			],
-			"text": "$(thing)Lunar Plains$() don't really have anything interesting going on, but they're a nice neutral place to make a base."
+			"text": "$(thing)Księżycowe równiny$() same w sobie nie oferują nic szczególnie ciekawego, ale to spokojne, neutralne miejsce na bazę."
 		},
 		{
 			"type": "patchouli:image",
@@ -42,7 +42,7 @@
 			"images": [
 				"tfg:textures/gui/field_guide/moon/asurine.png"
 			],
-			"text": "$(thing)Asurine Fields$() has frequent formations of $(item)Asurine$(). It cannot spawn near $(l:the_moon/moon_biomes#forest)Chorus$() biomes."
+			"text": "$(thing)Azurynowe pola$() charakteryzują się częstymi formacjami $(item)azurynu$(). Nie mogą sąsiadować z biomami $(l:the_moon/moon_biomes#forest)refrenusowymi$()."
 		},
 		{
 			"type": "patchouli:image",
@@ -82,7 +82,7 @@
 			"images": [
 				"tfg:textures/gui/field_guide/moon/maria.png"
 			],
-			"text": "The $(thing)Lunar Maria$() contains some $(item)dead coral$() and sand. It cannot spawn near $(l:the_moon/moon_biomes#lightbloom)Lightbloom$() biomes."
+			"text": "$(thing)Morza księżycowe$() zawierają trochę $(item)martwego koralu$() i piasku. Nie mogą sąsiadować z biomami $(l:the_moon/moon_biomes#scrubland)rozbłyskowymi$()."
 		},
 		{
 			"type": "patchouli:image",

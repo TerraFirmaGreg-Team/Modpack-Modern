@@ -5,7 +5,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "$(li)$(bold)$(l:logistics/redstone_devices#clock)精密時鐘$()$(li)$(bold)$(l:logistics/redstone_devices#thermometer)溫度計$()$(li)$(bold)$(l:logistics/redstone_devices#anemometer)風速計$()$(li)$(bold)$(l:logistics/redstone_devices#vane)風向標$()$(li)$(bold)$(l:logistics/redstone_devices#morered)其他裝置$()$(li2)$(l:logistics/redstone_devices#more_comparators)更多比較器$()$(li2)$(l:logistics/redstone_devices#pulse_timer)脈衝計時器$()$(li2)$(l:logistics/redstone_devices#pulse_generator)序列脈衝產生器$()$(li2)$(l:logistics/redstone_devices#analog_lever)類比拉桿$()$(li)$(bold)$(l:logistics/redstone_devices#threshold_switch)閾值開關$()$(li)$(bold)$(l:logistics/redstone_devices#smart_observer)智慧偵測器$()$(li)$(bold)$(l:logistics/redstone_devices#link)無線紅石$()$(li)$(bold)$(l:logistics/redstone_devices#cover)機器覆蓋板$()"
+			"text": "$(li)$(bold)$(l:logistics/redstone_devices#clock)精密時鐘$()$(li)$(bold)$(l:logistics/redstone_devices#thermometer)溫度計$()$(li)$(bold)$(l:logistics/redstone_devices#anemometer)風速計$()$(li)$(bold)$(l:logistics/redstone_devices#vane)風向標$()$(li)$(bold)$(l:logistics/redstone_devices#morered)其他裝置$()$(li2)$(l:logistics/redstone_devices#more_comparators)更多比較器$()$(li2)$(l:logistics/redstone_devices#pulse_timer)脈衝計時器$()$(li2)$(l:logistics/redstone_devices#pulse_generator)序列脈衝產生器$()$(li2)$(l:logistics/redstone_devices#analog_lever)類比控制桿$()$(li)$(bold)$(l:logistics/redstone_devices#threshold_switch)儲量偵測器$()$(li)$(bold)$(l:logistics/redstone_devices#smart_observer)智慧偵測器$()$(li)$(bold)$(l:logistics/redstone_devices#link)無線紅石$()$(li)$(bold)$(l:logistics/redstone_devices#cover)機器覆蓋板$()"
 		},
 		{
 			"type": "patchouli:image",
@@ -33,12 +33,12 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "讀取環境溫度時，溫度計會輸出強類比訊號，訊號 0 代表 -40°C，訊號 15 代表 40°C。$(br2)讀取裝置溫度時，溫度計會輸出弱類比訊號，訊號 0 代表沒有熱度，訊號 15 代表耀眼白熱。$(br2)不需要比較器就能讀取溫度計的訊號強度。"
+			"text": "讀取環境溫度時，溫度計會輸出強類比訊號，訊號 0 代表 -40°C，訊號 15 代表 40°C。$(br2)讀取裝置溫度時，溫度計會輸出弱類比訊號，訊號 0 代表沒有熱度，訊號 15 代表熾白。$(br2)不需要比較器就能讀取溫度計的訊號強度。"
 		},
 		{
 			"type": "tfg:heat_recipe",
 			"recipe": "tfg:heating/metal/cinnabar_dust",
-			"text": "$(item)水銀$()可以從$(item)辰砂$()中提取。$(br2)如果你無法將水銀裝進小瓶，可以試著用$(l:craftsmanship/pottery#vessel)小缸$()將它轉移到$(l:craftsmanship/barrels)木桶$()中，然後手持小瓶對木桶按下$(item)$(k:key.use)$()。"
+			"text": "$(item)水銀$()可以從$(item)硃砂$()中提取。$(br2)如果你無法將水銀裝進小瓶，可以試著用$(l:craftsmanship/pottery#vessel)小缸$()將它轉移到$(l:craftsmanship/barrels)木桶$()中，然後手持小瓶對木桶按下$(item)$(k:key.use)$()。"
 		},
 		{
 			"type": "tfg:glassworking_recipe",
@@ -96,13 +96,13 @@
 			"type": "patchouli:crafting",
 			"recipe": "tfg:create/shaped/analog_lever",
 			"anchor": "analog_lever",
-			"text": "需要提供固定的訊號強度嗎？$(item)類比拉桿$()正好適合。"
+			"text": "需要提供固定的訊號強度嗎？$(item)類比控制桿$()正好適合。"
 		},
 		{
 			"type": "patchouli:crafting",
 			"recipe": "create:crafting/logistics/stockpile_switch",
 			"anchor": "threshold_switch",
-			"text": "$(item)閾值開關$()會依容器的填滿程度輸出紅石訊號。它對物品和流體都有效。"
+			"text": "$(item)儲量偵測器$()會依容器的填滿程度輸出紅石訊號。它對物品和流體都有效。"
 		},
 		{
 			"type": "patchouli:crafting",

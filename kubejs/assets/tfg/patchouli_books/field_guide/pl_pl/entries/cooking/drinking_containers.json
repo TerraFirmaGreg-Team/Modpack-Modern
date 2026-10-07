@@ -158,7 +158,7 @@
             "anchor": "juicer",
             "title": "Wyciskarka",
             "recipe": "beneath:crafting/juicer",
-            "text": "The $(item)Juicer$() is a special item that can extract the water contained in $(thing)Fruits$(), $(thing)Mushrooms$(), and $(thing)Cacti$() into drinkable water."
+            "text": "$(item)Wyciskarka$() to specjalne narzędzie, które wyciska wodę zawartą w $(thing)owocach$(), $(thing)grzybach$() i $(thing)kaktusach$() i umożliwia jej picie."
         },
         {
             "type": "patchouli:relations",

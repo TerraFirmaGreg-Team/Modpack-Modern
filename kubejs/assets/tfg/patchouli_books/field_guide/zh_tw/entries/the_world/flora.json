@@ -161,7 +161,7 @@
                     "Y": "tfc:plant/king_fern[part=lower]"
                 }
             },
-            "name": "高草",
+            "name": "芒草",
             "text": "高草方塊的高度剛好足以遮住你的視野。",
             "enable_visualize": false
         },
@@ -392,11 +392,11 @@
                     "bold": true
                 },
                 {
-                    "text": "平均溫度 (°C)",
+                    "text": "平均溫度(°C)",
                     "bold": true
                 },
                 {
-                    "text": "降雨量 (mm)",
+                    "text": "降雨量(mm)",
                     "bold": true
                 },
                 {
@@ -504,7 +504,7 @@
             },
             "name": "羅勒",
             "anchor": "basil",
-            "text": "$(thing)野生羅勒$()生長在温度12-25°C、降雨量300-500mm的區域。",
+            "text": "$(thing)野生羅勒$()生長在溫度12-25°C、降雨量300-500mm的區域。",
             "enable_visualize": false
         },
         {
@@ -524,7 +524,7 @@
             },
             "name": "月桂",
             "anchor": "bay",
-            "text": "$(thing)野生月桂$()生長在温度8-14°C、降雨量25-225mm的區域。",
+            "text": "$(thing)野生月桂$()生長在溫度8-14°C、降雨量25-225mm的區域。",
             "enable_visualize": false
         },
         {
@@ -544,7 +544,7 @@
             },
             "name": "小荳蔻",
             "anchor": "cardamom",
-            "text": "$(thing)野生豆蔻$()生長在温度18-30°C、降雨量350-500mm的區域。",
+            "text": "$(thing)野生豆蔻$()生長在溫度18-30°C、降雨量350-500mm的區域。",
             "enable_visualize": false
         },
         {
@@ -564,7 +564,7 @@
             },
             "name": "香菜",
             "anchor": "cilantro",
-            "text": "$(thing)野生香菜$()生長在温度5-15°C、降雨量0-150mm的區域。",
+            "text": "$(thing)野生香菜$()生長在溫度5-15°C、降雨量0-150mm的區域。",
             "enable_visualize": false
         },
         {
@@ -584,7 +584,7 @@
             },
             "name": "孜然",
             "anchor": "cumin",
-            "text": "$(thing)野生孜然$()生長在温度6-20°C、降雨量50-250mm的區域。",
+            "text": "$(thing)野生孜然$()生長在溫度6-20°C、降雨量50-250mm的區域。",
             "enable_visualize": false
         },
         {
@@ -604,7 +604,7 @@
             },
             "name": "奧勒岡",
             "anchor": "oregano",
-            "text": "$(thing)野生奧勒岡$()生長在温度5-13°C、降雨量50-150mm的區域。",
+            "text": "$(thing)野生奧勒岡$()生長在溫度5-13°C、降雨量50-150mm的區域。",
             "enable_visualize": false
         },
         {
@@ -624,7 +624,7 @@
             },
             "name": "多香果",
             "anchor": "pimento",
-            "text": "$(thing)野生多香果$()生長在温度15-30°C、降雨量200-450mm的區域。",
+            "text": "$(thing)野生多香果$()生長在溫度15-30°C、降雨量200-450mm的區域。",
             "enable_visualize": false
         },
         {
@@ -644,7 +644,7 @@
             },
             "name": "香草",
             "anchor": "vanilla",
-            "text": "$(thing)野生香草$()生長在温度18-30°C、降雨量200-500mm的區域。",
+            "text": "$(thing)野生香草$()生長在溫度18-30°C、降雨量200-500mm的區域。",
             "enable_visualize": false
         },
         {

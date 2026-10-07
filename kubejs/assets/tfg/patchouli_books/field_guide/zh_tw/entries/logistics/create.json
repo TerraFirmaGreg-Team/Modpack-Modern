@@ -8,12 +8,12 @@
 			"type": "patchouli:text",
 			"title": "目錄",
 			"anchor": "index",
-			"text": "$(li)$(bold)$(l:logistics/create#packages)包裹$()$(li2)$(l:logistics/create#packager)打包機$()$(li2)$(l:logistics/create#frogport)青蛙港$()$(li2)$(l:logistics/create#package_filter)包裹過濾器$()$(li2)$(l:logistics/create#repackager)重新打包機$()$(li2)$(l:logistics/create#unpackager)拆包機$()$(li2)$(l:logistics/create#clipboard)寫字板與指示手$()$(li2)$(l:logistics/create#postbox)郵筒$()$(li2)$(l:logistics/create#package_tips)小技巧$()"
+			"text": "$(li)$(bold)$(l:logistics/create#packages)包裹$()$(li2)$(l:logistics/create#packager)包裹裝卸站$()$(li2)$(l:logistics/create#frogport)蛙郵港$()$(li2)$(l:logistics/create#package_filter)包裹過濾器$()$(li2)$(l:logistics/create#repackager)包裹分揀站$()$(li2)$(l:logistics/create#unpackager)包裹拆卸站$()$(li2)$(l:logistics/create#clipboard)剪貼板與指示手$()$(li2)$(l:logistics/create#postbox)郵箱$()$(li2)$(l:logistics/create#package_tips)小技巧$()"
 		},
 		{
 			"type": "patchouli:text",
 			"title": " ",
-			"text": "$(br)$(li)$(bold)$(l:logistics/create#high_logistics)高階物流$()$(li2)$(l:logistics/create#rose_quartz)玫瑰石英$()$(li2)$(l:logistics/create#exquisite)傳輸器$()$(li2)$(l:logistics/create#stock_link)庫存連結器$()$(li2)$(l:logistics/create#stock_ticker)庫存看板$()$(li2)$(l:logistics/create#stock_bridge)AE2 庫存橋接器$()$(li2)$(l:logistics/create#requester)紅石請求器$()$(li2)$(l:logistics/create#table_cloths)桌布$()$(li2)$(l:logistics/create#factory_gauge)工廠儀表$()"
+			"text": "$(br)$(li)$(bold)$(l:logistics/create#high_logistics)高階物流$()$(li2)$(l:logistics/create#rose_quartz)玫瑰石英$()$(li2)$(l:logistics/create#exquisite)發訊線圈$()$(li2)$(l:logistics/create#stock_link)庫存鏈路$()$(li2)$(l:logistics/create#stock_ticker)庫存終端$()$(li2)$(l:logistics/create#stock_bridge)AE2 庫存橋接器$()$(li2)$(l:logistics/create#requester)紅石請求器$()$(li2)$(l:logistics/create#table_cloths)桌布$()$(li2)$(l:logistics/create#factory_gauge)工廠控制片$()"
 		},
 		{
 			"type": "patchouli:text",
@@ -30,17 +30,17 @@
 			"type": "patchouli:spotlight",
 			"title": "流體包裹",
 			"item": "fluidlogistics:fluid_package,fluidlogistics:fluid_package_exposed,fluidlogistics:fluid_package_weathered,fluidlogistics:fluid_package_oxidized",
-			"text": "$(item)流體包裹$()是$(thing)流體$()版的包裹。每個流體包裹可以裝 $(thing)10,000mB$()，也就是十桶。$(br2)$(bold)小技巧：$()對物品包裹按 $(item)$(k:key.sneak) + $(k:key.use)$() 就能打開它！動力鋸也能自動完成這件事。"
+			"text": "$(item)流體包裹$()是$(thing)流體$()版的包裹。每個流體包裹可以裝 $(thing)10,000mB$()，也就是十桶。$(br2)$(bold)小技巧：$()對物品包裹按 $(item)$(k:key.sneak) + $(k:key.use)$() 就能打開它！機械鋸也能自動完成這件事。"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "create:packager,fluidlogistics:fluid_packager",
 			"anchor": "packager",
-			"text": "收到$(thing)紅石訊號$()時，$(item)打包機$()會把它所連接容器中的物品包起來(可以用$(item)扳手$()切換連接的面)，輸出一個整齊的小紙箱包裹。$(br)$(bold)注意：$()雖然合成配方需要紙板，但打包機運作時不需要額外的紙板，所以不用擔心維護成本！"
+			"text": "收到$(thing)紅石訊號$()時，$(item)包裹裝卸站$()會把它所連接容器中的物品包起來(可以用$(item)扳手$()切換連接的面)，輸出一個整齊的小紙箱包裹。$(br)$(bold)注意：$()雖然合成配方需要紙板，但包裹裝卸站運作時不需要額外的紙板，所以不用擔心維護成本！"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "在打包機上放一個$(item)告示牌$()，它就會自動把告示牌上的內容標記到所有包裹上，作為目的地地址。等你開始使用各種方式規劃包裹路線時，這會更有用。$(c)注意：Framed Blocks 的告示牌無法用於此用途！$()$(br2)打包機也能拆開放進去的包裹，把內容物卸到所連接的物品欄中。"
+			"text": "在包裹裝卸站上放一個$(item)告示牌$()，它就會自動把告示牌上的內容標記到所有包裹上，作為目的地地址。等你開始使用各種方式規劃包裹路線時，這會更有用。$(c)注意：Framed Blocks 的告示牌無法用於此用途！$()$(br2)包裹裝卸站也能拆開放進去的包裹，把內容物卸到所連接的物品欄中。"
 		},
 		{
 			"type": "patchouli:multiblock",
@@ -72,7 +72,7 @@
 		{
 			"type": "patchouli:multiblock",
 			"enable_visualize": false,
-			"text": "放進這台打包機的包裹，都會自動拆開並放進$(l:logistics/storage#crates)板條箱$()中。",
+			"text": "放進這台包裹裝卸站的包裹，都會自動拆開並放進$(l:logistics/storage#crates)板條箱$()中。",
 			"name": "拆包物品",
 			"multiblock": {
 				"pattern": [
@@ -97,7 +97,7 @@
 		{
 			"type": "patchouli:multiblock",
 			"enable_visualize": false,
-			"text": "$(item)流體打包機$()的運作方式相同。",
+			"text": "$(item)流體包裹裝卸站$()的運作方式相同。",
 			"name": "打包流體",
 			"multiblock": {
 				"pattern": [
@@ -155,26 +155,26 @@
 		{
 			"type": "patchouli:spotlight",
 			"item": "create:package_frogport,fluidlogistics:copper_frogport",
-			"title": "青蛙港",
+			"title": "蛙郵港",
 			"anchor": "frogport",
-			"text": "$(item)包裹青蛙港$()是三種搬運包裹、把包裹送到目的地的方式之一。它可以把包裹掛到$(item)鏈條輸送機$()路線上，沿著鏈條連接運送。要使用它，你需要先用$(t:任何一種 TFC 的鏈條都可以)$(6)鏈條$()把$(item)鏈條輸送機$()互相連接成網路，再為鏈條輸送機提供旋轉動力。"
+			"text": "$(item)包裹蛙郵港$()是三種搬運包裹、把包裹送到目的地的方式之一。它可以把包裹掛到$(item)鎖鏈傳動器$()路線上，沿著鏈條連接運送。要使用它，你需要先用$(t:任何一種 TFC 的鏈條都可以)$(6)鏈條$()把$(item)鎖鏈傳動器$()互相連接成網路，再為鎖鏈傳動器提供旋轉動力。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "放下青蛙港之前，先對一條鏈條按$(item)$(k:key.use)$()，青蛙港就會與那段鏈條互動。$(br2)直接放在$(l:logistics/create#packager)打包機$()上方的青蛙港，會自動把該打包機產生的包裹掛上去。$(br2)$(bold)注意：$()兩種青蛙港都能用於物品和流體的打包機與包裹，唯一的差別是銅製的可以放在方塊的任何一面。"
+			"text": "放下蛙郵港之前，先對一條鏈條按$(item)$(k:key.use)$()，蛙郵港就會與那段鏈條互動。$(br2)直接放在$(l:logistics/create#packager)包裹裝卸站$()上方的蛙郵港，會自動把該包裹裝卸站產生的包裹掛上去。$(br2)$(bold)注意：$()兩種蛙郵港都能用於物品和流體的包裹裝卸站與包裹，唯一的差別是銅製的可以放在方塊的任何一面。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "青蛙港除了發送包裹，也能接收包裹。對青蛙港按$(item)$(k:key.use)$()，就會看到它有一個可以編輯的名稱。$(br2)這個名稱就是$(thing)地址$()：只要包裹上標記的目的地地址符合這個名稱，青蛙港就會從鏈條網路上把它取下，$(thing)自動收取$()！"
+			"text": "蛙郵港除了發送包裹，也能接收包裹。對蛙郵港按$(item)$(k:key.use)$()，就會看到它有一個可以編輯的名稱。$(br2)這個名稱就是$(thing)地址$()：只要包裹上標記的目的地地址符合這個名稱，蛙郵港就會從鏈條網路上把它取下，$(thing)自動收取$()！"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "收取的包裹會放進青蛙港所在方塊的物品欄中。$(br2)只要鏈條網路$(o)以某種方式$()連接到輸入和輸出的青蛙港，包裹最終都會自己找到路，不過你可能會想自行優化路徑，縮短包裹的運送時間。"
+			"text": "收取的包裹會放進蛙郵港所在方塊的物品欄中。$(br2)只要鏈條網路$(o)以某種方式$()連接到輸入和輸出的蛙郵港，包裹最終都會自己找到路，不過你可能會想自行優化路徑，縮短包裹的運送時間。"
 		},
 		{
 			"type": "patchouli:image",
 			"text": "一個用來發送和接收物品的小型裝置。",
-			"title": "青蛙港",
+			"title": "蛙郵港",
 			"border": true,
 			"images": [
 				"tfg:textures/gui/field_guide/frogports.png"
@@ -190,39 +190,39 @@
 			"type": "patchouli:spotlight",
 			"item": "create:repackager",
 			"anchor": "repackager",
-			"text": "$(item)重新打包機$()可以把多個物品包裹合併成一個包裹。如果一份請求的物品來自不同地點，卻需要在同一時間抵達目的地，這就很有用。$(br2)它也能把合併的包裹拆回原本的組成包裹。"
+			"text": "$(item)包裹分揀站$()可以把多個物品包裹合併成一個包裹。如果一份請求的物品來自不同地點，卻需要在同一時間抵達目的地，這就很有用。$(br2)它也能把合併的包裹拆回原本的組成包裹。"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "fluidlogistics:fluid_repackager",
 			"anchor": "unpackager",
-			"text": "$(item)拆包機$()和$(l:logistics/create#repackager)重新打包機$()類似，但可以把物品包裹和流體包裹合併成一個，反之亦然。"
+			"text": "$(item)包裹拆卸站$()和$(l:logistics/create#repackager)包裹分揀站$()類似，但可以把物品包裹和流體包裹合併成一個，反之亦然。"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "fluidlogistics:hand_pointer,create:clipboard",
 			"title": "空間不夠嗎？",
 			"anchor": "clipboard",
-			"text": "$(item)指示手$()和$(item)寫字板$()可以在旁邊沒有任何方塊的情況下，為打包機供能和設定地址。$(br2)要使用$(item)指示手$()，只要對任何打包機或重新打包機按$(item)$(k:key.use)$()，就能強制為它供能，不需要紅石訊號！"
+			"text": "$(item)指示手$()和$(item)剪貼板$()可以在旁邊沒有任何方塊的情況下，為包裹裝卸站供能和設定地址。$(br2)要使用$(item)指示手$()，只要對任何包裹裝卸站或包裹分揀站按$(item)$(k:key.use)$()，就能強制為它供能，不需要紅石訊號！"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(item)指示手$()也可以在$(l:logistics/create#frogport)青蛙港$()放置後更改它的目標。方法是拿著$(item)指示手$()，對要更改的$(item)青蛙港$()按$(item)$(k:key.use)$()，再對鏈條上要連接的新位置按$(item)$(k:key.use)$()。$(br2)要設定地址，請拿一個空白的$(item)寫字板$()，在第一行輸入你要的地址$(c)(記得以「#」開頭)$()，再對任何打包機按$(item)$(k:key.use)$()即可設定地址，不需要告示牌！"
+			"text": "$(item)指示手$()也可以在$(l:logistics/create#frogport)蛙郵港$()放置後更改它的目標。方法是拿著$(item)指示手$()，對要更改的$(item)蛙郵港$()按$(item)$(k:key.use)$()，再對鏈條上要連接的新位置按$(item)$(k:key.use)$()。$(br2)要設定地址，請拿一個空白的$(item)剪貼板$()，在第一行輸入你要的地址$(c)(記得以「#」開頭)$()，再對任何包裹裝卸站按$(item)$(k:key.use)$()即可設定地址，不需要告示牌！"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "tag:create:postboxes",
-			"title": "郵筒",
+			"title": "郵箱",
 			"anchor": "postbox",
-			"text": "$(item)郵筒$()透過$(l:logistics/trains)鐵路網$()規劃包裹的路線。放置前，先對$(l:logistics/trains#station)火車站點$()按$(item)$(k:key.use)$()，把郵筒連結到該站點；之後任何停靠在那裡的火車都能與郵筒互動(郵筒必須在站點 4 格範圍內)。"
+			"text": "$(item)郵箱$()透過$(l:logistics/trains)鐵路網$()規劃包裹的路線。放置前，先對$(l:logistics/trains#station)車站$()按$(item)$(k:key.use)$()，把郵箱連結到該站點；之後任何停靠在那裡的火車都能與郵箱互動(郵箱必須在站點 4 格範圍內)。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "和$(l:logistics/create#frogport)包裹青蛙港$()一樣，郵筒也可以命名。經過的火車會收走所有目的地與郵筒名稱不符的包裹。$(br2)此外，如果火車物品欄中有$(italic)符合$()該郵筒名稱的包裹，就會改為放進郵筒的物品欄中。"
+			"text": "和$(l:logistics/create#frogport)包裹蛙郵港$()一樣，郵箱也可以命名。經過的火車會收走所有目的地與郵箱名稱不符的包裹。$(br2)此外，如果火車物品欄中有$(italic)符合$()該郵箱名稱的包裹，就會改為放進郵箱的物品欄中。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(item)郵筒$()還有最後一個很酷的特點：從郵筒自動抽取物品時(透過滑槽、漏斗等)，只有目的地$(thing)符合郵筒名稱$()的包裹會被取出，目的地不同的包裹則會留在裡面，等待之後裝上火車。"
+			"text": "$(item)郵箱$()還有最後一個很酷的特點：從郵箱自動抽取物品時(透過滑槽、漏斗等)，只有目的地$(thing)符合郵箱名稱$()的包裹會被取出，目的地不同的包裹則會留在裡面，等待之後裝上火車。"
 		},
 		{
 			"type": "patchouli:text",
@@ -251,7 +251,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "不過在深入$(thing)高階物流$()之前，需要先做一些準備。$(br2)製作這類設備所需的$(item)傳輸器$()，實際上只能透過以高能量光線折射穿過一種非常獨特的礦物來生產：$(item)玫瑰石英$()。換句話說，我們需要一台$(item)基礎雷射雕刻機$()，以及取得$(item)玫瑰石英透鏡$()的方法，所以趕快把這些搞定吧！"
+			"text": "不過在深入$(thing)高階物流$()之前，需要先做一些準備。$(br2)製作這類設備所需的$(item)發訊線圈$()，實際上只能透過以高能量光線折射穿過一種非常獨特的礦物來生產：$(item)玫瑰石英$()。換句話說，我們需要一台$(item)基礎雷射雕刻機$()，以及取得$(item)玫瑰石英透鏡$()的方法，所以趕快把這些搞定吧！"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -287,16 +287,16 @@
 			"type": "patchouli:spotlight",
 			"item": "create:stock_link",
 			"anchor": "stock_link",
-			"text": "你能製作的第一台$(thing)高階物流$()機器是$(thing)庫存連結器$()，可以用來建立$(thing)物流網路$()。把庫存連結器放在$(l:logistics/create#packager)打包機$()的任何一面，打包機所連接的物品欄就會在網路上顯示！"
+			"text": "你能製作的第一台$(thing)高階物流$()機器是$(thing)庫存鏈路$()，可以用來建立$(thing)物流網路$()。把庫存鏈路放在$(l:logistics/create#packager)包裹裝卸站$()的任何一面，包裹裝卸站所連接的物品欄就會在網路上顯示！"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "單獨使用時，庫存連結器沒什麼用，但它是之後所有機器的核心組件……$(br2)放下庫存連結器之前，記得先對現有的庫存連結器按$(item)$(k:key.use)$()，讓兩者調頻到同一個網路。要取消調頻，只要把庫存連結器單獨放進合成格合成一次即可清除。$(br2)更多資訊請查看$(thing)思索$()！"
+			"text": "單獨使用時，庫存鏈路沒什麼用，但它是之後所有機器的核心組件……$(br2)放下庫存鏈路之前，記得先對現有的庫存鏈路按$(item)$(k:key.use)$()，讓兩者調頻到同一個網路。要取消調頻，只要把庫存鏈路單獨放進合成格合成一次即可清除。$(br2)更多資訊請查看$(thing)思索$()！"
 		},
 		{
 			"type": "patchouli:multiblock",
 			"enable_visualize": false,
-			"text": "只有當庫存連結器收到網路上$(l:logistics/create#stock_ticker)其他地方$()傳來的訊號時，$(l:logistics/create#packager)打包機$()才會產生包裹。",
+			"text": "只有當庫存鏈路收到網路上$(l:logistics/create#stock_ticker)其他地方$()傳來的訊號時，$(l:logistics/create#packager)包裹裝卸站$()才會產生包裹。",
 			"name": "範例",
 			"multiblock": {
 				"pattern": [
@@ -321,15 +321,15 @@
 			"type": "patchouli:spotlight",
 			"item": "create:stock_ticker",
 			"anchor": "stock_ticker",
-			"text": "如果你已經用$(l:logistics/create#stock_link)庫存連結器$()把各種物品提供給$(thing)物流網路$()，下一步就是做一個能遠端叫貨的東西……這就輪到$(item)庫存看板$()登場了。和庫存連結器一樣，你需要先對現有的連結器按$(item)$(k:key.use)$()，讓看板調頻到該網路。"
+			"text": "如果你已經用$(l:logistics/create#stock_link)庫存鏈路$()把各種物品提供給$(thing)物流網路$()，下一步就是做一個能遠端叫貨的東西……這就輪到$(item)庫存終端$()登場了。和庫存鏈路一樣，你需要先對現有的連結器按$(item)$(k:key.use)$()，讓看板調頻到該網路。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "接著，在庫存看板旁邊放一個$(item)烈焰人燃燒室$()，或讓任何生物坐在$(l:logistics/trains#seat)座椅$()上，讓它們擔任$(thing)店員$()。$(br2)既然這可憐的生物已經被終身綁約了，你可以點擊牠來查看$(thing)物流網路$()上的所有物品。你甚至可以搜尋網路中的物品，並建立訂單送到指定的地址！"
+			"text": "接著，在庫存終端旁邊放一個$(item)烈焰使者燃燒室$()，或讓任何生物坐在$(l:logistics/trains#seat)座椅$()上，讓它們擔任$(thing)庫存管理員$()。$(br2)既然這可憐的生物已經被終身綁約了，你可以點擊牠來查看$(thing)物流網路$()上的所有物品。你甚至可以搜尋網路中的物品，並建立訂單送到指定的地址！"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "這項功能沒有距離限制，不過你需要自行規劃透過庫存連結器訂購的包裹路線，而且相關的連結器所在的區塊必須保持載入才能運作。$(br2)此外，你可以在看板中放入$(item)過濾器$()，只顯示特定物品，或是設定物品分類。"
+			"text": "這項功能沒有距離限制，不過你需要自行規劃透過庫存鏈路訂購的包裹路線，而且相關的連結器所在的區塊必須保持載入才能運作。$(br2)此外，你可以在看板中放入$(item)過濾器$()，只顯示特定物品，或是設定物品分類。"
 		},
 		{
 			"type": "tfg:multimultiblock",
@@ -414,26 +414,26 @@
 			"type": "patchouli:spotlight",
 			"item": "create:redstone_requester",
 			"anchor": "requester",
-			"text": "$(item)紅石請求器$()可以看成是功能更專一的$(l:logistics/create#stock_ticker)庫存看板$()。你無法從它查看$(thing)物流網路$()中的物品，但可以設定一份訂單，每當機器收到紅石訊號時就自動提出請求。"
+			"text": "$(item)紅石請求器$()可以看成是功能更專一的$(l:logistics/create#stock_ticker)庫存終端$()。你無法從它查看$(thing)物流網路$()中的物品，但可以設定一份訂單，每當機器收到紅石訊號時就自動提出請求。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "這對設定特定物品的自動供應非常有用。例如，可以考慮搭配$(l:logistics/redstone_devices#threshold_switch)閾值開關$()或$(l:logistics/redstone_devices#smart_observer)智慧偵測器$()一起使用。$(br2)記得和其他$(thing)高階物流$()機器一樣，放下請求器之前，要先對現有的連結器按$(item)$(k:key.use)$()，讓它調頻到該網路！"
+			"text": "這對設定特定物品的自動供應非常有用。例如，可以考慮搭配$(l:logistics/redstone_devices#threshold_switch)儲量偵測器$()或$(l:logistics/redstone_devices#smart_observer)智慧偵測器$()一起使用。$(br2)記得和其他$(thing)高階物流$()機器一樣，放下請求器之前，要先對現有的連結器按$(item)$(k:key.use)$()，讓它調頻到該網路！"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "tag:create:table_cloths",
 			"title": "桌布",
 			"anchor": "table_cloths",
-			"text": "$(item)桌布$()是機械動力的玩家商店系統！每塊桌布可以販售一種物品。你需要一個由$(l:logistics/create#stock_ticker)庫存看板$()、$(l:logistics/create#packager)打包機$()和$(thing)店員$()(坐在座椅上的烈焰人燃燒室或生物)組成的小型裝置才能開始。"
+			"text": "$(item)桌布$()是機械動力的玩家商店系統！每塊桌布可以販售一種物品。你需要一個由$(l:logistics/create#stock_ticker)庫存終端$()、$(l:logistics/create#packager)包裹裝卸站$()和$(thing)庫存管理員$()(坐在座椅上的烈焰使者燃燒室或生物)組成的小型裝置才能開始。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "手持$(item)桌布$()對店員按$(item)$(k:key.use)$()，然後選擇要販售的物品。接著把桌布放在方塊或$(item)鷹架$()上即可。$(br2)放置後，手持你想收取作為付款的物品，對桌布前方的欄位按$(item)$(k:key.use)$()。之後按住$(item)$(k:key.use)$()可以調整該物品的數量。"
+			"text": "手持$(item)桌布$()對庫存管理員按$(item)$(k:key.use)$()，然後選擇要販售的物品。接著把桌布放在方塊或$(item)腳手架$()上即可。$(br2)放置後，手持你想收取作為付款的物品，對桌布前方的欄位按$(item)$(k:key.use)$()。之後按住$(item)$(k:key.use)$()可以調整該物品的數量。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "要向其他玩家的商店購買物品，請空手對桌布按$(item)$(k:key.use)$()，把它們加入$(thing)購物清單$()。$(br2)準備好之後，手持購物清單對店員按$(item)$(k:key.use)$()就能購買物品！$(br2)按 $(item)$(k:key.sneak) + $(k:key.use)$() 可以清空購物清單。付款會存放在庫存看板中，店主之後可以收取，或把它送回自己的基地！"
+			"text": "要向其他玩家的商店購買物品，請空手對桌布按$(item)$(k:key.use)$()，把它們加入$(thing)採購清單$()。$(br2)準備好之後，手持採購清單對庫存管理員按$(item)$(k:key.use)$()就能購買物品！$(br2)按 $(item)$(k:key.sneak) + $(k:key.use)$() 可以清空採購清單。付款會存放在庫存終端中，店主之後可以收取，或把它送回自己的基地！"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -445,28 +445,28 @@
 			"type": "patchouli:spotlight",
 			"item": "create:factory_gauge,fluidlogistics:fluid_factory_gauge",
 			"anchor": "factory_gauge",
-			"title": "工廠儀表",
-			"text": "$(item)工廠儀表$()是終極的$(thing)高階物流$()機器，你必須具備製作$(item)鋁$()和$(item)二極體$()的技術才能合成，但它的功能也強大到與之相稱。"
+			"title": "工廠控制片",
+			"text": "$(item)工廠控制片$()是終極的$(thing)高階物流$()機器，你必須具備製作$(item)鋁$()和$(item)二極體$()的技術才能合成，但它的功能也強大到與之相稱。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "工廠儀表的第一種用法，是放在$(l:logistics/create#packager)打包機$()上，監控所連接物品欄中特定物品的數量。這樣設定時，儀表的外框會呈現$(1)藍色$()，稱為$(thing)補貨模式$()。$(br2)另一種用法，是當$(thing)物流網路$()中目標產物的數量低於門檻時，自動訂購材料。"
+			"text": "工廠控制片的第一種用法，是放在$(l:logistics/create#packager)包裹裝卸站$()上，監控所連接物品欄中特定物品的數量。這樣設定時，儀表的外框會呈現$(1)藍色$()，稱為$(thing)補貨模式$()。$(br2)另一種用法，是當$(thing)物流網路$()中目標產物的數量低於門檻時，自動訂購材料。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "當儀表放在打包機以外的任何方塊上時，就會以這種模式運作：外框會呈現$(6)黃色$()，稱為$(thing)配方模式$()。$(br2)無論哪種模式，你都可以設定工廠儀表要嘗試維持的數值。接著必須在介面中設定目標地址，自動產生的訂單就會送往你選擇的地址。"
+			"text": "當儀表放在包裹裝卸站以外的任何方塊上時，就會以這種模式運作：外框會呈現$(6)黃色$()，稱為$(thing)配方模式$()。$(br2)無論哪種模式，你都可以設定工廠控制片要嘗試維持的數值。接著必須在介面中設定目標地址，自動產生的訂單就會送往你選擇的地址。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "在$(thing)補貨模式$()下，指定的地址最好指向儀表所在的打包機，這樣送來的包裹就會自動拆開放進目標物品欄。$(br2)在$(thing)配方模式$()下，指定的地址應該指向你製造該產物的地方。"
+			"text": "在$(thing)補貨模式$()下，指定的地址最好指向儀表所在的包裹裝卸站，這樣送來的包裹就會自動拆開放進目標物品欄。$(br2)在$(thing)配方模式$()下，指定的地址應該指向你製造該產物的地方。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "此外，你還需要為每一種使用到的材料各設置一個儀表，再透過介面中的$(thing)「新增連接」$()把它們連到第一個儀表。$(br2)如果你在$(thing)配方模式$()下要製作的產物是一般合成配方，就需要啟用$(thing)「使用動力合成」$()，並確保包裹會拆開放進 3x3 的$(item)動力合成器$()陣列中。"
+			"text": "此外，你還需要為每一種使用到的材料各設置一個儀表，再透過介面中的$(thing)「新增連接」$()把它們連到第一個儀表。$(br2)如果你在$(thing)配方模式$()下要製作的產物是一般合成配方，就需要啟用$(thing)「使用動力合成」$()，並確保包裹會拆開放進 3x3 的$(item)機械合成器$()陣列中。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(c)包裹在途中不能被拆開，這一點非常重要$()，因為包裹本身帶有合成配方的指令。如果材料必須來自不同的來源，可以考慮用$(l:logistics/create#repackager)重新打包機$()作為包裹的緩衝區。$(br2)$(bold)注意：$()工廠儀表的請求嚴格來說是「承諾」，也就是網路保證相關物品$(italic)將會$()在未來的某個時間點送達。"
+			"text": "$(c)包裹在途中不能被拆開，這一點非常重要$()，因為包裹本身帶有合成配方的指令。如果材料必須來自不同的來源，可以考慮用$(l:logistics/create#repackager)包裹分揀站$()作為包裹的緩衝區。$(br2)$(bold)注意：$()工廠控制片的請求嚴格來說是「承諾」，也就是網路保證相關物品$(italic)將會$()在未來的某個時間點送達。"
 		},
 		{
 			"type": "patchouli:text",
@@ -474,7 +474,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "不出所料，$(item)流體工廠儀表$()就是流體版的工廠儀表。$(br2)也一定要看看工廠儀表的$(thing)思索$()！裡面有$(italic)大量$()設定方式的視覺化範例。$(br2)$(bold)注意：$()如果你真的很愛用儀表，希望有更多選擇，$(tfg_short)有選用的 $(l:https://www.curseforge.com/minecraft/mc-mods/create-extra-gauges)Create: Extra Gauges$() 相容支援！只要安裝這個模組，新的配方就會出現。"
+			"text": "不出所料，$(item)流體工廠控制片$()就是流體版的工廠控制片。$(br2)也一定要看看工廠控制片的$(thing)思索$()！裡面有$(italic)大量$()設定方式的視覺化範例。$(br2)$(bold)注意：$()如果你真的很愛用儀表，希望有更多選擇，$(tfg_short)有選用的 $(l:https://www.curseforge.com/minecraft/mc-mods/create-extra-gauges)Create: Extra Gauges$() 相容支援！只要安裝這個模組，新的配方就會出現。"
 		},
 		{
 			"type": "patchouli:relations",

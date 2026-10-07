@@ -227,7 +227,7 @@
 			"scale": 0.8,
 			"name": "Wstrząsacz",
 			"anchor": "quake",
-			"text": "$(thing)Quakes$() are capable of absorbing large amounts of damage before releasing it back in a burst. Wait until they're recharging to attack!"
+			"text": "$(thing)Wstrząsacze$() potrafią pochłaniać duże ilości obrażeń, a następnie oddać je w gwałtowny sposób. Poczekaj z atakiem, aż zaczną się ponownie ładować!"
 		},
 		{
 			"type": "patchouli:entity",

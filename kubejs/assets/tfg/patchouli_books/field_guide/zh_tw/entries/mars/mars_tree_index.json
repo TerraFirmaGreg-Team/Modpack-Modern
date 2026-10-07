@@ -12,7 +12,7 @@
 			"type": "patchouli:text",
 			"title": "目錄",
 			"anchor": "index",
-			"text": "$(li)$(bold)大型蕈菇$()$(li2)$(l:mars/mars_tree_index#aeronos)艾羅諾斯$()$(li2)$(l:mars/mars_tree_index#alphacene)始源紀$()$(li2)$(l:mars/mars_tree_index#crimson)緋紅$()$(li2)$(l:mars/mars_tree_index#glacian)霜原$()$(li2)$(l:mars/mars_tree_index#strophar)斯特羅法$()$(li2)$(l:mars/mars_tree_index#warped)扭曲$()$(li)$(bold)$(l:mars/mars_tree_index#iodine)碘$()"
+			"text": "$(li)$(bold)大型蕈菇$()$(li2)$(l:mars/mars_tree_index#aeronos)艾羅諾斯$()$(li2)$(l:mars/mars_tree_index#alphacene)史蘊$()$(li2)$(l:mars/mars_tree_index#crimson)緋紅$()$(li2)$(l:mars/mars_tree_index#glacian)霜原$()$(li2)$(l:mars/mars_tree_index#strophar)斯特羅法$()$(li2)$(l:mars/mars_tree_index#warped)扭曲$()$(li)$(bold)$(l:mars/mars_tree_index#iodine)碘$()"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -23,10 +23,10 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "始源紀",
+			"title": "史蘊",
 			"anchor": "alphacene",
 			"item": "species:alphacene_mushroom_block",
-			"text": "$(bold)始源紀蕈菇$()$(br)$(thing)溫度$()：-85°C 以上$(br)東方和西方都會出現。$(br)$(thing)生長天數$()：3$(br2)始源紀蕈菇方塊可以與$(l:mars/mars_crops#bulbkin)球莖南瓜塊$()組合，取得$(item)螢石粉$()。"
+			"text": "$(bold)史蘊蘑菇$()$(br)$(thing)溫度$()：-85°C 以上$(br)東方和西方都會出現。$(br)$(thing)生長天數$()：3$(br2)史蘊蘑菇方塊可以與$(l:mars/mars_crops#bulbkin)球莖南瓜塊$()組合，取得$(item)螢石粉$()。"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -65,7 +65,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "將緋紅烯和扭曲烷，加上火星空氣蒸餾所得的一些氪(可循環使用)，再利用$(l:mars/fission)核分裂反應爐$()的熱量混合，就能得到$(item)碘$()！$(br2)這個過程很慢，但你目前應該不需要很多，而且在更遠的行星上會有更好的取得碘的方法。"
+			"text": "將緋紅烯和扭曲烷，加上火星空氣蒸餾所得的一些氪(可循環使用)，再利用$(l:mars/fission)裂變反應爐$()的熱量混合，就能得到$(item)碘$()！$(br2)這個過程很慢，但你目前應該不需要很多，而且在更遠的行星上會有更好的取得碘的方法。"
 		},
 		{
 			"type": "patchouli:relations",

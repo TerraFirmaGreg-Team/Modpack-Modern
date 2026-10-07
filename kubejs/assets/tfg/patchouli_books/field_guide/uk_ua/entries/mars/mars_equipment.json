@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "$(li)$(bold)Зброя ближнього бою$()\n$(li2)$(l:mars/mars_equipment#nano_saber)Нано-шабля$()\n$(li)$(bold)$(l:mars/mars_equipment#ev_guns)Вогнепальна зброя$()\n$(li2)$(l:mars/mars_equipment#cannon)Ручна польова гармата$()\n$(li2)$(l:mars/mars_equipment#rifles)Вдосконалені гвинтівки$()\n$(li2)$(l:mars/mars_equipment#grenades)Гранатомет$()\n$(li2)$(l:mars/mars_equipment#shotguns)Вдосконалені рушниці$()\n$(li2)$(l:mars/mars_equipment#pistols)Вдосконалені пістолети та ПП$()\n$(li)$(bold)Броня$()\n$(li2)$(l:mars/mars_equipment#space_suit)Скафандр із вольфрамової сталі$()\n$(li)$(bold)Щити$()\n$(li2)$(l:mars/mars_equipment#reinforced_shield)Посилений щит$()\n$(li2)$(l:mars/mars_equipment#corrupted_shield)Зіпсований щит$()\n$(li2)$(l:mars/mars_equipment#ricoshield)Рикошетний щит$()"
+			"text": "$(li)$(bold)Зброя ближнього бою$()$(li2)$(l:mars/mars_equipment#nano_saber)Нано-шабля$()$(li)$(bold)$(l:mars/mars_equipment#ev_guns)Вогнепальна зброя$()$(li2)$(l:mars/mars_equipment#cannon)Ручна польова гармата$()$(li2)$(l:mars/mars_equipment#rifles)Вдосконалені гвинтівки$()$(li2)$(l:mars/mars_equipment#grenades)Гранатомет$()$(li2)$(l:mars/mars_equipment#shotguns)Вдосконалені рушниці$()$(li2)$(l:mars/mars_equipment#pistols)Вдосконалені пістолети та ПП$()$(li)$(bold)Броня$()$(li2)$(l:mars/mars_equipment#space_suit)Скафандр із вольфрамової сталі$()$(li)$(bold)Щити$()$(li2)$(l:mars/mars_equipment#reinforced_shield)Посилений щит$()$(li2)$(l:mars/mars_equipment#corrupted_shield)Зіпсований щит$()$(li2)$(l:mars/mars_equipment#ricoshield)Рикошетний щит$()"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -18,7 +18,7 @@
 			"type": "patchouli:spotlight",
 			"item": "tfg:certus_mechanism",
 			"anchor": "ev_guns",
-			"text": "$(item)Істинний механізм$() використовується для створення зброї $(5)EV$()-рівня. Для багатьох із цих видів зброї потрібні боєприпаси, що містять істинний  кварц. На Місяці є величезні жили цього ресурсу, або ж ти можеш налагодити його нескінченне постачання через $(l:the_moon/regolith)місячний реголіт$()."
+			"text": "$(item)Істинний механізм$() використовується для створення зброї $(5)EV$()-рівня. Для багатьох із цих видів зброї потрібні боєприпаси, що містять істинний  кварц. На Місяці є величезні жили цього ресурсу, або ж ти можеш налагодити його нескінченне постачання через $(l:the_moon/moon_biomes#harvester)місячний реголіт$()."
 		},
 		{
 			"type": "patchouli:spotlight",

@@ -11,11 +11,11 @@
         },
         {
             "type": "patchouli:text",
-            "text": "$(li2)$(l:the_world/wild_animals#donkey)驢$()$(li2)$(l:the_world/wild_animals#mule)騾子$()$(li2)$(l:the_world/wild_animals#horse)馬$()$(li2)$(l:the_world/wild_animals#dromedary_camel)單峰駱駝$()$(li2)$(l:the_world/wild_animals#bactrian_camel)雙峰駱駝$()$(li)$(bold)$(l:the_world/wild_animals#predators)掠食者$()$(li2)$(l:the_world/wild_animals#polar_bear)北極熊$()$(li2)$(l:the_world/wild_animals#black_bear)黑熊$()$(li2)$(l:the_world/wild_animals#grizzly_bear)灰熊$()$(li2)$(l:the_world/wild_animals#cougar)美洲獅$()$(li2)$(l:the_world/wild_animals#panther)黑豹$()$(li2)$(l:the_world/wild_animals#lion)獅子$()$(li2)$(l:the_world/wild_animals#tiger)老虎$()$(li2)$(l:the_world/wild_animals#sabertooth)劍齒虎$()$(li2)$(l:the_world/wild_animals#wolf)狼$()"
+            "text": "$(li2)$(l:the_world/wild_animals#donkey)驢$()$(li2)$(l:the_world/wild_animals#mule)騾$()$(li2)$(l:the_world/wild_animals#horse)馬$()$(li2)$(l:the_world/wild_animals#dromedary_camel)單峰駱駝$()$(li2)$(l:the_world/wild_animals#bactrian_camel)雙峰駱駝$()$(li)$(bold)$(l:the_world/wild_animals#predators)掠食者$()$(li2)$(l:the_world/wild_animals#polar_bear)北極熊$()$(li2)$(l:the_world/wild_animals#black_bear)黑熊$()$(li2)$(l:the_world/wild_animals#grizzly_bear)灰熊$()$(li2)$(l:the_world/wild_animals#cougar)美洲獅$()$(li2)$(l:the_world/wild_animals#panther)黑豹$()$(li2)$(l:the_world/wild_animals#lion)獅子$()$(li2)$(l:the_world/wild_animals#tiger)老虎$()$(li2)$(l:the_world/wild_animals#sabertooth)劍齒虎$()$(li2)$(l:the_world/wild_animals#wolf)狼$()"
         },
         {
             "type": "patchouli:text",
-            "text": "$(li2)$(l:the_world/wild_animals#direwolf)恐狼$()$(li2)$(l:the_world/wild_animals#hyena)鬣狗$()$(li2)$(l:the_world/wild_animals#crocodile)鱷魚$()$(li2)$(l:the_world/wild_animals#ocelot)山貓$()$(bold)$(li)$(l:the_world/wild_animals#ramming_prey)衝撞型獵物$()$(li2)$(l:the_world/wild_animals#boar)野豬$()$(li2)$(l:the_world/wild_animals#moose)駝鹿$()$(li2)$(l:the_world/wild_animals#wildebeest)牛羚$()$(li2)$(l:the_world/wild_animals#bison)美洲野牛$()$(bold)$(li)$(l:the_world/wild_animals#prey)獵物$()$(li2)$(l:the_world/wild_animals#rabbit)兔子$()$(li2)$(l:the_world/wild_animals#fox)狐狸$()$(li2)$(l:the_world/wild_animals#deer)鹿$()$(li2)$(l:the_world/wild_animals#caribou)北美馴鹿$()$(li2)$(l:the_world/wild_animals#gazelle)瞪羚$()"
+            "text": "$(li2)$(l:the_world/wild_animals#direwolf)恐狼$()$(li2)$(l:the_world/wild_animals#hyena)鬣狗$()$(li2)$(l:the_world/wild_animals#crocodile)鱷魚$()$(li2)$(l:the_world/wild_animals#ocelot)山貓$()$(bold)$(li)$(l:the_world/wild_animals#ramming_prey)衝撞型獵物$()$(li2)$(l:the_world/wild_animals#boar)野豬$()$(li2)$(l:the_world/wild_animals#moose)駝鹿$()$(li2)$(l:the_world/wild_animals#wildebeest)牛羚$()$(li2)$(l:the_world/wild_animals#bison)美洲野牛$()$(bold)$(li)$(l:the_world/wild_animals#prey)獵物$()$(li2)$(l:the_world/wild_animals#rabbit)兔子$()$(li2)$(l:the_world/wild_animals#fox)狐狸$()$(li2)$(l:the_world/wild_animals#deer)鹿$()$(li2)$(l:the_world/wild_animals#caribou)馴鹿$()$(li2)$(l:the_world/wild_animals#gazelle)瞪羚$()"
         },
         {
             "type": "patchouli:text",
@@ -23,7 +23,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "$(bold)$(li)$(l:the_world/wild_animals#fish)魚類$()$(li2)$(l:the_world/wild_animals#cod)鱈魚$()$(li2)$(l:the_world/wild_animals#pufferfish)河豚$()$(li2)$(l:the_world/wild_animals#jellyfish)水母$()$(li2)$(l:the_world/wild_animals#tropical_fish)熱帶魚$()$(li2)$(l:the_world/wild_animals#salmon)鮭魚$()$(li2)$(l:the_world/wild_animals#bluegill)藍鰓太陽魚$()$(bold)$(li)$(l:the_world/wild_animals#shellfish)甲殼類$()$(li2)$(l:the_world/wild_animals#isopod)等足蟲$()$(li2)$(l:the_world/wild_animals#lobster)龍蝦$()$(li2)$(l:the_world/wild_animals#crayfish)螯蝦$()$(li2)$(l:the_world/wild_animals#horseshoe_crab)鱟$()"
+            "text": "$(bold)$(li)$(l:the_world/wild_animals#fish)魚類$()$(li2)$(l:the_world/wild_animals#cod)鱈魚$()$(li2)$(l:the_world/wild_animals#pufferfish)河豚$()$(li2)$(l:the_world/wild_animals#jellyfish)水母$()$(li2)$(l:the_world/wild_animals#tropical_fish)熱帶魚$()$(li2)$(l:the_world/wild_animals#salmon)鮭魚$()$(li2)$(l:the_world/wild_animals#bluegill)藍鰓魚$()$(bold)$(li)$(l:the_world/wild_animals#shellfish)甲殼類$()$(li2)$(l:the_world/wild_animals#isopod)等足蟲$()$(li2)$(l:the_world/wild_animals#lobster)龍蝦$()$(li2)$(l:the_world/wild_animals#crayfish)小龍蝦$()$(li2)$(l:the_world/wild_animals#horseshoe_crab)鱟$()"
         },
         {
             "type": "patchouli:text",
@@ -188,14 +188,14 @@
             "type": "patchouli:text",
             "anchor": "mule",
             "text": "$(bold)$(l:the_world/climate#temperature)生成溫度$()：> -15°C$(br)$(bold)$(l:the_world/climate#rainfall)生成降雨量$()：130 — 400mm$(br)$(bold)生成區域$()：平原，由馬和驢繁殖而來。$(br)$(bold)類別$()：$(l:agriculture/animal_husbandry#equines)馬科動物$()$(br)$(bold)食性$()：$(l:cooking/food_and_water#grain)穀物$()和$(l:cooking/food_and_water#fruit)水果$()$(br)$(bold)最多子代$()：1$(br)$(bold)妊娠期$()：19 天$(br)$(bold)成長時間$()：80 天$(br)$(bold)$(l:agriculture/animal_husbandry#uses)最大互動次數$()：60",
-            "title": "騾子"
+            "title": "騾"
         },
         {
             "type": "patchouli:entity",
             "entity": "tfc:mule{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
             "scale": 0.6,
             "name": " ",
-            "text": "騾子"
+            "text": "騾"
         },
         {
             "type": "patchouli:text",
@@ -413,7 +413,7 @@
             "type": "patchouli:entity",
             "entity": "tfc:caribou",
             "scale": 0.6,
-            "name": "北美馴鹿",
+            "name": "馴鹿",
             "anchor": "caribou",
             "text": "北美馴鹿在$(l:the_world/climate#temperature)溫度$()低於 -9°C、$(l:the_world/climate#rainfall)降雨量$()介於 110 至 500mm 的地區生成。"
         },
@@ -562,9 +562,9 @@
             "type": "patchouli:entity",
             "entity": "tfc:bluegill",
             "scale": 0.7,
-            "name": "藍鰓太陽魚",
+            "name": "藍鰓魚",
             "anchor": "bluegill",
-            "text": "藍鰓太陽魚在任何$(l:the_world/climate#temperature)溫度$()介於 -10 至 26°C 的河流或湖泊中生成。"
+            "text": "藍鰓魚在任何$(l:the_world/climate#temperature)溫度$()介於 -10 至 26°C 的河流或湖泊中生成。"
         },
         {
             "type": "patchouli:text",
@@ -592,9 +592,9 @@
             "type": "patchouli:entity",
             "entity": "tfc:crayfish",
             "scale": 0.7,
-            "name": "螯蝦",
+            "name": "小龍蝦",
             "anchor": "crayfish",
-            "text": "螯蝦和龍蝦很像，但會在河流和湖泊中生成。需要$(l:the_world/climate#temperature)溫度$()至少 5°C，且$(l:the_world/climate#rainfall)降雨量$()至少 125mm。"
+            "text": "小龍蝦和龍蝦很像，但會在河流和湖泊中生成。需要$(l:the_world/climate#temperature)溫度$()至少 5°C，且$(l:the_world/climate#rainfall)降雨量$()至少 125mm。"
         },
         {
             "type": "patchouli:entity",
