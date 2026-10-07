@@ -14,7 +14,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(li)$(bold)Джеллі з Місяця$()\n$(li2)$(l:the_moon/moon_fauna#certus_jellie)Істиннокаварцовий$()\n$(li)$(bold)Джеллі з Марса$()\n$(li2)$(l:mars/mars_fauna#pentetic_jellie)Пентетичний$()\n$(li)$(bold)$(l:agriculture/jellies#spoiler)???$()"
+			"text": "$(li)$(bold)Місячні види$()$(li2)$(l:the_moon/moon_fauna#certus_jellie)Істинний$()$(li)$(bold)Марсіанські види$()$(li2)$(l:mars/mars_fauna#pentetic_jellie)Пентетичний$()$(li)$(bold)$(l:agriculture/jellies#spoiler)???$()"
 		},
 		{
 			"type": "patchouli:image",

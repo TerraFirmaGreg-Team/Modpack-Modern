@@ -6,7 +6,7 @@
         {
             "type": "patchouli:text",
             "anchor": "index",
-            "text": "$(li)$(bold)$(l:game_mechanics/pets#dogs)狗$()$(li)$(bold)$(l:game_mechanics/pets#cats)貓$()$(li)$(bold)$(l:game_mechanics/pets#foxes)狐狸$()$(li)$(bold)$(l:game_mechanics/pets#pigeons)鴿子$()$(li)$(bold)$(l:game_mechanics/pets#commands)指令$()$(li2)$(l:game_mechanics/pets#relax)放鬆$()$(li2)$(l:game_mechanics/pets#home)回家$()$(li2)$(l:game_mechanics/pets#hunt)狩獵$()$(li)$(bold)$(l:game_mechanics/pets#treat)寵物零食$()$(li)$(bold)$(l:game_mechanics/pets#name_tag)命名牌$()$(li)$(bold)$(l:game_mechanics/pets#lead)拴繩$()"
+            "text": "$(li)$(bold)$(l:game_mechanics/pets#dogs)狗$()$(li)$(bold)$(l:game_mechanics/pets#cats)貓$()$(li)$(bold)$(l:game_mechanics/pets#foxes)狐狸$()$(li)$(bold)$(l:game_mechanics/pets#pigeons)鴿子$()$(li)$(bold)$(l:game_mechanics/pets#commands)指令$()$(li2)$(l:game_mechanics/pets#relax)放鬆$()$(li2)$(l:game_mechanics/pets#home)回家$()$(li2)$(l:game_mechanics/pets#hunt)狩獵$()$(li)$(bold)$(l:game_mechanics/pets#treat)邪火點心$()$(li)$(bold)$(l:game_mechanics/pets#name_tag)命名牌$()$(li)$(bold)$(l:game_mechanics/pets#lead)拴繩$()"
         },
         {
             "type": "patchouli:text",
@@ -174,9 +174,9 @@
         {
             "type": "patchouli:spotlight",
             "anchor": "treat",
-            "title": "寵物零食",
+            "title": "邪火點心",
             "item": "species:wicked_treat",
-            "text": "將藥物與骨粉混合即可製作$(thing)寵物零食$()。$(br)寵物零食會在短時間內為你的寵物提供$(bold)大幅$()的能力值加成。"
+            "text": "將藥物與骨粉混合即可製作$(thing)邪火點心$()。$(br)邪火點心會在短時間內為你的寵物提供$(bold)大幅$()的能力值加成。"
         },
         {
             "type": "patchouli:spotlight",

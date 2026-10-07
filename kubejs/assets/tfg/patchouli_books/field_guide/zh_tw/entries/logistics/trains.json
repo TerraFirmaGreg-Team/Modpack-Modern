@@ -20,7 +20,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"item": "tag:create:tracks",
-			"title": "火車軌道",
+			"title": "列車軌道",
 			"anchor": "tracks",
 			"text": "鋪設通往不同地點的路線，就能讓火車移動到其他地方。$(br)放下一段軌道後，手持$(item)軌道$()對它按$(item)$(k:key.use)$()，就能快速鋪設軌道並做出彎道。$(br)如果副手拿著方塊(或金屬梁)，這些方塊會自動放在軌道下方。"
 		},
@@ -29,15 +29,15 @@
 			"item": "create:track_station",
 			"title": "你的第一列火車",
 			"anchor": "station",
-			"text": "首先，手持$(item)火車站點$()對軌道按$(item)$(k:key.use)$()，軌道上會出現一個箭頭，表示$(thing)火車$()的前進方向。$(br2)接著，把$(item)火車站點$()放在軌道旁邊，就可以開始建造你自己的$(thing)火車$()了！"
+			"text": "首先，手持$(item)車站$()對軌道按$(item)$(k:key.use)$()，軌道上會出現一個箭頭，表示$(thing)火車$()的前進方向。$(br2)接著，把$(item)車站$()放在軌道旁邊，就可以開始建造你自己的$(thing)火車$()了！"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "在$(thing)火車站點$()介面中按下$(thing)建立新火車$()，旁邊的軌道上就會投射出淺藍色的點。$(br2)在這些點上放置$(item)列車機殼$()就會建立$(thing)轉向架$()。你可以用建築方塊連接最多兩個轉向架，組成一節$(thing)車廂$()。記得使用$(item)強力膠$()！"
+			"text": "在$(thing)車站$()介面中按下$(thing)建立新火車$()，旁邊的軌道上就會投射出淺藍色的點。$(br2)在這些點上放置$(item)列車機殼$()就會建立$(thing)轉向架$()。你可以用建築方塊連接最多兩個轉向架，組成一節$(thing)車廂$()。記得使用$(item)強力膠$()！"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "放置$(item)列車控制器$()，讓它面向火車的前進方向。$(br2)完成後，在站點介面中按下$(thing)組裝火車$()，你的$(thing)火車$()就能運作了！對$(item)列車控制器$()按$(item)$(k:key.use)$()，再用一般的前進和後退移動鍵就能駕駛火車。"
+			"text": "放置$(item)火車駕駛台$()，讓它面向火車的前進方向。$(br2)完成後，在站點介面中按下$(thing)組裝火車$()，你的$(thing)火車$()就能運作了！對$(item)火車駕駛台$()按$(item)$(k:key.use)$()，再用一般的前進和後退移動鍵就能駕駛火車。"
 		},
 		{
 			"type": "patchouli:text",
@@ -65,7 +65,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "當兩個介面「親在一起」時，它們會視為一個相連的介面。例如，用滑槽從固定的介面抽出物品，就會從火車中抽出物品。$(br2)$(bold)注意：$()移動式能源介面需要搭配 $(thing)GregTech 能源轉換器$()，才能把 FE 轉換成 EU。"
+			"text": "當兩個介面「親在一起」時，它們會視為一個相連的介面。例如，用滑槽從固定的介面抽出物品，就會從火車中抽出物品。$(br2)$(bold)注意：$()移動式能源介面需要搭配 $(thing)GregTech 能量轉換器$()，才能把 FE 轉換成 EU。"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -87,18 +87,18 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "把牠放在$(thing)拉桿$()旁邊並面向拉桿，牠就會拉動拉桿，這對$(l:logistics/trains#switches)轉轍器$()很有用。$(br2)你也可以把牠放在火車的$(l:logistics/trains#seat)座椅$()上，讓牠當駕駛。$(br2)火車駕駛不只限於列車長！任何坐在座椅上的生物(例如動物)或$(item)烈焰人燃燒室$()都可以當火車駕駛。"
+			"text": "把牠放在$(thing)控制桿$()旁邊並面向控制桿，牠就會拉動控制桿，這對$(l:logistics/trains#switches)轉轍器$()很有用。$(br2)你也可以把牠放在火車的$(l:logistics/trains#seat)座椅$()上，讓牠當駕駛。$(br2)火車駕駛不只限於列車長！任何坐在座椅上的生物(例如動物)或$(item)烈焰使者燃燒室$()都可以當火車駕駛。"
 		},
 		{
 			"title": "自動運送",
 			"anchor": "schedule",
 			"type": "patchouli:spotlight",
 			"item": "create:schedule",
-			"text": "手持$(item)列車時刻表$()對空中按$(item)$(k:key.use)$()，可以選擇$(thing)火車$()要前往的$(l:logistics/trains#station)火車站點$()，以及在特定站點需要停留多久。"
+			"text": "手持$(item)火車時刻表$()對空中按$(item)$(k:key.use)$()，可以選擇$(thing)火車$()要前往的$(l:logistics/trains#station)車站$()，以及在特定站點需要停留多久。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "你也可以選擇$(thing)火車$()要循環行駛路線，還是在特定地點停下。$(br2)把$(item)列車時刻表$()交給$(l:logistics/trains#conductors)列車長$()，牠就會成為駕駛，駕駛你的火車往返各個$(thing)火車站點$()。"
+			"text": "你也可以選擇$(thing)火車$()要循環行駛路線，還是在特定地點停下。$(br2)把$(item)火車時刻表$()交給$(l:logistics/trains#conductors)列車長$()，牠就會成為駕駛，駕駛你的火車往返各個$(thing)車站$()。"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -108,7 +108,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "如果$(thing)火車$()無法抵達指定位置，會在遊戲聊天中告訴你。$(br2)注意：$(item)列車長哨子$()會$(bold)覆蓋$()$(l:logistics/trains#schedule)列車時刻表$()。如果你希望$(thing)列車長$()繼續行程，必須空手對牠按$(item)$(k:key.use)$() $(thing)兩次$()，重新把$(item)列車時刻表$()交給牠。"
+			"text": "如果$(thing)火車$()無法抵達指定位置，會在遊戲聊天中告訴你。$(br2)注意：$(item)列車長哨子$()會$(bold)覆蓋$()$(l:logistics/trains#schedule)火車時刻表$()。如果你希望$(thing)列車長$()繼續行程，必須空手對牠按$(item)$(k:key.use)$() $(thing)兩次$()，重新把$(item)火車時刻表$()交給牠。"
 		},
 		{
 			"type": "patchouli:spotlight",

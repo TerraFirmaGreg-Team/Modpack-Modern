@@ -21,7 +21,7 @@
             "title": "Kompost",
             "item": "tfc:compost",
             "link_recipes": false,
-            "text": "Compost is the product of the $(l:agriculture/composting)Composter$(). $(br)$(li)$(b)Nitrogen: 40$()$(li)$(6)Phosphorous: 20$()$(li)$(d)Potassium: 40$()"
+            "text": "Kompost powstaje w $(l:agriculture/composting)kompostowniku$(). $(br)$(li)$(b)Azot: 40$()$(li)$(6)Fosfor: 20$()$(li)$(d)Potas: 40$()"
         },
         {
             "type": "patchouli:spotlight",

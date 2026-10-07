@@ -27,7 +27,7 @@
         {
             "type": "patchouli:text",
             "anchor": "collapses",
-            "text": "在$(tfg)中，原岩並不穩定，容易$(thing)坍塌$()。許多岩石方塊，包括$(thing)原岩$()、$(thing)礦石$()和$(thing)石錐$()，在特定情況下都可能砸到你頭上。$(br2)$(thing)支撐梁$()可以用來防止坍塌發生。$(br)$(thing)礦石$()方塊坍塌時，會降級成鵝卵石。",
+            "text": "在$(tfg)中，原石並不穩定，容易$(thing)坍塌$()。許多岩石方塊，包括$(thing)原石$()、$(thing)礦石$()和$(thing)石錐$()，在特定情況下都可能砸到你頭上。$(br2)$(thing)支撐梁$()可以用來防止坍塌發生。$(br)$(thing)礦石$()方塊坍塌時，會降級成鵝卵石。",
             "title": "坍塌"
         },
         {
@@ -245,7 +245,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "只有$(thing)$(bold)水平支撐梁$()會讓附近的方塊受到$(thing)支撐$()。以水平支撐梁為中心的$(bold)9 x 5 x 9$()範圍內的任何方塊都被視為受到$(thing)支撐$()。$(br2)除了被支撐梁支撐之外，岩石只要下方有實心方塊(例如更多岩石)也能獲得支撐。不過要注意，$(thing)階梯$()和$(thing)半磚$()等$(thing)非實心方塊$()以及$(thing)平滑石$()都$(bold)不$()算作支撐。"
+            "text": "只有$(thing)$(bold)水平支撐梁$()會讓附近的方塊受到$(thing)支撐$()。以水平支撐梁為中心的$(bold)9 x 5 x 9$()範圍內的任何方塊都被視為受到$(thing)支撐$()。$(br2)除了被支撐梁支撐之外，岩石只要下方有實心方塊(例如更多岩石)也能獲得支撐。不過要注意，$(thing)階梯$()和$(thing)半磚$()等$(thing)非實心方塊$()以及$(thing)平滑石頭$()都$(bold)不$()算作支撐。"
         },
         {
             "type": "patchouli:image",
@@ -312,7 +312,7 @@
         {
             "type": "patchouli:text",
             "anchor": "support_tips",
-            "text": "最後，要知道的是，對任何可能引發附近坍塌的$(thing)原岩$()進行$(l:craftsmanship/chisel)鑿刻$()，與挖掘一樣容易引發坍塌。$(br2)如果你仍然被坍塌困擾，可以考慮觀看這部$(l:https://youtu.be/1KgwEexxGNI)指南$()。",
+            "text": "最後，要知道的是，對任何可能引發附近坍塌的$(thing)原石$()進行$(l:craftsmanship/chisel)鑿刻$()，與挖掘一樣容易引發坍塌。$(br2)如果你仍然被坍塌困擾，可以考慮觀看這部$(l:https://youtu.be/1KgwEexxGNI)指南$()。",
             "title": "技巧"
         },
         {

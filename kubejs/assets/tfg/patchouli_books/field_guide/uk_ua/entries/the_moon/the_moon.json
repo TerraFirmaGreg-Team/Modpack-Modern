@@ -9,7 +9,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "index",
-			"text": "$(li)$(bold)$(l/the_moon#flags)Стяги$()$(li)$(bold)$(l/the_moon#gases)Придатні для дихання гази$()$(li2)$(l/the_moon#helium_3)Гелій-3$()$(li)$(bold)$(l/moon_crops#nitrogen)Плод хоруса$()$(li)$(bold)$(l/the_moon#rover)Ровер$()$(li)$(bold)$(l/the_moon#solar_panels)Виробництво енергії$()$(li2)$(l/the_moon#solar_panels)Сонячні панелі$()$(li2)$(l/the_moon#lsa)Великий сонячний масив$()$(li)$(bold)$(l/the_moon#distributor)Розподільник кисню$()$(li)$(bold)$(l/the_moon#higgs)Випромінювач Хіггса$()$(li)$(bold)$(l/the_moon#painting)Космічний живопис$()$(li)$(bold)$(l/the_moon#death)Смерть і відродження$()"
+			"text": "$(li)$(bold)$(l:the_moon/the_moon#flags)Стяги$()$(li)$(bold)$(l:the_moon/the_moon#gases)Придатні для дихання гази$()$(li2)$(l:the_moon/the_moon#helium_3)Гелій-3$()$(li)$(bold)$(l:the_moon/moon_crops#nitrogen)Плод хоруса$()$(li)$(bold)$(l:the_moon/the_moon#rover)Ровер$()$(li)$(bold)$(l:the_moon/the_moon#solar_panels)Виробництво енергії$()$(li2)$(l:the_moon/the_moon#solar_panels)Сонячні панелі$()$(li2)$(l:the_moon/the_moon#lsa)Великий сонячний масив$()$(li)$(bold)$(l:the_moon/the_moon#distributor)Розподільник кисню$()$(li)$(bold)$(l:the_moon/the_moon#higgs)Випромінювач Хіггса$()$(li)$(bold)$(l:the_moon/the_moon#painting)Космічний живопис$()$(li)$(bold)$(l:the_moon/the_moon#death)Смерть і відродження$()"
 		},
 		{
 			"type": "patchouli:text",

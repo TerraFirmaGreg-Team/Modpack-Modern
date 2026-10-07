@@ -6,19 +6,19 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "$(li)$(bold)近戰武器$()$(li2)$(l:mars/mars_equipment#nano_saber)奈米光劍$()$(li)$(bold)$(l:mars/mars_equipment#ev_guns)槍械$()$(li2)$(l:mars/mars_equipment#cannon)肩射式野戰炮$()$(li2)$(l:mars/mars_equipment#rifles)進階步槍$()$(li2)$(l:mars/mars_equipment#grenades)榴彈發射器$()$(li2)$(l:mars/mars_equipment#shotguns)進階霰彈槍$()$(li2)$(l:mars/mars_equipment#pistols)進階手槍與衝鋒槍$()$(li)$(bold)護甲$()$(li2)$(l:mars/mars_equipment#space_suit)鎢鋼太空服$()$(li)$(bold)盾牌$()$(li2)$(l:mars/mars_equipment#reinforced_shield)強化盾牌$()$(li2)$(l:mars/mars_equipment#corrupted_shield)腐化盾牌$()$(li2)$(l:mars/mars_equipment#ricoshield)跳彈盾$()"
+			"text": "$(li)$(bold)近戰武器$()$(li2)$(l:mars/mars_equipment#nano_saber)奈米劍$()$(li)$(bold)$(l:mars/mars_equipment#ev_guns)槍械$()$(li2)$(l:mars/mars_equipment#cannon)肩射式野戰炮$()$(li2)$(l:mars/mars_equipment#rifles)進階步槍$()$(li2)$(l:mars/mars_equipment#grenades)榴彈發射器$()$(li2)$(l:mars/mars_equipment#shotguns)進階霰彈槍$()$(li2)$(l:mars/mars_equipment#pistols)進階手槍與衝鋒槍$()$(li)$(bold)護甲$()$(li2)$(l:mars/mars_equipment#space_suit)鎢鋼太空服$()$(li)$(bold)盾牌$()$(li2)$(l:mars/mars_equipment#reinforced_shield)強化盾牌$()$(li2)$(l:mars/mars_equipment#corrupted_shield)腐化盾牌$()$(li2)$(l:mars/mars_equipment#ricoshield)跳彈盾$()"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:nano_saber",
 			"anchor": "nano_saber",
-			"text": "$(item)奈米光劍$()是強大的近戰武器，在 $(5)EV$() 後期就能解鎖。只要按 $(item)$(k:key.sneak) + $(k:key.use)$() 就能啟動$(thing)嗡嗡嗡模式$()。"
+			"text": "$(item)奈米劍$()是強大的近戰武器，在 $(5)EV$() 後期就能解鎖。只要按 $(item)$(k:key.sneak) + $(k:key.use)$() 就能啟動$(thing)嗡嗡嗡模式$()。"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "tfg:certus_mechanism",
 			"anchor": "ev_guns",
-			"text": "$(item)賽特斯機械$()用來製作 $(5)EV$() 級槍械。許多這類武器使用的彈藥都需要賽特斯石英。月球上有大型的賽特斯石英礦脈，你也可以透過$(l:the_moon/regolith)月球風化土$()建立無限供應。"
+			"text": "$(item)賽特斯機械$()用來製作 $(5)EV$() 級槍械。許多這類武器使用的彈藥都需要賽特斯石英。月球上有大型的賽特斯石英礦脈，你也可以透過$(l:the_moon/moon_biomes#harvester)月球風化土$()建立無限供應。"
 		},
 		{
 			"type": "patchouli:spotlight",

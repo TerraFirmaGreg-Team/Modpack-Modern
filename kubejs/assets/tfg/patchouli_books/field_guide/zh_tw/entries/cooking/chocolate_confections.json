@@ -9,7 +9,7 @@
     },
     {
       "type": "patchouli:text",
-      "text": "要開始加工巧克力，首先必須在$(l:cooking/cooking_methods#oven)烤箱$()中$(thing)烘烤$()可可豆，做成$(thing)烘焙可可豆$()。接著將烘焙過的豆子和$(thing)刀$()一起合成，將豆子分成$(thing)可可粉$()和$(thing)可可脂$()。"
+      "text": "要開始加工巧克力，首先必須在$(l:cooking/cooking_methods#oven)烤爐$()中$(thing)烘烤$()可可豆，做成$(thing)烘焙可可豆$()。接著將烘焙過的豆子和$(thing)刀$()一起合成，將豆子分成$(thing)可可粉$()和$(thing)可可脂$()。"
     },
     {
       "type": "patchouli:text",

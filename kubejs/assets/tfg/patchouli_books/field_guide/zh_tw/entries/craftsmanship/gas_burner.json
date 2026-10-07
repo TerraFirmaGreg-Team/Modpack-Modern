@@ -42,7 +42,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "燃燒器有許多實用的用途。任何能從底部供熱的裝置都可以使用，例如$(l:craftsmanship/crucible)坩堝$()、$(l:cooking/cooking_methods#grill)烤架$()、$(l:cooking/cooking_methods#pot)鍋子$()和$(l:cooking/cooking_methods#top_oven)烤箱$()，以及任何需要熱源的機械動力機械裝置。"
+            "text": "燃燒器有許多實用的用途。任何能從底部供熱的裝置都可以使用，例如$(l:craftsmanship/crucible)坩堝$()、$(l:cooking/cooking_methods#grill)烤架$()、$(l:cooking/cooking_methods#pot)鍋子$()和$(l:cooking/cooking_methods#top_oven)烤爐$()，以及任何需要熱源的機械動力機械裝置。"
         },
         {
             "type": "patchouli:multiblock",
