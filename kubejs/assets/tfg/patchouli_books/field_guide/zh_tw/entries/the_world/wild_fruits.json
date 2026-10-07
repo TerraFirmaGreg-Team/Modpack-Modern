@@ -7,11 +7,11 @@
             "type": "patchouli:text",
             "title": "索引",
             "anchor": "index",
-            "text": "$(li)$(bold)$(l:the_world/wild_fruits#intro)簡介$()$(li)$(bold)$(l:the_world/wild_fruits#fruit_trees)果樹$()$(li2)$(l:the_world/wild_fruits#cherry)櫻桃$()$(li2)$(l:the_world/wild_fruits#green_apple)青蘋果$()$(li2)$(l:the_world/wild_fruits#lemon)檸檬$()$(li2)$(l:the_world/wild_fruits#olive)橄欖$()$(li2)$(l:the_world/wild_fruits#orange)柳橙$()$(li2)$(l:the_world/wild_fruits#peach)桃子$()$(li2)$(l:the_world/wild_fruits#plum)李子$()$(li2)$(l:the_world/wild_fruits#red_apple)紅蘋果$()$(li2)$(l:the_world/wild_fruits#cocoa)可可$()$(li2)$(l:the_world/wild_fruits#fig)無花果$()$(li2)$(l:the_world/wild_fruits#banana)香蕉$()"
+            "text": "$(li)$(bold)$(l:the_world/wild_fruits#intro)簡介$()$(li)$(bold)$(l:the_world/wild_fruits#fruit_trees)果樹$()$(li2)$(l:the_world/wild_fruits#cherry)櫻桃$()$(li2)$(l:the_world/wild_fruits#green_apple)青蘋果$()$(li2)$(l:the_world/wild_fruits#lemon)檸檬$()$(li2)$(l:the_world/wild_fruits#olive)橄欖$()$(li2)$(l:the_world/wild_fruits#orange)柳橙$()$(li2)$(l:the_world/wild_fruits#peach)桃子$()$(li2)$(l:the_world/wild_fruits#plum)李子$()$(li2)$(l:the_world/wild_fruits#red_apple)紅蘋果$()$(li2)$(l:the_world/wild_fruits#cocoa)可可豆$()$(li2)$(l:the_world/wild_fruits#fig)無花果$()$(li2)$(l:the_world/wild_fruits#banana)香蕉$()"
         },
         {
             "type": "patchouli:text",
-            "text": "$(li)$(bold)$(l:the_world/wild_fruits#palm_fruit_trees)棕櫚果樹$()$(li2)$(l:the_world/wild_fruits#coconut)椰子$()$(li2)$(l:the_world/wild_fruits#date)椰棗$()$(li)$(bold)$(l:the_world/wild_fruits#tall_bushes)大型灌木$()$(li2)$(l:the_world/wild_fruits#blackberry)黑莓$()$(li2)$(l:the_world/wild_fruits#raspberry)覆盆子$()$(li2)$(l:the_world/wild_fruits#blueberry)藍莓$()$(li2)$(l:the_world/wild_fruits#elderberry)接骨木莓$()$(li)$(bold)$(l:the_world/wild_fruits#small_bushes)小型灌木$()$(li2)$(l:the_world/wild_fruits#bunchberry)草茱萸$()$(li2)$(l:the_world/wild_fruits#gooseberry)醋栗$()$(li2)$(l:the_world/wild_fruits#snowberry)雪果$()$(li2)$(l:the_world/wild_fruits#cloudberry)雲莓$()$(li2)$(l:the_world/wild_fruits#strawberry)草莓$()"
+            "text": "$(li)$(bold)$(l:the_world/wild_fruits#palm_fruit_trees)棕櫚果樹$()$(li2)$(l:the_world/wild_fruits#coconut)椰子$()$(li2)$(l:the_world/wild_fruits#date)椰棗$()$(li)$(bold)$(l:the_world/wild_fruits#tall_bushes)大型灌木$()$(li2)$(l:the_world/wild_fruits#blackberry)黑莓$()$(li2)$(l:the_world/wild_fruits#raspberry)覆盆子$()$(li2)$(l:the_world/wild_fruits#blueberry)藍莓$()$(li2)$(l:the_world/wild_fruits#elderberry)接骨木莓$()$(li)$(bold)$(l:the_world/wild_fruits#small_bushes)小型灌木$()$(li2)$(l:the_world/wild_fruits#bunchberry)草茱萸$()$(li2)$(l:the_world/wild_fruits#gooseberry)鵝莓$()$(li2)$(l:the_world/wild_fruits#snowberry)雪莓$()$(li2)$(l:the_world/wild_fruits#cloudberry)雲莓$()$(li2)$(l:the_world/wild_fruits#strawberry)草莓$()"
         },
         {
             "type": "patchouli:text",
@@ -484,7 +484,7 @@
                     "fill": "0xa8986a"
                 },
                 {
-                    "text": "可可"
+                    "text": "可可豆"
                 },
                 {
                     "fill": "0x6ab553"
@@ -4791,7 +4791,7 @@
                     "text": "12月"
                 },
                 {
-                    "text": "雪果"
+                    "text": "雪莓"
                 },
                 {
                     "fill": "0xa8986a"
@@ -4869,7 +4869,7 @@
                     "fill": "0xa8986a"
                 },
                 {
-                    "text": "醋栗"
+                    "text": "鵝莓"
                 },
                 {
                     "fill": "0xa8986a"
@@ -5253,7 +5253,7 @@
             "type": "patchouli:text",
             "anchor": "blackberry",
             "text": "$(bold)$(l:the_world/climate#temperature)溫度$()：7 — 24 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)含水量$()：24 — 100%$(br)$(bold)$(l:the_world/climate#rainfall)降雨量$()：200 — 500mm$(br2)黑莓叢在二月到五月生長，六月和七月開花，八月結果。$(br2)可以在樹木稀少的地區找到。",
-            "title": "黑莓叢"
+            "title": "黑莓灌木"
         },
         {
             "type": "tfg:multimultiblock",
@@ -5353,7 +5353,7 @@
             "type": "patchouli:text",
             "anchor": "raspberry",
             "text": "$(bold)$(l:the_world/climate#temperature)溫度$()：5 — 25 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)含水量$()：24 — 100%$(br)$(bold)$(l:the_world/climate#rainfall)降雨量$()：200 — 500mm$(br2)覆盆子叢在四月到七月生長，八月和九月開花，十月結果。$(br2)可以在樹木稀少的地區找到。",
-            "title": "覆盆子叢"
+            "title": "覆盆子灌木"
         },
         {
             "type": "tfg:multimultiblock",
@@ -5453,7 +5453,7 @@
             "type": "patchouli:text",
             "anchor": "blueberry",
             "text": "$(bold)$(l:the_world/climate#temperature)溫度$()：7 — 29 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)含水量$()：12 — 100%$(br)$(bold)$(l:the_world/climate#rainfall)降雨量$()：100 — 400mm$(br2)藍莓叢在二月到五月生長，六月和七月開花，八月結果。$(br2)可以在樹木稀少的地區找到。",
-            "title": "藍莓叢"
+            "title": "藍莓灌木"
         },
         {
             "type": "tfg:multimultiblock",
@@ -5553,7 +5553,7 @@
             "type": "patchouli:text",
             "anchor": "elderberry",
             "text": "$(bold)$(l:the_world/climate#temperature)溫度$()：10 — 33 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)含水量$()：12 — 100%$(br)$(bold)$(l:the_world/climate#rainfall)降雨量$()：100 — 400mm$(br2)接骨木莓叢在二月到五月生長，六月和七月開花，八月結果。$(br2)可以在樹木稀少的地區找到。",
-            "title": "接骨木莓叢"
+            "title": "接骨木灌木"
         },
         {
             "type": "tfg:multimultiblock",
@@ -5704,7 +5704,7 @@
             "type": "patchouli:text",
             "anchor": "bunchberry",
             "text": "$(bold)$(l:the_world/climate#temperature)溫度$()：15 — 35 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)含水量$()：24 — 100%$(br)$(bold)$(l:the_world/climate#rainfall)降雨量$()：200 — 500mm(br2)草茱萸叢在五月到七月生長，八月和九月開花，十月結果。$(br2)可以在森林中找到。",
-            "title": "草茱萸叢"
+            "title": "草茱萸灌木"
         },
         {
             "type": "tfg:multimultiblock",
@@ -5767,8 +5767,8 @@
         {
             "type": "patchouli:text",
             "anchor": "gooseberry",
-            "text": "$(bold)$(l:the_world/climate#temperature)溫度$()：5 — 27 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)含水量$()：24 — 100%$(br)$(bold)$(l:the_world/climate#rainfall)降雨量$()：200 — 500mm$(br2)醋栗叢在四月到七月生長，八月和九月開花，十月結果。$(br2)可以在森林中找到。",
-            "title": "醋栗叢"
+            "text": "$(bold)$(l:the_world/climate#temperature)溫度$()：5 — 27 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)含水量$()：24 — 100%$(br)$(bold)$(l:the_world/climate#rainfall)降雨量$()：200 — 500mm$(br2)鵝莓叢在四月到七月生長，八月和九月開花，十月結果。$(br2)可以在森林中找到。",
+            "title": "鵝莓灌木"
         },
         {
             "type": "tfg:multimultiblock",
@@ -5831,8 +5831,8 @@
         {
             "type": "patchouli:text",
             "anchor": "snowberry",
-            "text": "$(bold)$(l:the_world/climate#temperature)溫度$()：-7 — 18 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)含水量$()：24 — 100%$(br)$(bold)$(l:the_world/climate#rainfall)降雨量$()：200 — 500mm$(br2)雪果叢在三月到六月生長，七月和八月開花，九月結果。$(br2)可以在森林中找到。",
-            "title": "雪果叢"
+            "text": "$(bold)$(l:the_world/climate#temperature)溫度$()：-7 — 18 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)含水量$()：24 — 100%$(br)$(bold)$(l:the_world/climate#rainfall)降雨量$()：200 — 500mm$(br2)雪莓叢在三月到六月生長，七月和八月開花，九月結果。$(br2)可以在森林中找到。",
+            "title": "雪莓灌木"
         },
         {
             "type": "tfg:multimultiblock",
@@ -5896,7 +5896,7 @@
             "type": "patchouli:text",
             "anchor": "cloudberry",
             "text": "$(bold)$(l:the_world/climate#temperature)溫度$()：-2 — 17 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)含水量$()：9 — 100%$(br)$(bold)$(l:the_world/climate#rainfall)降雨量$()：250 — 500mm$(br2)雲莓叢在二月到五月生長，六月到八月開花，九月結果。$(br2)可以在森林中找到。",
-            "title": "雲莓叢"
+            "title": "雲莓灌木"
         },
         {
             "type": "tfg:multimultiblock",
@@ -5960,7 +5960,7 @@
             "type": "patchouli:text",
             "anchor": "strawberry",
             "text": "$(bold)$(l:the_world/climate#temperature)溫度$()：5 — 28 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)含水量$()：12 — 100%$(br)$(bold)$(l:the_world/climate#rainfall)降雨量$()：100 — 400mm$(br2)草莓叢在十月到十二月生長，一月和二月開花，三月結果。$(br2)可以在森林中找到。",
-            "title": "草莓叢"
+            "title": "草莓灌木"
         },
         {
             "type": "tfg:multimultiblock",
@@ -6024,7 +6024,7 @@
             "type": "patchouli:text",
             "anchor": "wintergreen_berry",
             "text": "$(bold)$(l:the_world/climate#temperature)溫度$()：-6 — 17 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)含水量$()：12 — 100%$(br)$(bold)$(l:the_world/climate#rainfall)降雨量$()：100 — 400mm$(br2)冬青莓叢在五月到九月生長，十月和十一月開花，十二月結果。$(br2)可以在森林中找到。",
-            "title": "冬青莓叢"
+            "title": "冬青莓灌木"
         },
         {
             "type": "tfg:multimultiblock",
@@ -6088,7 +6088,7 @@
             "type": "patchouli:text",
             "anchor": "cranberry",
             "text": "$(bold)$(l:the_world/climate#temperature)溫度$()：-5 — 17 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)含水量$()：30 — 100%$(br)$(bold)$(l:the_world/climate#rainfall)降雨量$()：250 — 500mm$(br2)蔓越莓叢在三月到六月生長，七月和八月開花，九月結果。$(br2)可以在森林中找到。和大多數小型灌木不同，蔓越莓叢生長在水中。",
-            "title": "蔓越莓叢"
+            "title": "蔓越莓灌木"
         },
         {
             "type": "tfg:multimultiblock",
@@ -6216,7 +6216,7 @@
             "type": "patchouli:text",
             "anchor": "pineapple",
             "text": "$(bold)$(l:the_world/climate#temperature)溫度$()：20 — 32 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)含水量$()：30 — 100%$(br)$(bold)$(l:the_world/climate#rainfall)降雨量$()：250 — 500mm$(br2)鳳梨叢在三月到六月生長，七月和八月開花，九月結果。$(br2)可以在森林中找到，可用來製作$(l:agriculture/leather_making#pineapple_leather)鳳梨皮革$()。",
-            "title": "鳳梨叢"
+            "title": "鳳梨灌木"
         },
         {
             "type": "tfg:multimultiblock",

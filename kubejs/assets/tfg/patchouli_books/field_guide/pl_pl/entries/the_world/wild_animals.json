@@ -304,7 +304,7 @@
             "scale": 0.6,
             "name": "Tygrys szablozębny",
             "anchor": "sabertooth",
-            "text": "The sabertooth spawns at any $(l:the_world/climate#temperature)temperature$() above 0°C, and any $(l:the_world/climate#rainfall)rainfall$() above 250mm."
+            "text": "Tygrys szablozębny pojawia się w lasach przy dowolnej $(l:the_world/climate#temperature)temperaturze$() powyżej 0°C oraz $(l:the_world/climate#rainfall)opadach$() powyżej 250 mm."
         },
         {
             "type": "patchouli:entity",

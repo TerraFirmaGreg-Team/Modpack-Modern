@@ -10,7 +10,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(li)$(bold)Пасивні$()\n$(li2)$(l:beneath/beneath_fauna#axolotl)Аксолотль$()\n$(li2)$(l:beneath/beneath_fauna#frog)Жаба$()\n$(li2)$(l:beneath/beneath_fauna#mammutilation)Мамутиляція$()\n$(li2)$(l:beneath/beneath_fauna#red_elk)Червоний лось$()\n$(li2)$(l:beneath/beneath_fauna#zombie_horse)Зомбі-кінь$()\n$(li)$(bold)$(l:agriculture/jellies)Джеллі$()\n$(li2)$(l:beneath/beneath_fauna#ice_jellie)Крижаний$()\n$(li2)$(l:beneath/beneath_fauna#plant_jellie)Рослинний$()\n$(li2)$(l:beneath/beneath_fauna#glowberry_jellie)Світлоягідний$()\n$(li2)$(l:beneath/beneath_fauna#spring_jellie)Джерельний$()\n$(li2)$(l:beneath/beneath_fauna#lava_jellie)Лавовий$()\n$(li2)$(l:beneath/beneath_fauna#biotite_jellie)Біотитовий$()\n$(li2)$(l:beneath/beneath_fauna#latex_jellie)Латексний$()\n$(br)$(o)(Продовження на наступній сторінці...)$()"
+			"text": "$(li)$(bold)Пасивні$()$(li2)$(l:beneath/beneath_fauna#axolotl)Аксолотль$()$(li2)$(l:beneath/beneath_fauna#frog)Жаба$()$(li2)$(l:beneath/beneath_fauna#mammutilation)Мамутиляція$()$(li2)$(l:beneath/beneath_fauna#red_elk)Червоний лось$()$(li2)$(l:beneath/beneath_fauna#zombie_horse)Зомбі-кінь$()$(li)$(bold)$(l:agriculture/jellies)Джеллі$()$(li2)$(l:beneath/beneath_fauna#ice_jellie)Крижаний$()$(li2)$(l:beneath/beneath_fauna#plant_jellie)Рослинний$()$(li2)$(l:beneath/beneath_fauna#glowberry_jellie)Світлоягідний$()$(li2)$(l:beneath/beneath_fauna#spring_jellie)Джерельний$()$(li2)$(l:beneath/beneath_fauna#lava_jellie)Лавовий$()$(li2)$(l:beneath/beneath_fauna#biotite_jellie)Біотитовий$()$(li2)$(l:beneath/beneath_fauna#latex_jellie)Латексний$()$(br)$(o)(Продовження на наступній сторінці...)$()"
 		},
 		{
 			"type": "patchouli:text",

@@ -99,7 +99,7 @@
 			"recipes": [
 				"tfg:rock_knapping/stone_shovel_head"
 			],
-			"text": "$(thing)Łopat$() można używać do kopania bloków gleby. Mogą być również użyte do tworzenia $(thing)Ścieżek$() przez $(item)użycie$() ich na $(thing)Ziemi$() lub $(thing)Trawie$()."
+			"text": "$(thing)Łopat$() można używać do kopania bloków gleby. Mogą być również użyte do tworzenia $(thing)ścieżek$() przez $(item)użycie$() ich na $(thing)ziemi$() lub $(thing)trawie$()."
 		},
 		{
 			"type": "tfg:rock_knapping_recipe",

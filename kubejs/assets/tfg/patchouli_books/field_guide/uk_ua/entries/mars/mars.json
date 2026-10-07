@@ -8,7 +8,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "index",
-			"text": "$(li)$(bold)$(l:mars/mars#intro)Вступ$()\n$(li)$(bold)$(l:mars/mars#semiheavy_water)Гідрологія$()\n$(li2)$(l:mars/mars#semiheavy_water)Напівважка аміачна вода$()\n$(li2)$(l:mars/mars#heavy_water)Важка аміачна вода$()\n$(li)$(bold)$(l:mars/mars#desert)Марсіанська пустеля$()\n$(li2)$(l:mars/mars#ostrum)Поклади оструму$()\n$(li2)$(l:mars/mars#ostrum_harvester)Збирач оструму$()\n$(li)$(bold)$(l:mars/mars#jungles)Марсіанські джунглі$()\n$(li)$(bold)$(l:mars/mars#poles)Марсіанські полюси$()\n$(li2)$(l:mars/mars#glacian_wool)Глаціанська вовна$()\n$(li)$(bold)$(l:mars/mars#food)Марсіанська кухня$()"
+			"text": "$(li)$(bold)$(l:mars/mars#intro)Вступ$()$(li)$(bold)$(l:mars/mars#semiheavy_water)Гідрологія$()$(li2)$(l:mars/mars#semiheavy_water)Напівважка аміачна вода$()$(li2)$(l:mars/mars#heavy_water)Важка аміачна вода$()$(li)$(bold)$(l:mars/mars#desert)Марсіанська пустеля$()$(li2)$(l:mars/mars#ostrum)Поклади оструму$()$(li2)$(l:mars/mars#ostrum_harvester)Збирач оструму$()$(li)$(bold)$(l:mars/mars#jungles)Марсіанські джунглі$()$(li)$(bold)$(l:mars/mars#poles)Марсіанські полюси$()$(li2)$(l:mars/mars#glacian_wool)Глаціанська вовна$()$(li)$(bold)$(l:mars/mars#food)Марсіанська кухня$()"
 		},
 		{
 			"type": "patchouli:text",

@@ -7,11 +7,11 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "index",
-			"text": "$(li)$(bold)$(l/trains#tracks)Колії та станції$()$(li2)$(l/trains#station)Створення першого потяга$()$(li2)$(l/trains#handcar)Дрезина$()$(li)$(bold)$(l/trains#cargo)Вантаж потягів$()$(li2)$(l/trains#loading)Завантаження та розвантаження$()$(li2)$(l/trains#detecting)Виявлення вантажу$()$(li)$(bold)$(l/trains#conductors)Кондуктори$()$(li2)$(l/trains#schedule)Автоматизовані доставки$()$(li2)$(l/trains#whistle)Свисток кондуктора$()$(li2)$(l/trains#remote_lens)Віддалена лінза$()"
+			"text": "$(li)$(bold)$(l:logistics/trains#tracks)Колії та станції$()$(li2)$(l:logistics/trains#station)Створення першого потяга$()$(li2)$(l:logistics/trains#handcar)Дрезина$()$(li)$(bold)$(l:logistics/trains#cargo)Вантаж потягів$()$(li2)$(l:logistics/trains#loading)Завантаження та розвантаження$()$(li2)$(l:logistics/trains#detecting)Виявлення вантажу$()$(li)$(bold)$(l:logistics/trains#conductors)Кондуктори$()$(li2)$(l:logistics/trains#schedule)Автоматизовані доставки$()$(li2)$(l:logistics/trains#whistle)Свисток кондуктора$()$(li2)$(l:logistics/trains#remote_lens)Віддалена лінза$()"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(li)$(bold)Паливо$()$(li2)$(l/trains#solid_fuel)Тверде паливо$()$(li2)$(l/trains#liquid_fuel)Рідке паливо$()$(li)$(bold)$(l/trains#loco)Декоративні блоки$()$(li)$(bold)$(l/trains#seat)Сидіння$()$(li)$(bold)$(l/trains#signals)Залізничний сигнал$()$(li2)$(l/trains#semaphore)Семафор$()$(li2)$(l/trains#switches)Стрілки$()$(li)$(bold)$(l/trains#coupler)Розділення вагонів$()$(li)$(bold)$(l/trains#buffer)Сходження з колії$()"
+			"text": "$(li)$(bold)Паливо$()$(li2)$(l:logistics/trains#solid_fuel)Тверде паливо$()$(li2)$(l:logistics/trains#liquid_fuel)Рідке паливо$()$(li)$(bold)$(l:logistics/trains#loco)Декоративні блоки$()$(li)$(bold)$(l:logistics/trains#seat)Сидіння$()$(li)$(bold)$(l:logistics/trains#signals)Залізничний сигнал$()$(li2)$(l:logistics/trains#semaphore)Семафор$()$(li2)$(l:logistics/trains#switches)Стрілки$()$(li)$(bold)$(l:logistics/trains#coupler)Розділення вагонів$()$(li)$(bold)$(l:logistics/trains#buffer)Сходження з колії$()"
 		},
 		{
 			"type": "patchouli:text",

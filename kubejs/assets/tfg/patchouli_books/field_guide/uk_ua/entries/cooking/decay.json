@@ -6,7 +6,7 @@
         {
             "type": "patchouli:text",
             "anchor": "index",
-            "text": "$(li)$(bold)$(l:cooking/decay#decay)Вступ$()\n$(li2)$(l:cooking/decay#calculation)Розрахунок псування$()\n$(li2)$(l:cooking/decay#table)Таблиця модифікаторів$()\n$(li)$(bold)$(l:cooking/decay#vessels)Посудини$()\n$(li)$(bold)$(l:cooking/decay#cooking)Приготування$()\n$(li)$(bold)$(l:cooking/decay#smoking)Копчення$()\n$(li)$(bold)$(l:cooking/decay#salting)Соління$()\n$(li)$(bold)$(l:cooking/decay#vinegar)Маринування$()\n$(li)$(bold)$(l:cooking/decay#drying)Сушіння$()"
+            "text": "$(li)$(bold)$(l:cooking/decay#decay)Вступ$()$(li2)$(l:cooking/decay#calculation)Розрахунок псування$()$(li2)$(l:cooking/decay#table)Таблиця модифікаторів$()$(li)$(bold)$(l:cooking/decay#vessels)Посудини$()$(li)$(bold)$(l:cooking/decay#cooking)Приготування$()$(li)$(bold)$(l:cooking/decay#smoking)Копчення$()$(li)$(bold)$(l:cooking/decay#salting)Соління$()$(li)$(bold)$(l:cooking/decay#vinegar)Маринування$()$(li)$(bold)$(l:cooking/decay#drying)Сушіння$()"
         },
         {
             "type": "patchouli:text",

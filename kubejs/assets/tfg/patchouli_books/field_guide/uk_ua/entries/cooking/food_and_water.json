@@ -7,7 +7,7 @@
             "type": "patchouli:text",
             "title": "Індекс",
             "anchor": "index",
-            "text": "$(li)$(bold)$(l:cooking/food_and_water#basics)Основи$()\n$(li)$(bold)$(l:cooking/food_and_water#thirst)Спрага$()\n$(li)$(bold)$(l:cooking/food_and_water#nutrition_screen)Вікно поживності$()\n$(li)$(bold)$(l:cooking/food_and_water#nutrients)Поживні речовини$()\n$(li2)$(l:cooking/food_and_water#fruit)Фрукти$()\n$(li2)$(l:cooking/food_and_water#vegetables)Овочі$()\n$(li2)$(l:cooking/food_and_water#protein)Білки$()\n$(li2)$(l:cooking/food_and_water#grain)Зернові$()\n$(li2)$(l:cooking/food_and_water#dairy)Молочні продукти$()\n$(li)$(bold)$(l:cooking/food_and_water#contaminants)Забруднювачі$()\n$(li2)$(l:cooking/food_and_water#toxins)Токсини$()\n$(li2)$(l:cooking/food_and_water#parasites)Паразити$()\n$(li2)$(l:cooking/food_and_water#microplastics)Мікропластик$()"
+            "text": "$(li)$(bold)$(l:cooking/food_and_water#basics)Основи$()$(li)$(bold)$(l:cooking/food_and_water#thirst)Спрага$()$(li)$(bold)$(l:cooking/food_and_water#nutrition_screen)Вікно поживності$()$(li)$(bold)$(l:cooking/food_and_water#nutrients)Поживні речовини$()$(li2)$(l:cooking/food_and_water#fruit)Фрукти$()$(li2)$(l:cooking/food_and_water#vegetables)Овочі$()$(li2)$(l:cooking/food_and_water#protein)Білки$()$(li2)$(l:cooking/food_and_water#grain)Зернові$()$(li2)$(l:cooking/food_and_water#dairy)Молочні продукти$()$(li)$(bold)$(l:cooking/food_and_water#contaminants)Забруднювачі$()$(li2)$(l:cooking/food_and_water#toxins)Токсини$()$(li2)$(l:cooking/food_and_water#parasites)Паразити$()$(li2)$(l:cooking/food_and_water#microplastics)Мікропластик$()"
         },
         {
             "type": "patchouli:text",

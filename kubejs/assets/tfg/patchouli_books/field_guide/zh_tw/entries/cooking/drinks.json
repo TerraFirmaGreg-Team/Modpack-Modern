@@ -18,14 +18,14 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "熟成酒",
-			"text": "$(thing)熟成酒$()是將酒在密封木桶內熟成3個月發酵而成。飲用熟成酒會提供效果。",
+			"title": "陳年酒",
+			"text": "$(thing)陳年酒$()是將酒在密封木桶內熟成3個月發酵而成。飲用陳年酒會提供效果。",
 			"item": "tfcagedalcohol:bucket/aged_beer,tfcagedalcohol:bucket/aged_cider,tfcagedalcohol:bucket/aged_rum,tfcagedalcohol:bucket/aged_sake,tfcagedalcohol:bucket/aged_vodka,tfcagedalcohol:bucket/aged_whiskey,tfcagedalcohol:bucket/aged_corn_whiskey,tfcagedalcohol:bucket/aged_rye_whiskey,tfcagedalcohol:bucket/aged_mead",
 			"anchor": "aged_alcohol"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "陳釀酒",
+			"title": "年份酒",
 			"text": "$(thing)年份酒類$()是將酒在密封的木桶中再熟成 3 個月製成的。這些酒能提供更強的效果和更長的持續時間。",
 			"item": "tfg:vintage_beer_bucket,tfg:vintage_cider_bucket,tfg:vintage_rum_bucket,tfg:vintage_sake_bucket,tfg:vintage_vodka_bucket,tfg:vintage_whiskey_bucket,tfg:vintage_corn_whiskey_bucket,tfg:vintage_rye_whiskey_bucket,tfg:vintage_mead_bucket",
 			"anchor": "vintage_alcohol"
@@ -162,7 +162,7 @@
 		},
 		{
 			"title": "溫泉水",
-			"text": "飲用$(thing)溫泉$()可以暖和4°C，泡在溫泉內會提供些微的生命恢復並讓你感到温暖。",
+			"text": "飲用$(thing)溫泉$()可以暖和4°C，泡在溫泉內會提供些微的生命恢復並讓你感到溫暖。",
 			"item": "tfc:bucket/spring_water",
 			"type": "patchouli:spotlight",
 			"anchor": "spring_water"

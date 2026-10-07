@@ -11,7 +11,7 @@
         {
             "type": "patchouli:text",
             "anchor": "piercing",
-            "text": "$(thing)穿刺$()傷害來自尖銳的武器，例如$(thing)刀$()；投射物，例如$(thing)箭$()和$(thing)標槍$()；有尖牙的怪物，例如$(thing)蜘蛛$()；以及$(thing)仙人掌$()。$(thing)骷髏$()對穿刺傷害免疫，而$(thing)殭屍$()則對它稍微脆弱。",
+            "text": "$(thing)穿刺$()傷害來自尖銳的武器，例如$(thing)刀$()；投射物，例如$(thing)箭矢$()和$(thing)標槍$()；有尖牙的怪物，例如$(thing)蜘蛛$()；以及$(thing)仙人掌$()。$(thing)骷髏$()對穿刺傷害免疫，而$(thing)殭屍$()則對它稍微脆弱。",
             "title": "穿刺"
         },
         {

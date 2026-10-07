@@ -66,7 +66,7 @@
         {
             "type": "patchouli:text",
             "anchor": "vessel",
-            "text": "小缸就是這樣的物品之一。和所有陶器一樣，它必須先$(l:https://en.wikipedia.org/wiki/Pottery)燒製$()才能使用。燒製是將物品$(l:game_mechanics/heating)加熱$()到使黏土轉化為堅硬$(thing)陶瓷$()材料的過程，需要加熱到 1400 °C，也就是$(e)$(bold)$(t:黃白色)黃白色$()。$(br2)要在遊戲初期做到這一點，你需要使用$(l:craftsmanship/pit_kiln)坑窯$()。",
+            "text": "小缸就是這樣的物品之一。和所有陶器一樣，它必須先$(l:https://en.wikipedia.org/wiki/Pottery)燒製$()才能使用。燒製是將物品$(l:game_mechanics/heating)加熱$()到使黏土轉化為堅硬$(thing)陶瓷$()材料的過程，需要加熱到 1400 °C，也就是$(e)$(bold)$(t:黃白)黃白$()。$(br2)要在遊戲初期做到這一點，你需要使用$(l:craftsmanship/pit_kiln)坑窯$()。",
             "title": "小缸"
         },
         {
@@ -208,7 +208,7 @@
             "title": "耐火黏土",
             "anchor": "fire_clay",
             "item": "tfc:fire_clay",
-            "text": "耐火黏土能做的東西不多，但每个都是科技進步上不可或缺的要素！耐火黏土比普通黏土能承受更高的高温，因此某些進階設備只能用耐火黏土建造！"
+            "text": "耐火黏土能做的東西不多，但每個都是科技進步上不可或缺的要素！耐火黏土比普通黏土能承受更高的高溫，因此某些進階設備只能用耐火黏土建造！"
         },
         {
             "type": "patchouli:crafting",

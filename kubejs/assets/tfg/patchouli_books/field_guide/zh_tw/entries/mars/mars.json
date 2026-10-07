@@ -21,7 +21,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "所有$(thing)流體礦脈$()都遍布火星各地，只有$(l:mars/mars#heavy_water)重氨水$()只能在沙漠以外的地方找到。這也是把基地設在那裡的另一個好理由。$(br2)在能源方面，火星一開始對你不會太友善。幾乎所有常見的$(thing)發電方式$()在這顆行星上都被停用或毫無效益，這代表你幾乎只能依靠$(l:mars/fission)核分裂$()來為基地供電。"
+			"text": "所有$(thing)流體礦脈$()都遍布火星各地，只有$(l:mars/mars#heavy_water)重氨水$()只能在沙漠以外的地方找到。這也是把基地設在那裡的另一個好理由。$(br2)在能源方面，火星一開始對你不會太友善。幾乎所有常見的$(thing)發電方式$()在這顆行星上都被停用或毫無效益，這代表你幾乎只能依靠$(l:mars/fission)裂變$()來為基地供電。"
 		},
 		{
 			"type": "patchouli:text",
@@ -43,13 +43,13 @@
 			"item": "tfg:heavy_ammoniacal_water_bucket",
 			"title": "重水",
 			"anchor": "heavy_water",
-			"text": "$(item)重氨水$()是另一種流體，只能透過流體鑽機在地底深處找到。而且只會出現在火星的$(l:mars/mars#jungles)繁茂地區$()，沙漠中沒有！$(br2)你可以把它分離成重水，重水是核分裂發電的重要材料。"
+			"text": "$(item)重氨水$()是另一種流體，只能透過流體鑽機在地底深處找到。而且只會出現在火星的$(l:mars/mars#jungles)繁茂地區$()，沙漠中沒有！$(br2)你可以把它分離成重水，重水是裂變發電的重要材料。"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "desert",
 			"title": "火星沙漠",
-			"text": "火星大部分被廣闊的沙漠覆蓋。除了偶爾出現的$(l:mars/mars_fauna#stackatick)疊殼蟲$()或$(l:mars/mars_fauna#pentetic_jellie)果凍怪$()，當然還有巨大的$(l:mars/mars_fauna#sandworm)沙蟲$()以外，這裡幾乎沒有什麼生物。如果這是你第一次來，最好找個更適合居住的地方！否則，就繼續搜尋吧……"
+			"text": "火星大部分被廣闊的沙漠覆蓋。除了偶爾出現的$(l:mars/mars_fauna#stackatick)疊疊蝨$()或$(l:mars/mars_fauna#pentetic_jellie)果凍怪$()，當然還有巨大的$(l:mars/mars_fauna#sandworm)沙蟲$()以外，這裡幾乎沒有什麼生物。如果這是你第一次來，最好找個更適合居住的地方！否則，就繼續搜尋吧……"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -159,7 +159,7 @@
 			"type": "patchouli:spotlight",
 			"item": "tfg:glacian_wool",
 			"anchor": "glacian_wool",
-			"text": "和地球上的一般綿羊不同，殺死霜原羊只會得到普通羊毛。如果想要特殊的$(item)霜原羊毛$()，你必須提升牠們的熟悉度並剪毛。一整套$(l:mars/mars_equipment#space_suit)鎢鋼太空服$()需要 7 個霜原羊毛，它也是$(l:mars/fission)核分裂反應爐$()的絕佳組件，可以提高最大熱量。你也可以把它做成一般的$(l:agriculture/weaving)毛線和布料$()。"
+			"text": "和地球上的一般綿羊不同，殺死霜原羊只會得到普通羊毛。如果想要特殊的$(item)霜原羊毛$()，你必須提升牠們的熟悉度並剪毛。一整套$(l:mars/mars_equipment#space_suit)鎢鋼太空服$()需要 7 個霜原羊毛，它也是$(l:mars/fission)裂變反應爐$()的絕佳組件，可以提高最大熱量。你也可以把它做成一般的$(l:agriculture/weaving)毛線和布料$()。"
 		},
 		{
 			"type": "patchouli:text",
