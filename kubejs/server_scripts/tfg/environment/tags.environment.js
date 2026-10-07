@@ -142,6 +142,13 @@ const registerTFGEnvironmentBlockTags = (event) => {
         'greate:neutronium_crushing_wheel_controller',
     ]);
 
+    // --------- Passable to atmosphere AND heat flood fill ---------
+    event.add('tfg:atmosphere_heat_passable', [
+        'ad_astra:vent',
+        'gtceu:filter_casing',
+        'gtceu:sterilizing_filter_casing',
+    ]);
+
     // --------- getCollisionShape gives wrong result, use getShape instead ---------
     event.add('tfg:atmosphere_use_outline', [
         '#minecraft:walls',
