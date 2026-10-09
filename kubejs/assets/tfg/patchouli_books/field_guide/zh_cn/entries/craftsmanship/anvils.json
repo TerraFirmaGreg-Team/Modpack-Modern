@@ -1,28 +1,28 @@
 {
-    "name": "Anvils",
+    "name": "锻砧",
     "category": "tfg:craftsmanship",
     "icon": "tfc:metal/anvil/bronze",
     "pages": [
         {
             "type": "patchouli:text",
             "anchor": "index",
-            "text": "$(li)$(bold)$(l:craftsmanship/anvils#stone_anvil)Stone Anvils$()$(li2)$(l:craftsmanship/anvils#raw_rock)Obtaining Raw Rock$()$(li)$(bold)$(l:craftsmanship/anvils#welding)Welding$()$(li)$(bold)$(l:craftsmanship/anvils#metal_anvil)Metal Anvils$()$(li2)$(l:craftsmanship/anvils#tiers)Tiers$()$(li)$(bold)$(l:craftsmanship/anvils#working)Working Metal$()$(li2)$(l:craftsmanship/anvils#forging_bonus)Forging Bonuses$()$(li)$(bold)$(l:craftsmanship/anvils#helve_hammer)Helve Hammer$()$(li)$(bold)$(l:craftsmanship/anvils#anvil_helper)Anvil Helper Guide$()"
+            "text": "$(li)$(bold)$(l:craftsmanship/anvils#stone_anvil)石砧$()$(li2)$(l:craftsmanship/anvils#raw_rock)获得天然岩石$()$(li)$(bold)$(l:craftsmanship/anvils#welding)焊接$()$(li)$(bold)$(l:craftsmanship/anvils#metal_anvil)金属砧$()$(li2)$(l:craftsmanship/anvils#tiers)等级$()$(li)$(bold)$(l:craftsmanship/anvils#working)锻造金属$()$(li2)$(l:craftsmanship/anvils#forging_bonus)锻造评价$()$(li)$(bold)$(l:craftsmanship/anvils#helve_hammer)杠杆锤$()$(li)$(bold)$(l:craftsmanship/anvils#anvil_helper)Anvil Helper 指南$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "intro",
-            "title": "Introduction",
-            "text": "An alternative to casting tools directly (and a requirement for higher tier metals) is to use an $(thing)Anvil$(). An anvil is a block which can be used for two different processes: $(l:craftsmanship/anvils#working)Working$() and $(l:craftsmanship/anvils#welding)Welding$(). An anvil can weld double ingots of the metal type needed to create the next tier anvil above it, which will be necessary to work other items from that metal."
+            "title": "简介",
+            "text": "除了直接浇铸工具之外（这也是加工更高等级金属的必要条件），另一种方法是使用$(thing)砧$()。砧是一种可以进行两种不同工艺的方块：$(l:craftsmanship/anvils#working)锻造$()和$(l:craftsmanship/anvils#welding)焊接$()。砧可以把所需金属类型的双锭焊接成高一级的砧，而要用那种金属加工其他物品，就必须有这样的砧。"
         },
         {
             "type": "patchouli:text",
             "anchor": "stone_anvil",
-            "title": "Stone Anvil",
-            "text": "First, you need to acquire a block of $(thing)raw igneous rock$(), that is $(l:the_world/geology#igneous_extrusive)igneous extrusive$() (Rhyolite, Basalt, Andesite, or Dacite) or $(l:the_world/geology#igneous_intrusive)igneous intrusive$() (Granite, Diorite, Gabbro, Pyroxenite, or Keratophyre). You could find and use an exposed block in the world, or you could $(l:craftsmanship/anvils#raw_rock)extract one$() from the surrounding rock."
+            "title": "石砧",
+            "text": "首先，你需要获得一块$(thing)天然火成岩$()，也就是$(l:the_world/geology#igneous_extrusive)喷出岩$()（流纹岩、玄武岩、安山岩或英安岩）或$(l:the_world/geology#igneous_intrusive)深成岩$()（花岗岩、闪长岩、辉长岩、辉石岩或角斑岩）。你可以直接找到并利用世界上裸露的岩块，也可以从周围岩石中$(l:craftsmanship/anvils#raw_rock)开采一块$()。"
         },
         {
             "type": "patchouli:text",
-            "text": "You will also need any kind of $(thing)hammer$(). In order to make the anvil, simply $(item)$(k:key.use)$() the exposed $(thing)top$() face of a raw rock block with your $(thing)hammer$(), and voilà! An anvil will be formed.$(br2)Anvils have $(l:craftsmanship/anvils#tiers)tiers$() and the rock anvil is tier 0 - the lowest tier. It is only able to $(l:craftsmanship/anvils#welding)Weld$() tier I ingots."
+            "text": "你还需要任意一种$(thing)锤子$()。要制作砧，只需$(item)$(k:key.use)$()天然岩石方块裸露的$(thing)顶面$()，同时确保手里拿着$(thing)锤子$()，铛！一个砧就做成了。$(br2)砧分$(l:craftsmanship/anvils#tiers)等级$()，岩石砧是第零级——最低的一级。它只能$(l:craftsmanship/anvils#welding)焊接$()第I级的锭。"
         },
         {
             "type": "tfg:multimultiblock",
@@ -48,7 +48,7 @@
         {
             "type": "patchouli:text",
             "anchor": "raw_rock",
-            "text": "In order to obtain a raw rock block without breaking it into smaller rocks, it needs to be $(thing)extracted$(). You must mine the blocks on all six sides of a raw rock block. Once it is surrounded by air on all sides it will pop off as an item which can be picked up.",
+            "text": "要获得不碎成小石块的天然岩石方块，需要先把它$(thing)开采$()下来：你必须挖掉天然岩石方块六个面上的所有方块。当它六面都接触空气时，就会作为物品弹出，可以捡起来。",
             "title": "获得天然岩石"
         },
         {
@@ -221,19 +221,19 @@
         {
             "type": "patchouli:text",
             "anchor": "welding",
-            "text": "Welding is a process through which two items are fused together to create a new item. Welding works the same whether on a $(l:craftsmanship/anvils#stone_anvil)Stone Anvil$() or a $(l:craftsmanship/anvils#metal_anvil)Metal Anvil$().$(br2)First, you must place the two items you want to weld on the anvil by opening the anvil interface and inserting them in the two leftmost slots.",
-            "title": "Welding"
+            "text": "焊接是把两个物品熔合为一个新物品的过程。无论在$(l:craftsmanship/anvils#stone_anvil)石砧$()还是$(l:craftsmanship/anvils#metal_anvil)金属砧$()上，焊接的操作都一样。$(br2)首先，打开砧的界面，把想要焊接的两个物品放进最左边的两个槽位。",
+            "title": "焊接"
         },
         {
             "type": "patchouli:text",
-            "text": "You also need to have at least one $(item)Flux$() in the anvil to aid the welding process. Then, while both items are $(l:game_mechanics/heating)hot enough$() to weld (the tooltip will say \"Can Weld\") you must use any $(thing)hammer$() on the anvil or press the weld button on the anvil interface. You will hear a hammering sound and the items will be welded together."
+            "text": "砧上还需要至少一份$(item)助焊剂$()来辅助焊接。然后，当两个物品都$(l:game_mechanics/heating)足够热$()、达到可焊接状态时（工具提示会显示「可焊接」），用任意$(thing)锤子$()敲击砧，或按下砧界面上的焊接按钮。你会听到锤击的声音，两个物品就焊接在一起了。"
         },
         {
             "type": "patchouli:spotlight",
             "item": "tag:tfc:anvils",
             "anchor": "metal_anvil",
-            "title": "Metal Anvils",
-            "text": "Metal anvils are an important tool required for metalworking, as they allow you to work and weld metal ingots into various different forms.$(br2)$(l:craftsmanship/anvils#working)Working$() is done to form one piece of metal into another, and $(l:craftsmanship/anvils#welding)welding$(), is used to fuse two metal items into one solid piece."
+            "title": "金属砧",
+            "text": "金属砧是金属加工中不可或缺的工具，它让你能对金属锭进行锻造和焊接，做成各种不同的形态。$(br2)$(l:craftsmanship/anvils#working)锻造$()是把一块金属加工成另一种形态，而$(l:craftsmanship/anvils#welding)焊接$()则用于把两个金属物品熔合成一整块。"
         },
         {
             "type": "patchouli:multiblock",
@@ -264,7 +264,7 @@
         {
             "type": "patchouli:crafting",
             "recipe": "tfc:crafting/metal/anvil/copper",
-            "text": "Anvils can be crafted with $(thing)Double Ingots$() of their respective metal. For your first anvil, you must first $(l:craftsmanship/anvils#welding)Weld$() double ingots on a $(l:craftsmanship/anvils#stone_anvil)Stone Anvil$(). Anvils are very heavy, you can only carry one at a time."
+            "text": "砧可以用相应金属的$(thing)双锭$()合成。要制作你的第一个砧，先要$(l:craftsmanship/anvils#welding)焊接$()双锭——这一步要在$(l:craftsmanship/anvils#stone_anvil)石砧$()上进行。砧非常重，一次只能携带一个。"
         },
         {
             "type": "patchouli:text",
@@ -274,8 +274,8 @@
         {
             "type": "patchouli:text",
             "anchor": "working",
-            "text": "In order to work an item on the anvil, you will need to $(item)$(k:key.use)$() the anvil, to open up the anvil interface, seen on the next image. On the left, there are two input slots for items - for working, the target item must be in the right-hand slot. You will also need a hammer while working, either in the hammer slot on the right of the anvil $(bold)or$() in your main hand. The hammer will gradually take damage as you work the item.",
-            "title": "Working"
+            "text": "要在砧上锻造物品，你需要对砧按$(item)$(k:key.use)$()打开砧界面（见下一张图片）。左侧有两个物品输入槽——锻造时，目标物品必须放在右边的槽里。锻造时还需要一把锤子，可以放进砧右侧的锤子槽，$(bold)或者$()拿在主手上。锻造物品的过程中，锤子会逐渐损耗耐久。",
+            "title": "锻造"
         },
         {
             "type": "patchouli:image",
@@ -287,7 +287,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "You will then need to select the $(thing)plan$(), which chooses which item you want to create. $(item)$(k:key.attack)$() on the scroll button, and then pick one of the items to create. The anvil interface will return, but now you will have selected a plan. The scroll will show the item you are working to create, and the $(thing)rules$() and $(thing)target$() will now be populated."
+            "text": "接下来你需要选择$(thing)锻造方案$()，即决定要制作哪件物品。用$(item)$(k:key.attack)$()点击卷轴按钮，然后选择要制作的物品。砧界面会重新出现，此时你已经选好了方案。卷轴上会显示你正在制作的物品，$(thing)规则$()和$(thing)目标$()也会随之显示。"
         },
         {
             "type": "patchouli:image",
@@ -304,7 +304,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "$(2)Green$() actions will always move your target $(bold)right$(), and $(4)Red$() actions will always move your progress $(bold)left$(). Note that if you move your target off of the progress bar, you will have overworked your item and will lose the ingot. However, while working, you must also match the $(thing)rules$()..."
+            "text": "$(2)绿色$()的动作总是使你的目标$(bold)向右$()移动，$(4)红色$()的动作总是使你的进度$(bold)向左$()移动。注意，如果目标被移出了进度条，说明物品锻打过头了，锭会作废。不过，锻造时你还必须满足$(thing)规则$()……"
         },
         {
             "type": "patchouli:text",
@@ -313,15 +313,15 @@
         },
         {
             "type": "patchouli:text",
-            "text": "Your last three actions are shown right underneath the rules. When a rule is satisfied, its outline will change to green. Success occurs when all rules are satisfied.$(br2)Finally, you have to be mindful of your item's $(l:game_mechanics/heating)temperature$(). Metals can only be worked when they are above a certain temperature where the tooltip shows \"Can Work\". You may take an item out and re-heat it during the working process."
+            "text": "你最近三次的操作就显示在规则的正下方。某条规则被满足时，它的边框会变成绿色。所有规则都满足即为成功。$(br2)最后，还要留意物品的$(l:game_mechanics/heating)温度$()。金属只有在高于特定温度时才能锻造，此时工具提示会显示「可锻造」。锻造过程中，你可以把物品取出来重新加热。"
         },
         {
             "type": "patchouli:text",
-            "text": "Confused? That's ok, it's a lot to take in, but it's actually just a simple bit of addition and subtraction. Check our $(l:craftsmanship/anvils#anvil_helper)step-by-step guide$() on how to use the \"anvil helper\" resource pack, which makes smithing easy!"
+            "text": "感到糊涂了？没关系，这些信息确实不少，但其实只是简单的加减法。看看我们关于如何使用「Anvil Helper」资源包的$(l:craftsmanship/anvils#anvil_helper)分步指南$()，它能让锻造变得轻松！"
         },
         {
             "type": "patchouli:text",
-            "text": "Working can be tedious, and take many steps to get correct. However, there is a reward for being efficient. Some items―such as tool heads―when they are worked in a low or minimal amount of steps, receive a $(thing)Forging Bonus$() based on how efficiently they were forged. This bonus will then apply to tools that the item is used in, for example, a pickaxe head used to make a pickaxe.$(br)We also have $(l:craftsmanship/anvils#how_to_perfectly_forge)a step-by-step guide$() on how to perfectly forge anything!",
+            "text": "锻造可能很繁琐，往往要很多步才能做对。不过，高效操作是有回报的。有些物品―比如工具头―如果能用很少或最少的步数锻成，就会根据锻造效率获得$(thing)锻造评价$()。这种加成之后会应用到用该物品制成的工具上，例如用镐头制成的镐。$(br)我们还有一篇关于如何完美锻造任何物品的$(l:craftsmanship/anvils#how_to_perfectly_forge)分步指南$()！",
             "title": "锻造评价",
             "anchor": "forging_bonus"
         },
@@ -330,18 +330,18 @@
             "item": "gtceu:wrought_iron_pickaxe{\"tfc:forging_bonus\":4}",
             "title": "完美",
             "link_recipes": false,
-            "text": "There are four tiers of forging bonus:$(li)Modestly Forged$(li)Well Forged$(li)Expertly Forged$(li)Perfectly Forged$(br2)These bonuses increase the power of your tool - making it $(t:Like the Unbreaking enchant)$(6)break less often$(), $(t:Like the Efficiency enchant)$(6)mine faster$(), and/or $(t:Like the Sharpness enchant)$(6)do more damage in combat$(), depending on the tool."
+            "text": "锻造评价分为四个等级：$(li)适度锻造$(li)合格$(li)精良$(li)完美！$(br2)这些加成会提升工具的威力——让它$(t:类似“耐久”附魔)$(6)更不容易损坏$()、$(t:类似“效率”附魔)$(6)挖掘更快$()，和/或$(t:类似“锋利”附魔)$(6)在战斗中造成更多伤害$()，具体取决于工具的类型。"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "helve_hammer",
-            "title": "Helve Hammer",
+            "title": "杠杆锤",
             "item": "vintageimprovements:helve_hammer",
-            "text": "The $(item)Helve Hammer$() is a device that can automate many anvil functions using $(thing)mechanical energy$().$(br)To function, a helve hammer needs an anvil below its striking face. The $(l:craftsmanship/anvils#tiers)Tier$() of the anvil will dictate how many blows is needed. To add items to a helve hammer simply $(bold)throw$() them on top of the anvil with $(item)$(k:key.drop)$(). Items may be extracted automatically by adding funnels to the hammer head block."
+            "text": "$(item)杠杆锤$()是一种利用$(thing)机械能$()自动完成许多砧上作业的装置。$(br)要正常运作，杠杆锤的锤击面下方需要有一个砧。砧的$(l:craftsmanship/anvils#tiers)等级$()决定需要锤击多少次。要往杠杆锤里放物品，只需把物品$(bold)扔$()到砧上——按$(item)$(k:key.drop)$()丢弃键即可。在锤头方块上装上漏斗，就能自动取出物品。"
         },
         {
             "type": "patchouli:multiblock",
-            "text": "Helve hammer with anvil.",
+            "text": "杠杆锤与砧。",
             "enable_visualize": true,
             "multiblock": {
                 "pattern": [
@@ -362,7 +362,7 @@
         },
         {
             "type": "patchouli:multiblock",
-            "text": "It is recommened to make two helve hammers and chain them together to automatically process $(l:craftsmanship/bloomery)Blooms$() and $(l:craftsmanship/blast_furnace)Steel$().",
+            "text": "建议制作两台杠杆锤并串在一起，用来自动处理$(l:craftsmanship/bloomery)方坯$()和$(l:craftsmanship/blast_furnace)钢$()。",
             "enable_visualize": true,
             "multiblock": {
                 "pattern": [
@@ -411,8 +411,8 @@
         {
             "type": "patchouli:text",
             "anchor": "anvil_helper",
-            "title": "Anvil Helper Guide",
-            "text": "$(l:craftsmanship/anvils#working)Working$() in $(l:craftsmanship/anvils#metal_anvil)Anvils$() is a key process inside $(tfg), as most of your work towards the $(thing)Steam and Mechanical ages$() will require the usage of an Anvil.$(br)This guide is broken down into two parts, $(l:craftsmanship/anvils#ui_explained)Understanding the UI$() and $(l:craftsmanship/anvils#how_to_perfectly_forge)How to Perfectly Forge$().$(br2)The Modpack has a custom $(thing)Resource Pack$() called $(l:https://www.curseforge.com/minecraft/texture-packs/tfc-anvil-helper-patched)TFC Anvil Helper$() that you need to enable for this guide to make sense.$()"
+            "title": "Anvil Helper 指南",
+            "text": "$(l:craftsmanship/anvils#working)锻造$()这种在$(l:craftsmanship/anvils#metal_anvil)砧$()上进行的工艺是$(tfg)中的关键流程，因为你迈向$(thing)蒸汽与机械时代$()的大部分工作都需要用到砧。$(br)本指南分为两部分：$(l:craftsmanship/anvils#ui_explained)了解界面$()和$(l:craftsmanship/anvils#how_to_perfectly_forge)如何完美锻造$()。$(br2)整合包带有一个自定义$(thing)资源包$()，名为$(l:https://www.curseforge.com/minecraft/texture-packs/tfc-anvil-helper-patched)TFC Anvil Helper$()，你需要启用它才能看懂本指南。$()"
         },
         {
             "type": "patchouli:image",
@@ -429,7 +429,7 @@
             ],
             "border": false,
             "anchor": "ui_explained",
-            "title": "The UI and You",
+            "title": "界面与你",
             "text": "启用TFC Anvil Helper后的砧具界面（颜色标识版）。"
         },
         {
@@ -467,13 +467,13 @@
         },
         {
             "type": "patchouli:text",
-            "text": "$(#00a7ff)5.$() The Slots where your Hammer goes, and Flux if you're Welding.$(br)$(#00ff26)6. $()The current Work amount the item has, Doing different Steps either Increases or Decreases the amount of Work the item has.$(br)$(#fff400)7. $()The Target Work value, the $(#00ff26)Work$() value must be aligned EXACTLY with the Target Work, AND the $(#ff00c6)Required Steps$() must be fulfilled for the Item to be considered complete.$(br)$(#ff6b00)8. $()The Work Bar, used for Aligning the Work value with the Target Work value."
+            "text": "$(#00a7ff)5.$() 放锤子的槽位；如果进行焊接，还要放助焊剂。$(br)$(#00ff26)6. $()物品当前的锻造值，执行不同的步骤会增加或减少物品的锻造值。$(br)$(#fff400)7. $()目标锻造值。$(#00ff26)锻造值$()必须与目标锻造值完全对齐，且$(#ff00c6)所需步骤$()必须全部完成，物品才算制作完成。$(br)$(#ff6b00)8. $()锻造条，用于把锻造值与目标锻造值对齐。"
         },
         {
             "type": "patchouli:text",
             "anchor": "how_to_perfectly_forge",
             "title": "如何完美锻造",
-            "text": "$(thing)Perfectly Forging$() an Item which can break, such as $(thing)Tool Heads$(), $(thing)Weapons$(), and $(thing)Armor$() causes the Item to gain bonuses to its durability and general efficiency with the less total steps you take to forge the Item. Completing the Work on an Item with very few steps causes it to be Perfectly Forged, not only giving your finished item bonuses, but also reducing the overall wear and tear to the Hammer."
+            "text": "对会损耗的物品进行$(thing)完美锻造$()——例如$(thing)工具头$()、$(thing)武器$()和$(thing)盔甲$()——锻造所用的总步数越少，物品获得的耐久度与整体效率加成就越高。用极少的步数完成一件物品的锻造，就能使其得到完美锻造，不仅让成品获得加成，还能减少锤子的整体磨损。"
         },
         {
             "type": "patchouli:image",
@@ -487,16 +487,16 @@
             "type": "patchouli:spotlight",
             "title": "锻造指南",
             "item": "gtceu:wrought_iron_pickaxe_head",
-            "text": "This part of the guide will cover how to Perfectly Forge anything, starting with a Wrought Iron Pickaxe Head."
+            "text": "本部分将介绍如何完美锻造任何物品，从锻铁镐头开始。"
         },
         {
             "type": "patchouli:text",
-            "text": "$(bold)$(italic)DISCLAIMER:$()$(br)While the Required Steps and Orders for an Item are universal within all worlds in $(tfg_short), the Target Work value differs because it's derived from your world's Seed, as such, this Guide ASSUMES the Target Work value for the Wrought Iron Pickaxe Head is $(bold)83$()."
+            "text": "$(bold)$(italic)免责声明：$()$(br)物品的所需步骤及其顺序在$(tfg_short)的所有世界中都是通用的，但目标锻造值会有所不同，因为它取决于你世界的种子。因此，本指南假定锻铁镐头的目标锻造值为$(bold)83$()。"
         },
         {
             "type": "patchouli:text",
             "title": "第一步",
-            "text": "The first Step in your Forging Journey is to get the Value taken by Adding all the Required Step's values together. For a Pickaxe Head, you need the following Steps:$(li)$(bold)Punch$() Last$()$(li)$(bold)Bend$() Not Last$()$(li)$(bold)Draw$() Not Last$().$(br)By adding the Values on the Bottom of each Step, We get the Value we're looking for. Let's call this value \"requiredWork\".$(br)$(bold)2 + 7 + (-15) = -6$()"
+            "text": "锻造之旅的第一步，是把所有所需步骤的数值相加得到总值。对于镐头，你需要以下步骤：$(li)$(bold)冲压$() 最后$()$(li)$(bold)弯曲$() 非最末$()$(li)$(bold)牵拉$() 非最末$()。$(br)把每个步骤底部的数值相加，就得到我们要找的值。我们把这个值称为「requiredWork」。$(br)$(bold)2 + 7 + (-15) = -6$()"
         },
         {
             "type": "patchouli:image",
@@ -508,7 +508,7 @@
         {
             "type": "patchouli:text",
             "title": "第二步",
-            "text": "While our main goal for the Work Amount is to align it with the Target Work, we need to make sure both that requirement AND the Steps requirements are fulfilled, as such, directly aligning the Work Amount with the Target Work will not yield desirable results. Instead, we can calculate the value derived from Target Work and \"requiredWork\""
+            "text": "虽然我们的主要目标是让锻造值与目标锻造值对齐，但我们必须同时满足这一要求和步骤要求，因此直接把锻造值对到目标锻造值并不能得到理想的结果。我们可以转而计算由目标锻造值和「requiredWork」推导出的值"
         },
         {
             "type": "patchouli:text",
@@ -540,7 +540,7 @@
         {
             "type": "patchouli:text",
             "title": "第四步",
-            "text": "Now that we know the required steps, it's time to reach the Value derived from \"Target Work\" and \"requiredWork\". For a pickaxe head where it's TotalWork value is 83, we need to reach 89. As such, we do: (Shrink x 5) → Bend → Punch.$(br2)Once our Work value is at our desired value, just follow the Required Steps, which for a pickaxe head its: Draw → Bend → Punch. And Voilà! We've obtained a Perfectly Forged Item!"
+            "text": "现在我们已经知道了所需步骤，接下来就要达到由「Target Work」和「requiredWork」推导出的值。对于总锻造值为83的镐头，我们需要达到89。因此我们依次执行：(收缩 x 5) → 弯曲 → 冲压。$(br2)当锻造值达到我们想要的数值后，只需按所需步骤操作——镐头的所需步骤为：牵拉 → 弯曲 → 冲压。铛！我们就得到了一件完美锻造的物品！"
         },
         {
             "type": "patchouli:image",
@@ -549,16 +549,16 @@
                 "tfg:textures/gui/field_guide/anvil_working_guide/wrought_iron_pickaxe_head_some_work.png",
                 "tfg:textures/gui/field_guide/anvil_working_guide/wrought_iron_pickaxe_head_complete.png"
             ],
-            "text": "An Ingot with No Work → Desired Work Value Reached → Doing the Required Steps for our Item."
+            "text": "没有锻造值的锭 → 达到目标锻造值 → 执行物品的所需步骤。"
         },
         {
             "type": "patchouli:text",
             "title": "其他示例",
-            "text": "Lets see this process with other items, such as a Plate, or a Rod. Again, the Target Work differs by the world seed, so their values will be different on your world.$(br)Plate Target Value: $(bold)111$()$(br)Required Steps: Hit x 3, Any Order.$(br)\"requiredWork\": -3 x 3 = -9$(br)Derived Value: 111 + 9 = 120.$(br)Reaching the Value: (Shrink x 5) → (Upset x 2) → (Punch x 2)$(br)Getting the Item: 120 - (Light Hit x 3) == $(bold)111$(). Both requirements met."
+            "text": "让我们用其他物品（如板件或棒）来重复这个过程。再次提醒，目标锻造值因世界种子而异，所以在你的世界里数值会有所不同。$(br)板件目标值：$(bold)111$()$(br)所需步骤：轻击 x 3，任意顺序。$(br)「requiredWork」：-3 x 3 = -9$(br)推导值：111 + 9 = 120。$(br)达到该值：(收缩 x 5) → (镦锻 x 2) → (冲压 x 2)$(br)得到物品：120 - (轻击 x 3) == $(bold)111$()。两项要求都满足了。"
         },
         {
             "type": "patchouli:text",
-            "text": "Rod Target Value: $(bold)78$()$(br)Required Steps: Draw → Draw → Bend$(br)\"requiredWork\": (-15 x 2) + 7 = -23$(br)Derived Value: 78 + 23 = 101.$(br)Reaching the Value: (Shrink x 5) → (Bend x 3)$(br)Getting the Item: 101 - 15 - 15 + 7 = 78."
+            "text": "棒目标值：$(bold)78$()$(br)所需步骤：牵拉 → 牵拉 → 弯曲$(br)「requiredWork」：(-15 x 2) + 7 = -23$(br)推导值：78 + 23 = 101。$(br)达到该值：(收缩 x 5) → (弯曲 x 3)$(br)得到物品：101 - 15 - 15 + 7 = 78。"
         },
         {
             "type": "patchouli:text",
@@ -567,11 +567,11 @@
         },
         {
             "type": "patchouli:text",
-            "text": "Congratulations on reaching the end! If you want to follow along in a creative world, the seed used during its writing is $(bold)-7291708953208913102$()."
+            "text": "恭喜你看到最后！如果你想在本指南原稿所用地图中照着做，写作时使用的世界种子是$(bold)-7291708953208913102$()。"
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "延伸阅读",
             "anchor": "relations",
             "entries": [
                 "tfg:craftsmanship/pottery",

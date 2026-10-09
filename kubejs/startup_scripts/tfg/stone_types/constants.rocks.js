@@ -847,7 +847,7 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 		sound: 'stone',
 		collapsible: false,
 		mapColor: 'terracotta_red',
-		stonecutterTag: `tfg:hematitic_sandstone/`,
+		stonecutterTag: 'tfg:hematitic_sandstone',
 		raw: generateForms('red_sandstone', 'minecraft:%s'),
 		polished: {
 			block: 'minecraft:smooth_red_sandstone',

@@ -6,12 +6,12 @@
         {
             "type": "patchouli:text",
             "anchor": "intro",
-            "text": "$(thing)Physical Damage Types$() describe the nature of the damage that can be dealt by players and mobs. There are three types: $(bold)Piercing$(), $(bold)Slashing$(), and $(bold)Crushing$(). Some entities are able to resist certain damage types, making it difficult or impossible to kill them with certain methods."
+            "text": "$(thing)物理伤害类型$()描述了玩家和生物所能造成伤害的性质。共有三种类型：$(bold)突刺$()、$(bold)斩击$()和$(bold)打击$()。有些生物能够抵抗特定伤害类型，使得某些方法难以甚至无法杀死它们。"
         },
         {
             "type": "patchouli:text",
             "anchor": "piercing",
-            "text": "$(thing)Piercing$() damage is dealt by pointy weapons such as $(thing)Knives$(), projectiles like $(thing)Arrows$() and $(thing)Javelins$(), fanged monsters like $(thing)Spiders$(), and $(thing)Cacti$(). $(thing)Skeletons$() are invulnerable to piercing damage, and $(thing)Zombies$() are slightly vulnerable to it.",
+            "text": "$(thing)突刺$()伤害由尖锐武器（如$(thing)刀$()）、投射物（如$(thing)箭$()和$(thing)标枪$()）、长獠牙的怪物（如$(thing)蜘蛛$()）以及$(thing)仙人掌$()造成。$(thing)骷髅$()免疫突刺伤害，$(thing)僵尸$()则对它略为脆弱。",
             "title": "突刺"
         },
         {
@@ -24,13 +24,13 @@
             "type": "patchouli:text",
             "anchor": "crushing",
             "text": "$(thing)打击伤害$()是由钝器造成的伤害，例如$(thing)锤子$()和$(thing)狼牙棒$()。 $(thing)僵尸$()的攻击也造成打击伤害，并且它们对打击伤害有抗性。$(thing)爬行者$()也能抵御一部分打击伤害。$(thing)骷髅$()则更容易受到打击伤害。",
-            "title": "Crushing"
+            "title": "打击"
         },
         {
             "type": "patchouli:text",
             "anchor": "armor",
-            "title": "Armor",
-            "text": "$(thing)Armor$() has its own set of damage resistances. These resistances scale with the quality of armor, but may differ among armors of the same tier. Among bronzes, $(thing)Bismuth Bronze$() armor is best at resisting $(thing)Crushing$(), $(thing)Black Bronze$() is best at resisting $(thing)Piercing$() and regular $(thing)Bronze$() does moderately well with any damage."
+            "title": "护甲",
+            "text": "$(thing)护甲$()有一套自己的伤害抗性。这些抗性随护甲品质提升而提升，但同一等级的护甲之间也可能有所不同。在各种青铜中，$(thing)铋铜$()护甲最擅长抵御$(thing)打击$()伤害，$(thing)黑铜$()最擅长抵御$(thing)突刺$()伤害，而普通$(thing)青铜$()对各伤害都有中等的抗性。"
         },
         {
             "type": "patchouli:text",
@@ -38,7 +38,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "延伸阅读",
             "anchor": "relations",
             "entries": [
                 "tfg:craftsmanship/metallurgy",

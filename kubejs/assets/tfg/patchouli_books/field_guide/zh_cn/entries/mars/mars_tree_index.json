@@ -6,70 +6,70 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "This is a list of every huge mushroom on Mars, and what climates they grow in.$(br2)Looking for particular type of mushroom stem to decorate your base? This should help you find it. The list is sorted alphabetically by stem type."
+			"text": "这里列出了火星上所有巨型蘑菇，以及它们生长的气候。$(br2)想找某种菌柄来装饰基地？这份列表能帮你找到。列表按菌柄类型的字母顺序排列。"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "空果菇",
+			"title": "目录",
 			"anchor": "index",
-			"text": "$(li)$(bold)Large Mushrooms$()$(li2)$(l:mars/mars_tree_index#aeronos)Aeronos$()$(li2)$(l:mars/mars_tree_index#alphacene)Alphacene$()$(li2)$(l:mars/mars_tree_index#crimson)Crimson$()$(li2)$(l:mars/mars_tree_index#glacian)Glacian$()$(li2)$(l:mars/mars_tree_index#strophar)Strophar$()$(li2)$(l:mars/mars_tree_index#warped)Warped$()$(li)$(bold)$(l:mars/mars_tree_index#iodine)Iodine$()"
+			"text": "$(li)$(bold)大型蘑菇$()$(li2)$(l:mars/mars_tree_index#aeronos)空果菇$()$(li2)$(l:mars/mars_tree_index#alphacene)首新世菇$()$(li2)$(l:mars/mars_tree_index#crimson)绯红菇$()$(li2)$(l:mars/mars_tree_index#glacian)霜原菇$()$(li2)$(l:mars/mars_tree_index#strophar)孑节菇$()$(li2)$(l:mars/mars_tree_index#warped)诡异菇$()$(li)$(bold)$(l:mars/mars_tree_index#iodine)碘$()"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "首新世菌",
+			"title": "空果菇",
 			"anchor": "aeronos",
 			"item": "ad_astra:aeronos_stem",
-			"text": "$(bold)Aeronos Mushroom$()$(br)$(thing)Temperature$(): -100°C and above$(br)Appears more often to the East.$(br)$(thing)Growth Days$(): 7"
+			"text": "$(bold)空果菇$()$(br)$(thing)温度$()：-100°C及以上$(br)在东侧出现更频繁。$(br)$(thing)生长天数$()：7"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "绯红菌",
+			"title": "首新世菇",
 			"anchor": "alphacene",
 			"item": "species:alphacene_mushroom_block",
-			"text": "$(bold)Alphacene Mushroom$()$(br)$(thing)Temperature$(): -85°C and above$(br)Appears both to the East and West.$(br)$(thing)Growth Days$(): 3$(br2)Alphacene Mushroom Blocks can be combined with $(l:mars/mars_crops#bulbkin)Bulbkin Chunks$() to get $(item)Glowstone Dust$()."
+			"text": "$(bold)首新世菇$()$(br)$(thing)温度$()：-85°C及以上$(br)东西两侧均有出现。$(br)$(thing)生长天数$()：3$(br2)首新世菇方块可以与$(l:mars/mars_crops#bulbkin)球茎南瓜块$()合成获得$(item)荧石粉$()。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "绯红菇",
+			"anchor": "crimson",
+			"item": "tag:tfc:crimson_logs",
+			"text": "$(bold)绯红菇$()$(br)$(thing)温度$()：-109 — -13°C$(br)在东侧出现更频繁。$(br)$(thing)生长天数$()：6$(br2)$(bold)提示：$()想炫耀一下吗？你可以用绯红菌柄造一艘$(l:logistics/boats#canoe)独木舟$()。"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"title": "霜原菇",
-			"anchor": "crimson",
-			"item": "tag:tfc:crimson_logs",
-			"text": "$(bold)Crimson Mushroom$()$(br)$(thing)Temperature$(): -109 — -13°C$(br)Appears more often to the East.$(br)$(thing)Growth Days$(): 6$(br2)$(bold)Tip:$() Want to show off? You can build a $(l:logistics/boats#canoe)canoe$() out of Crimson Stems."
+			"anchor": "glacian",
+			"item": "tag:ad_astra:glacian_logs",
+			"text": "$(bold)霜原菇$()$(br)$(thing)温度$()：-107°C及以下$(br)东西两侧均有出现。$(br)$(thing)生长天数$()：9"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"title": "孑节菇",
-			"anchor": "glacian",
-			"item": "tag:ad_astra:glacian_logs",
-			"text": "$(bold)Glacian Mushroom$()$(br)$(thing)Temperature$(): -107°C and below$(br)Appears both to the East and West.$(br)$(thing)Growth Days$(): 9"
-		},
-		{
-			"type": "patchouli:spotlight",
-			"title": "诡异菌",
 			"anchor": "strophar",
 			"item": "ad_astra:strophar_stem",
-			"text": "$(bold)Strophar Mushroom$()$(br)$(thing)Temperature$(): -100°C and above$(br)Appears more often to the West.$(br)$(thing)Growth Days$(): 7"
+			"text": "$(bold)孑节菇$()$(br)$(thing)温度$()：-100°C及以上$(br)在西侧出现更频繁。$(br)$(thing)生长天数$()：7"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Warped",
+			"title": "诡异菇",
 			"anchor": "warped",
 			"item": "tag:tfc:warped_logs",
-			"text": "$(bold)Warped Mushroom$()$(br)$(thing)Temperature$(): -109 — -13°C$(br)Appears more often to the West.$(br)$(thing)Growth Days$(): 6$(br2)$(bold)Tip:$() Want to show off? You can build a $(l:logistics/boats#rowboat)Rowboat$() or $(l:logistics/boats#sloop)Sloop$() out of Warped Stems."
+			"text": "$(bold)诡异菇$()$(br)$(thing)温度$()：-109 — -13°C$(br)在西侧出现更频繁。$(br)$(thing)生长天数$()：6$(br2)$(bold)提示：$()想炫耀一下吗？你可以用诡异菌柄造一艘$(l:logistics/boats#rowboat)划艇$()或$(l:logistics/boats#sloop)单桅纵帆船$()。"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "tag:forge:dusts/iodine",
-			"title": "Iodine",
+			"title": "碘",
 			"anchor": "iodine",
-			"text": "$(l:mars/mars_tree_index#crimson)Crimson$() and $(l:mars/mars_tree_index#warped)Warped$() Mushrooms can be tree tapped for $(4)Crimsene$() and $(3)Warpane$() respectively.$(br2)You'll need both to get started on producing $(thing)Iodine$(), but they don't often grow in the same place, so you might need to travel a bit. You can also obtain the saplings from the corresponding $(l:mars/mars_fauna#endermen)Endermen$()."
+			"text": "$(l:mars/mars_tree_index#crimson)绯红菇$()和$(l:mars/mars_tree_index#warped)诡异菇$()可以采集树液，分别得到$(4)绯红树脂$()和$(3)诡异树脂$()。$(br2)开始生产$(thing)碘$()时两种都需要，但它们很少生长在同一处，你可能得跑远一点。你也可以从相应的$(l:mars/mars_fauna#endermen)末影人$()那里获取菌类树苗。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Mix together the Crimsene and Warpane, along with some Krypton from Mars Air Distillation (it's looped) and the heat from your $(l:mars/fission)Fission Reactor$(), and you'll get $(item)Iodine$()!$(br2)This process is slow, but you shouldn't need a lot of it for now, and there will be better methods of obtaining Iodine on further planets."
+			"text": "把绯红树脂和诡异树脂混合起来，再加上一些来自火星空气分馏的氪（这是个循环流程），以及$(l:mars/fission)裂变反应堆$()提供的热量，就能得到$(item)碘$()！$(br2)这个过程很慢，不过眼下你需要的量不多，而且在更远的行星上还有更好的碘获取方法。"
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Further Reading",
+			"title": "延伸阅读",
 			"anchor": "relations",
 			"entries": [
 				"tfg:mars/mars",

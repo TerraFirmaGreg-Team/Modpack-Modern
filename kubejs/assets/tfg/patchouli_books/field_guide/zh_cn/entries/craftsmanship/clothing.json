@@ -1,5 +1,5 @@
 {
-	"name": "Clothing",
+	"name": "服饰",
 	"category": "tfg:craftsmanship",
 	"icon": "tfc_textile:cotton_shirt",
 	"read_by_default": true,
@@ -7,40 +7,40 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "$(item)Clothing$() is a type of $(thing)equipment$() that provides effects other than $(l:game_mechanics/damage_types)armor$().$(br2)Most clothes affect your $(l:game_mechanics/player_temperature)player temperature$(), but others can provide additional, useful effects."
+			"text": "$(item)服饰$()是一类$(thing)装备$()，能提供$(l:game_mechanics/damage_types)盔甲$()之外的效果。$(br2)大多数衣服会影响你的$(l:game_mechanics/player_temperature)玩家体温$()，另一些则能提供额外且实用的效果。"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "index",
-			"text": "$(li)$(bold)$(l:craftsmanship/clothing#curios)About Curios$()$(li)$(bold)Early Clothing$()$(li2)$(l:craftsmanship/clothing#straw_hat)Straw Hat$()$(li2)$(l:craftsmanship/clothing#primitive)Primitive$()$(li2)$(l:craftsmanship/clothing#insulated_leather)Leather$()$(li)$(bold)Advanced Clothing$()$(li2)$(l:craftsmanship/clothing#cloth)Cloth$()$(li2)$(l:craftsmanship/clothing#hides)Animal Hides$()$(li2)$(l:craftsmanship/clothing#fully_insulated)Fully Insulating$()$(li)$(bold)$(l:craftsmanship/clothing#table)Clothing Stats Table$()$(li)$(bold)Other Clothes$()$(li2)$(l:logistics/exploration_gear#snowshoes)Snowshoes$()$(li2)$(l:logistics/exploration_gear#snorkel)Snorkel$() and $(l:logistics/exploration_gear#flippers)Flippers$()$(li2)$(l:game_mechanics/hazards#mask)Face Mask$()$(li2)$(l:game_mechanics/hazards#gloves)Rubber Gloves$()$(li)$(bold)$(l:craftsmanship/clothing#armor_trim)Clothing Trims$()"
+			"text": "$(li)$(bold)$(l:craftsmanship/clothing#curios)关于饰品栏$()$(li)$(bold)早期服饰$()$(li2)$(l:craftsmanship/clothing#straw_hat)草帽$()$(li2)$(l:craftsmanship/clothing#primitive)原始服饰$()$(li2)$(l:craftsmanship/clothing#insulated_leather)皮革$()$(li)$(bold)高级服饰$()$(li2)$(l:craftsmanship/clothing#cloth)布料$()$(li2)$(l:craftsmanship/clothing#hides)兽皮$()$(li2)$(l:craftsmanship/clothing#fully_insulated)完全隔热$()$(li)$(bold)$(l:craftsmanship/clothing#table)服饰属性表$()$(li)$(bold)其他服饰$()$(li2)$(l:logistics/exploration_gear#snowshoes)雪鞋$()$(li2)$(l:logistics/exploration_gear#snorkel)通气管$()和$(l:logistics/exploration_gear#flippers)脚蹼$()$(li2)$(l:game_mechanics/hazards#mask)面罩$()$(li2)$(l:game_mechanics/hazards#gloves)橡胶手套$()$(li)$(bold)$(l:craftsmanship/clothing#armor_trim)服饰纹饰$()"
 		},
 		{
 			"type": "patchouli:image",
-			"title": "What are Curios?",
+			"title": "什么是饰品栏？",
 			"anchor": "curios",
 			"images": [
 				"tfg:textures/gui/field_guide/curios.png"
 			],
 			"border": true,
-			"text": "Click the circular button on the top left of your character portrait to open the menu."
+			"text": "点击角色头像左上角的圆形按钮即可打开菜单。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Clothing can be worn in your normal equipment slots, but it can also be worn in your $(thing)Curios slots$() to wear other equipment at the same time.$(br2)This menu also has slots for things like a $(l:logistics/personal_storage#backpack)backpack$() or $(l:logistics/personal_storage#tool_belt)tool belt$()."
+			"text": "服饰可以穿在普通的装备栏里，也可以穿在$(thing)饰品栏$()中，以便同时穿戴其他装备。$(br2)这个菜单里还有$(l:logistics/personal_storage#backpack)背包$()、$(l:logistics/personal_storage#tool_belt)工具皮带$()等物品的槽位。"
 		},
 		{
 			"type": "tfg:knapping_recipe",
 			"recipe": "sns:straw_knapping/straw_hat",
 			"anchor": "straw_hat",
-			"title": "Straw Hat",
-			"text": "The first item of clothing you can craft is a simple $(item)Straw Hat$(), made of $(l:craftsmanship/building_materials#thatch)straw$(). It protects you from $(l:game_mechanics/player_temperature#wetness)direct sunlight$()."
+			"title": "草帽",
+			"text": "你能合成的第一件服饰是一顶简单的$(item)草帽$()，由$(l:craftsmanship/building_materials#thatch)干草$()制成。它能保护你免受$(l:game_mechanics/player_temperature#wetness)阳光直射$()。"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Primitive Clothing",
+			"title": "原始服饰",
 			"anchor": "primitive",
 			"item": "tfc_textile:raw_hat,tfc_textile:raw_shirt,tfc_textile:raw_pants,tfc_textile:raw_socks",
-			"text": "Naked and freezing in the arctic? The $(item)primitive$() set of clothing is very easy to craft, only needing some $(l:craftsmanship/building_materials#thatch)straw$() and some $(item)raw hides$(). Perfect for your caveman chic!$(br2)Primitive clothes have very low warmth, insulation, and durability, but they should buy you enough time to find something better."
+			"text": "在北极冻得瑟瑟发抖、还一丝不挂？$(item)原始$()套装非常容易制作，只需要一些$(l:craftsmanship/building_materials#thatch)干草$()和几张$(item)兽皮$()。尽显穴居人风尚！$(br2)原始服饰的保暖、隔热和耐久都很低，但应该能撑到你找到更好的装备。"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -51,29 +51,29 @@
 		{
 			"type": "tfg:knapping_recipe",
 			"recipe": "tfg:knapping/raw_hat",
-			"text": "$(l:craftsmanship/sticks_and_stones#knapping)Knapping$() a $(item)Primitive Hood$()."
+			"text": "$(l:craftsmanship/sticks_and_stones#knapping)石子塑形$()出$(item)原始兜帽$()。"
 		},
 		{
 			"type": "tfg:knapping_recipe",
 			"recipe": "tfg:knapping/raw_shirt",
-			"text": "Knapping a $(item)Primitive Toga$()."
+			"text": "石子塑形出$(item)原始托加袍$()。"
 		},
 		{
 			"type": "tfg:knapping_recipe",
 			"recipe": "tfg:knapping/raw_pants",
-			"text": "Knapping $(item)Primitive Shorts$()."
+			"text": "石子塑形出$(item)原始短裤$()。"
 		},
 		{
 			"type": "tfg:knapping_recipe",
 			"recipe": "tfg:knapping/raw_socks",
-			"text": "Knapping $(item)Primitive Boots$()."
+			"text": "石子塑形出$(item)原始靴子$()。"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"anchor": "insulated_leather",
-			"title": "Insulated Leather",
+			"title": "隔热皮革",
 			"item": "tfcambiental:insulated_leather_hat,tfcambiental:insulated_leather_tunic,tfcambiental:insulated_leather_pants,tfcambiental:insulated_leather_boots",
-			"text": "$(item)Insulated Leather$() clothes are the next step up from your caveman cosplay. They only require some $(l:agriculture/leather_making)Leather$() armor, plus either $(l:agriculture/animal_husbandry#wooly_animals)raw wool$() or $(l:agriculture/animal_husbandry#oviparous_animals)feathers$()."
+			"text": "$(item)隔热皮革$()衣服比穴居人装扮更进一层。它们只需要一些$(l:agriculture/leather_making)皮革$()盔甲，再加上$(l:agriculture/animal_husbandry#wooly_animals)羊毛$()或$(l:agriculture/animal_husbandry#oviparous_animals)羽毛$()。"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -84,14 +84,14 @@
 		{
 			"type": "tfg:knapping_recipe",
 			"recipe": "tfg:knapping/leather_apron",
-			"text": "The $(l:agriculture/leather_making)Leather$() $(item)Apron$() provides a lot of insulation, but no warmth or cooling. Perfect for working in front of a $(l:craftsmanship/charcoal_forge)forge$()!"
+			"text": "$(l:agriculture/leather_making)皮革$()$(item)围裙$()能提供大量隔热效果，却既不保暖也不降温。在$(l:craftsmanship/charcoal_forge)锻炉$()前干活时再合适不过！"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Cloth Clothing",
+			"title": "布制服饰",
 			"anchor": "cloth",
 			"item": "tag:forge:cloth",
-			"text": "For stronger, longer-term protection, you'll want to look at making some proper clothes out of various $(l:agriculture/weaving)cloths$(). $(l:agriculture/animal_husbandry#wooly_animals)Wool$() and $(l:beneath/beneath_crops#cotton)Cotton$() clothes will warm you up, while $(l:the_world/wild_crops#flax)Linen$(), $(l:the_world/wild_crops#jute)Burlap$(), and $(l:beneath/beneath#webbed_lair)Silk$() clothes will cool you down.$(br)These have a bigger up-front investment, but have a lot more durability and can be cheaply repaired."
+			"text": "想要更强、更长效的防护，你该考虑用各种$(l:agriculture/weaving)布料$()来做些正经衣服了。$(l:agriculture/animal_husbandry#wooly_animals)羊毛$()和$(l:beneath/beneath_crops#cotton)棉花$()衣服会为你保暖，而$(l:the_world/wild_crops#flax)亚麻$()、$(l:the_world/wild_crops#jute)粗麻$()和$(l:beneath/beneath#webbed_lair)丝绸$()衣服则会让你凉爽。$(br)它们的前期投入更大，但耐久高得多，修理起来也很便宜。"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -103,12 +103,12 @@
 			"type": "patchouli:spotlight",
 			"item": "tag:tfc_textile:animal_furs",
 			"anchor": "hides",
-			"title": "Animal Hides",
-			"text": "The hides and furs of various animals can be used to create some of the strongest clothing in $(tfg_short), boasting the best stats and durability of anything else. They all have different stats depending on how difficult they are to obtain, or where you would find the corresponding animal."
+			"title": "兽皮",
+			"text": "各种动物的兽皮和毛皮可以用来制作 $(tfg_short) 中最坚固的服饰，拥有所有装备中最佳的属性和耐久。它们的属性各不相同，取决于获取的难度，或者你能在哪里找到相应的动物。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "For example, $(l:the_world/wild_animals#crocodile)crocodile clothing$() will cool you down, while a $(l:the_world/wild_animals#caribou)caribou parka$() would be nice and toasty.$(br2)The strongest cooling clothes will require a trip to somewhere $(l:beneath/beneath_mechanics#clothes)quite hot$()...$(br2)These can also all be easily repaired."
+			"text": "例如，$(l:the_world/wild_animals#crocodile)鳄鱼服饰$()会让你凉爽，而一件$(l:the_world/wild_animals#caribou)驯鹿皮大衣$()则会让你暖烘烘的。$(br2)最强的降温服饰则需要去一趟$(l:beneath/beneath_mechanics#clothes)相当炎热$()的地方……$(br2)这些服饰也都能轻松修理。"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -119,35 +119,35 @@
 		{
 			"type": "patchouli:spotlight",
 			"anchor": "fully_insulated",
-			"title": "Fully Insulating",
+			"title": "完全隔热",
 			"item": "gtceu:nanomuscle_chestplate,ad_astra:space_suit",
-			"text": "Lastly, some advanced armors will also provide $(thing)full insulation$() from the outside world, preventing your $(l:game_mechanics/player_temperature)player temperature$() from going lower than 5°C or above 25°C."
+			"text": "最后，一些高级盔甲还会提供$(thing)完全隔热$()效果，把外界影响隔绝在外，使你的$(l:game_mechanics/player_temperature)玩家体温$()不会低于 5°C 或高于 25°C。"
 		},
 		{
 			"type": "tfg:table",
 			"anchor": "table",
 			"strings": [
 				{
-					"text": "Clothing Type",
+					"text": "服饰类型",
 					"bold": true
 				},
 				{
-					"text": "Durability",
+					"text": "耐久",
 					"bold": true
 				},
 				{
-					"text": "Warmth",
+					"text": "保暖",
 					"bold": true
 				},
 				{
-					"text": "Insulation",
+					"text": "隔热",
 					"bold": true
 				},
 				{
-					"text": "Straw Hat"
+					"text": "草帽"
 				},
 				{
-					"text": "Low"
+					"text": "低"
 				},
 				{
 					"text": "-2°C"
@@ -156,10 +156,10 @@
 					"text": "+3"
 				},
 				{
-					"text": "Primitive"
+					"text": "原始"
 				},
 				{
-					"text": "Low"
+					"text": "低"
 				},
 				{
 					"text": "+2°C"
@@ -168,10 +168,10 @@
 					"text": "+5"
 				},
 				{
-					"text": "Insulated Leather"
+					"text": "隔热皮革"
 				},
 				{
-					"text": "Medium"
+					"text": "中"
 				},
 				{
 					"text": "+2°C"
@@ -180,10 +180,10 @@
 					"text": "+10"
 				},
 				{
-					"text": "Leather Apron"
+					"text": "皮革围裙"
 				},
 				{
-					"text": "Medium"
+					"text": "中"
 				},
 				{
 					"text": "+0°C"
@@ -192,10 +192,10 @@
 					"text": "+20"
 				},
 				{
-					"text": "Burlap"
+					"text": "粗麻布"
 				},
 				{
-					"text": "Medium"
+					"text": "中"
 				},
 				{
 					"text": "-2°C"
@@ -204,10 +204,10 @@
 					"text": "+5"
 				},
 				{
-					"text": "Linen"
+					"text": "亚麻布"
 				},
 				{
-					"text": "High"
+					"text": "高"
 				},
 				{
 					"text": "-2°C"
@@ -216,22 +216,10 @@
 					"text": "+3"
 				},
 				{
-					"text": "Wool"
+					"text": "羊毛布"
 				},
 				{
-					"text": "Medium"
-				},
-				{
-					"text": "+4°C"
-				},
-				{
-					"text": "+5"
-				},
-				{
-					"text": "Cotton"
-				},
-				{
-					"text": "Medium"
+					"text": "中"
 				},
 				{
 					"text": "+4°C"
@@ -240,10 +228,22 @@
 					"text": "+5"
 				},
 				{
-					"text": "Silk"
+					"text": "棉布"
 				},
 				{
-					"text": "Very High"
+					"text": "中"
+				},
+				{
+					"text": "+4°C"
+				},
+				{
+					"text": "+5"
+				},
+				{
+					"text": "丝绸"
+				},
+				{
+					"text": "极高"
 				},
 				{
 					"text": "-2°C"
@@ -252,10 +252,10 @@
 					"text": "+5"
 				},
 				{
-					"text": "Phantom Silk"
+					"text": "幻翼丝"
 				},
 				{
-					"text": "Medium"
+					"text": "中"
 				},
 				{
 					"text": "-8°C"
@@ -264,10 +264,10 @@
 					"text": "+5"
 				},
 				{
-					"text": "Red Elk"
+					"text": "红麋鹿"
 				},
 				{
-					"text": "Very High"
+					"text": "极高"
 				},
 				{
 					"text": "-8°C"
@@ -276,7 +276,7 @@
 					"text": "+20"
 				}
 			],
-			"title": "Clothing Stats",
+			"title": "服饰属性",
 			"legend": [],
 			"columns": 3,
 			"first_column_width": 80,
@@ -288,33 +288,33 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(br2)$(br2)$(br2)$(br2)$(br2)$(br2)$(br2)$(br2)$(o)Continued on next page...$()"
+			"text": "$(br2)$(br2)$(br2)$(br2)$(br2)$(br2)$(br2)$(br2)$(o)接下页……$()"
 		},
 		{
 			"type": "tfg:table",
 			"anchor": "table",
 			"strings": [
 				{
-					"text": "Clothing Type",
+					"text": "服饰类型",
 					"bold": true
 				},
 				{
-					"text": "Durability",
+					"text": "耐久",
 					"bold": true
 				},
 				{
-					"text": "Warmth",
+					"text": "保暖",
 					"bold": true
 				},
 				{
-					"text": "Insulation",
+					"text": "隔热",
 					"bold": true
 				},
 				{
-					"text": "Dire Wolf"
+					"text": "冰原狼"
 				},
 				{
-					"text": "Medium"
+					"text": "中"
 				},
 				{
 					"text": "+8°C"
@@ -323,22 +323,10 @@
 					"text": "+5"
 				},
 				{
-					"text": "Panther"
+					"text": "黑豹"
 				},
 				{
-					"text": "Medium"
-				},
-				{
-					"text": "+8°C"
-				},
-				{
-					"text": "+5"
-				},
-				{
-					"text": "Cougar"
-				},
-				{
-					"text": "Medium"
+					"text": "中"
 				},
 				{
 					"text": "+8°C"
@@ -347,34 +335,22 @@
 					"text": "+5"
 				},
 				{
-					"text": "Tiger"
+					"text": "山狮"
 				},
 				{
-					"text": "High"
+					"text": "中"
 				},
 				{
-					"text": "-4°C"
+					"text": "+8°C"
 				},
 				{
-					"text": "+10"
+					"text": "+5"
 				},
 				{
-					"text": "Crocodile"
+					"text": "老虎"
 				},
 				{
-					"text": "High"
-				},
-				{
-					"text": "-4°C"
-				},
-				{
-					"text": "+10"
-				},
-				{
-					"text": "Lion"
-				},
-				{
-					"text": "High"
+					"text": "高"
 				},
 				{
 					"text": "-4°C"
@@ -383,10 +359,34 @@
 					"text": "+10"
 				},
 				{
-					"text": "Black Bear"
+					"text": "鳄鱼"
 				},
 				{
-					"text": "High"
+					"text": "高"
+				},
+				{
+					"text": "-4°C"
+				},
+				{
+					"text": "+10"
+				},
+				{
+					"text": "狮子"
+				},
+				{
+					"text": "高"
+				},
+				{
+					"text": "-4°C"
+				},
+				{
+					"text": "+10"
+				},
+				{
+					"text": "黑熊"
+				},
+				{
+					"text": "高"
 				},
 				{
 					"text": "+8°C"
@@ -395,10 +395,10 @@
 					"text": "+10"
 				},
 				{
-					"text": "Grizzly Bear"
+					"text": "棕熊"
 				},
 				{
-					"text": "High"
+					"text": "高"
 				},
 				{
 					"text": "+8°C"
@@ -407,10 +407,10 @@
 					"text": "+10"
 				},
 				{
-					"text": "Caribou"
+					"text": "驯鹿"
 				},
 				{
-					"text": "High"
+					"text": "高"
 				},
 				{
 					"text": "+8°C"
@@ -419,10 +419,10 @@
 					"text": "+20"
 				},
 				{
-					"text": "Sabertooth"
+					"text": "剑齿虎"
 				},
 				{
-					"text": "High"
+					"text": "高"
 				},
 				{
 					"text": "+8°C"
@@ -431,10 +431,10 @@
 					"text": "+20"
 				},
 				{
-					"text": "Polar Bear"
+					"text": "北极熊"
 				},
 				{
-					"text": "Very High"
+					"text": "极高"
 				},
 				{
 					"text": "+8°C"
@@ -444,7 +444,7 @@
 				}
 			],
 			"legend": [],
-			"title": "Clothing Stats (Continued)",
+			"title": "服饰属性（续）",
 			"columns": 3,
 			"first_column_width": 80,
 			"column_width": 50,
@@ -458,15 +458,15 @@
 			"draw_filler": false
 		},
 		{
-			"title": "Armor Trims",
+			"title": "盔甲纹饰",
 			"item": "tag:minecraft:trim_templates",
 			"type": "patchouli:spotlight",
 			"anchor": "armor_trim",
-			"text": "Are your clothes looking too plain?$(br2)Just like armor, $(l:craftsmanship/sewing_table#armor_trim)Armor Trims$() can be applied to most clothing too."
+			"text": "觉得你的衣服看起来太朴素了？$(br2)和盔甲一样，大多数服饰也可以应用$(l:craftsmanship/sewing_table#armor_trim)盔甲纹饰$()。"
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Further Reading",
+			"title": "延伸阅读",
 			"anchor": "relations",
 			"entries": [
 				"tfg:agriculture/leather_making",

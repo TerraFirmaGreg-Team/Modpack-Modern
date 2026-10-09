@@ -305,5 +305,7 @@
     "tfg.tooltip.unit.power": "功率：%s",
     "tfg.tooltip.gas_burner.flavor_text": "§3燃氣燃燒器會消耗液體燃料，為上方的方塊提供熱量。§r\n這個裝置可以用§l紅石§r控制：\n- 提供強度 §e15§r 的訊號會§o點燃§r燃燒器。\n- 移除所有紅石訊號會§o熄滅§r燃燒器。\n- 提供強度 §e3-14§r 的紅石訊號可以設定燃燒器的§o最高溫度§r。\n- 比較器輸出會讀取目前的§o燃料量§r。",
     "tfg.tooltip.gas_burner.max_temp": "最高溫度：",
-    "tfg.tooltip.fuel_burning.days": "%s 天 / %s mB(滿槽)"
+    "tfg.tooltip.fuel_burning.days": "%s 天 / %s mB(滿槽)",
+    "tfg.tooltip.planter.fertilizer_info": "肥料並非必需。作物在吸收其偏好的肥料時，生長速度會更快，並產生其他類型的肥料。",
+    "tfg.tooltip.greenhouse.minimum_tier": "最低等級："
 }

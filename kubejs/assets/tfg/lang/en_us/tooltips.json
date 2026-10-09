@@ -135,9 +135,10 @@
     "tfg.tooltip.machine.heat_pump_1": "§7Sets the temperature of a large mostly-sealed area to 15°C.",
     "tfg.tooltip.machine.heat_pump_2": "§7The bigger the area, the more power it needs. Is lenient on what counts as 'sealed'.",
     "tfg.tooltip.machine.heat_pump_3": "§7The side with the controller should face indoors, while the Exhaust should face outdoors and be filled with a Turibne Rotor.",
-    "tfg.tooltip.machine.heat_pump_vent": "Requires a Turbine Rotor, only durability has an impact. Rotors wear very slowly.",
-    "tfg.tooltip.machine.higgs_emitter_1": "§7Changes the gravity of a large sealed area to Earth-like.",
-    "tfg.tooltip.machine.higgs_emitter_2": "§7The bigger the area, the more power it needs.",
+    "tfg.tooltip.machine.heat_pump_vent": "Requires a Turbine Rotor, never wears off. Efficiency and Power impact EU/t and MB/t for the Oxygen Distributor.",
+
+    "tfg.tooltip.machine.higgs_emitter_1": "§7Changes the gravity of a large spherical area to Earth-like.",
+    "tfg.tooltip.machine.higgs_emitter_2": "§7The better the energy hatch it has, the bigger the area.",
 
     "tfg.machine.me_assembler_redstone_port.tooltip": "§7Can be used as part of an ME Resonance Fabricator or ME Resonance Charger.\n0: Nothing\n1: Certus Block\n2: Chipped Budding Certus\n3: Flawed Budding Certus\n4: Flawless Budding Certus\n5: Exquisite Budding Certus",
 
@@ -347,6 +348,9 @@
 
     "tfg.tooltip.gas_burner.flavor_text": "§3A Gas Burner consumes liquid fuels to supply above blocks with heat.§r\rThis device can be controlled with §lRedstone§r:\r- Supplying a signal strength of §e15§r will §oignite§r the burner.\r- Removing all redstone signals will §oextinguish§r the burner.\r- The §omaximum temperature§r of the burner can be set by supplying redstone with signals between §e3-14§r.\r- Comparator output will read the current §ofuel level§r.",
     "tfg.tooltip.gas_burner.max_temp": "Max Temperature: ",
-    "tfg.tooltip.fuel_burning.days": "%s Days / %s mB (Full Tank)"
+    "tfg.tooltip.fuel_burning.days": "%s Days / %s mB (Full Tank)",
+
+    "tfg.tooltip.planter.fertilizer_info": "Fertilizers are optional. Crops will grow faster and produce other fertilizer types when consuming their preferred fertilizer.",
+    "tfg.tooltip.greenhouse.minimum_tier": "Min. Tier: "
 
 }

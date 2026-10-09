@@ -650,7 +650,7 @@ global.toFluidStack = function(fluid) {
  * @param {Boolean|null} genMixingBowlRecipe Wether to generate a firmalife mixing bowl recipe. Defaults to true.
  * @param {Boolean|null} genProcessorRecipe Wether to generate a food processor recipe. Defaults to true.
  * @param {Number|null} circuit Optional field for setting a food processor circuit number.
- * @param {Internal.ItemStackProvider|null} outputProvider Optional override for a custom output provider. Defaults to `TFC.isp.of(outputItem).copyOldestFood()`. Note that mixing bowls do not support output providers.
+ * @param {Internal.ItemStackProvider|null} outputProvider Optional override for a custom output provider. Defaults to `TFC.isp.of(outputItem).copyOldestFood()` or `resetFood` if mixing bowl is used. Note that mixing bowls do not support output providers.
  * @param {String|null} idOverride Optional override to set a custom id. Defaults to outputItem, or outputFluid if outputItem isnt set.
  */
 global.generateMixingFoodRecipes = function(event, inputItems, inputFluid, outputFluid, outputItem, genShapelessRecipe, genMixingBowlRecipe, genProcessorRecipe, circuit, outputProvider, idOverride) {
@@ -679,10 +679,14 @@ global.generateMixingFoodRecipes = function(event, inputItems, inputFluid, outpu
 		let outputItemData;
 		
 		if (outputItem) {
-			if (outputProvider) {
-				outputItemData = outputProvider
+			if (genMixingBowlRecipe) {
+				outputItemData = TFC.isp.of(outputItem).resetFood()
 			} else {
-				outputItemData = TFC.isp.of(outputItem).copyOldestFood()
+				if (outputProvider) {
+					outputItemData = outputProvider
+				} else {
+					outputItemData = TFC.isp.of(outputItem).copyOldestFood()
+				}
 			}
 		} else {
 			throw new Error(`No output item for generateMixingFoodRecipes recipe ID: 'tfg:shapeless/${id}'`);
@@ -710,10 +714,15 @@ global.generateMixingFoodRecipes = function(event, inputItems, inputFluid, outpu
 		
 		if (outputItem) {
 			processorData.itemOutputs = [outputItem];
-			if (outputProvider) {
-				processorData.itemOutputProvider = outputProvider
+			
+			if (genMixingBowlRecipe) {
+				processorData.itemOutputProvider = TFC.isp.of(outputItem).resetFood()
 			} else {
-			processorData.itemOutputProvider = TFC.isp.of(outputItem).copyOldestFood();
+				if (outputProvider) {
+					processorData.itemOutputProvider = outputProvider
+				} else {
+				processorData.itemOutputProvider = TFC.isp.of(outputItem).copyOldestFood();
+				}
 			}
 		}
 		if (outputFluid) {

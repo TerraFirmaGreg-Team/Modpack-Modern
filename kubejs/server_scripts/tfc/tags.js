@@ -512,12 +512,11 @@ function registerTFCItemTags(event) {
 	event.add('tfc:firepit_logs', '#tfc:firepit_kindling');
 	event.add('tfc:firepit_fuel', '#tfc:firepit_kindling');
 
-    //TODO: properly allow GT fluid containers to work with TFC crafting recipes.
     /** @type {{Item[]}} */
     const fluidItemIngredientHolders = [
-        //'#gtceu:super_tanks',
-        //'#gtceu:fluid_cells',
-        //'#gtceu:drums',
+        '#gtceu:super_tanks',
+        '#gtceu:fluid_cells',
+        '#gtceu:drums',
         '#tfc:barrels'
     ];
     fluidItemIngredientHolders.forEach(item => {

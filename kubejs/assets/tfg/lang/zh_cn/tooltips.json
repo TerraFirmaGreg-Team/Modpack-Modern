@@ -126,8 +126,8 @@
     "tfg.tooltip.machine.heat_pump_1": "§7将大面积、基本密封区域的温度设定为15°C。",
     "tfg.tooltip.machine.heat_pump_2": "§7区域越大，需要的电力越多。对“密封”的判定较为宽松。",
     "tfg.tooltip.machine.heat_pump_3": "§7带有控制器的一面应朝向室内，对面应朝向室外。",
-    "tfg.tooltip.machine.higgs_emitter_1": "§7将大面积密封区域的重力改为类地球重力。",
-    "tfg.tooltip.machine.higgs_emitter_2": "§7区域越大，需要的电力越多。",
+    "tfg.tooltip.machine.higgs_emitter_1": "§7将大面积球形区域的重力改为类地球重力。",
+    "tfg.tooltip.machine.higgs_emitter_2": "§7使用越高级的能源仓，作用区域就越大。",
     "tfg.machine.me_assembler_redstone_port.tooltip": "§7可作为ME共振制造机或ME共振充能器的一部分使用。\n0：无\n1：赛特斯石英方块\n2：破碎的赛特斯石英母岩\n3：有瑕的赛特斯石英母岩\n4：无瑕的赛特斯石英母岩\n5：精致的赛特斯石英母岩",
     "tfg.tooltip.ore_prospector_stats": "扫描范围：%s，截面：%s x %s。",
     "tfg.tooltip.ore_prospector_count": "此勘探器将显示矿石数量。",
@@ -301,5 +301,7 @@
     "tfg.tooltip.unit.power": "电量:%s",
     "tfg.tooltip.gas_burner.flavor_text": "§3燃气灶消耗液体燃料为上方方块提供热量。§r\n该设备可通过§l红石§r控制：\n- 提供§e15§r强度的红石信号会§o点燃§r燃气灶。\n- 移除所有红石信号会§o熄灭§r燃气灶。\n- 通过提供§e3-14§r强度的红石信号可设置燃气灶的§o最高温度§r。\n- 比较器输出将读取当前§o燃料量§r。",
     "tfg.tooltip.gas_burner.max_temp": "最高温度： ",
-    "tfg.tooltip.fuel_burning.days": "%s 天 / %s mB (注满时)"
+    "tfg.tooltip.fuel_burning.days": "%s 天 / %s mB (注满时)",
+    "tfg.tooltip.planter.fertilizer_info": "肥料是可选的。作物在消耗其偏好的肥料时会生长得更快，并产出其他类型的肥料。",
+    "tfg.tooltip.greenhouse.minimum_tier": "最小层级: "
 }

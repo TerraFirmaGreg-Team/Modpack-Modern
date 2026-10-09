@@ -166,7 +166,7 @@
 			"scale": 0.7,
 			"name": "Liściak",
 			"anchor": "leaf_hanger",
-			"text": "$(thing)Leaf Hangers$() can be found in pools of Salt Water, hooking players who walk into their trap. Hit them to make them let go of you!"
+			"text": "$(thing)Liściaki$() żyją w zbiornikach słonej wody i chwytają graczy, którzy wpadną w ich pułapkę. Uderz je, aby się uwolnić!"
 		},
 		{
 			"type": "patchouli:entity",

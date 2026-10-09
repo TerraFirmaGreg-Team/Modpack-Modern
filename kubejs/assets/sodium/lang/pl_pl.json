@@ -43,6 +43,7 @@
 	"sodium.options.use_fog_occlusion.name": "Użyj okluzji mgły",
 	"sodium.options.use_no_error_context.name": "Używaj braku kontekstu błędu",
 	"sodium.options.use_persistent_mapping.name": "Używaj trwałego mapowania",
+	"sodium.options.view_bobbing.tooltip": "Gdy opcja jest włączona, widok będzie się bujać i podskakiwać podczas ruchu. Jeśli podczas gry odczuwasz chorobę lokomocyjną, wyłączenie tej opcji może ci pomóc.",
 	"sodium.options.view_distance.tooltip": "Zasięg renderowania kontroluje, jak daleko otoczenie będzie renderowane. Krótszy dystans oznacza, że mniej otoczenia będzie renderowane, zwiększając klatki na sekundę.",
 	"sodium.options.vignette.name": "Winieta",
 	"sodium.options.vignette.tooltip": "Jeśli włączone, efekt winiety będzie renderowany na widoku gracza. Ta opcja nie gwarantuje zmiany w wydajności klatek na sekundę, chyba że jesteś limitowany przez współczynnik wypełnienia.",

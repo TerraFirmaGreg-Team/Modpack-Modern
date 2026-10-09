@@ -18,7 +18,7 @@
             "type": "patchouli:crafting",
             "recipe": "tfc:crafting/silica_glass_batch",
             "text": "Glass batches can then be crafted using one of the aforementioned colors of sand, plus $(l:craftsmanship/glassworking#lime_and_potash)Lime$() and a type of $(l:craftsmanship/glassworking#lime_and_potash)Potash$().$(br)Remember that different sand types can be obtained by breaking gravel with a hammer.",
-            "title": "Partia szkła krzemionkowego"
+            "title": "Partia szkła krzemion."
         },
         {
             "type": "patchouli:smelting",
@@ -216,10 +216,10 @@
                     "text": ""
                 },
                 {
-                    "text": "C"
+                    "text": "X"
                 },
                 {
-                    "text": "T"
+                    "text": "P"
                 },
                 {
                     "fill": "0xff42f2"
@@ -384,7 +384,7 @@
                     "fill": "0x3eb340"
                 },
                 {
-                    "text": "Oliwin"
+                    "text": "Oliwin."
                 },
                 {
                     "fill": "0xb33e3e"
@@ -441,7 +441,7 @@
                     "fill": "0x3eb340"
                 },
                 {
-                    "text": "Wulkaniczne"
+                    "text": "Wulkan."
                 },
                 {
                     "fill": "0xb33e3e"
@@ -498,7 +498,7 @@
                     "fill": "0x3eb340"
                 }
             ],
-            "text": "Dostępność kolorów szkła. \"C\" - przezroczyste, \"T\" - przyciemniane. Określone kolory mogą być wytwarzane tylko z niektórych typów szkła.",
+            "text": "Dostępność kolorów szkła. \"X\" - przezroczyste, \"P\" - przyciemnione. Określone kolory mogą być wytwarzane tylko z niektórych typów szkła.",
             "title": "Dostępność kolorów szkła",
             "legend": [
                 {

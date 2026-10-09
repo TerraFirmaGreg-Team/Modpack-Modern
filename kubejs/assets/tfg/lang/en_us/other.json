@@ -140,7 +140,7 @@
     "tfg.machine.oxygen_distributor.energy": "Using %s EU/t",
     "tfg.machine.oxygen_distributor.status": "Status: ",
     "tfg.machine.oxygen_distributor.size": "Room size: %s blocks",
-    "tfg.machine.oxygen_distributor.consumption": "Consuming %s mB/t",
+    "tfg.machine.oxygen_distributor.consumption": "Consuming %s",
     "tfg.machine.oxygen_distributor.status.no_energy": "Waiting for power",
     "tfg.machine.oxygen_distributor.status.sealed": "Sealed",
     "tfg.machine.oxygen_distributor.status.breached": "Breached",
