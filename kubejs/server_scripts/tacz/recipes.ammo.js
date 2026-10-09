@@ -101,7 +101,7 @@ function registerTACZAmmoRecipes(event){
 					'{AmmoId:"create_armorer:rbapb"}'))
 		.EUt(GTValues.VA[GTValues.LV])
 		.circuit(1)
-		.duration(20)
+		.duration(30)
 	event.recipes.gtceu.assembler('tfg_tacz:rb_small')
 		.itemInputs('4x #forge:nuggets/lead','2x #forge:foils/copper', '4x tfg:small_bullet_casing', 
 					'#forge:dusts/gunpowder')
@@ -116,7 +116,15 @@ function registerTACZAmmoRecipes(event){
 					'{AmmoId:"create_armorer:rbapb"}'))
 		.EUt(GTValues.VA[GTValues.EV])
 		.duration(20)
-		
+	
+	event.recipes.gtceu.assembler('tfg_tacz:slap_large_lv')
+		.itemInputs('4x #forge:bolts/lead','4x #forge:foils/copper', '#forge:ingots/brass', 
+					'#forge:dusts/gunpowder')
+		.itemOutputs(Item.of('tacz:ammo', 4, 
+					'{AmmoId:"create_armorer:slap"}'))
+		.EUt(GTValues.VA[GTValues.LV])
+		.circuit(1)
+		.duration(30)
 	event.recipes.gtceu.assembler('tfg_tacz:slap_large')
 		.itemInputs('4x #forge:bolts/lead','4x #forge:foils/copper', '4x tfg:large_bullet_casing', 
 					'#forge:dusts/gunpowder')
@@ -150,14 +158,16 @@ function registerTACZAmmoRecipes(event){
 	
 	//Certus era
 	event.recipes.gtceu.assembler('tfg_tacz:fluix_grenade')
-		.itemInputs('#forge:ingots/magnalium', '2x gtceu:gelled_toluene', '4x tfg:nitrocellulose')
+		.itemInputs('2x #forge:ingots/magnalium', '2x tfg:hexotol', '6x tfg:nitrocellulose')
 		.inputFluids(Fluid.of('tfg:fluix', 720))
-		.itemOutputs(Item.of('tacz:ammo', 
+		.itemOutputs(Item.of('tacz:ammo', 2,
 					'{AmmoId:"applied_armorer:fluix_infused_grenade"}'))
 		.EUt(GTValues.VA[GTValues.EV])
 		.duration(40)
+		
+		
 	event.recipes.gtceu.assembler('tfg_tacz:40mm_he')
-		.itemInputs('#forge:ingots/brass', '#forge:ingots/steel', '8x gtceu:gelled_toluene', 
+		.itemInputs('#forge:ingots/brass', '#forge:ingots/steel', '2x tfg:hexotol', 
 					'6x tfg:nitrocellulose')
 		.itemOutputs(Item.of('tacz:ammo', 
 					'{AmmoId:"create_armorer:40mmhe"}'))

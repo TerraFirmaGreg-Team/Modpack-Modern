@@ -251,26 +251,35 @@ function registerImmersiveVehiclesGunsRecipes(event) {
 		.EUt(GTValues.VA[GTValues.MV])
 		.duration(200)
 		
-	event.recipes.gtceu.assembler('mts:mtsofficialpack.bomblet')
+	
+	
+	event.recipes.gtceu.assembler('mts:mtsofficialpack_basicbomb_LV')
+		.itemInputs('2x #minecraft:buttons', '4x #forge:normal_fluid_pipes/steel', '2x #forge:plates/steel', '3x minecraft:tnt')
+		.inputFluids(Fluid.of('gtceu:soldering_alloy', 288))
+		.itemOutputs('2x mts:mtsofficialpack.basicbomb')
+		.EUt(GTValues.VA[GTValues.LV])
+		.duration(300)
+	
+	event.recipes.gtceu.assembler('mts:mtsofficialpack_basicbomb_MV')
+		.itemInputs('#minecraft:buttons', '2x #forge:normal_fluid_pipes/steel', '#forge:plates/steel', '5x tfg:hexotol')
+		.inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
+		.itemOutputs('mts:mtsofficialpack.basicbomb')
+		.EUt(GTValues.VA[GTValues.MV])
+		.duration(100)
+		
+	event.recipes.gtceu.assembler('mts:mtsofficialpack_bomblet')
 		.itemInputs('2x #minecraft:buttons', '#forge:small_fluid_pipes/steel', '#forge:plates/steel', 'tfg:hexotol')
 		.inputFluids(Fluid.of('gtceu:soldering_alloy', 72))
 		.itemOutputs('2x mts:mtsofficialpack.bomblet')
 		.EUt(GTValues.VA[GTValues.MV])
 		.duration(100)
 	
-	event.recipes.gtceu.assembler('mts:mtsofficialpack.basicbomb')
-		.itemInputs('#minecraft:buttons', '2x #forge:normal_fluid_pipes/steel', '#forge:plates/steel', '5x tfg:hexotol')
-		.inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
-		.itemOutputs('mts:mtsofficialpack.basicbomb')
-		.EUt(GTValues.VA[GTValues.MV])
-		.duration(100)
-	
-	event.recipes.gtceu.assembler('tfg:prepackaged_rocket_motor')
+	event.recipes.gtceu.assembler('tfg:prepackaged_rocket_motor_lv')
 		.itemInputs('8x #forge:fine_wires/annealed_copper', '2x #forge:tiny_fluid_pipes/aluminium', '8x minecraft:gunpowder',
 					'#forge:wax', '#forge:foils/lead', '#forge:small_springs/lead')
 		.itemOutputs('4x tfg:prepackaged_rocket_motor')
-		.EUt(GTValues.VA[GTValues.MV])
-		.duration(40)
+		.EUt(GTValues.VA[GTValues.LV])
+		.duration(80)
 		
 	event.recipes.gtceu.assembler('tfg:prepackaged_rocket_motor_ev')
 		.itemInputs('16x #forge:fine_wires/annealed_copper', '4x #forge:tiny_fluid_pipes/aluminium', 'tfg:nitrocellulose',
@@ -279,10 +288,17 @@ function registerImmersiveVehiclesGunsRecipes(event) {
 		.EUt(GTValues.VA[GTValues.EV])
 		.duration(40)
 	
-	event.recipes.gtceu.assembler('mts:mtsofficialpack.bulletrocket')
+	event.recipes.gtceu.assembler('mts:mtsofficialpack.bulletrocket_lv')
+		.itemInputs('8x #minecraft:buttons', '8x #forge:tiny_fluid_pipes/steel', 'minecraft:tnt', '8x tfg:prepackaged_rocket_motor')
+		.inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
+		.itemOutputs('8x mts:mtsofficialpack.bulletrocket')
+		.EUt(GTValues.VA[GTValues.LV])
+		.duration(240)
+
+	event.recipes.gtceu.assembler('mts:mtsofficialpack.bulletrocket_mv')
 		.itemInputs('4x #minecraft:buttons', '4x #forge:tiny_fluid_pipes/steel', 'tfg:hexotol', '4x tfg:prepackaged_rocket_motor')
 		.inputFluids(Fluid.of('gtceu:soldering_alloy', 72))
-		.itemOutputs('mts:mtsofficialpack.bulletrocket')
+		.itemOutputs('4x mts:mtsofficialpack.bulletrocket')
 		.EUt(GTValues.VA[GTValues.MV])
 		.duration(100)
 		
@@ -303,8 +319,7 @@ function registerImmersiveVehiclesGunsRecipes(event) {
 	event.recipes.gtceu.chemical_reactor('tfg:rdx') 
 		.itemInputs('22x #forge:dusts/hexamine')
 		.inputFluids(Fluid.of('gtceu:nitric_acid', 10000))
-		.itemOutputs('21x #forge:dusts/rdx', '33x #forge:dusts/methylene_dinitrate')
-		//needs ammonium nitrate
+		.itemOutputs('21x #forge:dusts/rdx', '33x #forge:dusts/methylene_dinitrate', '9x #forge:dusts/ammonium_nitrate')
 		.outputFluids(Fluid.of('minecraft:water', 3000))
 		.EUt(GTValues.VA[GTValues.MV])
 		.duration(200)
@@ -316,15 +331,12 @@ function registerImmersiveVehiclesGunsRecipes(event) {
 		.EUt(GTValues.VA[GTValues.MV])
 		.duration(240)
 		
-	// TODO: balance this against normal tnt
 	event.recipes.gtceu.mixer('tfg:hexotol_itnt')
-		.itemInputs('32x #forge:dusts/rdx', '1x gtceu:industrial_tnt')
-		.inputFluids(Fluid.of('gtceu:wax', 72))
-		.itemOutputs('4x tfg:hexotol', '9x #forge:dusts/ammonium_nitrate')
-		.EUt(GTValues.VA[GTValues.MV])
-		.duration(240)
-
-
+		.itemInputs('64x #forge:dusts/rdx', '1x gtceu:industrial_tnt')
+		.inputFluids(Fluid.of('gtceu:wax', 144))
+		.itemOutputs('8x tfg:hexotol', '18x #forge:dusts/ammonium_nitrate')
+		.EUt(GTValues.VA[GTValues.HV])
+		.duration(200)
 
 	event.recipes.gtceu.chemical_reactor('tfg:ammonium_nitrate_synthesis') 
 		.inputFluids(Fluid.of('gtceu:nitric_acid', 1000), Fluid.of('gtceu:ammonia', 1000))
