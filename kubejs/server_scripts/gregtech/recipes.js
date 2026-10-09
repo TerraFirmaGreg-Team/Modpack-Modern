@@ -890,7 +890,6 @@ const registerGTCEURecipes = (event) => {
 			'stretch',
 			'blow'
 		]).id('tfg:glassworking/glass_vial')
-		.EUt(GTValues.VA[GTValues.HV])
 
 
 	event.shaped('gtceu:empty_spray_can', [
