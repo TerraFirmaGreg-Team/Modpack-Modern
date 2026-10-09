@@ -1,13 +1,13 @@
 {
-    "name": "Gas Burner",
+    "name": "燃气燃烧器",
     "category": "tfg:craftsmanship",
     "icon": "tfg:gas_burner",
     "pages": [
         {
             "type": "patchouli:text",
             "anchor": "intro",
-            "title": "Gas Burner",
-            "text": "A $(thing)Gas Burner$() is a device which can burn fluids and gases like $(thing)Oil$(), $(l:cooking/alcohol)Alcohol$(), and $(thing)Petroluem Fuels$() to generate $(l:game_mechanics/heating)Heat$().$(br)Unlike other heat sources, the maximum Temperature of the burner can be set using $(l:craftsmanship/gas_burner#redstone)Redstone$(). This allows for more precise control over $(l:cooking/cooking_methods)Cooking$() and $(l:craftsmanship/crucible)Smelting$().$(br)The gas burner does not increase in temperature from a $(l:craftsmanship/charcoal_forge#bellows)Bellows'$() air supply."
+            "title": "燃气燃烧器",
+            "text": "$(thing)燃气燃烧器$()是一种能燃烧$(thing)石油$()、$(l:cooking/alcohol)酒类$()和$(thing)石油燃料$()等流体和气体来产生$(l:game_mechanics/heating)热量$()的设备。$(br)与其他热源不同，燃烧器的最高温度可以用$(l:craftsmanship/gas_burner#redstone)红石$()来设定，从而更精确地控制$(l:cooking/cooking_methods)烹饪$()和$(l:craftsmanship/crucible)熔炼$()。$(br)燃气燃烧器不会因$(l:craftsmanship/charcoal_forge#bellows)风箱$()的鼓风而升温。"
         },
         {
             "type": "patchouli:multiblock",
@@ -24,25 +24,25 @@
                     "X": "tfg:gas_burner[lit=true]"
                 }
             },
-            "name": "Gas Burner",
-            "text": "$(thing)Gas Burners$() will indicate their max temp level through a meter on one face.",
+            "name": "燃气燃烧器",
+            "text": "$(thing)燃气燃烧器$()会通过其一个面上的仪表指示最高温度等级。",
             "enable_visualize": false
         },
         {
             "type": "patchouli:text",
             "anchor": "redstone",
-            "title": "Redstone Control",
-            "text": "This device has many functions that can be controlled with $(bold)$(c)Redstone$():$(li)Supplying a signal strength of $(3)15$() will $(italic)ignite$() the burner.$(li)Removing all redstone signals will $(italic)extinguish$() the burner.$(li)The $(italic)maximum temperature$() of the burner can be set by supplying redstone with signals between $(3)3-14$().$(li)Comparator output will read the current $(italic)fuel level$()."
+            "title": "红石控制",
+            "text": "这台设备有许多可以用$(bold)$(c)红石$()控制的功能：$(li)输入强度为 $(3)15$() 的信号会$(italic)点燃$()燃烧器。$(li)切断所有红石信号会$(italic)熄灭$()燃烧器。$(li)燃烧器的$(italic)最高温度$()可以通过输入 $(3)3-14$() 之间的红石信号来设定。$(li)比较器输出会读取当前$(italic)燃料余量$()。"
         },
         {
             "type": "patchouli:text",
             "anchor": "functions",
-            "title": "Functions",
-            "text": "Gas Burners can be supplied automatically using $(thing)Fluid Pipes$(), or manually with $(item)$(k:key.use)$() while holding a container of fluid.$(br)Inside their interface will show:$(li)The heat level, with a bar indicating maximum set temperature.$(li)A flame progress bar which displays the time left, and fuel burn temp when hovered over.$(li)Fuel tank with bucket in/out slots."
+            "title": "功能",
+            "text": "燃气燃烧器可以用$(thing)流体管道$()自动供给燃料，也可以手持装有流体的容器按$(item)$(k:key.use)$()手动添加。$(br)其界面中会显示：$(li)热量等级，以及指示最高设定温度的条形。$(li)火焰进度条，显示剩余时间，悬停时还会显示燃料燃烧温度。$(li)燃料箱，带有输入/输出桶插槽。"
         },
         {
             "type": "patchouli:text",
-            "text": "Burners have many useful applications. You can use them for any device which can be supplied with heat from the bottom, such as $(l:craftsmanship/crucible)Crucibles$(), $(l:cooking/cooking_methods#grill)Grills$(), $(l:cooking/cooking_methods#pot)Pots$(), and $(l:cooking/cooking_methods#top_oven)Ovens$(), as well as any Create mechanical machines that need a heat source."
+            "text": "燃烧器的用途十分广泛。任何可以从底部受热的设备都能用它加热，例如$(l:craftsmanship/crucible)坩埚$()、$(l:cooking/cooking_methods#grill)烤架$()、$(l:cooking/cooking_methods#pot)陶锅$()和$(l:cooking/cooking_methods#top_oven)烤箱$()，以及任何需要热源的机械动力机械装置。"
         },
         {
             "type": "patchouli:multiblock",
@@ -64,7 +64,7 @@
                 }
             },
             "name": "",
-            "text": "$(thing)Gas Burner$() with a crucible",
+            "text": "$(thing)燃气燃烧器$()与坩埚",
             "enable_visualize": false
         },
         {
@@ -140,7 +140,7 @@
                 }
             ],
             "name": "",
-            "text": "$(thing)Gas Burner$() with cooking appliances.",
+            "text": "$(thing)燃气燃烧器$()与烹饪设备。",
             "enable_visualize": false
         },
         {
@@ -220,12 +220,12 @@
                 }
             ],
             "name": "",
-            "text": "$(thing)Gas Burner$() with mechanical machines.",
+            "text": "$(thing)燃气燃烧器$()与机械动力机械。",
             "enable_visualize": false
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "延伸阅读",
             "anchor": "relations",
             "entries": [
                 "tfg:craftsmanship/pottery",

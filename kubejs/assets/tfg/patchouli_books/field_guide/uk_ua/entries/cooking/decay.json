@@ -6,7 +6,7 @@
         {
             "type": "patchouli:text",
             "anchor": "index",
-            "text": "$(li)$(bold)$(l:cooking/decay#decay)Вступ$()\n$(li2)$(l:cooking/decay#calculation)Розрахунок псування$()\n$(li2)$(l:cooking/decay#table)Таблиця модифікаторів$()\n$(li)$(bold)$(l:cooking/decay#vessels)Посудини$()\n$(li)$(bold)$(l:cooking/decay#cooking)Приготування$()\n$(li)$(bold)$(l:cooking/decay#smoking)Копчення$()\n$(li)$(bold)$(l:cooking/decay#salting)Соління$()\n$(li)$(bold)$(l:cooking/decay#vinegar)Маринування$()\n$(li)$(bold)$(l:cooking/decay#drying)Сушіння$()"
+            "text": "$(li)$(bold)$(l:cooking/decay#decay)Вступ$()$(li2)$(l:cooking/decay#calculation)Розрахунок псування$()$(li2)$(l:cooking/decay#table)Таблиця модифікаторів$()$(li)$(bold)$(l:cooking/decay#vessels)Посудини$()$(li)$(bold)$(l:cooking/decay#cooking)Приготування$()$(li)$(bold)$(l:cooking/decay#smoking)Копчення$()$(li)$(bold)$(l:cooking/decay#salting)Соління$()$(li)$(bold)$(l:cooking/decay#vinegar)Маринування$()$(li)$(bold)$(l:cooking/decay#drying)Сушіння$()"
         },
         {
             "type": "patchouli:text",
@@ -179,7 +179,7 @@
         {
             "type": "tfg:heat_recipe",
             "recipe": "tfc:heating/mutton",
-            "text": "Натомість $(l/cooking_methods#firepit)багаття$() або $(l/cooking_methods#grill)гриль$() навіть можуть дати перевагу при використанні! Наприклад, приготування баранини (зображено вище) на $(thing)багатті$() збільшить термін її зберігання приблизно на +42%, а приготування на $(thing)грилі$() надасть їй властивість $(5)$(bold)Смажене на дровах$() з модифікатором 0,8."
+            "text": "Натомість $(l:cooking/cooking_methods#firepit)багаття$() або $(l:cooking/cooking_methods#grill)гриль$() навіть можуть дати перевагу при використанні! Наприклад, приготування баранини (зображено вище) на $(thing)багатті$() збільшить термін її зберігання приблизно на +42%, а приготування на $(thing)грилі$() надасть їй властивість $(5)$(bold)Смажене на дровах$() з модифікатором 0,8."
         },
         {
             "type": "patchouli:text",

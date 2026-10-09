@@ -1,16 +1,16 @@
 {
-    "name": "Bloomery",
+    "name": "锻铁炉",
     "category": "tfg:craftsmanship",
     "icon": "tfc:bloomery",
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "The $(thing)Bloomery$() is a device used to smelt $(thing)Iron Ore$() into $(thing)Iron Blooms$() which can be worked into $(thing)Wrought Iron$(). Some common iron ores are $(item)Hematite$(), $(item)Limonite$(), and $(item)Magnetite$(). These ores melt into $(thing)Cast Iron$() rather than $(thing)Wrought Iron$(). All iron-bearing items melt into Cast Iron. To turn them into usable iron, the bloomery is needed. Any iron item can be used in the bloomery, including iron tools and cast iron ingots!"
+            "text": "$(thing)锻铁炉$()是一种把 $(thing)铁矿石$()熔炼成 $(thing)铁方坯$()的设备，方坯再经过加工就能变成 $(thing)锻铁$()。常见的铁矿石有 $(item)赤铁矿$()、$(item)褐铁矿$()和 $(item)磁铁矿$()。这些矿石熔化后是 $(thing)铸铁$()而不是 $(thing)锻铁$()。所有含铁物品都会熔成铸铁。要把它们变成可用的铁，就需要锻铁炉。任何含铁物品都能放进锻铁炉，包括铁工具和铸铁锭！"
         },
         {
             "type": "patchouli:crafting",
             "recipe": "tfc:crafting/bloomery",
-            "text": "The bloomery is made from 8 $(thing)Bronze Double Plates$(), which is a total of 32 bronze ingots.$(br)The bloomery will also need $(t:#tfc:bloomery_insulation)$(6)22 stone blocks$() such as stone bricks."
+            "text": "锻铁炉由 8 块 $(thing)青铜双层薄板$()制成，总共需要 32 个青铜锭。$(br)锻铁炉还需要 $(t:#tfc:bloomery_insulation)$(6)22 个石质方块$()，例如石砖。"
         },
         {
             "type": "patchouli:multiblock",
@@ -47,13 +47,13 @@
                     "A": "tfc:rock/smooth/dacite"
                 }
             },
-            "name": "Bloomery Structure",
-            "text": "A full size bloomery. The bloomery block will open and close with $(item)$(k:key.use)$().",
+            "name": "锻铁炉结构",
+            "text": "满尺寸的锻铁炉。锻铁炉方块可以用 $(item)$(k:key.use)$()打开和关闭。",
             "enable_visualize": true
         },
         {
             "type": "patchouli:text",
-            "text": "The bloomery can contain up to a maximum of 48 $(thing)Inputs$(), with 16 items per layer of the chimney; 8 charcoal and 8 iron containing items.$(br2)To add items to the bloomery, climb up to the top and throw items inside with $(item)$(k:key.drop)$(). A tower of grey ore should form.$(br2)You can only use $(item)Charcoal$() as fuel for your bloomery."
+            "text": "锻铁炉最多能容纳 48 份 $(thing)投入物品$()，烟囱每层 16 个物品：8 个木炭和 8 个含铁物品。$(br2)要往锻铁炉里加东西，需要爬到顶部，用 $(item)$(k:key.drop)$()把物品丢进去。里面应该会形成一根灰色的矿石柱。$(br2)锻铁炉只能用 $(item)木炭$()作燃料。"
         },
         {
             "type": "patchouli:image",
@@ -65,38 +65,38 @@
         },
         {
             "type": "patchouli:text",
-            "text": "Most iron dust contains 129mB of iron, so unless you are using pure cast iron ingots, we recommend $(item)25 metal ore dusts$() and $(item)22 charcoal$() for a full bloomery. This will incur a loss of 57mB of iron.$(br)After filling the bloomery with a combination of $(thing)Fuel$() and $(thing)Ore$(), light the bloomery doors, and wait $(t:12.5 min)$(6)15 in-game hours$() for the bloomery to smelt. When the bloomery shuts off, it leaves behind a $(thing)Bloom$() block. This contains hot $(thing)Raw Iron Blooms$() which can be obtained by mining the $(thing)Bloom$() repeatedly with a pickaxe."
+            "text": "大多数铁矿粉含 129mB 铁，所以除非你用的是纯铸铁锭，否则满炉推荐使用 $(item)25 份金属矿粉$()和 $(item)22 个木炭$()。这会损失 57mB 的铁。$(br)把 $(thing)燃料$()和 $(thing)矿石$()按比例装进锻铁炉后，点燃锻铁炉门，然后等待 $(t:12.5 分钟)$(6)15 个游戏小时$()让锻铁炉完成熔炼。锻铁炉停炉后会留下一个 $(thing)方坯$()方块，里面包含炽热的 $(thing)生铁方坯$()，用镐反复挖掘 $(thing)方坯$()方块即可取出。"
         },
         {
             "type": "tfg:table",
             "anchor": "ratio_table",
             "strings": [
                 {
-                    "text": "Iron Type",
+                    "text": "铁的类型",
                     "bold": true
                 },
                 {
-                    "text": "Iron",
+                    "text": "铁",
                     "bold": true
                 },
                 {
-                    "text": "Fuel",
+                    "text": "燃料",
                     "bold": true
                 },
                 {
-                    "text": "Slots",
+                    "text": "格数",
                     "bold": true
                 },
                 {
-                    "text": "Blooms",
+                    "text": "方坯",
                     "bold": true
                 },
                 {
-                    "text": "Waste",
+                    "text": "损耗",
                     "bold": true
                 },
                 {
-                    "text": "Cast Iron Ingots"
+                    "text": "铸铁锭"
                 },
                 {
                     "text": "24"
@@ -114,7 +114,7 @@
                     "text": "0mB"
                 },
                 {
-                    "text": "129mB Ore Dust"
+                    "text": "129mB 矿粉"
                 },
                 {
                     "text": "25"
@@ -132,7 +132,7 @@
                     "text": "57mB"
                 },
                 {
-                    "text": "129mB Ore Dust"
+                    "text": "129mB 矿粉"
                 },
                 {
                     "text": "19"
@@ -150,8 +150,8 @@
                     "text": "3mB"
                 }
             ],
-            "text": "Remember that a little iron waste is not worth your time worrying about!",
-            "title": "Bloomery Ratios",
+            "text": "记住，为那一点点铁损耗操心可不值得！",
+            "title": "锻铁炉配比",
             "legend": [],
             "columns": 5,
             "first_column_width": 70,
@@ -187,20 +187,20 @@
         {
             "type": "tfg:anvil_recipe",
             "recipe": "tfc:anvil/refined_iron_bloom",
-            "text": "The $(thing)Raw Iron Bloom$() must be worked in a $(l:craftsmanship/anvils)Anvil$() to make $(thing)Refined Iron Bloom$(). And then that must be worked again into $(thing)Wrought Iron Ingots$().$(br)It is recommended to use $(l:craftsmanship/anvils#helve_hammer)Helve Hammers$() to automate the refining steps."
+            "text": "$(thing)生铁方坯$()必须在 $(l:craftsmanship/anvils)砧$()上加工成 $(thing)精铁方坯$()，然后再加工成 $(thing)锻铁锭$()。$(br)建议使用 $(l:craftsmanship/anvils#helve_hammer)杠杆锤$()来自动化这些精炼步骤。"
         },
         {
             "type": "patchouli:text",
             "anchor": "tips",
-            "text": "$(li)If the bloomery finds contains more items than it can handle it will try to spit them out the front.$(li)To retrieve your items from a bloomery that is not lit, break the bloomery block.$(li)Blooms will only melt into cast iron, not wrought iron. They must be worked!",
-            "title": "Bloomery Tips"
+            "text": "$(li)如果锻铁炉里的物品超出了它能处理的数量，它会试图把它们从前方吐出来。$(li)要取回未点燃的锻铁炉里的物品，把锻铁炉方块破坏掉即可。$(li)方坯只会熔成铸铁，而不是锻铁。必须经过加工！",
+            "title": "锻铁炉提示"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "steam_bloomery",
-            "title": "Steam Bloomery",
+            "title": "蒸汽锻铁炉",
             "item": "tfg:steam_bloomery",
-            "text": "Available with the creation of $(item)Black Steel$() is the $(thing)Steam Bloomery$(). This structure is capable of producing blooms automatically, on top of being faster and more efficent than the traditional bloomery by using high-pressure steam."
+            "text": "做出 $(item)黑钢$()后即可解锁 $(thing)蒸汽锻铁炉$()。这种结构能够自动生产方坯，而且借助高压蒸汽，比传统锻铁炉更快、更高效。"
         },
         {
             "type": "patchouli:multiblock",
@@ -241,13 +241,13 @@
                     "O": "gtceu:steam_output_bus[facing=north]"
                 }
             },
-            "name": "Structure",
-            "text": "A steam bloomery requires item input and item output buses, a steam input hatch, and three Bronze Firebox Casings.",
+            "name": "结构",
+            "text": "蒸汽锻铁炉需要物品输入总线和物品输出总线、一个蒸汽输入仓，以及三个青铜燃烧室。",
             "enable_visualize": true
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "延伸阅读",
             "anchor": "relations",
             "entries": [
                 "tfg:craftsmanship/pottery",

@@ -16,7 +16,7 @@
 			"type": "patchouli:image",
 			"anchor": "hud",
 			"text": "Strzałka w środku wskazuje, czy twoja temperatura wzrasta czy spada.",
-			"title": "The Hotbar HUD",
+			"title": "HUD paska skrótów",
 			"border": false,
 			"images": [
 				"tfg:textures/gui/field_guide/ambiental_hud.png"

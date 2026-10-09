@@ -1,18 +1,18 @@
 {
-    "name": "Metallurgy & Prospecting",
+    "name": "冶金与勘探",
     "category": "tfg:craftsmanship",
     "icon": "tfc:ore/rich_hematite",
     "pages": [
         {
             "type": "patchouli:text",
             "anchor": "index",
-            "text": "$(li)$(bold)$(l:craftsmanship/metallurgy#intro)Surface Metal$()$(li)$(bold)$(l:craftsmanship/metallurgy#extraction)Extracting Metal$()$(li2)$(l:craftsmanship/metallurgy#casting)Casting$()$(li)$(bold)$(l:craftsmanship/metallurgy#alloying)Alloying$()$(li2)$(l:craftsmanship/metallurgy#utility_alloys)Utility Alloys$()$(li)$(bold)$(l:craftsmanship/metallurgy#propick)Prospector's Pick$()$(li2)$(l:craftsmanship/metallurgy#prospector)Digital Prospecting$()"
+            "text": "$(li)$(bold)$(l:craftsmanship/metallurgy#intro)地表金属$()$(li)$(bold)$(l:craftsmanship/metallurgy#extraction)提取金属$()$(li2)$(l:craftsmanship/metallurgy#casting)浇铸$()$(li)$(bold)$(l:craftsmanship/metallurgy#alloying)合金$()$(li2)$(l:craftsmanship/metallurgy#utility_alloys)功能性合金$()$(li)$(bold)$(l:craftsmanship/metallurgy#propick)勘矿镐$()$(li2)$(l:craftsmanship/metallurgy#prospector)数码勘探$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "intro",
-            "title": "Scattered Metal",
-            "text": "In addition to sticks, twigs, and stones on the ground, you may encounter small pieces of ores. These are important, as they are one of the few sources of ore and metal before obtaining a pickaxe. There are three types of these indicators: $(li)Mineral Dust$(li)Gem Buds$(li)Small Ores"
+            "title": "散落金属",
+            "text": "除了地上的树枝、细枝和石块之外，你还可能遇到小块的矿石。它们十分重要，因为在获得镐子之前，它们是为数不多的矿石与金属来源之一。这些指示物有三种：$(li)矿物粉尘$(li)宝石芽$(li)矿粒"
         },
         {
             "type": "patchouli:multiblock",
@@ -33,23 +33,23 @@
                     "C": "tfc:ore/small_native_copper"
                 }
             },
-            "name": "Float Ore",
-            "text": "When broken: dust indicators drop tiny piles of dust, gem buds drop $(t:Unless broken with a Gem Saw!)chipped gems$(), and small ores give, well, small ores.",
+            "name": "地表碎矿",
+            "text": "破坏后：粉尘指示物会掉落一小撮粉尘，宝石芽会掉落$(t:除非用宝石锯破坏！)碎宝石$()，而矿粒掉的自然就是矿粒。",
             "enable_visualize": false
         },
         {
             "type": "patchouli:text",
-            "text": "These indicator pieces can serve two purposes: they can provide a source of metal, and more importantly, they indicate the presence of a larger vein of ore somewhere below them. Be sure to note where indicators are on your map so you may return to excavate the vein later.$(br2)⚠ Be careful when picking up mineral dusts as some of them may be $(l:game_mechanics/hazards)Hazardous$(), like Cobaltite or Galena for example."
+            "text": "这些指示物碎块有两个用途：它们本身可以作为金属来源，更重要的是，它们表明其下方某处存在一条更大的矿脉。务必在地图上记下指示物的位置，以便日后回来开采矿脉。$(br2)⚠ 捡起矿物粉尘时要小心，因为其中一些可能$(l:game_mechanics/hazards)有危险$()，例如方钴矿和方铅矿。"
         },
         {
             "type": "patchouli:text",
             "anchor": "extraction",
-            "text": "Ores yield a specific $(thing)millibucket (mB)$() amount of actual metal which can be extracted through refining, melting, and casting. The amount obtained from an ore depends on the items \"richness\", chemical composition, and refinement.$(br2)Ore richness―from least to most rich―goes small, poor, normal, rich.",
+            "text": "矿石能产出特定$(thing)毫桶（mB）$()的金属，可通过精炼、熔化和浇铸来提取。从一块矿石中能获得多少金属，取决于其“品位”、化学成分和精炼程度。$(br2)矿石品位由低到高依次为：矿粒、贫瘠、普通、富集。",
             "title": "提取"
         },
         {
             "type": "patchouli:text",
-            "text": "Some ores go by names you may be unfamiliar with. For example, if you are looking for copper you shouldn't just look for \"copper ore\". There are many different variates available. To understand what an ore piece will yield you can search its recipes in $(emi), or look at its tooltip.$(br2)For example, searching $(emi) for \"melts into Copper\" will show every source of copper."
+            "text": "有些矿石的名字你可能并不熟悉。举例来说，如果你在找铜，就不能只盯着“铜矿石”。可供选择的矿石种类有很多。想弄清一块矿石能产出什么，可以在 $(emi) 中搜索它的配方，或者查看它的提示文本。$(br2)例如，在 $(emi) 中搜索“熔化为铜”，就能列出所有铜的来源。"
         },
         {
             "type": "patchouli:image",
@@ -60,23 +60,23 @@
             "images": [
                 "tfg:textures/gui/field_guide/prospecting/ore_item.png"
             ],
-            "text": "$(2)◼$() - Chemical formula.$(br)$(4)◼$() - Metal yield when melted.$(br)$(3)◼$() - Melting temperature.",
-            "title": "Understanding Ore",
+            "text": "$(2)◼$() - 化学式。$(br)$(4)◼$() - 熔融后的金属产出。$(br)$(3)◼$() - 熔化温度。",
+            "title": "看懂矿石",
             "border": false
         },
         {
             "type": "patchouli:text",
             "anchor": "casting",
-            "title": "Casting",
-            "text": "To begin casting your first metal you will use a $(l:craftsmanship/pottery#vessel)Small Vessel$(). Place enough meltable ore inside of it to fill your desired $(l:craftsmanship/pottery#mold)Mold$(). For example, to make a saw blade you will need at least 144mB of metal.$(br)You can view the amount of material in the vessel by looking at its tooltip.$(br2)Be aware that a vessel has a max fluid capacity of $(t:21 x 144)$(6)3,024mB$()!"
+            "title": "浇铸",
+            "text": "要浇铸你的第一种金属，你需要用到一个$(l:craftsmanship/pottery#vessel)小缸$()。在里面放入足够多的可熔化矿石，装满你想要的$(l:craftsmanship/pottery#mold)模具$()。例如，要制作一个锯片，你至少需要 144mB 的金属。$(br)查看小缸的提示文本就能知道里面的材料量。$(br2)注意，小缸的最大流体容量为$(t:21 x 144)$(6)3,024mB$()！"
         },
         {
             "type": "patchouli:text",
-            "text": "You can mix and match the types of ore inside a vessel, however all the ore must yield the same fluid metal, or you will create an $(l:craftsmanship/metallurgy#alloying)Alloy$().$(br2)Place your filled vessel into a $(l:craftsmanship/pit_kiln)Pit Kiln$() to melt its contents. Once finished you will have a brief window of time to cast, so keep an eye on your kiln!"
+            "text": "小缸里的矿石种类可以随意混搭，但所有矿石必须熔出同一种液态金属，否则你得到的就是一份$(l:craftsmanship/metallurgy#alloying)合金$()。$(br2)把装好矿石的小缸放进$(l:craftsmanship/pit_kiln)坑窑$()，熔化里面的东西。完成后你只有一小段时间可以浇铸，所以要盯紧你的坑窑！"
         },
         {
             "type": "patchouli:crafting",
-            "text": "Careful, the vessel will be hot! Craft $(thing)Wooden Tongs$() with two sticks and a knife and hold them in your offhand to handle the hot vessel safely.",
+            "text": "小心，小缸会非常烫！用两根木棍和一把刀合成$(thing)木钳$()，拿在副手上，就能安全地搬动滚烫的小缸。",
             "recipe": "tfchotornot:crafting/tongs/wood"
         },
         {
@@ -89,36 +89,36 @@
         },
         {
             "type": "patchouli:text",
-            "text": "With the casting interface open, place your empty fired mold in the center slot. It will fill up as long as the vessel remains liquid. (If the vessel solidifies, it can be reheated in another pit kiln.) Once the mold is full, it can be removed and left to cool. Once cool, the mold and its contents can be extracted by $(item)$(k:key.use)$() the mold, or putting it in the crafting grid."
+            "text": "打开浇铸界面后，把烧制好的空模具放进中央插槽。只要小缸里的金属保持液态，模具就会不断被填满。（如果小缸里的金属凝固了，可以再放进另一个坑窑重新加热。）模具装满后即可取出，静待冷却。冷却后，对着模具$(item)$(k:key.use)$()或把它放进合成格，就能取出模具及其内容物。"
         },
         {
             "type": "patchouli:crafting",
             "recipe": "gtceu:shaped/pickaxe_copper",
-            "text": "You are now able to craft your first pickaxe! Find enough copper to make a pickaxe head, fire a pickaxe mold and melt the ore using a pit kiln, then cast a head. Slap it on a stick, and voilà! You can now dig for $(thing)Ore$()."
+            "text": "现在你可以合成第一把镐子了！找到足够的铜来做镐头，烧制一个镐头模具，用坑窑熔化矿石，然后浇铸出镐头。往木棍上一装——瞧！你现在可以挖掘$(thing)矿石$()了。"
         },
         {
             "type": "patchouli:spotlight",
             "item": "tfc:metal/chisel/copper",
-            "text": "A couple other important metal tools are available for progression as well. The $(l:craftsmanship/chisel)Chisel$() is useful for working with stone blocks for building, and is required for other recipes."
+            "text": "另外还有两件重要的金属工具可以帮助你推进进度。$(l:craftsmanship/chisel)凿子$()很适合加工石方块用于建造，而且其他一些配方也需要它。"
         },
         {
             "type": "patchouli:spotlight",
             "item": "gtceu:copper_saw",
-            "text": "The saw allows you turn wood logs into $(l:game_mechanics/mining#supports)support beams$() and $(thing)lumber$(), which can further be crafted into planks, the crafting bench, barrels, and chests, among other things. It is also useful to make a $(l:logistics/boats#canoe)canoe$()."
+            "text": "锯子可以把原木加工成$(l:game_mechanics/mining#supports)支撑柱$()和$(thing)木料$()，木料还能进一步制成木板、工作台、大桶和箱子等等。制作$(l:logistics/boats#canoe)独木舟$()时也用得上它。"
         },
         {
             "type": "patchouli:text",
             "anchor": "alloying",
-            "title": "Alloying",
-            "text": "$(thing)Alloys$() are a method of mixing two or more metals together, to create a new, stronger metal. During the early game, while copper is a useful metal for creating tools, the next tier of metal is one of three types of $(thing)Bronze$(). They are each slightly different in regard to durability, efficiency, and attack damage. An alloy is made up of component $(thing)metals$() which must each satisfy a specific percentage of the overall whole."
+            "title": "合金",
+            "text": "$(thing)合金$()是将两种或更多金属混合在一起、从而创造出一种更坚固的新金属的方法。游戏前期，铜是制作工具的实用金属，而下一级金属则是三种$(thing)青铜$()之一。它们在耐久、效率和攻击伤害方面各有细微差异。合金由多种$(thing)金属$()成分组成，每种成分都必须占整体的一定比例。"
         },
         {
             "type": "patchouli:text",
-            "text": "One method through which alloys can be made during the early game is through the usage of a $(thing)Small Vessel$(). The process is very similar to $(l:craftsmanship/metallurgy#casting)Casting$(). However, instead of using just a single metal, place enough ore pieces inside the vessel in the correct ratio to form a known alloy mix.$(br2)A vessel's tooltip will also tell you what its contents will alloy into, so you can use it to check your alloying ratios - no external calculator needed!"
+            "text": "前期制作合金的一种方法是使用$(thing)小缸$()。这个过程与$(l:craftsmanship/metallurgy#casting)浇铸$()非常相似。不过，你放的不是单一金属，而是按正确的比例往缸里放入足够多的矿石碎块，以形成一种已知的合金配比。$(br2)小缸的提示文本还会告诉你里面的内容物会合成为什么，因此你可以用它来核对合金比例——不需要外部计算器！"
         },
         {
             "type": "patchouli:text",
-            "text": "You can find alloy ratios by looking at their liquid alloying recipe in $(emi). Alloys will accept a range of values, so percentages do not have to be perfect. For example, an idealized ratio for Bronze is 75% Copper, and 25% Tin, which means that for 144mB of Bronze you will need 108mB of Copper and 36mB of Tin.$(br2)If you can't find Tin, $(thing)Black Bronze$() and $(thing)Bismuth Bronze$() are also options! Tin is not required until steam machines."
+            "text": "你可以在 $(emi) 中查看液态合金配方来找到合金比例。合金接受一定范围内的数值，所以百分比不必分毫不差。例如，青铜的理想比例是 75% 铜和 25% 锡，也就是说制作 144mB 青铜需要 108mB 铜和 36mB 锡。$(br2)如果找不到锡，$(thing)黑铜$()和$(thing)铋铜$()也是选择！在蒸汽机器之前都用不着锡。"
         },
         {
             "type": "patchouli:image",
@@ -129,37 +129,37 @@
             "images": [
                 "tfg:textures/gui/field_guide/prospecting/alloy.png"
             ],
-            "text": "Example alloy recipe for bronze showing 70-80% Copper + 20-30% Tin = Bronze.",
-            "title": "Alloy Recipe",
+            "text": "青铜合金配方示例：70-80% 铜 + 20-30% 锡 = 青铜。",
+            "title": "合金配方",
             "border": false
         },
         {
             "type": "patchouli:spotlight",
             "item": "tag:forge:ingots/brass,tag:forge:ingots/rose_gold,tag:forge:ingots/sterling_silver,tag:forge:ingots/tin_alloy,tag:forge:ingots/red_alloy,tag:forge:ingots/potin,tag:forge:ingots/cobalt_brass,tag:forge:ingots/invar",
             "anchor": "utility_alloys",
-            "text": "Many alloys are not suitable for creating tools but are still necessary for progression. Some of the most important utility alloys for early progression are $(thing)Brass$(), $(thing)Rose Gold$(), $(thing)Sterling Silver$(), $(thing)Tin Alloy$(), and $(thing)Red Alloy$().",
+            "text": "许多合金并不适合制作工具，但对推进进度仍然必不可少。前期最重要的几种功能性合金是$(thing)黄铜$()、$(thing)玫瑰金$()、$(thing)标准纯银$()、$(thing)锡合金$()和$(thing)红合金$()。",
             "title": "功能性合金"
         },
         {
             "type": "patchouli:text",
             "anchor": "propick",
             "title": "勘矿镐",
-            "text": "You remembered where you picked up those indicator ores, right? Finding additional ores may require extensive exploration and mining. You should become very familiar with $(thing)Geology$(). If you need a specific resource, you must find the rock type it spawns in either under your feet or across the world."
+            "text": "你还记得自己是在哪儿捡到那些指示矿石的吗？要找到更多矿石，可能需要大量的探索和挖掘。你应该对$(thing)地质学$()了如指掌。如果你需要某种特定资源，就必须找到生成它的岩石类型——也许就在你的脚下，也许在世界各地。"
         },
         {
             "type": "patchouli:spotlight",
             "item": "tag:tfc:propicks",
-            "title": "Pro-Pick",
+            "title": "勘矿镐",
             "link_recipes": false,
-            "text": "If you're looking for ore veins, and you can't find the vein by guessing, it's time to pull out the $(item)prospector's pick$(). If you are familiar with base prospector's picks in $(thing)TFC$() you may be suprised to learn that they function very differently in $(tfg)."
+            "text": "如果你在找矿脉，而靠猜怎么也找不到，那就该掏出$(item)勘矿镐$()了。如果你熟悉$(thing)TFC$()中原版的勘矿镐，那你可能会惊讶地发现，它们在$(tfg)中的运作方式截然不同。"
         },
         {
             "type": "patchouli:text",
-            "text": "Right-clicking a prospector's pick in $(tfg_short) will cast a search ray in your views' direction. The rays width and depth is dependent on the tier of the pick as noted in its tooltip. Depending on the tier, the prospector's pick can also give you a count of the ore quantities and even display an $(thing)X-Ray$() indicator of the ore vein."
+            "text": "在$(tfg_short)中，右击勘矿镐会沿你的视线方向射出一条搜索射线。射线的宽度和深度取决于镐的等级，详见其提示文本。视等级不同，勘矿镐还能统计矿石的数量，甚至显示矿脉的$(thing)X光$()标记。"
         },
         {
             "type": "patchouli:text",
-            "text": "The prospector's pick can display the following information on use:$(li)In chat, the $(thing)total quantity$() of the ore vein, the $(thing)contents$() of the ore vein, and the $(thing)quantity per ore-type$() of the ore vein.$(li)The $(thing)colored steel$() prospector's picks can also display either a large X-Ray particle in the $(thing)center$() of an ore vein, or $(thing)paricles per ore block$()."
+            "text": "使用勘矿镐时可以显示以下信息：$(li)在聊天栏中显示矿脉的$(thing)总数量$()、矿脉的$(thing)内容物$()，以及矿脉中$(thing)每种矿石的数量$()。$(li)$(thing)彩色钢$()勘矿镐还可以显示矿脉$(thing)中心$()处的大型X光粒子，或者$(thing)每个矿石方块处的粒子$()。"
         },
         {
             "type": "patchouli:image",
@@ -167,7 +167,7 @@
             "texture_width": 1024,
             "height": 1024,
             "texture_height": 1024,
-            "text": "Colored steel pro-picks: The large $(bold)$(#D68400)❗$() is from per-vein style x-ray, and the smaller ones are from per-block style x-ray.",
+            "text": "彩色钢勘矿镐：大型$(bold)$(#D68400)❗$()来自按矿脉样式的X光，较小的粒子则来自按方块样式的X光。",
             "title": "勘探者视角",
             "images": [
                 "tfg:textures/gui/field_guide/prospecting/tfg_prospectors_pick_xray.png"
@@ -177,15 +177,15 @@
         {
             "type": "tfg:anvil_recipe",
             "recipe": "tfc:anvil/copper_propick_head",
-            "text": "A prospector's pick head can be $(l:craftsmanship/anvils#working)smithed$() on an $(l:craftsmanship/anvils)Anvil$() or $(l:craftsmanship/metallurgy#casting)Cast$(), then affixed upon a stick like other tools.$(br2)Note: The majority of the stats and charecteristics of the prospector's picks can be adjusted in your server config file."
+            "text": "勘矿镐头可以$(l:craftsmanship/anvils#working)锻造$()于$(l:craftsmanship/anvils)砧$()之上，也可以$(l:craftsmanship/metallurgy#casting)浇铸$()而成，然后像其他工具一样装到木棍上。$(br2)注意：勘矿镐的大部分属性和特性都可以在服务端配置文件中调整。"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "prospector",
             "item": "gtceu:prospector.lv,gtceu:prospector.hv,gtceu:prospector.luv",
-            "title": "Digital Ore Prospectors",
+            "title": "数码探矿仪",
             "link_recipes": false,
-            "text": "Technology is now! And with it comes new ways to find your ore veins!$(br)$(item)Ore Prospectors$() are $(thing)GregTech's$() solution to finding ore veins and fluid deposits in your world. The size and capabilities of the ore prospectors are determined by the $(#ff1100)voltage tier$()."
+            "text": "科技时代到来了！随之而来的是寻找矿脉的全新方式！$(br)$(item)探矿仪$()是$(thing)格雷科技$()提供的、用于寻找世界中矿脉和流体矿床的方案。探矿仪的规模和能力由$(#ff1100)电压等级$()决定。"
         },
         {
             "type": "patchouli:image",
@@ -197,11 +197,11 @@
                 "tfg:textures/gui/field_guide/prospecting/tfg_luv_ore_prospector.png"
             ],
             "border": true,
-            "text": "An example of what you may see using the $(#e373ff)LuV ore prospector$(). Keep your battery charged!"
+            "text": "这是使用$(#e373ff)LuV探矿仪$()时你可能看到的画面示例。记得给电池充电！"
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "延伸阅读",
             "anchor": "relations",
             "entries": [
                 "tfg:craftsmanship/pottery",

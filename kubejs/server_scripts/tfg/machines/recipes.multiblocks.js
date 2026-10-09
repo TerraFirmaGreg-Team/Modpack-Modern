@@ -415,7 +415,7 @@ function registerTFGMultiblockRecipes(event) {
 		)
 		.inputFluids(Fluid.of('tfg:chlorodifluoromethane', 6000))
 		.itemOutputs('1x tfg:heat_pump')
-		.duration(200)
+		.duration(20*10)
 		.addMaterialInfo(true)
 		.EUt(GTValues.VA[GTValues.LV])
 

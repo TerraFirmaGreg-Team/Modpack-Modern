@@ -292,6 +292,18 @@ function registerTFCMetalsRecipes(event) {
 	event.recipes.tfc.blast_furnace(Fluid.of('tfc:metal/pig_iron', 1), '#tfc:flux', Fluid.of('gtceu:iron', 1))
 		.id('tfc:blast_furnace/pig_iron')
 
+	global.TFC_EQUIPMENT_METALS.forEach((metal, index) => {
+		let tier = 1;
+		if (index > 0) tier++;
+		if (index > 3) tier++;
+		if (index > 4) tier++;
+		if (index > 5) tier++;
+		if (index > 6) tier++;
+		event.remove({id: `tfc:anvil/${metal}_chain`});
+		event.recipes.tfc.anvil(`16x tfc:metal/chain/${metal}`, `#forge:ingots/${metal}`, ['hit_last', 'hit_second_last', 'draw_third_last'])
+			.tier(tier)
+			.id(`tfg:anvil/${metal}_chain`);
+	});
 	//#endregion
 
 	//#region Gravel Deposit Washing

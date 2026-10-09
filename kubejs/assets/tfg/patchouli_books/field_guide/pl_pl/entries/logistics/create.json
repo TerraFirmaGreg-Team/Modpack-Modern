@@ -334,7 +334,7 @@
 		{
 			"type": "tfg:multimultiblock",
 			"enable_visualize": false,
-			"text": "Place a mob on the seat, then $(item)$(k:key.use)$() them to request items which will be deposited in the $(l:logistics/storage#crates)Steel Crate$().",
+			"text": "Umieść stworzenie na siedzeniu, a następnie kliknij je $(item)$(k:key.use)$(), aby zamówić przedmioty, które trafią do $(l:logistics/storage#crates)stalowej skrzyni$().",
 			"name": "Minimalny system",
 			"multiblocks": [
 				{

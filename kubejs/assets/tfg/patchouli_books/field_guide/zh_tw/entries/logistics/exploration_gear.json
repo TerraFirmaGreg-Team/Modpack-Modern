@@ -5,7 +5,7 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "$(li)$(bold)$(l:logistics/exploration_gear#hiking_boots)登山靴$()$(li2)$(l:logistics/exploration_gear#safety_boots)安全靴$()$(li)$(bold)$(l:logistics/exploration_gear#canes)手杖$()$(li)$(bold)$(l:logistics/exploration_gear#snowshoes)雪鞋$()$(li)$(bold)$(l:logistics/exploration_gear#snorkel)呼吸管$()$(li)$(bold)$(l:logistics/exploration_gear#flippers)蛙鞋$()$(li)$(bold)$(l:logistics/exploration_gear#diving_suit)潛水服$()$(li2)$(l:logistics/exploration_gear#lava_diving_suit)熔岩潛水服$()$(li)$(bold)$(l:logistics/exploration_gear#digger_helmet)礦工頭盔$()$(li)$(bold)$(l:logistics/exploration_gear#grappling_hook)抓鉤$()$(li2)$(l:logistics/exploration_gear#harpoon)魚叉$()$(li)$(bold)$(l:logistics/exploration_gear#hang_glider)滑翔翼$()$(li)$(bold)$(l:logistics/exploration_gear#jetpacks)噴射背包$()",
+            "text": "$(li)$(bold)$(l:logistics/exploration_gear#hiking_boots)登山靴$()$(li2)$(l:logistics/exploration_gear#safety_boots)安全靴$()$(li)$(bold)$(l:logistics/exploration_gear#canes)手杖$()$(li)$(bold)$(l:logistics/exploration_gear#snowshoes)雪鞋$()$(li)$(bold)$(l:logistics/exploration_gear#snorkel)呼吸管$()$(li)$(bold)$(l:logistics/exploration_gear#flippers)蛙鞋$()$(li)$(bold)$(l:logistics/exploration_gear#diving_suit)潛水服$()$(li2)$(l:logistics/exploration_gear#lava_diving_suit)熔岩潛水服$()$(li)$(bold)$(l:logistics/exploration_gear#digger_helmet)礦工頭盔$()$(li)$(bold)$(l:logistics/exploration_gear#grappling_hook)抓鉤$()$(li2)$(l:logistics/exploration_gear#harpoon)魚叉$()$(li)$(bold)$(l:logistics/exploration_gear#hang_glider)懸掛式滑翔傘$()$(li)$(bold)$(l:logistics/exploration_gear#jetpacks)噴射背包$()",
             "title": "索引",
             "anchor": "index"
         },
@@ -100,7 +100,7 @@
             "type": "patchouli:spotlight",
             "anchor": "hang_glider",
             "item": "hangglider:hang_glider,hangglider:reinforced_hang_glider",
-            "text": "$(item)滑翔翼$()可以讓你進行長距離的水平移動，非常適合穿越寬廣的開闊地帶。"
+            "text": "$(item)懸掛式滑翔傘$()可以讓你進行長距離的水平移動，非常適合穿越寬廣的開闊地帶。"
         },
         {
             "type": "patchouli:spotlight",

@@ -1,11 +1,11 @@
 {
-    "name": "Crucible",
+    "name": "坩埚",
     "category": "tfg:craftsmanship",
     "icon": "tfc:crucible",
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "A $(thing)Crucible$() is an advanced device used for the creation of $(l:craftsmanship/metallurgy#alloying)Alloys$(). It is a more precise method than using a $(l:craftsmanship/pottery#vessel)Small Vessel$() to make alloys.$(br2)To obtain a crucible, you will first need to obtain some $(l:craftsmanship/pottery#fire_clay)Fire Clay$(), which is a stronger material than clay. This fire clay can then be knapped to shape it into an $()Unfired Crucible$()."
+            "text": "$(thing)坩埚$()是一种用于制作$(l:craftsmanship/metallurgy#alloying)合金$()的高级设备，比用$(l:craftsmanship/pottery#vessel)小缸$()合金更精确。$(br2)要获得坩埚，首先需要弄到一些$(l:craftsmanship/pottery#fire_clay)耐火黏土$()，这是一种比黏土更坚固的材料。随后可以将这种耐火黏土塑形，做出$()未烧制的坩埚$()。"
         },
         {
             "type": "tfg:knapping_recipe",
@@ -14,7 +14,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "After the crucible is knapped, it will need to be $(l:craftsmanship/pottery#vessel)Fired$(), like any piece of pottery.$(br2)In order to use the crucible, it needs a source of heat. The crucible can be heated by any heatable block below, preferably a $(l:craftsmanship/charcoal_forge)Charcoal Forge$().$(br)Importantly, crucibles transfer their heat to items much faster than forges. This can be good or bad. If low-melting-point items like $(item)Tin$() are being troublesome for working, consider sticking to the forge for heating."
+            "text": "坩埚塑形完成后，还需要像其他陶器一样$(l:craftsmanship/pottery#vessel)烧制$()。$(br2)要使用坩埚，需要有热源。坩埚可以被下方任何可加热的方块加热，最好是$(l:craftsmanship/charcoal_forge)木炭炉$()。$(br)需要注意的是，坩埚向物品传递热量的速度比锻炉快得多，这可能是好事也可能是坏事。如果$(item)锡$()这类低熔点物品在加工时麻烦不断，不妨继续用锻炉来加热。"
         },
         {
             "type": "patchouli:multiblock",
@@ -44,7 +44,7 @@
         {
             "type": "patchouli:text",
             "anchor": "advanced_alloying",
-            "text": "Now you are ready to use the crucible. When you interact with it, you will see the $(thing)Crucible Interface$(), shown on the next page. The top region shows the current metal content of the crucible. The first metal shown is what would be produced, if it were to be extracted right now. Other metals shown are the makeup of the current alloy in the crucible.",
+            "text": "现在可以开始使用坩埚了。与它互动时，你会看到$(thing)坩埚界面$()，如下一页所示。顶部区域显示坩埚当前的金属内容。显示的第一种金属就是此刻提取时会得到的产物，其余金属则表示坩埚中当前合金的成分构成。",
             "title": "高级冶金术"
         },
         {
@@ -57,15 +57,15 @@
         },
         {
             "type": "patchouli:text",
-            "text": "The crucible has nine slots where items can be added to be melted, and their liquefied contents will be directly added to the crucible. Molten metal containers such as $(l:craftsmanship/pottery#mold)Molds$() can also be placed here, and they will be drained into the crucible, allowing for precise control over your alloy's content. Holding $(item)$(k:key.sneak)$() while hovering over a draining mold or vessel makes it drain faster.$(br)Molds or other fluid containers can also be placed in the output slot, and will be slowly filled with the contents of the crucible."
+            "text": "坩埚有九个槽位，可以放入待熔化的物品，其液化后的内容物会直接进入坩埚。像$(l:craftsmanship/pottery#mold)模具$()这类盛有熔融金属的容器也可以放在这里，它们会被排入坩埚，让你能精确控制合金的成分。准星悬停在正在排液的模具或小缸上时按住 $(item)$(k:key.sneak)$() 可以加快排液速度。$(br)输出槽里也可以放入模具或其他流体容器，它们会被缓慢注入坩埚中的内容物。"
         },
         {
             "type": "patchouli:text",
-            "text": "The temperature indicator on the left will rise based on external sources of heat, such as a $(l:craftsmanship/charcoal_forge)Charcoal Forge$() below or heat from a $(l:craftsmanship/blast_furnace)Blast Furnace$() above. Metal can be extracted from the crucible as long as it is still molten.$(br2)The crucible will also keep its contents when broken, allowing you to transport the alloy container around if you wish."
+            "text": "左侧的温度指示器会随外部热源升高，例如下方的$(l:craftsmanship/charcoal_forge)木炭炉$()，或上方$(l:craftsmanship/blast_furnace)高炉$()传来的热量。只要金属仍处于熔融状态，就可以从坩埚中取出。$(br2)坩埚被破坏时会保留内容物，你可以随心搬运这份合金容器。"
         },
         {
             "type": "patchouli:text",
-            "text": "You will have successfully alloyed when the text at the top of the crucible says the name of your alloy.$(br)If you accidentally mix the wrong type of metal into your molten alloy, then unfortunately you have lost the whole batch. Even a small amount of foreign metal can ruin an alloy. You may also find yourself running out of room in your crucible before hitting your perfect ratio, and you may worry you have wasted the metal. Luckily, you can sacrifice some product by decanting a bit of metal to make room for more material. An alloy is only permanent when cast!"
+            "text": "当坩埚顶部的文字显示出你的合金名称时，就说明合金成功了。$(br)如果不小心把错误的金属混进了熔融合金，很遗憾，这一整炉就报废了。哪怕混入极少量外来金属也会毁掉一炉合金。你可能还会发现，还没达到理想配比，坩埚的空间就不够了，于是担心浪费了金属。好在你可以倒出一点金属、牺牲一些产物，来腾出空间放入更多原料。合金只有浇铸出来才算定型！"
         },
         {
             "type": "patchouli:image",
@@ -76,32 +76,32 @@
             "images": [
                 "tfg:textures/gui/field_guide/prospecting/crucible_alloying.png"
             ],
-            "text": "$(4)◼$() - Alloyed result.$(br)$(3)◼$() - List of contributing metal fractions.",
+            "text": "$(4)◼$() - 合金产物。$(br)$(3)◼$() - 参与合金的各金属成分列表。",
             "border": false,
-            "title": "Molten Alloy"
+            "title": "熔融合金"
         },
         {
             "type": "patchouli:spotlight",
             "item": "tfcchannelcasting:unfired_channel,tfcchannelcasting:channel,tfcchannelcasting:unfired_mold_table,tfcchannelcasting:mold_table",
-            "title": "Channel Casting",
+            "title": "浇注道浇铸",
             "anchor": "channel_casting",
-            "text": "You can cast from a $(thing)Crucible$() to more than one mold at a time using $(thing)Channels$() and $(thing)Mold Tables$(). Simply connect the $(thing)Mold Tables$() to the $(thing)Crucible$() using $(thing)Channels$() and $(item)$(k:key.use)$() on the $(thing)Channel$() next to the $(thing)Crucible$(). $(item)$(k:key.sneak)-$(k:key.use)$() the $(thing)Mold Table$() with a $(l:craftsmanship/pottery#mold)Mold$() to place it or remove it."
+            "text": "你可以从$(thing)坩埚$()出发，借助$(thing)浇注道$()和$(thing)模具台$()同时向多个模具浇铸。只需将$(thing)模具台$()用$(thing)浇注道$()连接到$(thing)坩埚$()，然后$(item)$(k:key.use)$()$(thing)坩埚$()旁的$(thing)浇注道$()即可。$(item)$(k:key.sneak)-$(k:key.use)$()$(thing)模具台$()即可放置或取下其上的$(l:craftsmanship/pottery#mold)模具$()。"
         },
         {
             "type": "patchouli:multiblock",
             "multiblock_id": "tfcchannelcasting:example",
             "name": "浇注铸造示例",
-            "text": "Channels will evenly distribute molten metal to all connected tables. Tables will not have a chance to break the mold inside.",
+            "text": "浇注道会把熔融金属均匀分配到所有相连的模具台，而且模具台不会让内部的模具受到损坏。",
             "enable_visualize": false
         },
         {
             "type": "patchouli:text",
-            "text": "$(li)Using a $(l:craftsmanship/charcoal_forge#bellows)Bellows$() on a $(thing)Mold Table$() will cool the metal faster.$()$(li)Activating a $(thing)Channel$() with a redstone pulse will also start pouring the metal.$()$(li)$(thing)Mold Tables$() output a comparator signal.$(li)Metal can be directly pumped in from things like fluid pipes or a draining $(l:craftsmanship/blast_furnace)Blast Furnace$().$(li)Hoppers can extract cooled metal items from molds while leaving the mold behind.",
-            "title": "Automation"
+            "text": "$(li)用$(l:craftsmanship/charcoal_forge#bellows)风箱$()吹$(thing)模具台$()可以更快地冷却金属。$()$(li)用红石脉冲激活$(thing)浇注道$()也会开始浇注金属。$()$(li)$(thing)模具台$()会输出比较器信号。$(li)金属可以直接从流体管道或正在排液的$(l:craftsmanship/blast_furnace)高炉$()等设备泵入。$(li)漏斗可以从模具中抽出冷却后的金属物品，同时留下模具。",
+            "title": "自动化"
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "延伸阅读",
             "anchor": "relations",
             "entries": [
                 "tfg:craftsmanship/pit_kiln",

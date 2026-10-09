@@ -16,7 +16,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "$(li)$(thing)大$()物品是能放入$(l:logistics/storage#chests)箱子$()的最大尺寸。$(l:craftsmanship/pit_kiln)坑窯$()可以放四個。$(li)$(thing)非常大$()物品在坑窯中只能單獨放置。$(li)$(thing)巨大$()物品無法放入大多數儲物裝置，也會計入負擔過重。"
+            "text": "$(li)$(thing)大$()物品是能放入$(l:logistics/storage#chests)儲物箱$()的最大尺寸。$(l:craftsmanship/pit_kiln)坑窯$()可以放四個。$(li)$(thing)非常大$()物品在坑窯中只能單獨放置。$(li)$(thing)巨大$()物品無法放入大多數儲物裝置，也會計入負擔過重。"
         },
         {
             "type": "patchouli:text",

@@ -1,16 +1,16 @@
 {
-    "name": "Beneath Fruits",
+    "name": "幽冥之地水果",
     "category": "tfg:beneath",
     "icon": "tfg:textures/item/fruit_trees/magmango_sapling.png",
     "pages": [
         {
             "type": "patchouli:text",
             "anchor": "index",
-            "title": "Index",
-            "text": "$(bold)$(li)$(l:beneath/beneath_wild_fruits#fruit_trees)Fruit Trees$()$(li2)$(l:beneath/beneath_wild_fruits#lavacado)Lavacado$()$(li2)$(l:beneath/beneath_wild_fruits#magmango)Magmango$()$(bold)$(li)$(l:beneath/beneath_wild_fruits#palm_fruit_trees)Palm Fruit Trees$()$(li2)$(l:beneath/beneath_wild_fruits#oil_palm)Oil Palm$()$(li2)$(l:beneath/beneath_wild_fruits#acai)Açaí$()"
+            "title": "目录",
+            "text": "$(bold)$(li)$(l:beneath/beneath_wild_fruits#fruit_trees)果树$()$(li2)$(l:beneath/beneath_wild_fruits#lavacado)熔岩鳄梨$()$(li2)$(l:beneath/beneath_wild_fruits#magmango)岩浆芒果$()$(bold)$(li)$(l:beneath/beneath_wild_fruits#palm_fruit_trees)棕榈果树$()$(li2)$(l:beneath/beneath_wild_fruits#oil_palm)油棕$()$(li2)$(l:beneath/beneath_wild_fruits#acai)巴西莓$()"
         },
         {
-            "title": "Introduction",
+            "title": "简介",
             "anchor": "into",
             "type": "patchouli:text",
             "text": "$(l:beneath)幽冥之地$()拥有自己独特的野生水果品种，它们已经适应了地下的极端环境。这些野生水果的栽培方式与主世界的普通$(l:the_world/wild_fruits)野生水果$()完全相同。"
@@ -35,7 +35,7 @@
                     "text": "4月"
                 },
                 {
-                    "text": "May"
+                    "text": "5月"
                 },
                 {
                     "text": "6月"
@@ -59,7 +59,7 @@
                     "text": "12月"
                 },
                 {
-                    "text": "Lavacado"
+                    "text": "熔岩鳄梨"
                 },
                 {
                     "fill": "0x6ab553"
@@ -98,7 +98,7 @@
                     "fill": "0x6ab553"
                 },
                 {
-                    "text": "Magmango"
+                    "text": "岩浆芒果"
                 },
                 {
                     "fill": "0x6ab553"
@@ -172,8 +172,8 @@
         {
             "type": "patchouli:text",
             "anchor": "lavacado",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 8 - 80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 20 - 100 %$(br2)Lavacado trees grow in the months of December through April, start flowering in May and June, and bear fruit in July.",
-            "title": "Lavacado"
+            "text": "$(bold)$(l:the_world/climate#temperature)温度$()：8 - 80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)湿度$()：20 - 100 %$(br2)熔岩鳄梨树在 12 月至 4 月间生长，5 月和 6 月开始开花，7 月结果。",
+            "title": "熔岩鳄梨"
         },
         {
             "type": "tfg:multimultiblock",
@@ -237,8 +237,8 @@
         {
             "type": "patchouli:text",
             "anchor": "magmango",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 8 - 80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 30 - 100 %$(br2)Magmango trees grow in the months of October through February, start flowering in March and April, and bear fruit in May.",
-            "title": "Magmango"
+            "text": "$(bold)$(l:the_world/climate#temperature)温度$()：8 - 80 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)湿度$()：30 - 100 %$(br2)岩浆芒果树在 10 月至 2 月间生长，3 月和 4 月开始开花，5 月结果。",
+            "title": "岩浆芒果"
         },
         {
             "type": "tfg:multimultiblock",
@@ -307,61 +307,43 @@
                     "text": ""
                 },
                 {
-                    "text": "Jan"
+                    "text": "1月"
                 },
                 {
-                    "text": "Feb"
+                    "text": "2月"
                 },
                 {
-                    "text": "Mar"
+                    "text": "3月"
                 },
                 {
-                    "text": "Apr"
+                    "text": "4月"
                 },
                 {
-                    "text": "May"
+                    "text": "5月"
                 },
                 {
-                    "text": "Jun"
+                    "text": "6月"
                 },
                 {
-                    "text": "Jul"
+                    "text": "7月"
                 },
                 {
-                    "text": "Aug"
+                    "text": "8月"
                 },
                 {
-                    "text": "Sep"
+                    "text": "9月"
                 },
                 {
-                    "text": "Oct"
+                    "text": "10月"
                 },
                 {
-                    "text": "Nov"
+                    "text": "11月"
                 },
                 {
-                    "text": "Dec"
+                    "text": "12月"
                 },
                 {
-                    "text": "Oil Palm"
-                },
-                {
-                    "fill": "0xa217ff"
-                },
-                {
-                    "fill": "0xa8986a"
-                },
-                {
-                    "fill": "0xa8986a"
-                },
-                {
-                    "fill": "0xa217ff"
-                },
-                {
-                    "fill": "0xa217ff"
-                },
-                {
-                    "fill": "0xa217ff"
+                    "text": "油棕"
                 },
                 {
                     "fill": "0xa217ff"
@@ -373,6 +355,24 @@
                     "fill": "0xa8986a"
                 },
                 {
+                    "fill": "0xa217ff"
+                },
+                {
+                    "fill": "0xa217ff"
+                },
+                {
+                    "fill": "0xa217ff"
+                },
+                {
+                    "fill": "0xa217ff"
+                },
+                {
+                    "fill": "0xa8986a"
+                },
+                {
+                    "fill": "0xa8986a"
+                },
+                {
                     "fill": "0xa8986a"
                 },
                 {
@@ -382,7 +382,7 @@
                     "fill": "0xa217ff"
                 },
                 {
-                    "text": "Açaí"
+                    "text": "巴西莓"
                 },
                 {
                     "fill": "0xa217ff"
@@ -421,15 +421,15 @@
                     "fill": "0xa8986a"
                 }
             ],
-            "text": "The fruiting calendar for palm fruit trees.",
-            "title": "Palm Fruit Trees",
+            "text": "棕榈果树的结果月历。",
+            "title": "棕榈果树",
             "legend": [
                 {
-                    "text": "Dormant",
+                    "text": "休眠",
                     "color": "0xa8986a"
                 },
                 {
-                    "text": "Fruiting",
+                    "text": "结果",
                     "color": "0xa217ff"
                 }
             ],
@@ -448,12 +448,12 @@
         {
             "type": "patchouli:text",
             "anchor": "oil_palm",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 19 - 62 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 10 - 100 %$(br2)Oil Palm trees are harvested for their fruits which can be processed into Palm Oil and a source of burlap fiber. Oil palm clusters grow in 4 stages and yield 3-6 items when harvested.",
-            "title": "Oil Palm Tree"
+            "text": "$(bold)$(l:the_world/climate#temperature)温度$()：19 - 62 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)湿度$()：10 - 100 %$(br2)采收油棕树可以获得果实，果实能加工成棕榈油，油棕也是粗麻纤维的来源。油棕果串分 4 个阶段生长，采收时可获得 3-6 个物品。",
+            "title": "油棕树"
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "Oil palm trees can be found in $(l:beneath/beneath#salt_caves)Salt Caves$() and $(l:beneath/beneath#tar_pools)Tar Pools$() biomes between Y=50 and Y=190",
+            "text": "油棕树可以在 Y=50 到 Y=190 之间的$(l:beneath/beneath#salt_caves)盐窟$()和$(l:beneath/beneath#tar_pools)焦油池$()生物群系中找到",
             "multiblocks": [
                 {
                     "pattern": [
@@ -1076,12 +1076,12 @@
         {
             "type": "patchouli:text",
             "anchor": "acai",
-            "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 24 - 70 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)Hydration$(): 10 - 100 %$(br2)Açaí tree clusters grow in 5 stages and yield 4-8 fruits when harvested.",
-            "title": "Açaí Tree"
+            "text": "$(bold)$(l:the_world/climate#temperature)温度$()：24 - 70 °C$(br)$(bold)$(l:agriculture/growing_crops#hydration)湿度$()：10 - 100 %$(br2)巴西莓树丛分 5 个阶段生长，采收时可获得 4-8 个果实。",
+            "title": "巴西莓树"
         },
         {
             "type": "tfg:multimultiblock",
-            "text": "Açaí trees can be found in $(l:beneath/beneath#salt_caves)Salt Caves$() and $(l:beneath/beneath#tar_pools)Tar Pools$() biomes between Y=50 and Y=190",
+            "text": "巴西莓树可以在 Y=50 到 Y=190 之间的$(l:beneath/beneath#salt_caves)盐窟$()和$(l:beneath/beneath#tar_pools)焦油池$()生物群系中找到",
             "multiblocks": [
                 {
                     "pattern": [
@@ -1827,7 +1827,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "延伸阅读",
             "anchor": "relations",
             "entries": [
                 "tfg:the_world/climate",

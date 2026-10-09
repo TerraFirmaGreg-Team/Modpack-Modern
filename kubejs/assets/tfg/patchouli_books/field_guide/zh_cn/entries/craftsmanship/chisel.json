@@ -1,11 +1,11 @@
 {
-    "name": "Chisels",
+    "name": "凿子",
     "category": "tfg:craftsmanship",
     "icon": "tfc:metal/chisel/wrought_iron",
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "Chisels are a tool for creating decorative forms of other blocks, including slabs and stairs. In order to get started, you will need a $(thing)Chisel$() and any type of $(thing)Hammer$(). Chisels must be cast in molds or forged on an $(l:craftsmanship/anvils)Anvil$(). In order to start chiseling, hold the chisel in your main hand and a hammer in your offhand, and target a block in the world."
+            "text": "凿子是一种能把其他方块加工成装饰形态的工具，例如台阶和楼梯。开始之前，你需要一把$(thing)凿子$()和任意一种$(thing)锤子$()。凿子必须在模具中浇铸，或在$(l:craftsmanship/anvils)砧$()上锻造。开始凿制时，主手拿凿子，副手拿锤子，然后对准世界中的一个方块。"
         },
         {
             "type": "patchouli:text",
@@ -22,7 +22,7 @@
                 "tfc:textures/gui/book/tutorial/chisel_stair.png",
                 "tfc:textures/gui/book/tutorial/chisel_slab.png"
             ],
-            "text": "$(bold)Tutorial Slideshow:$() The three chisel modes usable on a $(thing)Raw Limestone$() block.",
+            "text": "$(bold)教学演示：$()在$(thing)天然石灰岩$()方块上可用的三种凿子模式。",
             "border": true
         },
         {
@@ -32,11 +32,11 @@
         },
         {
             "type": "patchouli:text",
-            "text": "Be careful! Chiseling in a mineshaft is not safe. Each time you chisel, there is a chance of $(l:game_mechanics/mining#supports)Collapse$()."
+            "text": "小心！在矿道中凿制并不安全。每次凿制都有可能引发$(l:game_mechanics/mining#supports)塌方$()。"
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "延伸阅读",
             "anchor": "relations",
             "entries": [
                 "tfg:the_world/geology",

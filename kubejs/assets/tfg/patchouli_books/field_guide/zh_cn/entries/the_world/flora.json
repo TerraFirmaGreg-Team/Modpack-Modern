@@ -1,25 +1,25 @@
 {
-    "name": "Earth Flora",
+    "name": "地球植物",
     "category": "tfg:the_world",
     "icon": "tfc:plant/goldenrod",
     "pages": [
         {
             "type": "patchouli:text",
             "anchor": "index",
-            "text": "$(li)$(bold)$(l:the_world/flora#standard_plants)Standard Plant Types$()$(li)$(bold)$(l:the_world/flora#aquatic_plants)Aquatic Plant Types$()$(li)$(bold)$(l:the_world/flora#medicinal_plants)Medicinal Plants$()$(li)$(bold)$(l:the_world/flora#spices)Spices$()$(li2)$(l:the_world/flora#basil)Basil$()$(li2)$(l:the_world/flora#bay)Bay Laural$()$(li2)$(l:the_world/flora#cardamom)Cardamom$()$(li2)$(l:the_world/flora#cilantro)Cilantro$()$(li2)$(l:the_world/flora#cumin)Cumin$()$(li2)$(l:the_world/flora#oregano)Oregano$()$(li2)$(l:the_world/flora#pimento)Pimento$()$(li2)$(l:the_world/flora#vanilla)Vanilla$()$(li)$(bold)$(l:the_world/flora#seed_ball)Seed Ball$()"
+            "text": "$(li)$(bold)$(l:the_world/flora#standard_plants)普通植物类型$()$(li)$(bold)$(l:the_world/flora#aquatic_plants)水生植物类型$()$(li)$(bold)$(l:the_world/flora#medicinal_plants)药用植物$()$(li)$(bold)$(l:the_world/flora#spices)香料$()$(li2)$(l:the_world/flora#basil)罗勒$()$(li2)$(l:the_world/flora#bay)月桂$()$(li2)$(l:the_world/flora#cardamom)豆蔻$()$(li2)$(l:the_world/flora#cilantro)香菜$()$(li2)$(l:the_world/flora#cumin)孜然$()$(li2)$(l:the_world/flora#oregano)牛至$()$(li2)$(l:the_world/flora#pimento)多香果$()$(li2)$(l:the_world/flora#vanilla)香草$()$(li)$(bold)$(l:the_world/flora#seed_ball)种子球$()"
         },
         {
             "anchor": "intro",
             "type": "patchouli:spotlight",
-            "title": "Intro to Earth Flora",
+            "title": "地球植物简介",
             "item": {
                 "tag": "tfc:plants"
             },
-            "text": "Earth is an incredibly diverse planet when it comes to flora. Unlike in vanilla $(thing)Minecraft$()--Plants in $(tfg) spawn based on local $(l:the_world/climate#climate)Climate Conditions$()."
+            "text": "就植物而言，地球是一个多样性极其丰富的星球。与原版$(thing)Minecraft$()不同，$(tfg)中的植物会根据当地的$(l:the_world/climate#climate)气候条件$()生成。"
         },
         {
             "type": "patchouli:text",
-            "text": "Plants may be difficult to find during some $(l:the_world/climate#seasons)Seasons$() as they go through cycles of flowering and laying dormant, or changing color as the local temperature changes.$(br2)Colorful flowers can typically be crushed in a $(l:craftsmanship/quern)Quern$() for $(thing)Dye$(). While some plants can be used for making $(l:the_world/flora#medicinal_plants)medicine$() or $(l:the_world/flora#spices)meals$()."
+            "text": "在某些$(l:the_world/climate#seasons)季节$()里可能很难找到植物，因为它们会经历开花与休眠的循环，或随当地温度变化而改变颜色。$(br2)色彩缤纷的花朵通常可以在$(l:craftsmanship/quern)手推磨$()中磨成$(thing)染料$()。还有一些植物可以用来制作$(l:the_world/flora#medicinal_plants)药物$()或$(l:the_world/flora#spices)餐点$()。"
         },
         {
             "type": "patchouli:multiblock",
@@ -36,7 +36,7 @@
                     "X": "tfc:plant/anthurium"
                 }
             },
-            "name": "Standard",
+            "name": "普通植物",
             "anchor": "standard_plants",
             "text": "普通植物就像小花。它们会生长在草地、泥土和农田上。",
             "enable_visualize": false
@@ -56,7 +56,7 @@
                     "X": "tfc:plant/sagebrush"
                 }
             },
-            "name": "Dry",
+            "name": "耐旱植物",
             "text": "耐旱植物与普通植物一样，但它们可以在沙子上生长。这些植物一般只会生长在降雨量少的地区。",
             "enable_visualize": false
         },
@@ -233,8 +233,8 @@
         {
             "type": "patchouli:text",
             "anchor": "aquatic_plants",
-            "text": "Aquatic plants are restricted to either spawn in fresh or salty water. Otherwise, they grow and act much like the plants you see on the surface. Some water plants can be cooked for food.",
-            "title": "Aquatic Plants"
+            "text": "水生植物只会生成在淡水或咸水中。除此之外，它们的生长和习性与你在地表看到的植物大致相同。有些水生植物可以煮熟后食用。",
+            "title": "水生植物"
         },
         {
             "type": "patchouli:multiblock",
@@ -372,23 +372,23 @@
             "item": {
                 "tag": "tfg:medicinal_ingredients/plants"
             },
-            "title": "Medicinal Plants",
-            "text": "Many plants in $(tfg) hold medicinal value and can be used for creating phytotherapeutic medicine. You can combine these ingredients in a mixing bowl with wax, binders, and spring water to make pills. Or more advanced medications."
+            "title": "药用植物",
+            "text": "$(tfg)中的许多植物具有药用价值，可用于制作植物疗法药物。你可以在搅拌碗中把这些原料与蜡、黏合剂和温泉水混合，制成药丸，或更高级的药物。"
         },
         {
-            "title": "Spices",
+            "title": "香料",
             "type": "patchouli:spotlight",
             "item": {
                 "tag": "tfg:foods/spice_plants"
             },
             "anchor": "spices",
-            "text": "With $(thing)Firmalife$(), there are a number of small plants you can collect and grow on your own, which have cooking properties. They can all be found in the wild, and once harvested, may be cultivated in a $(l:agriculture/greenhouse)Greenhouse$(), in which they consume 20 points of N, P, and K."
+            "text": "有了$(thing)Firmalife$()，你可以采集并自行种植许多具有烹饪用途的小型植物。它们都可以在野外找到，收获后可以在$(l:agriculture/greenhouse)温室$()中栽培，它们会消耗20点的氮、磷、钾。"
         },
         {
             "type": "tfg:table",
             "strings": [
                 {
-                    "text": "Spice",
+                    "text": "香料",
                     "bold": true
                 },
                 {
@@ -400,7 +400,7 @@
                     "bold": true
                 },
                 {
-                    "text": "Basil"
+                    "text": "罗勒"
                 },
                 {
                     "text": "12 - 25"
@@ -409,7 +409,7 @@
                     "text": "300 - 500"
                 },
                 {
-                    "text": "Bay Laurel"
+                    "text": "月桂"
                 },
                 {
                     "text": "8 - 14"
@@ -418,7 +418,7 @@
                     "text": "25 - 225"
                 },
                 {
-                    "text": "Cardamom"
+                    "text": "豆蔻"
                 },
                 {
                     "text": "18 - 30"
@@ -427,7 +427,7 @@
                     "text": "350 - 500"
                 },
                 {
-                    "text": "Cilantro"
+                    "text": "香菜"
                 },
                 {
                     "text": "5 - 15"
@@ -436,7 +436,7 @@
                     "text": "0 - 150"
                 },
                 {
-                    "text": "Cumin"
+                    "text": "孜然"
                 },
                 {
                     "text": "6 - 20"
@@ -445,7 +445,7 @@
                     "text": "50 - 250"
                 },
                 {
-                    "text": "Oregano"
+                    "text": "牛至"
                 },
                 {
                     "text": "5 - 13"
@@ -454,7 +454,7 @@
                     "text": "50 - 150"
                 },
                 {
-                    "text": "Pimento"
+                    "text": "多香果"
                 },
                 {
                     "text": "15 - 30"
@@ -463,7 +463,7 @@
                     "text": "200 - 450"
                 },
                 {
-                    "text": "Vanilla"
+                    "text": "香草"
                 },
                 {
                     "text": "18 - 30"
@@ -473,7 +473,7 @@
                 }
             ],
             "text": "",
-            "title": "Wild Spice Ranges",
+            "title": "野生香料分布范围",
             "legend": [],
             "columns": 2,
             "first_column_width": 80,
@@ -502,7 +502,7 @@
                     "X": "firmalife:plant/basil[stage=1]"
                 }
             },
-            "name": "Basil",
+            "name": "罗勒",
             "anchor": "basil",
             "text": "$(thing)野生罗勒$()生长在温度12-25°C、降雨量300-500mm的区域。",
             "enable_visualize": false
@@ -522,7 +522,7 @@
                     "X": "firmalife:plant/bay_laurel[stage=1]"
                 }
             },
-            "name": "Bay Laurel",
+            "name": "月桂",
             "anchor": "bay",
             "text": "$(thing)野生月桂$()生长在温度8-14°C、降雨量25-225mm的区域。",
             "enable_visualize": false
@@ -542,7 +542,7 @@
                     "X": "firmalife:plant/cardamom[stage=1]"
                 }
             },
-            "name": "Cardamom",
+            "name": "豆蔻",
             "anchor": "cardamom",
             "text": "$(thing)野生豆蔻$()生长在温度18-30°C、降雨量350-500mm的区域。",
             "enable_visualize": false
@@ -562,7 +562,7 @@
                     "X": "firmalife:plant/cilantro[stage=1]"
                 }
             },
-            "name": "Cilantro",
+            "name": "香菜",
             "anchor": "cilantro",
             "text": "$(thing)野生香菜$()生长在温度5-15°C、降雨量0-150mm的区域。",
             "enable_visualize": false
@@ -582,7 +582,7 @@
                     "X": "firmalife:plant/cumin[stage=1]"
                 }
             },
-            "name": "Cumin",
+            "name": "孜然",
             "anchor": "cumin",
             "text": "$(thing)野生孜然$()生长在温度6-20°C、降雨量50-250mm的区域。",
             "enable_visualize": false
@@ -602,7 +602,7 @@
                     "X": "firmalife:plant/oregano[stage=1]"
                 }
             },
-            "name": "Oregano",
+            "name": "牛至",
             "anchor": "oregano",
             "text": "$(thing)野生牛至$()生长在温度5-13°C、降雨量50-150mm的区域。",
             "enable_visualize": false
@@ -622,7 +622,7 @@
                     "X": "firmalife:plant/pimento[stage=1]"
                 }
             },
-            "name": "Pimento",
+            "name": "多香果",
             "anchor": "pimento",
             "text": "$(thing)野生多香果$()生长在温度15-30°C、降雨量200-450mm的区域。",
             "enable_visualize": false
@@ -642,7 +642,7 @@
                     "X": "firmalife:plant/vanilla[stage=1]"
                 }
             },
-            "name": "Vanilla",
+            "name": "香草",
             "anchor": "vanilla",
             "text": "$(thing)野生香草$()生长在温度18-30°C、降雨量200-500mm的区域。",
             "enable_visualize": false
@@ -668,7 +668,7 @@
                     "X": "firmalife:plant/butterfly_grass"
                 }
             },
-            "name": "Butterfly Grass",
+            "name": "蝴蝶草",
             "anchor": "butterfly_grass",
             "text": "一株蝴蝶草。",
             "enable_visualize": false
@@ -679,7 +679,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "延伸阅读",
             "anchor": "relations",
             "entries": [
                 "tfg:the_world/wild_fruits",

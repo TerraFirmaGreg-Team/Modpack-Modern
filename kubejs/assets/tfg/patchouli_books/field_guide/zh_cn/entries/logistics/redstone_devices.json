@@ -1,49 +1,49 @@
 {
-	"name": "Redstone Devices",
+	"name": "红石装置",
 	"category": "tfg:logistics",
 	"icon": "minecraft:comparator",
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "$(li)$(bold)$(l:logistics/redstone_devices#clock)Precision Clock$()$(li)$(bold)$(l:logistics/redstone_devices#thermometer)Thermometer$()$(li)$(bold)$(l:logistics/redstone_devices#anemometer)Anemometer$()$(li)$(bold)$(l:logistics/redstone_devices#vane)Weather Vane$()$(li)$(bold)$(l:logistics/redstone_devices#morered)Other Devices$()$(li2)$(l:logistics/redstone_devices#more_comparators)More Comparators$()$(li2)$(l:logistics/redstone_devices#pulse_timer)Pulse Timer$()$(li2)$(l:logistics/redstone_devices#pulse_generator)Sequenced Pulse Generator$()$(li2)$(l:logistics/redstone_devices#analog_lever)Analog Lever$()$(li)$(bold)$(l:logistics/redstone_devices#threshold_switch)Threshold Switch$()$(li)$(bold)$(l:logistics/redstone_devices#smart_observer)Smart Observer$()$(li)$(bold)$(l:logistics/redstone_devices#link)Wireless Redstone$()$(li)$(bold)$(l:logistics/redstone_devices#cover)Machine Covers$()"
+			"text": "$(li)$(bold)$(l:logistics/redstone_devices#clock)精密时钟$()$(li)$(bold)$(l:logistics/redstone_devices#thermometer)温度计$()$(li)$(bold)$(l:logistics/redstone_devices#anemometer)风速计$()$(li)$(bold)$(l:logistics/redstone_devices#vane)风向标$()$(li)$(bold)$(l:logistics/redstone_devices#morered)其他装置$()$(li2)$(l:logistics/redstone_devices#more_comparators)更多比较器$()$(li2)$(l:logistics/redstone_devices#pulse_timer)脉冲计时器$()$(li2)$(l:logistics/redstone_devices#pulse_generator)可编程脉冲生成器$()$(li2)$(l:logistics/redstone_devices#analog_lever)模拟拉杆$()$(li)$(bold)$(l:logistics/redstone_devices#threshold_switch)阈值开关$()$(li)$(bold)$(l:logistics/redstone_devices#smart_observer)智能侦测器$()$(li)$(bold)$(l:logistics/redstone_devices#link)无线红石$()$(li)$(bold)$(l:logistics/redstone_devices#cover)机器覆盖板$()"
 		},
 		{
 			"type": "patchouli:image",
 			"images": [
 				"tfg:textures/gui/field_guide/redstone_devices.png"
 			],
-			"text": "Once you advance far enough in your world, you may want to measure certain conditions, such as the wind speed or the time of the day.",
+			"text": "当你在世界中发展到足够深入时，可能会想测量某些环境状况，比如风速或一天中的时间。",
 			"border": true
 		},
 		{
 			"type": "patchouli:crafting",
 			"anchor": "clock",
 			"recipe": "tfg:shaped/calendar_clock",
-			"text": "The first is the $(thing)Precision Clock$(). The Clock detects the hour, or, when toggled with $(item)$(k:key.use)$(), the month."
+			"text": "第一个是$(thing)精密时钟$()。时钟可以检测小时；用 $(item)$(k:key.use)$() 切换后，还能检测月份。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "When in hour mode, the clock will output a strong analog signal where signal 0 means midnight or noon, and signal 11 means 11:00 or 23:00.$(br2)When in month mode, the clock will output a strong analog signal where signal 0 means January, and signal 11 means December.$(br2)You do not need a comparator to read the Clock's signal strength."
+			"text": "小时模式下，时钟会输出强模拟信号：信号 0 表示午夜或正午，信号 11 表示 11:00 或 23:00。$(br2)月份模式下，时钟会输出强模拟信号：信号 0 表示一月，信号 11 表示十二月。$(br2)读取时钟的信号强度不需要比较器。"
 		},
 		{
 			"type": "patchouli:crafting",
 			"anchor": "thermometer",
 			"recipe": "tfg:shaped/thermometer",
-			"text": "Next we have the $(thing)Thermometer$(), which detects the ambient temperature, or the temperature of the device it is placed onto."
+			"text": "接下来是$(thing)温度计$()，它可以检测环境温度，或检测其贴附的设备的温度。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "When reading ambient temperature, the Thermometer will output a strong analog signal where signal 0 means -40°C, and signal 15 means 40°C.$(br2)When reading device temperature, the Thermometer will output a weak analog signal where signal 0 means no heat, and signal 15 means Brilliant White.$(br2)You do not need a comparator to read the Thermometer's signal strength."
+			"text": "读取环境温度时，温度计会输出强模拟信号：信号 0 表示 -40°C，信号 15 表示 40°C。$(br2)读取设备温度时，温度计会输出弱模拟信号：信号 0 表示无热量，信号 15 表示炽白。$(br2)读取温度计的信号强度不需要比较器。"
 		},
 		{
 			"type": "tfg:heat_recipe",
 			"recipe": "tfg:heating/metal/cinnabar_dust",
-			"text": "$(item)Mercury$() can be extracted from $(item)Cinnabar$().$(br2)If you're having trouble getting the Mercury into a vial, try using a $(l:craftsmanship/pottery#vessel)Vessel$() to transfer it into a $(l:craftsmanship/barrels)Barrel$(), and then $(item)$(k:key.use)$() the Vial on the barrel."
+			"text": "$(item)汞$()可以从$(item)朱砂$()中提取。$(br2)如果你很难把汞装进移液管，可以试试用$(l:craftsmanship/pottery#vessel)小缸$()把它转移进$(l:craftsmanship/barrels)大桶$()，再手持移液管对大桶按 $(item)$(k:key.use)$()。"
 		},
 		{
 			"type": "tfg:glassworking_recipe",
 			"recipe": "tfg:glassworking/glass_vial",
-			"text": "The glass vial is also able to carry around variable amounts of fluids like a $(item)Wooden Bucket$(), and can safely hold $(thing)Acids$()."
+			"text": "玻璃移液管还能像$(item)木桶$()一样携带不定量的流体，并且可以安全地盛装$(thing)酸$()。"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -53,7 +53,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "The $(thing)Anemometer$() detects the wind speed. It outputs a strong analog signal where signal 0 means 0kmh, and signal 15 means 115 kmh.$(br2)You do not need a comparator to read the Anemometer's signal strength."
+			"text": "$(thing)风速计$()用于检测风速。它会输出强模拟信号：信号 0 表示 0kmh，信号 15 表示 115 kmh。$(br2)读取风速计的信号强度不需要比较器。"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -64,68 +64,68 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "The $(thing)Weather Vane$() detects the wind direction. It outputs a strong analog signal where signal 0 means North, and signal 8 means south. The signal increases as the wind direction proceeds clockwise.$(br2)You do not need a comparator to read the Weather Vane's signal strength."
+			"text": "$(thing)风向标$()用于检测风向。它会输出强模拟信号：信号 0 表示北，信号 8 表示南。风向顺时针旋转时信号随之增大。$(br2)读取风向标的信号强度不需要比较器。"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"anchor": "morered",
 			"item": "morered:red_alloy_wire,morered:bundled_network_cable",
-			"title": "More Redstone",
-			"text": "Want to do more with redstone? Check out what the $(item)More Red$() mod has to offer, such as a wire that attaches to walls and ceilings and doesn't lose signal strength.$(br2)Type $(6)@morered$() into $(emi) to see them all."
+			"title": "更多红石",
+			"text": "想在红石上玩出更多花样？来看看$(item)More Red$()模组提供了什么，比如可以贴在墙上和天花板上、且不会衰减信号强度的导线。$(br2)把 $(6)@morered$() 输入 $(emi) 即可查看全部内容。"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "tag:morered:redstone_devices",
 			"anchor": "more_comparators",
-			"title": "Gates and Latches",
-			"text": "There are many other kinds of blocks that can control redstone. Most of them can be crafted by $(thing)stonecutting$() a $(item)Comparator$(), and can then be stonecut themselves, so you won't have to make lots of different devices to experiment."
+			"title": "门电路与锁存器",
+			"text": "还有许多其他能控制红石的方块。它们大多可以用$(thing)切石$()加工$(item)比较器$()来制作，而且切出的成品还能继续切石，所以你不必为了试验而制造一堆不同的装置。"
 		},
 		{
 			"type": "patchouli:crafting",
 			"recipe": "tfg:shaped/pulse_timer",
 			"anchor": "pulse_timer",
-			"text": "A $(item)Pulse Timer$() can provide redstone pulses at arbitrary intervals, such as dropping items into a $(l:craftsmanship/blast_furnace)Blast Furnace$()."
+			"text": "$(item)脉冲计时器$()能以任意间隔提供红石脉冲，比如用来往$(l:craftsmanship/blast_furnace)高炉$()里投放物品。"
 		},
 		{
 			"type": "patchouli:crafting",
 			"recipe": "create_connected:crafting/kinetics/sequenced_pulse_generator",
 			"anchor": "pulse_generator",
-			"text": "The $(item)Sequenced Pulse Generator$() can be configured to send a combination of redstone signals at varying time intervals."
+			"text": "$(item)可编程脉冲生成器$()可以配置成以不同的时间间隔发送组合红石信号。"
 		},
 		{
 			"type": "patchouli:crafting",
 			"recipe": "tfg:create/shaped/analog_lever",
 			"anchor": "analog_lever",
-			"text": "Need to provide a constant signal strength? The $(item)Analog Lever$() is perfect for just that."
+			"text": "需要提供恒定的信号强度？$(item)模拟拉杆$()正是为此而生。"
 		},
 		{
 			"type": "patchouli:crafting",
 			"recipe": "create:crafting/logistics/stockpile_switch",
 			"anchor": "threshold_switch",
-			"text": "A $(item)Threshold Switch$() outputs a redstone signal based on how full a container is. It works with both items and fluids."
+			"text": "$(item)阈值开关$()会根据容器的满溢程度输出红石信号，物品和流体都适用。"
 		},
 		{
 			"type": "patchouli:crafting",
 			"recipe": "create:crafting/logistics/content_observer",
 			"anchor": "smart_observer",
-			"text": "The $(item)Smart Observer$() is a more advanced version of a regular $(item)Observer$(). It can be filtered and can also detect changes in fluid levels."
+			"text": "$(item)智能侦测器$()是普通$(item)侦测器$()的进阶版。它可以设置过滤，还能检测液位变化。"
 		},
 		{
 			"type": "patchouli:crafting",
 			"recipe": "tfg:create/shaped/redstone_link",
 			"anchor": "link",
-			"text": "The $(item)Redstone Link$() can transfer redstone signals wirelessly."
+			"text": "$(item)无线红石信号终端$()可以无线传输红石信号。"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"anchor": "cover",
-			"title": "Machine Covers",
+			"title": "机器覆盖板",
 			"item": "gtceu:machine_controller_cover",
-			"text": "$(thing)GregTech Covers$() can be placed directly onto your machines, and a lot of them will interact with redstone in some way. For example, the $(item)Machine Controller Cover$() lets you turn a machine off when it has a redstone signal."
+			"text": "$(thing)GregTech 覆盖板$()可以直接放在机器上，其中许多都会以某种方式与红石互动。例如$(item)机器控制覆盖板$()可以让你在机器收到红石信号时将其关闭。"
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Further Reading",
+			"title": "延伸阅读",
 			"anchor": "relations",
 			"entries": [
 				"tfg:logistics/storage",

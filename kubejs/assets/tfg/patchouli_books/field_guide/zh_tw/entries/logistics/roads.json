@@ -5,7 +5,7 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "$(li)$(bold)$(l:logistics/roads#intro)道路建造$()$(li)$(bold)$(l:logistics/roads#mattock)鶴嘴鋤$()$(li)$(bold)$(l:logistics/roads#base_course)基層$()$(li)$(bold)$(l:logistics/roads#pavers)鋪面材料$()$(li2)$(l:logistics/roads#hoggin)混合砂礫$()$(li2)$(l:logistics/roads#gravel_fill)礫石填料$()$(li2)$(l:logistics/roads#stone)鵝卵石、方石與石板$()$(li2)$(l:logistics/roads#concrete)混凝土$()$(li2)$(l:logistics/roads#asphalt)瀝青$()$(li)$(bold)$(l:logistics/roads#paving_cart)鋪路車$()",
+            "text": "$(li)$(bold)$(l:logistics/roads#intro)道路建造$()$(li)$(bold)$(l:logistics/roads#mattock)鶴嘴鋤$()$(li)$(bold)$(l:logistics/roads#base_course)基層$()$(li)$(bold)$(l:logistics/roads#pavers)鋪面材料$()$(li2)$(l:logistics/roads#hoggin)混合碎石$()$(li2)$(l:logistics/roads#gravel_fill)礫石填料$()$(li2)$(l:logistics/roads#stone)鵝卵石、方石與石板$()$(li2)$(l:logistics/roads#concrete)混凝土$()$(li2)$(l:logistics/roads#asphalt)瀝青$()$(li)$(bold)$(l:logistics/roads#paving_cart)鋪路車$()",
             "title": "索引",
             "anchor": "index"
         },
@@ -34,7 +34,7 @@
             "item": "tag:rnr:road_materials",
             "title": "鋪面材料",
             "anchor": "pavers",
-            "text": "建造道路的最後一步是鋪設路面。各種物品，包括$(l:logistics/roads#stone)磚塊$()、$(l:logistics/roads#hoggin)混合砂礫$()和$(l:logistics/roads#stone)碎石$()，都可以按下$(item)$(k:key.use)$()鋪在基層上，形成可行走的道路。不同的物品會形成不同種類的道路，不同種類的道路會提供不同程度的行走速度加成。"
+            "text": "建造道路的最後一步是鋪設路面。各種物品，包括$(l:logistics/roads#stone)磚塊$()、$(l:logistics/roads#hoggin)混合碎石$()和$(l:logistics/roads#stone)碎石$()，都可以按下$(item)$(k:key.use)$()鋪在基層上，形成可行走的道路。不同的物品會形成不同種類的道路，不同種類的道路會提供不同程度的行走速度加成。"
         },
         {
             "type": "tfg:multimultiblock",
@@ -98,8 +98,8 @@
             "type": "patchouli:spotlight",
             "anchor": "hoggin",
             "item": "rnr:hoggin_mix",
-            "title": "混合砂礫",
-            "text": "$(item)混合砂礫$()是由黏土、礫石和沙子混合而成的可壓實地面材料。將它鋪在基層上可以做出簡單的小路，提供小幅的$(thing)$(bold)10% 加成$()行走速度，並讓$(item)畜力把手$()以 16RPM 運轉。"
+            "title": "混合碎石",
+            "text": "$(item)混合碎石$()是由黏土、礫石和沙子混合而成的可壓實地面材料。將它鋪在基層上可以做出簡單的小路，提供小幅的$(thing)$(bold)10% 加成$()行走速度，並讓$(item)畜力把手$()以 16RPM 運轉。"
         },
         {
             "type": "patchouli:multiblock",
@@ -248,7 +248,7 @@
         },
         {
             "type": "patchouli:image",
-            "title": "混凝土道路",
+            "title": "混凝土路",
             "images": [
                 "rnr:textures/gui/book/concrete_road.png"
             ],
@@ -263,7 +263,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "取得已混合的$(thing)濕混凝土$()就可以用桶舀取並倒在$(thing)基層方塊$()上，它會自動向相鄰方塊蔓延。混凝土需要一天時間硬化，此期间要防止生物踩踏尚未凝固的混凝土，否則會形成不平整的表面導致速度加成失效。$(thing)鶴嘴鋤$()可以抹平腳印。"
+            "text": "取得已混合的$(thing)濕混凝土$()就可以用桶舀取並倒在$(thing)基層方塊$()上，它會自動向相鄰方塊蔓延。混凝土需要一天時間硬化，此期間要防止生物踩踏尚未凝固的混凝土，否則會形成不平整的表面導致速度加成失效。$(thing)鶴嘴鋤$()可以抹平腳印。"
         },
         {
             "type": "patchouli:image",
@@ -287,11 +287,11 @@
         },
         {
             "type": "patchouli:text",
-            "text": "將$(thing)磚塊$()、$(thing)石板$()或$(thing)平滑石方塊$()壓入正在乾燥的混凝土中，即可做出具建築感的$(thing)紋理飾面$()。這些方塊也能作為防止龜裂的$(thing)伸縮縫$()。混凝土完全乾燥後，可以用$(l:craftsmanship/chisel)鑿子$()做出半磚和階梯。"
+            "text": "將$(thing)磚塊$()、$(thing)石板$()或$(thing)平滑石頭方塊$()壓入正在乾燥的混凝土中，即可做出具建築感的$(thing)紋理飾面$()。這些方塊也能作為防止龜裂的$(thing)伸縮縫$()。混凝土完全乾燥後，可以用$(l:craftsmanship/chisel)鑿子$()做出半磚和階梯。"
         },
         {
             "type": "patchouli:image",
-            "title": "仿石磚路",
+            "title": "仿石方石路",
             "images": [
                 "rnr:textures/gui/book/faux_sett.png"
             ],

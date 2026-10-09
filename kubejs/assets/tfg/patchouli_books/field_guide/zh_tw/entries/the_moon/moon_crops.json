@@ -7,7 +7,7 @@
 			"type": "patchouli:text",
 			"anchor": "chorus_fruit",
 			"title": "歌萊果",
-			"text": "$(bold)Biomes$(): $(l:the_moon/moon_biomes#forest)Chorus Forest$(), $(l:the_moon/moon_biomes#thicket)Chorus Thicket$()$(br2)Chorus Plants grow in tall formations. Breaking the stem will yield nothing, while breaking the Flowers at the top will yield Chorus Fruits or a Flower.$(br)Chorus Fruits can be eaten for $(thing)Fruit$(), cooked and eaten as $(item)Popped Chorus Fruit$(), or can be distilled into $(thing)Nitrogen$().$(br)"
+			"text": "$(bold)生態域$()：$(l:the_moon/moon_biomes#forest)歌萊森林$()、$(l:the_moon/moon_biomes#thicket)歌萊叢林$()$(br2)歌萊枝會長成高大的形態。破壞莖不會掉落任何東西，而破壞頂端的花則會掉落歌萊果或花。$(br)歌萊果食用可補充$(thing)水果$()營養，也可以煮成$(item)爆開的歌萊果$()食用，或蒸餾出$(thing)氮$()。$(br)"
 		},
 		{
 			"type": "patchouli:multiblock",
