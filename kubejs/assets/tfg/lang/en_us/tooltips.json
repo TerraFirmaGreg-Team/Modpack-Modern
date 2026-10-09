@@ -134,7 +134,8 @@
     "tfg.tooltip.machine.oxygen_distributor_2": "§7Use an airlock to avoid air vortexes. Does not affect temperature.",
     "tfg.tooltip.machine.heat_pump_1": "§7Sets the temperature of a large mostly-sealed area to 15°C.",
     "tfg.tooltip.machine.heat_pump_2": "§7The bigger the area, the more power it needs. Is lenient on what counts as 'sealed'.",
-    "tfg.tooltip.machine.heat_pump_3": "§7The side with the controller should face indoors, while the opposite should face outdoors.",
+    "tfg.tooltip.machine.heat_pump_3": "§7The side with the controller should face indoors, while the Exhaust should face outdoors and be filled with a Turibne Rotor.",
+    "tfg.tooltip.machine.heat_pump_vent": "Requires a Turbine Rotor, only durability has an impact. Rotors wear very slowly.",
     "tfg.tooltip.machine.higgs_emitter_1": "§7Changes the gravity of a large sealed area to Earth-like.",
     "tfg.tooltip.machine.higgs_emitter_2": "§7The bigger the area, the more power it needs.",
 
