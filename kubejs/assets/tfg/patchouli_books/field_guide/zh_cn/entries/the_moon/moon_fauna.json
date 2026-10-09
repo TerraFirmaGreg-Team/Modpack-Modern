@@ -1,27 +1,27 @@
 {
-	"name": "Moon Fauna",
+	"name": "月球动物",
 	"category": "tfg:the_moon",
 	"icon": "species:textures/item/birt_egg.png",
 	"pages": [
 		{
 			"type": "patchouli:text",
 			"title": "外星动物",
-			"text": "Space is home to many other kinds of animals than those you'd find on Earth. A few animals are hostile and will attack the player, but most are passive. Only a few of them are $(l:agriculture/animal_husbandry)domesticatable$().$(br)Animals you find on other worlds can be divided into two categories: $(item)hot$() and $(item)cold$(). Animals can only survive on planets that either have a similar climate to where they came from, or on $(thing)temperate$() planets like Earth."
+			"text": "太空中的动物种类远比地球上丰富。少数动物具有敌意，会主动袭击玩家，但大多数都是被动的。其中只有少数是$(l:agriculture/animal_husbandry)可驯养$()的。$(br)你在其他星球上见到的动物可以分为两类：$(item)喜热$()和$(item)耐寒$()。动物只能在气候与故乡相似、或像地球这样的$(thing)温带$()星球上生存。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Space animals do not require an oxygenated environment, but it will make the area count as \"temperate\" for their survival. For example, if you bring a cold-dwelling animal (like a Moon Rabbit) to a hot planet (like Venus), it will catch on fire, unless it's inside an oxygenated environment.$(br)This makes Earth the ideal place to build a zoo, if you'd like.$(br)You can transport animals between planets using AE2's Spatial Storage system."
+			"text": "太空动物并不需要含氧环境，但含氧环境会让该区域在它们的生存判定中被视为「温带」。例如，如果你把一只寒带动物（比如月兔）带到炎热的星球（比如金星），它就会着火，除非它待在含氧环境中。$(br)这样的话，如果你想建个动物园，地球就是最理想的地方。$(br)你可以使用 AE2 的空间储存系统在星球之间运输动物。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(li)$(bold)Domesticatable$()$(li2)$(l:the_moon/moon_fauna#moon_rabbit)Moon Rabbit$()$(li2)$(l:the_moon/moon_fauna#birt)Birt$()$(li2)$(l:the_moon/moon_fauna#certus_jellie)Certus Jellie$()$(li)$(bold)Wild$()$(li2)$(l:the_moon/moon_fauna#limpet)Limpet$()$(li2)$(l:the_moon/moon_fauna#star_crawler)Star Crawler$()$(li2)$(l:the_moon/moon_fauna#endermen)Endermen$()$(li2)$(l:the_moon/moon_fauna#shulker)Shulker$()"
+			"text": "$(li)$(bold)可驯养$()$(li2)$(l:the_moon/moon_fauna#moon_rabbit)月兔$()$(li2)$(l:the_moon/moon_fauna#birt)哔特$()$(li2)$(l:the_moon/moon_fauna#certus_jellie)赛特斯黏液灵$()$(li)$(bold)野生$()$(li2)$(l:the_moon/moon_fauna#limpet)帽贝$()$(li2)$(l:the_moon/moon_fauna#star_crawler)星际爬行者$()$(li2)$(l:the_moon/moon_fauna#endermen)末影人$()$(li2)$(l:the_moon/moon_fauna#shulker)潜影贝$()"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "tfg:moon_rabbit{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16,MoonRabbitType:5}",
 			"scale": 1.3,
 			"offset": -0.3,
-			"name": "Moon Rabbit",
+			"name": "月兔",
 			"anchor": "moon_rabbit",
 			"text": "除了它们的颜色，$(thing)月兔$()与地球兔子有相同的属性。它们也吃紫颂果。"
 		},
@@ -30,22 +30,22 @@
 			"entity": "species:birt",
 			"anchor": "birt",
 			"scale": 0.9,
-			"name": "Birt",
+			"name": "哔特",
 			"text": "$(thing)哔特$()是一种鸟类？它们在巢中产卵，除非被攻击否则是中立的，可以食用。它们的蛋可以投掷来使目标眩晕。"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "jellies:certus",
 			"scale": 0.6,
-			"name": "Certus Jellie",
+			"name": "赛特斯黏液灵",
 			"anchor": "certus_jellie",
-			"text": "$(thing)Certus$() $(l:agriculture/jellies)Jellies$() spawn in Moon's $(item)Asurine$() biomes. They produce $(thing)Large Certus Quartz Buds$()."
+			"text": "$(thing)赛特斯$()$(l:agriculture/jellies)黏液灵$()生成在月球的$(item)皓蓝石$()生物群系中。它们会长出$(thing)大型赛特斯石英芽$()。"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "species:limpet",
 			"scale": 0.8,
-			"name": "Limpet",
+			"name": "帽贝",
 			"anchor": "limpet",
 			"text": "$(thing)矿壳贝$()是一种壳上有矿石的蜗牛。你可以用任何采矿工具获得矿石。它们是友好的，可以食用。"
 		},
@@ -53,7 +53,7 @@
 			"type": "patchouli:entity",
 			"entity": "ad_astra:star_crawler",
 			"scale": 0.4,
-			"name": "Star Crawler",
+			"name": "星际爬行者",
 			"anchor": "star_crawler",
 			"text": "$(thing)星际爬行者$()是一种海星。它们是敌对的，可以食用。"
 		},
@@ -61,27 +61,27 @@
 			"type": "patchouli:entity",
 			"entity": "endermanoverhaul:windswept_hills_enderman",
 			"scale": 1,
-			"name": "Endermen",
+			"name": "末影人",
 			"anchor": "endermen",
-			"text": "The Moon is home to more species of $(thing)Endermen$(). Some are neutral, but a few are hostile, so watch out!"
+			"text": "月球上也栖息着更多种类的$(thing)末影人$()。有些是中立的，但有少数具有敌意，小心！"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "endermanoverhaul:end_islands_enderman",
 			"scale": 1,
-			"text": "The most dangerous $(thing)Endermen$() are found in the $(l:the_moon/moon_biomes#forest)Chorus$() biomes."
+			"text": "最危险的$(thing)末影人$()出现在$(l:the_moon/moon_biomes#forest)紫颂$()生物群系中。"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "minecraft:shulker{Color:7}",
 			"anchor": "shulker",
-			"title": "Shulker",
+			"title": "潜影贝",
 			"scale": 0.7,
-			"text": "$(thing)Shulkers$() can be found around large meteorites and abandoned moon bases. Maybe they are guarding something...?"
+			"text": "$(thing)潜影贝$()可以在大型陨石和废弃月球基地附近找到。也许它们在守着什么……？"
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Further Reading",
+			"title": "延伸阅读",
 			"anchor": "relations",
 			"entries": [
 				"tfg:the_moon/the_moon",

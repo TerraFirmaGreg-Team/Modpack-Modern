@@ -91,7 +91,7 @@
   "ftbchunks.hard_team_force_limit.tooltip": "Twardy limit ładowanych chunków drużyny, niezależny od liczby członków i trybu obliczania limitu drużyny.\nDomyślna wartość 0 oznacza brak bezwzględnego limitu.",
   "ftbchunks.label.hide": "Ukryj",
   "ftbchunks.label.show": "Pokaż",
-  "ftbchunks.location_mode_override": "Nadpisz widoczność lokalizacji drużyn",
+  "ftbchunks.location_mode_override": "Nadpisz \"widoczność lokalizacji\" drużyny ",
   "ftbchunks.location_mode_override.tooltip": "Jeśli prawda, \"Widoczność lokalizacji\" jest ignorowana, a wszyscy gracze mogą widzieć się nawzajem gdziekolwiek są na mapie",
   "ftbchunks.long_range_tracker_interval": "Interwał aktualizacji śledzenia graczy na dużą odległość",
   "ftbchunks.map_mode.blocks": "Bloki",

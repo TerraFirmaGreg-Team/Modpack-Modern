@@ -10,11 +10,11 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(li)$(bold)被動$()$(li2)$(l:beneath/beneath_fauna#axolotl)六角恐龍$()$(li2)$(l:beneath/beneath_fauna#frog)青蛙$()$(li2)$(l:beneath/beneath_fauna#mammutilation)殘屍猛獁$()$(li2)$(l:beneath/beneath_fauna#red_elk)紅麋鹿$()$(li2)$(l:beneath/beneath_fauna#zombie_horse)殭屍馬$()$(li)$(bold)$(l:agriculture/jellies)果凍怪$()$(li2)$(l:beneath/beneath_fauna#ice_jellie)冰$()$(li2)$(l:beneath/beneath_fauna#plant_jellie)植物$()$(li2)$(l:beneath/beneath_fauna#glowberry_jellie)發光莓$()$(li2)$(l:beneath/beneath_fauna#spring_jellie)溫泉$()$(li2)$(l:beneath/beneath_fauna#lava_jellie)熔岩$()$(li2)$(l:beneath/beneath_fauna#biotite_jellie)黑雲母$()$(li2)$(l:beneath/beneath_fauna#latex_jellie)乳膠$()$(br)$(o)(下頁續……)$()"
+			"text": "$(li)$(bold)被動$()$(li2)$(l:beneath/beneath_fauna#axolotl)六角恐龍$()$(li2)$(l:beneath/beneath_fauna#frog)青蛙$()$(li2)$(l:beneath/beneath_fauna#mammutilation)孤行獸$()$(li2)$(l:beneath/beneath_fauna#red_elk)紅麋鹿$()$(li2)$(l:beneath/beneath_fauna#zombie_horse)殭屍馬$()$(li)$(bold)$(l:agriculture/jellies)果凍怪$()$(li2)$(l:beneath/beneath_fauna#ice_jellie)冰$()$(li2)$(l:beneath/beneath_fauna#plant_jellie)植物$()$(li2)$(l:beneath/beneath_fauna#glowberry_jellie)發光莓$()$(li2)$(l:beneath/beneath_fauna#spring_jellie)溫泉$()$(li2)$(l:beneath/beneath_fauna#lava_jellie)熔岩$()$(li2)$(l:beneath/beneath_fauna#biotite_jellie)黑雲母$()$(li2)$(l:beneath/beneath_fauna#latex_jellie)乳膠$()$(br)$(o)(下頁續……)$()"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(li)$(bold)敵對$()$(li2)$(l:beneath/beneath_fauna#crocodile)鱷魚$()$(li2)$(l:beneath/beneath_fauna#piglin)豬布林$()$(li2)$(l:beneath/beneath_fauna#phantom)夜魅$()$(li2)$(l:beneath/beneath_fauna#kaolin_klayze)高嶺土黏怪$()$(li2)$(l:beneath/beneath_fauna#graphite_glayze)石墨釉怪$()$(li2)$(l:beneath/beneath_fauna#cliff_hanger)懸崖鉤怪$()$(li2)$(l:beneath/beneath_fauna#leaf_hanger)葉鉤怪$()$(li2)$(l:beneath/beneath_fauna#endermen)終界使者$()$(li2)$(l:beneath/beneath_fauna#spectre)幽魂$()$(li2)$(l:beneath/beneath_fauna#wicked)邪靈$()$(li2)$(l:beneath/beneath_fauna#ghoul)食屍鬼$()$(li2)$(l:beneath/beneath_fauna#bewereager)狂野狼人$()"
+			"text": "$(li)$(bold)敵對$()$(li2)$(l:beneath/beneath_fauna#crocodile)鱷魚$()$(li2)$(l:beneath/beneath_fauna#piglin)豬布林$()$(li2)$(l:beneath/beneath_fauna#phantom)夜魅$()$(li2)$(l:beneath/beneath_fauna#kaolin_klayze)高嶺土靈$()$(li2)$(l:beneath/beneath_fauna#graphite_glayze)石墨黏土靈$()$(li2)$(l:beneath/beneath_fauna#cliff_hanger)崖懸獵者$()$(li2)$(l:beneath/beneath_fauna#leaf_hanger)葉懸獵者$()$(li2)$(l:beneath/beneath_fauna#endermen)終界使者$()$(li2)$(l:beneath/beneath_fauna#spectre)幽魂$()$(li2)$(l:beneath/beneath_fauna#wicked)邪火$()$(li2)$(l:beneath/beneath_fauna#ghoul)食屍鬼$()$(li2)$(l:beneath/beneath_fauna#bewereager)飢渴獸$()"
 		},
 		{
 			"type": "patchouli:entity",
@@ -36,9 +36,9 @@
 			"type": "patchouli:entity",
 			"entity": "species:mammutilation",
 			"scale": 0.5,
-			"name": "殘屍猛獁",
+			"name": "孤行獸",
 			"anchor": "mammutilation",
-			"text": "$(thing)殘屍猛獁$()是不死的猛獁象。你可以結束牠們的痛苦，換取一些$(item)羊毛$()。"
+			"text": "$(thing)孤行獸$()是不死的猛獁象。你可以結束牠們的痛苦，換取一些$(item)羊毛$()。"
 		},
 		{
 			"type": "patchouli:entity",
@@ -140,33 +140,33 @@
 			"type": "patchouli:entity",
 			"entity": "primitive_creatures:tfc",
 			"scale": 0.8,
-			"name": "高嶺土黏怪",
+			"name": "高嶺土靈",
 			"anchor": "kaolin_klayze",
-			"text": "$(thing)高嶺土黏怪$()可以在$(thing)繁生岩穴$()生態域找到，牠們守護著$(item)高嶺土$()！"
+			"text": "$(thing)高嶺土靈$()可以在$(thing)繁生岩穴$()生態域找到，牠們守護著$(item)高嶺土$()！"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "primitive_creatures:golem_2",
 			"scale": 1,
-			"name": "石墨釉怪",
+			"name": "石墨黏土靈",
 			"anchor": "graphite_glayze",
-			"text": "$(thing)石墨釉怪$()可以在下層找到。小心別被牠們撞進熔岩裡！"
+			"text": "$(thing)石墨黏土靈$()可以在下層找到。小心別被牠們撞進熔岩裡！"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "species:cliff_hanger",
 			"scale": 0.7,
-			"name": "懸崖鉤怪",
+			"name": "崖懸獵者",
 			"anchor": "cliff_hanger",
-			"text": "$(thing)懸崖鉤怪$()懸掛在各處的天花板上，會鉤住從下方經過的玩家。用遠程攻擊打牠們，就能讓牠們鬆手！"
+			"text": "$(thing)崖懸獵者$()懸掛在各處的天花板上，會鉤住從下方經過的玩家。用遠程攻擊打牠們，就能讓牠們鬆手！"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "species:leaf_hanger",
 			"scale": 0.7,
-			"name": "葉鉤怪",
+			"name": "葉懸獵者",
 			"anchor": "leaf_hanger",
-			"text": "$(thing)葉鉤怪$()潛伏在鹽水池中，會鉤住走進陷阱的玩家。攻擊牠們就能讓牠們鬆手！"
+			"text": "$(thing)葉懸獵者$()潛伏在鹽水池中，會鉤住走進陷阱的玩家。攻擊牠們就能讓牠們鬆手！"
 		},
 		{
 			"type": "patchouli:entity",
@@ -188,9 +188,9 @@
 			"type": "patchouli:entity",
 			"entity": "species:wicked",
 			"scale": 0.9,
-			"name": "邪靈",
+			"name": "邪火",
 			"anchor": "wicked",
-			"text": "$(thing)邪靈$()是一種能附身在附近生物身上、為其提供增益效果的幽靈！如果附近沒有生物，牠們會使用遠程攻擊。牠們會掉落蠟。"
+			"text": "$(thing)邪火$()是一種能附身在附近生物身上、為其提供增益效果的幽靈！如果附近沒有生物，牠們會使用遠程攻擊。牠們會掉落蠟。"
 		},
 		{
 			"type": "patchouli:entity",
@@ -204,9 +204,9 @@
 			"type": "patchouli:entity",
 			"entity": "species:bewereager",
 			"scale": 0.8,
-			"name": "狂野狼人",
+			"name": "飢渴獸",
 			"anchor": "bewereager",
-			"text": "$(thing)狂野狼人$()是一種具攻擊性的怪物，還會跳到你面前！牠會強化自己，並以短暫的連續攻擊發動攻勢。"
+			"text": "$(thing)飢渴獸$()是一種具攻擊性的怪物，還會跳到你面前！牠會強化自己，並以短暫的連續攻擊發動攻勢。"
 		},
 		{
 			"type": "patchouli:relations",

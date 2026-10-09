@@ -5,14 +5,14 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"title": "Index",
+			"title": "目录",
 			"anchor": "index",
-			"text": "$(li)$(bold)$(l:cooking/drinks#alcohol)Alcohol$()$(li2)$(l:cooking/drinks#aged_alcohol)Aged Alcohol$()$(li2)$(l:cooking/drinks#vintage_alcohol)Vintage Alcohol$()$(li2)$(l:cooking/drinks#table)Alcohol Effects Table$()$(li2)$(l:cooking/drinks#wine)Wine$()$(li)$(bold)$(l:cooking/drinks#milk)Milk$()$(li)$(bold)$(l:cooking/drinks#spring_water)Spring Water$()$(li)$(bold)$(l:cooking/drinks#sea_water)Sea Water$()$(li)$(bold)$(l:cooking/drinks#muddy_water)Muddy Water$()$(li)$(bold)$(l:cooking/drinks#juice)Fruit Juice$()$(li)$(bold)$(l:cooking/drinks#yogurt)Yogurt$()$(li)$(bold)$(l:cooking/drinks#smoothie)Fruit Smoothie$()$(li)$(bold)$(l:cooking/drinks#ice_slush)Ice Slush$()"
+			"text": "$(li)$(bold)$(l:cooking/drinks#alcohol)酒类$()$(li2)$(l:cooking/drinks#aged_alcohol)陈酿酒$()$(li2)$(l:cooking/drinks#vintage_alcohol)陈年酒$()$(li2)$(l:cooking/drinks#table)酒类效果表$()$(li2)$(l:cooking/drinks#wine)葡萄酒$()$(li)$(bold)$(l:cooking/drinks#milk)牛奶$()$(li)$(bold)$(l:cooking/drinks#spring_water)温泉水$()$(li)$(bold)$(l:cooking/drinks#sea_water)海水$()$(li)$(bold)$(l:cooking/drinks#muddy_water)泥水$()$(li)$(bold)$(l:cooking/drinks#juice)果汁$()$(li)$(bold)$(l:cooking/drinks#yogurt)酸奶$()$(li)$(bold)$(l:cooking/drinks#smoothie)水果奶昔$()$(li)$(bold)$(l:cooking/drinks#ice_slush)冰沙$()"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"title": "酒",
-			"text": "$(thing)Base Alcohols$() provide no buff to the player. They can be produced by leaving various fruits, flours, or other ingredients in a $(l:craftsmanship/barrels)Barrel$() with water. As a bonus, when drunk, any alcohol will affect your speech in chat!",
+			"text": "$(thing)基础酒类$()不会给玩家任何增益效果。把各种水果、面粉或其他原料和水一起放进$(l:craftsmanship/barrels)大桶$()即可酿制。另外，喝下任何酒后，你在聊天中的发言都会受到影响！",
 			"item": "tfc:bucket/beer,tfc:bucket/cider,tfc:bucket/rum,tfc:bucket/sake,tfc:bucket/vodka,tfc:bucket/whiskey,tfc:bucket/corn_whiskey,tfc:bucket/rye_whiskey,firmalife:bucket/mead",
 			"anchor": "alcohol"
 		},
@@ -26,7 +26,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"title": "陈年酒",
-			"text": "$(thing)Vintage Alcohols$() are prepared by further ageing alcohol in sealed barrels for another 3 months. These alcohols provide a stronger effect and a longer duration.",
+			"text": "$(thing)陈年酒$()是把酒在密封的大桶中再陈化 3 个月制成的。这些酒的效果更强，持续时间更长。",
 			"item": "tfg:vintage_beer_bucket,tfg:vintage_cider_bucket,tfg:vintage_rum_bucket,tfg:vintage_sake_bucket,tfg:vintage_vodka_bucket,tfg:vintage_whiskey_bucket,tfg:vintage_corn_whiskey_bucket,tfg:vintage_rye_whiskey_bucket,tfg:vintage_mead_bucket",
 			"anchor": "vintage_alcohol"
 		},
@@ -35,100 +35,100 @@
 			"anchor": "table",
 			"strings": [
 				{
-					"text": "Alcohol",
+					"text": "酒类",
 					"bold": true
 				},
 				{
-					"text": "Aged",
+					"text": "陈酿",
 					"bold": true
 				},
 				{
-					"text": "Vintage",
+					"text": "陈年",
 					"bold": true
 				},
 				{
-					"text": "Beer"
+					"text": "啤酒"
 				},
 				{
-					"text": "Absorption II (5:20)"
+					"text": "伤害吸收 II (5:20)"
 				},
 				{
-					"text": "Absorption III (8:00)"
+					"text": "伤害吸收 III (8:00)"
 				},
 				{
-					"text": "Cider"
+					"text": "苹果酒"
 				},
 				{
-					"text": "Speed (5:20)"
+					"text": "速度 (5:20)"
 				},
 				{
-					"text": "Speed II (8:00)"
+					"text": "速度 II (8:00)"
 				},
 				{
-					"text": "Rum"
+					"text": "朗姆酒"
 				},
 				{
-					"text": "Speed II (2:40)"
+					"text": "速度 II (2:40)"
 				},
 				{
-					"text": "Speed III (4:00)"
+					"text": "速度 III (4:00)"
 				},
 				{
-					"text": "Sake"
+					"text": "清酒"
 				},
 				{
-					"text": "Resistance (5:20)"
+					"text": "抗性提升 (5:20)"
 				},
 				{
-					"text": "Resistance II (8:00)"
+					"text": "抗性提升 II (8:00)"
 				},
 				{
-					"text": "Vodka"
+					"text": "伏特加"
 				},
 				{
-					"text": "Resistance II (2:40)"
+					"text": "抗性提升 II (2:40)"
 				},
 				{
-					"text": "Resistance III (4:00)"
+					"text": "抗性提升 III (4:00)"
 				},
 				{
-					"text": "Whiskey"
+					"text": "威士忌"
 				},
 				{
-					"text": "Haste II (2:40)"
+					"text": "急迫 II (2:40)"
 				},
 				{
-					"text": "Haste III (4:00)"
+					"text": "急迫 III (4:00)"
 				},
 				{
-					"text": "Corn Whiskey"
+					"text": "玉米威士忌"
 				},
 				{
-					"text": "Haste (5:20)"
+					"text": "急迫 (5:20)"
 				},
 				{
-					"text": "Haste II (8:00)"
+					"text": "急迫 II (8:00)"
 				},
 				{
-					"text": "Rye Whiskey"
+					"text": "黑麦威士忌"
 				},
 				{
-					"text": "Haste (5:20)"
+					"text": "急迫（5:20）"
 				},
 				{
-					"text": "Haste II (8:00)"
+					"text": "急迫 II（8:00）"
 				},
 				{
-					"text": "Mead"
+					"text": "蜂蜜酒"
 				},
 				{
-					"text": "Regeneration (5:20)"
+					"text": "再生（5:20）"
 				},
 				{
-					"text": "Regeneration II (8:00)"
+					"text": "再生 II（8:00）"
 				}
 			],
-			"title": "Alcohol Effects",
+			"title": "酒精效果",
 			"legend": [],
 			"columns": 2,
 			"first_column_width": 60,
@@ -145,51 +145,51 @@
 		{
 			"type": "patchouli:text",
 			"title": "葡萄酒",
-			"text": "$(thing)Wine$() is another kind of alcohol that's made differently than the others. It's a complex but rewarding process that can't be automated in a machine. Check the $(l:cooking/alcohol#wine_making)Winemaking$() entry to learn how to craft it.$(br2)All wines also give $(item)Strength (5:20)$() in addition to another effect!",
+			"text": "$(thing)葡萄酒$()是另一种酒，酿制方法与其他酒不同。这是一个复杂但值得的过程，无法用机器自动化。想了解如何酿造，请查看$(l:cooking/alcohol#wine_making)葡萄酒酿造$()条目。$(br2)所有葡萄酒除了另一种效果之外，还会提供$(item)力量（5:20）$()！",
 			"item": "firmalife:bucket/red_wine,firmalife:bucket/white_wine,firmalife:bucket/rose_wine,firmalife:bucket/sparkling_wine,firmalife:bucket/dessert_wine",
 			"anchor": "wine"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(li)$(n)$(2)$(t:Haste 5:20)Red Wine$()$(li)$(n)$(2)$(t:Wither Resistance 5:20)White Wine$()$(li)$(n)$(2)$(t:Swim Speed 5:20)Rose Wine$()$(li)$(n)$(2)$(t:Jump Boost II 5:20)Sparkling Wine$()$(li)$(n)$(2)$(t:Knockback Resistance 5:20)Dessert Wine$()"
+			"text": "$(li)$(n)$(2)$(t:急迫 5:20)红酒$()$(li)$(n)$(2)$(t:凋零抗性 5:20)白葡萄酒$()$(li)$(n)$(2)$(t:游泳速度 5:20)玫瑰葡萄酒$()$(li)$(n)$(2)$(t:跳跃提升 II 5:20)起泡酒$()$(li)$(n)$(2)$(t:击退抗性 5:20)甜酒$()"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "特调饮品",
-			"text": "$(thing)Milk$() can be aquired from most female livestock by simply $(item)$(k:key.use)$() them with a wood or metal bucket once familiarity is at a high enough level. (If it isn't working, make sure the buckets aren't stacked!)$(br)While it doesn't provide any buffs―and won't remove effects―it provides $(l:cooking/food_and_water#dairy)Dairy$() nutrition if drunk after eating.",
+			"title": "牛奶",
+			"text": "$(thing)奶$()可以从大多数雌性牲畜身上获得：只要亲密度足够高，用木质或金属桶对它们按$(item)$(k:key.use)$()即可挤奶。（如果挤不出来，检查一下桶有没有堆叠！）$(br)虽然奶不提供任何增益――也不会清除效果――但在进食后饮用可以补充$(l:cooking/food_and_water#dairy)乳制品$()营养。",
 			"item": "minecraft:milk_bucket,firmalife:bucket/yak_milk,firmalife:bucket/goat_milk",
 			"anchor": "milk"
 		},
 		{
-			"title": "Spring Water",
-			"text": "饮用$(thing)泉水$()可使体温升高4°C，并在站在其中时提供微小的生命恢复效果，同时还能使你感到温暖。",
+			"title": "温泉",
+			"text": "饮用$(thing)温泉$()可使体温升高4°C，并在站在其中时提供微小的生命恢复效果，同时还能使你感到温暖。",
 			"item": "tfc:bucket/spring_water",
 			"type": "patchouli:spotlight",
 			"anchor": "spring_water"
 		},
 		{
-			"title": "Sea Water",
+			"title": "海水",
 			"text": "饮用$(thing)海水$()不能补充水分，反而会让你更加口渴。体温过高也会让你更容易口渴。在海上迷路了？下雨时抬头看天，可以轻松补充水分！",
 			"type": "patchouli:spotlight",
 			"item": "tfc:bucket/salt_water",
 			"anchor": "sea_water"
 		},
 		{
-			"title": "Muddy Water",
-			"text": "Drinking $(thing)Muddy Water$() is not recommended. Doing so will make you nauseous and give you $(l:cooking/food_and_water#parasites)parasites$().",
+			"title": "泥水",
+			"text": "不建议饮用$(thing)泥水$()。喝了会让你恶心，还会染上$(l:cooking/food_and_water#parasites)寄生虫$()。",
 			"type": "patchouli:spotlight",
 			"item": "tfg:muddy_water_bucket",
 			"anchor": "muddy_water"
 		},
 		{
-			"title": "Fruit Juice",
-			"text": "$(thing)Fruit Juice$() is a great way to condense your fruits into a longer lasting food item. Fruit juice provides the $(l:cooking/food_and_water#quenching_transient_effect)Quenching Effect$(), which helps stave off thirst.$(br2)Fruit Juice will expire over time.$()",
+			"title": "果汁",
+			"text": "$(thing)果汁$()是把水果浓缩成更耐储存食物的好办法。果汁提供$(l:cooking/food_and_water#quenching_transient_effect)解渴效果$()，有助于缓解口渴。$(br2)果汁会随时间过期。$()",
 			"type": "patchouli:spotlight",
 			"anchor": "juice",
 			"item": "tfg:food/juice"
 		},
 		{
-			"title": "Yogurt",
+			"title": "酸奶",
 			"text": "$(thing)酸奶$()与牛奶一样提供乳制品营养。它也可以与水果混合制成$(item)水果酸奶$()。$(br2)酸奶会随时间变质。$()",
 			"type": "patchouli:spotlight",
 			"anchor": "yogurt",
@@ -197,21 +197,21 @@
 		},
 		{
 			"title": "水果冰沙",
-			"text": "$(thing)Smoothies$() are a powerful drink. They provide both the $(l:cooking/food_and_water#quenching_transient_effect)Quenching Effect$() and the $(l:cooking/food_and_water#cooling_transient_effect)Cooling Effect$(). They are also a great source for $(l:cooking/food_and_water#fruit)Fruit$() and $(l:cooking/food_and_water#dairy)Dairy$() nutrition.$(br2)Smoothies will expire over time.$()",
+			"text": "$(thing)水果冰沙$()是一种强力的饮品，同时提供$(l:cooking/food_and_water#quenching_transient_effect)解渴效果$()和$(l:cooking/food_and_water#cooling_transient_effect)降温效果$()，也是$(l:cooking/food_and_water#fruit)水果$()与$(l:cooking/food_and_water#dairy)乳制品$()营养的绝佳来源。$(br2)水果冰沙会随时间过期。$()",
 			"type": "patchouli:spotlight",
 			"anchor": "smoothie",
 			"item": "tfg:food/smoothie"
 		},
 		{
 			"title": "液态冰沙",
-			"text": "Drinking $(thing)Ice Slush$() cools you down by 4°C, perfect for summer! Also handy for traversing $(l:beneath/beneath)the Beneath$().",
+			"text": "喝下$(thing)冰沙$()能让你降温4°C，夏天再合适不过了！在穿越$(l:beneath/beneath)幽冥之地$()时也很有用。",
 			"type": "patchouli:spotlight",
 			"item": "gtceu:ice_bucket",
 			"anchor": "ice_slush"
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Further Reading",
+			"title": "延伸阅读",
 			"anchor": "relations",
 			"entries": [
 				"tfg:cooking/food_and_water",

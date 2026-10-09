@@ -11,7 +11,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "從容器中飲用$(item)酒$()或其他流體，同樣能獲得飲品效果和$(l:cooking/food_and_water#nutrients)營養$()值。$(br2)$(o)$(7)有些飲水容器在空的時候甚至可以當作樂器吹奏。$()"
+            "text": "從容器中飲用$(item)酒$()或其他流體，同樣能獲得飲品效果和$(l:cooking/food_and_water#nutrients)養分$()值。$(br2)$(o)$(7)有些飲水容器在空的時候甚至可以當作樂器吹奏。$()"
         },
         {
             "type": "tfg:table",
@@ -39,7 +39,7 @@
                     "text": "2%"
                 },
                 {
-                    "text": "葡萄酒杯"
+                    "text": "高腳杯"
                 },
                 {
                     "text": "100"

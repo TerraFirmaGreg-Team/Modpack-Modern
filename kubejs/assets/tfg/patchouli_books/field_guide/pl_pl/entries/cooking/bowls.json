@@ -23,7 +23,7 @@
             "type": "patchouli:spotlight",
             "item": "tfc:powder/salt",
             "link_recipes": false,
-            "text": "If there is salt in the bowl, clicking with unsalted raw meat will salt the meat. This is the same as crafting the meat with the salt in your inventory."
+            "text": "Jeśli w misce jest sól, kliknij ją nieposolonym surowym mięsem, aby je posolić. Działa to tak samo jak połączenie mięsa z solą w siatce wytwarzania ekwipunku."
         }
     ],
     "read_by_default": true,

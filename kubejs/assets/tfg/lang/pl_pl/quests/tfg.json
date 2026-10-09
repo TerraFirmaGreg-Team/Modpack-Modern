@@ -3,15 +3,19 @@
     "quests.tfg.subtitle": "Informacje o niektórych modach i paczce.",
     "quests.tfg.welcome.title": "Witamy w TerraFirmaGreg!",
     "quests.tfg.welcome.subtitle": "Survivalowy modpack, jaki być powinien",
+    "quests.tfg.welcome.desc": "Dziękujemy za rozpoczęcie przygody w TerraFirmaGreg Modern!\n\nW tej paczce modyfikacji zostanie przed tobą postawione zadanie okiełznanie sił natury i wykorzystanie ich do stworzenia przemysłowego raju. Zacznij od skromnego zbierania kamyków, kończąc na eksploracji przestrzeni kosmicznej! ",
     "quests.tfg.create_team.title": "Jak utworzyć drużynę?",
     "quests.tfg.create_team.subtitle": "Grasz z przyjaciółmi?",
     "quests.tfg.capture_territory.title": "Jak zająć teren?",
     "quests.tfg.capture_territory.subtitle": "I jak załadować chunki na swoim terytorium",
+    "quests.tfg.capture_territory.desc": "Jeśli grasz na serwerze, dobrym pomysłem będzie zajęcie swojego terytorium, aby inni gracze nie mogli podejmować z nim interakcji. Kliknij przycisk \"Terytorium\" (podstawowy skrót \"Ctrl + M\"), aby otworzyć okienko, następnie możesz zająć terytorium klikając lewym przyciskiem myszy na dany \"chunk\" aby go zająć, lub prawym przyciskiem, aby zrezygnować z jego zajęcia. \n\nJest pewien limit dotyczący wielkości terytorium, aby nikt nie zajął wszystkiego. Za pomocą przytrzymania shifta i kliknięcia Ppm, możesz \"załadować\" chunk. Zajmowanie chunków aplikuje się dla całej drużyny.",
     "quests.tfg.chunk_limit.title": "Jak zwiększyć mój limit ładowania chunków?",
     "quests.tfg.field_guide.title": "Ważne informacje o zadaniach!",
     "quests.tfg.field_guide.subtitle": "Muszę czytać więcej?",
+    "quests.tfg.field_guide.desc": "Zadania są nadal rozwijane i ciągle pracujemy nad ich ulepszeniem! Dużo informacji na temat specyficznych mechanik znajduje się w Podręczniku dostępnym przez zakładkę w ekwipunku.\n\nPamiętaj, że EMI i Podręcznik to twoi przyjaciele, gdyż nie wszystko jest wyjaśnione w zadaniach.",
     "quests.tfg.books_again.title": "Potrzebujesz książek ponownie?",
     "quests.tfg.books_again.desc": "To powtarzalne zadanie, jeśli chcesz ponownie otrzymać fizyczne kopie książki zadań i przewodnika.",
     "quests.tfg.optional_mods.title": "Opcjonalne mody",
-    "quests.tfg.optional_mods.subtitle": "Dostosuj swoje doświadczenie"
+    "quests.tfg.optional_mods.subtitle": "Dostosuj swoje doświadczenie",
+    "quests.tfg.optional_mods.desc": "Jeśli chciałbym dodać więcej zawartości do swojej paczki, może zainteresować cię nasza lista &dmodów opcjonalnych&r!\n\nSą to mody, które działają tylko na określonych komputerach, dodałyby za dużo bloatu, jeśli zostałyby dodane dla wszystkich graczy, lub są zbyt niszowe, aby były podstawowo zawarte w paczce.\n\nPamiętaj proszę, że te mody lub ich kompatybilność nie jest potwierdzona przez zespół deweloperski TFG i mogą przestać funkcjonować w każdym momencie w miarę rozwoju paczki.\n\nKliknij ikonkę globu obok zadań aby otworzyć listę modów.\n\n\n"
 }

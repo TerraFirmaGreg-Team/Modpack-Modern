@@ -19,7 +19,7 @@
             "type": "patchouli:text",
             "anchor": "firepit",
             "title": "Ognisko",
-            "text": "A $(item)Firepit$() is likely the first cooking method you will have access to. It is capable of cooking only one item at a time and uses logs as fuel."
+            "text": "$(item)Ognisko$() to zapewne pierwszy sposób gotowania, jaki odblokujesz. Ugotuje tylko jeden przedmiot naraz i jako paliwo zużywa kłody."
         },
         {
             "type": "patchouli:multiblock",

@@ -7,7 +7,7 @@
         "type": "patchouli:text",
         "title": "Індекс",
         "anchor": "index",
-        "text": "$(li)$(bold)$(l:cooking/drinks#alcohol)Алкоголь$()\n$(li)$(bold)$(l:cooking/drinks#aged_alcohol)Витриманий алкоголь$()\n$(li)$(bold)$(l:cooking/drinks#vintage_alcohol)Вінтажний алкоголь$()\n$(li)$(bold)$(l:cooking/alcohol#wine_making)Виноробство$()\n$(li2)$(l:cooking/alcohol#wine_properties)Властивості вина$()\n$(li)$(bold)$(l:cooking/alcohol#wine_shelf)Винна полиця$()"
+        "text": "$(li)$(bold)$(l:cooking/drinks#alcohol)Алкоголь$()$(li)$(bold)$(l:cooking/drinks#aged_alcohol)Витриманий алкоголь$()$(li)$(bold)$(l:cooking/drinks#vintage_alcohol)Вінтажний алкоголь$()$(li)$(bold)$(l:cooking/alcohol#wine_making)Виноробство$()$(li2)$(l:cooking/alcohol#wine_properties)Властивості вина$()$(li)$(bold)$(l:cooking/alcohol#wine_shelf)Винна полиця$()"
     },
     {
         "type": "patchouli:text",

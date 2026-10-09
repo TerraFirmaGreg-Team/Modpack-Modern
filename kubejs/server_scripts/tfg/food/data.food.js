@@ -159,6 +159,7 @@ function registerTFGFoodData(event) {
 		'species:springling_egg'
 	];
 	eggItems.forEach(egg => {
+		event.itemHeat(egg, 1, null, null);
 		event.foodItem(egg, food => {
 			food.decayModifier(2)
 		});
