@@ -1,5 +1,14 @@
 {
 	"carryon.category.blacklist": "黑名單",
+	"carryon.category.custompickupconditions": "自訂拾取條件(進階)",
+	"carryon.category.custompickupconditions.custompickupconditionsblocks": "自訂方塊拾取條件",
+	"carryon.category.custompickupconditions.custompickupconditionsentities": "自訂實體拾取條件",
+	"carryon.category.modeloverrides": "模型覆寫(進階)",
 	"carryon.category.settings": "設定",
-	"carryon.category.whitelist": "白名單"
+	"carryon.category.whitelist": "白名單",
+	"carryon.general.blacklist.forbiddenentities": "玩家無法拾取的實體",
+	"carryon.general.blacklist.forbiddentiles": "玩家無法拾取的方塊",
+	"carryon.general.modeloverrides.modeloverrides": "模型覆寫",
+	"key.carry.category": "Carry On",
+	"key.carry.desc": "搬運"
 }

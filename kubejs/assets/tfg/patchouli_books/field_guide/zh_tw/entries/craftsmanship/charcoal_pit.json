@@ -1,0 +1,275 @@
+{
+    "name": "製作木炭",
+    "category": "tfg:craftsmanship",
+    "icon": "minecraft:charcoal",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "anchor": "charcoal_pit",
+            "text": "$(thing)木炭坑$()是取得$(thing)木炭$()的一種方法。木炭坑由$(thing)原木堆$()構成。要放置原木堆，請手持$(thing)原木$()並按住 $(item)$(k:key.sneak)$() 再按 $(item)$(k:key.use)$()。要放入更多原木，可以手持原木直接按 $(item)$(k:key.use)$()，或是拿著其他東西按 $(item)$(k:key.use)$() 開啟介面。"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfc:log_pile"
+                }
+            },
+            "name": "原木堆",
+            "text": "原木堆下方必須有實心方塊才能放置。它們非常易燃。",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:text",
+            "text": "木炭坑是用堅固、不可燃的方塊圍住原木堆形成的。木炭的產量與原木堆中所含原木的數量成正比。要開始燃燒，點燃其中一個原木堆，然後將它覆蓋起來。如果成功了，你應該會看到$(thing)煙霧$()粒子從結構中升起。$(br)只要完全隔熱，木炭坑可以是任何大小和形狀。$(br)預設情況下，木炭坑需要$(t:15 分鐘)遊戲中 18 小時。$()"
+        },
+        {
+            "type": "patchouli:image",
+            "width": 1024,
+            "texture_width": 1024,
+            "height": 1024,
+            "texture_height": 1024,
+            "images": [
+                "tfg:textures/gui/field_guide/charcoal_pit/charcoal_pit_0.png",
+                "tfg:textures/gui/field_guide/charcoal_pit/charcoal_pit_1.png",
+                "tfg:textures/gui/field_guide/charcoal_pit/charcoal_pit_2.png",
+                "tfg:textures/gui/field_guide/charcoal_pit/charcoal_pit_3.png",
+                "tfg:textures/gui/field_guide/charcoal_pit/charcoal_pit_4.png"
+            ],
+            "text": "$(bold)教學幻燈片：$()建造 2x2x2 的木炭坑。",
+            "border": true
+        },
+        {
+            "type": "tfg:multimultiblock",
+            "text": "分層展示一種木炭坑的搭建方式。",
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "     ",
+                            "     ",
+                            "     ",
+                            "     ",
+                            "     "
+                        ],
+                        [
+                            "XXXXX",
+                            "X   X",
+                            "X   X",
+                            "X   X",
+                            "XXXXX"
+                        ],
+                        [
+                            "XXXXX",
+                            "XXXXX",
+                            "XX0XX",
+                            "XXXXX",
+                            "XXXXX"
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "tfc:dirt/sandy_loam",
+                        "X": "tfc:dirt/sandy_loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "     ",
+                            "     ",
+                            "     ",
+                            "     ",
+                            "     "
+                        ],
+                        [
+                            "XXXXX",
+                            "XYYYX",
+                            "XYYYX",
+                            "XYYYX",
+                            "XXXXX"
+                        ],
+                        [
+                            "XXXXX",
+                            "XXXXX",
+                            "XX0XX",
+                            "XXXXX",
+                            "XXXXX"
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "tfc:dirt/sandy_loam",
+                        "X": "tfc:dirt/sandy_loam",
+                        "Y": "tfc:log_pile"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "     ",
+                            "     ",
+                            "     ",
+                            "     ",
+                            "     "
+                        ],
+                        [
+                            "XXXXX",
+                            "XYYYX",
+                            "XYYYX",
+                            "XYYYX",
+                            "XXXXX"
+                        ],
+                        [
+                            "XXXXX",
+                            "XXXXX",
+                            "XX0XX",
+                            "XXXXX",
+                            "XXXXX"
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "tfc:dirt/sandy_loam",
+                        "X": "tfc:dirt/sandy_loam",
+                        "Y": "tfc:burning_log_pile"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "     ",
+                            " XXX ",
+                            " XXX ",
+                            " XXX ",
+                            "     "
+                        ],
+                        [
+                            "XXXXX",
+                            "XYYYX",
+                            "XYYYX",
+                            "XYYYX",
+                            "XXXXX"
+                        ],
+                        [
+                            "XXXXX",
+                            "XXXXX",
+                            "XX0XX",
+                            "XXXXX",
+                            "XXXXX"
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "tfc:dirt/sandy_loam",
+                        "X": "tfc:dirt/sandy_loam",
+                        "Y": "tfc:log_pile"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "     ",
+                            "     ",
+                            "     ",
+                            "     ",
+                            "     "
+                        ],
+                        [
+                            "XXXXX",
+                            "XYYYX",
+                            "XYYYX",
+                            "XYYYX",
+                            "XXXXX"
+                        ],
+                        [
+                            "XXXXX",
+                            "XXXXX",
+                            "XX0XX",
+                            "XXXXX",
+                            "XXXXX"
+                        ]
+                    ],
+                    "mapping": {
+                        "0": "tfc:dirt/sandy_loam",
+                        "X": "tfc:dirt/sandy_loam",
+                        "Y": "tfc:charcoal_pile[layers=7]"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "charcoal_pile",
+            "text": "木炭坑燒完並停止冒煙後，會留下$(thing)木炭堆$()。木炭堆最多含有 8 層$(thing)木炭$()。用鏟子挖掘即可取得木炭物品。按下$(item)$(k:key.use)$()可以增加或放置木炭堆。$(br2)$(bold)提示：$()不要用鵝卵石等密度高的材料覆蓋木炭坑，否則完成時它可能會掉落並毀掉你的木炭。"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "coke_oven",
+            "title": "焦爐",
+            "text": "$(thing)焦爐$()是一種多方塊結構，可以自動將原木轉化為木炭，並將煤炭轉化為$(item)焦炭$()，同時產生$(thing)雜酚油$()。當你第一次生產出$(l:craftsmanship/bloomery)鍛鐵$()時就能建造這座結構，建議盡早建造。焦爐能大幅提升木炭生產的便利性，而焦炭和雜酚油都是推進遊戲進度的必需品。"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "AAA",
+                        "A2A",
+                        "AAA"
+                    ],
+                    [
+                        "A1A",
+                        "C A",
+                        "AAA"
+                    ],
+                    [
+                        "AAA",
+                        "A0A",
+                        "AAA"
+                    ]
+                ],
+                "mapping": {
+                    "0": "gtceu:coke_oven_hatch[facing=down]",
+                    "1": "gtceu:coke_oven_hatch[facing=west]",
+                    "2": "gtceu:coke_oven_hatch[facing=up]",
+                    "A": "gtceu:coke_oven_bricks",
+                    "C": "gtceu:coke_oven[facing=north]"
+                }
+            },
+            "text": "附有三個倉的焦爐範例，適合用於物品輸入、物品輸出和流體輸出。",
+            "enable_visualize": true
+        },
+        {
+            "type": "patchouli:text",
+            "title": "焦爐技巧",
+            "text": "$(li)焦爐最多可以有 4 個倉，可以取代任何焦爐磚。$(li)焦爐的中心必須是空心的。$(li)焦爐的輸入倉可能會被輸出物品堵住。為了避免這種情況，可以讓一根設定好流向的物品管道朝向輸入倉，再用漏斗或滑槽將物品推入那根管道。$(li)板條箱可以存放原木，箱子則不行。$(li)把你所有的雜酚油都存起來！"
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "延伸閱讀",
+            "anchor": "relations",
+            "entries": [
+                "tfg:craftsmanship/pit_kiln",
+                "tfg:craftsmanship/metallurgy",
+                "tfg:craftsmanship/charcoal_forge",
+                "tfg:craftsmanship/crucible",
+                "tfg:craftsmanship/blast_furnace",
+                "tfg:craftsmanship/bloomery",
+                "tfg:craftsmanship/anvils",
+                "tfg:craftsmanship/glassworking"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 5,
+    "extra_recipe_mappings": {
+        "gtceu:coke_oven_hatch": 7,
+        "gtceu:coke_oven_bricks": 7,
+        "gtceu:coke_oven": 7
+    }
+}

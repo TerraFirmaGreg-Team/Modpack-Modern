@@ -1,0 +1,325 @@
+{
+    "name": "Будівельні матеріали",
+    "category": "tfg:craftsmanship",
+    "icon": "tfc:wattle/white",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(li)$(bold)$(l:craftsmanship/building_materials#primitive_materials)Примітивні матеріали$()$(li2)$(l:craftsmanship/building_materials#thatch)Тюк соломи$()$(li2)$(l:craftsmanship/building_materials#mud_bricks)Брудна цегла$()$(li2)$(l:craftsmanship/building_materials#wattle_and_daub)Плетінь та обмазка$()$(li)$(bold)$(l:craftsmanship/building_materials#advanced_materials)Вдосконалені матеріали$()$(li2)$(l:craftsmanship/building_materials#alabaster)Алебастр$()$(li2)$(l:craftsmanship/building_materials#bricks_and_mortar)Цегли та будівельний розчин$()$(li)$(bold)$(l:craftsmanship/building_materials#block_interactions)Налаштовування блоків$()$(li)$(bold)$(l:craftsmanship/building_materials#roof_building)Будівництво дахів$()$(li)$(bold)$(l:craftsmanship/building_materials#modern)Сучасні матеріали$()",
+            "title": "Індекс",
+            "anchor": "index"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "primitive_materials",
+            "title": "Примітивні матеріали",
+            "text": "На ранніх етапах гри будівництво може бути складним, оскільки для отримання багатьох міцних будівельних блоків потрібні металеві інструменти. Однак є кілька будівельних блоків, які можна отримати лише за допомогою кам’яних інструментів.$(br2)Більш $(l:craftsmanship/building_materials#advanced_materials)вдосконалені будівельні блоки$() можна отримувати за допомогою металевих інструментів."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "thatch",
+            "text": "Маючи лише $(l:craftsmanship/sticks_and_stones)кам’яний ніж$(), ти можеш отримувати $(thing)солому$(), ламаючи рослиноподібні блоки. Із неї можна створити дуже простий будівельний матеріал: $(thing)тюк соломи$(). Тюк соломи — це легкий блок, на який не діє гравітація, однак гравці та інші сутності можуть проходити крізь нього! За потреби її також можна перетворити назад на $(thing)солому$().",
+            "title": "Тюк соломи"
+        },
+        {
+            "type": "patchouli:crafting",
+            "anchor": "mud_bricks",
+            "recipe": "tfc:crafting/soil/loam_drying_bricks",
+            "title": "Цегла з бруду",
+            "text": "$(thing)Бруд$() можна знайти на землі, під деякими водоймами, у болотистій місцевості на низьких висотах або безпосередньо створити, кинувши землю у воду за допомогою $(item)$(k:key.drop)$. Додавши трохи $(thing)соломи$(), її можна перетворити на $()вологу брудну цеглу$()."
+        },
+        {
+            "type": "tfg:multimultiblock",
+            "text": "Їх можна розмістити на землі в сухому місці, і через день вони перетворяться у $(thing)цеглу з бруду$().",
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:drying_bricks/loam[count=4,dried=false]",
+                        "Y": "tfc:grass/loam"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "X"
+                        ],
+                        [
+                            "Y"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "X": "tfc:drying_bricks/loam[count=4,dried=true]",
+                        "Y": "tfc:grass/loam"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "tfc:crafting/soil/loam_mud_bricks",
+            "title": "Блоки з брудної цегли",
+            "text": "Ці висушені брудні цеглини можна перетворити на $(thing)блоки з брудної цегли$(). За бажанням із них також можна зробити $(thing)сходи$(), $(thing)плити$() або $(thing)стіни$(). Блоки з брудної цегли можна добувати лопатою."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "wattle_and_daub",
+            "text": "$(thing)Плетінь$() і $(thing)обмазка$() — універсальні будівельні та декоративні блоки.$(br)$(thing)Каркас$() можна створювати та встановлювати, однак її легко зламати, і гравці та моби можуть проходити крізь неї. Її можна доповнити $(thing)обмазкою$(), щоб зробити суцільною.$(br)Щоб зробити $(thing)каркас$() суцільною, її спочатку потрібно обплести, для чого до конструкції треба додати палиці.",
+            "title": "Плетіння й обмазки"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/wattle_weave.png"
+            ],
+            "text": "Потрібно чотири палиці, щоб $(thing)сплести$() плетінь.",
+            "border": true
+        },
+        {
+            "type": "patchouli:text",
+            "text": "У будь-який момент палиці можна додати по кожній діагоналі, а також зверху та знизу. Візьми одну $(thing)палицю$() в руку та натисни $(item)$(k:key.use)$(), щоб додати її. Ти можеш вирішувати, до якої саме частини плетінки додавати палицю, вибираючи іншу сторону грані блока."
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/wattle_add_stick.png"
+            ],
+            "text": "Додавання палиць до плетінь.",
+            "border": true
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/wattle_add_daub.png"
+            ],
+            "text": "Використання $(thing)обмазки по $(thing)плетінню$() створює твердий блок.",
+            "border": true
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/wattle_stained.png"
+            ],
+            "text": "Після цього її можна $(thing)пофарбувати$(), використавши на ній $(thing)барвник$().",
+            "border": true
+        },
+        {
+            "type": "tfg:multimultiblock",
+            "text": "Процес виготовлення плетіння й обмазки",
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "W"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "W": "tfc:wattle"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "W"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "W": "tfc:wattle[woven=true]"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "W"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "W": "tfc:wattle[woven=true,left=true]"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "W"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "W": "tfc:wattle[woven=true,left=true,right=true]"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "W"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "W": "tfc:wattle[woven=true,left=true,right=true,top=true]"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "W"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "W": "tfc:wattle[woven=true,left=true,right=true,top=true,bottom=true]"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "W"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "W": "tfc:wattle/unstained[left=true,right=true,top=true,bottom=true]"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "W"
+                        ],
+                        [
+                            "0"
+                        ]
+                    ],
+                    "mapping": {
+                        "W": "tfc:wattle/white[left=true,right=true,top=true,bottom=true]"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "advanced_materials",
+            "title": "Вдосконалені матеріали",
+            "text": "Окрім $(l:craftsmanship/building_materials#primitive_materials)примітивних будівельних матеріалів$() кам’яної доби, отримання металевих інструментів дає змогу будувати досконаліші будівельні матеріали."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tfc:alabaster_brick,tfc:alabaster/raw,tfc:alabaster/bricks,tfc:alabaster/polished",
+            "anchor": "alabaster",
+            "text": "Алебастр — це будівельний блок, виготовлений із $(thing)гіпсу$(). Алебастр можна отримати безпосередньо шляхом створення з гіпсу, але ефективніше виготовляти його, запечатавши трохи гіпсу зі 100 mB $(thing)вапняної води$() у $(l:craftsmanship/barrels#limewater)діжці$().",
+            "title": "Алебастр"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tag:tfc:colored_raw_alabaster,tag:tfc:colored_bricks_alabaster,tag:tfc:colored_polished_alabaster",
+            "anchor": "alabaster_decor",
+            "text": "Алебастр можна $(thing)пофарбувати$() у $(l:craftsmanship/barrels)діжці$() з барвником у будь-який колір. Блоки необробленого алебастру також можна $(l:craftsmanship/chisel)обтесати$() до стану $(thing)гладкого алебастру$(), використовуючи режим $(thing)Гладкий$() на зубилі, або перетворити на сходи, плити чи стіни.",
+            "title": "Декоративний алебастр"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "bricks_and_mortar",
+            "item": "tag:forge:stone_bricks",
+            "text": "$(thing)Кам’яна цегла$() виготовляється за допомогою $(l:craftsmanship/chisel)зубила$() з окремих незакріплених каменів. Потім для формування міцного будівельного блока потрібен $(thing)розчин$().$(br2)Розчин можна виготовити, додавши $(thing)пісок$() у діжку з $(l:craftsmanship/barrels#limewater)вапняною водою$().",
+            "title": "Цегли та будівельний розчин"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Також можна створювати інші декоративні кам'яні блоки, як-от $(thing)потріскану цеглу$() та $(thing)резьблений камінь$(). $(thing)Мохові$() кам'яні блоки можна отримати, розмістивши кругляк або цеглу під водою поруч з уже замшілою цеглою чи кругляком. Мох почне поширюватися на сусідні блоки."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "block_interactions",
+            "title": "Взаємодія з блоками",
+            "text": "У світі є багато взаємодій, які допоможуть спростити будівництво:$(li)Зробити моховиті блоки, використовуючи $(item)$(k:key.sneak)-$(k:key.use)$() на них із $(l:agriculture/composting#green_compost)зеленню$().$(li)Зробити потріскану цеглу, використовуючи $(item)$(k:key.sneak)-$(k:key.use)$() на ній $(thing)молотом$().$(li)Згладити кам’яну цеглу, використовуючи $(item)$(k:key.sneak)-$(k:key.use)$() на ній із $(thing)наждачним папером$().$(br)Усі взаємодії можна переглянути у вкладці модифікацій блоків в $(emi)."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "roof_building",
+            "title": "Будівництво дахів",
+            "text": "Будівництво даху за допомогою моду $(bold)Roads and Roofs$() починається з каркаса. $(thing)Блоки каркаса даху$() можна створити з пиломатеріалів і палиць, а також виготовити їхні варіанти у вигляді сходів і плит. Ці блоки використовуються для окреслення форми даху та є основою для всіх дахів."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Коли каркаси даху встановлено, на них можна натиснути $(item)$(k:key.use)$() з будь-яким $(t:#rnr:shingles)$(6)матеріалом для покрівлі$(), щоб створити відповідний дах. Існують різні типи дахів, зокрема солом’яні, які створюються додаванням соломи до каркаса даху, а також дахи з теракотової черепиці, дерев’яного гонту та багато інших.$(br2)Дахи необхідні, щоб захищати твої машини від дощу! Подумай про бідолашні машини..."
+        },
+        {
+            "type": "patchouli:image",
+            "title": "Покриття даху соломою",
+            "images": [
+                "rnr:textures/gui/book/thatching.png"
+            ],
+            "border": true
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "modern",
+            "title": "Сучасні матеріали",
+            "text": "Шукаєш щось трохи сучасніше?$(br)$(li)$(thing)GregTech$() має кілька бетонних блоків і металевих стійок, які також дають $(l:logistics/roads)бонус до швидкості пересування$(). Також у ньому є велика кількість різнокольорових ламп і блоків листового металу.$(li)$(thing)Create Deco$() має металеві містки, вікна, листовий метал, освітлення та цеглу різних кольорів."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)$(item)Балки$(), $(item)Розпірки$() та $(item)Ферми$() чудово підходять для промислових опор.$(li)Дбаєш про безпеку? $(thing)GregTech$(), $(thing)Create Deco$() та $(thing)Modern Markings$() мають різноманітні попереджувальні знаки та декорації.$(li)$(thing)Ad Astra$() має ще більше футуристичних блоків, як-от двері 3×3, додаткові джерела світла та інші металеві блоки.$(li)$(thing)Create: Steam 'n' Rails$() має $(item)локометал$() для величезного вибору кольорових металевих блоків."
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Докладніше",
+            "anchor": "relations",
+            "entries": [
+                "tfg:agriculture/aqueducts",
+                "tfg:craftsmanship/barrels",
+                "tfg:craftsmanship/chisel",
+                "tfg:the_world/geology",
+                "tfg:logistics/roads",
+                "tfg:craftsmanship/building_tools"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 20,
+    "extra_recipe_mappings": {
+        "tfc:thatch": 2,
+        "tag:tfc:mud_bricks": 5,
+        "tfc:wattle": 6,
+        "tfc:daub": 6,
+        "tfc:alabaster_brick": 14,
+        "tfc:alabaster/raw": 14,
+        "tfc:alabaster/bricks": 14,
+        "tfc:alabaster/polished": 14,
+        "tag:tfc:colored_raw_alabaster": 15,
+        "tag:tfc:colored_bricks_alabaster": 15,
+        "tag:tfc:colored_polished_alabaster": 15,
+        "tag:rnr:roof_blocks": 19,
+        "tag:rnr:shingles": 19
+    }
+}

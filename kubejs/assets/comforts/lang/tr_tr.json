@@ -45,6 +45,8 @@
   "block.comforts.sleeping_bag_yellow": "Sarı Uyku Tulumu",
   "capability.comforts.not_sleepy": "Yatamazsın, fazla uykulu değilsin",
   "comforts.skipping_day": "Gün boyunca uyunuyor",
+  "gui.comforts.config.autoUse.description": "Aktif hale getirildiğinde, Oyuncular ukyu tulumunu yerleştirdiğinde otomatik olarak kullanmaya çalışacak.",
+  "gui.comforts.config.autoUse.name": "Uyku tulumlarını otomatik olarak kullan.",
   "gui.comforts.config.sleepingBagEffects.name": "Uyku tulumu etkileri",
   "gui.comforts.config.sleepingBagsStopPhantoms.description": "Etkinleştirilirse, uyku tulumlarında uyumaya çalışmak phantom'ların ortaya çıkmasını engeller.",
   "gui.comforts.config.sleepingBagsStopPhantoms.name": "Uyku tulumları phantom'ları durdurur",

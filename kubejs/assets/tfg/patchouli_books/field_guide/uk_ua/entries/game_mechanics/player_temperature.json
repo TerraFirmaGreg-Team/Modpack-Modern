@@ -1,0 +1,99 @@
+{
+	"name": "Температура гравця",
+	"category": "tfg:game_mechanics",
+	"icon": "tfcambiental:straw_hat",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "$(thing)Температура тіла гравця$() — це температура, яка впливає на $(bold)тебе$(), гравця, і ні на що інше. Вона відрізняється від $(l:the_world/climate#temperature)поточної та середньої температури$() твого клімату, але залежить від неї, а також від $(l:game_mechanics/player_temperature#what_affects_it)інших чинників$().$(br2)Ти маєш стежити за нею, щоб уникнути $(thing)теплового удару$() або $(thing)замерзання$()!"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Зміст",
+			"text": "$(li)$(bold)$(l:game_mechanics/player_temperature#hud)Як побачити свою температуру$()$(li)$(bold)$(l:game_mechanics/player_temperature#what_affects_it)Що на неї впливає?$()$(li2)$(l:game_mechanics/player_temperature#what_affects_it)Клімат і пори року$()$(li2)$(l:game_mechanics/player_temperature#wetness)Вологість$()$(li2)$(l:game_mechanics/player_temperature#wetness)Пряме сонячне світло$()$(li2)$(l:game_mechanics/player_temperature#wetness)Біг$()$(li2)$(l:game_mechanics/player_temperature#blocks)Блоки$()$(li2)$(l:game_mechanics/player_temperature#food)Вплив їжі$()$(li2)$(l:game_mechanics/player_temperature#clothing)Одяг$()$(li)$(bold)$(l:game_mechanics/player_temperature#house_tester)Замкнуті приміщення$()$(li)$(bold)$(l:game_mechanics/player_temperature#heat_pump)Теплова помпа$()"
+		},
+		{
+			"type": "patchouli:image",
+			"anchor": "hud",
+			"text": "Стрілка посередині показує, підвищується чи знижується температура твого тіла.",
+			"title": "HUD панелі швидкого доступу",
+			"border": false,
+			"images": [
+				"tfg:textures/gui/field_guide/ambiental_hud.png"
+			]
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Ти можеш побачити температуру свого тіла, утримуючи $(item)$(k:key.sneak)$() і дивлячись на числа над своєю $(thing)панеллю швидкого доступу$() внизу екрана.$(br2)Два числа праворуч показують твою $(thing)поточну температуру тіла$() та $(thing)цільову температуру$() — тобто значення, до якого твоя температура «прагнутиме», якщо ситуація не зміниться.$(br2)Два числа ліворуч так само показують твою $(l:game_mechanics/player_temperature#wetness)вологість$()."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(thing)Два числа праворуч$() — це ті, на які варто звертати увагу! Якщо твоя $(thing)температура тіла$() підніметься $(6)вище 30 °C$() або опуститься $(3)нижче 0 °C$(), ти почнеш отримувати шкоду.$(br2)Коли ти наближаєшся до цих температур, стрілка посередині HUD буде яскраво-помаранчевою або темно-синьою, а екран матиме помаранчевий або синій відтінок."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(item)Градієнтна шкала$() в самому низу, що замінює твою шкалу досвіду, одночасно показує твою $(thing)температуру тіла гравця$() ($(bold)біла позначка$()), $(l:the_world/climate)поточну температуру клімату$() ($(bold)$(2)зелена 🔽$()) та $(l:the_world/climate)середню температуру клімату$() ($(bold)$(c)червона 🔼$()).$(br2)Шкала розділена на сегменти по 10 °C, а її самісінька середина відповідає 0 °C."
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Що на неї впливає?",
+			"anchor": "what_affects_it",
+			"text": "На твою температуру впливає багато чинників!$(br2)Найочевидніший із них — те, що відбувається з твоїм кліматом. У $(l:the_world/climate#seasons)літку$() тобі буде спекотніше, а $(l:the_world/climate#seasons)взимку$() — холодніше. Життя в $(l:the_world/climate#climate)Арктиці$() зробить тебе холоднішим, ніж життя в $(l:the_world/climate#climate)Тропіках$(), і так далі."
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "wetness",
+			"text": "$(thing)Вологість$() трохи знижує твою температуру, водночас змушуючи її трохи швидше змінюватися. Не дивно, що ти намокаєш від дощу або плавання, а висихаєш... просто не торкаючись води. Стрибок у воду — чудовий спосіб охолонути!$(br2)Перебування під $(thing)прямими сонячними променями$() трохи підвищує температуру, причому сила цього ефекту залежить від поточної температури клімату. Активний біг також трохи підвищує її."
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "blocks",
+			"text": "Різні блоки поблизу можуть значно сильніше впливати на твою температуру. Наприклад, ти можеш зігрітися біля  $(l:craftsmanship/firepit)Багаття$(), $(l:craftsmanship/charcoal_forge)Вугільного горна$() або таких блоків, як $(item)Магма$() чи $(thing)Лава$(), тоді як такі блоки, як $(item)Утрамбований лід$(), навпаки, охолоджуватимуть тебе."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Точніше, блоки впливатимуть на твою температуру, якщо вони розташовані не далі ніж $(thing)9$() блоків по горизонталі, $(thing)3$() блоки нижче та $(thing)5$() блоків вище від тебе (19×9×19). Серед цих блоків лише 5 із найсильнішим впливом впливатимуть на твою температуру, але будь-які пристрої для $(l:game_mechanics/heating)нагрівання$() завжди враховуються."
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Їжа та напої",
+			"anchor": "food",
+			"text": "Деякі $(l:cooking)страви$() та $(l:cooking/drinks)напої$() можуть впливати на температуру гравця. Серед них:$(li)$(l:game_mechanics/mob_effects#cooling)Охолодження$()$(li)$(l:game_mechanics/mob_effects#warming)Зігрівання$()$(li)$(l:game_mechanics/mob_effects#freezing)Замороження$()$(li)$(l:game_mechanics/mob_effects#blazing)Опік$()$(br2)Вживання  $(l:cooking/drinks#spring_water)Джерельної води$() зігріє тебе, а $$(l:cooking/drinks#ice_slush)Крижана крихта$() охолодить."
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Одяг",
+			"anchor": "clothing",
+			"text": "Носіння $(l:craftsmanship/clothing)одягу$() — ще один важливий спосіб змінювати свою температуру. Одяг може зігрівати тебе, охолоджувати (або ніяк не впливати на температуру), а також може мати ефект $(thing)теплоізоляції$(), який зменшує вплив інших джерел температури на тебе.$(br2)Деякі головні убори також захищають від $(l:game_mechanics/player_temperature#wetness)прямих сонячних променів$()."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tfcambiental:house_tester",
+			"anchor": "house_tester",
+			"title": "Замкнені простори",
+			"text": "Створення замкненого простору, наприклад будинку, забезпечить теплоізоляційний ефект. Такі блоки, як двері, люки та шибки, вважаються «герметичними». Якщо ти не впевнений, $(item)Аналізатор приміщення$() підкаже тобі!$(br2)Цей ефект може нагріти будинок максимум до 5 °C і не працює у великих спорудах."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tfg:heat_pump",
+			"anchor": "heat_pump",
+			"text": "Коли ти зможеш $(thing)використовувати електроенергію$(), ти зможеш створити $(item)Теплову помпу$() — багатоблокову конструкцію, яка може нагрівати або охолоджувати значно більші будівлі."
+		},
+		{
+			"type": "patchouli:relations",
+			"title": "Докладніше",
+			"anchor": "relations",
+			"entries": [
+				"tfg:the_world/climate",
+				"tfg:cooking/food_and_water",
+				"tfg:cooking/drinks",
+				"tfg:game_mechanics/hazards",
+				"tfg:game_mechanics/heating",
+				"tfg:game_mechanics/mob_effects",
+				"tfg:craftsmanship/clothing",
+				"tfg:craftsmanship/sewing_table"
+			]
+		}
+	],
+	"read_by_default": true
+}

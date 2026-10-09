@@ -1,0 +1,66 @@
+{
+	"name": "地底樹木索引",
+	"category": "tfg:beneath",
+	"icon": "tfg:textures/block/wood/sapling/mahoe.png",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "儘管缺乏陽光，地底仍生長著數種樹木，其中大多數只能在這裡找到！$(br2)樹木在地底的生長方式和在主世界相同，但需要 12 級的光照，而地底的自然光照無法提供。要解決這個問題，可以利用$(l:agriculture/aqueducts)熔岩引水橋$()或其他可用的光源。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "南洋杉",
+			"anchor": "araucaria",
+			"item": "tag:tfg:araucaria_logs",
+			"text": "$(bold)南洋杉$()$(br)只出現在$(thing)織網地窟$()生態域。$(br)$(thing)生長天數$()：5"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "山毛櫸",
+			"anchor": "beech",
+			"item": "tag:tfg:beech_logs",
+			"text": "$(bold)山毛櫸$()$(br)出現在$(thing)荊棘林$()和$(thing)繁生岩穴$()生態域。$(br)$(thing)生長天數$()：6"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "銀杏",
+			"anchor": "ginkgo",
+			"item": "tag:wan_ancient_beasts:ginkgo_logs",
+			"text": "$(bold)銀杏$()$(br)只出現在$(thing)繁生岩穴$()生態域。$(br)$(thing)生長天數$()：7"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "黃槿",
+			"anchor": "mahoe",
+			"item": "tag:tfg:mahoe_logs",
+			"text": "$(bold)黃槿$()$(br)只出現在$(thing)荊棘林$()生態域。$(br)$(thing)生長天數$()：5"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "紅樹",
+			"anchor": "mangrove",
+			"item": "tag:tfc:mangrove_logs",
+			"text": "$(bold)紅樹$()$(br)只出現在$(thing)悶熱泥沼$()生態域。$(br)$(thing)生長天數$()：7$(br2)也可以$(l:the_world/earth_tree_index#mangrove)在主世界$()找到。"
+		},
+		{
+			"type": "patchouli:relations",
+			"title": "延伸閱讀",
+			"anchor": "relations",
+			"entries": [
+				"tfg:the_world/earth_tree_index",
+				"tfg:beneath/beneath",
+				"tfg:beneath/beneath_crops",
+				"tfg:beneath/beneath_wild_fruits",
+				"tfg:mars/mars_tree_index"
+			]
+		}
+	],
+	"extra_recipe_mappings": {
+		"tfg:wood/sapling/araucaria": 1,
+		"tfg:wood/sapling/beech": 2,
+		"tfg:wood/sapling/ginkgo": 3,
+		"tfg:wood/sapling/mahoe": 4,
+		"tfc:wood/sapling/mangrove": 5
+	},
+	"read_by_default": true
+}

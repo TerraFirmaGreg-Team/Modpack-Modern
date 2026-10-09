@@ -2,8 +2,7 @@
 
 function registerTFGRailgunItemTags(event) {
 	
-	event.add('tfg:cannot_launch_in_railgun', '#tfc:vessels')
-	event.add('tfg:cannot_launch_in_railgun', '#tfc:large_vessels')
+	event.add('tfg:cannot_launch_in_railgun', 'tfg:railgun_ammo_shell')
 	event.add('tfg:cannot_launch_in_railgun', 'ae2:item_storage_cell_1k')
 	event.add('tfg:cannot_launch_in_railgun', 'ae2:item_storage_cell_4k')
 	event.add('tfg:cannot_launch_in_railgun', 'ae2:item_storage_cell_16k')
@@ -44,13 +43,12 @@ function registerTFGRailgunItemTags(event) {
 	event.add('tfg:cannot_launch_in_railgun', 'megacells:portable_fluid_cell_16m')
 	event.add('tfg:cannot_launch_in_railgun', 'megacells:portable_fluid_cell_64m')
 	event.add('tfg:cannot_launch_in_railgun', 'create:minecart_contraption')
-	event.add('tfg:cannot_launch_in_railgun', 'tfg:railgun_ammo_shell')
 	event.add('tfg:cannot_launch_in_railgun', 'create:cardboard_package_12x10')
 	event.add('tfg:cannot_launch_in_railgun', 'create:cardboard_package_10x8')
 	event.add('tfg:cannot_launch_in_railgun', 'create:cardboard_package_10x12')
 	event.add('tfg:cannot_launch_in_railgun', 'create:cardboard_package_12x12')
-	event.add('tfg:cannot_launch_in_railgun', 'create_factory_logistics:composite_package')
-	event.add('tfg:cannot_launch_in_railgun', 'create_factory_logistics:copper_jar_package_8x8')
+	event.add('tfg:cannot_launch_in_railgun', '#create:packages')
+	event.add('tfg:cannot_launch_in_railgun', '#create:toolboxes')
 	event.add('tfg:cannot_launch_in_railgun', 'sns:ore_sack')
 	event.add('tfg:cannot_launch_in_railgun', 'sns:leather_sack')
 	event.add('tfg:cannot_launch_in_railgun', 'sns:burlap_sack')
@@ -84,7 +82,6 @@ function registerTFGRailgunItemTags(event) {
 	event.add('tfg:cannot_launch_in_railgun', 'gtceu:stainless_steel_drum')
 	event.add('tfg:cannot_launch_in_railgun', 'gtceu:titanium_drum')
 	event.add('tfg:cannot_launch_in_railgun', 'gtceu:tungsten_steel_drum')
-	event.add('tfg:cannot_launch_in_railgun', '#create:toolboxes')
 	event.add('tfg:cannot_launch_in_railgun', 'gtceu:ulv_super_chest')
 	event.add('tfg:cannot_launch_in_railgun', 'gtceu:lv_super_chest')
 	event.add('tfg:cannot_launch_in_railgun', 'gtceu:mv_super_chest')
@@ -107,4 +104,6 @@ function registerTFGRailgunItemTags(event) {
 	event.add('tfg:cannot_launch_in_railgun', 'gtceu:uhv_quantum_tank')
 	event.add('tfg:cannot_launch_in_railgun', 'toolbelt:belt')
 	event.add('tfg:cannot_launch_in_railgun', '#tfc:barrels')
+	event.add('tfg:cannot_launch_in_railgun', '#tfc:vessels')
+	event.add('tfg:cannot_launch_in_railgun', '#tfc:large_vessels')
 }

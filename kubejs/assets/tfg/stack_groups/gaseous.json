@@ -1,6 +1,8 @@
 {
 	"id": "tfg:gaseous",
-	"type": "remi:tag",
+	"type": "remi:group",
 	"name": "stackgroup.remi.tfg_gaseous",
-	"tag": "forge:gaseous"
+	"contents": [
+		"#fluid:forge:gaseous"
+	]
 }

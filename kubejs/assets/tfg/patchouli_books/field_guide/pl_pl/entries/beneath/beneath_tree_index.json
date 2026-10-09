@@ -1,0 +1,66 @@
+{
+	"name": "Indeks drzew Głębin",
+	"category": "tfg:beneath",
+	"icon": "tfg:textures/block/wood/sapling/mahoe.png",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Despite the lack of sunlight, several species of trees grow in the Beneath, most of which can only be found here!$(br2)Trees grow in the Beneath the same way they do in the overworld, but they do require a light level of 12, which isn't provided by the Beneath's natural light. To solve this problem, you can utilize $(l:agriculture/aqueducts)Lava Aqueducts$() or any other available light source."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Araukaria",
+			"anchor": "araucaria",
+			"item": "tag:tfg:araucaria_logs",
+			"text": "$(bold)Araukaria$()$(br)Występuje wyłącznie w $(thing)leżu pająków$().$(br)$(thing)Czas wzrostu$(): 5 dni"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Buk",
+			"anchor": "beech",
+			"item": "tag:tfg:beech_logs",
+			"text": "$(bold)Buk$()$(br)Występuje w $(thing)cierniowym gaju$() i $(thing)bujnych jaskiniach$().$(br)$(thing)Czas wzrostu$(): 6 dni"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Miłorząb",
+			"anchor": "ginkgo",
+			"item": "tag:wan_ancient_beasts:ginkgo_logs",
+			"text": "$(bold)Miłorząb$()$(br)Występuje wyłącznie w $(thing)bujnych jaskiniach$().$(br)$(thing)Czas wzrostu$(): 7 dni"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Mahoe",
+			"anchor": "mahoe",
+			"item": "tag:tfg:mahoe_logs",
+			"text": "$(bold)Mahoe$()$(br)Występuje wyłącznie w $(thing)cierniowym gaju$().$(br)$(thing)Czas wzrostu$(): 5 dni"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Namorzyny",
+			"anchor": "mangrove",
+			"item": "tag:tfc:mangrove_logs",
+			"text": "$(bold)Mangrove$()$(br)Found only in the $(thing)Muggy Bog$() biome.$(br)$(thing)Growth Days$(): 7$(br2)Can also be found $(l:the_world/earth_tree_index#mangrove)in the overworld$()."
+		},
+		{
+			"type": "patchouli:relations",
+			"title": "Czytaj dalej",
+			"anchor": "relations",
+			"entries": [
+				"tfg:the_world/earth_tree_index",
+				"tfg:beneath/beneath",
+				"tfg:beneath/beneath_crops",
+				"tfg:beneath/beneath_wild_fruits",
+				"tfg:mars/mars_tree_index"
+			]
+		}
+	],
+	"extra_recipe_mappings": {
+		"tfg:wood/sapling/araucaria": 1,
+		"tfg:wood/sapling/beech": 2,
+		"tfg:wood/sapling/ginkgo": 3,
+		"tfg:wood/sapling/mahoe": 4,
+		"tfc:wood/sapling/mangrove": 5
+	},
+	"read_by_default": true
+}

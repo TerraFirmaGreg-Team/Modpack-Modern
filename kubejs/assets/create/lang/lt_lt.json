@@ -13,7 +13,6 @@
 	"create.contraption.door_control.north.short": "Šiaurė",
 	"create.contraption.door_control.south.short": "Pietūs",
 	"create.contraption.door_control.west.short": "Vakarai",
-	"create.gui.terrainzapper.tool.flatten": "Išlyginti",
 	"create.item_hatch.deposit_item": "Laikytas daiktas deponuotas",
 	"create.logistics.filter.any_amount_short": "Bet kuris",
 	"create.logistics.redstone_interval": "Raudonakmenio intervalas",
@@ -46,8 +45,5 @@
 	"tag.item.create.sandpaper": "Švitrinis popierius",
 	"tag.item.create.stone_types.calcite": "Kalcitas",
 	"tag.item.create.stone_types.galosphere.amethyst": "Ametistas",
-	"tag.item.forge.dough.wheat": "Kvietinė tešla",
-	"tag.item.forge.flour.wheat": "Kviečių miltai",
-	"tag.item.forge.gems.certus_quartz": "Certuso kvarcas",
 	"tag.item.forge.plates": "Lakštai"
 }

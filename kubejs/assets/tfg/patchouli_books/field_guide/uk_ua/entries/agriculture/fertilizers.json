@@ -1,0 +1,108 @@
+{
+    "name": "Добрива",
+    "category": "tfg:agriculture",
+    "icon": "tfc:groundcover/guano",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "title": "Індекс",
+            "anchor": "index",
+            "text": "$(li)$(bold)$(l:agriculture/fertilizers#compost)Компост$()$(li)$(bold)$(l:agriculture/fertilizers#bone_meal)Кісткове борошно$()$(li)$(bold)$(l:agriculture/fertilizers#saltpeter)Селітра$()$(li)$(bold)$(l:agriculture/fertilizers#guano)Гуано$()$(li)$(bold)$(l:agriculture/fertilizers#wood_ash)Деревна зола$()$(li)$(bold)$(l:agriculture/fertilizers#sylvite)Сильвін$()$(li)$(bold)$(l:agriculture/fertilizers#pure_fertilizers)Чисті добрива$()$(li)$(bold)$(l:agriculture/fertilizers#fertilizer)Добриво$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "intro",
+            "text": "Добрива використовуються для додавання поживних речовин до $(l:agriculture/growing_crops)культур$(). Натисни $(item)$(k:key.use)$(), тримаючи добриво в руці, по $(thing)сільськогосподарських грядках$(), $(l:agriculture/greenhouse#planters)лотку для рослин$() або $(thing)культурі$(), щоб додати поживні речовини. Має з’явитися частинки, які свідчитимуть про те, що добриво було додано.$(br)Інформацію про поживні речовини можна знайти в підказці до добрива. На наступних кількох сторінках наведено деякі доступні добрива.",
+            "title": "Добриво"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "compost",
+            "title": "Компост",
+            "item": "tfc:compost",
+            "link_recipes": false,
+            "text": "Компост є продуктом $(l:agriculture/composting)компостера$(). $(br)$(li)$(b)Азот: 40$()$(li)$(6)Фосфор: 20$()$(li)$(d)Калій: 40$()"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "minecraft:bone_meal",
+            "anchor": "bone_meal",
+            "title": "Кісткове борошно",
+            "link_recipes": false,
+            "text": "Кісткове борошно виготовляється з подрібнених кісток. $(br)$(li)$(6)Фосфор: 10$()"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tfc:powder/saltpeter",
+            "anchor": "saltpeter",
+            "title": "Селітра",
+            "link_recipes": false,
+            "text": "Селітра виготовляється з відповідної руди. $(br)$(li)$(b)Азот: 10$()$(li)$(d)Калій: 40$()"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tfc:groundcover/guano",
+            "anchor": "guano",
+            "title": "Гуано",
+            "link_recipes": false,
+            "text": "Гуано зустрічається глибоко під землею та на галькових берегах. $(br)$(li)$(b)Азот: 80$()$(li)$(6)Фосфор: 50$()$(li)$(d)Калій: 10$()"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tfc:powder/wood_ash",
+            "anchor": "wood_ash",
+            "title": "Деревна зола",
+            "link_recipes": false,
+            "text": "Деревний попіл отримують шляхом розбивання вогнища. Факел, кинутий у воду, також має ймовірність утворення попелу. $(br)$(li)$(6)Фосфор: 10$()$(li)$(d)Калій: 30$()"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tfc:powder/sylvite",
+            "anchor": "sylvite",
+            "title": "Сильвін",
+            "link_recipes": false,
+            "text": "Сильвін можна знайти під землею. $(br)$(li)$(d)Калій: 50$()"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tfc:pure_nitrogen,tfc:pure_potassium,tfc:pure_phosphorus",
+            "anchor": "pure_fertilizers",
+            "title": "Чисті добрива",
+            "link_recipes": false,
+            "text": "Доступні різні способи створення або добування чистих добрив. Ці добрива дають змогу у стисненій формі підвищувати рівень поживних речовин на сільськогосподарських грядках. $(br)$(li)$(d)Калій: 100$()$(br)Або$(li)$(b)Азот: 100$()$(br)Або$(li)$(6)Фосфор: 100$()"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "gtceu:fertilizer",
+            "anchor": "fertilizer",
+            "title": "Добриво",
+            "link_recipes": false,
+            "text": "Добриво містить рівномірний розподіл різних поживних речовин. Виготовлення його з компосту дає загалом більший вихід поживних речовин. $(br)$(li)$(d)Калій: 15$()$(li)$(b)Азот: 15$()$(li)$(6)Фосфор: 15$()"
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Докладніше",
+            "anchor": "relations",
+            "entries": [
+                "tfg:agriculture/growing_crops",
+                "tfg:agriculture/greenhouse",
+                "tfg:agriculture/composting",
+                "tfg:the_world/wild_crops"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 6,
+    "extra_recipe_mappings": {
+        "tfc:compost": 2,
+        "minecraft:bone_meal": 3,
+        "tfc:groundcover/guano": 5,
+        "firmalife:jar/guano": 5,
+        "tfc:powder/wood_ash": 6,
+        "tfc:powder/sylvite": 7,
+        "tfc:pure_nitrogen": 8,
+        "tfc:pure_potassium": 8,
+        "tfc:pure_phosphorus": 8,
+        "gtceu:fertilizer": 9
+    }
+}

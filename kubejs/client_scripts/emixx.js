@@ -8,15 +8,15 @@
 // new stack groups.
 ////////////////////////////////////////////////////////////////////////
 
-
 /**
  * Add a new group to EMI++
  * @param {Special.Mod | 'pack' | 'c'} mod
  * @param {string} name The name of the group
  * @param {'group' | 'tag' | 'regex'} type
  * @param {Special.ItemTag | Special.Item[]} data
+ * @param {number | undefined} priority
  */
-function add(mod, name, type, data) {
+function addPriority(mod, name, type, data, priority) {
     let obj = {
         id: `${mod}:${name}`,
         type: `remi:${type}`,
@@ -38,7 +38,22 @@ function add(mod, name, type, data) {
         obj.contents = Ingredient.of(new RegExp(data)).itemIds.toArray();
     }
 
+    if (priority !== undefined && priority !== 0) {
+        obj.priority = priority;
+    }
+
     JsonIO.write(`kubejs/assets/${mod}/stack_groups/${name}.json`, obj);
+}
+
+/**
+ * Add a new group to EMI++
+ * @param {Special.Mod | 'pack' | 'c'} mod
+ * @param {string} name The name of the group
+ * @param {'group' | 'tag' | 'regex'} type
+ * @param {Special.ItemTag | Special.Item[]} data
+ */
+function add(mod, name, type, data) {
+    addPriority(mod, name, type, data, 0)
 }
 
 
@@ -327,6 +342,7 @@ const registerSingleGroups = (event) => {
         'mts:silver',
         'automotives:dashornaments',
         'mts:indicators',
+
     ]
 
     SINGLE_GROUPS_TO_REGISTER.forEach(x => {
@@ -392,11 +408,23 @@ const registerMultiGroups = (event) => {
         { group_name: 'scribing_tables', tags: [
             '#tfc:scribing_tables',
             "#beneath:scribing_tables"
+        ]},
+        { group_name: 'alcohols', priority: 10, tags: [
+            '#fluid:tfg:alcohols'
+        ]},
+        { group_name: 'liquid', tags: [
+            '#fluid:forge:liquid'
+        ]},
+        { group_name: 'gaseous', tags: [
+            '#fluid:forge:gaseous'
+        ]},
+        { group_name: 'plasmatic', tags: [
+            '#fluid:forge:plasmatic'
         ]}
     ]
 
     MULTI_GROUPS_TO_REGISTER.forEach(x => {
-        add("tfg", x.group_name, "group", x.tags);
+        addPriority("tfg", x.group_name, "group", x.tags, x.priority);
     })
 }
 

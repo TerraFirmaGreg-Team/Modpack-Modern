@@ -1,0 +1,115 @@
+{
+    "name": "Кліматологія Землі",
+    "category": "tfg:the_world",
+    "icon": "tfg:textures/gui/field_guide/icons/climatology.png",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "anchor": "intro",
+            "text": "У $(tfg) клімат і час є надзвичайно важливими чинниками, які впливають на те, як ти сприймаєш світ. $(l:the_world/climate#seasons)Пори року$() змінюватимуть одна одну циклічно, впливаючи на місцеву погоду, ріст культур, а також на температуру довкілля. Перш ніж вирішити оселитися, уважно ознайомся з кліматом і географією своєї місцевості."
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Індекс",
+            "anchor": "index",
+            "text": "$(li)$(bold)$(l:the_world/climate#calendar)Календар$()$(li2)$(l:the_world/climate#seasons)Пори року$()$(li)$(bold)$(l:the_world/climate#climate)Клімат$()$(li2)$(l:the_world/climate#temperature)Температура$()$(li2)$(l:the_world/climate#rainfall)Опади$()"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Календар",
+            "anchor": "calendar",
+            "text": "$(thing)Календар$() можна переглянути в будь-який момент, натиснувши $(item)$(k:key.inventory)$() та відкривши вкладку календаря. Важливо зазначити, що ефекти пір року змінюються на протилежні під час перетину екваторіальних ліній, наприклад на $(thing)Z=10000$()."
+        },
+        {
+            "type": "patchouli:image",
+            "width": 1024,
+            "texture_width": 1024,
+            "height": 1024,
+            "texture_height": 1024,
+            "images": [
+                "tfg:textures/gui/field_guide/screens/calendar_screen.png"
+            ],
+            "text": "Екран календаря, що показує $(thing)пору року$(), $(thing)день$() та $(thing)дату$().",
+            "border": false
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "seasons",
+            "title": "Пори року",
+            "text": "У TerraFirmaCraft є чотири пори року, і погода та клімат змінюються разом із ними! Кожна пора року поділяється на $(thing)початок$(), $(thing)середину$() та $(thing)кінець$() сезонних місяців. Чотири пори року:$(br)$(li)$(bold)Весна$(): березень — травень$(li)$(bold)Літо$(): червень — серпень$(li)$(bold)Осінь$(): вересень — листопад$(li)$(bold)Зима$(): грудень — лютий"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Поточна пора року може впливати на температуру місцевості, опади (чи буде дощ або сніг) та саме довкілля, наприклад, зміну кольору листя й не тільки. Слідкуй за вкладкою календаря — вона стане в пригоді!"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "climate",
+            "text": "Ще одна вкладка на головному екрані інвентарю — це екран $(thing)Клімат$(). Тут відображається інформація про поточне місцезнаходження:$(li)Перший рядок показує загальний $(l:https://en.wikipedia.org/wiki/K%C3%B6ppen_climate_classification)клімат$().$(li)Другий рядок показує $(l:the_world/climate#temperature)середньорічну температуру$().$(li)Третій рядок показує $(l:the_world/climate#rainfall)середньорічну кількість опадів$().$(li)Останній рядок показує $(l:the_world/climate#temperature)поточну місцеву температуру$().",
+            "title": "Клімат"
+        },
+        {
+            "type": "patchouli:image",
+            "width": 1024,
+            "texture_width": 1024,
+            "height": 1024,
+            "texture_height": 1024,
+            "images": [
+                "tfg:textures/gui/field_guide/screens/climate_screen.png"
+            ],
+            "text": "Вкладка клімату",
+            "border": false
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Температура",
+            "anchor": "temperature",
+            "text": "Поточна температура в TerraFirmaCraft залежить від низки факторів:$(br)$(li)По-перше, регіон — особливо широта — відіграватиме найбільшу роль, і це враховується як $(thing)середня температура$().$(li)По-друге, на температуру впливає поточна пора року.$(li)По-третє, температура може відрізнятися щодня, а також змінюватися від години до години.$(li)Зрештою, температура змінюється залежно від висоти над рівнем моря."
+        },
+        {
+            "type": "patchouli:image",
+            "width": 1024,
+            "texture_width": 1024,
+            "height": 1024,
+            "texture_height": 1024,
+            "images": [
+                "tfg:textures/gui/field_guide/maps/temperature_map.png"
+            ],
+            "text": "Мапа площею 65,5 км², що показує, як змінюється температура під час подорожі на північ/південь.$(br)$(#001cfc)◼$(#00b9fc)◼$(#62fc92)◼$(#e1fc12)◼$(#fc7800)◼$(#cf0000)◼$() -20°C → 30°C",
+            "border": true
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "rainfall",
+            "text": "Кількість опадів — ще один кліматичний показник, який може змінюватися залежно від того, де ти перебуваєш у світі, і визначає ріст рослинності.$(br2)Опади є одним із головних чинників, що впливають на $(l:agriculture/growing_crops#hydration)зволоженість$(), яка є точним показником того, наскільки вологий ґрунт у певному місці, і використовується $(l:agriculture/growing_crops)культурами$(), $(l:the_world/wild_fruits#fruit_trees)плодовими деревами$() та $(l:the_world/wild_fruits#tall_bushes)ягідними кущами$() для визначення можливості їхнього росту.",
+            "title": "Річна кількість опадів"
+        },
+        {
+            "type": "patchouli:image",
+            "width": 1024,
+            "texture_width": 1024,
+            "height": 1024,
+            "texture_height": 1024,
+            "images": [
+                "tfg:textures/gui/field_guide/maps/rainfall_map.png"
+            ],
+            "text": "Мапа площею 65,5 км², що показує, як циклічно змінюється кількість опадів під час подорожі зі сходу на захід.$(br)$(#800302)◼$(#fc5600)◼$(#fcbe4e)◼$(#a6be4e)◼$(#1268ac)◼$(#76b6f6)◼$() 0 мм → 500 мм",
+            "border": true
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Докладніше",
+            "anchor": "relations",
+            "entries": [
+                "tfg:the_world/geology",
+                "tfg:the_world/wild_fruits",
+                "tfg:the_world/wild_crops",
+                "tfg:the_world/flora",
+                "tfg:agriculture/growing_crops",
+                "tfg:craftsmanship/pottery"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 1
+}

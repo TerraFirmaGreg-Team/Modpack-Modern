@@ -669,6 +669,66 @@
 				},
 				{
 					"type": "minecraft:item",
+					"name": "tfg:food/oil_palm",
+					"weight": 50,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 4,
+								"type": "minecraft:uniform"
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfg:food/acai",
+					"weight": 50,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 4,
+								"type": "minecraft:uniform"
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfg:food/magmango",
+					"weight": 50,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 4,
+								"type": "minecraft:uniform"
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfg:food/lavacado",
+					"weight": 50,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 4,
+								"type": "minecraft:uniform"
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
 					"name": "minecraft:glow_berries",
 					"functions": [
 						{
@@ -701,6 +761,11 @@
 					"type": "minecraft:item",
 					"name": "sns:burlap_sack",
 					"weight": 15
+				},
+				{
+					"type": "minecraft:item",
+					"name": "sns:quiver",
+					"weight": 30
 				},
 				{
 					"type": "minecraft:item",

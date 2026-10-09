@@ -1,0 +1,200 @@
+{
+    "name": "Geologia Ziemi",
+    "category": "tfg:the_world",
+    "icon": "tfc:rock/loose/gabbro",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "anchor": "intro",
+            "text": "The world of $(tfg) is divided into large continents - landmasses many kilometers wide and seperated by oceans. In these, you may find mountain ranges, rivers, and many other formations. Here you will learn about the geology of Earth and how rock layers are determined."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "index",
+            "text": "$(li)$(bold)$(l:the_world/geology#rocks)Rock Layers$()$(li)$(bold)$(l:the_world/geology#metamorphism)Metamorphism$()$(li)$(bold)$(l:the_world/geology#ocean_floors)Ocean Floors$()$(li)$(bold)$(l:the_world/geology#uplift_regions)Uplift Regions$()$(li)$(bold)$(l:the_world/geology#rock_devisions)Rock Devisions$()$(li2)$(l:the_world/geology#sedimentary)Sedimentary$()$(li2)$(l:the_world/geology#metamorphic)Metamorphic$()$(li2)$(l:the_world/geology#igneous_extrusive)Igneous Extrusive$()$(li2)$(l:the_world/geology#igneous_intrusive)Igneous Intrusive$()$(li)$(bold)$(l:the_world/geology#rock_classifiers)Rock Classifiers$()$(li2)$(l:the_world/geology#sedimentary_carbonate)Sedimentary-Carbonate$()$(li2)$(l:the_world/geology#sedimentary_clastic)Sedimentary-Clastic$()$(li2)$(l:the_world/geology#sedimentary_organic)Sedimentary-Organic$()$(li2)$(l:the_world/geology#igneous_felsic)Igneous-Felsic$()$(li2)$(l:the_world/geology#igneous_intermediate)Igneous-Intermediate$()$(li2)$(l:the_world/geology#igneous_mafic)Igneous-Mafic$()$(li2)$(l:the_world/geology#igneous_ultramafic)Igneous-ultramafic$()"
+        },
+        {
+            "type": "patchouli:image",
+            "width": 1024,
+            "texture_width": 1024,
+            "height": 1024,
+            "texture_height": 1024,
+            "images": [
+                "tfg:textures/gui/field_guide/maps/terrain_map.png"
+            ],
+            "text": "Mapa o powierzchni 65,5 km² przedstawiająca typowe ukształtowanie kontynentu oraz główne rzeki wraz z ich dopływami.",
+            "border": true
+        },
+        {
+            "type": "patchouli:image",
+            "width": 1024,
+            "texture_width": 1024,
+            "height": 1024,
+            "texture_height": 1024,
+            "images": [
+                "tfg:textures/gui/field_guide/maps/biomes_map.png"
+            ],
+            "text": "Mapa o powierzchni 65,5 km² przedstawiająca uśrednione rozmieszczenie biomów zależne od lokalnego $(l:the_world/climate#climate)klimatu$().",
+            "border": true
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "rocks",
+            "text": "The world is divided up into different types of $(thing)Rock$(). Rock regions can be over a kilometer across, and there will usually be two or three different rock layers under your feet at all times. As different ores are found in different rock types, locating specific rock types can be very important for finding resources such as $(thing)Ores$(), which will often only appear in certain rock types.",
+            "title": "Warstwy skalne"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "The top layer of rock on a continent will either be igneous extrusive, or $(l:the_world/geology#sedimentary)sedimentary$(). Underneath sedimentary rocks will likely be $(l:the_world/geology#metamorphic)metamorphosed$() forms of the rock above.$(br2)For example, $(thing)Marble$() (a metamorphic rock) will likely be found under $(thing)Limestone$() or $(thing)Chalk$(). High grade metamorphic rocks are found deep under other metamorphic or igneous rocks."
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/biomes/rock_layers.png"
+            ],
+            "text": "Przekrój świata TFC.",
+            "border": true
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "metamorphism",
+            "text": "$(li)$(thing)Slate$() forms under $(thing)Shale$(), $(thing)Claystone$(), and $(thing)Conglomerate$().$(li)$(thing)Marble$() forms under $(thing)Limestone$(), $(thing)Dolomite$(), and $(thing)Chalk$().$(li)$(thing)Quartzite$() forms under $(thing)Chert$().$(li)$(thing)Phyllite$() forms under $(thing)Slate$()$(li)$(thing)Schist$() and $(thing)Gneiss$() form under $(thing)Phyllite$(), or other igneous intrusive rocks.",
+            "title": "Metamorfizm"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "ocean_floors",
+            "text": "Ocean floors are composed of $(l:the_world/geology#igneous_extrusive)igneous extrusive$() rock - rocks that are formed by magma which cools quickly. Underneath igneous extrusive rock will likely be a $(l:the_world/geology)igneous intrusive$() rock of the same $(item)grade$().$(br2)For example, under $(thing)Basalt$() (a mafic, igneous extrusive rock), will likely be $(thing)Gabbro$() (a mafic, igneous intrusive rock).",
+            "title": "Dno oceaniczne"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "uplift_regions",
+            "text": "Finally, in mountainous regions you might also see $(thing)uplift$(), where a metamorphic or igneous intrusive rock is found on the surface. Uplift rocks can be found above other continental sedimentary or higher-grade metamorphic rocks.$(br2)In addition, $(l:https://en.wikipedia.org/wiki/Dike_%28geology%29)Dikes$() - small vertical slices of igneous intrusive rock - may appear scattered around the world.",
+            "title": "Obszary wypiętrzenia"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "rock_devisions",
+            "title": "Podział skał",
+            "text": "Skały w $(tfg_short) są zwykle dzielone na cztery grupy: $(l:the_world/geology#sedimentary)osadowe$(), $(l:the_world/geology#metamorphic)metamorficzne$(), $(l:the_world/geology#igneous_extrusive)magmowe wylewne$() i $(l:the_world/geology#igneous_intrusive)magmowe głębinowe$(). Grupy te określają, gdzie dana skała może występować, a także jakie rudy mogą się w niej pojawiać."
+        },
+        {
+            "title": "Skała osadowa",
+            "type": "patchouli:spotlight",
+            "item": {
+                "tag": "tfg:raw_stone/sedimentary"
+            },
+            "anchor": "sedimentary",
+            "text": "$(l:https://en.wikipedia.org/wiki/Sedimentary_rock)Sedimentary$() rocks are formed by the accumulation or deposition of mineral or organic particles. They are typically found on the top layers of rock in continental areas."
+        },
+        {
+            "title": "Skała metamorficzna",
+            "type": "patchouli:spotlight",
+            "item": {
+                "tag": "tfg:raw_stone/metamorphic"
+            },
+            "anchor": "metamorphic",
+            "text": "Skały https://en.wikipedia.org/wiki/Metamorphic_rock)metamorficzne$() powstają w procesie zwanym metamorfizmem. Można je znaleźć pod odpowiadającymi im skałami osadowymi lub magmowymi albo w obszarach wypiętrzenia."
+        },
+        {
+            "title": "Skała magmowa wylewna",
+            "type": "patchouli:spotlight",
+            "item": {
+                "tag": "tfg:raw_stone/igneous_extrusive"
+            },
+            "anchor": "igneous_extrusive",
+            "text": "$(l:https://en.wikipedia.org/wiki/Igneous_rock#Extrusive)Igneous Extrusive$() rocks are formed from magma cooling on the Earth's surface. They can be found on the top layer of rock in continental areas, or on the floor of oceans."
+        },
+        {
+            "title": "Skała magmowa głębinowa",
+            "type": "patchouli:spotlight",
+            "item": {
+                "tag": "tfg:raw_stone/igneous_intrusive"
+            },
+            "anchor": "igneous_intrusive",
+            "text": "$(l:https://en.wikipedia.org/wiki/Igneous_rock#Intrusive)Igneous Intrusive$() rocks are formed from magma which cooled under the Earth's crust. They can be found deep underground, or rarely in dikes or uplift areas."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "rock_classifiers",
+            "text": "Oprócz $(l:the_world/geology#rock_devisions)podziału skał$(), skały klasyfikuje się również według ich składu chemicznego.",
+            "title": "Klasyfikacja skał"
+        },
+        {
+            "title": "Osadowe węglanowe",
+            "type": "patchouli:spotlight",
+            "item": {
+                "tag": "tfg:stone_composition/raw/sedimentary_carbonate"
+            },
+            "anchor": "sedimentary_carbonate",
+            "text": "Skały $(l:https://en.wikipedia.org/wiki/Carbonate_rock)osadowe węglanowe$() są zbudowane głównie z minerałów węglanowych, takich jak kalcyt."
+        },
+        {
+            "title": "Osadowe okruchowe",
+            "type": "patchouli:spotlight",
+            "item": {
+                "tag": "tfg:stone_composition/raw/sedimentary_clastic"
+            },
+            "anchor": "sedimentary_clastic",
+            "text": "Skały $(l:https://en.wikipedia.org/wiki/Clastic_rock)osadowe okruchowe$() są zbudowane z fragmentów, czyli okruchów wcześniej istniejących minerałów lub skał."
+        },
+        {
+            "title": "Osadowe organiczne",
+            "type": "patchouli:spotlight",
+            "item": {
+                "tag": "tfg:stone_composition/raw/sedimentary_organic"
+            },
+            "anchor": "sedimentary_organic",
+            "text": "Skały $(l:https://en.wikipedia.org/wiki/Organic-rich_sedimentary_rocks)osadowe organiczne$() powstają w wyniku rozkładu lub fosylizacji materii organicznej, na przykład muszli albo bakterii."
+        },
+        {
+            "title": "Magmowe felzytowe",
+            "type": "patchouli:spotlight",
+            "item": {
+                "tag": "tfg:stone_composition/raw/igneous_felsic"
+            },
+            "anchor": "igneous_felsic",
+            "text": "Skały $(l:https://en.wikipedia.org/wiki/Felsic)magmowe felzytowe$() są bogate w pierwiastki tworzące skalenie i kwarc. Aby skałę sklasyfikować jako $(thing)felzytową$(), minerały felzytowe muszą zazwyczaj stanowić ponad 75% jej składu."
+        },
+        {
+            "title": "Magmowe pośrednie",
+            "type": "patchouli:spotlight",
+            "item": {
+                "tag": "tfg:stone_composition/raw/igneous_intermediate"
+            },
+            "anchor": "igneous_intermediate",
+            "text": "Skały $(l:https://en.wikipedia.org/wiki/Intermediate_composition)magmowe pośrednie$() zawierają od 51,5 do 63,0% mas. SiO₂, przez co ich skład znajduje się pomiędzy składem skał $(l:the_world/geology#igneous_felsic)felzytowych$() i $(l:the_world/geology#igneous_mafic)maficznych$()."
+        },
+        {
+            "title": "Magmowe maficzne",
+            "type": "patchouli:spotlight",
+            "item": {
+                "tag": "tfg:stone_composition/raw/igneous_mafic"
+            },
+            "anchor": "igneous_mafic",
+            "text": "Skały $(l:https://en.wikipedia.org/wiki/Mafic)magmowe maficzne$() są bogate w minerały zawierające magnez i żelazo."
+        },
+        {
+            "title": "Magmowe ultramaficzne",
+            "type": "patchouli:spotlight",
+            "item": {
+                "tag": "tfg:stone_composition/raw/igneous_ultramafic"
+            },
+            "anchor": "igneous_ultramafic",
+            "text": "Skały $(l:https://en.wikipedia.org/wiki/Ultramafic_rock)magmowe ultramaficzne$() zawierają bardzo mało krzemionki."
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Czytaj dalej",
+            "anchor": "relations",
+            "entries": [
+                "tfg:the_world/climate",
+                "tfg:craftsmanship/metallurgy",
+                "tfg:game_mechanics/mining"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 0
+}

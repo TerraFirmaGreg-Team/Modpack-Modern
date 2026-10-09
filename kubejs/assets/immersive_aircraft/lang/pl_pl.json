@@ -25,7 +25,7 @@
 	"immersive_aircraft.tooltip.inventory": "Zawiera %s przedmiot(ów).",
 	"immersive_aircraft.tooltip.no_space": "Za mało miejsca!",
 	"immersive_aircraft.tooltip.no_target": "Wymaga montażu na podłodze!",
-	"immersive_aircraft.tried_dismount": "Naciśnij ponownie, by wyskoczyć!",
+	"immersive_aircraft.tried_dismount": "Naciśnij ponownie, aby wyskoczyć!",
 	"immersive_aircraft.upgrade.acceleration": "%s%% prędkość startowa",
 	"immersive_aircraft.upgrade.dials": "Mechaniczna deska rozdzielcza",
 	"immersive_aircraft.upgrade.durability": "%s%% wytrzymałość",
@@ -93,7 +93,7 @@
 	"key.immersive_aircraft.multi_control_push": "Popchnij ster",
 	"key.immersive_aircraft.multi_control_right": "W prawo",
 	"key.immersive_aircraft.multi_control_up": "W górę",
-	"key.immersive_aircraft.multi_use": "Użyj broni/montażu",
+	"key.immersive_aircraft.multi_use": "Użyj broni/przedmiotu",
 	"option.immersive_aircraft.acceptVanillaFuel": "Aceptuj stanadardowe paliwo.",
 	"option.immersive_aircraft.burnFuelInCreative": "Spalaj paliwo w trybie kreatywnym.",
 	"option.immersive_aircraft.collisionDamage": "Uszkodzenie w wyniku kolizji.",
@@ -118,10 +118,10 @@
 	"option.immersive_aircraft.requireShiftForRepair": "Naprawiaj tylko po przytrzymaniu zmiany biegów, w przeciwnym razie po prostu wejdź do pojazdu.",
 	"option.immersive_aircraft.separateCamera": "Użyj osobnej kamery w samolocie.",
 	"option.immersive_aircraft.showHotbarEngineGauge": "Wyrenderuj wskaźnik silnika nad paskiem skrótów.",
-	"option.immersive_aircraft.useCustomKeybindSystem": "Użycie wielu powiązań między kluczami może spowodować uszkodzenie niektórych modów.",
+	"option.immersive_aircraft.useCustomKeybindSystem": "Używa skrótów wieloklawiszowych; może powodować problemy z niektórymi modami.",
 	"option.immersive_aircraft.useThirdPersonByDefault": "Domyślnie kamera z trzeciej osoby w samolocie.",
 	"option.immersive_aircraft.weaponsAreDestructive": "Pozwól niektórym broniom niszczyć bloki.",
 	"option.immersive_aircraft.windClearWeather": "Bazowy efekt wiatru.",
 	"option.immersive_aircraft.windRainWeather": "Wiatr podczas opadów.",
-	"option.immersive_aircraft.windThunderWeather": "Dodatkowy wiatr przy grzmotach."
+	"option.immersive_aircraft.windThunderWeather": "Dodatkowy wiatr podczas burzy."
 }

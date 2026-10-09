@@ -1,0 +1,50 @@
+{
+    "name": "Приготування канапок",
+    "category": "tfg:cooking",
+    "icon": "tfc:textures/item/food/barley_bread_sandwich.png",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "anchor": "sandwich",
+            "text": "$(thing)Канапки$() — це страва, що дозволяє поєднати два $(thing)$(n)$(t:Хліб, коржик або скибка хліба)хлібні$() вироби та три $(n)$(thing)$(t:tfc:#usable_in_sandwich)інгредієнти для канапок$().$(br2)Інгредієнти для канапок не повинні бути зіпсованими, але після створення канапка вважається свіжим і псується так, ніби його щойно виготовили."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tfc:food/barley_bread_sandwich",
+            "title": "Канапки",
+            "link_recipes": false,
+            "text": "Канапки— це динамічні страви. Використані інгредієнти визначають, які $(l:cooking/food_and_water#nutrients)поживні речовини$() вони міститимуть.$(br2)$(t:§70.8§r§l∑§r§7Інгредієнти §r+ §70.5§r§l∑§r§7Хліб§r)Щоб розрахувати поживну цінність, склади поживну цінність усіх інгредієнтів і помнож отриману суму на 0,8, а поживну цінність хліба — на 0,5$()."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tfc:food/barley_bread_jam_sandwich",
+            "anchor": "jam_sandwich",
+            "title": "Канапка із варенням",
+            "link_recipes": false,
+            "text": "Канапки із варенням також є динамічними стравами, для яких використовується та сама формула розрахунку, що й для звичайних канапок.$(br)Після приготування канапки з варенням залишиться порожня банка.$(br2)Варення можна поєднувати лише з $(thing)приготованим м’ясом і рибою$() або $(thing)сиром$(), щоб приготувати канапку із варенням."
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Докладніше",
+            "anchor": "relations",
+            "entries": [
+                "tfg:cooking/food_and_water",
+                "tfg:cooking/salad",
+                "tfg:cooking/mixing_bowl",
+                "tfg:the_world/wild_crops",
+                "tfg:the_world/wild_fruits",
+                "tfg:the_world/wild_animals"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 10,
+    "extra_recipe_mappings": {
+        "tfc:food/barley_bread_sandwich": 0,
+        "tfc:food/maize_bread_sandwich": 0,
+        "tfc:food/oat_bread_sandwich": 0,
+        "tfc:food/rice_bread_sandwich": 0,
+        "tfc:food/rye_bread_sandwich": 0,
+        "tfc:food/wheat_bread_sandwich": 0
+    }
+}

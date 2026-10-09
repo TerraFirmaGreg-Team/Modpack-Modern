@@ -1,0 +1,118 @@
+{
+    "name": "引水橋",
+    "category": "tfg:agriculture",
+    "icon": "tfc:rock/aqueduct/shale",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(thing)引水橋$()是用來搬運$(thing)流體$()的工具。由於$(item)木製水桶$()無法搬運水源，$(thing)引水橋$()可以將流體沿水平方向輸送任意距離到目的地。它能輸送任何種類的水，包括$(thing)淡水$()、$(thing)鹹水$()和$(thing)溫泉水$()，也能輸送$(thing)熔岩$()。$(br)裝有普通水的引水橋可以$(l:agriculture/growing_crops#hydration)灌溉耕地$()。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "要使用$(thing)引水橋$()，只需將它們水平連接起來，並把其中一端放在$(thing)水源$()或$(thing)下落的水$()旁邊。稍等一會兒，水就會開始流過引水橋網路，並從另一端流出。$(br2)$(bold)注意：$()如果移除引水橋，水就會停止流動。$(thing)引水橋$()不會產生永久的水源方塊，移除引水橋後裡面的水都會消失。"
+        },
+        {
+            "type": "tfg:multimultiblock",
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "     ",
+                            "     ",
+                            "     ",
+                            "  0  ",
+                            "     ",
+                            "     ",
+                            "     "
+                        ],
+                        [
+                            "     ",
+                            "     ",
+                            "     ",
+                            "     ",
+                            "     ",
+                            "     ",
+                            "     "
+                        ],
+                        [
+                            "  W  ",
+                            "  B  ",
+                            "  B  ",
+                            "CADAE",
+                            "B   B",
+                            "B   B",
+                            "W   W"
+                        ]
+                    ],
+                    "mapping": {
+                        "A": "tfc:rock/aqueduct/marble[south=true,north=true,fluid=water]",
+                        "B": "tfc:rock/aqueduct/marble[east=true,west=true,fluid=water]",
+                        "C": "tfc:rock/aqueduct/marble[east=true,south=true,fluid=water]",
+                        "D": "tfc:rock/aqueduct/marble[west=true,north=true,south=true,fluid=water]",
+                        "E": "tfc:rock/aqueduct/marble[east=true,north=true,fluid=water]",
+                        "W": "minecraft:water"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "     ",
+                            "     ",
+                            "     ",
+                            "  0  ",
+                            "     ",
+                            "     ",
+                            "     "
+                        ],
+                        [
+                            "     ",
+                            "     ",
+                            "     ",
+                            "     ",
+                            "     ",
+                            "     ",
+                            "     "
+                        ],
+                        [
+                            "  W  ",
+                            "  B  ",
+                            "  B  ",
+                            "CADAE",
+                            "B   B",
+                            "B   B",
+                            "W   W"
+                        ]
+                    ],
+                    "mapping": {
+                        "A": "tfc:rock/aqueduct/marble[south=true,north=true,fluid=lava]",
+                        "B": "tfc:rock/aqueduct/marble[east=true,west=true,fluid=lava]",
+                        "C": "tfc:rock/aqueduct/marble[east=true,south=true,fluid=lava]",
+                        "D": "tfc:rock/aqueduct/marble[west=true,north=true,south=true,fluid=lava]",
+                        "E": "tfc:rock/aqueduct/marble[east=true,north=true,fluid=lava]",
+                        "W": "minecraft:lava"
+                    }
+                }
+            ],
+            "name": "引水橋網路",
+            "text": "含水或熔岩的引水橋網路。",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "延伸閱讀",
+            "anchor": "relations",
+            "entries": [
+                "tfg:agriculture/growing_crops",
+                "tfg:craftsmanship/barrels",
+                "tfg:craftsmanship/chisel",
+                "tfg:craftsmanship/building_materials",
+                "tfg:the_world/geology"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 12,
+    "extra_recipe_mappings": {
+        "tag:tfc:rock/aqueducts": 0
+    }
+}

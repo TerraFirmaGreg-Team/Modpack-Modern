@@ -74,14 +74,13 @@ const registerFirmaCivRecipes = (event) => {
 	//#endregion
 
 	//#region Compass
-	event.recipes.gtceu.assembler('tfg:firmaciv/compass')
-		.itemInputs('#forge:plates/wrought_iron', '#forge:bolts/magnetic_iron', '#forge:glass_panes')
-		.circuit(21)
-		.itemOutputs('firmaciv:firmaciv_compass')
-		.duration(100)
-		.EUt(4)
 
-	event.shapeless('firmaciv:firmaciv_compass', ['tfc:lens', '#tfc:bowls', '#tfc:magnetic_rocks'])
+	event.shapeless('firmaciv:firmaciv_compass', 
+	[
+		'#forge:glass_panes', 
+		'#tfc:bowls', 
+		['#tfc:magnetic_rocks', '#forge:bolts/magnetic_iron']
+	]).id('tfg:shapeless/firmaciv_compass')
 	//#endregion
 
 	//#region Cannon Barrel

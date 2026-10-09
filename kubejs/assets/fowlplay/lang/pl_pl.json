@@ -6,6 +6,7 @@
 	"config.spawning.generic.minGroupSize": "Min. wielkość grupy",
 	"config.spawning.generic.minGroupSize.desc": "Minimalna liczba, która pojawi się w grupie.",
 	"config.spawning.generic.spawnWeight": "Waga odradzania",
+	"config.spawning.generic.spawnWeight.desc": "Szansa na odrodzenie %s. (to nie jest procent!) Ustaw 0, aby wyłączyć odradzanie.",
 	"config.title": "Konfiguracja Fowl Play",
 	"config.visual": "Wygląd",
 	"config.visual.customChickenModel": "Niestandardowy model kurczaka",

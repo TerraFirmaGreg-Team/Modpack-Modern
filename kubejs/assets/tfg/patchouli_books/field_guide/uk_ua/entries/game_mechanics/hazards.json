@@ -1,0 +1,194 @@
+{
+	"name": "Небезпеки",
+	"icon": "tfg:textures/mob_effect/radioactive_warning.png",
+	"category": "tfg:game_mechanics",
+	"sortnum": 3,
+	"read_by_default": true,
+	"pages": [
+		{
+			"type": "patchouli:spotlight",
+			"title": "Небезпечні матеріали",
+			"item": "gtceu:cobaltite_dust",
+			"text": "Деякі $(thing)руди$(), $(thing)пил$() та $(thing)хімікати$() є небезпечними й можуть спричиняти $(item)негативні ефекти$() або навіть $(item)вбити$() тебе, якщо вони знаходяться у твоєму інвентарі. Під час перенесення вони відображаються на екрані за допомогою $(item)ефекту стану$().$(br2)Певне спорядження, як-от $(thing)маски$(), $(thing)рукавички$() та $(thing)костюм для роботи з небезпечними матеріалами$(), можна використовувати для протидії цим ефектам."
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Усі ефекти",
+			"text": "$(li)$(l:game_mechanics/hazards#arsenicosis)Арсенікоз$()$(li)$(l:game_mechanics/hazards#asbestosis)Азбестоз$()$(li)$(l:game_mechanics/hazards#berylliosis)Бериліоз$()$(li)$(l:game_mechanics/hazards#carbon_Monoxide_poisoning)Отруєння чадним газом$()$(li)$(l:game_mechanics/hazards#carcinogens)Канцерогени$()$(li)$(l:game_mechanics/hazards#chemical_burns)Хімічні опіки$()$(li)$(l:game_mechanics/hazards#irritants)Подразнювальні речовини$()$(li)$(l:game_mechanics/hazards#methanol_poisoning)Отруєння метанолом$()$(li)$(l:game_mechanics/hazards#nauseating_chemicals)Хімічні речовини, що спричиняють нудоту$()$(li)$(l:game_mechanics/hazards#poisons)Отруйні матеріали$()$(li)$(l:game_mechanics/hazards#radioactive_materials)Радіоактивні матеріали$()$(li)$(l:game_mechanics/hazards#silicosis)Силікоз$()"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Запобігання та лікування",
+			"text": "$(li)$(l:game_mechanics/hazards#containers)Ємності$()$(li)$(l:game_mechanics/hazards#mask)Захисна маска$()$(li)$(l:game_mechanics/hazards#gloves)Гумові рукавиці$()$(li)$(l:game_mechanics/hazards#hazmat)Захисний костюм$()$(li)$(l:game_mechanics/hazards#medicine)Пігулки, таблетки та мазь$()$(li)$(l:game_mechanics/hazards#rad_away)Пігулка RadAwayᵗᵐ$()$(li)$(l:game_mechanics/hazards#respawn)Неймовірне...$()"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Контейнери",
+			"anchor": "containers",
+			"text": "Небезпечні матеріали завдають шкоди лише тоді, коли перебувають у твоєму $(thing)інвентарі$(), але це не стосується інших контейнерів!$(br)Небезпечні матеріали не завдаватимуть шкоди, якщо перебувають в іншому контейнері, наприклад $(l:logistics/personal_storage)рюкзак$() або $(l:craftsmanship/pottery#vessel)горщик$(). $(item)$(k:key.use)$() у руці, коли ти тримаєш горщик, дає змогу напряму переміщувати її вміст до контейнерів і з них.",
+			"item": "sophisticatedbackpacks:backpack,tfc:ceramic/vessel,tfc:ceramic/large_vessel"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": "Захисна маска",
+			"recipe": "gtceu:shaped/face_mask",
+			"text": "$(thing)Захисна маска$() забезпечує захист від будь-яких $(item)інгаляційних$() небезпек, таких як арсенікоз.",
+			"anchor": "mask"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "gtceu:rubber_gloves",
+			"title": "Гумові рукавиці",
+			"link_recipes": true,
+			"anchor": "gloves",
+			"text": "$(thing)Гумові рукавиці$() можна виготовити зі $(l:agriculture/leather_making)шкіри$() та $(thing)латексу$() або з $(thing)гумових листів$(). Вони забезпечують захист від будь-яких небезпек, що виникають під час $(item)контакту зі шкірою$(), як-от $(thing)берилієвий пил$()."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Захисний костюм",
+			"item": "gtceu:hazmat_headpiece,gtceu:hazmat_chestpiece,gtceu:hazmat_leggings,gtceu:hazmat_boots",
+			"text": "Повністю готовий $(thing)захисний костюм$() забезпечує $(item)імунітет$() від $(item)усіх$() небезпек, навіть $(item)радіації$(). Його переважно виготовляють із $(thing)гуми$() та $(thing)полівінілхлориду$().$(br2)$(bold)ПОРАДА$(): У $(emi) можна також пошукати $(6)#ppe_armor$(), щоб знайти інше спорядження, яке захищає від небезпечних матеріалів.",
+			"anchor": "hazmat"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Медикаменти",
+			"item": {
+				"tag": "tfg:medicine"
+			},
+			"anchor": "medicine",
+			"text": "Якщо ти все ж зазнав сильного впливу небезпечної речовини, є деякі $(item)ліки$(), які можуть допомогти тобі відновитися.$(br2)Базові $(item)пігулки$() — найпримітивніші та найпростіші у виготовленні, але більшість із них мають $(thing)негативні побічні ефекти$(). $(item)Таблетки$() та $(item)мазь$() ефективніші й мають менше побічних ефектів, але для їхнього виготовлення потрібне $(thing)обладнання рівня LV$() та більш рідкісні ресурси."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Пігулка RadAwayᵗᵐ",
+			"item": "tfg:rad_away_pill",
+			"anchor": "rad_away",
+			"text": "Це $(item)найкращий$() засіб від $(item)УСІХ$() небезпек і $(item)ЄДИНІ$() ефективні ліки проти $(item)радіації$(). Проте їх також $(thing)найдорожче$() та $(thing)найважче$() виготовити, оскільки вони потребують обладнання $(thing)HV рівня$() та кращих матеріалів."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Невдача...",
+			"item": {
+				"tag": "minecraft:beds"
+			},
+			"anchor": "respawn",
+			"text": "Якщо нічого не допомагає, варто взяти із собою ліжко, щоб мати точку відродження.$(br2)Якщо в тебе немає доступу до $(item)вовни$() або $(item)нитки$(), ти також можеш зробити $(thing)солом’яне ліжко$()."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Арсеноз",
+			"item": "gtceu:arsenic_dust",
+			"anchor": "arsenicosis",
+			"text": "$(thing)Арсенікоз$() — це захворювання, спричинене вдиханням $(thing)миш’яку$() з його пилу, пари або $(thing)реальгару$(). Воно поступово посилює голод, потім спричиняє нудоту і зрештою призводить до $(bold)смерті$().$(br2)$(l:game_mechanics/hazards#mask)Захисна маска$() та $(l:game_mechanics/hazards#hazmat)захисний костюм$() забезпечують захист від $(thing)арсенікозу$()."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Азбестоз",
+			"item": "gtceu:asbestos_dust",
+			"anchor": "asbestosis",
+			"text": "$(thing)Азбестоз$() — це захворювання, спричинене вдиханням $(thing)азбестового$() пилу. Якщо вплив триває достатньо довго, він спричиняє голод.$(br2)$(l:game_mechanics/hazards#mask)Захисна маска$() та $(l:game_mechanics/hazards#hazmat)захисний костюм$() забезпечують захист від $(thing)азбестозу$()."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Бериліоз",
+			"item": "gtceu:beryllium_dust",
+			"anchor": "berylliosis",
+			"text": "$(thing)Бериліоз$() — це захворювання, спричинене контактом шкіри з $(thing)берилієвим пилом$() або $(thing)рідким берилієм$(). Спочатку може здатися, що він не завдає особливої шкоди. Однак чим довше триває вплив, тим швидше він $(bold)вбиває$() тебе.$(br)$(l:game_mechanics/hazards#gloves)Рукавиці$() та $(l:game_mechanics/hazards#hazmat)захисний костюм$() забезпечують захист від $(thing)бериліозу$()."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Отруєння чадним газом",
+			"item": "gtceu:carbon_monoxide_bucket",
+			"anchor": "carbon_Monoxide_poisoning",
+			"text": "$(thing)Отруєння чадним газом$() — це захворювання, спричинене вдиханням газу $(thing)чадного газу$(). Тривалий вплив спричиняє нудоту та швидку $(bold)смерть$().$(br)$(l:game_mechanics/hazards#mask)Захисна маска$() та $(l:game_mechanics/hazards#hazmat)захисний костюм$() забезпечують захист від $(thing)чадного газу$()."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Канцерогени",
+			"item": "gtceu:benzene_bucket",
+			"anchor": "carcinogens",
+			"text": "$(thing)Канцерогени$() — це речовини, які спричиняють $(item)рак$(). До них належить $(thing)хромовий пил$(), а також деякі органічні сполуки, як-от бензен та продукти з нього. $(thing)Канцерогени$() не зникають самі по собі, але завчасно попереджають про небезпеку, перш ніж завдати серйозної шкоди. Спочатку з’являється слабкість, потім голод, далі сповільнення, а згодом втома від копання. Лише після накопичення достатньо значного впливу це спричиняє $(bold)смерть$()."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Канцерогени",
+			"item": "gtceu:chromium_dust",
+			"anchor": "carcinogens",
+			"text": "$(l:game_mechanics/hazards#mask)Захисна маска$() захищає від вдихання шкідливих хімічних речовин, а $(l:game_mechanics/hazards#gloves)рукавиці$() — від контакту з $(thing)хромовим пилом$().$(br)$(l:game_mechanics/hazards#hazmat)Захисний костюм$() забезпечує захист від обох типів впливу.$(br)У разі сильного впливу рекомендується прийняти $(l:game_mechanics/hazards#medicine)ліки$(), щоб $(thing)запобігти$() можливій шкоді."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Хімічні опіки",
+			"item": "gtceu:fluorine_bucket",
+			"anchor": "chemical_burns",
+			"text": "$(thing)Хімічні опіки$() спричиняються вдиханням або контактом зі шкірою певних $(thing)газів$(), $(thing)кислот$(), $(thing)лугів$() або $(thing)пилу$(). Вплив спричиняє $(item)слабкість$().$(br)$(l:game_mechanics/hazards#mask)Захисна маска$() захищає від вдихання, а $(l:game_mechanics/hazards#gloves)рукавиці$() — від прямого контакту зі шкірою.$(br)$(l:game_mechanics/hazards#hazmat)Захисний костюм$() захищає від усього."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Подразники",
+			"item": "gtceu:chromite_dust",
+			"anchor": "irritants",
+			"text": "$(thing)Подразнення$() спричиняється вдиханням $(thing)формиату амонію$() або контактом шкіри з $(thing)хромітовим пилом$(). Короткочасний контакт спричиняє лише слабкість, але якщо його ігнорувати протягом тривалішого часу, він починає $(item)завдавати випадкової шкоди$().$(br)$(l:game_mechanics/hazards#mask)Захисна маска$() захищає від вдихання, а $(l:game_mechanics/hazards#gloves)рукавиці$() — від прямого контакту зі шкірою.$(br)$(l:game_mechanics/hazards#hazmat)Захисний костюм$() захищає від обох типів впливу."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Отруєння метанолом",
+			"item": "gtceu:methanol_bucket",
+			"anchor": "methanol_poisoning",
+			"text": "$(thing)Отруєння метанолом$() спричиняється вдиханням $(thing)метанолу$(). Воно спричиняє сильний ефект $(item)сліпоти$().$(br)$(l:game_mechanics/hazards#mask)Захисна маска$() та $(l:game_mechanics/hazards#hazmat)захисний костюм$() захищають від вдихання."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Хімічні речовини, що спричиняють нудоту",
+			"item": "gtceu:butyraldehyde_bucket",
+			"anchor": "nauseating_chemicals",
+			"text": "$(thing)Хімічні речовини, що спричиняють нудоту$(), як-от $(thing)бутиральдегід$(), — це речовини, які під час вдихання спричиняють $(item)нудоту$().$(br)$(l:game_mechanics/hazards#mask)Захисна маска$() та $(l:game_mechanics/hazards#hazmat)захисний костюм$() захищають від вдихання."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Отруйні матеріали",
+			"item": "gtceu:lead_dust",
+			"anchor": "poisons",
+			"text": "Існує два типи $(thing)отруйних матеріалів$(). До слабких належить $(thing)свинцевий пил$(), тоді як сильніші отрути включають $(thing)діоксид азоту$(). $(thing)Слабкі отрути$() спричиняють ефект $(item)поступово сильнішого отруєння$(), тоді як $(thing)звичайні отрути$() спричиняють слабкість та ефект сильнішого отруєння.$(br)$(l:game_mechanics/hazards#mask)Захисна маска$() захищає від вдихання, а $(l:game_mechanics/hazards#gloves)рукавиці$() — від прямого контакту зі шкірою.$(br)$(l:game_mechanics/hazards#hazmat)Захисний костюм$() захищає від будь-якого контакту."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Силікоз",
+			"item": "gtceu:silicon_dioxide_dust",
+			"anchor": "silicosis",
+			"text": "$(thing)Силікоз$() — це захворювання, спричинене вдиханням $(thing)пилу діоксиду кремнію$(). Вплив спричиняє $(item)зменшення$() як $(item)здоров’я$(), так і $(item)запасу повітря$(), доступного тобі під час занурення $(thing)під воду$().$(br2)$(l:game_mechanics/hazards#mask)Захисна маска$() та $(l:game_mechanics/hazards#hazmat)захисний костюм$() забезпечують захист від вдихання діоксиду кремнію."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Радіоактивні матеріали",
+			"item": "gtceu:uranium_ingot",
+			"anchor": "radioactive_materials",
+			"text": "Більшість $(thing)радіоактивних речовин$(), як-от $(thing)Уран-238$(), ти зустрінеш лише на $(thing)рівні EV$() або вище. Вони $(item)назавжди опромінюють$() тебе. Невеликий вплив спричиняє світіння, але тривалий контакт викликає швидку $(bold)смерть$().$(br)Ми знаємо, що це виглядає смачно й містить мільярд калорій, але $(#ff0000)БУДЬ ЛАСКА, НЕ ЇЖ УРАН!$()"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Радіоактивні матеріали",
+			"item": "gtceu:plutonium_ingot",
+			"text": "Лише $(l:game_mechanics/hazards#hazmat)захисний костюм$(), а також деякі високотехнологічні обладунки забезпечують повний захист від радіації.$(br)Якщо ти все ж зазнав опромінення, вилікувати тебе може лише $(l:game_mechanics/hazards#rad_away)пігулка RadAwayᵗᵐ$()."
+		},
+		{
+			"type": "patchouli:relations",
+			"title": "Докладніше",
+			"anchor": "relations",
+			"entries": [
+				"tfg:the_world/geology",
+				"tfg:craftsmanship/metallurgy",
+				"tfg:cooking/food_and_water",
+				"tfg:game_mechanics/mining",
+				"tfg:game_mechanics/mob_effects",
+				"tfg:craftsmanship/clothing",
+				"tfg:game_mechanics/heating"
+			]
+		}
+	],
+	"extra_recipe_mappings": {
+		"tag:gtceu:ppe_armor": 6,
+		"tag:tfg:medicine": 7
+	}
+}

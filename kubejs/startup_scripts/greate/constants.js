@@ -35,6 +35,7 @@ global.GREATE_BELTS = /** @type {const} */ ([
     "greate:rubber_belt_connector",
     "greate:silicone_rubber_belt_connector",
     "greate:styrene_butadiene_rubber_belt_connector",
+
 ]);
 
 global.GREATE_CRUSHING_WHEELS = /** @type {const} */ ([

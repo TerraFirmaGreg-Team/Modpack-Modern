@@ -689,6 +689,15 @@ const registerGTCEURecipes = (event) => {
         fluidOutputs: { "gtceu:red_alloy": 720 }
 	});
 
+	// Change Butraldehyde to be craftable at MV
+
+	event.remove({ id: 'gtceu:large_chemical_reactor/butraldehyde' })
+	global.modifyRecipe(event, "gtceu:chemical_reactor/butraldehyde", {
+        newId: "tfg:butraldehyde",
+        duration: 20 * 30,
+        eut: GTValues.VA[GTValues.MV]
+    })
+
 	// Change Cracker to require Cleanroom
 
 	event.replaceInput({ id: 'gtceu:shaped/cracking_unit' }, '#gtceu:circuits/hv', '#gtceu:circuits/ev')

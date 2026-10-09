@@ -1,0 +1,119 @@
+{
+	"name": "建築工具",
+	"icon": "tfg:trowel",
+	"category": "tfg:craftsmanship",
+	"pages": [
+        {
+            "type": "patchouli:text",
+            "text": "工廠可不能蓋在一片空地上！本章列出一些工具，幫助你把美麗的風景鋪平，蓋出夢想中的倉庫。$(br2)$(bold)小技巧：$()直立半磚礙事嗎？按 $(item)$(k:key.additionalplacements.placement_toggle)$() 可以切換 $(thing)Additional Placements$()。"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "index",
+            "title": "目錄",
+            "text": "$(li)$(bold)$(l:craftsmanship/building_tools#trowel)鏝刀$()$(li)$(bold)$(l:craftsmanship/building_tools#stonecutter)切石機$()$(li)$(bold)$(l:craftsmanship/building_tools#copycats)仿製方塊$()$(li)$(bold)$(l:craftsmanship/building_tools#framing_saw)框架鋸$()$(li)$(bold)$(l:craftsmanship/building_tools#architects_cutter)建築師切割台$()$(li)$(bold)$(l:craftsmanship/building_tools#wands)建築杖$()$(li)$(bold)$(l:craftsmanship/building_tools#schematicannon)藍圖加農炮$()$(li)$(bold)$(l:craftsmanship/building_tools#terminals)GregTech 終端機$()$(li)$(bold)$(l:craftsmanship/building_tools#gadgets)Building Gadgets$()"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "鏝刀",
+            "item": "tfg:trowel",
+            "text": "使用$(item)鏝刀$()對表面按$(item)$(k:key.use)$()時，會從快捷欄中隨機放置方塊。$(br)鏝刀也內建支援 $(item)Roads and Roofs$() 模組，因此也能隨機放置磚塊或石板等填充物品。$(br)靈感來自 Vazkii 所製作的 $(item)Quark$() 模組中的鏝刀工具。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "stonecutter",
+            "item": "minecraft:stonecutter",
+            "title": "可自訂外觀的方塊",
+            "text": "$(tfg_short)有幾個模組專門新增可自訂外觀的方塊，讓你進行非常精細的建築。$(br2)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "copycats:copycat_block",
+            "title": "仿製方塊",
+            "anchor": "copycats",
+            "text": "$(bold)Create: Copycats+$() 新增了許多方塊，只要拿著另一個方塊對它按$(item)$(k:key.use)$()，就能複製該方塊的外觀。這些方塊可以用$(thing)切石機$()製作。$(br2)在 $(emi) 中搜尋 $(6)@copycats$() 就能查看它的方塊。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "framing_saw",
+            "item": "framedblocks:framing_saw,framedblocks:powered_framing_saw",
+            "text": "$(bold)Framed Blocks$() 新增了許多方塊，只要拿著另一個方塊對它按$(item)$(k:key.use)$()，就能複製該方塊的外觀。大多用$(thing)框架鋸$()製作。$(br2)在 $(emi) 中搜尋 $(6)@framedblocks$() 就能查看它的方塊。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "architects_cutter",
+            "item": "domum_ornamentum:architectscutter",
+            "text": "$(bold)Domum Ornamentum$() 新增的方塊可以複製其他方塊的外觀，甚至把多種方塊組合在一起。用$(thing)建築師切割台$()製作。$(br2)在 $(emi) 中搜尋 $(6)@domum_ornamentum$() 就能查看它的方塊。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "constructionwand:stone_wand,constructionwand:iron_wand,constructionwand:diamond_wand,constructionwand:infinity_wand",
+            "title": "建築杖",
+            "anchor": "wands",
+            "text": "建築杖可以輕鬆地一次放置大量方塊。只要拿著建築杖對方塊按右鍵，就會一次放置更多相同的方塊，非常適合鋪地板、砌牆等等。$(br2)拿著建築杖按 $(item)U$() 可以打開說明頁面。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "constructionwand:core_destruction,constructionwand:core_angel",
+            "title": "建築杖升級",
+            "text": "還有一些建築杖升級可以提供更多功能。$(br2)建築杖有耐久度，但可以用$(item)修理工具組$()修復。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "create:schematicannon,create:schematic_table",
+            "anchor": "schematicannon",
+            "text": "$(item)藍圖加農炮$()是一種自動建造機器，會依照指定的藍圖放置方塊。你可以用它把在創造世界中蓋好的建築搬過來，或是複製貼上部分結構。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "gtceu:terminal,gtceuterminal:schematic_interface,gtceuterminal:dismantler",
+            "title": "GregTech 終端機",
+            "anchor": "terminals",
+            "text": "$(item)終端機$()會使用物品欄中的物品，自動建造 $(thing)GregTech 多方塊結構$()。$(br2)$(item)藍圖介面$()可以複製貼上$(thing)多方塊結構$()，而$(item)拆解器$()則能一鍵把它們完全拆除。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "buildinggadgets2:gadget_building,buildinggadgets2:gadget_exchanging,buildinggadgets2:gadget_copy_paste,buildinggadgets2:gadget_cut_paste,buildinggadgets2:gadget_destruction",
+            "anchor": "gadgets",
+            "title": "Building Gadgets",
+            "text": "在 $(5)EV$() 階段解鎖的 $(thing)Building Gadgets$() 是強大的工具，可以剪下、複製、貼上，或進行其他大規模的建築操作。"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "buildinggadgets2:shapeless/guide_book",
+            "title": "另一本書",
+            "text": "Building Gadgets 有自己的$(thing)指南書$()，可以像這樣合成。"
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "延伸閱讀",
+            "anchor": "relations",
+            "entries": [
+                "tfg:craftsmanship/anvils",
+                "tfg:craftsmanship/chisel",
+                "tfg:craftsmanship/metallurgy",
+                "tfg:craftsmanship/building_materials"
+            ]
+        }
+	],
+	"read_by_default": true,
+	"sortnum": 21,
+	"extra_recipe_mappings": {
+        "tfg:trowel": 1,
+        "domum_ornamentum:architectscutter": 5,
+        "framedblocks:framing_saw": 4,
+        "framedblocks:powered_framing_saw": 4,
+        "minecraft:stonecutter": 2,
+        "constructionwand:stone_wand": 6,
+        "constructionwand:iron_wand": 6,
+        "constructionwand:diamond_wand": 6,
+        "constructionwand:infinity_wand": 6,
+        "constructionwand:core_destruction": 7,
+        "constructionwand:core_angel": 7,
+        "create:schematicannon": 8,
+        "create:schematic_table": 8,
+        "gtceu:terminal": 9,
+        "gtceuterminal:schematic_interface": 9,
+        "gtceuterminal:dismantler": 9
+	}
+}

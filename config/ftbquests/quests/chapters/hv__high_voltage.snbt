@@ -20,13 +20,6 @@
 			y: -8.5d
 		}
 		{
-			icon: "tfg:compressed_nitrox_bucket"
-			id: "33D3C2A9337335D2"
-			linked_quest: "493D733A5438DD7E"
-			x: 11.0d
-			y: 0.0d
-		}
-		{
 			id: "2CDC2C148418F176"
 			linked_quest: "396E85A39FF414CF"
 			shape: "gear"
@@ -60,14 +53,6 @@
 			linked_quest: "0585527D1854628B"
 			x: 19.0d
 			y: -2.0d
-		}
-		{
-			id: "0518FD802310830C"
-			linked_quest: "1A9A5F55F1F0AC58"
-			shape: "octagon"
-			size: 2.0d
-			x: 17.0d
-			y: -6.0d
 		}
 		{
 			id: "32FFB5754312AA2F"
@@ -1001,7 +986,6 @@
 				"3E2F96A02FEF12AC"
 				"1E307CD76691C24F"
 				"4AD686D18247315E"
-				"72BD27FEEB34C7B0"
 			]
 			dependency_requirement: "one_completed"
 			description: ["{quests.high_voltage.rocket_t1.desc}"]
@@ -1125,6 +1109,7 @@
 			dependencies: ["3FBDC8552F7D8008"]
 			dependency_requirement: "one_completed"
 			description: ["{quests.high_voltage.rocket_fuel.desc}"]
+			guide_page: "tfg:field_guide tfg:the_moon/preparations"
 			id: "6EF2D4D1C1CC9D3E"
 			subtitle: "{quests.high_voltage.rocket_fuel.subtitle}"
 			tasks: [{
@@ -1143,6 +1128,7 @@
 				"038B204DAC9C863D"
 			]
 			description: ["{quests.high_voltage.welcome_moon.desc}"]
+			guide_page: "tfg:field_guide tfg:the_moon/the_moon"
 			id: "00A2566109144D7F"
 			rewards: [{
 				id: "4E4076733CA38807"
@@ -1166,7 +1152,6 @@
 		{
 			dependencies: [
 				"3FBDC8552F7D8008"
-				"72BD27FEEB34C7B0"
 				"1FF607647FA682B3"
 			]
 			dependency_requirement: "one_completed"
@@ -1175,6 +1160,7 @@
 				"{@pagebreak}"
 				"{quests.high_voltage.space_suit.desc.2}"
 			]
+			guide_page: "tfg:field_guide tfg:the_moon/preparations"
 			id: "038B204DAC9C863D"
 			subtitle: "{quests.high_voltage.space_suit.subtitle}"
 			tasks: [
@@ -1242,6 +1228,7 @@
 		{
 			dependencies: ["3FBDC8552F7D8008"]
 			description: ["{quests.high_voltage.launch_pad.desc}"]
+			guide_page: "tfg:field_guide tfg:the_moon/preparations"
 			id: "6752CC523D38A214"
 			subtitle: "{quests.high_voltage.launch_pad.subtitle}"
 			tasks: [{
@@ -1368,26 +1355,16 @@
 			y: -4.0d
 		}
 		{
-			dependencies: ["00A2566109144D7F"]
-			description: ["{quests.high_voltage.space_survival.desc}"]
-			icon: "ad_astra:oxygen_distributor"
-			id: "08AAD91CE348A08B"
-			subtitle: "{quests.high_voltage.space_survival.subtitle}"
-			tasks: [{
-				id: "66E3342A47817498"
-				title: "{quests.high_voltage.space_survival.title}"
-				type: "checkmark"
-			}]
-			title: "{quests.high_voltage.space_survival.title}"
-			x: 12.0d
-			y: -4.0d
-		}
-		{
-			dependencies: ["00A2566109144D7F"]
+			dependencies: [
+				"00A2566109144D7F"
+				"578ECB10B30A77C7"
+			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.high_voltage.moon_harvester.desc}"]
+			guide_page: "tfg:field_guide tfg:the_moon/moon_biomes 12"
 			id: "6A21CCAEB1FDF38E"
 			shape: "octagon"
-			size: 2.0d
+			size: 1.5d
 			subtitle: "{quests.high_voltage.moon_harvester.subtitle}"
 			tasks: [{
 				id: "445320F445BA829F"
@@ -1395,8 +1372,8 @@
 				type: "item"
 			}]
 			title: "{quests.high_voltage.moon_harvester.title}"
-			x: 14.0d
-			y: 3.0d
+			x: 17.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["00A2566109144D7F"]
@@ -1412,146 +1389,12 @@
 			}]
 			title: "{quests.high_voltage.regolith_vapor.title}"
 			x: 17.5d
-			y: 0.0d
-		}
-		{
-			dependencies: ["6A21CCAEB1FDF38E"]
-			description: ["{quests.high_voltage.regolith_dust.desc}"]
-			id: "0527DF6A8567FED9"
-			subtitle: "{quests.high_voltage.regolith_dust.subtitle}"
-			tasks: [
-				{
-					id: "567BAEEB6120F6CE"
-					item: "tfg:certus_regolith_dust"
-					type: "item"
-				}
-				{
-					id: "5507A8B1561AC3C3"
-					item: "tfg:cassiterite_regolith_dust"
-					type: "item"
-				}
-				{
-					id: "13C520F021B2E085"
-					item: "tfg:bright_regolith_dust"
-					type: "item"
-				}
-				{
-					id: "3565544FF49B9F50"
-					item: "tfg:goethe_regolith_dust"
-					type: "item"
-				}
-			]
-			title: "{quests.high_voltage.regolith_dust.title}"
-			x: 16.0d
-			y: 3.0d
-		}
-		{
-			dependencies: [
-				"0527DF6A8567FED9"
-				"578ECB10B30A77C7"
-			]
-			description: ["{quests.high_voltage.dusty_ores.desc}"]
-			id: "5807400FD1F0998A"
-			subtitle: "{quests.high_voltage.dusty_ores.subtitle}"
-			tasks: [{
-				id: "131B1D5F37FAC1F3"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "or(item(gtceu:dusty_raw_goethite)item(gtceu:dusty_raw_cassiterite)item(gtceu:dusty_raw_certus_quartz)item(gtceu:dusty_raw_gold)item(gtceu:dusty_raw_diamond))"
-					}
-				}
-				title: "{quests.high_voltage.dusty_ores.task}"
-				type: "item"
-			}]
-			title: "{quests.high_voltage.dusty_ores.title}"
-			x: 17.5d
-			y: 3.0d
-		}
-		{
-			dependencies: ["5807400FD1F0998A"]
-			description: ["{quests.high_voltage.final_dust.desc}"]
-			id: "36FE3DDBCB535639"
-			optional: true
-			shape: "heart"
-			size: 1.25d
-			subtitle: "{quests.high_voltage.final_dust.subtitle}"
-			tasks: [
-				{
-					id: "1ABCC8007A69EF81"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "gtceu:iron_dust"
-					}
-					type: "item"
-				}
-				{
-					id: "3AB1A3B8E6EB4291"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "gtceu:copper_dust"
-					}
-					type: "item"
-				}
-				{
-					id: "1D38FECBB23C3E24"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "gtceu:tin_dust"
-					}
-					type: "item"
-				}
-				{
-					id: "6C9C5498495F330C"
-					item: "ae2:certus_quartz_dust"
-					type: "item"
-				}
-				{
-					id: "0AF375FA38D44C32"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "gtceu:gold_dust"
-					}
-					type: "item"
-				}
-				{
-					id: "6896A082D722EECB"
-					item: "gtceu:diamond_dust"
-					type: "item"
-				}
-			]
-			title: "{quests.high_voltage.final_dust.title}"
-			x: 17.5d
-			y: 4.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["396E85A39FF414CF"]
 			description: ["{quests.high_voltage.wand.desc}"]
+			guide_page: "tfg:field_guide tfg:craftsmanship/building_tools 6"
 			id: "22FD785F84E9D10D"
 			optional: true
 			shape: "heart"
@@ -1733,7 +1576,16 @@
 		{
 			dependencies: ["05ABC370D7153350"]
 			description: ["{quest.high_voltage.ultimet.desc}"]
-			icon: "gtceu:ultimet_ingot"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "gtceu:ultimet_ingot"
+			}
 			id: "4C25552DC291F49A"
 			subtitle: "{quest.high_voltage.ultimet.subtitle}"
 			tasks: [
@@ -1767,6 +1619,12 @@
 						}
 					}
 					match_nbt: true
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "195F971960F976EF"
+					item: "tfg:stainless_steel_anvil"
 					optional_task: true
 					type: "item"
 				}
@@ -1813,6 +1671,12 @@
 					}
 					optional_task: true
 					title: "{quests.high_voltage.boron_tools.task}"
+					type: "item"
+				}
+				{
+					id: "1C79B9431FFDA07E"
+					item: "tfg:stainless_steel_anvil"
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -1883,7 +1747,7 @@
 				}
 			]
 			x: 19.0d
-			y: -3.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["00A2566109144D7F"]
@@ -1966,7 +1830,7 @@
 			}]
 			title: "{quests.high_voltage.perlite.title}"
 			x: 17.5d
-			y: -4.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["52AD30F04DD5A812"]
@@ -2031,6 +1895,72 @@
 			}]
 			title: "{quests.high_voltage.wireless_charger.title}"
 			x: 12.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["038B204DAC9C863D"]
+			dependency_requirement: "one_completed"
+			description: ["{quests.space_survival.compressed_gases.desc}"]
+			guide_page: "tfg:field_guide tfg:the_moon/preparations"
+			icon: "tfg:compressed_nitrox_bucket"
+			id: "403B34B669894C26"
+			subtitle: "{quests.space_survival.compressed_gases.subtitle}"
+			tasks: [
+				{
+					id: "6CD77EF0B792F4F4"
+					item: "tfg:compressed_nitrox_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "51D6A0F834A9A5F2"
+					item: "tfg:compressed_heliox_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "053236ED5BFE8A51"
+					item: "tfg:compressed_heliox_3_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "0F6CC5C2B8CF5C85"
+					item: "tfg:compressed_trimix_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "31D2BD0CC95A7E6C"
+					item: "tfg:compressed_trimix_3_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "5012638FD561735A"
+					type: "checkmark"
+				}
+			]
+			title: "{quests.space_survival.compressed_gases.title}"
+			x: 11.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["00A2566109144D7F"]
+			description: ["{quests.space_survival.railgun.desc}"]
+			guide_page: "tfg:field_guide tfg:logistics/railgun"
+			icon: "tfg:railgun_ammo_shell"
+			id: "47E88A5E8AE13326"
+			shape: "octagon"
+			size: 1.5d
+			subtitle: "{quests.space_survival.railgun.subtitle}"
+			tasks: [{
+				id: "3AD81F588E54E6F2"
+				item: "tfg:interplanetary_item_launcher"
+				type: "item"
+			}]
+			title: "{quests.space_survival.railgun.title}"
+			x: 17.5d
 			y: -6.0d
 		}
 	]

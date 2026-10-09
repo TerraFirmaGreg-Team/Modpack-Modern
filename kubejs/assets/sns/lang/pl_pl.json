@@ -38,8 +38,8 @@
   "sns.status.item_container.no_pickup": "%s ma wyłączone podnoszenie przedmiotów",
   "sns.status.mob_net.cannot_capture_generic": "Nie możesz przechwycić %ss",
   "sns.status.mob_net.cannot_capture_players": "Nie możesz chwytać graczy",
-  "sns.status.mob_net.cannot_capture_size": "Zwierze jest za duże, żeby pochwycić: %s",
-  "sns.status.mob_net.cannot_place": "Nie ma tu wystarczająco miejsca, żeby wypuścić załapany byt: %s",
+  "sns.status.mob_net.cannot_capture_size": "%s jest zbyt duży, aby można go było schwytać",
+  "sns.status.mob_net.cannot_place": "Nie ma tu wystarczająco miejsca, aby wypuścić załapany byt: %s",
   "sns.status.sack.auto_pickup": "Podnoszenie przedmiotów: %s",
   "sns.tooltip.food_trait.lunchbox": "Zakonserwowane w śniadaniówce",
   "sns.tooltip.hiking_boots.prevents_slow": "Zapobiega spowolnieniu przez wysoką trawę",
@@ -50,7 +50,7 @@
   "sns.tooltip.item_container.slot_count": "Liczba slotów: %s",
   "sns.tooltip.item_container.tooltip.inventory_interaction": "Interakcja w ekwipunku: %s",
   "sns.tooltip.item_container.tooltip.pickup": "Podnoszenie przedmiotów: %s",
-  "sns.tooltip.item_container.tooltip.shift": "Przytrzymaj (shift), by zobaczyć więcej informacji",
+  "sns.tooltip.item_container.tooltip.shift": "Przytrzymaj (shift), aby zobaczyć więcej informacji",
   "sns.tooltip.item_container.tooltip.void": "Usuwanie przedmiotów: %s",
   "sns.tooltip.lunchbox.selected_slot": "Wybrany slot: %s"
 }

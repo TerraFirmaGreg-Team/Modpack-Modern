@@ -1,0 +1,36 @@
+{
+    "name": "碗",
+    "category": "tfg:cooking",
+    "icon": "tfc:ceramic/bowl",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(thing)碗$()是一種多用途的工具，可以用來製作$(l:cooking/salad)沙拉$()、煮$(l:cooking/cooking_methods#pot)湯$()、$(l:cooking/decay#salting)醃製$()肉類，或將$(thing)粉末$()加到$(l:craftsmanship/glassworking#coloring)玻璃$()上以改變玻璃的顏色。$(br2)碗可以用$(thing)陶瓷$()製作――用黏土塑形出碗再燒製――也可以用木頭製作。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "要製作$(item)沙拉$()，手持碗對著空中按下$(item)$(k:key.sneak) + $(k:key.use)$()即可開啟介面。$(br2)碗也可以像方塊一樣放在地上。放置後，可以裝入任何種類的$(thing)粉末$()――也就是在$(l:craftsmanship/quern)手推磨$()中研磨礦石、礦物或寶石得到的產物。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tag:tfc:powders",
+            "anchor": "powder_bowl",
+            "title": "粉末",
+            "link_recipes": false,
+            "text": "粉末碗最多可以盛裝 16 份同一種粉末。要放入物品，請手持粉末按 $(item)$(k:key.use)$()。要取出物品，請空手按 $(item)$(k:key.use)$()。$(br2)按住 $(item)$(k:key.sneak)$() 可以一次取出碗中的全部內容物。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tfc:powder/salt",
+            "link_recipes": false,
+            "text": "手持生肉點選裝有鹽的碗可以製作出鹹肉。這與直接在合成格中製作效果相同。"
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 12,
+    "extra_recipe_mappings": {
+        "tfc:ceramic/unfired_bowl": 1,
+        "tfc:ceramic/bowl": 1,
+        "minecraft:bowl": 1
+    }
+}

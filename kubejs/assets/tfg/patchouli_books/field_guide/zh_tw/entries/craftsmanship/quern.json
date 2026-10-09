@@ -1,0 +1,93 @@
+{
+    "name": "手推磨",
+    "category": "tfg:craftsmanship",
+    "icon": "tfc:quern",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(thing)手推磨$()是用來研磨物品的裝置。它可以粉碎原礦以進行$(l:game_mechanics/mining#processing)加工$()，也能製作粉末、$(thing)染料$()和其他一些物品。它由$(thing)底座$()和$(thing)手磨石$()組成。$(br)從頂面提供 <32RPM 的$(thing)機械動力$()即可自動化手推磨。"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "tfc:crafting/quern",
+            "text": "手推磨的底座可以用三個$(t:#forge:smooth_stone)$(6)平滑石$()和三個任意其他$(t:#forge:stone)$(6)石頭$()方塊合成。$(br2)原石方塊可以透過$(l:craftsmanship/anvils#raw_rock)取出$()取得，平滑方塊則可以用$(l:craftsmanship/chisel)鑿子$()製作。"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "tfc:crafting/handstone",
+            "text": "手推磨還需要$(thing)磨盤$()才能使用。"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/quern_empty.png"
+            ],
+            "text": "對準手推磨底座的頂面按$(item)$(k:key.use)$()放上磨盤。",
+            "border": true
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/quern_add_item.png"
+            ],
+            "text": "手持需要研磨的物品對準磨盤頂部的小孔按$(item)$(k:key.use)$()放入。",
+            "border": true
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/quern_handle.png"
+            ],
+            "text": "對準磨盤的把手按$(item)$(k:key.use)$()旋轉。",
+            "border": true
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/tutorial/quern_result.png"
+            ],
+            "text": "處理完成後會在底座的周圍輸出。$(item)$(k:key.use)$()底座就能取出。",
+            "border": true
+        },
+        {
+            "type": "tfg:quern_recipe",
+            "recipe": "tfg:quern/copper_crushed_ore_from_normal_raw_ore",
+            "text": "可以粉碎$(l:game_mechanics/mining#processing)礦石$()以取得更多金屬。",
+            "title": "碎礦"
+        },
+        {
+            "type": "tfg:quern_recipe",
+            "recipe": "tfg:quern/sulfur",
+            "text": "手推磨可以將礦粉磨製各式各樣的$(thing)粉末$()，如$(thing)硫磺$()。$(thing)寶石$()也可研磨成粉末。",
+            "title": "粉末"
+        },
+        {
+            "type": "tfg:quern_recipe",
+            "recipe": "tfc:quern/red_dye",
+            "text": "$(thing)染料$()可以從各種花朵中取得。",
+            "title": "染料"
+        },
+        {
+            "type": "tfg:quern_recipe",
+            "recipe": "tfc:quern/barley_grain",
+            "text": "$(thing)農作物$()可用刀具或手推磨加工成 $(thing)穀物$()，進一步研磨可得到 $(thing)麵粉$()。"
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "延伸閱讀",
+            "anchor": "relations",
+            "entries": [
+                "tfg:the_world/geology",
+                "tfg:cooking/bread",
+                "tfg:craftsmanship/metallurgy",
+                "tfg:game_mechanics/mining"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 14,
+    "extra_recipe_mappings": {
+        "tfc:handstone": 0,
+        "tfc:quern": 0
+    }
+}

@@ -142,6 +142,43 @@ function registerGTCEUItemTags(event) {
         event.add('gtceu:drums', drum);
     });
 
+    /**
+     * @type {{Item[]}}
+     */
+    const crates = [
+        'gtceu:wood_crate',
+        'gtceu:bronze_crate',
+        'gtceu:bismuth_bronze_crate',
+        'gtceu:black_bronze_crate',
+        'gtceu:steel_crate',
+        'gtceu:aluminium_crate',
+        'gtceu:stainless_steel_crate',
+        'gtceu:titanium_crate',
+        'gtceu:tungstensteel_crate'
+    ];
+    crates.forEach(crate => {
+        event.add('gtceu:crates', crate);
+    });
+
+    /**
+     * @type {{Item[]}}
+     */
+    const superChests = [
+        'gtceu:ulv_super_chest',
+        'gtceu:lv_super_chest',
+        'gtceu:mv_super_chest',
+        'gtceu:hv_super_chest',
+        'gtceu:ev_super_chest',
+        'gtceu:iv_quantum_chest',
+        'gtceu:luv_quantum_chest',
+        'gtceu:zpm_quantum_chest',
+        'gtceu:uv_quantum_chest',
+        'gtceu:uhv_quantum_chest'
+    ];
+    superChests.forEach(superChest => {
+        event.add('gtceu:super_chests', superChest);
+    });
+
     const wafers = [
         'gtceu:silicon_wafer',
         'gtceu:phosphorus_wafer',
@@ -201,6 +238,80 @@ function registerGTCEUBlockTags(event) {
     })
 
     event.add('gtceu:mineable/pickaxe_or_wrench', '#gtceu:lamps')
+
+    /**
+     * @type {{Item[]}}
+     */
+    const superTanks = [
+        'gtceu:ulv_super_tank',
+        'gtceu:lv_super_tank',
+        'gtceu:mv_super_tank',
+        'gtceu:hv_super_tank',
+        'gtceu:ev_super_tank',
+        'gtceu:iv_quantum_tank',
+        'gtceu:luv_quantum_tank',
+        'gtceu:zpm_quantum_tank',
+        'gtceu:uv_quantum_tank',
+        'gtceu:uhv_quantum_tank'
+    ];
+    superTanks.forEach(tank => {
+        event.add('gtceu:super_tanks', tank)
+    });
+
+    /**
+     * @type {{Item[]}}
+     */
+    const drums = [
+        'gtceu:bronze_drum',
+        'gtceu:bismuth_bronze_drum',
+        'gtceu:black_bronze_drum',
+        'gtceu:steel_drum',
+        'gtceu:aluminium_drum',
+        'gtceu:stainless_steel_drum',
+        'gtceu:gold_drum',
+        'gtceu:titanium_drum',
+        'gtceu:tungstensteel_drum'
+    ];
+    drums.forEach(drum => {
+        event.add('gtceu:drums', drum);
+    });
+
+    /**
+     * @type {{Item[]}}
+     */
+    const crates = [
+        'gtceu:wood_crate',
+        'gtceu:bronze_crate',
+        'gtceu:bismuth_bronze_crate',
+        'gtceu:black_bronze_crate',
+        'gtceu:steel_crate',
+        'gtceu:aluminium_crate',
+        'gtceu:stainless_steel_crate',
+        'gtceu:titanium_crate',
+        'gtceu:tungstensteel_crate'
+    ];
+    crates.forEach(crate => {
+        event.add('gtceu:crates', crate);
+    });
+
+    /**
+     * @type {{Item[]}}
+     */
+    const superChests = [
+        'gtceu:ulv_super_chest',
+        'gtceu:lv_super_chest',
+        'gtceu:mv_super_chest',
+        'gtceu:hv_super_chest',
+        'gtceu:ev_super_chest',
+        'gtceu:iv_quantum_chest',
+        'gtceu:luv_quantum_chest',
+        'gtceu:zpm_quantum_chest',
+        'gtceu:uv_quantum_chest',
+        'gtceu:uhv_quantum_chest'
+    ];
+    superChests.forEach(superChest => {
+        event.add('gtceu:super_chests', superChest);
+    });
 }
 
 /** @param {TagEvent.Fluid} event  */

@@ -1,0 +1,8 @@
+{
+    "parent": "tfc:block/anvil",
+    "textures": {
+        "all": "tfg:block/metal/smooth/tungsten",
+        "particle": "tfg:block/metal/smooth/tungsten"
+    },
+    "__comment__": "This file was automatically created by mcresources"
+}
