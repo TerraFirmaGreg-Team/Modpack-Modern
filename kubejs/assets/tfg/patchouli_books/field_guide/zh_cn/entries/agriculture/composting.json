@@ -1,23 +1,23 @@
 {
-    "name": "Composting",
+    "name": "堆肥",
     "category": "tfg:agriculture",
     "icon": "tfc:composter",
     "pages": [
         {
             "type": "patchouli:text",
-            "title": "Index",
+            "title": "目录",
             "anchor": "index",
-            "text": "$(li)$(bold)$(l:agriculture/composting#compostables)Compostables$()$(li2)$(l:agriculture/composting#green_compost)Green Compost$()$(li2)$(l:agriculture/composting#brown_compost)Brown Compost$()$(li2)$(l:agriculture/composting#compost_poisons)Rotten Compost$()$(li)$(bold)$(l:agriculture/composting#compost_tumbler)Compost Tumbler$()"
+            "text": "$(li)$(bold)$(l:agriculture/composting#compostables)可堆肥物$()$(li2)$(l:agriculture/composting#green_compost)绿色堆肥$()$(li2)$(l:agriculture/composting#brown_compost)褐色堆肥$()$(li2)$(l:agriculture/composting#compost_poisons)腐烂的堆肥$()$(li)$(bold)$(l:agriculture/composting#compost_tumbler)堆肥滚筒$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "intro",
-            "title": "Intro to Composting",
-            "text": "Composting is an essential process for making fertilizer. It needs both $(2)\"Green\"$() and $(4)\"Brown\"$() organics to work. Different items contribute more to the amount of compost produced than others. To add an item to a composter, $(item)$(k:key.use)$() the block while holding a valid item. The items that can be added are described on later pages."
+            "title": "堆肥简介",
+            "text": "堆肥是制作肥料的必要过程。它需要 $(2)“绿色”$() 和 $(4)“褐色”$() 有机物才能运作。不同物品对堆肥产量的贡献也不同。要向堆肥桶添加物品，手持有效物品对着方块 $(item)$(k:key.use)$() 即可。可添加的物品会在后面的页面中介绍。"
         },
         {
             "type": "patchouli:text",
-            "text": "Composters operate better in certain conditions. Composters that have a block of snow on top work slightly faster. Composters in regions of $(6)<150mm$() or $(3)>350mm$() of rainfall operate much slower, with that effect getting stronger closer to the maximum and minimum rainfall. Also, composters that are touching other composters work slower."
+            "text": "堆肥桶所处的环境对于其工作效率有影响。顶部压着雪块的堆肥桶运作得稍快一些。位于降雨量 $(6)<150mm$() 或 $(3)>350mm$() 地区的堆肥桶运作慢得多，越接近降雨量的上下限时效果损失越大。此外，相邻摆放的堆肥桶工作效率也会降低。"
         },
         {
             "type": "tfg:multimultiblock",
@@ -66,34 +66,34 @@
         },
         {
             "type": "patchouli:text",
-            "text": "The composter takes 6 days to complete in average conditions. When it is ready, it will have a dirt-like color and gray particles will be emitted from the top of it. The compost can then be retrieved with $(item)$(k:key.sneak) + $(k:key.use)$() with an empty hand. Adding things like $(c)meat$() and $(c)bones$() to compost spoils it, turning it reddish and causing it to emit gross particles. When this rotten compost is used on a crop, it instantly kills it. Which can be helpful for $(l:agriculture/growing_crops)Duplicating Seeds$() from mature plants!"
+            "text": "在一般条件下，堆肥桶需要 6 天才能完成。完成后，它会呈现出类似泥土的颜色，并从顶部冒出灰色粒子。之后空手 $(item)$(k:key.sneak) + $(k:key.use)$() 即可取出堆肥。往堆肥里加入 $(c)肉类$() 和 $(c)骨头$() 之类的东西会使其变质，颜色发红并散发恶心的粒子。这些腐烂的堆肥用在作物上会立刻杀死作物——不过这正好可以用来从成熟植株上 $(l:agriculture/growing_crops)复制种子$()！"
         },
         {
             "type": "patchouli:text",
-            "title": "Compostables",
+            "title": "可堆肥物",
             "anchor": "compostables",
-            "text": "Compostables are seperated by quality. Lows provide a value of 1, Mediums 2, Highs 4.$(li)$(l)$(2)Green$():$(li2)$(l)$(t:#tfc:compost_greens_low)Low:$() Basic plants and saplings.$(li2)$(l)$(t:#tfc:compost_greens)Medium:$() $(l:cooking/food_and_water#grain)Grains$(), moss blocks, mushroom blocks.$(li2)$(l)$(t:#tfc:compost_greens_high)High:$() $(l:cooking/food_and_water#vegetables)Vegetables$() and $(l:cooking/food_and_water#vegetables)Fruits$().$(li)$(l)$(4)Brown$():$(li2)$(l)$(t:#tfc:compost_browns_low)Low:$() Vines.$(li2)$(l)$(t:#tfc:compost_browns)Medium:$() Wood ash, fibers, anemone.$(li2)$(l)$(t:#tfc:compost_browns_high)High:$() Humus, dead grass, driftwood."
+            "text": "可堆肥物按品质分类。低品质提供 1 点，中品质 2 点，高品质 4 点。$(li)$(l)$(2)绿色$()：$(li2)$(l)$(t:#tfc:compost_greens_low)低：$() 基础植物和树苗。$(li2)$(l)$(t:#tfc:compost_greens)中：$() $(l:cooking/food_and_water#grain)谷物$()、苔藓方块、蘑菇方块。$(li2)$(l)$(t:#tfc:compost_greens_high)高：$() $(l:cooking/food_and_water#vegetables)蔬菜$() 和 $(l:cooking/food_and_water#vegetables)水果$()。$(li)$(l)$(4)褐色$()：$(li2)$(l)$(t:#tfc:compost_browns_low)低：$() 藤蔓。$(li2)$(l)$(t:#tfc:compost_browns)中：$() 草木灰、纤维、银莲花。$(li2)$(l)$(t:#tfc:compost_browns_high)高：$() 腐殖质、枯草、浮木。"
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Green Compost",
+            "title": "绿色堆肥",
             "anchor": "green_compost",
             "item": "tfg:universal_compost_greens,tfg:universal_compost_greens_bag",
-            "text": "All $(2)\"Green\"$() compost items can be used directly on a composter or turned into universal compost which condenses these items down to take up less space. Universal green compost gives a value of 1 when used in a composter. Universal green compost can be further compacted into bags which give a value of 4."
+            "text": "所有 $(2)“绿色”$() 堆肥物品既可以直接用于堆肥桶，也可以制成通用堆肥——把零散物品压缩起来，占用更少空间。通用绿色堆肥用于堆肥桶时提供 1 点数值。通用绿色堆肥还可以进一步压缩成袋装，数值为 4。"
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Brown Compost",
+            "title": "褐色堆肥",
             "anchor": "brown_compost",
             "item": "tfg:universal_compost_browns,tfg:universal_compost_browns_bag",
-            "text": "All $(4)\"Brown\"$() compost items can be used directly on a composter or turned into universal compost like their green counterpart. Universal brown compost gives a value of 1 when used in a composter. Universal brown compost bags give a value of 4."
+            "text": "所有 $(4)“褐色”$() 堆肥物品和绿色堆肥一样，既可以直接用于堆肥桶，也可以制成通用堆肥。通用褐色堆肥用于堆肥桶时提供 1 点数值。通用褐色堆肥袋提供 4 点数值。"
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Compost Poisons",
+            "title": "堆肥毒物",
             "anchor": "compost_poisons",
             "item": "tag:tfc:compost_poisons",
-            "text": "Some items will $(c)poison$() your compost, turning it rotten. These include $(c)meat$() and $(c)bones$(). Rotten compost, when used on a crop, instantly kills it. If the crop is fully mature when it dies it will yield multiple seeds. Crops that can be used in compost like grains and vegetables will work even when rotten. They are not compost poisons. "
+            "text": "有些物品会 $(c)毒害$() 你的堆肥，使其变质腐烂。这包括 $(c)肉类$() 和 $(c)骨头$()。腐烂的堆肥用在作物上会立刻将其杀死。如果作物死亡时已完全成熟，会产出多枚种子。谷物和蔬菜这类可用于堆肥的作物即使腐烂也能使用，它们不属于堆肥毒物。"
         },
         {
             "type": "patchouli:multiblock",
@@ -111,7 +111,7 @@
                 }
             },
             "anchor": "rotten_compost",
-            "name": "Rotten Compost",
+            "name": "腐烂的堆肥",
             "text": "污染的堆肥桶。",
             "enable_visualize": false
         },
@@ -119,23 +119,23 @@
             "type": "patchouli:spotlight",
             "anchor": "compost_tumbler",
             "item": "firmalife:compost_tumbler",
-            "text": "$(thing)Compost Tumblers$() are a great way to produce more fertilizer. They must be connected to $(item)Create$() mechanical power from their side in order to work. Tumblers have an $(thing)RPM$() limit of 16 and a kinetic capacity of 8 $(thing)SU$(). It can only be interacted with when not powered, so consider connecting it to a clutch!"
+            "text": "$(thing)堆肥滚筒$()是产出更多肥料的好帮手。它必须从侧面接入 $(item)机械动力$() 的旋转动力才能工作。滚筒的 $(thing)RPM$() 上限为 16，动力容量为 8 $(thing)SU$()。只有在未供能时才能与它交互，所以考虑把它接到离合器上！"
         },
         {
             "type": "patchouli:text",
-            "text": "The compost tumbler is unique in that it takes more types of compost, and does not require precise ratios in order to work.$(br2)The tumbler can take green and brown items like a regular composter. It can also take pottery sherds, charcoal, fish, and bones in small amounts."
+            "text": "堆肥滚筒的独特之处在于它能接受更多种类的堆肥原料，而且不需要精确的比例就能工作。$(br2)滚筒可以像普通堆肥桶一样接受绿色和褐色物品，还能接受少量陶片、木炭、鱼和骨头。"
         },
         {
             "type": "patchouli:text",
-            "text": "Green and brown items count the same, being on the range 1-4, but the new additions like fish always count for 1. Adding too much weird stuff to the composter causes it to produce rotten compost. Further, you will not know it is rotten until the very end! If the compost is more than fifteen percent bones, fish, or pottery, or more than twenty percent charcoal, it will rot. Or, if there are 10 or more green units than brown units, it will rot."
+            "text": "绿色和褐色物品的计算方式相同，数值范围都是 1-4，但鱼类等新增原料始终算作 1。往堆肥桶里塞太多奇怪的东西，它就会产出腐烂的堆肥。而且，你要到最后一刻才会发现堆肥烂了！如果骨头、鱼或陶片占比超过 15%，或木炭占比超过 20%，堆肥就会腐烂。或者，如果绿色单位比褐色单位多出 10 个或更多，它也会腐烂。"
         },
         {
             "type": "patchouli:text",
-            "text": "Favorable amounts of certain additions can extend or shorten the length of time it takes for the compost to complete. Rotation speed does not impact the processing speed!$(br)If 32 units are in the composter, 3 compost will be produced. If at least 24, 2 compost will be made. If 16 or more, 1 will be made. Below that, and there will be no compost."
+            "text": "某些原料的合适用量可以延长或缩短堆肥完成所需的时间。转速并不影响处理速度！$(br)如果堆肥桶中有 32 个单位，将产出 3 份堆肥；至少 24 个产出 2 份；16 个或以上产出 1 份。低于这个数量，就没有堆肥。"
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "延伸阅读",
             "anchor": "relations",
             "entries": [
                 "tfg:cooking/decay",

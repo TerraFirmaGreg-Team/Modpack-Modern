@@ -75,7 +75,7 @@
 			"entity": "tfg:glacian_ram{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
 			"scale": 0.7,
 			"name": " ",
-			"text": "Lodowcowy baran/owca"
+			"text": "Lodowcowy baran/owca."
 		},
 		{
 			"type": "patchouli:text",
@@ -161,7 +161,7 @@
 			"offset": 0.2,
 			"name": "Szybowiec",
 			"anchor": "glider",
-			"text": "Despite their name, $(thing)Gliders$() cannot be tamed or ridden. They are passive and live in areas above -105°C. They enjoy music and can be eaten."
+			"text": "Wbrew nazwie $(thing)szybowców$() nie można oswoić ani dosiadać. Są pasywne i żyją na obszarach o temperaturze powyżej -105°C. Lubią muzykę i można je zjeść."
 		},
 		{
 			"type": "patchouli:entity",
