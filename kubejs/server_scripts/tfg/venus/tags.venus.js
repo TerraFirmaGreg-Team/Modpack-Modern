@@ -207,6 +207,8 @@ function registerTFGVenusEntityTypeTags(event) {
 	event.add('tfg:ignores_gravity', 'aliencraft_kepler:xenoscorpion_surface')
 	event.add('tfg:ignores_gravity', 'aliencraft_kepler:ancient_beetle')
 	event.add('tfg:ignores_gravity', 'opposing_force:whizz')
+	event.add('tfg:ignores_gravity', 'opposing_force:hanging_spider')
+	event.add('tfg:ignores_gravity', 'opposing_force:umber_spider')
 	event.add('tfg:ignores_gravity', 'minecraft:blaze')
 }
 

@@ -881,6 +881,21 @@
 				"name": "minecraft:ambient/nether/basalt_deltas/ambience",
 				"stream": true,
 				"volume": 0.77
+			},
+			{
+				"name": "minecraft:ambient/nether/nether_wastes/ambience",
+				"stream": true,
+				"volume": 0.77
+			},
+			{
+				"name": "minecraft:ambient/nether/soul_sand_valley/ambience",
+				"stream": true,
+				"volume": 0.77
+			},
+			{
+				"name": "minecraft:ambient/nether/crimson_forest/ambience",
+				"stream": true,
+				"volume": 0.77
 			}
 		]
 	},
