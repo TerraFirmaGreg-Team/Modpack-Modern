@@ -1,11 +1,11 @@
 {
-    "name": "Sewing Table",
+    "name": "缝纫台",
     "category": "tfg:craftsmanship",
     "icon": "tfc:wood/sewing_table/oak",
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "The $(thing)Sewing Table$() is used to produce banner patterns, smithing templates, and other cloth items. It requires $(t:#tfc:sewing_light_cloth)$(6)Light Cloth$(), $(t:#tfc:sewing_dark_cloth)$(6)Dark Cloth$(), $(t:#forge:string)$(6)String$(), as well as a $(item)Needle$().$(br)A needle for sewing can be made from a bone. An indestructable needle can be made later on out of stainless steel."
+            "text": "$(thing)缝纫台$()用于制作旗帜图案、锻造模板和其他布料物品。它需要$(t:#tfc:sewing_light_cloth)$(6)浅色布料$()、$(t:#tfc:sewing_dark_cloth)$(6)深色布料$()、$(t:#forge:string)$(6)线$()，以及一根$(item)针$()。$(br)缝纫用的针可以用骨头制作。后期还能用不锈钢制作不会损坏的针。"
         },
         {
             "type": "patchouli:text",
@@ -13,7 +13,7 @@
         },
         {
             "type": "patchouli:image",
-            "title": "Sewing Screen",
+            "title": "缝纫界面",
             "anchor": "sewing_screen",
             "width": 1024,
             "texture_width": 1024,
@@ -23,21 +23,21 @@
                 "tfg:textures/gui/field_guide/sewing_preview.png",
                 "tfg:textures/gui/field_guide/sewing_table.png"
             ],
-            "text": "Recipe preview and filled recipe.",
+            "text": "配方预览与已填好的配方。",
             "border": true
         },
         {
             "type": "patchouli:text",
-            "text": "The slots on the left are for the string and the needle. The two bottom slots can hold any combination of dark and light cloth. The slot on the right will show the result when it is ready to be taken. Taking the result from the result slot completes the craft, and uses the items."
+            "text": "左侧的插槽用于放置线和针。底部两个插槽可以以任意组合放置深色和浅色布料。右侧的插槽会在成品可以取出时显示结果。从成品槽取出结果即完成制作，并消耗相应材料。"
         },
         {
             "type": "patchouli:text",
-            "text": "Each cloth item allows placing 8 squares of that material on the sewing surface. Similarly, each string item allows placing 16 stitches. When you have selected a recipe, just use the buttons on the top right of the screen to place squares and stitch them together as shown by the guide. Want to remove stitches? Use the red 'X' button to get rid of squares."
+            "text": "每件布料物品允许你在缝纫面上放置 8 个该材料的方块。同样，每件线允许放置 16 针。选好配方后，只需使用界面右上角的按钮放置方块，并按照引导把它们缝合在一起。想拆掉针脚？用红色的“X”按钮即可移除方块。"
         },
         {
             "type": "patchouli:crafting",
             "anchor": "banner_loom",
-            "title": "Banner Loom",
+            "title": "旗帜织机",
             "recipe": "tfc:crafting/vanilla/loom",
             "text": "旗帜织机可用来将旗帜图案织成旗帜。"
         },
@@ -45,12 +45,12 @@
             "type": "patchouli:spotlight",
             "item": "tag:minecraft:trim_templates",
             "anchor": "armor_trim",
-            "title": "Armor Trims",
-            "text": "Armor trims can be applied to any $(t:#minecraft:trimmable_armor)$(6)Trimmable Armor$() by sewing a $(item)Smithing Template$(). Combine it with a $(t:#minecraft:trim_materials)$(6)Trim Material$() (like $(thing)Exquisite Gems$() or $(thing)Jewlery Metal$()) and the armor on a $(item)Smithing Table$()."
+            "title": "盔甲纹饰",
+            "text": "任意$(t:#minecraft:trimmable_armor)$(6)可纹饰盔甲$()都可以通过缝入$(item)锻造模板$()来添加纹饰。把它与一种$(t:#minecraft:trim_materials)$(6)纹饰材料$()（例如$(thing)精致宝石$()或$(thing)珠宝金属$()）以及盔甲一起放在$(item)锻造台$()上组合即可。"
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "延伸阅读",
             "anchor": "relations",
             "entries": [
                 "tfg:craftsmanship/anvils",

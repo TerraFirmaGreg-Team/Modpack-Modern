@@ -5,32 +5,32 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "$(item)Leather$() is a sturdy material formed from animal hides. It is required to craft $(item)Armor$(), $(item)Saddles$(), or a $(l:craftsmanship/charcoal_forge#bellows)Bellows$(). $(item)Raw Hides$() must be treated through several processes: $(l:agriculture/leather_making#soaking)soaking$(), $(l:agriculture/leather_making#scraping)scraping$(), $(l:agriculture/leather_making#preparing)preparing$(), and $(l:agriculture/leather_making#tanning)tanning$() to turn them into $(item)Leather$()."
+            "text": "$(item)皮革$()是一种由兽皮加工而成的坚固材料，是制作$(item)盔甲$()、$(item)鞍$()或$(l:craftsmanship/charcoal_forge#bellows)风箱$()的必需品。$(item)兽皮$()必须经过$(l:agriculture/leather_making#soaking)浸灰$()、$(l:agriculture/leather_making#scraping)刮削$()、$(l:agriculture/leather_making#preparing)预制$()和$(l:agriculture/leather_making#tanning)鞣制$()数道工序，才能变成$(item)皮革$()。"
         },
         {
             "type": "patchouli:spotlight",
             "item": "tfc:small_raw_hide,tfc:medium_raw_hide,tfc:large_raw_hide",
             "title": "兽皮",
             "link_recipes": true,
-            "text": "To get started you will first need to obtain $(thing)Raw Hide$(), which is dropped when slaughtering many different $(l:the_world/wild_animals)Animals$(). Different animals will drop different sizes of $(thing)Raw Hide$().$(br2)View $(emi) for information on mob drops."
+            "text": "要开始制皮，你首先需要获得$(thing)兽皮$()，屠宰各种各样的$(l:the_world/wild_animals)动物$()时就会掉落。不同的动物会掉落不同大小的$(thing)兽皮$()。$(br2)生物掉落物的详情请查看 $(emi)。"
         },
         {
             "type": "patchouli:text",
-            "text": "Leather making will require several materials and tools. You will need:$(br)$(li)$(l:craftsmanship/barrels#limewater)Limewater$() - a solution of $(item)Flux$() in $(thing)Water$()$(li)Water$(li)$(l:craftsmanship/barrels#tannin)Tannin$() - an acidic solution made from the bark of some trees.$(li)$(thing)Raw Hides$()$(br2)With all that on hand, you are ready to begin the leather working process."
+            "text": "制皮需要若干材料和工具。你需要：$(br)$(li)$(l:craftsmanship/barrels#limewater)石灰水$() - $(item)助焊剂$()溶于$(thing)水$()制成的溶液$(li)水$(li)$(l:craftsmanship/barrels#tannin)鞣酸$() - 用某些树的树皮制成的酸性溶液$(li)$(thing)兽皮$()$(br2)备齐这些材料后，就可以开始制皮了。"
         },
         {
             "type": "tfg:sealed_barrel_recipe",
             "anchor": "soaking",
             "recipe": "tfc:barrel/medium_soaked_hide",
-            "text": "First, raw hides must be $(thing)soaked$() to clean them and loosen unwanted material before processing. This can be done by sealing some $(thing)Raw Hide$() in a $(l:craftsmanship/barrels#limewater)Barrel of Limewater$() for at least eight hours."
+            "text": "首先，兽皮必须经过$(thing)浸灰$()，以便在加工前清洁并松脱多余的杂质。具体做法是把一些$(thing)兽皮$()密封在$(l:craftsmanship/barrels#limewater)石灰水大桶$()中至少八小时。"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "scraping",
             "item": "tfc:small_scraped_hide,tfc:medium_scraped_hide,tfc:large_scraped_hide",
-            "title": "Scraping",
+            "title": "刮削",
             "link_recipes": true,
-            "text": "After soaking, $(thing)Soaked Hides$() must be scraped which removes any excess material. In order to scrape hides, place the hide on the side of a $(thing)Log$(). With a $(item)Knife$() or $(item)Scrapping Knife$(), $(item)$(k:key.use)$() on each part of the hide, and it will start to change texture."
+            "text": "浸灰之后，还要刮削$(thing)浸泡兽皮$()，去除一切多余的部分。刮皮时，把兽皮贴放在$(thing)原木$()侧面，手持$(item)刀$()或$(item)刮皮刀$()，对兽皮的每个部位$(item)$(k:key.use)$()，它就会开始改变纹理。"
         },
         {
             "type": "patchouli:image",
@@ -47,24 +47,24 @@
             "type": "tfg:sealed_barrel_recipe",
             "anchor": "preparing",
             "recipe": "tfc:barrel/medium_prepared_hide",
-            "text": "After scraping, $(thing)Scraped Hides$() must be sealed in a $(l:craftsmanship/barrels)Barrel$() of $(thing)Water$() for at least eight hours, for one final cleaning before tanning."
+            "text": "刮削完成后，把$(thing)刮制兽皮$()密封进一个$(l:craftsmanship/barrels)大桶$()的$(thing)水$()中至少八小时，在鞣制前做最后一次清洁。"
         },
         {
             "type": "tfg:sealed_barrel_recipe",
             "anchor": "tanning",
             "recipe": "tfc:barrel/medium_leather",
-            "text": "Finally, $(thing)Prepared Hides$() must be sealed in a $(l:craftsmanship/barrels#tannin)Barrel of Tannin$(), which is an acidic chemical compound―made from $(t:#tfc:makes_tannin)$(6)Tannin Rich Logs$()―that helps to convert the hide to $(thing)Leather$(). After another eight hours, you can remove the $(thing)Leather$() from the barrel."
+            "text": "最后，把$(thing)预制兽皮$()密封进$(l:craftsmanship/barrels#tannin)鞣酸大桶$()中，这是一种酸性化合物，由$(t:#tfc:makes_tannin)$(6)富含鞣酸的原木$()制成，能帮助兽皮转化为$(thing)皮革$()。再过八小时，你就可以把$(thing)皮革$()从桶里取出来了。"
         },
         {
             "type": "patchouli:spotlight",
             "anchor": "pineapple_leather",
-            "title": "Leather Alternative",
+            "title": "皮革替代品",
             "item": "firmalife:pineapple_leather",
-            "text": "An alternative to animal leather is $(item)Pineapple Leather$(). Which can be produced by first $(l:cooking/decay#drying)drying$() $(l:the_world/wild_fruits#pineapple)Pineapples$(), stripping them into string, and then $(l:agriculture/weaving)Weaving$() the pineapple string into pineapple leather."
+            "text": "动物皮革的替代品是$(item)菠萝布$()。做法是先$(l:cooking/decay#drying)晾干$()$(l:the_world/wild_fruits#pineapple)菠萝$()，再撕成丝线，然后把菠萝线$(l:agriculture/weaving)织$()成菠萝布。"
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "延伸阅读",
             "anchor": "relations",
             "entries": [
                 "tfg:agriculture/animal_husbandry",
