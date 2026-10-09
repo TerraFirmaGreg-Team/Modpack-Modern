@@ -27,7 +27,7 @@
 	"tfg.emi.liquid_bb_superheat": "§l過熱",
 	"emi.category.tfg.combustion_engine": "燃焼エンジン燃料",
 	"tfg.emi.combustion_engine_amount": "§7LS§rにおける1mBあたりの持続時間:",
-	"tfg.emi.combustion_engine_burn_time": "持続時間: %d 秒 @ %s RPM (§7LS§r)",
+	"tfg.emi.combustion_engine_burn_time": "持続時間: %s 秒 @ %s RPM",
 	"tfg.gui.spawn_difficulty.easy": "(§aイージー§r)",
 	"tfg.gui.spawn_difficulty.normal": "(§bノーマル§r)",
 	"tfg.gui.spawn_difficulty.hard": "(§6ハード§r)",

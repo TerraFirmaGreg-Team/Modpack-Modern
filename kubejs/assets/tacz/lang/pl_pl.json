@@ -55,7 +55,7 @@
 	"config.tacz.client.render": "Renderowanie",
 	"config.tacz.client.render.auto_select_gun_smith_table_filter": "Automatycznie Filtruj Stół Rusznikarski Przez Trzymany Przedmiot",
 	"config.tacz.client.render.auto_select_gun_smith_table_filter.desc": "Podczas otwierania stołu rusznikarskiego z bronią, dodatkiem, lub amunicją w twojej głównej ręce, automatycznie wybierz filtr trzymanego przedmiotu.",
-	"config.tacz.client.render.bullet_hole_particle_fade_threshold": "Próg rozmycia dziury pocisku",
+	"config.tacz.client.render.bullet_hole_particle_fade_threshold": "Próg zanikania dziury pocisku",
 	"config.tacz.client.render.bullet_hole_particle_fade_threshold.desc": "Próg zanikania renderowania cząsteczek dziur pocisków",
 	"config.tacz.client.render.bullet_hole_particle_life": "Czas wyświetlania dziur po kulach",
 	"config.tacz.client.render.bullet_hole_particle_life.desc": "Czas, przez jaki wyświetlane są cząsteczki dziur po kulach (w tickach).",

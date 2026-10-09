@@ -120,7 +120,7 @@
     "tfg.machine.oxygen_distributor.energy": "消耗 %s EU/t",
     "tfg.machine.oxygen_distributor.status": "状态：",
     "tfg.machine.oxygen_distributor.size": "房间大小：%s 个方块",
-    "tfg.machine.oxygen_distributor.consumption": "消耗 %s mB/t",
+    "tfg.machine.oxygen_distributor.consumption": "消耗 %s",
     "tfg.machine.oxygen_distributor.status.no_energy": "等待供能",
     "tfg.machine.oxygen_distributor.status.sealed": "已密封",
     "tfg.machine.oxygen_distributor.status.breached": "已泄漏",

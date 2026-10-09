@@ -696,7 +696,7 @@
 	"tooltip.ad_astra.reset_to_default": "Przywróć domyślne",
 	"tooltip.ad_astra.shift_description": "Przytrzymaj SHIFT, aby uzyskać więcej informacji",
 	"tooltip.ad_astra.side_config": "Konfiguracja boków",
-	"tooltip.ad_astra.space_station_land": "Ląduj na stacji kosmicznej w %s na koordynatach [%s, %s]",
+	"tooltip.ad_astra.space_station_land": "Wyląduj na stacji kosmicznej w %s o współrzędnych [%s, %s]",
 	"tooltip.ad_astra.space_station_owner": "Właściciel: %s",
 	"tooltip.ad_astra.ticks_per_iteration": "Zajmuje %s ticków na iterację"
 }

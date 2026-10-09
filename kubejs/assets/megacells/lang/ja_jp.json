@@ -15,6 +15,9 @@
   "gui.tooltips.megacells.Empty": "空",
   "gui.tooltips.megacells.Enabled": "有効化",
   "gui.tooltips.megacells.Quantity": "数量: %s",
+  "item.megacells.accumulation_processor": "集積プロセッサ",
+  "item.megacells.accumulation_processor_press": "集積回路の金型",
+  "item.megacells.cable_mega_emc_interface": "MEGA錬成インターフェース",
   "item.megacells.cell_component_16m": "16M MEGAストレージコンポーネント",
   "item.megacells.cell_component_1m": "1M MEGAストレージコンポーネント",
   "item.megacells.cell_component_4m": "4M MEGAストレージコンポーネント",
@@ -45,5 +48,8 @@
   "item.megacells.portable_item_cell_1m": "1M ポータブルアイテムセル",
   "item.megacells.portable_item_cell_4m": "4M ポータブルアイテムセル",
   "item.megacells.portable_item_cell_64m": "64M ポータブルアイテムセル",
-  "block.megacells.mega_pattern_provider": "MEGAパターンプロバイダー"
+  "item.megacells.printed_accumulation_processor": "集積回路",
+  "text.autoconfig.megacells.title": "MEGA Cells",
+  "block.megacells.mega_pattern_provider": "MEGAパターンプロバイダー",
+  "item.megacells.cable_mega_pattern_provider": "MEGAパターンプロバイダー"
 }
