@@ -245,7 +245,8 @@ function registerTFGFLPlanters(event) {
                 'betterend:block/cave_pumpkin_greenhouse_1',
                 'betterend:block/cave_pumpkin_greenhouse_2',
                 'betterend:block/cave_pumpkin_greenhouse_3',
-            ]
+            ],
+            hangingFruitTexture: 'betterend:block/cave_pumpkin_lantern_side'
         },
         {
             input: 'betterend:shadow_berry_seeds',
@@ -318,7 +319,7 @@ function registerTFGFLPlanters(event) {
             crop.productItem,
             crop.nutrient != null ? crop.nutrient : $FarmlandBlockEntity.NutrientType.NITROGEN,
             crop.textures,
-            crop.hangingFruitTexture != null ? crop.hangingFruitTexture : null
+            crop.hangingFruitTexture != null && crop.planterType === 'hanging' ? crop.hangingFruitTexture : null
         );
     });
 
