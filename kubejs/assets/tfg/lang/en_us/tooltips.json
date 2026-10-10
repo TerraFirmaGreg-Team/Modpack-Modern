@@ -135,7 +135,7 @@
     "tfg.tooltip.machine.heat_pump_1": "§7Sets the temperature of a large mostly-sealed area to 15°C.",
     "tfg.tooltip.machine.heat_pump_2": "§7The bigger the area, the more power it needs. Is lenient on what counts as 'sealed'.",
     "tfg.tooltip.machine.heat_pump_3": "§7The side with the controller should face indoors, while the Exhaust should face outdoors and be filled with a Turibne Rotor.",
-    "tfg.tooltip.machine.rotor_vent": "Requires a Turbine Rotor, never wears off. Efficiency and Power impact EU/t and MB/t for the Oxygen Distributor.",
+    "tfg.tooltip.machine.rotor_vent": "Requires a Turbine Rotor but never wears off. Efficiency lower the amount of mB/t and Power reduces the EU/t cost.",
 
     "tfg.tooltip.rotor_vent.header": "In an Exhaust Vent reduces by:",
     "tfg.tooltip.rotor_vent.energy": "%s Energy Cost",

@@ -152,9 +152,10 @@
     "tfg.machine.oxygen_distributor.find_leak": "Trace leak",
     "tfg.machine.oxygen_distributor.fill_suit": "Refill suit oxygen",
     "tfg.machine.heat_pump.status.blocked": "Exhaust trapped - the Exhaust Vent should be facing an open space",
-    "tfg.machine.heat_pump.status.no_rotor": "Missing Turbine Rotor in the Exhaust Vent",
+    "tfg.machine.rotor_vent.no_rotor": "Missing Turbine Rotor in the Exhaust Vent",
     "tfg.multiblock.pattern.heat_pump.front_vent": "Front Vent: must open onto the sealed room to heat",
     "tfg.multiblock.pattern.heat_pump.back_vent": "Exhaust Rotor Holder: requires a Turbine Rotor and must open onto an unsealed space",
+    "tfg.multiblock.pattern.rotor_vent": "Exhaust Rotor Holder: requires a Turbine Rotor",
     "tfg.machine.higgs_emitter.radius": "Radius: %s",
 
     "tfg.machine.pastoral_engine.animals_total": "Animals in zone: %s",
